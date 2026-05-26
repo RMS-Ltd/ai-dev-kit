@@ -10,9 +10,10 @@ housekeeping_policy: keep
 
 **Host Task:** [`T06-ecc-harness-phases-2-5-fr098.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) **(E6:S09:T06)**  
 **Planning for:** [FR-098 — Optional ECC harness layer integration](../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
-**Status:** Approved (Waves A–D implemented on `dev`; awaiting RW + manual dogfood T8)
+**Status:** Closed — host task **COMPLETE** at **v0.6.9.6+3** (2026-05-26); FR-098 **IMPLEMENTED**
 
-> **IPW (Implementation Planning Workflow):** Produced 2026-05-26 per `.claude/commands/ipw.md`. Host task was **E6:S09:T05** invocation; T05 is **COMPLETE** (Phase 1); this package anchors **phases 2–5** on **E6:S09:T06**.
+> **IPW (Implementation Planning Workflow):** Produced 2026-05-26 per `.claude/commands/ipw.md`. Host task was **E6:S09:T05** invocation; T05 is **COMPLETE** (Phase 1); this package anchors **phases 2–5** on **E6:S09:T06**.  
+> **Releases:** **v0.6.9.6+2** — Waves A–D implementation (`RW E6:S09:T06 --art`); **v0.6.9.6+3** — dogfood T8 closure + `--copy-bridge` fix (`RW E6:S09:T06 --art`).
 
 ---
 
@@ -74,10 +75,10 @@ Enable adopters to **optionally** install ECC alongside ADK with a validated bri
 
 ### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
 
-- **Current task status:** `TODO`
-- **Transition trigger to IN PROGRESS:** First non-planning implementation change (Wave A file creation or script).
-- **Transition trigger to COMPLETE:** All T06 acceptance criteria satisfied with validator/pytest PASS and dogfood checklist recorded.
-- **Atomic propagation requirement:** Task doc status and kboard/fbuboard row for **E6:S09:T06** update in same RW Step 7 session.
+- **Current task status:** `COMPLETE` (**v0.6.9.6+3**)
+- **Transition trigger to IN PROGRESS:** First non-planning implementation change (Wave A file creation or script) — done at **v0.6.9.6+2**.
+- **Transition trigger to COMPLETE:** All T06 acceptance criteria satisfied with validator/pytest PASS and dogfood checklist recorded — done at **v0.6.9.6+3**.
+- **Atomic propagation requirement:** Task doc status and kboard/fbuboard row for **E6:S09:T06** update in same RW Step 7 session — done (T06/FR-098 archived from Must Have).
 - **Owner:** Implementation execution (not this IPW session).
 
 ### 2.5 ADR necessity decision (mandatory — IPW Phase 5.0)
@@ -236,15 +237,17 @@ Exemption block not used (T1–T7 not all N).
 
 ## 7. Success / verification criteria
 
-- [ ] All T06 acceptance criteria in host task doc satisfied
-- [ ] `validate_ecc_adk_bridge.py` and `validate_adk_ecc_skill_pack.py` both PASS
-- [ ] pytest modules for bridge (and existing skill pack) green in CI/local
-- [ ] FR-098-F5 and FR-098-F6 closable with evidence links
-- [ ] Integration spec §10 lists T06 for phases 2–5
-- [ ] No ADK-only regression: documented zero-ECC path unchanged
-- [ ] Dogfood checklist completed on disposable branch (manual T8)
-- [ ] All §5 UPDATE/CREATE items implemented or deferred with reason in task notes
-- [ ] Task ↔ IPP bidirectional links present
+Verified at **v0.6.9.6+3** (2026-05-26).
+
+- [x] All T06 acceptance criteria in host task doc satisfied
+- [x] `validate_ecc_adk_bridge.py` and `validate_adk_ecc_skill_pack.py` both PASS
+- [x] pytest modules for bridge (and existing skill pack) green in CI/local
+- [x] FR-098-F5 and FR-098-F6 closable with evidence links (FR-098 **IMPLEMENTED**)
+- [x] Integration spec §10 lists T06 for phases 2–5
+- [x] No ADK-only regression: documented zero-ECC path unchanged
+- [x] Dogfood checklist completed on disposable branch `throwaway/ecc-dogfood-e6s09t06` (dry-run only; T8)
+- [x] All §5 UPDATE/CREATE items implemented (D-U2 ADR-003 optional ECC note; no §5 deferrals)
+- [x] Task ↔ IPP bidirectional links present
 
 ---
 

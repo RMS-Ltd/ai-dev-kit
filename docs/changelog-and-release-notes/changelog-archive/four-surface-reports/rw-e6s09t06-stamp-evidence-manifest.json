@@ -1,12 +1,12 @@
 {
   "rows": {
-    "E6:S09:T06": {
+    "kboard_metadata": {
       "allowed": true,
-      "reason": "RW Step 7 v0.6.9.6+3 — kboard Must Have row removed (task COMPLETE → kanban-completed)"
+      "reason": "RW -d v0.6.9.6+0 — board Last Updated / Version Context only (no MoSCOW row stamp changes)"
     },
-    "FR-098": {
+    "fbuboard_metadata": {
       "allowed": true,
-      "reason": "RW Step 7 v0.6.9.6+3 — fbuboard Must Have row removed (FR IMPLEMENTED → fbu-completed)"
+      "reason": "RW -d v0.6.9.6+0 — board Last Updated / Version Context only"
     }
   }
 }

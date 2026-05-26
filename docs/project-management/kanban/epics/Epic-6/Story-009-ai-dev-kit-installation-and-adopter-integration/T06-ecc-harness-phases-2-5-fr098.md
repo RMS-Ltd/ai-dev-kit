@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (**v0.6.9.6+3** — RW `--art` dogfood closure)  
+**Last updated:** 2026-05-26 (**v0.6.9.6+3** functional COMPLETE; **v0.6.9.6+0** IPP §7 doc sync)  
 **Code:** E6S09T06
 
 ## Version Anchor
@@ -66,7 +66,7 @@ Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alig
 
 ## Input
 
-- [IPP (planning package)](../../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
+- [IPP (planning package — §7 verified closed v0.6.9.6+3)](../../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
 - [ECC + ADK cheatsheet](../../../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)

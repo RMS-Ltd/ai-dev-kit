@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 6      # Epic 6: Framework Management
 VERSION_STORY = 9     # Story 9: AI Dev Kit installation and adopter integration
 VERSION_TASK = 6      # Task 6: ECC harness phases 2–5 (FR-098)
-VERSION_BUILD = 3     # Build 3: T06 dogfood closure + install script --copy-bridge fix (RW --art)
+VERSION_BUILD = 0     # Build 0: IPP §7 closure docs-only (RW -d --art --doc-policy-zero)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.6+3
+# Current: 0.6.9.6+0

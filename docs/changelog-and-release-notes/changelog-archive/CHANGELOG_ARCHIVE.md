@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.6.9.6+3] - 26-05-26
+
+E6:S09:T06 (`RW`, `--art`) — **T06 COMPLETE**: dogfood T8 (dry-run + validators PASS); `--copy-bridge` install fix; cheatsheet hook caveat; gitignore local bridge. SemVer **v0.4.808+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.6+3.md)
+---
 ## [0.2.16.4+5] - 12-05-26
 
 E2:S16:T04 — **`RW`** with **`--art`** (perpetual kanban hygiene): UKW first live execution of BR-072 fix — verified AC5 (E2:S16:T01 ×2 + E2:S15:T07 removed from kboard, archived to `kanban-completed.md`); E6:S01:T38 marked COMPLETE (all 7 ACs satisfied); E2:S16:T04 added to Ongoing; fbuboard synced with IPP link for BR-072.
