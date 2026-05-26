@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Date:** 2026-05-26  
 **Decision owner:** Maintainer  
 **Private repository (live):** [RMS-Ltd/hf-ai-dev-kit](https://github.com/RMS-Ltd/hf-ai-dev-kit) — **private**
-**Implementing work:** [FR-099](../../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) · [E1:S04:T03](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
+**Implementing work:** [FR-099](../../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) · **E1:S04:T03–T07** (one task per phase; see [Story 004](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md))
 
 **Supersedes:** [E1:S04:T02](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md) (conditional public rename of `ai-dev-kit` → `head-first-ai-dev-kit`)
 
@@ -111,15 +111,15 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 
 ---
 
-## Execution phases (maps to FR-099)
+## Execution phases (maps to FR-099 → E1:S04:T03–T07)
 
-| Phase | Name | Deliverable |
-|-------|------|-------------|
-| **0** | Inventory & ADR approval | Validated asset matrix; maintainer signs this ADR |
-| **1** | Privatize + rename | `RMS-Ltd/hf-ai-dev-kit` private | ✅ 2026-05-26 |
-| **2** | Book extraction commit | Genesis tree book-free | 🔄 2026-05-26 (pending RW) |
-| **3** | Public rebirth | New public `RMS-Ltd/ai-dev-kit` from genesis | Pending |
-| **4** | Rewire & verify | URLs, install smoke test, no Epic-24 contamination |
+| Phase | Name | Task | Deliverable |
+|-------|------|------|-------------|
+| **0** | Inventory & ADR approval | **T03** | Validated asset matrix; maintainer signs this ADR |
+| **1** | Privatize + rename | **T04** | `RMS-Ltd/hf-ai-dev-kit` private ✅ 2026-05-26 |
+| **2** | Book extraction commit | **T05** | Genesis tree book-free ✅ `v0.1.4.3+1` |
+| **3** | Public rebirth | **T06** | New public `earlution/ai-dev-kit` from genesis |
+| **4** | Rewire & verify | **T07** | URLs, install smoke test, no Epic-24 contamination |
 
 ---
 
@@ -127,11 +127,11 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 
 | Phase | Status | Date | Notes |
 |-------|--------|------|-------|
-| **0** | In progress | 2026-05-26 | ADR outline accepted; inventory pending |
-| **1** | ✅ **Complete** | 2026-05-26 | GitHub repo private; renamed to [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) |
-| **2** | ✅ **Complete** | 2026-05-26 | **v0.1.4.3+1** — book extraction genesis committed |
-| **3** | Pending | — | New public `ai-dev-kit` from genesis |
-| **4** | Pending | — | Rewire remotes, badges, install URLs |
+| **0** | ✅ **Complete** | 2026-05-26 | **E1:S04:T03** |
+| **1** | ✅ **Complete** | 2026-05-26 | **E1:S04:T04** — [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) |
+| **2** | ✅ **Complete** | 2026-05-26 | **E1:S04:T05** — `v0.1.4.3+1` |
+| **3** | Pending | — | **E1:S04:T06** — new public `ai-dev-kit` |
+| **4** | Pending | — | **E1:S04:T07** — rewire + verify |
 
 **Local clone hygiene:** Update `origin` if still pointing at pre-rename URL:
 `git remote set-url origin https://github.com/RMS-Ltd/hf-ai-dev-kit.git`
@@ -150,7 +150,9 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 ## Related
 
 - [FR-099 — Spin off book epic to private repository](../../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [E1:S04:T03 — Spin off book epic (task)](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
+- [E1:S04:T06 — Phase 3 public rebirth](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md)
+- [E1:S04:T07 — Phase 4 rewire](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
+- [FR-099 phase tasks T03–T07](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md) (umbrella [redirect](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md))
 - [E1:S04:T02 — superseded](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md) (public Head First rename)
 - [FR-064](../../project-management/kanban/fr-br/FR-064-shields-branch-private-repo-badges.md) — prior private-repo hygiene pattern
 - [FR-080](../../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md) — consumer Kanban must not include Epic 24

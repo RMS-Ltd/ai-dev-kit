@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.1.4.3+2] - 26-05-26
+
+E1:S04:T03 (`RW`, `--art`) — FR-099 Phases 3–4 board re-anchor. SemVer **v0.4.810+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.3+2.md)
+---
 ## [0.6.9.6+5] - 26-05-26
 
 E6:S09:T06 (`RW`, `--art`) — **IPP Wave E**: public-repo ECC validation plan after FR-099 Phase 3. SemVer **v0.4.810+5**.

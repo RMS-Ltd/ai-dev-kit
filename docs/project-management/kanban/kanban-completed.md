@@ -20,6 +20,16 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **Epic 1: AI Dev Kit Core (Story 4 — Repository branding; FR-099 phases 0–2)**
+- **[E1:S04:T05](epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md)** — **FR-099 Phase 2**: book extraction genesis on private `hf-ai-dev-kit` (forensic: RW **v0.1.4.3+1** on umbrella T03 before phase split).
+  **Completed:** `2026-05-26T12:17:16Z` | **Version:** `v0.1.4.3+1` | **Agent:** `RW`
+
+- **[E1:S04:T04](epics/Epic-1/Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md)** — **FR-099 Phase 1**: privatize + rename to `RMS-Ltd/hf-ai-dev-kit`.
+  **Completed:** `2026-05-26T00:00:00Z` | **Version:** `Phase 1` | **Agent:** `Maintainer`
+
+- **[E1:S04:T03](epics/Epic-1/Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md)** — **FR-099 Phase 0**: inventory + ADR-006 outline; E1:S04:T02 superseded.
+  **Completed:** `2026-05-26T00:00:00Z` | **Version:** `Phase 0` | **Agent:** `Intake`
+
 #### **Epic 6: Framework Management (Story 9 — Installation and adopter integration)**
 - **[E6:S09:T06](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)** — **FR-098 phases 2–5**: bridge validator, optional install helper, hooks/AgentShield docs, cheatsheet; dogfood T8 dry-run + validators PASS; `--copy-bridge` fix.
   **Completed:** `2026-05-26T14:59:56Z` | **Version:** `v0.6.9.6+3` | **Agent:** `RW`

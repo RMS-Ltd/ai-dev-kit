@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-07  
-**Last updated:** 2026-05-26 (v0.1.4.3+2 – FR-099 Phases 3–4 board re-anchor)
-**Version:** v0.1.4.3+2
+**Last updated:** 2026-05-26 (v0.1.4.3+3 – Kanban documentation setup)
+**Version:** v0.1.4.3+3
 **Code:** E1S04
 
 ---
@@ -22,8 +22,12 @@ housekeeping_policy: keep
 
 - [x] **E1:S04:T01 – Execute repository rename from vibe-dev-kit to ai-dev-kit** - COMPLETE ✅ (Executed immediately - remote repo was deleted, no migration needed)
 - [x] **E1:S04:T02 – Plan repository rename from ai-dev-kit to head-first-ai-dev-kit (conditional on O'Reilly acceptance)** - ⏭️ SUPERSEDED → **FR-099 / ADR-006** (2026-05-26: public ADK stays `ai-dev-kit`; Head First context private `hf-ai-dev-kit` only — do not execute)
-- [ ] **E1:S04:T03 – Spin off book epic to private repository (FR-099)** - 🔄 IN PROGRESS (**v0.1.4.3+2** — Phase 2 genesis ✅ **v0.1.4.3+1**; Phases 3–4 pending)
-  - Task: [`T03-spin-off-book-epic-private-repo-fr099.md`](Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) | [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
+- [x] **E1:S04:T03 – FR-099 Phase 0 — Inventory & ADR approval** - ✅ COMPLETE — [T03](Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
+- [x] **E1:S04:T04 – FR-099 Phase 1 — Privatize & rename `hf-ai-dev-kit`** - ✅ COMPLETE — [T04](Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md)
+- [x] **E1:S04:T05 – FR-099 Phase 2 — Book extraction genesis** - ✅ COMPLETE (**v0.1.4.3+1**) — [T05](Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md)
+- [ ] **E1:S04:T06 – FR-099 Phase 3 — Public `ai-dev-kit` rebirth** - 📋 TODO (HIGH) — [T06](Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md)
+- [ ] **E1:S04:T07 – FR-099 Phase 4 — Rewire & verify** - 📋 TODO (blocked by T06) — [T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
+  - Umbrella redirect (historical RW): [`T03-spin-off-book-epic-private-repo-fr099.md`](Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) | [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
 
@@ -33,7 +37,7 @@ This story plans and executes **repository naming and separation** between the p
 
 1. **Phase 1:** `vibe-dev-kit` → `ai-dev-kit` ✅ **COMPLETE**
 2. **Phase 2 (superseded):** `ai-dev-kit` → `head-first-ai-dev-kit` on O'Reilly acceptance — **cancelled 2026-05-26** ([FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md), [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md))
-3. **Phase 3 (active):** Option C migration — privatize/rename → `hf-ai-dev-kit`, genesis public rebirth of **`ai-dev-kit`** (**E1:S04:T03**)
+3. **FR-099 (active):** Option C migration — Phases 0–2 ✅; **Phase 3** [E1:S04:T06](Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md); **Phase 4** [E1:S04:T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
 
 **Phase 1 Status:** ✅ **COMPLETE** — all references updated from `vibe-dev-kit` to `ai-dev-kit`.
 
@@ -103,7 +107,7 @@ The repository was named `vibe-dev-kit`, but the book focus has shifted to "Head
 ### E1:S04:T02 – Plan repository rename from ai-dev-kit to head-first-ai-dev-kit (conditional on O'Reilly acceptance) ⏭️ SUPERSEDED
 
 **Status:** IN PROGRESS
-**Superseded by:** [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md), [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md), [E1:S04:T03](Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
+**Superseded by:** [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md), [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md), FR-099 phase tasks [T03–T07](Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md)
 
 **Rationale:** Clear separation requires public **AI Dev Kit** to remain neutral (`ai-dev-kit`). Head First / O'Reilly branding applies to **private `hf-ai-dev-kit`** only, not a public toolkit rename.
 
@@ -164,24 +168,19 @@ If the book is accepted by O'Reilly for the "Head First" series, the repository 
 
 ---
 
-### E1:S04:T03 – Spin off book epic to private repository (FR-099)
+### FR-099 — One task per migration phase (T03–T07)
 
-**Input:** Epic 24 Kanban tree, `docs/book-proj/` assets, public repo cross-references  
-**Deliverable:** Migration ADR + phased extraction of book IP to private repository  
-**Dependencies:** None for Phase 0 inventory  
-**Blocker:** Maintainer approval of private repo name and history policy (Phase 1+)
+| Task | Phase | Status | Doc |
+|------|-------|--------|------|
+| E1:S04:T03 | 0 — Inventory & ADR | ✅ COMPLETE | [T03](Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) |
+| E1:S04:T04 | 1 — Privatize + rename | ✅ COMPLETE | [T04](Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) |
+| E1:S04:T05 | 2 — Book extraction genesis | ✅ COMPLETE (`v0.1.4.3+1`) | [T05](Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) |
+| E1:S04:T06 | 3 — Public rebirth | 📋 TODO | [T06](Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) |
+| E1:S04:T07 | 4 — Rewire & verify | 📋 TODO (after T06) | [T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) |
 
-**Problem Statement:**  
-Unpublished book content and Epic 24 Kanban live in the public ai-dev-kit repository, creating IP exposure and adopter confusion. Book work should move to a private project that consumes public ADK frameworks.
+**FR:** [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md) · **ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
-**Approach:** See [T03 task document](Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md), [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md), and [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
-
-**Related Work:**
-
-- [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
-- E1:S04:T02 — superseded (public Head First rename cancelled)
-- Epic 24 — remains in private repo after cutover
+**Historical:** Umbrella [T03 redirect](Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) (split 2026-05-26).
 
 ---
 

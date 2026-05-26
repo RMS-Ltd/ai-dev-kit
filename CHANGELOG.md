@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.1.4.3+2] - 26-05-26
+## [0.1.4.3+3] - 26-05-26
 
-E1:S04:T03 (`RW`, `--art`) — **FR-099 re-anchor**: restore active **FR-099** / **E1:S04:T03** on boards for **Phases 3–4**; Phase 2 genesis at **v0.1.4.3+1** unchanged; Wave E (E6:S09:T06) gates ECC test after Phase 3. SemVer **v0.4.810+2**.
+E1:S04:T03 (`RW -k`, `--art`) — **FR-099 phase split** (T03–T07 per phase) + kanban init Phase 0. SemVer **v0.4.810+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.3+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.3+3.md)
 
 ---

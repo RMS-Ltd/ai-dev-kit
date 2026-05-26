@@ -33,7 +33,7 @@ housekeeping_policy: keep
 | RF8 | Phase 5 book/public positioning sidebar (Head First AI-Assisted Development) linked from cheatsheet | FR-098 phased table |
 | RF9 | Deterministic validators + pytest for bridge YAML and install manifest (extend or sibling to `validate_adk_ecc_skill_pack.py`) | T05 pattern, RF3 |
 | RF10 | **Real-world validation** on public ADK repo after [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3: greenfield install, then cheatsheet §3 (including optional `--execute`) | Wave E, maintainer plan 2026-05-26 |
-| RF11 | Capture **usage evidence + feedback** (UXR and/or FR) from public-repo pass; link to **E1:S04:T03** Phase 4 and/or follow-on E6 task | Wave E |
+| RF11 | Capture **usage evidence + feedback** (UXR and/or FR) from public-repo pass; link to **E1:S04:T07** and/or follow-on E6 task | Wave E |
 | RF12 | Prove **ADK-only** path on public tree (FR-099-F6) **before** ECC overlay; ECC remains optional afterward | FR-099-NF2, RNF1 |
 
 ### 1.2 Non-functional requirements (ascertained)
@@ -148,7 +148,7 @@ Exemption block not used (T1–T7 not all N).
 | 9 | **Wave D:** UPDATE integration spec §10 task anchors to **T06**; UPDATE FR-098 notes | Traceability |
 | 10 | RW per wave or at end: `RW E6:S09:T06` with Step 7 four-surface (T06 kboard row replaces T05 phases-2–5 anchor) | Release |
 | **11** | **[MANDATORY] Reconcile T06 status** to `COMPLETE` + `✅ COMPLETE (v{version})` when all ACs satisfied; else `IN PROGRESS` / `BLOCKED`. | Task doc + boards — **done** **v0.6.9.6+3** |
-| 12 | **Wave E — prerequisite:** [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3 public rebirth + Phase 4 ADK-only install smoke ([E1:S04:T03](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)) | Public clone ready |
+| 12 | **Wave E — prerequisite:** [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) **E1:S04:T06** (public rebirth) + **E1:S04:T07** (rewire + install smoke) | Public clone ready |
 | 13 | **Wave E — execute:** On public clone, run [cheatsheet §3 Throwaway branch playbook](../documentation/user-docs/ecc-adk-integration-cheatsheet.md#throwaway-branch-playbook-end-to-end); allow step 4 `--execute` on feature branch | Real `.cursor/` footprint |
 | 14 | **Wave E — feedback:** File UXR/FR with evidence pack (§8.3); optional cheatsheet/install tweaks via `RW -d` | Adopter-grade signal |
 
@@ -298,13 +298,13 @@ flowchart LR
 
 | Step | Owner / anchor | Action |
 | ---- | -------------- | ------ |
-| 1 | [E1:S04:T03](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) | Complete Phase 2 genesis on private repo if not already merged to public-bound tree |
+| 1 | [E1:S04:T05](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | Phase 2 genesis ✅ on private `dev` tree |
 | 2 | FR-099 Phase 3 | Create **public** `earlution/ai-dev-kit` from genesis (no pre-genesis book objects on public remote) |
 | 3 | FR-099 Phase 4 / FR-080 | Clone public repo; greenfield ADK install per [INSTALL_IN_YOUR_PROJECT.md](../../INSTALL_IN_YOUR_PROJECT.md); verify RW, UKW, validators **without** ECC |
 | 4 | Wave E (this plan) | Feature branch on **public** clone; run [cheatsheet §3](../documentation/user-docs/ecc-adk-integration-cheatsheet.md#throwaway-branch-playbook-end-to-end) through validators; **optionally** `--execute` after dry-run review |
 | 5 | RF11 | File feedback; link from FR-098 notes or new intake task |
 
-**Suggested task home for Wave E execution:** extend **E1:S04:T03** Phase 4 verification checklist **or** new **E6:S09** follow-on task (intake via IPW if implementation/doc RW required).
+**Suggested task home for Wave E execution:** **E1:S04:T07** verification checklist **or** new **E6:S09** follow-on task (intake via IPW if implementation/doc RW required).
 
 ### 8.3 Evidence pack (minimum)
 
@@ -348,6 +348,6 @@ Record in UXR/FR or task notes:
 - [ipw-adr-necessity-checklist](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [FR-042 IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-099 — Public repo spin-off](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [E1:S04:T03 — FR-099 migration](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
+- [E1:S04:T06 — FR-099 Phase 3](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) · [T07 Phase 4](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
 - [ADR-006 — Book private spin-off](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 - [ECC + ADK cheatsheet §3](../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
