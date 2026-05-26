@@ -2,11 +2,11 @@
   "rows": {
     "kboard_metadata": {
       "allowed": true,
-      "reason": "RW -d v0.6.9.6+1 — board metadata only"
+      "reason": "RW v0.6.9.6+5 — board metadata only"
     },
     "fbuboard_metadata": {
       "allowed": true,
-      "reason": "RW -d v0.6.9.6+1 — board metadata only"
+      "reason": "RW v0.6.9.6+5 — board metadata only"
     }
   }
 }
