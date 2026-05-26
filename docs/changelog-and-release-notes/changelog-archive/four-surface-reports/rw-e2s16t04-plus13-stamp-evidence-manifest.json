@@ -1,0 +1,20 @@
+{
+  "rows": {
+    "E2:S16:T04": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.4+13 — perpetual UKW lane last-run narrative (FR-099 T03–T05 archived; T06/T07 Must Have + IPP)"
+    },
+    "E1:S04:T06": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.4+13 — FR-099 Phase 3 active Must Have row + IPP link"
+    },
+    "E1:S04:T07": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.4+13 — FR-099 Phase 4 active Must Have row + IPP link"
+    },
+    "FR-099": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.4+13 — fbuboard version context + consolidated Must Have row"
+    }
+  }
+}

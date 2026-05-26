@@ -17,6 +17,7 @@ housekeeping_policy: keep
 **Code:** E1S04T04
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
+**Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.2 Phase 1**  
 **Depends on:** [E1:S04:T03 — Phase 0](T03-fr099-phase0-inventory-adr-approval.md)  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
@@ -72,5 +73,6 @@ Private GitHub repository `RMS-Ltd/hf-ai-dev-kit` with full history retained.
 
 ## References
 
+- [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
 - [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)

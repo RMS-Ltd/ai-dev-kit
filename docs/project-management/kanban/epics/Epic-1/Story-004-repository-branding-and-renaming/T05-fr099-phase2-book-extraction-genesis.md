@@ -18,6 +18,7 @@ housekeeping_policy: keep
 **Code:** E1S04T05
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
+**Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.3 Phase 2**  
 **Depends on:** [E1:S04:T04 — Phase 1](T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md)  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
@@ -81,5 +82,6 @@ Book extraction genesis commit on private repo (book-free public-bound tree).
 
 ## References
 
+- [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 - [Detailed changelog](../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.3+1.md)
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)

@@ -7,10 +7,10 @@ See: docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 1      # Epic 1
-VERSION_STORY = 4     # Story 4
-VERSION_TASK = 7      # Task 7
-VERSION_BUILD = 1     # Build 1: kanban init T07 (RW -k --art)
+VERSION_EPIC = 2      # Epic 2
+VERSION_STORY = 16    # Story 16
+VERSION_TASK = 4      # Task 4
+VERSION_BUILD = 13    # Build 13: kanban init UKW perpetual (RW -k --art)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.1.4.7+1
+# Current: 0.2.16.4+13

@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.1.4.7+1] - 26-05-26
+## [0.2.16.4+13] - 26-05-26
 
-E1:S04:T07 (`RW -k`, `--art`) — Kanban init: FR-099 Phase 4 — Rewire & verify. SemVer **v0.4.811+1**.
+E2:S16:T04 (`RW -k`, `--art`) — Kanban init: FR-099 hygiene (archive T03–T05; T06/T07 Must Have + IPP). SemVer **v0.4.811+13**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.7+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+13.md)
 
 ---

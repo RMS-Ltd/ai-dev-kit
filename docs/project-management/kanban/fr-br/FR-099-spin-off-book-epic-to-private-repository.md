@@ -30,6 +30,8 @@ housekeeping_policy: keep
 
 **Migration ADR:** [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
+**Planning package (all phases):** [IPP-E1S04-fr099-book-private-public-migration.md](../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+
 ---
 
 ## Summary
