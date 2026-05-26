@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.1.4.3+3] - 26-05-26
+## [0.1.4.4+1] - 26-05-26
 
-E1:S04:T03 (`RW -k`, `--art`) — **FR-099 phase split** (T03–T07 per phase) + kanban init Phase 0. SemVer **v0.4.810+3**.
+E1:S04:T04 (`RW -k`, `--art`) — Kanban init: FR-099 Phase 1 — Privatize & rename hf-ai-dev-kit. SemVer **v0.4.811+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.3+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.4+1.md)
 
 ---
