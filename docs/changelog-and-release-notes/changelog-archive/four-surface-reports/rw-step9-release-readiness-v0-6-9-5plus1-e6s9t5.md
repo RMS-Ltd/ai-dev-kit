@@ -2,9 +2,9 @@
 
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
-- **Release scope:** E1:S4:T3 (v0.1.4.3+1)
-- **Timestamp (UTC):** 2026-05-26 12:20 UTC
-- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-3plus1-e1s4t3.json`
+- **Release scope:** E6:S9:T5 (v0.6.9.5+1)
+- **Timestamp (UTC):** 2026-05-26 12:26 UTC
+- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-5plus1-e6s9t5.json`
 
 ## Overall verdict
 
@@ -66,19 +66,19 @@
 ### Gate 5 — Stage-set completeness (BR-070)
 
 - Status: **PASS** (severity: `block`)
-- Summary: BR-070 satisfied: all 7 Step-7 path(s) are staged or unchanged.
+- Summary: BR-070 satisfied: all 6 Step-7 path(s) are staged or unchanged.
 - Evidence:
-  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-3plus1-e1s4t3.json`
-  - `paths_checked`: `7`
+  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-5plus1-e6s9t5.json`
+  - `paths_checked`: `6`
   - `violations`: `0`
-  - `release_scope`: `{'epic': 1, 'story': 4, 'task': 3, 'task_id': 'E1:S4:T3', 'version_string': 'v0.1.4.3+1'}`
+  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 5, 'task_id': 'E6:S9:T5', 'version_string': 'v0.6.9.5+1'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
 
 - Status: **PASS** (severity: `block`)
 - Summary: Forensic stamp evidence consistent: appended=0, skipped=0, preserved=0 (mode=None).
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-3plus1-e1s4t3.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-5plus1-e6s9t5.json`
   - `evidence_mode`: `None`
   - `stamps_appended_with_evidence`: `0`
   - `stamps_skipped_no_evidence`: `0`
@@ -89,12 +89,12 @@
 - Status: **PASS** (severity: `block`)
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-3plus1-e1s4t3.json`
-  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md'], 'notes_count': 1}`
-  - `fbu_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-064-shields-branch-private-repo-badges.md'], 'notes_count': 1}`
-  - `kboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
-  - `fbuboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md'], 'notes_count': 0}`
-  - `release_scope`: `{'epic': 1, 'story': 4, 'task': 3, 'task_id': 'E1:S4:T3', 'version_string': 'v0.1.4.3+1'}`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-5plus1-e6s9t5.json`
+  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md'], 'notes_count': 1}`
+  - `fbu_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md'], 'notes_count': 1}`
+  - `kboard`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md'], 'notes_count': 1}`
+  - `fbuboard`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md'], 'notes_count': 1}`
+  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 5, 'task_id': 'E6:S9:T5', 'version_string': 'v0.6.9.5+1'}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 

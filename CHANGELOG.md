@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.5+1] - 26-05-26
+
+E6:S09:T05 (`--art`) — **FR-098 intermediate doc release**: SemVer strategy encoded (PATCH per ECC phase; MINOR at Epic 6 sign-off only). SemVer **v0.4.797+1** (PATCH +1; MINOR unchanged).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.5+1.md)
+
+---
+
 ## [0.1.4.3+1] - 26-05-26
 
 E1:S04:T03 (`--art`) — **FR-099 Phase 2 book extraction genesis**: removed `docs/book-proj/` and Epic 24 from public-bound tree; ADR-006 Option C; E1:S04:T02 superseded; `book/epic-24` branch preserves manuscript work on private `RMS-Ltd/hf-ai-dev-kit`. SemVer **v0.4.796+1**.

@@ -14,10 +14,10 @@ See: docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 1      # Epic 1: AI Dev Kit Core
-VERSION_STORY = 4     # Story 4: Repository Branding and Renaming
-VERSION_TASK = 3      # Task 3: Spin off book epic to private repository (FR-099)
-VERSION_BUILD = 1     # Build 1: Phase 2 book extraction genesis commit (--art)
+VERSION_EPIC = 6      # Epic 6: Framework Management
+VERSION_STORY = 9     # Story 9: AI Dev Kit installation and adopter integration
+VERSION_TASK = 5      # Task 5: ADK workflow skill pack for ECC (FR-098 Phase 1 — intermediate doc release)
+VERSION_BUILD = 1     # Build 1: FR-098 SemVer strategy encoded (--art)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.1.4.3+1
+# Current: 0.6.9.5+1

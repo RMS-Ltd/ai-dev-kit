@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** LOW  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E6:S09:T04](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)
+**Implementing Tasks:** [E6:S09:T04](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) (Phase 0), [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) (Phase 1+)
 
 ---
 
@@ -56,6 +56,23 @@ Today there is **no documented integration path**, no compatibility contract, an
 - [x] **FR-098-NF2:** ADK validators and IPW/RW gates remain **authoritative**; ECC hooks are advisory or pre-flight unless explicitly promoted to CI.
 - [x] **FR-098-NF3:** Do **not** vendor-fork ECC; reference upstream MIT repo and pin version in bridge config.
 - [x] **FR-098-NF4:** Follow ECC install discipline (**single install path**; no plugin + full installer stacking).
+- [x] **FR-098-NF5:** **SemVer discipline (task_touch):** ECC integration releases use normal **PATCH** advancement per RW (`task_touch_counter`); do **not** hand-bump **MINOR** for optional ECC phases alone. **MINOR** advances only at **Epic 6 sign-off** (`epic_count` increment in `semver-registry.yaml`) or a separate **product milestone** (e.g. public `ai-dev-kit` genesis per FR-099), not per FR-098 phase.
+
+---
+
+## Release / SemVer strategy (maintainer decision — 2026-05-26)
+
+ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](../../../architecture/standards-and-adrs/dev-kit-versioning-policy.md), ADR-002):
+
+| SemVer part | Driver | ECC integration guidance |
+|-------------|--------|---------------------------|
+| **PATCH** | `task_touch_counter` (+1 per RW) | Each shipped FR-098 phase (T04, T05, installer bridge, …) releases via RW → PATCH only (e.g. `0.4.796` → `0.4.797`). |
+| **MINOR** | `epic_count` (epics signed off) | Bump when **Epic 6** (installation & adopter integration) is signed off — signals “integration epic complete,” not “ECC optional layer added.” |
+| **MAJOR** | RC / breaking policy | Reserved for breaking adoption or governance changes (e.g. ECC becomes required, RW rules change). |
+
+**Rationale:** ECC is **optional and backward-compatible**. Release notes and install docs carry the harness-layer signal; SemVer PATCH reflects incremental delivery without inflating MINOR for every phase.
+
+**Out of scope for FR-098 SemVer:** Public repo rebirth ([FR-099](./FR-099-spin-off-book-epic-to-private-repository.md) Phase 3) — version that cut on the **new public** repo policy, not as an ECC MINOR bump on the private lineage.
 
 ---
 
@@ -150,7 +167,7 @@ Today there is **no documented integration path**, no compatibility contract, an
 - Epic: Epic 6 — Framework Management
 - Story: Story 9 — AI Dev Kit installation and adopter integration
 - Task: T04 — ECC harness layer Phase 0 compatibility evaluation (FR-098)
-- Version: `[pending first RW on task]`
+- Version: **v0.6.9.5+1** (intermediate doc release — SemVer strategy; E6:S09:T05 `--art`)
 
 **Kanban Links:**
 

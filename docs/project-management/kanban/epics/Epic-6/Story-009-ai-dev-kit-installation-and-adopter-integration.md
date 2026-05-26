@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 009 – AI Dev Kit installation and adopter integration
 
-**Status:** IN PROGRESS  
+**Status:** IN PROGRESS
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-04-19 (RW **v0.6.9.1+8** — **E6:S09:T01** `--art`; Wave 5 traceability + **FR-080** IMPLEMENTED)  
-**Version:** v0.6.9.1+8  
+**Last updated:** 2026-05-26 (v0.6.9.5+1 – Kanban documentation setup)
+**Version:** v0.6.9.5+1
 **Code:** E6S09
 
 ---
@@ -34,7 +34,7 @@ housekeeping_policy: keep
   - Task: [`T04-ecc-harness-layer-phase0-compatibility-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
   - IPP: [`IPP-E6S09T04`](../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 
-- [ ] **E6:S09:T05 – ADK workflow skill pack for ECC harness layer (FR-098 Phase 1)** - TODO (MEDIUM — `adk-*` skills in ECC format; requires IPW)
+- [ ] **E6:S09:T05 – ADK workflow skill pack for ECC harness layer (FR-098 Phase 1)** - 🔄 IN PROGRESS (MEDIUM — **v0.6.9.5+1** SemVer strategy doc release; `adk-*` skills pending IPW)
   - Task: [`T05-adk-workflow-skill-pack-ecc-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
 
 ---
@@ -52,6 +52,7 @@ Work is tracked in **Epic 6** because this is **framework distribution and adopt
 - **Greenfield:** Opinionated, reproducible install → configure → verify for new or template projects.  
 - **Brownfield:** Contract-first, optional surfaces; host project owns architecture.  
 - **Hygiene:** Install scripts and docs reference the correct public GitHub repository by default.
+- **Optional harness layer (FR-098):** ECC integration ships in phases; each phase releases via RW with **PATCH-only** SemVer under `task_touch`. **MINOR** advances at **Epic 6 sign-off** (`epic_count`), not per ECC phase — see [FR-098 SemVer strategy](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md#release--semver-strategy-maintainer-decision--2026-05-26).
 
 ---
 

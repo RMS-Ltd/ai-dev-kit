@@ -129,7 +129,20 @@ Canonical procedure: [Phase 0 evaluation §3](./ecc-adk-harness-layer-phase0-eva
 
 ---
 
-## 9. Phase roadmap (FR-098)
+## 9. Release and SemVer (ADK `task_touch`)
+
+ECC integration does **not** change ADK version schema or RW bump rules. Under `semver_mapping_strategy: task_touch` ([dev-kit-versioning-policy](./dev-kit-versioning-policy.md)):
+
+- **Each FR-098 phase** ships via normal RW on its task anchor → **PATCH** increment only (`task_touch_counter`).
+- **Do not** hand-bump SemVer **MINOR** for optional ECC phases (Phase 0–4).
+- **MINOR** advances when **Epic 6** is signed off (`epic_count` in `semver-registry.yaml`) — integration epic complete, not “ECC added.”
+- **MAJOR** only if integration becomes mandatory or breaks existing adopters.
+
+Communicate harness-layer availability in release notes and install docs; SemVer PATCH monotonicity is sufficient for package consumers.
+
+---
+
+## 10. Phase roadmap (FR-098)
 
 | Phase | Deliverable | Task |
 |-------|-------------|------|
@@ -142,7 +155,7 @@ Canonical procedure: [Phase 0 evaluation §3](./ecc-adk-harness-layer-phase0-eva
 
 ---
 
-## 10. References
+## 11. References
 
 - [ECC repository](https://github.com/affaan-m/ECC)
 - [ECC cross-harness architecture](https://github.com/affaan-m/ECC/blob/main/docs/architecture/cross-harness.md)

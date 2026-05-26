@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-05-17 (v0.6.6.63+2 – T63 COMPLETE: RW Recovery Journal and Rollback Contract shipped)
+**Last updated:** 2026-05-26 (v0.6.9.5+1 – Story 9 Task 5 complete)
 **Branch:** `epic/6-framework-management`  
 **Version Schema:** `0.6.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -146,7 +146,7 @@ Epic 6 owns the **Framework Management and Maintenance** processes for the ai-de
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-21 (v0.6.6.63+1 – Story 6 Task 63 complete)
+**Last updated:** 2026-05-26 (v0.6.9.5+1 – Story 9 Task 5 complete)
 
 **Goal:**  
 Establish version management processes for framework packages.
@@ -167,7 +167,7 @@ Establish version management processes for framework packages.
 **Status:** TODO  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-21 (v0.6.6.63+1 – Story 6 Task 63 complete)
+**Last updated:** 2026-05-26 (v0.6.9.5+1 – Story 9 Task 5 complete)
 
 **Goal:**  
 Implement processes for updating and migrating framework packages.
@@ -188,7 +188,7 @@ Implement processes for updating and migrating framework packages.
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-21 (v0.6.6.63+1 – Story 6 Task 63 complete)
+**Last updated:** 2026-05-26 (v0.6.9.5+1 – Story 9 Task 5 complete)
 
 **Goal:**  
 Build monitoring and health tracking for framework packages.
