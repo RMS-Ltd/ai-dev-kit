@@ -22,7 +22,12 @@ harness_layer:
     single_install_path: true  # never stack plugin + full installer
 
   hook_profile: minimal  # ECC_HOOK_PROFILE: minimal | standard | strict
-  disabled_hooks: []  # e.g. post:commit:auto-push — populate from conflict-resolve findings
+  # Populate from Phase 0 conflict-resolve; enable only after Phase 3 hook review.
+  disabled_hooks:
+    - post:commit:auto-push   # conflicts with ADK RW-only git policy
+    - pre:commit:git-add-all  # example — disable auto-staging that bypasses RW intent
+  # Advisory pre-RW hook IDs (non-blocking; document in cheatsheet §3b):
+  # pre:rw:quality-gate — optional signal only; ADK Step 10 validators remain authoritative
 
   adk_skill_pack_path: packages/frameworks/workflow mgt/skills/  # Phase 1 placeholder
 

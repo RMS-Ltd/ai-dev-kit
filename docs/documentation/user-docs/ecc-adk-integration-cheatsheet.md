@@ -65,6 +65,13 @@ Review the planned paths. Confirm **no collision** with existing ADK `.cursor/sk
 
 ```bash
 cp "packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template" ecc-adk-bridge.yaml
+python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py" --bridge ecc-adk-bridge.yaml
+```
+
+Or use the install helper (dry-run + optional copy):
+
+```bash
+"packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
 ```
 
 Edit:
@@ -106,6 +113,19 @@ Copy or symlink ADK’s portable skills into the harness (paths on **`main`** af
 These skills are **thin**: they point at KB guides and `.cursorrules`; they do not duplicate full RW prose.
 
 Set `adk_skill_pack_path` in `ecc-adk-bridge.yaml` to that directory.
+
+### Step F — Validate skill pack + bridge (maintainers / CI)
+
+```bash
+python "packages/frameworks/workflow mgt/scripts/validation/validate_adk_ecc_skill_pack.py"
+python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py"
+```
+
+### Step G — Hooks (Phase 3 defaults)
+
+- Keep `hook_profile: minimal` and `excluded_components: [baseline:hooks]` until you review SessionStart / pre-RW behavior.
+- Populate `disabled_hooks` from the bridge template examples (RW/git conflicts).
+- **Pre-RW advisory:** Any ECC pre-RW quality hook is **non-blocking**; ADK **Step 10** validators remain authoritative ([AgentShield bridge doc](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md)).
 
 ---
 
@@ -219,9 +239,24 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | Phase | What you get today |
 | ----- | ------------------ |
 | **0** | Spec, evaluation, bridge template — **done** |
-| **1** | `adk-*` skill pack under `packages/frameworks/workflow mgt/skills/` — **on `main`** (merge from FR-098) |
-| **2** | Installer step in greenfield path — planned |
-| **3** | Hook alignment (SessionStart, pre-RW quality) — planned |
-| **4** | AgentShield ↔ RW Step 9 bridge — planned |
+| **1** | `adk-*` skill pack + `validate_adk_ecc_skill_pack.py` — **done** ([T05](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)) |
+| **2** | `install_ecc_harness_optional.sh`, `validate_ecc_adk_bridge.py`, INSTALL optional step — **done** ([T06](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)) |
+| **3** | Hook defaults in bridge template + cheatsheet §3G — **done** |
+| **4** | [AgentShield RW add-on doc](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md) — **done** |
+| **5** | Layered architecture + book sidebar (§11) — **done** |
 
-If `adk-*` skills are missing on your branch, merge `main` or copy the `skills/` tree from [FR-098 T05](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md).
+If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `skills/` tree from [T05](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md).
+
+---
+
+## 11. Layered architecture and book positioning (FR-098-F6)
+
+**ADK = project operating system** — Kanban, FR/BR/UXR, IPW gate, RW/UKW, forensic versioning, validators.  
+**ECC = harness execution layer** — domain skills, TDD craft, optional hooks and security scan skills.
+
+Cross-links:
+
+- [AI Dev Kit vision and purpose](../../documentation/ai-dev-kit-vision-and-purpose.md)
+- [Integration specification](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
+
+**Book sidebar (Head First AI-Assisted Development):** Position ECC as an optional **15-minute harness sidebar** after the ADK full-stack install — same mental model as §1 above. Readers install ADK first; ECC augments agent craft without replacing governance workflows.

@@ -148,14 +148,27 @@ Communicate harness-layer availability in release notes and install docs; SemVer
 |-------|-------------|------|
 | **0** | Compatibility matrix + bridge template + this spec | **E6:S09:T04** (complete) |
 | **1** | ADK workflow skill pack (`adk-*` in ECC `SKILL.md` format) | **E6:S09:T05** (complete) |
-| **2** | Optional greenfield installer step + `ecc-adk-bridge.yaml` | **E6:S09:T06** (planned) |
-| **3** | Hook alignment (SessionStart context, pre-RW quality gate) | **E6:S09:T06** |
-| **4** | AgentShield optional RW Step 9 bridge | **E6:S09:T06** |
-| **5** | Book / public positioning sidebar | **E6:S09:T06** |
+| **2** | Optional greenfield installer step + `ecc-adk-bridge.yaml` | **E6:S09:T06** (shipped) |
+| **3** | Hook alignment (SessionStart context, pre-RW quality gate) | **E6:S09:T06** (shipped) |
+| **4** | AgentShield optional RW Step 10 add-on | **E6:S09:T06** (shipped) |
+| **5** | Book / public positioning sidebar | **E6:S09:T06** (shipped) |
 
 ---
 
-## 11. References
+## 11. Phase 2–5 implementation artifacts (E6:S09:T06)
+
+| Artifact | Path |
+| -------- | ---- |
+| Bridge validator | `packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py` |
+| Optional install helper | `packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh` (`--dry-run` default) |
+| AgentShield add-on | `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md` |
+| Adopter quick-start | [ECC + ADK integration cheatsheet](../documentation/user-docs/ecc-adk-integration-cheatsheet.md) §3, §11 |
+
+Hook policy: default `hook_profile: minimal`, hooks-off install, `disabled_hooks` examples in bridge template; pre-RW ECC hooks are **advisory** only.
+
+---
+
+## 12. References
 
 - **[ECC + ADK integration cheatsheet](../documentation/user-docs/ecc-adk-integration-cheatsheet.md)** — quick-start for adopters (workflows, conflicts, setup)
 - [ECC repository](https://github.com/affaan-m/ECC)

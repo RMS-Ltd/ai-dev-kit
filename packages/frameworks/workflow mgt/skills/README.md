@@ -22,4 +22,15 @@ That path is the canonical location of this pack within the AI Dev Kit framework
 
 ## Validation
 
-Run `python "packages/frameworks/workflow mgt/scripts/validation/validate_adk_ecc_skill_pack.py"` from the repository root (or pass `--project-root`).
+From the repository root:
+
+```bash
+python "packages/frameworks/workflow mgt/scripts/validation/validate_adk_ecc_skill_pack.py"
+python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py"
+```
+
+Optional ECC install (dry-run by default):
+
+```bash
+"packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
+```

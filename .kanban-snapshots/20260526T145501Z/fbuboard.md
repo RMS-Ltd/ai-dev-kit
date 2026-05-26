@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-26 (RW **v0.6.9.6+2** — FR-098 phases 2–5)
-**Version Context:** v0.6.9.6+2 (**SemVer** v0.4.807+2)
+**Last Updated:** 2026-05-26 (RW -k **v0.6.9.6+1** — FR-098 T06 intake)
+**Version Context:** v0.6.9.6+1 (**SemVer** v0.4.806+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -37,7 +37,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Must Have (M) - Critical Items
 
-- **FR-098** – Optional ECC harness layer integration — 🔄 IN PROGRESS (MUST, phases 2–5 **v0.6.9.6+2**; dogfood pending; [cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)) | [FR-098](fr-br/FR-098-ecc-optional-harness-layer-integration.md) | [E6:S09:T06](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) | [—IPP—](../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) | Last modified: 2026-05-26 17:10 UTC
+- **FR-098** – Optional ECC harness layer integration — 🔄 IN PROGRESS (MUST, Phase 1 **shipped** v0.6.9.5+4; **phases 2–5** on **E6:S09:T06**; [cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)) | [FR-098](fr-br/FR-098-ecc-optional-harness-layer-integration.md) | [E6:S09:T06](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) | [—IPP—](../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) | Last modified: 2026-05-26 17:05 UTC
 - **UXR-012** – Kanban and FBU state icons for MoSCOW rows - 📥 ACCEPTED (HIGH, **Set A on boards** + Unicode fallback; e.g. ✅ 🔄 📋 🟢) | [UXR-012](fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md) | [E4:S13:T07](epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) | [—IPP—](../../implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md) | Last modified: 2026-05-20 20:00 UTC
 - **BR-039** – Cascade Whitelist Security Prompt Usability Blocker - 📋 TODO (CRITICAL, Cascade whitelist feature non-functional, creates constant security prompt interruptions preventing productive workflow execution) - [BR-039](fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) | Last modified: 2026-04-02 00:00 UTC
 - **BR-072** – UKW not removing completed tasks from kboard - 🔁 REOPENED (HIGH, UKW Step 6 removes completed tasks from standalone task docs but does not scan story docs for inline/embedded task statuses; E2:S07:T01/T05 showed TODO on kboard despite COMPLETE inline status) | [BR-072](fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md) | [E6:S01:T38](epics/Epic-6/Story-001-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md) | [—IPP—](../../implementation-cycles/IPP-E6S01T38-ukw-completed-task-removal-defect.md) | Last modified: 2026-05-16 14:30 UTC

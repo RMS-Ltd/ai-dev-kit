@@ -2049,6 +2049,8 @@ $ python packages/frameworks/workflow mgt/scripts/update_kanban_docs.py --dry-ru
 - Warnings and infos are non-blocking but should be addressed when possible
 - Check order: errors → warnings → infos
 
+**Optional add-on (FR-098 / ECC adopters):** [ECC AgentShield RW Step 10 bridge](./ecc-agentshield-rw-step9-bridge.md) — supplementary security scan skills may run before or after Step 10; **non-blocking**; ADK validators below remain authoritative.
+
 ---
 
 ### Step 10: Run Validators

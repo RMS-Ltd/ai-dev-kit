@@ -42,7 +42,26 @@ This section defines the canonical **greenfield** path for new or template proje
 
 ### Optional harness layer (ECC)
 
-ADK adoption does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT). For optional complementary harness execution skills, see the **[ECC + ADK integration cheatsheet](docs/documentation/user-docs/ecc-adk-integration-cheatsheet.md)** (quick reference) and [ECC ↔ ADK integration specification](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) (normative contract). Installer steps for ECC are deferred to FR-098 Phase 2.
+ADK adoption does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT). After the greenfield ADK baseline (workflow + kanban installers above), you may optionally add ECC:
+
+1. Read the **[ECC + ADK integration cheatsheet](docs/documentation/user-docs/ecc-adk-integration-cheatsheet.md)** (quick reference).
+2. Run Phase 0 dry-run on a throwaway branch (see cheatsheet §3).
+3. Copy the bridge template and validate:
+
+   ```bash
+   cp "packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template" ecc-adk-bridge.yaml
+   python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py"
+   ```
+
+4. Optional install helper (defaults to **dry-run**; no network):
+
+   ```bash
+   "packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
+   ```
+
+   Use `--execute` only after Phase 0 passes on your project.
+
+Normative contract: [ECC ↔ ADK integration specification](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md). Brownfield adopters: same optional surface per [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
 
 ### Scope boundary
 

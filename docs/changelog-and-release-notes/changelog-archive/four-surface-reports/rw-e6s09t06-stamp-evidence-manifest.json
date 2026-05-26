@@ -1,16 +1,12 @@
 {
   "rows": {
-    "E6:S09:T05": {
-      "allowed": true,
-      "reason": "RW Step 7 v0.6.9.6+1 — remove T05 from active Must Have; Phase 1 shipped; phases 2–5 anchor moved to T06"
-    },
     "E6:S09:T06": {
       "allowed": true,
-      "reason": "RW Step 7 v0.6.9.6+1 — new Must Have kboard row; T06 replaces T05 as FR-098 phases 2–5 anchor"
+      "reason": "RW Step 7 v0.6.9.6+2 — kboard row update for implementation release"
     },
     "FR-098": {
       "allowed": true,
-      "reason": "RW Step 7 v0.6.9.6+1 — fbuboard row repointed to T06 + IPP-E6S09T06"
+      "reason": "RW Step 7 v0.6.9.6+2 — fbuboard row phases 2–5 shipped"
     }
   }
 }

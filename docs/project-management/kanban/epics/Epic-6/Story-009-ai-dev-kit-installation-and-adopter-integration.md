@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-05-26 (v0.6.9.6+1 – T06 kanban intake, FR-098 phases 2–5)
-**Version:** v0.6.9.6+1
+**Last updated:** 2026-05-26 (v0.6.9.6+2 – T06 phases 2–5 implementation)
+**Version:** v0.6.9.6+2
 **Code:** E6S09
 
 ---
@@ -38,7 +38,7 @@ housekeeping_policy: keep
   - Task: [`T05-adk-workflow-skill-pack-ecc-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
   - IPP: [`IPP-E6S09T05`](../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
 
-- [ ] **E6:S09:T06 – ECC harness phases 2–5 (FR-098)** — 📋 TODO (HIGH — kanban init **v0.6.9.6+1**; IPP wired; implementation pending)
+- [ ] **E6:S09:T06 – ECC harness phases 2–5 (FR-098)** — 🔄 IN PROGRESS (HIGH — **v0.6.9.6+2** phases 2–5 shipped; dogfood T8 on throwaway branch)
   - Task: [`T06-ecc-harness-phases-2-5-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
   - IPP: [`IPP-E6S09T06`](../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
 
