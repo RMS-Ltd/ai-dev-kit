@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-26 (RW: E1:S4:T6)
-**Version:** v0.1.4.6+1
+**Last Updated:** 2026-05-26 (RW: E1:S4:T7)
+**Version:** v0.1.4.7+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/hf-ai-dev-kit` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -31,7 +31,7 @@ housekeeping_policy: keep
 ### Should Have (S) - Important Tasks
 
 - **E1:S04:T06** – FR-099 Phase 3 — Public `ai-dev-kit` rebirth - 📋 TODO (HIGH, new public repo from genesis; IPW before execute; Wave E ECC venue after this phase) - [T06](epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) (vv0.1.4.6+1) | [FR-099](fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | [ADR-006](../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Last modified: 2026-05-26 16:00 UTC
-- **E1:S04:T07** – FR-099 Phase 4 — Rewire & verify - 📋 TODO (HIGH, blocked by T06; remotes, badges, install smoke) - [T07](epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | [FR-099](fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | Last modified: 2026-05-26 16:00 UTC
+- **E1:S04:T07** – FR-099 Phase 4 — Rewire & verify - 📋 TODO (HIGH, blocked by T06; remotes, badges, install smoke) - [T07](epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) (vv0.1.4.7+1) | [FR-099](fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | Last modified: 2026-05-26 16:00 UTC
 - **E4:S19:T03** – FR-087: investigate why `E6:S07` became default housing and decide closure/scope - 🔄 IN PROGRESS (HIGH, forensic analysis of origin/codification plus close/split/narrow recommendation and guardrails; canonical IPP published) | Last modified: 2026-05-14 11:06 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks

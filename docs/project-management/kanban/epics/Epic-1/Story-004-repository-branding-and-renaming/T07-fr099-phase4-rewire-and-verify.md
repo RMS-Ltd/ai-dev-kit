@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (filed from FR-099 phase split)  
+**Last updated:** 2026-05-26 (v0.1.4.7+1 – Kanban documentation setup)
 **Code:** E1S04T07
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
