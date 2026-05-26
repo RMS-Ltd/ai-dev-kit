@@ -2,9 +2,9 @@
 
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
-- **Release scope:** E2:S16:T4 (v0.2.16.4+12)
-- **Timestamp (UTC):** 2026-05-26 14:25 UTC
-- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus12-e2s16t4.json`
+- **Release scope:** E2:S1:T22 (v0.2.1.22+1)
+- **Timestamp (UTC):** 2026-05-26 14:30 UTC
+- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-22plus1-e2s1t22.json`
 
 ## Overall verdict
 
@@ -61,24 +61,24 @@
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 93}`
+  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 95}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
 - Status: **PASS** (severity: `block`)
 - Summary: BR-070 satisfied: all 6 Step-7 path(s) are staged or unchanged.
 - Evidence:
-  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus12-e2s16t4.json`
+  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-22plus1-e2s1t22.json`
   - `paths_checked`: `6`
   - `violations`: `0`
-  - `release_scope`: `{'epic': 2, 'story': 16, 'task': 4, 'task_id': 'E2:S16:T4', 'version_string': 'v0.2.16.4+12'}`
+  - `release_scope`: `{'epic': 2, 'story': 1, 'task': 22, 'task_id': 'E2:S1:T22', 'version_string': 'v0.2.1.22+1'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
 
 - Status: **PASS** (severity: `block`)
 - Summary: Forensic stamp evidence consistent: appended=0, skipped=0, preserved=0 (mode=None).
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus12-e2s16t4.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-22plus1-e2s1t22.json`
   - `evidence_mode`: `None`
   - `stamps_appended_with_evidence`: `0`
   - `stamps_skipped_no_evidence`: `0`
@@ -89,12 +89,12 @@
 - Status: **PASS** (severity: `block`)
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus12-e2s16t4.json`
-  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md'], 'notes_count': 1}`
-  - `fbu_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md'], 'notes_count': 1}`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-22plus1-e2s1t22.json`
+  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md'], 'notes_count': 1}`
+  - `fbu_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md'], 'notes_count': 1}`
   - `kboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
   - `fbuboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md'], 'notes_count': 0}`
-  - `release_scope`: `{'epic': 2, 'story': 16, 'task': 4, 'task_id': 'E2:S16:T4', 'version_string': 'v0.2.16.4+12'}`
+  - `release_scope`: `{'epic': 2, 'story': 1, 'task': 22, 'task_id': 'E2:S1:T22', 'version_string': 'v0.2.1.22+1'}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 

@@ -1,0 +1,114 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated Version: v0.2.1.22+1",
+        "Updated Last updated: 2026-05-26 (v0.2.1.22+1 \u2013 Kanban documentation setup)",
+        "Reconciled Task Checklist row: E2:S1:T22 -> [x] \u2705 COMPLETE",
+        "Updated Status: IN PROGRESS",
+        "Updated Epic Last updated: 2026-05-26 (v0.2.1.22+1 \u2013 Story 1 Task 22 complete)",
+        "Updated board Last Updated: 2026-05-26 (RW: E2:S1:T22)",
+        "Updated board Version: v0.2.1.22+1",
+        "Updated MoSCOW section: E2:S1:T22 marked as COMPLETE"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 1,
+    "task": 22,
+    "task_id": "E2:S1:T22",
+    "version_string": "v0.2.1.22+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 14,
+    "touched_surfaces": [
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": [
+      "task_doc",
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "fbuboard": {
+      "changes": [
+        "corpus-canonical sweep: fbuboard.md clean (idempotent)",
+        "corpus-canonical sweep: fr-br-uxr-board.md clean (idempotent)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Enforced terminal row timestamps: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md",
+        "corpus-canonical sweep: kboard.md clean (idempotent)",
+        "corpus-canonical sweep: kanban-board.md clean (idempotent)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md"
+      ],
+      "surface": "task_doc",
+      "touched": false
+    }
+  },
+  "timestamp_utc": "2026-05-26 14:30 UTC"
+}

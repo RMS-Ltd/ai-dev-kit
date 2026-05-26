@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
 **Completed:** N/A (story reopened for ongoing RW validation work)
-**Last updated:** 2026-05-17 (E2:S01:T21 filed for BR-074 — RW release artifact hygiene, changelog immutability, version-typo defects discovered during E6:S06:T63 v0.6.6.63+2)
-**Version:** v0.2.1.19+1
+**Last updated:** 2026-05-26 (v0.2.1.22+1 – Kanban documentation setup)
+**Version:** v0.2.1.22+1
 **Code:** E2S01
 
 ---
@@ -55,6 +55,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 - [x] **E2:S01:T19 – RW trigger routing execution regression (BR-071)** - ✅ COMPLETE (v0.2.1.19+1 — fix: CLAUDE.md + .claude/commands/rw.md; root cause: no Claude Code instruction file; BR-071 RESOLVED) — [Task doc](Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md) | [BR-071](../../fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
 - [x] **E2:S01:T20 – SemVer task-touch collision retrospective fix (BR-073)** - ✅ COMPLETE (v0.2.1.20+1 — registry patch, BR doc, task doc, kanban updates) — [Task doc](Story-001-rw-agent-execution-and-docs/T20-semver-task-touch-collision-retrospective-fix-br073.md) | [BR-073](../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)
 - [x] **E2:S01:T21 – RW release commits test artifacts, deletes prior-build changelog, emits version typo (BR-074)** - ✅ COMPLETE (v0.2.1.21+1 — `.gitignore` exclusions, restored +1 changelog, patched +2 typo, Step 3 immutability guards, archive link validator, dual-source parity updated) — [Task doc](Story-001-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md) | [BR-074](../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
+- [ ] **E2:S01:T22 – RW perpetual-task BUILD must persist in `version.py` (BR-075)** - 📋 TODO (LOW — **v0.2.1.22+1** intake; validator + doc ordering for perpetual `RW` / `RW -k`) — [Task doc](Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md) | [BR-075](../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
 
 ---
 

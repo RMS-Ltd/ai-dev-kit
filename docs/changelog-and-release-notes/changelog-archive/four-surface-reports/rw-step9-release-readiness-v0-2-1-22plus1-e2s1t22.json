@@ -1,15 +1,15 @@
 {
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
-  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus12-e2s16t4.json",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-22plus1-e2s1t22.json",
   "invocation_context": "rw_step_9_release_readiness",
   "overall_passed": true,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
   "release_scope": {
     "epic": 2,
-    "story": 16,
-    "task": 4,
-    "task_id": "E2:S16:T4",
-    "version_string": "v0.2.16.4+12"
+    "story": 1,
+    "task": 22,
+    "task_id": "E2:S1:T22",
+    "version_string": "v0.2.1.22+1"
   },
   "summary": {
     "blocking_failures": [],
@@ -18,7 +18,7 @@
     "gates_total": 9,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-05-26 14:25 UTC",
+  "timestamp_utc": "2026-05-26 14:30 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -99,7 +99,7 @@
         },
         "stamp_evidence_aggregate": {
           "stamps_appended_with_evidence": 0,
-          "stamps_preserved_existing": 93,
+          "stamps_preserved_existing": 95,
           "stamps_skipped_no_evidence": 0
         }
       },
@@ -115,14 +115,14 @@
     },
     {
       "evidence": {
-        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus12-e2s16t4.json",
+        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-22plus1-e2s1t22.json",
         "paths_checked": 6,
         "release_scope": {
           "epic": 2,
-          "story": 16,
-          "task": 4,
-          "task_id": "E2:S16:T4",
-          "version_string": "v0.2.16.4+12"
+          "story": 1,
+          "task": 22,
+          "task_id": "E2:S1:T22",
+          "version_string": "v0.2.1.22+1"
         },
         "violations": 0
       },
@@ -139,7 +139,7 @@
     {
       "evidence": {
         "evidence_mode": null,
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus12-e2s16t4.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-22plus1-e2s1t22.json",
         "stamps_appended_with_evidence": 0,
         "stamps_preserved_existing": 0,
         "stamps_skipped_no_evidence": 0
@@ -159,7 +159,7 @@
         "fbu_doc": {
           "notes_count": 1,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md"
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md"
           ],
           "touched": false
         },
@@ -179,16 +179,16 @@
         },
         "release_scope": {
           "epic": 2,
-          "story": 16,
-          "task": 4,
-          "task_id": "E2:S16:T4",
-          "version_string": "v0.2.16.4+12"
+          "story": 1,
+          "task": 22,
+          "task_id": "E2:S1:T22",
+          "version_string": "v0.2.1.22+1"
         },
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus12-e2s16t4.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-22plus1-e2s1t22.json",
         "task_doc": {
           "notes_count": 1,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md"
           ],
           "touched": false
         }

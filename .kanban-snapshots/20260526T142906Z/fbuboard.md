@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – FBU Prioritization Board
 
 **Last Updated:** 2026-05-26 (RW **v0.2.16.4+12** — FR-098 Must Have top; phases 2–5)
-**Version Context:** v0.2.1.22+1 (**SemVer** v0.4.805+1)
+**Version Context:** v0.2.16.4+12 (**SemVer** v0.4.804+12)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -81,7 +81,6 @@ This board provides **centralized visibility and prioritization** for all open F
 - **FR-039** – AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) - [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | Last modified: 2026-03-16 16:31 UTC
 - **FR-037** – Kanban Policy Task Prioritisation Queue Stack - 📋 TODO (LOW, Queue stack for task prioritization) - [FR-037](fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md) | Last modified: 2026-04-01 15:15 UTC
 - **FR-029** – Procedural Task Template Generation Hybrid Strategy - 📋 TODO (LOW, Hybrid strategy for task template generation) - [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | Last modified: 2026-03-16 16:31 UTC
-- **BR-075** – RW perpetual-task BUILD not reflected in `version.py` - 🟢 OPEN (LOW, Step 7/kanban_init may advance version markers before Step 2; **E2:S01:T22**) | [BR-075](fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md) | [E2:S01:T22](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md) | —No IPP— | Last modified: 2026-05-26 14:29 UTC
 - **FR-024** – IDE Linter Check Before Commit in Release Workflow - 📋 TODO (LOW, Linter integration in Release Workflow) | [FR-024](fr-br/FR-024-ide-linter-check-before-commit-in-release-workflow.md) | [E2:S01:T08](epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) | —No IPP— | Last modified: 2026-05-17 00:00 UTC
 - **FR-023** – Update Kanban Workflow (UKW) - 📋 TODO (LOW, Updates to Update Kanban Workflow) - [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | Last modified: 2026-04-01 15:15 UTC
 - **FR-022** – Policy Docs Machine-Readable Salience - 📋 TODO (LOW, Machine-readable policy documentation) - [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md) | Last modified: 2025-12-17 17:11 UTC

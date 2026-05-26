@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.1.22+1] - 26-05-26
+
+E2:S01:T22 (`RW -k`, `--art`) — **BR-075 intake**: perpetual-task RW should persist `VERSION_BUILD` in `version.py` before board/changelog drift; task + story wiring. SemVer **v0.4.805+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.22+1.md)
+
+---
+
 ## [0.2.16.4+12] - 26-05-26
 
 E2:S16:T04 (`RW -k`, `--art`) — **Kanban documentation setup**: FR-098 MoSCOW **Must Have** top on kboard/fbuboard (phases 2–5); ECC integration cheatsheet + install/spec links. SemVer **v0.4.804+12**.
