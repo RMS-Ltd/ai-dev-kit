@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-26 (**FR-100** RESOLVED v0.2.16.12+2; UKW v0.2.16.4+11)
-**Version:** v0.2.16.4+11
+**Last Updated:** 2026-05-26 (**FR-098** IMPLEMENTED v0.6.9.6+3)
+**Version:** v0.6.9.6+3
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-098 | FR | Optional ECC harness layer integration (phases 0–5; T04–T06) | 2026-05-26 | v0.6.9.6+3 | RW |
 | FR-100 | FR | IPW ADR necessity checklist — Phase 5.0 gate; T1–T7 / E1–E5; policy SoT; IPP §2.5 (**E2:S16:T12**) | 2026-05-26 | v0.2.16.12+2 | RW |
 | FR-096 | FR | IPW mandatory documentation phases — update/create (Phase 5) + housing (Phase 6); IPP §5–§7; ten-phase `/ipw` (**E2:S16:T11**) | 2026-05-20 | v0.2.16.11+1 | RW |
 | UXR-011 | UXR | Kanban naming hygiene and directory systematic cleanup — 51 Txxx files renamed, 21 duplicate stories reconciled, duplicate tasks removed, zero-padding fixed, governance policy updated, regression validator green (**E9:S05:T04**) | 2026-05-18 | v0.9.5.4+2 | IPW |

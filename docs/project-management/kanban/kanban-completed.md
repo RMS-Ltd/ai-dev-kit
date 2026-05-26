@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-26 (FR-100 **v0.2.16.12+2** merged to dev; UKW **v0.2.16.4+11**)
-**Version:** v0.2.16.4+11
+**Last Updated:** 2026-05-26 (E6:S09:T06 **v0.6.9.6+3**)
+**Version:** v0.6.9.6+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -21,6 +21,9 @@ housekeeping_policy: keep
 ## 20 Most Recently Completed Tasks
 
 #### **Epic 6: Framework Management (Story 9 — Installation and adopter integration)**
+- **[E6:S09:T06](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)** — **FR-098 phases 2–5**: bridge validator, optional install helper, hooks/AgentShield docs, cheatsheet; dogfood T8 dry-run + validators PASS; `--copy-bridge` fix.
+  **Completed:** `2026-05-26T14:59:56Z` | **Version:** `v0.6.9.6+3` | **Agent:** `RW`
+
 - **[E6:S09:T05](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)** — **FR-098 Phase 1**: ADK ECC workflow skill pack (`adk-*` skills), `validate_adk_ecc_skill_pack.py`, pytest coverage, IPP + integration spec §10; SemVer collision remediation formalized under RW `--art`.
   **Completed:** `2026-05-26T13:13:00Z` | **Version:** `v0.6.9.5+3` | **Agent:** `RW`
 

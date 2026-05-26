@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **ID:** FR-098  
 **Submitted:** 2026-05-26  
 **Submitted By:** Maintainer (architecture review session)  
-**Priority:** HIGH (MoSCOW **Must Have** on `dev` — phases 2–5 active)  
+**Priority:** HIGH (delivered — phases 0–5 complete **v0.6.9.6+3**)  
 **Severity:** LOW  
-**Status:** ACCEPTED
+**Status:** IMPLEMENTED
 
 **Implementing Tasks:** [E6:S09:T04](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) (Phase 0), [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) (Phase 1), [E6:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (Phases 2–5)
 
@@ -191,7 +191,7 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 - [IPP-E6S09T04](../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 - Phase 1 **COMPLETE:** [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E6S09T05](../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
 - Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
-- **Phases 2–5:** [E6:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — **v0.6.9.6+2** implementation shipped; dogfood T8 pending on throwaway branch
+- **Phases 2–5:** [E6:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — **COMPLETE** **v0.6.9.6+3** (dogfood T8 on `throwaway/ecc-dogfood-e6s09t06`; dry-run only)
 
 ---
 

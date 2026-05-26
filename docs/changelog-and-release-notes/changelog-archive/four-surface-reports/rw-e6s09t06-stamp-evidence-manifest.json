@@ -2,11 +2,11 @@
   "rows": {
     "E6:S09:T06": {
       "allowed": true,
-      "reason": "RW Step 7 v0.6.9.6+2 — kboard row update for implementation release"
+      "reason": "RW Step 7 v0.6.9.6+3 — kboard Must Have row removed (task COMPLETE → kanban-completed)"
     },
     "FR-098": {
       "allowed": true,
-      "reason": "RW Step 7 v0.6.9.6+2 — fbuboard row phases 2–5 shipped"
+      "reason": "RW Step 7 v0.6.9.6+3 — fbuboard Must Have row removed (FR IMPLEMENTED → fbu-completed)"
     }
   }
 }

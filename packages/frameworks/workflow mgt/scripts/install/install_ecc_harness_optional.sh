@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Optional ECC harness install helper (FR-098 Phase 2, E6:S09:T06).
-# ADK adoption does NOT require ECC. Default: --dry-run (no network, no writes except bridge copy with --copy-bridge).
+# ADK adoption does NOT require ECC. Default: --dry-run (no network, no ecc-install).
+# --copy-bridge always copies the template when missing (safe local write).
 
 set -euo pipefail
 
@@ -17,9 +18,9 @@ usage() {
   cat <<'EOF'
 Usage: install_ecc_harness_optional.sh [options]
 
-  --dry-run          Print planned actions only (default)
+  --dry-run          Print planned ecc-install only (default); does not block --copy-bridge
   --execute          Run npx ecc-install (requires network)
-  --copy-bridge      Copy ecc-adk-bridge.yaml.template to project root if missing
+  --copy-bridge      Copy ecc-adk-bridge.yaml.template to project root if missing (always runs)
   --project-root DIR Repository root (default: auto-detect from script location)
 
 Environment:
@@ -58,8 +59,6 @@ echo "  bridge_template=${BRIDGE_TEMPLATE}"
 if [[ "${COPY_BRIDGE}" -eq 1 ]]; then
   if [[ -f "${BRIDGE_DEST}" ]]; then
     echo "  bridge: ${BRIDGE_DEST} already exists (skip copy)"
-  elif [[ "${DRY_RUN}" -eq 1 ]]; then
-    echo "  bridge: would copy template -> ${BRIDGE_DEST}"
   else
     cp "${BRIDGE_TEMPLATE}" "${BRIDGE_DEST}"
     echo "  bridge: copied -> ${BRIDGE_DEST}"

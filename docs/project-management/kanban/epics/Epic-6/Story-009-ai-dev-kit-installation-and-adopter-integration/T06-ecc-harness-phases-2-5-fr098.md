@@ -9,16 +9,16 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 6: ECC harness phases 2–5 (installer, hooks, AgentShield, positioning)
 
 **Task ID:** E6:S09:T06  
-**Status:** IN PROGRESS (**v0.6.9.6+2** — phases 2–5 shipped; dogfood T8 pending on throwaway branch)  
+**Status:** ✅ COMPLETE (**v0.6.9.6+3** — phases 2–5 + dogfood T8)  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (**v0.6.9.6+2** — RW `--art` implementation release)  
+**Last updated:** 2026-05-26 (**v0.6.9.6+3** — RW `--art` dogfood closure)  
 **Code:** E6S09T06
 
 ## Version Anchor
 
-**Version:** v0.6.9.6+2
+**Version:** v0.6.9.6+3
 
 **Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
 **Prerequisites:**
@@ -78,12 +78,13 @@ Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alig
 
 ## Implementation notes
 
-### Dogfood checklist (manual — T8)
+### Dogfood checklist (T8 — branch `throwaway/ecc-dogfood-e6s09t06`, 2026-05-26)
 
-- [ ] Disposable branch: Phase 0 dry-run `npx -p ecc-universal ecc-install ... --dry-run`
-- [ ] `install_ecc_harness_optional.sh --copy-bridge` (dry-run)
-- [ ] `validate_ecc_adk_bridge.py` PASS on project `ecc-adk-bridge.yaml`
-- [ ] Confirm ADK-only path unchanged (no ECC required for RW)
+- [x] Phase 0 dry-run: `npx -p ecc-universal ecc-install --target cursor --profile core --without baseline:hooks --dry-run` — **342** planned ops; **note:** hook scripts + `hooks.json` still listed despite `baseline:hooks` excluded (review before `--execute`)
+- [x] `install_ecc_harness_optional.sh --copy-bridge` — bridge copied; validators PASS
+- [x] `validate_ecc_adk_bridge.py --bridge ecc-adk-bridge.yaml` — PASS
+- [x] `validate_adk_ecc_skill_pack.py` — PASS (ADK-only skill pack unchanged)
+- [x] **Do not** run `--execute` on canonical ai-dev-kit repo (dry-run only); ADK RW/git policy preserved without ECC overlay
 
 ### Shipped paths
 
@@ -129,7 +130,7 @@ Ship via **`RW E6:S09:T06`** when ready to release implementation (`--art`).
 
 - [x] IPP linked from this task (bidirectional) before implementation
 - [x] Integration spec §10–§11 lists **E6:S09:T06** for phases 2–5
-- [ ] Dogfood checklist on disposable branch recorded (manual T8 — see Implementation notes)
+- [x] Dogfood checklist recorded (T8 — see Implementation notes; dry-run on `throwaway/ecc-dogfood-e6s09t06`)
 
 ---
 

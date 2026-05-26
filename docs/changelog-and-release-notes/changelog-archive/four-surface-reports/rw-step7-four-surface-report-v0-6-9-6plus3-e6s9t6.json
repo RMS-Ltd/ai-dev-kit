@@ -1,0 +1,6 @@
+{
+  "internal_version": "0.6.9.6+3",
+  "release_scope": "E6:S9:T6",
+  "timestamp_utc": "2026-05-26T14:59:56Z",
+  "touched_surfaces": ["task_doc", "story_doc", "fbu_doc", "kboard", "fbuboard", "kanban-completed", "fbu-completed"]
+}

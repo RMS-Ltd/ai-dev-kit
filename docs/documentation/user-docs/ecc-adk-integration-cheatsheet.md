@@ -214,6 +214,7 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | Agent commits outside RW | ECC `git-workflow` | Reinforce `.cursorrules`; bridge `defer_to: adk-release-workflow` |
 | Planning with no IPP | ECC plan skill | Run `IPW E:S:T`; link IPP from task |
 | `.cursor/skills` explosion | Full `ecc-install` | `--without baseline:hooks`; dry-run first |
+| Dry-run still lists `.cursor/hooks/*` | `--without baseline:hooks` excludes `hooks-runtime` module, not all hook file drops | Inspect dry-run plan; do not `--execute` until hook + `common-git-workflow.mdc` risk reviewed |
 | Version mismatch on branch | Wrong epic in `version.py` | RW Step 1 `validate_branch_context.py --strict` |
 | Duplicate triggers | Plugin + installer | One install path; check `ecc-adk-bridge.yaml` `single_install_path` |
 

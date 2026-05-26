@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.6+3] - 26-05-26
+
+E6:S09:T06 (`RW`, `--art`) — **T06 COMPLETE**: dogfood T8 (dry-run + validators PASS); `--copy-bridge` install fix; cheatsheet hook caveat; gitignore local bridge. SemVer **v0.4.808+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.6+3.md)
+
+---
+
 ## [0.6.9.6+2] - 26-05-26
 
 E6:S09:T06 (`RW`, `--art`) — **FR-098 phases 2–5**: bridge validator, optional ECC install helper, hooks/AgentShield docs, cheatsheet + INSTALL updates. Dogfood (T8) deferred to disposable branch. SemVer **v0.4.807+2**.
