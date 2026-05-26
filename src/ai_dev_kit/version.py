@@ -7,10 +7,10 @@ See: docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 6      # Epic 6: Framework Management
-VERSION_STORY = 9     # Story 9: AI Dev Kit installation and adopter integration
-VERSION_TASK = 6      # Task 6: ECC harness phases 2–5 (FR-098)
-VERSION_BUILD = 5     # Build 5: IPP Wave E public-repo ECC validation plan (RW --art)
+VERSION_EPIC = 1      # Epic 1: AI Dev Kit Core
+VERSION_STORY = 4     # Story 4: Repository branding and renaming
+VERSION_TASK = 3      # Task 3: Spin off book epic to private repository (FR-099)
+VERSION_BUILD = 2     # Build 2: FR-099 Phase 3–4 board re-anchor (--art)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.6+5
+# Current: 0.1.4.3+2

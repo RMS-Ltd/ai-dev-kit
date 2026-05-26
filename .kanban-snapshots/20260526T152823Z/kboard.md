@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-26 (RW: E1:S04:T03 FR-099 Phases 3–4)
-**Version:** v0.1.4.3+2
+**Last Updated:** 2026-05-26 (RW: E6:S09:T06 IPP Wave E)
+**Version:** v0.6.9.6+5
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/hf-ai-dev-kit` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -30,7 +30,6 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E1:S04:T03** – Spin off book epic to private repository (FR-099) - 🔄 IN PROGRESS (HIGH, Phase 2 genesis ✅ **v0.1.4.3+1**; **Phases 3–4** public rebirth + rewire pending; Wave E ECC test after Phase 3) - [Task Document](epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) | [Story](epics/Epic-1/Story-004-repository-branding-and-renaming.md) | [FR-099](fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | [ADR-006](../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Last modified: 2026-05-26 15:28 UTC
 - **E4:S19:T03** – FR-087: investigate why `E6:S07` became default housing and decide closure/scope - 🔄 IN PROGRESS (HIGH, forensic analysis of origin/codification plus close/split/narrow recommendation and guardrails; canonical IPP published) | Last modified: 2026-05-14 11:06 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks

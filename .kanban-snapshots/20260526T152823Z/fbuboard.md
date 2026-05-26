@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-26 (RW **v0.1.4.3+2** — FR-099 Phases 3–4)
-**Version Context:** v0.1.4.3+2 (**SemVer** v0.4.810+2)
+**Last Updated:** 2026-05-26 (RW **v0.6.9.6+5** — IPP Wave E plan)
+**Version Context:** v0.6.9.6+5 (**SemVer** v0.4.810+5)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -45,7 +45,6 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
-- **FR-099** – Spin off book epic to a private repository - 🔄 IN PROGRESS (HIGH, Phases 1–2 ✅ private [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) + genesis **v0.1.4.3+1**; **Phases 3–4** public rebirth + rewire pending; **E1:S04:T03**) | [FR-099](fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | [E1:S04:T03](epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) | [ADR-006](../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Last modified: 2026-05-26 15:28 UTC
 - **FR-090** – UKW canonical row transform engine and board-specific rendering contracts - ⏭️ SUPERSEDED -> **FR-092** (architectural target retained as predecessor; B1 outcome drift owned by FR-092 Wave 4) | [FR-090](fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) | [E2:S15:T07](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) | [—IPP—](../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md) | Last modified: 2026-04-27 15:34 UTC
 - **FR-091** – RW Step 7 self-sufficient scoped kanban reconciliation without UKW dependency - ⏭️ SUPERSEDED -> **FR-092** (FR-091 contract absorbed into FR-092 Bucket A1-A5 + Wave 2) | [FR-091](fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md) | [E2:S15:T07](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) | [—IPP—](../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md) | Last modified: 2026-04-27 15:34 UTC
 

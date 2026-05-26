@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.6.9.6+5] - 26-05-26
+
+E6:S09:T06 (`RW`, `--art`) — **IPP Wave E**: public-repo ECC validation plan after FR-099 Phase 3. SemVer **v0.4.810+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.6+5.md)
+---
 ## [0.6.9.6+4] - 26-05-26
 
 E6:S09:T06 (`RW -d`, `--art`) — **Cheatsheet throwaway E2E playbook** (§3). SemVer **v0.4.810+4**.

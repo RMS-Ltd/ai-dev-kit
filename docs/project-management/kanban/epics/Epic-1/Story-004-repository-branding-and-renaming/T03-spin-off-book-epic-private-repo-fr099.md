@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 1, Story 4, Task 3: Spin off book epic to private repository (FR-099)
 
 **Task ID:** E1:S04:T03  
-**Status:** IN PROGRESS (Phase 2 genesis shipped **v0.1.4.3+1**; Phases 3–4 pending)  
+**Status:** IN PROGRESS (Phase 2 genesis ✅ **v0.1.4.3+1**; Phases 3–4 pending)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium–Large (multi-phase migration)  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (**v0.1.4.3+1** — FR-099 Phase 2 book extraction genesis; `--art`)  
-**Version:** v0.1.4.3+1  
+**Last updated:** 2026-05-26 (**v0.1.4.3+2** — FR-099 Phases 3–4 board re-anchor; `--art`)  
+**Version:** v0.1.4.3+2  
 **Code:** E1S04T03
 
 **Upstream:** [FR-099 - Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
@@ -144,7 +144,7 @@ Book extraction genesis commit:
 
 ## Version Anchor
 
-**Release marker (IN PROGRESS):** `v0.1.4.3+1` — FR-099 Phase 2 book extraction genesis (`--art`).
+**Release markers:** `v0.1.4.3+1` — Phase 2 book extraction genesis; `v0.1.4.3+2` — Phases 3–4 board re-anchor + Wave E cross-link (`--art`).
 
 **Forensic marker on task COMPLETE:** `✅ COMPLETE (vRC.E.S.T+B)` when Phases 3–4 finish.
 
@@ -156,3 +156,4 @@ Book extraction genesis commit:
 - [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 - [Story 004](../Story-004-repository-branding-and-renaming.md)
 - [Epic-1.md](../Epic-1.md)
+- [IPP-E6S09T06 §8 Wave E](../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) — public-repo ECC validation after FR-099 Phase 3

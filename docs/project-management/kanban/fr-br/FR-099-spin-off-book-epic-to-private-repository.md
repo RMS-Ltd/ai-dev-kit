@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** ACCEPTED — **Phase 1 complete** (2026-05-26: private [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit))
+**Status:** IN PROGRESS — **Phases 1–2 complete** (private [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit); genesis **v0.1.4.3+1**); **Phases 3–4 pending** (**v0.1.4.3+2** board re-anchor)
 
 **Implementing Task:** [E1:S04:T03](../epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
 
@@ -184,7 +184,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 - Epic: Epic 1 — AI Dev Kit Core
 - Story: Story 4 — Repository Branding and Renaming
 - Task: T03 — Spin off book epic to private repository (FR-099)
-- Version: `[v0.1.4.3+1]`
+- Version: `[v0.1.4.3+2]` (Phase 2: `[v0.1.4.3+1]`)
 
 **Kanban Links:**
 

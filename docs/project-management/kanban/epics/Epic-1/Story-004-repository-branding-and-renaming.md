@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-07  
-**Last updated:** 2026-05-26 (v0.1.4.3+1 – Kanban documentation setup)
-**Version:** v0.1.4.3+1
+**Last updated:** 2026-05-26 (v0.1.4.3+2 – FR-099 Phases 3–4 board re-anchor)
+**Version:** v0.1.4.3+2
 **Code:** E1S04
 
 ---
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 - [x] **E1:S04:T01 – Execute repository rename from vibe-dev-kit to ai-dev-kit** - COMPLETE ✅ (Executed immediately - remote repo was deleted, no migration needed)
 - [x] **E1:S04:T02 – Plan repository rename from ai-dev-kit to head-first-ai-dev-kit (conditional on O'Reilly acceptance)** - ⏭️ SUPERSEDED → **FR-099 / ADR-006** (2026-05-26: public ADK stays `ai-dev-kit`; Head First context private `hf-ai-dev-kit` only — do not execute)
-- [x] **E1:S04:T03 – Spin off book epic to private repository (FR-099)** - ✅ COMPLETE (**v0.1.4.3+1** — Phase 2 genesis; Phases 3–4 pending)
+- [ ] **E1:S04:T03 – Spin off book epic to private repository (FR-099)** - 🔄 IN PROGRESS (**v0.1.4.3+2** — Phase 2 genesis ✅ **v0.1.4.3+1**; Phases 3–4 pending)
   - Task: [`T03-spin-off-book-epic-private-repo-fr099.md`](Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) | [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
