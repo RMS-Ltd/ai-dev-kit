@@ -1,3 +1,12 @@
 {
-  "rows": {}
+  "rows": {
+    "E6:S09:T05": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.5+4 — dev consolidation release; kboard Must Have row + version context"
+    },
+    "FR-098": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.5+4 — Phase 1 on dev; fbuboard Must Have row stamp"
+    }
+  }
 }

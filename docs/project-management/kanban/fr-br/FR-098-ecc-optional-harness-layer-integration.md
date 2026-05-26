@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **ID:** FR-098  
 **Submitted:** 2026-05-26  
 **Submitted By:** Maintainer (architecture review session)  
-**Priority:** HIGH (MoSCOW **Must Have** — board reprioritized **v0.2.16.4+12**)  
+**Priority:** HIGH (MoSCOW **Must Have** on `dev` — phases 2–5 active)  
 **Severity:** LOW  
 **Status:** ACCEPTED
 
@@ -46,7 +46,7 @@ Today there is **no documented integration path**, no compatibility contract, an
 - [x] **FR-098-F1:** Execute **Phase 0 compatibility evaluation** on ai-dev-kit (and document reproducible procedure for adopters) using ECC minimal profile without hooks-first stacking.
 - [x] **FR-098-F2:** Produce a **compatibility matrix** classifying ADK vs ECC surfaces as *keep*, *merge*, *exclude*, or *conflict-resolve*.
 - [x] **FR-098-F3:** Define **`ecc-adk-bridge.yaml`** template (hook profile, disabled hooks, conflict rules, ADK skill pack path, pinned ECC version).
-- [ ] **FR-098-F4:** Publish **ADK workflow skill pack** in ECC-compatible `SKILL.md` format (minimum: `adk-release-workflow`; target set: RW, UKW, IPW, intake, version bump).
+- [x] **FR-098-F4:** Publish **ADK workflow skill pack** in ECC-compatible `SKILL.md` format (minimum: `adk-release-workflow`; target set: RW, UKW, IPW, intake, version bump). — **COMPLETE** (**v0.6.9.5+2**)
 - [ ] **FR-098-F5:** Extend **greenfield/brownfield install docs** with optional "Harness Execution Layer (ECC)" step—clearly optional, not required for ADK correctness.
 - [ ] **FR-098-F6:** Document **layered architecture** (ADK = project OS; ECC = harness OS) in adopter-facing user-docs and vision cross-links.
 
@@ -127,7 +127,7 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 - [x] **AC1:** Phase 0 compatibility matrix exists with explicit conflict resolutions (git, planning, release).
 - [x] **AC2:** ADK remains fully functional with **zero ECC install** (regression documented).
 - [x] **AC3:** Optional ECC path documented; adopters can reproduce Phase 0 on a scratch branch.
-- [ ] **AC4:** At least one ADK workflow skill (`adk-release-workflow`) exists in ECC-compatible format (Phase 1 gate; may follow T04).
+- [x] **AC4:** ADK workflow skills (`adk-release-workflow` + full Phase 1 target set) exist in ECC-compatible format — **COMPLETE** (**v0.6.9.5+2**).
 - [x] **AC5:** No duplicate RW/UKW/IPW triggers introduced by default ECC minimal install.
 
 ---
@@ -189,12 +189,9 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 - [Phase 0 evaluation](../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) — matrix, procedure, **GO** for Phase 1
 - [Bridge template](../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
 - [IPP-E6S09T04](../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
-- Phase 1 follow-on: [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)
-- Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md) (linked **v0.2.16.4+12**)
-
-### Board prioritization (E2:S16:T04 — v0.2.16.4+12)
-
-- **kboard.md** / **fbuboard.md** — FR-098 / E6:S09:T05 at **top of Must Have** for phases 2–5 delivery focus.
+- Phase 1 **COMPLETE:** [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E6S09T05](../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
+- Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
+- **Phases 2–5** (installer, hooks, AgentShield, positioning) remain **open** on this FR
 
 ---
 

@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.5+4] - 26-05-26
+
+E6:S09:T05 (`RW`, `--art`) — **Consolidate FR-098 Phase 1 on `dev`**: ADK ECC skill pack, validator + tests, IPP, and Kanban/FR alignment cherry-picked from `main`. SemVer **v0.4.806+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.5+4.md)
+
+---
+
 ## [0.2.1.22+1] - 26-05-26
 
 E2:S01:T22 (`RW -k`, `--art`) — **BR-075 intake**: perpetual-task RW should persist `VERSION_BUILD` in `version.py` before board/changelog drift; task + story wiring. SemVer **v0.4.805+1**.

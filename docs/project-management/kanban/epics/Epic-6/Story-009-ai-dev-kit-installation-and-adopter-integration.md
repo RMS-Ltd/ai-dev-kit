@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-05-26 (v0.6.9.5+1 – Kanban documentation setup)
-**Version:** v0.6.9.5+1
+**Last updated:** 2026-05-26 (v0.6.9.5+4 – T05 Phase 1 consolidated on dev)
+**Version:** v0.6.9.5+4
 **Code:** E6S09
 
 ---
@@ -34,8 +34,9 @@ housekeeping_policy: keep
   - Task: [`T04-ecc-harness-layer-phase0-compatibility-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
   - IPP: [`IPP-E6S09T04`](../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 
-- [ ] **E6:S09:T05 – ADK workflow skill pack for ECC harness layer (FR-098 Phase 1)** - 🔄 IN PROGRESS (MEDIUM — **v0.6.9.5+1** SemVer strategy doc release; `adk-*` skills pending IPW)
+- [x] **E6:S09:T05 – ADK workflow skill pack for ECC harness layer (FR-098 Phase 1)** — ✅ COMPLETE (MEDIUM — **v0.6.9.5+4** dev consolidation; skill pack **v0.6.9.5+2**)
   - Task: [`T05-adk-workflow-skill-pack-ecc-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+  - IPP: [`IPP-E6S09T05`](../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
 
 ---
 

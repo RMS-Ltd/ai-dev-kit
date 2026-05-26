@@ -9,16 +9,16 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 5: ADK workflow skill pack for ECC harness layer (FR-098 Phase 1)
 
 **Task ID:** E6:S09:T05  
-**Status:** IN PROGRESS (intermediate doc release — FR-098 SemVer strategy encoded; skill pack implementation pending IPW)  
+**Status:** COMPLETE (**v0.6.9.5+4** — `dev` consolidation; Phase 1 skill pack **v0.6.9.5+2** on `main`)
 **Priority:** MEDIUM  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (**v0.6.9.5+1** — intermediate doc release; SemVer strategy `--art`)  
+**Last updated:** 2026-05-26 (**v0.6.9.5+4** — consolidate Phase 1 from `main` onto `dev`)
 **Code:** E6S09T05
 
 ## Version Anchor
 
-**Version:** v0.6.9.5+1
+**Version:** v0.6.9.5+4
 
 **Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
 **Prerequisite:** [E6:S09:T04 — Phase 0 evaluation](./T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
@@ -27,21 +27,22 @@ housekeeping_policy: keep
 
 ## Summary
 
-Publish ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, `adk-intake-fr-br-uxr`, `adk-version-bump`) under `packages/frameworks/workflow mgt/skills/`. Full skill pack requires IPW; this task's **v0.6.9.5+1** release ships **SemVer strategy documentation** only (intermediate).
+Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, `adk-intake-fr-br-uxr`, `adk-version-bump`) under `packages/frameworks/workflow mgt/skills/`, plus `validate_adk_ecc_skill_pack.py`, pytest tests, and [`IPP-E6S09T05`](../../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md).
 
 ---
 
 ## Scope
 
-### In scope (v0.6.9.5+1 — shipped)
+### In scope (v0.6.9.5+2 — shipped)
 
-- Encode FR-098 **SemVer / release strategy** in FR-098, integration spec, Story 009, and this task doc
-- PATCH-only SemVer per FR-098 phase; MINOR at Epic 6 sign-off
+- Five ECC-format `SKILL.md` skills + `skills/README.md` under `packages/frameworks/workflow mgt/skills/`
+- `validate_adk_ecc_skill_pack.py` + `test_validate_adk_ecc_skill_pack.py`
+- IPP + Kanban/FR/spec/fbuboard reconciliation for Phase 1
+- Bridge template `adk_skill_pack_path` validated by script
 
-### In scope (follow-on — pending IPW)
+### Prior (v0.6.9.5+1)
 
-- ECC-format `SKILL.md` files under `packages/frameworks/workflow mgt/skills/`
-- Bridge template `adk_skill_pack_path` validation
+- SemVer strategy docs (PATCH per ECC phase; MINOR at Epic 6 sign-off only)
 
 ### Out of scope
 
@@ -51,12 +52,14 @@ Publish ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk
 
 ## Deliverable
 
-1. **SemVer strategy docs** — FR-098-NF5, integration spec §9, task/story cross-links (**v0.6.9.5+1**)
-2. **ADK workflow skill pack** (Phase 1) — pending IPW and implementation RW
+1. **Phase 1 skill pack** — five `adk-*` skills, validator, pytest, IPP (**v0.6.9.5+2**)
+2. **SemVer strategy docs** — retained from **v0.6.9.5+1**
 
 ---
 
 ## Input
+
+- [IPP (planning package)](../../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
 
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
@@ -80,10 +83,10 @@ See [FR-098 SemVer strategy](../../../fr-br/FR-098-ecc-optional-harness-layer-in
 
 - [x] SemVer strategy documented (FR-098-NF5, integration spec §9, Story 009) — **v0.6.9.5+1**
 - [x] Release uses PATCH-only SemVer per FR-098-NF5 (no ad-hoc MINOR for ECC phase)
-- [ ] At least `adk-release-workflow` skill published with ECC frontmatter (`name`, `description`, `origin: ai-dev-kit`)
-- [ ] Skills link to canonical agent execution guides; do not duplicate full `.cursorrules` prose
-- [ ] IPP linked from this task before skill pack implementation
-- [ ] Bridge template `adk_skill_pack_path` validated
+- [x] At least `adk-release-workflow` skill published with ECC frontmatter (`name`, `description`, `origin: ai-dev-kit`)
+- [x] Skills link to canonical agent execution guides; do not duplicate full `.cursorrules` prose
+- [x] IPP linked from this task before skill pack implementation
+- [x] Bridge template `adk_skill_pack_path` validated
 
 ---
 
