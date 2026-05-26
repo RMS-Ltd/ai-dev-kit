@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-20 (RW v0.2.16.11+1 — E2:S16:T11 IPW Phases 5–6 / FR-096)
-**Version:** v0.2.16.11+1
+**Last Updated:** 2026-05-26 (RW **v0.2.16.4+11** — E2:S16:T04 UKW)
+**Version:** v0.2.16.4+11
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,13 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 6: Framework Management (Story 9 — Installation and adopter integration)**
+- **[E6:S09:T05](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)** — **FR-098 Phase 1**: ADK ECC workflow skill pack (`adk-*` skills), `validate_adk_ecc_skill_pack.py`, pytest coverage, IPP + integration spec §10; SemVer collision remediation formalized under RW `--art`.
+  **Completed:** `2026-05-26T13:13:00Z` | **Version:** `v0.6.9.5+3` | **Agent:** `RW`
+
+- **[E6:S09:T04](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)** — **FR-098 Phase 0**: compatibility evaluation matrix, bridge template, Phase 1 **GO** decision; archived via UKW (no dedicated RW release).
+  **Completed:** `2026-05-26T12:00:00Z` | **Version:** `Phase 0 complete` | **Agent:** `UKW`
 
 #### **Epic 2: Workflow Management Framework (Story 16 — Perpetual Ongoing Workflow Operations)**
 - **[E2:S16:T11](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md)** — **FR-096**: IPW mandatory Phases 5–6 (documentation update/create + housing); IPP §5–§7; ten-phase `/ipw`; aligned FR-042, template, gates, and policy.
@@ -95,6 +102,8 @@ housekeeping_policy: keep
   **Completed:** `2026-04-19T23:59:00Z` | **Version:** `v0.5.9.11+5` | **Agent:** `RW Agent`
 
 #### **Epic 6: Framework Management (Story 9 — Installation and adopter integration)**
+- **[E6:S09:T05](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)** — **FR-098 Phase 1** ADK ECC workflow skill pack — ✅ COMPLETE (**v0.6.9.5+3**)
+- **[E6:S09:T04](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)** — **FR-098 Phase 0** ECC harness compatibility evaluation — ✅ COMPLETE (Phase 0 GO)
 - **[E6:S09:T01](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)** — **FR-080** end-to-end **greenfield** installation: spec + `install_greenfield_path.py` + INSTALL/user-docs + Wave 4 validators / reference transcript + Wave 5 FR/T01/IPW traceability; **[FR-080](fr-br/FR-080-greenfield-installation-process.md)** **IMPLEMENTED**.  
   **Completed:** `2026-04-19T17:10:00Z` | **Version:** `v0.6.9.1+8` | **Agent:** `RW Agent`
 

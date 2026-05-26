@@ -16,8 +16,8 @@ See: docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md
 VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 2      # Epic 2: Workflow Management Framework
 VERSION_STORY = 16    # Story 16: Perpetual ongoing workflow operations
-VERSION_TASK = 12     # Task 12: IPW ADR necessity checklist (FR-100 intake — RW -k)
-VERSION_BUILD = 1     # Build 1: FR-100 + E2:S16:T12 kanban wiring (--art)
+VERSION_TASK = 4      # Task 4: Ad-hoc Kanban synchronization and hygiene (Perpetual — UKW)
+VERSION_BUILD = 11    # Build 11: UKW comprehensive sync post E6:S09:T05 (--art)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.12+1
+# Current: 0.2.16.4+11

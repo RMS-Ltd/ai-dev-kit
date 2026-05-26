@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+11] - 26-05-26
+
+E2:S16:T04 (`--art`, UKW follow-up) — **Comprehensive kanban sync**: kboard/fbu headers, archived E6:S09:T04/T05, Story 009 T02/T03 drift fix; semver-registry aligned through patch **803**. SemVer **v0.4.803+11**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+11.md)
+
+---
+
 ## [0.2.16.12+1] - 26-05-26
 
 E2:S16:T12 (`RW -k`, `--art`) — **FR-100 intake**: IPW ADR necessity checklist and measurable decision gate; FR + task + story/board wiring (kanban documentation setup). SemVer **v0.4.798+1**.

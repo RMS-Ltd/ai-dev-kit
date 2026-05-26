@@ -24,10 +24,10 @@ housekeeping_policy: keep
   - Task: [`T01-greenfield-installation-process-fr080.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) | [FR-080](../../fr-br/FR-080-greenfield-installation-process.md)
   - IPW: [`IPW-E6S09T01-greenfield-installation-fr080.md`](../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
-- [ ] **E6:S09:T02 – Brownfield modular adopter integration (FR-081)** - TODO (MEDIUM — operationalize ADR-003: modular surfaces, matrices, respectful host architecture)
+- [ ] **E6:S09:T02 – Brownfield modular adopter integration (FR-081)** - IN PROGRESS (MEDIUM — operationalize ADR-003: modular surfaces, matrices, respectful host architecture; RW `--art` **v0.6.9.2+1**)
   - Task: [`T02-brownfield-modular-adopter-integration-fr081.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) | [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md)
 
-- [ ] **E6:S09:T03 – Installation canonical repository alignment (FR-082)** - TODO (MEDIUM — defaults and docs aligned to canonical `earlution/ai-dev-kit` coordinates)
+- [ ] **E6:S09:T03 – Installation canonical repository alignment (FR-082)** - IN PROGRESS (MEDIUM — defaults and docs aligned to canonical `earlution/ai-dev-kit` coordinates; RW `--art` **v0.6.9.3+1**)
   - Task: [`T03-installation-canonical-repo-alignment-fr082.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) | [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)
 
 - [x] **E6:S09:T04 – ECC harness layer Phase 0 compatibility evaluation (FR-098)** - COMPLETE (MEDIUM — Phase 0 spec, evaluation, bridge template; Phase 1 GO)
