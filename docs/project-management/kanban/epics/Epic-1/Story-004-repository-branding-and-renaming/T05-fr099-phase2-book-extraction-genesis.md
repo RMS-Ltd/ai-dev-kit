@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (**v0.1.4.3+1** — genesis RW; forensic migrated from umbrella E1:S04:T03)  
-**Version:** v0.1.4.3+1  
+**Last updated:** 2026-05-26 (v0.1.4.5+1 – Kanban documentation setup)
+**Version:** v0.1.4.5+1
 **Code:** E1S04T05
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
