@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-26 (T12 RW -k v0.2.16.12+1: FR-100 intake — ADR necessity checklist)  
+**Last updated:** 2026-05-26 (T12 COMPLETE v0.2.16.12+2 — FR-100 ADR necessity gate)  
 **Version:** v0.2.16.12+1
 **Code:** E2S16
 
