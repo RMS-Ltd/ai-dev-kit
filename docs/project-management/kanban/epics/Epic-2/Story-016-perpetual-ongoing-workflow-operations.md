@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-20 (T11 RW v0.2.16.11+1: IPW Phases 5–6; FR-096; IPP §5–§7)  
-**Version:** v0.2.16.4+10
+**Last updated:** 2026-05-26 (T12 RW -k v0.2.16.12+1: FR-100 intake — ADR necessity checklist)  
+**Version:** v0.2.16.12+1
 **Code:** E2S16
 
 ---
@@ -58,6 +58,9 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 
 - [x] **E2:S16:T11 – IPW documentation phases: update/create + housing (FR-096)** - ✅ COMPLETE (v0.2.16.11+1) (HIGH, IPW Phases 5–6; IPP §5–§7; FR-042 aligned with `/ipw` and template)
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md`](Story-016-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md) | [FR-096](../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
+
+- [ ] **E2:S16:T12 – IPW ADR necessity checklist and decision gate (FR-100)** - TODO (HIGH, kanban init v0.2.16.12+1; hybrid T1–T7 / E1–E5; Phase 5.0; policy `ipw-adr-necessity-checklist.md`)
+  - Task: [`Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md`](Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) | [FR-100](../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 
 ---
 

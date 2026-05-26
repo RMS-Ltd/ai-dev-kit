@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E2:S16:T12": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.12+1 — release-scope kboard row (FR-100 intake, RW -k)"
+    },
+    "FR-100": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.12+1 — release-scope fbuboard row (FR-100 intake)"
+    }
+  }
+}

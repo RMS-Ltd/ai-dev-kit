@@ -14,10 +14,10 @@ See: docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 6      # Epic 6: Framework Management
-VERSION_STORY = 9     # Story 9: AI Dev Kit installation and adopter integration
-VERSION_TASK = 5      # Task 5: ADK workflow skill pack for ECC (FR-098 Phase 1 — intermediate doc release)
-VERSION_BUILD = 1     # Build 1: FR-098 SemVer strategy encoded (--art)
+VERSION_EPIC = 2      # Epic 2: Workflow Management Framework
+VERSION_STORY = 16    # Story 16: Perpetual ongoing workflow operations
+VERSION_TASK = 12     # Task 12: IPW ADR necessity checklist (FR-100 intake — RW -k)
+VERSION_BUILD = 1     # Build 1: FR-100 + E2:S16:T12 kanban wiring (--art)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.5+1
+# Current: 0.2.16.12+1

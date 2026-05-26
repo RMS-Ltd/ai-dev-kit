@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-26 (RW -k: E2:S16:T12)
-**Version:** v0.2.16.12+1
+**Last Updated:** 2026-05-26 (RW: E6:S9:T5)
+**Version:** v0.6.9.5+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/hf-ai-dev-kit` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E2:S16:T12** – IPW ADR necessity checklist and decision gate (FR-100) - 📋 TODO (HIGH, kanban init v0.2.16.12+1; measurable T1–T7 / E1–E5 ADR gate) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [FR-100](fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md) | [E2:S16:T12](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) | —No IPP— | Last modified: 2026-05-26 12:44 UTC
+- **E2:S16:T12** – IPW ADR necessity checklist and decision gate (FR-100) - 📋 TODO (HIGH, measurable T1–T7 / E1–E5 ADR gate; Phase 5.0 + policy doc) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [FR-100](fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md) | [E2:S16:T12](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) | —No IPP— | Last modified: 2026-05-26 18:00 UTC
 - **E4:S19:T03** – FR-087: investigate why `E6:S07` became default housing and decide closure/scope - 🔄 IN PROGRESS (HIGH, forensic analysis of origin/codification plus close/split/narrow recommendation and guardrails; canonical IPP published) | Last modified: 2026-05-14 11:06 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks

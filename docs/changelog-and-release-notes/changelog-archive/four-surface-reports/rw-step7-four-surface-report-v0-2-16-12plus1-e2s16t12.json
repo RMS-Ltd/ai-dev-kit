@@ -1,0 +1,18 @@
+{
+  "contract": "FR-092",
+  "invocation_context": "rw_step_7",
+  "release_scope": "E2:S16:T12",
+  "internal_version": "0.2.16.12+1",
+  "semver": "0.4.798+1",
+  "timestamp_utc": "2026-05-26T12:44:48Z",
+  "surfaces": {
+    "task_doc": { "touched": true, "paths": ["docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md"] },
+    "fbu_doc": { "touched": true, "paths": ["docs/project-management/kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md"] },
+    "kboard": { "touched": true, "paths": ["docs/project-management/kanban/kboard.md"] },
+    "fbuboard": { "touched": true, "paths": ["docs/project-management/kanban/fbuboard.md"] }
+  },
+  "auxiliary": {
+    "story_doc": { "touched": true },
+    "epic_doc": { "touched": true }
+  }
+}
