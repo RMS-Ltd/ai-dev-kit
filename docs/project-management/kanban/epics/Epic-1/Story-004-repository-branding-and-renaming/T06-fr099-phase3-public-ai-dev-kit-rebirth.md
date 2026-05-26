@@ -10,11 +10,12 @@ housekeeping_policy: keep
 
 **Task ID:** E1:S04:T06  
 **FR-099 phase:** **3**  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (v0.1.4.6+1 – Kanban documentation setup)
+**Last updated:** 2026-05-26 (**v0.1.4.6+2** — FR-099 Phase 3 public rebirth released)  
+**Version Anchor:** v0.1.4.6+2  
 **Code:** E1S04T06
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
@@ -51,7 +52,7 @@ New public `earlution/ai-dev-kit` repository from verified genesis commit.
 
 ## Acceptance criteria (phase scope)
 
-- [ ] **AC4:** New public genesis tree: no `docs/book-proj/`, no `Epic-24/`, no Head First obligation in vision/README.
+- [x] **AC4:** New public genesis tree: no `docs/book-proj/`, no `Epic-24/`, no Head First obligation in vision/README. ✅ Verified on `earlution/ai-dev-kit` `main`/`dev` (2026-05-26).
 
 ---
 
@@ -59,13 +60,13 @@ New public `earlution/ai-dev-kit` repository from verified genesis commit.
 
 | Requirement | Status |
 |-------------|--------|
-| FR-099-F5 | 📋 TODO |
+| FR-099-F5 | ✅ Public repo live — [earlution/ai-dev-kit](https://github.com/earlution/ai-dev-kit) |
 
 ---
 
 ## Version Anchor
 
-**Release marker (TODO):** `v0.1.4.6+1` — Kanban documentation setup (`RW -k`, `--art`). **Forensic on COMPLETE:** `✅ COMPLETE (v0.1.4.6+N)`.
+**Forensic:** `✅ COMPLETE (v0.1.4.6+2)` — bootstrap via [`scripts/fr099_bootstrap_public_ai_dev_kit.sh`](../../../../../scripts/fr099_bootstrap_public_ai_dev_kit.sh); runbook [`docs/maintenance/fr099-phase3-public-repo-bootstrap.md`](../../../../../maintenance/fr099-phase3-public-repo-bootstrap.md).
 
 ## IPW gate
 

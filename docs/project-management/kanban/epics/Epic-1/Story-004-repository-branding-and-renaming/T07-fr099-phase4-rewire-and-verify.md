@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.5 Phase 4**  
-**Depends on:** [E1:S04:T06 — Phase 3 public rebirth](T06-fr099-phase3-public-ai-dev-kit-rebirth.md)  
+**Depends on:** [E1:S04:T06 — Phase 3 public rebirth](T06-fr099-phase3-public-ai-dev-kit-rebirth.md) ✅  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---

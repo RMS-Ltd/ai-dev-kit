@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Host program:** [FR-099 — Spin off book epic to a private repository](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Governing ADR:** [ADR-006 — Book project private repository spin-off](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)  
 **Story:** [Story 004 — Repository branding and renaming](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md)  
-**Status:** **Phases 0–2 implemented** (forensic); **Phases 3–4 approved for execution** pending explicit `implement` / `RW E1:S04:T06` / `T07`
+**Status:** **Phases 0–3 implemented** (forensic); **Phase 4** pending `RW E1:S04:T07`
 
 **Phase tasks (shared IPP):**
 
@@ -103,15 +103,15 @@ housekeeping_policy: keep
 | 1 | Book extraction genesis commit | ✅ `v0.1.4.3+1` |
 | 2 | `book/epic-24` branch at pre-extraction tip | ✅ |
 
-### 4.4 Phase 3 — E1:S04:T06 📋
+### 4.4 Phase 3 — E1:S04:T06 ✅
 
-| Step | Action |
-|------|--------|
-| **1** | **TODO → IN PROGRESS** when execution authorized |
-| 2 | Resolve ADR-006 open question: orphan root vs genesis-SHA bootstrap |
-| 3 | Create public `earlution/ai-dev-kit` from genesis (no pre-genesis book on public remote) |
-| 4 | Document default branch + clone policy |
-| **N** | **COMPLETE** + version anchor when AC4 satisfied |
+| Step | Action | Status |
+|------|--------|--------|
+| **1** | **TODO → IN PROGRESS** when execution authorized | ✅ |
+| 2 | Resolve ADR-006 open question: **orphan root + cherry-pick replay** from `f21bac102` | ✅ |
+| 3 | Create public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) (no pre-genesis book on public remote) | ✅ 2026-05-26 |
+| 4 | Document default branch + clone policy | ✅ [`fr099-phase3-public-repo-bootstrap.md`](../maintenance/fr099-phase3-public-repo-bootstrap.md) |
+| **N** | **COMPLETE** + version anchor when AC4 satisfied | ✅ AC4; RW pending |
 
 ### 4.5 Phase 4 — E1:S04:T07 📋 (after T06)
 
@@ -143,7 +143,7 @@ Repository SoT under `docs/` and root install docs; no manuscript in public gene
 ## 7. Success criteria
 
 - [x] Phases 0–2 complete (T03–T05) — archived on [kanban-completed.md](../project-management/kanban/kanban-completed.md); off active [kboard](../project-management/kanban/kboard.md)
-- [ ] Phase 3: public repo live (T06)
+- [x] Phase 3: public repo live (T06) — [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit)
 - [ ] Phase 4: rewire + smoke (T07)
 - [ ] FR-099 IMPLEMENTED
 

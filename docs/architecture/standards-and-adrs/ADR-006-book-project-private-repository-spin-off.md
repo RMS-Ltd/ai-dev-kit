@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # ADR-006: Book project private repository spin-off (preferred migration)
 
-**Status:** Accepted — **Phase 1 complete** (2026-05-26); Phases 2–4 pending  
+**Status:** Accepted — **Phases 1–3 complete** (2026-05-26); Phase 4 pending  
 **Date:** 2026-05-26  
 **Decision owner:** Maintainer  
 **Private repository (live):** [RMS-Ltd/hf-ai-dev-kit](https://github.com/RMS-Ltd/hf-ai-dev-kit) — **private**
@@ -40,7 +40,7 @@ Adopt **Option C — private archive + fresh public genesis** (not in-place dele
 | Repository | Visibility | Name | Purpose |
 |------------|------------|------|---------|
 | **Book + full history** | **Private** ✅ | [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) | Manuscript, Epic 24, Head First / O'Reilly context, complete git archaeology |
-| **Frameworks** | **Public** (pending Phase 3) | `ai-dev-kit` | Neutral ADK reference; frameworks, RW/UKW/IPW, adopter install paths |
+| **Frameworks** | **Public** ✅ | [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) | Neutral ADK reference; frameworks, RW/UKW/IPW, adopter install paths |
 
 Public `ai-dev-kit` **does not** rename to Head First. **E1:S04:T02 is superseded** by this ADR and FR-099.
 
@@ -118,7 +118,7 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 | **0** | Inventory & ADR approval | **T03** | Validated asset matrix; maintainer signs this ADR |
 | **1** | Privatize + rename | **T04** | `RMS-Ltd/hf-ai-dev-kit` private ✅ 2026-05-26 |
 | **2** | Book extraction commit | **T05** | Genesis tree book-free ✅ `v0.1.4.3+1` |
-| **3** | Public rebirth | **T06** | New public `earlution/ai-dev-kit` from genesis |
+| **3** | Public rebirth | **T06** | New public `earlution/ai-dev-kit` from genesis ✅ 2026-05-26 |
 | **4** | Rewire & verify | **T07** | URLs, install smoke test, no Epic-24 contamination |
 
 ---
@@ -130,7 +130,7 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 | **0** | ✅ **Complete** | 2026-05-26 | **E1:S04:T03** |
 | **1** | ✅ **Complete** | 2026-05-26 | **E1:S04:T04** — [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) |
 | **2** | ✅ **Complete** | 2026-05-26 | **E1:S04:T05** — `v0.1.4.3+1` |
-| **3** | Pending | — | **E1:S04:T06** — new public `ai-dev-kit` |
+| **3** | ✅ **Complete** | 2026-05-26 | **E1:S04:T06** — [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) (orphan + replay from `f21bac102`) |
 | **4** | Pending | — | **E1:S04:T07** — rewire + verify |
 
 **Local clone hygiene:** Update `origin` if still pointing at pre-rename URL:
@@ -141,7 +141,7 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 ## Open questions (maintainer)
 
 - [x] Confirm private repo name: **`RMS-Ltd/hf-ai-dev-kit`** (live, private — 2026-05-26)
-- [ ] Orphan root vs genesis-SHA branch for public repo bootstrap.
+- [x] Orphan root vs genesis-SHA branch for public repo bootstrap — **orphan root + cherry-pick replay** from genesis SHA `f21bac102` ([runbook](../../maintenance/fr099-phase3-public-repo-bootstrap.md)).
 - [ ] Changelog archive: truncate public archive at genesis vs import summary doc only.
 - [ ] Cutover window duration and user communication channel.
 

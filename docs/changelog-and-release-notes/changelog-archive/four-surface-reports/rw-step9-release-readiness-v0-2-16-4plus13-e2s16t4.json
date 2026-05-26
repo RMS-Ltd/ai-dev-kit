@@ -2,7 +2,7 @@
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
   "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus13-e2s16t4.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": false,
+  "overall_passed": true,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
   "release_scope": {
     "epic": 2,
@@ -12,11 +12,9 @@
     "version_string": "v0.2.16.4+13"
   },
   "summary": {
-    "blocking_failures": [
-      "Gate 5: Stage-set completeness (BR-070)"
-    ],
-    "gates_failed": 1,
-    "gates_passed": 8,
+    "blocking_failures": [],
+    "gates_failed": 0,
+    "gates_passed": 9,
     "gates_total": 9,
     "gates_waived": 0
   },
@@ -126,21 +124,15 @@
           "task_id": "E2:S16:T4",
           "version_string": "v0.2.16.4+13"
         },
-        "violations": 5
+        "violations": 0
       },
-      "findings": [
-        "`fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run."
-      ],
+      "findings": [],
       "gate_id": 5,
-      "is_blocking_failure": true,
+      "is_blocking_failure": false,
       "name": "Stage-set completeness (BR-070)",
-      "passed": false,
+      "passed": true,
       "severity": "block",
-      "summary": "BR-070 violation: 5 Step-7 path(s) are modified-unstaged, untracked, or missing.",
+      "summary": "BR-070 satisfied: all 6 Step-7 path(s) are staged or unchanged.",
       "waive_reason": null,
       "waived": false
     },

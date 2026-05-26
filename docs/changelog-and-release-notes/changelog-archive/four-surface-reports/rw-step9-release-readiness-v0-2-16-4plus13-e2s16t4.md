@@ -8,10 +8,9 @@
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 5: Stage-set completeness (BR-070)
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 8/9 passed (1 failed, 0 waived).
+- Gates: 9/9 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -66,18 +65,12 @@
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: BR-070 violation: 5 Step-7 path(s) are modified-unstaged, untracked, or missing.
-- Findings:
-  - `fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+- Status: **PASS** (severity: `block`)
+- Summary: BR-070 satisfied: all 6 Step-7 path(s) are staged or unchanged.
 - Evidence:
   - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus13-e2s16t4.json`
   - `paths_checked`: `6`
-  - `violations`: `5`
+  - `violations`: `0`
   - `release_scope`: `{'epic': 2, 'story': 16, 'task': 4, 'task_id': 'E2:S16:T4', 'version_string': 'v0.2.16.4+13'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)

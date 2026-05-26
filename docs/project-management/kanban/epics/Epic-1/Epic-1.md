@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-05-26 (v0.1.4.7+1 – Kanban documentation setup)
+**Last updated:** 2026-05-26 (v0.1.4.6+2 – Story 4 Task 6 complete)
 **Branch:** `epic/1-ai-dev-kit-core`  
 **Version Schema:** `0.1.S.T+B` (dev-kit RC.EPIC.STORY.TASK+BUILD)  
 **Production URL:** [N/A for this repo]
@@ -75,7 +75,7 @@ It defines how the repo is structured, how versioning works for the dev kit itse
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-05-26 (v0.1.4.7+1 – Kanban documentation setup)
+**Last updated:** 2026-05-26 (v0.1.4.6+2 – Story 4 Task 6 complete)
 
 **Goal:**  
 Define and implement how the dev kit uses `RC.EPIC.STORY.TASK+BUILD`, and how RW interprets versions and tasks when run in this repo.
@@ -99,7 +99,7 @@ Define and implement how the dev kit uses `RC.EPIC.STORY.TASK+BUILD`, and how RW
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-05-26 (v0.1.4.7+1 – Kanban documentation setup)
+**Last updated:** 2026-05-26 (v0.1.4.6+2 – Story 4 Task 6 complete)
 
 **Goal:**  
 Clarify the modular architecture of the `ai-dev-kit` repository, ensuring that users can easily consume individual frameworks (workflow mgt, versioning, kanban) without pulling in the entire repository.
@@ -120,7 +120,7 @@ Clarify the modular architecture of the `ai-dev-kit` repository, ensuring that u
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-05-26 (v0.1.4.7+1 – Kanban documentation setup)
+**Last updated:** 2026-05-26 (v0.1.4.6+2 – Story 4 Task 6 complete)
 
 **Goal:**  
 Establish core KB locations for architecture, PM & portfolio, and dev-kit governance. Provide a clear, maintainable documentation structure that supports the dev-kit's modular architecture and makes it easy for users to navigate and understand the repository.

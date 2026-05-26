@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-26 (E1:S04:T03–T05 archived from kboard)
+**Last Updated:** 2026-05-26 (E1:S04:T06 Phase 3 complete; T03–T06 archived)
 **Version:** v0.1.4.7+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -20,7 +20,10 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
-#### **Epic 1: AI Dev Kit Core (Story 4 — Repository branding; FR-099 phases 0–2)**
+#### **Epic 1: AI Dev Kit Core (Story 4 — Repository branding; FR-099 phases 0–3)**
+- **[E1:S04:T06](epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md)** — **FR-099 Phase 3**: public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) bootstrap (orphan + replay from `f21bac102`).
+  **Completed:** `2026-05-26T16:01:04Z` | **Version:** `v0.1.4.6+2` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+
 - **[E1:S04:T05](epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md)** — **FR-099 Phase 2**: book extraction genesis on private `hf-ai-dev-kit` (genesis RW **v0.1.4.3+1**; kanban init **v0.1.4.5+1**).
   **Completed:** `2026-05-26T12:17:16Z` | **Version:** `v0.1.4.5+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 
