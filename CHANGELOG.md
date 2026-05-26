@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.6+1] - 26-05-26
+
+E6:S09:T06 (`RW -k`, `--art`) — **Kanban documentation setup**: T06 intake for FR-098 phases 2–5, IPP-E6S09T06, Story/FR/spec wiring; kboard/fbuboard repointed to T06. SemVer **v0.4.806+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.6+1.md)
+
+---
+
 ## [0.6.9.5+4] - 26-05-26
 
 E6:S09:T05 (`RW`, `--art`) — **Consolidate FR-098 Phase 1 on `dev`**: ADK ECC skill pack, validator + tests, IPP, and Kanban/FR alignment cherry-picked from `main`. SemVer **v0.4.806+4**.

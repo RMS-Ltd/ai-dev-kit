@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-26 (RW -k: E6:S09:T06)
-**Version:** v0.6.9.6+1
+**Last Updated:** 2026-05-26 (RW: E6:S09:T05)
+**Version:** v0.6.9.5+4
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/hf-ai-dev-kit` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ### Must Have (M) - Critical Tasks
 
-- **E6:S09:T06** – FR-098 phases 2–5 (installer, hooks, AgentShield, positioning; Phase 1 skill pack **shipped** v0.6.9.5+4) - 📋 TODO (MUST, IPW wired **v0.6.9.6+1**) - [Task Document](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) | [Story](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md) | [FR-098](fr-br/FR-098-ecc-optional-harness-layer-integration.md) | [Cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md) | [—IPP—](../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) | Last modified: 2026-05-26 17:05 UTC
+- **E6:S09:T05** – FR-098 phases 2–5 (installer, hooks, AgentShield; Phase 1 skill pack on **dev** v0.6.9.5+4) - 🔄 IN PROGRESS (MUST, Phase 1 consolidated; FR-098 open) - [Task Document](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) | [Story](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md) | [FR-098](fr-br/FR-098-ecc-optional-harness-layer-integration.md) | [Cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md) | [—IPP—](../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md) | Last modified: 2026-05-26 17:00 UTC
 
 ### Should Have (S) - Important Tasks
 

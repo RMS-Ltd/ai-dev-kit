@@ -147,11 +147,11 @@ Communicate harness-layer availability in release notes and install docs; SemVer
 | Phase | Deliverable | Task |
 |-------|-------------|------|
 | **0** | Compatibility matrix + bridge template + this spec | **E6:S09:T04** (complete) |
-| **1** | ADK workflow skill pack (`adk-*` in ECC `SKILL.md` format) | E6:S09:T05 (planned) |
-| **2** | Optional greenfield installer step + `ecc-adk-bridge.yaml` | Follow-on |
-| **3** | Hook alignment (SessionStart context, pre-RW quality gate) | Follow-on |
-| **4** | AgentShield optional RW Step 9 bridge | Follow-on |
-| **5** | Book / public positioning sidebar | Follow-on |
+| **1** | ADK workflow skill pack (`adk-*` in ECC `SKILL.md` format) | **E6:S09:T05** (complete) |
+| **2** | Optional greenfield installer step + `ecc-adk-bridge.yaml` | **E6:S09:T06** (planned) |
+| **3** | Hook alignment (SessionStart context, pre-RW quality gate) | **E6:S09:T06** |
+| **4** | AgentShield optional RW Step 9 bridge | **E6:S09:T06** |
+| **5** | Book / public positioning sidebar | **E6:S09:T06** |
 
 ---
 

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** LOW  
 **Status:** ACCEPTED
 
-**Implementing Tasks:** [E6:S09:T04](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) (Phase 0), [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) (Phase 1+)
+**Implementing Tasks:** [E6:S09:T04](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) (Phase 0), [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) (Phase 1), [E6:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (Phases 2–5)
 
 ---
 
@@ -102,11 +102,11 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 | Phase | Name | Primary deliverable | Task anchor |
 |-------|------|---------------------|-------------|
 | **0** | Compatibility spike | Compatibility matrix + procedure | **E6:S09:T04** (this intake) |
-| **1** | ADK workflow skill pack | ECC-format skills for RW/UKW/IPW/intake | Follow-on task (T05+) |
-| **2** | Installer bridge | Optional greenfield step + `ecc-adk-bridge.yaml` | Follow-on task |
-| **3** | Hook alignment | SessionStart context, quality-gate pre-RW | Follow-on task |
-| **4** | AgentShield bridge | Optional RW Step 9 security scan | Follow-on task |
-| **5** | Book / public positioning | Head First AI-Assisted Development sidebar | Follow-on task |
+| **1** | ADK workflow skill pack | ECC-format skills for RW/UKW/IPW/intake | **E6:S09:T05** (shipped) |
+| **2** | Installer bridge | Optional greenfield step + `ecc-adk-bridge.yaml` | **E6:S09:T06** |
+| **3** | Hook alignment | SessionStart context, quality-gate pre-RW | **E6:S09:T06** |
+| **4** | AgentShield bridge | Optional RW Step 9 security scan | **E6:S09:T06** |
+| **5** | Book / public positioning | Head First AI-Assisted Development sidebar | **E6:S09:T06** |
 
 ---
 
@@ -191,7 +191,7 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 - [IPP-E6S09T04](../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 - Phase 1 **COMPLETE:** [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E6S09T05](../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
 - Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
-- **Phases 2–5** (installer, hooks, AgentShield, positioning) remain **open** on this FR
+- **Phases 2–5:** [E6:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — [IPP-E6S09T06](../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) (**v0.6.9.6+1** kanban intake; **TODO**)
 
 ---
 
