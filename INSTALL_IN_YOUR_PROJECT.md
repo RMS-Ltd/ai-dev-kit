@@ -42,7 +42,7 @@ This section defines the canonical **greenfield** path for new or template proje
 
 ### Optional harness layer (ECC)
 
-ADK adoption does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT). For optional complementary harness execution skills, see [ECC ↔ ADK integration specification](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md). Installer steps for ECC are deferred to FR-098 Phase 2.
+ADK adoption does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT). For optional complementary harness execution skills, see the **[ECC + ADK integration cheatsheet](docs/documentation/user-docs/ecc-adk-integration-cheatsheet.md)** (quick reference) and [ECC ↔ ADK integration specification](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) (normative contract). Installer steps for ECC are deferred to FR-098 Phase 2.
 
 ### Scope boundary
 

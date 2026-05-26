@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+12] - 26-05-26
+
+E2:S16:T04 (`RW -k`, `--art`) — **Kanban documentation setup**: FR-098 MoSCOW **Must Have** top on kboard/fbuboard (phases 2–5); ECC integration cheatsheet + install/spec links. SemVer **v0.4.804+12**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+12.md)
+
+---
+
 ## [0.2.16.4+11] - 26-05-26
 
 E2:S16:T04 (`--art`, UKW follow-up) — **Comprehensive kanban sync**: kboard/fbu headers, archived E6:S09:T04/T05, Story 009 T02/T03 drift fix; semver-registry aligned through patch **803**. SemVer **v0.4.803+11**.

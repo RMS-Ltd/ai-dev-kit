@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **ID:** FR-098  
 **Submitted:** 2026-05-26  
 **Submitted By:** Maintainer (architecture review session)  
-**Priority:** MEDIUM  
+**Priority:** HIGH (MoSCOW **Must Have** — board reprioritized **v0.2.16.4+12**)  
 **Severity:** LOW  
 **Status:** ACCEPTED
 
@@ -190,6 +190,11 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 - [Bridge template](../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
 - [IPP-E6S09T04](../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 - Phase 1 follow-on: [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)
+- Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md) (linked **v0.2.16.4+12**)
+
+### Board prioritization (E2:S16:T04 — v0.2.16.4+12)
+
+- **kboard.md** / **fbuboard.md** — FR-098 / E6:S09:T05 at **top of Must Have** for phases 2–5 delivery focus.
 
 ---
 

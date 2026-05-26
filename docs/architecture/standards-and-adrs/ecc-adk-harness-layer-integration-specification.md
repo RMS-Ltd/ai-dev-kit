@@ -157,6 +157,7 @@ Communicate harness-layer availability in release notes and install docs; SemVer
 
 ## 11. References
 
+- **[ECC + ADK integration cheatsheet](../documentation/user-docs/ecc-adk-integration-cheatsheet.md)** — quick-start for adopters (workflows, conflicts, setup)
 - [ECC repository](https://github.com/affaan-m/ECC)
 - [ECC cross-harness architecture](https://github.com/affaan-m/ECC/blob/main/docs/architecture/cross-harness.md)
 - [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)

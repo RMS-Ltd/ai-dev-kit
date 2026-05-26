@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-26 (T12 COMPLETE v0.2.16.12+2 — FR-100 ADR necessity gate)  
-**Version:** v0.2.16.12+1
+**Last updated:** 2026-05-26 (v0.2.16.4+12 – Kanban documentation setup)
+**Version:** v0.2.16.4+12
 **Code:** E2S16
 
 ---
@@ -35,7 +35,7 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [ ] **E2:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual anchor; Wave 2/3 COMPLETE; RW v0.2.16.3+6: IPP vs ICW packaging SoT + gate/policy alignment; AC4 PARTIAL pending T02 inventory)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E2:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - IN PROGRESS (HIGH, UKW attribution anchor; last run 2026-05-20 UKW post T11/FR-096)  
+- [x] **E2:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - ✅ COMPLETE (HIGH, UKW attribution anchor; last run **v0.2.16.4+12** — FR-098 MoSCOW Must Have top + cheatsheet wiring)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E2:S16:T05 – Markdown Documentation Maintenance (Perpetual)** - IN PROGRESS (HIGH, dedicated perpetual lane for recurring markdown-only documentation upkeep outside workflow-maintenance umbrella and kanban synchronization lanes)  
