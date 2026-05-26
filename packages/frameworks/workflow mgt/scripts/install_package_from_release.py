@@ -39,7 +39,7 @@ Examples:
 
   # Install from specific repository
   python install_package_from_release.py kanban 2.0.0 \\
-      --repo ai-dev-kit/ai-dev-kit
+      --repo earlution/ai-dev-kit
         """
     )
     
@@ -65,8 +65,8 @@ Examples:
     parser.add_argument(
         '--repo',
         type=str,
-        default='ai-dev-kit/ai-dev-kit',
-        help='GitHub repository (owner/repo, default: ai-dev-kit/ai-dev-kit)'
+        default='earlution/ai-dev-kit',
+        help='GitHub repository (owner/repo, default: earlution/ai-dev-kit)'
     )
     
     parser.add_argument(

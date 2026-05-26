@@ -2,7 +2,19 @@
 
 **Quick Start Guide for Agents and Developers**
 
-This document provides a clear entry point for installing AI Dev Kit frameworks into your project. All installation documentation is available in the `ai-dev-kit` repository.
+This document provides a clear entry point for installing AI Dev Kit frameworks into your project. All installation documentation is available in the public **AI Dev Kit** repository.
+
+---
+
+## Canonical repository (FR-099 / ADR-006)
+
+| Audience | Repository | Clone URL |
+|----------|------------|-----------|
+| **Adopters** (frameworks only) | [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) | `https://github.com/earlution/ai-dev-kit.git` |
+| **Maintainers** (book + full history) | [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) (private) | `https://github.com/RMS-Ltd/hf-ai-dev-kit.git` |
+
+Published docs: [https://earlution.github.io/ai-dev-kit/](https://earlution.github.io/ai-dev-kit/).  
+Rewire policy: [`docs/maintenance/fr099-phase4-rewire-and-verify.md`](docs/maintenance/fr099-phase4-rewire-and-verify.md).
 
 ---
 

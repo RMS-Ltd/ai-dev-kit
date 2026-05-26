@@ -44,6 +44,13 @@ versioning_mode: dual
 # Project name
 project_name: ai-dev-kit
 
+# FR-099 / ADR-006 repository roles (E1:S04:T07)
+canonical_public_repo: earlution/ai-dev-kit
+canonical_public_repo_url: https://github.com/earlution/ai-dev-kit.git
+canonical_public_pages_url: https://earlution.github.io/ai-dev-kit/
+maintainer_private_repo: RMS-Ltd/hf-ai-dev-kit
+maintainer_private_repo_url: https://github.com/RMS-Ltd/hf-ai-dev-kit.git
+
 # Notion project hub (single entry point for project context; RMS Teamspace)
 notion_hub_url: https://www.notion.so/30db6f8962c181ceb811f3a6c78ecd4b
 

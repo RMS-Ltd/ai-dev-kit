@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** IN PROGRESS — **Phases 0–2 complete**; **Phases 3–4** open on dedicated tasks (split 2026-05-26)
+**Status:** IMPLEMENTED — **Phases 0–4 complete** (2026-05-26); forensic closure **v0.1.4.7+2** (`RW E1:S04:T07`, `--art`)
 
 **Implementing tasks (one per phase):**
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 | 1 | E1:S04:T04 | [T04](../epics/Epic-1/Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | ✅ COMPLETE |
 | 2 | E1:S04:T05 | [T05](../epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | ✅ COMPLETE (`v0.1.4.3+1`) |
 | 3 | E1:S04:T06 | [T06](../epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | ✅ COMPLETE (2026-05-26) |
-| 4 | E1:S04:T07 | [T07](../epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | 📋 TODO |
+| 4 | E1:S04:T07 | [T07](../epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | ✅ COMPLETE (2026-05-26) |
 
 **Umbrella redirect (historical):** [T03-spin-off…](../epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
 
@@ -63,7 +63,7 @@ The maintainer wants AI Dev Kit to stay **public and framework-focused** while t
 - [x] **FR-099-F3:** **Privatize** and **rename** to [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit); retain full history on the private repo (book + frameworks) — **done 2026-05-26**
 - [x] **FR-099-F4:** Land **book extraction genesis commit** on private `hf-ai-dev-kit` — ✅ **E1:S04:T05** (`v0.1.4.3+1`, 2026-05-26)
 - [x] **FR-099-F5:** **Create new public `earlution/ai-dev-kit`** from genesis commit — ✅ 2026-05-26 ([bootstrap runbook](../../../maintenance/fr099-phase3-public-repo-bootstrap.md))
-- [ ] **FR-099-F6:** **Rewire** remotes, badges, install docs, CI, and submodule URLs to the new public repo; verify greenfield/brownfield install (no Epic-24 contamination).
+- [x] **FR-099-F6:** **Rewire** remotes, badges, install docs, CI, and submodule URLs to the new public repo; verify greenfield/brownfield install (no Epic-24 contamination). ✅ 2026-05-26
 - [ ] **FR-099-F7:** Mark **[E1:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md)** **SUPERSEDED** — public ADK does not rename to Head First; Head First context remains private `hf-ai-dev-kit` only.
 
 ### Non-Functional Requirements
@@ -131,7 +131,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 | **1** | Privatize + rename | **E1:S04:T04** | ✅ COMPLETE (2026-05-26) |
 | **2** | Book extraction genesis | **E1:S04:T05** | ✅ COMPLETE (`v0.1.4.3+1`) |
 | **3** | Public rebirth | **E1:S04:T06** | ✅ COMPLETE (2026-05-26) |
-| **4** | Rewire & verify | **E1:S04:T07** | 📋 TODO |
+| **4** | Rewire & verify | **E1:S04:T07** | ✅ COMPLETE (2026-05-26) |
 
 ---
 
@@ -195,14 +195,14 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 
 - Epic: Epic 1 — AI Dev Kit Core
 - Story: Story 4 — Repository Branding and Renaming
-- Tasks: T03 (Phase 0) ✅ · T04 (Phase 1) ✅ · T05 (Phase 2) ✅ · T06 (Phase 3) ✅ · **T07 (Phase 4)** 📋
+- Tasks: T03 (Phase 0) ✅ · T04 (Phase 1) ✅ · T05 (Phase 2) ✅ · T06 (Phase 3) ✅ · T07 (Phase 4) ✅
 - Latest release: Phase 2 `v0.1.4.3+1`; kanban re-anchor `v0.1.4.3+2` (umbrella T03, pre-split)
 
 **Kanban Links:**
 
 - Epic: [`Epic-1.md`](../epics/Epic-1/Epic-1.md)
 - Story: [`Story-004-repository-branding-and-renaming.md`](../epics/Epic-1/Story-004-repository-branding-and-renaming.md)
-- Active: [`T07`](../epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) — public live at [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit)
+- **Closed:** All phase tasks T03–T07 complete; public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) live; private [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit)
 
 ---
 

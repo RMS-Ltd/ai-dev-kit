@@ -20,7 +20,10 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
-#### **Epic 1: AI Dev Kit Core (Story 4 — Repository branding; FR-099 phases 0–3)**
+#### **Epic 1: AI Dev Kit Core (Story 4 — Repository branding; FR-099 phases 0–4)**
+- **[E1:S04:T07](epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)** — **FR-099 Phase 4**: rewire install URLs + public smoke; FR-099 IMPLEMENTED.
+  **Completed:** `2026-05-26T16:15:00Z` | **Version:** `v0.1.4.7+2` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+
 - **[E1:S04:T06](epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md)** — **FR-099 Phase 3**: public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) bootstrap (orphan + replay from `f21bac102`).
   **Completed:** `2026-05-26T16:01:04Z` | **Version:** `v0.1.4.6+2` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 

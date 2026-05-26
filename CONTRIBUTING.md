@@ -34,6 +34,15 @@ For more detailed information on submitting reports, see:
 - **[Feature Request Guide](.github/ISSUE_TEMPLATE/feature_request.yml)** - How to write effective feature requests
 - **[UX Research Guide](.github/ISSUE_TEMPLATE/ux_research.yml)** - Submitting UX research findings
 
+## Repository roles (maintainers)
+
+| Clone target | URL |
+|--------------|-----|
+| **Public ADK** (adopters, issues, Pages source) | `https://github.com/earlution/ai-dev-kit.git` |
+| **Private maintainer** (book + full history) | `https://github.com/RMS-Ltd/hf-ai-dev-kit.git` |
+
+See [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) and [FR-099 Phase 4 runbook](docs/maintenance/fr099-phase4-rewire-and-verify.md).
+
 ## Code Contributions
 
 If you'd like to contribute code:

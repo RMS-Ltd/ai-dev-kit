@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-099 | FR | Book/Epic-24 spin-off — private `hf-ai-dev-kit` + public `earlution/ai-dev-kit` (ADR-006; T03–T07) | 2026-05-26 | v0.1.4.7+2 | RW |
 | FR-098 | FR | Optional ECC harness layer integration (phases 0–5; T04–T06) | 2026-05-26 | v0.6.9.6+3 | RW |
 | FR-100 | FR | IPW ADR necessity checklist — Phase 5.0 gate; T1–T7 / E1–E5; policy SoT; IPP §2.5 (**E2:S16:T12**) | 2026-05-26 | v0.2.16.12+2 | RW |
 | FR-096 | FR | IPW mandatory documentation phases — update/create (Phase 5) + housing (Phase 6); IPP §5–§7; ten-phase `/ipw` (**E2:S16:T11**) | 2026-05-20 | v0.2.16.11+1 | RW |

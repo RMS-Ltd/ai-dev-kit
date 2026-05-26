@@ -9,9 +9,11 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.812+2` | **Internal:** `v0.1.4.6+2` (see detailed changelog) | **Last Updated:** 2026-05-26
+**Version (SemVer):** `v0.4.813+2` | **Internal:** `v0.1.4.7+2` (see detailed changelog) | **Last Updated:** 2026-05-26
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://earlution.github.io/ai-dev-kit/](https://earlution.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/earlution/ai-dev-kit/issues) • [Request Feature](https://github.com/earlution/ai-dev-kit/issues)
+
+**Repositories:** Adopters clone [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) (public). Maintainers use private [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) for book work — see [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 </div>
 

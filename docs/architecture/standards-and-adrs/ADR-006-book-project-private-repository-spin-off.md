@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # ADR-006: Book project private repository spin-off (preferred migration)
 
-**Status:** Accepted — **Phases 1–3 complete** (2026-05-26); Phase 4 pending  
+**Status:** Accepted — **Phases 1–4 complete** (2026-05-26)  
 **Date:** 2026-05-26  
 **Decision owner:** Maintainer  
 **Private repository (live):** [RMS-Ltd/hf-ai-dev-kit](https://github.com/RMS-Ltd/hf-ai-dev-kit) — **private**
@@ -131,7 +131,7 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 | **1** | ✅ **Complete** | 2026-05-26 | **E1:S04:T04** — [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) |
 | **2** | ✅ **Complete** | 2026-05-26 | **E1:S04:T05** — `v0.1.4.3+1` |
 | **3** | ✅ **Complete** | 2026-05-26 | **E1:S04:T06** — [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) (orphan + replay from `f21bac102`) |
-| **4** | Pending | — | **E1:S04:T07** — rewire + verify |
+| **4** | ✅ **Complete** | 2026-05-26 | **E1:S04:T07** — rewire + verify ([runbook](../../maintenance/fr099-phase4-rewire-and-verify.md)) |
 
 **Local clone hygiene:** Update `origin` if still pointing at pre-rename URL:
 `git remote set-url origin https://github.com/RMS-Ltd/hf-ai-dev-kit.git`

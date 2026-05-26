@@ -1,0 +1,237 @@
+{
+  "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-6plus2-e1s4t6.json",
+  "invocation_context": "rw_step_9_release_readiness",
+  "overall_passed": true,
+  "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
+  "release_scope": {
+    "epic": 1,
+    "story": 4,
+    "task": 6,
+    "task_id": "E1:S4:T6",
+    "version_string": "v0.1.4.6+2"
+  },
+  "summary": {
+    "blocking_failures": [],
+    "gates_failed": 0,
+    "gates_passed": 9,
+    "gates_total": 9,
+    "gates_waived": 0
+  },
+  "timestamp_utc": "2026-05-26 16:03 UTC",
+  "verdicts": [
+    {
+      "evidence": {
+        ".cursorrules": "OK",
+        "ipw_governance": "MISSING (info)",
+        "packages/frameworks/kanban/policies/kanban-governance-policy.md": "OK",
+        "packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md": "OK"
+      },
+      "findings": [
+        "No IPW governance doc found that references FR-091/FR-084/FR-092. Recommend cross-linking from IPW guide for cross-doc consistency."
+      ],
+      "gate_id": 1,
+      "is_blocking_failure": false,
+      "name": "Governance source-of-truth alignment",
+      "passed": true,
+      "severity": "block",
+      "summary": "All governance artefacts (.cursorrules, RW guide, kanban policy) codify FR-092 contract.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "BR-042": "OK (closed as duplicate)",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md": "OK",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md": "OK",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md": "OK",
+        "docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md": "OK",
+        "docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md": "OK",
+        "docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md": "OK"
+      },
+      "findings": [],
+      "gate_id": 2,
+      "is_blocking_failure": false,
+      "name": "Predecessor closure & supersede-chain consistency",
+      "passed": true,
+      "severity": "block",
+      "summary": "Supersede chain executed: FR-091/FR-090/FR-084 banner-superseded, T02/T05/T06 redirected, BR-069/BR-070/UXR-009 gated.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "docs/project-management/kanban/fbuboard.md": "byte-identical",
+        "docs/project-management/kanban/fr-br-uxr-board.md": "byte-identical",
+        "docs/project-management/kanban/kanban-board.md": "byte-identical",
+        "docs/project-management/kanban/kboard.md": "byte-identical"
+      },
+      "findings": [],
+      "gate_id": 3,
+      "is_blocking_failure": false,
+      "name": "Contract enforcement parity (RW <-> UKW canonical pipeline)",
+      "passed": true,
+      "severity": "block",
+      "summary": "RW and UKW canonical row transform pipelines produce byte-identical output across all active boards (FR-090 shared engine verified).",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "stamp_evidence_aggregate": {
+          "stamps_appended_with_evidence": 0,
+          "stamps_preserved_existing": 95,
+          "stamps_skipped_no_evidence": 0
+        }
+      },
+      "findings": [],
+      "gate_id": 4,
+      "is_blocking_failure": false,
+      "name": "Corpus canonical state",
+      "passed": true,
+      "severity": "block",
+      "summary": "Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-6plus2-e1s4t6.json",
+        "paths_checked": 6,
+        "release_scope": {
+          "epic": 1,
+          "story": 4,
+          "task": 6,
+          "task_id": "E1:S4:T6",
+          "version_string": "v0.1.4.6+2"
+        },
+        "violations": 0
+      },
+      "findings": [],
+      "gate_id": 5,
+      "is_blocking_failure": false,
+      "name": "Stage-set completeness (BR-070)",
+      "passed": true,
+      "severity": "block",
+      "summary": "BR-070 satisfied: all 6 Step-7 path(s) are staged or unchanged.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "evidence_mode": null,
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-6plus2-e1s4t6.json",
+        "stamps_appended_with_evidence": 0,
+        "stamps_preserved_existing": 0,
+        "stamps_skipped_no_evidence": 0
+      },
+      "findings": [],
+      "gate_id": 6,
+      "is_blocking_failure": false,
+      "name": "Forensic stamp evidence (UXR-009)",
+      "passed": true,
+      "severity": "block",
+      "summary": "Forensic stamp evidence consistent: appended=0, skipped=0, preserved=0 (mode=None).",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "fbu_doc": {
+          "notes_count": 1,
+          "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md"
+          ],
+          "touched": false
+        },
+        "fbuboard": {
+          "notes_count": 1,
+          "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+          ],
+          "touched": false
+        },
+        "kboard": {
+          "notes_count": 1,
+          "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+          ],
+          "touched": false
+        },
+        "release_scope": {
+          "epic": 1,
+          "story": 4,
+          "task": 6,
+          "task_id": "E1:S4:T6",
+          "version_string": "v0.1.4.6+2"
+        },
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-6plus2-e1s4t6.json",
+        "task_doc": {
+          "notes_count": 1,
+          "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md"
+          ],
+          "touched": false
+        }
+      },
+      "findings": [],
+      "gate_id": 7,
+      "is_blocking_failure": false,
+      "name": "Four-surface parity (FR-084)",
+      "passed": true,
+      "severity": "block",
+      "summary": "Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "fbuboard.md": {},
+        "homogeneity_threshold": 10,
+        "kboard.md": {}
+      },
+      "findings": [],
+      "gate_id": 8,
+      "is_blocking_failure": false,
+      "name": "Stamp homogeneity (FR-097)",
+      "passed": true,
+      "severity": "block",
+      "summary": "No homogeneity clusters at or above threshold.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "failure_count": 0
+      },
+      "findings": [],
+      "gate_id": 9,
+      "is_blocking_failure": false,
+      "name": "MoSCOW state icons (UXR-012)",
+      "passed": true,
+      "severity": "block",
+      "summary": "All parseable MoSCOW rows carry Set A state icons.",
+      "waive_reason": null,
+      "waived": false
+    }
+  ]
+}

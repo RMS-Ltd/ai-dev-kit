@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "FR-099": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.1.4.7+2 — FR-099 IMPLEMENTED; removed from active fbuboard Must Have"
+    }
+  }
+}

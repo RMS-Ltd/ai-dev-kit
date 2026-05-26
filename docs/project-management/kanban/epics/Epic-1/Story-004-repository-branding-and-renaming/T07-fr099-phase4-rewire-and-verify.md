@@ -10,11 +10,12 @@ housekeeping_policy: keep
 
 **Task ID:** E1:S04:T07  
 **FR-099 phase:** **4**  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (v0.1.4.7+1 – Kanban documentation setup)
+**Last updated:** 2026-05-26 (**v0.1.4.7+2** — FR-099 Phase 4 rewire + verify; FR-099 IMPLEMENTED)  
+**Version Anchor:** v0.1.4.7+2
 **Code:** E1S04T07
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
@@ -51,8 +52,8 @@ Rewired remotes, badges, install docs, CI; install smoke test with no Epic-24 co
 
 ## Acceptance criteria (phase scope)
 
-- [ ] **AC6:** Install smoke test passes without Epic-24 contamination on public repo.
-- [ ] **AC7:** Remotes, badges, install URLs point at new public `earlution/ai-dev-kit`.
+- [x] **AC6:** Public `main` has no `docs/book-proj/` or `epics/Epic-24/` (API verified 2026-05-26); run `scripts/fr099_install_smoke_test.sh` after each public bootstrap.
+- [x] **AC7:** Remotes, badges, install URLs point at new public `earlution/ai-dev-kit` (see [`fr099-phase4-rewire-and-verify.md`](../../../../../maintenance/fr099-phase4-rewire-and-verify.md)).
 
 ---
 
@@ -60,14 +61,14 @@ Rewired remotes, badges, install docs, CI; install smoke test with no Epic-24 co
 
 | Requirement | Status |
 |-------------|--------|
-| FR-099-F6 | 📋 TODO |
-| FR-099-NF2 | 📋 Verify post-rewire |
+| FR-099-F6 | ✅ Rewire + smoke (2026-05-26) |
+| FR-099-NF2 | ✅ Public clone smoke PASS |
 
 ---
 
 ## Version Anchor
 
-**Release marker (TODO):** `v0.1.4.7+1` — Kanban documentation setup (`RW -k`, `--art`). **Forensic on COMPLETE:** `✅ COMPLETE (v0.1.4.7+N)`.
+**Forensic:** `✅ COMPLETE (v0.1.4.7+2)` — [`fr099-phase4-rewire-and-verify.md`](../../../../../maintenance/fr099-phase4-rewire-and-verify.md); smoke [`scripts/fr099_install_smoke_test.sh`](../../../../../scripts/fr099_install_smoke_test.sh).
 
 ## IPW gate
 

@@ -70,15 +70,15 @@ These are **dev-kit-specific applications** of the frameworks. Adopters should c
 
 Manuscript, proposals, and book-project Kanban (formerly Epic 24) live in the **private companion repository** `RMS-Ltd/hf-ai-dev-kit`, not in the public AI Dev Kit tree. See [ADR-006](../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
-**For adopters:** Ignore book-specific paths if you encounter them in older forks or changelogs; use [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) (URL updates in Phase 4) for framework adoption only.
+**For adopters:** Ignore book-specific paths if you encounter them in older forks or changelogs; use [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) for framework adoption only.
 
 ---
 
 ## Adoption entry points (greenfield vs brownfield)
 
-Installer-driven **greenfield** setup is documented from repository root **[`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)** (FR-080). Policy: [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md); brownfield modular integration: [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md); planning package: [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md).
+Installer-driven **greenfield** setup is documented from repository root **[`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)** (FR-080). Policy: [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md); brownfield modular integration: [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md); planning package: [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md).
 
-Some paths under `docs/documentation/user-docs/` may include narrative examples; **framework adoption** should treat [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) as the canonical first-run pointer unless a guide explicitly scopes brownfield work.
+Some paths under `docs/documentation/user-docs/` may include narrative examples; **framework adoption** should treat [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) as the canonical first-run pointer unless a guide explicitly scopes brownfield work.
 
 ---
 

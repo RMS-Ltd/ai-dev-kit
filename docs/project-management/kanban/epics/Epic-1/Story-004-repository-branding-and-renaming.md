@@ -8,12 +8,13 @@ housekeeping_policy: keep
 
 # Story 004 – Repository Branding and Renaming
 
-**Status:** IN PROGRESS
+**Status:** ✅ COMPLETE
+**Completed:** 2026-05-26
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-07  
-**Last updated:** 2026-05-26 (v0.1.4.6+2 – Kanban documentation setup)
-**Version:** v0.1.4.6+2
+**Last updated:** 2026-05-26 (v0.1.4.7+2 – Kanban documentation setup)
+**Version:** v0.1.4.7+2
 **Code:** E1S04
 
 ---
@@ -26,7 +27,7 @@ housekeeping_policy: keep
 - [x] **E1:S04:T04 – FR-099 Phase 1 — Privatize & rename `hf-ai-dev-kit`** - ✅ COMPLETE — [T04](Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md)
 - [x] **E1:S04:T05 – FR-099 Phase 2 — Book extraction genesis** - ✅ COMPLETE (**v0.1.4.3+1**) — [T05](Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md)
 - [x] **E1:S04:T06 – FR-099 Phase 3 — Public `ai-dev-kit` rebirth** - ✅ COMPLETE (2026-05-26) (v0.1.4.6+2) — [T06](Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md)
-- [ ] **E1:S04:T07 – FR-099 Phase 4 — Rewire & verify** - 📋 TODO (HIGH) — [T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
+- [x] **E1:S04:T07 – FR-099 Phase 4 — Rewire & verify** - ✅ COMPLETE (2026-05-26) (v0.1.4.7+2) — [T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
   - **IPP:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) (all phases)
   - Umbrella redirect (historical RW): [`T03-spin-off-book-epic-private-repo-fr099.md`](Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) | [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
@@ -38,7 +39,7 @@ This story plans and executes **repository naming and separation** between the p
 
 1. **Phase 1:** `vibe-dev-kit` → `ai-dev-kit` ✅ **COMPLETE**
 2. **Phase 2 (superseded):** `ai-dev-kit` → `head-first-ai-dev-kit` on O'Reilly acceptance — **cancelled 2026-05-26** ([FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md), [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md))
-3. **FR-099 (active):** Option C migration — Phases 0–3 ✅; **Phase 4** [E1:S04:T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) (rewire + smoke)
+3. **FR-099:** Option C migration **complete** (Phases 0–4 ✅); public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit)
 
 **Phase 1 Status:** ✅ **COMPLETE** — all references updated from `vibe-dev-kit` to `ai-dev-kit`.
 
@@ -58,7 +59,7 @@ Establish clear repository boundaries: **public `ai-dev-kit`** (neutral framewor
 **Deliverable:** ✅ **COMPLETE** - All references updated to `ai-dev-kit`  
 **Dependencies:** None  
 **Blocker:** None  
-**Status:** IN PROGRESS
+**Status:** ✅ COMPLETE
 
 **Problem Statement:**
 The repository was named `vibe-dev-kit`, but the book focus has shifted to "Head First AI-Assisted Development". To align branding, we renamed to `ai-dev-kit`. Since the remote repository was deleted, we were able to execute the rename immediately without migration concerns.
@@ -107,7 +108,7 @@ The repository was named `vibe-dev-kit`, but the book focus has shifted to "Head
 
 ### E1:S04:T02 – Plan repository rename from ai-dev-kit to head-first-ai-dev-kit (conditional on O'Reilly acceptance) ⏭️ SUPERSEDED
 
-**Status:** IN PROGRESS
+**Status:** ✅ COMPLETE
 **Superseded by:** [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md), [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md), FR-099 phase tasks [T03–T07](Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md)
 
 **Rationale:** Clear separation requires public **AI Dev Kit** to remain neutral (`ai-dev-kit`). Head First / O'Reilly branding applies to **private `hf-ai-dev-kit`** only, not a public toolkit rename.
@@ -177,7 +178,7 @@ If the book is accepted by O'Reilly for the "Head First" series, the repository 
 | E1:S04:T04 | 1 — Privatize + rename | ✅ COMPLETE | [T04](Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) |
 | E1:S04:T05 | 2 — Book extraction genesis | ✅ COMPLETE (`v0.1.4.3+1`) | [T05](Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) |
 | E1:S04:T06 | 3 — Public rebirth | ✅ COMPLETE | [T06](Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) |
-| E1:S04:T07 | 4 — Rewire & verify | 📋 TODO | [T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) |
+| E1:S04:T07 | 4 — Rewire & verify | ✅ COMPLETE | [T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) |
 
 **FR:** [FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md) · **ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 

@@ -8,7 +8,7 @@ Usage:
     python upload_to_github_release.py <package-file> [--hash-file <hash-file>] [--tag <tag>] [--token <token>] [--repo <repo>] [--verbose]
 
 Example:
-    python upload_to_github_release.py kanban-v2.0.0.tar.gz --hash-file kanban-v2.0.0.tar.gz.sha256 --tag v2.0.0 --token $GITHUB_TOKEN --repo ai-dev-kit/ai-dev-kit
+    python upload_to_github_release.py kanban-v2.0.0.tar.gz --hash-file kanban-v2.0.0.tar.gz.sha256 --tag v2.0.0 --token $GITHUB_TOKEN --repo earlution/ai-dev-kit
 """
 
 import argparse
@@ -31,7 +31,7 @@ Examples:
       --hash-file kanban-v2.0.0.tar.gz.sha256 \\
       --tag v2.0.0 \\
       --token $GITHUB_TOKEN \\
-      --repo ai-dev-kit/ai-dev-kit
+      --repo earlution/ai-dev-kit
 
   # Upload package only (no hash file)
   python upload_to_github_release.py kanban-v2.0.0.tar.gz \\

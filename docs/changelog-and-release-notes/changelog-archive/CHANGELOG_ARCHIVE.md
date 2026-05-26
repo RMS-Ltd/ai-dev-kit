@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.1.4.6+2] - 26-05-26
+
+E1:S04:T06 (`RW`, `--art`) — FR-099 Phase 3: public `earlution/ai-dev-kit` rebirth (genesis bootstrap). SemVer **v0.4.812+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.6+2.md)
+---
 ## [0.2.16.4+13] - 26-05-26
 
 E2:S16:T04 (`RW -k`, `--art`) — Kanban init: FR-099 hygiene (archive T03–T05; T06/T07 Must Have + IPP). SemVer **v0.4.811+13**.

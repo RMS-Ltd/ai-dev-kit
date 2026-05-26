@@ -36,7 +36,7 @@ This guide covers manual installation of framework packages.
 #### Step 1: Download Package and Hash File
 
 1. Navigate to the framework's GitHub Releases page:
-   - Example: `https://github.com/ai-dev-kit/ai-dev-kit/releases/tag/kanban-v2.0.0`
+   - Example: `https://github.com/earlution/ai-dev-kit/releases/tag/kanban-v2.0.0`
    
 2. Download the package file:
    - Format: `{framework-name}-v{version}.tar.gz`
@@ -101,7 +101,7 @@ ls packages/frameworks/kanban/scripts/install_kanban_framework.py
 # Set variables
 FRAMEWORK="kanban"
 VERSION="2.0.0"
-BASE_URL="https://github.com/ai-dev-kit/ai-dev-kit/releases/download/kanban-v${VERSION}"
+BASE_URL="https://github.com/earlution/ai-dev-kit/releases/download/kanban-v${VERSION}"
 
 # Create destination directory
 mkdir -p packages/frameworks
@@ -131,11 +131,11 @@ rm kanban-v${VERSION}.tar.gz kanban-v${VERSION}.tar.gz.sha256
 ```bash
 # Download package
 curl -L -o kanban-v2.0.0.tar.gz \
-    "https://github.com/ai-dev-kit/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz"
+    "https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz"
 
 # Download hash file
 curl -L -o kanban-v2.0.0.tar.gz.sha256 \
-    "https://github.com/ai-dev-kit/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz.sha256"
+    "https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz.sha256"
 
 # Verify and extract (same as wget example)
 ```
@@ -334,7 +334,7 @@ set -e  # Exit on error
 
 FRAMEWORK="kanban"
 VERSION="2.0.0"
-REPO="ai-dev-kit/ai-dev-kit"
+REPO="earlution/ai-dev-kit"
 INSTALL_DIR="packages/frameworks"
 
 # Create installation directory
@@ -388,7 +388,7 @@ echo "🎉 ${FRAMEWORK} v${VERSION} installed successfully"
 
 For issues or questions:
 1. Check framework-specific documentation
-2. Review GitHub Issues: `https://github.com/ai-dev-kit/ai-dev-kit/issues`
+2. Review GitHub Issues: `https://github.com/earlution/ai-dev-kit/issues`
 3. Check troubleshooting section above
 
 ---

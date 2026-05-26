@@ -50,7 +50,9 @@ chmod +x scripts/fr099_bootstrap_public_ai_dev_kit.sh
 DRY_RUN=1 ./scripts/fr099_bootstrap_public_ai_dev_kit.sh
 ```
 
-## Post-bootstrap (Phase 4 — E1:S04:T07)
+## Post-bootstrap (Phase 4 — E1:S04:T07) ✅
+
+See [`fr099-phase4-rewire-and-verify.md`](fr099-phase4-rewire-and-verify.md).
 
 - Rewire `origin` for public contributors vs private maintainers (document dual-remote)
 - Update badges, `INSTALL_IN_YOUR_PROJECT.md`, hardcoded `earlution/ai-dev-kit` URLs
