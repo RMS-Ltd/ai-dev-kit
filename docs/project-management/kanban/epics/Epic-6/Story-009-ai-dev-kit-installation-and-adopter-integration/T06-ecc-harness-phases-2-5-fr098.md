@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-05-26  
-**Last updated:** 2026-05-26 (**v0.6.9.6+3** functional COMPLETE; **v0.6.9.6+0** IPP §7 doc sync)  
+**Last updated:** 2026-05-26 (**v0.6.9.6+3** functional COMPLETE; **v0.6.9.6+4** cheatsheet throwaway E2E playbook)  
 **Code:** E6S09T06
 
 ## Version Anchor
@@ -79,6 +79,8 @@ Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alig
 ## Implementation notes
 
 ### Dogfood checklist (T8 — branch `throwaway/ecc-dogfood-e6s09t06`, 2026-05-26)
+
+**Canonical E2E steps:** [ECC + ADK cheatsheet §3 Throwaway branch playbook](../../../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md#throwaway-branch-playbook-end-to-end) (**v0.6.9.6+4**).
 
 - [x] Phase 0 dry-run: `npx -p ecc-universal ecc-install --target cursor --profile core --without baseline:hooks --dry-run` — **342** planned ops; **note:** hook scripts + `hooks.json` still listed despite `baseline:hooks` excluded (review before `--execute`)
 - [x] `install_ecc_harness_optional.sh --copy-bridge` — bridge copied; validators PASS

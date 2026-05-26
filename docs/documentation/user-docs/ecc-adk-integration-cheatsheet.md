@@ -43,6 +43,64 @@ Quick reference for adopters who want **ECC** (harness execution) alongside **AI
 
 ## 3. Five-minute setup (brownfield ADK repo)
 
+### Throwaway branch playbook (end-to-end)
+
+Use this **once per project** before you run a real `ecc-install` on `dev`/`main`. The goal is to review ECC’s footprint without polluting your canonical branch.
+
+**Rules:**
+
+- Work only on a **disposable branch** (never dogfood on `dev`/`main` for ai-dev-kit maintainers).
+- Default pass is **dry-run + validators** — not a full `.cursor/` overlay merge.
+- On **ai-dev-kit** itself: record findings; **do not** merge hundreds of ECC files into the framework repo unless explicitly approved.
+
+**Copy-paste sequence** (from repo root; adjust branch name):
+
+```bash
+# 1) Branch (from your ADK baseline, e.g. dev)
+git checkout dev
+git pull
+BR="throwaway/ecc-dogfood-$(date +%Y%m%d)"
+git checkout -b "$BR"
+
+# 2) Phase 0 dry-run — review planned paths (expect ~300+ ops on core profile)
+npx -p ecc-universal ecc-install --target cursor --profile core --without baseline:hooks --dry-run
+
+# 3) Bridge (local file; gitignored in ai-dev-kit — see repo .gitignore)
+"packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
+python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py" --bridge ecc-adk-bridge.yaml
+python "packages/frameworks/workflow mgt/scripts/validation/validate_adk_ecc_skill_pack.py"
+
+# 4) Optional: only after dry-run review — real install ON THIS BRANCH ONLY
+# npx -p ecc-universal ecc-install --target cursor --profile core --without baseline:hooks
+# Or: install_ecc_harness_optional.sh --copy-bridge --execute   # runs npx ecc-install
+
+# 5) When done — discard branch (do not merge ECC tree into canonical ADK repo)
+git checkout dev
+git branch -D "$BR"
+```
+
+**Dry-run review checklist** (before any `--execute`):
+
+| Check | Pass criteria |
+| ----- | ------------- |
+| ADK skill pack | No overwrite of `packages/frameworks/workflow mgt/skills/adk-*` |
+| ADK governance skills | Existing project `.cursor/skills/` (e.g. `version-bump`, `ukw-sync`) not replaced unintentionally |
+| Hooks | Even with `--without baseline:hooks`, plan may still list `.cursor/hooks/*` and `hooks.json` — treat as **risk** until reviewed |
+| Git / RW policy | Flag `common-git-workflow.mdc` (or similar) — must not override ADK **RW-only** commit/push |
+| Install path | Single path only (no plugin + full installer stacking) |
+
+**Outcomes:**
+
+| Result | Next step |
+| ------ | --------- |
+| Dry-run + validators **PASS**, risks acceptable | Run step 4 on throwaway; tune `ecc-adk-bridge.yaml`; then adopt on a **project** repo (not necessarily ai-dev-kit) |
+| Hooks/git rules in plan | Keep hooks off; extend `disabled_hooks` in bridge; re-dry-run |
+| Too many collisions | Stay ADK-only; ECC optional path documented but not enabled |
+
+Maintainer evidence: [T06 dogfood notes](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (dry-run on `throwaway/ecc-dogfood-e6s09t06`, **342** ops, validators PASS, no `--execute` on canonical repo).
+
+---
+
 ### Step A — ADK already installed
 
 You should already have:
@@ -53,7 +111,7 @@ You should already have:
 
 ### Step B — Phase 0 sanity check (recommended)
 
-On a **throwaway branch**, dry-run ECC install — do not blind-merge 300+ files into `.cursor/`:
+Prefer the full sequence in **§3 Throwaway branch playbook** above. Minimal dry-run only:
 
 ```bash
 npx -p ecc-universal ecc-install --target cursor --profile core --without baseline:hooks --dry-run
@@ -229,6 +287,7 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | Full contract | [Integration specification](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) |
 | GO/NO-GO matrix | [Phase 0 evaluation](../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) |
 | FR scope / phases | [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md) |
+| Throwaway dogfood (E2E) | §3 **Throwaway branch playbook** (this doc) |
 | Greenfield install | [INSTALL_IN_YOUR_PROJECT.md](../../../INSTALL_IN_YOUR_PROJECT.md) |
 | RW detail | `packages/frameworks/workflow mgt/KB/.../release-workflow-agent-execution.md` |
 | Bridge template | `packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template` |

@@ -2,11 +2,11 @@
   "rows": {
     "kboard_metadata": {
       "allowed": true,
-      "reason": "RW -d v0.6.9.6+0 — board Last Updated / Version Context only (no MoSCOW row stamp changes)"
+      "reason": "RW -d v0.6.9.6+1 — board metadata only"
     },
     "fbuboard_metadata": {
       "allowed": true,
-      "reason": "RW -d v0.6.9.6+0 — board Last Updated / Version Context only"
+      "reason": "RW -d v0.6.9.6+1 — board metadata only"
     }
   }
 }

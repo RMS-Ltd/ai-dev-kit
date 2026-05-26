@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.6.9.6+0] - 26-05-26
+
+E6:S09:T06 (`RW -d`, `--art`, `--doc-policy-zero`) — **IPP §7 closure** (docs-only). SemVer **v0.4.809+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.6+0.md)
+---
 ## [0.6.9.6+3] - 26-05-26
 
 E6:S09:T06 (`RW`, `--art`) — **T06 COMPLETE**: dogfood T8 (dry-run + validators PASS); `--copy-bridge` install fix; cheatsheet hook caveat; gitignore local bridge. SemVer **v0.4.808+3**.

@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.6+0] - 26-05-26
+## [0.6.9.6+4] - 26-05-26
 
-E6:S09:T06 (`RW -d`, `--art`, `--doc-policy-zero`) — **IPP §7 closure** (docs-only): IPP status closed, verification checkboxes; T06 Input link. Functional delivery remains **v0.6.9.6+3**. SemVer **v0.4.809+0**.
+E6:S09:T06 (`RW -d`, `--art`) — **Cheatsheet throwaway E2E playbook**: §3 copy-paste dogfood on disposable branch; dry-run checklist; do-not-merge guidance. SemVer **v0.4.810+4**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.6+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.6+4.md)
 
 ---
