@@ -33,7 +33,7 @@ policy_salience:
 | 1 | **Kanban task document** (`docs/project-management/kanban/.../T*.md` or embedded task section) | **Authoritative** for task scope, acceptance criteria, deliverables, status, and **version anchor** when complete. |
 | 2 | **Linked FR / BR / UXR** | Authoritative for *intake intent*, acceptance at feature level, and explicit follow-up rows (e.g. FU-1..n). |
 | 3 | **Planning package under `docs/implementation-cycles/`** | Durable **specification**, **test design**, and **implementation plan** intent. Acceptable forms: (a) **ICW trio** — `ICW-E{epic}S{story}T{task}-{specification,test-design,implementation-plan}.md`; or (b) **IPP (consolidated IPW)** — single `IPP-E{epic}S{story}T{task}-*.md` whose numbered sections map to those three concerns (per `.claude/commands/ipw.md`). Must be **linked from the task**. See [dev-kit-ipw-ipp-vs-icw-artifacts.md](dev-kit-ipw-ipp-vs-icw-artifacts.md). |
-| 4 | **Architecture / ADR / policy docs** | Cross-cutting rules and decisions (not a substitute for task-level acceptance). |
+| 4 | **Architecture / ADR / policy docs** | Cross-cutting rules and decisions (not a substitute for task-level acceptance). IPW **Phase 5.0** uses [ipw-adr-necessity-checklist.md](ipw-adr-necessity-checklist.md) (FR-100) to decide ADR REQUIRED vs EXEMPT before documentation inventory. |
 | 5 | **Automated tests** | **Executable** spec: failing/passing behavior. Names and docstrings **should** reference task or FR where practical. |
 
 **Rule:** If a Cursor plan and a task doc disagree, **update the task doc** (and FR if needed), then adjust code/tests. The plan is **not** the owner of truth.

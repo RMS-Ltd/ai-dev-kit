@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 | Pattern | Files | When to use (ai-dev-kit) |
 |--------|--------|---------------------------|
-| **IPP (consolidated)** | One `IPP-E{epic}S{story}T{task}-{slug}.md` with Sections 1–Requirements, 2–Specification, 3–Test design, 4–Implementation plan, 5–Documentation deliverables, 6–Documentation housing, 7–Success/verification; optional **§8** rolling backlog for perpetual tasks | **Default** for IPW runs that follow `ipw.md` Phase 7 (`PLAN_DOC_TEMPLATE.md`). IPW Phases 5–6 run before the IPP is written. Example: [`IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md`](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md). |
+| **IPP (consolidated)** | One `IPP-E{epic}S{story}T{task}-{slug}.md` with Sections 1–Requirements, 2–Specification (incl. **§2.5 ADR necessity**), 3–Test design, 4–Implementation plan, 5–Documentation deliverables, 6–Documentation housing, 7–Success/verification; optional **§8** rolling backlog for perpetual tasks | **Default** for IPW runs that follow `ipw.md` Phase 7 (`PLAN_DOC_TEMPLATE.md`). IPW **Phase 5.0** (ADR gate per [ipw-adr-necessity-checklist.md](ipw-adr-necessity-checklist.md)), then Phases 5–6, run before the IPP is written. Example: [`IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md`](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md). |
 | **ICW trio (split)** | `ICW-E{epic}S{story}T{task}-specification.md`, `-test-design.md`, `-implementation-plan.md` | Retrospective publication, multi-audience splits, or historical packages already authored as three files. Example: `ICW-E7S06T18-*` (see changelog for E7:S06:T18). |
 
 Both patterns satisfy the **Global Implementation Gate** in root [`AGENTS.md`](../../../AGENTS.md) when the host **task document** links to them under **Input** / **References** (bidirectional wiring per FR-042).
@@ -37,7 +37,8 @@ Both patterns satisfy the **Global Implementation Gate** in root [`AGENTS.md`](.
 
 ## Template and validation
 
-- **IPP template:** `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
+- **IPP template:** `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` (§2.5 ADR decision — FR-100)
+- **ADR necessity checklist:** [ipw-adr-necessity-checklist.md](ipw-adr-necessity-checklist.md)
 - **Plan wiring:** `packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py` (where enabled)
 
 ---

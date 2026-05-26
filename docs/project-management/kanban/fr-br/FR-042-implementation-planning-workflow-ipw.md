@@ -82,6 +82,7 @@ It also **replaces the `ICW` trigger for planning**: users and docs should prefe
 | **2** | Define Spec | Populate Spec section: Goal, Functional Requirements, Non-Functional (if applicable), Out of Scope |
 | **3** | Design Tests | Populate Test Design: categories, test cases (TC/Name/Behavior), test data strategy |
 | **4** | Plan Implementation | Populate Impl Plan: phases, steps, dependency order, files to create/modify |
+| **4.5** (Phase **5.0**) | ADR Necessity Decision | Score T1–T7 / E1–E5 per [ipw-adr-necessity-checklist.md](../../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100); record outcome in IPP §2.5; if REQUIRED, ADR row in §5 before doc inventory completes |
 | **5** | Documentation Update and Creation | Inventory existing docs; classify UPDATE / CREATE / NONE; gap analysis; deliverables table from requirements, spec, tests, and impl plan |
 | **6** | House Documentation | Map each deliverable to canonical path in the documentation system; set publication status (`PUBLISHED` \| `NOT_APPLICABLE`); resolve housing conflicts |
 | **7** | Create Plan Doc | Write IPP using template (§1–§7); include header with Task ID, Host Task link |

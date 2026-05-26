@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-26 (RW **v0.2.16.4+11** — E2:S16:T04 UKW)
+**Last Updated:** 2026-05-26 (FR-100 **v0.2.16.12+2** merged to dev; UKW **v0.2.16.4+11**)
 **Version:** v0.2.16.4+11
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -28,6 +28,9 @@ housekeeping_policy: keep
   **Completed:** `2026-05-26T12:00:00Z` | **Version:** `Phase 0 complete` | **Agent:** `UKW`
 
 #### **Epic 2: Workflow Management Framework (Story 16 — Perpetual Ongoing Workflow Operations)**
+- **[E2:S16:T12](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md)** — **FR-100**: IPW Phase 5.0 ADR necessity gate; policy `ipw-adr-necessity-checklist.md`; IPP §2.5; Phase 9 validation; FR-042 step 4.5.
+  **Completed:** `2026-05-26T14:15:00Z` | **Version:** `v0.2.16.12+2` | **Agent:** `RW`
+
 - **[E2:S16:T11](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md)** — **FR-096**: IPW mandatory Phases 5–6 (documentation update/create + housing); IPP §5–§7; ten-phase `/ipw`; aligned FR-042, template, gates, and policy.
   **Completed:** `2026-05-20T08:43:35Z` | **Version:** `v0.2.16.11+1` | **Agent:** `RW`
 

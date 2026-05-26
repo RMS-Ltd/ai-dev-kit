@@ -23,7 +23,7 @@ Accepted triggers: `IPW`, `ipw`, `ICW`, `icw` (ICW is a deprecated alias — acc
 
 `docs/implementation-cycles/IPP-E{epic}S{story}T{task}-{slug}.md`
 
-Use `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` and `.claude/commands/ipw.md`. **Ten phases (0–9):** after implementation planning (Phase 4), run **Phase 5** (documentation update/create inventory) and **Phase 6** (house docs in canonical paths), then write the IPP (Phase 7). **Do not** require a per-task subfolder or three separate markdown files for this repository.
+Use `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` and `.claude/commands/ipw.md`. **Ten phases (0–9):** after implementation planning (Phase 4), run **Phase 5.0** (ADR necessity decision per [ipw-adr-necessity-checklist.md](../../../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)), then **Phase 5** (documentation update/create inventory) and **Phase 6** (house docs in canonical paths), then write the IPP (Phase 7). **Do not** require a per-task subfolder or three separate markdown files for this repository.
 
 **Adopters / optional legacy layout:** The numbered execution steps below describe a **folder per task** with `specification.md`, `test-design.md`, `implementation-plan.md`, and optional `ipw-package.md`. Downstream repos may keep that layout until they align with IPP.
 

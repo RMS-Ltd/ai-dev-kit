@@ -111,9 +111,23 @@ These steps are executor-prescribed — IPW does not execute them. The plan mand
 
 ---
 
+### Phase 5.0 — ADR Necessity Decision
+
+After Phase 4 and **before** Phase 5 documentation inventory, score the [IPW ADR necessity checklist](docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100).
+
+**EXECUTE:**
+- Score **T1–T7** (Y/N) with one-line evidence per trigger.
+- If **any Y** → outcome **REQUIRED**; plan §5 ADR `CREATE` or `UPDATE` (path under `docs/architecture/standards-and-adrs/`).
+- If **all N** → score **E1–E5**; all pass → outcome **EXEMPT** with §5.3 governing-doc citation; any fail → **REQUIRED** or resolve scope before proceeding.
+- Persist the matrix in Phase 7 IPP **§2.5 ADR necessity decision**.
+
+**Gate to proceed:** Outcome recorded (`REQUIRED`, `EXEMPT`, or `ALREADY_COVERED` with ADR link); if REQUIRED, ADR deliverable row is identified for Phase 5 §5 table.
+
+---
+
 ### Phase 5 — Documentation Update and Creation
 
-After implementation planning (Phase 4), inventory **all documentation** affected by this task. Do not limit the scan to code paths — include governance, workflow, user, and architecture docs.
+After Phase 5.0 and implementation planning (Phase 4), inventory **all documentation** affected by this task. Do not limit the scan to code paths — include governance, workflow, user, and architecture docs.
 
 **ANALYZE (mandatory sources):**
 - Host task doc, linked FR/BR/UXR, and acceptance criteria.
@@ -175,7 +189,7 @@ Canonical location: `docs/implementation-cycles/IPP-E{E}S{S}T{T}-{slug}.md`
 
 All required sections must be present:
 - Section 1: Requirements (Ascertained Baseline)
-- Section 2: Specification (including 2.4 Status Transition Intent)
+- Section 2: Specification (including 2.4 Status Transition Intent and 2.5 ADR Necessity Decision)
 - Section 3: Test Design (or `--skip-tests` justification)
 - Section 4: Implementation Plan (with mandatory Step 1 and final reconciliation step)
 - Section 5: Documentation Deliverables (from Phase 5)
@@ -210,6 +224,9 @@ Confirm all of the following before declaring IPW complete:
 - [ ] If `--skip-tests` used: justification text present in Phase 3 section of plan doc.
 - [ ] §5 lists every doc UPDATE/CREATE/NONE from Phase 5; gaps are closed or justified.
 - [ ] §6 assigns a canonical path and publication status to every non-NONE deliverable.
+- [ ] §2.5 present: T1–T7 scored; outcome (`REQUIRED` \| `EXEMPT` \| `ALREADY_COVERED`) recorded.
+- [ ] If any T1–T7 is Y: §5 includes ADR `CREATE` or `UPDATE` row.
+- [ ] If EXEMPT: all E1–E5 pass and §5.3 cites governing doc per checklist policy.
 
 **Gate (completion):** All validation checks pass.
 
@@ -244,3 +261,4 @@ Use `rw-config.yaml` values when present. Fallbacks:
 - FR-077 (status transition ownership): `docs/project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
 - BR-066 (Docusaurus / publication housing): `docs/project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md`
 - Specification and planning artifacts policy: `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md`
+- IPW ADR necessity checklist (FR-100): `docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md`

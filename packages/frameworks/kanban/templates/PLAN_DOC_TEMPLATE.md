@@ -60,6 +60,34 @@ Describe how the specification formalizes the requirements baseline above.
 - **Atomic propagation requirement:** Task doc status and kboard row status must update in the same change set/session.
 - **Owner:** Implementation execution step (not planning-only IPW creation).
 
+### 2.5 ADR necessity decision (mandatory — IPW Phase 5.0)
+
+Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-necessity-checklist.md`](../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100).
+
+| ID | Trigger | Y/N | Evidence |
+| -- | ------- | --- | -------- |
+| T1 | Alternatives | | |
+| T2 | Reversibility | | |
+| T3 | Blast radius | | |
+| T4 | Precedent | | |
+| T5 | Constraint trade-off | | |
+| T6 | Governance contract | | |
+| T7 | Supersedes | | |
+
+**Outcome:** `REQUIRED` | `EXEMPT` | `ALREADY_COVERED` (link existing ADR)
+
+If **REQUIRED:** §5 must include ADR `CREATE` or `UPDATE` before Phase 5 doc inventory completes.
+
+If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record §5.3 governing-doc citation.
+
+| ID | Exemption (only if all T = N) | Pass? | Evidence |
+| -- | --------------------------- | ----- | -------- |
+| E1 | Single locus | | |
+| E2 | No new options | | |
+| E3 | Reversible in one task | | |
+| E4 | Spec elsewhere | | |
+| E5 | Documented NONE | | |
+
 ---
 
 ## 3. Test design

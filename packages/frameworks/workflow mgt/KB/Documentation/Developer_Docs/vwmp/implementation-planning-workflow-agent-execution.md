@@ -40,11 +40,12 @@ Create a TODO list for all phases before starting. Mark each phase complete befo
 | **2** | Define specification | Goal, F-requirements, NF-requirements, out-of-scope, constraints complete; user confirms scope before Phase 3. |
 | **3** | Design tests | Test cases mapped to spec coverage — OR `--skip-tests` justification explicitly documented. |
 | **4** | Plan implementation | Ordered steps, files, dependencies defined. **Step 1 must be `TODO → IN PROGRESS` transition; final step must be status reconciliation** (see IPP state transition mandate below). |
+| **5.0** | ADR necessity decision | Score T1–T7 / E1–E5 per [ipw-adr-necessity-checklist.md](../../../../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md); record outcome in IPP §2.5; if REQUIRED, ADR row planned for §5. |
 | **5** | Documentation update and creation | Inventory existing docs; classify UPDATE / CREATE / NONE; gap analysis; deliverables table complete; user confirms doc-class coverage. |
 | **6** | House documentation | Every non-NONE deliverable has canonical target path, publication status (`PUBLISHED` \| `NOT_APPLICABLE`), and link intent; no TBD paths. |
 | **7** | Create plan doc | Written from `PLAN_DOC_TEMPLATE.md`; Host Task header set; §1–§7 present (includes §5–§6 from Phases 5–6). |
 | **8** | Wire to host task | Atomic with Phase 7 — task doc `Input` + `References` updated; publication fields when applicable (BR-066). |
-| **9** | Validate | Bidirectional links confirmed; required sections present; state transition steps in §4; §5–§6 complete. |
+| **9** | Validate | Bidirectional links confirmed; required sections present; state transition steps in §4; §2.5 ADR decision consistent with §5; §5–§6 complete. |
 
 ## Status transition ownership (FR-077)
 
@@ -86,9 +87,13 @@ See `PLAN_DOC_TEMPLATE.md` Section 4 for the canonical placeholder rows. See [AD
 - Board status is a propagated view and must not be advanced independently of task-doc status.
 - Propagation must be atomic at change-set/session level (no split-brain task-doc vs board status).
 
+## ADR necessity decision (Phase 5.0 — FR-100)
+
+**Phase 5.0** runs **after** Phase 4 and **before** Phase 5. It applies the [IPW ADR necessity checklist](../../../../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md): positive triggers T1–T7 (any Y → ADR required in §5), narrow exemptions E1–E5 (all pass + all T = N → EXEMPT). Outcome is recorded in IPP **§2.5** and enforced in Phase 9 validation.
+
 ## Documentation phases (5–6)
 
-**Phase 5** runs **after** implementation planning and **before** the IPP is written. It produces the §5 **Documentation deliverables** table: which existing docs to update, which new docs to create, explicit gaps, and NONE rows with justification.
+**Phase 5** runs **after** Phase 5.0 and implementation planning, **before** the IPP is written. It produces the §5 **Documentation deliverables** table: which existing docs to update, which new docs to create, explicit gaps, and NONE rows with justification.
 
 **Phase 6** maps each deliverable to the **documentation system** (canonical path + publication intent). It produces §6 **Documentation housing**. Use this ladder:
 

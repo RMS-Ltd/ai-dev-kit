@@ -647,6 +647,14 @@ rc_0:
       story: 9
       task: 5
       build: 1
+    - internal_version: 0.2.16.12+2
+      semver: 0.4.799+2
+      patch: 799
+      rc: 0
+      epic: 2
+      story: 16
+      task: 12
+      build: 2
     - internal_version: 0.2.16.12+1
       semver: 0.4.798+1
       patch: 798

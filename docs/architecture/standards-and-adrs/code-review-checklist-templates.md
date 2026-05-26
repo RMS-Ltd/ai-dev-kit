@@ -133,7 +133,7 @@ This document provides **reusable code review checklist templates** for differen
 - [ ] Design is appropriate for requirements
 - [ ] Design is extensible and maintainable
 - [ ] Design follows architectural principles
-- [ ] Design is documented (ADR if needed)
+- [ ] Design is documented per [ipw-adr-necessity-checklist.md](ipw-adr-necessity-checklist.md) (IPW §2.5: REQUIRED → ADR; EXEMPT → cite governing doc in IPP §5.3)
 
 ### Implementation
 
