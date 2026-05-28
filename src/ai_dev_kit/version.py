@@ -7,10 +7,10 @@ See: docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 1      # Epic 1
-VERSION_STORY = 4     # Story 4
-VERSION_TASK = 7      # Task 7
-VERSION_BUILD = 2     # Build 2: FR-099 Phase 4 rewire + verify (RW --art)
+VERSION_EPIC = 6      # Epic 6
+VERSION_STORY = 9     # Story 9
+VERSION_TASK = 3      # Task 3
+VERSION_BUILD = 2     # Build 2: FR-082 canonical RMS-Ltd/ai-dev-kit bootstrap + rewire
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.1.4.7+2
+# Current: 0.6.9.3+2

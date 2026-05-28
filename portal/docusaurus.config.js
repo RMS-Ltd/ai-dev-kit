@@ -23,10 +23,10 @@ const config = {
   },
 
   // GitHub Pages project site (FR-070 may change host/path for production deploy).
-  url: 'https://earlution.github.io',
+  url: 'https://rms-ltd.github.io',
   baseUrl: '/ai-dev-kit/',
 
-  organizationName: 'earlution',
+  organizationName: 'RMS-Ltd',
   projectName: 'ai-dev-kit',
 
   // E5:S09:T08 / FR-067 FU-1: strict link checking (corpus must be clean).
@@ -49,7 +49,7 @@ const config = {
           // Canonical KB: repository docs/ (FR-066).
           path: '../docs',
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/earlution/ai-dev-kit/tree/main/docs/',
+          editUrl: 'https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/',
           exclude: [
             'changelog-and-release-notes/changelog-archive/**',
             'knowledge/changelog-and-release-notes/changelog-archive/**',
@@ -62,7 +62,7 @@ const config = {
             xslt: true,
           },
           editUrl:
-            'https://github.com/earlution/ai-dev-kit/tree/main/portal/blog/',
+            'https://github.com/RMS-Ltd/ai-dev-kit/tree/main/portal/blog/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -107,7 +107,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/earlution/ai-dev-kit',
+            href: 'https://github.com/RMS-Ltd/ai-dev-kit',
             label: 'GitHub',
             position: 'right',
           },
@@ -130,11 +130,11 @@ const config = {
             items: [
               {
                 label: 'Repository',
-                href: 'https://github.com/earlution/ai-dev-kit',
+                href: 'https://github.com/RMS-Ltd/ai-dev-kit',
               },
               {
                 label: 'Issues',
-                href: 'https://github.com/earlution/ai-dev-kit/issues',
+                href: 'https://github.com/RMS-Ltd/ai-dev-kit/issues',
               },
             ],
           },

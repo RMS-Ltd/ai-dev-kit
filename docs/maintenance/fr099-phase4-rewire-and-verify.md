@@ -17,13 +17,13 @@ housekeeping_policy: keep
 | Surface | Action | Status |
 |---------|--------|--------|
 | `rw-config.yaml` | Public/private repo URLs | ✅ |
-| `install_package_from_release.py` | Default `--repo earlution/ai-dev-kit` | ✅ |
-| `PACKAGE_INSTALLATION_GUIDE.md` | Release URLs → `earlution/ai-dev-kit` | ✅ |
+| `install_package_from_release.py` | Default `--repo RMS-Ltd/ai-dev-kit` | ✅ |
+| `PACKAGE_INSTALLATION_GUIDE.md` | Release URLs → `RMS-Ltd/ai-dev-kit` | ✅ |
 | `INSTALL_IN_YOUR_PROJECT.md` | Canonical repository table | ✅ |
 | `repo-structure-for-adopters.md` | Adopter INSTALL links | ✅ |
 | `README.md` | Adopter vs maintainer callout | ✅ |
-| `portal/docusaurus.config.js` | Already `earlution` / Pages base | ✅ (no change) |
-| GitHub Pages | `https://earlution.github.io/ai-dev-kit/` | Deploy from **public** `main` after sync |
+| `portal/docusaurus.config.js` | `RMS-Ltd` / `rms-ltd.github.io` base | ✅ |
+| GitHub Pages | `https://rms-ltd.github.io/ai-dev-kit/` | Deploy from **public** `main` after sync |
 
 ## Verify (AC6)
 

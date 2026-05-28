@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for suggesting a new feature! This will be automatically converted to a Feature Request (FR) document and processed through our Kanban intake workflow.
         
-        📖 **Need help?** See our [GitHub Submission Guide](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md) for detailed instructions.
+        📖 **Need help?** See our [GitHub Submission Guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md) for detailed instructions.
 
   - type: textarea
     id: summary

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-26 (FR-099 → Must Have; RW **v0.2.16.4+13**)
-**Version Context:** v0.1.4.7+2 (**SemVer** v0.4.813+2)
+**Last Updated:** 2026-05-28 (FR-082 → completed; RW **v0.6.9.3+2**)
+**Version Context:** v0.6.9.3+2 (**SemVer** v0.4.813+2)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -69,7 +69,6 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Could Have (C) - Nice-to-Have Items
 
-- **FR-082** – Installation distribution canonical repository alignment - 🔄 IN PROGRESS (MEDIUM, scripts/docs default to canonical `earlution/ai-dev-kit`; **E6:S09:T03**) | [FR-082](fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) | [E6:S09:T03](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) | —No IPP— | Last modified: 2026-05-18 14:30 UTC
 - **FR-031** – Multi-Agent Coordination Feasibility Investigation - 📋 TODO (C priority, Investigate multi-agent coordination possibilities) | [FR-031](fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md) | [E5:S01:T31](epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md) | —No IPP— | Last modified: 2026-01-14 00:00 UTC
 - **FR-032** – Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) - [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | Last modified: 2026-04-20 14:00 UTC
 - **FR-030** – AI Dev Kit CLI Tool - 📋 TODO (MEDIUM, Command-line interface tool) - [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md) | [E6:S08](epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md) | Last modified: 2026-01-16 00:00 UTC

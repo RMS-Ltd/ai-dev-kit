@@ -8,7 +8,7 @@ You can submit Bug Reports, Feature Requests, or User Experience Research (UXR) 
 
 ### Quick Start
 
-1. **Go to [GitHub Issues](https://github.com/earlution/ai-dev-kit/issues)**
+1. **Go to [GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)**
 2. **Click "New Issue"**
 3. **Choose a template:**
    - 🐛 **Bug Report** - Report a bug or issue
@@ -38,7 +38,7 @@ For more detailed information on submitting reports, see:
 
 | Clone target | URL |
 |--------------|-----|
-| **Public ADK** (adopters, issues, Pages source) | `https://github.com/earlution/ai-dev-kit.git` |
+| **Public ADK** (adopters, issues, Pages source) | `https://github.com/RMS-Ltd/ai-dev-kit.git` |
 | **Private maintainer** (book + full history) | `https://github.com/RMS-Ltd/hf-ai-dev-kit.git` |
 
 See [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) and [FR-099 Phase 4 runbook](docs/maintenance/fr099-phase4-rewire-and-verify.md).
@@ -58,7 +58,7 @@ If you'd like to contribute code:
 ## Questions?
 
 - **Documentation:** See [docs/documentation](docs/documentation) for comprehensive guides
-- **Issues:** Check existing [GitHub Issues](https://github.com/earlution/ai-dev-kit/issues) or create a new one
+- **Issues:** Check existing [GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues) or create a new one
 - **Discussions:** Use GitHub Discussions for questions and community discussions
 
 ## Code of Conduct

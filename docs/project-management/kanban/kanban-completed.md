@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-26 (E1:S04:T06 Phase 3 complete; T03–T06 archived)
-**Version:** v0.1.4.7+1
+**Last Updated:** 2026-05-28 (E6:S09:T03 — FR-082 canonical public repo)
+**Version:** v0.6.9.3+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 6: Installation and adopter integration (Story 9)**
+- **[E6:S09:T03](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md)** — **FR-082**: bootstrap public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) + rewire canonical install/docs URLs.
+  **Completed:** `2026-05-28T17:25:00Z` | **Version:** `v0.6.9.3+2` | **Agent:** `RW`
 
 #### **Epic 1: AI Dev Kit Core (Story 4 — Repository branding; FR-099 phases 0–4)**
 - **[E1:S04:T07](epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)** — **FR-099 Phase 4**: rewire install URLs + public smoke; FR-099 IMPLEMENTED.

@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# FR-099 Phase 4: push maintainer dev tip to public earlution/ai-dev-kit (after rewire on private line).
+# FR-099 Phase 4: push maintainer dev tip to public RMS-Ltd/ai-dev-kit (after rewire on private line).
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-PUBLIC_ORG="${PUBLIC_ORG:-earlution}"
+PUBLIC_ORG="${PUBLIC_ORG:-RMS-Ltd}"
 PUBLIC_REPO="${PUBLIC_REPO:-ai-dev-kit}"
 SOURCE_BRANCH="${SOURCE_BRANCH:-dev}"
 PUBLIC_URL="https://github.com/${PUBLIC_ORG}/${PUBLIC_REPO}.git"

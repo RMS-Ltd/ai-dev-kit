@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.1.4.7+2] - 26-05-26
+## [0.6.9.3+2] - 28-05-26
 
-E1:S04:T07 (`RW`, `--art`) — FR-099 Phase 4: rewire + verify; FR-099 IMPLEMENTED. SemVer **v0.4.813+2**.
+E6:S09:T03 — FR-082: bootstrap public **RMS-Ltd/ai-dev-kit** and rewire canonical install/docs URLs. SemVer **v0.4.813+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.4.7+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.3+2.md)
 
 ---

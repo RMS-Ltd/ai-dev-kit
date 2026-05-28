@@ -39,7 +39,7 @@ For policy and boundaries:
 
 For the current canonical greenfield sequence (default RW-first with explicit override checkpoint), see:
 
-- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 
 Post-install **validator commands**, a **synthetic reference transcript**, and **FR-078 / FR-079** telemetry boundaries are documented there under **Wave 4** sections.
 
@@ -126,7 +126,7 @@ Instead of creating a repository from scratch, you can use `ai-dev-kit` as a tem
 
 **1. Create Repository from Template:**
 
-- Go to [https://github.com/earlution/ai-dev-kit](https://github.com/earlution/ai-dev-kit)
+- Go to [https://github.com/RMS-Ltd/ai-dev-kit](https://github.com/RMS-Ltd/ai-dev-kit)
 - Click the **"Use this template"** button (if template is enabled)
 - Select **"Create a new repository"**
 - Choose your repository name and settings
@@ -158,7 +158,7 @@ After creating from template, you'll have:
 
 ```bash
 # Clone ai-dev-kit
-git clone https://github.com/earlution/ai-dev-kit.git your-project
+git clone https://github.com/RMS-Ltd/ai-dev-kit.git your-project
 cd your-project
 
 # Remove the original remote and set up your own
@@ -238,10 +238,10 @@ git status
 
 ```bash
 # Add the entire ai-dev-kit repository as a submodule
-git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 
 # Or add to a specific directory
-git submodule add https://github.com/earlution/ai-dev-kit.git frameworks/ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git frameworks/ai-dev-kit
 ```
 
 **3. Checkout a specific framework version (recommended):**
@@ -637,7 +637,7 @@ If you prefer to set it up manually:
 5. **Verify the trigger works:**
    - Restart Cursor to reload `.cursorrules`
    - In chat, use the trigger **plus** a task id, e.g. `RW E5S01T01` or `RW E5:S01:T01` (substitute a completed task from your Kanban). Short paths: `RW -k E5S01T01`, `RW -d E5S01T01`
-   - Full procedure and guardrails: [Release Workflow (agent execution)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5: task token, releasable task, intent guard)
+   - Full procedure and guardrails: [Release Workflow (agent execution)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5: task token, releasable task, intent guard)
    - If **`rw-config.yaml`** sets **`use_kanban: true`**, validators (e.g. `validate_rw_task_complete.py`) expect a real task document matching the id you pass
 
 **What the RW Trigger Does:**
@@ -820,7 +820,7 @@ If you prefer to set it up manually:
 5. **Verify the trigger works:**
    - Restart Cursor to reload `.cursorrules`
    - In chat, use the trigger **plus** a task id, e.g. `RW E5S01T01` or `RW E5:S01:T01` (substitute a completed task from your Kanban). Short paths: `RW -k E5S01T01`, `RW -d E5S01T01`
-   - Full procedure and guardrails: [Release Workflow (agent execution)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5: task token, releasable task, intent guard)
+   - Full procedure and guardrails: [Release Workflow (agent execution)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5: task token, releasable task, intent guard)
    - If **`rw-config.yaml`** sets **`use_kanban: true`**, validators (e.g. `validate_rw_task_complete.py`) expect a real task document matching the id you pass
 
 **What the RW Trigger Does:**

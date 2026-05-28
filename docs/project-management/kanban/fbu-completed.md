@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-26 (**FR-098** IMPLEMENTED v0.6.9.6+3)
-**Version:** v0.6.9.6+3
+**Last Updated:** 2026-05-28 (**FR-082** IMPLEMENTED v0.6.9.3+2)
+**Version:** v0.6.9.3+2
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-082 | FR | Installation canonical repo — public `RMS-Ltd/ai-dev-kit` bootstrap + rewire (E6:S09:T03) | 2026-05-28 | v0.6.9.3+2 | RW |
 | FR-099 | FR | Book/Epic-24 spin-off — private `hf-ai-dev-kit` + public `earlution/ai-dev-kit` (ADR-006; T03–T07) | 2026-05-26 | v0.1.4.7+2 | RW |
 | FR-098 | FR | Optional ECC harness layer integration (phases 0–5; T04–T06) | 2026-05-26 | v0.6.9.6+3 | RW |
 | FR-100 | FR | IPW ADR necessity checklist — Phase 5.0 gate; T1–T7 / E1–E5; policy SoT; IPP §2.5 (**E2:S16:T12**) | 2026-05-26 | v0.2.16.12+2 | RW |

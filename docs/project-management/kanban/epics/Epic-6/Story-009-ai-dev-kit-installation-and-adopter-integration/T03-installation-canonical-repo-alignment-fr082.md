@@ -9,11 +9,12 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 3: Installation canonical repository alignment (FR-082)
 
 **Task ID:** E6:S09:T03  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Small  
 **Created:** 2026-04-19  
-**Last updated:** 2026-04-19 (RW **v0.6.9.3+1** — **E6:S09:T03** `--art`)  
+**Last updated:** 2026-05-28 (RW **v0.6.9.3+2** — **E6:S09:T03**)
+**Version:** v0.6.9.3+2  
 **Code:** E6S09T03
 
 **Upstream:** [FR-082 - Installation distribution canonical repository alignment](../../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)
@@ -28,7 +29,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- **FR-082** requirements (canonical `earlution/ai-dev-kit` defaults and guide URLs).
+- **FR-082** requirements (canonical `RMS-Ltd/ai-dev-kit` defaults and guide URLs).
 - Current `install_package_from_release.py`, **PACKAGE_INSTALLATION_GUIDE**, **INSTALL_IN_YOUR_PROJECT.md**.
 - Coordination with **FR-080** examples once **T01** defines greenfield command lines.
 
@@ -36,7 +37,7 @@ housekeeping_policy: keep
 
 ## Problem statement
 
-Installation tooling and guides must use **canonical** GitHub coordinates for this monorepo (`earlution/ai-dev-kit`). Placeholder or incorrect defaults risk **silent** wrong-target downloads.
+Installation tooling and guides must use **canonical** GitHub coordinates for this monorepo (`RMS-Ltd/ai-dev-kit`). Placeholder or incorrect defaults risk **silent** wrong-target downloads.
 
 ---
 
@@ -58,11 +59,23 @@ Installation tooling and guides must use **canonical** GitHub coordinates for th
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Documented install commands resolve to the intended public repository or fail fast with a clear error.
-- [ ] **AC2:** No known-bad placeholder org/repo strings remain in primary install paths.
-- [ ] **AC3:** FR-082 acceptance criteria satisfied; notes captured for backward compatibility if behavior changes.
+- [x] **AC1:** Documented install commands resolve to the intended public repository or fail fast with a clear error.
+- [x] **AC2:** No known-bad placeholder org/repo strings remain in primary install paths.
+- [x] **AC3:** FR-082 acceptance criteria satisfied; notes captured for backward compatibility if behavior changes.
+
+## Delivery notes (2026-05-28)
+
+- Bootstrapped public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) via `fr099_bootstrap_public_ai_dev_kit.sh` (genesis `f21bac102`, orphan + cherry-pick replay).
+- Rewired `rw-config.yaml`, README, INSTALL, install script defaults, Docusaurus config, issue templates, ADR-006 canonical table.
+- Smoke test: `./scripts/fr099_install_smoke_test.sh` PASS on public `main`.
+- **Fork override:** `--repo` / `GITHUB_REPOSITORY` still supported for enterprise mirrors.
+- **Legacy:** `earlution/ai-dev-kit` retains interim bootstrap content; adopters must use `RMS-Ltd/ai-dev-kit`.
 
 ---
+
+## Version Anchor
+
+**Forensic markers:** `✅ COMPLETE (v0.6.9.3+2)` — FR-082 public bootstrap + canonical rewire (`RW`, `--art`).
 
 ## References
 

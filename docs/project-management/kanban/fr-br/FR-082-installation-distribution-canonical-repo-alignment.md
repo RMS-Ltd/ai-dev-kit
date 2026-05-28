@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer (design session)  
 **Priority:** MEDIUM  
 **Severity:** LOW  
-**Status:** OPEN
+**Status:** IMPLEMENTED (2026-05-28 — E6:S09:T03; public bootstrap `RMS-Ltd/ai-dev-kit`)
 
 **Implementing Task:** [E6:S09:T03](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md)
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Align **installation scripts, defaults, and documentation examples** with the **canonical GitHub repository** for AI Dev Kit (`earlution/ai-dev-kit`) so adopters do not download from incorrect or placeholder `owner/repo` values.
+Align **installation scripts, defaults, and documentation examples** with the **canonical GitHub repository** for AI Dev Kit (`RMS-Ltd/ai-dev-kit`) so adopters do not download from incorrect or placeholder `owner/repo` values.
 
 ---
 
@@ -38,7 +38,7 @@ Align **installation scripts, defaults, and documentation examples** with the **
 
 - [ ] **FR-082-F1:** Set **default `--repo`** (and any equivalent config) on `install_package_from_release.py` to the **canonical** public repository, or require an **explicit** `--repo` with no unsafe default (decision recorded in task).
 - [ ] **FR-082-F2:** Audit and fix **PACKAGE_INSTALLATION_GUIDE** and related user-facing URLs so release examples resolve to **real** release locations for this monorepo.
-- [ ] **FR-082-F3:** Align **cross-references** in `INSTALL_IN_YOUR_PROJECT.md` / quick starts so `python install_package_from_release.py` examples use working defaults or copy-paste-safe explicit `--repo earlution/ai-dev-kit`.
+- [ ] **FR-082-F3:** Align **cross-references** in `INSTALL_IN_YOUR_PROJECT.md` / quick starts so `python install_package_from_release.py` examples use working defaults or copy-paste-safe explicit `--repo RMS-Ltd/ai-dev-kit`.
 
 ### Non-Functional Requirements
 
@@ -75,4 +75,4 @@ Align **installation scripts, defaults, and documentation examples** with the **
 ## Related
 
 - [FR-080](./FR-080-greenfield-installation-process.md) — Greenfield process (consumer of correct defaults)  
-- [PACKAGE_INSTALLATION_GUIDE.md](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/PACKAGE_INSTALLATION_GUIDE.md)  
+- [PACKAGE_INSTALLATION_GUIDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/PACKAGE_INSTALLATION_GUIDE.md)  

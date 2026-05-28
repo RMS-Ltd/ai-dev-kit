@@ -40,7 +40,7 @@ Adopt **Option C — private archive + fresh public genesis** (not in-place dele
 | Repository | Visibility | Name | Purpose |
 |------------|------------|------|---------|
 | **Book + full history** | **Private** ✅ | [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) | Manuscript, Epic 24, Head First / O'Reilly context, complete git archaeology |
-| **Frameworks** | **Public** ✅ | [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) | Neutral ADK reference; frameworks, RW/UKW/IPW, adopter install paths |
+| **Frameworks** | **Public** ✅ | [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) | Neutral ADK reference; frameworks, RW/UKW/IPW, adopter install paths |
 
 Public `ai-dev-kit` **does not** rename to Head First. **E1:S04:T02 is superseded** by this ADR and FR-099.
 
@@ -64,7 +64,7 @@ Before 2026-05-26: RMS-Ltd/ai-dev-kit (public, book + frameworks)
     ↓
 4. Complete book extraction commit on private hf-ai-dev-kit
     ↓
-5. Create NEW public RMS-Ltd/ai-dev-kit (or earlution/ai-dev-kit per org policy) from genesis commit
+5. Create NEW public RMS-Ltd/ai-dev-kit from genesis commit
    (orphan root OR branch starting at genesis SHA — no pre-genesis objects on public remote)
     ↓
 6. Rewire remotes, badges, INSTALL_IN_YOUR_PROJECT, CI, submodule URLs
@@ -130,7 +130,7 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 | **0** | ✅ **Complete** | 2026-05-26 | **E1:S04:T03** |
 | **1** | ✅ **Complete** | 2026-05-26 | **E1:S04:T04** — [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) |
 | **2** | ✅ **Complete** | 2026-05-26 | **E1:S04:T05** — `v0.1.4.3+1` |
-| **3** | ✅ **Complete** | 2026-05-26 | **E1:S04:T06** — [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) (orphan + replay from `f21bac102`) |
+| **3** | ✅ **Complete** | 2026-05-26 | **E1:S04:T06** — public bootstrap (orphan + replay from `f21bac102`); canonical home **[`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit)** bootstrapped 2026-05-28 (interim `earlution/ai-dev-kit` superseded) |
 | **4** | ✅ **Complete** | 2026-05-26 | **E1:S04:T07** — rewire + verify ([runbook](../../maintenance/fr099-phase4-rewire-and-verify.md)) |
 
 **Local clone hygiene:** Update `origin` if still pointing at pre-rename URL:

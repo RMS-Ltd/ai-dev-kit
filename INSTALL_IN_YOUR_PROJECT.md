@@ -10,10 +10,10 @@ This document provides a clear entry point for installing AI Dev Kit frameworks 
 
 | Audience | Repository | Clone URL |
 |----------|------------|-----------|
-| **Adopters** (frameworks only) | [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) | `https://github.com/earlution/ai-dev-kit.git` |
+| **Adopters** (frameworks only) | [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) | `https://github.com/RMS-Ltd/ai-dev-kit.git` |
 | **Maintainers** (book + full history) | [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) (private) | `https://github.com/RMS-Ltd/hf-ai-dev-kit.git` |
 
-Published docs: [https://earlution.github.io/ai-dev-kit/](https://earlution.github.io/ai-dev-kit/).  
+Published docs: [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/).  
 Rewire policy: [`docs/maintenance/fr099-phase4-rewire-and-verify.md`](docs/maintenance/fr099-phase4-rewire-and-verify.md).
 
 ---
@@ -226,7 +226,7 @@ Install framework packages directly from GitHub Releases:
 ```bash
 # Using installation script
 python3 install_package_from_release.py kanban 2.1.0 \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --install-dir packages/frameworks
 
 # Or download manually
@@ -242,7 +242,7 @@ Add ai-dev-kit as a Git submodule, copy frameworks, then run installers:
 
 ```bash
 # Step 1: Add ai-dev-kit as submodule
-git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 
 # Step 2: Checkout specific version
 cd .ai-dev-kit
@@ -385,6 +385,6 @@ python3 scripts/install_kanban_framework.py --help
 ---
 
 **Last Updated:** 2026-03-30  
-**Repository:** https://github.com/earlution/ai-dev-kit  
+**Repository:** https://github.com/RMS-Ltd/ai-dev-kit  
 **Documentation:** `docs/documentation/user-docs/`
 

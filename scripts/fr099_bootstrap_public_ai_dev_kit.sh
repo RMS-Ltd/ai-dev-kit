@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# FR-099 Phase 3 (E1:S04:T06): bootstrap public earlution/ai-dev-kit from book-free genesis.
+# FR-099 Phase 3 (E1:S04:T06): bootstrap public RMS-Ltd/ai-dev-kit from book-free genesis.
 # ADR-006: orphan root at genesis SHA + cherry-pick replay (no pre-genesis objects on public remote).
 set -euo pipefail
 
 GENESIS_SHA="${GENESIS_SHA:-f21bac102}"
 SOURCE_BRANCH="${SOURCE_BRANCH:-dev}"
-PUBLIC_ORG="${PUBLIC_ORG:-earlution}"
+PUBLIC_ORG="${PUBLIC_ORG:-RMS-Ltd}"
 PUBLIC_REPO="${PUBLIC_REPO:-ai-dev-kit}"
 PUBLIC_REMOTE_NAME="${PUBLIC_REMOTE_NAME:-public}"
 PUBLIC_DEFAULT_BRANCH="${PUBLIC_DEFAULT_BRANCH:-main}"

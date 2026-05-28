@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# FR-099 Phase 4 (E1:S04:T07): verify public earlution/ai-dev-kit has no book/Epic-24 contamination.
+# FR-099 Phase 4 (E1:S04:T07): verify public RMS-Ltd/ai-dev-kit has no book/Epic-24 contamination.
 set -euo pipefail
 
-PUBLIC_REPO="${PUBLIC_REPO:-earlution/ai-dev-kit}"
+PUBLIC_REPO="${PUBLIC_REPO:-RMS-Ltd/ai-dev-kit}"
 PUBLIC_URL="${PUBLIC_URL:-https://github.com/${PUBLIC_REPO}.git}"
 BRANCH="${BRANCH:-main}"
 WORK="$(mktemp -d)"

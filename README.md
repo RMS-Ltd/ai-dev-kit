@@ -9,11 +9,11 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.813+2` | **Internal:** `v0.1.4.7+2` (see detailed changelog) | **Last Updated:** 2026-05-26
+**Version (SemVer):** `v0.4.813+2` | **Internal:** `v0.6.9.3+2` (see detailed changelog) | **Last Updated:** 2026-05-28
 
-[Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://earlution.github.io/ai-dev-kit/](https://earlution.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/earlution/ai-dev-kit/issues) • [Request Feature](https://github.com/earlution/ai-dev-kit/issues)
+[Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
-**Repositories:** Adopters clone [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) (public). Maintainers use private [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) for book work — see [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
+**Repositories:** Adopters clone [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) (public). Maintainers use private [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) for book work — see [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 </div>
 
@@ -34,7 +34,7 @@
 **Quick Install (Git Submodule - Recommended for Existing Projects):**
 ```bash
 # 1. Add ai-dev-kit as submodule
-git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 
 # 2. Copy frameworks
 cp -r .ai-dev-kit/packages/frameworks/workflow\ mgt/* ./
@@ -231,7 +231,7 @@ Follow **[INSTALL_IN_YOUR_PROJECT.md](INSTALL_IN_YOUR_PROJECT.md)** and the [Qui
 
 ## Roadmap
 
-Work is tracked in **[Kanban](docs/project-management/kanban/kanban-board.md)** and **[GitHub Issues](https://github.com/earlution/ai-dev-kit/issues)**.
+Work is tracked in **[Kanban](docs/project-management/kanban/kanban-board.md)** and **[GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)**.
 
 ---
 
@@ -249,7 +249,7 @@ This project is distributed under the **MIT License** (see badge above). SPDX: `
 
 ## Contact
 
-- **Issues:** [github.com/earlution/ai-dev-kit/issues](https://github.com/earlution/ai-dev-kit/issues)
+- **Issues:** [github.com/RMS-Ltd/ai-dev-kit/issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
 ---
 

@@ -32,7 +32,7 @@ The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **
 1. **Prefer canonical GitHub links** (this repo, default branch **`main`**):
 
    ```markdown
-   [Install in your project](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+   [Install in your project](https://github.com/rms-ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
    ```
 
    For framework paths, include the full path from the repository root after `/blob/main/` (e.g. `packages/frameworks/kanban/...`). If a directory name contains **spaces**, **percent-encode** them in the URL (e.g. `workflow%20mgt`).
@@ -69,8 +69,8 @@ Canonical structure reference: [Ultimate Canonical KB Structure](../docs/archite
 
 **Provider:** **GitHub Pages** (project site).
 
-- **Canonical URL:** https://earlution.github.io/ai-dev-kit/
-- **`docusaurus.config.js`:** `url` = `https://earlution.github.io`, `baseUrl` = `/ai-dev-kit/` (must stay aligned with this path).
+- **Canonical URL:** https://rms-ltd.github.io/ai-dev-kit/
+- **`docusaurus.config.js`:** `url` = `https://rms-ltd.github.io`, `baseUrl` = `/ai-dev-kit/` (must stay aligned with this path).
 - **Published artifact:** static files from `npm run build` are pushed to the **`gh-pages`** branch by [`.github/workflows/docusaurus-deploy.yml`](../.github/workflows/docusaurus-deploy.yml) (`peaceiris/actions-gh-pages`, `publish_dir: ./portal/build`).
 - **Triggers:** push to `main` when `portal/`, `docs/`, or the deploy workflow changes; **`workflow_dispatch`** for a manual redeploy.
 - **Repo visibility:** Repository is **public** — matches **GitHub Free** expectations for this **project** Pages URL (no paid-tier workaround for “private repo + Pages”).
@@ -84,12 +84,12 @@ Canonical structure reference: [Ultimate Canonical KB Structure](../docs/archite
 
 ### Go-live and troubleshooting (E5:S09:T09)
 
-If **`gh-pages`** is updating but **https://earlution.github.io/ai-dev-kit/** still returns **404**, the repo likely has **no Pages site** published yet:
+If **`gh-pages`** is updating but **https://rms-ltd.github.io/ai-dev-kit/** still returns **404**, the repo likely has **no Pages site** published yet:
 
 1. **UI:** GitHub → **Settings → Pages** → **Build and deployment** → **Deploy from a branch** → branch **`gh-pages`**, folder **`/ (root)`** → Save. Wait a few minutes and hard-refresh.
 2. **API (repo admin, `repo` scope):** One-time create legacy Pages from `gh-pages` / root, e.g. with [GitHub CLI](https://cli.github.com/):  
    `gh api --method POST repos/<owner>/<repo>/pages -f build_type=legacy -f 'source[branch]=gh-pages' -f 'source[path]=/'`  
-   Then confirm: `curl -sI https://earlution.github.io/ai-dev-kit/` → **200**.
+   Then confirm: `curl -sI https://rms-ltd.github.io/ai-dev-kit/` → **200**.
 
 **Verify deploy:** **Actions** → workflow **Docusaurus deploy to GitHub Pages** should be green after pushes to **`main`** that touch `portal/`, `docs/`, or the deploy workflow (or run **`workflow_dispatch`**).
 
@@ -107,7 +107,7 @@ Local indexing adds work to the build. On a reference run (developer machine, fu
 
 ### Smoke-test queries
 
-On the **deployed** site ([canonical URL](https://earlution.github.io/ai-dev-kit/) — FR-070), open the **search** control (navbar), run:
+On the **deployed** site ([canonical URL](https://rms-ltd.github.io/ai-dev-kit/) — FR-070), open the **search** control (navbar), run:
 
 - `release workflow` → expect hits mentioning **Release Workflow** / RW docs.
 - `kanban` → expect **Kanban** / project-management content.

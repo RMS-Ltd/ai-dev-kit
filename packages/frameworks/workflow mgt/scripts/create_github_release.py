@@ -92,7 +92,7 @@ def get_default_repo() -> str:
     except Exception:
         pass
     # Fallback to hardcoded default
-    return "earlution/ai-dev-kit"
+    return "RMS-Ltd/ai-dev-kit"
 
 
 def get_release_by_tag(github_token: str, repo: str, tag: str, verbose: bool = False) -> Optional[Dict]:
