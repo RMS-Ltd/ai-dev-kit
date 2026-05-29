@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.10+3] - 29-05-26
+## [0.2.1.22+1] - 29-05-26
 
-E2:S16:T10 — Retire interim `hf-ai-dev-kit`; align private **`RMS-Ltd/ai-dev-kit-book`** and public **`RMS-Ltd/ai-dev-kit`** across config, README, install defaults, and ADR-006. SemVer **v0.4.814+3**.
+E2:S01:T22 — BR-075: perpetual RW `validate_version_bump` fails when `VERSION_BUILD` unchanged vs HEAD; version-bump skill uses `rw-config` path. SemVer **v0.4.805+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.10+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.22+1.md)
 
 ---

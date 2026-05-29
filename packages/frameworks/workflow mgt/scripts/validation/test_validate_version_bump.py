@@ -20,6 +20,7 @@ from validate_version_bump import (
     extract_task_id_canonical,
     is_perpetual_task,
     parse_requested_task_id,
+    validate_perpetual_build_increment,
     validate_task_doc_alignment,
     validate_task_doc_fields,
     validate_perpetual_guardrails,
@@ -510,6 +511,20 @@ def test_validate_perpetual_guardrails_rejects_t1xx_without_historical_anchor():
 """
     errors, _ = validate_perpetual_guardrails(2, 16, 103, content)
     assert any("T1xx task IDs are legacy/historical-only" in e for e in errors)
+
+
+def test_validate_perpetual_build_increment_rejects_unchanged_build(monkeypatch):
+    """BR-075: perpetual same-task with BUILD <= HEAD fails."""
+    import validate_version_bump as vvb
+
+    monkeypatch.setattr(vvb, "get_version_build_from_git_ref", lambda _vf, ref: 5 if ref == "HEAD" else None)
+    version_file = Path("src/ai_dev_kit/version.py")
+    content = "**Task Type:** Perpetual Maintenance\n"
+    ok, errs = validate_perpetual_build_increment(version_file, 2, 16, 4, 5, content, False)
+    assert not ok
+    assert any("BR-075" in e for e in errs)
+    ok2, errs2 = validate_perpetual_build_increment(version_file, 2, 16, 4, 6, content, False)
+    assert ok2, errs2
 
 
 def test_validate_perpetual_guardrails_warns_for_missing_marker_on_story_016_lane():

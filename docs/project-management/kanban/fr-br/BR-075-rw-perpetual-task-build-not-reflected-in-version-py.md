@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Bug Report BR-075: RW perpetual-task releases may not persist BUILD increment in `version.py`
 
-**Status:** OPEN  
+**Status:** RESOLVED  
 **Priority:** LOW  
 **Severity:** LOW — forensic drift risk between board/changelog version markers and `version.py` during perpetual-task RW (`RW`, `RW -k`, UKW/CMW follow-up).  
 **Created:** 2026-05-26  
