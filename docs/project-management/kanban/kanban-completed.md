@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-29 (RW: E7:S01:T11 — FR-101 governance consolidation)
-**Version:** v0.7.1.11+8
+**Last Updated:** 2026-05-29 (RW: E4:S06:T01 — FR-005 template system closure)
+**Version:** v0.4.6.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -567,7 +567,7 @@ This document tracks all **completed tasks** across the AI Dev Kit project. Task
 
 **Story 006: Comprehensive Canonical EST Template System** ✅ COMPLETE (v0.4.6.8+1)
 - **E4:S06:T00** – Create template framework - ✅ COMPLETE (v0.4.6.1+1)
-- **E4:S06:T01** – Design Epic templates - ✅ COMPLETE (v0.4.6.2+1)
+- **E4:S06:T01** – FR-005 canonical EST template closure (audit + kanban reconcile) - ✅ COMPLETE (v0.4.6.1+1) — [task](epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md); corpus delivery Story-006 T00–T10 (epic 1–7 at v0.4.6.7+1)
 - **E4:S06:T02** – Create Story templates - ✅ COMPLETE (v0.4.6.3+1)
 - **E4:S06:T03** – Build Task templates - ✅ COMPLETE (v0.4.6.4+1)
 - **E4:S06:T04** – Create template validation - ✅ COMPLETE (v0.4.6.5+1)

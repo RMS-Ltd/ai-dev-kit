@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-29 (RW: E4:S06:T01 — FR-005 template system closure)
-**Version:** v0.4.6.1+1
+**Last Updated:** 2026-05-29 (RW: E7:S01:T11 — FR-101 governance consolidation complete)
+**Version:** v0.7.1.11+8
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -34,7 +34,7 @@ housekeeping_policy: keep
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-*(E4:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md).)*
+- **E4:S06:T01** – Canonical EST template system completion (FR-005) - 📋 TODO (LOW template completeness) - [Story](epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md) | Last modified: 2025-12-22 00:00 UTC
 
 ### Ongoing (O) - Perpetual Tasks
 

@@ -12,9 +12,10 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-09  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** PENDING
+**Status:** IMPLEMENTED — closure **v0.4.6.1+1** (`RW E4:S06:T01`, `--art`; Story-006 T00–T10 corpus; FR-005-R5 deferred)
 
-**Implementing Task:** [E4:S06:T01](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
+**Implementing Task:** [E4:S06:T01 — FR-005 closure](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)  
+**Planning (IPW):** [IPP-E4S06T01](../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)
 
 ---
 
@@ -58,39 +59,37 @@ A complete, systematic template system that defines abstract canonical epics, st
 
 ### Functional Requirements
 
-- [ ] **FR-005-R1:** Complete template set for all canonical epics (1-7)
+- [x] **FR-005-R1:** Complete template set for all canonical epics (1-7) — Story-006 T01–T02; 21 epic templates
   - Each epic template includes: purpose, scope, key characteristics, typical stories
   - Templates use placeholders for contextualization (e.g., `\{PROJECT_NAME\} Core`)
   - Templates stored in `packages/frameworks/kanban/templates/epics/`
 
 
-- [ ] **FR-005-R2:** Complete template set for canonical stories
+- [x] **FR-005-R2:** Complete template set for canonical stories — Story-006 T03
   - Stories defined for each canonical epic
   - Story templates include: purpose, typical tasks, key deliverables, integration points
   - Templates use placeholders for contextualization
   - Templates stored in `packages/frameworks/kanban/templates/stories/`
 
 
-- [ ] **FR-005-R3:** Complete template set for canonical tasks
+- [x] **FR-005-R3:** Complete template set for canonical tasks — Story-006 T04 (378 templates; validator PASS)
   - Tasks defined for each canonical story
   - Task templates include: input, deliverable, approach, acceptance criteria
   - Templates use placeholders for contextualization
   - Templates stored in `packages/frameworks/kanban/templates/tasks/`
 
 
-- [ ] **FR-005-R4:** Contextualization mechanism
+- [x] **FR-005-R4:** Contextualization mechanism — `CONTEXTUALIZATION_GUIDE.md` + examples (T05)
   - Clear process for converting abstract templates to concrete project epics/stories/tasks
   - Placeholder replacement guide (what to replace, how to customize)
   - Examples of contextualized templates
 
 
-- [ ] **FR-005-R5:** Systematic canonical addition process
-  - Defined process for adding new canonical epics/stories/tasks
-  - Criteria for what qualifies as "canonical" (reusable across projects)
-  - Review and approval process for canonical additions
+- [ ] **FR-005-R5:** Systematic canonical addition process — **DEFERRED** (closure v0.4.6.1+1)
+  - Interim: `CANONICAL_EPICS.md` § document pattern + Story-006 T06; follow-up FR/task for standalone `CANONICAL_ADDITION_PROCESS.md`
 
 
-- [ ] **FR-005-R6:** Template documentation and usage guide
+- [x] **FR-005-R6:** Template documentation and usage guide — contextualization guide + setup/install docs (T07)
   - Comprehensive guide on using canonical templates
   - Examples of template → contextualized conversion
   - Best practices for customization
@@ -160,16 +159,16 @@ A developer starts a new project using ai-dev-kit as a template:
 
 ## Acceptance Criteria
 
-- [ ] **Criterion 1:** All canonical epics (1-7) have complete template files in `packages/frameworks/kanban/templates/epics/`
-- [ ] **Criterion 2:** Each canonical epic template includes at least 2-3 typical stories with complete story templates
-- [ ] **Criterion 3:** Each canonical story template includes at least 3-5 typical tasks with complete task templates
-- [ ] **Criterion 4:** All templates use placeholders (e.g., `\{PROJECT_NAME\}`, `\{DOMAIN\}`) for contextualization
-- [ ] **Criterion 5:** Contextualization guide created with clear process and examples
-- [ ] **Criterion 6:** Systematic canonical addition process documented with criteria and review process
-- [ ] **Criterion 7:** Template usage guide created with examples of template → contextualized conversion
-- [ ] **Criterion 8:** All templates follow consistent structure and format
-- [ ] **Criterion 9:** Templates integrate with existing Kanban framework documentation
-- [ ] **Criterion 10:** Examples provided showing contextualized templates for at least 2 different project types
+- [x] **Criterion 1:** All canonical epics (1-7) have complete template files in `packages/frameworks/kanban/templates/epics/`
+- [x] **Criterion 2:** Each canonical epic template includes at least 2-3 typical stories with complete story templates
+- [x] **Criterion 3:** Each canonical story template includes at least 3-5 typical tasks with complete task templates
+- [x] **Criterion 4:** All templates use placeholders (e.g., `\{PROJECT_NAME\}`, `\{DOMAIN\}`) for contextualization
+- [x] **Criterion 5:** Contextualization guide created with clear process and examples
+- [ ] **Criterion 6:** Systematic canonical addition process documented — **DEFERRED** (same as FR-005-R5)
+- [x] **Criterion 7:** Template usage guide created with examples of template → contextualized conversion
+- [x] **Criterion 8:** All templates follow consistent structure and format
+- [x] **Criterion 9:** Templates integrate with existing Kanban framework documentation
+- [x] **Criterion 10:** Examples provided showing contextualized templates for at least 2 different project types
 
 ---
 

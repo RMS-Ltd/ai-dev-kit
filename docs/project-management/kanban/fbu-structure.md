@@ -82,7 +82,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **FR-008** – Package Uninstall Capabilities - TODO (LOW, Uninstall capabilities for packages) - [FR-008](fr-br/FR-008-package-uninstall-capabilities.md)
 - **FR-007** – Migration Utilities and Installation Modes - TODO (LOW, Migration utilities and installation modes) - [FR-007](fr-br/FR-007-migration-utilities-and-installation-modes.md)
 - **FR-006** – Localization Language Selection UK/US English - TODO (LOW, Language selection for UK/US English) - [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
-- **FR-005** – Systematic Canonical Epics Stories Tasks Templates - TODO (LOW, Systematic templates for canonical structure) - [FR-005](fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
+- **FR-005** – Systematic Canonical Epics Stories Tasks Templates - ✅ IMPLEMENTED (v0.4.6.1+1; E4:S06:T01) - [FR-005](fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) | [fbu-completed](fbu-completed.md)
 - **FR-004** – GitHub Submission for FBU - TODO (LOW, GitHub integration for FBU submission) - [FR-004](fr-br/FR-004-github-submission-for-fr-br-uxr.md)
 - **FR-003** – Dependency Tracking in Adopting Projects - TODO (LOW, Dependency tracking for project adoption) - [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
 - **FR-002** – Update Been There README - TODO (LOW, Update README for been-there functionality) - [FR-002](fr-br/FR-002-update-been-there-readme.md)

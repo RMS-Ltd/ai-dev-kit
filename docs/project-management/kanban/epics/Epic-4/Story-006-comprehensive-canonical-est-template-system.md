@@ -40,7 +40,7 @@ This enables projects to adopt ai-dev-kit with zero cognitive load for E/S/T str
 ## Task Checklist
 
 - [x] **E4:S06:T00 – Story creation and comprehensive structure documentation** ✅ COMPLETE (v0.4.6.0+1)
-- [x] **E4:S06:T01 – Create individual epic template files for canonical epics (1-7)** ✅ COMPLETE (v0.4.6.7+1)
+- [x] **E4:S06:T01 – Create individual epic template files for canonical epics (1-7)** ✅ COMPLETE (v0.4.6.7+1) — **FR-005 closure:** [`T01-canonical-est-template-closure-fr005.md`](Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md) ✅ COMPLETE (v0.4.6.1+1)
 - [x] **E4:S06:T02 – Create individual epic template files for project-specific canonical epics (8-21)** ✅ COMPLETE (v0.4.6.10+1 – All 14 epic templates created: Epics 8-21)
 - [x] **E4:S06:T03 – Create story template files for each typical story** ✅ COMPLETE (v0.4.6.3+1 – All 62 story templates created for Epic 1-21)
 - [x] **E4:S06:T04 – Create task template files for each typical task** ✅ COMPLETE (v0.4.6.4+43 – All 378 canonical task templates generated, validated, sanitized, and duplicates cleaned up)

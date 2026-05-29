@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.6.1+1] - 29-05-26
+
+E4:S06:T01 (FR-005) — Template system closure: audit matrix, kanban/FR reconciliation, discrete task doc. FR-005-R5 deferred. SemVer **v0.4.817+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.6.1+1.md)
+
+---
+
 ## [0.7.1.11+8] - 29-05-26
 
 E7:S01:T11 (FR-101) — Wave F: docs scope + closure; governance consolidation complete. SemVer **v0.4.817+8**.

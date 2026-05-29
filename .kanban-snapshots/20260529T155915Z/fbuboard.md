@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-29 (RW: E4:S06:T01 — FR-005 closure)
-**Version Context:** v0.4.6.1+1 (**SemVer** v0.4.817+1)
+**Last Updated:** 2026-05-29 (RW: E2:S16:T04 — UKW kanban hygiene)
+**Version Context:** v0.2.16.4+14 (**SemVer** v0.4.816+14)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -94,6 +94,7 @@ This board provides **centralized visibility and prioritization** for all open F
 - **FR-008** – Package Uninstall Capabilities - 📋 TODO (LOW, Uninstall capabilities for packages) | [FR-008](fr-br/FR-008-package-uninstall-capabilities.md) | [E2:S06:T01](epics/Epic-2/Story-006-package-uninstall-and-recovery.md) | [—IPP—](../../implementation-cycles/IPP-E2S06T01-package-uninstall-reimplementation.md) | Last modified: 2026-05-15 00:00 UTC
 - **FR-007** – Migration Utilities and Installation Modes - 📋 TODO (LOW, Migration utilities and installation modes) | [FR-007](fr-br/FR-007-migration-utilities-and-installation-modes.md) | [E4:S07:T02](epics/Epic-4/Story-007-migration-support-and-installation-modes.md) | —No IPP— | Last modified: 2025-12-10 00:00 UTC
 - **FR-006** – Localization Language Selection UK/US English - 📋 TODO (LOW, Language selection for UK/US English) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [E21:S00:T01](epics/Epic-21/Story-000-language-selection-at-setup.md) | —No IPP— | Last modified: 2025-12-09 00:00 UTC
+- **FR-005** – Systematic Canonical Epics Stories Tasks Templates - 📋 TODO (LOW, Systematic templates for canonical structure) | [FR-005](fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) | [E4:S06:T01](epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md) | —No IPP— | Last modified: 2025-12-22 00:00 UTC
 - **FR-003** – Dependency Tracking in Adopting Projects - 📋 TODO (LOW, Dependency tracking for project adoption) - [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | Last modified: 2026-03-25 14:32 UTC
 - **FR-002** – Update Been There README - 📋 TODO (LOW, Update README for been-there functionality) - [FR-002](fr-br/FR-002-update-been-there-readme.md) | Last modified: 2026-04-01 15:15 UTC
 - **BR-008** – Arbitrary 80 Threshold Contradicts Agentic Intelligence - 📋 TODO (LOW, Arbitrary threshold contradicts agentic approach) | [BR-008](fr-br/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md) | [E4:S09:T05](epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md) | —No IPP— | Last modified: 2025-12-10 00:00 UTC
