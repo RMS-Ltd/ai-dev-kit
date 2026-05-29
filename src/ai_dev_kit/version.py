@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 4      # Epic 4 — Kanban Framework
-VERSION_STORY = 19    # Story 19 — FR/BR/UXR abstract governance and intake
-VERSION_TASK = 3      # Task 3 — E6:S07 default-housing investigation (FR-087)
-VERSION_BUILD = 0     # Build 0: Wave 4 doc-only — S07 re-housing + charter narrow (BR-067 doc-policy-zero)
+VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
+VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
+VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban synchronization and hygiene (perpetual)
+VERSION_BUILD = 15    # Build 15: kboard/fbuboard consolidation — align MoSCOW with task/FBU truth
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.4.19.3+0
+# Current: 0.2.16.4+15

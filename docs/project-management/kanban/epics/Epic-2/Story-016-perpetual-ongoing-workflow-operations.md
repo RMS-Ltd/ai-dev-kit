@@ -35,7 +35,7 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [ ] **E2:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual anchor; Wave 2/3 COMPLETE; RW v0.2.16.3+6: IPP vs ICW packaging SoT + gate/policy alignment; AC4 PARTIAL pending T02 inventory)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [x] **E2:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - ✅ COMPLETE (HIGH, UKW attribution anchor; last run **v0.2.16.4+12** — FR-098 MoSCOW Must Have top + cheatsheet wiring)  
+- [ ] **E2:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW attribution anchor; last run **v0.2.16.4+15** — kboard/fbuboard consolidation)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E2:S16:T05 – Markdown Documentation Maintenance (Perpetual)** - IN PROGRESS (HIGH, dedicated perpetual lane for recurring markdown-only documentation upkeep outside workflow-maintenance umbrella and kanban synchronization lanes)  

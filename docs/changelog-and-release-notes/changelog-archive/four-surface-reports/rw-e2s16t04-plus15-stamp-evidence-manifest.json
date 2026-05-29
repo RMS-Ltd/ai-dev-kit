@@ -1,0 +1,30 @@
+{
+  "release": "v0.2.16.4+15",
+  "task": "E2:S16:T04",
+  "workflow": "RW Step 7 — kboard/fbuboard consolidation (UKW hygiene)",
+  "rows": {
+    "BR-058": { "allowed": true, "reason": "Consolidation pass — Could section merge; stamp normalized to release UTC" },
+    "BR-059": { "allowed": true, "reason": "Consolidation pass — Should Have mirror kboard E2:S16:T13" },
+    "BR-065": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (COMPLETE → fbu-completed)" },
+    "BR-066": { "allowed": true, "reason": "Consolidation pass — Should Have task link refresh" },
+    "BR-067": { "allowed": true, "reason": "Consolidation pass — E2:S16:T03 implementing task link fix" },
+    "BR-072": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (RESOLVED → fbu-completed)" },
+    "FR-040": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (superseded by FR-042 IPW)" },
+    "FR-046": { "allowed": true, "reason": "Consolidation pass — Should Have mirror kboard E5:S01:T46" },
+    "FR-048": { "allowed": true, "reason": "Consolidation pass — Could section merge" },
+    "FR-059": { "allowed": true, "reason": "Consolidation pass — Could section merge" },
+    "FR-062": { "allowed": true, "reason": "Consolidation pass — Could section merge" },
+    "FR-063": { "allowed": true, "reason": "Consolidation pass — Could section merge" },
+    "FR-072": { "allowed": true, "reason": "Consolidation pass — Could section merge" },
+    "FR-074": { "allowed": true, "reason": "Consolidation pass — Could section merge; E4:S19:T06 link" },
+    "FR-077": { "allowed": true, "reason": "Consolidation pass — Should Have mirror kboard E2:S01:T17" },
+    "FR-084": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (superseded by FR-092)" },
+    "FR-085": { "allowed": true, "reason": "Consolidation pass — Should Have mirror kboard E2:S16:T06" },
+    "FR-086": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (COMPLETE → fbu-completed)" },
+    "FR-087": { "allowed": true, "reason": "Consolidation pass — Should Have status refresh post E4:S19:T03" },
+    "FR-090": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (superseded by FR-092)" },
+    "FR-091": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (superseded by FR-092)" },
+    "UXR-008": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (COMPLETE → fbu-completed)" },
+    "UXR-012": { "allowed": true, "reason": "Consolidation pass — removed from active MoSCOW (COMPLETE → fbu-completed)" }
+  }
+}

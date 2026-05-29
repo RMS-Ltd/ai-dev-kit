@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-29 (RW -d: E4:S19:T03 — FR-087 Wave 4 re-housing docs)
-**Version:** v0.4.19.3+0
+**Last Updated:** 2026-05-29 (RW **v0.2.16.4+15** — kboard/fbuboard consolidation)
+**Version:** v0.2.16.4+15
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -32,11 +32,18 @@ housekeeping_policy: keep
 
 - **E2:S16:T13** – BR-059: UKW MoSCOW full open-task coverage per in-progress story - 📋 TODO (HIGH, re-housed from `E6:S07:T109`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Last modified: 2026-05-29 17:00 UTC
 - **E2:S01:T23** – Tool-agnostic workflow step tracking + persisted run logs - 📋 TODO (HIGH, re-housed from `E6:S07:T18`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Last modified: 2026-05-29 17:00 UTC
+- **E2:S16:T06** – FR-085: UKW optional `--rp` reprioritization mode - 🔄 IN PROGRESS (HIGH, deep intent/dependency analysis for task + FBU ordering) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) | [FR-085](fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | Last modified: 2026-05-29 18:00 UTC
+- **E2:S01:T17** – FR-077: IPW-built task status transition + kboard sync - 🔄 IN PROGRESS (HIGH, ownership matrix shipped; monitor recurrence) | [Task](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md) | [FR-077](fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) | Last modified: 2026-05-29 18:00 UTC
+- **E5:S01:T46** – FR-046: RW SemVer tag when task_touch enabled - 🔄 IN PROGRESS (HIGH, validator + installer shipped; verification loop open) | [Task](epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md) | [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) | Last modified: 2026-05-29 18:00 UTC
 - **E6:S07:T107** – IDE command whitelist optimization - 📋 TODO (HIGH, in-scope ADK agent friction; charter freeze applies to new S07 tasks) | [Task](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) | Last modified: 2026-05-29 17:00 UTC
+- **E7:S01:T09** – UXR-005: Kanban template governance & MoSCOW spacing rule - 📋 TODO (HIGH, UXR-owned template maintenance; registry **E7:S00:T05**) | [Task](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | Last modified: 2026-05-29 18:00 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-*(E4:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md).)*
+- **E7:S00:T01** · **E7:S05:T01** – UXR-001 migration UX research (synthesis **COMPLETE**; migration implementation via **E4:S07** / **FR-007**) | [UXR-001](fr-br/UXR-001-migration-user-experience-research.md) | [S00:T01](epics/Epic-7/Story-000-uxr-repo/T01-uxr-001-repository-anchor.md) | Last modified: 2026-05-29 18:00 UTC
+- **E7:S00:T02** · **E7:S05:T02** – UXR-002 migration UAT utilities (synthesis **COMPLETE**; implementation follow-on **E4:S07**) | [UXR-002](fr-br/UXR-002-comprehensive-uat-migration-utilities.md) | [S00:T02](epics/Epic-7/Story-000-uxr-repo/T02-uxr-002-repository-anchor.md) | Last modified: 2026-05-29 18:00 UTC
+
+*(E4:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). FR-031 / FR-024 / FR-057 retired off active board — [fbu-completed.md](fbu-completed.md).)*
 
 ### Ongoing (O) - Perpetual Tasks
 

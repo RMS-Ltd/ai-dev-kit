@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-29 (RW: E4:S06:T01 — FR-005 complete)
-**Version:** v0.4.6.1+1
+**Last Updated:** 2026-05-29 (RW **v0.2.16.4+15** — archived completed/superseded from active fbuboard)
+**Version:** v0.2.16.4+15
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,16 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-072 | BR | UKW completed tasks not removed from kboard — **RESOLVED** (**E6:S01:T38**) | 2026-05-12 | v0.6.6.38+1 | UKW |
+| BR-065 | BR | RW Step 12.5 GitHub release parser `v0` prefix — **FIXED** (**E6:S07:T113**) | 2026-04-13 | v0.6.7.113+1 | RW |
+| UXR-012 | UXR | MoSCOW state icons Set A + fallback — **COMPLETE** (**E4:S13:T07**) | 2026-05-20 | v0.4.13.7+2 | RW |
+| FR-086 | FR | Canonical FBU/kanban naming — **COMPLETE** (**E4:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
+| UXR-008 | UXR | `kboard.md` / `fbuboard.md` naming — **COMPLETE** (**E4:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
+| FR-092 | FR | RW/UKW kanban consistency program — **COMPLETE** (**E2:S15:T07**) | 2026-05-19 | v0.2.15.7+9 | RW |
+| FR-090 | FR | UKW row transform engine — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
+| FR-091 | FR | RW Step 7 self-sufficient kanban — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
+| FR-084 | FR | IPP post-run governance — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
+| FR-040 | FR | ICW workflow — **SUPERSEDED** by **FR-042** IPW | 2026-05-20 | v0.2.16.3+6 | IPW |
 | FR-005 | FR | Systematic canonical E/S/T template system — Story-006 corpus; closure audit (E4:S06:T01); R5 deferred | 2026-05-29 | v0.4.6.1+1 | RW |
 | FR-101 | FR | Consolidate governance under `docs/governance/` — ADR-007; Waves 0–F (E7:S01:T11) | 2026-05-29 | v0.7.1.11+8 | RW |
 | FR-031 | FR | Multi-agent coordination feasibility — **WON'T HAVE** (deferred; E5:S01:T31) | 2026-05-29 | v0.5.1.31+0 | Maintainer |

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.7.103+0 (mitigation shipped 2026-04-19)  
 **Code:** BR-067  
 
-**Implementing Task:** [E2:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Implementing Task:** [E2:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 

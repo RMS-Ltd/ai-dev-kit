@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-05-29 (**v0.2.16.4+14** — RW `--art`: kanban hygiene — T31 WON'T HAVE; T08/T06 COMPLETE off boards; FR-031/024/057 terminal)  
-**Version Anchor:** v0.2.16.4+14  
+**Last updated:** 2026-05-29 (**v0.2.16.4+15** — RW `--art`: kboard/fbuboard consolidation; UXR-005 **E7:S01:T09** reinstated; completed FBUs pruned from active MoSCOW)  
+**Version Anchor:** v0.2.16.4+15  
 **Code:** E2S16T04
 **Task Type:** Perpetual Maintenance
 
