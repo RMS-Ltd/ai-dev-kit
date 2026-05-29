@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.11+3] - 29-05-26
+
+E7:S01:T11 (FR-101) — Wave A: ADR-007 book governance document topology. SemVer **v0.4.817+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.11+3.md)
+
+---
+
 ## [0.7.1.11+2] - 29-05-26
 
 E7:S01:T11 (FR-101) — Wave 0: governance rehousing inventory AC0 sign-off; IPP-E7S01T11 published and wired. SemVer **v0.4.817+2**.
