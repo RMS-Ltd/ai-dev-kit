@@ -82,7 +82,7 @@ housekeeping_policy: keep
 
 ## Cross-Wiring
 
-> **Bidirectional Wiring Required:** Every cross-wire must be bidirectional. If Task A links to Task B, Task B must link back to Task A. See [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../../docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) for complete guidance.
+> **Bidirectional Wiring Required:** Every cross-wire must be bidirectional. If Task A links to Task B, Task B must link back to Task A. See [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../../docs/governance/principles/bidirectional-wiring-principle.md) for complete guidance.
 >
 > **Context Required:** Every cross-wire must include context explaining *why* tasks are related. Generic links (e.g., "related task") are prohibited.
 >
@@ -140,7 +140,7 @@ housekeeping_policy: keep
 
 ## Related Work
 
-> **Bidirectional Wiring Reminder:** Every link in this section must be bidirectional. If you link to a BR/FR, task, or story, that item must link back to this task. See [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../../docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) for guidance. For task-to-task relationships with relationship types, use the **Cross-Wiring** section above.
+> **Bidirectional Wiring Reminder:** Every link in this section must be bidirectional. If you link to a BR/FR, task, or story, that item must link back to this task. See [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../../docs/governance/principles/bidirectional-wiring-principle.md) for guidance. For task-to-task relationships with relationship types, use the **Cross-Wiring** section above.
 
 **Related BR/FR Links:**
 - [BR-XXX: Bug Report Title](path/to/BR-XXX.md) — *Bidirectional: BR must link back to this task in its Kanban Links section*

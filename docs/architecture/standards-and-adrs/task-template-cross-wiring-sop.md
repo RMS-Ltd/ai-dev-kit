@@ -272,7 +272,7 @@ This SoP defines the standard procedure for cross-wiring (interconnecting) tasks
 > 
 > **Context Required:** Every cross-wire must include context explaining why tasks are related.
 > 
-> **See:** [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) for complete guidance.
+> **See:** [`bidirectional-wiring-principle.md`](../../governance/principles/bidirectional-wiring-principle.md) for complete guidance.
 
 **Related Tasks:**
 
@@ -464,7 +464,7 @@ This SoP defines the standard procedure for cross-wiring (interconnecting) tasks
 
 **Required:**
 - Task Template: `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
-- Bidirectional Wiring Principle: `docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md`
+- Bidirectional Wiring Principle: `docs/governance/principles/bidirectional-wiring-principle.md`
 - This SoP: `docs/architecture/standards-and-adrs/task-template-cross-wiring-sop.md`
 
 **Recommended:**
@@ -520,7 +520,7 @@ This SoP defines the standard procedure for cross-wiring (interconnecting) tasks
 ## References
 
 - **FR-035:** [`FR-035-task-template-cross-wiring-section.md`](../../project-management/kanban/fr-br/FR-035-task-template-cross-wiring-section.md)
-- **Bidirectional Wiring Principle:** [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md)
+- **Bidirectional Wiring Principle:** [`bidirectional-wiring-principle.md`](../../governance/principles/bidirectional-wiring-principle.md)
 - **Task Template:** `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - **Kanban Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 

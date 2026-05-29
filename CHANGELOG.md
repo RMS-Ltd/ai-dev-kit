@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.11+6] - 29-05-26
+
+E7:S01:T11 (FR-101) — Wave D: bidirectional wiring principle to `docs/governance/principles/`. SemVer **v0.4.817+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.11+6.md)
+
+---
+
 ## [0.7.1.11+5] - 29-05-26
 
 E7:S01:T11 (FR-101) — Wave C: Kanban governance policy to `docs/governance/kanban/`. SemVer **v0.4.817+5**.

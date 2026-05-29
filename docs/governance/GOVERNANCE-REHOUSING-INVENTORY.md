@@ -85,4 +85,4 @@ rg 'standards-and-adrs/dev-kit-versioning-policy' docs .cursorrules
 |------|-----------------|------------|-------------|
 | Standards (4 policies) | b2a10a7+ | yes | partial (Wave E) |
 | Kanban policy | 3fc4f18+ | yes | partial (Wave E) |
-| Bidirectional wiring | | | |
+| Bidirectional wiring | 675ceb4+ | yes | partial (Wave E) |

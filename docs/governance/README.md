@@ -37,7 +37,7 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 
 ## Principles (`governance/principles/`)
 
-- *(pending Wave D)* [bidirectional-wiring-principle.md](principles/bidirectional-wiring-principle.md)
+- [bidirectional-wiring-principle.md](principles/bidirectional-wiring-principle.md)
 
 ---
 
