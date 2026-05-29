@@ -14,10 +14,11 @@ housekeeping_policy: keep
 **Submitted By:** User forensic governance request  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** OPEN
+**Status:** IN PROGRESS
 
 **Implementing Task:** [E4:S19:T03](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)  
-**IPP:** [`IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`](../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
+**IPP:** [`IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`](../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)  
+**Investigation report:** [`E4S19T03-e6s07-default-housing-investigation-report.md`](../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
 
 ---
 
@@ -44,11 +45,11 @@ The project needs an evidence-backed explanation of:
 
 ### Functional Requirements
 
-- [ ] **FR-087-F1:** Produce a forensic origin analysis of `E6:S07` (initial charter, historical evolution, inflection points).
-- [ ] **FR-087-F2:** Identify all codification points (scripts, validators, templates, policies, workflow docs, rules, prompts) that bias or permit `S07` as default housing.
-- [ ] **FR-087-F3:** Classify existing `S07` tasks by semantic fit (`in-scope`, `borderline`, `out-of-scope`) and quantify drift.
-- [ ] **FR-087-F4:** Provide closure decision options for `S07` (`close`, `keep-open-narrowed`, `split/re-house`) with impact/risk analysis.
-- [ ] **FR-087-F5:** Define enforceable placement guardrails to prevent future default-housing drift.
+- [x] **FR-087-F1:** Produce a forensic origin analysis of `E6:S07` (initial charter, historical evolution, inflection points). *(Report §1)*
+- [x] **FR-087-F2:** Identify all codification points (scripts, validators, templates, policies, workflow docs, rules, prompts) that bias or permit `S07` as default housing. *(Report §3)*
+- [x] **FR-087-F3:** Classify existing `S07` tasks by semantic fit (`in-scope`, `borderline`, `out-of-scope`) and quantify drift. *(Report §4; `drift_ratio ≈ 0.67`)*
+- [x] **FR-087-F4:** Provide closure decision options for `S07` (`close`, `keep-open-narrowed`, `split/re-house`) with impact/risk analysis. *(Report §5 — recommends **`split/re-house`**)*
+- [~] **FR-087-F5:** Define enforceable placement guardrails to prevent future default-housing drift. *(Report §6 — specified; **implementation tasks not yet filed**)*
 - [ ] **FR-087-F6:** Define and enforce explicit re-housing protocol for misfiled tasks (including required board/story/FBU rewiring and rationale capture) so Story 007 cannot silently re-accumulate catch-all work.
 
 ### Non-Functional Requirements

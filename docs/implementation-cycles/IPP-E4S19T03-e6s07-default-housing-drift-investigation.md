@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md) **(E4:S19:T03)**  
 **Planning for:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)  
-**Status:** Published (planning artifact; investigation execution and disposition recommendation owned by `E4:S19:T03`)
+**Status:** Published (Wave 1 IPP); Wave 2–3 investigation report delivered — see [`E4S19T03-e6s07-default-housing-investigation-report.md`](./E4S19T03-e6s07-default-housing-investigation-report.md); Wave 4 migrations and guardrail filing remain open
 
 ---
 
@@ -329,6 +329,7 @@ Deliverable checks:
 ## 6. References
 
 - [Host task E4:S19:T03](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)
+- [Investigation report (Wave 2–3)](./E4S19T03-e6s07-default-housing-investigation-report.md)
 - [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 - [Story 019 - FR/BR/UXR abstract governance and intake](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md)
 - [Story 007 - ADK implementation analysis and package management (subject under investigation)](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md)

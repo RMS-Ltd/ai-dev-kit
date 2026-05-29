@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-29 (RW: E2:S16:T10 — project root hygiene)
-**Version:** v0.2.16.10+4
+**Last Updated:** 2026-05-29 (RW: E4:S19:T03 — E6:S07 default-housing investigation report)
+**Version:** v0.4.19.3+2
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -30,7 +30,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E4:S19:T03** – FR-087: investigate why `E6:S07` became default housing and decide closure/scope - 🔄 IN PROGRESS (HIGH, forensic analysis of origin/codification plus close/split/narrow recommendation and guardrails; canonical IPP published) | Last modified: 2026-05-14 11:06 UTC
+*(none)*
 
 ### Could Have (C) - Nice-to-Have Tasks
 

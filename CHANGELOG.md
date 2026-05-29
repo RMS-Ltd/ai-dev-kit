@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.10+4] - 29-05-26
+## [0.4.19.3+2] - 29-05-26
 
-E2:S16:T10 (perpetual) — Project root hygiene: remove junk media/logs/snapshots; relocate or delete low-value root artifacts; `.gitignore` hardening. SemVer **v0.4.818+4**.
+E4:S19:T03 (FR-087) — `E6:S07` default-housing investigation report: forensic origin, codification inventory, triage (`drift_ratio ≈ 0.67`), **`split/re-house`** recommendation. SemVer **v0.4.819+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.10+4.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.3+2.md)
 
 ---
 

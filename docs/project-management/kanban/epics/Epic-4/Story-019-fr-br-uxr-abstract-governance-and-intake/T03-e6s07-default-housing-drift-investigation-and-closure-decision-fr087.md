@@ -9,11 +9,12 @@ housekeeping_policy: keep
 # Epic 4, Story 19, Task 3: `E6:S07` default-housing drift investigation and closure decision (FR-087)
 
 **Task ID:** E4:S19:T03  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE
+**Version Anchor:** v0.4.19.3+2 (`RW E4:S19:T03 --art`, Wave 2–3 investigation report)  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-20  
-**Last updated:** 2026-04-27 (IPW E4:S19:T03 published canonical IPP for `E6:S07` default-housing drift forensic-investigation contract, codification inventory, triage rubric, disposition framework, re-housing protocol, and guardrail follow-on candidate set)  
+**Last updated:** 2026-05-29 (Wave 2–3 investigation report published: forensic origin, codification inventory, triage with `drift_ratio ≈ 0.67`, **`split/re-house`** recommendation + guardrail backlog; Wave 4 migrations deferred)  
 **Code:** E4S19T03
 
 **Upstream:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
@@ -31,6 +32,7 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
 - Current `E6:S07` charter and task inventory.
 - Governance/policy/rules/templates/validator/workflow sources affecting task placement.
 - Canonical IPP: [`IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
+- Investigation report (Wave 2–3): [`E4S19T03-e6s07-default-housing-investigation-report.md`](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
 
 ---
 
@@ -64,11 +66,11 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Forensic timeline of `S07` intent and expansion is documented.
-- [ ] **AC2:** Codification inventory distinguishes hard-coded routing from human/operator habit.
-- [ ] **AC3:** All current `S07` tasks are triaged by semantic fit with rationale.
-- [ ] **AC4:** Recommended disposition (`close`/`narrow`/`split`) includes migration and compatibility plan.
-- [ ] **AC5:** Follow-on guardrail changes are specified as concrete implementation tasks.
+- [x] **AC1:** Forensic timeline of `S07` intent and expansion is documented. *(Report §1–2)*
+- [x] **AC2:** Codification inventory distinguishes hard-coded routing from human/operator habit. *(Report §3)*
+- [x] **AC3:** All current `S07` tasks are triaged by semantic fit with rationale. *(Report §4; 22 task docs)*
+- [x] **AC4:** Recommended disposition (`close`/`narrow`/`split`) includes migration and compatibility plan. *(Report §5 — **`split/re-house`** then narrow)*
+- [x] **AC5:** Follow-on guardrail changes are specified as concrete implementation tasks. *(Report §6 — proposed filing table; tasks not yet filed)*
 - [x] **AC6:** Re-housing protocol is proven on one real case (`BR-069` moved to `E2:S15:T04`) with Story/FBU/board rewiring.
 
 ---
@@ -76,6 +78,7 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
 ## References
 
 - [Canonical IPP: `IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
+- [Investigation report: `E4S19T03-e6s07-default-housing-investigation-report.md`](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
 - [FR-087](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 - [Story 019](../Story-019-fr-br-uxr-abstract-governance-and-intake.md)
 - [Story 007](../../../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md)
