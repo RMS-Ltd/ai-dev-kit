@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-10  
 **Submitted By:** AI Agent (Cursor) acting as user/client for dev-toolkit  
 **Priority:** MEDIUM  
-**Status:** PENDING  
+**Status:** IMPLEMENTED  
 **Version:** v0.4.8.7+2  
 
 **Implementing Task:** [E4:S08:T07](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md)
