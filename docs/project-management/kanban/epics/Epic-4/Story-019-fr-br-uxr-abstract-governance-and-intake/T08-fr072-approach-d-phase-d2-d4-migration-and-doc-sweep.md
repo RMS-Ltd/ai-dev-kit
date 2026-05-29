@@ -12,7 +12,8 @@ housekeeping_policy: keep
 **Status:** TODO  
 **Priority:** HIGH  
 **Created:** 2026-05-29  
-**Last updated:** 2026-05-29 (intake — semantic delivery; historical registry E5:S01:T72)  
+**Last updated:** 2026-05-29 (**RW -k** **v0.4.19.8+1** — FR-072 batch semantic wiring)  
+**Version Anchor:** v0.4.19.8+1  
 **Code:** E4S19T08
 
 **Upstream:** [FR-072 — Uniform repository vs abstract-space kanban rules](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)  
@@ -20,6 +21,12 @@ housekeeping_policy: keep
 **Coordinates:** [E4:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md), [E4:S19:T07](T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)
 
 Publication Status: NOT_APPLICABLE
+
+---
+
+## Input
+
+- [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md); batch open-FBU semantic wiring (2026-05-29).
 
 ---
 

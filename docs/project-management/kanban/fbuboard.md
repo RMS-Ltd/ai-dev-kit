@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – FBU Prioritization Board
 
 **Last Updated:** 2026-05-29 (RW **v0.2.16.4+15** — kboard/fbuboard consolidation)
-**Version Context:** v0.2.16.14+2 (**SemVer** v0.4.824+2)
+**Version Context:** v0.4.19.8+1 (**SemVer** v0.4.825+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -102,7 +102,7 @@ This board provides **centralized visibility and prioritization** for all open F
 - **FR-059** – Enhanced workflow logging system - 💡 PROPOSED (LOW) | [FR-059](fr-br/FR-059-enhanced-workflow-logging-system.md) | [E2:S08:T08](epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) | —No IPP— | Last modified: 2026-05-29 18:00 UTC
 - **FR-062** – GitHub release installation experience - 💡 PROPOSED (LOW) | [FR-062](fr-br/FR-062-github-release-installation-experience.md) | [E5:S01:T62](epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md) | —No IPP— | Last modified: 2026-05-29 18:00 UTC
 - **FR-063** – CMW Epic 5 execution context - 🔄 ACTIVE (LOW) | [FR-063](fr-br/FR-063-cmw-epic-5-execution-context.md) | Last modified: 2026-05-29 18:00 UTC
-- **FR-072** – Uniform repository abstract-space kanban rules - 🟢 PENDING (LOW, verify closure vs intake program) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | Last modified: 2026-05-29 18:00 UTC
+- **FR-072** – Uniform repository abstract-space kanban rules - 🔄 IN PROGRESS (HIGH, **E4:S19:T08** Approach D batch wiring) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [E4:S19:T08](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | Last modified: 2026-05-29 17:20 UTC
 - **FR-074** – Kanban intake atomic KG-R2/KG-R6 governance - 🟢 PENDING (LOW, largely **E4:S19:T06**) | [FR-074](fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md) | [E4:S19:T06](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) | Last modified: 2026-05-29 18:00 UTC
 
 ### Won't Have (W) - Deferred / closed off active board
