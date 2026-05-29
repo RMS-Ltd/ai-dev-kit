@@ -351,6 +351,7 @@ python3 install_package_from_release.py kanban 2.1.0 \
 
 **Documentation:**
 - [`PACKAGE_INSTALLATION_GUIDE.md`](packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) - Complete package installation guide
+- [`install-receipt-reference.md`](docs/documentation/user-docs/install-receipt-reference.md) - JSON install receipt written under `logs/ai-dev-kit/install/` when your project has `.ai-dev-kit.yaml` (FR-062)
 
 ### Method 2: Git Submodule (Available Now)
 

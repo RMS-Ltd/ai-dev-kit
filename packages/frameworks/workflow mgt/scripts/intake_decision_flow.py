@@ -135,6 +135,12 @@ class IntakeDecisionFlow:
             new_story_recommended,
             new_task_recommended
         )
+
+        # FR-011 (E4:S08:T07): multi-epic secondary matches → split-candidate hint
+        if len(epic_story_mapping.secondary_epics) >= 1:
+            split_hint = self._multi_epic_split_hint(epic_story_mapping)
+            if split_hint:
+                reasoning.append(split_hint)
         
         return IntakeDecision(
             epic_number=epic_story_mapping.primary_epic,
@@ -218,6 +224,23 @@ class IntakeDecisionFlow:
                 return True
         
         return False
+
+    def _multi_epic_split_hint(self, epic_story_mapping: EpicStoryMapping) -> Optional[str]:
+        """
+        FR-011: When intake maps to a primary epic plus secondary partial matches,
+        surface split-candidate guidance for operator review.
+        """
+        try:
+            from task_split.engine import multi_epic_split_hint
+        except ImportError:
+            return None
+
+        return multi_epic_split_hint(
+            epic_story_mapping.primary_epic,
+            epic_story_mapping.primary_epic_confidence,
+            epic_story_mapping.primary_epic_match_type,
+            epic_story_mapping.secondary_epics,
+        )
     
     def _determine_story_task_placement(
         self,

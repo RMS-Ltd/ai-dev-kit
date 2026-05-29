@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-29 (E6:S09:T02 — FR-081 brownfield INSTALL chapter)
-**Version:** v0.6.9.2+2
+**Last Updated:** 2026-05-29 (merge `dev` → `main`: T22/T07/E4T07/T62 + FR-081)
+**Version:** v0.6.9.2+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,22 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 5: Documentation Management (Story 1 — FR Repo)**
+- **[E5:S01:T62](epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md)** — **FR-062**: install receipt JSON, release CI workflow, installer hardening (published artifacts may follow).
+  **Completed:** `2026-05-29T16:00:00Z` | **Version:** `v0.5.1.62+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E5S01T62-github-release-install-fr062.md)
+
+#### **Epic 4: Intelligent epic matching (Story 8)**
+- **[E4:S08:T07](epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md)** — **FR-011**: multi-epic task split engine, CLI, intake hook, tests.
+  **Completed:** `2026-05-29T15:30:00Z` | **Version:** `v0.4.8.7+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
+
+#### **Epic 2: Workflow Management Framework (Story 16 — Perpetual)**
+- **[E2:S16:T07](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)** — **FR-050**: UKW FBU temporal sync, `fbu-completed` dashboard, agent docs + skill wiring.
+  **Completed:** `2026-05-29T15:15:00Z` | **Version:** `v0.2.16.7+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md)
+
+#### **Epic 2: Workflow management (Story 1)**
+- **[E2:S01:T22](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md)** — **BR-075**: perpetual RW `VERSION_BUILD` must increment in `version_file` (validator fail-closed).
+  **Completed:** `2026-05-29T15:00:00Z` | **Version:** `v0.2.1.22+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
 
 #### **Epic 6: Installation and adopter integration (Story 9)**
 - **[E6:S09:T02](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)** — **FR-081**: brownfield modular adoption — INSTALL chapter, matrices, worked example, installer messaging.

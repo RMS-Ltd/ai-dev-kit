@@ -129,6 +129,55 @@ def validate_perpetual_guardrails(
     return errors, warnings
 
 
+def get_version_build_from_git_ref(version_file: Path, git_ref: str) -> Optional[int]:
+    """Read VERSION_BUILD from a git ref (e.g. HEAD) for BR-075 perpetual RW checks."""
+    rel = version_file.as_posix()
+    try:
+        result = subprocess.run(
+            ["git", "show", f"{git_ref}:{rel}"],
+            capture_output=True,
+            text=True,
+            check=True,
+            cwd=Path.cwd(),
+        )
+    except subprocess.CalledProcessError:
+        return None
+    match = re.search(r"VERSION_BUILD\s*=\s*(\d+)", result.stdout)
+    return int(match.group(1)) if match else None
+
+
+def validate_perpetual_build_increment(
+    version_file: Path,
+    epic: int,
+    story: int,
+    task: int,
+    current_build: int,
+    task_doc_content: Optional[str],
+    policy_zero_ok: bool,
+) -> Tuple[bool, List[str]]:
+    """BR-075: fail closed when same-task perpetual RW does not increment VERSION_BUILD."""
+    if policy_zero_ok:
+        return True, []
+    if not is_perpetual_task(task, task_doc_content or ""):
+        return True, []
+
+    head_build = get_version_build_from_git_ref(version_file, "HEAD")
+    if head_build is None:
+        if current_build < 1:
+            return False, [
+                "❌ PERPETUAL BUILD (BR-075): VERSION_BUILD must be >= 1 when version_file is new to git."
+            ]
+        return True, []
+
+    if current_build <= head_build:
+        return False, [
+            f"❌ PERPETUAL BUILD NOT INCREMENTED (BR-075): {version_file} has VERSION_BUILD={current_build} "
+            f"but HEAD has {head_build}. Same-task perpetual release E{epic}:S{story}:T{task} requires "
+            f"BUILD > {head_build}. Run RW Step 2 (bump version_file) before Step 7 (kanban)."
+        ]
+    return True, []
+
+
 def extract_task_id_canonical(content: str) -> Optional[Tuple[int, int, int]]:
     """
     Extract Task ID from canonical section, preferring **Value:** or **Full Task ID:**.
@@ -1230,6 +1279,9 @@ def validate_version_bump(
     print(f"Current VERSION_TASK: {current_task}")
     
     # NEW: Validate Task document presence and alignment
+    task_doc_content = ""
+    task_doc_path: Optional[Path] = None
+    format_type = "not_found"
     if requested_task_doc is not None and requested_task_doc.exists():
         task_doc_path = requested_task_doc
         task_doc_content = requested_task_doc.read_text()
@@ -1346,7 +1398,18 @@ def validate_version_bump(
                     f"BUILD=0 is only valid for doc-init builds (first-time E/S/T document creation)."
                 )
             print(f"Same task detected - BUILD should be incremented (current BUILD: {current_build})")
-            # Note: We can't validate exact BUILD increment without knowing previous BUILD
+            perpetual_content = task_doc_content if format_type != "not_found" else ""
+            inc_ok, inc_errors = validate_perpetual_build_increment(
+                version_file,
+                epic,
+                story,
+                completed_task,
+                current_build,
+                perpetual_content,
+                policy_zero_ok,
+            )
+            if not inc_ok:
+                errors.extend(inc_errors)
     
     elif completed_task < current_task:
         # Out-of-order completion

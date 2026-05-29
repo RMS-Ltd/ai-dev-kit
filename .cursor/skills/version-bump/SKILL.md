@@ -3,40 +3,24 @@ name: version-bump
 description: Updates version files following RC.EPIC.STORY.TASK+BUILD schema
 ---
 
-> **Use with agent reasoning; do not treat as deterministic script.** Apply schema and integration points via intelligent analysis; adapt to context.
+> **Use with agent reasoning; do not treat as deterministic script.** Load paths from `rw-config.yaml` at project root.
 
 ## Version Bump Procedure
 
 ### Step 1: Update Version File
-1. Locate `src/fynd_deals/version.py` file
-2. Update version constants to match new version schema
-3. Update version string comment with task context
+1. Read `version_file` from `rw-config.yaml` (ai-dev-kit: `src/ai_dev_kit/version.py`)
+2. Update `VERSION_RC`, `VERSION_EPIC`, `VERSION_STORY`, `VERSION_TASK`, `VERSION_BUILD`
+3. Update trailing `# Current:` comment with task context
 
-### Step 2: Validate Version Format
-1. Verify version follows RC.EPIC.STORY.TASK+BUILD pattern
-2. Validate each component:
-   - RC: 0 for development, 1+ for release candidates
-   - EPIC: Current active epic number
-   - STORY: Story within epic
-   - TASK: Task within story
-   - BUILD: 0 for doc-init, 1+ for functional changes
+### Step 2: Perpetual tasks (BR-075)
+- For `RW` / `RW -k` on perpetual maintenance tasks: **same E/S/T**, increment **`VERSION_BUILD` only** before any kanban edits.
+- Step 9 `validate_version_bump.py` fails if staged BUILD ≤ HEAD BUILD for perpetual same-task releases.
 
-### Step 3: Update Version Comments
-1. Update comment for current version string
-2. Include task context and purpose
-3. Ensure consistency with changelog entries
-
-## Schema Rules
-
-**Format:** `RC.EPIC.STORY.TASK+BUILD`
-**Example:** `0.6.6.41+0` (E6:S06:T41+0)
-
-**Build Types:**
-- `+0`: Task creation (documentation only)
-- `+1+`: Functional changes and implementations
+### Step 3: Validate Version Format
+- Pattern: `RC.EPIC.STORY.TASK+BUILD`
+- `+0`: doc-init only; `+1+`: functional / perpetual run increments
 
 ## Integration Points
 
-- Works with RW Agent during release workflows
-- Supports changelog generation for version updates
-- Integrates with git commit operations
+- RW Agent Step 2 (before Step 7)
+- `validate_version_bump.py --strict --requested E:S:T --art`
