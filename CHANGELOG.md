@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.2+2] - 29-05-26
+## [0.6.9.2+3] - 29-05-26
 
-E6:S09:T02 — FR-081 brownfield modular adoption: INSTALL brownfield chapter (matrices, RW-only path, worked example), IPP-E6S09T02, satellite doc links, installer messaging, structural tests. SemVer **v0.4.815+2**.
+E6:S09:T02 — FR-081 kanban forensic sync: task doc last-updated (clear stale pending RW), board version stamp. SemVer **v0.4.815+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.2+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.2+3.md)
 
 ---

@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.6.9.2+2] - 29-05-26
+
+E6:S09:T02 — FR-081 brownfield modular adoption: INSTALL brownfield chapter (matrices, RW-only path, worked example), IPP-E6S09T02, satellite doc links, installer messaging, structural tests. SemVer **v0.4.815+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.2+2.md)
+---
 ## [0.1.4.6+2] - 26-05-26
 
 E1:S04:T06 (`RW`, `--art`) — FR-099 Phase 3: public `earlution/ai-dev-kit` rebirth (genesis bootstrap). SemVer **v0.4.812+2**.

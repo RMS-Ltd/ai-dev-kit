@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-05-29 (RW **v0.6.9.2+2** — **E6:S09:T02** COMPLETE; story **E6:S09** complete)
+**Last updated:** 2026-05-29 (RW **v0.6.9.2+3** — **E6:S09:T02** forensic sync; story **E6:S09** complete)
 **Version:** v0.6.9.6+3
 **Code:** E6S09
 

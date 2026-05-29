@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 6      # Epic 6
 VERSION_STORY = 9     # Story 9
 VERSION_TASK = 2      # Task 2
-VERSION_BUILD = 2     # Build 2: FR-081 brownfield modular adoption (INSTALL chapter, matrices, installer messaging)
+VERSION_BUILD = 3     # Build 3: FR-081 kanban forensic sync (--art RW)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.2+2
+# Current: 0.6.9.2+3
