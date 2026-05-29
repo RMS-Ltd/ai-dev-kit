@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E2:S08:T08](../epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md)  
+**Implementing Task:** [E5:S01:T44](../epics/Epic-5/Story-001-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)  
 **Historical registry:** E5:S01:T44
 
 ---

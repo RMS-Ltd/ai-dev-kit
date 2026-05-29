@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+16] - 29-05-26
+
+E2:S16:T04 (perpetual UKW) — Kanban init: kboard/fbuboard bidirectional wiring; FBU task links; **FR-044** implementing task fix. SemVer **v0.4.822+16**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+16.md)
+
+---
+
 ## [0.4.19.8+1] - 29-05-26
 
 E4:S19:T08 (FR-072) — Kanban init: batch semantic FBU→task wiring (Approach D); **fbuboard** / **fr-br** links. SemVer **v0.4.825+1**.
