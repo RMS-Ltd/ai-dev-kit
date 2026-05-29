@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # Update Kanban Workflow (UKW) - Agent Execution Guide
 
-**Version:** 1.1.0  
-**Last Updated:** 2026-01-22  
+**Version:** 1.2.0  
+**Last Updated:** 2026-05-29 (FR-050 — FBU temporal sync substeps)  
 **Enhanced:** E5:S01:T34 - Added granular control via use case flags (`-u`, `-p`, `-a`) and flexible task targeting syntax  
 **Related:** Epic 2 - Workflow Management Framework, Epic 4 - Kanban Framework
 
@@ -132,8 +132,8 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 ## 📋 Workflow Steps
 
 **Step Execution Based on Flags:**
-- **Comprehensive (no flags):** All steps including Step 2.5 (gap discovery: TODO tasks not on board, open FRs/BRs without tasks)
-- **Bookkeeping (`-u` only):** Steps 1-5, 7-9 (skip Step 2.5, skip Step 6 MoSCOW prioritization)
+- **Comprehensive (no flags):** All steps including Step 2.5 (gap discovery: TODO tasks not on board, open FRs/BRs without tasks) and Steps 6.5–6.7 (FBU temporal sync per FR-050)
+- **Bookkeeping (`-u` only):** Steps 1-5, 6.5-6.7 (FBU sync), 7-9 (skip Step 2.5, skip Step 6 MoSCOW prioritization)
 - **Update Priorities (`-p` only):** Step 6 only (update MoSCOW priorities)
 - **Assign Priorities (`-a <target>` only):** Step 6 only (assign priorities to targets)
 - **Combined flags:** Run specified sub-workflows only (Step 2.5 runs only when comprehensive)
@@ -607,6 +607,82 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 5. **PROCEED:**
    - Report reconciliation stats: audited rows, rows removed, exceptions kept, timestamps normalized, and whether concurrency revalidation was triggered.
+   - Move to Step 6.6 (FBU temporal tracking).
+
+**Scope:** Runs on **comprehensive** (`UKW` no flags) and **bookkeeping** (`UKW -u`) paths. Skipped on `-p` / `-a` only runs.
+
+**Related:** [FR-050](../../../../../../docs/project-management/kanban/fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [FR-076](../../../../../../docs/project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md), [FR-097](../../../../../../docs/project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) (stamp authority).
+
+---
+
+### Step 6.6: FBU Temporal Tracking (`fbu-completed.md`) — FR-050
+
+**Purpose:** Archive resolved FR/BR/UXR items with ISO 8601 completion timestamps and maintain the **20 most recent** completions dashboard in the same UKW run as fbuboard cleanup.
+
+**Skill (canonical interface):** [`.cursor/skills/fr-br-uxr-completed-update/SKILL.md`](../../../../../../.cursor/skills/fr-br-uxr-completed-update/SKILL.md) — invoke for each newly resolved FBU removed from `fbuboard.md` active sections in Step 6.5.
+
+**Agent Execution:**
+
+1. **ANALYZE:**
+   - Collect FBU IDs pruned in Step 6.5 (terminal source status, no unresolved-verification exception).
+   - Read linked `fr-br/*.md` for title, type (FR/BR/UXR), implementing task, and release version when available.
+   - Load `fbu-completed.md` and `kanban-completed.md` for dashboard format parity.
+
+2. **DETERMINE:**
+   - Completion timestamp: use actual resolution time when known; otherwise UTC now (`YYYY-MM-DDTHH:MM:SSZ`).
+   - Whether each ID already exists in `fbu-completed.md` (update vs append).
+   - Dashboard rows to retain (top 20 by completion time, most recent first).
+
+3. **EXECUTE:**
+   - For each newly resolved FBU, apply the skill update interface (ID, type, status `COMPLETE`, version, timestamp, completing agent `UKW`).
+   - Append or refresh chronological completion entries in the body sections when required.
+   - Rebuild the **`## 20 Most Recently Completed FR/BR/UXR Items`** table: columns **ID | Type | Description | Completed | Version | Agent** (match `kanban-completed.md` dashboard conventions).
+   - Update `fbu-completed.md` header metadata (`Last Updated`, `Version`) when release context is known.
+
+4. **VALIDATE:**
+   - All new completions use ISO 8601 `Z` timestamps.
+   - Dashboard contains at most 20 rows, sorted descending by completion time.
+   - No duplicate dashboard IDs; archive body cross-references remain valid.
+
+5. **PROCEED:**
+   - Document FBU IDs appended/updated and dashboard churn.
+   - Move to Step 6.7.
+
+**FR-097 note:** Step 6.6 does **not** modify `fbuboard.md` row `Last modified` stamps; temporal evidence for completions lives in `fbu-completed.md` and source FR/BR/UXR docs.
+
+---
+
+### Step 6.7: FBU Cross-Document Consistency — FR-050
+
+**Purpose:** Validate alignment across `fbuboard.md`, `fbu-completed.md`, and `fbu-structure.md` after Steps 6.5–6.6.
+
+**Agent Execution:**
+
+1. **ANALYZE:**
+   - **fbuboard ↔ source:** active MoSCOW rows must not reference terminal `fr-br/*.md` status (except documented verification exceptions).
+   - **fbu-completed ↔ source:** every dashboard/archive entry for an open FBU must match source terminal status; completed FBUs must not remain on active fbuboard rows.
+   - **fbu-structure ↔ inventory:** structure doc inventory matches `fr-br/` (and linked UXR paths); links resolve.
+
+2. **DETERMINE:**
+   - Drift items: stale active rows, missing completed entries, broken links, version marker mismatches.
+
+3. **EXECUTE:**
+   - Fix drift in the same UKW session when safe (re-run Step 6.5/6.6 transforms as needed).
+   - Refresh `fbu-structure.md` inventory/metadata when inventory changed.
+   - Record a short reconciliation checklist in the UKW change summary.
+
+4. **VALIDATE:**
+   - No terminal-status FBU remains on active fbuboard sections (unless explicit exception).
+   - Pruned FBUs from Step 6.5 appear in `fbu-completed.md` with timestamps.
+   - Structure links and cross-references resolve.
+
+5. **PROCEED:**
+   - Report cross-doc check results (pass/fail + fixes applied).
+   - Move to Step 7.
+
+**Scope:** Same as Step 6.5–6.6 (comprehensive and bookkeeping). Optional doc-only checklist when validators are not run.
+
+---
 
 **Key Rules:**
 - **CRITICAL: MoSCOW list is updated LAST** (after all other board updates)
@@ -644,12 +720,14 @@ After completing UKW, users typically run RW to commit the kanban documentation 
    - Check version marker consistency
    - Verify link integrity
    - Check for contradictions
+   - **FBU (FR-050):** Re-verify `fbuboard.md` ↔ `fbu-completed.md` ↔ `fbu-structure.md` when Steps 6.5–6.7 ran
 
 2. **DETERMINE:**
    - Status alignment issues
    - Version inconsistencies
    - Broken links
    - Contradictions
+   - FBU cross-surface drift (if any)
 
 3. **EXECUTE:**
    - Check task status matches story task checklist
@@ -657,16 +735,18 @@ After completing UKW, users typically run RW to commit the kanban documentation 
    - Verify version markers consistent across documents
    - Check all internal links resolve correctly
    - Identify any contradictions
+   - **FBU:** Confirm Step 6.7 checklist passed; run `validate_board_stamp_diff.py` before stage when boards were touched (FR-097)
 
 4. **VALIDATE:**
    - All documents consistent
    - No contradictions found
    - Links valid
+   - FBU surfaces consistent (when in scope)
 
 5. **PROCEED:**
    - Document validation results
    - Report any issues found
-   - Move to Step 7
+   - Move to Step 8
 
 **Key Checks:**
 - Task marked complete in story checklist → Task document shows COMPLETE
@@ -674,6 +754,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 - Epic status matches story completion state
 - Version markers align across documents
 - All links resolve
+- **FBU:** Terminal source docs not on active fbuboard; completions in `fbu-completed.md` with ISO timestamps; 20-recent dashboard current
 
 ---
 
