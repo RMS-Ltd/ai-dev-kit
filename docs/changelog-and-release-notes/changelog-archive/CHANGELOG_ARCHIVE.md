@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.7.1.11+1] - 29-05-26
+
+E7:S01:T11 — FR-101 governance intake. SemVer **v0.4.815+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.11+1.md)
+---
 ## [0.6.9.2+3] - 29-05-26
 
 E6:S09:T02 — FR-081 kanban forensic sync. SemVer **v0.4.815+3**.

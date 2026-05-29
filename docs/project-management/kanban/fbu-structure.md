@@ -43,7 +43,6 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 ### Medium Priority (Could Have - C)
 
-- **FR-031** – Multi-Agent Coordination Feasibility Investigation - TODO (C priority, Investigate multi-agent coordination possibilities) - [FR-031](fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md) | [E5:S01:T31](epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)
 - **FR-035** – Task Template Cross-Wiring Section - TODO (MEDIUM, Cross-wiring section in task templates) - [FR-035](fr-br/FR-035-task-template-cross-wiring-section.md) | [E5:S01:T35](epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)
 - **FR-034** – UKW Granular Control and Use Case Flags - TODO (MEDIUM, Granular control for Update Kanban Workflow) - [FR-034](fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
 - **FR-032** – Release Candidate Readiness Gap Analysis - TODO (MEDIUM, Analyze gaps in release candidate readiness) - [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
@@ -65,7 +64,6 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **FR-027** – Add CMW to Workflow Management Package Documentation - TODO (LOW, Documentation for Changelog Management Workflow) - [FR-027](fr-br/FR-027-add-cmw-to-workflow-management-package-documentation.md)
 - **FR-026** – Canonical Perpetual Task for Changelog Maintenance - TODO (LOW, Perpetual task for changelog maintenance) - [FR-026](fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)
 - **FR-025** – Changelog Management and Archival Workflow - TODO (LOW, Workflow for changelog management) - [FR-025](fr-br/FR-025-changelog-management-and-archival-workflow.md)
-- **FR-024** – IDE Linter Check Before Commit in Release Workflow - TODO (LOW, Linter integration in Release Workflow) - [FR-024](fr-br/FR-024-ide-linter-check-before-commit-in-release-workflow.md)
 - **FR-023** – Update Kanban Workflow (UKW) - TODO (LOW, Updates to Update Kanban Workflow) - [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md)
 - **FR-022** – Policy Docs Machine-Readable Salience - TODO (LOW, Machine-readable policy documentation) - [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md)
 - **FR-020** – Version Validator Abstract Space Awareness - TODO (LOW, Abstract space awareness in version validator) - [FR-020](fr-br/FR-020-version-validator-abstract-space-awareness.md)

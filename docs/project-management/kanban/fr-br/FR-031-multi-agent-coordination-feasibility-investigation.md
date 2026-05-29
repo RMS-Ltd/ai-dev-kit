@@ -12,9 +12,10 @@ housekeeping_policy: keep
 **Submitted:** 2026-01-14  
 **Submitted By:** AI Agent (ai-dev-kit)  
 **Priority:** C (Could Have)  
-**Status:** ACCEPTED  
+**Status:** WON'T HAVE (2026-05-29 — closed off board; investigation deferred)  
+**Implementing Task:** [E5:S01:T31](../epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)  
 **GitHub Issue:** [TBD]  
-**Version:** v0.5.1.31+0 (migrated from v0.5.0.31+0)
+**Version:** v0.5.1.31+0 (migrated from v0.5.0.31+0; no delivery RW)
 
 ---
 

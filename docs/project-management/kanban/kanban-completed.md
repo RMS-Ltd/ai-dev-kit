@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-29 (merge `dev` → `main`: T22/T07/E4T07/T62 + FR-081)
-**Version:** v0.6.9.2+3
+**Last Updated:** 2026-05-29 (RW: E2:S16:T04 — UKW kanban hygiene)
+**Version:** v0.2.16.4+14
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,18 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 7: Codebase Maintenance (Story 1)**
+- **[E7:S01:T06](epics/Epic-7/Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md)** — **FR-057**: Update Changelog Workflow (UCW/CMW scope).
+  **Completed:** `2026-03-16T17:00:00Z` | **Version:** `v0.7.1.7+4` | **Agent:** `RW` | [FR-057](fr-br/FR-057-update-changelog-workflow.md)
+
+#### **Epic 2: Workflow management (Story 1)**
+- **[E2:S01:T08](epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)** — **FR-024**: RW Step 9.6 IDE/linter check before commit (story-level task).
+  **Completed:** `2026-05-29T00:00:00Z` | **Version:** `v0.2.1.8+1` | **Agent:** `RW` | [FR-024](fr-br/FR-024-ide-linter-check-before-commit-in-release-workflow.md)
+
+#### **Epic 5: Documentation Management (Story 1 — FR Repo)**
+- **[E5:S01:T31](epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)** — **FR-031**: Multi-agent coordination feasibility — **WON'T HAVE** (deferred off active board).
+  **Completed:** `2026-05-29T00:00:00Z` | **Version:** `v0.5.1.31+0` | **Agent:** `Maintainer` | [FR-031](fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md)
 
 #### **Epic 5: Documentation Management (Story 1 — FR Repo)**
 - **[E5:S01:T62](epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md)** — **FR-062**: install receipt JSON, release CI workflow, installer hardening (published artifacts may follow).

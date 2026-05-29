@@ -1,10 +1,21 @@
+---
+lifecycle: evergreen
+ttl_days: null
+created_at: 2026-03-15T00:00:00Z
+expires_at: null
+housekeeping_policy: keep
+---
+
 # Task: Implement Update Changelog Workflow (UCW)
 
+**Task ID:** E7:S01:T06  
+**Status:** COMPLETE  
 **Epic:** E7 – Codebase Maintenance and Review  
 **Story:** S01 – Codebase Maintenance Tasks  
-**Task ID:** T06  
-**Related FR:** FR-057 Update Changelog Workflow  
-**Priority:** HIGH
+**Related FR:** [FR-057](../../../fr-br/FR-057-update-changelog-workflow.md)  
+**Priority:** HIGH  
+**Last updated:** 2026-05-29 (board hygiene — confirmed COMPLETE **v0.7.1.7+4**)  
+**Version:** v0.7.1.7+4
 
 ---
 

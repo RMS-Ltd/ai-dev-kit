@@ -79,7 +79,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 - **E7:S01:T01** – PERPETUAL: Address IDE-Flagged Error, Warning, and Info level problems
 - **E7:S01:T02** – COMPLETE: Create maintenance task prioritization framework
 - **E7:S01:T05** – PERPETUAL: Markdown Maintenance (first maintenance cycle completed v0.7.1.5+2)
-- [ ] **E7:S01:T06** – Implement Update Changelog Workflow (UCW) – TODO (v0.7.1.5+6 – Implement workflow + tooling enforcing latest-only changelog policy, archival automation, RW integration per FR-057)
+- [x] **E7:S01:T06** – Implement Update Changelog Workflow (UCW) – ✅ COMPLETE (v0.7.1.7+4 – FR-057 / CMW)
 
 **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E7:S01:T01`, not `T01` alone).
 

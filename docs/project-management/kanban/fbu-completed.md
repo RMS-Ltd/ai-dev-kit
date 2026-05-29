@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-29 (**FR-081** IMPLEMENTED v0.6.9.2+2)
-**Version:** v0.6.9.2+2
+**Last Updated:** 2026-05-29 (RW: E2:S16:T04 — UKW kanban hygiene)
+**Version:** v0.2.16.4+14
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,9 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-031 | FR | Multi-agent coordination feasibility — **WON'T HAVE** (deferred; E5:S01:T31) | 2026-05-29 | v0.5.1.31+0 | Maintainer |
+| FR-024 | FR | IDE/linter check before RW commit — Step 9.6 (E2:S01:T08) | 2026-05-29 | v0.2.1.8+1 | RW |
+| FR-057 | FR | Update Changelog Workflow (UCW/CMW) — E7:S01:T06 | 2026-03-16 | v0.7.1.7+4 | RW |
 | FR-081 | FR | Brownfield modular adopter integration — INSTALL chapter, matrices, installer messaging (E6:S09:T02) | 2026-05-29 | v0.6.9.2+2 | RW |
 | FR-082 | FR | Installation canonical repo — public `RMS-Ltd/ai-dev-kit` bootstrap + rewire (E6:S09:T03) | 2026-05-28 | v0.6.9.3+2 | RW |
 | FR-099 | FR | Book/Epic-24 spin-off — private `hf-ai-dev-kit` + public `earlution/ai-dev-kit` (ADR-006; T03–T07) | 2026-05-26 | v0.1.4.7+2 | RW |

@@ -27,7 +27,7 @@ housekeeping_policy: keep
 - [x] **E7:S01:T03 – Document maintenance workflow processes** - ✅ COMPLETE (v0.7.1.3+1 – Maintenance workflow processes documented: IDE-flagged issues workflow, prioritized maintenance workflow, scheduled maintenance workflow, emergency maintenance workflow, with Kanban and tool integration)
 - [x] **E7:S01:T04 – Integrate maintenance tasks with Kanban framework** - ✅ COMPLETE (v0.7.1.4+1 – Maintenance tasks integrated with Kanban framework: task creation, prioritization mapping, lifecycle tracking, Epic 4 integration, examples, and best practices documented)
 - [ ] **E7:S01:T05 – Markdown Maintenance (Perpetual Task)** - PERPETUAL (v0.7.1.5+1 – Perpetual task established for markdown maintenance across all documentation files)
-- [ ] **E7:S01:T06 – Implement Update Changelog Workflow (UCW)** - TODO (v0.7.1.5+6 – FR-057 defines UCW scope for latest-only changelog policy, archival automation, and RW integration)
+- [x] **E7:S01:T06 – Implement Update Changelog Workflow (UCW)** - ✅ COMPLETE (v0.7.1.7+4 – FR-057 / CMW scope; board hygiene 2026-05-29) - [Task Document](Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md) | [FR-057](../../fr-br/FR-057-update-changelog-workflow.md)
 - [ ] **E7:S01:T07 – Markdown Maintenance Workflow (MMW)** - TODO (v0.7.1.6+2 – FR-058 defines workflow for resolving markdown lint blockers and coordinating perpetual maintenance cycles)
 - [ ] **E7:S01:T08 – Task Doc Naming Standardization** - IN PROGRESS (v0.7.1.6+2 – Establishes `EddSddTdd-[title].md` canonical naming and migration plan)
 - [ ] **E7:S01:T09 – Kanban Template Governance & UXR Ownership** - TODO (v0.7.1.9+3 – UXR-005 **Implementing Task** in UXR doc; UXR-005 ACs still open — see task doc)

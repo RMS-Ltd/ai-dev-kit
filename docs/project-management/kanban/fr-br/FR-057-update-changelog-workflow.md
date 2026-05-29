@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-15  
 **Submitted By:** AI Assistant (per user directive)  
 **Priority:** HIGH  
-**Status:** PROPOSED
+**Status:** IMPLEMENTED (v0.7.1.7+4 — E7:S01:T06 / CMW; board hygiene 2026-05-29)
 
-**Implementing Task:** [E7:S01:T06](../epics/Epic-7/Story-001-codebase-maintenance-tasks.md)
+**Implementing Task:** [E7:S01:T06](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md) (**v0.7.1.7+4**)
 
 ---
 

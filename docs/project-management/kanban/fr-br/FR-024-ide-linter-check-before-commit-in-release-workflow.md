@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-18  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** PENDING
+**Status:** RESOLVED (v0.2.1.8+1 — RW Step 9.6 IDE/linter check; E2:S01:T08 COMPLETE)
 
-**Implementing Task:** [E2:S01:T08](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
+**Implementing Task:** [E2:S01:T08](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) (story-level; **v0.2.1.8+1**)
 
 ---
 
