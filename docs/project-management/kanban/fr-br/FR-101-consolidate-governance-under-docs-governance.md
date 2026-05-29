@@ -75,7 +75,7 @@ Governance policies for the maintainer book workspace are split across rituals, 
 
 - [ ] **AC0:** [GOVERNANCE-REHOUSING-INVENTORY.md](../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) complete and **maintainer-approved** before any `git mv`.
 - [ ] **AC1:** FR-101-F1..F6 satisfied (or explicitly deferred in inventory with rationale).
-- [ ] **AC2:** IPW package linked from task when execution proceeds (`IPP-E7S01T11-*.md`).
+- [x] **AC2:** IPW package linked from task when execution proceeds (`IPP-E7S01T11-*.md`). *(Filed: [IPP-E7S01T11](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md).)*
 - [ ] **AC3:** `docs/maintenance/book-repo-docs-scope.md` (create or update) lists `docs/governance/` as **KEEP**.
 - [ ] **AC4:** No broken governance links from active book surfaces (`fr-br/`, `kanban-board-guide.md`, `.cursorrules`, `.claude/commands/*`).
 

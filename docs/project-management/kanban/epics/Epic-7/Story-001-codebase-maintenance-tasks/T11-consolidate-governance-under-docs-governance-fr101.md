@@ -11,10 +11,10 @@ housekeeping_policy: keep
 **Task ID:** E7:S01:T11  
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last updated:** 2026-05-29 (v0.7.1.11+1 — FR-101 intake RW)  
+**Last updated:** 2026-05-29 (IPW — IPP filed)  
 **Started:** 2026-05-29  
 **Completed:** [TBD]  
-**Version:** v0.7.1.11+1  
+**Version:** v0.7.1.11+2  
 **Code:** E7S01T11
 
 ---
@@ -37,12 +37,17 @@ Deliver [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governa
 
 ## Input
 
+Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E7S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md))
+
+Publication N/A Reason: FR-042 consolidated IPP packages specification, test design, and implementation plan in one durable artifact under `docs/implementation-cycles/`; no separate ICW trio or Docusaurus publication required (BR-066).
+
+- **[IPP-E7S01T11](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)** — specification, test design, implementation plan (IPW)
 - **[FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — requirements and acceptance criteria
 - **[GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)** — Phase 0 SoT (draft at intake)
 - [kanban-governance-policy.md](../../../rituals/policy/kanban-governance-policy.md) (current book path)
 - [docs/architecture/README.md](../../../../architecture/README.md)
 - [book-repo-adk-removal-inventory.md](../../../../maintenance/fr099-phase4-rewire-and-verify.md) — inventory methodology (FR-099)
-- **IPW planning artifact (when used):** Run `IPW E7:S01:T11` → `IPP-E7S01T11-*.md` under `docs/implementation-cycles/`
+- **IPW planning artifact:** [`IPP-E7S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (filed 2026-05-29)
 
 ---
 
@@ -61,7 +66,7 @@ Deliver [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governa
 
 - [ ] **AC0:** Inventory complete and **maintainer-approved** before any `git mv`.
 - [ ] **AC1:** [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md) functional requirements satisfied.
-- [ ] **AC2:** IPP linked from this task when execution proceeds.
+- [x] **AC2:** IPP linked from this task when execution proceeds. *(IPP-E7S01T11 filed — implementation still requires AC0 sign-off.)*
 - [ ] **AC3:** `docs/maintenance/book-repo-docs-scope.md` lists `docs/governance/` as **KEEP**.
 - [ ] **AC4:** No broken governance links from `fr-br/`, `kanban-board-guide.md`, `.cursorrules`, `.claude/commands/*`.
 
@@ -125,6 +130,7 @@ Deliver [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governa
 
 ## References
 
+- [IPP-E7S01T11-consolidate-governance-under-docs-governance.md](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
@@ -134,5 +140,6 @@ Deliver [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governa
 ## Next Actions
 
 - [ ] Complete and obtain sign-off on Phase 0 inventory.
-- [ ] Run `IPW E7:S01:T11` when ready for execution planning.
+- [x] Run `IPW E7:S01:T11` when ready for execution planning.
+- [ ] Obtain maintainer sign-off on inventory (AC0) before `git mv`.
 - [ ] Do not run `git mv` until AC0 is satisfied.

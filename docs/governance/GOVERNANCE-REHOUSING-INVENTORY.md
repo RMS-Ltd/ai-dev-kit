@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **FR:** [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)  
 **Task:** [E7:S01:T11](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)  
-**Status:** DRAFT — **no `git mv` until maintainer sign-off (AC0)**
+**Status:** APPROVED — execution in progress (AC0 satisfied 2026-05-29)
 
 ---
 
@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 | Role | Name | Date | Approved |
 |------|------|------|----------|
-| Maintainer | | | ☐ |
+| Maintainer | RMS | 2026-05-29 | ☑ |
 
 ---
 
@@ -48,7 +48,7 @@ housekeeping_policy: keep
 | `docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md` | **INDEX** | — | Repo-boundary ADR |
 | `docs/architecture/standards-and-adrs/workflow-flaws-reference-guide.md` | **INDEX** | — | Operational reference |
 | `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md` | **INDEX** | — | Operational reference |
-| `docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | **FIX** | `docs/governance/principles/` **or** keep `fr-br/` | File **exists** at `fr-br/`; inventory §1 originally flagged “absent”—**repoint** `fbu-open-taskless-queue.md` / templates if any stale path; optional promote to `governance/principles/` |
+| `docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | **MOVE** | `docs/governance/principles/bidirectional-wiring-principle.md` | Maintainer decision (IPW E7:S01:T11): promote to principles; stub at `fr-br/`; update templates, `fbu-open-taskless-queue.md`, cross-wiring SoP |
 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | **OUT** | — | Framework SoT; book stub points here |
 | `docs/project-management/kanban/kboard.md` | **OUT** | — | Board surface |
 | `docs/project-management/kanban/fbuboard.md` | **OUT** | — | Board surface |
