@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-29 (RW: E2:S16:T04 — UKW kanban hygiene)
-**Version:** v0.2.16.4+14
+**Last Updated:** 2026-05-29 (RW: E7:S01:T11 — FR-101 governance consolidation)
+**Version:** v0.7.1.11+8
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -21,6 +21,9 @@ housekeeping_policy: keep
 ## 20 Most Recently Completed Tasks
 
 #### **Epic 7: Codebase Maintenance (Story 1)**
+- **[E7:S01:T11](epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)** — **FR-101**: Consolidate governance under `docs/governance/` (Waves 0–F; ADR-007).
+  **Completed:** `2026-05-29T21:30:00Z` | **Version:** `v0.7.1.11+8` | **Agent:** `RW` | [FR-101](fr-br/FR-101-consolidate-governance-under-docs-governance.md) | [IPP-E7S01T11](../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
+
 - **[E7:S01:T06](epics/Epic-7/Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md)** — **FR-057**: Update Changelog Workflow (UCW/CMW scope).
   **Completed:** `2026-03-16T17:00:00Z` | **Version:** `v0.7.1.7+4` | **Agent:** `RW` | [FR-057](fr-br/FR-057-update-changelog-workflow.md)
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Governance documentation (book workspace)
 
-**Status:** Active — [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md) · [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) · [E7:S01:T11](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
+**Status:** Active (FR-101 complete **v0.7.1.11+8**) — [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md) · [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 
 ---
 

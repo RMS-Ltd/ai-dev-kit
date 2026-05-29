@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-29 (RW: E2:S16:T04 — UKW kanban hygiene)
-**Version:** v0.2.16.4+14
+**Last Updated:** 2026-05-29 (RW: E7:S01:T11 — FR-101 governance consolidation complete)
+**Version:** v0.7.1.11+8
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -30,7 +30,6 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E7:S01:T11** – Consolidate governance under `docs/governance/` (FR-101) - 🔄 IN PROGRESS (HIGH, Phase 0 inventory draft **v0.7.1.11+1**; sign-off before `git mv`) - [Task Document](epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) | [Story](epics/Epic-7/Story-001-codebase-maintenance-tasks.md) | [FR-101](fr-br/FR-101-consolidate-governance-under-docs-governance.md) | —No IPP— | Last modified: 2026-05-29 15:12 UTC
 - **E4:S19:T03** – FR-087: investigate why `E6:S07` became default housing and decide closure/scope - 🔄 IN PROGRESS (HIGH, forensic analysis of origin/codification plus close/split/narrow recommendation and guardrails; canonical IPP published) | Last modified: 2026-05-14 11:06 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks

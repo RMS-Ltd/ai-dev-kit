@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** OPEN (Phase 0 inventory draft — maintainer sign-off pending) — intake **v0.7.1.11+1** (`RW E7:S01:T11`, `--art`)
+**Status:** IMPLEMENTED — closure **v0.7.1.11+8** (`RW E7:S01:T11`, `--art`; Waves 0–F)
 
 **Implementing Task:** [E7:S01:T11](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 

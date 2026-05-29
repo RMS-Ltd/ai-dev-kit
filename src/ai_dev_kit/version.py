@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 7      # Epic 7
 VERSION_STORY = 1     # Story 1
 VERSION_TASK = 11     # Task 11 (FR-101 governance consolidation)
-VERSION_BUILD = 7     # Build 7: Wave E — active surface link sweep
+VERSION_BUILD = 8     # Build 8: Wave F — book-repo-docs-scope; task/FR closure
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.7.1.11+7
+# Current: 0.7.1.11+8

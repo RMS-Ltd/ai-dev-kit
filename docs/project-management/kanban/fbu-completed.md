@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-29 (RW: E2:S16:T04 — UKW kanban hygiene)
-**Version:** v0.2.16.4+14
+**Last Updated:** 2026-05-29 (RW: E7:S01:T11 — FR-101 complete)
+**Version:** v0.7.1.11+8
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-101 | FR | Consolidate governance under `docs/governance/` — ADR-007; Waves 0–F (E7:S01:T11) | 2026-05-29 | v0.7.1.11+8 | RW |
 | FR-031 | FR | Multi-agent coordination feasibility — **WON'T HAVE** (deferred; E5:S01:T31) | 2026-05-29 | v0.5.1.31+0 | Maintainer |
 | FR-024 | FR | IDE/linter check before RW commit — Step 9.6 (E2:S01:T08) | 2026-05-29 | v0.2.1.8+1 | RW |
 | FR-057 | FR | Update Changelog Workflow (UCW/CMW) — E7:S01:T06 | 2026-03-16 | v0.7.1.7+4 | RW |

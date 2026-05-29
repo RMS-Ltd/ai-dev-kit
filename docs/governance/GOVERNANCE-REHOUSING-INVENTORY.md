@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **FR:** [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)  
 **Task:** [E7:S01:T11](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)  
-**Status:** APPROVED — execution in progress (AC0 satisfied 2026-05-29)
+**Status:** COMPLETE — execution finished **v0.7.1.11+8** (2026-05-29)
 
 ---
 
@@ -54,7 +54,7 @@ housekeeping_policy: keep
 | `docs/project-management/kanban/fbuboard.md` | **OUT** | — | Board surface |
 | `docs/project-management/kanban/fr-br/` (intake queue) | **OUT** | — | Except principles promoted per FIX row |
 | `docs/maintenance/*` | **OUT** | — | Runbooks; index-only from governance README |
-| `docs/maintenance/book-repo-docs-scope.md` | **FIX** | Create/update in Phase 2 | AC3: add `docs/governance/` **KEEP** |
+| `docs/maintenance/book-repo-docs-scope.md` | **FIX** | Created (Wave F) | AC3: `docs/governance/` **KEEP** |
 
 ---
 

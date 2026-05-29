@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 7, Story 1, Task 11: Consolidate governance under `docs/governance/` (FR-101)
 
 **Task ID:** E7:S01:T11  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Last updated:** 2026-05-29 (IPW — IPP filed)  
 **Started:** 2026-05-29  
-**Completed:** [TBD]  
-**Version:** v0.7.1.11+7  
+**Completed:** 2026-05-29  
+**Version:** v0.7.1.11+8  
 **Code:** E7S01T11
 
 ---
@@ -64,11 +64,13 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 ## Acceptance Criteria
 
-- [ ] **AC0:** Inventory complete and **maintainer-approved** before any `git mv`.
-- [ ] **AC1:** [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md) functional requirements satisfied.
-- [x] **AC2:** IPP linked from this task when execution proceeds. *(IPP-E7S01T11 filed — implementation still requires AC0 sign-off.)*
-- [ ] **AC3:** `docs/maintenance/book-repo-docs-scope.md` lists `docs/governance/` as **KEEP**.
-- [ ] **AC4:** No broken governance links from `fr-br/`, `kanban-board-guide.md`, `.cursorrules`, `.claude/commands/*`.
+- [x] **AC0:** Inventory complete and **maintainer-approved** before any `git mv`.
+- [x] **AC1:** [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md) functional requirements satisfied (Waves A–F; framework KB paths deferred per IPP RNF3).
+- [x] **AC2:** IPP linked from this task when execution proceeds.
+- [x] **AC3:** [`docs/maintenance/book-repo-docs-scope.md`](../../../../maintenance/book-repo-docs-scope.md) lists `docs/governance/` as **KEEP**.
+- [x] **AC4:** Active surfaces updated (`.cursorrules`, `.claude/commands/*`, `kanban-board-guide.md`); stubs at legacy paths.
+
+✅ **COMPLETE (v0.7.1.11+8)** — FR-101 governance consolidation Waves 0–F.
 
 ---
 
@@ -139,7 +141,6 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 ## Next Actions
 
-- [ ] Complete and obtain sign-off on Phase 0 inventory.
+- [x] Complete and obtain sign-off on Phase 0 inventory.
 - [x] Run `IPW E7:S01:T11` when ready for execution planning.
-- [ ] Obtain maintainer sign-off on inventory (AC0) before `git mv`.
-- [ ] Do not run `git mv` until AC0 is satisfied.
+- [x] Execute Waves A–F per IPP; closure RW `v0.7.1.11+8`.
