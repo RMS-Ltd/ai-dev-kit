@@ -1,0 +1,71 @@
+# FR-062 / E5:S01:T62 — Build framework tarballs and publish to GitHub Releases.
+name: Framework release packages
+
+"on":
+  workflow_dispatch:
+  push:
+    tags:
+      - "*-v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install requests
+
+      - name: Build framework packages
+        run: bash "packages/frameworks/workflow mgt/scripts/build_all_packages.sh"
+
+      - name: Upload release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          DIST="packages/frameworks/dist/packages"
+          if [ ! -d "$DIST" ]; then
+            echo "Missing dist directory: $DIST"
+            exit 1
+          fi
+
+          upload_tag() {
+            local tag="$1"
+            local tarball="${DIST}/${tag}.tar.gz"
+            local hashfile="${DIST}/${tag}.tar.gz.sha256"
+            if [ ! -f "$tarball" ]; then
+              echo "No package for tag ${tag}: ${tarball}"
+              exit 1
+            fi
+            if [ ! -f "$hashfile" ]; then
+              echo "No hash file for tag ${tag}: ${hashfile}"
+              exit 1
+            fi
+            if ! gh release view "$tag" >/dev/null 2>&1; then
+              gh release create "$tag" \
+                --title "$tag" \
+                --notes "Framework package release ${tag} (automated FR-062 pipeline)."
+            fi
+            gh release upload "$tag" "$tarball" "$hashfile" --clobber
+            echo "Uploaded ${tag} assets to GitHub Releases"
+          }
+
+          if [ "${{ github.ref_type }}" = "tag" ]; then
+            upload_tag "${{ github.ref_name }}"
+          else
+            shopt -s nullglob
+            for tarball in "$DIST"/*.tar.gz; do
+              base=$(basename "$tarball" .tar.gz)
+              upload_tag "$base"
+            done
+          fi

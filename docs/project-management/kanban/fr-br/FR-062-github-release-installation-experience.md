@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-18  
 **Submitted By:** AI Assistant (per user directive)  
 **Priority:** HIGH  
-**Status:** PROPOSED
+**Status:** IMPLEMENTED
 
 **Implementing Task:** [E5:S01:T62](../epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md)
 

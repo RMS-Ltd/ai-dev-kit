@@ -18,9 +18,15 @@ import sys
 import tarfile
 from pathlib import Path
 from typing import Optional
+
 import requests
 import tempfile
-import shutil
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+if str(_SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPT_DIR))
+
+from install_receipt import emit_install_receipt, find_adopter_project_root
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -106,13 +112,51 @@ def compute_sha256_hash(file_path: Path) -> str:
     return sha256.hexdigest()
 
 
-def download_file(url: str, output_path: Path, verbose: bool = False) -> bool:
+def format_missing_release_help(
+    url: str,
+    *,
+    repo: str,
+    tag: str,
+    package_filename: str,
+    hash_filename: str,
+) -> str:
+    """Actionable message when GitHub release assets are missing (404)."""
+    releases_url = f"https://github.com/{repo}/releases"
+    tag_url = f"https://github.com/{repo}/releases/tag/{tag}"
+    return (
+        f"\nGitHub release assets were not found (HTTP 404).\n"
+        f"  URL: {url}\n"
+        f"  Expected tag: {tag}\n"
+        f"  Expected files on that release:\n"
+        f"    - {package_filename}\n"
+        f"    - {hash_filename}\n"
+        f"  Check: {tag_url}\n"
+        f"  All releases: {releases_url}\n"
+        f"  Maintainers: run the Framework release workflow "
+        f"(.github/workflows/framework-release.yml) or upload assets with "
+        f"upload_to_github_release.py after build_all_packages.sh.\n"
+    )
+
+
+def download_file(
+    url: str,
+    output_path: Path,
+    verbose: bool = False,
+    *,
+    not_found_context: Optional[dict[str, str]] = None,
+) -> bool:
     """Download a file from URL."""
     try:
         if verbose:
             print(f"   Downloading: {url}")
         
         response = requests.get(url, stream=True)
+        if response.status_code == 404 and not_found_context:
+            print(
+                format_missing_release_help(url, **not_found_context),
+                file=sys.stderr,
+            )
+            return False
         response.raise_for_status()
         
         total_size = int(response.headers.get('content-length', 0))
@@ -289,6 +333,13 @@ def main() -> int:
             print(f"   Would install to: {args.install_dir}/{normalized_name}")
             return 0
         
+        not_found_context = {
+            "repo": repo,
+            "tag": tag,
+            "package_filename": package_filename,
+            "hash_filename": hash_filename,
+        }
+
         # Create temporary directory for downloads
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir)
@@ -297,7 +348,12 @@ def main() -> int:
             
             # Download package file
             print(f"\n📥 Downloading {normalized_name} v{version}...")
-            if not download_file(package_url, package_path, args.verbose):
+            if not download_file(
+                package_url,
+                package_path,
+                args.verbose,
+                not_found_context=not_found_context,
+            ):
                 return 1
             
             package_size = package_path.stat().st_size
@@ -308,10 +364,15 @@ def main() -> int:
             if not args.skip_verification:
                 if args.verbose:
                     print(f"   Downloading hash file...")
-                if not download_file(hash_url, hash_file_path, args.verbose):
+                if not download_file(
+                    hash_url,
+                    hash_file_path,
+                    args.verbose,
+                    not_found_context=not_found_context,
+                ):
                     print(f"⚠️  Warning: Hash file download failed, skipping verification", file=sys.stderr)
                     args.skip_verification = True
-            
+
             # Verify package hash
             if not args.skip_verification:
                 print(f"\n🔐 Verifying package integrity...")
@@ -320,6 +381,8 @@ def main() -> int:
                     return 1
             else:
                 print(f"\n⚠️  Hash verification skipped (NOT RECOMMENDED)")
+
+            package_hash = f"sha256:{compute_sha256_hash(package_path)}"
             
             # Extract package
             print(f"\n📦 Installing package...")
@@ -338,6 +401,28 @@ def main() -> int:
             print(f"\n✅ Installation complete!")
             print(f"   Framework: {normalized_name} v{version}")
             print(f"   Location: {install_dir}/{normalized_name}")
+
+            project_root = find_adopter_project_root()
+            if project_root is not None:
+                try:
+                    receipt_path = emit_install_receipt(
+                        project_root=project_root,
+                        framework_name=normalized_name,
+                        version=version,
+                        source_url=package_url,
+                        hash_value=package_hash,
+                        status="installed",
+                    )
+                    print(f"   Install receipt: {receipt_path.relative_to(project_root)}")
+                except (OSError, ValueError) as receipt_err:
+                    print(
+                        f"⚠️  Warning: Could not write install receipt: {receipt_err}",
+                        file=sys.stderr,
+                    )
+            elif args.verbose:
+                print(
+                    "   No install receipt (project root without .ai-dev-kit.yaml not detected)",
+                )
             
             return 0
         
