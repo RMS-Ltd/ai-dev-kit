@@ -13,12 +13,14 @@ housekeeping_policy: keep
 **Priority:** MEDIUM
 **Estimated Effort:** Small
 **Created:** 2026-05-19
-**Last updated:** 2026-05-29 10:59:14 UTC (v0.2.16.10+3: retire `hf-ai-dev-kit`; private `ai-dev-kit-book` + public URL rewire)
-**Version:** v0.2.16.10+3
+**Last updated:** 2026-05-29 16:28:21 UTC (v0.2.16.10+4: project root hygiene — remove no/low-value artifacts; `.gitignore`)
+**Version:** v0.2.16.10+4
 **Code:** E2S16T10
 **Task Type:** Perpetual Maintenance
 
-**Forensic Marker:** v0.2.16.10+3
+**Forensic Marker:** v0.2.16.10+4
+
+**Version Anchor:** v0.2.16.10+4 (perpetual — root cleanup release)
 
 ---
 

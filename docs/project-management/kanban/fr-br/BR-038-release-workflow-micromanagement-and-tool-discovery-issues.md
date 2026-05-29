@@ -80,7 +80,7 @@ Active implementation for unresolved recovery scope is tracked under:
 
 ### Video Evidence: Release Workflow Execution (2026-03-09)
 
-**Video File:** `Screen Recording 2026-03-09 at 15.20.31.mov` (project root)
+**Video File:** *(removed from repository root 2026-05-29 — was `Screen Recording 2026-03-09 at 15.20.31.mov`)*
 
 This video captures a typical Release Workflow execution and demonstrates the following critical issues:
 

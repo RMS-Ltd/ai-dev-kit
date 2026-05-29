@@ -1,0 +1,884 @@
+{
+  "generated_at": "2026-05-18T16:11:28.059552+01:00",
+  "scanned_root": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics",
+  "issues": [
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T001-audit-report.md",
+      "filename": "T001-audit-report.md",
+      "suggested_new_name": "T01-audit-report.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T01-audit-report.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-audit-report.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T008-update-kanban-docs-to-txx-standard.md",
+      "filename": "T008-update-kanban-docs-to-txx-standard.md",
+      "suggested_new_name": "T08-update-kanban-docs-to-txx-standard.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md",
+      "target_exists": true,
+      "action": "delete",
+      "reason": "Target T08-update-kanban-docs-to-txx-standard.md already exists (duplicate content). Delete deprecated T0xx file."
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T007-implement-task-naming-change.md",
+      "filename": "T007-implement-task-naming-change.md",
+      "suggested_new_name": "T07-implement-task-naming-change.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md",
+      "target_exists": true,
+      "action": "delete",
+      "reason": "Target T07-implement-task-naming-change.md already exists (duplicate content). Delete deprecated T0xx file."
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T002-add-act-phase-step-13.md",
+      "filename": "T002-add-act-phase-step-13.md",
+      "suggested_new_name": "T02-add-act-phase-step-13.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T02-add-act-phase-step-13.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-add-act-phase-step-13.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T005-create-pdca-templates-examples.md",
+      "filename": "T005-create-pdca-templates-examples.md",
+      "suggested_new_name": "T05-create-pdca-templates-examples.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T05-create-pdca-templates-examples.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T05-create-pdca-templates-examples.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T001-add-check-phase-step-12.md",
+      "filename": "T001-add-check-phase-step-12.md",
+      "suggested_new_name": "T01-add-check-phase-step-12.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T01-add-check-phase-step-12.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-add-check-phase-step-12.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T006-update-rw-workflow-yaml-docs.md",
+      "filename": "T006-update-rw-workflow-yaml-docs.md",
+      "suggested_new_name": "T06-update-rw-workflow-yaml-docs.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T06-update-rw-workflow-yaml-docs.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T06-update-rw-workflow-yaml-docs.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T003-enhance-plan-phase.md",
+      "filename": "T003-enhance-plan-phase.md",
+      "suggested_new_name": "T03-enhance-plan-phase.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T03-enhance-plan-phase.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T03-enhance-plan-phase.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T004-enhance-do-phase.md",
+      "filename": "T004-enhance-do-phase.md",
+      "suggested_new_name": "T04-enhance-do-phase.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T04-enhance-do-phase.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T04-enhance-do-phase.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-002/T006-cmw-epic-5-execution-context-fr-063.md",
+      "filename": "T006-cmw-epic-5-execution-context-fr-063.md",
+      "suggested_new_name": "T06-cmw-epic-5-execution-context-fr-063.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T06-cmw-epic-5-execution-context-fr-063.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-root-cause-analysis.md",
+      "filename": "T002-root-cause-analysis.md",
+      "suggested_new_name": "T02-root-cause-analysis.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T02-root-cause-analysis.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-root-cause-analysis.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T003-versioning-rw-validation.md",
+      "filename": "T003-versioning-rw-validation.md",
+      "suggested_new_name": "T03-versioning-rw-validation.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T03-versioning-rw-validation.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T03-versioning-rw-validation.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-kanban-versioning-validation.md",
+      "filename": "T002-kanban-versioning-validation.md",
+      "suggested_new_name": "T02-kanban-versioning-validation.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T02-kanban-versioning-validation.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-kanban-versioning-validation.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T006-integration-examples.md",
+      "filename": "T006-integration-examples.md",
+      "suggested_new_name": "T06-integration-examples.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T06-integration-examples.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T06-integration-examples.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T007-gap-resolution-summary.md",
+      "filename": "T007-gap-resolution-summary.md",
+      "suggested_new_name": "T07-gap-resolution-summary.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T07-gap-resolution-summary.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T07-gap-resolution-summary.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T004-rw-kanban-validation.md",
+      "filename": "T004-rw-kanban-validation.md",
+      "suggested_new_name": "T04-rw-kanban-validation.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T04-rw-kanban-validation.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T04-rw-kanban-validation.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T001-integration-docs-review.md",
+      "filename": "T001-integration-docs-review.md",
+      "suggested_new_name": "T01-integration-docs-review.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T01-integration-docs-review.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-integration-docs-review.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-documentation-updates-summary.md",
+      "filename": "T002-documentation-updates-summary.md",
+      "suggested_new_name": "T02-documentation-updates-summary.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T02-documentation-updates-summary.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-documentation-updates-summary.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks/T002-decision-flow-design.md",
+      "filename": "T002-decision-flow-design.md",
+      "suggested_new_name": "T02-decision-flow-design.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks/T02-decision-flow-design.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-decision-flow-design.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks/T001-intake-analysis-report.md",
+      "filename": "T001-intake-analysis-report.md",
+      "suggested_new_name": "T01-intake-analysis-report.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks/T01-intake-analysis-report.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-intake-analysis-report.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-001-dev-kit-kanban-implementation/T001-gap-analysis-report.md",
+      "filename": "T001-gap-analysis-report.md",
+      "suggested_new_name": "T01-gap-analysis-report.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-001-dev-kit-kanban-implementation/T01-gap-analysis-report.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-gap-analysis-report.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-001-dev-kit-kanban-implementation/T002-fynd-deals-epic15-kanban-findings.md",
+      "filename": "T002-fynd-deals-epic15-kanban-findings.md",
+      "suggested_new_name": "T02-fynd-deals-epic15-kanban-findings.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-001-dev-kit-kanban-implementation/T02-fynd-deals-epic15-kanban-findings.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-fynd-deals-epic15-kanban-findings.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-guardrails-discussion.md",
+      "filename": "T008-package-versioning-guardrails-discussion.md",
+      "suggested_new_name": "T08-package-versioning-guardrails-discussion.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T08-package-versioning-guardrails-discussion.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T08-package-versioning-guardrails-discussion.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-dual-versioning-package-audit-report.md",
+      "filename": "T008-dual-versioning-package-audit-report.md",
+      "suggested_new_name": "T08-dual-versioning-package-audit-report.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T08-dual-versioning-package-audit-report.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T08-dual-versioning-package-audit-report.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-agentic-approach.md",
+      "filename": "T008-package-versioning-agentic-approach.md",
+      "suggested_new_name": "T08-package-versioning-agentic-approach.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T08-package-versioning-agentic-approach.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T08-package-versioning-agentic-approach.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T001-core-versioning-scenarios.md",
+      "filename": "T001-core-versioning-scenarios.md",
+      "suggested_new_name": "T01-core-versioning-scenarios.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T01-core-versioning-scenarios.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-core-versioning-scenarios.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework/T002-fynd-deals-epic15-findings.md",
+      "filename": "T002-fynd-deals-epic15-findings.md",
+      "suggested_new_name": "T02-fynd-deals-epic15-findings.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-fynd-deals-epic15-findings.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework/T001-gap-analysis-report.md",
+      "filename": "T001-gap-analysis-report.md",
+      "suggested_new_name": "T01-gap-analysis-report.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-gap-analysis-report.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T003-canonical-kb-structure-research.md",
+      "filename": "T003-canonical-kb-structure-research.md",
+      "suggested_new_name": "T03-canonical-kb-structure-research.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T03-canonical-kb-structure-research.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T03-canonical-kb-structure-research.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T001-kb-structure-analysis.md",
+      "filename": "T001-kb-structure-analysis.md",
+      "suggested_new_name": "T01-kb-structure-analysis.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T01-kb-structure-analysis.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-kb-structure-analysis.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T003-kb-structure-migration-guide.md",
+      "filename": "T003-kb-structure-migration-guide.md",
+      "suggested_new_name": "T03-kb-structure-migration-guide.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T03-kb-structure-migration-guide.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T03-kb-structure-migration-guide.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T002-kb-structure-principles.md",
+      "filename": "T002-kb-structure-principles.md",
+      "suggested_new_name": "T02-kb-structure-principles.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T02-kb-structure-principles.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-kb-structure-principles.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T006-scalable-kb-pattern.md",
+      "filename": "T006-scalable-kb-pattern.md",
+      "suggested_new_name": "T06-scalable-kb-pattern.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T06-scalable-kb-pattern.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T06-scalable-kb-pattern.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T002-modularity-principles.md",
+      "filename": "T002-modularity-principles.md",
+      "suggested_new_name": "T02-modularity-principles.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T02-modularity-principles.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T02-modularity-principles.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T001-package-structure-analysis.md",
+      "filename": "T001-package-structure-analysis.md",
+      "suggested_new_name": "T01-package-structure-analysis.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T01-package-structure-analysis.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T01-package-structure-analysis.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T003-package-dependency-matrix.md",
+      "filename": "T003-package-dependency-matrix.md",
+      "suggested_new_name": "T03-package-dependency-matrix.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T03-package-dependency-matrix.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T03-package-dependency-matrix.md"
+    },
+    {
+      "type": "deprecated_t0xx",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T004-consumption-patterns.md",
+      "filename": "T004-consumption-patterns.md",
+      "suggested_new_name": "T04-consumption-patterns.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T04-consumption-patterns.md",
+      "target_exists": false,
+      "action": "git_mv",
+      "reason": "Rename deprecated 3-digit to canonical 2-digit: T04-consumption-patterns.md"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow",
+      "task_number": 8,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md",
+      "canonical_filename": "T08-update-kanban-docs-to-txx-standard.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T008-update-kanban-docs-to-txx-standard.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard-deliverable.md"
+      ],
+      "duplicate_filenames": [
+        "T008-update-kanban-docs-to-txx-standard.md",
+        "T08-update-kanban-docs-to-txx-standard-deliverable.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow",
+      "task_number": 7,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md",
+      "canonical_filename": "T07-implement-task-naming-change.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T007-implement-task-naming-change.md"
+      ],
+      "duplicate_filenames": [
+        "T007-implement-task-naming-change.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs",
+      "task_number": 7,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md",
+      "canonical_filename": "T07-planning-spec-tests-impl.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md"
+      ],
+      "duplicate_filenames": [
+        "T07-migrate-embedded-tasks-to-discrete-documents.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration",
+      "task_number": 2,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-root-cause-analysis.md",
+      "canonical_filename": "T002-root-cause-analysis.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-kanban-versioning-validation.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-documentation-updates-summary.md"
+      ],
+      "duplicate_filenames": [
+        "T002-kanban-versioning-validation.md",
+        "T002-documentation-updates-summary.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance",
+      "task_number": 1,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance/T01-planning-spec-tests-impl.md",
+      "canonical_filename": "T01-planning-spec-tests-impl.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance/T01-update-packaged-rw-ukw-perpetual-tasks.md"
+      ],
+      "duplicate_filenames": [
+        "T01-update-packaged-rw-ukw-perpetual-tasks.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples",
+      "task_number": 8,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-agentic-approach.md",
+      "canonical_filename": "T008-package-versioning-agentic-approach.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-guardrails-discussion.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-dual-versioning-package-audit-report.md"
+      ],
+      "duplicate_filenames": [
+        "T008-package-versioning-guardrails-discussion.md",
+        "T008-dual-versioning-package-audit-report.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management",
+      "task_number": 107,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md",
+      "canonical_filename": "T107-ide-command-whitelist-optimization.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-workflows-directory-structure-reorganization.md"
+      ],
+      "duplicate_filenames": [
+        "T107-workflows-directory-structure-reorganization.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests",
+      "task_number": 41,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T41-implementation-summary.md",
+      "canonical_filename": "T41-implementation-summary.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T41-windsurf-investigate-agents-skills-for-workflows.md"
+      ],
+      "duplicate_filenames": [
+        "T41-windsurf-investigate-agents-skills-for-workflows.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit",
+      "task_number": 3,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T003-kb-structure-migration-guide.md",
+      "canonical_filename": "T003-kb-structure-migration-guide.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T003-canonical-kb-structure-research.md"
+      ],
+      "duplicate_filenames": [
+        "T003-canonical-kb-structure-research.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo",
+      "task_number": 5,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo/T05-uxr-005-repository-anchor.md",
+      "canonical_filename": "T05-uxr-005-repository-anchor.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo/T05-kanban-board-formatting-governance-uxr-005.md"
+      ],
+      "duplicate_filenames": [
+        "T05-kanban-board-formatting-governance-uxr-005.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo",
+      "task_number": 1,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo/T01-uxr-001-repository-anchor.md",
+      "canonical_filename": "T01-uxr-001-repository-anchor.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo/T01-migration-user-experience-research-uxr-001.md"
+      ],
+      "duplicate_filenames": [
+        "T01-migration-user-experience-research-uxr-001.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_task",
+      "story_dir": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo",
+      "task_number": 2,
+      "canonical_file": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo/T02-uxr-002-repository-anchor.md",
+      "canonical_filename": "T02-uxr-002-repository-anchor.md",
+      "duplicate_files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo/T02-comprehensive-uat-migration-utilities-uxr-002.md"
+      ],
+      "duplicate_filenames": [
+        "T02-comprehensive-uat-migration-utilities-uxr-002.md"
+      ],
+      "action": "git_rm_duplicates"
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-5",
+      "story_number": 3,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-003-documentation-automation.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-003-documentation-quality-assurance.md"
+      ],
+      "filenames": [
+        "Story-003-documentation-automation.md",
+        "Story-003-documentation-quality-assurance.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-5",
+      "story_number": 7,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-007-policy-documentation-structure.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-007-persistent-knowledge-base-investigation.md"
+      ],
+      "filenames": [
+        "Story-007-policy-documentation-structure.md",
+        "Story-007-persistent-knowledge-base-investigation.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-5",
+      "story_number": 6,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-006-legacy-repository-incorporation.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-006-policy-documentation-structure.md"
+      ],
+      "filenames": [
+        "Story-006-legacy-repository-incorporation.md",
+        "Story-006-policy-documentation-structure.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-5",
+      "story_number": 2,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-002-documentation-maintenance-framework.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-002-documentation-quality-assurance.md"
+      ],
+      "filenames": [
+        "Story-002-documentation-maintenance-framework.md",
+        "Story-002-documentation-quality-assurance.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-5",
+      "story_number": 1,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md"
+      ],
+      "filenames": [
+        "Story-001-documentation-maintenance-framework.md",
+        "Story-001-fr-repo.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-5",
+      "story_number": 4,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-004-framework-documentation-management.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-004-documentation-automation.md"
+      ],
+      "filenames": [
+        "Story-004-framework-documentation-management.md",
+        "Story-004-documentation-automation.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-5",
+      "story_number": 5,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-005-framework-documentation-management.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-5/Story-005-legacy-repository-incorporation.md"
+      ],
+      "filenames": [
+        "Story-005-framework-documentation-management.md",
+        "Story-005-legacy-repository-incorporation.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-6",
+      "story_number": 5,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-005-feature-requests.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-005-bug-reports.md"
+      ],
+      "filenames": [
+        "Story-005-feature-requests.md",
+        "Story-005-bug-reports.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-6",
+      "story_number": 6,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md"
+      ],
+      "filenames": [
+        "Story-006-feature-requests.md",
+        "Story-006-adk-implementation-analysis-and-package-management.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-6",
+      "story_number": 1,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-001-framework-version-management.md"
+      ],
+      "filenames": [
+        "Story-001-br-repo.md",
+        "Story-001-framework-version-management.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-6",
+      "story_number": 4,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-004-bug-reports.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-004-framework-health-monitoring.md"
+      ],
+      "filenames": [
+        "Story-004-bug-reports.md",
+        "Story-004-framework-health-monitoring.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-6",
+      "story_number": 3,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-003-framework-health-monitoring.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-003-framework-update-and-migration.md"
+      ],
+      "filenames": [
+        "Story-003-framework-health-monitoring.md",
+        "Story-003-framework-update-and-migration.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-6",
+      "story_number": 2,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-002-framework-version-management.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md"
+      ],
+      "filenames": [
+        "Story-002-framework-version-management.md",
+        "Story-002-framework-update-and-migration.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-9",
+      "story_number": 4,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-9/Story-004-book-material-capture.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-9/Story-004-numbering-versioning-framework-rc-readiness-review.md"
+      ],
+      "filenames": [
+        "Story-004-book-material-capture.md",
+        "Story-004-numbering-versioning-framework-rc-readiness-review.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-9",
+      "story_number": 1,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-9/Story-001-book-content-development.md"
+      ],
+      "filenames": [
+        "Story-001-rc-readiness-gap-analysis.md",
+        "Story-001-book-content-development.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-9",
+      "story_number": 2,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-9/Story-002-kanban-framework-rc-readiness-review.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-9/Story-002-book-integration-with-dev-kit.md"
+      ],
+      "filenames": [
+        "Story-002-kanban-framework-rc-readiness-review.md",
+        "Story-002-book-integration-with-dev-kit.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-9",
+      "story_number": 3,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-9/Story-003-book-publishing-support.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-9/Story-003-workflow-management-framework-rc-readiness-review.md"
+      ],
+      "filenames": [
+        "Story-003-book-publishing-support.md",
+        "Story-003-workflow-management-framework-rc-readiness-review.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-7",
+      "story_number": 3,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-003-user-onboarding-materials.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-003-code-quality-metrics-and-monitoring.md"
+      ],
+      "filenames": [
+        "Story-003-user-onboarding-materials.md",
+        "Story-003-code-quality-metrics-and-monitoring.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-7",
+      "story_number": 1,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-001-real-world-adoption-examples.md"
+      ],
+      "filenames": [
+        "Story-001-codebase-maintenance-tasks.md",
+        "Story-001-real-world-adoption-examples.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-7",
+      "story_number": 4,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-004-maintenance-automation-and-tooling.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md"
+      ],
+      "filenames": [
+        "Story-004-maintenance-automation-and-tooling.md",
+        "Story-04-readme-template-based-on-best-readme-template.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "duplicate_story",
+      "epic": "Epic-7",
+      "story_number": 2,
+      "files": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-002-migration-guides.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-002-code-review-standards-and-processes.md"
+      ],
+      "filenames": [
+        "Story-002-migration-guides.md",
+        "Story-002-code-review-standards-and-processes.md"
+      ],
+      "action": "human_decision_required",
+      "note": "Decide canonical file per story number. Registry stories (fr-repo/br-repo) vs functional stories."
+    },
+    {
+      "type": "zero_padding",
+      "epic": "Epic-7",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md",
+      "filename": "Story-04-readme-template-based-on-best-readme-template.md",
+      "suggested_new_name": "Story-004-readme-template-based-on-best-readme-template.md",
+      "suggested_new_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-004-readme-template-based-on-best-readme-template.md",
+      "action": "git_mv"
+    }
+  ],
+  "summary": {
+    "deprecated_t0xx_count": 37,
+    "duplicate_task_groups": 12,
+    "duplicate_story_groups": 21,
+    "orphaned_directories": 0,
+    "zero_padding_issues": 1,
+    "total_issues": 71,
+    "t0xx_to_rename": 35,
+    "t0xx_to_delete": 2
+  }
+}

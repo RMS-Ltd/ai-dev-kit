@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.10+4] - 29-05-26
+
+E2:S16:T10 (perpetual) — Project root hygiene: remove junk media/logs/snapshots; relocate or delete low-value root artifacts; `.gitignore` hardening. SemVer **v0.4.818+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.10+4.md)
+
+---
+
 ## [0.4.6.1+1] - 29-05-26
 
 E4:S06:T01 (FR-005) — Template system closure: audit matrix, kanban/FR reconciliation, discrete task doc. FR-005-R5 deferred. SemVer **v0.4.817+1**.

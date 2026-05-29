@@ -3,6 +3,12 @@
 __pycache__/
 *.pyc
 *.pyo
+*.egg-info/
+.pytest_cache/
+htmlcov/
+tmp-*.log
+.kanban-snapshots/
+logs/
 
 # macOS
 .DS_Store

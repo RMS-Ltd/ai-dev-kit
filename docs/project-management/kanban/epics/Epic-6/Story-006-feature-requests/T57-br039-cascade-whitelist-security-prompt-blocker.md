@@ -130,5 +130,5 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 ## References
 
 - **BR-039:** [BR-039-cascade-whitelist-security-prompt-usability-blocker.md](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
-- **Video (repo root):** `Screen Recording 2026-03-09 at 16.07.14.mov` (per BR-039 — historical)
+- **Video:** *(removed from repository root 2026-05-29 — was `Screen Recording 2026-03-09 at 16.07.14.mov`; per BR-039)*
 - **IPW package:** [IPW-E6S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)

@@ -352,13 +352,15 @@ def main():
     inventory = generate_inventory()
 
     # Write JSON
-    json_path = Path("kanban_naming_inventory.json")
+    output_dir = Path(__file__).resolve().parent / "output"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    json_path = output_dir / "kanban_naming_inventory.json"
     with open(json_path, "w") as f:
         json.dump(inventory, f, indent=2)
     print(f"Wrote JSON inventory: {json_path}")
 
     # Write Markdown report
-    report_path = Path("kanban_naming_inventory.md")
+    report_path = output_dir / "kanban_naming_inventory.md"
     with open(report_path, "w") as f:
         f.write(generate_report(inventory))
     print(f"Wrote report: {report_path}")

@@ -26,7 +26,7 @@ Cascade's whitelist feature is non-functional, creating constant security prompt
 
 ## Video Evidence
 
-**Reference:** `Screen Recording 2026-03-09 at 16.07.14.mov` (project root)
+**Reference:** *(removed from repository root 2026-05-29 — was `Screen Recording 2026-03-09 at 16.07.14.mov`)*
 
 ## Detailed Description
 

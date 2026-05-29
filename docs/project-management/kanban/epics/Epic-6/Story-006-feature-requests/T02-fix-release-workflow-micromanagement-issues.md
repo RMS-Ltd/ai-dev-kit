@@ -55,7 +55,7 @@ The Release Workflow (RW) suffers from significant micromanagement issues and to
 
 ### Video Evidence
 
-**Reference:** `Screen Recording 2026-03-09 at 15.20.31.mov` (project root)
+**Reference:** *(removed from repository root 2026-05-29 — was `Screen Recording 2026-03-09 at 15.20.31.mov`)*
 
 This video captures a real Release Workflow execution and demonstrates the critical issues that need to be addressed:
 
@@ -69,7 +69,7 @@ The video provides concrete evidence of the user experience problems that this t
 
 ### CRITICAL DISCOVERY - Real Test Results (2026-03-09 16:07)
 
-**Video Evidence:** `Screen Recording 2026-03-09 at 16.07.14.mov`
+**Video Evidence:** *(removed from repository root 2026-05-29 — was `Screen Recording 2026-03-09 at 16.07.14.mov`)*
 
 **What We Claimed vs What Actually Happened:**
 

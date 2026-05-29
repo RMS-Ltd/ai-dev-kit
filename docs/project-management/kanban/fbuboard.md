@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-29 (RW: E4:S06:T01 — FR-005 closure)
-**Version Context:** v0.4.6.1+1 (**SemVer** v0.4.817+1)
+**Last Updated:** 2026-05-29 (RW: E2:S16:T10 — project root hygiene)
+**Version Context:** v0.2.16.10+4 (**SemVer** v0.4.818+4)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  

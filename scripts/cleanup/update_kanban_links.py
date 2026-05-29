@@ -14,7 +14,8 @@ import re
 from pathlib import Path
 
 KANBAN_ROOT = Path("docs/project-management/kanban")
-INVENTORY_PATH = Path("kanban_naming_inventory.json")
+_CLEANUP_DIR = Path(__file__).resolve().parent
+INVENTORY_PATH = _CLEANUP_DIR / "output" / "kanban_naming_inventory.json"
 
 # Regex for markdown links: [text](url) or [text](url "title")
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)\"\s]*)(?:\\s+\"[^\"]*\")?\)")

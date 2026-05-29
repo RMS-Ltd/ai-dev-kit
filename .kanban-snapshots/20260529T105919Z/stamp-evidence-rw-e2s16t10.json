@@ -1,6 +1,0 @@
-{
-  "E2:S16:T10": {
-    "allowed": true,
-    "reason": "RW v0.2.16.10+3 release-scope reconciliation (task doc + kboard version anchor)"
-  }
-}
