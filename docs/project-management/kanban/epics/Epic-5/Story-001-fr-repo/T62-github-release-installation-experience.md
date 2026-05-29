@@ -8,10 +8,15 @@ housekeeping_policy: keep
 
 # Task E5:S01:T62 – GitHub Release Installation Experience
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
-**Version Anchor:** v0.5.1.62+0 (abstract space)  
+**Version Anchor:** v0.5.1.62+1  
 **Feature Request:** [FR-062 – GitHub Release Installation Experience](../../../fr-br/FR-062-github-release-installation-experience.md)
+
+Publication Status: NOT_APPLICABLE  
+Publication N/A Reason: Consolidated IPP per FR-042.
+
+**Implementation plan:** [IPP-E5S01T62-github-release-install-fr062.md](../../../../implementation-cycles/IPP-E5S01T62-github-release-install-fr062.md)
 
 ---
 
@@ -64,10 +69,15 @@ Implement the GitHub-release installation workflow for AI Dev Kit frameworks so 
 
 ---
 
+## Implementation notes (RW #1 — in progress)
+
+- `packages/frameworks/workflow mgt/scripts/install_receipt.py` — receipt writer (FR-062 simplified schema)
+- `install_package_from_release.py` — receipt on success; improved 404 messaging for missing release assets
+- `.github/workflows/framework-release.yml` — build + `gh release upload` on tag push / workflow_dispatch
+- `tests/tests/test_install_receipt_fr062.py` — receipt schema unit tests
+
 ## Next Steps
 
-1. Intake owner assigns responsible agent(s) for packaging, installer, docs, and validation streams.  
-2. Kick off packaging automation (script/CI) and publish initial artifacts.  
-3. Implement receipt artifact + reporting flow.  
-4. Update documentation + run validation install in xoforge.  
-5. File follow-up implementation tasks under relevant epics (CLI, documentation, release operations) referencing this repository task.
+1. Run Framework release workflow to publish initial GitHub assets (kanban 2.1.0, workflow-mgmt 2.1.4).  
+2. Smoke install in a clean adopter repo; capture receipt + install logs.  
+3. Optional RW #2 docs-only pass; close FR-062 when AC met.

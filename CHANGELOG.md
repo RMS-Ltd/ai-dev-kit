@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.8.7+1] - 29-05-26
+## [0.5.1.62+1] - 29-05-26
 
-E4:S08:T07 — FR-011 multi-epic task split engine + tests + intake hook. SemVer **v0.4.815+1**.
+Parallel delivery on `dev`: **E2:S01:T22** (BR-075 perpetual BUILD validator), **E2:S16:T07** (FR-050 UKW FBU sync), **E4:S08:T07** (FR-011 task split), **E5:S01:T62** (FR-062 install receipt + release workflow). SemVer **v0.4.815+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.8.7+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.62+1.md)
 
 ---

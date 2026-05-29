@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-29 (merge: T22/T07)
-**Version:** v0.2.16.7+1
+**Last Updated:** 2026-05-29 (dev: parallel T22/T07/E4T07/T62 merge)
+**Version:** v0.5.1.62+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -37,7 +37,6 @@ housekeeping_policy: keep
 - **E5:S01:T31** – Multi-agent coordination feasibility investigation (FR-031) - 📋 TODO (C priority architecture exploration) - [Task Document](epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md) | [Story](epics/Epic-5/Story-001-fr-repo.md) | [E5:S01:T31](epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md) | —No IPP— | Last modified: 2026-01-14 00:00 UTC
 - **E2:S01:T08** – IDE linter check before RW commit (FR-024) - 📋 TODO (LOW workflow hygiene) - [Story](epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) | Last modified: 2026-05-17 00:00 UTC
 - **E4:S06:T01** – Canonical EST template system completion (FR-005) - 📋 TODO (LOW template completeness) - [Story](epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md) | Last modified: 2025-12-22 00:00 UTC
-- **E5:S01:T62** – Improve GitHub release installation experience (FR-062) - 💡 PROPOSED (LOW release UX) - [Task Document](epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md) | [Story](epics/Epic-5/Story-001-fr-repo.md) | [E5:S01:T62](epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md) | —No IPP— | Last modified: 2026-05-15 00:00 UTC
 - **E6:S09:T02** – Brownfield modular adopter integration (FR-081) - 🔄 IN PROGRESS (MEDIUM, operationalize ADR-003 matrices and contract-first wiring for existing repo adoption) - [Task Document](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) | [Story](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md) | Last modified: 2026-05-13 | [FR-081](fr-br/FR-081-brownfield-modular-adopter-integration.md) | [E6:S09:T02](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) | —No IPP— | Last modified: 2026-05-14 11:06 UTC
 - **E7:S01:T06** – Update changelog workflow maintenance flow (FR-057) - 💡 PROPOSED (LOW maintenance workflow quality) - [Story](epics/Epic-7/Story-001-codebase-maintenance-tasks.md) | Last modified: 2026-03-31 00:00 UTC
 
