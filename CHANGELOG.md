@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.2+3] - 29-05-26
+## [0.7.1.11+1] - 29-05-26
 
-E6:S09:T02 — FR-081 kanban forensic sync: task doc last-updated (clear stale pending RW), board version stamp. SemVer **v0.4.815+3**.
+E7:S01:T11 — FR-101 intake: `docs/governance/` hub, Phase 0 rehousing inventory (draft), task/FR wiring. SemVer **v0.4.815+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.2+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.11+1.md)
 
 ---

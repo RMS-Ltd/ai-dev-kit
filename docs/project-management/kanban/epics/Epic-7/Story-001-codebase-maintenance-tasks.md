@@ -32,6 +32,7 @@ housekeeping_policy: keep
 - [ ] **E7:S01:T08 – Task Doc Naming Standardization** - IN PROGRESS (v0.7.1.6+2 – Establishes `EddSddTdd-[title].md` canonical naming and migration plan)
 - [ ] **E7:S01:T09 – Kanban Template Governance & UXR Ownership** - TODO (v0.7.1.9+3 – UXR-005 **Implementing Task** in UXR doc; UXR-005 ACs still open — see task doc)
 - [ ] **E7:S01:T10 – Project Root Hygiene and Legacy Docs Rationalization** - TODO (UXR-013 intake filed; IPW pending before implementation)
+- [ ] **E7:S01:T11 – Consolidate governance under `docs/governance/` (FR-101)** - 🔄 IN PROGRESS (v0.7.1.11+1 — intake + Phase 0 inventory draft) - [Task Document](Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) | [FR-101](../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 
 > **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E7:S01:T01`, `E7:S01:T02`)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.7.1.3+1)`)  

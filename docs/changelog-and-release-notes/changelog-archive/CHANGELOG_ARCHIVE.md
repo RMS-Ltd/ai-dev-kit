@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.6.9.2+3] - 29-05-26
+
+E6:S09:T02 — FR-081 kanban forensic sync. SemVer **v0.4.815+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.2+3.md)
+---
 ## [0.5.1.62+1] - 29-05-26
 
 Parallel delivery on `dev`: **E2:S01:T22** (BR-075), **E2:S16:T07** (FR-050), **E4:S08:T07** (FR-011), **E5:S01:T62** (FR-062). SemVer **v0.4.815+1**.

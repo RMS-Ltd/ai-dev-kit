@@ -94,10 +94,11 @@ Audit and rationalize repository root artifacts to reduce clutter, improve first
 
 - **[UXR-013: Project root hygiene and legacy docs rationalization](../../../fr-br/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** - **Relationship Type:** Informs - **Context:** Captures user-reported pain and defines UX acceptance direction for root cleanup.
 - **[FR-039: AI Dev Kit project review and legacy clean-up](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** - **Relationship Type:** Coordinates With - **Context:** Broader repository cleanup context that this task narrows to root-level hygiene.
+- **[FR-101: Consolidate governance under docs/governance/](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — **Coordinates With** — [E7:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) rehouses policies under `docs/governance/`; avoid conflicting root moves.
 
 **Cross-Wiring Notes:**
 
-Task focuses root-level curation specifically, while FR-039 covers wider repository review and cleanup.
+Task focuses root-level curation specifically, while FR-039 covers wider repository review and cleanup. Coordinate with T11 so root policy files are not moved twice.
 
 ---
 
@@ -107,6 +108,10 @@ Task focuses root-level curation specifically, while FR-039 covers wider reposit
 
 - [UXR-013: Project root hygiene and legacy docs rationalization](../../../fr-br/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)
 - [FR-039: AI Dev Kit project review and legacy clean-up](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
+
+**Related Tasks:**
+
+- [E7:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) — governance rehousing under `docs/governance/` ([FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md))
 
 **Related Stories:**
 
