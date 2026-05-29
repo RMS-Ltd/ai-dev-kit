@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.1.22+1] - 29-05-26
+## [0.2.16.7+1] - 29-05-26
 
-E2:S01:T22 — BR-075: perpetual RW `validate_version_bump` fails when `VERSION_BUILD` unchanged vs HEAD; version-bump skill uses `rw-config` path. SemVer **v0.4.805+1**.
+E2:S16:T07 — FR-050: UKW FBU temporal sync (workflow YAML steps 6.5–6.7, agent guide, ukw-sync skill). SemVer **v0.4.815+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.22+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.7+1.md)
 
 ---

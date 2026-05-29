@@ -1,7 +1,7 @@
 name: Update Kanban Workflow
-version: 1.1.0
+version: 1.2.0
 type: kanban_update
-description: Bottom-up kanban documentation synchronization workflow to prevent status drift (triggered by UKW). REQUIRES AGENTIC INTELLIGENCE for synthesis, narrative updates, prioritization, and status inference.
+description: Bottom-up kanban documentation synchronization workflow to prevent status drift (triggered by UKW). REQUIRES AGENTIC INTELLIGENCE for synthesis, narrative updates, prioritization, and status inference. FR-050 — explicit FBU temporal sync (fbuboard cleanup, fbu-completed timestamps, 20-recent dashboard).
 
 config:
   kanban_root: docs/project-management/kanban
@@ -9,12 +9,19 @@ config:
   story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
   task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md
   kanban_board: kboard.md
+  completed_archive: kanban-completed.md
   fr_br_uxr_board: fbuboard.md
+  fr_br_uxr_completed: fbu-completed.md
+  fr_br_uxr_structure: fbu-structure.md
+  fr_br_uxr_completed_skill: .cursor/skills/fr-br-uxr-completed-update/SKILL.md
   normalize_board_timestamps_script: packages/frameworks/workflow mgt/scripts/kanban/normalize_board_row_timestamps.py
+  snapshot_boards_script: packages/frameworks/workflow mgt/scripts/kanban/snapshot_kanban_boards.py
+  validate_board_stamp_diff_script: packages/frameworks/workflow mgt/scripts/validation/validate_board_stamp_diff.py
   kanban_structure: kanban-structure.md
   fr_br_root: fr-br
   git_commit_history_days: 7
   use_rw_config: true
+  fbu_recent_dashboard_limit: 20
 
 steps:
   - id: step-1
@@ -135,6 +142,87 @@ steps:
       update_epic_summaries: true
       update_last_updated: true
 
+  - id: step-6-5
+    name: FBU Board Cleanup (fbuboard)
+    type: fbu_board_update
+    handler: kanban.update_fr_br_uxr_board
+    required: true
+    mandatory: true
+    blocking: false
+    run_when:
+      - comprehensive
+      - bookkeeping
+    dependencies:
+      - step-6
+    config:
+      fr_br_uxr_board: ${config.fr_br_uxr_board}
+      fr_br_root: ${config.fr_br_root}
+      kanban_root: ${config.kanban_root}
+      remove_terminal_from_active: true
+      terminal_statuses:
+        - COMPLETE
+        - COMPLETED
+        - IMPLEMENTED
+        - FIXED
+        - RESOLVED
+      keep_unresolved_verification_exceptions: true
+      unresolved_verification_tokens:
+        - IN PROGRESS
+        - UNVERIFIED
+        - PENDING VERIFICATION
+      board_stamp_authority_fr097: preserve_row_last_modified_on_hygiene
+      align_board_last_updated_metadata_only: true
+      pre_write_concurrency_revalidation: true
+      snapshot_before_ukw: ${config.snapshot_boards_script}
+      validate_stamps_before_stage: ${config.validate_board_stamp_diff_script}
+
+  - id: step-6-6
+    name: FBU Temporal Tracking (fbu-completed)
+    type: fbu_completed_update
+    handler: kanban.update_fr_br_uxr_completed
+    required: true
+    mandatory: true
+    blocking: false
+    run_when:
+      - comprehensive
+      - bookkeeping
+    dependencies:
+      - step-6-5
+    config:
+      fr_br_uxr_completed: ${config.fr_br_uxr_completed}
+      fr_br_uxr_completed_skill: ${config.fr_br_uxr_completed_skill}
+      kanban_root: ${config.kanban_root}
+      timestamp_format: ISO8601_Z
+      timestamp_pattern: "YYYY-MM-DDTHH:MM:SSZ"
+      write_on_same_run_as_board_cleanup: true
+      recent_dashboard_limit: ${config.fbu_recent_dashboard_limit}
+      recent_dashboard_heading: "20 Most Recently Completed FR/BR/UXR Items"
+      format_reference: ${config.completed_archive}
+      deduplication_guard: true
+
+  - id: step-6-7
+    name: FBU Cross-Document Consistency
+    type: fbu_validation
+    handler: kanban.validate_fr_br_uxr_consistency
+    required: true
+    mandatory: true
+    blocking: false
+    run_when:
+      - comprehensive
+      - bookkeeping
+    dependencies:
+      - step-6-6
+    config:
+      fr_br_uxr_board: ${config.fr_br_uxr_board}
+      fr_br_uxr_completed: ${config.fr_br_uxr_completed}
+      fr_br_uxr_structure: ${config.fr_br_uxr_structure}
+      fr_br_root: ${config.fr_br_root}
+      check_active_board_vs_source_status: true
+      check_completed_archive_vs_source: true
+      check_structure_inventory_vs_fr_br_root: true
+      check_link_integrity: true
+      check_version_marker_alignment: true
+
   - id: step-7
     name: Validate Consistency
     type: validation
@@ -143,11 +231,16 @@ steps:
     mandatory: true
     blocking: false
     dependencies:
-      - step-6
+      - step-6-7
     config:
       check_status_alignment: true
       check_version_consistency: true
       check_link_integrity: true
+      check_fbu_cross_document_consistency: true
+      fbu_surfaces:
+        - ${config.fr_br_uxr_board}
+        - ${config.fr_br_uxr_completed}
+        - ${config.fr_br_uxr_structure}
 
   - id: step-8
     name: Stage Files
