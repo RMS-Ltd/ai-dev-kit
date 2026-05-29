@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.19.7+1] - 29-05-26
+
+E4:S19:T07 (FR-021) — Kanban init: semantic task **E4:S19:T07** for repository-pattern supersession (FR-072 reconciliation). SemVer **v0.4.823+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.7+1.md)
+
+---
+
 ## [0.2.16.4+15] - 29-05-26
 
 E2:S16:T04 (perpetual UKW) — kboard/fbuboard consolidation: prune completed FBUs, mirror open tasks, reinstate **E7:S01:T09** (UXR-005), wire UXR-001/002. SemVer **v0.4.821+15**.

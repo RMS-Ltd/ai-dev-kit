@@ -34,6 +34,10 @@ housekeeping_policy: keep
 
 - [x] **E4:S19:T06 – FBU meta normalization and intake governance (UXR-008 / FR-086 / FR-073)** - COMPLETE (HIGH, canonical meta-task owning filename/terminology normalization + FR-073 AC3 board-statistics closure; supersedes T02/T05 and absorbs T73 follow-on governance) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) | [UXR-008](../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md) | [FR-086](../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) | [FR-073](../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md) | [IPP](../../../../implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
 
+- [ ] **E4:S19:T07 – FR-021 repository pattern supersession (FR-072 reconciliation)** - TODO (MEDIUM) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md) | [FR-021](../../fr-br/FR-021-fr-br-uxr-repository-stories.md)
+
+- [ ] **E4:S19:T08 – FR-072 Approach D phases D2–D4 migration and doc sweep** - TODO (HIGH) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | [FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+
 ---
 
 ## Overview

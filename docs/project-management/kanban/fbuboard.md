@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – FBU Prioritization Board
 
 **Last Updated:** 2026-05-29 (RW **v0.2.16.4+15** — kboard/fbuboard consolidation)
-**Version Context:** v0.2.16.4+15 (**SemVer** v0.4.821+15)
+**Version Context:** v0.4.19.7+1 (**SemVer** v0.4.823+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -63,7 +63,7 @@ This board provides **centralized visibility and prioritization** for all open F
 - **UXR-002** – Comprehensive UAT migration utilities - 📥 ACCEPTED (synthesis **COMPLETE** **E7:S05:T02**; implementation **E4:S07**) | [UXR-002](fr-br/UXR-002-comprehensive-uat-migration-utilities.md) | [E7:S00:T02](epics/Epic-7/Story-000-uxr-repo/T02-uxr-002-repository-anchor.md) | [E7:S05:T02](epics/Epic-7/Story-005-migration-uxr-research.md) | Last modified: 2026-05-29 18:00 UTC
 - **FR-032** – Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) - [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | Last modified: 2026-04-20 14:00 UTC
 - **FR-030** – AI Dev Kit CLI Tool - 📋 TODO (MEDIUM, Command-line interface tool) - [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md) | [E6:S08](epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md) | Last modified: 2026-01-16 00:00 UTC
-- **FR-021** – FR/BR/UXR Repository Stories - 📋 TODO (MEDIUM, Repository stories for FR/BR/UXR management) - [FR-021](fr-br/FR-021-fr-br-uxr-repository-stories.md) | Last modified: 2026-04-08 13:31 UTC
+- **FR-021** – FR/BR/UXR Repository Stories - 📋 TODO (MEDIUM, **E4:S19:T07** semantic delivery) - [FR-021](fr-br/FR-021-fr-br-uxr-repository-stories.md) | [E4:S19:T07](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md) | Last modified: 2026-05-29 17:16 UTC
 - **UXR-003** – Intelligent Epic Matching Canonical Adoption UAT - 📋 TODO (MEDIUM, User acceptance testing for intelligent epic matching) - [UXR-003](fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md) | Last modified: 2026-03-31 18:26 UTC
 - **FR-043** – UKW Gap Discovery TODO Tasks and Unfiled FR/BR - 📋 TODO (LOW, Discover gaps in UKW and unfiled items) - [FR-043](fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | Last modified: 2026-04-20 18:05 UTC
 - **FR-044** – RW Temporary Execution Log for Recovery and Forensics - 📋 TODO (LOW, Temporary execution logs for Release Workflow) - [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | Last modified: 2026-02-22 16:54 UTC

@@ -16,7 +16,8 @@ housekeeping_policy: keep
 
 > **Supersession note (2026-04):** This FR remains the historical baseline that introduced dedicated FR/BR/UXR repository stories. For **new intake behavior**, see **FR-072** (Approach D phased migration) and **FR-074** (semantic placement KG-R6). Repository-story anchors remain valid for historical traceability.
 
-**Implementing Task:** [E5:S01:T21](../epics/Epic-5/Story-001-fr-repo/T21-fr-br-uxr-repository-stories.md)
+**Implementing Task:** [E4:S19:T07](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)  
+**Historical registry:** E5:S01:T21
 
 ---
 
