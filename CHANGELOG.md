@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.7+1] - 29-05-26
+## [0.4.8.7+1] - 29-05-26
 
-E2:S16:T07 — FR-050: UKW FBU temporal sync (workflow YAML steps 6.5–6.7, agent guide, ukw-sync skill). SemVer **v0.4.815+1**.
+E4:S08:T07 — FR-011 multi-epic task split engine + tests + intake hook. SemVer **v0.4.815+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.7+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.8.7+1.md)
 
 ---

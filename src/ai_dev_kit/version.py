@@ -7,10 +7,10 @@ See: docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 2      # Epic 2
-VERSION_STORY = 16    # Story 16
+VERSION_EPIC = 4      # Epic 4
+VERSION_STORY = 8     # Story 8
 VERSION_TASK = 7      # Task 7
-VERSION_BUILD = 1     # Build 1: FR-050 UKW FBU temporal tracking workflow
+VERSION_BUILD = 1     # Build 1: FR-011 multi-epic task split engine
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.7+1
+# Current: 0.4.8.7+1
