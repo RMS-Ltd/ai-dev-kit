@@ -34,7 +34,7 @@ This guide provides solutions to common issues when installing, updating, and us
 
 ### Scope (greenfield vs brownfield)
 
-- **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 - **Policy:** [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · Brownfield track: [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
@@ -81,7 +81,7 @@ ai-dev-kit install workflow-mgmt@2.0.0
 
 ```bash
 # Test repository access
-git ls-remote https://github.com/earlution/ai-dev-kit.git
+git ls-remote https://github.com/RMS-Ltd/ai-dev-kit.git
 
 # If fails, check network/firewall
 ```
@@ -151,7 +151,7 @@ cat .gitmodules
 # Should contain:
 # [submodule ".ai-dev-kit"]
 #   path = .ai-dev-kit
-#   url = https://github.com/earlution/ai-dev-kit.git
+#   url = https://github.com/RMS-Ltd/ai-dev-kit.git
 ```
 
 ---
@@ -821,7 +821,7 @@ git rm .ai-dev-kit
 rm -rf .git/modules/.ai-dev-kit
 
 # Re-add submodule
-git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 cd .ai-dev-kit
 git checkout workflow-mgmt-v2.0.0
 cd ..

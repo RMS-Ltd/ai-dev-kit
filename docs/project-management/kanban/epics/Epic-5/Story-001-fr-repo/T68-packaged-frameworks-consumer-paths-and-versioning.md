@@ -37,7 +37,7 @@ This task is **scoping + documentation + checklist**, not a full dependency arch
 ## Input
 
 - [Framework Dependency Architecture](../../../../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md) (if present).
-- [`packages/README.md` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/README.md).
+- [`packages/README.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/README.md).
 - [E5:S01:T47](T47-install-logging-for-framework-dependencies.md) / FR-047 (install logging overlap).
 
 ---
@@ -52,9 +52,9 @@ This task is **scoping + documentation + checklist**, not a full dependency arch
 
 ## Acceptance Criteria
 
-- [x] Single **entry-point doc** ([`rw-validators-consumer-layout.md` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)) that answers: “I copied `workflow mgt/` — what do I configure for RW validators?”
+- [x] Single **entry-point doc** ([`rw-validators-consumer-layout.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)) that answers: “I copied `workflow mgt/` — what do I configure for RW validators?”
 - [x] At least **two** non–workflow-mgt framework READMEs updated (**kanban**, **numbering**) for FR-060 triggers and consumer-relative validator paths.
-- [x] **Explicit decision** recorded: [packages/README.md — Framework README version fields (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/README.md#framework-readme-version-fields) (manual bump policy).
+- [x] **Explicit decision** recorded: [packages/README.md — Framework README version fields (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/README.md#framework-readme-version-fields) (manual bump policy).
 
 ---
 

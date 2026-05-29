@@ -21,7 +21,7 @@ from upload_to_github_release import (
 )
 
 PACKAGES_DIR = SCRIPT_DIR.parent.parent / "dist" / "packages"
-REPO = "earlution/ai-dev-kit"
+REPO = "RMS-Ltd/ai-dev-kit"
 
 # Framework packages: (package_file, tag)
 PACKAGES = [

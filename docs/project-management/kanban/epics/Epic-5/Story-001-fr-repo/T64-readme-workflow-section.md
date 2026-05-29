@@ -84,7 +84,7 @@ Add a comprehensive "Workflows" section to the project README.md that documents 
 ## Acceptance Criteria
 
 - [x] **Criterion 1:** "Workflows" section exists in README.md
-- [x] **Criterion 2:** All **11 registry** workflows documented with summaries (aligned to [`workflow-registry.yaml` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/workflow-registry.yaml))
+- [x] **Criterion 2:** All **11 registry** workflows documented with summaries (aligned to [`workflow-registry.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/workflow-registry.yaml))
 - [x] **Criterion 3:** Principle operations explained for each workflow
 - [x] **Criterion 4:** Command / agent trigger forms documented (RW task token, UKW flags, PVW, ICW)
 - [x] **Criterion 5:** Usage examples provided for common scenarios

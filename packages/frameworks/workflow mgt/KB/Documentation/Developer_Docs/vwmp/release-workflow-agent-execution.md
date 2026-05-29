@@ -2606,7 +2606,7 @@ except Exception as e:
    - Get `internal_version` from Step 2:
      - [Example: ai-dev-kit] `v0.4.16.4+1`
    - Get summary, epic, story, task from parameters
-   - Get repository from `GITHUB_REPOSITORY` env var or default to `earlution/ai-dev-kit`
+   - Get repository from `GITHUB_REPOSITORY` env var or default to `RMS-Ltd/ai-dev-kit`
    - **CRITICAL:** Check for `GITHUB_TOKEN` environment variable
    - Understand this step creates/updates GitHub release using SemVer tag
    - Understand this step is **non-blocking** if token is missing

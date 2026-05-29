@@ -23,7 +23,7 @@ Triage to achieve **`npm run build` exit 0** for the FR-066 publish scope (`port
 | MDX in templates / docs | Curly-brace placeholders (`{epic}`, `{PROJECT_NAME}`, `{Name}`, etc.) escaped or rewritten so MDX does not treat them as expressions |
 | Assets / embeds | [building-persistent-knowledge.md](../knowledge/guides/building-persistent-knowledge.md): YouTube iframe → markdown link; missing PNGs → prose figure notes |
 | Broken markdown links | **Policy (post–T08):** `onBrokenLinks: 'throw'`, `onBrokenMarkdownLinks: 'throw'` — corpus link repairs with **E5:S09:T08**; regressions fail `npm run build` |
-| Relative links **outside** `docs/` plugin root (`../../../INSTALL_*`, traversals into `packages/`) | **Policy (Wave 1 — BR-068 / [E5:S09:T11](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)):** use **canonical GitHub `blob` URLs** or optional in-`docs/` stubs — see [portal README — BR-068 monorepo links](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md#br-068-monorepo-links-outside-the-docs-plugin-e5s09t11); **[IPW-E5S09T11](../implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)** — **Wave 2** corpus edits shipped **`v0.5.9.11+3`** (strict **`npm run build`** green). |
+| Relative links **outside** `docs/` plugin root (`../../../INSTALL_*`, traversals into `packages/`) | **Policy (Wave 1 — BR-068 / [E5:S09:T11](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)):** use **canonical GitHub `blob` URLs** or optional in-`docs/` stubs — see [portal README — BR-068 monorepo links](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md#br-068-monorepo-links-outside-the-docs-plugin-e5s09t11); **[IPW-E5S09T11](../implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)** — **Wave 2** corpus edits shipped **`v0.5.9.11+3`** (strict **`npm run build`** green). |
 | Broken anchors (`#fragment`) | **Policy (post–T10):** `onBrokenAnchors: 'throw'` — corpus anchor/heading alignment with **E5:S09:T10** (**FR-067 FU-3** done at **`v0.5.9.10+2`**) |
 
 ## Excludes (unchanged vs FR-066)
@@ -31,7 +31,7 @@ Triage to achieve **`npm run build` exit 0** for the FR-066 publish scope (`port
 - `changelog-and-release-notes/changelog-archive/**`
 - `knowledge/changelog-and-release-notes/changelog-archive/**`
 
-Listed in [portal/README.md (repository root)](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) under **Excluded**.
+Listed in [portal/README.md (repository root)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) under **Excluded**.
 
 ## Scale / stats (approximate)
 

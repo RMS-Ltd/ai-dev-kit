@@ -1626,7 +1626,7 @@ update_workflow:
   step_1:
     action: "Review changes in ai-dev-kit"
     command: |
-      git clone https://github.com/earlution/ai-dev-kit.git
+      git clone https://github.com/RMS-Ltd/ai-dev-kit.git
       cd ai-dev-kit
       git log --oneline packages/frameworks/kanban/
   

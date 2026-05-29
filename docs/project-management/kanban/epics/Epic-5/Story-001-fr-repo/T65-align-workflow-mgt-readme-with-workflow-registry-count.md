@@ -24,13 +24,13 @@ housekeeping_policy: keep
 
 ## Scope
 
-Remove **stale “12 workflows”** claims in [`workflow mgt/README.md` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/README.md) wherever they conflict with the **canonical machine list**: [`workflow-registry.yaml` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/workflow-registry.yaml) (**11** `workflows:` keys as of 2026-03). Align intro, purpose, feature bullets, and overview tables with **11** or with explicit wording (“11 YAML-defined workflows” + optional note on methodology/docs beyond YAML).
+Remove **stale “12 workflows”** claims in [`workflow mgt/README.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/README.md) wherever they conflict with the **canonical machine list**: [`workflow-registry.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/workflow-registry.yaml) (**11** `workflows:` keys as of 2026-03). Align intro, purpose, feature bullets, and overview tables with **11** or with explicit wording (“11 YAML-defined workflows” + optional note on methodology/docs beyond YAML).
 
 ---
 
 ## Input
 
-- Root [README.md (repository)](https://github.com/earlution/ai-dev-kit/blob/main/README.md) Workflows section (already aligned to 11 + registry link).
+- Root [README.md (repository)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md) Workflows section (already aligned to 11 + registry link).
 - [T64-readme-workflow-section.md](T64-readme-workflow-section.md) / FR-061 closure notes.
 - [T56-standardize-packaged-workflow-documentation-and-instructions.md](T56-standardize-packaged-workflow-documentation-and-instructions.md) (avoid duplicating full FR-056 scope).
 

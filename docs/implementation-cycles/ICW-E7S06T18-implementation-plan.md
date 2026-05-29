@@ -38,9 +38,9 @@ housekeeping_policy: keep
 
 ## Files touched (expected)
 
-- [`packages/frameworks/workflow mgt/scripts/install_release_workflow.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)
-- [`packages/frameworks/kanban/scripts/install_kanban_framework.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)
-- [`packages/frameworks/kanban/scripts/validate_installation.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/validate_installation.py) (if root-aware checks require updates)
+- [`packages/frameworks/workflow mgt/scripts/install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)
+- [`packages/frameworks/kanban/scripts/install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)
+- [`packages/frameworks/kanban/scripts/validate_installation.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/validate_installation.py) (if root-aware checks require updates)
 - Installer user docs under `docs/documentation/user-docs/` that describe interactive configuration prompts
 - Host task and UXR docs for implementation evidence after coding
 
@@ -59,4 +59,4 @@ housekeeping_policy: keep
 
 Delivered behaviour matches ordered actions **1–5** and **7** (validators, prompts, preview, root adoption, status banners, [`tests/test_install_release_workflow_patterns.py`](../../tests/test_install_release_workflow_patterns.py)).
 
-**Action 6 (existing `.cursorrules` trigger):** Implemented as **detect duplicate RW trigger → skip append, print guidance, collect warning → PARTIAL** in [`install_release_workflow.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py). An optional **diff artifact path** was not implemented; operators reconcile manually.
+**Action 6 (existing `.cursorrules` trigger):** Implemented as **detect duplicate RW trigger → skip append, print guidance, collect warning → PARTIAL** in [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py). An optional **diff artifact path** was not implemented; operators reconcile manually.

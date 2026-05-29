@@ -122,7 +122,7 @@ packages/frameworks/dist/packages/
    - Or pass via `--token` flag
 
 2. **Repository:**
-   - Default: `earlution/ai-dev-kit` (or set `GITHUB_REPOSITORY` env var)
+   - Default: `RMS-Ltd/ai-dev-kit` (or set `GITHUB_REPOSITORY` env var)
 
 3. **Git Tags:**
    - Create tags for each framework release:
@@ -147,7 +147,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/kanban-v2.1.0.tar.gz" \
     --hash-file "$PACKAGES_DIR/kanban-v2.1.0.tar.gz.sha256" \
     --tag kanban-v2.1.0 \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 
 # Upload workflow mgt package
@@ -155,7 +155,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/workflow-mgt-v2.1.3.tar.gz" \
     --hash-file "$PACKAGES_DIR/workflow-mgt-v2.1.3.tar.gz.sha256" \
     --tag workflow-mgt-v2.1.3 \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 
 # Upload numbering & versioning package
@@ -163,7 +163,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/numbering-versioning-v2.0.0.tar.gz" \
     --hash-file "$PACKAGES_DIR/numbering-versioning-v2.0.0.tar.gz.sha256" \
     --tag numbering-versioning-v2.0.0 \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 
 # Upload doc-lifecycle package
@@ -171,7 +171,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/doc-lifecycle-v1.0.0.tar.gz" \
     --hash-file "$PACKAGES_DIR/doc-lifecycle-v1.0.0.tar.gz.sha256" \
     --tag doc-lifecycle-v1.0.0 \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 
 # Upload debug-path package
@@ -179,7 +179,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/debug-path-v1.0.0.tar.gz" \
     --hash-file "$PACKAGES_DIR/debug-path-v1.0.0.tar.gz.sha256" \
     --tag debug-path-v1.0.0 \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 ```
 
@@ -192,7 +192,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
 cd /Users/rms/Documents/projects/ai-dev-kit
 PACKAGES_DIR="packages/frameworks/dist/packages"
 UPLOAD_SCRIPT="packages/frameworks/workflow mgt/scripts/upload_to_github_release.py"
-REPO="earlution/ai-dev-kit"
+REPO="RMS-Ltd/ai-dev-kit"
 
 # Array of packages: (package_file, tag)
 declare -a PACKAGES=(
@@ -235,7 +235,7 @@ cd /tmp/test-framework-install
 python3 /Users/rms/Documents/projects/ai-dev-kit/"packages/frameworks/workflow mgt/scripts/install_package_from_release.py" \
     kanban 2.1.0 \
     --install-dir ./frameworks \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 
 # Verify installation

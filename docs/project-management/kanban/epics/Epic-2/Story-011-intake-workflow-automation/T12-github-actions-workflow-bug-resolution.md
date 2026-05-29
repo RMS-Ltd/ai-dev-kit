@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Completed:** 2026-03-30  
 **Version:** v0.2.11.12+2  
 **Related BR:** [BR-053](../../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)  
-**GitHub Issue:** [#21](https://github.com/earlution/ai-dev-kit/issues/21)
+**GitHub Issue:** [#21](https://github.com/RMS-Ltd/ai-dev-kit/issues/21)
 
 ---
 

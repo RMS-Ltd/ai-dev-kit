@@ -36,8 +36,8 @@ Implement **FR-070**: GitHub Pages hosting aligned with `url` / `baseUrl`, autom
 ## Deliverable
 
 - Hosting decision in `portal/README.md` (Production hosting section)
-- [`.github/workflows/docusaurus-deploy.yml`](https://github.com/earlution/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml)
-- Live URL in root [`README.md`](https://github.com/earlution/ai-dev-kit/blob/main/README.md)
+- [`.github/workflows/docusaurus-deploy.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml)
+- Live URL in root [`README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md)
 - Secrets via `GITHUB_TOKEN` only (no tokens in source)
 
 ---
@@ -52,15 +52,15 @@ Implement **FR-070**: GitHub Pages hosting aligned with `url` / `baseUrl`, autom
 
 | ID | Source | Statement |
 |----|--------|------------|
-| **S1** | R01 / AC1 | Canonical URL `https://earlution.github.io/ai-dev-kit/` documented in [`portal/README.md`](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md). |
-| **S2** | R02 | [`portal/docusaurus.config.js`](https://github.com/earlution/ai-dev-kit/blob/main/portal/docusaurus.config.js) `url` + `baseUrl` match GitHub Pages project site. |
-| **S3** | R03 / AC2 | [`.github/workflows/docusaurus-deploy.yml`](https://github.com/earlution/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml): `npm ci`, `npm run build`, publish `portal/build` to `gh-pages`. |
-| **S4** | R04 / AC3 | Root [`README.md`](https://github.com/earlution/ai-dev-kit/blob/main/README.md) links to live site. |
+| **S1** | R01 / AC1 | Canonical URL `https://rms-ltd.github.io/ai-dev-kit/` documented in [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md). |
+| **S2** | R02 | [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js) `url` + `baseUrl` match GitHub Pages project site. |
+| **S3** | R03 / AC2 | [`.github/workflows/docusaurus-deploy.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml): `npm ci`, `npm run build`, publish `portal/build` to `gh-pages`. |
+| **S4** | R04 / AC3 | Root [`README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md) links to live site. |
 | **S5** | NF01 | Workflow uses `${{ secrets.GITHUB_TOKEN }}` only; README names permissions—no PAT in git. |
 | **S6** | NF02 | **Rollback** subsection in `portal/README.md`. |
 | **S7** | Integration | Build steps run before `peaceiris/actions-gh-pages` in the same job. |
 
-**Tests:** [`tests/test_portal_fr070_deployment.py`](https://github.com/earlution/ai-dev-kit/blob/main/tests/test_portal_fr070_deployment.py)
+**Tests:** [`tests/test_portal_fr070_deployment.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr070_deployment.py)
 
 ---
 
@@ -72,9 +72,9 @@ Implement **FR-070**: GitHub Pages hosting aligned with `url` / `baseUrl`, autom
 
 ## Evidence
 
-- [`.github/workflows/docusaurus-deploy.yml`](https://github.com/earlution/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml)
-- [`portal/README.md`](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) — hosting, secrets, rollback
-- [`tests/test_portal_fr070_deployment.py`](https://github.com/earlution/ai-dev-kit/blob/main/tests/test_portal_fr070_deployment.py)
+- [`.github/workflows/docusaurus-deploy.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml)
+- [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — hosting, secrets, rollback
+- [`tests/test_portal_fr070_deployment.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr070_deployment.py)
 
 ---
 

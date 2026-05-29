@@ -1,6 +1,6 @@
 # ai-dev-kit — Claude Code Project Instructions
 
-**Branch:** `dev` | **Repo:** `earlution/ai-dev-kit`
+**Branch:** `dev` | **Repo:** `RMS-Ltd/ai-dev-kit`
 
 This project is the AI Dev Kit: a collection of workflow management frameworks, kanban tooling, validation scripts, and release automation for agentic development workflows. Primary working branch is `dev`; releases are cut from `dev` and merged to `main`.
 

@@ -35,12 +35,12 @@ The implementation in this repo starts simple:
 
 ### 1.1 RW Step 7 vs standalone UKW (FR-038)
 
-- **Per-release kanban sync:** [Release Workflow](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) **Step 7 — Scoped Kanban Sync (UKW Mode)** aligns Task/Story/Epic docs and related board lines for the **current release** in a **scoped** manner (conservative MoSCOW; no whole-board reshuffle).
-- **Board-wide kanban sync:** [Update Kanban Workflow (UKW)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) in **standalone** mode handles full-board housekeeping, prioritisation, and narrative updates per UKW flags.
+- **Per-release kanban sync:** [Release Workflow](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) **Step 7 — Scoped Kanban Sync (UKW Mode)** aligns Task/Story/Epic docs and related board lines for the **current release** in a **scoped** manner (conservative MoSCOW; no whole-board reshuffle).
+- **Board-wide kanban sync:** [Update Kanban Workflow (UKW)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) in **standalone** mode handles full-board housekeeping, prioritisation, and narrative updates per UKW flags.
 
 ### 1.2 FR / BR / UXR intake (**KG-R2**, **KG-R6**)
 
-Normative detail lives in the **framework** policy (single SoT): [`kanban-governance-policy.md` (framework package)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) — **key_rules** **KG-R2** and **KG-R6**.
+Normative detail lives in the **framework** policy (single SoT): [`kanban-governance-policy.md` (framework package)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) — **key_rules** **KG-R2** and **KG-R6**.
 
 **In short (this repo):**
 
@@ -53,7 +53,7 @@ Normative detail lives in the **framework** policy (single SoT): [`kanban-govern
 - **New intake cutover:** New FR/BR/UXR intake MUST create the primary task in the most appropriate delivery story; do **not** create net-new intake tasks in dedicated FR/BR/UXR repository stories.
 - **Historical anchors preserved:** Existing repository-story tasks remain valid for forensic traceability and cross-links; treat those stories as historical registries during migration/closure.
 
-Operational guide: [`FR_BR_INTAKE_GUIDE.md` (framework package)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md). Agent skill: [`intake-process` skill](https://github.com/earlution/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md).
+Operational guide: [`FR_BR_INTAKE_GUIDE.md` (framework package)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md). Agent skill: [`intake-process` skill](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md).
 
 ### 1.3 RW task-intent adoption flag (`--art`)
 

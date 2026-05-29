@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (Cursor) acting as user/client for dev-toolkit  
 **Priority:** MEDIUM  
 **Status:** ACCEPTED  
-**GitHub Issue:** [#4](https://github.com/earlution/ai-dev-kit/issues/4)  
+**GitHub Issue:** [#4](https://github.com/RMS-Ltd/ai-dev-kit/issues/4)  
 **Repository Task:** [E7:S00:T01](../epics/Epic-7/Story-000-uxr-repo/T01-uxr-001-repository-anchor.md)  
 **Implementation (synthesis):** [E7:S05:T01](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T01**
 
@@ -354,7 +354,7 @@ Research findings from migrating dev-toolkit's pre-existing Kanban structure to 
 - **Framework README:** `packages/frameworks/kanban/README.md`
 - **Gap Analysis:** `docs/project-management/kanban/_backup-pre-migration/INSTALLATION_GAP_ANALYSIS.md`
 - **Migration Documentation:** `docs/project-management/kanban/_backup-pre-migration/`
-- **GitHub Issue:** [#4](https://github.com/earlution/ai-dev-kit/issues/4)
+- **GitHub Issue:** [#4](https://github.com/RMS-Ltd/ai-dev-kit/issues/4)
 
 ---
 

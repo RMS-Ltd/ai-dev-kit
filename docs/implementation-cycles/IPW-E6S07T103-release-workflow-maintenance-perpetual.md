@@ -49,7 +49,7 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 
 ### 1.5 Constraints and notes
 
-- Primary scripts: [`validate_version_bump.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/validate_version_bump.py), [`validate_branch_context.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/validate_branch_context.py), [`semver_converter.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/version/semver_converter.py); RW execution: [`.cursorrules`](https://github.com/earlution/ai-dev-kit/blob/main/.cursorrules), [`release-workflow-agent-execution.md`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md).
+- Primary scripts: [`validate_version_bump.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/validate_version_bump.py), [`validate_branch_context.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/validate_branch_context.py), [`semver_converter.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/version/semver_converter.py); RW execution: [`.cursorrules`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules), [`release-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md).
 - **Perpetual** **T103** is represented in tests (e.g. `test_validate_version_bump_passes_for_t103`).
 
 ---
@@ -65,7 +65,7 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 | T5 | RW Step 9 (manual / CI) | Commands documented in **`.cursorrules`**: `--requested`, `--art`, and when to add **`--doc-policy-zero`**. |
 | T6 | Regression | Re-run or extend tests that cover **BR-010**-class batch / first-time doc creation so **+0** / **+1** remains correct. |
 
-**Test module (unit):** [`test_validate_version_bump.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/test_validate_version_bump.py)
+**Test module (unit):** [`test_validate_version_bump.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/test_validate_version_bump.py)
 
 ---
 
@@ -83,7 +83,7 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 
 | Step | Action | Primary deliverable / path |
 |------|--------|----------------------------|
-| B1 | Short “when to use **`--doc-policy-zero`**” in [implementation-cycle-sop.md](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md) or RW KB, linked from T103. | Adopter clarity |
+| B1 | Short “when to use **`--doc-policy-zero`**” in [implementation-cycle-sop.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md) or RW KB, linked from T103. | Adopter clarity |
 | B2 | Refresh [FR-041](../project-management/kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md) related work if T103 backlog items close. | Traceability |
 
 ### Wave C — Governance sync (optional)

@@ -69,7 +69,7 @@ Installation tooling and guides must use **canonical** GitHub coordinates for th
 - Rewired `rw-config.yaml`, README, INSTALL, install script defaults, Docusaurus config, issue templates, ADR-006 canonical table.
 - Smoke test: `./scripts/fr099_install_smoke_test.sh` PASS on public `main`.
 - **Fork override:** `--repo` / `GITHUB_REPOSITORY` still supported for enterprise mirrors.
-- **Legacy:** `earlution/ai-dev-kit` retains interim bootstrap content; adopters must use `RMS-Ltd/ai-dev-kit`.
+- **Legacy:** `RMS-Ltd/ai-dev-kit` retains interim bootstrap content; adopters must use `RMS-Ltd/ai-dev-kit`.
 
 ---
 

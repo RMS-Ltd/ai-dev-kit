@@ -67,8 +67,8 @@ Greenfield documentation may be opinionated for speed and clarity. That does **n
 ## Related
 
 - [`framework-dependency-architecture.md`](framework-dependency-architecture.md) — dependency and packaging direction.
-- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — adopt-facing entry (should reflect greenfield happy path vs brownfield modular adoption over time).
-- [`rw-validators-consumer-layout.md`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md) — example of **contract-first** integration for vendored workflow management.
+- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — adopt-facing entry (should reflect greenfield happy path vs brownfield modular adoption over time).
+- [`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md) — example of **contract-first** integration for vendored workflow management.
 - [E6:S09 — AI Dev Kit installation and adopter integration](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md) — Kanban story for FR-080–082.
 - [FR-080](../../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md) — delivery: end-to-end greenfield installation process.
 - [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md) — delivery: brownfield modular adopter integration.

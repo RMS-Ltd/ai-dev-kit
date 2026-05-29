@@ -71,7 +71,7 @@ Testable behaviors **S1–S7** are enforced by [`tests/test_portal_fr066_docs_pa
 | **S1** | `docs.path` points at repo root `docs/` (e.g. `../docs` from `portal/`). | R01, AC1 |
 | **S2** | `portal/README.md` has a **Publish scope** with included pillars and excluded paths + rationale. | R03, AC2 |
 | **S3** | Docs plugin `exclude` (or doc) covers mass **changelog-archive** trees under `docs/`. | R02 |
-| **S4** | Docs `editUrl` is `https://github.com/earlution/ai-dev-kit/tree/main/docs/`. | R04 |
+| **S4** | Docs `editUrl` is `https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/`. | R04 |
 | **S5** | No duplicate docs root: `portal/docs` scaffold removed or empty; canonical content is `docs/`. | Scope |
 | **S6** | `sidebars.js` autogenerates from docs root (bootstrap). | Scope |
 | **S7** | Publish scope links [`ultimate-canonical-kb-structure.md`](../../../../../architecture/standards-and-adrs/ultimate-canonical-kb-structure.md). | NF01 |

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** ACCEPTED  
 
 **Implementing Task:** [E4:S07:T02](../epics/Epic-4/Story-007-migration-support-and-installation-modes.md)
-**GitHub Issue:** [#3](https://github.com/earlution/ai-dev-kit/issues/3)
+**GitHub Issue:** [#3](https://github.com/RMS-Ltd/ai-dev-kit/issues/3)
 
 ---
 
@@ -299,7 +299,7 @@ A project (dev-toolkit) has an existing Kanban structure with completed work. Th
 - **Framework README:** `packages/frameworks/kanban/README.md`
 - **Gap Analysis:** `docs/project-management/kanban/_backup-pre-migration/INSTALLATION_GAP_ANALYSIS.md`
 - **Migration Plan:** `docs/project-management/kanban/_backup-pre-migration/MIGRATION_PLAN.md`
-- **GitHub Issue:** [#3](https://github.com/earlution/ai-dev-kit/issues/3)
+- **GitHub Issue:** [#3](https://github.com/RMS-Ltd/ai-dev-kit/issues/3)
 
 ---
 

@@ -741,8 +741,8 @@ git commit -m "Release v0.1.1.1+1 (SemVer: 0.1.101): Task description"
 ## References
 
 - [Semantic Versioning Specification](https://semver.org/)
-- [Implementation Guide (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/IMPLEMENTATION_GUIDE.md)
-- [Versioning Policy (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/versioning-policy.md)
+- [Implementation Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/IMPLEMENTATION_GUIDE.md)
+- [Versioning Policy (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/versioning-policy.md)
 - [Dev Kit Versioning Policy](./dev-kit-versioning-policy.md)
 
 ---

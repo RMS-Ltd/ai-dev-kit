@@ -1,5 +1,5 @@
-# RW Config: ai-dev-kit
-# This is the actual config for the ai-dev-kit repository
+# RW Config: ai-dev-kit-book (private book continuation)
+# Public frameworks: RMS-Ltd/ai-dev-kit — see canonical_* keys below
 # Part of: E6:S06:T07 - Framework Hardening (Phase 3)
 
 version_file: src/ai_dev_kit/version.py
@@ -42,14 +42,14 @@ semver_mapping_strategy: task_touch
 versioning_mode: dual
 
 # Project name
-project_name: ai-dev-kit
+project_name: ai-dev-kit-book
 
 # FR-099 / ADR-006 repository roles (E1:S04:T07)
 canonical_public_repo: RMS-Ltd/ai-dev-kit
 canonical_public_repo_url: https://github.com/RMS-Ltd/ai-dev-kit.git
 canonical_public_pages_url: https://rms-ltd.github.io/ai-dev-kit/
-maintainer_private_repo: RMS-Ltd/hf-ai-dev-kit
-maintainer_private_repo_url: https://github.com/RMS-Ltd/hf-ai-dev-kit.git
+maintainer_private_repo: RMS-Ltd/ai-dev-kit-book
+maintainer_private_repo_url: https://github.com/RMS-Ltd/ai-dev-kit-book.git
 
 # Notion project hub (single entry point for project context; RMS Teamspace)
 notion_hub_url: https://www.notion.so/30db6f8962c181ceb811f3a6c78ecd4b

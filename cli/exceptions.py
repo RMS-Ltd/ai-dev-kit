@@ -223,7 +223,7 @@ class AppleSDKLicenseError(AIDevKitError):
             "Accept Xcode license: sudo xcodebuild -license accept",
             "Set up Xcode path: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer",
             "Try using package manager backend: --backend pip or --backend npm",
-            "See Apple platform setup guide: https://github.com/earlution/ai-dev-kit/docs/apple-platform-setup.md"
+            "See Apple platform setup guide: https://github.com/RMS-Ltd/ai-dev-kit/docs/apple-platform-setup.md"
         ]
         
         # Add specific suggestions based on error details

@@ -40,7 +40,7 @@ Smoke test shallow-clones **public** `main` and asserts:
 
 ## Sync private → public (post-rewire)
 
-Public `earlution/ai-dev-kit` uses **replay history** (Phase 3 bootstrap), not the private repo’s full object graph. A direct `git push` of private `dev` to public **will fail**; use **bootstrap replay** instead:
+Public `RMS-Ltd/ai-dev-kit` uses **replay history** (Phase 3 bootstrap), not the private repo’s full object graph. A direct `git push` of private `dev` to public **will fail**; use **bootstrap replay** instead:
 
 ```bash
 ./scripts/fr099_bootstrap_public_ai_dev_kit.sh
@@ -48,20 +48,20 @@ Public `earlution/ai-dev-kit` uses **replay history** (Phase 3 bootstrap), not t
 ./scripts/fr099_sync_public_from_private.sh
 ```
 
-Run after `RW E1:S04:T07` commits rewire changes on private `dev` so public `main`/`dev` include `install_package_from_release.py` default `earlution/ai-dev-kit`.
+Run after `RW E1:S04:T07` commits rewire changes on private `dev` so public `main`/`dev` include `install_package_from_release.py` default `RMS-Ltd/ai-dev-kit`.
 
 ## Dual-remote maintainer setup
 
 ```bash
 git remote rename origin private   # optional naming
-git remote add public https://github.com/earlution/ai-dev-kit.git
-git remote add private https://github.com/RMS-Ltd/hf-ai-dev-kit.git
+git remote add public https://github.com/RMS-Ltd/ai-dev-kit.git
+git remote add private https://github.com/RMS-Ltd/ai-dev-kit-book.git
 # Work on private; push public after FR-099 sync / release
 ```
 
 ## Wave E (optional)
 
-Run [IPP-E6S09T06 §8](../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) ECC validation on a **fresh clone** of public `earlution/ai-dev-kit` after sync.
+Run [IPP-E6S09T06 §8](../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) ECC validation on a **fresh clone** of public `RMS-Ltd/ai-dev-kit` after sync.
 
 ## FR-099 closure
 

@@ -74,7 +74,7 @@ AI Dev Kit will be released publicly, enabling others to:
 
 ## 📦 Repository scope (public vs private)
 
-**AI Dev Kit** (this public reference repository) ships **frameworks, workflows, and adoption docs only**. A separate **private companion repository** (`RMS-Ltd/hf-ai-dev-kit`) holds book manuscript and publishing work; it is not part of the public tree. See [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
+**AI Dev Kit** (this public reference repository) ships **frameworks, workflows, and adoption docs only**. A separate **private companion repository** (`RMS-Ltd/ai-dev-kit-book`) holds book manuscript and publishing work; it is not part of the public tree. See [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 ---
 

@@ -68,7 +68,7 @@ All paths resolved from repository root; **all OK**.
 - `epics/Epic-7/Story-006-*.md` — matches `Story-006-post-windsurf-project-review.md`  
 - Task doc `Story-006-post-windsurf-project-review/T09-config-and-git-state-validation.md` — matches `T\{task\}-*.md` convention under story folder  
 
-**Semantics:** `changelog_archival.mode: latest_only` matches [CHANGELOG.md (repository root)](https://github.com/earlution/ai-dev-kit/blob/main/CHANGELOG.md) header and practice. `semver_mapping_strategy: task_touch` matches README / `semver_converter.py` usage. `use_kanban: true` matches RW Step 7 behavior.
+**Semantics:** `changelog_archival.mode: latest_only` matches [CHANGELOG.md (repository root)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CHANGELOG.md) header and practice. `semver_mapping_strategy: task_touch` matches README / `semver_converter.py` usage. `use_kanban: true` matches RW Step 7 behavior.
 
 ### 2. Version file and branch
 

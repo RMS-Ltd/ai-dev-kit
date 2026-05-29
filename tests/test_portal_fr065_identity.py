@@ -57,21 +57,21 @@ def test_fr065_s1_no_template_placeholders(config_text: str):
 
 def test_fr065_s2_org_project_names(config_text: str):
     """S2 — GitHub deployment fields."""
-    assert "organizationName: 'earlution'" in config_text or 'organizationName: "earlution"' in config_text
+    assert "organizationName: 'RMS-Ltd'" in config_text or 'organizationName: "RMS-Ltd"' in config_text
     assert "projectName: 'ai-dev-kit'" in config_text or 'projectName: "ai-dev-kit"' in config_text
 
 
 def test_fr065_s3_url_not_example(config_text: str):
     """S3 — production URL strategy (GitHub Pages)."""
     assert "your-docusaurus-site.example.com" not in config_text
-    assert "https://earlution.github.io" in config_text
+    assert "https://rms-ltd.github.io" in config_text
     assert "'/ai-dev-kit/'" in config_text or '"/ai-dev-kit/"' in config_text
 
 
 def test_fr065_s4_edit_url_points_at_repo_docs_and_blog(config_text: str):
     """S4 / FR-065:R02 + FR-066 — docs editUrl at repo docs/; blog at portal/blog/."""
-    base_docs = "https://github.com/earlution/ai-dev-kit/tree/main/docs/"
-    base_blog = "https://github.com/earlution/ai-dev-kit/tree/main/portal/blog/"
+    base_docs = "https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/"
+    base_blog = "https://github.com/RMS-Ltd/ai-dev-kit/tree/main/portal/blog/"
     assert base_docs in config_text, "docs editUrl must target repo docs/ (FR-066)"
     assert base_blog in config_text, "blog editUrl missing or wrong"
 

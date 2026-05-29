@@ -42,7 +42,7 @@ import os
 
 FRAMEWORKS_ROOT = SCRIPT_DIR.parent.parent
 OUTPUT_DIR = FRAMEWORKS_ROOT.parent / "dist" / "packages"
-REPO = "earlution/ai-dev-kit"
+REPO = "RMS-Ltd/ai-dev-kit"
 
 FRAMEWORKS = [
     ("kanban", "2.1.0", "kanban"),

@@ -13,7 +13,7 @@ from pathlib import Path
 from urllib.parse import quote, unquote
 
 
-REPO_MAIN = "https://github.com/earlution/ai-dev-kit/blob/main"
+REPO_MAIN = "https://github.com/RMS-Ltd/ai-dev-kit/blob/main"
 
 # Markdown link [text](target) — capture target excluding optional title
 LINK_TARGET = re.compile(r"\]\(([^)]+)\)")

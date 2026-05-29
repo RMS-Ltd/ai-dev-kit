@@ -35,7 +35,7 @@ Audit and fix **`docs/project-management/kanban/**`** for: post-renumbering stal
 
 ## Input
 
-Kanban docs under `docs/project-management/kanban/`, [`kanban-governance-policy.md` (framework package)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md).
+Kanban docs under `docs/project-management/kanban/`, [`kanban-governance-policy.md` (framework package)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md).
 
 ## Deliverable
 

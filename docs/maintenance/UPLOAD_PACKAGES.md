@@ -42,7 +42,7 @@ export GITHUB_TOKEN=your_token_here
 # Upload all packages
 python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
     --token $GITHUB_TOKEN \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 ```
 
@@ -62,7 +62,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
 cd /Users/rms/Documents/projects/ai-dev-kit
 PACKAGES_DIR="packages/frameworks/dist/packages"
 UPLOAD_SCRIPT="packages/frameworks/workflow mgt/scripts/upload_to_github_release.py"
-REPO="earlution/ai-dev-kit"
+REPO="RMS-Ltd/ai-dev-kit"
 
 # Upload kanban package
 python3 "$UPLOAD_SCRIPT" \
@@ -121,7 +121,7 @@ python3 "$UPLOAD_SCRIPT" \
 cd /Users/rms/Documents/projects/ai-dev-kit
 PACKAGES_DIR="packages/frameworks/dist/packages"
 UPLOAD_SCRIPT="packages/frameworks/workflow mgt/scripts/upload_to_github_release.py"
-REPO="earlution/ai-dev-kit"
+REPO="RMS-Ltd/ai-dev-kit"
 
 # Check token
 if [ -z "$GITHUB_TOKEN" ]; then
@@ -183,7 +183,7 @@ After uploading, verify packages are on GitHub Releases:
 
 1. **Check Releases Page:**
    ```
-   https://github.com/earlution/ai-dev-kit/releases
+   https://github.com/RMS-Ltd/ai-dev-kit/releases
    ```
 
 2. **Verify Each Release:**
@@ -196,7 +196,7 @@ After uploading, verify packages are on GitHub Releases:
    python3 "packages/frameworks/workflow mgt/scripts/install_package_from_release.py" \
        kanban 2.1.0 \
        --install-dir /tmp/test-install \
-       --repo earlution/ai-dev-kit \
+       --repo RMS-Ltd/ai-dev-kit \
        --verbose
    ```
 

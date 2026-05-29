@@ -24,15 +24,15 @@ housekeeping_policy: keep
 
 ## Scope
 
-Ensure **[`INSTALL_IN_YOUR_PROJECT.md` (source)](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)** and any **bootstrap / copy-paste** instructions (submodule quick start, framework README “getting started”) tell adopters that **Release Workflow** in Cursor requires an **`E…S…T…` task id in the same message** as `RW` / `RW -d` / `RW -k` (per **FR-060**). Add copy-paste examples and link to [release-workflow-agent-execution.md (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) Step 1.x.
+Ensure **[`INSTALL_IN_YOUR_PROJECT.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)** and any **bootstrap / copy-paste** instructions (submodule quick start, framework README “getting started”) tell adopters that **Release Workflow** in Cursor requires an **`E…S…T…` task id in the same message** as `RW` / `RW -d` / `RW -k` (per **FR-060**). Add copy-paste examples and link to [release-workflow-agent-execution.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) Step 1.x.
 
 ---
 
 ## Input
 
 - [FR-060-rw-task-argument-requirement.md](../../../fr-br/FR-060-rw-task-argument-requirement.md)
-- Root [README.md (repository)](https://github.com/earlution/ai-dev-kit/blob/main/README.md) Workflows table (RW row).
-- [validate_rw_task_complete.py (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/validate_rw_task_complete.py) (mention when Kanban integration enabled).
+- Root [README.md (repository)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md) Workflows table (RW row).
+- [validate_rw_task_complete.py (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/validate_rw_task_complete.py) (mention when Kanban integration enabled).
 
 ---
 

@@ -468,7 +468,7 @@ framework_health_monitoring:
 ## 📞 Support
 
 ### Getting Help
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **FHM Enhancements**: Submit new health checks or remediation rules

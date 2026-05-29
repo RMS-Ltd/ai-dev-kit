@@ -23,7 +23,7 @@ Frequently asked questions about installing, updating, and using AI Dev Kit fram
 
 ### Scope (greenfield vs brownfield)
 
-- **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 - **Policy:** [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · Brownfield track: [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
@@ -448,7 +448,7 @@ The CLI tool is planned for Phase 2 (short-term). Git submodules (Phase 1) are a
 pip install ai-dev-kit
 
 # From source
-git clone https://github.com/earlution/ai-dev-kit.git
+git clone https://github.com/RMS-Ltd/ai-dev-kit.git
 cd ai-dev-kit/cli
 pip install -e .
 ```
@@ -606,7 +606,7 @@ See the [Update Guide](framework-dependency-update-guide.md) for update automati
 
 1. Check framework name: `ai-dev-kit list`
 2. Verify version exists: `ai-dev-kit list --versions`
-3. Check network: `git ls-remote https://github.com/earlution/ai-dev-kit.git`
+3. Check network: `git ls-remote https://github.com/RMS-Ltd/ai-dev-kit.git`
 4. Check permissions: `ls -la frameworks/`
 5. Try different backend: `ai-dev-kit install workflow-mgmt --backend git-submodule`
 

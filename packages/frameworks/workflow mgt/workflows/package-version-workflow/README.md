@@ -447,7 +447,7 @@ package_version:
 
 ### Getting Help
 - **Documentation**: [PKG-VERSION Guide](../../KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **PKG-VERSION Enhancements**: Submit new bump rules or validation methods

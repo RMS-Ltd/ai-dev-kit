@@ -37,7 +37,7 @@ Implement FR-064: **private-repo-safe** badges on `main` (static Shields.io), re
 
 - [FR-064](../../../fr-br/FR-064-shields-branch-private-repo-badges.md)  
 - Maintainer permission to delete remote branch  
-- `git` / `gh` access to `earlution/ai-dev-kit`
+- `git` / `gh` access to `RMS-Ltd/ai-dev-kit`
 
 ---
 

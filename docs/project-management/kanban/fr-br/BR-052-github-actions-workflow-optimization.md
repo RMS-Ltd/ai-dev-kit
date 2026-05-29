@@ -17,7 +17,7 @@ labels: ["bug", "github-actions", "workflow", "optimization", "notifications"]
 GitHub Actions workflow `fr-br-intake.yml` was generating unnecessary "No jobs were run" email notifications due to overly broad trigger conditions.
 
 ## **Environment**
-- **Repository**: earlution/ai-dev-kit
+- **Repository**: RMS-Ltd/ai-dev-kit
 - **Workflow**: `.github/workflows/fr-br-intake.yml`
 - **Trigger**: Issue events (opened, edited, labeled, unlabeled)
 - **Date Reported**: 2026-03-12

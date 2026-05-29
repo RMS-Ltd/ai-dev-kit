@@ -25,7 +25,7 @@ Receipts complement FR-047 (install logging) by capturing a structured summary t
 
 ### Scope (greenfield vs brownfield)
 
-Canonical **greenfield** installer narrative and ordering live in [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) with [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md), and [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md). Receipts may attach to release-based installs; align evidence with that policy boundary.
+Canonical **greenfield** installer narrative and ordering live in [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) with [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md), and [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md). Receipts may attach to release-based installs; align evidence with that policy boundary.
 
 ---
 
@@ -58,14 +58,14 @@ Receipts are generated only when installs are performed from a consumer repo (pr
     {
       "name": "workflow-mgmt",
       "requested_version": "2.1.4",
-      "source": "https://github.com/earlution/ai-dev-kit/releases/download/workflow-mgmt-v2.1.4/...",
+      "source": "https://github.com/RMS-Ltd/ai-dev-kit/releases/download/workflow-mgmt-v2.1.4/...",
       "hash": "sha256:...",
       "status": "installed"
     },
     {
       "name": "kanban",
       "requested_version": "2.1.0",
-      "source": "https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.1.0/...",
+      "source": "https://github.com/RMS-Ltd/ai-dev-kit/releases/download/kanban-v2.1.0/...",
       "hash": "sha256:...",
       "status": "installed"
     }

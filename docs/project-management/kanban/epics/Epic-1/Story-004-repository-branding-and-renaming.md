@@ -39,7 +39,7 @@ This story plans and executes **repository naming and separation** between the p
 
 1. **Phase 1:** `vibe-dev-kit` → `ai-dev-kit` ✅ **COMPLETE**
 2. **Phase 2 (superseded):** `ai-dev-kit` → `head-first-ai-dev-kit` on O'Reilly acceptance — **cancelled 2026-05-26** ([FR-099](../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md), [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md))
-3. **FR-099:** Option C migration **complete** (Phases 0–4 ✅); public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit)
+3. **FR-099:** Option C migration **complete** (Phases 0–4 ✅); public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit)
 
 **Phase 1 Status:** ✅ **COMPLETE** — all references updated from `vibe-dev-kit` to `ai-dev-kit`.
 

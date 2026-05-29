@@ -34,7 +34,7 @@ Documentation-only ownership of the FR/BR/UXR **intake execution plan** on the p
 - [`fbuboard.md`](../../../fbuboard.md) — MoSCOW **Must / Should** rows and Intake plan block.  
 - [`FR-073`](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md) — feature request and acceptance criteria.  
 - [`Story-000-uxr-repo.md`](../../Epic-7/Story-000-uxr-repo.md) — **UXR-n → E7:S00:Tnn** repository convention.  
-- [`TASK_TEMPLATE.md` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/TASK_TEMPLATE.md) — required headings for `validate_version_bump.py`.  
+- [`TASK_TEMPLATE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/TASK_TEMPLATE.md) — required headings for `validate_version_bump.py`.  
 
 ---
 
@@ -115,5 +115,5 @@ Documentation-only ownership of the FR/BR/UXR **intake execution plan** on the p
 ## References
 
 - [`fbuboard.md`](../../../fbuboard.md)  
-- [`intake-process` skill (source)](https://github.com/earlution/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)  
+- [`intake-process` skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)  
 - [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) (precedent: governance intake on same story)

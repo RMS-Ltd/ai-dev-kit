@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
 - [E1:S04:T06 — Phase 3](T06-fr099-phase3-public-ai-dev-kit-rebirth.md) (must be COMPLETE)
-- New public `earlution/ai-dev-kit` remote URLs
+- New public `RMS-Ltd/ai-dev-kit` remote URLs
 
 ## Deliverable
 
@@ -37,7 +37,7 @@ Rewired remotes, badges, install docs, CI; install smoke test with no Epic-24 co
 
 ## Summary
 
-**Phase 4:** Rewire remotes, badges, install docs, CI, and submodule URLs to the **new public** `earlution/ai-dev-kit`. Run install smoke test (no Epic-24 contamination). Capture evidence for [IPP Wave E](../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) if applicable.
+**Phase 4:** Rewire remotes, badges, install docs, CI, and submodule URLs to the **new public** `RMS-Ltd/ai-dev-kit`. Run install smoke test (no Epic-24 contamination). Capture evidence for [IPP Wave E](../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) if applicable.
 
 ---
 
@@ -53,7 +53,7 @@ Rewired remotes, badges, install docs, CI; install smoke test with no Epic-24 co
 ## Acceptance criteria (phase scope)
 
 - [x] **AC6:** Public `main` has no `docs/book-proj/` or `epics/Epic-24/` (API verified 2026-05-26); run `scripts/fr099_install_smoke_test.sh` after each public bootstrap.
-- [x] **AC7:** Remotes, badges, install URLs point at new public `earlution/ai-dev-kit` (see [`fr099-phase4-rewire-and-verify.md`](../../../../../maintenance/fr099-phase4-rewire-and-verify.md)).
+- [x] **AC7:** Remotes, badges, install URLs point at new public `RMS-Ltd/ai-dev-kit` (see [`fr099-phase4-rewire-and-verify.md`](../../../../../maintenance/fr099-phase4-rewire-and-verify.md)).
 
 ---
 

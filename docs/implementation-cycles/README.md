@@ -36,7 +36,7 @@ That path is part of **ICW’s responsibility**: persist the three-phase package
 ## Related
 
 - [ICW implementation summary](./ICW-IMPLEMENTATION-SUMMARY.md) (historical context)
-- [Framework ICW README](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/implementation-cycle-workflow/README.md)
+- [Framework ICW README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/implementation-cycle-workflow/README.md)
 
 
 ## Publication discoverability contract (BR-066)

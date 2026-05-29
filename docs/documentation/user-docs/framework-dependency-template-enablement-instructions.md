@@ -23,13 +23,13 @@ This document provides step-by-step instructions for enabling the ai-dev-kit rep
 
 ### Scope (greenfield vs brownfield)
 
-Repositories created from the template still follow the **installer-driven greenfield path** for framework setup documentation. Point adopters to [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md), [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md), [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), and brownfield boundaries in [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
+Repositories created from the template still follow the **installer-driven greenfield path** for framework setup documentation. Point adopters to [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md), [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md), [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), and brownfield boundaries in [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
 
 ---
 
 ## Prerequisites
 
-- Admin access to the `earlution/ai-dev-kit` repository
+- Admin access to the `RMS-Ltd/ai-dev-kit` repository
 - GitHub account with repository settings access
 - Repository is in a clean, ready state
 
@@ -39,7 +39,7 @@ Repositories created from the template still follow the **installer-driven green
 
 ### Step 1: Navigate to Repository Settings
 
-1. Go to the repository: `https://github.com/earlution/ai-dev-kit`
+1. Go to the repository: `https://github.com/RMS-Ltd/ai-dev-kit`
 2. Click the **"Settings"** tab (top navigation)
 3. Scroll down to **"Template repository"** section (in General settings)
 
@@ -80,7 +80,7 @@ Repositories created from the template still follow the **installer-driven green
 
 ### Step 5: Verify Template Status
 
-1. Go to the repository main page: `https://github.com/earlution/ai-dev-kit`
+1. Go to the repository main page: `https://github.com/RMS-Ltd/ai-dev-kit`
 2. Verify you see the **"Use this template"** button (green button, top right)
 3. Click it to verify the template creation flow works
 4. (Don't actually create a repository, just verify the button appears)

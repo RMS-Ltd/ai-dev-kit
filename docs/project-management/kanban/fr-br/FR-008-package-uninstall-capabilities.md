@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** ACCEPTED  
 
 **Implementing Task:** [E2:S06:T01](../epics/Epic-2/Story-006-package-uninstall-and-recovery.md)
-**GitHub Issue:** [#5](https://github.com/earlution/ai-dev-kit/issues/5)
+**GitHub Issue:** [#5](https://github.com/RMS-Ltd/ai-dev-kit/issues/5)
 
 ---
 
@@ -340,7 +340,7 @@ A project wants to switch from Git submodule to npm package manager. User needs 
 - **Troubleshooting Guide:** `docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md`
 - **CLI Reference:** `docs/documentation/user-docs/framework-dependency-cli-reference.md`
 - **Framework Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
-- **GitHub Issue:** [#5](https://github.com/earlution/ai-dev-kit/issues/5)
+- **GitHub Issue:** [#5](https://github.com/RMS-Ltd/ai-dev-kit/issues/5)
 
 ---
 

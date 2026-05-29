@@ -35,7 +35,7 @@ housekeeping_policy: keep
 | RF2 | ADR-006 approved | FR-099-F2 | T03 |
 | RF3 | Private `hf-ai-dev-kit` with full history | FR-099-F3 | T04 |
 | RF4 | Book extraction genesis on private tree | FR-099-F4 | T05 |
-| RF5 | New public `earlution/ai-dev-kit` from genesis | FR-099-F5 | T06 |
+| RF5 | New public `RMS-Ltd/ai-dev-kit` from genesis | FR-099-F5 | T06 |
 | RF6 | Rewire URLs + install smoke (no Epic-24) | FR-099-F6 | T07 |
 | RF7 | E1:S04:T02 SUPERSEDED | FR-099-F7 | T03 |
 
@@ -55,14 +55,14 @@ housekeeping_policy: keep
 
 ## 2. Specification
 
-**Goal.** Separate book IP from public ADK via **Option C** ([ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)): private **`RMS-Ltd/hf-ai-dev-kit`** (full history) + public **`earlution/ai-dev-kit`** reborn from book-free genesis.
+**Goal.** Separate book IP from public ADK via **Option C** ([ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)): private **`RMS-Ltd/ai-dev-kit-book`** (full history) + public **`RMS-Ltd/ai-dev-kit`** reborn from book-free genesis.
 
 **Repos**
 
 | Repo | Role |
 |------|------|
-| `RMS-Ltd/hf-ai-dev-kit` | Private; book + frameworks history |
-| `earlution/ai-dev-kit` | Public; framework-only from genesis |
+| `RMS-Ltd/ai-dev-kit-book` | Private; book + frameworks history |
+| `RMS-Ltd/ai-dev-kit` | Public; framework-only from genesis |
 
 ### 2.4 ADR necessity (FR-100)
 
@@ -109,7 +109,7 @@ housekeeping_policy: keep
 |------|--------|--------|
 | **1** | **TODO → IN PROGRESS** when execution authorized | ✅ |
 | 2 | Resolve ADR-006 open question: **orphan root + cherry-pick replay** from `f21bac102` | ✅ |
-| 3 | Create public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) (no pre-genesis book on public remote) | ✅ 2026-05-26 |
+| 3 | Create public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) (no pre-genesis book on public remote) | ✅ 2026-05-26 |
 | 4 | Document default branch + clone policy | ✅ [`fr099-phase3-public-repo-bootstrap.md`](../maintenance/fr099-phase3-public-repo-bootstrap.md) |
 | **N** | **COMPLETE** + version anchor when AC4 satisfied | ✅ AC4; RW pending |
 
@@ -143,7 +143,7 @@ Repository SoT under `docs/` and root install docs; no manuscript in public gene
 ## 7. Success criteria
 
 - [x] Phases 0–2 complete (T03–T05) — archived on [kanban-completed.md](../project-management/kanban/kanban-completed.md); off active [kboard](../project-management/kanban/kboard.md)
-- [x] Phase 3: public repo live (T06) — [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit)
+- [x] Phase 3: public repo live (T06) — [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit)
 - [x] Phase 4: rewire + smoke (T07)
 - [x] FR-099 IMPLEMENTED (**v0.1.4.7+2**)
 

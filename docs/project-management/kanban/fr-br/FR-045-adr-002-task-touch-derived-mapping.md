@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-09  
 **Code:** FR-045  
 **Implementation Task:** [E5:S01:T45](../epics/Epic-5/Story-001-fr-repo/T45-adr-002-task-touch-derived-mapping.md)  
-**GitHub Issue:** [#18](https://github.com/earlution/ai-dev-kit/issues/18)
+**GitHub Issue:** [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 
 ---
 
@@ -203,7 +203,7 @@ Task-touch mapping delivers:
 
 ## References
 
-- GitHub Issue [#18](https://github.com/earlution/ai-dev-kit/issues/18).
+- GitHub Issue [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18).
 - Dev Kit Versioning Policy and dual-versioning docs (Numbering & Versioning framework).
 
 ---

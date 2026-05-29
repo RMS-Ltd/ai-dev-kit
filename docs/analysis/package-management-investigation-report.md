@@ -878,8 +878,8 @@ ai-dev-kit verify kanban-v2.0.0.tar.gz
 1. **Installation:**
    ```bash
    # Download package
-   wget https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz
-   wget https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz.sha256
+   wget https://github.com/RMS-Ltd/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz
+   wget https://github.com/RMS-Ltd/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz.sha256
    
    # Verify hash
    sha256sum -c kanban-v2.0.0.tar.gz.sha256

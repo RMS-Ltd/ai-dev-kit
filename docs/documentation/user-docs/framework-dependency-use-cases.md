@@ -25,7 +25,7 @@ This document provides a comprehensive overview of all use cases for adopting ai
 
 For a new/template repository following the current greenfield-first policy (FR-080 / E6:S09:T01), start with:
 
-- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 - [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 For brownfield modular integration boundaries, see:
@@ -177,7 +177,7 @@ For brownfield modular integration boundaries, see:
 **Documentation:**
 - See framework READMEs in `packages/frameworks/`
 - See [Architecture overview](../../architecture/README.md) and [KB structure / integration pointers](../../architecture/standards-and-adrs/kb-structure-overview.md)
-- See [Framework Templates (repository)](https://github.com/earlution/ai-dev-kit/tree/main/packages/frameworks)
+- See [Framework Templates (repository)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/packages/frameworks)
 
 ---
 
@@ -261,7 +261,7 @@ For brownfield modular integration boundaries, see:
 
 **Documentation:**
 - See [GitHub Forking Guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-- See [Contributing Guidelines](https://github.com/earlution/ai-dev-kit/blob/main/CONTRIBUTING.md) (if exists)
+- See [Contributing Guidelines](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CONTRIBUTING.md) (if exists)
 
 ---
 
@@ -454,5 +454,5 @@ For brownfield modular integration boundaries, see:
 If you're unsure which use case fits your needs, or need help implementing a specific use case:
 - Review this document and related guides
 - Check the [FAQ](framework-dependency-faq.md)
-- Open an issue on [GitHub](https://github.com/earlution/ai-dev-kit/issues)
+- Open an issue on [GitHub](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 

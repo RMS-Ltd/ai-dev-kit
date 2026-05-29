@@ -23,7 +23,7 @@ This guide helps you troubleshoot common issues when using the `ai-dev-kit` CLI 
 
 ### Scope (greenfield vs brownfield)
 
-Framework **installation** boundaries (distinct from CLI-only issues): [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md) · [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+Framework **installation** boundaries (distinct from CLI-only issues): [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md) · [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
 
@@ -532,10 +532,10 @@ ls -ld .
 ping github.com
 
 # Check Git remote access
-git ls-remote https://github.com/earlution/ai-dev-kit.git
+git ls-remote https://github.com/RMS-Ltd/ai-dev-kit.git
 
 # Use SSH instead of HTTPS (if configured)
-git remote set-url origin git@github.com:earlution/ai-dev-kit.git
+git remote set-url origin git@github.com:RMS-Ltd/ai-dev-kit.git
 
 # Check proxy settings
 echo $HTTP_PROXY
@@ -584,7 +584,7 @@ git status
 
 If you encounter an issue not covered in this guide:
 
-1. **Check existing issues:** [GitHub Issues](https://github.com/earlution/ai-dev-kit/issues)
+1. **Check existing issues:** [GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 2. **Create new issue:** Include:
    - Command that failed
    - Error message

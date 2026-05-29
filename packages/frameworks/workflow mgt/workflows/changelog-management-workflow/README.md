@@ -428,7 +428,7 @@ changelog_management:
 ## 📞 Support
 
 ### Getting Help
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **CMW Enhancements**: Submit new archival criteria or validation rules

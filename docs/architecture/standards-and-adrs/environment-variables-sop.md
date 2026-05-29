@@ -114,18 +114,18 @@ echo $GITHUB_TOKEN
 - GitHub release creation script
 
 **Default Value:**
-- If not set, scripts default to `earlution/ai-dev-kit`
+- If not set, scripts default to `RMS-Ltd/ai-dev-kit`
 - Can be overridden via `--repo` command-line argument
 
 **How to Set:**
 ```bash
-export GITHUB_REPOSITORY=earlution/ai-dev-kit
+export GITHUB_REPOSITORY=RMS-Ltd/ai-dev-kit
 ```
 
 **How to Verify:**
 ```bash
 echo $GITHUB_REPOSITORY
-# Should output: earlution/ai-dev-kit
+# Should output: RMS-Ltd/ai-dev-kit
 ```
 
 **Note:** This is optional for ai-dev-kit (has default), but required for other projects using these scripts.
@@ -140,7 +140,7 @@ echo $GITHUB_REPOSITORY
 
 **Required Variables:**
 - `GITHUB_TOKEN` (required)
-- `GITHUB_REPOSITORY` (optional, defaults to `earlution/ai-dev-kit`)
+- `GITHUB_REPOSITORY` (optional, defaults to `RMS-Ltd/ai-dev-kit`)
 
 **Behavior:**
 - Checks for `GITHUB_TOKEN` before running script
@@ -155,7 +155,7 @@ python "packages/frameworks/workflow mgt/scripts/create_github_release.py" \
   --internal-version "v0.4.16.4+1" \
   --summary "Release summary" \
   --epic "4" --story "16" --task "4" \
-  --repo "earlution/ai-dev-kit" \
+  --repo "RMS-Ltd/ai-dev-kit" \
   --token "$GITHUB_TOKEN"
 ```
 
@@ -165,7 +165,7 @@ python "packages/frameworks/workflow mgt/scripts/create_github_release.py" \
 
 **Required Variables:**
 - `GITHUB_TOKEN` (required)
-- `GITHUB_REPOSITORY` (optional, defaults to `earlution/ai-dev-kit`)
+- `GITHUB_REPOSITORY` (optional, defaults to `RMS-Ltd/ai-dev-kit`)
 
 **Scripts:**
 - `upload_to_github_release.py` - Upload individual package
@@ -175,7 +175,7 @@ python "packages/frameworks/workflow mgt/scripts/create_github_release.py" \
 **Setup:**
 ```bash
 export GITHUB_TOKEN=your_token_here
-export GITHUB_REPOSITORY=earlution/ai-dev-kit  # Optional
+export GITHUB_REPOSITORY=RMS-Ltd/ai-dev-kit  # Optional
 ```
 
 **Verification:**
@@ -226,7 +226,7 @@ if not github_token:
 
 **Implementation:**
 ```python
-repo = os.environ.get('GITHUB_REPOSITORY', 'earlution/ai-dev-kit')
+repo = os.environ.get('GITHUB_REPOSITORY', 'RMS-Ltd/ai-dev-kit')
 # Use repo variable (will use default if env var not set)
 ```
 
@@ -336,7 +336,7 @@ Before running workflows that require environment variables:
     --internal-version "v0.4.16.4+1" \
     --summary "Release summary" \
     --epic "4" --story "16" --task "4" \
-    --repo "earlution/ai-dev-kit" \
+    --repo "RMS-Ltd/ai-dev-kit" \
     --token "$GITHUB_TOKEN"
   ```
 

@@ -19,7 +19,7 @@ GitHub reported **Invalid workflow file** for `.github/workflows/fr-br-intake.ym
 
 ## Environment
 
-- **Repository:** earlution/ai-dev-kit  
+- **Repository:** RMS-Ltd/ai-dev-kit  
 - **Platform:** GitHub Actions (workflow validation)  
 - **File:** `.github/workflows/fr-br-intake.yml`  
 - **Date reported (retrospective):** 2026-03-20  

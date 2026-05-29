@@ -55,7 +55,7 @@ Greenfield adopters need a **single, reproducible first-run path** from acquisit
 1. Produce or extend the **greenfield specification** (ordering: acquire frameworks → run installers → configure → verify).
 2. Implement **orchestration** appropriate to repo conventions (scripts, CLI integration, or deterministic checklist—per FR-080).
 3. Ensure **workflow + Kanban** (and other chosen surfaces) use **install_release_workflow.py** / **install_kanban_framework.py** (or successors) as required—not copy-only adoption.
-4. Add **verification** gates aligned with `rw-config.yaml` and validator layout ([rw-validators-consumer-layout](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)).
+4. Add **verification** gates aligned with `rw-config.yaml` and validator layout ([rw-validators-consumer-layout](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)).
 5. Coordinate documentation updates with **FR-081** so greenfield and brownfield narratives stay distinct.
 
 ---
@@ -63,7 +63,7 @@ Greenfield adopters need a **single, reproducible first-run path** from acquisit
 ## Acceptance criteria
 
 - [x] **AC1:** FR-080 functional and non-functional requirements addressed or explicitly deferred with recorded rationale — see [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) § Implementation evidence and deferrals.
-- [x] **AC2:** A documented scratch or template scenario runs end-to-end without undocumented manual steps — [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) (Method 2 + orchestrator + Wave 4 synthetic reference transcript); live runs occur in the adopter workspace.
+- [x] **AC2:** A documented scratch or template scenario runs end-to-end without undocumented manual steps — [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) (Method 2 + orchestrator + Wave 4 synthetic reference transcript); live runs occur in the adopter workspace.
 - [x] **AC3:** Install docs cross-link [ADR-003](../../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md).
 
 ---

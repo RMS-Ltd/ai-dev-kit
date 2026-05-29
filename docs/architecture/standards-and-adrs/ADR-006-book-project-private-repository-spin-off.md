@@ -11,16 +11,23 @@ housekeeping_policy: keep
 **Status:** Accepted — **Phases 1–4 complete** (2026-05-26)  
 **Date:** 2026-05-26  
 **Decision owner:** Maintainer  
-**Private repository (live):** [RMS-Ltd/hf-ai-dev-kit](https://github.com/RMS-Ltd/hf-ai-dev-kit) — **private**
+**Private repository (live):** [RMS-Ltd/ai-dev-kit-book](https://github.com/RMS-Ltd/ai-dev-kit-book) — **private**
 **Implementing work:** [FR-099](../../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) · **E1:S04:T03–T07** (one task per phase; see [Story 004](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md))
 
 **Supersedes:** [E1:S04:T02](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md) (conditional public rename of `ai-dev-kit` → `head-first-ai-dev-kit`)
+
+### Amendment (2026-05-29): Private repo naming
+
+Interim Phase 1 name **`RMS-Ltd/hf-ai-dev-kit`** (Head First–scoped) is **retired**. The private book repository is **`RMS-Ltd/ai-dev-kit-book`** — series-agnostic (O'Reilly, Head First, or other lines are publishing context only, not repo identity). Public canonical remains **`RMS-Ltd/ai-dev-kit`**.
+
+After GitHub rename, update local `origin`:  
+`git remote set-url origin https://github.com/RMS-Ltd/ai-dev-kit-book.git`
 
 ---
 
 ## Context
 
-The **`RMS-Ltd/hf-ai-dev-kit`** repository (formerly public `ai-dev-kit` under the same org) co-hosts:
+Before FR-099 cutover, **`RMS-Ltd/ai-dev-kit`** (public) co-hosted:
 
 - **Open framework packages** (workflow management, Kanban, versioning) intended for public distribution.
 - **Unpublished book IP** (`docs/book-proj/`, Epic 24 Kanban, Head First / O'Reilly publishing context).
@@ -39,7 +46,7 @@ Adopt **Option C — private archive + fresh public genesis** (not in-place dele
 
 | Repository | Visibility | Name | Purpose |
 |------------|------------|------|---------|
-| **Book + full history** | **Private** ✅ | [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) | Manuscript, Epic 24, Head First / O'Reilly context, complete git archaeology |
+| **Book + full history** | **Private** ✅ | [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) | Manuscript, Epic 24, Head First / O'Reilly context, complete git archaeology |
 | **Frameworks** | **Public** ✅ | [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) | Neutral ADK reference; frameworks, RW/UKW/IPW, adopter install paths |
 
 Public `ai-dev-kit` **does not** rename to Head First. **E1:S04:T02 is superseded** by this ADR and FR-099.
@@ -60,16 +67,16 @@ Do **not** use “first commit after last book path touch” alone as the public
 ```
 Before 2026-05-26: RMS-Ltd/ai-dev-kit (public, book + frameworks)
     ↓
-✅ Phase 1 (2026-05-26): Made private; renamed → RMS-Ltd/hf-ai-dev-kit
+✅ Phase 1 (2026-05-26): Made private; interim rename → `hf-ai-dev-kit`
     ↓
-4. Complete book extraction commit on private hf-ai-dev-kit
+4. Complete book extraction commit on private book line (then `hf-ai-dev-kit`)
     ↓
 5. Create NEW public RMS-Ltd/ai-dev-kit from genesis commit
    (orphan root OR branch starting at genesis SHA — no pre-genesis objects on public remote)
     ↓
 6. Rewire remotes, badges, INSTALL_IN_YOUR_PROJECT, CI, submodule URLs
     ↓
-7. Private hf-ai-dev-kit continues book + Epic 24 work; consumes public ADK as dependency
+7. Private `ai-dev-kit-book` continues book + Epic 24 work; consumes public ADK as dependency
 ```
 
 ### Public history shape
@@ -78,7 +85,7 @@ Before 2026-05-26: RMS-Ltd/ai-dev-kit (public, book + frameworks)
 
 **Alternative:** new public repo whose default branch starts at genesis SHA without pushing earlier commits to the new remote (same effect, different tooling).
 
-Pre-genesis commits remain **only** on private `hf-ai-dev-kit`.
+Pre-genesis commits remain **only** on the private book repository (`ai-dev-kit-book`; full history from pre-cutover `ai-dev-kit` / interim `hf-ai-dev-kit`).
 
 ### Book repo dependency on public ADK
 
@@ -107,7 +114,7 @@ Epic 24 task IDs (`E24:*`) may continue in the private repo Kanban.
 
 ### Rollback
 
-Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under original name. After public genesis: rollback is forward-fix only (do not force-push public ADK to restore book paths).
+Before public genesis push: abort by re-publicizing the private line under its then-current name. After public genesis: rollback is forward-fix only (do not force-push public ADK to restore book paths).
 
 ---
 
@@ -116,9 +123,9 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 | Phase | Name | Task | Deliverable |
 |-------|------|------|-------------|
 | **0** | Inventory & ADR approval | **T03** | Validated asset matrix; maintainer signs this ADR |
-| **1** | Privatize + rename | **T04** | `RMS-Ltd/hf-ai-dev-kit` private ✅ 2026-05-26 |
+| **1** | Privatize + rename | **T04** | Private ✅ 2026-05-26 (interim `hf-ai-dev-kit`; live name `ai-dev-kit-book` since 2026-05-29) |
 | **2** | Book extraction commit | **T05** | Genesis tree book-free ✅ `v0.1.4.3+1` |
-| **3** | Public rebirth | **T06** | New public `earlution/ai-dev-kit` from genesis ✅ 2026-05-26 |
+| **3** | Public rebirth | **T06** | New public `RMS-Ltd/ai-dev-kit` from genesis ✅ 2026-05-26 |
 | **4** | Rewire & verify | **T07** | URLs, install smoke test, no Epic-24 contamination |
 
 ---
@@ -128,19 +135,19 @@ Before public genesis push: abort by re-publicizing `hf-ai-dev-kit` under origin
 | Phase | Status | Date | Notes |
 |-------|--------|------|-------|
 | **0** | ✅ **Complete** | 2026-05-26 | **E1:S04:T03** |
-| **1** | ✅ **Complete** | 2026-05-26 | **E1:S04:T04** — [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) |
+| **1** | ✅ **Complete** | 2026-05-26 | **E1:S04:T04** — [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) |
 | **2** | ✅ **Complete** | 2026-05-26 | **E1:S04:T05** — `v0.1.4.3+1` |
-| **3** | ✅ **Complete** | 2026-05-26 | **E1:S04:T06** — public bootstrap (orphan + replay from `f21bac102`); canonical home **[`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit)** bootstrapped 2026-05-28 (interim `earlution/ai-dev-kit` superseded) |
+| **3** | ✅ **Complete** | 2026-05-26 | **E1:S04:T06** — public bootstrap (orphan + replay from `f21bac102`); canonical home **[`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit)** bootstrapped 2026-05-28 (interim `earlution/ai-dev-kit` bootstrap superseded) |
 | **4** | ✅ **Complete** | 2026-05-26 | **E1:S04:T07** — rewire + verify ([runbook](../../maintenance/fr099-phase4-rewire-and-verify.md)) |
 
 **Local clone hygiene:** Update `origin` if still pointing at pre-rename URL:
-`git remote set-url origin https://github.com/RMS-Ltd/hf-ai-dev-kit.git`
+`git remote set-url origin https://github.com/RMS-Ltd/ai-dev-kit-book.git`
 
 ---
 
 ## Open questions (maintainer)
 
-- [x] Confirm private repo name: **`RMS-Ltd/hf-ai-dev-kit`** (live, private — 2026-05-26)
+- [x] Confirm private repo name: **`RMS-Ltd/ai-dev-kit-book`** (live, private — supersedes interim `hf-ai-dev-kit`, 2026-05-29)
 - [x] Orphan root vs genesis-SHA branch for public repo bootstrap — **orphan root + cherry-pick replay** from genesis SHA `f21bac102` ([runbook](../../maintenance/fr099-phase3-public-repo-bootstrap.md)).
 - [ ] Changelog archive: truncate public archive at genesis vs import summary doc only.
 - [ ] Cutover window duration and user communication channel.

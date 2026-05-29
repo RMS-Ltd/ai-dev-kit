@@ -75,7 +75,7 @@ A green local build does not help adopters if no public URL exists. `baseUrl` fo
 
 ## Follow-up work
 
-- **E5:S09:T09** — **COMPLETE** (v0.5.9.9+2): [GitHub Pages go-live verification](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T09-github-pages-go-live-verification.md) — **`main`** merged, Actions **23796236180** green, Pages legacy source **`gh-pages`/`/`**, canonical **200**, [portal README (repository)](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) go-live notes.
+- **E5:S09:T09** — **COMPLETE** (v0.5.9.9+2): [GitHub Pages go-live verification](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T09-github-pages-go-live-verification.md) — **`main`** merged, Actions **23796236180** green, Pages legacy source **`gh-pages`/`/`**, canonical **200**, [portal README (repository)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) go-live notes.
 
 ## Related FRs
 

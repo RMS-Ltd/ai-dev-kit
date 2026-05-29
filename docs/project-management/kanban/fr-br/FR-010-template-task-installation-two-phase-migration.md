@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (Cursor) acting as user/client for dev-toolkit  
 **Priority:** MEDIUM  
 **Status:** PENDING  
-**GitHub Issue:** [#7](https://github.com/earlution/ai-dev-kit/issues/7) (Additional Context Comment)
+**GitHub Issue:** [#7](https://github.com/RMS-Ltd/ai-dev-kit/issues/7) (Additional Context Comment)
 
 ---
 

@@ -420,7 +420,7 @@ refactor:
 
 ### Getting Help
 - **Documentation**: [Refactor Workflow Guide](../../KB/Documentation/Developer_Docs/vwmp/refactor-workflow-agent-execution.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **Pattern Contributions**: Submit custom refactoring patterns

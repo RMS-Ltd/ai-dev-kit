@@ -296,7 +296,7 @@ Users should be able to create new projects using `ai-dev-kit` as a template, pr
 **Approach:**
 
 1. **Enable Template Repository:**
-   - Navigate to GitHub repository settings: `https://github.com/earlution/ai-dev-kit/settings`
+   - Navigate to GitHub repository settings: `https://github.com/RMS-Ltd/ai-dev-kit/settings`
    - Scroll to "Template repository" section
    - Check "Template repository" checkbox
    - Add template description: "A comprehensive toolkit for AI-assisted development workflows. Includes Workflow Management, Kanban, Versioning, Document Lifecycle, and Debug Path frameworks."

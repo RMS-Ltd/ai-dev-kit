@@ -39,7 +39,7 @@ For more detailed information on submitting reports, see:
 | Clone target | URL |
 |--------------|-----|
 | **Public ADK** (adopters, issues, Pages source) | `https://github.com/RMS-Ltd/ai-dev-kit.git` |
-| **Private maintainer** (book + full history) | `https://github.com/RMS-Ltd/hf-ai-dev-kit.git` |
+| **Private maintainer** (book + full history) | `https://github.com/RMS-Ltd/ai-dev-kit-book.git` |
 
 See [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) and [FR-099 Phase 4 runbook](docs/maintenance/fr099-phase4-rewire-and-verify.md).
 

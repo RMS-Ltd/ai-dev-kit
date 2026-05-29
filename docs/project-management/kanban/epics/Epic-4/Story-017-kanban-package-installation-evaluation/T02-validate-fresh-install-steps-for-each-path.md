@@ -117,7 +117,7 @@ Validate fresh install steps for each supported installation path to ensure each
    - Recommendation: Document that GitHub Releases method requires Workflow Management package, or create Kanban-specific release installer
 
 3. ✅ **Usage instructions documented**
-   - Example command provided: `python3 install_package_from_release.py kanban 2.1.0 --repo earlution/ai-dev-kit --install-dir packages/frameworks`
+   - Example command provided: `python3 install_package_from_release.py kanban 2.1.0 --repo RMS-Ltd/ai-dev-kit --install-dir packages/frameworks`
    - Status: Instructions clear
 
 4. ⚠️ **Post-install steps**

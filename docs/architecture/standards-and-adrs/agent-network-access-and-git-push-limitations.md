@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Author:** AI Assistant (Auto)  
 **Context:** Release Workflow (RW) Step 11 - Git Push Operations  
 **Status:** ✅ Resolved  
-**Related:** [Release Workflow Agent Execution (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) | [Workflow Hardening Guide](./workflow-hardening-guide.md)
+**Related:** [Release Workflow Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) | [Workflow Hardening Guide](./workflow-hardening-guide.md)
 
 ---
 
@@ -435,10 +435,10 @@ When executing RW Step 11:
 
 ## Related Documentation
 
-- **Release Workflow Agent Execution:** [source](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- **Release Workflow Agent Execution:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 - **Workflow Hardening Guide:** [`workflow-hardening-guide.md`](./workflow-hardening-guide.md)
-- **Release Workflow Reference:** [source](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
-- **Cursor Rules RW Trigger:** [source](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)
+- **Release Workflow Reference:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
+- **Cursor Rules RW Trigger:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)
 
 ---
 

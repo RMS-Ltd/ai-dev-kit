@@ -366,9 +366,9 @@ Consider creating a validation script that:
 - [REOPENING_BR_AND_TASKS_GUIDE.md](REOPENING_BR_AND_TASKS_GUIDE.md) - Example of pattern discovery and wiring
 - [USE_CASE_METHODOLOGY.md](../../../knowledge/USE_CASE_METHODOLOGY.md) - Use case methodology (includes wiring)
 - [UC-D-002: Bidirectional Wiring](../../../knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md) - Discovered use case (promoted to canonical)
-- [FR_BR_INTAKE_GUIDE.md (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) - Intake process (includes linking)
-- [BR_TEMPLATE.md (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/BR_TEMPLATE.md) - BR template (includes Kanban Links section)
-- [FR_TEMPLATE.md (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/FR_TEMPLATE.md) - FR template (includes Kanban Links section)
+- [FR_BR_INTAKE_GUIDE.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) - Intake process (includes linking)
+- [BR_TEMPLATE.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/BR_TEMPLATE.md) - BR template (includes Kanban Links section)
+- [FR_TEMPLATE.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/FR_TEMPLATE.md) - FR template (includes Kanban Links section)
 
 ---
 

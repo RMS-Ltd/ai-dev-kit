@@ -18,11 +18,11 @@ housekeeping_policy: keep
 
 ## Scope
 
-Verify [ukw_syntax_parser.py (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/kanban/ukw_syntax_parser.py), [task_inference.py (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/task_inference.py), [workflow_orchestrator.py (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/workflow_orchestrator.py), and [workflow_executor.py (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/workflow_executor.py) for correctness, coherence with canonical RW YAML, and alignment with project policy (explicit RW task ids per FR-060).
+Verify [ukw_syntax_parser.py (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/kanban/ukw_syntax_parser.py), [task_inference.py (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/task_inference.py), [workflow_orchestrator.py (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/workflow_orchestrator.py), and [workflow_executor.py (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/workflow_executor.py) for correctness, coherence with canonical RW YAML, and alignment with project policy (explicit RW task ids per FR-060).
 
 ## Input
 
-Workflow scripts under `packages/frameworks/workflow mgt/scripts/`; [canonical-rw-steps.yaml (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/canonical-rw-steps.yaml); `.cursorrules` UKW / RW sections.
+Workflow scripts under `packages/frameworks/workflow mgt/scripts/`; [canonical-rw-steps.yaml (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/canonical-rw-steps.yaml); `.cursorrules` UKW / RW sections.
 
 ## Deliverable
 

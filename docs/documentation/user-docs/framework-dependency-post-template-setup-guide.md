@@ -23,7 +23,7 @@ This guide walks you through the essential setup steps after creating a new proj
 
 For the locked greenfield-first sequence and verification gates, pair this guide with:
 
-- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 - [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 **When to Use This Guide:**
@@ -78,7 +78,7 @@ find . -type f -name "*.md" -o -name "*.yaml" -o -name "*.yml" -o -name "*.py" |
 
 ```bash
 # Update repository URLs in documentation
-# Search for: https://github.com/earlution/ai-dev-kit
+# Search for: https://github.com/RMS-Ltd/ai-dev-kit
 # Replace with: https://github.com/yourusername/your-project
 ```
 
@@ -501,8 +501,8 @@ After completing setup:
 - [Installation Guide](framework-dependency-installation-guide.md) - Framework installation
 - [Usage Guide](framework-dependency-usage-guide.md) - Using installed frameworks
 - [Integration Guide](framework-dependency-integration-guide.md) - Integrating frameworks
-- [Contextualization Guide (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/CONTEXTUALIZATION_GUIDE.md) - Customizing canonical templates for your project
-- [Contextualization Examples (source)](https://github.com/earlution/ai-dev-kit/tree/main/packages/frameworks/kanban/templates/examples/contextualized) - Example projects (tiny, small, ambitious)
+- [Contextualization Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/CONTEXTUALIZATION_GUIDE.md) - Customizing canonical templates for your project
+- [Contextualization Examples (source)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/packages/frameworks/kanban/templates/examples/contextualized) - Example projects (tiny, small, ambitious)
 
 ---
 
@@ -531,5 +531,5 @@ After completing setup:
 If you encounter issues during setup:
 - Check the [Troubleshooting Guide](framework-dependency-troubleshooting-guide.md)
 - Review the [FAQ](framework-dependency-faq.md)
-- Open an issue on [GitHub](https://github.com/earlution/ai-dev-kit/issues)
+- Open an issue on [GitHub](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 

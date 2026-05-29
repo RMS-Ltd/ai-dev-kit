@@ -38,7 +38,7 @@ Brownfield teams need to **compose** workflows, Kanban, versioning, and docs lif
 
 - [ ] **FR-081-F1:** Publish a **brownfield adoption guide** (or major section of the installation guide) that states **non-goals** (we do not require replacing the host `docs/` tree or PM process) and **integration seams** (`rw-config.yaml`, `scripts_path`, optional `use_kanban`).
 - [ ] **FR-081-F2:** Provide **required vs optional vs recommended** matrices **per framework surface** (minimum viable RW-only adoption vs full stack), suitable for experienced architects.
-- [ ] **FR-081-F3:** Align **installer UX** messaging so brownfield runs do not imply copying ai-dev-kit’s reference Kanban epics wholesale; reinforce installer-first and contract-first patterns ([`rw-validators-consumer-layout.md`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)).
+- [ ] **FR-081-F3:** Align **installer UX** messaging so brownfield runs do not imply copying ai-dev-kit’s reference Kanban epics wholesale; reinforce installer-first and contract-first patterns ([`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)).
 - [ ] **FR-081-F4:** Capture **explicit tradeoff decisions** (deferred choices) in Kanban tasks or ADR supplements so future work does not lose context.
 
 ### Non-Functional Requirements

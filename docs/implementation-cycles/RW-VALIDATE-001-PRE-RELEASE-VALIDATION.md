@@ -115,8 +115,8 @@ git diff --stat
 
 **Expected Output:**
 ```
-origin  https://github.com/earlution/ai-dev-kit.git (fetch)
-origin  https://github.com/earlution/ai-dev-kit.git (push)
+origin  https://github.com/RMS-Ltd/ai-dev-kit.git (fetch)
+origin  https://github.com/RMS-Ltd/ai-dev-kit.git (push)
 ```
 
 **Validation Criteria:**

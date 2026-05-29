@@ -170,7 +170,7 @@ Starborn also uses a board (structured info only) + guide (rules and explanation
 
 ## Release History
 
-- **v0.5.1.37+3** (2026-02-12): Policy alignment with Starborn Legacy patterns. Delivered: policy comparison proposal (Starborn vs ai-dev-kit), Implementation Cycle (spec + TDD) as adoptable pattern with framework SoP, changelog language reminder, Step 9.6 IDE check, git reminder, perpetual-task document update requirement in Kanban Governance. See [CHANGELOG_v0.5.1.37+3 (source)](https://github.com/earlution/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.37+3.md).
+- **v0.5.1.37+3** (2026-02-12): Policy alignment with Starborn Legacy patterns. Delivered: policy comparison proposal (Starborn vs ai-dev-kit), Implementation Cycle (spec + TDD) as adoptable pattern with framework SoP, changelog language reminder, Step 9.6 IDE check, git reminder, perpetual-task document update requirement in Kanban Governance. See [CHANGELOG_v0.5.1.37+3 (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.37+3.md).
 
 ---
 

@@ -52,7 +52,7 @@ Implement **FR-071**: add **Algolia DocSearch** (or self-serve) **or** **local/o
 | ID | Source | Statement |
 | --- | --- | --- |
 | **S1** | R01 | Search UI enabled: `@easyops-cn/docusaurus-search-local` theme registers **navbar** search (config + dependency in repo). |
-| **S2** | R02 / AC1 | [`portal/README.md`](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) lists ≥3 **smoke-test queries** with expected hits vs the **deployed** site ([FR-070 canonical URL](https://earlution.github.io/ai-dev-kit/)). |
+| **S2** | R02 / AC1 | [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) lists ≥3 **smoke-test queries** with expected hits vs the **deployed** site ([FR-070 canonical URL](https://rms-ltd.github.io/ai-dev-kit/)). |
 | **S3** | R03 / AC2 | README documents **local** provider, index updates on each **static build/deploy**, **no CI secrets** for search. |
 | **S4** | NF01 | README **Privacy** subsection: offline index only; no third-party search API. |
 | **S5** | NF02 | README notes **build time** with local search (observed or CI reference). |
@@ -72,8 +72,8 @@ Implement **FR-071**: add **Algolia DocSearch** (or self-serve) **or** **local/o
 
 ## Evidence
 
-- [`portal/docusaurus.config.js`](https://github.com/earlution/ai-dev-kit/blob/main/portal/docusaurus.config.js) — `themes` + `@easyops-cn/docusaurus-search-local`
-- [`portal/README.md`](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) — Site search (FR-071)
+- [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js) — `themes` + `@easyops-cn/docusaurus-search-local`
+- [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — Site search (FR-071)
 - [`tests/test_portal_fr071_search.py`](../../../../../../tests/test_portal_fr071_search.py)
 
 ---

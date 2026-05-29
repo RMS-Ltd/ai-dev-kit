@@ -469,7 +469,7 @@ post_implementation_review:
 
 ### Getting Help
 - **Documentation**: [PIR Guide](../../KB/Documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **PIR Enhancements**: Submit new evaluation criteria or analysis methods

@@ -121,7 +121,7 @@ project/
 
 ```bash
 # Add framework as submodule
-git submodule add https://github.com/earlution/ai-dev-kit.git frameworks/ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git frameworks/ai-dev-kit
 cd frameworks/ai-dev-kit
 git checkout v2.0.0  # Pin to specific version
 ```
@@ -330,7 +330,7 @@ FRAMEWORK_SEMVER = "2.0.0"
 **Step 1: Install as Dependency**
 ```bash
 # Using Git submodule
-git submodule add https://github.com/earlution/ai-dev-kit.git frameworks/ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git frameworks/ai-dev-kit
 cd frameworks/ai-dev-kit
 git checkout numbering-versioning-v2.0.0
 ```

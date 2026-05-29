@@ -26,9 +26,9 @@ Deliver an **opinionated, reproducible greenfield path**: from acquiring AI Dev 
 |----|-------------|----------------|
 | **F1** | Greenfield installation **specification** (inputs, outputs, ordering, failure modes). | Standalone subsection or linked doc; ordering: acquire → install → configure → verify. |
 | **F2** | **Reproducible** path (scripts, CLI, and/or deterministic checklist). | See **§1.5 Decisions**. |
-| **F3** | **Mandatory installer steps** — not copy-only. | [`install_release_workflow.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py), [`install_kanban_framework.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py) (or documented successors). |
-| **F4** | **Verification gates** (validators, smoke, checklist) vs `rw-config.yaml` / consumer layout. | Tie to [rw-validators-consumer-layout.md](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md). |
-| **F5** | **Adopter docs** — greenfield-only narrative; pointers to brownfield. | [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) and user-docs; cross-link [FR-081](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md). |
+| **F3** | **Mandatory installer steps** — not copy-only. | [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py), [`install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py) (or documented successors). |
+| **F4** | **Verification gates** (validators, smoke, checklist) vs `rw-config.yaml` / consumer layout. | Tie to [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md). |
+| **F5** | **Adopter docs** — greenfield-only narrative; pointers to brownfield. | [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) and user-docs; cross-link [FR-081](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md). |
 
 ### 1.3 Non-functional requirements
 
@@ -84,7 +84,7 @@ Decision record (locked):
 | **TD1** | End-to-end greenfield scenario | Matches task **AC2**: documented scratch/template path with **no undocumented** manual steps; capture steps in IPW-derived checklist or automation. |
 | **TD2** | Doc boundaries | **AC3**: `INSTALL_IN_YOUR_PROJECT.md` (or successor) links **ADR-003** and **FR-081** in the greenfield narrative. |
 | **TD3** | Installers invoked | Assert **F3**: process cannot be satisfied by copy-only; installers run (or CI/docs assert exact invocations). |
-| **TD4** | Verification gates | Run or document validator layout per `rw-config.yaml` post-install (align [rw-validators-consumer-layout.md](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)). |
+| **TD4** | Verification gates | Run or document validator layout per `rw-config.yaml` post-install (align [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)). |
 | **TD5** | Example-run forensics | A reference run produces storable artifacts (log file path, transcript, or FR-078-shaped event sequence) suitable for **post-hoc analysis**; redaction rules verified. |
 | **TD6** | Cross-story | Smoke that greenfield docs do not contradict **T02** brownfield doc set (no scope bleed). |
 
@@ -122,7 +122,7 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 
 | Step | Action | Deliverable |
 |------|--------|-------------|
-| 3.1 | Update [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) greenfield chapter; cross-link **ADR-003**, **FR-081**. | Meets **AC3** / **F5**. |
+| 3.1 | Update [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) greenfield chapter; cross-link **ADR-003**, **FR-081**. | Meets **AC3** / **F5**. |
 | 3.2 | User-docs touchpoints under `docs/documentation/` as per FR-080 scope. | Consistent terminology “greenfield only” here. |
 
 **Relationship to other waves:** Steps 3.1–3.2 are **verification of narrative completeness** across INSTALL + user-docs; **perform in parallel** with Waves 2–4 once §1.5 is locked—not only after Wave 4.
@@ -136,7 +136,7 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 
 **Parallel documentation (same wave):** Publish verification commands, reference transcript, and logging/redaction guidance **with** the underlying behavior—no “implementation now, prose later” unless a genuine dependency blocks documentation.
 
-**Delivered (Wave 4):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) adds **Wave 4** sections—post-install validator invocation (`F4`), synthetic reference transcript with redaction reminder, and **FR-078** / **FR-079** boundary bullets. Cross-linked from [`framework-dependency-installation-guide.md`](../documentation/user-docs/framework-dependency-installation-guide.md) greenfield scope.
+**Delivered (Wave 4):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) adds **Wave 4** sections—post-install validator invocation (`F4`), synthetic reference transcript with redaction reminder, and **FR-078** / **FR-079** boundary bullets. Cross-linked from [`framework-dependency-installation-guide.md`](../documentation/user-docs/framework-dependency-installation-guide.md) greenfield scope.
 
 ### Wave 5 — Traceability
 
@@ -149,10 +149,10 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 
 **Files likely touched (living list):**
 
-- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
-- [`packages/frameworks/workflow mgt/scripts/install_release_workflow.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)
-- [`packages/frameworks/kanban/scripts/install_kanban_framework.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)
-- [`packages/frameworks/workflow mgt/docs/rw-validators-consumer-layout.md`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)
+- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+- [`packages/frameworks/workflow mgt/scripts/install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)
+- [`packages/frameworks/kanban/scripts/install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)
+- [`packages/frameworks/workflow mgt/docs/rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)
 - Consumer `rw-config.yaml` / template in recipient story (as defined by orchestration)
 
 ---
@@ -160,10 +160,10 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 ## 4. Success / verification criteria
 
 - [x] Task **AC1:** FR-080 requirements satisfied or deferred with rationale in FR/task ([FR-080](../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md)).
-- [x] Task **AC2:** Documented scenario runs end-to-end without undocumented manual steps ([`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) Wave 4 reference + Method 2 path).
+- [x] Task **AC2:** Documented scenario runs end-to-end without undocumented manual steps ([`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) Wave 4 reference + Method 2 path).
 - [x] Task **AC3:** Install docs link **ADR-003** and **FR-081**.
 - [x] **F3** evidenced: installers are part of the canonical greenfield story.
-- [x] **§1.6:** Example/reference run + logging posture documented; aligned with **FR-078** / **FR-079** boundaries ([`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) Wave 4).
+- [x] **§1.6:** Example/reference run + logging posture documented; aligned with **FR-078** / **FR-079** boundaries ([`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) Wave 4).
 - [x] Bidirectional wiring: this IPW ↔ host task remain linked ([T01](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)).
 
 ---

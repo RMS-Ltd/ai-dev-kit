@@ -468,7 +468,7 @@ migration:
 
 ### Getting Help
 - **Documentation**: [Migration Workflow Guide](../../KB/Documentation/Developer_Docs/vwmp/migration-workflow-agent-execution.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **Migration Patterns**: Submit custom migration patterns

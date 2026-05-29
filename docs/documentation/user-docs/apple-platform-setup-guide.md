@@ -7,7 +7,7 @@
 
 ### Scope (greenfield vs brownfield)
 
-This guide addresses **platform tooling** on Apple OSes. For the **greenfield framework install path** (FR-080), follow [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) after platform prerequisites; see [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md), [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md).
+This guide addresses **platform tooling** on Apple OSes. For the **greenfield framework install path** (FR-080), follow [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) after platform prerequisites; see [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md), [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md).
 
 ---
 
@@ -187,7 +187,7 @@ ai-dev-kit install framework-name --backend npm
 
 Download frameworks directly and install manually:
 
-1. Navigate to [ai-dev-kit releases](https://github.com/earlution/ai-dev-kit/releases)
+1. Navigate to [ai-dev-kit releases](https://github.com/RMS-Ltd/ai-dev-kit/releases)
 2. Download the desired framework package
 3. Extract to your project's `frameworks/` directory
 4. Update `.ai-dev-kit.yaml` configuration manually

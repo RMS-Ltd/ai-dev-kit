@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.4.8.7+2  
 
 **Implementing Task:** [E4:S08:T07](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md)
-**GitHub Issue:** [#7](https://github.com/earlution/ai-dev-kit/issues/7) (Additional Context Comment)
+**GitHub Issue:** [#7](https://github.com/RMS-Ltd/ai-dev-kit/issues/7) (Additional Context Comment)
 
 ---
 

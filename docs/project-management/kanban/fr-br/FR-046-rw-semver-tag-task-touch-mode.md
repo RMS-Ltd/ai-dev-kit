@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IN PROGRESS  
 **Implementing Task:** [E5:S01:T46](../epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
-**GitHub Issue:** [#19](https://github.com/earlution/ai-dev-kit/issues/19)
+**GitHub Issue:** [#19](https://github.com/RMS-Ltd/ai-dev-kit/issues/19)
 
 ---
 
@@ -216,7 +216,7 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 
 ## References
 
-- GitHub Issue [#19](https://github.com/earlution/ai-dev-kit/issues/19).
+- GitHub Issue [#19](https://github.com/RMS-Ltd/ai-dev-kit/issues/19).
 - RW execution documentation and `.cursorrules` RW trigger section.
 
 ---

@@ -26,7 +26,7 @@ Continue and publish UKW + RW work around `E2:S15:T05` canonical row-transform h
    - Commit: `726ad679`
    - Tags: `v0.2.16.4+3`, `v0.4.764+3`
 6. Step 12.5 (GitHub release) initially failed due expired token, then succeeded after PAT refresh:
-   - Release URL: `https://github.com/earlution/ai-dev-kit/releases/tag/v0.4.764`
+   - Release URL: `https://github.com/RMS-Ltd/ai-dev-kit/releases/tag/v0.4.764`
 
 ## Important context for next instance
 

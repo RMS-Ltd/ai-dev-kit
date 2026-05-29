@@ -294,7 +294,7 @@ These documents should be referenced when:
 **Example Update Workflow:**
 ```bash
 # 1. Review changes in ai-dev-kit
-git clone https://github.com/earlution/ai-dev-kit.git
+git clone https://github.com/RMS-Ltd/ai-dev-kit.git
 cd ai-dev-kit
 git log --oneline packages/frameworks/numbering\ \&\ versioning/
 

@@ -62,7 +62,7 @@ if ! gh repo view "${PUBLIC_ORG}/${PUBLIC_REPO}" >/dev/null 2>&1; then
     --disable-wiki
 fi
 
-# Guard: GitHub may redirect old earlution/ai-dev-kit URLs to RMS-Ltd/hf-ai-dev-kit after privatize/rename.
+# Guard: GitHub may redirect old RMS-Ltd/ai-dev-kit URLs to RMS-Ltd/ai-dev-kit-book after privatize/rename.
 resolved="$(gh api "repos/${PUBLIC_ORG}/${PUBLIC_REPO}" -q '.full_name + " private=" + (.private|tostring)' 2>/dev/null || true)"
 if [[ "$resolved" != "${PUBLIC_ORG}/${PUBLIC_REPO} private=false" ]]; then
   echo "error: ${PUBLIC_ORG}/${PUBLIC_REPO} is not a public repo (got: ${resolved:-missing})" >&2

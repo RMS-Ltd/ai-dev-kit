@@ -439,7 +439,7 @@ update_kanban:
 
 ### Getting Help
 - **Documentation**: [UKW Guide](../../KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **UKW Enhancements**: Submit new inference rules or prioritization methods

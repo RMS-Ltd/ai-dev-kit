@@ -283,7 +283,7 @@ git push origin kanban-v2.1.0
 **Example:**
 ```bash
 # Add framework as submodule
-git submodule add https://github.com/earlution/ai-dev-kit.git frameworks/ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git frameworks/ai-dev-kit
 
 # Checkout specific framework tag
 cd frameworks/ai-dev-kit
@@ -309,13 +309,13 @@ git commit -m "Pin kanban framework to v2.1.0"
 ```bash
 # Add framework as subtree
 git subtree add --prefix=frameworks/kanban \
-    https://github.com/earlution/ai-dev-kit.git \
+    https://github.com/RMS-Ltd/ai-dev-kit.git \
     kanban-v2.1.0 \
     --squash
 
 # Update framework
 git subtree pull --prefix=frameworks/kanban \
-    https://github.com/earlution/ai-dev-kit.git \
+    https://github.com/RMS-Ltd/ai-dev-kit.git \
     kanban-v2.2.0 \
     --squash
 ```

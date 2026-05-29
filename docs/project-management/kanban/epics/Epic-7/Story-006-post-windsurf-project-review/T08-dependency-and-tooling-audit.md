@@ -83,8 +83,8 @@ None
 
 | Script | Purpose | Notes |
 |--------|---------|--------|
-| [`build_all_packages.sh` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/build_all_packages.sh) | Build tarballs for all frameworks | `set -e`; invokes `build_package.py`; framework list with versions; paths assume script location under `workflow mgt/scripts`. |
-| [`UPLOAD_COMMANDS.sh` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/UPLOAD_COMMANDS.sh) | Upload built packages to GitHub Releases | `cd` four levels to repo root; requires `GITHUB_TOKEN`; expects `packages/frameworks/dist/packages`; hardcoded package filenames/tags — must stay in sync with build versions. |
+| [`build_all_packages.sh` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/build_all_packages.sh) | Build tarballs for all frameworks | `set -e`; invokes `build_package.py`; framework list with versions; paths assume script location under `workflow mgt/scripts`. |
+| [`UPLOAD_COMMANDS.sh` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/UPLOAD_COMMANDS.sh) | Upload built packages to GitHub Releases | `cd` four levels to repo root; requires `GITHUB_TOKEN`; expects `packages/frameworks/dist/packages`; hardcoded package filenames/tags — must stay in sync with build versions. |
 
 **Footguns:** Paths containing spaces (`workflow mgt`) require careful quoting (scripts generally use quoted variables). UPLOAD_COMMANDS version list must match `build_all_packages.sh` framework versions.
 

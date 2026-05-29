@@ -326,8 +326,8 @@ See `icw-config.yaml` and `icw-workflow.yaml` for complete configuration options
 
 ### Getting Help
 - **Documentation**: [IPW Agent Execution Guide](../../KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
-- **Issues**: [File an issue](https://github.com/earlution/ai-dev-kit/issues)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
+- **Issues**: [File an issue](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
 ### Contributing
 Follow the AI Dev Kit contributing guidelines for workflow documentation updates.

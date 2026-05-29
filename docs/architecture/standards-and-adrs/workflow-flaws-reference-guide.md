@@ -221,8 +221,8 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 ## Related Documentation
 
 ### Core Workflow Documents
-- **[Release Workflow Agent Execution (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - Complete step-by-step guide
-- **[Cursor Rules RW Trigger Section (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)** - RW trigger instructions
+- **[Release Workflow Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - Complete step-by-step guide
+- **[Cursor Rules RW Trigger Section (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)** - RW trigger instructions
 - **[Workflow Hardening Guide](workflow-hardening-guide.md)** - Core principles for workflow design
 
 ### Versioning Documents
@@ -230,7 +230,7 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 - **[Versioning Policy](dev-kit-versioning-policy.md)** - Versioning schema definition
 
 ### Integration Documents
-- **[Integration Troubleshooting Guide (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/integration/integration-troubleshooting-guide.md)** - Integration issues and solutions
+- **[Integration Troubleshooting Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/integration/integration-troubleshooting-guide.md)** - Integration issues and solutions
 
 ---
 
@@ -341,9 +341,9 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 - Complete fix attempt history in BR documents
 
 **See:**
-- **[Release Workflow Agent Execution Guide (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - Step 6 for the complete procedure
-- **[Cursor Rules RW Trigger Section (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)** - Step 6 for the updated agent execution rules
-- **[BR Template (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/BR_TEMPLATE.md)** - "Fix Attempt History" section
+- **[Release Workflow Agent Execution Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - Step 6 for the complete procedure
+- **[Cursor Rules RW Trigger Section (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)** - Step 6 for the updated agent execution rules
+- **[BR Template (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/BR_TEMPLATE.md)** - "Fix Attempt History" section
 
 ---
 

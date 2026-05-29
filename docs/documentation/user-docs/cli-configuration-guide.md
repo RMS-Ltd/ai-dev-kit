@@ -23,7 +23,7 @@ This guide explains the `.ai-dev-kit.yaml` configuration file format and how to 
 
 ### Scope (greenfield vs brownfield)
 
-- **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 - **Policy:** [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · Brownfield track: [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
@@ -84,7 +84,7 @@ frameworks:
     version: "2.0.0"
     backend: "git-submodule"
     path: "frameworks/workflow-mgmt"
-    source: "https://github.com/earlution/ai-dev-kit.git"
+    source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "workflow-mgmt-v2.0.0"
     pin: false
   
@@ -92,7 +92,7 @@ frameworks:
     version: "1.0.0"
     backend: "git-subtree"
     path: "frameworks/kanban"
-    source: "https://github.com/earlution/ai-dev-kit.git"
+    source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "kanban-v1.0.0"
     pin: true
 ```
@@ -236,7 +236,7 @@ Installation path relative to project root.
 Source repository URL for Git backends.
 
 - **Type:** String
-- **Example:** `source: "https://github.com/earlution/ai-dev-kit.git"`
+- **Example:** `source: "https://github.com/RMS-Ltd/ai-dev-kit.git"`
 
 ##### `tag` (optional, Git backends)
 
@@ -328,7 +328,7 @@ frameworks:
     version: "2.0.0"
     backend: "git-submodule"
     path: "frameworks/workflow-mgmt"
-    source: "https://github.com/earlution/ai-dev-kit.git"
+    source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "workflow-mgmt-v2.0.0"
 ```
 
@@ -342,14 +342,14 @@ frameworks:
     version: "2.0.0"
     backend: "git-submodule"
     path: "frameworks/workflow-mgmt"
-    source: "https://github.com/earlution/ai-dev-kit.git"
+    source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "workflow-mgmt-v2.0.0"
   
   kanban:
     version: "1.0.0"
     backend: "git-subtree"
     path: "frameworks/kanban"
-    source: "https://github.com/earlution/ai-dev-kit.git"
+    source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "kanban-v1.0.0"
 ```
 
@@ -369,7 +369,7 @@ frameworks:
     version: "2.0.0"
     backend: "git-submodule"
     path: "frameworks/workflow-mgmt"
-    source: "https://github.com/earlution/ai-dev-kit.git"
+    source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "workflow-mgmt-v2.0.0"
     pin: true
 ```

@@ -149,7 +149,7 @@ The `CANONICAL_EPICS.md` file was never updated to include all 21 epics. The fra
 **Environment:** Development (Framework Installation)  
 **Version:** Kanban Framework v2.0.0 (as of 2025-12-10)  
 **Repository:** earlution/dev-toolkit (consuming ai-dev-kit framework)  
-**Framework Source:** earlution/ai-dev-kit  
+**Framework Source:** RMS-Ltd/ai-dev-kit  
 **Framework Path:** `packages/frameworks/kanban/`  
 **Affected File:** `packages/frameworks/kanban/templates/CANONICAL_EPICS.md`
 

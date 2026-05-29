@@ -280,7 +280,7 @@ class InstallCommand(BaseCommand):
                     source = config.get(f"frameworks.{framework}.source")
                     if not source:
                         # Default source (can be enhanced later)
-                        source = f"https://github.com/earlution/ai-dev-kit.git"
+                        source = f"https://github.com/RMS-Ltd/ai-dev-kit.git"
                     source_step = next_step_id()
                     log(
                         "INFO",

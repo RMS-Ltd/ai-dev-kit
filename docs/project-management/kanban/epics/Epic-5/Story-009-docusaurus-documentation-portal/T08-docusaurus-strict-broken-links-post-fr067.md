@@ -50,8 +50,8 @@ housekeeping_policy: keep
 
 | ID | Source | Statement |
 |----|--------|------------|
-| **T08-S1** | Deliverable | In [`portal/docusaurus.config.js`](https://github.com/earlution/ai-dev-kit/blob/main/portal/docusaurus.config.js), `onBrokenLinks` and `onBrokenMarkdownLinks` are both **`'throw'`**. |
-| **T08-S2** | AC1 / README | [`portal/README.md`](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) describes **strict** link policy (build fails on broken links); interim **warn** is not the active policy. |
+| **T08-S1** | Deliverable | In [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js), `onBrokenLinks` and `onBrokenMarkdownLinks` are both **`'throw'`**. |
+| **T08-S2** | AC1 / README | [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) describes **strict** link policy (build fails on broken links); interim **warn** is not the active policy. |
 | **T08-S3** | AC1 | `npm run build` in `portal/` exits **0** (no in-scope broken links under **throw**). |
 | **T08-S4** | FR-067 S1 | `PORTAL_BUILD_STRICT=1` — [`tests/test_portal_fr065_identity.py`](../../../../../../tests/test_portal_fr065_identity.py) `test_fr065_s9_portal_production_build` passes. |
 | **T08-S5** | Deliverable | [`tests/test_portal_fr067_build_triage.py`](../../../../../../tests/test_portal_fr067_build_triage.py) encodes **throw** for link policy (S2). |

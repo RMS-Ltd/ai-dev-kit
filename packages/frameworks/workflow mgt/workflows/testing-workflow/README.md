@@ -411,7 +411,7 @@ testing:
 
 ### Getting Help
 - **Documentation**: [Testing Workflow Guide](../../KB/Documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **Test Contributions**: Follow the test contribution guidelines

@@ -32,14 +32,14 @@ housekeeping_policy: keep
 
 | Remote | URL | Visibility | Role |
 |--------|-----|------------|------|
-| Private (maintainer) | `https://github.com/RMS-Ltd/hf-ai-dev-kit.git` | Private | Full history + `book/epic-24` |
+| Private (maintainer) | `https://github.com/RMS-Ltd/ai-dev-kit-book.git` | Private | Full history + `book/epic-24` |
 | Public (adopters) | `https://github.com/RMS-Ltd/ai-dev-kit.git` | Public | Framework-only from genesis forward |
 
-**Note:** An interim bootstrap to `earlution/ai-dev-kit` (2026-05-26) was superseded when the empty org placeholder [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) received the canonical replay (2026-05-28).
+**Note:** An interim bootstrap to `RMS-Ltd/ai-dev-kit` (2026-05-26) was superseded when the empty org placeholder [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) received the canonical replay (2026-05-28).
 
 ## GitHub rename redirect (critical)
 
-After Phase 1, pushes to old `ai-dev-kit` URLs may **redirect to `RMS-Ltd/hf-ai-dev-kit`** until a **new** public repository exists under `RMS-Ltd/ai-dev-kit`. The bootstrap script verifies `private=false` on `repos/RMS-Ltd/ai-dev-kit` before pushing. If a mistaken force-push occurs, restore the private remote from the local full-history `dev` tip (e.g. `git push origin <local-dev-sha>:dev --force`).
+After Phase 1, pushes to old `ai-dev-kit` URLs may **redirect to `RMS-Ltd/ai-dev-kit-book`** until a **new** public repository exists under `RMS-Ltd/ai-dev-kit`. The bootstrap script verifies `private=false` on `repos/RMS-Ltd/ai-dev-kit` before pushing. If a mistaken force-push occurs, restore the private remote from the local full-history `dev` tip (e.g. `git push origin <local-dev-sha>:dev --force`).
 
 ## Run bootstrap
 
@@ -65,7 +65,7 @@ See [`fr099-phase4-rewire-and-verify.md`](fr099-phase4-rewire-and-verify.md).
 ## Clone policy
 
 - **Adopters:** `git clone https://github.com/RMS-Ltd/ai-dev-kit.git`
-- **Maintainers (book + frameworks):** `git clone https://github.com/RMS-Ltd/hf-ai-dev-kit.git` — do not publish book paths to public remote
+- **Maintainers (book + frameworks):** `git clone https://github.com/RMS-Ltd/ai-dev-kit-book.git` — do not publish book paths to public remote
 
 ## Ongoing sync (after private `dev` moves)
 

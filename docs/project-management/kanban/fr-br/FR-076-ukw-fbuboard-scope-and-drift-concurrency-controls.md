@@ -96,5 +96,5 @@ Extend UKW documentation, execution logic, and validation behavior so fbuboard r
 ## References
 
 - Board: [`fbuboard.md`](../fbuboard.md)
-- UKW guide: [`update-kanban-workflow-agent-execution.md`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- UKW guide: [`update-kanban-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
 - Governance: [`kanban-governance-policy.md`](../../rituals/policy/kanban-governance-policy.md)

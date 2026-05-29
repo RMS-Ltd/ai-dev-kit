@@ -62,7 +62,7 @@ Large KB navigation (FR-068) helps browsing but does not replace **full-text sea
 
 ## Acceptance Criteria
 
-- [x] AC1: Search works on deployed site for a defined set of test queries. *(Defined; **verify** on `https://earlution.github.io/ai-dev-kit/` after publish.)*
+- [x] AC1: Search works on deployed site for a defined set of test queries. *(Defined; **verify** on `https://rms-ltd.github.io/ai-dev-kit/` after publish.)*
 - [x] AC2: Setup steps are reproducible for another maintainer.
 - [x] AC3: No regression: production build and FR-069 workflow remain green. *(Contract tests + local `npm run build`.)*
 

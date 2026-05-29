@@ -769,7 +769,7 @@ cp ai-dev-kit/packages/frameworks/numbering\ \&\ versioning/versioning-strategy.
 **Reference Pattern (❌ Incorrect):**
 ```markdown
 # DON'T do this:
-See: https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/versioning-policy.md
+See: https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/versioning-policy.md
 ```
 
 ### Why Copy?

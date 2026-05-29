@@ -11,8 +11,8 @@ As of **2026-05-26**, the project operates as **two separate repositories**:
 
 | Repository | Visibility | URL | Purpose |
 |------------|------------|-----|---------|
-| **AI Dev Kit (Public)** | Public | [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) | Framework packages, workflow tooling, adoption docs |
-| **Book Project (Private)** | Private | [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) | Manuscript, Epic 24, Head First / O'Reilly publishing work |
+| **AI Dev Kit (Public)** | Public | [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) | Framework packages, workflow tooling, adoption docs |
+| **Book Project (Private)** | Private | [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) | Manuscript, Epic 24, Head First / O'Reilly publishing work |
 
 **Governing ADR:** [ADR-006 — Book Project Private Repository Spin-Off](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
@@ -105,7 +105,7 @@ As of **2026-05-26**, the project operates as **two separate repositories**:
 | Phase 0 | 2026-05-26 | Inventory + ADR-006 approval |
 | Phase 1 | 2026-05-26 | Privatized + renamed to `hf-ai-dev-kit` |
 | Phase 2 | 2026-05-26 | Book extraction genesis commit (v0.1.4.3+1) |
-| Phase 3 | 2026-05-26 | Public `earlution/ai-dev-kit` reborn from genesis |
+| Phase 3 | 2026-05-26 | Public `RMS-Ltd/ai-dev-kit` reborn from genesis |
 | Phase 4 | 2026-05-26 | Rewire + verify complete (v0.1.4.7+2) |
 
 **FR-099 Status:** ✅ **IMPLEMENTED** — All phases complete.
@@ -161,8 +161,8 @@ As of **2026-05-26**, the project operates as **two separate repositories**:
 
 ### When Working on Book Publishing (Private Repo)
 
-1. **Use the private repository:** `RMS-Ltd/hf-ai-dev-kit`
-2. **Reference public ADK as dependency:** Book examples should install from `earlution/ai-dev-kit`
+1. **Use the private repository:** `RMS-Ltd/ai-dev-kit-book`
+2. **Reference public ADK as dependency:** Book examples should install from `RMS-Ltd/ai-dev-kit`
 3. **Maintain IP boundary:** Do not copy manuscript content to public repo
 4. **Epic 24 stays private:** Kanban tasks for book content belong in private repo only
 
@@ -178,11 +178,11 @@ As of **2026-05-26**, the project operates as **two separate repositories**:
 **Private repo depends on public:**
 ```bash
 # Private book repo installs public ADK as dependency
-git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 ```
 
 **Public repo has no knowledge of private:**
-- No remotes pointing to `RMS-Ltd/hf-ai-dev-kit`
+- No remotes pointing to `RMS-Ltd/ai-dev-kit-book`
 - No CI jobs that access private repo
 - No badges or links that require private repo access
 
@@ -214,18 +214,18 @@ git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
 
 ## Part 5: Key Documents Reference
 
-### Public AI Dev Kit (earlution/ai-dev-kit)
+### Public AI Dev Kit (RMS-Ltd/ai-dev-kit)
 
 | Document | Purpose |
 |----------|---------|
-| [README.md](https://github.com/earlution/ai-dev-kit/blob/main/README.md) | Framework overview, quick start |
-| [INSTALL_IN_YOUR_PROJECT.md](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) | Installation guide |
-| [CLAUDE.md](https://github.com/earlution/ai-dev-kit/blob/main/CLAUDE.md) | Claude Code project instructions |
+| [README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md) | Framework overview, quick start |
+| [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) | Installation guide |
+| [CLAUDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CLAUDE.md) | Claude Code project instructions |
 | [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Repository split decision |
 | [Vision & Purpose](docs/documentation/ai-dev-kit-vision-and-purpose.md) | Project vision |
 | [Versioning Policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) | Version schema docs |
 
-### Private Book Repo (RMS-Ltd/hf-ai-dev-kit)
+### Private Book Repo (RMS-Ltd/ai-dev-kit-book)
 
 | Document | Purpose |
 |----------|---------|
@@ -242,12 +242,12 @@ git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
 
 | Repo | Access | Contact |
 |------|--------|---------|
-| `earlution/ai-dev-kit` | Public | https://github.com/earlution/ai-dev-kit |
-| `RMS-Ltd/hf-ai-dev-kit` | Private (maintainer only) | https://github.com/RMS-Ltd/hf-ai-dev-kit |
+| `RMS-Ltd/ai-dev-kit` | Public | https://github.com/RMS-Ltd/ai-dev-kit |
+| `RMS-Ltd/ai-dev-kit-book` | Private (maintainer only) | https://github.com/RMS-Ltd/ai-dev-kit-book |
 
 ### Issue Tracking
 
-- **Public AI Dev Kit:** https://github.com/earlution/ai-dev-kit/issues
+- **Public AI Dev Kit:** https://github.com/RMS-Ltd/ai-dev-kit/issues
 - **Private Book Project:** Internal to private repo
 
 ---
@@ -255,13 +255,13 @@ git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
 ## Summary for Agents
 
 **If the user is discussing book publishing:**
-1. They are working in the **private repo** (`RMS-Ltd/hf-ai-dev-kit`)
+1. They are working in the **private repo** (`RMS-Ltd/ai-dev-kit-book`)
 2. Manuscript content is **not in this public repo**
 3. Book project **consumes public ADK** as a dependency
 4. Epic 24 and Head First branding are **private-only**
 
 **If the user is discussing framework development:**
-1. They are working in the **public repo** (`earlution/ai-dev-kit`)
+1. They are working in the **public repo** (`RMS-Ltd/ai-dev-kit`)
 2. Frameworks are **production-ready** for adoption
 3. Workflows (RW, UKW, IPW) are **battle-tested**
 4. No book content should be introduced

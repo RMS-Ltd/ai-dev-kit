@@ -49,7 +49,7 @@ The `portal/` app builds, but presents “My Site,” example.com URLs, and Face
 ## Functional Requirements
 
 - [x] **FR-065:R01** – No remaining placeholder identities (verified **v0.5.9.1+2** / `tests/test_portal_fr065_identity.py`).
-- [x] **FR-065:R02** – `editUrl` targets `portal/docs/` and `portal/blog/` under **earlution/ai-dev-kit** (until FR-066 moves tree).
+- [x] **FR-065:R02** – `editUrl` targets `portal/docs/` and `portal/blog/` under **RMS-Ltd/ai-dev-kit** (until FR-066 moves tree).
 - [x] **FR-065:R03** – Navbar/footer cleaned; secondary Docusaurus link under “More” only (**v0.5.9.1+2**).
 - [x] **FR-065:R04** – `npm run build` in `portal/` exits zero (**v0.5.9.1+2**).
 

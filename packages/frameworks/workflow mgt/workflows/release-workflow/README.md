@@ -278,8 +278,8 @@ See `release-workflow-config.yaml` for complete configuration options and step-s
 ### Getting Help
 - **Documentation**: [Release Workflow Agent Execution Guide](../../KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 - **Reference**: [Release Workflow Reference](../../KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
-- **Issues**: [File an issue](https://github.com/earlution/ai-dev-kit/issues)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
+- **Issues**: [File an issue](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
 ### Contributing
 Follow the AI Dev Kit contributing guidelines for workflow documentation updates.

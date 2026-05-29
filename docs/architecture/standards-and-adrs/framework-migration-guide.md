@@ -258,7 +258,7 @@ git add frameworks/
 git commit -m "Remove copied frameworks before migration"
 
 # Step 3: Add ai-dev-kit as submodule
-git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 
 # Step 4: Checkout framework versions
 cd .ai-dev-kit
@@ -308,7 +308,7 @@ rm -rf .git/modules/frameworks/workflow-mgmt
 
 # Step 2: Add as Git subtree
 git subtree add --prefix=frameworks/workflow-mgmt \
-    https://github.com/earlution/ai-dev-kit.git \
+    https://github.com/RMS-Ltd/ai-dev-kit.git \
     workflow-mgmt-v2.1.0 \
     --squash
 
@@ -638,7 +638,7 @@ cp .backup/frameworks/workflow-mgmt/custom-script.sh \
 
 ```bash
 # Fork framework repository
-git clone https://github.com/earlution/ai-dev-kit.git
+git clone https://github.com/RMS-Ltd/ai-dev-kit.git
 cd ai-dev-kit
 git checkout workflow-mgmt-v2.1.0
 

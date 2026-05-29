@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Status:** ACCEPTED  
 
 **Implementing Task:** [E4:S07:T01](../epics/Epic-4/Story-007-migration-support-and-installation-modes.md)
-**GitHub Issue:** [#2](https://github.com/earlution/ai-dev-kit/issues/2)
+**GitHub Issue:** [#2](https://github.com/RMS-Ltd/ai-dev-kit/issues/2)
 
 ---
 
@@ -150,7 +150,7 @@ The framework installation process was designed for fresh installs only. No cons
 **Environment:** Development (Framework Installation)  
 **Version:** Kanban Framework v2.0.0 (as of 2025-12-10)  
 **Repository:** earlution/dev-toolkit (consuming ai-dev-kit framework)  
-**Framework Source:** earlution/ai-dev-kit  
+**Framework Source:** RMS-Ltd/ai-dev-kit  
 **Framework Path:** `packages/frameworks/kanban/`  
 **Affected Files:**
 - `packages/frameworks/kanban/README.md` (installation process)
@@ -383,7 +383,7 @@ This bug report is the result of **User Acceptance Testing (UAT)** performed dur
 - **Gap Analysis:** `docs/project-management/kanban/_backup-pre-migration/INSTALLATION_GAP_ANALYSIS.md`
 - **Related FR:** Migration Utilities and Installation Modes (FR-007)
 - **Related UXR:** Migration User Experience Research (UXR-001)
-- **GitHub Issue:** [#2](https://github.com/earlution/ai-dev-kit/issues/2)
+- **GitHub Issue:** [#2](https://github.com/RMS-Ltd/ai-dev-kit/issues/2)
 
 ---
 

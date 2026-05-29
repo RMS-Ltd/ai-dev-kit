@@ -27,7 +27,7 @@ housekeeping_policy: keep
 - [ ] **E6:S09:T02 – Brownfield modular adopter integration (FR-081)** - IN PROGRESS (MEDIUM — operationalize ADR-003: modular surfaces, matrices, respectful host architecture; RW `--art` **v0.6.9.2+1**)
   - Task: [`T02-brownfield-modular-adopter-integration-fr081.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) | [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md)
 
-- [ ] **E6:S09:T03 – Installation canonical repository alignment (FR-082)** - IN PROGRESS (MEDIUM — defaults and docs aligned to canonical `earlution/ai-dev-kit` coordinates; RW `--art` **v0.6.9.3+1**)
+- [ ] **E6:S09:T03 – Installation canonical repository alignment (FR-082)** - IN PROGRESS (MEDIUM — defaults and docs aligned to canonical `RMS-Ltd/ai-dev-kit` coordinates; RW `--art` **v0.6.9.3+1**)
   - Task: [`T03-installation-canonical-repo-alignment-fr082.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) | [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)
 
 - [x] **E6:S09:T04 – ECC harness layer Phase 0 compatibility evaluation (FR-098)** - COMPLETE (MEDIUM — Phase 0 spec, evaluation, bridge template; Phase 1 GO)
@@ -65,4 +65,4 @@ Work is tracked in **Epic 6** because this is **framework distribution and adopt
 
 - [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [FR-080](../../fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) · [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/earlution/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

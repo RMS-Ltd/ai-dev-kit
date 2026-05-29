@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Status:** PENDING  
 
 **Implementing Task:** [E4:S09:T05](../epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md)
-**GitHub Issue:** [#10](https://github.com/earlution/ai-dev-kit/issues/10)
+**GitHub Issue:** [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)
 
 ---
 
@@ -116,7 +116,7 @@ This occurs when:
 **Environment:** Development  
 **Version:** Kanban Framework v2.1.0  
 **Repository:** earlution/dev-toolkit (consuming ai-dev-kit framework)  
-**Framework Source:** earlution/ai-dev-kit  
+**Framework Source:** RMS-Ltd/ai-dev-kit  
 **Framework Path:** `packages/frameworks/kanban/`  
 **Python Version:** 3.x
 

@@ -246,7 +246,7 @@ git push origin {branch} --tags
 python "packages/frameworks/workflow mgt/scripts/create_github_release.py" \
   --semver-tag "v{semver}" --internal-version "v{internal_version}" \
   --summary "{summary}" --epic "{epic}" --story "{story}" --task "{task}" \
-  --repo "earlution/ai-dev-kit"
+  --repo "RMS-Ltd/ai-dev-kit"
 ```
 
 Script auto-loads `GITHUB_TOKEN` from `.env.local`. Non-blocking if token absent.

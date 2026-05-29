@@ -34,11 +34,11 @@ housekeeping_policy: keep
 
 ## Deliverable
 
-New public `earlution/ai-dev-kit` repository from verified genesis commit.
+New public `RMS-Ltd/ai-dev-kit` repository from verified genesis commit.
 
 ## Summary
 
-**Phase 3:** Create **new public** [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) from the genesis commit (orphan root or genesis-SHA bootstrap). Public history must **not** include pre-genesis objects with book IP.
+**Phase 3:** Create **new public** [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) from the genesis commit (orphan root or genesis-SHA bootstrap). Public history must **not** include pre-genesis objects with book IP.
 
 ---
 
@@ -52,7 +52,7 @@ New public `earlution/ai-dev-kit` repository from verified genesis commit.
 
 ## Acceptance criteria (phase scope)
 
-- [x] **AC4:** New public genesis tree: no `docs/book-proj/`, no `Epic-24/`, no Head First obligation in vision/README. ✅ Verified on `earlution/ai-dev-kit` `main`/`dev` (2026-05-26).
+- [x] **AC4:** New public genesis tree: no `docs/book-proj/`, no `Epic-24/`, no Head First obligation in vision/README. ✅ Verified on `RMS-Ltd/ai-dev-kit` `main`/`dev` (2026-05-26).
 
 ---
 
@@ -60,7 +60,7 @@ New public `earlution/ai-dev-kit` repository from verified genesis commit.
 
 | Requirement | Status |
 |-------------|--------|
-| FR-099-F5 | ✅ Public repo live — [earlution/ai-dev-kit](https://github.com/earlution/ai-dev-kit) |
+| FR-099-F5 | ✅ Public repo live — [RMS-Ltd/ai-dev-kit](https://github.com/RMS-Ltd/ai-dev-kit) |
 
 ---
 

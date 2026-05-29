@@ -185,8 +185,8 @@ docs/README.md
 - Test all links to ensure they work
 
 **External References:**
-- Package references: `[Workflow Management](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/README.md)` (repository root; outside `docs/`)
-- Root references: `[Main Changelog](https://github.com/earlution/ai-dev-kit/blob/main/CHANGELOG.md)` (repo root; outside `docs/`)
+- Package references: `[Workflow Management](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/README.md)` (repository root; outside `docs/`)
+- Root references: `[Main Changelog](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CHANGELOG.md)` (repo root; outside `docs/`)
 
 ---
 

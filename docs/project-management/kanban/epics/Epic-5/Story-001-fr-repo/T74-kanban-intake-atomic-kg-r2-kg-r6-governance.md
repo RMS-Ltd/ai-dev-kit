@@ -25,7 +25,7 @@ Ship documentation/policy updates that **harden intake**: **KG-R2** (every FR/BR
 ## Input
 
 - Uncommitted or drafted edits across listed paths.  
-- [`kanban-governance-policy.md` (framework package)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) (framework canonical).  
+- [`kanban-governance-policy.md` (framework package)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) (framework canonical).  
 - [FR-074](../../../fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md).
 
 ---
@@ -72,6 +72,6 @@ N/A — this task **is** the filing anchor for **FR-074**.
 
 ## References
 
-- [`kanban-governance-policy.md` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)
-- [`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md)
-- [`intake-process` skill (source)](https://github.com/earlution/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)
+- [`kanban-governance-policy.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md)
+- [`intake-process` skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)

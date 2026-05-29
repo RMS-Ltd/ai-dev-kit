@@ -465,7 +465,7 @@ intake:
 
 ### Getting Help
 - **Documentation**: [Intake Workflow Guide](../../KB/Documentation/Developer_Docs/vwmp/intake-workflow-agent-execution.md)
-- **Community**: [AI Dev Kit Discussions](https://github.com/earlution/ai-dev-kit/discussions)
+- **Community**: [AI Dev Kit Discussions](https://github.com/RMS-Ltd/ai-dev-kit/discussions)
 
 ### Contributing
 - **Intake Enhancements**: Submit new validation rules or categorization methods

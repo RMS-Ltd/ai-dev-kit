@@ -36,7 +36,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Separate **book manuscript IP** and **Epic 24** from the public **AI Dev Kit** product using the **preferred Option C migration** ([ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)): privatize and rename the current repo to **`hf-ai-dev-kit`**, land a **book extraction genesis commit**, then rebirth **public `earlution/ai-dev-kit`** from that commit with framework-only history and **no Head First branding**.
+Separate **book manuscript IP** and **Epic 24** from the public **AI Dev Kit** product using the **preferred Option C migration** ([ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)): privatize and rename the current repo to **`hf-ai-dev-kit`**, land a **book extraction genesis commit**, then rebirth **public `RMS-Ltd/ai-dev-kit`** from that commit with framework-only history and **no Head First branding**.
 
 ---
 
@@ -60,9 +60,9 @@ The maintainer wants AI Dev Kit to stay **public and framework-focused** while t
 
 - [ ] **FR-099-F1:** Produce a **complete inventory** of book-related assets in ai-dev-kit (paths, git history sensitivity, cross-references, branches).
 - [ ] **FR-099-F2:** Finalize and obtain maintainer approval for **[ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)** (preferred Option C migration outline).
-- [x] **FR-099-F3:** **Privatize** and **rename** to [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit); retain full history on the private repo (book + frameworks) — **done 2026-05-26**
+- [x] **FR-099-F3:** **Privatize** and **rename** to [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book); retain full history on the private repo (book + frameworks) — **done 2026-05-26**
 - [x] **FR-099-F4:** Land **book extraction genesis commit** on private `hf-ai-dev-kit` — ✅ **E1:S04:T05** (`v0.1.4.3+1`, 2026-05-26)
-- [x] **FR-099-F5:** **Create new public `earlution/ai-dev-kit`** from genesis commit — ✅ 2026-05-26 ([bootstrap runbook](../../../maintenance/fr099-phase3-public-repo-bootstrap.md))
+- [x] **FR-099-F5:** **Create new public `RMS-Ltd/ai-dev-kit`** from genesis commit — ✅ 2026-05-26 ([bootstrap runbook](../../../maintenance/fr099-phase3-public-repo-bootstrap.md))
 - [x] **FR-099-F6:** **Rewire** remotes, badges, install docs, CI, and submodule URLs to the new public repo; verify greenfield/brownfield install (no Epic-24 contamination). ✅ 2026-05-26
 - [ ] **FR-099-F7:** Mark **[E1:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md)** **SUPERSEDED** — public ADK does not rename to Head First; Head First context remains private `hf-ai-dev-kit` only.
 
@@ -155,7 +155,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 - [ ] **AC4:** New public `ai-dev-kit` genesis tree has **no** `docs/book-proj/`, **no** `Epic-24/`, **no** Head First obligation in vision/README.
 - [ ] **AC5:** Public `kboard.md` and structure docs contain **no** active E24 rows.
 - [ ] **AC6:** Install smoke test passes without Epic-24 contamination on public repo.
-- [ ] **AC7:** Remotes, badges, and install URLs point at new public `earlution/ai-dev-kit`.
+- [ ] **AC7:** Remotes, badges, and install URLs point at new public `RMS-Ltd/ai-dev-kit`.
 
 ---
 
@@ -202,7 +202,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 
 - Epic: [`Epic-1.md`](../epics/Epic-1/Epic-1.md)
 - Story: [`Story-004-repository-branding-and-renaming.md`](../epics/Epic-1/Story-004-repository-branding-and-renaming.md)
-- **Closed:** All phase tasks T03–T07 complete; public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) live; private [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit)
+- **Closed:** All phase tasks T03–T07 complete; public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) live; private [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book)
 
 ---
 

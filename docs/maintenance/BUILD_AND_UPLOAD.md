@@ -68,7 +68,7 @@ cd /Users/rms/Documents/projects/ai-dev-kit
 # Using Python script
 python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
     --token $GITHUB_TOKEN \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 
 # Or using bash script
@@ -95,7 +95,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
 
 1. **Check GitHub Releases:**
    ```
-   https://github.com/earlution/ai-dev-kit/releases
+   https://github.com/RMS-Ltd/ai-dev-kit/releases
    ```
 
 2. **Verify Each Release:**
@@ -107,7 +107,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
    python3 "packages/frameworks/workflow mgt/scripts/install_package_from_release.py" \
        kanban 2.1.0 \
        --install-dir /tmp/test-install \
-       --repo earlution/ai-dev-kit \
+       --repo RMS-Ltd/ai-dev-kit \
        --verbose
    ```
 
@@ -132,11 +132,11 @@ git push origin --tags
 export GITHUB_TOKEN=your_token_here
 python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
     --token $GITHUB_TOKEN \
-    --repo earlution/ai-dev-kit \
+    --repo RMS-Ltd/ai-dev-kit \
     --verbose
 
 # 4. Verify
-open https://github.com/earlution/ai-dev-kit/releases
+open https://github.com/RMS-Ltd/ai-dev-kit/releases
 ```
 
 ---

@@ -22,7 +22,7 @@ PORTAL_README = REPO_ROOT / "portal" / "README.md"
 ROOT_README = REPO_ROOT / "README.md"
 CONFIG_PATH = REPO_ROOT / "portal" / "docusaurus.config.js"
 
-CANONICAL_SITE_URL = "https://earlution.github.io/ai-dev-kit/"
+CANONICAL_SITE_URL = "https://rms-ltd.github.io/ai-dev-kit/"
 
 
 @pytest.fixture
@@ -39,7 +39,7 @@ def config_text() -> str:
 
 def test_fr070_s2_config_url_baseurl(config_text: str):
     """S2 — docusaurus.config.js url/baseUrl match GitHub Pages project site."""
-    assert "url: 'https://earlution.github.io'" in config_text or 'url: "https://earlution.github.io"' in config_text
+    assert "url: 'https://rms-ltd.github.io'" in config_text or 'url: "https://rms-ltd.github.io"' in config_text
     assert "baseUrl: '/ai-dev-kit/'" in config_text or 'baseUrl: "/ai-dev-kit/"' in config_text
 
 

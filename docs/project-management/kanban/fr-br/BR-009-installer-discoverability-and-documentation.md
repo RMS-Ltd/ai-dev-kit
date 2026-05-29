@@ -88,7 +88,7 @@ The interactive installation process (`install_kanban_framework.py`) exists but 
 
 **Method:** Git submodule + manual file copy
 ```bash
-git submodule add https://github.com/earlution/ai-dev-kit.git packages/frameworks/ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git packages/frameworks/ai-dev-kit
 cp -r packages/frameworks/ai-dev-kit/docs/project-management/kanban/epics/* docs/project-management/kanban/epics/
 ```
 

@@ -121,8 +121,8 @@ git diff --stat
 
 **Expected Output:**
 ```
-origin  https://github.com/earlution/ai-dev-kit.git (fetch)
-origin  https://github.com/earlution/ai-dev-kit.git (push)
+origin  https://github.com/RMS-Ltd/ai-dev-kit.git (fetch)
+origin  https://github.com/RMS-Ltd/ai-dev-kit.git (push)
 ```
 
 **Validation:**
@@ -576,7 +576,7 @@ git remote -v
 git push origin --dry-run
 
 # Use SSH instead of HTTPS (if needed)
-git remote set-url origin git@github.com:earlution/ai-dev-kit.git
+git remote set-url origin git@github.com:RMS-Ltd/ai-dev-kit.git
 ```
 
 ---

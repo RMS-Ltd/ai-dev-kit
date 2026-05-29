@@ -63,7 +63,7 @@ This directory contains optional GitHub Actions workflow templates for the Workf
 
 **Badge URL Format:**
 - `https://byob.yarr.is/{org}/{badge-repo}/{badge-name}`
-- Example: `https://byob.yarr.is/earlution/ai-dev-kit-badges/version`
+- Example: `https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/version`
 
 ---
 

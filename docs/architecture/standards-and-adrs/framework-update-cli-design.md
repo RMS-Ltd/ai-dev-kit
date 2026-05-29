@@ -201,13 +201,13 @@ frameworks:
     version: "2.0.0"
     backend: "git-submodule"
     path: "frameworks/ai-dev-kit/packages/frameworks/numbering & versioning"
-    source: "https://github.com/earlution/ai-dev-kit.git"
+    source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "numbering-versioning-v2.0.0"
   workflow-mgt:
     version: "2.0.0"
     backend: "git-submodule"
     path: "frameworks/ai-dev-kit/packages/frameworks/workflow mgt"
-    source: "https://github.com/earlution/ai-dev-kit.git"
+    source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "workflow-mgt-v2.0.0"
 ```
 
@@ -232,7 +232,7 @@ backend.install(
     framework="numbering-versioning",
     version="2.0.0",
     path="frameworks/ai-dev-kit",
-    source="https://github.com/earlution/ai-dev-kit.git"
+    source="https://github.com/RMS-Ltd/ai-dev-kit.git"
 )
 ```
 
@@ -307,7 +307,7 @@ pip install ai-dev-kit
 ### From Source
 
 ```bash
-git clone https://github.com/earlution/ai-dev-kit.git
+git clone https://github.com/RMS-Ltd/ai-dev-kit.git
 cd ai-dev-kit/cli
 pip install -e .
 ```

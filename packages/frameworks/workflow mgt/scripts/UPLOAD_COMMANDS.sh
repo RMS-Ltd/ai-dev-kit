@@ -8,7 +8,7 @@ cd "$(dirname "$0")/../../../../"
 PROJECT_ROOT="$(pwd)"
 PACKAGES_DIR="$PROJECT_ROOT/packages/frameworks/dist/packages"
 UPLOAD_SCRIPT="$PROJECT_ROOT/packages/frameworks/workflow mgt/scripts/upload_to_github_release.py"
-REPO="earlution/ai-dev-kit"
+REPO="RMS-Ltd/ai-dev-kit"
 
 # Check token
 if [ -z "$GITHUB_TOKEN" ]; then

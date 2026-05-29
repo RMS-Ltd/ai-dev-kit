@@ -9,7 +9,7 @@ sidebar_position: 0
 
 # Documentation portal index
 
-This file is the **default entry** for the Docusaurus docs plugin, which publishes the repository **[`docs/` tree](https://github.com/earlution/ai-dev-kit/tree/main/docs)** (**FR-066**).
+This file is the **default entry** for the Docusaurus docs plugin, which publishes the repository **[`docs/` tree](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs)** (**FR-066**).
 
 **Canonical structure** follows the [Ultimate Canonical docs/documentation Structure](../architecture/standards-and-adrs/ultimate-canonical-kb-structure.md): architecture standards, changelogs (summaries — not the versioned archive excluded from publish), project management references, guides, developer documentation, and knowledge base content.
 

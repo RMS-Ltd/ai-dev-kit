@@ -244,7 +244,7 @@ git commit -m "Update ${FRAMEWORK} framework to v${VERSION}"
 ```bash
 # 1. Pull latest changes from framework repository
 git subtree pull --prefix=frameworks/workflow-mgmt \
-    https://github.com/earlution/ai-dev-kit.git \
+    https://github.com/RMS-Ltd/ai-dev-kit.git \
     workflow-mgt-v2.1.0 \
     --squash
 
@@ -529,7 +529,7 @@ git commit -m "Rollback workflow-mgmt framework to v2.0.0 (reason: breaking chan
 ```bash
 # 1. Pull previous version
 git subtree pull --prefix=frameworks/workflow-mgmt \
-    https://github.com/earlution/ai-dev-kit.git \
+    https://github.com/RMS-Ltd/ai-dev-kit.git \
     workflow-mgt-v2.0.0 \
     --squash
 

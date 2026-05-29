@@ -348,12 +348,12 @@ def create_package(
 
 1. **Download Package:**
    ```bash
-   wget https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz
+   wget https://github.com/RMS-Ltd/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz
    ```
 
 2. **Download Hash File:**
    ```bash
-   wget https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz.sha256
+   wget https://github.com/RMS-Ltd/ai-dev-kit/releases/download/kanban-v2.0.0/kanban-v2.0.0.tar.gz.sha256
    ```
 
 3. **Verify Hash:**
@@ -424,8 +424,8 @@ ai-dev-kit install kanban@2.0.0 --backend package-file
 
 2. **Download New Package:**
    ```bash
-   wget https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.1.0/kanban-v2.1.0.tar.gz
-   wget https://github.com/earlution/ai-dev-kit/releases/download/kanban-v2.1.0/kanban-v2.1.0.tar.gz.sha256
+   wget https://github.com/RMS-Ltd/ai-dev-kit/releases/download/kanban-v2.1.0/kanban-v2.1.0.tar.gz
+   wget https://github.com/RMS-Ltd/ai-dev-kit/releases/download/kanban-v2.1.0/kanban-v2.1.0.tar.gz.sha256
    ```
 
 3. **Verify Hash:**

@@ -229,8 +229,8 @@ This is a **test PIR report** created to validate the Story-level Post-Implement
   - Task 1: Add CHECK Phase (v0.2.2.1+1)
   - Task 2: Add ACT Phase (v0.2.2.2+1)
 - **Version:** v0.2.2.8+1
-- **PIR Workflow:** [PIR Workflow YAML (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/pir-workflow.yaml)
-- **PIR Execution Guide:** [PIR Agent Execution Guide (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)
+- **PIR Workflow:** [PIR Workflow YAML (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/pir-workflow.yaml)
+- **PIR Execution Guide:** [PIR Agent Execution Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)
 
 ---
 

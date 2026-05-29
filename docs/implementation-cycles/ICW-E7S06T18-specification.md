@@ -51,9 +51,9 @@ Make interactive installer Kanban prompts self-explanatory, enforce placeholder-
 
 ## 6. Success / verification criteria (planning)
 
-- [x] Epic/story pattern prompts reject non-templated inputs with clear remediation — **implemented** in [`install_release_workflow.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py) via `prompt_pattern_with_validation` / `validate_required_placeholders`.
+- [x] Epic/story pattern prompts reject non-templated inputs with clear remediation — **implemented** in [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py) via `prompt_pattern_with_validation` / `validate_required_placeholders`.
 - [x] Users get immediate match feedback and alternatives before config is written — **implemented** via `preview_pattern_matches`, sample output, zero-match suggestions, and optional “Use this pattern anyway?”.
-- [x] Chained installer flows validate the intended kanban root, not default-only paths — **implemented** via `load_rw_kanban_root` / adoption of `rw-config.yaml` `kanban_root` in Kanban installer ([`install_kanban_framework.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)).
+- [x] Chained installer flows validate the intended kanban root, not default-only paths — **implemented** via `load_rw_kanban_root` / adoption of `rw-config.yaml` `kanban_root` in Kanban installer ([`install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)).
 - [x] End-of-run state is unambiguous (`SUCCESS`/`PARTIAL`/`FAILED`/`CANCELLED`) — **implemented**: RW installer emits `Final status: SUCCESS|PARTIAL`; Kanban installer returns canonical status tuple and prints final status lines.
 - [x] `T18` and `UXR-007` include cross-linked implementation evidence — **implemented** via task doc, UXR links, and this retrospective planning package.
 
@@ -63,8 +63,8 @@ Evidence is **repository-based** (code + tests); end-user verification in arbitr
 
 | Id | Requirement | As-delivered note |
 | -- | ----------- | ----------------- |
-| F1–F5 | Prompts + preview | `prompt_pattern_with_validation`, `preview_pattern_matches`, remediation strings and suggestion lists in RW installer ([`install_release_workflow.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)). |
-| F6 | Root propagation | `load_rw_kanban_root` and messaging when Kanban path is sourced from `rw-config.yaml` ([`install_kanban_framework.py`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)). |
+| F1–F5 | Prompts + preview | `prompt_pattern_with_validation`, `preview_pattern_matches`, remediation strings and suggestion lists in RW installer ([`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)). |
+| F6 | Root propagation | `load_rw_kanban_root` and messaging when Kanban path is sourced from `rw-config.yaml` ([`install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)). |
 | F7 | Canonical final status | RW installer: `Final status: SUCCESS` / `PARTIAL` from `install_warnings`; Kanban installer aggregates `SUCCESS`/`PARTIAL`/`CANCELLED`. |
 | F8 | Existing `.cursorrules` | **Partial:** duplicate RW trigger detected → skip append, print reconciliation message, add warning → **PARTIAL** outcome. Optional diff artifact path was **not** implemented; manual review remains. |
 

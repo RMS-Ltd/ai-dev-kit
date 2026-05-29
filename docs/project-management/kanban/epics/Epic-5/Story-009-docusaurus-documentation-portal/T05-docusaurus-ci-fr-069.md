@@ -77,7 +77,7 @@ Implement **FR-069**: GitHub Actions workflow running `npm ci` and `npm run buil
 
 - [`.github/workflows/docusaurus-build.yml`](../../../../../../.github/workflows/docusaurus-build.yml) — `npm ci` / `npm run build` in `portal/`, path filters, Node 20, npm cache.
 - [`tests/test_portal_fr069_ci.py`](../../../../../../tests/test_portal_fr069_ci.py) — S1–S7 contract tests (`"on"` key quoted for PyYAML-safe parsing).
-- [`portal/README.md`](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) — CI (FR-069) pointer.
+- [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — CI (FR-069) pointer.
 - **AC3:** Green **Docusaurus site build** on `main` after this release push (verify in GitHub Actions).
 - **AC2:** Optional — intentional break on a throwaway branch to prove job failure.
 

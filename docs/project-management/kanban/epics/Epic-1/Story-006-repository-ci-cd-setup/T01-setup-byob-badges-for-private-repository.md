@@ -203,7 +203,7 @@ Set up BYOB (Bring Your Own Badge) to enable dynamic badge rendering for private
 
 **Badge URL Format:**
 - `https://byob.yarr.is/{org}/{badge-repo}/{badge-name}`
-- Example: `https://byob.yarr.is/earlution/ai-dev-kit-badges/version`
+- Example: `https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/version`
 
 **Test Status Badge:**
 - Requires test workflow to output test results

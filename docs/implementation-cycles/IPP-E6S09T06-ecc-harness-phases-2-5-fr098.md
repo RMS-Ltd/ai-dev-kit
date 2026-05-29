@@ -45,14 +45,14 @@ housekeeping_policy: keep
 | RNF3 | Single ECC install path (`single_install_path: true`); no plugin + full installer stacking | spec §8 |
 | RNF4 | No duplicate RW/UKW/IPW triggers from default ECC minimal install | FR-098 AC5 |
 | RNF5 | Upstream ECC obtained by adopters under MIT license; no vendoring ECC in-tree | spec §1 |
-| RNF6 | Public validation repo must be **framework-only** genesis (no Epic 24 / book paths); private [`hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) is not the execute testbed | FR-099, ADR-006 |
+| RNF6 | Public validation repo must be **framework-only** genesis (no Epic 24 / book paths); private [`hf-ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit-book) is not the execute testbed | FR-099, ADR-006 |
 
 ### 1.3 Invariants and boundaries
 
 - **Invariants:** ADK owns RW/UKW/IPW/git/version/Kanban; ECC defers per `conflict_rules` in bridge template; T05 `adk-*` skills remain authoritative workflow surface.
 - **In scope:** Phases 2–5 per [integration spec §10](../../docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md); ordered waves in one task (**T06**).
-- **Out of scope:** Re-shipping Phase 1 skills; ECC Pro; mandatory ECC; replacing blocking RW Step 9 validators; live `npx ecc-install` in CI without opt-in gate; **full ECC overlay on canonical `RMS-Ltd/hf-ai-dev-kit` `dev`** (framework source — dry-run only there).
-- **Post-delivery (Wave E):** Real **`ecc-install --execute`** and adopter feedback on **new public** `earlution/ai-dev-kit` after FR-099 genesis — see §8.
+- **Out of scope:** Re-shipping Phase 1 skills; ECC Pro; mandatory ECC; replacing blocking RW Step 9 validators; live `npx ecc-install` in CI without opt-in gate; **full ECC overlay on canonical `RMS-Ltd/ai-dev-kit-book` `dev`** (framework source — dry-run only there).
+- **Post-delivery (Wave E):** Real **`ecc-install --execute`** and adopter feedback on **new public** `RMS-Ltd/ai-dev-kit` after FR-099 genesis — see §8.
 
 ---
 
@@ -127,7 +127,7 @@ Exemption block not used (T1–T7 not all N).
 | T6 | Hooks documentation | Bridge `disabled_hooks` includes git-workflow deferral example | RF4 |
 | T7 | AgentShield doc | States non-blocking; lists ADK Step 9 scripts as authoritative | RF6 |
 | T8 | Dogfood (manual) | Maintainer repo: disposable branch, dry-run + bridge validators (**no `--execute` on `hf-ai-dev-kit` `dev`**) | RNF1 — **done** `throwaway/ecc-dogfood-e6s09t06` |
-| T9 | Public-repo dogfood (manual) | Clone **public** `earlution/ai-dev-kit` post–Phase 3; ADK-only smoke, then ECC §3 playbook with optional `--execute` on feature branch | RF10–RF12 — **pending** |
+| T9 | Public-repo dogfood (manual) | Clone **public** `RMS-Ltd/ai-dev-kit` post–Phase 3; ADK-only smoke, then ECC §3 playbook with optional `--execute` on feature branch | RF10–RF12 — **pending** |
 
 **`--skip-tests`:** Not used — installer/bridge/hooks warrant automated validation.
 
@@ -265,7 +265,7 @@ All items in §7 above — verified **v0.6.9.6+3** through **v0.6.9.6+4** (docs)
 
 ### 7.2 Wave E — public rebirth validation (open)
 
-- [ ] FR-099 Phase 3: public `earlution/ai-dev-kit` exists from book-free genesis
+- [ ] FR-099 Phase 3: public `RMS-Ltd/ai-dev-kit` exists from book-free genesis
 - [ ] FR-099 Phase 4: ADK-only greenfield install + RW/UKW smoke **without** ECC
 - [ ] ECC §3 playbook on **public** clone (dry-run reviewed; optional `--execute` on disposable branch)
 - [ ] Evidence pack (§8.3) recorded; UXR and/or FR filed
@@ -275,14 +275,14 @@ All items in §7 above — verified **v0.6.9.6+3** through **v0.6.9.6+4** (docs)
 
 ## 8. Post-delivery validation plan (Wave E — FR-099 public rebirth)
 
-**Rationale:** Maintainer dogfood on **`RMS-Ltd/hf-ai-dev-kit`** (T8) validated scripts and docs with **dry-run only** — correct for the framework source repo. The **real adopter test case** is the **new public AI Dev Kit** tree after [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3 rebirth: framework-only, no book IP, matches FR-080 greenfield intent and FR-098 optional ECC positioning.
+**Rationale:** Maintainer dogfood on **`RMS-Ltd/ai-dev-kit-book`** (T8) validated scripts and docs with **dry-run only** — correct for the framework source repo. The **real adopter test case** is the **new public AI Dev Kit** tree after [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3 rebirth: framework-only, no book IP, matches FR-080 greenfield intent and FR-098 optional ECC positioning.
 
 ### 8.1 Repository roles
 
 | Repo | ECC policy | Purpose |
 | ---- | ---------- | ------- |
-| **`RMS-Ltd/hf-ai-dev-kit`** (private) | **Dry-run + validators** on throwaway branches; **no** merge of full ECC `.cursor/` overlay into `dev` | Ship frameworks, cheatsheet, validators, skill pack |
-| **`earlution/ai-dev-kit`** (public, post–Phase 3) | **Full cheatsheet §3** including optional **`ecc-install --execute`** on a feature branch | Real usage, collisions, hooks/git risk, adopter feedback |
+| **`RMS-Ltd/ai-dev-kit-book`** (private) | **Dry-run + validators** on throwaway branches; **no** merge of full ECC `.cursor/` overlay into `dev` | Ship frameworks, cheatsheet, validators, skill pack |
+| **`RMS-Ltd/ai-dev-kit`** (public, post–Phase 3) | **Full cheatsheet §3** including optional **`ecc-install --execute`** on a feature branch | Real usage, collisions, hooks/git risk, adopter feedback |
 
 ### 8.2 Sequencing (depends on FR-099)
 
@@ -299,7 +299,7 @@ flowchart LR
 | Step | Owner / anchor | Action |
 | ---- | -------------- | ------ |
 | 1 | [E1:S04:T05](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | Phase 2 genesis ✅ on private `dev` tree |
-| 2 | FR-099 Phase 3 | Create **public** `earlution/ai-dev-kit` from genesis (no pre-genesis book objects on public remote) |
+| 2 | FR-099 Phase 3 | Create **public** `RMS-Ltd/ai-dev-kit` from genesis (no pre-genesis book objects on public remote) |
 | 3 | FR-099 Phase 4 / FR-080 | Clone public repo; greenfield ADK install per [INSTALL_IN_YOUR_PROJECT.md](../../INSTALL_IN_YOUR_PROJECT.md); verify RW, UKW, validators **without** ECC |
 | 4 | Wave E (this plan) | Feature branch on **public** clone; run [cheatsheet §3](../documentation/user-docs/ecc-adk-integration-cheatsheet.md#throwaway-branch-playbook-end-to-end) through validators; **optionally** `--execute` after dry-run review |
 | 5 | RF11 | File feedback; link from FR-098 notes or new intake task |
@@ -312,7 +312,7 @@ Record in UXR/FR or task notes:
 
 | Field | Example |
 | ----- | ------- |
-| Public repo URL + commit/branch | `earlution/ai-dev-kit@…`, `feature/ecc-validation-…` |
+| Public repo URL + commit/branch | `RMS-Ltd/ai-dev-kit@…`, `feature/ecc-validation-…` |
 | `ecc_version_pin` | npm `ecc-universal@…` tested |
 | Dry-run op count | e.g. ~342 on `core` + `--without baseline:hooks` |
 | Hooks in plan despite exclusion | Y/N; list `.cursor/hooks/*`, `hooks.json` |
@@ -333,7 +333,7 @@ Record in UXR/FR or task notes:
 ### 8.5 Cheatsheet alignment
 
 - **§3 Throwaway branch playbook** — canonical procedure for **any** repo (maintainer dry-run vs public execute).
-- **Planned cheatsheet addendum (Wave E doc pass):** callout that **preferred real-world validation target** = public reborn `earlution/ai-dev-kit` (FR-099 Phase 3), not `hf-ai-dev-kit` `dev`.
+- **Planned cheatsheet addendum (Wave E doc pass):** callout that **preferred real-world validation target** = public reborn `RMS-Ltd/ai-dev-kit` (FR-099 Phase 3), not `hf-ai-dev-kit` `dev`.
 
 ---
 

@@ -68,7 +68,7 @@ These are **dev-kit-specific applications** of the frameworks. Adopters should c
 
 ## Book / authoring content (not in this repository)
 
-Manuscript, proposals, and book-project Kanban (formerly Epic 24) live in the **private companion repository** `RMS-Ltd/hf-ai-dev-kit`, not in the public AI Dev Kit tree. See [ADR-006](../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
+Manuscript, proposals, and book-project Kanban (formerly Epic 24) live in the **private companion repository** `RMS-Ltd/ai-dev-kit-book`, not in the public AI Dev Kit tree. See [ADR-006](../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 **For adopters:** Ignore book-specific paths if you encounter them in older forks or changelogs; use [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) for framework adoption only.
 

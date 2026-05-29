@@ -51,9 +51,9 @@ Implement **FR-068**: sidebar information architecture aligned to **canonical KB
 
 | ID | Source | Statement |
 |----|--------|------------|
-| **S1** | R01 / NF01 | [portal/sidebars.js](https://github.com/earlution/ai-dev-kit/blob/main/portal/sidebars.js) defines **top-level categories** mapping to KB pillars (and extra `docs/` roots); header **comment** states ordering philosophy (canonical pillar order, then extensions) and points to [portal README](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) mapping table. |
-| **S2** | R01 | [portal/README.md](https://github.com/earlution/ai-dev-kit/blob/main/portal/README.md) includes **FR-068** markdown **table**: sidebar label → `docs/` folder (canonical vs extension). |
-| **S3** | R02 / AC2 | [portal/src/pages/index.js](https://github.com/earlution/ai-dev-kit/blob/main/portal/src/pages/index.js): **no** “Docusaurus Tutorial” primary CTA; hero/body use **concrete** `/docs/...` links (portal index, versioning policy, framework install guide, Kanban governance). |
+| **S1** | R01 / NF01 | [portal/sidebars.js](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/sidebars.js) defines **top-level categories** mapping to KB pillars (and extra `docs/` roots); header **comment** states ordering philosophy (canonical pillar order, then extensions) and points to [portal README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) mapping table. |
+| **S2** | R01 | [portal/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) includes **FR-068** markdown **table**: sidebar label → `docs/` folder (canonical vs extension). |
+| **S3** | R02 / AC2 | [portal/src/pages/index.js](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/src/pages/index.js): **no** “Docusaurus Tutorial” primary CTA; hero/body use **concrete** `/docs/...` links (portal index, versioning policy, framework install guide, Kanban governance). |
 | **S4** | R02 / NF02 | Landing: semantic **headings** (`h1` hero, `h2`/`h3` blocks) and **descriptive** link labels (not “click here”). |
 | **S5** | R03 | Every `dirName` in `sidebars.js` exists under repo **`docs/`**; `docusaurus.config.js` **navbar** `sidebarId` matches exported sidebar key (`docsSidebar`). |
 | **S6** | R04 / AC3 | `npm run build` green with **PORTAL_BUILD_STRICT=1** (`tests/test_portal_fr065_identity.py::test_fr065_s9_portal_production_build`). |

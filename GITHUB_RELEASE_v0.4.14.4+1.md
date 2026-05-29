@@ -96,7 +96,7 @@ Ancillary Epics: 11-17, 18-21+
 ### For New Projects
 ```bash
 # Install with latest epic structure
-git submodule add https://github.com/earlution/ai-dev-kit.git .ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 cp -r .ai-dev-kit/packages/frameworks/kanban/* ./
 ```
 

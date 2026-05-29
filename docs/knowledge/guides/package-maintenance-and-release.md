@@ -467,7 +467,7 @@ steps:
 
 ## 10. Related Documents
 
-- [Package Version Workflow: Agent Execution (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md) - Complete step-by-step PVW guide
+- [Package Version Workflow: Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md) - Complete step-by-step PVW guide
 - [Package Versioning Criteria](../../architecture/standards-and-adrs/package-versioning-criteria.md) - Version bump criteria (guidance)
 - [Release Workflow Structure](../../architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md) - RW integration
 - [Dual Versioning Guide](../../architecture/standards-and-adrs/dual-versioning-package-managers.md) - Project vs. package versioning
@@ -503,8 +503,8 @@ PVW Documents → RW Continues → Changelog Includes Package Versions
 
 **Related:**
 - [Ultimate Canonical Workflow Structure](../../architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md)
-- [Package Version Workflow YAML (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/package-version-workflow.yaml)
-- [Package Update Summary (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/PACKAGE_UPDATE_SUMMARY.md)
+- [Package Version Workflow YAML (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/package-version-workflow.yaml)
+- [Package Update Summary (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/PACKAGE_UPDATE_SUMMARY.md)
 
 ---
 _Last updated: 2025-12-18T00:00:00Z_

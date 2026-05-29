@@ -48,7 +48,7 @@ cp -r /path/to/frameworks/workflow\ mgt ./frameworks/workflow-mgt
 **Future Approach (Dependencies - Epic 6):**
 ```bash
 # Using Git submodules (Phase 1)
-git submodule add https://github.com/earlution/ai-dev-kit.git frameworks/ai-dev-kit
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git frameworks/ai-dev-kit
 cd frameworks/ai-dev-kit
 git checkout v2.0.0
 

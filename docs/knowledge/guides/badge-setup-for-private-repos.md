@@ -26,7 +26,7 @@ We use [BYOB](https://github.com/RubbaBoy/BYOB) to create dynamic badges that wo
 
 1. Create a new public repository (e.g., `ai-dev-kit-badges`)
 2. The repository can be minimal - it only needs to exist and be public
-3. Note the repository name format: `{org}/{repo-name}` (e.g., `earlution/ai-dev-kit-badges`)
+3. Note the repository name format: `{org}/{repo-name}` (e.g., `RMS-Ltd/ai-dev-kit-badges`)
 
 ### Step 2: Create Personal Access Token
 
@@ -51,7 +51,7 @@ We use [BYOB](https://github.com/RubbaBoy/BYOB) to create dynamic badges that wo
 1. Open `.github/workflows/update-badges.yml`
 2. Update the `REPOSITORY` and `ACTOR` values in each badge step:
    ```yaml
-   REPOSITORY: 'earlution/ai-dev-kit-badges'  # Your public repo
+   REPOSITORY: 'RMS-Ltd/ai-dev-kit-badges'  # Your public repo
    ACTOR: 'earlution'  # Your GitHub username
    ```
 3. Uncomment these lines in all badge steps (version, license, status, tests, coverage, code-quality)
@@ -61,12 +61,12 @@ We use [BYOB](https://github.com/RubbaBoy/BYOB) to create dynamic badges that wo
 1. Open `README.md`
 2. Update badge URLs to point to your public badge repo:
    ```markdown
-   ![Version](https://byob.yarr.is/earlution/ai-dev-kit-badges/version)
-   ![License](https://byob.yarr.is/earlution/ai-dev-kit-badges/license)
-   ![Status](https://byob.yarr.is/earlution/ai-dev-kit-badges/status)
-   ![Tests](https://byob.yarr.is/earlution/ai-dev-kit-badges/tests)
-   ![Coverage](https://byob.yarr.is/earlution/ai-dev-kit-badges/coverage)
-   ![Code Quality](https://byob.yarr.is/earlution/ai-dev-kit-badges/code-quality)
+   ![Version](https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/version)
+   ![License](https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/license)
+   ![Status](https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/status)
+   ![Tests](https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/tests)
+   ![Coverage](https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/coverage)
+   ![Code Quality](https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/code-quality)
    ```
 
 ### Step 6: Test the Workflow
@@ -132,13 +132,13 @@ To add a new badge:
        COLOR: {hex-color}
        ICON: '{icon-name}'
        GITHUB_TOKEN: ${{ secrets.BADGES_REPO_TOKEN || secrets.GITHUB_TOKEN }}
-       REPOSITORY: 'earlution/ai-dev-kit-badges'
+       REPOSITORY: 'RMS-Ltd/ai-dev-kit-badges'
        ACTOR: 'earlution'
    ```
 
 2. Add badge to README:
    ```markdown
-   ![{Label}](https://byob.yarr.is/earlution/ai-dev-kit-badges/{badge-name})
+   ![{Label}](https://byob.yarr.is/RMS-Ltd/ai-dev-kit-badges/{badge-name})
    ```
 
 ## Troubleshooting

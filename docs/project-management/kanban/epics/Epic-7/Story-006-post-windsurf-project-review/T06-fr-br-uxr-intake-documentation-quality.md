@@ -22,7 +22,7 @@ Audit FR/BR/UXR intake and aggregate documentation for consistency, wiring, and 
 
 ## Input
 
-[`fbu-structure.md`](../../../fbu-structure.md), [`fbuboard.md`](../../../fbuboard.md), [`fbu-completed.md`](../../../fbu-completed.md), [`kanban-completed.md`](../../../kanban-completed.md), sample FR/BR docs (e.g. [`FR-073`](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)), [`intake-process` skill (source)](https://github.com/earlution/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md).
+[`fbu-structure.md`](../../../fbu-structure.md), [`fbuboard.md`](../../../fbuboard.md), [`fbu-completed.md`](../../../fbu-completed.md), [`kanban-completed.md`](../../../kanban-completed.md), sample FR/BR docs (e.g. [`FR-073`](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)), [`intake-process` skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md).
 
 **Note on “Batch 3” (story blurb):** No other repo reference. This review used a **representative sample** of FR/BR/UXR files plus aggregate index docs—not a named historical batch.
 
@@ -52,7 +52,7 @@ None
 |----------|--------|
 | Aggregate | [`fbu-structure.md`](../../../fbu-structure.md), [`fbuboard.md`](../../../fbuboard.md), [`fbu-completed.md`](../../../fbu-completed.md), [`kanban-completed.md`](../../../kanban-completed.md) |
 | FR/BR/UXR (spot-check) | `FR-060`, `FR-063`, `FR-051`, `FR-002`, `FR-031`, `FR-003`, `BR-056`, `BR-057`, `BR-053`, `BR-001`, `UXR-001` |
-| Intake guidance | skill + guide via GitHub: [`intake-process`](https://github.com/earlution/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md`](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) (header / path conventions) |
+| Intake guidance | skill + guide via GitHub: [`intake-process`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) (header / path conventions) |
 
 ---
 

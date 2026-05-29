@@ -69,8 +69,8 @@ Testable behaviors **S1–S8** are enforced by [`tests/test_portal_fr065_identit
 |----|----------|--------|
 | **S1** | No template placeholders in `portal/docusaurus.config.js`: `My Site`, `Dinosaurs are cool`, `your-docusaurus-site.example.com`, `organizationName: 'facebook'`, `projectName: 'docusaurus'`, create-docusaurus `editUrl` path. | R01, AC1 |
 | **S2** | `organizationName` / `projectName` are `earlution` / `ai-dev-kit`. | AC2 |
-| **S3** | `url` / `baseUrl` are not example.com; GitHub Pages convention `https://earlution.github.io` + `/ai-dev-kit/` with comment that FR-070 may adjust. | R01 |
-| **S4** | `editUrl` for docs/blog targets `github.com/earlution/ai-dev-kit/tree/main/portal/docs/` and `.../portal/blog/`. | R02 |
+| **S3** | `url` / `baseUrl` are not example.com; GitHub Pages convention `https://rms-ltd.github.io` + `/ai-dev-kit/` with comment that FR-070 may adjust. | R01 |
+| **S4** | `editUrl` for docs/blog targets `github.com/RMS-Ltd/ai-dev-kit/tree/main/portal/docs/` and `.../portal/blog/`. | R02 |
 | **S5** | No Stack Overflow / Discord / Docusaurus X template links; no `github.com/facebook/docusaurus` as primary nav. | R03 |
 | **S6** | Navbar `title` / logo `alt` use **AI Dev Kit** (not `My Site`). | R03 |
 | **S7** | Footer `copyright` not `My Project, Inc.` | R03 |

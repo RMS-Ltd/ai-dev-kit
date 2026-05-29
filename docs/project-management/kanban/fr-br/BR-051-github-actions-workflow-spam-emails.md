@@ -17,7 +17,7 @@ labels: ["bug", "github-actions", "workflow", "notifications"]
 GitHub Actions workflow `fr-br-intake.yml` was generating "No jobs were run" email notifications for every issue activity, causing email spam.
 
 ## **Environment**
-- **Repository**: earlution/ai-dev-kit
+- **Repository**: RMS-Ltd/ai-dev-kit
 - **Workflow**: `.github/workflows/fr-br-intake.yml`
 - **Trigger**: Issue events (opened, edited)
 - **Date Reported**: 2026-03-12

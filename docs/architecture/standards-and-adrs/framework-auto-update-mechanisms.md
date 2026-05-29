@@ -268,7 +268,7 @@ fi
 
 # Pull latest version
 git subtree pull --prefix=frameworks/$FRAMEWORK \
-    https://github.com/earlution/ai-dev-kit.git \
+    https://github.com/RMS-Ltd/ai-dev-kit.git \
     ${FRAMEWORK}-${VERSION} \
     --squash
 
@@ -287,12 +287,12 @@ echo "✓ Updated ${FRAMEWORK} to ${VERSION}"
 set -e
 
 # Check for updates
-git fetch https://github.com/earlution/ai-dev-kit.git
+git fetch https://github.com/RMS-Ltd/ai-dev-kit.git
 
 # Check each framework
 for framework in workflow-mgmt kanban numbering-versioning; do
     CURRENT=$(git log -1 --pretty=format:"%s" -- frameworks/$framework | grep -oP "${framework}-v\K[0-9.]+" || echo "unknown")
-    LATEST=$(git ls-remote --tags https://github.com/earlution/ai-dev-kit.git | grep "${framework}-v" | sort -V | tail -1 | sed 's/.*refs\/tags\///')
+    LATEST=$(git ls-remote --tags https://github.com/RMS-Ltd/ai-dev-kit.git | grep "${framework}-v" | sort -V | tail -1 | sed 's/.*refs\/tags\///')
     
     if [ "$CURRENT" != "$LATEST" ]; then
         # Apply update policy

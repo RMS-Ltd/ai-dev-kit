@@ -11,7 +11,7 @@ This document provides a clear entry point for installing AI Dev Kit frameworks 
 | Audience | Repository | Clone URL |
 |----------|------------|-----------|
 | **Adopters** (frameworks only) | [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) | `https://github.com/RMS-Ltd/ai-dev-kit.git` |
-| **Maintainers** (book + full history) | [`RMS-Ltd/hf-ai-dev-kit`](https://github.com/RMS-Ltd/hf-ai-dev-kit) (private) | `https://github.com/RMS-Ltd/hf-ai-dev-kit.git` |
+| **Maintainers** (book + full history) | [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) (private) | `https://github.com/RMS-Ltd/ai-dev-kit-book.git` |
 
 Published docs: [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/).  
 Rewire policy: [`docs/maintenance/fr099-phase4-rewire-and-verify.md`](docs/maintenance/fr099-phase4-rewire-and-verify.md).

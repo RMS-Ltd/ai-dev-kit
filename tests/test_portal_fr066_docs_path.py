@@ -34,7 +34,7 @@ def test_fr066_s1_docs_path_points_at_repo_docs(config_text: str):
 
 def test_fr066_s4_edit_url_docs_tree(config_text: str):
     """S4 — editUrl for docs uses main/docs/; blog still portal/blog."""
-    base = "https://github.com/earlution/ai-dev-kit/tree/main/docs/"
+    base = "https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/"
     assert base in config_text, "docs editUrl must point at repo docs/ (FR-066:R04)"
     assert "editUrl" in config_text
     assert "tree/main/portal/blog/" in config_text

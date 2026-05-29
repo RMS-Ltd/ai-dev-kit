@@ -53,7 +53,7 @@ The canonical KB and documentation live under repo root `docs/`. The portal curr
 - [x] **FR-066:R01** – Docs plugin reads from repo **`docs/`** (`path: '../docs'` in `portal/docusaurus.config.js`, **2026-03-30**).
 - [x] **FR-066:R02** – `exclude` globs for `changelog-and-release-notes/changelog-archive/**` and mirror under `knowledge/`.
 - [x] **FR-066:R03** – Publish scope in **`portal/README.md`** (committed).
-- [x] **FR-066:R04** – Docs **`editUrl`** → `https://github.com/earlution/ai-dev-kit/tree/main/docs/`.
+- [x] **FR-066:R04** – Docs **`editUrl`** → `https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/`.
 
 ---
 

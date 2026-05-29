@@ -64,8 +64,8 @@ We need an FR that encapsulates the work to publish the artifacts, wire automati
 
 ## Functional Requirements
 
-- **FR-062-F1:** Each framework version referenced in documentation must have matching release assets (`.tar.gz` + `.tar.gz.sha256`) under `https://github.com/earlution/ai-dev-kit/releases/tag/<framework>-v<version>`.
-- **FR-062-F2:** `install_package_from_release.py <framework> <version> --repo earlution/ai-dev-kit` must download, verify, extract, and place the framework under the target install directory without manual intervention.
+- **FR-062-F1:** Each framework version referenced in documentation must have matching release assets (`.tar.gz` + `.tar.gz.sha256`) under `https://github.com/RMS-Ltd/ai-dev-kit/releases/tag/<framework>-v<version>`.
+- **FR-062-F2:** `install_package_from_release.py <framework> <version> --repo RMS-Ltd/ai-dev-kit` must download, verify, extract, and place the framework under the target install directory without manual intervention.
 - **FR-062-F3:** The installer must emit clear progress + error messages (including guidance when an asset is missing).
 - **FR-062-F4:** Documentation must provide copy-pastable commands for GitHub installs, explain prerequisites (git repo, Python), and link to troubleshooting steps.
 - **FR-062-F5:** A validation report (or automated test) must demonstrate that a clean consumer project can install workflow-mgmt + kanban via GitHub releases, run the RW/Kanban installers, and produce install logs.

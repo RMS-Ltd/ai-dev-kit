@@ -153,7 +153,7 @@ Enhance the Task Template (`TASK_TEMPLATE.md`) to include an explicit "Cross-Wir
 **Related Documentation:**
 - [Task Template Cross-Wiring SoP](../../../../../architecture/standards-and-adrs/task-template-cross-wiring-sop.md) - *Provides Context: SoP defines the procedure for cross-wiring*
 - [Bidirectional Wiring Principle](../../../fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - *Provides Context: Core principle for bidirectional linking*
-- [Task Template (source)](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/TASK_TEMPLATE.md) - *Detailed Specification: The template to be enhanced*
+- [Task Template (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/TASK_TEMPLATE.md) - *Detailed Specification: The template to be enhanced*
 - [IPW Plan](../../../../../../.claude/plans/e5-s01-t35-task-template-cross-wiring.md) — *Implementation plan for this task (FR-042)*
 
 ---

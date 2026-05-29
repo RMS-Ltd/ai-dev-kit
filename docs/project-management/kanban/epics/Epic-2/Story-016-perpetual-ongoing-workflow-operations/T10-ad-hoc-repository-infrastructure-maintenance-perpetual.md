@@ -13,12 +13,12 @@ housekeeping_policy: keep
 **Priority:** MEDIUM
 **Estimated Effort:** Small
 **Created:** 2026-05-19
-**Last updated:** 2026-05-19 (v0.2.16.10+2: SemVer registry sync; v0.2.16.10+1: FR-095 auto-detect GitHub remote)
-**Version:** v0.2.16.10+2
+**Last updated:** 2026-05-29 10:59:14 UTC (v0.2.16.10+3: retire `hf-ai-dev-kit`; private `ai-dev-kit-book` + public URL rewire)
+**Version:** v0.2.16.10+3
 **Code:** E2S16T10
 **Task Type:** Perpetual Maintenance
 
-**Forensic Marker:** v0.2.16.10+1
+**Forensic Marker:** v0.2.16.10+3
 
 ---
 
