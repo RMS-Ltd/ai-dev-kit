@@ -1,0 +1,120 @@
+name: Feature Request
+description: Suggest a new feature or enhancement
+title: "[Feature] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! This will be automatically converted to a Feature Request (FR) document and processed through our Kanban intake workflow.
+        
+        📖 **Need help?** See our [GitHub Submission Guide](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md) for detailed instructions.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence description of the requested feature
+      placeholder: Brief description of the feature request
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of the feature request
+      placeholder: |
+        - What functionality is desired?
+        - What problem does this solve?
+        - What is the use case?
+        - Who would benefit from this feature?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - HIGH
+        - MEDIUM
+        - LOW
+    validations:
+      required: true
+
+  - type: textarea
+    id: functional_requirements
+    attributes:
+      label: Functional Requirements
+      description: What should this feature do?
+      placeholder: |
+        - Requirement 1
+        - Requirement 2
+        - Requirement 3
+
+  - type: textarea
+    id: non_functional_requirements
+    attributes:
+      label: Non-Functional Requirements
+      description: Performance, security, usability, or compatibility considerations
+      placeholder: |
+        - Performance considerations
+        - Security considerations
+        - Usability considerations
+        - Compatibility considerations
+
+  - type: checkboxes
+    id: affected_areas
+    attributes:
+      label: Affected Areas
+      options:
+        - label: Backend/API
+        - label: Frontend/UI
+        - label: Database/Schema
+        - label: Documentation
+        - label: Testing
+        - label: Other (specify in description)
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Estimated Complexity
+      description: Rough estimate of implementation complexity
+      options:
+        - Simple (1-3 days)
+        - Medium (1 week)
+        - Complex (2+ weeks)
+        - Very Complex (1+ month)
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: Describe the primary and additional use cases
+      placeholder: |
+        Primary Use Case:
+        [Describe the main use case]
+
+        Additional Use Cases:
+        - Use case 1
+        - Use case 2
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What conditions must be met for this feature to be considered complete?
+      placeholder: |
+        - Criterion 1
+        - Criterion 2
+        - Criterion 3
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any other context, mockups, or information about the feature request
+      placeholder: Add any other context, mockups, or information about the feature request here
+

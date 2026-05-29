@@ -1,0 +1,145 @@
+# DISABLED (E2:S11:T12, BR-053): GitHub still schedules this workflow on push despite `on: issues`
+# only, causing "No jobs were run" noise. File renamed so the extension is not `.yml`/`.yaml`.
+# Canonical intake YAML for future re-enable: keep in sync before renaming back to fr-br-intake.yml.
+# See docs/project-management/kanban/fr-br/BR-053-github-actions-workflow-push-trigger-bug.md
+name: FR/BR/UXR/FB Intake from GitHub Issues
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  convert-issue-to-document:
+    runs-on: ubuntu-latest
+    if: |
+      contains(github.event.issue.labels.*.name, 'needs-triage') &&
+      (contains(github.event.issue.labels.*.name, 'bug') ||
+       contains(github.event.issue.labels.*.name, 'enhancement') ||
+       contains(github.event.issue.labels.*.name, 'ux-research') ||
+       contains(github.event.issue.labels.*.name, 'feedback'))
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Determine Issue Type
+        id: issue-type
+        run: |
+          LABELS="${{ join(github.event.issue.labels.*.name, ' ') }}"
+          if echo "$LABELS" | grep -q "bug"; then
+            echo "type=bug" >> $GITHUB_OUTPUT
+            echo "template=BR_TEMPLATE.md" >> $GITHUB_OUTPUT
+            echo "prefix=BR" >> $GITHUB_OUTPUT
+          elif echo "$LABELS" | grep -q "enhancement"; then
+            echo "type=feature" >> $GITHUB_OUTPUT
+            echo "template=FR_TEMPLATE.md" >> $GITHUB_OUTPUT
+            echo "prefix=FR" >> $GITHUB_OUTPUT
+          elif echo "$LABELS" | grep -q "ux-research"; then
+            echo "type=uxr" >> $GITHUB_OUTPUT
+            echo "template=UXR_TEMPLATE.md" >> $GITHUB_OUTPUT
+            echo "prefix=UXR" >> $GITHUB_OUTPUT
+          elif echo "$LABELS" | grep -q "feedback"; then
+            echo "type=feedback" >> $GITHUB_OUTPUT
+            echo "template=FB_TEMPLATE.md" >> $GITHUB_OUTPUT
+            echo "prefix=FB" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Get Next Document Number
+        id: doc-number
+        run: |
+          PREFIX="${{ steps.issue-type.outputs.prefix }}"
+          DOC_DIR="docs/project-management/kanban/fr-br"
+          
+          # Find highest existing number
+          MAX_NUM=0
+          for file in "$DOC_DIR"/${PREFIX}-*.md; do
+            if [ -f "$file" ]; then
+              NUM=$(basename "$file" | sed -n "s/${PREFIX}-\([0-9]*\)-.*/\1/p")
+              if [ -n "$NUM" ] && [ "$NUM" -gt "$MAX_NUM" ]; then
+                MAX_NUM=$NUM
+              fi
+            fi
+          done
+          
+          NEXT_NUM=$((MAX_NUM + 1))
+          echo "number=$NEXT_NUM" >> $GITHUB_OUTPUT
+          echo "filename=${PREFIX}-$(printf "%03d" $NEXT_NUM)-$(echo '${{ github.event.issue.title }}' | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-\|-$//g').md" >> $GITHUB_OUTPUT
+
+      - name: Convert Issue to Document
+        run: |
+          TYPE="${{ steps.issue-type.outputs.type }}"
+          TEMPLATE="${{ steps.issue-type.outputs.template }}"
+          PREFIX="${{ steps.issue-type.outputs.prefix }}"
+          DOC_NUM="${{ steps.doc-number.outputs.number }}"
+          FILENAME="${{ steps.doc-number.outputs.filename }}"
+          DOC_PATH="docs/project-management/kanban/fr-br/$FILENAME"
+          
+          # Create document from template
+          TEMPLATE_PATH="packages/frameworks/kanban/templates/$TEMPLATE"
+          
+          # Copy template
+          cp "$TEMPLATE_PATH" "$DOC_PATH"
+          
+          # Replace placeholders with issue data
+          sed -i "s/\[Title\]/${{ github.event.issue.title }}/g" "$DOC_PATH"
+          sed -i "s/\[YYYY-MM-DD\]/$(date +%Y-%m-%d)/g" "$DOC_PATH"
+          sed -i "s/\[YYYY-MM-DDTHH:MM:SSZ\]/$(date -u +%Y-%m-%dT%H:%M:%SZ)/g" "$DOC_PATH"
+          sed -i "s/\[Name/Username\]/${{ github.event.issue.user.login }}/g" "$DOC_PATH"
+          sed -i "s/\[PENDING\/INTAKE\/ACCEPTED\/REJECTED\/DEFERRED\]/PENDING/g" "$DOC_PATH"
+          
+          # Add GitHub Issue link
+          ISSUE_URL="${{ github.event.issue.html_url }}"
+          ISSUE_NUM="${{ github.event.issue.number }}"
+          
+          # Add GitHub Issue reference section if not exists
+          if ! grep -q "GitHub Issue:" "$DOC_PATH"; then
+            echo "" >> "$DOC_PATH"
+            echo "## GitHub Issue" >> "$DOC_PATH"
+            echo "" >> "$DOC_PATH"
+            echo "**Issue Number:** #$ISSUE_NUM" >> "$DOC_PATH"
+            echo "**Issue URL:** [$ISSUE_URL]($ISSUE_URL)" >> "$DOC_PATH"
+            echo "**Created:** ${{ github.event.issue.created_at }}" >> "$DOC_PATH"
+            echo "**Labels:** ${{ join(github.event.issue.labels.*.name, ', ') }}" >> "$DOC_PATH"
+          fi
+          
+          # Extract form data from issue body (if using GitHub Issue Forms)
+          # This is a simplified version - full implementation would parse YAML form data
+          
+          echo "Created document: $DOC_PATH"
+
+      - name: Commit Document
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/project-management/kanban/fr-br/
+          git commit -m "Auto-create ${{ steps.issue-type.outputs.prefix }}-${{ steps.doc-number.outputs.number }} from GitHub Issue #${{ github.event.issue.number }}" || exit 0
+          git push
+
+      - name: Comment on Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const docPath = '${{ steps.doc-number.outputs.filename }}';
+            const prefix = '${{ steps.issue-type.outputs.prefix }}';
+            const docNum = '${{ steps.doc-number.outputs.number }}';
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `✅ This ${prefix === 'BR' ? 'Bug Report' : prefix === 'FR' ? 'Feature Request' : prefix === 'UXR' ? 'UX Research' : 'Feedback'} has been automatically converted to a Kanban document.
+
+            📄 **Document:** \`${docPath}\`
+            🔗 **Path:** \`docs/project-management/kanban/fr-br/${docPath}\`
+
+            This will be processed through our FR/BR intake workflow. A Kanban task will be created and linked back to this issue.
+
+            **Next Steps:**
+            - The document will be reviewed and assigned to an Epic/Story/Task
+            - You'll be notified when a task is created
+            - Status updates will be synced between GitHub and Kanban`
+            });
+

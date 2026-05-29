@@ -1,0 +1,212 @@
+name: Post-Implementation Review (PIR)
+version: 1.0.0
+type: review
+description: Systematic review of completed Epics and Stories with lessons learned capture
+
+config:
+  review_level: both  # epic | story | both
+  auto_trigger: true
+  epic_pir_always: true
+  story_pir_significance_criteria:
+    - has_multiple_tasks: true
+    - has_cross_story_dependencies: true
+    - introduces_new_patterns: true
+    - has_significant_technical_debt: true
+  reviewer_assignment: both  # auto | manual | both
+  require_approval: false
+  create_follow_ups: true
+  knowledge_base_path: docs/Reviews/PIR
+  template_path: docs/documentation/Templates
+
+steps:
+  - id: step-1
+    name: Identify Review Scope
+    type: scope_identification
+    handler: pir.identify_scope
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies: []
+    config:
+      review_level: ${config.review_level}
+      epic_pir_always: ${config.epic_pir_always}
+
+  - id: step-2
+    name: Evaluate Story Significance
+    type: significance_evaluation
+    handler: pir.evaluate_significance
+    required: false
+    enabled: true
+    dependencies:
+      - step-1
+    config:
+      significance_criteria: ${config.story_pir_significance_criteria}
+      review_level: story
+
+  - id: step-3
+    name: Gather Review Materials
+    type: material_gathering
+    handler: pir.gather_materials
+    required: true
+    dependencies:
+      - step-1
+    config:
+      include_documents: true
+      include_code: true
+      include_changelogs: true
+
+  - id: step-4
+    name: Prepare Review Checklist
+    type: checklist_preparation
+    handler: pir.prepare_checklist
+    required: true
+    dependencies:
+      - step-3
+    config:
+      template_path: ${config.template_path}
+
+  - id: step-5
+    name: Review Completed Work Items
+    type: work_review
+    handler: pir.review_work_items
+    required: true
+    dependencies:
+      - step-4
+    config:
+      review_stories: true  # for Epic-level
+      review_tasks: true    # for Story-level
+
+  - id: step-6
+    name: Analyze Goals vs Outcomes
+    type: goals_analysis
+    handler: pir.analyze_goals
+    required: true
+    dependencies:
+      - step-5
+    config:
+      compare_goals: true
+      assess_achievement: true
+
+  - id: step-7
+    name: Review Technical Implementation
+    type: technical_review
+    handler: pir.review_technical
+    required: true
+    dependencies:
+      - step-5
+    config:
+      assess_code_quality: true
+      review_architecture: true
+      check_documentation: true
+      review_testing: true
+
+  - id: step-8
+    name: Assess Documentation Quality
+    type: documentation_assessment
+    handler: pir.assess_documentation
+    required: true
+    dependencies:
+      - step-7
+    config:
+      check_completeness: true
+      assess_quality: true
+      identify_gaps: true
+
+  - id: step-9
+    name: Identify Lessons Learned
+    type: lessons_identification
+    handler: pir.identify_lessons
+    required: true
+    dependencies:
+      - step-6
+      - step-7
+    config:
+      capture_what_went_well: true
+      capture_improvements: true
+      identify_patterns: true
+      identify_anti_patterns: true
+
+  - id: step-10
+    name: Create PIR Report
+    type: report_creation
+    handler: pir.create_report
+    required: true
+    mandatory: true
+    dependencies:
+      - step-9
+    config:
+      template_path: ${config.template_path}
+      output_path: ${config.knowledge_base_path}
+      use_project_versioning: true
+
+  - id: step-11
+    name: Update Knowledge Base
+    type: kb_update
+    handler: pir.update_kb
+    required: true
+    dependencies:
+      - step-10
+    config:
+      kb_path: ${config.knowledge_base_path}
+      create_index: true
+
+  - id: step-12
+    name: Update Kanban Documentation
+    type: kanban_update
+    handler: pir.update_kanban
+    required: true
+    dependencies:
+      - step-10
+    config:
+      update_epic_doc: true
+      update_story_doc: true
+      add_pir_summary: true
+      link_bidirectionally: true
+
+  - id: step-13
+    name: Auto-Create Follow-Up Tasks
+    type: task_creation
+    handler: pir.create_follow_ups
+    required: false
+    enabled: ${config.create_follow_ups}
+    dependencies:
+      - step-10
+    config:
+      create_kanban_tasks: true
+      link_to_pir: true
+      prioritize_actions: true
+
+  - id: step-14
+    name: Link PIR to Work Items
+    type: linking
+    handler: pir.link_work_items
+    required: true
+    dependencies:
+      - step-12
+    config:
+      use_project_versioning: true
+      link_to_epic: true
+      link_to_story: true
+      link_to_tasks: true
+
+  - id: step-15
+    name: Archive Review Materials
+    type: archiving
+    handler: pir.archive_materials
+    required: false
+    dependencies:
+      - step-14
+    config:
+      archive_path: ${config.knowledge_base_path}/Archive
+
+  - id: step-16
+    name: Optional Approval Gate
+    type: approval
+    handler: pir.approval_gate
+    required: false
+    enabled: ${config.require_approval}
+    dependencies:
+      - step-14
+    config:
+      require_approval: ${config.require_approval}
+      approval_workflow: manual

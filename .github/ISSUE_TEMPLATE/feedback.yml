@@ -1,0 +1,238 @@
+name: User Acceptance Testing (UAT) Report
+description: Submit User Acceptance Testing results with empirical evidence (test results, not opinions)
+title: "[UAT] "
+labels: ["feedback", "uat", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for conducting User Acceptance Testing (UAT)! This will be automatically converted to a UAT Report (FB) document and processed through our Kanban intake workflow.
+        
+        📖 **Need help?** See our [GitHub Submission Guide](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md) for detailed instructions.
+        
+        **⚠️ Important:** This template is for **User Acceptance Testing (UAT)** with **empirical evidence** (test results, screenshots, logs). 
+        
+        - ✅ **Use this template for:** Testing to verify components work as advertised/specified, with documented test results
+        - ❌ **Don't use this for:** General opinions, suggestions without testing, or feedback without evidence
+        
+        **For other types of submissions:**
+        - **Bug Reports:** Use the Bug Report template (for specific bugs found during testing)
+        - **Feature Requests:** Use the Feature Request template (for enhancement suggestions)
+        - **UX Research:** Use the UXR template (for formal UX research studies)
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence summary of your feedback
+      placeholder: Brief summary of your feedback
+    validations:
+      required: true
+
+  - type: dropdown
+    id: uat_scope
+    attributes:
+      label: UAT Scope
+      description: What was tested in this UAT?
+      options:
+        - Functional Testing (does it work as specified?)
+        - Integration Testing (does it integrate as expected?)
+        - Adoption Testing (can it be adopted as documented?)
+        - End-to-End Testing (does the full workflow work?)
+        - Other (specify in context)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component_tested
+    attributes:
+      label: Component Tested
+      description: Which component are you providing feedback on?
+      options:
+        - Kanban Framework
+        - Release Workflow (RW)
+        - Versioning Framework
+        - Workflow Management Framework
+        - Documentation
+        - Multiple Components
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version_tested
+    attributes:
+      label: Version Tested
+      description: Version number or commit hash of the component tested
+      placeholder: e.g., 2.0.0 or v0.4.7.3+1
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: UAT Context
+      description: Provide context about your project and UAT setup
+      placeholder: |
+        - Project/Organization name
+        - Project type (new project, migration, etc.)
+        - Team size
+        - Testing period (start date to end date)
+        - UAT scope (what was tested)
+        - Acceptance criteria tested (list specific criteria)
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria_results
+    attributes:
+      label: Acceptance Criteria Results
+      description: For each acceptance criterion, document PASS/FAIL/PARTIAL with evidence
+      placeholder: |
+        **Criterion 1: [Description]**
+        - Status: PASS/FAIL/PARTIAL
+        - Evidence: [Test results, screenshots, logs]
+        
+        **Criterion 2: [Description]**
+        - Status: PASS/FAIL/PARTIAL
+        - Evidence: [Test results, screenshots, logs]
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_worked_well
+    attributes:
+      label: What Worked as Expected
+      description: What acceptance criteria passed UAT? Include evidence (test results, screenshots, logs)
+      placeholder: |
+        - Aspect 1: [Description with evidence]
+        - Aspect 2: [Description with evidence]
+    validations:
+      required: false
+
+  - type: textarea
+    id: issues_found
+    attributes:
+      label: Issues Found (Failures)
+      description: What acceptance criteria failed? Include expected vs actual, evidence, and severity. (If issues are bugs, also file a Bug Report)
+      placeholder: |
+        **Issue 1:** [Criterion that failed]
+        - Expected: [What was expected]
+        - Actual: [What actually happened]
+        - Evidence: [Test results, screenshots, logs]
+        - Severity: CRITICAL/HIGH/MEDIUM/LOW
+    validations:
+      required: false
+
+  - type: textarea
+    id: test_results_summary
+    attributes:
+      label: Test Results Summary
+      description: Summary of test results (total tested, passed, failed, partial)
+      placeholder: |
+        Total Criteria Tested: [Number]
+        Passed: [Number]
+        Failed: [Number]
+        Partial: [Number]
+    validations:
+      required: true
+
+  - type: dropdown
+    id: overall_assessment
+    attributes:
+      label: Overall UAT Assessment
+      description: Based on test results, does it work as advertised/specified?
+      options:
+        - Yes, works as advertised (all criteria passed)
+        - Mostly works (minor issues, non-critical criteria failed)
+        - Partially works (some critical criteria failed)
+        - Does not work as advertised (critical criteria failed)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: uat_recommendation
+    attributes:
+      label: UAT Recommendation
+      description: Based on empirical test results, what is your recommendation?
+      options:
+        - ACCEPT - Ready for use
+        - ACCEPT WITH CAVEATS - Usable but with known issues
+        - REJECT - Does not meet acceptance criteria
+    validations:
+      required: true
+
+  - type: textarea
+    id: specific_findings
+    attributes:
+      label: Specific Test Findings
+      description: Detailed test findings on functionality, usability, performance, documentation, or integration (with evidence)
+      placeholder: |
+        **Functionality:**
+        - Finding 1: [Description with test evidence]
+        
+        **Usability:**
+        - Finding 1: [Description with test evidence]
+        
+        **Documentation:**
+        - Finding 1: [Description with test evidence]
+    validations:
+      required: false
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use Case Details
+      description: How was this component used in your project?
+      placeholder: |
+        - Primary use case
+        - Project type and size
+        - Team size
+        - Duration of use
+    validations:
+      required: false
+
+  - type: textarea
+    id: supporting_evidence
+    attributes:
+      label: Supporting Evidence
+      description: Links to test results, screenshots, reports, or other evidence
+      placeholder: |
+        - Link to test results
+        - Link to screenshots
+        - Link to test reports
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feedback?
+      options:
+        - HIGH
+        - MEDIUM
+        - LOW
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendations
+    attributes:
+      label: Recommendations Based on UAT Results
+      description: What actions should be taken based on these test results? (Evidence-based recommendations only)
+      placeholder: |
+        - Recommendation 1: [Based on specific test failure/success]
+        - Recommendation 2: [Based on specific test failure/success]
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any additional information that would be helpful
+      placeholder: Additional context, notes, or related information
+    validations:
+      required: false
+

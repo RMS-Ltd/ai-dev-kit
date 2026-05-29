@@ -1,0 +1,3 @@
+version: 1.0.0
+default_backend: git-submodule
+frameworks: {}

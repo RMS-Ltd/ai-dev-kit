@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-05-20 10:04:33 UTC",
+  "dry_run": false,
+  "boards": {
+    "docs/project-management/kanban/kboard.md": {
+      "rows_changed": 23
+    },
+    "docs/project-management/kanban/fbuboard.md": {
+      "rows_changed": 73
+    }
+  }
+}

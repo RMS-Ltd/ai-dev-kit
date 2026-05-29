@@ -1,0 +1,231 @@
+{
+  "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-fr092-wave8-signoff.json",
+  "invocation_context": "fr092_wave8_signoff",
+  "overall_passed": false,
+  "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
+  "release_scope": {
+    "epic": 2,
+    "story": 15,
+    "task": 7,
+    "task_id": "E2:S15:T7",
+    "version_string": "0.2.15.7+1"
+  },
+  "summary": {
+    "blocking_failures": [
+      "Gate 5: Stage-set completeness (BR-070)"
+    ],
+    "gates_failed": 1,
+    "gates_passed": 6,
+    "gates_total": 7,
+    "gates_waived": 0
+  },
+  "timestamp_utc": "2026-04-27 15:56 UTC",
+  "verdicts": [
+    {
+      "evidence": {
+        ".cursorrules": "OK",
+        "ipw_governance": "MISSING (info)",
+        "packages/frameworks/kanban/policies/kanban-governance-policy.md": "OK",
+        "packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md": "OK"
+      },
+      "findings": [
+        "No IPW governance doc found that references FR-091/FR-084/FR-092. Recommend cross-linking from IPW guide for cross-doc consistency."
+      ],
+      "gate_id": 1,
+      "is_blocking_failure": false,
+      "name": "Governance source-of-truth alignment",
+      "passed": true,
+      "severity": "block",
+      "summary": "All governance artefacts (.cursorrules, RW guide, kanban policy) codify FR-092 contract.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "BR-042": "OK (closed as duplicate)",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md": "OK",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md": "OK",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md": "OK",
+        "docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md": "OK",
+        "docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md": "OK",
+        "docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md": "OK"
+      },
+      "findings": [],
+      "gate_id": 2,
+      "is_blocking_failure": false,
+      "name": "Predecessor closure & supersede-chain consistency",
+      "passed": true,
+      "severity": "block",
+      "summary": "Supersede chain executed: FR-091/FR-090/FR-084 banner-superseded, T02/T05/T06 redirected, BR-069/BR-070/UXR-009 gated.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "docs/project-management/kanban/fbuboard.md": "byte-identical",
+        "docs/project-management/kanban/fr-br-uxr-board.md": "byte-identical",
+        "docs/project-management/kanban/kanban-board.md": "byte-identical",
+        "docs/project-management/kanban/kboard.md": "byte-identical"
+      },
+      "findings": [],
+      "gate_id": 3,
+      "is_blocking_failure": false,
+      "name": "Contract enforcement parity (RW <-> UKW canonical pipeline)",
+      "passed": true,
+      "severity": "block",
+      "summary": "RW and UKW canonical row transform pipelines produce byte-identical output across all active boards (FR-090 shared engine verified).",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "stamp_evidence_aggregate": {
+          "stamps_appended_with_evidence": 0,
+          "stamps_preserved_existing": 109,
+          "stamps_skipped_no_evidence": 0
+        }
+      },
+      "findings": [],
+      "gate_id": 4,
+      "is_blocking_failure": false,
+      "name": "Corpus canonical state",
+      "passed": true,
+      "severity": "block",
+      "summary": "Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-fr092-wave8-signoff.json",
+        "paths_checked": 13,
+        "release_scope": {
+          "epic": 2,
+          "story": 15,
+          "task": 7,
+          "task_id": "E2:S15:T7",
+          "version_string": "0.2.15.7+1"
+        },
+        "violations": 12
+      },
+      "findings": [
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md` :: untracked \u2014 Step 7 produced this file but git considers it untracked. Stage with `git add` (release artefacts are required to be tracked).",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-042-ukw-agent-board-cleanup-failure.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md` :: untracked \u2014 Step 7 produced this file but git considers it untracked. Stage with `git add` (release artefacts are required to be tracked)."
+      ],
+      "gate_id": 5,
+      "is_blocking_failure": true,
+      "name": "Stage-set completeness (BR-070)",
+      "passed": false,
+      "severity": "block",
+      "summary": "BR-070 violation: 12 Step-7 path(s) are modified-unstaged, untracked, or missing.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "evidence_mode": "non_substantive",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-fr092-wave8-signoff.json",
+        "stamps_appended_with_evidence": 0,
+        "stamps_preserved_existing": 109,
+        "stamps_skipped_no_evidence": 0
+      },
+      "findings": [],
+      "gate_id": 6,
+      "is_blocking_failure": false,
+      "name": "Forensic stamp evidence (UXR-009)",
+      "passed": true,
+      "severity": "block",
+      "summary": "Forensic stamp evidence consistent: appended=0, skipped=0, preserved=109 (mode='non_substantive').",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "fbu_doc": {
+          "notes_count": 0,
+          "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-042-ukw-agent-board-cleanup-failure.md"
+          ],
+          "touched": true
+        },
+        "fbuboard": {
+          "notes_count": 0,
+          "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+          ],
+          "touched": true
+        },
+        "kboard": {
+          "notes_count": 0,
+          "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+          ],
+          "touched": true
+        },
+        "release_scope": {
+          "epic": 2,
+          "story": 15,
+          "task": 7,
+          "task_id": "E2:S15:T7",
+          "version_string": "0.2.15.7+1"
+        },
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-fr092-wave8-signoff.json",
+        "task_doc": {
+          "notes_count": 0,
+          "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md"
+          ],
+          "touched": true
+        }
+      },
+      "findings": [],
+      "gate_id": 7,
+      "is_blocking_failure": false,
+      "name": "Four-surface parity (FR-084)",
+      "passed": true,
+      "severity": "block",
+      "summary": "Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.",
+      "waive_reason": null,
+      "waived": false
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+## [0.2.1.20+1] - 15-05-26
+
+E2:S01:T20 — **BR-073 SemVer task-touch collision retrospective fix**: Patched `semver-registry.yaml` to add retroactive mappings for `0.24.1.6+1` → `0.4.778+1` (first claimant) and `0.2.1.18+1` → `0.4.779+1` (corrected). Incremented `task_touch_counter` from 777 to 779. Filed BR-073 with root cause (`finalize=True` bypassed during manual tag creation), impact analysis, reproduction steps, and 6 ACs (AC1–AC3 closed; AC4–AC6 deferred for follow-up). Created and completed E2:S01:T20 task document with forensic marker. Updated README version line to `v0.4.780+1`. Updated `kanban-completed.md` and `kboard.md` with T20 archive entry.

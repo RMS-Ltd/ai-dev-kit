@@ -1,0 +1,115 @@
+name: User Experience Research (UXR)
+description: Submit user experience research findings or usability reports
+title: "[UXR] "
+labels: ["ux-research", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting UX research findings! This will be automatically converted to a User Experience Research (UXR) document and processed through our Kanban intake workflow.
+        
+        📖 **Need help?** See our [GitHub Submission Guide](https://github.com/earlution/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md) for detailed instructions.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence summary of the UX research findings
+      placeholder: Brief summary of the research findings
+    validations:
+      required: true
+
+  - type: textarea
+    id: research_objective
+    attributes:
+      label: Research Objective
+      description: What was the goal of this research?
+      placeholder: Describe the research objective or question
+    validations:
+      required: true
+
+  - type: textarea
+    id: methodology
+    attributes:
+      label: Methodology
+      description: How was the research conducted?
+      placeholder: |
+        - Research method (e.g., user interviews, usability testing, surveys)
+        - Number of participants
+        - Duration of study
+        - Tools/platforms used
+
+  - type: textarea
+    id: key_findings
+    attributes:
+      label: Key Findings
+      description: Main findings from the research
+      placeholder: |
+        - Finding 1
+        - Finding 2
+        - Finding 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_pain_points
+    attributes:
+      label: User Pain Points
+      description: What problems or frustrations did users experience?
+      placeholder: List identified pain points
+
+  - type: textarea
+    id: recommendations
+    attributes:
+      label: Recommendations
+      description: What actions should be taken based on these findings?
+      placeholder: |
+        - Recommendation 1
+        - Recommendation 2
+        - Recommendation 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected_areas
+    attributes:
+      label: Affected Areas
+      description: Which parts of the product/experience are affected?
+      placeholder: |
+        - UI Component 1
+        - User Flow 2
+        - Feature 3
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent are these findings?
+      options:
+        - HIGH
+        - MEDIUM
+        - LOW
+    validations:
+      required: true
+
+  - type: textarea
+    id: supporting_evidence
+    attributes:
+      label: Supporting Evidence
+      description: Links to recordings, transcripts, notes, or other supporting materials
+      placeholder: Links to research artifacts, recordings, transcripts, etc.
+
+  - type: textarea
+    id: next_steps
+    attributes:
+      label: Next Steps
+      description: What should happen next?
+      placeholder: Recommended next steps or follow-up research
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any other context or information about the research
+      placeholder: Add any other context about the research here
+

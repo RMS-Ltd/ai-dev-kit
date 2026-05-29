@@ -1,0 +1,163 @@
+---
+# IDE Command Whitelist Configuration
+# Pattern-based command approval to reduce friction
+# Project: ai-dev-kit
+# Created: 2026-03-07
+# Version: 1.0
+
+description: |
+  This configuration defines pattern-based whitelist entries for IDE command approval.
+  Instead of storing concrete commands, these patterns allow variations of common commands
+  to be approved without repeated user prompts.
+
+# Pattern-based whitelist entries
+patterns:
+  # Python Scripts - Framework validation and execution
+  python_validation_scripts:
+    pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z_]+\.py"(\s+--\w+)?(\s+--strict)?$'
+    description: "Python validation scripts from framework package"
+    examples:
+      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict'
+      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py"'
+      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py"'
+
+  python_framework_scripts:
+    pattern: '^python "packages/frameworks/workflow mgt/scripts/[a-z_]+/[a-z_]+\.py"(\s+.*)?$'
+    description: "Python framework management scripts"
+    examples:
+      - 'python "packages/frameworks/workflow mgt/scripts/create_github_release.py" --summary "Test" --epic 6 --story 7 --task 5'
+      - 'python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py"'
+
+  # Git Operations - Core version control
+  git_basic_operations:
+    pattern: '^git (add|status|commit|push|tag|checkout|branch|log|diff|restore|show|reset|merge|pull|fetch)(\s+-[a-zA-Z])?(\s+.*)?$'
+    description: "Standard git operations"
+    examples:
+      - 'git add -A'
+      - 'git status'
+      - 'git commit -m "Commit message"'
+      - 'git push origin main'
+      - 'git tag v1.0.0'
+      - 'git checkout main'
+
+  # File Search and Discovery
+  find_operations:
+    pattern: '^find /Users/rms/Documents/projects/ai-dev-kit(\s+[-][a-zA-Z])?\s+.*$'
+    description: "File search operations in project directory"
+    examples:
+      - 'find /Users/rms/Documents/projects/ai-dev-kit -name "*.py"'
+      - 'find /Users/rms/Documents/projects/ai-dev-kit -name "*validate*" -type f'
+      - 'find /Users/rms/Documents/projects/ai-dev-kit -maxdepth 2 -name "*.md"'
+
+  # Built-in File Operations (IDE tools)
+  file_read_operations:
+    pattern: '^(read_file|view_file|view_content_chunk)(\s+.*)?$'
+    description: "File reading and viewing operations"
+    examples:
+      - 'read_file --file_path /path/to/file.md'
+      - 'view_file /path/to/file.py'
+      - 'view_content_chunk --document_id abc123 --position 1'
+
+  file_edit_operations:
+    pattern: '^(edit|multi_edit|edit_notebook|write_to_file)(\s+.*)?$'
+    description: "File editing and writing operations"
+    examples:
+      - 'edit --file_path /path/to/file.md --old_string "old" --new_string "new"'
+      - 'multi_edit --file_path /path/to/file.md --edits [...]'
+      - 'write_to_file --target_file /path/to/new.md --code_content "content"'
+
+  directory_operations:
+    pattern: '^(list_dir|find_by_name)(\s+.*)?$'
+    description: "Directory and file discovery operations"
+    examples:
+      - 'list_dir --directory_path /path/to/dir'
+      - 'find_by_name --search_directory /path/to/dir --pattern "*.py"'
+
+  # Search Operations
+  search_operations:
+    pattern: '^grep(\s+[-][a-zA-Z])?\s+.*$'
+    description: "Text search operations"
+    examples:
+      - 'grep --pattern "TODO" --path /path/to/dir'
+      - 'grep -i "error" --path /path/to/file --output_mode content'
+
+  # Terminal/Command Operations
+  terminal_operations:
+    pattern: '^bash(\s+[-][a-zA-Z])?\s+.*$'
+    description: "Terminal command execution"
+    examples:
+      - 'bash --command "echo test"'
+      - 'bash --command "ls -la" --cwd /path/to/dir'
+
+  # Memory and Todo Operations
+  memory_operations:
+    pattern: '^(create_memory|todo_list)(\s+.*)?$'
+    description: "Memory and task management operations"
+    examples:
+      - 'create_memory --content "Important note" --tags ["tag1", "tag2"]'
+      - 'todo_list --todos [{"content": "Task 1", "status": "pending"}]'
+
+# Security Contexts
+contexts:
+  high_security:
+    description: "Operations that modify system state or sensitive data"
+    patterns:
+      - git_basic_operations
+      - file_edit_operations
+      - terminal_operations
+    
+  medium_security:
+    description: "Operations that read data or perform searches"
+    patterns:
+      - python_validation_scripts
+      - python_framework_scripts
+      - find_operations
+      - file_read_operations
+      - directory_operations
+      - search_operations
+    
+  low_security:
+    description: "Operations that are read-only or internal"
+    patterns:
+      - memory_operations
+
+# Configuration Settings
+settings:
+  # Approval behavior
+  auto_approve_low_security: true
+  auto_approve_medium_security: false
+  auto_approve_high_security: false
+  
+  # Pattern matching
+  case_sensitive: false
+  regex_engine: "PCRE"  # Perl Compatible Regular Expressions
+  
+  # Logging and monitoring
+  log_pattern_matches: true
+  log_approval_decisions: true
+  
+  # User interface
+  show_pattern_reason: true
+  allow_pattern_override: true
+
+# Maintenance
+maintenance:
+  # Review patterns periodically
+  review_frequency: "monthly"
+  
+  # Pattern performance monitoring
+  monitor_pattern_usage: true
+  
+  # Update recommendations
+  suggest_pattern_improvements: true
+
+# Documentation
+documentation:
+  # Pattern examples for team members
+  provide_examples: true
+  
+  # Pattern explanation
+  explain_pattern_logic: true
+  
+  # Troubleshooting guide
+  include_troubleshooting: true

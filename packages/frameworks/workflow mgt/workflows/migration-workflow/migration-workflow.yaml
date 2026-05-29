@@ -1,0 +1,229 @@
+name: Migration Workflow
+version: 1.0.0
+type: migration
+description: Systematic migration workflow for code, data, or infrastructure with validation and rollback support
+
+config:
+  migration_branch_prefix: migration/
+  backup_enabled: true
+  rollback_enabled: true
+  test_command: pytest
+  validation_command: custom
+
+steps:
+  - id: step-1
+    name: Analyze Source and Target States
+    type: analysis
+    handler: migration.analyze_states
+    required: true
+    dependencies: []
+    config:
+      source_paths: []
+      target_paths: []
+      analysis_depth: full
+      include_dependencies: true
+
+  - id: step-2
+    name: Plan Migration Strategy
+    type: planning
+    handler: migration.plan_strategy
+    required: true
+    dependencies:
+      - step-1
+    config:
+      migration_type: code
+      create_plan_doc: true
+      create_rollback_plan: true
+      incremental: true
+
+  - id: step-3
+    name: Create Backup
+    type: backup
+    handler: migration.create_backup
+    required: true
+    dependencies:
+      - step-2
+    config:
+      backup_enabled: ${config.backup_enabled}
+      backup_location: backups/
+      backup_format: timestamp
+
+  - id: step-4
+    name: Create Migration Branch
+    type: git_branch
+    handler: git.create_branch
+    required: true
+    dependencies:
+      - step-3
+    config:
+      branch_prefix: ${config.migration_branch_prefix}
+      branch_name_template: "${migration_type}-${target_component}"
+
+  - id: step-5
+    name: Execute Migration Steps
+    type: execution
+    handler: migration.execute
+    required: true
+    dependencies:
+      - step-4
+    config:
+      migration_steps: []
+      incremental: true
+      dry_run: false
+
+  - id: step-6
+    name: Validate Migration
+    type: validation
+    handler: migration.validate
+    required: true
+    dependencies:
+      - step-5
+    config:
+      validation_command: ${config.validation_command}
+      strict_mode: true
+      check_completeness: true
+
+  - id: step-7
+    name: Run Test Suite
+    type: validation
+    handler: migration.run_tests
+    required: true
+    dependencies:
+      - step-5
+    config:
+      test_command: ${config.test_command}
+      coverage_threshold: 80
+      fail_on_regression: true
+
+  - id: step-8
+    name: Verify Functionality
+    type: verification
+    handler: migration.verify_functionality
+    required: true
+    dependencies:
+      - step-6
+      - step-7
+    config:
+      verify_core_features: true
+      verify_performance: false
+      verify_integration: true
+
+  - id: step-9
+    name: Update Documentation
+    type: documentation
+    handler: migration.update_docs
+    required: true
+    dependencies:
+      - step-5
+    config:
+      update_readme: true
+      update_api_docs: true
+      update_migration_guide: true
+      update_changelog: false
+
+  - id: step-10
+    name: Stage Changes
+    type: git_stage
+    handler: git.stage_all
+    required: true
+    dependencies:
+      - step-5
+      - step-6
+      - step-7
+      - step-8
+      - step-9
+    config:
+      paths:
+        - "*"
+
+  - id: step-11
+    name: Commit Changes
+    type: git_commit
+    handler: git.commit
+    required: true
+    dependencies:
+      - step-10
+    config:
+      message_template: "Migration: {summary}\n\n{detailed_changes}"
+
+  - id: step-12
+    name: Push Branch
+    type: git_push
+    handler: git.push
+    required: false
+    enabled: true
+    dependencies:
+      - step-11
+    config:
+      remote: origin
+      push_tags: false
+
+  - id: step-13
+    name: Document Migration Results
+    type: documentation
+    handler: migration.document_results
+    required: false
+    enabled: true
+    dependencies:
+      - step-12
+    config:
+      create_summary: true
+      document_improvements: true
+      document_metrics: true
+      document_rollback_procedure: true
+
+parameters:
+  - name: migration_type
+    type: enum
+    required: true
+    label: Migration Type
+    description: Type of migration to perform
+    options:
+      - value: code
+        label: Code (migrate code between frameworks/libraries)
+      - value: database
+        label: Database (migrate database schema/data)
+      - value: dependency
+        label: Dependency (upgrade dependencies)
+      - value: infrastructure
+        label: Infrastructure (migrate infrastructure)
+
+  - name: target_component
+    type: string
+    required: true
+    label: Target Component
+    description: Component or module to migrate
+
+  - name: summary
+    type: string
+    required: true
+    label: Migration Summary
+    description: Brief description of the migration
+
+  - name: detailed_changes
+    type: textarea
+    required: false
+    label: Detailed Changes
+    description: Optional detailed list of migration changes
+
+  - name: create_backup
+    type: boolean
+    required: false
+    default: true
+    label: Create Backup
+    description: Create backup before migration
+
+  - name: incremental
+    type: boolean
+    required: false
+    default: true
+    label: Incremental Migration
+    description: Perform migration incrementally
+
+  - name: rollback_enabled
+    type: boolean
+    required: false
+    default: true
+    label: Enable Rollback
+    description: Enable rollback capability
+

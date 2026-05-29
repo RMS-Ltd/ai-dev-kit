@@ -1,0 +1,343 @@
+name: Release Workflow
+version: 2.3.0
+type: release
+description: Automated release workflow with PDCA integration (version bump, changelog, commit, tag, push, verification, action, PIR trigger). Includes Step 9: IDE problem checking and Step 17: Housekeeping.
+
+config:
+  version_file: src/confidentia/version.py
+  changelog_dir: docs/changelog-and-release-notes/changelog-archive
+  main_changelog: CHANGELOG.md
+
+steps:
+  - id: step-1
+    name: Branch Safety Check
+    type: branch_safety_check
+    handler: release.branch_safety_check
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies: []
+    config:
+      use_validator: true
+      strict_mode: true
+      scripts_path: scripts/validation
+
+  - id: step-2
+    name: Bump Version
+    type: version_bump
+    handler: release.version_bump
+    required: true
+    dependencies:
+      - step-1
+    config:
+      increment_type: patch
+      version_file: ${config.version_file}
+
+  - id: step-2.5
+    name: Package Version Workflow (PVW)
+    type: package_version
+    handler: package.version_bump
+    required: false
+    enabled: true
+    dependencies:
+      - step-2
+    config:
+      packages_dir: packages/frameworks
+      auto_detect_changes: true
+      validation_scripts: scripts/validation/package
+
+  - id: step-3
+    name: Create Detailed Changelog
+    type: changelog_create
+    handler: release.changelog_create
+    required: true
+    dependencies:
+      - step-2
+    config:
+      changelog_dir: ${config.changelog_dir}
+      format: full_timestamp
+
+  - id: step-4
+    name: Update Main Changelog
+    type: changelog_update
+    handler: release.changelog_update
+    required: true
+    dependencies:
+      - step-3
+    config:
+      main_changelog: ${config.main_changelog}
+      date_format: DD-MM-YY
+
+  - id: step-5
+    name: Update README
+    type: readme_update
+    handler: release.readme_update
+    required: true
+    enabled: true
+    dependencies:
+      - step-2
+    config:
+      readme_file: README.md
+      update_version_text: true  # MANDATORY: Update project version in README
+      update_badge: true         # Optional: Update version badge if present
+      update_latest_release: true # Optional: Update latest release callout if present
+
+  - id: step-6
+    name: Update BR/FR Docs
+    type: br_fr_update
+    handler: release.br_fr_update
+    required: false
+    enabled: true
+    dependencies:
+      - step-2
+    config:
+      br_fr_dir: docs/project-management/kanban/fr-br
+
+  - id: step-7
+    name: Auto-update Kanban Docs
+    type: kanban_update
+    handler: framework.kanban_update
+    required: true
+    mandatory: true
+    blocking: true
+    automatic: true
+    dependencies:
+      - step-2
+    config:
+      kanban_update_script: packages/frameworks/workflow mgt/scripts/update_kanban_docs.py
+      normalize_board_timestamps_script: packages/frameworks/workflow mgt/scripts/kanban/normalize_board_row_timestamps.py
+      epic_doc_pattern: docs/project-management/epics/overview/Epic {epic}/Epic-{epic}.md
+      kanban_board: docs/project-management/kanban/kboard.md
+      fr_br_uxr_board: docs/project-management/kanban/fbuboard.md
+      kanban_structure: docs/project-management/kanban/kanban-structure.md
+      use_rw_config: true
+
+  - id: step-8
+    name: Stage Files
+    type: git_stage
+    handler: git.stage_all
+    required: true
+    dependencies:
+      - step-2
+      - step-3
+      - step-4
+      - step-5
+      - step-6
+      - step-7
+    config:
+      paths:
+        - "*"
+
+  - id: step-9
+    name: Check for and Address IDE-Flagged Problems
+    type: ide_linter_check
+    handler: ide.lint_check
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-8
+    config:
+      check_order: [errors, warnings, infos]
+      blocking: true  # Errors block workflow, warnings/infos are non-blocking but should be addressed
+      use_read_lints: true  # Use IDE diagnostics API (e.g., read_lints tool in Cursor)
+
+  - id: step-10
+    name: Run Validators
+    type: validation
+    handler: confidentia.run_validators
+    required: true
+    dependencies:
+      - step-9
+    config:
+      validators:
+        - scripts/validation/validate_branch_context.py
+        - scripts/validation/validate_changelog_format.py
+        - scripts/validation/validate_version_bump.py
+        - scripts/changelog/check_changelog_size.py
+      strict_mode: true
+
+  - id: step-10.5
+    name: Changelog Management Workflow (CMW)
+    type: changelog_management
+    handler: changelog.cmw
+    required: false
+    enabled: true
+    blocking: false
+    dependencies:
+      - step-10
+    config:
+      cmw_script: packages/frameworks/workflow mgt/scripts/changelog/cmw.py
+      trigger_condition: size_threshold_exceeded
+      auto_trigger: true
+      dry_run: false
+      use_rw_config: true
+
+  - id: step-11
+    name: Commit Changes
+    type: git_commit
+    handler: git.commit
+    required: true
+    dependencies:
+      - step-10
+      - step-10.5
+    config:
+      message_template: "{version} - {summary}"
+
+  - id: step-11.5
+    name: Post-Commit Stage Completeness Verification
+    type: validation
+    handler: validation.post_commit
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-11
+    config:
+      validator_script: packages/frameworks/workflow mgt/scripts/validate_rw_step7_post_commit.py
+      arguments: --auto
+      strict_mode: true
+
+  - id: step-12
+    name: Create Git Tag
+    type: git_tag
+    handler: git.create_tag
+    required: false
+    enabled: true
+    dependencies:
+      - step-11
+      - step-11.5
+    config:
+      tag_template: v{semver_version}
+      internal_tag_template: v{internal_version}
+      message_template: "Release {tag}: {summary}"
+      annotated: true
+      detect_semver_strategy: true
+      create_internal_tag: false
+      semver_mapping_strategy: auto
+
+  - id: step-13
+    name: Push to Remote
+    type: git_push
+    handler: git.push
+    required: false
+    enabled: true
+    dependencies:
+      - step-11
+      - step-11.5
+      - step-12
+    config:
+      push_tags: true
+      remote: origin
+
+  - id: step-14
+    name: Post-Commit Verification & Reflection
+    type: verification_reflection
+    handler: release.verification_reflection
+    required: false
+    enabled: true
+    dependencies:
+      - step-13
+    config:
+      verification_prompt: true
+      reflection_questions: true
+      changelog_update: true
+
+  - id: step-15
+    name: Act on Verification Results
+    type: act_on_results
+    handler: release.act_on_results
+    required: false
+    enabled: true
+    dependencies:
+      - step-14
+    config:
+      changelog_update: true
+      follow_up_tasks: true
+      process_improvement: true
+
+  - id: step-16
+    name: Check for PIR Trigger
+    type: pir_trigger_check
+    handler: pir.check_trigger
+    required: false
+    enabled: true
+    blocking: false
+    dependencies:
+      - step-13
+    config:
+      epic_pir_always: true
+      story_pir_significance_criteria:
+        - has_multiple_tasks: true
+        - has_cross_story_dependencies: true
+        - introduces_new_patterns: true
+        - has_significant_technical_debt: true
+      pir_workflow_path: packages/frameworks/workflow mgt/workflows/post-implementation-review/pir-workflow.yaml
+      kanban_root: docs/project-management/kanban
+      epic_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md
+      story_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md
+
+  - id: step-17
+    name: Housekeeping
+    type: housekeeping
+    handler: ide.housekeeping
+    required: false
+    enabled: true
+    blocking: false
+    dependencies:
+      - step-16
+    config:
+      clear_ide_todos: true
+      cleanup_temp_files: false
+
+parameters:
+  - name: summary
+    type: string
+    required: true
+    label: Release Summary
+    description: Brief description of the release
+
+  - name: change_type
+    type: enum
+    required: true
+    default: tooling
+    label: Release Type
+    description: Type of release
+    options:
+      - value: feature
+        label: Feature 🚀
+      - value: fix
+        label: Fix 🐞
+      - value: infrastructure
+        label: Infrastructure 🔧
+      - value: security
+        label: Security 🔒
+      - value: cleanup
+        label: Cleanup 🧹
+      - value: refactor
+        label: Refactor 🔄
+      - value: documentation
+        label: Documentation 📚
+      - value: tooling
+        label: Tooling 🧰
+      - value: maintenance
+        label: Maintenance 🚧
+
+  - name: detailed_changes
+    type: textarea
+    required: false
+    label: Detailed Changes
+    description: Optional detailed list of changes
+
+  - name: skip_readme
+    type: boolean
+    required: false
+    default: false
+    label: Skip README Update
+
+  - name: kb_docs_ok
+    type: boolean
+    required: true
+    default: false
+    label: KB Documentation Updated
+    description: Confirm all required KB documentation is updated

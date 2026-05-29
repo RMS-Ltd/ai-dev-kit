@@ -1,0 +1,12 @@
+{
+  "server": "plugin-notion-workspace-notion",
+  "toolName": "notion-update-page",
+  "arguments": {
+    "data": {
+      "page_id": "30db6f8962c1810989a9f1f171d330e6",
+      "command": "replace_content",
+      "new_str": "---\nlifecycle: evergreen\nttl_days: null\ncreated_at: 2025-12-04T12:01:54Z\nexpires_at: null\nhousekeeping_policy: keep\n---\n\n# Rituals\n\nThis directory contains **rituals** and **operational policies** for the `ai-dev-kit` repository.\n\n## Structure\n\n- `policy/` – Governance policies (e.g., Kanban governance)\n\n## Key Documents\n\n- **Kanban Governance Policy:** `policy/kanban-governance-policy.md`\n\n",
+      "allow_deleting_content": true
+    }
+  }
+}

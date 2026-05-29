@@ -1,0 +1,154 @@
+name: icw-config
+version: 1.0.0
+description: Configuration for Implementation Cycle Workflow (ICW)
+
+# Task identifier validation settings
+task_identifier:
+  required: true
+  supported_formats:
+    - "E5:S01:T47"  # Full Epic:Story:Task format
+    - "E5S01T47"    # Compact format
+    - "T47"         # Task-only format (requires context)
+  validation:
+    strict_mode: true
+    check_task_exists: true
+    provide_helpful_errors: true
+
+# Paths and directories
+paths:
+  templates_dir: ../../../templates/icw
+  output_dir: ../../../../docs/implementation-cycles
+  scripts_dir: ../../../scripts/icw
+  kanban_root: ../../../../docs/project-management/kanban
+  workflow_registry: ../workflow-registry.yaml
+
+# Template configurations
+templates:
+  specification:
+    file: specification-template.md
+    required_sections:
+      - problem_statement
+      - objectives
+      - functional_requirements
+      - non_functional_requirements
+      - constraints
+      - acceptance_criteria
+    validation_rules:
+      - problem_statement_must_be_clear
+      - objectives_must_be_measurable
+      - acceptance_criteria_must_be_testable
+
+  test_design:
+    file: test-design-template.md
+    required_sections:
+      - test_overview
+      - unit_tests
+      - integration_tests
+      - acceptance_tests
+      - test_data
+      - test_environment
+    validation_rules:
+      - test_coverage_must_be_complete
+      - test_scenarios_must_be_realistic
+      - test_data_must_be_defined
+
+  implementation_plan:
+    file: implementation-plan-template.md
+    required_sections:
+      - architecture_overview
+      - development_tasks
+      - dependencies
+      - resource_requirements
+      - timeline
+      - risk_assessment
+    validation_rules:
+      - tasks_must_be_breakdown
+      - dependencies_must_be_identified
+      - timeline_must_be_realistic
+
+# Agent guidance configuration
+agent_guidance:
+  specification_phase:
+    elicitation_questions:
+      - "What problem are we trying to solve?"
+      - "What are the specific objectives?"
+      - "Who are the users/stakeholders?"
+      - "What are the success criteria?"
+      - "What constraints or limitations exist?"
+    quality_checks:
+      - problem_statement_clarity
+      - objectives_specificity
+      - completeness_of_requirements
+
+  test_design_phase:
+    guidance_prompts:
+      - "Review the specification for testable requirements"
+      - "Consider edge cases and error conditions"
+      - "Plan for different test types (unit, integration, acceptance)"
+      - "Define test data and environment needs"
+    quality_checks:
+      - test_coverage_completeness
+      - test_scenario_realism
+      - test_adequacy
+
+  implementation_planning_phase:
+    guidance_prompts:
+      - "Break down the work into manageable tasks"
+      - "Identify dependencies between tasks"
+      - "Estimate resources and timeline"
+      - "Consider risks and mitigation strategies"
+    quality_checks:
+      - task_breakdown_completeness
+      - dependency_analysis
+      - resource_planning_adequacy
+
+# Validation rules
+validation:
+  strict_mode: true
+  required_fields:
+    - implementation_title
+    - problem_context
+    - scope
+  optional_fields:
+    - stakeholders
+    - constraints
+    - existing_documentation
+
+# Integration settings
+integration:
+  kanban:
+    auto_create_task: true
+    update_status: true
+    link_artifacts: true
+    task_priority_mapping:
+      critical: "Must Have"
+      high: "Should Have"
+      medium: "Could Have"
+      low: "Won't Have"
+
+  version_control:
+    auto_commit: false
+    create_branch: false
+    tag_releases: false
+
+# Output configuration
+output:
+  format: markdown
+  create_summary: true
+  create_index: true
+  cross_reference_phases: true
+  archive_completed: true
+
+# Quality assurance
+quality_assurance:
+  completeness_checks: true
+  consistency_checks: true
+  validation_rules: true
+  peer_review_required: false
+
+# Performance settings
+performance:
+  max_cycle_time_minutes: 60
+  timeout_per_phase_minutes: 20
+  auto_save_progress: true
+  recovery_enabled: true

@@ -1,0 +1,159 @@
+# Changelog: v0.8.1.3+1
+
+**Release Date:** 2026-01-05 22:50:00 UTC  
+**Epic:** 8 - Tooling & Automation  
+**Story:** 1 - Code Generators  
+**Task:** 3 - Establish generator patterns  
+**Version:** v0.8.1.3+1
+
+---
+
+## Summary
+
+Established a comprehensive generator patterns library documenting reusable patterns extracted from the Generator Framework implementations. The pattern library includes 7 pattern categories with 20+ documented patterns, pattern examples, and best practices for creating new generators.
+
+---
+
+## Added
+
+### Pattern Library
+
+- **Patterns Documentation** (`packages/frameworks/tooling & automation/generators/PATTERNS.md`)
+  - Comprehensive pattern library with 7 pattern categories
+  - 20+ documented patterns with code examples
+  - Pattern combinations and best practices
+  - Usage guidance for each pattern
+
+### Pattern Categories
+
+1. **Base Patterns**
+   - Pattern 1.1: Simple Generator
+   - Pattern 1.2: Template-Based Generator
+
+2. **Template Patterns**
+   - Pattern 2.1: Simple Variable Substitution
+   - Pattern 2.2: Conditional Blocks
+   - Pattern 2.3: Loop Blocks
+
+3. **Validation Patterns**
+   - Pattern 3.1: Required Parameter Validation
+   - Pattern 3.2: Type/Value Validation
+   - Pattern 3.3: Conditional Required Parameters
+
+4. **Context Patterns**
+   - Pattern 4.1: Simple Context Building
+   - Pattern 4.2: Computed Context Values
+   - Pattern 4.3: Context with Defaults
+
+5. **Path Patterns**
+   - Pattern 5.1: Simple Path Generation
+   - Pattern 5.2: Hierarchical Path Generation
+   - Pattern 5.3: Path with Custom Slugs
+
+6. **Parameter Patterns**
+   - Pattern 6.1: Required Parameters Declaration
+   - Pattern 6.2: Optional Parameters with Defaults
+
+7. **Registry Patterns**
+   - Pattern 7.1: Basic Registration
+   - Pattern 7.2: Registration with Aliases
+
+### Pattern Examples
+
+- **Pattern Examples** (`packages/frameworks/tooling & automation/generators/examples/pattern_examples.py`)
+  - Working examples demonstrating each pattern
+  - 6 example generators covering all pattern categories
+  - Executable examples for learning and testing
+
+### Documentation Updates
+
+- **Framework README** (`packages/frameworks/tooling & automation/generators/README.md`)
+  - Added pattern library reference
+  - Links to pattern documentation and examples
+
+---
+
+## Technical Details
+
+### Pattern Library Structure
+
+The pattern library is organized into 7 categories:
+
+1. **Base Patterns** - Core generator patterns (Simple, Template-Based)
+2. **Template Patterns** - Template rendering patterns (Variables, Conditionals, Loops)
+3. **Validation Patterns** - Input/output validation approaches
+4. **Context Patterns** - Template context building strategies
+5. **Path Patterns** - Output path generation patterns
+6. **Parameter Patterns** - Parameter management patterns
+7. **Registry Patterns** - Generator registration patterns
+
+### Pattern Examples
+
+Each pattern includes:
+- **When to Use** - Guidance on when to apply the pattern
+- **Structure** - Code structure and implementation
+- **Key Characteristics** - Important features and behaviors
+- **Examples** - Real-world examples from existing generators
+
+### Pattern Combinations
+
+The library documents common pattern combinations:
+- Template-Based Generator with Validation
+- Hierarchical Generator with Conditional Validation
+- Generator with Parameter Documentation
+
+### Best Practices
+
+Documented best practices include:
+- Always validate input
+- Use appropriate base class
+- Build rich context
+- Generate appropriate paths
+- Document parameters
+- Register generators
+- Handle errors gracefully
+
+---
+
+## Files Changed
+
+### New Files
+
+- `packages/frameworks/tooling & automation/generators/PATTERNS.md`
+- `packages/frameworks/tooling & automation/generators/examples/pattern_examples.py`
+
+### Modified Files
+
+- `src/fynd_deals/version.py` - Updated to v0.8.1.3+1
+- `packages/frameworks/tooling & automation/generators/README.md` - Added pattern library reference
+- `docs/project-management/kanban/epics/Epic-8/Story-001-code-generators.md` - Marked T03 as complete, story as COMPLETE
+- `docs/project-management/kanban/epics/Epic-8/Epic-8.md` - Updated story status and version
+
+---
+
+## Related Work
+
+- **Epic:** 8 - Tooling & Automation
+- **Story:** E8:S01 - Code Generators
+- **Task:** E8:S01:T03 - Establish generator patterns
+- **Depends On:** E8:S01:T02 - Build template-based generators
+- **Completes:** E8:S01 - Code Generators (all tasks complete)
+
+---
+
+## Notes
+
+The pattern library provides a foundation for creating new generators consistently. Patterns are extracted from real implementations (WorkflowGenerator, KanbanTemplateGenerator) and documented with examples and best practices.
+
+Future patterns may be added as more generators are created, such as:
+- Multi-File Generation Pattern
+- Incremental Generation Pattern
+- Validation Rule Pattern
+- Template Inheritance Pattern
+- Generator Composition Pattern
+
+---
+
+**Generated by:** Release Workflow (RW)  
+**Workflow Version:** 1.0.0
+

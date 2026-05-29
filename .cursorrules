@@ -1,0 +1,892 @@
+# AI Dev Kit Cursor Rules
+
+**Purpose:** Comprehensive cursor rules for AI Dev Kit project  
+**Status:** Active  
+**Version:** 1.0.0  
+**Last Updated:** 2025-12-18
+
+**🚨 Git: Commit and push only via Release Workflow (RW).** Do not run `git commit` or `git push` outside RW. When changes are ready, run **`RW <task_id>`** in one message (e.g. `RW E7:S01:T10`, `RW E7S01T10`; same for `RW -d` / `RW -k`) to version, validate, commit, tag, and push. See "Git Workflow Restrictions" below.
+
+**Dual-source (maintainers):** The portable RW excerpt [`packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`](packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md) must stay aligned with this section on FR-060 / 1b–1d / FR-038. Checklist: [`packages/frameworks/workflow mgt/docs/rw-trigger-dual-source-parity.md`](packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md).
+
+---
+
+## 🚨 GLOBAL IMPLEMENTATION GATE (IPW REQUIRED)
+
+**Hard contract:** No implementation work is allowed until IPW is complete and the user explicitly authorizes execution.
+
+**Canonical IPW invocation:**
+- **Claude Code:** `/ipw [E:S:T] [--skip-tests]` — see `.claude/commands/ipw.md`. **IPW must run in plan mode** (`/plan` first, then `/ipw`).
+- **Cursor:** Plain-text `IPW` or `IPW E:S:T` — see `### 🔄 IMPLEMENTATION CYCLE WORKFLOW (ICW) TRIGGER` section below.
+
+**Scope of blocked implementation (until gate opens):**
+- Code changes, script behavior changes, broad repository refactors, release-impacting updates, and non-planning documentation updates that implement behavior/policy outcomes.
+
+**Gate preconditions (all mandatory):**
+1. **Task anchor exists** for the requested work (`E#:S#:T#`).
+2. **IPW package exists** for that task and is linked from the task doc. Satisfied by **either**:
+   - **Consolidated IPP:** `docs/implementation-cycles/IPP-E{epic}S{story}T{task}-*.md` (Sections 1–7 per `.claude/commands/ipw.md` / `PLAN_DOC_TEMPLATE.md`, including documentation deliverables and housing), **or**
+   - **ICW trio:** `docs/implementation-cycles/ICW-...-specification.md`, `ICW-...-test-design.md`, `ICW-...-implementation-plan.md`.
+   Matrix: `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md`.
+3. **Explicit user execution authorization** is provided in a separate instruction (for example: "implement", "proceed with implementation", or an explicit release execution command like `RW E#:S#:T#`).
+
+**Mandatory behavior while gate is closed:**
+- If user asks for UXR/FR/BR/task/spec/plan/review, produce only those artifacts and stop.
+- Do not infer implementation permission from user intent or end goals.
+- Do not run opportunistic implementation while producing governance artifacts.
+- After planning artifacts are complete, pause and wait for explicit go-ahead.
+- If any precondition is missing, ask only for the missing prerequisite and remain in planning/governance scope.
+
+**IPP state transition mandate (FR-094 / ADR-004):** Every IPP produced by IPW must include as its first and final Implementation Plan steps: (1) `TODO → IN PROGRESS` transition; (N) status reconciliation to actual state (`COMPLETE` / `IN PROGRESS` / `BLOCKED`). These steps are executor-prescribed — IPW writes them, implementation execution runs them. See `PLAN_DOC_TEMPLATE.md` Section 4 for the canonical placeholders.
+
+---
+
+## 🚀 RELEASE WORKFLOW (RW) TRIGGER
+
+**When the user types "RW" or "rw" (case-insensitive), execute the Release Workflow as an intelligent agent:**
+
+1. **DO NOT** run the deterministic script `scripts/release_workflow.py`
+2. **DO** execute the Release Workflow using the **intelligent agent-driven execution pattern**
+3. **THINK FIRST, ACT SECOND** - Analyze the current state and make intelligent decisions
+4. **BE ADAPTIVE** - When things fail, find workarounds, don't just stop
+5. **LOAD CONFIG FIRST (MANDATORY):** Before Step 1, load `rw-config.yaml` from project root if it exists. This is the **single source of truth** for all project-specific paths. If config exists, use its values. If not, use placeholders/examples (backward compatibility).
+6. **🚨 MANDATORY: Start with Step 1: Branch Safety Check** - This is a **MANDATORY BLOCKING STEP** that MUST run before any file modifications
+   - **CRITICAL:** Step 1 MUST run `validate_branch_context.py --strict` and check exit code
+   - **CRITICAL:** If Step 1 fails (non-zero exit code), **DO NOT PROCEED** to Step 2
+   - **CRITICAL:** If Step 1 fails, mark all steps as `cancelled` and stop workflow immediately
+   - **CRITICAL:** Do not skip, bypass, or ignore Step 1 validation
+6b. **🚨 MANDATORY: Step 1b — RW task token required (FR-060 / E5:S01:T63)** — Run **after Step 1 passes**, **before any RW file modifications** (before Step 2)
+   - **CRITICAL:** Parse the **same user message** as the RW trigger for a task identifier (`E7:S01:T10`, `E7S01T10`, `RW -d E7S01T10`, `RW -k E6S6T56`, etc.). Same flexibility as UKW/Step 1d parsing.
+   - **If no parseable `E…S…T…` token:** **RW ABORTED** — same severity as Step 1 failure. **Do not** run `validate_rw_task_intent.py` without `--requested` as a substitute. Tell the user to re-send with an explicit task id, e.g. `RW E7:S01:T10` or `RW E7S01T10`.
+6c. **🚨 MANDATORY: Step 1c — RW task document releasable (FR-060)** — **After Step 1b passes**, **before any RW file modifications**
+ - Run: `python "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py" --requested "<parsed_id>"` 
+ - **Full RW releasable statuses:** `IN PROGRESS`, `COMPLETE`, or perpetual maintenance task.
+ - For **`RW -k`**, add **`--mode rw-k`** (requires task doc to exist; status releasability checks are skipped in rw-k mode).
+ - **Non-zero exit:** **RW ABORTED** — same severity as Step 1. Print script output.
+6d. **🚨 MANDATORY: Step 1d — RW Task Intent Guard (BR-056 / E6:S06:T56)** — **After Step 1c passes**, **before any RW file modifications** (before Step 2)
+   - Run: `python "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py" --requested "<parsed_id>"`  
+   - **Use `--mode rw-k`** when the trigger is **`RW -k`**: comparison against `version.py` is skipped so explicit init target does not false-block.
+   - **`--art` is supported in all RW modes** (`RW`, `RW -d`, `RW -k`) to adopt the requested `E:S:T` as canonical release anchor when intentional.
+   - **If the script exits non-zero:** **RW ABORTED** — same severity as Step 1 failure. **Do not** bump version, edit changelogs, or touch kanban. Print the script output. Tell the user to verify the intended Epic/Story/Task.
+   - **After explicit user confirmation** that the mismatch is intentional (e.g. they meant Story 5, not 6), re-invoke RW and pass **`--confirmed-override`** on `validate_rw_task_intent.py` (only after the user clearly confirms).
+   - **Exception to “never stop”:** These guardrails **require** stopping the workflow when exit code is non-zero; the user must confirm or use a new message. This overrides generic “continuous execution” until intent is resolved.
+7. **EXECUTE INTELLIGENTLY** - Use your AI capabilities to solve problems, don't just follow rigid steps
+8. **ADAPT AND RECOVER** - When scripts fail, find alternative approaches or implement manual workarounds
+9. **Document** each step's analysis, actions, and results
+10. **MUST USE Cursor TODOs:** Create and maintain a TODO list tracking all steps (see below)
+
+**🧠 AGENT INTELLIGENCE REQUIREMENTS:**
+
+- **Autonomous Execution:** Execute the entire RW continuously without stopping for user guidance
+- **Proactive Problem Solving:** Anticipate next steps and execute them without being told
+- **Intelligent Tool Discovery:** Search for tools when paths fail, don't stop and ask
+- **Continuous Flow:** Complete the entire workflow in one session (target: 1-2 minutes total)
+- **Self-Recovery:** When something fails, find alternatives and continue without stopping
+- **Context Awareness:** Understand the current state and determine next steps autonomously
+- **Speed Optimization:** Focus on total user time, not just script execution time
+
+### 🚨 CRITICAL: NEVER STOP EXECUTING
+
+- **DO NOT** stop after each step and wait for user guidance
+
+- **DO NOT** ask "what should I do next?" - determine it yourself
+
+- **DO NOT** require manual intervention for tool discovery
+
+- **DO** continue executing until the RW is complete or you encounter a blocking error
+
+- **DO** handle failures intelligently and continue the workflow
+
+- **EXCEPTION (FR-060 / BR-056):** If **Step 1b, 1c, or 1d** fails (missing task token, `validate_rw_task_complete.py`, or `validate_rw_task_intent.py`), **stop immediately** (RW ABORTED); do not continue to Step 2 until the user fixes the message or confirms override as documented in Step 1d
+
+### 🔄 CONTINUOUS EXECUTION PATTERN
+
+**When user types "RW":**
+
+1. **START IMMEDIATELY** - Don't ask questions, begin execution
+
+2. **EXECUTE STEP 1** - Branch safety check (find validation script intelligently)
+
+3. **IF STEP 1 PASSES** - **EXECUTE STEP 1b** — Parse mandatory task token (FR-060); if absent, **RW ABORTED**
+
+4. **IF STEP 1b PASSES** - **EXECUTE STEP 1c** — `validate_rw_task_complete.py`; if it fails, **RW ABORTED**
+
+5. **IF STEP 1c PASSES** - **EXECUTE STEP 1d** — `validate_rw_task_intent.py`; if it fails, **RW ABORTED**
+
+6. **IF STEP 1d PASSES** - Continue immediately to Step 2 (version bump)
+
+7. **EXECUTE STEP 2** - Increment version and update files
+
+8. **EXECUTE STEP 3** - Update changelog (immutable guard: never overwrite existing archive changelog; use post-bump version in header)
+
+9. **EXECUTE STEP 4** - Run kanban documentation updates
+
+10. **EXECUTE STEP 5** - Git operations (add, commit, tag, push)
+
+11. **EXECUTE STEP 6** - Final validation and reporting
+
+12. **COMPLETE** - Report success and stop
+
+**If any step fails:**
+
+- **Analyze the failure** - Understand what went wrong
+
+- **Find alternative approach** - Use intelligent fallbacks
+
+- **Continue execution** - Don't stop and wait for user
+
+- **Report the workaround** - Explain what you did instead
+
+**🚨 NEVER STOP BETWEEN STEPS**
+
+- The user should not have to say "continue" or "proceed"
+
+- The user should not have to guide tool discovery
+
+- The user should not have to tell you what to do next
+
+- The workflow should feel like one continuous operation
+
+**🔧 DETERMINISTIC vs. INTELLIGENT WORK:**
+
+**DELEGATE TO SCRIPTS (Deterministic):**
+- Version file parsing (when file exists)
+- Git operations (add, commit, tag, push)
+- Simple text replacements
+- File existence checks
+- **RW task token + doc + intent:** `validate_rw_task_complete.py` then `validate_rw_task_intent.py` (FR-060 + BR-056; use `--mode rw-k` on both for `RW -k`)
+
+**HANDLE WITH INTELLIGENCE (Adaptive):**
+- Pattern matching failures (find files manually)
+- Missing files (create from templates or skip gracefully)
+- Script errors (implement manual workarounds)
+- Configuration issues (use defaults or ask for clarification)
+- Path resolution problems (search intelligently)
+
+**🎯 SPECIFIC INTELLIGENT HANDLING EXAMPLES:**
+
+**Pattern Matching Failures (like update_kanban_docs.py):**
+- **Problem:** Script can't find `Story-006-feature-requests.md` with pattern `epics/Epic-6/Story-006-*.md`
+- **Intelligent Solution:** Search manually, find the file, implement the update directly
+- **Manual Fallback:** Update the Story and Epic documents with version info manually
+- **Don't Stop:** Continue with the workflow instead of failing completely
+- **✅ FIXED:** Pattern matching now uses kanban_root prefix and manual fallback discovery
+
+**File Discovery Issues:**
+- **Problem:** Script looks for files in wrong locations
+- **Intelligent Solution:** Use `find` and `glob` to locate files intelligently
+- **Adapt:** Use the actual file structure, not the expected one
+- **Continue:** Proceed with the found files
+
+**Script Execution Failures:**
+- **Problem:** Script fails with cryptic error messages
+- **Intelligent Solution:** Analyze the error, understand what the script was trying to do
+- **Manual Implementation:** Do the same work manually using file operations
+- **Recover:** Continue with the next steps
+
+**Kanban Init Mode (RW -k equivalent):**
+- **Problem:** User needs to initialize kanban documentation for a release
+- **Intelligent Solution:** Run `update_kanban_docs.py --mode kanban_init` with fallback handling
+- **Manual Fallback:** Update Story and Epic docs manually with version info if script fails
+- **Expected Result:** Story/Epic docs updated with "Kanban documentation setup" notation
+- **✅ WORKING:** Script now handles pattern matching and errors gracefully
+
+**RW -k Flag Handling:**
+- **User Intent:** Initialize kanban documentation for current version
+- **Agent Action:** Execute kanban_init mode with intelligent fallback
+- **Success Criteria:** Story and Epic docs updated, workflow continues
+- **Time Target:** Complete in under 2 minutes without micromanagement
+
+**🔧 Config-Driven Approach (Preferred):**
+
+If `rw-config.yaml` exists in project root, **MUST** load it and use its values for all paths:
+- `version_file` → Use for version file path
+- `main_changelog` → Use for main changelog path
+- `changelog_dir` → Use for changelog archive directory
+- `scripts_path` → Use for validation scripts path
+- `readme_file` → Use for README path
+- `kanban_root` → Use for Kanban root (if `use_kanban: true`)
+- `epic_doc_pattern` → Use for epic document pattern (if Kanban enabled)
+- `story_doc_pattern` → Use for story document pattern (if Kanban enabled)
+
+**Loading Config Pattern:**
+```python
+# Load rw-config.yaml if it exists
+from pathlib import Path
+import yaml
+
+config = None
+config_path = Path("rw-config.yaml")
+if config_path.exists():
+    try:
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config = yaml.safe_load(f)
+    except Exception:
+        pass  # Fall back to placeholders
+
+# Use config values or fallback to defaults
+version_file = config['version_file'] if config and 'version_file' in config else 'src/{project}/version.py'
+main_changelog = config['main_changelog'] if config and 'main_changelog' in config else 'CHANGELOG.md'
+changelog_dir = config['changelog_dir'] if config and 'changelog_dir' in config else 'docs/changelogs'
+scripts_path = config['scripts_path'] if config and 'scripts_path' in config else 'scripts/validation'
+readme_file = config['readme_file'] if config and 'readme_file' in config else 'README.md'
+kanban_root = config.get('kanban_root', 'docs/project-management/kanban') if config and config.get('use_kanban') else None
+```
+
+**Backward Compatibility:**
+- If `rw-config.yaml` doesn't exist, use placeholder patterns (`{project}`, `{kanban_path}`, etc.)
+- This ensures RW works in projects that haven't run the installer yet
+
+**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+
+**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list for all 12 Release Workflow steps (plus optional Step 9.5):
+
+1. **At Workflow Start:** Create TODO list with all 12 steps as `pending`
+2. **Before Each Step:** Mark step as `in_progress`
+3. **After Each Step:** Mark step as `completed` and mark next step as `in_progress`
+4. **On Completion:** All steps marked as `completed`
+
+5. **🚨 CRITICAL: Step 1 Branch Safety Enforcement:**
+   - **MANDATORY:** Step 1 MUST run `validate_branch_context.py --strict`
+   - **MANDATORY:** If Step 1 fails (non-zero exit code), workflow MUST STOP immediately
+   - **MANDATORY:** If Step 1 fails, mark ALL remaining steps as `cancelled`
+   - **MANDATORY:** Do not modify any files if Step 1 fails
+   - **MANDATORY:** Do not proceed to Step 2 if Step 1 fails
+   - **Anti-Pattern:** Never skip, bypass, or ignore Step 1 validation
+   - **Anti-Pattern:** Never proceed to Step 2 if validator returns non-zero exit code
+
+6. **Atomicity & Blocking Behaviour (Accessibility-Critical):**
+
+   - When the user types **`RW`**, the agent MUST either:
+     - Run **all 12 steps** to completion for the target version, OR
+     - Stop at a **specific step** and clearly state:
+       - The **step number and name** (e.g. "Step 1: Branch Safety Check" or "Step 8: Run Validators")
+       - The **reason** it is blocked (e.g. wrong branch, missing tool, sandbox limitation)
+       - The **exact action/commands** the user must run to unblock it
+       - That **RW is NOT complete** until those actions are taken and the agent resumes
+
+   - The agent MUST NOT:
+     - Silently stop mid‑workflow after modifying files
+     - Start a new RW while a previous RW's TODO items are still `pending` or `in_progress`
+
+   - If RW is abandoned or cannot be completed, the agent MUST:
+     - Mark remaining `rw-step-*` TODOs as `cancelled`
+     - Output a short **"RW ABORTED"** summary with current state and next steps
+
+**Agent Execution Pattern:**
+
+For each step, follow this pattern:
+1. **ANALYZE** - Understand step requirements and context
+2. **DETERMINE** - Decide what actions to take
+3. **EXECUTE** - Perform the actions
+4. **VALIDATE** - Verify execution succeeded
+5. **PROCEED** - Document and move to next step
+
+**The 12 Steps:**
+
+1. **🚨 MANDATORY BLOCKING: Branch Safety Check** - **CRITICAL:** This step MUST run `validate_branch_context.py --strict` and check exit code. **DO NOT PROCEED** if exit code is non-zero. This is a **MANDATORY BLOCKING STEP** that prevents cross-epic contamination:
+   - **MANDATORY:** Run `python {validator_path} --strict` before any file modifications
+   - **MANDATORY:** Check exit code (0 = PASS, non-zero = FAIL)
+   - **IF FAIL:** Mark all steps as `cancelled`, output error message, STOP workflow immediately
+   - **IF PASS:** Proceed to Step 2
+   - **DO NOT SKIP:** This step cannot be bypassed or ignored
+   - **DO NOT PROCEED:** If Step 1 fails, DO NOT attempt Step 2 or any subsequent step
+
+2. **Bump Version** - **MANDATORY STEP-BY-STEP PROCESS (DO NOT SKIP ANY STEP):**
+   - **A. CHECK UKW CONTEXT (BEFORE READING VERSION):** **CRITICAL:** Check if this RW was triggered immediately after UKW:
+     - **IF UKW was just executed:** This is UKW work → Skip to UKW Attribution Logic (see below)
+     - **IF NOT UKW context:** Continue to CMW context check
+   - **A.1. UKW ATTRIBUTION LOGIC (IF UKW CONTEXT DETECTED):**
+     - **UKW Context:** User ran "UKW" then "RW" → This is kanban synchronization work
+     - **Dynamic Task Discovery:** Search for task document with `perpetual_task: true` or `Task Type: Perpetual Maintenance` flag
+     - **Task ID is Project-Specific:** Perpetual UKW task ID varies by project:
+       - ai-dev-kit: E6:S06:T101 (example, migrated from T08)
+       - Other projects: May be E4:S03:T05, E2:S01:T10, etc. (depends on project structure)
+     - **Auto-Attribute to Perpetual Task:** Use discovered perpetual task's Epic/Story/Task numbers, increment `VERSION_BUILD`
+     - **Build Warning Suppression:** Perpetual tasks have flag, so high BUILD numbers are expected and valid
+     - **Skip Normal Task Identification:** Do not read Story file for normal task identification when UKW context detected
+     - **Example (ai-dev-kit):** If current is `v0.6.6.101+3`, UKW release becomes `v0.6.6.101+4` (T101, migrated from T08)
+     - **Example (other project):** If perpetual task is E4:S03:T05 and current is `v0.4.3.5+2`, UKW release becomes `v0.4.3.5+3`
+     - **Document:** "UKW context detected. Found perpetual UKW task E{X}:S{Y}:T{Z} (via flag). Attributing release. BUILD increment: +{N}"
+   - **A.1.5. CHECK CMW CONTEXT (AFTER UKW CHECK, BEFORE READING VERSION):** **CRITICAL:** Check if this RW was triggered immediately after CMW (only if UKW context NOT detected):
+     - **IF CMW was just executed:** This is CMW work → Skip to CMW Attribution Logic (see below)
+     - **IF NOT CMW context:** Proceed with normal task identification
+   - **A.1.5.1. CMW ATTRIBUTION LOGIC (IF CMW CONTEXT DETECTED):**
+     - **CMW Context:** User ran "CMW" then "RW" → This is changelog maintenance work
+     - **Dynamic Task Discovery:** Search for task document with `Task Type: Perpetual Maintenance` flag (for CMW)
+     - **CMW Identification:** Look for task name/description containing "CMW" or "Changelog Maintenance Workflow"
+     - **Task ID is Project-Specific:** Perpetual CMW task ID varies by project:
+       - ai-dev-kit: E6:S06:T102 (example, migrated from T12)
+       - Other projects: May be E4:S03:T06, E2:S01:T11, etc. (depends on project structure)
+     - **Auto-Attribute to Perpetual Task:** Use discovered perpetual task's Epic/Story/Task numbers, increment `VERSION_BUILD`
+     - **Build Warning Suppression:** Perpetual tasks have flag, so high BUILD numbers are expected and valid
+     - **Skip Normal Task Identification:** Do not read Story file for normal task identification when CMW context detected
+     - **Example (ai-dev-kit):** If current is `v0.6.6.102+2`, CMW release becomes `v0.6.6.102+3` (T102, migrated from T12)
+     - **Example (other project):** If perpetual task is E4:S03:T06 and current is `v0.4.3.6+1`, CMW release becomes `v0.4.3.6+2`
+     - **Document:** "CMW context detected. Found perpetual CMW task E{X}:S{Y}:T{Z} (via flag). Attributing release. BUILD increment: +{N}"
+   - **A. READ CURRENT VERSION:** Load config first, read version file to get current `VERSION_EPIC`, `VERSION_STORY`, `VERSION_TASK`, `VERSION_BUILD`
+   - **B. IDENTIFY COMPLETED TASK (MANDATORY - ONLY IF NOT UKW OR CMW):** Load config first, read Story file, find MOST RECENTLY COMPLETED task in Task Checklist
+   - **B.1. LOCATE AND VALIDATE TASK DOCUMENT (MANDATORY):** Locate Task document, validate required fields, verify Task ID alignment
+   - **B.2. CHECK PERPETUAL TASK FLAG:** Read task document for `perpetual_task: true` or `Task Type: Perpetual Maintenance`:
+     - **IF perpetual task:** Note for build warning suppression (high BUILD numbers expected and valid)
+     - **IF not perpetual:** Normal task handling applies
+   - **C. DETERMINE VERSION BUMP (MANDATORY LOGIC):** Compare completed task number to current `VERSION_TASK` (new task vs same task vs out-of-order)
+   - **D. VALIDATE BEFORE UPDATING:** Verify new `VERSION_TASK` matches completed task number (unless UKW context)
+   - **E. UPDATE VERSION FILE:** Use config path, update `VERSION_TASK` and `VERSION_BUILD`
+   - **F. VALIDATE AFTER UPDATING:** Re-read version file, verify new version matches decision
+   - See `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 2 for complete procedure
+
+3. **Create Detailed Changelog** - Create detailed changelog in changelog archive directory. Use config path. Full timestamp (`YYYY-MM-DD HH:MM:SS UTC`). **CRITICAL:** Timestamp is IMMUTABLE once written - never edit the `**Release Date:**` field.
+
+4. **Update Main Changelog** - Add new entry at top: `## [version] - DD-MM-YY` (short date format for merge-to-main) with release description and link to detailed changelog. Use config path. Follow [Keep a Changelog](https://github.com/olivierlacan/keep-a-changelog) format.
+
+5. **Update README** - **MANDATORY:** Update project version in README with **SemVer** (outward-facing version):
+   - **A. Generate SemVer:** Use `semver_converter.py` to convert internal version to SemVer
+     - Run: `python "packages/frameworks/workflow mgt/scripts/version/semver_converter.py" "{internal_version}"`
+     - Example: `0.3.2.11+2` → `0.3.19+2` (SemVer)
+   - **B. Update README:** Update version text with SemVer (e.g., `**Version:** v{semver}`), version badge, and latest release callout if present
+   - **C. Use config path:** Read `readme_file` from config or fallback to `README.md`
+   - **Note:** README displays SemVer for external consumers; internal version remains in version file for tracking
+
+6. **Update BR/FR Docs** - Update Bug Reports and Feature Requests with fix attempt information. Use config path. Document flaws, attempted fixes, and verification status.
+
+7. **Scoped Kanban Reconciliation (Self-Sufficient)** — RW Step 7 is a **self-sufficient** scoped reconciliation that owns release-scope kanban consistency end-to-end and **does not depend on a follow-up UKW run** for release correctness. (Per [FR-092 / FR-091](docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md), absorbing [FR-091](docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md).)
+
+   **What/Why (architecture, not just operational guidance):**
+
+   - **RW is preventive and release-atomic.** RW must finish release-scope reconciliation autonomously. No RW correctness criterion may require a subsequent UKW run.
+   - **UKW is corrective and drift-oriented.** UKW exists as a reactive global drift-repair workflow for cumulative, cross-cutting board hygiene. UKW is **optional** with respect to RW completion. UKW exists because canonical workflows are imperfect in practice; the desired direction is to continuously reduce drift creation in RW so UKW becomes a smaller corrective safety net.
+   - **No handoff debt.** Deferring release-scope inconsistencies to UKW is prohibited.
+
+   **Minimum release-scope reconciliation outputs (four-surface contract, deterministic + idempotent + ordered):**
+
+   1. **Task doc** — version anchor + status + last-updated + checklist sync (host task and any directly affected child tasks).
+   2. **Source FR/BR/UXR doc(s)** — status sync + linked-task references + closure/gating banners where applicable.
+   3. **`kboard.md`** — canonical row(s) for the release-scope task(s); active-row hygiene for completed rows; no duplicate tail tokens.
+   4. **`fbuboard.md`** — canonical row(s) for the release-scope FBU(s); supersede / gating / closure markers; no duplicate tail tokens.
+
+   **Execution:** Update Task (then Story, then Epic) with version markers and forensic consistency; update FR/BR/UXR doc(s) tied to this release; emit canonical row(s) on `kboard.md` and `fbuboard.md`; apply **limited** MoSCOW prioritisation only for **new or newly significant** items per Kanban governance (do not re-prioritise the whole board). Prefer `update_kanban_docs.py` when applicable; otherwise follow the same bottom-up scope. Use config paths. **CRITICAL: Check Story file existence, create from template if missing, then update.** Update Story file FIRST, then Epic file to match.
+
+   **Audit:** RW Step 7 emits a "touched surfaces + why" report (Wave 5/7 deliverable under FR-092) sufficient to reconstruct release-scope reconciliation outcomes.
+
+   See [update-kanban-workflow-agent-execution.md](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) for UKW reactive-only role and `invocation_context` (`rw_step_7` vs `standalone`); see [release-workflow-agent-execution.md](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) for the canonical Step 7 execution detail; see [kanban-governance-policy.md](packages/frameworks/kanban/policies/kanban-governance-policy.md) for the RW preventive / UKW corrective separation.
+
+8. **Stage Files** - Run `git add -A` to stage all modified files
+
+9. **Run Validators** - Execute validation scripts. Use config path. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` / `fbuboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md` / `fbuboard.md`). Run `validate_release_readiness.py` (Gates 1–9 including stamp homogeneity + MoSCOW state icons). All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For a **docs-only** release that must use **BUILD +0** on an **existing** E/S/T (e.g. perpetual **T103**, [BR-067](docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)), add **`--doc-policy-zero`** to `validate_version_bump.py` (same **--strict** / **--requested** / **--art** line). **Note:** `check_changelog_size.py` exit code 1 (threshold exceeded) is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking and reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers (BR-074).
+
+9.5. **Changelog Management Workflow (CMW)** - **OPTIONAL, NON-BLOCKING:** If Step 9's `check_changelog_size.py` indicated threshold exceeded (exit code 1), automatically run CMW to archive entries, remove duplicates, and fix ordering. CMW is deterministic (rule-based, no agentic intelligence required). If threshold not exceeded, skip this step. CMW failures are non-blocking (workflow continues).
+
+9.6. **Check IDE-Flagged Problems (recommended before commit)** - **RECOMMENDED, NON-BLOCKING:** Before Step 10, check for IDE/linter errors, warnings, and info-level issues in modified files; fix where practical and re-stage. Reduces accumulation of fixable issues and keeps commits clean. Skip or defer only if not practical; workflow continues.
+
+10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
+
+11. **Create Git Tag** - Create tags via canonical strategy decision:
+ - **A. Canonical source:** Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to determine tags for both Step 11 and Step 12.5.
+ - **B. Registry mode:** Create annotated primary tag `v{internal_version}`.
+ - **C. Task-touch mode:** Create annotated primary tag `vX.Y.Z` (SemVer core; no `+BUILD` in tag name). Also create internal traceability tag `v{internal_version}` on the same commit unless explicitly disabled.
+ - **D. Registry finalization:** Task-touch counter/mapping finalizes at tag-creation boundary, not read-only lookups.
+ - **Note:** If both tags are created, they must reference the same commit.
+
+12. **Push to Remote** - Push epic branch and both tags (internal + SemVer) to origin (DO NOT push to main unless ready to deploy)
+    - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
+    - Push both tags: `git push origin {branch} --tags` (pushes all tags including internal and SemVer)
+
+12.5. **Create/Update GitHub Release** - **MANDATORY:** Create or update GitHub release using SemVer tag:
+   - **A. Script Auto-Loads .env.local:** The `create_github_release.py` script automatically loads `.env.local` if it exists (checks current directory and project root)
+   - **B. Get Repository:** Use `GITHUB_REPOSITORY` env var (from .env.local or environment) or default to `earlution/ai-dev-kit`
+   - **C. Create/Update Release:** Run `create_github_release.py` to create or update GitHub release:
+     - Run: `python "packages/frameworks/workflow mgt/scripts/create_github_release.py" --semver-tag "v{semver}" --internal-version "v{internal_version}" --summary "{summary}" --epic "{epic}" --story "{story}" --task "{task}" --repo "{repo}"`
+     - **Note:** Script automatically loads `GITHUB_TOKEN` from `.env.local` or environment variable
+     - **Note:** Do NOT pass `--token` flag - let script load from `.env.local` automatically
+     - Example: Creates/updates release for `v0.3.19+3` (SemVer) with release name showing SemVer
+   - **D. Release Name:** GitHub release name uses SemVer (e.g., `v0.3.19+3`) for external-facing display
+   - **E. Release Body:** Includes both SemVer and internal version for traceability
+   - **Note:** If `GITHUB_TOKEN` is not found in `.env.local` or environment, script will error with clear message (non-blocking, workflow continues)
+
+13. **Housekeeping** - Clean up IDE state and temporary artifacts
+   - Clear IDE todo list (all `rw-step-*` todos) by marking them as `cancelled`
+   - **Note:** `todo_write` tool doesn't support deletion, so `cancelled` status is used to hide todos
+   - Use `todo_write(merge=True, todos=[{'id': 'rw-step-*', 'status': 'cancelled'}, ...])` for all RW steps
+   - Future: May include cleanup of temporary files, reset IDE state, etc.
+   - **Reference:** See RW documentation Step 17: Housekeeping for details
+
+**Key Principles:**
+- ✅ **Intelligent Analysis:** Understand each step's requirements before executing
+- ✅ **Context-Aware:** Use branch context, version schema, and project state to make decisions
+- ✅ **Validation:** Verify each step succeeded before proceeding
+- ✅ **Documentation:** Document decisions and actions at each step
+- ✅ **Progress Tracking:** MUST use Cursor TODOs to track all 12 steps (plus optional Step 9.5)
+- ✅ **Branch Safety First:** Step 1 validates branch alignment before any modifications
+- ✅ **Canonical Ordering:** Version numbers (not timestamps) determine changelog ordering
+- ✅ **Forensic Traceability:** Maintain complete traceability grid (version ↔ epic/story/task ↔ changelogs ↔ kanban ↔ git)
+- ✅ **Immutability:** Detailed changelog timestamps are immutable once written
+- ✅ **Mandatory Task Identification:** Step 2 MUST read Story file to identify completed task number
+- ✅ **Version Validation:** Step 2 MUST validate TASK number matches completed task before and after updating
+- ❌ **Never Blind Execution:** Don't just run scripts without understanding what they do
+- ❌ **Never Leave RW Ambiguous:** Always end in either **RW COMPLETE** or **RW ABORTED (with reason)** state
+- ❌ **Never Skip Task Identification:** Always read Story file to find completed task number
+- ❌ **Never Assume Same Task:** Always compare completed task number to current VERSION_TASK
+
+**File Paths (ai-dev-kit):**
+- RW skills (optional): `.cursor/skills/version-bump`, `.cursor/skills/readme-update` – schema/procedure guidance; use with agent reasoning, not as deterministic scripts
+- Version file: `src/fynd_deals/version.py`
+- Changelog: `CHANGELOG.md`
+- Notion project hub: `rw-config.yaml` → `notion_hub_url` (single entry point for project context; RMS Teamspace)
+- Changelog Archive: `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md`
+- Kanban Board: `docs/project-management/kanban/_index.md` or `docs/project-management/kanban/kanban-board.md`
+- Epic Docs: `docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md`
+- Story Docs: `docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md`
+- Validators: `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`, `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+
+**Reference Documentation:**
+- Versioning Policy: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (canonical SoT)
+- Release Workflow Guide: `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- Workflow Flaws Reference: `docs/architecture/standards-and-adrs/workflow-flaws-reference-guide.md`
+- Versioning Error Reference: `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md`
+
+**🚨 Changelog Language — No False Claims**
+- **FORBIDDEN:** Do not claim "Fixed", "Resolved", or "Completed" in changelogs until the user has tested and verified.
+- **REQUIRED:** Use "Attempted fix", "Attempted resolution", or "Change implemented" until verified; after verification, a subsequent release may use "Fixed".
+- Use **### Attempted Fixes** for unverified bug-fix attempts; use **### Fixed** only after user confirmation. Full rules: Release Workflow Guide (changelog validation).
+
+---
+
+### 📦 PACKAGE VERSION WORKFLOW (PVW) TRIGGER
+
+**When the user types "PVW" or "pvw" (case-insensitive), or when RW Step 2.5 executes, run the Package Version Workflow as an intelligent agent:**
+
+1. **DO NOT** run deterministic scripts to determine bump types
+2. **DO** execute PVW using the **intelligent agent-driven execution pattern**
+3. **Follow** the agent execution pattern (ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED)
+4. **Use** validation scripts as tools, not determiners
+5. **Apply** version bump criteria as guidance, not hard rules
+6. **Document** reasoning and justification for each bump
+
+**PVW Execution Steps:**
+1. **Step 1: Detect Changed Packages** - Analyze git diff to identify changed packages
+2. **Step 2: Analyze Package Changes** - Read package files, identify what changed
+3. **Step 3: Determine Version Bumps** - Analyze changes against criteria, determine bump type intelligently
+4. **Step 4: Execute Version Updates** - Update README, create changelog, document justification
+5. **Step 5: Validate Updates** - Run validation scripts as tools, verify format/consistency
+6. **Step 6: Document & Proceed** - Document changes, pass to RW Step 3
+
+**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+
+**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list tracking all 6 PVW steps.
+
+**Agent Execution Guide:**
+- See `docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md` for detailed step-by-step guide
+- Follow ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED pattern for each step
+
+**Version Bump Criteria (Guidance, Not Rules):**
+- **MAJOR (X.0.0):** Breaking changes (removing files, changing structure, breaking API)
+- **MINOR (x.Y.0):** New features, enhancements, additions (backward compatible)
+- **PATCH (x.y.Z):** Bug fixes, corrections, clarifications (no new functionality)
+
+**Integration with RW:**
+- PVW executes as RW Step 2.5 (after project version bump, before changelog creation)
+- PVW can also be triggered manually with "PVW" command
+- Package versions are included in RW Step 3 (changelog creation)
+
+---
+
+### 🔄 UPDATE KANBAN WORKFLOW (UKW) TRIGGER
+
+**When the user types "UKW" or "ukw" (case-insensitive), with optional flags, execute the Update Kanban Workflow as an intelligent agent:**
+
+**Command Syntax:**
+- `UKW` or `ukw` (no flags) = **Comprehensive run** (all operations: bookkeeping + update priorities + assign priorities)
+- `UKW -u` = Bookkeeping sub-workflow only (restrict scope)
+- `UKW -p` = Update priorities sub-workflow only (restrict scope)
+- `UKW -a <target>` = Assign priorities sub-workflow only (restrict scope)
+- `UKW -u -p` = Bookkeeping + update priorities (restrict to these two)
+- `UKW -u -a <target>` = Bookkeeping + assign priorities to target(s)
+- `UKW -p -a <target>` = Update + assign priorities only
+- `UKW -u -p -a <target>` = Same as comprehensive (redundant with no flags)
+
+**Use Case Flags (limit scope when present):**
+- `-u` (bookkeeping): Restrict to bookkeeping sub-workflow only
+- `-p` (update priorities): Restrict to update priorities sub-workflow only
+- `-a` (assign priorities): Restrict to assign priorities sub-workflow only
+
+**Task Targeting Syntax (for `-a` flag):**
+- Single task: `E09S01T01`, `e9s1t1`, `E09:S01:T01`
+- Multiple tasks: `E09S01T01,E08S02T11`
+- Linear range: `E09S01T01-E09S01T06`
+- Story: `E09S01`, `e9s1`
+- Epic: `E09`, `e9`
+- All unprioritized: `all`, `*`
+
+**Execution Rules:**
+1. **DO NOT** run any deterministic scripts
+2. **DO** execute the Update Kanban Workflow using the **intelligent agent-driven execution pattern**
+3. **PARSE FLAGS FIRST:** Before Step 1, parse command flags to determine which operations to run:
+   - If **no flags:** Run comprehensive UKW (all operations: bookkeeping + update priorities + assign priorities)
+   - If flags present: **Restrict scope** to specified sub-workflow(s):
+     - `-u` only: Bookkeeping (Steps 1-5, 7-9, skip Step 6 MoSCOW)
+     - `-p` only: Step 6 update MoSCOW priorities
+     - `-a <target>` only: Step 6 assign priorities to target(s)
+     - Multiple flags: Run combined sub-workflows
+4. **🧠 AGENTIC INTELLIGENCE REQUIRED:** This workflow requires significant intelligent reasoning:
+   - **Synthesis:** Analyze multiple data points and create coherent tactical/strategic summaries
+   - **Narrative Updates:** Write natural, meaningful summaries that capture progress and context
+   - **Prioritization:** Determine MoSCOW priorities based on project goals, dependencies, and impact
+   - **Status Inference:** Intelligently infer task/story status from commits, FR/BR/UXRs, and file changes
+   - **Consistency Analysis:** Detect contradictions and align status across hierarchy
+   - **Context Understanding:** Understand project state, goals, and relationships between work items
+5. **LOAD CONFIG FIRST (MANDATORY):** Before Step 1, load `rw-config.yaml` from project root if it exists and `use_kanban: true`. Use config values for kanban paths. If config doesn't exist, use default paths.
+6. **Follow** the step-by-step guide below using **BOTTOM-UP APPROACH**
+7. **Execute steps conditionally** based on flags using the ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED pattern with **intelligent reasoning at each step**
+8. **Document** each step's analysis, reasoning, decisions, actions, and results
+9. **MUST USE Cursor TODOs:** Create and maintain a TODO list tracking all 9 steps (mark skipped steps as cancelled)
+
+**Default Paths (ai-dev-kit):**
+- `kanban_root`: `docs/project-management/kanban`
+- `epic_doc_pattern`: `epics/Epic-{epic}/Epic-{epic}.md`
+- `story_doc_pattern`: `epics/Epic-{epic}/Story-{story}-*.md`
+- `task_doc_pattern`: `epics/Epic-{epic}/Story-{story}/T{task}-*.md`
+- `kanban_board`: `kanban-board.md`
+- `fr_br_root`: `fr-br`
+
+**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+
+**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list for all 9 UKW steps (including Step 2.5).
+
+**The 9 Steps (Bottom-Up Approach) - Conditional Execution Based on Flags:**
+
+**Step Execution Matrix:**
+- **Comprehensive (no flags):** All steps including Step 2.5 (gap discovery), all operations
+- **Bookkeeping (`-u` only):** Steps 1-5, 7-9 (skip Step 2.5, skip Step 6 MoSCOW)
+- **Update Priorities (`-p` only):** Step 6 only (update MoSCOW priorities)
+- **Assign Priorities (`-a <target>` only):** Step 6 only (assign priorities to target tasks)
+- **Combined flags:** Run specified sub-workflows only
+
+1. **Identify Perpetual UKW Task (Wiring Step)** - **MANDATORY FIRST STEP (always runs):** Discover and wire UKW to the project's perpetual UKW task (required for comprehensive run and for RW attribution):
+   - Search all task documents for `perpetual_task: true` or `Task Type: Perpetual Maintenance`
+   - Identify the task dedicated to UKW releases (may be named "Update Kanban Workflow (UKW)" or similar)
+  - Note the task's Epic/Story/Task ID (e.g., E2:S16:T03 in ai-dev-kit, E4:S03:T05 in another project)
+   - This establishes the wiring between UKW and the perpetual task for this project instance
+   - Store task ID for RW attribution later (when user runs "RW" after "UKW")
+2. **Analyze Recent Activity** - **Runs if comprehensive (no flags) or bookkeeping (`-u`):** Check git commit history, scan FR/BR/UXR directory, identify file changes, map commits to Epic/Story/Task identifiers
+2.5. **Discover Board Gaps** - **Runs if comprehensive (no flags) only:** (a) Find TODO/IN PROGRESS tasks not on Kanban board → add to board (MoSCOW with appropriate priority). (b) Find open FRs/BRs (OPEN, PENDING, REOPENED, Proposed, IN PROGRESS) without linked tasks → **present formatted list to user** → **seek user intention:** leave as is, or file tasks for them. If user opts to file, create tasks per Kanban governance.
+3. **Update Task Documents** - **Runs if comprehensive (no flags) or bookkeeping (`-u`):** Update task document status fields, dates, forensic markers based on recent activity
+4. **Update Story Documents** - **Runs if comprehensive (no flags) or bookkeeping (`-u`):** **🧠 INTELLIGENCE REQUIRED:** Synthesize task data into tactical overviews, infer story status, update task checklists. **CRITICAL:** Use `sort_kanban_document_checklists.py` to sort task checklists numerically.
+5. **Update Epic Documents** - **Runs if comprehensive (no flags) or bookkeeping (`-u`):** **🧠 INTELLIGENCE REQUIRED:** Synthesize story data into strategic overviews, infer epic status, update story checklists. **CRITICAL:** Use `sort_kanban_document_checklists.py` to sort story checklists numerically.
+6. **Update Kanban Board** - **Conditional execution based on flags:**
+   - **If comprehensive (no flags):** Update epic status sections, board metadata, **and** MoSCOW prioritization (update + assign as needed)
+   - **If bookkeeping (`-u` only):** Update epic status sections, board metadata; **SKIP MoSCOW prioritization**
+   - **If `-p` only:** Step 6 update MoSCOW priorities of existing tasks
+   - **If `-a <target>` only:** Step 6 assign priorities to target tasks using syntax parser
+   - **If combined flags:** Run specified operations
+   - **CRITICAL:** Use `sort_kanban_board.py` to sort epics/stories numerically before writing to board
+   - **CRITICAL:** MoSCOW prioritization requires **🧠 INTELLIGENT PRIORITIZATION** - analyze context, dependencies, impact
+   - **CRITICAL:** `fr-br-uxr-board.md` (fbuboard) is required UKW scope for comprehensive/bookkeeping runs; do not treat as best-effort
+   - **CRITICAL:** Apply deterministic fbuboard active-row reconciliation:
+     - Prune active MoSCOW rows whose linked FR/BR/UXR doc status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`)
+     - Keep explicit unresolved-verification exceptions active (e.g., status includes `IN PROGRESS`, `UNVERIFIED`, `PENDING VERIFICATION`)
+   - **CRITICAL (FR-097):** Do **not** unify or rewrite active row `Last modified` stamps on hygiene (STRUCTURE-only). Only board-level `Last Updated` metadata may change. Before staging: snapshot boards (`snapshot_kanban_boards.py`), then run `validate_board_stamp_diff.py` — **abort UKW** on non-zero exit (un evidenced stamp deltas).
+   - **CRITICAL:** Apply pre-write concurrency revalidation (if board changed mid-run, re-read latest content and re-apply transforms before write)
+   - **CRITICAL:** Document reconciliation stats (audited rows, removed rows, kept exceptions, timestamps normalized, revalidation trigger)
+7. **Validate Consistency** - **Runs if comprehensive (no flags) or bookkeeping (`-u`):** Cross-reference status across all kanban documents, verify version consistency, check link integrity
+8. **Stage Files** - **Always runs:** Run `git add` for all kanban files
+9. **Document Changes** - **Always runs:** Create summary of updated documents, list key status changes
+
+**🔄 UKW → RW Integration:**
+
+**Important:** After completing UKW, the user typically runs RW to commit the kanban documentation updates. When RW is triggered immediately after UKW:
+
+- **UKW Context Detection:** RW Step 2 will detect UKW context (user ran "UKW" then "RW")
+- **Perpetual Task Wiring:** UKW Step 1 establishes wiring to the project's perpetual UKW task (discovers task ID via `perpetual_task: true` flag)
+- **RW Uses Wired Task:** RW uses the perpetual task ID that UKW discovered in Step 1:
+  - **Wiring Established:** UKW Step 1 found the perpetual task (e.g., E6:S06:T101 in ai-dev-kit, E4:S03:T05 in another project)
+  - **RW Uses Wired ID:** RW Step 2 (UKW context) uses the task ID from UKW's wiring step
+  - **Same Task, Different ID per Project:** Each project instance has its own perpetual UKW task with its own E/S/T ID
+- **Version Pattern:** UKW releases use the wired perpetual task's version pattern: `v0.{EPIC}.{STORY}.{PERPETUAL_TASK}+{BUILD}` where BUILD = UKW run count
+- **Build Warning Suppression:** Perpetual tasks have `perpetual_task: true` flag, so high BUILD numbers are expected and valid (no warnings)
+
+**Wiring Example (ai-dev-kit):**
+- UKW Step 1 discovers: E6:S06:T101 is the perpetual UKW task (migrated from T08)
+- UKW wires itself to E6:S06:T101
+- When RW runs after UKW, it uses the wired task ID (E6:S06:T101)
+- Version: `v0.6.6.101+{N}` (migrated from `v0.6.6.8+{N}`)
+
+**Wiring Example (other project):**
+- UKW Step 1 discovers: E4:S03:T05 is the perpetual UKW task
+- UKW wires itself to E4:S03:T05
+- When RW runs after UKW, it uses the wired task ID (E4:S03:T05)
+- Version: `v0.4.3.5+{N}`
+
+**🔑 Key Principles:**
+
+1. **Bottom-Up Approach:** Always update Tasks → Stories → Epics → Board (in that order)
+2. **MoSCOW List Last:** The MoSCOW priority list in the kanban board is the LAST thing to update
+3. **Synthesize Intelligently, Don't Duplicate:** Story/Epic updates require intelligent synthesis of lower-level data into meaningful narratives, not just copying task/story lists
+4. **Intelligent Status Inference:** Status updates require reasoning about completion state, not just counting checkboxes
+5. **Strategic Prioritization:** MoSCOW classification requires understanding of goals, dependencies, impact, and strategic context
+6. **Meaningful Narratives:** Tactical/strategic overviews must be natural, readable summaries that capture progress and context
+7. **Status Consistency:** Ensure status flows correctly up the hierarchy with intelligent validation
+8. **Consider Recent Activity:** Always check recent commits and FR/BR/UXRs to detect status changes
+
+**📋 Workflow YAML:**
+
+The workflow definition is located at:
+- `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
+
+**📚 Related Documentation:**
+
+- Release Workflow (RW): Updates kanban docs as part of release process
+- UKW: Standalone workflow for comprehensive kanban sync
+- Kanban Governance Policy: `packages/frameworks/kanban/policies/kanban-governance-policy.md`
+
+---
+
+### 🔄 IMPLEMENTATION CYCLE WORKFLOW (ICW) TRIGGER
+
+> **Claude Code users:** Use `/ipw [E:S:T]` (`.claude/commands/ipw.md`) — the canonical slash command. IPW must run in plan mode. The ICW trigger below is the Cursor-equivalent invocation.
+
+**When the user types "ICW" or "icw" (case-insensitive), execute the Implementation Cycle Workflow as an intelligent agent:**
+
+**🚨 CRITICAL REQUIREMENT: ICW MUST BE EXECUTED IN PLANNING MODE**
+
+1. **MODE VALIDATION (MANDATORY):** ICW will detect execution mode and CANCEL if not in planning mode
+2. **DO NOT** run any deterministic scripts
+3. **DO** execute the Implementation Cycle Workflow using the **intelligent agent-driven execution pattern**
+4. **THINK FIRST, ACT SECOND** - Analyze the implementation requirements and guide through three phases
+5. **BE ADAPTIVE** - Provide intelligent guidance for specification, testing, and implementation planning
+6. **LOAD CONFIG FIRST (MANDATORY):** Before Step 1, load `icw-config.yaml` from workflow directory
+7. **🚨 MANDATORY: Start with Step 1: Initialize Implementation Cycle** - This is a **MANDATORY BLOCKING STEP**
+8. **EXECUTE INTELLIGENTLY** - Use your AI capabilities to guide through specification, test design, and implementation planning
+9. **GUIDE THE USER** - Ask relevant questions and provide intelligent assistance throughout the three phases
+10. **Document** each phase's analysis, decisions, and results
+11. **Durable artifacts (IPW / ICW responsibility):** Do **not** leave the specification package only in IDE-local plan folders (e.g. `~/.cursor/plans/`). Persist outputs under the project **`docs/implementation-cycles/`** tree (or the `output_dir` in `icw-workflow.yaml`): **either** a single **`IPP-E…S…T…-*.md`** (consolidated IPW per `.claude/commands/ipw.md`) **or** the **`ICW-E…S…T…-*`** file set where applicable, and **link those paths from the Kanban task** (and mirror key acceptance bullets into the task doc when helpful). **Policy:** `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md`; packaging matrix: `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md`.
+
+**🔍 MODE DETECTION AND VALIDATION:**
+- **Planning Mode:** ✅ ALLOWED - ICW requires intelligent agent guidance
+- **Implementation Mode:** 🚫 BLOCKED - ICW will cancel execution with error message
+- **Unknown Mode:** 🚫 BLOCKED - ICW requires explicit planning mode
+
+**📝 ERROR HANDLING FOR WRONG MODE:**
+If ICW detects implementation mode:
+- Display clear error message explaining planning mode requirement
+- Provide instructions to switch to planning mode
+- Cancel execution gracefully
+- Do not proceed with any ICW steps
+
+**🧠 AGENT INTELLIGENCE REQUIREMENTS:**
+
+- **Three-Phase Guidance:** Guide through Specification Definition → Test Design → Implementation Planning
+- **Interactive Questioning:** Ask relevant questions to elicit complete requirements
+- **Template Processing:** Generate structured documents using ICW templates
+- **Quality Assurance:** Validate completeness and consistency across phases
+- **Context Awareness:** Understand project patterns and integration requirements
+
+### 🔄 THREE-PHASE EXECUTION PATTERN
+
+**When user types "ICW":**
+
+1. **START IMMEDIATELY** - Begin Phase 1: Specification Definition
+2. **PHASE 1: SPECIFICATION DEFINITION** - Guide through requirements gathering and specification creation
+3. **PHASE 2: TEST DESIGN** - Guide through comprehensive test design based on specifications
+4. **PHASE 3: IMPLEMENTATION PLANNING** - Guide through detailed implementation planning
+5. **GENERATE PACKAGE** - Create complete implementation package with all three phases
+6. **INTEGRATE WITH KANBAN** - Update kanban system with implementation task and artifacts; ensure the **task doc lists planning artifact links** (`ICW-*` and/or **`IPP-*`**) under `docs/implementation-cycles/` (repo SoT per policy in `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md` and `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md`)
+7. **COMPLETE** - Report success and provide next steps
+
+**Agent Guidance for Each Phase:**
+
+- **Phase 1:** Ask questions about problem, objectives, constraints, acceptance criteria
+- **Phase 2:** Review specifications and guide test design for coverage and completeness
+- **Phase 3:** Analyze tests and specifications to create detailed implementation plan
+
+**🚨 CONTINUOUS GUIDANCE REQUIRED:**
+
+- **DO NOT** stop after each phase and wait for user guidance
+- **DO** continue asking relevant questions and providing intelligent assistance
+- **DO** ensure each phase is complete before proceeding to next
+- **DO** validate quality and completeness at each step
+
+---
+
+## Document Lifecycle Management
+
+Documents in `docs/` directory must have lifecycle metadata in frontmatter:
+
+**Required Fields:**
+- `lifecycle`: `evergreen` | `timeboxed` | `transient`
+- `created_at`: ISO 8601 datetime
+
+**Optional Fields:**
+- `ttl_days`: Time to live in days (integer or null)
+- `expires_at`: Expiration datetime (ISO 8601 or null)
+- `housekeeping_policy`: `keep` | `archive` | `delete`
+
+**Lifecycle Values:**
+- `evergreen`: Permanent documentation (no expiration)
+- `timeboxed`: Time-limited documentation (expires after `ttl_days`)
+- `transient`: Temporary documentation (short-lived)
+
+**Housekeeping Policy:**
+- `keep`: Keep document permanently
+- `archive`: Archive document when expired
+- `delete`: Delete document when expired
+
+**Automated Management:**
+- Check document expiration based on `ttl_days` or `expires_at`
+- Apply housekeeping policy when document expires
+- Archive or delete expired documents based on policy
+
+---
+
+## Git Workflow Restrictions
+
+**Strict Rules:**
+- Commits MUST be made via Release Workflow (RW) only
+- Pushes MUST be made via Release Workflow (RW) only
+- Branch isolation MUST be enforced
+- Pre-commit validation MUST pass
+
+**Prohibited Operations:**
+- Manual `git commit` (use RW instead)
+- Manual `git push` (use RW instead)
+- Commits to wrong branch (validated by branch safety check)
+- Pushes without validation (validated by RW)
+
+**Enforcement:**
+- Branch safety check validates branch context
+- Workflow validators ensure compliance
+- Clear error messages for violations
+
+---
+
+## Implementation Cycle (Adoptable Pattern)
+
+**When implementing tasks, projects adopting this pattern MUST follow the Implementation Cycle (spec + TDD):**
+
+**Reference:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md` (framework SoP for adopters).
+
+**Steps (do not skip when pattern is adopted):**
+1. **Requirement Documentation** — Create or update BR/FR or document requirement in task.
+2. **Task Creation** — Create task in Epic/Story with deliverables, acceptance criteria, link to BR/FR; add to Story Task Checklist. Align with Kanban Governance.
+3. **Specification & Test Creation (TDD) — 🚨 BLOCKING** — Ascertain spec from task/BR/FR; identify testable behaviors; write **failing tests** (Red phase). Cannot proceed to implementation without tests.
+4. **Implementation** — Red-Green-Refactor: implement to make tests pass, run tests after each change, refactor while keeping tests green.
+5. **Release Workflow (RW)** — Run RW for version, changelog, Kanban update, commit, tag, push.
+
+**Enforcement when adopted:** Step 3 is BLOCKING — implementation (Step 4) cannot start until tests exist and fail as expected. Pre-implementation checklist: requirement documented, task created, spec ascertained, tests created and failing, tests compile.
+
+**Integration:** Task creation aligns with `packages/frameworks/kanban/policies/kanban-governance-policy.md`; RW updates Kanban via **Step 7 — Scoped Kanban Reconciliation (Self-Sufficient)** which owns release-scope four-surface consistency without depending on UKW (per [FR-092](docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)). Projects may make this cycle mandatory for all task implementations.
+
+---
+
+## Version Schema
+
+**ADK Version Schema:** `RC.EPIC.STORY.TASK+BUILD`
+
+- `RC`: Release Candidate (0 = development, 1+ = release candidate)
+- `EPIC`: Epic number (1-23 canonical, 24+ project-specific)
+- `STORY`: Story number within epic (3-digit padding)
+- `TASK`: Task number within story (2-digit padding)
+- `BUILD`: Build number (increments per release within task)
+
+**Examples:**
+- `0.6.6.6+1` = Development, Epic 6, Story 6, Task 6, Build 1
+- `1.1.1.1+1` = Release Candidate 1, Epic 1, Story 1, Task 1, Build 1
+
+**Schema Calculation:**
+- Epic N, Story S, Task T → Version: `0.N.S.T+1` (first build)
+- Build Increment: Same Epic/Story/Task → Increment BUILD (e.g., `0.N.S.T+1` → `0.N.S.T+2`)
+- New Task: Different Task → Reset BUILD to 1 (e.g., `0.N.S.T+5` → `0.N.S.{T+1}+1`)
+- New Story: Different Story → Reset TASK to 1, BUILD to 1 (e.g., `0.N.S.T+B` → `0.N.{S+1}.1+1`)
+- New Epic: Different Epic → Reset STORY to 1, TASK to 1, BUILD to 1 (e.g., `0.N.S.T+B` → `0.{N+1}.1.1+1`)
+
+**Epic Alignment:** Epic number should match current branch (if on `epic/{n}`, version should be `0.{n}.S.T+B`)
+
+**Epic Ranges (ai-dev-kit):**
+- Epic 1-4+ (Epic 1: AI Dev Kit Core, Epic 2: Workflow Management Framework, Epic 3: Numbering & Versioning Framework, Epic 4: Kanban Framework)
+- Epic 24+ (project-specific range, e.g., Epic 24: Book Related Work)
+- No legacy range in dev-kit - starts from Epic 1 with full schema
+
+**Reference:** See `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (canonical SoT for dev-kit)
+
+---
+
+## Branch Mapping
+
+**Branch Naming:** `epic/{N}-{description}`
+
+- `{N}`: Epic number (1-23 canonical, 24+ project-specific)
+- `{description}`: Epic description (lowercase, hyphenated)
+
+**Examples:**
+- `epic/6-framework-management`
+- `epic/1-project-core`
+- `epic/24-project-specific`
+
+**Branch Types:**
+- `main` - **PRODUCTION BRANCH** - Only merge when ready to deploy. Auto-deploys trigger on every push!
+- `epic/{n}-{description}` - **DEVELOPMENT BRANCH** - All epic work should be done here. Should have version `0.{n}.S.T+B`
+- `dev` - **SHARED DEVELOPMENT BRANCH (optional)** - Allowed only in strict-equal-epic mode with `rw-config.yaml` key `dev_branch_epic`; must still satisfy the same epic/version alignment checks as `epic/{n}`.
+
+**🚨 CRITICAL: Epic Branch Workflow**
+- **ALWAYS work on epic branches** (`epic/{n}-{description}`, e.g., `epic/6-framework-management`, `epic/1-core`, etc.)
+- **NEVER commit directly to `main`** during epic development
+- **ONLY merge to `main`** when ready to deploy (triggers auto-deployment)
+- **Release Workflow (RW)** should be run on epic branch, then merge to main
+- This prevents unnecessary deployments during development
+
+**Validation:**
+- Branch name must match epic number in version
+- Branch context validation ensures consistency
+- Workflow aborts if branch mismatch detected
+- If using `dev`, `dev_branch_epic` must be configured; missing/invalid mapping is a blocking validation failure
+
+---
+
+## Project-Specific Rules
+
+### AI Dev Kit Framework Rules
+
+**Framework Source Repository:**
+- ai-dev-kit serves as the source repository for all frameworks
+- Frameworks are packaged in `packages/frameworks/`
+- Frameworks can be installed as dependencies (Git submodules, CLI tool, package managers)
+
+**Canonical Epics:**
+- Epic 1-23 are canonical framework epics
+- Epic 24+ are project-specific epics (e.g., Epic 24: Book Related Work)
+- Projects should use canonical templates, not copy ai-dev-kit's actual Kanban
+
+**Version File:**
+- Current location: `src/fynd_deals/version.py` (legacy path, acceptable for now)
+- Future: May migrate to `src/ai_dev_kit/version.py`
+
+**Configuration:**
+- `rw-config.yaml` in project root is the single source of truth for all project-specific paths
+- Config-driven approach is preferred for all workflows
+
+**Documentation:**
+- Canonical documentation lives in `docs/architecture/standards-and-adrs/`
+- Framework documentation lives in `packages/frameworks/`
+- User documentation lives in `docs/documentation/user-docs/`
+
+### Custom Workflows
+
+**Release Workflow (RW):**
+- Primary workflow for versioning and releasing work
+- Config-driven, supports Kanban integration
+- Mandatory branch safety check before any modifications
+
+**Update Kanban Workflow (UKW):**
+- Standalone workflow for comprehensive kanban synchronization
+- Bottom-up approach (Tasks → Stories → Epics → Board)
+- Requires agentic intelligence for synthesis and prioritization
+
+**Package Version Workflow (PVW):**
+- Optional workflow for package version management
+- Integrated into RW as Step 2.5
+- Can also be triggered manually
+
+---
+
+**End of Cursor Rules**
+

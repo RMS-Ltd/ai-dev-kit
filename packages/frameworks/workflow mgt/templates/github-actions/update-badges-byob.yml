@@ -1,0 +1,249 @@
+name: Update README Badges (BYOB)
+
+# This workflow uses BYOB (Bring Your Own Badge) to create dynamic badges
+# that work with private repositories by hosting badge data in a public repo.
+#
+# This is an OPTIONAL workflow for users with private repositories.
+# Public repositories can use standard Shields.io badges without this workflow.
+#
+# Setup Instructions:
+# 1. Create a public repository (e.g., '{your-org}/{your-repo}-badges' or use an existing public repo)
+# 2. Create a Personal Access Token with 'repo' scope
+# 3. Add the token as a repository secret named 'BADGES_REPO_TOKEN'
+# 4. Update the REPOSITORY and ACTOR values below to match your public repo
+# 5. Update the version_file path to match your project structure
+# 6. Update the test workflow name if you have a different test workflow
+#
+# Badge URLs will be: https://byob.yarr.is/{REPOSITORY}/{badge-name}
+# Example: https://byob.yarr.is/your-org/your-repo-badges/version
+#
+# See: docs/knowledge/guides/badge-setup-for-private-repos.md for detailed setup instructions
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**/version.py'  # Update this path to match your version file location
+      - 'README.md'
+      - '**/*.py'  # Trigger on code changes that might affect tests
+  workflow_dispatch:
+  # Also trigger when tests complete (if you have a test workflow)
+  workflow_run:
+    workflows: ["Tests"]  # Update this to match your test workflow name
+    types:
+      - completed
+
+jobs:
+  update_badges:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract version
+        id: version
+        run: |
+          # Update this path to match your version file location
+          # Example: VERSION=$(python3 -c "import sys; sys.path.insert(0, 'src'); from your_module import version; print(version.VERSION_STRING)")
+          VERSION=$(python3 -c "import sys; sys.path.insert(0, 'src'); from fynd_deals import version; print(version.VERSION_STRING)")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Extracted version: $VERSION"
+
+      - name: Update version badge
+        uses: RubbaBoy/BYOB@v1.3.0
+        with:
+          NAME: version
+          LABEL: 'version'
+          STATUS: ${{ steps.version.outputs.version }}
+          COLOR: 007ACC
+          ICON: 'tag'
+          GITHUB_TOKEN: ${{ secrets.BADGES_REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          # For private repo: uncomment and set these to your public repo
+          # REPOSITORY: 'your-org/your-repo-badges'
+          # ACTOR: 'your-github-username'
+
+      - name: Update license badge
+        uses: RubbaBoy/BYOB@v1.3.0
+        with:
+          NAME: license
+          LABEL: 'license'
+          STATUS: 'MIT'  # Update this to match your license
+          COLOR: green
+          ICON: 'scale'
+          GITHUB_TOKEN: ${{ secrets.BADGES_REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          # For private repo: uncomment and set these to your public repo
+          # REPOSITORY: 'your-org/your-repo-badges'
+          # ACTOR: 'your-github-username'
+
+      - name: Update status badge
+        uses: RubbaBoy/BYOB@v1.3.0
+        with:
+          NAME: status
+          LABEL: 'status'
+          STATUS: 'active'
+          COLOR: success
+          ICON: 'check-circle'
+          GITHUB_TOKEN: ${{ secrets.BADGES_REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          # For private repo: uncomment and set these to your public repo
+          # REPOSITORY: 'your-org/your-repo-badges'
+          # ACTOR: 'your-github-username'
+
+      - name: Run tests and extract status
+        id: test-status
+        continue-on-error: true
+        run: |
+          # Run tests and capture exit code
+          if python3 -m pytest --version > /dev/null 2>&1; then
+            # pytest is available, run tests
+            if python3 -m pytest -v --tb=short 2>&1 | tee test_output.txt; then
+              echo "status=passing" >> $GITHUB_OUTPUT
+              echo "color=success" >> $GITHUB_OUTPUT
+            else
+              echo "status=failing" >> $GITHUB_OUTPUT
+              echo "color=critical" >> $GITHUB_OUTPUT
+            fi
+          else
+            # No pytest, assume tests not set up yet
+            echo "status=not configured" >> $GITHUB_OUTPUT
+            echo "color=grey" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Update test status badge
+        uses: RubbaBoy/BYOB@v1.3.0
+        with:
+          NAME: tests
+          LABEL: 'tests'
+          STATUS: ${{ steps.test-status.outputs.status }}
+          COLOR: ${{ steps.test-status.outputs.color }}
+          ICON: 'check-circle'
+          GITHUB_TOKEN: ${{ secrets.BADGES_REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          # For private repo: uncomment and set these to your public repo
+          # REPOSITORY: 'your-org/your-repo-badges'
+          # ACTOR: 'your-github-username'
+
+      - name: Extract coverage percentage
+        id: coverage
+        continue-on-error: true
+        run: |
+          # Try to extract coverage from pytest-cov or coverage report
+          if python3 -m pytest --version > /dev/null 2>&1; then
+            # Run tests with coverage
+            if python3 -m pytest --cov=. --cov-report=term 2>&1 | tee coverage_output.txt; then
+              # Extract coverage percentage from output
+              COVERAGE=$(grep -oP 'TOTAL\s+\d+\s+\d+\s+\K\d+%' coverage_output.txt | head -1 || echo "0%")
+              if [ -z "$COVERAGE" ] || [ "$COVERAGE" = "0%" ]; then
+                # Try alternative extraction
+                COVERAGE=$(grep -oP '\d+%' coverage_output.txt | tail -1 || echo "0%")
+              fi
+              echo "coverage=$COVERAGE" >> $GITHUB_OUTPUT
+              
+              # Determine color based on coverage percentage
+              COVERAGE_NUM=$(echo "$COVERAGE" | sed 's/%//')
+              if [ "$COVERAGE_NUM" -ge 80 ]; then
+                echo "color=success" >> $GITHUB_OUTPUT
+              elif [ "$COVERAGE_NUM" -ge 60 ]; then
+                echo "color=important" >> $GITHUB_OUTPUT
+              else
+                echo "color=critical" >> $GITHUB_OUTPUT
+              fi
+            else
+              echo "coverage=0%" >> $GITHUB_OUTPUT
+              echo "color=critical" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "coverage=not configured" >> $GITHUB_OUTPUT
+            echo "color=grey" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Update coverage badge
+        uses: RubbaBoy/BYOB@v1.3.0
+        with:
+          NAME: coverage
+          LABEL: 'coverage'
+          STATUS: ${{ steps.coverage.outputs.coverage }}
+          COLOR: ${{ steps.coverage.outputs.color }}
+          ICON: 'shield'
+          GITHUB_TOKEN: ${{ secrets.BADGES_REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          # For private repo: uncomment and set these to your public repo
+          # REPOSITORY: 'your-org/your-repo-badges'
+          # ACTOR: 'your-github-username'
+
+      - name: Check code quality
+        id: code-quality
+        continue-on-error: true
+        run: |
+          # Try different linting tools in order of preference
+          QUALITY_STATUS="not configured"
+          QUALITY_COLOR="grey"
+          
+          # Try ruff first (fast and modern)
+          if python3 -m ruff --version > /dev/null 2>&1; then
+            if python3 -m ruff check . --output-format=concise 2>&1 | tee quality_output.txt; then
+              QUALITY_STATUS="passing"
+              QUALITY_COLOR="success"
+            else
+              # Check if there are only warnings (non-zero exit but not critical)
+              ERROR_COUNT=$(grep -c "error" quality_output.txt || echo "0")
+              if [ "$ERROR_COUNT" -eq 0 ]; then
+                QUALITY_STATUS="warnings"
+                QUALITY_COLOR="important"
+              else
+                QUALITY_STATUS="failing"
+                QUALITY_COLOR="critical"
+              fi
+            fi
+          # Try pylint as fallback
+          elif python3 -m pylint --version > /dev/null 2>&1; then
+            if python3 -m pylint --disable=all --enable=E,F --fail-under=8 . 2>&1 | tee quality_output.txt; then
+              QUALITY_STATUS="passing"
+              QUALITY_COLOR="success"
+            else
+              SCORE=$(grep -oP 'rated at \K[\d.]+' quality_output.txt | head -1 || echo "0")
+              SCORE_INT=$(echo "$SCORE" | cut -d. -f1)
+              if [ "$SCORE_INT" -ge 8 ]; then
+                QUALITY_STATUS="warnings"
+                QUALITY_COLOR="important"
+              else
+                QUALITY_STATUS="failing"
+                QUALITY_COLOR="critical"
+              fi
+            fi
+          # Try flake8 as last resort
+          elif python3 -m flake8 --version > /dev/null 2>&1; then
+            if python3 -m flake8 . 2>&1 | tee quality_output.txt; then
+              QUALITY_STATUS="passing"
+              QUALITY_COLOR="success"
+            else
+              ERROR_COUNT=$(grep -c "E[0-9]" quality_output.txt || echo "0")
+              WARNING_COUNT=$(grep -c "W[0-9]" quality_output.txt || echo "0")
+              if [ "$ERROR_COUNT" -eq 0 ] && [ "$WARNING_COUNT" -lt 10 ]; then
+                QUALITY_STATUS="warnings"
+                QUALITY_COLOR="important"
+              else
+                QUALITY_STATUS="failing"
+                QUALITY_COLOR="critical"
+              fi
+            fi
+          fi
+          
+          echo "status=$QUALITY_STATUS" >> $GITHUB_OUTPUT
+          echo "color=$QUALITY_COLOR" >> $GITHUB_OUTPUT
+
+      - name: Update code quality badge
+        uses: RubbaBoy/BYOB@v1.3.0
+        with:
+          NAME: code-quality
+          LABEL: 'code quality'
+          STATUS: ${{ steps.code-quality.outputs.status }}
+          COLOR: ${{ steps.code-quality.outputs.color }}
+          ICON: 'code'
+          GITHUB_TOKEN: ${{ secrets.BADGES_REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          # For private repo: uncomment and set these to your public repo
+          # REPOSITORY: 'your-org/your-repo-badges'
+          # ACTOR: 'your-github-username'
+

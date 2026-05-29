@@ -1,0 +1,113 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Epic-4.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated Version: v0.4.19.4+5",
+        "Updated Last updated: 2026-05-14 (v0.4.19.4+5 \u2013 T04 complete: E4:S19:T04)",
+        "Reconciled Task Checklist row: E4:S19:T4 -> [x] \u2705 COMPLETE",
+        "Updated Status: IN PROGRESS",
+        "Updated Story 19 checklist entry",
+        "Updated Epic Last updated: 2026-05-14 (v0.4.19.4+5 \u2013 Story 19 Task 4 complete)",
+        "Updated board Last Updated: 2026-05-14 (RW: E4:S19:T4)",
+        "Updated board Version: v0.4.19.4+5",
+        "Updated MoSCOW section: E4:S19:T4 marked as COMPLETE"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 4,
+    "story": 19,
+    "task": 4,
+    "task_id": "E4:S19:T4",
+    "version_string": "v0.4.19.4+5"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 13,
+    "touched_surfaces": [
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": [
+      "task_doc",
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "fbuboard": {
+      "changes": [
+        "Enforced terminal row timestamps: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md",
+        "fbuboard reconciliation: audited=82, removed=1, kept_exceptions=1, timestamps_added_missing=0"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Pruned COMPLETE rows from active kboard MoSCOW sections (1 removed)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md"
+      ],
+      "surface": "task_doc",
+      "touched": false
+    }
+  },
+  "timestamp_utc": "2026-05-14 11:11 UTC"
+}

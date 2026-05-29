@@ -1,0 +1,20 @@
+# Update Kanban Workflow Configuration
+# This file contains configuration parameters for the Update Kanban Workflow
+
+workflow:
+  name: "Update Kanban Workflow"
+  abbreviation: "UKW"
+  version: "1.0.0"
+  description: "Update Kanban board documentation"
+
+# Default configuration values
+defaults:
+  kanban_root: "docs/project-management/kanban"
+  epic_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md"
+  story_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md"
+
+# Execution configuration
+execution:
+  auto_create_stories: true
+  update_epic_status: true
+  sync_with_versions: true

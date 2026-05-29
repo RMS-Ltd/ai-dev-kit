@@ -1,0 +1,12 @@
+{
+  "server": "plugin-notion-workspace-notion",
+  "toolName": "notion-update-page",
+  "arguments": {
+    "data": {
+      "page_id": "30db6f8962c181e9b212f0f525ac3f37",
+      "command": "replace_content",
+      "new_str": "---\nlifecycle: evergreen\nttl_days: null\ncreated_at: 2025-12-05T14:25:00Z\nexpires_at: null\nhousekeeping_policy: keep\n---\n\n# Story 003 – Book Publishing Support\n\n**Status:** TODO  \n**Priority:** LOW  \n**Estimated Effort:** [TBD]  \n**Created:** 2025-12-05  \n**Last updated:** 2025-12-05  \n**Version:** v0.24.3.1+1  \n**Code:** E9S03\n\n---\n\n## Task Checklist\n\n- [ ] **E24:S03:T01 – Create publishing workflows** - TODO\n- [ ] **E24:S03:T02 – Build publishing tools** - TODO\n- [ ] **E24:S03:T03 – Establish publishing processes** - TODO\n\n---\n\n## Overview\n\nThis story creates publishing workflows, tools, and processes for book publication.\n\n---\n\n## Goal\n\nCreate comprehensive publishing support for book publication.\n\n---\n\n## Tasks\n\n### E24:S03:T01 – Create publishing workflows\n\n**Input:** Publishing requirements, book content  \n**Deliverable:** Publishing workflow documentation  \n**Dependencies:** E24:S01 (Book Content Development)  \n**Blocker:** None\n\n**Approach:**\n1. Identify publishing requirements\n2. Design publishing workflows\n3. Create workflow documentation\n4. Publish workflows\n\n---\n\n### E24:S03:T02 – Build publishing tools\n\n**Input:** Publishing workflows  \n**Deliverable:** Publishing tool implementations  \n**Dependencies:** E24:S03:T01  \n**Blocker:** None\n\n**Approach:**\n1. Identify tool needs\n2. Create publishing tools\n3. Build tool documentation\n4. Publish tools\n\n---\n\n### E24:S03:T03 – Establish publishing processes\n\n**Input:** Publishing workflows, tools  \n**Deliverable:** Publishing process documentation  \n**Dependencies:** E24:S03:T02  \n**Blocker:** None\n\n**Approach:**\n1. Define publishing processes\n2. Create process documentation\n3. Establish process procedures\n4. Publish processes\n\n---\n\n## Dependencies\n\n**Blocks:**\n- None\n\n**Blocked By:**\n- E24:S01 (Book Content Development)\n\n**Coordinates With:**\n- Epic 5 (Documentation Management)\n- Epic 8 (Tooling & Automation)\n\n---\n\n## References\n\n- `docs/project-management/kanban/epics/Epic-24/Epic-24.md`\n- `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development.md`\n- `docs/project-management/kanban/epics/Epic-24/Story-002-book-integration-with-dev-kit.md`\n\n",
+      "allow_deleting_content": true
+    }
+  }
+}

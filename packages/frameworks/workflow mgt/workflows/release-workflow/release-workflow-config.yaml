@@ -1,0 +1,37 @@
+# Release Workflow Configuration
+# This file contains configuration parameters for the Release Workflow
+
+workflow:
+  name: "Release Workflow"
+  abbreviation: "RW"
+  version: "1.0.0"
+  description: "Complete release process with version management"
+
+# Default configuration values
+defaults:
+  version_file: "src/{project}/version.py"
+  changelog_dir: "docs/changelog-and-release-notes/changelog-archive"
+  main_changelog: "CHANGELOG.md"
+  readme_file: "README.md"
+  kanban_root: "docs/project-management/kanban"
+  scripts_path: "packages/frameworks/workflow mgt/scripts/validation"
+
+# Execution paths for different trigger types
+execution_paths:
+  full_release:
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 10, 11, 12, 13, 14, 15, 16, 17]
+    description: "Complete release cycle with all steps"
+    
+  documentation_only:
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14]
+    description: "Documentation updates without full release cycle"
+    skips: ["git_tag", "push", "pir_trigger", "housekeeping"]
+
+# Step-specific configuration
+steps:
+  step_13:
+    include_housekeeping: true
+    include_reflection: true
+    
+  step_15:
+    pir_workflow_path: "packages/frameworks/workflow mgt/workflows/post-implementation-review/pir-workflow.yaml"

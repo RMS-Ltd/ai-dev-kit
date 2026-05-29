@@ -1,0 +1,43 @@
+# FR-069 / E5:S09:T05 — Docusaurus production build gate for portal + docs.
+# Path filters: avoid running on unrelated repo changes. Push runs only on main;
+# pull_request runs when the PR touches these paths (any base branch).
+name: Docusaurus site build
+
+# Quote `on` so YAML 1.1 parsers (e.g. PyYAML) do not treat it as boolean true.
+"on":
+  pull_request:
+    paths:
+      - "portal/**"
+      - "docs/**"
+      - ".github/workflows/docusaurus-build.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "portal/**"
+      - "docs/**"
+      - ".github/workflows/docusaurus-build.yml"
+
+defaults:
+  run:
+    working-directory: portal
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: portal/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Production build
+        run: npm run build

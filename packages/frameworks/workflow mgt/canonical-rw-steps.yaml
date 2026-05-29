@@ -1,0 +1,187 @@
+# Canonical Release Workflow (RW) Step List
+# Single Source of Truth for all RW step definitions
+# 
+# This file defines the authoritative step list for the Release Workflow.
+# All other files should reference this definition to prevent duplication and drift.
+#
+# Last Updated: 2026-03-09
+# Version: 1.0.0
+
+canonical_rw_steps:
+  step_1:
+    number: 1
+    name: "Branch Safety Check"
+    description: "Verify work aligns with branch context"
+    mandatory: true
+    blocking: true
+    category: "safety"
+  
+  step_2:
+    number: 2
+    name: "Bump Version"
+    description: "Increment version number based on schema (BUILD for same task, or TASK+BUILD=1 for new task)"
+    mandatory: true
+    blocking: false
+    category: "version"
+  
+  step_3:
+    number: 3
+    name: "Create Detailed Changelog"
+    description: "Create detailed changelog archive with full timestamp and PLAN section"
+    mandatory: true
+    blocking: false
+    category: "documentation"
+  
+  step_4:
+    number: 4
+    name: "Update Main Changelog"
+    description: "Add summary entry with short date (DD-MM-YY)"
+    mandatory: true
+    blocking: false
+    category: "documentation"
+  
+  step_5:
+    number: 5
+    name: "Update README"
+    description: "Update version references if present (optional)"
+    mandatory: false
+    blocking: false
+    category: "documentation"
+  
+  step_6:
+    number: 6
+    name: "Auto-update Kanban Docs"
+    description: "Update ALL sections (header, checklist, detailed story sections) to match authoritative Story file"
+    mandatory: true
+    blocking: false
+    category: "documentation"
+  
+  step_7:
+    number: 7
+    name: "Stage Files"
+    description: "Stage all modified files for commit"
+    mandatory: true
+    blocking: false
+    category: "git"
+  
+  step_8:
+    number: 8
+    name: "Check for and Address IDE-Flagged Problems"
+    description: "Check errors, warnings, infos in order"
+    mandatory: true
+    blocking: false
+    category: "validation"
+  
+  step_9:
+    number: 9
+    name: "Run Validators"
+    description: "Execute branch context and changelog format validators"
+    mandatory: true
+    blocking: false
+    category: "validation"
+  
+  step_9_5:
+    number: 9.5
+    name: "Changelog Management Workflow (CMW)"
+    description: "Trigger CMW if changelog size exceeds threshold (optional, non-blocking)"
+    mandatory: false
+    blocking: false
+    category: "maintenance"
+  
+  step_10:
+    number: 10
+    name: "Commit Changes"
+    description: "Create git commit with versioned message"
+    mandatory: true
+    blocking: false
+    category: "git"
+  
+  step_11:
+    number: 11
+    name: "Create Git Tag"
+    description: "Create annotated tag"
+    mandatory: true
+    blocking: false
+    category: "git"
+  
+  step_12:
+    number: 12
+    name: "Push to Remote"
+    description: "Push branch and tags (with network permissions)"
+    mandatory: true
+    blocking: false
+    category: "git"
+  
+  step_13:
+    number: 13
+    name: "Post-Commit Verification, Housekeeping & Reflection"
+    description: "Verify release, perform housekeeping tasks, and reflect on process (optional but recommended)"
+    mandatory: false
+    blocking: false
+    category: "verification"
+    recommended: true
+  
+  step_14:
+    number: 14
+    name: "Act on Verification Results"
+    description: "Address any issues found during verification (optional, agent-determined)"
+    mandatory: false
+    blocking: false
+    category: "verification"
+  
+  step_15:
+    number: 15
+    name: "Check for PIR Trigger"
+    description: "Determine if Post-Implementation Review is needed"
+    mandatory: false
+    blocking: false
+    category: "verification"
+  
+  step_16:
+    number: 16
+    name: "Housekeeping"
+    description: "Clean up temporary files and IDE todos"
+    mandatory: false
+    blocking: false
+    category: "maintenance"
+  
+  step_17:
+    number: 17
+    name: "Complete"
+    description: "Final verification and cleanup"
+    mandatory: false
+    blocking: false
+    category: "completion"
+
+execution_paths:
+  full_release:
+    trigger: "RW"
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 10, 11, 12, 13, 14, 15, 16, 17]
+    description: "Complete release with all operations"
+    category: "full"
+  
+  kanban_init:
+    trigger: "RW -k"
+    steps: [1, 2, 3, 4, 7, 11, 12]
+    description: "Initial Kanban documentation commit"
+    category: "documentation"
+    step_modifications:
+      7:
+        mode: "kanban_init"
+        updates: ["changelog", "version_number", "kanban_docs"]
+  
+  documentation_only:
+    trigger: "RW -d"
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14]
+    description: "Documentation updates without full release cycle"
+    category: "documentation"
+    skips: ["git_tag", "push", "pir_trigger", "housekeeping"]
+
+metadata:
+  version: "1.0.0"
+  created: "2026-03-09"
+  last_updated: "2026-03-09"
+  total_steps: 17
+  mandatory_steps: 12
+  optional_steps: 5
+  recommended_steps: 1

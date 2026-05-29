@@ -1,0 +1,276 @@
+{
+  "rows": {
+    "E4:S08:T07": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "E5:S01:T31": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "E2:S01:T08": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "E4:S06:T01": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "E5:S01:T62": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "E7:S01:T06": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "E7:S01:T05": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "unknown-row": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-039": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-067": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-077": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-065": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-066": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-040": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-046": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "UXR-001": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "UXR-002": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "UXR-005": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "UXR-006": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-031": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-032": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-030": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-021": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "UXR-003": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-043": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-044": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-039": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-037": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-029": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-024": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-023": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-022": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-020": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-019": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-018": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-017": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-016": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-014": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-013": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-012": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-010": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-009": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-008": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-007": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-006": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-005": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-003": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-002": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-008": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-007": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-006": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-005": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-003": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-002": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-001": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-058": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "BR-059": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-048": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-049": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-057": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-058": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-059": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-062": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-063": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-072": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-074": {
+      "allowed": true,
+      "reason": "FR-097 automatic backfill"
+    },
+    "FR-097": {
+      "allowed": true,
+      "reason": "FR-097 implementation row"
+    },
+    "E2:S15:T08": {
+      "allowed": true,
+      "reason": "FR-097 implementation row"
+    }
+  }
+}

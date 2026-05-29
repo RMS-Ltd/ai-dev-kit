@@ -1,0 +1,207 @@
+name: Implementation Cycle Workflow
+version: 1.0.0
+type: implementation_cycle
+description: Structured three-phase implementation workflow: Specification Definition, Test Design, and Implementation Planning. Provides disciplined approach to implementation work with intelligent agent guidance.
+
+config:
+  templates_dir: templates/icw
+  # Durable ICW outputs (repo SoT). Link from Kanban task; do not rely on IDE-only plan dirs — see docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md
+  output_dir: docs/implementation-cycles
+  kanban_root: docs/project-management/kanban
+  workflow_registry: workflows/workflow-registry.yaml
+
+steps:
+  - id: step-1
+    name: Initialize Implementation Cycle
+    type: initialization
+    handler: icw.initialize_cycle
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies: []
+    config:
+      create_output_directory: true
+      initialize_state: true
+      validate_environment: true
+
+  - id: step-2
+    name: Phase 1 - Specification Definition
+    type: specification_phase
+    handler: icw.specification_definition
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-1
+    config:
+      template: specification-template.md
+      interactive_guidance: true
+      validation_rules:
+        - problem_statement_required
+        - objectives_required
+        - acceptance_criteria_required
+        - constraints_identified
+
+  - id: step-3
+    name: Phase 2 - Test Design
+    type: test_design_phase
+    handler: icw.test_design
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-2
+    config:
+      template: test-design-template.md
+      specification_reference: true
+      test_types:
+        - unit_tests
+        - integration_tests
+        - acceptance_tests
+      validation_rules:
+        - test_scenarios_complete
+        - coverage_adequate
+        - test_data_defined
+
+  - id: step-4
+    name: Phase 3 - Implementation Planning
+    type: implementation_planning_phase
+    handler: icw.implementation_planning
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-3
+    config:
+      template: implementation-plan-template.md
+      test_driven: true
+      planning_elements:
+        - architecture_design
+        - task_breakdown
+        - resource_requirements
+        - timeline_estimation
+      validation_rules:
+        - tasks_breakdown_complete
+        - dependencies_identified
+        - resources_planned
+
+  - id: step-5
+    name: Generate Implementation Package
+    type: package_generation
+    handler: icw.generate_package
+    required: true
+    dependencies:
+      - step-2
+      - step-3
+      - step-4
+    config:
+      include_all_phases: true
+      create_summary: true
+      cross_reference_phases: true
+      output_format: markdown
+
+  - id: step-6
+    name: Update Kanban Integration
+    type: kanban_integration
+    handler: icw.kanban_update
+    required: true
+    dependencies:
+      - step-5
+    config:
+      create_task_if_needed: true
+      update_status: true
+      link_artifacts: true
+      kanban_board: ${config.kanban_root}/kboard.md
+
+  - id: step-7
+    name: Quality Validation
+    type: validation
+    handler: icw.validate_quality
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-6
+    config:
+      validate_specifications: true
+      validate_test_design: true
+      validate_implementation_plan: true
+      check_completeness: true
+      check_consistency: true
+
+  - id: step-8
+    name: Archive Implementation Cycle
+    type: archival
+    handler: icw.archive_cycle
+    required: true
+    dependencies:
+      - step-7
+    config:
+      archive_directory: ${config.output_dir}/archive
+      create_index: true
+      maintain_references: true
+
+parameters:
+  - name: implementation_title
+    type: string
+    required: true
+    label: Implementation Title
+    description: Brief title for the implementation work
+
+  - name: problem_context
+    type: textarea
+    required: true
+    label: Problem Context
+    description: Description of the problem or need for implementation
+
+  - name: scope
+    type: enum
+    required: true
+    default: feature
+    label: Implementation Scope
+    description: Type and scope of implementation
+    options:
+      - value: feature
+        label: Feature Implementation 🚀
+      - value: fix
+        label: Bug Fix 🐞
+      - value: refactor
+        label: Refactoring 🔄
+      - value: infrastructure
+        label: Infrastructure 🔧
+      - value: research
+        label: Research/Investigation 🔍
+
+  - name: priority
+    type: enum
+    required: true
+    default: medium
+    label: Priority
+    description: Implementation priority level
+    options:
+      - value: critical
+        label: Critical 🔴
+      - value: high
+        label: High 🟠
+      - value: medium
+        label: Medium 🟡
+      - value: low
+        label: Low 🟢
+
+  - name: stakeholders
+    type: string
+    required: false
+    label: Stakeholders
+    description: Key stakeholders or team members involved
+
+  - name: constraints
+    type: textarea
+    required: false
+    label: Constraints
+    description: Known constraints or limitations
+
+  - name: existing_documentation
+    type: string
+    required: false
+    label: Existing Documentation
+    description: Links to existing relevant documentation

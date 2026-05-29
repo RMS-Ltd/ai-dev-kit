@@ -1,0 +1,175 @@
+name: Intake Workflow
+version: 1.0.0
+type: intake
+description: Automated intake workflow for FR/BR/UXR reports into Kanban system
+
+config:
+  fr_br_dir: docs/project-management/kanban/fr-br
+  kanban_dir: docs/project-management/kanban/epics
+  version_file: src/fynd_deals/version.py
+  semantic_matching:
+    enabled: true
+    threshold: 0.7
+    use_e4s08: true
+  task_creation:
+    use_e4s10: true
+    template_path: packages/frameworks/kanban/templates
+  intake_status:
+    default: ACCEPTED
+    allowed_values: [ACCEPTED, PENDING, REJECTED, DEFERRED]
+  version_schema: RC.EPIC.STORY.TASK+BUILD
+  intake_build: 0
+
+steps:
+  - id: step-1
+    name: Load & Parse FR/BR/UXR Document
+    type: document_load
+    handler: intake.document_load
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies: []
+    config:
+      document_patterns:
+        fr: FR-*.md
+        br: BR-*.md
+        uxr: UXR-*.md
+
+  - id: step-2
+    name: Assign to Repository Story (S00:Txx)
+    type: repository_assignment
+    handler: intake.repository_assignment
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-1
+    config:
+      repository_stories:
+        fr: E5:S00
+        br: E6:S00
+        uxr: E7:S00
+      task_numbering:
+        auto_increment: true
+        start_from: 1
+      version_schema: RC.EPIC.STORY.TASK+BUILD
+      abstract_space_build: 0
+
+  - id: step-3
+    name: Decision Flow Analysis
+    type: decision_flow
+    handler: intake.decision_flow
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-1
+      - step-2
+    config:
+      semantic_matching:
+        enabled: true
+        threshold: 0.7
+        use_e4s08: true
+      epic_assignment:
+        auto_detect: true
+
+  - id: step-4
+    name: Create/Update Kanban Tasks
+    type: kanban_task_creation
+    handler: intake.kanban_task_creation
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-2
+      - step-3
+    config:
+      use_e4s10: true
+      template_path: packages/frameworks/kanban/templates
+      auto_link_fr_br: true
+      create_traceability_bridge: true
+      repository_task_id: ${step-2.repository_task_id}
+
+  - id: step-5
+    name: Update FR/BR/UXR Documentation
+    type: intake_documentation_update
+    handler: intake.documentation_update
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-2
+      - step-3
+      - step-4
+    config:
+      intake_status:
+        default: ACCEPTED
+        allowed_values: [ACCEPTED, PENDING, REJECTED, DEFERRED]
+      version_marker:
+        format: v{rc}.{epic}.{story}.{task}+{build}
+        build_zero_for_intake: true
+      repository_task_id: ${step-2.repository_task_id}
+
+  - id: step-6
+    name: Wire Dependencies
+    type: dependency_wiring
+    handler: intake.dependency_wiring
+    required: true
+    mandatory: false
+    blocking: false
+    dependencies:
+      - step-2
+      - step-3
+      - step-4
+    config:
+      dependency_patterns:
+        fr: FR-\d+
+        br: BR-\d+
+        uxr: UXR-\d+
+        epic_story: E\d+:S\d+
+        task: E\d+:S\d+:T\d+
+      validation:
+        check_existence: true
+        check_circular: true
+        strict_mode: false
+      repository_task_id: ${step-2.repository_task_id}
+
+  - id: step-7
+    name: Assign Version Marker
+    type: version_assignment
+    handler: intake.version_assignment
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-2
+      - step-3
+      - step-4
+    config:
+      version_schema: RC.EPIC.STORY.TASK+BUILD
+      intake_build: 0
+      version_file: src/fynd_deals/version.py
+      repository_task_id: ${step-2.repository_task_id}
+
+  - id: step-8
+    name: Validate & Report Results
+    type: intake_validation
+    handler: intake.validation
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-1
+      - step-2
+      - step-3
+      - step-4
+      - step-5
+      - step-6
+      - step-7
+    config:
+      validation:
+        check_document_updates: true
+        check_task_creation: true
+        check_dependency_wiring: true
+        generate_report: true
+      report_format: markdown

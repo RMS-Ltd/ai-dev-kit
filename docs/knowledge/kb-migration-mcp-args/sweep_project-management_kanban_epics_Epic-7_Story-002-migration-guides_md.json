@@ -1,0 +1,12 @@
+{
+  "server": "plugin-notion-workspace-notion",
+  "toolName": "notion-update-page",
+  "arguments": {
+    "data": {
+      "page_id": "30db6f8962c181e79d07c2fe549ac014",
+      "command": "replace_content",
+      "new_str": "---\nlifecycle: evergreen\nttl_days: null\ncreated_at: 2025-12-05T14:15:00Z\nexpires_at: null\nhousekeeping_policy: keep\n---\n\n# Story 002 – Migration Guides\n\n**Status:** TODO  \n**Priority:** HIGH  \n**Estimated Effort:** [TBD]  \n**Created:** 2025-12-05  \n**Last updated:** 2025-12-05  \n**Version:** v0.7.2.1+1  \n**Code:** E7S02\n\n---\n\n## Task Checklist\n\n- [ ] **E7:S02:T01 – Create migration from traditional workflows guide** - TODO\n- [ ] **E7:S02:T02 – Build step-by-step migration procedures** - TODO\n- [ ] **E7:S02:T03 – Document common migration scenarios** - TODO\n\n---\n\n## Overview\n\nThis story creates comprehensive migration guides for adopting dev-kit frameworks.\n\n---\n\n## Goal\n\nCreate comprehensive migration guides for framework adoption.\n\n---\n\n## Tasks\n\n### E7:S02:T01 – Create migration from traditional workflows guide\n\n**Input:** Traditional workflow patterns, framework requirements  \n**Deliverable:** Migration guide document  \n**Dependencies:** None  \n**Blocker:** None\n\n**Approach:**\n1. Identify traditional workflow patterns\n2. Map to dev-kit frameworks\n3. Create migration guide\n4. Document migration steps\n\n---\n\n### E7:S02:T02 – Build step-by-step migration procedures\n\n**Input:** Migration guide  \n**Deliverable:** Step-by-step migration procedures  \n**Dependencies:** E7:S02:T01  \n**Blocker:** None\n\n**Approach:**\n1. Break down migration into steps\n2. Create detailed procedures\n3. Document each step\n4. Publish procedures\n\n---\n\n### E7:S02:T03 – Document common migration scenarios\n\n**Input:** Migration procedures, real-world cases  \n**Deliverable:** Migration scenario documentation  \n**Dependencies:** E7:S02:T01  \n**Blocker:** None\n\n**Approach:**\n1. Identify common scenarios\n2. Document scenario-specific guides\n3. Create scenario templates\n4. Publish scenarios\n\n---\n\n## Dependencies\n\n**Blocks:**\n- None\n\n**Blocked By:**\n- None\n\n**Coordinates With:**\n- Epic 5 (Documentation Management)\n- Epic 6 (Framework Management)\n\n---\n\n## References\n\n- `docs/project-management/kanban/epics/Epic-7/Epic-7.md`\n- `docs/project-management/kanban/epics/Epic-7/Story-001-real-world-adoption-examples.md`\n\n",
+      "allow_deleting_content": true
+    }
+  }
+}

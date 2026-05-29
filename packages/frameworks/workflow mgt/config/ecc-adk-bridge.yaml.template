@@ -1,0 +1,45 @@
+# ECC ↔ AI Dev Kit bridge configuration (template)
+# Copy to project root as ecc-adk-bridge.yaml when adopting optional ECC harness layer.
+# Normative spec: docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md
+# Phase 0 evaluation: docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md
+
+harness_layer:
+  provider: ecc
+  enabled: false  # set true only after Phase 0 evaluation on your project
+
+  # Pin the upstream package or git ref you evaluated (record in evaluation report)
+  ecc_version_pin:
+    npm_package: ecc-universal
+    npm_version: "1.10.0"  # example; GitHub ECC v2.0.0-rc.1 may differ — pin what you tested
+    github_repo: https://github.com/affaan-m/ECC
+    github_ref: ""  # optional tag/commit when installing from source
+
+  install:
+    target: cursor  # claude | cursor | codex | opencode | ...
+    profile: core    # npm 1.10.0: core; GitHub v2 docs may use minimal — match your pin
+    excluded_components:
+      - baseline:hooks  # start hooks-off; enable in Phase 3 only after review
+    single_install_path: true  # never stack plugin + full installer
+
+  hook_profile: minimal  # ECC_HOOK_PROFILE: minimal | standard | strict
+  disabled_hooks: []  # e.g. post:commit:auto-push — populate from conflict-resolve findings
+
+  adk_skill_pack_path: packages/frameworks/workflow mgt/skills/  # Phase 1 placeholder
+
+  conflict_rules:
+    - ecc: git-workflow
+      defer_to: adk-release-workflow
+      note: ADK RW-only commit/push policy in .cursorrules
+    - ecc: plan
+      defer_to: adk-implementation-planning
+      note: ADK IPW gate requires IPP under docs/implementation-cycles/
+    - ecc: plan-orchestrate
+      defer_to: adk-implementation-planning
+    - ecc: project-flow-ops
+      disposition: exclude
+      note: GitHub/Linear triage only — not ADK Kanban UKW
+
+  attribution:
+    spec: docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md
+    license: MIT
+    upstream: https://github.com/affaan-m/ECC

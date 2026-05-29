@@ -1,0 +1,12 @@
+{
+  "server": "plugin-notion-workspace-notion",
+  "toolName": "notion-update-page",
+  "arguments": {
+    "data": {
+      "page_id": "30db6f8962c1811d868cf548ef976206",
+      "command": "replace_content_range",
+      "selection_with_ellipsis": "<td>Document Lifecycle</td>\n<td>Frontmatter with lifecycle metadata</td>...<td>❓ UNKNOWN</td>\n</tr>\n</table>",
+      "new_str": "<td>Document Lifecycle</td>\n<td>Frontmatter with lifecycle metadata</td>\n<td>❓ Unknown</td>\n<td>❓ UNKNOWN</td>\n</tr>\n<tr>\n<td>Naming Conventions</td>\n<td>Self-documenting names</td>\n<td>✅ Matches</td>\n<td>✅ YES</td>\n</tr>\n<tr>\n<td>Cross-Referencing</td>\n<td>Proper linking patterns</td>\n<td>✅ Matches</td>\n<td>✅ YES</td>\n</tr>\n</table>\n\n---\n\n**Analysis Completed:** 2025-12-16  \n**Next Review:** After ADK hardening recommendations implemented\n\n"
+    }
+  }
+}

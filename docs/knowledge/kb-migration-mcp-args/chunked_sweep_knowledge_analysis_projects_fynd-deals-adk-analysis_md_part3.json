@@ -1,0 +1,12 @@
+{
+  "server": "plugin-notion-workspace-notion",
+  "toolName": "notion-update-page",
+  "arguments": {
+    "data": {
+      "page_id": "30db6f8962c18104a9d4dfbae073fd83",
+      "command": "insert_content_after",
+      "selection_with_ellipsis": "**Intake Workflows:** ❓ **UNKNOWN**\n- Need to check if FR/BR intake workflows exist\n\n**Workflow Patterns:** ⚠️ **DIVERGE...ing/` (ADK framework, not integrated)\n- `temp/workflow mgt/` (ADK framework, not integrated)\n\n### 10.2 Comparison Tables",
+      "new_str": "**Kanban Structure Comparison:**\n\n| Aspect | ADK Canonical | fynd.deals | Match? |\n|--------|---------------|------------|--------|\n| Epic Structure | Project-specific epics | Project-specific epics (1-16) | ✅ YES (no mashup) |\n| Story Structure | Stories under Epic directories | ✅ Matches | ✅ YES |\n| Task Structure | Tasks under Story directories | Tasks embedded in stories | ⚠️ DIVERGES |\n| Naming Conventions | Epic-X, Story-XXX, Task-YYY | Epic-X, Story-XX, T001 | ⚠️ DIVERGES |\n| File Organization | docs/project-management/kanban/ | knowledge/fynd_deals/Kanban/ | ⚠️ DIVERGES |\n\n**KB Structure Comparison:**\n\n| Aspect | ADK Canonical | fynd.deals | Match? |\n|--------|---------------|------------|--------|\n| Root Path | docs/ | knowledge/fynd_deals/ | ❌ NO |\n| Directory Organization | Architecture, Changelog, Documentation, Guides, project-management | Kanban, debugging, specs, templates | ❌ NO |\n| Document Lifecycle | Frontmatter with lifecycle metadata | ❓ Unknown | ❓ UNKNOWN |\n| Cross-Referencing | Proper linking patterns | ✅ Matches | ✅ YES |\n\n---\n\n**Analysis Completed:** 2025-12-16  \n**Next Review:** After ADK hardening recommendations implemented\n\n"
+    }
+  }
+}

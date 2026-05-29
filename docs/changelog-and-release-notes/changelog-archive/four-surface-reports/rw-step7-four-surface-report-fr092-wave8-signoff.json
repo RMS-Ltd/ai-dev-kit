@@ -1,0 +1,87 @@
+{
+  "auxiliary_surfaces": {},
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "fr092_wave8_signoff_dryrun",
+  "release_scope": {
+    "epic": 2,
+    "story": 15,
+    "task": 7,
+    "task_id": "E2:S15:T7",
+    "version_string": "0.2.15.7+1"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "non_substantive",
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 109,
+    "stamps_skipped_no_evidence": 0
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 109,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 4,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "FR/BR/UXR doc updated: FR-092 closure stamp"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-042-ukw-agent-board-cleanup-failure.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": [
+        "fbuboard.md updated: FR-092 row terminal stamp"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "kboard.md updated: T07 row terminal stamp"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "task doc updated: T07 sign-off log"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-04-27 15:56 UTC"
+}

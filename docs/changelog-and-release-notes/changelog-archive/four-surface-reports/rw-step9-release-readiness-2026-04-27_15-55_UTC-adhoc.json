@@ -1,0 +1,153 @@
+{
+  "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
+  "four_surface_report_path": null,
+  "invocation_context": "fr092_wave8_signoff",
+  "overall_passed": true,
+  "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
+  "release_scope": {},
+  "summary": {
+    "blocking_failures": [],
+    "gates_failed": 0,
+    "gates_passed": 7,
+    "gates_total": 7,
+    "gates_waived": 3
+  },
+  "timestamp_utc": "2026-04-27 15:55 UTC",
+  "verdicts": [
+    {
+      "evidence": {
+        ".cursorrules": "OK",
+        "ipw_governance": "MISSING (info)",
+        "packages/frameworks/kanban/policies/kanban-governance-policy.md": "OK",
+        "packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md": "OK"
+      },
+      "findings": [
+        "No IPW governance doc found that references FR-091/FR-084/FR-092. Recommend cross-linking from IPW guide for cross-doc consistency."
+      ],
+      "gate_id": 1,
+      "is_blocking_failure": false,
+      "name": "Governance source-of-truth alignment",
+      "passed": true,
+      "severity": "block",
+      "summary": "All governance artefacts (.cursorrules, RW guide, kanban policy) codify FR-092 contract.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "BR-042": "OK (closed as duplicate)",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md": "OK",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md": "OK",
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md": "OK",
+        "docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md": "OK",
+        "docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md": "OK",
+        "docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md": "OK",
+        "docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md": "OK"
+      },
+      "findings": [],
+      "gate_id": 2,
+      "is_blocking_failure": false,
+      "name": "Predecessor closure & supersede-chain consistency",
+      "passed": true,
+      "severity": "block",
+      "summary": "Supersede chain executed: FR-091/FR-090/FR-084 banner-superseded, T02/T05/T06 redirected, BR-069/BR-070/UXR-009 gated.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "docs/project-management/kanban/fbuboard.md": "byte-identical",
+        "docs/project-management/kanban/fr-br-uxr-board.md": "byte-identical",
+        "docs/project-management/kanban/kanban-board.md": "byte-identical",
+        "docs/project-management/kanban/kboard.md": "byte-identical"
+      },
+      "findings": [],
+      "gate_id": 3,
+      "is_blocking_failure": false,
+      "name": "Contract enforcement parity (RW <-> UKW canonical pipeline)",
+      "passed": true,
+      "severity": "block",
+      "summary": "RW and UKW canonical row transform pipelines produce byte-identical output across all active boards (FR-090 shared engine verified).",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md": {
+          "rows_changed": 0,
+          "rows_with_duplicate_footers": 0
+        },
+        "stamp_evidence_aggregate": {
+          "stamps_appended_with_evidence": 0,
+          "stamps_preserved_existing": 109,
+          "stamps_skipped_no_evidence": 0
+        }
+      },
+      "findings": [],
+      "gate_id": 4,
+      "is_blocking_failure": false,
+      "name": "Corpus canonical state",
+      "passed": true,
+      "severity": "block",
+      "summary": "Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.",
+      "waive_reason": null,
+      "waived": false
+    },
+    {
+      "evidence": {
+        "report": null
+      },
+      "findings": [],
+      "gate_id": 5,
+      "is_blocking_failure": false,
+      "name": "Stage-set completeness (BR-070)",
+      "passed": true,
+      "severity": "warn",
+      "summary": "No four-surface report present; stage-set completeness vacuously satisfied (info).",
+      "waive_reason": "No Step-7 report available; nothing to stage-check.",
+      "waived": true
+    },
+    {
+      "evidence": {
+        "report": null
+      },
+      "findings": [],
+      "gate_id": 6,
+      "is_blocking_failure": false,
+      "name": "Forensic stamp evidence (UXR-009)",
+      "passed": true,
+      "severity": "warn",
+      "summary": "No four-surface report present; stamp evidence check skipped.",
+      "waive_reason": "No Step-7 report; UXR-009 forensic counters unavailable.",
+      "waived": true
+    },
+    {
+      "evidence": {
+        "report": null
+      },
+      "findings": [],
+      "gate_id": 7,
+      "is_blocking_failure": false,
+      "name": "Four-surface parity (FR-084)",
+      "passed": true,
+      "severity": "warn",
+      "summary": "No four-surface report present; four-surface parity check vacuously satisfied (info).",
+      "waive_reason": "No Step-7 report; nothing to verify.",
+      "waived": true
+    }
+  ]
+}

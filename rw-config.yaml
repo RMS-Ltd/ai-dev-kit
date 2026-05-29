@@ -1,0 +1,56 @@
+# RW Config: ai-dev-kit
+# This is the actual config for the ai-dev-kit repository
+# Part of: E6:S06:T07 - Framework Hardening (Phase 3)
+
+version_file: src/ai_dev_kit/version.py
+main_changelog: CHANGELOG.md
+changelog_dir: docs/changelog-and-release-notes/changelog-archive
+scripts_path: packages/frameworks/workflow mgt/scripts
+readme_file: README.md
+
+changelog_archival:
+  # Mode controlling how entries are retained in CHANGELOG.md.
+  # - hybrid (default in framework docs): size/time/version-count based
+  # - latest_only (ai-dev-kit choice): keep only the newest release entry
+  #   in the main changelog, with all older releases archived.
+  mode: latest_only
+
+# Enable Kanban integration
+use_kanban: true
+
+# Kanban paths (relative to kanban_root)
+kanban_root: docs/project-management/kanban
+epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
+story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
+task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md
+kanban_board: kboard.md
+fr_br_root: docs/project-management/kanban/fr-br
+
+# Use dev-kit versioning schema
+versioning_schema: RC.EPIC.STORY.TASK+BUILD
+dev_branch_epic: 2
+
+# SemVer mapping strategy: "registry" (default) or "task_touch"
+# registry: Hybrid approach with epic/story registry (current default)
+# task_touch: ADR-002 task-touch derived mapping (strictly monotonic)
+semver_mapping_strategy: task_touch
+
+# Versioning mode policy:
+# - dual: internal RC.EPIC.STORY.TASK+BUILD + external SemVer (requires task_touch)
+# - semver_only: SemVer-only workflows
+# - kanban_only: internal/Kanban-only workflows
+versioning_mode: dual
+
+# Project name
+project_name: ai-dev-kit
+
+# Notion project hub (single entry point for project context; RMS Teamspace)
+notion_hub_url: https://www.notion.so/30db6f8962c181ceb811f3a6c78ecd4b
+
+# Engineering KB 3.1 AI Dev Kit (KB migrated from docs/)
+notion_kb_url: https://www.notion.so/30db6f8962c1810daf71f96bb601d69b
+
+# Epic ranges
+canonical_epic_range: "1-23"
+project_specific_epic_range: "24+"
+

@@ -1,0 +1,27 @@
+# RW Config: ai-dev-kit (Real Example)
+# This is the actual config that would be used in this repo
+
+version_file: src/fynd_deals/version.py
+main_changelog: CHANGELOG.md
+changelog_dir: docs/changelog-and-release-notes/changelog-archive
+scripts_path: packages/frameworks/workflow mgt/scripts
+readme_file: README.md
+
+# Enable Kanban integration
+use_kanban: true
+
+# Kanban paths (relative to kanban_root)
+kanban_root: docs/project-management/kanban
+epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
+story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
+kanban_board: _index.md
+
+# Use dev-kit versioning schema
+versioning_schema: RC.EPIC.STORY.TASK+BUILD
+
+# FR-046: dual internal+SemVer requires task-touch mapping
+versioning_mode: dual
+semver_mapping_strategy: task_touch
+
+# Project name
+project_name: ai-dev-kit

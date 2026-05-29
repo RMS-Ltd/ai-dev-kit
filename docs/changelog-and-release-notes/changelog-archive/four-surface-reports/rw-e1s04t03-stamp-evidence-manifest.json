@@ -1,0 +1,28 @@
+{
+  "rows": {
+    "E1:S04:T03": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.1.4.3+1 — release-scope row update then COMPLETE prune from kboard"
+    },
+    "FR-099": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.1.4.3+1 — fbuboard terminal reconciliation (2 removed)"
+    },
+    "FR-097": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.1.4.3+1 — fbuboard terminal prune (RESOLVED)"
+    },
+    "E4:S13:T07": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.1.4.3+1 — kboard COMPLETE row prune (corpus-canonical)"
+    },
+    "E2:S15:T08": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.1.4.3+1 — kboard COMPLETE row prune (corpus-canonical)"
+    },
+    "E2:S16:T10": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.1.4.3+1 — fbuboard terminal timestamp enforcement"
+    }
+  }
+}

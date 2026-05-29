@@ -1,0 +1,586 @@
+{
+  "boards": [
+    {
+      "board": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "rows_considered": 12,
+      "rows_changed": 12,
+      "rows_ambiguous": 0,
+      "clusters_before": {},
+      "clusters_after": {},
+      "results": [
+        {
+          "row_id": "E4:S08:T07",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-09 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md"
+        },
+        {
+          "row_id": "E5:S01:T31",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-01-14 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md"
+        },
+        {
+          "row_id": "E2:S01:T08",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-17 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md"
+        },
+        {
+          "row_id": "E4:S06:T01",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-22 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md"
+        },
+        {
+          "row_id": "E5:S01:T62",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-15 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md"
+        },
+        {
+          "row_id": "E7:S01:T06",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-31 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md"
+        },
+        {
+          "row_id": "E7:S01:T05",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-07 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T05-markdown-maintenance-perpetual-task.md"
+        },
+        {
+          "row_id": "unknown-row",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-09 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-21/Story-000-language-selection-at-setup.md"
+        },
+        {
+          "row_id": "unknown-row",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-09 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-21/Story-001-internationalization-infrastructure.md"
+        },
+        {
+          "row_id": "unknown-row",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-09 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-21/Story-002-translation-and-localization.md"
+        },
+        {
+          "row_id": "unknown-row",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-09 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-21/Story-003-cultural-adaptation.md"
+        },
+        {
+          "row_id": "unknown-row",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-05 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-24/Story-003-book-publishing-support.md"
+        }
+      ]
+    },
+    {
+      "board": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md",
+      "dry_run": false,
+      "rows_considered": 59,
+      "rows_changed": 59,
+      "rows_ambiguous": 0,
+      "clusters_before": {
+        "2026-04-20 15:52 UTC": [
+          "BR-039",
+          "BR-067",
+          "FR-077",
+          "BR-065",
+          "BR-066",
+          "FR-040",
+          "FR-046",
+          "UXR-001",
+          "UXR-002",
+          "UXR-005",
+          "UXR-006",
+          "FR-031",
+          "FR-032",
+          "FR-030",
+          "FR-021",
+          "UXR-003",
+          "FR-043",
+          "FR-044",
+          "FR-039",
+          "FR-037",
+          "FR-029",
+          "FR-024",
+          "FR-023",
+          "FR-022",
+          "FR-020",
+          "FR-019",
+          "FR-018",
+          "FR-017",
+          "FR-016",
+          "FR-014",
+          "FR-013",
+          "FR-012",
+          "FR-010",
+          "FR-010",
+          "FR-009",
+          "FR-008",
+          "FR-007",
+          "FR-006",
+          "FR-005",
+          "FR-003",
+          "FR-002",
+          "BR-008",
+          "BR-007",
+          "BR-006",
+          "BR-005",
+          "BR-003",
+          "BR-002",
+          "BR-001",
+          "BR-058",
+          "BR-059",
+          "FR-048",
+          "FR-049",
+          "FR-057",
+          "FR-058",
+          "FR-059",
+          "FR-062",
+          "FR-063",
+          "FR-072",
+          "FR-074"
+        ]
+      },
+      "clusters_after": {},
+      "results": [
+        {
+          "row_id": "BR-039",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-02 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md"
+        },
+        {
+          "row_id": "BR-067",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-19 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md"
+        },
+        {
+          "row_id": "FR-077",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-14 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md"
+        },
+        {
+          "row_id": "BR-065",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-13 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md"
+        },
+        {
+          "row_id": "BR-066",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-14 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md"
+        },
+        {
+          "row_id": "FR-040",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-01 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/FR-040-implementation-cycle-workflow-icw.md"
+        },
+        {
+          "row_id": "FR-046",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-13 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md"
+        },
+        {
+          "row_id": "UXR-001",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-18 21:46 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/UXR-001-migration-user-experience-research.md"
+        },
+        {
+          "row_id": "UXR-002",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-18 21:46 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md"
+        },
+        {
+          "row_id": "UXR-005",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-18 21:46 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md"
+        },
+        {
+          "row_id": "UXR-006",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-07 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/UXR-006-dev-branch-and-rw-validator-relaxation.md"
+        },
+        {
+          "row_id": "FR-031",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-01-14 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md"
+        },
+        {
+          "row_id": "FR-032",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-20 14:00 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-032-release-candidate-readiness-gap-analysis.md"
+        },
+        {
+          "row_id": "FR-030",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-01-16 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md"
+        },
+        {
+          "row_id": "FR-021",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-08 13:31 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md"
+        },
+        {
+          "row_id": "UXR-003",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-31 18:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md"
+        },
+        {
+          "row_id": "FR-043",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-20 18:05 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md"
+        },
+        {
+          "row_id": "FR-044",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-02-22 16:54 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md"
+        },
+        {
+          "row_id": "FR-039",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-16 16:31 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md"
+        },
+        {
+          "row_id": "FR-037",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-01 15:15 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md"
+        },
+        {
+          "row_id": "FR-029",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-16 16:31 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md"
+        },
+        {
+          "row_id": "FR-024",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-17 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md"
+        },
+        {
+          "row_id": "FR-023",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-01 15:15 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-023-update-kanban-workflow-ukw.md"
+        },
+        {
+          "row_id": "FR-022",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-17 17:11 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-022-policy-docs-machine-readable-salience.md"
+        },
+        {
+          "row_id": "FR-020",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-16 16:31 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-020-version-validator-abstract-space-awareness.md"
+        },
+        {
+          "row_id": "FR-019",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-01 15:15 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-019-intake-workflow-automation.md"
+        },
+        {
+          "row_id": "FR-018",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-30 15:35 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md"
+        },
+        {
+          "row_id": "FR-017",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-17 17:11 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md"
+        },
+        {
+          "row_id": "FR-016",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-17 17:11 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md"
+        },
+        {
+          "row_id": "FR-014",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-16 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-2/Story-007-trigger-aware-release-workflow.md"
+        },
+        {
+          "row_id": "FR-013",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-16 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-2/Story-007-trigger-aware-release-workflow.md"
+        },
+        {
+          "row_id": "FR-012",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-01-05 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-010-agentic-kanban-task-creation-from-fr-br.md"
+        },
+        {
+          "row_id": "FR-010",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-10 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md"
+        },
+        {
+          "row_id": "FR-010",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-10 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md"
+        },
+        {
+          "row_id": "FR-009",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-30 15:35 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md"
+        },
+        {
+          "row_id": "FR-008",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-15 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-2/Story-006-package-uninstall-and-recovery.md"
+        },
+        {
+          "row_id": "FR-007",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-10 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-007-migration-support-and-installation-modes.md"
+        },
+        {
+          "row_id": "FR-006",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-09 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-21/Story-000-language-selection-at-setup.md"
+        },
+        {
+          "row_id": "FR-005",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-22 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md"
+        },
+        {
+          "row_id": "FR-003",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-25 14:32 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md"
+        },
+        {
+          "row_id": "FR-002",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-01 15:15 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-002-update-been-there-readme.md"
+        },
+        {
+          "row_id": "BR-008",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-10 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md"
+        },
+        {
+          "row_id": "BR-007",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-10 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md"
+        },
+        {
+          "row_id": "BR-006",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-10 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-4/Story-007-migration-support-and-installation-modes.md"
+        },
+        {
+          "row_id": "BR-005",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-30 15:35 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md"
+        },
+        {
+          "row_id": "BR-003",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-30 15:35 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-003-rw-branch-validation-update-branches.md"
+        },
+        {
+          "row_id": "BR-002",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2025-12-17 17:11 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md"
+        },
+        {
+          "row_id": "BR-001",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-01 15:15 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md"
+        },
+        {
+          "row_id": "BR-058",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-01 15:15 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md"
+        },
+        {
+          "row_id": "BR-059",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-31 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md"
+        },
+        {
+          "row_id": "FR-048",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-01 17:27 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-048-icw-task-identifier-argument.md"
+        },
+        {
+          "row_id": "FR-049",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-11 16:27 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md"
+        },
+        {
+          "row_id": "FR-057",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-31 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md"
+        },
+        {
+          "row_id": "FR-058",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-16 13:17 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-058-markdown-maintenance-workflow.md"
+        },
+        {
+          "row_id": "FR-059",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-03-17 00:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/FR-059-enhanced-workflow-logging-system.md"
+        },
+        {
+          "row_id": "FR-062",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-10 11:24 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md"
+        },
+        {
+          "row_id": "FR-063",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-05-18 21:46 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-063-cmw-epic-5-execution-context.md"
+        },
+        {
+          "row_id": "FR-072",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-08 13:31 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md"
+        },
+        {
+          "row_id": "FR-074",
+          "old_stamp": "2026-04-20 15:52 UTC",
+          "new_stamp": "2026-04-20 14:00 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md"
+        }
+      ]
+    }
+  ],
+  "dry_run": false
+}

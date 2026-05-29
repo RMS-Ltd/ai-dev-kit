@@ -1,0 +1,12 @@
+{
+  "server": "plugin-notion-workspace-notion",
+  "toolName": "notion-update-page",
+  "arguments": {
+    "data": {
+      "page_id": "30db6f8962c1811d868cf548ef976206",
+      "command": "insert_content_after",
+      "selection_with_ellipsis": "**ADK Framework Scripts:**\n- None detected - project doesn't use ADK frameworks as packages\n\n### 5.3 Distance from ADK C...pillars (different) | ⚠️ DIVERGES |\n| Document Lifecycle | Frontmatter with lifecycle metadata | ❓ Unknown | ❓ UNKNOWN |",
+      "new_str": "| Naming Conventions | Self-documenting names | ✅ Matches | ✅ YES |\n| Cross-Referencing | Proper linking patterns | ✅ Matches | ✅ YES |\n\n---\n\n**Analysis Completed:** 2025-12-16  \n**Next Review:** After ADK hardening recommendations implemented\n\n"
+    }
+  }
+}

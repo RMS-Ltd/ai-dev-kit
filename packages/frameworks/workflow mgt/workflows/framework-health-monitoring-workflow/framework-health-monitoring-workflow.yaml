@@ -1,0 +1,58 @@
+name: Framework Health Monitoring Workflow
+version: 1.0.0
+type: monitoring
+description: Automated framework health monitoring workflow for collecting and reporting framework health metrics
+
+config:
+  frameworks_dir: packages/frameworks
+  scripts_path: scripts/frameworks
+  output_dir: docs/framework-health
+  days_back: 90
+
+steps:
+  - id: step-1
+    name: Collect Health Metrics
+    type: metric_collection
+    handler: health.collect_metrics
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies: []
+    config:
+      frameworks_dir: ${config.frameworks_dir}
+      scripts_path: ${config.scripts_path}
+      days_back: ${config.days_back}
+
+  - id: step-2
+    name: Generate Health Report
+    type: report_generation
+    handler: health.generate_report
+    required: true
+    dependencies:
+      - step-1
+    config:
+      output_dir: ${config.output_dir}
+      format: json_and_text
+
+  - id: step-3
+    name: Validate Health Thresholds
+    type: validation
+    handler: health.validate_thresholds
+    required: true
+    dependencies:
+      - step-2
+    config:
+      minimum_threshold: 60
+      critical_threshold: 40
+
+  - id: step-4
+    name: Update Health Dashboard
+    type: dashboard_update
+    handler: health.update_dashboard
+    required: false
+    enabled: true
+    dependencies:
+      - step-2
+    config:
+      dashboard_path: docs/framework-health/dashboard.md
+

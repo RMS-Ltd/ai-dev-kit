@@ -1,0 +1,280 @@
+name: Testing Workflow
+version: 1.0.0
+type: testing
+description: Systematic testing workflow for creating, updating, and validating tests with coverage and documentation
+
+config:
+  test_branch_prefix: test/
+  test_command: pytest
+  coverage_command: pytest --cov
+  coverage_threshold: 80
+  lint_command: ruff check
+  type_check_command: mypy
+
+steps:
+  - id: step-1
+    name: Analyze Test Requirements
+    type: analysis
+    handler: testing.analyze_requirements
+    required: true
+    dependencies: []
+    config:
+      target_paths: []
+      test_type: unit
+      analysis_depth: full
+      include_existing_tests: true
+
+  - id: step-2
+    name: Plan Test Strategy
+    type: planning
+    handler: testing.plan_strategy
+    required: true
+    dependencies:
+      - step-1
+    config:
+      test_approach: tdd
+      create_plan_doc: true
+      coverage_goals: {}
+      test_categories: []
+
+  - id: step-3
+    name: Create Testing Branch
+    type: git_branch
+    handler: git.create_branch
+    required: true
+    dependencies:
+      - step-2
+    config:
+      branch_prefix: ${config.test_branch_prefix}
+      branch_name_template: "${test_type}-${target_component}"
+
+  - id: step-4
+    name: Create or Update Test Files
+    type: execution
+    handler: testing.create_tests
+    required: true
+    dependencies:
+      - step-3
+    config:
+      test_files: []
+      test_framework: pytest
+      follow_conventions: true
+      incremental: true
+
+  - id: step-5
+    name: Run Test Suite
+    type: validation
+    handler: testing.run_tests
+    required: true
+    dependencies:
+      - step-4
+    config:
+      test_command: ${config.test_command}
+      fail_on_failure: true
+      verbose: true
+      parallel: false
+
+  - id: step-6
+    name: Check Test Coverage
+    type: validation
+    handler: testing.check_coverage
+    required: true
+    dependencies:
+      - step-5
+    config:
+      coverage_command: ${config.coverage_command}
+      coverage_threshold: ${config.coverage_threshold}
+      fail_on_threshold: true
+      generate_report: true
+
+  - id: step-7
+    name: Run Linting on Tests
+    type: validation
+    handler: testing.run_linting
+    required: false
+    enabled: true
+    dependencies:
+      - step-4
+    config:
+      lint_command: ${config.lint_command}
+      strict_mode: true
+      auto_fix: false
+
+  - id: step-8
+    name: Run Type Checking on Tests
+    type: validation
+    handler: testing.run_type_check
+    required: false
+    enabled: true
+    dependencies:
+      - step-4
+    config:
+      type_check_command: ${config.type_check_command}
+      strict_mode: false
+
+  - id: step-9
+    name: Validate Test Quality
+    type: verification
+    handler: testing.validate_quality
+    required: true
+    dependencies:
+      - step-5
+      - step-6
+    config:
+      check_test_naming: true
+      check_test_organization: true
+      check_test_documentation: true
+      check_edge_cases: true
+
+  - id: step-10
+    name: Update Documentation
+    type: documentation
+    handler: testing.update_docs
+    required: true
+    dependencies:
+      - step-4
+    config:
+      update_readme: true
+      update_test_docs: true
+      update_api_docs: false
+      update_changelog: false
+
+  - id: step-11
+    name: Stage Changes
+    type: git_stage
+    handler: git.stage_all
+    required: true
+    dependencies:
+      - step-4
+      - step-5
+      - step-6
+      - step-7
+      - step-8
+      - step-9
+      - step-10
+    config:
+      paths:
+        - "*"
+
+  - id: step-12
+    name: Commit Changes
+    type: git_commit
+    handler: git.commit
+    required: true
+    dependencies:
+      - step-11
+    config:
+      message_template: "Test: {summary}\n\n{detailed_changes}"
+
+  - id: step-13
+    name: Push Branch
+    type: git_push
+    handler: git.push
+    required: false
+    enabled: true
+    dependencies:
+      - step-12
+    config:
+      remote: origin
+      push_tags: false
+
+  - id: step-14
+    name: Post-Test Verification
+    type: verification
+    handler: testing.verify_tests
+    required: false
+    enabled: true
+    dependencies:
+      - step-13
+    config:
+      verify_test_execution: true
+      verify_coverage: true
+      verify_quality: true
+
+  - id: step-15
+    name: Document Test Results
+    type: documentation
+    handler: testing.document_results
+    required: false
+    enabled: true
+    dependencies:
+      - step-14
+    config:
+      create_summary: true
+      document_coverage: true
+      document_test_categories: true
+      document_improvements: true
+
+parameters:
+  - name: test_type
+    type: enum
+    required: true
+    label: Test Type
+    description: Type of tests to create or update
+    options:
+      - value: unit
+        label: Unit Tests (test individual functions/classes)
+      - value: integration
+        label: Integration Tests (test component interactions)
+      - value: e2e
+        label: End-to-End Tests (test full workflows)
+      - value: performance
+        label: Performance Tests (test performance characteristics)
+      - value: regression
+        label: Regression Tests (prevent regressions)
+
+  - name: target_component
+    type: string
+    required: true
+    label: Target Component
+    description: Component or module to test
+
+  - name: summary
+    type: string
+    required: true
+    label: Test Summary
+    description: Brief description of the testing work
+
+  - name: detailed_changes
+    type: textarea
+    required: false
+    label: Detailed Changes
+    description: Optional detailed list of test changes
+
+  - name: test_approach
+    type: enum
+    required: false
+    default: tdd
+    label: Test Approach
+    description: Testing approach to follow
+    options:
+      - value: tdd
+        label: TDD (Test-Driven Development)
+      - value: bdd
+        label: BDD (Behavior-Driven Development)
+      - value: atdd
+        label: ATDD (Acceptance Test-Driven Development)
+      - value: traditional
+        label: Traditional (write tests after code)
+
+  - name: coverage_goal
+    type: number
+    required: false
+    default: 80
+    label: Coverage Goal
+    description: Target test coverage percentage
+
+  - name: run_existing_tests
+    type: boolean
+    required: false
+    default: true
+    label: Run Existing Tests
+    description: Run existing test suite to ensure no regressions
+
+  - name: update_docs
+    type: boolean
+    required: false
+    default: true
+    label: Update Documentation
+    description: Update test documentation after creating tests
+

@@ -1,0 +1,27 @@
+# RW Config: Mode C - Full Stack (RW + Versioning + Kanban)
+# Use Case: Complete integration with RW, dev-kit versioning, and Kanban
+
+version_file: src/myproject/version.py
+main_changelog: CHANGELOG.md
+changelog_dir: docs/changelog-and-release-notes/changelog-archive
+scripts_path: tools/workflow_mgt/scripts
+readme_file: README.md
+
+# Enable Kanban integration
+use_kanban: true
+
+# Kanban paths (relative to kanban_root)
+kanban_root: docs/project-management/kanban
+epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
+story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
+kanban_board: _index.md
+
+# Use dev-kit versioning schema (default, but explicit)
+versioning_schema: RC.EPIC.STORY.TASK+BUILD
+
+# FR-046: dual internal+SemVer requires task-touch mapping
+versioning_mode: dual
+semver_mapping_strategy: task_touch
+
+# Optional: Project name for examples/comments
+project_name: myproject

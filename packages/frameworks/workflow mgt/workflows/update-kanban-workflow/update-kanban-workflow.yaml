@@ -1,0 +1,174 @@
+name: Update Kanban Workflow
+version: 1.1.0
+type: kanban_update
+description: Bottom-up kanban documentation synchronization workflow to prevent status drift (triggered by UKW). REQUIRES AGENTIC INTELLIGENCE for synthesis, narrative updates, prioritization, and status inference.
+
+config:
+  kanban_root: docs/project-management/kanban
+  epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
+  story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
+  task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md
+  kanban_board: kboard.md
+  fr_br_uxr_board: fbuboard.md
+  normalize_board_timestamps_script: packages/frameworks/workflow mgt/scripts/kanban/normalize_board_row_timestamps.py
+  kanban_structure: kanban-structure.md
+  fr_br_root: fr-br
+  git_commit_history_days: 7
+  use_rw_config: true
+
+steps:
+  - id: step-1
+    name: Identify Perpetual UKW Task (Wiring Step)
+    type: wiring
+    handler: kanban.identify_perpetual_task
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies: []
+    config:
+      task_doc_pattern: ${config.task_doc_pattern}
+      kanban_root: ${config.kanban_root}
+      perpetual_task_flag: perpetual_task
+      perpetual_task_type: "Perpetual Maintenance"
+      description: "Discovers and wires UKW to the project's perpetual UKW task. Establishes relationship between UKW workflow and the task that will receive UKW release attributions."
+
+  - id: step-2
+    name: Analyze Recent Activity
+    type: analysis
+    handler: kanban.analyze_activity
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-1
+    config:
+      git_commit_history_days: ${config.git_commit_history_days}
+      analyze_fr_br: true
+      analyze_commits: true
+      analyze_file_changes: true
+
+  - id: step-3
+    name: Update Task Documents
+    type: task_update
+    handler: kanban.update_tasks
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-2
+    config:
+      task_doc_pattern: ${config.task_doc_pattern}
+      kanban_root: ${config.kanban_root}
+      consider_commits: true
+      consider_fr_br: true
+      update_status: true
+      update_last_updated: true
+
+  - id: step-4
+    name: Update Story Documents
+    type: story_update
+    handler: kanban.update_stories
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-3
+    config:
+      story_doc_pattern: ${config.story_doc_pattern}
+      kanban_root: ${config.kanban_root}
+      synthesize_tasks: true
+      intelligent_synthesis: true
+      update_task_checklists: true
+      update_tactical_overview: true
+      narrative_style: natural
+      update_status: true
+
+  - id: step-5
+    name: Update Epic Documents
+    type: epic_update
+    handler: kanban.update_epics
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-4
+    config:
+      epic_doc_pattern: ${config.epic_doc_pattern}
+      kanban_root: ${config.kanban_root}
+      synthesize_stories: true
+      intelligent_synthesis: true
+      update_story_checklists: true
+      update_strategic_overview: true
+      narrative_style: natural
+      update_status: true
+
+  - id: step-6
+    name: Update Kanban Board
+    type: board_update
+    handler: kanban.update_board
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-5
+    config:
+      kanban_board: ${config.kanban_board}
+      kanban_root: ${config.kanban_root}
+      # Part A: removal and archival (executes before classification)
+      remove_completed_before_classify: true
+      completed_statuses:
+        - COMPLETE
+        - DONE
+      write_completed_to_archive: true
+      completed_archive: kanban-completed.md
+      deduplication_guard: true
+      dedup_priority_order:
+        - Must Have
+        - Should Have
+        - Could Have
+        - Ongoing
+        - Won't Have
+      # Part B: classification (executes after Part A)
+      update_moscow_list: true
+      intelligent_prioritization: true
+      analyze_context: true
+      update_epic_summaries: true
+      update_last_updated: true
+
+  - id: step-7
+    name: Validate Consistency
+    type: validation
+    handler: kanban.validate_consistency
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-6
+    config:
+      check_status_alignment: true
+      check_version_consistency: true
+      check_link_integrity: true
+
+  - id: step-8
+    name: Stage Files
+    type: git_stage
+    handler: git.stage_all
+    required: true
+    dependencies:
+      - step-7
+    config:
+      paths:
+        - "${config.kanban_root}/**"
+
+  - id: step-9
+    name: Document Changes
+    type: documentation
+    handler: kanban.document_changes
+    required: false
+    dependencies:
+      - step-8
+    config:
+      create_summary: true
+      list_updated_docs: true
+      note_rw_integration: true  # Note: After UKW, user typically runs RW to commit changes. RW will detect UKW context and auto-attribute to perpetual UKW task.
+

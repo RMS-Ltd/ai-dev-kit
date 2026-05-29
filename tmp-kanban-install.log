@@ -1,0 +1,5 @@
+[2026-03-04T16:51:46Z] [INFO] kanban.install [KANBAN_MODE] Kanban install starting (mode=fresh, kanban_path=/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban, dry_run=True)
+[2026-03-04T16:51:46Z] [INFO] kanban.install [KANBAN_VALIDATE] Validating installation at /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban
+[2026-03-04T16:51:46Z] [INFO] kanban.install [KANBAN_VALIDATE] Validation passed with warnings
+[2026-03-04T16:51:46Z] [INFO] kanban.install [KANBAN_FRESH_INSTALL] Fresh install mode: installing canonical epics and consumer board skeleton
+[2026-03-04T16:51:46Z] [INFO] kanban.install [KANBAN_FRESH_INSTALL] Fresh install complete (canonical epics and consumer board skeleton installed)

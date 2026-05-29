@@ -1,0 +1,135 @@
+workflow_registry:
+  version: "1.0.0"
+  last_updated: "2026-03-12"
+  
+  workflows:
+    release-workflow:
+      name: "Release Workflow"
+      abbreviation: "RW"
+      description: "Complete release process with version management"
+      directory: "release-workflow/"
+      main_file: "release-workflow.yaml"
+      config_file: "release-workflow-config.yaml"
+      documentation: "README.md"
+      triggers: ["RW", "RW -k", "RW -d"]
+      steps: 17
+      
+    changelog-management-workflow:
+      name: "Changelog Management Workflow"
+      abbreviation: "CMW"
+      description: "Manage changelog size and organization"
+      directory: "changelog-management-workflow/"
+      main_file: "changelog-management-workflow.yaml"
+      config_file: "cmw-config.yaml"
+      documentation: "README.md"
+      triggers: ["CMW"]
+      steps: 5
+      
+    update-kanban-workflow:
+      name: "Update Kanban Workflow"
+      abbreviation: "UKW"
+      description: "Update Kanban board documentation"
+      directory: "update-kanban-workflow/"
+      main_file: "update-kanban-workflow.yaml"
+      config_file: "ukw-config.yaml"
+      documentation: "README.md"
+      triggers: ["UKW"]
+      steps: 8
+      
+    post-implementation-review:
+      name: "Post-Implementation Review"
+      abbreviation: "PIR"
+      description: "Review implementation after release"
+      directory: "post-implementation-review/"
+      main_file: "pir-workflow.yaml"
+      config_file: "pir-config.yaml"
+      documentation: "README.md"
+      triggers: ["PIR"]
+      steps: 6
+      
+    intake-workflow:
+      name: "Intake Workflow"
+      abbreviation: "INTAKE"
+      description: "FR/BR/UXR automation and intake process (semantic host-story placement for new intake; historical repository anchors remain valid)"
+      directory: "intake-workflow/"
+      main_file: "intake-workflow.yaml"
+      config_file: "intake-config.yaml"
+      documentation: "README.md"
+      triggers: ["INTAKE"]
+      steps: 7
+      
+    migration-workflow:
+      name: "Migration Workflow"
+      abbreviation: "MIGRATION"
+      description: "Migration and data transfer tasks"
+      directory: "migration-workflow/"
+      main_file: "migration-workflow.yaml"
+      config_file: "migration-config.yaml"
+      documentation: "README.md"
+      triggers: ["MIGRATION"]
+      steps: 9
+      
+    refactor-workflow:
+      name: "Refactor Workflow"
+      abbreviation: "REFACTOR"
+      description: "Code refactoring and improvement tasks"
+      directory: "refactor-workflow/"
+      main_file: "refactor-workflow.yaml"
+      config_file: "refactor-config.yaml"
+      documentation: "README.md"
+      triggers: ["REFACTOR"]
+      steps: 8
+      
+    testing-workflow:
+      name: "Testing Workflow"
+      abbreviation: "TESTING"
+      description: "Testing and quality assurance tasks"
+      directory: "testing-workflow/"
+      main_file: "testing-workflow.yaml"
+      config_file: "testing-config.yaml"
+      documentation: "README.md"
+      triggers: ["TESTING"]
+      steps: 10
+      
+    package-version-workflow:
+      name: "Package Version Workflow"
+      abbreviation: "PKG-VERSION"
+      description: "Package version management and updates"
+      directory: "package-version-workflow/"
+      main_file: "package-version-workflow.yaml"
+      config_file: "package-version-config.yaml"
+      documentation: "README.md"
+      triggers: ["PKG-VERSION"]
+      steps: 4
+      
+    framework-health-monitoring-workflow:
+      name: "Framework Health Monitoring Workflow"
+      abbreviation: "FHM"
+      description: "Framework health monitoring and maintenance"
+      directory: "framework-health-monitoring-workflow/"
+      main_file: "framework-health-monitoring-workflow.yaml"
+      config_file: "fhm-config.yaml"
+      documentation: "README.md"
+      triggers: ["FHM"]
+      steps: 3
+      
+    implementation-cycle-workflow:
+      name: "Implementation Cycle Workflow"
+      abbreviation: "ICW"
+      description: "Planning workflow (spec, test design, impl plan). Canonical Cursor/agent trigger is IPW (Implementation Planning Workflow, FR-042 / E5:S01:T42). ICW is a deprecated alias — same steps. See KB vwmp implementation-planning-workflow-agent-execution.md."
+      directory: "implementation-cycle-workflow/"
+      main_file: "icw-workflow.yaml"
+      config_file: "icw-config.yaml"
+      documentation: "README.md"
+      triggers: ["IPW", "ICW"]
+      steps: 8
+      
+  common_components:
+    templates: "common/templates/"
+    schemas: "common/schemas/"
+    utilities: "common/utilities/"
+    
+  documentation_standards:
+    template: "templates/workflow-readme-template.md"
+    style_guide: "docs/workflow-documentation-style-guide.md"
+    validation_script: "scripts/validate-workflow-docs.py"

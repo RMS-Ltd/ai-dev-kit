@@ -1,0 +1,27 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Local environment configuration (untracked)
+.env
+.env.local
+
+# Windsurf (migrated to .cursor/skills/)
+.windsurf/
+.coverage
+SCRATCHPAD.md
+
+# RW Journal Artifacts — runtime per-run files, not operator documentation
+# Operator docs (README.md, JOURNAL_SCHEMA.md, RECOVERY_PROCEDURE.md, ROLLBACK_CONTRACT.md)
+# are kept in version control; runtime rw-* artifacts are not.
+docs/journals/rw-*.json
+docs/journals/rw-*-recovery.json
+docs/journals/rw-*-recovery.md

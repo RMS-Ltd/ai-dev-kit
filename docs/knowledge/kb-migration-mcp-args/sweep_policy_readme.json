@@ -1,0 +1,12 @@
+{
+  "server": "plugin-notion-workspace-notion",
+  "toolName": "notion-update-page",
+  "arguments": {
+    "data": {
+      "page_id": "30db6f89-62c1-81f0-ae22-c6d0904101ce",
+      "command": "replace_content",
+      "new_str": "---\nlifecycle: evergreen\nttl_days: null\ncreated_at: 2025-12-04T12:01:54Z\nexpires_at: null\nhousekeeping_policy: keep\n---\n\n# Policy\n\nThis directory contains **governance policies** for project management and Kanban.\n\n## Key Policy\n\n- `kanban-governance-policy.md` – Canonical Kanban governance policy for this repo\n\n",
+      "allow_deleting_content": true
+    }
+  }
+}
