@@ -106,9 +106,9 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (v0.6.9.0+0 — FR-080 greenfield, FR-081 brownfield, FR-082 canonical repo alignment)
+- [x] **E6:S09 – AI Dev Kit installation and adopter integration** - COMPLETE ✅ (v0.6.9.6+3 — T01–T06 complete; FR-080/081/082/098)
   - Story: [`Story-009-ai-dev-kit-installation-and-adopter-integration.md`](Story-009-ai-dev-kit-installation-and-adopter-integration.md)
-  - Tasks: **T01** TODO ([FR-080](../../fr-br/FR-080-greenfield-installation-process.md)), **T02** TODO ([FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md)), **T03** TODO ([FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md))
+  - Tasks: **T01–T06** ✅ ([FR-080](../../fr-br/FR-080-greenfield-installation-process.md), [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md), [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md), [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md))
 
 ---
 

@@ -30,10 +30,13 @@ This guide now distinguishes the **greenfield** first-run path from brownfield a
 - **Greenfield (this track):** Start from a new/template repository and run installer-driven setup with explicit verification.
 - **Brownfield (separate track):** Integrate into an existing architecture with modular surfaces and host-owned constraints.
 
+**Canonical brownfield entry (FR-081):** [`INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (matrices, RW-only path, worked example).
+
 For policy and boundaries:
 
 - [ADR-003 – Greenfield vs Brownfield adoption](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [FR-081 – Brownfield modular adopter integration](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [IPP-E6S09T02 planning package](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - [FR-080 implementing task (E6:S09:T01)](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
 - [IPW-E6S09T01 planning package](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 

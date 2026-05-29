@@ -84,9 +84,9 @@ This package is designed to be **fully modular** with maximum flexibility. You c
 
 ### Copy vs Reference Pattern
 
-**⚠️ CRITICAL: Copy, Don't Reference**
+**⚠️ CRITICAL: Vendoring this package (copy or submodule), not live-linking to ai-dev-kit**
 
-Projects must **copy** this package into their repository, not link to it.
+Adopters **vendor** this folder into their repository. On **brownfield** repos, prefer `install_kanban_framework.py --mode migration` or `canonical_adoption`—not `--mode fresh` unless the Kanban root is empty. See [INSTALL — Brownfield adoption](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081).
 
 **Why copy?**
 - Projects need to customize file paths, KB structure, and terminology
@@ -227,8 +227,8 @@ python3 scripts/install_kanban_framework.py
 - Excludes ai-dev-kit project-specific epics
 
 **Installation Modes:**
-- **Fresh** - Clean install (no existing structure) - **Recommended for new projects**
-- **Migration** - Migrate existing structure to canonical format
+- **Fresh** - Clean install (no existing structure) - **Greenfield / empty Kanban root only** (installer warns on brownfield repos)
+- **Migration** - Migrate existing structure to canonical format - **Recommended for brownfield**
 - **Update** - Update existing framework installation
 - **Hybrid** - Preserve project epics, install framework epics (recommended when conflicts detected)
 - **Canonical Adoption** - Adopt canonical structure with intelligent task mapping (recommended when semantic matches found)

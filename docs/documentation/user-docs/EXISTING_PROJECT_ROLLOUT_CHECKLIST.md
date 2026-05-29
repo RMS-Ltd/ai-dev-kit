@@ -14,33 +14,33 @@ housekeeping_policy: keep
 
 ### Scope (brownfield vs greenfield)
 
-This document targets **existing / brownfield** repositories. For **greenfield / new-template** first run (FR-080), use [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md), [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md), and policy [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) vs [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
+This checklist supports **existing / brownfield** repositories. **Canonical brownfield SoT:** [`INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081 / [IPP-E6S09T02](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)). For **greenfield**, use [Greenfield Install Specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#greenfield-install-specification-wave-1-lock) and [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md). Policy: [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md).
 
 ---
 
 ## 🎯 Quick Decision Tree
 
+Align with the [per-surface adoption matrix](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#per-surface-adoption-matrix) in INSTALL.
+
 **Which frameworks do you want?**
-- **All frameworks** → Follow "Full Stack" path below
-- **Just Release Workflow (RW)** → Follow "RW Only" path
-- **Just Kanban** → Follow "Kanban Only" path
-- **RW + Kanban** → Follow "Full Stack" path (recommended)
+- **RW only (no in-repo Kanban yet)** → [RW-only minimum path](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#rw-only-minimum-path-brownfield) in INSTALL; use `use_kanban: false`
+- **RW + Kanban** → Run RW installer first, then Kanban with `--mode migration` (not `fresh` on brownfield repos)
+- **Full stack** → RW + Kanban + versioning policy (see INSTALL full-stack row)
+- **Just Kanban** → Rare on brownfield; prefer migration modes; see [Adding Kanban later](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#adding-kanban-later)
 
 ---
 
 ## 📋 Full Stack Rollout (RW + Kanban + Versioning)
 
-### Step 1: Copy Framework Packages
+### Step 1: Acquire framework packages
+
+Prefer **Git submodule** or release assets from [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit)—see [INSTALL package methods](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#package-installation-methods-greenfield-and-brownfield). Raw `cp -r` is acceptable only as a staging step; **always run installers** (Step 2+) so `rw-config.yaml` and paths match your host tree.
 
 ```bash
-# From ai-dev-kit repository, copy frameworks to your project
 cd /path/to/your/project
-
-# Copy workflow management framework
-cp -r /path/to/ai-dev-kit/packages/frameworks/workflow\ mgt/* ./
-
-# Copy Kanban framework  
-cp -r /path/to/ai-dev-kit/packages/frameworks/kanban/* ./
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
+# Copy only the frameworks you need, e.g. workflow mgt for RW-only:
+cp -r .ai-dev-kit/packages/frameworks/workflow\ mgt/* ./tools/workflow_mgt/
 ```
 
 ### Step 2: Install Release Workflow (RW)

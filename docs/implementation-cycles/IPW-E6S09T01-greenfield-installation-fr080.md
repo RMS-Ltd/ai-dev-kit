@@ -174,5 +174,6 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 - [FR-080](../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [FR-081](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [IPP-E6S09T02](IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md) (brownfield counterpart)
 - [FR-078](../project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
 - [FR-079](../project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)

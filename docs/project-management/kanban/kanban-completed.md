@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-28 (E6:S09:T03 — FR-082 canonical public repo)
-**Version:** v0.6.9.3+2
+**Last Updated:** 2026-05-29 (E6:S09:T02 — FR-081 brownfield INSTALL chapter)
+**Version:** v0.6.9.2+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -21,6 +21,9 @@ housekeeping_policy: keep
 ## 20 Most Recently Completed Tasks
 
 #### **Epic 6: Installation and adopter integration (Story 9)**
+- **[E6:S09:T02](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)** — **FR-081**: brownfield modular adoption — INSTALL chapter, matrices, worked example, installer messaging.
+  **Completed:** `2026-05-29T12:30:00Z` | **Version:** `v0.6.9.2+2` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+
 - **[E6:S09:T03](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md)** — **FR-082**: bootstrap public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) + rewire canonical install/docs URLs.
   **Completed:** `2026-05-28T17:25:00Z` | **Version:** `v0.6.9.3+2` | **Agent:** `RW`
 

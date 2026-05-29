@@ -299,7 +299,7 @@ housekeeping_policy: keep
   - **Feature Request:** [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md)
 
 
-- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (FR-080–082; tasks T01–T03)
+- [x] **E6:S09 – AI Dev Kit installation and adopter integration** - COMPLETE ✅ (v0.6.9.2+2 — FR-080/081/082/098; T01–T06)
   - Story: [`epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md`](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md)
 
 **Epic Doc:** [`epics/Epic-6/Epic-6.md`](epics/Epic-6/Epic-6.md)

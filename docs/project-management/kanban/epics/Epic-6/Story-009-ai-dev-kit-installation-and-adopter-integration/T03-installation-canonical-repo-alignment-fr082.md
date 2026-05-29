@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** Small  
 **Created:** 2026-04-19  
-**Last updated:** 2026-05-28 (RW **v0.6.9.3+2** — **E6:S09:T03**)
+**Last updated:** 2026-05-29 (kanban hierarchy closure — Story/Epic/FR-082 synced; implementation shipped **v0.6.9.3+2**)
 **Version:** v0.6.9.3+2  
 **Code:** E6S09T03
 
@@ -69,7 +69,7 @@ Installation tooling and guides must use **canonical** GitHub coordinates for th
 - Rewired `rw-config.yaml`, README, INSTALL, install script defaults, Docusaurus config, issue templates, ADR-006 canonical table.
 - Smoke test: `./scripts/fr099_install_smoke_test.sh` PASS on public `main`.
 - **Fork override:** `--repo` / `GITHUB_REPOSITORY` still supported for enterprise mirrors.
-- **Legacy:** `RMS-Ltd/ai-dev-kit` retains interim bootstrap content; adopters must use `RMS-Ltd/ai-dev-kit`.
+- **Legacy URLs:** Historical `ai-dev-kit/ai-dev-kit` and interim clone names may appear in changelogs only; primary install paths use `RMS-Ltd/ai-dev-kit`.
 
 ---
 

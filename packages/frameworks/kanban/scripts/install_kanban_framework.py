@@ -625,6 +625,11 @@ Examples:
     
     # Step 4: Migrate/Install
     if args.mode == "fresh":
+        print(
+            "\n⚠️  BROWNFIELD NOTE: --mode fresh installs canonical epic *templates* into an empty "
+            "Kanban root. On existing repos with backlog/docs, prefer --mode migration or "
+            "canonical_adoption. See INSTALL_IN_YOUR_PROJECT.md → Brownfield adoption (FR-081)."
+        )
         print("\n🆕 Fresh install mode: Installing canonical epics and consumer board skeleton...")
         _log("INFO", "[KANBAN_FRESH_INSTALL] Fresh install mode: installing canonical epics and consumer board skeleton")
         # Create a clean consumer board and guide from templates

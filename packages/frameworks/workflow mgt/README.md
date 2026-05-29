@@ -23,6 +23,8 @@ housekeeping_policy: keep
 
 **Consumers (vendored copy of this folder):** Configure `rw-config.yaml` paths for **your** tree and run RW validators from **`scripts_path`** — see [RW validators and consumer layout](docs/rw-validators-consumer-layout.md).
 
+**Brownfield adopters (existing repos):** You are **not** required to mirror the ai-dev-kit monorepo layout. See [INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081) for RW-only vs full-stack matrices and contract-first wiring.
+
 ---
 
 ## 📋 What's Included
@@ -195,9 +197,9 @@ This package is designed to be **fully modular** with maximum flexibility. You c
 
 ### Copy vs Reference Pattern
 
-**⚠️ CRITICAL: Copy, Don't Reference**
+**⚠️ CRITICAL: Vendoring this package (copy or submodule), not live-linking to ai-dev-kit**
 
-Projects must **copy** this package into their repository, not link to it.
+Adopters **vendor** this folder into their repository (copy or submodule). That does **not** mean you must adopt the ai-dev-kit **reference** directory tree—brownfield hosts map `scripts_path`, `version_file`, and changelogs to **their** paths ([brownfield guide](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)).
 
 **Why copy?**
 - Projects need to customize file paths, project names, and terminology

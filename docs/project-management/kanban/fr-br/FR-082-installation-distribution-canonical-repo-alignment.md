@@ -36,21 +36,31 @@ Align **installation scripts, defaults, and documentation examples** with the **
 
 ### Functional Requirements
 
-- [ ] **FR-082-F1:** Set **default `--repo`** (and any equivalent config) on `install_package_from_release.py` to the **canonical** public repository, or require an **explicit** `--repo` with no unsafe default (decision recorded in task).
-- [ ] **FR-082-F2:** Audit and fix **PACKAGE_INSTALLATION_GUIDE** and related user-facing URLs so release examples resolve to **real** release locations for this monorepo.
-- [ ] **FR-082-F3:** Align **cross-references** in `INSTALL_IN_YOUR_PROJECT.md` / quick starts so `python install_package_from_release.py` examples use working defaults or copy-paste-safe explicit `--repo RMS-Ltd/ai-dev-kit`.
+- [x] **FR-082-F1:** Set **default `--repo`** (and any equivalent config) on `install_package_from_release.py` to the **canonical** public repository, or require an **explicit** `--repo` with no unsafe default (decision recorded in task).
+- [x] **FR-082-F2:** Audit and fix **PACKAGE_INSTALLATION_GUIDE** and related user-facing URLs so release examples resolve to **real** release locations for this monorepo.
+- [x] **FR-082-F3:** Align **cross-references** in `INSTALL_IN_YOUR_PROJECT.md` / quick starts so `python install_package_from_release.py` examples use working defaults or copy-paste-safe explicit `--repo RMS-Ltd/ai-dev-kit`.
 
 ### Non-Functional Requirements
 
-- [ ] **FR-082-NF1:** Changes must not break adopters who intentionally mirror to a fork (override path remains documented).
+- [x] **FR-082-NF1:** Changes must not break adopters who intentionally mirror to a fork (override path remains documented).
+
+### Implementation evidence (E6:S09:T03)
+
+- [`install_package_from_release.py`](../../../packages/frameworks/workflow%20mgt/scripts/install_package_from_release.py) — `default='RMS-Ltd/ai-dev-kit'`; `--repo` / `GITHUB_REPOSITORY` override documented in help.
+- [`PACKAGE_INSTALLATION_GUIDE.md`](../../../packages/frameworks/workflow%20mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) — examples use `RMS-Ltd/ai-dev-kit` release URLs.
+- [`INSTALL_IN_YOUR_PROJECT.md`](../../../INSTALL_IN_YOUR_PROJECT.md) — GitHub Releases example includes explicit `--repo RMS-Ltd/ai-dev-kit`; submodule URL canonical.
+- [`scripts/fr099_install_smoke_test.sh`](../../../scripts/fr099_install_smoke_test.sh) — guards against `ai-dev-kit/ai-dev-kit` default regression on public clone.
+- **Backward compatibility:** Default changed from unsafe placeholder to canonical public repo; forks use `--repo owner/fork` (recorded in [T03](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) delivery notes).
+
+**Deferral (not FR-082):** Publishing framework release tarballs on GitHub Releases → [FR-062](./FR-062-github-release-installation-experience.md).
 
 ---
 
 ## Acceptance Criteria
 
-- A clean download using documented default flags targets the **intended** public repo (or fails fast with a clear message if no default is chosen).
-- Guide examples do not contain **known-bad** org/repo URLs.
-- Task documents any **backward-compatibility** note if default behavior changes.
+- [x] A clean download using documented default flags targets the **intended** public repo (or fails fast with a clear message if no default is chosen).
+- [x] Guide examples do not contain **known-bad** org/repo URLs in primary install paths.
+- [x] Task documents any **backward-compatibility** note if default behavior changes.
 
 ---
 

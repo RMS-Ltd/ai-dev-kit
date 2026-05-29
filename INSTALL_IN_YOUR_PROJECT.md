@@ -49,8 +49,8 @@ Other guides under [`docs/documentation/user-docs/`](docs/documentation/user-doc
 This section defines the canonical **greenfield** path for new or template projects per **FR-080** (E6:S09:T01).
 
 - Policy anchor: [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- Brownfield is separate: [FR-081](docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
-- Planning artifact: [IPW-E6S09T01](docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- Brownfield is separate: see [Brownfield adoption (existing repositories)](#brownfield-adoption-existing-repositories) below; policy [FR-081](docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md); planning [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- Greenfield planning: [IPW-E6S09T01](docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 ### Optional harness layer (ECC)
 
@@ -78,7 +78,7 @@ Normative contract: [ECC ↔ ADK integration specification](docs/architecture/st
 ### Scope boundary
 
 - This spec is for **greenfield** setup only (empty/new template repos).
-- Brownfield adaptation and host-architecture-preserving integration stays in FR-081.
+- Brownfield adaptation and host-architecture-preserving integration: [Brownfield adoption (existing repositories)](#brownfield-adoption-existing-repositories) (FR-081 / ADR-003).
 
 ### Inputs
 
@@ -218,6 +218,122 @@ Redact host paths, tokens, and internal URLs before sharing logs outside your te
 **Greenfield scope (this task):** Ensure adopters know how to capture evidence (`AI_DEV_KIT_INSTALL_LOG_PATH`, console transcripts) and **what not to paste** (secrets, private URLs). Full contract implementation remains tracked under FR-078 / FR-079.
 
 ---
+
+## Brownfield adoption (existing repositories)
+
+**Policy anchor:** [ADR-003 – Greenfield vs Brownfield adoption](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · **FR-081** · **IPP:** [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+
+Use this section when the **host project already has** its own layout, tooling, and governance. The host team owns architecture; AI Dev Kit supplies **modular surfaces** and **contracts**—not a mandatory copy of the ai-dev-kit reference repository tree.
+
+### When to use brownfield vs greenfield
+
+| Situation | Path |
+|-----------|------|
+| New or template repo with little structure to preserve | [Greenfield Install Specification](#greenfield-install-specification-wave-1-lock) (FR-080) |
+| Existing codebase, established `docs/`, PM process, or custom paths | **This section** (FR-081) |
+
+### Non-goals (brownfield)
+
+- **Do not** replace the host `docs/` tree or project-management process unless you explicitly choose to.
+- **Do not** copy ai-dev-kit's **reference** Epic/Story/Task content (e.g. maintainer Epics 1–23) into your repo as if it were your product backlog.
+- **Do not** treat `install_kanban_framework.py --mode fresh` as the default on brownfield repos (see [Adding Kanban later](#adding-kanban-later)).
+
+### Choose your adoption surface
+
+```
+Existing repo?
+  ├─ Need versioned releases + agent RW only?
+  │     └─ RW-only (use_kanban: false)
+  ├─ Need RW + task/epic docs in-repo?
+  │     └─ RW + Kanban (migration or canonical_adoption)
+  └─ Need full ADK governance stack?
+        └─ Full stack (RW + Kanban + versioning policy + optional doc-lifecycle)
+```
+
+### Per-surface adoption matrix
+
+Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A** = Not applicable for that profile
+
+| Profile | Release Workflow (RW) | Kanban | Versioning policy | Doc lifecycle | Validators when RW enabled |
+|---------|----------------------|--------|-------------------|---------------|----------------------------|
+| **RW-only** | **R** — `install_release_workflow.py`, `rw-config.yaml`, `.cursorrules` RW section | **O** — set `use_kanban: false` | **Rec** — host `version.py` + schema doc | **O** | Branch safety, changelog format, version bump; FR-060 task token guards **only if** you maintain task docs |
+| **RW + Kanban** | **R** | **R** — host epics or **canonical templates** via `migration` / `canonical_adoption` | **Rec** | **O** | Above + `validate_rw_task_complete.py`, `validate_rw_task_intent.py` when releasing with task docs |
+| **Full stack** | **R** | **R** | **R** — adopt [dev-kit-versioning-policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) or mapped equivalent | **O** | Full RW Step 7 four-surface reconciliation when Kanban + FR/BR paths enabled |
+
+**Contract-first wiring:** All paths assume you map ADK contracts to **your** tree. See [RW validators and consumer layout](packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md).
+
+#### `rw-config.yaml` integration seams (brownfield)
+
+| Key | RW-only minimum | Notes |
+|-----|-----------------|-------|
+| `version_file` | **R** | Your module path (e.g. `src/myapp/version.py`) |
+| `scripts_path` | **R** | Folder containing `validation/` after vendoring workflow mgt |
+| `main_changelog`, `changelog_dir` | **R** for RW | Your changelog locations |
+| `use_kanban` | `false` for RW-only | `true` only when Kanban paths exist and are valid |
+| `kanban_root`, `*_doc_pattern` | **O** | Required when `use_kanban: true` |
+
+### RW-only minimum path (brownfield)
+
+1. **Acquire** workflow management package (submodule, copy, or release asset from `RMS-Ltd/ai-dev-kit`).
+2. **Install RW** (do not skip the installer):
+
+   ```bash
+   python3 "packages/frameworks/workflow mgt/scripts/install_release_workflow.py" \
+     --mode a --project-root "."
+   ```
+
+   For RW without Kanban, answer prompts so `use_kanban: false` (Simple RW / mode `a`), or edit generated `rw-config.yaml` after install.
+
+3. **Verify** `rw-config.yaml` paths point at real files under your project root.
+4. **Smoke validators** (replace `{scripts_path}` from your config):
+
+   ```bash
+   python3 "{scripts_path}/validation/validate_branch_context.py" --strict
+   python3 "{scripts_path}/validation/validate_changelog_format.py"
+   ```
+
+5. **First release:** work on `epic/{n}-*` branch; trigger `RW E{n}:S{nn}:T{nn}` with your host Epic/Story/Task ids (FR-060).
+
+### Adding Kanban later
+
+- Prefer **`--mode migration`** or **`canonical_adoption`** when you already have boards or backlog docs.
+- Use **`--mode fresh`** only for greenfield-style empty Kanban roots; the installer prints a brownfield warning when you select fresh on an existing repo.
+- Installer installs **canonical templates**, not ai-dev-kit maintainer epics—see [kanban/README.md](packages/frameworks/kanban/README.md).
+
+```bash
+python3 "packages/frameworks/kanban/scripts/install_kanban_framework.py" \
+  --mode migration --kanban-path "docs/project-management/kanban"
+```
+
+Align `kanban_root` in `rw-config.yaml` with your actual path before RW Step 7.
+
+### Worked example: partial adoption (anonymized)
+
+**Host:** `acme-api` — five-year-old Python API monorepo; Jira for PM; `docs/` already contains architecture ADRs.
+
+**Goal (year 1):** Agent-driven releases with immutable changelogs; **no** in-repo Kanban yet.
+
+**Steps taken:**
+
+1. Added submodule `.ai-dev-kit` → copied `workflow mgt/` to `tools/workflow_mgt/`.
+2. Ran `install_release_workflow.py --mode a`; set `version_file: src/acme_api/version.py`, `scripts_path: tools/workflow_mgt/scripts`, `use_kanban: false`.
+3. Created minimal task doc only for release attribution (`E3:S02:T04`) under existing `docs/eng/tasks/`.
+4. Validators: branch + changelog only; skipped task-complete validators until Kanban Phase 2.
+5. First RW: `RW E3:S02:T04` on `epic/3-platform`.
+
+**Deferred:** Kanban (`FR-081` Phase 2), GitHub Release tarballs ([FR-062](docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md)).
+
+### Tradeoffs and deferrals
+
+| Topic | Status | Track in |
+|-------|--------|----------|
+| GitHub Release framework tarballs | Deferred | [FR-062](docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md) |
+| Install telemetry contracts | Deferred | [FR-078](docs/project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](docs/project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md) |
+| Intelligent epic matching | Document only | Kanban `canonical_adoption`; [FR-011](docs/project-management/kanban/fr-br/FR-011-intelligent-epic-matching-ai-assisted-canonical-adoption.md) |
+
+---
+
+### Package installation methods (greenfield and brownfield)
 
 ### Method 1: GitHub Releases (Recommended - Available Now)
 

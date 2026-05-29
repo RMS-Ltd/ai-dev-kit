@@ -458,6 +458,11 @@ Examples:
 
   # Preset mode (a=Simple, b=RW+Versioning, c=Full Stack)
   python install_release_workflow.py --mode c
+
+Brownfield (existing repo):
+  Map paths to YOUR project tree; see INSTALL_IN_YOUR_PROJECT.md
+  "Brownfield adoption" — use --mode a for RW-only (use_kanban: false).
+  Contract-first: docs/rw-validators-consumer-layout.md
         """
     )
     parser.add_argument('--dry-run', action='store_true',
