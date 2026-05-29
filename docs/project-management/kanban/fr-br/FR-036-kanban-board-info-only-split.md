@@ -13,6 +13,8 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** HIGH  
 **Status:** ACCEPTED  
+
+**Implementing Task:** [E4:S18:T01](../epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.4.18.1+0
 

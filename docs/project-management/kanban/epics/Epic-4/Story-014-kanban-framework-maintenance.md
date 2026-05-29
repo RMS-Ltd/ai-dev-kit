@@ -31,6 +31,8 @@ housekeeping_policy: keep
   - BR Reference: [BR-055](../../fr-br/BR-055-missing-implementation-cycle-workflow-icw.md)
   - GitHub Issue: #22
 
+- [x] **E4:S14:T04 – Kanban policy task prioritisation queue/stack (FR-037)** ✅ COMPLETE (semantic home; delivery **E5:S01:T37**)
+  - Task: [`T04-kanban-policy-task-prioritisation-queue-stack-fr037.md`](Story-014-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md) | [FR-037](../../fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
 
 ---
 

@@ -14,6 +14,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED - IMPLEMENTED
 
+**Implementing Task:** [E4:S02:T06](../epics/Epic-4/Story-002-fr-br-intake-to-tasks/T06-github-submission-fr-br-uxr-fr004.md)
+
 ---
 
 ## Summary

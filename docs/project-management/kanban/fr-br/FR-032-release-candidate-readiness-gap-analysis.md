@@ -16,7 +16,8 @@ housekeeping_policy: keep
 **GitHub Issue:** [TBD]  
 **Version:** v0.9.1.0+0 (Story created via UKW v0.6.6.8+21)
 
-**Implementing Task:** [E5:S01:T32](../epics/Epic-5/Story-001-fr-repo/T32-release-candidate-readiness-gap-analysis.md)
+**Implementing Task:** [E9:S01:T03](../epics/Epic-9/Story-001-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md)  
+**Historical registry:** E5:S01:T32 registry
 
 ---
 

@@ -74,6 +74,8 @@ Fix critical bugs in Kanban package installation process and implement actual ag
   - **Acceptance:** ✅ Criterion 1 of BR-008 and FR-1 of FR-010 satisfied.
 
 
+- [ ] **E4:S09:T07 – FR-010: Template task installation — two-phase migration** - TODO — [Task doc](Story-009-bug-fixes-and-agentic-intelligence/T07-fr010-template-task-installation-two-phase-migration.md) | [FR-010 (templates)](../../fr-br/FR-010-template-task-installation-two-phase-migration.md)
+
 - [x] **E4:S09:T06 – FR-010: Implement actual agentic intelligence for task mapping** ✅ COMPLETE (FOUNDATION IMPLEMENTED)
   - **Status:** Foundation implemented with extensible framework for LLM integration
   - **Implementation:** Created `agentic_mapper.py` with enhanced content analysis

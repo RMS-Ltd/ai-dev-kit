@@ -13,6 +13,8 @@ labels: ["bug", "github-actions", "yaml", "fr-br-intake", "retrospective"]
 
 # Bug Report BR-057: fr-br-intake workflow YAML (block scalar indentation)
 
+**Implementing Task:** [E7:S06:T17](../epics/Epic-7/Story-006-post-windsurf-project-review/T17-BR057-fr-br-intake-yaml-retrospective.md)
+
 ## Bug Summary
 
 GitHub reported **Invalid workflow file** for `.github/workflows/fr-br-intake.yml` (error referenced ~line 131). The workflow file failed YAML parsing because several lines inside the `actions/github-script` `script: |` block were not indented relative to `script:`, so YAML treated them as new top-level constructs instead of part of the literal string.

@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 4      # Epic 4 — Kanban Framework
-VERSION_STORY = 19    # Story 19 — FR/BR/UXR abstract governance and intake
-VERSION_TASK = 7      # Task 7 — FR-021 repository pattern supersession
-VERSION_BUILD = 1     # Build 1: semantic task filing + FR-021 wiring (RW -k)
+VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
+VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
+VERSION_TASK = 14     # Task 14 — UKW gap discovery (FR-043)
+VERSION_BUILD = 2     # Build 2: semantic task filing (RW -k; perpetual lane BR-075)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.4.19.7+1
+# Current: 0.2.16.14+2

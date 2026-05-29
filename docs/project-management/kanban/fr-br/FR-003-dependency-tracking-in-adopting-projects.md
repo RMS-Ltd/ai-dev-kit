@@ -14,6 +14,9 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** INTAKE
 
+**Implementing Task:** [E1:S02:T14](../epics/Epic-1/Story-002-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)  
+**Historical registry:** E5:S01:T03
+
 ---
 
 ## Summary

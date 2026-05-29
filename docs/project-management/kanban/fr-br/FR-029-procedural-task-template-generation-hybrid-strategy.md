@@ -10,6 +10,8 @@ housekeeping_policy: keep
 
 **Type:** Feature Request  
 **Status:** Proposed  
+
+**Implementing Task:** [E4:S15:T05](../epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md)
 **Priority:** HIGH  
 **Requested By:** ai-dev-kit maintainers  
 **Related Epic(s):** E4 (Kanban Framework), E6 (Framework Management and Maintenance)  

@@ -51,6 +51,10 @@ Before `RW -k`:
 
 ---
 
+## Queue table (snapshot 2026-05-29 — batch semantic intake pass)
+
+**Status:** Active **fbuboard** rows (~46 IDs) wired to semantic `E:S:T` tasks (2026-05-29). **12 new task docs** under delivery stories (E4:S19, E2:S16, E4:S14, E1:S02, E8:S03, E9:S01, E2:S11, E4:S02, E4:S09). Remaining corpus: run gap script on full `fr-br/` for non-board open items.
+
 ## Queue table (snapshot 2026-04-26, scoped pass under E4:S19:T06)
 
 **Epic branches (examples):** Epic 5 → `epic/5-*`; Epic 6 → `epic/6-framework-management`; Epic 7 → `epic/7-documentation-maintenance`.

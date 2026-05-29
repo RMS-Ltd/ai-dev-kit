@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Implementation Date:** 2026-03-09  
 **Version:** v0.2.1.15+2  
 **Code:** E2:S01:T15  
-**Implementing Task:** [E2:S01:T15](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T15-canonical-rw-step-list-single-source-of-truth-fr049.md)
+**Implementing Task:** [E5:S01:T49](../epics/Epic-5/Story-001-fr-repo/T49-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
 
 ---
 

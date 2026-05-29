@@ -13,6 +13,8 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** MEDIUM  
 **Status:** ACCEPTED  
+
+**Implementing Task:** [E5:S07:T01](../epics/Epic-5/Story-007-policy-documentation-structure.md)
 **Intake Date:** 2025-12-12  
 **Assigned To:** Epic 5, Story 6, Task 1  
 **Version:** v0.5.6.1+0 (doc-init)

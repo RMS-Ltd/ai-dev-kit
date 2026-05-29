@@ -13,6 +13,8 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (Cursor) acting as user/client for dev-toolkit  
 **Priority:** HIGH  
 **Status:** ACCEPTED  
+
+**Implementing Task:** [E4:S08:T05](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md)
 **GitHub Issue:** [#7](https://github.com/RMS-Ltd/ai-dev-kit/issues/7)
 
 ---

@@ -14,6 +14,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Severity:** MEDIUM  
 **Status:** ACCEPTED  
+
+**Implementing Task:** [E5:S01:T35](../epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.5.1.35+1 (implemented)
 

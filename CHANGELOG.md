@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.14+2] - 29-05-26
+
+E2:S16:T14 (FR-043) — Kanban init: UKW gap-discovery task under perpetual **E2:S16** (semantic home for **FR-043**). SemVer **v0.4.824+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.14+2.md)
+
+---
+
 ## [0.4.19.7+1] - 29-05-26
 
 E4:S19:T07 (FR-021) — Kanban init: semantic task **E4:S19:T07** for repository-pattern supersession (FR-072 reconciliation). SemVer **v0.4.823+1**.

@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 - [ ] **E9:S01:T01 – Current State Inventory** - TODO
 - [ ] **E9:S01:T02 – RC=1 Criteria Definition** - TODO
-- [ ] **E9:S01:T03 – Gap Analysis** - TODO
+- [ ] **E9:S01:T03 – Gap Analysis (FR-032)** - TODO — [Task doc](Story-001-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [FR-032](../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
 - [ ] **E9:S01:T04 – Task Prioritization Review** - TODO
 - [ ] **E9:S01:T05 – Missing Work Identification** - TODO
 - [ ] **E9:S01:T06 – RC Readiness Checklist Creation** - TODO

@@ -16,6 +16,9 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED  
 
+**Implementing Task:** [E2:S16:T14](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md)  
+**Historical registry:** E5:S01:T43
+
 ---
 
 ## Summary

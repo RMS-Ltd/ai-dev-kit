@@ -14,6 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
+**Implementing Task:** [E2:S10:T06](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
+
 ---
 
 ## Summary

@@ -14,6 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
+**Implementing Task:** [E2:S11:T00](../epics/Epic-2/Story-011-intake-workflow-automation.md)
+
 ---
 
 ## Summary

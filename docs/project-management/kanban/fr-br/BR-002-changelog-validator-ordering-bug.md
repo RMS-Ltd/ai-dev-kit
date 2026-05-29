@@ -15,6 +15,9 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** REOPENED
 
+**Implementing Task:** [E2:S11:T11](../epics/Epic-2/Story-011-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)  
+**Historical registry:** E6:S01:T02
+
 ---
 
 ## Summary

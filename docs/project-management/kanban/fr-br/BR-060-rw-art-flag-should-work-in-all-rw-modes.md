@@ -13,6 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** HIGH (blocks intended release attribution flow)  
 **Status:** ✅ COMPLETE (v0.6.6.58+2)  
+
+**Implementing Task:** [E2:S01:T09](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)
 **Created:** 2026-04-08  
 **Classification:** Workflow bug + policy/docs mismatch
 

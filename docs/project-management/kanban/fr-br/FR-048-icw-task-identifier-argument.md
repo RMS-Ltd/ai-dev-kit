@@ -13,6 +13,9 @@ housekeeping_policy: keep
 **Submitted By:** RMS (AI Dev Kit)  
 **Priority:** HIGH  
 **Status:** PENDING  
+
+**Implementing Task:** [E5:S01:T48](../epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md)  
+**Historical registry:** E2:S01:T14 RW trigger variant
 **GitHub Issue:** TBD
 
 ---

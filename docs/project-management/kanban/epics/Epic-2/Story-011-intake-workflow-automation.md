@@ -39,6 +39,10 @@ housekeeping_policy: keep
   - Task: [`T12-github-actions-workflow-bug-resolution.md`](Story-011-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
   - **Related BR:** [BR-053](../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)
 
+- [ ] **E2:S11:T13 – GitHub Actions workflow spam emails (BR-051)** - TODO — [Task doc](Story-011-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
+
+- [ ] **E2:S11:T14 – GitHub Actions workflow optimization (BR-052)** - TODO — [Task doc](Story-011-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fr-br/BR-052-github-actions-workflow-optimization.md)
+
 
 > **Format:** `E2:S11:Txx` (Epic 2, Story 11, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.2.11.1+1)`)  

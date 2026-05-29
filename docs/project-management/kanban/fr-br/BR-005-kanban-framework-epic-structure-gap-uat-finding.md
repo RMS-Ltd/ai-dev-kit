@@ -17,6 +17,8 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** ACCEPTED
 
+**Implementing Task:** [E4:S06:T06](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
+
 ---
 
 ## Summary

@@ -14,6 +14,8 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent)  
 **Priority:** MEDIUM  
 **Status:** ACCEPTED  
+
+**Implementing Task:** [E5:S09:T11](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
 **Assigned Task:** E5:S09:T04 — [`T04-docusaurus-navigation-fr-068.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T04-docusaurus-navigation-fr-068.md)
 
 ---

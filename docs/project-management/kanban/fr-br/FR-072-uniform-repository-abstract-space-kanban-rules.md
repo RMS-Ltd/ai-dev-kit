@@ -15,7 +15,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IN PROGRESS  
 
-**Implementing Task:** [E5:S01:T72](../epics/Epic-5/Story-001-fr-repo/T72-uniform-repository-abstract-space-kanban-rules.md)
+**Implementing Task:** [E4:S19:T08](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
+**Historical registry:** E5:S01:T72
 
 ---
 

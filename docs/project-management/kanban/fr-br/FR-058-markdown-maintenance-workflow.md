@@ -14,6 +14,9 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** PROPOSED
 
+**Implementing Task:** [E7:S01:T05](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T05-markdown-maintenance-perpetual-task.md)  
+**Historical registry:** FR-058 vs perpetual T05
+
 ---
 
 ## Summary

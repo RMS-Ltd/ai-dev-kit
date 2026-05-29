@@ -13,6 +13,8 @@ labels: ["bug", "github-actions", "workflow", "notifications"]
 
 # Bug Report BR-051: GitHub Actions Workflow Spam Emails
 
+**Implementing Task:** [E2:S11:T13](../epics/Epic-2/Story-011-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md)
+
 ## **Bug Summary**
 GitHub Actions workflow `fr-br-intake.yml` was generating "No jobs were run" email notifications for every issue activity, causing email spam.
 

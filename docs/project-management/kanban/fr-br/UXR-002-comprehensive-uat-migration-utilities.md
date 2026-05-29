@@ -13,6 +13,9 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (Cursor) acting as user/client for dev-toolkit  
 **Priority:** HIGH  
 **Status:** ACCEPTED  
+
+**Implementing Task:** [E7:S05:T02](../epics/Epic-7/Story-005-migration-uxr-research.md)
+**Repository Task:** [E7:S00:T02](../epics/Epic-7/Story-000-uxr-repo/T02-uxr-002-repository-anchor.md)
 **GitHub Issue:** [#6](https://github.com/RMS-Ltd/ai-dev-kit/issues/6)  
 **Repository Task:** [E7:S00:T02](../epics/Epic-7/Story-000-uxr-repo/T02-uxr-002-repository-anchor.md)  
 **Implementation (synthesis):** [E7:S05:T02](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T02**

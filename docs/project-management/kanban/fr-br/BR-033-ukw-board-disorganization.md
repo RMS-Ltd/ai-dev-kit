@@ -14,6 +14,9 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** HIGH  
 **Status:** ✅ FIXED (All acceptance criteria met, task complete)  
+
+**Implementing Task:** [E6:S01:T33](../epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)  
+**Historical registry:** E6:S00:T33
 **GitHub Issue:** [TBD]  
 **Version:** v0.6.1.33+5
 

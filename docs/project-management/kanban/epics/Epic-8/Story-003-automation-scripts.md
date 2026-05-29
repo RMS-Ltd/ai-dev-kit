@@ -24,6 +24,8 @@ housekeeping_policy: keep
 - [ ] **E8:S03:T02 – Build workflow automation scripts** - TODO
 - [ ] **E8:S03:T03 – Establish automation patterns** - TODO
 
+- [ ] **E8:S03:T04 – CI test workflow and pytest remediation (BR-058)** - TODO (LOW) — [Task doc](Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+
 ---
 
 ## Overview

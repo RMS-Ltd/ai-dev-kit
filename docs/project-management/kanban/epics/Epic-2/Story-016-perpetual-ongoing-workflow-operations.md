@@ -65,6 +65,8 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [ ] **E2:S16:T13 – BR-059: UKW MoSCOW full open-task coverage per story** - TODO (HIGH, re-housed from `E6:S07:T109`, FR-087 Wave 4)
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md`](Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 
+- [ ] **E2:S16:T14 – UKW gap discovery — unfiled FR/BR (FR-043)** - TODO (HIGH) — [Task doc](Story-016-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
+
 ---
 
 ## Overview

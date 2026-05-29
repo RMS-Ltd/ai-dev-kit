@@ -15,6 +15,8 @@ housekeeping_policy: keep
 **Status:** PENDING  
 **GitHub Issue:** [#7](https://github.com/RMS-Ltd/ai-dev-kit/issues/7) (Additional Context Comment)
 
+**Implementing Task:** [E4:S09:T07](../epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence/T07-fr010-template-task-installation-two-phase-migration.md)
+
 ---
 
 ## Summary

@@ -14,6 +14,9 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED
 
+**Implementing Task:** [E1:S02:T13](../epics/Epic-1/Story-002-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)  
+**Historical registry:** E5:S01:T02
+
 ---
 
 ## Summary

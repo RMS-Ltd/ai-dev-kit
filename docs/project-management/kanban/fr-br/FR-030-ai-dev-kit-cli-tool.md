@@ -13,6 +13,8 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (ai-dev-kit)  
 **Priority:** HIGH  
 **Status:** ACCEPTED  
+
+**Implementing Task:** [E6:S08:T01](../epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.6.7.13+1
 

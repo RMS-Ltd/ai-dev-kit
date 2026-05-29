@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – FBU Prioritization Board
 
 **Last Updated:** 2026-05-29 (RW **v0.2.16.4+15** — kboard/fbuboard consolidation)
-**Version Context:** v0.4.19.7+1 (**SemVer** v0.4.823+1)
+**Version Context:** v0.2.16.14+2 (**SemVer** v0.4.824+2)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -65,7 +65,7 @@ This board provides **centralized visibility and prioritization** for all open F
 - **FR-030** – AI Dev Kit CLI Tool - 📋 TODO (MEDIUM, Command-line interface tool) - [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md) | [E6:S08](epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md) | Last modified: 2026-01-16 00:00 UTC
 - **FR-021** – FR/BR/UXR Repository Stories - 📋 TODO (MEDIUM, **E4:S19:T07** semantic delivery) - [FR-021](fr-br/FR-021-fr-br-uxr-repository-stories.md) | [E4:S19:T07](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md) | Last modified: 2026-05-29 17:16 UTC
 - **UXR-003** – Intelligent Epic Matching Canonical Adoption UAT - 📋 TODO (MEDIUM, User acceptance testing for intelligent epic matching) - [UXR-003](fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md) | Last modified: 2026-03-31 18:26 UTC
-- **FR-043** – UKW Gap Discovery TODO Tasks and Unfiled FR/BR - 📋 TODO (LOW, Discover gaps in UKW and unfiled items) - [FR-043](fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | Last modified: 2026-04-20 18:05 UTC
+- **FR-043** – UKW Gap Discovery TODO Tasks and Unfiled FR/BR - 📋 TODO (HIGH, **E2:S16:T14** UKW perpetual) - [FR-043](fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | [E2:S16:T14](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md) | Last modified: 2026-05-29 17:18 UTC
 - **FR-044** – RW Temporary Execution Log for Recovery and Forensics - 📋 TODO (LOW, Temporary execution logs for Release Workflow) - [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | Last modified: 2026-02-22 16:54 UTC
 - **FR-039** – AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) - [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | Last modified: 2026-03-16 16:31 UTC
 - **FR-037** – Kanban Policy Task Prioritisation Queue Stack - 📋 TODO (LOW, Queue stack for task prioritization) - [FR-037](fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md) | Last modified: 2026-04-01 15:15 UTC

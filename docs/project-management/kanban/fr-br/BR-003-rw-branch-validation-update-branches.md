@@ -15,6 +15,9 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED
 
+**Implementing Task:** [E2:S01:T10](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md)  
+**Historical registry:** E6:S01:T03
+
 ---
 
 ## Summary

@@ -13,6 +13,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (CI integration dead; local test signal degraded)  
 **Status:** OPEN  
+
+**Implementing Task:** [E8:S03:T04](../epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)
 **Created:** 2026-03-25  
 **Classification:** CI/CD + test maintenance
 

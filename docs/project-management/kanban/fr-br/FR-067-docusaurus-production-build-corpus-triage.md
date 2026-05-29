@@ -14,6 +14,8 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent)  
 **Priority:** HIGH  
 **Status:** ACCEPTED  
+
+**Implementing Task:** [E5:S09:T03](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T03-docusaurus-build-triage-fr-067.md)
 **Assigned Task:** E5:S09:T03 — [`T03-docusaurus-build-triage-fr-067.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T03-docusaurus-build-triage-fr-067.md)
 
 ---

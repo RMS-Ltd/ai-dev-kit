@@ -32,6 +32,10 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ## Task Checklist
 
+- [ ] **E1:S02:T13 – README / been-there template (FR-002)** - TODO (LOW) — [Task doc](Story-002-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](../../fr-br/FR-002-update-been-there-readme.md)
+
+- [ ] **E1:S02:T14 – Dependency tracking for adopters (FR-003)** - TODO (LOW) — [Task doc](Story-002-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
+
 - [x] **E1:S02:T01 – Analyze current package structure and dependencies** ✅ COMPLETE (v0.1.2.1+1)
 - [x] **E1:S02:T02 – Document modularity principles and boundaries** ✅ COMPLETE (v0.1.2.2+1)
 - [x] **E1:S02:T03 – Create package dependency matrix** ✅ COMPLETE (v0.1.2.3+1)

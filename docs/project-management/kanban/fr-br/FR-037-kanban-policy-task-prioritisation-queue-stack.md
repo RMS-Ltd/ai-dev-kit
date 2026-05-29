@@ -13,6 +13,9 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** HIGH  
 **Status:** PENDING  
+
+**Implementing Task:** [E4:S14:T04](../epics/Epic-4/Story-014-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md)  
+**Historical registry:** E5:S01:T37
 **Assigned Task:** E5:S01:T37  
 **GitHub Issue:** [TBD]  
 **Source:** Adapted from Starborn Legacy Kanban Governance Policy (2025-12-01)
