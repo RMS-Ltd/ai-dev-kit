@@ -22,7 +22,7 @@ An item appears here when **open** (not COMPLETE/CLOSED/RESOLVED/REJECTED/VERIFI
 1. No **`**Implementing Task:**`** with a working relative link to a task file under `epics/`, or  
 2. Only a **Story** link on the board without `E#:S##:T##`, or  
 3. Claimed **`E#:S##:T##`** but the task file is missing, or  
-4. Task lives under a **non-standard** task id (e.g. BR-059 → **E6:S07:T109**, not `T59`) — treat as **filed** once BR doc links to that task; do not add a duplicate `T59`.
+4. Task lives under a **non-standard** task id (e.g. BR-059 → **E2:S16:T13**, re-housed from `E6:S07:T109`) — treat as **filed** once BR doc links to that task; do not add a duplicate `T59`.
 
 Reconcile board vs doc: **source markdown + on-disk task file** wins.
 
@@ -59,7 +59,7 @@ Before `RW -k`:
 | -------- | ------ | ----------------- | ------------------------- | -------------------------------- | ------------------------ |
 | M | BR-038 | No (task exists) | No (linked to E6:S06:T63) | `epic/6-framework-management` | n/a — already wired |
 | M | BR-039 | Yes | Yes | `epic/6-framework-management` | `RW -k E6:S01:T39` |
-| M | BR-059 | No (E6:S07:T109 exists) | Yes (doc header missing link) | `epic/6-framework-management` | n/a — add doc wiring first |
+| M | BR-059 | No (E2:S16:T13 exists) | Wired 2026-05-29 | `main` / E2 | Re-housed from E6:S07:T109 |
 
 *Remaining open items: process in MoSCOW order; this table was reconciled in Wave 4 for FR-073 AC3 closure evidence under E4:S19:T06. Continue one item per `RW -k` pass where filing is required.*
 

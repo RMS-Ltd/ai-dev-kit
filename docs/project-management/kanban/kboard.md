@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-29 (RW: E4:S19:T03 — E6:S07 default-housing investigation report)
-**Version:** v0.4.19.3+2
+**Last Updated:** 2026-05-29 (RW -d: E4:S19:T03 — FR-087 Wave 4 re-housing docs)
+**Version:** v0.4.19.3+0
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -30,7 +30,9 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-*(none)*
+- **E2:S16:T13** – BR-059: UKW MoSCOW full open-task coverage per in-progress story - 📋 TODO (HIGH, re-housed from `E6:S07:T109`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Last modified: 2026-05-29 17:00 UTC
+- **E2:S01:T23** – Tool-agnostic workflow step tracking + persisted run logs - 📋 TODO (HIGH, re-housed from `E6:S07:T18`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Last modified: 2026-05-29 17:00 UTC
+- **E6:S07:T107** – IDE command whitelist optimization - 📋 TODO (HIGH, in-scope ADK agent friction; charter freeze applies to new S07 tasks) | [Task](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) | Last modified: 2026-05-29 17:00 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 

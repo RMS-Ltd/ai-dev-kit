@@ -10,11 +10,11 @@ housekeeping_policy: keep
 
 **Task ID:** E4:S19:T03  
 **Status:** COMPLETE
-**Version Anchor:** v0.4.19.3+2 (`RW E4:S19:T03 --art`, Wave 2–3 investigation report)  
+**Version Anchor:** v0.4.19.3+2 (functional — investigation report); v0.4.19.3+0 (`RW -d` — Wave 4 re-housing docs, `--doc-policy-zero`)  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-29 (Wave 2–3 investigation report published: forensic origin, codification inventory, triage with `drift_ratio ≈ 0.67`, **`split/re-house`** recommendation + guardrail backlog; Wave 4 migrations deferred)  
+**Last updated:** 2026-05-29 (Wave 4 landed: T109→E2:S16:T13, T18→E2:S01:T23, Story 007 In/Out of Scope; doc release **v0.4.19.3+0**)  
 **Code:** E4S19T03
 
 **Upstream:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)

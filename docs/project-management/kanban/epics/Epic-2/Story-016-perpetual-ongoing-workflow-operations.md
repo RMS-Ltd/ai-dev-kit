@@ -62,6 +62,9 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [x] **E2:S16:T12 – IPW ADR necessity checklist and decision gate (FR-100)** - ✅ COMPLETE (v0.2.16.12+2) (HIGH, Phase 5.0 ADR gate; policy `ipw-adr-necessity-checklist.md`; IPP §2.5)
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md`](Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) | [FR-100](../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md) | [IPP](../../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)
 
+- [ ] **E2:S16:T13 – BR-059: UKW MoSCOW full open-task coverage per story** - TODO (HIGH, re-housed from `E6:S07:T109`, FR-087 Wave 4)
+  - Task: [`Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md`](Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
+
 ---
 
 ## Overview

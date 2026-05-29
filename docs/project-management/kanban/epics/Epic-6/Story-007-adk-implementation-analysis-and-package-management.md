@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** CRITICAL
 **Estimated Effort:** Large
 **Created:** 2025-12-16
-**Last updated:** 2026-05-19 (T115 COMPLETE via FR-092 v0.2.15.7+9 absorption)
+**Last updated:** 2026-05-29 (FR-087 Wave 4: In/Out of Scope restated; T109/T18 re-housed to E2; freeze on new catch-all intake)
 **Version:** v0.6.7.115+1
 **Code:** E6S07
 
@@ -82,8 +82,8 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E6:S07:T18 – Tool-Agnostic Workflow Step Tracking + Persisted Run Logs (Cursor TODO Migration)** - TODO
-  - Task: [`T18-tool-agnostic-workflow-step-tracking-and-runlogs.md`](Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+- [x] **E6:S07:T18 – Tool-Agnostic Workflow Step Tracking + Persisted Run Logs** - SUPERSEDED → **E2:S01:T23** (re-housed 2026-05-29, FR-087 Wave 4)
+  - Historical: [`T18-tool-agnostic-workflow-step-tracking-and-runlogs.md`](Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Successor: [E2:S01:T23](../Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
 
 
 
@@ -105,15 +105,13 @@ housekeeping_policy: keep
 
 
 
-- [x] **E6:S07:T107 – Workflows Directory Structure Reorganization** ✅ COMPLETE
+- [ ] **E6:S07:T107 – IDE command whitelist optimization** - TODO (HIGH, pattern-based whitelist to reduce agent approval friction; **not** workflows directory reorganization — checklist label corrected 2026-05-29)
   - Task: [`T107-ide-command-whitelist-optimization.md`](Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
-  - **Scope:** Reorganize workflows directory into named subdirectories for better organization and maintainability
 
 
 
-- [ ] **E6:S07:T109 – BR-059: UKW MoSCOW full open-task coverage per in-progress story** - TODO (HIGH, board must list all open story tasks or explicit **Won’t** deferrals; fail loud on partial enumeration)
-  - Task: [`T109-br059-ukw-moscow-full-story-task-coverage.md`](Story-007-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
-  - **Coordinates:** [E2:S16:T03](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (Story 016 migration anchor)
+- [x] **E6:S07:T109 – BR-059: UKW MoSCOW full open-task coverage** - SUPERSEDED → **E2:S16:T13** (re-housed 2026-05-29, FR-087 Wave 4)
+  - Historical: [`T109-br059-ukw-moscow-full-story-task-coverage.md`](Story-007-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Successor: [E2:S16:T13](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
 
 
 - [x] **E6:S07:T110 – UKW fbuboard scope + concurrency/temporal-drift controls** - ✅ COMPLETE (HIGH, v0.6.7.110+1 — UKW fbuboard parity + drift/concurrency controls released)
@@ -144,6 +142,28 @@ housekeeping_policy: keep
 
 - [x] **E6:S07:T116 – UKW optional reprioritization `--rp` flag (FR-085)** - SUPERSEDED (re-housed to **E2:S16:T06** for canonical perpetual workflow-operations ownership; legacy task doc removed)
   - Historical anchor: `E6:S07:T116` | [FR-085](../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | Successor: [E2:S16:T06](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
+
+---
+
+## In scope / Out of scope (FR-087 Wave 4 — 2026-05-29)
+
+**In scope (file new work here only when it matches delivery semantics):**
+
+- Cross-project ADK implementation analysis and synthesis (T01, T06, T07)
+- Package management investigation, design, and implementation (T02–T05, T09)
+- Install/adoption hardening: telemetry, feedback, runbooks tied to ADK distribution (T104–T105, T111–T112)
+- Framework hardening recommendations derived from analysis findings (T07 and follow-ons)
+- IDE/agent friction **directly** tied to ADK script execution patterns (e.g. T107 whitelist patterns for validation/RW commands)
+
+**Out of scope (do not file new tasks under `E6:S07`; use canonical homes):**
+
+- UKW, CMW, RW perpetual maintenance, MoSCOW/board hygiene → **E2:S16** (e.g. T03, T04, T13)
+- RW agent execution, step tracking, release automation policy → **E2:S01** (e.g. T23)
+- Kanban/FBU abstract governance, board naming, intake meta-policy → **E4:S19**
+- IPW publication contract, RW/UKW architectural programs → **E2:S15** (FR-092)
+- Perpetual task placement inventory → **E2:S16:T02** / **IPP-E2S16T01** (defers from FR-087)
+
+**Freeze:** New tasks under `E6:S07` require explicit `Default Housing Override Rationale:` until guardrail validator lands (see [E4:S19:T03 report](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md) §6).
 
 ---
 

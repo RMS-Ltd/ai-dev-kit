@@ -197,13 +197,26 @@ No additional re-housing executed in this wave; Wave 4 owns migrations in §5.2.
 
 ---
 
-## 8. Traceability
+## 8. Wave 4 execution log (2026-05-29)
+
+| Step | Action | Status |
+| ---- | ------ | ------ |
+| 4.1 | Re-house `E6:S07:T109` → `E2:S16:T13` (BR-059) | ✅ Done — superseded source doc; BR-059 + Story 016 + fbuboard/kboard rewired |
+| 4.1 | Re-house `E6:S07:T18` → `E2:S01:T23` (workflow step tracking) | ✅ Done — superseded source doc; Story 001 checklist + kboard |
+| 4.2 | Restate `S07` In/Out of Scope + intake freeze note | ✅ Done — `Story-007-adk-implementation-analysis-and-package-management.md` |
+| 4.2 | Correct T107 story checklist (was mislabeled COMPLETE / wrong scope title) | ✅ Done — TODO, IDE whitelist |
+| 4.3 | Retrospective migration of completed out-of-scope tasks | ⏸ Deferred (T110, T113, T114, T115 batch — lower urgency) |
+| Guardrail filing (§6) | Intake guide / `.cursorrules` / validator | ⏸ Deferred — follow-on tasks not yet filed |
+
+---
+
+## 9. Traceability
 
 | Artifact | Update |
 | -------- | ------ |
 | E4:S19:T03 task doc | Link this report; AC1–AC5 checklist |
-| FR-087 | Link report; requirements remain until guardrails filed |
-| IPP-E4S19T03 | Wave 2–3 execution notes in §5 (optional follow-up edit) |
+| FR-087 | Link report; F5 partial until guardrails implemented |
+| IPP-E4S19T03 | Wave 4 log in §8 |
 
 ---
 

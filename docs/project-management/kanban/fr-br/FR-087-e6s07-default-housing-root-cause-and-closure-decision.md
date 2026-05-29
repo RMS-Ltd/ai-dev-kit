@@ -49,7 +49,7 @@ The project needs an evidence-backed explanation of:
 - [x] **FR-087-F2:** Identify all codification points (scripts, validators, templates, policies, workflow docs, rules, prompts) that bias or permit `S07` as default housing. *(Report §3)*
 - [x] **FR-087-F3:** Classify existing `S07` tasks by semantic fit (`in-scope`, `borderline`, `out-of-scope`) and quantify drift. *(Report §4; `drift_ratio ≈ 0.67`)*
 - [x] **FR-087-F4:** Provide closure decision options for `S07` (`close`, `keep-open-narrowed`, `split/re-house`) with impact/risk analysis. *(Report §5 — recommends **`split/re-house`**)*
-- [~] **FR-087-F5:** Define enforceable placement guardrails to prevent future default-housing drift. *(Report §6 — specified; **implementation tasks not yet filed**)*
+- [~] **FR-087-F5:** Define enforceable placement guardrails to prevent future default-housing drift. *(Report §6 — specified; **implementation tasks not yet filed**; Wave 4 §8: S07 In/Out of Scope + active re-housings landed)*
 - [ ] **FR-087-F6:** Define and enforce explicit re-housing protocol for misfiled tasks (including required board/story/FBU rewiring and rationale capture) so Story 007 cannot silently re-accumulate catch-all work.
 
 ### Non-Functional Requirements

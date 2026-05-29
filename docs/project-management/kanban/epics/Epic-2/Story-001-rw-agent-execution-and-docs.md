@@ -57,6 +57,9 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 - [x] **E2:S01:T21 – RW release commits test artifacts, deletes prior-build changelog, emits version typo (BR-074)** - ✅ COMPLETE (v0.2.1.21+1 — `.gitignore` exclusions, restored +1 changelog, patched +2 typo, Step 3 immutability guards, archive link validator, dual-source parity updated) — [Task doc](Story-001-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md) | [BR-074](../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
 - [x] **E2:S01:T22 – RW perpetual-task BUILD must persist in `version.py` (BR-075)** - ✅ COMPLETE (**v0.2.1.22+1** — perpetual BUILD validator; version-bump skill path) — [Task doc](Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md) | [BR-075](../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md) | [IPP](../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
 
+- [ ] **E2:S01:T23 – Tool-agnostic workflow step tracking + persisted run logs** - TODO (HIGH, re-housed from `E6:S07:T18`, FR-087 Wave 4)
+  - Task: [T23-tool-agnostic-workflow-step-tracking-and-runlogs.md](Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Historical: [E6:S07:T18](../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+
 ---
 
 ## Tasks

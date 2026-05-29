@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.3+2] - 29-05-26
+## [0.4.19.3+0] - 29-05-26
 
-E4:S19:T03 (FR-087) — `E6:S07` default-housing investigation report: forensic origin, codification inventory, triage (`drift_ratio ≈ 0.67`), **`split/re-house`** recommendation. SemVer **v0.4.819+2**.
+E4:S19:T03 (FR-087) — Wave 4 docs: re-house `T109`→`E2:S16:T13`, `T18`→`E2:S01:T23`, Story 007 In/Out of Scope. **BUILD +0** (`--doc-policy-zero`). Functional work on **v0.4.19.3+2**. SemVer **v0.4.820+0**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.3+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.3+0.md)
 
 ---
 
