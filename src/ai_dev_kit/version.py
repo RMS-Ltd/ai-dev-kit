@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 7      # Epic 7
 VERSION_STORY = 1     # Story 1
 VERSION_TASK = 11     # Task 11 (FR-101 governance consolidation)
-VERSION_BUILD = 4     # Build 4: Wave B — standards policies to docs/governance/standards/
+VERSION_BUILD = 5     # Build 5: Wave C — kanban governance policy to docs/governance/kanban/
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.7.1.11+4
+# Current: 0.7.1.11+5

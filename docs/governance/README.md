@@ -31,7 +31,7 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 
 ## Kanban (`governance/kanban/`)
 
-- *(pending Wave C)* [kanban-governance-policy.md](kanban/kanban-governance-policy.md)
+- [kanban-governance-policy.md](kanban/kanban-governance-policy.md) · [README](kanban/README.md)
 
 ---
 

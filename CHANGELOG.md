@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.11+5] - 29-05-26
+
+E7:S01:T11 (FR-101) — Wave C: Kanban governance policy to `docs/governance/kanban/`. SemVer **v0.4.817+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.11+5.md)
+
+---
+
 ## [0.7.1.11+4] - 29-05-26
 
 E7:S01:T11 (FR-101) — Wave B: governance standards policies moved to `docs/governance/standards/`. SemVer **v0.4.817+4**.

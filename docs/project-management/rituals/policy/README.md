@@ -6,11 +6,5 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Policy
-
-This directory contains **governance policies** for project management and Kanban.
-
-## Key Policy
-
-- `kanban-governance-policy.md` – Canonical Kanban governance policy for this repo
-
+> **MOVED:** Rituals policy content merged into [`docs/governance/kanban/README.md`](../../../governance/kanban/README.md).  
+> Kanban policy: [`docs/governance/kanban/kanban-governance-policy.md`](../../../governance/kanban/kanban-governance-policy.md)

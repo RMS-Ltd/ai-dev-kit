@@ -84,5 +84,5 @@ rg 'standards-and-adrs/dev-kit-versioning-policy' docs .cursorrules
 | Item | `git mv` commit | Stub added | Links swept |
 |------|-----------------|------------|-------------|
 | Standards (4 policies) | b2a10a7+ | yes | partial (Wave E) |
-| Kanban policy | | | |
+| Kanban policy | 3fc4f18+ | yes | partial (Wave E) |
 | Bidirectional wiring | | | |
