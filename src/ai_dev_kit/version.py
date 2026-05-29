@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 7      # Epic 7
 VERSION_STORY = 1     # Story 1
 VERSION_TASK = 11     # Task 11 (FR-101 governance consolidation)
-VERSION_BUILD = 6     # Build 6: Wave D — bidirectional wiring principle to governance/principles/
+VERSION_BUILD = 7     # Build 7: Wave E — active surface link sweep
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.7.1.11+6
+# Current: 0.7.1.11+7

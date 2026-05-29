@@ -11,7 +11,7 @@ For all user requests, enforce an intent-first contract with a hard IPW gate:
   2. **IPW package** exists and is **linked from the task** (Input / References). Either pattern counts:
      - **Consolidated IPP:** one `docs/implementation-cycles/IPP-E{epic}S{story}T{task}-*.md` produced by IPW (Sections 1–7 per `.claude/commands/ipw.md` and `PLAN_DOC_TEMPLATE.md`, including documentation deliverables and housing), **or**
      - **ICW trio:** three files `ICW-E{epic}S{story}T{task}-specification.md`, `-test-design.md`, `-implementation-plan.md` under `docs/implementation-cycles/`.
-     See [dev-kit-ipw-ipp-vs-icw-artifacts.md](docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md) and [FR-042](docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md).
+     See [dev-kit-ipw-ipp-vs-icw-artifacts.md](docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md) and [FR-042](docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md).
   3. The user provides explicit execution authorization in a separate instruction (for example: "implement", "proceed with implementation", or `RW <task>` when release execution is requested).
 - If any precondition is missing, stop and ask only for the missing prerequisite; do not infer permission from context.
 - After creating requested planning artifacts, pause and wait for user direction.

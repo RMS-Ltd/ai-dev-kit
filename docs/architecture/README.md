@@ -19,7 +19,8 @@ This section contains **technical standards**, **ADRs**, and **integration docum
 ## Key Documents
 
 - **KB Structure Overview:** `standards-and-adrs/kb-structure-overview.md` – Comprehensive KB structure reference
-- **Dev-Kit Versioning Policy:** `standards-and-adrs/dev-kit-versioning-policy.md`
+- **Dev-Kit Versioning Policy (book SoT):** [`../governance/standards/dev-kit-versioning-policy.md`](../governance/standards/dev-kit-versioning-policy.md) — stub at `standards-and-adrs/dev-kit-versioning-policy.md`
+- **Governance hub:** [`../governance/README.md`](../governance/README.md)
 - **Versioning Cookbook:** `standards-and-adrs/dev-kit-versioning-cookbook.md` – Practical worked examples for versioning scenarios
 - **Kanban–Versioning–RW Integration:** `standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`
 

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-29 (IPW — IPP filed)  
 **Started:** 2026-05-29  
 **Completed:** [TBD]  
-**Version:** v0.7.1.11+6  
+**Version:** v0.7.1.11+7  
 **Code:** E7S01T11
 
 ---
@@ -44,7 +44,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 - **[IPP-E7S01T11](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)** — specification, test design, implementation plan (IPW)
 - **[FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — requirements and acceptance criteria
 - **[GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)** — Phase 0 SoT (draft at intake)
-- [kanban-governance-policy.md](../../../rituals/policy/kanban-governance-policy.md) (current book path)
+- [kanban-governance-policy.md](../../../../governance/kanban/kanban-governance-policy.md) (book SoT)
 - [docs/architecture/README.md](../../../../architecture/README.md)
 - [book-repo-adk-removal-inventory.md](../../../../maintenance/fr099-phase4-rewire-and-verify.md) — inventory methodology (FR-099)
 - **IPW planning artifact:** [`IPP-E7S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (filed 2026-05-29)

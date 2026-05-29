@@ -295,6 +295,6 @@ Use `rw-config.yaml` values when present. Fallbacks:
 ## Reference Documentation
 
 - Canonical step guide: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- Versioning policy: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
+- Versioning policy: `docs/governance/standards/dev-kit-versioning-policy.md`
 - RW trigger section: `.cursorrules` → `## 🚀 RELEASE WORKFLOW (RW) TRIGGER`
 - Dual-source parity: `packages/frameworks/workflow mgt/docs/rw-trigger-dual-source-parity.md`

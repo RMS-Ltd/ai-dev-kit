@@ -260,5 +260,5 @@ Use `rw-config.yaml` values when present. Fallbacks:
 - FR-094 (this command's origin): `docs/project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md`
 - FR-077 (status transition ownership): `docs/project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
 - BR-066 (Docusaurus / publication housing): `docs/project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md`
-- Specification and planning artifacts policy: `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md`
+- Specification and planning artifacts policy: `docs/governance/standards/specification-and-planning-artifacts-policy.md`
 - IPW ADR necessity checklist (FR-100): `docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md`

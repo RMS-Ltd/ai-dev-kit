@@ -27,7 +27,7 @@
 2. **IPW package exists** for that task and is linked from the task doc. Satisfied by **either**:
    - **Consolidated IPP:** `docs/implementation-cycles/IPP-E{epic}S{story}T{task}-*.md` (Sections 1–7 per `.claude/commands/ipw.md` / `PLAN_DOC_TEMPLATE.md`, including documentation deliverables and housing), **or**
    - **ICW trio:** `docs/implementation-cycles/ICW-...-specification.md`, `ICW-...-test-design.md`, `ICW-...-implementation-plan.md`.
-   Matrix: `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md`.
+   Matrix: `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md`.
 3. **Explicit user execution authorization** is provided in a separate instruction (for example: "implement", "proceed with implementation", or an explicit release execution command like `RW E#:S#:T#`).
 
 **Mandatory behavior while gate is closed:**
@@ -440,7 +440,7 @@ For each step, follow this pattern:
 - Validators: `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`, `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
 
 **Reference Documentation:**
-- Versioning Policy: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (canonical SoT)
+- Versioning Policy: `docs/governance/standards/dev-kit-versioning-policy.md` (canonical SoT)
 - Release Workflow Guide: `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - Workflow Flaws Reference: `docs/architecture/standards-and-adrs/workflow-flaws-reference-guide.md`
 - Versioning Error Reference: `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md`
@@ -659,7 +659,7 @@ The workflow definition is located at:
 8. **EXECUTE INTELLIGENTLY** - Use your AI capabilities to guide through specification, test design, and implementation planning
 9. **GUIDE THE USER** - Ask relevant questions and provide intelligent assistance throughout the three phases
 10. **Document** each phase's analysis, decisions, and results
-11. **Durable artifacts (IPW / ICW responsibility):** Do **not** leave the specification package only in IDE-local plan folders (e.g. `~/.cursor/plans/`). Persist outputs under the project **`docs/implementation-cycles/`** tree (or the `output_dir` in `icw-workflow.yaml`): **either** a single **`IPP-E…S…T…-*.md`** (consolidated IPW per `.claude/commands/ipw.md`) **or** the **`ICW-E…S…T…-*`** file set where applicable, and **link those paths from the Kanban task** (and mirror key acceptance bullets into the task doc when helpful). **Policy:** `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md`; packaging matrix: `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md`.
+11. **Durable artifacts (IPW / ICW responsibility):** Do **not** leave the specification package only in IDE-local plan folders (e.g. `~/.cursor/plans/`). Persist outputs under the project **`docs/implementation-cycles/`** tree (or the `output_dir` in `icw-workflow.yaml`): **either** a single **`IPP-E…S…T…-*.md`** (consolidated IPW per `.claude/commands/ipw.md`) **or** the **`ICW-E…S…T…-*`** file set where applicable, and **link those paths from the Kanban task** (and mirror key acceptance bullets into the task doc when helpful). **Policy:** `docs/governance/standards/specification-and-planning-artifacts-policy.md`; packaging matrix: `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md`.
 
 **🔍 MODE DETECTION AND VALIDATION:**
 - **Planning Mode:** ✅ ALLOWED - ICW requires intelligent agent guidance
@@ -690,7 +690,7 @@ If ICW detects implementation mode:
 3. **PHASE 2: TEST DESIGN** - Guide through comprehensive test design based on specifications
 4. **PHASE 3: IMPLEMENTATION PLANNING** - Guide through detailed implementation planning
 5. **GENERATE PACKAGE** - Create complete implementation package with all three phases
-6. **INTEGRATE WITH KANBAN** - Update kanban system with implementation task and artifacts; ensure the **task doc lists planning artifact links** (`ICW-*` and/or **`IPP-*`**) under `docs/implementation-cycles/` (repo SoT per policy in `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md` and `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md`)
+6. **INTEGRATE WITH KANBAN** - Update kanban system with implementation task and artifacts; ensure the **task doc lists planning artifact links** (`ICW-*` and/or **`IPP-*`**) under `docs/implementation-cycles/` (repo SoT per policy in `docs/governance/standards/specification-and-planning-artifacts-policy.md` and `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md`)
 7. **COMPLETE** - Report success and provide next steps
 
 **Agent Guidance for Each Phase:**
@@ -806,7 +806,7 @@ Documents in `docs/` directory must have lifecycle metadata in frontmatter:
 - Epic 24+ (project-specific range, e.g., Epic 24: Book Related Work)
 - No legacy range in dev-kit - starts from Epic 1 with full schema
 
-**Reference:** See `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (canonical SoT for dev-kit)
+**Reference:** See `docs/governance/standards/dev-kit-versioning-policy.md` (canonical SoT for dev-kit)
 
 ---
 

@@ -162,7 +162,7 @@ Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly
    - Update Epic doc with version markers as work completes
    - Update board views as needed
 
-See [`README.md`](README.md) for full structure details and `docs/project-management/rituals/policy/kanban-governance-policy.md` for governance.
+See [`README.md`](README.md) for full structure details and `docs/governance/kanban/kanban-governance-policy.md` for governance.
 
 ---
 
@@ -185,8 +185,8 @@ Future validator support is tracked in the documentation validator script (`scri
 - **Board (MoSCOW Tasks):** [`kboard.md`](kboard.md)
 - **Board (Epic Structure):** [`kanban-structure.md`](kanban-structure.md)
 - **Board (FR/BR/UXR Prioritization):** [`fbuboard.md`](fbuboard.md)
-- **Kanban Policy:** `docs/project-management/rituals/policy/kanban-governance-policy.md`
-- **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
+- **Kanban Policy:** `docs/governance/kanban/kanban-governance-policy.md`
+- **Versioning Policy:** `docs/governance/standards/dev-kit-versioning-policy.md`
 
 ---
 

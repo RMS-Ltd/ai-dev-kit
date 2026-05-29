@@ -482,7 +482,7 @@ For each step, follow this pattern:
 - **Epic Ranges:**
   - [Example: ai-dev-kit] Epic 1-4+ (Epic 1: AI Dev Kit Core, Epic 2: Workflow Management Framework, Epic 3: Numbering & Versioning Framework, Epic 4: Kanban Framework)
   - No legacy range in dev-kit - starts from Epic 1 with full schema
-- **Reference:** See `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (or your project's versioning policy) for complete schema definition
+- **Reference:** See `docs/governance/standards/dev-kit-versioning-policy.md` (or your project's versioning policy) for complete schema definition
 
 **Branch Mapping (Customize for Your Project):**
 - `main` - **PRODUCTION BRANCH** - Only merge when ready to deploy. Auto-deploys trigger on every push!
@@ -507,12 +507,12 @@ For each step, follow this pattern:
   - [Example: ai-dev-kit] Epic 4 (Kanban Framework), Story 1, Task 1: `0.4.1.1+1`
 
 **Reference Documentation:**
-- Versioning Policy: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (or your project's equivalent)
-  - [Example: ai-dev-kit] `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (canonical SoT for dev-kit)
+- Versioning Policy: `docs/governance/standards/dev-kit-versioning-policy.md` (or your project's equivalent)
+  - [Example: ai-dev-kit] `docs/governance/standards/dev-kit-versioning-policy.md` (canonical SoT for dev-kit)
 - Versioning Strategy: `packages/frameworks/numbering & versioning/versioning-strategy.md` (framework reference)
 - Release Workflow Guide: `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- Kanban Governance: `docs/project-management/rituals/policy/kanban-governance-policy.md` (or your project's equivalent)
-  - [Example: ai-dev-kit] `docs/project-management/rituals/policy/kanban-governance-policy.md` (references framework as SoT)
+- Kanban Governance: `docs/governance/kanban/kanban-governance-policy.md` (or your project's equivalent)
+  - [Example: ai-dev-kit] `docs/governance/kanban/kanban-governance-policy.md` (references framework as SoT)
 - **Workflow Flaws Reference:** `docs/architecture/standards-and-adrs/workflow-flaws-reference-guide.md` - Comprehensive reference for all discovered RW flaws
 - **Versioning Error Reference:** `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md` - Versioning-specific error reference (WF-002)
 
@@ -627,7 +627,7 @@ After copying this section to your `.cursorrules`, you MUST:
 4. **Update validator script paths** (currently shows `{scripts_path}/...` as templates)
    - [Example: ai-dev-kit] `packages/frameworks/workflow mgt/scripts/validation/...`
 5. **Reference your project's versioning policy** instead of dev-kit policy
-   - [Example: ai-dev-kit] Uses `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` as canonical SoT
+   - [Example: ai-dev-kit] Uses `docs/governance/standards/dev-kit-versioning-policy.md` as canonical SoT
 6. **Customize branch naming** if your project uses different conventions (e.g., `feature/epic-{n}` instead of `epic/{n}`)
 7. **Customize epic ranges** if your project uses different epic numbering (e.g., legacy range 1-9, new range 10+)
    - [Example: ai-dev-kit] Epic 1-4+ (no legacy range, starts from Epic 1 with full schema)
@@ -638,4 +638,4 @@ When using this section in the ai-dev-kit repository itself:
 - Changelog Archive: `docs/changelog-and-release-notes/changelog-archive/`
 - Kanban: `docs/project-management/kanban/`
 - Validators: `packages/frameworks/workflow mgt/scripts/validation/`
-- Versioning Policy: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (canonical SoT)
+- Versioning Policy: `docs/governance/standards/dev-kit-versioning-policy.md` (canonical SoT)
