@@ -1,0 +1,16 @@
+{
+  "report_type": "rw_step7_scoped_reconciliation",
+  "release_version": "0.2.16.17+2",
+  "release_scope": "E02:S16:T17",
+  "evidence_mode": "release_scope_stamp_sync",
+  "rows": {
+    "E02:S16:T17": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.17+2 — single-step AGENTS.md bootstrap follow-up"
+    },
+    "FR-103": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.17+2 — FR-103 version stamp sync"
+    }
+  }
+}

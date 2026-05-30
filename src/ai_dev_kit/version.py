@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
 VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
 VERSION_TASK = 17     # Task 17 — Agent bootstrap and task routing (FR-103)
-VERSION_BUILD = 1     # Build 1: ADR-012, manifest, slim AGENTS.md, cold-start checklist
+VERSION_BUILD = 2     # Build 2: single-step cold start — routing inline in AGENTS.md
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.17+1
+# Current: 0.2.16.17+2

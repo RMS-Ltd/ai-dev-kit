@@ -14,11 +14,9 @@ housekeeping_policy: keep
 
 ## Read order (cold start)
 
-1. Repo-root [`AGENTS.md`](../AGENTS.md) — Layer 1 intro (always).
-2. [`project-agent-manifest.json`](project-agent-manifest.json) — scan `protocol[]`, `taskRouting[]`, `openWork[]` (do not fully ingest large arrays).
-3. Match user prompt keywords to `taskRouting[].keywords`.
-4. Load only `loadFirst[]` for the matched intent (+ files linked from those docs).
-5. Lazy-load Layer 3 (governance corpora, journals, full `.cursorrules`, archives) when the task requires it.
+**One step for agents:** read repo-root [`AGENTS.md`](../AGENTS.md) through the ascertainment rule. Routing, keywords, `loadFirst`, binding rules, and open-work snapshot live there — **not** in a second manifest read.
+
+[`project-agent-manifest.json`](project-agent-manifest.json) is the machine mirror for validators and automation. Keep it aligned when editing the routing table in `AGENTS.md`.
 
 **Skip triage when the operator provides:** `Track: <id> | File: <path> | Task: E##:S##:T##`
 
@@ -35,7 +33,7 @@ housekeeping_policy: keep
 | `planning` | IPW / IPP / ICW | [.claude/commands/ipw.md](../.claude/commands/ipw.md) |
 | `meta` | Bootstrap architecture | [ADR-012](architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) |
 
-Full routing table: manifest `taskRouting[]`.
+Full routing table: [`AGENTS.md`](../AGENTS.md) § Task routing (mirror: manifest `taskRouting[]`).
 
 ---
 
@@ -45,7 +43,8 @@ Full routing table: manifest `taskRouting[]`.
 - [`docs/journals/`](../docs/journals/) unless forensic/RW recovery is routed.
 - Full [`fbuboard.md`](project-management/kanban/fbuboard.md) MoSCOW scan unless kanban/FBU track matched.
 - Agent transcripts or plan folders outside the repo.
-- Full [`.cursorrules`](../.cursorrules) ingest before manifest scan — load workflow sections when `workflows` track matches.
+- Full [`.cursorrules`](../.cursorrules) ingest before reading [`AGENTS.md`](../AGENTS.md) — load workflow sections when `workflows` track matches.
+- [`project-agent-manifest.json`](project-agent-manifest.json) on cold start (routing is in `AGENTS.md`).
 
 ---
 

@@ -4,7 +4,7 @@
   "introduction": {
     "summary": "AI Dev Kit — workflow frameworks, kanban tooling, validators, and release automation for agentic development.",
     "thesisPointer": "README.md",
-    "coordinationContract": "docs/project-agent-index.md"
+    "coordinationContract": "AGENTS.md"
   },
   "protocol": [
     {
@@ -91,8 +91,7 @@
       "intent": "agent-bootstrap",
       "keywords": ["bootstrap", "manifest", "cold start", "routing", "AGENTS"],
       "loadFirst": [
-        "AGENTS.md",
-        "docs/project-agent-index.md"
+        "AGENTS.md"
       ],
       "relatedTrack": "meta"
     }
@@ -147,12 +146,6 @@
     }
   ],
   "openWork": [
-    {
-      "taskId": "E02:S16:T17",
-      "summary": "Agent bootstrap and task routing (FR-103)",
-      "taskDocPath": "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md",
-      "priority": "HIGH"
-    },
     {
       "taskId": "E02:S16:T13",
       "summary": "BR-059 UKW MoSCOW full story task coverage",

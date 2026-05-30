@@ -54,11 +54,10 @@ Adopt a **three-layer agent context model** with two repo entrypoints (human + m
 
 **Bootstrap behaviour (binding for agents):**
 
-1. Read `AGENTS.md`.
-2. Load manifest; **scan** `protocol[]`, `taskRouting[]`, `openWork[]`.
-3. Match keywords → `taskRouting[].loadFirst[]`.
-4. If no match: one clarifying question — do not explore the whole repo.
-5. Load only `loadFirst[]` plus files referenced from those entry docs.
+1. Read **`AGENTS.md` only** on cold start — it embeds the routing table (keywords + `loadFirst`), binding rules, and open-work snapshot.
+2. Match keywords → load only listed `loadFirst` paths.
+3. If no match: one clarifying question — do not explore the whole repo.
+4. **`project-agent-manifest.json`** is a machine mirror for validators; do not require a second agent read at session start. Keep manifest in sync when editing `AGENTS.md` routing.
 
 Schema: [`docs/project-agent-manifest.schema.json`](../../project-agent-manifest.schema.json).
 

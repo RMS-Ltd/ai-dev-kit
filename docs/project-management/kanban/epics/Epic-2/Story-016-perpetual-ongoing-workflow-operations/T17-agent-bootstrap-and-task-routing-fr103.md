@@ -13,11 +13,11 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-30  
-**Last updated:** 2026-05-30 (RW **v0.2.16.17+1**)  
-**Version Anchor:** v0.2.16.17+1  
+**Last updated:** 2026-05-30 (RW **v0.2.16.17+2** — single-step AGENTS.md bootstrap)  
+**Version Anchor:** v0.2.16.17+2  
 **Code:** E02S16T17  
 
-✅ COMPLETE (v0.2.16.17+1)
+✅ COMPLETE (v0.2.16.17+2)
 
 Publication Status: NOT_APPLICABLE
 

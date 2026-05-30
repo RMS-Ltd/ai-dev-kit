@@ -1,0 +1,22 @@
+{
+  "contract": "FR-092 / FR-091",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 17,
+    "task_id": "E02:S16:T17",
+    "version_string": "v0.2.16.17+2"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard"],
+    "total_changes": 8
+  },
+  "surfaces": {
+    "task_doc": {"touched": true, "paths": ["docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md"]},
+    "fbu_doc": {"touched": true, "paths": ["docs/project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md"]},
+    "kboard": {"touched": true, "paths": ["docs/project-management/kanban/kboard.md"]},
+    "fbuboard": {"touched": true, "paths": ["docs/project-management/kanban/fbuboard.md"]}
+  },
+  "timestamp_utc": "2026-05-30 22:30 UTC"
+}

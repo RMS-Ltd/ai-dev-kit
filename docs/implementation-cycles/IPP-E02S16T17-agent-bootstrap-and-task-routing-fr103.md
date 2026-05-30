@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T17-agent-bootstrap-and-task-routing-fr103.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) **(E02:S16:T17)**  
 **Planning for:** [FR-103 — Agent bootstrap and task routing](../project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)  
-**Status:** Published
+**Status:** Published (implementation complete **v0.2.16.17+1**)
 
 > **IPW:** Produced for E02:S16:T17. Bidirectional wiring to task `Input` / `References` confirmed.
 

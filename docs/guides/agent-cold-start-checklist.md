@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Agent cold-start checklist
 
-Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) and [E02:S16:T17](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md). Each simulation must load **≤5 files** before substantive work.
+Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md). Cold start is **one file**: [AGENTS.md](../../AGENTS.md). Each simulation must load **≤5 files** before substantive work (manifest not required at cold start).
 
 ---
 
@@ -18,11 +18,10 @@ Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-
 
 | Step | File | Purpose |
 | ---- | ---- | ------- |
-| 1 | `AGENTS.md` | Layer 1 intro + ascertainment |
-| 2 | `docs/project-agent-manifest.json` | Scan routing → `workflows` |
-| 3 | `docs/guides/workflow-initiation-cheatsheet.md` | `loadFirst` |
-| 4 | `.claude/commands/rw.md` | `loadFirst` |
-| 5 | Task T17 doc (from prompt) | Target task context |
+| 1 | `AGENTS.md` | Routing table + ascertainment (one-step bootstrap) |
+| 2 | `docs/guides/workflow-initiation-cheatsheet.md` | `loadFirst` |
+| 3 | `.claude/commands/rw.md` | `loadFirst` |
+| 4 | Task doc (from prompt) | Target task context |
 
 **Track stated:** `workflows`
 
@@ -34,11 +33,10 @@ Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-
 
 | Step | File | Purpose |
 | ---- | ---- | ------- |
-| 1 | `AGENTS.md` | Intro |
-| 2 | `docs/project-agent-manifest.json` | Scan → `kanban-intake` |
-| 3 | `docs/project-management/kanban/kboard.md` | `loadFirst` |
-| 4 | `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` | `loadFirst` |
-| 5 | `docs/project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md` | Named FBU |
+| 1 | `AGENTS.md` | Routing → `kanban-intake` |
+| 2 | `docs/project-management/kanban/kboard.md` | `loadFirst` |
+| 3 | `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` | `loadFirst` |
+| 4 | Named FBU doc (from prompt) | e.g. FR under intake |
 
 **Track stated:** `kanban-intake`
 
@@ -50,11 +48,10 @@ Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-
 
 | Step | File | Purpose |
 | ---- | ---- | ------- |
-| 1 | `AGENTS.md` | Intro |
-| 2 | `docs/project-agent-manifest.json` | Scan → `governance` |
-| 3 | `docs/governance/README.md` | `loadFirst` |
-| 4 | `docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md` | If ADR-specific |
-| 5 | `docs/governance/standards/dev-kit-versioning-policy.md` | If policy named |
+| 1 | `AGENTS.md` | Routing → `governance` |
+| 2 | `docs/governance/README.md` | `loadFirst` |
+| 3 | `docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md` | If ADR-specific |
+| 4 | `docs/governance/standards/dev-kit-versioning-policy.md` | If policy named |
 
 **Track stated:** `governance`
 

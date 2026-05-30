@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.17+1] - 30-05-26
+## [0.2.16.17+2] - 30-05-26
 
-E02:S16:T17 — Agent bootstrap and task routing (FR-103): ADR-012, manifest, slim AGENTS.md, cold-start checklist. SemVer **v0.4.842+1**.
+E02:S16:T17 — Agent bootstrap: single-step cold start (`AGENTS.md` only; routing inline). SemVer **v0.4.843+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.17+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.17+2.md)
 
 ---

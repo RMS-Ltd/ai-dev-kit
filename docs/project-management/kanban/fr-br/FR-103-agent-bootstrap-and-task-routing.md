@@ -15,9 +15,9 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** MEDIUM  
 **Status:** IMPLEMENTED  
-**Version:** v0.2.16.17+1 (SemVer v0.4.842+1)
+**Version:** v0.2.16.17+2 (SemVer v0.4.843+2)
 
-**Implementing Task:** [E02:S16:T17](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) (v0.2.16.17+1)
+**Implementing Task:** [E02:S16:T17](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) (v0.2.16.17+2)
 
 **Related:** [FR-041](./FR-041-windsurf-investigate-agents-skills-for-workflows.md), [FR-022](./FR-022-policy-docs-machine-readable-salience.md), [FR-028](./FR-028-cursor-ide-performance-considerations-awareness.md), [UXR-015](./UXR-015-workflow-initiation-cheatsheet.md), [BR-071](./BR-071-rw-trigger-routing-not-executing-from-chat-session.md), draft ADR at repo root [`ADR-agent-bootstrap-and-task-routing.md`](../../../../ADR-agent-bootstrap-and-task-routing.md)
 
@@ -171,7 +171,7 @@ Adopt the architecture in draft ADR **`ADR-agent-bootstrap-and-task-routing.md`*
 - Epic: Epic 2 — Workflow Management Framework
 - Story: Story 016 — Perpetual Ongoing Workflow Operations
 - Task: E02:S16:T17 — Agent bootstrap and task routing (FR-103)
-- Version: **v0.2.16.17+1**
+- Version: **v0.2.16.17+2**
 
 **Kanban Links:**
 
