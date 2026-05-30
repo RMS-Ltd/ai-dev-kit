@@ -8,13 +8,15 @@ housekeeping_policy: keep
 
 # Task E07:S00:T02 – UXR-002 Repository Anchor
 
+> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S05:T02](../Story-005-migration-uxr-research.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md).
+
 **Task ID:** E07:S00:T02  
-**Status:** TODO  
-**Priority:** HIGH  
-**Version Anchor:** *(pending — `RW -k E07:S00:T02` on `epic/7-documentation-maintenance` when ready)*  
+**Status:** HISTORICAL (superseded)  
+**Priority:** N/A  
+**Version Anchor:** v0.7.0.2+1 (historical)  
 
 **UXR:** [UXR-002](../../../fr-br/UXR-002-comprehensive-uat-migration-utilities.md)  
-**Implementation / synthesis (exists):** [E07:S05:T02](../Story-005-migration-uxr-research.md)
+**Primary implementing task:** [E07:S05:T02](../Story-005-migration-uxr-research.md)
 
 ---
 

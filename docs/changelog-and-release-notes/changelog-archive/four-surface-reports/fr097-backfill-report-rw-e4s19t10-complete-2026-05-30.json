@@ -1,0 +1,69 @@
+{
+  "rows": {
+    "E04:S19:T10": {"allowed": true, "reason": "COMPLETE archived from kboard"},
+    "E07:S01:T09": {"allowed": true, "reason": "BR-076 sole UXR-005 implementing path"},
+    "BR-076": {"allowed": true, "reason": "RESOLVED archived from fbuboard"},
+    "UXR-005": {"allowed": true, "reason": "registry tail removed from row"},
+    "E02:S16:T13": {"allowed": true, "reason": "homogeneity de-cluster backfill"},
+    "E02:S01:T23": {"allowed": true, "reason": "homogeneity de-cluster backfill"},
+    "E06:S07:T107": {"allowed": true, "reason": "homogeneity de-cluster backfill"},
+    "E08:S03:T04": {"allowed": true, "reason": "homogeneity de-cluster backfill"},
+    "E02:S16:T14": {"allowed": true, "reason": "homogeneity de-cluster backfill"},
+    "E04:S19:T03": {"allowed": true, "reason": "homogeneity de-cluster backfill"},
+    "E04:S19:T08": {"allowed": true, "reason": "FR-072 git-derived stamp"},
+    "E07:S05:T01": {"allowed": true, "reason": "S00 detask WON'T HAVE row"},
+    "E07:S05:T02": {"allowed": true, "reason": "S00 detask WON'T HAVE row"}
+  },
+  "contract": "FR-097",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 4,
+    "story": 19,
+    "task": 10,
+    "task_id": "E04:S19:T10",
+    "version_string": "v0.4.19.10+2"
+  },
+  "summary": "RW Step 7: T10 COMPLETE archived from kboard; BR-076 terminal prune from fbuboard; E07:S01:T09 row stamp",
+  "boards": [
+    {
+      "board": "docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "results": [
+        {
+          "row_id": "E04:S19:T10",
+          "old_stamp": "2026-05-30 13:18 UTC",
+          "new_stamp": null,
+          "source": "terminal",
+          "detail": "T10 COMPLETE v0.4.19.10+2; archived to kanban-completed.md"
+        },
+        {
+          "row_id": "E07:S01:T09",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 14:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md"
+        }
+      ]
+    },
+    {
+      "board": "docs/project-management/kanban/fbuboard.md",
+      "dry_run": false,
+      "results": [
+        {
+          "row_id": "BR-076",
+          "old_stamp": "2026-05-30 13:18 UTC",
+          "new_stamp": null,
+          "source": "terminal",
+          "detail": "BR-076 RESOLVED v0.4.19.10+2; archived to fbu-completed.md"
+        },
+        {
+          "row_id": "UXR-005",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 14:00 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md"
+        }
+      ]
+    }
+  ]
+}

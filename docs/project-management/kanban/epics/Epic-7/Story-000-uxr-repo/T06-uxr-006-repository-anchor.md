@@ -8,13 +8,15 @@ housekeeping_policy: keep
 
 # Task E07:S00:T06 – UXR-006 Repository Anchor
 
+> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E06:S06:T61](../../Epic-6/Story-006-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md).
+
 **Task ID:** E07:S00:T06  
-**Status:** TODO  
-**Priority:** HIGH  
-**Version Anchor:** *(pending — `RW -k E07:S00:T06` on `epic/7-documentation-maintenance` when registry release is needed)*  
+**Status:** HISTORICAL (superseded)  
+**Priority:** N/A  
+**Version Anchor:** v0.7.0.6+0 (historical)  
 
 **UXR:** [UXR-006](../../../fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)  
-**Implementation:** [E06:S06:T61](../../Epic-6/Story-006-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)
+**Primary implementing task:** [E06:S06:T61](../../Epic-6/Story-006-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)
 
 ---
 

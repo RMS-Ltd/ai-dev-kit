@@ -8,13 +8,15 @@ housekeeping_policy: keep
 
 # Task E07:S00:T05 – UXR-005 Repository Anchor
 
+> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S01:T09](../Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md).
+
 **Task ID:** E07:S00:T05  
-**Status:** TODO  
-**Priority:** HIGH  
-**Version Anchor:** *(pending — `RW -k E07:S00:T05` on `epic/7-documentation-maintenance` when ready)*  
+**Status:** HISTORICAL (superseded)  
+**Priority:** N/A  
+**Version Anchor:** v0.7.0.5+1 (historical)  
 
 **UXR:** [UXR-005](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)  
-**Implementation:** [E07:S01:T09](../Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
+**Primary implementing task:** [E07:S01:T09](../Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
 
 ---
 

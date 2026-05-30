@@ -30,7 +30,8 @@ Only **after** 1–5 may you treat intake as complete. **RW / RW -k** versions t
 ### Transition guardrail (FR-072 Approach D)
 
 - For this repo's current migration path, **do not** open new intake tasks under dedicated repository stories (`FR Repo`, `BR Repo`, `UXR Repo`) unless explicitly required for historical backfill.
-- New intake should create the primary task in the best semantic delivery story and keep repository-story references as historical pointers only.
+- **Never file primary tasks under `S00` / `Story-000`:** `S00` is **abstract space only** (`0.{epic}.0.0+0`) — no concrete tasks (see **E5:S00**, **E7:S00** after BR-076).
+- New intake should create the **one** primary task in the best semantic delivery story (e.g. **E07:S01**, **E07:S05**, **E06:S06**) and keep historical registry anchors as link-only redirects.
 
 ### Optional convention (not required)
 

@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.10+1] - 30-05-26
+## [0.4.19.10+2] - 30-05-26
 
-E04:S19:T10 (BR-076) — Kanban init: E7:S00 detasking intake, BR/task/story/board wiring, `--art` version anchor. SemVer **v0.4.837+1**.
+E04:S19:T10 (BR-076) — Change implemented: E7:S00 abstract-only detasking, historical UXR anchors, UXR-005 exemplar, intake S00 ban. SemVer **v0.4.838+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.10+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.10+2.md)
 
 ---

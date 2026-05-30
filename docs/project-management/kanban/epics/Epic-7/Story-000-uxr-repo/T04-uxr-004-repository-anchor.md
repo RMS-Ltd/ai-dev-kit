@@ -8,13 +8,15 @@ housekeeping_policy: keep
 
 # Task E07:S00:T04 – UXR-004 Repository Anchor
 
+> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S05:T04](../Story-005-migration-uxr-research.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md).
+
 **Task ID:** E07:S00:T04  
-**Status:** TODO  
-**Priority:** MEDIUM  
-**Version Anchor:** **v0.7.0.4+0** (`RW -k` **E07:S00:T04** on `epic/7-documentation-maintenance`)  
+**Status:** HISTORICAL (superseded)  
+**Priority:** N/A  
+**Version Anchor:** v0.7.0.4+0 (historical)  
 
 **UXR:** [UXR-004](../../../fr-br/UXR-004-kanban-package-installation-uat.md)  
-**Implementation / synthesis (complete):** [E07:S05:T04](../Story-005-migration-uxr-research.md) — see Story 5 **T04**
+**Primary implementing task:** [E07:S05:T04](../Story-005-migration-uxr-research.md)
 
 ---
 

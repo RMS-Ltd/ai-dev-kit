@@ -25,6 +25,7 @@ This guide provides a step-by-step process for converting **Feature Requests (FR
 - Every **FR / BR / UXR** MUST have **at least one** **Kanban task** with **bidirectional** links (report ↔ task).
 - **Atomic intake (mandatory):** The **task document** and **wiring** are created **in the same session** as the new FR/BR/UXR file. Do **not** commit or hand off a report with **“task TODO”**.
 - Place the **primary** task under the **story that matches delivery semantics** (e.g. framework bugs → Epic 6 story; docs site → Epic 5). **FR/BR/UXR number ≠ task number** is allowed; symmetric ids (e.g. FR-047 → …:T47) are **optional**, not required—see **KG-R6** in `kanban-governance-policy.md`.
+- **Never create new primary tasks under `S00` / `Story-000`:** Story 0 is **abstract space only** (`0.{epic}.0.0+0`). Do not use split “registry anchor on S00 + implementation elsewhere” intake (retired in ai-dev-kit per BR-076 / FR-072 Approach D). Example: UXR-005 → **E07:S01:T09** only, not **E07:S00:T05**.
 - If no Story exists, create one under the appropriate Epic; if no Epic exists, create a broad epic for the new story.
 - Version numbers follow `RC.EPIC.STORY.TASK+BUILD` schema (typically via **RW** / **RW -k** after intake artifacts exist).
 

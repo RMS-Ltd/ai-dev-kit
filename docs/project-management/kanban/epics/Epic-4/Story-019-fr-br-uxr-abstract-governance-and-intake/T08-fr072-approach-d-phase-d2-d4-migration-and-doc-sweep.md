@@ -34,6 +34,8 @@ Publication Status: NOT_APPLICABLE
 
 Complete **FR-072** phases **D2–D4**: migrate remaining primary-task pointers from repository stories to semantic hosts; sweep active docs (intake guide, `.cursorrules`, validators) for E5:S01/E6:S01/E7:S00 default-housing language.
 
+**E7 closure slice:** [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) / [E04:S19:T10](T10-e7-s00-detasking-abstract-space-enforcement-br076.md) — E7:S00 hollowed to abstract-only; do not duplicate that work in T08.
+
 ## Acceptance criteria
 
 - [ ] **AC1:** Decision memo + ADR/governance entry published (D1 baseline may already exist in FR-072).

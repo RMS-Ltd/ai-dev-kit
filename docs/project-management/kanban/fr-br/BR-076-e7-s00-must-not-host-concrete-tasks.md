@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (maintainer governance)  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** OPEN (kanban init **v0.4.19.10+1** — implementing task wired)
+**Status:** RESOLVED (attempted resolution — E04:S19:T10; verify after release)
 
 **Implementing Task:** [E04:S19:T10](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) (**v0.4.19.10+1**)
 
@@ -85,11 +85,11 @@ housekeeping_policy: keep
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** `Story-000-uxr-repo.md` marked **abstract-only**; no **TODO/IN PROGRESS** tasks remain on S00 checklist (historical rows redirected).
-- [ ] **AC2:** Each legacy **E07:S00:T01–T06** has a documented **semantic host** or **historical-only** banner + UXR/FR header redirect (no dual primary implementing tasks).
-- [ ] **AC3:** **UXR-005** (and boards) reference **one** implementing task; **E07:S00:T05** is not an active work row.
-- [ ] **AC4:** Active intake policy docs state **S00 never hosts new tasks** (all epics); aligns with **FR-072 Approach D**.
-- [ ] **AC5:** **FR-072** / **E04:S19:T08** checklist notes **BR-076** closure or explicit merge criteria.
+- [x] **AC1:** `Story-000-uxr-repo.md` marked **abstract-only**; no **TODO/IN PROGRESS** tasks remain on S00 checklist (historical rows redirected).
+- [x] **AC2:** Each legacy **E07:S00:T01–T06** has a documented **semantic host** or **historical-only** banner + UXR/FR header redirect (no dual primary implementing tasks).
+- [x] **AC3:** **UXR-005** (and boards) reference **one** implementing task; **E07:S00:T05** is not an active work row.
+- [x] **AC4:** Active intake policy docs state **S00 never hosts new tasks** (all epics); aligns with **FR-072 Approach D**.
+- [x] **AC5:** **FR-072** / **E04:S19:T08** checklist notes **BR-076** closure or explicit merge criteria.
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-30 (UKW — archived T46, T74; synced terminal FBUs)
-**Version:** v0.4.19.9+1
+**Last Updated:** 2026-05-30 (RW E04:S19:T10 — BR-076)
+**Version:** v0.4.19.10+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 4: Kanban Framework (Story 19 — Abstract governance)**
+- **[E04:S19:T10](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)** — **BR-076**: E7:S00 abstract-only detasking; historical UXR anchors; intake S00 ban.
+  **Completed:** `2026-05-30T13:28:56Z` | **Version:** `v0.4.19.10+2` | **Agent:** `RW` | [BR-076](fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) | [IPP-E04S19T10](../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
 
 #### **Epic 5: Documentation Management (Story 1 — FR Repo)**
 - **[E05:S01:T46](epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)** — **FR-046**: Dual-version RW SemVer task-touch tagging — closure wave audit + IPP.

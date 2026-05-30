@@ -458,7 +458,8 @@ Repository stories are marked with **Status: IN PROGRESS (PERPETUAL)** and have 
 **Traceability pattern (conventional, not mandatory):**
 
 - Some **adopter** layouts use **symmetric ids**: e.g. FR-001 ↔ E5:S01:T01, BR-001 ↔ E6:S01:T01, UXR-001 ↔ repository slot in Epic 7 (`Story-000` / `S00` or `S01` per epic charter).
-- **ai-dev-kit:** Epic 7 UXR **repository** pattern is documented in **`E7:S00`** (see project Story-000); Epic 5 FR repo commonly uses **E5:S01:Tnn** aligned with FR number—**convenient, optional**.
+- **ai-dev-kit:** **`E7:S00`** is **abstract space only** (detasked BR-076); historical UXR anchors **T01–T06** under `Story-000-uxr-repo/` are **link-only**. New UXR intake uses semantic hosts (**E07:S01**, **E07:S05**, etc.). Epic 5 FR repo commonly uses **E5:S01:Tnn** aligned with FR number—**convenient, optional**.
+- **S00 prohibition (KG-R2 extension):** Do **not** create new primary tasks under any epic's **`S00`** story. One implementing task per report on a delivery story.
 - **Regardless of numbering,** every FR/BR/UXR MUST still satisfy **KG-R2** (≥1 task, same-session creation, bidirectional links). Prefer **one** primary delivery task in a **semantically correct** story over id pattern purity.
 
 **Board Display Rules:**

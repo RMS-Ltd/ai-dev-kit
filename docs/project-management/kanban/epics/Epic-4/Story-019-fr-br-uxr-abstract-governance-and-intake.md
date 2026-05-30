@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-02  
-**Last updated:** 2026-05-30 (v0.4.19.10+1 – T10 kanban init: BR-076)
-**Version:** v0.4.19.10+1
+**Last updated:** 2026-05-30 (v0.4.19.10+2 – T10 COMPLETE: BR-076)
+**Version:** v0.4.19.10+2
 **Code:** E4S19  
 
 **Story type:** Ongoing governance (not a perpetual “repo ledger”; not a dumping ground for individual **FR-### / BR-### / UXR-###** implementation work).
@@ -40,7 +40,7 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T09 – Two-digit E/S/T identifier default formatting (UXR-014)** - ✅ COMPLETE (MEDIUM, v0.4.19.9+2 — est_format.py, policy, full corpus sweep) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) | [UXR-014](../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) | [IPP-E4S19T09](../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 
-- [ ] **E04:S19:T10 – E7:S00 detasking — abstract space enforcement (BR-076)** - TODO (HIGH, **v0.4.19.10+1** — kanban init) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) | [BR-076](../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) | Related: [FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [E04:S19:T08](Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
+- [x] **E04:S19:T10 – E7:S00 detasking — abstract space enforcement (BR-076)** - ✅ COMPLETE (HIGH, **v0.4.19.10+2** — hollow E7:S00, historical T01–T06, UXR-005 exemplar, intake S00 ban) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) | [BR-076](../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) | [IPP](../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md) | Related: [FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [E04:S19:T08](Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
 
 ---
 

@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Story Checklist
 
-- [x] **E7:S00 – UXR Repo (PERPETUAL)** - IN PROGRESS (PERPETUAL - **v0.7.0.4+0** **RW -k** **T04** **UXR-004**; **T03** v0.7.0.3+0; **T02** v0.7.0.2+2; **T01** v0.7.0.1+2; **T05** UXR-005)
+- [x] **E7:S00 – Abstract Space** - ABSTRACT SPACE ONLY (**v0.7.0.0+0** — detasked BR-076 / **E04:S19:T10**; historical anchors T01–T06 link-only)
   - Story: [`Story-000-uxr-repo.md`](Story-000-uxr-repo.md)
   - **Note:** S00 omitted from board displays (UX optimization)
 
