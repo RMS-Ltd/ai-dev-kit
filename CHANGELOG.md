@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.15.8+4] - 30-05-26
+
+E2:S15:T08 (FR-097) — Docs-only: Step 9 readiness report forensic correction (BLOCK→PASS for v0.2.15.8+3). SemVer **v0.4.830+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.8+4.md)
+
+---
+
 ## [0.2.16.4+17] - 30-05-26
 
 E2:S16:T04 (perpetual UKW) — Comprehensive kanban sync: prune COMPLETE tasks and terminal FBUs from active boards. SemVer **v0.4.829+17**.

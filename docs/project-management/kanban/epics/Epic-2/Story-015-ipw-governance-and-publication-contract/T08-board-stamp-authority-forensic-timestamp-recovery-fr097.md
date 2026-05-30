@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** CRITICAL  
 **Estimated Effort:** Large (multi-wave; validator + pipeline + backfill)  
 **Created:** 2026-05-20  
-**Last updated:** 2026-05-30 (follow-on hardening — pre-commit, threshold 3, backfill, git-exempt Gate 8)  
+**Last updated:** 2026-05-30 (v0.2.15.8+4 — docs-only: Step 9 readiness report PASS backfill for +3 release)  
 **Version Anchor:** v0.2.15.8+3  
 **Code:** E02S15T08
 
@@ -66,6 +66,7 @@ Forensic row stamps are a primary signal for workload and staleness. Board-hygie
 - [x] **AC2:** Blocking validator integrated; UKW/RW **abort** when stamp delta lacks evidence (see `board-stamp-authority.md`).
 - [x] **AC3:** Fbuboard cleanup path cannot append `now()` stamps on hygiene runs (`non_substantive`; tests green).
 - [x] **AC4:** Automatic backfill — 71 rows changed; [fr097-backfill-report.json](../../../../../docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json).
+- **Forensic (+4):** Step 9 readiness report corrected to PASS — [rw-step9-release-readiness-v0-2-15-8plus3-e2s15t8.md](../../../../../docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step9-release-readiness-v0-2-15-8plus3-e2s15t8.md) (v0.2.15.8+4 docs-only release).
 - [x] **AC5:** Gate 8 homogeneity PASS post-backfill; stamp-diff validator + tests shipped.
 - [x] **AC6:** BR-069 + UXR-009 CLOSED on `RW E02:S15:T08` release (v0.2.15.8+1).
 - [x] **AC7 (optional):** Agent skill NONE — validator + snapshot sufficient (IPP §4.2).

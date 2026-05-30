@@ -3,17 +3,14 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E02:S15:T08 (v0.2.15.8+3)
-- **Timestamp (UTC):** 2026-05-30 10:49 UTC
+- **Timestamp (UTC):** 2026-05-30 10:51 UTC
 - **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-15-8plus3-e2s15t8.json`
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 2: Predecessor closure & supersede-chain consistency
-  - Gate 4: Corpus canonical state
-  - Gate 7: Four-surface parity (FR-084)
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 6/9 passed (3 failed, 0 waived).
+- Gates: 9/9 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -31,19 +28,15 @@
 
 ### Gate 2 — Predecessor closure & supersede-chain consistency
 
-- Status: **FAIL** (severity: `block`)
-- Summary: Supersede chain incomplete; see findings.
-- Findings:
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md` lacks 'SUPERSEDED -> [E2:S15:T07]' redirect. Wave 0 supersede chain incomplete.
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md` lacks 'SUPERSEDED -> [E2:S15:T07]' redirect. Wave 0 supersede chain incomplete.
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md` lacks 'SUPERSEDED -> [E2:S15:T07]' redirect. Wave 0 supersede chain incomplete.
+- Status: **PASS** (severity: `block`)
+- Summary: Supersede chain executed: FR-091/FR-090/FR-084 banner-superseded, T02/T05/T06 redirected, BR-069/BR-070/UXR-009 gated.
 - Evidence:
   - `docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md`: `OK`
   - `docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md`: `OK`
   - `docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md`: `OK`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`: `NO_REDIRECT`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`: `NO_REDIRECT`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`: `NO_REDIRECT`
+  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`: `OK`
+  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`: `OK`
+  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`: `OK`
   - `docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md`: `OK`
   - `docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`: `OK`
   - `docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md`: `OK`
@@ -61,14 +54,11 @@
 
 ### Gate 4 — Corpus canonical state
 
-- Status: **FAIL** (severity: `block`)
-- Summary: Corpus canonical state violated; see findings.
-- Findings:
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`: rows_changed=5 under non_substantive corpus sweep — corpus is not idempotent.
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: rows_changed=7 under non_substantive corpus sweep — corpus is not idempotent.
+- Status: **PASS** (severity: `block`)
+- Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`: `{'rows_changed': 5, 'rows_with_duplicate_footers': 0}`
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 7, 'rows_with_duplicate_footers': 0}`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 79}`
@@ -96,14 +86,12 @@
 
 ### Gate 7 — Four-surface parity (FR-084)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: Four-surface parity violation; see findings.
-- Findings:
-  - FR-084 violation: untouched surface(s) lack rationale notes (must explain why no mutation): ['fbu_doc'].
+- Status: **PASS** (severity: `block`)
+- Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
   - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-15-8plus3-e2s15t8.json`
   - `task_doc`: `{'touched': True, 'paths': ['docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md'], 'notes_count': 0}`
-  - `fbu_doc`: `{'touched': False, 'paths': ['docs/project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md'], 'notes_count': 0}`
+  - `fbu_doc`: `{'touched': False, 'paths': ['docs/project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md'], 'notes_count': 1}`
   - `kboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
   - `fbuboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/fbuboard.md'], 'notes_count': 0}`
   - `release_scope`: `{'epic': 2, 'story': 15, 'task': 8, 'task_id': 'E02:S15:T08', 'version_string': 'v0.2.15.8+3'}`
