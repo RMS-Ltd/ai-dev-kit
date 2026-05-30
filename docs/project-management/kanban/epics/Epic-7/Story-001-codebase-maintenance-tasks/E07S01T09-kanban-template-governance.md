@@ -13,7 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Version Marker:** v0.7.1.9+3 (UXR-005 **Implementing Task** header wiring)  
 **Related UXR:** [UXR-005 – Kanban Board Formatting & Governance](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)  
-**UXR registry (E7:S00):** [E07:S00:T05](../Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)  
+**UXR registry (E7:S00 — detask target):** [E07:S00:T05](../Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)  
+**Governance:** [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) → [E04:S19:T10](../../Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)  
 **Story:** [E7:S01 – Codebase Maintenance Tasks](../Story-001-codebase-maintenance-tasks.md)
 
 ---

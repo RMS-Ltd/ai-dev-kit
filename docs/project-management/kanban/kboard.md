@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-30 (RW: E02:S16:T06)
-**Version:** v0.2.16.6+1
+**Last Updated:** 2026-05-30 (RW -k: E04:S19:T10)
+**Version:** v0.4.19.10+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -41,6 +41,7 @@ housekeeping_policy: keep
 - **E07:S01:T09** – UXR-005: Kanban template governance & MoSCOW spacing rule - 📋 TODO (HIGH, UXR-owned template maintenance; registry **E07:S00:T05**) | [Task](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | Last modified: 2026-05-30 10:26 UTC
 - **E02:S15:T01** – BR-066: IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE**; historical backfill remains) | [Task](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | Last modified: 2026-04-14 00:00 UTC
 - **E04:S19:T08** – FR-072: Uniform repository abstract-space kanban rules - 🔄 IN PROGRESS (HIGH, Approach D batch wiring) | [Task](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | Last modified: 2026-05-30 10:26 UTC
+- **E04:S19:T10** – BR-076: E7:S00 detasking (S00 abstract-only) - 📋 TODO (HIGH, kanban init **v0.4.19.10+1**) | [Task](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) | [BR-076](fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) | Last modified: 2026-05-30 13:18 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 

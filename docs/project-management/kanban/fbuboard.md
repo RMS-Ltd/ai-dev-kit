@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-30 (RW E02:S16:T04)
-**Version Context:** v0.2.16.4+20 (**SemVer** v0.4.834+20)
+**Last Updated:** 2026-05-30 (RW -k E04:S19:T10)
+**Version Context:** v0.4.19.10+1 (**SemVer** v0.4.837+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -49,6 +49,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 - **UXR-015** – Workflow initiation cheatsheet (**COMPLETE** **E02:S16:T15** **v0.2.16.15+1**) | [UXR-015](fr-br/UXR-015-workflow-initiation-cheatsheet.md) | [E02:S16:T15](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) | Last modified: 2026-05-30 20:30 UTC
 
+- **BR-076** – E7:S00 must not host concrete tasks (S00 abstract-only) - 📋 TODO (HIGH, kanban init **v0.4.19.10+1**, **E04:S19:T10** on kboard) | [BR-076](fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) | [E04:S19:T10](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) | —No IPP— | Last modified: 2026-05-30 13:18 UTC
 - **BR-059** – UKW MoSCOW incomplete story task coverage - 📋 TODO (HIGH, **E02:S16:T13** on kboard) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [E02:S16:T13](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
 - **BR-067** – RW doc-only releases default to BUILD+1 instead of doc-init +0 - 🟢 OPEN (HIGH, `--doc-policy-zero` mitigation shipped **v0.6.7.103+0**; policy/docs alignment on **E02:S16:T03**) | [BR-067](fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) | [E02:S16:T03](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-04-19 00:00 UTC
 - **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE** **E02:S15:T01**; phased historical backfill remains) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | —No IPP— | Last modified: 2026-04-14 00:00 UTC

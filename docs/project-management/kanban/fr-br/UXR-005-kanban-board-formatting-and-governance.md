@@ -12,10 +12,10 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-16  
 **Submitted By:** User (request) documented by Cascade  
 **Priority:** HIGH  
-**Status:** ACCEPTED (registry **E07:S00:T05** filed 2026-03-31; implementation **E07:S01:T09** — UXR ACs still open)  
+**Status:** ACCEPTED (registry **E07:S00:T05** filed 2026-03-31; implementation **E07:S01:T09** — UXR ACs still open; **S00 detasking:** [BR-076](./BR-076-e7-s00-must-not-host-concrete-tasks.md) → **E04:S19:T10**)  
 **GitHub Issue:** _TBD_  
-**Repository Task:** [E07:S00:T05](../epics/Epic-7/Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)  
-**Implementation Task:** [E07:S01:T09](../epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
+**Implementing Task:** [E07:S01:T09](../epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)  
+**Historical registry (detask target):** [E07:S00:T05](../epics/Epic-7/Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)
 
 ---
 

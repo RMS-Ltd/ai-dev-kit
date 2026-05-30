@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Story Type:** Repository (HISTORICAL REGISTRY)  
 **Build Warning Suppression:** true  
-**Explanation:** This story now serves as a historical UXR anchor registry. Under FR-072 Approach D, new intake should not create net-new primary tasks here; use semantic host-story placement and keep this story for legacy traceability.
+**Explanation:** This story now serves as a historical UXR anchor registry. Under FR-072 Approach D, new intake should not create net-new primary tasks here; use semantic host-story placement and keep this story for legacy traceability. **Detasking tracked:** [BR-076](../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) → [E04:S19:T10](../Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) (target: abstract-only S00 like E5:S00).
 
 ---
 
