@@ -18,6 +18,8 @@ For all user requests, enforce an intent-first contract with a hard IPW gate:
 
 **Canonical IPW invocation (Claude Code):** `/ipw [E:S:T] [--skip-tests]` — see `.claude/commands/ipw.md`. IPW **must** run in plan mode (`/plan` first).
 
+**Maintainer workflow cheatsheet:** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md) — scannable RW/UKW/IPW/CMW/PVW triggers and flags (agent execution remains in `.cursorrules`).
+
 ## RW Agent - Release Workflow Specialist
 
 When executing Release Workflow (RW, RW -d, RW -k):

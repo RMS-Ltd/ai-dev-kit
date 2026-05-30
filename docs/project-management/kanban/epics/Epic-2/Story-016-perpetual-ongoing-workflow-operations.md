@@ -67,6 +67,9 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 
 - [ ] **E02:S16:T14 – UKW gap discovery — unfiled FR/BR (FR-043)** - TODO (HIGH) — [Task doc](Story-016-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
 
+- [x] **E02:S16:T15 – Workflow initiation cheatsheet (UXR-015)** - ✅ COMPLETE (v0.2.16.15+1) (HIGH, `docs/guides/workflow-initiation-cheatsheet.md`)  
+  - Task: [`Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md`](Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) | [UXR-015](../../fr-br/UXR-015-workflow-initiation-cheatsheet.md) | [IPP](../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) | [Cheatsheet](../../../guides/workflow-initiation-cheatsheet.md)
+
 ---
 
 ## Overview

@@ -17,6 +17,7 @@ This section contains **user-facing documentation** and **how-to guides** for th
 
 ## Key Documents
 
+- **Workflow initiation:** [`workflow-initiation-cheatsheet.md`](workflow-initiation-cheatsheet.md) — RW, UKW, IPW, CMW, PVW triggers and flags (human quick-reference)
 - **Getting Started:** `getting-started/README.md` (coming soon)
 - **Framework Consumption:** `framework-consumption/README.md` (coming soon)
 

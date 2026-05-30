@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.15+1] - 30-05-26
+
+E02:S16:T15 (UXR-015) — Change implemented: workflow initiation cheatsheet in `docs/guides/` with IPP and discoverability links. SemVer **v0.4.835+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.15+1.md)
+
+---
+
 ## [0.2.8.8+4] - 30-05-26
 
 E2:S08:T08 (FR-059) — Docs-only: IPP/Story/Epic status reconciliation (COMPLETE at +3). SemVer **v0.4.835+4**.

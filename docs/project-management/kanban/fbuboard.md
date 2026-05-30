@@ -47,6 +47,8 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
+- **UXR-015** – Workflow initiation cheatsheet (**COMPLETE** **E02:S16:T15** **v0.2.16.15+1**) | [UXR-015](fr-br/UXR-015-workflow-initiation-cheatsheet.md) | [E02:S16:T15](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) | Last modified: 2026-05-30 20:30 UTC
+
 - **BR-059** – UKW MoSCOW incomplete story task coverage - 📋 TODO (HIGH, **E02:S16:T13** on kboard) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [E02:S16:T13](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
 - **BR-067** – RW doc-only releases default to BUILD+1 instead of doc-init +0 - 🟢 OPEN (HIGH, `--doc-policy-zero` mitigation shipped **v0.6.7.103+0**; policy/docs alignment on **E02:S16:T03**) | [BR-067](fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) | [E02:S16:T03](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-04-19 00:00 UTC
 - **FR-085** – UKW optional `--rp` reprioritization - 🔄 IN PROGRESS (HIGH, **E02:S16:T06** on kboard) | [FR-085](fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | [E02:S16:T06](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) | —No IPP— | Last modified: 2026-04-26 00:00 UTC

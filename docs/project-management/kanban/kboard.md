@@ -32,6 +32,8 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
+- **E02:S16:T15** – UXR-015: Workflow initiation cheatsheet (**COMPLETE** **v0.2.16.15+1**) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) | [UXR-015](fr-br/UXR-015-workflow-initiation-cheatsheet.md) | [Cheatsheet](../../guides/workflow-initiation-cheatsheet.md) | Last modified: 2026-05-30 20:30 UTC
+
 - **E02:S16:T13** – BR-059: UKW MoSCOW full open-task coverage per in-progress story - 📋 TODO (HIGH, re-housed from `E06:S07:T109`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Last modified: 2026-05-30 10:26 UTC
 - **E02:S01:T23** – Tool-agnostic workflow step tracking + persisted run logs - 📋 TODO (HIGH, re-housed from `E06:S07:T18`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Last modified: 2026-05-30 10:26 UTC
 - **E02:S16:T06** – FR-085: UKW optional `--rp` reprioritization mode - 🔄 IN PROGRESS (HIGH, deep intent/dependency analysis for task + FBU ordering) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) | [FR-085](fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | Last modified: 2026-04-26 00:00 UTC

@@ -115,6 +115,7 @@ When any of these triggers appear at the start of a user message, treat them as 
 
 ## Key Conventions
 
+- **Workflow triggers (human cheatsheet):** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md) — RW, UKW, IPW, CMW, PVW invocation quick-reference (agent SoT remains `.cursorrules`).
 - All commits and tags go through RW — never `git commit` or `git push` directly outside RW.
 - Version schema: `RC.EPIC.STORY.TASK+BUILD` (internal); SemVer for external display.
 - Config-driven paths: `rw-config.yaml` at project root is the single source of truth for file paths.
