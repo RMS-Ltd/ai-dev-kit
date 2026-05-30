@@ -1,0 +1,12 @@
+{
+  "report_type": "rw_step7_kboard_restore",
+  "release": "v0.2.16.4+22",
+  "task": "E02:S16:T04",
+  "evidence_mode": "work_authoritative",
+  "rows": {
+    "E02:S16:T04": {
+      "allowed": true,
+      "reason": "RW Step 7 release stamp — kboard/fbuboard bidirectional restore +31 rows"
+    }
+  }
+}

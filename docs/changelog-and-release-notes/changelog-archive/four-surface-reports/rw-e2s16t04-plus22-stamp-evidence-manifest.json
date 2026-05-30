@@ -1,0 +1,11 @@
+{
+  "release": "v0.2.16.4+22",
+  "task": "E02:S16:T04",
+  "workflow": "RW -k Step 7 — kboard/fbuboard bidirectional restore",
+  "rows": {
+    "E02:S16:T04": {
+      "allowed": true,
+      "reason": "RW Step 7 release stamp for perpetual kanban anchor — kboard/fbuboard restore +31 rows"
+    }
+  }
+}
