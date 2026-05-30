@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.16+1] - 30-05-26
+## [0.2.16.16+2] - 30-05-26
 
-E02:S16:T16 (FR-102) — Kanban init: UKW archive-completed (`UKW -c`) feature intake and **E02:S16:T16** task wiring. SemVer **v0.4.838+1**.
+E02:S16:T16 (FR-102) — UKW `-c` archive completed: ADR-010, agent SoT, `archive_completed.py` helpers, ledger-before-prune contract. SemVer **v0.4.839+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.16+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.16+2.md)
 
 ---

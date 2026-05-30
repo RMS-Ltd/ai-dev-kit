@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-30 (RW -k E02:S16:T16)
-**Version Context:** v0.2.16.16+1 (**SemVer** v0.4.838+1)
+**Last Updated:** 2026-05-30 (RW E02:S16:T16)
+**Version Context:** v0.2.16.16+2 (**SemVer** v0.4.839+2)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -52,7 +52,7 @@ This board provides **centralized visibility and prioritization** for all open F
 - **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE** **E02:S15:T01**; phased historical backfill remains) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | —No IPP— | Last modified: 2026-04-14 00:00 UTC
 - **UXR-005** – Kanban board formatting & governance - 📋 TODO (HIGH, **E07:S01:T09** on kboard) | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | [E07:S01:T09](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) | —No IPP— | Last modified: 2026-05-30 14:00 UTC
 - **FR-072** – Uniform repository abstract-space kanban rules - 🔄 IN PROGRESS (HIGH, **E04:S19:T08** Approach D batch wiring) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [E04:S19:T08](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | —No IPP— | Last modified: 2026-05-29 17:20 UTC
-- **FR-102** – UKW archive completed rows (`UKW -c`) - 📥 ACCEPTED (HIGH, kanban init **v0.2.16.16+1**, **E02:S16:T16** on kboard) | [FR-102](fr-br/FR-102-ukw-archive-completed-board-rows.md) | [E02:S16:T16](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) | —No IPP— | Last modified: 2026-05-30 16:11 UTC
+- **FR-102** – UKW archive completed (`UKW -c`) - ✅ IMPLEMENTED (**v0.2.16.16+2**, **E02:S16:T16**) | [FR-102](fr-br/FR-102-ukw-archive-completed-board-rows.md) | [E02:S16:T16](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) | —No IPP— | Last modified: 2026-05-30 16:18 UTC
 
 ---
 

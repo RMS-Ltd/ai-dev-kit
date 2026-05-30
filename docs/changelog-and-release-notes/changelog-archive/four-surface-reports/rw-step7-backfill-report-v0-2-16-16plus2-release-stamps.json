@@ -1,0 +1,10 @@
+{
+  "report_type": "rw_step_7_row_stamp_update",
+  "release_scope": "E02:S16:T16",
+  "version": "v0.2.16.16+2",
+  "evidence_mode": "work_authoritative",
+  "rows": {
+    "E02:S16:T16": { "allowed": true, "reason": "RW release row status/stamp sync v0.2.16.16+2" },
+    "FR-102": { "allowed": true, "reason": "RW release row status/stamp sync v0.2.16.16+2" }
+  }
+}

@@ -505,6 +505,7 @@ For each step, follow this pattern:
 - `UKW -p -a <target>` = Update + assign priorities only
 - `UKW -u -p -a <target>` = Same as comprehensive (redundant with no flags)
 - `UKW --rp` = **Standalone deep reprioritization** (`RePrioritise`) — evidence-based MoSCOW reorder on `kboard.md` + `fbuboard.md` with Step 9 rationale (see ADR-009; **not** combinable with `-u`/`-p`/`-a`)
+- `UKW -c` = **Standalone archive completed** — append `kanban-completed.md` / `fbu-completed.md` then remove terminal rows from active MoSCOW (see ADR-010; **not** combinable with `-u`/`-p`/`-a`/`--rp`)
 
 **Use Case Flags (limit scope when present):**
 - `-u` (bookkeeping): Restrict to bookkeeping sub-workflow only
@@ -525,6 +526,7 @@ For each step, follow this pattern:
 3. **PARSE FLAGS FIRST:** Before Step 1, parse command flags to determine which operations to run:
    - If **no flags:** Run comprehensive UKW (all operations: bookkeeping + update priorities + assign priorities)
    - If **`--rp` present (standalone only):** Run `--rp` step matrix (Steps 1, 2, 6 deep reprioritization, 6.5, 7-9; skip 2.5 and 3-5 unless status mismatch blocks reprioritization). **Do not** combine `--rp` with `-u`, `-p`, or `-a`.
+   - If **`-c` present (standalone only):** Run `-c` step matrix (Steps 1, 2 archive scan, 6 ledger-then-prune on kboard + fbuboard, 7-9; skip 2.5 and 3-5). **Do not** combine `-c` with `-u`, `-p`, `-a`, or `--rp`. Use `kanban_completed_update` / `fr_br_uxr_completed_update` skills before row removal (ADR-010).
    - Else if flags present: **Restrict scope** to specified sub-workflow(s):
      - `-u` only: Bookkeeping (Steps 1-5, 7-9, skip Step 6 MoSCOW)
      - `-p` only: Step 6 update MoSCOW priorities
@@ -559,11 +561,12 @@ For each step, follow this pattern:
 
 **Step Execution Matrix:**
 - **Deep reprioritization (`--rp` only):** Steps 1, 2, 6 (deep MoSCOW on kboard + fbuboard), 6.5, 7-9; skip 2.5 and 3-5; Step 9 **must** include `## Reprioritization rationale` (evidence category per moved row). **Forbidden** in `rw_step_7` context (ADR-009).
+- **Archive completed (`-c` only):** Steps 1, 2 (archive scan), 6 (ledger append then MoSCOW removal on kboard + fbuboard), 7-9; skip 2.5 and 3-5; Step 9 **must** include `## Archive completed summary`. **Forbidden** in `rw_step_7` context (ADR-010). Task-doc / FBU-doc SoT — not row-text-only prune.
 - **Comprehensive (no flags):** All steps including Step 2.5 (gap discovery), all operations
 - **Bookkeeping (`-u` only):** Steps 1-5, 7-9 (skip Step 2.5, skip Step 6 MoSCOW)
 - **Update Priorities (`-p` only):** Step 6 only (update MoSCOW priorities)
 - **Assign Priorities (`-a <target>` only):** Step 6 only (assign priorities to target tasks)
-- **Combined flags:** Run specified sub-workflows only (`--rp` is **not** a combine flag)
+- **Combined flags:** Run specified sub-workflows only (`--rp` and `-c` are **not** combine flags)
 
 1. **Identify Perpetual UKW Task (Wiring Step)** - **MANDATORY FIRST STEP (always runs):** Discover and wire UKW to the project's perpetual UKW task (required for comprehensive run and for RW attribution):
    - Search all task documents for `perpetual_task: true` or `Task Type: Perpetual Maintenance`

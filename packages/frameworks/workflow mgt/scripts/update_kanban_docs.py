@@ -1325,12 +1325,14 @@ def update_kanban_board(
         content = moscow_task_pattern.sub(update_moscow_task, content)
         changes.append(f"Updated MoSCOW section: E{epic}:S{story}:T{task} marked as COMPLETE")
 
-    # Always enforce active-board semantics: "In-Progress" lists must not retain
-    # rows already marked COMPLETE. This applies to both full RW Step 7 and
-    # kanban_init mode so completed tasks never remain on active MoSCOW lists.
-    content, removed_complete_rows = _cleanup_kboard_active_rows(content)
-    if removed_complete_rows > 0:
-        changes.append(f"Pruned COMPLETE rows from active kboard MoSCOW sections ({removed_complete_rows} removed)")
+    # FR-102 / ADR-010: active MoSCOW COMPLETE removal is UKW -c only (ledger-first).
+    # Advisory only — do not delete-only prune from RW/UKW hygiene paths.
+    _, would_prune = _cleanup_kboard_active_rows(content)
+    if would_prune > 0:
+        changes.append(
+            f"Advisory: {would_prune} COMPLETE row(s) on active kboard MoSCOW; "
+            "run UKW -c to append kanban-completed.md then remove (FR-102)"
+        )
 
     try:
         from state_icons import apply_icons_to_moscow_board_content
@@ -1807,6 +1809,7 @@ def enforce_terminal_timestamps_on_boards(
     *,
     evidence_mode: str = EVIDENCE_MODE_NON_SUBSTANTIVE,
     evidence_provider=None,
+    prune_terminal_active_rows: bool = False,
 ) -> List[str]:
     """
     Enforce terminal row timestamps on both active boards:
@@ -1831,12 +1834,16 @@ def enforce_terminal_timestamps_on_boards(
         pre_hash = hashlib.sha256(original.encode("utf-8")).hexdigest()
 
         if board.name in {"fbuboard.md", "fr-br-uxr-board.md"}:
-            updated, stats = _cleanup_fbuboard_active_rows(
-                original,
-                board,
-                timestamp_now,
-                evidence_mode=evidence_mode,
-            )
+            if prune_terminal_active_rows:
+                updated, stats = _cleanup_fbuboard_active_rows(
+                    original,
+                    board,
+                    timestamp_now,
+                    evidence_mode=evidence_mode,
+                )
+            else:
+                updated = original
+                stats = None
             updated, row_pipeline_diagnostics = apply_canonical_row_transform_pipeline(
                 board_content=updated,
                 project_root=project_root,
@@ -1867,12 +1874,16 @@ def enforce_terminal_timestamps_on_boards(
             if live_hash != pre_hash:
                 # Re-apply transforms to latest content to avoid stale writes.
                 if board.name in {"fbuboard.md", "fr-br-uxr-board.md"}:
-                    updated, stats = _cleanup_fbuboard_active_rows(
-                        live,
-                        board,
-                        timestamp_now,
-                        evidence_mode=evidence_mode,
-                    )
+                    if prune_terminal_active_rows:
+                        updated, stats = _cleanup_fbuboard_active_rows(
+                            live,
+                            board,
+                            timestamp_now,
+                            evidence_mode=evidence_mode,
+                        )
+                    else:
+                        updated = live
+                        stats = None
                     updated, row_pipeline_diagnostics = apply_canonical_row_transform_pipeline(
                         board_content=updated,
                         project_root=project_root,

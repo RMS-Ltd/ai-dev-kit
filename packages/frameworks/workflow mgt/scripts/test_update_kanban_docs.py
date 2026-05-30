@@ -457,7 +457,9 @@ def test_4_3_fbuboard_reconciliation_prunes_and_keeps_exception():
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
 
-        changes = mod.enforce_terminal_timestamps_on_boards(Path(test_dir), dry_run=False)
+        changes = mod.enforce_terminal_timestamps_on_boards(
+            Path(test_dir), dry_run=False, prune_terminal_active_rows=True
+        )
         board = Path(test_dir) / "docs" / "project-management" / "kanban" / "fbuboard.md"
         updated = board.read_text(encoding="utf-8")
 
@@ -522,15 +524,15 @@ def test_4_4_full_mode_prunes_completed_rows_from_active_kboard():
             return False, f"update_kanban_board failed: {changes}"
 
         updated = board_path.read_text()
-        if "E2:S01:T12" in updated or "E2:S02:T02" in updated:
-            return False, "COMPLETE rows should be pruned from active MoSCOW sections in full mode"
+        if "E2:S01:T12" not in updated or "E2:S02:T02" not in updated:
+            return False, "COMPLETE rows should remain on active MoSCOW until UKW -c (FR-102)"
         if "E2:S01:T13" not in updated or "E2:S02:T03" not in updated:
             return False, "Active rows were incorrectly removed from kboard"
-        if not any("Pruned COMPLETE rows from active kboard MoSCOW sections" in c for c in changes):
-            return False, "Expected cleanup change message not emitted"
+        if not any("UKW -c" in c for c in changes):
+            return False, "Expected UKW -c advisory message not emitted"
         return True, ""
 
-    return run_test("Test 4.4: full-mode kboard prune complete rows", setup, test)
+    return run_test("Test 4.4: full-mode defers kboard complete prune to UKW -c", setup, test)
 
 
 def test_4_5_touch_only_run_preserves_unique_moscow_timestamps():

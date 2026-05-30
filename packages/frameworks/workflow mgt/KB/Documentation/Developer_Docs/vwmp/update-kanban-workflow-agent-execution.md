@@ -91,6 +91,8 @@ UKW behaviour depends on **how** it is invoked. Use this conceptual flag when re
 
 **FR-085 / ADR-009 (`--rp`):** Optional **standalone** `UKW --rp` performs evidence-based deep MoSCOW reorder on `kboard.md` and `fbuboard.md` (intent, dependencies, blockers, impact). Default UKW without `--rp` is unchanged. **Forbidden** in `rw_step_7`. Step 9 must include `## Reprioritization rationale`. Idempotent on unchanged inputs. See [ADR-009](../../../../../../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md).
 
+**FR-102 / ADR-010 (`-c`):** Optional **standalone** `UKW -c` archives terminal tasks/FBUs: append `kanban-completed.md` / `fbu-completed.md` via Documentation Agent skills **before** removing active MoSCOW rows. Task-doc / FBU-doc source of truth (not row-text-only). **Forbidden** in `rw_step_7` and **not** combinable with `-u`/`-p`/`-a`/`--rp`. Step 9 must include `## Archive completed summary`. `update_kanban_docs.py` does not delete-only prune completes (run `UKW -c` after releases). See [ADR-010](../../../../../../../docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md).
+
 **FR-038:R04:** In `rw_step_7`, treat MoSCOW and board-wide prioritisation as **narrow**; reserve whole-board reprioritisation for `standalone` **`-p`**, comprehensive runs, or explicit **`--rp`** (not RW Step 7).
 
 **Cross-reference:** RW Step 7 specification: [Release Workflow Agent Execution — Step 7](release-workflow-agent-execution.md#step-7-scoped-kanban-sync-ukw-mode).

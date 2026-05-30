@@ -10,7 +10,7 @@ housekeeping_policy: keep
 # AI Dev Kit – Kanban Board
 
 **Last Updated:** 2026-05-30 (RW: E02:S16:T16)
-**Version:** v0.2.16.16+1
+**Version:** v0.2.16.16+2
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E02:S16:T16** – FR-102: UKW archive completed rows (`UKW -c`) - 📋 TODO (HIGH, kanban init **v0.2.16.16+1**; dual-board archival sub-workflow) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) | [FR-102](fr-br/FR-102-ukw-archive-completed-board-rows.md) | Last modified: 2026-05-30 16:11 UTC
+- **E02:S16:T16** – FR-102: UKW archive completed (`UKW -c`) - ✅ COMPLETE (**v0.2.16.16+2**) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) | [FR-102](fr-br/FR-102-ukw-archive-completed-board-rows.md) | [ADR-010](../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md) | Last modified: 2026-05-30 16:18 UTC
 - **E02:S16:T13** – BR-059: UKW MoSCOW full open-task coverage per in-progress story - 📋 TODO (HIGH, re-housed from `E06:S07:T109`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Last modified: 2026-05-30 13:32 UTC
 - **E02:S01:T23** – Tool-agnostic workflow step tracking + persisted run logs - 📋 TODO (HIGH, re-housed from `E06:S07:T18`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Last modified: 2026-05-30 13:33 UTC
 - **E06:S07:T107** – IDE command whitelist optimization - 📋 TODO (HIGH, in-scope ADK agent friction; charter freeze applies to new S07 tasks) | [Task](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) | Last modified: 2026-05-30 13:34 UTC

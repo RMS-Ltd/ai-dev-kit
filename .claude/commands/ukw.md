@@ -31,6 +31,7 @@ Parse `$ARGUMENTS` to determine which sub-workflow(s) to run:
 | `/ukw -p -a <target>` | Update priorities + assign priorities |
 | `/ukw -u -p -a <target>` | All (equivalent to comprehensive) |
 | `/ukw --rp` | **Standalone deep reprioritization** — Steps 1, 2, 6 (deep MoSCOW), 6.5, 7–9; Step 9 rationale required; **not** combinable with `-u`/`-p`/`-a` ([ADR-009](../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)) |
+| `/ukw -c` | **Standalone archive completed** — Steps 1, 2 (archive scan), 6 (ledger then prune), 7–9; Step 9 archive summary required; **not** combinable with `-u`/`-p`/`-a`/`--rp` ([ADR-010](../../docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)) |
 
 **Task targeting syntax for `-a`:**
 - Single task: `E09S01T01`, `e9s1t1`, `E09:S01:T01`
@@ -52,19 +53,19 @@ Create a TODO list for all 9 UKW steps (mark Step 2.5 as skipped unless comprehe
 
 **Step Execution Matrix:**
 
-| Step | Comprehensive | `-u` only | `-p` only | `-a` only | `--rp` only |
-|------|:---:|:---:|:---:|:---:|:---:|
-| 1 Identify Perpetual Task | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 2 Analyze Recent Activity | ✅ | ✅ | ❌ | ❌ | ✅ |
-| 2.5 Discover Board Gaps | ✅ | ❌ | ❌ | ❌ | ❌ |
-| 3 Update Task Documents | ✅ | ✅ | ❌ | ❌ | ❌ |
-| 4 Update Story Documents | ✅ | ✅ | ❌ | ❌ | ❌ |
-| 5 Update Epic Documents | ✅ | ✅ | ❌ | ❌ | ❌ |
-| 6 Update Kanban Board | ✅ (full) | ✅ (no MoSCOW) | ✅ (MoSCOW only) | ✅ (assign only) | ✅ (deep reprioritization) |
-| 6.5 fbuboard Reconciliation | ✅ | ✅ | ❌ | ❌ | ✅ |
-| 7 Validate Consistency | ✅ | ✅ | ❌ | ❌ | ✅ |
-| 8 Stage Files | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 9 Document Changes | ✅ | ✅ | ✅ | ✅ | ✅ (+ **Reprioritization rationale**) |
+| Step | Comprehensive | `-u` only | `-p` only | `-a` only | `--rp` only | `-c` only |
+|------|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 Identify Perpetual Task | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 2 Analyze Recent Activity | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ (archive scan) |
+| 2.5 Discover Board Gaps | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| 3 Update Task Documents | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| 4 Update Story Documents | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| 5 Update Epic Documents | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| 6 Update Kanban Board | ✅ (full) | ✅ (no MoSCOW) | ✅ (MoSCOW only) | ✅ (assign only) | ✅ (deep reprioritization) | ✅ (archive + prune) |
+| 6.5 fbuboard Reconciliation | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ (folded in Step 6) |
+| 7 Validate Consistency | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
+| 8 Stage Files | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 9 Document Changes | ✅ | ✅ | ✅ | ✅ | ✅ (+ rationale) | ✅ (+ **Archive completed summary**) |
 
 ---
 

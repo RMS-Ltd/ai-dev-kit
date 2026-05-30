@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Workflow initiation cheatsheet
 
-**Last verified against:** 2026-05-30 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` / ADR-009; BR-067 `RW -d --doc-policy-zero`)
+**Last verified against:** 2026-05-30 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` / ADR-009; FR-102 `UKW -c` / ADR-010; BR-067 `RW -d --doc-policy-zero`)
 
 > **Agent source of truth:** If this cheatsheet and [`.cursorrules`](../../.cursorrules) or [`.claude/commands/`](../../.claude/commands/) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
@@ -23,6 +23,7 @@ housekeeping_policy: keep
 | Release completed work | `RW E02:S16:T15` (full), `RW -d E02:S16:T15` (docs-only), or `RW -k E02:S16:T15` (kanban-init) |
 | Plan before implementing | `IPW E02:S16:T15` (**plan mode first**) or `/ipw E02:S16:T15` — then explicit **implement** (IPW/IPP gate) |
 | Sync all kanban docs (global) | `UKW` then `RW` |
+| Clear completed rows from active boards (archive to completed ledgers) | `UKW -c` then `RW` |
 | Fix suspected kanban drift (specific) | `UKW -ad <targets>` then `RW` — **planned** (not yet in `.cursorrules`) |
 | Maintain changelog size/order | `CMW` then `RW` |
 | Bump package versions | `PVW` (or automatic at RW Step 2.5) |
@@ -63,6 +64,7 @@ housekeeping_policy: keep
 | `UKW -u -p`, `UKW -u -a <target>`, etc. | Combined sub-workflows per flag matrix |
 | `UKW -ad <targets>` | **Address Drift** — targeted project-state kanban reconciliation — **planned** |
 | `UKW --rp` | **Deep reprioritization** (standalone) — intent/dependency/blocker/impact analysis on kboard + fbuboard; emits rationale ([ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)). **Not** combinable with `-u`, `-p`, or `-a` |
+| `UKW -c` | **Archive completed** (standalone) — append [kanban-completed.md](../project-management/kanban/kanban-completed.md) / [fbu-completed.md](../project-management/kanban/fbu-completed.md) then remove terminal MoSCOW rows ([ADR-010](../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)). **Not** combinable with `-u`, `-p`, `-a`, or `--rp` |
 
 **Flag disambiguation (easy to confuse):**
 
@@ -72,6 +74,7 @@ housekeeping_policy: keep
 | `-a` | **UKW** | Assign **priorities** to targets |
 | `-ad` | **UKW** (planned) | **Address** kanban **d**rift vs project state |
 | `--rp` | **UKW** | **RePrioritise** — standalone deep MoSCOW reorder (not `RW -d`, not `UKW -a`; distinct from `UKW -p`) |
+| `-c` | **UKW** | **Archive completed** — move terminal rows to completed ledgers (not `RW -d`, not `UKW -a`) |
 
 **`-a` target syntax:** single task `E02:S16:T15`; multiple `E02:S16:T13,E02:S16:T14`; range `E02:S16:T13-E02:S16:T15`; story `E02:S16`; epic `E02`; all unprioritized `all` or `*`.
 

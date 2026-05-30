@@ -5,6 +5,19 @@ description: Update kanban boards with status inference and MoSCOW prioritizatio
 
 ## Update Kanban Workflow Execution
 
+### Archive completed (`UKW -c`, FR-102 / ADR-010)
+
+When the user invokes **`UKW -c`** (standalone only):
+
+1. Run Steps 1, 2 (archive scan), 6 (ledger append then MoSCOW removal), 7–9 per agent execution guide — skip 2.5 and 3–5.
+2. **kboard:** For each archivable row, use **`kanban_completed_update`** ([skill](../kanban-completed-update/SKILL.md)) with version/timestamp from **task doc** — then remove the row from active MoSCOW.
+3. **fbuboard:** For each archivable FBU, use **`fr_br_uxr_completed_update`** ([skill](../fr-br-uxr-completed-update/SKILL.md)) — then remove from active MoSCOW.
+4. Helpers: `packages/frameworks/workflow mgt/scripts/kanban/archive_completed.py` (`scan_kboard_candidates`, `scan_fbuboard_candidates`).
+5. Emit `## Archive completed summary` in Step 9 (archived / skipped / already-in-ledger counts).
+6. **Do not** batch-rewrite row `Last modified` stamps (FR-097). **Do not** combine `-c` with `-u`, `-p`, `-a`, or `--rp`. **Do not** use `-c` during RW Step 7.
+
+See [ADR-010](../../../docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md) and [workflow initiation cheatsheet](../../../docs/guides/workflow-initiation-cheatsheet.md).
+
 ### Deep reprioritization (`UKW --rp`, FR-085 / ADR-009)
 
 When the user invokes **`UKW --rp`** (standalone only):

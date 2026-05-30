@@ -14,7 +14,7 @@ housekeeping_policy: keep
 
 **Last Updated:** 2026-05-30  
 **Source Project:** ai-dev-kit  
-**Version:** 1.1.0 (FR-085: `--rp` standalone deep reprioritization — keep aligned with root `.cursorrules` UKW block)
+**Version:** 1.2.0 (FR-102: `-c` archive completed — keep aligned with root `.cursorrules` UKW block)
 
 ---
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 **When the user types "UKW" or "ukw" (case-insensitive), with optional flags, execute the Update Kanban Workflow as an intelligent agent:**
 
-**Command syntax (flags):** `UKW` (comprehensive), `UKW -u`, `UKW -p`, `UKW -a <target>`, combined `-u`/`-p`/`-a` forms, and **`UKW --rp`** (standalone **RePrioritise** — deep MoSCOW reorder on `kboard.md` + `fbuboard.md` with Step 9 rationale; **not** combinable with `-u`/`-p`/`-a`; **forbidden** in RW Step 7). See [ADR-009](../../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md).
+**Command syntax (flags):** `UKW` (comprehensive), `UKW -u`, `UKW -p`, `UKW -a <target>`, combined `-u`/`-p`/`-a` forms, **`UKW --rp`** (standalone **RePrioritise**; [ADR-009](../../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)), and **`UKW -c`** (standalone **archive completed** — ledger then prune; [ADR-010](../../../docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)). `--rp` and `-c` are **not** combinable with `-u`/`-p`/`-a` or each other; **forbidden** in RW Step 7.
 
 **When the user types "UKW" or "ukw" (case-insensitive), execute the Update Kanban Workflow as an intelligent agent:**
 
