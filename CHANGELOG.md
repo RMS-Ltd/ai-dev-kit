@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.8.8+2] - 30-05-26
+
+E2:S08:T08 (FR-059) — Change implemented: workflow forensic logging, checkpoint manifests, journal schema v1, ADR-008, IPP, and operator recovery guide. SemVer **v0.4.831+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.8.8+2.md)
+
+---
+
 ## [0.2.15.8+4] - 30-05-26
 
 E2:S15:T08 (FR-097) — Docs-only: Step 9 readiness report forensic correction (BLOCK→PASS for v0.2.15.8+3). SemVer **v0.4.830+4**.

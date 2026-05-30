@@ -9,13 +9,15 @@ housekeeping_policy: keep
 # FR-059: Enhanced Workflow Logging System with Forensic Capabilities and Rollback Hardening
 
 **FR ID:** FR-059  
-**Status:** PROPOSED  
+**Status:** IN PROGRESS  
 **Version:** v0.2.8.8+1  
 
 **Implementing Task:** [E02:S08:T08](../epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md)
 **Priority:** HIGH  
 **Created:** 2026-03-17  
-**Last Updated:** 2026-03-17  
+**Last Updated:** 2026-05-30  
+
+**Planning:** [IPP-E2S08T08](../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md) | [ADR-008](../../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
 
 ---
 

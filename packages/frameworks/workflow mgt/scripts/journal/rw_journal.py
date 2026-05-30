@@ -18,6 +18,9 @@ from typing import Any, Dict, List, Optional
 JOURNAL_DIR = Path("docs/journals")
 
 
+JOURNAL_SCHEMA_VERSION = "1"
+
+
 @dataclass
 class StepEntry:
     """A single step record within a run journal."""
@@ -28,13 +31,16 @@ class StepEntry:
     commands: List[str] = field(default_factory=list)
     touched_files: List[str] = field(default_factory=list)
     notes: str = ""
+    command_records: List[Dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "StepEntry":
-        return cls(**data)
+        known = {f.name for f in cls.__dataclass_fields__.values()}
+        filtered = {k: v for k, v in data.items() if k in known}
+        return cls(**filtered)
 
 
 @dataclass
@@ -51,6 +57,7 @@ class RunEntry:
 
     def to_dict(self) -> Dict[str, Any]:
         return {
+            "schema_version": JOURNAL_SCHEMA_VERSION,
             "run_id": self.run_id,
             "task_id": self.task_id,
             "started_at": self.started_at,
@@ -120,6 +127,7 @@ class RWJournal:
         commands: Optional[List[str]] = None,
         touched_files: Optional[List[str]] = None,
         notes: str = "",
+        command_records: Optional[List[Dict[str, Any]]] = None,
     ) -> None:
         """Append a step record to the current run."""
         if self._run is None:
@@ -133,6 +141,7 @@ class RWJournal:
                 commands=commands or [],
                 touched_files=touched_files or [],
                 notes=notes,
+                command_records=command_records or [],
             )
         )
 

@@ -86,6 +86,10 @@ class RollbackContract:
         """Inspect a step and populate compensation surfaces."""
         for cmd in step.commands:
             self._analyze_command(step, cmd)
+        for rec in step.command_records:
+            argv = rec.get("argv") or []
+            if argv:
+                self._analyze_command(step, " ".join(str(a) for a in argv))
         for artifact in step.touched_files:
             self._analyze_artifact(step, artifact)
 

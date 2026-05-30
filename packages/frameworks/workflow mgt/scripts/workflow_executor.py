@@ -21,6 +21,9 @@ from enum import Enum
 from pathlib import Path
 import uuid
 
+from journal.forensic_log import run_subprocess_logged
+from journal import checkpoint_store
+
 
 class WorkflowStatus(Enum):
     """Status of workflow execution."""
@@ -74,9 +77,15 @@ class WorkflowExecutor:
             project_root: Root directory of the project
         """
         self.project_root = project_root or Path.cwd()
+        self.journal_root = self.project_root / "docs" / "journals"
         self.workflows: Dict[str, WorkflowDefinition] = {}
         self.execution_history: List[WorkflowResult] = []
+        self._command_records: List[Dict[str, Any]] = []
         self.logger = logging.getLogger(__name__)
+
+    def get_command_records(self) -> List[Dict[str, Any]]:
+        """Forensic command records from the current/last execution path."""
+        return list(self._command_records)
     
     def register_workflow(self, workflow_def: WorkflowDefinition) -> None:
         """
@@ -112,7 +121,8 @@ class WorkflowExecutor:
         context = context or {}
         
         self.logger.info(f"Executing workflow: {workflow_id} - {workflow_def.name}")
-        
+        self._command_records = []
+
         # Create checkpoint if provided
         if checkpoint:
             self._create_checkpoint(checkpoint)
@@ -191,14 +201,13 @@ class WorkflowExecutor:
         # Execute with timeout if specified
         timeout = workflow_def.timeout
         
-        result = subprocess.run(
+        result, record = run_subprocess_logged(
             cmd,
             cwd=self.project_root,
-            capture_output=True,
-            text=True,
-            timeout=timeout
+            timeout=timeout,
         )
-        
+        self._command_records.append(record.to_dict())
+
         if result.returncode != 0:
             raise RuntimeError(f"Workflow script failed: {result.stderr}")
         
@@ -237,18 +246,13 @@ class WorkflowExecutor:
         cmd = cmd_parts[0]
         args = cmd_parts[1:] if len(cmd_parts) > 1 else []
         
-        # Add parameters as environment variables or arguments
-        env = {**params}
-        
-        result = subprocess.run(
+        result, record = run_subprocess_logged(
             [cmd] + args,
             cwd=self.project_root,
-            capture_output=True,
-            text=True,
-            env=env,
-            timeout=workflow_def.timeout
+            timeout=workflow_def.timeout,
         )
-        
+        self._command_records.append(record.to_dict())
+
         if result.returncode != 0:
             raise RuntimeError(f"Workflow command failed: {result.stderr}")
         
@@ -322,11 +326,11 @@ class WorkflowExecutor:
         Args:
             checkpoint_id: Unique checkpoint identifier
         """
-        # Placeholder for checkpoint creation
-        # In full implementation, this would:
-        # 1. Save current state
-        # 2. Store checkpoint metadata
-        # 3. Enable rollback to this point
+        checkpoint_store.create_checkpoint(
+            self.journal_root,
+            checkpoint_id,
+            project_root=self.project_root,
+        )
         self.logger.info(f"Checkpoint created: {checkpoint_id}")
     
     def rollback_to_checkpoint(self, checkpoint_id: str) -> bool:
@@ -339,13 +343,16 @@ class WorkflowExecutor:
         Returns:
             True if rollback successful, False otherwise
         """
-        # Placeholder for rollback implementation
-        # In full implementation, this would:
-        # 1. Restore state from checkpoint
-        # 2. Clean up partial changes
-        # 3. Return to consistent state
-        self.logger.info(f"Rollback to checkpoint: {checkpoint_id}")
-        return True
+        ok = checkpoint_store.rollback_to_checkpoint(
+            self.journal_root,
+            checkpoint_id,
+            project_root=self.project_root,
+        )
+        if ok:
+            self.logger.info(f"Rollback hint written for checkpoint: {checkpoint_id}")
+        else:
+            self.logger.warning(f"Checkpoint not found: {checkpoint_id}")
+        return ok
     
     def retry_workflow(
         self,

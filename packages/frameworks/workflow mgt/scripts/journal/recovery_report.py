@@ -47,6 +47,7 @@ class RecoveryReport:
     manual_reconcile: List[str] = field(default_factory=list)
     next_steps: List[str] = field(default_factory=list)
     rerun_guidance: str = ""
+    command_timeline: List[str] = field(default_factory=list)
 
     # ------------------------------------------------------------------
     # Factories
@@ -77,7 +78,28 @@ class RecoveryReport:
             manual_reconcile=sorted(set(manual)),
             next_steps=cls._build_next_steps(run, failed_step, auto, manual),
             rerun_guidance=cls._build_rerun_guidance(run, failed_step),
+            command_timeline=cls._command_timeline_section(run),
         )
+
+    @staticmethod
+    def _command_timeline_section(run: RunEntry) -> List[str]:
+        """Build markdown section for atomic command records on the failed step."""
+        failed = RecoveryReport._first_failed_step(run.steps)
+        if failed is None or not failed.command_records:
+            return []
+        lines = [
+            "",
+            "## Command Timeline (forensic)",
+            "",
+        ]
+        for rec in failed.command_records:
+            argv = rec.get("argv", [])
+            exit_code = rec.get("exit_code", "N/A")
+            duration = rec.get("duration_ms", "N/A")
+            lines.append(
+                f"- `{ ' '.join(argv) }` — exit={exit_code}, {duration}ms"
+            )
+        return lines
 
     @classmethod
     def from_run_entry(cls, run: RunEntry) -> "RecoveryReport":
@@ -131,6 +153,7 @@ class RecoveryReport:
             lines.append(f"- `{path}`")
         if not self.manual_reconcile:
             lines.append("_None identified._")
+        lines.extend(self.command_timeline)
         lines.extend([
             "",
             "## Next Steps",

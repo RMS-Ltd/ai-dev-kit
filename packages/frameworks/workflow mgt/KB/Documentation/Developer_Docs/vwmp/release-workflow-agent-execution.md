@@ -1761,6 +1761,7 @@ Record the snapshot directory path for Step 10 stamp-diff validation.
      - **Review error messages:** Script provides detailed error messages with file paths
      - **Review recovery guidance:** Script provides step-by-step recovery instructions for each error type
      - **Error types:** 12 distinct error types with specific recovery playbooks
+     - **Forensic recovery (FR-059 / ADR-008):** RW run journals under `docs/journals/`; atomic command records and checkpoint manifests — see [Workflow Forensic Recovery Guide](workflow-forensic-recovery-guide.md).
      - **Override mechanism:** `--allow-override` flag available for recoverable errors only (use with caution)
    - **If script succeeds:**
      - Verify Story doc was updated (header, Task Checklist, version markers)

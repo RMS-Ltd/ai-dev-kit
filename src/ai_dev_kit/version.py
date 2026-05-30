@@ -8,9 +8,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 
 VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 15    # Story 15 — IPW governance and publication contract
-VERSION_TASK = 8      # Task 8 — FR-097 board stamp authority (forensic report backfill)
-VERSION_BUILD = 4     # Build 4: Step 9 readiness report PASS correction (docs-only)
+VERSION_STORY = 8     # Story 8 — Harden Release Workflow Reliability
+VERSION_TASK = 8      # Task 8 — FR-059 forensic logging and rollback hardening
+VERSION_BUILD = 2     # Build 2: forensic_log, checkpoints, journal schema v1, tests, ADR-008, IPP
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.15.8+4
+# Current: 0.2.8.8+2

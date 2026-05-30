@@ -74,6 +74,7 @@ When working with documentation:
 **Ultimate Responsibility:**
 - **kanban-completed.md:** Final authority over structure, format, and updates
 - **fbu-completed.md:** Final authority over structure, format, and updates
+- **docs/journals/:** Workflow forensic run logs and checkpoint manifests (FR-059 / ADR-008); TTL housekeeping per `journal_ttl_days` in `rw-config.yaml`
 - **Agent Coordination:** Primary interface for all agents updating completed tasks and FR/BR/UXR items
 - **Validation:** Ensures consistent timestamp format and recent tasks tracking for both kanban and FR/BR/UXR
 

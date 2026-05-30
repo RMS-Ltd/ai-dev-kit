@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-10  
-**Last updated:** 2026-04-09 (v0.2.8.8+1 – Kanban documentation setup)
-**Version:** v0.2.8.8+1
+**Last updated:** 2026-05-30 (v0.2.8.8+2 – FR-059 forensic logging implementation)
+**Version:** v0.2.8.8+2
 **Completed:** 2025-12-15
 **Code:** E2S08
 
@@ -47,7 +47,7 @@ Improve Release Workflow reliability by:
 - [x] **E02:S08:T05 – Implement error handling and recovery guidance** ✅ COMPLETE (v0.2.8.5+1)
 - [x] **E02:S08:T06 – Update RW documentation and agent execution guide** ✅ COMPLETE (v0.2.8.6+1)
 - [x] **E02:S08:T07 – Testing and validation** ✅ COMPLETE (v0.2.8.7+1)
-- [ ] **E02:S08:T08 – FR-059: Enhanced workflow forensic logging and rollback hardening** - TODO
+- [ ] **E02:S08:T08 – FR-059: Enhanced workflow forensic logging and rollback hardening** - 🔄 IN PROGRESS | [IPP](../../../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md)
 
 ---
 
