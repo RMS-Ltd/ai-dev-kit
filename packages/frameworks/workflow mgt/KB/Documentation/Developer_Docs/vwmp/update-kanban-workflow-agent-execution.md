@@ -87,9 +87,11 @@ UKW behaviour depends on **how** it is invoked. Use this conceptual flag when re
 | Context | When | Scope and behaviour |
 |--------|------|---------------------|
 | **`rw_step_7`** | Release Workflow **Step 7 — Scoped Kanban Sync (UKW Mode)** (agent-driven) | **Scoped** to the release’s Epic/Story/Task and directly related docs/board lines. **Conservative** MoSCOW: only **new or newly significant** tasks get priority churn; do **not** re-sort the entire board. Bottom-up: Task → Story → Epic → board for that slice. |
-| **`standalone`** | User types **`UKW`** / **`ukw`** with optional **`-u`**, **`-p`**, **`-a`** (see [.cursorrules](../../../../../../.cursorrules) UKW section) | **Full** UKW: bookkeeping, narrative synthesis, and MoSCOW as defined for the chosen flags — may touch the whole board and all relevant docs. |
+| **`standalone`** | User types **`UKW`** / **`ukw`** with optional **`-u`**, **`-p`**, **`-a`**, or standalone **`--rp`** (see [.cursorrules](../../../../../../.cursorrules) UKW section) | **Full** UKW per flag matrix; **`--rp`** = deep RePrioritise only (Steps 1, 2, 6, 6.5, 7–9). |
 
-**FR-038:R04:** In `rw_step_7`, treat MoSCOW and board-wide prioritisation as **narrow**; reserve whole-board reprioritisation for `standalone` **`-p`** / comprehensive runs.
+**FR-085 / ADR-009 (`--rp`):** Optional **standalone** `UKW --rp` performs evidence-based deep MoSCOW reorder on `kboard.md` and `fbuboard.md` (intent, dependencies, blockers, impact). Default UKW without `--rp` is unchanged. **Forbidden** in `rw_step_7`. Step 9 must include `## Reprioritization rationale`. Idempotent on unchanged inputs. See [ADR-009](../../../../../../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md).
+
+**FR-038:R04:** In `rw_step_7`, treat MoSCOW and board-wide prioritisation as **narrow**; reserve whole-board reprioritisation for `standalone` **`-p`**, comprehensive runs, or explicit **`--rp`** (not RW Step 7).
 
 **Cross-reference:** RW Step 7 specification: [Release Workflow Agent Execution — Step 7](release-workflow-agent-execution.md#step-7-scoped-kanban-sync-ukw-mode).
 

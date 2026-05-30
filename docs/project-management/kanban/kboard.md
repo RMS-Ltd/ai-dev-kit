@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-30 (RW: E02:S16:T04)
-**Version:** v0.2.16.4+20
+**Last Updated:** 2026-05-30 (RW: E02:S16:T06)
+**Version:** v0.2.16.6+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -33,10 +33,10 @@ housekeeping_policy: keep
 ### Should Have (S) - Important Tasks
 
 - **E02:S16:T15** – UXR-015: Workflow initiation cheatsheet (**COMPLETE** **v0.2.16.15+1**) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) | [UXR-015](fr-br/UXR-015-workflow-initiation-cheatsheet.md) | [Cheatsheet](../../guides/workflow-initiation-cheatsheet.md) | Last modified: 2026-05-30 20:30 UTC
+- **E02:S16:T06** – FR-085: UKW `--rp` deep reprioritization (**COMPLETE** **v0.2.16.6+1**) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) | [FR-085](fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | [ADR-009](../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) | Last modified: 2026-05-30 12:54 UTC
 
 - **E02:S16:T13** – BR-059: UKW MoSCOW full open-task coverage per in-progress story - 📋 TODO (HIGH, re-housed from `E06:S07:T109`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Last modified: 2026-05-30 10:26 UTC
 - **E02:S01:T23** – Tool-agnostic workflow step tracking + persisted run logs - 📋 TODO (HIGH, re-housed from `E06:S07:T18`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Last modified: 2026-05-30 10:26 UTC
-- **E02:S16:T06** – FR-085: UKW optional `--rp` reprioritization mode - 🔄 IN PROGRESS (HIGH, deep intent/dependency analysis for task + FBU ordering) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) | [FR-085](fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | Last modified: 2026-04-26 00:00 UTC
 - **E06:S07:T107** – IDE command whitelist optimization - 📋 TODO (HIGH, in-scope ADK agent friction; charter freeze applies to new S07 tasks) | [Task](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) | Last modified: 2026-05-30 10:26 UTC
 - **E07:S01:T09** – UXR-005: Kanban template governance & MoSCOW spacing rule - 📋 TODO (HIGH, UXR-owned template maintenance; registry **E07:S00:T05**) | [Task](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | Last modified: 2026-05-30 10:26 UTC
 - **E02:S15:T01** – BR-066: IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE**; historical backfill remains) | [Task](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | Last modified: 2026-04-14 00:00 UTC

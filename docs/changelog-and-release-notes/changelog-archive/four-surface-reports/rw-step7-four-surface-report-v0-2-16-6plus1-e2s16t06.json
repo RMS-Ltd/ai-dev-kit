@@ -1,0 +1,38 @@
+{
+  "contract": "FR-092",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 6,
+    "task_id": "E02:S16:T06",
+    "version_string": "v0.2.16.6+1"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "fr_br_doc", "kboard", "fbuboard"],
+    "stamps_appended_with_evidence": 1
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"]
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fbuboard.md"]
+    }
+  },
+  "stamp_evidence": {
+    "E02:S16:T06": "task doc Last updated 2026-05-30; COMPLETE v0.2.16.6+1"
+  }
+}

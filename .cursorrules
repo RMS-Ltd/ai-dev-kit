@@ -504,6 +504,7 @@ For each step, follow this pattern:
 - `UKW -u -a <target>` = Bookkeeping + assign priorities to target(s)
 - `UKW -p -a <target>` = Update + assign priorities only
 - `UKW -u -p -a <target>` = Same as comprehensive (redundant with no flags)
+- `UKW --rp` = **Standalone deep reprioritization** (`RePrioritise`) — evidence-based MoSCOW reorder on `kboard.md` + `fbuboard.md` with Step 9 rationale (see ADR-009; **not** combinable with `-u`/`-p`/`-a`)
 
 **Use Case Flags (limit scope when present):**
 - `-u` (bookkeeping): Restrict to bookkeeping sub-workflow only
@@ -523,7 +524,8 @@ For each step, follow this pattern:
 2. **DO** execute the Update Kanban Workflow using the **intelligent agent-driven execution pattern**
 3. **PARSE FLAGS FIRST:** Before Step 1, parse command flags to determine which operations to run:
    - If **no flags:** Run comprehensive UKW (all operations: bookkeeping + update priorities + assign priorities)
-   - If flags present: **Restrict scope** to specified sub-workflow(s):
+   - If **`--rp` present (standalone only):** Run `--rp` step matrix (Steps 1, 2, 6 deep reprioritization, 6.5, 7-9; skip 2.5 and 3-5 unless status mismatch blocks reprioritization). **Do not** combine `--rp` with `-u`, `-p`, or `-a`.
+   - Else if flags present: **Restrict scope** to specified sub-workflow(s):
      - `-u` only: Bookkeeping (Steps 1-5, 7-9, skip Step 6 MoSCOW)
      - `-p` only: Step 6 update MoSCOW priorities
      - `-a <target>` only: Step 6 assign priorities to target(s)
@@ -556,11 +558,12 @@ For each step, follow this pattern:
 **The 9 Steps (Bottom-Up Approach) - Conditional Execution Based on Flags:**
 
 **Step Execution Matrix:**
+- **Deep reprioritization (`--rp` only):** Steps 1, 2, 6 (deep MoSCOW on kboard + fbuboard), 6.5, 7-9; skip 2.5 and 3-5; Step 9 **must** include `## Reprioritization rationale` (evidence category per moved row). **Forbidden** in `rw_step_7` context (ADR-009).
 - **Comprehensive (no flags):** All steps including Step 2.5 (gap discovery), all operations
 - **Bookkeeping (`-u` only):** Steps 1-5, 7-9 (skip Step 2.5, skip Step 6 MoSCOW)
 - **Update Priorities (`-p` only):** Step 6 only (update MoSCOW priorities)
 - **Assign Priorities (`-a <target>` only):** Step 6 only (assign priorities to target tasks)
-- **Combined flags:** Run specified sub-workflows only
+- **Combined flags:** Run specified sub-workflows only (`--rp` is **not** a combine flag)
 
 1. **Identify Perpetual UKW Task (Wiring Step)** - **MANDATORY FIRST STEP (always runs):** Discover and wire UKW to the project's perpetual UKW task (required for comprehensive run and for RW attribution):
    - Search all task documents for `perpetual_task: true` or `Task Type: Perpetual Maintenance`

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Workflow initiation cheatsheet
 
-**Last verified against:** 2026-05-30 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`)
+**Last verified against:** 2026-05-30 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` per ADR-009)
 
 > **Agent source of truth:** If this cheatsheet and [`.cursorrules`](../../.cursorrules) or [`.claude/commands/`](../../.claude/commands/) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
@@ -62,6 +62,7 @@ housekeeping_policy: keep
 | `UKW -a E02:S16:T15` | Assign priorities to target(s) only — **not** drift repair |
 | `UKW -u -p`, `UKW -u -a <target>`, etc. | Combined sub-workflows per flag matrix |
 | `UKW -ad <targets>` | **Address Drift** — targeted project-state kanban reconciliation — **planned** |
+| `UKW --rp` | **Deep reprioritization** (standalone) — intent/dependency/blocker/impact analysis on kboard + fbuboard; emits rationale ([ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)) |
 
 **Flag disambiguation (easy to confuse):**
 
@@ -70,6 +71,7 @@ housekeeping_policy: keep
 | `-d` | **RW** | Docs-only **release** |
 | `-a` | **UKW** | Assign **priorities** to targets |
 | `-ad` | **UKW** (planned) | **Address** kanban **d**rift vs project state |
+| `--rp` | **UKW** | **RePrioritise** — standalone deep MoSCOW reorder (not `RW -d`, not `UKW -a`; distinct from `UKW -p`) |
 
 **`-a` target syntax:** single task `E02:S16:T15`; multiple `E02:S16:T13,E02:S16:T14`; range `E02:S16:T13-E02:S16:T15`; story `E02:S16`; epic `E02`; all unprioritized `all` or `*`.
 
@@ -140,6 +142,7 @@ housekeeping_policy: keep
 | `UKW` → `RW` | Global kanban sync then commit |
 | `CMW` → `RW` | Changelog maintenance then commit |
 | `UKW -ad kboard,fbuboard` → `RW` | Targeted drift repair (**planned**) |
+| `UKW --rp` → `RW` | Periodic priority realignment then commit (perpetual UKW task attribution) |
 
 **UKW → RW / CMW → RW context:** RW Step 2 detects prior workflow and attributes BUILD to the wired perpetual task (UKW or CMW).
 

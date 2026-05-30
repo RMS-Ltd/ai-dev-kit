@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-30 (UKW — archived FR-046, FR-011, FR-049, FR-074)
+**Last Updated:** 2026-05-30 (RW E02:S16:T06 — FR-085 IMPLEMENTED)
 **Version:** v0.4.19.9+1
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-085 | FR | UKW optional `--rp` deep reprioritization — ADR-009, agent SoT, cheatsheet (**E02:S16:T06**) | 2026-05-30T12:54:46Z | v0.2.16.6+1 | RW |
 | FR-046 | FR | RW SemVer tag when task_touch enabled — dual-mode closure (**E05:S01:T46**) | 2026-05-30T08:55:34Z | v0.5.1.46+7 | RW |
 | FR-074 | FR | Kanban intake atomic KG-R2 & semantic KG-R6 (**E05:S01:T74**) | 2026-05-29T00:00:00Z | v0.5.1.74+3 | RW |
 | FR-049 | FR | Enhanced kanban-completed timestamps + recent tasks dashboard (**E05:S01:T49**) | 2026-03-11T16:20:00Z | v0.5.1.49+2 | RW |

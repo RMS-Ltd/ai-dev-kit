@@ -14,7 +14,8 @@ housekeeping_policy: keep
 **Submitted By:** User feedback / UKW capability hardening  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** OPEN
+**Status:** IMPLEMENTED  
+**Version Anchor:** v0.2.16.6+1
 
 **Implementing Task:** [E02:S16:T06](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
 **Historical implementing task:** E06:S07:T116 (legacy task doc removed after re-housing publication)
@@ -37,17 +38,17 @@ Current UKW synchronization focuses on structural reconciliation and board hygie
 
 ### Functional Requirements
 
-- [ ] **FR-085-F1:** Add optional UKW flag `--rp` that enables reprioritization behavior.
-- [ ] **FR-085-F2:** In `--rp` mode, analyze open tasks and FR/BR/UXR records to infer current intent and delivery criticality.
-- [ ] **FR-085-F3:** In `--rp` mode, identify dependency chains and blocker relationships and use them in prioritization decisions.
-- [ ] **FR-085-F4:** Produce deterministic reprioritization updates for `kboard.md` and `fbuboard.md` without duplicate or unstable ordering churn.
-- [ ] **FR-085-F5:** Emit an audit summary of why priority changes were made (intent/dependency/blocker evidence per moved item).
+- [x] **FR-085-F1:** Add optional UKW flag `--rp` that enables reprioritization behavior.
+- [x] **FR-085-F2:** In `--rp` mode, analyze open tasks and FR/BR/UXR records to infer current intent and delivery criticality.
+- [x] **FR-085-F3:** In `--rp` mode, identify dependency chains and blocker relationships and use them in prioritization decisions.
+- [x] **FR-085-F4:** Produce deterministic reprioritization updates for `kboard.md` and `fbuboard.md` without duplicate or unstable ordering churn.
+- [x] **FR-085-F5:** Emit an audit summary of why priority changes were made (intent/dependency/blocker evidence per moved item).
 
 ### Non-Functional Requirements
 
-- [ ] **FR-085-NF1:** Reprioritization must be idempotent when inputs are unchanged.
-- [ ] **FR-085-NF2:** `--rp` must remain optional and must not alter behavior of default UKW runs.
-- [ ] **FR-085-NF3:** Runtime cost and analysis depth must be bounded and observable in logs.
+- [x] **FR-085-NF1:** Reprioritization must be idempotent when inputs are unchanged.
+- [x] **FR-085-NF2:** `--rp` must remain optional and must not alter behavior of default UKW runs.
+- [x] **FR-085-NF3:** Runtime cost and analysis depth must be bounded and observable in logs.
 
 ---
 
@@ -82,6 +83,8 @@ Current UKW synchronization focuses on structural reconciliation and board hygie
 
 ## Related
 
+- [IPP-E02S16T06](../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp`)
+- [ADR-009](../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) — governance contract (v0.2.16.6+1)
 - [FR-023](./FR-023-update-kanban-workflow-ukw.md)
 - [FR-050](./FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
 - [FR-076](./FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)

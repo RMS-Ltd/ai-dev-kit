@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.15+1] - 30-05-26
+## [0.2.16.6+1] - 30-05-26
 
-E02:S16:T15 (UXR-015) — Change implemented: workflow initiation cheatsheet in `docs/guides/` with IPP and discoverability links. SemVer **v0.4.835+1**.
+E02:S16:T06 (FR-085) — Change implemented: standalone UKW `--rp` deep reprioritization (ADR-009, agent SoT, cheatsheet, IPP). SemVer **v0.4.836+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.15+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+1.md)
 
 ---
 

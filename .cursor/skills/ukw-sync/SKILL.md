@@ -5,6 +5,17 @@ description: Update kanban boards with status inference and MoSCOW prioritizatio
 
 ## Update Kanban Workflow Execution
 
+### Deep reprioritization (`UKW --rp`, FR-085 / ADR-009)
+
+When the user invokes **`UKW --rp`** (standalone only):
+
+1. Run Steps 1, 2, 6 (deep MoSCOW on `kboard.md` + `fbuboard.md`), 6.5, 7–9 per agent execution guide — skip 2.5 and 3–5 unless status mismatch blocks reprioritization.
+2. Classify each moved row with evidence: **intent**, **dependencies**, **blockers**, or **impact**.
+3. Emit `## Reprioritization rationale` in Step 9 summary (one line per moved row; `No priority changes.` if idempotent re-run).
+4. **Do not** batch-rewrite row `Last modified` stamps (FR-097). **Do not** use `--rp` during RW Step 7.
+
+See [ADR-009](../../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) and [workflow initiation cheatsheet](../../../docs/guides/workflow-initiation-cheatsheet.md).
+
 ### FBU temporal sync scope (FR-050)
 
 Run **FBU substeps** on **comprehensive** (`UKW` no flags) and **bookkeeping** (`UKW -u`) paths only — not on `-p` / `-a` priority-only runs:

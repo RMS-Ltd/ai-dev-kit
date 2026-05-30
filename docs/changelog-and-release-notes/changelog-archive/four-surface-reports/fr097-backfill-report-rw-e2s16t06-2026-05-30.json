@@ -1,0 +1,40 @@
+{
+  "contract": "FR-097",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 6,
+    "task_id": "E02:S16:T06",
+    "version_string": "v0.2.16.6+1"
+  },
+  "summary": "RW Step 7: T06 COMPLETE row stamp from task doc; FR-085 terminal prune from active fbuboard",
+  "boards": [
+    {
+      "board": "docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "results": [
+        {
+          "row_id": "E02:S16:T06",
+          "old_stamp": "2026-04-26 00:00 UTC",
+          "new_stamp": "2026-05-30 12:54 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md"
+        }
+      ]
+    },
+    {
+      "board": "docs/project-management/kanban/fbuboard.md",
+      "dry_run": false,
+      "results": [
+        {
+          "row_id": "FR-085",
+          "old_stamp": "2026-04-26 00:00 UTC",
+          "new_stamp": null,
+          "source": "terminal",
+          "detail": "FR-085 IMPLEMENTED v0.2.16.6+1; archived to fbu-completed.md"
+        }
+      ]
+    }
+  ]
+}

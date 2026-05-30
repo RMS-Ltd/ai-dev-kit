@@ -1,7 +1,15 @@
 name: Update Kanban Workflow
 version: 1.2.0
 type: kanban_update
-description: Bottom-up kanban documentation synchronization workflow to prevent status drift (triggered by UKW). REQUIRES AGENTIC INTELLIGENCE for synthesis, narrative updates, prioritization, and status inference. FR-050 — explicit FBU temporal sync (fbuboard cleanup, fbu-completed timestamps, 20-recent dashboard).
+description: Bottom-up kanban documentation synchronization workflow to prevent status drift (triggered by UKW). REQUIRES AGENTIC INTELLIGENCE for synthesis, narrative updates, prioritization, and status inference. FR-050 — explicit FBU temporal sync (fbuboard cleanup, fbu-completed timestamps, 20-recent dashboard). FR-085 — optional standalone `UKW --rp` deep reprioritization (ADR-009; agent flag matrix in .cursorrules / ukw.md).
+
+invocation_flags:
+  comprehensive: "UKW (no flags)"
+  bookkeeping: "UKW -u"
+  update_priorities: "UKW -p"
+  assign_priorities: "UKW -a <target>"
+  deep_reprioritization: "UKW --rp"
+  deep_reprioritization_adr: docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md
 
 config:
   kanban_root: docs/project-management/kanban
