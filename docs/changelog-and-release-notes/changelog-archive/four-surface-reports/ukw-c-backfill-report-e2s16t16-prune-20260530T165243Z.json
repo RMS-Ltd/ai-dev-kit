@@ -1,0 +1,8 @@
+{
+  "report_type": "ukw_c_archive_completed",
+  "release_scope": "UKW -c",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E02:S16:T16": { "allowed": true, "reason": "UKW -c terminal row removal; ledger entry already in kanban-completed.md (v0.2.16.16+2)" }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "report_type": "ukw_c_archive_completed",
+  "invocation": "UKW -c",
+  "evidence_mode": "structure_prune",
+  "summary": {
+    "kboard_archived": 0,
+    "kboard_pruned": 1,
+    "fbuboard_archived": 0,
+    "fbuboard_pruned": 0,
+    "skipped": 0,
+    "already_in_ledger": 2
+  },
+  "archived": {
+    "kboard": [],
+    "fbuboard": []
+  },
+  "pruned": {
+    "kboard": ["E02:S16:T16"],
+    "fbuboard": []
+  },
+  "already_in_ledger": ["E02:S16:T16", "FR-102"],
+  "ledger_before_removal": true,
+  "timestamp": "2026-05-30T16:52:43Z"
+}

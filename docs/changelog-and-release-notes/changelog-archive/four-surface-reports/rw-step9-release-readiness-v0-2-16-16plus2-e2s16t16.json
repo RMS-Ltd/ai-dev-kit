@@ -18,7 +18,7 @@
     "gates_total": 9,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-05-30 16:19 UTC",
+  "timestamp_utc": "2026-05-30 16:54 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -99,7 +99,7 @@
         },
         "stamp_evidence_aggregate": {
           "stamps_appended_with_evidence": 0,
-          "stamps_preserved_existing": 77,
+          "stamps_preserved_existing": 75,
           "stamps_skipped_no_evidence": 0
         }
       },

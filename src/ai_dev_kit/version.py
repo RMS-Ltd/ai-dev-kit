@@ -9,8 +9,8 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
 VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
-VERSION_TASK = 16     # Task 16 — UKW archive completed rows (FR-102)
-VERSION_BUILD = 3     # Build 3: UKW -c ledger + active-board prune (post v0.2.16.16+2)
+VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban synchronization and hygiene (Perpetual)
+VERSION_BUILD = 21    # Build 21: UKW -c kboard prune (E02:S16:T16) post incomplete RW v0.2.16.16+3
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.16+3
+# Current: 0.2.16.4+21

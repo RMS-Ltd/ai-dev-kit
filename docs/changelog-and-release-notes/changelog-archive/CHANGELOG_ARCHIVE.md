@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.2.16.16+3] - 30-05-26
+
+E02:S16:T16 — UKW `-c` post-ship hygiene (incomplete kboard prune). SemVer **v0.4.840+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.16+3.md)
+---
 ## [0.2.16.3+0] - 30-05-26
 
 E02:S16:T03 — IPP Tranche 2 (BR-067 Wave A). SemVer **v0.4.839+0**.

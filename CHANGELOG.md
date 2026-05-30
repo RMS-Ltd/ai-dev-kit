@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.16+3] - 30-05-26
+## [0.2.16.4+21] - 30-05-26
 
-E02:S16:T16 — UKW `-c` post-ship hygiene: completed ledgers + active-board prune for FR-102 (functional **v0.2.16.16+2**). SemVer **v0.4.840+3**.
+E02:S16:T04 — UKW `-c` kboard prune: remove active **E02:S16:T16** row (ledger already archived). SemVer **v0.4.840+21**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.16+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+21.md)
 
 ---
