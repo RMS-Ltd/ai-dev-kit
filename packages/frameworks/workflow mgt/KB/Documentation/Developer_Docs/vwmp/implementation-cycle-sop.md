@@ -171,6 +171,7 @@ This SoP defines a **mandatory** implementation cycle when a project adopts the 
 
 - Run the Release Workflow (trigger: e.g. `RW E5S01T01` / `RW E5:S01:T01` in the same message — **FR-060**)
 - RW handles: version bump, changelog creation/update, README/Kanban updates, staging, validation, commit, tag, push (per project RW definition)
+- **Docs-only on existing E/S/T (+0):** When policy requires BUILD **+0** on an anchor whose task doc already exists, use `RW -d E:S:T --art --doc-policy-zero` and ensure Step 10 passes `--doc-policy-zero` to `validate_version_bump.py` (see [BR-067](../../../../../../docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 **Validation:**
 

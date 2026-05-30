@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.16+2] - 30-05-26
+## [0.2.16.3+0] - 30-05-26
 
-E02:S16:T16 (FR-102) — UKW `-c` archive completed: ADR-010, agent SoT, `archive_completed.py` helpers, ledger-before-prune contract. SemVer **v0.4.839+2**.
+E02:S16:T03 — IPP Tranche 2 (BR-067 Wave A): BUILD +0/+1 policy table, RW `--doc-policy-zero` docs, legacy IPW redirect, kanban sync. Docs-only **`--doc-policy-zero`**. SemVer **v0.4.839+0**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.16+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+0.md)
 
 ---

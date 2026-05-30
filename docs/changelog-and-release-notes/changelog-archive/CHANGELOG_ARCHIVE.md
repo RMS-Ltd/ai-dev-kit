@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.2.16.16+2] - 30-05-26
+
+E02:S16:T16 (FR-102) — UKW `-c` archive completed: ADR-010, agent SoT, `archive_completed.py` helpers, ledger-before-prune contract. SemVer **v0.4.839+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.16+2.md)
+---
 ## [0.7.1.11+1] - 29-05-26
 
 E7:S01:T11 — FR-101 governance intake. SemVer **v0.4.815+1**.

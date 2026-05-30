@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-30 (v0.2.16.16+2 – Kanban documentation setup)
-**Version:** v0.2.16.16+2
+**Last updated:** 2026-05-30 (T03 RW **v0.2.16.3+0** — BR-067 Wave A policy/docs)
+**Version:** v0.2.16.3+0
 **Code:** E2S16
 
 ---
@@ -32,7 +32,7 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [ ] **E02:S16:T02 – Inventory and classify workflow-related perpetual tasks** - IN PROGRESS (HIGH, produce exhaustive inventory and migration disposition for all workflow perpetual anchors and references)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md`](Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E02:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual anchor; Wave 2/3 COMPLETE; RW v0.2.16.3+6: IPP vs ICW packaging SoT + gate/policy alignment; AC4 PARTIAL pending T02 inventory)  
+- [ ] **E02:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual anchor; Wave 2/3 COMPLETE; Tranche 2 **v0.2.16.3+0** BR-067 policy/docs; AC4 PARTIAL pending T02 inventory)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW attribution anchor; last RW **v0.2.16.4+19** — Step 9 readiness report alignment)  

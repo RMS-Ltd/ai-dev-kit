@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Bug Report BR-067: RW first doc-only release defaults to BUILD+1 instead of BUILD+0 (doc-init policy)
 
-**Status:** OPEN  
+**Status:** IN PROGRESS (mitigation + policy/docs alignment shipped; pending maintainer verification before RESOLVED)
 **Priority:** HIGH  
 **Severity:** HIGH — breaks canonical **doc-init (+0)** semantics for task/story/intake drops; produces incorrect forensic/version signal for documentation-first work.  
 **Created:** 2026-04-19  
-**Last updated:** 2026-04-19  
-**Version:** v0.6.7.103+0 (mitigation shipped 2026-04-19)  
+**Last updated:** 2026-05-30 (IPP E02:S16:T03 Tranche 2 — BUILD +0/+1 policy table, RW docs, BR-010 regression checklist)  
+**Version:** v0.2.16.3+0 (released **2026-05-30**; mitigation + policy/docs alignment shipped; pending maintainer verification before RESOLVED)
 **Code:** BR-067  
 
 **Implementing Task:** [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
@@ -55,12 +55,48 @@ This is an **architectural / policy enforcement gap**, not merely a one-off typo
 
 ---
 
+## BUILD +0 / +1 policy table (BR-067 AC1)
+
+| Scenario | Task doc exists? | Change set | Default BUILD | Explicit override | Validator flags |
+| -------- | ---------------- | ---------- | ------------- | ----------------- | --------------- |
+| **First-time E/S/T doc** (abstract space / intake) | No (created in this commit) | Docs-only | **+0** | — | Auto doc-init detection |
+| **First functional work** on new task | Yes (from prior +0) | Any functional change | **+1** | — | Normal new-task path |
+| **Same-task docs-only** on existing E/S/T | Yes | Docs-only only | **+1** (default RW Step 2) | **`--doc-policy-zero`** with **`--requested` + `--art`** → **+0** | `validate_version_bump.py --strict --requested E:S:T --art --doc-policy-zero` |
+| **Same-task functional** release | Yes | Code or mixed | **BUILD + 1** | — | Perpetual: must exceed HEAD BUILD ([BR-075](./BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
+| **Batch story + task creation** (BR-010 class) | Task doc created same commit as story | Mixed docs | **+1** (not +0) | — | Doc-init blocked when task doc already exists in tree |
+
+**RW invocation patterns:**
+
+- **Doc-init (+0, new task):** `RW -d E02:S16:Txx --art` when task doc is first created and change set is docs-only.
+- **Doc-only on existing anchor (+0):** `RW -d E02:S16:Txx --art --doc-policy-zero` — Step 2 sets BUILD=0; Step 10 passes `--doc-policy-zero` to `validate_version_bump.py`.
+- **Functional (+1+):** `RW E02:S16:Txx` (or `--art` when adopting anchor) — normal BUILD increment.
+
+See [workflow-initiation-cheatsheet.md](../../../guides/workflow-initiation-cheatsheet.md) §2 and [release-workflow-agent-execution.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) Step 2 / Step 10.
+
+---
+
 ## Acceptance Criteria
 
-- [ ] Policy-aligned rule set: **when `+0` is mandatory, optional, or forbidden** for RW doc-only drops (linked to versioning policy).
-- [x] **`validate_version_bump.py`** — **`--doc-policy-zero`** (with **`--requested`**, **`--art`**, docs-only) + unit tests; full “when +0” policy table still **TODO** (see first criterion).
-- [ ] RW agent docs describe **how to run a doc-init release** vs **functional +1** release (including **`RW -d`**).
-- [ ] No regression against BR-010 scenarios (batch story/task creation).
+- [x] Policy-aligned rule set: **when `+0` is mandatory, optional, or forbidden** for RW doc-only drops (table above; linked to versioning policy).
+- [x] **`validate_version_bump.py`** — **`--doc-policy-zero`** (with **`--requested`**, **`--art`**, docs-only) + unit tests.
+- [x] RW agent docs describe **how to run a doc-init release** vs **functional +1** release (including **`RW -d`** and **`--doc-policy-zero`**).
+- [x] No regression against BR-010 scenarios (batch story/task creation) — see regression checklist below.
+
+---
+
+## BR-010 regression checklist (BR-067 AC4)
+
+Re-verify after any change to doc-init detection or `--doc-policy-zero`:
+
+| # | Scenario | Expected BUILD | Must not |
+| - | -------- | -------------- | -------- |
+| R1 | Story file + separate task file created in same commit; first functional RW | **+1** | Emit +0 |
+| R2 | Task doc exists from prior release; docs-only follow-up without `--doc-policy-zero` | **+1** (increment) | Silently accept +0 |
+| R3 | Task doc exists; docs-only with `RW -d … --art --doc-policy-zero` | **+0** | Require +1 |
+| R4 | New task doc only (no prior version); docs-only intake | **+0** | Require +1 |
+| R5 | Perpetual same-task release (E2:S16:T03/T04) | **BUILD > HEAD** | Unchanged BUILD ([BR-075](./BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
+
+**Test command:** `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x`
 
 ---
 

@@ -9,8 +9,8 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
 VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
-VERSION_TASK = 16     # Task 16 — UKW archive completed rows (FR-102)
-VERSION_BUILD = 2     # Build 2: UKW -c contract (ADR-010, agents, helpers, prune gating)
+VERSION_TASK = 3      # Task 3 — Workflow maintenance (Perpetual); E2:S16:T03
+VERSION_BUILD = 0     # Build 0: IPP Tranche 2 docs-only (BR-067 Wave A; --doc-policy-zero)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.16+2
+# Current: 0.2.16.3+0

@@ -13,7 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-20 (RW v0.2.16.3+6: IPP vs ICW governance — `dev-kit-ipw-ipp-vs-icw-artifacts`, AGENTS / policy / FR-042 §8 / `.cursorrules` / framework ipw AGENTS)  
+**Last updated:** 2026-05-30 (RW **v0.2.16.3+0** — IPP Tranche 2 BR-067 Wave A; `--doc-policy-zero` docs-only)  
+**Version anchor:** v0.2.16.3+0
 **Code:** E02S16T03
 **Task Type:** Perpetual Maintenance
 
@@ -53,7 +54,7 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 - [x] **AC2:** Migration/hardening activities remain explicitly in scope for `E02:S16:T03`, without narrowing the task to migration/hardening only. *(Wave 3: guardrails explicitly include migration/hardening in scope; no narrowing occurred; Deliverable section covers re-housing, reference updates, and guardrails.)*
 - [x] **AC3:** `E02:S16:T04` is documented as a kanban-focused operational lane under the broader workflow-maintenance model. *(Wave 2: T04 doc updated with cross-links and perpetual marker; T03/T04 boundary documented in both task docs and Story-016.)*
 - [~] **AC4: PARTIAL** — Policy/validator and reference updates preserve deterministic routing and avoid proliferating additional perpetual maintenance tasks without clear ownership boundaries. *(Wave 3: guardrail implementation and versioning policy updates are COMPLETE. Exhaustive reference migration across all docs/boards is BLOCKED on T02 completion; inventory/disposition not yet available. See T02 dependency.)*
-- [x] **AC5:** Validation passes for updated docs and workflow guardrail behavior. *(14/14 tests pass after fixture fixes; validator `--strict --requested E02:S16:T03 --art` exits 0; evidence recorded in Verification Evidence section below.)*
+- [x] **AC5:** Validation passes for updated docs and workflow guardrail behavior. *(15/15 tests pass; validator `--strict --requested E02:S16:T03 --art` exits 0 when BUILD incremented; evidence in Verification Evidence below.)*
 
 ---
 
@@ -69,13 +70,20 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 - Numbering guardrail: `T1xx` hard-fails without `Historical Anchor:` marker.
 - Marker guardrail: warn when Story 016 lanes lack perpetual marker.
 - **Implementation:** `validate_version_bump.py` lines 85–129 (`validate_perpetual_guardrails`).
-- **Evidence:** `pytest test_validate_version_bump.py -x` passes (14/14) after fixture fixes.
+- **Evidence:** `pytest test_validate_version_bump.py -x` passes (15/15) after fixture fixes.
+
+### Tranche 2 — BR-067 Wave A (2026-05-30) ✅
+- **Policy table:** BUILD +0/+1/`--doc-policy-zero` rules published in [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md).
+- **RW docs:** `release-workflow-agent-execution.md` Step 2 (A.1.1) and Step 10 document `RW -d … --doc-policy-zero` path.
+- **Adopter SoP:** `implementation-cycle-sop.md` Step 5 cross-links BR-067.
+- **Legacy IPW:** `IPW-E6S07T103` host-task and reference links corrected to Epic-2/Story-016 T03.
+- **BR-010 regression checklist:** Added to BR-067 AC4 verification section.
 
 ### AC5 — Validator Regression Evidence
 - **Command:** `python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --strict --requested E02:S16:T03 --art`
 - **Result:** Exit 0, version bump logic validated.
 - **Test command:** `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x`
-- **Test result:** 14 passed, 0 failed.
+- **Test result:** 15 passed, 0 failed (2026-05-30).
 
 ---
 
