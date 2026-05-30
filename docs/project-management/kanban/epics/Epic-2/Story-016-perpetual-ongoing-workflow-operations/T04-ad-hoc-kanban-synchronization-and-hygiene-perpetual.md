@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-05-30 (UKW comprehensive — prune COMPLETE tasks from kboard/fbuboard; archive FR-046/011/049/074)  
-**Version Anchor:** v0.2.16.4+16  
+**Last updated:** 2026-05-30 (v0.2.16.4+17 — RW UKW attribution: comprehensive kanban sync release)
+**Version Anchor:** v0.2.16.4+17
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 

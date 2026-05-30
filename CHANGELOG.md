@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+17] - 30-05-26
+
+E2:S16:T04 (perpetual UKW) — Comprehensive kanban sync: prune COMPLETE tasks and terminal FBUs from active boards. SemVer **v0.4.829+17**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+17.md)
+
+---
+
 ## [0.2.15.8+3] - 30-05-26
 
 E02:S15:T08 (FR-097) — Stamp authority hardening: remove normalize script, pre-commit guard, threshold 3, backfill, git-exempt Gate 8. SemVer **v0.4.828+3**.
