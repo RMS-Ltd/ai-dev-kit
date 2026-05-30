@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-02-26  
 **Submitted By:** XOforge (contributing to AI Dev Kit)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS  
+**Status:** IMPLEMENTED  
 **Implementing Task:** [E5:S01:T46](../epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
 **GitHub Issue:** [#19](https://github.com/RMS-Ltd/ai-dev-kit/issues/19)
 
@@ -69,19 +69,19 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 
 ### Functional Requirements
 
-- [ ] **FR-046:R01** – RW and validators detect **dual-version mode** and enforce `semver_mapping_strategy: task_touch` (hard-fail otherwise).
-- [ ] **FR-046:R02** – In dual-version mode, RW Step 11:
+- [x] **FR-046:R01** – RW and validators detect **dual-version mode** and enforce `semver_mapping_strategy: task_touch` (hard-fail otherwise).
+- [x] **FR-046:R02** – In dual-version mode, RW Step 11:
   - Calls the task-touch SemVer converter (e.g. `get_semver_task_touch(include_build=False)`).
   - Creates a Git tag `v\{semver\}` (e.g. `v0.1.22`) pointing to the release commit.
 
-- [ ] **FR-046:R03** – RW Step 11 creates internal tag `v{RC.EPIC.STORY.TASK+BUILD}` on the same commit for traceability (unless explicitly disabled by config), while SemVer tag remains the **primary external tag**.
-- [ ] **FR-046:R04** – `create_github_release.py` (or equivalent tooling) uses the SemVer tag as the primary release name and includes the internal version in the body/metadata.
-- [ ] **FR-046:R05** – Documentation (RW execution guide, `.cursorrules` RW trigger section) is updated to reflect dual-mode policy: task-touch is required.
+- [x] **FR-046:R03** – RW Step 11 creates internal tag `v{RC.EPIC.STORY.TASK+BUILD}` on the same commit for traceability (unless explicitly disabled by config), while SemVer tag remains the **primary external tag**.
+- [x] **FR-046:R04** – `create_github_release.py` (or equivalent tooling) uses the SemVer tag as the primary release name and includes the internal version in the body/metadata.
+- [x] **FR-046:R05** – Documentation (RW execution guide, `.cursorrules` RW trigger section) is updated to reflect dual-mode policy: task-touch is required.
 
 ### Non-Functional Requirements
 
-- [ ] **FR-046:NF01** – **Compatibility:** Non-dual modes preserve explicit strategy behaviour (SemVer-only, Kanban-only, or internal-primary paths), but dual mode always requires task-touch.
-- [ ] **FR-046:NF02** – **Traceability:** Internal version remains discoverable from the SemVer tag (e.g. included in release notes, optional internal tag).
+- [x] **FR-046:NF01** – **Compatibility:** Non-dual modes preserve explicit strategy behaviour (SemVer-only, Kanban-only, or internal-primary paths), but dual mode always requires task-touch.
+- [x] **FR-046:NF02** – **Traceability:** Internal version remains discoverable from the SemVer tag (e.g. included in release notes, optional internal tag).
 
 ---
 
@@ -131,14 +131,14 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** In dual-version mode, RW Step 11 creates SemVer tags (`vX.Y.Z`, no `+BUILD` in the tag name) as the primary tag instead of internal version tags.
-- [ ] **AC2:** Validation and tag creation are tested for:
+- [x] **AC1:** In dual-version mode, RW Step 11 creates SemVer tags (`vX.Y.Z`, no `+BUILD` in the tag name) as the primary tag instead of internal version tags.
+- [x] **AC2:** Validation and tag creation are tested for:
   - dual-version mode + `task_touch` (pass),
   - dual-version mode + non-task-touch (deterministic fail),
   - non-dual compatibility paths (unchanged behavior).
 
-- [ ] **AC3:** GitHub releases and package versions align on SemVer in dual-version mode; release title/tag uses SemVer while release body includes internal version for traceability.
-- [ ] **AC4:** Documentation clearly explains the change and how to configure it.
+- [x] **AC3:** GitHub releases and package versions align on SemVer in dual-version mode; release title/tag uses SemVer while release body includes internal version for traceability.
+- [x] **AC4:** Documentation clearly explains the change and how to configure it.
 
 ---
 
@@ -204,13 +204,16 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 
 ### Verification Evidence
 
-- `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_fr046_rw_tagging.py" "packages/frameworks/workflow mgt/scripts/version/test_fr046_comprehensive.py" "packages/frameworks/workflow mgt/scripts/version/test_task_touch_mapping.py" -q` → passed (`22 passed`).
-- `python "packages/frameworks/workflow mgt/scripts/validation/validate_semver_tag_alignment.py"` → passed (`SemVer tag alignment OK`).
-- `python -m pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_branch_context.py" -q` → **7 passed** (dual invariant, legacy, `semver_only`, `kanban_only`).
+- Closure wave IPP: [`IPP-E5S01T46-fr046-closure-wave.md`](../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md) §7 (requirement-to-evidence matrix).
+- `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_fr046_rw_tagging.py" "packages/frameworks/workflow mgt/scripts/version/test_fr046_comprehensive.py" "packages/frameworks/workflow mgt/scripts/version/test_task_touch_mapping.py" -q` → **24 passed** (2026-05-29).
+- `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_create_github_release_parsing.py" -q` → **7 passed**.
+- `python "packages/frameworks/workflow mgt/scripts/validation/validate_semver_tag_alignment.py"` → **✅ OK**.
+- `python -m pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_branch_context.py" -q` → **7 passed**.
+- **Live smoke:** commit `c01aa83` — `v0.4.822` + `v0.2.16.4+16` on same commit (dual-config RW).
 
 ### Latest release anchor
 
-- Released build: **v0.5.1.46+6** (SemVer: **v0.4.735+6**) with deterministic branch-context validation for dual mode + task-touch, installer defaults, docs, examples, and tests.
+- Closure release: **v0.5.1.46+7** (SemVer: **v0.4.823+7**) — FR-046 closure wave audit, doc parity, T07 supersession, kanban sync.
 
 ---
 

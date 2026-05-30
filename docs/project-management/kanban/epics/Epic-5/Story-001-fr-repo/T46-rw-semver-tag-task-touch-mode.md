@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 5, Story 1, Task 46: Dual-Version Mode Requires Task-Touch SemVer in RW
 
 **Task ID:** E5:S01:T46  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE (v0.5.1.46+7)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-02-26  
-**Last updated:** 2026-04-13 (v0.5.1.46+6 – branch validator enforces dual ⇒ task_touch; installer/examples/tests)  
-**Version:** v0.5.1.46+6  
+**Last updated:** 2026-05-29 (v0.5.1.46+7 – FR-046 closure wave: audit PASS, live smoke, COMPLETE)  
+**Version:** v0.5.1.46+7  
 **Code:** E5S01T46
 
 **Repository Pattern:** FR-046 = E5:S01:T46 (first build: v0.5.1.46+1)
@@ -43,6 +43,8 @@ This task:
 
 - **FR-046:** [`FR-046-rw-semver-tag-task-touch-mode.md`](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
 - **FR-045:** ADR-002 Task-Touch Derived Mapping (prerequisite).
+- **IPP (closure wave):** [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
+- **Related IPP:** [`IPW-E3S02T12-task-touch-semver-collision-hardening.md`](../../../../../implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md) (converter finalize — E3:S02:T12)
 - RW execution guide and `.cursorrules` RW trigger section.
 
 ---
@@ -104,6 +106,19 @@ This task:
 
 ## Verification Evidence
 
+### Closure wave audit (2026-05-29)
+
+Full matrix: [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md) §7.
+
+- `pytest test_validate_branch_context.py -q` → **7 passed** (RF1, RNF1, AC2)
+- `pytest test_fr046_rw_tagging.py test_fr046_comprehensive.py test_task_touch_mapping.py -q` → **24 passed** (RF2–RF3, AC2)
+- `pytest test_create_github_release_parsing.py -q` → **7 passed** (RF4, AC3 unit)
+- `validate_semver_tag_alignment.py` → **✅ OK** (RF2)
+- **Live smoke (AC1):** commit `c01aa83` — tags `v0.4.822` (SemVer primary) + `v0.2.16.4+16` (internal) on same commit (dual-config RW)
+- **E2:S13:T07:** superseded by this task (duplicate scope closed)
+
+### Prior builds (+2…+6)
+
 - `pytest`:
   - `packages/frameworks/workflow mgt/scripts/version/test_fr046_rw_tagging.py`
   - `packages/frameworks/workflow mgt/scripts/version/test_fr046_comprehensive.py`
@@ -118,5 +133,7 @@ This task:
 
 ## References
 
+- **IPP (closure):** [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
 - **FR Repo Story:** [`Story-001-fr-repo.md`](../Story-001-fr-repo.md)
 - **FR-046:** [`docs/project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
+- **Superseded duplicate:** [`E2:S13:T07`](../../Epic-2/Story-013-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)

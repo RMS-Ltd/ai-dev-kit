@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.1.46+7] - 30-05-26
+
+E5:S01:T46 (FR-046) — Closure wave: audit PASS, IPP, doc parity, T07 supersession, kanban sync. SemVer **v0.4.823+7**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.46+7.md)
+
+---
+
 ## [0.2.16.4+16] - 29-05-26
 
 E2:S16:T04 (perpetual UKW) — Kanban init: kboard/fbuboard bidirectional wiring; FBU task links; **FR-044** implementing task fix. SemVer **v0.4.822+16**.

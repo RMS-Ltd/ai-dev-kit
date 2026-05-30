@@ -4,25 +4,37 @@ This guide documents the implementation of FR-046, which updates Release Workflo
 
 ## Overview
 
-FR-046 enables RW to create SemVer tags (e.g., `v0.9.5`) as the primary external tag when task-touch mapping is enabled, while maintaining backward compatibility with the existing registry mode.
+FR-046 enables RW to create SemVer tags (e.g., `v0.9.5`) as the primary external tag when **dual-version mode** is active. In dual mode, **`semver_mapping_strategy: task_touch` is mandatory** — validators hard-fail if dual is paired with registry or any non-task-touch strategy.
+
+Non-dual repositories (SemVer-only, Kanban-only, legacy) may continue using registry or other configured strategies unchanged.
 
 ## Configuration
 
-### Enable Task-Touch Tagging
+### Dual-Version Mode (FR-046 policy)
 
-Add to `rw-config.yaml`:
+Projects using internal `RC.EPIC.STORY.TASK+BUILD` plus external SemVer **must** configure both:
 
 ```yaml
-# SemVer mapping strategy: "registry" (default) or "task_touch"
+versioning_mode: dual
 semver_mapping_strategy: task_touch
 ```
 
-### Default Behavior (Registry Mode)
+`validate_branch_context.py` enforces this invariant before RW mutates release files (FR-046:R01).
 
-If not specified, defaults to registry mode:
+### Task-Touch Without Dual Mode
+
+Single-track or SemVer-only projects may opt into task-touch when not in dual mode:
 
 ```yaml
-# This is the default - no changes needed for existing projects
+semver_mapping_strategy: task_touch
+```
+
+### Default Behavior (Non-Dual / Registry Mode)
+
+When `versioning_mode` is not `dual`, and `semver_mapping_strategy` is omitted, registry mode applies:
+
+```yaml
+# Default for non-dual projects — no change required
 semver_mapping_strategy: registry
 ```
 
@@ -244,10 +256,10 @@ python -c "from semver_converter import get_rw_tag_info; print(get_rw_tag_info('
 
 ## Backward Compatibility
 
-- **Default behavior unchanged**: Registry mode remains default
-- **Existing projects unaffected**: No action required
-- **Gradual adoption**: Projects can opt-in when ready
-- **Rollback possible**: Switch back to registry mode anytime
+- **Non-dual projects unchanged**: Registry mode remains default when not in dual mode
+- **Dual adopters**: Must use `task_touch`; dual + registry is rejected by validators
+- **Gradual adoption**: Opt into dual + task_touch when ready for internal+external versioning
+- **Rollback**: Leave dual mode (or switch strategy) only when not using dual-version policy
 
 ## Performance Impact
 
@@ -259,7 +271,7 @@ python -c "from semver_converter import get_rw_tag_info; print(get_rw_tag_info('
 ## Security Considerations
 
 - **No new permissions required**: Uses existing git/GitHub access
-- **Configuration validation**: Invalid strategies fall back to registry mode
+- **Configuration validation**: Dual mode with non-task-touch strategy fails fast (no silent fallback)
 - **Tag safety**: Existing tag checks prevent accidental overwrites
 
 ## Future Enhancements
