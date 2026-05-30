@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Task Type:** Discrete delivery (UKW sub-capability)  
 **Created:** 2026-05-30  
-**Last updated:** 2026-05-30 (**RW** **v0.2.16.16+2** — ✅ COMPLETE FR-102 UKW `-c`)  
-**Version Anchor:** v0.2.16.16+2  
+**Last updated:** 2026-05-30 (RW **v0.2.16.16+3** — UKW `-c` ledger + board prune)  
+**Version Anchor:** v0.2.16.16+2 (functional); **v0.2.16.16+3** (UKW `-c` hygiene)
 **Code:** E02S16T16
 
 **Upstream:** [FR-102 — UKW archive-completed use case](../../../fr-br/FR-102-ukw-archive-completed-board-rows.md)  

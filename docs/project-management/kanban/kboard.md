@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-30 (RW: E02:S16:T03 — BR-067 Wave A docs)
-**Version:** v0.2.16.3+0
+**Last Updated:** 2026-05-30 (RW -d: E02:S16:T16 — UKW -c archive prune)
+**Version:** v0.2.16.16+3
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -43,7 +43,7 @@ housekeeping_policy: keep
 
 - **E08:S03:T04** – BR-058: CI test workflow missing and pytest failures - 🟢 OPEN (LOW) | [Task](epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | Last modified: 2026-05-30 13:35 UTC
 
-*(E04:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). **E05:S01:T46**, **E04:S08:T07**, **E05:S01:T74** pruned this UKW — [kanban-completed.md](kanban-completed.md). FR-031 / FR-024 / FR-057 retired off active board — [fbu-completed.md](fbu-completed.md).)*
+*(E04:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). **E02:S16:T16** / **FR-102** archived **v0.2.16.16+3** — [kanban-completed.md](kanban-completed.md), [fbu-completed.md](fbu-completed.md). **E05:S01:T46**, **E04:S08:T07**, **E05:S01:T74** pruned prior UKW — [kanban-completed.md](kanban-completed.md). FR-031 / FR-024 / FR-057 retired off active board — [fbu-completed.md](fbu-completed.md).)*
 
 ### Ongoing (O) - Perpetual Tasks
 

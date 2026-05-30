@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-30 (RW E04:S19:T10 — BR-076 RESOLVED)
-**Version:** v0.4.19.10+2
+**Last Updated:** 2026-05-30 (UKW -c — FR-102)
+**Version:** v0.2.16.16+2
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-102 | FR | UKW archive completed (`UKW -c`) — ledger-before-prune (**E02:S16:T16**) | 2026-05-30T16:30:00Z | v0.2.16.16+2 | UKW Agent |
 | BR-076 | BR | E7:S00 must not host concrete tasks — abstract-only detasking (**E04:S19:T10**) | 2026-05-30T13:28:56Z | v0.4.19.10+2 (fix); RW -d v0.4.19.10+3 | RW |
 | FR-085 | FR | UKW optional `--rp` deep reprioritization — ADR-009, agent SoT, cheatsheet (**E02:S16:T06**) | 2026-05-30T12:54:46Z | v0.2.16.6+1 | RW |
 | FR-046 | FR | RW SemVer tag when task_touch enabled — dual-mode closure (**E05:S01:T46**) | 2026-05-30T08:55:34Z | v0.5.1.46+7 | RW |

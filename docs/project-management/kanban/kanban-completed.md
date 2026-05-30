@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-30 (RW E04:S19:T10 — BR-076)
-**Version:** v0.4.19.10+2
+**Last Updated:** 2026-05-30 (UKW -c — E02:S16:T16)
+**Version:** v0.2.16.16+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 2: Workflow Management (Story 16 — Perpetual workflow ops)**
+- **[E02:S16:T16](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)** — **FR-102**: UKW archive completed (`UKW -c`) — ADR-010, agent SoT, Option A prune gating.
+  **Completed:** `2026-05-30T16:30:00Z` | **Version:** `v0.2.16.16+2` | **Agent:** `UKW Agent` | [FR-102](fr-br/FR-102-ukw-archive-completed-board-rows.md) | [ADR-010](../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md) | [IPP-E02S16T16](../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 
 #### **Epic 4: Kanban Framework (Story 19 — Abstract governance)**
 - **[E04:S19:T10](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)** — **BR-076**: E7:S00 abstract-only detasking; historical UXR anchors; intake S00 ban.

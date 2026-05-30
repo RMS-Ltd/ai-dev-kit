@@ -157,10 +157,10 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 
 - [x] IPP §1–§7 complete; ADR-010 created
 - [x] Bidirectional T16 ↔ IPP links
-- [ ] V2: `UKW -c` run or helper-backed archival demo (post-release operator pass)
-- [ ] V4–V5 manual idempotency on first operator `UKW -c`
+- [x] V2: `UKW -c` proof — `E02:S16:T16` → [kanban-completed.md](../project-management/kanban/kanban-completed.md) then removed from [kboard.md](../project-management/kanban/kboard.md); `FR-102` → [fbu-completed.md](../project-management/kanban/fbu-completed.md) then removed from [fbuboard.md](../project-management/kanban/fbuboard.md) (2026-05-30T16:30:00Z)
+- [ ] V4–V5 manual idempotency re-run (second `UKW -c` expected no-op)
 - [x] V6 pytest for `archive_completed` helpers
-- [ ] T16 AC1–AC5 at `RW E02:S16:T16`
+- [x] T16 AC1–AC5 at `RW E02:S16:T16` (**v0.2.16.16+2**)
 
 ---
 

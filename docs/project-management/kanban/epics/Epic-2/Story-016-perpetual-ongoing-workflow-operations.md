@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-30 (T03 RW **v0.2.16.3+0** — BR-067 Wave A policy/docs)
-**Version:** v0.2.16.3+0
+**Last updated:** 2026-05-30 (T16 RW **v0.2.16.16+3** — UKW `-c` archive hygiene)
+**Version:** v0.2.16.16+3
 **Code:** E2S16
 
 ---
@@ -70,7 +70,7 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [x] **E02:S16:T15 – Workflow initiation cheatsheet (UXR-015)** - ✅ COMPLETE (v0.2.16.15+1) (HIGH, `docs/guides/workflow-initiation-cheatsheet.md`)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md`](Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) | [UXR-015](../../fr-br/UXR-015-workflow-initiation-cheatsheet.md) | [IPP](../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) | [Cheatsheet](../../../guides/workflow-initiation-cheatsheet.md)
 
-- [x] **E2:S16:T16 – UKW archive completed rows (`-c`) (FR-102)** ✅ COMPLETE (v0.2.16.16+2)  
+- [x] **E2:S16:T16 – UKW archive completed rows (`-c`) (FR-102)** ✅ COMPLETE (v0.2.16.16+2 functional; v0.2.16.16+3 UKW `-c` prune)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md`](Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) | [FR-102](../../fr-br/FR-102-ukw-archive-completed-board-rows.md) | [IPP](../../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md) | [ADR-010](../../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
 
 ---

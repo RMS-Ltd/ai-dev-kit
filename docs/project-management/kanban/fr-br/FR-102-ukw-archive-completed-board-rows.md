@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (FR intake)  
 **Priority:** HIGH  
 **Status:** IMPLEMENTED  
-**Version:** v0.2.16.16+2 (Internal) | v0.4.839+2 (SemVer)  
+**Version:** v0.2.16.16+2 (Internal functional) | v0.2.16.16+3 (UKW `-c` hygiene) | v0.4.840+3 (SemVer)
 **GitHub Issue:** [TBD]
 
 **Implementing Task:** [E02:S16:T16](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)

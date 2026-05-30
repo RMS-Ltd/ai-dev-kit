@@ -1,0 +1,10 @@
+{
+  "report_type": "ukw_c_archive_completed",
+  "release_scope": "E02:S16:T16",
+  "version": "v0.2.16.16+3",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E02:S16:T16": { "allowed": true, "reason": "UKW -c terminal row removal after kanban-completed ledger (v0.2.16.16+3)" },
+    "FR-102": { "allowed": true, "reason": "UKW -c terminal row removal after fbu-completed ledger (v0.2.16.16+3)" }
+  }
+}
