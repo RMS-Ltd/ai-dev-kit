@@ -115,16 +115,16 @@ Common patterns not surfaced in one maintainer-facing page:
 
 ## Recommendations
 
-- [ ] **R1 — Create cheatsheet:** Add `docs/guides/workflow-initiation-cheatsheet.md` — one-page scannable reference (tables + short “when to use” prose).
-- [ ] **R2 — Cheatsheet sections (minimum):**
+- [x] **R1 — Create cheatsheet:** Add `docs/guides/workflow-initiation-cheatsheet.md` — one-page scannable reference (tables + short “when to use” prose).
+- [x] **R2 — Cheatsheet sections (minimum):**
   - Quick decision tree (“I want to… → type…”)
   - Per-workflow table: trigger, flags, prerequisites, output/handoff
   - Common sequences (UKW→RW, CMW→RW, IPW→implement→RW)
   - Blocked-session messages (copy-paste recovery hints)
   - Links to canonical deep docs (`.cursorrules` section, slash commands, VWMP execution guides)
-- [ ] **R3 — Include planned `UKW -ad`:** Mark as **planned** (pending FR intake) so the cheatsheet is forward-compatible; update when FR ships.
-- [ ] **R4 — Wire from `docs/guides/README.md`:** Add to Key Documents; keep cheatsheet evergreen (not timeboxed).
-- [ ] **R5 — Agent surfacing:** Add one-line pointer from `CLAUDE.md` and/or AGENTS.md to the cheatsheet for human maintainers (agents keep using `.cursorrules` as SoT for behavior).
+- [x] **R3 — Include planned `UKW -ad`:** Mark as **planned** (pending FR intake) so the cheatsheet is forward-compatible; update when FR ships.
+- [x] **R4 — Wire from `docs/guides/README.md`:** Add to Key Documents; keep cheatsheet evergreen (not timeboxed).
+- [x] **R5 — Agent surfacing:** Add one-line pointer from `CLAUDE.md` and/or AGENTS.md to the cheatsheet for human maintainers (agents keep using `.cursorrules` as SoT for behavior).
 - [ ] **R6 — Optional follow-up:** Single-page PDF/export or Docusaurus sidebar entry under Guides (out of scope for v1 unless docs portal work is active).
 
 **Priority order:**
@@ -212,10 +212,10 @@ Package versions changed?      → PVW (or automatic at RW Step 2.5)
 
 ## Acceptance criteria (implementation)
 
-- [ ] **AC1:** `docs/guides/workflow-initiation-cheatsheet.md` exists with sections A–E (or equivalent) covering RW, UKW, IPW/ICW, CMW, PVW.
-- [ ] **AC2:** Each workflow lists prerequisites (plan mode, tool access) and post-run handoff (`RW` where applicable).
-- [ ] **AC3:** Flag expansions disambiguate `RW -d` vs planned `UKW -ad` vs `UKW -a`.
-- [ ] **AC4:** `docs/guides/README.md` links the cheatsheet under Key Documents.
+- [x] **AC1:** `docs/guides/workflow-initiation-cheatsheet.md` exists with sections A–E (or equivalent) covering RW, UKW, IPW/ICW, CMW, PVW.
+- [x] **AC2:** Each workflow lists prerequisites (plan mode, tool access) and post-run handoff (`RW` where applicable).
+- [x] **AC3:** Flag expansions disambiguate `RW -d` vs planned `UKW -ad` vs `UKW -a`.
+- [x] **AC4:** `docs/guides/README.md` links the cheatsheet under Key Documents.
 - [x] **AC5:** UXR ↔ implementing task bidirectional links and story checklist entry (after intake).
 
 ---

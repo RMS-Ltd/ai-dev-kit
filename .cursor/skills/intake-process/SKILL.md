@@ -49,6 +49,7 @@ Some projects align numbers (e.g. FR-047 → E5:S01:T47). **KG-R6:** This is **o
 
 ### Integration points
 
+- **Workflow triggers (after intake):** [`docs/guides/workflow-initiation-cheatsheet.md`](../../docs/guides/workflow-initiation-cheatsheet.md) — when to run **IPW** → implement → **RW**
 - **Kanban governance:** `packages/frameworks/kanban/policies/kanban-governance-policy.md` (**KG-R2**, **KG-R6**)  
 - **Guide:** `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`  
 - **UKW** for MoSCOW cleanup after batch intake  

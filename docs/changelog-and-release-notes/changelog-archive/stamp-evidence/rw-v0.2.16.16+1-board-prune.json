@@ -1,0 +1,15 @@
+{
+  "release_scope": "E02:S16:T16",
+  "version": "v0.2.16.16+1",
+  "evidence_mode": "structure_prune",
+  "reason": "RW Step 7 kanban_init pruned COMPLETE/terminal rows from active MoSCOW (row removal; stamp -> None is expected)",
+  "rows": {
+    "E02:S15:T01": { "allowed": true, "reason": "COMPLETE row pruned from active kboard" },
+    "E02:S16:T06": { "allowed": true, "reason": "COMPLETE row pruned from active kboard" },
+    "E02:S16:T15": { "allowed": true, "reason": "COMPLETE row pruned from active kboard" },
+    "UXR-015": { "allowed": true, "reason": "terminal FBU row pruned from active fbuboard" },
+    "FR-085": { "allowed": true, "reason": "terminal FBU row pruned from active fbuboard" },
+    "FR-059": { "allowed": true, "reason": "terminal FBU row pruned from active fbuboard" },
+    "FR-062": { "allowed": true, "reason": "terminal FBU row pruned from active fbuboard" }
+  }
+}

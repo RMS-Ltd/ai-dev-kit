@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small  
 **Created:** 2026-05-30  
-**Last updated:** 2026-05-30  
+**Last updated:** 2026-05-30 (IPP implementation verified; cheatsheet alignment pass)  
 **Version Anchor:** v0.2.16.15+1  
 **Code:** E02S16T15  
 

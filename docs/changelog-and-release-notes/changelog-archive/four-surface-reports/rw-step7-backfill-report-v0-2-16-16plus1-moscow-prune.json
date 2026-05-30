@@ -1,0 +1,9 @@
+{
+  "report_type": "rw_step_7_structure_prune",
+  "release_scope": "E02:S16:T16",
+  "version": "v0.2.16.16+1",
+  "evidence_mode": "structure_prune",
+  "summary": "kanban_init pruned COMPLETE/terminal rows from active MoSCOW; pre-commit FR-097 backfill exemption for row removal",
+  "pruned_kboard": ["E02:S15:T01", "E02:S16:T06", "E02:S16:T15"],
+  "pruned_fbuboard": ["UXR-015", "FR-085", "FR-059", "FR-062"]
+}

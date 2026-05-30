@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-30 (RW -d E04:S19:T10)
-**Version Context:** v0.4.19.10+3 (**SemVer** v0.4.838+3)
+**Last Updated:** 2026-05-30 (RW -k E02:S16:T16)
+**Version Context:** v0.2.16.16+1 (**SemVer** v0.4.838+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -47,13 +47,12 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
-- **UXR-015** – Workflow initiation cheatsheet (**COMPLETE** **E02:S16:T15** **v0.2.16.15+1**) | [UXR-015](fr-br/UXR-015-workflow-initiation-cheatsheet.md) | [E02:S16:T15](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) | Last modified: 2026-05-30 20:30 UTC
-
 - **BR-059** – UKW MoSCOW incomplete story task coverage - 📋 TODO (HIGH, **E02:S16:T13** on kboard) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [E02:S16:T13](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
 - **BR-067** – RW doc-only releases default to BUILD+1 instead of doc-init +0 - 🟢 OPEN (HIGH, `--doc-policy-zero` mitigation shipped **v0.6.7.103+0**; policy/docs alignment on **E02:S16:T03**) | [BR-067](fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) | [E02:S16:T03](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-04-19 00:00 UTC
 - **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE** **E02:S15:T01**; phased historical backfill remains) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | —No IPP— | Last modified: 2026-04-14 00:00 UTC
 - **UXR-005** – Kanban board formatting & governance - 📋 TODO (HIGH, **E07:S01:T09** on kboard) | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | [E07:S01:T09](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) | —No IPP— | Last modified: 2026-05-30 14:00 UTC
 - **FR-072** – Uniform repository abstract-space kanban rules - 🔄 IN PROGRESS (HIGH, **E04:S19:T08** Approach D batch wiring) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [E04:S19:T08](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | —No IPP— | Last modified: 2026-05-29 17:20 UTC
+- **FR-102** – UKW archive completed rows (`UKW -c`) - 📥 ACCEPTED (HIGH, kanban init **v0.2.16.16+1**, **E02:S16:T16** on kboard) | [FR-102](fr-br/FR-102-ukw-archive-completed-board-rows.md) | [E02:S16:T16](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) | —No IPP— | Last modified: 2026-05-30 16:11 UTC
 
 ---
 
@@ -90,8 +89,6 @@ This board provides **centralized visibility and prioritization** for all open F
 - **BR-002** – Changelog Validator Ordering Bug - 📋 TODO (LOW, Ordering bug in changelog validator) | [BR-002](fr-br/BR-002-changelog-validator-ordering-bug.md) | [E02:S11:T11](epics/Epic-2/Story-011-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md) | —No IPP— | Last modified: 2025-12-16 00:00 UTC
 - **BR-001** – Validate Version Bump Epic Story Detection Bug - 📋 TODO (LOW, Bug in epic/story detection for version bump validation) | [BR-001](fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md) | [E02:S01:T06](epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) | —No IPP— | Last modified: 2026-05-26 00:00 UTC
 - **BR-058** – CI test workflow missing and pytest failures - 🟢 OPEN (LOW) | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | [E08:S03:T04](epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
-- **FR-062** – GitHub release installation experience - 💡 PROPOSED (LOW) | [FR-062](fr-br/FR-062-github-release-installation-experience.md) | [E05:S01:T62](epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md) | [—IPP—](../../implementation-cycles/IPP-E5S01T62-github-release-install-fr062.md) | Last modified: 2026-05-30 10:26 UTC
-- **FR-059** – Enhanced workflow logging system - ✅ COMPLETE (LOW) | [FR-059](fr-br/FR-059-enhanced-workflow-logging-system.md) | [E02:S08:T08](epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) | [—IPP—](../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md) | Last modified: 2026-05-30 11:30 UTC
 
 ### Won't Have (W) - Deferred / closed off active board
 

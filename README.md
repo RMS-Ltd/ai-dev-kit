@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.838+3` | **Internal:** `v0.4.19.10+3` (see detailed changelog) | **Last Updated:** 2026-05-30
+**Version (SemVer):** `v0.4.838+1` | **Internal:** `v0.2.16.16+1` (see detailed changelog) | **Last Updated:** 2026-05-30
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -119,14 +119,14 @@ Each framework includes installation guides, usage examples, and comprehensive d
 
 ### Primary Cursor triggers (this repo)
 
-These are the main **user-typed** triggers documented in `.cursorrules`:
+These are the main **user-typed** triggers documented in `.cursorrules`. **Human quick-reference:** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md) (flags, sequences, prerequisites).
 
 | Trigger | Workflow | What it does | Invocation |
 |--------|-----------|--------------|------------|
 | **RW** | Release Workflow | Version bump, changelogs, kanban markers, commit, tag, push | **`RW E5:S01:T64`** (examples: `RW E7S01T10`, `RW E7:S01:T10`). The **task id must appear in the same message** as `RW`, `RW -d`, or `RW -k`. See [FR-060](docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md) and [Release Workflow agent execution](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). |
 | **UKW** | Update Kanban Workflow | Bookkeeping, priorities, board sync | `UKW` (full run), or `UKW -u`, `UKW -p`, `UKW -a <target>`. See [UKW agent execution](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md). |
 | **PVW** | Package Version Workflow | Package-level version analysis/bumps | `PVW` (often RW Step 2.5). See [PVW agent execution](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md). |
-| **ICW** | Implementation Cycle Workflow | Spec → tests → implementation planning | `ICW` — **planning mode** only; task identifier required per project rules. See [Implementation Cycle SOP](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
+| **IPW** / **ICW** | Implementation Planning / Cycle | Spec → tests → implementation plan (`IPP` or ICW trio) | `IPW E02:S16:T15` or `/ipw` — **plan mode** required; then implement → **RW**. See [workflow initiation cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) and [Implementation Cycle SOP](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
 
 **CMW** (Changelog Management Workflow) usually runs as **RW Step 9.5** when changelog size exceeds policy, or via the maintainer skill under [`.cursor/skills/cmw-maintain/`](.cursor/skills/cmw-maintain/SKILL.md). Package entry: [changelog-management-workflow README](packages/frameworks/workflow%20mgt/workflows/changelog-management-workflow/README.md).
 

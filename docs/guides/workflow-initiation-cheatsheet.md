@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Workflow initiation cheatsheet
 
-**Last verified against:** 2026-05-30 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` per ADR-009)
+**Last verified against:** 2026-05-30 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` / ADR-009; BR-067 `RW -d --doc-policy-zero`)
 
 > **Agent source of truth:** If this cheatsheet and [`.cursorrules`](../../.cursorrules) or [`.claude/commands/`](../../.claude/commands/) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 | I want to… | Type |
 | ---------- | ---- |
 | Release completed work | `RW E02:S16:T15` (full), `RW -d E02:S16:T15` (docs-only), or `RW -k E02:S16:T15` (kanban-init) |
-| Plan before implementing | `IPW E02:S16:T15` (**plan mode first**) or `/ipw E02:S16:T15` |
+| Plan before implementing | `IPW E02:S16:T15` (**plan mode first**) or `/ipw E02:S16:T15` — then explicit **implement** (IPW/IPP gate) |
 | Sync all kanban docs (global) | `UKW` then `RW` |
 | Fix suspected kanban drift (specific) | `UKW -ad <targets>` then `RW` — **planned** (not yet in `.cursorrules`) |
 | Maintain changelog size/order | `CMW` then `RW` |
@@ -36,7 +36,7 @@ housekeeping_policy: keep
 | Invocation | Meaning |
 | ---------- | ------- |
 | `RW E02:S16:T15` / `/rw E02:S16:T15` | Full release (version, changelog, kanban, commit, tag, push) |
-| `RW -d E02:S16:T15` | **Docs-only release** (documentation path; not kanban drift repair) |
+| `RW -d E02:S16:T15` | **Docs-only release** (documentation path; not kanban drift repair). On an **existing** E:S:T use `--art` and optionally `--doc-policy-zero` (BUILD +0 policy; see [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
 | `RW -k E02:S16:T15` | Kanban-init release |
 | `… --art` | Adopt requested E:S:T as canonical version anchor |
 | `… --confirmed-override` | Step 1d intent override (after explicit user confirmation) |
@@ -62,7 +62,7 @@ housekeeping_policy: keep
 | `UKW -a E02:S16:T15` | Assign priorities to target(s) only — **not** drift repair |
 | `UKW -u -p`, `UKW -u -a <target>`, etc. | Combined sub-workflows per flag matrix |
 | `UKW -ad <targets>` | **Address Drift** — targeted project-state kanban reconciliation — **planned** |
-| `UKW --rp` | **Deep reprioritization** (standalone) — intent/dependency/blocker/impact analysis on kboard + fbuboard; emits rationale ([ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)) |
+| `UKW --rp` | **Deep reprioritization** (standalone) — intent/dependency/blocker/impact analysis on kboard + fbuboard; emits rationale ([ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)). **Not** combinable with `-u`, `-p`, or `-a` |
 
 **Flag disambiguation (easy to confuse):**
 
@@ -96,7 +96,8 @@ housekeeping_policy: keep
 | | |
 | --- | --- |
 | **Prerequisites** | **Plan mode required** (Cursor `/plan` or Claude plan session); tool access |
-| **Handoff** | Produces `docs/implementation-cycles/IPP-E…S…T…-*.md`; link from task; then **implement** → **`RW E02:S16:T15`** |
+| **Handoff** | Produces `docs/implementation-cycles/IPP-E…S…T…-*.md` (or ICW trio); link from task; **no code/docs implementation until IPW complete + user says implement**; then **`RW E02:S16:T15`** |
+| **Planning package** | [IPP-E02S16T15-workflow-initiation-cheatsheet.md](../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) (example) |
 | **Blocked (plan mode)** | `IPW BLOCKED: plan mode required. Type /plan to enter plan mode, then invoke /ipw again from within the plan session.` |
 | **Blocked (tools)** | `IPW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
@@ -164,5 +165,6 @@ housekeeping_policy: keep
 
 ## Related workflows (not detailed here)
 
-- **Intake** — FR/BR/UXR → task (see intake skill / kanban governance)
+- **Intake** — FR/BR/UXR → task in same session ([`FR_BR_INTAKE_GUIDE.md`](../../packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md), [intake-process skill](../../.cursor/skills/intake-process/SKILL.md)); never primary tasks on **`S00`** ([BR-076](../project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md))
 - **ICW** — legacy Cursor planning trigger (prefer **IPW**)
+- **Global implementation gate** — IPW/IPP required before implementation edits ([`AGENTS.md`](../../AGENTS.md), `.cursorrules`)

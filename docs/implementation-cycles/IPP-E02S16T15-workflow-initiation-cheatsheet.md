@@ -142,9 +142,10 @@ RF1–RF4 map to cheatsheet sections A–E plus sequences, blocked-session, and 
 ## 7. Success / verification criteria
 
 - [x] IPP §1–§7 complete; bidirectional task ↔ IPP links
-- [x] Cheatsheet AC1–AC4 (V1–V5) — verified at implementation
-- [x] UXR-015 AC5 (intake wiring) satisfied
+- [x] Cheatsheet AC1–AC4 (V1–V5) — verified at implementation (**v0.2.16.15+1**)
+- [x] UXR-015 AC1–AC5 and R1–R5 satisfied (2026-05-30)
 - [x] RW releases with version anchor on T15 (v0.2.16.15+1)
+- [x] Post-ship alignment: README workflows table, `--rp` non-combination, IPW gate, `--doc-policy-zero` on `RW -d`, intake skill cross-link
 
 ---
 

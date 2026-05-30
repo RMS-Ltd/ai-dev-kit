@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.10+3] - 30-05-26
+## [0.2.16.16+1] - 30-05-26
 
-E04:S19:T10 (BR-076) — Docs-only: BR-076 forensic/version alignment after v0.4.19.10+2 implementation. SemVer **v0.4.838+3**.
+E02:S16:T16 (FR-102) — Kanban init: UKW archive-completed (`UKW -c`) feature intake and **E02:S16:T16** task wiring. SemVer **v0.4.838+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.10+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.16+1.md)
 
 ---
