@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-05-30  
-**Last updated:** 2026-05-30 (✅ COMPLETE **v0.4.19.10+2** — BR-076 E7 S00 detasking)  
-**Version Anchor:** v0.4.19.10+2  
+**Last updated:** 2026-05-30 (✅ COMPLETE **v0.4.19.10+2**; RW -d **v0.4.19.10+3** BR-076 forensic alignment)  
+**Version Anchor:** v0.4.19.10+2 (implementation); RW -d trace **v0.4.19.10+3**  
 **Code:** E04S19T10
 
 **Upstream:** [BR-076 — E7:S00 must not host concrete tasks](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)  

@@ -1,0 +1,13 @@
+{
+  "rows": {},
+  "contract": "FR-097",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 4,
+    "story": 19,
+    "task": 10,
+    "task_id": "E04:S19:T10",
+    "version_string": "v0.4.19.10+3"
+  },
+  "summary": "RW -d: board metadata only; no MoSCOW row stamp deltas"
+}

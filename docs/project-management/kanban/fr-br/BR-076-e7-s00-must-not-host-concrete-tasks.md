@@ -14,9 +14,11 @@ housekeeping_policy: keep
 **Submitted By:** User (maintainer governance)  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** RESOLVED (attempted resolution — E04:S19:T10; verify after release)
+**Status:** RESOLVED (**v0.4.19.10+2** — E04:S19:T10; docs-only alignment **v0.4.19.10+3**)
 
-**Implementing Task:** [E04:S19:T10](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) (**v0.4.19.10+1**)
+**Implementing Task:** [E04:S19:T10](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) (**v0.4.19.10+2**)
+
+**Fix Version:** v0.4.19.10+2
 
 **Related:** [FR-072](./FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach A / D), [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md) (S00 Abstract Space), [E5:S00 abstract model](../epics/Epic-5/Story-000-fr-repo.md)
 

@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 4      # Epic 4 — Kanban Framework
 VERSION_STORY = 19    # Story 19 — FR/BR/UXR abstract governance and intake
 VERSION_TASK = 10     # Task 10 — E7:S00 detasking (BR-076)
-VERSION_BUILD = 2     # Build 2: E7:S00 detasked, historical anchors, intake S00 ban, BR-076 resolved
+VERSION_BUILD = 3     # Build 3: RW -d docs-only — BR-076 forensic/version alignment
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.4.19.10+2
+# Current: 0.4.19.10+3
