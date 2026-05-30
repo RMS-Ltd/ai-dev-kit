@@ -9,9 +9,9 @@ housekeeping_policy: keep
 # Task E02:S08:T08 - Enhanced Workflow Forensic Logging and Rollback Hardening (FR-059)
 
 **Task ID:** E02:S08:T08  
-**Status:** IN PROGRESS  
-**Version Anchor:** v0.2.8.8+2  
-**Last updated:** 2026-05-30 (RW release)  
+**Status:** COMPLETE  
+**Version Anchor:** v0.2.8.8+3  
+**Last updated:** 2026-05-30 (closure RW)  
 **Priority:** HIGH  
 **Feature Request:** [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md)
 
@@ -52,11 +52,11 @@ Extend workflow execution reliability with atomic command logging, forensic I/O 
 
 ## Acceptance Criteria
 
-- [ ] FR-059 functional requirements are implemented and testable.
-- [ ] FR-059 performance and integration requirements are validated.
-- [ ] Rollback and forensic workflows are documented for operators.
+- [x] FR-059 functional requirements are implemented and testable — see [FR-059 AC](../../../fr-br/FR-059-enhanced-workflow-logging-system.md); `pytest tests/journal tests/workflow` (44 tests).
+- [x] FR-059 performance and integration requirements are validated — perf smoke + schema tests; compression/100+ concurrent deferred per IPP §1.3.
+- [x] Rollback and forensic workflows are documented for operators — [workflow-forensic-recovery-guide.md](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md).
 
-**Implementation evidence (2026-05-30):** Core modules `forensic_log.py`, `checkpoint_store.py`, `journal_housekeeping.py`; journal schema v1; executor wiring; tests under `tests/journal/` and `tests/workflow/`. AC checkboxes finalize after user verification and RW.
+**Releases:** `v0.2.8.8+2` (implementation), `v0.2.8.8+3` (closure tests + AC evidence). Prior `v0.2.8.8+1` was kanban-only mis-attribution.
 
 ---
 

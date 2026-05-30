@@ -30,6 +30,8 @@ Usage:
 from .rw_journal import RWJournal, RunEntry, StepEntry
 from .recovery_report import RecoveryReport, RECOVERY_SCHEMA_VERSION
 from .rollback_contract import RollbackContract, CompensationSurface
+from .journal_housekeeping import sweep, SweepResult
+from .forensic_log import AtomicCommandRecord, run_subprocess_logged
 
 __all__ = [
     "RWJournal",
@@ -39,4 +41,8 @@ __all__ = [
     "RECOVERY_SCHEMA_VERSION",
     "RollbackContract",
     "CompensationSurface",
+    "sweep",
+    "SweepResult",
+    "AtomicCommandRecord",
+    "run_subprocess_logged",
 ]

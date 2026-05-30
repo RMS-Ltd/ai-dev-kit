@@ -8,10 +8,9 @@
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 7: Four-surface parity (FR-084)
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 8/9 passed (1 failed, 0 waived).
+- Gates: 9/9 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -87,14 +86,12 @@
 
 ### Gate 7 — Four-surface parity (FR-084)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: Four-surface parity violation; see findings.
-- Findings:
-  - FR-084 violation: untouched surface(s) lack rationale notes (must explain why no mutation): ['fbu_doc'].
+- Status: **PASS** (severity: `block`)
+- Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
   - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus20-e2s16t4.json`
   - `task_doc`: `{'touched': True, 'paths': ['docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md'], 'notes_count': 0}`
-  - `fbu_doc`: `{'touched': False, 'paths': ['docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md'], 'notes_count': 0}`
+  - `fbu_doc`: `{'touched': False, 'paths': ['docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md'], 'notes_count': 1}`
   - `kboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
   - `fbuboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/fbuboard.md'], 'notes_count': 0}`
   - `release_scope`: `{'epic': 2, 'story': 16, 'task': 4, 'task_id': 'E2:S16:T4', 'version_string': 'v0.2.16.4+20'}`

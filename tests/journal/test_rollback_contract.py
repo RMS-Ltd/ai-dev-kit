@@ -72,6 +72,26 @@ class TestRollbackContract:
         assert len(contract.forbidden_actions) == 1
         assert "git push --force" in contract.forbidden_actions[0]
 
+    def test_command_records_analyzed_like_commands(self, tmp_path: Path):
+        journal = RWJournal(task_id="E02:S08:T08", journal_dir=tmp_path)
+        journal.start_run()
+        journal.log_step(
+            name="Step 10 — Commit",
+            status="success",
+            commands=[],
+            command_records=[
+                {
+                    "timestamp": "2026-05-30T00:00:00Z",
+                    "argv": ["git", "commit", "-m", "Release"],
+                    "exit_code": 0,
+                    "duration_ms": 10.0,
+                }
+            ],
+        )
+        contract = RollbackContract.from_run(journal.run)
+        manual = [s for s in contract.manual_reconcile if s.action_type == "git_commit"]
+        assert len(manual) == 1
+
     def test_summary_markdown(self, tmp_path: Path):
         journal = RWJournal(task_id="E6:S06:T63", journal_dir=tmp_path)
         journal.start_run()

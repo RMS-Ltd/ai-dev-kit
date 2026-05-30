@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md`](../project-management/kanban/epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) **(E02:S08:T08)**  
 **Planning for:** [FR-059](../project-management/kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)  
-**Status:** Approved (planning complete — implementation in progress)
+**Status:** Approved (IPW Phase 9 reconciled 2026-05-30; closure RW pending)
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
 
@@ -87,9 +87,9 @@ Operators and agents can reconstruct workflow/sub-workflow failures from durable
 
 ### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
 
-- **Current task status:** IN PROGRESS (re-opened from erroneous COMPLETE after kanban-only `v0.2.8.8+1`).
+- **Current task status:** IN PROGRESS (implementation shipped at `v0.2.8.8+2`; closure tranche adds tests + AC evidence).
 - **Transition trigger to IN PROGRESS:** IPW Phase 8 wiring (2026-05-30).
-- **Transition trigger to COMPLETE:** All FR-059 functional ACs satisfied with test evidence; forensic marker on implementation RW only.
+- **Transition trigger to COMPLETE:** Closure RW `v0.2.8.8+3` after FR-059 AC evidence recorded (deferred items documented).
 - **Atomic propagation requirement:** Task doc, story checklist, and `fbuboard` IPP column updated together.
 - **Owner:** Implementation execution (Step 1 and final reconciliation in §4).
 
@@ -225,12 +225,12 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## 7. Success / verification criteria
 
-- [ ] `pytest tests/journal tests/workflow` passes
-- [ ] ADR-008 and IPP bidirectionally linked from T08
-- [ ] `forensic_log`, checkpoints, housekeeping modules importable from journal package
-- [ ] FR-059 functional ACs checked with evidence links after verification
-- [ ] All §5 UPDATE/CREATE items implemented or deferred with reason
-- [ ] RW E02:S08:T08 completes release traceability
+- [x] `pytest tests/journal tests/workflow` passes (re-run at closure; includes T7/T8 tests)
+- [x] ADR-008 and IPP bidirectionally linked from T08
+- [x] `forensic_log`, checkpoints, housekeeping modules importable from journal package
+- [x] FR-059 functional ACs checked with evidence links (closure tranche; deferred items documented in FR-059)
+- [x] All §5 UPDATE/CREATE items implemented or deferred with reason
+- [x] RW E02:S08:T08 `v0.2.8.8+2` release traceability (closure `+3` at final reconciliation)
 
 ---
 

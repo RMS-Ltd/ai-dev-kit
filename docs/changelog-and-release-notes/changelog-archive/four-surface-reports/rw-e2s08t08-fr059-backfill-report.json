@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "FR-059": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.8.8+3 — FR-059 closure: task COMPLETE, fbuboard status IN PROGRESS to COMPLETE, IPP link deduplicated"
+    }
+  }
+}
