@@ -87,10 +87,13 @@ The MoSCOW priority list is updated LAST.
 - Apply deterministic active-row reconciliation:
   - Prune active MoSCOW rows when linked source status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`)
   - Keep explicit unresolved-verification exceptions active (status includes `IN PROGRESS`, `UNVERIFIED`, `PENDING VERIFICATION`)
-- **FR-097 stamp rules (hygiene-only):**
-  - **Do not** rewrite per-row `| Last modified: … UTC` on structure-only cleanup
-  - **May** update board-level `Last Updated` metadata only
-  - Snapshot boards at UKW start (`snapshot_kanban_boards.py`); run `validate_board_stamp_diff.py` before stage — **abort** on un evidenced stamp deltas
+- **FR-097 stamp rules (hygiene-only) — HARD:**
+  - **NEVER** hand-edit row `| Last modified: … UTC` in markdown (no batch UTC, no hour buckets).
+  - **NEVER** run or recreate `normalize_board_row_timestamps.py` (removed).
+  - **Do not** rewrite per-row stamps on structure-only cleanup; board header `Last Updated` only.
+  - New/missing stamps: `backfill_board_row_stamps.py` or `update_kanban_docs.py` with `non_substantive` / `gated` evidence only.
+  - Snapshot at UKW start; `validate_board_stamp_diff.py` before stage — **abort** on failure.
+  - Pre-commit blocks ≥3 rows with identical stamp (`homogeneity_threshold: 3` in `rw-config.yaml`).
 - Apply concurrency guard: re-read `fbuboard.md` before write if changed mid-run; re-apply transforms
 - Emit reconciliation summary (audited, removed, kept exceptions, revalidation triggered)
 

@@ -30,6 +30,10 @@ fr_br_root: docs/project-management/kanban/fr-br
 versioning_schema: RC.EPIC.STORY.TASK+BUILD
 dev_branch_epic: 2
 
+# FR-097 board stamp enforcement (pre-commit + release Gate 8)
+board_stamp:
+  homogeneity_threshold: 3  # fail when ≥3 rows share identical Last modified
+
 # SemVer mapping strategy: "registry" (default) or "task_touch"
 # registry: Hybrid approach with epic/story registry (current default)
 # task_touch: ADR-002 task-touch derived mapping (strictly monotonic)

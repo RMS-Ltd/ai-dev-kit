@@ -14,7 +14,7 @@ import subprocess
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 try:
     import yaml
@@ -40,6 +40,9 @@ LAST_UPDATED_RE = re.compile(
     re.MULTILINE,
 )
 MOSCOW_HEADER_RE = re.compile(r"^##\s+MoSCOW", re.IGNORECASE)
+
+# FR-097: ≥3 MoSCOW rows sharing one stamp = batch homogenization (was 10; too lenient).
+DEFAULT_HOMOGENEITY_THRESHOLD = 3
 
 
 @dataclass
@@ -82,6 +85,20 @@ def kanban_root_from_config(project_root: Path, config: Optional[Dict[str, Any]]
     if config and config.get("kanban_root"):
         return project_root / config["kanban_root"]
     return project_root / "docs/project-management/kanban"
+
+
+def homogeneity_threshold_from_config(
+    project_root: Path,
+    config: Optional[Dict[str, Any]] = None,
+) -> int:
+    """Resolve homogeneity cluster threshold from rw-config.yaml board_stamp section."""
+    if config is None:
+        config = load_rw_config(project_root)
+    if config:
+        board_stamp = config.get("board_stamp") or {}
+        if isinstance(board_stamp, dict) and board_stamp.get("homogeneity_threshold") is not None:
+            return int(board_stamp["homogeneity_threshold"])
+    return DEFAULT_HOMOGENEITY_THRESHOLD
 
 
 def active_board_paths(project_root: Path, config: Optional[Dict[str, Any]] = None) -> List[Path]:
@@ -188,9 +205,9 @@ def _normalize_doc_date_to_stamp(raw: str) -> Optional[str]:
     return None
 
 
-def git_last_touch_stamp(path: Path, project_root: Path) -> Optional[str]:
+def _git_last_touch(path: Path, project_root: Path) -> Tuple[Optional[str], Optional[str]]:
+    """Return (commit_sha, stamp) from last git commit touching path, or (None, None)."""
     if not path.exists():
-        rel = path
         for candidate in (path, project_root / path):
             if candidate.exists():
                 path = candidate
@@ -205,7 +222,7 @@ def git_last_touch_stamp(path: Path, project_root: Path) -> Optional[str]:
                 "git",
                 "log",
                 "-1",
-                "--format=%ci",
+                "--format=%H %ci",
                 "--",
                 str(rel_path),
             ],
@@ -216,18 +233,32 @@ def git_last_touch_stamp(path: Path, project_root: Path) -> Optional[str]:
             check=False,
         )
     except (subprocess.SubprocessError, OSError):
-        return None
+        return None, None
     if result.returncode != 0 or not result.stdout.strip():
-        return None
-    # git format: 2026-05-20 14:30:45 +0100
-    parts = result.stdout.strip().split()
+        return None, None
+    parts = result.stdout.strip().split(maxsplit=2)
     if len(parts) < 2:
-        return None
+        return None, None
+    commit_sha = parts[0]
+    # parts[1] date, parts[2] time (may include timezone token)
+    time_part = parts[2].split()[0] if len(parts) > 2 else ""
+    if not time_part:
+        return commit_sha, None
     try:
-        dt = datetime.strptime(f"{parts[0]} {parts[1]}", "%Y-%m-%d %H:%M:%S")
-        return dt.strftime("%Y-%m-%d %H:%M UTC")
+        dt = datetime.strptime(f"{parts[1]} {time_part}", "%Y-%m-%d %H:%M:%S")
+        return commit_sha, dt.strftime("%Y-%m-%d %H:%M UTC")
     except ValueError:
-        return None
+        return commit_sha, None
+
+
+def git_last_touch_commit(path: Path, project_root: Path) -> Optional[str]:
+    commit, _ = _git_last_touch(path, project_root)
+    return commit
+
+
+def git_last_touch_stamp(path: Path, project_root: Path) -> Optional[str]:
+    _, stamp = _git_last_touch(path, project_root)
+    return stamp
 
 
 def doc_content_fingerprint(path: Path) -> Optional[str]:
@@ -247,17 +278,26 @@ def derive_stamp_for_row(
 ) -> Tuple[Optional[str], str, str]:
     """
     Derive stamp from linked sources. Returns (stamp, source, detail).
-    Order: doc Last updated -> git last touch -> ambiguous.
+    Order: doc with time -> git last touch -> doc date-only (midnight) -> ambiguous.
     """
     paths = linked_paths_from_line(line, kanban_root)
+    date_only_doc: Optional[Tuple[str, Path]] = None
     for doc_path in paths:
         stamp = parse_last_updated_from_doc(doc_path)
-        if stamp:
-            return stamp, "doc", str(doc_path.relative_to(project_root))
+        if not stamp:
+            continue
+        if stamp.endswith(" 00:00 UTC"):
+            if date_only_doc is None:
+                date_only_doc = (stamp, doc_path)
+            continue
+        return stamp, "doc", str(doc_path.relative_to(project_root))
     for doc_path in paths:
         stamp = git_last_touch_stamp(doc_path, project_root)
         if stamp:
             return stamp, "git", str(doc_path.relative_to(project_root))
+    if date_only_doc:
+        stamp, doc_path = date_only_doc
+        return stamp, "doc-date-only", str(doc_path.relative_to(project_root))
     return None, "ambiguous", "no linked doc date or git history"
 
 
@@ -329,7 +369,7 @@ def find_row_line(board_content: str, row_id: str) -> Optional[str]:
 def homogeneity_clusters(
     board_content: str,
     *,
-    threshold: int = 10,
+    threshold: int = DEFAULT_HOMOGENEITY_THRESHOLD,
 ) -> Dict[str, List[str]]:
     """Return stamp values that appear on >= threshold rows -> list of row_ids."""
     by_stamp: Dict[str, List[str]] = {}
@@ -344,6 +384,82 @@ def homogeneity_clusters(
     }
 
 
+# UKW/agent hour-bucket pattern (2026-05-29 disaster); never exempt from Gate 8.
+_SYNTHETIC_HOUR_BUCKET_RE = re.compile(
+    r"^\d{4}-\d{2}-\d{2} (17|18|19):00 UTC$"
+)
+
+
+def is_presumed_synthetic_batch_stamp(stamp: str) -> bool:
+    """True for known agent/UKW hour-bucket homogenization (always block clusters)."""
+    return bool(_SYNTHETIC_HOUR_BUCKET_RE.match(stamp.strip()))
+
+
+def git_derived_stamp_and_commit_for_row(
+    line: str,
+    kanban_root: Path,
+    project_root: Path,
+) -> Tuple[Optional[str], Optional[str]]:
+    """First resolvable linked path: git (stamp, commit_sha)."""
+    for doc_path in linked_paths_from_line(line, kanban_root):
+        commit, stamp = _git_last_touch(doc_path, project_root)
+        if stamp:
+            return stamp, commit
+    return None, None
+
+
+def cluster_is_git_single_commit_exempt(
+    board_content: str,
+    stamp: str,
+    row_ids: List[str],
+    kanban_root: Path,
+    project_root: Path,
+) -> bool:
+    """
+    Gate 8 exemption: every row in the cluster independently matches `stamp` via
+    git last-touch on a linked doc, and all those touches share one commit SHA
+    (mass release / single commit touching many linked sources).
+    """
+    if is_presumed_synthetic_batch_stamp(stamp):
+        return False
+    commits: Set[str] = set()
+    for row_id in row_ids:
+        line = find_row_line(board_content, row_id)
+        if not line:
+            return False
+        git_stamp, commit = git_derived_stamp_and_commit_for_row(
+            line, kanban_root, project_root
+        )
+        if git_stamp != stamp or not commit:
+            return False
+        commits.add(commit)
+    return len(commits) == 1
+
+
+def homogeneity_clusters_blocking(
+    board_content: str,
+    project_root: Path,
+    kanban_root: Path,
+    *,
+    threshold: int = DEFAULT_HOMOGENEITY_THRESHOLD,
+) -> Dict[str, List[str]]:
+    """
+    Clusters that fail Gate 8 / pre-commit homogeneity check.
+
+    Exempt: git-derived single-commit clusters (legitimate mass doc touch).
+    Always block: synthetic UKW hour buckets and non-git-derived clusters.
+    """
+    raw = homogeneity_clusters(board_content, threshold=threshold)
+    blocking: Dict[str, List[str]] = {}
+    for stamp, row_ids in raw.items():
+        if cluster_is_git_single_commit_exempt(
+            board_content, stamp, row_ids, kanban_root, project_root
+        ):
+            continue
+        blocking[stamp] = row_ids
+    return blocking
+
+
 def replace_row_terminal_stamp(line: str, new_stamp: str) -> str:
     if TERMINAL_STAMP_RE.search(line):
         return TERMINAL_STAMP_RE.sub(f"| Last modified: {new_stamp}", line)
@@ -356,7 +472,7 @@ def apply_backfill_to_board(
     project_root: Path,
     *,
     cluster_stamp: Optional[str] = None,
-    homogeneity_threshold: int = 10,
+    homogeneity_threshold: int = DEFAULT_HOMOGENEITY_THRESHOLD,
 ) -> Tuple[str, List[BackfillRowResult]]:
     lines = board_content.split("\n")
     rows = parse_moscow_rows(board_content)

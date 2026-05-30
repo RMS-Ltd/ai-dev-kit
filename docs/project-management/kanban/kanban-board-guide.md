@@ -75,9 +75,11 @@ Each line in **MoSCOW Prioritized In-Progress Tasks** (`kboard.md`) and **MoSCOW
 
 `| Last modified: YYYY-MM-DD HH:MM UTC`
 
-- **Derivation (preferred):** UTC timestamp of the latest `git` commit touching the **first resolvable** linked `.md` on that row (typically the task or FR/BR/UXR doc).
-- **Manual / UKW:** When the board row changes without a doc commit, set the stamp to the current UTC time so drift checks and planning (e.g. IPW) see a fresh row touch.
-- **Same convention** applies to both boards for side-by-side parity.
+- **Derivation (required for new stamps):** UTC from linked task/FR/BR/UXR doc `**Last updated:**`, else latest `git` commit on that doc — use `backfill_board_row_stamps.py` or RW Step 7 gated evidence. **Never** batch-assign one session time across rows.
+- **STRUCTURE hygiene (UKW prune/sort/wiring):** **Do not** change row `Last modified`. Board header `Last Updated` may change.
+- **CONTENT (status/version/substantive row delta):** May update stamp only with linked-source evidence or release-scope manifest (`validate_board_stamp_diff.py`).
+- **Forbidden:** `normalize_board_row_timestamps.py` (removed), manual “set all rows to current UTC”, or hour-bucket homogenization (`17:00` / `18:00` / `19:00` on dozens of rows).
+- **Same convention** on both boards; wired kboard/fbuboard pairs should match when derived from the same source doc.
 
 ---
 
@@ -119,7 +121,7 @@ Every active MoSCOW row in `kboard.md` and `fbuboard.md` must end with a termina
 
 `| Last modified: YYYY-MM-DD HH:MM UTC`
 
-This is mandatory for human scanability and forensic traceability. RW/UKW/manual updates must preserve or refresh this value whenever the row changes.
+This is mandatory for human scanability and forensic traceability. RW/UKW must **preserve** existing row stamps on STRUCTURE-only edits. New stamps only via linked-doc derivation or evidenced CONTENT passes — see [board-stamp-authority.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md).
 
 ### MoSCOW state icons (UXR-012 / E04:S13:T07)
 

@@ -1,0 +1,326 @@
+{
+  "boards": [
+    {
+      "board": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "rows_considered": 10,
+      "rows_changed": 6,
+      "rows_ambiguous": 0,
+      "clusters_before": {
+        "2026-05-29 00:00 UTC": [
+          "E02:S16:T13",
+          "E02:S01:T23",
+          "E04:S19:T03",
+          "E04:S19:T08",
+          "E08:S03:T04",
+          "E02:S16:T14"
+        ],
+        "2026-05-30 10:26 UTC": [
+          "E06:S07:T107",
+          "E07:S01:T09",
+          "E07:S00:T01",
+          "E07:S00:T02"
+        ]
+      },
+      "clusters_after": {
+        "2026-05-30 10:26 UTC": [
+          "E02:S16:T13",
+          "E02:S01:T23",
+          "E06:S07:T107",
+          "E07:S01:T09",
+          "E04:S19:T03",
+          "E07:S00:T01",
+          "E07:S00:T02",
+          "E04:S19:T08",
+          "E08:S03:T04",
+          "E02:S16:T14"
+        ]
+      },
+      "results": [
+        {
+          "row_id": "E02:S16:T13",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md"
+        },
+        {
+          "row_id": "E02:S01:T23",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md"
+        },
+        {
+          "row_id": "E06:S07:T107",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md"
+        },
+        {
+          "row_id": "E07:S01:T09",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md"
+        },
+        {
+          "row_id": "E04:S19:T03",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md"
+        },
+        {
+          "row_id": "E07:S00:T01",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/UXR-001-migration-user-experience-research.md"
+        },
+        {
+          "row_id": "E07:S00:T02",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md"
+        },
+        {
+          "row_id": "E04:S19:T08",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md"
+        },
+        {
+          "row_id": "E08:S03:T04",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md"
+        },
+        {
+          "row_id": "E02:S16:T14",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md"
+        }
+      ]
+    },
+    {
+      "board": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md",
+      "dry_run": false,
+      "rows_considered": 21,
+      "rows_changed": 18,
+      "rows_ambiguous": 0,
+      "clusters_before": {
+        "2026-05-29 00:00 UTC": [
+          "BR-059",
+          "FR-087",
+          "FR-032",
+          "FR-039",
+          "FR-037",
+          "FR-003",
+          "FR-002",
+          "BR-058",
+          "FR-031"
+        ],
+        "2026-05-30 10:26 UTC": [
+          "UXR-005",
+          "FR-016",
+          "FR-062"
+        ],
+        "2026-01-05 00:00 UTC": [
+          "UXR-001",
+          "UXR-002",
+          "UXR-003",
+          "FR-012"
+        ],
+        "2025-12-10 00:00 UTC": [
+          "FR-010",
+          "FR-007",
+          "BR-008",
+          "BR-007",
+          "BR-006"
+        ]
+      },
+      "clusters_after": {
+        "2026-05-30 10:26 UTC": [
+          "BR-059",
+          "FR-087",
+          "UXR-005",
+          "UXR-001",
+          "UXR-002",
+          "FR-032",
+          "UXR-003",
+          "FR-039",
+          "FR-037",
+          "FR-016",
+          "FR-012",
+          "FR-010",
+          "FR-007",
+          "FR-003",
+          "FR-002",
+          "BR-008",
+          "BR-007",
+          "BR-006",
+          "BR-058",
+          "FR-062",
+          "FR-031"
+        ]
+      },
+      "results": [
+        {
+          "row_id": "BR-059",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md"
+        },
+        {
+          "row_id": "FR-087",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md"
+        },
+        {
+          "row_id": "UXR-005",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md"
+        },
+        {
+          "row_id": "UXR-001",
+          "old_stamp": "2026-01-05 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/UXR-001-migration-user-experience-research.md"
+        },
+        {
+          "row_id": "UXR-002",
+          "old_stamp": "2026-01-05 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md"
+        },
+        {
+          "row_id": "FR-032",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-032-release-candidate-readiness-gap-analysis.md"
+        },
+        {
+          "row_id": "UXR-003",
+          "old_stamp": "2026-01-05 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md"
+        },
+        {
+          "row_id": "FR-039",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md"
+        },
+        {
+          "row_id": "FR-037",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md"
+        },
+        {
+          "row_id": "FR-016",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md"
+        },
+        {
+          "row_id": "FR-012",
+          "old_stamp": "2026-01-05 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-012-agentic-kanban-task-creation-from-fr-br.md"
+        },
+        {
+          "row_id": "FR-010",
+          "old_stamp": "2025-12-10 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-010-implement-actual-agentic-intelligence-task-mapping.md"
+        },
+        {
+          "row_id": "FR-007",
+          "old_stamp": "2025-12-10 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md"
+        },
+        {
+          "row_id": "FR-003",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md"
+        },
+        {
+          "row_id": "FR-002",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-002-update-been-there-readme.md"
+        },
+        {
+          "row_id": "BR-008",
+          "old_stamp": "2025-12-10 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md"
+        },
+        {
+          "row_id": "BR-007",
+          "old_stamp": "2025-12-10 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md"
+        },
+        {
+          "row_id": "BR-006",
+          "old_stamp": "2025-12-10 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md"
+        },
+        {
+          "row_id": "BR-058",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md"
+        },
+        {
+          "row_id": "FR-062",
+          "old_stamp": "2026-05-30 10:26 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md"
+        },
+        {
+          "row_id": "FR-031",
+          "old_stamp": "2026-05-29 00:00 UTC",
+          "new_stamp": "2026-05-30 10:26 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md"
+        }
+      ]
+    }
+  ],
+  "dry_run": false
+}

@@ -22,6 +22,7 @@ from stamp_authority import (  # noqa: E402
     active_board_paths,
     apply_backfill_to_board,
     homogeneity_clusters,
+    homogeneity_threshold_from_config,
     load_rw_config,
 )
 
@@ -75,13 +76,21 @@ def main(argv: Optional[List[str]] = None) -> int:
         default=None,
         help="Only re-stamp rows with this exact stamp (e.g. '2026-04-20 15:52 UTC').",
     )
-    parser.add_argument("--homogeneity-threshold", type=int, default=10)
+    parser.add_argument(
+        "--homogeneity-threshold",
+        type=int,
+        default=None,
+        help="Cluster size threshold (default: rw-config board_stamp.homogeneity_threshold or 3).",
+    )
     parser.add_argument("--dry-run", action="store_true", default=False)
     parser.add_argument("--report", type=Path, required=True)
     args = parser.parse_args(argv)
 
     project_root = args.project_root.resolve()
     config = load_rw_config(project_root)
+    threshold = args.homogeneity_threshold
+    if threshold is None:
+        threshold = homogeneity_threshold_from_config(project_root, config)
     from stamp_authority import kanban_root_from_config
 
     kanban_root = kanban_root_from_config(project_root, config)
@@ -97,7 +106,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 board_path,
                 project_root,
                 cluster_stamp=args.cluster_stamp,
-                homogeneity_threshold=args.homogeneity_threshold,
+                homogeneity_threshold=threshold,
                 dry_run=args.dry_run,
             )
         )

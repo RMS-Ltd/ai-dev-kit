@@ -86,6 +86,60 @@ def test_homogeneity_clusters():
     assert len(clusters["2026-04-20 15:52 UTC"]) == 2
 
 
+def test_synthetic_hour_bucket_never_exempt():
+    assert SA.is_presumed_synthetic_batch_stamp("2026-05-29 19:00 UTC")
+    assert SA.is_presumed_synthetic_batch_stamp("2026-05-29 18:00 UTC")
+    assert not SA.is_presumed_synthetic_batch_stamp("2026-05-30 10:26 UTC")
+
+
+def test_git_single_commit_exempt():
+    board = """\
+## MoSCOW Prioritized
+- **FR-100** – one - OPEN - [FR-100](fr-br/FR-100-a.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-101** – two - OPEN - [FR-101](fr-br/FR-101-b.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-102** – three - OPEN - [FR-102](fr-br/FR-102-c.md) | Last modified: 2026-05-30 10:26 UTC
+"""
+    stamp = "2026-05-30 10:26 UTC"
+    row_ids = ["FR-100", "FR-101", "FR-102"]
+    original = SA.git_derived_stamp_and_commit_for_row
+
+    def fake_git(line, kanban_root, project_root):
+        return stamp, "abc123commit"
+
+    try:
+        SA.git_derived_stamp_and_commit_for_row = fake_git
+        assert SA.cluster_is_git_single_commit_exempt(
+            board, stamp, row_ids, Path("/k"), Path("/p")
+        )
+        assert not SA.cluster_is_git_single_commit_exempt(
+            board, "2026-05-29 19:00 UTC", row_ids, Path("/k"), Path("/p")
+        )
+    finally:
+        SA.git_derived_stamp_and_commit_for_row = original
+
+
+def test_homogeneity_clusters_blocking_exempts_git():
+    board = """\
+## MoSCOW Prioritized
+- **FR-100** – one - OPEN - [FR-100](fr-br/FR-100-a.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-101** – two - OPEN - [FR-101](fr-br/FR-101-b.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-102** – three - OPEN - [FR-102](fr-br/FR-102-c.md) | Last modified: 2026-05-30 10:26 UTC
+"""
+    root = Path("/proj")
+    kroot = Path("/proj/kanban")
+    original = SA.git_derived_stamp_and_commit_for_row
+
+    def fake_git(line, kanban_root, project_root):
+        return "2026-05-30 10:26 UTC", "samecommit"
+
+    try:
+        SA.git_derived_stamp_and_commit_for_row = fake_git
+        blocking = SA.homogeneity_clusters_blocking(board, root, kroot, threshold=3)
+        assert blocking == {}
+    finally:
+        SA.git_derived_stamp_and_commit_for_row = original
+
+
 def run_all():
     tests = [
         test_extract_row_stamps,
@@ -93,6 +147,9 @@ def run_all():
         test_validate_stamp_diff_manifest_allows,
         test_validate_stamp_diff_denies_without_evidence,
         test_homogeneity_clusters,
+        test_synthetic_hour_bucket_never_exempt,
+        test_git_single_commit_exempt,
+        test_homogeneity_clusters_blocking_exempts_git,
     ]
     failed = 0
     for fn in tests:

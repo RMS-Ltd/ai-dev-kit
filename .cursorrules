@@ -585,9 +585,9 @@ For each step, follow this pattern:
    - **CRITICAL:** Apply deterministic fbuboard active-row reconciliation:
      - Prune active MoSCOW rows whose linked FR/BR/UXR doc status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`)
      - Keep explicit unresolved-verification exceptions active (e.g., status includes `IN PROGRESS`, `UNVERIFIED`, `PENDING VERIFICATION`)
-   - **CRITICAL (FR-097):** Do **not** unify or rewrite active row `Last modified` stamps on hygiene (STRUCTURE-only). Only board-level `Last Updated` metadata may change. Before staging: snapshot boards (`snapshot_kanban_boards.py`), then run `validate_board_stamp_diff.py` — **abort UKW** on non-zero exit (un evidenced stamp deltas).
+   - **CRITICAL (FR-097):** Do **not** unify, normalize, or rewrite active row `Last modified` stamps on hygiene (STRUCTURE-only). **Never** batch-assign `current UTC` or round-hour buckets across rows. Only board-level `Last Updated` metadata may change on hygiene. Derive new stamps only via `backfill_board_row_stamps.py` or RW Step 7 with evidence manifest. Snapshot at start; run `validate_board_stamp_diff.py` before stage — **abort UKW** on non-zero exit. Pre-commit (`validate_board_stamps_precommit.py`) blocks homogeneity (≥3 identical stamps).
    - **CRITICAL:** Apply pre-write concurrency revalidation (if board changed mid-run, re-read latest content and re-apply transforms before write)
-   - **CRITICAL:** Document reconciliation stats (audited rows, removed rows, kept exceptions, timestamps normalized, revalidation trigger)
+   - **CRITICAL:** Document reconciliation stats (audited rows, removed rows, kept exceptions, revalidation trigger)
 7. **Validate Consistency** - **Runs if comprehensive (no flags) or bookkeeping (`-u`):** Cross-reference status across all kanban documents, verify version consistency, check link integrity
 8. **Stage Files** - **Always runs:** Run `git add` for all kanban files
 9. **Document Changes** - **Always runs:** Create summary of updated documents, list key status changes

@@ -17,6 +17,17 @@ Row `| Last modified: YYYY-MM-DD HH:MM UTC` on `kboard.md` and `fbuboard.md` is 
 
 **Related — MoSCOW state icons (UXR-012):** Icon-only or status-driven icon updates are **CONTENT** when tied to a substantive status change; STRUCTURE-only hygiene must not swap icons arbitrarily. See [`state-icons.md`](state-icons.md) and `validate_kanban_state_icons.py` (Release Readiness Gate 9).
 
+## Pre-commit (mandatory for contributors)
+
+```bash
+pre-commit install   # or: cp scripts/git-hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+```
+
+Runs `validate_board_stamps_precommit.py` on staged `kboard.md` / `fbuboard.md`:
+
+- **Homogeneity:** blocks when **≥3** rows share one stamp (config: `rw-config.yaml` → `board_stamp.homogeneity_threshold`).
+- **Stamp diff:** blocks unevidenced stamp changes vs `HEAD` (same as RW Step 9).
+
 ## UKW / RW workflow
 
 1. **Snapshot** at start:
@@ -53,7 +64,14 @@ Omit `--dry-run` to apply. Derivation order: linked doc `**Last updated:**` → 
 
 ## Release-readiness Gate 8
 
-`validate_release_readiness.py` Gate 8 fails when ≥10 MoSCOW rows share the same stamp (homogeneity cluster).
+`validate_release_readiness.py` Gate 8 fails when **≥3** MoSCOW rows share the same stamp **unless** the cluster is **git-single-commit exempt**:
+
+- Each row’s stamp matches `git log -1` on its first resolvable linked task/FR/BR/UXR doc.
+- All those git touches share **one commit SHA** (e.g. one RW touching many linked docs).
+
+**Never exempt:** UKW hour-bucket stamps (`… 17:00 UTC`, `… 18:00 UTC`, `… 19:00 UTC`) — always blocking.
+
+Threshold: `board_stamp.homogeneity_threshold` in `rw-config.yaml` (default **3**).
 
 ## Scripts
 

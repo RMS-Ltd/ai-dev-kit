@@ -1,0 +1,12 @@
+# Board stamp authority (FR-097) — install: pre-commit install
+# See packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md
+
+repos:
+  - repo: local
+    hooks:
+      - id: validate-board-stamps
+        name: FR-097 board stamp homogeneity + diff guard
+        entry: python "packages/frameworks/workflow mgt/scripts/validation/validate_board_stamps_precommit.py"
+        language: system
+        files: ^docs/project-management/kanban/(kboard|fbuboard)\.md$
+        pass_filenames: false

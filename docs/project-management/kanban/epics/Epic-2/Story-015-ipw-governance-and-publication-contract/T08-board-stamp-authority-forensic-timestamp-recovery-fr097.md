@@ -9,11 +9,12 @@ housekeeping_policy: keep
 # Epic 2, Story 15, Task 8: Board stamp authority and forensic timestamp recovery (FR-097)
 
 **Task ID:** E02:S15:T08  
-**Status:** ✅ COMPLETE (v0.2.15.8+2)  
+**Status:** ✅ COMPLETE (v0.2.15.8+3)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Large (multi-wave; validator + pipeline + backfill)  
 **Created:** 2026-05-20  
-**Last updated:** 2026-05-20 (implementation delivered; pending `RW E02:S15:T08` for version anchor)  
+**Last updated:** 2026-05-30 (follow-on hardening — pre-commit, threshold 3, backfill, git-exempt Gate 8)  
+**Version Anchor:** v0.2.15.8+3  
 **Code:** E02S15T08
 
 **Upstream:** [FR-097 — Board stamp authority, blocking validation, and forensic timestamp recovery](../../../fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)

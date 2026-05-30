@@ -14,7 +14,6 @@ config:
   fr_br_uxr_completed: fbu-completed.md
   fr_br_uxr_structure: fbu-structure.md
   fr_br_uxr_completed_skill: .cursor/skills/fr-br-uxr-completed-update/SKILL.md
-  normalize_board_timestamps_script: packages/frameworks/workflow mgt/scripts/kanban/normalize_board_row_timestamps.py
   snapshot_boards_script: packages/frameworks/workflow mgt/scripts/kanban/snapshot_kanban_boards.py
   validate_board_stamp_diff_script: packages/frameworks/workflow mgt/scripts/validation/validate_board_stamp_diff.py
   kanban_structure: kanban-structure.md

@@ -596,17 +596,17 @@ After completing UKW, users typically run RW to commit the kanban documentation 
    - **MoSCOW state icons (UXR-012):** preserve icons on hygiene-only passes; add or change icons only when the row’s **status token** changes. Corpus enforcement: `validate_kanban_state_icons.py` (Release Readiness Gate 9). See [`state-icons.md`](state-icons.md).
 
 3. **EXECUTE:**
-   - Apply deterministic row cleanup and timestamp normalization.
+   - Apply deterministic row cleanup (**prune, dedupe, wiring only** — **no row `Last modified` writes**).
    - Perform pre-write concurrency revalidation:
      - If file changed since initial read, re-read latest content and re-apply cleanup/transforms before writing.
 
 4. **VALIDATE:**
    - No stale terminal-status rows remain in active sections.
    - Exception rows that are intentionally unresolved remain active.
-   - Header/row timestamps are consistent.
+   - Row stamps unchanged unless a linked FR/BR/UXR/task doc also changed (FR-097).
 
 5. **PROCEED:**
-   - Report reconciliation stats: audited rows, rows removed, exceptions kept, timestamps normalized, and whether concurrency revalidation was triggered.
+   - Report reconciliation stats: audited rows, rows removed, exceptions kept, and whether concurrency revalidation was triggered.
    - Move to Step 6.6 (FBU temporal tracking).
 
 **Scope:** Runs on **comprehensive** (`UKW` no flags) and **bookkeeping** (`UKW -u`) paths. Skipped on `-p` / `-a` only runs.

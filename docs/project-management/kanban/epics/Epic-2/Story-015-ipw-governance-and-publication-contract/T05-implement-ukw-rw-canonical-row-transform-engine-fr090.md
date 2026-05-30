@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 2, Story 15, Task 5: Implement UKW/RW canonical row transform engine (FR-090)
 
 **Task ID:** E02:S15:T05  
-**Status:** SUPERSEDED -> [E02:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
+**Status:** SUPERSEDED -> [E2:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Large  
 **Created:** 2026-04-22  

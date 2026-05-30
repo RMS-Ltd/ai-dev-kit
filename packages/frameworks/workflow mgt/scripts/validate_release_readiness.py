@@ -1098,18 +1098,23 @@ def gate_7_four_surface_parity(
 def gate_8_stamp_homogeneity(
     project_root: Path,
     *,
-    homogeneity_threshold: int = 10,
+    homogeneity_threshold: Optional[int] = None,
 ) -> GateVerdict:
     """Fail when too many MoSCOW rows share an identical Last modified stamp."""
     findings: List[str] = []
-    evidence: Dict[str, Any] = {"homogeneity_threshold": homogeneity_threshold}
+    evidence: Dict[str, Any] = {}
     kanban_scripts = project_root / (
         "packages/frameworks/workflow mgt/scripts/kanban"
     )
     if str(kanban_scripts) not in sys.path:
         sys.path.insert(0, str(kanban_scripts))
     try:
-        from stamp_authority import active_board_paths, homogeneity_clusters
+        from stamp_authority import (
+            active_board_paths,
+            homogeneity_clusters_blocking,
+            homogeneity_threshold_from_config,
+            kanban_root_from_config,
+        )
     except ImportError as exc:
         return GateVerdict(
             gate_id=8,
@@ -1121,6 +1126,10 @@ def gate_8_stamp_homogeneity(
             evidence=evidence,
         )
 
+    if homogeneity_threshold is None:
+        homogeneity_threshold = homogeneity_threshold_from_config(project_root)
+    evidence["homogeneity_threshold"] = homogeneity_threshold
+
     config = None
     try:
         config_path = project_root / "rw-config.yaml"
@@ -1130,12 +1139,17 @@ def gate_8_stamp_homogeneity(
     except Exception:
         config = None
 
+    kroot = kanban_root_from_config(project_root, config)
+
     for board_path in active_board_paths(project_root, config):
         if not board_path.exists():
             continue
         content = board_path.read_text(encoding="utf-8", errors="ignore")
-        clusters = homogeneity_clusters(
-            content, threshold=homogeneity_threshold
+        clusters = homogeneity_clusters_blocking(
+            content,
+            project_root,
+            kroot,
+            threshold=homogeneity_threshold,
         )
         evidence[str(board_path.name)] = {
             stamp: len(row_ids) for stamp, row_ids in clusters.items()
@@ -1143,7 +1157,8 @@ def gate_8_stamp_homogeneity(
         for stamp, row_ids in clusters.items():
             findings.append(
                 f"{board_path.name}: stamp '{stamp}' appears on "
-                f"{len(row_ids)} rows (threshold {homogeneity_threshold}): "
+                f"{len(row_ids)} rows (threshold {homogeneity_threshold}, "
+                f"not git-single-commit exempt): "
                 f"{row_ids[:5]}{'...' if len(row_ids) > 5 else ''}"
             )
 

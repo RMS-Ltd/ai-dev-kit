@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# FR-097 board stamp guard (fallback when pre-commit framework not installed).
+# Install: cp scripts/git-hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+
+set -euo pipefail
+ROOT="$(git rev-parse --show-toplevel)"
+exec python "$ROOT/packages/frameworks/workflow mgt/scripts/validation/validate_board_stamps_precommit.py" \
+  --project-root "$ROOT"

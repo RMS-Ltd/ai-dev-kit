@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 2, Story 15, Task 2: IPP post-run governance reconciliation ownership (FR-084)
 
 **Task ID:** E02:S15:T02  
-**Status:** SUPERSEDED -> [E02:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
+**Status:** SUPERSEDED -> [E2:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  

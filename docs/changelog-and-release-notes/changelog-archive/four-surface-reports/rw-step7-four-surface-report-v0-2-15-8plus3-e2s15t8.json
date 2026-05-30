@@ -1,0 +1,40 @@
+{
+  "contract": "FR-092 / FR-091 (RW Step 7)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 15,
+    "task": 8,
+    "task_id": "E02:S15:T08",
+    "version_string": "v0.2.15.8+3"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "work_authoritative",
+    "backfill_reports": [
+      "fr097-backfill-report-2026-05-30.json",
+      "fr097-backfill-report-2026-05-30-pass2.json"
+    ]
+  },
+  "surfaces": {
+    "task_doc": {
+      "paths": ["docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md"],
+      "touched": true
+    },
+    "fbu_doc": {
+      "paths": ["docs/project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md"],
+      "touched": false,
+      "notes": ["FR-097 doc already COMPLETE at v0.2.15.8+2; follow-on hardening is tooling/docs/board recovery only — no FBU status mutation required."]
+    },
+    "kboard": {
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "touched": true,
+      "changes": ["FR-097 backfill pass; stamp authority recovery"]
+    },
+    "fbuboard": {
+      "paths": ["docs/project-management/kanban/fbuboard.md"],
+      "touched": true,
+      "changes": ["FR-097 backfill pass; stamp authority recovery"]
+    }
+  },
+  "timestamp_utc": "2026-05-30 10:47 UTC"
+}

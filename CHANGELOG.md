@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.9+2] - 30-05-26
+## [0.2.15.8+3] - 30-05-26
 
-E04:S19:T09 (UXR-014) — Two-digit E/S/T write-default: `est_format.py`, policy/guides, full kanban corpus normalization, optional lint. SemVer **v0.4.827+2**.
+E02:S15:T08 (FR-097) — Stamp authority hardening: remove normalize script, pre-commit guard, threshold 3, backfill, git-exempt Gate 8. SemVer **v0.4.828+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.9+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.8+3.md)
 
 ---
 

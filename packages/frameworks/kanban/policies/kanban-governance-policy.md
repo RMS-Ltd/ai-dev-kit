@@ -333,8 +333,9 @@ Each task entry in the MoSCOW sections includes:
 - **CONTENT** edits (linked FR/BR/UXR/task substantive delta, version anchor, release-scope manifest) **may** change row stamps with provenance.
 - **Write boundary:** `validate_board_stamp_diff.py` compares before/after board snapshots; UKW and RW **abort** when any row stamp changes without evidence (manifest or linked-source fingerprint delta).
 - **Recovery:** `backfill_board_row_stamps.py` derives stamps from linked doc `**Last updated:**` then git; never invents `now()` when ambiguous.
-- **Homogeneity gate:** `validate_release_readiness.py` Gate 8 fails when ≥10 rows share an identical stamp (configurable threshold).
-- **Deprecated:** row-level “temporal-drift normalization” / unifying active row stamps to a single UTC value on hygiene passes.
+- **Homogeneity gate:** Gate 8 and pre-commit fail when **≥3** rows share an identical stamp, **except** git-single-commit exempt clusters (see board-stamp-authority.md). UKW hour buckets (`17:00`/`18:00`/`19:00`) are **never** exempt.
+- **Pre-commit:** `validate_board_stamps_precommit.py` blocks homogenized stamps and unevidenced stamp churn on commit (`pre-commit install`).
+- **Deprecated / removed:** row-level “temporal-drift normalization”, batch `current UTC` assignment, and `normalize_board_row_timestamps.py` (deleted).
 
 **MoSCOW state icons (UXR-012 / E4:S13:T07):**
 - Active MoSCOW rows on `kboard.md` and `fbuboard.md` carry a **canonical Set A emoji** before the status word; see `kanban-board-guide.md` and UXR-012 for the mapping and **Set B fallback** (non-board contexts only).
