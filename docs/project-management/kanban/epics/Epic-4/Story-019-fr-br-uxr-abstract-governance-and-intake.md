@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-02  
-**Last updated:** 2026-05-14 (v0.4.19.4+5 – T04 complete: E4:S19:T04)
-**Version:** v0.4.19.4+5
+**Last updated:** 2026-05-30 (v0.4.19.9+1 – T09 kanban init: UXR-014)
+**Version:** v0.4.19.9+1
 **Code:** E4S19  
 
 **Story type:** Ongoing governance (not a perpetual “repo ledger”; not a dumping ground for individual **FR-### / BR-### / UXR-###** implementation work).
@@ -37,6 +37,8 @@ housekeeping_policy: keep
 - [ ] **E4:S19:T07 – FR-021 repository pattern supersession (FR-072 reconciliation)** - TODO (MEDIUM) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md) | [FR-021](../../fr-br/FR-021-fr-br-uxr-repository-stories.md)
 
 - [ ] **E4:S19:T08 – FR-072 Approach D phases D2–D4 migration and doc sweep** - TODO (HIGH) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | [FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+
+- [ ] **E4:S19:T09 – Two-digit E/S/T identifier default formatting (UXR-014)** - TODO (MEDIUM, kanban init **v0.4.19.9+1**; canonical inline `E{NN}:S{NN}:T{NN}` write-default; zero-pad when `<10`) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) | [UXR-014](../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
 
 ---
 

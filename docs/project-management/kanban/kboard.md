@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-29 (RW: E2:S16:T4)
-**Version:** v0.2.16.4+16
+**Last Updated:** 2026-05-30 (RW -k: E4:S19:T09)
+**Version:** v0.4.19.9+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -52,7 +52,7 @@ housekeeping_policy: keep
 - **E5:S01:T48** – FR-048: ICW task identifier argument - 🟢 PENDING (LOW, superseded in practice by **FR-042** IPW) | [Task](epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md) | [FR-048](fr-br/FR-048-icw-task-identifier-argument.md) | Last modified: 2026-05-29 19:00 UTC
 - **E5:S02:T06** – FR-063: CMW Epic 5 execution context - 🔄 ACTIVE (LOW) | [Task](epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md) | [FR-063](fr-br/FR-063-cmw-epic-5-execution-context.md) | Last modified: 2026-05-29 19:00 UTC
 - **E4:S19:T08** – FR-072: Uniform repository abstract-space kanban rules - 🔄 IN PROGRESS (HIGH, Approach D batch wiring) | [Task](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | Last modified: 2026-05-29 19:00 UTC
-- **E4:S19:T09** – UXR-014: Two-digit default E/S/T identifier formatting - 📥 INTAKE (MEDIUM, zero-pad Epic/Story/Task when `<10`) | [Task](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) | [UXR-014](fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) | Last modified: 2026-05-30 12:00 UTC
+- **E4:S19:T09** – UXR-014: Two-digit default E/S/T identifier formatting - 📥 INTAKE (MEDIUM, kanban init **v0.4.19.9+1**; zero-pad Epic/Story/Task when `<10`) | [Task](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) | [UXR-014](fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) | Last modified: 2026-05-30 08:56 UTC
 - **E5:S01:T74** – FR-074: Kanban intake atomic KG-R2/KG-R6 governance - 🟢 PENDING (LOW) | [Task](epics/Epic-5/Story-001-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md) | [FR-074](fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md) | Last modified: 2026-05-29 19:00 UTC
 
 *(E4:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). FR-031 / FR-024 / FR-057 retired off active board — [fbu-completed.md](fbu-completed.md).)*

@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.19.9+1] - 30-05-26
+
+E4:S19:T09 (UXR-014) — Kanban init: two-digit default E/S/T identifier formatting UXR; atomic intake + task **E4:S19:T09** + board wiring. SemVer **v0.4.826+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.9+1.md)
+
+---
+
 ## [0.5.1.46+7] - 30-05-26
 
 E5:S01:T46 (FR-046) — Closure wave: audit PASS, IPP, doc parity, T07 supersession, kanban sync. SemVer **v0.4.823+7**.

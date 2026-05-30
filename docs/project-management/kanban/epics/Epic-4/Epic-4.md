@@ -89,9 +89,9 @@ housekeeping_policy: keep
   - Story: [`Story-018-kanban-board-info-only-split.md`](Story-018-kanban-board-info-only-split.md)
   - Tasks: T01 ✅ COMPLETE (v0.4.18.1+1), T02 ✅ COMPLETE (v0.4.18.2+1)
 
-- [ ] **E4:S19 – FR/BR/UXR abstract governance and intake** - IN PROGRESS (v0.4.19.4+5)
+- [ ] **E4:S19 – FR/BR/UXR abstract governance and intake** - IN PROGRESS (v0.4.19.9+1)
   - Story: [`Story-019-fr-br-uxr-abstract-governance-and-intake.md`](Story-019-fr-br-uxr-abstract-governance-and-intake.md)
-  - Tasks: **T01** stub only (**BR-060** lives under **E2:S01:T09**)
+  - Tasks: **T09** TODO (**UXR-014** kanban init **v0.4.19.9+1**); **T01** stub only (**BR-060** lives under **E2:S01:T09**)
 
 
 ---

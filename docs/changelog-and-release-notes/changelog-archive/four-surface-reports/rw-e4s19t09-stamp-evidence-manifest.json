@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E4:S19:T09": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.4.19.9+1 — UXR-014 kanban init row stamp + version context"
+    },
+    "UXR-014": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.4.19.9+1 — fbuboard UXR-014 row stamp + version context"
+    }
+  }
+}

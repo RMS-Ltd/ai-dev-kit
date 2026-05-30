@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-29 (RW **v0.2.16.4+16** — kboard/fbuboard bidirectional wiring)
-**Version Context:** v0.2.16.4+16 (**SemVer** v0.4.822+16)
+**Last Updated:** 2026-05-30 (RW -k **v0.4.19.9+1** — UXR-014 kanban init)
+**Version Context:** v0.4.19.9+1 (**SemVer** v0.4.826+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -106,7 +106,7 @@ This board provides **centralized visibility and prioritization** for all open F
 - **FR-063** – CMW Epic 5 execution context - 🔄 ACTIVE (LOW) | [FR-063](fr-br/FR-063-cmw-epic-5-execution-context.md) | [E5:S02:T06](epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md) | —No IPP— | Last modified: 2026-05-29 19:00 UTC
 - **FR-072** – Uniform repository abstract-space kanban rules - 🔄 IN PROGRESS (HIGH, **E4:S19:T08** Approach D batch wiring) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [E4:S19:T08](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | —No IPP— | Last modified: 2026-05-29 17:20 UTC
 - **FR-074** – Kanban intake atomic KG-R2/KG-R6 governance - 🟢 PENDING (LOW, **E5:S01:T74** primary; coordinates **E4:S19:T06**) | [FR-074](fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md) | [E5:S01:T74](epics/Epic-5/Story-001-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md) | —No IPP— | Last modified: 2026-05-29 19:00 UTC
-- **UXR-014** – Two-digit default E/S/T identifier formatting - 📥 INTAKE (MEDIUM, **E4:S19:T09** — zero-pad Epic/Story/Task when `<10`) | [UXR-014](fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) | [E4:S19:T09](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) | —No IPP— | Last modified: 2026-05-30 12:00 UTC
+- **UXR-014** – Two-digit default E/S/T identifier formatting - 📥 INTAKE (MEDIUM, kanban init **v0.4.19.9+1**; **E4:S19:T09** — zero-pad Epic/Story/Task when `<10`) | [UXR-014](fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) | [E4:S19:T09](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) | —No IPP— | Last modified: 2026-05-30 08:56 UTC
 
 ### Won't Have (W) - Deferred / closed off active board
 
