@@ -53,7 +53,7 @@ housekeeping_policy: keep
    - **Overrides** generic “never stop” until intent is resolved (documented exception).
 6. **Execute steps for selected path** using the ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED pattern (only if Steps 1, 1b, 1c, and 1d pass)
 7. **Document** each step's analysis, actions, and results
-8. **MUST USE Cursor TODOs:** Create and maintain a TODO list tracking the steps for the selected path
+8. **MUST USE Workflow Step Tracker:** Per [Workflow Step Tracker Contract](packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for the selected path
 
 **Execution Paths by Trigger Type:**
 
@@ -107,9 +107,9 @@ kanban_root = config.get('kanban_root', 'docs/project-management/kanban') if con
 - If `rw-config.yaml` doesn't exist, use placeholder patterns (`{project}`, `{kanban_path}`, etc.)
 - This ensures RW works in projects that haven't run the installer yet
 
-**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+**🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list for the steps in the selected execution path:
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md). In Cursor, use `todo_write` as the reference adapter for the steps in the selected execution path:
 
 **Trigger-Specific Step Lists:**
 
@@ -444,7 +444,7 @@ For each step, follow this pattern:
 - ✅ **Context-Aware:** Use branch context, version schema, and project state to make decisions
 - ✅ **Validation:** Verify each step succeeded before proceeding
 - ✅ **Documentation:** Document decisions and actions at each step
-- ✅ **Progress Tracking:** MUST use Cursor TODOs to track all 12 steps (Steps 1-12 required, Steps 13-14 optional)
+- ✅ **Progress Tracking:** MUST use Workflow Step Tracker per contract for all steps (Steps 1-12 required, Steps 13-14 optional)
 - ✅ **Branch Safety First:** Step 1 validates branch alignment before any modifications
 - ✅ **Canonical Ordering:** Version numbers (not timestamps) determine changelog ordering - versions are the canonical ordering metric
 - ✅ **Forensic Traceability:** Maintain complete traceability grid (version ↔ epic/story/task ↔ changelogs ↔ kanban ↔ git)
@@ -544,11 +544,11 @@ For each step, follow this pattern:
 - ✅ **Criteria as Guidance:** Criteria inform decisions, not dictate them
 - ✅ **Clear Documentation:** Explain decisions and reasoning
 
-**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+**🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list tracking all 6 PVW steps. This is **NOT OPTIONAL** - it is a mandatory requirement for PVW execution.
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 6 PVW steps. In Cursor, use `todo_write` as the reference adapter.
 
-**Why TODOs are Required:**
+**Why step tracking is required:**
 - ✅ **User Visibility:** User can see real-time progress through all 6 steps
 - ✅ **Agent Organization:** Helps agent stay organized across sequential steps
 - ✅ **Error Recovery:** Clear visibility into where execution stopped if interrupted

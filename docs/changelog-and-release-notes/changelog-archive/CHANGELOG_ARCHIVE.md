@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.2.16.4+21] - 30-05-26
+
+E02:S16:T04 — UKW `-c` kboard prune. SemVer **v0.4.840+21**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+21.md)
+---
 ## [0.2.16.16+3] - 30-05-26
 
 E02:S16:T16 — UKW `-c` post-ship hygiene (incomplete kboard prune). SemVer **v0.4.840+3**.

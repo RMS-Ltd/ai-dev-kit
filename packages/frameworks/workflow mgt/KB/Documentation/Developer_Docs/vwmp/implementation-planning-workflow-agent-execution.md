@@ -31,7 +31,7 @@ housekeeping_policy: keep
 
 ## Execution pattern (ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED)
 
-Create a TODO list for all phases before starting. Mark each phase complete before advancing. **Phase gates are mandatory — never skip.**
+Create a phase tracker for all IPW phases before starting (Workflow Step Tracker per [contract](workflow-step-tracker-contract.md); Cursor: `todo_write` with `ipw-phase-*` IDs). Mark each phase complete before advancing. **Phase gates are mandatory — never skip.**
 
 | Phase | Name | Gate to proceed |
 | ----- | ---- | --------------- |

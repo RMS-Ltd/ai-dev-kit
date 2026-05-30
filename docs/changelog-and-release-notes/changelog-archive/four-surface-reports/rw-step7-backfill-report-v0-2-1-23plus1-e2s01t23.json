@@ -1,0 +1,11 @@
+{
+  "report_type": "rw_step7_scoped_reconciliation",
+  "release_version": "0.2.1.23+1",
+  "release_scope": "E02:S01:T23",
+  "rows": {
+    "E02:S01:T23": {
+      "allowed": true,
+      "reason": "RW Step 7 release-scope task row stamp sync (v0.2.1.23+1)"
+    }
+  }
+}

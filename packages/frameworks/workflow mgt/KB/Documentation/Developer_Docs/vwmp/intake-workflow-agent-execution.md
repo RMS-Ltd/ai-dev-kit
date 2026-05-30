@@ -46,9 +46,9 @@ For each step, the agent follows this pattern:
 4. **VALIDATE** - Verify execution succeeded
 5. **PROCEED** - Document and move to next step
 
-### 🚨 MANDATORY: Progress Tracking with Cursor TODOs
+### 🚨 MANDATORY: Progress Tracking with Workflow Step Tracker
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list tracking all 7 Intake Workflow steps. This is **NOT OPTIONAL** - it is a mandatory requirement for Intake Workflow execution.
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](workflow-step-tracker-contract.md). In Cursor, use `todo_write` as the reference adapter; in Windsurf/Cascade use `todo_list`.
 
 **Why TODOs are Required:**
 - ✅ **User Visibility:** User can see real-time progress through all 7 steps
@@ -93,7 +93,7 @@ For each step, the agent follows this pattern:
 **Enforcement:**
 - ❌ **DO NOT** execute Intake Workflow without creating TODO list first
 - ❌ **DO NOT** skip TODO updates between steps
-- ✅ **MUST** create TODO list before Step 1 execution
+- ✅ **MUST** initialize Workflow Step Tracker before Step 1 execution
 - ✅ **MUST** update TODO status before and after each step
 - ✅ **MUST** mark all steps as completed on successful completion
 

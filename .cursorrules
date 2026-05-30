@@ -73,7 +73,7 @@
 7. **EXECUTE INTELLIGENTLY** - Use your AI capabilities to solve problems, don't just follow rigid steps
 8. **ADAPT AND RECOVER** - When scripts fail, find alternative approaches or implement manual workarounds
 9. **Document** each step's analysis, actions, and results
-10. **MUST USE Cursor TODOs:** Create and maintain a TODO list tracking all steps (see below)
+10. **MUST USE Workflow Step Tracker:** Create and maintain step progress per [Workflow Step Tracker Contract](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) (see below)
 
 **🧠 AGENT INTELLIGENCE REQUIREMENTS:**
 
@@ -237,11 +237,11 @@ kanban_root = config.get('kanban_root', 'docs/project-management/kanban') if con
 - If `rw-config.yaml` doesn't exist, use placeholder patterns (`{project}`, `{kanban_path}`, etc.)
 - This ensures RW works in projects that haven't run the installer yet
 
-**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+**🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list for all 12 Release Workflow steps (plus optional Step 9.5):
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 12 Release Workflow steps (plus optional Step 9.5). In Cursor, use `todo_write` as the reference adapter.
 
-1. **At Workflow Start:** Create TODO list with all 12 steps as `pending`
+1. **At Workflow Start:** Create step list with all 12 steps as `pending`; initialize agent run log when resumption may be needed (see ADR-011)
 2. **Before Each Step:** Mark step as `in_progress`
 3. **After Each Step:** Mark step as `completed` and mark next step as `in_progress`
 4. **On Completion:** All steps marked as `completed`
@@ -404,11 +404,11 @@ For each step, follow this pattern:
    - **E. Release Body:** Includes both SemVer and internal version for traceability
    - **Note:** If `GITHUB_TOKEN` is not found in `.env.local` or environment, script will error with clear message (non-blocking, workflow continues)
 
-13. **Housekeeping** - Clean up IDE state and temporary artifacts
-   - Clear IDE todo list (all `rw-step-*` todos) by marking them as `cancelled`
-   - **Note:** `todo_write` tool doesn't support deletion, so `cancelled` status is used to hide todos
-   - Use `todo_write(merge=True, todos=[{'id': 'rw-step-*', 'status': 'cancelled'}, ...])` for all RW steps
-   - Future: May include cleanup of temporary files, reset IDE state, etc.
+13. **Housekeeping** - Clean up tracker state and temporary artifacts
+   - Cancel/clear workflow step tracker entries (all `rw-step-*` steps) via tracker adapter
+   - Finalize agent run log (`ended_at`, terminal `status`) per [ADR-011](docs/architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
+   - **Cursor adapter:** `todo_write(merge=True, todos=[{'id': 'rw-step-*', 'status': 'cancelled'}, ...])` — tool may not support deletion; `cancelled` hides entries
+   - Forensic journal finalization remains ADR-008 scope
    - **Reference:** See RW documentation Step 17: Housekeeping for details
 
 **Key Principles:**
@@ -416,7 +416,7 @@ For each step, follow this pattern:
 - ✅ **Context-Aware:** Use branch context, version schema, and project state to make decisions
 - ✅ **Validation:** Verify each step succeeded before proceeding
 - ✅ **Documentation:** Document decisions and actions at each step
-- ✅ **Progress Tracking:** MUST use Cursor TODOs to track all 12 steps (plus optional Step 9.5)
+- ✅ **Progress Tracking:** MUST use Workflow Step Tracker per contract for all 12 steps (plus optional Step 9.5)
 - ✅ **Branch Safety First:** Step 1 validates branch alignment before any modifications
 - ✅ **Canonical Ordering:** Version numbers (not timestamps) determine changelog ordering
 - ✅ **Forensic Traceability:** Maintain complete traceability grid (version ↔ epic/story/task ↔ changelogs ↔ kanban ↔ git)
@@ -471,9 +471,9 @@ For each step, follow this pattern:
 5. **Step 5: Validate Updates** - Run validation scripts as tools, verify format/consistency
 6. **Step 6: Document & Proceed** - Document changes, pass to RW Step 3
 
-**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+**🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list tracking all 6 PVW steps.
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 6 PVW steps. In Cursor, use `todo_write` as the reference adapter.
 
 **Agent Execution Guide:**
 - See `docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md` for detailed step-by-step guide
@@ -543,7 +543,7 @@ For each step, follow this pattern:
 6. **Follow** the step-by-step guide below using **BOTTOM-UP APPROACH**
 7. **Execute steps conditionally** based on flags using the ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED pattern with **intelligent reasoning at each step**
 8. **Document** each step's analysis, reasoning, decisions, actions, and results
-9. **MUST USE Cursor TODOs:** Create and maintain a TODO list tracking all 9 steps (mark skipped steps as cancelled)
+9. **MUST USE Workflow Step Tracker:** Create and maintain step progress per contract (mark skipped steps as `cancelled`)
 
 **Default Paths (ai-dev-kit):**
 - `kanban_root`: `docs/project-management/kanban`
@@ -553,9 +553,9 @@ For each step, follow this pattern:
 - `kanban_board`: `kanban-board.md`
 - `fr_br_root`: `fr-br`
 
-**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+**🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list for all 9 UKW steps (including Step 2.5).
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 9 UKW steps (including Step 2.5). In Cursor, use `todo_write` as the reference adapter.
 
 **The 9 Steps (Bottom-Up Approach) - Conditional Execution Based on Flags:**
 

@@ -32,6 +32,10 @@ This workflow **requires significant agentic intelligence** at every step. This 
 
 **Key Principle:** Bottom-up approach - Update Tasks → Stories → Epics → Board (in that order). The MoSCOW priority list is updated LAST.
 
+### Progress Tracking with Workflow Step Tracker
+
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](workflow-step-tracker-contract.md) for all UKW steps (mark skipped steps `cancelled`). In Cursor, use `todo_write`; in Windsurf/Cascade use `todo_list`.
+
 **Trigger:** User types "UKW" or "ukw" (case-insensitive), with optional flags:
 - `UKW` (no flags) = **Comprehensive run** (all operations: bookkeeping + update priorities + assign priorities)
 - `UKW -u` = Bookkeeping sub-workflow only (restrict scope)

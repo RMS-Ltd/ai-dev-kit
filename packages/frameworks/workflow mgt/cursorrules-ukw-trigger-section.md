@@ -39,7 +39,7 @@ housekeeping_policy: keep
 5. **Follow** the step-by-step guide below using **BOTTOM-UP APPROACH**
 6. **Execute all steps** using the ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED pattern with **intelligent reasoning at each step**
 7. **Document** each step's analysis, reasoning, decisions, actions, and results
-8. **MUST USE Cursor TODOs:** Create and maintain a TODO list tracking all 9 steps
+8. **MUST USE Workflow Step Tracker:** Create and maintain a TODO list tracking all 9 steps
 
 **🔧 Config-Driven Approach (Preferred):**
 
@@ -58,9 +58,9 @@ If `rw-config.yaml` exists in project root and `use_kanban: true`, **MUST** load
 - `kanban_board`: `kboard.md`
 - `fr_br_root`: `fr-br`
 
-**🚨 MANDATORY: Progress Tracking with Cursor TODOs**
+**🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list for all 9 UKW steps:
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md). In Cursor, use `todo_write` as the reference adapter for all 9 UKW steps:
 
 1. **At Workflow Start:** Create TODO list with all 8 steps as `pending`
 2. **Before Each Step:** Mark step as `in_progress`

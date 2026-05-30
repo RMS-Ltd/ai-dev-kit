@@ -38,7 +38,7 @@ Adopt a **layered hybrid**:
 3. **`checkpoint_store.py`** — manifests under `docs/journals/checkpoints/{checkpoint_id}/manifest.json` capturing git porcelain and timestamp; **no automatic** `git reset --hard` or force-push on rollback.
 4. **WorkflowExecutor** — all subprocess entry points use `run_subprocess_logged`; checkpoints call `checkpoint_store.create_checkpoint`.
 5. **Housekeeping** — `journal_housekeeping.sweep()` enforces TTL from `rw-config.yaml` (`journal_ttl_days`, `journal_failed_ttl_days`).
-6. **Coordination** — FR-044 (RW temporary log file) and E02:S01:T23 (tool-agnostic tracker spec) remain out of scope; this ADR governs framework journal + executor forensic layer only.
+6. **Coordination** — FR-044 (RW temporary log file) and E02:S01:T23 ([ADR-011](ADR-011-workflow-step-tracker-and-agent-run-log.md) agent run log + Workflow Step Tracker) remain out of scope; this ADR governs framework journal + executor forensic layer only.
 
 ---
 
@@ -64,5 +64,6 @@ Adopt a **layered hybrid**:
 
 ## Related
 
+- [ADR-011](ADR-011-workflow-step-tracker-and-agent-run-log.md) — Workflow Step Tracker and agent run log (E02:S01:T23)
 - [FR-058](../../project-management/kanban/fr-br/FR-058-markdown-maintenance-workflow.md) — log formatting consistency context
 - [ADR-004](ADR-004-ipp-state-transition-contract.md) — task status transitions on implementation

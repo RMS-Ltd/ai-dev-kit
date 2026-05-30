@@ -48,9 +48,9 @@ For each step, the agent follows this pattern:
 4. **VALIDATE** - Verify execution succeeded
 5. **PROCEED** - Document and move to next step
 
-### 🚨 MANDATORY: Progress Tracking with Cursor TODOs
+### 🚨 MANDATORY: Progress Tracking with Workflow Step Tracker
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list tracking all 15 Testing Workflow steps. This is **NOT OPTIONAL** - it is a mandatory requirement for Testing Workflow execution.
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](workflow-step-tracker-contract.md). In Cursor, use `todo_write` as the reference adapter; in Windsurf/Cascade use `todo_list`.
 
 **Required Implementation Pattern:**
 

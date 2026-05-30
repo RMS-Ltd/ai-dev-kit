@@ -58,7 +58,7 @@ This guide encodes patterns and safeguards to avoid that.
 - Prefer a **small, stable set of tools** for RW:
   - File operations: `read_file`, `apply_patch`, `write`.  
   - Git / commands: `run_terminal_cmd`.  
-  - Progress tracking: `todo_write` (or equivalent).
+  - Progress tracking: [Workflow Step Tracker Contract](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) (Cursor `todo_write` or Windsurf `todo_list` adapter).
 
 - Avoid during RW:
   - Irrelevant language‑server tools.  
@@ -247,7 +247,7 @@ Adapt the names to your environment, but conceptually:
     - Project validators (branch context, changelog format, tests).
 
 - **Progress tracking:**  
-  - `todo_write` (or equivalent) for the 10 RW steps.
+  - [Workflow Step Tracker Contract](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for RW steps (not Cursor-specific).
 
 ### 6.2 Tools to Avoid During RW
 

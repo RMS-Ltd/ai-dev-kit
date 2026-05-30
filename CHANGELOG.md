@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+21] - 30-05-26
+## [0.2.1.23+1] - 30-05-26
 
-E02:S16:T04 — UKW `-c` kboard prune: remove active **E02:S16:T16** row (ledger already archived). SemVer **v0.4.840+21**.
+E02:S01:T23 — Workflow Step Tracker (ADR-011), agent run log v1 schema, governance doc sweep. SemVer **v0.4.841+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+21.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.23+1.md)
 
 ---

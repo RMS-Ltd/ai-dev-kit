@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rms-ltd.github.io/ai-dev-kit/schemas/workflow-agent-run-log-v1.schema.json",
+  "title": "Workflow Agent Run Log v1",
+  "description": "Spec-only persisted agent run log for cross-session workflow resumption (E02:S01:T23). Distinct from ADR-008 forensic RW journals.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "workflow",
+    "route",
+    "task_id",
+    "current_step",
+    "started_at",
+    "updated_at",
+    "status",
+    "steps"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "workflow": {
+      "type": "string",
+      "description": "Workflow identifier (e.g. RW, UKW, IPW, PVW)"
+    },
+    "route": {
+      "type": "string",
+      "description": "Trigger route or intent (e.g. RW E02:S01:T23 --art)"
+    },
+    "task_id": {
+      "type": "string",
+      "description": "Kanban task anchor E#:S#:T# when applicable"
+    },
+    "current_step": {
+      "type": ["string", "null"],
+      "description": "Active step ID or null when finished"
+    },
+    "blocking_reason": {
+      "type": ["string", "null"],
+      "description": "Human-readable reason when status is blocked or aborted"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ended_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["running", "blocked", "completed", "aborted"]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "status"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["pending", "in_progress", "completed", "cancelled"]
+          },
+          "started_at": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          },
+          "completed_at": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -158,11 +158,11 @@ For each step, the agent follows this pattern:
 4. **VALIDATE** - Verify execution succeeded
 5. **PROCEED** - Document and move to next step
 
-### 🚨 MANDATORY: Progress Tracking with Cursor TODOs
+### 🚨 MANDATORY: Progress Tracking with Workflow Step Tracker
 
-**REQUIRED:** Agents **MUST** use `todo_write` to create and maintain a TODO list tracking all 11 Release Workflow steps. This is **NOT OPTIONAL** - it is a mandatory requirement for Release Workflow execution.
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](workflow-step-tracker-contract.md). In Cursor, use `todo_write` as the reference adapter; in Windsurf/Cascade use `todo_list`.
 
-**Why TODOs are Required:**
+**Why step tracking is required:**
 - ✅ **User Visibility:** User can see real-time progress through all 13 steps
 - ✅ **Agent Organization:** Helps agent stay organized across 11 sequential steps
 - ✅ **Error Recovery:** Clear visibility into where execution stopped if interrupted
@@ -172,8 +172,9 @@ For each step, the agent follows this pattern:
 
 **Required Implementation Pattern:**
 
-1. **At Workflow Start (MANDATORY):** Create TODO list with all 15 steps as `pending`
+1. **At Workflow Start (MANDATORY):** Create step list with all RW steps as `pending`; initialize [agent run log](../../../../../../docs/architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json) at `docs/journals/agent-runs/rw-{run_id}.json` when cross-session resume is possible.
    ```python
+   # Cursor adapter example — see Workflow Step Tracker Contract
    todo_write(merge=False, todos=[
        {'id': 'rw-step-1', 'status': 'pending', 'content': 'Step 1: Branch Safety Check - Analyze work and ensure it aligns with current branch'},
        {'id': 'rw-step-2', 'status': 'pending', 'content': 'Step 2: Bump Version - Analyze current version and determine next version'},
@@ -192,7 +193,7 @@ For each step, the agent follows this pattern:
       {'id': 'rw-step-14', 'status': 'pending', 'content': 'Step 14: Post-Commit Verification & Reflection - Verify changes and reflect on results (optional but recommended)'},
       {'id': 'rw-step-15', 'status': 'pending', 'content': 'Step 15: Act on Verification Results - Update changelog, create follow-ups, document improvements (optional but recommended)'},
       {'id': 'rw-step-16', 'status': 'pending', 'content': 'Step 16: Check for PIR Trigger - Check Epic/Story COMPLETE status and trigger PIR workflow (optional but recommended)'},
-      {'id': 'rw-step-17', 'status': 'pending', 'content': 'Step 17: Housekeeping - Clear IDE todo list (optional but recommended)'},
+      {'id': 'rw-step-17', 'status': 'pending', 'content': 'Step 17: Housekeeping - Finalize agent run log; cancel tracker steps'},
    ])
    ```
 
@@ -215,13 +216,13 @@ For each step, the agent follows this pattern:
    ```
 
 **Enforcement:**
-- ❌ **DO NOT** execute Release Workflow without creating TODO list first
-- ❌ **DO NOT** skip TODO updates between steps
-- ✅ **MUST** create TODO list before Step 1 execution
-- ✅ **MUST** update TODO status before and after each step
-- ✅ **MUST** mark all steps as completed on successful completion
+- ❌ **DO NOT** execute Release Workflow without initializing the Workflow Step Tracker first
+- ❌ **DO NOT** skip tracker updates between steps
+- ✅ **MUST** initialize tracker before Step 1 execution
+- ✅ **MUST** update tracker status before and after each step
+- ✅ **MUST** finalize agent run log on completion or abort (Step 17)
 
-**Note:** The markdown checklist below (lines 480-512) serves as a reference, but Cursor TODOs are the **REQUIRED** mechanism for real-time progress tracking and user visibility.
+**Note:** The markdown checklist below serves as a reference. The **Workflow Step Tracker** is the **REQUIRED** mechanism for real-time progress (see [contract](workflow-step-tracker-contract.md)).
 
 ---
 
@@ -3243,20 +3244,18 @@ if result.exit_code != 0:
 
 1. **ANALYZE:**
    - Understand this is a housekeeping step that runs at the end of the Release Workflow
-   - Purpose: Clean up IDE state and temporary artifacts
-   - Current implementation: Clear IDE todo list
-   - Future: May include cleanup of temporary files, reset IDE state, etc.
+   - Purpose: Finalize agent run log and clear workflow step tracker state
+   - Initialize agent run log at workflow start per [ADR-011](../../../../../../docs/architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
+   - Forensic journal (ADR-008) is separate — finalize both when applicable
 
 2. **DETERMINE:**
-   - **If `clear_ide_todos: true`:**
-     - Clear all RW-related todos from the IDE todo list
-     - This includes all `rw-step-*` todos created during workflow execution
-   - **If `cleanup_temp_files: true` (future):**
-     - Remove temporary files created during workflow execution
-     - Clean up any staging artifacts
+   - **Agent run log:** Set `ended_at`, terminal `status` (`completed` or `aborted`), clear `current_step`
+   - **Workflow Step Tracker:** Cancel all `rw-step-*` entries via adapter
+   - **Cursor adapter:** Mark `rw-step-*` as `cancelled` when `todo_write` lacks deletion
 
 3. **EXECUTE:**
-   - **Clear IDE Todo List:**
+   - **Finalize agent run log** at `docs/journals/agent-runs/rw-{run_id}.json`
+   - **Clear tracker (Cursor adapter example):**
      - Use `todo_write` tool with `merge: true` to mark all `rw-step-*` todos as `cancelled`
      - Pattern: Find all todos with `id` matching `rw-step-*` and mark as `cancelled`
      - **Note:** The `todo_write` tool does not support deletion. Marking as `cancelled` is the best available approach to hide/clear these todos from the active list.
@@ -3287,20 +3286,18 @@ if result.exit_code != 0:
      - Clean up staging directories if needed
 
 4. **VALIDATE:**
-   - Verify IDE todo list is cleared (no `rw-step-*` todos remain)
-   - Verify no errors occurred during cleanup
+   - Verify agent run log finalized (`ended_at` set, terminal status)
+   - Verify tracker entries cancelled/cleared
 
 5. **PROCEED:**
-   - Document: "Housekeeping complete - IDE todo list cleared"
+   - Document: "Housekeeping complete — agent run log finalized; tracker cleared"
    - Mark workflow as complete
    - No further steps
 
 **Key Points:**
-- This step runs at the very end of the Release Workflow
-- It's optional but recommended for clean IDE state
-- Current implementation marks todos as `cancelled` to hide them (tool limitation: `todo_write` doesn't support deletion)
-- If Cursor adds deletion support to `todo_write`, this can be updated to actually remove todos
-- Future enhancements may include additional cleanup tasks
+- Runs at the very end of the Release Workflow (optional but recommended)
+- Finalizes [agent run log v1 schema](../../../../../../docs/architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json) — distinct from ADR-008 forensic journals
+- Cursor adapter may mark todos as `cancelled` when deletion is unavailable
 
 **Configuration:**
 - `clear_ide_todos: true` - Clear all RW-related todos from IDE (default: true)
@@ -3326,12 +3323,12 @@ if result.exit_code != 0:
 
 ## ✅ Agent Execution Checklist
 
-**Note:** This markdown checklist serves as a reference. **Agents MUST use Cursor TODOs** (see "🚨 MANDATORY: Progress Tracking with Cursor TODOs" section above) for real-time progress tracking. TODOs are **REQUIRED**, not optional.
+**Note:** This markdown checklist serves as a reference. **Agents MUST use the Workflow Step Tracker** (see "Progress Tracking with Workflow Step Tracker" section above).
 
 When executing Release Workflow as an agent, ensure:
 
 ### Pre-Execution
-- [ ] **MANDATORY:** Created TODO list with all 17 steps (using `todo_write`) - Note: Steps 12-16 are optional but recommended for PDCA/PIR, Step 17 is optional but recommended for housekeeping
+- [ ] **MANDATORY:** Initialized Workflow Step Tracker with all steps (Cursor: `todo_write` adapter)
 - [ ] Loaded workflow definition from YAML
 - [ ] Parsed all 17 steps and dependencies
 - [ ] Gathered workflow parameters (summary, change_type, etc.)

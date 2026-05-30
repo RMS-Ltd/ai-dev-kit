@@ -59,4 +59,5 @@ Documentation Agent owns journal lifecycle per `docs/project-management/kanban/A
 ## Related work (out of scope here)
 
 - **FR-044** — RW temporary execution log (E05:S01:T44)
-- **E02:S01:T23** — tool-agnostic step tracker governance
+- **E02:S01:T23** — [Workflow Step Tracker + agent run log v1](ADR-011-workflow-step-tracker-and-agent-run-log.md) (in-session progress + cross-session resume; **not** forensic command records)
+- **ADR-008** — forensic RW journals (`docs/journals/rw-*.json`) for operator recovery

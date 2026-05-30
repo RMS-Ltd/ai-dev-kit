@@ -169,78 +169,43 @@ For each step in execution order:
 
 ---
 
-## 📊 Progress Tracking with Cursor TODOs
+## Progress Tracking with Workflow Step Tracker
 
-**🚨 MANDATORY: Use Cursor's TODO feature for agent-managed workflow progress tracking**
+**MANDATORY:** Use a **Workflow Step Tracker** for all agent-managed workflow progress. See the canonical [Workflow Step Tracker Contract](workflow-step-tracker-contract.md) (ADR-011).
 
-For **all agent-managed workflows**, agents **MUST** use `todo_write` to create and maintain a TODO list tracking all workflow steps. This is **REQUIRED**, not optional.
+Agents **MUST NOT** require Cursor `todo_write` specifically. They **MUST** implement tracker semantics via a supported **tool adapter** (Cursor `todo_write`, Windsurf/Cascade `todo_list`, or agent run log file fallback).
 
-**Why TODOs are Required for Agent-Managed Workflows:**
-- ✅ **User Visibility:** User can see real-time progress through all workflow steps
-- ✅ **Agent Organization:** Helps agent stay organized across sequential steps
-- ✅ **Error Recovery:** Clear visibility into where execution stopped if interrupted
-- ✅ **User Transparency:** User can verify all steps completed successfully
-- ✅ **Status Management:** Automatic status updates provide clear execution state
-- ✅ **Accountability:** Provides audit trail of workflow execution
-- ✅ **Interruption Handling:** If workflow is interrupted, user can see exactly where it stopped
+**Why step tracking is required:**
 
-**Required Implementation Pattern:**
+- User visibility into real-time progress
+- Agent organization across sequential steps
+- Interruption recovery — clear stop point if workflow aborts
+- Accountability and audit trail of execution
 
-1. **At Workflow Start (MANDATORY):** Create TODO list with all steps as `pending`
-   ```python
-   todo_write(merge=False, todos=[
-       {'id': 'step-1', 'status': 'pending', 'content': 'Step 1: Description'},
-       {'id': 'step-2', 'status': 'pending', 'content': 'Step 2: Description'},
-       # ... all workflow steps
-   ])
-   ```
+**Required lifecycle (contract summary):**
 
-2. **Before Each Step (MANDATORY):** Mark step as `in_progress`
-   ```python
-   todo_write(merge=True, todos=[
-       {'id': 'step-1', 'status': 'in_progress'}
-   ])
-   ```
+1. At workflow start — create full step list (`pending`); initialize [agent run log](../../../../../../docs/architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json) when cross-session resume is likely.
+2. Before each step — mark current step `in_progress` (exactly one).
+3. After each step — mark completed; advance next to `in_progress`.
+4. On completion — all steps `completed`; finalize agent run log.
+5. On abort — cancel remaining steps; record `blocking_reason` in agent run log.
 
-3. **After Each Step (MANDATORY):** Mark step as `completed` and mark next step as `in_progress`
-   ```python
-   todo_write(merge=True, todos=[
-       {'id': 'step-1', 'status': 'completed'},
-       {'id': 'step-2', 'status': 'in_progress'}
-   ])
-   ```
+**Cursor adapter example** (reference only):
 
-4. **On Completion (MANDATORY):** All steps marked as `completed`
-   ```python
-   todo_write(merge=True, todos=[
-       {'id': 'step-N', 'status': 'completed'}
-   ])
-   ```
+```python
+todo_write(merge=False, todos=[
+    {'id': 'step-1', 'status': 'pending', 'content': 'Step 1: Description'},
+])
+todo_write(merge=True, todos=[{'id': 'step-1', 'status': 'in_progress'}])
+```
 
-**Enforcement Rules:**
-- ❌ **DO NOT** execute agent-managed workflows without creating TODO list first
-- ❌ **DO NOT** skip TODO updates between steps
-- ✅ **MUST** create TODO list before first step execution
-- ✅ **MUST** update TODO status before and after each step
-- ✅ **MUST** mark all steps as completed on successful completion
-- ✅ **MUST** use descriptive content for each TODO item
+**Enforcement:**
 
-**When TODOs are Required:**
-- ✅ **All agent-managed workflows** (workflows executed by AI agents)
-- ✅ Multi-step workflows (3+ steps) - **MANDATORY**
-- ✅ Workflows with sequential dependencies - **MANDATORY**
-- ✅ Long-running workflows where progress visibility matters - **MANDATORY**
-- ✅ Workflows where error recovery is important - **MANDATORY**
+- MUST initialize tracker before first step execution
+- MUST update tracker status at step boundaries
+- MUST finalize agent run log on workflow end (see RW Step 17)
 
-**When TODOs are Optional:**
-- ⚠️ Single-step workflows (may still benefit from TODOs for consistency)
-- ⚠️ Deterministic script execution (not agent-managed)
-
-**Canonical Examples:**
-- **[Release Workflow Agent Execution Guide](release-workflow-agent-execution.md)** - Complete example using TODOs for all 13 steps
-- **[Intake Workflow Agent Execution Guide](intake-workflow-agent-execution.md)** - Complete example using TODOs for all 7 steps
-
-Both workflows demonstrate the **REQUIRED** TODO implementation pattern for agent-managed workflows.
+**Canonical examples:** [Release Workflow](release-workflow-agent-execution.md), [Intake Workflow](intake-workflow-agent-execution.md)
 
 ---
 
@@ -263,7 +228,7 @@ The **Release Workflow** serves as the canonical example of agent-driven executi
 
 When executing a workflow as an agent, ensure:
 
-- [ ] **MANDATORY: TODO List Created:** Agent has created TODO list with all workflow steps (using `todo_write`)
+- [ ] **MANDATORY: Workflow Step Tracker initialized** per [contract](workflow-step-tracker-contract.md)
 - [ ] **Workflow Definition Loaded:** Agent has read and parsed workflow YAML
 - [ ] **Context Gathered:** Agent understands project state, branch, version, dependencies
 - [ ] **Step Analysis:** For each step, agent analyzes requirements before executing
@@ -272,8 +237,8 @@ When executing a workflow as an agent, ensure:
 - [ ] **Error Handling:** Agent handles errors intelligently (retry, skip, abort as appropriate)
 - [ ] **Documentation:** Agent documents decisions and actions taken
 - [ ] **Output Passing:** Agent correctly passes step outputs to dependent steps
-- [ ] **MANDATORY: TODO Status Updated:** Agent updates TODO status before and after each step
-- [ ] **MANDATORY: All TODOs Completed:** On completion, all steps marked as completed in TODO list
+- [ ] **MANDATORY: Tracker status updated** at each step boundary
+- [ ] **MANDATORY: All steps completed** in tracker on successful completion
 
 ---
 
@@ -291,14 +256,14 @@ When executing a workflow as an agent, ensure:
 ### For Agents
 
 **When executing workflows:**
-- ✅ **MANDATORY: Create TODO List:** Create TODO list with all workflow steps before starting execution
+- ✅ **MANDATORY: Initialize Workflow Step Tracker:** Per [contract](workflow-step-tracker-contract.md) before starting execution
 - ✅ **Read First:** Always read and understand step definition before executing
 - ✅ **Gather Context:** Collect all required context (files, state, previous outputs)
 - ✅ **Analyze Requirements:** Understand what the step needs to accomplish
 - ✅ **Make Decisions:** Use intelligence to determine specific actions
 - ✅ **Validate Results:** Verify execution succeeded before proceeding
 - ✅ **Document Actions:** Record what was done and why
-- ✅ **MANDATORY: Update TODOs:** Update TODO status before and after each step
+- ✅ **MANDATORY: Update tracker:** Update step status at each step boundary
 
 ---
 
