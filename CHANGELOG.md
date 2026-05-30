@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+20] - 30-05-26
+
+E02:S16:T04 — Docs-only: commit Step 9 release-readiness artifacts for v0.2.16.4+19. SemVer **v0.4.834+20**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+20.md)
+
+---
+
 ## [0.2.16.4+19] - 30-05-26
 
 E02:S16:T04 (perpetual UKW) — Docs-only: Step 9 release-readiness report alignment (BLOCK→PASS for v0.2.16.4+18). SemVer **v0.4.833+19**.

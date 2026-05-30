@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
 **Last updated:** 2026-05-30 (v0.2.16.4+19 – docs-only Step 9 readiness alignment)
-**Version:** v0.2.16.4+19
+**Version:** v0.2.16.4+20
 **Code:** E2S16
 
 ---
