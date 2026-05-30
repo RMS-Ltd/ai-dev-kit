@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-30 (T04 RW -k **v0.2.16.4+22** — kboard/fbuboard bidirectional restore)
-**Version:** v0.2.16.4+22
+**Last updated:** 2026-05-30 (T17 RW **v0.2.16.17+1** — agent bootstrap FR-103)
+**Version:** v0.2.16.17+1
 **Code:** E2S16
 
 ---
@@ -73,8 +73,8 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [x] **E2:S16:T16 – UKW archive completed rows (`-c`) (FR-102)** ✅ COMPLETE (v0.2.16.16+2 functional; v0.2.16.16+3 UKW `-c` prune)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md`](Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) | [FR-102](../../fr-br/FR-102-ukw-archive-completed-board-rows.md) | [IPP](../../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md) | [ADR-010](../../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
 
-- [ ] **E02:S16:T17 – Agent bootstrap and task routing (FR-103)** - TODO (HIGH, three-layer intro/manifest/lazy context; ADR-012)  
-  - Task: [`Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md`](Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) | [FR-103](../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+- [x] **E02:S16:T17 – Agent bootstrap and task routing (FR-103)** - ✅ COMPLETE (v0.2.16.17+1) (HIGH, ADR-012, manifest, slim AGENTS.md)  
+  - Task: [`Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md`](Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) | [FR-103](../../fr-br/FR-103-agent-bootstrap-and-task-routing.md) | [IPP](../../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md) | [ADR-012](../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 
 ---
 

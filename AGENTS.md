@@ -1,64 +1,84 @@
-# AI Dev Kit Agent Definitions
+# AI Dev Kit — Agent bootstrap (Layer 1)
 
-## Global Implementation Gate (IPW Required)
+**Repo:** AI Dev Kit (RMS-Ltd) — workflow frameworks, kanban, validators, release automation for agentic development. **Human overview:** [`README.md`](README.md). **Branch:** `dev` for integration; epic branches for delivery.
 
-For all user requests, enforce an intent-first contract with a hard IPW gate:
+**Domain agent roles (UKW, intake, documentation coordination):** [`docs/project-management/kanban/AGENTS.md`](docs/project-management/kanban/AGENTS.md)
 
-- If the user asks for intake/planning/governance artifacts (for example UXR/FR/BR/task/spec/plan/review), produce only those artifacts and stop.
-- Do not perform implementation edits (code, scripts, production docs behavior changes, broad repository refactors, or release-impacting file updates) until IPW artifacts exist for the target task.
-- Required preconditions before any implementation:
-  1. A task anchor exists (`E#:S#:T#`).
-  2. **IPW package** exists and is **linked from the task** (Input / References). Either pattern counts:
-     - **Consolidated IPP:** one `docs/implementation-cycles/IPP-E{epic}S{story}T{task}-*.md` produced by IPW (Sections 1–7 per `.claude/commands/ipw.md` and `PLAN_DOC_TEMPLATE.md`, including documentation deliverables and housing), **or**
-     - **ICW trio:** three files `ICW-E{epic}S{story}T{task}-specification.md`, `-test-design.md`, `-implementation-plan.md` under `docs/implementation-cycles/`.
-     See [dev-kit-ipw-ipp-vs-icw-artifacts.md](docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md) and [FR-042](docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md).
-  3. The user provides explicit execution authorization in a separate instruction (for example: "implement", "proceed with implementation", or `RW <task>` when release execution is requested).
-- If any precondition is missing, stop and ask only for the missing prerequisite; do not infer permission from context.
-- After creating requested planning artifacts, pause and wait for user direction.
+---
 
-**Canonical IPW invocation (Claude Code):** `/ipw [E:S:T] [--skip-tests]` — see `.claude/commands/ipw.md`. IPW **must** run in plan mode (`/plan` first).
+## Bootstrap steps (cold start)
 
-**Maintainer workflow cheatsheet:** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md) — scannable RW/UKW/IPW/CMW/PVW triggers and flags (agent execution remains in `.cursorrules`).
+1. Read this file (you are here).
+2. Load and **scan** [`docs/project-agent-manifest.json`](docs/project-agent-manifest.json) — `protocol[]`, `taskRouting[]`, `openWork[]` only.
+3. **State which track(s) apply** to the user message before opening Layer 3 docs.
+4. Load only `loadFirst[]` for the matched `taskRouting` intent (see manifest).
+5. Open task-specific docs (`E##:S##:T##`) when the user or `openWork[]` names them.
 
-## RW Agent - Release Workflow Specialist
+**Human mirror:** [`docs/project-agent-index.md`](docs/project-agent-index.md) · **Architecture:** [ADR-012](docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 
-When executing Release Workflow (RW, RW -d, RW -k):
+**Operator shortcut (skip keyword match):** `Track: workflows | File: docs/project-agent-manifest.json | Task: E02:S16:T17`
 
-**Primary Responsibilities:**
-- Use version_bump skill for version file updates following RC.EPIC.STORY.TASK+BUILD schema
-- Use changelog_create skill for changelog generation with proper formatting
-- Use git_commit skill for commit operations with standardized messages
-- Use validation skills for branch safety and format checks
-- Follow the 17-step RW process autonomously with proper error handling
+---
 
-**Agent Coordination:**
-- Invoke Validation Agent for branch safety checks (Step 1, 8, 14, 17)
-- Invoke Documentation Agent for changelog and README updates (Steps 4, 5)
-- Maintain overall workflow execution and step sequencing
-- Apply agentic intelligence for error recovery and decision making
+## Tracks (use cases)
 
-**Terminal Interaction:**
-- Execute git commands through Git Operations skills
-- Run validation scripts through Validation Agent
-- Confirm terminal commands work properly with current settings
+| ID | When | First loads (after manifest scan) |
+| -- | ---- | --------------------------------- |
+| `workflows` | RW, UKW, IPW, CMW, PVW, release | [Cheatsheet](docs/guides/workflow-initiation-cheatsheet.md), `.claude/commands/*.md` |
+| `kanban-intake` | FR, BR, UXR, boards, intake | [kboard.md](docs/project-management/kanban/kboard.md), [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
+| `governance` | ADR, policy, standards | [Governance README](docs/governance/README.md) |
+| `framework-code` | Packages, validators, scripts | [Workflow mgt README](packages/frameworks/workflow%20mgt/README.md) |
+| `implementation-planning` | IPW, IPP, ICW | [ipw.md](.claude/commands/ipw.md), [IPP vs ICW](docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md) |
+| `agent-bootstrap` | Manifest, routing, cold start | [project-agent-index.md](docs/project-agent-index.md) |
 
-## Documentation Agent - Documentation Specialist
+Full keyword lists: manifest `taskRouting[]`.
 
-When updating documentation:
+---
 
-**Primary Responsibilities:**
-- Use readme_update skill for README changes with version references
-- Use docs_generate skill for documentation generation from templates
-- Use changelog_manage skill for changelog updates and archival
-- Maintain consistent formatting and version references
+## Binding rules (pointers only)
 
-**Documentation Standards:**
-- Follow ai-dev-kit documentation structure and formatting
-- Ensure version consistency across all documentation files
-- Update cross-references and links appropriately
-- Maintain changelog archive organization
+| ID | Rule | Source |
+| -- | ---- | ------ |
+| P-IPW-GATE | No implementation until IPP/ICW linked + explicit user go-ahead | [FR-083](docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md) |
+| P-RW-GIT | Commit/push only via RW | `.cursorrules` (Git Workflow Restrictions) |
+| P-RW-TASK-TOKEN | RW requires `E:S:T` in trigger | [FR-060](docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md) |
+| P-RW-STEP7 | RW Step 7 four-surface kanban reconciliation | [FR-092](docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) |
+| P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) |
+| P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
+| P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
 
-**Integration Points:**
-- Works with RW Agent during release workflows
-- Works with UKW Agent for kanban documentation updates
-- Supports all workflow agents with documentation needs
+Machine-readable list: manifest `protocol[]`. **Workflow execution SoT:** `.cursorrules` and `.claude/commands/` (load when `workflows` track applies — not at cold start).
+
+---
+
+## Ascertainment rule
+
+Before loading governance corpora, journals, frameworks in depth, or application code, output one line:
+
+`Tracks: <id>[, …] — loading: <loadFirst paths>`
+
+If no `taskRouting` keyword match, ask **one** clarifying question. Do not grep the whole repository.
+
+---
+
+## Anti-patterns (do not load unless routed)
+
+- Full [`.cursorrules`](.cursorrules) ingest at cold start (scan manifest first).
+- [`docs/changelog-and-release-notes/changelog-archive/`](docs/changelog-and-release-notes/changelog-archive/) and bulk [`CHANGELOG.md`](CHANGELOG.md) unless changelog track.
+- [`docs/journals/`](docs/journals/) unless forensic recovery routed.
+- Entire [`fbuboard.md`](docs/project-management/kanban/fbuboard.md) MoSCOW unless kanban-intake track.
+- IDE plan folders outside repo (`~/.cursor/plans/`).
+
+---
+
+## IPW / implementation gate (summary)
+
+Planning-only requests (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW trio under `docs/implementation-cycles/`, (3) explicit user authorization (`implement`, `RW E:S:T`, etc.). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md).
+
+**Maintainer cheatsheet:** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md)
+
+---
+
+## RW agent (summary)
+
+Release Workflow: version bump, changelog, kanban Step 7, commit, tag, push. Use RW skills under `.cursor/skills/`. **Trigger:** `RW E##:S##:T##` or `/rw`. Full steps: `.cursorrules` RW section + [release-workflow-agent-execution.md](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). **Extended role detail:** [kanban AGENTS.md](docs/project-management/kanban/AGENTS.md#documentation-agent---documentation-specialist).

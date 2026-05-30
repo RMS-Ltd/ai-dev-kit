@@ -6,6 +6,16 @@ This project is the AI Dev Kit: a collection of workflow management frameworks, 
 
 ---
 
+## Cold start (agent bootstrap)
+
+**Before deep workflow reads:** open [`AGENTS.md`](AGENTS.md), scan [`docs/project-agent-manifest.json`](docs/project-agent-manifest.json), match `taskRouting[]`, load only `loadFirst[]`. State track ID before Layer 3 docs. Index: [`docs/project-agent-index.md`](docs/project-agent-index.md) · ADR: [ADR-012](docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md).
+
+**Operator shortcut:** `Track: workflows | Task: E02:S16:T17 | File: …`
+
+Full RW/UKW/IPW trigger specs below remain authoritative once the `workflows` track is selected.
+
+---
+
 ## RW Trigger Routing (CRITICAL)
 
 **When the user message begins with `RW ` or `rw ` (case-insensitive), treat it as a Release Workflow trigger command — equivalent to the `/rw` slash command with the remainder of the message as arguments.**

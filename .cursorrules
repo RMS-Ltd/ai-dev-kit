@@ -7,6 +7,8 @@
 
 **🚨 Git: Commit and push only via Release Workflow (RW).** Do not run `git commit` or `git push` outside RW. When changes are ready, run **`RW <task_id>`** in one message (e.g. `RW E7:S01:T10`, `RW E7S01T10`; same for `RW -d` / `RW -k`) to version, validate, commit, tag, and push. See "Git Workflow Restrictions" below.
 
+**🧭 Agent cold start (ADR-012):** On a new session, read repo-root **`AGENTS.md`**, scan **`docs/project-agent-manifest.json`** (`protocol[]`, `taskRouting[]`), state which track applies, then load only manifest `loadFirst[]` paths before ingesting this full rules file or large doc trees. Human index: `docs/project-agent-index.md`.
+
 **Dual-source (maintainers):** The portable RW excerpt [`packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`](packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md) must stay aligned with this section on FR-060 / 1b–1d / FR-038. Checklist: [`packages/frameworks/workflow mgt/docs/rw-trigger-dual-source-parity.md`](packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md).
 
 ---

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-30 (RW -k: E02:S16:T04 — kboard/fbuboard bidirectional restore)
-**Version Context:** v0.2.16.4+22 (**SemVer** v0.4.841+22)
+**Last Updated:** 2026-05-30 (E02:S16:T17 agent bootstrap — FR-103)
+**Version Context:** v0.2.16.17+1 (**SemVer** v0.4.842+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -47,7 +47,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
-- **FR-103** – Agent bootstrap and task routing (three-layer context) - 📋 TODO (HIGH, **E02:S16:T17**) | [FR-103](fr-br/FR-103-agent-bootstrap-and-task-routing.md) | [E02:S16:T17](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) | —No IPP— | Last modified: 2026-05-30 20:00 UTC
+- **FR-103** – Agent bootstrap and task routing (three-layer context) - ✅ IMPLEMENTED (HIGH, **v0.2.16.17+1**) | [IPP](../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md) | [ADR-012](../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) | [FR-103](fr-br/FR-103-agent-bootstrap-and-task-routing.md) | [E02:S16:T17](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) | —No IPP— | Last modified: 2026-05-30 21:45 UTC
 - **BR-059** – UKW MoSCOW incomplete story task coverage - 📋 TODO (HIGH, **E02:S16:T13** on kboard) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [E02:S16:T13](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
 - **BR-067** – RW doc-only releases default to BUILD+1 instead of doc-init +0 - 🔄 IN PROGRESS (HIGH, policy/docs **v0.2.16.3+0**; pending maintainer verification) | [BR-067](fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) | [E02:S16:T03](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-05-30 16:26 UTC
 - **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE** **E02:S15:T01**; phased historical backfill remains) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | —No IPP— | Last modified: 2026-04-14 00:00 UTC

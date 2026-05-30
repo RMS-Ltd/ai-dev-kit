@@ -1,0 +1,83 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": ["Epic 2 doc not version-stamped this release."],
+      "paths": ["/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md"],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [
+        "Story 016 checklist: T17 COMPLETE v0.2.16.17+1",
+        "Story version anchor v0.2.16.17+1"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 17,
+    "task_id": "E2:S16:T17",
+    "version_string": "v0.2.16.17+1"
+  },
+  "stamp_evidence": {
+    "kboard.md": "2026-05-30 21:45 UTC — E02:S16:T17 row COMPLETE",
+    "fbuboard.md": "2026-05-30 21:45 UTC — FR-103 IMPLEMENTED"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 2,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 12,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": ["FR-103 status IMPLEMENTED v0.2.16.17+1"],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": ["FR-103 row IMPLEMENTED with IPP/ADR links"],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["E02:S16:T17 row COMPLETE v0.2.16.17+1"],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": ["T17 COMPLETE all AC; IPP/ADR/manifest links"],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-05-30 21:45 UTC"
+}
