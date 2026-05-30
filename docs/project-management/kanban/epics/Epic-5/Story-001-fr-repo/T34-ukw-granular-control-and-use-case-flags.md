@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Started:** 2026-01-22  
 **Completed:** 2026-01-22  
 **Version:** v0.5.1.34+1  
-**Code:** E5S01T34
+**Code:** E05S01T34
 
 ---
 
@@ -22,9 +22,9 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E5:S01:T34`
+**Full Task ID:** `E05:S01:T34`
 
-**Repository Pattern:** FR-034 = E5:S01:T34 (abstract space: v0.5.1.34+0, completed: v0.5.1.34+1)
+**Repository Pattern:** FR-034 = E05:S01:T34 (abstract space: v0.5.1.34+0, completed: v0.5.1.34+1)
 
 ---
 
@@ -69,7 +69,7 @@ Add granular control to UKW (Update Kanban Workflow) via use case flags and flex
    - `-a` (assign priorities): Assign priorities to tasks (expensive, occasional)
 
 2. **Flexible Task Targeting Syntax:**
-   - Single task: `E09S01T01`, `e9s1t1`, `E09:S01:T01`
+   - Single task: `E09S01T01`, `E09S01T01`, `E09:S01:T01`
    - Multiple tasks: `E09S01T01,E08S02T11`
    - Linear range: `E09S01T01-E09S01T06`
    - Story: `E09S01`, `e9s1`
@@ -103,7 +103,7 @@ Add granular control to UKW (Update Kanban Workflow) via use case flags and flex
 - [x] **Criterion 7:** `UKW -a E09` assigns priorities to epic ✅
 - [x] **Criterion 8:** `UKW -a all` assigns priorities to all unprioritized tasks ✅
 - [x] **Criterion 9:** Canonical format supported (`E09S01T01`) ✅
-- [x] **Criterion 10:** Compact format supported (`E9S1T1`) ✅
+- [x] **Criterion 10:** Compact format supported (`E09S01T01`) ✅
 - [x] **Criterion 11:** Case-insensitive input supported ✅
 - [x] **Criterion 12:** Optional separators supported (`:`, `-`, none) ✅
 - [x] **Criterion 13:** Range syntax supported ✅
@@ -157,7 +157,7 @@ Add granular control to UKW (Update Kanban Workflow) via use case flags and flex
 ## Dependencies
 
 **Depends On:**
-- UKW workflow infrastructure (E6:S06:T08)
+- UKW workflow infrastructure (E06:S06:T08)
 - BR-033 fix (sorting logic) - can be done in parallel
 - Kanban board structure
 - Task priority system
@@ -181,8 +181,8 @@ Add granular control to UKW (Update Kanban Workflow) via use case flags and flex
 - [BR-033: UKW Board Disorganization](../../../fr-br/BR-033-ukw-board-disorganization.md) (related bug report)
 
 **Related Tasks:**
-- [E6:S00:T33: UKW Board Disorganization](../../Epic-6/Story-000-br-repo/T33-ukw-board-disorganization.md) - Related bug fix
-- [E2:S16:T03: Update Kanban Workflow (UKW)](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) - Perpetual task
+- [E06:S00:T33: UKW Board Disorganization](../../Epic-6/Story-000-br-repo/T33-ukw-board-disorganization.md) - Related bug fix
+- [E02:S16:T03: Update Kanban Workflow (UKW)](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) - Perpetual task
 
 **Related Stories:**
 - [E5:S01: FR Repo](../Story-001-fr-repo.md) - Repository story

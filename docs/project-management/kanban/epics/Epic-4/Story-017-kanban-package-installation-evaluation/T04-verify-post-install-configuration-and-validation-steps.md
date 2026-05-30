@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S17:T04 – Verify Post-Install Configuration and Validation Steps
+# E04:S17:T04 – Verify Post-Install Configuration and Validation Steps
 
-**Task ID:** E4:S17:T04  
+**Task ID:** E04:S17:T04  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E4 – Kanban Framework  
@@ -314,11 +314,11 @@ python3 scripts/validate_installation.py --kanban-path docs/project-management/k
 
 ## Related Work
 
-- **E4:S17:T01:** Enumerate supported installation paths (completed)
-- **E4:S17:T02:** Validate fresh install steps (completed)
-- **E4:S17:T03:** Validate migration/update paths (completed)
-- **E4:S17:T05:** Document failure modes and rollback guidance (next task)
-- **E4:S17:T06:** Capture documentation gaps and improvements
+- **E04:S17:T01:** Enumerate supported installation paths (completed)
+- **E04:S17:T02:** Validate fresh install steps (completed)
+- **E04:S17:T03:** Validate migration/update paths (completed)
+- **E04:S17:T05:** Document failure modes and rollback guidance (next task)
+- **E04:S17:T06:** Capture documentation gaps and improvements
 
 ---
 

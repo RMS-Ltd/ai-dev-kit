@@ -54,7 +54,7 @@ After the full BR-037 resolution:
 
 ## Current Behaviour (Fixed)
 
-As of the remediation work for **E6:S01:T37**:
+As of the remediation work for **E06:S01:T37**:
 
 - **Fresh installs**:
   - The installer’s `--mode fresh` path now generates a clean consumer tree and has tests asserting:
@@ -145,7 +145,7 @@ As of the remediation work for **E6:S01:T37**:
   - The validator output clearly points to the remediation command as the next step.
 
 - Update:
-  - Task document `E6:S01:T37` with the final remediation design and acceptance criteria.
+  - Task document `E06:S01:T37` with the final remediation design and acceptance criteria.
   - Kanban board and guide with a short pointer to the detection/remediation tools and their relationship to install logs (FR-047).
 
 
@@ -170,5 +170,5 @@ As of the remediation work for **E6:S01:T37**:
 ## Status
 
 - **Status:** CHANGE IMPLEMENTED – AWAITING VERIFICATION  
-- **Primary Task:** E6:S01:T37 – Kanban Install Consumer Board Contamination (detector + remediation implemented, pending release RW and consumer verification)  
+- **Primary Task:** E06:S01:T37 – Kanban Install Consumer Board Contamination (detector + remediation implemented, pending release RW and consumer verification)  
 

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E3:S1:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E03:S01:T03`)
 
 **Full Task ID:** `E03:S01:T03`
 
@@ -34,9 +34,9 @@ Document versioning conventions for the {PROJECT_NAME} project. Create comprehen
 
 ## Input
 
-- Versioning policy (from E3:S1:T01)
-- Versioning schema (from E3:S1:T02)
-- Versioning examples (from E3:S1:T04)
+- Versioning policy (from E03:S01:T01)
+- Versioning schema (from E03:S01:T02)
+- Versioning examples (from E03:S01:T04)
 - Documentation requirements
 - Team preferences and conventions
 
@@ -80,9 +80,9 @@ Document versioning conventions for the {PROJECT_NAME} project. Create comprehen
 ## Dependencies
 
 **Depends On:**
-- E3:S1:T01: Define versioning policy (documentation references policy)
-- E3:S1:T02: Design versioning schema (documentation references schema)
-- E3:S1:T04: Create versioning examples (documentation may reference examples)
+- E03:S01:T01: Define versioning policy (documentation references policy)
+- E03:S01:T02: Design versioning schema (documentation references schema)
+- E03:S01:T04: Create versioning examples (documentation may reference examples)
 
 **Blocks:**
 - None (documentation task)
@@ -94,9 +94,9 @@ Document versioning conventions for the {PROJECT_NAME} project. Create comprehen
 ## Related Work
 
 **Related Tasks:**
-- E3:S1:T01: Define versioning policy (documentation references policy)
-- E3:S1:T02: Design versioning schema (documentation references schema)
-- E3:S1:T04: Create versioning examples (documentation may reference examples)
+- E03:S01:T01: Define versioning policy (documentation references policy)
+- E03:S01:T02: Design versioning schema (documentation references schema)
+- E03:S01:T04: Create versioning examples (documentation may reference examples)
 
 **Related Stories:**
 - E3:S1: Versioning Policy and Schema (this story)

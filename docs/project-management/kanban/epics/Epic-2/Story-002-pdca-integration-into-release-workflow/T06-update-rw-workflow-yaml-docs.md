@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task 006 – Update RW workflow YAML and documentation
 
-**Task:** E2:S02:T06  
+**Task:** E02:S02:T06  
 **Status:** TODO  
 **Priority:** HIGH  
 **Created:** 2025-12-03  
@@ -98,11 +98,11 @@ Update the Release Workflow YAML and all related documentation to reflect the co
 
 ## Related Tasks
 
-- E2:S02:T01 – Add CHECK Phase (provides Step 12 content)
-- E2:S02:T02 – Add ACT Phase (provides Step 13 content)
-- E2:S02:T03 – Enhance PLAN Phase (provides PLAN enhancements)
-- E2:S02:T04 – Enhance DO Phase (provides DO enhancements)
-- E2:S02:T05 – Create PDCA templates and examples (provides templates)
+- E02:S02:T01 – Add CHECK Phase (provides Step 12 content)
+- E02:S02:T02 – Add ACT Phase (provides Step 13 content)
+- E02:S02:T03 – Enhance PLAN Phase (provides PLAN enhancements)
+- E02:S02:T04 – Enhance DO Phase (provides DO enhancements)
+- E02:S02:T05 – Create PDCA templates and examples (provides templates)
 
 ---
 

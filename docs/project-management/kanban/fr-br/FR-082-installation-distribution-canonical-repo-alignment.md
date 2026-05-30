@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer (design session)  
 **Priority:** MEDIUM  
 **Severity:** LOW  
-**Status:** IMPLEMENTED (2026-05-28 — E6:S09:T03; public bootstrap `RMS-Ltd/ai-dev-kit`)
+**Status:** IMPLEMENTED (2026-05-28 — E06:S09:T03; public bootstrap `RMS-Ltd/ai-dev-kit`)
 
-**Implementing Task:** [E6:S09:T03](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md)
+**Implementing Task:** [E06:S09:T03](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md)
 
 ---
 
@@ -44,7 +44,7 @@ Align **installation scripts, defaults, and documentation examples** with the **
 
 - [x] **FR-082-NF1:** Changes must not break adopters who intentionally mirror to a fork (override path remains documented).
 
-### Implementation evidence (E6:S09:T03)
+### Implementation evidence (E06:S09:T03)
 
 - [`install_package_from_release.py`](../../../packages/frameworks/workflow%20mgt/scripts/install_package_from_release.py) — `default='RMS-Ltd/ai-dev-kit'`; `--repo` / `GITHUB_REPOSITORY` override documented in help.
 - [`PACKAGE_INSTALLATION_GUIDE.md`](../../../packages/frameworks/workflow%20mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) — examples use `RMS-Ltd/ai-dev-kit` release URLs.

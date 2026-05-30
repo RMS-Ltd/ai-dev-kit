@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S1:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S01:T03`)
 
 **Full Task ID:** `E14:S01:T03`
 
@@ -34,8 +34,8 @@ Set up deployment scripts for the {PROJECT_NAME} project. Create scripts that au
 
 ## Input
 
-- CI/CD pipeline (from E14:S1:T01)
-- Deployment environments (from E14:S1:T02)
+- CI/CD pipeline (from E14:S01:T01)
+- Deployment environments (from E14:S01:T02)
 - Deployment requirements
 - Deployment tool preferences
 - Rollback requirements
@@ -83,8 +83,8 @@ Set up deployment scripts for the {PROJECT_NAME} project. Create scripts that au
 ## Dependencies
 
 **Depends On:**
-- E14:S1:T01: Set up CI/CD pipeline (deployment scripts integrate with CI/CD pipeline)
-- E14:S1:T02: Configure deployment environments (deployment scripts deploy to environments)
+- E14:S01:T01: Set up CI/CD pipeline (deployment scripts integrate with CI/CD pipeline)
+- E14:S01:T02: Configure deployment environments (deployment scripts deploy to environments)
 
 **Blocks:**
 - None (deployment scripts automate deployment)
@@ -96,8 +96,8 @@ Set up deployment scripts for the {PROJECT_NAME} project. Create scripts that au
 ## Related Work
 
 **Related Tasks:**
-- E14:S1:T01: Set up CI/CD pipeline (deployment scripts integrate with CI/CD pipeline)
-- E14:S1:T02: Configure deployment environments (deployment scripts deploy to environments)
+- E14:S01:T01: Set up CI/CD pipeline (deployment scripts integrate with CI/CD pipeline)
+- E14:S01:T02: Configure deployment environments (deployment scripts deploy to environments)
 
 **Related Stories:**
 - E14:S1: Deployment Pipeline Setup (this story)

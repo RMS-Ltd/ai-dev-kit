@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** IMPLEMENTED  
 **Version:** v0.4.8.7+2  
 
-**Implementing Task:** [E4:S08:T07](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md)
+**Implementing Task:** [E04:S08:T07](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md)
 **GitHub Issue:** [#7](https://github.com/RMS-Ltd/ai-dev-kit/issues/7) (Additional Context Comment)
 
 ---
@@ -151,7 +151,7 @@ When a user epic partially matches multiple canonical epics, intelligently split
 **Assigned To:**
 - Epic: 4
 - Story: 8
-- Task: E4:S08:T07
+- Task: E04:S08:T07
 - Version: `v0.4.8.7+2`
 
 ---

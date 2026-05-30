@@ -17,14 +17,14 @@ housekeeping_policy: keep
 **Version:** v0.6.7.107+1
 
 **Task Type:** Enhancement  
-**Code:** E6S07T107
+**Code:** E06S07T107
 
 ---
 
 ## Task ID
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
-**Value:** `E6:S07:T107`
+**Value:** `E06:S07:T107`
 
 ---
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task 008 – Update Kanban Docs to Txx Standard
 
-**Task:** E2:S02:T08  
+**Task:** E02:S02:T08  
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Created:** 2025-12-03  
@@ -87,7 +87,7 @@ Update all Kanban documentation throughout the repository to use the new Txx (2-
 
 ## Related Tasks
 
-- E2:S02:T07 – Implement Task naming change (prerequisite)
+- E02:S02:T07 – Implement Task naming change (prerequisite)
 
 ---
 

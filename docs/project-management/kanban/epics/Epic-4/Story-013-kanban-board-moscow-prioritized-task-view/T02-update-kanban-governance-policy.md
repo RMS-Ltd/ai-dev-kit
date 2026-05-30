@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Started:** 2025-12-18  
 **Completed:** 2025-12-18  
 **Version:** v0.4.13.2+1  
-**Code:** E4S13T02
+**Code:** E04S13T02
 
 ---
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E4:S13:T02`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E04:S13:T02`)
 
-**Full Task ID:** `E4:S13:T02`
+**Full Task ID:** `E04:S13:T02`
 
 ---
 
@@ -55,7 +55,7 @@ Update the Kanban governance policy documents to document the new board structur
 - Enhanced Kanban board document (`docs/project-management/kanban/kboard.md`)
 
 **Dependencies:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
 
 ---
 
@@ -131,13 +131,13 @@ Update the Kanban governance policy documents to document the new board structur
 ## Dependencies
 
 **Depends On:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
 
 **Blocks:**
-- E4:S13:T03 – Update Kanban board template (template should reflect policy)
+- E04:S13:T03 – Update Kanban board template (template should reflect policy)
 
 **Blocked By:**
-- E4:S13:T01 (must have enhanced board structure to document)
+- E04:S13:T01 (must have enhanced board structure to document)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -149,8 +149,8 @@ Update the Kanban governance policy documents to document the new board structur
 - User request for enhanced Kanban board functionality
 
 **Related Tasks:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view
-- E4:S13:T03 – Update Kanban board template
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view
+- E04:S13:T03 – Update Kanban board template
 
 **Related Stories:**
 - E4:S01 – Dev Kit Kanban Implementation (policy foundation)

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E2:S11:T00](../epics/Epic-2/Story-011-intake-workflow-automation.md)
+**Implementing Task:** [E02:S11:T00](../epics/Epic-2/Story-011-intake-workflow-automation.md)
 
 ---
 
@@ -150,7 +150,7 @@ This feature is needed:
 1. Developer submits FR-019 via GitHub issue
 2. Agent runs intake workflow: `intake-workflow --fr FR-019.md`
 3. Workflow analyzes FR content, determines Epic 2, Story 11 placement
-4. Workflow creates E2:S11:T00 task
+4. Workflow creates E02:S11:T00 task
 5. Workflow updates FR-019 with intake decision and Kanban links
 6. Workflow wires dependencies and cross-references
 7. Version marker assigned: `v0.2.11.0+0`
@@ -190,12 +190,12 @@ This feature is needed:
 - E2:S07
 - E4:S08
 - E2:S1
-- E2:S11:T00
-- E2:S1:T01
-- E2:S1:T02
-- E2:S1:T03
-- E2:S1:T04
-- E2:S1:T05
+- E02:S11:T00
+- E02:S01:T01
+- E02:S01:T02
+- E02:S01:T03
+- E02:S01:T04
+- E02:S01:T05
 
 ---
 
@@ -209,12 +209,12 @@ This feature is needed:
 - E2:S07
 - E4:S08
 - E2:S1
-- E2:S11:T00
-- E2:S1:T01
-- E2:S1:T02
-- E2:S1:T03
-- E2:S1:T04
-- E2:S1:T05
+- E02:S11:T00
+- E02:S01:T01
+- E02:S01:T02
+- E02:S01:T03
+- E02:S01:T04
+- E02:S01:T05
 - FR-019
 - FR-012
 - E2:S11
@@ -222,12 +222,12 @@ This feature is needed:
 - E2:S07
 - E4:S08
 - E2:S1
-- E2:S11:T00
-- E2:S1:T01
-- E2:S1:T02
-- E2:S1:T03
-- E2:S1:T04
-- E2:S1:T05
+- E02:S11:T00
+- E02:S01:T01
+- E02:S01:T02
+- E02:S01:T03
+- E02:S01:T04
+- E02:S01:T05
 
 ## Intake Decision
 

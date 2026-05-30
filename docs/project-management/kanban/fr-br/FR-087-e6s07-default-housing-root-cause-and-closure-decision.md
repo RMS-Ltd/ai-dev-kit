@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** IN PROGRESS
 
-**Implementing Task:** [E4:S19:T03](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)  
-**IPP:** [`IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`](../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)  
-**Investigation report:** [`E4S19T03-e6s07-default-housing-investigation-report.md`](../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
+**Implementing Task:** [E04:S19:T03](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)  
+**IPP:** [`IPP-E04S19T03-e6s07-default-housing-drift-investigation.md`](../../../implementation-cycles/IPP-E04S19T03-e6s07-default-housing-drift-investigation.md)  
+**Investigation report:** [`E04S19T03-e6s07-default-housing-investigation-report.md`](../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)
 
 ---
 

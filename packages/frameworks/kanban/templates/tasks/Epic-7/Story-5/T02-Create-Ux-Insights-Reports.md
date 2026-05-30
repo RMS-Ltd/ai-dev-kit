@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E7:S5:T2` (e.g., `E4:S11:T01`)
+**Format:** `E07:S05:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E07:S05:T02`
 
@@ -71,10 +71,10 @@ Create UX insights reports for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E7:S5:T01
+- E07:S05:T01
 
 **Blocks:**
-- E7:S5:T03
+- E07:S05:T03
 
 **Blocked By:**
 - [What blocks this task]

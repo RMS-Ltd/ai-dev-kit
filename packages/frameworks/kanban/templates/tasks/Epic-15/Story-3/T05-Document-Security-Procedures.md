@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E15:S3:T5` (e.g., `E4:S11:T01`)
+**Format:** `E15:S03:T05` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E15:S03:T05`
 
@@ -71,10 +71,10 @@ Document security procedures for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E15:S3:T04
+- E15:S03:T04
 
 **Blocks:**
-- E15:S3:T06
+- E15:S03:T06
 
 **Blocked By:**
 - [What blocks this task]

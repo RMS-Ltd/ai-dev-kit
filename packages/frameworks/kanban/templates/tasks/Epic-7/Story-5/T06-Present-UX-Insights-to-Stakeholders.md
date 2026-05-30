@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S5:T6`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S05:T06`)
 
 **Full Task ID:** `E07:S05:T06`
 
@@ -34,8 +34,8 @@ Present UX insights to stakeholders for the {PROJECT_NAME} project. Communicate 
 
 ## Input
 
-- UX insights documentation (from E7:S5:T04)
-- UX recommendations roadmap (from E7:S5:T05)
+- UX insights documentation (from E07:S05:T04)
+- UX recommendations roadmap (from E07:S05:T05)
 - Stakeholder audience and needs
 - Presentation format requirements
 - Communication objectives
@@ -83,11 +83,11 @@ Present UX insights to stakeholders for the {PROJECT_NAME} project. Communicate 
 ## Dependencies
 
 **Depends On:**
-- E7:S5:T04: Create UX insights documentation (presentation uses documentation)
-- E7:S5:T05: Create UX recommendations roadmap (presentation includes roadmap)
+- E07:S05:T04: Create UX insights documentation (presentation uses documentation)
+- E07:S05:T05: Create UX recommendations roadmap (presentation includes roadmap)
 
 **Blocks:**
-- E7:S5:T07: Track UX recommendations implementation (implementation follows stakeholder alignment)
+- E07:S05:T07: Track UX recommendations implementation (implementation follows stakeholder alignment)
 
 **Parallel Development Candidacy:** Blocked (depends on T04 and T05)
 
@@ -96,9 +96,9 @@ Present UX insights to stakeholders for the {PROJECT_NAME} project. Communicate 
 ## Related Work
 
 **Related Tasks:**
-- E7:S5:T04: Create UX insights documentation (presentation uses documentation)
-- E7:S5:T05: Create UX recommendations roadmap (presentation includes roadmap)
-- E7:S5:T07: Track UX recommendations implementation (implementation follows stakeholder alignment)
+- E07:S05:T04: Create UX insights documentation (presentation uses documentation)
+- E07:S05:T05: Create UX recommendations roadmap (presentation includes roadmap)
+- E07:S05:T07: Track UX recommendations implementation (implementation follows stakeholder alignment)
 
 **Related Stories:**
 - E7:S5: UX Insights and Recommendations (this story)

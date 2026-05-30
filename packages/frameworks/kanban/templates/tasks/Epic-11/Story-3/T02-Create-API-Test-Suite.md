@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S3:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S03:T02`)
 
 **Full Task ID:** `E11:S03:T02`
 
@@ -35,7 +35,7 @@ Create API test suite for the {PROJECT_NAME} project. Build comprehensive tests 
 ## Input
 
 - API implementation (from E11:S2)
-- API endpoints (from E11:S1:T02)
+- API endpoints (from E11:S01:T02)
 - Testing requirements
 - Testing framework preferences
 - Test data requirements
@@ -85,10 +85,10 @@ Create API test suite for the {PROJECT_NAME} project. Build comprehensive tests 
 
 **Depends On:**
 - API implementation (from E11:S2)
-- API endpoints (from E11:S1:T02)
+- API endpoints (from E11:S01:T02)
 
 **Blocks:**
-- E11:S3:T03: Set up API testing tools (test suite uses testing tools)
+- E11:S03:T03: Set up API testing tools (test suite uses testing tools)
 
 **Parallel Development Candidacy:** Blocked (depends on E11:S2)
 
@@ -97,7 +97,7 @@ Create API test suite for the {PROJECT_NAME} project. Build comprehensive tests 
 ## Related Work
 
 **Related Tasks:**
-- E11:S3:T03: Set up API testing tools (test suite uses testing tools)
+- E11:S03:T03: Set up API testing tools (test suite uses testing tools)
 - E13:S2: Test Implementation (API tests are part of test implementation)
 
 **Related Stories:**

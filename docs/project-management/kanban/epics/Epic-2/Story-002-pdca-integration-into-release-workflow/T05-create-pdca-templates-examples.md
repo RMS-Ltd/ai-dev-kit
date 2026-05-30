@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task 005 – Create PDCA templates and examples
 
-**Task:** E2:S02:T05  
+**Task:** E02:S02:T05  
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Created:** 2025-12-03  
@@ -97,11 +97,11 @@ Create comprehensive PDCA templates and examples for each phase of the cycle. Th
 
 ## Related Tasks
 
-- E2:S02:T01 – Add CHECK Phase (provides CHECK template content)
-- E2:S02:T02 – Add ACT Phase (provides ACT template content)
-- E2:S02:T03 – Enhance PLAN Phase (provides PLAN template content)
-- E2:S02:T04 – Enhance DO Phase (provides DO template content)
-- E2:S02:T06 – Update RW workflow YAML and documentation (includes template integration)
+- E02:S02:T01 – Add CHECK Phase (provides CHECK template content)
+- E02:S02:T02 – Add ACT Phase (provides ACT template content)
+- E02:S02:T03 – Enhance PLAN Phase (provides PLAN template content)
+- E02:S02:T04 – Enhance DO Phase (provides DO template content)
+- E02:S02:T06 – Update RW workflow YAML and documentation (includes template integration)
 
 ---
 

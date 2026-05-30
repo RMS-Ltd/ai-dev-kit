@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 2, Story 16, Task 9: `/ipw` slash command for Claude Code + mandatory IPP state transition (FR-094)
 
-**Task ID:** E2:S16:T09  
+**Task ID:** E02:S16:T09  
 **Status:** COMPLETE ✅ COMPLETE (v0.2.16.9+1)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-14  
 **Last updated:** 2026-05-14  
 **Version Anchor:** v0.2.16.9+0  
-**Code:** E2S16T09
+**Code:** E02S16T09
 
 **Upstream:** [FR-094 — `/ipw` slash command for Claude Code + mandatory task state transition in IPP](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 
@@ -26,7 +26,7 @@ Publication N/A Reason: Tooling/config/doc task — no specification/test-design
 
 ## Input
 
-- [IPP — E2:S16:T09 implementation plan](../../../../../../docs/implementation-cycles/IPP-E2S16T09-ipw-slash-command-and-ipp-state-transition.md)
+- [IPP — E02:S16:T09 implementation plan](../../../../../../docs/implementation-cycles/IPP-E02S16T09-ipw-slash-command-and-ipp-state-transition.md)
 - [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) requirements.
 - Existing `/rw` command at `.claude/commands/rw.md` and `/ukw` at `.claude/commands/ukw.md` as pattern references.
 - IPW canonical step guide: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`.
@@ -74,7 +74,7 @@ See [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-m
 - [x] **AC9:** `AGENTS.md` updated.
 - [x] **AC10:** ADR created or updated recording the IPP state transition contract.
 - [x] **AC11:** FR-077 cross-references FR-094 as the mechanism embedding the state contract in IPP artefacts.
-- [x] **AC12:** FR-094 and E2:S16:T09 are bidirectionally linked.
+- [x] **AC12:** FR-094 and E02:S16:T09 are bidirectionally linked.
 
 ---
 
@@ -89,4 +89,4 @@ See [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-m
 - `CLAUDE.md`
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
-- [IPP artifact](../../../../../../docs/implementation-cycles/IPP-E2S16T09-ipw-slash-command-and-ipp-state-transition.md)
+- [IPP artifact](../../../../../../docs/implementation-cycles/IPP-E02S16T09-ipw-slash-command-and-ipp-state-transition.md)

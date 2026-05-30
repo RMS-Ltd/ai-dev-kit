@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E4:S1:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E04:S01:T02`)
 
 **Full Task ID:** `E04:S01:T02`
 
@@ -34,7 +34,7 @@ Configure Kanban columns and workflows for the {PROJECT_NAME} project. Define an
 
 ## Input
 
-- Kanban board structure (from E4:S1:T01)
+- Kanban board structure (from E04:S01:T01)
 - Project workflow requirements
 - Workflow transition rules
 - Column definitions and purposes
@@ -83,11 +83,11 @@ Configure Kanban columns and workflows for the {PROJECT_NAME} project. Define an
 ## Dependencies
 
 **Depends On:**
-- E4:S1:T01: Set up Kanban board structure (configuration uses board structure)
+- E04:S01:T01: Set up Kanban board structure (configuration uses board structure)
 
 **Blocks:**
-- E4:S1:T03: Set up Kanban card templates (templates may reference column configuration)
-- E4:S1:T04: Document Kanban board usage (documentation references workflow configuration)
+- E04:S01:T03: Set up Kanban card templates (templates may reference column configuration)
+- E04:S01:T04: Document Kanban board usage (documentation references workflow configuration)
 - E4:S2: Kanban Workflow Configuration (may extend workflow configuration)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
@@ -97,9 +97,9 @@ Configure Kanban columns and workflows for the {PROJECT_NAME} project. Define an
 ## Related Work
 
 **Related Tasks:**
-- E4:S1:T01: Set up Kanban board structure (configuration uses board structure)
-- E4:S1:T03: Set up Kanban card templates (templates may reference column configuration)
-- E4:S1:T04: Document Kanban board usage (documentation references workflow configuration)
+- E04:S01:T01: Set up Kanban board structure (configuration uses board structure)
+- E04:S01:T03: Set up Kanban card templates (templates may reference column configuration)
+- E04:S01:T04: Document Kanban board usage (documentation references workflow configuration)
 
 **Related Stories:**
 - E4:S1: Kanban Board Setup (this story)

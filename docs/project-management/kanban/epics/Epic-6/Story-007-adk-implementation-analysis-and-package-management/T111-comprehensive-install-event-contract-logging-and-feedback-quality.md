@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Epic 6, Story 7, Task 111: Comprehensive install event-contract logging quality
 
-**Task ID:** E6:S07:T111  
+**Task ID:** E06:S07:T111  
 **Status:** COMPLETE  
 **Priority:** CRITICAL  
 **Estimated Effort:** Large  
 **Created:** 2026-04-09  
-**Code:** E6S07T111
+**Code:** E06S07T111
 
 **Implementation note:** Released **v0.6.7.111+1** (SemVer **v0.4.721+1**): CLI install JSON event contract, strict option, `ai-dev-kit logs validate-install-log`, tests/docs. Verification closure recorded in **v0.6.7.111+2** (SemVer **v0.4.722+2**).
 
@@ -66,6 +66,6 @@ housekeeping_policy: keep
 - [FR-047](../../../fr-br/FR-047-install-logging-for-framework-dependencies.md)
 - [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md)
 - [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
-- [ICW-E6S07T111-Specification](../../../../../implementation-cycles/ICW-E6S07T111-specification.md)
-- [ICW-E6S07T111-Test-Design](../../../../../implementation-cycles/ICW-E6S07T111-test-design.md)
-- [ICW-E6S07T111-Implementation-Plan](../../../../../implementation-cycles/ICW-E6S07T111-implementation-plan.md)
+- [ICW-E06S07T111-Specification](../../../../../implementation-cycles/ICW-E06S07T111-specification.md)
+- [ICW-E06S07T111-Test-Design](../../../../../implementation-cycles/ICW-E06S07T111-test-design.md)
+- [ICW-E06S07T111-Implementation-Plan](../../../../../implementation-cycles/ICW-E06S07T111-implementation-plan.md)

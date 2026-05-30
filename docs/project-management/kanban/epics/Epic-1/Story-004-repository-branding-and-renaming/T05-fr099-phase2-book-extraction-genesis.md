@@ -8,18 +8,18 @@ housekeeping_policy: keep
 
 # Epic 1, Story 4, Task 5: FR-099 Phase 2 — Book extraction genesis commit
 
-**Task ID:** E1:S04:T05  
+**Task ID:** E01:S04:T05  
 **FR-099 phase:** **2**  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (v0.1.4.5+1 – Kanban documentation setup)
 **Version:** v0.1.4.5+1
-**Code:** E1S04T05
+**Code:** E01S04T05
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.3 Phase 2**  
-**Depends on:** [E1:S04:T04 — Phase 1](T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md)  
+**Depends on:** [E01:S04:T04 — Phase 1](T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md)  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 ## Input
 
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [E1:S04:T04 — Phase 1](T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) ✅
+- [E01:S04:T04 — Phase 1](T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) ✅
 - Private `hf-ai-dev-kit` `dev` branch
 
 ## Deliverable
@@ -36,7 +36,7 @@ Book extraction genesis commit on private repo (book-free public-bound tree).
 
 ## Summary
 
-**Phase 2:** Land **book extraction genesis commit** on private `hf-ai-dev-kit` — public-bound tree book-free per Option B rule. Shipped **v0.1.4.3+1** (release attributed to umbrella **E1:S04:T03** before 2026-05-26 phase split).
+**Phase 2:** Land **book extraction genesis commit** on private `hf-ai-dev-kit` — public-bound tree book-free per Option B rule. Shipped **v0.1.4.3+1** (release attributed to umbrella **E01:S04:T03** before 2026-05-26 phase split).
 
 ---
 
@@ -76,7 +76,7 @@ Book extraction genesis commit on private repo (book-free public-bound tree).
 
 ## Next phase
 
-→ [E1:S04:T06 — Phase 3 public rebirth](T06-fr099-phase3-public-ai-dev-kit-rebirth.md)
+→ [E01:S04:T06 — Phase 3 public rebirth](T06-fr099-phase3-public-ai-dev-kit-rebirth.md)
 
 ---
 

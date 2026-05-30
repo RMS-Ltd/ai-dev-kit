@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E1:S1:T6` (e.g., `E4:S11:T01`)
+**Format:** `E01:S01:T06` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E01:S01:T06`
 
@@ -73,10 +73,10 @@ Configure code quality tools (linters, formatters) for the {PROJECT_NAME} projec
 ## Dependencies
 
 **Depends On:**
-- E1:S1:T05
+- E01:S01:T05
 
 **Blocks:**
-- E1:S1:T07
+- E01:S01:T07
 
 **Blocked By:**
 - [What blocks this task]
@@ -122,7 +122,7 @@ Configure code quality tools (linters, formatters) for the {PROJECT_NAME} projec
 | **Nature** | Blocking / sequential | Contextual / informational |
 | **Direction** | `Depends On` / `Blocks` | Bidirectional (always both ways) |
 | **Usage** | Task cannot start until dependency resolves | Tasks can proceed independently but share context |
-| **Examples** | "Blocked by: E2:S01:T01" | "Informs: E2:S01:T03 — provides analysis for design" |
+| **Examples** | "Blocked by: E02:S01:T01" | "Informs: E02:S01:T03 — provides analysis for design" |
 
 ### Cross-Wiring Examples
 

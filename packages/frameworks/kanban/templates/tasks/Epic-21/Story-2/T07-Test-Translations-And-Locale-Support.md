@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E21:S2:T7` (e.g., `E4:S11:T01`)
+**Format:** `E21:S02:T07` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E21:S02:T07`
 
@@ -71,10 +71,10 @@ Test translations and locale support for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E21:S2:T06
+- E21:S02:T06
 
 **Blocks:**
-- E21:S2:T08
+- E21:S02:T08
 
 **Blocked By:**
 - [What blocks this task]

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E3:S1:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E03:S01:T01`)
 
 **Full Task ID:** `E03:S01:T01`
 
@@ -86,9 +86,9 @@ Define versioning policy for the {PROJECT_NAME} project. Establish clear version
 - Team input and preferences (if applicable)
 
 **Blocks:**
-- E3:S1:T02: Design versioning schema (schema implements policy)
-- E3:S1:T03: Document versioning conventions (documentation references policy)
-- E3:S1:T04: Create versioning examples (examples demonstrate policy)
+- E03:S01:T02: Design versioning schema (schema implements policy)
+- E03:S01:T03: Document versioning conventions (documentation references policy)
+- E03:S01:T04: Create versioning examples (examples demonstrate policy)
 
 **Parallel Development Candidacy:** Safe (can proceed independently)
 
@@ -97,9 +97,9 @@ Define versioning policy for the {PROJECT_NAME} project. Establish clear version
 ## Related Work
 
 **Related Tasks:**
-- E3:S1:T02: Design versioning schema (schema implements policy)
-- E3:S1:T03: Document versioning conventions (documentation references policy)
-- E3:S1:T04: Create versioning examples (examples demonstrate policy)
+- E03:S01:T02: Design versioning schema (schema implements policy)
+- E03:S01:T03: Document versioning conventions (documentation references policy)
+- E03:S01:T04: Create versioning examples (examples demonstrate policy)
 
 **Related Stories:**
 - E3:S1: Versioning Policy and Schema (this story)

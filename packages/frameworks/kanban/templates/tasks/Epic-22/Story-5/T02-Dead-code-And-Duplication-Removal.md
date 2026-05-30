@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E22:S5:T2` (e.g., `E4:S11:T01`)
+**Format:** `E22:S05:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E22:S05:T02`
 
@@ -71,10 +71,10 @@ Dead-code and duplication removal for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E22:S5:T01
+- E22:S05:T01
 
 **Blocks:**
-- E22:S5:T03
+- E22:S05:T03
 
 **Blocked By:**
 - [What blocks this task]

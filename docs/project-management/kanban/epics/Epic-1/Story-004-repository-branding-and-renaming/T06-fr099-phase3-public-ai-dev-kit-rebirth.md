@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 1, Story 4, Task 6: FR-099 Phase 3 — Public ai-dev-kit rebirth
 
-**Task ID:** E1:S04:T06  
+**Task ID:** E01:S04:T06  
 **FR-099 phase:** **3**  
 **Status:** COMPLETE  
 **Priority:** HIGH  
@@ -16,12 +16,12 @@ housekeeping_policy: keep
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (**v0.1.4.6+2** — FR-099 Phase 3 public rebirth released)  
 **Version Anchor:** v0.1.4.6+2  
-**Code:** E1S04T06
+**Code:** E01S04T06
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.4 Phase 3**  
-**Depends on:** [E1:S04:T05 — Phase 2 genesis](T05-fr099-phase2-book-extraction-genesis.md) ✅  
-**Blocks:** [E1:S04:T07 — Phase 4 rewire](T07-fr099-phase4-rewire-and-verify.md)  
+**Depends on:** [E01:S04:T05 — Phase 2 genesis](T05-fr099-phase2-book-extraction-genesis.md) ✅  
+**Blocks:** [E01:S04:T07 — Phase 4 rewire](T07-fr099-phase4-rewire-and-verify.md)  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 ## Input
 
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [E1:S04:T05 — Phase 2 genesis](T05-fr099-phase2-book-extraction-genesis.md) ✅
+- [E01:S04:T05 — Phase 2 genesis](T05-fr099-phase2-book-extraction-genesis.md) ✅
 - [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) open questions (orphan vs genesis-SHA)
 
 ## Deliverable
@@ -70,13 +70,13 @@ New public `RMS-Ltd/ai-dev-kit` repository from verified genesis commit.
 
 ## IPW gate
 
-**Planning:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) filed (shared across T03–T07). Phase 3 execution still requires explicit authorization (`implement` or `RW E1:S04:T06`).
+**Planning:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) filed (shared across T03–T07). Phase 3 execution still requires explicit authorization (`implement` or `RW E01:S04:T06`).
 
 ---
 
 ## Coordination
 
-- [IPP-E6S09T06 §8 Wave E](../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) — preferred ECC real-world test venue **after** this phase.
+- [IPP-E06S09T06 §8 Wave E](../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md) — preferred ECC real-world test venue **after** this phase.
 
 ---
 

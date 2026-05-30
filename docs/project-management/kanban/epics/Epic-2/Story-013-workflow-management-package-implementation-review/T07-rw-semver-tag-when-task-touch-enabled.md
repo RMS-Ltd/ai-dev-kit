@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E2:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled
+# E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled
 
-**Task ID:** E2:S13:T07  
+**Task ID:** E02:S13:T07  
 **Status:** SUPERSEDED  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
@@ -19,13 +19,13 @@ housekeeping_policy: keep
 
 ## Supersession (2026-05-29)
 
-**This task is SUPERSEDED by [E5:S01:T46](../../Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md).**
+**This task is SUPERSEDED by [E05:S01:T46](../../Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md).**
 
-FR-046 implementation and closure were delivered under the FR repository anchor task E5:S01:T46 (builds +2 through +7). Scope overlap included RW SemVer primary tagging, dual⇒task_touch validation, GitHub release alignment, and documentation.
+FR-046 implementation and closure were delivered under the FR repository anchor task E05:S01:T46 (builds +2 through +7). Scope overlap included RW SemVer primary tagging, dual⇒task_touch validation, GitHub release alignment, and documentation.
 
 **Do not implement separately.** Track verification and release history on T46 and [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md).
 
-Closure evidence: [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md).
+Closure evidence: [`IPP-E05S01T46-fr046-closure-wave.md`](../../../../implementation-cycles/IPP-E05S01T46-fr046-closure-wave.md).
 
 ---
 
@@ -66,11 +66,11 @@ This work is motivated by the SemVer tag collision incident and is dependent on 
 
 ## Acceptance Criteria
 
-- [x] ~~RW detects `task_touch` mapping mode via configuration.~~ → Delivered via E5:S01:T46
-- [x] ~~RW creates SemVer tag `v\{semver\}` when enabled.~~ → Delivered via E5:S01:T46
-- [x] ~~RW still supports default behavior when `task_touch` is not enabled.~~ → Delivered via E5:S01:T46
-- [x] ~~Documentation updated to reflect behavior.~~ → Delivered via E5:S01:T46
-- [x] ~~Collision/misalignment behavior is defined (block with guidance vs automated correction).~~ → Delivered via E5:S01:T46 + E3:S02:T12
+- [x] ~~RW detects `task_touch` mapping mode via configuration.~~ → Delivered via E05:S01:T46
+- [x] ~~RW creates SemVer tag `v\{semver\}` when enabled.~~ → Delivered via E05:S01:T46
+- [x] ~~RW still supports default behavior when `task_touch` is not enabled.~~ → Delivered via E05:S01:T46
+- [x] ~~Documentation updated to reflect behavior.~~ → Delivered via E05:S01:T46
+- [x] ~~Collision/misalignment behavior is defined (block with guidance vs automated correction).~~ → Delivered via E05:S01:T46 + E03:S02:T12
 
 ---
 
@@ -83,4 +83,4 @@ This work is motivated by the SemVer tag collision incident and is dependent on 
 ## Related Work
 
 - `docs/architecture/standards-and-adrs/semver-implementation-followup-spec.md`
-- **Canonical implementation:** [E5:S01:T46](../../Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
+- **Canonical implementation:** [E05:S01:T46](../../Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)

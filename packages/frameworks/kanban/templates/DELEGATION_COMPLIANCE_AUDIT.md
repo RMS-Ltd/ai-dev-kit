@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Purpose:** This document tracks compliance with tier delegation principles across Epic, Story, and Task documents.
 
 **Last Audit:** 2025-12-11  
-**Auditor:** E4:S11:T06 Phase 5  
+**Auditor:** E04:S11:T06 Phase 5  
 **Status:** IN PROGRESS
 
 ---
@@ -201,5 +201,5 @@ Replace with brief summary and link:
 ---
 
 **Last Updated:** 2025-12-11  
-**Version:** v0.4.11.6+1 (E4:S11:T06 Phase 5)
+**Version:** v0.4.11.6+1 (E04:S11:T06 Phase 5)
 

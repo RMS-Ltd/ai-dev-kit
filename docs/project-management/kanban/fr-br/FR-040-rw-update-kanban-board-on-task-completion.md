@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** HIGH  
 **Severity:** N/A  
-**Status:** IMPLEMENTED (E5:S01:T36) — wired as Bucket-D2 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+**Status:** IMPLEMENTED (E05:S01:T36) — wired as Bucket-D2 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 > **Predecessor of FR-092 (2026-04-27):** FR-040 introduced RW kboard updates on task completion. FR-092 (Wave 2-4) extends this from "kboard-touched-on-completion" to "four-surface canonical reconciliation on every release", absorbing FR-090 (row transform engine) and FR-091 (release-time contract). FR-040 remains valid as historical predecessor.
 
@@ -34,7 +34,7 @@ Enhance RW Step 7 to automatically update the main Kanban board (`kboard.md`) wh
 ### What Should Happen vs. What Currently Happens?
 
 **Expected Behavior:**
-- When RW completes a task release (e.g., E4:S16:T05), RW Step 7 should:
+- When RW completes a task release (e.g., E04:S16:T05), RW Step 7 should:
   - Update Story document ✅ (currently implemented)
   - Update Epic document ✅ (currently implemented)
   - **Update Kanban board** ❌ (NOT implemented)
@@ -75,7 +75,7 @@ This feature is needed:
 ## Use Cases
 
 1. **Task Completion Release:**
-   - Developer completes a task (e.g., E4:S16:T05)
+   - Developer completes a task (e.g., E04:S16:T05)
    - RW executes and updates:
      - Story document: Task marked complete ✅
      - Epic document: Story status updated ✅

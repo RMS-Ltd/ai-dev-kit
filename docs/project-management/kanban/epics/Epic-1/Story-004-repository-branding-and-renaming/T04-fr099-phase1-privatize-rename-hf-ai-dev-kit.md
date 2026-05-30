@@ -8,17 +8,17 @@ housekeeping_policy: keep
 
 # Epic 1, Story 4, Task 4: FR-099 Phase 1 — Privatize & rename to hf-ai-dev-kit
 
-**Task ID:** E1:S04:T04  
+**Task ID:** E01:S04:T04  
 **FR-099 phase:** **1**  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (v0.1.4.4+1 – Kanban documentation setup)
-**Code:** E1S04T04
+**Code:** E01S04T04
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.2 Phase 1**  
-**Depends on:** [E1:S04:T03 — Phase 0](T03-fr099-phase0-inventory-adr-approval.md)  
+**Depends on:** [E01:S04:T03 — Phase 0](T03-fr099-phase0-inventory-adr-approval.md)  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 ## Input
 
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [E1:S04:T03 — Phase 0](T03-fr099-phase0-inventory-adr-approval.md) ✅
+- [E01:S04:T03 — Phase 0](T03-fr099-phase0-inventory-adr-approval.md) ✅
 - Maintainer approval of private repo name per ADR-006
 
 ## Deliverable
@@ -67,7 +67,7 @@ Private GitHub repository `RMS-Ltd/hf-ai-dev-kit` with full history retained.
 
 ## Next phase
 
-→ [E1:S04:T05 — Phase 2 book extraction genesis](T05-fr099-phase2-book-extraction-genesis.md)
+→ [E01:S04:T05 — Phase 2 book extraction genesis](T05-fr099-phase2-book-extraction-genesis.md)
 
 ---
 

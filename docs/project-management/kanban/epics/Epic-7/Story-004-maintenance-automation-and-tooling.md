@@ -22,12 +22,12 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E7:S04:T01 – Design maintenance automation requirements** - ✅ COMPLETE (v0.7.4.1+0 – Maintenance automation requirements designed: comprehensive requirements covering IDE issues, quality checks, dependencies, documentation, changelog, with prioritization and implementation phases)
-- [x] **E7:S04:T02 – Develop maintenance automation scripts and tools** - ✅ COMPLETE (v0.7.4.2+0 – Maintenance automation scripts and tools developed: script architecture, IDE issue detection, quality checks, dependency scanning, documentation validation, with templates and examples)
-- [x] **E7:S04:T03 – Integrate automation with existing workflows** - ✅ COMPLETE (v0.7.4.3+0 – Maintenance automation integrated with existing workflows: RW integration, UKW integration, maintenance workflow integration, CI/CD integration, with integration patterns)
-- [x] **E7:S04:T04 – Document automation and tooling usage** - ✅ COMPLETE (v0.7.4.4+0 – Maintenance automation and tooling usage documented: comprehensive usage guides, tutorials, examples, best practices, and troubleshooting)
+- [x] **E07:S04:T01 – Design maintenance automation requirements** - ✅ COMPLETE (v0.7.4.1+0 – Maintenance automation requirements designed: comprehensive requirements covering IDE issues, quality checks, dependencies, documentation, changelog, with prioritization and implementation phases)
+- [x] **E07:S04:T02 – Develop maintenance automation scripts and tools** - ✅ COMPLETE (v0.7.4.2+0 – Maintenance automation scripts and tools developed: script architecture, IDE issue detection, quality checks, dependency scanning, documentation validation, with templates and examples)
+- [x] **E07:S04:T03 – Integrate automation with existing workflows** - ✅ COMPLETE (v0.7.4.3+0 – Maintenance automation integrated with existing workflows: RW integration, UKW integration, maintenance workflow integration, CI/CD integration, with integration patterns)
+- [x] **E07:S04:T04 – Document automation and tooling usage** - ✅ COMPLETE (v0.7.4.4+0 – Maintenance automation and tooling usage documented: comprehensive usage guides, tutorials, examples, best practices, and troubleshooting)
 
-> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E7:S04:T01`, `E7:S04:T02`)  
+> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E07:S04:T01`, `E07:S04:T02`)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.7.4.3+1)`)  
 > **Release Workflow Requirement:** When Release Workflow (RW) Step 4 updates Epic documentation, it MUST update **ALL sections**:
 > - Epic header `Last updated` field
@@ -58,9 +58,9 @@ This story develops automation and tooling to streamline maintenance work and re
 
 ## Tasks
 
-### E7:S04:T01 – Design maintenance automation requirements
+### E07:S04:T01 – Design maintenance automation requirements
 
-> **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E7:S04:T01`, not `T01` alone)
+> **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E07:S04:T01`, not `T01` alone)
 
 **Input:** Current maintenance practices, maintenance workflows, tool capabilities  
 **Deliverable:** Comprehensive maintenance automation requirements document  
@@ -94,11 +94,11 @@ This story develops automation and tooling to streamline maintenance work and re
 
 ---
 
-### E7:S04:T02 – Develop maintenance automation scripts and tools
+### E07:S04:T02 – Develop maintenance automation scripts and tools
 
 **Input:** Maintenance automation requirements (T01), existing tools and scripts  
 **Deliverable:** Maintenance automation scripts and tools  
-**Dependencies:** E7:S04:T01 (requirements provide foundation)  
+**Dependencies:** E07:S04:T01 (requirements provide foundation)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 
@@ -128,11 +128,11 @@ This story develops automation and tooling to streamline maintenance work and re
 
 ---
 
-### E7:S04:T03 – Integrate automation with existing workflows
+### E07:S04:T03 – Integrate automation with existing workflows
 
 **Input:** Maintenance automation scripts (T02), existing workflows (RW, UKW, maintenance workflows)  
 **Deliverable:** Automation integrated with existing workflows  
-**Dependencies:** E7:S04:T02, Epic 2 (Workflow Management), Epic 4 (Kanban Framework)  
+**Dependencies:** E07:S04:T02, Epic 2 (Workflow Management), Epic 4 (Kanban Framework)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 
@@ -157,11 +157,11 @@ This story develops automation and tooling to streamline maintenance work and re
 
 ---
 
-### E7:S04:T04 – Document automation and tooling usage
+### E07:S04:T04 – Document automation and tooling usage
 
 **Input:** Maintenance automation scripts (T02), workflow integrations (T03)  
 **Deliverable:** Comprehensive automation and tooling usage documentation  
-**Dependencies:** E7:S04:T02, E7:S04:T03  
+**Dependencies:** E07:S04:T02, E07:S04:T03  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 

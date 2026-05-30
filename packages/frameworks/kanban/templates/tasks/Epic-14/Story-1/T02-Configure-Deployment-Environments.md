@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S1:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S01:T02`)
 
 **Full Task ID:** `E14:S01:T02`
 
@@ -34,7 +34,7 @@ Configure deployment environments for the {PROJECT_NAME} project. Set up and con
 
 ## Input
 
-- CI/CD pipeline (from E14:S1:T01)
+- CI/CD pipeline (from E14:S01:T01)
 - Deployment environment requirements
 - Environment configuration requirements
 - Secrets management requirements
@@ -84,11 +84,11 @@ Configure deployment environments for the {PROJECT_NAME} project. Set up and con
 ## Dependencies
 
 **Depends On:**
-- E14:S1:T01: Set up CI/CD pipeline (deployment environments use CI/CD pipeline)
+- E14:S01:T01: Set up CI/CD pipeline (deployment environments use CI/CD pipeline)
 - Infrastructure setup (from E14:S2 - optional, beneficial)
 
 **Blocks:**
-- E14:S1:T03: Set up deployment scripts (deployment scripts deploy to environments)
+- E14:S01:T03: Set up deployment scripts (deployment scripts deploy to environments)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -97,8 +97,8 @@ Configure deployment environments for the {PROJECT_NAME} project. Set up and con
 ## Related Work
 
 **Related Tasks:**
-- E14:S1:T01: Set up CI/CD pipeline (deployment environments use CI/CD pipeline)
-- E14:S1:T03: Set up deployment scripts (deployment scripts deploy to environments)
+- E14:S01:T01: Set up CI/CD pipeline (deployment environments use CI/CD pipeline)
+- E14:S01:T03: Set up deployment scripts (deployment scripts deploy to environments)
 
 **Related Stories:**
 - E14:S1: Deployment Pipeline Setup (this story)

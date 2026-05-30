@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** HIGH  
 **Status:** IMPLEMENTED (documentation alignment — v0.5.1.38+1) — wired as Bucket-D1 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
-**Assigned Task:** E5:S01:T38  
+**Assigned Task:** E05:S01:T38  
 **GitHub Issue:** [TBD]  
 
 > **Predecessor of FR-092 (2026-04-27):** FR-038 documented RW Step 7 as a scoped UKW invocation. FR-092 absorbs and supersedes the contract evolution (Bucket A1-A5, Wave 2) by codifying RW Step 7 as **self-sufficient** scoped reconciliation with no UKW process dependency. FR-038 remains valid as historical predecessor; the contract gap (no explicit "self-sufficient" wording across `.cursorrules`/RW guide/policy) is owned by FR-092.
@@ -139,5 +139,5 @@ Elevate RW Step 7 to an explicit, policy-backed **agentic Kanban sync** step tha
 
 ## Release History
 
-- **v0.5.1.38+1 (E5:S01:T38):** Documentation alignment delivered — RW Step 7 named **Scoped Kanban Sync (UKW Mode)**; UKW `invocation_context` (`rw_step_7` vs `standalone`); cross-links; Kanban governance §1.1 and board guide note. YAML orchestrator / explicit workflow flags remain **out of scope** (optional follow-up under Epic 6 / workflow framework).
+- **v0.5.1.38+1 (E05:S01:T38):** Documentation alignment delivered — RW Step 7 named **Scoped Kanban Sync (UKW Mode)**; UKW `invocation_context` (`rw_step_7` vs `standalone`); cross-links; Kanban governance §1.1 and board guide note. YAML orchestrator / explicit workflow flags remain **out of scope** (optional follow-up under Epic 6 / workflow framework).
 

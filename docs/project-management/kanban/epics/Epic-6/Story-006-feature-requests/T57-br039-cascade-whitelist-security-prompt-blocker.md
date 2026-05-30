@@ -8,20 +8,20 @@ housekeeping_policy: keep
 
 # Epic 6, Story 6, Task 57: BR-039 Cascade whitelist / security prompt usability (vendor)
 
-**Task ID:** E6:S06:T57  
+**Task ID:** E06:S06:T57  
 **Status:** ✅ **COMPLETE** (repo implementation — see **§ Task closure policy**; **[BR-039](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** remains **open** for Cascade/vendor product state)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Small (repo) / Unknown (vendor)  
 **Created:** 2026-03-31  
 **Last updated:** 2026-04-02 — **`RW -k`** repair **v0.6.6.57+6** (SemVer **v0.4.705+6** — **`v0.4.703+4`** / **`v0.4.704+5`** both stale on remote)  
 **Version:** v0.6.6.57+6  
-**Code:** E6S06T57
+**Code:** E06S06T57
 
 **Upstream:** [BR-039 – Cascade Whitelist Security Prompt Usability Blocker](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 
-**Planning Artifact (IPW):** [IPW-E6S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
+**Planning Artifact (IPW):** [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md)
 
-**Related:** [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) (symptoms); [E6:S06:T02](T02-fix-release-workflow-micromanagement-issues.md) (RW micromanagement — partial overlap; **BR-039** describes Cascade product behavior)
+**Related:** [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) (symptoms); [E06:S06:T02](T02-fix-release-workflow-micromanagement-issues.md) (RW micromanagement — partial overlap; **BR-039** describes Cascade product behavior)
 
 ---
 
@@ -43,7 +43,7 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 
 - [BR-039](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (open for **product**; CRITICAL).
 - Kanban / FR-UXR board rows; **epic/6-framework-management** as integration branch.
-- [IPW-E6S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md) (durable planning package; optional read).
+- [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md) (durable planning package; optional read).
 
 ---
 
@@ -61,7 +61,7 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 
 ## Deliverable
 
-1. **BR-039** shows **Implementing Task:** `E6:S06:T57` and stays aligned on **product** status.
+1. **BR-039** shows **Implementing Task:** `E06:S06:T57` and stays aligned on **product** status.
 2. **Evidence** (historical + environment): dates, honest **attempted/verified** language — no false “fixed.”
 3. When **someone** validates a vendor fix: update **BR-039** (not necessarily this task — **T57** may remain COMPLETE as historical repo anchor).
 
@@ -81,7 +81,7 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 
 - **v0.6.6.57+6** (`RW -k` **repair**) — outward **`v0.4.705+6`**; **`+5` / `v0.4.704+5`** also blocked on remote.
 - **v0.6.6.57+5** (`RW -k` **repair** / Option B) — outward **`v0.4.704+5`** attempted; **supersedes** **`v0.4.703+4`** tag attempt for **+4**.
-- **v0.6.6.57+4** (`RW -k` **E6:S06:T57**) — **T57** **COMPLETE** repo-side; **§ Task closure policy**; **`dev-kit-kanban-versioning-rw-integration.md`** § **`RW -k`**.
+- **v0.6.6.57+4** (`RW -k` **E06:S06:T57**) — **T57** **COMPLETE** repo-side; **§ Task closure policy**; **`dev-kit-kanban-versioning-rw-integration.md`** § **`RW -k`**.
 - **v0.6.6.57+3** — **E1** / **E2** historical evidence + **Cursor-only** note (prior full **RW** on **T57**).
 
 ---
@@ -96,7 +96,7 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 | ----- | ----- |
 | **date_utc** | 2026-04-02 14:44 UTC |
 | **tool_version** | **Windsurf (macOS):** `1.9577.27` (historical reference). **Executor:** Cursor (validators). |
-| **scenario** | **A)** BR-039 § repro (interactive Cascade UI) — not run in agent session. **B)** `validate_branch_context.py --strict`; `validate_rw_task_complete.py --requested E6:S06:T57` on `epic/6-framework-management`. |
+| **scenario** | **A)** BR-039 § repro (interactive Cascade UI) — not run in agent session. **B)** `validate_branch_context.py --strict`; `validate_rw_task_complete.py --requested E06:S06:T57` on `epic/6-framework-management`. |
 | **expected** | **A)** After whitelist, repeated command should not re-prompt (per BR-039). **B)** Validators exit 0. |
 | **observed** | **A)** Not executed (UI). **B)** Both validators exited 0. |
 | **result** | **blocked** for **A** (product repro); auxiliary **pass** for **B** (repo shell only). |
@@ -131,4 +131,4 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 
 - **BR-039:** [BR-039-cascade-whitelist-security-prompt-usability-blocker.md](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 - **Video:** *(removed from repository root 2026-05-29 — was `Screen Recording 2026-03-09 at 16.07.14.mov`; per BR-039)*
-- **IPW package:** [IPW-E6S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
+- **IPW package:** [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md)

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED - IMPLEMENTED
 
-**Implementing Task:** [E4:S02:T06](../epics/Epic-4/Story-002-fr-br-intake-to-tasks/T06-github-submission-fr-br-uxr-fr004.md)
+**Implementing Task:** [E04:S02:T06](../epics/Epic-4/Story-002-fr-br-intake-to-tasks/T06-github-submission-fr-br-uxr-fr004.md)
 
 ---
 
@@ -143,13 +143,13 @@ An external contributor discovers a bug and wants to report it. They create a Gi
 **Assigned To:**
 - Epic: Epic 4 - Kanban Framework
 - Story: Story 2 - FR/BR Intake to Tasks
-- Task: E4:S02:T06 - GitHub submission integration for FR, BR, and UXR
+- Task: E04:S02:T06 - GitHub submission integration for FR, BR, and UXR
 - Version: `0.4.2.6+1`
 
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
 - Story: [`docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md`](../epics/Epic-4/Story-002-fr-br-intake-to-tasks.md)
-- Task: E4:S02:T06 (to be added to Story 2)
+- Task: E04:S02:T06 (to be added to Story 2)
 
 ---
 

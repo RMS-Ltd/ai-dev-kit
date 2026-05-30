@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S1:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S01:T02`)
 
 **Full Task ID:** `E11:S01:T02`
 
@@ -34,7 +34,7 @@ Define API endpoints for the {PROJECT_NAME} project. Specify all API endpoints, 
 
 ## Input
 
-- API architecture (from E11:S1:T01)
+- API architecture (from E11:S01:T01)
 - API requirements
 - Resource definitions
 - Endpoint requirements
@@ -82,10 +82,10 @@ Define API endpoints for the {PROJECT_NAME} project. Specify all API endpoints, 
 ## Dependencies
 
 **Depends On:**
-- E11:S1:T01: Design API architecture (endpoints implement architecture)
+- E11:S01:T01: Design API architecture (endpoints implement architecture)
 
 **Blocks:**
-- E11:S1:T03: Design request/response models (models are used by endpoints)
+- E11:S01:T03: Design request/response models (models are used by endpoints)
 - E11:S2: API Implementation (implementation uses endpoint definitions)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
@@ -95,8 +95,8 @@ Define API endpoints for the {PROJECT_NAME} project. Specify all API endpoints, 
 ## Related Work
 
 **Related Tasks:**
-- E11:S1:T01: Design API architecture (endpoints implement architecture)
-- E11:S1:T03: Design request/response models (models are used by endpoints)
+- E11:S01:T01: Design API architecture (endpoints implement architecture)
+- E11:S01:T03: Design request/response models (models are used by endpoints)
 - E11:S2: API Implementation (implementation uses endpoint definitions)
 
 **Related Stories:**

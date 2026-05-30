@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.7.11+4
 
 **Feature Request:** [FR-025](../../../fr-br/FR-025-changelog-management-and-archival-workflow.md)  
-**Code:** E6S07T11
+**Code:** E06S07T11
 
 ---
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S07:T11`
+**Full Task ID:** `E06:S07:T11`
 
 ---
 
@@ -227,8 +227,8 @@ Implement automated changelog management workflow (CMW) with:
 - **FR-025:** Changelog Management and Archival Workflow (source of this task)
 
 **Related Tasks:**
-- **E6:S07:T07:** Implement framework hardening recommendations (framework hardening context)
-- **E2:S16:T03:** Update Kanban Workflow (UKW) - Similar workflow pattern (migrated from T08 to T101)
+- **E06:S07:T07:** Implement framework hardening recommendations (framework hardening context)
+- **E02:S16:T03:** Update Kanban Workflow (UKW) - Similar workflow pattern (migrated from T08 to T101)
 
 **Related Stories:**
 - **E6:S07:** ADK Implementation Analysis and Package Management (parent story, migrated from S06 to S07)

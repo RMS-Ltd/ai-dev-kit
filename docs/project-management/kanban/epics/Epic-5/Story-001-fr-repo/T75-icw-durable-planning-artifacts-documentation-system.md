@@ -8,23 +8,23 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 75: ICW durable planning artifacts in the documentation system
 
-**Task ID:** E5:S01:T75  
+**Task ID:** E05:S01:T75  
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Small (documentation + governance; optional RW)  
 **Created:** 2026-04-01  
 **Completed:** 2026-04-01  
-**Last updated:** 2026-04-01 — **RW E5:S01:T75** **`v0.5.1.75+1`** (**FR-075**)  
-**Code:** E5S01T75  
+**Last updated:** 2026-04-01 — **RW E05:S01:T75** **`v0.5.1.75+1`** (**FR-075**)  
+**Code:** E05S01T75  
 **Version anchor:** ✅ COMPLETE (v0.5.1.75+1)
 
-**Repository pattern:** FR-075 = E5:S01:T75
+**Repository pattern:** FR-075 = E05:S01:T75
 
 ---
 
 ## Task ID
 
-**Full Task ID:** `E5:S01:T75`
+**Full Task ID:** `E05:S01:T75`
 
 ---
 

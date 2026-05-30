@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E18:S1:T1` (e.g., `E4:S11:T01`)
+**Format:** `E18:S01:T01` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E18:S01:T01`
 
@@ -76,7 +76,7 @@ Design authentication architecture for the {PROJECT_NAME} project.
 - None
 
 **Blocks:**
-- E18:S1:T02
+- E18:S01:T02
 
 **Blocked By:**
 - [What blocks this task]
@@ -122,7 +122,7 @@ Design authentication architecture for the {PROJECT_NAME} project.
 | **Nature** | Blocking / sequential | Contextual / informational |
 | **Direction** | `Depends On` / `Blocks` | Bidirectional (always both ways) |
 | **Usage** | Task cannot start until dependency resolves | Tasks can proceed independently but share context |
-| **Examples** | "Blocked by: E2:S01:T01" | "Informs: E2:S01:T03 — provides analysis for design" |
+| **Examples** | "Blocked by: E02:S01:T01" | "Informs: E02:S01:T03 — provides analysis for design" |
 
 ### Cross-Wiring Examples
 

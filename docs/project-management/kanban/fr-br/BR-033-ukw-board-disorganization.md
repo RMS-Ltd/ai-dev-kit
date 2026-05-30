@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** ✅ FIXED (All acceptance criteria met, task complete)  
 
-**Implementing Task:** [E6:S01:T33](../epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)  
-**Historical registry:** E6:S00:T33
+**Implementing Task:** [E06:S01:T33](../epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)  
+**Historical registry:** E06:S00:T33
 **GitHub Issue:** [TBD]  
 **Version:** v0.6.1.33+5
 
@@ -151,7 +151,7 @@ After running UKW, the Kanban board's Epics section is not properly ordered. Cur
 - Epic 2: Workflow Management Framework
 - Epic 4: Kanban Framework
 - Epic 6: Framework Management and Maintenance
-- E6:S06:T08: Update Kanban Workflow (UKW) - Perpetual Task
+- E06:S06:T08: Update Kanban Workflow (UKW) - Perpetual Task
 
 ---
 

@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E5:S01:T62 – GitHub Release Installation Experience
+# Task E05:S01:T62 – GitHub Release Installation Experience
 
 **Status:** COMPLETE  
 **Priority:** HIGH  
@@ -16,7 +16,7 @@ housekeeping_policy: keep
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Consolidated IPP per FR-042.
 
-**Implementation plan:** [IPP-E5S01T62-github-release-install-fr062.md](../../../../implementation-cycles/IPP-E5S01T62-github-release-install-fr062.md)
+**Implementation plan:** [IPP-E05S01T62-github-release-install-fr062.md](../../../../implementation-cycles/IPP-E05S01T62-github-release-install-fr062.md)
 
 ---
 
@@ -63,7 +63,7 @@ Implement the GitHub-release installation workflow for AI Dev Kit frameworks so 
 ## Wiring
 
 - **Epic / Story:** Epic 5 → Story 1 (FR Repo)  
-- **Task Code:** E5:S01:T62  
+- **Task Code:** E05:S01:T62  
 - **Feature Request:** FR-062  
 - **Cross-links:** Add this task to Story checklist; reference FR-062 and upcoming implementation stories (release tooling, docs, validation).
 

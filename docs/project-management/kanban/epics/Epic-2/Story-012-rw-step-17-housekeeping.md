@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E2:S12:T01 – Add Step 17: Housekeeping to Release Workflow** - ✅ COMPLETE (v0.2.12.1+1 – Step 17 added: workflow YAML, documentation, and cursor rules updated)
+- [x] **E02:S12:T01 – Add Step 17: Housekeeping to Release Workflow** - ✅ COMPLETE (v0.2.12.1+1 – Step 17 added: workflow YAML, documentation, and cursor rules updated)
 
 > **Format:** `E2:S12:Txx` (Epic 2, Story 12, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.2.12.1+1)`)
@@ -45,7 +45,7 @@ Add Step 17: Housekeeping to the Release Workflow. This step runs at the end of 
 
 ## Tasks
 
-### E2:S12:T01 – Add Step 17: Housekeeping to Release Workflow
+### E02:S12:T01 – Add Step 17: Housekeeping to Release Workflow
 
 **Input:** User request to add housekeeping step to RW  
 **Deliverable:** Step 17 added to RW workflow and documentation  
@@ -95,7 +95,7 @@ Add Step 17: Housekeeping to the Release Workflow. This step runs at the end of 
 
 ## References
 
-- **Related:** E2:S01:T08 - Add Step 9 - IDE problem checking to Release Workflow (similar pattern)
+- **Related:** E02:S01:T08 - Add Step 9 - IDE problem checking to Release Workflow (similar pattern)
 - **Workflow:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
 - **Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 

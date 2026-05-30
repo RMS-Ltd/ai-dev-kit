@@ -25,7 +25,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
 
 ## Tasks
 
-- [x] **E4:S08:T00 – Story creation and FR-009, UXR-002, UXR-003 intake** ✅ COMPLETE (v0.4.8.0+1)
+- [x] **E04:S08:T00 – Story creation and FR-009, UXR-002, UXR-003 intake** ✅ COMPLETE (v0.4.8.0+1)
   - Created Story 8: Intelligent Epic Matching and Canonical Structure Adoption
   - Intake FR-009: Intelligent Epic Matching and AI-Assisted Canonical Structure Adoption (GitHub issue #7)
   - Intake UXR-002: Comprehensive UAT of Migration Utilities (GitHub issue #6)
@@ -37,7 +37,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
   - **Acceptance:** ✅ All intake complete, Story 8 created with 6 implementation tasks
 
 
-- [x] **E4:S08:T01 – FR-009: Semantic epic matching implementation** ✅ COMPLETE (v0.4.8.1+1)
+- [x] **E04:S08:T01 – FR-009: Semantic epic matching implementation** ✅ COMPLETE (v0.4.8.1+1)
   - Created `semantic_matcher.py` with semantic analysis capabilities
   - Implemented similarity score calculation (0-100%) using Jaccard similarity on word tokens
   - Added match classification (exact, semantic, partial, no match)
@@ -47,7 +47,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
   - **Acceptance:** ✅ AC-1, AC-2, AC-3 of FR-009 satisfied.
 
 
-- [x] **E4:S08:T02 – FR-009: Intelligent task mapping implementation** ✅ COMPLETE (v0.4.8.2+1)
+- [x] **E04:S08:T02 – FR-009: Intelligent task mapping implementation** ✅ COMPLETE (v0.4.8.2+1)
   - Implemented intelligent task mapping in `_adopt_canonical_structure()` method
   - Maps user tasks to canonical epics/stories based on semantic matches (≥80% similarity)
   - Generates migration plans with recommendations and rationale
@@ -56,7 +56,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
   - **Acceptance:** ✅ AC-4, AC-5 of FR-009 satisfied.
 
 
-- [x] **E4:S08:T03 – FR-009: Canonical adoption as default mode** ✅ COMPLETE (v0.4.8.3+1)
+- [x] **E04:S08:T03 – FR-009: Canonical adoption as default mode** ✅ COMPLETE (v0.4.8.3+1)
   - Made "canonical_adoption" the recommended default when semantic matches found (≥50% of epics with ≥80% similarity)
   - Implemented dynamic epic numbering (`_find_next_available_epic_number()` with start_from parameter)
   - Updated installation script to include canonical_adoption mode and recommend it
@@ -65,7 +65,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
   - **Acceptance:** ✅ AC-6, AC-7 of FR-009 satisfied.
 
 
-- [x] **E4:S08:T04 – FR-009: Automatic reference updating** ✅ COMPLETE (v0.4.8.4+1)
+- [x] **E04:S08:T04 – FR-009: Automatic reference updating** ✅ COMPLETE (v0.4.8.4+1)
   - Created `reference_updater.py` for automatic task ID reference updating
   - Updates references in changelogs, docs, and story files (E\{epic\}:S\{story\}:T\{task\} pattern)
   - Generates migration reports showing all changes and un-updatable references
@@ -74,7 +74,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
   - **Acceptance:** ✅ AC-8, AC-9 of FR-009 satisfied.
 
 
-- [x] **E4:S08:T05 – FR-009: Migration plan presentation** ✅ COMPLETE (v0.4.8.5+1)
+- [x] **E04:S08:T05 – FR-009: Migration plan presentation** ✅ COMPLETE (v0.4.8.5+1)
   - Implemented `present_migration_plan()` function in install script
   - Shows semantic matches (high and medium similarity)
   - Displays conflicts, recommendations, and rationale
@@ -84,7 +84,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
   - **Acceptance:** ✅ AC-10 of FR-009 satisfied.
 
 
-- [x] **E4:S08:T06 – Documentation and guides update** ✅ COMPLETE (v0.4.8.6+1)
+- [x] **E04:S08:T06 – Documentation and guides update** ✅ COMPLETE (v0.4.8.6+1)
   - Updated `scripts/README.md` with semantic matching documentation
   - Documented canonical_adoption mode and when to use it
   - Added semantic matching examples and match classification guide
@@ -94,7 +94,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
   - **Acceptance:** ✅ Documentation updated with semantic matching and intelligent migration guidance.
 
 
-- [ ] **E4:S08:T07 – FR-011: Task splitting across multiple canonical epics** - TODO
+- [ ] **E04:S08:T07 – FR-011: Task splitting across multiple canonical epics** - TODO
   - Implement multi-epic split logic when one source epic maps across several canonical epics.
   - Generate explainable split plans and deterministic reference updates per split task.
   - **Linked FR:** FR-011

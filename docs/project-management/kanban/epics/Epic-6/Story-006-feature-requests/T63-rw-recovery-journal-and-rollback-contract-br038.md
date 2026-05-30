@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Created:** 2026-04-20  
 **Last updated:** 2026-05-17  
 **Version:** N/A  
-**Task ID:** E6:S06:T63  
-**Code:** E6:S06:T63  
+**Task ID:** E06:S06:T63  
+**Code:** E06:S06:T63  
 **Associated BR:** [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
 
 ---
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 - [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) active unresolved scope.
 - Current RW execution and validation contract.
 - Existing workflow executor placeholders for checkpoint/rollback semantics.
-- [IPW Plan: E6:S06:T63 — Planning: Spec, Tests, Implementation Plan](../../../../../../implementation-cycles/IPP-E6S06T63-rw-recovery-journal.md)
+- [IPW Plan: E06:S06:T63 — Planning: Spec, Tests, Implementation Plan](../../../../../../implementation-cycles/IPP-E06S06T63-rw-recovery-journal.md)
 
 ## Problem Statement
 
@@ -57,4 +57,4 @@ RW is operationally stable, but failure recovery is not yet deterministic. When 
 
 - [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
 - [T02 historical anchor](T02-fix-release-workflow-micromanagement-issues.md)
-- [IPW Plan: E6:S06:T63 — Planning: Spec, Tests, Implementation Plan](../../../../../../implementation-cycles/IPP-E6S06T63-rw-recovery-journal.md)
+- [IPW Plan: E06:S06:T63 — Planning: Spec, Tests, Implementation Plan](../../../../../../implementation-cycles/IPP-E06S06T63-rw-recovery-journal.md)

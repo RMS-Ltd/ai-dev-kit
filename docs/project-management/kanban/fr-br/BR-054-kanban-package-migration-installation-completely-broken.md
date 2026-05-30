@@ -104,12 +104,12 @@ The Kanban package installation process suffers from multiple critical issues th
 5. **Error Handling:** Enhanced error handling and recovery guidance
 
 **Tasks Completed:**
-- ✅ E4:S17:T01 - Enumerate supported installation paths
-- ✅ E4:S17:T02 - Validate fresh install steps for each path
-- ✅ E4:S17:T03 - Validate migration/update paths
-- ✅ E4:S17:T04 - Verify post-install configuration
-- ✅ E4:S17:T05 - Document failure modes and rollback guidance
-- ✅ E4:S17:T06 - Capture documentation gaps and improvements
+- ✅ E04:S17:T01 - Enumerate supported installation paths
+- ✅ E04:S17:T02 - Validate fresh install steps for each path
+- ✅ E04:S17:T03 - Validate migration/update paths
+- ✅ E04:S17:T04 - Verify post-install configuration
+- ✅ E04:S17:T05 - Document failure modes and rollback guidance
+- ✅ E04:S17:T06 - Capture documentation gaps and improvements
 
 **Current Status:**
 - Package is production-ready

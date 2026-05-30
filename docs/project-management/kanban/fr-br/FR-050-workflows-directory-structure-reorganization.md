@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** 🟡 **PENDING INTAKE**  
 
-**Implementing Task:** [E6:S07:T107](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
+**Implementing Task:** [E06:S07:T107](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
 **Priority:** MEDIUM - Improve organization and maintainability of workflow definitions  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-09  

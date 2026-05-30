@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Submitted By:** User (planning session — IPW documentation and architecture capture)  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** RESOLVED (v0.2.16.12+2 — E2:S16:T12)
+**Status:** RESOLVED (v0.2.16.12+2 — E02:S16:T12)
 
-**Implementing Task:** [E2:S16:T12](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) (v0.2.16.12+2)
+**Implementing Task:** [E02:S16:T12](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) (v0.2.16.12+2)
 
 **Related:** [FR-042](./FR-042-implementation-planning-workflow-ipw.md), [FR-096](./FR-096-ipw-documentation-phases-update-create-and-housing.md), [FR-094](./FR-094-ipw-slash-command-and-task-state-transition-mandate.md), [ADR-004](../../../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md) (example of IPW-adjacent decision warranting ADR)
 
@@ -82,7 +82,7 @@ FR-096 operationalized IPW **documentation inventory and housing** (Phases 5–6
 - Persist scores in IPP **§2.5 ADR decision** (or dedicated subsection) and mirror outcome in **§5** (ADR row mandatory when REQUIRED).
 - Phase 9 validation: if any T1–T7 is YES, §5 must include ADR CREATE/UPDATE; if EXEMPT, §5.3 + exemption checklist present.
 
-### Deliverables (implementation — owned by E2:S16:T12)
+### Deliverables (implementation — owned by E02:S16:T12)
 
 | Artifact | Action |
 | -------- | ------ |
@@ -105,7 +105,7 @@ Optional (non-blocking): lightweight validator script or IPW Phase 9 checklist e
 - [ ] **AC3:** `PLAN_DOC_TEMPLATE.md` includes ADR decision section wired to §5 ADR deliverable rows.
 - [ ] **AC4:** Phase 9 validation bullets cover trigger/evidence consistency.
 - [ ] **AC5:** FR-042 step table aligned with operational IPW phases.
-- [ ] **AC6:** FR-100 ↔ E2:S16:T12 bidirectionally linked; story checklist updated.
+- [ ] **AC6:** FR-100 ↔ E02:S16:T12 bidirectionally linked; story checklist updated.
 - [ ] **AC7:** Delivered via RW with version forensic marker on task (when implementation completes).
 
 ---

@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S18:T02 – Upgrade Packaged Kanban Framework Board Split
+# E04:S18:T02 – Upgrade Packaged Kanban Framework Board Split
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
@@ -23,7 +23,7 @@ Upgrade the packaged Kanban framework (`packages/frameworks/kanban/`) to include
 
 ## Inputs
 
-- Completed board split implementation (E4:S18:T01)
+- Completed board split implementation (E04:S18:T01)
 - Current packaged Kanban board template (`packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md`)
 - Current packaged Kanban governance policy
 - Dev-kit implementation (`kboard.md` and `kanban-board-guide.md`)
@@ -99,7 +99,7 @@ Upgrade the packaged Kanban framework (`packages/frameworks/kanban/`) to include
 
 ## Related Work
 
-- **E4:S18:T01:** Implement Kanban Board Info-Only Split (completed implementation)
+- **E04:S18:T01:** Implement Kanban Board Info-Only Split (completed implementation)
 - **FR-036:** Kanban Board Info-Only Split
 
 ---

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** PROPOSED
 
-**Implementing Task:** [E7:S01:T05](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T05-markdown-maintenance-perpetual-task.md)  
+**Implementing Task:** [E07:S01:T05](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T05-markdown-maintenance-perpetual-task.md)  
 **Historical registry:** FR-058 vs perpetual T05
 
 ---
@@ -29,7 +29,7 @@ Establish a **Markdown Maintenance Workflow (MMW)** that automatically engages w
 
 - RW validators currently scan the entire repository and report ~2,300 legacy markdown/terminology issues, even when the current change set is compliant.  
 - Without a structured maintenance workflow, each release devolves into ad-hoc cleanup attempts, or the validator is disabled entirely—both outcomes erode governance.  
-- The existing perpetual markdown maintenance task (E7:S01:T05) lacks an execution framework, making it hard to demonstrate progress or provide auditable evidence.  
+- The existing perpetual markdown maintenance task (E07:S01:T05) lacks an execution framework, making it hard to demonstrate progress or provide auditable evidence.  
 - RW step owners have no clear decision tree for differentiating “regression introduced now” vs “legacy debt,” so releases stall indefinitely.
 
 ---
@@ -53,7 +53,7 @@ MMW must:
    - Feed results back into RW step logs and Kanban narrative.
 
 4. **Coordinate with Perpetual Tasks**  
-   - Convert legacy batches into scoped subtasks under E7:S01:T05 (Markdown Maintenance).  
+   - Convert legacy batches into scoped subtasks under E07:S01:T05 (Markdown Maintenance).  
    - Provide progress metrics (issues resolved vs remaining) for each cycle.  
    - Update Documentation Policy references so lifecycle metadata stays consistent.
 
@@ -69,7 +69,7 @@ MMW must:
 - Create checklist + log template in `docs/maintenance/logs/mmw/`.  
 - Enhance validator script to emit separate scoped/baseline sections consumable by RW + MMW.  
 - Update Release Runbook to describe when/how MMW is invoked (e.g., RW Step 8 failure path).  
-- File Story Task **E7:S01:T07 – Markdown Maintenance Workflow** covering implementation + integration work.  
+- File Story Task **E07:S01:T07 – Markdown Maintenance Workflow** covering implementation + integration work.  
 - Provide CI hook (read-only) that verifies MMW evidence for releases that proceed while legacy debt remains.
 
 ---
@@ -88,7 +88,7 @@ MMW must:
 ## Dependencies & References
 
 - **FR-057 / T06 (UCW)** – Ensures changelog governance; MMW complements UCW by covering broader markdown hygiene.  
-- **E7:S01:T05** – Perpetual markdown maintenance task that receives structured cycles via MMW.  
+- **E07:S01:T05** – Perpetual markdown maintenance task that receives structured cycles via MMW.  
 - **Documentation Policy Framework** – Defines taxonomy, lifecycle metadata, and lint expectations that MMW enforces.  
 - **Release Workflow** – Step 8 validators and run logs integrate MMW evidence.
 
@@ -97,6 +97,6 @@ MMW must:
 ## Next Steps
 
 1. Approve FR-058 and assign to Documentation + RW Agents.  
-2. Create Task E7:S01:T07 with ICW artifacts and implementation plan.  
+2. Create Task E07:S01:T07 with ICW artifacts and implementation plan.  
 3. Update validator tooling + runbook to support scoped/baseline reporting and MMW hooks.  
 4. Execute first MMW cycle targeting a manageable subset of backlog files.

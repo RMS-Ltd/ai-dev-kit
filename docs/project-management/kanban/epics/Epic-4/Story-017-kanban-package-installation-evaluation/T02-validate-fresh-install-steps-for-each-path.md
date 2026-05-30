@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S17:T02 – Validate Fresh Install Steps for Each Path
+# E04:S17:T02 – Validate Fresh Install Steps for Each Path
 
-**Task ID:** E4:S17:T02  
+**Task ID:** E04:S17:T02  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E4 – Kanban Framework  
@@ -235,11 +235,11 @@ Validate fresh install steps for each supported installation path to ensure each
 
 ## Related Work
 
-- **E4:S17:T01:** Enumerate supported installation paths (completed)
-- **E4:S17:T03:** Validate migration/update paths (next task)
-- **E4:S17:T04:** Verify post-install configuration and validation steps
-- **E4:S17:T05:** Document failure modes and rollback guidance
-- **E4:S17:T06:** Capture documentation gaps and improvements
+- **E04:S17:T01:** Enumerate supported installation paths (completed)
+- **E04:S17:T03:** Validate migration/update paths (next task)
+- **E04:S17:T04:** Verify post-install configuration and validation steps
+- **E04:S17:T05:** Document failure modes and rollback guidance
+- **E04:S17:T06:** Capture documentation gaps and improvements
 
 ---
 

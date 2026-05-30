@@ -21,14 +21,14 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E2:S10:T00 – Story Creation and FR-017 Intake** ✅ COMPLETE (v0.2.10.0+0)
-- [x] **E2:S10:T01 – Update RW Step 2 to Support Doc-Init Path** ✅ COMPLETE (v0.2.10.1+0)
-- [x] **E2:S10:T02 – Implement Doc-Init Validation (Docs-Only Check)** ✅ COMPLETE (v0.2.10.2+1)
-- [x] **E2:S10:T03 – Update CHANGELOG Format for Doc Init Entries** ✅ COMPLETE (v0.2.10.3+1)
-- [x] **E2:S10:T04 – Update Versioning Policy with Doc-Init Logic** ✅ COMPLETE (v0.2.10.4+1)
-- [x] **E2:S10:T05 – Update RW Step 1 Procedure Documentation** ✅ COMPLETE (v0.2.10.5+1)
-- [x] **E2:S10:T06 – Update Version Validator for Abstract Space Awareness (FR-020)** ✅ COMPLETE (v0.2.10.6+1)
-- [x] **E2:S10:T07 – Documentation and Testing** ✅ COMPLETE (v0.2.10.7+1)
+- [x] **E02:S10:T00 – Story Creation and FR-017 Intake** ✅ COMPLETE (v0.2.10.0+0)
+- [x] **E02:S10:T01 – Update RW Step 2 to Support Doc-Init Path** ✅ COMPLETE (v0.2.10.1+0)
+- [x] **E02:S10:T02 – Implement Doc-Init Validation (Docs-Only Check)** ✅ COMPLETE (v0.2.10.2+1)
+- [x] **E02:S10:T03 – Update CHANGELOG Format for Doc Init Entries** ✅ COMPLETE (v0.2.10.3+1)
+- [x] **E02:S10:T04 – Update Versioning Policy with Doc-Init Logic** ✅ COMPLETE (v0.2.10.4+1)
+- [x] **E02:S10:T05 – Update RW Step 1 Procedure Documentation** ✅ COMPLETE (v0.2.10.5+1)
+- [x] **E02:S10:T06 – Update Version Validator for Abstract Space Awareness (FR-020)** ✅ COMPLETE (v0.2.10.6+1)
+- [x] **E02:S10:T07 – Documentation and Testing** ✅ COMPLETE (v0.2.10.7+1)
 
 > **Format:** `E2:S10:Txx` (Epic 2, Story 10, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.2.10.1+1)`)  
@@ -54,7 +54,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ## Tasks
 
-### E2:S10:T00 – Story Creation and FR-017 Intake
+### E02:S10:T00 – Story Creation and FR-017 Intake
 
 **Input:** FR-017: Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T  
 **Deliverable:** Story document created, FR-017 linked, tasks defined  
@@ -74,15 +74,15 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ---
 
-### E2:S10:T01 – Update RW Step 2 to Support Doc-Init Path
+### E02:S10:T01 – Update RW Step 2 to Support Doc-Init Path
 
 **Input:** Current RW Step 2 procedure, FR-016 discrete Task docs, FR-017 doc-init requirements  
 **Deliverable:** RW Step 2 detects "new doc-init" state and emits `+0` for docs-only changes  
-**Dependencies:** E4:S11:T01-T02 (Kanban policy and Task templates), E2:S09:T02 (RW Step 2 Task doc presence)  
+**Dependencies:** E04:S11:T01-T02 (Kanban policy and Task templates), E02:S09:T02 (RW Step 2 Task doc presence)  
 **Blocker:** FR-016 (requires discrete Task docs) - UNBLOCKED (E2:S09 complete)  
 **Parallel Development Candidacy:** Safe (documentation only)
 
-**Scope:** Update Release Workflow Step 2 (Bump Version) to detect doc-init state for newly created Epic/Story/Task documentation. Add detection logic to identify new E/S/T docs, verify docs-only changes, check for prior versions, and emit `+0` build number for doc-init builds. Integrate with existing Task document presence detection from E2:S09:T02.
+**Scope:** Update Release Workflow Step 2 (Bump Version) to detect doc-init state for newly created Epic/Story/Task documentation. Add detection logic to identify new E/S/T docs, verify docs-only changes, check for prior versions, and emit `+0` build number for doc-init builds. Integrate with existing Task document presence detection from E02:S09:T02.
 
 **Approach:**
 1. Review current RW Step 1 procedure:
@@ -96,7 +96,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
    - If new doc-init detected → `RC.EPIC.STORY.TASK+0`
    - Subsequent functional work starts at `+1`
 4. Update RW Step 1 logic to handle doc-init path
-5. Integrate with E2:S09:T02 (Task doc presence detection)
+5. Integrate with E02:S09:T02 (Task doc presence detection)
 
 **Acceptance Criteria:**
 - [x] RW Step 2 detects "new doc-init" state ✅
@@ -117,7 +117,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ---
 
-### E2:S10:T02 – Implement Doc-Init Validation (Docs-Only Check)
+### E02:S10:T02 – Implement Doc-Init Validation (Docs-Only Check)
 
 **Scope:** Add doc-init validation logic to both `validate_version_bump.py` and `validate_branch_context.py` validators. When a version has BUILD=0 (doc-init build), validators must verify that all changed files are documentation-only. Validators should fail with clear error messages if non-documentation files (code files) are detected in a `+0` build.
 
@@ -161,7 +161,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ---
 
-### E2:S10:T03 – Update CHANGELOG Format for Doc Init Entries
+### E02:S10:T03 – Update CHANGELOG Format for Doc Init Entries
 
 **Scope:** Update CHANGELOG format documentation to include standardized "Doc Init" format for `+0` builds. Define format for both main changelog (`CHANGELOG.md`) and detailed changelog archive entries. Update versioning policy and implementation guide with doc-init format examples.
 
@@ -193,7 +193,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 **Status:** ✅ COMPLETE (v0.2.10.3+1)
 
 **Completion Summary:**
-- ✅ Updated main `CHANGELOG.md` entry for `0.2.10.1+0` to use new format: `📋 Doc Init: E2:S10:T01 - [Description]`
+- ✅ Updated main `CHANGELOG.md` entry for `0.2.10.1+0` to use new format: `📋 Doc Init: E02:S10:T01 - [Description]`
 - ✅ Updated `dev-kit-versioning-policy.md` with doc-init format for both main and detailed changelogs
 - ✅ Updated `IMPLEMENTATION_GUIDE.md` with doc-init format templates and examples
 - ✅ Documented format characteristics:
@@ -205,13 +205,13 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ---
 
-### E2:S10:T04 – Update Versioning Policy with Doc-Init Logic
+### E02:S10:T04 – Update Versioning Policy with Doc-Init Logic
 
 **Scope:** Update versioning policy documents to include comprehensive doc-init logic. Document `+0` build number for doc-init builds, explain relationship between doc-init (`+0`) and functional work (`+1`), and update Task transition rules to include doc-init path. Ensure consistency across all versioning policy documents.
 
 **Input:** Current versioning policy documents, doc-init requirements  
 **Deliverable:** Updated versioning policy requiring doc-init logic  
-**Dependencies:** E4:S11:T03 (Versioning Policy Task doc requirements), T01 (doc-init detection)  
+**Dependencies:** E04:S11:T03 (Versioning Policy Task doc requirements), T01 (doc-init detection)  
 **Blocker:** FR-016  
 **Parallel Development Candidacy:** Blocked (depends on FR-016)
 
@@ -225,7 +225,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
    - Explain relationship between doc-init (`+0`) and functional work (`+1`)
    - Update Task transition rules to include doc-init path
    - Reference FR-018 (abstract space concept)
-3. Coordinate with E4:S11:T03 for consistency
+3. Coordinate with E04:S11:T03 for consistency
 4. Update all versioning policy documents
 
 **Acceptance Criteria:**
@@ -259,7 +259,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ---
 
-### E2:S10:T05 – Update RW Step 1 Procedure Documentation
+### E02:S10:T05 – Update RW Step 1 Procedure Documentation
 
 **Scope:** Update RW Step 2 procedure documentation (specifically "B. IDENTIFY COMPLETED TASK" section) to include comprehensive doc-init logic, examples, and cross-references. Document doc-init scenarios, explain `+0` build number emission, and provide examples showing doc-init vs normal build paths.
 
@@ -313,7 +313,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ---
 
-### E2:S10:T07 – Documentation and Testing
+### E02:S10:T07 – Documentation and Testing
 
 **Scope:** Create comprehensive documentation and test coverage for doc-init functionality. Update RW documentation with doc-init examples, create migration guide for existing projects, and verify all policy documents are consistent.
 
@@ -380,7 +380,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ---
 
-### E2:S10:T06 – Update Version Validator for Abstract Space Awareness (FR-020)
+### E02:S10:T06 – Update Version Validator for Abstract Space Awareness (FR-020)
 
 **Scope:** Update version validator (`validate_version_bump.py`) to recognize `+0` as valid BUILD for abstract spaces (doc-init builds). Add detection logic for first-time E/S/T doc commits, validate abstract space conditions, and provide clear error messages explaining abstract space requirements.
 
@@ -389,8 +389,8 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 **Dependencies:** 
 - **T02:** Doc-Init Validation (Docs-Only Check) - provides doc-init validation foundation
 - **T01:** RW Step 1 Doc-Init Path - provides doc-init detection logic
-- **E4:S11:T01-T02:** Kanban policy and Task templates (required for T01)
-- **E2:S09:T02:** RW Step 1 Task doc presence (required for T01)
+- **E04:S11:T01-T02:** Kanban policy and Task templates (required for T01)
+- **E02:S09:T02:** RW Step 1 Task doc presence (required for T01)
 - **E4:S11:** Kanban-specific work (policy, templates) - prerequisite for E2:S09
 - **E2:S09:** RW integration work (Task doc presence) - prerequisite for T01
 - **FR-016:** Kanban Granularity & Discrete Task Docs (blocks E4:S11 and E2:S09)
@@ -400,9 +400,9 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 **Blocker:** 
 - **FR-016:** Blocks E4:S11 and E2:S09, which are prerequisites for T01, which is prerequisite for T02, which is prerequisite for T06
 - **E4:S11:** Must complete before E2:S09 can proceed
-- **E2:S09:** Must complete before E2:S10:T01 can proceed
-- **E2:S10:T01:** Must complete before E2:S10:T02 can proceed
-- **E2:S10:T02:** Must complete before E2:S10:T06 can proceed
+- **E2:S09:** Must complete before E02:S10:T01 can proceed
+- **E02:S10:T01:** Must complete before E02:S10:T02 can proceed
+- **E02:S10:T02:** Must complete before E02:S10:T06 can proceed
 
 **Parallel Development Candidacy:** Blocked (depends on full dependency chain)
 
@@ -513,9 +513,9 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 **Blocked By:**
 - **FR-016:** Kanban Granularity & Discrete Task Docs (3-Tier Structure) - Requires discrete Task docs to anchor doc-init builds
 - **E4:S11:** Kanban-specific work (policy, templates) must be complete before E2:S09
-- **E2:S09:** RW integration work (Task doc presence) must be complete before E2:S10:T01
-- **E2:S10:T01:** RW Step 1 doc-init detection must be complete before E2:S10:T02
-- **E2:S10:T02:** Doc-init validation must be complete before E2:S10:T06
+- **E2:S09:** RW integration work (Task doc presence) must be complete before E02:S10:T01
+- **E02:S10:T01:** RW Step 1 doc-init detection must be complete before E02:S10:T02
+- **E02:S10:T02:** Doc-init validation must be complete before E02:S10:T06
 
 **Related Work:**
 - **FR-016:** Kanban Granularity & Discrete Task Docs (3-Tier Structure) (prerequisite - blocks this story)
@@ -524,8 +524,8 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 - **FR-020:** Version Validator Abstract Space Awareness (validator enhancement - T06)
 - **E2:S09:** Kanban Granularity & Discrete Task Docs (RW Integration) (prerequisite for T01)
 - **E4:S11:** Kanban Granularity & Discrete Task Docs (Kanban Framework) (prerequisite for E2:S09)
-- **E2:S10:T01:** RW Step 1 Doc-Init Path (prerequisite for T02)
-- **E2:S10:T02:** Doc-Init Validation (prerequisite for T06)
+- **E02:S10:T01:** RW Step 1 Doc-Init Path (prerequisite for T02)
+- **E02:S10:T02:** Doc-Init Validation (prerequisite for T06)
 
 ---
 

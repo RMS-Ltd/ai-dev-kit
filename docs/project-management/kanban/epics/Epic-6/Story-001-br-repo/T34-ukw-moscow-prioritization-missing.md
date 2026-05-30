@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Completed:** 2026-01-22  
 **Version:** v0.6.1.34+2
 
-**Repository Pattern:** BR-034 = E6:S01:T34 (abstract space: v0.6.1.34+0)  
-**Code:** E6S01T34
+**Repository Pattern:** BR-034 = E06:S01:T34 (abstract space: v0.6.1.34+0)  
+**Code:** E06S01T34
 
 ---
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S01:T34`
+**Full Task ID:** `E06:S01:T34`
 
 ---
 
@@ -160,12 +160,12 @@ Fix UKW (Update Kanban Workflow) bug where the MoSCOW Prioritized In-Progress Ta
 **Completed:**
 1. ✅ **MoSCOW Section Updated:** Regenerated MoSCOW Prioritized In-Progress Tasks section in kanban board
 2. ✅ **Task Classification:** Classified active IN PROGRESS/TODO tasks into M/S/C/O/W categories:
-   - **M (Must Have):** E6:S01:T34 (UKW MoSCOW Prioritization Missing - critical bug fix)
+   - **M (Must Have):** E06:S01:T34 (UKW MoSCOW Prioritization Missing - critical bug fix)
    - **S (Should Have):** 8 HIGH priority tasks (package implementation reviews, UKW enhancements, etc.)
    - **C (Could Have):** MEDIUM/LOW priority tasks (documentation automation, book content, etc.)
    - **O (Ongoing):** Perpetual tasks (UKW, CMW, Bug Reports, Feature Requests)
    - **W (Won't Have):** Deferred tasks (internationalization, book publishing support)
-3. ✅ **Completed Tasks Removed:** Removed COMPLETE tasks from MoSCOW section (E2:S13:T01, E3:S04:T01, etc.)
+3. ✅ **Completed Tasks Removed:** Removed COMPLETE tasks from MoSCOW section (E02:S13:T01, E03:S04:T01, etc.)
 4. ✅ **Task Ordering:** Tasks ordered by Last Updated (most recent first) within each category
 5. ✅ **Documentation:** UKW execution guide already documents MoSCOW prioritization in Step 6
 
@@ -186,7 +186,7 @@ Fix UKW (Update Kanban Workflow) bug where the MoSCOW Prioritized In-Progress Ta
 **Workflow:** [Update Kanban Workflow (UKW)](../Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 **Related Tasks:**
-- **E2:S16:T03:** Update Kanban Workflow (UKW) - Perpetual task (UKW workflow implementation)
+- **E02:S16:T03:** Update Kanban Workflow (UKW) - Perpetual task (UKW workflow implementation)
 
 **Related Bug Reports:**
 - **BR-033:** UKW Board Disorganization (epic ordering issue)

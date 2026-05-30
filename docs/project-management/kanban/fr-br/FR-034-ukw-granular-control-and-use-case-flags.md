@@ -12,11 +12,11 @@ housekeeping_policy: keep
 **Submitted:** 2026-01-16  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** IMPLEMENTED ✅ (E5:S01:T34)  
+**Status:** IMPLEMENTED ✅ (E05:S01:T34)  
 **GitHub Issue:** [TBD]  
 **Version:** v0.5.1.34+1 (Internal) | v0.5.39+1 (SemVer)
 
-**Implementing Task:** [E5:S01:T34](../epics/Epic-5/Story-001-fr-repo/T34-ukw-granular-control-and-use-case-flags.md)
+**Implementing Task:** [E05:S01:T34](../epics/Epic-5/Story-001-fr-repo/T34-ukw-granular-control-and-use-case-flags.md)
 
 ---
 
@@ -85,7 +85,7 @@ A modular UKW workflow system that supports:
 - [ ] **FR-034:R02:** Support use case flag `-p` (update priorities of existing tasks)
 - [ ] **FR-034:R03:** Support use case flag `-a` (assign priorities to tasks)
 - [ ] **FR-034:R04:** Support flexible task targeting syntax:
-  - Single task: `E09S01T01`, `e9s1t1`, `E09:S01:T01`
+  - Single task: `E09S01T01`, `E09S01T01`, `E09:S01:T01`
   - Multiple tasks: `E09S01T01,E08S02T11`
   - Linear range: `E09S01T01-E09S01T06`
   - Story: `E09S01`, `e9s1`
@@ -213,7 +213,7 @@ A modular UKW workflow system that supports:
 - [ ] **Criterion 7:** `UKW -a E09` assigns priorities to epic
 - [ ] **Criterion 8:** `UKW -a all` assigns priorities to all unprioritized tasks
 - [ ] **Criterion 9:** Canonical format supported (`E09S01T01`)
-- [ ] **Criterion 10:** Compact format supported (`E9S1T1`)
+- [ ] **Criterion 10:** Compact format supported (`E09S01T01`)
 - [ ] **Criterion 11:** Case-insensitive input supported
 - [ ] **Criterion 12:** Optional separators supported (`:`, `-`, none)
 - [ ] **Criterion 13:** Range syntax supported
@@ -243,7 +243,7 @@ A modular UKW workflow system that supports:
 - Epic 2: Workflow Management Framework
 - Epic 4: Kanban Framework
 - Epic 6: Framework Management and Maintenance
-- E6:S06:T08: Update Kanban Workflow (UKW) - Perpetual Task
+- E06:S06:T08: Update Kanban Workflow (UKW) - Perpetual Task
 
 ---
 

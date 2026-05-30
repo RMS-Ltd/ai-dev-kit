@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** TBD  
 **Status:** NEW
 
-**Implementing Task:** [E6:S06:T03](../epics/Epic-6/Story-006-feature-requests/T03-apple-sdk-license-blocking-issue.md)
+**Implementing Task:** [E06:S06:T03](../epics/Epic-6/Story-006-feature-requests/T03-apple-sdk-license-blocking-issue.md)
 
 ---
 

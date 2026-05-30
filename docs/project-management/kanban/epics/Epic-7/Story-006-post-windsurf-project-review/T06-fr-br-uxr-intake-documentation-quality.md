@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E7:S06:T06 – FR/BR/UXR Intake Documentation Quality
+# E07:S06:T06 – FR/BR/UXR Intake Documentation Quality
 
-**Task ID:** E7:S06:T06
+**Task ID:** E07:S06:T06
 **Status:** COMPLETE
 **Priority:** HIGH
 **Last updated:** 2026-03-25
@@ -73,7 +73,7 @@ None
 ## Summary
 
 - **Overall risk:** **Low** after correcting broken `epics/` relative links from `fr-br/` and aligning aggregate doc versions.
-- **Follow-ups:** Optional frontmatter normalization and deeper link crawl → **E7:S06:T07** or a small FR.
+- **Follow-ups:** Optional frontmatter normalization and deeper link crawl → **E07:S06:T07** or a small FR.
 
 ---
 

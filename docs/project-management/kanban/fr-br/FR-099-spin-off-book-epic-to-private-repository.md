@@ -14,17 +14,17 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** IMPLEMENTED — **Phases 0–4 complete** (2026-05-26); forensic closure **v0.1.4.7+2** (`RW E1:S04:T07`, `--art`)
+**Status:** IMPLEMENTED — **Phases 0–4 complete** (2026-05-26); forensic closure **v0.1.4.7+2** (`RW E01:S04:T07`, `--art`)
 
 **Implementing tasks (one per phase):**
 
 | Phase | Task | Doc | Status |
 |-------|------|-----|--------|
-| 0 | E1:S04:T03 | [T03](../epics/Epic-1/Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | ✅ COMPLETE |
-| 1 | E1:S04:T04 | [T04](../epics/Epic-1/Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | ✅ COMPLETE |
-| 2 | E1:S04:T05 | [T05](../epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | ✅ COMPLETE (`v0.1.4.3+1`) |
-| 3 | E1:S04:T06 | [T06](../epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | ✅ COMPLETE (2026-05-26) |
-| 4 | E1:S04:T07 | [T07](../epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | ✅ COMPLETE (2026-05-26) |
+| 0 | E01:S04:T03 | [T03](../epics/Epic-1/Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | ✅ COMPLETE |
+| 1 | E01:S04:T04 | [T04](../epics/Epic-1/Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | ✅ COMPLETE |
+| 2 | E01:S04:T05 | [T05](../epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | ✅ COMPLETE (`v0.1.4.3+1`) |
+| 3 | E01:S04:T06 | [T06](../epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | ✅ COMPLETE (2026-05-26) |
+| 4 | E01:S04:T07 | [T07](../epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | ✅ COMPLETE (2026-05-26) |
 
 **Umbrella redirect (historical):** [T03-spin-off…](../epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
 
@@ -61,10 +61,10 @@ The maintainer wants AI Dev Kit to stay **public and framework-focused** while t
 - [ ] **FR-099-F1:** Produce a **complete inventory** of book-related assets in ai-dev-kit (paths, git history sensitivity, cross-references, branches).
 - [ ] **FR-099-F2:** Finalize and obtain maintainer approval for **[ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)** (preferred Option C migration outline).
 - [x] **FR-099-F3:** **Privatize** and **rename** to [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book); retain full history on the private repo (book + frameworks) — **done 2026-05-26**
-- [x] **FR-099-F4:** Land **book extraction genesis commit** on private `hf-ai-dev-kit` — ✅ **E1:S04:T05** (`v0.1.4.3+1`, 2026-05-26)
+- [x] **FR-099-F4:** Land **book extraction genesis commit** on private `hf-ai-dev-kit` — ✅ **E01:S04:T05** (`v0.1.4.3+1`, 2026-05-26)
 - [x] **FR-099-F5:** **Create new public `RMS-Ltd/ai-dev-kit`** from genesis commit — ✅ 2026-05-26 ([bootstrap runbook](../../../maintenance/fr099-phase3-public-repo-bootstrap.md))
 - [x] **FR-099-F6:** **Rewire** remotes, badges, install docs, CI, and submodule URLs to the new public repo; verify greenfield/brownfield install (no Epic-24 contamination). ✅ 2026-05-26
-- [ ] **FR-099-F7:** Mark **[E1:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md)** **SUPERSEDED** — public ADK does not rename to Head First; Head First context remains private `hf-ai-dev-kit` only.
+- [ ] **FR-099-F7:** Mark **[E01:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md)** **SUPERSEDED** — public ADK does not rename to Head First; Head First context remains private `hf-ai-dev-kit` only.
 
 ### Non-Functional Requirements
 
@@ -121,17 +121,17 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 
 **Genesis commit rule (Option B):** last book-path touch → dedicated **book extraction commit** → that commit (or verified child) becomes the root of **new public** `ai-dev-kit` history.
 
-**Supersedes [E1:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md):** conditional public rename to `head-first-ai-dev-kit` is **cancelled**; Head First naming applies to the **private** book repo only.
+**Supersedes [E01:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md):** conditional public rename to `head-first-ai-dev-kit` is **cancelled**; Head First naming applies to the **private** book repo only.
 
 ## Phased Delivery
 
 | Phase | Name | Task | Status |
 |-------|------|------|--------|
-| **0** | Inventory & ADR approval | **E1:S04:T03** | ✅ COMPLETE |
-| **1** | Privatize + rename | **E1:S04:T04** | ✅ COMPLETE (2026-05-26) |
-| **2** | Book extraction genesis | **E1:S04:T05** | ✅ COMPLETE (`v0.1.4.3+1`) |
-| **3** | Public rebirth | **E1:S04:T06** | ✅ COMPLETE (2026-05-26) |
-| **4** | Rewire & verify | **E1:S04:T07** | ✅ COMPLETE (2026-05-26) |
+| **0** | Inventory & ADR approval | **E01:S04:T03** | ✅ COMPLETE |
+| **1** | Privatize + rename | **E01:S04:T04** | ✅ COMPLETE (2026-05-26) |
+| **2** | Book extraction genesis | **E01:S04:T05** | ✅ COMPLETE (`v0.1.4.3+1`) |
+| **3** | Public rebirth | **E01:S04:T06** | ✅ COMPLETE (2026-05-26) |
+| **4** | Rewire & verify | **E01:S04:T07** | ✅ COMPLETE (2026-05-26) |
 
 ---
 
@@ -150,7 +150,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 ## Acceptance Criteria
 
 - [ ] **AC1:** Asset inventory signed off; every book-related path classified private-retain / public-genesis / redact.
-- [ ] **AC2:** [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) approved; **E1:S04:T02** marked SUPERSEDED.
+- [ ] **AC2:** [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) approved; **E01:S04:T02** marked SUPERSEDED.
 - [ ] **AC3:** Private `hf-ai-dev-kit` retains full history including book IP and Epic 24.
 - [ ] **AC4:** New public `ai-dev-kit` genesis tree has **no** `docs/book-proj/`, **no** `Epic-24/`, **no** Head First obligation in vision/README.
 - [ ] **AC5:** Public `kboard.md` and structure docs contain **no** active E24 rows.
@@ -173,7 +173,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 **Related Work:**
 
 - [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) — Preferred migration outline (Option C)
-- [E1:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md) — **SUPERSEDED** by FR-099 / ADR-006 (public Head First rename cancelled)
+- [E01:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md) — **SUPERSEDED** by FR-099 / ADR-006 (public Head First rename cancelled)
 - [FR-039](./FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) — Broader legacy cleanup (coordinate to avoid duplicate audits)
 - [FR-080](./FR-080-greenfield-installation-process.md) — Consumer Kanban must not include project-specific epics
 - Epic 24 — **removed from public tree**; retained in private `hf-ai-dev-kit` git history only
@@ -211,7 +211,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 - **Do not** copy unpublished manuscript into the new public repo genesis commit or its changelogs.
 - Private **`hf-ai-dev-kit`** consumes public **`ai-dev-kit`** as dependency—not the reverse.
 - Pre-genesis commits with book content remain **only** on private `hf-ai-dev-kit`; new public repo history starts at genesis (no in-place `filter-repo` on the old public remote unless cutover fails).
-- **E1:S04:T02** must not be executed; superseded 2026-05-26 per maintainer separation decision.
+- **E01:S04:T02** must not be executed; superseded 2026-05-26 per maintainer separation decision.
 - Epic 24 is **project-specific (24+)**; it stays in the private book repo, not public ADK Kanban.
 
 ---

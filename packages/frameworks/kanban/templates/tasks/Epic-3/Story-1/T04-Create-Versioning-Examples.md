@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E3:S1:T4`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E03:S01:T04`)
 
 **Full Task ID:** `E03:S01:T04`
 
@@ -34,8 +34,8 @@ Create versioning examples for the {PROJECT_NAME} project. Develop practical exa
 
 ## Input
 
-- Versioning policy (from E3:S1:T01)
-- Versioning schema (from E3:S1:T02)
+- Versioning policy (from E03:S01:T01)
+- Versioning schema (from E03:S01:T02)
 - Common versioning scenarios
 - Real-world use cases
 - ai-dev-kit versioning examples (if adopting)
@@ -79,11 +79,11 @@ Create versioning examples for the {PROJECT_NAME} project. Develop practical exa
 ## Dependencies
 
 **Depends On:**
-- E3:S1:T01: Define versioning policy (examples demonstrate policy)
-- E3:S1:T02: Design versioning schema (examples use schema)
+- E03:S01:T01: Define versioning policy (examples demonstrate policy)
+- E03:S01:T02: Design versioning schema (examples use schema)
 
 **Blocks:**
-- E3:S1:T03: Document versioning conventions (documentation may reference examples)
+- E03:S01:T03: Document versioning conventions (documentation may reference examples)
 
 **Parallel Development Candidacy:** Blocked (depends on T01 and T02)
 
@@ -92,9 +92,9 @@ Create versioning examples for the {PROJECT_NAME} project. Develop practical exa
 ## Related Work
 
 **Related Tasks:**
-- E3:S1:T01: Define versioning policy (examples demonstrate policy)
-- E3:S1:T02: Design versioning schema (examples use schema)
-- E3:S1:T03: Document versioning conventions (documentation may reference examples)
+- E03:S01:T01: Define versioning policy (examples demonstrate policy)
+- E03:S01:T02: Design versioning schema (examples use schema)
+- E03:S01:T03: Document versioning conventions (documentation may reference examples)
 
 **Related Stories:**
 - E3:S1: Versioning Policy and Schema (this story)

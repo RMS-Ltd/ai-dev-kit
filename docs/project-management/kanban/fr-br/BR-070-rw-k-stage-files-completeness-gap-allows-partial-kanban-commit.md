@@ -12,20 +12,20 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** HIGH  
 **Created:** 2026-04-22  
-**Last updated:** 2026-05-15 (AC4 closed by E2:S01:T18)  
+**Last updated:** 2026-05-15 (AC4 closed by E02:S01:T18)  
 **Version:** N/A  
 **Code:** BR-070  
 
-**Implementing Task:** [E2:S01:T18](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md)  
-**Closure gated on:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](FR-092-canonical-rw-ukw-kanban-consistency-program.md) / [E2:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) Wave 5 + Wave 8
+**Implementing Task:** [E02:S01:T18](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md)  
+**Closure gated on:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](FR-092-canonical-rw-ukw-kanban-consistency-program.md) / [E02:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) Wave 5 + Wave 8
 
 > **Gating note (2026-04-27):** Stage completeness invariant (Step-8 stage-set parity) is owned end-to-end by FR-092 Bucket C2 + Wave 5. The `validate_rw_step7_completeness.py` validator and Step-8 enforcement are deliverables of FR-092 Wave 5; final BR-070 closure is gated on those artifacts shipping under FR-092 sign-off.
 >
 > **Wave 5 progress (2026-04-27):** Validator implemented at [`validate_rw_step7_completeness.py`](../../../../packages/frameworks/workflow%20mgt/scripts/validate_rw_step7_completeness.py) with 9 unit tests (all green) at [`test_validate_rw_step7_completeness.py`](../../../../packages/frameworks/workflow%20mgt/scripts/test_validate_rw_step7_completeness.py); Step 8 in [`release-workflow-agent-execution.md`](../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) extended with `stage_set_completeness` enforcement block. AC1–AC5 drafted satisfied below; final closure still gated on Wave 8 RW dry-run.
 >
-> **Wave 7 + Wave 8 sign-off (2026-04-27):** Stage-set completeness is composed into the FR-092 Wave 7 release-readiness gate as Gate 5 in [`validate_release_readiness.py`](../../../../packages/frameworks/workflow%20mgt/scripts/validate_release_readiness.py); wired into RW Step 10 (Run Validators) via `release_readiness_gate.blocking: true`. Wave 8 live demonstration: against the in-progress repo state with 12 unstaged FR-092 Wave 0-7 artefacts, Gate 5 returned exit 1 with per-path diagnostics naming every modified-unstaged and untracked Step-7 output, blocking RW commit — exactly the contracted behavior. **AC1, AC2, AC3, AC5 closed; AC4 (post-commit verification) deferred to live RW E2:S15:T07 --art (Wave 8 terminal).**
+> **Wave 7 + Wave 8 sign-off (2026-04-27):** Stage-set completeness is composed into the FR-092 Wave 7 release-readiness gate as Gate 5 in [`validate_release_readiness.py`](../../../../packages/frameworks/workflow%20mgt/scripts/validate_release_readiness.py); wired into RW Step 10 (Run Validators) via `release_readiness_gate.blocking: true`. Wave 8 live demonstration: against the in-progress repo state with 12 unstaged FR-092 Wave 0-7 artefacts, Gate 5 returned exit 1 with per-path diagnostics naming every modified-unstaged and untracked Step-7 output, blocking RW commit — exactly the contracted behavior. **AC1, AC2, AC3, AC5 closed; AC4 (post-commit verification) deferred to live RW E02:S15:T07 --art (Wave 8 terminal).**
 >
-> **AC4 closure (2026-05-15):** Post-commit verification validator [`validate_rw_step7_post_commit.py`](../../../../packages/frameworks/workflow%20mgt/scripts/validate_rw_step7_post_commit.py) implemented under [E2:S01:T18](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md) with 8 unit tests (all green). Validator runs after `git commit` (RW Step 11) and before `git tag` (Step 12), proving the release commit contains every Step-7 output. RW execution guide updated with Step 11.5 documentation; `release-workflow.yaml` updated with `step-10.5`. **All BR-070 ACs now closed.**
+> **AC4 closure (2026-05-15):** Post-commit verification validator [`validate_rw_step7_post_commit.py`](../../../../packages/frameworks/workflow%20mgt/scripts/validate_rw_step7_post_commit.py) implemented under [E02:S01:T18](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md) with 8 unit tests (all green). Validator runs after `git commit` (RW Step 11) and before `git tag` (Step 12), proving the release commit contains every Step-7 output. RW execution guide updated with Step 11.5 documentation; `release-workflow.yaml` updated with `step-10.5`. **All BR-070 ACs now closed.**
 
 ---
 

@@ -12,10 +12,10 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-16  
 **Submitted By:** User (request) documented by Cascade  
 **Priority:** HIGH  
-**Status:** ACCEPTED (registry **E7:S00:T05** filed 2026-03-31; implementation **E7:S01:T09** — UXR ACs still open)  
+**Status:** ACCEPTED (registry **E07:S00:T05** filed 2026-03-31; implementation **E07:S01:T09** — UXR ACs still open)  
 **GitHub Issue:** _TBD_  
-**Repository Task:** [E7:S00:T05](../epics/Epic-7/Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)  
-**Implementation Task:** [E7:S01:T09](../epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
+**Repository Task:** [E07:S00:T05](../epics/Epic-7/Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)  
+**Implementation Task:** [E07:S01:T09](../epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
 
 ---
 
@@ -109,7 +109,7 @@ Readers reported poor readability on Kanban boards because multi-line task entri
 ## Intake Decision
 
 **Intake Status:** ACCEPTED  
-**Intake Date:** 2026-03-31 (registry task filed; implementation was already **E7:S01:T09**)  
+**Intake Date:** 2026-03-31 (registry task filed; implementation was already **E07:S01:T09**)  
 **Intake By:** AI Agent (Cursor)  
 
 **Decision Flow Results:**
@@ -119,8 +119,8 @@ Readers reported poor readability on Kanban boards because multi-line task entri
 **Assigned To:**
 
 - Epic: Epic 7  
-- Story (registry): **E7:S00** — **E7:S00:T05**  
-- Story (implementation): **E7:S01** — **E7:S01:T09**  
+- Story (registry): **E7:S00** — **E07:S00:T05**  
+- Story (implementation): **E7:S01** — **E07:S01:T09**  
 - Version: `v0.7.0.5+1` (registry filed); implementation versions follow **E7:S01** RW  
 
 **Kanban Links:**

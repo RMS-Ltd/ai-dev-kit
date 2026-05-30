@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 6, Story 9, Task 6: ECC harness phases 2–5 (installer, hooks, AgentShield, positioning)
 
-**Task ID:** E6:S09:T06  
+**Task ID:** E06:S09:T06  
 **Status:** ✅ COMPLETE (**v0.6.9.6+3** — phases 2–5 + dogfood T8)  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (**v0.6.9.6+5** — IPP Wave E public-repo validation plan; functional **v0.6.9.6+3**)  
-**Code:** E6S09T06
+**Code:** E06S09T06
 
 ## Version Anchor
 
@@ -23,8 +23,8 @@ housekeeping_policy: keep
 **Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
 **Prerequisites:**
 
-- [E6:S09:T04 — Phase 0 evaluation](./T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
-- [E6:S09:T05 — Phase 1 skill pack](./T05-adk-workflow-skill-pack-ecc-fr098.md) (**shipped** v0.6.9.5+4)
+- [E06:S09:T04 — Phase 0 evaluation](./T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
+- [E06:S09:T05 — Phase 1 skill pack](./T05-adk-workflow-skill-pack-ecc-fr098.md) (**shipped** v0.6.9.5+4)
 
 ---
 
@@ -66,19 +66,19 @@ Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alig
 
 ## Input
 
-- [IPP (planning package — §7 closed; §8 Wave E plan **v0.6.9.6+5**)](../../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
+- [IPP (planning package — §7 closed; §8 Wave E plan **v0.6.9.6+5**)](../../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md)
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
 - [ECC + ADK cheatsheet](../../../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
 - [Bridge template](../../../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
-- [IPP-E6S09T05 (Phase 1)](../../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
+- [IPP-E06S09T05 (Phase 1)](../../../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md)
 - [T01 greenfield install (FR-080)](./T01-greenfield-installation-process-fr080.md)
 
 ---
 
 ## Implementation notes
 
-### Dogfood checklist (T8 — branch `throwaway/ecc-dogfood-e6s09t06`, 2026-05-26)
+### Dogfood checklist (T8 — branch `throwaway/ecc-dogfood-E06S09T06`, 2026-05-26)
 
 **Canonical E2E steps:** [ECC + ADK cheatsheet §3 Throwaway branch playbook](../../../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md#throwaway-branch-playbook-end-to-end) (**v0.6.9.6+4**).
 
@@ -99,7 +99,7 @@ Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alig
 
 ## Release / SemVer (inherits FR-098)
 
-Ship via **`RW E6:S09:T06`** when ready to release implementation (`--art`).
+Ship via **`RW E06:S09:T06`** when ready to release implementation (`--art`).
 
 ---
 
@@ -131,14 +131,14 @@ Ship via **`RW E6:S09:T06`** when ready to release implementation (`--art`).
 ### Cross-cutting
 
 - [x] IPP linked from this task (bidirectional) before implementation
-- [x] Integration spec §10–§11 lists **E6:S09:T06** for phases 2–5
-- [x] Dogfood checklist recorded (T8 — see Implementation notes; dry-run on `throwaway/ecc-dogfood-e6s09t06`)
+- [x] Integration spec §10–§11 lists **E06:S09:T06** for phases 2–5
+- [x] Dogfood checklist recorded (T8 — see Implementation notes; dry-run on `throwaway/ecc-dogfood-E06S09T06`)
 
 ---
 
 ## References
 
-- [IPP-E6S09T06 (planning package)](../../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
+- [IPP-E06S09T06 (planning package)](../../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md)
 - [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
 - [T04 Phase 0](./T04-ecc-harness-layer-phase0-compatibility-fr098.md)
 - [T05 Phase 1](./T05-adk-workflow-skill-pack-ecc-fr098.md)

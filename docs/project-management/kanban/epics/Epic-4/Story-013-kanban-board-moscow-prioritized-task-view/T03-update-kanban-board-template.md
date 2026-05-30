@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Started:** 2025-12-18  
 **Completed:** 2025-12-18  
 **Version:** v0.4.13.3+1  
-**Code:** E4S13T03
+**Code:** E04S13T03
 
 ---
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E4:S13:T03`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E04:S13:T03`)
 
-**Full Task ID:** `E4:S13:T03`
+**Full Task ID:** `E04:S13:T03`
 
 ---
 
@@ -52,8 +52,8 @@ Update the Kanban board template in the framework package to reflect the new boa
 - Enhanced Kanban board document (`docs/project-management/kanban/kboard.md`)
 
 **Dependencies:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
-- E4:S13:T02 – Update Kanban governance policy
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T02 – Update Kanban governance policy
 
 ---
 
@@ -144,15 +144,15 @@ Update the Kanban board template in the framework package to reflect the new boa
 ## Dependencies
 
 **Depends On:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
-- E4:S13:T02 – Update Kanban governance policy
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T02 – Update Kanban governance policy
 
 **Blocks:**
-- E4:S13:T05 – Update Kanban package (after user verification)
+- E04:S13:T05 – Update Kanban package (after user verification)
 
 **Blocked By:**
-- E4:S13:T01 (must have enhanced board structure)
-- E4:S13:T02 (should reference updated policy)
+- E04:S13:T01 (must have enhanced board structure)
+- E04:S13:T02 (should reference updated policy)
 
 **Parallel Development Candidacy:** Blocked (depends on T01 and T02)
 
@@ -164,9 +164,9 @@ Update the Kanban board template in the framework package to reflect the new boa
 - User request for enhanced Kanban board functionality
 
 **Related Tasks:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view
-- E4:S13:T02 – Update Kanban governance policy
-- E4:S13:T05 – Update Kanban package
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view
+- E04:S13:T02 – Update Kanban governance policy
+- E04:S13:T05 – Update Kanban package
 
 **Related Stories:**
 - E4:S01 – Dev Kit Kanban Implementation (template foundation)

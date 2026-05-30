@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T13 - RW -k forensic task attribution alignment (BR-063)
+# Task E02:S01:T13 - RW -k forensic task attribution alignment (BR-063)
 
-**Task ID:** E2:S01:T13  
+**Task ID:** E02:S01:T13  
 **Status:** COMPLETE  
 **Priority:** CRITICAL  
 **Created:** 2026-04-07  
 **Last updated:** 2026-04-07 (runtime hardening complete: `rw-k` mismatch guard + `--art` reconciliation path + tests/docs updates)  
 **Version:** v0.2.1.13+2  
-**Code:** E2S01T13
+**Code:** E02S01T13
 
 ---
 

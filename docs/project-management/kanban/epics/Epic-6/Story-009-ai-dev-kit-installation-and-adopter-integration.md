@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-05-29 (RW **v0.6.9.2+3** — **E6:S09:T02** forensic sync; story **E6:S09** complete)
+**Last updated:** 2026-05-29 (RW **v0.6.9.2+3** — **E06:S09:T02** forensic sync; story **E6:S09** complete)
 **Version:** v0.6.9.6+3
 **Code:** E6S09
 
@@ -20,27 +20,27 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E6:S09:T01 – Greenfield installation process (FR-080)** - COMPLETE (HIGH — **FR-080** IMPLEMENTED **v0.6.9.1+8**; Waves 1–5 + evidence)
+- [x] **E06:S09:T01 – Greenfield installation process (FR-080)** - COMPLETE (HIGH — **FR-080** IMPLEMENTED **v0.6.9.1+8**; Waves 1–5 + evidence)
   - Task: [`T01-greenfield-installation-process-fr080.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) | [FR-080](../../fr-br/FR-080-greenfield-installation-process.md)
-  - IPW: [`IPW-E6S09T01-greenfield-installation-fr080.md`](../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+  - IPW: [`IPW-E06S09T01-greenfield-installation-fr080.md`](../../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md)
 
-- [x] **E6:S09:T02 – Brownfield modular adopter integration (FR-081)** - ✅ COMPLETE (MEDIUM — INSTALL brownfield chapter, matrices, worked example, installer messaging; **v0.6.9.2+2**)
-  - Task: [`T02-brownfield-modular-adopter-integration-fr081.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) | [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md) | [IPP-E6S09T02](../../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- [x] **E06:S09:T02 – Brownfield modular adopter integration (FR-081)** - ✅ COMPLETE (MEDIUM — INSTALL brownfield chapter, matrices, worked example, installer messaging; **v0.6.9.2+2**)
+  - Task: [`T02-brownfield-modular-adopter-integration-fr081.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) | [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md) | [IPP-E06S09T02](../../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md)
 
-- [x] **E6:S09:T03 – Installation canonical repository alignment (FR-082)** - ✅ COMPLETE (MEDIUM — public bootstrap + canonical `RMS-Ltd/ai-dev-kit` defaults/docs; RW **`v0.6.9.3+2`**)
+- [x] **E06:S09:T03 – Installation canonical repository alignment (FR-082)** - ✅ COMPLETE (MEDIUM — public bootstrap + canonical `RMS-Ltd/ai-dev-kit` defaults/docs; RW **`v0.6.9.3+2`**)
   - Task: [`T03-installation-canonical-repo-alignment-fr082.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) | [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)
 
-- [x] **E6:S09:T04 – ECC harness layer Phase 0 compatibility evaluation (FR-098)** - COMPLETE (MEDIUM — Phase 0 spec, evaluation, bridge template; Phase 1 GO)
+- [x] **E06:S09:T04 – ECC harness layer Phase 0 compatibility evaluation (FR-098)** - COMPLETE (MEDIUM — Phase 0 spec, evaluation, bridge template; Phase 1 GO)
   - Task: [`T04-ecc-harness-layer-phase0-compatibility-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-  - IPP: [`IPP-E6S09T04`](../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
+  - IPP: [`IPP-E06S09T04`](../../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md)
 
-- [x] **E6:S09:T05 – ADK workflow skill pack for ECC harness layer (FR-098 Phase 1)** — ✅ COMPLETE (MEDIUM — **v0.6.9.5+4** dev consolidation; skill pack **v0.6.9.5+2**)
+- [x] **E06:S09:T05 – ADK workflow skill pack for ECC harness layer (FR-098 Phase 1)** — ✅ COMPLETE (MEDIUM — **v0.6.9.5+4** dev consolidation; skill pack **v0.6.9.5+2**)
   - Task: [`T05-adk-workflow-skill-pack-ecc-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-  - IPP: [`IPP-E6S09T05`](../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
+  - IPP: [`IPP-E06S09T05`](../../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md)
 
-- [x] **E6:S09:T06 – ECC harness phases 2–5 (FR-098)** — ✅ COMPLETE (HIGH — **v0.6.9.6+3** phases 2–5 + dogfood T8)
+- [x] **E06:S09:T06 – ECC harness phases 2–5 (FR-098)** — ✅ COMPLETE (HIGH — **v0.6.9.6+3** phases 2–5 + dogfood T8)
   - Task: [`T06-ecc-harness-phases-2-5-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-  - IPP: [`IPP-E6S09T06`](../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
+  - IPP: [`IPP-E06S09T06`](../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md)
 
 ---
 

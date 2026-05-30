@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E6:S08:T01](../epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md)
+**Implementing Task:** [E06:S08:T01](../epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.6.7.13+1
 
@@ -260,10 +260,10 @@ ai-dev-kit list --versions
 
 **Blocked By:**
 - E6:S01 (Framework Version Management) - Must establish versioning strategy first
-- E6:S02:T01 (Framework Update Procedures) - Must define update procedures first
+- E06:S02:T01 (Framework Update Procedures) - Must define update procedures first
 
 **Related Work:**
-- **E6:S02:T04:** Build framework update CLI tool (implementation task)
+- **E06:S02:T04:** Build framework update CLI tool (implementation task)
 - **FR-008:** Package Uninstall Capabilities (complements CLI tool with uninstall command)
 - **Architecture Doc:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md` (Phase 2: CLI Tool)
 - **Design Doc:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md` (CLI tool design)
@@ -288,7 +288,7 @@ ai-dev-kit list --versions
 **Kanban Links:**
 - Epic: [`epics/Epic-6/Epic-6.md`](../epics/Epic-6/Epic-6.md)
 - Story: [`Story-007-adk-implementation-analysis-and-package-management.md`](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md)
-- Tasks: E6:S07:T00-T13 (14 tasks covering complete CLI tool implementation)
+- Tasks: E06:S07:T00-T13 (14 tasks covering complete CLI tool implementation)
 
 ---
 
@@ -297,8 +297,8 @@ ai-dev-kit list --versions
 **Implementation Status:**
 - Design complete (see `framework-update-cli-design.md`)
 - Architecture defined (see `framework-dependency-architecture.md` Phase 2)
-- Task created: E6:S02:T04
-- Implementation pending (blocked by E6:S01 and E6:S02:T01)
+- Task created: E06:S02:T04
+- Implementation pending (blocked by E6:S01 and E06:S02:T01)
 
 **Related Documentation:**
 - **CLI Reference:** `docs/documentation/user-docs/framework-dependency-cli-reference.md` - Complete CLI command reference
@@ -318,7 +318,7 @@ ai-dev-kit list --versions
 
 - **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
 - **Story 2:** `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md`
-- **Task 4:** E6:S02:T04 (Build framework update CLI tool)
+- **Task 4:** E06:S02:T04 (Build framework update CLI tool)
 - **Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
 - **Design:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md`
 - **CLI Reference:** `docs/documentation/user-docs/framework-dependency-cli-reference.md`

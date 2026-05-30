@@ -20,18 +20,18 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E4:S14:T01 – Update packaged RW to handle UKW context and perpetual tasks** ✅ COMPLETE (v0.4.14.1+1)
+- [x] **E04:S14:T01 – Update packaged RW to handle UKW context and perpetual tasks** ✅ COMPLETE (v0.4.14.1+1)
   - Task: [`T01-planning-spec-tests-impl.md`](Story-014-kanban-framework-maintenance/T01-planning-spec-tests-impl.md)
 
-- [x] **E4:S14:T02 – Restore RC review planning artifacts** ✅ COMPLETE (v0.4.14.2+1)
+- [x] **E04:S14:T02 – Restore RC review planning artifacts** ✅ COMPLETE (v0.4.14.2+1)
   - Task: [`T02-restore-rc-review-artifacts.md`](Story-014-kanban-framework-maintenance/T02-restore-rc-review-artifacts.md)
 
-- [x] **E4:S14:T03 – Add Missing Implementation Cycle Workflow (ICW)** ✅ COMPLETE (v0.4.14.3+1)
+- [x] **E04:S14:T03 – Add Missing Implementation Cycle Workflow (ICW)** ✅ COMPLETE (v0.4.14.3+1)
   - Task: [`T03-add-missing-implementation-cycle-workflow-icw.md`](Story-014-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)
   - BR Reference: [BR-055](../../fr-br/BR-055-missing-implementation-cycle-workflow-icw.md)
   - GitHub Issue: #22
 
-- [x] **E4:S14:T04 – Kanban policy task prioritisation queue/stack (FR-037)** ✅ COMPLETE (semantic home; delivery **E5:S01:T37**)
+- [x] **E04:S14:T04 – Kanban policy task prioritisation queue/stack (FR-037)** ✅ COMPLETE (semantic home; delivery **E05:S01:T37**)
   - Task: [`T04-kanban-policy-task-prioritisation-queue-stack-fr037.md`](Story-014-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md) | [FR-037](../../fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
 
 ---
@@ -50,7 +50,7 @@ Ensure the Kanban Framework package remains current, well-maintained, and proper
 
 ## Tasks
 
-### E4:S14:T01 – Update packaged RW to handle UKW context and perpetual tasks
+### E04:S14:T01 – Update packaged RW to handle UKW context and perpetual tasks
 
 **Status:** TODO  
 **Priority:** HIGH  
@@ -61,7 +61,7 @@ Ensure the Kanban Framework package remains current, well-maintained, and proper
 **Input:** 
 - Packaged RW framework (`packages/frameworks/workflow mgt/`)
 - UKW context detection logic (from `.cursorrules`)
-- Perpetual task pattern (from E6:S06:T08)
+- Perpetual task pattern (from E06:S06:T08)
 
 **Deliverable:** Updated packaged RW with UKW context detection and perpetual task support
 
@@ -75,16 +75,16 @@ Ensure the Kanban Framework package remains current, well-maintained, and proper
 
 **Acceptance Criteria:**
 - [ ] Packaged RW Step 2 detects UKW context (user ran "UKW" then "RW")
-- [ ] UKW releases auto-attributed to perpetual task (E6:S06:T08 pattern)
+- [ ] UKW releases auto-attributed to perpetual task (E06:S06:T08 pattern)
 - [ ] Perpetual task flag (`perpetual_task: true`) checked in RW Step 2
 - [ ] Build warning suppression works for perpetual tasks
 - [ ] RW execution guide updated with UKW attribution pattern
 - [ ] RW workflow YAML updated if needed
 - [ ] Documentation reflects perpetual task pattern
 
-### E4:S14:T02 – Restore RC review planning artifacts
+### E04:S14:T02 – Restore RC review planning artifacts
 
-**Task ID:** E4:S14:T02  
+**Task ID:** E04:S14:T02  
 **Status:** COMPLETE  
 **Scope:** Restore RC review planning artifacts and re-align Kanban references.  
 **Input:** Stashed RC review files, kanban board, and epic story lists.  

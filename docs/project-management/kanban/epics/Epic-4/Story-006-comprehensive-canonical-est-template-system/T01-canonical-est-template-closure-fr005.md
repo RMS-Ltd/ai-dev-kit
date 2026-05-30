@@ -6,18 +6,18 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S06:T01 — FR-005 canonical EST template system closure
+# E04:S06:T01 — FR-005 canonical EST template system closure
 
-**Task ID:** E4:S06:T01  
+**Task ID:** E04:S06:T01  
 **Status:** COMPLETE  
 **Priority:** LOW  
 **Last updated:** 2026-05-29 (RW — FR-005 closure)  
 **Started:** 2026-05-29  
 **Completed:** 2026-05-29  
 **Version:** v0.4.6.1+1  
-**Code:** E4S06T01
+**Code:** E04S06T01
 
-Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E4S06T01-canonical-est-template-closure-fr005.md`](../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md))
+Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E04S06T01-canonical-est-template-closure-fr005.md`](../../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md))
 
 Publication N/A Reason: FR-042 consolidated IPP; closure audit and kanban reconciliation are specified in IPP §4 — no separate ICW trio or Docusaurus publication.
 
@@ -38,7 +38,7 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 
 ## Input
 
-- **[IPP-E4S06T01](../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)** — specification, test design, implementation plan (IPW)
+- **[IPP-E04S06T01](../../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md)** — specification, test design, implementation plan (IPW)
 - **[FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)** — requirements and acceptance criteria
 - **[Story-006](../Story-006-comprehensive-canonical-est-template-system.md)** — program delivery record (T00–T10)
 - [`packages/frameworks/kanban/templates/`](../../../../../../packages/frameworks/kanban/templates/) — template corpus
@@ -60,7 +60,7 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 | **Verify** | T1–T6 structural checks recorded in task doc |
 | **Reconcile** | `kboard`, `fbuboard`, `kanban-completed`, FR-005 status, story checklist |
 | **R5** | Defer `CANONICAL_ADDITION_PROCESS.md` to follow-up (per IPP) or minimal doc at implementation |
-| **Close** | RW `E4:S06:T01 --art` after user verification |
+| **Close** | RW `E04:S06:T01 --art` after user verification |
 
 ---
 
@@ -81,7 +81,7 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 
 **Coordinates With:** [E4:S11](../Story-011-kanban-granularity-discrete-task-docs.md) (discrete task doc pattern)
 
-**Blocked By:** Explicit **implement** / **RW E4:S06:T01** authorization after IPW
+**Blocked By:** Explicit **implement** / **RW E04:S06:T01** authorization after IPW
 
 ---
 
@@ -97,6 +97,6 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 
 ## References
 
-- [IPP-E4S06T01](../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)
+- [IPP-E04S06T01](../../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md)
 - [Story-006](../Story-006-comprehensive-canonical-est-template-system.md)
 - [FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)

@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Completed:** 2026-03-11  
 **Last updated:** 2026-03-31 — **RW -k** v0.6.6.2+9 (BR-038 implementing-task / kanban alignment on **epic/6**; task doc historically **COMPLETE** at v0.6.6.2+8)  
 **Version:** v0.6.6.2+8  
-**Task ID:** E6:S06:T02  
-**Code:** E6:S06:T02  
+**Task ID:** E06:S06:T02  
+**Code:** E06:S06:T02  
 **Associated BR:** [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) — **canonical implementing task** for **BR-038**
 
 **Progress:** Phase 1 ✅ COMPLETED - Phase 2 ✅ COMPLETED - Phase 3 ✅ COMPLETED - Terminal hang issues resolved, autonomous execution achieved
@@ -41,7 +41,7 @@ This task remains the historical implementation anchor for BR-038 micromanagemen
 
 Follow-on active scope is moved to:
 
-- [E6:S06:T63 – RW recovery journal and rollback contract (BR-038)](T63-rw-recovery-journal-and-rollback-contract-br038.md)
+- [E06:S06:T63 – RW recovery journal and rollback contract (BR-038)](T63-rw-recovery-journal-and-rollback-contract-br038.md)
 
 ## Version Anchor
 
@@ -391,8 +391,8 @@ Implement a simplified, reliable Release Workflow that reduces user friction and
 
 ### Related Tasks
 
-- **E2:S16:T03:** Release Workflow Maintenance (perpetual task)
-- **E6:S07:T104:** Release Automation Audit (comprehensive review)
+- **E02:S16:T03:** Release Workflow Maintenance (perpetual task)
+- **E06:S07:T104:** Release Automation Audit (comprehensive review)
 
 ---
 

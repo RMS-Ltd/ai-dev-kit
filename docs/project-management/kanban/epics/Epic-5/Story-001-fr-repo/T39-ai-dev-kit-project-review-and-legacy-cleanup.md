@@ -8,16 +8,16 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 39: AI Dev Kit Project Review and Legacy Clean-Up
 
-**Task ID:** E5:S01:T39  
+**Task ID:** E05:S01:T39  
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-02-19  
 **Last updated:** 2026-02-19 (v0.5.1.39+3 – Legacy clean-up: SoT refs, scripts, adopter docs)  
 **Version:** v0.5.1.39+3  
-**Code:** E5S01T39
+**Code:** E05S01T39
 
-**Repository Pattern:** FR-039 = E5:S01:T39 (abstract space will be v0.5.1.39+0)
+**Repository Pattern:** FR-039 = E05:S01:T39 (abstract space will be v0.5.1.39+0)
 
 ---
 
@@ -60,7 +60,7 @@ Actual clean-up (archiving/removal/moves) will be handled by a **separate implem
 
 ## Deliverable
 
-1. **This task document** – Repository anchor for FR-039 (E5:S01:T39).
+1. **This task document** – Repository anchor for FR-039 (E05:S01:T39).
 2. **Review report markdown** in `docs/architecture/standards-and-adrs/ai-dev-kit-project-review.md` summarising findings.
 3. **Ordered clean-up checklist** within that report suitable for a follow-up implementation Task.
 

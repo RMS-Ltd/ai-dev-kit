@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S4:T5`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S04:T05`)
 
 **Full Task ID:** `E07:S04:T05`
 
@@ -34,10 +34,10 @@ Create experience design recommendations for the {PROJECT_NAME} project. Develop
 
 ## Input
 
-- User journey maps (from E7:S4:T01)
-- Identified pain points and opportunities (from E7:S4:T02)
-- User experience flows (from E7:S4:T03)
-- Experience design prototypes (from E7:S4:T04)
+- User journey maps (from E07:S04:T01)
+- Identified pain points and opportunities (from E07:S04:T02)
+- User experience flows (from E07:S04:T03)
+- Experience design prototypes (from E07:S04:T04)
 - Recommendation development framework
 - ai-dev-kit UXR recommendation practices (if adopting)
 
@@ -82,12 +82,12 @@ Create experience design recommendations for the {PROJECT_NAME} project. Develop
 ## Dependencies
 
 **Depends On:**
-- E7:S4:T01: Map user journeys (recommendations use journey maps)
-- E7:S4:T02: Identify pain points and opportunities (recommendations address pain points)
-- E7:S4:T03: Design user experience flows (recommendations use flows)
+- E07:S04:T01: Map user journeys (recommendations use journey maps)
+- E07:S04:T02: Identify pain points and opportunities (recommendations address pain points)
+- E07:S04:T03: Design user experience flows (recommendations use flows)
 
 **Blocks:**
-- E7:S4:T07: Document experience design specifications (specifications include recommendations)
+- E07:S04:T07: Document experience design specifications (specifications include recommendations)
 
 **Parallel Development Candidacy:** Blocked (depends on T01, T02, T03)
 
@@ -96,10 +96,10 @@ Create experience design recommendations for the {PROJECT_NAME} project. Develop
 ## Related Work
 
 **Related Tasks:**
-- E7:S4:T01: Map user journeys (recommendations use journey maps)
-- E7:S4:T02: Identify pain points and opportunities (recommendations address pain points)
-- E7:S4:T03: Design user experience flows (recommendations use flows)
-- E7:S4:T07: Document experience design specifications (specifications include recommendations)
+- E07:S04:T01: Map user journeys (recommendations use journey maps)
+- E07:S04:T02: Identify pain points and opportunities (recommendations address pain points)
+- E07:S04:T03: Design user experience flows (recommendations use flows)
+- E07:S04:T07: Document experience design specifications (specifications include recommendations)
 
 **Related Stories:**
 - E7:S4: User Journey Mapping and Experience Design (this story)

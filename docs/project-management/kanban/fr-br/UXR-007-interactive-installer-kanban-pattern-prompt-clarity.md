@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted By:** User (Startborn Legacy install session)  
 **Priority:** HIGH  
 **Status:** COMPLETE  
-**Repository Task:** [E7:S06:T18](../epics/Epic-7/Story-006-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md) — **COMPLETE** (**v0.7.6.18+3**)
+**Repository Task:** [E07:S06:T18](../epics/Epic-7/Story-006-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md) — **COMPLETE** (**v0.7.6.18+3**)
 
-**Planning package (ICW / retrospective publication):** [Specification](../../../implementation-cycles/ICW-E7S06T18-specification.md) · [Test design](../../../implementation-cycles/ICW-E7S06T18-test-design.md) · [Implementation plan](../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md)
+**Planning package (ICW / retrospective publication):** [Specification](../../../implementation-cycles/ICW-E07S06T18-specification.md) · [Test design](../../../implementation-cycles/ICW-E07S06T18-test-design.md) · [Implementation plan](../../../implementation-cycles/ICW-E07S06T18-implementation-plan.md)
 
 ---
 
@@ -185,7 +185,7 @@ Catch `EOFError` in prompt loop and emit concise remediation: rerun in interacti
 ## Resolution (implementation closure)
 
 **Closed:** 2026-04-18  
-**Evidence:** Implementing task **E7:S06:T18** delivered installer prompt/path validation improvements and publication-aligned ICW artifacts (**v0.7.6.18+3**). Acceptance signals below remain available for broader adoption UAT; intake research objectives are addressed in shipped behavior and docs.
+**Evidence:** Implementing task **E07:S06:T18** delivered installer prompt/path validation improvements and publication-aligned ICW artifacts (**v0.7.6.18+3**). Acceptance signals below remain available for broader adoption UAT; intake research objectives are addressed in shipped behavior and docs.
 
 ---
 
@@ -199,7 +199,7 @@ Catch `EOFError` in prompt loop and emit concise remediation: rerun in interacti
 
 - Epic: Epic 7
 - Story: Story 6 (Post-Windsurf Project Review)
-- Task: E7:S06:T18
+- Task: E07:S06:T18
 - Version: `v0.7.6.18+1` (released)
 
 ---

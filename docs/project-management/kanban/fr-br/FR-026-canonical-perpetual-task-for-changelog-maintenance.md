@@ -41,7 +41,7 @@ Create a canonical perpetual task (similar to UKW's T08) for Changelog Maintenan
 
 ## Proposed Solution
 
-### 1. Create Perpetual Task T12 (E6:S06:T12)
+### 1. Create Perpetual Task T12 (E06:S06:T12)
 
 Create a perpetual maintenance task for CMW runs:
 - **Task Type:** Perpetual Maintenance
@@ -81,9 +81,9 @@ Update RW to support CMW context detection:
 
 ## Related Work
 
-- **Task:** E6:S06:T11 - Changelog Management and Archival Workflow (implementation, COMPLETE)
-- **Task:** E6:S06:T12 - Changelog Maintenance Workflow (CMW) - Perpetual Task (this task)
-- **Task:** E6:S06:T08 - Update Kanban Workflow (UKW) - Perpetual Task (pattern reference)
+- **Task:** E06:S06:T11 - Changelog Management and Archival Workflow (implementation, COMPLETE)
+- **Task:** E06:S06:T12 - Changelog Maintenance Workflow (CMW) - Perpetual Task (this task)
+- **Task:** E06:S06:T08 - Update Kanban Workflow (UKW) - Perpetual Task (pattern reference)
 - **Epic:** 6 - Framework Management and Maintenance
 - **Story:** 6 - ADK Implementation Analysis and Package Management
 

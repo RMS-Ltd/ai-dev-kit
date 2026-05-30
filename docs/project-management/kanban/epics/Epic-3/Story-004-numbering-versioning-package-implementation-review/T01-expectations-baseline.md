@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E3:S04:T01 – Establish Expectations Baseline for Numbering & Versioning Package
+# E03:S04:T01 – Establish Expectations Baseline for Numbering & Versioning Package
 
-**Task ID:** E3:S04:T01  
+**Task ID:** E03:S04:T01  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E3 – Numbering & Versioning Framework  

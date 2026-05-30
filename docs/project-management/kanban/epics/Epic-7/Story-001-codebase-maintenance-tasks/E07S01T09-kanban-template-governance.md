@@ -6,14 +6,14 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E7:S01:T09 – Kanban Template Governance & UXR Ownership
+# Task E07:S01:T09 – Kanban Template Governance & UXR Ownership
 
-**Task ID:** E7:S01:T09  
+**Task ID:** E07:S01:T09  
 **Status:** TODO  
 **Priority:** HIGH  
 **Version Marker:** v0.7.1.9+3 (UXR-005 **Implementing Task** header wiring)  
 **Related UXR:** [UXR-005 – Kanban Board Formatting & Governance](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)  
-**UXR registry (E7:S00):** [E7:S00:T05](../Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)  
+**UXR registry (E7:S00):** [E07:S00:T05](../Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)  
 **Story:** [E7:S01 – Codebase Maintenance Tasks](../Story-001-codebase-maintenance-tasks.md)
 
 ---
@@ -33,7 +33,7 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
    - Extend `scripts/documentation/validate-documentation-consistency.py` (or create a companion check) to detect multi-line bullets lacking the required blank line.
    - Add TODO flag if automation can’t ship in this cycle; document mitigation steps in the task doc.
 3. **Kanban Board & FR/BR/UXR Integration**
-   - Ensure Kanban board entries reference this task wherever UXR-005 is mentioned so RW can point to E7:S01:T09 when executing.
+   - Ensure Kanban board entries reference this task wherever UXR-005 is mentioned so RW can point to E07:S01:T09 when executing.
    - Provide guidance for UKW/MMW agents on how to escalate formatting issues to UXR-owned templates.
 4. **Evidence Package for RW**
    - Capture before/after diffs, validator output, and log entries proving the rule enforcement.
@@ -44,7 +44,7 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
 ## Input
 
 - **[UXR-005](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)** — Kanban board formatting & governance findings and acceptance criteria.
-- **Registry:** [E7:S00:T05](../Story-000-uxr-repo/T05-uxr-005-repository-anchor.md); kanban boards, `kanban-board-guide.md`, validators under `scripts/documentation/`.
+- **Registry:** [E07:S00:T05](../Story-000-uxr-repo/T05-uxr-005-repository-anchor.md); kanban boards, `kanban-board-guide.md`, validators under `scripts/documentation/`.
 
 ---
 
@@ -61,7 +61,7 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
 
 - [ ] All Kanban/FR-BR-UXR board files with multi-line MoSCOW entries show exactly one blank line between tasks (verified via validator/logs).
 - [ ] Kanban guide/templates describe the rule with examples and cite UXR ownership.
-- [ ] Release Workflow instructions include reference to E7:S01:T09 as the anchor for spacing enforcement.
+- [ ] Release Workflow instructions include reference to E07:S01:T09 as the anchor for spacing enforcement.
 - [ ] Validator or lint instructions exist to prevent regression (either implemented or documented as follow-up work with clear TODO reference).
 - [ ] Evidence bundle (diff summaries + log) attached/linked in this task file for future audits.
 
@@ -69,7 +69,7 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
 
 ## Dependencies
 
-- **E7:S00:T05** — UXR-005 kanban registry task (traceability anchor).
+- **E07:S00:T05** — UXR-005 kanban registry task (traceability anchor).
 - UXR-005 findings and recommendations.
 - Documentation validator infrastructure.
 - Coordination with Documentation Agent for template updates.
@@ -85,6 +85,6 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
 
 ## Kanban documentation setup (RW -k)
 
-**v0.7.1.9+1 (2026-03-31):** Registry wiring for **UXR-005** via **E7:S00:T05**; **Task ID** header for RW validators; **`validate_rw_task_complete.py`** restored on **epic/7-documentation-maintenance**. Implementation scope (spacing rule, validators, ACs) remains **TODO**.
+**v0.7.1.9+1 (2026-03-31):** Registry wiring for **UXR-005** via **E07:S00:T05**; **Task ID** header for RW validators; **`validate_rw_task_complete.py`** restored on **epic/7-documentation-maintenance**. Implementation scope (spacing rule, validators, ACs) remains **TODO**.
 
 **v0.7.1.9+2 (2026-03-31):** **`validate_branch_context.py`** `locate_task_doc_for_version` — same discovery patterns as **`validate_version_bump`** (no false “task doc not found” for **E07S01T09** layout).

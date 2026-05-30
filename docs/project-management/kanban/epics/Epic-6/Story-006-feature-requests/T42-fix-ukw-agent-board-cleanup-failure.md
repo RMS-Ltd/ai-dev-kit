@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task T42 – Fix UKW Agent Board Cleanup Failure
 
-**Task ID:** E6:S06:T42  
+**Task ID:** E06:S06:T42  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium (2.5 days)  
@@ -24,9 +24,9 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S06:T42`
+**Full Task ID:** `E06:S06:T42`
 
-**Repository Pattern:** BR-042 = E6:S06:T42 (abstract space: v0.6.6.41+1)
+**Repository Pattern:** BR-042 = E06:S06:T42 (abstract space: v0.6.6.41+1)
 
 ---
 
@@ -83,7 +83,7 @@ Fix the UKW Agent's board cleanup functionality to ensure completed tasks are pr
 - Add validation checks for board organization
 
 ### Phase 3: Testing and Validation (0.5 days)
-- Test board cleanup with completed tasks (E6:S06:T41, E6:S06:T03)
+- Test board cleanup with completed tasks (E06:S06:T41, E06:S06:T03)
 - Validate no regressions in status inference
 - Test edge cases and error conditions
 - Verify integration with UKW Agent coordination
@@ -231,9 +231,9 @@ Fix the UKW Agent's board cleanup functionality to ensure completed tasks are pr
 ## Related Work
 
 ### Related Tasks
-- **E6:S06:T41** - AGENTS.md and SKILL.md implementation (enables this fix)
-- **E2:S16:T03** - Update Kanban Workflow (UKW) - Perpetual Task (ongoing UKW maintenance context)
-- **E6:S06:T02** - Release Workflow micromanagement issues (agent behavior patterns)
+- **E06:S06:T41** - AGENTS.md and SKILL.md implementation (enables this fix)
+- **E02:S16:T03** - Update Kanban Workflow (UKW) - Perpetual Task (ongoing UKW maintenance context)
+- **E06:S06:T02** - Release Workflow micromanagement issues (agent behavior patterns)
 
 ### Related Bug Reports
 - **BR-042** - UKW Agent Board Cleanup Failure (this task addresses)
@@ -244,7 +244,7 @@ Fix the UKW Agent's board cleanup functionality to ensure completed tasks are pr
 - **FR-010** - Implement actual agentic intelligence task mapping
 
 ### Perpetual Task Context
-This task addresses a **specific defect** in the UKW Agent system. After completion, ongoing UKW maintenance and improvements should be attributed to **E2:S16:T03** (UKW Perpetual Task). This follows the established pattern where:
+This task addresses a **specific defect** in the UKW Agent system. After completion, ongoing UKW maintenance and improvements should be attributed to **E02:S16:T03** (UKW Perpetual Task). This follows the established pattern where:
 - **T42** - Specific bug fixes and one-time improvements  
 - **T101** - Ongoing perpetual maintenance and routine UKW operations
 

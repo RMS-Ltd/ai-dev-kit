@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 2, Story 16, Task 12: IPW ADR necessity checklist and decision gate (FR-100)
 
-**Task ID:** E2:S16:T12  
+**Task ID:** E02:S16:T12  
 **Status:** ✅ COMPLETE (v0.2.16.12+2)  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (RW v0.2.16.12+2 — FR-100 hybrid ADR gate shipped)  
 **Version Anchor:** v0.2.16.12+2  
-**Code:** E2S16T12
+**Code:** E02S16T12
 
 **Upstream:** [FR-100 — IPW ADR necessity checklist and measurable decision gate](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 
@@ -33,7 +33,7 @@ Implement [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decisio
 ## Input
 
 - [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
-- [IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)
+- [IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md)
 - [ipw-adr-necessity-checklist.md](../../../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [FR-096](../../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
 - [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
@@ -61,5 +61,5 @@ Shipped: policy SoT, `ipw.md` Phase 5.0/9, `PLAN_DOC_TEMPLATE.md` §2.5, KB guid
 ## References
 
 - [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
-- [IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)
+- [IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md)
 - [Story 016](../Story-016-perpetual-ongoing-workflow-operations.md)

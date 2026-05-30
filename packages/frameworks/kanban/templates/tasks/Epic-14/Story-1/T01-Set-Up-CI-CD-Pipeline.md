@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S1:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S01:T01`)
 
 **Full Task ID:** `E14:S01:T01`
 
@@ -86,8 +86,8 @@ Set up CI/CD pipeline for the {PROJECT_NAME} project. Configure continuous integ
 - Test integration (from E13:S3 - optional, beneficial)
 
 **Blocks:**
-- E14:S1:T02: Configure deployment environments (deployment environments use CI/CD pipeline)
-- E13:S3:T02: Integrate tests with CI/CD (test integration uses CI/CD pipeline)
+- E14:S01:T02: Configure deployment environments (deployment environments use CI/CD pipeline)
+- E13:S03:T02: Integrate tests with CI/CD (test integration uses CI/CD pipeline)
 
 **Parallel Development Candidacy:** Safe (can proceed independently, foundational task)
 
@@ -96,7 +96,7 @@ Set up CI/CD pipeline for the {PROJECT_NAME} project. Configure continuous integ
 ## Related Work
 
 **Related Tasks:**
-- E14:S1:T02: Configure deployment environments (deployment environments use CI/CD pipeline)
+- E14:S01:T02: Configure deployment environments (deployment environments use CI/CD pipeline)
 
 **Related Stories:**
 - E14:S1: Deployment Pipeline Setup (this story)

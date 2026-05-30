@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E4:S2:T4`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E04:S02:T04`)
 
 **Full Task ID:** `E04:S02:T04`
 
@@ -34,9 +34,9 @@ Document workflow configuration for the {PROJECT_NAME} project. Create comprehen
 
 ## Input
 
-- Kanban workflow rules (from E4:S2:T01)
-- Workflow automation (from E4:S2:T02)
-- Workflow metrics and reporting (from E4:S2:T03)
+- Kanban workflow rules (from E04:S02:T01)
+- Workflow automation (from E04:S02:T02)
+- Workflow metrics and reporting (from E04:S02:T03)
 - Documentation requirements
 
 ---
@@ -82,9 +82,9 @@ Document workflow configuration for the {PROJECT_NAME} project. Create comprehen
 ## Dependencies
 
 **Depends On:**
-- E4:S2:T01: Configure Kanban workflow rules (documentation covers rules)
-- E4:S2:T02: Set up workflow automation (documentation covers automation)
-- E4:S2:T03: Create workflow metrics and reporting (documentation covers metrics)
+- E04:S02:T01: Configure Kanban workflow rules (documentation covers rules)
+- E04:S02:T02: Set up workflow automation (documentation covers automation)
+- E04:S02:T03: Create workflow metrics and reporting (documentation covers metrics)
 
 **Blocks:**
 - None (documentation task)
@@ -96,9 +96,9 @@ Document workflow configuration for the {PROJECT_NAME} project. Create comprehen
 ## Related Work
 
 **Related Tasks:**
-- E4:S2:T01: Configure Kanban workflow rules (documentation covers rules)
-- E4:S2:T02: Set up workflow automation (documentation covers automation)
-- E4:S2:T03: Create workflow metrics and reporting (documentation covers metrics)
+- E04:S02:T01: Configure Kanban workflow rules (documentation covers rules)
+- E04:S02:T02: Set up workflow automation (documentation covers automation)
+- E04:S02:T03: Create workflow metrics and reporting (documentation covers metrics)
 
 **Related Stories:**
 - E4:S2: Kanban Workflow Configuration (this story)

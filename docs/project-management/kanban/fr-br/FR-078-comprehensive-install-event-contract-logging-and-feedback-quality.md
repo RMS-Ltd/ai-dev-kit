@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** COMPLETE
 
-**Implementing Task:** [E6:S07:T111](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md)
+**Implementing Task:** [E06:S07:T111](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md)
 
 ---
 
@@ -89,9 +89,9 @@ For shippable quality, the install telemetry model must answer:
 
 ## Release / verification traceability
 
-- **v0.6.7.111+1** (SemVer **v0.4.721+1**, E6:S07:T111, RW with `--art`): Change implemented for strict install JSON event contract, CLI instrumentation, `ai-dev-kit logs validate-install-log`, user docs, and tests.
+- **v0.6.7.111+1** (SemVer **v0.4.721+1**, E06:S07:T111, RW with `--art`): Change implemented for strict install JSON event contract, CLI instrumentation, `ai-dev-kit logs validate-install-log`, user docs, and tests.
 - **2026-04-10 verification:** `tests/cli/test_install_logging.py` + `tests/cli/test_logs_command.py` passed (11/11), including strict contract validation and redaction-focused checks.
-- **v0.6.7.111+2** (SemVer **v0.4.722+2**, E6:S07:T111, RW with `--art`): Verification closure release documenting FR/T111 completion and board synchronization.
+- **v0.6.7.111+2** (SemVer **v0.4.722+2**, E06:S07:T111, RW with `--art`): Verification closure release documenting FR/T111 completion and board synchronization.
 
 ---
 

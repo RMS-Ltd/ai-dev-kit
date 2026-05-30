@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent)  
 **Priority:** HIGH  
 **Status:** IMPLEMENTED (pending RW forensic close — config + scope **2026-03-30**)  
-**Assigned Task:** E5:S09:T02 — [`T02-docusaurus-canonical-docs-path-fr-066.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T02-docusaurus-canonical-docs-path-fr-066.md)
+**Assigned Task:** E05:S09:T02 — [`T02-docusaurus-canonical-docs-path-fr-066.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T02-docusaurus-canonical-docs-path-fr-066.md)
 
 ---
 
@@ -68,7 +68,7 @@ The canonical KB and documentation live under repo root `docs/`. The portal curr
 
 - [x] AC1: Config points Docusaurus docs at repository `docs/` tree; `portal/docs` scaffold removed.
 - [x] AC2: Publish scope (include/exclude + rationale) in `portal/README.md`.
-- [x] AC3: `npm run build` yields **actionable** MDX errors (sample paths documented on **E5:S09:T02**).
+- [x] AC3: `npm run build` yields **actionable** MDX errors (sample paths documented on **E05:S09:T02**).
 
 ---
 

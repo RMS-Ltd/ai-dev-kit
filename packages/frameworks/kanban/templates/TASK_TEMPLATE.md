@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E4:S11:T01`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `EXX:SYY:TZZ`
 
@@ -117,7 +117,7 @@ housekeeping_policy: keep
 | **Nature** | Blocking / sequential | Contextual / informational |
 | **Direction** | `Depends On` / `Blocks` | Bidirectional (always both ways) |
 | **Usage** | Task cannot start until dependency resolves | Tasks can proceed independently but share context |
-| **Examples** | "Blocked by: E2:S01:T01" | "Informs: E2:S01:T03 — provides analysis for design" |
+| **Examples** | "Blocked by: E02:S01:T01" | "Informs: E02:S01:T03 — provides analysis for design" |
 
 ### Cross-Wiring Examples
 

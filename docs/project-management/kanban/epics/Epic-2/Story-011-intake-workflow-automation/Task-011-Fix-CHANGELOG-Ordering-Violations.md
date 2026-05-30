@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E2:S11:T11`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E02:S11:T11`)
 
 **Full Task ID:** `E02:S11:T11`
 
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Fix ordering violations in CHANGELOG.md identified by the enhanced validator. The validator now correctly detects Keep a Changelog format (newest first) and identifies numerous entries that are out of order. This task addresses the actual CHANGELOG content issues, separate from the validator fix (E2:S01:T06).
+Fix ordering violations in CHANGELOG.md identified by the enhanced validator. The validator now correctly detects Keep a Changelog format (newest first) and identifies numerous entries that are out of order. This task addresses the actual CHANGELOG content issues, separate from the validator fix (E02:S01:T06).
 
 ---
 
@@ -97,8 +97,8 @@ Fix ordering violations in CHANGELOG.md identified by the enhanced validator. Th
 ## Dependencies
 
 **Depends On:**
-- E2:S01:T06 (Validator format support - COMPLETE)
-- E2:S11:T10 (CHANGELOG protection - COMPLETE)
+- E02:S01:T06 (Validator format support - COMPLETE)
+- E02:S11:T10 (CHANGELOG protection - COMPLETE)
 
 **Blocks:**
 - None (can proceed independently)
@@ -110,9 +110,9 @@ Fix ordering violations in CHANGELOG.md identified by the enhanced validator. Th
 ## Related Work
 
 **Related Tasks:**
-- E2:S01:T06 - Fix changelog validator ordering bug (validator fix - COMPLETE)
-- E2:S11:T10 - Investigate CHANGELOG Entry Removal and Harden Processes (protection - COMPLETE)
-- E3:S02:T06 - Investigate and harden changelog ordering process (PERPETUAL - ongoing maintenance)
+- E02:S01:T06 - Fix changelog validator ordering bug (validator fix - COMPLETE)
+- E02:S11:T10 - Investigate CHANGELOG Entry Removal and Harden Processes (protection - COMPLETE)
+- E03:S02:T06 - Investigate and harden changelog ordering process (PERPETUAL - ongoing maintenance)
 
 **Related Stories:**
 - E2:S11: Intake Workflow Automation
@@ -154,7 +154,7 @@ Fix ordering violations in CHANGELOG.md identified by the enhanced validator. Th
 - Merge conflicts may have caused reordering
 
 **Prevention:**
-- RW Step 4 now has enhanced validation (from E2:S11:T10)
+- RW Step 4 now has enhanced validation (from E02:S11:T10)
 - Validator now correctly validates Keep a Changelog format
 - Future entries should be inserted at correct positions
 
@@ -180,7 +180,7 @@ Fix ordering violations in CHANGELOG.md identified by the enhanced validator. Th
 **Process Improvements:**
 - Validator now correctly validates Keep a Changelog format
 - Build 0 validation updated (valid for doc-init per FR-020)
-- RW Step 4 has enhanced protection (from E2:S11:T10) to prevent future violations
+- RW Step 4 has enhanced protection (from E02:S11:T10) to prevent future violations
 
 **Status:** ✅ COMPLETE - All ordering violations fixed, validator passes
 
@@ -190,8 +190,8 @@ Fix ordering violations in CHANGELOG.md identified by the enhanced validator. Th
 
 - `validate_changelog_format.py` - Enhanced validator with format support
 - `CHANGELOG.md` - File to be fixed
-- E2:S01:T06 - Validator format support implementation
-- E2:S11:T10 - CHANGELOG protection safeguards
+- E02:S01:T06 - Validator format support implementation
+- E02:S11:T10 - CHANGELOG protection safeguards
 - [Keep a Changelog](https://keepachangelog.com/) - Format specification
 
 ---

@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 5, Story 9, Task 03: Production build corpus triage (FR-067)
 
-**Task ID:** E5:S09:T03  
+**Task ID:** E05:S09:T03  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-03-30  
 **Last updated:** 2026-03-30 (v0.5.9.3+1 — FR-067 triage)  
 **Version:** v0.5.9.3+1  
-**Code:** E5S09T03
+**Code:** E05S09T03
 
 **Feature Request:** [FR-067 – Production build triage](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
 
@@ -30,7 +30,7 @@ Implement **FR-067**: after FR-066, achieve **`npm run build` = 0** for the agre
 ## Input
 
 - [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
-- **E5:S09:T02** complete (docs path + scope)
+- **E05:S09:T02** complete (docs path + scope)
 
 ---
 
@@ -80,9 +80,9 @@ Implement **FR-067**: after FR-066, achieve **`npm run build` = 0** for the agre
 
 ## Dependencies
 
-- **E5:S09:T02** (FR-066) complete.
+- **E05:S09:T02** (FR-066) complete.
 
 ## Related
 
 - **FR-058** (MMW) for systematic markdown maintenance.
-- **E5:S09:T08** — [Strict broken-link mode (`throw`) after link debt cleared](T08-docusaurus-strict-broken-links-post-fr067.md) (**FU-1** on [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md)); carries all deferred “warn → throw” intent.
+- **E05:S09:T08** — [Strict broken-link mode (`throw`) after link debt cleared](T08-docusaurus-strict-broken-links-post-fr067.md) (**FU-1** on [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md)); carries all deferred “warn → throw” intent.

@@ -20,12 +20,12 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E4:S16:T01 – Establish expectations baseline for Kanban package** ✅ COMPLETE (v0.4.16.1+1)
-- [x] **E4:S16:T02 – Inventory package components and map to expectations** ✅ COMPLETE (v0.4.16.2+1)
-- [x] **E4:S16:T03 – Validate Kanban behavior against documented guidance** ✅ COMPLETE (v0.4.16.3+1)
-- [x] **E4:S16:T04 – Review integrations and dependency alignment** ✅ COMPLETE (v0.4.16.4+1)
-- [x] **E4:S16:T05 – Create gap log and risk assessment** ✅ COMPLETE (v0.4.16.5+2 – Gap log and risk assessment finalized, all acceptance criteria met)
-- [x] **E4:S16:T06 – Define RC sign-off criteria and remediation tasks** ✅ COMPLETE (v0.4.16.6+1)
+- [x] **E04:S16:T01 – Establish expectations baseline for Kanban package** ✅ COMPLETE (v0.4.16.1+1)
+- [x] **E04:S16:T02 – Inventory package components and map to expectations** ✅ COMPLETE (v0.4.16.2+1)
+- [x] **E04:S16:T03 – Validate Kanban behavior against documented guidance** ✅ COMPLETE (v0.4.16.3+1)
+- [x] **E04:S16:T04 – Review integrations and dependency alignment** ✅ COMPLETE (v0.4.16.4+1)
+- [x] **E04:S16:T05 – Create gap log and risk assessment** ✅ COMPLETE (v0.4.16.5+2 – Gap log and risk assessment finalized, all acceptance criteria met)
+- [x] **E04:S16:T06 – Define RC sign-off criteria and remediation tasks** ✅ COMPLETE (v0.4.16.6+1)
 
 ---
 
@@ -68,9 +68,9 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## Tasks
 
-### E4:S16:T01 – Establish expectations baseline for Kanban package
+### E04:S16:T01 – Establish expectations baseline for Kanban package
 
-**Task ID:** E4:S16:T01  
+**Task ID:** E04:S16:T01  
 **Status:** COMPLETE  
 **Scope:** Define the implementation expectations baseline for the Kanban framework package.  
 **Input:** Package README, governance policy, templates, and guides.  
@@ -88,9 +88,9 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 **Deliverable:** Expectations baseline document  
 **Approach:** Extract expected behaviors, policies, and structures.
 
-### E4:S16:T02 – Inventory package components and map to expectations
+### E04:S16:T02 – Inventory package components and map to expectations
 
-**Task ID:** E4:S16:T02  
+**Task ID:** E04:S16:T02  
 **Status:** COMPLETE  
 **Scope:** Inventory Kanban package components and map them to expectations baseline.  
 **Input:** Package directory inventory.  
@@ -145,28 +145,28 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 **Deliverable:** Component map with expected vs actual coverage  
 **Approach:** Map templates, scripts, and docs to expectations.
 
-### E4:S16:T03 – Validate Kanban behavior against documented guidance
+### E04:S16:T03 – Validate Kanban behavior against documented guidance
 
 **Input:** Policies and board templates  
 **Deliverable:** Behavior validation notes and discrepancies  
 **Approach:** Validate governance rules and document structure.
 
-### E4:S16:T04 – Review integrations and dependency alignment
+### E04:S16:T04 – Review integrations and dependency alignment
 
 **Input:** Integration references across frameworks  
 **Deliverable:** Integration alignment report  
 **Approach:** Verify ties to versioning and workflow frameworks.
 
-### E4:S16:T05 – Create gap log and risk assessment
+### E04:S16:T05 – Create gap log and risk assessment
 
-**Task ID:** E4:S16:T05  
+**Task ID:** E04:S16:T05  
 **Status:** COMPLETE  
 **Scope:** Synthesize T01–T04 findings into a consolidated gap log and RC risk assessment for the Kanban framework package.  
 **Input:** Findings from T01–T04, BR-034, BR-035, and environment/SOP improvements.  
 **Deliverable:** Gap log with severity, likelihood, RC impact, and ownership, plus overall RC risk posture.  
 **Version Anchor:** ✅ COMPLETE (v0.4.16.5+1)
 
-### E4:S16:T06 – Define RC sign-off criteria and remediation tasks
+### E04:S16:T06 – Define RC sign-off criteria and remediation tasks
 
 **Input:** Gap log and expected behaviors, plus findings from T01–T05  
 **Deliverable:** RC sign-off checklist for the Kanban package and remediation task pattern for non-blocking gaps  
@@ -202,25 +202,25 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 **Deliverable:** Component map with expected vs actual coverage  
 **Approach:** Map templates, scripts, and docs to expectations.
 
-### E4:S16:T03 – Validate Kanban behavior against documented guidance
+### E04:S16:T03 – Validate Kanban behavior against documented guidance
 
 **Input:** Policies and board templates  
 **Deliverable:** Behavior validation notes and discrepancies  
 **Approach:** Validate governance rules and document structure.
 
-### E4:S16:T04 – Review integrations and dependency alignment
+### E04:S16:T04 – Review integrations and dependency alignment
 
 **Input:** Integration references across frameworks  
 **Deliverable:** Integration alignment report  
 **Approach:** Verify ties to versioning and workflow frameworks.
 
-### E4:S16:T05 – Create gap log and risk assessment
+### E04:S16:T05 – Create gap log and risk assessment
 
 **Input:** Findings from T01–T04  
 **Deliverable:** Gap log with severity and risk notes  
 **Approach:** Consolidate gaps and categorize by RC impact.
 
-### E4:S16:T06 – Define RC sign-off criteria and remediation tasks
+### E04:S16:T06 – Define RC sign-off criteria and remediation tasks
 
 **Input:** Gap log and expected behaviors  
 **Deliverable:** RC sign-off checklist and remediation task list  

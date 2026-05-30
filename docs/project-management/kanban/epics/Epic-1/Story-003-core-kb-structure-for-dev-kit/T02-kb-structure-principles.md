@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # KB Structure Principles and Conventions
 
-**Task:** E1:S03:T02 – Document KB structure principles and conventions  
+**Task:** E01:S03:T02 – Document KB structure principles and conventions  
 **Date:** 2025-12-02  
 **Status:** ✅ COMPLETE
 
@@ -263,7 +263,7 @@ The KB follows a clear hierarchy:
 **Rule 3: Metadata in Headers**
 - Include metadata in document headers (YAML frontmatter or markdown)
 - Include: Task/Story/Epic, Date, Status, Version
-- Example: `**Task:** E1:S03:T02`, `**Date:** 2025-12-02`, `**Status:** ✅ COMPLETE`
+- Example: `**Task:** E01:S03:T02`, `**Date:** 2025-12-02`, `**Status:** ✅ COMPLETE`
 
 ---
 

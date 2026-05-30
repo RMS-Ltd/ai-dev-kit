@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 56: Standardize Packaged Workflow Documentation and Instructions
 
-**Task ID:** E5:S01:T56  
+**Task ID:** E05:S01:T56  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium (2-3 days)  
@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Implementation Status:** ✅ COMPLETE (v0.5.1.56+1)
 **Progress:** Task created with comprehensive implementation plan and acceptance criteria
 
-**Repository Pattern:** FR-056 = E5:S01:T56 (abstract space v0.5.1.56+0)
+**Repository Pattern:** FR-056 = E05:S01:T56 (abstract space v0.5.1.56+0)
 
 ---
 
@@ -33,7 +33,7 @@ This task implements the standardization of documentation, instructions, and for
 ## Input
 
 - **FR-056:** [`FR-056-standardize-packaged-workflow-documentation-and-instructions.md`](../../../fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md)
-- **IPW Plan:** [`IPP-E5S01T56-package-workflow-docs.md`](../../../implementation-cycles/IPP-E5S01T56-package-workflow-docs.md)
+- **IPW Plan:** [`IPP-E05S01T56-package-workflow-docs.md`](../../../implementation-cycles/IPP-E05S01T56-package-workflow-docs.md)
 - Workflow registry: [`workflow-registry.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/workflow-registry.yaml)
 - Framework README: [`workflow mgt/README.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/README.md)
 - Existing documentation examples:
@@ -489,7 +489,7 @@ This task is considered COMPLETE when:
 ## References
 
 - **FR-056:** `docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md`
-- **IPW Plan:** `docs/implementation-cycles/IPP-E5S01T56-package-workflow-docs.md`
+- **IPW Plan:** `docs/implementation-cycles/IPP-E05S01T56-package-workflow-docs.md`
 - **Workflow Registry:** `packages/frameworks/workflow mgt/workflows/workflow-registry.yaml`
 - **Framework README:** `packages/frameworks/workflow mgt/README.md`
 - **Canonical Template:** `packages/frameworks/workflow mgt/templates/workflow-readme-template.md`

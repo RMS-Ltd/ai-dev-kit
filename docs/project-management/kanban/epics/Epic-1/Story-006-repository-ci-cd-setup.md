@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [ ] **E1:S06:T01 – Set up BYOB badges for private repository** - IN PROGRESS (v0.1.6.1+1)
+- [ ] **E01:S06:T01 – Set up BYOB badges for private repository** - IN PROGRESS (v0.1.6.1+1)
   - Task: [`T01-setup-byob-badges-for-private-repository.md`](Story-006-repository-ci-cd-setup/T01-setup-byob-badges-for-private-repository.md)
 
 
@@ -55,7 +55,7 @@ This story sets up CI/CD infrastructure for the ai-dev-kit repository, including
 
 ## Tasks
 
-### E1:S06:T01 – Set up BYOB badges for private repository
+### E01:S06:T01 – Set up BYOB badges for private repository
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  

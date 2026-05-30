@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Started:** 2025-12-16  
 **Completed:** 2025-12-18  
 **Version:** v0.6.6.6+20  
-**Code:** E6S06T06
+**Code:** E06S06T06
 
 ---
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S06:T06`
+**Full Task ID:** `E06:S06:T06`
 
 ---
 
@@ -179,7 +179,7 @@ Comprehensive meta-analysis report with "ultimate" canonical framework designs:
 ## Dependencies
 
 **Depends On:**
-- E6:S06:T01 (requires all project reports and granular analyses) ✅ COMPLETE
+- E06:S06:T01 (requires all project reports and granular analyses) ✅ COMPLETE
 
 **Blocks:**
 - Continued development in client projects (halted until analysis complete)
@@ -200,8 +200,8 @@ Comprehensive meta-analysis report with "ultimate" canonical framework designs:
 - FR-005: Systematic Canonical Epics/Stories/Tasks Template System - Related to canonical structure design
 
 **Related Tasks:**
-- E6:S06:T01: Comprehensive ADK implementation analysis across all projects (provides input)
-- E4:S11:T01: Kanban granularity policy update (related to 3-tier structure)
+- E06:S06:T01: Comprehensive ADK implementation analysis across all projects (provides input)
+- E04:S11:T01: Kanban granularity policy update (related to 3-tier structure)
 
 **Related Stories:**
 - E6:S06: ADK Implementation Analysis and Package Management (parent story)

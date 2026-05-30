@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 5, Story 9, Task 06: Docusaurus deployment and hosting (FR-070)
 
-**Task ID:** E5:S09:T06  
+**Task ID:** E05:S09:T06  
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-30  
 **Last updated:** 2026-03-30 (v0.5.9.6+1 — FR-070 GitHub Pages deploy workflow + docs)  
-**Code:** E5S09T06
+**Code:** E05S09T06
 
 **Feature Request:** [FR-070 – Deployment and hosting](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md)
 
@@ -29,7 +29,7 @@ Implement **FR-070**: GitHub Pages hosting aligned with `url` / `baseUrl`, autom
 ## Input
 
 - [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md)
-- **E5:S09:T03**–**T05** outcomes
+- **E05:S09:T03**–**T05** outcomes
 
 ---
 
@@ -66,7 +66,7 @@ Implement **FR-070**: GitHub Pages hosting aligned with `url` / `baseUrl`, autom
 
 ## Version Anchor
 
-**Forensic marker:** `✅ COMPLETE (v0.5.9.6+1)` — **RW E5:S09:T06**.
+**Forensic marker:** `✅ COMPLETE (v0.5.9.6+1)` — **RW E05:S09:T06**.
 
 ---
 
@@ -80,4 +80,4 @@ Implement **FR-070**: GitHub Pages hosting aligned with `url` / `baseUrl`, autom
 
 ## Dependencies
 
-- **E5:S09:T03**–**T05** strongly recommended (green build + CI).
+- **E05:S09:T03**–**T05** strongly recommended (green build + CI).

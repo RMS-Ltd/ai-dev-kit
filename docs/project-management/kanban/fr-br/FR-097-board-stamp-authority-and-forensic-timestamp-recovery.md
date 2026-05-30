@@ -14,11 +14,11 @@ housekeeping_policy: keep
 **Submitted By:** User — homogenized `Last modified` stamps on `kboard.md` / `fbuboard.md` undermine workload and staleness triage  
 **Priority:** CRITICAL  
 **Severity:** HIGH  
-**Status:** RESOLVED — v0.2.15.8+2 (`RW E2:S15:T08 --art`)
+**Status:** RESOLVED — v0.2.15.8+2 (`RW E02:S15:T08 --art`)
 
-**Implementing Task:** [E2:S15:T08](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
+**Implementing Task:** [E02:S15:T08](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
 
-**IPP:** [IPP-E2S15T08](../../../implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
+**IPP:** [IPP-E02S15T08](../../../implementation-cycles/IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
 **Reopens / gates closure of:**
 

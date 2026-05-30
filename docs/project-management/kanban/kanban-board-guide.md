@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board Guide
 
-**Last Updated:** 2026-03-09 (RW: E4:S18:T01+2)  
+**Last Updated:** 2026-03-09 (RW: E04:S18:T01+2)  
 **Version:** v0.4.18.1+2
 
 > **For structured information only, see:** [`kboard.md`](kboard.md)  
@@ -121,7 +121,7 @@ Every active MoSCOW row in `kboard.md` and `fbuboard.md` must end with a termina
 
 This is mandatory for human scanability and forensic traceability. RW/UKW/manual updates must preserve or refresh this value whenever the row changes.
 
-### MoSCOW state icons (UXR-012 / E4:S13:T07)
+### MoSCOW state icons (UXR-012 / E04:S13:T07)
 
 Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly one Set A (emoji) icon** immediately before the status token, after the title segment:
 
@@ -133,9 +133,22 @@ Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly
 - **Hygiene / UKW bookkeeping:** Do not change icons on STRUCTURE-only passes (same class as FR-097 stamp preservation). Update icons only when the **status word** changes substantively.
 - **Automation:** `state_icons.py`, `backfill_board_state_icons.py`, and `validate_kanban_state_icons.py` (Gate 9 in `validate_release_readiness.py`). Operator notes: [`state-icons.md`](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md).
 
+### E/S/T inline notation (UXR-014 / E04:S19:T09)
+
+**Write-default:** Use two-digit zero-padding for Epic, Story, and Task when the numeric value is `<10`:
+
+- Canonical colon form: `E02:S01:T04` (not `E02:S01:T04`)
+- Natural width when `≥10`: `E21:S16:T57`
+- Perpetual tasks (`T101+`): three-digit task segment, e.g. `E02:S16:T101`
+- Compact triggers (RW/UKW/IPW): `E02S16T04` with the same padding rules
+
+**Read tolerance:** Validators and parsers continue to accept legacy unpadded forms; do not break RW/UKW on historical docs. **New writes** (boards, intake, agents, `update_kanban_docs.py`) MUST emit the padded write-default.
+
+**Formatter:** `packages/frameworks/workflow mgt/scripts/kanban/est_format.py` — shared canonicalization for scripts and corpus hygiene.
+
 ### Task-Level Display (not story-level)
 
-**MoSCOW rows must reference tasks** (`E7:S06:T03`, etc.), not whole stories (`E7:S06`). Story-level lines collapse many tasks into one line and **obfuscate actual state** (e.g. T02 complete while the story still reads TODO). Use [`kanban-structure.md`](kanban-structure.md) for epic/story hierarchy; use [`kboard.md`](kboard.md) for actionable, task-granular work.
+**MoSCOW rows must reference tasks** (`E07:S06:T03`, etc.), not whole stories (`E7:S06`). Story-level lines collapse many tasks into one line and **obfuscate actual state** (e.g. T02 complete while the story still reads TODO). Use [`kanban-structure.md`](kanban-structure.md) for epic/story hierarchy; use [`kboard.md`](kboard.md) for actionable, task-granular work.
 
 ---
 
@@ -166,16 +179,16 @@ See [`README.md`](README.md) for full structure details and `docs/governance/kan
 
 ---
 
-## Formatting Governance (E7:S01:T09 / UXR-005)
+## Formatting Governance (E07:S01:T09 / UXR-005)
 
-The UXR workflow owns all Kanban template/document maintenance. As of **E7:S01:T09 / UXR-005**, every multi-line MoSCOW bullet must have **exactly one blank line** separating it from adjacent entries (single-line bullets stay contiguous). When updating `kanban-board*.md`, `fbuboard.md`, `kanban-structure.md`, `_index.md`, or related templates:
+The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:T09 / UXR-005**, every multi-line MoSCOW bullet must have **exactly one blank line** separating it from adjacent entries (single-line bullets stay contiguous). When updating `kanban-board*.md`, `fbuboard.md`, `kanban-structure.md`, `_index.md`, or related templates:
 
 - Insert a blank line between bullets whose description spans more than one visual line.
 - Leave single-line bullets directly adjacent to minimize vertical noise.
 - If a release reveals formatting drift, escalate through T09 (Kanban Template Governance) before touching other boards.
 - RW/UKW/MMW agents should log evidence (MMW log + validator output) showing the rule was checked or restored.
 
-Future validator support is tracked in the documentation validator script (`scripts/documentation/validate-documentation-consistency.py`, TODO tagged with E7:S01:T09). Until automation lands, treat spacing verification as part of RW Step 7/8 reviews.
+Future validator support is tracked in the documentation validator script (`scripts/documentation/validate-documentation-consistency.py`, TODO tagged with E07:S01:T09). Until automation lands, treat spacing verification as part of RW Step 7/8 reviews.
 
 ---
 

@@ -16,26 +16,26 @@ housekeeping_policy: keep
 **Version:** v0.6.8.13+1  
 **Code:** E6S08
 
-**Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E9:S01:T08).
+**Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
 
 ---
 
 ## Task Checklist
 
-- [x] **E6:S08:T00 – Story creation and FR-030 intake** ✅ COMPLETE (v0.6.8.0+1)
-- [x] **E6:S08:T01 – CLI tool architecture and base structure** ✅ COMPLETE (v0.6.8.1+1)
-- [x] **E6:S08:T02 – Core commands (init, install, update)** ✅ COMPLETE (v0.6.8.2+1)
-- [x] **E6:S08:T03 – Status and checking commands (check, status, list)** ✅ COMPLETE (v0.6.8.3+1)
-- [x] **E6:S08:T04 – Backend abstraction layer design** ✅ COMPLETE (v0.6.8.4+1)
-- [x] **E6:S08:T05 – Git submodule backend implementation** ✅ COMPLETE (v0.6.8.5+1)
-- [x] **E6:S08:T06 – Git subtree backend implementation** ✅ COMPLETE (v0.6.8.6+1)
-- [x] **E6:S08:T07 – Package manager backend implementation (npm, pip)** ✅ COMPLETE (v0.6.8.7+1)
-- [x] **E6:S08:T08 – Configuration management (.ai-dev-kit.yaml)** ✅ COMPLETE (v0.6.8.8+1)
-- [x] **E6:S08:T09 – Error handling and validation** ✅ COMPLETE (v0.6.8.9+1)
-- [x] **E6:S08:T10 – Migration utilities (copy-paste → dependencies)** ✅ COMPLETE (v0.6.8.10+1)
-- [x] **E6:S08:T11 – Remove command (complements FR-008)** ✅ COMPLETE (v0.6.8.11+1)
-- [x] **E6:S08:T12 – Documentation and usage examples** ✅ COMPLETE (v0.6.8.12+1)
-- [x] **E6:S08:T13 – Testing, validation, and PyPI packaging** ✅ COMPLETE (v0.6.8.13+1)
+- [x] **E06:S08:T00 – Story creation and FR-030 intake** ✅ COMPLETE (v0.6.8.0+1)
+- [x] **E06:S08:T01 – CLI tool architecture and base structure** ✅ COMPLETE (v0.6.8.1+1)
+- [x] **E06:S08:T02 – Core commands (init, install, update)** ✅ COMPLETE (v0.6.8.2+1)
+- [x] **E06:S08:T03 – Status and checking commands (check, status, list)** ✅ COMPLETE (v0.6.8.3+1)
+- [x] **E06:S08:T04 – Backend abstraction layer design** ✅ COMPLETE (v0.6.8.4+1)
+- [x] **E06:S08:T05 – Git submodule backend implementation** ✅ COMPLETE (v0.6.8.5+1)
+- [x] **E06:S08:T06 – Git subtree backend implementation** ✅ COMPLETE (v0.6.8.6+1)
+- [x] **E06:S08:T07 – Package manager backend implementation (npm, pip)** ✅ COMPLETE (v0.6.8.7+1)
+- [x] **E06:S08:T08 – Configuration management (.ai-dev-kit.yaml)** ✅ COMPLETE (v0.6.8.8+1)
+- [x] **E06:S08:T09 – Error handling and validation** ✅ COMPLETE (v0.6.8.9+1)
+- [x] **E06:S08:T10 – Migration utilities (copy-paste → dependencies)** ✅ COMPLETE (v0.6.8.10+1)
+- [x] **E06:S08:T11 – Remove command (complements FR-008)** ✅ COMPLETE (v0.6.8.11+1)
+- [x] **E06:S08:T12 – Documentation and usage examples** ✅ COMPLETE (v0.6.8.12+1)
+- [x] **E06:S08:T13 – Testing, validation, and PyPI packaging** ✅ COMPLETE (v0.6.8.13+1)
 
 ---
 
@@ -72,7 +72,7 @@ Build a comprehensive CLI tool that:
 
 ## Tasks
 
-### E6:S08:T00 – Story creation and FR-030 intake
+### E06:S08:T00 – Story creation and FR-030 intake
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
@@ -103,11 +103,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T01 – CLI tool architecture and base structure
+### E06:S08:T01 – CLI tool architecture and base structure
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E6:S01 (Framework Version Management), E6:S02:T01 (Framework Update Procedures)  
+**Dependencies:** E6:S01 (Framework Version Management), E06:S02:T01 (Framework Update Procedures)  
 **Blocker:** None  
 **Version:** v0.6.8.1+1
 
@@ -147,11 +147,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T02 – Core commands (init, install, update)
+### E06:S08:T02 – Core commands (init, install, update)
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E6:S08:T01  
+**Dependencies:** E06:S08:T01  
 **Blocker:** None  
 **Version:** v0.6.8.2+1
 
@@ -189,11 +189,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T03 – Status and checking commands (check, status, list)
+### E06:S08:T03 – Status and checking commands (check, status, list)
 
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Dependencies:** E6:S08:T02  
+**Dependencies:** E06:S08:T02  
 **Blocker:** None  
 **Version:** v0.6.8.3+1
 
@@ -229,11 +229,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T04 – Backend abstraction layer design
+### E06:S08:T04 – Backend abstraction layer design
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E6:S08:T01  
+**Dependencies:** E06:S08:T01  
 **Blocker:** None  
 **Version:** v0.6.8.4+1
 
@@ -270,11 +270,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T05 – Git submodule backend implementation
+### E06:S08:T05 – Git submodule backend implementation
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E6:S08:T04  
+**Dependencies:** E06:S08:T04  
 **Blocker:** None  
 **Version:** v0.6.8.5+1
 
@@ -311,11 +311,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T06 – Git subtree backend implementation
+### E06:S08:T06 – Git subtree backend implementation
 
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Dependencies:** E6:S08:T04  
+**Dependencies:** E06:S08:T04  
 **Blocker:** None  
 **Version:** v0.6.8.6+1
 
@@ -352,11 +352,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T07 – Package manager backend implementation (npm, pip)
+### E06:S08:T07 – Package manager backend implementation (npm, pip)
 
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Dependencies:** E6:S08:T04  
+**Dependencies:** E06:S08:T04  
 **Blocker:** None (implemented with graceful handling for unpublished packages)  
 **Version:** v0.6.8.7+1
 
@@ -395,11 +395,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T08 – Configuration management (.ai-dev-kit.yaml)
+### E06:S08:T08 – Configuration management (.ai-dev-kit.yaml)
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E6:S08:T01  
+**Dependencies:** E06:S08:T01  
 **Blocker:** None  
 **Version:** v0.6.8.8+1
 
@@ -439,11 +439,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T09 – Error handling and validation
+### E06:S08:T09 – Error handling and validation
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E6:S08:T02, E6:S08:T04  
+**Dependencies:** E06:S08:T02, E06:S08:T04  
 **Blocker:** None  
 **Version:** v0.6.8.9+1
 
@@ -482,11 +482,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T10 – Migration utilities (copy-paste → dependencies)
+### E06:S08:T10 – Migration utilities (copy-paste → dependencies)
 
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Dependencies:** E6:S08:T02, E6:S08:T05  
+**Dependencies:** E06:S08:T02, E06:S08:T05  
 **Blocker:** None  
 **Version:** v0.6.8.10+1
 
@@ -523,11 +523,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T11 – Remove command (complements FR-008)
+### E06:S08:T11 – Remove command (complements FR-008)
 
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Dependencies:** E6:S08:T02, FR-008  
+**Dependencies:** E06:S08:T02, FR-008  
 **Blocker:** None  
 **Version:** v0.6.8.11+1
 
@@ -564,11 +564,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T12 – Documentation and usage examples
+### E06:S08:T12 – Documentation and usage examples
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E6:S08:T02, E6:S08:T03  
+**Dependencies:** E06:S08:T02, E06:S08:T03  
 **Blocker:** None  
 **Version:** v0.6.8.12+1
 
@@ -616,11 +616,11 @@ Build a comprehensive CLI tool that:
 
 ---
 
-### E6:S08:T13 – Testing, validation, and PyPI packaging
+### E06:S08:T13 – Testing, validation, and PyPI packaging
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E6:S08:T01-T12  
+**Dependencies:** E06:S08:T01-T12  
 **Blocker:** None  
 **Version:** v0.6.8.13+1
 
@@ -693,8 +693,8 @@ Build a comprehensive CLI tool that:
 
 **Blocked By:**
 - E6:S01 (Framework Version Management) - Must establish versioning strategy first
-- E6:S02:T01 (Framework Update Procedures) - Must define update procedures first
-- E6:S08:T07 blocked by E6:S01 (frameworks must be published to npm/pip first)
+- E06:S02:T01 (Framework Update Procedures) - Must define update procedures first
+- E06:S08:T07 blocked by E6:S01 (frameworks must be published to npm/pip first)
 
 **Coordinates With:**
 - Epic 5 (Documentation Management) - Documentation requirements

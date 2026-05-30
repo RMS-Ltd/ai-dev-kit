@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** INTAKE
 
-**Implementing Task:** [E1:S02:T14](../epics/Epic-1/Story-002-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)  
-**Historical registry:** E5:S01:T03
+**Implementing Task:** [E01:S02:T14](../epics/Epic-1/Story-002-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)  
+**Historical registry:** E05:S01:T03
 
 ---
 
@@ -52,7 +52,7 @@ Currently, Story 4 (E7:S04) includes tasks for setting up dependency tracking fo
 ## Requirements
 
 ### Functional Requirements
-- [ ] Remove dependency tracking tasks from ai-dev-kit (E7:S04:T04, T05, T06)
+- [ ] Remove dependency tracking tasks from ai-dev-kit (E07:S04:T04, T05, T06)
 - [ ] Create guidance documentation for adopting projects on how to track external dependencies
 - [ ] Provide example tooling/scripts for dependency tracking in adopting projects
 - [ ] Update Story 4 scope to focus on template creation and customization guidance only
@@ -98,7 +98,7 @@ A project adopts ai-dev-kit and uses the README template. The project directly t
 
 ## Acceptance Criteria
 
-- [ ] E7:S04:T04, T05, T06 removed or reframed as guidance for adopting projects
+- [ ] E07:S04:T04, T05, T06 removed or reframed as guidance for adopting projects
 - [ ] Documentation created explaining how adopting projects should track external dependencies
 - [ ] Example tooling/scripts provided for dependency tracking
 - [ ] Story 4 scope updated to reflect new approach
@@ -117,7 +117,7 @@ A project adopts ai-dev-kit and uses the README template. The project directly t
 **Related Work:**
 - **Epic 7:** Examples & Adoption Support
 - **Story 4:** README Template Based on Best-README-Template (E7:S04)
-- **Tasks:** E7:S04:T04, T05, T06 (to be reframed or removed)
+- **Tasks:** E07:S04:T04, T05, T06 (to be reframed or removed)
 
 ---
 
@@ -133,7 +133,7 @@ A project adopts ai-dev-kit and uses the README template. The project directly t
 **Assigned To:**
 - Epic: Epic 7 - Examples & Adoption Support
 - Story: Story 4 - README Template Based on Best-README-Template
-- Task: E7:S04:T07 (Create dependency tracking guidance for adopting projects)
+- Task: E07:S04:T07 (Create dependency tracking guidance for adopting projects)
 - Version: `v0.7.4.1+2`
 
 **Kanban Links:**
@@ -153,10 +153,10 @@ This FR reframes the approach from Story 4. Instead of ai-dev-kit tracking exter
 5. **Simplifies adoption:** Clearer separation of concerns
 
 **Tasks to Update:**
-- **E7:S04:T04** - Reframe: Remove from ai-dev-kit, create guidance for adopting projects
-- **E7:S04:T05** - Reframe: Remove from ai-dev-kit, provide example tooling for adopting projects
-- **E7:S04:T06** - Reframe: Remove from ai-dev-kit, document PR generation patterns for adopting projects
-- **E7:S04:T07** - New: Create comprehensive dependency tracking guide for adopting projects
+- **E07:S04:T04** - Reframe: Remove from ai-dev-kit, create guidance for adopting projects
+- **E07:S04:T05** - Reframe: Remove from ai-dev-kit, provide example tooling for adopting projects
+- **E07:S04:T06** - Reframe: Remove from ai-dev-kit, document PR generation patterns for adopting projects
+- **E07:S04:T07** - New: Create comprehensive dependency tracking guide for adopting projects
 
 ---
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Integration Examples and Edge Cases
 
-**Task:** E4:S03:T06 – Document integration examples and edge cases  
+**Task:** E04:S03:T06 – Document integration examples and edge cases  
 **Date:** 2025-12-02  
 **Author:** AI Agent (Auto)  
 **Status:** ✅ COMPLETE
@@ -44,7 +44,7 @@ This document provides worked examples and edge case documentation for the three
 - Decision: Create Task under Story 3
 
 **Step 3: Create Task**
-- Task created: E4:S03:T08 – Add Kanban consistency validation script
+- Task created: E04:S03:T08 – Add Kanban consistency validation script
 - Added to Story-003-kanban-versioning-rw-integration.md
 - Task status: TODO
 
@@ -77,7 +77,7 @@ This document provides worked examples and edge case documentation for the three
      - Epic-4.md Story Checklist: `- [ ] **E4:S03 – ...** - IN PROGRESS (v0.4.3.8+1)`
      - Epic-4.md detailed Story section: Task 8 marked complete
      - Story-003.md: `**Last updated:** ...`, `**Version:** v0.4.3.8+1`
-     - Story-003.md Task Checklist: `- [x] **E4:S03:T08 – ...** ✅ COMPLETE (v0.4.3.8+1)`
+     - Story-003.md Task Checklist: `- [x] **E04:S03:T08 – ...** ✅ COMPLETE (v0.4.3.8+1)`
      - Story-003.md detailed Task section: `**Status:** ✅ **COMPLETE** (v0.4.3.8+1) - ...`
   7. Stage Files ✅
   8. Run Validators ✅
@@ -397,16 +397,16 @@ Epic 4, Story 3:
 
 **Process:**
 1. **First Release:**
-   - Task: E4:S03:T08
+   - Task: E04:S03:T08
    - Version: `v0.4.3.8+1` (Task 8, Build 1)
 
 2. **Second Release (same Task):**
-   - Task: E4:S03:T08 (still active)
+   - Task: E04:S03:T08 (still active)
    - Version: `v0.4.3.8+2` (Task 8, Build 2)
    - RW Step 2 detects same Task, increments BUILD
 
 3. **Third Release (same Task):**
-   - Task: E4:S03:T08 (still active)
+   - Task: E04:S03:T08 (still active)
    - Version: `v0.4.3.8+3` (Task 8, Build 3)
    - RW Step 2 detects same Task, increments BUILD
 
@@ -560,7 +560,7 @@ Task 8: Add Kanban consistency validation script
 
 ## Version History
 
-- **v1.0.0** (2025-12-02): Initial version created (E4:S03:T06)
+- **v1.0.0** (2025-12-02): Initial version created (E04:S03:T06)
 
 ---
 

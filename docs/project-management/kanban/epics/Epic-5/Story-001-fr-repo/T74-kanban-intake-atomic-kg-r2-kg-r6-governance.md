@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E5:S01:T74 – Kanban Intake: Atomic KG-R2 & Semantic Placement KG-R6
+# Task E05:S01:T74 – Kanban Intake: Atomic KG-R2 & Semantic Placement KG-R6
 
-**Task ID:** E5:S01:T74  
+**Task ID:** E05:S01:T74  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Version Anchor:** v0.5.1.74+3 *(+1 FR-074 KG-R2/KG-R6; +2/+3 FR-073 board / epic/6 reconciliation)*  
@@ -59,14 +59,14 @@ N/A — this task **is** the filing anchor for **FR-074**.
 
 1. Apply policy/guide/skill edits.  
 2. **`git add`**; run validators.  
-3. **`RW E5:S01:T74`** (or **`RW -k`** if only doc-init placeholder—here expect **`+1`** after substantive doc merge).
+3. **`RW E05:S01:T74`** (or **`RW -k`** if only doc-init placeholder—here expect **`+1`** after substantive doc merge).
 
 ---
 
 ## Dependencies
 
 - Depends on: **FR-074** approval narrative.  
-- Related: **E5:S01:T73** / **FR-073** (intake plan board).
+- Related: **E05:S01:T73** / **FR-073** (intake plan board).
 
 ---
 

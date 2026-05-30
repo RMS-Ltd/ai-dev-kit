@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E4:S08:T05](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md)
+**Implementing Task:** [E04:S08:T05](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md)
 **GitHub Issue:** [#7](https://github.com/RMS-Ltd/ai-dev-kit/issues/7)
 
 ---
@@ -205,7 +205,7 @@ This feature request is based on comprehensive design decision analysis and UAT 
 2. **Template Task Installation (Two-Phase Migration):**
    - **Phase 1:** Migrate user tasks FIRST (preserve IDs)
    - **Phase 2:** Install template tasks AFTER (bump IDs - templates start after user tasks)
-   - Example: User has E1:S01:T01-T03 → Templates start at E1:S01:T04+
+   - Example: User has E01:S01:T01-T03 → Templates start at E01:S01:T04+
    - **Status:** NOT YET IMPLEMENTED - Requires follow-up task
 
 3. **Task Splitting Scenarios:**

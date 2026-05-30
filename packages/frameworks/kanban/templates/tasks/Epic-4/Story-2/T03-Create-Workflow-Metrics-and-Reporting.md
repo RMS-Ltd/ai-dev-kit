@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E4:S2:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E04:S02:T03`)
 
 **Full Task ID:** `E04:S02:T03`
 
@@ -34,8 +34,8 @@ Create workflow metrics and reporting for the {PROJECT_NAME} project. Develop me
 
 ## Input
 
-- Kanban workflow rules (from E4:S2:T01)
-- Workflow automation (from E4:S2:T02)
+- Kanban workflow rules (from E04:S02:T01)
+- Workflow automation (from E04:S02:T02)
 - Metrics requirements
 - Reporting requirements
 - ai-dev-kit workflow metrics (if adopting)
@@ -83,11 +83,11 @@ Create workflow metrics and reporting for the {PROJECT_NAME} project. Develop me
 ## Dependencies
 
 **Depends On:**
-- E4:S2:T01: Configure Kanban workflow rules (metrics track rule compliance)
-- E4:S2:T02: Set up workflow automation (metrics may use automation data)
+- E04:S02:T01: Configure Kanban workflow rules (metrics track rule compliance)
+- E04:S02:T02: Set up workflow automation (metrics may use automation data)
 
 **Blocks:**
-- E4:S2:T04: Document workflow configuration (documentation includes metrics)
+- E04:S02:T04: Document workflow configuration (documentation includes metrics)
 
 **Parallel Development Candidacy:** Blocked (depends on T01 and ideally T02)
 
@@ -96,9 +96,9 @@ Create workflow metrics and reporting for the {PROJECT_NAME} project. Develop me
 ## Related Work
 
 **Related Tasks:**
-- E4:S2:T01: Configure Kanban workflow rules (metrics track rule compliance)
-- E4:S2:T02: Set up workflow automation (metrics may use automation data)
-- E4:S2:T04: Document workflow configuration (documentation includes metrics)
+- E04:S02:T01: Configure Kanban workflow rules (metrics track rule compliance)
+- E04:S02:T02: Set up workflow automation (metrics may use automation data)
+- E04:S02:T04: Document workflow configuration (documentation includes metrics)
 
 **Related Stories:**
 - E4:S2: Kanban Workflow Configuration (this story)

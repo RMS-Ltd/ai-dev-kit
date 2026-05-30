@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E7:S06:T08 – Dependency and Tooling Audit
+# E07:S06:T08 – Dependency and Tooling Audit
 
-**Task ID:** E7:S06:T08  
+**Task ID:** E07:S06:T08  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Last updated:** 2026-03-25  
@@ -77,7 +77,7 @@ None
 | Workflow | Triggers | Notes |
 |----------|----------|--------|
 | [`fr-br-intake.yml.DISABLED`](../../../../../../.github/workflows/fr-br-intake.yml.DISABLED) | *(disabled)* Was issues-only; GitHub fired on push (BR-053). | Reference YAML only; not active. |
-| *(removed)* ~~`update-badges.yml`~~ | — | **E5:S01:T69 / FR-064:** workflow **deleted** (BYOB / `shields`); see [T69](../../Epic-5/Story-001-fr-repo/T69-shields-branch-private-repo-fr-064.md). |
+| *(removed)* ~~`update-badges.yml`~~ | — | **E05:S01:T69 / FR-064:** workflow **deleted** (BYOB / `shields`); see [T69](../../Epic-5/Story-001-fr-repo/T69-shields-branch-private-repo-fr-064.md). |
 
 ### Build / release scripts (spot review)
 

@@ -32,13 +32,13 @@ Establish a complete canonical set of epics for the Kanban framework package, pr
 
 ## Task Checklist
 
-- [x] **E4:S05:T01 – Add canonical epics to kanban framework package** ✅ COMPLETE (v0.4.5.1+1)
+- [x] **E04:S05:T01 – Add canonical epics to kanban framework package** ✅ COMPLETE (v0.4.5.1+1)
 
 ---
 
 ## Tasks
 
-### E4:S05:T01 – Add canonical epics to kanban framework package {#e4s05t01--add-canonical-epics-to-kanban-framework-package}
+### E04:S05:T01 – Add canonical epics to kanban framework package {#E04S05T01--add-canonical-epics-to-kanban-framework-package}
 
 **Status:** ✅ COMPLETE (v0.4.5.1+1)  
 

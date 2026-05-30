@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E21:S1:T3` (e.g., `E4:S11:T01`)
+**Format:** `E21:S01:T03` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E21:S01:T03`
 
@@ -71,10 +71,10 @@ Implement locale detection (browser/system locale) for the {PROJECT_NAME} projec
 ## Dependencies
 
 **Depends On:**
-- E21:S1:T02
+- E21:S01:T02
 
 **Blocks:**
-- E21:S1:T04
+- E21:S01:T04
 
 **Blocked By:**
 - [What blocks this task]

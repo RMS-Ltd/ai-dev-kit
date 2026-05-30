@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S2:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S02:T03`)
 
 **Full Task ID:** `E11:S02:T03`
 
@@ -34,8 +34,8 @@ Implement error handling for the {PROJECT_NAME} project. Build error handling me
 
 ## Input
 
-- API endpoints implementation (from E11:S2:T01)
-- Request validation (from E11:S2:T02)
+- API endpoints implementation (from E11:S02:T01)
+- Request validation (from E11:S02:T02)
 - Error handling requirements
 - Error response format requirements
 - ai-dev-kit error handling patterns (if adopting)
@@ -79,8 +79,8 @@ Implement error handling for the {PROJECT_NAME} project. Build error handling me
 ## Dependencies
 
 **Depends On:**
-- E11:S2:T01: Implement API endpoints (error handling applies to endpoints)
-- E11:S2:T02: Implement request validation (validation errors use error handling)
+- E11:S02:T01: Implement API endpoints (error handling applies to endpoints)
+- E11:S02:T02: Implement request validation (validation errors use error handling)
 
 **Blocks:**
 - None (error handling enhances existing features)
@@ -92,8 +92,8 @@ Implement error handling for the {PROJECT_NAME} project. Build error handling me
 ## Related Work
 
 **Related Tasks:**
-- E11:S2:T01: Implement API endpoints (error handling applies to endpoints)
-- E11:S2:T02: Implement request validation (validation errors use error handling)
+- E11:S02:T01: Implement API endpoints (error handling applies to endpoints)
+- E11:S02:T02: Implement request validation (validation errors use error handling)
 
 **Related Stories:**
 - E11:S2: API Implementation (this story)

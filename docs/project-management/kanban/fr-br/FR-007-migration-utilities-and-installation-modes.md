@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E4:S07:T02](../epics/Epic-4/Story-007-migration-support-and-installation-modes.md)
+**Implementing Task:** [E04:S07:T02](../epics/Epic-4/Story-007-migration-support-and-installation-modes.md)
 **GitHub Issue:** [#3](https://github.com/RMS-Ltd/ai-dev-kit/issues/3)
 
 ---

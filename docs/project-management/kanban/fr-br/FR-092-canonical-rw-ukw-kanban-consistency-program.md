@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Severity:** CRITICAL  
 **Status:** COMPLETE (Waves 0-8 delivered; v0.2.15.7+9 --art sign-off release cut; canonical anchor established)
 
-**Implementing Task:** [E2:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
-**IPP:** [IPP-E2S15T07](../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+**Implementing Task:** [E02:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
+**IPP:** [IPP-E02S15T07](../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 ---
 
@@ -31,7 +31,7 @@ Consolidate every open architectural, contract, implementation-drift, and enforc
 
 ### Outcome drift across "implemented" and "complete" work
 
-Despite multiple delivered tasks (T03/FR-089 IMPLEMENTED, T05/FR-090 Phase-4 evidence asserts AC1-AC6 satisfied, T04/BR-069 narrowed and signed off), the user-visible outcome — clean `kboard.md` / `fbuboard.md` after every `RW` — is still not produced. The most recent `RW E2:S15:T04 --art` performed a scoped metadata pass only; live boards continued to exhibit BR-069-class symptoms (multiplied tail tokens, stale row footers).
+Despite multiple delivered tasks (T03/FR-089 IMPLEMENTED, T05/FR-090 Phase-4 evidence asserts AC1-AC6 satisfied, T04/BR-069 narrowed and signed off), the user-visible outcome — clean `kboard.md` / `fbuboard.md` after every `RW` — is still not produced. The most recent `RW E02:S15:T04 --art` performed a scoped metadata pass only; live boards continued to exhibit BR-069-class symptoms (multiplied tail tokens, stale row footers).
 
 ### Root systemic cause
 
@@ -61,7 +61,7 @@ A single meta program that:
 
 ### Bucket B — Implementation-claimed but outcome-not-achieved (DRIFT)
 
-- **B1** [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) canonical row transform engine — [T05 Phase-4 evidence](../../../implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md) marks AC1-AC6 satisfied, yet live `fbuboard.md` rows still exhibit duplicated tail tokens
+- **B1** [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) canonical row transform engine — [T05 Phase-4 evidence](../../../implementation-cycles/IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090.md) marks AC1-AC6 satisfied, yet live `fbuboard.md` rows still exhibit duplicated tail tokens
 - **B2** [FR-089](FR-089-ipw-board-row-footer-duplication-validation-hardening.md) duplicate-footer multiplication hardening flagged `IMPLEMENTED v0.2.15.3+2` yet multiplication observed on live boards
 - **B3** [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) narrowed, but residual `Last modified` / `Task` / `FBU` repetition still present on live `kboard.md` / `fbuboard.md`
 - **B4** RW Step 7 routes only metadata-touched rows through `apply_canonical_row_transform_pipeline(...)`, never the full corpus
@@ -165,5 +165,5 @@ A single meta program that:
 - [FR-089 (predecessor + B2 drift)](FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [FR-076 (predecessor)](FR-076-ukw-fbuboard-scope-and-drift-concurrency.md)
 - [BR-042 (duplicate; close)](BR-042-ukw-agent-board-cleanup-failure.md)
-- [E2:S15:T07 (implementing task)](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
-- [IPP-E2S15T07](../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+- [E02:S15:T07 (implementing task)](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
+- [IPP-E02S15T07](../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)

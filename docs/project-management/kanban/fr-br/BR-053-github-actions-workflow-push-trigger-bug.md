@@ -13,7 +13,7 @@ labels: ["bug", "github-actions", "critical", "workflow-trigger", "push-events"]
 
 # Bug Report BR-053: GitHub Actions Workflow Push Trigger Bug
 
-**Implementing Task:** [E2:S11:T12](../epics/Epic-2/Story-011-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
+**Implementing Task:** [E02:S11:T12](../epics/Epic-2/Story-011-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
 
 ## **Bug Summary**
 Critical GitHub Actions bug where workflows are being triggered by push events despite having `on: issues:` only configuration. This affects multiple workflow files with different names and persists across complete workflow recreations.
@@ -269,6 +269,6 @@ jobs:
 
 **BR-057 relationship:** Invalid YAML could explain **failed parses** (“Invalid workflow file”), not **incorrect trigger types** while the workflow is accepted. Push scheduling with `on: issues` only remains reproducible with syntactically valid workflow definitions.
 
-**Repository action (E2:S11:T12):** The active workflow file was removed from GitHub’s workflow file set by renaming **`.github/workflows/fr-br-intake.yml`** to **[`.github/workflows/fr-br-intake.yml.DISABLED` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/fr-br-intake.yml.DISABLED)** (extension not `.yml`/`.yaml`). Canonical YAML is preserved in that file for a future re-enable. **Manual intake** is documented in [`FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md) and the intake skill.
+**Repository action (E02:S11:T12):** The active workflow file was removed from GitHub’s workflow file set by renaming **`.github/workflows/fr-br-intake.yml`** to **[`.github/workflows/fr-br-intake.yml.DISABLED` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/fr-br-intake.yml.DISABLED)** (extension not `.yml`/`.yaml`). Canonical YAML is preserved in that file for a future re-enable. **Manual intake** is documented in [`FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md) and the intake skill.
 
 **Acceptance criteria adjustment:** “GitHub Bug Fixed” is **not** satisfied by vendor confirmation; **evidence-based** closure is: no spurious workflow runs after a future re-enable test, or continued disablement with documented manual process.

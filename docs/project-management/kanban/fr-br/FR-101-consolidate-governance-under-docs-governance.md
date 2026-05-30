@@ -14,11 +14,11 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** IMPLEMENTED — closure **v0.7.1.11+8** (`RW E7:S01:T11`, `--art`; Waves 0–F)
+**Status:** IMPLEMENTED — closure **v0.7.1.11+8** (`RW E07:S01:T11`, `--art`; Waves 0–F)
 
-**Implementing Task:** [E7:S01:T11](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
+**Implementing Task:** [E07:S01:T11](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 
-**Related:** [FR-039](./FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [UXR-013](./UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md), [E7:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md), [FR-075](./FR-075-icw-durable-planning-artifacts-documentation-system.md), [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
+**Related:** [FR-039](./FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [UXR-013](./UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md), [E07:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md), [FR-075](./FR-075-icw-durable-planning-artifacts-documentation-system.md), [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
 
@@ -53,7 +53,7 @@ Governance policies for the maintainer book workspace are split across rituals, 
 ## Functional Requirements
 
 - [ ] **FR-101-F1 (Phase 0):** [GOVERNANCE-REHOUSING-INVENTORY.md](../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) complete with disposition table and **maintainer-approved** sign-off row before any `git mv`.
-- [ ] **FR-101-F2 (Phase 1):** Optional [IPP-E7S01T11](../../../implementation-cycles/) when phased moves + validation are needed (IPW before implementation).
+- [ ] **FR-101-F2 (Phase 1):** Optional [IPP-E07S01T11](../../../implementation-cycles/) when phased moves + validation are needed (IPW before implementation).
 - [ ] **FR-101-F3 (Phase 2):** Execute MOVE rows — target layout:
   - `docs/governance/kanban/` — book Kanban governance policy
   - `docs/governance/standards/` — versioning, changelog archival, specification/planning, IPW vs ICW matrix
@@ -75,7 +75,7 @@ Governance policies for the maintainer book workspace are split across rituals, 
 
 - [ ] **AC0:** [GOVERNANCE-REHOUSING-INVENTORY.md](../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) complete and **maintainer-approved** before any `git mv`.
 - [ ] **AC1:** FR-101-F1..F6 satisfied (or explicitly deferred in inventory with rationale).
-- [x] **AC2:** IPW package linked from task when execution proceeds (`IPP-E7S01T11-*.md`). *(Filed: [IPP-E7S01T11](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md).)*
+- [x] **AC2:** IPW package linked from task when execution proceeds (`IPP-E07S01T11-*.md`). *(Filed: [IPP-E07S01T11](../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md).)*
 - [ ] **AC3:** `docs/maintenance/book-repo-docs-scope.md` (create or update) lists `docs/governance/` as **KEEP**.
 - [ ] **AC4:** No broken governance links from active book surfaces (`fr-br/`, `kanban-board-guide.md`, `.cursorrules`, `.claude/commands/*`).
 
@@ -97,7 +97,7 @@ Governance policies for the maintainer book workspace are split across rituals, 
 | Phase | Output |
 |-------|--------|
 | **0 — Inventory** | [GOVERNANCE-REHOUSING-INVENTORY.md](../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) |
-| **1 — IPW** | Optional `IPP-E7S01T11-*.md` |
+| **1 — IPW** | Optional `IPP-E07S01T11-*.md` |
 | **2 — Execute** | `git mv` per inventory; stubs; sign-off table completed |
 | **3 — Verify** | Link/stub verification; docs scope updated |
 
@@ -109,4 +109,4 @@ Governance policies for the maintainer book workspace are split across rituals, 
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [docs/architecture/README.md](../../../architecture/README.md)
 - [packages/frameworks/kanban/policies/kanban-governance-policy.md](../../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) (framework SoT)
-- Task: [E7:S01:T11](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
+- Task: [E07:S01:T11](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)

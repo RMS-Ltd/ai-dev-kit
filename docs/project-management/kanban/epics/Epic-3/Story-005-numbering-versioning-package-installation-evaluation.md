@@ -20,12 +20,12 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [ ] **E3:S05:T01 – Enumerate supported installation paths for Numbering & Versioning** - TODO
-- [ ] **E3:S05:T02 – Validate fresh install steps for each path** - TODO
-- [ ] **E3:S05:T03 – Validate migration/update paths (if supported)** - TODO
-- [ ] **E3:S05:T04 – Verify post-install configuration and validation steps** - TODO
-- [ ] **E3:S05:T05 – Document failure modes and rollback guidance** - TODO
-- [ ] **E3:S05:T06 – Capture documentation gaps and improvements** - TODO
+- [ ] **E03:S05:T01 – Enumerate supported installation paths for Numbering & Versioning** - TODO
+- [ ] **E03:S05:T02 – Validate fresh install steps for each path** - TODO
+- [ ] **E03:S05:T03 – Validate migration/update paths (if supported)** - TODO
+- [ ] **E03:S05:T04 – Verify post-install configuration and validation steps** - TODO
+- [ ] **E03:S05:T05 – Document failure modes and rollback guidance** - TODO
+- [ ] **E03:S05:T06 – Capture documentation gaps and improvements** - TODO
 
 ---
 
@@ -43,37 +43,37 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 
 ## Tasks
 
-### E3:S05:T01 – Enumerate supported installation paths for Numbering & Versioning
+### E03:S05:T01 – Enumerate supported installation paths for Numbering & Versioning
 
 **Input:** Installation guides and scripts  
 **Deliverable:** Enumerated installation path list  
 **Approach:** Identify release, submodule, and CLI paths (as applicable).
 
-### E3:S05:T02 – Validate fresh install steps for each path
+### E03:S05:T02 – Validate fresh install steps for each path
 
 **Input:** Installation steps  
 **Deliverable:** Step-by-step validation log  
 **Approach:** Validate each step on a clean environment.
 
-### E3:S05:T03 – Validate migration/update paths (if supported)
+### E03:S05:T03 – Validate migration/update paths (if supported)
 
 **Input:** Migration/update guidance  
 **Deliverable:** Migration validation notes  
 **Approach:** Test upgrades and verify preserved behavior.
 
-### E3:S05:T04 – Verify post-install configuration and validation steps
+### E03:S05:T04 – Verify post-install configuration and validation steps
 
 **Input:** README and validation scripts  
 **Deliverable:** Post-install checklist and results  
 **Approach:** Verify configs, validators, and expected outputs.
 
-### E3:S05:T05 – Document failure modes and rollback guidance
+### E03:S05:T05 – Document failure modes and rollback guidance
 
 **Input:** Installer behavior and logs  
 **Deliverable:** Failure mode list and rollback steps  
 **Approach:** Capture errors, troubleshooting, and recovery paths.
 
-### E3:S05:T06 – Capture documentation gaps and improvements
+### E03:S05:T06 – Capture documentation gaps and improvements
 
 **Input:** Findings from T01–T05  
 **Deliverable:** Documentation gap list and remediation tasks  

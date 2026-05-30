@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E1:S1:T7` (e.g., `E4:S11:T01`)
+**Format:** `E01:S01:T07` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E01:S01:T07`
 
@@ -71,10 +71,10 @@ Establish coding standards and conventions for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E1:S1:T06
+- E01:S01:T06
 
 **Blocks:**
-- E1:S1:T08
+- E01:S01:T08
 
 **Blocked By:**
 - [What blocks this task]

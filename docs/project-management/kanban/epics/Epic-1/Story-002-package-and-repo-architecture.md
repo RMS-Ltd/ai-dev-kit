@@ -32,21 +32,21 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ## Task Checklist
 
-- [ ] **E1:S02:T13 – README / been-there template (FR-002)** - TODO (LOW) — [Task doc](Story-002-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](../../fr-br/FR-002-update-been-there-readme.md)
+- [ ] **E01:S02:T13 – README / been-there template (FR-002)** - TODO (LOW) — [Task doc](Story-002-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](../../fr-br/FR-002-update-been-there-readme.md)
 
-- [ ] **E1:S02:T14 – Dependency tracking for adopters (FR-003)** - TODO (LOW) — [Task doc](Story-002-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
+- [ ] **E01:S02:T14 – Dependency tracking for adopters (FR-003)** - TODO (LOW) — [Task doc](Story-002-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
 
-- [x] **E1:S02:T01 – Analyze current package structure and dependencies** ✅ COMPLETE (v0.1.2.1+1)
-- [x] **E1:S02:T02 – Document modularity principles and boundaries** ✅ COMPLETE (v0.1.2.2+1)
-- [x] **E1:S02:T03 – Create package dependency matrix** ✅ COMPLETE (v0.1.2.3+1)
-- [x] **E1:S02:T04 – Document consumption patterns for each framework** ✅ COMPLETE (v0.1.2.4+1)
-- [x] **E1:S02:T05 – Update package READMEs with modularity information** ✅ COMPLETE
+- [x] **E01:S02:T01 – Analyze current package structure and dependencies** ✅ COMPLETE (v0.1.2.1+1)
+- [x] **E01:S02:T02 – Document modularity principles and boundaries** ✅ COMPLETE (v0.1.2.2+1)
+- [x] **E01:S02:T03 – Create package dependency matrix** ✅ COMPLETE (v0.1.2.3+1)
+- [x] **E01:S02:T04 – Document consumption patterns for each framework** ✅ COMPLETE (v0.1.2.4+1)
+- [x] **E01:S02:T05 – Update package READMEs with modularity information** ✅ COMPLETE
 
 ---
 
 ## Tasks
 
-### E1:S02:T01 – Analyze current package structure and dependencies ✅ COMPLETE
+### E01:S02:T01 – Analyze current package structure and dependencies ✅ COMPLETE
 
 **Input:** Current repository structure, package READMEs, and framework documentation  
 **Deliverable:** Package structure analysis report ✅ **DELIVERED**  
@@ -77,7 +77,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ---
 
-### E1:S02:T02 – Document modularity principles and boundaries ✅ COMPLETE
+### E01:S02:T02 – Document modularity principles and boundaries ✅ COMPLETE
 
 **Input:** Analysis from T001  
 **Deliverable:** Modularity principles document ✅ **DELIVERED**  
@@ -112,7 +112,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ---
 
-### E1:S02:T03 – Create package dependency matrix ✅ COMPLETE
+### E01:S02:T03 – Create package dependency matrix ✅ COMPLETE
 
 **Input:** Analysis from T001, principles from T002  
 **Deliverable:** Dependency matrix document ✅ **DELIVERED**  
@@ -146,7 +146,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ---
 
-### E1:S02:T04 – Document consumption patterns for each framework ✅ COMPLETE
+### E01:S02:T04 – Document consumption patterns for each framework ✅ COMPLETE
 
 **Input:** Principles from T002, dependency matrix from T003  
 **Deliverable:** Consumption pattern guides for each framework ✅ **DELIVERED**  
@@ -180,7 +180,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ---
 
-### E1:S02:T05 – Update package READMEs with modularity information
+### E01:S02:T05 – Update package READMEs with modularity information
 
 **Input:** Consumption patterns from T004  
 **Deliverable:** Updated package READMEs  

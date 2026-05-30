@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E8:S2:T3` (e.g., `E4:S11:T01`)
+**Format:** `E08:S02:T03` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E08:S02:T03`
 
@@ -71,10 +71,10 @@ Set up code review automation for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E8:S2:T02
+- E08:S02:T02
 
 **Blocks:**
-- E8:S2:T04
+- E08:S02:T04
 
 **Blocked By:**
 - [What blocks this task]

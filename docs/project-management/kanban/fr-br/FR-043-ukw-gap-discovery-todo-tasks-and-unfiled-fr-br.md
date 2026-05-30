@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E2:S16:T14](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md)  
-**Historical registry:** E5:S01:T43
+**Implementing Task:** [E02:S16:T14](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md)  
+**Historical registry:** E05:S01:T43
 
 ---
 
@@ -83,7 +83,7 @@ Add **Step 2.5: Discover Board Gaps** to UKW (comprehensive run only).
 
 ## Related
 
-- **Task:** [T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md](../epics/Epic-5/Story-001-fr-repo/T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) (E5:S01:T43)
+- **Task:** [T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md](../epics/Epic-5/Story-001-fr-repo/T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) (E05:S01:T43)
 - **UKW:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - **UKW Agent Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - **FR-034:** UKW granular control (use case flags)

@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E21:S3:T7` (e.g., `E4:S11:T01`)
+**Format:** `E21:S03:T07` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E21:S03:T07`
 
@@ -71,10 +71,10 @@ Document cultural considerations and guidelines for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E21:S3:T06
+- E21:S03:T06
 
 **Blocks:**
-- E21:S3:T08
+- E21:S03:T08
 
 **Blocked By:**
 - [What blocks this task]

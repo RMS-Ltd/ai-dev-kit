@@ -16,13 +16,13 @@ housekeeping_policy: keep
 **Version:** v0.5.7.1+1  
 **Code:** E5S07
 
-**Note:** This story was renumbered from S06 to S07 as part of the repository story abstract space resolution (E9:S01:T08).
+**Note:** This story was renumbered from S06 to S07 as part of the repository story abstract space resolution (E09:S01:T08).
 
 ---
 
 ## Task Checklist
 
-- [x] **E5:S07:T01 – Implement Policy Documents Machine-Readable Salience Section (FR-022)** ✅ COMPLETE (v0.5.7.1+1)
+- [x] **E05:S07:T01 – Implement Policy Documents Machine-Readable Salience Section (FR-022)** ✅ COMPLETE (v0.5.7.1+1)
 
 ---
 
@@ -40,7 +40,7 @@ Enable AI agents to quickly parse and understand policy requirements without rea
 
 ## Tasks
 
-### E5:S07:T01 – Implement Policy Documents Machine-Readable Salience Section (FR-022)
+### E05:S07:T01 – Implement Policy Documents Machine-Readable Salience Section (FR-022)
 
 **Scope:** Define and implement a standardized "Policy Salience" section for policy documents that captures key rules, enforcement points, decision criteria, and scope in machine-readable format (YAML). Create schema, template, and update existing policy documents.
 

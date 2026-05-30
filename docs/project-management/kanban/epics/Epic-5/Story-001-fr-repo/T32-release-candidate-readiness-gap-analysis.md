@@ -12,15 +12,15 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Last updated:** 2026-03-31 (**RW -k** — **v0.5.1.32+0** release)  
 **Version:** v0.5.1.32+0  
-**Code:** E5S01T32
+**Code:** E05S01T32
 
 ---
 
 ## Task ID
 
-**Full Task ID:** `E5:S01:T32`
+**Full Task ID:** `E05:S01:T32`
 
-**Repository pattern:** FR-032 → E5:S01:T32 (abstract space **v0.5.1.32+0**)
+**Repository pattern:** FR-032 → E05:S01:T32 (abstract space **v0.5.1.32+0**)
 
 ---
 
@@ -49,7 +49,7 @@ Execute **FR-032**: gap analysis from **RC=0** (development) toward a defined **
 
 - [x] **AC1:** FR-032 header lists **Implementing Task** → this document.  
 - [ ] **AC2:** FR-032 **FR-032.1–032.8** requirements mapped to completed deliverables or explicit deferrals.  
-- [x] **AC3:** Traceability: Story-001 checklist + **`fr-br-uxr-board`** row include **| E5:S01:T32** for FR-032.
+- [x] **AC3:** Traceability: Story-001 checklist + **`fr-br-uxr-board`** row include **| E05:S01:T32** for FR-032.
 
 ---
 

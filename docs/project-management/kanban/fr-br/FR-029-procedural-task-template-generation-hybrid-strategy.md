@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Type:** Feature Request  
 **Status:** Proposed  
 
-**Implementing Task:** [E4:S15:T05](../epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md)
+**Implementing Task:** [E04:S15:T05](../epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md)
 **Priority:** HIGH  
 **Requested By:** ai-dev-kit maintainers  
 **Related Epic(s):** E4 (Kanban Framework), E6 (Framework Management and Maintenance)  
@@ -40,7 +40,7 @@ The Kanban framework currently includes:
 
 - `COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` – canonical Epics/Stories/Tasks definition.
 - Concrete epic and story templates under `templates/epics/` and `templates/stories/`.
-- A growing set of concrete **task templates** under `templates/tasks/` (E4:S06:T04).
+- A growing set of concrete **task templates** under `templates/tasks/` (E04:S06:T04).
 
 Challenges observed:
 

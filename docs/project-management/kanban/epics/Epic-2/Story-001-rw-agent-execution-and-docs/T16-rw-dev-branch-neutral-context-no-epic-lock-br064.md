@@ -6,16 +6,16 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T16 - RW dev branch neutral context (no epic lock) (BR-064)
+# Task E02:S01:T16 - RW dev branch neutral context (no epic lock) (BR-064)
 
-**Task ID:** E2:S01:T16  
+**Task ID:** E02:S01:T16  
 **Status:** COMPLETE  
 **Priority:** CRITICAL  
 **Created:** 2026-04-09  
 **Last updated:** 2026-04-09 (`v0.2.1.16+1`)  
 **Version:** v0.2.1.16+1  
 **Version Anchor:** ✅ COMPLETE (`v0.2.1.16+1`)  
-**Code:** E2S01T16
+**Code:** E02S01T16
 
 ---
 

@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S17:T06 – Capture Documentation Gaps and Improvements
+# E04:S17:T06 – Capture Documentation Gaps and Improvements
 
-**Task ID:** E4:S17:T06  
+**Task ID:** E04:S17:T06  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E4 – Kanban Framework  
@@ -461,11 +461,11 @@ Capture and consolidate all documentation gaps and improvements identified durin
 
 ## Related Work
 
-- **E4:S17:T01:** Enumerate supported installation paths (completed)
-- **E4:S17:T02:** Validate fresh install steps (completed)
-- **E4:S17:T03:** Validate migration/update paths (completed)
-- **E4:S17:T04:** Verify post-install configuration and validation steps (completed)
-- **E4:S17:T05:** Document failure modes and rollback guidance (completed)
+- **E04:S17:T01:** Enumerate supported installation paths (completed)
+- **E04:S17:T02:** Validate fresh install steps (completed)
+- **E04:S17:T03:** Validate migration/update paths (completed)
+- **E04:S17:T04:** Verify post-install configuration and validation steps (completed)
+- **E04:S17:T05:** Document failure modes and rollback guidance (completed)
 
 ---
 

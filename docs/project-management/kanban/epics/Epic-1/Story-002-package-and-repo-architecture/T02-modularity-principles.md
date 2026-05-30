@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Modularity Principles and Boundaries
 
-**Task:** E1:S02:T02 – Document modularity principles and boundaries  
+**Task:** E01:S02:T02 – Document modularity principles and boundaries  
 **Date:** 2025-12-02  
 **Status:** ✅ COMPLETE
 
@@ -585,5 +585,5 @@ This document establishes the foundation for:
 
 _Document completed: 2025-12-02_  
 _Task: E1:S02:T002_  
-_Next: E1:S02:T03 – Create package dependency matrix_
+_Next: E01:S02:T03 – Create package dependency matrix_
 

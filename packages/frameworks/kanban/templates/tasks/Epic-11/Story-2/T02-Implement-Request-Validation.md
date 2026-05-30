@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S2:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S02:T02`)
 
 **Full Task ID:** `E11:S02:T02`
 
@@ -34,8 +34,8 @@ Implement request validation for the {PROJECT_NAME} project. Build validation me
 
 ## Input
 
-- Request/response models (from E11:S1:T03)
-- API endpoints implementation (from E11:S2:T01)
+- Request/response models (from E11:S01:T03)
+- API endpoints implementation (from E11:S02:T01)
 - Validation requirements
 - Validation framework/tools
 - ai-dev-kit validation patterns (if adopting)
@@ -79,22 +79,22 @@ Implement request validation for the {PROJECT_NAME} project. Build validation me
 ## Dependencies
 
 **Depends On:**
-- E11:S1:T03: Design request/response models (validation uses request models)
-- E11:S2:T01: Implement API endpoints (validation applies to endpoints)
+- E11:S01:T03: Design request/response models (validation uses request models)
+- E11:S02:T01: Implement API endpoints (validation applies to endpoints)
 
 **Blocks:**
 - None (validation enhances existing features)
 
-**Parallel Development Candidacy:** Blocked (depends on T01 and E11:S1:T03)
+**Parallel Development Candidacy:** Blocked (depends on T01 and E11:S01:T03)
 
 ---
 
 ## Related Work
 
 **Related Tasks:**
-- E11:S1:T03: Design request/response models (validation uses request models)
-- E11:S2:T01: Implement API endpoints (validation applies to endpoints)
-- E11:S2:T03: Implement error handling (validation errors use error handling)
+- E11:S01:T03: Design request/response models (validation uses request models)
+- E11:S02:T01: Implement API endpoints (validation applies to endpoints)
+- E11:S02:T03: Implement error handling (validation errors use error handling)
 
 **Related Stories:**
 - E11:S2: API Implementation (this story)

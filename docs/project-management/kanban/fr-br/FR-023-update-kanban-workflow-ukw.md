@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E2:S16:T04](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+**Implementing Task:** [E02:S16:T04](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 
 ---
 
@@ -150,7 +150,7 @@ User wraps up a sprint/cycle and needs all kanban documentation synchronized to 
 **Assigned To:**
 - Epic: Epic 2 - Workflow Management Framework
 - Story: E2:S14 - Update Kanban Workflow (UKW)
-- Task: E2:S14:T01 - Implement Update Kanban Workflow (UKW)
+- Task: E02:S14:T01 - Implement Update Kanban Workflow (UKW)
 - Version: `0.2.14.1+0`
 
 **Kanban Links:**

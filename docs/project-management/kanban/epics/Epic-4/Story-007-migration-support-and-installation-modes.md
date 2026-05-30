@@ -26,7 +26,7 @@ Provide safe adoption paths for projects with pre-existing Kanban/Sprint/Issue s
 
 ## Tasks
 
-- [x] **E4:S07:T01 – BR-006: Detection/analysis utilities for existing structures** ✅ COMPLETE (v0.4.7.1+1)
+- [x] **E04:S07:T01 – BR-006: Detection/analysis utilities for existing structures** ✅ COMPLETE (v0.4.7.1+1)
   - Implemented detection utility (`detect_existing_structure.py`) - scans for epic directories, detects epic/story documents, identifies tasks, generates detection report
   - Implemented analysis utility (`analyze_structure.py`) - maps existing items to E/S/T format, identifies conflicts and gaps, generates migration plan
   - Created scripts README with usage documentation
@@ -35,7 +35,7 @@ Provide safe adoption paths for projects with pre-existing Kanban/Sprint/Issue s
   - **Acceptance:** ✅ Criteria 1-4 of BR-006 satisfied and documented.
 
 
-- [x] **E4:S07:T02 – FR-007: Migration utilities and installation modes** ✅ COMPLETE (v0.4.7.2+1)
+- [x] **E04:S07:T02 – FR-007: Migration utilities and installation modes** ✅ COMPLETE (v0.4.7.2+1)
   - Implemented migration utility (`migrate_structure.py`) - creates backups, migrates epics/stories/tasks, preserves forensic markers, supports all installation modes
   - Implemented installation script (`install_kanban_framework.py`) - interactive mode selection, integrates detection/analysis/migration, supports Fresh/Migration/Update/Hybrid modes
   - Updated scripts README with migration utility documentation and integrated workflow
@@ -45,7 +45,7 @@ Provide safe adoption paths for projects with pre-existing Kanban/Sprint/Issue s
   - **Acceptance:** ✅ AC-1..AC-8 of FR-007 satisfied and documented.
 
 
-- [x] **E4:S07:T03 – Documentation and guides update** ✅ COMPLETE (v0.4.7.3+1)
+- [x] **E04:S07:T03 – Documentation and guides update** ✅ COMPLETE (v0.4.7.3+1)
   - Updated `packages/frameworks/kanban/README.md` with migration support section, installation options (interactive vs manual), migration workflow documentation, and package contents update
   - Added migration support section covering pre-existing Kanban, Sprint-based systems, issue trackers, and older framework versions
   - Updated Quick Start section with Option 1 (Interactive Installation) and Option 2 (Manual Installation)

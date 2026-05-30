@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E2:S06:T01](../epics/Epic-2/Story-006-package-uninstall-and-recovery.md)
+**Implementing Task:** [E02:S06:T01](../epics/Epic-2/Story-006-package-uninstall-and-recovery.md)
 **GitHub Issue:** [#5](https://github.com/RMS-Ltd/ai-dev-kit/issues/5)
 
 ---

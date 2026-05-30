@@ -118,10 +118,10 @@ Verify that CMW files are included in package builds:
 
 ## Related Work
 
-- **Task:** E6:S06:T11 - Changelog Management and Archival Workflow (CMW implementation, COMPLETE)
+- **Task:** E06:S06:T11 - Changelog Management and Archival Workflow (CMW implementation, COMPLETE)
 - **Feature Request:** FR-025 - Changelog Management and Archival Workflow (source FR for CMW)
 - **Feature Request:** FR-026 - Canonical Perpetual Task for Changelog Maintenance (CMW perpetual task pattern)
-- **Task:** E6:S06:T13 - Canonical CMW Perpetual Task (canonicalization, COMPLETE)
+- **Task:** E06:S06:T13 - Canonical CMW Perpetual Task (canonicalization, COMPLETE)
 - **Epic:** 6 - Framework Management and Maintenance
 - **Story:** 6 - ADK Implementation Analysis and Package Management
 

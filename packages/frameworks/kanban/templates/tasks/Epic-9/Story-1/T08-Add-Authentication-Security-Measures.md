@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E9:S1:T8` (e.g., `E4:S11:T01`)
+**Format:** `E09:S01:T08` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E09:S01:T08`
 
@@ -71,10 +71,10 @@ Add authentication security measures for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E9:S1:T07
+- E09:S01:T07
 
 **Blocks:**
-- E9:S1:T09
+- E09:S01:T09
 
 **Blocked By:**
 - [What blocks this task]

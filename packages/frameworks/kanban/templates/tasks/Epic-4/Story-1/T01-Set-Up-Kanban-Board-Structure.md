@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E4:S1:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E04:S01:T01`)
 
 **Full Task ID:** `E04:S01:T01`
 
@@ -85,9 +85,9 @@ Set up Kanban board structure for the {PROJECT_NAME} project. Create the foundat
 - Kanban board tool/platform selection (if applicable)
 
 **Blocks:**
-- E4:S1:T02: Configure Kanban columns and workflows (configuration uses board structure)
-- E4:S1:T03: Set up Kanban card templates (templates use board structure)
-- E4:S1:T04: Document Kanban board usage (documentation references board structure)
+- E04:S01:T02: Configure Kanban columns and workflows (configuration uses board structure)
+- E04:S01:T03: Set up Kanban card templates (templates use board structure)
+- E04:S01:T04: Document Kanban board usage (documentation references board structure)
 
 **Parallel Development Candidacy:** Safe (can proceed independently)
 
@@ -96,9 +96,9 @@ Set up Kanban board structure for the {PROJECT_NAME} project. Create the foundat
 ## Related Work
 
 **Related Tasks:**
-- E4:S1:T02: Configure Kanban columns and workflows (configuration uses board structure)
-- E4:S1:T03: Set up Kanban card templates (templates use board structure)
-- E4:S1:T04: Document Kanban board usage (documentation references board structure)
+- E04:S01:T02: Configure Kanban columns and workflows (configuration uses board structure)
+- E04:S01:T03: Set up Kanban card templates (templates use board structure)
+- E04:S01:T04: Document Kanban board usage (documentation references board structure)
 
 **Related Stories:**
 - E4:S1: Kanban Board Setup (this story)

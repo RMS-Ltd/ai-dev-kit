@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E7:S3:T4` (e.g., `E4:S11:T01`)
+**Format:** `E07:S03:T04` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E07:S03:T04`
 
@@ -71,10 +71,10 @@ Create feedback analysis workflow for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E7:S3:T03
+- E07:S03:T03
 
 **Blocks:**
-- E7:S3:T05
+- E07:S03:T05
 
 **Blocked By:**
 - [What blocks this task]

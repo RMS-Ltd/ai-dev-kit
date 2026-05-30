@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E1:S1:T2` (e.g., `E4:S11:T01`)
+**Format:** `E01:S01:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E01:S01:T02`
 
@@ -71,10 +71,10 @@ Set up version control and repository configuration for the {PROJECT_NAME} proje
 ## Dependencies
 
 **Depends On:**
-- E1:S1:T01
+- E01:S01:T01
 
 **Blocks:**
-- E1:S1:T03
+- E01:S01:T03
 
 **Blocked By:**
 - [What blocks this task]

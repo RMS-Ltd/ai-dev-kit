@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S2:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S02:T01`)
 
 **Full Task ID:** `E11:S02:T01`
 
@@ -34,9 +34,9 @@ Implement API endpoints for the {PROJECT_NAME} project. Build the API endpoint i
 
 ## Input
 
-- API architecture (from E11:S1:T01)
-- API endpoints definition (from E11:S1:T02)
-- Request/response models (from E11:S1:T03)
+- API architecture (from E11:S01:T01)
+- API endpoints definition (from E11:S01:T02)
+- Request/response models (from E11:S01:T03)
 - API framework and tools
 - Implementation requirements
 - ai-dev-kit API implementation patterns (if adopting)
@@ -82,13 +82,13 @@ Implement API endpoints for the {PROJECT_NAME} project. Build the API endpoint i
 ## Dependencies
 
 **Depends On:**
-- E11:S1:T01: Design API architecture (implementation uses architecture)
-- E11:S1:T02: Define API endpoints (implementation uses endpoint definitions)
-- E11:S1:T03: Design request/response models (implementation uses models)
+- E11:S01:T01: Design API architecture (implementation uses architecture)
+- E11:S01:T02: Define API endpoints (implementation uses endpoint definitions)
+- E11:S01:T03: Design request/response models (implementation uses models)
 
 **Blocks:**
-- E11:S2:T02: Implement request validation (validation applies to endpoints)
-- E11:S2:T03: Implement error handling (error handling applies to endpoints)
+- E11:S02:T02: Implement request validation (validation applies to endpoints)
+- E11:S02:T03: Implement error handling (error handling applies to endpoints)
 
 **Parallel Development Candidacy:** Blocked (depends on E11:S1 tasks)
 
@@ -97,9 +97,9 @@ Implement API endpoints for the {PROJECT_NAME} project. Build the API endpoint i
 ## Related Work
 
 **Related Tasks:**
-- E11:S2:T02: Implement request validation (validation applies to endpoints)
-- E11:S2:T03: Implement error handling (error handling applies to endpoints)
-- E11:S2:T04: Add authentication/authorization (auth applies to endpoints)
+- E11:S02:T02: Implement request validation (validation applies to endpoints)
+- E11:S02:T03: Implement error handling (error handling applies to endpoints)
+- E11:S02:T04: Add authentication/authorization (auth applies to endpoints)
 
 **Related Stories:**
 - E11:S2: API Implementation (this story)

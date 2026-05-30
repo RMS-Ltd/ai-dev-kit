@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E13:S3:T3` (e.g., `E4:S11:T01`)
+**Format:** `E13:S03:T03` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E13:S03:T03`
 
@@ -71,10 +71,10 @@ Add test reporting and notifications for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E13:S3:T02
+- E13:S03:T02
 
 **Blocks:**
-- E13:S3:T04
+- E13:S03:T04
 
 **Blocked By:**
 - [What blocks this task]

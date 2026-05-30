@@ -16,15 +16,15 @@ housekeeping_policy: keep
 **Version:** v0.2.1.22+1  
 **Code:** BR-075  
 
-**Implementing Task:** [E2:S01:T22](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md)
+**Implementing Task:** [E02:S01:T22](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md)
 
 ---
 
 ## Problem Statement
 
-When Release Workflow (RW) targets a **perpetual maintenance** task (for example **E2:S16:T04** UKW/kanban lane, **E2:S16:T03** workflow maintenance, **E6:S06:T101** UKW wiring in other projects), operators expect each release to advance **`VERSION_BUILD`** in the configured **`version_file`** (`rw-config.yaml` → `src/ai_dev_kit/version.py` in this repo) while keeping **E/S/T** anchored on the perpetual task.
+When Release Workflow (RW) targets a **perpetual maintenance** task (for example **E02:S16:T04** UKW/kanban lane, **E02:S16:T03** workflow maintenance, **E06:S06:T101** UKW wiring in other projects), operators expect each release to advance **`VERSION_BUILD`** in the configured **`version_file`** (`rw-config.yaml` → `src/ai_dev_kit/version.py` in this repo) while keeping **E/S/T** anchored on the perpetual task.
 
-Observed failure mode (2026-05-26, `RW -k E2:S16:T04 --art`): kanban surfaces and release narrative advanced to **`v0.2.16.4+12`** while **`version.py` appeared unchanged** at **`+11`** during the run—suggesting Step 7 / `kanban_init` board updates ran **before** or **without** a reliable Step 2 version-file write. The eventual commit **`b56f521e0`** did include **`VERSION_BUILD = 12`**, so this may be **ordering/visibility** as well as **skip** risk; both undermine trust in perpetual-task RW.
+Observed failure mode (2026-05-26, `RW -k E02:S16:T04 --art`): kanban surfaces and release narrative advanced to **`v0.2.16.4+12`** while **`version.py` appeared unchanged** at **`+11`** during the run—suggesting Step 7 / `kanban_init` board updates ran **before** or **without** a reliable Step 2 version-file write. The eventual commit **`b56f521e0`** did include **`VERSION_BUILD = 12`**, so this may be **ordering/visibility** as well as **skip** risk; both undermine trust in perpetual-task RW.
 
 Related hazard: agent guidance still references legacy **`src/fynd_deals/version.py`** in `.cursor/skills/version-bump/SKILL.md`, increasing wrong-file edits.
 
@@ -43,7 +43,7 @@ For every RW (including **`RW -k`**) against a perpetual task:
 
 ## Observed Behavior
 
-- User invoked perpetual kanban RW: `RW -k E2:S16:T04 --art`.
+- User invoked perpetual kanban RW: `RW -k E02:S16:T04 --art`.
 - Board metadata and changelogs referenced **`v0.2.16.4+12`** while **`version.py` still showed `VERSION_BUILD = 11`** at inspection time during the session.
 - Perpetual tasks are **never `[x] … COMPLETE`** on Story checklists; RW relies on **`version_task` hint** and **`--art`** (see `validate_version_bump.py` `find_completed_task`). That path does not currently **require** a persisted BUILD increment in `version_file` before kanban scripts run.
 
@@ -59,8 +59,8 @@ For every RW (including **`RW -k`**) against a perpetual task:
 
 ## Reproduction (suspected)
 
-1. Start from perpetual anchor with `version.py` at `0.2.16.4+11` (E2:S16:T04).
-2. Run `RW -k E2:S16:T04 --art` with an agent that prioritizes Step 7 / `update_kanban_docs.py --mode kanban_init` early.
+1. Start from perpetual anchor with `version.py` at `0.2.16.4+11` (E02:S16:T04).
+2. Run `RW -k E02:S16:T04 --art` with an agent that prioritizes Step 7 / `update_kanban_docs.py --mode kanban_init` early.
 3. Inspect `version_file` **before commit** — BUILD may still be **11** while `kboard.md` / `fbuboard.md` already show **+12**.
 4. Optional: follow `.cursor/skills/version-bump/SKILL.md` literally → wrong `src/fynd_deals/version.py` path.
 
@@ -81,7 +81,7 @@ For every RW (including **`RW -k`**) against a perpetual task:
 - [BR-063](BR-063-rw-k-task-attribution-drift-between-requested-task-and-version-anchor.md) — task anchor vs requested id (`--art`)
 - [BR-067](BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) — doc-only BUILD policy
 - [BR-061](BR-061-rw-explicit-task-id-requires-manual-version-alignment.md) — explicit task / version alignment
-- Perpetual UKW task: [E2:S16:T04](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- Perpetual UKW task: [E02:S16:T04](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` — Step 2 UKW/CMW attribution
 
 ---

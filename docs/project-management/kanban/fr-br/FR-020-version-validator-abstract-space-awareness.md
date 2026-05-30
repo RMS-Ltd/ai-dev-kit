@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E2:S10:T06](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
+**Implementing Task:** [E02:S10:T06](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
 
 ---
 
@@ -41,7 +41,7 @@ An enhancement to `validate_version_bump.py` that:
 - Validator accepts `+0` when:
   - An E/S/T doc (Epic/Story/Task) is being committed for the first time
   - The commit is docs-only (no code changes)
-  - The version matches the E/S/T being created (e.g., `0.2.11.0+0` for E2:S11:T00)
+  - The version matches the E/S/T being created (e.g., `0.2.11.0+0` for E02:S11:T00)
 
 - Validator rejects `+0` when:
   - Non-doc changes are present in the commit
@@ -53,7 +53,7 @@ An enhancement to `validate_version_bump.py` that:
 
 **Current Behavior:**
 - Validator expects BUILD >= 1 for all version bumps
-- Validator fails when encountering `+0` builds (as seen in RW for E2:S11:T00)
+- Validator fails when encountering `+0` builds (as seen in RW for E02:S11:T00)
 - No awareness of abstract space concept or doc-init builds
 - No validation of docs-only requirement for `+0` builds
 - No detection of first-time E/S/T doc commits
@@ -132,7 +132,7 @@ This feature is needed:
 
 **Primary Use Case:**
 1. Developer creates new Story doc: `Epic-2/Story-011-intake-workflow-automation.md`
-2. Developer runs RW for E2:S11:T00 (Story Creation)
+2. Developer runs RW for E02:S11:T00 (Story Creation)
 3. RW Step 2 bumps version to `0.2.11.0+0` (abstract space)
 4. RW Step 8 runs validator: `validate_version_bump.py`
 5. Validator detects:
@@ -174,23 +174,23 @@ This feature is needed:
 **Blocked By:**
 - **FR-016:** Kanban Granularity & Discrete Task Docs (blocks E4:S11 and E2:S09, which are prerequisites)
 - **E4:S11:** Kanban-specific work (policy, templates) - must complete before E2:S09
-- **E2:S09:** RW integration work (Task doc presence) - must complete before E2:S10:T01
-- **E2:S10:T01:** RW Step 1 Doc-Init Path - must complete before E2:S10:T02
-- **E2:S10:T02:** Doc-Init Validation (Docs-Only Check) - must complete before E2:S10:T06
+- **E2:S09:** RW integration work (Task doc presence) - must complete before E02:S10:T01
+- **E02:S10:T01:** RW Step 1 Doc-Init Path - must complete before E02:S10:T02
+- **E02:S10:T02:** Doc-Init Validation (Docs-Only Check) - must complete before E02:S10:T06
 - **FR-017:** Versioning Policy Hardening — Doc-Init Build (+0) (abstract space concept)
 - **FR-018:** Abstract Space for Zero-Numbered E/S/T Docs (abstract space definition)
 
 **Dependency Chain:**
-FR-016 → E4:S11 → E2:S09 → E2:S10:T01 → E2:S10:T02 → E2:S10:T06 (this task)
+FR-016 → E4:S11 → E2:S09 → E02:S10:T01 → E02:S10:T02 → E02:S10:T06 (this task)
 
 **Related Work:**
 - **FR-016:** Kanban Granularity & Discrete Task Docs (3-Tier Structure) (blocks E4:S11 and E2:S09)
 - **FR-017:** Versioning Policy Hardening — Doc-Init Build (+0) (defines abstract space concept)
 - **FR-018:** Abstract Space for Zero-Numbered E/S/T Docs (defines abstract space policy)
 - **E2:S10:** Doc-Init Build (+0) for New E/S/T (implementation of abstract spaces)
-- **E2:S10:T01:** RW Step 1 Doc-Init Path (prerequisite for T02)
-- **E2:S10:T02:** Implement Doc-Init Validation (Docs-Only Check) (prerequisite for T06)
-- **E2:S10:T06:** Update Version Validator for Abstract Space Awareness (this task)
+- **E02:S10:T01:** RW Step 1 Doc-Init Path (prerequisite for T02)
+- **E02:S10:T02:** Implement Doc-Init Validation (Docs-Only Check) (prerequisite for T06)
+- **E02:S10:T06:** Update Version Validator for Abstract Space Awareness (this task)
 - **E2:S09:** Kanban Granularity & Discrete Task Docs (RW Integration) (prerequisite for T01)
 - **E4:S11:** Kanban Granularity & Discrete Task Docs (Kanban Framework) (prerequisite for E2:S09)
 
@@ -227,7 +227,7 @@ FR-016 → E4:S11 → E2:S09 → E2:S10:T01 → E2:S10:T02 → E2:S10:T06 (this 
 - **Traceability:** Proper validation ensures forensic traceability integrity
 
 **Why This Should Be Implemented:**
-- Current validator fails on valid `+0` abstract space builds (as seen in E2:S11:T00 RW)
+- Current validator fails on valid `+0` abstract space builds (as seen in E02:S11:T00 RW)
 - No enforcement of docs-only requirement for `+0` builds
 - No detection of first-time E/S/T doc commits
 - Manual workaround needed (acknowledge validator error and proceed)
@@ -240,7 +240,7 @@ FR-016 → E4:S11 → E2:S09 → E2:S10:T01 → E2:S10:T02 → E2:S10:T06 (this 
 1. Validator must detect:
    - New E/S/T doc files (first-time commit)
    - Docs-only commits (no code changes in git diff)
-   - Correct version matching (e.g., `0.2.11.0+0` for E2:S11:T00)
+   - Correct version matching (e.g., `0.2.11.0+0` for E02:S11:T00)
 2. Integration points:
    - RW Step 1 doc-init detection (if available)
    - Git diff analysis for docs-only check

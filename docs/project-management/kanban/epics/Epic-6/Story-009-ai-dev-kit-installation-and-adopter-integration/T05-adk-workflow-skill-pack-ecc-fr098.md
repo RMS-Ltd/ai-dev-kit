@@ -8,26 +8,26 @@ housekeeping_policy: keep
 
 # Epic 6, Story 9, Task 5: ADK workflow skill pack for ECC harness layer (FR-098 Phase 1)
 
-**Task ID:** E6:S09:T05  
+**Task ID:** E06:S09:T05  
 **Status:** COMPLETE (**v0.6.9.5+4** — `dev` consolidation; Phase 1 skill pack **v0.6.9.5+2** on `main`)
 **Priority:** MEDIUM  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (**v0.6.9.5+4** — consolidate Phase 1 from `main` onto `dev`)
-**Code:** E6S09T05
+**Code:** E06S09T05
 
 ## Version Anchor
 
 **Version:** v0.6.9.5+4
 
 **Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
-**Prerequisite:** [E6:S09:T04 — Phase 0 evaluation](./T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
+**Prerequisite:** [E06:S09:T04 — Phase 0 evaluation](./T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
 
 ---
 
 ## Summary
 
-Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, `adk-intake-fr-br-uxr`, `adk-version-bump`) under `packages/frameworks/workflow mgt/skills/`, plus `validate_adk_ecc_skill_pack.py`, pytest tests, and [`IPP-E6S09T05`](../../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md).
+Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, `adk-intake-fr-br-uxr`, `adk-version-bump`) under `packages/frameworks/workflow mgt/skills/`, plus `validate_adk_ecc_skill_pack.py`, pytest tests, and [`IPP-E06S09T05`](../../../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md).
 
 ---
 
@@ -59,7 +59,7 @@ Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk
 
 ## Input
 
-- [IPP (planning package)](../../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
+- [IPP (planning package)](../../../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md)
 
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
@@ -69,7 +69,7 @@ Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk
 
 ## Release / SemVer (inherits FR-098)
 
-Ship this task via **`RW E6:S09:T05`** when implementation is complete. Under `task_touch` mode:
+Ship this task via **`RW E06:S09:T05`** when implementation is complete. Under `task_touch` mode:
 
 - Expect **PATCH-only** SemVer advance (e.g. `0.4.797+1` → next PATCH on tag finalize).
 - **Do not** request or plan a MINOR bump for Phase 1 skill pack alone.

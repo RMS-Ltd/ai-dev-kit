@@ -6,22 +6,22 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 5, Story 9, Task 10: Strict broken-anchor checking (post–E5:S09:T08)
+# Epic 5, Story 9, Task 10: Strict broken-anchor checking (post–E05:S09:T08)
 
-**Task ID:** E5:S09:T10  
+**Task ID:** E05:S09:T10  
 **Status:** ✅ COMPLETE  
 **Priority:** LOW  
 **Estimated Effort:** Medium (corpus sweep; anchor slug alignment across MDX)  
 **Created:** 2026-04-01  
-**Last updated:** 2026-04-01 — **`v0.5.9.10+2`** implementation (**RW E5:S09:T10**); **FR-067 FU-3** closed  
-**Code:** E5S09T10  
+**Last updated:** 2026-04-01 — **`v0.5.9.10+2`** implementation (**RW E05:S09:T10**); **FR-067 FU-3** closed  
+**Code:** E05S09T10  
 **Version anchor:** ✅ COMPLETE (v0.5.9.10+2)
 
 ---
 
 ## Task ID
 
-**Full Task ID:** `E5:S09:T10`
+**Full Task ID:** `E05:S09:T10`
 
 ---
 
@@ -30,7 +30,7 @@ housekeeping_policy: keep
 - Align published docs with **zero false `#heading` / cross-doc anchor** references (or justified exceptions).
 - Make **CI / `npm run build`** fail when a new broken anchor is introduced (**strict** mode), mirroring T08 for hrefs.
 
-**Origin:** **[E5:S09:T08](./T08-docusaurus-strict-broken-links-post-fr067.md)** enabled **`onBrokenLinks` / `onBrokenMarkdownLinks` → `throw`**. Docusaurus still **warned** on **broken in-page anchors** (`#fragment`) until **`onBrokenAnchors`** was set to **`throw`** (**FR-067 FU-3**).
+**Origin:** **[E05:S09:T08](./T08-docusaurus-strict-broken-links-post-fr067.md)** enabled **`onBrokenLinks` / `onBrokenMarkdownLinks` → `throw`**. Docusaurus still **warned** on **broken in-page anchors** (`#fragment`) until **`onBrokenAnchors`** was set to **`throw`** (**FR-067 FU-3**).
 
 ---
 
@@ -52,7 +52,7 @@ Build verification: `cd portal && npm run build` exits **0** with `onBrokenAncho
 | `workflow-flaws-reference-guide` | Explicit `{#wf-00x-…}` IDs on **WF-001…WF-004** section headings |
 | Framework dependency guides | Stable IDs for template/selective/monorepo/migration/gradual sections; **Uninstall Issues** in troubleshooting; **`## Uninstalling frameworks`** anchor in installation guide |
 | `building-persistent-knowledge` | SoP heading as `##` + `{#standard-operating-procedure-sop-…}` |
-| UC-D-* / **BR-002** → Story-001 | `{#e2s01t06--fix-changelog-validator-ordering-bug--reopened}` on T06 heading |
+| UC-D-* / **BR-002** → Story-001 | `{#E02S01T06--fix-changelog-validator-ordering-bug--reopened}` on T06 heading |
 | `kanban-completed` → Epic stories | Explicit task heading IDs on E4/E8/E10/E11 story docs |
 | This task doc | Replaced invalid relative link to `tests/` (out of publish tree) with repo-path text |
 
@@ -78,5 +78,5 @@ Build verification: `cd portal && npm run build` exits **0** with `onBrokenAncho
 
 ## Related
 
-- **E5:S09:T08** — strict **link** checking.
+- **E05:S09:T08** — strict **link** checking.
 - **FR-058** — markdown hygiene workflow.

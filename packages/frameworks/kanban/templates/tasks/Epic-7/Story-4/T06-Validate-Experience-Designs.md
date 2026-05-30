@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S4:T6`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S04:T06`)
 
 **Full Task ID:** `E07:S04:T06`
 
@@ -34,9 +34,9 @@ Validate experience designs for the {PROJECT_NAME} project. Test and validate ex
 
 ## Input
 
-- User experience flows (from E7:S4:T03)
-- Experience design prototypes (from E7:S4:T04)
-- User personas (from E7:S1:T06, if available)
+- User experience flows (from E07:S04:T03)
+- Experience design prototypes (from E07:S04:T04)
+- User personas (from E07:S01:T06, if available)
 - Validation methodology and criteria
 - Testing requirements and protocols
 - ai-dev-kit UXR validation practices (if adopting)
@@ -85,11 +85,11 @@ Validate experience designs for the {PROJECT_NAME} project. Test and validate ex
 ## Dependencies
 
 **Depends On:**
-- E7:S4:T03: Design user experience flows (validation uses flows)
-- E7:S4:T04: Create experience design prototypes (validation uses prototypes)
+- E07:S04:T03: Design user experience flows (validation uses flows)
+- E07:S04:T04: Create experience design prototypes (validation uses prototypes)
 
 **Blocks:**
-- E7:S4:T07: Document experience design specifications (specifications include validation results)
+- E07:S04:T07: Document experience design specifications (specifications include validation results)
 
 **Parallel Development Candidacy:** Blocked (depends on T03 and T04)
 
@@ -98,9 +98,9 @@ Validate experience designs for the {PROJECT_NAME} project. Test and validate ex
 ## Related Work
 
 **Related Tasks:**
-- E7:S4:T03: Design user experience flows (validation uses flows)
-- E7:S4:T04: Create experience design prototypes (validation uses prototypes)
-- E7:S4:T07: Document experience design specifications (specifications include validation results)
+- E07:S04:T03: Design user experience flows (validation uses flows)
+- E07:S04:T04: Create experience design prototypes (validation uses prototypes)
+- E07:S04:T07: Document experience design specifications (specifications include validation results)
 
 **Related Stories:**
 - E7:S4: User Journey Mapping and Experience Design (this story)

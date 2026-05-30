@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S3:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S03:T03`)
 
 **Full Task ID:** `E12:S03:T03`
 
@@ -34,8 +34,8 @@ Implement state management for the {PROJECT_NAME} project. Set up and configure 
 
 ## Input
 
-- UI framework (from E12:S1:T01)
-- Component architecture (from E12:S2:T01)
+- UI framework (from E12:S01:T01)
+- Component architecture (from E12:S02:T01)
 - State management requirements
 - State management tool preferences
 - ai-dev-kit state management patterns (if adopting)
@@ -83,20 +83,20 @@ Implement state management for the {PROJECT_NAME} project. Set up and configure 
 ## Dependencies
 
 **Depends On:**
-- UI framework (from E12:S1:T01)
-- Component architecture (from E12:S2:T01)
+- UI framework (from E12:S01:T01)
+- Component architecture (from E12:S02:T01)
 
 **Blocks:**
-- E12:S3:T02: Implement feature pages (feature pages use state management)
+- E12:S03:T02: Implement feature pages (feature pages use state management)
 
-**Parallel Development Candidacy:** Blocked (depends on E12:S1:T01 and E12:S2:T01)
+**Parallel Development Candidacy:** Blocked (depends on E12:S01:T01 and E12:S02:T01)
 
 ---
 
 ## Related Work
 
 **Related Tasks:**
-- E12:S3:T02: Implement feature pages (feature pages use state management)
+- E12:S03:T02: Implement feature pages (feature pages use state management)
 
 **Related Stories:**
 - E12:S3: User Interface Implementation (this story)

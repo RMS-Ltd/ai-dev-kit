@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E13:S3:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E13:S03:T02`)
 
 **Full Task ID:** `E13:S03:T02`
 
@@ -34,7 +34,7 @@ Integrate tests with CI/CD for the {PROJECT_NAME} project. Configure CI/CD pipel
 
 ## Input
 
-- Test automation (from E13:S3:T01)
+- Test automation (from E13:S03:T01)
 - CI/CD pipeline setup (from E14:S1 or E23:S1)
 - CI/CD integration requirements
 - Test result reporting requirements
@@ -79,7 +79,7 @@ Integrate tests with CI/CD for the {PROJECT_NAME} project. Configure CI/CD pipel
 ## Dependencies
 
 **Depends On:**
-- E13:S3:T01: Set up test automation (CI/CD integration uses test automation)
+- E13:S03:T01: Set up test automation (CI/CD integration uses test automation)
 - CI/CD pipeline setup (from E14:S1 or E23:S1 - optional, beneficial)
 
 **Blocks:**
@@ -92,7 +92,7 @@ Integrate tests with CI/CD for the {PROJECT_NAME} project. Configure CI/CD pipel
 ## Related Work
 
 **Related Tasks:**
-- E13:S3:T01: Set up test automation (CI/CD integration uses test automation)
+- E13:S03:T01: Set up test automation (CI/CD integration uses test automation)
 
 **Related Stories:**
 - E13:S3: Test Automation and CI/CD Integration (this story)

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task 002 – Add ACT Phase (Step 13: Act on Verification Results)
 
-**Task:** E2:S02:T02  
+**Task:** E02:S02:T02  
 **Status:** TODO  
 **Priority:** HIGH  
 **Created:** 2025-12-03  
@@ -92,9 +92,9 @@ Add Step 13 (Act on Verification Results) to the Release Workflow to implement t
 
 ## Related Tasks
 
-- E2:S02:T01 – Add CHECK Phase (prerequisite)
-- E2:S02:T03 – Enhance PLAN Phase (coordinates with this task)
-- E2:S02:T06 – Update RW workflow YAML and documentation (includes this task)
+- E02:S02:T01 – Add CHECK Phase (prerequisite)
+- E02:S02:T03 – Enhance PLAN Phase (coordinates with this task)
+- E02:S02:T06 – Update RW workflow YAML and documentation (includes this task)
 
 ---
 

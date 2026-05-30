@@ -33,38 +33,38 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 
 ## Task Checklist
 
-- [x] **E2:S01:T01 – Audit `release-workflow-agent-execution.md` for project-specific assumptions** ✅ COMPLETE (v0.2.1.1+3)
-- [x] **E2:S01:T02 – Tag Confidentia/fynd.deals examples and add dev-kit examples** ✅ COMPLETE (v0.2.1.1+4)
-- [x] **E2:S01:T03 – Align `.cursorrules` RW trigger section with dev-kit policy** ✅ COMPLETE (v0.2.1.1+5)
-- [x] **E2:S01:T04 – Update RW changelog step to require verification before marking fixes as "fixed"** ✅ COMPLETE (v0.2.1.1+2)
-- [x] **E2:S01:T05 – Harden RW branch safety checks to stop execution on wrong branch** ✅ COMPLETE (v0.2.1.5+1)
-- [x] **E2:S01:T06 – Fix changelog validator ordering bug** ✅ COMPLETE (v0.2.1.6+4 – Validator now supports both Keep a Changelog and Canonical formats with auto-detection)
-- [x] **E2:S01:T07 – Add support for update/maintenance branch patterns in branch validation** ✅ COMPLETE (v0.2.1.7+1)
-- [x] **E2:S01:T08 – Add Step 9 - IDE problem checking to Release Workflow** ✅ COMPLETE (v0.2.1.8+1 – FR-024 implemented: Step 9 added for IDE/linter problem checking)
+- [x] **E02:S01:T01 – Audit `release-workflow-agent-execution.md` for project-specific assumptions** ✅ COMPLETE (v0.2.1.1+3)
+- [x] **E02:S01:T02 – Tag Confidentia/fynd.deals examples and add dev-kit examples** ✅ COMPLETE (v0.2.1.1+4)
+- [x] **E02:S01:T03 – Align `.cursorrules` RW trigger section with dev-kit policy** ✅ COMPLETE (v0.2.1.1+5)
+- [x] **E02:S01:T04 – Update RW changelog step to require verification before marking fixes as "fixed"** ✅ COMPLETE (v0.2.1.1+2)
+- [x] **E02:S01:T05 – Harden RW branch safety checks to stop execution on wrong branch** ✅ COMPLETE (v0.2.1.5+1)
+- [x] **E02:S01:T06 – Fix changelog validator ordering bug** ✅ COMPLETE (v0.2.1.6+4 – Validator now supports both Keep a Changelog and Canonical formats with auto-detection)
+- [x] **E02:S01:T07 – Add support for update/maintenance branch patterns in branch validation** ✅ COMPLETE (v0.2.1.7+1)
+- [x] **E02:S01:T08 – Add Step 9 - IDE problem checking to Release Workflow** ✅ COMPLETE (v0.2.1.8+1 – FR-024 implemented: Step 9 added for IDE/linter problem checking)
 
-- [x] **E2:S01:T09 – BR-060: RW allow `IN PROGRESS` task releases (Step 1c)** - ✅ COMPLETE (closeout pass 2026-04-07; forensic **v0.6.6.60+1** / **E6:S06:T60** at release; canonical **E2:S01:T09**) — [Task doc](Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md) | [BR-060](../../fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
-- [ ] **E2:S01:T10 – UXR-006: Allow `dev` branch as accepted RW validator context (solo workflow)** - TODO — [Task doc](Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md) | [UXR-006](../../fr-br/UXR-006-dev-branch-and-rw-validator-relaxation.md)
-- [x] **E2:S01:T11 – BR-062: RW Step 7 must not leave completed tasks on in-progress kboard** - ✅ COMPLETE (v0.2.1.11+2 – scope expanded to full mode + `kanban_init`; active MoSCOW COMPLETE-row pruning + regression tests) — [Task doc](Story-001-rw-agent-execution-and-docs/T11-rw-k-kanban-init-board-hygiene-for-completed-tasks-br062.md) | [BR-062](../../fr-br/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)
-- [x] **E2:S01:T12 – BR-061: RW explicit task-id should not require manual pre-alignment of `version.py`** - ✅ COMPLETE (v0.2.1.12+2 – explicit-request reconciliation + guardrail-preserving tests/docs released) — [Task doc](Story-001-rw-agent-execution-and-docs/T12-rw-explicit-task-id-version-alignment-br061.md) | [BR-061](../../fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
-- [x] **E2:S01:T13 – BR-063: RW -k must prevent task attribution drift vs version anchor** - ✅ COMPLETE (v0.2.1.13+2 – filing, forensic cleanup, `rw-k` guard + `--art` + tests/docs) — [Task doc](Story-001-rw-agent-execution-and-docs/T13-rw-k-forensic-task-attribution-alignment-br063.md) | [BR-063](../../fr-br/BR-063-rw-k-task-attribution-drift-between-requested-task-and-version-anchor.md)
-- [x] **E2:S01:T14 – FR-048: RW Trigger Extensions for Multiple Use Cases (traceability task wiring)** - ✅ COMPLETE (v0.2.1.14+1) — [Task doc](Story-001-rw-agent-execution-and-docs/T14-rw-trigger-extensions-multiple-use-cases-fr048.md) | [FR-048](../../fr-br/FR-048-rw-trigger-extensions-for-multiple-use-cases.md)
-- [x] **E2:S01:T15 – FR-049: Canonical RW Step List - Single Source of Truth (traceability task wiring)** - ✅ COMPLETE (v0.2.1.15+1) — [Task doc](Story-001-rw-agent-execution-and-docs/T15-canonical-rw-step-list-single-source-of-truth-fr049.md) | [FR-049](../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md)
-- [x] **E2:S01:T16 – BR-064: RW `dev` branch should not enforce epic lock** - ✅ COMPLETE (v0.2.1.16+1) — [Task doc](Story-001-rw-agent-execution-and-docs/T16-rw-dev-branch-neutral-context-no-epic-lock-br064.md) | [BR-064](../../fr-br/BR-064-rw-dev-branch-should-not-enforce-epic-lock.md)
-- [x] **E2:S01:T17 – FR-077: IPW-built task status transition and kboard synchronization** - ✅ COMPLETE (v0.2.1.17+3 – ownership matrix aligned across IPW/RW/UKW, deterministic requested-task drift checks, recurrence regression tests) — [Task doc](Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md) | [FR-077](../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- [x] **E2:S01:T18 – RW Step 8 stage-completeness guardrails (BR-070)** - ✅ COMPLETE (v0.2.1.18+1 — post-commit validator, tests, docs) — [Task doc](Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md) | [BR-070](../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
-- [x] **E2:S01:T19 – RW trigger routing execution regression (BR-071)** - ✅ COMPLETE (v0.2.1.19+1 — fix: CLAUDE.md + .claude/commands/rw.md; root cause: no Claude Code instruction file; BR-071 RESOLVED) — [Task doc](Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md) | [BR-071](../../fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
-- [x] **E2:S01:T20 – SemVer task-touch collision retrospective fix (BR-073)** - ✅ COMPLETE (v0.2.1.20+1 — registry patch, BR doc, task doc, kanban updates) — [Task doc](Story-001-rw-agent-execution-and-docs/T20-semver-task-touch-collision-retrospective-fix-br073.md) | [BR-073](../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)
-- [x] **E2:S01:T21 – RW release commits test artifacts, deletes prior-build changelog, emits version typo (BR-074)** - ✅ COMPLETE (v0.2.1.21+1 — `.gitignore` exclusions, restored +1 changelog, patched +2 typo, Step 3 immutability guards, archive link validator, dual-source parity updated) — [Task doc](Story-001-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md) | [BR-074](../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
-- [x] **E2:S01:T22 – RW perpetual-task BUILD must persist in `version.py` (BR-075)** - ✅ COMPLETE (**v0.2.1.22+1** — perpetual BUILD validator; version-bump skill path) — [Task doc](Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md) | [BR-075](../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md) | [IPP](../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
+- [x] **E02:S01:T09 – BR-060: RW allow `IN PROGRESS` task releases (Step 1c)** - ✅ COMPLETE (closeout pass 2026-04-07; forensic **v0.6.6.60+1** / **E06:S06:T60** at release; canonical **E02:S01:T09**) — [Task doc](Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md) | [BR-060](../../fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
+- [ ] **E02:S01:T10 – UXR-006: Allow `dev` branch as accepted RW validator context (solo workflow)** - TODO — [Task doc](Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md) | [UXR-006](../../fr-br/UXR-006-dev-branch-and-rw-validator-relaxation.md)
+- [x] **E02:S01:T11 – BR-062: RW Step 7 must not leave completed tasks on in-progress kboard** - ✅ COMPLETE (v0.2.1.11+2 – scope expanded to full mode + `kanban_init`; active MoSCOW COMPLETE-row pruning + regression tests) — [Task doc](Story-001-rw-agent-execution-and-docs/T11-rw-k-kanban-init-board-hygiene-for-completed-tasks-br062.md) | [BR-062](../../fr-br/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)
+- [x] **E02:S01:T12 – BR-061: RW explicit task-id should not require manual pre-alignment of `version.py`** - ✅ COMPLETE (v0.2.1.12+2 – explicit-request reconciliation + guardrail-preserving tests/docs released) — [Task doc](Story-001-rw-agent-execution-and-docs/T12-rw-explicit-task-id-version-alignment-br061.md) | [BR-061](../../fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
+- [x] **E02:S01:T13 – BR-063: RW -k must prevent task attribution drift vs version anchor** - ✅ COMPLETE (v0.2.1.13+2 – filing, forensic cleanup, `rw-k` guard + `--art` + tests/docs) — [Task doc](Story-001-rw-agent-execution-and-docs/T13-rw-k-forensic-task-attribution-alignment-br063.md) | [BR-063](../../fr-br/BR-063-rw-k-task-attribution-drift-between-requested-task-and-version-anchor.md)
+- [x] **E02:S01:T14 – FR-048: RW Trigger Extensions for Multiple Use Cases (traceability task wiring)** - ✅ COMPLETE (v0.2.1.14+1) — [Task doc](Story-001-rw-agent-execution-and-docs/T14-rw-trigger-extensions-multiple-use-cases-fr048.md) | [FR-048](../../fr-br/FR-048-rw-trigger-extensions-for-multiple-use-cases.md)
+- [x] **E02:S01:T15 – FR-049: Canonical RW Step List - Single Source of Truth (traceability task wiring)** - ✅ COMPLETE (v0.2.1.15+1) — [Task doc](Story-001-rw-agent-execution-and-docs/T15-canonical-rw-step-list-single-source-of-truth-fr049.md) | [FR-049](../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md)
+- [x] **E02:S01:T16 – BR-064: RW `dev` branch should not enforce epic lock** - ✅ COMPLETE (v0.2.1.16+1) — [Task doc](Story-001-rw-agent-execution-and-docs/T16-rw-dev-branch-neutral-context-no-epic-lock-br064.md) | [BR-064](../../fr-br/BR-064-rw-dev-branch-should-not-enforce-epic-lock.md)
+- [x] **E02:S01:T17 – FR-077: IPW-built task status transition and kboard synchronization** - ✅ COMPLETE (v0.2.1.17+3 – ownership matrix aligned across IPW/RW/UKW, deterministic requested-task drift checks, recurrence regression tests) — [Task doc](Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md) | [FR-077](../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [x] **E02:S01:T18 – RW Step 8 stage-completeness guardrails (BR-070)** - ✅ COMPLETE (v0.2.1.18+1 — post-commit validator, tests, docs) — [Task doc](Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md) | [BR-070](../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
+- [x] **E02:S01:T19 – RW trigger routing execution regression (BR-071)** - ✅ COMPLETE (v0.2.1.19+1 — fix: CLAUDE.md + .claude/commands/rw.md; root cause: no Claude Code instruction file; BR-071 RESOLVED) — [Task doc](Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md) | [BR-071](../../fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
+- [x] **E02:S01:T20 – SemVer task-touch collision retrospective fix (BR-073)** - ✅ COMPLETE (v0.2.1.20+1 — registry patch, BR doc, task doc, kanban updates) — [Task doc](Story-001-rw-agent-execution-and-docs/T20-semver-task-touch-collision-retrospective-fix-br073.md) | [BR-073](../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)
+- [x] **E02:S01:T21 – RW release commits test artifacts, deletes prior-build changelog, emits version typo (BR-074)** - ✅ COMPLETE (v0.2.1.21+1 — `.gitignore` exclusions, restored +1 changelog, patched +2 typo, Step 3 immutability guards, archive link validator, dual-source parity updated) — [Task doc](Story-001-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md) | [BR-074](../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
+- [x] **E02:S01:T22 – RW perpetual-task BUILD must persist in `version.py` (BR-075)** - ✅ COMPLETE (**v0.2.1.22+1** — perpetual BUILD validator; version-bump skill path) — [Task doc](Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md) | [BR-075](../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md) | [IPP](../../../implementation-cycles/IPP-E02S01T22-rw-perpetual-version-py-build-br075.md)
 
-- [ ] **E2:S01:T23 – Tool-agnostic workflow step tracking + persisted run logs** - TODO (HIGH, re-housed from `E6:S07:T18`, FR-087 Wave 4)
-  - Task: [T23-tool-agnostic-workflow-step-tracking-and-runlogs.md](Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Historical: [E6:S07:T18](../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+- [ ] **E02:S01:T23 – Tool-agnostic workflow step tracking + persisted run logs** - TODO (HIGH, re-housed from `E06:S07:T18`, FR-087 Wave 4)
+  - Task: [T23-tool-agnostic-workflow-step-tracking-and-runlogs.md](Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Historical: [E06:S07:T18](../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
 
 ---
 
 ## Tasks
 
-### E2:S01:T01 – Audit `release-workflow-agent-execution.md` for project-specific assumptions ✅ COMPLETE
+### E02:S01:T01 – Audit `release-workflow-agent-execution.md` for project-specific assumptions ✅ COMPLETE
 
 **Input:** Current `release-workflow-agent-execution.md` file  
 **Deliverable:** Audit report identifying project-specific assumptions ✅ **DELIVERED**  
@@ -102,11 +102,11 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 
 ---
 
-### E2:S01:T02 – Tag Confidentia/fynd.deals examples and add dev-kit examples ✅ COMPLETE
+### E02:S01:T02 – Tag Confidentia/fynd.deals examples and add dev-kit examples ✅ COMPLETE
 
 **Input:** Audit report from T001  
 **Deliverable:** Updated documentation with clearly tagged examples ✅ **DELIVERED**  
-**Dependencies:** E2:S01:T01  
+**Dependencies:** E02:S01:T01  
 **Blocker:** None
 
 **Status:** IN PROGRESS
@@ -137,11 +137,11 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 
 ---
 
-### E2:S01:T03 – Align `.cursorrules` RW trigger section with dev-kit policy ✅ COMPLETE
+### E02:S01:T03 – Align `.cursorrules` RW trigger section with dev-kit policy ✅ COMPLETE
 
 **Input:** Updated RW documentation from T002  
 **Deliverable:** Updated `.cursorrules` RW trigger section ✅ **DELIVERED**  
-**Dependencies:** E2:S01:T02  
+**Dependencies:** E02:S01:T02  
 **Blocker:** None
 
 **Status:** IN PROGRESS
@@ -177,7 +177,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 
 ---
 
-### E2:S01:T04 – Update RW changelog step to require verification before marking fixes as "fixed"
+### E02:S01:T04 – Update RW changelog step to require verification before marking fixes as "fixed"
 
 **Input:** Current RW changelog documentation  
 **Deliverable:** Updated RW documentation requiring verification for fixes  
@@ -223,7 +223,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 
 ---
 
-### E2:S01:T05 – Harden RW branch safety checks to stop execution on wrong branch
+### E02:S01:T05 – Harden RW branch safety checks to stop execution on wrong branch
 
 **Input:** Current RW Step 1 implementation, `validate_branch_context.py` script  
 **Deliverable:** Hardened RW with mandatory branch safety enforcement  
@@ -316,7 +316,7 @@ All subsequent steps have been cancelled.
 
 ---
 
-### E2:S01:T06 – Fix changelog validator ordering bug 🔄 REOPENED {#e2s01t06--fix-changelog-validator-ordering-bug--reopened}
+### E02:S01:T06 – Fix changelog validator ordering bug 🔄 REOPENED {#E02S01T06--fix-changelog-validator-ordering-bug--reopened}
 
 **Input:**  
 - **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../fr-br/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
@@ -398,11 +398,11 @@ The `validate_changelog_format.py` validator checks for canonical ordering (vers
   - [REOPENING_BR_AND_TASKS_GUIDE.md](../../fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks
   - [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Principle for bidirectional linking (this task demonstrates the pattern)
 
-- Previous attempt: E2:S01:T06 (v0.2.1.6+2) - marked complete but bug persists
+- Previous attempt: E02:S01:T06 (v0.2.1.6+2) - marked complete but bug persists
 
 ---
 
-### E2:S01:T07 – Add support for update/maintenance branch patterns in branch validation
+### E02:S01:T07 – Add support for update/maintenance branch patterns in branch validation
 
 **Input:**  
 - Bug Report BR-003: RW Branch Validation Missing Support for Update/Maintenance Branches
@@ -415,7 +415,7 @@ The `validate_changelog_format.py` validator checks for canonical ordering (vers
 - Updated RW documentation explaining update branch handling
 - No warnings for valid `update/*` branches
 
-**Dependencies:** E2:S01:T05 (branch safety hardening foundation)  
+**Dependencies:** E02:S01:T05 (branch safety hardening foundation)  
 **Blocker:** None
 
 **Problem Statement:**
@@ -464,7 +464,7 @@ The `validate_branch_context.py` script only recognizes `main` branch and `epic/
 
 **Related:**
 - BR-003: RW Branch Validation Missing Support for Update/Maintenance Branches
-- E2:S01:T05: Harden RW branch safety checks (foundation for branch validation)
+- E02:S01:T05: Harden RW branch safety checks (foundation for branch validation)
 
 ---
 
@@ -495,5 +495,5 @@ The `validate_branch_context.py` script only recognizes `main` branch and `epic/
 
 ---
 
-_Last updated: 2026-04-02 — Story reopened; **E2:S01:T09** [BR-060](Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md). Prior: 2025-12-09 (v0.2.1.7+1 – Task 7 completed)._
+_Last updated: 2026-04-02 — Story reopened; **E02:S01:T09** [BR-060](Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md). Prior: 2025-12-09 (v0.2.1.7+1 – Task 7 completed)._
 

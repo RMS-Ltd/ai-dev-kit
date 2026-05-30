@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 6, Story 9, Task 3: Installation canonical repository alignment (FR-082)
 
-**Task ID:** E6:S09:T03  
+**Task ID:** E06:S09:T03  
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Small  
 **Created:** 2026-04-19  
 **Last updated:** 2026-05-29 (kanban hierarchy closure — Story/Epic/FR-082 synced; implementation shipped **v0.6.9.3+2**)
 **Version:** v0.6.9.3+2  
-**Code:** E6S09T03
+**Code:** E06S09T03
 
 **Upstream:** [FR-082 - Installation distribution canonical repository alignment](../../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)
 
@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Full Task ID:** `E6:S09:T03`
+**Full Task ID:** `E06:S09:T03`
 
 ---
 

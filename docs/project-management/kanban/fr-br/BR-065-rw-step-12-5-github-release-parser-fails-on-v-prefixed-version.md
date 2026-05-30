@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-13 (implementation complete in working tree: boundary normalization + deterministic diagnostics + regression tests)  
 **Version:** N/A  
 **Code:** BR-065  
-**Implementing Task:** [E6:S07:T113](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md)
+**Implementing Task:** [E06:S07:T113](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md)
 
 ---
 
@@ -86,6 +86,6 @@ Step 12.5 should accept canonical `v`-prefixed release inputs (for both SemVer a
 ## Related
 
 - [FR-041](FR-041-perpetual-task-for-release-workflow-maintenance.md)
-- [E2:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
-- [IPW-E6S07T113](../../../implementation-cycles/IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening.md)
+- [E02:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [IPW-E06S07T113](../../../implementation-cycles/IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening.md)
 - `packages/frameworks/workflow mgt/scripts/create_github_release.py`

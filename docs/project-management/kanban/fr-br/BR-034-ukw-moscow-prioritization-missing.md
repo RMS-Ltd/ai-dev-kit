@@ -51,11 +51,11 @@ After running UKW, the "## MoSCOW Prioritized In-Progress Tasks" section in the 
 **Observed Behavior:**
 - UKW updates other sections (Epic status, Story status, Task documents)
 - UKW does NOT update the MoSCOW Prioritized In-Progress Tasks section
-- New tasks (e.g., E9:S01:T08) are not added to the section
+- New tasks (e.g., E09:S01:T08) are not added to the section
 - Task priorities are not agentically determined or updated
 
 **Example:**
-- **E9:S01:T08** (Repository Story Abstract Space Contradiction) is IN PROGRESS with HIGH priority
+- **E09:S01:T08** (Repository Story Abstract Space Contradiction) is IN PROGRESS with HIGH priority
 - This task should appear in the "Should Have (S)" or "Must Have (M)" section
 - After UKW execution, this task was not added to the MoSCOW section
 
@@ -156,7 +156,7 @@ Add MoSCOW prioritization logic to UKW Step 6:
 - [ ] Tasks are ordered by Last Updated (most recent first) within each category
 - [ ] Perpetual tasks appear in O (Ongoing) category
 - [ ] Section is completely regenerated on each UKW run (no stale tasks)
-- [ ] New tasks (e.g., E9:S01:T08) automatically appear in correct category
+- [ ] New tasks (e.g., E09:S01:T08) automatically appear in correct category
 - [ ] Task re-prioritization updates category when priorities change
 
 ---
@@ -164,10 +164,10 @@ Add MoSCOW prioritization logic to UKW Step 6:
 ## Related Work
 
 **Workflow:** Update Kanban Workflow (UKW)  
-**Task:** [E2:S16:T03: Update Kanban Workflow (UKW)](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) - Perpetual task  
+**Task:** [E02:S16:T03: Update Kanban Workflow (UKW)](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) - Perpetual task  
 **Kanban Links:**
 - Story: [E6:S01: BR Repo (PERPETUAL)](../epics/Epic-6/Story-001-br-repo.md)
-- Task: [E6:S01:T34: UKW MoSCOW Prioritization Missing](../epics/Epic-6/Story-001-br-repo/T34-ukw-moscow-prioritization-missing.md)
+- Task: [E06:S01:T34: UKW MoSCOW Prioritization Missing](../epics/Epic-6/Story-001-br-repo/T34-ukw-moscow-prioritization-missing.md)
 
 **Related Bug Reports:**
 - **BR-033:** UKW Board Disorganization (epic ordering issue)
@@ -180,7 +180,7 @@ Add MoSCOW prioritization logic to UKW Step 6:
 ## Assigned To
 
 **Story:** Story 1: BR Repo (PERPETUAL)  
-**Task:** Task 34 (E6:S01:T34)
+**Task:** Task 34 (E06:S01:T34)
 
 ---
 

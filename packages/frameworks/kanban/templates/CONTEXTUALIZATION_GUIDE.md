@@ -12,7 +12,7 @@ housekeeping_policy: keep
 
 **Version:** 1.0.0  
 **Last Updated:** 2025-12-22  
-**Related:** E4:S06:T05
+**Related:** E04:S06:T05
 
 ---
 

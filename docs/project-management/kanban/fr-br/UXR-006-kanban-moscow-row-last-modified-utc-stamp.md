@@ -12,11 +12,11 @@ housekeeping_policy: keep
 **Submitted:** 2026-04-02  
 **Submitted By:** User (request); intake filed after initial board work  
 **Priority:** HIGH  
-**Status:** ACCEPTED — implementation **E6:S06:T61** (registry **E7:S00:T06**); **RW** **v0.6.6.61+1** (**SemVer** **v0.4.702+1**) 2026-04-02 — wired as Bucket-D7 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (forensic semantics owned by [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md))  
+**Status:** ACCEPTED — implementation **E06:S06:T61** (registry **E07:S00:T06**); **RW** **v0.6.6.61+1** (**SemVer** **v0.4.702+1**) 2026-04-02 — wired as Bucket-D7 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (forensic semantics owned by [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md))  
 **GitHub Issue:** _TBD_  
-**Repository Task:** [E7:S00:T06](../epics/Epic-7/Story-000-uxr-repo/T06-uxr-006-repository-anchor.md)
+**Repository Task:** [E07:S00:T06](../epics/Epic-7/Story-000-uxr-repo/T06-uxr-006-repository-anchor.md)
 
-**Implementation Task:** [E6:S06:T61](../epics/Epic-6/Story-006-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)
+**Implementation Task:** [E06:S06:T61](../epics/Epic-6/Story-006-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)
 
 > **Predecessor of FR-092 (2026-04-27):** UXR-006 introduced the surface convention `| Last modified: YYYY-MM-DD HH:MM UTC` on MoSCOW rows. FR-092 (Wave 6, gating UXR-009) extends this to the **forensic semantics** layer (work-evidence gate at write boundary). UXR-006 remains valid as the surface-convention predecessor; the AC4 residual is owned by UXR-009 + FR-092 Wave 6.
 
@@ -68,7 +68,7 @@ Heuristic review of board structure, FR-051 parity between boards, and planning 
 - [x] AC-2: MoSCOW sections on `fbuboard.md` include the same field on open prioritized rows.
 - [x] AC-3: `kanban-board-guide.md` documents meaning, derivation, and UKW/RW Step 7 refresh behavior.
 - [ ] AC-4: Optional — repo-maintained script or check to regenerate or verify stamps for drift detection.
-- [x] AC-5: KG-R2 intake complete — **UXR-006** ↔ **E7:S00:T06** ↔ **E6:S06:T61** with board rows and story checklists updated.
+- [x] AC-5: KG-R2 intake complete — **UXR-006** ↔ **E07:S00:T06** ↔ **E06:S06:T61** with board rows and story checklists updated.
 
 ---
 
@@ -91,8 +91,8 @@ Heuristic review of board structure, FR-051 parity between boards, and planning 
 
 **Assigned To:**
 
-- Registry: **E7:S00:T06**  
-- Implementation: **E6:S06:T61** (Epic 6 Story 6 — feature requests / board behavior)
+- Registry: **E07:S00:T06**  
+- Implementation: **E06:S06:T61** (Epic 6 Story 6 — feature requests / board behavior)
 
 **Kanban links:**
 

@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E10:S2:T5` (e.g., `E4:S11:T01`)
+**Format:** `E10:S02:T05` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E10:S02:T05`
 
@@ -71,10 +71,10 @@ Add transaction management for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E10:S2:T04
+- E10:S02:T04
 
 **Blocks:**
-- E10:S2:T06
+- E10:S02:T06
 
 **Blocked By:**
 - [What blocks this task]

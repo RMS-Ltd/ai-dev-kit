@@ -16,13 +16,13 @@ housekeeping_policy: keep
 **Version:** v0.2.1.21+1
 **Code:** BR-074
 
-**Implementing Task:** [E2:S01:T21](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md)
+**Implementing Task:** [E02:S01:T21](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md)
 
 ---
 
 ## Problem Statement
 
-The Release Workflow (RW) for `v0.6.6.63+2` (E6:S06:T63 — RW Recovery Journal implementation) produced multiple integrity failures across artifact management, changelog archival, and release documentation. These are deterministic issues that will recur on every same-task follow-up release (BUILD > 1) unless the root causes are addressed.
+The Release Workflow (RW) for `v0.6.6.63+2` (E06:S06:T63 — RW Recovery Journal implementation) produced multiple integrity failures across artifact management, changelog archival, and release documentation. These are deterministic issues that will recur on every same-task follow-up release (BUILD > 1) unless the root causes are addressed.
 
 ---
 
@@ -45,7 +45,7 @@ The JSON journal shows `"status": "failed"` at Step 3 with `version_after: null`
 ## Issue 2: Prior-Build Changelog Deleted, Breaking Archive Link
 
 ### Observed Behavior
-`CHANGELOG_v0.6.6.63+1.md` — created in commit `27bbcd297` (2026-04-21, RW --art adoption release for E6:S06:T63) — was **deleted** in commit `22e3e574c`. The `CHANGELOG_ARCHIVE.md` still references it:
+`CHANGELOG_v0.6.6.63+1.md` — created in commit `27bbcd297` (2026-04-21, RW --art adoption release for E06:S06:T63) — was **deleted** in commit `22e3e574c`. The `CHANGELOG_ARCHIVE.md` still references it:
 
 ```markdown
 ## [0.6.6.63+1] - 21-04-26
@@ -106,7 +106,7 @@ Likely a copy-paste or template variable error in the detailed changelog generat
 ## Steps to Reproduce
 
 1. Run `pytest tests/journal/test_rw_integration.py` (writes artifacts to `docs/journals/`).
-2. Run `RW E6:S06:T63 --art` (or any same-task BUILD > 1 release).
+2. Run `RW E06:S06:T63 --art` (or any same-task BUILD > 1 release).
 3. Observe that `git add -A` stages test artifacts.
 4. Observe that prior BUILD's `CHANGELOG_v*.md` is deleted rather than preserved.
 5. Observe that the new detailed changelog's `Internal Version` may reflect the prior BUILD.
@@ -147,7 +147,7 @@ Likely a copy-paste or template variable error in the detailed changelog generat
 
 ## Fix Attempt History
 
-### Fix Attempt 1: E2:S01:T21 implementation (2026-05-17)
+### Fix Attempt 1: E02:S01:T21 implementation (2026-05-17)
 
 **Status:** In progress.
 
@@ -163,7 +163,7 @@ Likely a copy-paste or template variable error in the detailed changelog generat
 9. Updated `rw-trigger-dual-source-parity.md` checklist and delta log for BR-074 parity pass.
 
 **Remaining work:**
-- RW release commit for E2:S01:T21 to persist all changes.
+- RW release commit for E02:S01:T21 to persist all changes.
 
 ---
 
@@ -176,7 +176,7 @@ Likely a copy-paste or template variable error in the detailed changelog generat
 - None
 
 **Related Work:**
-- [E6:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — The release that exposed these issues.
+- [E06:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — The release that exposed these issues.
 - [BR-038](BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) — Parent BR where recovery journal scope was defined.
 - [FR-042](FR-042-implementation-planning-workflow-ipw.md) — IPW process that planned T63.
 
@@ -186,7 +186,7 @@ Likely a copy-paste or template variable error in the detailed changelog generat
 
 This BR bundles three distinct surface symptoms that share a common theme: **RW BUILD > 1 releases lack hardening around artifact boundaries and changelog immutability**. The fix may be delivered as a single task or split into sub-tasks depending on implementation complexity.
 
-The test artifact in question (`rw-19d02eb7...`) is from `tests/journal/test_rw_integration.py::_simulate_failed_run()`, which calls `RWJournal(task_id="E6:S06:T63")` and writes to the default `JOURNAL_DIR` (`docs/journals/`). The test should either:
+The test artifact in question (`rw-19d02eb7...`) is from `tests/journal/test_rw_integration.py::_simulate_failed_run()`, which calls `RWJournal(task_id="E06:S06:T63")` and writes to the default `JOURNAL_DIR` (`docs/journals/`). The test should either:
 - Use a temporary directory for journal output, or
 - The directory should be gitignored.
 

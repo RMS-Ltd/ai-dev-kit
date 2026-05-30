@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E1:S02:T13](../epics/Epic-1/Story-002-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)  
-**Historical registry:** E5:S01:T02
+**Implementing Task:** [E01:S02:T13](../epics/Epic-1/Story-002-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)  
+**Historical registry:** E05:S01:T02
 
 ---
 
@@ -142,13 +142,13 @@ A project adopting ai-dev-kit needs guidance on how to customize their README to
 **Assigned To:**
 - Epic: Epic 7 - Examples & Adoption Support
 - Story: Story 4 - README Template Based on Best-README-Template
-- Task: E7:S04:T01 (Create README template based on Best-README-Template)
+- Task: E07:S04:T01 (Create README template based on Best-README-Template)
 - Version: `v0.7.4.1+1`
 
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/Epic-7/Epic-7.md`](../epics/Epic-7/Epic-7.md)
 - Story: [`docs/project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md`](../epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md)
-- Tasks: E7:S04:T01, T02, T03
+- Tasks: E07:S04:T01, T02, T03
 
 ---
 
@@ -176,7 +176,7 @@ This FR creates a concrete README template based on Best-README-Template, buildi
 
 **Template Usage:**
 - This FR follows the Feature Request template
-- Linked to Epic 7, Story 4, Tasks E7:S04:T01-T04
+- Linked to Epic 7, Story 4, Tasks E07:S04:T01-T04
 - Work will be tracked through Story and Task documents
 
 ---

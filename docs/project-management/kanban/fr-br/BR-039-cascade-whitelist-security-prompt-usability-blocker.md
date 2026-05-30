@@ -8,15 +8,15 @@ housekeeping_policy: keep
 
 # Bug Report BR-039 – Cascade Whitelist Security Prompt Usability Blocker
 
-**Status:** IN PROGRESS (**product** / Cascade fix **unverified** — maintainer **does not use Windsurf**; **no subscription**; **[E6:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)** = **✅ COMPLETE** for **repo** traceability + docs only)  
+**Status:** IN PROGRESS (**product** / Cascade fix **unverified** — maintainer **does not use Windsurf**; **no subscription**; **[E06:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)** = **✅ COMPLETE** for **repo** traceability + docs only)  
 **Priority:** CRITICAL  
 **Severity:** HIGH  
 **Created:** 2026-03-09  
-**Last updated:** 2026-04-02 — **`RW -k`** **E6:S06:T57** **v0.6.6.57+6** (SemVer **v0.4.705+6**); **T57** repo **COMPLETE**; **BR-039** stays open for vendor/community verification  
+**Last updated:** 2026-04-02 — **`RW -k`** **E06:S06:T57** **v0.6.6.57+6** (SemVer **v0.4.705+6**); **T57** repo **COMPLETE**; **BR-039** stays open for vendor/community verification  
 **Version:** v0.6.6.57+6  
 **Code:** BR-039  
-**Implementing Task (repo — COMPLETE):** [E6:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
-**Planning Artifact (IPW):** [IPW-E6S06T57-br039-vendor-blocker-planning.md](../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
+**Implementing Task (repo — COMPLETE):** [E06:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
+**Planning Artifact (IPW):** [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md)
 
 ---
 
@@ -138,7 +138,7 @@ Use append-only entries with these fields:
 
 - **date_utc:** 2026-04-02 14:44 UTC  
 - **tool_version:** Windsurf **1.9577.27** (`/Applications/Windsurf.app` plist); executor shell Cursor **2.6.20** (validators only).  
-- **scenario:** (1) BR-039 interactive repro — not run (UI). (2) `validate_branch_context.py --strict`; `validate_rw_task_complete.py --requested E6:S06:T57` on `epic/6-framework-management`.  
+- **scenario:** (1) BR-039 interactive repro — not run (UI). (2) `validate_branch_context.py --strict`; `validate_rw_task_complete.py --requested E06:S06:T57` on `epic/6-framework-management`.  
 - **expected:** (1) Whitelist persists, no repeat prompt. (2) Validator exit 0.  
 - **observed:** (1) Not executed here. (2) Exit 0 for both.  
 - **result:** **`blocked`** for (1); auxiliary **`pass`** for (2) — does not prove Cascade fixed.  
@@ -172,8 +172,8 @@ Use append-only entries with these fields:
 ## Related Issues
 
 - **BR-038:** Release Workflow Micromanagement and Tool Discovery Issues (symptom of this root cause)
-- **E6:S06:T02:** Fix Release Workflow Micromanagement Issues (attempted to fix symptoms, not root cause)
-- **E6:S06:T57:** Implementing task — [T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
+- **E06:S06:T02:** Fix Release Workflow Micromanagement Issues (attempted to fix symptoms, not root cause)
+- **E06:S06:T57:** Implementing task — [T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
 
 ## Priority Justification
 

@@ -22,14 +22,14 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [ ] **E9:S02:T01 – Framework Objective and Documentation Review** - TODO
-- [ ] **E9:S02:T02 – Component Analysis (Justification, Definition, Behavior)** - TODO
-- [ ] **E9:S02:T03 – Package Management Review** - TODO
-- [ ] **E9:S02:T04 – Package Maintenance Review** - TODO
-- [ ] **E9:S02:T05 – Clean Install Scenario** - TODO
-- [ ] **E9:S02:T06 – Active Project Installation (File Location, Backup, Data Mapping)** - TODO
-- [ ] **E9:S02:T07 – Update Management in Target Projects** - TODO
-- [ ] **E9:S02:T08 – Book Project Tie-in Opportunities** - TODO
+- [ ] **E09:S02:T01 – Framework Objective and Documentation Review** - TODO
+- [ ] **E09:S02:T02 – Component Analysis (Justification, Definition, Behavior)** - TODO
+- [ ] **E09:S02:T03 – Package Management Review** - TODO
+- [ ] **E09:S02:T04 – Package Maintenance Review** - TODO
+- [ ] **E09:S02:T05 – Clean Install Scenario** - TODO
+- [ ] **E09:S02:T06 – Active Project Installation (File Location, Backup, Data Mapping)** - TODO
+- [ ] **E09:S02:T07 – Update Management in Target Projects** - TODO
+- [ ] **E09:S02:T08 – Book Project Tie-in Opportunities** - TODO
 
 ---
 

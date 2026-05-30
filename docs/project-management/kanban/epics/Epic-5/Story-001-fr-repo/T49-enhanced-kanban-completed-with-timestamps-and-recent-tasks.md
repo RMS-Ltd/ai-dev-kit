@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 49: Enhanced kanban-completed.md with Timestamps and Recent Tasks Tracking
 
-**Task ID:** E5:S01:T49  
+**Task ID:** E05:S01:T49  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Completed:** 2026-03-11  
 **Last updated:** 2026-03-11 (Implementation complete)
 **Version:** v0.5.1.49+2  
-**Code:** E5S01T49
+**Code:** E05S01T49
 
-**Repository Pattern:** FR-049 = E5:S01:T49 (first build: v0.5.1.49+0, implementation: v0.5.1.49+1)
+**Repository Pattern:** FR-049 = E05:S01:T49 (first build: v0.5.1.49+0, implementation: v0.5.1.49+1)
 
 **Associated FR:** [FR-049](../../../fr-br/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
 
@@ -93,7 +93,7 @@ Documentation Agent.update_kanban_completed({
 
 ## Deliverable
 
-1. This task document as the canonical repository anchor for FR-049 (`E5:S01:T49`).
+1. This task document as the canonical repository anchor for FR-049 (`E05:S01:T49`).
 2. FR-049 linked from the FR repository story checklist and from this task.
 3. Enhanced kanban-completed.md with timestamps and recent tasks tracking.
 4. Updated Documentation Agent responsibilities and coordination patterns.
@@ -103,8 +103,8 @@ Documentation Agent.update_kanban_completed({
 
 ## Acceptance Criteria
 
-- [x] Task document exists and is linked from the FR Repo story checklist as **E5:S01:T49**.
-- [x] FR-049 is created and explicitly assigned to E5:S01:T49.
+- [x] Task document exists and is linked from the FR Repo story checklist as **E05:S01:T49**.
+- [x] FR-049 is created and explicitly assigned to E05:S01:T49.
 - [x] kanban-completed.md enhanced with completion timestamps.
 - [x] Recent tasks dashboard displays 20 most recent completions.
 - [x] Documentation Agent assigned ultimate responsibility for document.
@@ -135,7 +135,7 @@ Documentation Agent.update_kanban_completed({
 
 ## Version Anchor
 
-- **First Build:** v0.5.1.49+0 (this release) anchors FR-049 to E5:S01:T49 with documentation-only changes.
+- **First Build:** v0.5.1.49+0 (this release) anchors FR-049 to E05:S01:T49 with documentation-only changes.
 - Subsequent functional work for kanban-completed.md enhancement should use `BUILD > 0` (e.g. `v0.5.1.49+1`, `+2`, …).
 
 ---
@@ -143,8 +143,8 @@ Documentation Agent.update_kanban_completed({
 ## Related Work
 
 - **FR-049:** Enhanced kanban-completed.md with Timestamps and Recent Tasks Tracking.
-- **E5:S01:T48:** ICW Task Identifier Argument (recently completed example).
-- **E6:S06:T42:** UKW Agent Board Cleanup Failure (recently completed example).
+- **E05:S01:T48:** ICW Task Identifier Argument (recently completed example).
+- **E06:S06:T42:** UKW Agent Board Cleanup Failure (recently completed example).
 - **Documentation Agent:** Ultimate responsibility for this enhancement.
 
 ---

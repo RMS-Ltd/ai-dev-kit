@@ -25,25 +25,25 @@ Capture and operationalize user experience research for migrating pre-existing K
 
 ## Tasks
 
-- [x] **E7:S05:T01 – UXR-001 intake and synthesis** ✅ COMPLETE (v0.7.5.1+0)
+- [x] **E07:S05:T01 – UXR-001 intake and synthesis** ✅ COMPLETE (v0.7.5.1+0)
   - Intake UXR-001 findings, extract user pain points, and summarize migration UX requirements.  
   - **Linked UXR:** `UXR-001-migration-user-experience-research.md` (GitHub issue #4).  
   - **Acceptance:** ✅ Findings synthesized; UX requirements fed into Epic 4 Story 7 tasks; recap documented in this story.
 
 
-- [x] **E7:S05:T02 – UXR-002 intake and synthesis** ✅ COMPLETE (v0.7.5.2+0)
+- [x] **E07:S05:T02 – UXR-002 intake and synthesis** ✅ COMPLETE (v0.7.5.2+0)
   - Intake UXR-002 comprehensive UAT findings, validate migration utilities work as advertised, extract recommendations.  
   - **Linked UXR:** `UXR-002-comprehensive-uat-migration-utilities.md` (GitHub issue #6).  
   - **Acceptance:** ✅ UAT findings synthesized; recommendations fed into Epic 4 Story 8 tasks; validation documented.
 
 
-- [x] **E7:S05:T03 – UXR-003 intake and synthesis** ✅ COMPLETE (v0.7.5.3+0)
+- [x] **E07:S05:T03 – UXR-003 intake and synthesis** ✅ COMPLETE (v0.7.5.3+0)
   - Intake UXR-003 intelligent epic matching findings, extract semantic matching requirements, summarize canonical adoption recommendations.  
   - **Linked UXR:** `UXR-003-intelligent-epic-matching-canonical-adoption-uat.md` (GitHub issue #8).  
   - **Acceptance:** ✅ Findings synthesized; requirements fed into Epic 4 Story 8 tasks; recommendations documented.
 
 
-- [x] **E7:S05:T04 – UXR-004 intake and synthesis** ✅ COMPLETE (v0.7.5.4+0)
+- [x] **E07:S05:T04 – UXR-004 intake and synthesis** ✅ COMPLETE (v0.7.5.4+0)
   - Intake UXR-004 comprehensive Kanban package installation UAT findings, extract bug reports and design flaw analysis, summarize recommendations.  
   - **Linked UXR:** `UXR-004-kanban-package-installation-uat.md` (GitHub issue #13).  
   - **Acceptance:** ✅ Findings synthesized; recommendations fed into Epic 4 Story 9 tasks; bug reports and design flaws documented.

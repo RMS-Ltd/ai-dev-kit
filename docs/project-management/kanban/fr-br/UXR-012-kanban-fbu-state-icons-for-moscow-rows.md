@@ -10,12 +10,12 @@ housekeeping_policy: keep
 
 **Type:** User Experience Research (UXR)  
 **Submitted:** 2026-05-20  
-**Submitted By:** User — positive response to `✅` on COMPLETE task rows (e.g. E2:S15:T08 on `kboard.md`); wants **every** task/FBU state to carry a consistent state icon  
+**Submitted By:** User — positive response to `✅` on COMPLETE task rows (e.g. E02:S15:T08 on `kboard.md`); wants **every** task/FBU state to carry a consistent state icon  
 **Priority:** HIGH  
-**Status:** ACCEPTED — **Set A primary + Unicode fallback** signed off 2026-05-20 (refined from interim Set D; intake **E4:S13:T07**)  
+**Status:** ACCEPTED — **Set A primary + Unicode fallback** signed off 2026-05-20 (refined from interim Set D; intake **E04:S13:T07**)  
 **Code:** UXR-012  
 
-**Implementing Task:** [E4:S13:T07](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md)
+**Implementing Task:** [E04:S13:T07](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md)
 
 **Related:** [UXR-005](UXR-005-kanban-board-formatting-and-governance.md) (readability), [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) (row grammar), [FR-077](FR-077-ipw-built-task-status-transition-and-kboard-sync.md) (status propagation), [kanban-board-guide.md](../kanban-board-guide.md)
 
@@ -57,7 +57,7 @@ This supersedes the interim **Set D (Hybrid)** pick, which mixed A and B on the 
 | Validators, grep, CI logs | Match **status word**; icon optional in regex; fallback acceptable in exported/plain-text reports |
 | User-facing plain-text (email, some terminals) | **Fallback (Unicode)** when emoji unsupported |
 
-**Decision by:** User (2026-05-20; refined same day). **Next:** `IPW E4:S13:T07` → implementation (guide, agents, corpus backfill, optional validator).
+**Decision by:** User (2026-05-20; refined same day). **Next:** `IPW E04:S13:T07` → implementation (guide, agents, corpus backfill, optional validator).
 
 ---
 
@@ -77,7 +77,7 @@ This supersedes the interim **Set D (Hybrid)** pick, which mixed A and B on the 
 
 | Surface | Pattern today | Icon usage |
 | ------- | ------------- | ---------- |
-| `kboard.md` | `- **E2:S15:T08** – … - IN PROGRESS` or `✅ COMPLETE (v…)` | Ad hoc **✅** on some COMPLETE rows only |
+| `kboard.md` | `- **E02:S15:T08** – … - IN PROGRESS` or `✅ COMPLETE (v…)` | Ad hoc **✅** on some COMPLETE rows only |
 | `fbuboard.md` | `- **FR-097** – … - RESOLVED (v…)` | Text only |
 | `kanban-structure.md` | Story checklist `✅ COMPLETE` | Checklist convention, not MoSCOW row rule |
 | FR/BR/UXR docs | `**Status:**` field | No board-row icon contract |
@@ -251,7 +251,7 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 - [x] **AC2:** `kanban-board-guide.md` + `kanban-governance-policy.md` document canonical states, aliases, and icons.
 - [x] **AC3:** `kboard.md` and `fbuboard.md` active MoSCOW rows use icons for **all** statuses (not only COMPLETE).
 - [x] **AC4:** UKW/RW agents apply mapping deterministically; no ad hoc icon invention.
-- [x] **AC5:** `validate_kanban_state_icons.py` + Release Readiness Gate 9 enforce presence (implementation **E4:S13:T07** / v0.4.13.7+1).
+- [x] **AC5:** `validate_kanban_state_icons.py` + Release Readiness Gate 9 enforce presence (implementation **E04:S13:T07** / v0.4.13.7+1).
 
 ---
 
@@ -266,13 +266,13 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 ## Next steps
 
 1. ~~**User/editorial:** Pick Set A, B, C, or D~~ — **Done:** Set A on boards; Set B fallback where emoji unsupported.
-2. ~~**IPW** on **E4:S13:T07**~~ — **Done:** [IPP-E4S13T07](../../../implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md).
+2. ~~**IPW** on **E04:S13:T07**~~ — **Done:** [IPP-E04S13T07](../../../implementation-cycles/IPP-E04S13T07-kanban-fbu-state-icons-moscow-rows.md).
 3. ~~**RW** after implementation~~ — **Done:** v0.4.13.7+1.
 
 ---
 
 ## References
 
-- [kboard.md](../kboard.md) — E2:S15:T08 `✅ COMPLETE` exemplar
+- [kboard.md](../kboard.md) — E02:S15:T08 `✅ COMPLETE` exemplar
 - [fbuboard.md](../fbuboard.md)
 - [Kanban governance policy](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)

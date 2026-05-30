@@ -8,16 +8,16 @@ housekeeping_policy: keep
 
 # Epic 4, Story 19, Task 4: kboard/fbuboard add `IPP` column after FBU and task links (UXR-010)
 
-**Task ID:** E4:S19:T04  
+**Task ID:** E04:S19:T04  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
 **Last updated:** 2026-05-14  
-**Code:** E4S19T04
+**Code:** E04S19T04
 
 **Upstream:** [UXR-010 - kboard/fbuboard add `IPP` column after FBU and task links](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
-**IPP:** [IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
+**IPP:** [IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
 
 ---
 
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 - [UXR-010](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) requirements.
 - Current row formats in `kboard.md` and `fbuboard.md`.
 - Existing planning artifact naming/placement conventions (`IPP-*` / legacy `IPW-*` where applicable).
-- [IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
+- [IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
 
 ---
 
@@ -64,7 +64,7 @@ Board rows currently do not consistently expose planning artifact presence after
 - [x] **AC4:** IPP present segment uses exact linked token form `—IPP—`.
 - [x] **AC5:** Existing rows can be normalized without broken links.
 - [x] **AC6:** Governance/workflow documentation identifies enforcement behavior.
-- [x] **AC7:** UXR-010 and E4:S19:T04 are wired in Story 019 and active boards.
+- [x] **AC7:** UXR-010 and E04:S19:T04 are wired in Story 019 and active boards.
 
 **✅ COMPLETE (v0.4.19.4+5)**
 
@@ -76,4 +76,4 @@ Board rows currently do not consistently expose planning artifact presence after
 - [Story 019](../Story-019-fr-br-uxr-abstract-governance-and-intake.md)
 - [kboard](../../../kboard.md)
 - [fbuboard](../../../fbuboard.md)
-- [IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
+- [IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)

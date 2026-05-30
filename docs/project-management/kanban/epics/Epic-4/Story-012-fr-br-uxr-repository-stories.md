@@ -21,17 +21,17 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E4:S12:T00 – Story Creation and FR-021 Intake** ✅ COMPLETE (v0.4.12.0+0)
-- [x] **E4:S12:T01 – Create Epic 5, Story 0: FR Repo (PERPETUAL)** - ✅ COMPLETE (v0.4.12.1+0 – Repository story created: E5:S00)
-- [x] **E4:S12:T02 – Create Epic 6, Story 0: BR Repo (PERPETUAL)** - ✅ COMPLETE (v0.4.12.2+0 – Repository story created: E6:S00)
-- [x] **E4:S12:T03 – Create Epic 7, Story 0: UXR Repo (PERPETUAL)** - ✅ COMPLETE (v0.4.12.3+0 – Repository story created: E7:S00)
-- [x] **E4:S12:T04 – Update Kanban Policy with PERPETUAL State Definition** - ✅ COMPLETE (v0.4.12.4+0 – PERPETUAL state defined in Kanban policy)
-- [x] **E4:S12:T05 – Update Board Display Logic to Omit S00 Stories** - ✅ COMPLETE (v0.4.12.5+0 – Board display logic updated: S00 stories omitted from epic checklists)
-- [x] **E4:S12:T06 – Update Intake Workflow to Assign FR/BR/UXR to S00:Txx** - ✅ COMPLETE (v0.4.12.6+0 – Intake workflow updated: repository assignment step added, traceability bridge creation implemented)
-- [x] **E4:S12:T07 – Update Versioning Policy with S00 Abstract Space Concept** - ✅ COMPLETE (v0.4.12.7+0 – Versioning policy updated: S00 abstract space documented, repository task versioning pattern defined)
-- [x] **E4:S12:T08 – Document Meta-Grouping Pattern** - ✅ COMPLETE (v0.4.12.8+0 – Meta-grouping pattern documented: implementation stories reference repository tasks by task number)
-- [x] **E4:S12:T09 – Update Epic 5, 6, 7 Templates with S00 Pattern** - ✅ COMPLETE (v0.4.12.9+0 – Epic templates updated: S00 added to Story Checklist with PERPETUAL status and board display omission notes)
-- [x] **E4:S12:T10 – Documentation and Testing** - ✅ COMPLETE (v0.4.12.10+0 – Documentation complete: S00 pattern fully documented, templates updated, intake workflow integrated)
+- [x] **E04:S12:T00 – Story Creation and FR-021 Intake** ✅ COMPLETE (v0.4.12.0+0)
+- [x] **E04:S12:T01 – Create Epic 5, Story 0: FR Repo (PERPETUAL)** - ✅ COMPLETE (v0.4.12.1+0 – Repository story created: E5:S00)
+- [x] **E04:S12:T02 – Create Epic 6, Story 0: BR Repo (PERPETUAL)** - ✅ COMPLETE (v0.4.12.2+0 – Repository story created: E6:S00)
+- [x] **E04:S12:T03 – Create Epic 7, Story 0: UXR Repo (PERPETUAL)** - ✅ COMPLETE (v0.4.12.3+0 – Repository story created: E7:S00)
+- [x] **E04:S12:T04 – Update Kanban Policy with PERPETUAL State Definition** - ✅ COMPLETE (v0.4.12.4+0 – PERPETUAL state defined in Kanban policy)
+- [x] **E04:S12:T05 – Update Board Display Logic to Omit S00 Stories** - ✅ COMPLETE (v0.4.12.5+0 – Board display logic updated: S00 stories omitted from epic checklists)
+- [x] **E04:S12:T06 – Update Intake Workflow to Assign FR/BR/UXR to S00:Txx** - ✅ COMPLETE (v0.4.12.6+0 – Intake workflow updated: repository assignment step added, traceability bridge creation implemented)
+- [x] **E04:S12:T07 – Update Versioning Policy with S00 Abstract Space Concept** - ✅ COMPLETE (v0.4.12.7+0 – Versioning policy updated: S00 abstract space documented, repository task versioning pattern defined)
+- [x] **E04:S12:T08 – Document Meta-Grouping Pattern** - ✅ COMPLETE (v0.4.12.8+0 – Meta-grouping pattern documented: implementation stories reference repository tasks by task number)
+- [x] **E04:S12:T09 – Update Epic 5, 6, 7 Templates with S00 Pattern** - ✅ COMPLETE (v0.4.12.9+0 – Epic templates updated: S00 added to Story Checklist with PERPETUAL status and board display omission notes)
+- [x] **E04:S12:T10 – Documentation and Testing** - ✅ COMPLETE (v0.4.12.10+0 – Documentation complete: S00 pattern fully documented, templates updated, intake workflow integrated)
 
 > **Format:** `E4:S12:Txx` (Epic 4, Story 12, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.4.12.1+1)`)  
@@ -40,14 +40,14 @@ housekeeping_policy: keep
 
 ## Overview
 
-Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (BRs), and User Experience Research (UXR) reports by creating Story 0 (S00) in Epics 5, 6, and 7. Each FR/BR/UXR becomes a task in its respective repository story, creating perfect 1:1 traceability (FR-001 = E5:S00:T01, BR-001 = E6:S00:T01, UXR-001 = E7:S00:T01).
+Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (BRs), and User Experience Research (UXR) reports by creating Story 0 (S00) in Epics 5, 6, and 7. Each FR/BR/UXR becomes a task in its respective repository story, creating perfect 1:1 traceability (FR-001 = E05:S00:T01, BR-001 = E06:S00:T01, UXR-001 = E07:S00:T01).
 
 ---
 
 ## Goals
 
 - [ ] Create repository stories (S00) for FR, BR, UXR
-- [ ] Establish 1:1 traceability pattern (FR-001 = E5:S00:T01)
+- [ ] Establish 1:1 traceability pattern (FR-001 = E05:S00:T01)
 - [ ] Define PERPETUAL state for repository stories
 - [ ] Update intake workflow to assign FR/BR/UXR to S00:Txx
 - [ ] Update board display logic to omit S00 stories
@@ -57,7 +57,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ## Tasks
 
-### E4:S12:T00 – Story Creation and FR-021 Intake
+### E04:S12:T00 – Story Creation and FR-021 Intake
 
 **Input:** FR-021: FR/BR/UXR Repository Stories (S00 Pattern)  
 **Deliverable:** Story document created, FR-021 linked, tasks defined  
@@ -76,7 +76,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ---
 
-### E4:S12:T01 – Create Epic 5, Story 0: FR Repo (PERPETUAL)
+### E04:S12:T01 – Create Epic 5, Story 0: FR Repo (PERPETUAL)
 
 **Input:** FR-021 requirements, Epic 5 template  
 **Deliverable:** Epic 5, Story 0 "FR Repo" created (PERPETUAL)  
@@ -89,7 +89,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 2. Mark story as PERPETUAL state
 3. Define story purpose: Repository for all Feature Requests
 4. Establish abstract space: v0.5.0.0+0
-5. Document pattern: FR-001 = E5:S00:T01
+5. Document pattern: FR-001 = E05:S00:T01
 6. Update Epic 5 document with S00 in Story Checklist
 7. Add note: S00 omitted from board displays
 
@@ -97,12 +97,12 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 - [ ] Story 0 document created for Epic 5
 - [ ] Story marked as PERPETUAL
 - [ ] Abstract space v0.5.0.0+0 established
-- [ ] Pattern documented: FR-001 = E5:S00:T01
+- [ ] Pattern documented: FR-001 = E05:S00:T01
 - [ ] Epic 5 document updated with S00
 
 ---
 
-### E4:S12:T02 – Create Epic 6, Story 0: BR Repo (PERPETUAL)
+### E04:S12:T02 – Create Epic 6, Story 0: BR Repo (PERPETUAL)
 
 **Input:** FR-021 requirements, Epic 6 template  
 **Deliverable:** Epic 6, Story 0 "BR Repo" created (PERPETUAL)  
@@ -115,7 +115,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 2. Mark story as PERPETUAL state
 3. Define story purpose: Repository for all Bug Reports
 4. Establish abstract space: v0.6.0.0+0
-5. Document pattern: BR-001 = E6:S00:T01
+5. Document pattern: BR-001 = E06:S00:T01
 6. Update Epic 6 document with S00 in Story Checklist
 7. Add note: S00 omitted from board displays
 
@@ -123,12 +123,12 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 - [ ] Story 0 document created for Epic 6
 - [ ] Story marked as PERPETUAL
 - [ ] Abstract space v0.6.0.0+0 established
-- [ ] Pattern documented: BR-001 = E6:S00:T01
+- [ ] Pattern documented: BR-001 = E06:S00:T01
 - [ ] Epic 6 document updated with S00
 
 ---
 
-### E4:S12:T03 – Create Epic 7, Story 0: UXR Repo (PERPETUAL)
+### E04:S12:T03 – Create Epic 7, Story 0: UXR Repo (PERPETUAL)
 
 **Input:** FR-021 requirements, Epic 7 template  
 **Deliverable:** Epic 7, Story 0 "UXR Repo" created (PERPETUAL)  
@@ -141,7 +141,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 2. Mark story as PERPETUAL state
 3. Define story purpose: Repository for all User Experience Research reports
 4. Establish abstract space: v0.7.0.0+0
-5. Document pattern: UXR-001 = E7:S00:T01
+5. Document pattern: UXR-001 = E07:S00:T01
 6. Update Epic 7 document with S00 in Story Checklist
 7. Add note: S00 omitted from board displays
 
@@ -149,12 +149,12 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 - [ ] Story 0 document created for Epic 7
 - [ ] Story marked as PERPETUAL
 - [ ] Abstract space v0.7.0.0+0 established
-- [ ] Pattern documented: UXR-001 = E7:S00:T01
+- [ ] Pattern documented: UXR-001 = E07:S00:T01
 - [ ] Epic 7 document updated with S00
 
 ---
 
-### E4:S12:T04 – Update Kanban Policy with PERPETUAL State Definition
+### E04:S12:T04 – Update Kanban Policy with PERPETUAL State Definition
 
 **Input:** Current Kanban policy, PERPETUAL state requirements  
 **Deliverable:** Kanban policy updated with PERPETUAL state definition  
@@ -172,7 +172,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
    - Still tracked internally
 4. Document S00 pattern:
    - Story 0 (S00) as repository story
-   - FR-001 = E5:S00:T01 pattern
+   - FR-001 = E05:S00:T01 pattern
    - Abstract space concept
 5. Update policy examples
 
@@ -184,7 +184,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ---
 
-### E4:S12:T05 – Update Board Display Logic to Omit S00 Stories
+### E04:S12:T05 – Update Board Display Logic to Omit S00 Stories
 
 **Input:** Current board display logic, S00 omission requirements  
 **Deliverable:** Board views omit E5:S00, E6:S00, E7:S00 from epic checklists  
@@ -212,7 +212,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ---
 
-### E4:S12:T06 – Update Intake Workflow to Assign FR/BR/UXR to S00:Txx
+### E04:S12:T06 – Update Intake Workflow to Assign FR/BR/UXR to S00:Txx
 
 **Input:** Current intake workflow, S00 assignment requirements  
 **Deliverable:** Intake workflow assigns FR/BR/UXR to S00:Txx before implementation assignment  
@@ -229,7 +229,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
    - Step 4: Create traceability bridge (S00:Txx → implementation)
 3. Update intake workflow documentation
 4. Update agent execution guide
-5. Add examples: FR-001 → E5:S00:T01 → E12:S03:T05
+5. Add examples: FR-001 → E05:S00:T01 → E12:S03:T05
 
 **Acceptance Criteria:**
 - [ ] Intake workflow assigns FR/BR/UXR to S00:Txx
@@ -240,7 +240,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ---
 
-### E4:S12:T07 – Update Versioning Policy with S00 Abstract Space Concept
+### E04:S12:T07 – Update Versioning Policy with S00 Abstract Space Concept
 
 **Input:** Current versioning policy, S00 abstract space requirements  
 **Deliverable:** Versioning policy updated with S00 abstract space concept  
@@ -256,9 +256,9 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
    - E6:S00: v0.6.0.0+0
    - E7:S00: v0.7.0.0+0
 4. Document task versioning:
-   - FR-001 = E5:S00:T01 = v0.5.0.1+0
-   - BR-001 = E6:S00:T01 = v0.6.0.1+0
-   - UXR-001 = E7:S00:T01 = v0.7.0.1+0
+   - FR-001 = E05:S00:T01 = v0.5.0.1+0
+   - BR-001 = E06:S00:T01 = v0.6.0.1+0
+   - UXR-001 = E07:S00:T01 = v0.7.0.1+0
 5. Link to FR-018 (abstract space concept)
 6. Update versioning examples
 
@@ -270,7 +270,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ---
 
-### E4:S12:T08 – Document Meta-Grouping Pattern
+### E04:S12:T08 – Document Meta-Grouping Pattern
 
 **Input:** Meta-grouping requirements, current grouping patterns  
 **Deliverable:** Meta-grouping pattern documented  
@@ -280,7 +280,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 **Approach:**
 1. Document meta-grouping pattern:
-   - E5:S02 "Authentication Features" → References: E5:S00:T05, T12, T23
+   - E5:S02 "Authentication Features" → References: E05:S00:T05, T12, T23
    - Task numbers only (no FR numbers)
    - FR traceability via task if needed
 2. Create examples:
@@ -298,7 +298,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ---
 
-### E4:S12:T09 – Update Epic 5, 6, 7 Templates with S00 Pattern
+### E04:S12:T09 – Update Epic 5, 6, 7 Templates with S00 Pattern
 
 **Input:** Epic 5, 6, 7 templates, S00 pattern requirements  
 **Deliverable:** Epic templates updated with S00 repository story  
@@ -329,7 +329,7 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ---
 
-### E4:S12:T10 – Documentation and Testing
+### E04:S12:T10 – Documentation and Testing
 
 **Input:** All previous tasks, complete implementation  
 **Deliverable:** Complete documentation and test coverage  
@@ -369,13 +369,13 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 - [ ] **AC1:** Epic 5, Story 0 "FR Repo" created (PERPETUAL)
 - [ ] **AC2:** Epic 6, Story 0 "BR Repo" created (PERPETUAL)
 - [ ] **AC3:** Epic 7, Story 0 "UXR Repo" created (PERPETUAL)
-- [ ] **AC4:** Policy: FR-001 = E5:S00:T01, BR-001 = E6:S00:T01, UXR-001 = E7:S00:T01
+- [ ] **AC4:** Policy: FR-001 = E05:S00:T01, BR-001 = E06:S00:T01, UXR-001 = E07:S00:T01
 - [ ] **AC5:** Intake workflow assigns FR/BR/UXR to S00:Txx before implementation assignment
 - [ ] **AC6:** Repository stories marked PERPETUAL in Kanban policy
 - [ ] **AC7:** Repository stories excluded from completion analytics
 - [ ] **AC8:** Repository stories omitted from epic checklist displays in board views
 - [ ] **AC9:** Repository stories still tracked internally in Epic documents
-- [ ] **AC10:** Meta-grouping supports task number references (E5:S00:T05, T12, T23)
+- [ ] **AC10:** Meta-grouping supports task number references (E05:S00:T05, T12, T23)
 
 ---
 

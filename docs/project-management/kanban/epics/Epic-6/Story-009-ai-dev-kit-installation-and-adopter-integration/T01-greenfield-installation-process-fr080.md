@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Epic 6, Story 9, Task 1: Greenfield installation process (FR-080)
 
-**Task ID:** E6:S09:T01  
+**Task ID:** E06:S09:T01  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Code:** E6S09T01
+**Code:** E06S09T01
 
 **Version Anchor:** v0.6.9.1+8 (FR-080 **IMPLEMENTED**; closure release)
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Full Task ID:** `E6:S09:T01`
+**Full Task ID:** `E06:S09:T01`
 
 ---
 
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 - **FR-080** accepted scope and dependencies (install telemetry **FR-078** / **FR-079** where applicable).
 - Policy anchor [ADR-003](../../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and distinction from brownfield track (**FR-081**).
 - Existing `INSTALL_IN_YOUR_PROJECT.md` and framework installers (`install_release_workflow.py`, `install_kanban_framework.py`).
-- **IPW planning artifact:** [IPW-E6S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- **IPW planning artifact:** [IPW-E06S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md)
 
 ---
 
@@ -70,12 +70,12 @@ Greenfield adopters need a **single, reproducible first-run path** from acquisit
 
 ## Dependencies / coordination
 
-- **FR-082 / E6:S09:T03:** Canonical repo defaults should align greenfield copy-paste examples (optional ordering: fix defaults early). **Wave 5 note:** Installer examples use **descriptive paths** and submodule-style layout; swapping default clone URLs/org remains **T03 / FR-082** (tracked; not a blocker for FR-080 F1–F5 closure on this task).
+- **FR-082 / E06:S09:T03:** Canonical repo defaults should align greenfield copy-paste examples (optional ordering: fix defaults early). **Wave 5 note:** Installer examples use **descriptive paths** and submodule-style layout; swapping default clone URLs/org remains **T03 / FR-082** (tracked; not a blocker for FR-080 F1–F5 closure on this task).
 - **FR-078 / FR-079:** Preserve compatibility with install logging and feedback submission where applicable.
 
 ---
 
 ## References
 
-- **IPW (planning package):** [IPW-E6S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- **IPW (planning package):** [IPW-E06S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md)
 - [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md)

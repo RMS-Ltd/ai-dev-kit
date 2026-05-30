@@ -17,31 +17,31 @@ housekeeping_policy: keep
 **Version:** v0.2.11.12+1
 **Code:** E2S11
 
-> **Note:** T12 (E2:S11:T12) is **post-story hardening** for BR-053 / GitHub Actions trigger behavior; the story’s original deliverables (T00–T11) were already complete when T12 was filed.
+> **Note:** T12 (E02:S11:T12) is **post-story hardening** for BR-053 / GitHub Actions trigger behavior; the story’s original deliverables (T00–T11) were already complete when T12 was filed.
 
 ---
 
 ## Task Checklist
 
-- [x] **E2:S11:T00 – Story Creation and FR-019 Intake** ✅ COMPLETE (v0.2.11.0+0)
-- [x] **E2:S11:T01 – Design Intake Workflow Architecture** ✅ COMPLETE (v0.2.11.1+2)
-- [x] **E2:S11:T02 – Implement Decision Flow Analysis** ✅ COMPLETE (v0.2.11.2+1)
-- [x] **E2:S11:T03 – Implement Kanban Task Creation Integration** ✅ COMPLETE (v0.2.11.3+1)
-- [x] **E2:S11:T04 – Implement Intake Documentation Updates** ✅ COMPLETE (v0.2.11.4+1)
-- [x] **E2:S11:T05 – Implement Dependency and Reference Wiring** ✅ COMPLETE (v0.2.11.5+1)
-- [x] **E2:S11:T06 – Integrate with Release Workflow** ✅ COMPLETE (v0.2.11.6+1)
-- [x] **E2:S11:T07 – Add Trigger-Aware Execution Support** ✅ COMPLETE (v0.2.11.7+1)
-- [x] **E2:S11:T08 – Create Agent Execution Guide** ✅ COMPLETE (v0.2.11.8+1)
-- [x] **E2:S11:T09 – Documentation and Testing** ✅ COMPLETE (v0.2.11.9+3)
-- [x] **E2:S11:T10 – Investigate CHANGELOG Entry Removal and Harden Processes** - ✅ COMPLETE (v0.2.11.10+1 – Root cause identified, safeguards implemented)
-- [x] **E2:S11:T11 – Fix CHANGELOG Ordering Violations** - ✅ COMPLETE (v0.2.11.11+1 – All ordering violations fixed, duplicates removed, validator passes)
-- [x] **E2:S11:T12 – GitHub Actions Workflow Bug Resolution** – ✅ **COMPLETE (workaround, v0.2.11.12+2)** — intake workflow `.DISABLED`; resolution documented; manual intake (* = workaround, not vendor fix — [kanban-completed](../../kanban-completed.md))
+- [x] **E02:S11:T00 – Story Creation and FR-019 Intake** ✅ COMPLETE (v0.2.11.0+0)
+- [x] **E02:S11:T01 – Design Intake Workflow Architecture** ✅ COMPLETE (v0.2.11.1+2)
+- [x] **E02:S11:T02 – Implement Decision Flow Analysis** ✅ COMPLETE (v0.2.11.2+1)
+- [x] **E02:S11:T03 – Implement Kanban Task Creation Integration** ✅ COMPLETE (v0.2.11.3+1)
+- [x] **E02:S11:T04 – Implement Intake Documentation Updates** ✅ COMPLETE (v0.2.11.4+1)
+- [x] **E02:S11:T05 – Implement Dependency and Reference Wiring** ✅ COMPLETE (v0.2.11.5+1)
+- [x] **E02:S11:T06 – Integrate with Release Workflow** ✅ COMPLETE (v0.2.11.6+1)
+- [x] **E02:S11:T07 – Add Trigger-Aware Execution Support** ✅ COMPLETE (v0.2.11.7+1)
+- [x] **E02:S11:T08 – Create Agent Execution Guide** ✅ COMPLETE (v0.2.11.8+1)
+- [x] **E02:S11:T09 – Documentation and Testing** ✅ COMPLETE (v0.2.11.9+3)
+- [x] **E02:S11:T10 – Investigate CHANGELOG Entry Removal and Harden Processes** - ✅ COMPLETE (v0.2.11.10+1 – Root cause identified, safeguards implemented)
+- [x] **E02:S11:T11 – Fix CHANGELOG Ordering Violations** - ✅ COMPLETE (v0.2.11.11+1 – All ordering violations fixed, duplicates removed, validator passes)
+- [x] **E02:S11:T12 – GitHub Actions Workflow Bug Resolution** – ✅ **COMPLETE (workaround, v0.2.11.12+2)** — intake workflow `.DISABLED`; resolution documented; manual intake (* = workaround, not vendor fix — [kanban-completed](../../kanban-completed.md))
   - Task: [`T12-github-actions-workflow-bug-resolution.md`](Story-011-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
   - **Related BR:** [BR-053](../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)
 
-- [ ] **E2:S11:T13 – GitHub Actions workflow spam emails (BR-051)** - TODO — [Task doc](Story-011-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
+- [ ] **E02:S11:T13 – GitHub Actions workflow spam emails (BR-051)** - TODO — [Task doc](Story-011-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
 
-- [ ] **E2:S11:T14 – GitHub Actions workflow optimization (BR-052)** - TODO — [Task doc](Story-011-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fr-br/BR-052-github-actions-workflow-optimization.md)
+- [ ] **E02:S11:T14 – GitHub Actions workflow optimization (BR-052)** - TODO — [Task doc](Story-011-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fr-br/BR-052-github-actions-workflow-optimization.md)
 
 
 > **Format:** `E2:S11:Txx` (Epic 2, Story 11, Task with 2-digit zero padding)  
@@ -69,7 +69,7 @@ Create an automated intake workflow in the workflow management package that form
 
 ## Tasks
 
-### E2:S11:T10 – Investigate CHANGELOG Entry Removal and Harden Processes
+### E02:S11:T10 – Investigate CHANGELOG Entry Removal and Harden Processes
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
@@ -102,14 +102,14 @@ Create an automated intake workflow in the workflow management package that form
 
 ---
 
-### E2:S11:T11 – Fix CHANGELOG Ordering Violations
+### E02:S11:T11 – Fix CHANGELOG Ordering Violations
 
 **Status:** ✅ COMPLETE (v0.2.11.11+1)  
 **Priority:** MEDIUM  
 **Created:** 2025-12-16  
 **Version:** v0.2.11.11+0
 
-**Problem:** The enhanced validator (E2:S01:T06) now correctly detects Keep a Changelog format and identifies ~100+ ordering violations in CHANGELOG.md. While the validator is fixed, the CHANGELOG content itself needs to be corrected.
+**Problem:** The enhanced validator (E02:S01:T06) now correctly detects Keep a Changelog format and identifies ~100+ ordering violations in CHANGELOG.md. While the validator is fixed, the CHANGELOG content itself needs to be corrected.
 
 **Scope:**
 - Fix all ordering violations in CHANGELOG.md
@@ -133,9 +133,9 @@ Create an automated intake workflow in the workflow management package that form
 **Task Document:** [`Task-011-Fix-CHANGELOG-Ordering-Violations.md`](Story-011-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)
 
 **Related:**
-- E2:S01:T06 - Validator format support (COMPLETE)
-- E2:S11:T10 - CHANGELOG protection (COMPLETE)
-- E3:S02:T06 - Changelog ordering process (PERPETUAL)
+- E02:S01:T06 - Validator format support (COMPLETE)
+- E02:S11:T10 - CHANGELOG protection (COMPLETE)
+- E03:S02:T06 - Changelog ordering process (PERPETUAL)
 
 ---
 

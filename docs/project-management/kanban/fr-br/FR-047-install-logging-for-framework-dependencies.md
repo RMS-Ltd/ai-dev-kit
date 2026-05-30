@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** earlution  
 **Priority:** HIGH  
 **Status:** COMPLETE  
-**Implementing Task:** [E5:S01:T47](../epics/Epic-5/Story-001-fr-repo/T47-install-logging-for-framework-dependencies.md)
+**Implementing Task:** [E05:S01:T47](../epics/Epic-5/Story-001-fr-repo/T47-install-logging-for-framework-dependencies.md)
 
 ---
 
@@ -159,8 +159,8 @@ This FR proposes adding **structured install logging** so that each invocation o
 
 `FR-047` remains the canonical requirement anchor, but implementation is complete and historical. Successor deepening work is delivered under:
 
-- `E6:S07:T111` (comprehensive install event-contract logging quality)
-- `E6:S07:T112` (install feedback submission path and governance)
+- `E06:S07:T111` (comprehensive install event-contract logging quality)
+- `E06:S07:T112` (install feedback submission path and governance)
 
 ---
 
@@ -178,7 +178,7 @@ This FR proposes adding **structured install logging** so that each invocation o
 **Assigned To (Proposed):**
 - Epic: Epic 5 – Documentation Management and Maintenance (FR Repo anchoring)  
 - Story: Story 1 – FR Repo (PERPETUAL)  
-- Task: E5:S01:T47 – Install Logging for Framework Dependencies  
+- Task: E05:S01:T47 – Install Logging for Framework Dependencies  
 - Version: `0.5.1.47+0` (abstract space, to be set when first implementation task runs RW)
 
 **Kanban Links:**

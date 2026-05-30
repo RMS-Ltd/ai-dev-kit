@@ -16,15 +16,15 @@ housekeeping_policy: keep
 **Version:** v0.5.4.1+1  
 **Code:** E5S04
 
-**Note:** This story was renumbered from S03 to S04 as part of the repository story abstract space resolution (E9:S01:T08).
+**Note:** This story was renumbered from S03 to S04 as part of the repository story abstract space resolution (E09:S01:T08).
 
 ---
 
 ## Task Checklist
 
-- [x] **E5:S04:T01 – Create automated documentation update scripts** - ✅ COMPLETE (v0.5.4.1+1 – Documentation update scripts created: version references, cross-references, metadata, link validation, documentation sync)
-- [ ] **E5:S04:T02 – Implement documentation synchronization workflows** - TODO
-- [ ] **E5:S04:T03 – Build documentation change detection and notification** - TODO
+- [x] **E05:S04:T01 – Create automated documentation update scripts** - ✅ COMPLETE (v0.5.4.1+1 – Documentation update scripts created: version references, cross-references, metadata, link validation, documentation sync)
+- [ ] **E05:S04:T02 – Implement documentation synchronization workflows** - TODO
+- [ ] **E05:S04:T03 – Build documentation change detection and notification** - TODO
 
 ---
 
@@ -42,13 +42,13 @@ Automate documentation maintenance tasks to reduce manual effort and improve con
 
 ## Tasks
 
-### E5:S04:T01 – Create automated documentation update scripts
+### E05:S04:T01 – Create automated documentation update scripts
 
 **Status:** ✅ COMPLETE (v0.5.4.1+1)
 
 **Input:** Documentation update triggers  
 **Deliverable:** Automated documentation update scripts  
-**Dependencies:** E5:S01:T03  
+**Dependencies:** E05:S01:T03  
 **Blocker:** None
 
 **Approach:**
@@ -75,7 +75,7 @@ Automate documentation maintenance tasks to reduce manual effort and improve con
 
 ---
 
-### E5:S04:T02 – Implement documentation synchronization workflows
+### E05:S04:T02 – Implement documentation synchronization workflows
 
 **Input:** Documentation maintenance policies  
 **Deliverable:** Documentation synchronization workflow  
@@ -90,11 +90,11 @@ Automate documentation maintenance tasks to reduce manual effort and improve con
 
 ---
 
-### E5:S04:T03 – Build documentation change detection and notification
+### E05:S04:T03 – Build documentation change detection and notification
 
 **Input:** Documentation health monitoring  
 **Deliverable:** Change detection and notification system  
-**Dependencies:** E5:S02:T03  
+**Dependencies:** E05:S02:T03  
 **Blocker:** None
 
 **Approach:**

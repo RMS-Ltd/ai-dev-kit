@@ -13,13 +13,13 @@ housekeeping_policy: keep
 **Submitted:** 2026-04-09  
 **Submitted By:** RMS (AI Dev Kit)  
 **Priority:** HIGH  
-**Status:** COMPLETE (`v0.6.7.110+1` — `RW E6:S07:T110 --art`) — wired as Bucket-D6 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
+**Status:** COMPLETE (`v0.6.7.110+1` — `RW E06:S07:T110 --art`) — wired as Bucket-D6 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
 
-**Implementing Task:** [E6:S07:T110](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+**Implementing Task:** [E06:S07:T110](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 
 > **Predecessor of FR-092 (2026-04-27):** FR-076 expanded UKW to fbuboard scope with concurrency / drift controls. FR-092 (Wave 4) shares the divergence/drift framework and corpus-level normalization model. FR-076 remains valid as historical predecessor.
 
-**Related:** [FR-050](./FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md); [E6:S07:T108](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md); [E2:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Related:** [FR-050](./FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md); [E06:S07:T108](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md); [E02:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 

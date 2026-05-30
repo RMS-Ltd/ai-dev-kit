@@ -6,16 +6,16 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E2:S16:T10 — Ad-hoc Repository Infrastructure Maintenance (Perpetual)
+# E02:S16:T10 — Ad-hoc Repository Infrastructure Maintenance (Perpetual)
 
-**Task ID:** E2:S16:T10
+**Task ID:** E02:S16:T10
 **Status:** IN PROGRESS
 **Priority:** MEDIUM
 **Estimated Effort:** Small
 **Created:** 2026-05-19
 **Last updated:** 2026-05-29 16:28:21 UTC (v0.2.16.10+4: project root hygiene — remove no/low-value artifacts; `.gitignore`)
 **Version:** v0.2.16.10+4
-**Code:** E2S16T10
+**Code:** E02S16T10
 **Task Type:** Perpetual Maintenance
 
 **Forensic Marker:** v0.2.16.10+4
@@ -44,8 +44,8 @@ Catch-all perpetual lane for ad-hoc repository infrastructure patches that do no
 ## What this task does NOT own
 
 - Feature-level releases (use the relevant E:S:T)
-- Kanban board synchronization (owned by E2:S16:T04)
-- Markdown-only documentation updates (owned by E2:S16:T05)
+- Kanban board synchronization (owned by E02:S16:T04)
+- Markdown-only documentation updates (owned by E02:S16:T05)
 - Workflow engine redesigns (use dedicated FR/BR tasks)
 - Package management changes (owned by Epic 6)
 
@@ -62,8 +62,8 @@ Catch-all perpetual lane for ad-hoc repository infrastructure patches that do no
 
 ## Related
 
-- [E2:S16:T03 — Rehouse workflow perpetual tasks and harden guardrails](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — umbrella workflow maintenance
-- [E2:S16:T04 — Ad-hoc Kanban synchronization and hygiene (Perpetual)](T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) — kanban operational lane
-- [E2:S16:T05 — Markdown Documentation Maintenance (Perpetual)](T05-markdown-documentation-maintenance-perpetual.md) — docs-only lane
+- [E02:S16:T03 — Rehouse workflow perpetual tasks and harden guardrails](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — umbrella workflow maintenance
+- [E02:S16:T04 — Ad-hoc Kanban synchronization and hygiene (Perpetual)](T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) — kanban operational lane
+- [E02:S16:T05 — Markdown Documentation Maintenance (Perpetual)](T05-markdown-documentation-maintenance-perpetual.md) — docs-only lane
 
 ---

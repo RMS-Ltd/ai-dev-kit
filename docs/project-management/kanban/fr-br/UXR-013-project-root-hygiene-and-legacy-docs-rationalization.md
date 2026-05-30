@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** INTAKE  
 **Code:** UXR-013
 
-**Implementing Task:** [E7:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
+**Implementing Task:** [E07:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
 
 **Related:** [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
 
@@ -109,7 +109,7 @@ Determine which root-level artifacts are still canonical and which should be mov
 
 - [x] File UXR intake record with explicit scope and acceptance direction.
 - [x] Create linked implementing task in a maintenance story.
-- [ ] Run IPW for `E7:S01:T10` before implementation.
+- [ ] Run IPW for `E07:S01:T10` before implementation.
 - [ ] Proceed with implementation only after explicit user authorization.
 
 ---
@@ -125,7 +125,7 @@ Determine which root-level artifacts are still canonical and which should be mov
 **Related Work:**
 - [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
 - [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
-- [E7:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
+- [E07:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
 
 ---
 
@@ -143,7 +143,7 @@ Determine which root-level artifacts are still canonical and which should be mov
 **Assigned To:**
 - Epic: E7 - Codebase Maintenance and Review
 - Story: E7:S01 - Codebase Maintenance Tasks
-- Task: E7:S01:T10 - Project root hygiene and legacy docs rationalization
+- Task: E07:S01:T10 - Project root hygiene and legacy docs rationalization
 - Version: `0.7.1.10+1` (target at release time)
 
 **Kanban Links:**

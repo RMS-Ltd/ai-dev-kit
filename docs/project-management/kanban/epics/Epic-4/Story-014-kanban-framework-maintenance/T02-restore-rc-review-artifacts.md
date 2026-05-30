@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # T02 – Restore RC Review Planning Artifacts
 
-**Task ID:** E4:S14:T02  
+**Task ID:** E04:S14:T02  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Small  

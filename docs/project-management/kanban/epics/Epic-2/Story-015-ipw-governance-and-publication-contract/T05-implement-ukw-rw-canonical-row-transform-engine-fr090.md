@@ -8,17 +8,17 @@ housekeeping_policy: keep
 
 # Epic 2, Story 15, Task 5: Implement UKW/RW canonical row transform engine (FR-090)
 
-**Task ID:** E2:S15:T05  
-**Status:** SUPERSEDED -> [E2:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
+**Task ID:** E02:S15:T05  
+**Status:** SUPERSEDED -> [E02:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Large  
 **Created:** 2026-04-22  
 **Last updated:** 2026-04-27 (superseded by FR-092 meta-task; B1 outcome drift owned by Wave 4)  
-**Code:** E2S15T05
+**Code:** E02S15T05
 
 **Upstream (historical):** [FR-090 — UKW canonical row transform engine and board-specific rendering contracts](../../../fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)  
-**Current owner:** [E2:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
-**Current IPP:** [IPP-E2S15T07](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+**Current owner:** [E02:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
+**Current IPP:** [IPP-E02S15T07](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 > **Supersede note (2026-04-27):** T05 Phase-4 evidence asserted AC1-AC6 satisfied, but the user-visible outcome on live `kboard.md` / `fbuboard.md` is not produced — duplicate tail tokens persist after RW. The drift (FR-092 Bucket B1) is owned by the meta program (Wave 4). All Phase 1-4 implementation evidence below remains valid as predecessor work; final canonical-outcome closure is gated on FR-092 sign-off. Do not run RW against T05 — release this scope under T07 instead.
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 - BR-069 and T04 evidence confirms non-canonical row mutation behavior across UKW/RW.
 - FR-090 defines redesign requirements for shared transform pipeline and board-specific rendering contracts.
 - Existing implementation surface: `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`.
-- IPP planning artifact published: [IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090](../../../../../implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)
+- IPP planning artifact published: [IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090](../../../../../implementation-cycles/IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)
 - Current `kboard`/`fbuboard` state still exhibits repeated tail-segment multiplication on some active rows where per-segment timestamp evidence is absent, partial, or ambiguous.
 
 ---
@@ -76,18 +76,18 @@ Task T05 implements the FR-090 architecture so both workflows remain cohesive, l
 
 - [FR-090](../../../fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
 - [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [E2:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
-- [IPP-E2S15T04](../../../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
-- [IPP-E2S15T05](../../../../../implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)
+- [E02:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
+- [IPP-E02S15T04](../../../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
+- [IPP-E02S15T05](../../../../../implementation-cycles/IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)
 
 ---
 
 ## Planning Artifacts (ICW/IPW Package)
 
-- [IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090](../../../../../implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)
-- [ICW-E2S15T05-specification](../../../../../implementation-cycles/ICW-E2S15T05-specification.md)
-- [ICW-E2S15T05-test-design](../../../../../implementation-cycles/ICW-E2S15T05-test-design.md)
-- [ICW-E2S15T05-implementation-plan](../../../../../implementation-cycles/ICW-E2S15T05-implementation-plan.md)
+- [IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090](../../../../../implementation-cycles/IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)
+- [ICW-E02S15T05-specification](../../../../../implementation-cycles/ICW-E02S15T05-specification.md)
+- [ICW-E02S15T05-test-design](../../../../../implementation-cycles/ICW-E02S15T05-test-design.md)
+- [ICW-E02S15T05-implementation-plan](../../../../../implementation-cycles/ICW-E02S15T05-implementation-plan.md)
 
 ## AC Traceability to Planning Package
 

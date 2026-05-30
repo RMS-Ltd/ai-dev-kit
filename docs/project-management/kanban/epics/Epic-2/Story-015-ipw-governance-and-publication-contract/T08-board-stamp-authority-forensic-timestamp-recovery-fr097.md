@@ -8,30 +8,30 @@ housekeeping_policy: keep
 
 # Epic 2, Story 15, Task 8: Board stamp authority and forensic timestamp recovery (FR-097)
 
-**Task ID:** E2:S15:T08  
+**Task ID:** E02:S15:T08  
 **Status:** ✅ COMPLETE (v0.2.15.8+2)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Large (multi-wave; validator + pipeline + backfill)  
 **Created:** 2026-05-20  
-**Last updated:** 2026-05-20 (implementation delivered; pending `RW E2:S15:T08` for version anchor)  
-**Code:** E2S15T08
+**Last updated:** 2026-05-20 (implementation delivered; pending `RW E02:S15:T08` for version anchor)  
+**Code:** E02S15T08
 
 **Upstream:** [FR-097 — Board stamp authority, blocking validation, and forensic timestamp recovery](../../../fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 
-**Planning artifact (IPP):** [IPP-E2S15T08 — Board stamp authority and forensic timestamp recovery](../../../../../implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
+**Planning artifact (IPP):** [IPP-E02S15T08 — Board stamp authority and forensic timestamp recovery](../../../../../implementation-cycles/IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
 **Reopens closure for:**
 
-- [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) — [E2:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) (historical delivery retained; forensic truth owned here)
-- [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md) — [E6:S07:T115](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md) (Wave 6 script gate retained; agentic + backfill owned here)
+- [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) — [E02:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) (historical delivery retained; forensic truth owned here)
+- [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md) — [E06:S07:T115](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md) (Wave 6 script gate retained; agentic + backfill owned here)
 
-**Predecessor:** [E2:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) / [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+**Predecessor:** [E02:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) / [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 ---
 
 ## Input
 
-- [IPP-E2S15T08](../../../../../implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
+- [IPP-E02S15T08](../../../../../implementation-cycles/IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
 - User report: mass-identical `Last modified` on `fbuboard.md` (~61× `2026-04-20 15:52 UTC`) destroys staleness signal.
 - Confirmed conflict: UKW guides mandate row temporal-drift normalization while FR-092 Wave 6 forbids synthetic stamp churn on hygiene paths.
@@ -66,12 +66,12 @@ Forensic row stamps are a primary signal for workload and staleness. Board-hygie
 - [x] **AC3:** Fbuboard cleanup path cannot append `now()` stamps on hygiene runs (`non_substantive`; tests green).
 - [x] **AC4:** Automatic backfill — 71 rows changed; [fr097-backfill-report.json](../../../../../docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json).
 - [x] **AC5:** Gate 8 homogeneity PASS post-backfill; stamp-diff validator + tests shipped.
-- [x] **AC6:** BR-069 + UXR-009 CLOSED on `RW E2:S15:T08` release (v0.2.15.8+1).
+- [x] **AC6:** BR-069 + UXR-009 CLOSED on `RW E02:S15:T08` release (v0.2.15.8+1).
 - [x] **AC7 (optional):** Agent skill NONE — validator + snapshot sufficient (IPP §4.2).
 
 ---
 
 ## References
 
-- [IPP-E2S15T04](../../../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md) (historical)
-- [IPP-E2S15T07](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md) (Wave 6 stamp gate)
+- [IPP-E02S15T04](../../../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md) (historical)
+- [IPP-E02S15T07](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md) (Wave 6 stamp gate)

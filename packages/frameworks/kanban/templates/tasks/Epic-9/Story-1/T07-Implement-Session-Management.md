@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E9:S1:T7` (e.g., `E4:S11:T01`)
+**Format:** `E09:S01:T07` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E09:S01:T07`
 
@@ -71,10 +71,10 @@ Implement session management for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E9:S1:T06
+- E09:S01:T06
 
 **Blocks:**
-- E9:S1:T08
+- E09:S01:T08
 
 **Blocked By:**
 - [What blocks this task]

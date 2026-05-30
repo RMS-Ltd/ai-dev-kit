@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S4:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S04:T02`)
 
 **Full Task ID:** `E07:S04:T02`
 
@@ -34,7 +34,7 @@ Identify pain points and opportunities for the {PROJECT_NAME} project. Analyze u
 
 ## Input
 
-- User journey maps (from E7:S4:T01)
+- User journey maps (from E07:S04:T01)
 - User feedback (from E7:S3, if available)
 - Usability test findings (from E7:S2, if available)
 - User research findings (from E7:S1, if available)
@@ -84,11 +84,11 @@ Identify pain points and opportunities for the {PROJECT_NAME} project. Analyze u
 ## Dependencies
 
 **Depends On:**
-- E7:S4:T01: Map user journeys (identification uses journey maps)
+- E07:S04:T01: Map user journeys (identification uses journey maps)
 
 **Blocks:**
-- E7:S4:T03: Design user experience flows (flows address pain points and opportunities)
-- E7:S4:T05: Create experience design recommendations (recommendations address pain points)
+- E07:S04:T03: Design user experience flows (flows address pain points and opportunities)
+- E07:S04:T05: Create experience design recommendations (recommendations address pain points)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -97,9 +97,9 @@ Identify pain points and opportunities for the {PROJECT_NAME} project. Analyze u
 ## Related Work
 
 **Related Tasks:**
-- E7:S4:T01: Map user journeys (identification uses journey maps)
-- E7:S4:T03: Design user experience flows (flows address pain points and opportunities)
-- E7:S4:T05: Create experience design recommendations (recommendations address pain points)
+- E07:S04:T01: Map user journeys (identification uses journey maps)
+- E07:S04:T03: Design user experience flows (flows address pain points and opportunities)
+- E07:S04:T05: Create experience design recommendations (recommendations address pain points)
 
 **Related Stories:**
 - E7:S4: User Journey Mapping and Experience Design (this story)

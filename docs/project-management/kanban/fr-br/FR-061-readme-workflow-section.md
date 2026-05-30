@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Severity:** N/A  
 **Status:** IMPLEMENTED (v0.5.1.64+1)  
-**Assigned Task:** E5:S01:T64 — [Task document](../epics/Epic-5/Story-001-fr-repo/T64-readme-workflow-section.md)
+**Assigned Task:** E05:S01:T64 — [Task document](../epics/Epic-5/Story-001-fr-repo/T64-readme-workflow-section.md)
 
 ---
 
@@ -133,7 +133,7 @@ This feature is needed:
 
 ## Release History
 
-- **v0.5.1.64+1 (E5:S01:T64):** README **Workflows** section (Cursor triggers + registry table + vwmp links); README body restored (removed erroneous placeholder); Quick Start / framework bullets aligned to **11** registered workflows.
+- **v0.5.1.64+1 (E05:S01:T64):** README **Workflows** section (Cursor triggers + registry table + vwmp links); README body restored (removed erroneous placeholder); Quick Start / framework bullets aligned to **11** registered workflows.
 
 ---
 

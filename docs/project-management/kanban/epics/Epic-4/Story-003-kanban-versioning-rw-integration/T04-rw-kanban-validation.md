@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # RW → Kanban Integration Validation
 
-**Task:** E4:S03:T04 – Validate RW → Kanban integration in dev-kit  
+**Task:** E04:S03:T04 – Validate RW → Kanban integration in dev-kit  
 **Date:** 2025-12-02  
 **Author:** AI Agent (Auto)  
 **Status:** ✅ COMPLETE (v0.4.3.4+1)  
-**Gaps Addressed:** E4:S03:T07 (in progress)
+**Gaps Addressed:** E04:S03:T07 (in progress)
 
 ---
 
@@ -102,7 +102,7 @@ This report validates the integration between Release Workflow (RW) and Kanban s
    - `**Version:** v0.4.3.3+1` ✅ **UPDATED**
 
 2. **Task Checklist:**
-   - `- [x] **E4:S03:T03 – Validate Versioning → RW integration in dev-kit** ✅ COMPLETE (v0.4.3.3+1)` ✅ **UPDATED**
+   - `- [x] **E04:S03:T03 – Validate Versioning → RW integration in dev-kit** ✅ COMPLETE (v0.4.3.3+1)` ✅ **UPDATED**
    - Forensic marker correctly added
 
 3. **Detailed Task Sections:**
@@ -422,9 +422,9 @@ The RW → Kanban integration is **partially implemented** with **good foundatio
 
 ---
 
-## 8. Fix Status (E4:S03:T07)
+## 8. Fix Status (E04:S03:T07)
 
-**Task:** E4:S03:T07 – Address RW → Kanban integration gaps identified in T004  
+**Task:** E04:S03:T07 – Address RW → Kanban integration gaps identified in T004  
 **Status:** 🔄 IN PROGRESS
 
 ### Fixes Applied

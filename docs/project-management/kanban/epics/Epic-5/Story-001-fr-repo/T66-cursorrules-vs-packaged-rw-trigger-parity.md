@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 66: Cursorrules vs Packaged RW Trigger Section Parity
 
-**Task ID:** E5:S01:T66  
+**Task ID:** E05:S01:T66  
 **Status:** COMPLETE (2026-03-30 — dual-source parity doc + excerpt fix + root `.cursorrules` link)  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 — released v0.5.1.66+2 (RW-k used +1)  
 **Version:** v0.5.1.66+2  
 **Version Anchor:** v0.5.1.66+2  
-**Code:** E5S01T66
+**Code:** E05S01T66
 
 **Repository Pattern:** Internal scaffold (no FR yet).
 
@@ -34,7 +34,7 @@ Define and implement a **parity discipline**: checklist doc, merge procedure, or
 
 - Current `.cursorrules` RW block.
 - `cursorrules-rw-trigger-section.md` full trigger + step list.
-- [E2:S16:T03](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (RW maintenance perpetual) for ownership overlap.
+- [E02:S16:T03](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (RW maintenance perpetual) for ownership overlap.
 
 ---
 
@@ -55,8 +55,8 @@ Define and implement a **parity discipline**: checklist doc, merge procedure, or
 
 ## Related Work
 
-- **E5:S01:T63** / **FR-060** — mandatory RW task id + validators.
-- **E5:S01:T38** / **FR-038** — Step 7 scoped UKW naming.
+- **E05:S01:T63** / **FR-060** — mandatory RW task id + validators.
+- **E05:S01:T38** / **FR-038** — Step 7 scoped UKW naming.
 
 ---
 

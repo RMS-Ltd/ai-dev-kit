@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E3:S04:T03 – Validate Versioning Behavior Against Documented Guidance
+# E03:S04:T03 – Validate Versioning Behavior Against Documented Guidance
 
-**Task ID:** E3:S04:T03  
+**Task ID:** E03:S04:T03  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E3 – Numbering & Versioning Framework  
@@ -137,7 +137,7 @@ Validate that actual versioning behavior in the codebase matches the documented 
 - Task number within story
 - Set when starting new task
 - Constant for all releases within that task
-- Format: `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E9:S21:T03`)
+- Format: `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E09:S21:T03`)
 - Task numbers are 2-digit (01-99)
 - **CRITICAL:** Task MUST have a discrete Task document before versioning
 - **CRITICAL:** Task document Task ID MUST align with version TASK component
@@ -145,7 +145,7 @@ Validate that actual versioning behavior in the codebase matches the documented 
 **Actual Implementation:**
 - ✅ Version file: `VERSION_TASK = 2` (matches Task 2)
 - ✅ Task document exists: `T02-component-inventory.md`
-- ✅ Task ID alignment: `E3:S04:T02` matches `VERSION_TASK = 2`
+- ✅ Task ID alignment: `E03:S04:T02` matches `VERSION_TASK = 2`
 - ✅ Task document includes required fields (Task ID, Scope, Acceptance Criteria, Status, Version Anchor)
 
 **Validation Result:** ✅ **PASS** - TASK rules match documentation

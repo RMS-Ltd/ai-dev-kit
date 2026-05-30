@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E2:S10:T00](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
+**Implementing Task:** [E02:S10:T00](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
 
 ---
 
@@ -121,9 +121,9 @@ This feature is needed:
 ## Use Cases
 
 **Primary Use Case:**
-1. Developer creates a new Task document (e.g., E4:S06:T11)
+1. Developer creates a new Task document (e.g., E04:S06:T11)
 2. RW executes immediately to produce `v0.4.6.11+0` (doc-init)
-3. Changelog entry: "Doc Init: E4:S06:T11 - [Task description]"
+3. Changelog entry: "Doc Init: E04:S06:T11 - [Task description]"
 4. Subsequent functional work for T11 starts at `+1`
 
 **Additional Use Cases:**

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Code:** UXR-006  
 **Last updated:** 2026-04-07 (v0.2.1.10+2 - strict-equal-epic behavior released via RW)  
 **Version:** v0.2.1.10+2 (SemVer: v0.4.628+2)  
-**Implementing Task:** [E2:S01:T10](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md)
+**Implementing Task:** [E02:S01:T10](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md)
 
 ---
 

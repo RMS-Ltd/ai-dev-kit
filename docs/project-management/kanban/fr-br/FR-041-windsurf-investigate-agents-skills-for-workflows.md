@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** CLOSED (migration complete)  
 **Priority:** HIGH  
-**Migration:** E7:S06:T01 completed Windsurf artifact cleanup. Skills migrated to `.cursor/skills/`; `.windsurf/` removed. Cursor is primary; AGENTS.md/SKILL.md patterns applied via .cursor/skills/.  
+**Migration:** E07:S06:T01 completed Windsurf artifact cleanup. Skills migrated to `.cursor/skills/`; `.windsurf/` removed. Cursor is primary; AGENTS.md/SKILL.md patterns applied via .cursor/skills/.  
 **Created:** 2026-03-11  
 **Last updated:** 2026-03-11 (v0.6.6.3+2 - FR created)  
 **Started:** [TBD]  
@@ -171,7 +171,7 @@ housekeeping_policy: keep
 - **BR-008:** Arbitrary 80% threshold contradicts agentic intelligence
 - **FR-010:** Implement actual agentic intelligence task mapping
 - **FR-012:** Agentic kanban task creation from FR/BR
-- **E5:S01:T31:** Multi-agent coordination feasibility investigation
+- **E05:S01:T31:** Multi-agent coordination feasibility investigation
 
 ### Windsurf Integration
 - **Cascade Agent System:** Current Cascade agent behavior and limitations

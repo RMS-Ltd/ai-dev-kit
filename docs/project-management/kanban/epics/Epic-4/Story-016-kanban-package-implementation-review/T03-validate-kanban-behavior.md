@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # T03 – Validate Kanban Behavior Against Documented Guidance
 
-**Task ID:** E4:S16:T03  
+**Task ID:** E04:S16:T03  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-01-19  
 **Last updated:** 2026-01-19 (v0.4.16.3+1 – Validation complete: All 17 validation points fully compliant)  
 **Version:** v0.4.16.3+1  
-**Code:** E4S16T03
+**Code:** E04S16T03
 
 ---
 
@@ -35,7 +35,7 @@ Validate that the Kanban framework package's actual behavior matches the documen
 
 - **Templates:** `packages/frameworks/kanban/templates/`
 - **Actual Implementation:** `docs/project-management/kanban/` (dev-kit's Kanban implementation)
-- **Expectations Baseline:** From E4:S16:T01
+- **Expectations Baseline:** From E04:S16:T01
 
 ---
 
@@ -105,12 +105,12 @@ Behavior validation report documenting:
 ## Dependencies
 
 **Depends On:**
-- E4:S16:T01 (Expectations baseline) ✅ COMPLETE
-- E4:S16:T02 (Component inventory) ✅ COMPLETE
+- E04:S16:T01 (Expectations baseline) ✅ COMPLETE
+- E04:S16:T02 (Component inventory) ✅ COMPLETE
 
 **Blocks:**
-- E4:S16:T04 (Integration review)
-- E4:S16:T05 (Gap log creation)
+- E04:S16:T04 (Integration review)
+- E04:S16:T05 (Gap log creation)
 
 **Parallel Development Candidacy:** Safe (validation work, read-only analysis)
 
@@ -133,7 +133,7 @@ This validation compares documented guidance against actual implementation behav
 #### KG-R1: All substantive work MUST be task-driven ✅ **COMPLIANT**
 
 **Validation:**
-- ✅ All recent work (E4:S16:T01, T02, T03) has corresponding task documents
+- ✅ All recent work (E04:S16:T01, T02, T03) has corresponding task documents
 - ✅ BR-035 → T35 mapping exists (bidirectional wiring verified)
 - ✅ Story documents contain task checklists with version markers
 - ✅ No substantive work found without task mapping
@@ -150,7 +150,7 @@ This validation compares documented guidance against actual implementation behav
 #### KG-R2: Every FR/BR MUST result in at least one Kanban Task ✅ **COMPLIANT**
 
 **Validation:**
-- ✅ BR-035 has corresponding task E6:S01:T35
+- ✅ BR-035 has corresponding task E06:S01:T35
 - ✅ Bidirectional wiring verified: BR links to task, task links to BR
 - ✅ Repository story pattern (S01) correctly implemented for FR/BR repos
 
@@ -187,7 +187,7 @@ This validation compares documented guidance against actual implementation behav
 #### KG-R4: FR/BR → Task → Story → Epic flow ✅ **COMPLIANT**
 
 **Validation:**
-- ✅ BR-035 → E6:S01:T35 → Story-001-br-repo → Epic-6 flow verified
+- ✅ BR-035 → E06:S01:T35 → Story-001-br-repo → Epic-6 flow verified
 - ✅ Repository story pattern (S01) correctly used for BR repository
 - ✅ Task creation workflow follows documented decision flow
 
@@ -292,7 +292,7 @@ This validation compares documented guidance against actual implementation behav
 #### FR/BR → Task Mapping ✅ **COMPLIANT**
 
 **Validation:**
-- ✅ BR-035 correctly mapped to E6:S01:T35
+- ✅ BR-035 correctly mapped to E06:S01:T35
 - ✅ Bidirectional wiring implemented (BR → Task, Task → BR)
 - ✅ Intake workflow exists (E4:S02) and is COMPLETE
 
@@ -317,7 +317,7 @@ This validation compares documented guidance against actual implementation behav
 - Epic 5: Story 1 (FR Repo) - S01 pattern
 - Epic 6: Story 1 (BR Repo) - S01 pattern
 - Governance policy documents S01 as repository story pattern
-- S00 migration to S01 completed (E9:S01:T08)
+- S00 migration to S01 completed (E09:S01:T08)
 
 **Compliance:** ✅ **FULLY COMPLIANT**
 
@@ -337,7 +337,7 @@ This validation compares documented guidance against actual implementation behav
 - Board sections: Must Have (M), Should Have (S), Could Have (C), Ongoing (O), Won't Have (W)
 - Task T03 appears in "Should Have (S)" section
 - Perpetual tasks (T101, T102) in "Ongoing (O)" section
-- Task format: `**E4:S16:T03** – Validate Kanban behavior...`
+- Task format: `**E04:S16:T03** – Validate Kanban behavior...`
 
 **Compliance:** ✅ **FULLY COMPLIANT**
 

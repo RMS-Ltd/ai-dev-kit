@@ -538,13 +538,16 @@ The following patterns are **explicitly prohibited**:
 
 **Task Numbering and Format:**
 
+- **Inline notation (write-default):** `E{NN}:S{NN}:T{NN}` where each numeric component uses **two-digit zero-padding** when the value is `<10` (e.g. `E02:S01:T04`, not `E2:S1:T4`). Values `≥10` use natural width (`E21:S16:T57`). Compact trigger tokens (e.g. `E02S16T04`) follow the same padding rules.
+- **Read tolerance:** Parsers and validators MAY accept legacy unpadded forms for backward compatibility; **new writes** (UKW, RW Step 7, intake, agents) MUST emit the padded write-default.
 - **Format:** `E{epic}:S{story}:T{task}` where task is:
   - **Regular tasks:** Txx, 2-digit zero-padded (T01–T99)
   - **Perpetual tasks:** Txxx, 3-digit (T101+)
 - **Deprecated:** T0xx (T001–T099) is deprecated and MUST NOT be used
 - **Example (regular):** `E20:S07:T10` = Epic 20, Story 7, Task 10
-- **Example (regular):** `E1:S01:T01` = Epic 1, Story 1, Task 1
-- **Example (perpetual):** `E2:S16:T03` = Epic 6, Story 7, Task 101 (UKW - perpetual task)
+- **Example (regular):** `E01:S01:T01` = Epic 1, Story 1, Task 1
+- **Example (regular, padded):** `E02:S16:T04` = Epic 2, Story 16, Task 4
+- **Example (perpetual):** `E02:S16:T101` = Epic 2, Story 16, Task 101 (UKW perpetual)
 - **Tracked:** Git commits reference task ID (or equivalent in your VCS)
 
 **File Naming Convention:**

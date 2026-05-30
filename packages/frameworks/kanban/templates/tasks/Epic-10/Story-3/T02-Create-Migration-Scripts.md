@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E10:S3:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E10:S03:T02`)
 
 **Full Task ID:** `E10:S03:T02`
 
@@ -34,7 +34,7 @@ Create migration scripts for the {PROJECT_NAME} project. Develop scripts that ex
 
 ## Input
 
-- Data migration strategy (from E10:S3:T01)
+- Data migration strategy (from E10:S03:T01)
 - Database schema (from E10:S1)
 - Data access layer (from E10:S2)
 - Migration requirements
@@ -83,10 +83,10 @@ Create migration scripts for the {PROJECT_NAME} project. Develop scripts that ex
 ## Dependencies
 
 **Depends On:**
-- E10:S3:T01: Design data migration strategy (migration scripts implement strategy)
+- E10:S03:T01: Design data migration strategy (migration scripts implement strategy)
 
 **Blocks:**
-- E10:S3:T03: Implement data seeding (seeding may use migration patterns)
+- E10:S03:T03: Implement data seeding (seeding may use migration patterns)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -95,8 +95,8 @@ Create migration scripts for the {PROJECT_NAME} project. Develop scripts that ex
 ## Related Work
 
 **Related Tasks:**
-- E10:S3:T01: Design data migration strategy (migration scripts implement strategy)
-- E10:S3:T03: Implement data seeding (seeding may use migration patterns)
+- E10:S03:T01: Design data migration strategy (migration scripts implement strategy)
+- E10:S03:T03: Implement data seeding (seeding may use migration patterns)
 
 **Related Stories:**
 - E10:S3: Data Migration and Seeding (this story)

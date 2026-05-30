@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** COMPLETE  
 **Last updated:** 2026-05-20 — §8 ICW trio vs consolidated IPP; `dev-kit-ipw-ipp-vs-icw-artifacts.md`; RW **v0.2.16.3+6** traceability.  
-**Implementation Task:** [E5:S01:T42](../epics/Epic-5/Story-001-fr-repo/T42-implementation-planning-workflow-ipw.md)
+**Implementation Task:** [E05:S01:T42](../epics/Epic-5/Story-001-fr-repo/T42-implementation-planning-workflow-ipw.md)
 
 ---
 
@@ -97,7 +97,7 @@ It also **replaces the `ICW` trigger for planning**: users and docs should prefe
 | --------- | ----- | ----------- |
 | **Task doc → Plan doc** | Task doc **Input** | Link to plan doc (e.g. `[T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md)`) |
 | **Task doc → Plan doc** | Task doc **References** | Same link |
-| **Plan doc → Task doc** | Plan doc header | `**Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E4:S11:T07)` |
+| **Plan doc → Task doc** | Plan doc header | `**Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)` |
 
 - **Task doc must link to plan doc** – Otherwise the plan is orphaned; developers cannot discover it from the task.
 - **Plan doc must link to task doc** – Otherwise the plan lacks context; the host task cannot be identified.
@@ -194,7 +194,7 @@ Durable planning output may appear in either form under `docs/implementation-cyc
 
 ## Use Cases
 
-1. **Planning for E4:S11:T07:** User requests plan → Agent runs IPW → Creates `T07-planning-spec-tests-impl.md` with spec, tests, impl → Wires to T07 task doc (Input, References) and adds Host Task in plan → Plan discoverable from task and vice versa
+1. **Planning for E04:S11:T07:** User requests plan → Agent runs IPW → Creates `T07-planning-spec-tests-impl.md` with spec, tests, impl → Wires to T07 task doc (Input, References) and adds Host Task in plan → Plan discoverable from task and vice versa
 2. **Starting implementation:** Developer opens task doc → Sees plan doc in Input/References → Navigates to spec, test design, impl plan → Follows plan for Step 3 and 4
 3. **Validating planning completeness:** Automated or manual check ensures no plan doc exists without task doc reference, and wiring is bidirectional
 4. **Cursor/Agent trigger:** User types **`IPW`** or **`IPW E:S:T`** → Agent executes IPW workflow (replaces "Plan ExxSxxTxx: Define spec, design tests, plan impl" and supersedes **`ICW`** for that purpose)
@@ -219,7 +219,7 @@ Durable planning output may appear in either form under `docs/implementation-cyc
 - [x] **FR-042:R09** - Instruction **`IPW`** (or `IPW ExxSxxTxx`) replaces "Plan ExxSxxTxx: Ascertain requirements, define spec, design tests, plan impl" as the canonical trigger
 - [x] **FR-042:R10** - **`ICW`** is **not** a parallel planning workflow: `.cursorrules` (and adopter equivalents) state **IPW canonical**; **`ICW`** is removed, folded into IPW wording, or documented as **deprecated alias** only (same steps as IPW)
 - [x] **FR-042:R11** - Packaged workflow docs (`workflow-registry.yaml`, `implementation-cycle-workflow/README.md` or successor) explain **ICW → IPW** consolidation and point maintainers to IPW
-- [x] **FR-042:R12** - **FR-040 / E5:S01:T40** and **FR-048 / E5:S01:T48** cross-reference IPW: task-ID and artifact expectations for planning apply to **IPW**; ICW-specific phrasing updated where it implied a second planning pipeline
+- [x] **FR-042:R12** - **FR-040 / E05:S01:T40** and **FR-048 / E05:S01:T48** cross-reference IPW: task-ID and artifact expectations for planning apply to **IPW**; ICW-specific phrasing updated where it implied a second planning pipeline
 - [x] **FR-042:R13** - Optional: **technical follow-up** — repoint or retire `icw_handler.py` / ICW YAML **or** wrap as thin IPW helper (config-driven output dir, no duplicate user-facing workflow brand)
 
 ### Non-Functional Requirements
@@ -287,12 +287,12 @@ Durable planning output may appear in either form under `docs/implementation-cyc
 - **Implementation Cycle SoP:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`
 - **FR-035:** Task Template Cross-Wiring Section (bidirectional wiring)
 - **FR-016:** Kanban Granularity & Discrete Task Docs (3-tier structure)
-- **E4:S11:T07:** Incident that triggered this FR (plan doc created without wiring)
+- **E04:S11:T07:** Incident that triggered this FR (plan doc created without wiring)
 - **create-rule / create-skill:** May extend to include IPW
-- **FR-040 / E5:S01:T40:** Implementation Cycle Workflow (ICW) — **planning scope merged into IPW**; legacy implementation remains historical
-- **FR-048 / E5:S01:T48:** ICW task identifier — binding applies to **IPW** planning sessions
-- **BR-055 / E4:S14:T03:** ICW presence in framework package (historical); consolidation docs should not reintroduce “two planning workflows”
-- **E5:S01:T42:** Repository anchor task for this FR (implementation + doc alignment)
+- **FR-040 / E05:S01:T40:** Implementation Cycle Workflow (ICW) — **planning scope merged into IPW**; legacy implementation remains historical
+- **FR-048 / E05:S01:T48:** ICW task identifier — binding applies to **IPW** planning sessions
+- **BR-055 / E04:S14:T03:** ICW presence in framework package (historical); consolidation docs should not reintroduce “two planning workflows”
+- **E05:S01:T42:** Repository anchor task for this FR (implementation + doc alignment)
 
 ---
 

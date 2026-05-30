@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E7:S06:T02 – Version and Changelog Alignment
+# E07:S06:T02 – Version and Changelog Alignment
 
-**Task ID:** E7:S06:T02
+**Task ID:** E07:S06:T02
 **Status:** COMPLETE
 **Version Anchor:** v0.7.6.2+2
 **Priority:** HIGH

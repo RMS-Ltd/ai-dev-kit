@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 47: Install Logging for Framework Dependencies
 
-**Task ID:** E5:S01:T47  
+**Task ID:** E05:S01:T47  
 **Status:** ARCHIVED  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
@@ -19,9 +19,9 @@ housekeeping_policy: keep
 **Implementation Status:** ✅ COMPLETE
 **Progress:** All phases complete - CLI logging, JSON/text formats, framework installer integration, install-history command, comprehensive testing, and documentation fully implemented
 
-**Repository Pattern:** FR-047 = E5:S01:T47 (abstract space v0.5.1.47+0)
+**Repository Pattern:** FR-047 = E05:S01:T47 (abstract space v0.5.1.47+0)
 
-**Archive note:** Historical FR-repo anchor retained for traceability. Active implementation ownership is carried by `E6:S07:T111` (event-contract quality) and `E6:S07:T112` (feedback submission path/governance).
+**Archive note:** Historical FR-repo anchor retained for traceability. Active implementation ownership is carried by `E06:S07:T111` (event-contract quality) and `E06:S07:T112` (feedback submission path/governance).
 
 ---
 
@@ -56,7 +56,7 @@ Concrete implementation work (CLI changes, tests, docs) will be carried out unde
 
 ## Deliverable
 
-1. FR-047 documented and anchored as `E5:S01:T47` in the FR repository story.
+1. FR-047 documented and anchored as `E05:S01:T47` in the FR repository story.
 2. Clear problem statement and requirements for install logging captured in FR-047.
 3. **Phase 1–2 implemented:** CLI install logging (per-run log file under `logs/ai-dev-kit/install/`, config and CLI flags, redaction, rotation), optional JSON log format, `ai-dev-kit logs install-history` summariser, and framework installer integration via `AI_DEV_KIT_INSTALL_LOG_PATH` (Kanban phase-tagged log lines plus workflow-mgt installer markers). Automated tests added for CLI logging, history summarisation, and Kanban logging; docs updated (FR-047 Implementation Notes, CLI/config/install docs, Kanban docs).
 
@@ -65,7 +65,7 @@ Concrete implementation work (CLI changes, tests, docs) will be carried out unde
 ## Acceptance Criteria
 
 - [x] FR-047 exists with a complete description of the desired install logging behaviour.
-- [x] This task is present in the **E5:S01 FR Repo** story checklist as **E5:S01:T47** and links correctly to FR-047.
+- [x] This task is present in the **E5:S01 FR Repo** story checklist as **E05:S01:T47** and links correctly to FR-047.
 - [x] Implementation tasks under the CLI/Framework Management epics can reference this task/FR as the canonical requirement for install logging.
 - [x] Phase 1–2: Logging, JSON/CLI history, and framework integrations implemented; tests and docs added (see FR-047 Implementation Notes).
 

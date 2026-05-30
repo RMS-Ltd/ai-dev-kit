@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E12:S1:T2` (e.g., `E4:S11:T01`)
+**Format:** `E12:S01:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E12:S01:T02`
 
@@ -71,10 +71,10 @@ Configure build tools for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E12:S1:T01
+- E12:S01:T01
 
 **Blocks:**
-- E12:S1:T03
+- E12:S01:T03
 
 **Blocked By:**
 - [What blocks this task]

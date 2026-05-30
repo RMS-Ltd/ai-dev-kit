@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Started:** [TBD]  
 **Completed:** [TBD]  
 **Version:** v0.4.13.1+1  
-**Code:** E4S13T01
+**Code:** E04S13T01
 
 ---
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E4:S13:T01`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E04:S13:T01`)
 
-**Full Task ID:** `E4:S13:T01`
+**Full Task ID:** `E04:S13:T01`
 
 ---
 
@@ -80,7 +80,7 @@ Enhance the Kanban board structure (`docs/project-management/kanban/kboard.md`) 
      - **Won't Have** (W) - Deferred/not doing in-progress tasks
    - Tasks within each section ordered chronologically (most recently updated at top)
    - Each task entry includes:
-     - Task ID (e.g., `E4:S13:T01`)
+     - Task ID (e.g., `E04:S13:T01`)
      - Task title/link
      - Last updated timestamp
      - Link to task document
@@ -232,9 +232,9 @@ Enhance the Kanban board structure (`docs/project-management/kanban/kboard.md`) 
 5. **Story Checklist:** Maintained after MoSCOW sections as required
 
 **Tasks Included:**
-- Must Have: 2 critical tasks (E4:S13:T01, E6:S06:T07)
-- Should Have: 8 important tasks (E4:S06:T04, E4:S13:T02-T04, E5:S02:T03, E6:S06:T02-T05)
-- Could Have: 7 nice-to-have tasks (E4:S06:T05, T07, T08, E4:S13:T05-T06, E7:S01:T02-T04)
+- Must Have: 2 critical tasks (E04:S13:T01, E06:S06:T07)
+- Should Have: 8 important tasks (E04:S06:T04, E04:S13:T02-T04, E05:S02:T03, E06:S06:T02-T05)
+- Could Have: 7 nice-to-have tasks (E04:S06:T05, T07, T08, E04:S13:T05-T06, E07:S01:T02-T04)
 - Won't Have: No deferred tasks currently
 
 **Acceptance Criteria Met:**

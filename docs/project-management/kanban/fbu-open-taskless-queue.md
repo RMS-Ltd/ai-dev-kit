@@ -22,7 +22,7 @@ An item appears here when **open** (not COMPLETE/CLOSED/RESOLVED/REJECTED/VERIFI
 1. No **`**Implementing Task:**`** with a working relative link to a task file under `epics/`, or  
 2. Only a **Story** link on the board without `E#:S##:T##`, or  
 3. Claimed **`E#:S##:T##`** but the task file is missing, or  
-4. Task lives under a **non-standard** task id (e.g. BR-059 → **E2:S16:T13**, re-housed from `E6:S07:T109`) — treat as **filed** once BR doc links to that task; do not add a duplicate `T59`.
+4. Task lives under a **non-standard** task id (e.g. BR-059 → **E02:S16:T13**, re-housed from `E06:S07:T109`) — treat as **filed** once BR doc links to that task; do not add a duplicate `T59`.
 
 Reconcile board vs doc: **source markdown + on-disk task file** wins.
 
@@ -53,19 +53,19 @@ Before `RW -k`:
 
 ## Queue table (snapshot 2026-05-29 — batch semantic intake pass)
 
-**Status:** Active **fbuboard** rows wired with **`E:S:T`** task links (2026-05-29 bidirectional pass). All open MoSCOW rows on [`fbuboard.md`](fbuboard.md) now include task links from FBU **`Implementing Task:`** fields; M/S bands mirrored on [`kboard.md`](kboard.md). **FR-044** implementing task corrected to **E5:S01:T44**. Remaining corpus: run gap script on full `fr-br/` for non-board open items.
+**Status:** Active **fbuboard** rows wired with **`E:S:T`** task links (2026-05-29 bidirectional pass). All open MoSCOW rows on [`fbuboard.md`](fbuboard.md) now include task links from FBU **`Implementing Task:`** fields; M/S bands mirrored on [`kboard.md`](kboard.md). **FR-044** implementing task corrected to **E05:S01:T44**. Remaining corpus: run gap script on full `fr-br/` for non-board open items.
 
-## Queue table (snapshot 2026-04-26, scoped pass under E4:S19:T06)
+## Queue table (snapshot 2026-04-26, scoped pass under E04:S19:T06)
 
 **Epic branches (examples):** Epic 5 → `epic/5-*`; Epic 6 → `epic/6-framework-management`; Epic 7 → `epic/7-documentation-maintenance`.
 
 | MoSCOW | Item | Needs task file | Needs Implementing Task | Suggested epic branch (default) | `RW -k` (after filing) |
 | -------- | ------ | ----------------- | ------------------------- | -------------------------------- | ------------------------ |
-| M | BR-038 | No (task exists) | No (linked to E6:S06:T63) | `epic/6-framework-management` | n/a — already wired |
-| M | BR-039 | Yes | Yes | `epic/6-framework-management` | `RW -k E6:S01:T39` |
-| M | BR-059 | No (E2:S16:T13 exists) | Wired 2026-05-29 | `main` / E2 | Re-housed from E6:S07:T109 |
+| M | BR-038 | No (task exists) | No (linked to E06:S06:T63) | `epic/6-framework-management` | n/a — already wired |
+| M | BR-039 | Yes | Yes | `epic/6-framework-management` | `RW -k E06:S01:T39` |
+| M | BR-059 | No (E02:S16:T13 exists) | Wired 2026-05-29 | `main` / E2 | Re-housed from E06:S07:T109 |
 
-*Remaining open items: process in MoSCOW order; this table was reconciled in Wave 4 for FR-073 AC3 closure evidence under E4:S19:T06. Continue one item per `RW -k` pass where filing is required.*
+*Remaining open items: process in MoSCOW order; this table was reconciled in Wave 4 for FR-073 AC3 closure evidence under E04:S19:T06. Continue one item per `RW -k` pass where filing is required.*
 
 ### Should / Could / unbanded (abbreviated)
 

@@ -12,11 +12,11 @@ housekeeping_policy: keep
 **Submitted:** 2026-05-30  
 **Submitted By:** User  
 **Priority:** MEDIUM  
-**Status:** INTAKE  
-**Last updated:** 2026-05-30 (**RW -k** **v0.4.19.9+1** — kanban init)  
+**Status:** ACCEPTED  
+**Last updated:** 2026-05-30 (E04:S19:T09 implementation — write-default rule shipped)  
 **Code:** UXR-014  
 
-**Implementing Task:** [E4:S19:T09](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
+**Implementing Task:** [E04:S19:T09](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
 
 **Related:** [UXR-005](UXR-005-kanban-board-formatting-and-governance.md) (board formatting), [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (file naming hygiene), [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) (`Exx:Sxx:Txx` row contract), [task-naming-migration-guide.md](../../architecture/standards-and-adrs/task-naming-migration-guide.md)
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Maintainers and agents should **always default to two-digit zero-padded Epic, Story, and Task components** in inline `E#:S#:T#` notation (e.g. `E02:S01:T04`, not `E2:S1:T4`). Single-digit unpadded forms reduce scan consistency, complicate regex/tooling, and contradict the canonical examples already present in templates and governance policy.
+Maintainers and agents should **always default to two-digit zero-padded Epic, Story, and Task components** in inline `E#:S#:T#` notation (e.g. `E02:S01:T04`, not `E02:S01:T04`). Single-digit unpadded forms reduce scan consistency, complicate regex/tooling, and contradict the canonical examples already present in templates and governance policy.
 
 ---
 
@@ -59,19 +59,19 @@ Maintainers and agents should **always default to two-digit zero-padded Epic, St
 ### Finding 1: Policy intent exists but Epic/Story padding is implicit
 
 - Governance and templates already describe **`Exx:Sxx:Txx`** with 2-digit task padding.
-- Examples mix **`E1:S01:T01`** (Story/Task padded, Epic unpadded) and **`E02:S01:T01`** (all padded) across template files.
+- Examples mix **`E01:S01:T01`** (Story/Task padded, Epic unpadded) and **`E02:S01:T01`** (all padded) across template files.
 - **Task file naming** (Txx) was remediated under UXR-011; **inline notation** was not systematically normalized.
 
 ### Finding 2: Active boards show mixed inline forms (Severity: Medium)
 
 | Pattern | Example | Issue |
 | ------- | ------- | ----- |
-| Unpadded epic | `E2:S16:T04` vs `E02:S16:T04` | Epic `<10` often drops leading zero |
-| Unpadded story | `E2:S1:T09` (rare) vs `E2:S01:T09` | Story `<10` occasionally unpadded |
-| Unpadded task | `E2:S16:T4` in board metadata | Task `<10` drops leading zero |
-| Compact trigger tokens | `E2S16T04`, `RW E2S16T4` | RW/UKW parsers accept both; writers vary |
+| Unpadded epic | `E02:S16:T04` vs `E02:S16:T04` | Epic `<10` often drops leading zero |
+| Unpadded story | `E02:S01:T09` (rare) vs `E02:S01:T09` | Story `<10` occasionally unpadded |
+| Unpadded task | `E02:S16:T04` in board metadata | Task `<10` drops leading zero |
+| Compact trigger tokens | `E02S16T04`, `RW E02S16T04` | RW/UKW parsers accept both; writers vary |
 
-Concrete example: `kboard.md` metadata references **`E2:S16:T4`** (unpadded task) while MoSCOW rows use **`E2:S16:T04`** style elsewhere.
+Concrete example: `kboard.md` metadata references **`E02:S16:T04`** (unpadded task) while MoSCOW rows use **`E02:S16:T04`** style elsewhere.
 
 ### Finding 3: Validators tolerate ambiguity — writers drift (Severity: Medium)
 
@@ -83,7 +83,7 @@ Concrete example: `kboard.md` metadata references **`E2:S16:T4`** (unpadded task
 
 ## User Pain Points
 
-- **Scan friction:** `E2:S16:T4` and `E02:S16:T04` look like different anchors when skimming boards.
+- **Scan friction:** `E02:S16:T04` and `E02:S16:T04` look like different anchors when skimming boards.
 - **Copy-paste inconsistency:** Mixed forms propagate into new docs, FR/BR/UXR links, and RW trigger messages.
 - **Tooling complexity:** Maintainers must maintain broader regex sets instead of one canonical shape.
 
@@ -91,11 +91,11 @@ Concrete example: `kboard.md` metadata references **`E2:S16:T4`** (unpadded task
 
 ## Recommendations
 
-- [ ] **R1 — Canonical display rule:** Define normative inline form **`E{NN}:S{NN}:T{NN}`** where each `{NN}` is **two digits, zero-padded** when the numeric value is `<10`. Values `≥10` use natural width (no truncation): `E12:S16:T57`.
-- [ ] **R2 — Write path default:** UKW, RW Step 7, intake agents, and board row templates **emit padded form by default** on all new/edited references.
-- [ ] **R3 — Read path tolerance:** Parsers and validators **continue accepting** unpadded legacy input; optional `--strict-est-format` (or lint) for CI/hygiene passes.
-- [ ] **R4 — Corpus normalization:** Scheduled hygiene pass on `kboard.md`, `fbuboard.md`, active task/story docs, and packaged templates (coordinate with UXR-005 spacing work where practical).
-- [ ] **R5 — Agent/rule surfacing:** Update `.cursorrules`, intake skill examples, and kanban-board-guide with explicit **“default to 02 not 2”** guidance.
+- [x] **R1 — Canonical display rule:** Define normative inline form **`E{NN}:S{NN}:T{NN}`** where each `{NN}` is **two digits, zero-padded** when the numeric value is `<10`. Values `≥10` use natural width (no truncation): `E12:S16:T57`.
+- [x] **R2 — Write path default:** UKW, RW Step 7, intake agents, and board row templates **emit padded form by default** on all new/edited references.
+- [x] **R3 — Read path tolerance:** Parsers and validators **continue accepting** unpadded legacy input; optional `--strict-est-format` (or lint) for CI/hygiene passes.
+- [x] **R4 — Corpus normalization:** Scheduled hygiene pass on `kboard.md`, `fbuboard.md`, active task/story docs, and packaged templates (coordinate with UXR-005 spacing work where practical).
+- [x] **R5 — Agent/rule surfacing:** Update `.cursorrules`, intake skill examples, and kanban-board-guide with explicit **“default to 02 not 2”** guidance.
 
 **Priority order:**
 
@@ -125,13 +125,13 @@ Concrete example: `kboard.md` metadata references **`E2:S16:T4`** (unpadded task
 
 ---
 
-## Acceptance criteria (implementation — E4:S19:T09)
+## Acceptance criteria (implementation — E04:S19:T09)
 
-- [ ] **AC1:** Kanban governance policy states **two-digit default for E, S, and T** in inline notation, with examples for values `<10`.
-- [ ] **AC2:** `kanban-board-guide.md` (or equivalent) documents write-default vs read-tolerance.
-- [ ] **AC3:** Active `kboard.md` / `fbuboard.md` rows normalize Epic/Story/Task segments to two-digit form where numeric component `<10`.
-- [ ] **AC4:** Intake/UKW/RW agent guidance updated to **default padded output** (unpadded accepted on parse only).
-- [ ] **AC5:** UXR-014 ↔ E4:S19:T09 bidirectional links and story checklist entry present.
+- [x] **AC1:** Kanban governance policy states **two-digit default for E, S, and T** in inline notation, with examples for values `<10`.
+- [x] **AC2:** `kanban-board-guide.md` (or equivalent) documents write-default vs read-tolerance.
+- [x] **AC3:** Active `kboard.md` / `fbuboard.md` rows normalize Epic/Story/Task segments to two-digit form where numeric component `<10`.
+- [x] **AC4:** Intake/UKW/RW agent guidance updated to **default padded output** (unpadded accepted on parse only).
+- [x] **AC5:** UXR-014 ↔ E04:S19:T09 bidirectional links and story checklist entry present.
 
 ---
 

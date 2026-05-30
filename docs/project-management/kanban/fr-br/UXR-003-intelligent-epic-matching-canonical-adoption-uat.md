@@ -14,11 +14,11 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E7:S05:T03](../epics/Epic-7/Story-005-migration-uxr-research.md)  
-**Repository Task:** [E7:S00:T03](../epics/Epic-7/Story-000-uxr-repo/T03-uxr-003-repository-anchor.md)
+**Implementing Task:** [E07:S05:T03](../epics/Epic-7/Story-005-migration-uxr-research.md)  
+**Repository Task:** [E07:S00:T03](../epics/Epic-7/Story-000-uxr-repo/T03-uxr-003-repository-anchor.md)
 **GitHub Issue:** [#8](https://github.com/RMS-Ltd/ai-dev-kit/issues/8)  
-**Repository Task:** [E7:S00:T03](../epics/Epic-7/Story-000-uxr-repo/T03-uxr-003-repository-anchor.md)  
-**Implementation (synthesis):** [E7:S05:T03](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T03**
+**Repository Task:** [E07:S00:T03](../epics/Epic-7/Story-000-uxr-repo/T03-uxr-003-repository-anchor.md)  
+**Implementation (synthesis):** [E07:S05:T03](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T03**
 
 ---
 

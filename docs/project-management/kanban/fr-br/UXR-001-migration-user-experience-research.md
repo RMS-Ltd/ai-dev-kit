@@ -14,11 +14,11 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E7:S05:T01](../epics/Epic-7/Story-005-migration-uxr-research.md)
-**Repository Task:** [E7:S00:T01](../epics/Epic-7/Story-000-uxr-repo/T01-uxr-001-repository-anchor.md)
+**Implementing Task:** [E07:S05:T01](../epics/Epic-7/Story-005-migration-uxr-research.md)
+**Repository Task:** [E07:S00:T01](../epics/Epic-7/Story-000-uxr-repo/T01-uxr-001-repository-anchor.md)
 **GitHub Issue:** [#4](https://github.com/RMS-Ltd/ai-dev-kit/issues/4)  
-**Repository Task:** [E7:S00:T01](../epics/Epic-7/Story-000-uxr-repo/T01-uxr-001-repository-anchor.md)  
-**Implementation (synthesis):** [E7:S05:T01](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T01**
+**Repository Task:** [E07:S00:T01](../epics/Epic-7/Story-000-uxr-repo/T01-uxr-001-repository-anchor.md)  
+**Implementation (synthesis):** [E07:S05:T01](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T01**
 
 ---
 
@@ -339,14 +339,14 @@ Research findings from migrating dev-toolkit's pre-existing Kanban structure to 
 **Assigned To:**
 - Epic: Epic 7 (UXR repo + maintenance epic)
 - Story: **E7:S00** (UXR repository story)
-- Task: **E7:S00:T01** (UXR-001 registry task)
+- Task: **E07:S00:T01** (UXR-001 registry task)
 - Version: `v0.7.0.1+1` (task filed 2026-03-31)
 
 **Kanban Links:**
 - Epic: [`Epic-7.md`](../epics/Epic-7/Epic-7.md)
 - Story: [`Story-000-uxr-repo.md`](../epics/Epic-7/Story-000-uxr-repo.md)
 - Task: [`T01-uxr-001-repository-anchor.md`](../epics/Epic-7/Story-000-uxr-repo/T01-uxr-001-repository-anchor.md)
-- Synthesis (historical): [`Story-005-migration-uxr-research.md`](../epics/Epic-7/Story-005-migration-uxr-research.md) (**E7:S05:T01**)
+- Synthesis (historical): [`Story-005-migration-uxr-research.md`](../epics/Epic-7/Story-005-migration-uxr-research.md) (**E07:S05:T01**)
 
 ---
 

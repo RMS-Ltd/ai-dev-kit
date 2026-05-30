@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S5:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S05:T01`)
 
 **Full Task ID:** `E07:S05:T01`
 
@@ -88,8 +88,8 @@ Synthesize UX research findings for the {PROJECT_NAME} project. Consolidate and 
 - Experience design insights (from E7:S4, if available - optional)
 
 **Blocks:**
-- E7:S5:T02: Generate UX insights and recommendations (generation uses synthesized findings)
-- E7:S5:T03: Prioritize UX recommendations (prioritization uses synthesized findings)
+- E07:S05:T02: Generate UX insights and recommendations (generation uses synthesized findings)
+- E07:S05:T03: Prioritize UX recommendations (prioritization uses synthesized findings)
 
 **Parallel Development Candidacy:** Safe (can proceed independently, benefits from research activities)
 
@@ -98,9 +98,9 @@ Synthesize UX research findings for the {PROJECT_NAME} project. Consolidate and 
 ## Related Work
 
 **Related Tasks:**
-- E7:S5:T02: Generate UX insights and recommendations (generation uses synthesized findings)
-- E7:S5:T03: Prioritize UX recommendations (prioritization uses synthesized findings)
-- E7:S5:T04: Create UX insights documentation (documentation uses synthesis)
+- E07:S05:T02: Generate UX insights and recommendations (generation uses synthesized findings)
+- E07:S05:T03: Prioritize UX recommendations (prioritization uses synthesized findings)
+- E07:S05:T04: Create UX insights documentation (documentation uses synthesis)
 
 **Related Stories:**
 - E7:S5: UX Insights and Recommendations (this story)

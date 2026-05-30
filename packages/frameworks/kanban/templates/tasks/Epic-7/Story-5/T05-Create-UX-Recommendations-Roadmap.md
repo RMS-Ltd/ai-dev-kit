@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S5:T5`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S05:T05`)
 
 **Full Task ID:** `E07:S05:T05`
 
@@ -34,8 +34,8 @@ Create UX recommendations roadmap for the {PROJECT_NAME} project. Develop a stra
 
 ## Input
 
-- Prioritized UX recommendations (from E7:S5:T03)
-- UX insights documentation (from E7:S5:T04)
+- Prioritized UX recommendations (from E07:S05:T03)
+- UX insights documentation (from E07:S05:T04)
 - Product roadmap and planning context
 - Resource availability and constraints
 - Strategic objectives and timelines
@@ -83,12 +83,12 @@ Create UX recommendations roadmap for the {PROJECT_NAME} project. Develop a stra
 ## Dependencies
 
 **Depends On:**
-- E7:S5:T03: Prioritize UX recommendations (roadmap uses prioritized recommendations)
-- E7:S5:T04: Create UX insights documentation (roadmap references documentation)
+- E07:S05:T03: Prioritize UX recommendations (roadmap uses prioritized recommendations)
+- E07:S05:T04: Create UX insights documentation (roadmap references documentation)
 
 **Blocks:**
-- E7:S5:T06: Present UX insights to stakeholders (presentation includes roadmap)
-- E7:S5:T07: Track UX recommendations implementation (tracking uses roadmap)
+- E07:S05:T06: Present UX insights to stakeholders (presentation includes roadmap)
+- E07:S05:T07: Track UX recommendations implementation (tracking uses roadmap)
 
 **Parallel Development Candidacy:** Blocked (depends on T03 and T04)
 
@@ -97,10 +97,10 @@ Create UX recommendations roadmap for the {PROJECT_NAME} project. Develop a stra
 ## Related Work
 
 **Related Tasks:**
-- E7:S5:T03: Prioritize UX recommendations (roadmap uses prioritized recommendations)
-- E7:S5:T04: Create UX insights documentation (roadmap references documentation)
-- E7:S5:T06: Present UX insights to stakeholders (presentation includes roadmap)
-- E7:S5:T07: Track UX recommendations implementation (tracking uses roadmap)
+- E07:S05:T03: Prioritize UX recommendations (roadmap uses prioritized recommendations)
+- E07:S05:T04: Create UX insights documentation (roadmap references documentation)
+- E07:S05:T06: Present UX insights to stakeholders (presentation includes roadmap)
+- E07:S05:T07: Track UX recommendations implementation (tracking uses roadmap)
 
 **Related Stories:**
 - E7:S5: UX Insights and Recommendations (this story)

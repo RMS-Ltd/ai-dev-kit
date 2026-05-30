@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T17 - IPW-built task status transition and kboard synchronization (FR-077)
+# Task E02:S01:T17 - IPW-built task status transition and kboard synchronization (FR-077)
 
-**Task ID:** E2:S01:T17  
+**Task ID:** E02:S01:T17  
 **Status:** IN PROGRESS  
 **Version Anchor:** v0.2.1.17+3  
 **Priority:** HIGH  
 **Created:** 2026-04-09  
 **Last updated:** 2026-04-14 (v0.2.1.17+3 — FR-077 ownership/validator/test hardening released)  
-**Code:** E2S01T17
+**Code:** E02S01T17
 
 ---
 
@@ -24,8 +24,8 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 
 ## Incident evidence (2026-04-10)
 
-- `E3:S02:T12` was implemented from IPW artifacts, but remained `TODO`.
-- `RW E3:S02:T12 --art` failed at Step 1c until task status was manually updated to releasable state.
+- `E03:S02:T12` was implemented from IPW artifacts, but remained `TODO`.
+- `RW E03:S02:T12 --art` failed at Step 1c until task status was manually updated to releasable state.
 - This validates FR-077 requirement for deterministic TODO -> IN PROGRESS/COMPLETE transitions plus atomic kboard propagation.
 
 ## Implementation decisions and evidence
@@ -44,7 +44,7 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
   - `validate_rw_task_complete.py` now runs FR-077 drift detection at Step 1c TODO gate and emits explicit remediation guidance when implementation evidence is present.
   - `test_validate_rw_task_complete.py` and `test_validate_ipw_status_drift.py` expanded to cover requested-task drift and Step 1c drift diagnostics.
 - Latest recurrence context (2026-04-13):
-  - `RW E7:S06:T18 --art` blocked at Step 1c due to host task still marked `TODO`.
+  - `RW E07:S06:T18 --art` blocked at Step 1c due to host task still marked `TODO`.
   - Confirms validator behavior is working as intended, but transition-ownership adoption remains inconsistent in execution flow.
 
 ---
@@ -56,9 +56,9 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/project-management/kanban/kboard.md`
 - `docs/project-management/kanban/fbuboard.md`
-- [ICW-E2S01T17-specification](../../../../../implementation-cycles/ICW-E2S01T17-specification.md)
-- [ICW-E2S01T17-test-design](../../../../../implementation-cycles/ICW-E2S01T17-test-design.md)
-- [ICW-E2S01T17-implementation-plan](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
+- [ICW-E02S01T17-specification](../../../../../implementation-cycles/ICW-E02S01T17-specification.md)
+- [ICW-E02S01T17-test-design](../../../../../implementation-cycles/ICW-E02S01T17-test-design.md)
+- [ICW-E02S01T17-implementation-plan](../../../../../implementation-cycles/ICW-E02S01T17-implementation-plan.md)
 
 ---
 
@@ -90,9 +90,9 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 
 - [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [Story E2:S01](../Story-001-rw-agent-execution-and-docs.md)
-- [ICW-E2S01T17-specification](../../../../../implementation-cycles/ICW-E2S01T17-specification.md)
-- [ICW-E2S01T17-test-design](../../../../../implementation-cycles/ICW-E2S01T17-test-design.md)
-- [ICW-E2S01T17-implementation-plan](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
+- [ICW-E02S01T17-specification](../../../../../implementation-cycles/ICW-E02S01T17-specification.md)
+- [ICW-E02S01T17-test-design](../../../../../implementation-cycles/ICW-E02S01T17-test-design.md)
+- [ICW-E02S01T17-implementation-plan](../../../../../implementation-cycles/ICW-E02S01T17-implementation-plan.md)
 
 ---
 
@@ -122,6 +122,6 @@ Publication N/A Reason: N/A
 
 ## Planning Artifact Links
 
-- [ICW E2:S01:T17 specification](../../../../../implementation-cycles/ICW-E2S01T17-specification.md)
-- [ICW E2:S01:T17 test design](../../../../../implementation-cycles/ICW-E2S01T17-test-design.md)
-- [ICW E2:S01:T17 implementation plan](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
+- [ICW E02:S01:T17 specification](../../../../../implementation-cycles/ICW-E02S01T17-specification.md)
+- [ICW E02:S01:T17 test design](../../../../../implementation-cycles/ICW-E02S01T17-test-design.md)
+- [ICW E02:S01:T17 implementation plan](../../../../../implementation-cycles/ICW-E02S01T17-implementation-plan.md)

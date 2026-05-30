@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # T11 – Implement SemVer Mapping for Release Workflow
 
-**Task ID:** E3:S02:T11  
+**Task ID:** E03:S02:T11  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  

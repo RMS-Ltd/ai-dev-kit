@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E3:S04:T06 – Define RC Sign-Off Criteria and Remediation Tasks
+# E03:S04:T06 – Define RC Sign-Off Criteria and Remediation Tasks
 
-**Task ID:** E3:S04:T06  
+**Task ID:** E03:S04:T06  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E3 – Numbering & Versioning Framework  
@@ -31,11 +31,11 @@ Define RC sign-off criteria and remediation tasks for the Numbering & Versioning
 
 ## Inputs
 
-- **E3:S04:T01 – Expectations baseline for Numbering & Versioning package**
-- **E3:S04:T02 – Component inventory and mapping to expectations**
-- **E3:S04:T03 – Versioning behavior validation report**
-- **E3:S04:T04 – Integration and dependency alignment report**
-- **E3:S04:T05 – Gap log and risk assessment**
+- **E03:S04:T01 – Expectations baseline for Numbering & Versioning package**
+- **E03:S04:T02 – Component inventory and mapping to expectations**
+- **E03:S04:T03 – Versioning behavior validation report**
+- **E03:S04:T04 – Integration and dependency alignment report**
+- **E03:S04:T05 – Gap log and risk assessment**
 
 ---
 

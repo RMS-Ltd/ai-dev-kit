@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S5:T7`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S05:T07`)
 
 **Full Task ID:** `E07:S05:T07`
 
@@ -34,8 +34,8 @@ Track UX recommendations implementation for the {PROJECT_NAME} project. Monitor 
 
 ## Input
 
-- UX recommendations roadmap (from E7:S5:T05)
-- Prioritized UX recommendations (from E7:S5:T03)
+- UX recommendations roadmap (from E07:S05:T05)
+- Prioritized UX recommendations (from E07:S05:T03)
 - Implementation tracking framework
 - Progress tracking requirements
 - ai-dev-kit UXR tracking practices (if adopting)
@@ -81,9 +81,9 @@ Track UX recommendations implementation for the {PROJECT_NAME} project. Monitor 
 ## Dependencies
 
 **Depends On:**
-- E7:S5:T03: Prioritize UX recommendations (tracking monitors prioritized recommendations)
-- E7:S5:T05: Create UX recommendations roadmap (tracking uses roadmap)
-- E7:S5:T06: Present UX insights to stakeholders (tracking begins after stakeholder alignment)
+- E07:S05:T03: Prioritize UX recommendations (tracking monitors prioritized recommendations)
+- E07:S05:T05: Create UX recommendations roadmap (tracking uses roadmap)
+- E07:S05:T06: Present UX insights to stakeholders (tracking begins after stakeholder alignment)
 
 **Blocks:**
 - None (tracking task, ongoing)
@@ -95,9 +95,9 @@ Track UX recommendations implementation for the {PROJECT_NAME} project. Monitor 
 ## Related Work
 
 **Related Tasks:**
-- E7:S5:T03: Prioritize UX recommendations (tracking monitors prioritized recommendations)
-- E7:S5:T05: Create UX recommendations roadmap (tracking uses roadmap)
-- E7:S5:T06: Present UX insights to stakeholders (tracking begins after stakeholder alignment)
+- E07:S05:T03: Prioritize UX recommendations (tracking monitors prioritized recommendations)
+- E07:S05:T05: Create UX recommendations roadmap (tracking uses roadmap)
+- E07:S05:T06: Present UX insights to stakeholders (tracking begins after stakeholder alignment)
 
 **Related Stories:**
 - E7:S5: UX Insights and Recommendations (this story)

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Started:** 2025-12-18  
 **Completed:** 2025-12-18  
 **Version:** v0.6.7.10+1  
-**Code:** E6S07T04
+**Code:** E06S07T04
 
 ---
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S07:T04`
+**Full Task ID:** `E06:S07:T04`
 
 ---
 
@@ -47,13 +47,13 @@ Create a detailed implementation plan for the package management system based on
 
 ## Input
 
-- **E6:S07:T02 Deliverables:**
+- **E06:S07:T02 Deliverables:**
   - `docs/Analysis/package-management-investigation-report.md` - Investigation findings
   - `docs/architecture/standards-and-adrs/package-management-design.md` - Design specifications
   - `docs/architecture/standards-and-adrs/package-hash-verification-spec.md` - Security specifications
 
 
-- **E6:S07:T09 Deliverable:**
+- **E06:S07:T09 Deliverable:**
   - `docs/Analysis/package-management-prioritization-review.md` - Prioritized recommendations, roadmap, quick wins, resource assessment
 
 
@@ -125,9 +125,9 @@ Create a detailed implementation plan for the package management system based on
 ## Dependencies
 
 **Depends On:**
-- E6:S07:T02 - Package management investigation (COMPLETE)
-- E6:S07:T09 - Prioritization review (COMPLETE)
-- E6:S07:T03 - Feedback mechanism design (TODO - not blocking for core implementation plan)
+- E06:S07:T02 - Package management investigation (COMPLETE)
+- E06:S07:T09 - Prioritization review (COMPLETE)
+- E06:S07:T03 - Feedback mechanism design (TODO - not blocking for core implementation plan)
 
 **Blocks:**
 - Package management implementation execution (Phase 3.1-3.3)
@@ -142,8 +142,8 @@ Create a detailed implementation plan for the package management system based on
 ## Related Work
 
 **Related Tasks:**
-- **E6:S07:T02** - Package management investigation (input source)
-- **E6:S07:T09** - Prioritization review (input source)
+- **E06:S07:T02** - Package management investigation (input source)
+- **E06:S07:T09** - Prioritization review (input source)
 - **E6:S03** - CLI tool development (Phase 2, integration point)
 
 **Related Stories:**

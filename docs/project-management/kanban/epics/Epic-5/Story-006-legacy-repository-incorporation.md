@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.5.6.1+1  
 **Code:** E5S06
 
-**Note:** This story was renumbered from S05 to S06 as part of the repository story abstract space resolution (E9:S01:T08).
+**Note:** This story was renumbered from S05 to S06 as part of the repository story abstract space resolution (E09:S01:T08).
 
 ---
 
@@ -32,49 +32,49 @@ This story covers the complete process of incorporating valuable components from
 
 ### Phase 0: Planning and Preparation
 
-- [x] **E5:S06:T01 – Review and validate legacy repository analysis** ✅ COMPLETE (v0.5.6.1+1) - Analysis document created, story created and validated
-- [ ] **E5:S06:T02 – Create detailed incorporation plan and timeline** - TODO
-- [ ] **E5:S06:T03 – Extract and archive source material from legacy repositories** - TODO
-- [ ] **E5:S06:T04 – Set up source material reference structure** - TODO
+- [x] **E05:S06:T01 – Review and validate legacy repository analysis** ✅ COMPLETE (v0.5.6.1+1) - Analysis document created, story created and validated
+- [ ] **E05:S06:T02 – Create detailed incorporation plan and timeline** - TODO
+- [ ] **E05:S06:T03 – Extract and archive source material from legacy repositories** - TODO
+- [ ] **E05:S06:T04 – Set up source material reference structure** - TODO
 
 ### Phase 1: High Priority Components (Immediate)
 
-- [ ] **E5:S06:T05 – Create architectural principles documentation** - TODO
-- [ ] **E5:S06:T06 – Create AI collaboration guidelines** - TODO
-- [ ] **E5:S06:T07 – Create template customization script** - TODO
-- [ ] **E5:S06:T08 – Integrate Phase 1 components with existing documentation** - TODO
-- [ ] **E5:S06:T09 – Review and validate Phase 1 deliverables** - TODO
+- [ ] **E05:S06:T05 – Create architectural principles documentation** - TODO
+- [ ] **E05:S06:T06 – Create AI collaboration guidelines** - TODO
+- [ ] **E05:S06:T07 – Create template customization script** - TODO
+- [ ] **E05:S06:T08 – Integrate Phase 1 components with existing documentation** - TODO
+- [ ] **E05:S06:T09 – Review and validate Phase 1 deliverables** - TODO
 
 ### Phase 2: Medium Priority Components (Next Sprint)
 
-- [ ] **E5:S06:T10 – Create patterns and anti-patterns documentation** - TODO
-- [ ] **E5:S06:T11 – Create testing strategy guide** - TODO
-- [ ] **E5:S06:T12 – Create coding conventions documentation** - TODO
-- [ ] **E5:S06:T13 – Integrate Phase 2 components with existing documentation** - TODO
-- [ ] **E5:S06:T14 – Review and validate Phase 2 deliverables** - TODO
+- [ ] **E05:S06:T10 – Create patterns and anti-patterns documentation** - TODO
+- [ ] **E05:S06:T11 – Create testing strategy guide** - TODO
+- [ ] **E05:S06:T12 – Create coding conventions documentation** - TODO
+- [ ] **E05:S06:T13 – Integrate Phase 2 components with existing documentation** - TODO
+- [ ] **E05:S06:T14 – Review and validate Phase 2 deliverables** - TODO
 
 ### Phase 3: Low Priority Components (Future)
 
-- [ ] **E5:S06:T15 – Create project structure guide** - TODO
-- [ ] **E5:S06:T16 – Enhance testing documentation with TDD section** - TODO
-- [ ] **E5:S06:T17 – Enhance workflow documentation with issue-driven workflow** - TODO
-- [ ] **E5:S06:T18 – Integrate Phase 3 components with existing documentation** - TODO
-- [ ] **E5:S06:T19 – Review and validate Phase 3 deliverables** - TODO
+- [ ] **E05:S06:T15 – Create project structure guide** - TODO
+- [ ] **E05:S06:T16 – Enhance testing documentation with TDD section** - TODO
+- [ ] **E05:S06:T17 – Enhance workflow documentation with issue-driven workflow** - TODO
+- [ ] **E05:S06:T18 – Integrate Phase 3 components with existing documentation** - TODO
+- [ ] **E05:S06:T19 – Review and validate Phase 3 deliverables** - TODO
 
 ### Phase 4: Finalization and Archive
 
-- [ ] **E5:S06:T20 – Create comprehensive cross-reference index** - TODO
-- [ ] **E5:S06:T21 – Update all affected documentation with new references** - TODO
-- [ ] **E5:S06:T22 – Create migration guide for legacy repository users** - TODO
-- [ ] **E5:S06:T23 – Final review and validation of all incorporated components** - TODO
-- [ ] **E5:S06:T24 – Archive legacy repositories (ai-architect-kit and paradigm)** - TODO
-- [ ] **E5:S06:T25 – Document archive process and update references** - TODO
+- [ ] **E05:S06:T20 – Create comprehensive cross-reference index** - TODO
+- [ ] **E05:S06:T21 – Update all affected documentation with new references** - TODO
+- [ ] **E05:S06:T22 – Create migration guide for legacy repository users** - TODO
+- [ ] **E05:S06:T23 – Final review and validation of all incorporated components** - TODO
+- [ ] **E05:S06:T24 – Archive legacy repositories (ai-architect-kit and paradigm)** - TODO
+- [ ] **E05:S06:T25 – Document archive process and update references** - TODO
 
 ---
 
 ## Detailed Task Descriptions
 
-### E5:S06:T01 – Review and validate legacy repository analysis
+### E05:S06:T01 – Review and validate legacy repository analysis
 
 **Input:** `docs/architecture/standards-and-adrs/legacy-repo-analysis.md`  
 **Deliverable:** Validated analysis with stakeholder approval  
@@ -128,11 +128,11 @@ The legacy repository analysis needs to be reviewed and validated by stakeholder
 
 ---
 
-### E5:S06:T02 – Create detailed incorporation plan and timeline
+### E05:S06:T02 – Create detailed incorporation plan and timeline
 
 **Input:** Validated analysis document, Epic 5 roadmap  
 **Deliverable:** Detailed incorporation plan with timeline and milestones  
-**Dependencies:** E5:S06:T01  
+**Dependencies:** E05:S06:T01  
 **Blocker:** None
 
 **Problem Statement:**
@@ -186,16 +186,16 @@ A detailed incorporation plan with timeline, milestones, and resource allocation
 - Plan approved by stakeholders
 
 **Related Work:**
-- E5:S06:T01 - Analysis validation
+- E05:S06:T01 - Analysis validation
 - Epic 5 roadmap
 
 ---
 
-### E5:S06:T03 – Extract and archive source material from legacy repositories
+### E05:S06:T03 – Extract and archive source material from legacy repositories
 
 **Input:** Legacy repositories (ai-architect-kit, paradigm)  
 **Deliverable:** Archived source material in structured format  
-**Dependencies:** E5:S06:T01  
+**Dependencies:** E05:S06:T01  
 **Blocker:** None
 
 **Problem Statement:**
@@ -254,11 +254,11 @@ Source material from legacy repositories needs to be extracted and archived in a
 
 ---
 
-### E5:S06:T04 – Set up source material reference structure
+### E05:S06:T04 – Set up source material reference structure
 
 **Input:** Extracted source material archive  
 **Deliverable:** Reference structure for source material  
-**Dependencies:** E5:S06:T03  
+**Dependencies:** E05:S06:T03  
 **Blocker:** None
 
 **Problem Statement:**
@@ -305,16 +305,16 @@ A structured reference system is needed to track which components came from whic
 - Cross-references working
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
+- E05:S06:T03 - Source material extraction
 - KB structure
 
 ---
 
-### E5:S06:T05 – Create architectural principles documentation
+### E05:S06:T05 – Create architectural principles documentation
 
 **Input:** ai-architect-kit `docs/architecture.md`, existing KB structure  
 **Deliverable:** `docs/architecture/standards-and-adrs/architectural-principles.md`  
-**Dependencies:** E5:S06:T03, E5:S06:T04  
+**Dependencies:** E05:S06:T03, E05:S06:T04  
 **Blocker:** None
 
 **Problem Statement:**
@@ -370,17 +370,17 @@ ai-dev-kit lacks explicit documentation of architectural principles (Clean Archi
 - Reviewed and approved
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
+- E05:S06:T03 - Source material extraction
 - `docs/architecture/standards-and-adrs/modularity-principles.md`
 - `docs/architecture/standards-and-adrs/kb-structure-overview.md`
 
 ---
 
-### E5:S06:T06 – Create AI collaboration guidelines
+### E05:S06:T06 – Create AI collaboration guidelines
 
 **Input:** ai-architect-kit `docs/ai-collaboration.md`, existing user docs  
 **Deliverable:** `docs/documentation/user-docs/ai-collaboration-guidelines.md`  
-**Dependencies:** E5:S06:T03, E5:S06:T04  
+**Dependencies:** E05:S06:T03, E05:S06:T04  
 **Blocker:** None
 
 **Problem Statement:**
@@ -443,17 +443,17 @@ ai-dev-kit lacks explicit guidelines for effective AI collaboration, including r
 - Reviewed and approved
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
+- E05:S06:T03 - Source material extraction
 - `packages/frameworks/workflow mgt/` - Workflow framework
 - `docs/documentation/user-docs/` - User documentation
 
 ---
 
-### E5:S06:T07 – Create template customization script
+### E05:S06:T07 – Create template customization script
 
 **Input:** paradigm `scripts/setup_project.py`, post-template setup guide  
 **Deliverable:** `scripts/setup-project.py` (or equivalent)  
-**Dependencies:** E5:S06:T03, E5:S06:T04  
+**Dependencies:** E05:S06:T03, E05:S06:T04  
 **Blocker:** None
 
 **Problem Statement:**
@@ -521,17 +521,17 @@ ai-dev-kit template requires manual customization steps. An automated script wou
 - Integrated with post-template setup
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
+- E05:S06:T03 - Source material extraction
 - `docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md`
 - E05:S04:T07 - Template setup
 
 ---
 
-### E5:S06:T08 – Integrate Phase 1 components with existing documentation
+### E05:S06:T08 – Integrate Phase 1 components with existing documentation
 
 **Input:** Phase 1 deliverables (T05, T06, T07)  
 **Deliverable:** Integrated documentation with cross-references  
-**Dependencies:** E5:S06:T05, E5:S06:T06, E5:S06:T07  
+**Dependencies:** E05:S06:T05, E05:S06:T06, E05:S06:T07  
 **Blocker:** None
 
 **Problem Statement:**
@@ -585,18 +585,18 @@ Phase 1 components need to be integrated with existing documentation through cro
 - All links working
 
 **Related Work:**
-- E5:S06:T05 - Architectural principles
-- E5:S06:T06 - AI collaboration guidelines
-- E5:S06:T07 - Template customization script
+- E05:S06:T05 - Architectural principles
+- E05:S06:T06 - AI collaboration guidelines
+- E05:S06:T07 - Template customization script
 - All existing documentation
 
 ---
 
-### E5:S06:T09 – Review and validate Phase 1 deliverables
+### E05:S06:T09 – Review and validate Phase 1 deliverables
 
 **Input:** Phase 1 deliverables and integration  
 **Deliverable:** Validated Phase 1 components with approval  
-**Dependencies:** E5:S06:T08  
+**Dependencies:** E05:S06:T08  
 **Blocker:** None
 
 **Problem Statement:**
@@ -655,11 +655,11 @@ Phase 1 deliverables need comprehensive review and validation to ensure quality,
 
 ---
 
-### E5:S06:T10 – Create patterns and anti-patterns documentation
+### E05:S06:T10 – Create patterns and anti-patterns documentation
 
 **Input:** ai-architect-kit `docs/patterns.md`, architectural principles  
 **Deliverable:** `docs/architecture/standards-and-adrs/patterns-and-anti-patterns.md`  
-**Dependencies:** E5:S06:T03, E5:S06:T04, E5:S06:T05  
+**Dependencies:** E05:S06:T03, E05:S06:T04, E05:S06:T05  
 **Blocker:** None
 
 **Problem Statement:**
@@ -715,17 +715,17 @@ ai-dev-kit lacks documentation of common patterns and anti-patterns for AI-assis
 - Reviewed and approved
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
-- E5:S06:T05 - Architectural principles
+- E05:S06:T03 - Source material extraction
+- E05:S06:T05 - Architectural principles
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/workflow-customization-patterns.md`
 
 ---
 
-### E5:S06:T11 – Create testing strategy guide
+### E05:S06:T11 – Create testing strategy guide
 
 **Input:** ai-architect-kit `docs/testing-strategy.md`, testing workflow  
 **Deliverable:** `docs/documentation/Developer_Docs/testing-strategy.md`  
-**Dependencies:** E5:S06:T03, E5:S06:T04  
+**Dependencies:** E05:S06:T03, E05:S06:T04  
 **Blocker:** None
 
 **Problem Statement:**
@@ -781,17 +781,17 @@ ai-dev-kit has a testing workflow but lacks explicit documentation of testing ph
 - Reviewed and approved
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
+- E05:S06:T03 - Source material extraction
 - `packages/frameworks/workflow mgt/workflows/testing-workflow.yaml`
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md`
 
 ---
 
-### E5:S06:T12 – Create coding conventions documentation
+### E05:S06:T12 – Create coding conventions documentation
 
 **Input:** paradigm `CONVENTIONS.md`, architectural principles  
 **Deliverable:** `docs/architecture/standards-and-adrs/coding-conventions.md`  
-**Dependencies:** E5:S06:T03, E5:S06:T04, E5:S06:T05  
+**Dependencies:** E05:S06:T03, E05:S06:T04, E05:S06:T05  
 **Blocker:** None
 
 **Problem Statement:**
@@ -849,16 +849,16 @@ ai-dev-kit lacks explicit documentation of coding conventions, defensive program
 - Reviewed and approved
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
-- E5:S06:T05 - Architectural principles
+- E05:S06:T03 - Source material extraction
+- E05:S06:T05 - Architectural principles
 
 ---
 
-### E5:S06:T13 – Integrate Phase 2 components with existing documentation
+### E05:S06:T13 – Integrate Phase 2 components with existing documentation
 
 **Input:** Phase 2 deliverables (T10, T11, T12)  
 **Deliverable:** Integrated documentation with cross-references  
-**Dependencies:** E5:S06:T10, E5:S06:T11, E5:S06:T12  
+**Dependencies:** E05:S06:T10, E05:S06:T11, E05:S06:T12  
 **Blocker:** None
 
 **Approach:**
@@ -880,18 +880,18 @@ Similar to T08, but for Phase 2 components.
 - All links working
 
 **Related Work:**
-- E5:S06:T10 - Patterns and anti-patterns
-- E5:S06:T11 - Testing strategy
-- E5:S06:T12 - Coding conventions
+- E05:S06:T10 - Patterns and anti-patterns
+- E05:S06:T11 - Testing strategy
+- E05:S06:T12 - Coding conventions
 - All existing documentation
 
 ---
 
-### E5:S06:T14 – Review and validate Phase 2 deliverables
+### E05:S06:T14 – Review and validate Phase 2 deliverables
 
 **Input:** Phase 2 deliverables and integration  
 **Deliverable:** Validated Phase 2 components with approval  
-**Dependencies:** E5:S06:T13  
+**Dependencies:** E05:S06:T13  
 **Blocker:** None
 
 **Approach:**
@@ -917,11 +917,11 @@ Similar to T09, but for Phase 2 components.
 
 ---
 
-### E5:S06:T15 – Create project structure guide
+### E05:S06:T15 – Create project structure guide
 
 **Input:** ai-architect-kit `docs/project-structure.md`, KB structure  
 **Deliverable:** `docs/documentation/user-docs/project-structure-guide.md`  
-**Dependencies:** E5:S06:T03, E5:S06:T04  
+**Dependencies:** E05:S06:T03, E05:S06:T04  
 **Blocker:** None
 
 **Problem Statement:**
@@ -971,16 +971,16 @@ While ai-dev-kit has comprehensive KB structure documentation, a general project
 - Reviewed and approved
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
+- E05:S06:T03 - Source material extraction
 - `docs/architecture/standards-and-adrs/kb-structure-overview.md`
 
 ---
 
-### E5:S06:T16 – Enhance testing documentation with TDD section
+### E05:S06:T16 – Enhance testing documentation with TDD section
 
 **Input:** paradigm TDD workflow, testing strategy guide  
 **Deliverable:** Enhanced testing documentation with TDD section  
-**Dependencies:** E5:S06:T11, E5:S06:T03  
+**Dependencies:** E05:S06:T11, E05:S06:T03  
 **Blocker:** None
 
 **Problem Statement:**
@@ -1029,16 +1029,16 @@ Testing strategy guide should include TDD (Test-Driven Development) principles a
 - Reviewed and approved
 
 **Related Work:**
-- E5:S06:T11 - Testing strategy guide
-- E5:S06:T03 - Source material extraction
+- E05:S06:T11 - Testing strategy guide
+- E05:S06:T03 - Source material extraction
 
 ---
 
-### E5:S06:T17 – Enhance workflow documentation with issue-driven workflow
+### E05:S06:T17 – Enhance workflow documentation with issue-driven workflow
 
 **Input:** ai-architect-kit `docs/workflow.md`, workflow management framework  
 **Deliverable:** Enhanced workflow documentation with issue-driven workflow  
-**Dependencies:** E5:S06:T03, E5:S06:T04  
+**Dependencies:** E05:S06:T03, E05:S06:T04  
 **Blocker:** None
 
 **Problem Statement:**
@@ -1079,16 +1079,16 @@ Workflow management framework could benefit from explicit documentation of issue
 - Reviewed and approved
 
 **Related Work:**
-- E5:S06:T03 - Source material extraction
+- E05:S06:T03 - Source material extraction
 - `packages/frameworks/workflow mgt/` - Workflow framework
 
 ---
 
-### E5:S06:T18 – Integrate Phase 3 components with existing documentation
+### E05:S06:T18 – Integrate Phase 3 components with existing documentation
 
 **Input:** Phase 3 deliverables (T15, T16, T17)  
 **Deliverable:** Integrated documentation with cross-references  
-**Dependencies:** E5:S06:T15, E5:S06:T16, E5:S06:T17  
+**Dependencies:** E05:S06:T15, E05:S06:T16, E05:S06:T17  
 **Blocker:** None
 
 **Approach:**
@@ -1110,18 +1110,18 @@ Similar to T08 and T13, but for Phase 3 components.
 - All links working
 
 **Related Work:**
-- E5:S06:T15 - Project structure guide
-- E5:S06:T16 - TDD section
-- E5:S06:T17 - Issue-driven workflow
+- E05:S06:T15 - Project structure guide
+- E05:S06:T16 - TDD section
+- E05:S06:T17 - Issue-driven workflow
 - All existing documentation
 
 ---
 
-### E5:S06:T19 – Review and validate Phase 3 deliverables
+### E05:S06:T19 – Review and validate Phase 3 deliverables
 
 **Input:** Phase 3 deliverables and integration  
 **Deliverable:** Validated Phase 3 components with approval  
-**Dependencies:** E5:S06:T18  
+**Dependencies:** E05:S06:T18  
 **Blocker:** None
 
 **Approach:**
@@ -1147,11 +1147,11 @@ Similar to T09 and T14, but for Phase 3 components.
 
 ---
 
-### E5:S06:T20 – Create comprehensive cross-reference index
+### E05:S06:T20 – Create comprehensive cross-reference index
 
 **Input:** All incorporated components, existing documentation  
 **Deliverable:** Comprehensive cross-reference index  
-**Dependencies:** E5:S06:T19  
+**Dependencies:** E05:S06:T19  
 **Blocker:** None
 
 **Problem Statement:**
@@ -1204,11 +1204,11 @@ A comprehensive cross-reference index is needed to help users navigate all incor
 
 ---
 
-### E5:S06:T21 – Update all affected documentation with new references
+### E05:S06:T21 – Update all affected documentation with new references
 
 **Input:** All incorporated components, existing documentation  
 **Deliverable:** Updated documentation with new references  
-**Dependencies:** E5:S06:T20  
+**Dependencies:** E05:S06:T20  
 **Blocker:** None
 
 **Problem Statement:**
@@ -1256,15 +1256,15 @@ All existing documentation that should reference newly incorporated components n
 
 **Related Work:**
 - All existing documentation
-- E5:S06:T20 - Cross-reference index
+- E05:S06:T20 - Cross-reference index
 
 ---
 
-### E5:S06:T22 – Create migration guide for legacy repository users
+### E05:S06:T22 – Create migration guide for legacy repository users
 
 **Input:** Legacy repositories, incorporated components  
 **Deliverable:** Migration guide for legacy repository users  
-**Dependencies:** E5:S06:T19  
+**Dependencies:** E05:S06:T19  
 **Blocker:** None
 
 **Problem Statement:**
@@ -1317,11 +1317,11 @@ Users of legacy repositories (ai-architect-kit, paradigm) need guidance on migra
 
 ---
 
-### E5:S06:T23 – Final review and validation of all incorporated components
+### E05:S06:T23 – Final review and validation of all incorporated components
 
 **Input:** All phases deliverables, integration, cross-references  
 **Deliverable:** Final validation report with approval  
-**Dependencies:** E5:S06:T21, E5:S06:T22  
+**Dependencies:** E05:S06:T21, E05:S06:T22  
 **Blocker:** None
 
 **Problem Statement:**
@@ -1374,11 +1374,11 @@ A comprehensive final review and validation is needed to ensure all incorporated
 
 ---
 
-### E5:S06:T24 – Archive legacy repositories (ai-architect-kit and paradigm)
+### E05:S06:T24 – Archive legacy repositories (ai-architect-kit and paradigm)
 
 **Input:** Legacy repositories, final approval  
 **Deliverable:** Archived legacy repositories  
-**Dependencies:** E5:S06:T23  
+**Dependencies:** E05:S06:T23  
 **Blocker:** None
 
 **Problem Statement:**
@@ -1427,16 +1427,16 @@ Legacy repositories need to be archived after all valuable components have been 
 
 **Related Work:**
 - Legacy repositories
-- E5:S06:T22 - Migration guide
-- E5:S06:T23 - Final validation
+- E05:S06:T22 - Migration guide
+- E05:S06:T23 - Final validation
 
 ---
 
-### E5:S06:T25 – Document archive process and update references
+### E05:S06:T25 – Document archive process and update references
 
 **Input:** Archive process, archived repositories  
 **Deliverable:** Archive process documentation and updated references  
-**Dependencies:** E5:S06:T24  
+**Dependencies:** E05:S06:T24  
 **Blocker:** None
 
 **Problem Statement:**
@@ -1484,7 +1484,7 @@ The archive process needs to be documented and all references to legacy reposito
 - Story complete
 
 **Related Work:**
-- E5:S06:T24 - Archive repositories
+- E05:S06:T24 - Archive repositories
 - All documentation
 
 ---

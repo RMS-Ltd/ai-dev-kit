@@ -12,22 +12,22 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-03-25 (v0.5.2.6+1 – E5:S02:T06 FR-063 intake + CMW)  
+**Last updated:** 2026-03-25 (v0.5.2.6+1 – E05:S02:T06 FR-063 intake + CMW)  
 **Version:** v0.5.2.6+1  
 **Code:** E5S02
 
-**Note:** This story was renumbered from S01 to S02 as part of the repository story abstract space resolution (E9:S01:T08). S01 is now reserved for the FR Repo repository story.
+**Note:** This story was renumbered from S01 to S02 as part of the repository story abstract space resolution (E09:S01:T08). S01 is now reserved for the FR Repo repository story.
 
 ---
 
 ## Task Checklist
 
-- [ ] **E5:S02:T01 – Conduct comprehensive documentation hygiene analysis** - TODO (v0.5.2.1+2, migrated from v0.5.2.1+2 – Task planned)
-- [x] **E5:S02:T02 – Define documentation maintenance policies** - COMPLETE ✅ (migrated from E5:S02:T02)
-- [x] **E5:S02:T03 – Create documentation review cadences** - COMPLETE ✅ (migrated from E5:S02:T03)
-- [x] **E5:S02:T04 – Establish documentation update triggers** - COMPLETE ✅ (migrated from E5:S02:T04)
-- [ ] **E5:S02:T05 – Explore and evaluate KB platform/tooling options** - TODO (migrated from E5:S02:T05)
-- [x] **E5:S02:T06 – CMW Epic 5 execution context (FR-063)** - ✅ COMPLETE (v0.5.2.6+1) (MEDIUM — intake: FR-063 + task + board + CMW archival on E5 branch; **FR-063 implementation** still open per FR checklist)
+- [ ] **E05:S02:T01 – Conduct comprehensive documentation hygiene analysis** - TODO (v0.5.2.1+2, migrated from v0.5.2.1+2 – Task planned)
+- [x] **E05:S02:T02 – Define documentation maintenance policies** - COMPLETE ✅ (migrated from E05:S02:T02)
+- [x] **E05:S02:T03 – Create documentation review cadences** - COMPLETE ✅ (migrated from E05:S02:T03)
+- [x] **E05:S02:T04 – Establish documentation update triggers** - COMPLETE ✅ (migrated from E05:S02:T04)
+- [ ] **E05:S02:T05 – Explore and evaluate KB platform/tooling options** - TODO (migrated from E05:S02:T05)
+- [x] **E05:S02:T06 – CMW Epic 5 execution context (FR-063)** - ✅ COMPLETE (v0.5.2.6+1) (MEDIUM — intake: FR-063 + task + board + CMW archival on E5 branch; **FR-063 implementation** still open per FR checklist)
   - Task: [`T06-cmw-epic-5-execution-context-fr-063.md`](Story-002/T06-cmw-epic-5-execution-context-fr-063.md) | [FR-063](../../fr-br/FR-063-cmw-epic-5-execution-context.md)
 
 ---
@@ -46,7 +46,7 @@ Establish a comprehensive framework for documentation maintenance that ensures a
 
 ## Tasks
 
-### E5:S02:T01 – Conduct comprehensive documentation hygiene analysis
+### E05:S02:T01 – Conduct comprehensive documentation hygiene analysis
 
 **Input:** Entire documentation corpus (`docs/`, `packages/frameworks/`, root docs)  
 **Deliverable:** Documentation hygiene analysis report with categorized issues and recommendations  
@@ -121,11 +121,11 @@ Before establishing documentation maintenance policies, we need a comprehensive 
 
 ---
 
-### E5:S02:T02 – Define documentation maintenance policies
+### E05:S02:T02 – Define documentation maintenance policies
 
-**Input:** Documentation hygiene analysis report (E5:S02:T01)  
+**Input:** Documentation hygiene analysis report (E05:S02:T01)  
 **Deliverable:** Documentation maintenance policy document  
-**Dependencies:** E5:S02:T01  
+**Dependencies:** E05:S02:T01  
 **Blocker:** None
 
 **Status:** ✅ COMPLETE
@@ -150,11 +150,11 @@ Before establishing documentation maintenance policies, we need a comprehensive 
 
 ---
 
-### E5:S02:T03 – Create documentation review cadences
+### E05:S02:T03 – Create documentation review cadences
 
 **Input:** Documentation maintenance policies  
 **Deliverable:** Documentation review schedule and cadences  
-**Dependencies:** E5:S02:T02  
+**Dependencies:** E05:S02:T02  
 **Blocker:** None
 
 **Status:** ✅ COMPLETE
@@ -178,11 +178,11 @@ Before establishing documentation maintenance policies, we need a comprehensive 
 
 ---
 
-### E5:S02:T04 – Establish documentation update triggers
+### E05:S02:T04 – Establish documentation update triggers
 
-**Input:** Documentation maintenance policies (E5:S02:T02)  
+**Input:** Documentation maintenance policies (E05:S02:T02)  
 **Deliverable:** Documentation update trigger definitions document with procedures  
-**Dependencies:** E5:S02:T02  
+**Dependencies:** E05:S02:T02  
 **Blocker:** None
 
 **Problem Statement:**
@@ -325,14 +325,14 @@ Documentation often becomes outdated because there's no clear system for identif
 - Trigger reference guide complete and accessible
 
 **Related Work:**
-- E5:S02:T02 - Documentation maintenance policies (provides policy foundation)
-- E5:S02:T03 - Documentation review cadences (scheduled triggers)
+- E05:S02:T02 - Documentation maintenance policies (provides policy foundation)
+- E05:S02:T03 - Documentation review cadences (scheduled triggers)
 - Epic 2: Release Workflow (automatic triggers in RW Steps 6-7)
 - Epic 4: Kanban Framework (FR/BR → Task flow for documentation issues)
 
 ---
 
-### E5:S02:T05 – Explore and evaluate KB platform/tooling options
+### E05:S02:T05 – Explore and evaluate KB platform/tooling options
 
 **Input:** Current KB structure (Git-based Markdown), framework user requirements, book reader requirements  
 **Deliverable:** KB platform/tooling evaluation report with recommendations  
@@ -539,14 +539,14 @@ The current KB is Git-based (Markdown files in `docs/` directory), which works w
 - Migration path identified (if applicable)
 
 **Related Work:**
-- E5:S02:T01 - Documentation hygiene analysis (may inform requirements)
+- E05:S02:T01 - Documentation hygiene analysis (may inform requirements)
 - Epic 1: Story 3 - Core KB Structure (current structure baseline)
 - Epic 6: Framework Management (KB as framework package)
 - Epic 9: Book Content Development (book reader requirements)
 
 ---
 
-### E5:S02:T06 – CMW Epic 5 execution context (FR-063)
+### E05:S02:T06 – CMW Epic 5 execution context (FR-063)
 
 **Input:** [FR-063](../../fr-br/FR-063-cmw-epic-5-execution-context.md); `cmw.py`; `validate_branch_context.py`; Epic 5 branch `epic/5-documentation-management`  
 **Deliverable:** Per FR-063: docs + standalone CMW precondition + RW Step 9.5 escape hatch + config  

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E5:S01:T35](../epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)
+**Implementing Task:** [E05:S01:T35](../epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.5.1.35+1 (implemented)
 
@@ -140,8 +140,8 @@ This feature is needed:
 ## Use Cases
 
 **Primary Use Case:**
-1. Developer creates Task E9:S01:T08 (Repository Story Abstract Space Contradiction)
-2. Developer identifies related tasks: E9:S01:T01-T07 (other gap analysis tasks)
+1. Developer creates Task E09:S01:T08 (Repository Story Abstract Space Contradiction)
+2. Developer identifies related tasks: E09:S01:T01-T07 (other gap analysis tasks)
 3. Developer adds cross-wiring section to T08:
    - Links to T01-T07 with relationship types
    - Ensures bidirectional links (T01-T07 link back to T08)
@@ -254,7 +254,7 @@ A comprehensive Standard Operating Procedure has been created based on web resea
 
 ## Implementation
 
-**Implemented by:** [E5:S01:T35](../epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)  
+**Implemented by:** [E05:S01:T35](../epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)  
 **Version:** v0.5.1.35+1  
 **Date:** 2026-05-15
 

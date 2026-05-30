@@ -77,9 +77,9 @@ Epic 8 owns the **Tooling & Automation** framework for the ai-dev-kit repository
 Build code generators for common framework patterns and templates.
 
 **Tasks:**
-- [x] E8:S01:T01 – Create generator framework ✅ COMPLETE (v0.8.1.1+1)
-- [x] E8:S01:T02 – Build template-based generators ✅ COMPLETE (v0.8.1.2+1)
-- [x] E8:S01:T03 – Establish generator patterns ✅ COMPLETE (v0.8.1.3+1)
+- [x] E08:S01:T01 – Create generator framework ✅ COMPLETE (v0.8.1.1+1)
+- [x] E08:S01:T02 – Build template-based generators ✅ COMPLETE (v0.8.1.2+1)
+- [x] E08:S01:T03 – Establish generator patterns ✅ COMPLETE (v0.8.1.3+1)
 
 **Story:** [`Story-001-code-generators.md`](Story-001-code-generators.md)
 
@@ -96,9 +96,9 @@ Build code generators for common framework patterns and templates.
 Develop additional validators beyond the current 3 validation scripts.
 
 **Tasks:**
-- [x] E8:S02:T01 – Create validator framework ✅ COMPLETE (v0.8.2.1+1)
-- [ ] E8:S02:T02 – Build framework-specific validators
-- [ ] E8:S02:T03 – Establish validation patterns
+- [x] E08:S02:T01 – Create validator framework ✅ COMPLETE (v0.8.2.1+1)
+- [ ] E08:S02:T02 – Build framework-specific validators
+- [ ] E08:S02:T03 – Establish validation patterns
 
 **Story:** [`Story-002-additional-validators.md`](Story-002-additional-validators.md)
 
@@ -115,9 +115,9 @@ Develop additional validators beyond the current 3 validation scripts.
 Implement automation scripts for common development and maintenance tasks.
 
 **Tasks:**
-- [ ] E8:S03:T01 – Create automation framework
-- [ ] E8:S03:T02 – Build workflow automation scripts
-- [ ] E8:S03:T03 – Establish automation patterns
+- [ ] E08:S03:T01 – Create automation framework
+- [ ] E08:S03:T02 – Build workflow automation scripts
+- [ ] E08:S03:T03 – Establish automation patterns
 
 **Story:** [`Story-003-automation-scripts.md`](Story-003-automation-scripts.md)
 

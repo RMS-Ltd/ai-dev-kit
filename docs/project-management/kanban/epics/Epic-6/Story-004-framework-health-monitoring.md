@@ -16,15 +16,15 @@ housekeeping_policy: keep
 **Version:** v0.6.4.3+1  
 **Code:** E6S04
 
-**Note:** This story was renumbered from S03 to S04 as part of the repository story abstract space resolution (E9:S01:T08).
+**Note:** This story was renumbered from S03 to S04 as part of the repository story abstract space resolution (E09:S01:T08).
 
 ---
 
 ## Task Checklist
 
-- [x] **E6:S04:T01 – Create framework health metrics** - ✅ COMPLETE (v0.6.4.1+1 – Framework health metrics document created)
-- [x] **E6:S04:T02 – Implement health monitoring tools** - ✅ COMPLETE (v0.6.4.2+1 – Framework health monitoring tools implemented: monitoring script, collector modules, workflow, and procedures)
-- [x] **E6:S04:T03 – Build framework health dashboards** - ✅ COMPLETE (v0.6.4.3+1 – Framework health dashboard generator and guide created)
+- [x] **E06:S04:T01 – Create framework health metrics** - ✅ COMPLETE (v0.6.4.1+1 – Framework health metrics document created)
+- [x] **E06:S04:T02 – Implement health monitoring tools** - ✅ COMPLETE (v0.6.4.2+1 – Framework health monitoring tools implemented: monitoring script, collector modules, workflow, and procedures)
+- [x] **E06:S04:T03 – Build framework health dashboards** - ✅ COMPLETE (v0.6.4.3+1 – Framework health dashboard generator and guide created)
 
 ---
 
@@ -42,7 +42,7 @@ Build comprehensive monitoring and health tracking for framework packages.
 
 ## Tasks
 
-### E6:S04:T01 – Create framework health metrics
+### E06:S04:T01 – Create framework health metrics
 
 **Input:** Framework packages, maintenance requirements  
 **Deliverable:** Framework health metrics definition  
@@ -57,11 +57,11 @@ Build comprehensive monitoring and health tracking for framework packages.
 
 ---
 
-### E6:S04:T02 – Implement health monitoring tools
+### E06:S04:T02 – Implement health monitoring tools
 
 **Input:** Framework health metrics  
 **Deliverable:** Health monitoring tools  
-**Dependencies:** E6:S04:T01  
+**Dependencies:** E06:S04:T01  
 **Blocker:** None
 
 **Approach:**
@@ -72,11 +72,11 @@ Build comprehensive monitoring and health tracking for framework packages.
 
 ---
 
-### E6:S04:T03 – Build framework health dashboards
+### E06:S04:T03 – Build framework health dashboards
 
 **Input:** Health monitoring tools  
 **Deliverable:** Framework health dashboard  
-**Dependencies:** E6:S04:T02  
+**Dependencies:** E06:S04:T02  
 **Blocker:** None
 
 **Approach:**

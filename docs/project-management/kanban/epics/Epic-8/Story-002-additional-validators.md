@@ -20,9 +20,9 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E8:S02:T01 – Create validator framework** - ✅ COMPLETE (v0.8.2.1+1 – Validator framework implemented: BaseValidator, ValidationResult, ValidatorRegistry)
-- [x] **E8:S02:T02 – Build framework-specific validators** - ✅ COMPLETE (v0.8.2.2+1 – Framework-specific validators created: KanbanValidator, WorkflowValidator, VersionValidator, DocumentLifecycleValidator)
-- [x] **E8:S02:T03 – Establish validation patterns** - ✅ COMPLETE (v0.8.2.3+1 – Validation patterns library created: 7 pattern categories, pattern examples, best practices)
+- [x] **E08:S02:T01 – Create validator framework** - ✅ COMPLETE (v0.8.2.1+1 – Validator framework implemented: BaseValidator, ValidationResult, ValidatorRegistry)
+- [x] **E08:S02:T02 – Build framework-specific validators** - ✅ COMPLETE (v0.8.2.2+1 – Framework-specific validators created: KanbanValidator, WorkflowValidator, VersionValidator, DocumentLifecycleValidator)
+- [x] **E08:S02:T03 – Establish validation patterns** - ✅ COMPLETE (v0.8.2.3+1 – Validation patterns library created: 7 pattern categories, pattern examples, best practices)
 
 ---
 
@@ -40,7 +40,7 @@ Develop comprehensive validation framework and additional validators.
 
 ## Tasks
 
-### E8:S02:T01 – Create validator framework
+### E08:S02:T01 – Create validator framework
 
 **Status:** ✅ COMPLETE (v0.8.2.1+1)  
 **Input:** Current validators, validation requirements  
@@ -72,13 +72,13 @@ Develop comprehensive validation framework and additional validators.
 
 ---
 
-### E8:S02:T02 – Build framework-specific validators
+### E08:S02:T02 – Build framework-specific validators
 
 **Status:** ✅ COMPLETE (v0.8.2.2+1)
 
 **Input:** Validator framework, framework requirements  
 **Deliverable:** Framework-specific validator implementations  
-**Dependencies:** E8:S02:T01  
+**Dependencies:** E08:S02:T01  
 **Blocker:** None
 
 **Approach:**
@@ -109,13 +109,13 @@ Develop comprehensive validation framework and additional validators.
 
 ---
 
-### E8:S02:T03 – Establish validation patterns
+### E08:S02:T03 – Establish validation patterns
 
 **Status:** ✅ COMPLETE (v0.8.2.3+1)
 
 **Input:** Validator implementations  
 **Deliverable:** Validation pattern documentation  
-**Dependencies:** E8:S02:T02  
+**Dependencies:** E08:S02:T02  
 **Blocker:** None
 
 **Approach:**

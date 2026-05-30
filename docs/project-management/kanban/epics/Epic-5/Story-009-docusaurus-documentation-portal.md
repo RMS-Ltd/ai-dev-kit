@@ -20,17 +20,17 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E5:S09:T01 – Docusaurus site identity and config (FR-065)** - ✅ COMPLETE (v0.5.9.1+2)
-- [x] **E5:S09:T02 – Canonical docs path and publish scope (FR-066)** - ✅ COMPLETE (v0.5.9.2+2)
-- [x] **E5:S09:T03 – Production build corpus triage (FR-067)** - ✅ COMPLETE (v0.5.9.3+1)
-- [x] **E5:S09:T04 – Navigation, sidebar IA, and landing page (FR-068)** - ✅ COMPLETE (v0.5.9.4+1)
-- [x] **E5:S09:T05 – CI build gate (FR-069)** - ✅ COMPLETE (v0.5.9.5+1)
-- [x] **E5:S09:T06 – Deployment and hosting (FR-070)** - ✅ COMPLETE (v0.5.9.6+1)
-- [x] **E5:S09:T07 – Site search (FR-071)** - ✅ COMPLETE (v0.5.9.7+1)
-- [x] **E5:S09:T08 – Strict broken-link checking post–FR-067 (warn → throw)** - ✅ COMPLETE (**v0.5.9.8+2** — **RW E5:S09:T08**); **FU-1** on [FR-067](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — [task file](Story-009-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)
-- [x] **E5:S09:T09 – GitHub Pages go-live verification (FR-070 follow-up)** - ✅ COMPLETE (v0.5.9.9+2 — **RW E5:S09:T09**) — [task file](Story-009-docusaurus-documentation-portal/T09-github-pages-go-live-verification.md)
-- [x] **E5:S09:T10 – Strict broken-anchor checking post–T08** - ✅ COMPLETE (**v0.5.9.10+2** — **RW E5:S09:T10**); **FR-067** [FU-3](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — [task file](Story-009-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)
-- [x] **E5:S09:T11 – Monorepo cross-root Markdown link resolution ([BR-068](../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md))** — ✅ COMPLETE (**v0.5.9.11+5** — Wave 4 closes **BR-068**) — [task file](Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+- [x] **E05:S09:T01 – Docusaurus site identity and config (FR-065)** - ✅ COMPLETE (v0.5.9.1+2)
+- [x] **E05:S09:T02 – Canonical docs path and publish scope (FR-066)** - ✅ COMPLETE (v0.5.9.2+2)
+- [x] **E05:S09:T03 – Production build corpus triage (FR-067)** - ✅ COMPLETE (v0.5.9.3+1)
+- [x] **E05:S09:T04 – Navigation, sidebar IA, and landing page (FR-068)** - ✅ COMPLETE (v0.5.9.4+1)
+- [x] **E05:S09:T05 – CI build gate (FR-069)** - ✅ COMPLETE (v0.5.9.5+1)
+- [x] **E05:S09:T06 – Deployment and hosting (FR-070)** - ✅ COMPLETE (v0.5.9.6+1)
+- [x] **E05:S09:T07 – Site search (FR-071)** - ✅ COMPLETE (v0.5.9.7+1)
+- [x] **E05:S09:T08 – Strict broken-link checking post–FR-067 (warn → throw)** - ✅ COMPLETE (**v0.5.9.8+2** — **RW E05:S09:T08**); **FU-1** on [FR-067](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — [task file](Story-009-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)
+- [x] **E05:S09:T09 – GitHub Pages go-live verification (FR-070 follow-up)** - ✅ COMPLETE (v0.5.9.9+2 — **RW E05:S09:T09**) — [task file](Story-009-docusaurus-documentation-portal/T09-github-pages-go-live-verification.md)
+- [x] **E05:S09:T10 – Strict broken-anchor checking post–T08** - ✅ COMPLETE (**v0.5.9.10+2** — **RW E05:S09:T10**); **FR-067** [FU-3](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — [task file](Story-009-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)
+- [x] **E05:S09:T11 – Monorepo cross-root Markdown link resolution ([BR-068](../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md))** — ✅ COMPLETE (**v0.5.9.11+5** — Wave 4 closes **BR-068**) — [task file](Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
 
 > **Forensic marker format:** `✅ COMPLETE (vRC.E.S.T+B)` when done.
 

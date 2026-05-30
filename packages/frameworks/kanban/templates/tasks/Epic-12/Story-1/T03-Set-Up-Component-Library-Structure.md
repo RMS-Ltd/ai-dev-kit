@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E12:S1:T3` (e.g., `E4:S11:T01`)
+**Format:** `E12:S01:T03` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E12:S01:T03`
 
@@ -71,10 +71,10 @@ Set up component library structure for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E12:S1:T02
+- E12:S01:T02
 
 **Blocks:**
-- E12:S1:T04
+- E12:S01:T04
 
 **Blocked By:**
 - [What blocks this task]

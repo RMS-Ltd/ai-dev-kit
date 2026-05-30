@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E13:S2:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E13:S02:T01`)
 
 **Full Task ID:** `E13:S02:T01`
 
@@ -83,7 +83,7 @@ Write unit tests for the {PROJECT_NAME} project. Create unit tests that test ind
 - Testing infrastructure (from E13:S1)
 
 **Blocks:**
-- E13:S2:T02: Write integration tests (integration tests complement unit tests)
+- E13:S02:T02: Write integration tests (integration tests complement unit tests)
 
 **Parallel Development Candidacy:** Safe (can proceed independently after testing infrastructure)
 
@@ -92,8 +92,8 @@ Write unit tests for the {PROJECT_NAME} project. Create unit tests that test ind
 ## Related Work
 
 **Related Tasks:**
-- E13:S2:T02: Write integration tests (integration tests complement unit tests)
-- E13:S2:T03: Write end-to-end tests (E2E tests complement unit tests)
+- E13:S02:T02: Write integration tests (integration tests complement unit tests)
+- E13:S02:T03: Write end-to-end tests (E2E tests complement unit tests)
 
 **Related Stories:**
 - E13:S2: Test Implementation (this story)

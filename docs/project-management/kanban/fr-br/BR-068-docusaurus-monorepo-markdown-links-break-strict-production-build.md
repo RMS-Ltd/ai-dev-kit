@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.5.9.11+5  
 **Code:** BR-068  
 
-**Implementing Task:** [E5:S09:T11](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+**Implementing Task:** [E05:S09:T11](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
 
 ---
 
@@ -76,16 +76,16 @@ Strict FR-067 / T08 / T10 “throw” behavior is working as configured; the **d
 - [x] **`npm run build`** succeeds with policy-aligned link strategy (documented in portal README or maintenance doc).  
 - [x] **Linking policy** for out-of-`docs/` targets (INSTALL, framework paths) is recorded — e.g. stubs under `docs/guides/`, approved absolute GitHub URLs, `pathname://`, symlink, or controlled `exclude` — with **no silent regression** of FR-067 strict intent.  
 - [x] **Spot-check:** pages that previously failed MDX (INSTALL pointer from user-docs; `packages/` links from fr-br) render or link per policy.  
-- [x] **Optional:** CI workflow runs portal build on relevant paths — satisfied by **[`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)** (**FR-069** / **E5:S09:T05**).
+- [x] **Optional:** CI workflow runs portal build on relevant paths — satisfied by **[`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)** (**FR-069** / **E05:S09:T05**).
 
 ---
 
 ## Resolution
 
-**Delivered:** 2026-04-19 — **`v0.5.9.11+5`** (**RW E5:S09:T11 --art**, Wave 4 traceability).
+**Delivered:** 2026-04-19 — **`v0.5.9.11+5`** (**RW E05:S09:T11 --art**, Wave 4 traceability).
 
 - **Strategy A** corpus normalization (**IPW §1.5**) + Waves **2–3** verification (**TD1–TD3**) restored strict **`portal/`** production build (**`throw`** links/anchors unchanged vs FR-067 intent).
-- **Contributor policy:** [`portal/README.md` — BR-068](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md#br-068-monorepo-links-outside-the-docs-plugin-e5s09t11) and [`docusaurus-corpus-triage-fr-067.md`](../../../maintenance/docusaurus-corpus-triage-fr-067.md).
+- **Contributor policy:** [`portal/README.md` — BR-068](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md#br-068-monorepo-links-outside-the-docs-plugin-E05S09T11) and [`docusaurus-corpus-triage-fr-067.md`](../../../maintenance/docusaurus-corpus-triage-fr-067.md).
 
 ---
 

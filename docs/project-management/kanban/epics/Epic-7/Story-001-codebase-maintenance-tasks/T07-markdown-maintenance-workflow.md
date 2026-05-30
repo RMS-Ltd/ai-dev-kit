@@ -10,7 +10,7 @@
 
 ## Summary
 
-Design and implement the Markdown Maintenance Workflow (MMW) that triggers when Release Workflow markdown validators fail, distinguishes regressions vs legacy debt, and provides a repeatable maintenance loop (logs, checklists, CI hook) so Release Workflow runs can proceed while perpetual markdown cleanup (E7:S01:T05) makes measurable progress.
+Design and implement the Markdown Maintenance Workflow (MMW) that triggers when Release Workflow markdown validators fail, distinguishes regressions vs legacy debt, and provides a repeatable maintenance loop (logs, checklists, CI hook) so Release Workflow runs can proceed while perpetual markdown cleanup (E07:S01:T05) makes measurable progress.
 
 ---
 
@@ -27,7 +27,7 @@ Design and implement the Markdown Maintenance Workflow (MMW) that triggers when 
 
 ## Deliverables
 
-- MMW specification/test design/implementation plan (`docs/implementation-cycles/ICW-E7S01T07-*`).  
+- MMW specification/test design/implementation plan (`docs/implementation-cycles/ICW-E07S01T07-*`).  
 - Validator update supporting scoped/baseline outputs + CLI flags.  
 - `docs/maintenance/logs/mmw/UCW-<date>.md` template populated for first cycle.  
 - Release Runbook, Kanban board, and Story document updates describing MMW invocation + evidence.  

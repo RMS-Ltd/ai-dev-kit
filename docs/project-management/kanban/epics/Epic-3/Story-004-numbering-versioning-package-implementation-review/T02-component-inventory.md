@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E3:S04:T02 – Inventory Package Components and Map to Expectations
+# E03:S04:T02 – Inventory Package Components and Map to Expectations
 
-**Task ID:** E3:S04:T02  
+**Task ID:** E03:S04:T02  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E3 – Numbering & Versioning Framework  

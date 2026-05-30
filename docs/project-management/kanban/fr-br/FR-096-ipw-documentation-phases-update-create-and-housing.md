@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** RESOLVED — v0.2.16.11+1
 
-**Implementing Task:** [E2:S16:T11](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md)
+**Implementing Task:** [E02:S16:T11](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md)
 
 **Related:** [FR-042](./FR-042-implementation-planning-workflow-ipw.md) (product definition; steps 5–6 now operationalized), [FR-094](./FR-094-ipw-slash-command-and-task-state-transition-mandate.md) (slash command + phase gates), [BR-066](./BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) (publication housing)
 
@@ -66,7 +66,7 @@ Update `.claude/commands/ipw.md`, `implementation-planning-workflow-agent-execut
 - [x] **AC3:** Agent execution guide phase table is 0–9 and documents housing ladder.
 - [x] **AC4:** FR-042 formal steps 5–9 match operational phases.
 - [x] **AC5:** Global gate (`AGENTS.md`, `.cursorrules`) references IPP Sections 1–7.
-- [x] **AC6:** FR-096 ↔ E2:S16:T11 bidirectionally linked.
+- [x] **AC6:** FR-096 ↔ E02:S16:T11 bidirectionally linked.
 
 ---
 

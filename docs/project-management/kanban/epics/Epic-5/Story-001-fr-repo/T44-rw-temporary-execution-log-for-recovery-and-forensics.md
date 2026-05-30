@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Started:** [TBD]  
 **Completed:** [TBD]  
 **Version:** v0.5.1.44+0  
-**Code:** E5S01T44
+**Code:** E05S01T44
 
 ---
 
@@ -22,9 +22,9 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E5:S01:T44`
+**Full Task ID:** `E05:S01:T44`
 
-**Repository Pattern:** FR-044 = E5:S01:T44 (abstract space: v0.5.1.44+0)
+**Repository Pattern:** FR-044 = E05:S01:T44 (abstract space: v0.5.1.44+0)
 
 ---
 

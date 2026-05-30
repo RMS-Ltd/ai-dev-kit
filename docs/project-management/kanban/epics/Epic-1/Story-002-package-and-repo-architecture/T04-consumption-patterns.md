@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Consumption Patterns for Framework Packages
 
-**Task:** E1:S02:T04 – Document consumption patterns for each framework  
+**Task:** E01:S02:T04 – Document consumption patterns for each framework  
 **Date:** 2025-12-02  
 **Status:** ✅ COMPLETE
 
@@ -90,7 +90,7 @@ Do you need all three?
 5. **Test the Workflow:**
    - Create a version file: `src/yourproject/version.py`
    - Create an epic branch: `git checkout -b epic/1-first-epic`
-   - Send e.g. `RW E1S01T01` or `RW E1:S01:T01` in your AI assistant (**FR-060**)
+   - Send e.g. `RW E01S01T01` or `RW E01:S01:T01` in your AI assistant (**FR-060**)
    - Verify the workflow steps execute per your configuration
 
 **What You Get:**
@@ -445,9 +445,9 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 - ✅ Always synchronized systems
 
 **Example Complete Flow:**
-1. **Create Task in Kanban:** `E1:S01:T01 – Implement feature`
+1. **Create Task in Kanban:** `E01:S01:T01 – Implement feature`
 2. **Work on Task:** Make code changes
-3. **Run RW:** e.g. `RW E1S01T01` or `RW E1:S01:T01` in AI assistant (**FR-060**)
+3. **Run RW:** e.g. `RW E01S01T01` or `RW E01:S01:T01` in AI assistant (**FR-060**)
 4. **RW Executes:**
    - Bumps version: `0.1.1.1+1` → `0.1.1.1+2`
    - Generates changelog
@@ -738,5 +738,5 @@ This consumption patterns document provides the foundation for:
 
 _Document completed: 2025-12-02_  
 _Task: E1:S02:T004_  
-_Next: E1:S02:T05 – Update package READMEs with modularity information_
+_Next: E01:S02:T05 – Update package READMEs with modularity information_
 

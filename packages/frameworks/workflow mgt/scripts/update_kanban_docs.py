@@ -37,6 +37,11 @@ try:
 except ImportError:
     yaml = None
 
+_KANBAN_SCRIPT_DIR = Path(__file__).resolve().parent / "kanban"
+if str(_KANBAN_SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(_KANBAN_SCRIPT_DIR))
+from est_format import format_est_reference, normalize_est_inline_in_text  # noqa: E402
+
 
 # Recovery playbooks for common error scenarios (Step 16-17 from T01 analysis)
 RECOVERY_PLAYBOOKS = {
@@ -415,7 +420,7 @@ def parse_story_task_checklist(story_content: str, epic: int, story: int, task: 
     match = pattern.search(story_content)
     if match:
         return {
-            'task_id': f"E{epic}:S{story}:T{task:02d}",
+            'task_id': format_est_reference(epic, story, task),
             'version': match.group(1),
             'line': match.group(0)
         }
@@ -428,7 +433,7 @@ def parse_story_task_checklist(story_content: str, epic: int, story: int, task: 
     match2 = pattern2.search(story_content)
     if match2:
         return {
-            'task_id': f"E{epic}:S{story}:T{task}",
+            'task_id': format_est_reference(epic, story, task),
             'version': match2.group(1),
             'line': match2.group(0)
         }
@@ -853,6 +858,15 @@ def _parse_task_id(task_id: str) -> Optional[Tuple[int, int, int]]:
     return int(match.group(1)), int(match.group(2)), int(match.group(3))
 
 
+def _canonicalize_task_id(task_id: str) -> str:
+    """Return UXR-014 padded write-default for a parsed task id string."""
+    parsed = _parse_task_id(task_id)
+    if not parsed:
+        return task_id
+    epic, story, task = parsed
+    return format_est_reference(epic, story, task)
+
+
 def resolve_planning_artifact_for_task(task_id: str, project_root: Path) -> Optional[Path]:
     """
     Resolve planning artifact path for a task with deterministic precedence:
@@ -940,8 +954,9 @@ def _normalize_traceability_segments_for_row(line: str, project_root: Path) -> s
 
     if fbu_link_match and task_link_match:
         fbu_token = f"[{fbu_link_match.group(1)}-{fbu_link_match.group(2)}]({fbu_link_match.group(3)})"
-        task_token = f"[{task_link_match.group(1)}]({task_link_match.group(2)})"
-        ipp_token = render_ipp_segment_for_task(task_link_match.group(1), project_root)
+        canonical_task = _canonicalize_task_id(task_link_match.group(1))
+        task_token = f"[{canonical_task}]({task_link_match.group(2)})"
+        ipp_token = render_ipp_segment_for_task(canonical_task, project_root)
         # Remove existing canonical traceability tokens before re-appending in
         # canonical order (idempotent repeated-run behavior).
         #
@@ -962,7 +977,7 @@ def _normalize_traceability_segments_for_row(line: str, project_root: Path) -> s
     # kboard compatibility path: task row has bold task id + Task Document link.
     task_doc_match = re.search(r"\[Task Document\]\(([^)]+)\)", line_core)
     if task_id_bold_match and task_doc_match:
-        task_id = task_id_bold_match.group(1)
+        task_id = _canonicalize_task_id(task_id_bold_match.group(1))
         task_token = f"[{task_id}]({task_doc_match.group(1)})"
         ipp_token = render_ipp_segment_for_task(task_id, project_root)
         # FBU token cannot be deterministically inferred here; leave row unchanged.
@@ -1145,7 +1160,7 @@ def update_kanban_board(
     # Update Last Updated
     last_updated_pattern = r'(\*\*Last Updated:\*\*)\s*(.+?)(?:\n|$)'
     if re.search(last_updated_pattern, content, re.IGNORECASE):
-        new_last_updated = f"{today} (RW: E{epic}:S{story}:T{task})"
+        new_last_updated = f"{today} (RW: {format_est_reference(epic, story, task)})"
         content = re.sub(
             last_updated_pattern,
             rf'\1 {new_last_updated}\n',
@@ -2732,7 +2747,7 @@ def main():
         )
         if not task_info:
             task_info = {
-                "task_id": f"E{epic}:S{story}:T{task:02d}",
+                "task_id": format_est_reference(epic, story, task),
                 "version": version_string,
                 "line": "",
             }

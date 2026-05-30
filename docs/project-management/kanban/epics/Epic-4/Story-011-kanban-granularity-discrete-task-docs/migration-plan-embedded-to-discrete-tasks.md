@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Purpose:** Comprehensive migration plan to convert all embedded tasks (delimited sections in Story documents) to discrete Task documents (separate files)  
 **Status:** DRAFT  
 **Version:** 1.0.0  
-**Part of:** E4:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents  
+**Part of:** E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents  
 **Related:** FR-016: Kanban Granularity & Discrete Task Docs (3-Tier Structure)
 
 ---
@@ -61,7 +61,7 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 ### 1.2 Task Patterns
 
 **Naming Patterns:**
-- Full context: `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E4:S11:T01`)
+- Full context: `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E04:S11:T01`)
 - Abbreviated: `T\{task\}` (e.g., `T01`)
 - Variants: `Task \{task\}`, `T\{task\}-\{description\}`
 

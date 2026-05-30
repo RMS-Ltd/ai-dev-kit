@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Created:** 2026-02-26  
 **Last updated:** 2026-03-09  
 **Code:** FR-045  
-**Implementation Task:** [E5:S01:T45](../epics/Epic-5/Story-001-fr-repo/T45-adr-002-task-touch-derived-mapping.md)  
+**Implementation Task:** [E05:S01:T45](../epics/Epic-5/Story-001-fr-repo/T45-adr-002-task-touch-derived-mapping.md)  
 **GitHub Issue:** [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 
 ---
@@ -179,7 +179,7 @@ Task-touch mapping delivers:
 
 - Epic: Epic 5 (Documentation Management and Maintenance)
 - Story: Story 1 (FR Repository)
-- Task: Task 45 (E5:S01:T45)
+- Task: Task 45 (E05:S01:T45)
 - Version: `v0.5.1.45+2` (IMPLEMENTED)
 
 **Kanban Links:**
@@ -208,5 +208,5 @@ Task-touch mapping delivers:
 
 ---
 
-_This feature request follows the Kanban Framework FR template and is anchored as FR-045 in the FR repository story (E5:S01:T45)._
+_This feature request follows the Kanban Framework FR template and is anchored as FR-045 in the FR repository story (E05:S01:T45)._
 

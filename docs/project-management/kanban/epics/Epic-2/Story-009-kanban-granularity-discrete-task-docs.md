@@ -21,13 +21,13 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E2:S09:T00 – Story Creation and FR-016 Intake** ✅ COMPLETE (v0.2.9.0+0)
-- [x] **E2:S09:T01 – Coordination and Task Decomposition** ✅ COMPLETE (v0.2.9.1+0)
-- [x] **E2:S09:T02 – Update RW Step 1 to Require Task Doc Presence** ✅ COMPLETE (v0.2.9.2+0)
-- [x] **E2:S09:T03 – Enhance Validators for Task Doc Presence and Alignment** ✅ COMPLETE (v0.2.9.3+0)
-- [x] **E2:S09:T04 – Update RW Agent Execution Guide** ✅ COMPLETE (v0.2.9.4+1)
-- [x] **E2:S09:T05 – Documentation and Testing** ✅ COMPLETE (v0.2.9.5+1)
-- [x] **E2:S09:T06 – Dependency Wiring Cross-References** ✅ COMPLETE (v0.2.9.6+1)
+- [x] **E02:S09:T00 – Story Creation and FR-016 Intake** ✅ COMPLETE (v0.2.9.0+0)
+- [x] **E02:S09:T01 – Coordination and Task Decomposition** ✅ COMPLETE (v0.2.9.1+0)
+- [x] **E02:S09:T02 – Update RW Step 1 to Require Task Doc Presence** ✅ COMPLETE (v0.2.9.2+0)
+- [x] **E02:S09:T03 – Enhance Validators for Task Doc Presence and Alignment** ✅ COMPLETE (v0.2.9.3+0)
+- [x] **E02:S09:T04 – Update RW Agent Execution Guide** ✅ COMPLETE (v0.2.9.4+1)
+- [x] **E02:S09:T05 – Documentation and Testing** ✅ COMPLETE (v0.2.9.5+1)
+- [x] **E02:S09:T06 – Dependency Wiring Cross-References** ✅ COMPLETE (v0.2.9.6+1)
 
 > **Coordination:** Kanban-specific work (policy, templates) is handled in **E4:S11**. This story focuses on RW-specific integration.
 
@@ -54,7 +54,7 @@ Coordinate RW-specific integration for **3-tier granularity** (Epic → Story �
 
 ## Tasks
 
-### E2:S09:T00 – Story Creation and FR-016 Intake
+### E02:S09:T00 – Story Creation and FR-016 Intake
 
 **Input:** FR-016: Kanban Granularity & Discrete Task Docs (3-Tier Structure)  
 **Deliverable:** Story document created, FR-016 linked, tasks defined  
@@ -73,7 +73,7 @@ Coordinate RW-specific integration for **3-tier granularity** (Epic → Story �
 
 ---
 
-### E2:S09:T01 – Coordination and Task Decomposition
+### E02:S09:T01 – Coordination and Task Decomposition
 
 **Input:** FR-016 requirements, E2:S09 initial task list  
 **Deliverable:** Work decomposed into Epic 2 (RW) and Epic 4 (Kanban) tasks, coordination established  
@@ -88,8 +88,8 @@ Coordinate RW-specific integration for **3-tier granularity** (Epic → Story �
 2. Create E4:S11 for Kanban-specific tasks
 3. Update E2:S09 to focus on RW-specific work
 4. Establish dependencies:
-   - E2:S09:T02 (RW Step 1) depends on E4:S11:T01 (Kanban policy) and E4:S11:T02 (templates)
-   - E2:S09:T03 (Validators) depends on E4:S11:T01 (Kanban policy)
+   - E02:S09:T02 (RW Step 1) depends on E04:S11:T01 (Kanban policy) and E04:S11:T02 (templates)
+   - E02:S09:T03 (Validators) depends on E04:S11:T01 (Kanban policy)
 5. Document coordination approach and sequencing
 
 **Acceptance Criteria:**
@@ -110,23 +110,23 @@ Coordination between E4:S11 (Kanban Framework) and E2:S09 (RW Integration) is co
 - ✅ T06: Template optimization and tier delegation guidelines
 
 E2:S09 is now unblocked and can proceed with RW-specific integration tasks (T02-T05). Dependencies are properly documented:
-- E2:S09:T02 depends on E4:S11:T01 (Kanban policy) and E4:S11:T02 (templates) - ✅ Unblocked
-- E2:S09:T03 depends on E4:S11:T01 (Kanban policy) - ✅ Unblocked
+- E02:S09:T02 depends on E04:S11:T01 (Kanban policy) and E04:S11:T02 (templates) - ✅ Unblocked
+- E02:S09:T03 depends on E04:S11:T01 (Kanban policy) - ✅ Unblocked
 
 Sequencing is clear: Kanban work (E4:S11) → RW integration (E2:S09).
 
 **Related Work:**
 - **E4:S11:** Kanban Granularity & Discrete Task Docs (Kanban Framework)
-- **E4:S11:T01:** Update Kanban Governance Policy (prerequisite for E2:S09:T02)
-- **E4:S11:T02:** Create Task Document Template (prerequisite for E2:S09:T02)
+- **E04:S11:T01:** Update Kanban Governance Policy (prerequisite for E02:S09:T02)
+- **E04:S11:T02:** Create Task Document Template (prerequisite for E02:S09:T02)
 
 ---
 
-### E2:S09:T02 – Update RW Step 1 to Require Task Doc Presence
+### E02:S09:T02 – Update RW Step 1 to Require Task Doc Presence
 
 **Input:** Current RW Step 1 procedure and agent execution guide  
 **Deliverable:** Updated RW Step 1 requiring Task doc presence and validation  
-**Dependencies:** E4:S11:T01 (Kanban policy), E4:S11:T02 (Task template), T01 (coordination)  
+**Dependencies:** E04:S11:T01 (Kanban policy), E04:S11:T02 (Task template), T01 (coordination)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe
 
@@ -167,11 +167,11 @@ Updated RW Step 1 (B. IDENTIFY COMPLETED TASK) to require Task document presence
 
 ---
 
-### E2:S09:T03 – Enhance Validators for Task Doc Presence and Alignment
+### E02:S09:T03 – Enhance Validators for Task Doc Presence and Alignment
 
 **Input:** Current validation scripts  
 **Deliverable:** Enhanced validators checking Task doc presence and Epic/Story/Task alignment  
-**Dependencies:** E4:S11:T01 (Kanban policy), T02 (RW Step 1)  
+**Dependencies:** E04:S11:T01 (Kanban policy), T02 (RW Step 1)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe
 
@@ -213,11 +213,11 @@ Enhanced validators to check Task document presence and alignment:
 
 ---
 
-### E2:S09:T04 – Update RW Agent Execution Guide
+### E02:S09:T04 – Update RW Agent Execution Guide
 
 **Input:** Current RW agent execution guide  
 **Deliverable:** Updated RW agent execution guide with Task doc requirements  
-**Dependencies:** E4:S11:T01 (Kanban policy), E4:S11:T02 (Task template), T02 (RW Step 1)  
+**Dependencies:** E04:S11:T01 (Kanban policy), E04:S11:T02 (Task template), T02 (RW Step 1)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe
 
@@ -266,11 +266,11 @@ The guide now provides comprehensive documentation for agents executing Release 
 
 ---
 
-### E2:S09:T05 – Documentation and Testing
+### E02:S09:T05 – Documentation and Testing
 
 **Input:** All previous tasks, E4:S11 tasks  
 **Deliverable:** Complete documentation and test coverage for RW integration  
-**Dependencies:** T01-T04 (all previous tasks), E4:S11:T01-T03 (Kanban work)  
+**Dependencies:** T01-T04 (all previous tasks), E04:S11:T01-T03 (Kanban work)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe
 
@@ -305,23 +305,23 @@ The guide now provides comprehensive documentation for agents executing Release 
 
 ---
 
-### E2:S09:T06 – Dependency Wiring Cross-References
+### E02:S09:T06 – Dependency Wiring Cross-References
 
-**Input:** E2:S10:T06 dependency chain, FR-020 requirements  
-**Deliverable:** Cross-references wired to show E2:S09 blocks E2:S10:T06  
+**Input:** E02:S10:T06 dependency chain, FR-020 requirements  
+**Deliverable:** Cross-references wired to show E2:S09 blocks E02:S10:T06  
 **Dependencies:** None  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (documentation only)
 
-**Scope:** Wire cross-references in Related Work section to document that E2:S09 blocks E2:S10:T06 via dependency chain. Update Related Work section to include FR-020 and E2:S10:T06, and add cross-references to show the dependency relationship.
+**Scope:** Wire cross-references in Related Work section to document that E2:S09 blocks E02:S10:T06 via dependency chain. Update Related Work section to include FR-020 and E02:S10:T06, and add cross-references to show the dependency relationship.
 
 **Approach:**
-1. Update Related Work section to include FR-020 and E2:S10:T06
-2. Document that E2:S09 blocks E2:S10:T06 via dependency chain
+1. Update Related Work section to include FR-020 and E02:S10:T06
+2. Document that E2:S09 blocks E02:S10:T06 via dependency chain
 3. Add cross-references to show dependency relationship
 
 **Acceptance Criteria:**
-- [x] Related Work section updated with FR-020 and E2:S10:T06 ✅
+- [x] Related Work section updated with FR-020 and E02:S10:T06 ✅
 - [x] Dependency relationship documented ✅
 - [x] Cross-references wired ✅
 
@@ -331,14 +331,14 @@ The guide now provides comprehensive documentation for agents executing Release 
 
 ## Acceptance Criteria
 
-- [x] **AC1:** Kanban policy updated to mandate 3-tier structure and discrete Task docs ✅ (E4:S11:T01)
-- [x] **AC2:** Task docs include: ID, scope, acceptance criteria, status, version anchor, completion date, related BR/FR ✅ (E4:S11:T02)
-- [x] **AC3:** RW Step 1 and validators enforce presence of Task doc and alignment of Epic/Story/Task with version ✅ (E2:S09:T02, T03)
+- [x] **AC1:** Kanban policy updated to mandate 3-tier structure and discrete Task docs ✅ (E04:S11:T01)
+- [x] **AC2:** Task docs include: ID, scope, acceptance criteria, status, version anchor, completion date, related BR/FR ✅ (E04:S11:T02)
+- [x] **AC3:** RW Step 1 and validators enforce presence of Task doc and alignment of Epic/Story/Task with version ✅ (E02:S09:T02, T03)
 - [x] **AC4:** Doc-init (`+0`) path is supported and required for new Task docs (see FR-017) ✅ (E2:S10 - dependent story)
-- [x] **AC5:** No implicit/inline tasks allowed (must be explicit at task tier) ✅ (E4:S11:T01)
+- [x] **AC5:** No implicit/inline tasks allowed (must be explicit at task tier) ✅ (E04:S11:T01)
 - [x] **AC6:** Task docs created before implementation (tied to doc-init) ✅ (E2:S10 - dependent story)
-- [x] **AC7:** Clear, auditable mapping from task to version ✅ (E2:S09:T02, T03, T04)
-- [x] **AC8:** Automated checks for Epic/Story/Task alignment enabled ✅ (E2:S09:T03)
+- [x] **AC7:** Clear, auditable mapping from task to version ✅ (E02:S09:T02, T03, T04)
+- [x] **AC8:** Automated checks for Epic/Story/Task alignment enabled ✅ (E02:S09:T03)
 
 ---
 
@@ -358,9 +358,9 @@ The guide now provides comprehensive documentation for agents executing Release 
 - **FR-016:** Kanban Granularity & Discrete Task Docs (3-Tier Structure) (this story + E4:S11)
 - **FR-017:** Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T (depends on FR-016, enables E2:S10)
 - **FR-018:** Abstract Space for Zero-Numbered E/S/T Docs (depends on FR-016)
-- **FR-020:** Version Validator Abstract Space Awareness (depends on E2:S10:T02, which depends on this story)
+- **FR-020:** Version Validator Abstract Space Awareness (depends on E02:S10:T02, which depends on this story)
 - **E2:S10:** Doc-Init Build (+0) for New E/S/T (depends on this story via T01)
-- **E2:S10:T06:** Update Version Validator for Abstract Space Awareness (depends on E2:S10:T02, which depends on this story)
+- **E02:S10:T06:** Update Version Validator for Abstract Space Awareness (depends on E02:S10:T02, which depends on this story)
 - **Epic 2:** Workflow Management Framework
 - **Epic 3:** Numbering & Versioning Framework
 - **Epic 4:** Kanban Framework
@@ -385,12 +385,12 @@ All tasks complete:
 - Validators enhanced for Task doc validation and Epic/Story/Task alignment
 - RW Agent Execution Guide updated with Task document requirements
 - Comprehensive documentation and migration guide created
-- Cross-references wired to show E2:S09 blocks E2:S10:T06
+- Cross-references wired to show E2:S09 blocks E02:S10:T06
 
 **Story enables:**
 - E2:S10 (Doc-Init Build +0) - blocked by this story
 - FR-017 (Versioning Policy Hardening)
-- FR-020 (Version Validator Abstract Space Awareness) - via E2:S10:T06
+- FR-020 (Version Validator Abstract Space Awareness) - via E02:S10:T06
 
 ---
 
@@ -407,7 +407,7 @@ All tasks complete:
 ## Next Actions
 
 - [ ] Complete T01: Coordination and Task Decomposition
-- [ ] Wait for E4:S11:T01-T02 (Kanban policy and templates)
+- [ ] Wait for E04:S11:T01-T02 (Kanban policy and templates)
 - [ ] Begin T02: Update RW Step 1 procedure
 - [ ] Enhance validators (T03)
 

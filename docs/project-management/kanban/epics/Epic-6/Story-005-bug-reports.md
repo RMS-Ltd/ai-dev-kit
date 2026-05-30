@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.5.2+1  
 **Code:** E6S05
 
-**Note:** This story was renumbered from S04 to S05 as part of the repository story abstract space resolution (E9:S01:T08).
+**Note:** This story was renumbered from S04 to S05 as part of the repository story abstract space resolution (E09:S01:T08).
 
 **Story Type:** Perpetual Maintenance  
 **Completed:** N/A (Perpetual story - never completes)  
@@ -26,8 +26,8 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E6:S05:T01 – Fix RW installer template path bug** ✅ COMPLETE (v0.6.5.1+1) - Fixed incorrect path to cursorrules template file
-- [x] **E6:S05:T02 – Document canonical stories for Kanban framework** ✅ COMPLETE (v0.6.5.2+1) - Created CANONICAL_STORIES.md documenting Bug Reports and Feature Requests patterns
+- [x] **E06:S05:T01 – Fix RW installer template path bug** ✅ COMPLETE (v0.6.5.1+1) - Fixed incorrect path to cursorrules template file
+- [x] **E06:S05:T02 – Document canonical stories for Kanban framework** ✅ COMPLETE (v0.6.5.2+1) - Created CANONICAL_STORIES.md documenting Bug Reports and Feature Requests patterns
 
 ---
 
@@ -47,7 +47,7 @@ Systematically track, prioritize, and resolve bugs in framework packages, instal
 
 ## Tasks
 
-### E6:S05:T01 – Fix RW installer template path bug
+### E06:S05:T01 – Fix RW installer template path bug
 
 **Input:** User feedback from `been-there` project indicating installer script couldn't find template file  
 **Deliverable:** Fixed installer script with correct template path  
@@ -90,11 +90,11 @@ The RW installer script (`install_release_workflow.py`) was looking for the `cur
 
 ---
 
-### E6:S05:T02 – Document canonical stories for Kanban framework
+### E06:S05:T02 – Document canonical stories for Kanban framework
 
 **Input:** Bug Reports and Feature Requests stories created in Epic 6  
 **Deliverable:** Canonical stories documentation for Kanban framework  
-**Dependencies:** E6:S05:T01, E6:S05 (Feature Requests story)  
+**Dependencies:** E06:S05:T01, E6:S05 (Feature Requests story)  
 **Blocker:** None
 
 **Status:** ✅ COMPLETE

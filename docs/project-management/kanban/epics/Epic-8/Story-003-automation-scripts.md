@@ -20,11 +20,11 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [ ] **E8:S03:T01 – Create automation framework** - TODO
-- [ ] **E8:S03:T02 – Build workflow automation scripts** - TODO
-- [ ] **E8:S03:T03 – Establish automation patterns** - TODO
+- [ ] **E08:S03:T01 – Create automation framework** - TODO
+- [ ] **E08:S03:T02 – Build workflow automation scripts** - TODO
+- [ ] **E08:S03:T03 – Establish automation patterns** - TODO
 
-- [ ] **E8:S03:T04 – CI test workflow and pytest remediation (BR-058)** - TODO (LOW) — [Task doc](Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+- [ ] **E08:S03:T04 – CI test workflow and pytest remediation (BR-058)** - TODO (LOW) — [Task doc](Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
 
 ---
 
@@ -42,7 +42,7 @@ Implement comprehensive automation for common tasks.
 
 ## Tasks
 
-### E8:S03:T01 – Create automation framework
+### E08:S03:T01 – Create automation framework
 
 **Input:** Automation requirements, current scripts  
 **Deliverable:** Automation framework implementation  
@@ -57,11 +57,11 @@ Implement comprehensive automation for common tasks.
 
 ---
 
-### E8:S03:T02 – Build workflow automation scripts
+### E08:S03:T02 – Build workflow automation scripts
 
 **Input:** Automation framework, workflow requirements  
 **Deliverable:** Workflow automation script implementations  
-**Dependencies:** E8:S03:T01  
+**Dependencies:** E08:S03:T01  
 **Blocker:** None
 
 **Approach:**
@@ -72,11 +72,11 @@ Implement comprehensive automation for common tasks.
 
 ---
 
-### E8:S03:T03 – Establish automation patterns
+### E08:S03:T03 – Establish automation patterns
 
 **Input:** Automation implementations  
 **Deliverable:** Automation pattern documentation  
-**Dependencies:** E8:S03:T02  
+**Dependencies:** E08:S03:T02  
 **Blocker:** None
 
 **Approach:**

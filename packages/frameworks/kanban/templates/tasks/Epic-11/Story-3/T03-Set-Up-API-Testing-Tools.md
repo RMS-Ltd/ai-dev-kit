@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S3:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S03:T03`)
 
 **Full Task ID:** `E11:S03:T03`
 
@@ -34,7 +34,7 @@ Set up API testing tools for the {PROJECT_NAME} project. Configure and integrate
 
 ## Input
 
-- API test suite (from E11:S3:T02)
+- API test suite (from E11:S03:T02)
 - Testing tool requirements
 - Testing framework preferences
 - Integration requirements
@@ -83,7 +83,7 @@ Set up API testing tools for the {PROJECT_NAME} project. Configure and integrate
 ## Dependencies
 
 **Depends On:**
-- E11:S3:T02: Create API test suite (testing tools support test suite)
+- E11:S03:T02: Create API test suite (testing tools support test suite)
 
 **Blocks:**
 - None (testing tools support existing tests)
@@ -95,7 +95,7 @@ Set up API testing tools for the {PROJECT_NAME} project. Configure and integrate
 ## Related Work
 
 **Related Tasks:**
-- E11:S3:T02: Create API test suite (testing tools support test suite)
+- E11:S03:T02: Create API test suite (testing tools support test suite)
 - E13:S1: Testing Infrastructure Setup (API testing tools are part of testing infrastructure)
 
 **Related Stories:**

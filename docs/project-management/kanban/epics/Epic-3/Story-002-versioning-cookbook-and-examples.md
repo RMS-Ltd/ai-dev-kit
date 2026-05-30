@@ -20,18 +20,18 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E3:S02:T01 – Define core versioning scenarios for the cookbook** ✅ COMPLETE (v0.3.2.1+1)
-- [x] **E3:S02:T02 – Create versioning cookbook document with worked examples** ✅ COMPLETE (v0.3.2.2+1)
-- [x] **E3:S02:T03 – Add cross-framework examples (Kanban + Versioning + RW)** ✅ COMPLETE (v0.3.2.3+1)
-- [x] **E3:S02:T04 – Document edge cases and anti-patterns** ✅ COMPLETE (v0.3.2.4+1)
-- [x] **E3:S02:T05 – Create quick reference summary for users and agents** ✅ COMPLETE (v0.3.2.5+1)
-- [x] **E3:S02:T06 – Investigate and harden changelog ordering process** 🔄 PERPETUAL (v0.3.2.6+1)
-- [x] **E3:S02:T07 – Create dual-versioning guide for package manager compatibility** ✅ COMPLETE (v0.3.2.7+1)
-- [x] **E3:S02:T08 – Audit dual-versioning application across packages and propose strategy** ✅ COMPLETE (v0.3.2.8+1)
-- [x] **E3:S02:T09 – Implement Package Version Workflow (PVW) with agentic execution** ✅ COMPLETE (v0.3.2.9+1)
-- [ ] **E3:S02:T10 – Integrate PVW into Release Workflow agent execution guide** - TODO
-- [x] **E3:S02:T11 – Implement SemVer Mapping for Release Workflow** ✅ COMPLETE (v0.3.2.11+4 – GitHub release creation with SemVer)
-- [ ] **E3:S02:T12 – Implement ADR-002 Task-Touch SemVer Mapping Mode** - TODO (**[BR-061](../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)** — PATCH / counter over-increment; correct home vs E6:S06) - [Task Doc](Story-002-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
+- [x] **E03:S02:T01 – Define core versioning scenarios for the cookbook** ✅ COMPLETE (v0.3.2.1+1)
+- [x] **E03:S02:T02 – Create versioning cookbook document with worked examples** ✅ COMPLETE (v0.3.2.2+1)
+- [x] **E03:S02:T03 – Add cross-framework examples (Kanban + Versioning + RW)** ✅ COMPLETE (v0.3.2.3+1)
+- [x] **E03:S02:T04 – Document edge cases and anti-patterns** ✅ COMPLETE (v0.3.2.4+1)
+- [x] **E03:S02:T05 – Create quick reference summary for users and agents** ✅ COMPLETE (v0.3.2.5+1)
+- [x] **E03:S02:T06 – Investigate and harden changelog ordering process** 🔄 PERPETUAL (v0.3.2.6+1)
+- [x] **E03:S02:T07 – Create dual-versioning guide for package manager compatibility** ✅ COMPLETE (v0.3.2.7+1)
+- [x] **E03:S02:T08 – Audit dual-versioning application across packages and propose strategy** ✅ COMPLETE (v0.3.2.8+1)
+- [x] **E03:S02:T09 – Implement Package Version Workflow (PVW) with agentic execution** ✅ COMPLETE (v0.3.2.9+1)
+- [ ] **E03:S02:T10 – Integrate PVW into Release Workflow agent execution guide** - TODO
+- [x] **E03:S02:T11 – Implement SemVer Mapping for Release Workflow** ✅ COMPLETE (v0.3.2.11+4 – GitHub release creation with SemVer)
+- [ ] **E03:S02:T12 – Implement ADR-002 Task-Touch SemVer Mapping Mode** - TODO (**[BR-061](../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)** — PATCH / counter over-increment; correct home vs E6:S06) - [Task Doc](Story-002-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 
 ---
 
@@ -60,7 +60,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ## Tasks
 
-### E3:S02:T01 – Define core versioning scenarios for the cookbook
+### E03:S02:T01 – Define core versioning scenarios for the cookbook
 
 **Input:**  
 - `packages/frameworks/numbering & versioning/versioning-policy.md`  
@@ -90,7 +90,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T02 – Create versioning cookbook document with worked examples
+### E03:S02:T02 – Create versioning cookbook document with worked examples
 
 **Input:**  
 - Scenario list from T01  
@@ -115,7 +115,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T03 – Add cross-framework examples (Kanban + Versioning + RW)
+### E03:S02:T03 – Add cross-framework examples (Kanban + Versioning + RW)
 
 **Input:**  
 - Integration docs:
@@ -144,7 +144,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T04 – Document edge cases and anti-patterns ✅ COMPLETE
+### E03:S02:T04 – Document edge cases and anti-patterns ✅ COMPLETE
 
 **Input:**  
 - Findings from Epic 3 Story 1  
@@ -186,7 +186,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T05 – Create quick reference summary for users and agents
+### E03:S02:T05 – Create quick reference summary for users and agents
 
 **Input:**  
 - Cookbook content from T02–T04  
@@ -209,7 +209,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T06 – Investigate and harden changelog ordering process
+### E03:S02:T06 – Investigate and harden changelog ordering process
 
 **Status:** IN PROGRESS
 **Note:** This task is marked as PERPETUAL because changelog ordering is an ongoing maintenance concern. While the initial investigation and hardening work was completed in v0.3.2.6+1, the changelog must be continuously maintained to ensure canonical ordering is preserved. This task remains active to track any future ordering violations and ensure the process continues to work correctly.
@@ -259,7 +259,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T07 – Create dual-versioning guide for package manager compatibility
+### E03:S02:T07 – Create dual-versioning guide for package manager compatibility
 
 **Input:**  
 - User requirement: Projects using `RC.EPIC.STORY.TASK+BUILD` schema need SemVer (`MAJOR.MINOR.PATCH`) for package managers (npm, pub.dev, PyPI, etc.)
@@ -324,7 +324,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T08 – Audit dual-versioning application across packages and propose strategy
+### E03:S02:T08 – Audit dual-versioning application across packages and propose strategy
 
 **Status:** IN PROGRESS
 
@@ -374,7 +374,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T09 – Implement Package Version Workflow (PVW) with agentic execution
+### E03:S02:T09 – Implement Package Version Workflow (PVW) with agentic execution
 
 **Status:** IN PROGRESS
 
@@ -395,7 +395,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 **Package Version Updates:**
 - **Workflow Management:** 2.0.0 → 2.1.0 (MINOR) - Added Package Version Workflow (PVW)
 
-**Dependencies:** E3:S02:T08 (completed)  
+**Dependencies:** E03:S02:T08 (completed)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe  
 
@@ -409,12 +409,12 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T10 – Integrate PVW into Release Workflow agent execution guide
+### E03:S02:T10 – Integrate PVW into Release Workflow agent execution guide
 
 **Status:** IN PROGRESS
 
 **Input:**  
-- PVW implementation (E3:S02:T09 - completed)
+- PVW implementation (E03:S02:T09 - completed)
 - Release Workflow agent execution guide (`release-workflow-agent-execution.md`)
 - Release Workflow YAML definition (`release-workflow.yaml` - already has step-2.5)
 
@@ -436,7 +436,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 - Step-2.5 should be optional (required: false) but enabled by default
 - Step-2.5 should handle the case where no packages have changed (skip gracefully)
 
-**Dependencies:** E3:S02:T09 (completed)  
+**Dependencies:** E03:S02:T09 (completed)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe  
 
@@ -450,7 +450,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ---
 
-### E3:S02:T11 – Implement SemVer Mapping for Release Workflow
+### E03:S02:T11 – Implement SemVer Mapping for Release Workflow
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  

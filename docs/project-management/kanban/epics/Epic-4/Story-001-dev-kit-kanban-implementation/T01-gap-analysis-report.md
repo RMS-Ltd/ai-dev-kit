@@ -6,14 +6,14 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S01:T01 – Gap Analysis Report: Dev-Kit Kanban Policies and Templates vs. Framework
+# E04:S01:T01 – Gap Analysis Report: Dev-Kit Kanban Policies and Templates vs. Framework
 
 **Status:** IN PROGRESS  
 **Owner:** RMS  
 **Created:** 2025-12-02  
 **Last updated:** 2025-12-02 (v0.4.1.1+1 – initial gap analysis document)  
 **Version:** v0.4.1.1+1  
-**Code:** E4S01T001
+**Code:** E04S01T01
 
 ---
 
@@ -413,7 +413,7 @@ This document compares the `ai-dev-kit`'s local Kanban policy (`docs/project-man
 
 ## 9. Next Steps for T002
 
-The next task (E4:S01:T02) should:
+The next task (E04:S01:T02) should:
 1. Review fynd.deals Epic 15 Kanban documentation
 2. Extract reusable patterns (especially atomic RW behaviour, "ALL sections" rule, accessibility constraints)
 3. Document findings and recommendations
@@ -422,5 +422,5 @@ The next task (E4:S01:T02) should:
 ---
 
 **Last Updated:** 2025-12-02  
-**Next Task:** E4:S01:T02 – Ingest findings from fynd.deals Epic 15 Kanban work
+**Next Task:** E04:S01:T02 – Ingest findings from fynd.deals Epic 15 Kanban work
 

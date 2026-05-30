@@ -12,15 +12,15 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Last updated:** 2026-03-31 (**RW -k** — **v0.5.1.21+0** release; reconcile legacy FR-021 reqs with **E7:S00** via **FR-072** / **T72**)  
 **Version:** v0.5.1.21+0  
-**Code:** E5S01T21
+**Code:** E05S01T21
 
 ---
 
 ## Task ID
 
-**Full Task ID:** `E5:S01:T21`
+**Full Task ID:** `E05:S01:T21`
 
-**Repository pattern:** FR-021 → E5:S01:T21 (abstract space **v0.5.1.21+0**)
+**Repository pattern:** FR-021 → E05:S01:T21 (abstract space **v0.5.1.21+0**)
 
 ---
 
@@ -33,7 +33,7 @@ Track **FR-021** — formal **FR / BR / UXR repository story** pattern: PERPETUA
 ## Input
 
 - [FR-021](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md)  
-- [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) · [E5:S01:T72](T72-uniform-repository-abstract-space-kanban-rules.md)  
+- [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) · [E05:S01:T72](T72-uniform-repository-abstract-space-kanban-rules.md)  
 - [Story-001-fr-repo.md](../Story-001-fr-repo.md) · [Story-000-uxr-repo](../../Epic-7/Story-000-uxr-repo.md)
 
 ---
@@ -41,7 +41,7 @@ Track **FR-021** — formal **FR / BR / UXR repository story** pattern: PERPETUA
 ## Deliverable
 
 - Up-to-date task narrative + checklist alignment for FR-021 acceptance criteria still open (**R03** / **R06** or superseded-by policy documented).  
-- Bidirectional links FR-021 ↔ this task; board / structure listings cite **E5:S01:T21** where FR-021 appears.
+- Bidirectional links FR-021 ↔ this task; board / structure listings cite **E05:S01:T21** where FR-021 appears.
 
 ---
 
@@ -55,7 +55,7 @@ Track **FR-021** — formal **FR / BR / UXR repository story** pattern: PERPETUA
 
 ## Dependencies
 
-**Related:** E5:S01:T72 (uniform repository vs abstract-space rules), Epic 7 Story 000 (UXR repository pattern).
+**Related:** E05:S01:T72 (uniform repository vs abstract-space rules), Epic 7 Story 000 (UXR repository pattern).
 
 ---
 

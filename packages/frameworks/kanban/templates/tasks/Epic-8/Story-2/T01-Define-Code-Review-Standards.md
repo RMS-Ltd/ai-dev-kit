@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E8:S2:T1` (e.g., `E4:S11:T01`)
+**Format:** `E08:S02:T01` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E08:S02:T01`
 
@@ -74,7 +74,7 @@ Define code review standards for the {PROJECT_NAME} project.
 - None
 
 **Blocks:**
-- E8:S2:T02
+- E08:S02:T02
 
 **Blocked By:**
 - [What blocks this task]

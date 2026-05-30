@@ -8,15 +8,15 @@ housekeeping_policy: keep
 
 # Epic 8, Story 3, Task 4: CI test workflow and pytest remediation (BR-058)
 
-**Task ID:** E8:S03:T04  
+**Task ID:** E08:S03:T04  
 **Status:** TODO  
 **Priority:** LOW  
 **Created:** 2026-05-29  
 **Last updated:** 2026-05-29 (intake — semantic delivery under E8:S03 automation)  
-**Code:** E8S03T04
+**Code:** E08S03T04
 
 **Upstream:** [BR-058 — CI test workflow missing and pytest failures](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)  
-**Related audit:** [E7:S06:T08](../../Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) (tooling context)
+**Related audit:** [E07:S06:T08](../../Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) (tooling context)
 
 Publication Status: NOT_APPLICABLE
 
@@ -30,7 +30,7 @@ Restore a **`Tests`** (or equivalent) GitHub Actions workflow; fix failing pytes
 
 - [ ] **AC1:** `.github/workflows` includes runnable test workflow on PR/push.
 - [ ] **AC2:** `pytest` passes locally and in CI (or documented skip matrix with rationale).
-- [ ] **AC3:** **BR-058** resolution updated; **fbuboard** wired to **E8:S03:T04**.
+- [ ] **AC3:** **BR-058** resolution updated; **fbuboard** wired to **E08:S03:T04**.
 
 ## References
 

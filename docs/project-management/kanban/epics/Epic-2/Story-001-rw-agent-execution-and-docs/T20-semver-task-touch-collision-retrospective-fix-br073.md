@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T20 — SemVer task-touch collision retrospective fix (BR-073)
+# Task E02:S01:T20 — SemVer task-touch collision retrospective fix (BR-073)
 
-**Task ID:** E2:S01:T20  
+**Task ID:** E02:S01:T20  
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-05-15  
 **Last updated:** 2026-05-15  
 **Version Anchor:** v0.2.1.20+1  
-**Code:** E2S01T20
+**Code:** E02S01T20
 
 **Upstream:** [BR-073](../../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)
 

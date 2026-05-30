@@ -8,17 +8,17 @@ housekeeping_policy: keep
 
 # Epic 4, Story 19, Task 7: FR-021 repository pattern supersession (FR-072 reconciliation)
 
-**Task ID:** E4:S19:T07  
+**Task ID:** E04:S19:T07  
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Created:** 2026-05-29  
 **Last updated:** 2026-05-29 (**RW -k** **v0.4.19.7+1** — FR-021 semantic task filed)  
 **Version Anchor:** v0.4.19.7+1  
-**Code:** E4S19T07
+**Code:** E04S19T07
 
 **Upstream:** [FR-021 — FR/BR/UXR repository stories](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md)  
-**Related:** [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [E4:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
-**Historical registry:** [E5:S01:T21](../../Epic-5/Story-001-fr-repo/T21-fr-br-uxr-repository-stories.md)
+**Related:** [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [E04:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
+**Historical registry:** [E05:S01:T21](../../Epic-5/Story-001-fr-repo/T21-fr-br-uxr-repository-stories.md)
 
 Publication Status: NOT_APPLICABLE
 

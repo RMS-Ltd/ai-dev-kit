@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 4, Story 9, Task 7: FR-010 template task installation — two-phase migration
 
-**Task ID:** E4:S09:T07  
+**Task ID:** E04:S09:T07  
 **Status:** TODO  
 **Priority:** LOW  
 **Created:** 2026-05-29  
-**Code:** E4S09T07
+**Code:** E04S09T07
 
 **Upstream:** [FR-010 (templates)](../../../fr-br/FR-010-template-task-installation-two-phase-migration.md)  
-**Related:** [E4:S09:T06](T06-agentic-intelligence-task-mapping-fr010.md) (mapping variant)
+**Related:** [E04:S09:T06](T06-agentic-intelligence-task-mapping-fr010.md) (mapping variant)
 
 Publication Status: NOT_APPLICABLE
 

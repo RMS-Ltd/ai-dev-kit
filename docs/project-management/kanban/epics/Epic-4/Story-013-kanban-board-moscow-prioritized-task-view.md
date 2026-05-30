@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS (T07 — UXR-012 state icons)
 **Priority:** HIGH  
-**Last updated:** 2025-12-17 (v0.4.13.6+2 – T06 complete: E4:S13:T06)
+**Last updated:** 2025-12-17 (v0.4.13.6+2 – T06 complete: E04:S13:T06)
 **Estimated Effort:** [TBD]  
 **Started:** 2025-12-18  
 **Completed:** 2025-12-17
@@ -21,25 +21,25 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board** ✅ COMPLETE (v0.4.13.1+1)
+- [x] **E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board** ✅ COMPLETE (v0.4.13.1+1)
   - Task: [`T01-kanban-board-moscow-prioritized-task-view.md`](Story-013-kanban-board-moscow-prioritized-task-view/T01-kanban-board-moscow-prioritized-task-view.md)
 
-- [x] **E4:S13:T02 – Update Kanban governance policy** ✅ COMPLETE (v0.4.13.2+1)
+- [x] **E04:S13:T02 – Update Kanban governance policy** ✅ COMPLETE (v0.4.13.2+1)
   - Task: [`T02-update-kanban-governance-policy.md`](Story-013-kanban-board-moscow-prioritized-task-view/T02-update-kanban-governance-policy.md)
 
-- [x] **E4:S13:T03 – Update Kanban board template** ✅ COMPLETE (v0.4.13.3+1)
+- [x] **E04:S13:T03 – Update Kanban board template** ✅ COMPLETE (v0.4.13.3+1)
   - Task: [`T03-update-kanban-board-template.md`](Story-013-kanban-board-moscow-prioritized-task-view/T03-update-kanban-board-template.md)
 
-- [x] **E4:S13:T04 – Assess system impacts** ✅ COMPLETE (v0.4.13.4+3)
+- [x] **E04:S13:T04 – Assess system impacts** ✅ COMPLETE (v0.4.13.4+3)
   - Task: [`T04-assess-system-impacts.md`](Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
 
-- [x] **E4:S13:T05 – Update Kanban package** ✅ COMPLETE (v0.4.13.5+1)
+- [x] **E04:S13:T05 – Update Kanban package** ✅ COMPLETE (v0.4.13.5+1)
   - Task: [`T05-update-kanban-package.md`](Story-013-kanban-board-moscow-prioritized-task-view/T05-update-kanban-package.md)
 
-- [x] **E4:S13:T06 – Update other affected packages** ✅ COMPLETE (v0.4.13.6+1)
+- [x] **E04:S13:T06 – Update other affected packages** ✅ COMPLETE (v0.4.13.6+1)
   - Task: [`T06-update-other-affected-packages.md`](Story-013-kanban-board-moscow-prioritized-task-view/T06-update-other-affected-packages.md)
 
-- [ ] **E4:S13:T07 – Kanban and FBU state icons for MoSCOW rows (UXR-012)** - TODO (HIGH, canonical state→icon mapping; editorial pick among Sets A–D; kboard + fbuboard + UKW/RW) — [Task doc](Story-013-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) | [UXR-012](../../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
+- [ ] **E04:S13:T07 – Kanban and FBU state icons for MoSCOW rows (UXR-012)** - TODO (HIGH, canonical state→icon mapping; editorial pick among Sets A–D; kboard + fbuboard + UKW/RW) — [Task doc](Story-013-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) | [UXR-012](../../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
 
 > **Format:** `E4:S13:Txx` (Epic 4, Story 13, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.4.13.1+1)`)
@@ -72,7 +72,7 @@ Enhance the Kanban board to be more useful by:
 
 ## Tasks
 
-### E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+### E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
 
 **Input:** Current Kanban board structure, Kanban governance policy, user requirements  
 **Deliverable:** Enhanced Kanban board with MoSCOW prioritized task view, updated policy and template, impact assessment document  
@@ -92,7 +92,7 @@ Enhance the Kanban board to be more useful by:
 
 ---
 
-### E4:S13:T02 – Update Kanban governance policy
+### E04:S13:T02 – Update Kanban governance policy
 
 **Input:** Enhanced Kanban board structure (T01), current Kanban governance policy  
 **Deliverable:** Updated Kanban governance policy documents (canonical and local)  
@@ -112,7 +112,7 @@ Enhance the Kanban board to be more useful by:
 
 ---
 
-### E4:S13:T03 – Update Kanban board template
+### E04:S13:T03 – Update Kanban board template
 
 **Input:** Enhanced Kanban board structure (T01), updated Kanban governance policy (T02)  
 **Deliverable:** Updated Kanban board template in framework package  
@@ -132,7 +132,7 @@ Enhance the Kanban board to be more useful by:
 
 ---
 
-### E4:S13:T04 – Assess system impacts
+### E04:S13:T04 – Assess system impacts
 
 **Input:** Enhanced Kanban board structure (T01)  
 **Deliverable:** System impact assessment document, RW doc-init detection bug fix  
@@ -153,7 +153,7 @@ Enhance the Kanban board to be more useful by:
 
 ---
 
-### E4:S13:T05 – Update Kanban package
+### E04:S13:T05 – Update Kanban package
 
 **Input:** All previous task deliverables, user verification  
 **Deliverable:** Updated Kanban package with new board structure  
@@ -174,7 +174,7 @@ Enhance the Kanban board to be more useful by:
 
 ---
 
-### E4:S13:T06 – Update other affected packages
+### E04:S13:T06 – Update other affected packages
 
 **Input:** System impact assessment (T04), user verification  
 **Deliverable:** Updated affected packages (RW, validators, installers, etc.)  

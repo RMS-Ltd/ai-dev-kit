@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E7:S1:T3` (e.g., `E4:S11:T01`)
+**Format:** `E07:S01:T03` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E07:S01:T03`
 
@@ -71,10 +71,10 @@ Conduct user interviews for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E7:S1:T02
+- E07:S01:T02
 
 **Blocks:**
-- E7:S1:T04
+- E07:S01:T04
 
 **Blocked By:**
 - [What blocks this task]

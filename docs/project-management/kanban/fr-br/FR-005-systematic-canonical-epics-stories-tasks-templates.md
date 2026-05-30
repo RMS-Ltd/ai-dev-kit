@@ -12,10 +12,10 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-09  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** IMPLEMENTED — closure **v0.4.6.1+1** (`RW E4:S06:T01`, `--art`; Story-006 T00–T10 corpus; FR-005-R5 deferred)
+**Status:** IMPLEMENTED — closure **v0.4.6.1+1** (`RW E04:S06:T01`, `--art`; Story-006 T00–T10 corpus; FR-005-R5 deferred)
 
-**Implementing Task:** [E4:S06:T01 — FR-005 closure](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)  
-**Planning (IPW):** [IPP-E4S06T01](../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)
+**Implementing Task:** [E04:S06:T01 — FR-005 closure](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)  
+**Planning (IPW):** [IPP-E04S06T01](../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md)
 
 ---
 

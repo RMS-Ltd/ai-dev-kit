@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Severity:** N/A  
 **Status:** ACTIVE (intake released v0.5.2.6+1; implementation ACs open)  
 
-**Repository Pattern:** FR-063 = E5:S02:T06  
-**Implementing Task:** [E5:S02:T06](../epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md)
+**Repository Pattern:** FR-063 = E05:S02:T06  
+**Implementing Task:** [E05:S02:T06](../epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md)
 
 ---
 
@@ -38,7 +38,7 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 **Gap**
 
 - Adopters and agents are not **required** or **clearly guided** to use **E5 branch + E5 version** before CMW mutates `CHANGELOG.md` / archives.
-- **Perpetual CMW task** today is tracked as **E2:S16:T03**; doc-epic alignment for *where CMW should run* is not spelled out as a hard rule in CMW docs or scripts.
+- **Perpetual CMW task** today is tracked as **E02:S16:T03**; doc-epic alignment for *where CMW should run* is not spelled out as a hard rule in CMW docs or scripts.
 
 ---
 
@@ -60,8 +60,8 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 
 ### Kanban / attribution (should)
 
-- **Done:** [E5:S02:T06](../epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md) under **E5:S02 – Documentation Maintenance Framework** for implementation and RW on **`epic/5-documentation-management`**.
-- Reconcile messaging with **E2:S16:T03** (perpetual CMW maintenance): either narrow T102 to **framework script behavior** and use **E5** for doc-maintenance **runs**, or document a single source of truth — **decision recorded in task + Epic 5/Epic 6 docs**.
+- **Done:** [E05:S02:T06](../epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md) under **E5:S02 – Documentation Maintenance Framework** for implementation and RW on **`epic/5-documentation-management`**.
+- Reconcile messaging with **E02:S16:T03** (perpetual CMW maintenance): either narrow T102 to **framework script behavior** and use **E5** for doc-maintenance **runs**, or document a single source of truth — **decision recorded in task + Epic 5/Epic 6 docs**.
 
 ---
 
@@ -95,7 +95,7 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 - [FR-027](FR-027-add-cmw-to-workflow-management-package-documentation.md) — CMW package documentation (COMPLETE).
 - [FR-025](FR-025-changelog-management-and-archival-workflow.md) — Changelog management / archival workflow.
 - **Epic 5:** [`Epic-5.md`](../epics/Epic-5/Epic-5.md) — branch `epic/5-documentation-management`.
-- **Perpetual CMW task:** [E2:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — reconcile with E5 execution rule.
+- **Perpetual CMW task:** [E02:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — reconcile with E5 execution rule.
 - **Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`, `cmw-config.yaml`.
 
 ---

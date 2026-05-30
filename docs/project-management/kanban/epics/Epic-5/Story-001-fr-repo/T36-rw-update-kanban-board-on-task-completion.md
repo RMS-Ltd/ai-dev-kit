@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 36: RW Update Kanban Board on Task Completion
 
-**Task ID:** E5:S01:T36  
+**Task ID:** E05:S01:T36  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Last updated:** 2026-01-22 (v0.5.1.36+1 – Implementation complete: Kanban board updates added to RW Step 7)  
 **Completed:** 2026-01-22  
 **Version:** v0.5.1.36+1  
-**Code:** E5S01T36
+**Code:** E05S01T36
 
-**Repository Pattern:** FR-040 = E5:S01:T36 (abstract space: v0.5.1.36+0)
+**Repository Pattern:** FR-040 = E05:S01:T36 (abstract space: v0.5.1.36+0)
 
 ---
 
@@ -141,8 +141,8 @@ Enhance RW Step 7 (Auto-update Kanban Docs) to automatically update the main Kan
 
 **Related Tasks:**
 - **E2:S08:** Harden Release Workflow Reliability (FR-015 implementation)
-- **E6:S01:T33:** UKW Board Disorganization (related - board organization)
-- **E6:S01:T34:** UKW MoSCOW Prioritization Missing (related - board updates)
+- **E06:S01:T33:** UKW Board Disorganization (related - board organization)
+- **E06:S01:T34:** UKW MoSCOW Prioritization Missing (related - board updates)
 
 **Related Stories:**
 - **E5:S01:** FR Repo (this task is part of the FR repository)
@@ -200,7 +200,7 @@ Enhance RW Step 7 (Auto-update Kanban Docs) to automatically update the main Kan
 3. ✅ **Integration:** Integrated board updates into `main()` function
 4. ✅ **Validation:** Added board validation to `validate_updates()` function
 5. ✅ **Documentation:** Updated RW Step 7 documentation to include board updates
-6. ✅ **Script Documentation:** Updated script docstring to note E5:S01:T36 enhancement
+6. ✅ **Script Documentation:** Updated script docstring to note E05:S01:T36 enhancement
 
 **Key Features:**
 - Board metadata automatically updated on every RW execution

@@ -1,7 +1,7 @@
-# E4:S11:T07 – Planning: Spec, Tests, Implementation Plan
+# E04:S11:T07 – Planning: Spec, Tests, Implementation Plan
 
 **Task:** Migrate Embedded Tasks to Discrete Task Documents  
-**Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E4:S11:T07)  
+**Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)  
 **Status:** TODO  
 **Planning doc created:** 2026-02-22
 
@@ -37,7 +37,7 @@ Convert all 784 embedded task references in Story documents into discrete Task d
 - Edge cases: Nested sections, incomplete tasks, tasks spanning multiple blocks
 
 **Task ID extraction:**
-- Canonical: `E\{epic\}:S\{story\}:T\{task\}` (e.g., E4:S11:T07)
+- Canonical: `E\{epic\}:S\{story\}:T\{task\}` (e.g., E04:S11:T07)
 - Abbreviated in context: `T\{task\}` when Epic/Story known from Story doc path
 
 ### 1.4 Task Document Structure (Canonical)
@@ -79,7 +79,7 @@ Per `TASK_TEMPLATE.md` and FR-016:
 
 | TC | Name | Behavior under test |
 |----|------|---------------------|
-| T1 | `test_extract_embedded_task_simple` | Story with `### E4:S11:T01 – Name` yields one task with correct E/S/T |
+| T1 | `test_extract_embedded_task_simple` | Story with `### E04:S11:T01 – Name` yields one task with correct E/S/T |
 | T2 | `test_extract_embedded_task_multiple` | Story with 3 tasks yields 3 extracted tasks, correct boundaries |
 | T3 | `test_extract_handles_nested_sections` | Task with `####` subsections: content captured until next task |
 | T4 | `test_extract_handles_missing_fields` | Task with minimal content: extract with placeholder/TODO for missing fields |

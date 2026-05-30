@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E5:S1:T1` (e.g., `E4:S11:T01`)
+**Format:** `E05:S01:T01` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E05:S01:T01`
 
@@ -74,7 +74,7 @@ Design FR intake workflow for the {PROJECT_NAME} project.
 - None
 
 **Blocks:**
-- E5:S1:T02
+- E05:S01:T02
 
 **Blocked By:**
 - [What blocks this task]

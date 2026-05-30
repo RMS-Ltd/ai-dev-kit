@@ -6,13 +6,13 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E9:S05:T04 — Kanban Naming Hygiene and Directory Systematic Cleanup (UXR-011)
+# E09:S05:T04 — Kanban Naming Hygiene and Directory Systematic Cleanup (UXR-011)
 
 **Status:** COMPLETE
 **Priority:** HIGH
 **Last updated:** 2026-05-18 (regression validator green; all 10 ACs satisfied)
 **Version:** v0.9.5.4+1
-**Code:** E9S05T04
+**Code:** E09S05T04
 
 **Forensic Marker:** ✅ COMPLETE (v0.9.5.4+1)
 
@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Task ID:** E9:S05:T04
+**Task ID:** E09:S05:T04
 
 ---
 
@@ -38,10 +38,10 @@ Systematically clean up naming and structural hygiene issues across the entire `
 
 ## Input
 
-- [IPP-E9S05T04 Implementation Plan](../../../../../implementation-cycles/IPP-E9S05T04-kanban-naming-hygiene.md) — Formal implementation plan for this task (FR-042, IPW)
+- [IPP-E09S05T04 Implementation Plan](../../../../../implementation-cycles/IPP-E09S05T04-kanban-naming-hygiene.md) — Formal implementation plan for this task (FR-042, IPW)
 - [UXR-011](../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) — User Experience Research with full audit findings
-- [E2:S02:T007](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Original task naming change (TODO, informs approach)
-- [E2:S02:T008](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md) — Original kanban docs standardization (TODO, informs approach)
+- [E02:S02:T07](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Original task naming change (TODO, informs approach)
+- [E02:S02:T08](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md) — Original kanban docs standardization (TODO, informs approach)
 - [kanban-governance-policy](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — Naming policy source of truth
 
 ---
@@ -94,8 +94,8 @@ Systematically clean up naming and structural hygiene issues across the entire `
 ## Cross-Wiring
 
 **Related Tasks:**
-- **[E2:S02:T007](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)** — Relationship Type: Informs — Context: Original Txxx→Txx migration task that was never completed.
-- **[E2:S02:T008](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)** — Relationship Type: Informs — Context: Original kanban docs standardization task that was never completed.
+- **[E02:S02:T07](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)** — Relationship Type: Informs — Context: Original Txxx→Txx migration task that was never completed.
+- **[E02:S02:T08](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)** — Relationship Type: Informs — Context: Original kanban docs standardization task that was never completed.
 
 **Related UXR Documents:**
 - **[UXR-011](../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)** — Relationship Type: Informs — Context: UXR-011 is the originating research with full forensic analysis.
@@ -108,8 +108,8 @@ Systematically clean up naming and structural hygiene issues across the entire `
 - [UXR-011: Kanban naming hygiene and directory systematic cleanup](../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) — Bidirectional: UXR-011 links back to this task in its Implementing Task section.
 
 **Related Tasks:**
-- [E2:S02:T007: Implement task naming change](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Bidirectional: T007's task doc references the naming standard that this cleanup enforces.
-- [E2:S02:T008: Update kanban docs to Txx standard](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md) — Bidirectional: T008's task doc references the docs standardization that this cleanup completes.
+- [E02:S02:T07: Implement task naming change](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Bidirectional: T007's task doc references the naming standard that this cleanup enforces.
+- [E02:S02:T08: Update kanban docs to Txx standard](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md) — Bidirectional: T008's task doc references the docs standardization that this cleanup completes.
 
 ---
 
@@ -123,7 +123,7 @@ Systematically clean up naming and structural hygiene issues across the entire `
 
 ## Notes
 
-- The Txxx→Txx migration was originally planned in E2:S02:T007/T008 (December 2025) but was never executed. This task absorbs and completes that scope.
+- The Txxx→Txx migration was originally planned in E02:S02:T07/T008 (December 2025) but was never executed. This task absorbs and completes that scope.
 - Duplicate story files in Epics 5, 6, 7 likely resulted from merges between "registry" stories (fr-repo, br-repo) and functional stories. Careful content review is needed before deleting.
 - Cross-epic story name collisions (Epic-9 vs Epic-24 book stories) are semantically acceptable since they belong to different epics, but link resolution should be verified.
 - Recommended approach: create an inventory script first, then execute renames in git mv batches per epic to preserve history.
@@ -132,9 +132,9 @@ Systematically clean up naming and structural hygiene issues across the entire `
 
 ## References
 
-- [IPP-E9S05T04 Implementation Plan](../../../../../implementation-cycles/IPP-E9S05T04-kanban-naming-hygiene.md) — Formal implementation plan for this task (FR-042, IPW)
+- [IPP-E09S05T04 Implementation Plan](../../../../../implementation-cycles/IPP-E09S05T04-kanban-naming-hygiene.md) — Formal implementation plan for this task (FR-042, IPW)
 - [UXR-011](../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
-- [E2:S02:T007](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)
-- [E2:S02:T008](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)
+- [E02:S02:T07](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)
+- [E02:S02:T08](../../Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)
 - [kanban-governance-policy](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
 - [Epic-9](../Epic-9.md)

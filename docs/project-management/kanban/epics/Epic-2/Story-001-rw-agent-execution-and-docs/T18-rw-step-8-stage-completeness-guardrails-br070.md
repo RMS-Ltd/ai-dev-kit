@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T18 - RW Step 8 stage-completeness guardrails (BR-070)
+# Task E02:S01:T18 - RW Step 8 stage-completeness guardrails (BR-070)
 
-**Task ID:** E2:S01:T18
+**Task ID:** E02:S01:T18
 **Status:** COMPLETE
 **Priority:** HIGH
 **Created:** 2026-04-22
 **Last updated:** 2026-05-15
 **Version Anchor:** v0.2.1.18+1
-**Code:** E2S01T18
+**Code:** E02S01T18
 
 **Upstream:** [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
 
@@ -39,7 +39,7 @@ Harden RW Step 8 so release commits cannot omit Step-7 outputs. Add deterministi
 ## Input
 
 - [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
-- [IPW Plan — E2:S01:T18](../../../../../../.claude/plans/e2-s01-t18-polished-cerf.md)
+- [IPW Plan — E02:S01:T18](../../../../../../.claude/plans/e2-s01-t18-polished-cerf.md)
 
 ---
 
@@ -73,7 +73,7 @@ Harden RW Step 8 so release commits cannot omit Step-7 outputs. Add deterministi
 
 ## References
 
-- [IPW Plan — E2:S01:T18](../../../../../../.claude/plans/e2-s01-t18-polished-cerf.md)
+- [IPW Plan — E02:S01:T18](../../../../../../.claude/plans/e2-s01-t18-polished-cerf.md)
 - `packages/frameworks/workflow mgt/scripts/validate_rw_step7_completeness.py`
 - `packages/frameworks/workflow mgt/scripts/test_validate_rw_step7_completeness.py`
 - `packages/frameworks/workflow mgt/scripts/validate_rw_step7_post_commit.py`

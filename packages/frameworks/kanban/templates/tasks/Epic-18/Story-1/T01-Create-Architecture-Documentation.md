@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E18:S1:T1` (e.g., `E4:S11:T01`)
+**Format:** `E18:S01:T01` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E18:S01:T01`
 
@@ -74,7 +74,7 @@ Create architecture documentation for the {PROJECT_NAME} project.
 - None
 
 **Blocks:**
-- E18:S1:T02
+- E18:S01:T02
 
 **Blocked By:**
 - [What blocks this task]

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S2:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S02:T02`)
 
 **Full Task ID:** `E12:S02:T02`
 
@@ -34,9 +34,9 @@ Implement base components (Button, Input, etc.) for the {PROJECT_NAME} project. 
 
 ## Input
 
-- Component architecture (from E12:S2:T01)
-- UI framework (from E12:S1:T01)
-- Styling system (from E12:S1:T04)
+- Component architecture (from E12:S02:T01)
+- UI framework (from E12:S01:T01)
+- Styling system (from E12:S01:T04)
 - Base component requirements
 - Design specifications
 - ai-dev-kit base component patterns (if adopting)
@@ -86,11 +86,11 @@ Implement base components (Button, Input, etc.) for the {PROJECT_NAME} project. 
 ## Dependencies
 
 **Depends On:**
-- E12:S2:T01: Design component architecture (base components implement architecture)
+- E12:S02:T01: Design component architecture (base components implement architecture)
 
 **Blocks:**
-- E12:S2:T03: Create layout components (layout components may use base components)
-- E12:S2:T04: Build form components (form components use base components)
+- E12:S02:T03: Create layout components (layout components may use base components)
+- E12:S02:T04: Build form components (form components use base components)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -99,9 +99,9 @@ Implement base components (Button, Input, etc.) for the {PROJECT_NAME} project. 
 ## Related Work
 
 **Related Tasks:**
-- E12:S2:T01: Design component architecture (base components implement architecture)
-- E12:S2:T03: Create layout components (layout components may use base components)
-- E12:S2:T04: Build form components (form components use base components)
+- E12:S02:T01: Design component architecture (base components implement architecture)
+- E12:S02:T03: Create layout components (layout components may use base components)
+- E12:S02:T04: Build form components (form components use base components)
 
 **Related Stories:**
 - E12:S2: Core UI Components (this story)

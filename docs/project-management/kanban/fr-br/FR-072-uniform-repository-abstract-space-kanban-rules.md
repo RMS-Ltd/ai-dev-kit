@@ -15,14 +15,14 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IN PROGRESS  
 
-**Implementing Task:** [E4:S19:T08](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
-**Historical registry:** E5:S01:T72
+**Implementing Task:** [E04:S19:T08](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
+**Historical registry:** E05:S01:T72
 
 ---
 
 ## Summary
 
-**Epic 5** and **Epic 7** today use **Story 0** differently: **E5:S00** is **epic-level abstract space only (no tasks)** while **FR** repository work lives in **E5:S01**. **Epic 7** uses **E7:S00** as the **perpetual UXR repository story** with **concrete tasks** (e.g. **E7:S00:T01**, **E7:S00:T05**). That clashes with the stricter E5 model and with the **intent** described in [FR-021](FR-021-fr-br-uxr-repository-stories.md) (UXR anchors under **E7:S01:T01**), which **does not match** the current **E7:S01** (“Codebase Maintenance Tasks”) allocation.
+**Epic 5** and **Epic 7** today use **Story 0** differently: **E5:S00** is **epic-level abstract space only (no tasks)** while **FR** repository work lives in **E5:S01**. **Epic 7** uses **E7:S00** as the **perpetual UXR repository story** with **concrete tasks** (e.g. **E07:S00:T01**, **E07:S00:T05**). That clashes with the stricter E5 model and with the **intent** described in [FR-021](FR-021-fr-br-uxr-repository-stories.md) (UXR anchors under **E07:S01:T01**), which **does not match** the current **E7:S01** (“Codebase Maintenance Tasks”) allocation.
 
 This FR requests a **single, documented rule model** for:
 
@@ -32,7 +32,7 @@ This FR requests a **single, documented rule model** for:
 
 **Outcomes:** evaluate approaches → **decide** the uniform model → **update all policy and documentation** (including templates, `.cursorrules`, framework Kanban governance, versioning policy cross-links, and affected epic/story/task docs).
 
-**ID note:** **FR-072** is used here because **FR-064** is already **[retire `shields` branch / private repo badges](FR-064-shields-branch-private-repo-badges.md)** (**E5:S01:T69**).
+**ID note:** **FR-072** is used here because **FR-064** is already **[retire `shields` branch / private repo badges](FR-064-shields-branch-private-repo-badges.md)** (**E05:S01:T69**).
 
 ---
 
@@ -171,7 +171,7 @@ Select **one** primary model (or **D** phased to **A** / **C**) and record:
 **Assigned To:**
 
 - **Epic / Story:** Epic 5, Story 1 (FR Repo)  
-- **Task:** E5:S01:T72  
+- **Task:** E05:S01:T72  
 - **Version (abstract):** `0.5.1.72+0` (doc-init released; further work uses `+1`…)  
 
 **Kanban Links:**
@@ -185,4 +185,4 @@ Select **one** primary model (or **D** phased to **A** / **C**) and record:
 ## Notes
 
 - **GitHub Issue:** *TBD* (optional follow-up).
-- This FR is **meta-governance**: implementation may span **multiple epics**; **E5:S01:T72** remains the **FR anchor**; **implementation tasks** may be filed under Epic 4 / 7 / 9 per the chosen approach.
+- This FR is **meta-governance**: implementation may span **multiple epics**; **E05:S01:T72** remains the **FR anchor**; **implementation tasks** may be filed under Epic 4 / 7 / 9 per the chosen approach.

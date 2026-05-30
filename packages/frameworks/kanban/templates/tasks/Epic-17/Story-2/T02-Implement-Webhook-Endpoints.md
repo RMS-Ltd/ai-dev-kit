@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E17:S2:T2` (e.g., `E4:S11:T01`)
+**Format:** `E17:S02:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E17:S02:T02`
 
@@ -71,10 +71,10 @@ Implement webhook endpoints for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E17:S2:T01
+- E17:S02:T01
 
 **Blocks:**
-- E17:S2:T03
+- E17:S02:T03
 
 **Blocked By:**
 - [What blocks this task]

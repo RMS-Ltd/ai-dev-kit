@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E11:S1:T5` (e.g., `E4:S11:T01`)
+**Format:** `E11:S01:T05` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E11:S01:T05`
 
@@ -71,10 +71,10 @@ Create API documentation structure for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E11:S1:T04
+- E11:S01:T04
 
 **Blocks:**
-- E11:S1:T06
+- E11:S01:T06
 
 **Blocked By:**
 - [What blocks this task]

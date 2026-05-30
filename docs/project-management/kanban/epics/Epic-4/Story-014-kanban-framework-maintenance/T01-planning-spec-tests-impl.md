@@ -1,7 +1,7 @@
-# E4:S14:T01 – Planning: Spec, Tests, Implementation Plan
+# E04:S14:T01 – Planning: Spec, Tests, Implementation Plan
 
 **Task:** Update Packaged RW to Handle UKW Context and Perpetual Tasks  
-**Host Task:** [T01-planning-spec-tests-impl.md](T01-planning-spec-tests-impl.md) (E4:S14:T01)  
+**Host Task:** [T01-planning-spec-tests-impl.md](T01-planning-spec-tests-impl.md) (E04:S14:T01)  
 **Status:** COMPLETE (v0.4.14.1+1)  
 **Planning doc created:** 2026-02-22
 
@@ -11,7 +11,7 @@
 
 ### 1.1 Goal
 
-Packaged RW framework must handle UKW context detection and perpetual task attribution so that UKW-triggered releases are attributed to perpetual tasks (e.g. E2:S16:T03) instead of arbitrary feature tasks, and build-number warnings are suppressed for perpetual tasks.
+Packaged RW framework must handle UKW context detection and perpetual task attribution so that UKW-triggered releases are attributed to perpetual tasks (e.g. E02:S16:T03) instead of arbitrary feature tasks, and build-number warnings are suppressed for perpetual tasks.
 
 ### 1.2 Functional Requirements
 
@@ -54,7 +54,7 @@ Packaged RW framework must handle UKW context detection and perpetual task attri
 
 | TC | Name | Behavior under test |
 |----|------|---------------------|
-| T1 | `test_task_id_extraction_prefers_canonical_section` | `extract_task_id_canonical()` returns E2:S16:T03 from `**Value:**` when Progress mentions E4:S16:T05 |
+| T1 | `test_task_id_extraction_prefers_canonical_section` | `extract_task_id_canonical()` returns E02:S16:T03 from `**Value:**` when Progress mentions E04:S16:T05 |
 | T2 | `test_perpetual_task_detection_by_task_number` | `is_perpetual_task(101|100|103)` → True; `is_perpetual_task(5|99)` → False |
 | T3 | `test_perpetual_task_detection_by_doc_content` | Doc with `Task Type: Perpetual Maintenance` or `perpetual_task: true` → perpetual even for T05/T37 |
 | T4 | `test_validate_version_bump_passes_for_perpetual_task` | Version 0.6.7.101+31 + T101 task doc + story → validation passes |

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 2, Story 11, Task 12: GitHub Actions Workflow Bug Resolution
 
-**Task ID:** E2:S11:T12  
+**Task ID:** E02:S11:T12  
 **Status:** ✅ COMPLETE (v0.2.11.12+2)  
 **Priority:** CRITICAL  
 **Last updated:** 2026-03-30  
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Full Task ID:** `E2:S11:T12`
+**Full Task ID:** `E02:S11:T12`
 
 ---
 

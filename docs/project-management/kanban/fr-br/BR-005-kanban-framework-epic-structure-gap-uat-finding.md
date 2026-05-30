@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E4:S06:T06](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
+**Implementing Task:** [E04:S06:T06](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
 
 ---
 
@@ -341,7 +341,7 @@ Added detailed comment on GitHub issue #1 with full traceability to internal Kan
   - BR-005 Bug Report document
   - Epic 4: Kanban Framework
   - Story 6: Comprehensive Canonical E/S/T Template System
-  - Task 6: Update CANONICAL_EPICS.md (E4:S06:T06)
+  - Task 6: Update CANONICAL_EPICS.md (E04:S06:T06)
 
 - Comment documents fix completion and verification status
 - Comment provides full traceability from GitHub issue to internal Kanban system
@@ -406,7 +406,7 @@ Added detailed comment on GitHub issue #1 with full traceability to internal Kan
 **Intake By:** AI Agent (Cursor)
 
 **Decision Flow Results:**
-- [x] Story Match Found: Epic 4, Story 6 → Task 6 (E4:S06:T06)
+- [x] Story Match Found: Epic 4, Story 6 → Task 6 (E04:S06:T06)
 - [ ] New Story Created: [N/A]
 - [ ] New Epic Created: [N/A]
 
@@ -419,7 +419,7 @@ Added detailed comment on GitHub issue #1 with full traceability to internal Kan
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
 - Story: [`docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
-- Task: E4:S06:T06 (Update CANONICAL_EPICS.md - enhanced scope to address BR-005)
+- Task: E04:S06:T06 (Update CANONICAL_EPICS.md - enhanced scope to address BR-005)
 
 ---
 

@@ -22,7 +22,7 @@ housekeeping_policy: keep
 ## Task ID
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
-**Value:** `E5:S01:T40`
+**Value:** `E05:S01:T40`
 
 ---
 
@@ -334,7 +334,7 @@ Implement a complete Implementation Cycle Workflow (ICW) that provides structure
 4. **Integration Planning:** Plan system integration approach
 5. **Testing Strategy:** Develop comprehensive testing plan
 
-**IPW consolidation (2026-04):** Ongoing planning-workflow product work is **FR-042** / **E5:S01:T42**. Canonical agent trigger is **IPW**; **ICW** is a deprecated alias (**FR-042** §7). See [T42-implementation-planning-workflow-ipw.md](T42-implementation-planning-workflow-ipw.md).
+**IPW consolidation (2026-04):** Ongoing planning-workflow product work is **FR-042** / **E05:S01:T42**. Canonical agent trigger is **IPW**; **ICW** is a deprecated alias (**FR-042** §7). See [T42-implementation-planning-workflow-ipw.md](T42-implementation-planning-workflow-ipw.md).
 
 ---
 

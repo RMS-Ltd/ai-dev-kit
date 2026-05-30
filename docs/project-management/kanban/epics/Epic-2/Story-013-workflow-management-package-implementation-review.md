@@ -20,15 +20,15 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E2:S13:T01 – Establish expectations baseline for Workflow Management package** - ✅ COMPLETE (v0.2.13.1+2)
+- [x] **E02:S13:T01 – Establish expectations baseline for Workflow Management package** - ✅ COMPLETE (v0.2.13.1+2)
   - Task Doc: [`T01-expectations-baseline.md`](Story-013-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 
-- [ ] **E2:S13:T02 – Inventory package components and map to expectations** - TODO
-- [ ] **E2:S13:T03 – Validate workflow behavior against documented guidance** - TODO
-- [ ] **E2:S13:T04 – Review integrations and dependency alignment** - TODO
-- [ ] **E2:S13:T05 – Create gap log and risk assessment** - TODO
-- [ ] **E2:S13:T06 – Define RC sign-off criteria and remediation tasks** - TODO
-- [x] **E2:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
+- [ ] **E02:S13:T02 – Inventory package components and map to expectations** - TODO
+- [ ] **E02:S13:T03 – Validate workflow behavior against documented guidance** - TODO
+- [ ] **E02:S13:T04 – Review integrations and dependency alignment** - TODO
+- [ ] **E02:S13:T05 – Create gap log and risk assessment** - TODO
+- [ ] **E02:S13:T06 – Define RC sign-off criteria and remediation tasks** - TODO
+- [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
   - Task Doc: [`T07-rw-semver-tag-when-task-touch-enabled.md`](Story-013-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)
 
 
@@ -87,9 +87,9 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## Tasks
 
-### E2:S13:T01 – Establish expectations baseline for Workflow Management package
+### E02:S13:T01 – Establish expectations baseline for Workflow Management package
 
-**Task ID:** E2:S13:T01  
+**Task ID:** E02:S13:T01  
 **Status:** ✅ COMPLETE  
 **Scope:** Define the implementation expectations baseline for the Workflow Management framework package. Extract expected features, workflows, integration behaviors, and package composition from documentation.  
 **Input:** Package README, implementation guides, workflow definitions  
@@ -105,31 +105,31 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 - [x] Package composition documented ✅
 - [x] Sources referenced ✅
 
-### E2:S13:T02 – Inventory package components and map to expectations
+### E02:S13:T02 – Inventory package components and map to expectations
 
 **Input:** Package directory inventory  
 **Deliverable:** Component map with expected vs actual coverage  
 **Approach:** Map scripts, workflows, templates, and docs to expectations.
 
-### E2:S13:T03 – Validate workflow behavior against documented guidance
+### E02:S13:T03 – Validate workflow behavior against documented guidance
 
 **Input:** RW/UKW documentation and workflow YAML  
 **Deliverable:** Behavior validation notes and discrepancies  
 **Approach:** Validate key workflow behaviors against docs and policies.
 
-### E2:S13:T04 – Review integrations and dependency alignment
+### E02:S13:T04 – Review integrations and dependency alignment
 
 **Input:** Integration docs and dependency references  
 **Deliverable:** Integration alignment report  
 **Approach:** Verify integration touchpoints with Kanban and Versioning.
 
-### E2:S13:T05 – Create gap log and risk assessment
+### E02:S13:T05 – Create gap log and risk assessment
 
 **Input:** Findings from T01–T04  
 **Deliverable:** Gap log with severity and risk notes  
 **Approach:** Consolidate gaps and categorize by RC impact.
 
-### E2:S13:T06 – Define RC sign-off criteria and remediation tasks
+### E02:S13:T06 – Define RC sign-off criteria and remediation tasks
 
 **Input:** Gap log and expected behaviors  
 **Deliverable:** RC sign-off checklist and remediation task list  

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S1:T4`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S01:T04`)
 
 **Full Task ID:** `E11:S01:T04`
 
@@ -34,7 +34,7 @@ Define API versioning strategy for the {PROJECT_NAME} project. Establish approac
 
 ## Input
 
-- API architecture (from E11:S1:T01)
+- API architecture (from E11:S01:T01)
 - Versioning requirements
 - Backward compatibility requirements
 - Versioning policy preferences
@@ -83,7 +83,7 @@ Define API versioning strategy for the {PROJECT_NAME} project. Establish approac
 ## Dependencies
 
 **Depends On:**
-- E11:S1:T01: Design API architecture (versioning strategy applies to architecture)
+- E11:S01:T01: Design API architecture (versioning strategy applies to architecture)
 
 **Blocks:**
 - E11:S2: API Implementation (implementation uses versioning strategy)
@@ -95,7 +95,7 @@ Define API versioning strategy for the {PROJECT_NAME} project. Establish approac
 ## Related Work
 
 **Related Tasks:**
-- E11:S1:T01: Design API architecture (versioning strategy applies to architecture)
+- E11:S01:T01: Design API architecture (versioning strategy applies to architecture)
 - E3:S1: Versioning Policy and Schema (versioning strategy may align with project versioning)
 
 **Related Stories:**

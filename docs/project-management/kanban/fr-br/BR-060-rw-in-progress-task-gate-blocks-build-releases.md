@@ -12,10 +12,10 @@ housekeeping_policy: keep
 **Priority:** CRITICAL  
 **Severity:** HIGH  
 **Created:** 2026-04-02  
-**Last updated:** 2026-04-07 — closeout: behavior verified in audit and aligned docs/task wiring for canonical home **E2:S01:T09** (implementation forensic: **RW E6:S06:T60** **v0.6.6.60+1**, SemVer **v0.4.698+1**).  
+**Last updated:** 2026-04-07 — closeout: behavior verified in audit and aligned docs/task wiring for canonical home **E02:S01:T09** (implementation forensic: **RW E06:S06:T60** **v0.6.6.60+1**, SemVer **v0.4.698+1**).  
 **Version:** v0.6.6.60+1  
 **Code:** BR-060  
-**Implementing Task:** [E2:S01:T09](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md) (superseded stubs: [E4:S19:T01](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T01-rw-allow-in-progress-task-releases-br060.md), [E6:S06:T60](../epics/Epic-6/Story-006-feature-requests/T60-rw-allow-in-progress-task-releases.md))
+**Implementing Task:** [E02:S01:T09](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md) (superseded stubs: [E04:S19:T01](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T01-rw-allow-in-progress-task-releases-br060.md), [E06:S06:T60](../epics/Epic-6/Story-006-feature-requests/T60-rw-allow-in-progress-task-releases.md))
 
 ---
 
@@ -45,7 +45,7 @@ Release Workflow (RW) currently blocks full releases when the requested task is 
 
 1. Set current branch to an epic branch matching requested task epic.
 2. Ensure requested task doc status is `IN PROGRESS`.
-3. Run `RW E6:S06:T57` (or equivalent valid E:S:T task).
+3. Run `RW E06:S06:T57` (or equivalent valid E:S:T task).
 4. Observe Step 1c failure from `validate_rw_task_complete.py` with reason similar to "status still in progress".
 
 ## Root Cause Hypothesis

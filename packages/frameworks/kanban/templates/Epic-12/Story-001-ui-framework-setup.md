@@ -26,7 +26,7 @@ housekeeping_policy: keep
 - [ ] **E12:S01:T02 – [Task Title]**
 - [ ] **E12:S01:T03 – [Task Title]**
 
-> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E1:S01:T01`, `E2:S04:T05`)  
+> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E01:S01:T01`, `E02:S04:T05`)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.4.1.3+1)`)  
 > **Release Workflow Requirement:** When Release Workflow (RW) Step 4 updates Epic documentation, it MUST update **ALL sections**:
 > - Epic header `Last updated` field
@@ -133,7 +133,7 @@ Every Task MUST have a discrete Task document. Tasks can be documented in one of
 
 Regardless of format, every Task MUST include:
 
-- **Task ID:** `E{epic}:S{story}:T{task}` (e.g., `E4:S11:T01`)
+- **Task ID:** `E{epic}:S{story}:T{task}` (e.g., `E04:S11:T01`)
 - **Scope:** Clear description of what the task accomplishes
 - **Acceptance Criteria:** Measurable criteria for task completion
 - **Status:** Current status (TODO, IN PROGRESS, COMPLETE)
@@ -166,7 +166,7 @@ Regardless of format, every Task MUST include:
 
 ### E12:S01:T01 – [Task Title]
 
-> **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E1:S01:T01`, not `T01` alone)
+> **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E01:S01:T01`, not `T01` alone)
 
 **Brief Summary:** choose and set up ui framework for the {PROJECT_NAME} project.
 

@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E12:S2:T1` (e.g., `E4:S11:T01`)
+**Format:** `E12:S02:T01` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E12:S02:T01`
 
@@ -74,7 +74,7 @@ Design component architecture for the {PROJECT_NAME} project.
 - None
 
 **Blocks:**
-- E12:S2:T02
+- E12:S02:T02
 
 **Blocked By:**
 - [What blocks this task]

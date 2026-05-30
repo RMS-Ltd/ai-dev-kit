@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E7:S00:T04 – UXR-004 Repository Anchor
+# Task E07:S00:T04 – UXR-004 Repository Anchor
 
-**Task ID:** E7:S00:T04  
+**Task ID:** E07:S00:T04  
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Version Anchor:** **v0.7.0.4+0** (`RW -k` **E7:S00:T04** on `epic/7-documentation-maintenance`)  
+**Version Anchor:** **v0.7.0.4+0** (`RW -k` **E07:S00:T04** on `epic/7-documentation-maintenance`)  
 
 **UXR:** [UXR-004](../../../fr-br/UXR-004-kanban-package-installation-uat.md)  
-**Implementation / synthesis (complete):** [E7:S05:T04](../Story-005-migration-uxr-research.md) — see Story 5 **T04**
+**Implementation / synthesis (complete):** [E07:S05:T04](../Story-005-migration-uxr-research.md) — see Story 5 **T04**
 
 ---
 
@@ -27,25 +27,25 @@ Canonical **repository** task for **UXR-004** (Kanban package installation UAT) 
 ## Input
 
 - [UXR-004](../../../fr-br/UXR-004-kanban-package-installation-uat.md)  
-- [E7:S05:T04](../Story-005-migration-uxr-research.md) (synthesis complete)
+- [E07:S05:T04](../Story-005-migration-uxr-research.md) (synthesis complete)
 
 ---
 
 ## Deliverable
 
-- Intake headers + stable **E7:S00:T04** anchor; **`RW -k`** when epic/7 registry slot needs a doc-init release.  
-- Board rows: **E7:S00:T04** · **E7:S05:T04** on **`fbuboard.md`**.
+- Intake headers + stable **E07:S00:T04** anchor; **`RW -k`** when epic/7 registry slot needs a doc-init release.  
+- Board rows: **E07:S00:T04** · **E07:S05:T04** on **`fbuboard.md`**.
 
 ---
 
 ## Acceptance Criteria
 
 - [x] **AC1:** Task doc exists under **E7:S00** with required sections.  
-- [x] **AC2:** UXR-004 header lists **Repository Task** **E7:S00:T04**.  
+- [x] **AC2:** UXR-004 header lists **Repository Task** **E07:S00:T04**.  
 - [x] **AC3:** `fbuboard.md` MoSCOW row lists both repository and synthesis pointers.
 
 ---
 
 ## Dependencies
 
-**Related:** E7:S05:T04 (synthesis ✅), BR-007 / BR-008 / FR-010 consumers per Story 5 narrative.
+**Related:** E07:S05:T04 (synthesis ✅), BR-007 / BR-008 / FR-010 consumers per Story 5 narrative.

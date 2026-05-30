@@ -16,14 +16,14 @@ housekeeping_policy: keep
 **Version:** v0.6.7.14+1
 
 **Feature Request:** [FR-027](../../../fr-br/FR-027-add-cmw-to-workflow-management-package-documentation.md)  
-**Code:** E6S07T14
+**Code:** E06S07T14
 
 ---
 
 ## Task ID
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
-**Value:** `E6:S07:T14`
+**Value:** `E06:S07:T14`
 
 ---
 
@@ -171,8 +171,8 @@ Add Changelog Management Workflow (CMW) to the workflow management package docum
 - **FR-027:** Add CMW to Workflow Management Package Documentation (source of this task)
 
 **Related Tasks:**
-- **E6:S07:T11:** Changelog Management and Archival Workflow (CMW implementation, COMPLETE)
-- **E6:S07:T13:** Canonical CMW Perpetual Task (CMW perpetual task pattern, COMPLETE, migrated from T12 to T102)
+- **E06:S07:T11:** Changelog Management and Archival Workflow (CMW implementation, COMPLETE)
+- **E06:S07:T13:** Canonical CMW Perpetual Task (CMW perpetual task pattern, COMPLETE, migrated from T12 to T102)
 
 **Related Stories:**
 - **E6:S07:** ADK Implementation Analysis and Package Management (parent story)

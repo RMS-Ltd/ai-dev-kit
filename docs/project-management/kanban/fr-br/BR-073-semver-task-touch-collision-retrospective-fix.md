@@ -16,13 +16,13 @@ housekeeping_policy: keep
 **Version:** v0.2.1.20+1  
 **Code:** BR-073
 
-**Implementing Task:** [E2:S01:T20](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T20-semver-task-touch-collision-retrospective-fix-br073.md)
+**Implementing Task:** [E02:S01:T20](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T20-semver-task-touch-collision-retrospective-fix-br073.md)
 
 ---
 
 ## Problem Statement
 
-Two distinct internal versions — `0.24.1.6+1` (E24:S01:T06) and `0.2.1.18+1` (E2:S01:T18) — both resolved to the same SemVer `0.4.778+1`. This violates the uniqueness invariant of the `task_touch` conversion strategy, where each finalized release must receive a unique PATCH increment.
+Two distinct internal versions — `0.24.1.6+1` (E24:S01:T06) and `0.2.1.18+1` (E02:S01:T18) — both resolved to the same SemVer `0.4.778+1`. This violates the uniqueness invariant of the `task_touch` conversion strategy, where each finalized release must receive a unique PATCH increment.
 
 The collision was discovered during a README diff review that showed `v0.4.778+1` appearing in consecutive release commits for two different internal versions.
 

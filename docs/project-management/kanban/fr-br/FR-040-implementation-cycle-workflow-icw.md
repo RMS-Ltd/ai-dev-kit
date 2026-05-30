@@ -11,9 +11,9 @@ housekeeping_policy: keep
 **Status:** TODO  
 **Priority:** HIGH  
 **Created:** 2026-03-09  
-**Last updated:** 2026-04-01 — **Planning successor:** pre-implementation planning and canonical agent trigger are **IPW** (**FR-042** / **E5:S01:T42**). **ICW** is the historical packaged-workflow name; for agents, **ICW** is a **deprecated alias** of **IPW** (**FR-042** §7). **E5:S01:T40** remains the implementation anchor for framework delivery; verify FR-040 independently of IPW naming.  
+**Last updated:** 2026-04-01 — **Planning successor:** pre-implementation planning and canonical agent trigger are **IPW** (**FR-042** / **E05:S01:T42**). **ICW** is the historical packaged-workflow name; for agents, **ICW** is a **deprecated alias** of **IPW** (**FR-042** §7). **E05:S01:T40** remains the implementation anchor for framework delivery; verify FR-040 independently of IPW naming.  
 **Code:** FR-040  
-**Implementation Task:** [E5:S01:T40](../epics/Epic-5/Story-001-fr-repo/T40-implementation-cycle-workflow-icw.md)
+**Implementation Task:** [E05:S01:T40](../epics/Epic-5/Story-001-fr-repo/T40-implementation-cycle-workflow-icw.md)
 
 ---
 

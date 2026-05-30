@@ -8,16 +8,16 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 37: Kanban Policy – Task Prioritisation and Queue/Stack
 
-**Task ID:** E5:S01:T37  
+**Task ID:** E05:S01:T37  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-01-22  
 **Last updated:** 2026-01-22 (v0.5.1.37+1 – Task created: FR-037 repository task)  
 **Version:** v0.5.1.37+1  
-**Code:** E5S01T37
+**Code:** E05S01T37
 
-**Repository Pattern:** FR-037 = E5:S01:T37 (abstract space: v0.5.1.37+0)
+**Repository Pattern:** FR-037 = E05:S01:T37 (abstract space: v0.5.1.37+0)
 
 ---
 
@@ -67,8 +67,8 @@ Concrete governance policy changes required to satisfy FR-037:
 
 ## Deliverable
 
-1. **This task document** – Repository anchor for FR-037 (E5:S01:T37).
-2. **FR-037 assigned** to E5:S01:T37 in FR document.
+1. **This task document** – Repository anchor for FR-037 (E05:S01:T37).
+2. **FR-037 assigned** to E05:S01:T37 in FR document.
 3. **Implementation** (when assigned): Governance policy and optionally board guide template updated per FR-037 requirements (R01–R05).
 
 ---
@@ -76,8 +76,8 @@ Concrete governance policy changes required to satisfy FR-037:
 ## Acceptance Criteria
 
 - [x] Task document created and linked from E5 Story 01 checklist
-- [x] FR-037 assigned to E5:S01:T37 in FR document
-- [x] Repository pattern documented (FR-037 = E5:S01:T37)
+- [x] FR-037 assigned to E05:S01:T37 in FR document
+- [x] Repository pattern documented (FR-037 = E05:S01:T37)
 - [x] Release completed with version v0.5.1.37+1
 
 ---

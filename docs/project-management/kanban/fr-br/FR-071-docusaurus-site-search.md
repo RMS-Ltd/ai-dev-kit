@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent)  
 **Priority:** LOW  
 **Status:** IMPLEMENTED (**v0.5.9.7+1**) — **Local search** (`@easyops-cn/docusaurus-search-local`); contract tests + `portal/README.md` smoke queries. **AC1 (live queries):** verify on production URL after deploy if Pages is enabled (`gh-pages` / root).  
-**Assigned Task:** E5:S09:T07 — [`T07-docusaurus-search-fr-071.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T07-docusaurus-search-fr-071.md)
+**Assigned Task:** E05:S09:T07 — [`T07-docusaurus-search-fr-071.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T07-docusaurus-search-fr-071.md)
 
 ---
 

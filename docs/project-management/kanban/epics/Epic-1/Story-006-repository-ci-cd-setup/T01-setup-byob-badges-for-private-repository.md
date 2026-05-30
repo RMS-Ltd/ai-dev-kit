@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Started:** 2025-12-18  
 **Completed:** [TBD]  
 **Version:** v0.1.6.1+0  
-**Code:** E1S06T01
+**Code:** E01S06T01
 
 ---
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E1:S06:T01`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E01:S06:T01`)
 
-**Full Task ID:** `E1:S06:T01`
+**Full Task ID:** `E01:S06:T01`
 
 ---
 

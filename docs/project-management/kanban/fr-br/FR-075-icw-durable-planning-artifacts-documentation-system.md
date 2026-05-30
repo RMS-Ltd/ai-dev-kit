@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-04-01  
 **Submitted By:** RMS (AI Dev Kit)  
 **Priority:** MEDIUM  
-**Status:** COMPLETE (**`v0.5.1.75+1`** — **RW E5:S01:T75**)  
+**Status:** COMPLETE (**`v0.5.1.75+1`** — **RW E05:S01:T75**)  
 
-**Implementing Task:** [E5:S01:T75](../epics/Epic-5/Story-001-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md)
+**Implementing Task:** [E05:S01:T75](../epics/Epic-5/Story-001-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md)
 
 **Related:** [FR-040 – Implementation Cycle Workflow (ICW)](./FR-040-implementation-cycle-workflow-icw.md); [FR-048 – ICW task identifier argument](./FR-048-icw-task-identifier-argument.md)
 
@@ -56,7 +56,7 @@ Implementation planning often produces structured specs in **editor-local** fold
 ## Acceptance criteria
 
 - [x] All **R01–R06** artifacts exist in the repo and cross-reference each other consistently.
-- [x] **E5:S01:T75** marked **COMPLETE** with version anchor **`v0.5.1.75+1`**.
+- [x] **E05:S01:T75** marked **COMPLETE** with version anchor **`v0.5.1.75+1`**.
 - [x] **FR-075** status updated to reflect completion and links to the release / task.
 
 ---

@@ -182,7 +182,7 @@ The board serves as the parent document to Story documents, providing a comprehe
 ### Task Entry Format
 
 Each task entry in the MoSCOW sections should include:
-- **Task ID:** `E{epic}:S{story}:T{task}` format (e.g., `E4:S13:T02`)
+- **Task ID:** `E{epic}:S{story}:T{task}` format (e.g., `E04:S13:T02`)
 - **Task Description:** Brief description of the task
 - **Last Updated:** Date when task was last updated
 - **Links:** Links to Task document and parent Story document
@@ -236,4 +236,4 @@ The Story Checklist section should list all stories in a compact format (one lin
 
 **Template Version:** 2.0.0  
 **Last Updated:** 2026-01-20  
-**Based On:** Kanban board info-only split (E4:S18:T01)
+**Based On:** Kanban board info-only split (E04:S18:T01)

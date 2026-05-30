@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E21:S3:T1` (e.g., `E4:S11:T01`)
+**Format:** `E21:S03:T01` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E21:S03:T01`
 
@@ -74,7 +74,7 @@ Research cultural requirements for target locales for the {PROJECT_NAME} project
 - None
 
 **Blocks:**
-- E21:S3:T02
+- E21:S03:T02
 
 **Blocked By:**
 - [What blocks this task]

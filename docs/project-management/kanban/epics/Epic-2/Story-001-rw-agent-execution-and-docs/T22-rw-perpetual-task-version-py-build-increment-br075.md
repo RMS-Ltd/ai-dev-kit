@@ -6,18 +6,18 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T22 — RW perpetual-task BUILD must persist in `version.py` (BR-075)
+# Task E02:S01:T22 — RW perpetual-task BUILD must persist in `version.py` (BR-075)
 
-**Task ID:** E2:S01:T22  
+**Task ID:** E02:S01:T22  
 **Status:** COMPLETE  
 **Priority:** LOW  
 Publication Status: NOT_APPLICABLE  
-Publication N/A Reason: Consolidated IPP per FR-042 (see IPP-E2S01T22 in docs/implementation-cycles/).
+Publication N/A Reason: Consolidated IPP per FR-042 (see IPP-E02S01T22 in docs/implementation-cycles/).
 **Estimated Effort:** Small  
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (**v0.2.1.22+1** — BR-075 intake; RW `-k` `--art`)  
 **Version Anchor:** v0.2.1.22+1  
-**Code:** E2S01T22
+**Code:** E02S01T22
 
 ---
 
@@ -29,7 +29,7 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 
 ## Input
 
-- [IPP-E2S01T22](../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
+- [IPP-E02S01T22](../../../../implementation-cycles/IPP-E02S01T22-rw-perpetual-version-py-build-br075.md)
 - [BR-075](../../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
 - `rw-config.yaml` → `version_file: src/ai_dev_kit/version.py`
 - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
@@ -45,14 +45,14 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 2. **Kanban init ordering** — ensure `update_kanban_docs.py` never advertises a version ahead of `version_file` on perpetual lanes.
 3. **Documentation** — RW guide + `.cursorrules` Step 2-before-Step-7 note for perpetual tasks and `RW -k`.
 4. **Skill alignment** — `version-bump` skill resolves path from `rw-config.yaml`.
-5. **Regression test** — fixture for E2:S16:T04-style perpetual release.
+5. **Regression test** — fixture for E02:S16:T04-style perpetual release.
 
 ---
 
 ## Acceptance Criteria
 
 - [x] **AC1:** Running validators after a simulated perpetual RW with unchanged `VERSION_BUILD` exits non-zero with actionable message.
-- [x] **AC2:** `RW -k` on E2:S16:T04 (and other Story-016 perpetual lanes) documented as requiring Step 2 version-file write before Step 7.
+- [x] **AC2:** `RW -k` on E02:S16:T04 (and other Story-016 perpetual lanes) documented as requiring Step 2 version-file write before Step 7.
 - [x] **AC3:** `version-bump` skill references config-driven `version_file`, not hardcoded `src/fynd_deals/version.py`.
 - [x] **AC4:** Regression test `test_validate_perpetual_build_increment_rejects_unchanged_build` covers BR-075 BUILD vs HEAD.
 - [x] **AC5:** BR-075 marked RESOLVED with fix version **v0.2.1.22+1** (RW `--art`).
@@ -61,7 +61,7 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 
 ## References
 
-- [IPP-E2S01T22](../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
+- [IPP-E02S01T22](../../../../implementation-cycles/IPP-E02S01T22-rw-perpetual-version-py-build-br075.md)
 - [BR-075](../../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
-- [E2:S16:T04 — Perpetual UKW/kanban lane](../Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- [E02:S16:T04 — Perpetual UKW/kanban lane](../Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - [dev-kit-versioning-policy.md](../../../../architecture/standards-and-adrs/dev-kit-versioning-policy.md)

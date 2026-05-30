@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S1:T4`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S01:T04`)
 
 **Full Task ID:** `E12:S01:T04`
 
@@ -34,8 +34,8 @@ Configure styling system (CSS/styled-components) for the {PROJECT_NAME} project.
 
 ## Input
 
-- UI framework (from E12:S1:T01)
-- Component library structure (from E12:S1:T03)
+- UI framework (from E12:S01:T01)
+- Component library structure (from E12:S01:T03)
 - Styling requirements
 - Styling tool preferences
 - Theme requirements
@@ -83,8 +83,8 @@ Configure styling system (CSS/styled-components) for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E12:S1:T01: Choose and set up UI framework (styling system integrates with framework)
-- E12:S1:T03: Set up component library structure (styling system integrates with component structure)
+- E12:S01:T01: Choose and set up UI framework (styling system integrates with framework)
+- E12:S01:T03: Set up component library structure (styling system integrates with component structure)
 
 **Blocks:**
 - E12:S2: Core UI Components (components use styling system)
@@ -96,8 +96,8 @@ Configure styling system (CSS/styled-components) for the {PROJECT_NAME} project.
 ## Related Work
 
 **Related Tasks:**
-- E12:S1:T01: Choose and set up UI framework (styling system integrates with framework)
-- E12:S1:T03: Set up component library structure (styling system integrates with component structure)
+- E12:S01:T01: Choose and set up UI framework (styling system integrates with framework)
+- E12:S01:T03: Set up component library structure (styling system integrates with component structure)
 
 **Related Stories:**
 - E12:S1: UI Framework Setup (this story)

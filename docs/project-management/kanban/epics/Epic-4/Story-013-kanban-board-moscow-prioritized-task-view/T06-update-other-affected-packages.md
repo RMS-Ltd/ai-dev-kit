@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Started:** 2025-12-18  
 **Completed:** 2025-12-18  
 **Version:** v0.4.13.6+1  
-**Code:** E4S13T06
+**Code:** E04S13T06
 
 ---
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E4:S13:T06`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E04:S13:T06`)
 
-**Full Task ID:** `E4:S13:T06`
+**Full Task ID:** `E04:S13:T06`
 
 ---
 
@@ -57,11 +57,11 @@ After user verification of the enhanced Kanban board structure, update any other
 - **User verification obtained** - user has reviewed and approved the enhancement
 
 **Dependencies:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
-- E4:S13:T02 – Update Kanban governance policy
-- E4:S13:T03 – Update Kanban board template
-- E4:S13:T04 – Assess system impacts
-- E4:S13:T05 – Update Kanban package
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T02 – Update Kanban governance policy
+- E04:S13:T03 – Update Kanban board template
+- E04:S13:T04 – Assess system impacts
+- E04:S13:T05 – Update Kanban package
 - **User verification** (blocking dependency)
 
 ---
@@ -145,11 +145,11 @@ After user verification of the enhanced Kanban board structure, update any other
 ## Dependencies
 
 **Depends On:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
-- E4:S13:T02 – Update Kanban governance policy
-- E4:S13:T03 – Update Kanban board template
-- E4:S13:T04 – Assess system impacts
-- E4:S13:T05 – Update Kanban package
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T02 – Update Kanban governance policy
+- E04:S13:T03 – Update Kanban board template
+- E04:S13:T04 – Assess system impacts
+- E04:S13:T05 – Update Kanban package
 - **User verification** (blocking dependency - MUST have user approval)
 
 **Blocks:**
@@ -169,11 +169,11 @@ After user verification of the enhanced Kanban board structure, update any other
 - User request for enhanced Kanban board functionality
 
 **Related Tasks:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view
-- E4:S13:T02 – Update Kanban governance policy
-- E4:S13:T03 – Update Kanban board template
-- E4:S13:T04 – Assess system impacts
-- E4:S13:T05 – Update Kanban package
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view
+- E04:S13:T02 – Update Kanban governance policy
+- E04:S13:T03 – Update Kanban board template
+- E04:S13:T04 – Assess system impacts
+- E04:S13:T05 – Update Kanban package
 
 **Related Stories:**
 - E2:S01 – RW Agent Execution & Docs (RW package)

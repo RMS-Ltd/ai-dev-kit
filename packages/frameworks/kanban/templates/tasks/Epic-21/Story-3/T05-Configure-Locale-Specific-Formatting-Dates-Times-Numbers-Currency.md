@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E21:S3:T5` (e.g., `E4:S11:T01`)
+**Format:** `E21:S03:T05` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E21:S03:T05`
 
@@ -71,10 +71,10 @@ Configure locale-specific formatting (dates, times, numbers, currency) for the {
 ## Dependencies
 
 **Depends On:**
-- E21:S3:T04
+- E21:S03:T04
 
 **Blocks:**
-- E21:S3:T06
+- E21:S03:T06
 
 **Blocked By:**
 - [What blocks this task]

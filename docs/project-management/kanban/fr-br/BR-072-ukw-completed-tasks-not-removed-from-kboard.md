@@ -12,11 +12,11 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** HIGH  
 **Created:** 2026-05-12  
-**Last updated:** 2026-05-16 (REOPENED — drift recurrence detected: E2:S07:T01, E2:S07:T05 showing as TODO on kboard despite COMPLETE status in story docs; UKW not catching inline status drift)  
+**Last updated:** 2026-05-16 (REOPENED — drift recurrence detected: E02:S07:T01, E02:S07:T05 showing as TODO on kboard despite COMPLETE status in story docs; UKW not catching inline status drift)  
 **Version:** v0.6.1.38+3  
 **Code:** BR-072
 
-**Implementing Task:** [E6:S01:T38](../epics/Epic-6/Story-001-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)
+**Implementing Task:** [E06:S01:T38](../epics/Epic-6/Story-001-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)
 
 ---
 
@@ -38,9 +38,9 @@ A secondary symptom is task duplication: a task can appear in multiple MoSCOW se
 
 ## Observed Behavior
 
-- `E2:S16:T01` (COMPLETE) remains in the "Should Have" section.
-- `E2:S15:T07` (COMPLETE) remains in the "Should Have" section.
-- `E2:S16:T01` additionally appears in the "Ongoing" section — the same task in two sections simultaneously.
+- `E02:S16:T01` (COMPLETE) remains in the "Should Have" section.
+- `E02:S15:T07` (COMPLETE) remains in the "Should Have" section.
+- `E02:S16:T01` additionally appears in the "Ongoing" section — the same task in two sections simultaneously.
 - UKW has run multiple times since these tasks completed without removing them.
 
 ---
@@ -53,13 +53,13 @@ A secondary symptom is task duplication: a task can appear in multiple MoSCOW se
 4. Run UKW again on a subsequent session.
 5. Observe the completed task still present.
 
-Known test fixtures currently on the board: `E2:S16:T01` and `E2:S15:T07` (intentionally retained for reproduction purposes).
+Known test fixtures currently on the board: `E02:S16:T01` and `E02:S15:T07` (intentionally retained for reproduction purposes).
 
 **Recurrence (2026-05-16):**
-- `E2:S07:T01` (COMPLETE v0.2.7.1+0) showing as `TODO` on `kboard.md` in Could Have section.
-- `E2:S07:T05` (COMPLETE v0.2.7.5+1) showing as `TODO` on `kboard.md` in Could Have section.
+- `E02:S07:T01` (COMPLETE v0.2.7.1+0) showing as `TODO` on `kboard.md` in Could Have section.
+- `E02:S07:T05` (COMPLETE v0.2.7.5+1) showing as `TODO` on `kboard.md` in Could Have section.
 - Both tasks confirmed COMPLETE in story doc (`Story-007-trigger-aware-release-workflow.md`) with inline status corrected from TODO → COMPLETE during drift audit.
-- Root cause: UKW Step 6 reads task status from **task documents**, but `E2:S07:T01` and `E2:S07:T05` are **embedded inline in story doc** (no standalone task docs). UKW does not scan story docs for inline task status.
+- Root cause: UKW Step 6 reads task status from **task documents**, but `E02:S07:T01` and `E02:S07:T05` are **embedded inline in story doc** (no standalone task docs). UKW does not scan story docs for inline task status.
 - **This reveals a broader gap:** UKW does not reconcile inline/embedded task statuses in story docs against kboard rows.
 
 ---
@@ -79,7 +79,7 @@ Known test fixtures currently on the board: `E2:S16:T01` and `E2:S15:T07` (inten
 - The instruction is buried within the MoSCOW classification step and may be insufficiently prominent relative to the classification work, causing the agent to focus on reclassification rather than removal.
 - No explicit cross-section deduplication check exists in the UKW definition, allowing a task to accumulate in multiple sections across separate UKW runs.
 - `kanban-completed.md` write step may be missing entirely from the UKW board update path.
-- **UKW does not scan story docs for inline task statuses** — tasks embedded in story docs (e.g., E2:S07:T01-T08) have no standalone task doc, so UKW Step 3 (Update Task Documents) skips them entirely. This leaves kboard rows for inline tasks permanently stale unless manually corrected.
+- **UKW does not scan story docs for inline task statuses** — tasks embedded in story docs (e.g., E02:S07:T01-T08) have no standalone task doc, so UKW Step 3 (Update Task Documents) skips them entirely. This leaves kboard rows for inline tasks permanently stale unless manually corrected.
 
 ---
 
@@ -89,8 +89,8 @@ Known test fixtures currently on the board: `E2:S16:T01` and `E2:S15:T07` (inten
 - [x] **AC2:** UKW definition updated so that completed task removal from `kboard.md` is a discrete, unambiguous step — not a subordinate clause within the MoSCOW update step.
 - [x] **AC3:** UKW definition includes an explicit deduplication check — a task must not appear in more than one MoSCOW section.
 - [x] **AC4:** Completed tasks removed from `kboard.md` are written to `kanban-completed.md` in the same UKW run.
-- [x] **AC5:** The known test fixtures (`E2:S16:T01` in Should Have, `E2:S15:T07` in Should Have, duplicate `E2:S16:T01` in Ongoing) are confirmed removed by the fixed UKW before BR-072 is closed.
-- [x] **AC6:** BR-072, E6:S01:T38, Story 001 checklist, `kboard.md`, and `fbuboard.md` are bidirectionally wired.
+- [x] **AC5:** The known test fixtures (`E02:S16:T01` in Should Have, `E02:S15:T07` in Should Have, duplicate `E02:S16:T01` in Ongoing) are confirmed removed by the fixed UKW before BR-072 is closed.
+- [x] **AC6:** BR-072, E06:S01:T38, Story 001 checklist, `kboard.md`, and `fbuboard.md` are bidirectionally wired.
 - [ ] **AC7:** UKW detects and reconciles inline/embedded task statuses within story docs (not just standalone task docs) against kboard rows — or an explicit policy documents that inline tasks are out of scope for UKW with alternative governance.
 
 ---

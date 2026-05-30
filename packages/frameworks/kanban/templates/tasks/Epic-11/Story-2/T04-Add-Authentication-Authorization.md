@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S2:T4`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S02:T04`)
 
 **Full Task ID:** `E11:S02:T04`
 
@@ -34,7 +34,7 @@ Add authentication/authorization for the {PROJECT_NAME} project. Implement authe
 
 ## Input
 
-- API endpoints implementation (from E11:S2:T01)
+- API endpoints implementation (from E11:S02:T01)
 - User authentication system (from E9:S1)
 - User authorization system (from E9:S2)
 - Authentication/authorization requirements
@@ -81,7 +81,7 @@ Add authentication/authorization for the {PROJECT_NAME} project. Implement authe
 ## Dependencies
 
 **Depends On:**
-- E11:S2:T01: Implement API endpoints (auth applies to endpoints)
+- E11:S02:T01: Implement API endpoints (auth applies to endpoints)
 - User authentication system (from E9:S1 - optional, beneficial)
 - User authorization system (from E9:S2 - optional, beneficial)
 
@@ -95,7 +95,7 @@ Add authentication/authorization for the {PROJECT_NAME} project. Implement authe
 ## Related Work
 
 **Related Tasks:**
-- E11:S2:T01: Implement API endpoints (auth applies to endpoints)
+- E11:S02:T01: Implement API endpoints (auth applies to endpoints)
 
 **Related Stories:**
 - E11:S2: API Implementation (this story)

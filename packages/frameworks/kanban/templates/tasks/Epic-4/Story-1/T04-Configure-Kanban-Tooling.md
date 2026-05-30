@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E4:S1:T4` (e.g., `E4:S11:T01`)
+**Format:** `E04:S01:T04` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E04:S01:T04`
 
@@ -71,10 +71,10 @@ Configure Kanban tooling for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E4:S1:T03
+- E04:S01:T03
 
 **Blocks:**
-- E4:S1:T05
+- E04:S01:T05
 
 **Blocked By:**
 - [What blocks this task]

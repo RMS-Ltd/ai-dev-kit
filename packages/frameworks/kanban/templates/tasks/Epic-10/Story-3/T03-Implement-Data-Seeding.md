@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E10:S3:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E10:S03:T03`)
 
 **Full Task ID:** `E10:S03:T03`
 
@@ -35,9 +35,9 @@ Implement data seeding for the {PROJECT_NAME} project. Build seeding functionali
 ## Input
 
 - Database schema (from E10:S1)
-- Seed data scripts (from E10:S1:T06)
+- Seed data scripts (from E10:S01:T06)
 - Data access layer (from E10:S2)
-- Data migration strategy (from E10:S3:T01)
+- Data migration strategy (from E10:S03:T01)
 - Seeding requirements
 - ai-dev-kit data seeding patterns (if adopting)
 
@@ -86,23 +86,23 @@ Implement data seeding for the {PROJECT_NAME} project. Build seeding functionali
 
 **Depends On:**
 - Database schema (from E10:S1)
-- Seed data scripts (from E10:S1:T06 - optional)
+- Seed data scripts (from E10:S01:T06 - optional)
 - Data access layer (from E10:S2 - optional)
-- E10:S3:T01: Design data migration strategy (seeding may use migration patterns)
+- E10:S03:T01: Design data migration strategy (seeding may use migration patterns)
 
 **Blocks:**
 - None (seeding task)
 
-**Parallel Development Candidacy:** Blocked (depends on E10:S1 and E10:S3:T01)
+**Parallel Development Candidacy:** Blocked (depends on E10:S1 and E10:S03:T01)
 
 ---
 
 ## Related Work
 
 **Related Tasks:**
-- E10:S1:T06: Create seed data scripts (seed scripts are used by seeding)
-- E10:S3:T01: Design data migration strategy (seeding may use migration patterns)
-- E10:S3:T02: Create migration scripts (seeding may use migration patterns)
+- E10:S01:T06: Create seed data scripts (seed scripts are used by seeding)
+- E10:S03:T01: Design data migration strategy (seeding may use migration patterns)
+- E10:S03:T02: Create migration scripts (seeding may use migration patterns)
 
 **Related Stories:**
 - E10:S3: Data Migration and Seeding (this story)

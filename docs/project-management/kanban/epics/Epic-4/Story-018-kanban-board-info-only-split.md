@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-20  
-**Last updated:** 2026-03-09 (RW: E4:S18:T01+2 – Four-way split complete: added kanban-completed.md for historical task tracking, updated all cross-references, system ready for production)  
+**Last updated:** 2026-03-09 (RW: E04:S18:T01+2 – Four-way split complete: added kanban-completed.md for historical task tracking, updated all cross-references, system ready for production)  
 **Version:** v0.4.18.1+2  
 **Code:** E4S18
 
@@ -20,10 +20,10 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E4:S18:T01 – Implement Kanban Board Info-Only Split** - ✅ COMPLETE (v0.4.18.1+1)
+- [x] **E04:S18:T01 – Implement Kanban Board Info-Only Split** - ✅ COMPLETE (v0.4.18.1+1)
   - Task Doc: [`T1-implement-kanban-board-info-only-split.md`](Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md)
 
-- [x] **E4:S18:T02 – Upgrade Packaged Kanban Framework Board Split** - ✅ COMPLETE (v0.4.18.2+1)
+- [x] **E04:S18:T02 – Upgrade Packaged Kanban Framework Board Split** - ✅ COMPLETE (v0.4.18.2+1)
   - Task Doc: [`T2-upgrade-packaged-kanban-framework-board-split.md`](Story-018-kanban-board-info-only-split/T2-upgrade-packaged-kanban-framework-board-split.md)
 
 
@@ -55,7 +55,7 @@ Split the Kanban board into two documents: structured information only (`kboard.
 
 ## Tasks
 
-### E4:S18:T01 – Implement Kanban Board Info-Only Split
+### E04:S18:T01 – Implement Kanban Board Info-Only Split
 
 **Input:** Current `kboard.md`, FR-036 requirements  
 **Deliverable:** Split board documents, updated templates, updated policy  

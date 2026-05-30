@@ -61,5 +61,5 @@ housekeeping_policy: keep
 
 **Template Version:** 2.0.0  
 **Last Updated:** 2026-01-20  
-**Based On:** Kanban board info-only split (E4:S18:T01)
+**Based On:** Kanban board info-only split (E04:S18:T01)
 

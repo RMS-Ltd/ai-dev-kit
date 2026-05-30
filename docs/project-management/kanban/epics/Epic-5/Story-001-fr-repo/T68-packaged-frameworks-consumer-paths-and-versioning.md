@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 68: Packaged Frameworks — Consumer Paths and Versioning Hygiene
 
-**Task ID:** E5:S01:T68  
+**Task ID:** E05:S01:T68  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 (Release v0.5.1.68+2 — consumer RW layout doc; kanban/numbering README; packages semver policy)  
 **Version:** v0.5.1.68+2  
 **Version Anchor:** Forensic release `v0.5.1.68+2` — `rw-validators-consumer-layout.md`; workflow mgt + packages README; numbering + kanban cross-links  
-**Code:** E5S01T68
+**Code:** E05S01T68
 
 **Repository Pattern:** Internal scaffold (no FR yet).
 
@@ -38,7 +38,7 @@ This task is **scoping + documentation + checklist**, not a full dependency arch
 
 - [Framework Dependency Architecture](../../../../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md) (if present).
 - [`packages/README.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/README.md).
-- [E5:S01:T47](T47-install-logging-for-framework-dependencies.md) / FR-047 (install logging overlap).
+- [E05:S01:T47](T47-install-logging-for-framework-dependencies.md) / FR-047 (install logging overlap).
 
 ---
 
@@ -60,9 +60,9 @@ This task is **scoping + documentation + checklist**, not a full dependency arch
 
 ## Related Work
 
-- **E5:S01:T65** — workflow mgt README count alignment.
-- **E5:S01:T67** — install docs RW token.
-- **E5:S01:T56** / **FR-056** — broader doc standardization.
+- **E05:S01:T65** — workflow mgt README count alignment.
+- **E05:S01:T67** — install docs RW token.
+- **E05:S01:T56** / **FR-056** — broader doc standardization.
 
 ---
 

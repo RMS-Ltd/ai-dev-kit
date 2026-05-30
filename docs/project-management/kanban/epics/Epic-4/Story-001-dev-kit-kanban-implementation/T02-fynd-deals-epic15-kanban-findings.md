@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task 2 Findings: fynd.deals Epic 15 Kanban Patterns
 
-**Task:** E4:S01:T02 – Ingest findings from fynd.deals Epic 15 Kanban work into dev-kit  
+**Task:** E04:S01:T02 – Ingest findings from fynd.deals Epic 15 Kanban work into dev-kit  
 **Created:** 2025-12-02  
 **Status:** Complete  
 **Deliverable:** Summary of reusable Kanban patterns and findings

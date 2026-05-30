@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E6:S1:T4`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E06:S01:T04`)
 
 **Full Task ID:** `E06:S01:T04`
 
@@ -34,9 +34,9 @@ Document BR (Bug Report) intake process for the {PROJECT_NAME} project. Create c
 
 ## Input
 
-- BR intake and triage workflow (from E6:S1:T01)
-- BR triage automation (from E6:S1:T02)
-- BR-Kanban integration (from E6:S1:T03)
+- BR intake and triage workflow (from E06:S01:T01)
+- BR triage automation (from E06:S01:T02)
+- BR-Kanban integration (from E06:S01:T03)
 - Documentation requirements
 
 ---
@@ -85,9 +85,9 @@ Document BR (Bug Report) intake process for the {PROJECT_NAME} project. Create c
 ## Dependencies
 
 **Depends On:**
-- E6:S1:T01: Design BR intake and triage workflow (documentation covers workflow)
-- E6:S1:T02: Create BR triage automation (documentation covers automation)
-- E6:S1:T03: Integrate BR intake with Kanban (documentation covers integration)
+- E06:S01:T01: Design BR intake and triage workflow (documentation covers workflow)
+- E06:S01:T02: Create BR triage automation (documentation covers automation)
+- E06:S01:T03: Integrate BR intake with Kanban (documentation covers integration)
 
 **Blocks:**
 - None (documentation task)
@@ -99,9 +99,9 @@ Document BR (Bug Report) intake process for the {PROJECT_NAME} project. Create c
 ## Related Work
 
 **Related Tasks:**
-- E6:S1:T01: Design BR intake and triage workflow (documentation covers workflow)
-- E6:S1:T02: Create BR triage automation (documentation covers automation)
-- E6:S1:T03: Integrate BR intake with Kanban (documentation covers integration)
+- E06:S01:T01: Design BR intake and triage workflow (documentation covers workflow)
+- E06:S01:T02: Create BR triage automation (documentation covers automation)
+- E06:S01:T03: Integrate BR intake with Kanban (documentation covers integration)
 
 **Related Stories:**
 - E6:S1: BR Intake and Triage Workflow (this story)

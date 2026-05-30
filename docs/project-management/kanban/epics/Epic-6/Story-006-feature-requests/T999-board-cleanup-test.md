@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task T999 – Board Cleanup Test Task
 
-**Task ID:** E6:S06:T999  
+**Task ID:** E06:S06:T999  
 **Status:** COMPLETE  
 **Priority:** LOW  
 **Estimated Effort:** Minimal (0.1 days)  
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S06:T999`
+**Full Task ID:** `E06:S06:T999`
 
 ---
 
@@ -80,7 +80,7 @@ Test task created specifically to validate the UKW Agent's board cleanup functio
 ## Technical Details
 
 ### Test Data
-- **Task ID:** E6:S06:T999 (high number to avoid conflicts)
+- **Task ID:** E06:S06:T999 (high number to avoid conflicts)
 - **Priority:** LOW (won't affect real prioritization)
 - **Status:** TODO → COMPLETE (for testing)
 - **Location:** "Should Have (S)" section
@@ -101,11 +101,11 @@ Test task created specifically to validate the UKW Agent's board cleanup functio
 ## Related Work
 
 ### Primary Task
-- **E6:S06:T42** - Fix UKW Agent Board Cleanup Failure (this task enables the fix)
+- **E06:S06:T42** - Fix UKW Agent Board Cleanup Failure (this task enables the fix)
 
 ### Test Context
 - **BR-042** - UKW Agent Board Cleanup Failure (problem being solved)
-- **E2:S16:T03** - UKW Perpetual Task (ongoing UKW maintenance)
+- **E02:S16:T03** - UKW Perpetual Task (ongoing UKW maintenance)
 
 ---
 

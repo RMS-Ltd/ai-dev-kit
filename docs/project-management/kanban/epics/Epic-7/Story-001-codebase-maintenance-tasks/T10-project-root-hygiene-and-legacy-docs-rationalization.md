@@ -14,14 +14,14 @@ housekeeping_policy: keep
 **Started:** 2026-05-29  
 **Completed:** [TBD]  
 **Version:** v0.7.1.10+1  
-**Code:** E7S01T10
+**Code:** E07S01T10
 
 ---
 
 ## Task ID
 
 **Format:** `E{epic}:S{story}:T{task}`  
-**Full Task ID:** `E7:S01:T10`
+**Full Task ID:** `E07:S01:T10`
 
 ---
 
@@ -37,7 +37,7 @@ Audit and rationalize repository root artifacts to reduce clutter, improve first
 - Existing cleanup context: [FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
 - Root-level file inventory from current repository state
 
-**IPW planning artifact (when used):** [TBD - run `IPW E7:S01:T10`]
+**IPW planning artifact (when used):** [TBD - run `IPW E07:S01:T10`]
 
 ---
 
@@ -74,7 +74,7 @@ Audit and rationalize repository root artifacts to reduce clutter, improve first
 **Depends On:**
 
 - UXR intake completion in `UXR-013`
-- IPW package for `E7:S01:T10` before implementation
+- IPW package for `E07:S01:T10` before implementation
 
 **Blocks:**
 
@@ -94,7 +94,7 @@ Audit and rationalize repository root artifacts to reduce clutter, improve first
 
 - **[UXR-013: Project root hygiene and legacy docs rationalization](../../../fr-br/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** - **Relationship Type:** Informs - **Context:** Captures user-reported pain and defines UX acceptance direction for root cleanup.
 - **[FR-039: AI Dev Kit project review and legacy clean-up](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** - **Relationship Type:** Coordinates With - **Context:** Broader repository cleanup context that this task narrows to root-level hygiene.
-- **[FR-101: Consolidate governance under docs/governance/](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — **Coordinates With** — [E7:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) rehouses policies under `docs/governance/`; avoid conflicting root moves.
+- **[FR-101: Consolidate governance under docs/governance/](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — **Coordinates With** — [E07:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) rehouses policies under `docs/governance/`; avoid conflicting root moves.
 
 **Cross-Wiring Notes:**
 
@@ -111,7 +111,7 @@ Task focuses root-level curation specifically, while FR-039 covers wider reposit
 
 **Related Tasks:**
 
-- [E7:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) — governance rehousing under `docs/governance/` ([FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md))
+- [E07:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) — governance rehousing under `docs/governance/` ([FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md))
 
 **Related Stories:**
 
@@ -147,6 +147,6 @@ Pending.
 
 ## Next Actions
 
-- [ ] Run `IPW E7:S01:T10` in plan mode.
-- [ ] Produce `IPP-E7S01T10-*.md` under `docs/implementation-cycles/`.
+- [ ] Run `IPW E07:S01:T10` in plan mode.
+- [ ] Produce `IPP-E07S01T10-*.md` under `docs/implementation-cycles/`.
 - [ ] Start implementation only after explicit authorization.

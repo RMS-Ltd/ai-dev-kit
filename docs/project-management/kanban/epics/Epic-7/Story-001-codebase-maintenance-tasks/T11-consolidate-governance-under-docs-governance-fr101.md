@@ -8,20 +8,20 @@ housekeeping_policy: keep
 
 # Epic 7, Story 1, Task 11: Consolidate governance under `docs/governance/` (FR-101)
 
-**Task ID:** E7:S01:T11  
+**Task ID:** E07:S01:T11  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Last updated:** 2026-05-29 (IPW — IPP filed)  
 **Started:** 2026-05-29  
 **Completed:** 2026-05-29  
 **Version:** v0.7.1.11+8  
-**Code:** E7S01T11
+**Code:** E07S01T11
 
 ---
 
 ## Task ID
 
-**Full Task ID:** `E7:S01:T11`
+**Full Task ID:** `E07:S01:T11`
 
 ---
 
@@ -37,17 +37,17 @@ Deliver [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governa
 
 ## Input
 
-Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E7S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md))
+Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E07S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md))
 
 Publication N/A Reason: FR-042 consolidated IPP packages specification, test design, and implementation plan in one durable artifact under `docs/implementation-cycles/`; no separate ICW trio or Docusaurus publication required (BR-066).
 
-- **[IPP-E7S01T11](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)** — specification, test design, implementation plan (IPW)
+- **[IPP-E07S01T11](../../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md)** — specification, test design, implementation plan (IPW)
 - **[FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — requirements and acceptance criteria
 - **[GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)** — Phase 0 SoT (draft at intake)
 - [kanban-governance-policy.md](../../../../governance/kanban/kanban-governance-policy.md) (book SoT)
 - [docs/architecture/README.md](../../../../architecture/README.md)
 - [book-repo-adk-removal-inventory.md](../../../../maintenance/fr099-phase4-rewire-and-verify.md) — inventory methodology (FR-099)
-- **IPW planning artifact:** [`IPP-E7S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (filed 2026-05-29)
+- **IPW planning artifact:** [`IPP-E07S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md) (filed 2026-05-29)
 
 ---
 
@@ -56,7 +56,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 | Phase | Output |
 |-------|--------|
 | **0 — Inventory** | Completed [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) with maintainer sign-off |
-| **1 — IPW** | Optional `IPP-E7S01T11-*.md` if execution is multi-wave |
+| **1 — IPW** | Optional `IPP-E07S01T11-*.md` if execution is multi-wave |
 | **2 — Execute** | `git mv` per inventory; stubs; sign-off table marked done |
 | **3 — Verify** | Legacy path `rg` clean or stub-only; `book-repo-docs-scope.md` updated |
 
@@ -78,10 +78,10 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 1. Finalize Phase 0 inventory (scan repo; classify MOVE / STUB / INDEX / OUT).
 2. Obtain maintainer sign-off on inventory table.
-3. Run `IPW E7:S01:T11` if multi-phase execution or high link blast radius.
+3. Run `IPW E07:S01:T11` if multi-phase execution or high link blast radius.
 4. Execute moves wave-by-wave; add stubs; sweep links.
 5. Update docs scope + run verification commands from FR-101-F6.
-6. Close via **RW E7:S01:T11** after user verification.
+6. Close via **RW E07:S01:T11** after user verification.
 
 ---
 
@@ -93,7 +93,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 **Coordinates With:**
 
-- [E7:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md) — root hygiene; avoid conflicting moves
+- [E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md) — root hygiene; avoid conflicting moves
 
 **Blocked By:**
 
@@ -113,7 +113,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 **Related Tasks:**
 
-- **[E7:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md)** — **Coordinates With** — Root vs governance tree boundaries (T10 cross-wires back to this task).
+- **[E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md)** — **Coordinates With** — Root vs governance tree boundaries (T10 cross-wires back to this task).
 
 ---
 
@@ -132,7 +132,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 ## References
 
-- [IPP-E7S01T11-consolidate-governance-under-docs-governance.md](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
+- [IPP-E07S01T11-consolidate-governance-under-docs-governance.md](../../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
@@ -142,5 +142,5 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 ## Next Actions
 
 - [x] Complete and obtain sign-off on Phase 0 inventory.
-- [x] Run `IPW E7:S01:T11` when ready for execution planning.
+- [x] Run `IPW E07:S01:T11` when ready for execution planning.
 - [x] Execute Waves A–F per IPP; closure RW `v0.7.1.11+8`.

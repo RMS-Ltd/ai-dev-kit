@@ -8,16 +8,16 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 64: Add Workflow Section to Project README
 
-**Task ID:** E5:S01:T64
+**Task ID:** E05:S01:T64
 **Status:** COMPLETE
 **Priority:** MEDIUM
 **Estimated Effort:** Medium
 **Created:** 2026-03-17
 **Last updated:** 2026-03-25 (v0.5.1.64+1 — FR-061 README Workflows section + restored README body)
 **Version:** v0.5.1.64+1
-**Code:** E5S01T64
+**Code:** E05S01T64
 
-**Repository Pattern:** FR-061 = E5:S01:T64 (abstract space: v0.5.1.64+0)
+**Repository Pattern:** FR-061 = E05:S01:T64 (abstract space: v0.5.1.64+0)
 
 ---
 
@@ -70,7 +70,7 @@ Add a comprehensive "Workflows" section to the project README.md that documents 
    - Plus 7 additional workflows with full coverage
 
 3. **Command Reference:**
-   - All argument forms (e.g., `RW E7:S01:T10`, `UKW -u`, `ICW plan E5:S01:T64`)
+   - All argument forms (e.g., `RW E07:S01:T10`, `UKW -u`, `ICW plan E05:S01:T64`)
    - Usage examples for common scenarios
    - Clear syntax documentation
 
@@ -139,8 +139,8 @@ Add a comprehensive "Workflows" section to the project README.md that documents 
 - **FR-061:** Add Workflow Section to Project README (this task)
 
 **Related Tasks:**
-- **E5:S01:T63:** RW Task Argument Requirement / FR-060 (related workflow enhancement)
-- **E7:S01:T10:** Enhanced Workflow Logging System (UKW implementation)
+- **E05:S01:T63:** RW Task Argument Requirement / FR-060 (related workflow enhancement)
+- **E07:S01:T10:** Enhanced Workflow Logging System (UKW implementation)
 
 **Related Stories:**
 - **E5:S01:** FR Repo (this task is part of the FR repository)

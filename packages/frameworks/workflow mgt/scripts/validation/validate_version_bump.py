@@ -633,10 +633,12 @@ def validate_task_doc_fields(
     # Check Task ID (flexible - can be in header or anywhere in content)
     # Handle both zero-padded and non-zero-padded formats
     task_id_patterns = [
-        re.compile(rf'E{epic}:S{story:02d}:T{task:02d}', re.IGNORECASE),  # E2:S09:T02
-        re.compile(rf'E{epic}:S{story}:T{task:02d}', re.IGNORECASE),      # E2:S9:T02
-        re.compile(rf'E{epic}:S{story:02d}:T{task}', re.IGNORECASE),      # E2:S09:T2
-        re.compile(rf'E{epic}:S{story}:T{task}', re.IGNORECASE),          # E2:S9:T2
+        re.compile(rf'E{epic:02d}:S{story:02d}:T{task:02d}', re.IGNORECASE),  # E04:S19:T09 (UXR-014)
+        re.compile(rf'E{epic:02d}:S{story}:T{task:02d}', re.IGNORECASE),      # E04:S19:T09 variant
+        re.compile(rf'E{epic}:S{story:02d}:T{task:02d}', re.IGNORECASE),  # E4:S19:T09
+        re.compile(rf'E{epic}:S{story}:T{task:02d}', re.IGNORECASE),      # E4:S19:T9
+        re.compile(rf'E{epic}:S{story:02d}:T{task}', re.IGNORECASE),      # E4:S19:T9
+        re.compile(rf'E{epic}:S{story}:T{task}', re.IGNORECASE),          # E4:S19:T9
     ]
     
     task_id_found = False

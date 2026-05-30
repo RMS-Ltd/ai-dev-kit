@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E21:S2:T5` (e.g., `E4:S11:T01`)
+**Format:** `E21:S02:T05` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E21:S02:T05`
 
@@ -71,10 +71,10 @@ Add translation management tools for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E21:S2:T04
+- E21:S02:T04
 
 **Blocks:**
-- E21:S2:T06
+- E21:S02:T06
 
 **Blocked By:**
 - [What blocks this task]

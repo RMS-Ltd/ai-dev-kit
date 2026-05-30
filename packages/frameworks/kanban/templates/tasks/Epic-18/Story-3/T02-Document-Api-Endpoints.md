@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E18:S3:T2` (e.g., `E4:S11:T01`)
+**Format:** `E18:S03:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E18:S03:T02`
 
@@ -71,10 +71,10 @@ Document API endpoints for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E18:S3:T01
+- E18:S03:T01
 
 **Blocks:**
-- E18:S3:T03
+- E18:S03:T03
 
 **Blocked By:**
 - [What blocks this task]

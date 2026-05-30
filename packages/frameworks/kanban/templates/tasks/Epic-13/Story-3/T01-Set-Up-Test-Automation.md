@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E13:S3:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E13:S03:T01`)
 
 **Full Task ID:** `E13:S03:T01`
 
@@ -85,7 +85,7 @@ Set up test automation for the {PROJECT_NAME} project. Configure automated test 
 - Test suites (from E13:S2)
 
 **Blocks:**
-- E13:S3:T02: Integrate tests with CI/CD (CI/CD integration uses test automation)
+- E13:S03:T02: Integrate tests with CI/CD (CI/CD integration uses test automation)
 
 **Parallel Development Candidacy:** Safe (can proceed independently after testing infrastructure and test suites)
 
@@ -94,7 +94,7 @@ Set up test automation for the {PROJECT_NAME} project. Configure automated test 
 ## Related Work
 
 **Related Tasks:**
-- E13:S3:T02: Integrate tests with CI/CD (CI/CD integration uses test automation)
+- E13:S03:T02: Integrate tests with CI/CD (CI/CD integration uses test automation)
 
 **Related Stories:**
 - E13:S3: Test Automation and CI/CD Integration (this story)

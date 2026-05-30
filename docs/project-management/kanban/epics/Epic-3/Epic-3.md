@@ -79,12 +79,12 @@ It ensures the dev kit:
 Make sure the dev kit's own versioning policy, version file, and docs align cleanly with the generic versioning framework. Establish `ai-dev-kit` as the canonical SoT for versioning policies and strategies.
 
 **Tasks:**
-- [x] E3:S01:T01 – Review dev-kit versioning policy vs framework policy ✅ COMPLETE (v0.3.1.1+2)
-- [x] E3:S01:T02 – Ingest versioning findings from fynd.deals Epic 15 work ✅ COMPLETE (v0.3.1.2+1)
-- [x] E3:S01:T03 – Update dev-kit versioning policy as canonical SoT ✅ COMPLETE (v0.3.1.3+1)
-- [x] E3:S01:T04 – Align dev-kit version.py and CHANGELOG with framework ✅ COMPLETE (v0.3.1.4+1)
-- [x] E3:S01:T05 – Document consumption pattern for other projects ✅ COMPLETE (v0.3.1.5+1)
-- [x] E3:S01:T06 – Make .cursorrules abstract (remove hardcoded version numbers) ✅ COMPLETE (v0.3.1.6+1)
+- [x] E03:S01:T01 – Review dev-kit versioning policy vs framework policy ✅ COMPLETE (v0.3.1.1+2)
+- [x] E03:S01:T02 – Ingest versioning findings from fynd.deals Epic 15 work ✅ COMPLETE (v0.3.1.2+1)
+- [x] E03:S01:T03 – Update dev-kit versioning policy as canonical SoT ✅ COMPLETE (v0.3.1.3+1)
+- [x] E03:S01:T04 – Align dev-kit version.py and CHANGELOG with framework ✅ COMPLETE (v0.3.1.4+1)
+- [x] E03:S01:T05 – Document consumption pattern for other projects ✅ COMPLETE (v0.3.1.5+1)
+- [x] E03:S01:T06 – Make .cursorrules abstract (remove hardcoded version numbers) ✅ COMPLETE (v0.3.1.6+1)
 
 > Full story: [`Story-001-dev-kit-alignment-with-versioning-framework.md`](Story-001-dev-kit-alignment-with-versioning-framework.md)
 
@@ -101,16 +101,16 @@ Make sure the dev kit's own versioning policy, version file, and docs align clea
 Provide a practical versioning cookbook with worked examples for RC.EPIC.STORY.TASK+BUILD, making it easy for other projects to adopt the dev-kit versioning strategy safely and correctly.
 
 **Tasks:**
-- [x] E3:S02:T01 – Define core versioning scenarios for the cookbook ✅ COMPLETE (v0.3.2.1+1)
-- [x] E3:S02:T02 – Create versioning cookbook document with worked examples ✅ COMPLETE (v0.3.2.2+1)
-- [x] E3:S02:T03 – Add cross-framework examples (Kanban + Versioning + RW) ✅ COMPLETE (v0.3.2.3+1)
-- [x] E3:S02:T04 – Document edge cases and anti-patterns ✅ COMPLETE (v0.3.2.4+1)
-- [x] E3:S02:T05 – Create quick reference summary for users and agents ✅ COMPLETE (v0.3.2.5+1)
-- [x] E3:S02:T06 – Investigate and harden changelog ordering process 🔄 PERPETUAL (v0.3.2.6+1)
-- [x] E3:S02:T07 – Create dual-versioning guide for package manager compatibility ✅ COMPLETE (v0.3.2.7+1)
-- [x] E3:S02:T08 – Audit dual-versioning application across packages and propose strategy ✅ COMPLETE (v0.3.2.8+1)
-- [x] E3:S02:T09 – Implement Package Version Workflow (PVW) with agentic execution ✅ COMPLETE (v0.3.2.9+1)
-- [ ] E3:S02:T10 – Integrate PVW into Release Workflow agent execution guide - TODO
+- [x] E03:S02:T01 – Define core versioning scenarios for the cookbook ✅ COMPLETE (v0.3.2.1+1)
+- [x] E03:S02:T02 – Create versioning cookbook document with worked examples ✅ COMPLETE (v0.3.2.2+1)
+- [x] E03:S02:T03 – Add cross-framework examples (Kanban + Versioning + RW) ✅ COMPLETE (v0.3.2.3+1)
+- [x] E03:S02:T04 – Document edge cases and anti-patterns ✅ COMPLETE (v0.3.2.4+1)
+- [x] E03:S02:T05 – Create quick reference summary for users and agents ✅ COMPLETE (v0.3.2.5+1)
+- [x] E03:S02:T06 – Investigate and harden changelog ordering process 🔄 PERPETUAL (v0.3.2.6+1)
+- [x] E03:S02:T07 – Create dual-versioning guide for package manager compatibility ✅ COMPLETE (v0.3.2.7+1)
+- [x] E03:S02:T08 – Audit dual-versioning application across packages and propose strategy ✅ COMPLETE (v0.3.2.8+1)
+- [x] E03:S02:T09 – Implement Package Version Workflow (PVW) with agentic execution ✅ COMPLETE (v0.3.2.9+1)
+- [ ] E03:S02:T10 – Integrate PVW into Release Workflow agent execution guide - TODO
 
 > Full story: [`Story-002-versioning-cookbook-and-examples.md`](Story-002-versioning-cookbook-and-examples.md)
 
@@ -127,12 +127,12 @@ Provide a practical versioning cookbook with worked examples for RC.EPIC.STORY.T
 Create comprehensive, framework-level integration documentation that explains how the Numbering & Versioning framework integrates with the Kanban and Workflow Management frameworks. Unlike E4:S03 (which validated dev-kit implementation), this story focuses on **portable, template-ready documentation** that external projects can use to integrate all three frameworks.
 
 **Tasks:**
-- [x] E3:S03:T01 – Review existing framework-level integration documentation ✅ COMPLETE (v0.3.3.1+1)
-- [x] E3:S03:T02 – Create comprehensive framework-level integration guide ✅ COMPLETE (v0.3.3.2+1)
-- [x] E3:S03:T03 – Document integration patterns and best practices ✅ COMPLETE (v0.3.3.3+1)
-- [x] E3:S03:T04 – Create integration examples for external projects ✅ COMPLETE (v0.3.3.4+1)
-- [x] E3:S03:T05 – Document integration troubleshooting and common issues ✅ COMPLETE (v0.3.3.5+1)
-- [x] E3:S03:T06 – Add RW Step 6: Update BR/FR Docs with fix attempt history ✅ COMPLETE (v0.3.3.6+1)
+- [x] E03:S03:T01 – Review existing framework-level integration documentation ✅ COMPLETE (v0.3.3.1+1)
+- [x] E03:S03:T02 – Create comprehensive framework-level integration guide ✅ COMPLETE (v0.3.3.2+1)
+- [x] E03:S03:T03 – Document integration patterns and best practices ✅ COMPLETE (v0.3.3.3+1)
+- [x] E03:S03:T04 – Create integration examples for external projects ✅ COMPLETE (v0.3.3.4+1)
+- [x] E03:S03:T05 – Document integration troubleshooting and common issues ✅ COMPLETE (v0.3.3.5+1)
+- [x] E03:S03:T06 – Add RW Step 6: Update BR/FR Docs with fix attempt history ✅ COMPLETE (v0.3.3.6+1)
 
 > Full story: [`Story-003-versioning-integration-with-kanban-and-rw.md`](Story-003-versioning-integration-with-kanban-and-rw.md)
 

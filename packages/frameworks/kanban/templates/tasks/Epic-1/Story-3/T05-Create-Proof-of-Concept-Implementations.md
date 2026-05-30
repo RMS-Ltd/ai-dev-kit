@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E1:S3:T5` (e.g., `E4:S11:T01`)
+**Format:** `E01:S03:T05` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E01:S03:T05`
 
@@ -71,10 +71,10 @@ Create proof-of-concept implementations for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E1:S3:T04
+- E01:S03:T04
 
 **Blocks:**
-- E1:S3:T06
+- E01:S03:T06
 
 **Blocked By:**
 - [What blocks this task]

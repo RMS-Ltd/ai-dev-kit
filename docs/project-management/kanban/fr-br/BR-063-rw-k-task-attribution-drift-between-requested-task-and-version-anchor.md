@@ -12,10 +12,10 @@ housekeeping_policy: keep
 **Priority:** CRITICAL  
 **Severity:** CRITICAL — **forensic integrity blocker:** release records can claim one task while version/tag lineage anchors a different task.  
 **Created:** 2026-04-07  
-**Last updated:** 2026-04-07 — `E2:S01:T13+2` released runtime hardening to `dev` (`RW -k` mismatch guard, `--art`, `validate_version_bump` alignment, tests, dual-source docs).  
+**Last updated:** 2026-04-07 — `E02:S01:T13+2` released runtime hardening to `dev` (`RW -k` mismatch guard, `--art`, `validate_version_bump` alignment, tests, dual-source docs).  
 **Version:** v0.2.1.13+2  
 **Code:** BR-063  
-**Implementing Task:** [E2:S01:T13](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T13-rw-k-forensic-task-attribution-alignment-br063.md)
+**Implementing Task:** [E02:S01:T13](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T13-rw-k-forensic-task-attribution-alignment-br063.md)
 
 ---
 
@@ -46,7 +46,7 @@ If requested task and computed version task differ, RW must hard-fail unless an 
 
 ## Reproduction
 
-1. Run `RW -k E2:S01:T12`.
+1. Run `RW -k E02:S01:T12`.
 2. Observe version lineage increments on `T10` (`0.2.1.10+6`).
 3. Observe release/changelog text attributed to `T12`.
 4. Result: release artifacts disagree on accountable task.

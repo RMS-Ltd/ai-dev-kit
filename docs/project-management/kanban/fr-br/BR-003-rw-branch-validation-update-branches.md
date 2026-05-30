@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E2:S01:T10](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md)  
-**Historical registry:** E6:S01:T03
+**Implementing Task:** [E02:S01:T10](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md)  
+**Historical registry:** E06:S01:T03
 
 ---
 
@@ -217,13 +217,13 @@ Added support for `update/*`, `maintenance/*`, and `upgrade/*` branch patterns i
 **Assigned To:**
 - Epic: Epic 2 - Workflow Management Framework
 - Story: Story 1 - RW Agent Execution & Docs
-- Task: E2:S01:T07 - Add support for update/maintenance branch patterns in branch validation
+- Task: E02:S01:T07 - Add support for update/maintenance branch patterns in branch validation
 - Version: `0.2.1.7+1`
 
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
 - Story: [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
-- Task: E2:S01:T07 (to be added to Story 1)
+- Task: E02:S01:T07 (to be added to Story 1)
 
 ---
 

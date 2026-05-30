@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E9:S1:T4` (e.g., `E4:S11:T01`)
+**Format:** `E09:S01:T04` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E09:S01:T04`
 
@@ -73,10 +73,10 @@ Document development workflow for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E9:S1:T03
+- E09:S01:T03
 
 **Blocks:**
-- E9:S1:T05
+- E09:S01:T05
 
 **Blocked By:**
 - [What blocks this task]
@@ -122,7 +122,7 @@ Document development workflow for the {PROJECT_NAME} project.
 | **Nature** | Blocking / sequential | Contextual / informational |
 | **Direction** | `Depends On` / `Blocks` | Bidirectional (always both ways) |
 | **Usage** | Task cannot start until dependency resolves | Tasks can proceed independently but share context |
-| **Examples** | "Blocked by: E2:S01:T01" | "Informs: E2:S01:T03 — provides analysis for design" |
+| **Examples** | "Blocked by: E02:S01:T01" | "Informs: E02:S01:T03 — provides analysis for design" |
 
 ### Cross-Wiring Examples
 

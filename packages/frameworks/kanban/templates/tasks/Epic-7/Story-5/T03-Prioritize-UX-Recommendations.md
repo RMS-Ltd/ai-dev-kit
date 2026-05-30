@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S5:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S05:T03`)
 
 **Full Task ID:** `E07:S05:T03`
 
@@ -34,7 +34,7 @@ Prioritize UX recommendations for the {PROJECT_NAME} project. Evaluate and prior
 
 ## Input
 
-- UX recommendations (from E7:S5:T02)
+- UX recommendations (from E07:S05:T02)
 - Prioritization framework and criteria
 - Product context and priorities
 - Resource constraints and capabilities
@@ -84,12 +84,12 @@ Prioritize UX recommendations for the {PROJECT_NAME} project. Evaluate and prior
 ## Dependencies
 
 **Depends On:**
-- E7:S5:T01: Synthesize UX research findings (prioritization uses synthesized findings)
-- E7:S5:T02: Generate UX insights and recommendations (prioritization uses recommendations)
+- E07:S05:T01: Synthesize UX research findings (prioritization uses synthesized findings)
+- E07:S05:T02: Generate UX insights and recommendations (prioritization uses recommendations)
 
 **Blocks:**
-- E7:S5:T04: Create UX insights documentation (documentation includes prioritized recommendations)
-- E7:S5:T05: Create UX recommendations roadmap (roadmap uses prioritized recommendations)
+- E07:S05:T04: Create UX insights documentation (documentation includes prioritized recommendations)
+- E07:S05:T05: Create UX recommendations roadmap (roadmap uses prioritized recommendations)
 
 **Parallel Development Candidacy:** Blocked (depends on T01 and T02)
 
@@ -98,10 +98,10 @@ Prioritize UX recommendations for the {PROJECT_NAME} project. Evaluate and prior
 ## Related Work
 
 **Related Tasks:**
-- E7:S5:T01: Synthesize UX research findings (prioritization uses synthesized findings)
-- E7:S5:T02: Generate UX insights and recommendations (prioritization uses recommendations)
-- E7:S5:T04: Create UX insights documentation (documentation includes prioritized recommendations)
-- E7:S5:T05: Create UX recommendations roadmap (roadmap uses prioritized recommendations)
+- E07:S05:T01: Synthesize UX research findings (prioritization uses synthesized findings)
+- E07:S05:T02: Generate UX insights and recommendations (prioritization uses recommendations)
+- E07:S05:T04: Create UX insights documentation (documentation includes prioritized recommendations)
+- E07:S05:T05: Create UX recommendations roadmap (roadmap uses prioritized recommendations)
 
 **Related Stories:**
 - E7:S5: UX Insights and Recommendations (this story)

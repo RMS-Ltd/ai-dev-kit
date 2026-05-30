@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E7:S01:T05 – Markdown Maintenance (Perpetual Task)
+# E07:S01:T05 – Markdown Maintenance (Perpetual Task)
 
-**Task ID:** E7:S01:T05
+**Task ID:** E07:S01:T05
 
 **Status:** PERPETUAL
 **Priority:** MEDIUM
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 ## Task ID
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
-**Value:** `E7:S01:T05`
+**Value:** `E07:S01:T05`
 
 ---
 
@@ -108,7 +108,7 @@ This is a **perpetual task** dedicated to maintaining markdown documentation qua
 
 ### When to Use This Task
 
-Use E7:S01:T05 for markdown maintenance work when:
+Use E07:S01:T05 for markdown maintenance work when:
 
 1. **Fixing lint errors** not related to feature development
 2. **Standardizing formatting** across multiple documents
@@ -118,7 +118,7 @@ Use E7:S01:T05 for markdown maintenance work when:
 
 ### When NOT to Use This Task
 
-Do NOT use E7:S01:T05 when:
+Do NOT use E07:S01:T05 when:
 
 1. **Documentation is part of feature development** (use feature task)
 2. **Creating new documentation** for a specific feature (use feature task)
@@ -139,10 +139,10 @@ Do NOT use E7:S01:T05 when:
 
 ## Related Work
 
-- **E7:S01:T01** - IDE-Flagged Issues (Perpetual Task) - Content quality partner
-- **E2:S16:T03** - RW Maintenance (Perpetual Task) - Workflow maintenance partner
-- **E2:S16:T03** - CMW (Perpetual Task) - Documentation maintenance partner
-- **E2:S16:T03** - UKW (Perpetual Task) - Structure maintenance partner
+- **E07:S01:T01** - IDE-Flagged Issues (Perpetual Task) - Content quality partner
+- **E02:S16:T03** - RW Maintenance (Perpetual Task) - Workflow maintenance partner
+- **E02:S16:T03** - CMW (Perpetual Task) - Documentation maintenance partner
+- **E02:S16:T03** - UKW (Perpetual Task) - Structure maintenance partner
 
 ---
 
@@ -168,7 +168,7 @@ Do NOT use E7:S01:T05 when:
 ## Notes
 
 **Integration with Other Tasks:**
-- This task complements E7:S01:T01 (IDE issues) for comprehensive content quality
+- This task complements E07:S01:T01 (IDE issues) for comprehensive content quality
 - Coordinates with E6:S07 perpetual tasks for holistic maintenance
 - Works alongside feature development tasks for documentation updates
 

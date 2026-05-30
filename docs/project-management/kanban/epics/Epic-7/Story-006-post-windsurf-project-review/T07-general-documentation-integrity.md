@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E7:S06:T07 – General Documentation and Cross-Reference Integrity
+# E07:S06:T07 – General Documentation and Cross-Reference Integrity
 
-**Task ID:** E7:S06:T07
+**Task ID:** E07:S06:T07
 **Status:** COMPLETE
 **Priority:** HIGH
 **Last updated:** 2026-03-25

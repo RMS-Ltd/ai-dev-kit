@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Started:** 2026-05-15  
 **Completed:** 2026-05-15  
 **Version:** v0.5.1.35+1  
-**Code:** E5S00T35
+**Code:** E05S00T35
 
 ---
 
@@ -22,9 +22,9 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Task ID:** E5:S01:T35
+**Task ID:** E05:S01:T35
 
-**Repository Pattern:** FR-035 = E5:S01:T35 (abstract space: v0.5.1.35+0)
+**Repository Pattern:** FR-035 = E05:S01:T35 (abstract space: v0.5.1.35+0)
 
 ---
 
@@ -53,7 +53,7 @@ Enhance the Task Template (`TASK_TEMPLATE.md`) to include an explicit "Cross-Wir
 ## Input
 
 - **FR-035:** [`FR-035-task-template-cross-wiring-section.md`](../../../fr-br/FR-035-task-template-cross-wiring-section.md)
-- **IPW Plan:** [`IPP-E5S01T35-task-template-cross-wiring.md`](../../../../../../.claude/plans/e5-s01-t35-task-template-cross-wiring.md) — Implementation plan for this task (FR-042)
+- **IPW Plan:** [`IPP-E05S01T35-task-template-cross-wiring.md`](../../../../../../.claude/plans/e5-s01-t35-task-template-cross-wiring.md) — Implementation plan for this task (FR-042)
 - **SoP:** [`task-template-cross-wiring-sop.md`](../../../../../architecture/standards-and-adrs/task-template-cross-wiring-sop.md) - Standard Operating Procedure for cross-wiring tasks
 - **Task Template:** `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - **Bidirectional Wiring Principle:** `docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md`
@@ -145,7 +145,7 @@ Enhance the Task Template (`TASK_TEMPLATE.md`) to include an explicit "Cross-Wir
 - [FR-035: Task Template Cross-Wiring Section](../../../fr-br/FR-035-task-template-cross-wiring-section.md) - *Implements: This task implements FR-035*
 
 **Interconnected Tasks (Cross-Wiring):**
-- [E9:S01:T08: Repository Story Abstract Space Contradiction](../../Epic-9/Story-001-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md) - *Informs: Task template cross-wiring will help with task relationship documentation*
+- [E09:S01:T08: Repository Story Abstract Space Contradiction](../../Epic-9/Story-001-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md) - *Informs: Task template cross-wiring will help with task relationship documentation*
 
 **Related Stories:**
 - [E5:S01: FR Repo](../Story-001-fr-repo.md) - *Part Of: This task is part of the FR repository*

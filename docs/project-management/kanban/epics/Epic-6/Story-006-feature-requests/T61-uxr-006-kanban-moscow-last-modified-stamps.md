@@ -8,18 +8,18 @@ housekeeping_policy: keep
 
 # Epic 6, Story 6, Task 61: UXR-006 — MoSCOW row last-modified UTC stamps
 
-**Task ID:** E6:S06:T61  
+**Task ID:** E06:S06:T61  
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
 **Created:** 2026-04-02  
 **Last updated:** 2026-04-02 — **RW** v0.6.6.61+1 (SemVer **v0.4.702+1**); intent guard **T61** with `--confirmed-override` (prior `version.py` **T57**)  
 **Version:** v0.6.6.61+1  
-**Code:** E6S06T61
+**Code:** E06S06T61
 
 **Upstream:** [UXR-006 — Kanban MoSCOW row last-modified UTC stamp](../../../fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)
 
-**Registry:** [E7:S00:T06](../../Epic-7/Story-000-uxr-repo/T06-uxr-006-repository-anchor.md)
+**Registry:** [E07:S00:T06](../../Epic-7/Story-000-uxr-repo/T06-uxr-006-repository-anchor.md)
 
 ---
 
@@ -52,7 +52,7 @@ housekeeping_policy: keep
 - [x] **AC2:** FR/BR/UXR board MoSCOW rows carry the same field.  
 - [x] **AC3:** `kanban-board-guide.md` includes the MoSCOW `Last modified` subsection.  
 - [ ] **AC4:** (Optional) Script or validator checked in and referenced from guide or UXR.  
-- [x] **AC5:** Intake: UXR ↔ this task ↔ **E7:S00:T06**; story checklist and boards list **E6:S06:T61**.
+- [x] **AC5:** Intake: UXR ↔ this task ↔ **E07:S00:T06**; story checklist and boards list **E06:S06:T61**.
 
 ---
 

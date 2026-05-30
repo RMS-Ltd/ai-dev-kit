@@ -20,9 +20,9 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E8:S01:T01 – Create generator framework** - ✅ COMPLETE (v0.8.1.1+1 – Generator framework implemented: BaseGenerator, TemplateBasedGenerator, TemplateEngine, GeneratorRegistry)
-- [x] **E8:S01:T02 – Build template-based generators** - ✅ COMPLETE (v0.8.1.2+1 – Template-based generators implemented: WorkflowGenerator, KanbanTemplateGenerator, templates)
-- [x] **E8:S01:T03 – Establish generator patterns** - ✅ COMPLETE (v0.8.1.3+1 – Generator patterns library created: 7 pattern categories, pattern examples, best practices)
+- [x] **E08:S01:T01 – Create generator framework** - ✅ COMPLETE (v0.8.1.1+1 – Generator framework implemented: BaseGenerator, TemplateBasedGenerator, TemplateEngine, GeneratorRegistry)
+- [x] **E08:S01:T02 – Build template-based generators** - ✅ COMPLETE (v0.8.1.2+1 – Template-based generators implemented: WorkflowGenerator, KanbanTemplateGenerator, templates)
+- [x] **E08:S01:T03 – Establish generator patterns** - ✅ COMPLETE (v0.8.1.3+1 – Generator patterns library created: 7 pattern categories, pattern examples, best practices)
 
 ---
 
@@ -40,7 +40,7 @@ Build comprehensive code generators for framework patterns.
 
 ## Tasks
 
-### E8:S01:T01 – Create generator framework
+### E08:S01:T01 – Create generator framework
 
 **Status:** ✅ COMPLETE (v0.8.1.1+1)  
 **Input:** Framework patterns, generation requirements  
@@ -74,12 +74,12 @@ Build comprehensive code generators for framework patterns.
 
 ---
 
-### E8:S01:T02 – Build template-based generators
+### E08:S01:T02 – Build template-based generators
 
 **Status:** ✅ COMPLETE (v0.8.1.2+1)  
 **Input:** Generator framework, templates  
 **Deliverable:** Template-based generator implementations  
-**Dependencies:** E8:S01:T01  
+**Dependencies:** E08:S01:T01  
 **Blocker:** None
 
 **Approach:**
@@ -106,12 +106,12 @@ Build comprehensive code generators for framework patterns.
 
 ---
 
-### E8:S01:T03 – Establish generator patterns
+### E08:S01:T03 – Establish generator patterns
 
 **Status:** ✅ COMPLETE (v0.8.1.3+1)  
 **Input:** Generator implementations  
 **Deliverable:** Generator pattern documentation  
-**Dependencies:** E8:S01:T02  
+**Dependencies:** E08:S01:T02  
 **Blocker:** None
 
 **Approach:**

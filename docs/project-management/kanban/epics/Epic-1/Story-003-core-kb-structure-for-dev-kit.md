@@ -20,12 +20,12 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E1:S03:T01 – Analyze current docs/core structure and define target structure** ✅ COMPLETE (v0.1.3.1+1)
-- [x] **E1:S03:T02 – Document KB structure principles and conventions** ✅ COMPLETE (v0.1.3.2+1)
-- [x] **E1:S03:T03 – Create KB structure migration guide** ✅ COMPLETE (v0.1.3.3+1 – Phase 1 implemented, updated with canonical pattern references)
-- [x] **E1:S03:T04 – Implement target KB structure** ✅ COMPLETE (v0.1.3.4+1 – Phase 2 Guides Structure implemented)
-- [x] **E1:S03:T05 – Create KB structure documentation** ✅ COMPLETE (v0.1.3.5+1)
-- [x] **E1:S03:T06 – Document scalable KB pattern for large codebases** ✅ COMPLETE (v0.1.3.6+1)
+- [x] **E01:S03:T01 – Analyze current docs/core structure and define target structure** ✅ COMPLETE (v0.1.3.1+1)
+- [x] **E01:S03:T02 – Document KB structure principles and conventions** ✅ COMPLETE (v0.1.3.2+1)
+- [x] **E01:S03:T03 – Create KB structure migration guide** ✅ COMPLETE (v0.1.3.3+1 – Phase 1 implemented, updated with canonical pattern references)
+- [x] **E01:S03:T04 – Implement target KB structure** ✅ COMPLETE (v0.1.3.4+1 – Phase 2 Guides Structure implemented)
+- [x] **E01:S03:T05 – Create KB structure documentation** ✅ COMPLETE (v0.1.3.5+1)
+- [x] **E01:S03:T06 – Document scalable KB pattern for large codebases** ✅ COMPLETE (v0.1.3.6+1)
 
 ---
 
@@ -43,7 +43,7 @@ Establish core KB locations for architecture, PM & portfolio, and dev-kit govern
 
 ## Tasks
 
-### E1:S03:T01 – Analyze current docs/core structure and define target structure
+### E01:S03:T01 – Analyze current docs/core structure and define target structure
 
 **Input:** Current KB directory structure, existing documentation organization  
 **Deliverable:** KB structure analysis report with current state, target state, and migration plan  
@@ -66,7 +66,7 @@ Establish core KB locations for architecture, PM & portfolio, and dev-kit govern
 
 ---
 
-### E1:S03:T02 – Document KB structure principles and conventions
+### E01:S03:T02 – Document KB structure principles and conventions
 
 **Input:** Analysis from T001  
 **Deliverable:** KB structure principles document  
@@ -87,7 +87,7 @@ Establish core KB locations for architecture, PM & portfolio, and dev-kit govern
 
 ---
 
-### E1:S03:T03 – Create KB structure migration guide
+### E01:S03:T03 – Create KB structure migration guide
 
 **Input:** Analysis from T001, principles from T002  
 **Deliverable:** KB structure migration guide  
@@ -108,7 +108,7 @@ Establish core KB locations for architecture, PM & portfolio, and dev-kit govern
 
 ---
 
-### E1:S03:T04 – Implement target KB structure
+### E01:S03:T04 – Implement target KB structure
 
 **Input:** Migration guide from T003  
 **Deliverable:** Implemented target KB structure  
@@ -129,7 +129,7 @@ Establish core KB locations for architecture, PM & portfolio, and dev-kit govern
 
 ---
 
-### E1:S03:T05 – Create KB structure documentation
+### E01:S03:T05 – Create KB structure documentation
 
 **Input:** Implemented structure from T004  
 **Deliverable:** KB structure documentation  
@@ -150,7 +150,7 @@ Establish core KB locations for architecture, PM & portfolio, and dev-kit govern
 
 ---
 
-### E1:S03:T06 – Document scalable KB pattern for large codebases
+### E01:S03:T06 – Document scalable KB pattern for large codebases
 
 **Input:** Research from T003 (canonical KB structure research), principles from T002  
 **Deliverable:** Scalable KB pattern documentation for projects with 100K+ lines of code  

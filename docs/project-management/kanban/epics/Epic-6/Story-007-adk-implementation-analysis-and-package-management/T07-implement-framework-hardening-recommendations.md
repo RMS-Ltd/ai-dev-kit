@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.7.7+6
 
 **Progress:** Phase 1 ✅, Phase 2 ✅, Phase 3 ✅ (rw-config.yaml ✅, .cursorrules ✅), Phase 4 ✅, Acceptance criteria ✅ - ALL PHASES COMPLETE  
-**Code:** E6S07T07
+**Code:** E06S07T07
 
 ---
 
@@ -24,13 +24,13 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S07:T07`
+**Full Task ID:** `E06:S07:T07`
 
 ---
 
 ## Scope
 
-Implement the critical and high-priority framework hardening recommendations identified in E6:S07:T01's comprehensive ADK implementation analysis. This task addresses the root causes of Epic mashup (affecting 30% of client projects), framework drift, and source repository gaps that prevent ai-dev-kit from serving as a proper reference implementation.
+Implement the critical and high-priority framework hardening recommendations identified in E06:S07:T01's comprehensive ADK implementation analysis. This task addresses the root causes of Epic mashup (affecting 30% of client projects), framework drift, and source repository gaps that prevent ai-dev-kit from serving as a proper reference implementation.
 
 **Problem Statement:**
 - **CRITICAL:** Epic 9 mismatch in ai-dev-kit source ("Book Related Work" vs canonical "User Management and Authentication") is root cause of Epic mashup
@@ -221,7 +221,7 @@ Implement all critical and high-priority hardening actions:
 ## Dependencies
 
 **Depends On:**
-- E6:S07:T01 - Comprehensive ADK implementation analysis (provides hardening recommendations)
+- E06:S07:T01 - Comprehensive ADK implementation analysis (provides hardening recommendations)
 
 **Blocks:**
 - Framework hardening work (this task implements the hardening)
@@ -238,8 +238,8 @@ Implement all critical and high-priority hardening actions:
 ## Related Work
 
 **Related Tasks:**
-- E6:S07:T01 - Comprehensive ADK implementation analysis (provides input: hardening recommendations)
-- E6:S07:T02-T05 - Package management and feedback mechanism (may benefit from hardened framework)
+- E06:S07:T01 - Comprehensive ADK implementation analysis (provides input: hardening recommendations)
+- E06:S07:T02-T05 - Package management and feedback mechanism (may benefit from hardened framework)
 
 **Related Documents:**
 - `docs/knowledge/analysis/adk-hardening-recommendations.md` - Comprehensive hardening recommendations

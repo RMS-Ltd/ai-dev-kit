@@ -21,14 +21,14 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E4:S11:T00 – Story Creation and Task Decomposition** ✅ COMPLETE (v0.4.11.0+0)
-- [x] **E4:S11:T01 – Update Kanban Governance Policy to Mandate 3-Tier Structure** ✅ COMPLETE (v0.4.11.1+0)
-- [x] **E4:S11:T02 – Create Task Document Template and Update Story Template** ✅ COMPLETE (v0.4.11.2+2)
-- [x] **E4:S11:T03 – Update Versioning Policy with Task Doc Requirements (Kanban-related sections)** ✅ COMPLETE (v0.4.11.3+1)
-- [x] **E4:S11:T04 – Define Abstract Space for Zero-Numbered E/S/T Docs (FR-018)** ✅ COMPLETE (v0.4.11.4+1)
-- [x] **E4:S11:T05 – Dependency Wiring Cross-References** ✅ COMPLETE (v0.4.11.5+0)
-- [x] **E4:S11:T06 – Review and Optimize Template Structure for Tier Delegation** ✅ COMPLETE (v0.4.11.6+2 – All phases complete: templates optimized, guidelines created, compliance audit complete, migration guide created)
-- [ ] **E4:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents** - TODO (v0.4.11.7+0 – Migration plan and implementation)
+- [x] **E04:S11:T00 – Story Creation and Task Decomposition** ✅ COMPLETE (v0.4.11.0+0)
+- [x] **E04:S11:T01 – Update Kanban Governance Policy to Mandate 3-Tier Structure** ✅ COMPLETE (v0.4.11.1+0)
+- [x] **E04:S11:T02 – Create Task Document Template and Update Story Template** ✅ COMPLETE (v0.4.11.2+2)
+- [x] **E04:S11:T03 – Update Versioning Policy with Task Doc Requirements (Kanban-related sections)** ✅ COMPLETE (v0.4.11.3+1)
+- [x] **E04:S11:T04 – Define Abstract Space for Zero-Numbered E/S/T Docs (FR-018)** ✅ COMPLETE (v0.4.11.4+1)
+- [x] **E04:S11:T05 – Dependency Wiring Cross-References** ✅ COMPLETE (v0.4.11.5+0)
+- [x] **E04:S11:T06 – Review and Optimize Template Structure for Tier Delegation** ✅ COMPLETE (v0.4.11.6+2 – All phases complete: templates optimized, guidelines created, compliance audit complete, migration guide created)
+- [ ] **E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents** - TODO (v0.4.11.7+0 – Migration plan and implementation)
   - Task: [`T07-planning-spec-tests-impl.md`](Story-011-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
 
 
@@ -55,11 +55,11 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 
 ## Tasks
 
-### E4:S11:T00 – Story Creation and Task Decomposition
+### E04:S11:T00 – Story Creation and Task Decomposition
 
 **Input:** FR-016 requirements, E2:S09 coordination plan  
 **Deliverable:** Story document created, Kanban-specific tasks defined  
-**Dependencies:** E2:S09:T00 (coordination established)  
+**Dependencies:** E02:S09:T00 (coordination established)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (documentation only)
 
@@ -74,7 +74,7 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 
 ---
 
-### E4:S11:T01 – Update Kanban Governance Policy to Mandate 3-Tier Structure
+### E04:S11:T01 – Update Kanban Governance Policy to Mandate 3-Tier Structure
 
 **Input:** Current Kanban governance policy documents  
 **Deliverable:** Updated Kanban governance policy mandating 3-tier structure and discrete Task docs  
@@ -109,13 +109,13 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 - [x] All three policy documents updated consistently
 
 **Coordination:**
-- E2:S09:T04 depends on this task (RW Step 1 needs policy requirements)
+- E02:S09:T04 depends on this task (RW Step 1 needs policy requirements)
 
 **Status:** ✅ COMPLETE (v0.4.11.1+0)
 
 ---
 
-### E4:S11:T02 – Create Task Document Template and Update Story Template
+### E04:S11:T02 – Create Task Document Template and Update Story Template
 
 **Input:** Current Story template (`packages/frameworks/kanban/templates/STORY_TEMPLATE.md`)  
 **Deliverable:** Task document template and updated Story template  
@@ -145,13 +145,13 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 - [x] Template documentation updated
 
 **Coordination:**
-- E2:S09:T04 depends on this task (RW Step 1 needs template structure)
+- E02:S09:T04 depends on this task (RW Step 1 needs template structure)
 
 **Status:** ✅ COMPLETE (v0.4.11.2+2)
 
 ---
 
-### E4:S11:T03 – Update Versioning Policy with Task Doc Requirements (Kanban-related sections)
+### E04:S11:T03 – Update Versioning Policy with Task Doc Requirements (Kanban-related sections)
 
 **Input:** Current versioning policy documents  
 **Deliverable:** Updated versioning policy requiring Task doc presence and alignment (Kanban-related sections)  
@@ -170,7 +170,7 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
    - Update Task transition rules to require Task doc presence
    - Add validation requirements for Task doc presence and alignment
 3. Reference FR-017 for doc-init (`+0`) support (prerequisite)
-4. Coordinate with E2:S09:T03 for RW-related versioning policy updates
+4. Coordinate with E02:S09:T03 for RW-related versioning policy updates
 
 **Acceptance Criteria:**
 - [x] Versioning policy requires Task doc presence before versioning (Kanban sections)
@@ -180,14 +180,14 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 - [x] All versioning policy documents updated consistently
 
 **Coordination:**
-- E2:S09:T03 handles RW-related versioning policy updates
+- E02:S09:T03 handles RW-related versioning policy updates
 - This task focuses on Kanban governance aspects
 
 **Status:** ✅ COMPLETE (v0.4.11.3+1)
 
 ---
 
-### E4:S11:T04 – Define Abstract Space for Zero-Numbered E/S/T Docs (FR-018)
+### E04:S11:T04 – Define Abstract Space for Zero-Numbered E/S/T Docs (FR-018)
 
 **Input:** FR-018 requirements, Kanban and Numbering policy documents  
 **Deliverable:** Abstract space concept defined in Kanban Policy, complementary section in Numbering Policy, SOP for committing initial E/S/T docs  
@@ -236,23 +236,23 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 
 ---
 
-### E4:S11:T05 – Dependency Wiring Cross-References
+### E04:S11:T05 – Dependency Wiring Cross-References
 
-**Input:** E2:S10:T06 dependency chain, FR-020 requirements  
-**Deliverable:** Cross-references wired to show E4:S11 blocks E2:S10:T06  
+**Input:** E02:S10:T06 dependency chain, FR-020 requirements  
+**Deliverable:** Cross-references wired to show E4:S11 blocks E02:S10:T06  
 **Dependencies:** None  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (documentation only)
 
 **Approach:**
-1. Update Blocks section to include E2:S10:T06
-2. Update Related Work section to include FR-020 and E2:S10:T06
-3. Document that E4:S11 blocks E2:S10:T06 via dependency chain
+1. Update Blocks section to include E02:S10:T06
+2. Update Related Work section to include FR-020 and E02:S10:T06
+3. Document that E4:S11 blocks E02:S10:T06 via dependency chain
 4. Add cross-references to show dependency relationship
 
 **Acceptance Criteria:**
-- [ ] Blocks section updated with E2:S10:T06
-- [ ] Related Work section updated with FR-020 and E2:S10:T06
+- [ ] Blocks section updated with E02:S10:T06
+- [ ] Related Work section updated with FR-020 and E02:S10:T06
 - [ ] Dependency relationship documented
 - [ ] Cross-references wired
 
@@ -260,12 +260,12 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 
 ---
 
-### E4:S11:T06 – Review and Optimize Template Structure for Tier Delegation
+### E04:S11:T06 – Review and Optimize Template Structure for Tier Delegation
 
 **Status:** ✅ COMPLETE (v0.4.11.6+2 – All phases complete)  
-**Input:** Epic, Story, and Task templates (from E4:S06 and E4:S11:T02), current template structure  
+**Input:** Epic, Story, and Task templates (from E4:S06 and E04:S11:T02), current template structure  
 **Deliverable:** Optimized templates with proper tier delegation, delegation guidelines documented  
-**Dependencies:** E4:S11:T02 (Task template created), E4:S06:T01-T04 (Epic/Story/Task templates created)  
+**Dependencies:** E04:S11:T02 (Task template created), E04:S06:T01-T04 (Epic/Story/Task templates created)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (depends on templates being created)
 
@@ -318,9 +318,9 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 - [x] Examples of proper vs. improper delegation documented ✅ Phase 4
 
 **Coordination:**
-- This task should be performed after E4:S06:T03-T04 (Story/Task templates created)
-- This task optimizes the templates created in E4:S11:T02 and E4:S06
-- Results inform E4:S06:T05 (Contextualization guide) - delegation is part of contextualization
+- This task should be performed after E04:S06:T03-T04 (Story/Task templates created)
+- This task optimizes the templates created in E04:S11:T02 and E4:S06
+- Results inform E04:S06:T05 (Contextualization guide) - delegation is part of contextualization
 
 ---
 
@@ -340,11 +340,11 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 
 **Blocks:**
 - E2:S09 (RW Integration) - requires policy and templates
-- E2:S09:T02 (RW Step 1 Task doc presence) - requires policy and templates
-- E2:S09:T03 (Validators) - requires policy requirements
-- E2:S10:T01 (RW Step 1 Doc-Init Path) - requires E2:S09 completion
-- E2:S10:T02 (Doc-Init Validation) - requires T01 completion
-- E2:S10:T06 (Version Validator Abstract Space Awareness) - requires T02 completion
+- E02:S09:T02 (RW Step 1 Task doc presence) - requires policy and templates
+- E02:S09:T03 (Validators) - requires policy requirements
+- E02:S10:T01 (RW Step 1 Doc-Init Path) - requires E2:S09 completion
+- E02:S10:T02 (Doc-Init Validation) - requires T01 completion
+- E02:S10:T06 (Version Validator Abstract Space Awareness) - requires T02 completion
 
 **Blocked By:**
 - None (can proceed independently)
@@ -352,14 +352,14 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 **Related Work:**
 - **E2:S09:** Kanban Granularity & Discrete Task Docs (Workflow Management coordination) (depends on this story)
 - **E4:S06:** Comprehensive Canonical E/S/T Template System (creates Epic/Story/Task templates that T06 optimizes)
-- **E4:S06:T03:** Create story template files (T06 reviews and optimizes)
-- **E4:S06:T04:** Create task template files (T06 reviews and optimizes)
+- **E04:S06:T03:** Create story template files (T06 reviews and optimizes)
+- **E04:S06:T04:** Create task template files (T06 reviews and optimizes)
 - **FR-016:** Kanban Granularity & Discrete Task Docs (3-Tier Structure) (this story + E2:S09)
 - **FR-017:** Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T (depends on FR-016, enables E2:S10)
 - **FR-018:** Abstract Space for Zero-Numbered E/S/T Docs (T04)
-- **FR-020:** Version Validator Abstract Space Awareness (depends on E2:S10:T02, which depends on E2:S09, which depends on this story)
+- **FR-020:** Version Validator Abstract Space Awareness (depends on E02:S10:T02, which depends on E2:S09, which depends on this story)
 - **E2:S10:** Doc-Init Build (+0) for New E/S/T (depends on E2:S09)
-- **E2:S10:T06:** Update Version Validator for Abstract Space Awareness (depends on E2:S10:T02, which depends on E2:S09)
+- **E02:S10:T06:** Update Version Validator for Abstract Space Awareness (depends on E02:S10:T02, which depends on E2:S09)
 
 ---
 
@@ -388,6 +388,6 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 - [ ] Create Task document template (T02)
 - [ ] Update versioning policy (T03)
 - [ ] After FR-016 completion: Define abstract space concept (T04 - FR-018)
-- [ ] After E4:S06:T03-T04: Review and optimize template structure for tier delegation (T06)
+- [ ] After E04:S06:T03-T04: Review and optimize template structure for tier delegation (T06)
 - [ ] Coordinate with E2:S09 for RW integration
 

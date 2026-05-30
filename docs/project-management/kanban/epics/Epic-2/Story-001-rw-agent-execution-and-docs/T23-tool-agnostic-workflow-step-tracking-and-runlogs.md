@@ -8,15 +8,15 @@ housekeeping_policy: keep
 
 # Epic 2, Story 1, Task 23: Tool-agnostic workflow step tracking + persisted run logs
 
-**Task ID:** E2:S01:T23  
+**Task ID:** E02:S01:T23  
 **Status:** TODO  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-05-29  
-**Last updated:** 2026-05-29 (re-housed from `E6:S07:T18` per FR-087 Wave 4 / `E4:S19:T03` investigation report)  
-**Code:** E2S01T23
+**Last updated:** 2026-05-29 (re-housed from `E06:S07:T18` per FR-087 Wave 4 / `E04:S19:T03` investigation report)  
+**Code:** E02S01T23
 
-**Historical Anchor:** `E6:S07:T18` (legacy housing under ADK analysis story)
+**Historical Anchor:** `E06:S07:T18` (legacy housing under ADK analysis story)
 
 **Task Type:** Hardening / Workflow Governance
 
@@ -31,7 +31,7 @@ Publication N/A Reason: Re-housed RW/UKW governance task; consolidated planning 
 - Identification of Windsurf/Cascade `todo_list` capability as replacement
 - Requirement for tool-agnostic workflow step tracking specification
 - Need for persisted run log mechanism for workflow resumption
-- [E4:S19:T03 investigation report](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md) §5.2
+- [E04:S19:T03 investigation report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md) §5.2
 
 ## Overview
 
@@ -57,6 +57,6 @@ Current workflow governance documentation (especially RW) mandates Cursor TODO u
 
 ## References
 
-- [Superseded source: `E6:S07:T18`](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
-- [ICW-E6S07T18-specification](../../../../implementation-cycles/ICW-E6S07T18-specification.md) (historical planning under legacy housing)
-- [E4:S19:T03 investigation report](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
+- [Superseded source: `E06:S07:T18`](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+- [ICW-E06S07T18-specification](../../../../implementation-cycles/ICW-E06S07T18-specification.md) (historical planning under legacy housing)
+- [E04:S19:T03 investigation report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)

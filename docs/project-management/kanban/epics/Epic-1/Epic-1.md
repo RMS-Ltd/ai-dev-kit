@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Story Checklist
 
-- [x] **E1:S01 – Dev Kit Versioning & RW Behaviour** - COMPLETE ✅ (v0.1.1.1+1, E2:S01:T02, E2:S01:T03)  
+- [x] **E1:S01 – Dev Kit Versioning & RW Behaviour** - COMPLETE ✅ (v0.1.1.1+1, E02:S01:T02, E02:S01:T03)  
 - [x] **E1:S02 – Package & Repo Architecture** - COMPLETE ✅ (v0.1.2.5+1)
   - Tasks: T001 ✅ (v0.1.2.1+1), T002 ✅ (v0.1.2.2+1), T003 ✅ (v0.1.2.3+1), T004 ✅ (v0.1.2.4+1), T005 ✅ (v0.1.2.5+1)
   - Story: [`Story-002-package-and-repo-architecture.md`](Story-002-package-and-repo-architecture.md)  
@@ -81,9 +81,9 @@ It defines how the repo is structured, how versioning works for the dev kit itse
 Define and implement how the dev kit uses `RC.EPIC.STORY.TASK+BUILD`, and how RW interprets versions and tasks when run in this repo.
 
 **Tasks:**
-- [x] E1:S01:T01 – Create `dev-kit-versioning-policy.md` ✅ COMPLETE (v0.1.1.1+1)  
-- [x] E1:S01:T02 – Align `version.py` and CHANGELOG with dev-kit policy ✅ COMPLETE (v0.1.1.1+1)  
-- [x] E1:S01:T03 – Update RW docs to distinguish dev-kit vs external examples ✅ COMPLETE (completed in E2:S01:T02 and E2:S01:T03)  
+- [x] E01:S01:T01 – Create `dev-kit-versioning-policy.md` ✅ COMPLETE (v0.1.1.1+1)  
+- [x] E01:S01:T02 – Align `version.py` and CHANGELOG with dev-kit policy ✅ COMPLETE (v0.1.1.1+1)  
+- [x] E01:S01:T03 – Update RW docs to distinguish dev-kit vs external examples ✅ COMPLETE (completed in E02:S01:T02 and E02:S01:T03)  
 
 **Acceptance Criteria:**
 - [x] Dev-kit versioning policy exists and is referenced by other docs ✅  
@@ -105,11 +105,11 @@ Define and implement how the dev kit uses `RC.EPIC.STORY.TASK+BUILD`, and how RW
 Clarify the modular architecture of the `ai-dev-kit` repository, ensuring that users can easily consume individual frameworks (workflow mgt, versioning, kanban) without pulling in the entire repository.
 
 **Tasks:**
-- [x] E1:S02:T01 – Analyze current package structure and dependencies ✅ COMPLETE (v0.1.2.1+1)
-- [x] E1:S02:T02 – Document modularity principles and boundaries ✅ COMPLETE (v0.1.2.2+1)
-- [x] E1:S02:T03 – Create package dependency matrix ✅ COMPLETE (v0.1.2.3+1)
-- [x] E1:S02:T04 – Document consumption patterns for each framework ✅ COMPLETE (v0.1.2.4+1)
-- [x] E1:S02:T05 – Update package READMEs with modularity information ✅ COMPLETE (v0.1.2.5+1)
+- [x] E01:S02:T01 – Analyze current package structure and dependencies ✅ COMPLETE (v0.1.2.1+1)
+- [x] E01:S02:T02 – Document modularity principles and boundaries ✅ COMPLETE (v0.1.2.2+1)
+- [x] E01:S02:T03 – Create package dependency matrix ✅ COMPLETE (v0.1.2.3+1)
+- [x] E01:S02:T04 – Document consumption patterns for each framework ✅ COMPLETE (v0.1.2.4+1)
+- [x] E01:S02:T05 – Update package READMEs with modularity information ✅ COMPLETE (v0.1.2.5+1)
 
 > Full story: [`Story-002-package-and-repo-architecture.md`](Story-002-package-and-repo-architecture.md)
 
@@ -126,12 +126,12 @@ Clarify the modular architecture of the `ai-dev-kit` repository, ensuring that u
 Establish core KB locations for architecture, PM & portfolio, and dev-kit governance. Provide a clear, maintainable documentation structure that supports the dev-kit's modular architecture and makes it easy for users to navigate and understand the repository.
 
 **Tasks:**
-- [x] E1:S03:T01 – Analyze current docs/core structure and define target structure ✅ COMPLETE (v0.1.3.1+1)
-- [x] E1:S03:T02 – Document KB structure principles and conventions ✅ COMPLETE (v0.1.3.2+1)
-- [x] E1:S03:T03 – Create KB structure migration guide ✅ COMPLETE (v0.1.3.3+1 – Phase 1 implemented, updated with canonical pattern references)
-- [x] E1:S03:T04 – Implement target KB structure ✅ COMPLETE (v0.1.3.4+1 – Phase 2 Guides Structure implemented)
-- [x] E1:S03:T05 – Create KB structure documentation ✅ COMPLETE (v0.1.3.5+1)
-- [x] E1:S03:T06 – Document scalable KB pattern for large codebases ✅ COMPLETE (v0.1.3.6+1)
+- [x] E01:S03:T01 – Analyze current docs/core structure and define target structure ✅ COMPLETE (v0.1.3.1+1)
+- [x] E01:S03:T02 – Document KB structure principles and conventions ✅ COMPLETE (v0.1.3.2+1)
+- [x] E01:S03:T03 – Create KB structure migration guide ✅ COMPLETE (v0.1.3.3+1 – Phase 1 implemented, updated with canonical pattern references)
+- [x] E01:S03:T04 – Implement target KB structure ✅ COMPLETE (v0.1.3.4+1 – Phase 2 Guides Structure implemented)
+- [x] E01:S03:T05 – Create KB structure documentation ✅ COMPLETE (v0.1.3.5+1)
+- [x] E01:S03:T06 – Document scalable KB pattern for large codebases ✅ COMPLETE (v0.1.3.6+1)
 
 > Full story: [`Story-003-core-kb-structure-for-dev-kit.md`](Story-003-core-kb-structure-for-dev-kit.md)
 

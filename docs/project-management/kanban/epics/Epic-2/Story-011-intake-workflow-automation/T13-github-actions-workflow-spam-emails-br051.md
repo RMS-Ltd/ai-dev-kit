@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 2, Story 11, Task 13: GitHub Actions workflow spam emails (BR-051)
 
-**Task ID:** E2:S11:T13  
+**Task ID:** E02:S11:T13  
 **Status:** TODO  
 **Priority:** LOW  
 **Created:** 2026-05-29  
-**Code:** E2S11T13
+**Code:** E02S11T13
 
 **Upstream:** [BR-051](../../../fr-br/BR-051-github-actions-workflow-spam-emails.md)  
-**Related:** [E2:S11:T12](T12-github-actions-workflow-bug-resolution.md) (BR-053)
+**Related:** [E02:S11:T12](T12-github-actions-workflow-bug-resolution.md) (BR-053)
 
 Publication Status: NOT_APPLICABLE
 

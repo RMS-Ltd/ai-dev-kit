@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E5:S09:T11](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
-**Assigned Task:** E5:S09:T04 — [`T04-docusaurus-navigation-fr-068.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T04-docusaurus-navigation-fr-068.md)
+**Implementing Task:** [E05:S09:T11](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+**Assigned Task:** E05:S09:T04 — [`T04-docusaurus-navigation-fr-068.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T04-docusaurus-navigation-fr-068.md)
 
 ---
 
@@ -50,7 +50,7 @@ Even with a green build, a flat or auto-generated sidebar is hard to navigate fo
 
 ## Functional Requirements
 
-- [x] **FR-068:R01** – Sidebar top-level group labels map to **named pillars** (mapping table in `portal/README.md` — **E5:S09:T04** / **S1–S2**).
+- [x] **FR-068:R01** – Sidebar top-level group labels map to **named pillars** (mapping table in `portal/README.md` — **E05:S09:T04** / **S1–S2**).
 - [x] **FR-068:R02** – Homepage lists **primary entry points** (portal index, versioning policy, framework adoption guide, Kanban governance) as links to built routes — **S3**.
 - [x] **FR-068:R03** – No dead sidebar entries (valid autogen `dirName` paths under `docs/`) — **S5**.
 - [x] **FR-068:R04** – `npm run build` remains green after IA changes — **S6** / `PORTAL_BUILD_STRICT`.

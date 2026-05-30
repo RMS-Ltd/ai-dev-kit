@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E7:S06:T05 – Workflow Script Integrity
+# E07:S06:T05 – Workflow Script Integrity
 
-**Task ID:** E7:S06:T05
+**Task ID:** E07:S06:T05
 **Status:** COMPLETE
 **Priority:** HIGH
 **Last updated:** 2026-03-25
@@ -51,7 +51,7 @@ None
 
 | Check | Result |
 |--------|--------|
-| **`parse_single_task_id`** | Accepts `E7S06T05`, `E7:S06:T05`, `E7-S06-T05`, `e7s6t5`; rejects garbage; `.strip()` applied before match. |
+| **`parse_single_task_id`** | Accepts `E07S06T05`, `E07:S06:T05`, `E7-S06-T05`, `E07S06T05`; rejects garbage; `.strip()` applied before match. |
 | **`parse_story_id` / `parse_epic_id`** | Consistent with UKW `-a` story/epic targets. |
 | **Production use** | `validate_rw_task_intent.py` imports `parse_single_task_id` (BR-056 / FR-060 path). |
 | **Doc drift** | File mixed “UKW Enhanced” / old mode names with real role = **parsing + legacy stubs**. **Remediation:** module docstring updated to point at `.cursorrules` for `-u`/`-p`/`-a`. |

@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 5, Story 9, Task 01: Docusaurus site identity and config (FR-065)
 
-**Task ID:** E5:S09:T01  
+**Task ID:** E05:S09:T01  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
 **Created:** 2026-03-30  
 **Last updated:** 2026-03-30 (v0.5.9.1+2 — FR-065 portal identity, tests, RW)  
-**Code:** E5S09T01
+**Code:** E05S09T01
 
 **Feature Request:** [FR-065 – Docusaurus site identity](../../../fr-br/FR-065-docusaurus-site-identity-and-config.md)
 
@@ -61,7 +61,7 @@ Implement **FR-065**: replace template branding and placeholder deployment metad
 
 ---
 
-## Specification (E5:S09:T01 / FR-065)
+## Specification (E05:S09:T01 / FR-065)
 
 Testable behaviors **S1–S8** are enforced by [`tests/test_portal_fr065_identity.py`](../../../../../../tests/test_portal_fr065_identity.py). **S9** (green `npm run build`): `PORTAL_BUILD_STRICT=1 pytest -m portal_build` after **FR-067**.
 

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** PENDING  
 **GitHub Issue:** [#7](https://github.com/RMS-Ltd/ai-dev-kit/issues/7) (Additional Context Comment)
 
-**Implementing Task:** [E4:S09:T07](../epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence/T07-fr010-template-task-installation-two-phase-migration.md)
+**Implementing Task:** [E04:S09:T07](../epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence/T07-fr010-template-task-installation-two-phase-migration.md)
 
 ---
 
@@ -40,7 +40,7 @@ Implement two-phase migration approach: migrate user tasks first (preserve IDs),
 2. **Phase 2: Install Template Tasks (Bump IDs)**
    - After user tasks migrated, install template tasks
    - Template tasks get IDs AFTER user tasks
-   - Example: User has E1:S01:T01-T03 → Templates start at E1:S01:T04+
+   - Example: User has E01:S01:T01-T03 → Templates start at E01:S01:T04+
    - Template tasks become actionable (not just examples)
 
 ### What problem does this solve?

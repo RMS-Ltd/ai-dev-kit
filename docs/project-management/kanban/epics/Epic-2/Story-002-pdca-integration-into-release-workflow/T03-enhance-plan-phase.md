@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task 003 – Enhance PLAN Phase (Add objectives and verification plans to changelog)
 
-**Task:** E2:S02:T03  
+**Task:** E02:S02:T03  
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Created:** 2025-12-03  
@@ -89,9 +89,9 @@ Enhance the PLAN phase of the Release Workflow by adding objectives, expected ou
 
 ## Related Tasks
 
-- E2:S02:T01 – Add CHECK Phase (coordinates with verification plan)
-- E2:S02:T02 – Add ACT Phase (coordinates with expected outcomes)
-- E2:S02:T05 – Create PDCA templates and examples (includes PLAN templates)
+- E02:S02:T01 – Add CHECK Phase (coordinates with verification plan)
+- E02:S02:T02 – Add ACT Phase (coordinates with expected outcomes)
+- E02:S02:T05 – Create PDCA templates and examples (includes PLAN templates)
 
 ---
 

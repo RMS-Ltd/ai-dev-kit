@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.7.103+0 (mitigation shipped 2026-04-19)  
 **Code:** BR-067  
 
-**Implementing Task:** [E2:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Implementing Task:** [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 Canonical dev-kit versioning policy treats **BUILD `+0`** as valid for **first-time Epic/Story/Task documentation** (“doc-init”, abstract-space / documentation-only introduction). In practice, **Release Workflow** and **`validate_version_bump.py`** steer agents and automation toward **`+1`** for “normal” new-task releases—even when the release payload is **documentation and Kanban intake only** (no functional code change).
 
-**Observed example (2026-04-19):** Three consecutive **`RW -d … --art`** releases for **E6:S09:T01**, **T02**, **T03** were versioned **`0.6.9.{1,2,3}+1`** (BUILD **1** each) instead of using **`+0`** for doc-init-eligible commits where policy would treat the drop as documentation-first establishment of the task anchor.
+**Observed example (2026-04-19):** Three consecutive **`RW -d … --art`** releases for **E06:S09:T01**, **T02**, **T03** were versioned **`0.6.9.{1,2,3}+1`** (BUILD **1** each) instead of using **`+0`** for doc-init-eligible commits where policy would treat the drop as documentation-first establishment of the task anchor.
 
 This is an **architectural / policy enforcement gap**, not merely a one-off typo: contributors cannot rely on **`+0`** without fighting defaults.
 

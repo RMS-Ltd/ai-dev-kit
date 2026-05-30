@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E4:S11:T07](../epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
+**Implementing Task:** [E04:S11:T07](../epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
 
 ---
 
@@ -121,7 +121,7 @@ This feature is needed:
 ## Use Cases
 
 **Primary Use Case:**
-1. Developer creates a new Task (e.g., E4:S06:T11)
+1. Developer creates a new Task (e.g., E04:S06:T11)
 2. Task doc is created with all required fields (ID, scope, acceptance criteria, etc.)
 3. Doc-init (`+0`) establishes version anchor
 4. RW Step 1 can locate the task doc and determine correct version

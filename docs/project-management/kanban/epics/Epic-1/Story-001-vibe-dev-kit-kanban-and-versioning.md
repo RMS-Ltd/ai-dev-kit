@@ -85,11 +85,11 @@ This structure is:
 ### Task 4 – Align RW with Dev-Kit Versioning ✅ COMPLETE
 
 - [x] Update `release-workflow-agent-execution.md` to:
-  - ✅ Clarify that examples using `0.9.21.3+2` are **Confidentia/fynd.deals examples**, not dev-kit releases (completed in E2:S01:T02)
-  - ✅ Add a short note about how RW should be interpreted when running directly in the `ai-dev-kit` repo (completed in E2:S01:T02)
+  - ✅ Clarify that examples using `0.9.21.3+2` are **Confidentia/fynd.deals examples**, not dev-kit releases (completed in E02:S01:T02)
+  - ✅ Add a short note about how RW should be interpreted when running directly in the `ai-dev-kit` repo (completed in E02:S01:T02)
 
 - [x] Ensure `.cursorrules` (when added for this repo) uses the correct dev-kit version schema.
-  - ✅ `.cursorrules` RW trigger section aligned with dev-kit policy (completed in E2:S01:T03)
+  - ✅ `.cursorrules` RW trigger section aligned with dev-kit policy (completed in E02:S01:T03)
 
 
 **Status:** ✅ **COMPLETE** - RW docs updated to distinguish dev-kit vs external examples. All examples tagged with `[Example: Confidentia/fynd.deals]` or `[Example: ai-dev-kit]` labels. Cursorrules section aligned with dev-kit versioning policy.

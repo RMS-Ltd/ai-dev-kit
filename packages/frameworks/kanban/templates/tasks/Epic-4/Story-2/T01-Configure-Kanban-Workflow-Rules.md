@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E4:S2:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E04:S02:T01`)
 
 **Full Task ID:** `E04:S02:T01`
 
@@ -34,8 +34,8 @@ Configure Kanban workflow rules for the {PROJECT_NAME} project. Define and imple
 
 ## Input
 
-- Kanban board structure (from E4:S1:T01)
-- Kanban column configuration (from E4:S1:T02)
+- Kanban board structure (from E04:S01:T01)
+- Kanban column configuration (from E04:S01:T02)
 - Workflow requirements and constraints
 - Team workflow preferences
 - ai-dev-kit Kanban workflow rules (if adopting)
@@ -83,13 +83,13 @@ Configure Kanban workflow rules for the {PROJECT_NAME} project. Define and imple
 ## Dependencies
 
 **Depends On:**
-- E4:S1:T01: Set up Kanban board structure (rules use board structure)
-- E4:S1:T02: Configure Kanban columns and workflows (rules extend column configuration)
+- E04:S01:T01: Set up Kanban board structure (rules use board structure)
+- E04:S01:T02: Configure Kanban columns and workflows (rules extend column configuration)
 
 **Blocks:**
-- E4:S2:T02: Set up workflow automation (automation enforces rules)
-- E4:S2:T03: Create workflow metrics and reporting (metrics track rule compliance)
-- E4:S2:T04: Document workflow configuration (documentation includes rules)
+- E04:S02:T02: Set up workflow automation (automation enforces rules)
+- E04:S02:T03: Create workflow metrics and reporting (metrics track rule compliance)
+- E04:S02:T04: Document workflow configuration (documentation includes rules)
 
 **Parallel Development Candidacy:** Blocked (depends on E4:S1 tasks)
 
@@ -98,9 +98,9 @@ Configure Kanban workflow rules for the {PROJECT_NAME} project. Define and imple
 ## Related Work
 
 **Related Tasks:**
-- E4:S2:T02: Set up workflow automation (automation enforces rules)
-- E4:S2:T03: Create workflow metrics and reporting (metrics track rule compliance)
-- E4:S2:T04: Document workflow configuration (documentation includes rules)
+- E04:S02:T02: Set up workflow automation (automation enforces rules)
+- E04:S02:T03: Create workflow metrics and reporting (metrics track rule compliance)
+- E04:S02:T04: Document workflow configuration (documentation includes rules)
 
 **Related Stories:**
 - E4:S2: Kanban Workflow Configuration (this story)

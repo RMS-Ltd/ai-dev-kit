@@ -1,7 +1,7 @@
 # UKW Changes Summary: 2026-01-05
 
 **UKW Run:** 2026-01-05  
-**Perpetual Task:** E6:S06:T08 (Update Kanban Workflow - UKW)  
+**Perpetual Task:** E06:S06:T08 (Update Kanban Workflow - UKW)  
 **Version:** v0.6.6.8+14
 
 ---
@@ -35,7 +35,7 @@ This UKW run synchronized kanban documentation to reflect the completion of E4:S
 
 ### Perpetual UKW Task Updates
 
-**E6:S06:T08 – Update Kanban Workflow (UKW):**
+**E06:S06:T08 – Update Kanban Workflow (UKW):**
 - **Last updated:** Updated to 2026-01-05 (v0.6.6.8+14)
 - **Version:** Updated to v0.6.6.8+14
 - **Progress:** Updated to reflect E4:S12 kanban synchronization
@@ -64,4 +64,4 @@ This UKW run synchronized kanban documentation to reflect the completion of E4:S
 ## Related Work
 
 - **E4:S12:** FR/BR/UXR Repository Stories (S00 Pattern) - Now COMPLETE
-- **E6:S06:T08:** Update Kanban Workflow (UKW) - Perpetual task for kanban synchronization
+- **E06:S06:T08:** Update Kanban Workflow (UKW) - Perpetual task for kanban synchronization

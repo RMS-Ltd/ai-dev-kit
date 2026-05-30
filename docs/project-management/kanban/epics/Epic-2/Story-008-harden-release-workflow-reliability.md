@@ -39,21 +39,21 @@ Improve Release Workflow reliability by:
 
 ## Task Checklist
 
-- [x] **E2:S08:T00 – Story creation and FR-015 intake** ✅ COMPLETE (v0.2.8.0+0)
-- [x] **E2:S08:T01 – Analyze atomic steps for deterministic vs agentic approach** ✅ COMPLETE (v0.2.8.1+1)
-- [x] **E2:S08:T02 – Create framework-agnostic Kanban update script** ✅ COMPLETE (v0.2.8.2+1)
-- [x] **E2:S08:T03 – Make Step 7 mandatory and blocking** ✅ COMPLETE (v0.2.8.3+1)
-- [x] **E2:S08:T04 – Add validation step for Kanban updates** ✅ COMPLETE (v0.2.8.4+1)
-- [x] **E2:S08:T05 – Implement error handling and recovery guidance** ✅ COMPLETE (v0.2.8.5+1)
-- [x] **E2:S08:T06 – Update RW documentation and agent execution guide** ✅ COMPLETE (v0.2.8.6+1)
-- [x] **E2:S08:T07 – Testing and validation** ✅ COMPLETE (v0.2.8.7+1)
-- [ ] **E2:S08:T08 – FR-059: Enhanced workflow forensic logging and rollback hardening** - TODO
+- [x] **E02:S08:T00 – Story creation and FR-015 intake** ✅ COMPLETE (v0.2.8.0+0)
+- [x] **E02:S08:T01 – Analyze atomic steps for deterministic vs agentic approach** ✅ COMPLETE (v0.2.8.1+1)
+- [x] **E02:S08:T02 – Create framework-agnostic Kanban update script** ✅ COMPLETE (v0.2.8.2+1)
+- [x] **E02:S08:T03 – Make Step 7 mandatory and blocking** ✅ COMPLETE (v0.2.8.3+1)
+- [x] **E02:S08:T04 – Add validation step for Kanban updates** ✅ COMPLETE (v0.2.8.4+1)
+- [x] **E02:S08:T05 – Implement error handling and recovery guidance** ✅ COMPLETE (v0.2.8.5+1)
+- [x] **E02:S08:T06 – Update RW documentation and agent execution guide** ✅ COMPLETE (v0.2.8.6+1)
+- [x] **E02:S08:T07 – Testing and validation** ✅ COMPLETE (v0.2.8.7+1)
+- [ ] **E02:S08:T08 – FR-059: Enhanced workflow forensic logging and rollback hardening** - TODO
 
 ---
 
 ## Tasks
 
-### E2:S08:T00 – Story creation and FR-015 intake
+### E02:S08:T00 – Story creation and FR-015 intake
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  
@@ -75,15 +75,15 @@ Improve Release Workflow reliability by:
 
 ---
 
-### E2:S08:T01 – Analyze atomic steps for deterministic vs agentic approach
+### E02:S08:T01 – Analyze atomic steps for deterministic vs agentic approach
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  
-**Dependencies:** E2:S08:T00  
+**Dependencies:** E02:S08:T00  
 **Blocker:** None
 
 **Scope:**
-Analyze RW Step 7 (Auto-update Kanban Docs) to decompose it into atomic sub-steps and classify each as deterministic (targeting ≈100% reliability) or agentic (requiring LLM/agent judgement). Produce a concrete, testable blueprint for implementing FR-015 across E2:S08:T02–T07.
+Analyze RW Step 7 (Auto-update Kanban Docs) to decompose it into atomic sub-steps and classify each as deterministic (targeting ≈100% reliability) or agentic (requiring LLM/agent judgement). Produce a concrete, testable blueprint for implementing FR-015 across E02:S08:T02–T07.
 
 **Input:**
 - FR-015 requirements
@@ -123,7 +123,7 @@ Created comprehensive analysis document (`packages/frameworks/workflow mgt/docs/
 - **Agentic:** Fallback path resolution, non-canonical prose updates, repair decisions, recovery guidance
 
 **Implementation Blueprint:**
-- Directly informs E2:S08:T02–T07 implementation approach
+- Directly informs E02:S08:T02–T07 implementation approach
 - Defines test matrix (canonical flows, non-canonical flows, hard-fail flows)
 - Establishes validation criteria and error handling patterns
 
@@ -145,11 +145,11 @@ Created comprehensive analysis document (`packages/frameworks/workflow mgt/docs/
 
 ---
 
-### E2:S08:T02 – Create framework-agnostic Kanban update script
+### E02:S08:T02 – Create framework-agnostic Kanban update script
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  
-**Dependencies:** E2:S08:T01  
+**Dependencies:** E02:S08:T01  
 **Blocker:** None
 
 **Scope:**
@@ -218,11 +218,11 @@ Created framework-agnostic Kanban update script (`packages/frameworks/workflow m
 
 ---
 
-### E2:S08:T03 – Make Step 7 mandatory and blocking
+### E02:S08:T03 – Make Step 7 mandatory and blocking
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  
-**Dependencies:** E2:S08:T02  
+**Dependencies:** E02:S08:T02  
 **Blocker:** None
 
 **Scope:**
@@ -271,11 +271,11 @@ Updated `release-workflow.yaml` Step 7 configuration to harden Kanban docs updat
 
 ---
 
-### E2:S08:T04 – Add validation step for Kanban updates
+### E02:S08:T04 – Add validation step for Kanban updates
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  
-**Dependencies:** E2:S08:T03  
+**Dependencies:** E02:S08:T03  
 **Blocker:** None
 
 **Scope:**
@@ -349,11 +349,11 @@ Enhanced `update_kanban_docs.py` validation function to implement comprehensive 
 
 ---
 
-### E2:S08:T05 – Implement error handling and recovery guidance
+### E02:S08:T05 – Implement error handling and recovery guidance
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  
-**Dependencies:** E2:S08:T04  
+**Dependencies:** E02:S08:T04  
 **Blocker:** None
 
 **Scope:**
@@ -436,11 +436,11 @@ Enhanced `update_kanban_docs.py` with comprehensive error handling and recovery 
 
 ---
 
-### E2:S08:T06 – Update RW documentation and agent execution guide
+### E02:S08:T06 – Update RW documentation and agent execution guide
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  
-**Dependencies:** E2:S08:T05  
+**Dependencies:** E02:S08:T05  
 **Blocker:** None
 
 **Scope:**
@@ -497,11 +497,11 @@ Updated Release Workflow agent execution guide (`packages/frameworks/workflow mg
 
 ---
 
-### E2:S08:T07 – Testing and validation
+### E02:S08:T07 – Testing and validation
 
 **Status:** IN PROGRESS
 **Priority:** HIGH  
-**Dependencies:** E2:S08:T06  
+**Dependencies:** E02:S08:T06  
 **Blocker:** None
 
 **Scope:**

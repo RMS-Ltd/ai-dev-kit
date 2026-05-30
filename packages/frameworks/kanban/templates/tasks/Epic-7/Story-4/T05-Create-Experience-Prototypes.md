@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E7:S4:T5` (e.g., `E4:S11:T01`)
+**Format:** `E07:S04:T05` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E07:S04:T05`
 
@@ -71,10 +71,10 @@ Create experience prototypes for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E7:S4:T04
+- E07:S04:T04
 
 **Blocks:**
-- E7:S4:T06
+- E07:S04:T06
 
 **Blocked By:**
 - [What blocks this task]

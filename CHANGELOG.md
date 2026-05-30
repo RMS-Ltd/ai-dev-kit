@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.9+1] - 30-05-26
+## [0.4.19.9+2] - 30-05-26
 
-E4:S19:T09 (UXR-014) — Kanban init: two-digit default E/S/T identifier formatting UXR; atomic intake + task **E4:S19:T09** + board wiring. SemVer **v0.4.826+1**.
+E04:S19:T09 (UXR-014) — Two-digit E/S/T write-default: `est_format.py`, policy/guides, full kanban corpus normalization, optional lint. SemVer **v0.4.827+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.9+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.9+2.md)
 
 ---
 

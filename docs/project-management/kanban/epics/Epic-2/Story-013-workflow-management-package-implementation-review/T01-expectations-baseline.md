@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E2:S13:T01 – Establish Expectations Baseline for Workflow Management Package
+# E02:S13:T01 – Establish Expectations Baseline for Workflow Management Package
 
-**Task ID:** E2:S13:T01  
+**Task ID:** E02:S13:T01  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E2 – Workflow Management Framework  
@@ -141,8 +141,8 @@ Define the implementation expectations baseline for the Workflow Management fram
 **Trigger:** User types "RW" or "rw" (case-insensitive) in AI assistant
 
 **Context Detection:**
-- **UKW Context:** User ran "UKW" then "RW" → Attributes to perpetual UKW task (E2:S16:T03)
-- **CMW Context:** User ran "CMW" then "RW" → Attributes to perpetual CMW task (E2:S16:T03)
+- **UKW Context:** User ran "UKW" then "RW" → Attributes to perpetual UKW task (E02:S16:T03)
+- **CMW Context:** User ran "CMW" then "RW" → Attributes to perpetual CMW task (E02:S16:T03)
 - **Normal Context:** Reads Story file to identify completed task
 
 **Agent Execution Pattern:**
@@ -161,7 +161,7 @@ Define the implementation expectations baseline for the Workflow Management fram
 **Key Features:**
 - Agent-driven execution (requires intelligent reasoning)
 - Bottom-up approach (Tasks → Stories → Epics → Board)
-- Perpetual task attribution (E2:S16:T03)
+- Perpetual task attribution (E02:S16:T03)
 - MoSCOW prioritization (updated LAST)
 
 **The 8 Steps:**
@@ -207,7 +207,7 @@ Define the implementation expectations baseline for the Workflow Management fram
 - Manual: User types "CMW" or "cmw" (case-insensitive)
 - Cron: Scheduled execution (recommended: weekly)
 
-**Perpetual Task Attribution:** E2:S16:T03
+**Perpetual Task Attribution:** E02:S16:T03
 
 ---
 
@@ -468,7 +468,7 @@ Define the implementation expectations baseline for the Workflow Management fram
 **Pattern:**
 - Projects create perpetual UKW task for UKW release attribution
 - Task must have `perpetual_task: true` or `Task Type: Perpetual Maintenance` flag
-- Task ID varies by project (e.g., E2:S16:T03 in ai-dev-kit)
+- Task ID varies by project (e.g., E02:S16:T03 in ai-dev-kit)
 - BUILD number = UKW run count (high BUILD numbers expected and valid)
 - RW detects UKW context and auto-attributes to perpetual task
 
@@ -481,7 +481,7 @@ Define the implementation expectations baseline for the Workflow Management fram
 **Pattern:**
 - Projects create perpetual CMW task for CMW maintenance release attribution
 - Task must have `Task Type: Perpetual Maintenance` flag
-- Task ID varies by project (e.g., E2:S16:T03 in ai-dev-kit)
+- Task ID varies by project (e.g., E02:S16:T03 in ai-dev-kit)
 - BUILD number = CMW run count (high BUILD numbers expected and valid)
 - RW detects CMW context and auto-attributes to perpetual task
 
@@ -652,6 +652,6 @@ Define the implementation expectations baseline for the Workflow Management fram
 ## Notes
 
 - Expectations baseline extracted from package README and documentation
-- Pattern follows E4:S16:T01 (Kanban package expectations baseline)
+- Pattern follows E04:S16:T01 (Kanban package expectations baseline)
 - Baseline will be used for component inventory (T02) and behavior validation (T03)
 - RC readiness review will compare actual implementation against this baseline

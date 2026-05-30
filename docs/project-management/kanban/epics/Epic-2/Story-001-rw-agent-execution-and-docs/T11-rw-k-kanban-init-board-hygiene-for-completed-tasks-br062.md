@@ -6,16 +6,16 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T11 - RW Step 7 kboard hygiene for completed tasks (BR-062)
+# Task E02:S01:T11 - RW Step 7 kboard hygiene for completed tasks (BR-062)
 
-**Task ID:** E2:S01:T11  
+**Task ID:** E02:S01:T11  
 **Status:** COMPLETE  
 **Priority:** CRITICAL  
 **Created:** 2026-04-07  
 **Last updated:** 2026-04-10 (scope extended: full-mode Step 7 prune for COMPLETE rows + regression coverage validated)  
 **Version Anchor:** v0.2.1.11+2  
 **Version:** v0.2.1.11+2  
-**Code:** E2S01T11
+**Code:** E02S01T11
 
 ---
 

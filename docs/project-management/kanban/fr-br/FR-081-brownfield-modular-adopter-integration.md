@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer (design session)  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM  
-**Status:** IMPLEMENTED (2026-05-29 — E6:S09:T02)
+**Status:** IMPLEMENTED (2026-05-29 — E06:S09:T02)
 
-**Implementing Task:** [E6:S09:T02](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
+**Implementing Task:** [E06:S09:T02](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
 
 ---
 
@@ -46,10 +46,10 @@ Brownfield teams need to **compose** workflows, Kanban, versioning, and docs lif
 - [x] **FR-081-NF1:** Documentation tone must **respect host-project sovereignty** (aligns with ADR-003 **Decision §2**).
 - [x] **FR-081-NF2:** Changes must remain consistent with **[FR-080](./FR-080-greenfield-installation-process.md)** greenfield narrative by **cross-linking**, not merging incompatible instructions into one undifferentiated path.
 
-### Implementation evidence (E6:S09:T02)
+### Implementation evidence (E06:S09:T02)
 
 - [`INSTALL_IN_YOUR_PROJECT.md`](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) — brownfield SoT: non-goals, matrices, RW-only path, worked example, tradeoff table, ADR-003 anchor.
-- [`IPP-E6S09T02`](../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md) — planning package and §8 deferrals.
+- [`IPP-E06S09T02`](../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md) — planning package and §8 deferrals.
 - User-docs cross-links (installation guide, rollout checklist, repo-structure, scope stubs).
 - [`packages/frameworks/workflow mgt/README.md`](../../../packages/frameworks/workflow%20mgt/README.md), [`packages/frameworks/kanban/README.md`](../../../packages/frameworks/kanban/README.md) — brownfield messaging.
 - Installers: `install_release_workflow.py` epilog; `install_kanban_framework.py` fresh-mode brownfield warning.

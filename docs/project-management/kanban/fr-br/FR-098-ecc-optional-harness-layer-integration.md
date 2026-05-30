@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** LOW  
 **Status:** IMPLEMENTED
 
-**Implementing Tasks:** [E6:S09:T04](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) (Phase 0), [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) (Phase 1), [E6:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (Phases 2–5)
+**Implementing Tasks:** [E06:S09:T04](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) (Phase 0), [E06:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) (Phase 1), [E06:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (Phases 2–5)
 
 ---
 
@@ -47,8 +47,8 @@ Today there is **no documented integration path**, no compatibility contract, an
 - [x] **FR-098-F2:** Produce a **compatibility matrix** classifying ADK vs ECC surfaces as *keep*, *merge*, *exclude*, or *conflict-resolve*.
 - [x] **FR-098-F3:** Define **`ecc-adk-bridge.yaml`** template (hook profile, disabled hooks, conflict rules, ADK skill pack path, pinned ECC version).
 - [x] **FR-098-F4:** Publish **ADK workflow skill pack** in ECC-compatible `SKILL.md` format (minimum: `adk-release-workflow`; target set: RW, UKW, IPW, intake, version bump). — **COMPLETE** (**v0.6.9.5+2**)
-- [x] **FR-098-F5:** Extend **greenfield/brownfield install docs** with optional "Harness Execution Layer (ECC)" step—clearly optional, not required for ADK correctness. — **IMPLEMENTED** (E6:S09:T06)
-- [x] **FR-098-F6:** Document **layered architecture** (ADK = project OS; ECC = harness OS) in adopter-facing user-docs and vision cross-links. — **IMPLEMENTED** (cheatsheet §11, E6:S09:T06)
+- [x] **FR-098-F5:** Extend **greenfield/brownfield install docs** with optional "Harness Execution Layer (ECC)" step—clearly optional, not required for ADK correctness. — **IMPLEMENTED** (E06:S09:T06)
+- [x] **FR-098-F6:** Document **layered architecture** (ADK = project OS; ECC = harness OS) in adopter-facing user-docs and vision cross-links. — **IMPLEMENTED** (cheatsheet §11, E06:S09:T06)
 
 ### Non-Functional Requirements
 
@@ -101,12 +101,12 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 
 | Phase | Name | Primary deliverable | Task anchor |
 |-------|------|---------------------|-------------|
-| **0** | Compatibility spike | Compatibility matrix + procedure | **E6:S09:T04** (this intake) |
-| **1** | ADK workflow skill pack | ECC-format skills for RW/UKW/IPW/intake | **E6:S09:T05** (shipped) |
-| **2** | Installer bridge | Optional greenfield step + `ecc-adk-bridge.yaml` | **E6:S09:T06** |
-| **3** | Hook alignment | SessionStart context, quality-gate pre-RW | **E6:S09:T06** |
-| **4** | AgentShield bridge | Optional RW Step 9 security scan | **E6:S09:T06** |
-| **5** | Book / public positioning | Head First AI-Assisted Development sidebar | **E6:S09:T06** |
+| **0** | Compatibility spike | Compatibility matrix + procedure | **E06:S09:T04** (this intake) |
+| **1** | ADK workflow skill pack | ECC-format skills for RW/UKW/IPW/intake | **E06:S09:T05** (shipped) |
+| **2** | Installer bridge | Optional greenfield step + `ecc-adk-bridge.yaml` | **E06:S09:T06** |
+| **3** | Hook alignment | SessionStart context, quality-gate pre-RW | **E06:S09:T06** |
+| **4** | AgentShield bridge | Optional RW Step 9 security scan | **E06:S09:T06** |
+| **5** | Book / public positioning | Head First AI-Assisted Development sidebar | **E06:S09:T06** |
 
 ---
 
@@ -167,7 +167,7 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 - Epic: Epic 6 — Framework Management
 - Story: Story 9 — AI Dev Kit installation and adopter integration
 - Task: T04 — ECC harness layer Phase 0 compatibility evaluation (FR-098)
-- Version: **v0.6.9.5+1** (intermediate doc release — SemVer strategy; E6:S09:T05 `--art`)
+- Version: **v0.6.9.5+1** (intermediate doc release — SemVer strategy; E06:S09:T05 `--art`)
 
 **Kanban Links:**
 
@@ -183,15 +183,15 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 - Closest ECC surfaces (`git-workflow`, `/plan`, `project-flow-ops`) are generic and may **conflict** with ADK rules—bridge config must defer to ADK for git and release semantics.
 - ECC Pro / GitHub App is out of scope for OSS integration docs unless explicitly requested later.
 
-### Phase 0 implementation evidence (E6:S09:T04)
+### Phase 0 implementation evidence (E06:S09:T04)
 
 - [Integration specification](../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) — normative contract + MIT attribution
 - [Phase 0 evaluation](../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) — matrix, procedure, **GO** for Phase 1
 - [Bridge template](../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
-- [IPP-E6S09T04](../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
-- Phase 1 **COMPLETE:** [E6:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E6S09T05](../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
+- [IPP-E06S09T04](../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md)
+- Phase 1 **COMPLETE:** [E06:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E06S09T05](../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
 - Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
-- **Phases 2–5:** [E6:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — **COMPLETE** **v0.6.9.6+3** (dogfood T8 on `throwaway/ecc-dogfood-e6s09t06`; dry-run only)
+- **Phases 2–5:** [E06:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — **COMPLETE** **v0.6.9.6+3** (dogfood T8 on `throwaway/ecc-dogfood-E06S09T06`; dry-run only)
 
 ---
 

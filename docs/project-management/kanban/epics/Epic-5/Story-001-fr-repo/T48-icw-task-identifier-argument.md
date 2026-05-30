@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 48: ICW Task Identifier Argument
 
-**Task ID:** E5:S01:T48  
+**Task ID:** E05:S01:T48  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Completed:** 2026-03-11  
 **Last updated:** 2026-03-11 (v0.5.1.48+1 – Implementation complete and validated)  
 **Version:** v0.5.1.48+1  
-**Code:** E5S01T48
+**Code:** E05S01T48
 
-**Repository Pattern:** FR-048 = E5:S01:T48 (first build: v0.5.1.48+0, implementation: v0.5.1.48+1)
+**Repository Pattern:** FR-048 = E05:S01:T48 (first build: v0.5.1.48+0, implementation: v0.5.1.48+1)
 
 ---
 
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 ### 🎯 Implemented Features
 
 #### **Core Functionality**
-- **✅ Task Identifier Parsing:** Support for E5:S01:T47, E5S01T47, T47 formats
+- **✅ Task Identifier Parsing:** Support for E05:S01:T47, E05S01T47, T47 formats
 - **✅ Task Validation:** Kanban task existence checking and validation
 - **✅ CLI Enhancement:** Required --task argument with argparse integration
 - **✅ Planning Mode Integration:** Extended validation to require task identifier
@@ -107,7 +107,7 @@ This task:
 
 ## Deliverable
 
-1. This task document as the canonical repository anchor for FR-048 (`E5:S01:T48`).
+1. This task document as the canonical repository anchor for FR-048 (`E05:S01:T48`).
 2. FR-048 linked from the FR repository story checklist and from this task.
 3. A clear description of the ICW task identifier argument requirement sufficient for implementation tasks to:
    - Implement task identifier argument parsing
@@ -119,8 +119,8 @@ This task:
 
 ## Acceptance Criteria
 
-- [x] Task document exists and is linked from the FR Repo story checklist as **E5:S01:T48**.
-- [x] FR-048 is created and explicitly assigned to E5:S01:T48.
+- [x] Task document exists and is linked from the FR Repo story checklist as **E05:S01:T48**.
+- [x] FR-048 is created and explicitly assigned to E05:S01:T48.
 - [x] The ICW task identifier argument requirement is described clearly enough here and in FR-048 to support separate implementation tasks.
 - [x] Implementation is complete with task identifier parsing, validation, and CLI enhancement.
 - [x] ICW requires task identifier argument when invoked in planning mode.
@@ -130,7 +130,7 @@ This task:
 
 ## Version Anchor
 
-- **First Build:** v0.5.1.48+0 (this release) anchors FR-048 to E5:S01:T48 with documentation-only changes.
+- **First Build:** v0.5.1.48+0 (this release) anchors FR-048 to E05:S01:T48 with documentation-only changes.
 - Subsequent functional work for ICW task identifier should use `BUILD > 0` (e.g. `v0.5.1.48+1`, `+2`, …).
 
 ---
@@ -138,7 +138,7 @@ This task:
 ## Related Work
 
 - **FR-048:** ICW Task Identifier Argument.
-- **E5:S01:T40:** Implementation Cycle Workflow (ICW) - Base ICW implementation.
+- **E05:S01:T40:** Implementation Cycle Workflow (ICW) - Base ICW implementation.
 - **FR-040:** Implementation Cycle Workflow (ICW) - Original ICW feature request.
 
 ---

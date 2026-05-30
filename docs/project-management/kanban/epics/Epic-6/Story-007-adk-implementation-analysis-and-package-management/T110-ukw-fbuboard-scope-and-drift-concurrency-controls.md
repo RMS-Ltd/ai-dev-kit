@@ -8,16 +8,16 @@ housekeeping_policy: keep
 
 # Epic 6, Story 7, Task 110: UKW fbuboard scope + concurrency/temporal-drift controls
 
-**Task ID:** E6:S07:T110  
+**Task ID:** E06:S07:T110  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-09  
-**Code:** E6S07T110
+**Code:** E06S07T110
 
 **Upstream:** [FR-076 – UKW scope expansion to fbuboard with concurrency and temporal-drift controls](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 
-**Coordinates:** [E2:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [E6:S07:T108](T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
+**Coordinates:** [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [E06:S07:T108](T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
 
 ---
 

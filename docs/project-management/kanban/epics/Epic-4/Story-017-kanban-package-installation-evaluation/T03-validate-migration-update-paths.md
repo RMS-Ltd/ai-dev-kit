@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S17:T03 – Validate Migration/Update Paths
+# E04:S17:T03 – Validate Migration/Update Paths
 
-**Task ID:** E4:S17:T03  
+**Task ID:** E04:S17:T03  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E4 – Kanban Framework  
@@ -336,11 +336,11 @@ Validate migration and update paths for the Kanban framework package to ensure u
 
 ## Related Work
 
-- **E4:S17:T01:** Enumerate supported installation paths (completed)
-- **E4:S17:T02:** Validate fresh install steps (completed)
-- **E4:S17:T04:** Verify post-install configuration and validation steps (next task)
-- **E4:S17:T05:** Document failure modes and rollback guidance
-- **E4:S17:T06:** Capture documentation gaps and improvements
+- **E04:S17:T01:** Enumerate supported installation paths (completed)
+- **E04:S17:T02:** Validate fresh install steps (completed)
+- **E04:S17:T04:** Verify post-install configuration and validation steps (next task)
+- **E04:S17:T05:** Document failure modes and rollback guidance
+- **E04:S17:T06:** Capture documentation gaps and improvements
 
 ---
 

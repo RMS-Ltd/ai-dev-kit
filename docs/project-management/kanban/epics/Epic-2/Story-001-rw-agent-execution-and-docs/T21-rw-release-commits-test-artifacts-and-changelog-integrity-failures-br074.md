@@ -6,25 +6,25 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E2:S01:T21 — RW Release Commits Test Artifacts, Deletes Prior-Build Changelog, Emits Version Typo (BR-074)
+# E02:S01:T21 — RW Release Commits Test Artifacts, Deletes Prior-Build Changelog, Emits Version Typo (BR-074)
 
 **Status:** COMPLETE ✅ COMPLETE (v0.2.1.21+1)
 **Priority:** HIGH
 **Last updated:** 2026-05-17
 **Version:** v0.2.1.21+1
-**Code:** E2S01T21
+**Code:** E02S01T21
 
 ---
 
 ## Task ID
 
-**Task ID:** E2:S01:T21
+**Task ID:** E02:S01:T21
 
 ---
 
 ## Scope
 
-Fix three deterministic integrity failures discovered during the `v0.6.6.63+2` release of E6:S06:T63:
+Fix three deterministic integrity failures discovered during the `v0.6.6.63+2` release of E06:S06:T63:
 
 1. **Test artifacts committed to version control.** `test_rw_integration.py` writes simulation journal artifacts to `docs/journals/` (the production docs tree). RW Step 8 (`git add -A`) stages and commits them, polluting the operator-facing documentation directory with files showing `"status": "failed"`.
 
@@ -113,8 +113,8 @@ All three defects will recur on every same-task BUILD > 1 release until the unde
 
 **Related Tasks:**
 
-- **[E6:S06:T63: RW Recovery Journal and Rollback Contract](../Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)** — **Relationship Type:** Informs — **Context:** T63's integration test produced the committed artifacts; T63's RW run exposed the changelog and version-typo defects.
-- **[E2:S01:T18: RW Step 8 Stage Completeness Guardrails](../Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md)** — **Relationship Type:** Coordinates With — **Context:** T18 added stage-file completeness guardrails; BR-074 extends that work by identifying artifact-boundary gaps in what `git add -A` stages.
+- **[E06:S06:T63: RW Recovery Journal and Rollback Contract](../Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)** — **Relationship Type:** Informs — **Context:** T63's integration test produced the committed artifacts; T63's RW run exposed the changelog and version-typo defects.
+- **[E02:S01:T18: RW Step 8 Stage Completeness Guardrails](../Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md)** — **Relationship Type:** Coordinates With — **Context:** T18 added stage-file completeness guardrails; BR-074 extends that work by identifying artifact-boundary gaps in what `git add -A` stages.
 
 **Related BR/FR Documents:**
 
@@ -128,7 +128,7 @@ All three defects will recur on every same-task BUILD > 1 release until the unde
 - [BR-074: RW release commits test artifacts and changelog integrity failures](../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md) — *Bidirectional: BR-074 links back to this task in its Implementing Task section.*
 
 **Related Tasks:**
-- [E6:S06:T63: RW Recovery Journal and Rollback Contract](../Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — *Bidirectional: T63's task doc references BR-038 which spawned the recovery-journal scope where these defects surfaced.*
+- [E06:S06:T63: RW Recovery Journal and Rollback Contract](../Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — *Bidirectional: T63's task doc references BR-038 which spawned the recovery-journal scope where these defects surfaced.*
 
 ---
 

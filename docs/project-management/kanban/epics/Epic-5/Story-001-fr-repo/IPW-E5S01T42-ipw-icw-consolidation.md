@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E5:S01:T42 — Planning: Spec, Tests, Implementation Plan (IPW)
+# E05:S01:T42 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [T42-implementation-planning-workflow-ipw.md](T42-implementation-planning-workflow-ipw.md) **(E5:S01:T42)**  
+**Host Task:** [T42-implementation-planning-workflow-ipw.md](T42-implementation-planning-workflow-ipw.md) **(E05:S01:T42)**  
 **Planning for:** [FR-042 — Implementation Planning Workflow (IPW)](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)  
 **Status:** Planning artifact (implementation tracked in host task deliverables)
 

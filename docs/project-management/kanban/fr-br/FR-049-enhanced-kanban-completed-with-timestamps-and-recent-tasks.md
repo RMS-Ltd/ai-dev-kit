@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Feature Request FR-049: Enhanced kanban-completed.md with Timestamps and Recent Tasks Tracking
 
 **FR ID:** FR-049  
-**Status:** TODO  
+**Status:** IMPLEMENTED  
 **Priority:** HIGH  
 **Created:** 2026-03-11  
 **Version:** v0.5.1.49+0  
 
-**Implementing Task:** [E5:S01:T49](../epics/Epic-5/Story-001-fr-repo/T49-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
+**Implementing Task:** [E05:S01:T49](../epics/Epic-5/Story-001-fr-repo/T49-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
 
 ---
 
@@ -166,9 +166,9 @@ Documentation Agent.update_kanban_completed({
 - **FR-040:** RW Update Kanban Board on Task Completion (completion detection)
 
 ### **Related Tasks**
-- **E5:S01:T48:** ICW Task Identifier Argument (implementation complete)
-- **E6:S06:T42:** UKW Agent Board Cleanup Failure (board cleanup integration)
-- **E5:S01:T36:** RW Update Kanban Board on Task Completion (completion workflow)
+- **E05:S01:T48:** ICW Task Identifier Argument (implementation complete)
+- **E06:S06:T42:** UKW Agent Board Cleanup Failure (board cleanup integration)
+- **E05:S01:T36:** RW Update Kanban Board on Task Completion (completion workflow)
 
 ### **Related Agents**
 - **Documentation Agent:** Primary responsibility for this enhancement
@@ -195,7 +195,7 @@ Documentation Agent.update_kanban_completed({
 
 ## Next Steps
 
-1. **Create Task E5:S01:T49** to implement this FR
+1. **Create Task E05:S01:T49** to implement this FR
 2. **Update Documentation Agent** responsibilities in AGENTS.md
 3. **Define coordination patterns** for agent invocation
 4. **Implement document structure** enhancements

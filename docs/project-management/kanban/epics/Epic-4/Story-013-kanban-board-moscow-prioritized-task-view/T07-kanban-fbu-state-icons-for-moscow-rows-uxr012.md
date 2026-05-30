@@ -8,17 +8,17 @@ housekeeping_policy: keep
 
 # Epic 4, Story 13, Task 7: Kanban and FBU state icons for MoSCOW rows (UXR-012)
 
-**Task ID:** E4:S13:T07  
+**Task ID:** E04:S13:T07  
 **Status:** ✅ COMPLETE (v0.4.13.7+2)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-20  
 **Last updated:** 2026-05-20 (BUILD+2: RW MoSCOW COMPLETE + emoji rows)  
-**Code:** E4S13T07
+**Code:** E04S13T07
 
 **Upstream:** [UXR-012 — Kanban and FBU state icons for MoSCOW rows](../../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
 
-**Planning artifact:** [IPP-E4S13T07 — Kanban and FBU state icons](../../../../../implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md)
+**Planning artifact:** [IPP-E04S13T07 — Kanban and FBU state icons](../../../../../implementation-cycles/IPP-E04S13T07-kanban-fbu-state-icons-moscow-rows.md)
 
 ---
 
@@ -52,6 +52,6 @@ housekeeping_policy: keep
 ## References
 
 - [UXR-012](../../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
-- [IPP-E4S13T07](../../../../../implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md)
+- [IPP-E04S13T07](../../../../../implementation-cycles/IPP-E04S13T07-kanban-fbu-state-icons-moscow-rows.md)
 - [kanban-board-guide.md](../../../kanban-board-guide.md)
 - [Story 013](../Story-013-kanban-board-moscow-prioritized-task-view.md)

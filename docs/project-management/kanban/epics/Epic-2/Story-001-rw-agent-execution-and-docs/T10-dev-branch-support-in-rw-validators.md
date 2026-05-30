@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Started:** 2026-04-07  
 **Completed:** N/A  
 **Version:** v0.2.1.10+2  
-**Code:** E2S01T10
+**Code:** E02S01T10
 
 ---
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 **Format:** `E{epic}:S{story}:T{task}`
 
-**Full Task ID:** `E2:S01:T10`
+**Full Task ID:** `E02:S01:T10`
 
 ---
 
@@ -44,7 +44,7 @@ Implement support for a dedicated `dev` branch in RW branch-context validation u
 
 - Validator updates to recognize `dev` branch mode.
 - Documentation/rules updates defining safeguards for `dev` mode.
-- Traceable release artifacts and changelog references for `E2:S01:T10`.
+- Traceable release artifacts and changelog references for `E02:S01:T10`.
 
 ---
 

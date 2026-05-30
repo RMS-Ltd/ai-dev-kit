@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-31  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** PENDING  
+**Status:** IMPLEMENTED  
 
-**Implementing Task:** [E5:S01:T74](../epics/Epic-5/Story-001-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
+**Implementing Task:** [E05:S01:T74](../epics/Epic-5/Story-001-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
 
 ---
 
@@ -50,7 +50,7 @@ Orphan `fr-br/*.md` files and inconsistent intake order produced board drift and
 
 ### Release / verification
 
-- **2026-03-31:** Change set merged under **E5:S01:T74** / internal **`0.5.1.74+1`**. Treat FR requirements as **satisfied pending adopter verification** (see changelog neutral wording).
+- **2026-03-31:** Change set merged under **E05:S01:T74** / internal **`0.5.1.74+1`**. Treat FR requirements as **satisfied pending adopter verification** (see changelog neutral wording).
 
 ---
 
@@ -70,7 +70,7 @@ Orphan `fr-br/*.md` files and inconsistent intake order produced board drift and
 **Assigned To:**
 
 - **Epic / Story:** Epic 5, Story 1 (FR Repo)  
-- **Task:** E5:S01:T74  
+- **Task:** E05:S01:T74  
 - **Version:** `0.5.1.74+1` (SemVer `0.4.685+1`)  
 
 **Kanban Links:**

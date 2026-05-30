@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # T04 – Review Integrations and Dependency Alignment
 
-**Task ID:** E4:S16:T04  
+**Task ID:** E04:S16:T04  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-01-19  
 **Last updated:** 2026-01-19 (v0.4.16.4+1 – Integration review complete: Kanban ↔ Versioning ↔ RW/UKW alignment validated)  
 **Version:** v0.4.16.4+1  
-**Code:** E4S16T04
+**Code:** E04S16T04
 
 ---
 
@@ -137,12 +137,12 @@ An **integration alignment report** confirming:
 
 **Key Expectations:**
 - UKW performs **bottom-up Kanban synchronization** (Tasks → Stories → Epics → Board).
-- Uses Kanban’s perpetual task for UKW (E2:S16:T03, with `perpetual_task: true`).
+- Uses Kanban’s perpetual task for UKW (E02:S16:T03, with `perpetual_task: true`).
 - Uses Kanban document structure (`kanban_root`, `epic_doc_pattern`, `story_doc_pattern`, `task_doc_pattern`).
 
 **Dev-Kit Implementation:**
 - UKW config points to dev-kit Kanban paths under `docs/project-management/kanban`.
-- Perpetual UKW task wired as E2:S16:T03 (confirmed in Epic 6 + Kanban board).
+- Perpetual UKW task wired as E02:S16:T03 (confirmed in Epic 6 + Kanban board).
 - UKW runs have updated:
   - Task/Story/Epic statuses and `Last updated` fields.
   - MoSCOW board entries (with BR-034 tracking a prior prioritization gap).

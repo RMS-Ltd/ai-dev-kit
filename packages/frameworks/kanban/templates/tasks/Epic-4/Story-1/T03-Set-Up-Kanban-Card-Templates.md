@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E4:S1:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E04:S01:T03`)
 
 **Full Task ID:** `E04:S01:T03`
 
@@ -34,8 +34,8 @@ Set up Kanban card templates for the {PROJECT_NAME} project. Create reusable car
 
 ## Input
 
-- Kanban board structure (from E4:S1:T01)
-- Kanban column configuration (from E4:S1:T02)
+- Kanban board structure (from E04:S01:T01)
+- Kanban column configuration (from E04:S01:T02)
 - Card template requirements
 - Work item types and structures
 - ai-dev-kit Kanban card templates (if adopting)
@@ -83,11 +83,11 @@ Set up Kanban card templates for the {PROJECT_NAME} project. Create reusable car
 ## Dependencies
 
 **Depends On:**
-- E4:S1:T01: Set up Kanban board structure (templates use board structure)
-- E4:S1:T02: Configure Kanban columns and workflows (templates may reference column configuration)
+- E04:S01:T01: Set up Kanban board structure (templates use board structure)
+- E04:S01:T02: Configure Kanban columns and workflows (templates may reference column configuration)
 
 **Blocks:**
-- E4:S1:T04: Document Kanban board usage (documentation references templates)
+- E04:S01:T04: Document Kanban board usage (documentation references templates)
 
 **Parallel Development Candidacy:** Blocked (depends on T01 and T02)
 
@@ -96,9 +96,9 @@ Set up Kanban card templates for the {PROJECT_NAME} project. Create reusable car
 ## Related Work
 
 **Related Tasks:**
-- E4:S1:T01: Set up Kanban board structure (templates use board structure)
-- E4:S1:T02: Configure Kanban columns and workflows (templates may reference column configuration)
-- E4:S1:T04: Document Kanban board usage (documentation references templates)
+- E04:S01:T01: Set up Kanban board structure (templates use board structure)
+- E04:S01:T02: Configure Kanban columns and workflows (templates may reference column configuration)
+- E04:S01:T04: Document Kanban board usage (documentation references templates)
 
 **Related Stories:**
 - E4:S1: Kanban Board Setup (this story)

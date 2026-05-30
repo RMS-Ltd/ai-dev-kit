@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E23:S4:T1` (e.g., `E4:S11:T01`)
+**Format:** `E23:S04:T01` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E23:S04:T01`
 
@@ -74,7 +74,7 @@ Define protected files and rules for the {PROJECT_NAME} project.
 - None
 
 **Blocks:**
-- E23:S4:T02
+- E23:S04:T02
 
 **Blocked By:**
 - [What blocks this task]

@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 2, Story 16, Task 11: IPW documentation phases — update/create + housing (FR-096)
 
-**Task ID:** E2:S16:T11  
+**Task ID:** E02:S16:T11  
 **Status:** COMPLETE ✅ COMPLETE (v0.2.16.11+1)  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
 **Created:** 2026-05-20  
 **Last updated:** 2026-05-20 (v0.2.16.11+1 — RW `--art`: IPW Phases 5–6; IPP §5–§7; FR-096)  
 **Version Anchor:** v0.2.16.11+1  
-**Code:** E2S16T11
+**Code:** E02S16T11
 
 **Upstream:** [FR-096 — IPW mandatory documentation phases (update/create + housing)](../../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
 
@@ -58,7 +58,7 @@ Operationalize FR-042 documentation planning intent by adding IPW **Phase 5** (d
 - [x] **AC3:** Agent execution guide lists phases 0–9 and housing ladder.
 - [x] **AC4:** FR-042 step table matches operational phases.
 - [x] **AC5:** `AGENTS.md` and `.cursorrules` reference IPP Sections 1–7.
-- [x] **AC6:** FR-096 ↔ E2:S16:T11 bidirectionally linked.
+- [x] **AC6:** FR-096 ↔ E02:S16:T11 bidirectionally linked.
 - [x] **AC7:** Released via RW with forensic version on this task.
 
 ---

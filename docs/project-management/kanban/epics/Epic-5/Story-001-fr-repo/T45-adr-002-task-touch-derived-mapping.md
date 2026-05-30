@@ -8,16 +8,16 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 45: ADR-002 Task-Touch Derived Mapping (Kanban → SemVer)
 
-**Task ID:** E5:S01:T45  
+**Task ID:** E05:S01:T45  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-02-26  
 **Last updated:** 2026-03-09 (v0.5.1.45+2 – ADR-002 Task-Touch Mapping Implementation Complete)  
 **Version:** v0.5.1.45+2  
-**Code:** E5S01T45
+**Code:** E05S01T45
 
-**Repository Pattern:** FR-045 = E5:S01:T45 (first build: v0.5.1.45+1)
+**Repository Pattern:** FR-045 = E05:S01:T45 (first build: v0.5.1.45+1)
 
 ---
 
@@ -43,8 +43,8 @@ This task:
 
 ## Deliverable
 
-1. This task document as the canonical repository anchor for FR-045 (`E5:S01:T45`).
-2. FR-045 is created and explicitly assigned to E5:S01:T45.
+1. This task document as the canonical repository anchor for FR-045 (`E05:S01:T45`).
+2. FR-045 is created and explicitly assigned to E05:S01:T45.
 3. The Task-Touch Derived Mapping implementation is documented and fully implemented with:
    - `task_touch` SemVer mapping in `semver_converter.py`
    - Configuration support in `rw-config.yaml`
@@ -56,15 +56,15 @@ This task:
 
 ## Acceptance Criteria
 
-- [x] Task document exists and is linked from the FR Repo story checklist as **E5:S01:T45**.
-- [x] FR-045 is created and explicitly assigned to E5:S01:T45.
+- [x] Task document exists and is linked from the FR Repo story checklist as **E05:S01:T45**.
+- [x] FR-045 is created and explicitly assigned to E05:S01:T45.
 - [x] The Task-Touch Derived Mapping behaviour is described clearly enough here and in FR-045 to support separate implementation tasks.
 
 ---
 
 ## Version Anchor
 
-- **First Build:** v0.5.1.45+1 (initial documentation build) anchors FR-045 to E5:S01:T45.
+- **First Build:** v0.5.1.45+1 (initial documentation build) anchors FR-045 to E05:S01:T45.
 - **Second Build:** v0.5.1.45+2 (implementation completion) documents the completed ADR-002 Task-Touch Derived Mapping implementation.
 - ADR-002 implementation is complete and available for use with configuration `semver_mapping_strategy: task_touch`.
 

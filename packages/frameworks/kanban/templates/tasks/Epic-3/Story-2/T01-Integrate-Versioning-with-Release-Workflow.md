@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E3:S2:T1` (e.g., `E4:S11:T01`)
+**Format:** `E03:S02:T01` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E03:S02:T01`
 
@@ -74,7 +74,7 @@ Integrate versioning with release workflow for the {PROJECT_NAME} project.
 - None
 
 **Blocks:**
-- E3:S2:T02
+- E03:S02:T02
 
 **Blocked By:**
 - [What blocks this task]

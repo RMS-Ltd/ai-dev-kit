@@ -13,7 +13,7 @@ labels: ["bug", "github-actions", "yaml", "fr-br-intake", "retrospective"]
 
 # Bug Report BR-057: fr-br-intake workflow YAML (block scalar indentation)
 
-**Implementing Task:** [E7:S06:T17](../epics/Epic-7/Story-006-post-windsurf-project-review/T17-BR057-fr-br-intake-yaml-retrospective.md)
+**Implementing Task:** [E07:S06:T17](../epics/Epic-7/Story-006-post-windsurf-project-review/T17-BR057-fr-br-intake-yaml-retrospective.md)
 
 ## Bug Summary
 
@@ -51,7 +51,7 @@ Re-indented the continuation lines (including blank lines and markdown bullets) 
 
 ## Traceability
 
-- **Kanban task:** E7:S06:T17 — [`T17-BR057-fr-br-intake-yaml-retrospective.md`](../epics/Epic-7/Story-006-post-windsurf-project-review/T17-BR057-fr-br-intake-yaml-retrospective.md)
+- **Kanban task:** E07:S06:T17 — [`T17-BR057-fr-br-intake-yaml-retrospective.md`](../epics/Epic-7/Story-006-post-windsurf-project-review/T17-BR057-fr-br-intake-yaml-retrospective.md)
 
 ## Prevention
 

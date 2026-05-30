@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E12:S3:T6` (e.g., `E4:S11:T01`)
+**Format:** `E12:S03:T06` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E12:S03:T06`
 
@@ -71,10 +71,10 @@ Optimize UI performance for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E12:S3:T05
+- E12:S03:T05
 
 **Blocks:**
-- E12:S3:T07
+- E12:S03:T07
 
 **Blocked By:**
 - [What blocks this task]

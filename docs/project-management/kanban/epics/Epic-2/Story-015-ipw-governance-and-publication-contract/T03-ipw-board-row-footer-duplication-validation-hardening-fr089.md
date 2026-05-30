@@ -8,17 +8,17 @@ housekeeping_policy: keep
 
 # Epic 2, Story 15, Task 3: IPW board-row traceability-churn hardening (FR-089)
 
-**Task ID:** E2:S15:T03  
+**Task ID:** E02:S15:T03  
 **Status:** ✅ COMPLETE  
 **Priority:** CRITICAL  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-21  
 **Completed:** 2026-04-21  
 **Last updated:** 2026-04-21 (v0.2.15.3+2 — governance alignment RW; FR-089 IMPLEMENTED)  
-**Code:** E2S15T03
+**Code:** E02S15T03
 
 **Upstream:** [FR-089 - IPW board-row traceability-churn hardening](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
-**IPP:** [IPP-E2S15T03](../../../../../implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
+**IPP:** [IPP-E02S15T03](../../../../../implementation-cycles/IPP-E02S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
 
 ---
 
@@ -59,7 +59,7 @@ IPW governance currently does not explicitly validate row-tail uniqueness, allow
 - [x] **AC2:** Validation contract for duplicated footer segments is documented and testable.
 - [x] **AC3:** Output/reporting fields for duplicate-footer detection are specified.
 - [x] **AC3b:** Task-ID multiplication anti-pattern detection and single-instance task-ID invariants are documented and testable.
-- [x] **AC4:** FR-089 and E2:S15:T03 are wired in Story 015 and active boards.
+- [x] **AC4:** FR-089 and E02:S15:T03 are wired in Story 015 and active boards.
 
 ---
 
@@ -69,4 +69,4 @@ IPW governance currently does not explicitly validate row-tail uniqueness, allow
 - [Story 015](../Story-015-ipw-governance-and-publication-contract.md)
 - [T02](T02-ipp-post-run-governance-reconciliation-ownership-fr084.md)
 - [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [IPP-E2S15T03](../../../../../implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
+- [IPP-E02S15T03](../../../../../implementation-cycles/IPP-E02S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)

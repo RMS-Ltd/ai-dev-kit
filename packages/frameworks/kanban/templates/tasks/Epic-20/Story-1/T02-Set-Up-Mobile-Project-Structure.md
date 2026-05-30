@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E20:S1:T2` (e.g., `E4:S11:T01`)
+**Format:** `E20:S01:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E20:S01:T02`
 
@@ -71,10 +71,10 @@ Set up mobile project structure for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E20:S1:T01
+- E20:S01:T01
 
 **Blocks:**
-- E20:S1:T03
+- E20:S01:T03
 
 **Blocked By:**
 - [What blocks this task]

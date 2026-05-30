@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E11:S2:T3` (e.g., `E4:S11:T01`)
+**Format:** `E11:S02:T03` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E11:S02:T03`
 
@@ -71,10 +71,10 @@ Add request validation for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E11:S2:T02
+- E11:S02:T02
 
 **Blocks:**
-- E11:S2:T04
+- E11:S02:T04
 
 **Blocked By:**
 - [What blocks this task]

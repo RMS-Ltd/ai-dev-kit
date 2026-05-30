@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** IN PROGRESS  
 
-**Implementing Task:** [E2:S01:T17](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
+**Implementing Task:** [E02:S01:T17](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
 
 ---
 
@@ -38,7 +38,7 @@ This creates governance and traceability gaps because documentation no longer re
 
 ### Latest observed incident (2026-04-10)
 
-- During `IPW E3:S02:T12` -> implementation -> `RW E3:S02:T12 --art`, task `E3:S02:T12` remained `TODO` until manually corrected.
+- During `IPW E03:S02:T12` -> implementation -> `RW E03:S02:T12 --art`, task `E03:S02:T12` remained `TODO` until manually corrected.
 - RW Step 1c failed gating (`validate_rw_task_complete.py`) because the host task status had not transitioned despite implementation evidence.
 - This confirms FR-077 remains an active operational defect path (not just documentation ambiguity).
 
@@ -78,7 +78,7 @@ This creates governance and traceability gaps because documentation no longer re
 
 ## Latest incident context (2026-04-13)
 
-1. **Recurrence observed after active implementation:** `RW E7:S06:T18 --art` was blocked at Step 1c because host task `E7:S06:T18` remained `TODO` even after substantial implementation work and test execution.
+1. **Recurrence observed after active implementation:** `RW E07:S06:T18 --art` was blocked at Step 1c because host task `E07:S06:T18` remained `TODO` even after substantial implementation work and test execution.
 2. **Operational impact:** Release flow aborted until manual status update (`TODO -> IN PROGRESS`) was applied.
 3. **Implication for FR-077 scope:** Existing validator hardening correctly blocks drift, but execution ergonomics still depend on humans remembering transition timing. Additional proactive guardrails are needed to reduce repeat incidents.
 
@@ -103,14 +103,14 @@ This creates governance and traceability gaps because documentation no longer re
 
 ## Release anchor (2026-04-14)
 
-- Released build: **v0.2.1.17+3** (SemVer: **v0.4.737+3**) for implementing task **E2:S01:T17**.
+- Released build: **v0.2.1.17+3** (SemVer: **v0.4.737+3**) for implementing task **E02:S01:T17**.
 - Includes ownership-contract normalization (IPW/RW/UKW), deterministic requested-task drift checks, and recurrence regression tests (`15 passed`).
 
 ---
 
 ## Execution notes
 
-- This item is currently tracked as FR-led implementation under `E2:S01:T17` (no standalone BR currently owns the same scope).
+- This item is currently tracked as FR-led implementation under `E02:S01:T17` (no standalone BR currently owns the same scope).
 - If a dedicated BR is later introduced, it should be cross-linked here and made upstream to `T17`.
 
 ---

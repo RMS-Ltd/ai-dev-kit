@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E14:S3:T3` (e.g., `E4:S11:T01`)
+**Format:** `E14:S03:T03` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E14:S03:T03`
 
@@ -71,10 +71,10 @@ Set up logging infrastructure for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E14:S3:T02
+- E14:S03:T02
 
 **Blocks:**
-- E14:S3:T04
+- E14:S03:T04
 
 **Blocked By:**
 - [What blocks this task]

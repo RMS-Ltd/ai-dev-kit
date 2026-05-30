@@ -45,21 +45,21 @@ Deliver a robust, documented hybrid template system where:
 
 ## Task Checklist
 
-- [x] **E4:S15:T01 – Finalize and validate concrete task template coverage** ✅ COMPLETE (v0.4.15.5+2 – All 378 task templates generated, validated, and sanitized)
-- [x] **E4:S15:T02 – Design procedural task template generator** ✅ COMPLETE (v0.4.15.3+1)
-- [x] **E4:S15:T03 – Implement generator and validate against concrete templates** ✅ COMPLETE (v0.4.15.3+1)
-- [x] **E4:S15:T04 – Integrate generator into Kanban framework package** ✅ COMPLETE (v0.4.15.5+1)
-- [x] **E4:S15:T05 – Document hybrid strategy and usage for maintainers and clients** ✅ COMPLETE (v0.4.15.5+2 – Agentic template generator and integration complete)
+- [x] **E04:S15:T01 – Finalize and validate concrete task template coverage** ✅ COMPLETE (v0.4.15.5+2 – All 378 task templates generated, validated, and sanitized)
+- [x] **E04:S15:T02 – Design procedural task template generator** ✅ COMPLETE (v0.4.15.3+1)
+- [x] **E04:S15:T03 – Implement generator and validate against concrete templates** ✅ COMPLETE (v0.4.15.3+1)
+- [x] **E04:S15:T04 – Integrate generator into Kanban framework package** ✅ COMPLETE (v0.4.15.5+1)
+- [x] **E04:S15:T05 – Document hybrid strategy and usage for maintainers and clients** ✅ COMPLETE (v0.4.15.5+2 – Agentic template generator and integration complete)
 
 ---
 
 ## Tasks
 
-### E4:S15:T01 – Finalize and validate concrete task template coverage
+### E04:S15:T01 – Finalize and validate concrete task template coverage
 
 **Status:** TODO  
 **Priority:** HIGH  
-**Dependencies:** E4:S06:T04 (Create task template files for each typical task)  
+**Dependencies:** E04:S06:T04 (Create task template files for each typical task)  
 
 **Input:**
 - Existing task templates in `packages/frameworks/kanban/templates/tasks/`
@@ -72,16 +72,16 @@ Deliver a robust, documented hybrid template system where:
 
 **Acceptance Criteria:**
 - [ ] All canonical tasks from the structure document are mapped to template files.
-- [ ] Any missing templates are enumerated and linked back to E4:S06:T04 for completion.
+- [ ] Any missing templates are enumerated and linked back to E04:S06:T04 for completion.
 - [ ] Naming and path conventions are consistent across the task templates.
 
 ---
 
-### E4:S15:T02 – Design procedural task template generator
+### E04:S15:T02 – Design procedural task template generator
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E4:S15:T01  
+**Dependencies:** E04:S15:T01  
 **Version:** v0.4.15.3+1  
 
 **Input:**
@@ -105,11 +105,11 @@ Deliver a robust, documented hybrid template system where:
 
 ---
 
-### E4:S15:T03 – Implement generator and validate against concrete templates
+### E04:S15:T03 – Implement generator and validate against concrete templates
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E4:S15:T02  
+**Dependencies:** E04:S15:T02  
 **Version:** v0.4.15.3+1  
 
 **Input:**
@@ -137,11 +137,11 @@ Deliver a robust, documented hybrid template system where:
 
 ---
 
-### E4:S15:T04 – Integrate generator into Kanban framework package
+### E04:S15:T04 – Integrate generator into Kanban framework package
 
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Dependencies:** E4:S15:T03  
+**Dependencies:** E04:S15:T03  
 **Version:** v0.4.15.4+1
 
 **Input:**
@@ -165,11 +165,11 @@ Deliver a robust, documented hybrid template system where:
 
 ---
 
-### E4:S15:T05 – Document hybrid strategy and usage
+### E04:S15:T05 – Document hybrid strategy and usage
 
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Dependencies:** E4:S15:T03, E4:S15:T04  
+**Dependencies:** E04:S15:T03, E04:S15:T04  
 **Version:** v0.4.15.4+1
 
 **Input:**
@@ -205,7 +205,7 @@ Deliver a robust, documented hybrid template system where:
 
 
 **Blocked By:**
-- E4:S06:T04 – Create task template files for each typical task (for complete reference coverage).
+- E04:S06:T04 – Create task template files for each typical task (for complete reference coverage).
 
 **Related FR/BR:**
 - **FR-029:** Procedural Task Template Generation (Hybrid Strategy)

@@ -13,10 +13,10 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-30  
 **Submitted By:** User (via maintainer agent)  
 **Priority:** MEDIUM  
-**Status:** COMPLETE (2026-03-30 — E5:S01:T69 / v0.5.1.69+1)
+**Status:** COMPLETE (2026-03-30 — E05:S01:T69 / v0.5.1.69+1)
 
-**Repository Pattern:** FR-064 = E5:S01:T69  
-**Implementing Task:** [E5:S01:T69 – Shields branch retirement (private repo)](../epics/Epic-5/Story-001-fr-repo/T69-shields-branch-private-repo-fr-064.md)
+**Repository Pattern:** FR-064 = E05:S01:T69  
+**Implementing Task:** [E05:S01:T69 – Shields branch retirement (private repo)](../epics/Epic-5/Story-001-fr-repo/T69-shields-branch-private-repo-fr-064.md)
 
 ---
 
@@ -78,13 +78,13 @@ housekeeping_policy: keep
 - [x] Target badge/metadata approach agreed and reflected on **`main`**.
 - [x] External automation to `shields` **disabled** or documented as removed.
 - [x] **`shields` branch removed** from remote (and locals cleaned up).
-- [x] Task **E5:S01:T69** closed with Version Anchor via normal RW.
+- [x] Task **E05:S01:T69** closed with Version Anchor via normal RW.
 
 ---
 
 ## Related
 
-- **E5:S01:T68** — consumer path / README hygiene (packaging narrative).
+- **E05:S01:T68** — consumer path / README hygiene (packaging narrative).
 - **FR-062** — GitHub releases (public artifact story; orthogonal to private **source** repo badges).
 
 ---

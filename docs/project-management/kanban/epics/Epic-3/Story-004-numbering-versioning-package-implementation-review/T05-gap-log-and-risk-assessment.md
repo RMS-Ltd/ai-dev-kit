@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E3:S04:T05 – Create Gap Log and Risk Assessment
+# E03:S04:T05 – Create Gap Log and Risk Assessment
 
-**Task ID:** E3:S04:T05  
+**Task ID:** E03:S04:T05  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E3 – Numbering & Versioning Framework  
@@ -32,10 +32,10 @@ Consolidate all findings from **T01–T04** into a single **gap log and risk ass
 
 ## Inputs
 
-- **E3:S04:T01 – Expectations baseline for Numbering & Versioning package**
-- **E3:S04:T02 – Component inventory and mapping to expectations**
-- **E3:S04:T03 – Versioning behavior validation report**
-- **E3:S04:T04 – Integration and dependency alignment report**
+- **E03:S04:T01 – Expectations baseline for Numbering & Versioning package**
+- **E03:S04:T02 – Component inventory and mapping to expectations**
+- **E03:S04:T03 – Versioning behavior validation report**
+- **E03:S04:T04 – Integration and dependency alignment report**
 
 ---
 
@@ -261,7 +261,7 @@ There are **no RC-blocking risks** attributable to the **Numbering & Versioning 
 
 ## Next Steps
 
-- **For this Task (E3:S04:T05):**
+- **For this Task (E03:S04:T05):**
   - [x] Gap log created and all findings from T01–T04 consolidated ✅ COMPLETE
   - [x] Risk assessment completed with RC readiness statement ✅ COMPLETE
   - [x] All gaps classified with severity, likelihood, and RC impact ✅ COMPLETE

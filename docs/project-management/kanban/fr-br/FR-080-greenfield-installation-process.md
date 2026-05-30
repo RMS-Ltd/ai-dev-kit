@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer (design session)  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** IMPLEMENTED (deliverables on **`dev`** via **E6:S09:T01**; see § Implementation evidence)
+**Status:** IMPLEMENTED (deliverables on **`dev`** via **E06:S09:T01**; see § Implementation evidence)
 
-**Implementing Task:** [E6:S09:T01](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
+**Implementing Task:** [E06:S09:T01](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
 
 ---
 
@@ -47,16 +47,16 @@ Installation guidance today mixes methods (submodule copy, GitHub Releases, futu
 - [x] **FR-080-NF1:** Greenfield defaults must remain **maintainable** when framework packages version independently (framework README vs monorepo version policy).
 - [x] **FR-080-NF2:** Process must align with existing install logging and feedback contracts where applicable ([FR-078](./FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](./FR-079-install-feedback-submission-path-and-governance.md)).
 
-### Implementation evidence (E6:S09:T01)
+### Implementation evidence (E06:S09:T01)
 
 Primary artifacts (dev-kit repo):
 
 - [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — Wave 1–4 greenfield specification, orchestrator usage, manual gates, Wave 4 post-install validators and reference transcript.
 - [`install_greenfield_path.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_greenfield_path.py) — hybrid orchestration (RW-first default, checkpoint override).
-- [`IPW-E6S09T01`](../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md) — planning / decisions / wave traceability.
+- [`IPW-E06S09T01`](../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md) — planning / decisions / wave traceability.
 - User-docs under [`docs/documentation/user-docs/` (repo tree)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/documentation/user-docs) — scope sections (greenfield vs brownfield) per Wave 3.
 
-**Explicit deferrals (owned elsewhere):** Full install **telemetry product** contracts remain under **FR-078** / **FR-079**; T01 documents boundaries and log capture (`AI_DEV_KIT_INSTALL_LOG_PATH`). **Canonical distribution coordinates** / copy-paste URL policy are **FR-082 / E6:S09:T03**, not blocking F1–F5 above.
+**Explicit deferrals (owned elsewhere):** Full install **telemetry product** contracts remain under **FR-078** / **FR-079**; T01 documents boundaries and log capture (`AI_DEV_KIT_INSTALL_LOG_PATH`). **Canonical distribution coordinates** / copy-paste URL policy are **FR-082 / E06:S09:T03**, not blocking F1–F5 above.
 
 ---
 

@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E20:S3:T6` (e.g., `E4:S11:T01`)
+**Format:** `E20:S03:T06` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E20:S03:T06`
 
@@ -71,10 +71,10 @@ Document app store submission for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E20:S3:T05
+- E20:S03:T05
 
 **Blocks:**
-- E20:S3:T07
+- E20:S03:T07
 
 **Blocked By:**
 - [What blocks this task]

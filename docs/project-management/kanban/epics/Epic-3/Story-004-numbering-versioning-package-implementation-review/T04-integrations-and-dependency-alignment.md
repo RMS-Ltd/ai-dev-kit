@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E3:S04:T04 – Review Integrations and Dependency Alignment
+# E03:S04:T04 – Review Integrations and Dependency Alignment
 
-**Task ID:** E3:S04:T04  
+**Task ID:** E03:S04:T04  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E3 – Numbering & Versioning Framework  
@@ -158,7 +158,7 @@ An **integration alignment report** confirming:
 
 **Forensic Markers:**
 - ✅ Kanban board uses version markers: `✅ COMPLETE (v0.3.4.3+1)`
-- ✅ Story checklists include version markers: `- [x] **E3:S04:T03** ✅ COMPLETE (v0.3.4.3+1)`
+- ✅ Story checklists include version markers: `- [x] **E03:S04:T03** ✅ COMPLETE (v0.3.4.3+1)`
 - ✅ Epic documents track version ranges: `**Last updated:** 2026-01-21 (v0.3.4.3+1 – T03: Versioning behavior validation complete)`
 - ✅ Task documents include version anchors: `**Version Anchor:** ✅ COMPLETE (v0.3.4.3+1)`
 

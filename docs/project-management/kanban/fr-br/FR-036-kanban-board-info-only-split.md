@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E4:S18:T01](../epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md)
+**Implementing Task:** [E04:S18:T01](../epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.4.18.1+0
 
@@ -154,7 +154,7 @@ User opens `kboard.md` to quickly scan active tasks and epic status. Sees only s
 
 **Related Work:**
 - **E4:S13:** Kanban Board Enhancement - MoSCOW Prioritized Task View (board structure foundation)
-- **E2:S16:T03:** Update Kanban Workflow (UKW) - May need to update to maintain both documents
+- **E02:S16:T03:** Update Kanban Workflow (UKW) - May need to update to maintain both documents
 
 ---
 
@@ -170,7 +170,7 @@ User opens `kboard.md` to quickly scan active tasks and epic status. Sees only s
 **Assigned To:**
 - Epic: Epic 4 - Kanban Framework
 - Story: E4:S18 - Kanban Board Info-Only Split
-- Task: E4:S18:T01 - Implement Kanban Board Info-Only Split
+- Task: E04:S18:T01 - Implement Kanban Board Info-Only Split
 - Version: `0.4.18.1+0`
 
 **Kanban Links:**

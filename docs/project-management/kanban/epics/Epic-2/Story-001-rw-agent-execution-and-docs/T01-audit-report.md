@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Audit Report: Project-Specific Assumptions in `release-workflow-agent-execution.md`
 
-**Task:** E2:S01:T01 – Audit `release-workflow-agent-execution.md` for project-specific assumptions  
+**Task:** E02:S01:T01 – Audit `release-workflow-agent-execution.md` for project-specific assumptions  
 **Date:** 2025-12-02  
 **File Audited:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 

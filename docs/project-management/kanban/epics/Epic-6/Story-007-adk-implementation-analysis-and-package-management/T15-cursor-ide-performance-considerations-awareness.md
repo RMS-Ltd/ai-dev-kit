@@ -16,14 +16,14 @@ housekeeping_policy: keep
 **Version:** v0.6.7.15+1
 
 **Feature Request:** [FR-028](../../../fr-br/FR-028-cursor-ide-performance-considerations-awareness.md)  
-**Code:** E6S07T15
+**Code:** E06S07T15
 
 ---
 
 ## Task ID
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
-**Value:** `E6:S07:T15`
+**Value:** `E06:S07:T15`
 
 ---
 

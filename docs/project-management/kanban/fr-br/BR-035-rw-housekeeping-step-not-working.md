@@ -116,11 +116,11 @@ This pattern marks todos as completed but doesn't remove them.
 
 ## Acceptance Criteria
 
-- [x] Step 13 (Housekeeping) successfully marks all `rw-step-*` todos as `cancelled` (hides them from active list) - ✅ FIXED (E6:S01:T35)
-- [x] After RW completes, `rw-step-*` todos are marked as `cancelled` (hidden from active view) - ✅ FIXED (E6:S01:T35)
-- [x] The IDE todo list is clean and ready for the next workflow - ✅ FIXED (E6:S01:T35)
-- [x] Other todos (non-RW) are not affected by the cleanup - ✅ FIXED (E6:S01:T35)
-- [x] The solution is idempotent (safe to run multiple times) - ✅ FIXED (E6:S01:T35)
+- [x] Step 13 (Housekeeping) successfully marks all `rw-step-*` todos as `cancelled` (hides them from active list) - ✅ FIXED (E06:S01:T35)
+- [x] After RW completes, `rw-step-*` todos are marked as `cancelled` (hidden from active view) - ✅ FIXED (E06:S01:T35)
+- [x] The IDE todo list is clean and ready for the next workflow - ✅ FIXED (E06:S01:T35)
+- [x] Other todos (non-RW) are not affected by the cleanup - ✅ FIXED (E06:S01:T35)
+- [x] The solution is idempotent (safe to run multiple times) - ✅ FIXED (E06:S01:T35)
 
 ---
 
@@ -136,14 +136,14 @@ This pattern marks todos as completed but doesn't remove them.
 ## Assigned To
 
 **Story:** Story 1: BR Repo (PERPETUAL)  
-**Task:** Task 35 (E6:S01:T35)
+**Task:** Task 35 (E06:S01:T35)
 
 ---
 
 ## Kanban Links
 
 - Story: [E6:S01: BR Repo (PERPETUAL)](../epics/Epic-6/Story-001-br-repo.md)
-- Task: [E6:S01:T35: RW Housekeeping Step Not Working](../epics/Epic-6/Story-001-br-repo/T35-rw-housekeeping-step-not-working.md)
+- Task: [E06:S01:T35: RW Housekeeping Step Not Working](../epics/Epic-6/Story-001-br-repo/T35-rw-housekeeping-step-not-working.md)
 
 ---
 
@@ -157,7 +157,7 @@ This pattern marks todos as completed but doesn't remove them.
 ## Version History
 
 - **v0.6.1.35+0** (2026-01-17): Bug report created
-- **v0.6.1.35+1** (2026-01-17): Fixed - Updated RW Step 13 to mark todos as `cancelled` instead of `completed`. Implementation complete (E6:S01:T35).
+- **v0.6.1.35+1** (2026-01-17): Fixed - Updated RW Step 13 to mark todos as `cancelled` instead of `completed`. Implementation complete (E06:S01:T35).
 
 ---
 

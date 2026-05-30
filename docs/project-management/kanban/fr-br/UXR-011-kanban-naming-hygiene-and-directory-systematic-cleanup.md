@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Code:** UXR-011  
 **Last updated:** 2026-05-18
 **Resolution:** v0.9.5.4+2 — All findings remediated; regression validator green; 105 file changes committed  
-**Implementing Task:** [E9:S05:T04](../epics/Epic-9/Story-005-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
+**Implementing Task:** [E09:S05:T04](../epics/Epic-9/Story-005-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
 
 ---
 
@@ -41,7 +41,7 @@ What is the full inventory of naming and structural hygiene defects in the kanba
 - **Total task files:** 236
 - **Deprecated ratio:** ~22%
 
-The Txxx → Txx migration (E2:S02:T007, E2:S02:T008) was filed 2025-12-03 but remains TODO. New work continues using both conventions, producing a mixed-state tree where tooling must parse both patterns.
+The Txxx → Txx migration (E02:S02:T07, E02:S02:T08) was filed 2025-12-03 but remains TODO. New work continues using both conventions, producing a mixed-state tree where tooling must parse both patterns.
 
 **Affected locations:**
 - Epic-1/Story-002 (T001–T004)
@@ -178,8 +178,8 @@ Epic-9 and Epic-24 both have book-content stories with identical names (001–00
 
 ## References
 
-- [E9:S05:T04](../epics/Epic-9/Story-005-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md) — Implementing task
-- [E2:S02:T007](../epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Original task naming change (TODO)
-- [E2:S02:T008](../epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md) — Original kanban docs standardization (TODO)
+- [E09:S05:T04](../epics/Epic-9/Story-005-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md) — Implementing task
+- [E02:S02:T07](../epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Original task naming change (TODO)
+- [E02:S02:T08](../epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md) — Original kanban docs standardization (TODO)
 - [kanban-governance-policy](../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — Naming policy source of truth
 - [Epic-9](../epics/Epic-9/Epic-9.md) — Release Candidate Readiness epic (canonical for E/S/T review)

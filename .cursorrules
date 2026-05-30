@@ -808,6 +808,8 @@ Documents in `docs/` directory must have lifecycle metadata in frontmatter:
 
 **Reference:** See `docs/governance/standards/dev-kit-versioning-policy.md` (canonical SoT for dev-kit)
 
+**Inline E/S/T notation (UXR-014):** When writing task tokens in docs, boards, and trigger messages, **default to two-digit zero-padding** for Epic, Story, and Task when `<10` (e.g. `E04:S19:T09`, `RW E04S19T09`). Parsers accept legacy unpadded forms on read; new writes MUST use padded form. Formatter: `packages/frameworks/workflow mgt/scripts/kanban/est_format.py`.
+
 ---
 
 ## Branch Mapping

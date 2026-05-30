@@ -16,7 +16,11 @@ housekeeping_policy: keep
 
 ## Summary
 
-The Kanban Task naming policy has been updated to always use the full `Exx:Sxx:Txx` format with 2-digit task numbers (instead of 3-digit). Tasks are NEVER referenced as standalone `Txxx` or `Txx` - they must always include the Epic and Story context: `E\{epic\}:S\{story\}:T\{task\}`.
+The Kanban Task naming policy has been updated to always use the full `Exx:Sxx:Txx` format with **two-digit zero-padding for Epic, Story, and Task** when values are `<10` (UXR-014). Tasks are NEVER referenced as standalone `Txxx` or `Txx` - they must always include the Epic and Story context: `E\{epic\}:S\{story\}:T\{task\}`.
+
+**Write-default examples:** `E01:S01:T01`, `E02:S16:T04`, `E21:S16:T57`, `E02:S16:T101` (perpetual).
+
+**Read tolerance:** Legacy unpadded forms (e.g. `E2:S16:T4`) remain parseable; new documentation MUST use padded form.
 
 ---
 
@@ -44,7 +48,7 @@ The Kanban Task naming policy has been updated to always use the full `Exx:Sxx:T
 **New Tasks:**
 - All new tasks MUST use full `Exx:Sxx:Txx` format (2-digit task number)
 - Task files should be named `T01-*.md`, `T02-*.md`, etc. (for file naming only)
-- Task IDs in commits and references MUST use full `Exx:Sxx:Txx` format (e.g., `E1:S01:T01`, `E2:S04:T05`)
+- Task IDs in commits and references MUST use full `Exx:Sxx:Txx` format (e.g., `E01:S01:T01`, `E02:S04:T05`)
 - NEVER use standalone `T01` or `T001` - always include Epic and Story context
 
 ### Transition Period

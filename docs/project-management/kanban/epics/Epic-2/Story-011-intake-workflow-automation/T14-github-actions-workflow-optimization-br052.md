@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Epic 2, Story 11, Task 14: GitHub Actions workflow optimization (BR-052)
 
-**Task ID:** E2:S11:T14  
+**Task ID:** E02:S11:T14  
 **Status:** TODO  
 **Priority:** LOW  
 **Created:** 2026-05-29  
-**Code:** E2S11T14
+**Code:** E02S11T14
 
 **Upstream:** [BR-052](../../../fr-br/BR-052-github-actions-workflow-optimization.md)
 

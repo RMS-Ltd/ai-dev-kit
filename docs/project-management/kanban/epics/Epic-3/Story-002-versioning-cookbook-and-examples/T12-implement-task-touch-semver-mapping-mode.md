@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # T12 – Implement ADR-002 Task-Touch SemVer Mapping Mode
 
-**Task ID:** E3:S02:T12  
+**Task ID:** E03:S02:T12  
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
@@ -33,12 +33,12 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 - **BR-061:** [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) — registry counter / PATCH over-increment + tag pressure (**implementation bug**, not intake)
 - FR-045: `docs/project-management/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md`
 - FR repo anchor task: `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T45-adr-002-task-touch-derived-mapping.md`
-- FR-046 anchor interaction target: [E5:S01:T46](../../Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
+- FR-046 anchor interaction target: [E05:S01:T46](../../Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
 - Incident log: `docs/architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md`
 - Existing converter (Mode A): `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
 - Existing registry: `semver-registry.yaml`
 - Existing config: `rw-config.yaml`
-- Planning artifact (IPW): [IPW-E3S02T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md)
+- Planning artifact (IPW): [IPW-E03S02T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPW-E03S02T12-task-touch-semver-collision-hardening.md)
 
 ---
 
@@ -74,7 +74,7 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 - [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) (PATCH over-increment / usage of `semver_converter.py`)
 - FR-046 (RW uses SemVer tag when task_touch enabled)
 - `docs/architecture/standards-and-adrs/semver-implementation-followup-spec.md`
-- [IPW-E3S02T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md)
+- [IPW-E03S02T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPW-E03S02T12-task-touch-semver-collision-hardening.md)
 
 ## Implementation note
 

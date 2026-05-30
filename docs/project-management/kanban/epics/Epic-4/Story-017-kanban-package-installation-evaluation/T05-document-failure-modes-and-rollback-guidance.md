@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S17:T05 – Document Failure Modes and Rollback Guidance
+# E04:S17:T05 – Document Failure Modes and Rollback Guidance
 
-**Task ID:** E4:S17:T05  
+**Task ID:** E04:S17:T05  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Epic:** E4 – Kanban Framework  
@@ -538,11 +538,11 @@ Document failure modes and rollback guidance for the Kanban framework package in
 
 ## Related Work
 
-- **E4:S17:T01:** Enumerate supported installation paths (completed)
-- **E4:S17:T02:** Validate fresh install steps (completed)
-- **E4:S17:T03:** Validate migration/update paths (completed)
-- **E4:S17:T04:** Verify post-install configuration and validation steps (completed)
-- **E4:S17:T06:** Capture documentation gaps and improvements (next task)
+- **E04:S17:T01:** Enumerate supported installation paths (completed)
+- **E04:S17:T02:** Validate fresh install steps (completed)
+- **E04:S17:T03:** Validate migration/update paths (completed)
+- **E04:S17:T04:** Verify post-install configuration and validation steps (completed)
+- **E04:S17:T06:** Capture documentation gaps and improvements (next task)
 
 ---
 

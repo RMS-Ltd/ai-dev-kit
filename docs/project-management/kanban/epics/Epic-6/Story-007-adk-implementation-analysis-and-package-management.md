@@ -16,132 +16,132 @@ housekeeping_policy: keep
 **Version:** v0.6.7.115+1
 **Code:** E6S07
 
-**Note:** This story was renumbered from S06 to S07 as part of the repository story abstract space resolution (E9:S01:T08).
+**Note:** This story was renumbered from S06 to S07 as part of the repository story abstract space resolution (E09:S01:T08).
 
 ## Task Checklist
-- [x] **E6:S07:T00 – Story creation and comprehensive structure documentation** ✅ COMPLETE
+- [x] **E06:S07:T00 – Story creation and comprehensive structure documentation** ✅ COMPLETE
 
 
-- [x] **E6:S07:T01 – Comprehensive ADK implementation analysis across all projects** ✅ COMPLETE (10 project reports + 4 granular analyses + 6 synthesis reports completed)
+- [x] **E06:S07:T01 – Comprehensive ADK implementation analysis across all projects** ✅ COMPLETE (10 project reports + 4 granular analyses + 6 synthesis reports completed)
 
 
-- [x] **E6:S07:T02 – Investigate proper package management (single package file, hash verification)** - ✅ COMPLETE (v0.6.7.2+1 – Investigation complete: package management approaches evaluated, tar.gz design, SHA-256 hash verification, security considerations, design specs created)
+- [x] **E06:S07:T02 – Investigate proper package management (single package file, hash verification)** - ✅ COMPLETE (v0.6.7.2+1 – Investigation complete: package management approaches evaluated, tar.gz design, SHA-256 hash verification, security considerations, design specs created)
 
 
-- [x] **E6:S07:T03 – Design pre-release feedback mechanism** - ✅ COMPLETE (v0.6.7.3+1 – Feedback mechanism design, user guide, and template created)
+- [x] **E06:S07:T03 – Design pre-release feedback mechanism** - ✅ COMPLETE (v0.6.7.3+1 – Feedback mechanism design, user guide, and template created)
 
 
-- [x] **E6:S07:T04 – Create package management implementation plan** - ✅ COMPLETE (v0.6.7.10+17 – FR-024 IDE/Linter check before commit feature request created)
+- [x] **E06:S07:T04 – Create package management implementation plan** - ✅ COMPLETE (v0.6.7.10+17 – FR-024 IDE/Linter check before commit feature request created)
 
 
-- [x] **E6:S07:T05 – Implement feedback mechanism** - ✅ COMPLETE (v0.6.7.5+1)
+- [x] **E06:S07:T05 – Implement feedback mechanism** - ✅ COMPLETE (v0.6.7.5+1)
 
 
-- [x] **E6:S07:T06 – Cross-project meta-analysis and canonical framework design** ✅ COMPLETE (v0.6.7.6+20 – All deliverables verified complete: 7 meta-analyses, executive summary, all 4 canonical framework designs)
+- [x] **E06:S07:T06 – Cross-project meta-analysis and canonical framework design** ✅ COMPLETE (v0.6.7.6+20 – All deliverables verified complete: 7 meta-analyses, executive summary, all 4 canonical framework designs)
   - Task: [`T06-cross-project-meta-analysis-and-canonical-framework-design.md`](Story-007-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md)
 
 
 
-- [x] **E6:S07:T07 – Implement framework hardening recommendations** - ✅ COMPLETE (v0.6.7.7+6 – All phases complete: Epic 9→Epic 24, installer validation, rw-config.yaml, .cursorrules, installation instructions)
+- [x] **E06:S07:T07 – Implement framework hardening recommendations** - ✅ COMPLETE (v0.6.7.7+6 – All phases complete: Epic 9→Epic 24, installer validation, rw-config.yaml, .cursorrules, installation instructions)
   - Task: [`T07-implement-framework-hardening-recommendations.md`](Story-007-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md)
 
 
 
-- [x] **E6:S07:T09 – Review and Prioritize Package Management Investigation Findings** - ✅ COMPLETE (v0.6.7.9+1 – Prioritization review complete: findings reviewed, recommendations validated and prioritized, roadmap created)
+- [x] **E06:S07:T09 – Review and Prioritize Package Management Investigation Findings** - ✅ COMPLETE (v0.6.7.9+1 – Prioritization review complete: findings reviewed, recommendations validated and prioritized, roadmap created)
   - Task: [`T09-review-and-prioritize-package-management-investigation.md`](Story-007-adk-implementation-analysis-and-package-management/T09-review-and-prioritize-package-management-investigation.md)
 
 
 
-- [x] **E6:S07:T11 – Changelog Management and Archival Workflow** - ✅ COMPLETE (v0.6.7.11+4 – Phase 6 complete: Initial archival, ALL PHASES COMPLETE)
+- [x] **E06:S07:T11 – Changelog Management and Archival Workflow** - ✅ COMPLETE (v0.6.7.11+4 – Phase 6 complete: Initial archival, ALL PHASES COMPLETE)
   - Task: [`T11-changelog-management-and-archival-workflow.md`](Story-007-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md)
   - **Feature Request:** [FR-025](../../fr-br/FR-025-changelog-management-and-archival-workflow.md)
 
 
 
-- [x] **E6:S07:T13 – Canonical CMW Perpetual Task** - ✅ COMPLETE (v0.6.7.13+2 – All phases complete: CMW perpetual task pattern canonicalized)
+- [x] **E06:S07:T13 – Canonical CMW Perpetual Task** - ✅ COMPLETE (v0.6.7.13+2 – All phases complete: CMW perpetual task pattern canonicalized)
   - Task: [`T13-canonical-cmw-perpetual-task.md`](Story-007-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md)
   - **Feature Request:** [FR-026](../../fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)
 
 
 
-- [x] **E6:S07:T14 – Add CMW to Workflow Management Package Documentation** - ✅ COMPLETE (v0.6.7.14+1 – CMW documentation added to package README, all acceptance criteria met)
+- [x] **E06:S07:T14 – Add CMW to Workflow Management Package Documentation** - ✅ COMPLETE (v0.6.7.14+1 – CMW documentation added to package README, all acceptance criteria met)
   - Task: [`T14-add-cmw-to-workflow-management-package-documentation.md`](Story-007-adk-implementation-analysis-and-package-management/T14-add-cmw-to-workflow-management-package-documentation.md)
   - **Feature Request:** [FR-027](../../fr-br/FR-027-add-cmw-to-workflow-management-package-documentation.md)
 
 
 
-- [x] **E6:S07:T15 – Cursor IDE Performance Considerations Awareness** - ✅ COMPLETE (v0.6.7.15+1 – Implementation complete: Awareness documentation created and framework guidance updated)
+- [x] **E06:S07:T15 – Cursor IDE Performance Considerations Awareness** - ✅ COMPLETE (v0.6.7.15+1 – Implementation complete: Awareness documentation created and framework guidance updated)
   - Task: [`T15-cursor-ide-performance-considerations-awareness.md`](Story-007-adk-implementation-analysis-and-package-management/T15-cursor-ide-performance-considerations-awareness.md)
   - **Feature Request:** [FR-028](../../fr-br/FR-028-cursor-ide-performance-considerations-awareness.md)
 
 
 
-- [x] **E6:S07:T16 – Harden CMW Ordering Before Archival** - ✅ COMPLETE (v0.6.7.16+1 – All phases complete: Step 3.5 added to CMW, ordering fixed before archival)
+- [x] **E06:S07:T16 – Harden CMW Ordering Before Archival** - ✅ COMPLETE (v0.6.7.16+1 – All phases complete: Step 3.5 added to CMW, ordering fixed before archival)
   - Task: [`T16-harden-cmw-ordering-before-archival.md`](Story-007-adk-implementation-analysis-and-package-management/T16-harden-cmw-ordering-before-archival.md)
   - **Analysis Document:** [`docs/analysis/cmw-ordering-flaw-analysis.md`](../../../../analysis/cmw-ordering-flaw-analysis.md)
 
 
 
-- [x] **E6:S07:T18 – Tool-Agnostic Workflow Step Tracking + Persisted Run Logs** - SUPERSEDED → **E2:S01:T23** (re-housed 2026-05-29, FR-087 Wave 4)
-  - Historical: [`T18-tool-agnostic-workflow-step-tracking-and-runlogs.md`](Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Successor: [E2:S01:T23](../Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+- [x] **E06:S07:T18 – Tool-Agnostic Workflow Step Tracking + Persisted Run Logs** - SUPERSEDED → **E02:S01:T23** (re-housed 2026-05-29, FR-087 Wave 4)
+  - Historical: [`T18-tool-agnostic-workflow-step-tracking-and-runlogs.md`](Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md) | Successor: [E02:S01:T23](../Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
 
 
 
-- [ ] **E6:S07:T104 – Release Automation Audit** - TODO
+- [ ] **E06:S07:T104 – Release Automation Audit** - TODO
   - Task: [`T104-release-automation-audit.md`](Story-007-adk-implementation-analysis-and-package-management/T104-release-automation-audit.md)
   - **Scope:** Audit RW/PVW validators, GitHub Actions, badge workflow, GitHub Release script, and required secrets for compatibility with task-touch SemVer tagging
 
 
 
-- [ ] **E6:S07:T105 – Release Runbook Creation** - TODO
+- [ ] **E06:S07:T105 – Release Runbook Creation** - TODO
   - Task: [`T105-release-runbook-creation.md`](Story-007-adk-implementation-analysis-and-package-management/T105-release-runbook-creation.md)
   - **Scope:** Create comprehensive runbook with exact commands and order, respecting "no manual commit/push" policy
 
 
 
-- [ ] **E6:S07:T106 – Windsurf Migration: .cursorrules to Workflow Equivalents** - TODO
+- [ ] **E06:S07:T106 – Windsurf Migration: .cursorrules to Workflow Equivalents** - TODO
   - Task: [`T106-windsurf-migration-cursorrules-to-workflows.md`](Story-007-adk-implementation-analysis-and-package-management/T106-windsurf-migration-cursorrules-to-workflows.md)
   - **Scope:** Map key policies/workflows to Windsurf/Cascade equivalents, including system instructions and developer workflows
 
 
 
-- [ ] **E6:S07:T107 – IDE command whitelist optimization** - TODO (HIGH, pattern-based whitelist to reduce agent approval friction; **not** workflows directory reorganization — checklist label corrected 2026-05-29)
+- [ ] **E06:S07:T107 – IDE command whitelist optimization** - TODO (HIGH, pattern-based whitelist to reduce agent approval friction; **not** workflows directory reorganization — checklist label corrected 2026-05-29)
   - Task: [`T107-ide-command-whitelist-optimization.md`](Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
 
 
 
-- [x] **E6:S07:T109 – BR-059: UKW MoSCOW full open-task coverage** - SUPERSEDED → **E2:S16:T13** (re-housed 2026-05-29, FR-087 Wave 4)
-  - Historical: [`T109-br059-ukw-moscow-full-story-task-coverage.md`](Story-007-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Successor: [E2:S16:T13](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
+- [x] **E06:S07:T109 – BR-059: UKW MoSCOW full open-task coverage** - SUPERSEDED → **E02:S16:T13** (re-housed 2026-05-29, FR-087 Wave 4)
+  - Historical: [`T109-br059-ukw-moscow-full-story-task-coverage.md`](Story-007-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Successor: [E02:S16:T13](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
 
 
-- [x] **E6:S07:T110 – UKW fbuboard scope + concurrency/temporal-drift controls** - ✅ COMPLETE (HIGH, v0.6.7.110+1 — UKW fbuboard parity + drift/concurrency controls released)
+- [x] **E06:S07:T110 – UKW fbuboard scope + concurrency/temporal-drift controls** - ✅ COMPLETE (HIGH, v0.6.7.110+1 — UKW fbuboard parity + drift/concurrency controls released)
   - Task: [`T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md`](Story-007-adk-implementation-analysis-and-package-management/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md) | [FR-076](../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-  - **Coordinates:** [E2:S16:T03](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (Story 016 migration anchor), [E6:S07:T108](Story-007-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) (SUPERSEDED → [E2:S16:T07](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md))
+  - **Coordinates:** [E02:S16:T03](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (Story 016 migration anchor), [E06:S07:T108](Story-007-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) (SUPERSEDED → [E02:S16:T07](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md))
 
 
 
-- [x] **E6:S07:T111 – Comprehensive install event-contract logging quality** - ✅ COMPLETE (CRITICAL, v0.6.7.111+1 — FR-078 install contract + validator + verification complete on 2026-04-10)
+- [x] **E06:S07:T111 – Comprehensive install event-contract logging quality** - ✅ COMPLETE (CRITICAL, v0.6.7.111+1 — FR-078 install contract + validator + verification complete on 2026-04-10)
   - Task: [`T111-comprehensive-install-event-contract-logging-and-feedback-quality.md`](Story-007-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md) | [FR-078](../../fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
 
 
-- [ ] **E6:S07:T112 – Install feedback submission path and governance** - IN PROGRESS (CRITICAL, convert local telemetry into safe, deterministic feedback submissions for maintainer triage)
+- [ ] **E06:S07:T112 – Install feedback submission path and governance** - IN PROGRESS (CRITICAL, convert local telemetry into safe, deterministic feedback submissions for maintainer triage)
   - Task: [`T112-install-feedback-submission-path-and-governance.md`](Story-007-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md) | [FR-079](../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
 
 
-- [x] **E6:S07:T113 – RW Step 12.5 GitHub release parser hardening (BR-065)** - ✅ COMPLETE (HIGH, parser hardening + deterministic diagnostics + regression tests implemented)
+- [x] **E06:S07:T113 – RW Step 12.5 GitHub release parser hardening (BR-065)** - ✅ COMPLETE (HIGH, parser hardening + deterministic diagnostics + regression tests implemented)
   - Task: [`T113-rw-step-12-5-github-release-parser-hardening-br065.md`](Story-007-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md) | [BR-065](../../fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
 
 
-- [x] **E6:S07:T114 – Canonical board filename migration (`kboard.md` / `fbuboard.md`)** - ✅ COMPLETE (HIGH, v0.6.7.114+1 — defaults migrated across project + packages; UXR/task/ICW backfilled)
+- [x] **E06:S07:T114 – Canonical board filename migration (`kboard.md` / `fbuboard.md`)** - ✅ COMPLETE (HIGH, v0.6.7.114+1 — defaults migrated across project + packages; UXR/task/ICW backfilled)
   - Task: [`T114-canonical-board-filename-migration-kboard-fbuboard.md`](Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md) | [UXR-008](../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
 
-- [x] **E6:S07:T115 – Last-modified stamp forensic integrity guardrails** - COMPLETE (CRITICAL, FR-092 v0.2.15.7+9 delivered Wave 6 stamp-evidence gate; ACs satisfied via meta-program absorption)
+- [x] **E06:S07:T115 – Last-modified stamp forensic integrity guardrails** - COMPLETE (CRITICAL, FR-092 v0.2.15.7+9 delivered Wave 6 stamp-evidence gate; ACs satisfied via meta-program absorption)
   - Task: [`T115-last-modified-stamp-forensic-integrity-guardrails.md`](Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md) | [UXR-009](../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 
 
-- [x] **E6:S07:T116 – UKW optional reprioritization `--rp` flag (FR-085)** - SUPERSEDED (re-housed to **E2:S16:T06** for canonical perpetual workflow-operations ownership; legacy task doc removed)
-  - Historical anchor: `E6:S07:T116` | [FR-085](../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | Successor: [E2:S16:T06](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
+- [x] **E06:S07:T116 – UKW optional reprioritization `--rp` flag (FR-085)** - SUPERSEDED (re-housed to **E02:S16:T06** for canonical perpetual workflow-operations ownership; legacy task doc removed)
+  - Historical anchor: `E06:S07:T116` | [FR-085](../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | Successor: [E02:S16:T06](../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
 
 ---
 
@@ -161,9 +161,9 @@ housekeeping_policy: keep
 - RW agent execution, step tracking, release automation policy → **E2:S01** (e.g. T23)
 - Kanban/FBU abstract governance, board naming, intake meta-policy → **E4:S19**
 - IPW publication contract, RW/UKW architectural programs → **E2:S15** (FR-092)
-- Perpetual task placement inventory → **E2:S16:T02** / **IPP-E2S16T01** (defers from FR-087)
+- Perpetual task placement inventory → **E02:S16:T02** / **IPP-E02S16T01** (defers from FR-087)
 
-**Freeze:** New tasks under `E6:S07` require explicit `Default Housing Override Rationale:` until guardrail validator lands (see [E4:S19:T03 report](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md) §6).
+**Freeze:** New tasks under `E6:S07` require explicit `Default Housing Override Rationale:` until guardrail validator lands (see [E04:S19:T03 report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md) §6).
 
 ---
 
@@ -226,7 +226,7 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ## Tasks
 
-### E6:S07:T00 – Story creation and comprehensive structure documentation
+### E06:S07:T00 – Story creation and comprehensive structure documentation
 
 **Status:** IN PROGRESS
 **Priority:** HIGH
@@ -254,11 +254,11 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-### E6:S07:T01 – Comprehensive ADK implementation analysis across all projects
+### E06:S07:T01 – Comprehensive ADK implementation analysis across all projects
 
 **Status:** IN PROGRESS
 **Priority:** CRITICAL
-**Dependencies:** E6:S07:T00
+**Dependencies:** E06:S07:T00
 **Estimated Effort:** VERY LARGE
 **Version:** v0.6.7.115+1
 
@@ -406,11 +406,11 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-### E6:S07:T02 – Investigate proper package management (single package file, hash verification)
+### E06:S07:T02 – Investigate proper package management (single package file, hash verification)
 
 **Status:** IN PROGRESS
 **Priority:** CRITICAL
-**Dependencies:** E6:S07:T01 (informs requirements)
+**Dependencies:** E06:S07:T01 (informs requirements)
 **Estimated Effort:** MEDIUM-LARGE
 
 **Input:**
@@ -485,11 +485,11 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-### E6:S07:T03 – Design pre-release feedback mechanism
+### E06:S07:T03 – Design pre-release feedback mechanism
 
 **Status:** IN PROGRESS
 **Priority:** HIGH
-**Dependencies:** E6:S07:T01, E6:S07:T02
+**Dependencies:** E06:S07:T01, E06:S07:T02
 **Estimated Effort:** MEDIUM
 
 **Input:**
@@ -552,11 +552,11 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-### E6:S07:T09 – Review and Prioritize Package Management Investigation Findings
+### E06:S07:T09 – Review and Prioritize Package Management Investigation Findings
 
 **Status:** IN PROGRESS
 **Priority:** HIGH
-**Dependencies:** E6:S07:T02
+**Dependencies:** E06:S07:T02
 **Estimated Effort:** SMALL-MEDIUM
 
 **Input:**
@@ -618,11 +618,11 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-### E6:S07:T04 – Create package management implementation plan
+### E06:S07:T04 – Create package management implementation plan
 
 **Status:** IN PROGRESS
 **Priority:** HIGH
-**Dependencies:** E6:S07:T02, E6:S07:T09, E6:S07:T03
+**Dependencies:** E06:S07:T02, E06:S07:T09, E06:S07:T03
 **Estimated Effort:** MEDIUM
 
 **Input:**
@@ -683,11 +683,11 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-### E6:S07:T05 – Implement feedback mechanism
+### E06:S07:T05 – Implement feedback mechanism
 
 **Status:** IN PROGRESS
 **Priority:** MEDIUM
-**Dependencies:** E6:S07:T03
+**Dependencies:** E06:S07:T03
 **Estimated Effort:** MEDIUM
 
 **Input:**
@@ -736,11 +736,11 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-### E6:S07:T06 – Cross-project meta-analysis and canonical framework design
+### E06:S07:T06 – Cross-project meta-analysis and canonical framework design
 
 **Status:** IN PROGRESS
 **Priority:** CRITICAL
-**Dependencies:** E6:S07:T01 (requires all project reports and granular analyses)
+**Dependencies:** E06:S07:T01 (requires all project reports and granular analyses)
 **Estimated Effort:** VERY LARGE
 
 **Input:**
@@ -1041,11 +1041,11 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-### E6:S07:T07 – Implement framework hardening recommendations
+### E06:S07:T07 – Implement framework hardening recommendations
 
 **Status:** IN PROGRESS
 **Priority:** CRITICAL
-**Dependencies:** E6:S07:T01 (requires hardening recommendations from analysis)
+**Dependencies:** E06:S07:T01 (requires hardening recommendations from analysis)
 **Estimated Effort:** LARGE
 
 **Input:**
@@ -1144,7 +1144,7 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 **Related Work:**
 
-- **Related Task:** E6:S07:T01 - Comprehensive ADK implementation analysis (provides hardening recommendations)
+- **Related Task:** E06:S07:T01 - Comprehensive ADK implementation analysis (provides hardening recommendations)
 - **Related Documents:**
 
   - `docs/knowledge/analysis/adk-hardening-recommendations.md`

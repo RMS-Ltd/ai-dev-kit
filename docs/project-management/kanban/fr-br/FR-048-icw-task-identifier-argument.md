@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** PENDING  
 
-**Implementing Task:** [E5:S01:T48](../epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md)  
-**Historical registry:** E2:S01:T14 RW trigger variant
+**Implementing Task:** [E05:S01:T48](../epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md)  
+**Historical registry:** E02:S01:T14 RW trigger variant
 **GitHub Issue:** TBD
 
 ---
@@ -47,7 +47,7 @@ Currently, the ICW can be called without explicit task binding, which can lead t
 
 ### What is the use case?
 
-- **Task-Specific Planning:** Users want to run ICW for specific tasks like "E5:S01:T47"
+- **Task-Specific Planning:** Users want to run ICW for specific tasks like "E05:S01:T47"
 - **Clear Workflow Context:** Ensure ICW sessions are explicitly tied to Kanban requirements
 - **Improved Traceability:** Direct mapping between ICW execution and task documentation
 - **Better Planning Integration:** Strengthen the connection between ICW and Kanban planning
@@ -66,7 +66,7 @@ Currently, the ICW can be called without explicit task binding, which can lead t
 ### Functional Requirements
 
 - [ ] **FR-048:R01** – ICW requires a task identifier argument when invoked
-- [ ] **FR-048:R02** – Task identifier must include clear E/S/T numbering (e.g., "E5:S01:T47")
+- [ ] **FR-048:R02** – Task identifier must include clear E/S/T numbering (e.g., "E05:S01:T47")
 - [ ] **FR-048:R03** – Flexible formatting support for various task identifier formats
 - [ ] **FR-048:R04** – Validation that the task identifier references an existing Kanban task
 - [ ] **FR-048:R05** – Integration with existing planning mode requirement
@@ -108,14 +108,14 @@ Currently, the ICW can be called without explicit task binding, which can lead t
 ### Primary Use Case
 
 1. User wants to run ICW for a specific task
-2. User calls ICW with task identifier: `icw --task E5:S01:T47`
+2. User calls ICW with task identifier: `icw --task E05:S01:T47`
 3. ICW validates the task exists in Kanban
 4. ICW proceeds with planning mode execution for that specific task
 5. All ICW output and artifacts are linked to the task identifier
 
 ### Additional Use Cases
 
-- **Multiple Formats:** Support various formats like "E5:S01:T47", "E5S01T47", "T47"
+- **Multiple Formats:** Support various formats like "E05:S01:T47", "E05S01T47", "T47"
 - **Task Validation:** Verify task exists before proceeding
 - **Error Handling:** Clear guidance when task identifier is invalid
 - **Documentation Integration:** Automatic linking to task documentation
@@ -146,7 +146,7 @@ Currently, the ICW can be called without explicit task binding, which can lead t
 
 **Related Work:**
 
-- E5:S01:T40 – Implementation Cycle Workflow (ICW)
+- E05:S01:T40 – Implementation Cycle Workflow (ICW)
 - FR-040 – Implementation Cycle Workflow (ICW)
 - ICW Handler Scripts and Configuration
 
@@ -168,7 +168,7 @@ Currently, the ICW can be called without explicit task binding, which can lead t
 
 - Epic: Epic 5 (Documentation Management and Maintenance)
 - Story: Story 1 (FR Repository)
-- Task: Task 48 (E5:S01:T48)
+- Task: Task 48 (E05:S01:T48)
 - Version: `v0.5.1.48+1`
 
 **Kanban Links:**
@@ -190,11 +190,11 @@ Currently, the ICW can be called without explicit task binding, which can lead t
 
 ## References
 
-- E5:S01:T40 – Implementation Cycle Workflow (ICW)
+- E05:S01:T40 – Implementation Cycle Workflow (ICW)
 - FR-040 – Implementation Cycle Workflow (ICW)
 - ICW Handler: `packages/frameworks/workflow mgt/scripts/icw/icw_handler.py`
 - ICW Configuration: `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/`
 
 ---
 
-_This feature request follows the Kanban Framework FR template and is anchored as FR-048 in the FR repository story (E5:S01:T48)._
+_This feature request follows the Kanban Framework FR template and is anchored as FR-048 in the FR repository story (E05:S01:T48)._

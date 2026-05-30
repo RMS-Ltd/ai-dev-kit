@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task T03 – Apple SDK License Blocking Issue Investigation
 
-**Task ID:** E6:S06:T03  
+**Task ID:** E06:S06:T03  
 **Status:** ✅ COMPLETED  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
@@ -23,7 +23,7 @@ housekeeping_policy: keep
 ## Task ID
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
-**Value:** `E6:S06:T03`
+**Value:** `E06:S06:T03`
 
 ---
 
@@ -243,4 +243,4 @@ Investigate Apple SDK license blocking issues, identify root causes, and impleme
 
 ---
 
-**End of Task Document E6:S06:T03**
+**End of Task Document E06:S06:T03**

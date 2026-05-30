@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E5:S01:T72 – Uniform Repository vs Abstract-Space Kanban Rules
+# Task E05:S01:T72 – Uniform Repository vs Abstract-Space Kanban Rules
 
-**Task ID:** E5:S01:T72  
+**Task ID:** E05:S01:T72  
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Version Anchor:** v0.5.1.72+0 (RW -k doc-init — **Released** 2026-03-31)  
@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 Consolidate **cross-epic** rules so **Story 0** (abstract space vs repository), **FR/BR/UXR repository** placement, and **version/intake** semantics are **one coherent model**. Evaluate approaches **A–D** in FR-072, **decide**, then **update policy and all affected documentation** (including **FR-021** reconciliation, Kanban governance, ADR/architecture, Epic 7 UXR story numbering, and validator/intake guidance).
 
-**Traceability:** **FR-072** (not **FR-064**, which is [`FR-064-shields-branch-private-repo-badges.md`](../../../fr-br/FR-064-shields-branch-private-repo-badges.md) / **E5:S01:T69**).
+**Traceability:** **FR-072** (not **FR-064**, which is [`FR-064-shields-branch-private-repo-badges.md`](../../../fr-br/FR-064-shields-branch-private-repo-badges.md) / **E05:S01:T69**).
 
 ---
 
@@ -97,7 +97,7 @@ Consolidate **cross-epic** rules so **Story 0** (abstract space vs repository), 
 ## Wiring
 
 - **Epic / Story:** E5:S01 (FR Repo)  
-- **Traceability:** FR-072 = E5:S01:T72  
+- **Traceability:** FR-072 = E05:S01:T72  
 
 ---
 

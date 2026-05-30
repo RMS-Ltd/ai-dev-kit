@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task 004 – Enhance DO Phase (Improve commit message guidance and execution docs)
 
-**Task:** E2:S02:T04  
+**Task:** E02:S02:T04  
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Created:** 2025-12-03  
@@ -90,9 +90,9 @@ Enhance the DO phase of the Release Workflow by improving commit message guidanc
 
 ## Related Tasks
 
-- E2:S02:T01 – Add CHECK Phase (coordinates with verification status)
-- E2:S02:T03 – Enhance PLAN Phase (coordinates with changelog intent)
-- E2:S02:T05 – Create PDCA templates and examples (includes DO templates)
+- E02:S02:T01 – Add CHECK Phase (coordinates with verification status)
+- E02:S02:T03 – Enhance PLAN Phase (coordinates with changelog intent)
+- E02:S02:T05 – Create PDCA templates and examples (includes DO templates)
 
 ---
 

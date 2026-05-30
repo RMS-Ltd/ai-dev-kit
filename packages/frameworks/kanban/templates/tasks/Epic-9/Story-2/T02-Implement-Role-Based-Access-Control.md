@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E9:S2:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E09:S02:T02`)
 
 **Full Task ID:** `E09:S02:T02`
 
@@ -34,7 +34,7 @@ Implement role-based access control (RBAC) for the {PROJECT_NAME} project. Build
 
 ## Input
 
-- Authorization architecture (from E9:S2:T01)
+- Authorization architecture (from E09:S02:T01)
 - RBAC requirements
 - Role definitions
 - Role assignment requirements
@@ -82,12 +82,12 @@ Implement role-based access control (RBAC) for the {PROJECT_NAME} project. Build
 ## Dependencies
 
 **Depends On:**
-- E9:S2:T01: Design authorization architecture (RBAC implements architecture)
+- E09:S02:T01: Design authorization architecture (RBAC implements architecture)
 
 **Blocks:**
-- E9:S2:T03: Create permission system (permission system integrates with RBAC)
-- E9:S2:T04: Implement access control middleware (middleware uses RBAC)
-- E9:S2:T06: Create admin/user role management (role management uses RBAC)
+- E09:S02:T03: Create permission system (permission system integrates with RBAC)
+- E09:S02:T04: Implement access control middleware (middleware uses RBAC)
+- E09:S02:T06: Create admin/user role management (role management uses RBAC)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -96,10 +96,10 @@ Implement role-based access control (RBAC) for the {PROJECT_NAME} project. Build
 ## Related Work
 
 **Related Tasks:**
-- E9:S2:T01: Design authorization architecture (RBAC implements architecture)
-- E9:S2:T03: Create permission system (permission system integrates with RBAC)
-- E9:S2:T04: Implement access control middleware (middleware uses RBAC)
-- E9:S2:T06: Create admin/user role management (role management uses RBAC)
+- E09:S02:T01: Design authorization architecture (RBAC implements architecture)
+- E09:S02:T03: Create permission system (permission system integrates with RBAC)
+- E09:S02:T04: Implement access control middleware (middleware uses RBAC)
+- E09:S02:T06: Create admin/user role management (role management uses RBAC)
 
 **Related Stories:**
 - E9:S2: User Authorization and Permissions (this story)

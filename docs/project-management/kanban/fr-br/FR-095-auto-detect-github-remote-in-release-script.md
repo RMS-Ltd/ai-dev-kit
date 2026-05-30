@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM
 **Severity:** LOW
 **Status:** COMPLETE
-**Implementing Task:** E2:S16:T10
+**Implementing Task:** E02:S16:T10
 
 ---
 
@@ -69,6 +69,6 @@ The error manifests as a 403 PAT error because the token lacks access to the har
 
 ## Related
 
-- E2:S16:T10 — Ad-hoc Repository Infrastructure Maintenance (perpetual)
+- E02:S16:T10 — Ad-hoc Repository Infrastructure Maintenance (perpetual)
 - FR-062 — GitHub release installation experience
 - `packages/frameworks/workflow mgt/scripts/create_github_release.py`

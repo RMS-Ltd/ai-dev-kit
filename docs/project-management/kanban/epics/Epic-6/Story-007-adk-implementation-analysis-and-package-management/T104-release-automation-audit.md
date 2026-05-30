@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E6:S07:T104 – Release Automation Audit
+# E06:S07:T104 – Release Automation Audit
 
-**Task ID:** E6:S07:T104
+**Task ID:** E06:S07:T104
 **Status:** COMPLETE
 **Priority:** HIGH
 **Estimated Effort:** Medium
@@ -108,7 +108,7 @@ Comprehensive audit report covering:
 
 ## Related Work
 
-- E2:S16:T03: RW Maintenance (perpetual task)
+- E02:S16:T03: RW Maintenance (perpetual task)
 - FR-046: RW Uses SemVer Tag When Task-Touch Enabled
 - Release automation documentation and policies
 

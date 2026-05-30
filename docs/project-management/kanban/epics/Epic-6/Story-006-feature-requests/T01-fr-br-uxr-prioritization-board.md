@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Created:** 2026-03-09  
 **Last updated:** 2026-03-09  
 **Version:** v0.6.7.107+1  
-**Code:** E6:S06:T01  
+**Code:** E06:S06:T01  
 **Associated FR:** [FR-051](../../../fr-br/FR-051-fr-br-uxr-prioritization-board.md)
 
 ---

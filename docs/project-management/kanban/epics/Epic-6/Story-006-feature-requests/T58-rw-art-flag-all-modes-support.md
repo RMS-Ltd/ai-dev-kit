@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task T58 - RW `--art` Support for All RW Modes (BR-060)
 
-**Task ID:** E6:S06:T58  
+**Task ID:** E06:S06:T58  
 **Status:** ✅ COMPLETE (v0.6.6.58+2)  
 **Priority:** HIGH  
 **Estimated Effort:** Small (0.5-1 day)  
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 ## Task ID
 
 **Format:** `E{epic}:S{story}:T{task}`  
-**Full Task ID:** `E6:S06:T58`
+**Full Task ID:** `E06:S06:T58`
 
 ---
 
@@ -54,9 +54,9 @@ Make `--art` usable across all Release Workflow modes (`RW`, `RW -d`, `RW -k`) b
 
 ## Acceptance Criteria
 
-- [ ] `validate_rw_task_intent.py --requested E5:S01:T72 --art` returns pass semantics for explicit adoption.
-- [ ] `validate_branch_context.py --strict --requested E6:S06:T58 --art` applies requested anchor context.
-- [ ] `validate_version_bump.py --strict --requested E6:S06:T58 --art` validates against requested anchor context.
+- [ ] `validate_rw_task_intent.py --requested E05:S01:T72 --art` returns pass semantics for explicit adoption.
+- [ ] `validate_branch_context.py --strict --requested E06:S06:T58 --art` applies requested anchor context.
+- [ ] `validate_version_bump.py --strict --requested E06:S06:T58 --art` validates against requested anchor context.
 - [ ] `.cursorrules` Step 1d text documents `--art` for regular RW and `RW -d`, not only `RW -k`.
 - [ ] Packaged RW trigger section mirrors root `.cursorrules` behavior.
 - [ ] `release-workflow-agent-execution.md` Step 1.5 documents all-mode `--art`.

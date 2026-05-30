@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 2, Story 16, Task 8: `/ukw` slash command for Claude Code (FR-093)
 
-**Task ID:** E2:S16:T08  
+**Task ID:** E02:S16:T08  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
 **Created:** 2026-05-13  
 **Last updated:** 2026-05-13 ✅ COMPLETE (v0.2.16.8+1)  
-**Code:** E2S16T08
+**Code:** E02S16T08
 
 **Upstream:** [FR-093 — `/ukw` slash command for Claude Code](../../../fr-br/FR-093-ukw-slash-command-claude-code.md)
 
@@ -59,7 +59,7 @@ UKW had no dedicated `/ukw` slash command in Claude Code. Invocation relied on p
 - [x] **AC2:** `/ukw` with no flags triggers comprehensive UKW; flags `-u`, `-p`, `-a` scope correctly per step execution matrix.
 - [x] **AC3:** Plain-text `UKW` / `ukw` (case-insensitive) route to the command in Claude Code sessions via `CLAUDE.md`.
 - [x] **AC4:** `CLAUDE.md` `## UKW Trigger Routing` section includes AC3 / blocked-session handling.
-- [x] **AC5:** FR-093 and E2:S16:T08 are bidirectionally linked.
+- [x] **AC5:** FR-093 and E02:S16:T08 are bidirectionally linked.
 
 ---
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 65: Align Workflow Mgt README With Registry Workflow Count
 
-**Task ID:** E5:S01:T65  
+**Task ID:** E05:S01:T65  
 **Status:** COMPLETE (2026-03-30 — workflow mgt README aligned to **11** + registry SoT)  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 — released v0.5.1.65+2 (README + kanban closure)  
 **Version:** v0.5.1.65+2  
 **Version Anchor:** v0.5.1.65+2  
-**Code:** E5S01T65
+**Code:** E05S01T65
 
-**Repository Pattern:** Internal scaffold (no FR yet). Complements **E5:S01:T56** / **FR-056** (broader standardization).
+**Repository Pattern:** Internal scaffold (no FR yet). Complements **E05:S01:T56** / **FR-056** (broader standardization).
 
 ---
 
@@ -53,8 +53,8 @@ Remove **stale “12 workflows”** claims in [`workflow mgt/README.md` (source)
 
 ## Related Work
 
-- **E5:S01:T56** / **FR-056** — full packaged workflow doc standardization.
-- **E5:S01:T64** / **FR-061** — root README Workflows section.
+- **E05:S01:T56** / **FR-056** — full packaged workflow doc standardization.
+- **E05:S01:T64** / **FR-061** — root README Workflows section.
 
 ---
 

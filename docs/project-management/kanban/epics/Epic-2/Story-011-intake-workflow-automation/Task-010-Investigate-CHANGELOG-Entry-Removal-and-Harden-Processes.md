@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E2:S11:T10`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E02:S11:T10`)
 
 **Full Task ID:** `E02:S11:T10`
 
@@ -216,8 +216,8 @@ if CHANGELOG.md modified:
 
 **Related Tasks:**
 - E2:S08 (RW Step 7 Hardening) - Similar validation and protection patterns
-- E2:S11:T09 (Documentation and Testing) - Where the removal occurred
-- E2:S01:T06 - Changelog validator ordering bug (related validation work)
+- E02:S11:T09 (Documentation and Testing) - Where the removal occurred
+- E02:S01:T06 - Changelog validator ordering bug (related validation work)
 
 **Related Stories:**
 - E2:S11: Intake Workflow Automation
@@ -281,7 +281,7 @@ if CHANGELOG.md modified:
 
 ## References
 
-- Commit `f092c1f`: v0.2.11.9+3 - E2:S11:T09: Expanded Analysis Framework
+- Commit `f092c1f`: v0.2.11.9+3 - E02:S11:T09: Expanded Analysis Framework
 - `validate_changelog_format.py` - Enhanced changelog validation
 - `release-workflow-agent-execution.md` - RW documentation (updated)
 - CHANGELOG restoration work (2025-12-16)

@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 5, Story 9, Task 07: Docusaurus site search (FR-071)
 
-**Task ID:** E5:S09:T07  
+**Task ID:** E05:S09:T07  
 **Status:** COMPLETE  
 **Priority:** LOW  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-30  
-**Last updated:** 2026-03-30 — **v0.5.9.7+1** (RW E5:S09:T07 — FR-071)  
-**Code:** E5S09T07
+**Last updated:** 2026-03-30 — **v0.5.9.7+1** (RW E05:S09:T07 — FR-071)  
+**Code:** E05S09T07
 
 **Feature Request:** [FR-071 – Site search](../../../fr-br/FR-071-docusaurus-site-search.md)
 
@@ -29,7 +29,7 @@ Implement **FR-071**: add **Algolia DocSearch** (or self-serve) **or** **local/o
 ## Input
 
 - [FR-071](../../../fr-br/FR-071-docusaurus-site-search.md)
-- **E5:S09:T06** live URL
+- **E05:S09:T06** live URL
 
 ---
 
@@ -66,7 +66,7 @@ Implement **FR-071**: add **Algolia DocSearch** (or self-serve) **or** **local/o
 
 ## Version Anchor
 
-**Forensic marker:** `✅ COMPLETE (v0.5.9.7+1)` — **RW E5:S09:T07**.
+**Forensic marker:** `✅ COMPLETE (v0.5.9.7+1)` — **RW E05:S09:T07**.
 
 ---
 
@@ -80,4 +80,4 @@ Implement **FR-071**: add **Algolia DocSearch** (or self-serve) **or** **local/o
 
 ## Dependencies
 
-- **E5:S09:T06** (FR-070) for production verification.
+- **E05:S09:T06** (FR-070) for production verification.

@@ -1,0 +1,61 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": ["Epic 4 S19 T09 COMPLETE v0.4.19.9+2"],
+      "paths": ["docs/project-management/kanban/epics/Epic-4/Epic-4.md"],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": ["Story 019 T09 checklist COMPLETE v0.4.19.9+2"],
+      "paths": ["docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md"],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 4,
+    "story": 19,
+    "task": 9,
+    "task_id": "E04:S19:T09",
+    "version_string": "v0.4.19.9+2"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "work_authoritative",
+    "stamps_appended_with_evidence": 2,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard", "story_doc", "epic_doc"]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": ["UXR-014 ACCEPTED; AC1–AC5 checked"],
+      "paths": ["docs/project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md"],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": ["UXR-014 row COMPLETE/ACCEPTED v0.4.19.9+2; stamp 2026-05-30 10:30 UTC"],
+      "paths": ["docs/project-management/kanban/fbuboard.md"],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["E04:S19:T09 row COMPLETE v0.4.19.9+2; stamp 2026-05-30 10:30 UTC"],
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": ["COMPLETE v0.4.19.9+2; version anchor updated"],
+      "paths": ["docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md"],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-05-30 09:24 UTC"
+}

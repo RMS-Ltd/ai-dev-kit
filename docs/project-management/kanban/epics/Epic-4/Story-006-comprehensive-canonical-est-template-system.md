@@ -39,23 +39,23 @@ This enables projects to adopt ai-dev-kit with zero cognitive load for E/S/T str
 
 ## Task Checklist
 
-- [x] **E4:S06:T00 – Story creation and comprehensive structure documentation** ✅ COMPLETE (v0.4.6.0+1)
-- [x] **E4:S06:T01 – Create individual epic template files for canonical epics (1-7)** ✅ COMPLETE (v0.4.6.7+1) — **FR-005 closure:** [`T01-canonical-est-template-closure-fr005.md`](Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md) ✅ COMPLETE (v0.4.6.1+1)
-- [x] **E4:S06:T02 – Create individual epic template files for project-specific canonical epics (8-21)** ✅ COMPLETE (v0.4.6.10+1 – All 14 epic templates created: Epics 8-21)
-- [x] **E4:S06:T03 – Create story template files for each typical story** ✅ COMPLETE (v0.4.6.3+1 – All 62 story templates created for Epic 1-21)
-- [x] **E4:S06:T04 – Create task template files for each typical task** ✅ COMPLETE (v0.4.6.4+43 – All 378 canonical task templates generated, validated, sanitized, and duplicates cleaned up)
-- [x] **E4:S06:T05 – Create contextualization guide and examples** - ✅ COMPLETE (v0.4.6.5+1)
-- [x] **E4:S06:T06 – Update CANONICAL_EPICS.md to reference comprehensive structure (BR-005)** ✅ COMPLETE (v0.4.6.6+1)
-- [x] **E4:S06:T07 – Integrate with template setup guide and installation workflow** - ✅ COMPLETE (v0.6.7.104+2 – Enhanced integration with setup guide, improved contextualization guide cross-references, comprehensive BR-009 validation completed)
-- [x] **E4:S06:T08 – Validate structure with test projects (tiny, small, ambitious)** - ✅ COMPLETE (v0.4.6.8+1 – Validation completed via contextualization examples: tiny-project, small-project, ambitious-project examples created and documented in T05)
-- [x] **E4:S06:T09 – BR-009: Improve installer discoverability and documentation** ✅ COMPLETE (v0.4.6.9+2)
-- [x] **E4:S06:T10 – BR-004: Fix epic contamination in installer** ✅ COMPLETE (v0.4.6.10+1)
+- [x] **E04:S06:T00 – Story creation and comprehensive structure documentation** ✅ COMPLETE (v0.4.6.0+1)
+- [x] **E04:S06:T01 – Create individual epic template files for canonical epics (1-7)** ✅ COMPLETE (v0.4.6.7+1) — **FR-005 closure:** [`T01-canonical-est-template-closure-fr005.md`](Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md) ✅ COMPLETE (v0.4.6.1+1)
+- [x] **E04:S06:T02 – Create individual epic template files for project-specific canonical epics (8-21)** ✅ COMPLETE (v0.4.6.10+1 – All 14 epic templates created: Epics 8-21)
+- [x] **E04:S06:T03 – Create story template files for each typical story** ✅ COMPLETE (v0.4.6.3+1 – All 62 story templates created for Epic 1-21)
+- [x] **E04:S06:T04 – Create task template files for each typical task** ✅ COMPLETE (v0.4.6.4+43 – All 378 canonical task templates generated, validated, sanitized, and duplicates cleaned up)
+- [x] **E04:S06:T05 – Create contextualization guide and examples** - ✅ COMPLETE (v0.4.6.5+1)
+- [x] **E04:S06:T06 – Update CANONICAL_EPICS.md to reference comprehensive structure (BR-005)** ✅ COMPLETE (v0.4.6.6+1)
+- [x] **E04:S06:T07 – Integrate with template setup guide and installation workflow** - ✅ COMPLETE (v0.6.7.104+2 – Enhanced integration with setup guide, improved contextualization guide cross-references, comprehensive BR-009 validation completed)
+- [x] **E04:S06:T08 – Validate structure with test projects (tiny, small, ambitious)** - ✅ COMPLETE (v0.4.6.8+1 – Validation completed via contextualization examples: tiny-project, small-project, ambitious-project examples created and documented in T05)
+- [x] **E04:S06:T09 – BR-009: Improve installer discoverability and documentation** ✅ COMPLETE (v0.4.6.9+2)
+- [x] **E04:S06:T10 – BR-004: Fix epic contamination in installer** ✅ COMPLETE (v0.4.6.10+1)
 
 ---
 
 ## Tasks
 
-### E4:S06:T01 – Create individual epic template files for canonical epics (1-7)
+### E04:S06:T01 – Create individual epic template files for canonical epics (1-7)
 
 **Status:** COMPLETE
 **Priority:** HIGH  
@@ -101,11 +101,11 @@ This enables projects to adopt ai-dev-kit with zero cognitive load for E/S/T str
 
 ---
 
-### E4:S06:T02 – Create individual epic template files for project-specific canonical epics (8-21)
+### E04:S06:T02 – Create individual epic template files for project-specific canonical epics (8-21)
 
 **Status:** COMPLETE
 **Priority:** HIGH  
-**Dependencies:** E4:S06:T01  
+**Dependencies:** E04:S06:T01  
 **Blocker:** None
 
 **Input:**
@@ -157,11 +157,11 @@ Epic numbers in the template list above follow **adopter-oriented** canonical nu
 
 ---
 
-### E4:S06:T03 – Create story template files for each typical story
+### E04:S06:T03 – Create story template files for each typical story
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Dependencies:** E4:S06:T01, E4:S06:T02 (✅ Complete)  
+**Dependencies:** E04:S06:T01, E04:S06:T02 (✅ Complete)  
 **Blocker:** None
 
 **Input:**
@@ -205,11 +205,11 @@ Epic numbers in the template list above follow **adopter-oriented** canonical nu
 
 ---
 
-### E4:S06:T04 – Create task template files for each typical task
+### E04:S06:T04 – Create task template files for each typical task
 
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Dependencies:** E4:S06:T03  
+**Dependencies:** E04:S06:T03  
 **Blocker:** None  
 **Version:** v0.4.6.4+43
 
@@ -255,11 +255,11 @@ All 378 canonical task templates have been successfully generated, validated, an
 
 ---
 
-### E4:S06:T05 – Create contextualization guide and examples
+### E04:S06:T05 – Create contextualization guide and examples
 
 **Status:** ✅ COMPLETE (v0.4.6.5+1)
 **Priority:** HIGH  
-**Dependencies:** E4:S06:T01, E4:S06:T02  
+**Dependencies:** E04:S06:T01, E04:S06:T02  
 **Blocker:** None
 
 **Input:**
@@ -321,11 +321,11 @@ All 378 canonical task templates have been successfully generated, validated, an
 
 ---
 
-### E4:S06:T06 – Update CANONICAL_EPICS.md to reference comprehensive structure (BR-005)
+### E04:S06:T06 – Update CANONICAL_EPICS.md to reference comprehensive structure (BR-005)
 
 **Status:** COMPLETE
 **Priority:** HIGH  
-**Dependencies:** E4:S06:T01, E4:S06:T02, BR-005  
+**Dependencies:** E04:S06:T01, E04:S06:T02, BR-005  
 **Blocker:** None
 
 **Input:**
@@ -395,11 +395,11 @@ All 378 canonical task templates have been successfully generated, validated, an
 
 ---
 
-### E4:S06:T07 – Integrate with template setup guide and installation workflow
+### E04:S06:T07 – Integrate with template setup guide and installation workflow
 
 **Status:** COMPLETE
 **Priority:** HIGH  
-**Dependencies:** E4:S06:T01-T06  
+**Dependencies:** E04:S06:T01-T06  
 **Blocker:** BR-004 fix (epic contamination), FR-005 implementation  
 **Linked BR:** BR-009 (GitHub issue #14) - Installer discoverability and documentation
 **Enhanced:** v0.6.7.104+2 - Comprehensive BR-009 validation, improved cross-references, integration validation report
@@ -443,11 +443,11 @@ All 378 canonical task templates have been successfully generated, validated, an
 
 ---
 
-### E4:S06:T08 – Validate structure with test projects (tiny, small, ambitious)
+### E04:S06:T08 – Validate structure with test projects (tiny, small, ambitious)
 
 **Status:** COMPLETE
 **Priority:** MEDIUM  
-**Dependencies:** E4:S06:T01-T07  
+**Dependencies:** E04:S06:T01-T07  
 **Blocker:** None
 
 **Input:**
@@ -481,11 +481,11 @@ All 378 canonical task templates have been successfully generated, validated, an
 
 ---
 
-### E4:S06:T09 – BR-009: Improve installer discoverability and documentation
+### E04:S06:T09 – BR-009: Improve installer discoverability and documentation
 
 **Status:** COMPLETE
 **Priority:** HIGH  
-**Dependencies:** E4:S06:T07, **BR-004 fix** (installer must use canonical templates, not ai-dev-kit's actual epics) ✅  
+**Dependencies:** E04:S06:T07, **BR-004 fix** (installer must use canonical templates, not ai-dev-kit's actual epics) ✅  
 **Blocker:** BR-004 (epic contamination must be fixed before improving discoverability) ✅  
 **Linked BR:** BR-009 (GitHub issue #14) - Installer discoverability and documentation
 
@@ -529,11 +529,11 @@ All 378 canonical task templates have been successfully generated, validated, an
 
 ---
 
-### E4:S06:T10 – BR-004: Fix epic contamination in installer
+### E04:S06:T10 – BR-004: Fix epic contamination in installer
 
 **Status:** COMPLETE
 **Priority:** HIGH  
-**Dependencies:** E4:S06:T01-T02 (epic templates must exist) ✅  
+**Dependencies:** E04:S06:T01-T02 (epic templates must exist) ✅  
 **Blocker:** None  
 **Linked BR:** BR-004 - Kanban Installation Includes Project-Specific Epics from Template
 

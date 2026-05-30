@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E5:S07:T01](../epics/Epic-5/Story-007-policy-documentation-structure.md)
+**Implementing Task:** [E05:S07:T01](../epics/Epic-5/Story-007-policy-documentation-structure.md)
 **Intake Date:** 2025-12-12  
 **Assigned To:** Epic 5, Story 6, Task 1  
 **Version:** v0.5.6.1+0 (doc-init)
@@ -37,7 +37,7 @@ housekeeping_policy: keep
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
 - Story: [`docs/project-management/kanban/epics/Epic-5/Story-006-policy-documentation-structure.md`](../epics/Epic-5/Story-006-policy-documentation-structure.md)
-- Task: See Story 6 Task Checklist (E5:S06:T01)
+- Task: See Story 6 Task Checklist (E05:S06:T01)
 
 ---
 

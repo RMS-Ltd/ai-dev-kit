@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task: Implement Update Changelog Workflow (UCW)
 
-**Task ID:** E7:S01:T06  
+**Task ID:** E07:S01:T06  
 **Status:** COMPLETE  
 **Epic:** E7 – Codebase Maintenance and Review  
 **Story:** S01 – Codebase Maintenance Tasks  
@@ -38,8 +38,8 @@ Design and implement the missing Update Changelog Workflow (UCW) that keeps `CHA
 
 ## Deliverables
 
-- UCW workflow specification + checklist template (`docs/implementation-cycles/ICW-E7S01T06-specification.md`).  
-- UCW test design + implementation plan (`ICW-E7S01T06-test-design.md`, `ICW-E7S01T06-implementation-plan.md`).  
+- UCW workflow specification + checklist template (`docs/implementation-cycles/ICW-E07S01T06-specification.md`).  
+- UCW test design + implementation plan (`ICW-E07S01T06-test-design.md`, `ICW-E07S01T06-implementation-plan.md`).  
 - Manual UCW checklist log folder (`docs/maintenance/logs/ucw/`).  
 - Release runbook section describing UCW responsibilities + CI hook (`docs/maintenance/release-runbook.md`).  
 - Read-only CI verification job definition + RW log instructions.  

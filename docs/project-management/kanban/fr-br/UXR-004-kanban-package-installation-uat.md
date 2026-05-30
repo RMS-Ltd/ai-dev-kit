@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** COMPLETE  
 **GitHub Issue:** [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)  
-**Repository Task:** [E7:S00:T04](../epics/Epic-7/Story-000-uxr-repo/T04-uxr-004-repository-anchor.md)  
-**Implementation (synthesis):** [E7:S05:T04](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T04**
+**Repository Task:** [E07:S00:T04](../epics/Epic-7/Story-000-uxr-repo/T04-uxr-004-repository-anchor.md)  
+**Implementation (synthesis):** [E07:S05:T04](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T04**
 
 ---
 

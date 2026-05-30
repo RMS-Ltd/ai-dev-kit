@@ -6,16 +6,16 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T12 - RW explicit task-id version alignment (BR-061)
+# Task E02:S01:T12 - RW explicit task-id version alignment (BR-061)
 
-**Task ID:** E2:S01:T12  
+**Task ID:** E02:S01:T12  
 **Status:** COMPLETE  
 **Priority:** CRITICAL  
 **Created:** 2026-04-07  
-**Last updated:** 2026-04-10 (RW release anchor refreshed via `RW E2:S01:T12 --art`)  
+**Last updated:** 2026-04-10 (RW release anchor refreshed via `RW E02:S01:T12 --art`)  
 **Version Anchor:** v0.2.1.12+3  
 **Version:** v0.2.1.12+3  
-**Code:** E2S01T12
+**Code:** E02S01T12
 
 ---
 
@@ -31,9 +31,9 @@ Resolve BR-061 by reducing false Step 1 friction when RW is invoked with explici
 - `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
 - `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py`
 - RW execution docs and `.cursorrules` trigger semantics
-- [ICW-E2S01T12-specification](../../../../../implementation-cycles/ICW-E2S01T12-specification.md)
-- [ICW-E2S01T12-test-design](../../../../../implementation-cycles/ICW-E2S01T12-test-design.md)
-- [ICW-E2S01T12-implementation-plan](../../../../../implementation-cycles/ICW-E2S01T12-implementation-plan.md)
+- [ICW-E02S01T12-specification](../../../../../implementation-cycles/ICW-E02S01T12-specification.md)
+- [ICW-E02S01T12-test-design](../../../../../implementation-cycles/ICW-E02S01T12-test-design.md)
+- [ICW-E02S01T12-implementation-plan](../../../../../implementation-cycles/ICW-E02S01T12-implementation-plan.md)
 
 ---
 
@@ -58,6 +58,6 @@ Resolve BR-061 by reducing false Step 1 friction when RW is invoked with explici
 
 - [BR-061](../../../fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
 - [Story E2:S01](../Story-001-rw-agent-execution-and-docs.md)
-- [ICW-E2S01T12-specification](../../../../../implementation-cycles/ICW-E2S01T12-specification.md)
-- [ICW-E2S01T12-test-design](../../../../../implementation-cycles/ICW-E2S01T12-test-design.md)
-- [ICW-E2S01T12-implementation-plan](../../../../../implementation-cycles/ICW-E2S01T12-implementation-plan.md)
+- [ICW-E02S01T12-specification](../../../../../implementation-cycles/ICW-E02S01T12-specification.md)
+- [ICW-E02S01T12-test-design](../../../../../implementation-cycles/ICW-E02S01T12-test-design.md)
+- [ICW-E02S01T12-implementation-plan](../../../../../implementation-cycles/ICW-E02S01T12-implementation-plan.md)

@@ -22,19 +22,19 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [ ] **E7:S01:T01 – PERPETUAL: Address IDE-Flagged Error, Warning, and Info level problems** - PERPETUAL
-- [x] **E7:S01:T02 – Create maintenance task prioritization framework** - ✅ COMPLETE (v0.7.1.2+1 – Maintenance task prioritization framework created with severity, impact, effort dimensions, scoring formula, and Kanban integration)
-- [x] **E7:S01:T03 – Document maintenance workflow processes** - ✅ COMPLETE (v0.7.1.3+1 – Maintenance workflow processes documented: IDE-flagged issues workflow, prioritized maintenance workflow, scheduled maintenance workflow, emergency maintenance workflow, with Kanban and tool integration)
-- [x] **E7:S01:T04 – Integrate maintenance tasks with Kanban framework** - ✅ COMPLETE (v0.7.1.4+1 – Maintenance tasks integrated with Kanban framework: task creation, prioritization mapping, lifecycle tracking, Epic 4 integration, examples, and best practices documented)
-- [ ] **E7:S01:T05 – Markdown Maintenance (Perpetual Task)** - PERPETUAL (v0.7.1.5+1 – Perpetual task established for markdown maintenance across all documentation files)
-- [x] **E7:S01:T06 – Implement Update Changelog Workflow (UCW)** - ✅ COMPLETE (v0.7.1.7+4 – FR-057 / CMW scope; board hygiene 2026-05-29) - [Task Document](Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md) | [FR-057](../../fr-br/FR-057-update-changelog-workflow.md)
-- [ ] **E7:S01:T07 – Markdown Maintenance Workflow (MMW)** - TODO (v0.7.1.6+2 – FR-058 defines workflow for resolving markdown lint blockers and coordinating perpetual maintenance cycles)
-- [ ] **E7:S01:T08 – Task Doc Naming Standardization** - IN PROGRESS (v0.7.1.6+2 – Establishes `EddSddTdd-[title].md` canonical naming and migration plan)
-- [ ] **E7:S01:T09 – Kanban Template Governance & UXR Ownership** - TODO (v0.7.1.9+3 – UXR-005 **Implementing Task** in UXR doc; UXR-005 ACs still open — see task doc)
-- [ ] **E7:S01:T10 – Project Root Hygiene and Legacy Docs Rationalization** - TODO (UXR-013 intake filed; IPW pending before implementation)
-- [x] **E7:S01:T11 – Consolidate governance under `docs/governance/` (FR-101)** - ✅ COMPLETE (v0.7.1.11+8 — Waves 0–F; ADR-007) - [Task Document](Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) | [IPP](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) | [FR-101](../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
+- [ ] **E07:S01:T01 – PERPETUAL: Address IDE-Flagged Error, Warning, and Info level problems** - PERPETUAL
+- [x] **E07:S01:T02 – Create maintenance task prioritization framework** - ✅ COMPLETE (v0.7.1.2+1 – Maintenance task prioritization framework created with severity, impact, effort dimensions, scoring formula, and Kanban integration)
+- [x] **E07:S01:T03 – Document maintenance workflow processes** - ✅ COMPLETE (v0.7.1.3+1 – Maintenance workflow processes documented: IDE-flagged issues workflow, prioritized maintenance workflow, scheduled maintenance workflow, emergency maintenance workflow, with Kanban and tool integration)
+- [x] **E07:S01:T04 – Integrate maintenance tasks with Kanban framework** - ✅ COMPLETE (v0.7.1.4+1 – Maintenance tasks integrated with Kanban framework: task creation, prioritization mapping, lifecycle tracking, Epic 4 integration, examples, and best practices documented)
+- [ ] **E07:S01:T05 – Markdown Maintenance (Perpetual Task)** - PERPETUAL (v0.7.1.5+1 – Perpetual task established for markdown maintenance across all documentation files)
+- [x] **E07:S01:T06 – Implement Update Changelog Workflow (UCW)** - ✅ COMPLETE (v0.7.1.7+4 – FR-057 / CMW scope; board hygiene 2026-05-29) - [Task Document](Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md) | [FR-057](../../fr-br/FR-057-update-changelog-workflow.md)
+- [ ] **E07:S01:T07 – Markdown Maintenance Workflow (MMW)** - TODO (v0.7.1.6+2 – FR-058 defines workflow for resolving markdown lint blockers and coordinating perpetual maintenance cycles)
+- [ ] **E07:S01:T08 – Task Doc Naming Standardization** - IN PROGRESS (v0.7.1.6+2 – Establishes `EddSddTdd-[title].md` canonical naming and migration plan)
+- [ ] **E07:S01:T09 – Kanban Template Governance & UXR Ownership** - TODO (v0.7.1.9+3 – UXR-005 **Implementing Task** in UXR doc; UXR-005 ACs still open — see task doc)
+- [ ] **E07:S01:T10 – Project Root Hygiene and Legacy Docs Rationalization** - TODO (UXR-013 intake filed; IPW pending before implementation)
+- [x] **E07:S01:T11 – Consolidate governance under `docs/governance/` (FR-101)** - ✅ COMPLETE (v0.7.1.11+8 — Waves 0–F; ADR-007) - [Task Document](Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) | [IPP](../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md) | [FR-101](../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 
-> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E7:S01:T01`, `E7:S01:T02`)  
+> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E07:S01:T01`, `E07:S01:T02`)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.7.1.3+1)`)  
 > **Perpetual Tasks:** Tasks marked as PERPETUAL are ongoing maintenance tasks that never truly "complete" but are continuously worked on. Track progress with version markers for each maintenance cycle or batch of work completed.
 > **Release Workflow Requirement:** When Release Workflow (RW) Step 4 updates Epic documentation, it MUST update **ALL sections**:
@@ -67,9 +67,9 @@ This story establishes systematic processes for addressing IDE-flagged issues an
 
 ## Tasks
 
-### E7:S01:T01 – PERPETUAL: Address IDE-Flagged Error, Warning, and Info level problems
+### E07:S01:T01 – PERPETUAL: Address IDE-Flagged Error, Warning, and Info level problems
 
-> **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E7:S01:T01`, not `T01` alone)
+> **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E07:S01:T01`, not `T01` alone)
 
 **Type:** PERPETUAL (ongoing maintenance task)  
 **Input:** IDE-flagged issues (errors, warnings, info) from development environment  
@@ -144,11 +144,11 @@ This story establishes systematic processes for addressing IDE-flagged issues an
 
 ---
 
-### E7:S01:T02 – Create maintenance task prioritization framework
+### E07:S01:T02 – Create maintenance task prioritization framework
 
 **Input:** Current maintenance task patterns and IDE-flagged issues  
 **Deliverable:** Prioritization framework for maintenance tasks  
-**Dependencies:** E7:S01:T01 (perpetual task provides context)  
+**Dependencies:** E07:S01:T01 (perpetual task provides context)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 
@@ -168,11 +168,11 @@ This story establishes systematic processes for addressing IDE-flagged issues an
 
 ---
 
-### E7:S01:T03 – Document maintenance workflow processes
+### E07:S01:T03 – Document maintenance workflow processes
 
 **Input:** Current maintenance practices and workflows  
 **Deliverable:** Documented maintenance workflow processes  
-**Dependencies:** E7:S01:T02 (prioritization framework)  
+**Dependencies:** E07:S01:T02 (prioritization framework)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 
@@ -192,11 +192,11 @@ This story establishes systematic processes for addressing IDE-flagged issues an
 
 ---
 
-### E7:S01:T04 – Integrate maintenance tasks with Kanban framework
+### E07:S01:T04 – Integrate maintenance tasks with Kanban framework
 
 **Input:** Maintenance task patterns and Kanban framework  
 **Deliverable:** Integrated maintenance task tracking in Kanban  
-**Dependencies:** E7:S01:T01, E7:S01:T02, E7:S01:T03  
+**Dependencies:** E07:S01:T01, E07:S01:T02, E07:S01:T03  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 
@@ -216,7 +216,7 @@ This story establishes systematic processes for addressing IDE-flagged issues an
 
 ---
 
-### E7:S01:T06 – Implement Update Changelog Workflow (UCW)
+### E07:S01:T06 – Implement Update Changelog Workflow (UCW)
 
 **Input:** FR-057 Update Changelog Workflow, FR-025/FR-026 archival policies, RW validator contract  
 **Deliverable:** UCW workflow (docs + scripts) that trims `CHANGELOG.md`, archives older entries, and integrates with Release Workflow validation  
@@ -248,9 +248,9 @@ This story establishes systematic processes for addressing IDE-flagged issues an
 
 ---
 
-### E7:S01:T07 – Markdown Maintenance Workflow (MMW)
+### E07:S01:T07 – Markdown Maintenance Workflow (MMW)
 
-**Input:** FR-058 Markdown Maintenance Workflow, E7:S01:T05 perpetual markdown task, documentation validator outputs  
+**Input:** FR-058 Markdown Maintenance Workflow, E07:S01:T05 perpetual markdown task, documentation validator outputs  
 **Deliverable:** Deterministic workflow + tooling that triages RW markdown validation failures, distinguishes regressions vs legacy debt, and drives remediation cycles with auditable evidence  
 **Dependencies:** FR-058, Documentation Policy Framework, Release Runbook RW Step 8  
 **Blocker:** None  
@@ -268,7 +268,7 @@ This story establishes systematic processes for addressing IDE-flagged issues an
 4. Execute initial MMW maintenance cycle targeting representative backlog slice; capture diff + log.  
 5. Update Release Runbook, Kanban board, and Story references to include MMW instructions and status reporting.  
 6. Coordinate with T05 to ensure perpetual markdown maintenance metrics get updated per cycle.  
-7. Create a dedicated **MMW Perpetual Task** (E7:S01:T08 placeholder) that RW teams can update/run against whenever markdown debt blocks a release, ensuring each RW has an up-to-date maintenance checkpoint.
+7. Create a dedicated **MMW Perpetual Task** (E07:S01:T08 placeholder) that RW teams can update/run against whenever markdown debt blocks a release, ensuring each RW has an up-to-date maintenance checkpoint.
 
 **Acceptance Criteria:**
 
@@ -280,7 +280,7 @@ This story establishes systematic processes for addressing IDE-flagged issues an
 
 ---
 
-### E7:S01:T08 – Task Doc Naming Standardization
+### E07:S01:T08 – Task Doc Naming Standardization
 
 **Input:** User directive (2026-03-16) to adopt `EddSddTdd-[Task Title].md` naming, Documentation Policy Framework, Kanban board structure  
 **Deliverable:** Canonical naming standard applied to all task docs plus migration tooling/checklist to keep Release Workflow and Kanban references consistent  

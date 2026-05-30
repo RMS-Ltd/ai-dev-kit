@@ -9,20 +9,20 @@ housekeeping_policy: keep
 # Bug Report BR-059: UKW MoSCOW Update Omits In-Progress Story Tasks (Incomplete Coverage)
 
 **Bug ID:** BR-059  
-**Task ID:** [E2:S16:T13](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)  
-**Historical implementing task:** `E6:S07:T109` (superseded 2026-05-29, FR-087 Wave 4)  
+**Task ID:** [E02:S16:T13](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)  
+**Historical implementing task:** `E06:S07:T109` (superseded 2026-05-29, FR-087 Wave 4)  
 **Priority:** HIGH  
 **Severity:** MEDIUM (board SoT diverges from story checklist; planners lose visibility)  
 **Status:** OPEN  
 **Created:** 2026-03-30  
-**Last updated:** 2026-05-29 — Implementing task re-housed to **E2:S16:T13** (FR-087 Wave 4)  
+**Last updated:** 2026-05-29 — Implementing task re-housed to **E02:S16:T13** (FR-087 Wave 4)  
 **Classification:** UKW + Kanban board accuracy
 
 ---
 
 ## Bug Summary
 
-A **comprehensive UKW** run promoted **E5:S09:T01** to the MoSCOW **Should** section but **did not add E5:S09:T02–T07**, even though **Story 009** lists all seven tasks as **TODO / IN PROGRESS** in its task checklist. Treating “one representative task per story” as sufficient is a **workflow failure**: the kanban board is expected to reflect **all active tasks** for an in-progress story unless explicitly deferred.
+A **comprehensive UKW** run promoted **E05:S09:T01** to the MoSCOW **Should** section but **did not add E05:S09:T02–T07**, even though **Story 009** lists all seven tasks as **TODO / IN PROGRESS** in its task checklist. Treating “one representative task per story” as sufficient is a **workflow failure**: the kanban board is expected to reflect **all active tasks** for an in-progress story unless explicitly deferred.
 
 ---
 
@@ -30,7 +30,7 @@ A **comprehensive UKW** run promoted **E5:S09:T01** to the MoSCOW **Should** sec
 
 ### Observed behavior
 
-- Story: [`Story-009-docusaurus-documentation-portal.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal.md) — checklist shows **E5:S09:T01–T07** (FR-065–FR-071), all still open.
+- Story: [`Story-009-docusaurus-documentation-portal.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal.md) — checklist shows **E05:S09:T01–T07** (FR-065–FR-071), all still open.
 - After UKW (2026-03-30), [`kboard.md`](../kboard.md) **Should** listed **only T01**.
 - Stakeholder expectation: **every** E5:S09 task that is not complete should appear on the board (or be explicitly moved to **Won’t** / documented deferral with rationale).
 
@@ -44,13 +44,13 @@ A **comprehensive UKW** run promoted **E5:S09:T01** to the MoSCOW **Should** sec
 
 | Task    | FR     | On board after UKW (before fix) |
 |---------|--------|----------------------------------|
-| E5:S09:T01 | FR-065 | Yes |
-| E5:S09:T02 | FR-066 | No |
-| E5:S09:T03 | FR-067 | No |
-| E5:S09:T04 | FR-068 | No |
-| E5:S09:T05 | FR-069 | No |
-| E5:S09:T06 | FR-070 | No |
-| E5:S09:T07 | FR-071 | No |
+| E05:S09:T01 | FR-065 | Yes |
+| E05:S09:T02 | FR-066 | No |
+| E05:S09:T03 | FR-067 | No |
+| E05:S09:T04 | FR-068 | No |
+| E05:S09:T05 | FR-069 | No |
+| E05:S09:T06 | FR-070 | No |
+| E05:S09:T07 | FR-071 | No |
 
 ---
 
@@ -73,14 +73,14 @@ A **comprehensive UKW** run promoted **E5:S09:T01** to the MoSCOW **Should** sec
 
 ## Related work
 
-- **Implementing task:** [E2:S16:T13](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) (historical: `E6:S07:T109`)
+- **Implementing task:** [E02:S16:T13](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) (historical: `E06:S07:T109`)
 - **Story:** [E5:S09 – Docusaurus Documentation Portal](../epics/Epic-5/Story-009-docusaurus-documentation-portal.md)  
 - **Related BR:** [BR-042](BR-042-ukw-agent-board-cleanup-failure.md) (completed tasks left on board — opposite failure mode)  
 - **Related BR:** [BR-034](BR-034-ukw-moscow-prioritization-missing.md)  
-- **Perpetual UKW task:** [E2:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)  
+- **Perpetual UKW task:** [E02:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)  
 
 ---
 
 ## Resolution / current status
 
-- **OPEN** — Board manually corrected to list **E5:S09:T01–T07**; root cause (UKW agent/rules) still to be addressed under this BR.
+- **OPEN** — Board manually corrected to list **E05:S09:T01–T07**; root cause (UKW agent/rules) still to be addressed under this BR.

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E4:S1:T4`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E04:S01:T04`)
 
 **Full Task ID:** `E04:S01:T04`
 
@@ -34,9 +34,9 @@ Document Kanban board usage for the {PROJECT_NAME} project. Create comprehensive
 
 ## Input
 
-- Kanban board structure (from E4:S1:T01)
-- Kanban column configuration (from E4:S1:T02)
-- Kanban card templates (from E4:S1:T03)
+- Kanban board structure (from E04:S01:T01)
+- Kanban column configuration (from E04:S01:T02)
+- Kanban card templates (from E04:S01:T03)
 - Documentation requirements
 - Team preferences and conventions
 
@@ -82,9 +82,9 @@ Document Kanban board usage for the {PROJECT_NAME} project. Create comprehensive
 ## Dependencies
 
 **Depends On:**
-- E4:S1:T01: Set up Kanban board structure (documentation references board structure)
-- E4:S1:T02: Configure Kanban columns and workflows (documentation references workflow configuration)
-- E4:S1:T03: Set up Kanban card templates (documentation references templates)
+- E04:S01:T01: Set up Kanban board structure (documentation references board structure)
+- E04:S01:T02: Configure Kanban columns and workflows (documentation references workflow configuration)
+- E04:S01:T03: Set up Kanban card templates (documentation references templates)
 
 **Blocks:**
 - None (documentation task)
@@ -96,9 +96,9 @@ Document Kanban board usage for the {PROJECT_NAME} project. Create comprehensive
 ## Related Work
 
 **Related Tasks:**
-- E4:S1:T01: Set up Kanban board structure (documentation references board structure)
-- E4:S1:T02: Configure Kanban columns and workflows (documentation references workflow configuration)
-- E4:S1:T03: Set up Kanban card templates (documentation references templates)
+- E04:S01:T01: Set up Kanban board structure (documentation references board structure)
+- E04:S01:T02: Configure Kanban columns and workflows (documentation references workflow configuration)
+- E04:S01:T03: Set up Kanban card templates (documentation references templates)
 
 **Related Stories:**
 - E4:S1: Kanban Board Setup (this story)

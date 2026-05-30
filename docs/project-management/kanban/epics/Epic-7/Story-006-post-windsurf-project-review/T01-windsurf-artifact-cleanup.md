@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E7:S06:T01 – Windsurf Artifact Cleanup
+# E07:S06:T01 – Windsurf Artifact Cleanup
 
-**Task ID:** E7:S06:T01
+**Task ID:** E07:S06:T01
 **Status:** COMPLETE
 **Priority:** HIGH
 **Last updated:** 2026-03-18
@@ -23,7 +23,7 @@ Remove `.windsurf/` directory and any Windsurf-specific config or references fro
 
 ## Input
 
-Repo filesystem, git status; review outputs from E7:S06:T10–T16
+Repo filesystem, git status; review outputs from E07:S06:T10–T16
 
 ## Deliverable
 

@@ -8,15 +8,15 @@ housekeeping_policy: keep
 
 # Epic 5, Story 9, Task 08: Strict broken-link checking (post–FR-067 warn mode)
 
-**Task ID:** E5:S09:T08  
+**Task ID:** E05:S09:T08  
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Medium (depends on remaining link debt)  
 **Created:** 2026-03-30  
 **Last updated:** 2026-04-01 (**v0.5.9.8+2** — strict `throw` + corpus; **FR-067 FU-1**)  
-**Code:** E5S09T08
+**Code:** E05S09T08
 
-**Origin:** Deferred outcome of [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — see **Follow-up work** on that FR. **E5:S09:T03** shipped `onBrokenLinks: 'warn'` deliberately; this task is the **explicit** place that work “to be done later” is recorded (do not rely on chat memory).
+**Origin:** Deferred outcome of [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — see **Follow-up work** on that FR. **E05:S09:T03** shipped `onBrokenLinks: 'warn'` deliberately; this task is the **explicit** place that work “to be done later” is recorded (do not rely on chat memory).
 
 ---
 
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 - [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) (follow-up table)
 - [`docs/maintenance/docusaurus-corpus-triage-fr-067.md`](../../../../../maintenance/docusaurus-corpus-triage-fr-067.md) — failure classes and current policy
 - [FR-058](../../../fr-br/FR-058-markdown-maintenance-workflow.md) — bulk / repeatable markdown hygiene
-- **E5:S09:T05** ([FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md)) — when CI exists, strict link mode should produce **red CI** on regressions
+- **E05:S09:T05** ([FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md)) — when CI exists, strict link mode should produce **red CI** on regressions
 
 ---
 
@@ -83,6 +83,6 @@ housekeeping_policy: keep
 
 ## Related
 
-- **E5:S09:T03** — completed warn-mode triage.
-- **E5:S09:T05** — CI should run the same strict build.
-- **E5:S09:T10** — optional **strict broken anchors** (`onBrokenAnchors`) — [T10](./T10-docusaurus-strict-broken-anchors-post-t08.md); **FR-067 FU-3**.
+- **E05:S09:T03** — completed warn-mode triage.
+- **E05:S09:T05** — CI should run the same strict build.
+- **E05:S09:T10** — optional **strict broken anchors** (`onBrokenAnchors`) — [T10](./T10-docusaurus-strict-broken-anchors-post-t08.md); **FR-067 FU-3**.

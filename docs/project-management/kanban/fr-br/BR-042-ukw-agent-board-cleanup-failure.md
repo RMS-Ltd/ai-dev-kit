@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Bug Report BR-042: UKW Agent Board Cleanup Failure
 
 **Bug ID:** BR-042  
-**Task ID:** E6:S06:T42 (NOT created — closed as duplicate)  
+**Task ID:** E06:S06:T42 (NOT created — closed as duplicate)  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
 **Status:** CLOSED — duplicate of [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) (superseded by [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md))  
@@ -49,13 +49,13 @@ housekeeping_policy: keep
 - Active MoSCOW sections should only contain IN PROGRESS or TODO tasks
 
 ### Specific Example
-**E6:S06:T41** (AGENTS.md and SKILL.md implementation):
+**E06:S06:T41** (AGENTS.md and SKILL.md implementation):
 - ✅ Status correctly updated to COMPLETE in task document
 - ✅ Board version updated to v0.6.6.41+1
 - ❌ Task remained listed in "Must Have" section after UKW run
 - ✅ Manual intervention required to remove from active section
 
-**E6:S06:T03** (Apple SDK License Blocking Issue):
+**E06:S06:T03** (Apple SDK License Blocking Issue):
 - ✅ Status correctly updated to COMPLETE in task document
 - ❌ Task remained listed in "Must Have" section after UKW run
 - ✅ Manual intervention required to remove from active section
@@ -179,7 +179,7 @@ E6:S06:T41 = COMPLETE (in task doc), but still in "Must Have" section
 ## Related Issues
 
 ### Dependencies
-- **E6:S06:T41** - AGENTS.md and SKILL.md implementation (completed)
+- **E06:S06:T41** - AGENTS.md and SKILL.md implementation (completed)
 - **UKW Agent** - Needs enhancement for proper board maintenance
 
 ### Cross-References
@@ -240,10 +240,10 @@ E6:S06:T41 = COMPLETE (in task doc), but still in "Must Have" section
 
 ## Next Steps
 
-1. **Create Task:** E6:S06:T42 - Fix UKW Agent Board Cleanup Failure
+1. **Create Task:** E06:S06:T42 - Fix UKW Agent Board Cleanup Failure
 2. **Priority Assignment:** HIGH (impairs autonomous workflow reliability)
 3. **Implementation:** Update ukw-sync skill with board cleanup step
-4. **Testing:** Validate with completed tasks (E6:S06:T41, E6:S06:T03)
+4. **Testing:** Validate with completed tasks (E06:S06:T41, E06:S06:T03)
 5. **Documentation:** Update UKW Agent and skill documentation
 
 ---

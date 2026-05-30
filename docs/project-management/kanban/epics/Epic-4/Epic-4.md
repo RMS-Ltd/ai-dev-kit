@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-05-16 (UKW stale-task purge: E4:S07:T01-T02, E4:S09:T01/T05/T06, E4:S10:T01 archived to kanban-completed.md)
+**Last updated:** 2026-05-16 (UKW stale-task purge: E04:S07:T01-T02, E04:S09:T01/T05/T06, E04:S10:T01 archived to kanban-completed.md)
 **Branch:** `epic/4-kanban-framework`  
 **Version Schema:** `0.4.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -91,7 +91,7 @@ housekeeping_policy: keep
 
 - [ ] **E4:S19 – FR/BR/UXR abstract governance and intake** - IN PROGRESS (v0.4.19.9+1)
   - Story: [`Story-019-fr-br-uxr-abstract-governance-and-intake.md`](Story-019-fr-br-uxr-abstract-governance-and-intake.md)
-  - Tasks: **T09** TODO (**UXR-014** kanban init **v0.4.19.9+1**); **T01** stub only (**BR-060** lives under **E2:S01:T09**)
+  - Tasks: **T09** ✅ COMPLETE (**UXR-014** **v0.4.19.9+2**); **T01** stub only (**BR-060** lives under **E02:S01:T09**)
 
 
 ---
@@ -142,11 +142,11 @@ It ensures that:
 Fully align the dev-kit Kanban board, stories, and governance policy with the Kanban framework package. Establish `ai-dev-kit` as the canonical SoT for Kanban policies, templates, and governance.
 
 **Tasks:**
-- [x] E4:S01:T01 – Review existing dev-kit Kanban policies and templates ✅ COMPLETE (v0.4.1.1+2)
-- [x] E4:S01:T02 – Ingest findings from fynd.deals Epic 15 Kanban work into dev-kit ✅ COMPLETE (v0.4.1.1+3)
-- [x] E4:S01:T03 – Update dev-kit Kanban governance policy as canonical SoT ✅ COMPLETE (v0.4.1.1+4)
-- [x] E4:S01:T04 – Align dev-kit Kanban templates with updated governance ✅ COMPLETE (v0.4.1.1+5)
-- [x] E4:S01:T05 – Document consumption pattern for other projects ✅ COMPLETE (v0.4.1.1+6)
+- [x] E04:S01:T01 – Review existing dev-kit Kanban policies and templates ✅ COMPLETE (v0.4.1.1+2)
+- [x] E04:S01:T02 – Ingest findings from fynd.deals Epic 15 Kanban work into dev-kit ✅ COMPLETE (v0.4.1.1+3)
+- [x] E04:S01:T03 – Update dev-kit Kanban governance policy as canonical SoT ✅ COMPLETE (v0.4.1.1+4)
+- [x] E04:S01:T04 – Align dev-kit Kanban templates with updated governance ✅ COMPLETE (v0.4.1.1+5)
+- [x] E04:S01:T05 – Document consumption pattern for other projects ✅ COMPLETE (v0.4.1.1+6)
 
 > Full story: [`Story-001-dev-kit-kanban-implementation.md`](Story-001-dev-kit-kanban-implementation.md)  
 
@@ -163,12 +163,12 @@ Fully align the dev-kit Kanban board, stories, and governance policy with the Ka
 Design and implement a clear, actionable flow for converting incoming Feature Requests (FRs) and Bug Reports (BRs) into Kanban Tasks. This story ensures that all work entering the dev-kit is properly structured, tracked, and aligned with the Kanban → Versioning → Release Workflow system.
 
 **Tasks:**
-- [x] E4:S02:T01 – Analyze current FR/BR intake process and requirements ✅ COMPLETE (v0.4.2.1+1)
-- [x] E4:S02:T02 – Design FR/BR → Task → Story → Epic decision flow ✅ COMPLETE (v0.4.2.2+1)
-- [x] E4:S02:T03 – Create FR/BR intake templates and forms ✅ COMPLETE (v0.4.2.3+1)
-- [x] E4:S02:T04 – Document the intake process with examples ✅ COMPLETE (v0.4.2.4+1)
-- [x] E4:S02:T05 – Create intake workflow guide for agents/users ✅ COMPLETE (v0.4.2.5+1)
-- [x] E4:S02:T06 – GitHub submission integration for FR, BR, and UXR ✅ COMPLETE (v0.4.2.6+1)
+- [x] E04:S02:T01 – Analyze current FR/BR intake process and requirements ✅ COMPLETE (v0.4.2.1+1)
+- [x] E04:S02:T02 – Design FR/BR → Task → Story → Epic decision flow ✅ COMPLETE (v0.4.2.2+1)
+- [x] E04:S02:T03 – Create FR/BR intake templates and forms ✅ COMPLETE (v0.4.2.3+1)
+- [x] E04:S02:T04 – Document the intake process with examples ✅ COMPLETE (v0.4.2.4+1)
+- [x] E04:S02:T05 – Create intake workflow guide for agents/users ✅ COMPLETE (v0.4.2.5+1)
+- [x] E04:S02:T06 – GitHub submission integration for FR, BR, and UXR ✅ COMPLETE (v0.4.2.6+1)
 
 > Full story: [`Story-002-fr-br-intake-to-tasks.md`](Story-002-fr-br-intake-to-tasks.md)  
 
@@ -185,13 +185,13 @@ Design and implement a clear, actionable flow for converting incoming Feature Re
 Ensure seamless integration between Kanban, Versioning, and Release Workflow (RW) systems within the dev-kit. This story validates that the three frameworks work together cohesively, providing end-to-end traceability from Feature Requests/Bug Reports through Kanban Tasks to versioned releases.
 
 **Tasks:**
-- [x] E4:S03:T01 – Review existing integration documentation ✅ COMPLETE (v0.4.3.1+1)
-- [x] E4:S03:T02 – Validate Kanban → Versioning integration in dev-kit ✅ COMPLETE (v0.4.3.2+2)
-- [x] E4:S03:T03 – Validate Versioning → RW integration in dev-kit ✅ COMPLETE (v0.4.3.3+1)
-- [x] E4:S03:T04 – Validate RW → Kanban integration in dev-kit ✅ COMPLETE (v0.4.3.4+1)
-- [x] E4:S03:T07 – Address RW → Kanban integration gaps identified in T004 ✅ COMPLETE (v0.4.3.7+1)
-- [x] E4:S03:T05 – Create dev-kit integration guide ✅ COMPLETE (v0.4.3.5+1)
-- [x] E4:S03:T06 – Document integration examples and edge cases ✅ COMPLETE (v0.4.3.6+1)
+- [x] E04:S03:T01 – Review existing integration documentation ✅ COMPLETE (v0.4.3.1+1)
+- [x] E04:S03:T02 – Validate Kanban → Versioning integration in dev-kit ✅ COMPLETE (v0.4.3.2+2)
+- [x] E04:S03:T03 – Validate Versioning → RW integration in dev-kit ✅ COMPLETE (v0.4.3.3+1)
+- [x] E04:S03:T04 – Validate RW → Kanban integration in dev-kit ✅ COMPLETE (v0.4.3.4+1)
+- [x] E04:S03:T07 – Address RW → Kanban integration gaps identified in T004 ✅ COMPLETE (v0.4.3.7+1)
+- [x] E04:S03:T05 – Create dev-kit integration guide ✅ COMPLETE (v0.4.3.5+1)
+- [x] E04:S03:T06 – Document integration examples and edge cases ✅ COMPLETE (v0.4.3.6+1)
 
 > Full story: [`Story-003-kanban-versioning-rw-integration.md`](Story-003-kanban-versioning-rw-integration.md)  
 

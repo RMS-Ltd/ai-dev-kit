@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Update the packaged Release Workflow (RW) framework to handle UKW (Update Kanban Workflow) context detection and perpetual task attribution. This ensures that UKW-triggered releases are properly attributed to perpetual tasks (e.g., E6:S06:T08) rather than arbitrary feature tasks.
+Update the packaged Release Workflow (RW) framework to handle UKW (Update Kanban Workflow) context detection and perpetual task attribution. This ensures that UKW-triggered releases are properly attributed to perpetual tasks (e.g., E06:S06:T08) rather than arbitrary feature tasks.
 
 ---
 
@@ -83,7 +83,7 @@ Update packaged RW to:
 
 2. **Auto-Attribution Logic:**
    - If UKW context detected → Auto-attribute to perpetual task
-   - Pattern: Check for perpetual task in Story (e.g., E6:S06:T08)
+   - Pattern: Check for perpetual task in Story (e.g., E06:S06:T08)
    - Use task number from perpetual task, increment BUILD
    - Skip normal task identification when UKW context detected
 
@@ -135,7 +135,7 @@ Update packaged RW to:
 
 - Packaged RW framework: `packages/frameworks/workflow mgt/`
 - Source repo RW implementation: `.cursorrules` (UKW context detection)
-- UKW perpetual task: `E6:S06:T08` (pattern example)
+- UKW perpetual task: `E06:S06:T08` (pattern example)
 - UKW analysis: `docs/analysis/ukw-versioning-reasoning-analysis.md`
 
 ---

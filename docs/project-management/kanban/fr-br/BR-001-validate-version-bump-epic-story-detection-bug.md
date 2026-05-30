@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E2:S01:T06](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)  
-**Historical registry:** E6:S01:T01
+**Implementing Task:** [E02:S01:T06](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)  
+**Historical registry:** E06:S01:T01
 
 ---
 
@@ -148,12 +148,12 @@ The `find_story_file()` function in `validate_version_bump.py` uses content-base
 **Intake By:** AI Agent (Auto)
 
 **Decision Flow Results:**
-- [x] Story Match Found: Epic 2, Story 1 → Task E2:S01:T05
+- [x] Story Match Found: Epic 2, Story 1 → Task E02:S01:T05
 
 **Assigned To:**
 - Epic: Epic 2 - Workflow Management Framework
 - Story: Story 1 - RW Agent Execution and Docs
-- Task: E2:S01:T05
+- Task: E02:S01:T05
 - Version: `v0.2.1.5+1`
 
 **Implementation Status:** IMPLEMENTED (v0.2.1.5+1)  

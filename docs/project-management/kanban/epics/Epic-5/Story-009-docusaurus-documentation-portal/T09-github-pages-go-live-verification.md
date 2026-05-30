@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** Small  
 **Created:** 2026-03-31  
 **Last updated:** 2026-03-31 — **v0.5.9.9+2** go-live verified (merge `main`, Actions, Pages API, `curl` **200**)  
-**Code:** E5S09T09
+**Code:** E05S09T09
 
 **Upstream:** [FR-070 – Deployment and hosting](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) (automation shipped in **T06**); this task **closes the operational gap** between “`gh-pages` branch updated by Actions” and “canonical URL returns **200** for readers.”
 
@@ -21,8 +21,8 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Task ID:** E5:S09:T09  
-**Full Task ID:** `E5:S09:T09`
+**Task ID:** E05:S09:T09  
+**Full Task ID:** `E05:S09:T09`
 
 ---
 
@@ -47,7 +47,7 @@ The **Docusaurus deploy to GitHub Pages** workflow can succeed and **`gh-pages`*
 
 ## Input
 
-- **E5:S09:T06** / [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) — deploy workflow and [portal hosting docs](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md).
+- **E05:S09:T06** / [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) — deploy workflow and [portal hosting docs](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md).
 - **Public** `RMS-Ltd/ai-dev-kit` repo; maintainer access to **Settings → Pages** and **Actions**.
 - Remote **`gh-pages`** branch present (Actions publish from `main`).
 
@@ -72,7 +72,7 @@ The **Docusaurus deploy to GitHub Pages** workflow can succeed and **`gh-pages`*
 
 ## Dependencies
 
-**Depends on:** E5:S09:T06 (complete).
+**Depends on:** E05:S09:T06 (complete).
 
 ---
 
@@ -85,8 +85,8 @@ The **Docusaurus deploy to GitHub Pages** workflow can succeed and **`gh-pages`*
 
 ## Version Anchor
 
-**Forensic marker:** `✅ COMPLETE (v0.5.9.9+2)` — **RW E5:S09:T09** (implementation).  
-**Kanban init:** `v0.5.9.9+1` — **RW -k E5:S09:T09**.
+**Forensic marker:** `✅ COMPLETE (v0.5.9.9+2)` — **RW E05:S09:T09** (implementation).  
+**Kanban init:** `v0.5.9.9+1` — **RW -k E05:S09:T09**.
 
 ---
 
@@ -96,4 +96,4 @@ The **Docusaurus deploy to GitHub Pages** workflow can succeed and **`gh-pages`*
 - **Actions:** [Workflow run 23796236180](https://github.com/RMS-Ltd/ai-dev-kit/actions/runs/23796236180) — **success** (~3m29s); **Deploy to gh-pages** completed.
 - **Pages:** Site created via `gh api POST .../pages` with `build_type=legacy`, `source[branch]=gh-pages`, `source[path]=/`. Response `html_url`: `https://rms-ltd.github.io/ai-dev-kit/`.
 - **HTTP:** `curl -sI https://rms-ltd.github.io/ai-dev-kit/` → **200** (2026-03-31 UTC). `curl -sI` docs path → **301** to trailing-slash.
-- **Docs:** [portal/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — **Go-live and troubleshooting (E5:S09:T09)**.
+- **Docs:** [portal/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — **Go-live and troubleshooting (E05:S09:T09)**.

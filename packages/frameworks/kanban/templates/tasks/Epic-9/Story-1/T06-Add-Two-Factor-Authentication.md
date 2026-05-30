@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E9:S1:T6`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E09:S01:T06`)
 
 **Full Task ID:** `E09:S01:T06`
 
@@ -34,8 +34,8 @@ Add two-factor authentication (optional) for the {PROJECT_NAME} project. Impleme
 
 ## Input
 
-- Authentication architecture (from E9:S1:T01)
-- Login/logout implementation (from E9:S1:T03)
+- Authentication architecture (from E09:S01:T01)
+- Login/logout implementation (from E09:S01:T03)
 - Two-factor authentication requirements
 - 2FA method preferences (SMS, authenticator app, email)
 - Security requirements
@@ -83,8 +83,8 @@ Add two-factor authentication (optional) for the {PROJECT_NAME} project. Impleme
 ## Dependencies
 
 **Depends On:**
-- E9:S1:T01: Design authentication architecture (2FA uses architecture)
-- E9:S1:T03: Implement login/logout (2FA integrates with login)
+- E09:S01:T01: Design authentication architecture (2FA uses architecture)
+- E09:S01:T03: Implement login/logout (2FA integrates with login)
 
 **Blocks:**
 - None (optional feature)
@@ -96,9 +96,9 @@ Add two-factor authentication (optional) for the {PROJECT_NAME} project. Impleme
 ## Related Work
 
 **Related Tasks:**
-- E9:S1:T01: Design authentication architecture (2FA uses architecture)
-- E9:S1:T03: Implement login/logout (2FA integrates with login)
-- E9:S1:T08: Add authentication security measures (2FA is a security measure)
+- E09:S01:T01: Design authentication architecture (2FA uses architecture)
+- E09:S01:T03: Implement login/logout (2FA integrates with login)
+- E09:S01:T08: Add authentication security measures (2FA is a security measure)
 
 **Related Stories:**
 - E9:S1: User Authentication System (this story)

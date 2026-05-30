@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Structure
 
-**Last Updated:** 2026-04-02 (**E2:S01** reopened — **E2:S01:T09** **BR-060**; E4:S19 abstract governance)
+**Last Updated:** 2026-04-02 (**E2:S01** reopened — **E02:S01:T09** **BR-060**; E4:S19 abstract governance)
 **Version:** v0.4.18.1+2 *(prior RW; align with `version.py` when releasing)*
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -23,10 +23,10 @@ housekeeping_policy: keep
 
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 
 **Stories:**
-- [x] **E1:S01 – Dev Kit Versioning & RW Behaviour** - COMPLETE ✅ (v0.1.1.1+1, E2:S01:T02, E2:S01:T03)
+- [x] **E1:S01 – Dev Kit Versioning & RW Behaviour** - COMPLETE ✅ (v0.1.1.1+1, E02:S01:T02, E02:S01:T03)
   - Story: [`epics/Epic-1/Story-001-vibe-dev-kit-kanban-and-versioning.md`](epics/Epic-1/Story-001-vibe-dev-kit-kanban-and-versioning.md)
 
 
@@ -45,10 +45,10 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 
 **Stories:**
-- [ ] **E2:S01 – RW Agent Execution & Docs** - IN PROGRESS (reopened 2026-04-02 — **E2:S01:T09** **BR-060**; T01–T08 complete v0.2.1.6+4 … v0.2.1.8+1)
+- [ ] **E2:S01 – RW Agent Execution & Docs** - IN PROGRESS (reopened 2026-04-02 — **E02:S01:T09** **BR-060**; T01–T08 complete v0.2.1.6+4 … v0.2.1.8+1)
   - Story: [`epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
   - Tasks: **T09** IN PROGRESS — [BR-060](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)
 
@@ -108,7 +108,7 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 
 **Stories:**
 - [x] **E3:S01 – Dev Kit Alignment with Versioning Framework** - COMPLETE ✅ (v0.3.1.6+1)
@@ -139,7 +139,7 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 
 **Note:** Epic 4 has incomplete stories (S12, S14, S15, S16, S17), so Epic status is IN PROGRESS.
 
@@ -205,9 +205,9 @@ housekeeping_policy: keep
   - Story: [`epics/Epic-4/Story-018-kanban-board-info-only-split.md`](epics/Epic-4/Story-018-kanban-board-info-only-split.md)
   - Tasks: T01 ✅ COMPLETE (v0.4.18.1+1), T02 ✅ COMPLETE (v0.4.18.2+1)
 
-- [ ] **E4:S19 – FR/BR/UXR abstract governance and intake** - IN PROGRESS (v0.4.19.0+0 — abstract-first; **BR-060** canonical **[E2:S01:T09](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)**)
+- [ ] **E4:S19 – FR/BR/UXR abstract governance and intake** - IN PROGRESS (v0.4.19.0+0 — abstract-first; **BR-060** canonical **[E02:S01:T09](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)**)
   - Story: [`epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md`](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md)
-  - Tasks: T01 TODO (charter); E4:S19 T01 `br060` filename = stub → E2:S01:T09
+  - Tasks: T01 TODO (charter); E4:S19 T01 `br060` filename = stub → E02:S01:T09
 
 
 - [ ] **E4:S14 – Kanban Framework Maintenance** - IN PROGRESS (v0.4.14.2+1 – T02 complete: RC review artifacts restored)
@@ -229,7 +229,7 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-20 (RW: E5:S08:T02)
+**Last Updated:** 2026-02-20 (RW: E05:S08:T02)
 
 **Note:** E5:S01 (FR Repo) is omitted from this board display (PERPETUAL repository story - see Epic 5 document for internal tracking).
 
@@ -259,7 +259,7 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 **Version:** v0.5.1.37+1
 
 **Note:** E6:S01 (BR Repo) is omitted from this board display (PERPETUAL repository story - see Epic 6 document for internal tracking).
@@ -310,7 +310,7 @@ housekeeping_policy: keep
 
 **Status:** COMPLETE  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 **Version:** v0.5.1.37+1
 
 **Note:** E7:S01 (UXR Repo) is omitted from this board display (PERPETUAL repository story - see Epic 7 document for internal tracking).
@@ -349,7 +349,7 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 **Version:** v0.5.1.37+1
 
 **Stories:**
@@ -383,7 +383,7 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 
 **Stories:**
 
@@ -415,7 +415,7 @@ housekeeping_policy: keep
 
 **Status:** TODO  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 **Version:** v0.5.1.37+1
 
 **Stories:**
@@ -434,7 +434,7 @@ housekeeping_policy: keep
 
 **Status:** TODO  
 **Priority:** HIGH  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 **Version:** v0.5.1.37+1
 
 **Stories:**
@@ -453,7 +453,7 @@ housekeeping_policy: keep
 
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Last Updated:** 2026-02-08 (RW: E5:S01:T37)
+**Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 
 **Stories:**
 - [ ] **E21:S00 – Language Selection at Setup (UK/US English)** - TODO (v0.21.0.0+0)

@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** REOPENED
 
-**Implementing Task:** [E2:S11:T11](../epics/Epic-2/Story-011-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)  
-**Historical registry:** E6:S01:T02
+**Implementing Task:** [E02:S11:T11](../epics/Epic-2/Story-011-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)  
+**Historical registry:** E06:S01:T02
 
 ---
 
@@ -167,7 +167,7 @@ Task created to fix changelog validator ordering bug. Bug report and Kanban task
 
 **Changes Made:**
 - Created BR-002 bug report with complete documentation
-- Added E2:S01:T06 to Story 1 task checklist
+- Added E02:S01:T06 to Story 1 task checklist
 - Updated Epic 2 and Story 1 documents with version markers
 - Defined fix approach: Support both Keep a Changelog format (newest first) and canonical ordering (lowest first)
 - Defined acceptance criteria and files to update
@@ -228,13 +228,13 @@ Bug report and task structure established. Ready for implementation work.
 **Assigned To:**
 - Epic: Epic 2 - Workflow Management Framework
 - Story: Story 1 - RW Agent Execution & Docs
-- Task: E2:S01:T06 - Fix changelog validator ordering bug
+- Task: E02:S01:T06 - Fix changelog validator ordering bug
 - Version: `0.2.1.6+1`
 
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
 - Story: [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
-- Task: [E2:S01:T06 - Fix changelog validator ordering bug](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
+- Task: [E02:S01:T06 - Fix changelog validator ordering bug](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md#E02S01T06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
 
 ---
 
@@ -244,7 +244,7 @@ Bug report and task structure established. Ready for implementation work.
 - The validator's canonical ordering check conflicts with Keep a Changelog format (industry standard)
 - The fix should support both formats to maintain compatibility with different project preferences
 - Consider making the validator format-aware or configurable
-- **REOPENED (2025-12-16):** Bug confirmed still present despite E2:S01:T06 being marked complete. Task needs to be re-opened and properly fixed.
+- **REOPENED (2025-12-16):** Bug confirmed still present despite E02:S01:T06 being marked complete. Task needs to be re-opened and properly fixed.
 
 ---
 

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S1:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S01:T03`)
 
 **Full Task ID:** `E11:S01:T03`
 
@@ -34,8 +34,8 @@ Design request/response models for the {PROJECT_NAME} project. Define data struc
 
 ## Input
 
-- API architecture (from E11:S1:T01)
-- API endpoints (from E11:S1:T02)
+- API architecture (from E11:S01:T01)
+- API endpoints (from E11:S01:T02)
 - Data model requirements
 - Validation requirements
 - ai-dev-kit API model patterns (if adopting)
@@ -82,8 +82,8 @@ Design request/response models for the {PROJECT_NAME} project. Define data struc
 ## Dependencies
 
 **Depends On:**
-- E11:S1:T01: Design API architecture (models implement architecture)
-- E11:S1:T02: Define API endpoints (models are used by endpoints)
+- E11:S01:T01: Design API architecture (models implement architecture)
+- E11:S01:T02: Define API endpoints (models are used by endpoints)
 
 **Blocks:**
 - E11:S2: API Implementation (implementation uses request/response models)
@@ -95,8 +95,8 @@ Design request/response models for the {PROJECT_NAME} project. Define data struc
 ## Related Work
 
 **Related Tasks:**
-- E11:S1:T01: Design API architecture (models implement architecture)
-- E11:S1:T02: Define API endpoints (models are used by endpoints)
+- E11:S01:T01: Design API architecture (models implement architecture)
+- E11:S01:T02: Define API endpoints (models are used by endpoints)
 - E11:S2: API Implementation (implementation uses request/response models)
 
 **Related Stories:**

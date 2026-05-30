@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Started:** 2026-01-22  
 **Completed:** 2026-01-22  
 **Version:** v0.6.1.36+1  
-**Code:** E6S01T36
+**Code:** E06S01T36
 
-**Repository Pattern:** BR-036 = E6:S01:T36 (abstract space: v0.6.1.36+0, fixed: v0.5.1.34+2)
+**Repository Pattern:** BR-036 = E06:S01:T36 (abstract space: v0.6.1.36+0, fixed: v0.5.1.34+2)
 
 ---
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S01:T36`
+**Full Task ID:** `E06:S01:T36`
 
 ---
 
@@ -50,7 +50,7 @@ Fix critical bugs in RW Step 7 (Auto-update Kanban Docs) that prevent the Kanban
 
 - **BR-036:** [`BR-036-rw-step-7-board-update-bugs.md`](../../../fr-br/BR-036-rw-step-7-board-update-bugs.md)
 - **FR-040:** [`FR-040-rw-update-kanban-board-on-task-completion.md`](../../../fr-br/FR-040-rw-update-kanban-board-on-task-completion.md) (related feature)
-- **E5:S01:T36:** [`../Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md`](../../Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md) (original implementation)
+- **E05:S01:T36:** [`../Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md`](../../Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md) (original implementation)
 - **RW Step 7 Script:** `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
 
 ---
@@ -106,7 +106,7 @@ Fix critical bugs in RW Step 7 (Auto-update Kanban Docs) that prevent the Kanban
 ## Dependencies
 
 **Depends On:**
-- FR-036/E5:S01:T36 implementation (original feature)
+- FR-036/E05:S01:T36 implementation (original feature)
 - RW Step 7 script infrastructure
 
 **Blocks:**
@@ -119,7 +119,7 @@ Fix critical bugs in RW Step 7 (Auto-update Kanban Docs) that prevent the Kanban
 **Related Work:**
 - **BR-036:** RW Step 7 Board Update Bugs (this bug report)
 - **FR-040:** RW Update Kanban Board on Task Completion (original feature)
-- **E5:S01:T36:** RW Update Kanban Board on Task Completion (original implementation)
+- **E05:S01:T36:** RW Update Kanban Board on Task Completion (original implementation)
 
 ---
 
@@ -172,7 +172,7 @@ Fix critical bugs in RW Step 7 (Auto-update Kanban Docs) that prevent the Kanban
 ## Notes
 
 **Bug Discovery:**
-- Bugs were discovered when RW was run after completing E5:S01:T34
+- Bugs were discovered when RW was run after completing E05:S01:T34
 - Board showed task as TODO even though it was COMPLETE
 - Investigation revealed path resolution and MoSCOW update bugs
 
@@ -182,8 +182,8 @@ Fix critical bugs in RW Step 7 (Auto-update Kanban Docs) that prevent the Kanban
 - Tested with actual RW execution to verify fixes
 
 **Related:**
-- This bug fix is part of the same release as the original feature (E5:S01:T34)
-- Fixes ensure FR-036/E5:S01:T36 functionality works as intended
+- This bug fix is part of the same release as the original feature (E05:S01:T34)
+- Fixes ensure FR-036/E05:S01:T36 functionality works as intended
 
 ---
 

@@ -20,12 +20,12 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [ ] **E2:S14:T01 – Enumerate supported installation paths for Workflow Management** - TODO
-- [ ] **E2:S14:T02 – Validate fresh install steps for each path** - TODO
-- [ ] **E2:S14:T03 – Validate migration/update paths (if supported)** - TODO
-- [ ] **E2:S14:T04 – Verify post-install configuration and validation steps** - TODO
-- [ ] **E2:S14:T05 – Document failure modes and rollback guidance** - TODO
-- [ ] **E2:S14:T06 – Capture documentation gaps and improvements** - TODO
+- [ ] **E02:S14:T01 – Enumerate supported installation paths for Workflow Management** - TODO
+- [ ] **E02:S14:T02 – Validate fresh install steps for each path** - TODO
+- [ ] **E02:S14:T03 – Validate migration/update paths (if supported)** - TODO
+- [ ] **E02:S14:T04 – Verify post-install configuration and validation steps** - TODO
+- [ ] **E02:S14:T05 – Document failure modes and rollback guidance** - TODO
+- [ ] **E02:S14:T06 – Capture documentation gaps and improvements** - TODO
 
 ---
 
@@ -43,37 +43,37 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 
 ## Tasks
 
-### E2:S14:T01 – Enumerate supported installation paths for Workflow Management
+### E02:S14:T01 – Enumerate supported installation paths for Workflow Management
 
 **Input:** Installation guides and scripts  
 **Deliverable:** Enumerated installation path list  
 **Approach:** Identify release, submodule, and CLI paths (as applicable).
 
-### E2:S14:T02 – Validate fresh install steps for each path
+### E02:S14:T02 – Validate fresh install steps for each path
 
 **Input:** Installation steps  
 **Deliverable:** Step-by-step validation log  
 **Approach:** Validate each step on a clean environment.
 
-### E2:S14:T03 – Validate migration/update paths (if supported)
+### E02:S14:T03 – Validate migration/update paths (if supported)
 
 **Input:** Migration/update guidance  
 **Deliverable:** Migration validation notes  
 **Approach:** Test upgrades and verify preserved behavior.
 
-### E2:S14:T04 – Verify post-install configuration and validation steps
+### E02:S14:T04 – Verify post-install configuration and validation steps
 
 **Input:** README and validation scripts  
 **Deliverable:** Post-install checklist and results  
 **Approach:** Verify configs, validators, and expected outputs.
 
-### E2:S14:T05 – Document failure modes and rollback guidance
+### E02:S14:T05 – Document failure modes and rollback guidance
 
 **Input:** Installer behavior and logs  
 **Deliverable:** Failure mode list and rollback steps  
 **Approach:** Capture errors, troubleshooting, and recovery paths.
 
-### E2:S14:T06 – Capture documentation gaps and improvements
+### E02:S14:T06 – Capture documentation gaps and improvements
 
 **Input:** Findings from T01–T05  
 **Deliverable:** Documentation gap list and remediation tasks  

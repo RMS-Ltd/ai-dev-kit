@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-29 (RW **v0.2.16.4+15** — archived completed/superseded from active fbuboard)
-**Version:** v0.2.16.4+15
+**Last Updated:** 2026-05-30 (UKW — archived FR-046, FR-011, FR-049, FR-074)
+**Version:** v0.4.19.9+1
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,36 +34,40 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
-| BR-072 | BR | UKW completed tasks not removed from kboard — **RESOLVED** (**E6:S01:T38**) | 2026-05-12 | v0.6.6.38+1 | UKW |
-| BR-065 | BR | RW Step 12.5 GitHub release parser `v0` prefix — **FIXED** (**E6:S07:T113**) | 2026-04-13 | v0.6.7.113+1 | RW |
-| UXR-012 | UXR | MoSCOW state icons Set A + fallback — **COMPLETE** (**E4:S13:T07**) | 2026-05-20 | v0.4.13.7+2 | RW |
-| FR-086 | FR | Canonical FBU/kanban naming — **COMPLETE** (**E4:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
-| UXR-008 | UXR | `kboard.md` / `fbuboard.md` naming — **COMPLETE** (**E4:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
-| FR-092 | FR | RW/UKW kanban consistency program — **COMPLETE** (**E2:S15:T07**) | 2026-05-19 | v0.2.15.7+9 | RW |
+| FR-046 | FR | RW SemVer tag when task_touch enabled — dual-mode closure (**E05:S01:T46**) | 2026-05-30T08:55:34Z | v0.5.1.46+7 | RW |
+| FR-074 | FR | Kanban intake atomic KG-R2 & semantic KG-R6 (**E05:S01:T74**) | 2026-05-29T00:00:00Z | v0.5.1.74+3 | RW |
+| FR-049 | FR | Enhanced kanban-completed timestamps + recent tasks dashboard (**E05:S01:T49**) | 2026-03-11T16:20:00Z | v0.5.1.49+2 | RW |
+| FR-011 | FR | Task splitting across multiple canonical epics (**E04:S08:T07**) | 2026-05-29T15:30:00Z | v0.4.8.7+1 | RW |
+| BR-072 | BR | UKW completed tasks not removed from kboard — **RESOLVED** (**E06:S01:T38**) | 2026-05-12 | v0.6.6.38+1 | UKW |
+| BR-065 | BR | RW Step 12.5 GitHub release parser `v0` prefix — **FIXED** (**E06:S07:T113**) | 2026-04-13 | v0.6.7.113+1 | RW |
+| UXR-012 | UXR | MoSCOW state icons Set A + fallback — **COMPLETE** (**E04:S13:T07**) | 2026-05-20 | v0.4.13.7+2 | RW |
+| FR-086 | FR | Canonical FBU/kanban naming — **COMPLETE** (**E04:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
+| UXR-008 | UXR | `kboard.md` / `fbuboard.md` naming — **COMPLETE** (**E04:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
+| FR-092 | FR | RW/UKW kanban consistency program — **COMPLETE** (**E02:S15:T07**) | 2026-05-19 | v0.2.15.7+9 | RW |
 | FR-090 | FR | UKW row transform engine — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
 | FR-091 | FR | RW Step 7 self-sufficient kanban — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
 | FR-084 | FR | IPP post-run governance — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
 | FR-040 | FR | ICW workflow — **SUPERSEDED** by **FR-042** IPW | 2026-05-20 | v0.2.16.3+6 | IPW |
-| FR-005 | FR | Systematic canonical E/S/T template system — Story-006 corpus; closure audit (E4:S06:T01); R5 deferred | 2026-05-29 | v0.4.6.1+1 | RW |
-| FR-101 | FR | Consolidate governance under `docs/governance/` — ADR-007; Waves 0–F (E7:S01:T11) | 2026-05-29 | v0.7.1.11+8 | RW |
-| FR-031 | FR | Multi-agent coordination feasibility — **WON'T HAVE** (deferred; E5:S01:T31) | 2026-05-29 | v0.5.1.31+0 | Maintainer |
-| FR-024 | FR | IDE/linter check before RW commit — Step 9.6 (E2:S01:T08) | 2026-05-29 | v0.2.1.8+1 | RW |
-| FR-057 | FR | Update Changelog Workflow (UCW/CMW) — E7:S01:T06 | 2026-03-16 | v0.7.1.7+4 | RW |
-| FR-081 | FR | Brownfield modular adopter integration — INSTALL chapter, matrices, installer messaging (E6:S09:T02) | 2026-05-29 | v0.6.9.2+2 | RW |
-| FR-082 | FR | Installation canonical repo — public `RMS-Ltd/ai-dev-kit` bootstrap + rewire (E6:S09:T03) | 2026-05-28 | v0.6.9.3+2 | RW |
+| FR-005 | FR | Systematic canonical E/S/T template system — Story-006 corpus; closure audit (E04:S06:T01); R5 deferred | 2026-05-29 | v0.4.6.1+1 | RW |
+| FR-101 | FR | Consolidate governance under `docs/governance/` — ADR-007; Waves 0–F (E07:S01:T11) | 2026-05-29 | v0.7.1.11+8 | RW |
+| FR-031 | FR | Multi-agent coordination feasibility — **WON'T HAVE** (deferred; E05:S01:T31) | 2026-05-29 | v0.5.1.31+0 | Maintainer |
+| FR-024 | FR | IDE/linter check before RW commit — Step 9.6 (E02:S01:T08) | 2026-05-29 | v0.2.1.8+1 | RW |
+| FR-057 | FR | Update Changelog Workflow (UCW/CMW) — E07:S01:T06 | 2026-03-16 | v0.7.1.7+4 | RW |
+| FR-081 | FR | Brownfield modular adopter integration — INSTALL chapter, matrices, installer messaging (E06:S09:T02) | 2026-05-29 | v0.6.9.2+2 | RW |
+| FR-082 | FR | Installation canonical repo — public `RMS-Ltd/ai-dev-kit` bootstrap + rewire (E06:S09:T03) | 2026-05-28 | v0.6.9.3+2 | RW |
 | FR-099 | FR | Book/Epic-24 spin-off — private `hf-ai-dev-kit` + public `earlution/ai-dev-kit` (ADR-006; T03–T07) | 2026-05-26 | v0.1.4.7+2 | RW |
 | FR-098 | FR | Optional ECC harness layer integration (phases 0–5; T04–T06) | 2026-05-26 | v0.6.9.6+3 | RW |
-| FR-100 | FR | IPW ADR necessity checklist — Phase 5.0 gate; T1–T7 / E1–E5; policy SoT; IPP §2.5 (**E2:S16:T12**) | 2026-05-26 | v0.2.16.12+2 | RW |
-| FR-096 | FR | IPW mandatory documentation phases — update/create (Phase 5) + housing (Phase 6); IPP §5–§7; ten-phase `/ipw` (**E2:S16:T11**) | 2026-05-20 | v0.2.16.11+1 | RW |
-| UXR-011 | UXR | Kanban naming hygiene and directory systematic cleanup — 51 Txxx files renamed, 21 duplicate stories reconciled, duplicate tasks removed, zero-padding fixed, governance policy updated, regression validator green (**E9:S05:T04**) | 2026-05-18 | v0.9.5.4+2 | IPW |
-| BR-069 | BR | kboard/fbuboard earliest `Last modified` timestamps overwritten — CLOSED via FR-092 Wave 4–8 (**E2:S15:T04**) | 2026-05-19 | v0.2.15.7+9 | UKW |
-| BR-038 | BR | RW micromanagement and tool discovery — recovery journal scope shipped (**E6:S06:T63**) | 2026-05-17 | v0.6.6.63+1 | RW |
-| UXR-009 | UXR | Last-modified stamp forensic integrity — CLOSED via FR-092 stamp-evidence gate (**E6:S07:T115**) | 2026-05-19 | v0.2.15.7+9 | UKW |
+| FR-100 | FR | IPW ADR necessity checklist — Phase 5.0 gate; T1–T7 / E1–E5; policy SoT; IPP §2.5 (**E02:S16:T12**) | 2026-05-26 | v0.2.16.12+2 | RW |
+| FR-096 | FR | IPW mandatory documentation phases — update/create (Phase 5) + housing (Phase 6); IPP §5–§7; ten-phase `/ipw` (**E02:S16:T11**) | 2026-05-20 | v0.2.16.11+1 | RW |
+| UXR-011 | UXR | Kanban naming hygiene and directory systematic cleanup — 51 Txxx files renamed, 21 duplicate stories reconciled, duplicate tasks removed, zero-padding fixed, governance policy updated, regression validator green (**E09:S05:T04**) | 2026-05-18 | v0.9.5.4+2 | IPW |
+| BR-069 | BR | kboard/fbuboard earliest `Last modified` timestamps overwritten — CLOSED via FR-092 Wave 4–8 (**E02:S15:T04**) | 2026-05-19 | v0.2.15.7+9 | UKW |
+| BR-038 | BR | RW micromanagement and tool discovery — recovery journal scope shipped (**E06:S06:T63**) | 2026-05-17 | v0.6.6.63+1 | RW |
+| UXR-009 | UXR | Last-modified stamp forensic integrity — CLOSED via FR-092 stamp-evidence gate (**E06:S07:T115**) | 2026-05-19 | v0.2.15.7+9 | UKW |
 | BR-042 | BR | UKW agent board cleanup failure — CLOSED as duplicate of FR-090 (active-row hygiene fixed by BR-062 v0.2.1.11+2; consolidated under FR-092 meta-program) | 2026-04-27 | v0.2.15.4+5 | FR-092 Wave 1 |
-| FR-089 | FR | IPW board-row traceability-churn hardening — duplicate-footer dual-agreement + divergence guardrails; task-ID tail invariants (**E2:S15:T03**) | 2026-04-21 | v0.2.15.3+2 | UKW / Maintainer |
-| BR-068 | BR | Docusaurus strict MDX cannot resolve monorepo markdown links — **`portal`** strict build restored (**Strategy A**) (**E5:S09:T11**) | 2026-04-19 | v0.5.9.11+5 | RW Agent |
-| FR-080 | FR | End-to-end greenfield installation process — INSTALL + orchestrator + user-docs + validators / evidence (**E6:S09:T01**) | 2026-04-19 | v0.6.9.1+8 | RW Agent |
-| UXR-007 | UXR | Interactive installer Kanban pattern prompt clarity — installer UX + ICW publication alignment (**E7:S06:T18**) | 2026-04-18 | v0.7.6.18+3 | UKW Agent |
+| FR-089 | FR | IPW board-row traceability-churn hardening — duplicate-footer dual-agreement + divergence guardrails; task-ID tail invariants (**E02:S15:T03**) | 2026-04-21 | v0.2.15.3+2 | UKW / Maintainer |
+| BR-068 | BR | Docusaurus strict MDX cannot resolve monorepo markdown links — **`portal`** strict build restored (**Strategy A**) (**E05:S09:T11**) | 2026-04-19 | v0.5.9.11+5 | RW Agent |
+| FR-080 | FR | End-to-end greenfield installation process — INSTALL + orchestrator + user-docs + validators / evidence (**E06:S09:T01**) | 2026-04-19 | v0.6.9.1+8 | RW Agent |
+| UXR-007 | UXR | Interactive installer Kanban pattern prompt clarity — installer UX + ICW publication alignment (**E07:S06:T18**) | 2026-04-18 | v0.7.6.18+3 | UKW Agent |
 | BR-063 | BR | RW `-k` task attribution drift vs `version.py` anchor — forensic-strict guard, `--art`, version validation, tests, docs | 2026-04-07 | v0.2.1.13+2 | RW Agent |
 | FR-075 | FR | ICW durable planning artifacts — repo SoT under `docs/implementation-cycles/`, policy, ICW docs, `.cursorrules` | 2026-04-01 | v0.5.1.75+1 | RW Agent |
 | FR-064 | FR | Retire `shields` branch — static README badges; removed `update-badges.yml` BYOB; deleted `origin/shields` | 2026-03-30 | v0.5.1.69+1 | RW Agent |
@@ -93,15 +97,15 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **BR-068 – Docusaurus strict MDX cannot resolve monorepo markdown links — production build fails**  
 **Completed:** 2026-04-19 (`v0.5.9.11+5`)  
-**Implementing Task:** [E5:S09:T11](epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)  
+**Implementing Task:** [E05:S09:T11](epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)  
 **Completing Agent:** RW Agent  
-**Resolution:** **[IPW-E5S09T11](../../implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)** Waves **1–4** — Strategy **A** corpus normalization; **`npm run build`** strict green; **BR-068** §Acceptance Criteria satisfied (CI gate: **`docusaurus-build.yml`**). Row removed from [`fbuboard.md`](fbuboard.md).
+**Resolution:** **[IPW-E05S09T11](../../implementation-cycles/IPW-E05S09T11-docusaurus-monorepo-markdown-links-br068.md)** Waves **1–4** — Strategy **A** corpus normalization; **`npm run build`** strict green; **BR-068** §Acceptance Criteria satisfied (CI gate: **`docusaurus-build.yml`**). Row removed from [`fbuboard.md`](fbuboard.md).
 
 ---
 
 **FR-080 – End-to-end greenfield installation process**  
 **Completed:** 2026-04-19 (`v0.6.9.1+8`)  
-**Implementing Task:** [E6:S09:T01](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)  
+**Implementing Task:** [E06:S09:T01](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)  
 **Completing Agent:** RW Agent  
 **Resolution:** Functional + non-functional requirements satisfied per **Implementation evidence** on [FR-080](fr-br/FR-080-greenfield-installation-process.md); deferrals explicit (FR-078/079 product telemetry, FR-082/T03 canonical coordinates). Row removed from [`fbuboard.md`](fbuboard.md).
 
@@ -111,7 +115,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **UXR-007 – Interactive Installer Kanban Pattern Prompt Clarity**  
 **Completed:** 2026-04-18 (`v0.7.6.18+3`)  
-**Implementing Task:** [E7:S06:T18](epics/Epic-7/Story-006-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md)  
+**Implementing Task:** [E07:S06:T18](epics/Epic-7/Story-006-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md)  
 **Completing Agent:** UKW Agent  
 **Resolution:** Implementing task **COMPLETE**; intake doc [`UXR-007`](fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md) set to **`Status: COMPLETE`**; Must Have row removed from [`fbuboard.md`](fbuboard.md) per active-board hygiene.
 
@@ -123,7 +127,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **BR-056 – RW Accepts Ambiguous Task Identifier Without Validation (Typo Risk)**  
 **Completed:** 2026-03-25T12:55:31Z (v0.6.6.56+4)  
-**Implementing Task:** [E6:S06:T56](epics/Epic-6/Story-006-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md)  
+**Implementing Task:** [E06:S06:T56](epics/Epic-6/Story-006-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md)  
 **Completing Agent:** RW Agent  
 **Resolution:** `validate_rw_task_intent.py` + RW Step 1b guard; live verification confirmed story-mismatch and epic-mismatch abort before Step 2 edits.
 
@@ -132,7 +136,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **BR-055 – Missing Implementation Cycle Workflow (ICW)**  
 **Completed:** 2026-03-12T15:35:00Z (v0.4.14.3+2)  
 **GitHub Issue:** [#22](https://github.com/earlution/ai-dev-kit/issues/22)  
-**Implementing Task:** [E4:S14:T03](epics/Epic-4/Story-014-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)  
+**Implementing Task:** [E04:S14:T03](epics/Epic-4/Story-014-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)  
 **Completing Agent:** ICW Agent  
 **Resolution:** Complete ICW implementation with workflow generator integration, comprehensive documentation, and testing suite. ICW now available as standard workflow type following agent-driven execution pattern. Framework completeness restored with all standard workflow types available.
 
@@ -151,7 +155,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **BR-009 – Installer Discoverability and Documentation**  
 **Completed:** 2026-03-09T16:00:00Z (v0.6.7.104+2)  
 **GitHub Issue:** [#14](https://github.com/earlution/ai-dev-kit/issues/14)  
-**Implementing Task:** [E4:S06:T07](epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/E4S06T07-integration-validation-report.md)  
+**Implementing Task:** [E04:S06:T07](epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/E04S06T07-integration-validation-report.md)  
 **Completing Agent:** RW Agent  
 **Description:** Fixed installer prominence and template distinction issues in kanban framework installation  
 **Impact:** Users now properly guided to use interactive installer with clear template vs. actual kanban distinction  
@@ -166,7 +170,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **FR-051 – FR/BR/UXR Prioritization Board**  
 **Completed:** 2026-03-09T15:20:00Z (v0.6.7.107+1)  
-**Implementing Task:** [E6:S06:T01](epics/Epic-6/Story-006-feature-requests/T01-fr-br-uxr-prioritization-board.md)  
+**Implementing Task:** [E06:S06:T01](epics/Epic-6/Story-006-feature-requests/T01-fr-br-uxr-prioritization-board.md)  
 **Completing Agent:** Documentation Agent  
 **Description:** Created prioritization board for FRs, BRs, and UXRs with identical structure to Kanban board  
 **Impact:** Provides systematic FR/BR/UXR management with centralized visibility and prioritization  
@@ -212,7 +216,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 ## Historical Reference
 
 ### Completed Items by Implementation:
-- **FR-051** → **E6:S06:T01** → **v0.6.7.107+1** - FR/BR/UXR Prioritization Board
+- **FR-051** → **E06:S06:T01** → **v0.6.7.107+1** - FR/BR/UXR Prioritization Board
 
 ### Completion Patterns:
 - **FR → Task Flow:** Feature Requests typically convert to Kanban tasks before implementation

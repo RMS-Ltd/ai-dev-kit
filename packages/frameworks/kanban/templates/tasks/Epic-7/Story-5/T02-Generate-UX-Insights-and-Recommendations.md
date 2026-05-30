@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S5:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S05:T02`)
 
 **Full Task ID:** `E07:S05:T02`
 
@@ -34,7 +34,7 @@ Generate UX insights and recommendations for the {PROJECT_NAME} project. Create 
 
 ## Input
 
-- Synthesized UX research findings (from E7:S5:T01)
+- Synthesized UX research findings (from E07:S05:T01)
 - UX insights framework
 - Recommendation development methodology
 - Product context and priorities
@@ -81,11 +81,11 @@ Generate UX insights and recommendations for the {PROJECT_NAME} project. Create 
 ## Dependencies
 
 **Depends On:**
-- E7:S5:T01: Synthesize UX research findings (generation uses synthesized findings)
+- E07:S05:T01: Synthesize UX research findings (generation uses synthesized findings)
 
 **Blocks:**
-- E7:S5:T03: Prioritize UX recommendations (prioritization uses recommendations)
-- E7:S5:T04: Create UX insights documentation (documentation includes insights and recommendations)
+- E07:S05:T03: Prioritize UX recommendations (prioritization uses recommendations)
+- E07:S05:T04: Create UX insights documentation (documentation includes insights and recommendations)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -94,9 +94,9 @@ Generate UX insights and recommendations for the {PROJECT_NAME} project. Create 
 ## Related Work
 
 **Related Tasks:**
-- E7:S5:T01: Synthesize UX research findings (generation uses synthesized findings)
-- E7:S5:T03: Prioritize UX recommendations (prioritization uses recommendations)
-- E7:S5:T04: Create UX insights documentation (documentation includes insights and recommendations)
+- E07:S05:T01: Synthesize UX research findings (generation uses synthesized findings)
+- E07:S05:T03: Prioritize UX recommendations (prioritization uses recommendations)
+- E07:S05:T04: Create UX insights documentation (documentation includes insights and recommendations)
 
 **Related Stories:**
 - E7:S5: UX Insights and Recommendations (this story)

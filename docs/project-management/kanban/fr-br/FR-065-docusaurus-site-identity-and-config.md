@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-30  
 **Submitted By:** User (via agent)  
 **Priority:** HIGH  
-**Status:** IMPLEMENTED (v0.5.9.1+2 / E5:S09:T01)  
-**Assigned Task:** E5:S09:T01 — [`T01-docusaurus-site-identity-fr-065.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T01-docusaurus-site-identity-fr-065.md)
+**Status:** IMPLEMENTED (v0.5.9.1+2 / E05:S09:T01)  
+**Assigned Task:** E05:S09:T01 — [`T01-docusaurus-site-identity-fr-065.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T01-docusaurus-site-identity-fr-065.md)
 
 ---
 

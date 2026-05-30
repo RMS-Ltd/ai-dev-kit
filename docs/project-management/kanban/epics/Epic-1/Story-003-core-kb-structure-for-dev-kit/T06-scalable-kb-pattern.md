@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Scalable KB Pattern for Large Codebases
 
-**Task:** E1:S03:T06 – Document scalable KB pattern for large codebases  
+**Task:** E01:S03:T06 – Document scalable KB pattern for large codebases  
 **Date:** 2025-12-02  
 **Status:** IN PROGRESS  
 **Version:** Draft

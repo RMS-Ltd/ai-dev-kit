@@ -37,18 +37,18 @@ This story operationalizes the FR/BR → Task → Story → Epic rule defined in
 
 ## Task Checklist
 
-- [x] **E4:S02:T01 – Analyze current FR/BR intake process and requirements** ✅ COMPLETE
-- [x] **E4:S02:T02 – Design FR/BR → Task → Story → Epic decision flow** ✅ COMPLETE
-- [x] **E4:S02:T03 – Create FR/BR intake templates and forms** ✅ COMPLETE
-- [x] **E4:S02:T04 – Document the intake process with examples** ✅ COMPLETE
-- [x] **E4:S02:T05 – Create intake workflow guide for agents/users** ✅ COMPLETE
-- [x] **E4:S02:T06 – GitHub submission integration for FR, BR, UXR, and UAT Reports** ✅ COMPLETE (v0.4.2.6+3 – Build 3: UAT Report submission lane added)
+- [x] **E04:S02:T01 – Analyze current FR/BR intake process and requirements** ✅ COMPLETE
+- [x] **E04:S02:T02 – Design FR/BR → Task → Story → Epic decision flow** ✅ COMPLETE
+- [x] **E04:S02:T03 – Create FR/BR intake templates and forms** ✅ COMPLETE
+- [x] **E04:S02:T04 – Document the intake process with examples** ✅ COMPLETE
+- [x] **E04:S02:T05 – Create intake workflow guide for agents/users** ✅ COMPLETE
+- [x] **E04:S02:T06 – GitHub submission integration for FR, BR, UXR, and UAT Reports** ✅ COMPLETE (v0.4.2.6+3 – Build 3: UAT Report submission lane added)
 
 ---
 
 ## Tasks
 
-### E4:S02:T01 – Analyze current FR/BR intake process and requirements ✅ COMPLETE
+### E04:S02:T01 – Analyze current FR/BR intake process and requirements ✅ COMPLETE
 
 **Input:** Current Kanban governance policy, existing FR/BR examples (if any)  
 **Deliverable:** Analysis report documenting current state and requirements ✅ **DELIVERED**  
@@ -76,11 +76,11 @@ This story operationalizes the FR/BR → Task → Story → Epic rule defined in
 
 ---
 
-### E4:S02:T02 – Design FR/BR → Task → Story → Epic decision flow ✅ COMPLETE
+### E04:S02:T02 – Design FR/BR → Task → Story → Epic decision flow ✅ COMPLETE
 
 **Input:** Analysis report from T001  
 **Deliverable:** Decision flow diagram and process documentation ✅ **DELIVERED**  
-**Dependencies:** E4:S02:T01  
+**Dependencies:** E04:S02:T01  
 **Blocker:** None
 
 **Status:** ✅ **COMPLETE** - Comprehensive decision flow design created
@@ -110,11 +110,11 @@ This story operationalizes the FR/BR → Task → Story → Epic rule defined in
 
 ---
 
-### E4:S02:T03 – Create FR/BR intake templates and forms ✅ COMPLETE
+### E04:S02:T03 – Create FR/BR intake templates and forms ✅ COMPLETE
 
 **Input:** Decision flow from T002  
 **Deliverable:** Templates and forms for FR/BR intake ✅ **DELIVERED**  
-**Dependencies:** E4:S02:T02  
+**Dependencies:** E04:S02:T02  
 **Blocker:** None
 
 **Status:** ✅ **COMPLETE** - FR and BR templates created
@@ -165,11 +165,11 @@ This story operationalizes the FR/BR → Task → Story → Epic rule defined in
 
 ---
 
-### E4:S02:T04 – Document the intake process with examples ✅ COMPLETE
+### E04:S02:T04 – Document the intake process with examples ✅ COMPLETE
 
 **Input:** Templates from T003, decision flow from T002  
 **Deliverable:** Complete intake process documentation with worked examples ✅ **DELIVERED**  
-**Dependencies:** E4:S02:T03  
+**Dependencies:** E04:S02:T03  
 **Blocker:** None
 
 **Status:** ✅ **COMPLETE** - Comprehensive intake process guide with 6 worked examples created
@@ -221,11 +221,11 @@ This story operationalizes the FR/BR → Task → Story → Epic rule defined in
 
 ---
 
-### E4:S02:T05 – Create intake workflow guide for agents/users ✅ COMPLETE
+### E04:S02:T05 – Create intake workflow guide for agents/users ✅ COMPLETE
 
 **Input:** Process documentation from T004  
 **Deliverable:** User-friendly guide for AI agents and human users ✅ **DELIVERED**  
-**Dependencies:** E4:S02:T04  
+**Dependencies:** E04:S02:T04  
 **Blocker:** None
 
 **Status:** ✅ **COMPLETE** - Agent-friendly and user-friendly guides created with quick reference
@@ -303,7 +303,7 @@ This story operationalizes the FR/BR → Task → Story → Epic rule defined in
 
 ---
 
-### E4:S02:T06 – GitHub submission integration for FR, BR, and UXR
+### E04:S02:T06 – GitHub submission integration for FR, BR, and UXR
 
 **Input:**  
 - Feature Request FR-004: GitHub submission for FR, BR, and UXR
@@ -317,7 +317,7 @@ This story operationalizes the FR/BR → Task → Story → Epic rule defined in
 - Bidirectional linking between GitHub Issues and FR/BR documents
 - Documentation for external contributors
 
-**Dependencies:** E4:S02:T01-T05 (foundation intake workflow)  
+**Dependencies:** E04:S02:T01-T05 (foundation intake workflow)  
 **Blocker:** None
 
 **Problem Statement:**
@@ -369,7 +369,7 @@ External contributors, automated evaluation methods, UX researchers, and project
 - `.github/ISSUE_TEMPLATE/feature_request.yml` (GitHub Issue Form)
 - `.github/ISSUE_TEMPLATE/ux_research.yml` (GitHub Issue Form)
 - `.github/ISSUE_TEMPLATE/feedback.yml` (GitHub Issue Form for UAT Reports)
-- `.github/workflows/fr-br-intake.yml.DISABLED` (reference YAML; intake GH Action disabled — BR-053 / E2:S11:T12)
+- `.github/workflows/fr-br-intake.yml.DISABLED` (reference YAML; intake GH Action disabled — BR-053 / E02:S11:T12)
 - `packages/frameworks/kanban/templates/UXR_TEMPLATE.md` (UXR template)
 - `packages/frameworks/kanban/templates/FB_TEMPLATE.md` (UAT Report template)
 - `packages/frameworks/kanban/FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md` (documentation)

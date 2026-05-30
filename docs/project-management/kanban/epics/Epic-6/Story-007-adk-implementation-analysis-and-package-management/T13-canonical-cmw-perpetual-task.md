@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.7.13+2
 
 **Feature Request:** [FR-026](../../../fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)  
-**Code:** E6S07T13
+**Code:** E06S07T13
 
 ---
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S07:T13`
+**Full Task ID:** `E06:S07:T13`
 
 ---
 
@@ -172,8 +172,8 @@ Include the CMW perpetual task (T102, migrated from T12) in the canonical framew
 ## Dependencies
 
 **Depends On:**
-- E2:S16:T03 - Changelog Maintenance Workflow (CMW) - Perpetual Task (migrated from T12, must exist first)
-- E6:S07:T11 - Changelog Management and Archival Workflow (CMW implementation)
+- E02:S16:T03 - Changelog Maintenance Workflow (CMW) - Perpetual Task (migrated from T12, must exist first)
+- E06:S07:T11 - Changelog Management and Archival Workflow (CMW implementation)
 
 **Blocks:**
 - Projects adopting framework templates with CMW perpetual task
@@ -189,9 +189,9 @@ Include the CMW perpetual task (T102, migrated from T12) in the canonical framew
 ## Related Work
 
 **Related Tasks:**
-- E2:S16:T03 - Update Kanban Workflow (UKW) - Perpetual Task (pattern reference, migrated from T08)
-- E6:S07:T11 - Changelog Management and Archival Workflow (CMW implementation, COMPLETE)
-- E2:S16:T03 - Changelog Maintenance Workflow (CMW) - Perpetual Task (this task references it, migrated from T12)
+- E02:S16:T03 - Update Kanban Workflow (UKW) - Perpetual Task (pattern reference, migrated from T08)
+- E06:S07:T11 - Changelog Management and Archival Workflow (CMW implementation, COMPLETE)
+- E02:S16:T03 - Changelog Maintenance Workflow (CMW) - Perpetual Task (this task references it, migrated from T12)
 
 **Related Feature Requests:**
 - [FR-026](../../../fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md) - Canonical Perpetual Task for Changelog Maintenance

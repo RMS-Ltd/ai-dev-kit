@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** N/A  
 **Status:** IMPLEMENTED (v0.5.1.63+1)  
-**Assigned Task:** E5:S01:T63 — [Task document](../epics/Epic-5/Story-001-fr-repo/T63-rw-task-argument-requirement.md)
+**Assigned Task:** E05:S01:T63 — [Task document](../epics/Epic-5/Story-001-fr-repo/T63-rw-task-argument-requirement.md)
 
 ---
 
@@ -33,14 +33,14 @@ Enhance RW to require a mandatory task argument in the format `RW <task_id>` whe
 ### What Should Happen vs. What Currently Happens?
 
 **Expected Behavior:**
-- RW commands must include task argument: `RW E7:S01:T10` or `RW E7S01T10`
+- RW commands must include task argument: `RW E07:S01:T10` or `RW E07S01T10`
 - RW validates task exists and is in COMPLETE status
 - RW uses specified task for version schema (RC.EPIC.STORY.TASK+BUILD)
 - Clear error message if task argument missing or invalid
 
 **Current Behavior:**
 - RW attempts to infer task context from repository state
-- Version bumps may be incorrect (e.g., v0.7.1.13+1 instead of v0.7.1.10+1 for E7:S01:T10)
+- Version bumps may be incorrect (e.g., v0.7.1.13+1 instead of v0.7.1.10+1 for E07:S01:T10)
 - No validation of task context before release execution
 - Potential for release errors due to incorrect context inference
 
@@ -78,9 +78,9 @@ This feature is needed:
 ## Acceptance Criteria
 
 - [ ] **AC1:** RW rejects invocations without task argument
-- [ ] **AC2:** RW accepts both `RW E7:S01:T10` and `RW E7S01T10` formats
+- [ ] **AC2:** RW accepts both `RW E07:S01:T10` and `RW E07S01T10` formats
 - [ ] **AC3:** RW validates task exists and is COMPLETE before proceeding
-- [ ] **AC4:** Version schema correctly follows specified task (e.g., E7:S01:T10 → v0.7.1.10+1)
+- [ ] **AC4:** Version schema correctly follows specified task (e.g., E07:S01:T10 → v0.7.1.10+1)
 - [ ] **AC5:** Clear error messages for invalid task arguments
 - [ ] **AC6:** Documentation updated with new requirement
 - [ ] **AC7:** Works across all workflow execution contexts
@@ -90,7 +90,7 @@ This feature is needed:
 ## Rationale
 
 **Why This Matters:**
-- Prevents version schema errors (e.g., releasing E7:S01:T10 as v0.7.1.13+1)
+- Prevents version schema errors (e.g., releasing E07:S01:T10 as v0.7.1.13+1)
 - Ensures audit trails are accurate and traceable
 - Eliminates context inference reliability concerns
 - Improves workflow predictability and safety

@@ -17,14 +17,14 @@ housekeeping_policy: keep
 
 **Task Type:** Bug Fix / Hardening  
 **Build Warning Suppression:** false  
-**Code:** E6S07T16
+**Code:** E06S07T16
 
 ---
 
 ## Task ID
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`  
-**Value:** `E6:S07:T16`
+**Value:** `E06:S07:T16`
 
 ---
 
@@ -287,8 +287,8 @@ sorted_entries_to_archive = sorted(
 ## Related Work
 
 - **Story:** E6:S07 - ADK Implementation Analysis and Package Management
-- **Related Task:** E6:S07:T11 - Changelog Management and Archival Workflow (CMW implementation)
-- **Related Task:** E2:S16:T03 - Changelog Maintenance Workflow (CMW) - Perpetual Task (migrated from T12)
+- **Related Task:** E06:S07:T11 - Changelog Management and Archival Workflow (CMW implementation)
+- **Related Task:** E02:S16:T03 - Changelog Maintenance Workflow (CMW) - Perpetual Task (migrated from T12)
 - **Analysis Document:** `docs/analysis/cmw-ordering-flaw-analysis.md`
 
 ---

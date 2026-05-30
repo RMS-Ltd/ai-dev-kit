@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S1:T5`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S01:T05`)
 
 **Full Task ID:** `E12:S01:T05`
 
@@ -34,7 +34,7 @@ Set up routing (if SPA) for the {PROJECT_NAME} project. Configure client-side ro
 
 ## Input
 
-- UI framework (from E12:S1:T01)
+- UI framework (from E12:S01:T01)
 - Routing requirements
 - Navigation requirements
 - Route guard requirements
@@ -81,7 +81,7 @@ Set up routing (if SPA) for the {PROJECT_NAME} project. Configure client-side ro
 ## Dependencies
 
 **Depends On:**
-- E12:S1:T01: Choose and set up UI framework (routing uses framework)
+- E12:S01:T01: Choose and set up UI framework (routing uses framework)
 
 **Blocks:**
 - E12:S3: User Interface Implementation (UI implementation uses routing)
@@ -93,7 +93,7 @@ Set up routing (if SPA) for the {PROJECT_NAME} project. Configure client-side ro
 ## Related Work
 
 **Related Tasks:**
-- E12:S1:T01: Choose and set up UI framework (routing uses framework)
+- E12:S01:T01: Choose and set up UI framework (routing uses framework)
 
 **Related Stories:**
 - E12:S1: UI Framework Setup (this story)

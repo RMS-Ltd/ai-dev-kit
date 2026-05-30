@@ -8,17 +8,17 @@ housekeeping_policy: keep
 
 # Epic 2, Story 15, Task 6: RW Step 7 self-sufficient scoped kanban reconciliation (FR-091)
 
-**Task ID:** E2:S15:T06  
-**Status:** SUPERSEDED -> [E2:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
+**Task ID:** E02:S15:T06  
+**Status:** SUPERSEDED -> [E02:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-27  
-**Last updated:** 2026-04-27 (superseded by FR-092 meta-task on day of intake; ownership transferred to E2:S15:T07 Wave 2)  
-**Code:** E2S15T06
+**Last updated:** 2026-04-27 (superseded by FR-092 meta-task on day of intake; ownership transferred to E02:S15:T07 Wave 2)  
+**Code:** E02S15T06
 
 **Upstream (historical):** [FR-091 — RW Step 7 self-sufficient scoped kanban reconciliation without UKW dependency](../../../fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)  
-**Current owner:** [E2:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
-**Current IPP:** [IPP-E2S15T07](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+**Current owner:** [E02:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
+**Current IPP:** [IPP-E02S15T07](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 > **Supersede note (2026-04-27):** RW Step 7 self-sufficiency contract (FR-091) is absorbed into FR-092 (Bucket A1-A5 + Wave 2). All open ACs below remain authoritative for traceability; execution has moved to T07. Do not run RW against T06 — release this scope under T07 instead.
 

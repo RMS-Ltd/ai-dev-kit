@@ -12,10 +12,10 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** HIGH - planning/spec artifacts are assumed published but are not discoverable in the Docusaurus documentation system.  
 **Created:** 2026-04-14  
-**Last updated:** 2026-04-14 (v0.2.15.1+1 – publication contract/validator/backfill inventory shipped under E2:S15:T01)  
+**Last updated:** 2026-04-14 (v0.2.15.1+1 – publication contract/validator/backfill inventory shipped under E02:S15:T01)  
 **Version:** v0.2.15.1+1  
 **Code:** BR-066  
-**Implementing Task:** [E2:S15:T01](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
+**Implementing Task:** [E02:S15:T01](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
 
 ---
 
@@ -29,12 +29,12 @@ This creates a false-positive expectation that specifications are published/disc
 
 ## Confirmed Example
 
-- IPW target: `E2:S01:T17` (FR-077)
+- IPW target: `E02:S01:T17` (FR-077)
 - Plan file: `~/.cursor/plans/ipw_e2s01t17_0af57720.plan.md`
 - Durable artifacts exist:
-  - `docs/implementation-cycles/ICW-E2S01T17-specification.md`
-  - `docs/implementation-cycles/ICW-E2S01T17-test-design.md`
-  - `docs/implementation-cycles/ICW-E2S01T17-implementation-plan.md`
+  - `docs/implementation-cycles/ICW-E02S01T17-specification.md`
+  - `docs/implementation-cycles/ICW-E02S01T17-test-design.md`
+  - `docs/implementation-cycles/ICW-E02S01T17-implementation-plan.md`
 - No corresponding Docusaurus filing/wiring was present for this IPW item at verification time.
 
 ---
@@ -103,14 +103,14 @@ When IPW indicates documentation filing responsibilities (especially spec artifa
 
 - [FR-042](FR-042-implementation-planning-workflow-ipw.md)
 - [FR-077](FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- [E2:S01:T17](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
-- `docs/implementation-cycles/ICW-E2S01T17-*`
+- [E02:S01:T17](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
+- `docs/implementation-cycles/ICW-E02S01T17-*`
 
 
 ## Backfill Inventory and Phasing
 
 - Inventory report: `docs/implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md`.
-- Phase 1: wire known high-impact missing links (starting with E2:S01:T17).
+- Phase 1: wire known high-impact missing links (starting with E02:S01:T17).
 - Phase 2: complete historical backlog using deterministic validator-driven sweeps.
 
 

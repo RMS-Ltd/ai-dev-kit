@@ -1,6 +1,6 @@
-# E7:S06:T12 – CMW Workflow Windsurf Impact Review
+# E07:S06:T12 – CMW Workflow Windsurf Impact Review
 
-**Task:** E7:S06:T12
+**Task:** E07:S06:T12
 **Workflow:** Changelog Management Workflow (CMW)
 **Review Date:** 2026-03-18
 **Status:** Complete

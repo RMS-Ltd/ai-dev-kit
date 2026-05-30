@@ -20,12 +20,12 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [ ] **E8:S04:T01 – Establish expectations baseline for Tooling & Automation package** - TODO
-- [ ] **E8:S04:T02 – Inventory package components and map to expectations** - TODO
-- [ ] **E8:S04:T03 – Validate tooling behavior against documented guidance** - TODO
-- [ ] **E8:S04:T04 – Review integrations and dependency alignment** - TODO
-- [ ] **E8:S04:T05 – Create gap log and risk assessment** - TODO
-- [ ] **E8:S04:T06 – Define RC sign-off criteria and remediation tasks** - TODO
+- [ ] **E08:S04:T01 – Establish expectations baseline for Tooling & Automation package** - TODO
+- [ ] **E08:S04:T02 – Inventory package components and map to expectations** - TODO
+- [ ] **E08:S04:T03 – Validate tooling behavior against documented guidance** - TODO
+- [ ] **E08:S04:T04 – Review integrations and dependency alignment** - TODO
+- [ ] **E08:S04:T05 – Create gap log and risk assessment** - TODO
+- [ ] **E08:S04:T06 – Define RC sign-off criteria and remediation tasks** - TODO
 
 ---
 
@@ -43,37 +43,37 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## Tasks
 
-### E8:S04:T01 – Establish expectations baseline for Tooling & Automation package {#e8s04t01--establish-expectations-baseline-for-tooling--automation-package}
+### E08:S04:T01 – Establish expectations baseline for Tooling & Automation package {#E08S04T01--establish-expectations-baseline-for-tooling--automation-package}
 
 **Input:** Package README, validators, and generator docs  
 **Deliverable:** Expectations baseline document  
 **Approach:** Extract expected behaviors for tooling and validators.
 
-### E8:S04:T02 – Inventory package components and map to expectations
+### E08:S04:T02 – Inventory package components and map to expectations
 
 **Input:** Package directory inventory  
 **Deliverable:** Component map with expected vs actual coverage  
 **Approach:** Map generators, validators, and docs to expectations.
 
-### E8:S04:T03 – Validate tooling behavior against documented guidance
+### E08:S04:T03 – Validate tooling behavior against documented guidance
 
 **Input:** Tooling documentation and scripts  
 **Deliverable:** Behavior validation notes and discrepancies  
 **Approach:** Validate tooling outputs against documentation.
 
-### E8:S04:T04 – Review integrations and dependency alignment
+### E08:S04:T04 – Review integrations and dependency alignment
 
 **Input:** Integration references across frameworks  
 **Deliverable:** Integration alignment report  
 **Approach:** Verify ties to other framework validators and workflows.
 
-### E8:S04:T05 – Create gap log and risk assessment
+### E08:S04:T05 – Create gap log and risk assessment
 
 **Input:** Findings from T01–T04  
 **Deliverable:** Gap log with severity and risk notes  
 **Approach:** Consolidate gaps and categorize by RC impact.
 
-### E8:S04:T06 – Define RC sign-off criteria and remediation tasks
+### E08:S04:T06 – Define RC sign-off criteria and remediation tasks
 
 **Input:** Gap log and expected behaviors  
 **Deliverable:** RC sign-off checklist and remediation task list  

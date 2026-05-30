@@ -16,14 +16,14 @@ housekeeping_policy: keep
 **Version:** v0.2.1.5+0
 
 **Progress:** Task template  
-**Code:** E2S1T05
+**Code:** E02S01T05
 
 ---
 
 ## Task ID
 
 **Format:** `E{epic}:S{story}:T{task}`
-**Value:** `E2:S1:T05`
+**Value:** `E02:S01:T05`
 
 ---
 

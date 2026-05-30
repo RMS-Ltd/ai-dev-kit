@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E13:S1:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E13:S01:T02`)
 
 **Full Task ID:** `E13:S01:T02`
 
@@ -34,7 +34,7 @@ Configure test environment for the {PROJECT_NAME} project. Set up isolated test 
 
 ## Input
 
-- Testing framework (from E13:S1:T01)
+- Testing framework (from E13:S01:T01)
 - Test environment requirements
 - Test data requirements
 - Environment configuration requirements
@@ -81,10 +81,10 @@ Configure test environment for the {PROJECT_NAME} project. Set up isolated test 
 ## Dependencies
 
 **Depends On:**
-- E13:S1:T01: Set up testing framework (test environment uses testing framework)
+- E13:S01:T01: Set up testing framework (test environment uses testing framework)
 
 **Blocks:**
-- E13:S1:T03: Set up test coverage tools (coverage tools may use test environment)
+- E13:S01:T03: Set up test coverage tools (coverage tools may use test environment)
 - E13:S2: Test Implementation (tests run in test environment)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
@@ -94,8 +94,8 @@ Configure test environment for the {PROJECT_NAME} project. Set up isolated test 
 ## Related Work
 
 **Related Tasks:**
-- E13:S1:T01: Set up testing framework (test environment uses testing framework)
-- E13:S1:T03: Set up test coverage tools (coverage tools may use test environment)
+- E13:S01:T01: Set up testing framework (test environment uses testing framework)
+- E13:S01:T03: Set up test coverage tools (coverage tools may use test environment)
 
 **Related Stories:**
 - E13:S1: Testing Infrastructure Setup (this story)

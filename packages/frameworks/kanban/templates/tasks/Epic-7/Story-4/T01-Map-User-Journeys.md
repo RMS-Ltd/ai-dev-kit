@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S4:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S04:T01`)
 
 **Full Task ID:** `E07:S04:T01`
 
@@ -34,7 +34,7 @@ Map user journeys for the {PROJECT_NAME} project. Create comprehensive user jour
 
 ## Input
 
-- User personas (from E7:S1:T06, if available)
+- User personas (from E07:S01:T06, if available)
 - User research findings (from E7:S1, if available)
 - Product features and functionality
 - User journey mapping requirements
@@ -83,12 +83,12 @@ Map user journeys for the {PROJECT_NAME} project. Create comprehensive user jour
 ## Dependencies
 
 **Depends On:**
-- User personas (from E7:S1:T06, if available - optional)
+- User personas (from E07:S01:T06, if available - optional)
 - User research findings (from E7:S1, if available - optional)
 
 **Blocks:**
-- E7:S4:T02: Identify pain points and opportunities (identification uses journey maps)
-- E7:S4:T03: Design user experience flows (flows align with journey maps)
+- E07:S04:T02: Identify pain points and opportunities (identification uses journey maps)
+- E07:S04:T03: Design user experience flows (flows align with journey maps)
 
 **Parallel Development Candidacy:** Safe (can proceed independently, benefits from user personas)
 
@@ -97,9 +97,9 @@ Map user journeys for the {PROJECT_NAME} project. Create comprehensive user jour
 ## Related Work
 
 **Related Tasks:**
-- E7:S4:T02: Identify pain points and opportunities (identification uses journey maps)
-- E7:S4:T03: Design user experience flows (flows align with journey maps)
-- E7:S4:T04: Create experience design prototypes (prototypes implement journey-based designs)
+- E07:S04:T02: Identify pain points and opportunities (identification uses journey maps)
+- E07:S04:T03: Design user experience flows (flows align with journey maps)
+- E07:S04:T04: Create experience design prototypes (prototypes implement journey-based designs)
 
 **Related Stories:**
 - E7:S4: User Journey Mapping and Experience Design (this story)

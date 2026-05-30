@@ -13,17 +13,17 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-31  
 **Submitted By:** User  
 **Priority:** MEDIUM  
-**Status:** CLOSED *(Phase B/C filed **v0.5.1.74+2**; AC3 closed via Wave 4 scoped reconciliation under **E4:S19:T06**)*  
+**Status:** CLOSED *(Phase B/C filed **v0.5.1.74+2**; AC3 closed via Wave 4 scoped reconciliation under **E04:S19:T06**)*  
 
-**Implementing Task:** [E4:S19:T06](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
-**Historical implementing task:** [E5:S01:T73](../epics/Epic-5/Story-001-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
-**IPP:** [IPP-E4S19T06](../../../implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
+**Implementing Task:** [E04:S19:T06](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
+**Historical implementing task:** [E05:S01:T73](../epics/Epic-5/Story-001-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
+**IPP:** [IPP-E04S19T06](../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)
 
 ---
 
 ## Summary
 
-The **Intake plan** prose on [`fbuboard.md`](../fbuboard.md) (open ∧ taskless queue, epic branch + **`RW -k`**, hygiene notes) had **no implementing task**, so changes could not be attributed in versioning or Kanban. This FR is now governed by **E4:S19:T06** as the canonical meta-task anchor and preserves **E5:S01:T73** as the historical completion artifact for prior phases.
+The **Intake plan** prose on [`fbuboard.md`](../fbuboard.md) (open ∧ taskless queue, epic branch + **`RW -k`**, hygiene notes) had **no implementing task**, so changes could not be attributed in versioning or Kanban. This FR is now governed by **E04:S19:T06** as the canonical meta-task anchor and preserves **E05:S01:T73** as the historical completion artifact for prior phases.
 
 ---
 
@@ -39,7 +39,7 @@ The **Intake plan** prose on [`fbuboard.md`](../fbuboard.md) (open ∧ taskless 
 
 ### FR-073:R01 — Kanban anchor
 
-- **FR-073** and **E4:S19:T06** exist with bidirectional links (with **E5:S01:T73** retained as historical anchor).  
+- **FR-073** and **E04:S19:T06** exist with bidirectional links (with **E05:S01:T73** retained as historical anchor).  
 - [`fbuboard.md`](../fbuboard.md) **Intake plan** section cites **FR-073** / **T06** as active governance SoT, with T73 retained as historical precedent.
 
 ### FR-073:R02 — MoSCOW visibility
@@ -76,12 +76,12 @@ The **Intake plan** prose on [`fbuboard.md`](../fbuboard.md) (open ∧ taskless 
 
 ## Intake Decision
 
-**Intake Status:** CLOSED — **Phase B/C** documented under **`v0.5.1.74+2`** (SemVer **`v0.4.686+2`**); **AC3** closure evidence recorded in Wave 4 under **E4:S19:T06**.
+**Intake Status:** CLOSED — **Phase B/C** documented under **`v0.5.1.74+2`** (SemVer **`v0.4.686+2`**); **AC3** closure evidence recorded in Wave 4 under **E04:S19:T06**.
 
 **Assigned To:**
 
 - **Epic / Story:** Epic 4, Story 19 (abstract governance)  
-- **Task:** E4:S19:T06  
+- **Task:** E04:S19:T06  
 - **Version:** **`0.5.1.73+0`** doc-init + **`0.5.1.74+2`** Phase B/C narrative closure *(see changelog)*  
 
 **Kanban Links:**

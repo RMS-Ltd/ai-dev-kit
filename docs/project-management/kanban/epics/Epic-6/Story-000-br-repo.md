@@ -21,7 +21,7 @@ housekeeping_policy: keep
 **Build Warning Suppression:** N/A  
 **Explanation:** This is Epic-level abstract space (`v0.6.0.0+0`), serving as a forensic traceability anchor for the entire Epic 6. It does NOT contain any tasks. Repository tasks have been migrated to S01 (BR Repo).
 
-**Migration Note:** As part of the repository story abstract space resolution (E9:S01:T08), all repository tasks were migrated from S00 to S01. S00 is now purely abstract space (Epic-level only), and S01 is the concrete repository story for Bug Reports.
+**Migration Note:** As part of the repository story abstract space resolution (E09:S01:T08), all repository tasks were migrated from S00 to S01. S00 is now purely abstract space (Epic-level only), and S01 is the concrete repository story for Bug Reports.
 
 ---
 
@@ -42,19 +42,19 @@ housekeeping_policy: keep
 **Relationship to Repository Story:**
 - S00 (this document) = Epic-level abstract space (`v0.6.0.0+0`)
 - S01 = Repository story (concrete, with tasks) (`v0.6.1.0+0`)
-- Repository tasks use S01 (e.g., BR-033 = E6:S01:T33 = `v0.6.1.33+0`)
+- Repository tasks use S01 (e.g., BR-033 = E06:S01:T33 = `v0.6.1.33+0`)
 
 ---
 
 ## Migration History
 
-**2026-01-16:** Repository story abstract space resolution (E9:S01:T08)
+**2026-01-16:** Repository story abstract space resolution (E09:S01:T08)
 - All repository tasks migrated from S00 to S01
 - S00 updated to Epic-level abstract space only
 - S01 created as concrete repository story for Bug Reports
 
 **Previous State (Pre-Migration):**
-- S00 contained repository tasks (E6:S00:T33)
+- S00 contained repository tasks (E06:S00:T33)
 - This created an architectural contradiction (abstract space with concrete tasks)
 - Tasks used versions like `v0.6.0.33+0`
 
@@ -68,7 +68,7 @@ housekeeping_policy: keep
 ## Related Work
 
 **Migration:**
-- **E9:S01:T08:** Repository Story Abstract Space Contradiction - Task that resolved this architectural issue
+- **E09:S01:T08:** Repository Story Abstract Space Contradiction - Task that resolved this architectural issue
 
 **Repository Story:**
 - **E6:S01:** BR Repo (PERPETUAL) - The concrete repository story for Bug Reports
@@ -84,7 +84,7 @@ housekeeping_policy: keep
 
 - **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
 - **E6:S01 (BR Repo):** `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md`
-- **E9:S01:T08:** `docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md`
+- **E09:S01:T08:** `docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md`
 - **FR-018:** `docs/project-management/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
 - **FR-021:** `docs/project-management/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md`
 - **Solution Design:** `docs/architecture/standards-and-adrs/repository-story-abstract-space-solution-design.md`
@@ -97,6 +97,6 @@ housekeeping_policy: keep
 - **Repository Tasks:** All Bug Report tasks are now in E6:S01 (BR Repo), not S00.
 - **Version:** `v0.6.0.0+0` represents Epic 6's abstract space anchor.
 - **Rarely Updated:** This document only changes if Epic 6's core definition changes.
-- **Migration Complete:** Repository tasks have been migrated to S01 as part of E9:S01:T08.
+- **Migration Complete:** Repository tasks have been migrated to S01 as part of E09:S01:T08.
 
 ---

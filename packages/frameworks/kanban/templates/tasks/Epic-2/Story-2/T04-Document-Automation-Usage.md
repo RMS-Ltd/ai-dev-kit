@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E2:S2:T4` (e.g., `E4:S11:T01`)
+**Format:** `E02:S02:T04` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E02:S02:T04`
 
@@ -71,10 +71,10 @@ Document automation usage for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E2:S2:T03
+- E02:S02:T03
 
 **Blocks:**
-- E2:S2:T05
+- E02:S02:T05
 
 **Blocked By:**
 - [What blocks this task]

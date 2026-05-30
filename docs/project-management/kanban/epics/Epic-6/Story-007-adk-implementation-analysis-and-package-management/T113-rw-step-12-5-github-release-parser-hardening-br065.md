@@ -8,15 +8,15 @@ housekeeping_policy: keep
 
 # Epic 6, Story 7, Task 113: RW Step 12.5 GitHub release parser hardening (BR-065)
 
-**Task ID:** E6:S07:T113  
+**Task ID:** E06:S07:T113  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Small  
 **Created:** 2026-04-13  
-**Code:** E6S07T113
+**Code:** E06S07T113
 
 **Upstream:** [BR-065 - RW Step 12.5 GitHub release parser fails on `v`-prefixed version](../../../fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)  
-**Coordinates with:** [E2:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) RW maintenance perpetual task
+**Coordinates with:** [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) RW maintenance perpetual task
 
 ---
 
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 - Repro evidence from recent RW runs where Step 12.5 fails with `invalid literal for int() with base 10: 'v0'`.
 - Current Step 12.5 implementation in `packages/frameworks/workflow mgt/scripts/create_github_release.py`.
-- [IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening](../../../../../implementation-cycles/IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening.md)
+- [IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening](../../../../../implementation-cycles/IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening.md)
 
 ## Deliverable
 
@@ -71,5 +71,5 @@ Implemented parser hardening in `packages/frameworks/workflow mgt/scripts/create
 
 - [BR-065](../../../fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
 - [FR-041](../../../fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)
-- [E2:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
-- [IPW-E6S07T113](../../../../../implementation-cycles/IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening.md)
+- [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [IPW-E06S07T113](../../../../../implementation-cycles/IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening.md)

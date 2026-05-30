@@ -12,11 +12,11 @@ housekeeping_policy: keep
 **Priority:** CRITICAL  
 **Severity:** CRITICAL  
 **Created:** 2026-04-27  
-**Last updated:** 2026-05-13 (fix implemented: CLAUDE.md + .claude/commands/rw.md — E2:S01:T19 COMPLETE)  
+**Last updated:** 2026-05-13 (fix implemented: CLAUDE.md + .claude/commands/rw.md — E02:S01:T19 COMPLETE)  
 **Version:** v0.2.1.19+1  
 **Code:** BR-071
 
-**Implementing Task:** [E2:S01:T19](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md)
+**Implementing Task:** [E02:S01:T19](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md)
 
 ---
 
@@ -38,7 +38,7 @@ This causes repeated failed publish attempts and forces out-of-band/manual fallb
 
 ## Observed Behavior
 
-- Multiple invocations (`RW E2:S15:T07 --art`, `RW E2:S15:T04 --art`) produced no engine execution.
+- Multiple invocations (`RW E02:S15:T07 --art`, `RW E02:S15:T04 --art`) produced no engine execution.
 - Terminal remained idle after each invocation.
 - `git log`, `git status`, and tag list showed no RW-generated commit/tag transitions.
 - Manual publication exception had to be used to unblock release.
@@ -48,9 +48,9 @@ This causes repeated failed publish attempts and forces out-of-band/manual fallb
 ## Reproduction
 
 1. Open chat session in this repo with pending release-scope changes.
-2. Send `RW E2:S15:T07 --art`.
+2. Send `RW E02:S15:T07 --art`.
 3. Observe that no RW step output appears and no release commit/tag appears.
-4. Repeat with a different task anchor (e.g. `RW E2:S15:T04 --art`) and observe same result.
+4. Repeat with a different task anchor (e.g. `RW E02:S15:T04 --art`) and observe same result.
 
 ---
 
@@ -78,7 +78,7 @@ This causes repeated failed publish attempts and forces out-of-band/manual fallb
 - [x] **AC2:** Execution produces visible step output and expected git/tag side effects.
 - [x] **AC3:** Failure mode surfaces explicit routing error (not silent no-op) when trigger cannot execute.
 - [x] **AC4:** Regression test/diagnostic coverage added for trigger-routing availability.
-- [x] **AC5:** BR-071, E2:S01:T19, Story 001 checklist, `kboard.md`, and `fbuboard.md` are bidirectionally wired.
+- [x] **AC5:** BR-071, E02:S01:T19, Story 001 checklist, `kboard.md`, and `fbuboard.md` are bidirectionally wired.
 
 ---
 
@@ -88,7 +88,7 @@ This causes repeated failed publish attempts and forces out-of-band/manual fallb
 
 **Fix:** Created `CLAUDE.md` (plain-text `RW ` routing rule + blocked-session error) and `.claude/commands/rw.md` (Claude Code slash command `/rw` with self-contained execution guide, environment check, mandatory gates, abort protocol).
 
-**Implementing task:** [E2:S01:T19](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md) — COMPLETE.
+**Implementing task:** [E02:S01:T19](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md) — COMPLETE.
 
 ---
 

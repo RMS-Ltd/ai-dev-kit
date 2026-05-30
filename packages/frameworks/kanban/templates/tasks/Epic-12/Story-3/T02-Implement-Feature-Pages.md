@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S3:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S03:T02`)
 
 **Full Task ID:** `E12:S03:T02`
 
@@ -34,7 +34,7 @@ Implement feature pages for the {PROJECT_NAME} project. Build pages that impleme
 
 ## Input
 
-- Page layouts (from E12:S3:T01)
+- Page layouts (from E12:S03:T01)
 - UI components (from E12:S2)
 - Feature requirements
 - Design specifications
@@ -79,7 +79,7 @@ Implement feature pages for the {PROJECT_NAME} project. Build pages that impleme
 ## Dependencies
 
 **Depends On:**
-- E12:S3:T01: Implement page layouts (feature pages use page layouts)
+- E12:S03:T01: Implement page layouts (feature pages use page layouts)
 - UI components (from E12:S2)
 - API implementation (from E11 - optional, beneficial)
 
@@ -93,7 +93,7 @@ Implement feature pages for the {PROJECT_NAME} project. Build pages that impleme
 ## Related Work
 
 **Related Tasks:**
-- E12:S3:T01: Implement page layouts (feature pages use page layouts)
+- E12:S03:T01: Implement page layouts (feature pages use page layouts)
 
 **Related Stories:**
 - E12:S3: User Interface Implementation (this story)

@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Started:** 2025-12-18  
 **Completed:** 2025-12-18  
 **Version:** v0.4.13.4+1  
-**Code:** E4S13T04
+**Code:** E04S13T04
 
 ---
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E4:S13:T04`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E04:S13:T04`)
 
-**Full Task ID:** `E4:S13:T04`
+**Full Task ID:** `E04:S13:T04`
 
 ---
 
@@ -76,7 +76,7 @@ The `detect_first_time_est_doc` function in `validate_version_bump.py` had flawe
 - **NEW:** Understanding of RW doc-init detection bug scenario
 
 **Dependencies:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
 
 ---
 
@@ -232,15 +232,15 @@ The `detect_first_time_est_doc` function in `validate_version_bump.py` had flawe
 ## Dependencies
 
 **Depends On:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
 
 **Blocks:**
-- E4:S13:T05 – Update Kanban package (needs impact assessment)
-- E4:S13:T06 – Update other affected packages (needs impact assessment)
+- E04:S13:T05 – Update Kanban package (needs impact assessment)
+- E04:S13:T06 – Update other affected packages (needs impact assessment)
 - **NEW:** RW bug fix (should be implemented before T05/T06)
 
 **Blocked By:**
-- E4:S13:T01 (must have enhanced board structure to assess impacts)
+- E04:S13:T01 (must have enhanced board structure to assess impacts)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -255,9 +255,9 @@ The `detect_first_time_est_doc` function in `validate_version_bump.py` had flawe
 - **Abstract Anti-Pattern:** Use Case Exposed Design Flaw - [abstract-anti-patterns-use-case-exposed-design-flaw.md](../../../../../knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md)
 
 **Related Tasks:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view
-- E4:S13:T05 – Update Kanban package
-- E4:S13:T06 – Update other affected packages
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view
+- E04:S13:T05 – Update Kanban package
+- E04:S13:T06 – Update other affected packages
 
 **Related Stories:**
 - E2:S01 – RW Agent Execution & Docs (RW integration)

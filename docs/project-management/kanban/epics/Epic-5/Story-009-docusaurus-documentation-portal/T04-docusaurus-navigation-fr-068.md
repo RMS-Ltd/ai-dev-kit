@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 5, Story 9, Task 04: Navigation, sidebar IA, and landing (FR-068)
 
-**Task ID:** E5:S09:T04  
+**Task ID:** E05:S09:T04  
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-30  
 **Last updated:** 2026-03-30 (v0.5.9.4+1 — FR-068 released)  
-**Code:** E5S09T04
+**Code:** E05S09T04
 
 **Feature Request:** [FR-068 – Sidebar and landing](../../../fr-br/FR-068-docusaurus-navigation-sidebar-and-landing.md)
 
@@ -29,7 +29,7 @@ Implement **FR-068**: sidebar information architecture aligned to **canonical KB
 ## Input
 
 - [FR-068](../../../fr-br/FR-068-docusaurus-navigation-sidebar-and-landing.md)
-- **E5:S09:T03** recommended complete
+- **E05:S09:T03** recommended complete
 
 ---
 
@@ -65,7 +65,7 @@ Implement **FR-068**: sidebar information architecture aligned to **canonical KB
 
 ## Version Anchor
 
-**Forensic marker:** `✅ COMPLETE (v0.5.9.4+1)` — **RW E5:S09:T04**.
+**Forensic marker:** `✅ COMPLETE (v0.5.9.4+1)` — **RW E05:S09:T04**.
 
 ---
 
@@ -82,4 +82,4 @@ Implement **FR-068**: sidebar information architecture aligned to **canonical KB
 
 ## Dependencies
 
-- **E5:S09:T03** recommended (stable routes).
+- **E05:S09:T03** recommended (stable routes).

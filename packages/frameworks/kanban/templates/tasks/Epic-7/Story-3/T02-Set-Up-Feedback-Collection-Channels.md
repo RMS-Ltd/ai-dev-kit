@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S3:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S03:T02`)
 
 **Full Task ID:** `E07:S03:T02`
 
@@ -34,9 +34,9 @@ Set up feedback collection channels (in-app, surveys, support) for the {PROJECT_
 
 ## Input
 
-- Feedback collection methods (from E7:S3:T01)
+- Feedback collection methods (from E07:S03:T01)
 - Product features and functionality
-- User personas (from E7:S1:T06, if available)
+- User personas (from E07:S01:T06, if available)
 - Channel requirements and specifications
 - Technical infrastructure and capabilities
 - ai-dev-kit UXR channel setup practices (if adopting)
@@ -85,11 +85,11 @@ Set up feedback collection channels (in-app, surveys, support) for the {PROJECT_
 ## Dependencies
 
 **Depends On:**
-- E7:S3:T01: Design user feedback collection methods (channels implement methods)
+- E07:S03:T01: Design user feedback collection methods (channels implement methods)
 
 **Blocks:**
-- E7:S3:T03: Implement feedback collection tools (tools integrate with channels)
-- E7:S3:T04: Create feedback analysis workflow (workflow processes channel feedback)
+- E07:S03:T03: Implement feedback collection tools (tools integrate with channels)
+- E07:S03:T04: Create feedback analysis workflow (workflow processes channel feedback)
 
 **Parallel Development Candidacy:** Blocked (depends on T01)
 
@@ -98,9 +98,9 @@ Set up feedback collection channels (in-app, surveys, support) for the {PROJECT_
 ## Related Work
 
 **Related Tasks:**
-- E7:S3:T01: Design user feedback collection methods (channels implement methods)
-- E7:S3:T03: Implement feedback collection tools (tools integrate with channels)
-- E7:S3:T04: Create feedback analysis workflow (workflow processes channel feedback)
+- E07:S03:T01: Design user feedback collection methods (channels implement methods)
+- E07:S03:T03: Implement feedback collection tools (tools integrate with channels)
+- E07:S03:T04: Create feedback analysis workflow (workflow processes channel feedback)
 
 **Related Stories:**
 - E7:S3: User Feedback Collection and Analysis (this story)

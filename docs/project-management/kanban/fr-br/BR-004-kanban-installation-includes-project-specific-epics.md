@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** User (triggered by BR from earlution/dev-kit)  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** RESOLVED ✅ (v0.4.6.10+1 via E4:S06:T10)
+**Status:** RESOLVED ✅ (v0.4.6.10+1 via E04:S06:T10)
 
 ---
 
@@ -286,13 +286,13 @@ Ensure that when projects copy the Kanban framework structure, they receive only
 **Kanban Links:**
 - Epic: [`epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
 - Story: [`epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
-- Task: E4:S06:T10
+- Task: E04:S06:T10
 
 ---
 
 ## Notes
 
-- **Resolution:** Fixed in `v0.4.6.10+1` by installing canonical epic templates from `packages/frameworks/kanban/templates/epics/`, contextualizing Epic 1 with project name, and excluding ai-dev-kit project-specific epics. Implemented in `migrate_structure.py` `_install_canonical_epics()` (E4:S06:T10).
+- **Resolution:** Fixed in `v0.4.6.10+1` by installing canonical epic templates from `packages/frameworks/kanban/templates/epics/`, contextualizing Epic 1 with project name, and excluding ai-dev-kit project-specific epics. Implemented in `migrate_structure.py` `_install_canonical_epics()` (E04:S06:T10).
 - **Triggered by:** BR from earlution/dev-kit project reporting this issue when using ai-dev-kit as a template
 - This bug affects the initial setup experience for new projects using ai-dev-kit as a template
 - The canonical epic ordering is already well-defined in `CANONICAL_EPICS.md`, but Epic 1 needs a generic name

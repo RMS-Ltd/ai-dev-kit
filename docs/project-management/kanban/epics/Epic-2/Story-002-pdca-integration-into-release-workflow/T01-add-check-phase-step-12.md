@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task 001 – Add CHECK Phase (Step 12: Post-Commit Verification & Reflection)
 
-**Task:** E2:S02:T01  
+**Task:** E02:S02:T01  
 **Status:** TODO  
 **Priority:** HIGH  
 **Created:** 2025-12-03  
@@ -90,9 +90,9 @@ Add Step 12 (Post-Commit Verification & Reflection) to the Release Workflow to i
 
 ## Related Tasks
 
-- E2:S02:T02 – Add ACT Phase (depends on this task)
-- E2:S02:T03 – Enhance PLAN Phase (coordinates with this task)
-- E2:S02:T06 – Update RW workflow YAML and documentation (includes this task)
+- E02:S02:T02 – Add ACT Phase (depends on this task)
+- E02:S02:T03 – Enhance PLAN Phase (coordinates with this task)
+- E02:S02:T06 – Update RW workflow YAML and documentation (includes this task)
 
 ---
 

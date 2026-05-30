@@ -6,9 +6,9 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E6:S07:T105 – Release Runbook Creation
+# E06:S07:T105 – Release Runbook Creation
 
-**Task ID:** E6:S07:T105
+**Task ID:** E06:S07:T105
 **Status:** COMPLETE
 **Priority:** HIGH
 **Estimated Effort:** Medium
@@ -151,8 +151,8 @@ Create a comprehensive release runbook that documents the exact commands and ord
 
 ## Related Work
 
-- E2:S16:T03: RW Maintenance (perpetual task)
-- E6:S07:T104: Release Automation Audit
+- E02:S16:T03: RW Maintenance (perpetual task)
+- E06:S07:T104: Release Automation Audit
 - FR-046: RW Uses SemVer Tag When Task-Touch Enabled
 - Release workflow documentation
 

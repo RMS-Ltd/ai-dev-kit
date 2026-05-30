@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 2, Story 16, Task 2: Inventory and classify workflow-related perpetual tasks
 
-**Task ID:** E2:S16:T02  
+**Task ID:** E02:S16:T02  
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-04-20 (status moved to IN PROGRESS for RW -d E2:S16:T02 --art)  
-**Code:** E2S16T02
+**Last updated:** 2026-04-20 (status moved to IN PROGRESS for RW -d E02:S16:T02 --art)  
+**Code:** E02S16T02
 
 **Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
@@ -23,7 +23,7 @@ housekeeping_policy: keep
 ## Input
 
 - [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
-- Planning baseline from [E2:S16:T01](./T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md).
+- Planning baseline from [E02:S16:T01](./T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md).
 
 ---
 

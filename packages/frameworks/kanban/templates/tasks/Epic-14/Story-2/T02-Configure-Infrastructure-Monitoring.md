@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S2:T2`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S02:T02`)
 
 **Full Task ID:** `E14:S02:T02`
 
@@ -34,7 +34,7 @@ Configure infrastructure monitoring for the {PROJECT_NAME} project. Set up monit
 
 ## Input
 
-- Infrastructure setup (from E14:S2:T01)
+- Infrastructure setup (from E14:S02:T01)
 - Monitoring requirements
 - Monitoring tool preferences
 - Alerting requirements
@@ -83,7 +83,7 @@ Configure infrastructure monitoring for the {PROJECT_NAME} project. Set up monit
 ## Dependencies
 
 **Depends On:**
-- E14:S2:T01: Set up infrastructure (monitoring monitors infrastructure)
+- E14:S02:T01: Set up infrastructure (monitoring monitors infrastructure)
 
 **Blocks:**
 - E14:S3: Monitoring and Logging (monitoring is part of monitoring and logging)
@@ -95,7 +95,7 @@ Configure infrastructure monitoring for the {PROJECT_NAME} project. Set up monit
 ## Related Work
 
 **Related Tasks:**
-- E14:S2:T01: Set up infrastructure (monitoring monitors infrastructure)
+- E14:S02:T01: Set up infrastructure (monitoring monitors infrastructure)
 
 **Related Stories:**
 - E14:S2: Infrastructure Setup (this story)

@@ -20,20 +20,20 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E4:S17:T01 – Enumerate supported installation paths for Kanban** ✅ COMPLETE (v0.4.17.1+1)
-- [x] **E4:S17:T02 – Validate fresh install steps for each path** - ✅ COMPLETE (v0.4.17.2+1)
+- [x] **E04:S17:T01 – Enumerate supported installation paths for Kanban** ✅ COMPLETE (v0.4.17.1+1)
+- [x] **E04:S17:T02 – Validate fresh install steps for each path** - ✅ COMPLETE (v0.4.17.2+1)
   - Task Doc: [`T02-validate-fresh-install-steps-for-each-path.md`](Story-017-kanban-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md)
 
-- [x] **E4:S17:T03 – Validate migration/update paths (if supported)** - ✅ COMPLETE (v0.4.17.3+1)
+- [x] **E04:S17:T03 – Validate migration/update paths (if supported)** - ✅ COMPLETE (v0.4.17.3+1)
   - Task Doc: [`T03-validate-migration-update-paths.md`](Story-017-kanban-package-installation-evaluation/T03-validate-migration-update-paths.md)
 
-- [x] **E4:S17:T04 – Verify post-install configuration and validation steps** - ✅ COMPLETE (v0.4.17.4+1)
+- [x] **E04:S17:T04 – Verify post-install configuration and validation steps** - ✅ COMPLETE (v0.4.17.4+1)
   - Task Doc: [`T04-verify-post-install-configuration-and-validation-steps.md`](Story-017-kanban-package-installation-evaluation/T04-verify-post-install-configuration-and-validation-steps.md)
 
-- [x] **E4:S17:T05 – Document failure modes and rollback guidance** - ✅ COMPLETE (v0.4.17.5+1)
+- [x] **E04:S17:T05 – Document failure modes and rollback guidance** - ✅ COMPLETE (v0.4.17.5+1)
   - Task Doc: [`T05-document-failure-modes-and-rollback-guidance.md`](Story-017-kanban-package-installation-evaluation/T05-document-failure-modes-and-rollback-guidance.md)
 
-- [x] **E4:S17:T06 – Capture documentation gaps and improvements** - ✅ COMPLETE (v0.4.17.6+1)
+- [x] **E04:S17:T06 – Capture documentation gaps and improvements** - ✅ COMPLETE (v0.4.17.6+1)
   - Task Doc: [`T06-capture-documentation-gaps-and-improvements.md`](Story-017-kanban-package-installation-evaluation/T06-capture-documentation-gaps-and-improvements.md)
 
 
@@ -71,9 +71,9 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 
 ## Tasks
 
-### E4:S17:T01 – Enumerate supported installation paths for Kanban
+### E04:S17:T01 – Enumerate supported installation paths for Kanban
 
-**Task ID:** E4:S17:T01  
+**Task ID:** E04:S17:T01  
 **Status:** COMPLETE  
 **Scope:** Enumerate all supported installation paths and modes for the Kanban package.  
 **Input:** Installation guides and scripts.  
@@ -89,9 +89,9 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 **Deliverable:** Enumerated installation path list  
 **Approach:** Identify release, submodule, and CLI paths (as applicable).
 
-### E4:S17:T02 – Validate fresh install steps for each path
+### E04:S17:T02 – Validate fresh install steps for each path
 
-**Task ID:** E4:S17:T02  
+**Task ID:** E04:S17:T02  
 **Status:** ✅ COMPLETE  
 **Scope:** Validate fresh install steps for each supported installation path to ensure each path is documented, reproducible, and RC-ready.  
 **Input:** Installation steps, installation documentation  
@@ -107,9 +107,9 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 - [x] Issues and gaps documented ✅
 - [x] Recommendations provided for RC readiness ✅
 
-### E4:S17:T03 – Validate migration/update paths (if supported)
+### E04:S17:T03 – Validate migration/update paths (if supported)
 
-**Task ID:** E4:S17:T03  
+**Task ID:** E04:S17:T03  
 **Status:** ✅ COMPLETE  
 **Scope:** Validate migration and update paths for the Kanban framework package to ensure users can successfully migrate existing Kanban structures or update existing framework installations.  
 **Input:** Migration/update guidance, migration scripts, documentation  
@@ -127,9 +127,9 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 - [x] Issues and gaps documented ✅
 - [x] Recommendations provided for RC readiness ✅
 
-### E4:S17:T04 – Verify post-install configuration and validation steps
+### E04:S17:T04 – Verify post-install configuration and validation steps
 
-**Task ID:** E4:S17:T04  
+**Task ID:** E04:S17:T04  
 **Status:** ✅ COMPLETE  
 **Scope:** Verify post-install configuration and validation steps for the Kanban framework package to ensure users can successfully verify their installation and configure the framework for their project.  
 **Input:** README and validation scripts, configuration documentation  
@@ -146,9 +146,9 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 - [x] Issues and gaps documented ✅
 - [x] Recommendations provided for RC readiness ✅
 
-### E4:S17:T05 – Document failure modes and rollback guidance
+### E04:S17:T05 – Document failure modes and rollback guidance
 
-**Task ID:** E4:S17:T05  
+**Task ID:** E04:S17:T05  
 **Status:** ✅ COMPLETE  
 **Scope:** Document failure modes and rollback guidance for the Kanban framework package installation to ensure users can recover from installation failures and rollback problematic installations.  
 **Input:** Installer behavior and logs, error handling code, backup mechanisms  
@@ -164,9 +164,9 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 - [x] Recovery paths documented ✅
 - [x] Best practices documented ✅
 
-### E4:S17:T06 – Capture documentation gaps and improvements
+### E04:S17:T06 – Capture documentation gaps and improvements
 
-**Task ID:** E4:S17:T06  
+**Task ID:** E04:S17:T06  
 **Status:** ✅ COMPLETE  
 **Scope:** Capture and consolidate all documentation gaps and improvements identified during the Kanban package installation evaluation (T01-T05). Create a comprehensive gap list with remediation tasks to ensure RC readiness.  
 **Input:** Findings from T01–T05, gap analysis from each task  

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S4:T3`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S04:T03`)
 
 **Full Task ID:** `E07:S04:T03`
 
@@ -34,10 +34,10 @@ Design user experience flows for the {PROJECT_NAME} project. Create detailed use
 
 ## Input
 
-- User journey maps (from E7:S4:T01)
-- Identified pain points and opportunities (from E7:S4:T02)
+- User journey maps (from E07:S04:T01)
+- Identified pain points and opportunities (from E07:S04:T02)
 - Product features and functionality
-- User personas (from E7:S1:T06, if available)
+- User personas (from E07:S01:T06, if available)
 - Flow design requirements
 - ai-dev-kit UXR flow design practices (if adopting)
 
@@ -83,12 +83,12 @@ Design user experience flows for the {PROJECT_NAME} project. Create detailed use
 ## Dependencies
 
 **Depends On:**
-- E7:S4:T01: Map user journeys (flows align with journey maps)
-- E7:S4:T02: Identify pain points and opportunities (flows address pain points)
+- E07:S04:T01: Map user journeys (flows align with journey maps)
+- E07:S04:T02: Identify pain points and opportunities (flows address pain points)
 
 **Blocks:**
-- E7:S4:T04: Create experience design prototypes (prototypes implement flows)
-- E7:S4:T06: Validate experience designs (validation uses flows)
+- E07:S04:T04: Create experience design prototypes (prototypes implement flows)
+- E07:S04:T06: Validate experience designs (validation uses flows)
 
 **Parallel Development Candidacy:** Blocked (depends on T01 and T02)
 
@@ -97,10 +97,10 @@ Design user experience flows for the {PROJECT_NAME} project. Create detailed use
 ## Related Work
 
 **Related Tasks:**
-- E7:S4:T01: Map user journeys (flows align with journey maps)
-- E7:S4:T02: Identify pain points and opportunities (flows address pain points)
-- E7:S4:T04: Create experience design prototypes (prototypes implement flows)
-- E7:S4:T06: Validate experience designs (validation uses flows)
+- E07:S04:T01: Map user journeys (flows align with journey maps)
+- E07:S04:T02: Identify pain points and opportunities (flows address pain points)
+- E07:S04:T04: Create experience design prototypes (prototypes implement flows)
+- E07:S04:T06: Validate experience designs (validation uses flows)
 
 **Related Stories:**
 - E7:S4: User Journey Mapping and Experience Design (this story)

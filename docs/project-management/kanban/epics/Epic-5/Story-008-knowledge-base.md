@@ -12,18 +12,18 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-02-22 (v0.5.8.2+8 – T02: E4:S16:T05 gap log spec, validator)  
+**Last updated:** 2026-02-22 (v0.5.8.2+8 – T02: E04:S16:T05 gap log spec, validator)  
 **Version:** v0.5.8.2+8  
 **Code:** E5S08
 
-**Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E9:S01:T08).
+**Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
 
 ---
 
 ## Task Checklist
-- [ ] **E5:S08:T01 – Investigate persistent knowledge base concept and ramifications** - TODO
+- [ ] **E05:S08:T01 – Investigate persistent knowledge base concept and ramifications** - TODO
 
-- [x] **E5:S08:T02 – Notion hub, Knowledge Base container, and KB index** ✅ COMPLETE (v0.5.8.2+8)
+- [x] **E05:S08:T02 – Notion hub, Knowledge Base container, and KB index** ✅ COMPLETE (v0.5.8.2+8)
 
 ## Overview
 
@@ -45,7 +45,7 @@ Understand the full scope and implications of the persistent knowledge base conc
 
 ## Tasks
 
-### E5:S08:T01 – Investigate persistent knowledge base concept and ramifications
+### E05:S08:T01 – Investigate persistent knowledge base concept and ramifications
 
 **Scope:** Comprehensive investigation of the persistent knowledge base concept, its integration points, requirements, and implications for the ADK framework.
 
@@ -98,7 +98,7 @@ Understand the full scope and implications of the persistent knowledge base conc
 
 ---
 
-### E5:S08:T02 – Notion hub, Knowledge Base container, and KB index
+### E05:S08:T02 – Notion hub, Knowledge Base container, and KB index
 
 **Scope:** Establish Notion project hub and Knowledge Base container (RMS Teamspace), wire repo via `notion_hub_url`, and index project KB for optimization and migration.
 

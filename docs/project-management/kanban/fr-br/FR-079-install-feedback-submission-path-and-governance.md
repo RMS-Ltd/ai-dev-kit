@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** COMPLETE
 
-**Implementing Task:** [E6:S07:T112](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md)
+**Implementing Task:** [E06:S07:T112](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md)
 
 ---
 
@@ -89,4 +89,4 @@ Even with high-fidelity local install event logging, quality feedback loops rema
 
 ## Release trace
 
-- **v0.6.7.112+2** (SemVer **v0.4.726+2**, E6:S07:T112, RW with `--art`): Implemented deterministic feedback payload prepare/validate/submit flow with outcome diagnostics, redaction checks, local submission receipt generation, and user docs/tests.
+- **v0.6.7.112+2** (SemVer **v0.4.726+2**, E06:S07:T112, RW with `--art`): Implemented deterministic feedback payload prepare/validate/submit flow with outcome diagnostics, redaction checks, local submission receipt generation, and user docs/tests.

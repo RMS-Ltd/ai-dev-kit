@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Bug Report BR-058: Missing `Tests` CI Workflow and Stale Pytest Failures
 
 **Bug ID:** BR-058  
-**Task ID:** E7:S06:T08 (audit finding)  
+**Task ID:** E07:S06:T08 (audit finding)  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (CI integration dead; local test signal degraded)  
 **Status:** OPEN  
 
-**Implementing Task:** [E8:S03:T04](../epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)
+**Implementing Task:** [E08:S03:T04](../epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)
 **Created:** 2026-03-25  
 **Classification:** CI/CD + test maintenance
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Bug Summary
 
-**Update (2026-03-30, E5:S01:T69 / FR-064):** `update-badges.yml` was **removed** from this repo (BYOB / orphan `shields` branch retirement). The former **`workflow_run: ["Tests"]`** dead trigger is therefore **moot**; only disabled intake reference files remain under `.github/workflows/` aside from any future workflows.
+**Update (2026-03-30, E05:S01:T69 / FR-064):** `update-badges.yml` was **removed** from this repo (BYOB / orphan `shields` branch retirement). The former **`workflow_run: ["Tests"]`** dead trigger is therefore **moot**; only disabled intake reference files remain under `.github/workflows/` aside from any future workflows.
 
 Separately, **`pytest`** at repo root reports **7 failing tests** (85 passed, 92 collected after fixing import drift in `tests/test_validation.py`). Failures indicate outdated tests relative to current CLI/backend APIs and environment-specific path expectations.
 

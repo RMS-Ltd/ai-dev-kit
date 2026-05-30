@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 6, Story 9, Task 4: ECC harness layer Phase 0 compatibility evaluation (FR-098)
 
-**Task ID:** E6:S09:T04  
+**Task ID:** E06:S09:T04  
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Small (Phase 0 spike)  
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (Phase 0 complete — pending RW release)  
-**Code:** E6S09T04
+**Code:** E06S09T04
 
 **Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Full Task ID:** `E6:S09:T04`
+**Full Task ID:** `E06:S09:T04`
 
 ---
 
@@ -37,7 +37,7 @@ This task does **not** implement the ADK workflow skill pack or installer bridge
 ## Input
 
 - [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md) — full phased program
-- [IPP-E6S09T04](../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md) — planning package
+- [IPP-E06S09T04](../../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md) — planning package
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
 - [Bridge template](../../../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
@@ -102,7 +102,7 @@ Adopters may install ECC alongside ADK for harness performance (domain skills, h
 
 ## Dependencies / coordination
 
-- **E6:S09:T01–T03:** Optional ECC step must not contradict greenfield/brownfield install narratives; cross-link only.
+- **E06:S09:T01–T03:** Optional ECC step must not contradict greenfield/brownfield install narratives; cross-link only.
 - **FR-083 / IPW gate:** Phase 1+ implementation requires IPW before code changes; Phase 0 is evaluation-only.
 
 ---
@@ -199,7 +199,7 @@ Adopters may install ECC alongside ADK for harness performance (domain skills, h
 ## References
 
 - [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-- [IPP-E6S09T04](../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
+- [IPP-E06S09T04](../../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md)
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
 - [Bridge template](../../../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)

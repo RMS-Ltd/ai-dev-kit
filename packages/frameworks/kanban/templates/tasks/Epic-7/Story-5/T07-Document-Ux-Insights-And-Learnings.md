@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E7:S5:T7` (e.g., `E4:S11:T01`)
+**Format:** `E07:S05:T07` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E07:S05:T07`
 
@@ -71,10 +71,10 @@ Document UX insights and learnings for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E7:S5:T06
+- E07:S05:T06
 
 **Blocks:**
-- E7:S5:T08
+- E07:S05:T08
 
 **Blocked By:**
 - [What blocks this task]

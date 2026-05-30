@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task T06 – CMW Epic 5 execution context (FR-063)
 
-**Task ID:** E5:S02:T06  
+**Task ID:** E05:S02:T06  
 **Status:** ✅ COMPLETE (intake + CMW baseline; FR-063 R01–R04 implementation follow-up)  
 **Priority:** MEDIUM  
 **Estimated Effort:** Medium (1–2 days)  
@@ -23,9 +23,9 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E5:S02:T06`
+**Full Task ID:** `E05:S02:T06`
 
-**Repository Pattern:** FR-063 = E5:S02:T06
+**Repository Pattern:** FR-063 = E05:S02:T06
 
 ---
 
@@ -39,7 +39,7 @@ Implement [FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md): **doc
 - **`cmw.py` (or helper):** blocking precondition for standalone runs; **opt-out / flag** for RW Step 9.5 caller.
 - **`rw-config.yaml` / `cmw-config`:** configurable required epic and branch pattern; documented adopter overrides.
 
-**Coordinates with:** [E2:S16:T03](../../../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (perpetual CMW maintenance — reconcile messaging in docs).
+**Coordinates with:** [E02:S16:T03](../../../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (perpetual CMW maintenance — reconcile messaging in docs).
 
 ---
 

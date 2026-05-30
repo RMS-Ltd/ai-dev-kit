@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E12:S2:T6` (e.g., `E4:S11:T01`)
+**Format:** `E12:S02:T06` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E12:S02:T06`
 
@@ -71,10 +71,10 @@ Add component documentation for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E12:S2:T05
+- E12:S02:T05
 
 **Blocks:**
-- E12:S2:T07
+- E12:S02:T07
 
 **Blocked By:**
 - [What blocks this task]

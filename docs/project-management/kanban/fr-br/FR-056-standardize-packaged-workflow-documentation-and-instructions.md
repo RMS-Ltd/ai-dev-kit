@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** RESOLVED — Fixed in v0.5.1.56+1
 
-**Implementing Task:** [E5:S01:T56](../epics/Epic-5/Story-001-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md)
+**Implementing Task:** [E05:S01:T56](../epics/Epic-5/Story-001-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md)
 
 ---
 

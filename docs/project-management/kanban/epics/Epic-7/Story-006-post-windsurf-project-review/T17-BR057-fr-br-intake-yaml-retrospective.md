@@ -13,13 +13,13 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-20 (v0.7.6.17+1 – RW)  
 **Completed:** 2026-03-20  
 **Version:** v0.7.6.17+1  
-**Code:** E7S06T17
+**Code:** E07S06T17
 
 ---
 
 ## Task ID
 
-**Full Task ID:** `E7:S06:T17`
+**Full Task ID:** `E07:S06:T17`
 
 ---
 
@@ -73,7 +73,7 @@ Retrospective traceability for the **fr-br-intake** GitHub Actions workflow YAML
 ## Completion Summary
 
 - Re-indented multiline strings under `script: |` in `fr-br-intake.yml` so YAML no longer interprets markdown bullets as top-level list items.  
-- Filed retrospective BR-057; aligned Epic 7 / Story 6 / board with E7:S06:T17.  
+- Filed retrospective BR-057; aligned Epic 7 / Story 6 / board with E07:S06:T17.  
 - Repaired duplicate empty `normalize_task_id` definition in `ukw_syntax_parser.py` that broke imports for `validate_rw_task_intent.py`.  
 - Added `validate_rw_task_intent.py` from framework lineage for RW Step 1b on this branch.
 

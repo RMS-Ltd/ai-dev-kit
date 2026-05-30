@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Bug Report BR-060: RW `--art` Flag Not Fully Applied Through Step 9
 
 **Bug ID:** BR-060  
-**Task ID:** E6:S06:T58  
+**Task ID:** E06:S06:T58  
 **Priority:** HIGH  
 **Severity:** HIGH (blocks intended release attribution flow)  
 **Status:** ✅ COMPLETE (v0.6.6.58+2)  
 
-**Implementing Task:** [E2:S01:T09](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)
+**Implementing Task:** [E02:S01:T09](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)
 **Created:** 2026-04-08  
 **Classification:** Workflow bug + policy/docs mismatch
 
@@ -72,7 +72,7 @@ housekeeping_policy: keep
 - Implemented all-mode `--art` support in `validate_rw_task_intent.py` (Step 1d).
 - Implemented `--requested` + `--art` support in Step 9 validators (`validate_branch_context.py`, `validate_version_bump.py`).
 - Updated RW rules/policy/docs and parity docs to require Step 9 adoption-context propagation.
-- Release and follow-up cleanup are tracked under `E6:S06:T58` (`v0.6.6.58+1`, `v0.6.6.58+2`).
+- Release and follow-up cleanup are tracked under `E06:S06:T58` (`v0.6.6.58+1`, `v0.6.6.58+2`).
 
 ---
 

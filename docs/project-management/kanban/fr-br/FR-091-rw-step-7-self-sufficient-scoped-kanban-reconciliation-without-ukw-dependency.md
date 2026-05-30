@@ -17,10 +17,10 @@ housekeeping_policy: keep
 **Status:** SUPERSEDED by [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
 
 **Superseded by:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
-**Implementing Task (current):** [E2:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) (FR-092 meta)  
-**Implementing Task (historical):** [E2:S15:T06](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md) (SUPERSEDED)
+**Implementing Task (current):** [E02:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) (FR-092 meta)  
+**Implementing Task (historical):** [E02:S15:T06](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md) (SUPERSEDED)
 
-> **Supersede note (2026-04-27):** Scope of FR-091 (RW Step 7 self-sufficient scoped kanban reconciliation; UKW reactive-only role; release-scope minimum outputs; cross-doc consistency) is absorbed into FR-092 Bucket A (A1-A5). All open ACs below remain authoritative; ownership and execution have moved to E2:S15:T07.
+> **Supersede note (2026-04-27):** Scope of FR-091 (RW Step 7 self-sufficient scoped kanban reconciliation; UKW reactive-only role; release-scope minimum outputs; cross-doc consistency) is absorbed into FR-092 Bucket A (A1-A5). All open ACs below remain authoritative; ownership and execution have moved to E02:S15:T07.
 
 ---
 

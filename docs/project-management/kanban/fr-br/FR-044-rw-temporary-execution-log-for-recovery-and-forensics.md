@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E5:S01:T44](../epics/Epic-5/Story-001-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)  
-**Historical registry:** E5:S01:T44
+**Implementing Task:** [E05:S01:T44](../epics/Epic-5/Story-001-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)  
+**Historical registry:** E05:S01:T44
 
 ---
 
@@ -80,6 +80,6 @@ Add a **temporary execution log file** to the Release Workflow (RW) that is writ
 
 ## Related
 
-- **Task:** [T44-rw-temporary-execution-log-for-recovery-and-forensics.md](../epics/Epic-5/Story-001-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md) (E5:S01:T44)
+- **Task:** [T44-rw-temporary-execution-log-for-recovery-and-forensics.md](../epics/Epic-5/Story-001-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md) (E05:S01:T44)
 - **RW Agent Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **rw-config.yaml:** Project config for paths and behaviour

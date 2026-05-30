@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S3:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E12:S03:T01`)
 
 **Full Task ID:** `E12:S03:T01`
 
@@ -34,9 +34,9 @@ Implement page layouts for the {PROJECT_NAME} project. Build page-level layouts 
 
 ## Input
 
-- Layout components (from E12:S2:T03)
-- Navigation components (from E12:S2:T05)
-- Routing (from E12:S1:T05)
+- Layout components (from E12:S02:T03)
+- Navigation components (from E12:S02:T05)
+- Routing (from E12:S01:T05)
 - Page layout requirements
 - Design specifications
 - ai-dev-kit page layout patterns (if adopting)
@@ -84,21 +84,21 @@ Implement page layouts for the {PROJECT_NAME} project. Build page-level layouts 
 ## Dependencies
 
 **Depends On:**
-- E12:S2:T03: Create layout components (page layouts use layout components)
-- E12:S2:T05: Create navigation components (page layouts use navigation components)
-- E12:S1:T05: Set up routing (page layouts use routing)
+- E12:S02:T03: Create layout components (page layouts use layout components)
+- E12:S02:T05: Create navigation components (page layouts use navigation components)
+- E12:S01:T05: Set up routing (page layouts use routing)
 
 **Blocks:**
-- E12:S3:T02: Implement feature pages (feature pages use page layouts)
+- E12:S03:T02: Implement feature pages (feature pages use page layouts)
 
-**Parallel Development Candidacy:** Blocked (depends on E12:S2:T03, E12:S2:T05, E12:S1:T05)
+**Parallel Development Candidacy:** Blocked (depends on E12:S02:T03, E12:S02:T05, E12:S01:T05)
 
 ---
 
 ## Related Work
 
 **Related Tasks:**
-- E12:S3:T02: Implement feature pages (feature pages use page layouts)
+- E12:S03:T02: Implement feature pages (feature pages use page layouts)
 
 **Related Stories:**
 - E12:S3: User Interface Implementation (this story)

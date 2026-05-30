@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E7:S5:T4`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E07:S05:T04`)
 
 **Full Task ID:** `E07:S05:T04`
 
@@ -34,10 +34,10 @@ Create UX insights documentation for the {PROJECT_NAME} project. Develop compreh
 
 ## Input
 
-- Synthesized UX research findings (from E7:S5:T01)
-- UX insights (from E7:S5:T02)
-- UX recommendations (from E7:S5:T02)
-- Prioritized recommendations (from E7:S5:T03)
+- Synthesized UX research findings (from E07:S05:T01)
+- UX insights (from E07:S05:T02)
+- UX recommendations (from E07:S05:T02)
+- Prioritized recommendations (from E07:S05:T03)
 - Documentation requirements
 - ai-dev-kit UXR documentation practices (if adopting)
 
@@ -82,13 +82,13 @@ Create UX insights documentation for the {PROJECT_NAME} project. Develop compreh
 ## Dependencies
 
 **Depends On:**
-- E7:S5:T01: Synthesize UX research findings (documentation includes synthesis)
-- E7:S5:T02: Generate UX insights and recommendations (documentation includes insights and recommendations)
-- E7:S5:T03: Prioritize UX recommendations (documentation includes prioritized recommendations)
+- E07:S05:T01: Synthesize UX research findings (documentation includes synthesis)
+- E07:S05:T02: Generate UX insights and recommendations (documentation includes insights and recommendations)
+- E07:S05:T03: Prioritize UX recommendations (documentation includes prioritized recommendations)
 
 **Blocks:**
-- E7:S5:T05: Create UX recommendations roadmap (roadmap references documentation)
-- E7:S5:T06: Present UX insights to stakeholders (presentation uses documentation)
+- E07:S05:T05: Create UX recommendations roadmap (roadmap references documentation)
+- E07:S05:T06: Present UX insights to stakeholders (presentation uses documentation)
 
 **Parallel Development Candidacy:** Blocked (depends on T01, T02, T03)
 
@@ -97,11 +97,11 @@ Create UX insights documentation for the {PROJECT_NAME} project. Develop compreh
 ## Related Work
 
 **Related Tasks:**
-- E7:S5:T01: Synthesize UX research findings (documentation includes synthesis)
-- E7:S5:T02: Generate UX insights and recommendations (documentation includes insights and recommendations)
-- E7:S5:T03: Prioritize UX recommendations (documentation includes prioritized recommendations)
-- E7:S5:T05: Create UX recommendations roadmap (roadmap references documentation)
-- E7:S5:T06: Present UX insights to stakeholders (presentation uses documentation)
+- E07:S05:T01: Synthesize UX research findings (documentation includes synthesis)
+- E07:S05:T02: Generate UX insights and recommendations (documentation includes insights and recommendations)
+- E07:S05:T03: Prioritize UX recommendations (documentation includes prioritized recommendations)
+- E07:S05:T05: Create UX recommendations roadmap (roadmap references documentation)
+- E07:S05:T06: Present UX insights to stakeholders (presentation uses documentation)
 
 **Related Stories:**
 - E7:S5: UX Insights and Recommendations (this story)

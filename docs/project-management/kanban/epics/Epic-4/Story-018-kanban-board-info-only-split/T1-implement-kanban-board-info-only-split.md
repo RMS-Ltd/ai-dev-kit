@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S18:T01 – Implement Kanban Board Info-Only Split
+# E04:S18:T01 – Implement Kanban Board Info-Only Split
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  

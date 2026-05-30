@@ -171,12 +171,12 @@ When re-opening a task:
 - **Use new BUILD number** to track the reopening
 
 **Example:**
-- Original: `E2:S01:T06` (v0.2.1.6+2) - marked complete
-- Reopened: `E2:S01:T06` → becomes `E2:S01:T08` (v0.2.1.8+1) - reopened
+- Original: `E02:S01:T06` (v0.2.1.6+2) - marked complete
+- Reopened: `E02:S01:T06` → becomes `E02:S01:T08` (v0.2.1.8+1) - reopened
 
 **OR** (if keeping same task number):
-- Original: `E2:S01:T06` (v0.2.1.6+2) - marked complete  
-- Reopened: `E2:S01:T06` (v0.2.1.6+3) - reopened
+- Original: `E02:S01:T06` (v0.2.1.6+2) - marked complete  
+- Reopened: `E02:S01:T06` (v0.2.1.6+3) - reopened
 
 **Decision:** Use next available task number to clearly distinguish reopening, but document the relationship.
 

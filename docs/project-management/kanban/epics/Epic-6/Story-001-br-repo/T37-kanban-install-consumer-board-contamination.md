@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E6:S01:T37 – Kanban Install Consumer Board Contamination
+# E06:S01:T37 – Kanban Install Consumer Board Contamination
 
 **Status:** ✅ COMPLETE (v0.6.1.37+2 – Official release of contamination remediation tooling)  
 **Priority:** CRITICAL  
@@ -137,7 +137,7 @@ Implement a remediation tool that:
   - The contamination detector/remediator and how they are used.
   - The validator integration and operational playbook.
 
-- **Kanban board:** Update the E6:S01:T37 entry to:
+- **Kanban board:** Update the E06:S01:T37 entry to:
   - Reflect that prevention + remediation tooling now exist.
   - Keep the task in IN PROGRESS until the release RW is run and verified.
 
@@ -252,7 +252,7 @@ All core components have been **successfully implemented and tested**:
 ### **Next Steps**
 
 1. **Immediate Priority:**
-   - Run Release Workflow over E6:S01:T37 to release remediation tooling
+   - Run Release Workflow over E06:S01:T37 to release remediation tooling
    - Update task status to reflect comprehensive implementation progress
 
 2. **Verification Phase:**

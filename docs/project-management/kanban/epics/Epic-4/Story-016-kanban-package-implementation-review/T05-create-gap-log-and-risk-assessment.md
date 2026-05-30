@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # T05 – Create Gap Log and Risk Assessment
 
-**Task ID:** E4:S16:T05  
+**Task ID:** E04:S16:T05  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-01-22 (gap log and risk assessment complete; all acceptance criteria met; ready for version anchor via RW)  
 **Completed:** 2026-01-22  
 **Version:** (to be set by Release Workflow)  
-**Code:** E4S16T05
+**Code:** E04S16T05
 
 ---
 
@@ -44,10 +44,10 @@ This includes:
 
 ## Input
 
-- **E4:S16:T01 – Expectations baseline for Kanban package**
-- **E4:S16:T02 – Component inventory and mapping to expectations**
-- **E4:S16:T03 – Behavioral validation report**
-- **E4:S16:T04 – Integration and dependency alignment report**
+- **E04:S16:T01 – Expectations baseline for Kanban package**
+- **E04:S16:T02 – Component inventory and mapping to expectations**
+- **E04:S16:T03 – Behavioral validation report**
+- **E04:S16:T04 – Integration and dependency alignment report**
 - **Known BRs/FRs related to Kanban workflows:**
   - `BR-034-ukw-moscow-prioritization-missing` (UKW MoSCOW behavior)
   - `BR-035-rw-housekeeping-step-not-working` (RW housekeeping, now fixed)
@@ -110,7 +110,7 @@ A **gap log and risk assessment** that:
 
 - **Source:**  
   - `BR-034-ukw-moscow-prioritization-missing.md`  
-  - E6:S01:T34 – UKW MoSCOW prioritization missing  
+  - E06:S01:T34 – UKW MoSCOW prioritization missing  
   - Observations during UKW execution and Kanban board review.
 
 - **Ownership:**  
@@ -123,7 +123,7 @@ A **gap log and risk assessment** that:
 
 - **Tracking:**  
   - BR: `BR-034`  
-  - Task: `E6:S01:T34` ✅ COMPLETE (v0.6.1.34+2)  
+  - Task: `E06:S01:T34` ✅ COMPLETE (v0.6.1.34+2)  
 
 
 ---
@@ -137,7 +137,7 @@ A **gap log and risk assessment** that:
 
 - **Source:**  
   - `BR-035-rw-housekeeping-step-not-working.md`  
-  - E6:S01:T35 – RW housekeeping step not working.
+  - E06:S01:T35 – RW housekeeping step not working.
 
 - **Ownership:**  
   - **Workflow Management / RW behavior**, not Kanban package implementation.
@@ -150,7 +150,7 @@ A **gap log and risk assessment** that:
 - **Status:** ✅ FIXED (as of v0.6.1.35+1)  
 - **Tracking:**  
   - BR: `BR-035`  
-  - Task: `E6:S01:T35` ✅ COMPLETE  
+  - Task: `E06:S01:T35` ✅ COMPLETE  
 
 
 ---
@@ -226,7 +226,7 @@ and are **tracked and/or mitigated outside the Kanban package**.
 
 ## Next Steps
 
-- **For this Task (E4:S16:T05):**
+- **For this Task (E04:S16:T05):**
   - [x] Confirm that all relevant BR/FR/operational findings have been captured in the gap log. ✅  
   - [x] Validate that no Kanban-package-specific issues are missing from the log. ✅  
   - [x] Update Story 016 acceptance criteria to reflect completion of the gap log. ✅  
@@ -234,7 +234,7 @@ and are **tracked and/or mitigated outside the Kanban package**.
 
 
 - **For Follow-On Work (Outside This Task):**
-  - Continue remediation for UKW MoSCOW behavior under existing BR/Task (BR-034 / E6:S01:T34).  
+  - Continue remediation for UKW MoSCOW behavior under existing BR/Task (BR-034 / E06:S01:T34).  
   - Continue to harden env-var SOP and `.env` usage as part of workflow/operational improvements.  
 
 

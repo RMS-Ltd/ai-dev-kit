@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** HIGH  
 **Severity:** N/A  
-**Status:** IMPLEMENTED (E5:S01:T36 completed board updates) — wired as Bucket-D3 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) with R07-R10 residual gap
+**Status:** IMPLEMENTED (E05:S01:T36 completed board updates) — wired as Bucket-D3 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) with R07-R10 residual gap
 
 > **Predecessor of FR-092 (2026-04-27):** FR-015 hardened RW Step 7 (mandatory + validated). Residual ACs R07-R10 remain unchecked; FR-092 (Wave 5/7) closes them through stage-completeness enforcement (BR-070) and release-readiness gates. FR-015 remains valid as historical predecessor; outstanding residuals are owned by FR-092.
 
@@ -89,7 +89,7 @@ This feature is needed:
 ## Use Cases
 
 1. **Task Completion Release:**
-   - Developer completes a task (e.g., E2:S07:T06)
+   - Developer completes a task (e.g., E02:S07:T06)
    - RW executes and updates:
      - Story document: Task marked complete, version marker updated
      - Epic document: Story status updated if all tasks complete
@@ -137,11 +137,11 @@ This feature is needed:
   - Last updated version
   - Epic completion status if all stories complete
 
-- [x] **FR-015:R06** - Update Kanban board with: ✅ **IMPLEMENTED (E5:S01:T36)**
+- [x] **FR-015:R06** - Update Kanban board with: ✅ **IMPLEMENTED (E05:S01:T36)**
   - Epic/story status ✅
   - Last updated date and version ✅
   - Story/epic completion markers ✅
-  - **Implementation Status:** Implemented in E5:S01:T36 (v0.5.1.36+1). RW Step 7 now updates Kanban board metadata and epic/story sections.
+  - **Implementation Status:** Implemented in E05:S01:T36 (v0.5.1.36+1). RW Step 7 now updates Kanban board metadata and epic/story sections.
 
 - [ ] **FR-015:R07** - Validate that all required updates were successful
 - [ ] **FR-015:R08** - Block workflow if validation fails
@@ -197,7 +197,7 @@ Every RW execution should automatically and reliably update all relevant Kanban 
 - [x] **AC3:** All required Kanban docs are updated automatically:
   - Story document updated with version marker and task status ✅ (IMPLEMENTED)
   - Epic document updated with story status and version ✅ (IMPLEMENTED)
-  - Kanban board updated with epic/story status and version ✅ (IMPLEMENTED - E5:S01:T36)
+  - Kanban board updated with epic/story status and version ✅ (IMPLEMENTED - E05:S01:T36)
 
 - [ ] **AC4:** Validation confirms all updates were successful
 - [ ] **AC5:** Workflow blocks if validation fails

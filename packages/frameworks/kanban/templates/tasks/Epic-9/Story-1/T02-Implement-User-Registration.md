@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E9:S1:T2` (e.g., `E4:S11:T01`)
+**Format:** `E09:S01:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E09:S01:T02`
 
@@ -71,10 +71,10 @@ Implement user registration for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E9:S1:T01
+- E09:S01:T01
 
 **Blocks:**
-- E9:S1:T03
+- E09:S01:T03
 
 **Blocked By:**
 - [What blocks this task]

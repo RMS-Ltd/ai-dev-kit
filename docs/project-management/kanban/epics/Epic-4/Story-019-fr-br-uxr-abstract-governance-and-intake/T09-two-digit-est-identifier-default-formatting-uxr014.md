@@ -8,14 +8,16 @@ housekeeping_policy: keep
 
 # Epic 4, Story 19, Task 9: Two-digit E/S/T identifier default formatting (UXR-014)
 
-**Task ID:** E4:S19:T09  
-**Status:** TODO  
+**Task ID:** E04:S19:T09  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Medium  
 **Created:** 2026-05-30  
-**Last updated:** 2026-05-30 (**RW -k** **v0.4.19.9+1** — UXR-014 kanban init)  
-**Version Anchor:** v0.4.19.9+1  
-**Code:** E4S19T09  
+**Last updated:** 2026-05-30  
+**Version Anchor:** v0.4.19.9+2  
+**Code:** E04S19T09  
+
+✅ COMPLETE (v0.4.19.9+2)
 
 Publication Status: NOT_APPLICABLE
 
@@ -26,6 +28,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [UXR-014](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) findings and recommendations.
+- [IPP-E4S19T09-two-digit-est-identifier-default-formatting.md](../../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 - Current mixed inline notation on `kboard.md`, `fbuboard.md`, and story checklists.
 - Existing **`Exx:Sxx:Txx`** policy language in kanban governance and templates.
 - Parser tolerance patterns in workflow validators.
@@ -34,7 +37,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Problem statement
 
-Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and Task components when numeric values are less than 10. The user requires **two-digit defaults everywhere** (`E02:S01:T04`), while the corpus and agents still emit unpadded variants (`E2:S1:T4`), harming scan consistency and encouraging copy-paste drift.
+Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and Task components when numeric values are less than 10. The user requires **two-digit defaults everywhere** (`E02:S01:T04`), while the corpus and agents still emit unpadded variants (`E02:S01:T04`), harming scan consistency and encouraging copy-paste drift.
 
 ---
 
@@ -64,11 +67,11 @@ Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and 
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Governance policy explicitly requires two-digit default for **E, S, and T** in inline notation with `<10` examples.
-- [ ] **AC2:** Board guide documents write-default vs read-tolerance.
-- [ ] **AC3:** Active kboard/fbuboard rows use padded E/S/T for components `<10`.
-- [ ] **AC4:** Agent/intake/RW/UKW guidance defaults to padded form on new writes.
-- [ ] **AC5:** UXR-014 status moves to ACCEPTED when AC1–AC4 are satisfied; task reconciled to actual state.
+- [x] **AC1:** Governance policy explicitly requires two-digit default for **E, S, and T** in inline notation with `<10` examples.
+- [x] **AC2:** Board guide documents write-default vs read-tolerance.
+- [x] **AC3:** Active kboard/fbuboard rows use padded E/S/T for components `<10`; full kanban corpus normalized.
+- [x] **AC4:** Agent/intake/RW/UKW guidance defaults to padded form on new writes (`est_format.py`, `.cursorrules`, intake skill).
+- [x] **AC5:** UXR-014 status moves to ACCEPTED when AC1–AC4 are satisfied; task reconciled to actual state.
 
 ---
 
@@ -83,6 +86,7 @@ Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and 
 ## References
 
 - [UXR-014](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
+- [IPP-E4S19T09-two-digit-est-identifier-default-formatting.md](../../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 - [Story 019](../Story-019-fr-br-uxr-abstract-governance-and-intake.md)
 - [kboard](../../../kboard.md)
 - [fbuboard](../../../fbuboard.md)

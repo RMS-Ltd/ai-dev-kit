@@ -22,12 +22,12 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E7:S03:T01 – Design code quality metrics framework** - ✅ COMPLETE (v0.7.3.1+0 – Code quality metrics framework designed: comprehensive framework covering complexity, coverage, duplication, maintainability, security, performance, and technical debt with thresholds and targets)
-- [x] **E7:S03:T02 – Create code quality monitoring dashboards** - ✅ COMPLETE (v0.7.3.2+0 – Code quality monitoring dashboards created: overall quality, dimension, module, trend, and alert dashboards with templates and usage guidance)
-- [x] **E7:S03:T03 – Integrate metrics with Kanban framework** - ✅ COMPLETE (v0.7.3.3+0 – Code quality metrics integrated with Kanban framework: task-level metrics, quality-based prioritization, quality tracking, and Epic 4 integration)
-- [x] **E7:S03:T04 – Document metrics and monitoring processes** - ✅ COMPLETE (v0.7.3.4+0 – Code quality metrics and monitoring processes documented: collection, dashboard update, review, improvement, and reporting processes)
+- [x] **E07:S03:T01 – Design code quality metrics framework** - ✅ COMPLETE (v0.7.3.1+0 – Code quality metrics framework designed: comprehensive framework covering complexity, coverage, duplication, maintainability, security, performance, and technical debt with thresholds and targets)
+- [x] **E07:S03:T02 – Create code quality monitoring dashboards** - ✅ COMPLETE (v0.7.3.2+0 – Code quality monitoring dashboards created: overall quality, dimension, module, trend, and alert dashboards with templates and usage guidance)
+- [x] **E07:S03:T03 – Integrate metrics with Kanban framework** - ✅ COMPLETE (v0.7.3.3+0 – Code quality metrics integrated with Kanban framework: task-level metrics, quality-based prioritization, quality tracking, and Epic 4 integration)
+- [x] **E07:S03:T04 – Document metrics and monitoring processes** - ✅ COMPLETE (v0.7.3.4+0 – Code quality metrics and monitoring processes documented: collection, dashboard update, review, improvement, and reporting processes)
 
-> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E7:S03:T01`, `E7:S03:T02`)  
+> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E07:S03:T01`, `E07:S03:T02`)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.7.3.3+1)`)  
 > **Release Workflow Requirement:** When Release Workflow (RW) Step 4 updates Epic documentation, it MUST update **ALL sections**:
 > - Epic header `Last updated` field
@@ -58,9 +58,9 @@ This story enables comprehensive monitoring of codebase health and quality metri
 
 ## Tasks
 
-### E7:S03:T01 – Design code quality metrics framework
+### E07:S03:T01 – Design code quality metrics framework
 
-> **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E7:S03:T01`, not `T01` alone)
+> **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E07:S03:T01`, not `T01` alone)
 
 **Input:** Current code quality practices, industry standards, project requirements  
 **Deliverable:** Comprehensive code quality metrics framework document  
@@ -92,11 +92,11 @@ This story enables comprehensive monitoring of codebase health and quality metri
 
 ---
 
-### E7:S03:T02 – Create code quality monitoring dashboards
+### E07:S03:T02 – Create code quality monitoring dashboards
 
 **Input:** Code quality metrics framework (T01), project requirements  
 **Deliverable:** Code quality monitoring dashboards  
-**Dependencies:** E7:S03:T01 (metrics framework provides foundation)  
+**Dependencies:** E07:S03:T01 (metrics framework provides foundation)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 
@@ -122,11 +122,11 @@ This story enables comprehensive monitoring of codebase health and quality metri
 
 ---
 
-### E7:S03:T03 – Integrate metrics with Kanban framework
+### E07:S03:T03 – Integrate metrics with Kanban framework
 
 **Input:** Code quality metrics framework (T01), monitoring dashboards (T02), Kanban framework  
 **Deliverable:** Metrics integrated with Kanban framework  
-**Dependencies:** E7:S03:T01, E7:S03:T02, Epic 4 (Kanban Framework)  
+**Dependencies:** E07:S03:T01, E07:S03:T02, Epic 4 (Kanban Framework)  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 
@@ -151,11 +151,11 @@ This story enables comprehensive monitoring of codebase health and quality metri
 
 ---
 
-### E7:S03:T04 – Document metrics and monitoring processes
+### E07:S03:T04 – Document metrics and monitoring processes
 
 **Input:** Code quality metrics framework (T01), monitoring dashboards (T02), Kanban integration (T03)  
 **Deliverable:** Documented metrics and monitoring processes  
-**Dependencies:** E7:S03:T01, E7:S03:T02, E7:S03:T03  
+**Dependencies:** E07:S03:T01, E07:S03:T02, E07:S03:T03  
 **Blocker:** None  
 **Parallel Development Candidacy:** Safe (can develop independently)
 

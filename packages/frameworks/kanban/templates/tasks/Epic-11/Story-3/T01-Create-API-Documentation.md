@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S3:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E11:S03:T01`)
 
 **Full Task ID:** `E11:S03:T01`
 
@@ -34,9 +34,9 @@ Create API documentation for the {PROJECT_NAME} project. Develop comprehensive d
 
 ## Input
 
-- API architecture (from E11:S1:T01)
-- API endpoints (from E11:S1:T02)
-- Request/response models (from E11:S1:T03)
+- API architecture (from E11:S01:T01)
+- API endpoints (from E11:S01:T02)
+- Request/response models (from E11:S01:T03)
 - API implementation (from E11:S2)
 - Documentation requirements
 - Documentation tool preferences
@@ -85,13 +85,13 @@ Create API documentation for the {PROJECT_NAME} project. Develop comprehensive d
 ## Dependencies
 
 **Depends On:**
-- API architecture (from E11:S1:T01)
-- API endpoints (from E11:S1:T02)
-- Request/response models (from E11:S1:T03)
+- API architecture (from E11:S01:T01)
+- API endpoints (from E11:S01:T02)
+- Request/response models (from E11:S01:T03)
 - API implementation (from E11:S2 - optional, beneficial)
 
 **Blocks:**
-- E11:S3:T02: Create API test suite (tests may reference documentation)
+- E11:S03:T02: Create API test suite (tests may reference documentation)
 
 **Parallel Development Candidacy:** Safe (can proceed independently, benefits from implementation)
 
@@ -100,8 +100,8 @@ Create API documentation for the {PROJECT_NAME} project. Develop comprehensive d
 ## Related Work
 
 **Related Tasks:**
-- E11:S3:T02: Create API test suite (tests may reference documentation)
-- E11:S3:T03: Set up API testing tools (testing tools support documentation validation)
+- E11:S03:T02: Create API test suite (tests may reference documentation)
+- E11:S03:T03: Set up API testing tools (testing tools support documentation validation)
 
 **Related Stories:**
 - E11:S3: API Documentation and Testing (this story)

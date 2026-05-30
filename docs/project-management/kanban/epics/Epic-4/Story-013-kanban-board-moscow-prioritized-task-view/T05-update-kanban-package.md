@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Started:** 2025-12-18  
 **Completed:** 2025-12-18  
 **Version:** v0.4.13.5+1  
-**Code:** E4S13T05
+**Code:** E04S13T05
 
 ---
 
 ## Task ID
 
-**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E4:S13:T05`)
+**Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E04:S13:T05`)
 
-**Full Task ID:** `E4:S13:T05`
+**Full Task ID:** `E04:S13:T05`
 
 ---
 
@@ -57,10 +57,10 @@ After user verification of the enhanced Kanban board structure, update the Kanba
 - **User verification obtained** - user has reviewed and approved the enhancement
 
 **Dependencies:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
-- E4:S13:T02 – Update Kanban governance policy
-- E4:S13:T03 – Update Kanban board template
-- E4:S13:T04 – Assess system impacts
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T02 – Update Kanban governance policy
+- E04:S13:T03 – Update Kanban board template
+- E04:S13:T04 – Assess system impacts
 - **User verification** (blocking dependency)
 
 ---
@@ -137,14 +137,14 @@ After user verification of the enhanced Kanban board structure, update the Kanba
 ## Dependencies
 
 **Depends On:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
-- E4:S13:T02 – Update Kanban governance policy
-- E4:S13:T03 – Update Kanban board template
-- E4:S13:T04 – Assess system impacts
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
+- E04:S13:T02 – Update Kanban governance policy
+- E04:S13:T03 – Update Kanban board template
+- E04:S13:T04 – Assess system impacts
 - **User verification** (blocking dependency - MUST have user approval)
 
 **Blocks:**
-- E4:S13:T06 – Update other affected packages (may need Kanban package updates first)
+- E04:S13:T06 – Update other affected packages (may need Kanban package updates first)
 
 **Blocked By:**
 - T01, T02, T03, T04 (must have all deliverables)
@@ -160,11 +160,11 @@ After user verification of the enhanced Kanban board structure, update the Kanba
 - User request for enhanced Kanban board functionality
 
 **Related Tasks:**
-- E4:S13:T01 – Design and implement MoSCOW prioritized task view
-- E4:S13:T02 – Update Kanban governance policy
-- E4:S13:T03 – Update Kanban board template
-- E4:S13:T04 – Assess system impacts
-- E4:S13:T06 – Update other affected packages
+- E04:S13:T01 – Design and implement MoSCOW prioritized task view
+- E04:S13:T02 – Update Kanban governance policy
+- E04:S13:T03 – Update Kanban board template
+- E04:S13:T04 – Assess system impacts
+- E04:S13:T06 – Update other affected packages
 
 **Related Stories:**
 - E4:S01 – Dev Kit Kanban Implementation (package foundation)

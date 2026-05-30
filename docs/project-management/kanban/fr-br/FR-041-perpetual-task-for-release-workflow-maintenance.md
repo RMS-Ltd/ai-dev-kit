@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** HIGH  
 **Severity:** N/A  
-**Status:** IMPLEMENTED ✅ (E2:S16:T03 v0.6.7.103+1)
+**Status:** IMPLEMENTED ✅ (E02:S16:T03 v0.6.7.103+1)
 
 ---
 
@@ -26,8 +26,8 @@ Create a canonical perpetual task for Release Workflow (RW) and workflow framewo
 ## Problem Statement
 
 **Current Situation:**
-- UKW has perpetual task T101 (E2:S16:T03) – UKW-triggered RWs attribute there
-- CMW has perpetual task T102 (E2:S16:T03) – CMW-triggered RWs attribute there
+- UKW has perpetual task T101 (E02:S16:T03) – UKW-triggered RWs attribute there
+- CMW has perpetual task T102 (E02:S16:T03) – CMW-triggered RWs attribute there
 - **No perpetual task exists for RW/workflow framework maintenance**
 
 **Issue:**
@@ -88,13 +88,13 @@ Add this perpetual task to the packaged Kanban framework:
 
 ## Related Work
 
-- **E2:S16:T03** – Release Workflow Maintenance Perpetual Task (this task)
-- **E2:S16:T03** – UKW Perpetual Task (pattern reference)
-- **E2:S16:T03** – CMW Perpetual Task (pattern reference)
+- **E02:S16:T03** – Release Workflow Maintenance Perpetual Task (this task)
+- **E02:S16:T03** – UKW Perpetual Task (pattern reference)
+- **E02:S16:T03** – CMW Perpetual Task (pattern reference)
 - **FR-026** – Canonical Perpetual Task for Changelog Maintenance (similar pattern)
 - **Epic 2** – Workflow Management Framework (RW package owner)
 - **Epic 6** – Framework Management and Maintenance (UKW/CMW perpetual tasks)
-- **FR-067 [FU-2](./FR-067-docusaurus-production-build-corpus-triage.md)** – Docusaurus/corpus work is still released via **RW**; **GitHub Releases** for SemVer tags (**Step 12.5**, `create_github_release.py`) are traced to **E2:S16:T03** (this FR), not as a standalone portal task.
+- **FR-067 [FU-2](./FR-067-docusaurus-production-build-corpus-triage.md)** – Docusaurus/corpus work is still released via **RW**; **GitHub Releases** for SemVer tags (**Step 12.5**, `create_github_release.py`) are traced to **E02:S16:T03** (this FR), not as a standalone portal task.
 
 ---
 

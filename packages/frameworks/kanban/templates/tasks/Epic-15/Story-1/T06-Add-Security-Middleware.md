@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E15:S1:T6` (e.g., `E4:S11:T01`)
+**Format:** `E15:S01:T06` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E15:S01:T06`
 
@@ -71,10 +71,10 @@ Add security middleware for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E15:S1:T05
+- E15:S01:T05
 
 **Blocks:**
-- E15:S1:T07
+- E15:S01:T07
 
 **Blocked By:**
 - [What blocks this task]

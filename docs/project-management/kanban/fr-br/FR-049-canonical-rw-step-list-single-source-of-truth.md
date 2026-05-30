@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-09  
 **Implementation Date:** 2026-03-09  
 **Version:** v0.2.1.15+2  
-**Code:** E2:S01:T15  
-**Implementing Task:** [E5:S01:T49](../epics/Epic-5/Story-001-fr-repo/T49-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
+**Code:** E02:S01:T15  
+**Implementing Task:** [E05:S01:T49](../epics/Epic-5/Story-001-fr-repo/T49-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
 
 ---
 

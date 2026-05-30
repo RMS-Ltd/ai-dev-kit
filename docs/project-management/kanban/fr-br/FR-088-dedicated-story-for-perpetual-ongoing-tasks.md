@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** CLOSED
 
-**Implementing Task:** [E2:S16:T01](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)  
-**IPP:** [`IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
+**Implementing Task:** [E02:S16:T01](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)  
+**IPP:** [`IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md)
 
 ---
 

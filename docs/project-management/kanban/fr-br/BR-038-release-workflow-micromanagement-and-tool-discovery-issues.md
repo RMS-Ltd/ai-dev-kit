@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Created:** 2026-03-09  
 **Last Updated:** 2026-04-20 — Relevance review: legacy friction mostly resolved; recovery/logging scope expanded and re-housed to follow-on task
 
-**Implementing Task:** [E6:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)
+**Implementing Task:** [E06:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)
 
-**Note:** **Cascade / whitelist** productivity blockers that worsen RW friction are tracked under **[BR-039](BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** / **[E6:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)** (vendor-side).
+**Note:** **Cascade / whitelist** productivity blockers that worsen RW friction are tracked under **[BR-039](BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** / **[E06:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)** (vendor-side).
 
 ---
 
@@ -36,7 +36,7 @@ This BR is now split into:
 - [x] **R1:** Improve tool discovery and operator guidance for RW execution.
 - [x] **R2:** Reduce step-by-step micromanagement in standard RW execution path.
 - [x] **R3:** Improve error clarity and manual fallback guidance.
-- [x] **R4:** Persist per-run RW execution journal (step state, commands, exit codes, touched files, timestamps). — Implemented in `packages/frameworks/workflow mgt/scripts/journal/` via [E6:S06:T63 IPW plan](../../implementation-cycles/IPP-E6S06T63-rw-recovery-journal.md).
+- [x] **R4:** Persist per-run RW execution journal (step state, commands, exit codes, touched files, timestamps). — Implemented in `packages/frameworks/workflow mgt/scripts/journal/` via [E06:S06:T63 IPW plan](../../implementation-cycles/IPP-E06S06T63-rw-recovery-journal.md).
 - [x] **R5:** Add deterministic recovery artifact/output when RW fails (what changed, what is safe to retry, what must be manually repaired). — Recovery report (Markdown + JSON) emitted by `RecoveryReport` class.
 - [x] **R6:** Provide rollback/compensation mechanism contract (minimum: documented, reproducible manual rollback; target: assisted rollback mode). — Documented in `docs/journals/ROLLBACK_CONTRACT.md` and enforced by `RollbackContract` class.
 
@@ -44,7 +44,7 @@ This BR is now split into:
 
 Active implementation for unresolved recovery scope is tracked under:
 
-- [E6:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)
+- [E06:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)
 
 ## Current Issues
 
@@ -105,7 +105,7 @@ This video captures a typical Release Workflow execution and demonstrates the fo
 - **Manual Implementation:** User had to manually execute basic release steps (version bump, changelog, commit, tag, push)
 - **Knowledge Barrier:** Required deep system knowledge to resolve basic issues
 
-### Recent RW Execution (E6:S06:T01+1)
+### Recent RW Execution (E06:S06:T01+1)
 
 The video shows the actual execution of the Release Workflow for the FR/BR/UXR board implementation, which required:
 
@@ -291,8 +291,8 @@ The video shows the actual execution of the Release Workflow for the FR/BR/UXR b
 - **FR-040:** RW Update Kanban Board on Task Completion (automation improvements)
 
 ### Related Tasks
-- **E2:S16:T03:** Release Workflow Maintenance (perpetual task for RW improvements)
-- **E6:S07:T104:** Release Automation Audit (comprehensive audit of release systems)
+- **E02:S16:T03:** Release Workflow Maintenance (perpetual task for RW improvements)
+- **E06:S07:T104:** Release Automation Audit (comprehensive audit of release systems)
 
 ---
 

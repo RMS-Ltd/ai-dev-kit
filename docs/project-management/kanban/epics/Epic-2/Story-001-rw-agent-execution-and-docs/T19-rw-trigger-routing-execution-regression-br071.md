@@ -6,14 +6,14 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Task E2:S01:T19 - RW trigger routing execution regression (BR-071)
+# Task E02:S01:T19 - RW trigger routing execution regression (BR-071)
 
-**Task ID:** E2:S01:T19  
+**Task ID:** E02:S01:T19  
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-04-27  
 **Last updated:** 2026-05-13  
-**Code:** E2S01T19
+**Code:** E02S01T19
 
 **Upstream:** [BR-071](../../../fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
 

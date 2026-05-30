@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-04  
 **Completed:** 2025-12-04  
-**Last updated:** 2025-12-04 (v0.2.4.9+3 – E2:S04:T09 build 3: Task naming format standardization)  
+**Last updated:** 2025-12-04 (v0.2.4.9+3 – E02:S04:T09 build 3: Task naming format standardization)  
 **Version:** v0.2.4.9+3  
 **Code:** E2S04
 
@@ -40,21 +40,21 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ## Task Checklist
 
-- [x] **E2:S04:T01 – Analyze current RW adoption friction and required config** ✅ COMPLETE (v0.2.4.1+1)  
-- [x] **E2:S04:T02 – Design RW config schema (`rw-config.yaml`) and modes** ✅ COMPLETE (v0.2.4.2+1)  
-- [x] **E2:S04:T03 – Implement RW installer CLI** ✅ COMPLETE (v0.2.4.3+1)  
-- [x] **E2:S04:T04 – Create quickstart docs and template usage examples** ✅ COMPLETE (v0.2.4.4+1)  
-- [x] **E2:S04:T05 – Usability test installer on sample and real projects** ✅ COMPLETE (v0.2.4.5+1)  
-- [x] **E2:S04:T06 – Create Debug Path Framework package** ✅ COMPLETE (v0.2.4.6+1)  
-- [x] **E2:S04:T07 – Apply lifecycle metadata to all existing documentation** ✅ COMPLETE (v0.2.4.7+1)  
-- [x] **E2:S04:T08 – Document agent network access limitations and update RW Step 11** ✅ COMPLETE (v0.2.4.8+1)  
-- [x] **E2:S04:T09 – Complete Story 4 and Epic 2 closure documentation** ✅ COMPLETE (v0.2.4.9+1)  
+- [x] **E02:S04:T01 – Analyze current RW adoption friction and required config** ✅ COMPLETE (v0.2.4.1+1)  
+- [x] **E02:S04:T02 – Design RW config schema (`rw-config.yaml`) and modes** ✅ COMPLETE (v0.2.4.2+1)  
+- [x] **E02:S04:T03 – Implement RW installer CLI** ✅ COMPLETE (v0.2.4.3+1)  
+- [x] **E02:S04:T04 – Create quickstart docs and template usage examples** ✅ COMPLETE (v0.2.4.4+1)  
+- [x] **E02:S04:T05 – Usability test installer on sample and real projects** ✅ COMPLETE (v0.2.4.5+1)  
+- [x] **E02:S04:T06 – Create Debug Path Framework package** ✅ COMPLETE (v0.2.4.6+1)  
+- [x] **E02:S04:T07 – Apply lifecycle metadata to all existing documentation** ✅ COMPLETE (v0.2.4.7+1)  
+- [x] **E02:S04:T08 – Document agent network access limitations and update RW Step 11** ✅ COMPLETE (v0.2.4.8+1)  
+- [x] **E02:S04:T09 – Complete Story 4 and Epic 2 closure documentation** ✅ COMPLETE (v0.2.4.9+1)  
 
 ---
 
 ## Tasks
 
-### E2:S04:T01 – Analyze current RW adoption friction and required config
+### E02:S04:T01 – Analyze current RW adoption friction and required config
 
 **Input:**  
 - Current workflow mgt package structure  
@@ -81,7 +81,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ---
 
-### E2:S04:T02 – Design RW config schema (`rw-config.yaml`) and modes
+### E02:S04:T02 – Design RW config schema (`rw-config.yaml`) and modes
 
 **Input:**  
 - Analysis from T01  
@@ -110,7 +110,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ---
 
-### E2:S04:T03 – Implement RW installer CLI
+### E02:S04:T03 – Implement RW installer CLI
 
 **Input:**  
 - Config schema from T02  
@@ -141,7 +141,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ---
 
-### E2:S04:T04 – Create quickstart docs and template usage examples
+### E02:S04:T04 – Create quickstart docs and template usage examples
 
 **Input:**  
 - Working installer from T03  
@@ -167,7 +167,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ---
 
-### E2:S04:T05 – Usability test installer on sample and real projects
+### E02:S04:T05 – Usability test installer on sample and real projects
 
 **Input:**  
 - Installer from T03  
@@ -194,7 +194,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ---
 
-### E2:S04:T06 – Create Debug Path Framework package
+### E02:S04:T06 – Create Debug Path Framework package
 
 **Input:**  
 - Analysis of debug path framework from fynd.deals project  
@@ -226,7 +226,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ---
 
-### E2:S04:T07 – Apply lifecycle metadata to all existing documentation
+### E02:S04:T07 – Apply lifecycle metadata to all existing documentation
 
 **Input:**  
 - Document Lifecycle Management package (created in T06 context)  
@@ -255,7 +255,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ---
 
-### E2:S04:T08 – Document agent network access limitations and update RW Step 11
+### E02:S04:T08 – Document agent network access limitations and update RW Step 11
 
 **Input:**  
 - Issue: Agents cannot push to remote due to sandbox network restrictions  
@@ -284,7 +284,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 
 ---
 
-### E2:S04:T09 – Complete Story 4 and Epic 2 closure documentation
+### E02:S04:T09 – Complete Story 4 and Epic 2 closure documentation
 
 **Input:**  
 - All Story 4 tasks complete (T01-T08)  

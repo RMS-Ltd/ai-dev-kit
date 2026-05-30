@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Type:** Bug Report (BR)  
 **Submitted:** 2025-12-18  
-**Submitted By:** User (discovered during E4:S13:T04)  
+**Submitted By:** User (discovered during E04:S13:T04)  
 **Priority:** HIGH  
 **Severity:** HIGH  
 **Status:** FIXED
@@ -238,7 +238,7 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 **Related Work:**
 - **Epic 4:** Kanban Framework
 - **Story 13:** Kanban Board Enhancement - MoSCOW Prioritized Task View
-- **Task 4:** E4:S13:T04 – Assess system impacts (bug fixed here)
+- **Task 4:** E04:S13:T04 – Assess system impacts (bug fixed here)
 - **Use Case:** UC-D-004 – Story + Task Docs Batch Creation
 - **Abstract Anti-Pattern:** Use Case Exposed Design Flaw
 
@@ -256,7 +256,7 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 **Assigned To:**
 - Epic: Epic 4 - Kanban Framework
 - Story: Story 13 - Kanban Board Enhancement - MoSCOW Prioritized Task View
-- Task: E4:S13:T04 – Assess system impacts
+- Task: E04:S13:T04 – Assess system impacts
 - Version: `v0.4.13.4+1`
 
 **Implementation Status:** FIXED (v0.4.13.4+1)  
@@ -266,7 +266,7 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
 - Story: [`docs/project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view.md`](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view.md)
-- Task: [E4:S13:T04 – Assess system impacts](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
+- Task: [E04:S13:T04 – Assess system impacts](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
 
 ---
 
@@ -281,7 +281,7 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 **Related Knowledge:**
 - **Use Case:** [UC-D-004 – Story + Task Docs Batch Creation](../../../knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md)
 - **Abstract Anti-Pattern:** [Use Case Exposed Design Flaw](../../../knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md)
-- **Task Document:** [E4:S13:T04 – Assess system impacts](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
+- **Task Document:** [E04:S13:T04 – Assess system impacts](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
 
 ---
 

@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 69: Retire `shields` branch (FR-064 — private repo badges)
 
-**Task ID:** E5:S01:T69  
+**Task ID:** E05:S01:T69  
 **Status:** ✅ COMPLETE (v0.5.1.69+1)  
 **Priority:** MEDIUM  
 **Estimated Effort:** Small  
 **Created:** 2026-03-30  
 **Last updated:** 2026-03-30  
 **Version:** v0.5.1.69+1  
-**Code:** E5S01T69
+**Code:** E05S01T69
 
 **Feature Request:** [FR-064 – Shields branch / private repo](../../../fr-br/FR-064-shields-branch-private-repo-badges.md)
 
@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Full Task ID:** `E5:S01:T69`
+**Full Task ID:** `E05:S01:T69`
 
 ---
 
@@ -79,7 +79,7 @@ Implement FR-064: **private-repo-safe** badges on `main` (static Shields.io), re
 - [x] `main` reflects **static** badge policy; BYOB workflow **removed** from this repo.  
 - [x] External automation to `shields` from this repo **stopped** (workflow deleted).  
 - [x] **`origin/shields`** removed after release push (Evidence).  
-- [x] RW **E5:S01:T69** with version anchor.
+- [x] RW **E05:S01:T69** with version anchor.
 
 ---
 

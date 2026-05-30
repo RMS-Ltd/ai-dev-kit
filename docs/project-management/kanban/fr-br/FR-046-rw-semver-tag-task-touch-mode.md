@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** XOforge (contributing to AI Dev Kit)  
 **Priority:** HIGH  
 **Status:** IMPLEMENTED  
-**Implementing Task:** [E5:S01:T46](../epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
+**Implementing Task:** [E05:S01:T46](../epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
 **GitHub Issue:** [#19](https://github.com/RMS-Ltd/ai-dev-kit/issues/19)
 
 ---
@@ -204,7 +204,7 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 
 ### Verification Evidence
 
-- Closure wave IPP: [`IPP-E5S01T46-fr046-closure-wave.md`](../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md) §7 (requirement-to-evidence matrix).
+- Closure wave IPP: [`IPP-E05S01T46-fr046-closure-wave.md`](../../implementation-cycles/IPP-E05S01T46-fr046-closure-wave.md) §7 (requirement-to-evidence matrix).
 - `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_fr046_rw_tagging.py" "packages/frameworks/workflow mgt/scripts/version/test_fr046_comprehensive.py" "packages/frameworks/workflow mgt/scripts/version/test_task_touch_mapping.py" -q` → **24 passed** (2026-05-29).
 - `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_create_github_release_parsing.py" -q` → **7 passed**.
 - `python "packages/frameworks/workflow mgt/scripts/validation/validate_semver_tag_alignment.py"` → **✅ OK**.
@@ -224,4 +224,4 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 
 ---
 
-_This feature request follows the Kanban Framework FR template and is anchored as FR-046 in the FR repository story (E5:S01:T46)._
+_This feature request follows the Kanban Framework FR template and is anchored as FR-046 in the FR repository story (E05:S01:T46)._

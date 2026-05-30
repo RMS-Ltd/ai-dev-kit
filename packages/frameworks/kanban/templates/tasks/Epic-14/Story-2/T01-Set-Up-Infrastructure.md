@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S2:T1`)
+**Format:** `E{epic}:S{story}:T{task}` (e.g., `E14:S02:T01`)
 
 **Full Task ID:** `E14:S02:T01`
 
@@ -35,7 +35,7 @@ Set up infrastructure for the {PROJECT_NAME} project. Configure and provision in
 ## Input
 
 - Infrastructure requirements
-- Deployment environments (from E14:S1:T02)
+- Deployment environments (from E14:S01:T02)
 - Infrastructure platform preferences (AWS, Azure, GCP, on-premises, etc.)
 - Scalability requirements
 - Security requirements
@@ -84,10 +84,10 @@ Set up infrastructure for the {PROJECT_NAME} project. Configure and provision in
 ## Dependencies
 
 **Depends On:**
-- Deployment environments (from E14:S1:T02 - optional, beneficial)
+- Deployment environments (from E14:S01:T02 - optional, beneficial)
 
 **Blocks:**
-- E14:S2:T02: Configure infrastructure monitoring (monitoring monitors infrastructure)
+- E14:S02:T02: Configure infrastructure monitoring (monitoring monitors infrastructure)
 
 **Parallel Development Candidacy:** Safe (can proceed independently, foundational task)
 
@@ -96,7 +96,7 @@ Set up infrastructure for the {PROJECT_NAME} project. Configure and provision in
 ## Related Work
 
 **Related Tasks:**
-- E14:S2:T02: Configure infrastructure monitoring (monitoring monitors infrastructure)
+- E14:S02:T02: Configure infrastructure monitoring (monitoring monitors infrastructure)
 
 **Related Stories:**
 - E14:S2: Infrastructure Setup (this story)

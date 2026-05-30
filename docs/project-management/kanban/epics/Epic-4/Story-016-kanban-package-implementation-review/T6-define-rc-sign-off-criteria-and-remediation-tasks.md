@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E4:S16:T06 – Define RC sign-off criteria and remediation tasks
+# E04:S16:T06 – Define RC sign-off criteria and remediation tasks
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
@@ -33,11 +33,11 @@ The goal is to:
 
 ## Inputs
 
-- E4:S16:T01 – Expectations baseline for Kanban package  
-- E4:S16:T02 – Component inventory and mapping  
-- E4:S16:T03 – Behavioral validation notes  
-- E4:S16:T04 – Integration and dependency alignment report  
-- E4:S16:T05 – Gap log and RC risk assessment  
+- E04:S16:T01 – Expectations baseline for Kanban package  
+- E04:S16:T02 – Component inventory and mapping  
+- E04:S16:T03 – Behavioral validation notes  
+- E04:S16:T04 – Integration and dependency alignment report  
+- E04:S16:T05 – Gap log and RC risk assessment  
 - Kanban governance policy and package README  
 
 ---
@@ -148,14 +148,14 @@ For each **non-blocking** gap:
 
 **Review Date:** 2026-01-22
 
-**Gap Log Status (from E4:S16:T05):**
-- ✅ **Gap 1:** UKW MoSCOW Prioritization - Tracked in BR-034/E6:S01:T34 (✅ COMPLETE v0.6.1.34+2)
-- ✅ **Gap 2:** RW Housekeeping - Tracked in BR-035/E6:S01:T35 (✅ FIXED v0.6.1.35+1)
+**Gap Log Status (from E04:S16:T05):**
+- ✅ **Gap 1:** UKW MoSCOW Prioritization - Tracked in BR-034/E06:S01:T34 (✅ COMPLETE v0.6.1.34+2)
+- ✅ **Gap 2:** RW Housekeeping - Tracked in BR-035/E06:S01:T35 (✅ FIXED v0.6.1.35+1)
 - ✅ **Gap 3:** Env Var Setup Friction - MITIGATED (SOP + `.env.local` pattern introduced)
 
 **RC-Blocking Gaps:** **NONE**
 
-**Conclusion:** All gaps identified in E4:S16:T05 are either:
+**Conclusion:** All gaps identified in E04:S16:T05 are either:
 - Tracked in Kanban (BRs/Tasks) with remediation paths, or
 - Mitigated through operational improvements (SOP, patterns)
 
@@ -164,8 +164,8 @@ For each **non-blocking** gap:
 ### Remediation Task Verification
 
 All non-blocking gaps from the gap log are properly tracked:
-- ✅ Gap 1: Externalized as BR-034 → E6:S01:T34 (COMPLETE)
-- ✅ Gap 2: Externalized as BR-035 → E6:S01:T35 (FIXED)
+- ✅ Gap 1: Externalized as BR-034 → E06:S01:T34 (COMPLETE)
+- ✅ Gap 2: Externalized as BR-035 → E06:S01:T35 (FIXED)
 - ✅ Gap 3: Mitigated via SOP and operational patterns (no task needed)
 
 **All gaps are wired into Kanban** with explicit remediation paths.
@@ -216,7 +216,7 @@ Based on review of T01-T05 outputs:
 **Next Steps:**
 - [x] Review gap log against RC criteria ✅
 - [x] Verify all gaps tracked in Kanban ✅
-- [ ] Run RW for E4:S16:T06 to:
+- [ ] Run RW for E04:S16:T06 to:
   - Update versions,
   - Capture the criteria in changelogs,
   - Mark E4:S16 acceptance criteria as satisfied.

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-09  
 **Version:** v0.6.7.107+1  
 **Code:** FR-051  
-**Implementing Task:** [E6:S06:T01](../epics/Epic-6/Story-006-feature-requests/T01-fr-br-uxr-prioritization-board.md)  
+**Implementing Task:** [E06:S06:T01](../epics/Epic-6/Story-006-feature-requests/T01-fr-br-uxr-prioritization-board.md)  
 
 ---
 

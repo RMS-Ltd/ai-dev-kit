@@ -8,21 +8,21 @@ housekeeping_policy: keep
 
 # Epic 4, Story 19, Task 3: `E6:S07` default-housing drift investigation and closure decision (FR-087)
 
-**Task ID:** E4:S19:T03  
+**Task ID:** E04:S19:T03  
 **Status:** COMPLETE
 **Version Anchor:** v0.4.19.3+2 (functional — investigation report); v0.4.19.3+0 (`RW -d` — Wave 4 re-housing docs, `--doc-policy-zero`)  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-29 (Wave 4 landed: T109→E2:S16:T13, T18→E2:S01:T23, Story 007 In/Out of Scope; doc release **v0.4.19.3+0**)  
-**Code:** E4S19T03
+**Last updated:** 2026-05-29 (Wave 4 landed: T109→E02:S16:T13, T18→E02:S01:T23, Story 007 In/Out of Scope; doc release **v0.4.19.3+0**)  
+**Code:** E04S19T03
 
 **Upstream:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 
 Publication Status: NOT_APPLICABLE
 Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning model; planning published as one IPP artifact rather than three separate specification/test-design/implementation-plan files.
 
-**Publication Status:** NOT_APPLICABLE (single consolidated IPP — see [`IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md))
+**Publication Status:** NOT_APPLICABLE (single consolidated IPP — see [`IPP-E04S19T03-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E04S19T03-e6s07-default-housing-drift-investigation.md))
 
 ---
 
@@ -31,8 +31,8 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
 - [FR-087](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) requirements.
 - Current `E6:S07` charter and task inventory.
 - Governance/policy/rules/templates/validator/workflow sources affecting task placement.
-- Canonical IPP: [`IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
-- Investigation report (Wave 2–3): [`E4S19T03-e6s07-default-housing-investigation-report.md`](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
+- Canonical IPP: [`IPP-E04S19T03-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E04S19T03-e6s07-default-housing-drift-investigation.md)
+- Investigation report (Wave 2–3): [`E04S19T03-e6s07-default-housing-investigation-report.md`](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)
 
 ---
 
@@ -50,7 +50,7 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
   - Exact codification points vs process habits.
   - Closure/split/narrow recommendation with migration guardrails.
 - Actionable policy + validator backlog for enforcement.
-- Executed re-housing precedent package for a misfiled task (`BR-069`: `E6:S07:T117` → `E2:S15:T04`) with full traceability rewiring.
+- Executed re-housing precedent package for a misfiled task (`BR-069`: `E06:S07:T117` → `E02:S15:T04`) with full traceability rewiring.
 
 ---
 
@@ -71,17 +71,17 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
 - [x] **AC3:** All current `S07` tasks are triaged by semantic fit with rationale. *(Report §4; 22 task docs)*
 - [x] **AC4:** Recommended disposition (`close`/`narrow`/`split`) includes migration and compatibility plan. *(Report §5 — **`split/re-house`** then narrow)*
 - [x] **AC5:** Follow-on guardrail changes are specified as concrete implementation tasks. *(Report §6 — proposed filing table; tasks not yet filed)*
-- [x] **AC6:** Re-housing protocol is proven on one real case (`BR-069` moved to `E2:S15:T04`) with Story/FBU/board rewiring.
+- [x] **AC6:** Re-housing protocol is proven on one real case (`BR-069` moved to `E02:S15:T04`) with Story/FBU/board rewiring.
 
 ---
 
 ## References
 
-- [Canonical IPP: `IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
-- [Investigation report: `E4S19T03-e6s07-default-housing-investigation-report.md`](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
+- [Canonical IPP: `IPP-E04S19T03-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E04S19T03-e6s07-default-housing-drift-investigation.md)
+- [Investigation report: `E04S19T03-e6s07-default-housing-investigation-report.md`](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)
 - [FR-087](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 - [Story 019](../Story-019-fr-br-uxr-abstract-governance-and-intake.md)
 - [Story 007](../../../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md)
 - [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [E2:S15:T04](../../../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
-- [IPP-E2S16T01 - Canonical perpetual ongoing tasks story (delegated perpetual-task placement scope)](../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
+- [E02:S15:T04](../../../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
+- [IPP-E02S16T01 - Canonical perpetual ongoing tasks story (delegated perpetual-task placement scope)](../../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md)

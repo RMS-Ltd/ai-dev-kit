@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Epic 5, Story 1, Task 63: RW Task Argument Requirement
 
-**Task ID:** E5:S01:T63
+**Task ID:** E05:S01:T63
 **Status:** COMPLETE
 **Priority:** HIGH
 **Estimated Effort:** Medium
@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Completed:** 2026-03-25
 **Last updated:** 2026-03-25 (v0.5.1.63+1 — FR-060 strict RW task token + validate_rw_task_complete + docs)
 **Version:** v0.5.1.63+1
-**Code:** E5S01T63
+**Code:** E05S01T63
 
-**Repository Pattern:** FR-060 = E5:S01:T63 (abstract space: v0.5.1.63+0)
+**Repository Pattern:** FR-060 = E05:S01:T63 (abstract space: v0.5.1.63+0)
 
 ---
 
@@ -33,7 +33,7 @@ Enhance Release Workflow (RW) to **require** an explicit task identifier in the 
 
 **Solution:**
 - Agent **must** parse `E<Epic>:S<Story>:T<Task>` or `E<Epic>S<Story>T<Task>` from the user message for **`RW`**, **`RW -d`**, and **`RW -k`**.
-- If absent → **RW ABORTED** with examples (`RW E7:S01:T10`, `RW E7S01T10`).
+- If absent → **RW ABORTED** with examples (`RW E07:S01:T10`, `RW E07S01T10`).
 - Run **`validate_rw_task_complete.py`** (task doc exists; COMPLETE or perpetual) then existing **`validate_rw_task_intent.py --requested`** (`--mode rw-k` for `RW -k`).
 
 ---
@@ -58,7 +58,7 @@ Enhance Release Workflow (RW) to **require** an explicit task identifier in the 
 
 ## Acceptance Criteria
 
-- [x] **Criterion 1:** RW accepts explicit task arguments (e.g., `RW E7:S01:T10`, `RW E7S01T10`, `RW -d E7S01T10`, `RW -k E6S6T56`).
+- [x] **Criterion 1:** RW accepts explicit task arguments (e.g., `RW E07:S01:T10`, `RW E07S01T10`, `RW -d E07S01T10`, `RW -k E06S06T56`).
 - [x] **Criterion 2:** If no parseable task token in the user message → **RW ABORTED** (no Step 2); message includes usage examples.
 - [x] **Criterion 3:** After token present, `validate_rw_task_complete.py` passes for `full` RW / `RW -d` (or `rw-k` mode as defined).
 - [x] **Criterion 4:** Step 1.5 intent guard runs with `--requested` (and `--mode rw-k` for `RW -k`).
@@ -81,8 +81,8 @@ Enhance Release Workflow (RW) to **require** an explicit task identifier in the 
 ## Related Work
 
 - **FR-060:** RW Task Argument Requirement (this task)
-- **BR-056 / E6:S06:T56:** RW Task Intent Guard (`validate_rw_task_intent.py`)
-- **E5:S01:T48:** ICW task identifier (prior art for argparse / validation)
+- **BR-056 / E06:S06:T56:** RW Task Intent Guard (`validate_rw_task_intent.py`)
+- **E05:S01:T48:** ICW task identifier (prior art for argparse / validation)
 
 ---
 

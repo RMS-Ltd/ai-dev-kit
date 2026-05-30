@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Submitted By:** User — parity request with existing `/rw` slash command  
 **Priority:** HIGH  
 **Severity:** LOW  
-**Status:** IMPLEMENTED (v0.2.16.8+1 — E2:S16:T08)
+**Status:** IMPLEMENTED (v0.2.16.8+1 — E02:S16:T08)
 
-**Implementing Task:** [E2:S16:T08](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md)
+**Implementing Task:** [E02:S16:T08](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md)
 
 ---
 
@@ -62,13 +62,13 @@ The UKW was only triggerable via plain-text `UKW` (handled by `.cursorrules` in 
 - [x] **AC2:** `/ukw` with no flags triggers comprehensive UKW; flags `-u`, `-p`, `-a` scope correctly.
 - [x] **AC3:** Plain-text `UKW` and `ukw` (case-insensitive) route to the command in Claude Code sessions.
 - [x] **AC4:** `CLAUDE.md` contains a `## UKW Trigger Routing` section with AC3 / blocked-session handling.
-- [x] **AC5:** FR-093 and E2:S16:T08 are bidirectionally linked.
+- [x] **AC5:** FR-093 and E02:S16:T08 are bidirectionally linked.
 
 ---
 
 ## Related
 
-- [E2:S16:T08](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md)
+- [E02:S16:T08](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md)
 - [Story 016](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md)
 - `.claude/commands/ukw.md`
 - `.claude/commands/rw.md` (pattern reference)

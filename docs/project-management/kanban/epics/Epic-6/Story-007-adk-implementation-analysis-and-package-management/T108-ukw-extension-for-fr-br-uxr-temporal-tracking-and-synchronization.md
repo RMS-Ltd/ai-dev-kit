@@ -12,10 +12,10 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (3-4 days)  
 **Created:** 2026-03-11  
-**Last updated:** 2026-05-13 (SUPERSEDED — re-housed to E2:S16:T07; Windsurf skill approach obsolete; FR-050 intent carried forward in Claude Code context)
+**Last updated:** 2026-05-13 (SUPERSEDED — re-housed to E02:S16:T07; Windsurf skill approach obsolete; FR-050 intent carried forward in Claude Code context)
 **Version:** v0.6.7.107+2  
-**Code:** E6:S07:T108
-**Superseded by:** [E2:S16:T07](../../../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)
+**Code:** E06:S07:T108
+**Superseded by:** [E02:S16:T07](../../../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)
 **Associated FR:** [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
 
 ---

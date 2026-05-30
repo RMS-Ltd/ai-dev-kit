@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E14:S2:T2` (e.g., `E4:S11:T01`)
+**Format:** `E14:S02:T02` (e.g., `E04:S11:T01`)
 
 **Full Task ID:** `E14:S02:T02`
 
@@ -71,10 +71,10 @@ Set up infrastructure as code for the {PROJECT_NAME} project.
 ## Dependencies
 
 **Depends On:**
-- E14:S2:T01
+- E14:S02:T01
 
 **Blocks:**
-- E14:S2:T03
+- E14:S02:T03
 
 **Blocked By:**
 - [What blocks this task]

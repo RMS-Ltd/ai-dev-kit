@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** RESOLVED — v0.2.16.9+1
 
-**Implementing Task:** [E2:S16:T09](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)
+**Implementing Task:** [E02:S16:T09](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)
 
 ---
 
@@ -36,7 +36,7 @@ Both requirements are in scope together because the `/ipw` command is the canoni
 
 ### Recurring TODO drift after IPW
 
-FR-077 (`E2:S01:T17`) codified ownership of `TODO → IN PROGRESS` as "implementation execution (first non-planning code/doc change)" and added drift validators. Despite this, the pattern recurs:
+FR-077 (`E02:S01:T17`) codified ownership of `TODO → IN PROGRESS` as "implementation execution (first non-planning code/doc change)" and added drift validators. Despite this, the pattern recurs:
 
 - Tasks are routinely found in `TODO` state after IPW packages are completed and implementation begins.
 - The validator (`validate_ipw_status_drift.py`) correctly catches drift at RW gate, but only after the fact — causing RW blocks, manual intervention, and context-switching cost.
@@ -67,7 +67,7 @@ Create `.claude/commands/ipw.md` as a self-contained IPW execution guide, follow
 
 **Command syntax:**
 - `/ipw` — infer host task from current context.
-- `/ipw E{epic}:S{story}:T{task}` — explicit host task (formats: `E2:S16:T08`, `E2S16T08`).
+- `/ipw E{epic}:S{story}:T{task}` — explicit host task (formats: `E02:S16:T08`, `E02S16T08`).
 - `/ipw E{epic}:S{story}:T{task} --skip-tests` — doc/config-only tasks where test design is not applicable (must be explicitly justified in the plan doc).
 
 **The command must enforce the four sequential phases with phase gates:**

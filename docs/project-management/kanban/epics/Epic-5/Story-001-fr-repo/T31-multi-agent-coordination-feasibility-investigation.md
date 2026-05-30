@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Epic 5, Story 0, Task 31: Multi-Agent Coordination Feasibility Investigation
 
-**Task ID:** E5:S01:T31  
+**Task ID:** E05:S01:T31  
 **Status:** WON'T HAVE  
 **Priority:** C (Could Have)  
 **Last updated:** 2026-05-29 (closed off board — deferred / out of scope)  
 **Started:** 2026-01-14  
 **Completed:** 2026-05-29  
 **Version:** v0.5.1.31+0 (no implementation RW)  
-**Code:** E5S00T31
+**Code:** E05S00T31
 
 ---
 
@@ -23,9 +23,9 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E5:S01:T31`
+**Full Task ID:** `E05:S01:T31`
 
-**Repository Pattern:** FR-031 = E5:S01:T31 (abstract space: v0.5.1.31+0)
+**Repository Pattern:** FR-031 = E05:S01:T31 (abstract space: v0.5.1.31+0)
 
 ---
 

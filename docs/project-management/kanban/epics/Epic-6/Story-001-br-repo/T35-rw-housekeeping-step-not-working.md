@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Started:** 2026-01-17
 **Completed:** 2026-01-17
 **Version:** v0.6.1.35+1
-**Code:** E6S01T35
+**Code:** E06S01T35
 
 ---
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
-**Full Task ID:** `E6:S01:T35`
+**Full Task ID:** `E06:S01:T35`
 
 ---
 

@@ -8,23 +8,23 @@ housekeeping_policy: keep
 
 # Epic 6, Story 7, Task 112: Install feedback submission path and governance
 
-**Task ID:** E6:S07:T112  
+**Task ID:** E06:S07:T112  
 **Status:** COMPLETE  
 **Priority:** CRITICAL  
 **Estimated Effort:** Large  
 **Created:** 2026-04-09  
-**Code:** E6S07T112
+**Code:** E06S07T112
 
 **Upstream:** [FR-079 - Install feedback submission path and governance](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
-**Depends on:** [E6:S07:T111](T111-comprehensive-install-event-contract-logging-and-feedback-quality.md) local event-contract logging outputs
+**Depends on:** [E06:S07:T111](T111-comprehensive-install-event-contract-logging-and-feedback-quality.md) local event-contract logging outputs
 
 ---
 
 ## Input
 
-- Structured local telemetry artifacts produced by `E6:S07:T111`.
+- Structured local telemetry artifacts produced by `E06:S07:T111`.
 - Requirement for high-quality, governable feedback from external adopters to AI Dev Kit maintainers.
-- [IPW-E6S07T112-install-feedback-submission-governance](../../../../../implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md)
+- [IPW-E06S07T112-install-feedback-submission-governance](../../../../../implementation-cycles/IPW-E06S07T112-install-feedback-submission-governance.md)
 
 ## Deliverable
 
@@ -65,4 +65,4 @@ Released **v0.6.7.112+2** (SemVer **v0.4.726+2**): implemented deterministic fee
 
 - [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
 - [FR-078](../../../fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
-- [IPW-E6S07T112-install-feedback-submission-governance](../../../../../implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md)
+- [IPW-E06S07T112-install-feedback-submission-governance](../../../../../implementation-cycles/IPW-E06S07T112-install-feedback-submission-governance.md)

@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** earlution (agentic-ide-rules project)  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** RESOLVED ✅ (v0.4.6.9+2 via E4:S06:T09)  
+**Status:** RESOLVED ✅ (v0.4.6.9+2 via E04:S06:T09)  
 **GitHub Issue:** #14
 
 ---
@@ -254,7 +254,7 @@ cp -r packages/frameworks/ai-dev-kit/docs/project-management/kanban/epics/* docs
 
 ## Notes
 
-**Resolution:** Fixed in `v0.4.6.10+2` by making the installer the primary/only installation method, clearly distinguishing canonical templates vs. ai-dev-kit's actual Kanban, adding warnings against manual copying, providing expected installation outputs, and adding troubleshooting steps. Implemented in E4:S06:T09 with README and post-template setup guide updates.
+**Resolution:** Fixed in `v0.4.6.10+2` by making the installer the primary/only installation method, clearly distinguishing canonical templates vs. ai-dev-kit's actual Kanban, adding warnings against manual copying, providing expected installation outputs, and adding troubleshooting steps. Implemented in E04:S06:T09 with README and post-template setup guide updates.
 
 This bug report documents installation discoverability and documentation issues. The interactive installer exists (E4:S07) but isn't being used because it's not discoverable. This is related to BR-004 but focuses on installer discoverability rather than epic contamination per se.
 

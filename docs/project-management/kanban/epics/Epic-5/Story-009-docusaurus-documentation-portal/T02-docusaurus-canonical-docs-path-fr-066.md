@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 5, Story 9, Task 02: Canonical docs path and publish scope (FR-066)
 
-**Task ID:** E5:S09:T02  
+**Task ID:** E05:S09:T02  
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-30  
 **Last updated:** 2026-03-30 (v0.5.9.2+2 — FR-066 RW)  
-**Code:** E5S09T02
+**Code:** E05S09T02
 
 **Feature Request:** [FR-066 – Canonical docs path](../../../fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md)
 
@@ -62,7 +62,7 @@ Implement **FR-066**: point the Docusaurus docs plugin at repository **`docs/`**
 
 ---
 
-## Specification (E5:S09:T02 / FR-066)
+## Specification (E05:S09:T02 / FR-066)
 
 Testable behaviors **S1–S7** are enforced by [`tests/test_portal_fr066_docs_path.py`](../../../../../../tests/test_portal_fr066_docs_path.py). **S8** is process: `npm run build` may fail until **FR-067**; failures should reflect corpus/link issues, not missing `docs/` path.
 
@@ -81,4 +81,4 @@ Testable behaviors **S1–S7** are enforced by [`tests/test_portal_fr066_docs_pa
 
 ## Dependencies
 
-- **FR-065** / E5:S09:T01 recommended first.
+- **FR-065** / E05:S09:T01 recommended first.
