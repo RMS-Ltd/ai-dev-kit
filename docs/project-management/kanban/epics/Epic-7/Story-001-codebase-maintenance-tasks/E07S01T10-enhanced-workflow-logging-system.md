@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 7, Story 1, Task 10: Enhanced Workflow Logging System Implementation
 
 **Task ID:** E07:S01:T10  
-**Status:** COMPLETE  
+**Status:** SUPERSEDED — canonical FR-059 delivery is [E02:S08:T08](../../../Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) (`v0.2.8.8+3`). This doc retained for historical E07 intake only.  
 **Priority:** HIGH  
 **Created:** 2026-03-17  
 **Started:** 2026-03-17  
 **Completed:** 2026-03-17  
-**Version:** v0.7.1.10+1  
+**Version:** v0.7.1.10+1 (historical; not FR-059 implementation evidence)  
 **Related FR:** [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md)  
 
 ---

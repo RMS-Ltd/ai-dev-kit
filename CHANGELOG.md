@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.8.8+4] - 30-05-26
+
+E2:S08:T08 (FR-059) — Docs-only: IPP/Story/Epic status reconciliation (COMPLETE at +3). SemVer **v0.4.835+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.8.8+4.md)
+
+---
+
 ## [0.2.8.8+3] - 30-05-26
 
 E2:S08:T08 (FR-059) — Change implemented: closure tests, AC evidence, IPW reconciliation, kanban COMPLETE sync. SemVer **v0.4.835+3**.

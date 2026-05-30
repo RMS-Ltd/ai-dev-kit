@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md`](../project-management/kanban/epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) **(E02:S08:T08)**  
 **Planning for:** [FR-059](../project-management/kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)  
-**Status:** Approved (IPW Phase 9 reconciled 2026-05-30; closure RW pending)
+**Status:** Closed — planning complete; implementation `v0.2.8.8+2`, closure RW `v0.2.8.8+3` (2026-05-30)
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
 
@@ -87,9 +87,9 @@ Operators and agents can reconstruct workflow/sub-workflow failures from durable
 
 ### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
 
-- **Current task status:** IN PROGRESS (implementation shipped at `v0.2.8.8+2`; closure tranche adds tests + AC evidence).
-- **Transition trigger to IN PROGRESS:** IPW Phase 8 wiring (2026-05-30).
-- **Transition trigger to COMPLETE:** Closure RW `v0.2.8.8+3` after FR-059 AC evidence recorded (deferred items documented).
+- **Current task status:** COMPLETE (`v0.2.8.8+3` — closure RW 2026-05-30).
+- **Transition to IN PROGRESS:** IPW Phase 8 wiring (2026-05-30) — done.
+- **Transition to COMPLETE:** Closure RW `v0.2.8.8+3` — done (deferred scope documented in FR-059 §1.3).
 - **Atomic propagation requirement:** Task doc, story checklist, and `fbuboard` IPP column updated together.
 - **Owner:** Implementation execution (Step 1 and final reconciliation in §4).
 
@@ -138,7 +138,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Step | Action | Deliverable |
 | ---- | ------ | ----------- |
-| **1** | **[MANDATORY] Transition E02:S08:T08 to IN PROGRESS** in task doc; sync story checklist; update `Last updated`. | Task `Status` = IN PROGRESS |
+| **1** | **[MANDATORY] Transition E02:S08:T08 to IN PROGRESS** in task doc; sync story checklist; update `Last updated`. | ✅ Done (2026-05-30) |
 | 2 | Land ADR-008 | ADR accepted |
 | 3 | Implement `forensic_log.py`, `checkpoint_store.py`, `journal_housekeeping.py` | Core modules |
 | 4 | Extend `RWJournal` / `StepEntry` / `RunEntry` schema | Journal v1 |
@@ -147,7 +147,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | 7 | Add tests under `tests/journal/` and `tests/workflow/` | CI coverage |
 | 8 | KB operator guide + rw-config keys + AGENTS.md note | Docs |
 | 9 | Update FR-059 / task AC evidence when tests pass | Linked evidence |
-| **N** | **[MANDATORY] Reconcile status** to COMPLETE only if all ACs satisfied; else IN PROGRESS/BLOCKED. | Forensic marker on RW only |
+| **N** | **[MANDATORY] Reconcile status** to COMPLETE only if all ACs satisfied; else IN PROGRESS/BLOCKED. | ✅ Done — `v0.2.8.8+3` |
 
 ### 4.1 Files to create or modify
 
@@ -186,9 +186,9 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Path | Scope of change | Tied to |
 | ------ | ---- | --------------- | ------- |
-| D-U1 | Host task T08 | Input/References → IPP; IN PROGRESS | Phase 8 |
-| D-U2 | FR-059 | Status IN PROGRESS | Step 9 |
-| D-U3 | Story-008 checklist | T08 → IN PROGRESS | Step 1 |
+| D-U1 | Host task T08 | Input/References → IPP; COMPLETE | Phase 8 / closure |
+| D-U2 | FR-059 | Status COMPLETE (`v0.2.8.8+3`) | Closure RW |
+| D-U3 | Story-008 checklist | T08 → COMPLETE | Closure RW |
 | D-U4 | `fbuboard.md` | IPP link replaces —No IPP— | Step 1 |
 | D-U5 | `rw-config.yaml` | `journal_dir`, `journal_ttl_days`, `journal_failed_ttl_days` | RF6 |
 | D-U6 | `AGENTS.md` | Documentation Agent jurisdiction for journals | RF7 |

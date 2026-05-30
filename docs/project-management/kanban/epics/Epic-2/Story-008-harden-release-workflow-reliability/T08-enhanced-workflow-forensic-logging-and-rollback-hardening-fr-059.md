@@ -10,8 +10,8 @@ housekeeping_policy: keep
 
 **Task ID:** E02:S08:T08  
 **Status:** COMPLETE  
-**Version Anchor:** v0.2.8.8+3  
-**Last updated:** 2026-05-30 (closure RW)  
+**Version Anchor:** v0.2.8.8+4  
+**Last updated:** 2026-05-30 (RW -d: IPP/Story status reconciliation)  
 **Priority:** HIGH  
 **Feature Request:** [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md)
 
