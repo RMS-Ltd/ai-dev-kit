@@ -8,11 +8,9 @@
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 4: Corpus canonical state
-  - Gate 5: Stage-set completeness (BR-070)
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 7/9 passed (2 failed, 0 waived).
+- Gates: 9/9 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -56,30 +54,23 @@
 
 ### Gate 4 — Corpus canonical state
 
-- Status: **FAIL** (severity: `block`)
-- Summary: Corpus canonical state violated; see findings.
-- Findings:
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: rows_changed=1 under non_substantive corpus sweep — corpus is not idempotent.
+- Status: **PASS** (severity: `block`)
+- Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 1, 'rows_with_duplicate_footers': 0}`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 80}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: BR-070 violation: 4 Step-7 path(s) are modified-unstaged, untracked, or missing.
-- Findings:
-  - `fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+- Status: **PASS** (severity: `block`)
+- Summary: BR-070 satisfied: all 6 Step-7 path(s) are staged or unchanged.
 - Evidence:
   - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-16-4plus18-e2s16t4.json`
   - `paths_checked`: `6`
-  - `violations`: `4`
+  - `violations`: `0`
   - `release_scope`: `{'epic': 2, 'story': 16, 'task': 4, 'task_id': 'E2:S16:T4', 'version_string': 'v0.2.16.4+18'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)

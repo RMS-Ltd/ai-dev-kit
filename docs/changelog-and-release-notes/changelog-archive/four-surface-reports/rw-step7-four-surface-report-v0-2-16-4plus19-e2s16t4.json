@@ -1,0 +1,96 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-2/Epic-2.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [],
+      "notes": [
+        "Story doc unchanged; docs-only release."
+      ],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md"
+      ],
+      "surface": "story_doc",
+      "touched": false
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 4,
+    "task_id": "E2:S16:T4",
+    "version_string": "v0.2.16.4+19"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 5,
+    "touched_surfaces": [
+      "task_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": [
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (docs-only; no FBU doc changes)."
+      ],
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "fbuboard": {
+      "changes": [
+        "Board-level Version Context and Last Updated only (no MoSCOW row edits; FR-097)"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Board-level Version and Last Updated only",
+        "E02:S16:T04 row: last RW version callout v0.2.16.4+19 (no stamp change)"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Version Anchor v0.2.16.4+19",
+        "Last updated note (docs-only Step 9 alignment)"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  }
+}

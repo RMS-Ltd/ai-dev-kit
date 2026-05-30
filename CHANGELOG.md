@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+19] - 30-05-26
+
+E02:S16:T04 (perpetual UKW) — Docs-only: Step 9 release-readiness report alignment (BLOCK→PASS for v0.2.16.4+18). SemVer **v0.4.833+19**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+19.md)
+
+---
+
 ## [0.2.16.4+18] - 30-05-26
 
 E02:S16:T04 (perpetual UKW) — Value-audit Won't Have deferrals; MoSCOW alignment (FR-072 → S; perpetual FBUs → O); FR-097 STRUCTURE-only stamp pass. SemVer **v0.4.832+18**.
