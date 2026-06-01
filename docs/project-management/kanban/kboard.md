@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-30 (E02:S16:T17 single-step bootstrap — v0.2.16.17+2)
-**Version:** v0.2.16.17+2
+**Last Updated:** 2026-05-30 (RW E06:S07:T107 — v0.6.7.107+3)
+**Version:** v0.6.7.107+3
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -32,10 +32,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E02:S16:T17** – Agent bootstrap and task routing (FR-103) - ✅ COMPLETE (v0.2.16.17+2, single-step AGENTS.md) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) | [FR-103](fr-br/FR-103-agent-bootstrap-and-task-routing.md) | [IPP](../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md) | [ADR-012](../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) | Last modified: 2026-05-30 22:30 UTC
 - **E02:S16:T13** – BR-059: UKW MoSCOW full open-task coverage per in-progress story - 📋 TODO (HIGH, re-housed from `E06:S07:T109`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Last modified: 2026-05-30 13:32 UTC
-- **E02:S01:T23** – Tool-agnostic workflow step tracking + persisted run logs - ✅ COMPLETE (**v0.2.1.23+1**) — ADR-011, tracker contract, run log v1 | [Task](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | [IPP](../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md) | [ADR-011](../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md) | Last modified: 2026-05-30 17:02 UTC
-- **E06:S07:T107** – IDE command whitelist optimization - 📋 TODO (HIGH, in-scope ADK agent friction; charter freeze applies to new S07 tasks) | [Task](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) | Last modified: 2026-05-30 13:34 UTC
 - **E07:S01:T09** – UXR-005: Kanban template governance & MoSCOW spacing rule - 📋 TODO (HIGH, sole implementing task for UXR-005) | [Task](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | Last modified: 2026-05-30 14:00 UTC
 - **E02:S15:T01** – BR-066: IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE**; historical backfill remains) | [Task](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | Last modified: 2026-04-14 00:00 UTC
 - **E04:S19:T08** – FR-072: Uniform repository abstract-space kanban rules - 🔄 IN PROGRESS (HIGH, Approach D batch wiring) | [Task](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | Last modified: 2026-05-30 14:19 UTC
@@ -74,7 +71,7 @@ housekeeping_policy: keep
 - **E02:S01:T06** – BR-001: Validate Version Bump Epic Story Detection Bug - 📋 TODO (LOW, Bug in epic/story detection for version bump validation) | [Task](epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) | [BR-001](fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md) | Last modified: 2026-05-26 00:00 UTC
 - **E08:S03:T04** – BR-058: CI test workflow missing and pytest failures - 🟢 OPEN (LOW) | [Task](epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | Last modified: 2026-05-30 13:35 UTC
 
-*(E04:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). **E02:S16:T16** / **FR-102** archived **v0.2.16.16+3** — [kanban-completed.md](kanban-completed.md), [fbu-completed.md](fbu-completed.md). **E05:S01:T46**, **E04:S08:T07**, **E05:S01:T74** pruned prior UKW — [kanban-completed.md](kanban-completed.md). FR-031 / FR-024 / FR-057 retired off active board — [fbu-completed.md](fbu-completed.md).)*
+*(E04:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). **E06:S07:T107** archived **v0.6.7.107+3** — RW 2026-05-30; [kanban-completed.md](kanban-completed.md). **E02:S16:T17**, **E02:S01:T23** archived **v0.2.16.17+2** / **v0.2.1.23+1** — UKW -c 2026-05-30. **E02:S16:T16** / **FR-102** archived **v0.2.16.16+3**. FR-031 / FR-024 / FR-057 retired — [fbu-completed.md](fbu-completed.md).)*
 
 ### Ongoing (O) - Perpetual Tasks
 

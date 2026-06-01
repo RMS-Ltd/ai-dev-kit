@@ -1,163 +1,113 @@
 ---
-# IDE Command Whitelist Configuration
-# Pattern-based command approval to reduce friction
-# Project: ai-dev-kit
-# Created: 2026-03-07
-# Version: 1.0
+# IDE Command Whitelist — pattern catalog (SoT)
+# Project: ai-dev-kit | ADR-013 | E06:S07:T107
+# Version: 1.1 | Updated: 2026-05-30
+#
+# Cursor does NOT load this file automatically. Use docs/developer-tools/ide-whitelist-guide.md
+# to translate patterns into Cursor Auto-Run / allowlist settings. Run validate_whitelist_patterns.py.
 
 description: |
-  This configuration defines pattern-based whitelist entries for IDE command approval.
-  Instead of storing concrete commands, these patterns allow variations of common commands
-  to be approved without repeated user prompts.
+  Regex catalog for common agent terminal commands. Substitute {PROJECT_ROOT} with your
+  repository absolute path when testing examples or configuring IDE allowlists.
 
-# Pattern-based whitelist entries
 patterns:
-  # Python Scripts - Framework validation and execution
   python_validation_scripts:
-    pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z_]+\.py"(\s+--\w+)?(\s+--strict)?$'
-    description: "Python validation scripts from framework package"
+    pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z0-9_]+\.py"(\s+.*)?$'
+    description: "RW/UKW validation scripts under workflow mgt"
     examples:
       - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict'
       - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py"'
-      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py"'
+      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --requested "E06:S07:T107" --strict'
+      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py" --requested "E06:S07:T107"'
+      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_kanban_state_icons.py" --strict'
+    negative_examples:
+      - 'python "other/validate_branch_context.py" --strict'
 
   python_framework_scripts:
-    pattern: '^python "packages/frameworks/workflow mgt/scripts/[a-z_]+/[a-z_]+\.py"(\s+.*)?$'
-    description: "Python framework management scripts"
+    pattern: '^python "packages/frameworks/workflow mgt/scripts/(?:[a-z0-9_]+/)*[a-z0-9_]+\.py"(\s+.*)?$'
+    description: "Other workflow mgt Python scripts (kanban, release, etc.)"
     examples:
-      - 'python "packages/frameworks/workflow mgt/scripts/create_github_release.py" --summary "Test" --epic 6 --story 7 --task 5'
+      - 'python "packages/frameworks/workflow mgt/scripts/create_github_release.py" --summary "Test" --epic 6 --story 7 --task 107'
       - 'python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py"'
+    negative_examples:
+      - 'python "packages/frameworks/kanban/scripts/foo.py"'
 
-  # Git Operations - Core version control
-  git_basic_operations:
-    pattern: '^git (add|status|commit|push|tag|checkout|branch|log|diff|restore|show|reset|merge|pull|fetch)(\s+-[a-zA-Z])?(\s+.*)?$'
-    description: "Standard git operations"
+  python_semver_converter:
+    pattern: '^python "packages/frameworks/workflow mgt/scripts/version/semver_converter\.py"(\s+.*)?$'
+    description: "SemVer conversion for RW README/tags"
+    examples:
+      - 'python "packages/frameworks/workflow mgt/scripts/version/semver_converter.py" "0.6.7.107+1"'
+
+  git_rw_operations:
+    pattern: '^git (add|status|commit|push|tag|checkout|branch|log|diff|restore|show|merge|pull|fetch)(\s+.*)?$'
+    description: "Git commands used in RW (excludes push --force; add explicit rule if needed)"
     examples:
       - 'git add -A'
       - 'git status'
-      - 'git commit -m "Commit message"'
-      - 'git push origin main'
-      - 'git tag v1.0.0'
-      - 'git checkout main'
+      - 'git commit -m "Release v0.6.7.107+1: summary"'
+      - 'git push origin main --tags'
+      - 'git log -1 --oneline'
+    negative_examples:
+      - 'svn status'
 
-  # File Search and Discovery
-  find_operations:
-    pattern: '^find /Users/rms/Documents/projects/ai-dev-kit(\s+[-][a-zA-Z])?\s+.*$'
-    description: "File search operations in project directory"
+  gh_cli_operations:
+    pattern: '^gh (pr|release|issue|api)(\s+.*)?$'
+    description: "GitHub CLI for releases and PR hygiene"
     examples:
-      - 'find /Users/rms/Documents/projects/ai-dev-kit -name "*.py"'
-      - 'find /Users/rms/Documents/projects/ai-dev-kit -name "*validate*" -type f'
-      - 'find /Users/rms/Documents/projects/ai-dev-kit -maxdepth 2 -name "*.md"'
+      - 'gh pr create --title "Example" --body "Body"'
+      - 'gh release view v0.4.843+2'
 
-  # Built-in File Operations (IDE tools)
-  file_read_operations:
-    pattern: '^(read_file|view_file|view_content_chunk)(\s+.*)?$'
-    description: "File reading and viewing operations"
+  find_project_operations:
+    pattern: '^find \{PROJECT_ROOT\}(\s+.*)?$'
+    description: "Find under repo root — use {PROJECT_ROOT} placeholder, not home paths"
     examples:
-      - 'read_file --file_path /path/to/file.md'
-      - 'view_file /path/to/file.py'
-      - 'view_content_chunk --document_id abc123 --position 1'
+      - 'find {PROJECT_ROOT} -name "*.py"'
+      - 'find {PROJECT_ROOT} -maxdepth 3 -name "validate_*.py"'
 
-  file_edit_operations:
-    pattern: '^(edit|multi_edit|edit_notebook|write_to_file)(\s+.*)?$'
-    description: "File editing and writing operations"
+  rg_search_operations:
+    pattern: '^rg(\s+.*)?$'
+    description: "ripgrep search (agent grep tool shapes)"
     examples:
-      - 'edit --file_path /path/to/file.md --old_string "old" --new_string "new"'
-      - 'multi_edit --file_path /path/to/file.md --edits [...]'
-      - 'write_to_file --target_file /path/to/new.md --code_content "content"'
+      - 'rg --pattern "whitelist" --path docs'
 
-  directory_operations:
-    pattern: '^(list_dir|find_by_name)(\s+.*)?$'
-    description: "Directory and file discovery operations"
+  pytest_framework:
+    pattern: '^python (-m pytest(\s+.*)?|"packages/frameworks/workflow mgt/scripts/validation/test_validate_[a-z_]+\.py")$'
+    description: "Framework validator pytest (-m) or direct test module invocation"
     examples:
-      - 'list_dir --directory_path /path/to/dir'
-      - 'find_by_name --search_directory /path/to/dir --pattern "*.py"'
+      - 'python -m pytest -c "packages/frameworks/workflow mgt/scripts/validation/pytest.ini" "packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py"'
+      - 'python "packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py"'
 
-  # Search Operations
-  search_operations:
-    pattern: '^grep(\s+[-][a-zA-Z])?\s+.*$'
-    description: "Text search operations"
-    examples:
-      - 'grep --pattern "TODO" --path /path/to/dir'
-      - 'grep -i "error" --path /path/to/file --output_mode content'
-
-  # Terminal/Command Operations
-  terminal_operations:
-    pattern: '^bash(\s+[-][a-zA-Z])?\s+.*$'
-    description: "Terminal command execution"
-    examples:
-      - 'bash --command "echo test"'
-      - 'bash --command "ls -la" --cwd /path/to/dir'
-
-  # Memory and Todo Operations
-  memory_operations:
-    pattern: '^(create_memory|todo_list)(\s+.*)?$'
-    description: "Memory and task management operations"
-    examples:
-      - 'create_memory --content "Important note" --tags ["tag1", "tag2"]'
-      - 'todo_list --todos [{"content": "Task 1", "status": "pending"}]'
-
-# Security Contexts
+# Security grouping (documentation for maintainer allowlist tiers — not enforced by YAML)
 contexts:
   high_security:
-    description: "Operations that modify system state or sensitive data"
+    description: "Mutating git, edits, shell — approve deliberately in Cursor"
     patterns:
-      - git_basic_operations
-      - file_edit_operations
-      - terminal_operations
-    
+      - git_rw_operations
+      - gh_cli_operations
   medium_security:
-    description: "Operations that read data or perform searches"
+    description: "Validation and framework scripts"
     patterns:
       - python_validation_scripts
       - python_framework_scripts
-      - find_operations
-      - file_read_operations
-      - directory_operations
-      - search_operations
-    
+      - python_semver_converter
+      - pytest_framework
   low_security:
-    description: "Operations that are read-only or internal"
+    description: "Read-only search"
     patterns:
-      - memory_operations
+      - find_project_operations
+      - rg_search_operations
 
-# Configuration Settings
-settings:
-  # Approval behavior
-  auto_approve_low_security: true
-  auto_approve_medium_security: false
-  auto_approve_high_security: false
-  
-  # Pattern matching
-  case_sensitive: false
-  regex_engine: "PCRE"  # Perl Compatible Regular Expressions
-  
-  # Logging and monitoring
-  log_pattern_matches: true
-  log_approval_decisions: true
-  
-  # User interface
-  show_pattern_reason: true
-  allow_pattern_override: true
+# Maintainer notes only — Cursor does not read these keys
+recommended_maintainer_settings:
+  cursor_integration: |
+    Open Cursor Settings → Agents / Auto-Run (product UI names may vary).
+    Add allowlist entries derived from patterns above. Prefer prefix rules where
+    the product supports them; otherwise approve once per pattern family.
+  review_frequency: monthly
+  forbidden_patterns:
+    - '^.*$'
+    - 'git push.*--force'
 
-# Maintenance
 maintenance:
-  # Review patterns periodically
-  review_frequency: "monthly"
-  
-  # Pattern performance monitoring
   monitor_pattern_usage: true
-  
-  # Update recommendations
-  suggest_pattern_improvements: true
-
-# Documentation
-documentation:
-  # Pattern examples for team members
-  provide_examples: true
-  
-  # Pattern explanation
-  explain_pattern_logic: true
-  
-  # Troubleshooting guide
-  include_troubleshooting: true
+  validator_command: 'python "packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py"'

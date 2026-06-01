@@ -18,6 +18,8 @@ housekeeping_policy: keep
 **Implementing Task (repo — COMPLETE):** [E06:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
 **Planning Artifact (IPW):** [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md)
 
+**Complementary (repo — Cursor):** [E06:S07:T107](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) — pattern catalog + validator ([ADR-013](../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)); **does not** fix Cascade product whitelist.
+
 ---
 
 ## Problem Statement

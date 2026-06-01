@@ -1,0 +1,29 @@
+{
+  "report_type": "rw_step7_backfill",
+  "task": "E06:S07:T107",
+  "version": "0.6.7.107+3",
+  "generated_at": "2026-05-30T23:59:00Z",
+  "surfaces": {
+    "kboard.md": {
+      "action": "STRUCTURE",
+      "detail": "Removed completed E06:S07:T107 active row; board metadata Last Updated / Version only"
+    },
+    "fbuboard.md": {
+      "action": "NONE",
+      "detail": "No FBU rows changed for T107"
+    }
+  },
+  "stamp_evidence": [
+    {
+      "surface": "kboard.md",
+      "change": "board_metadata_only",
+      "reason": "RW E06:S07:T107 release-scope reconciliation"
+    }
+  ],
+  "rows": {
+    "E02:S01:T23": { "allowed": true, "reason": "UKW -c: terminal row archived to kanban-completed.md" },
+    "E02:S16:T17": { "allowed": true, "reason": "UKW -c: terminal row archived to kanban-completed.md" },
+    "E06:S07:T107": { "allowed": true, "reason": "RW E06:S07:T107: completed row pruned from active MoSCOW" },
+    "FR-103": { "allowed": true, "reason": "UKW -c: terminal FBU row archived to fbu-completed.md" }
+  }
+}

@@ -27,6 +27,7 @@ housekeeping_policy: keep
 | Fix suspected kanban drift (specific) | `UKW -ad <targets>` then `RW` — **planned** (not yet in `.cursorrules`) |
 | Maintain changelog size/order | `CMW` then `RW` |
 | Bump package versions | `PVW` (or automatic at RW Step 2.5) |
+| Reduce Cursor terminal approval friction | See [IDE whitelist guide](../developer-tools/ide-whitelist-guide.md) (pattern catalog + validator; [E06:S07:T107](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)) |
 
 **Examples use padded E/S/T** ([UXR-014](../project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)): `E02:S16:T15`, compact `E02S16T15`.
 

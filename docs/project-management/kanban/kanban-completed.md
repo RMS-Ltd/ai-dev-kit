@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-30 (UKW -c — E02:S16:T16)
-**Version:** v0.2.16.16+2
+**Last Updated:** 2026-05-30 (RW E06:S07:T107)
+**Version:** v0.6.7.107+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,18 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 6: Framework Management (Story 7 — ADK implementation analysis)**
+- **[E06:S07:T107](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)** — IDE command whitelist — ADR-013 catalog, validator, Cursor maintainer playbook.
+  **Completed:** `2026-05-30T23:59:00Z` | **Version:** `v0.6.7.107+3` | **Agent:** `RW` | [ADR-013](../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md) | [IPP-E06S07T107](../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+
+#### **Epic 2: Workflow Management (Story 16 — Perpetual workflow ops)**
+- **[E02:S16:T17](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)** — **FR-103**: Agent bootstrap and task routing — ADR-012, single-step `AGENTS.md`, manifest mirror.
+  **Completed:** `2026-05-30T22:30:00Z` | **Version:** `v0.2.16.17+2` | **Agent:** `UKW Agent` | [FR-103](fr-br/FR-103-agent-bootstrap-and-task-routing.md) | [ADR-012](../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) | [IPP-E02S16T17](../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)
+
+#### **Epic 2: Workflow Management (Story 1 — RW agent execution)**
+- **[E02:S01:T23](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)** — Tool-agnostic workflow step tracking + agent run log v1 (ADR-011).
+  **Completed:** `2026-05-30T17:02:00Z` | **Version:** `v0.2.1.23+1` | **Agent:** `UKW Agent` | [ADR-011](../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md) | [IPP-E02S01T23](../../implementation-cycles/IPP-E02S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
 
 #### **Epic 2: Workflow Management (Story 16 — Perpetual workflow ops)**
 - **[E02:S16:T16](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)** — **FR-102**: UKW archive completed (`UKW -c`) — ADR-010, agent SoT, Option A prune gating.

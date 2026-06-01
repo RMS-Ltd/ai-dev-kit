@@ -105,8 +105,8 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E06:S07:T107 – IDE command whitelist optimization** - TODO (HIGH, pattern-based whitelist to reduce agent approval friction; **not** workflows directory reorganization — checklist label corrected 2026-05-29)
-  - Task: [`T107-ide-command-whitelist-optimization.md`](Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
+- [x] **E06:S07:T107 – IDE command whitelist optimization** - ✅ COMPLETE (**v0.6.7.107+3**)
+  - Task: [`T107-ide-command-whitelist-optimization.md`](Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) | [IPP-E06S07T107](../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md) | [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
 
 
 

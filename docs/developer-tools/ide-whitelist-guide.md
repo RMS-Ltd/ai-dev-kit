@@ -1,252 +1,149 @@
-# IDE Command Whitelist Guide
-
-## Overview
-
-This guide explains how to use the pattern-based whitelist configuration to reduce approval friction when running commands in the IDE.
-
-## Problem Solved
-
-**Before**: Every slight variation of a command required manual approval
-
-- `python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict`
-- `python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py"`
-- `git commit -m "Message 1"`
-- `git commit -m "Message 2"`
-
-**After**: Pattern-based approval handles variations automatically
-
-- Pattern: `^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z_]+\.py"(\s+--\w+)?$`
-- All validation script variations approved automatically
-
-## Configuration Files
-
-### Primary Configuration
-
-- **File**: `.cursor/whitelist-patterns.yaml`
-- **Purpose**: Defines pattern-based whitelist entries
-- **Format**: YAML with regex patterns and examples
-
-### Task Documentation
-
-- **File**: `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md`
-- **Purpose**: Task tracking and implementation details
-
-## Pattern Categories
-
-### 1. Python Scripts
-
-```yaml
-python_validation_scripts:
-  pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z_]+\.py"(\s+--\w+)?(\s+--strict)?$'
-```
-
-**Covers**:
-
-- All validation scripts in the framework package
-- Optional flags like `--strict`
-- Different validation script names
-
-**Examples**:
-
-- ✅ `python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict`
-- ✅ `python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py"`
-- ❌ `python "other/script.py"` (different path)
-
-### 2. Git Operations
-
-```yaml
-git_basic_operations:
-  pattern: '^git (add|status|commit|push|tag|checkout|branch|log|diff|restore|show|reset|merge|pull|fetch)(\s+-[a-zA-Z])?(\s+.*)?$'
-```
-
-**Covers**:
-
-- All standard git commands
-- Optional flags and parameters
-- Any commit message or branch name
-
-**Examples**:
-
-- ✅ `git add -A`
-- ✅ `git commit -m "Any message"`
-- ✅ `git push origin any-branch`
-- ❌ `git-custom-command` (not in allowed commands)
-
-### 3. File Operations
-
-```yaml
-file_edit_operations:
-  pattern: '^(edit|multi_edit|edit_notebook|write_to_file)(\s+.*)?$'
-```
-
-**Covers**:
-
-- All file editing operations
-- Any file path
-- Any content
-
-**Examples**:
-
-- ✅ `edit --file_path any/path/file.md --old_string "old" --new_string "new"`
-- ✅ `write_to_file --target_file new/file.md --code_content "content"`
-- ❌ `custom-edit-command` (not in allowed operations)
-
-## Security Contexts
-
-### High Security (Manual Approval Required)
-
-- Git operations (can change repository state)
-- File editing operations (can modify files)
-- Terminal commands (can execute arbitrary commands)
-
-### Medium Security (Configurable Approval)
-
-- Python scripts (can execute code)
-- File searches (can read sensitive data)
-- Directory operations (can explore file system)
-
-### Low Security (Auto-Approve Recommended)
-
-- Memory operations (internal data management)
-- Todo operations (task management)
-
-## Adding New Patterns
-
-### 1. Identify Common Command Variations
-
-```bash
-# Collect examples of commands that need approval
-python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
-python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py"
-python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --verbose
-```
-
-### 2. Create Regex Pattern
-
-```regex
-^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z_]+\.py"(\s+--\w+)?(\s+--strict)?$
-```
-
-### 3. Add to Configuration
-
-```yaml
-new_pattern_name:
-  pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z_]+\.py"(\s+--\w+)?(\s+--strict)?$'
-  description: "Description of what this pattern covers"
-  examples:
-    - 'Example command 1'
-    - 'Example command 2'
-```
-
-### 4. Test Pattern
-
-- Test against known good commands
-- Test against potentially dangerous commands
-- Verify pattern isn't too broad or too narrow
-
-## Troubleshooting
-
-### Pattern Not Matching
-1. **Check regex syntax**: Use online regex testers
-2. **Verify escaping**: Special characters may need escaping
-3. **Test with examples**: Ensure pattern matches expected commands
-
-### Pattern Too Broad
-
-1. **Add anchors**: Use `^` and `$` to match start/end
-2. **Be more specific**: Include more path or parameter details
-3. **Use character classes**: `[a-zA-Z0-9_-]` instead of `.`
-
-### Pattern Too Narrow
-
-1. **Remove restrictions**: Loosen parameter requirements
-2. **Add alternatives**: Use `|` for multiple options
-3. **Use quantifiers**: `*`, `+`, `?` for optional parts
-
-## Maintenance
-
-### Monthly Review
-
-- Check pattern usage logs
-- Identify new command patterns
-- Remove unused patterns
-- Update examples
-
-### Performance Monitoring
-
-- Monitor pattern matching performance
-- Identify slow regex patterns
-- Optimize frequently used patterns
-
-### Team Updates
-
-- Share new patterns with team
-- Document pattern changes
-- Train team members on usage
-
-## Best Practices
-
-### 1. Start Specific, Broaden Gradually
-
-```yaml
-# Too broad (security risk)
-dangerous_pattern: '^.*$'
-
-# Better (specific and safe)
-safe_pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/[a-z_]+\.py".*$'
-```
-
-### 2. Use Descriptive Names
-
-```yaml
-# Bad
-pattern1: '.*'
-
-# Good
-python_validation_scripts: '^python "packages/frameworks/workflow mgt/scripts/validation/.*\.py".*$'
-```
-
-### 3. Provide Examples
-
-```yaml
-good_pattern:
-  pattern: '^git commit.*$'
-  description: "Git commit operations"
-  examples:
-    - 'git commit -m "Feature: Add new feature"'
-    - 'git commit -m "Fix: Resolve issue #123"'
-```
-
-### 4. Document Security Implications
-
-```yaml
-high_risk_pattern:
-  pattern: '^rm.*$'
-  description: "File deletion operations (HIGH RISK)"
-  security_context: "high_security"
-  warning: "This pattern allows file deletion. Use with caution."
-```
-
-## Implementation Status
-
-- [x] Configuration file created
-- [x] Core patterns implemented
-- [x] Documentation created
-- [ ] IDE integration testing
-- [ ] Team training completed
-- [ ] Performance monitoring setup
-
-## Support
-
-For questions or issues with the whitelist configuration:
-
-1. Check this documentation
-2. Review the task document: T107
-3. Test patterns with regex testers
-4. Consult with team members
+---
+lifecycle: evergreen
+ttl_days: null
+created_at: 2026-03-07T00:00:00Z
+expires_at: null
+housekeeping_policy: keep
+---
+
+# IDE command whitelist guide
+
+**Version:** 1.1 (2026-05-30) · **ADR:** [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md) · **Task:** [E06:S07:T107](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
 
 ---
 
-**Last Updated**: 2026-03-07  
-**Version**: 1.0  
-**Maintainer**: Development Team
+## Overview
+
+This guide explains the **pattern catalog + validator + Cursor playbook** model for reducing agent terminal approval friction. It does **not** claim that YAML alone auto-approves commands in Cursor.
+
+| Layer | File | Role |
+| ----- | ---- | ---- |
+| Catalog | [`.cursor/whitelist-patterns.yaml`](../../.cursor/whitelist-patterns.yaml) | Regex SoT with examples |
+| Proof | `validate_whitelist_patterns.py` | Ensures patterns compile and examples match |
+| Playbook | This guide | Map patterns → Cursor allowlist UI |
+| Evidence | [ide-whitelist-uat-log.md](ide-whitelist-uat-log.md) | UAT and integration spike entries |
+
+**Out of scope:** [BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Cascade/Windsurf vendor whitelist). See [E06:S06:T57](../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md).
+
+---
+
+## Friction analysis (AC1)
+
+| Friction class | Example | Why it hurts |
+| -------------- | ------- | ------------ |
+| Concrete storage | `validate_branch_context.py --strict` vs same script without flag | Each variant is a new approval |
+| Version tokens | Tags/changelog strings with `v0.6.7.101+33` | Unique strings per release |
+| Path variants | Absolute paths vs repo-relative | Duplicated allowlist rows |
+| Parameter drift | `--requested "E06:S07:T107"` vs other E:S:T | RW guard scripts need per-task strings |
+| Product behavior | Cursor stores literal approved strings | No import of repo YAML by default |
+
+---
+
+## Cursor integration (enforcement truth)
+
+| Question | Answer |
+| -------- | ------ |
+| Does Cursor load `whitelist-patterns.yaml`? | **No** (verified 2026-05-30 — see [UAT log](ide-whitelist-uat-log.md)) |
+| What should maintainers do? | Open **Cursor Settings → Agents** (or **Auto-Run** / terminal allowlist — labels vary by version). Add allowlist rules using pattern families from the catalog (prefix or regex where supported). |
+| What does the repo automate? | `validate_whitelist_patterns.py` — pattern coherence only |
+
+---
+
+## Running the validator
+
+From repository root:
+
+```bash
+python "packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py"
+```
+
+With explicit root:
+
+```bash
+python "packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py" --project-root /path/to/ai-dev-kit
+```
+
+Pytest (global **pytest-django** from other projects must be blocked — plain `python -m pytest …/test_validate_*.py` may fail):
+
+```bash
+bash "packages/frameworks/workflow mgt/scripts/validation/run_isolated_pytest.sh"
+```
+
+Or any of:
+
+```bash
+python "packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py"
+python "packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py" --run-tests
+```
+
+All of the above set `PYTEST_DISABLE_PLUGIN_AUTOLOAD=1` and skip `pytest_django`.
+
+---
+
+## Pattern catalog highlights
+
+### Python validation (RW Step 9)
+
+```yaml
+python_validation_scripts:
+  pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z0-9_]+\.py"(\s+.*)?$'
+```
+
+Covers all `validate_*.py` invocations with optional flags (`--strict`, `--requested`, `--art`, etc.).
+
+### Git (RW Steps 8–12)
+
+```yaml
+git_rw_operations:
+  pattern: '^git (add|status|commit|push|tag|checkout|branch|log|diff|restore|show|merge|pull|fetch)(\s+.*)?$'
+```
+
+**Security:** Do not add blanket `git push --force` to Cursor allowlist. Review force-push manually.
+
+### Project find
+
+Use `{PROJECT_ROOT}` in examples — substitute your clone path when configuring IDE rules:
+
+```bash
+find {PROJECT_ROOT} -name "validate_*.py"
+```
+
+---
+
+## Maintainer workflow
+
+1. Add or refine a pattern in `.cursor/whitelist-patterns.yaml` with `examples` and optional `negative_examples`.
+2. Run `validate_whitelist_patterns.py` (must pass).
+3. Update Cursor allowlist UI to mirror the pattern family.
+4. Append a row to [ide-whitelist-uat-log.md](ide-whitelist-uat-log.md) if measuring prompt counts.
+5. Release via `RW E06:S07:T107` (or current host task) when changing catalog in a versioned delivery.
+
+---
+
+## Security guidelines
+
+- Forbidden in catalog: `^.*$`, maintainer home paths (`/Users/…`).
+- Prefer narrow script paths over generic `python .*`.
+- Group patterns in `contexts` (high / medium / low) when deciding Cursor approval tiers.
+
+---
+
+## Implementation status
+
+- [x] Configuration file (catalog v1.1)
+- [x] Core patterns for validation, git, semver, find, pytest
+- [x] Documentation (this guide + ADR-013)
+- [x] Automated validator + pytest
+- [x] Integration spike documented (UAT log)
+- [ ] Live prompt-count UAT (maintainer — Entry 002 in UAT log)
+- [ ] Team training (optional walkthrough)
+
+---
+
+## Support
+
+1. This guide and [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
+2. [IPP-E06S07T107](../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+3. [T107 task doc](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
+
+**Last updated:** 2026-05-30

@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.17+2] - 30-05-26
+## [0.6.7.107+3] - 30-05-26
 
-E02:S16:T17 — Agent bootstrap: single-step cold start (`AGENTS.md` only; routing inline). SemVer **v0.4.843+2**.
+E06:S07:T107 — IDE command whitelist: ADR-013 pattern catalog, `validate_whitelist_patterns.py`, maintainer guide, isolated pytest. SemVer **v0.4.843+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.17+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.7.107+3.md)
 
 ---

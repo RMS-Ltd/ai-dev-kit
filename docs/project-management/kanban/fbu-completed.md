@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-30 (UKW -c — FR-102)
-**Version:** v0.2.16.16+2
+**Last Updated:** 2026-05-30 (UKW -c — FR-103)
+**Version:** v0.2.16.17+2
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-103 | FR | Agent bootstrap and task routing — single-step `AGENTS.md` (**E02:S16:T17**) | 2026-05-30T22:30:00Z | v0.2.16.17+2 | UKW Agent |
 | FR-102 | FR | UKW archive completed (`UKW -c`) — ledger-before-prune (**E02:S16:T16**) | 2026-05-30T16:30:00Z | v0.2.16.16+2 | UKW Agent |
 | BR-076 | BR | E7:S00 must not host concrete tasks — abstract-only detasking (**E04:S19:T10**) | 2026-05-30T13:28:56Z | v0.4.19.10+2 (fix); RW -d v0.4.19.10+3 | RW |
 | FR-085 | FR | UKW optional `--rp` deep reprioritization — ADR-009, agent SoT, cheatsheet (**E02:S16:T06**) | 2026-05-30T12:54:46Z | v0.2.16.6+1 | RW |
