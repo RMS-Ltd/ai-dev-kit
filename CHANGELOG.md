@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+23] - 01-06-26
+## [0.4.19.8+3] - 01-06-26
 
-E02:S16:T04 — UKW -u bookkeeping: kboard/fbuboard metadata sync; archive FR-072 and FR-021 from active fbuboard. SemVer **v0.4.844+23**.
+E04:S19:T08 — Docs-only: Step 9 release-readiness artifacts for v0.4.19.8+2. SemVer **v0.4.845+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+23.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.8+3.md)
 
 ---

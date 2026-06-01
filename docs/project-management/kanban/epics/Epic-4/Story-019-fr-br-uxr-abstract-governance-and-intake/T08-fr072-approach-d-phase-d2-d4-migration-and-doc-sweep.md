@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** ✅ COMPLETE (v0.4.19.8+2)  
 **Priority:** HIGH  
 **Created:** 2026-05-29  
-**Last updated:** 2026-06-01 (IPW + implementation — ADR-014, D2–D4 doc sweep; merged **T07**)  
-**Version Anchor:** v0.4.19.8+1 (prior RW -k); closure via **RW E04:S19:T08**  
+**Last updated:** 2026-06-01 (RW -d **v0.4.19.8+3** — Step 9 readiness artifacts for **+2** closure)  
+**Version Anchor:** v0.4.19.8+2 (functional); **v0.4.19.8+3** (docs-only forensics)  
 **Code:** E04S19T08
 
 **Upstream:** [FR-072 — Uniform repository vs abstract-space kanban rules](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)  
