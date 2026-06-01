@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-05-30 (T17 RW **v0.2.16.17+2** — single-step AGENTS.md bootstrap)
-**Version:** v0.2.16.17+2
+**Last updated:** 2026-06-01 (T04 RW **v0.2.16.4+23** — UKW -u bookkeeping)
+**Version:** v0.2.16.4+23
 **Code:** E2S16
 
 ---
@@ -35,7 +35,7 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [ ] **E02:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual anchor; Wave 2/3 COMPLETE; Tranche 2 **v0.2.16.3+0** BR-067 policy/docs; AC4 PARTIAL pending T02 inventory)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW attribution anchor; last RW **v0.2.16.4+22** — kboard/fbuboard bidirectional restore +31 rows)  
+- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW attribution anchor; last RW **v0.2.16.4+23** — UKW -u metadata sync; FR-072/FR-021 archived)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E02:S16:T05 – Markdown Documentation Maintenance (Perpetual)** - IN PROGRESS (HIGH, dedicated perpetual lane for recurring markdown-only documentation upkeep outside workflow-maintenance umbrella and kanban synchronization lanes)  

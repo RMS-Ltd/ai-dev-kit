@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.8+2] - 01-06-26
+## [0.2.16.4+23] - 01-06-26
 
-E04:S19:T08 — FR-072 Approach D D2–D4: ADR-014, semantic intake guardrails, FR-021 supersession (merged T07), historical registry labeling. SemVer **v0.4.844+2**.
+E02:S16:T04 — UKW -u bookkeeping: kboard/fbuboard metadata sync; archive FR-072 and FR-021 from active fbuboard. SemVer **v0.4.844+23**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.8+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+23.md)
 
 ---

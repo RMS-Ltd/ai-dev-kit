@@ -2,7 +2,7 @@
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
   "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-4-19-8plus2-e04s19t08.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": false,
+  "overall_passed": true,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
   "release_scope": {
     "epic": 4,
@@ -12,15 +12,13 @@
     "version_string": "v0.4.19.8+2"
   },
   "summary": {
-    "blocking_failures": [
-      "Gate 5: Stage-set completeness (BR-070)"
-    ],
-    "gates_failed": 1,
-    "gates_passed": 8,
+    "blocking_failures": [],
+    "gates_failed": 0,
+    "gates_passed": 9,
     "gates_total": 9,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-01 17:25 UTC",
+  "timestamp_utc": "2026-06-01 17:26 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -126,23 +124,15 @@
           "task_id": "E04:S19:T08",
           "version_string": "v0.4.19.8+2"
         },
-        "violations": 7
+        "violations": 0
       },
-      "findings": [
-        "`task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-completed.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
-        "`fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run."
-      ],
+      "findings": [],
       "gate_id": 5,
-      "is_blocking_failure": true,
+      "is_blocking_failure": false,
       "name": "Stage-set completeness (BR-070)",
-      "passed": false,
+      "passed": true,
       "severity": "block",
-      "summary": "BR-070 violation: 7 Step-7 path(s) are modified-unstaged, untracked, or missing.",
+      "summary": "BR-070 satisfied: all 7 Step-7 path(s) are staged or unchanged.",
       "waive_reason": null,
       "waived": false
     },

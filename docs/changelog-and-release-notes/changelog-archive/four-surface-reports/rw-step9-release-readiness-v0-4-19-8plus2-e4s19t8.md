@@ -3,15 +3,14 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E04:S19:T08 (v0.4.19.8+2)
-- **Timestamp (UTC):** 2026-06-01 17:25 UTC
+- **Timestamp (UTC):** 2026-06-01 17:26 UTC
 - **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-4-19-8plus2-e04s19t08.json`
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 5: Stage-set completeness (BR-070)
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 8/9 passed (1 failed, 0 waived).
+- Gates: 9/9 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -66,20 +65,12 @@
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: BR-070 violation: 7 Step-7 path(s) are modified-unstaged, untracked, or missing.
-- Findings:
-  - `task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-completed.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+- Status: **PASS** (severity: `block`)
+- Summary: BR-070 satisfied: all 7 Step-7 path(s) are staged or unchanged.
 - Evidence:
   - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-4-19-8plus2-e04s19t08.json`
   - `paths_checked`: `7`
-  - `violations`: `7`
+  - `violations`: `0`
   - `release_scope`: `{'epic': 4, 'story': 19, 'task': 8, 'task_id': 'E04:S19:T08', 'version_string': 'v0.4.19.8+2'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)

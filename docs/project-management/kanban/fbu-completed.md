@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-05-30 (UKW -c — FR-103)
-**Version:** v0.2.16.17+2
+**Last Updated:** 2026-06-01 (RW **E02:S16:T04** — FR-072, FR-021 ledger)
+**Version:** v0.2.16.4+23 (**SemVer** v0.4.844+23)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-072 | FR | Uniform repository abstract-space kanban rules — ADR-014 D2–D4 (**E04:S19:T08**, merged T07) | 2026-06-01T18:40:00Z | v0.4.19.8+2 | RW |
+| FR-021 | FR | FR/BR/UXR repository stories pattern — **SUPERSEDED** by FR-072 / **E04:S19:T08** (T07 merged) | 2026-06-01T18:40:00Z | v0.4.19.8+2 | UKW Agent |
 | FR-103 | FR | Agent bootstrap and task routing — single-step `AGENTS.md` (**E02:S16:T17**) | 2026-05-30T22:30:00Z | v0.2.16.17+2 | UKW Agent |
 | FR-102 | FR | UKW archive completed (`UKW -c`) — ledger-before-prune (**E02:S16:T16**) | 2026-05-30T16:30:00Z | v0.2.16.16+2 | UKW Agent |
 | BR-076 | BR | E7:S00 must not host concrete tasks — abstract-only detasking (**E04:S19:T10**) | 2026-05-30T13:28:56Z | v0.4.19.10+2 (fix); RW -d v0.4.19.10+3 | RW |

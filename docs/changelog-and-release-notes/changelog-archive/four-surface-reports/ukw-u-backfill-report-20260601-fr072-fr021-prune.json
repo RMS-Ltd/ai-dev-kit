@@ -1,0 +1,11 @@
+{
+  "report_type": "ukw_u_bookkeeping",
+  "release_scope": "UKW -u",
+  "evidence_mode": "structure_prune",
+  "version_context": "0.4.19.8+2",
+  "generated_at": "2026-06-01T19:00:00Z",
+  "rows": {
+    "FR-072": { "allowed": true, "reason": "UKW -u: terminal COMPLETE; ledger in fbu-completed.md (v0.4.19.8+2)" },
+    "FR-021": { "allowed": true, "reason": "UKW -u: SUPERSEDED by FR-072; merged T07→T08; ledger in fbu-completed.md" }
+  }
+}

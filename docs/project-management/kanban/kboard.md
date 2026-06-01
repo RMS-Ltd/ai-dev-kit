@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-05-30 (RW E06:S07:T107 — v0.6.7.107+3)
-**Version:** v0.6.7.107+3
+**Last Updated:** 2026-06-01 (RW **E02:S16:T04** — UKW -u bookkeeping **v0.2.16.4+23**)
+**Version:** v0.2.16.4+23 (**SemVer** v0.4.844+23)
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.

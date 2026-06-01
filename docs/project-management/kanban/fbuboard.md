@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-05-30 (UKW -c — archived FR-103)
-**Version Context:** v0.2.16.17+2 (**SemVer** v0.4.843+2)
+**Last Updated:** 2026-06-01 (RW **E02:S16:T04** — UKW -u bookkeeping **v0.2.16.4+23**)
+**Version Context:** v0.2.16.4+23 (**SemVer** v0.4.844+23)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -39,6 +39,8 @@ This board provides **centralized visibility and prioritization** for all open F
 
 **Consolidation (2026-05-30):** Pruned terminal FBUs **FR-103**, **FR-102**, **FR-046**, **FR-011**, **FR-049**, **FR-074** (tasks COMPLETE/IMPLEMENTED). See [`fbu-completed.md`](fbu-completed.md).
 
+**Consolidation (2026-06-01, UKW -u):** Pruned **FR-072** (COMPLETE **v0.4.19.8+2**), **FR-021** (SUPERSEDED by FR-072 / **E04:S19:T08**). See [`fbu-completed.md`](fbu-completed.md).
+
 ### Must Have (M) - Critical Items
 
 *(No Must Have FBU items — 2026-05-30 value audit deferral.)*
@@ -51,7 +53,6 @@ This board provides **centralized visibility and prioritization** for all open F
 - **BR-067** – RW doc-only releases default to BUILD+1 instead of doc-init +0 - 🔄 IN PROGRESS (HIGH, policy/docs **v0.2.16.3+0**; pending maintainer verification) | [BR-067](fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) | [E02:S16:T03](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-05-30 16:26 UTC
 - **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE** **E02:S15:T01**; phased historical backfill remains) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | —No IPP— | Last modified: 2026-04-14 00:00 UTC
 - **UXR-005** – Kanban board formatting & governance - 📋 TODO (HIGH, **E07:S01:T09** on kboard) | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | [E07:S01:T09](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) | —No IPP— | Last modified: 2026-05-30 14:00 UTC
-- **FR-072** – Uniform repository abstract-space kanban rules - ✅ COMPLETE (HIGH, **v0.4.19.8+2** — ADR-014; pending maintainer verification) | [IPP](../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md) | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [E04:S19:T08](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | —No IPP— | Last modified: 2026-06-01 18:40 UTC
 
 ---
 
@@ -59,7 +60,6 @@ This board provides **centralized visibility and prioritization** for all open F
 
 - **FR-032** – Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | [E09:S01:T03](epics/Epic-9/Story-001-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
 - **FR-030** – AI Dev Kit CLI Tool - 📋 TODO (MEDIUM, Command-line interface tool) | [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md) | [E06:S08:T01](epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md) | —No IPP— | Last modified: 2026-01-16 00:00 UTC
-- **FR-021** – FR/BR/UXR Repository Stories - 📋 TODO (MEDIUM, **E04:S19:T07** semantic delivery) | [FR-021](fr-br/FR-021-fr-br-uxr-repository-stories.md) | [E04:S19:T07](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md) | —No IPP— | Last modified: 2026-05-29 17:16 UTC
 - **UXR-003** – Intelligent Epic Matching Canonical Adoption UAT - 📋 TODO (MEDIUM, User acceptance testing for intelligent epic matching) | [UXR-003](fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md) | [E07:S05:T03](epics/Epic-7/Story-005-migration-uxr-research.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
 - **FR-044** – RW Temporary Execution Log for Recovery and Forensics - 📋 TODO (LOW, Temporary execution logs for Release Workflow) | [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | [E05:S01:T44](epics/Epic-5/Story-001-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md) | —No IPP— | Last modified: 2026-02-22 00:00 UTC
 - **FR-039** – AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | [E07:S01:T10](epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC

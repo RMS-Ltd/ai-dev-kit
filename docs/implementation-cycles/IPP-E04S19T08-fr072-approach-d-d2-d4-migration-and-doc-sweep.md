@@ -176,10 +176,10 @@ ADR-014 → FR-021/FR-072 → governance/templates → verification → RW
 
 ## 7. Success / verification criteria
 
-- [ ] V1–V8 pass (record in T08 at closure)
-- [ ] FR-072 AC1–AC3 satisfied
-- [ ] T07 AC1–AC3 satisfied via merged delivery
-- [ ] IPP linked from T08; `validate_ipw_publication_wiring.py` PASS
+- [x] V1–V8 pass (2026-06-01)
+- [x] FR-072 AC1–AC3 satisfied
+- [x] T07 AC1–AC3 satisfied via merged delivery
+- [x] IPP linked from T08; `validate_ipw_publication_wiring.py` PASS
 
 ---
 
