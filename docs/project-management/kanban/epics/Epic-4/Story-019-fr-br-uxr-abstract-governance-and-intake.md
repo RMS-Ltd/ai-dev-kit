@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-02  
-**Last updated:** 2026-05-30 (v0.4.19.10+2 – T10 COMPLETE: BR-076)
-**Version:** v0.4.19.10+2
+**Last updated:** 2026-06-01 (v0.4.19.8+2 – T08 COMPLETE: FR-072 / ADR-014; T07 merged)
+**Version:** v0.4.19.8+2
 **Code:** E4S19  
 
 **Story type:** Ongoing governance (not a perpetual “repo ledger”; not a dumping ground for individual **FR-### / BR-### / UXR-###** implementation work).
@@ -34,9 +34,9 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T06 – FBU meta normalization and intake governance (UXR-008 / FR-086 / FR-073)** - COMPLETE (HIGH, canonical meta-task owning filename/terminology normalization + FR-073 AC3 board-statistics closure; supersedes T02/T05 and absorbs T73 follow-on governance) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) | [UXR-008](../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md) | [FR-086](../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) | [FR-073](../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md) | [IPP](../../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)
 
-- [ ] **E04:S19:T07 – FR-021 repository pattern supersession (FR-072 reconciliation)** - TODO (MEDIUM) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md) | [FR-021](../../fr-br/FR-021-fr-br-uxr-repository-stories.md)
+- [x] **E04:S19:T07 – FR-021 repository pattern supersession (FR-072 reconciliation)** - ✅ COMPLETE (merged into **T08**, 2026-06-01) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md) | [FR-021](../../fr-br/FR-021-fr-br-uxr-repository-stories.md) | [IPP-E04S19T08](../../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
 
-- [ ] **E04:S19:T08 – FR-072 Approach D phases D2–D4 migration and doc sweep** - TODO (HIGH) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | [FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+- [x] **E04:S19:T08 – FR-072 Approach D phases D2–D4 migration and doc sweep** - ✅ COMPLETE (HIGH, **v0.4.19.8+2** — ADR-014, D2–D4, merged T07) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) | [FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [ADR-014](../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) | [IPP-E04S19T08](../../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
 
 - [x] **E04:S19:T09 – Two-digit E/S/T identifier default formatting (UXR-014)** - ✅ COMPLETE (MEDIUM, v0.4.19.9+2 — est_format.py, policy, full corpus sweep) — [Task doc](Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) | [UXR-014](../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) | [IPP-E4S19T09](../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 
@@ -48,7 +48,7 @@ housekeeping_policy: keep
 
 This story holds **Epic 4 (Kanban framework) responsibility for FR / BR / UXR in the abstract**: the **rules, intake mechanics, governance, and cross-cutting documentation** that apply to *all* reports of those types — without owning the **substance** of any single report.
 
-**“Abstract” here means:** not concerning **concrete** `fr-br/FR-*.md`, `BR-*.md`, or `UXR-*.md` work items as primary deliverables. Those stay anchored in **E5:S01** (FR repo), **E6:S01** (BR repo), **E7:S00** (UXR repo), and in **delivery** epics/stories under **KG-R6**. This story owns the **shape of the system** (how intake, boards, and policies fit together).
+**“Abstract” here means:** not concerning **concrete** `fr-br/FR-*.md`, `BR-*.md`, or `UXR-*.md` work items as primary deliverables. **New intake** uses **semantic delivery stories** (KG-R6); **E5:S01**, **E6:S01**, and **E7:S00** registry paths are **historical** only ([FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [ADR-014](../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)). This story owns the **shape of the system** (how intake, boards, and policies fit together).
 
 ---
 

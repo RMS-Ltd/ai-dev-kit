@@ -50,6 +50,7 @@ Normative detail lives in the **framework** policy (single SoT): [`kanban-govern
 
 **Approach D transition rule (FR-072):**
 
+- **Canonical policy:** [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) (implementation **E04:S19:T08**).
 - **New intake cutover:** New FR/BR/UXR intake MUST create the primary task in the most appropriate delivery story; do **not** create net-new intake tasks in dedicated FR/BR/UXR repository stories.
 - **Historical anchors preserved:** Existing repository-story tasks remain valid for forensic traceability and cross-links; treat those stories as historical registries during migration/closure.
 

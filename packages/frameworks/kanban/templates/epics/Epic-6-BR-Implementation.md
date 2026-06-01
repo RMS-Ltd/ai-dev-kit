@@ -26,7 +26,7 @@ housekeeping_policy: keep
 - [ ] **E06:S02 – BR Prioritization and Assignment** - TODO
 - [ ] **E06:S03 – BR Fix Patterns** - TODO
 
-> **Note:** E6:S00 (BR Repo) is omitted from board displays (PERPETUAL repository story - see Epic 6 document for internal tracking).
+> **Note:** E6:S00 is **abstract space only**. E6:S01 is a **historical BR registry** — new intake uses semantic delivery stories (FR-072 / ADR-014), not new primary tasks on S01.
 
 > **CRITICAL:** This Story Checklist is the **SINGLE SOURCE OF TRUTH** for story status and version markers.  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.6.1.3+1)`)  

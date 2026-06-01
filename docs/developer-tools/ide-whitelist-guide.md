@@ -19,8 +19,9 @@ This guide explains the **pattern catalog + validator + Cursor playbook** model 
 | Layer | File | Role |
 | ----- | ---- | ---- |
 | Catalog | [`.cursor/whitelist-patterns.yaml`](../../.cursor/whitelist-patterns.yaml) | Regex SoT with examples |
+| Cursor apply | [`.cursor/permissions.json`](../../.cursor/permissions.json) | **Terminal allowlist** Cursor loads automatically (prefix rules) |
 | Proof | `validate_whitelist_patterns.py` | Ensures patterns compile and examples match |
-| Playbook | This guide | Map patterns → Cursor allowlist UI |
+| Playbook | This guide | Tune `permissions.json`; optional IDE UI for gaps |
 | Evidence | [ide-whitelist-uat-log.md](ide-whitelist-uat-log.md) | UAT and integration spike entries |
 
 **Out of scope:** [BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Cascade/Windsurf vendor whitelist). See [E06:S06:T57](../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md).
@@ -43,9 +44,44 @@ This guide explains the **pattern catalog + validator + Cursor playbook** model 
 
 | Question | Answer |
 | -------- | ------ |
-| Does Cursor load `whitelist-patterns.yaml`? | **No** (verified 2026-05-30 — see [UAT log](ide-whitelist-uat-log.md)) |
-| What should maintainers do? | Open **Cursor Settings → Agents** (or **Auto-Run** / terminal allowlist — labels vary by version). Add allowlist rules using pattern families from the catalog (prefix or regex where supported). |
-| What does the repo automate? | `validate_whitelist_patterns.py` — pattern coherence only |
+| Does Cursor load `whitelist-patterns.yaml`? | **No** — regex catalog is repo SoT only |
+| Does Cursor load `.cursor/permissions.json`? | **Yes** — [permissions.json reference](https://cursor.com/docs/reference/permissions). Terminal entries use **prefix** matching on the full command string. |
+| What should maintainers do? | 1) Enable **Run Mode → Allowlist** (or Allowlist with Sandbox). 2) Commit/use [`.cursor/permissions.json`](../../.cursor/permissions.json) (already mapped from the catalog). 3) After catalog changes, update `permissions.json` prefixes and re-run the validator. |
+| What does the repo automate? | `validate_whitelist_patterns.py` — YAML coherence; `permissions.json` is maintained alongside the catalog (see maintainer workflow). |
+
+### One-time setup (this machine)
+
+**Open the correct settings panel**
+
+| Panel | Shortcut (macOS) | Has Run Mode / Agents? |
+| ----- | ---------------- | ---------------------- |
+| **Cursor Settings** | `Cmd+Shift+J` | **Yes** — use this one |
+| Editor Settings (VS Code) | `Cmd+,` | No — fonts, format on save, etc. |
+
+In **Cursor Settings**, use the **left sidebar** (not General / Privacy only). Scroll until you see **Agents** (sometimes under **Features** or **Beta**, depending on version).
+
+**Run Mode (Cursor 3.6+)**
+
+| Mode | Use with `permissions.json`? |
+| ---- | ---------------------------- |
+| **Auto-review** (common default) | **Yes** — allowlisted terminal commands run immediately; others go to classifier |
+| **Allowlist** | **Yes** — strictest; only allowlisted commands auto-run |
+| **Allowlist (with Sandbox)** | **Yes** — allowlisted outside sandbox; rest sandboxed |
+| **Run Everything** | Allowlist still defined but everything runs (not recommended) |
+
+You do **not** have to switch away from Auto-review if that is already selected. The repo [`.cursor/permissions.json`](../../.cursor/permissions.json) supplies the terminal allowlist in all modes above except deprecated “Ask every time”.
+
+**If you still cannot find Agents**
+
+1. **Settings search** (top of Cursor Settings) → type `Run Mode` or `allowlist` or `terminal`.
+2. **Update Cursor** to 3.6+ (Help → Check for Updates).
+3. **Verify the file loaded:** with this repo open, Agent runs `git status` — use **Add to allowlist** on the prompt once; if `permissions.json` is active, Settings should note allowlist is file-controlled.
+4. **Fallback:** only `~/.cursor/permissions.json` + repo file merge; no UI section required for prefixes to apply once Run Mode is enabled.
+
+**Confirm**
+
+- Terminal allowlist shows entries from `permissions.json` (read-only in UI when file defines `terminalAllowlist`).
+- Smoke test: `python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict` from repo root.
 
 ---
 
@@ -114,9 +150,9 @@ find {PROJECT_ROOT} -name "validate_*.py"
 
 1. Add or refine a pattern in `.cursor/whitelist-patterns.yaml` with `examples` and optional `negative_examples`.
 2. Run `validate_whitelist_patterns.py` (must pass).
-3. Update Cursor allowlist UI to mirror the pattern family.
+3. Add matching **prefix** line(s) to `.cursor/permissions.json` → `terminalAllowlist` (see [Cursor prefix rules](https://cursor.com/docs/reference/permissions#terminal-allowlist-format)).
 4. Append a row to [ide-whitelist-uat-log.md](ide-whitelist-uat-log.md) if measuring prompt counts.
-5. Release via `RW E06:S07:T107` (or current host task) when changing catalog in a versioned delivery.
+5. Release via `RW` on the host task when changing catalog or permissions in a versioned delivery.
 
 ---
 
@@ -135,6 +171,7 @@ find {PROJECT_ROOT} -name "validate_*.py"
 - [x] Documentation (this guide + ADR-013)
 - [x] Automated validator + pytest
 - [x] Integration spike documented (UAT log)
+- [x] Repo `.cursor/permissions.json` (prefix allowlist from catalog)
 - [ ] Live prompt-count UAT (maintainer — Entry 002 in UAT log)
 - [ ] Team training (optional walkthrough)
 

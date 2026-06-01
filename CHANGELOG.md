@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.7.107+3] - 30-05-26
+## [0.4.19.8+2] - 01-06-26
 
-E06:S07:T107 — IDE command whitelist: ADR-013 pattern catalog, `validate_whitelist_patterns.py`, maintainer guide, isolated pytest. SemVer **v0.4.843+3**.
+E04:S19:T08 — FR-072 Approach D D2–D4: ADR-014, semantic intake guardrails, FR-021 supersession (merged T07), historical registry labeling. SemVer **v0.4.844+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.7.107+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.8+2.md)
 
 ---

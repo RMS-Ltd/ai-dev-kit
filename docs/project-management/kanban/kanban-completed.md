@@ -20,6 +20,12 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR abstract governance)**
+- **[E04:S19:T08](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)** — FR-072 Approach D D2–D4; ADR-014; merged T07/FR-021 supersession.
+  **Completed:** `2026-06-01T18:40:00Z` | **Version:** `v0.4.19.8+2` | **Agent:** `RW` | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) | [IPP-E04S19T08](../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
+- **[E04:S19:T07](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)** — FR-021 supersession (merged into T08).
+  **Completed:** `2026-06-01T18:40:00Z` | **Version:** `v0.4.19.8+2` | **Agent:** `RW` | [FR-021](fr-br/FR-021-fr-br-uxr-repository-stories.md)
+
 #### **Epic 6: Framework Management (Story 7 — ADK implementation analysis)**
 - **[E06:S07:T107](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)** — IDE command whitelist — ADR-013 catalog, validator, Cursor maintainer playbook.
   **Completed:** `2026-05-30T23:59:00Z` | **Version:** `v0.6.7.107+3` | **Agent:** `RW` | [ADR-013](../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md) | [IPP-E06S07T107](../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)

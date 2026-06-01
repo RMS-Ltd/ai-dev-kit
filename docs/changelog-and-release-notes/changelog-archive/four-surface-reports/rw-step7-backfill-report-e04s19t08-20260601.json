@@ -1,0 +1,11 @@
+{
+  "report_type": "rw_step7_backfill",
+  "task": "E04:S19:T08",
+  "version": "0.4.19.8+2",
+  "generated_at": "2026-06-01T18:45:00Z",
+  "rows": {
+    "E04:S19:T08": { "allowed": true, "reason": "RW complete: task archived to kanban-completed.md" },
+    "E04:S19:T07": { "allowed": true, "reason": "Merged into T08; row pruned from active MoSCOW" },
+    "FR-072": { "allowed": true, "reason": "RW E04:S19:T08 closure: FR-072 COMPLETE row metadata" }
+  }
+}

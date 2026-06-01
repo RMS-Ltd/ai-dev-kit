@@ -59,11 +59,22 @@ housekeeping_policy: keep
 
 | Field | Value |
 | ----- | ----- |
-| `date_utc` | 2026-05-30T23:50:00Z |
-| `scenario` | IPP §3.1 RW mini-sequence in Cursor after allowlist setup per [ide-whitelist-guide.md](ide-whitelist-guide.md) |
+| `date_utc` | 2026-06-01T17:30:00Z |
+| `scenario` | Repo `.cursor/permissions.json` applied from catalog; Run Mode Allowlist required on maintainer machine |
 | `expected` | Fewer repeated approvals for validation/git command families vs concrete-string allowlist |
-| `observed` | **Pending** — requires maintainer session after configuring Cursor allowlist from catalog |
+| `observed` | **Repo configured:** `terminalAllowlist` prefixes in [`.cursor/permissions.json`](../../.cursor/permissions.json). **Pending:** maintainer enables Allowlist run mode and records prompt counts on next RW mini-sequence |
 | `prompts_before` | TBD |
 | `prompts_after` | TBD |
 | `result` | `partial` |
-| `notes` | AC7 closure: record counts on next RW session; catalog + validator satisfy AC2–AC5 repo-side |
+| `notes` | Deliberately omits blanket `git` prefix (avoids auto-allowing `git push --force`). Uses `git push origin` instead. |
+
+### Entry 003 — permissions.json catalog mapping (2026-06-01)
+
+| Field | Value |
+| ----- | ----- |
+| `date_utc` | 2026-06-01T17:30:00Z |
+| `scenario` | Map [whitelist-patterns.yaml](../../.cursor/whitelist-patterns.yaml) families → [permissions.json](../../.cursor/permissions.json) per Cursor docs |
+| `expected` | Prefix entries cover validation scripts, framework scripts, git RW subset, gh, rg, find |
+| `observed` | File committed in repo; Cursor hot-reloads on change |
+| `result` | `pass` |
+| `notes` | See updated [ide-whitelist-guide.md](ide-whitelist-guide.md) § Cursor integration |

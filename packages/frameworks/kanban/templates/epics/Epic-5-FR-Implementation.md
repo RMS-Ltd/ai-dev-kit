@@ -26,7 +26,7 @@ housekeeping_policy: keep
 - [ ] **E05:S02 – FR Prioritization and Planning** - TODO
 - [ ] **E05:S03 – FR Implementation Patterns** - TODO
 
-> **Note:** E5:S00 (FR Repo) is omitted from board displays (PERPETUAL repository story - see Epic 5 document for internal tracking).
+> **Note:** E5:S00 is **abstract space only** (no tasks). E5:S01 is a **historical FR registry** — new intake uses semantic delivery stories (FR-072 / ADR-014), not new primary tasks on S01.
 
 > **CRITICAL:** This Story Checklist is the **SINGLE SOURCE OF TRUTH** for story status and version markers.  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.5.1.3+1)`)  

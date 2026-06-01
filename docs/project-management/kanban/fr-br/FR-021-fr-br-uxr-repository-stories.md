@@ -12,12 +12,12 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-11  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** ACCEPTED  
+**Status:** SUPERSEDED (2026-06-01 — new intake per **FR-072** / [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md); historical baseline preserved)
 
-> **Supersession note (2026-04):** This FR remains the historical baseline that introduced dedicated FR/BR/UXR repository stories. For **new intake behavior**, see **FR-072** (Approach D phased migration) and **FR-074** (semantic placement KG-R6). Repository-story anchors remain valid for historical traceability.
+> **Supersession (FR-072 Approach D):** This FR introduced dedicated FR/BR/UXR repository stories. **New intake** MUST use **semantic delivery-story** placement ([FR-074](FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md) KG-R6). Repository-story task IDs remain **historical** anchors only. Implementation: [E04:S19:T08](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) (includes former **T07**).
 
-**Implementing Task:** [E04:S19:T07](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)  
-**Historical registry:** E05:S01:T21
+**Implementing Task:** [E04:S19:T08](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
+**Historical registry:** [E05:S01:T21](../epics/Epic-5/Story-001-fr-repo/T21-fr-br-uxr-repository-stories.md)
 
 ---
 

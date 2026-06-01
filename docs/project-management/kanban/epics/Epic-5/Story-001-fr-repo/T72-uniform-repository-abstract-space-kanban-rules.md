@@ -9,16 +9,18 @@ housekeeping_policy: keep
 # Task E05:S01:T72 – Uniform Repository vs Abstract-Space Kanban Rules
 
 **Task ID:** E05:S01:T72  
-**Status:** IN PROGRESS  
+**Status:** HISTORICAL REGISTRY (implementation **E04:S19:T08** — FR-072 COMPLETE)  
 **Priority:** HIGH  
 **Version Anchor:** v0.5.1.72+0 (RW -k doc-init — **Released** 2026-03-31)  
 **Feature Request:** [FR-072 – Uniform Repository vs Abstract-Space Kanban Rules](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+
+> **Historical anchor:** FR-072 intake filed here (`0.5.1.72+0`). **Primary delivery:** [E04:S19:T08](../../../Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md). **Policy:** [ADR-014](../../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md).
 
 ---
 
 ## Summary
 
-Consolidate **cross-epic** rules so **Story 0** (abstract space vs repository), **FR/BR/UXR repository** placement, and **version/intake** semantics are **one coherent model**. Evaluate approaches **A–D** in FR-072, **decide**, then **update policy and all affected documentation** (including **FR-021** reconciliation, Kanban governance, ADR/architecture, Epic 7 UXR story numbering, and validator/intake guidance).
+**Historical registry task** for FR-072. Cross-epic rules are **implemented** via **E04:S19:T08** and [ADR-014](../../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md). Do not add new primary intake tasks under **E05:S01** for FR-072 follow-on work.
 
 **Traceability:** **FR-072** (not **FR-064**, which is [`FR-064-shields-branch-private-repo-badges.md`](../../../fr-br/FR-064-shields-branch-private-repo-badges.md) / **E05:S01:T69**).
 

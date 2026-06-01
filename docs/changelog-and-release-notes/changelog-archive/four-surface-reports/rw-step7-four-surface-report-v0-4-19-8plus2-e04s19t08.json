@@ -1,0 +1,46 @@
+{
+  "contract": "FR-092 / FR-091",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 4,
+    "story": 19,
+    "task": 8,
+    "task_id": "E04:S19:T08",
+    "version_string": "v0.4.19.8+2"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard"],
+    "total_changes": 24
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md",
+        "docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md",
+        "docs/project-management/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md", "docs/project-management/kanban/kanban-completed.md"]
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fbuboard.md"]
+    }
+  },
+  "stamp_evidence": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "mode": "row_prune_and_metadata"
+  },
+  "timestamp_utc": "2026-06-01 18:40 UTC"
+}

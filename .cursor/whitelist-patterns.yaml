@@ -100,9 +100,8 @@ contexts:
 # Maintainer notes only — Cursor does not read these keys
 recommended_maintainer_settings:
   cursor_integration: |
-    Open Cursor Settings → Agents / Auto-Run (product UI names may vary).
-    Add allowlist entries derived from patterns above. Prefer prefix rules where
-    the product supports them; otherwise approve once per pattern family.
+    Apply patterns via .cursor/permissions.json (terminalAllowlist prefixes).
+    Enable Run Mode → Allowlist in Cursor Settings. See docs/developer-tools/ide-whitelist-guide.md.
   review_frequency: monthly
   forbidden_patterns:
     - '^.*$'

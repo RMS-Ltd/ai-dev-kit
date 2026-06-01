@@ -1,0 +1,42 @@
+{
+  // ADR-013 / E06:S07:T107 — terminal allowlist derived from .cursor/whitelist-patterns.yaml
+  // Cursor concatenates this file with ~/.cursor/permissions.json (if present).
+  // Cursor 3.6+ (e.g. 3.6.31). Run Mode: Auto-review, Allowlist, or Allowlist (with Sandbox). See docs/developer-tools/ide-whitelist-guide.md
+  "terminalAllowlist": [
+    "python \"packages/frameworks/workflow mgt/scripts/",
+    "python \"packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py",
+    "python \"packages/frameworks/workflow mgt/scripts/validation/test_validate_",
+    "bash \"packages/frameworks/workflow mgt/scripts/validation/run_isolated_pytest.sh",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python \"packages/frameworks/workflow mgt/scripts/validation/",
+    "python -m pytest",
+    "git add",
+    "git status",
+    "git commit",
+    "git push origin",
+    "git tag",
+    "git log",
+    "git diff",
+    "git show",
+    "git restore",
+    "git branch",
+    "git fetch",
+    "git pull",
+    "git checkout",
+    "git merge",
+    "gh ",
+    "rg ",
+    "find .",
+    "find docs",
+    "find packages"
+  ],
+  "autoRun": {
+    "allow_instructions": [
+      "RW/UKW validation and release scripts under packages/frameworks/workflow mgt/scripts/ are routine in this repo.",
+      "Read-only git inspection (status, diff, log, show) is expected during agent work."
+    ],
+    "block_instructions": [
+      "Do not auto-run git push --force, git reset --hard, or git clean -fdx without explicit user approval.",
+      "Do not auto-run commands that modify production databases or deployment targets."
+    ]
+  }
+}

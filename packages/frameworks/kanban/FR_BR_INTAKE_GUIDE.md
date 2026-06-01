@@ -8,10 +8,10 @@ housekeeping_policy: keep
 
 # FR/BR Intake Process Guide
 
-**Version:** 1.1  
-**Last Updated:** 2026-03-31  
+**Version:** 1.2  
+**Last Updated:** 2026-06-01  
 **Framework:** Kanban Framework  
-**Related:** `kanban-governance-policy.md`, `T002-decision-flow-design.md`, `FR_TEMPLATE.md`, `BR_TEMPLATE.md`, `UXR_TEMPLATE.md` (if used)
+**Related:** `kanban-governance-policy.md`, [ADR-014](../../../docs/architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) (ai-dev-kit), `T002-decision-flow-design.md`, `FR_TEMPLATE.md`, `BR_TEMPLATE.md`, `UXR_TEMPLATE.md` (if used)
 
 ---
 

@@ -800,6 +800,7 @@ See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br
    - Extract the task number from the task identifier: `E{epic}:S{story}:T{task}` (e.g., `E2:S02:T08` → task number is `8`)
    - **CRITICAL:** If no task is marked complete, or you cannot identify which task was just completed, **STOP** and ask the user which task was completed
    - **CRITICAL:** Document the completed task number for comparison
+   - **Repository / abstract-space (FR-072 / ADR-014):** **S00** stories are abstract-only (no task checklist). **E5:S01 / E6:S01** and historical **E7:S00:Txx** paths are **registry anchors** — RW may still version them when that historical task is the release anchor, but **new intake** must not treat repository stories as default homes. Prefer reading the **delivery** story checklist for semantic work ([ADR-014](../../../../../../docs/architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)).
    
    **Doc-Init Scenarios:**
    - **Doc-Init Task Completion:** If doc-init was detected in A.1, the completed task is the NEW task whose document was just created

@@ -47,6 +47,7 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 - [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md)
 - [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) — agent bootstrap and task routing (manifest + slim `AGENTS.md`)
 - [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md) — IDE command allowlist catalog ([guide](../developer-tools/ide-whitelist-guide.md))
+- [ADR-014](../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) — repository vs abstract-space Kanban model (FR-072 Approach D)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [Workflow flaws reference](../architecture/standards-and-adrs/workflow-flaws-reference-guide.md)
 - [Versioning error reference](../architecture/standards-and-adrs/versioning-error-reference-guide.md)

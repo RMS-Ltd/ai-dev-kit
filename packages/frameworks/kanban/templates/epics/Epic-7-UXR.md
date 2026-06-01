@@ -28,7 +28,7 @@ housekeeping_policy: keep
 - [ ] **E07:S04 – User Journey Mapping and Experience Design** - TODO
 - [ ] **E07:S05 – UX Insights and Recommendations** - TODO
 
-> **Note:** E7:S00 (UXR Repo) is omitted from board displays (PERPETUAL repository story - see Epic 7 document for internal tracking).
+> **Note:** E7:S00 is **abstract space only** (historical T01–T06 anchors are link-only). New UXR intake uses semantic hosts (e.g. E7:S01), not new tasks on S00 (FR-072 / ADR-014).
 
 > **CRITICAL:** This Story Checklist is the **SINGLE SOURCE OF TRUTH** for story status and version markers.  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.7.1.3+1)`)  
