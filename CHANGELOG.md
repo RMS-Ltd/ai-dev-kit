@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.8+3] - 01-06-26
+## [0.7.1.9+5] - 02-06-26
 
-E04:S19:T08 — Docs-only: Step 9 release-readiness artifacts for v0.4.19.8+2. SemVer **v0.4.845+3**.
+E07:S01:T09 — UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10. SemVer **v0.4.845+5**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.8+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.9+5.md)
 
 ---

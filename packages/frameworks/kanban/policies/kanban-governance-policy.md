@@ -342,6 +342,11 @@ Each task entry in the MoSCOW sections includes:
 - **Hygiene-only passes** must not swap or remove icons unless the row’s **status token** changes (same intent as FR-097: no cosmetic churn).
 - **Enforcement:** `validate_kanban_state_icons.py` and Release Readiness **Gate 9** after corpus backfill.
 
+**MoSCOW multi-line spacing (UXR-005 / E07:S01:T09):**
+- Between adjacent **multi-line** MoSCOW bullets on `kboard.md`, `fbuboard.md`, and related Kanban docs, require **exactly one blank line**; single-line bullets (≤100 characters in source) may stay contiguous.
+- **UXR ownership:** Kanban template and board formatting governance is owned by the UXR workflow; implementation anchor **E07:S01:T09** ([`kanban-board-guide.md`](../../../docs/project-management/kanban/kanban-board-guide.md) § Formatting Governance).
+- **Enforcement:** `validate_kanban_moscow_spacing.py` (non-blocking Release Readiness **Gate 10**); UKW/RW agents run after MoSCOW edits.
+
 ### RW preventive vs UKW corrective separation (FR-092 / FR-091)
 
 The Release Workflow (RW) and the Update Kanban Workflow (UKW) own **distinct, non-overlapping** responsibilities. This separation is architectural, not just operational.

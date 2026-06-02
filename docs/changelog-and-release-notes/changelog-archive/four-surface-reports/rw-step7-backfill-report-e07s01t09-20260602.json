@@ -1,0 +1,11 @@
+{
+  "report_type": "rw_step7_backfill",
+  "task": "E07:S01:T09",
+  "version": "0.7.1.9+5",
+  "generated_at": "2026-06-02T12:08:24Z",
+  "evidence_mode": "structure_prune_and_spacing",
+  "rows": {
+    "E07:S01:T09": { "allowed": true, "reason": "RW complete: task archived to kanban-completed.md" },
+    "UXR-005": { "allowed": true, "reason": "RW complete: FBU pruned to fbu-completed.md" }
+  }
+}

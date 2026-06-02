@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| UXR-005 | UXR | Kanban MoSCOW spacing rule + validator (**E07:S01:T09**) | 2026-06-01T18:00:00Z | v0.7.1.9+5 | IPW/RW pending |
 | FR-072 | FR | Uniform repository abstract-space kanban rules — ADR-014 D2–D4 (**E04:S19:T08**, merged T07) | 2026-06-01T18:40:00Z | v0.4.19.8+2 | RW |
 | FR-021 | FR | FR/BR/UXR repository stories pattern — **SUPERSEDED** by FR-072 / **E04:S19:T08** (T07 merged) | 2026-06-01T18:40:00Z | v0.4.19.8+2 | UKW Agent |
 | FR-103 | FR | Agent bootstrap and task routing — single-step `AGENTS.md` (**E02:S16:T17**) | 2026-05-30T22:30:00Z | v0.2.16.17+2 | UKW Agent |

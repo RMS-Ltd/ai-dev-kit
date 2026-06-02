@@ -47,7 +47,7 @@ kanban/
 - **Story directories:** Stories with associated files can have subdirectories (e.g., `Story-XXX/TXXX-*.md`)
 - **Five-way split:** Board views are split into tasks, structure, guide, completed tasks, and FR/BR/UXR systems for clarity
 - **Dual prioritization:** Both tasks and FR/BR/UXRs use MoSCOW prioritization for consistency
-- **UXR ownership:** The UXR workflow owns Kanban template updates and documentation maintenance to keep terminology and formatting consistent across boards
+- **UXR ownership:** The UXR workflow owns Kanban template updates and documentation maintenance to keep terminology and formatting consistent across boards ([kanban-board-guide.md](kanban-board-guide.md) § Formatting Governance / **E07:S01:T09** / UXR-005)
 
 ## Files
 

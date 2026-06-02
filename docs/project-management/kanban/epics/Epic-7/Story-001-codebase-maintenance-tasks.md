@@ -30,7 +30,7 @@ housekeeping_policy: keep
 - [x] **E07:S01:T06 – Implement Update Changelog Workflow (UCW)** - ✅ COMPLETE (v0.7.1.7+4 – FR-057 / CMW scope; board hygiene 2026-05-29) - [Task Document](Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md) | [FR-057](../../fr-br/FR-057-update-changelog-workflow.md)
 - [ ] **E07:S01:T07 – Markdown Maintenance Workflow (MMW)** - TODO (v0.7.1.6+2 – FR-058 defines workflow for resolving markdown lint blockers and coordinating perpetual maintenance cycles)
 - [ ] **E07:S01:T08 – Task Doc Naming Standardization** - IN PROGRESS (v0.7.1.6+2 – Establishes `EddSddTdd-[title].md` canonical naming and migration plan)
-- [ ] **E07:S01:T09 – Kanban Template Governance & UXR Ownership** - TODO (v0.7.1.9+3 – UXR-005 **Implementing Task** in UXR doc; UXR-005 ACs still open — see task doc)
+- [x] **E07:S01:T09 – Kanban Template Governance & UXR Ownership** - ✅ COMPLETE (v0.7.1.9+5 — UXR-005 spacing validator + corpus; see task doc)
 - [ ] **E07:S01:T10 – Project Root Hygiene and Legacy Docs Rationalization** - TODO (UXR-013 intake filed; IPW pending before implementation)
 - [x] **E07:S01:T11 – Consolidate governance under `docs/governance/` (FR-101)** - ✅ COMPLETE (v0.7.1.11+8 — Waves 0–F; ADR-007) - [Task Document](Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) | [IPP](../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md) | [FR-101](../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 

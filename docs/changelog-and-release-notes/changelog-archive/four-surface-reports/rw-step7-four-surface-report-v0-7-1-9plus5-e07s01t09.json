@@ -1,0 +1,43 @@
+{
+  "release_scope": {
+    "epic": 7,
+    "story": 1,
+    "task": 9,
+    "task_id": "E07:S01:T09",
+    "version_string": "v0.7.1.9+5"
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md",
+        "docs/project-management/kanban/kanban-completed.md"
+      ]
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md",
+        "docs/project-management/kanban/fbu-completed.md"
+      ]
+    }
+  },
+  "stamp_evidence": {
+    "evidence_mode": "structure_prune_and_spacing",
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 0
+  }
+}

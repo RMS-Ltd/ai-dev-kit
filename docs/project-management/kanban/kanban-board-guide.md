@@ -132,8 +132,11 @@ Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly
 ```
 
 - **Primary (boards):** Use the mapping in [UXR-012](fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md) (Set A). **Fallback (Set B)** is for plain-text exports only — do not mix Set B into repo board rows by default.
+
 - **Hygiene / UKW bookkeeping:** Do not change icons on STRUCTURE-only passes (same class as FR-097 stamp preservation). Update icons only when the **status word** changes substantively.
+
 - **Automation:** `state_icons.py`, `backfill_board_state_icons.py`, and `validate_kanban_state_icons.py` (Gate 9 in `validate_release_readiness.py`). Operator notes: [`state-icons.md`](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md).
+
 
 ### E/S/T inline notation (UXR-014 / E04:S19:T09)
 
@@ -190,7 +193,22 @@ The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:
 - If a release reveals formatting drift, escalate through T09 (Kanban Template Governance) before touching other boards.
 - RW/UKW/MMW agents should log evidence (MMW log + validator output) showing the rule was checked or restored.
 
-Future validator support is tracked in the documentation validator script (`scripts/documentation/validate-documentation-consistency.py`, TODO tagged with E07:S01:T09). Until automation lands, treat spacing verification as part of RW Step 7/8 reviews.
+**Validator:** `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_moscow_spacing.py` (also delegated from `scripts/documentation/validate-documentation-consistency.py` with `--check moscow_spacing`). Release Readiness **Gate 10** (warn, non-blocking).
+
+**Example (before — invalid):**
+
+```markdown
+- **E02:S01:T01** – First long MoSCOW row … | [Task](…) | Last modified: …
+- **E02:S01:T02** – Second long MoSCOW row … | [Task](…) | Last modified: …
+```
+
+**Example (after — valid):**
+
+```markdown
+- **E02:S01:T01** – First long MoSCOW row … | [Task](…) | Last modified: …
+
+- **E02:S01:T02** – Second long MoSCOW row … | [Task](…) | Last modified: …
+```
 
 ---
 

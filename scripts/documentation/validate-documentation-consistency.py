@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Dict, List, Set, Optional
 from collections import defaultdict
 
-# TODO(E7:S01:T09): add multi-line MoSCOW spacing detection for Kanban docs once rule is automated.
+# MoSCOW spacing (UXR-005 / E07:S01:T09): delegated to validate_kanban_moscow_spacing.py
 # Version pattern
 VERSION_PATTERN = re.compile(r'v?(\d+\.\d+\.\d+(?:\+\d+)?)')
 
@@ -273,7 +273,44 @@ def validate_consistency(doc_path: Path, repo_root: Path, check_types: List[str]
         term_results = check_terminology_consistency(files, repo_root)
         results['checks'].append(term_results)
         results['summary']['total_inconsistencies'] += len(term_results['inconsistencies'])
-    
+
+    if 'moscow_spacing' in check_types or 'all' in check_types:
+        spacing_results = check_moscow_spacing(repo_root)
+        results['checks'].append(spacing_results)
+        results['summary']['total_inconsistencies'] += spacing_results.get('violation_count', 0)
+
+    return results
+
+
+def check_moscow_spacing(repo_root: Path) -> Dict:
+    """Delegate to workflow mgt MoSCOW spacing validator (UXR-005)."""
+    val_script = (
+        repo_root
+        / "packages/frameworks/workflow mgt/scripts/validation/validate_kanban_moscow_spacing.py"
+    )
+    results: Dict = {
+        'check': 'moscow_spacing',
+        'violations': [],
+        'violation_count': 0,
+    }
+    if not val_script.exists():
+        results['note'] = 'validate_kanban_moscow_spacing.py not found'
+        return results
+    import subprocess
+
+    proc = subprocess.run(
+        [sys.executable, str(val_script), '--project-root', str(repo_root)],
+        capture_output=True,
+        text=True,
+    )
+    if proc.returncode == 0:
+        return results
+    for line in proc.stdout.splitlines():
+        if line.strip().startswith('validate_kanban_moscow_spacing'):
+            continue
+        if line.strip():
+            results['violations'].append(line.strip())
+    results['violation_count'] = len(results['violations'])
     return results
 
 
@@ -291,7 +328,7 @@ def main():
         type=str,
         nargs='+',
         default=['all'],
-        choices=['version', 'cross_reference', 'terminology', 'all'],
+        choices=['version', 'cross_reference', 'terminology', 'moscow_spacing', 'all'],
         help='Type of consistency check to perform (default: all)'
     )
     parser.add_argument(

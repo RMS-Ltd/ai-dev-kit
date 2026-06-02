@@ -60,6 +60,7 @@ The validator runs nine independent gates and aggregates their verdicts:
             `Last modified` stamp; default threshold 10).
 
     Gate 9  MoSCOW state icons (UXR-012 / E4:S13:T07)
+    Gate 10 MoSCOW multi-line spacing (UXR-005 / E07:S01:T09) — non-blocking (warn)
             (every parseable MoSCOW row on `kboard.md` / `fbuboard.md`
             carries the canonical Set A emoji before its status token).
 
@@ -1224,6 +1225,53 @@ def gate_9_state_icons(project_root: Path) -> GateVerdict:
 
 
 # --------------------------------------------------------------------------- #
+# Gate 10: MoSCOW multi-line spacing (UXR-005 / E07:S01:T09) — advisory
+# --------------------------------------------------------------------------- #
+
+
+def gate_10_moscow_spacing(project_root: Path) -> GateVerdict:
+    """Advisory: multi-line MoSCOW bullets must be separated by a blank line."""
+    findings: List[str] = []
+    evidence: Dict[str, Any] = {}
+    val_dir = project_root / "packages/frameworks/workflow mgt/scripts/validation"
+    if str(val_dir) not in sys.path:
+        sys.path.insert(0, str(val_dir))
+    try:
+        from validate_kanban_moscow_spacing import default_board_paths, check_spacing_file
+    except ImportError as exc:
+        return GateVerdict(
+            gate_id=10,
+            name="MoSCOW spacing (UXR-005)",
+            passed=False,
+            severity="warn",
+            summary=f"Cannot import spacing validator: {exc}",
+            findings=[str(exc)],
+            evidence=evidence,
+        )
+
+    for path in default_board_paths(project_root):
+        if path.exists():
+            for v in check_spacing_file(path):
+                findings.append(f"{v.path}:{v.line_after}: {v.message}")
+    ok = not findings
+    evidence["violation_count"] = len(findings)
+    summary = (
+        "MoSCOW multi-line spacing rule satisfied on active boards."
+        if ok
+        else f"{len(findings)} spacing violation(s); run validate_kanban_moscow_spacing.py --fix"
+    )
+    return GateVerdict(
+        gate_id=10,
+        name="MoSCOW spacing (UXR-005)",
+        passed=ok,
+        severity="warn",
+        summary=summary,
+        findings=findings[:20],
+        evidence=evidence,
+    )
+
+
+# --------------------------------------------------------------------------- #
 # Orchestration
 # --------------------------------------------------------------------------- #
 
@@ -1238,6 +1286,7 @@ GATE_FUNCS: Tuple[Tuple[int, str, Callable[..., GateVerdict]], ...] = (
     (7, "foursurface", gate_7_four_surface_parity),
     (8, "homogeneity", gate_8_stamp_homogeneity),
     (9, "state_icons", gate_9_state_icons),
+    (10, "moscow_spacing", gate_10_moscow_spacing),
 )
 
 

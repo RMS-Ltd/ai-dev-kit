@@ -20,6 +20,10 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **Epic 7: Codebase Maintenance (Story 1 — maintenance tasks)**
+- **[E07:S01:T09](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)** — UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10.
+  **Completed:** `2026-06-01T18:00:00Z` | **Version:** `v0.7.1.9+5` | **Agent:** `IPW` | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | [IPP-E07S01T09](../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md) | [log](../../maintenance/logs/uxr-005-spacing-20260601.md)
+
 #### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR abstract governance)**
 - **[E04:S19:T08](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)** — FR-072 Approach D D2–D4; ADR-014; merged T07/FR-021 supersession.
   **Completed:** `2026-06-01T18:40:00Z` | **Version:** `v0.4.19.8+2` | **Agent:** `RW` | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) | [IPP-E04S19T08](../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
@@ -390,13 +394,6 @@ housekeeping_policy: keep
 
 ---
 
-#### **Epic 7: Codebase Maintenance and Review**
-- **[E07:S01:T09](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)** – Kanban Template Governance & UXR Ownership  
-  **Completed:** `2026-03-16T17:45:00Z` | **Version:** `v0.7.1.9+4` | **Agent:** `RW Agent`
-
-
----
-
 ### 📅 Recent Completions (Yesterday - 2026-03-11)
 
 #### **Epic 6: Framework Management and Maintenance**
@@ -740,7 +737,7 @@ This document tracks all **completed tasks** across the AI Dev Kit project. Task
 - **E07:S01:T06** – Implement Update Changelog Workflow (UCW) - ✅ COMPLETE (v0.7.1.7+4)
 - **E07:S01:T07** – Markdown Maintenance Workflow (MMW) - ✅ COMPLETE (v0.7.1.7+4)
 - **E07:S01:T08** – Task Doc Naming Standardization - ✅ COMPLETE (v0.7.1.8+4)
-- **E07:S01:T09** – Kanban Template Governance & UXR Ownership - ✅ COMPLETE (v0.7.1.9+4)
+- **E07:S01:T09** – Kanban Template Governance & UXR Ownership - ✅ COMPLETE (v0.7.1.9+5 — UXR-005 spacing validator)
 - **E07:S01:T10** – Enhanced Workflow Logging System Implementation - ✅ COMPLETE (v0.7.1.10+1, 2026-03-17T12:00:00Z)
 
 #### Story 002: Code Review Standards and Processes ✅ COMPLETE
