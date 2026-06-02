@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-14  
 **Completed:** 2026-04-27 (T01–T07); reopened 2026-05-20 for stamp forensic recovery  
-**Last updated:** 2026-05-20 (FR-097 intake — E02:S15:T08)
+**Last updated:** 2026-06-02 (E02:S15:T01 Phase 2 released **v0.2.15.1+2**)
 **Version:** v0.2.15.7+9
 **Code:** E2S15
 

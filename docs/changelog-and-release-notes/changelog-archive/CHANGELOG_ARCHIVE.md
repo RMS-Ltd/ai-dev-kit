@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.7.1.9+5] - 02-06-26
+
+E07:S01:T09 — UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10. SemVer **v0.4.845+5**.
+
+[Detailed changelog](CHANGELOG_v0.7.1.9+5.md)
+---
 ## [0.2.16.4+21] - 30-05-26
 
 E02:S16:T04 — UKW `-c` kboard prune. SemVer **v0.4.840+21**.

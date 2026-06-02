@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-02 (RW **E07:S01:T09** — UXR-005 spacing **v0.7.1.9+5**)
-**Version:** v0.7.1.9+5 (**SemVer** v0.4.845+5)
+**Last Updated:** 2026-06-02 (RW **E02:S15:T01** — BR-066 Phase 2 **v0.2.15.1+2**)
+**Version:** v0.2.15.1+2 (**SemVer** v0.4.786+2)
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -35,7 +35,7 @@ housekeeping_policy: keep
 - **E02:S16:T13** – BR-059: UKW MoSCOW full open-task coverage per in-progress story - 📋 TODO (HIGH, re-housed from `E06:S07:T109`, FR-087 Wave 4) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Last modified: 2026-05-30 13:32 UTC
 
 
-- **E02:S15:T01** – BR-066: IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, contract **COMPLETE**; historical backfill remains) | [Task](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | Last modified: 2026-04-14 00:00 UTC
+- **E02:S15:T01** – BR-066: IPW publication wiring Phase 2 - ✅ COMPLETE (**v0.2.15.1+2**; bulk audit + inventory sample backfill; BR-066 remains OPEN for corpus tail) | [Task](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md) | Last modified: 2026-06-02 12:49 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 

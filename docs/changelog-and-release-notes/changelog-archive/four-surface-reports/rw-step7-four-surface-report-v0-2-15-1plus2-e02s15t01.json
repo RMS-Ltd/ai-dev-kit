@@ -1,0 +1,42 @@
+{
+  "release_scope": {
+    "epic": 2,
+    "story": 15,
+    "task": 1,
+    "task_id": "E02:S15:T01",
+    "version_string": "v0.2.15.1+2"
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ]
+    }
+  },
+  "stamp_evidence": {
+    "evidence_mode": "rw_scoped_reconciliation",
+    "backfill_report": "rw-step7-backfill-report-v0-2-15-1plus2-e02s15t01.json",
+    "stamps_appended_with_evidence": 2,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 0
+  }
+}

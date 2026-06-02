@@ -1,0 +1,17 @@
+{
+  "report_type": "rw_step7_backfill",
+  "task": "E02:S15:T01",
+  "version": "0.2.15.1+2",
+  "generated_at": "2026-06-02T12:49:39Z",
+  "evidence_mode": "rw_scoped_reconciliation",
+  "rows": {
+    "E02:S15:T01": {
+      "allowed": true,
+      "reason": "RW v0.2.15.1+2: kboard row updated for Phase 2 COMPLETE"
+    },
+    "BR-066": {
+      "allowed": true,
+      "reason": "RW v0.2.15.1+2: fbuboard row updated with IPP link and Phase 2 note"
+    }
+  }
+}

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** HIGH - planning/spec artifacts are assumed published but are not discoverable in the Docusaurus documentation system.  
 **Created:** 2026-04-14  
-**Last updated:** 2026-04-14 (v0.2.15.1+1 – publication contract/validator/backfill inventory shipped under E02:S15:T01)  
-**Version:** v0.2.15.1+1  
+**Last updated:** 2026-06-02 (E02:S15:T01 Phase 2 — bulk audit, targeted backfill, expanded tests; see [IPP-E02S15T01-br066-publication-backfill-phase2.md](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md))  
+**Version:** v0.2.15.1+2  
 **Code:** BR-066  
 **Implementing Task:** [E02:S15:T01](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
 

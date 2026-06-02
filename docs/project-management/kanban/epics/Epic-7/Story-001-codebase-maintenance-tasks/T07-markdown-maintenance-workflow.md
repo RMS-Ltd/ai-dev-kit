@@ -2,11 +2,17 @@
 
 **Epic:** E7 – Codebase Maintenance and Review  
 **Story:** S01 – Codebase Maintenance Tasks  
-**Task ID:** T07  
+**Task ID:** E07:S01:T07  
 **Related FR:** FR-058 Markdown Maintenance Workflow  
 **Priority:** HIGH
 
 ---
+
+## Planning artifacts (publication)
+
+- [ICW E07:S01:T07 specification](../../../../../implementation-cycles/ICW-E7S01T07-specification.md)
+- [ICW E07:S01:T07 test design](../../../../../implementation-cycles/ICW-E7S01T07-test-design.md)
+- [ICW E07:S01:T07 implementation plan](../../../../../implementation-cycles/ICW-E7S01T07-implementation-plan.md)
 
 ## Summary
 

@@ -43,7 +43,9 @@ This task:
 
 - **FR-046:** [`FR-046-rw-semver-tag-task-touch-mode.md`](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
 - **FR-045:** ADR-002 Task-Touch Derived Mapping (prerequisite).
-- **IPP (closure wave):** [`IPP-E05S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E05S01T46-fr046-closure-wave.md)
+- **IPP (closure wave):** [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
+- [ICW E05:S01:T46 specification](../../../../../implementation-cycles/ICW-E5S01T46-specification.md)
+- [ICW E05:S01:T46 test design](../../../../../implementation-cycles/ICW-E5S01T46-test-design.md)
 - **Related IPP:** [`IPW-E03S02T12-task-touch-semver-collision-hardening.md`](../../../../../implementation-cycles/IPW-E03S02T12-task-touch-semver-collision-hardening.md) (converter finalize — E03:S02:T12)
 - RW execution guide and `.cursorrules` RW trigger section.
 
@@ -108,7 +110,7 @@ This task:
 
 ### Closure wave audit (2026-05-29)
 
-Full matrix: [`IPP-E05S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E05S01T46-fr046-closure-wave.md) §7.
+Full matrix: [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md) §7.
 
 - `pytest test_validate_branch_context.py -q` → **7 passed** (RF1, RNF1, AC2)
 - `pytest test_fr046_rw_tagging.py test_fr046_comprehensive.py test_task_touch_mapping.py -q` → **24 passed** (RF2–RF3, AC2)
@@ -133,7 +135,7 @@ Full matrix: [`IPP-E05S01T46-fr046-closure-wave.md`](../../../../../implementati
 
 ## References
 
-- **IPP (closure):** [`IPP-E05S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E05S01T46-fr046-closure-wave.md)
+- **IPP (closure):** [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
 - **FR Repo Story:** [`Story-001-fr-repo.md`](../Story-001-fr-repo.md)
 - **FR-046:** [`docs/project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
 - **Superseded duplicate:** [`E02:S13:T07`](../../Epic-2/Story-013-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)

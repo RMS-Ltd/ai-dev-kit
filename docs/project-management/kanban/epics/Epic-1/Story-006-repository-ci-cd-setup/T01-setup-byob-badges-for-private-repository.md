@@ -22,9 +22,14 @@ housekeeping_policy: keep
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}` (e.g., `E01:S06:T01`)
 
-**Full Task ID:** `E01:S06:T01`
+**Full Task ID:** `E01:S06:T01`  
+**Task ID:** E01:S06:T01
 
 ---
+
+## Planning artifacts (publication)
+
+- [ICW E01:S06:T01 specification](../../../../../implementation-cycles/ICW-E1S06T01-specification.md)
 
 ## Scope
 

@@ -25,6 +25,10 @@ Canonical implementing task is **[E02:S01:T23](../../../Epic-2/Story-001-rw-agen
 
 ---
 
+## Planning artifacts (publication)
+
+- [ICW E06:S07:T18 specification](../../../../../implementation-cycles/ICW-E6S07T18-specification.md)
+
 ## References
 
 - [E02:S01:T23 (successor)](../../../Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)

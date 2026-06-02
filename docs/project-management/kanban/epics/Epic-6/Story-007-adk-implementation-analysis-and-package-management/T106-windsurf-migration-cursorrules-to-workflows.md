@@ -26,6 +26,7 @@ Interpret existing .cursorrules content and map key policies/workflows to Windsu
 
 ## Inputs
 
+- [ICW E06:S07:T106 specification](../../../../../implementation-cycles/ICW-E6S07T106-specification.md)
 - Current .cursorrules file content and structure
 - Windsurf/Cascade capabilities and limitations
 - Workflow definitions from cursorrules-rw-trigger-section.md

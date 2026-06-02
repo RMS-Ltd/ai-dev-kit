@@ -45,6 +45,12 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ### E08:S04:T01 – Establish expectations baseline for Tooling & Automation package {#E08S04T01--establish-expectations-baseline-for-tooling--automation-package}
 
+**Task ID:** E08:S04:T01
+
+**Planning artifacts (publication):**
+
+- [ICW E08:S04:T01 specification](../../../../implementation-cycles/ICW-E8S04T01-specification.md)
+
 **Input:** Package README, validators, and generator docs  
 **Deliverable:** Expectations baseline document  
 **Approach:** Extract expected behaviors for tooling and validators.

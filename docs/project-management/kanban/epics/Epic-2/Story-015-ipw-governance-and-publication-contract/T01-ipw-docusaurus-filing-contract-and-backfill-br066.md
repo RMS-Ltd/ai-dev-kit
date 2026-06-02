@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-04-14  
-**Last updated:** 2026-05-16 (v0.2.15.1+2 – FR-042 Step 5 documentation deliverables added to IPW sequence)  
-**Version:** v0.2.15.1+1  
-**Version Anchor:** v0.2.15.1+1  
+**Last updated:** 2026-06-02 (v0.2.15.1+2 — Phase 2 released: bulk audit, backfill, validator hardening)  
+**Version:** v0.2.15.1+2  
+**Version Anchor:** v0.2.15.1+2  
 **Code:** E02S15T01
 
 ---
@@ -30,6 +30,7 @@ Investigate and harden IPW behavior so planning/spec artifacts expected to be di
 - [BR-066](../../../fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
 - [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [IPP E02:S15:T01 Phase 2 (BR-066 backfill)](../../../../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md)
 - `docs/implementation-cycles/`
 - `portal/` documentation surfaces and navigation wiring
 
@@ -50,26 +51,31 @@ Investigate and harden IPW behavior so planning/spec artifacts expected to be di
 - [x] At least one deterministic validation or audit path detects missing filing when applicable.
 - [x] Backlog inventory identifies historical IPW artifacts that should be filed.
 - [x] Guidance includes explicit "not applicable" path where filing is intentionally skipped.
+- [x] Phase 2: bulk `--audit-inventory` mode, expanded tests, and inventory backlog wired from host task docs.
 
 ---
 
 ## Documentation Publication
 
-Publication Status: PUBLISHED
+Publication Status: PUBLISHED  
 Publication N/A Reason: N/A
 
 ## Links
 
 - [BR-066](../../../fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
 - [Story E2:S15](../Story-015-ipw-governance-and-publication-contract.md)
-- [ICW E02:S15:T01 specification](../../../../../implementation-cycles/ICW-E02S15T01-specification.md)
-- [ICW E02:S15:T01 test design](../../../../../implementation-cycles/ICW-E02S15T01-test-design.md)
-- [ICW E02:S15:T01 implementation plan](../../../../../implementation-cycles/ICW-E02S15T01-implementation-plan.md)
+- [ICW E02:S15:T01 specification](../../../../../implementation-cycles/ICW-E2S15T01-specification.md)
+- [ICW E02:S15:T01 test design](../../../../../implementation-cycles/ICW-E2S15T01-test-design.md)
+- [ICW E02:S15:T01 implementation plan](../../../../../implementation-cycles/ICW-E2S15T01-implementation-plan.md)
+- [IPP E02:S15:T01 Phase 2 (BR-066)](../../../../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md)
 - [IPW publication backfill inventory](../../../../../implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md)
-
 
 ## Verification Evidence
 
-- Added validator: `packages/frameworks/workflow mgt/scripts/validation/validate_ipw_publication_wiring.py`.
-- Added tests: `packages/frameworks/workflow mgt/scripts/validation/test_validate_ipw_publication_wiring.py`.
-- Wired this task to `docs/implementation-cycles/ICW-E02S15T01-*` planning package.
+- Phase 1: `validate_ipw_publication_wiring.py` + `test_validate_ipw_publication_wiring.py` (4 tests).
+- Phase 2 (2026-06-02):
+  - Validator: `--audit-inventory`, disk-aware required kinds, `IPP-*` as implementation-plan.
+  - Tests: 9 passing (`test_validate_ipw_publication_wiring.py`).
+  - `python ".../validate_ipw_publication_wiring.py" --requested E02:S15:T01` → **PASS**
+  - `python ".../validate_ipw_publication_wiring.py" --audit-inventory` → see inventory doc for post-backfill unwired count.
+  - Targeted backfill: 16 historical inventory rows wired from host task docs / story anchors (see [IPW-PUBLICATION-BACKFILL-INVENTORY.md](../../../../../implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md)).

@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.7.1.9+5] - 02-06-26
+## [0.2.15.1+2] - 02-06-26
 
-E07:S01:T09 — UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10. SemVer **v0.4.845+5**.
+E02:S15:T01 — BR-066 Phase 2: publication wiring bulk audit, validator hardening, targeted backfill, IPP. SemVer **v0.4.786+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.9+5.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.1+2.md)
 
 ---

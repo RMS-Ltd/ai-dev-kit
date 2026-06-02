@@ -53,6 +53,13 @@ Enhance the Task Template (`TASK_TEMPLATE.md`) to include an explicit "Cross-Wir
 ## Input
 
 - **FR-035:** [`FR-035-task-template-cross-wiring-section.md`](../../../fr-br/FR-035-task-template-cross-wiring-section.md)
+
+## Planning artifacts (publication)
+
+- [ICW E05:S01:T35 specification](../../../../../implementation-cycles/ICW-E5S01T35-specification.md)
+- [ICW E05:S01:T35 test design](../../../../../implementation-cycles/ICW-E5S01T35-test-design.md)
+- [ICW E05:S01:T35 implementation plan](../../../../../implementation-cycles/ICW-E5S01T35-implementation-plan.md)
+- [ICW E05:S01:T35 package summary](../../../../../implementation-cycles/ICW-E5S01T35-package-summary.md)
 - **IPW Plan:** [`IPP-E05S01T35-task-template-cross-wiring.md`](../../../../../../.claude/plans/e5-s01-t35-task-template-cross-wiring.md) — Implementation plan for this task (FR-042)
 - **SoP:** [`task-template-cross-wiring-sop.md`](../../../../../architecture/standards-and-adrs/task-template-cross-wiring-sop.md) - Standard Operating Procedure for cross-wiring tasks
 - **Task Template:** `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`

@@ -45,6 +45,12 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ### E11:S01:T01 – Establish expectations baseline for Debug Path package {#E11S01T01--establish-expectations-baseline-for-debug-path-package}
 
+**Task ID:** E11:S01:T01
+
+**Planning artifacts (publication):**
+
+- [ICW E11:S01:T01 specification](../../../../implementation-cycles/ICW-E11S01T01-specification.md)
+
 **Input:** Package README, methodology, and integration guides  
 **Deliverable:** Expectations baseline document  
 **Approach:** Extract expected behaviors and usage patterns.

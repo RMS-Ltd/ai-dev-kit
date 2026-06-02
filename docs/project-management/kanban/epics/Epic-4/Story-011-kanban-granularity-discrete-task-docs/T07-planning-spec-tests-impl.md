@@ -1,11 +1,16 @@
 # E04:S11:T07 – Planning: Spec, Tests, Implementation Plan
 
+**Task ID:** E04:S11:T07  
 **Task:** Migrate Embedded Tasks to Discrete Task Documents  
 **Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)  
 **Status:** TODO  
 **Planning doc created:** 2026-02-22
 
 ---
+
+## Planning artifacts (publication)
+
+- [ICW E04:S11:T07 specification](../../../../../implementation-cycles/ICW-E4S11T07-specification.md)
 
 ## 1. Specification
 

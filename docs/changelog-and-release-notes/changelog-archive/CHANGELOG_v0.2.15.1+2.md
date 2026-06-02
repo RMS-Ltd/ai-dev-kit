@@ -1,51 +1,40 @@
-# Changelog v0.2.15.1+2
+# Changelog — v0.2.15.1+2
 
-**Release Date:** 2026-05-16
-**Internal Version:** 0.2.15.1+2
-**SemVer:** 0.4.786+2
-**Epic:** E2 — Workflow Management Framework
-**Story:** S15 — IPW Governance and Publication Contract
-**Task:** T01 — IPW Docusaurus Filing Contract and Backfill (BR-066)
+**Release Date:** 2026-06-02 12:49:39 UTC  
+**Epic:** 2 | **Story:** 15 | **Task:** 1  
+**SemVer:** v0.4.786+2  
+**Summary:** BR-066 Phase 2 — publication wiring audit, validator hardening, targeted backfill
 
 ---
 
 ## Summary
 
-FR-042 updated: Added Step 5 (Identify Required Documentation) to the IPW sequence, ensuring documentation deliverables are planned after implementation planning but before the plan doc is created.
+Change implemented: **E02:S15:T01** follow-up for **BR-066** — `--audit-inventory` on `validate_ipw_publication_wiring.py`, disk-aware / IPP-as-plan checks, expanded pytest suite, **IPP-E02S15T01-br066-publication-backfill-phase2.md**, and targeted task-doc wiring for the Phase 1 inventory sample (109 scanned → 28 unwired in full corpus audit).
 
 ---
 
-## Changes
+## Added
 
-### FR-042 — Implementation Planning Workflow (IPW)
-
-- **IPW Step Sequence** (Section 2. Formalized IPW Steps):
-  - Added **Step 5: Identify Required Documentation** after Step 4 (Plan Implementation)
-  - Step determines what documentation must be produced (user docs, API docs, runbooks, Docusaurus articles, README updates) based on requirements, spec, tests, and planned implementation
-  - Documentation deliverables recorded as part of the Implementation Plan
-  - Renumbered downstream steps: Create Plan Doc → Step 6, Wire to Host Task → Step 7, Validate → Step 8
-
-- **Plan Doc Template** (Section 3):
-  - Implementation Plan section now explicitly includes **Documentation Deliverables** (derived from Step 5)
-
-- **Implementation Cycle Integration** (Section 5):
-  - Step 4 (Implementation) now references "Plan doc Impl Plan (including documentation deliverables) guides this"
-
-- **Last Updated** bumped to 2026-05-16 with change summary
+- [`IPP-E02S15T01-br066-publication-backfill-phase2.md`](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md) — consolidated Phase 2 IPP
+- Validator `--audit-inventory` and EST+kind alias matching in bulk audit
+- Five additional tests in `test_validate_ipw_publication_wiring.py` (9 total)
 
 ---
 
-## Verification
+## Changed
 
-- [x] FR-042 step table updated with 8 steps (was 7)
-- [x] Plan doc template references documentation deliverables
-- [x] Implementation Cycle integration table updated
-- [x] Last updated date and change summary added
+- [`validate_ipw_publication_wiring.py`](../../packages/frameworks/workflow%20mgt/scripts/validation/validate_ipw_publication_wiring.py) — partial on-disk packages, `IPP-*` as implementation-plan, richer diagnostics
+- [`IPW-PUBLICATION-BACKFILL-INVENTORY.md`](../../implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md) — Phase 2 backfill table and audit counts
+- Host task docs / story anchors for Phase 1 inventory sample (E5:S01:T35/T46, E7:S01:T07, E1:S06:T01, E4:S11:T07, E6:S07:T106/T18, E8/E10/E11 package-review T01 anchors)
+- **T01**, **BR-066** — verification and cross-links
 
 ---
 
-## References
+## RW Step 7 — four-surface reconciliation
 
-- Task: [E2:S15:T01](../../../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
-- FR-042: [FR-042](../../../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- BR-066: [BR-066](../../../project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
+| Surface | Action |
+| ------- | ------ |
+| Task **E02:S15:T01** | Version **v0.2.15.1+2**; COMPLETE; Phase 2 evidence |
+| **BR-066** | OPEN; Phase 2 slice noted; IPP linked |
+| `kboard.md` | **E02:S15:T01** row — Phase 2 release note |
+| `fbuboard.md` | **BR-066** row — IPP link; Phase 2 note |

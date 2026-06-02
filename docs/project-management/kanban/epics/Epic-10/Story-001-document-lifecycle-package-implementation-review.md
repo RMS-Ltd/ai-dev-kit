@@ -45,6 +45,12 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ### E10:S01:T01 – Establish expectations baseline for Document Lifecycle package {#E10S01T01--establish-expectations-baseline-for-document-lifecycle-package}
 
+**Task ID:** E10:S01:T01
+
+**Planning artifacts (publication):**
+
+- [ICW E10:S01:T01 specification](../../../../implementation-cycles/ICW-E10S01T01-specification.md)
+
 **Input:** Package README, policies, and implementation guides  
 **Deliverable:** Expectations baseline document  
 **Approach:** Extract expected lifecycle behavior and metadata requirements.
