@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
 VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
 VERSION_TASK = 3      # Task 3 — Workflow maintenance (Perpetual); Tranche 3B ACTIVE_FIX
-VERSION_BUILD = 4     # Build 4: IPP-E2S16T02 reference map applied; AC4 complete
+VERSION_BUILD = 5     # Build 5: T13 SitRep IPP + BR-059 E10:S01 MoSCOW remediation
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.3+4
+# Current: 0.2.16.3+5

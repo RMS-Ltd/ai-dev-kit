@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-03 (RW **v0.2.16.3+4** — Tranche 3B ACTIVE_FIX; AC4 complete)  
-**Version anchor:** v0.2.16.3+4
+**Last updated:** 2026-06-03 (RW **v0.2.16.3+5** — BR-059 SitRep + E10:S01 MoSCOW remediation)  
+**Version anchor:** v0.2.16.3+5
 **Code:** E02S16T03
 **Task Type:** Perpetual Maintenance
 
@@ -82,6 +82,11 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 - **T02:** COMPLETE — [IPP-E2S16T02](../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) published (`v0.2.16.2+2`).
 - **T03:** Tranche 3B ACTIVE_FIX applied; AC4 satisfied.
 - **Board:** `fbuboard.md` BR-067 row synced to **RESOLVED** (Step 7 drift fix).
+
+### BR-059 follow-up — SitRep + E10:S01 remediation (2026-06-03) ✅
+- **SitRep:** [IPP-E02S16T13](../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md) §7 reconciled; closure options A–D documented.
+- **Option B (partial):** `kboard.md` — **E10:S01:T01–T06** added to Could Have (`validate_story_moscow_coverage.py --story E10:S01` → **PASS**).
+- **BR-059:** remains **OPEN** (process + partial corpus fix; user verification for RESOLVED).
 
 ### Tranche 2 — BR-067 Wave A (2026-05-30) ✅
 - **Policy table:** BUILD +0/+1/`--doc-policy-zero` rules published in [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md).

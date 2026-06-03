@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Host Task:** [`T13-br059-ukw-moscow-full-story-task-coverage.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) **(E02:S16:T13)**  
 **Planning for:** [BR-059 — UKW MoSCOW incomplete story task coverage](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)  
 **Historical anchor:** [E06:S07:T109](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) (SUPERSEDED, `v0.6.7.109+1`)  
-**Status:** Approved for implementation
+**Status:** Published (implementation complete **v0.2.16.13+1**; SitRep IPW **2026-06-03**)
 
 ---
 
@@ -62,8 +62,9 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 
 ### 2.3 Status transition intent
 
-- **Step 1:** `E02:S16:T13` **TODO → IN PROGRESS** before implementation edits.
-- **Final step:** **COMPLETE** when AC1–AC3 evidenced; **BR-059** may remain **OPEN** if only process/validator shipped (corpus of historical gaps not claimed closed).
+- **Step 1 (original IPW):** `E02:S16:T13` **TODO → IN PROGRESS** before implementation edits — **done** (`v0.2.16.13+1`).
+- **Final step:** **COMPLETE** when AC1–AC3 evidenced — **done**; **BR-059** remains **OPEN** (process/validator only; historical gap corpus not re-audited).
+- **SitRep IPW (2026-06-03):** Host stays **COMPLETE**; no `TODO → IN PROGRESS` on T13; IPP §7 reconciliation only.
 
 ### 2.4 ADR necessity decision (FR-100)
 
@@ -138,11 +139,34 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 
 ## 7. Success / verification criteria
 
-- [ ] AC1: UKW guides contain explicit all-open-tasks-or-Won't rule; BR-059 Resolution links guides.
-- [ ] AC2: Dry-run log for **E10:S01** (or E5:S09 narrative + script) in T13 verification.
-- [ ] AC3: **E02:S16:T04** references BR-059 enumeration rule.
-- [ ] `pytest` passes for `test_validate_story_moscow_coverage.py`.
-- [ ] `validate_ipw_publication_wiring.py --requested E02:S16:T13` → PASS (NOT_APPLICABLE).
+- [x] **AC1:** UKW guides contain explicit all-open-tasks-or-Won't rule — [`.cursorrules`](../../.cursorrules) UKW Step 6 Part B.1; [BR-059 Resolution](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) links guides.
+- [x] **AC2:** Dry-run log for **E10:S01** in [T13 Verification](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md#verification-2026-06-02) (6 open / 0 board); **E05:S09** narrative in BR-059.
+- [x] **AC3:** [E02:S16:T04](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) references BR-059 / Step 6 Part B.1.
+- [x] **`pytest`:** `test_validate_story_moscow_coverage.py` — 5 passed (2026-06-02, T13 verification).
+- [x] **`validate_ipw_publication_wiring.py --requested E02:S16:T13`** → PASS (`Publication Status: NOT_APPLICABLE` on T13).
+
+### 7.1 SitRep — post-ship posture (2026-06-03)
+
+| Dimension | State |
+| --------- | ----- |
+| **T13** | **COMPLETE** (`v0.2.16.13+1`); no further implementation on this host |
+| **BR-059** | **OPEN** — process/regression tooling shipped; product closure not claimed |
+| **Known gap corpus** | **E10:S01** — 6 open checklist tasks, 0 on `kboard.md` (validator exit 1); **E05:S09** — historical (manual board fix 2026-03-30; story checklist now all COMPLETE) |
+| **Validator role** | Advisory (non-blocking RW); optional hook during UKW Step 6 Part B.1 |
+| **IPP drift fixed** | §7 checkboxes reconciled with T13/BR-059 on SitRep IPW |
+
+### 7.2 BR-059 closure options (planning — no selection without user)
+
+| Option | Scope | Host task | RW anchor |
+| ------ | ----- | --------- | --------- |
+| **A — Keep OPEN** | Document known gaps; rely on UKW Part B.1 on next comprehensive UKW | None | None |
+| **B — Board remediation** | UKW `-u` or manual: add missing **E10:S01** (and similar) rows per story checklist | New task under S16 or owning epic (not T13) | New `E:S:T` |
+| **C — Harden validator** | Pre-commit or UKW blocking on `--strict` failures | [E02:S16:T03](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (perpetual) | `RW E02:S16:T03 --art` |
+| **D — Resolve BR** | Mark BR-059 **RESOLVED** after **B** + user verification | Same as B | Same as B |
+
+**Default recommendation:** **Option A** unless explicit board repair (**B**) or enforcement (**C**) is requested.
+
+**Follow-up implemented (2026-06-03):** **Option B (partial)** — added **E10:S01:T01–T06** to `kboard.md` Could Have (stamps `2026-01-18 16:44 UTC` from story `created_at`); SitRep IPP reconciliation shipped on **E02:S16:T03** `v0.2.16.3+5`. Validator `--story E10:S01` expected **PASS** post-remediation. **BR-059** remains **OPEN** until user verifies broader corpus.
 
 ---
 

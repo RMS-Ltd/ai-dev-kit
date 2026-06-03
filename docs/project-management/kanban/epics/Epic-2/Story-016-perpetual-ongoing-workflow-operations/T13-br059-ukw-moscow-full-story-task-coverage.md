@@ -55,6 +55,14 @@ Comprehensive **UKW** can promote **one** task from an in-progress story while t
 - [x] **AC2:** Regression narrative: dry run on **E10:S01** (6 open checklist tasks, 0 on `kboard.md`) — validator exit 1 with full missing-id list (2026-06-02). Historical **E05:S09** pattern documented in BR-059.
 - [x] **AC3:** [E02:S16:T04](T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) perpetual doc references BR-059 / Step 6 Part B.1.
 
+## SitRep (2026-06-03)
+
+IPP reconciliation only (host remains **COMPLETE**). Post-ship posture and BR-059 closure options **A–D** are documented in [IPP-E02S16T13 §7.1–§7.2](../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md#71-sitrep--post-ship-posture-2026-06-03).
+
+**Follow-up (2026-06-03):** Option **B (partial)** executed under **E02:S16:T03** — **E10:S01** MoSCOW rows added on `kboard.md`; validator re-check recorded on T03/BR-059.
+
+---
+
 ## Verification (2026-06-02)
 
 ```text
