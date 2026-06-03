@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-05-30 (RW E06:S07:T107)
-**Version:** v0.6.7.107+3
+**Last Updated:** 2026-06-02 (UKW -c — **E02:S15:T01** ledger refresh)
+**Version:** v0.2.15.1+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 2: Workflow Management Framework (Story 15 — IPW governance and publication contract)**
+- **[E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)** — **BR-066** Phase 2: bulk publication audit, validator hardening, targeted backfill, IPP.
+  **Completed:** `2026-06-02T12:49:39Z` | **Version:** `v0.2.15.1+2` | **Agent:** `UKW -c` | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md)
 
 #### **Epic 7: Codebase Maintenance (Story 1 — maintenance tasks)**
 - **[E07:S01:T09](epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)** — UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10.
@@ -209,8 +213,8 @@ housekeeping_policy: keep
   **Completed:** `2026-04-18T15:23:00Z` | **Version:** `v0.7.6.18+3` | **Agent:** `RW Agent`
 
 #### **Epic 2: Workflow Management Framework (Story 15 — IPW governance and publication contract)**
-- **[E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)** — **BR-066** IPW Docusaurus filing contract, deterministic validator, backfill inventory.  
-  **Completed:** `2026-04-14T16:04:00Z` | **Version:** `v0.2.15.1+1` | **Agent:** `RW Agent`
+- **[E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)** — **BR-066** Phase 2: bulk publication audit, validator hardening, targeted backfill (supersedes Phase 1 ledger line).  
+  **Completed:** `2026-06-02T12:49:39Z` | **Version:** `v0.2.15.1+2` | **Agent:** `RW` / `UKW -c`
 
 #### **Epic 2: Workflow Management Framework (Story 1 — RW agent execution)**
 - **[E02:S01:T13](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T13-rw-k-forensic-task-attribution-alignment-br063.md)** — **BR-063**: `RW -k` task attribution drift — forensic-strict mismatch guard, `--art` adoption path, `validate_version_bump` alignment, `workflow_orchestrator` parsing, regression tests, `.cursorrules` + portable excerpt + RW agent execution doc updates.  

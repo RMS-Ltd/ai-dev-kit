@@ -1,0 +1,16 @@
+{
+  "report_type": "rw_step7_scoped_reconciliation",
+  "release_version": "0.2.16.13+1",
+  "release_scope": "E02:S16:T13",
+  "evidence_mode": "release_scope_stamp_sync",
+  "rows": {
+    "E02:S15:T01": {
+      "allowed": true,
+      "reason": "UKW -c archive (prior session) — terminal row removed from kboard after kanban-completed ledger; bundled in RW E02:S16:T13"
+    },
+    "E02:S16:T13": {
+      "allowed": true,
+      "reason": "RW Step 7 BR-059 release — task row COMPLETE v0.2.16.13+1; stamp synced to release UTC"
+    }
+  }
+}

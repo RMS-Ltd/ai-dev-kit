@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM (board SoT diverges from story checklist; planners lose visibility)  
 **Status:** OPEN  
 **Created:** 2026-03-30  
-**Last updated:** 2026-05-29 — Implementing task re-housed to **E02:S16:T13** (FR-087 Wave 4)  
+**Last updated:** 2026-06-02 — Process fix shipped under **E02:S16:T13** (BR remains OPEN for historical corpus)  
 **Classification:** UKW + Kanban board accuracy
 
 ---
@@ -83,4 +83,4 @@ A **comprehensive UKW** run promoted **E05:S09:T01** to the MoSCOW **Should** se
 
 ## Resolution / current status
 
-- **OPEN** — Board manually corrected to list **E05:S09:T01–T07**; root cause (UKW agent/rules) still to be addressed under this BR.
+- **OPEN** (process fixed; historical gap corpus not re-audited) — **E05:S09** board rows were manually corrected 2026-03-30. **2026-06-02:** [E02:S16:T13](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) shipped **UKW Step 6 Part B.1** (story checklist enumeration) in `.cursorrules`, [cursorrules-ukw-trigger-section.md](../../../packages/frameworks/workflow%20mgt/cursorrules-ukw-trigger-section.md), [update-kanban-workflow-agent-execution.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [ukw/AGENTS.md](../../../packages/frameworks/workflow%20mgt/agents/ukw/AGENTS.md), plus advisory [`validate_story_moscow_coverage.py`](../../../packages/frameworks/workflow%20mgt/scripts/kanban/validate_story_moscow_coverage.py). **IPP:** [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md). **Dry-run:** `--story E10:S01` → 6 open checklist tasks, 0 on `kboard` (exit 1).

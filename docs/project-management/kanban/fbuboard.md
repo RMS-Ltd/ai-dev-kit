@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-02 (RW **E07:S01:T09** — pruned UXR-005 **v0.7.1.9+5**)
-**Version Context:** v0.7.1.9+5 (**SemVer** v0.4.845+5)
+**Last Updated:** 2026-06-02 (UKW **-c** — **E02:S15:T01** pruned from kboard; **BR-066** stays active)
+**Version Context:** v0.2.15.1+2 (**SemVer** v0.4.786+2)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -56,6 +56,8 @@ This board provides **centralized visibility and prioritization** for all open F
 - **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, **E02:S15:T01** Phase 2 **v0.2.15.1+2** shipped; ~28 unwired artifacts remain in corpus audit) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md) | Last modified: 2026-06-02 12:49 UTC
 
 ---
+
+**2026-06-02:** UKW **-c** archived **E02:S15:T01** from [`kboard.md`](kboard.md) Should Have (**v0.2.15.1+2**); **BR-066** row retained (OPEN — corpus tail).
 
 **2026-06-01:** Pruned **UXR-005** (COMPLETE **E07:S01:T09**). See [`fbu-completed.md`](fbu-completed.md).
 

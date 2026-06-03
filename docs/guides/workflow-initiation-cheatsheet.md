@@ -58,7 +58,7 @@ housekeeping_policy: keep
 
 | Invocation | Meaning |
 | ---------- | ------- |
-| `UKW` / `/ukw` | **Comprehensive** — bookkeeping + priorities + gap discovery (Step 2.5) |
+| `UKW` / `/ukw` | **Comprehensive** — bookkeeping + priorities + gap discovery (Step 2.5); Step 6 **Part B.1** enumerates all open story-checklist tasks onto MoSCOW ([BR-059](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)) |
 | `UKW -u` | Bookkeeping only (no MoSCOW reprioritization; no Step 2.5) |
 | `UKW -p` | Update MoSCOW priorities only |
 | `UKW -a E02:S16:T15` | Assign priorities to target(s) only — **not** drift repair |

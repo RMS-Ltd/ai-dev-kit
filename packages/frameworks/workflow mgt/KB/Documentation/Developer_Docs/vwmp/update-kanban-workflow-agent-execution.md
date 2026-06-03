@@ -552,6 +552,11 @@ After completing UKW, users typically run RW to commit the kanban documentation 
      - Update version (if needed)
 
 3. **EXECUTE:**
+   - **Part B.1 — Story checklist enumeration (BR-059; before MoSCOW classification):**
+     - For each story **IN PROGRESS** (or with ≥2 open checklist tasks): extract open tasks from the story checklist; compare to `kboard.md` MoSCOW rows for that story.
+     - Add missing `E:S:T` rows in stable task order, or **Won't Have** with explicit deferral rationale.
+     - Advisory: `python "packages/frameworks/workflow mgt/scripts/kanban/validate_story_moscow_coverage.py" --story E##:S##`.
+     - If gaps remain, Step 9 must include `## Story MoSCOW coverage` (story id, open count, board count, missing ids).
    - **FIRST: Update Epic Sections (WITH NUMERICAL SORTING):**
      - **CRITICAL: Sort epics numerically** (E1, E2, E3, ... E21, E24) before writing to board
        - **Use sorting utility:** Run `python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_board.py"` to automatically sort epics

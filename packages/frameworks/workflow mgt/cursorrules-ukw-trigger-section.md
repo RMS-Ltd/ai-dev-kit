@@ -215,7 +215,13 @@ For each step, follow this pattern:
         - Archive entry format: `**[E#:S#:T##](path/to/task.md)** — [FR/BR ref] [description]; **[FR/BR link](fr-br/...)** STATUS.  **Completed:** \`YYYY-MM-DDTHH:MM:SSZ\` | **Version:** \`vX.X.X.X+N\` | **Agent:** \`UKW\``
      3. Deduplication pass: scan all remaining MoSCOW sections for any task ID that still appears more than once; retain the entry in the highest-priority section (Must Have > Should Have > Could Have > Ongoing > Won't Have) and remove the others
      4. Update `kanban-completed.md` "Last Updated" header with current timestamp and completed task reference(s)
-   - **EXECUTE — Part B: Update MoSCOW priority list (🧠 REQUIRES INTELLIGENT PRIORITIZATION — runs after Part A):**
+   - **EXECUTE — Part B.1: Story checklist enumeration (BR-059 — runs after Part A, before Part B classification):**
+     - For each story marked **IN PROGRESS** (and any story with **two or more** open checklist tasks): parse the story doc checklist for open items (`[ ]` with TODO / IN PROGRESS; exclude COMPLETE).
+     - Diff open `E:S:T` tokens against `kboard.md` MoSCOW rows (M/S/C/O/Won't Have).
+     - Add missing rows in stable task order **or** place on **Won't Have** with explicit deferral rationale in the row.
+     - Optional advisory: `python "packages/frameworks/workflow mgt/scripts/kanban/validate_story_moscow_coverage.py" --story E##:S##` (non-zero exit lists gaps).
+     - If coverage cannot be finished this run, Step 9 **must** include `## Story MoSCOW coverage` (story id, open count, board count, missing `E:S:T` list).
+   - **EXECUTE — Part B: Update MoSCOW priority list (🧠 REQUIRES INTELLIGENT PRIORITIZATION — runs after Part B.1):**
      - **Classify tasks intelligently:** Assign each remaining in-progress task to appropriate MoSCOW category based on strategic analysis (not just copying from existing)
      - Add new in-progress tasks to appropriate MoSCOW sections
      - Order tasks within each section chronologically (most recently updated first)

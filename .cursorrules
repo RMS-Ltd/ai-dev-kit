@@ -589,6 +589,7 @@ For each step, follow this pattern:
    - **If combined flags:** Run specified operations
    - **CRITICAL:** Use `sort_kanban_board.py` to sort epics/stories numerically before writing to board
    - **CRITICAL:** MoSCOW prioritization requires **🧠 INTELLIGENT PRIORITIZATION** - analyze context, dependencies, impact
+   - **CRITICAL (BR-059 / Step 6 Part B.1):** Before MoSCOW classification, for each story **IN PROGRESS** (or with ≥2 open checklist tasks): diff story checklist open `E:S:T` tokens ↔ `kboard.md` MoSCOW (M/S/C/O/Won't); add missing rows in stable task order or **Won't Have** with deferral rationale; optional `validate_story_moscow_coverage.py --story E##:S##`; if incomplete, Step 9 must include `## Story MoSCOW coverage` (story id, counts, missing ids)
    - **CRITICAL:** `fr-br-uxr-board.md` (fbuboard) is required UKW scope for comprehensive/bookkeeping runs; do not treat as best-effort
    - **CRITICAL:** Apply deterministic fbuboard active-row reconciliation:
      - Prune active MoSCOW rows whose linked FR/BR/UXR doc status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`)

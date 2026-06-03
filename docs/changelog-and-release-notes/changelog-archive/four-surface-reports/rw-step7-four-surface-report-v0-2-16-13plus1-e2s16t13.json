@@ -1,0 +1,75 @@
+{
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": ["Story 016 checklist: T13 COMPLETE v0.2.16.13+1"],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 13,
+    "task_id": "E2:S16:T13",
+    "version_string": "v0.2.16.13+1"
+  },
+  "stamp_evidence": {
+    "kboard.md": "2026-06-03 12:00 UTC — E02:S16:T13 row COMPLETE; E02:S15:T01 UKW -c prune"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard"],
+    "untouched_surfaces": ["fbuboard"]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": ["BR-059 Resolution — process fix shipped"],
+      "notes": ["BR-059 remains OPEN"],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "E02:S16:T13 row COMPLETE v0.2.16.13+1",
+        "E02:S15:T01 removed (UKW -c archive, prior session)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": ["T13 COMPLETE; IPP; validator; AC1–AC3 evidence"],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": [],
+      "notes": ["Not in BR-059 scope"],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": false
+    }
+  },
+  "timestamp_utc": "2026-06-03 12:00 UTC"
+}

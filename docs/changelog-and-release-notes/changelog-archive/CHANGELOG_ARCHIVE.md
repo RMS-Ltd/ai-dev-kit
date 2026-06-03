@@ -1,4 +1,16 @@
 # Changelog Archive
+## [0.2.16.13+1] - 03-06-26
+
+E02:S16:T13 — BR-059 UKW Step 6 Part B.1 + story MoSCOW coverage validator. SemVer **v0.4.845+1**.
+
+[Detailed changelog](CHANGELOG_v0.2.16.13+1.md)
+---
+## [0.2.15.1+2] - 02-06-26
+
+E02:S15:T01 — BR-066 Phase 2 publication wiring audit. SemVer **v0.4.786+2**.
+
+[Detailed changelog](CHANGELOG_v0.2.15.1+2.md)
+---
 ## [0.7.1.9+5] - 02-06-26
 
 E07:S01:T09 — UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10. SemVer **v0.4.845+5**.

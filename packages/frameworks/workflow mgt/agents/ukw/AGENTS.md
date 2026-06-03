@@ -75,7 +75,13 @@ Execution order is strictly **bottom-up**: Tasks → Stories → Epics → Board
 3. Deduplication pass: scan all remaining sections for any task ID still appearing more than once; retain the entry in the highest-priority section (Must Have > Should Have > Could Have > Ongoing > Won't Have) and remove the others
 4. Update `kanban-completed.md` "Last Updated" header with current timestamp and completed task reference(s)
 
-**Part B — MoSCOW classification (executes after Part A):**
+**Part B.1 — Story checklist enumeration (BR-059; executes after Part A, before Part B):**
+- For each story **IN PROGRESS** (or with ≥2 open checklist tasks): diff story checklist open `E:S:T` tokens ↔ `kboard.md` MoSCOW (M/S/C/O/Won't).
+- Add missing rows in stable task order, or **Won't Have** with explicit deferral rationale.
+- Advisory: `validate_story_moscow_coverage.py --story E##:S##` (non-zero = gaps).
+- If incomplete, Step 9 must include `## Story MoSCOW coverage` (story id, counts, missing ids).
+
+**Part B — MoSCOW classification (executes after Part B.1):**
 - Apply MoSCOW prioritisation across remaining active work items only:
   - **MUST HAVE** — blocking, critical path, release-gating
   - **SHOULD HAVE** — high value, near-term delivery

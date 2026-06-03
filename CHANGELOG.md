@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.15.1+2] - 02-06-26
+## [0.2.16.13+1] - 03-06-26
 
-E02:S15:T01 — BR-066 Phase 2: publication wiring bulk audit, validator hardening, targeted backfill, IPP. SemVer **v0.4.786+2**.
+E02:S16:T13 — BR-059: UKW Step 6 Part B.1 story-checklist MoSCOW enumeration, advisory gap validator, IPP. SemVer **v0.4.845+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.1+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.13+1.md)
 
 ---
