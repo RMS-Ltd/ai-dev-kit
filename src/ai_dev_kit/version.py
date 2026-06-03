@@ -10,7 +10,7 @@ VERSION_RC = 0        # Release candidate
 VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
 VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
 VERSION_TASK = 3      # Task 3 — Workflow maintenance (Perpetual); IPP Tranche 3
-VERSION_BUILD = 2     # Build 2: BR-067 RESOLVED, active link hygiene, IPP §7 (RW --art)
+VERSION_BUILD = 3     # Build 3: SitRep IPW §7 + fbuboard BR-067 sync (docs-only; +0 N/A after +2 shipped)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.3+2
+# Current: 0.2.16.3+3

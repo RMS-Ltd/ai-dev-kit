@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.2.16.3+3] - 03-06-26
+
+E02:S16:T03 — SitRep IPW housekeeping. SemVer **v0.4.847+3**.
+
+[Detailed changelog](CHANGELOG_v0.2.16.3+3.md)
+---
 ## [0.2.16.3+2] - 03-06-26
 
 E02:S16:T03 — IPP Tranche 3: BR-067 RESOLVED, link hygiene, AC4 PARTIAL until T02. SemVer **v0.4.846+2**.

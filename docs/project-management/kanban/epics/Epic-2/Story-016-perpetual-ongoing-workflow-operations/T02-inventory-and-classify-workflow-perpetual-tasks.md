@@ -24,6 +24,7 @@ housekeeping_policy: keep
 
 - [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
 - Planning baseline from [E02:S16:T01](./T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md).
+- **3B gate for T03:** Planned IPP [`IPP-E2S16T02-perpetual-task-inventory.md`](../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) (CREATE via **`IPW E02:S16:T02`**); SitRep in [IPP-E2S16T03 §7](../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md).
 
 ---
 

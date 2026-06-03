@@ -1,24 +1,27 @@
-# Detailed Changelog — v0.2.16.3+3
+# Changelog — v0.2.16.3+3
 
-**Release date:** 20-04-26  
-**Task:** E2:S16:T03  
-**Mode:** RW -d with `--art`  
-**SemVer:** v0.4.764+3
+**Release Date:** 2026-06-03 12:29:16 UTC  
+**Epic:** 2 | **Story:** 16 | **Task:** 3  
+**SemVer:** v0.4.847+3  
+**Summary:** SitRep IPW — IPP §7 T02/3B gate, fbuboard BR-067 sync, T03 link fixes
+
+---
 
 ## Summary
 
-Published the UKW full-sync updates for Story 016, including Epic/Story metadata reconciliation and kboard state cleanup after the perpetual-task re-housing migration.
+Change implemented: **E02:S16:T03** docs-only housekeeping after Tranche 3 (`v0.2.16.3+2`). **`--doc-policy-zero` not applied:** HEAD already at BUILD +2 and tag `v0.2.16.3+0` exists; perpetual same-task release uses **BUILD +3** per BR-075.
 
-## Included
+---
 
-- UKW-updated kanban docs:
-  - `docs/project-management/kanban/epics/Epic-2/Epic-2.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md`
-  - `docs/project-management/kanban/kboard.md`
+## Changed
 
-## Verification
+- [`IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md`](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) — §7 SitRep (T02/T03), §4.4 Step 5 (3B entry gate)
+- **Deferred:** [`fbuboard.md`](../../project-management/kanban/fbuboard.md) BR-067 row **RESOLVED** sync — blocked by FR-097 homogeneity pre-commit (19-row stamp cluster); apply in follow-up backfill RW
+- T03, T02 task docs — SitRep verification + planned `IPP-E2S16T02` link
 
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --requested "E2:S16:T03" --art` ✅
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py" --requested "E2:S16:T03"` ✅
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py" --requested "E2:S16:T03" --art` ✅
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --strict --requested "E2:S16:T03" --art` ✅
+---
+
+## Notes
+
+- T03 remains **IN PROGRESS** (perpetual); AC4 PARTIAL until T02 inventory.
+- Next IPW host: **E02:S16:T02**.

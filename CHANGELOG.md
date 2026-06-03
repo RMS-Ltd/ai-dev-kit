@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.3+2] - 03-06-26
+## [0.2.16.3+3] - 03-06-26
 
-E02:S16:T03 — IPP Tranche 3: BR-067 RESOLVED (R1–R5 PASS), active kanban link hygiene (15 files), AC4 PARTIAL until T02. SemVer **v0.4.846+2**.
+E02:S16:T03 — SitRep IPW: IPP §7 T02/3B gate, fbuboard BR-067 sync, T03 IPP link fixes. SemVer **v0.4.847+3**. (Requested `--doc-policy-zero`; BUILD +3 used — +0 N/A after +2 shipped.)
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+3.md)
 
 ---

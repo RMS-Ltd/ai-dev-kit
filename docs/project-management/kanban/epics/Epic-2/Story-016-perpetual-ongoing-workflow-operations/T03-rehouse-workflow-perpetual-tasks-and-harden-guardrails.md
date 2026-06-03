@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-03 (IPP Tranche 3 — BR-067 RESOLVED; active link hygiene 15 files; 3B deferred pending T02)  
-**Version anchor:** v0.2.16.3+2
+**Last updated:** 2026-06-03 (RW **v0.2.16.3+3** — SitRep IPW §7 + fbuboard BR-067 sync)  
+**Version anchor:** v0.2.16.3+3
 **Code:** E02S16T03
 **Task Type:** Perpetual Maintenance
 
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 - Migration inventory and dispositions from [E02:S16:T02](./T02-inventory-and-classify-workflow-perpetual-tasks.md).
 - Planning and sequencing from [E02:S16:T01](./T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md).
 - Canonical policy IPP: [`IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md).
-- Implementation plan: [`IPP-E02S16T03-rehouse-workflow-perpetual-tasks.md`](../../../../implementation-cycles/IPP-E02S16T03-rehouse-workflow-perpetual-tasks.md).
+- Implementation plan: [`IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md`](../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md).
 
 ---
 
@@ -77,6 +77,12 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 - **Link hygiene (3A):** 15 files under `docs/project-management/kanban/` — stale `Epic-6/Story-007/.../T03` → Story-016 `T03` (umbrella/RW) or `T04` (UKW lane).
 - **3B deferred:** Exhaustive `T101+` / archive migration awaits T02 AC1–AC5.
 
+### SitRep IPW — T02/T03 posture (2026-06-03) ✅
+- **IPP:** [IPP-E2S16T03](../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) §7 SitRep + §4.4 Step 5 (3B entry gate).
+- **T02:** No formal inventory artifact yet; **next IPW host = E02:S16:T02** (`IPP-E2S16T02-perpetual-task-inventory.md` planned).
+- **T03:** Not a greenfield IPW; Tranche 3B blocked until T02 gate.
+- **Board:** `fbuboard.md` BR-067 row synced to **RESOLVED** (Step 7 drift fix).
+
 ### Tranche 2 — BR-067 Wave A (2026-05-30) ✅
 - **Policy table:** BUILD +0/+1/`--doc-policy-zero` rules published in [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md).
 - **RW docs:** `release-workflow-agent-execution.md` Step 2 (A.1.1) and Step 10 document `RW -d … --doc-policy-zero` path.
@@ -95,7 +101,7 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 ## References
 
 - [Canonical policy IPP: `IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md)
-- [Implementation plan: `IPP-E02S16T03-rehouse-workflow-perpetual-tasks.md`](../../../../implementation-cycles/IPP-E02S16T03-rehouse-workflow-perpetual-tasks.md)
+- [Implementation plan: `IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md`](../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md)
 - [E02:S16:T01 - Establish canonical perpetual ongoing tasks story (FR-088)](./T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
 - [E02:S16:T02 - Inventory and classify workflow-related perpetual tasks](./T02-inventory-and-classify-workflow-perpetual-tasks.md)
 - [E02:S16:T04 - Ad-hoc Kanban synchronization and hygiene (Perpetual)](./T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
