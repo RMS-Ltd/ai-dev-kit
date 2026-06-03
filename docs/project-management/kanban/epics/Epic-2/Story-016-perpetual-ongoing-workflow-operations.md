@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Tactical overview
 
-Story 016 remains the operational home for perpetual workflow work. Recent delivery closed **E02:S16:T06** (FR-085: UKW `--rp` deep reprioritization) at **v0.2.16.6+1** (ADR-009, agent SoT, cheatsheet). Prior: **T15** cheatsheet (v0.2.16.15+1), **T11** (FR-096 IPW §5–§7). Active lanes: **T02**, **T03**, **T04**, **T05**, **T07** (FR-050, TODO), **T10**. **COMPLETE** discrete tasks include T01, T06, T08, T09, T11, T15.
+Story 016 remains the operational home for perpetual workflow work. **T02** inventory IPP published (3B gate for **T03**). Recent: **T13** BR-059 (v0.2.16.13+1), **T06** FR-085. Active perpetual lanes: **T03**, **T04**, **T05**, **T10**. **COMPLETE** discrete tasks include T01, **T02**, T06–T09, T11, T13, T15–T17.
 
 ---
 
@@ -29,10 +29,10 @@ Story 016 remains the operational home for perpetual workflow work. Recent deliv
 - [x] **E02:S16:T01 – Establish canonical perpetual ongoing tasks story (FR-088)** - COMPLETE (HIGH, scope baseline, renumbering policy, and guardrail contract published; Wave 2/3 enforcement landed under `E02:S16:T03`)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`](Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | IPP: [`IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md)
 
-- [ ] **E02:S16:T02 – Inventory and classify workflow-related perpetual tasks** - IN PROGRESS (HIGH, produce exhaustive inventory and migration disposition for all workflow perpetual anchors and references)  
-  - Task: [`Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md`](Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+- [x] **E02:S16:T02 – Inventory and classify workflow-related perpetual tasks** - ✅ COMPLETE (inventory IPP; 3B gate open for T03)  
+  - Task: [`Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md`](Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | [IPP-E2S16T02](../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
 
-- [ ] **E02:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual; **v0.2.16.3+3** SitRep IPW; BR-067 RESOLVED on boards; AC4 PARTIAL until T02 / 3B)  
+- [ ] **E02:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual; **v0.2.16.3+3** SitRep; AC4 PARTIAL until Tranche **3B** execution)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW attribution anchor; last RW **v0.2.16.4+23** — UKW -u metadata sync; FR-072/FR-021 archived)  

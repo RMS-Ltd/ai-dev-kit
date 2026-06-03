@@ -92,7 +92,7 @@ This task plans migration for **all workflow-related perpetual tasks** to Story 
 
 - [x] **AC1:** Story 16 is established as canonical perpetual-task home in Epic 2.
 - [x] **AC2:** Scope and boundaries are documented and linked.
-- [ ] **AC3:** Complete inventory of workflow-related perpetual tasks and migration disposition is documented (delegated to `E02:S16:T02` execution).
+- [x] **AC3:** Complete inventory of workflow-related perpetual tasks and migration disposition is documented (delegated to `E02:S16:T02` — [`IPP-E2S16T02-perpetual-task-inventory.md`](../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)).
 - [x] **AC4:** Renumbering plan is documented and approved (`T101+` legacy -> Story 016 standard task IDs).
 - [x] **AC5:** Follow-on implementation tasks are identified for policy/validator enforcement of Story 016 ownership and non-`T101+` numbering.
 
@@ -104,5 +104,5 @@ This task plans migration for **all workflow-related perpetual tasks** to Story 
 - [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 - [Story 016 - Perpetual ongoing workflow operations](../Story-016-perpetual-ongoing-workflow-operations.md)
 - [Dev-kit versioning policy §6.1.1 - Perpetual tasks](../../../../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
-- [E02:S16:T02 - Inventory and classify workflow perpetual tasks](./T02-inventory-and-classify-workflow-perpetual-tasks.md)
+- [E02:S16:T02 - Inventory and classify workflow perpetual tasks](./T02-inventory-and-classify-workflow-perpetual-tasks.md) | [IPP-E2S16T02 inventory](../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
 - [E02:S16:T03 - Workflow maintenance perpetual umbrella](./T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)

@@ -375,35 +375,24 @@ None.
 
 ### Tranche 3B backlog (T02-gated)
 
-**Not started** — blocked on formal T02 deliverable (SitRep 2026-06-03).
+**Entry gate: SATISFIED (2026-06-03)** — [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) published; [T02](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) **COMPLETE** with AC1–AC5 evidence.
 
 **3B entry criteria (all mandatory before migration RW):**
 
-1. [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) exists with: perpetual anchor inventory (AC1), disposition + rationale per row (AC2), old→new ID map including `T101+` (AC3), reference map of surfaces to edit (AC4), bidirectional links from T01/T02 (AC5).
-2. [T02](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) AC1–AC5 checked with evidence.
-3. T03 AC4 remains `[~] PARTIAL` until 3B completes; T03 **`Status:`** stays **`IN PROGRESS`** (perpetual).
+1. [x] [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) — inventory §2.4, disposition §2.4, ID map §2.5, reference map §2.6, links from T01/T02.
+2. [x] T02 AC1–AC5 checked with evidence (discovery counts, pytest).
+3. [ ] T03 AC4 remains `[~] PARTIAL` until **3B execution** completes; T03 **`Status:`** stays **`IN PROGRESS`** (perpetual).
 
-**3B execution (after gate):** Apply reference map; mark T03 AC4 `[x]` with migration counts; `RW E02:S16:T03 --art`.
+**3B execution (authorized separately):** Apply reference map per IPP-E2S16T02 §2.6; document before/after `Epic-6/Story-007` counts; mark T03 AC4 `[x]`; `RW E02:S16:T03 --art`.
 
-**Recommended next IPW host:** **E02:S16:T02** (inventory IPP), not a greenfield T03 IPW.
-
-### SitRep — E02:S16:T02 parallel work (2026-06-03)
+### SitRep — E02:S16:T02 (2026-06-03, post-IPW)
 
 | Dimension | State |
 | --------- | ----- |
-| Task doc | IN PROGRESS since 2026-04-20; anchor `v0.2.16.2+1` (doc-init only) |
-| IPP | None on T02 (`kboard`: —No IPP—) |
-| AC1–AC5 | All unchecked on task doc |
-| Formal deliverable | No inventory/disposition/reference-map artifact in `docs/implementation-cycles/` |
-
-**Parallel work (does not satisfy T02 ACs):**
-
-- [IPP-E2S16T01](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md) — policy taxonomy only.
-- FR-087 Wave 4 point re-houses (e.g. E02:S16:T13 ← E06:S07:T109) — ad hoc, no T02-owned map.
-- T03 Tranche 3A — 15 active `docs/project-management/kanban/` files: stale `Epic-6/Story-007/.../T03` → Story-016 T03/T04.
-- Corpus tail — ~20+ stale `Epic-6/Story-007` T03 paths remain in changelog archive / KB-INDEX (expected until T02 AC4 map).
-
-**Conclusion:** Routing/policy advanced; **T03 Tranche 3B cannot start** until T02 ships the inventory artifact.
+| Task doc | **COMPLETE**; IPP published |
+| IPP | [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) |
+| Reference baseline | 167 `Epic-6/Story-007` occurrences / 101 files under `docs/` |
+| 3B | **Unblocked** — execution is T03 Tranche 3B, not another T02 IPW |
 
 ### SitRep — E02:S16:T03 host (2026-06-03)
 
@@ -411,7 +400,7 @@ None.
 | --------- | ----- |
 | IPP | This document; Tranches 1–3 shipped (`v0.2.16.3+2`) |
 | AC1–AC3, AC5 | Satisfied (T03 verification) |
-| AC4 | PARTIAL — 3B gated on T02 |
+| AC4 | PARTIAL — 3B **gate open**; migration not yet executed |
 | Board drift | BR-067 **RESOLVED** in source; fbuboard row synced in SitRep housekeeping |
 
 ### SitRep IPW housekeeping (2026-06-03)
@@ -427,7 +416,7 @@ None.
 - Host task: [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - Canonical policy: [`IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../docs/implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 - T02 (dependency): [`T02-inventory-and-classify-workflow-perpetual-tasks.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
-- T02 inventory IPP (3B gate — CREATE on T02 IPW): [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) *(planned; not yet in repo)*
+- T02 inventory IPP (3B gate — **published**): [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md)
 - T04 (scope boundary): [`T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - Legacy draft (to archive): [`IPW-E6S07T103-release-workflow-maintenance-perpetual.md`](../../docs/implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md)
 - FR-088: [`FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`](../../docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)

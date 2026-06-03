@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.3+3] - 03-06-26
+## [0.2.16.2+2] - 03-06-26
 
-E02:S16:T03 — SitRep IPW: IPP §7 T02/3B gate, fbuboard BR-067 sync, T03 IPP link fixes. SemVer **v0.4.847+3**. (Requested `--doc-policy-zero`; BUILD +3 used — +0 N/A after +2 shipped.)
+E02:S16:T02 — Perpetual-task inventory IPP; disposition + reference map; T03 Tranche 3B gate open. SemVer **v0.4.848+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+2.md)
 
 ---
