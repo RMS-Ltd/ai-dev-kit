@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-03 (UKW — **BR-066**, **FR-104**, **FR-105**, **BR-077** ledger)
-**Version:** v0.2.16.4+25 (**SemVer** v0.4.854+25)
+**Last Updated:** 2026-06-03 (UKW — **FR-107** ledger)
+**Version:** v0.2.13.8+2 (**SemVer** v0.4.854+25)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-107 | FR | Comprehensive workflow machinery code review (**E07:S07:T01**) | 2026-06-03T20:28:00Z | v0.7.7.1+1 | RW |
 | BR-066 | BR | IPW Docusaurus filing for planning artifacts — Phase 3 closure (**E02:S15:T01**) | 2026-06-03T14:30:00Z | v0.2.15.1+3 | RW |
 | FR-105 | FR | Dependabot and dependency security automation (**E08:S03:T06**) | 2026-06-03T16:00:00Z | v0.8.3.6+2 | RW |
 | BR-077 | BR | Python 3.8+ doc contradicts repo requirement — resolved via FR-104 (**E08:S03:T05**) | 2026-06-03T15:00:00Z | v0.8.3.5+2 | RW |

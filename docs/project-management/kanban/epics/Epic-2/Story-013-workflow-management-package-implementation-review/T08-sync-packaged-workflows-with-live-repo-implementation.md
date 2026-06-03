@@ -9,15 +9,15 @@ housekeeping_policy: keep
 # E02:S13:T08 – Sync Packaged Workflows With Live Repo Implementation
 
 **Task ID:** E02:S13:T08  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium–Large  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-03 (IPP + packaged workflow sync — E02:S13:T08) (kanban init **v0.2.13.8+1** — RW -k **FR-106**)  
+**Last updated:** 2026-06-03  
 **Epic:** E02 – Workflow Management Framework  
 **Story:** E02:S13 – Workflow Management Package Implementation Review  
 **Code:** E02S13T08  
-**Version Anchor:** v0.2.13.8+1 (kanban documentation setup)  
+**Version Anchor:** ✅ COMPLETE (v0.2.13.8+2)  
 **Source FR:** [FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)
 
 ---

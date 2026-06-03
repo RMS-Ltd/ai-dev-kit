@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-03  
 **Submitted By:** User (via agent — E02:S13 packaged-workflow drift review)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** IN PROGRESS (fix attempted 2026-06-03 — pending user verification)  
-**Implementing Task:** [E02:S13:T08](../epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)  
+**Status:** IN PROGRESS (fix attempted **v0.2.13.8+2** — pending user verification)  
+**Implementing Task:** [E02:S13:T08](../epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) — ✅ COMPLETE (**v0.2.13.8+2**)  
 **IPP:** [IPP-E02S13T08](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)  
 **Kanban init:** v0.2.13.8+1 (RW -k --art, 2026-06-03)
 

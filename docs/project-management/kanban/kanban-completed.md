@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-03 (UKW — **E08:S03:T05/T06** ledger)
-**Version:** v0.2.16.4+25
+**Last Updated:** 2026-06-03 (UKW -c: archive **E02:S13:T08**)
+**Version:** v0.2.13.8+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -20,7 +20,19 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **Epic 2: Workflow Management Framework (Story 13 — Package implementation review)**
+- **[E02:S13:T08](epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)** — **FR-106**: Sync packaged workflows with live repo (YAML, registry, dual-source RW/UKW parity).
+  **Completed:** `2026-06-03T21:00:00Z` | **Version:** `v0.2.13.8+2` | **Agent:** `RW` | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [IPP-E02S13T08](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
+
+#### **Epic 7: Codebase Maintenance (Story 7 — Code Reviews)**
+- **[E07:S07:T01](epics/Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md)** — **FR-107**: Workflow machinery code review report (severity-ranked findings).
+  **Completed:** `2026-06-03T20:28:00Z` | **Version:** `v0.7.7.1+1` | **Agent:** `RW` | [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md) | [IPP-E07S07T01](../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
+
 #### **Epic 6: Framework Management (Story 9 — Installation)**
+- **[E06:S09:T13](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md)** — **BR-084**: RW mode C `task_doc_pattern` + `fr_br_root`.
+  **Completed:** `2026-06-03T19:55:09Z` | **Version:** `v0.6.9.13+2` | **Agent:** `RW` | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
+- **[E06:S09:T12](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md)** — **BR-083**: RW mode C kanban pattern defaults.
+  **Completed:** `2026-06-03T19:50:30Z` | **Version:** `v0.6.9.12+2` | **Agent:** `RW` | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
 - **[E06:S09:T07](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)** — **BR-078**: Ship `KANBAN_STRUCTURE_TEMPLATE`; fresh install SUCCESS when board + epics.
   **Completed:** `2026-06-03T20:25:00Z` | **Version:** `v0.6.9.7+2` | **Agent:** `RW` | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [IPP-E06S09T07](../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md)
 - **[E06:S09:T11](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md)** — **BR-082**: RW install PyYAML preflight (`--check-deps`, INSTALL Step 3b).

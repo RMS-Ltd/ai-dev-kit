@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.13.8+2] - 03-06-26
+
+E02:S13:T08 — Packaged workflow sync with live repo (**FR-106**): Step 9 FR-097/FR-092 validators, canonical steps v2.0.0, YAML/registry, dual-source parity. SemVer **v0.4.861+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.8+2.md)
+
+---
+
 ## [0.7.7.1+1] - 03-06-26
 
 E07:S07:T01 — Kanban init + workflow machinery code review report (**FR-107**): E07:S07 Code Reviews story, severity-ranked findings and remediation backlog. SemVer **v0.4.860+1**.

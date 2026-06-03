@@ -1,0 +1,57 @@
+{
+  "contract": "FR-092 / FR-091",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 8,
+    "task_id": "E02:S13:T08",
+    "version_string": "v0.2.13.8+2"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "story_doc", "fbu_doc", "kboard", "fbuboard"],
+    "total_changes": 14
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md"
+      ],
+      "notes": ["Fix attempted v0.2.13.8+2; pending user verification"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "notes": [
+        "E02:S13:T08 COMPLETE row",
+        "UKW archive prune E06:S09 T07-T13, E07:S07:T01 to kanban-completed.md"
+      ]
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fbuboard.md"],
+      "notes": ["FR-106 fix-attempted row; FR-107 pruned to fbu-completed.md"]
+    }
+  },
+  "stamp_evidence": {
+    "manifest": "rw-e2s13t08-ukw-archive-proof.json",
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 1,
+    "mode": "row_prune_manifest"
+  },
+  "timestamp_utc": "2026-06-03 21:40 UTC"
+}
