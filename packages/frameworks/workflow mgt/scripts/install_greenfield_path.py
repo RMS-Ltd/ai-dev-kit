@@ -15,6 +15,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+_SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+try:
+    from install_ux_version import print_session_banner
+except ImportError:
+    def print_session_banner(project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
+        return None
+
 
 def run_step(command: list[str], project_root: Path, dry_run: bool) -> int:
     printable = " ".join(command)
@@ -94,6 +103,8 @@ def main() -> int:
     if not project_root.exists():
         print(f"Project root not found: {project_root}")
         return 1
+
+    print_session_banner(project_root)
 
     chosen_order = choose_order(args.non_interactive, args.order)
     print(f"\nChosen order: {chosen_order}")

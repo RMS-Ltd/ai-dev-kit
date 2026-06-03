@@ -10,6 +10,7 @@ from typing import Optional
 
 from cli.commands import BaseCommand
 from cli.config import Config
+from cli.adk_version_display import print_session_banner
 from cli.utils import print_success, print_error, print_info, print_warning, get_project_root
 
 
@@ -41,6 +42,8 @@ class StatusCommand(BaseCommand):
         if project_root is None:
             print_error("No project root detected. Run 'ai-dev-kit init' first.")
             return 1
+
+        print_session_banner(project_root)
         
         config = Config(project_root / ".ai-dev-kit.yaml")
         installed_frameworks = config.get_frameworks()

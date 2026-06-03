@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-03 (RW — **BR-085**, **BR-083**, **BR-084** ledger)
-**Version:** v0.2.13.8+2 (**SemVer** v0.4.854+25)
+**Last Updated:** 2026-06-04 (RW — **FR-108** ledger)
+**Version:** v0.6.9.15+1 (**SemVer** v0.4.865+1)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-108 | FR | Install/setup interactive feedback shows external SemVer (**E06:S09:T15**) | 2026-06-04T12:00:00Z | v0.6.9.15+1 | RW |
 | BR-085 | BR | RW Mode C story pattern prompt infinite loop after fresh kanban (**E06:S09:T14**) | 2026-06-03T23:17:03Z | v0.6.9.14+2 | RW |
 | BR-083 | BR | RW install default epic/story patterns mismatch fresh kanban (**E06:S09:T12**) | 2026-06-03T23:17:03Z | v0.6.9.14+2 | RW |
 | BR-084 | BR | RW Mode C missing task_doc_pattern / wrong patterns persisted (**E06:S09:T13**) | 2026-06-03T23:17:03Z | v0.6.9.14+2 | RW |

@@ -16,6 +16,7 @@ from cli.config import Config
 from cli.exceptions import AIDevKitError, InvalidInputError, BackendNotAvailableError, InstallationError, AppleSDKLicenseError
 from cli.validation import validate_framework_spec, validate_backend, validate_path
 from cli.backends import BackendRegistry, select_backend, get_backend
+from cli.adk_version_display import print_session_banner, resolve_install_adk_version
 from cli.logging import create_install_logger, close_install_logger
 from cli.utils import (
     print_success,
@@ -113,7 +114,9 @@ class InstallCommand(BaseCommand):
             if project_root is None:
                 project_root = Path.cwd()
                 print_warning("No project root detected, using current directory")
-            
+
+            version_info = print_session_banner(project_root)
+
             # Load or create configuration
             config = Config(project_root / ".ai-dev-kit.yaml")
             
@@ -122,6 +125,7 @@ class InstallCommand(BaseCommand):
                 project_root=project_root,
                 config=config,
                 args=self.args,
+                version_info=version_info,
             )
             
             # Parse and validate framework specifications

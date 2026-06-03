@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.15+1] - 04-06-26
+
+E06:S09:T15 — Install/setup interactive feedback shows external SemVer (**FR-108**): shared `install_ux_version` resolver, CLI + framework installer banners, install log and feedback payload fields. SemVer **v0.4.865+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.15+1.md)
+
+---
+
 ## [0.6.9.14+2] - 03-06-26
 
 E06:S09:T14 — **BR-085** / **BR-083** / **BR-084** ExpensesTracker T03 interactive replay verification closure (RW installer greenfield path). SemVer **v0.4.864+2**.

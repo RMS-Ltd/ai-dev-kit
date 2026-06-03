@@ -9,10 +9,13 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 15: Install/setup interactive feedback external SemVer (FR-108)
 
 **Task ID:** E06:S09:T15  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-04  
+**Last updated:** 2026-06-04 (v0.6.9.15+1 — FR-108 implemented)  
 **Code:** E06S09T15
+
+**Version Anchor:** v0.6.9.15+1
 
 **Upstream:** [FR-108](../../../fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md)
 
@@ -37,6 +40,7 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 - [FR-108](../../../fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md) requirements and acceptance criteria
 - Existing version sources: `src/fynd_deals/version.py`, `cli/__init__.py`, `semver_converter.py`
 - Install event contract from FR-078 (align displayed SemVer with logged fields)
+- **IPW planning artifact:** [IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 
 ---
 
@@ -51,12 +55,12 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Every documented install entry point prints external SemVer at session start (FR-108 AC1).
-- [ ] **AC2:** Automated test coverage per major entry point (FR-108 AC2).
-- [ ] **AC3:** RW installer interactive sections show SemVer on headers and completion (FR-108 AC3).
-- [ ] **AC4:** Kanban installer interactive path shows SemVer on equivalent banners (FR-108 AC4).
-- [ ] **AC5:** Explicit fallback when SemVer cannot be resolved (FR-108 AC5).
-- [ ] **AC6:** Displayed SemVer matches install event / feedback payload for the same run (FR-108 AC6).
+- [x] **AC1:** Every documented install entry point prints external SemVer at session start (FR-108 AC1).
+- [x] **AC2:** Automated test coverage per major entry point (FR-108 AC2).
+- [x] **AC3:** RW installer interactive sections show SemVer on headers and completion (FR-108 AC3).
+- [x] **AC4:** Kanban installer interactive path shows SemVer on equivalent banners (FR-108 AC4).
+- [x] **AC5:** Explicit fallback when SemVer cannot be resolved (FR-108 AC5).
+- [x] **AC6:** Displayed SemVer matches install event / feedback payload for the same run (FR-108 AC6).
 
 ---
 
@@ -101,12 +105,13 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 ## Version Anchor
 
-**Version:** *(pending RW)*
+**Version:** v0.6.9.15+1 — ✅ COMPLETE (v0.6.9.15+1)
 
 ---
 
 ## References
 
+- [IPP-E06S09T15 — Install/setup external SemVer display](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 - [dev-kit-versioning-policy.md](../../../../../governance/standards/dev-kit-versioning-policy.md)
 - [`semver_converter.py`](../../../../../../packages/frameworks/workflow%20mgt/scripts/version/semver_converter.py)
 - [`install_release_workflow.py`](../../../../../../packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)

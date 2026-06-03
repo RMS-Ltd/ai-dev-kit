@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (RW **E06:S09:T14** **v0.6.9.14+2** — BR-085/083/084 verified)
-**Version Context:** v0.6.9.14+1 (**SemVer** v0.4.863+1)
+**Last Updated:** 2026-06-04 (RW **E06:S09:T15** **v0.6.9.15+1** — FR-108 install SemVer banners)
+**Version Context:** v0.6.9.15+1 (**SemVer** v0.4.865+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -79,9 +79,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Could Have (C) - Nice-to-Have Items
 
-**2026-06-04:** Intake **FR-108** → **E06:S09:T15** (install/setup interactive feedback shows external SemVer).
-
-- **FR-108** – Install/setup interactive feedback shows external SemVer - 🟢 OPEN (MEDIUM) | [FR-108](fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md) | [E06:S09:T15](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-fr108.md) | —No IPP— | Last modified: 2026-06-04 00:00 UTC
+**2026-06-04:** **FR-108** IMPLEMENTED **v0.6.9.15+1** → archived [fbu-completed.md](fbu-completed.md).
 
 - **BR-081** – Kanban install uses deprecated `datetime.utcnow()` - 🟢 OPEN (LOW, **#13**) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [E06:S09:T10](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | —No IPP— | Last modified: 2026-06-03 17:43 UTC
 

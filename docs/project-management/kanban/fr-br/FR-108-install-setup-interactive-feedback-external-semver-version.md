@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-04  
 **Submitted By:** User  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
-**Status:** OPEN  
+**Status:** IMPLEMENTED (v0.6.9.15+1 — pending user verification)  
 **Implementing Task:** [E06:S09:T15](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-fr108.md)
 
 ---
@@ -42,17 +42,17 @@ The **external SemVer** is the outward-facing version (e.g. `v0.4.863+1`) derive
 
 ### Functional Requirements
 
-- [ ] **FR-108-F1:** Define a single **install/setup version banner contract**: external SemVer (with optional internal traceability in verbose mode) displayed at session start for every install/setup entry point.
-- [ ] **FR-108-F2:** Apply the contract to **CLI install path** (`adk install`, `adk feedback`, `adk status` when invoked during setup) and **framework installers** (`install_release_workflow.py`, `install_kanban_framework.py`, `install_greenfield_path.py`, `install_package_from_release.py`).
-- [ ] **FR-108-F3:** Include external SemVer in **interactive prompts** (section headers, confirmation summaries, error/warning messages)—not only in final success lines.
-- [ ] **FR-108-F4:** Resolve version from authoritative sources (installed package / release tag / monorepo `version.py` + `semver_converter`) with deterministic fallback and explicit “version unknown” messaging when resolution fails.
-- [ ] **FR-108-F5:** Align human-visible SemVer with fields already emitted in install event logs and feedback payloads where applicable.
+- [x] **FR-108-F1:** Define a single **install/setup version banner contract**: external SemVer (with optional internal traceability in verbose mode) displayed at session start for every install/setup entry point.
+- [x] **FR-108-F2:** Apply the contract to **CLI install path** (`adk install`, `adk logs` feedback subcommands, `adk status`, `adk init`) and **framework installers** (`install_release_workflow.py`, `install_kanban_framework.py`, `install_greenfield_path.py`, `install_package_from_release.py`).
+- [x] **FR-108-F3:** Include external SemVer in **interactive prompts** (section headers, confirmation summaries, error/warning messages)—not only in final success lines.
+- [x] **FR-108-F4:** Resolve version from authoritative sources (installed package / release tag / monorepo `version.py` + `semver_converter`) with deterministic fallback and explicit “version unknown” messaging when resolution fails.
+- [x] **FR-108-F5:** Align human-visible SemVer with fields already emitted in install event logs and feedback payloads where applicable.
 
 ### Non-Functional Requirements
 
-- [ ] **FR-108-NF1:** Version lookup must not materially slow interactive installs (cache per run; no network round-trip required for local installs).
-- [ ] **FR-108-NF2:** Output remains readable in narrow terminals (concise format, e.g. `AI Dev Kit v0.4.863+1`).
-- [ ] **FR-108-NF3:** No false precision—do not display SemVer when only an unmapped internal version is available without conversion.
+- [x] **FR-108-NF1:** Version lookup must not materially slow interactive installs (cache per run; no network round-trip required for local installs).
+- [x] **FR-108-NF2:** Output remains readable in narrow terminals (concise format, e.g. `AI Dev Kit v0.4.863+1`).
+- [x] **FR-108-NF3:** No false precision—do not display SemVer when only an unmapped internal version is available without conversion.
 
 ---
 
@@ -84,12 +84,12 @@ The **external SemVer** is the outward-facing version (e.g. `v0.4.863+1`) derive
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Running any documented install entry point prints external SemVer at session start before first interactive prompt.
-- [ ] **AC2:** At least one automated test (or snapshot test) per major entry point asserts SemVer presence in stdout/stderr for a pinned fixture version.
-- [ ] **AC3:** Interactive RW Mode A/B/C setup (`install_release_workflow.py`) shows SemVer on section headers (`📋 RW Configuration Setup`, mode selection, completion summary).
-- [ ] **AC4:** Kanban installer interactive path shows SemVer on equivalent banners.
-- [ ] **AC5:** When SemVer cannot be resolved, user sees explicit `AI Dev Kit (version unknown)` (or documented fallback)—never silent omission.
-- [ ] **AC6:** Install event / feedback payloads remain consistent with the displayed SemVer for the same run.
+- [x] **AC1:** Running any documented install entry point prints external SemVer at session start before first interactive prompt.
+- [x] **AC2:** At least one automated test (or snapshot test) per major entry point asserts SemVer presence in stdout/stderr for a pinned fixture version.
+- [x] **AC3:** Interactive RW Mode A/B/C setup (`install_release_workflow.py`) shows SemVer on section headers (`📋 RW Configuration Setup`, mode selection, completion summary).
+- [x] **AC4:** Kanban installer interactive path shows SemVer on equivalent banners.
+- [x] **AC5:** When SemVer cannot be resolved, user sees explicit `AI Dev Kit (version unknown)` (or documented fallback)—never silent omission.
+- [x] **AC6:** Install event / feedback payloads remain consistent with the displayed SemVer for the same run.
 
 ---
 
@@ -129,7 +129,7 @@ The **external SemVer** is the outward-facing version (e.g. `v0.4.863+1`) derive
 - Epic: Epic 6 — Framework Management
 - Story: Story 009 — AI Dev Kit installation and adopter integration
 - Task: T15 — Install/setup interactive feedback external SemVer (FR-108)
-- Version: *(pending RW)*
+- Version: `0.6.9.15+1` (SemVer v0.4.865+1)
 
 **Kanban Links:**
 

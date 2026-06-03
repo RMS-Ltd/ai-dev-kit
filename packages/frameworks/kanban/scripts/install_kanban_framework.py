@@ -26,6 +26,19 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, Optional
 
+# Install UX version display (FR-108)
+_WORKFLOW_SCRIPTS = Path(__file__).resolve().parents[2] / "workflow mgt" / "scripts"
+if str(_WORKFLOW_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_WORKFLOW_SCRIPTS))
+try:
+    from install_ux_version import print_section_header, print_session_banner
+except ImportError:
+    def print_session_banner(project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
+        return None
+
+    def print_section_header(title, project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
+        print(title)
+
 # Import validation module
 try:
     from validate_installation import InstallationValidator
@@ -649,9 +662,11 @@ Examples:
     project_root = Path.cwd()
     kanban_path, sourced_from_rw = resolve_kanban_path_arg(project_root, args.kanban_path)
     final_status = "SUCCESS"
+
+    print_session_banner(project_root)
     
     print("=" * 60)
-    print("Kanban Framework Installation")
+    print_section_header("Kanban Framework Installation", project_root)
     print("=" * 60)
     print(f"📁 Project root: {project_root}")
     print(f"📁 Kanban path: {kanban_path}")

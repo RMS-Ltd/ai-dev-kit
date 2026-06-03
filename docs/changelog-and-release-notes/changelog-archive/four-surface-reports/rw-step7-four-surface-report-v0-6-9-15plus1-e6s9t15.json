@@ -1,0 +1,109 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-6/Epic-6.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [
+        "Updated Story-009 checklist T15 COMPLETE",
+        "Updated Story-009 version v0.6.9.15+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated kanban-completed.md and fbu-completed.md ledgers"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 15,
+    "task_id": "E6:S9:T15",
+    "version_string": "v0.6.9.15+1"
+  },
+  "stamp_evidence": {
+    "structure_prune_manifest": "rw-step7-structure-prune-v0-6-9-15plus1-e6s9t15.json"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "Updated FR-108: IMPLEMENTED v0.6.9.15+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": [
+        "Pruned FR-108 active row — archived to fbu-completed.md",
+        "Updated board metadata v0.6.9.15+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Pruned E06:S09:T15 active row — archived to kanban-completed.md",
+        "Updated board metadata v0.6.9.15+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Updated T15: COMPLETE v0.6.9.15+1",
+        "Linked IPP-E06S09T15"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-fr108.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-04 12:00:00 UTC"
+}

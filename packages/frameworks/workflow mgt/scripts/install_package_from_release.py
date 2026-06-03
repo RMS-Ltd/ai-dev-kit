@@ -28,6 +28,12 @@ if str(_SCRIPT_DIR) not in sys.path:
 
 from install_receipt import emit_install_receipt, find_adopter_project_root
 
+try:
+    from install_ux_version import print_session_banner
+except ImportError:
+    def print_session_banner(project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
+        return None
+
 
 def parse_arguments() -> argparse.Namespace:
     """Parse command-line arguments."""
@@ -301,6 +307,8 @@ def main() -> int:
     """Main execution function."""
     try:
         args = parse_arguments()
+
+        print_session_banner(Path.cwd())
         
         # Normalize framework name
         normalized_name = normalize_framework_name(args.framework_name)

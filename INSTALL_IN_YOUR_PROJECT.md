@@ -22,6 +22,16 @@ Rewire policy: [`docs/maintenance/fr099-phase4-rewire-and-verify.md`](docs/maint
 
 **Yes, all installation documentation is available in the ai-dev-kit repository.** When you point your project at the ai-dev-kit repo, agents can find and follow complete installation instructions.
 
+### Install version banner (FR-108)
+
+Every install and setup entry point (`adk install`, framework installers, greenfield orchestrator) prints the **external SemVer** of AI Dev Kit at session start, for example:
+
+```text
+AI Dev Kit v0.4.863+1
+```
+
+Paste this line into GitHub issues or feedback so maintainers can match your console output to a released version. Install JSON logs and feedback payloads include matching `adk_semver` / `adk_internal_version` fields when logging is enabled.
+
 ---
 
 ## 📚 Documentation Location

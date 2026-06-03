@@ -14,6 +14,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from cli.commands import BaseCommand
 from cli.config import Config
 from cli.utils import get_project_root, print_error, print_info
+from cli.adk_version_display import print_session_banner, resolve_install_adk_version
 
 
 class LogsCommand(BaseCommand):
@@ -293,6 +294,17 @@ class LogsCommand(BaseCommand):
         warning_count = sum(1 for e in entries if str(e.get("level", "")).upper() == "WARNING")
         error_count = sum(1 for e in entries if str(e.get("level", "")).upper() == "ERROR")
 
+        adk_semver = first.get("adk_semver")
+        adk_internal_version = first.get("adk_internal_version")
+        if not adk_semver:
+            try:
+                resolved = resolve_install_adk_version(project_root)
+                adk_semver = resolved.semver
+                adk_internal_version = resolved.internal
+            except Exception:
+                adk_semver = None
+                adk_internal_version = None
+
         payload = {
             "schema_version": "1.0.0",
             "feedback_contract_version": "1.0.0",
@@ -308,6 +320,8 @@ class LogsCommand(BaseCommand):
                 "event_count": len(entries),
                 "warning_count": warning_count,
                 "error_count": error_count,
+                "adk_semver": adk_semver,
+                "adk_internal_version": adk_internal_version,
             },
             "triage": {
                 "recommended_flow": "FR/BR intake from payload diagnostics",
@@ -354,6 +368,7 @@ class LogsCommand(BaseCommand):
         project_root = get_project_root()
         if project_root is None:
             project_root = Path.cwd()
+        print_session_banner(project_root)
         config = Config(project_root / ".ai-dev-kit.yaml")
 
         install_log = self._resolve_install_log_for_feedback(project_root, config)

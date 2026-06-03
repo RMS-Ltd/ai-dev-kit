@@ -80,6 +80,7 @@ def create_install_logger(
     project_root: Path,
     config,
     args,
+    version_info=None,
 ) -> Tuple[LogFunc, Optional[Path], Optional[Path], Optional[TextIO]]:
     """
     Create an install logger based on install_logging.* configuration and CLI flags.
@@ -133,6 +134,21 @@ def create_install_logger(
 
         sequence = 0
 
+        adk_semver = None
+        adk_internal_version = None
+        if version_info is not None:
+            adk_semver = getattr(version_info, "semver", None)
+            adk_internal_version = getattr(version_info, "internal", None)
+        else:
+            try:
+                from cli.adk_version_display import resolve_install_adk_version
+
+                resolved = resolve_install_adk_version(project_root)
+                adk_semver = resolved.semver
+                adk_internal_version = resolved.internal
+            except Exception:
+                pass
+
         strict_event_contract = bool(config.get("install_logging.strict_event_contract", False))
 
         if fmt == "json":
@@ -163,6 +179,8 @@ def create_install_logger(
                     "event_contract": event_payload,
                     "step_id": step_id or f"step-{sequence:04d}",
                     "parent_step_id": parent_step_id,
+                    "adk_semver": adk_semver,
+                    "adk_internal_version": adk_internal_version,
                 }
                 fh.write(json.dumps(payload) + "\n")
                 fh.flush()
@@ -187,7 +205,9 @@ def create_install_logger(
         log = _log
 
         # Per-run header
+        version_note = adk_semver or "unknown"
         log("INFO", "install.main", f"ai-dev-kit install started in {project_root}")
+        log("INFO", "install.main", f"AI Dev Kit version: {version_note}")
         log("INFO", "install.main", f"Config file: {config.config_path}")
         # Expose log path for framework installers (e.g. Kanban) via env var
         os.environ["AI_DEV_KIT_INSTALL_LOG_PATH"] = str(log_file)

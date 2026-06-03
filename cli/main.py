@@ -11,6 +11,7 @@ from typing import Dict, Type
 
 from cli.commands import BaseCommand
 from cli.utils import print_error, handle_error
+from cli.adk_version_display import get_cli_version_string
 
 # Import commands
 from cli.commands.init import InitCommand
@@ -68,7 +69,7 @@ def create_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--version",
         action="version",
-        version="%(prog)s 0.1.0",
+        version=get_cli_version_string(),
         help="Show version and exit",
     )
     

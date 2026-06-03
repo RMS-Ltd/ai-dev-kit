@@ -26,6 +26,27 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+# Install UX version display (FR-108)
+try:
+    from install_ux_version import print_section_header, print_session_banner
+except ImportError:
+    _install_ux_path = Path(__file__).resolve().parent / "install_ux_version.py"
+    if _install_ux_path.exists():
+        import importlib.util as _importlib_util
+
+        _spec = _importlib_util.spec_from_file_location("install_ux_version", _install_ux_path)
+        _mod = _importlib_util.module_from_spec(_spec)
+        assert _spec.loader is not None
+        _spec.loader.exec_module(_mod)
+        print_section_header = _mod.print_section_header
+        print_session_banner = _mod.print_session_banner
+    else:
+        def print_session_banner(project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
+            return None
+
+        def print_section_header(title, project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
+            print(title)
+
 # Minimal RW installer runtime dependencies (see repo setup.py).
 INSTALLER_DEPENDENCIES: Tuple[Tuple[str, str, str], ...] = (
     ("yaml", "pyyaml", "pyyaml>=6.0"),
@@ -394,7 +415,7 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
     """Collect configuration via interactive prompts."""
     config = {}
     
-    print("\n📋 RW Configuration Setup")
+    print_section_header("📋 RW Configuration Setup", project_root)
     print("=" * 60)
     
     # Detect project name
@@ -740,6 +761,8 @@ Brownfield (existing repo):
     if not project_root.exists():
         print(f"❌ ERROR: Project root not found: {project_root}")
         sys.exit(1)
+
+    print_session_banner(project_root)
     
     print(f"📁 Project root: {project_root}")
     

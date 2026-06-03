@@ -10,6 +10,7 @@ from typing import Optional
 
 from cli.commands import BaseCommand
 from cli.config import Config
+from cli.adk_version_display import print_session_banner
 from cli.utils import print_success, print_error, print_info, get_project_root
 
 
@@ -45,6 +46,8 @@ class InitCommand(BaseCommand):
             print_info(f"No project root detected, using current directory: {project_root}")
         else:
             print_info(f"Project root detected: {project_root}")
+
+        print_session_banner(project_root)
         
         config_path = project_root / ".ai-dev-kit.yaml"
         
