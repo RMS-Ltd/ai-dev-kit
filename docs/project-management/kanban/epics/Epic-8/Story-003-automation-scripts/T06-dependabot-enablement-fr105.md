@@ -12,13 +12,29 @@ housekeeping_policy: keep
 **Status:** TODO  
 **Priority:** HIGH (Must Have — MoSCOW **M**)  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-03 (UKW — Must Have / HIGH)  
+**Last updated:** 2026-06-03 (v0.8.3.6+1 – Kanban documentation setup)  
+**Version:** v0.8.3.6+1  
+**Version Anchor:** v0.8.3.6+1  
 **Code:** E08S03T06
 
 **Upstream:** [FR-105 — Dependabot and dependency security automation](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)  
 **Related audit:** [E07:S06:T08](../../Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 
 Publication Status: NOT_APPLICABLE
+
+---
+
+## Scope
+
+Enable automated dependency security monitoring for **pip** (repo root) and **npm** (`portal/`) via GitHub Dependabot; document triage; verify Docusaurus build after safe npm fixes.
+
+---
+
+## Input
+
+- [FR-105](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)
+- [E07:S06:T08](../../Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) audit findings
+- GitHub org/repo admin access for Dependabot settings
 
 ---
 

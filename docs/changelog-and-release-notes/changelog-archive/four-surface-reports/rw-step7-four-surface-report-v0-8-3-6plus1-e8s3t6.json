@@ -1,0 +1,110 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic Last updated: 2026-06-03 (v0.8.3.6+1 \u2013 Kanban documentation setup)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Epic-8.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts.md"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated Version: v0.8.3.6+1",
+        "Updated Last updated: 2026-06-03 (v0.8.3.6+1 \u2013 Kanban documentation setup)",
+        "Updated board Last Updated: 2026-06-03 (RW: E08:S03:T06)",
+        "Updated board Version: v0.8.3.6+1"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 6,
+    "task_id": "E8:S3:T6",
+    "version_string": "v0.8.3.6+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": [
+      "task_doc",
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-105-dependabot-dependency-security-automation.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "fbuboard": {
+      "changes": [
+        "Enforced terminal row timestamps: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Advisory: 1 COMPLETE row(s) on active kboard MoSCOW; run UKW -c to append kanban-completed.md then remove (FR-102)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md"
+      ],
+      "surface": "task_doc",
+      "touched": false
+    }
+  },
+  "timestamp_utc": "2026-06-03 15:50 UTC"
+}

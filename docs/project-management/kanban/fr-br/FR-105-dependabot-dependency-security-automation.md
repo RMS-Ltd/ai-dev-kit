@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-03  
 **Submitted By:** User (via agent — dependency audit follow-up)  
 **Priority:** HIGH (Must Have — MoSCOW **M**)  
-**Status:** OPEN  
+**Status:** OPEN (kanban init **v0.8.3.6+1** — **E08:S03:T06**)  
 **Assigned Task:** E08:S03:T06 — [`T06-dependabot-enablement-fr105.md`](../epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md)
 
 ---
