@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-03 (RW **E02:S16:T04** **v0.2.16.4+24** — UKW kanban sync)
+**Last updated:** 2026-06-03 (v0.2.16.4+24 – Kanban documentation setup)
 **Version:** v0.2.16.4+24
 **Code:** E2S16
 

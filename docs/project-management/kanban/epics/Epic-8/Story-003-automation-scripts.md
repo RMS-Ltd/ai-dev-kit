@@ -12,19 +12,27 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2025-12-05  
-**Version:** v0.8.3.1+1  
+**Last updated:** 2026-06-03 (v0.8.3.5+1 – Kanban documentation setup)
+**Version:** v0.8.3.5+1
 **Code:** E8S03
 
 ---
 
 ## Task Checklist
-
 - [ ] **E08:S03:T01 – Create automation framework** - TODO
+
 - [ ] **E08:S03:T02 – Build workflow automation scripts** - TODO
+
 - [ ] **E08:S03:T03 – Establish automation patterns** - TODO
 
+
 - [ ] **E08:S03:T04 – CI test workflow and pytest remediation (BR-058)** - TODO (LOW) — [Task doc](Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+
+
+- [ ] **E08:S03:T05 – Python minimum version policy alignment (FR-104 / BR-077)** - TODO (**Must Have / HIGH**) — [Task doc](Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [FR-104](../../fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
+
+
+- [ ] **E08:S03:T06 – Dependabot and dependency security automation (FR-105)** - TODO (**Must Have / HIGH**) — [Task doc](Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [FR-105](../../fr-br/FR-105-dependabot-dependency-security-automation.md)
 
 ---
 

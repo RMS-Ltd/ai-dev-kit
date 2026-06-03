@@ -6,11 +6,11 @@ This file defines the version for the ai-dev-kit repository using the RC.EPIC.ST
 See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
-VERSION_RC = 0        # Release candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
-VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban sync (Perpetual); UKW comprehensive
-VERSION_BUILD = 24    # Build 24: archive T13; prune BR-059/BR-067; ledgers + AGENTS
+VERSION_RC = 0        # Release Candidate
+VERSION_EPIC = 8      # Epic 8 — Tooling & Automation
+VERSION_STORY = 3     # Story 3 — Automation Scripts
+VERSION_TASK = 5      # Task 5 — Python minimum version (FR-104 / BR-077); RW -k --art
+VERSION_BUILD = 1     # Build 1: Kanban documentation setup (Must Have intake)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.4+24
+# Current: 0.8.3.5+1

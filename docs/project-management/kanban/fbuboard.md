@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (RW **E02:S16:T04** — UKW sync **v0.2.16.4+24**)
-**Version Context:** v0.2.16.4+24 (**SemVer** v0.4.849+24)
+**Last Updated:** 2026-06-03 (RW **E08:S03:T05** — v0.8.3.5+1)
+**Version Context:** v0.8.3.5+1 (**SemVer** v0.4.850+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -43,13 +43,19 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Must Have (M) - Critical Items
 
-*(No Must Have FBU items — 2026-05-30 value audit deferral.)*
+- **FR-104** – Python minimum version policy alignment - 🟢 OPEN (HIGH, Must Have — **v0.8.3.5+1** kanban init) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [E08:S03:T05](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | —No IPP— | Last modified: 2026-06-03 15:47 UTC
+
+- **FR-105** – Dependabot and dependency security automation - 🟢 OPEN (HIGH, Must Have — enable Dependabot; `.github/dependabot.yml`; npm audit triage) | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | [E08:S03:T06](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | —No IPP— | Last modified: 2026-06-03 15:48 UTC
+
+- **BR-077** – Documented Python 3.8+ contradicts repo 3.10+ requirement - 🟢 OPEN (HIGH, Must Have — metadata/doc bug; closed via **FR-104** / **E08:S03:T05**) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | [E08:S03:T05](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | —No IPP— | Last modified: 2026-06-03 15:49 UTC
+
+**2026-06-03:** Operator reprioritized **FR-104**, **FR-105**, **BR-077** to Must Have (UKW comprehensive).
 
 ---
 
 ### Should Have (S) - Important Items
 
-- **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, **E02:S15:T01** Phase 2 **v0.2.15.1+2** shipped; ~28 unwired artifacts remain in corpus audit) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md) | Last modified: 2026-06-02 12:49 UTC
+- **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, **E02:S15:T01** Phase 2 **v0.2.15.1+2** shipped; ~28 unwired artifacts remain in corpus audit) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | —No IPP— | Last modified: 2026-06-02 12:49 UTC
 
 ---
 

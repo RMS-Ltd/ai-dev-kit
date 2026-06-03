@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-03 (RW **E02:S16:T04** — UKW kanban sync **v0.2.16.4+24**)
-**Version:** v0.2.16.4+24 (**SemVer** v0.4.849+24)
+**Last Updated:** 2026-06-03 (RW: E08:S03:T05)
+**Version:** v0.8.3.5+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -26,7 +26,9 @@ housekeeping_policy: keep
 
 ### Must Have (M) - Critical Tasks
 
-*(No Must Have tasks — 2026-05-30 value audit deferral.)*
+- **E08:S03:T05** – FR-104 / BR-077: Python minimum version policy alignment - 📋 TODO (HIGH, Must Have — **v0.8.3.5+1** kanban init) | [Task](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | Last modified: 2026-06-03 15:47 UTC
+
+- **E08:S03:T06** – FR-105: Dependabot and dependency security automation - 📋 TODO (HIGH, Must Have — pip + portal/npm; security updates disabled) | [Task](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | Last modified: 2026-06-03 15:47 UTC
 
 *(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). FR-099 Phases 0–4 complete; public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) bootstrapped 2026-05-28. **E6:S09** installation story ✅ complete — FR-080/081/082/098; latest **E06:S09:T02** FR-081 brownfield INSTALL chapter **v0.6.9.2+2**.)*
 
@@ -37,21 +39,13 @@ housekeeping_policy: keep
 ### Could Have (C) - Nice-to-Have Tasks
 
 - **E10:S01:T01** – Establish expectations baseline for Document Lifecycle package - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md#E10S01T01--establish-expectations-baseline-for-document-lifecycle-package) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:44:08 UTC
-
 - **E10:S01:T02** – Inventory package components and map to expectations - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:45:00 UTC
-
 - **E10:S01:T03** – Validate lifecycle behavior against documented guidance - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:46:00 UTC
-
 - **E10:S01:T04** – Review integrations and dependency alignment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:47:00 UTC
-
 - **E10:S01:T05** – Create gap log and risk assessment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:48:00 UTC
-
 - **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:49:00 UTC
-
 - **E02:S11:T13** – GitHub Actions workflow spam emails (BR-051) - 📋 TODO (LOW, post-story hardening) | [Task](epics/Epic-2/Story-011-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](fr-br/BR-051-github-actions-workflow-spam-emails.md) | Last modified: 2026-05-29 17:15:00 UTC
-
 - **E02:S11:T14** – GitHub Actions workflow optimization (BR-052) - 📋 TODO (LOW, post-story hardening) | [Task](epics/Epic-2/Story-011-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md) | Last modified: 2026-05-29 17:16:00 UTC
-
 - **E09:S01:T03** – FR-032: Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) | [Task](epics/Epic-9/Story-001-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | Last modified: 2026-05-30 10:26 UTC
 
 - **E06:S08:T01** – FR-030: AI Dev Kit CLI Tool - 📋 TODO (MEDIUM, Command-line interface tool) | [Task](epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md) | [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md) | Last modified: 2026-01-16 00:00 UTC
@@ -119,9 +113,9 @@ housekeeping_policy: keep
 
 ### Ongoing (O) - Perpetual Tasks
 
-- **E02:S16:T02** – Inventory and classify workflow-related perpetual tasks - ✅ COMPLETE (IPP perpetual inventory + 3B gate for T03) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [E02:S16:T02](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | [IPP-E2S16T02](../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) | Last modified: 2026-04-20 18:20 UTC
+- **E02:S16:T02** – Inventory and classify workflow-related perpetual tasks - ✅ COMPLETE (IPP perpetual inventory + 3B gate for T03) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [IPP-E2S16T02](../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) | [E02:S16:T02](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) | Last modified: 2026-04-20 18:20 UTC
 
-- **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**; corpus scan) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [IPP-E2S16T03](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-03 12:29 UTC
+- **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**; corpus scan) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [IPP-E2S16T03](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [E02:S16:T03](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-03 12:29 UTC
 
 - **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (UKW **v0.2.16.4+24** — T13 archive; BR-059/067 prune) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | [E02:S16:T04](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | —No IPP— | Last modified: 2026-05-30 17:22 UTC
 

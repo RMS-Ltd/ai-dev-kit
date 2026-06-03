@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+24] - 03-06-26
+## [0.8.3.5+1] - 03-06-26
 
-E02:S16:T04 — UKW kanban sync: archive T13; prune BR-059/BR-067; ledgers. SemVer **v0.4.849+24**.
+E08:S03:T05 — Kanban init: FR-104 / BR-077 Python floor alignment (Must Have). SemVer **v0.4.850+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+24.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.5+1.md)
 
 ---
