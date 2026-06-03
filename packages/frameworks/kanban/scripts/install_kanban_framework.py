@@ -432,7 +432,35 @@ def present_migration_plan(analysis_report_path: Path):
         print(f"⚠️  Could not load migration plan: {e}")
 
 
-def validate_installation(kanban_path: Path, project_root: Path, force: bool = False) -> tuple[bool, str]:
+def ensure_fresh_install_skeleton(kanban_path: Path, dry_run: bool = False) -> None:
+    """
+    Create minimal Kanban directories before pre-install validation in fresh mode.
+
+    Empty greenfield repos have no ``epics/`` yet; validation must not abort before
+    the installer creates structure (BR-080 / E06:S09:T09).
+    """
+    kanban_path = Path(kanban_path)
+    if dry_run:
+        print(
+            "🔍 [DRY RUN] Would create fresh-install skeleton: "
+            f"{kanban_path} and {kanban_path / 'epics'}/"
+        )
+        _log("INFO", f"[KANBAN_FRESH] Dry-run skeleton for {kanban_path}")
+        return
+
+    kanban_path.mkdir(parents=True, exist_ok=True)
+    (kanban_path / "epics").mkdir(exist_ok=True)
+    _log("INFO", f"[KANBAN_FRESH] Created fresh-install skeleton at {kanban_path}")
+
+
+def validate_installation(
+    kanban_path: Path,
+    project_root: Path,
+    force: bool = False,
+    *,
+    install_mode: Optional[str] = None,
+    allow_missing_empty_skeleton: bool = False,
+) -> tuple[bool, str]:
     """Run installation validation and return (should_continue, status)."""
     if InstallationValidator is None:
         print("⚠️  Warning: Validation module not available. Skipping validation.")
@@ -443,7 +471,9 @@ def validate_installation(kanban_path: Path, project_root: Path, force: bool = F
     print("=" * 60)
     
     validator = InstallationValidator(kanban_path, project_root)
-    is_valid, errors, warnings = validator.validate_all()
+    is_valid, errors, warnings = validator.validate_all(
+        allow_missing_empty_skeleton=allow_missing_empty_skeleton,
+    )
     
     if warnings:
         print("\n⚠️  WARNINGS (should be reviewed):")
@@ -456,7 +486,16 @@ def validate_installation(kanban_path: Path, project_root: Path, force: bool = F
             print(f"  {error}")
         
         if not force:
-            print("\n🚨 Validation failed. Fix errors above or use --force to proceed anyway.")
+            if install_mode == "fresh":
+                print(
+                    "\n🚨 Validation failed. For greenfield installs use --mode fresh "
+                    "(creates Kanban skeleton automatically) or fix errors above."
+                )
+            else:
+                print(
+                    "\n🚨 Validation failed. Fix errors above, use --mode fresh on an "
+                    "empty repo for first-time install, or use --force to proceed anyway."
+                )
             response = input("\nProceed despite errors? (yes/no): ").strip().lower()
             if response not in ['yes', 'y']:
                 print("Installation cancelled.")
@@ -616,7 +655,17 @@ Examples:
         args.mode = select_installation_mode(analysis_report, None)
     
     # Step 3.5: Validate installation (before migration)
-    should_continue, validation_status = validate_installation(kanban_path, project_root, force=args.force)
+    if args.mode == "fresh":
+        ensure_fresh_install_skeleton(kanban_path, dry_run=args.dry_run)
+
+    allow_missing_skeleton = args.mode == "fresh" and args.dry_run
+    should_continue, validation_status = validate_installation(
+        kanban_path,
+        project_root,
+        force=args.force,
+        install_mode=args.mode,
+        allow_missing_empty_skeleton=allow_missing_skeleton,
+    )
     if validation_status == "PARTIAL":
         final_status = "PARTIAL"
     if not should_continue:
@@ -669,7 +718,12 @@ Examples:
         # Step 5: Post-installation validation
         if not args.dry_run:
             print("\n🔍 Step 5: Post-installation validation...")
-            should_continue, validation_status = validate_installation(kanban_path, project_root, force=args.force)
+            should_continue, validation_status = validate_installation(
+                kanban_path,
+                project_root,
+                force=args.force,
+                install_mode=args.mode,
+            )
             if validation_status == "PARTIAL":
                 final_status = "PARTIAL"
             if not should_continue:

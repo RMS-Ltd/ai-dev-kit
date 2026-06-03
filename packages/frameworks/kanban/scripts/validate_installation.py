@@ -38,11 +38,17 @@ class InstallationValidator:
         self.project_root = Path(project_root).resolve() if project_root else self.kanban_path.parent.parent
         self.errors: List[str] = []
         self.warnings: List[str] = []
+        self._allow_missing_empty_skeleton = False
         
-    def validate_all(self) -> Tuple[bool, List[str], List[str]]:
+    def validate_all(
+        self,
+        *,
+        allow_missing_empty_skeleton: bool = False,
+    ) -> Tuple[bool, List[str], List[str]]:
         """Run all validations. Returns (is_valid, errors, warnings)."""
         self.errors = []
         self.warnings = []
+        self._allow_missing_empty_skeleton = allow_missing_empty_skeleton
         
         # Run all validations
         self.validate_epic_numbering()
@@ -215,9 +221,17 @@ class InstallationValidator:
         for req_dir in required_dirs:
             dir_path = self.kanban_path / req_dir
             if not dir_path.exists():
-                self.errors.append(
-                    f"❌ Required directory missing: {dir_path.relative_to(self.kanban_path)}"
+                if getattr(self, "_allow_missing_empty_skeleton", False) and req_dir == "epics":
+                    self.warnings.append(
+                        "⚠️  epics/ not present yet (dry-run fresh install — will be created during install)."
+                    )
+                    continue
+                rel = dir_path.relative_to(self.kanban_path)
+                hint = (
+                    " For first-time greenfield install, use "
+                    "`install_kanban_framework.py --mode fresh` (creates epics/ automatically)."
                 )
+                self.errors.append(f"❌ Required directory missing: {rel}.{hint}")
         
         # Check for kanban board files
         board_files = [

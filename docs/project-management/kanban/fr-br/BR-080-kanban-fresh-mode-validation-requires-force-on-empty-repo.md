@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-080  
 **Priority:** HIGH  
 **Severity:** HIGH (first-run install aborts; book must document `--force`)  
-**Status:** OPEN (INTAKE)  
+**Status:** OPEN (INTAKE — fix attempted, pending user verification)  
 **GitHub Issue:** [#12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)  
 **Implementing Task:** [E06:S09:T09](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md)  
 **Created:** 2026-06-03  
@@ -43,7 +43,14 @@ housekeeping_policy: keep
 
 ## Workaround
 
-`--mode fresh --force` (documented in book packet).
+~~`--mode fresh --force` (documented in book packet).~~ **Superseded:** use `--mode fresh` alone on empty repos (BR-080 fix, E06:S09:T09).
+
+## Attempted fix (E06:S09:T09)
+
+- `ensure_fresh_install_skeleton()` creates `epics/` before pre-install validation in fresh mode.
+- Dry-run fresh uses relaxed skeleton validation (warning, not error).
+- Non-fresh modes: epics missing error includes `--mode fresh` guidance.
+- Tests: `tests/kanban/test_install_fresh_validation.py`
 
 ## Related
 

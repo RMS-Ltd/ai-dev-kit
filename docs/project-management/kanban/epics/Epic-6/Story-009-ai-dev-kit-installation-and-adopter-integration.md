@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-03 (v0.6.9.7+1 – Kanban documentation setup)
-**Version:** v0.6.9.7+1
+**Last updated:** 2026-06-03 (v0.6.9.9+2 – T09 complete: E06:S09:T09)
+**Version:** v0.6.9.9+2
 **Code:** E6S09
 
 ---
@@ -46,7 +46,7 @@ housekeeping_policy: keep
 
 - [ ] **E06:S09:T08 – Kanban fresh install Epic 22/23 templates (BR-079)** - TODO (MEDIUM) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)
 
-- [ ] **E06:S09:T09 – Kanban fresh mode validation on empty repo (BR-080)** - TODO (HIGH) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [#12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)
+- [x] **E06:S09:T09 – Kanban fresh mode validation on empty repo (BR-080)** - ✅ COMPLETE (**v0.6.9.9+2**) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [IPP-E06S09T09](../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) | [#12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)
 
 - [ ] **E06:S09:T10 – Kanban install `utcnow()` deprecation (BR-081)** - TODO (LOW) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [BR-081](../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
 

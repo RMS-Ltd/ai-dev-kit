@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-03 (RW: E06:S09:T07)
-**Version:** v0.6.9.7+1
+**Last Updated:** 2026-06-03 (RW: E06:S09:T09)
+**Version:** v0.6.9.9+2
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 
 **2026-06-03:** Book dry-run / GitHub **#10–#15** → **E06:S09** reopened; installer defects **T07–T12** (fix order: **T09** → **T11** → **T07/T08/T12**).
 
-- **E06:S09:T09** – BR-080: Kanban fresh mode validation on empty repo - 📋 TODO (HIGH, greenfield blocker GitHub #12) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | Last modified: 2026-06-03 17:42 UTC
+- **E06:S09:T09** – BR-080: Kanban fresh mode validation on empty repo - ✅ COMPLETE (**v0.6.9.9+2**, greenfield blocker GitHub #12) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | Last modified: 2026-06-03 17:42 UTC
 
 - **E06:S09:T11** – BR-082: RW install PyYAML preflight - 📋 TODO (HIGH, greenfield blocker GitHub #14) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | Last modified: 2026-06-03 17:44 UTC
 
@@ -48,21 +48,13 @@ housekeeping_policy: keep
 - **E06:S09:T10** – BR-081: Kanban install `utcnow()` deprecation - 📋 TODO (LOW, GitHub #13) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | Last modified: 2026-06-03 17:43 UTC
 
 - **E10:S01:T01** – Establish expectations baseline for Document Lifecycle package - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md#E10S01T01--establish-expectations-baseline-for-document-lifecycle-package) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:44:08 UTC
-
 - **E10:S01:T02** – Inventory package components and map to expectations - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:45:00 UTC
-
 - **E10:S01:T03** – Validate lifecycle behavior against documented guidance - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:46:00 UTC
-
 - **E10:S01:T04** – Review integrations and dependency alignment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:47:00 UTC
-
 - **E10:S01:T05** – Create gap log and risk assessment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:48:00 UTC
-
 - **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | [Story](epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:49:00 UTC
-
 - **E02:S11:T13** – GitHub Actions workflow spam emails (BR-051) - 📋 TODO (LOW, post-story hardening) | [Task](epics/Epic-2/Story-011-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](fr-br/BR-051-github-actions-workflow-spam-emails.md) | Last modified: 2026-05-29 17:15:00 UTC
-
 - **E02:S11:T14** – GitHub Actions workflow optimization (BR-052) - 📋 TODO (LOW, post-story hardening) | [Task](epics/Epic-2/Story-011-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md) | Last modified: 2026-05-29 17:16:00 UTC
-
 - **E09:S01:T03** – FR-032: Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) | [Task](epics/Epic-9/Story-001-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | Last modified: 2026-05-30 10:26 UTC
 
 - **E06:S08:T01** – FR-030: AI Dev Kit CLI Tool - 📋 TODO (MEDIUM, Command-line interface tool) | [Task](epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md) | [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md) | Last modified: 2026-01-16 00:00 UTC

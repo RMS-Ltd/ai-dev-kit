@@ -20,6 +20,10 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **Epic 6: Framework Management (Story 9 — Installation)**
+- **[E06:S09:T09](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md)** — **BR-080**: Fresh kanban install on empty repo without `--force` (skeleton-before-validate).
+  **Completed:** `2026-06-03T19:15:00Z` | **Version:** `v0.6.9.9+2` | **Agent:** `RW` | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [IPP-E06S09T09](../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md)
+
 #### **Epic 8: Tooling & Automation (Story 3 — Automation scripts)**
 - **[E08:S03:T06](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md)** — **FR-105**: Dependabot pip + portal npm, security updates, npm audit triage.
   **Completed:** `2026-06-03T16:00:00Z` | **Version:** `v0.8.3.6+2` | **Agent:** `RW` | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | [IPP-E08S03T06](../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)

@@ -32,6 +32,7 @@ Provide canonical templates for Epic 22 and 23 (or explicit skip) during fresh k
 
 - [BR-079](../../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md)
 - Epic 22/23 template sources under kanban package
+- **IPW:** [IPP-E06S09T08-br079-epic-22-23-install-templates.md](../../../../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md) — **Publication Status: PUBLISHED**
 
 ---
 
@@ -52,4 +53,5 @@ Provide canonical templates for Epic 22 and 23 (or explicit skip) during fresh k
 ## Links
 
 - [BR-079](../../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md)
+- [IPP-E06S09T08](../../../../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md)
 - [Story 009](../Story-009-ai-dev-kit-installation-and-adopter-integration.md)
