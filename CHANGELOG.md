@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.3+6] - 03-06-26
+## [0.2.16.4+24] - 03-06-26
 
-E02:S16:T03 — BR-059 RESOLVED; MoSCOW corpus scan; E02:S11:T13–T14 on kboard. SemVer **v0.4.848+6**.
+E02:S16:T04 — UKW kanban sync: archive T13; prune BR-059/BR-067; ledgers. SemVer **v0.4.849+24**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+6.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+24.md)
 
 ---

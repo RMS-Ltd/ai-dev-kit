@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-01 (RW **E02:S16:T04** — FR-072, FR-021 ledger)
-**Version:** v0.2.16.4+23 (**SemVer** v0.4.844+23)
+**Last Updated:** 2026-06-03 (UKW — **BR-059**, **BR-067** ledger)
+**Version:** v0.2.16.3+6 (**SemVer** v0.4.848+6)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-059 | BR | UKW MoSCOW incomplete story task coverage — Part B.1 + validator (**E02:S16:T13**) | 2026-06-03T16:00:00Z | v0.2.16.3+6 | UKW |
+| BR-067 | BR | RW doc-only releases default to BUILD+1 — `--doc-policy-zero` Tranche 3 (**E02:S16:T03**) | 2026-06-03T12:00:00Z | v0.2.16.3+2 | RW |
 | UXR-005 | UXR | Kanban MoSCOW spacing rule + validator (**E07:S01:T09**) | 2026-06-01T18:00:00Z | v0.7.1.9+5 | IPW/RW pending |
 | FR-072 | FR | Uniform repository abstract-space kanban rules — ADR-014 D2–D4 (**E04:S19:T08**, merged T07) | 2026-06-01T18:40:00Z | v0.4.19.8+2 | RW |
 | FR-021 | FR | FR/BR/UXR repository stories pattern — **SUPERSEDED** by FR-072 / **E04:S19:T08** (T07 merged) | 2026-06-01T18:40:00Z | v0.4.19.8+2 | UKW Agent |

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-02 (UKW -c — **E02:S15:T01** ledger refresh)
-**Version:** v0.2.15.1+2
+**Last Updated:** 2026-06-03 (UKW — **E02:S16:T13** ledger)
+**Version:** v0.2.16.13+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 2: Workflow Management Framework (Story 16 — Perpetual workflow ops)**
+- **[E02:S16:T13](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)** — **BR-059**: UKW MoSCOW full open-task coverage per story (Part B.1 + validator).
+  **Completed:** `2026-06-03T12:00:00Z` | **Version:** `v0.2.16.13+1` | **Agent:** `UKW` | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [IPP-E02S16T13](../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
 
 #### **Epic 2: Workflow Management Framework (Story 15 — IPW governance and publication contract)**
 - **[E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)** — **BR-066** Phase 2: bulk publication audit, validator hardening, targeted backfill, IPP.

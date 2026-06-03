@@ -1,0 +1,22 @@
+{
+  "report_type": "ukw_comprehensive_archive",
+  "invocation": "UKW",
+  "evidence_mode": "structure_prune",
+  "summary": {
+    "kboard_archived": 1,
+    "fbuboard_archived": 2,
+    "skipped": 0,
+    "already_in_ledger": 0
+  },
+  "archived": {
+    "kboard": ["E02:S16:T13"],
+    "fbuboard": ["BR-059", "BR-067"]
+  },
+  "ledger_before_removal": true,
+  "rows": {
+    "E02:S16:T13": { "allowed": true, "reason": "UKW archive COMPLETE task; ledger kanban-completed.md v0.2.16.13+1" },
+    "BR-059": { "allowed": true, "reason": "UKW prune RESOLVED FBU; ledger fbu-completed.md v0.2.16.3+6" },
+    "BR-067": { "allowed": true, "reason": "UKW prune RESOLVED FBU; ledger fbu-completed.md v0.2.16.3+2" }
+  },
+  "timestamp": "2026-06-03T13:10:00Z"
+}

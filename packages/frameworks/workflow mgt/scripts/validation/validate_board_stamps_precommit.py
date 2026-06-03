@@ -28,6 +28,7 @@ from stamp_authority import (  # noqa: E402
     homogeneity_clusters_blocking,
     homogeneity_threshold_from_config,
     kanban_root_from_config,
+    load_evidence_manifest,
     load_rw_config,
     validate_stamp_diff,
 )
@@ -62,6 +63,26 @@ def staged_backfill_report(staged: List[str]) -> bool:
     return False
 
 
+def staged_structure_prune_manifest(project_root: Path, staged: List[str]) -> Optional[dict]:
+    """Load UKW/RW structure-prune evidence (row removals) from staged four-surface JSON."""
+    candidates = [
+        p
+        for p in staged
+        if "four-surface-reports" in p
+        and p.endswith(".json")
+        and (
+            "archive-proof" in p.lower()
+            or "structure-prune" in p.lower()
+            or "structure_prune" in p.lower()
+        )
+    ]
+    for rel in sorted(candidates):
+        path = project_root / rel
+        if path.is_file():
+            return load_evidence_manifest(path)
+    return None
+
+
 def read_staged_content(project_root: Path, rel_path: str) -> Optional[str]:
     result = _git("show", f":{rel_path}", cwd=project_root)
     if result.returncode != 0:
@@ -83,6 +104,7 @@ def check_board(
     kroot: Path,
     threshold: int,
     allow_backfill: bool,
+    evidence_manifest: Optional[dict] = None,
 ) -> Tuple[bool, List[str]]:
     errors: List[str] = []
     staged_content = read_staged_content(project_root, rel_path)
@@ -109,7 +131,7 @@ def check_board(
             staged_content,
             project_root=project_root,
             board_path=project_root / rel_path,
-            evidence_manifest=None,
+            evidence_manifest=evidence_manifest,
         )
         if not passed and not allow_backfill:
             for d in denied:
@@ -134,6 +156,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 0
 
     allow_backfill = staged_backfill_report(staged)
+    prune_manifest = staged_structure_prune_manifest(project_root, staged)
     all_errors: List[str] = []
     for rel_path in boards:
         ok, errs = check_board(
@@ -142,6 +165,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             kroot=kroot,
             threshold=threshold,
             allow_backfill=allow_backfill,
+            evidence_manifest=prune_manifest,
         )
         if not ok:
             all_errors.extend(errs)

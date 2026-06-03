@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-02 (UKW **-c** — **E02:S15:T01** pruned from kboard; **BR-066** stays active)
-**Version Context:** v0.2.15.1+2 (**SemVer** v0.4.786+2)
+**Last Updated:** 2026-06-03 (RW **E02:S16:T04** — UKW sync **v0.2.16.4+24**)
+**Version Context:** v0.2.16.4+24 (**SemVer** v0.4.849+24)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -49,13 +49,11 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
-- **BR-059** – UKW MoSCOW incomplete story task coverage - 📋 TODO (HIGH, **E02:S16:T13** on kboard) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [E02:S16:T13](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
-
-- **BR-067** – RW doc-only releases default to BUILD+1 instead of doc-init +0 - 🔄 IN PROGRESS (HIGH, policy/docs **v0.2.16.3+0**; pending maintainer verification) | [BR-067](fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) | [E02:S16:T03](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-05-30 16:26 UTC
-
 - **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, **E02:S15:T01** Phase 2 **v0.2.15.1+2** shipped; ~28 unwired artifacts remain in corpus audit) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md) | Last modified: 2026-06-02 12:49 UTC
 
 ---
+
+**2026-06-03:** UKW comprehensive pruned **BR-059** (**RESOLVED** **v0.2.16.3+6**), **BR-067** (**RESOLVED** Tranche 3); see [`fbu-completed.md`](fbu-completed.md).
 
 **2026-06-02:** UKW **-c** archived **E02:S15:T01** from [`kboard.md`](kboard.md) Should Have (**v0.2.15.1+2**); **BR-066** row retained (OPEN — corpus tail).
 

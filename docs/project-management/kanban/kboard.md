@@ -9,8 +9,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-03 (RW **E02:S16:T03** — BR-059 RESOLVED **v0.2.16.3+6**)
-**Version:** v0.2.16.3+6 (**SemVer** v0.4.848+6)
+**Last Updated:** 2026-06-03 (RW **E02:S16:T04** — UKW kanban sync **v0.2.16.4+24**)
+**Version:** v0.2.16.4+24 (**SemVer** v0.4.849+24)
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E02:S16:T13** – BR-059: UKW MoSCOW full open-task coverage per in-progress story - ✅ COMPLETE (HIGH, **v0.2.16.13+1**, re-housed from `E06:S07:T109`) | [Task](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [IPP-E02S16T13](../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md) | Last modified: 2026-06-03 12:00 UTC
+*(No Should Have tasks — 2026-05-30 value audit deferral; **E02:S16:T13** archived UKW 2026-06-03.)*
 
 ### Could Have (C) - Nice-to-Have Tasks
 
@@ -113,7 +113,7 @@ housekeeping_policy: keep
 - **E08:S03:T04** – BR-058: CI test workflow missing and pytest failures - 🟢 OPEN (LOW) | [Task](epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | Last modified: 2026-05-30 13:35 UTC
 
 
-*(E04:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). **E06:S07:T107** archived **v0.6.7.107+3** — RW 2026-05-30; [kanban-completed.md](kanban-completed.md). **E02:S16:T17**, **E02:S01:T23** archived **v0.2.16.17+2** / **v0.2.1.23+1** — UKW -c 2026-05-30. **E02:S16:T16** / **FR-102** archived **v0.2.16.16+3**. **E02:S15:T01** archived **v0.2.15.1+2** — UKW -c 2026-06-02 ([kanban-completed.md](kanban-completed.md); **BR-066** remains on [fbuboard.md](fbuboard.md)). FR-031 / FR-024 / FR-057 retired — [fbu-completed.md](fbu-completed.md).)*
+*(E04:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). **E06:S07:T107** archived **v0.6.7.107+3** — RW 2026-05-30; [kanban-completed.md](kanban-completed.md). **E02:S16:T17**, **E02:S01:T23** archived **v0.2.16.17+2** / **v0.2.1.23+1** — UKW -c 2026-05-30. **E02:S16:T16** / **FR-102** archived **v0.2.16.16+3**. **E02:S15:T01** archived **v0.2.15.1+2** — UKW -c 2026-06-02 ([kanban-completed.md](kanban-completed.md); **BR-066** remains on [fbuboard.md](fbuboard.md)). **E02:S16:T13** archived **v0.2.16.13+1** — UKW 2026-06-03 ([kanban-completed.md](kanban-completed.md); **BR-059** **RESOLVED**). FR-031 / FR-024 / FR-057 retired — [fbu-completed.md](fbu-completed.md).)*
 
 
 
@@ -123,7 +123,7 @@ housekeeping_policy: keep
 
 - **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**; corpus scan) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [IPP-E2S16T03](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-03 12:29 UTC
 
-- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (kboard/fbuboard bidirectional restore +31 rows; RW **v0.2.16.4+22**) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | [E02:S16:T04](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | —No IPP— | Last modified: 2026-05-30 17:22 UTC
+- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (UKW **v0.2.16.4+24** — T13 archive; BR-059/067 prune) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | [E02:S16:T04](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | —No IPP— | Last modified: 2026-05-30 17:22 UTC
 
 - **E02:S16:T10** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (last RW **v0.2.16.10+4** — project root hygiene: remove junk media/logs/snapshots; relocate low-value root files; `.gitignore`) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [E02:S16:T10](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | —No IPP— | Last modified: 2026-05-29 10:59 UTC
 

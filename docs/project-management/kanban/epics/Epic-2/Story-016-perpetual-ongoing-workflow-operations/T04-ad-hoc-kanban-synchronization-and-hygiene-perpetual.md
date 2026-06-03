@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-01 (RW **v0.2.16.4+23** — UKW -u bookkeeping; archived FR-072, FR-021)
-**Version Anchor:** v0.2.16.4+23
+**Last updated:** 2026-06-03 (RW **v0.2.16.4+24** — UKW comprehensive kanban sync)
+**Version Anchor:** v0.2.16.4+24
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 
