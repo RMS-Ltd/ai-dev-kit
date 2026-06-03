@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T11-rw-install-pyyaml-preflight-br082.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) **(E06:S09:T11)**  
 **Planning for:** [BR-082](../project-management/kanban/fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) · [GitHub #14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)  
-**Status:** Approved (planning complete — **HIGH**; await implementation authorization)
+**Status:** Implemented (2026-06-03 — pending user verification / RW)
 
 ---
 

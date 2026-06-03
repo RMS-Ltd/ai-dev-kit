@@ -21,6 +21,8 @@ housekeeping_policy: keep
 ## 20 Most Recently Completed Tasks
 
 #### **Epic 6: Framework Management (Story 9 — Installation)**
+- **[E06:S09:T11](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md)** — **BR-082**: RW install PyYAML preflight (`--check-deps`, INSTALL Step 3b).
+  **Completed:** `2026-06-03T19:19:22Z` | **Version:** `v0.6.9.11+2` | **Agent:** `RW` | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [IPP-E06S09T11](../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md)
 - **[E06:S09:T09](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md)** — **BR-080**: Fresh kanban install on empty repo without `--force` (skeleton-before-validate).
   **Completed:** `2026-06-03T19:15:00Z` | **Version:** `v0.6.9.9+2` | **Agent:** `RW` | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [IPP-E06S09T09](../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md)
 

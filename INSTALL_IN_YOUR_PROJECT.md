@@ -89,6 +89,23 @@ Normative contract: [ECC ↔ ADK integration specification](docs/architecture/st
   - `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
   - `packages/frameworks/kanban/scripts/install_kanban_framework.py`
 
+### Installer venv dependencies (before Step 3 / RW install)
+
+Submodule-only and book dry-runs often copy frameworks **without** installing Python deps into the **consumer** venv. Install **before** the first `install_release_workflow.py` run (book T03 Step 3, greenfield Step 4 below):
+
+```bash
+# From your project root with venv activated:
+pip install 'pyyaml>=6.0'
+
+# Or install from the ai-dev-kit checkout (includes setup.py deps):
+pip install -e ./vendor/ai-dev-kit   # adjust path to your submodule/checkout
+
+# Preflight (non-interactive):
+python3 "packages/frameworks/workflow mgt/scripts/install_release_workflow.py" --check-deps
+```
+
+The RW installer exits with the same guidance if PyYAML is missing (BR-082).
+
 ### Outputs
 
 - Framework assets copied/available in target project.
@@ -142,7 +159,7 @@ python3 "packages/frameworks/workflow mgt/scripts/install_greenfield_path.py" \
 ### Failure modes and handling
 
 - **Missing Python dependency (e.g., PyYAML)**  
-  Action: install dependency and re-run installer.
+  Action: run `install_release_workflow.py --check-deps`, then `pip install 'pyyaml>=6.0'` (or `pip install -e` from kit checkout); see [Installer venv dependencies](#installer-venv-dependencies-before-step-3--rw-install).
 - **Installer path mismatch / missing scripts**  
   Action: correct framework copy/acquisition path; do not bypass installers.
 - **Existing conflicting config files**  
@@ -370,6 +387,11 @@ cd ..
 # Step 3: Copy frameworks to your project
 cp -r .ai-dev-kit/packages/frameworks/workflow\ mgt/* ./
 cp -r .ai-dev-kit/packages/frameworks/kanban/* ./
+
+# Step 3b: Installer venv dependencies (REQUIRED before RW install — BR-082)
+source .venv/bin/activate   # if you use a venv
+pip install 'pyyaml>=6.0'
+python3 "packages/frameworks/workflow mgt/scripts/install_release_workflow.py" --check-deps
 
 # Step 4: Run framework installers (REQUIRED - don't skip!)
 # Preferred: orchestration wrapper (includes checkpoint + override support)

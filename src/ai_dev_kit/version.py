@@ -9,8 +9,8 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 VERSION_RC = 0        # Release Candidate
 VERSION_EPIC = 6      # Epic 6 — Framework Management
 VERSION_STORY = 9     # Story 9 — AI Dev Kit installation and adopter integration
-VERSION_TASK = 9      # Task 9 — BR-080 fresh mode validation (empty repo)
-VERSION_BUILD = 2     # Build 2: skeleton-before-validate; pytest BR-080
+VERSION_TASK = 11     # Task 11 — BR-082 RW install PyYAML preflight
+VERSION_BUILD = 2     # Build 2: check_dependencies, --check-deps, INSTALL docs
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.9+2
+# Current: 0.6.9.11+2

@@ -164,7 +164,17 @@ This package is designed to be **fully modular** with maximum flexibility. You c
 **Hard dependencies (required):**
 - Git (for version control)
 - Python 3 (for validation scripts)
+- **PyYAML** (`pyyaml>=6.0`) for `install_release_workflow.py` and RW config generation
 - AI Assistant (for agent-driven execution)
+
+**RW installer preflight (BR-082):** Before the first interactive install, run:
+
+```bash
+python scripts/install_release_workflow.py --check-deps
+pip install 'pyyaml>=6.0'   # if preflight reports missing deps
+```
+
+See [INSTALL_IN_YOUR_PROJECT.md — Installer venv dependencies](../../../INSTALL_IN_YOUR_PROJECT.md#installer-venv-dependencies-before-step-3--rw-install).
 
 **Independence score:** 9/10 — Can be used standalone with minimal external dependencies.
 

@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.6.9.9+2] - 03-06-26
+
+E06:S09:T09 — Attempted fix BR-080: fresh kanban install on empty repo without `--force` (skeleton-before-validate + tests). SemVer **v0.4.855+2**.
+
+[Detailed changelog](CHANGELOG_v0.6.9.9+2.md)
+---
 ## [0.2.16.3+3] - 03-06-26
 
 E02:S16:T03 — SitRep IPW housekeeping. SemVer **v0.4.847+3**.

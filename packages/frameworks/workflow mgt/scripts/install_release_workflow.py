@@ -9,25 +9,82 @@ Installs the Release Workflow (RW) into a target project by:
 
 Usage:
     python install_release_workflow.py [--dry-run] [--config CONFIG_FILE] [--mode MODE]
+    python install_release_workflow.py --check-deps
 
     --dry-run: Print intended changes without writing files
     --config: Path to existing rw-config.yaml (skips questions)
     --mode: Preset mode (a=Simple RW, b=RW+Versioning, c=Full Stack)
+    --check-deps: Verify installer dependencies and exit (0=OK, 1=missing)
 """
 
 import argparse
+import importlib.util
 import os
 import re
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Dict, List, Optional, Tuple
 
-try:
-    import yaml
-except ImportError:
-    print("ERROR: PyYAML is required. Install with: pip install pyyaml")
+# Minimal RW installer runtime dependencies (see repo setup.py).
+INSTALLER_DEPENDENCIES: Tuple[Tuple[str, str, str], ...] = (
+    ("yaml", "pyyaml", "pyyaml>=6.0"),
+)
+
+
+def check_dependencies() -> Tuple[bool, List[str]]:
+    """Return (ok, missing_pip_names) for installer runtime deps."""
+    missing: List[str] = []
+    for import_name, pip_name, _spec in INSTALLER_DEPENDENCIES:
+        if importlib.util.find_spec(import_name) is None:
+            missing.append(pip_name)
+    return (len(missing) == 0, missing)
+
+
+def format_dependency_help(missing: List[str]) -> str:
+    """Actionable stderr/stdout message before interactive install (BR-082)."""
+    lines = [
+        "ERROR: RW installer dependencies are missing.",
+        "",
+        "Required Python packages:",
+    ]
+    for import_name, pip_name, spec in INSTALLER_DEPENDENCIES:
+        marker = " (MISSING)" if pip_name in missing else ""
+        lines.append(f"  - {pip_name} ({spec}){marker}")
+    lines.extend(
+        [
+            "",
+            "Install in your project venv before running this installer:",
+            "  pip install 'pyyaml>=6.0'",
+            "",
+            "Or install ai-dev-kit with dependencies from the kit checkout:",
+            "  pip install -e ./vendor/ai-dev-kit",
+            "  # or: pip install -e /path/to/ai-dev-kit",
+            "",
+            "Greenfield / book path: see INSTALL_IN_YOUR_PROJECT.md",
+            "  \"Installer venv dependencies\" — install deps before Step 3 (RW install).",
+            "",
+            "Preflight only: python install_release_workflow.py --check-deps",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def require_dependencies() -> None:
+    """Exit 1 with BR-082 message when dependencies are missing."""
+    ok, missing = check_dependencies()
+    if ok:
+        return
+    print(format_dependency_help(missing), file=sys.stderr)
     sys.exit(1)
+
+
+def get_yaml():
+    """Import PyYAML after dependency check."""
+    require_dependencies()
+    import yaml  # noqa: WPS433 — lazy import by design
+
+    return yaml
 
 
 # Template paths (relative to this script)
@@ -394,6 +451,7 @@ def generate_cursorrules_section(config: Dict) -> str:
 
 def patch_workflow_yaml(workflow_path: Path, config: Dict, dry_run: bool = False) -> str:
     """Patch release-workflow.yaml to use config values."""
+    yaml = get_yaml()
     if not workflow_path.exists():
         return f"⚠️  Workflow file not found: {workflow_path}"
     
@@ -473,8 +531,25 @@ Brownfield (existing repo):
                        help='Preset mode: a=Simple RW, b=RW+Versioning, c=Full Stack')
     parser.add_argument('--project-root', type=str, default='.',
                        help='Project root directory (default: current directory)')
+    parser.add_argument(
+        '--check-deps',
+        action='store_true',
+        help='Verify installer dependencies (pyyaml) and exit (0=OK, 1=missing)',
+    )
     
     args = parser.parse_args()
+
+    if args.check_deps:
+        ok, missing = check_dependencies()
+        if ok:
+            print("OK: RW installer dependencies satisfied.")
+            for _import_name, pip_name, spec in INSTALLER_DEPENDENCIES:
+                print(f"  - {pip_name} ({spec})")
+            sys.exit(0)
+        print(format_dependency_help(missing), file=sys.stderr)
+        sys.exit(1)
+
+    yaml = get_yaml()
     
     project_root = Path(args.project_root).resolve()
     

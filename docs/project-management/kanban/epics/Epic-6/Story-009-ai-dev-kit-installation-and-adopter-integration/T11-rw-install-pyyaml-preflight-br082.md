@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 11: RW install PyYAML preflight (BR-082)
 
 **Task ID:** E06:S09:T11  
-**Status:** TODO  
+**Status:** COMPLETE (pending user verification on book replay)  
 **Priority:** HIGH  
 **Created:** 2026-06-03  
 **Code:** E06S09T11
@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ## Version Anchor
 
-**Version:** v0.6.9.11+1 (RW -k)
+**Version:** v0.6.9.11+2 (RW --art)
 
 ---
 
@@ -44,8 +44,14 @@ Improve `install_release_workflow.py` first-run UX: preflight or docs for `pyyam
 
 ## Acceptance Criteria
 
-- [ ] Actionable preflight or documented deps before mode C install.
-- [ ] Book/submodule-only path references minimal `pip install` one-liner.
+- [x] Actionable preflight or documented deps before mode C install (`--check-deps`, `check_dependencies()`).
+- [x] Book/submodule-only path references minimal `pip install` one-liner (`INSTALL_IN_YOUR_PROJECT.md` Step 3b).
+
+## Implementation notes (2026-06-03)
+
+- `check_dependencies()`, `format_dependency_help()`, `--check-deps` in `install_release_workflow.py`.
+- Tests: `tests/test_install_release_workflow_deps.py`.
+- **Verification:** Re-run book T03 Step 3 on ExpensesTracker-style venv without pre-installed PyYAML; confirm preflight message before questionnaire.
 
 ---
 

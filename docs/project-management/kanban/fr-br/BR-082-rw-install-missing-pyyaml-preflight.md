@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-082  
 **Priority:** HIGH  
 **Severity:** HIGH (hard stop on first RW install after submodule-only setup)  
-**Status:** OPEN (INTAKE)  
+**Status:** OPEN (fix attempted — pending verification)  
 **GitHub Issue:** [#14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)  
 **Implementing Task:** [E06:S09:T11](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md)  
 **Created:** 2026-06-03  
@@ -55,6 +55,8 @@ pip install 'pyyaml>=6.0'
 
 ## Acceptance Criteria
 
-- [ ] Installer preflight or docs cover PyYAML before interactive RW install.
-- [ ] Greenfield/book spine Step 3 does not dead-end without deps list.
-- [ ] Error message cites `setup.py` / minimal install one-liner.
+- [x] Installer preflight or docs cover PyYAML before interactive RW install (attempted — **E06:S09:T11**).
+- [x] Greenfield/book spine Step 3 does not dead-end without deps list (`INSTALL_IN_YOUR_PROJECT.md` Step 3b).
+- [x] Error message cites `setup.py` / minimal install one-liner (`pip install 'pyyaml>=6.0'`, `pip install -e` kit path).
+
+**Verification:** User to confirm on book replay (ExpensesTracker T03) before closing BR-082.
