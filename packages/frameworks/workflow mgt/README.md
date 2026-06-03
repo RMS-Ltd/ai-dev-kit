@@ -286,7 +286,7 @@ python scripts/install_release_workflow.py --mode c
 python scripts/install_release_workflow.py --mode c --dry-run
 ```
 
-After a **fresh kanban install**, mode C detects `epics/Epic-{n}/Epic-{n}.md` and `Story-{story:03d}-*.md` on disk and uses those as prompt defaults (BR-083). See `INSTALL_IN_YOUR_PROJECT.md` § Post-kanban RW install.
+After a **fresh kanban install**, mode C detects epic/story patterns on disk (BR-083), emits **`task_doc_pattern`** and **`fr_br_root`** in generated `rw-config.yaml`, and blocks persisting zero-match epic/story patterns when the kanban tree exists (BR-084). See `INSTALL_IN_YOUR_PROJECT.md` § Post-kanban RW install.
 
 ### What the Installer Does
 

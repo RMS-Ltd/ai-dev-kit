@@ -31,6 +31,8 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
+- **E02:S13:T08** – Sync packaged workflows with live repo implementation - 📋 TODO (HIGH, YAML/registry/dual-source parity vs `.cursorrules` + vwmp) | [Task](epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | [Story](epics/Epic-2/Story-013-workflow-management-package-implementation-review.md) | Last modified: 2026-06-03 20:00 UTC
+
 **2026-06-03:** Book dry-run / GitHub **#10–#16** → **E06:S09** reopened; installer defects **T07–T13** (fix order: **T09** ✅ → **T11** ✅ → **T07** ✅ → **T08** ✅ → **T12** → **T13** → **T10**).
 
 - **E06:S09:T09** – BR-080: Kanban fresh mode validation on empty repo - ✅ COMPLETE (**v0.6.9.9+2**, greenfield blocker GitHub #12) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | Last modified: 2026-06-03 17:42 UTC
@@ -43,7 +45,7 @@ housekeeping_policy: keep
 
 - **E06:S09:T12** – BR-083: RW install rw-config pattern defaults - ✅ COMPLETE (**v0.6.9.12+2**, GitHub #15) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | Last modified: 2026-06-03 17:45 UTC
 
-- **E06:S09:T13** – BR-084: RW Mode C missing task_doc_pattern / wrong persisted patterns - 📋 TODO (MEDIUM, **v0.6.9.13+1** kanban init, GitHub #16) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | Last modified: 2026-06-03 19:18 UTC
+- **E06:S09:T13** – BR-084: RW Mode C missing task_doc_pattern / wrong persisted patterns - ✅ COMPLETE (**v0.6.9.13+2**, pending verification, GitHub #16) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | Last modified: 2026-06-03 19:18 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 

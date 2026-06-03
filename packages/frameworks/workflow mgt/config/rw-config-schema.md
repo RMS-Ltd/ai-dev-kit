@@ -48,6 +48,8 @@ These keys are only required if using specific features:
 | `epic_doc_pattern` | string | `use_kanban: true` | Pattern for epic docs (relative to `kanban_root`) | `epics/Epic-{epic}/Epic-{epic}.md` |
 | `story_doc_pattern` | string | `use_kanban: true` | Pattern for story docs (relative to `kanban_root`) | `epics/Epic-{epic}/Story-{story}-*.md` |
 | `kanban_board` | string | `use_kanban: true` | Main Kanban board file (relative to `kanban_root`) | `_index.md` |
+| `task_doc_pattern` | string | `use_kanban: true` (recommended) | Pattern for task docs (relative to `kanban_root`; include `{epic}`, `{story}`, `{task}`) | `epics/Epic-{epic}/Story-{story}/T{task}-*.md` |
+| `fr_br_root` | string | Optional | FR/BR directory (relative to **project root**, not `kanban_root`) | `docs/project-management/kanban/fr-br` |
 | `versioning_schema` | string | Optional | Version schema (default: `RC.EPIC.STORY.TASK+BUILD`) | `RC.EPIC.STORY.TASK+BUILD` |
 | `versioning_mode` | string | Optional (recommended) | Versioning model: `dual`, `semver_only`, `kanban_only` | `dual` |
 | `semver_mapping_strategy` | string | Optional | SemVer mapping strategy (`task_touch` or `registry`) | `task_touch` |

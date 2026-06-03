@@ -127,9 +127,11 @@ kanban_root: docs/project-management/kanban
 epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
 story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
 kanban_board: kboard.md
+task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md
+fr_br_root: docs/project-management/kanban/fr-br
 ```
 
-(`task_doc_pattern` and `fr_br_root` are **E06:S09:T13** / GitHub #16 — not T12.)
+Mode C also **detects** `fr-br/` when present and refuses to persist zero-match epic/story patterns while kanban files exist (BR-084).
 
 ### Outputs
 

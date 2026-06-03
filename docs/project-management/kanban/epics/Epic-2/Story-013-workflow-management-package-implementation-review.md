@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-01-21 (v0.2.13.1+2 – T01: Fixed .env.local loading in GitHub release script)  
+**Last updated:** 2026-06-03 (E02:S13:T08 filed — sync packaged workflows with live repo)  
 **Version:** v0.2.13.1+2  
 **Code:** E2S13
 
@@ -30,6 +30,9 @@ housekeeping_policy: keep
 - [ ] **E02:S13:T06 – Define RC sign-off criteria and remediation tasks** - TODO
 - [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
   - Task Doc: [`T07-rw-semver-tag-when-task-touch-enabled.md`](Story-013-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)
+
+- [ ] **E02:S13:T08 – Sync packaged workflows with live repo implementation** - TODO
+  - Task Doc: [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
 
 
 ---
@@ -134,6 +137,14 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 **Input:** Gap log and expected behaviors  
 **Deliverable:** RC sign-off checklist and remediation task list  
 **Approach:** Define minimum bar for RC and backlog tasks.
+
+### E02:S13:T08 – Sync packaged workflows with live repo implementation
+
+**Task ID:** E02:S13:T08  
+**Status:** TODO  
+**Scope:** Reconcile packaged workflow YAML, `canonical-rw-steps.yaml`, portable rule excerpts, and registry metadata with live agent execution spec (root `.cursorrules`, vwmp guides, validators). Extends E05:S01:T66 dual-source parity to Step 9 FR-097/FR-092 validators and YAML/registry drift.  
+**Deliverable:** Updated package artefacts + parity delta log + sync report.  
+**Task Doc:** [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
 
 ---
 

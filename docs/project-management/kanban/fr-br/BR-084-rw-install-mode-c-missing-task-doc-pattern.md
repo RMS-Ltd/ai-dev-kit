@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-084  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (broken `rw-config.yaml` after fresh kanban + RW install)  
-**Status:** OPEN (INTAKE — kanban wired **v0.6.9.13+1**)  
+**Status:** OPEN (fix attempted **v0.6.9.13+2** — pending verification)  
 **GitHub Issue:** [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
 **Related:** [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) (BR-083 — prompt defaults)  
 **Implementing Task:** [E06:S09:T13](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md)  
@@ -70,6 +70,8 @@ Manual edit `rw-config.yaml` after install (ai-dev-kit-book T03 Step 4.1).
 
 ## Acceptance Criteria
 
-- [ ] Fresh kanban → RW mode C → epic pattern matches `epics/Epic-1/Epic-1.md` without manual edit.
-- [ ] Generated config includes `task_doc_pattern`.
-- [ ] Integration test: temp repo, fresh kanban + RW install, glob match ≥1 for epic pattern.
+- [x] Fresh kanban → RW mode C → epic pattern matches `epics/Epic-1/Epic-1.md` without manual edit (T12 + T13).
+- [x] Generated config includes `task_doc_pattern` (+ `fr_br_root` when `fr-br/` exists).
+- [x] Integration test: `tests/test_install_release_workflow_rw_config.py`.
+
+**Verification:** User to confirm on book replay (GitHub #16) before closing BR-084.

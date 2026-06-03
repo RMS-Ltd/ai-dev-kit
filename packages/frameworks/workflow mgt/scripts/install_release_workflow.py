@@ -171,8 +171,11 @@ def pattern_to_preview_glob(pattern: str) -> str:
 # Kanban installer (fresh) layout — matches install_kanban_framework.py output (BR-083).
 FRESH_KANBAN_EPIC_PATTERN = "epics/Epic-{epic}/Epic-{epic}.md"
 FRESH_KANBAN_STORY_PATTERN = "epics/Epic-{epic}/Story-{story:03d}-*.md"
+FRESH_KANBAN_TASK_PATTERN = "epics/Epic-{epic}/Story-{story}/T{task}-*.md"
+SLUG_KANBAN_TASK_PATTERN = "epics/Epic-{epic}/Story-{story:03d}-*/T{task}-*.md"
 LEGACY_KANBAN_EPIC_PATTERN = "epics/Epic-{epic}.md"
 LEGACY_KANBAN_STORY_PATTERN = "epics/Epic-{epic}/stories/Story-{story}-*.md"
+DEFAULT_FR_BR_SUBDIR = "fr-br"
 
 
 def preview_pattern_matches(
@@ -196,13 +199,20 @@ def preview_pattern_matches(
     return len(all_matches), samples, None
 
 
+def kanban_root_exists(project_root: Path, kanban_root: str) -> bool:
+    """True when the configured kanban root directory is already on disk."""
+    return (project_root / kanban_root).resolve().is_dir()
+
+
 def prompt_pattern_with_validation(
     prompt: str,
     default: str,
     project_root: Path,
     kanban_root: str,
     required_placeholders: list[str],
-    suggestion_examples: list[str]
+    suggestion_examples: list[str],
+    *,
+    strict_zero_match: bool = False,
 ) -> str:
     """Prompt for pattern with required placeholder and preview validation."""
     while True:
@@ -224,6 +234,12 @@ def prompt_pattern_with_validation(
                 print("  Suggested examples:")
                 for suggestion in suggestion_examples:
                     print(f"    - {suggestion}")
+            if strict_zero_match and kanban_root_exists(project_root, kanban_root):
+                print(
+                    "  ❌ Cannot persist a zero-match pattern while kanban files exist. "
+                    "Choose a suggested pattern or enter one that matches files on disk."
+                )
+                continue
             if prompt_yes_no("Use this pattern anyway?", default=False):
                 return value
             continue
@@ -285,6 +301,45 @@ def detect_kanban_board_default(project_root: Path, kanban_root: str) -> str:
         if (root_path / name).is_file():
             return name
     return "kboard.md"
+
+
+def detect_fr_br_root(project_root: Path, kanban_root: str) -> Optional[str]:
+    """
+    Project-root-relative path to FR/BR directory when present under kanban root.
+
+    Returns None when fr-br/ does not exist yet (greenfield before intake).
+    """
+    fr_br_dir = (project_root / kanban_root / DEFAULT_FR_BR_SUBDIR).resolve()
+    if not fr_br_dir.is_dir():
+        return None
+    return str(Path(kanban_root) / DEFAULT_FR_BR_SUBDIR).replace("\\", "/")
+
+
+def detect_kanban_supplementary_defaults(
+    project_root: Path,
+    kanban_root: str,
+) -> Tuple[str, Optional[str]]:
+    """
+    Task doc pattern and fr_br_root for mode C rw-config generation (BR-084).
+
+    Returns (task_doc_pattern, fr_br_root_or_none).
+    """
+    task_candidates = [
+        (FRESH_KANBAN_TASK_PATTERN, True),
+        (SLUG_KANBAN_TASK_PATTERN, True),
+    ]
+
+    def _best_task() -> str:
+        scored = [
+            (_pattern_match_score(project_root, kanban_root, pattern), pattern)
+            for pattern, _is_fresh in task_candidates
+        ]
+        scored.sort(key=lambda item: item[0], reverse=True)
+        if scored[0][0] > 0:
+            return scored[0][1]
+        return FRESH_KANBAN_TASK_PATTERN
+
+    return _best_task(), detect_fr_br_root(project_root, kanban_root)
 
 
 def detect_project_name(project_root: Path) -> str:
@@ -398,8 +453,12 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
             default="docs/project-management/kanban"
         )
         config['kanban_root'] = kanban_root
+        strict_patterns = kanban_root_exists(project_root, kanban_root)
 
         epic_default, story_default, fresh_layout = detect_kanban_doc_patterns(
+            project_root, kanban_root
+        )
+        task_default, fr_br_default = detect_kanban_supplementary_defaults(
             project_root, kanban_root
         )
         if fresh_layout:
@@ -409,6 +468,21 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
             )
         elif _pattern_match_score(project_root, kanban_root, epic_default) > 0:
             print("  ℹ️  Detected existing kanban files; using best-matching pattern defaults.")
+
+        task_count, task_samples, _ = preview_pattern_matches(
+            project_root, kanban_root, task_default
+        )
+        if task_count:
+            print(f"  ℹ️  Task pattern default matches {task_count} file(s). Sample:")
+            for sample in task_samples:
+                print(f"    - {sample}")
+        else:
+            print(
+                "  ℹ️  Task pattern default (for future task docs): "
+                f"{task_default}"
+            )
+        if fr_br_default:
+            print(f"  ℹ️  FR/BR root detected: {fr_br_default}")
 
         config['epic_doc_pattern'] = prompt_pattern_with_validation(
             prompt="Epic document pattern (relative to Kanban root, must include {epic})",
@@ -421,6 +495,7 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
                 LEGACY_KANBAN_EPIC_PATTERN,
                 "Epic-{epic}/Epic-{epic}.md",
             ],
+            strict_zero_match=strict_patterns,
         )
 
         config['story_doc_pattern'] = prompt_pattern_with_validation(
@@ -434,7 +509,12 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
                 LEGACY_KANBAN_STORY_PATTERN,
                 "Epic-{epic}/stories/E{epic}-S{story}.md",
             ],
+            strict_zero_match=strict_patterns,
         )
+
+        config['task_doc_pattern'] = task_default
+        if fr_br_default:
+            config['fr_br_root'] = fr_br_default
 
         config['kanban_board'] = prompt_question(
             "Main Kanban board file",
@@ -467,11 +547,24 @@ def generate_rw_config_yaml(config: Dict) -> str:
             "# Kanban integration",
             "use_kanban: true",
             f"kanban_root: {config['kanban_root']}",
-            f"epic_doc_pattern: {config['epic_doc_pattern']}",
-            f"story_doc_pattern: {config['story_doc_pattern']}",
-            f"kanban_board: {config['kanban_board']}",
-            "",
         ])
+        pattern_warnings = config.get("_pattern_warnings") or []
+        warn_by_key = {w["key"]: w["message"] for w in pattern_warnings if isinstance(w, dict)}
+
+        for key, yaml_key in (
+            ("epic_doc_pattern", "epic_doc_pattern"),
+            ("story_doc_pattern", "story_doc_pattern"),
+        ):
+            if key in warn_by_key:
+                lines.append(f"# WARNING: {warn_by_key[key]}")
+            lines.append(f"{yaml_key}: {config[yaml_key]}")
+
+        lines.append(f"kanban_board: {config['kanban_board']}")
+        if config.get("task_doc_pattern"):
+            lines.append(f"task_doc_pattern: {config['task_doc_pattern']}")
+        if config.get("fr_br_root"):
+            lines.append(f"fr_br_root: {config['fr_br_root']}")
+        lines.append("")
     else:
         lines.append("use_kanban: false\n")
     

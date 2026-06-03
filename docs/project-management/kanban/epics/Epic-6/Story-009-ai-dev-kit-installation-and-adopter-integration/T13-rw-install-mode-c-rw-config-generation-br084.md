@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 13: RW install Mode C — rw-config generation (BR-084)
 
 **Task ID:** E06:S09:T13  
-**Status:** TODO  
+**Status:** COMPLETE (pending user verification on book replay)  
 **Priority:** MEDIUM  
 **Created:** 2026-06-03  
 **Code:** E06S09T13
@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 ## Version Anchor
 
-**Version:** v0.6.9.13+1 (RW -k --art)
+**Version:** v0.6.9.13+2 (RW --art)
 
 ---
 
@@ -33,6 +33,7 @@ Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes 
 
 - [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
 - [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)
+- **IPW:** [IPP-E06S09T13-br084-rw-config-generation.md](../../../../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) — **Publication Status: PUBLISHED**
 - `generate_rw_config_yaml`, `collect_config_interactive`, `prompt_pattern_with_validation`
 
 ---
@@ -47,13 +48,19 @@ Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes 
 
 ## Acceptance Criteria
 
-- [ ] Mode C after fresh kanban: epic pattern matches `epics/Epic-1/Epic-1.md` without manual edit.
-- [ ] Generated config includes `task_doc_pattern`.
-- [ ] Integration test: temp repo, fresh kanban + RW install, epic glob ≥1.
+- [x] Mode C after fresh kanban: epic pattern matches `epics/Epic-1/Epic-1.md` without manual edit (T12 detection + strict zero-match).
+- [x] Generated config includes `task_doc_pattern` and `fr_br_root` when `fr-br/` exists.
+- [x] Integration test: temp repo fresh layout + `generate_rw_config_yaml` (epic glob ≥1).
+
+## Implementation notes (2026-06-03)
+
+- `detect_kanban_supplementary_defaults()`, `generate_rw_config_yaml` kanban keys, `strict_zero_match` on mode C prompts.
+- Tests: `tests/test_install_release_workflow_rw_config.py`.
 
 ---
 
 ## Links
 
 - [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
+- [IPP-E06S09T13](../../../../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md)
 - [Story 009](../Story-009-ai-dev-kit-installation-and-adopter-integration.md)

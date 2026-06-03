@@ -61,7 +61,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 - **BR-083** – RW install default epic/story patterns mismatch fresh kanban layout - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.12+2** — pending verification **#15**) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [E06:S09:T12](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [IPP-E06S09T12](../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) | Last modified: 2026-06-03 17:45 UTC
 
-- **BR-084** – RW Mode C: missing task_doc_pattern; wrong patterns persisted - 🟢 OPEN (MEDIUM, intake **v0.6.9.13+1**, **#16**) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | [E06:S09:T13](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | —No IPP— | Last modified: 2026-06-03 19:18 UTC
+- **BR-084** – RW Mode C: missing task_doc_pattern; wrong patterns persisted - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.13+2** — pending verification **#16**) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | [E06:S09:T13](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | [IPP-E06S09T13](../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) | Last modified: 2026-06-03 19:18 UTC
 
 ---
 
