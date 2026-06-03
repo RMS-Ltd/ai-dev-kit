@@ -1,0 +1,117 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic Last updated: 2026-06-03 (v0.2.13.8+1 \u2013 Kanban documentation setup)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review.md"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated Version: v0.2.13.8+1",
+        "Updated Last updated: 2026-06-03 (v0.2.13.8+1 \u2013 Kanban documentation setup)",
+        "Updated Story 13 checklist entry",
+        "Updated board Last Updated: 2026-06-03 (RW: E02:S13:T08)",
+        "Updated board Version: v0.2.13.8+1"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 8,
+    "task_id": "E2:S13:T8",
+    "version_string": "v0.2.13.8+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 13,
+    "touched_surfaces": [
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": [
+      "task_doc",
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "fbuboard": {
+      "changes": [
+        "Enforced terminal row timestamps: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md",
+        "corpus-canonical sweep: fbuboard.md clean (idempotent)",
+        "corpus-canonical sweep: fr-br-uxr-board.md clean (idempotent)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Advisory: 7 COMPLETE row(s) on active kboard MoSCOW; run UKW -c to append kanban-completed.md then remove (FR-102)",
+        "corpus-canonical sweep: kboard.md clean (idempotent)",
+        "corpus-canonical sweep: kanban-board.md clean (idempotent)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md"
+      ],
+      "surface": "task_doc",
+      "touched": false
+    }
+  },
+  "timestamp_utc": "2026-06-03 20:07 UTC"
+}

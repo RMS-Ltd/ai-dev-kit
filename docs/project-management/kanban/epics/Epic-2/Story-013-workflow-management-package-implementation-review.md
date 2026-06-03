@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-03 (E02:S13:T08 filed — sync packaged workflows with live repo)  
-**Version:** v0.2.13.1+2  
+**Last updated:** 2026-06-03 (v0.2.13.8+1 – Kanban documentation setup)
+**Version:** v0.2.13.8+1
 **Code:** E2S13
 
 ---
@@ -31,7 +31,7 @@ housekeeping_policy: keep
 - [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
   - Task Doc: [`T07-rw-semver-tag-when-task-touch-enabled.md`](Story-013-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)
 
-- [ ] **E02:S13:T08 – Sync packaged workflows with live repo implementation** - TODO
+- [ ] **E02:S13:T08 – Sync packaged workflows with live repo implementation** - TODO ([FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md))
   - Task Doc: [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
 
 

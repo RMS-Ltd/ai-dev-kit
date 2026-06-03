@@ -1,0 +1,86 @@
+{
+  "contract": "BR-070 / FR-092 Wave 5 (RW Step 7 stage-set completeness invariant)",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json",
+  "invocation_context": "rw_step_7_stage_completeness",
+  "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 8,
+    "task_id": "E2:S13:T8",
+    "version_string": "v0.2.13.8+1"
+  },
+  "summary": {
+    "staged": 6,
+    "total_touched_paths": 9,
+    "unchanged": 3,
+    "verdict": "PASS",
+    "violations": 0
+  },
+  "timestamp_utc": "2026-06-03 20:07 UTC",
+  "verdicts": [
+    {
+      "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
+      "git_status": "staged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md",
+      "surface": "fbu_doc"
+    },
+    {
+      "detail": "Path unchanged on disk relative to HEAD; Step 7 was an idempotent no-op for this surface.",
+      "git_status": "unchanged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md",
+      "surface": "fbu_doc"
+    },
+    {
+      "detail": "Path unchanged on disk relative to HEAD; Step 7 was an idempotent no-op for this surface.",
+      "git_status": "unchanged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md",
+      "surface": "fbu_doc"
+    },
+    {
+      "detail": "Path unchanged on disk relative to HEAD; Step 7 was an idempotent no-op for this surface.",
+      "git_status": "unchanged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md",
+      "surface": "fbu_doc"
+    },
+    {
+      "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
+      "git_status": "staged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md",
+      "surface": "fbuboard"
+    },
+    {
+      "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
+      "git_status": "staged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md",
+      "surface": "kboard"
+    },
+    {
+      "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
+      "git_status": "staged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md",
+      "surface": "task_doc"
+    },
+    {
+      "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
+      "git_status": "staged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md",
+      "surface": "epic_doc"
+    },
+    {
+      "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
+      "git_status": "staged",
+      "is_violation": false,
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review.md",
+      "surface": "story_doc"
+    }
+  ]
+}

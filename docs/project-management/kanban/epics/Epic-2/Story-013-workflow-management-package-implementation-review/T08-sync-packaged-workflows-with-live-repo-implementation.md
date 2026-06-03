@@ -13,10 +13,12 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium–Large  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-03  
+**Last updated:** 2026-06-03 (kanban init **v0.2.13.8+1** — RW -k **FR-106**)  
 **Epic:** E02 – Workflow Management Framework  
 **Story:** E02:S13 – Workflow Management Package Implementation Review  
-**Code:** E02S13T08
+**Code:** E02S13T08  
+**Version Anchor:** v0.2.13.8+1 (kanban documentation setup)  
+**Source FR:** [FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)
 
 ---
 
@@ -101,6 +103,7 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ## Related Work
 
+- **[FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)** — source feature request (implementing task)
 - [FR-049](../../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md) — canonical step list (needs refresh)
 - [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) — directory reorg (pending intake)
 - [FR-056](../../../fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md) — packaged README standardization (complete)

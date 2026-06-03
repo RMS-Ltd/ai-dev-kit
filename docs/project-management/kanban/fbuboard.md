@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (intake **BR-078–BR-083** — GitHub #10–#15 → Should/Could MoSCOW)
-**Version Context:** v0.2.16.4+25 (**SemVer** v0.4.854+25)
+**Last Updated:** 2026-06-03 (RW -k **E02:S13:T08 --art**: intake **FR-106**)
+**Version Context:** v0.2.13.8+1 (**SemVer** v0.4.859+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -49,19 +49,23 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
+**2026-06-03:** Intake **FR-106** → **E02:S13:T08** (packaged workflow sync with live repo; kanban init **v0.2.13.8+1**).
+
+- **FR-106** – Packaged workflows sync with live repo implementation - 🟢 OPEN (HIGH, YAML/registry/dual-source parity) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [E02:S13:T08](epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | —No IPP— | Last modified: 2026-06-03 20:06 UTC
+
 **2026-06-03:** Intake from GitHub issues **#10–#15** (book dry-run / ExpensesTracker T03) → **E06:S09:T07–T12**.
 
-- **BR-080** – Kanban fresh mode validation fails without `--force` on empty repo - 🟢 OPEN (HIGH, fix attempted **v0.6.9.9+2** — pending verification **#12**) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [E06:S09:T09](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [IPP-E06S09T09](../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) | Last modified: 2026-06-03 17:42 UTC
+- **BR-080** – Kanban fresh mode validation fails without `--force` on empty repo - 🟢 OPEN (HIGH, fix attempted **v0.6.9.9+2** — pending verification **#12**) | [IPP-E06S09T09](../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [E06:S09:T09](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | —No IPP— | Last modified: 2026-06-03 17:42 UTC
 
-- **BR-082** – RW install fails without venv PyYAML; no preflight hint - 🟢 OPEN (HIGH, fix attempted **v0.6.9.11+2** — pending verification **#14**) | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [E06:S09:T11](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | [IPP-E06S09T11](../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md) | Last modified: 2026-06-03 17:44 UTC
+- **BR-082** – RW install fails without venv PyYAML; no preflight hint - 🟢 OPEN (HIGH, fix attempted **v0.6.9.11+2** — pending verification **#14**) | [IPP-E06S09T11](../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md) | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [E06:S09:T11](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | —No IPP— | Last modified: 2026-06-03 17:44 UTC
 
-- **BR-078** – Kanban fresh install: structure template not found - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.7+2** — pending verification **#10**) | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [E06:S09:T07](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | [IPP-E06S09T07](../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md) | Last modified: 2026-06-03 17:40 UTC
+- **BR-078** – Kanban fresh install: structure template not found - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.7+2** — pending verification **#10**) | [IPP-E06S09T07](../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md) | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [E06:S09:T07](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | —No IPP— | Last modified: 2026-06-03 17:40 UTC
 
-- **BR-079** – Kanban fresh install: Epic 22/23 placeholders only - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.8+2** — pending verification **#11**) | [IPP-E06S09T08](../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [E06:S09:T08](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | Last modified: 2026-06-03 17:41 UTC
+- **BR-079** – Kanban fresh install: Epic 22/23 placeholders only - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.8+2** — pending verification **#11**) | [IPP-E06S09T08](../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [E06:S09:T08](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | —No IPP— | Last modified: 2026-06-03 17:41 UTC
 
-- **BR-083** – RW install default epic/story patterns mismatch fresh kanban layout - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.12+2** — pending verification **#15**) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [E06:S09:T12](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [IPP-E06S09T12](../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) | Last modified: 2026-06-03 17:45 UTC
+- **BR-083** – RW install default epic/story patterns mismatch fresh kanban layout - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.12+2** — pending verification **#15**) | [IPP-E06S09T12](../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [E06:S09:T12](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | —No IPP— | Last modified: 2026-06-03 17:45 UTC
 
-- **BR-084** – RW Mode C: missing task_doc_pattern; wrong patterns persisted - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.13+2** — pending verification **#16**) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | [E06:S09:T13](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | [IPP-E06S09T13](../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) | Last modified: 2026-06-03 19:18 UTC
+- **BR-084** – RW Mode C: missing task_doc_pattern; wrong patterns persisted - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.13+2** — pending verification **#16**) | [IPP-E06S09T13](../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | [E06:S09:T13](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | —No IPP— | Last modified: 2026-06-03 19:18 UTC
 
 ---
 

@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 6      # Epic 6 — Framework Management
-VERSION_STORY = 9     # Story 9 — AI Dev Kit installation and adopter integration
-VERSION_TASK = 13     # Task 13 — BR-084 RW mode C rw-config generation
-VERSION_BUILD = 2     # Build 2: task_doc_pattern + fr_br_root + strict zero-match
+VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
+VERSION_STORY = 13    # Story 13 — Workflow Management Package Implementation Review
+VERSION_TASK = 8      # Task 8 — Sync packaged workflows with live repo (FR-106)
+VERSION_BUILD = 1     # Build 1: kanban init — FR-106 intake + four-surface wiring
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.13+2
+# Current: 0.2.13.8+1

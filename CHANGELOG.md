@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.13+2] - 03-06-26
+## [0.2.13.8+1] - 03-06-26
 
-E06:S09:T13 — Attempted fix BR-084: RW mode C emits `task_doc_pattern` + `fr_br_root`; strict zero-match guard. SemVer **v0.4.859+2**.
+E02:S13:T08 — Kanban init: filed **FR-106** (packaged workflows sync with live repo) and wired four-surface intake for **E02:S13:T08**. SemVer **v0.4.859+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.13+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.8+1.md)
 
 ---
