@@ -1,0 +1,100 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-7/Epic-7.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews.md"
+      ],
+      "surface": "story_doc",
+      "touched": false
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated Story-007 and Epic-7 headers"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 7,
+    "story": 7,
+    "task": 2,
+    "task_id": "E7:S7:T2",
+    "version_string": "v0.7.7.2+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 4,
+    "touched_surfaces": [
+      "task_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": [
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure."
+      ],
+      "paths": [],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "fbuboard": {
+      "changes": [
+        "Updated fbuboard Version Context"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Updated kboard release note E07:S07:T02"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Updated T02 task doc COMPLETE v0.7.7.2+1"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-03 20:39 UTC"
+}

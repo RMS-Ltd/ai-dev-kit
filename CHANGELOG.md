@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.7.2+1] - 03-06-26
+
+E07:S07:T02 — CI pytest gate for workflow scripts (review **H1**): GitHub Actions + curated isolated pytest suite (103 tests). SemVer **v0.4.862+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.7.2+1.md)
+
+---
+
 ## [0.2.13.8+2] - 03-06-26
 
 E02:S13:T08 — Packaged workflow sync with live repo (**FR-106**): Step 9 FR-097/FR-092 validators, canonical steps v2.0.0, YAML/registry, dual-source parity. SemVer **v0.4.861+2**.

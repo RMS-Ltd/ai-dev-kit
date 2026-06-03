@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-03 (v0.7.7.1+1 — E07:S07:T01 COMPLETE)  
-**Version:** v0.7.7.1+1
+**Last updated:** 2026-06-03 (v0.7.7.2+1 — E07:S07:T02 CI pytest gate)
+**Version:** v0.7.7.2+1
 
 ---
 
@@ -23,6 +23,11 @@ housekeeping_policy: keep
   - Task Doc: [`T01-comprehensive-workflow-machinery-code-review.md`](Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md)
   - IPP: [`IPP-E07S07T01-workflow-machinery-code-review.md`](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
   - Report: [`T01-workflow-machinery-code-review-report.md`](Story-007-code-reviews/T01-workflow-machinery-code-review-report.md)
+
+- [x] **E07:S07:T02 – CI pytest gate for workflow scripts (H1)** - ✅ COMPLETE (v0.7.7.2+1 — GitHub Actions + 103-test curated suite)
+  - Task Doc: [`T02-ci-pytest-gate-for-workflow-scripts.md`](Story-007-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md)
+  - IPP: [`IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md`](../../../../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
+  - Source: [T01 report H1](Story-007-code-reviews/T01-workflow-machinery-code-review-report.md)
 
 > **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`  

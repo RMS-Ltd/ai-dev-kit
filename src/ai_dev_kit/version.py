@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 13    # Story 13 — Workflow Management Package Implementation Review
-VERSION_TASK = 8      # Task 8 — Sync packaged workflows with live repo (FR-106)
-VERSION_BUILD = 2     # Build 2: packaged workflow sync shipped (RW --art E02:S13:T08)
+VERSION_EPIC = 7      # Epic 7 — Codebase Maintenance
+VERSION_STORY = 7     # Story 7 — Code Reviews
+VERSION_TASK = 2      # Task 2 — CI pytest gate for workflow scripts (H1)
+VERSION_BUILD = 1     # Build 1: workflow-scripts-pytest CI gate (RW --art E07:S07:T02)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.13.8+2
+# Current: 0.7.7.2+1

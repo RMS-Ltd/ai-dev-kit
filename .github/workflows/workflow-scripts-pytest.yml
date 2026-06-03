@@ -1,0 +1,33 @@
+# E07:S07:T02 / H1 — pytest gate for Workflow Management script corpus.
+name: Workflow scripts pytest
+
+"on":
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - "packages/frameworks/workflow mgt/**"
+      - ".github/workflows/workflow-scripts-pytest.yml"
+  pull_request:
+    paths:
+      - "packages/frameworks/workflow mgt/**"
+      - ".github/workflows/workflow-scripts-pytest.yml"
+
+jobs:
+  workflow-scripts-pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install test dependencies
+        run: pip install pytest "pyyaml>=6.0"
+
+      - name: Run workflow script pytest gate
+        run: bash "packages/frameworks/workflow mgt/scripts/validation/run_workflow_scripts_ci_pytest.sh"

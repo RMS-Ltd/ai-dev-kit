@@ -229,6 +229,40 @@ This feature is needed:
 - E02:S01:T04
 - E02:S01:T05
 
+
+
+**Related Work:**
+- FR-019
+- FR-012
+- E02:S11
+- E2:S11
+- E4:S10
+- E2:S07
+- E4:S08
+- E2:S1
+- E02:S01
+- E02:S11:T00
+- E02:S01:T01
+- E02:S01:T02
+- E02:S01:T03
+- E02:S01:T04
+- E02:S01:T05
+- FR-019
+- FR-012
+- E02:S11
+- E2:S11
+- E4:S10
+- E2:S07
+- E4:S08
+- E2:S1
+- E02:S01
+- E02:S11:T00
+- E02:S01:T01
+- E02:S01:T02
+- E02:S01:T03
+- E02:S01:T04
+- E02:S01:T05
+
 ## Intake Decision
 
 **Intake Status:** ACCEPTED  
