@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ## Version Anchor
 
-**Version:** (pending — RW -k)
+**Version:** v0.6.9.9+1 (RW -k)
 
 ---
 
