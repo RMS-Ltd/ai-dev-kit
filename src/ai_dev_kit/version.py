@@ -8,9 +8,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 
 VERSION_RC = 0        # Release Candidate
 VERSION_EPIC = 2      # Epic 2 — Workflow Management
-VERSION_STORY = 15    # Story 15 — IPW governance and publication contract
-VERSION_TASK = 1      # Task 1 — BR-066 corpus tail Phase 3
-VERSION_BUILD = 3     # Build 3: audit-inventory 0 unwired, BR-066 RESOLVED
+VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
+VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban synchronization (UKW perpetual)
+VERSION_BUILD = 25    # Build 25: UKW archive T05/T06, BR-066, FR-104/105/077
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.15.1+3
+# Current: 0.2.16.4+25

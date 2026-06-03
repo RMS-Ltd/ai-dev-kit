@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-03 (RW: E08:S03:T06)
-**Version:** v0.8.3.6+2
+**Last Updated:** 2026-06-03 (RW **E02:S16:T04** — v0.2.16.4+25)
+**Version:** v0.2.16.4+25
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -25,9 +25,7 @@ housekeeping_policy: keep
 
 ### Must Have (M) - Critical Tasks
 
-- **E08:S03:T05** – FR-104 / BR-077: Python minimum version policy alignment - ✅ COMPLETE (v0.8.3.5+2 — Python 3.11+ policy) | [Task](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | Last modified: 2026-06-03 15:47 UTC
-
-- **E08:S03:T06** – FR-105: Dependabot and dependency security automation - ✅ COMPLETE (v0.8.3.6+2) | [Task](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | Last modified: 2026-06-03 15:47 UTC
+*(No Must Have tasks — 2026-06-03 UKW archived **E08:S03:T05**, **E08:S03:T06** → [kanban-completed.md](kanban-completed.md); **FR-104**, **FR-105**, **BR-077** → [fbu-completed.md](fbu-completed.md).)*
 
 *(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). FR-099 Phases 0–4 complete; public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) bootstrapped 2026-05-28. **E6:S09** installation story ✅ complete — FR-080/081/082/098; latest **E06:S09:T02** FR-081 brownfield INSTALL chapter **v0.6.9.2+2**.)*
 
@@ -106,7 +104,7 @@ housekeeping_policy: keep
 - **E08:S03:T04** – BR-058: CI test workflow missing and pytest failures - 🟢 OPEN (LOW) | [Task](epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | Last modified: 2026-05-30 13:35 UTC
 
 
-*(E04:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). **E06:S07:T107** archived **v0.6.7.107+3** — RW 2026-05-30; [kanban-completed.md](kanban-completed.md). **E02:S16:T17**, **E02:S01:T23** archived **v0.2.16.17+2** / **v0.2.1.23+1** — UKW -c 2026-05-30. **E02:S16:T16** / **FR-102** archived **v0.2.16.16+3**. **E02:S15:T01** archived **v0.2.15.1+2** — UKW -c 2026-06-02 ([kanban-completed.md](kanban-completed.md); **BR-066** remains on [fbuboard.md](fbuboard.md)). **E02:S16:T13** archived **v0.2.16.13+1** — UKW 2026-06-03 ([kanban-completed.md](kanban-completed.md); **BR-059** **RESOLVED**). FR-031 / FR-024 / FR-057 retired — [fbu-completed.md](fbu-completed.md).)*
+*(E04:S06:T01 archived — FR-005 closure **v0.4.6.1+1**; [kanban-completed.md](kanban-completed.md). **E06:S07:T107** archived **v0.6.7.107+3** — RW 2026-05-30. **E02:S16:T17**, **E02:S01:T23** archived **v0.2.16.17+2** / **v0.2.1.23+1** — UKW -c 2026-05-30. **E02:S16:T16** / **FR-102** archived **v0.2.16.16+3**. **E02:S15:T01** archived **v0.2.15.1+3** — UKW 2026-06-03 ([kanban-completed.md](kanban-completed.md); **BR-066** **RESOLVED** → [fbu-completed.md](fbu-completed.md)). **E08:S03:T05/T06** archived **v0.8.3.5+2** / **v0.8.3.6+2** — UKW 2026-06-03. **E02:S16:T13** archived **v0.2.16.13+1**. FR-031 / FR-024 / FR-057 retired — [fbu-completed.md](fbu-completed.md).)*
 
 
 
@@ -116,7 +114,7 @@ housekeeping_policy: keep
 
 - **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**; corpus scan) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [IPP-E2S16T03](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [E02:S16:T03](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-03 12:29 UTC
 
-- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (UKW **v0.2.16.4+24** — T13 archive; BR-059/067 prune) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | [E02:S16:T04](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | —No IPP— | Last modified: 2026-05-30 17:22 UTC
+- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (v0.2.16.4+25 — UKW archive T05/T06, BR-066, FR-104/105/077) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | [E02:S16:T04](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | —No IPP— | Last modified: 2026-05-30 17:22 UTC
 
 - **E02:S16:T10** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (last RW **v0.2.16.10+4** — project root hygiene: remove junk media/logs/snapshots; relocate low-value root files; `.gitignore`) - [Task Document](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md) | [E02:S16:T10](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | —No IPP— | Last modified: 2026-05-29 10:59 UTC
 

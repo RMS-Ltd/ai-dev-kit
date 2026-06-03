@@ -12,15 +12,15 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-03 (v0.2.16.4+24 – Kanban documentation setup)
-**Version:** v0.2.16.4+24
+**Last updated:** 2026-06-03 (v0.2.16.4+25 — **T04** UKW archive wave)
+**Version:** v0.2.16.4+25
 **Code:** E2S16
 
 ---
 
 ## Tactical overview
 
-Story 016 remains the operational home for perpetual workflow work. **T03** BR-059 closure corpus scan (**v0.2.16.3+6**). **T13** BR-059 UKW rule shipped (**v0.2.16.13+1**, archived from kboard UKW 2026-06-03). Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14** (gap discovery). **COMPLETE** discrete: T01–T02, T06–T09, T11–T13, T15–T17.
+Story 016 remains the operational home for perpetual workflow work. **T04** UKW (2026-06-03) archived terminal **E08:S03:T05/T06** and FBU closures **BR-066**, **FR-104**, **FR-105**, **BR-077** to ledgers. **T03** BR-059 closure (**v0.2.16.3+6**). **T13** shipped (**v0.2.16.13+1**, archived). Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**. **COMPLETE** discrete: T01–T02, T06–T09, T11–T13, T15–T17.
 
 ---
 
@@ -35,7 +35,7 @@ Story 016 remains the operational home for perpetual workflow work. **T03** BR-0
 - [ ] **E02:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual; Tranche **3B** ACTIVE_FIX complete; AC4 satisfied)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+24** — T13 archive; BR-059/067 prune)  
+- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+25** — archive T05/T06, BR-066, FR-104/105/077)  
   - Task: [`Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E02:S16:T05 – Markdown Documentation Maintenance (Perpetual)** - IN PROGRESS (HIGH, dedicated perpetual lane for recurring markdown-only documentation upkeep outside workflow-maintenance umbrella and kanban synchronization lanes)  

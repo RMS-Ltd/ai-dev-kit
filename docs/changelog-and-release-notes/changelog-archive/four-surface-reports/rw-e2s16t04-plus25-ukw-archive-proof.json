@@ -1,0 +1,27 @@
+{
+  "report_type": "ukw_comprehensive_archive",
+  "release": "v0.2.16.4+25",
+  "task": "E02:S16:T04",
+  "invocation": "UKW then RW",
+  "evidence_mode": "structure_prune",
+  "summary": {
+    "kboard_archived": 2,
+    "fbuboard_archived": 4,
+    "skipped": 0,
+    "already_in_ledger": 0
+  },
+  "archived": {
+    "kboard": ["E08:S03:T05", "E08:S03:T06"],
+    "fbuboard": ["BR-066", "BR-077", "FR-104", "FR-105"]
+  },
+  "ledger_before_removal": true,
+  "rows": {
+    "E08:S03:T05": { "allowed": true, "reason": "UKW archive COMPLETE; ledger kanban-completed.md v0.8.3.5+2" },
+    "E08:S03:T06": { "allowed": true, "reason": "UKW archive COMPLETE; ledger kanban-completed.md v0.8.3.6+2" },
+    "BR-066": { "allowed": true, "reason": "UKW archive RESOLVED; ledger fbu-completed.md v0.2.15.1+3" },
+    "FR-104": { "allowed": true, "reason": "UKW archive IMPLEMENTED; ledger fbu-completed.md v0.8.3.5+2" },
+    "FR-105": { "allowed": true, "reason": "UKW archive IMPLEMENTED; ledger fbu-completed.md v0.8.3.6+2" },
+    "BR-077": { "allowed": true, "reason": "UKW archive RESOLVED; ledger fbu-completed.md v0.8.3.5+2" }
+  },
+  "timestamp": "2026-06-03T17:00:00Z"
+}

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-03 (UKW — **E02:S16:T13** ledger)
-**Version:** v0.2.16.13+1
+**Last Updated:** 2026-06-03 (UKW — **E08:S03:T05/T06** ledger)
+**Version:** v0.2.16.4+25
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,16 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 8: Tooling & Automation (Story 3 — Automation scripts)**
+- **[E08:S03:T06](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md)** — **FR-105**: Dependabot pip + portal npm, security updates, npm audit triage.
+  **Completed:** `2026-06-03T16:00:00Z` | **Version:** `v0.8.3.6+2` | **Agent:** `RW` | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | [IPP-E08S03T06](../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)
+- **[E08:S03:T05](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md)** — **FR-104** / **BR-077**: Python 3.11+ minimum policy alignment.
+  **Completed:** `2026-06-03T15:00:00Z` | **Version:** `v0.8.3.5+2` | **Agent:** `RW` | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | [IPP-E08S03T05](../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md)
+
+#### **Epic 2: Workflow Management Framework (Story 15 — IPW governance)**
+- **[E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)** — **BR-066** Phase 3: corpus tail wired (`--audit-inventory` **0** unwired); BR-066 **RESOLVED**.
+  **Completed:** `2026-06-03T14:30:00Z` | **Version:** `v0.2.15.1+3` | **Agent:** `RW` | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [IPP-E02S15T01-br066-corpus-tail-phase3](../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)
 
 #### **Epic 2: Workflow Management Framework (Story 16 — Perpetual workflow ops)**
 - **[E02:S16:T13](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)** — **BR-059**: UKW MoSCOW full open-task coverage per story (Part B.1 + validator).

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (RW **E08:S03:T06** — v0.8.3.6+2)
-**Version Context:** v0.8.3.6+2 (**SemVer** v0.4.852+2)
+**Last Updated:** 2026-06-03 (UKW comprehensive — archive terminal M/S FBUs)
+**Version Context:** v0.2.16.4+25 (**SemVer** v0.4.854+25)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -43,25 +43,19 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Must Have (M) - Critical Items
 
-- **FR-104** – Python minimum version policy alignment - ✅ IMPLEMENTED (v0.8.3.5+2) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [E08:S03:T05](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [IPP](../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) | Last modified: 2026-06-03 15:47 UTC
-
-- **FR-105** – Dependabot and dependency security automation - ✅ IMPLEMENTED (v0.8.3.6+2) | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | [E08:S03:T06](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [IPP](../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md) | Last modified: 2026-06-03 15:48 UTC
-
-- **BR-077** – Documented Python 3.8+ contradicts repo 3.10+ requirement - ✅ RESOLVED (v0.8.3.5+2) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [E08:S03:T05](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [IPP](../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) | Last modified: 2026-06-03 15:49 UTC
-
-**2026-06-03:** Operator reprioritized **FR-104**, **FR-105**, **BR-077** to Must Have (UKW comprehensive).
+*(No Must Have FBU items — 2026-06-03 UKW archived **FR-104**, **FR-105**, **BR-077** → [fbu-completed.md](fbu-completed.md).)*
 
 ---
 
 ### Should Have (S) - Important Items
 
-- **BR-066** – IPW Docusaurus filing for planning artifacts - ✅ RESOLVED (MEDIUM, **E02:S15:T01** Phase 3 — `--audit-inventory` **0** unwired) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | Last modified: 2026-06-02 12:49 UTC
+*(No Should Have FBU items — 2026-06-03 UKW archived **BR-066** **RESOLVED** **v0.2.15.1+3** → [fbu-completed.md](fbu-completed.md).)*
 
 ---
 
-**2026-06-03:** UKW comprehensive pruned **BR-059** (**RESOLVED** **v0.2.16.3+6**), **BR-067** (**RESOLVED** Tranche 3); see [`fbu-completed.md`](fbu-completed.md).
+**2026-06-03:** UKW comprehensive archived **BR-066** (**RESOLVED** **v0.2.15.1+3**), **FR-104**, **FR-105**, **BR-077**; pruned **BR-059**, **BR-067** (prior wave). See [`fbu-completed.md`](fbu-completed.md).
 
-**2026-06-02:** UKW **-c** archived **E02:S15:T01** from [`kboard.md`](kboard.md) Should Have (**v0.2.15.1+2**); **BR-066** row retained (OPEN — corpus tail).
+**2026-06-02:** UKW **-c** archived **E02:S15:T01** from [`kboard.md`](kboard.md) Should Have (**v0.2.15.1+2**).
 
 **2026-06-01:** Pruned **UXR-005** (COMPLETE **E07:S01:T09**). See [`fbu-completed.md`](fbu-completed.md).
 

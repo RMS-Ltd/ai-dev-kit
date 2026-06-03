@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.15.1+3] - 03-06-26
+## [0.2.16.4+25] - 03-06-26
 
-E02:S15:T01 — BR-066 Phase 3: publication corpus tail wired (`--audit-inventory` 0 unwired), BR-066 RESOLVED. SemVer **v0.4.853+3**.
+E02:S16:T04 — UKW comprehensive sync: archive E08:S03:T05/T06 and terminal BR-066, FR-104, FR-105, BR-077 to ledgers. SemVer **v0.4.854+25**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.1+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+25.md)
 
 ---
