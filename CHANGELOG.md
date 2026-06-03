@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.11+2] - 03-06-26
+## [0.6.9.7+2] - 03-06-26
 
-E06:S09:T11 — Attempted fix BR-082: RW install PyYAML preflight (`--check-deps`, INSTALL Step 3b, tests). SemVer **v0.4.857+2**.
+E06:S09:T07 — Attempted fix BR-078: ship KANBAN_STRUCTURE_TEMPLATE; fresh install SUCCESS when board + epics. SemVer **v0.4.857+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.11+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.7+2.md)
 
 ---

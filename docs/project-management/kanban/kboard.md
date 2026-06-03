@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-03 (RW: E06:S09:T11)
-**Version:** v0.6.9.11+2
+**Last Updated:** 2026-06-03 (RW: E06:S09:T07)
+**Version:** v0.6.9.7+2
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -31,13 +31,13 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-**2026-06-03:** Book dry-run / GitHub **#10–#15** → **E06:S09** reopened; installer defects **T07–T12** (fix order: **T09** ✅ → **T11** ✅ → **T07/T08/T12**).
+**2026-06-03:** Book dry-run / GitHub **#10–#15** → **E06:S09** reopened; installer defects **T07–T12** (fix order: **T09** ✅ → **T11** ✅ → **T07** ✅ → **T08/T12**).
 
 - **E06:S09:T09** – BR-080: Kanban fresh mode validation on empty repo - ✅ COMPLETE (**v0.6.9.9+2**, greenfield blocker GitHub #12) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | Last modified: 2026-06-03 17:42 UTC
 
 - **E06:S09:T11** – BR-082: RW install PyYAML preflight - ✅ COMPLETE (**v0.6.9.11+2**, greenfield blocker GitHub #14) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | Last modified: 2026-06-03 17:44 UTC
 
-- **E06:S09:T07** – BR-078: Kanban structure template missing on fresh install - 📋 TODO (MEDIUM, GitHub #10) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | Last modified: 2026-06-03 17:40 UTC
+- **E06:S09:T07** – BR-078: Kanban structure template missing on fresh install - ✅ COMPLETE (**v0.6.9.7+2**, GitHub #10) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | Last modified: 2026-06-03 17:40 UTC
 
 - **E06:S09:T08** – BR-079: Epic 22/23 placeholder templates - 📋 TODO (MEDIUM, GitHub #11) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | Last modified: 2026-06-03 17:41 UTC
 

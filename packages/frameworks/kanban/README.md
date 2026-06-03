@@ -608,7 +608,8 @@ The Kanban board uses a **split pattern** to optimize for quick scanning:
 - Rules/explanations remain accessible when needed
 
 **Templates:**
-- `templates/KANBAN_BOARD_TEMPLATE.md` - Board template (structured info only)
+- `templates/KANBAN_BOARD_TEMPLATE.md` - Board template (structured information only)
+- `templates/KANBAN_STRUCTURE_TEMPLATE.md` - Epic/Story/Task structure scaffold (`kanban-structure.md` on `--mode fresh`)
 - `templates/KANBAN_BOARD_GUIDE_TEMPLATE.md` - Guide template (rules/explanations)
 
 **Usage:**

@@ -24,7 +24,7 @@ import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Optional
+from typing import Dict, Optional
 
 # Import validation module
 try:
@@ -163,23 +163,49 @@ def _get_project_name(project_root: Path) -> str:
     return name.replace("-dev-kit", "").replace("-kit", "")
 
 
+def resolve_structure_template(templates_dir: Path) -> Path:
+    """Return canonical structure template path (BR-078 / E06:S09:T07)."""
+    primary = templates_dir / "KANBAN_STRUCTURE_TEMPLATE.md"
+    if primary.is_file():
+        return primary
+    return primary
+
+
+def assess_fresh_install_outcome(kanban_path: Path, *, dry_run: bool) -> str:
+    """
+    Final status for greenfield fresh install (BR-078).
+
+    SUCCESS when core deliverables exist: task board + epics tree.
+    """
+    if dry_run:
+        return "SUCCESS"
+    kanban_path = Path(kanban_path)
+    if (kanban_path / "kboard.md").is_file() and (kanban_path / "epics").is_dir():
+        return "SUCCESS"
+    return "PARTIAL"
+
+
 def create_consumer_board_skeleton(
     kanban_path: Path,
     project_root: Path,
     dry_run: bool = False,
-) -> None:
+) -> Dict[str, bool]:
     """
     Create a clean consumer Kanban board skeleton from templates.
 
     - Creates `kboard.md` from `templates/KANBAN_BOARD_TEMPLATE.md`
-    - Creates `kanban-structure.md` from `templates/KANBAN_STRUCTURE_TEMPLATE.md` (if exists)
+    - Creates `kanban-structure.md` from `templates/KANBAN_STRUCTURE_TEMPLATE.md`
     - Creates `kanban-board-guide.md` from `templates/KANBAN_BOARD_GUIDE_TEMPLATE.md`
+
+    Returns per-surface booleans: board, structure, guide (True if created or dry-run would create).
     """
     script_dir = Path(__file__).parent
     templates_dir = script_dir.parent / "templates"
 
     board_template = templates_dir / "KANBAN_BOARD_TEMPLATE.md"
+    structure_template = resolve_structure_template(templates_dir)
     guide_template = templates_dir / "KANBAN_BOARD_GUIDE_TEMPLATE.md"
+    created = {"board": False, "structure": False, "guide": False}
 
     project_name = _get_project_name(project_root)
     today = datetime.utcnow().strftime("%Y-%m-%d")
@@ -189,10 +215,13 @@ def create_consumer_board_skeleton(
 
     if dry_run:
         print("🔍 [DRY RUN] Would create consumer board skeleton:")
-        print(f"  - Board: {kanban_path / 'kboard.md'}")
-        print(f"  - Structure: {kanban_path / 'kanban-structure.md'}")
-        print(f"  - Guide: {kanban_path / 'kanban-board-guide.md'}")
-        return
+        print(f"  - Board: {kanban_path / 'kboard.md'} (from {board_template})")
+        print(f"  - Structure: {kanban_path / 'kanban-structure.md'} (from {structure_template})")
+        print(f"  - Guide: {kanban_path / 'kanban-board-guide.md'} (from {guide_template})")
+        created["board"] = board_template.is_file()
+        created["structure"] = structure_template.is_file()
+        created["guide"] = guide_template.is_file()
+        return created
 
     kanban_path.mkdir(parents=True, exist_ok=True)
 
@@ -204,18 +233,22 @@ def create_consumer_board_skeleton(
         content = content.replace("{Version}", version_placeholder)
         (kanban_path / "kboard.md").write_text(content, encoding="utf-8")
         print(f"  ✅ Created consumer board: {kanban_path / 'kboard.md'}")
+        created["board"] = True
     else:
         print(f"  ⚠️  Board template not found: {board_template}")
 
-    # Create structure from template (if exists)
-    structure_template = templates_dir / "KANBAN_STRUCTURE_TEMPLATE.md"
-    if structure_template.exists():
+    # Create structure from template
+    if structure_template.is_file():
         content = structure_template.read_text(encoding="utf-8")
         content = content.replace("{Project Name}", project_name)
         content = content.replace("{Date}", today)
         content = content.replace("{Version}", version_placeholder)
         (kanban_path / "kanban-structure.md").write_text(content, encoding="utf-8")
-        print(f"  ✅ Created consumer structure: {kanban_path / 'kanban-structure.md'}")
+        print(
+            f"  ✅ Created consumer structure: {kanban_path / 'kanban-structure.md'} "
+            f"(template: {structure_template})"
+        )
+        created["structure"] = True
     else:
         print(f"  ⚠️  Structure template not found: {structure_template}")
 
@@ -232,8 +265,11 @@ def create_consumer_board_skeleton(
         content = content.replace("{local_policy_path}", local_policy_path)
         (kanban_path / "kanban-board-guide.md").write_text(content, encoding="utf-8")
         print(f"  ✅ Created consumer board guide: {kanban_path / 'kanban-board-guide.md'}")
+        created["guide"] = True
     else:
         print(f"  ⚠️  Board guide template not found: {guide_template}")
+
+    return created
 
 
 def detect_structure(kanban_path: Path, verbose: bool = False) -> Optional[Path]:
@@ -666,7 +702,8 @@ Examples:
         install_mode=args.mode,
         allow_missing_empty_skeleton=allow_missing_skeleton,
     )
-    if validation_status == "PARTIAL":
+    # Pre-install warnings (e.g. board files not yet created) are expected in fresh mode.
+    if validation_status == "PARTIAL" and args.mode != "fresh":
         final_status = "PARTIAL"
     if not should_continue:
         _log("ERROR", "[KANBAN_VALIDATE] Validation failed before migration/install")
@@ -682,7 +719,9 @@ Examples:
         print("\n🆕 Fresh install mode: Installing canonical epics and consumer board skeleton...")
         _log("INFO", "[KANBAN_FRESH_INSTALL] Fresh install mode: installing canonical epics and consumer board skeleton")
         # Create a clean consumer board and guide from templates
-        create_consumer_board_skeleton(kanban_path, project_root, dry_run=args.dry_run)
+        skeleton = create_consumer_board_skeleton(
+            kanban_path, project_root, dry_run=args.dry_run
+        )
         # Install canonical core epics from templates (if helper is available)
         if install_canonical_epics_only is not None:
             result = install_canonical_epics_only(
@@ -699,6 +738,13 @@ Examples:
             _log("WARNING", "[KANBAN_FRESH_INSTALL] install_canonical_epics_only helper not available; skipping canonical epic installation")
         print("✅ Fresh install complete (canonical epics and consumer board skeleton installed)")
         _log("INFO", "[KANBAN_FRESH_INSTALL] Fresh install complete (canonical epics and consumer board skeleton installed)")
+        final_status = assess_fresh_install_outcome(kanban_path, dry_run=args.dry_run)
+        if not skeleton.get("structure") and not args.dry_run:
+            print(
+                "  ⚠️  kanban-structure.md was not created (structure template missing); "
+                "core board + epics still installed."
+            )
+            final_status = "PARTIAL"
     else:
         if not analysis_report:
             print("❌ Error: Analysis report required for migration/update/hybrid modes")

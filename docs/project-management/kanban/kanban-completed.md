@@ -21,6 +21,8 @@ housekeeping_policy: keep
 ## 20 Most Recently Completed Tasks
 
 #### **Epic 6: Framework Management (Story 9 — Installation)**
+- **[E06:S09:T07](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)** — **BR-078**: Ship `KANBAN_STRUCTURE_TEMPLATE`; fresh install SUCCESS when board + epics.
+  **Completed:** `2026-06-03T20:25:00Z` | **Version:** `v0.6.9.7+2` | **Agent:** `RW` | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [IPP-E06S09T07](../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md)
 - **[E06:S09:T11](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md)** — **BR-082**: RW install PyYAML preflight (`--check-deps`, INSTALL Step 3b).
   **Completed:** `2026-06-03T19:19:22Z` | **Version:** `v0.6.9.11+2` | **Agent:** `RW` | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [IPP-E06S09T11](../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md)
 - **[E06:S09:T09](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md)** — **BR-080**: Fresh kanban install on empty repo without `--force` (skeleton-before-validate).

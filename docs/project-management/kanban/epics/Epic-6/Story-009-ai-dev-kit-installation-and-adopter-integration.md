@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-03 (v0.6.9.11+2 – T11 complete: E06:S09:T11)
-**Version:** v0.6.9.11+2
+**Last updated:** 2026-06-03 (v0.6.9.7+2 – T07 complete: E06:S09:T07)
+**Version:** v0.6.9.7+2
 **Code:** E6S09
 
 ---
@@ -42,7 +42,7 @@ housekeeping_policy: keep
   - Task: [`T06-ecc-harness-phases-2-5-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
   - IPP: [`IPP-E06S09T06`](../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md)
 
-- [ ] **E06:S09:T07 – Kanban fresh install structure template missing (BR-078)** - TODO (MEDIUM) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | [BR-078](../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)
+- [x] **E06:S09:T07 – Kanban fresh install structure template missing (BR-078)** - ✅ COMPLETE (**v0.6.9.7+2**) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | [BR-078](../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [IPP-E06S09T07](../../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md) | [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)
 
 - [ ] **E06:S09:T08 – Kanban fresh install Epic 22/23 templates (BR-079)** - TODO (MEDIUM) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)
 

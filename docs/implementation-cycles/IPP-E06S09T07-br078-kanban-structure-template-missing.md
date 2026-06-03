@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T07-kanban-fresh-install-structure-template-missing-br078.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) **(E06:S09:T07)**  
 **Planning for:** [BR-078](../project-management/kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) · [GitHub #10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)  
-**Status:** Approved (planning complete — await explicit implementation authorization)
+**Status:** Implemented (2026-06-03 — pending user verification / RW)
 
 > **IPW:** Produced 2026-06-03 in plan mode. Wire task `Input` / `References` before implementation (`FR-042` / `FR-083`).
 

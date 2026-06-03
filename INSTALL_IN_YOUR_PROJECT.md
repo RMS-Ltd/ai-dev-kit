@@ -316,6 +316,7 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 - Prefer **`--mode migration`** or **`canonical_adoption`** when you already have boards or backlog docs.
 - Use **`--mode fresh`** only for greenfield-style empty Kanban roots; the installer prints a brownfield warning when you select fresh on an existing repo.
 - **Empty repo:** `--mode fresh` creates the Kanban skeleton (`epics/` included) before validation — **`--force` is not required** to bypass missing-directory checks on first install (see [BR-080](docs/project-management/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)).
+- **Install outcome:** When `kboard.md` and `epics/` are created, the installer reports **`Final status: SUCCESS`** (not PARTIAL solely because board files were absent during pre-install validation). `kanban-structure.md` is copied from `templates/KANBAN_STRUCTURE_TEMPLATE.md` (BR-078).
 - Installer installs **canonical templates**, not ai-dev-kit maintainer epics—see [kanban/README.md](packages/frameworks/kanban/README.md).
 
 ```bash

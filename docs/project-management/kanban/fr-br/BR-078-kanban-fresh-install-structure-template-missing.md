@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-078  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (PARTIAL install status; structure doc missing)  
-**Status:** OPEN (INTAKE)  
+**Status:** OPEN (fix attempted — pending verification)  
 **GitHub Issue:** [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)  
 **Implementing Task:** [E06:S09:T07](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)  
 **Created:** 2026-06-03  
@@ -47,6 +47,8 @@ Proceed if `kboard.md` and `epics/` exist; document PARTIAL as acceptable in ado
 
 ## Acceptance Criteria
 
-- [ ] Template path exists in package **or** installer resolves alternate canonical path.
-- [ ] Fresh install does not emit false-alarm PARTIAL when structure doc is the only gap.
-- [ ] Book/adopter docs aligned with actual install outcome.
+- [x] Template path exists in package (**E06:S09:T07** — `KANBAN_STRUCTURE_TEMPLATE.md`).
+- [x] Fresh install does not emit false-alarm PARTIAL when board + epics succeed (pre-install warnings ignored for fresh mode).
+- [x] Book/adopter docs aligned with actual install outcome.
+
+**Verification:** User to confirm on book replay (GitHub #10) before closing BR-078.
