@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 8      # Epic 8 — Tooling & Automation
-VERSION_STORY = 3     # Story 3 — Automation Scripts
-VERSION_TASK = 6      # Task 6 — Dependabot enablement (FR-105)
-VERSION_BUILD = 2     # Build 2: dependabot.yml + npm audit fix + triage docs
+VERSION_EPIC = 2      # Epic 2 — Workflow Management
+VERSION_STORY = 15    # Story 15 — IPW governance and publication contract
+VERSION_TASK = 1      # Task 1 — BR-066 corpus tail Phase 3
+VERSION_BUILD = 3     # Build 3: audit-inventory 0 unwired, BR-066 RESOLVED
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.8.3.6+2
+# Current: 0.2.15.1+3

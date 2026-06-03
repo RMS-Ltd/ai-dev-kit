@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Code:** E01S04T03
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
-**Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.1 Phase 0**  
+**Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.1 Phase 0**  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
@@ -79,4 +79,4 @@ Validated inventory, signed ADR-006 outline, E01:S04:T02 marked SUPERSEDED (see 
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
 - [Story 004](../Story-004-repository-branding-and-renaming.md)
 - [Epic-1.md](../Epic-1.md)
-- [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+- [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)

@@ -73,3 +73,7 @@ Implemented parser hardening in `packages/frameworks/workflow mgt/scripts/create
 - [FR-041](../../../fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)
 - [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [IPW-E06S07T113](../../../../../implementation-cycles/IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening.md)
+
+## Planning artifacts (publication)
+
+- [IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening.md](../../../../../implementation-cycles/IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening.md)

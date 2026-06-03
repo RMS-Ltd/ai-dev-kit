@@ -162,7 +162,7 @@ read_file, edit, multi_edit, list_dir, find_by_name
 
 ## Input
 
-- [IPP-E06S07T107](../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+- [IPP-E06S07T107](../../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
 - [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
 - [`.cursor/whitelist-patterns.yaml`](../../../../../.cursor/whitelist-patterns.yaml)
 - [ide-whitelist-guide.md](../../../../developer-tools/ide-whitelist-guide.md)
@@ -172,13 +172,13 @@ read_file, edit, multi_edit, list_dir, find_by_name
 
 ## References
 
-- [IPP-E06S07T107](../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+- [IPP-E06S07T107](../../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
 - [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
 - [validate_whitelist_patterns.py](../../../../../packages/frameworks/workflow%20mgt/scripts/validation/validate_whitelist_patterns.py)
 - [ide-whitelist-guide.md](../../../../developer-tools/ide-whitelist-guide.md) · [ide-whitelist-uat-log.md](../../../../developer-tools/ide-whitelist-uat-log.md)
 - [BR-039 — Cascade whitelist (vendor; out of scope for T107 closure)](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 - [E06:S06:T57 — BR-039 repo track](../Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
-- [IPW-E6S06T57](../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
+- [IPW-E6S06T57](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
 - [Story-007 — In scope / charter freeze](../Story-007-adk-implementation-analysis-and-package-management.md) (T107 pre-existing; in scope for ADK agent friction)
 
 ---

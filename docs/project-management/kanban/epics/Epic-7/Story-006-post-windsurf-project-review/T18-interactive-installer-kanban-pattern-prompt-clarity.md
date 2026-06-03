@@ -75,3 +75,7 @@ Address UXR-007 by improving interactive installer wording and guidance for Kanb
 
 - [ICW specification E07:S06:T18](../../../../../implementation-cycles/ICW-E07S06T18-specification.md)
 - [UXR-007](../../../fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
+
+## Planning artifacts (publication)
+
+- [IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md](../../../../../implementation-cycles/IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md)

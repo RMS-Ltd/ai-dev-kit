@@ -41,7 +41,7 @@ Ad-hoc Kanban updates that are not directly tied to a specific delivery task nee
 - Canonical perpetual task lane for ad-hoc Kanban synchronization and hygiene activity.
 - Explicit semantic boundary: this task is the kanban-focused lane, while `E02:S16:T03` remains the broader workflow-maintenance umbrella.
 - Cross-linked documentation so RW/UKW attribution can consistently target this task for kanban-specific work.
-- **BR-059 / UKW Step 6 Part B.1:** Comprehensive UKW runs must enumerate all open story-checklist tasks onto `kboard.md` MoSCOW (or **Won't Have** with deferral rationale) — see [E02:S16:T13](T13-br059-ukw-moscow-full-story-task-coverage.md) and [IPP-E02S16T13](../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md). Advisory: `validate_story_moscow_coverage.py --story E##:S##`.
+- **BR-059 / UKW Step 6 Part B.1:** Comprehensive UKW runs must enumerate all open story-checklist tasks onto `kboard.md` MoSCOW (or **Won't Have** with deferral rationale) — see [E02:S16:T13](T13-br059-ukw-moscow-full-story-task-coverage.md) and [IPP-E02S16T13](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md). Advisory: `validate_story_moscow_coverage.py --story E##:S##`.
 
 ---
 

@@ -34,7 +34,7 @@ Enable automated dependency security monitoring for **pip** (repo root) and **np
 
 - [FR-105](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)
 - [E07:S06:T08](../../Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) audit findings
-- [IPP-E08S03T06-dependabot-enablement-fr105.md](../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md) (IPW)
+- [IPP-E08S03T06-dependabot-enablement-fr105.md](../../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md) (IPW)
 - GitHub org/repo admin access for Dependabot settings
 
 ---
@@ -87,4 +87,4 @@ Repo settings: **Settings → Code security → Dependabot**. Re-verify with:
 
 - [FR-105](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)
 - [FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md) (build gate)
-- [IPP-E08S03T06-dependabot-enablement-fr105.md](../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)
+- [IPP-E08S03T06-dependabot-enablement-fr105.md](../../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)

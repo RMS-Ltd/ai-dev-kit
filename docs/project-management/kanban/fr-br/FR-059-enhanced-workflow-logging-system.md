@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Created:** 2026-03-17  
 **Last Updated:** 2026-05-30  
 
-**Planning:** [IPP-E2S08T08](../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md) | [ADR-008](../../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
+**Planning:** [IPP-E2S08T08](../../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md) | [ADR-008](../../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
 
 ---
 

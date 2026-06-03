@@ -101,3 +101,6 @@ Provide safe uninstall, cleanup, recovery, and rollback capabilities for ai-dev-
 
 **Template Usage:** Story follows Kanban framework story template; tasks trace to FR for forensic linkage.
 
+## Planning artifacts (publication)
+
+- [IPP-E2S06T01-package-uninstall-reimplementation.md](../../../../implementation-cycles/IPP-E2S06T01-package-uninstall-reimplementation.md)

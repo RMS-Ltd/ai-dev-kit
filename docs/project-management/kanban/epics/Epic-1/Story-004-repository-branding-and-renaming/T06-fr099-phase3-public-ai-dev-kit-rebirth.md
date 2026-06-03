@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Code:** E01S04T06
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
-**Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.4 Phase 3**  
+**Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.4 Phase 3**  
 **Depends on:** [E01:S04:T05 — Phase 2 genesis](T05-fr099-phase2-book-extraction-genesis.md) ✅  
 **Blocks:** [E01:S04:T07 — Phase 4 rewire](T07-fr099-phase4-rewire-and-verify.md)  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
@@ -70,7 +70,7 @@ New public `RMS-Ltd/ai-dev-kit` repository from verified genesis commit.
 
 ## IPW gate
 
-**Planning:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) filed (shared across T03–T07). Phase 3 execution still requires explicit authorization (`implement` or `RW E01:S04:T06`).
+**Planning:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) filed (shared across T03–T07). Phase 3 execution still requires explicit authorization (`implement` or `RW E01:S04:T06`).
 
 ---
 
@@ -82,6 +82,6 @@ New public `RMS-Ltd/ai-dev-kit` repository from verified genesis commit.
 
 ## References
 
-- [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+- [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
 - [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)

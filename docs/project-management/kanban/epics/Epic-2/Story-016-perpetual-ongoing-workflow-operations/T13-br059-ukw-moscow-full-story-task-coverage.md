@@ -26,7 +26,7 @@ housekeeping_policy: keep
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Re-housed UKW governance task; consolidated IPP satisfies FR-042 gate.
 
-**Implementation package:** [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
+**Implementation package:** [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
 
 ---
 
@@ -80,7 +80,7 @@ $ cd packages/frameworks/workflow mgt/scripts/kanban && python -m pytest test_va
 
 ## References
 
-- [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
+- [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
 - [BR-059](../../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 - [Superseded source: `E06:S07:T109`](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md)
 - [FR-087 / E04:S19:T03](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)

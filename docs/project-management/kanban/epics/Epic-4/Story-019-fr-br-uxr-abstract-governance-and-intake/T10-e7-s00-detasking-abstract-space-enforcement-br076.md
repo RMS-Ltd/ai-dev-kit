@@ -20,14 +20,14 @@ housekeeping_policy: keep
 **Related:** [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [E04:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md), [E07:S00 Story-000-uxr-repo](../../Epic-7/Story-000-uxr-repo.md)
 
 Publication Status: NOT_APPLICABLE  
-Publication N/A Reason: Consolidated IPP is planning SoT — [`IPP-E04S19T10-e7-s00-detasking-br076.md`](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
+Publication N/A Reason: Consolidated IPP is planning SoT — [`IPP-E04S19T10-e7-s00-detasking-br076.md`](../../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
 
 ---
 
 ## Input
 
 - [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)
-- [IPP-E04S19T10](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
+- [IPP-E04S19T10](../../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
 - [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach A — E7 conforms to E5 S00 model)
 - [dev-kit-versioning-policy.md](../../../../../governance/standards/dev-kit-versioning-policy.md) — S00 Abstract Space and Repository-Anchor Transition
 - [E5:S00 abstract-only reference](../../Epic-5/Story-000-fr-repo.md)
@@ -75,7 +75,7 @@ Publication N/A Reason: Consolidated IPP is planning SoT — [`IPP-E04S19T10-e7-
 ## References
 
 - [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)
-- [IPP-E04S19T10](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
+- [IPP-E04S19T10](../../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
 - [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
 - [E04:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
 - [Story 019](../Story-019-fr-br-uxr-abstract-governance-and-intake.md)

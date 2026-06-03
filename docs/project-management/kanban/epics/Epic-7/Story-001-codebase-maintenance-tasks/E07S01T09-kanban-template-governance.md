@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Story:** [E7:S01 – Codebase Maintenance Tasks](../Story-001-codebase-maintenance-tasks.md)
 
 Publication Status: NOT_APPLICABLE  
-Publication N/A Reason: Consolidated IPP — [`IPP-E07S01T09-kanban-template-governance-uxr005.md`](../../../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md)
+Publication N/A Reason: Consolidated IPP — [`IPP-E07S01T09-kanban-template-governance-uxr005.md`](../../../../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md)
 
 ---
 
@@ -32,7 +32,7 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
 ## Input
 
 - **[UXR-005](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)** — Kanban board formatting & governance findings and acceptance criteria.
-- **[IPP-E07S01T09](../../../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md)** — IPW package (spec, tests, implementation waves).
+- **[IPP-E07S01T09](../../../../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md)** — IPW package (spec, tests, implementation waves).
 - **Registry:** [E07:S00:T05](../Story-000-uxr-repo/T05-uxr-005-repository-anchor.md); kanban boards, `kanban-board-guide.md`, validators.
 
 ---
@@ -74,6 +74,6 @@ Attribute kanban spacing work to **E07:S01:T09** (`RW E07:S01:T09` or `RW E07:S0
 
 ## References
 
-- [IPP-E07S01T09](../../../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md)
-- [IPP-E04S19T10](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md) (E7:S00 detasking context)
+- [IPP-E07S01T09](../../../../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md)
+- [IPP-E04S19T10](../../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md) (E7:S00 detasking context)
 - [kanban-governance-policy.md](../../../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — MoSCOW spacing subsection

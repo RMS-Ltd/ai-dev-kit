@@ -71,10 +71,11 @@ Record the printed **scanned** and **missing wiring** counts below after each ma
 | Date | Scanned | Unwired | Notes |
 | ---- | ------- | ------- | ----- |
 | 2026-06-02 | 109 | 28 | Phase 1 sample (16 rows) wired; audit uses EST+kind alias matching (padded vs unpadded link targets). Remaining 28 unwired artifacts need future waves. |
+| 2026-06-03 | 114 | **0** | Phase 3 corpus tail ([IPP-E02S15T01-br066-corpus-tail-phase3.md](./IPP-E02S15T01-br066-corpus-tail-phase3.md)): bulk host wiring + relative-path repair; **BR-066 RESOLVED**. |
 
 ## Phased plan (ongoing)
 
 1. **Phase 1 (complete):** Contract + single-task validator + inventory baseline.
 2. **Phase 2 (complete):** Bulk audit mode, tests, targeted wiring for inventory sample ([IPP-E02S15T01-br066-publication-backfill-phase2.md](./IPP-E02S15T01-br066-publication-backfill-phase2.md)).
-3. **Phase 3 (optional):** Gate release closure for applicable tasks on `--requested` pass (ADR not filed — EXEMPT in Phase 2).
+3. **Phase 3 (complete):** Corpus tail closure — **0** unwired ([IPP-E02S15T01-br066-corpus-tail-phase3.md](./IPP-E02S15T01-br066-corpus-tail-phase3.md)); optional blocking RW gate still EXEMPT.
 4. **Phase 4 (maintenance):** Periodic `--audit-inventory` in UKW/RW ops cadence.

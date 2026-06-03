@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.6+2] - 03-06-26
+## [0.2.15.1+3] - 03-06-26
 
-E08:S03:T06 — Dependabot pip + portal npm, security updates, npm audit fix (FR-105). SemVer **v0.4.852+2**.
+E02:S15:T01 — BR-066 Phase 3: publication corpus tail wired (`--audit-inventory` 0 unwired), BR-066 RESOLVED. SemVer **v0.4.853+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.6+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.1+3.md)
 
 ---

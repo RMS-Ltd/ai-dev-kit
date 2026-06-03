@@ -140,7 +140,7 @@ For each active MoSCOW row on **`fbuboard.md`**:
 ## Related work
 
 - [ADR-010](../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
-- [IPP-E02S16T16](../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
+- [IPP-E02S16T16](../../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 - [FR-034](FR-034-ukw-granular-control-and-use-case-flags.md) — UKW flag pattern (`-u`, `-p`, `-a`)
 - [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) — fbuboard terminal prune (predecessor; `-c` adds ledger append mandate)
 - [FR-049](FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md) — completed ledger format

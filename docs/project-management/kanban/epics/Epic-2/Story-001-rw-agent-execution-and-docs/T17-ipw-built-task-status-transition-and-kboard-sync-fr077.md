@@ -119,3 +119,11 @@ Publication N/A Reason: N/A
 ## Planning Artifact Links
 
 - ICW E02:S01:T17 specification / test design / implementation plan — pending under `docs/implementation-cycles/`
+
+## Planning artifacts (publication)
+
+- [ICW-E2S01T17-test-design.md](../../../../../implementation-cycles/ICW-E2S01T17-test-design.md)
+
+- [ICW-E2S01T17-specification.md](../../../../../implementation-cycles/ICW-E2S01T17-specification.md)
+
+- [ICW-E2S01T17-implementation-plan.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)

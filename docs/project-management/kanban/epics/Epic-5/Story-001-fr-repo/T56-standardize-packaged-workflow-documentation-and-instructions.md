@@ -499,3 +499,7 @@ This task is considered COMPLETE when:
 ---
 
 **This task addresses the critical documentation standardization gap identified in FR-056. Successful completion will provide consistent, professional documentation for all packaged workflows, significantly improving user experience and workflow adoption.**
+
+## Planning artifacts (publication)
+
+- [IPP-E5S01T56-package-workflow-docs.md](../../../../../implementation-cycles/IPP-E5S01T56-package-workflow-docs.md)

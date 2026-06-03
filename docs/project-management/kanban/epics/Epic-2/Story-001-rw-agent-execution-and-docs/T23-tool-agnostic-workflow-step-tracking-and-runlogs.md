@@ -33,7 +33,7 @@ Publication N/A Reason: Re-housed RW/UKW governance task; IPP documents planning
 - Requirement for tool-agnostic workflow step tracking specification
 - Need for persisted run log mechanism for workflow resumption
 - [E04:S19:T03 investigation report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md) §5.2
-- [IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md](../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
+- [IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md](../../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
 
 ## Overview
 
@@ -59,7 +59,7 @@ Current workflow governance documentation (especially RW) mandated Cursor TODO u
 
 ## References
 
-- [IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md](../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
+- [IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md](../../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
 - [ADR-011-workflow-step-tracker-and-agent-run-log.md](../../../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 - [workflow-step-tracker-contract.md](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md)
 - [workflow-agent-run-log-v1.schema.json](../../../../architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json)

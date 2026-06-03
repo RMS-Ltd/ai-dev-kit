@@ -69,3 +69,7 @@ housekeeping_policy: keep
 
 - [IPW-E05S09T11](../../../../../implementation-cycles/IPW-E05S09T11-docusaurus-monorepo-markdown-links-br068.md)
 - Docusaurus: [Markdown links](https://docusaurus.io/docs/markdown-features/links), [Multiple docs plugins](https://docusaurus.io/docs/docs-multi-instance/) (if considering split roots)
+
+## Planning artifacts (publication)
+
+- [IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md](../../../../../implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)

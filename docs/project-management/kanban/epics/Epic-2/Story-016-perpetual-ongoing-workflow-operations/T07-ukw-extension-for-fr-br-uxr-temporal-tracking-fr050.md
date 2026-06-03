@@ -78,3 +78,7 @@ The UKW handles kanban board synchronization with temporal tracking and a recent
 - UKW workflow definition: `packages/frameworks/workflow mgt/workflows/update-kanban-workflow/`
 - UKW agent execution: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - FBU completed skill: `.cursor/skills/fr-br-uxr-completed-update/SKILL.md`
+
+## Planning artifacts (publication)
+
+- [IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md](../../../../../implementation-cycles/IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md)

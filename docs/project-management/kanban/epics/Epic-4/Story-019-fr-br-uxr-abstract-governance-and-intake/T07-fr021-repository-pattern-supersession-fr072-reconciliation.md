@@ -22,14 +22,14 @@ housekeeping_policy: keep
 **Historical registry:** [E05:S01:T21](../../Epic-5/Story-001-fr-repo/T21-fr-br-uxr-repository-stories.md)
 
 Publication Status: NOT_APPLICABLE  
-Publication N/A Reason: Delivered via [IPP-E04S19T08](../../../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md) host **T08**
+Publication N/A Reason: Delivered via [IPP-E04S19T08](../../../../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md) host **T08**
 
 ---
 
 ## Input
 
 - [FR-021](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md); [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach D).
-- [IPP-E04S19T08](../../../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
+- [IPP-E04S19T08](../../../../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
 
 ---
 

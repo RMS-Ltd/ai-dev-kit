@@ -63,3 +63,7 @@ Shipped: policy SoT, `ipw.md` Phase 5.0/9, `PLAN_DOC_TEMPLATE.md` §2.5, KB guid
 - [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 - [IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md)
 - [Story 016](../Story-016-perpetual-ongoing-workflow-operations.md)
+
+## Planning artifacts (publication)
+
+- [IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)

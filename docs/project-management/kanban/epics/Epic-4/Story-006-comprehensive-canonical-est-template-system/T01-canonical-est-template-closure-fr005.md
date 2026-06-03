@@ -100,3 +100,7 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 - [IPP-E04S06T01](../../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md)
 - [Story-006](../Story-006-comprehensive-canonical-est-template-system.md)
 - [FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
+
+## Planning artifacts (publication)
+
+- [IPP-E4S06T01-canonical-est-template-closure-fr005.md](../../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)

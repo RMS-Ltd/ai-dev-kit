@@ -55,3 +55,11 @@ Design and implement the missing Update Changelog Workflow (UCW) that keeps `CHA
 - Documentation clearly distinguishes UCW vs UKW responsibilities to avoid future confusion.  
 - Tests pass in CI and cover edge cases (less than N entries, duplicates, missing archive path, permission errors).  
 - Task is wired to FR-057 and recorded in kanban board/story doc with version markers.
+
+## Planning artifacts (publication)
+
+- [ICW-E7S01T06-test-design.md](../../../../../implementation-cycles/ICW-E7S01T06-test-design.md)
+
+- [ICW-E7S01T06-specification.md](../../../../../implementation-cycles/ICW-E7S01T06-specification.md)
+
+- [ICW-E7S01T06-implementation-plan.md](../../../../../implementation-cycles/ICW-E7S01T06-implementation-plan.md)

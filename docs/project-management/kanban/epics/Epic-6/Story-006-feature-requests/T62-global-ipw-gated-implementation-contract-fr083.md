@@ -70,3 +70,7 @@ Implementation can begin prematurely when a user requested only intake/planning 
 - [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)
 - [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-074](../../../fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
+
+## Planning artifacts (publication)
+
+- [IPW-E6S06T62-global-ipw-gated-implementation-contract.md](../../../../../implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md)

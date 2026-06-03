@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Code:** E01S04T07
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
-**Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.5 Phase 4**  
+**Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.5 Phase 4**  
 **Depends on:** [E01:S04:T06 — Phase 3 public rebirth](T06-fr099-phase3-public-ai-dev-kit-rebirth.md) ✅  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
@@ -72,13 +72,13 @@ Rewired remotes, badges, install docs, CI; install smoke test with no Epic-24 co
 
 ## IPW gate
 
-**Blocked until:** [E01:S04:T06](T06-fr099-phase3-public-ai-dev-kit-rebirth.md) COMPLETE + explicit execution authorization (`implement` or `RW E01:S04:T07`). IPP: [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md).
+**Blocked until:** [E01:S04:T06](T06-fr099-phase3-public-ai-dev-kit-rebirth.md) COMPLETE + explicit execution authorization (`implement` or `RW E01:S04:T07`). IPP: [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md).
 
 ---
 
 ## References
 
-- [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+- [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
 - [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md)
 - [FR-082](../../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)

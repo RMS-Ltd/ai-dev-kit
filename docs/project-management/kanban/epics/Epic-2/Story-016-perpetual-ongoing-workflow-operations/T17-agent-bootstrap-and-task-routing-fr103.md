@@ -28,7 +28,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [FR-103](../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
-- [IPP-E02S16T17](../../../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md) — IPW planning package
+- [IPP-E02S16T17](../../../../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md) — IPW planning package
 - [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 - [`docs/project-agent-manifest.json`](../../../../../project-agent-manifest.json) · [`docs/project-agent-index.md`](../../../../../project-agent-index.md)
 - Root [`AGENTS.md`](../../../../../../AGENTS.md), [`CLAUDE.md`](../../../../../../CLAUDE.md), [`.cursorrules`](../../../../../../.cursorrules)
@@ -80,7 +80,7 @@ Cold-started agents lack a deterministic, low-token bootstrap path. Full `.curso
 ## References
 
 - [FR-103](../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
-- [IPP-E02S16T17](../../../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)
+- [IPP-E02S16T17](../../../../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)
 - [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 - [project-agent-index.md](../../../../../project-agent-index.md)
 - [Story 016](../Story-016-perpetual-ongoing-workflow-operations.md)

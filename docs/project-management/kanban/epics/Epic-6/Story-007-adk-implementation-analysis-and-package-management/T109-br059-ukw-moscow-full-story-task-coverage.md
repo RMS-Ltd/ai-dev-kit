@@ -30,6 +30,6 @@ Canonical implementing task for **BR-059** is **[E02:S16:T13](../../../Epic-2/St
 ## References
 
 - [E02:S16:T13 (successor)](../../../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
-- [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md) (canonical implementation package)
+- [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md) (canonical implementation package)
 - [BR-059](../../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 - [E04:S19:T03 investigation report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)

@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Bug Report BR-066 - IPW missing Docusaurus filing for planning artifacts
 
-**Status:** OPEN  
+**Status:** RESOLVED  
 **Priority:** HIGH  
 **Severity:** HIGH - planning/spec artifacts are assumed published but are not discoverable in the Docusaurus documentation system.  
 **Created:** 2026-04-14  
-**Last updated:** 2026-06-02 (E02:S15:T01 Phase 2 — bulk audit, targeted backfill, expanded tests; see [IPP-E02S15T01-br066-publication-backfill-phase2.md](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md))  
-**Version:** v0.2.15.1+2  
+**Last updated:** 2026-06-03 (E02:S15:T01 Phase 3 — `--audit-inventory` **0** unwired; see [IPP-E02S15T01-br066-corpus-tail-phase3.md](../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md))  
+**Version:** v0.2.15.1+3  
 **Code:** BR-066  
 **Implementing Task:** [E02:S15:T01](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
 
@@ -116,6 +116,8 @@ When IPW indicates documentation filing responsibilities (especially spec artifa
 
 ## Release Evidence
 
-- Release anchor: `v0.2.15.1+1` (`v0.4.739+1` SemVer).
+- Phase 3 closure (2026-06-03): `python ".../validate_ipw_publication_wiring.py" --audit-inventory` → **0** unwired (scanned 114).
+- Phase 2: `v0.2.15.1+2` — bulk audit mode, targeted backfill ([IPP-E02S15T01-br066-publication-backfill-phase2.md](../../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md)).
+- Phase 1: `v0.2.15.1+1` (`v0.4.739+1` SemVer).
 - Deterministic validator: `validate_ipw_publication_wiring.py`.
-- Backfill inventory: `docs/implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md`.
+- Backfill inventory: [IPW-PUBLICATION-BACKFILL-INVENTORY.md](../../../implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md).

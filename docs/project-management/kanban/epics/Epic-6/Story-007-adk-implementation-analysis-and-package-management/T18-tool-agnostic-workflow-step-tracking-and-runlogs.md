@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Supersede note
 
-Canonical implementing task is **[E02:S01:T23](../../../Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)** (RW / workflow governance). Planning: [IPP-E2S01T23](../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md).
+Canonical implementing task is **[E02:S01:T23](../../../Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)** (RW / workflow governance). Planning: [IPP-E2S01T23](../../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md).
 
 ---
 

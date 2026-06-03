@@ -41,7 +41,7 @@ Align declared Python minimum version (`setup.py`, README, install guides) with 
 
 - [FR-104](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md), [BR-077](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
 - [E07:S06:T08](../../Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) audit findings
-- [IPP-E08S03T05-python-minimum-version-fr104-br077.md](../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) (IPW)
+- [IPP-E08S03T05-python-minimum-version-fr104-br077.md](../../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) (IPW)
 
 ---
 
@@ -64,6 +64,6 @@ Single coherent **Python version policy** for ai-dev-kit: update `setup.py`, REA
 
 ## References
 
-- [IPP-E08S03T05-python-minimum-version-fr104-br077.md](../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md)
+- [IPP-E08S03T05-python-minimum-version-fr104-br077.md](../../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md)
 - [FR-104](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md)
 - [BR-077](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)

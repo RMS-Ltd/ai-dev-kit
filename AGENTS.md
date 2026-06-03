@@ -42,7 +42,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E02:S15:T01 / BR-066 | IPW publication backfill — corpus tail (~28 unwired) | `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
+| _(none — refresh on UKW)_ | BR-066 **RESOLVED** at Phase 3 (`--audit-inventory` 0); see T01 if new IPW wiring work is filed | `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

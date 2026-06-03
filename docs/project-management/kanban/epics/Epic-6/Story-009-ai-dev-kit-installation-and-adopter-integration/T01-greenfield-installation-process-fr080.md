@@ -79,3 +79,7 @@ Greenfield adopters need a **single, reproducible first-run path** from acquisit
 
 - **IPW (planning package):** [IPW-E06S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md)
 - [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md)
+
+## Planning artifacts (publication)
+
+- [IPW-E6S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)

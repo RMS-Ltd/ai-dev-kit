@@ -55,7 +55,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
-- **BR-066** – IPW Docusaurus filing for planning artifacts - 🟢 OPEN (MEDIUM, **E02:S15:T01** Phase 2 **v0.2.15.1+2** shipped; ~28 unwired artifacts remain in corpus audit) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | —No IPP— | Last modified: 2026-06-02 12:49 UTC
+- **BR-066** – IPW Docusaurus filing for planning artifacts - ✅ RESOLVED (MEDIUM, **E02:S15:T01** Phase 3 — `--audit-inventory` **0** unwired) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md) | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [E02:S15:T01](epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | Last modified: 2026-06-02 12:49 UTC
 
 ---
 

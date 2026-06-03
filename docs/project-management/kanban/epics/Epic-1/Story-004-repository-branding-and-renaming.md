@@ -28,7 +28,7 @@ housekeeping_policy: keep
 - [x] **E01:S04:T05 – FR-099 Phase 2 — Book extraction genesis** - ✅ COMPLETE (**v0.1.4.3+1**) — [T05](Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md)
 - [x] **E01:S04:T06 – FR-099 Phase 3 — Public `ai-dev-kit` rebirth** - ✅ COMPLETE (2026-05-26) (v0.1.4.6+2) — [T06](Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md)
 - [x] **E01:S04:T07 – FR-099 Phase 4 — Rewire & verify** - ✅ COMPLETE (2026-05-26) (v0.1.4.7+2) — [T07](Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
-  - **IPP:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) (all phases)
+  - **IPP:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) (all phases)
   - Umbrella redirect (historical RW): [`T03-spin-off-book-epic-private-repo-fr099.md`](Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md) | [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---

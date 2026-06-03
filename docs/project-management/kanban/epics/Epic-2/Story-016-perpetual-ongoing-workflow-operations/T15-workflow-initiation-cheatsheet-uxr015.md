@@ -20,7 +20,7 @@ housekeeping_policy: keep
 ✅ COMPLETE (v0.2.16.15+1)
 
 Publication Status: PUBLISHED  
-**Planning package:** [`IPP-E02S16T15-workflow-initiation-cheatsheet.md`](../../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md)
+**Planning package:** [`IPP-E02S16T15-workflow-initiation-cheatsheet.md`](../../../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md)
 
 **Upstream:** [UXR-015 — Workflow initiation cheatsheet](../../../fr-br/UXR-015-workflow-initiation-cheatsheet.md)
 
@@ -29,7 +29,7 @@ Publication Status: PUBLISHED
 ## Input
 
 - [UXR-015](../../../fr-br/UXR-015-workflow-initiation-cheatsheet.md) findings, recommendations, and proposed cheatsheet outline (sections A–E).
-- [IPP-E02S16T15](../../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) — IPW planning package.
+- [IPP-E02S16T15](../../../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) — IPW planning package.
 - Trigger routing: `CLAUDE.md`, `.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`.
 - Guides section: [`docs/guides/README.md`](../../../../../guides/README.md).
 
@@ -73,7 +73,7 @@ Maintainers and agents cannot reliably recall the growing matrix of workflow tri
 ## References
 
 - [UXR-015](../../../fr-br/UXR-015-workflow-initiation-cheatsheet.md)
-- [IPP-E02S16T15](../../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md)
+- [IPP-E02S16T15](../../../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md)
 - [Workflow initiation cheatsheet](../../../../../guides/workflow-initiation-cheatsheet.md)
 - [Story 016](../Story-016-perpetual-ongoing-workflow-operations.md)
 - [Release Workflow agent execution guide](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)

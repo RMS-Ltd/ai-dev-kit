@@ -144,3 +144,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 - [x] Complete and obtain sign-off on Phase 0 inventory.
 - [x] Run `IPW E07:S01:T11` when ready for execution planning.
 - [x] Execute Waves A–F per IPP; closure RW `v0.7.1.11+8`.
+
+## Planning artifacts (publication)
+
+- [IPP-E7S01T11-consolidate-governance-under-docs-governance.md](../../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)

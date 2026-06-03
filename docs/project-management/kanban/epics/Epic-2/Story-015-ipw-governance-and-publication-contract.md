@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-14  
 **Completed:** 2026-04-27 (T01–T07); reopened 2026-05-20 for stamp forensic recovery  
-**Last updated:** 2026-06-02 (E02:S15:T01 Phase 2 released **v0.2.15.1+2**)
+**Last updated:** 2026-06-03 (E02:S15:T01 Phase 3 released **v0.2.15.1+3** — BR-066 RESOLVED)
 **Version:** v0.2.15.7+9
 **Code:** E2S15
 
@@ -33,7 +33,7 @@ Eliminate IPW documentation publication drift by making ownership, filing target
 
 ## Task Checklist
 
-- [x] **E02:S15:T01 – BR-066: IPW Docusaurus filing contract and backfill** - COMPLETE (v0.2.15.1+2) (HIGH, contract + validation + historical recovery inventory; FR-042 Step 5 documentation deliverables added) — [Task doc](Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [BR-066](../../fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
+- [x] **E02:S15:T01 – BR-066: IPW Docusaurus filing contract and backfill** - COMPLETE (v0.2.15.1+3) (HIGH, Phases 1–3; `--audit-inventory` **0** unwired; BR-066 **RESOLVED**) — [Task doc](Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) | [BR-066](../../fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
 
 - [~] **E02:S15:T02 – IPP post-run governance reconciliation ownership (FR-084)** - SUPERSEDED -> **E02:S15:T07** (FR-084 four-surface contract absorbed into FR-092 Bucket A4 + Wave 3) — [Task doc](Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md) | [FR-084 (superseded)](../../fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md) | [IPP (historical)](../../../../implementation-cycles/IPP-E02S15T02-ipp-post-run-governance-reconciliation-ownership.md)
 

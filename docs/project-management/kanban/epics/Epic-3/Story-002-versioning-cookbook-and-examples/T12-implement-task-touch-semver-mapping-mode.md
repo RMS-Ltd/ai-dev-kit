@@ -87,3 +87,7 @@ Task reopened to enforce collision-invariant SemVer mapping at release boundarie
 - add explicit injective guard (`semver -> internal_version`) during finalize;
 - hard-fail RW tag creation when SemVer primary tag already exists but does not match the current internal release lineage;
 - add deterministic diagnostics + regression tests for boundary collision paths.
+
+## Planning artifacts (publication)
+
+- [IPW-E3S02T12-task-touch-semver-collision-hardening.md](../../../../../implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md)

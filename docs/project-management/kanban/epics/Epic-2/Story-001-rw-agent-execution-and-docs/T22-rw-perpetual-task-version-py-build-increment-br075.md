@@ -65,3 +65,7 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 - [BR-075](../../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
 - [E02:S16:T04 — Perpetual UKW/kanban lane](../Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - [dev-kit-versioning-policy.md](../../../../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
+
+## Planning artifacts (publication)
+
+- [IPP-E2S01T22-rw-perpetual-version-py-build-br075.md](../../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)

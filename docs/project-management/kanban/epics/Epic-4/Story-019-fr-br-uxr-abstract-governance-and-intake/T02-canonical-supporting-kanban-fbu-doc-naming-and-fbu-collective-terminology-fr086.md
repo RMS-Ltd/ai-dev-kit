@@ -69,3 +69,7 @@ Naming and terminology are partially canonicalized (`kboard`/`fbuboard`) but sup
 - [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
 - [Story 019](../Story-019-fr-br-uxr-abstract-governance-and-intake.md)
 - [E06:S07:T114](../../../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+
+## Planning artifacts (publication)
+
+- [IPW-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md](../../../../../implementation-cycles/IPW-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md)

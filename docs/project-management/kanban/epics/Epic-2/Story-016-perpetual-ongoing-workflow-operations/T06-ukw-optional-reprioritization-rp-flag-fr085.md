@@ -22,17 +22,17 @@ housekeeping_policy: keep
 **Upstream:** [FR-085 - UKW optional reprioritization (`--rp`) with deep intent/dependency analysis](../../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
 **Re-housed from:** E06:S07:T116 (legacy task doc removed after re-housing publication)
 
-**Planning package:** [`IPP-E02S16T06-ukw-rp-flag-fr085.md`](../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
+**Planning package:** [`IPP-E02S16T06-ukw-rp-flag-fr085.md`](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
 
 Publication Status: NOT_APPLICABLE  
-Publication N/A Reason: Consolidated IPP per [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md) — [`IPP-E02S16T06`](../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md); ICW trio not used.
+Publication N/A Reason: Consolidated IPP per [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md) — [`IPP-E02S16T06`](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md); ICW trio not used.
 
 ---
 
 ## Input
 
 - [FR-085](../../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) requirements.
-- [IPP-E02S16T06](../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp` contract).
+- [IPP-E02S16T06](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp` contract).
 - [ADR-009](../../../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) — governance contract.
 - Existing UKW baseline and ongoing ownership model in [E2:S16](../Story-016-perpetual-ongoing-workflow-operations.md).
 - [Workflow initiation cheatsheet](../../../../../guides/workflow-initiation-cheatsheet.md).
@@ -74,7 +74,7 @@ UKW lacked an explicit optional mode for deep reprioritization based on inferred
 
 ## References
 
-- [IPP-E02S16T06](../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
+- [IPP-E02S16T06](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
 - [ADR-009](../../../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)
 - [FR-085](../../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
 - [Story 016](../Story-016-perpetual-ongoing-workflow-operations.md)
