@@ -172,9 +172,51 @@ def compute_coverage(
     )
 
 
+def scan_all_stories(
+    kroot: Path, kboard_path: Path
+) -> Tuple[List[CoverageReport], List[CoverageReport], List[str]]:
+    """Return (failures, passes, skipped) for every story doc under epics."""
+    failures: List[CoverageReport] = []
+    passes: List[CoverageReport] = []
+    skipped: List[str] = []
+    board_content = kboard_path.read_text(encoding="utf-8", errors="replace")
+    for story_path in sorted((kroot / "epics").glob("Epic-*/Story-*.md")):
+        head = story_path.read_text(encoding="utf-8", errors="replace")[:12000]
+        em = re.search(r"\*\*Code:\*\*\s*E(\d+)S(\d+)", head, re.I)
+        if not em:
+            skipped.append(story_path.name)
+            continue
+        epic, story = int(em.group(1)), int(em.group(2))
+        report = compute_coverage(
+            story_path.read_text(encoding="utf-8", errors="replace"),
+            board_content,
+            epic,
+            story,
+            story_path,
+        )
+        if not report.open_tasks:
+            skipped.append(report.story_id)
+            continue
+        if report.ok:
+            passes.append(report)
+        else:
+            failures.append(report)
+    return failures, passes, skipped
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Validate story checklist open tasks appear on kboard MoSCOW (BR-059)"
+    )
+    parser.add_argument(
+        "--scan-all",
+        action="store_true",
+        help="Scan all story docs; print summary (exit 1 if any story fails)",
+    )
+    parser.add_argument(
+        "--report-json",
+        type=Path,
+        help="With --scan-all, write JSON report to this path",
     )
     parser.add_argument(
         "--story",
@@ -197,6 +239,38 @@ def main() -> int:
     config = load_rw_config(project_root)
     kroot = kanban_root(project_root, config)
     kboard_path = args.kboard or (kroot / "kboard.md")
+
+    if args.scan_all:
+        if not kboard_path.exists():
+            print(f"ERROR: kboard missing: {kboard_path}")
+            return 2
+        failures, passes, skipped = scan_all_stories(kroot, kboard_path)
+        print(f"SCAN: {len(passes)} pass, {len(failures)} fail, {len(skipped)} skipped (0 open)")
+        for r in failures:
+            print(f"  FAIL {r.story_id}: {len(r.missing)} missing / {len(r.open_tasks)} open")
+        for r in passes:
+            print(f"  PASS {r.story_id}: {len(r.open_tasks)} open")
+        if args.report_json:
+            import json
+
+            payload = {
+                "pass": [{"story": r.story_id, "open": len(r.open_tasks)} for r in passes],
+                "fail": [
+                    {
+                        "story": r.story_id,
+                        "open": len(r.open_tasks),
+                        "missing": r.missing,
+                    }
+                    for r in failures
+                ],
+                "skipped": skipped,
+            }
+            args.report_json.parent.mkdir(parents=True, exist_ok=True)
+            args.report_json.write_text(
+                json.dumps(payload, indent=2), encoding="utf-8"
+            )
+            print(f"Wrote {args.report_json}")
+        return 1 if failures else 0
 
     if args.story_doc:
         story_path = args.story_doc.resolve()

@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Historical implementing task:** `E06:S07:T109` (superseded 2026-05-29, FR-087 Wave 4)  
 **Priority:** HIGH  
 **Severity:** MEDIUM (board SoT diverges from story checklist; planners lose visibility)  
-**Status:** OPEN  
+**Status:** RESOLVED  
 **Created:** 2026-03-30  
-**Last updated:** 2026-06-02 — Process fix shipped under **E02:S16:T13** (BR remains OPEN for historical corpus)  
+**Last updated:** 2026-06-03 — Process fix + regression target remediated; scoped corpus sweep documented (**v0.2.16.3+6**)  
 **Classification:** UKW + Kanban board accuracy
 
 ---
@@ -83,6 +83,28 @@ A **comprehensive UKW** run promoted **E05:S09:T01** to the MoSCOW **Should** se
 
 ## Resolution / current status
 
-- **OPEN** (process fixed; historical gap corpus not re-audited) — **E05:S09** board rows were manually corrected 2026-03-30. **2026-06-02:** [E02:S16:T13](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) shipped **UKW Step 6 Part B.1** (story checklist enumeration) in `.cursorrules`, [cursorrules-ukw-trigger-section.md](../../../packages/frameworks/workflow%20mgt/cursorrules-ukw-trigger-section.md), [update-kanban-workflow-agent-execution.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [ukw/AGENTS.md](../../../packages/frameworks/workflow%20mgt/agents/ukw/AGENTS.md), plus advisory [`validate_story_moscow_coverage.py`](../../../packages/frameworks/workflow%20mgt/scripts/kanban/validate_story_moscow_coverage.py). **IPP:** [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md). **Dry-run:** `--story E10:S01` → 6 open checklist tasks, 0 on `kboard` (exit 1).
-- **SitRep (2026-06-03):** [IPP-E02S16T13 §7.1–§7.2](../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md#71-sitrep--post-ship-posture-2026-06-03) — post-ship posture and BR-059 closure options (A–D); default **Option A** (keep OPEN).
-- **Board remediation (2026-06-03, Option B partial):** **E10:S01:T01–T06** added to `kboard.md` Could Have per story checklist (BR-059 regression target). Re-run `validate_story_moscow_coverage.py --story E10:S01` after release to confirm PASS.
+**RESOLVED (2026-06-03)** — Original UKW failure mode (single “lead” task per story) is fixed; regression tooling and remediation evidence are in place.
+
+### Shipped fix (E02:S16:T13, v0.2.16.13+1)
+
+- **UKW Step 6 Part B.1** in `.cursorrules`, [cursorrules-ukw-trigger-section.md](../../../packages/frameworks/workflow%20mgt/cursorrules-ukw-trigger-section.md), [update-kanban-workflow-agent-execution.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [ukw/AGENTS.md](../../../packages/frameworks/workflow%20mgt/agents/ukw/AGENTS.md).
+- Advisory [`validate_story_moscow_coverage.py`](../../../packages/frameworks/workflow%20mgt/scripts/kanban/validate_story_moscow_coverage.py) (`--story`, `--scan-all`).
+- **IPP:** [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md).
+
+### Remediation evidence
+
+| Target | Result |
+| ------ | ------ |
+| **E05:S09** (original report) | Manual board fix 2026-03-30 |
+| **E10:S01** (regression dry-run) | **PASS** after **T01–T06** added to `kboard.md` (`v0.2.16.3+5`) |
+| **E02:S11:T13–T14** (active open tasks) | Added to `kboard.md` Could Have (`v0.2.16.3+6`) |
+
+### Corpus sweep (out of scope for this BR)
+
+`validate_story_moscow_coverage.py --scan-all` (2026-06-03): **37** stories with open checklist tasks still lack full MoSCOW rows — mostly TODO/backlog epics intentionally absent from the active board per MoSCOW value audit. **UKW Part B.1** applies on the next comprehensive UKW for **IN PROGRESS** stories; backlog enumeration is a separate hygiene program (not BR-059).
+
+Report: [`br059-corpus-scan-2026-06-03.json`](../../changelog-and-release-notes/changelog-archive/four-surface-reports/br059-corpus-scan-2026-06-03.json).
+
+### SitRep / closure
+
+- [IPP-E02S16T13 §7.1–§7.2](../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md) — Option **D** (scoped RESOLVED): process + regression fixed; full backlog board fill deferred.

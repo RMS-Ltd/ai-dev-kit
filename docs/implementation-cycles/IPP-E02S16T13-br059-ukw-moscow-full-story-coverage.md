@@ -166,7 +166,7 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 
 **Default recommendation:** **Option A** unless explicit board repair (**B**) or enforcement (**C**) is requested.
 
-**Follow-up implemented (2026-06-03):** **Option B (partial)** — added **E10:S01:T01–T06** to `kboard.md` Could Have (stamps `2026-01-18 16:44 UTC` from story `created_at`); SitRep IPP reconciliation shipped on **E02:S16:T03** `v0.2.16.3+5`. Validator `--story E10:S01` expected **PASS** post-remediation. **BR-059** remains **OPEN** until user verifies broader corpus.
+**Follow-up implemented (2026-06-03):** **Option D (scoped RESOLVED)** — **E10:S01** + **E02:S11:T13–T14** on `kboard`; `--scan-all` corpus documented; **BR-059** **RESOLVED** on **`v0.2.16.3+6`**. Validator gains `--scan-all` / `--report-json`. **fbuboard** BR-059/BR-067 row text deferred until FR-097 backfill wave.
 
 ---
 

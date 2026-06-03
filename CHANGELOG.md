@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.3+5] - 03-06-26
+## [0.2.16.3+6] - 03-06-26
 
-E02:S16:T03 — BR-059 SitRep IPP + E10:S01 MoSCOW board remediation. SemVer **v0.4.848+5**.
+E02:S16:T03 — BR-059 RESOLVED; MoSCOW corpus scan; E02:S11:T13–T14 on kboard. SemVer **v0.4.848+6**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+5.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+6.md)
 
 ---
