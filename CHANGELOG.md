@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.13+1] - 03-06-26
+## [0.6.9.12+2] - 03-06-26
 
-E06:S09:T13 — Kanban init BR-084 / GitHub #16 (RW mode C `task_doc_pattern` + persisted pattern guardrails). SemVer **v0.4.859+1**.
+E06:S09:T12 — Attempted fix BR-083: RW mode C detects fresh kanban epic/story patterns (no wrong defaults). SemVer **v0.4.859+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.13+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.12+2.md)
 
 ---

@@ -9,8 +9,8 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 VERSION_RC = 0        # Release Candidate
 VERSION_EPIC = 6      # Epic 6 — Framework Management
 VERSION_STORY = 9     # Story 9 — AI Dev Kit installation and adopter integration
-VERSION_TASK = 13     # Task 13 — BR-084 RW mode C rw-config generation (kanban init)
-VERSION_BUILD = 1     # Build 1: kanban documentation setup / GitHub #16 intake
+VERSION_TASK = 12     # Task 12 — BR-083 RW install pattern defaults (fresh kanban detect)
+VERSION_BUILD = 2     # Build 2: detect_kanban_doc_patterns + mode C defaults
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.13+1
+# Current: 0.6.9.12+2

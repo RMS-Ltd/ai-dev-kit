@@ -106,6 +106,31 @@ python3 "packages/frameworks/workflow mgt/scripts/install_release_workflow.py" -
 
 The RW installer exits with the same guidance if PyYAML is missing (BR-082).
 
+### Post-kanban RW install (`--mode c` pattern defaults)
+
+After `install_kanban_framework.py --mode fresh`, on-disk layout is typically:
+
+```text
+docs/project-management/kanban/
+  kboard.md
+  epics/Epic-1/Epic-1.md
+  epics/Epic-1/Story-009-*.md
+```
+
+Mode **C** of `install_release_workflow.py` **detects** this layout and pre-fills matching defaults (press Enter to accept). If detection finds files, you should see match previews instead of zero-match warnings.
+
+Copy-paste fallback if you skip the installer prompts:
+
+```yaml
+use_kanban: true
+kanban_root: docs/project-management/kanban
+epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
+story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
+kanban_board: kboard.md
+```
+
+(`task_doc_pattern` and `fr_br_root` are **E06:S09:T13** / GitHub #16 — not T12.)
+
 ### Outputs
 
 - Framework assets copied/available in target project.

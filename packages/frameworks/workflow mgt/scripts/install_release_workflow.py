@@ -168,6 +168,13 @@ def pattern_to_preview_glob(pattern: str) -> str:
     return re.sub(r"\{[^}]+\}", "*", pattern)
 
 
+# Kanban installer (fresh) layout — matches install_kanban_framework.py output (BR-083).
+FRESH_KANBAN_EPIC_PATTERN = "epics/Epic-{epic}/Epic-{epic}.md"
+FRESH_KANBAN_STORY_PATTERN = "epics/Epic-{epic}/Story-{story:03d}-*.md"
+LEGACY_KANBAN_EPIC_PATTERN = "epics/Epic-{epic}.md"
+LEGACY_KANBAN_STORY_PATTERN = "epics/Epic-{epic}/stories/Story-{story}-*.md"
+
+
 def preview_pattern_matches(
     project_root: Path,
     kanban_root: str,
@@ -225,6 +232,59 @@ def prompt_pattern_with_validation(
         for sample in samples:
             print(f"    - {sample}")
         return value
+
+
+def _pattern_match_score(
+    project_root: Path,
+    kanban_root: str,
+    pattern: str,
+) -> int:
+    count, _, preview_error = preview_pattern_matches(project_root, kanban_root, pattern)
+    return count if preview_error is None else 0
+
+
+def detect_kanban_doc_patterns(
+    project_root: Path,
+    kanban_root: str,
+) -> Tuple[str, str, bool]:
+    """
+    Pick epic/story rw-config patterns from on-disk kanban layout.
+
+    Prefers fresh-install layout when it has the highest (or tied) match count.
+    Returns (epic_pattern, story_pattern, fresh_layout_detected).
+    """
+    epic_candidates = [
+        (FRESH_KANBAN_EPIC_PATTERN, True),
+        (LEGACY_KANBAN_EPIC_PATTERN, False),
+    ]
+    story_candidates = [
+        (FRESH_KANBAN_STORY_PATTERN, True),
+        (LEGACY_KANBAN_STORY_PATTERN, False),
+    ]
+
+    def _best(candidates: List[Tuple[str, bool]]) -> Tuple[str, bool]:
+        scored = [
+            (_pattern_match_score(project_root, kanban_root, pattern), pattern, is_fresh)
+            for pattern, is_fresh in candidates
+        ]
+        scored.sort(key=lambda item: (item[0], item[2]), reverse=True)
+        best_count, best_pattern, best_fresh = scored[0]
+        if best_count == 0:
+            return candidates[0][0], False
+        return best_pattern, best_fresh
+
+    epic_pattern, epic_fresh = _best(epic_candidates)
+    story_pattern, story_fresh = _best(story_candidates)
+    return epic_pattern, story_pattern, epic_fresh and story_fresh
+
+
+def detect_kanban_board_default(project_root: Path, kanban_root: str) -> str:
+    """Default main board file from existing kanban root (fresh install uses kboard.md)."""
+    root_path = (project_root / kanban_root).resolve()
+    for name in ("kboard.md", "_index.md", "kanban-board.md"):
+        if (root_path / name).is_file():
+            return name
+    return "kboard.md"
 
 
 def detect_project_name(project_root: Path) -> str:
@@ -339,33 +399,46 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
         )
         config['kanban_root'] = kanban_root
 
+        epic_default, story_default, fresh_layout = detect_kanban_doc_patterns(
+            project_root, kanban_root
+        )
+        if fresh_layout:
+            print(
+                "  ℹ️  Detected fresh kanban install layout "
+                "(epics/Epic-{n}/Epic-{n}.md, Story-{story:03d}-*.md)."
+            )
+        elif _pattern_match_score(project_root, kanban_root, epic_default) > 0:
+            print("  ℹ️  Detected existing kanban files; using best-matching pattern defaults.")
+
         config['epic_doc_pattern'] = prompt_pattern_with_validation(
             prompt="Epic document pattern (relative to Kanban root, must include {epic})",
-            default="epics/Epic-{epic}.md",
+            default=epic_default,
             project_root=project_root,
             kanban_root=kanban_root,
             required_placeholders=["{epic}"],
             suggestion_examples=[
-                "epics/Epic-{epic}.md",
+                FRESH_KANBAN_EPIC_PATTERN,
+                LEGACY_KANBAN_EPIC_PATTERN,
                 "Epic-{epic}/Epic-{epic}.md",
             ],
         )
 
         config['story_doc_pattern'] = prompt_pattern_with_validation(
             prompt="Story document pattern (relative to Kanban root, include {epic} and {story})",
-            default="epics/Epic-{epic}/stories/Story-{story}-*.md",
+            default=story_default,
             project_root=project_root,
             kanban_root=kanban_root,
             required_placeholders=["{epic}", "{story}"],
             suggestion_examples=[
-                "epics/Epic-{epic}/stories/Story-{story}-*.md",
+                FRESH_KANBAN_STORY_PATTERN,
+                LEGACY_KANBAN_STORY_PATTERN,
                 "Epic-{epic}/stories/E{epic}-S{story}.md",
             ],
         )
-        
+
         config['kanban_board'] = prompt_question(
             "Main Kanban board file",
-            default="_index.md"
+            default=detect_kanban_board_default(project_root, kanban_root),
         )
     else:
         config['use_kanban'] = False

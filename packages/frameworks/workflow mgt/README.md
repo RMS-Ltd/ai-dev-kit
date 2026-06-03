@@ -286,6 +286,8 @@ python scripts/install_release_workflow.py --mode c
 python scripts/install_release_workflow.py --mode c --dry-run
 ```
 
+After a **fresh kanban install**, mode C detects `epics/Epic-{n}/Epic-{n}.md` and `Story-{story:03d}-*.md` on disk and uses those as prompt defaults (BR-083). See `INSTALL_IN_YOUR_PROJECT.md` § Post-kanban RW install.
+
 ### What the Installer Does
 
 1. **Generates `rw-config.yaml`** - Single source of truth for all paths

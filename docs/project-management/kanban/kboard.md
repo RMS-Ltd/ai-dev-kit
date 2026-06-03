@@ -41,7 +41,7 @@ housekeeping_policy: keep
 
 - **E06:S09:T08** – BR-079: Epic 22/23 placeholder templates - ✅ COMPLETE (**v0.6.9.8+2**, GitHub #11) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | Last modified: 2026-06-03 17:41 UTC
 
-- **E06:S09:T12** – BR-083: RW install rw-config pattern defaults - 📋 TODO (MEDIUM, GitHub #15) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | Last modified: 2026-06-03 17:45 UTC
+- **E06:S09:T12** – BR-083: RW install rw-config pattern defaults - ✅ COMPLETE (**v0.6.9.12+2**, GitHub #15) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | Last modified: 2026-06-03 17:45 UTC
 
 - **E06:S09:T13** – BR-084: RW Mode C missing task_doc_pattern / wrong persisted patterns - 📋 TODO (MEDIUM, **v0.6.9.13+1** kanban init, GitHub #16) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | Last modified: 2026-06-03 19:18 UTC
 

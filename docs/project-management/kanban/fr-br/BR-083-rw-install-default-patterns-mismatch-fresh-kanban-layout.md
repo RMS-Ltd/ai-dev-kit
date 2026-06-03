@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-083  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (wrong rw-config defaults after fresh kanban install)  
-**Status:** OPEN (INTAKE)  
+**Status:** OPEN (fix attempted **v0.6.9.12+2** — pending verification)  
 **GitHub Issue:** [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)  
 **Related:** [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) → [BR-084](BR-084-rw-install-mode-c-missing-task-doc-pattern.md) / **E06:S09:T13** (persisted YAML + `task_doc_pattern`)  
 **Implementing Task:** [E06:S09:T12](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md)  
@@ -51,6 +51,8 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
 
 ## Acceptance Criteria
 
-- [ ] RW installer detects or defaults to kanban-installer layout.
-- [ ] Fresh-install docs include copy-paste `rw-config.yaml` kanban keys.
-- [ ] No silent wrong defaults requiring manual `y` to incorrect paths.
+- [x] RW installer detects or defaults to kanban-installer layout (E06:S09:T12).
+- [x] Fresh-install docs include copy-paste `rw-config.yaml` kanban keys.
+- [x] Mode C prompt defaults pre-filled from on-disk layout when files exist.
+
+**Verification:** User to confirm on book replay (GitHub #15) before closing BR-083.
