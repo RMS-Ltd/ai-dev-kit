@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-084  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (broken `rw-config.yaml` after fresh kanban + RW install)  
-**Status:** OPEN (fix attempted **v0.6.9.13+2** — verification **failed** ExpensesTracker replay 2026-06-03; follow-on **BR-085** / E06:S09:T14)  
+**Status:** RESOLVED ✅ (fix **v0.6.9.13+2** + **BR-085** **v0.6.9.14+1**; verified **v0.6.9.14+2** — ExpensesTracker T03 replay 2026-06-03)  
 **GitHub Issue:** [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
 **Related:** [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) (BR-083 — prompt defaults) · [BR-085](BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) (story prompt infinite loop)  
 **Implementing Task:** [E06:S09:T13](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md)  
@@ -74,4 +74,4 @@ Manual edit `rw-config.yaml` after install (ai-dev-kit-book T03 Step 4.1).
 - [x] Generated config includes `task_doc_pattern` (+ `fr_br_root` when `fr-br/` exists).
 - [x] Integration test: `tests/test_install_release_workflow_rw_config.py`.
 
-**Verification:** User to confirm on book replay (GitHub #16) before closing BR-084. **Follow-on:** [BR-085](BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) fix **v0.6.9.14+1** addresses interactive story prompt loop.
+**Verification:** ExpensesTracker T03 replay **2026-06-03** — generated `rw-config.yaml` includes `task_doc_pattern` and aligned epic/story patterns. Closed **v0.6.9.14+2** (GitHub #16).

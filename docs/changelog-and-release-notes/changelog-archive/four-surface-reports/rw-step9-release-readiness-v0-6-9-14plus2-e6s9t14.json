@@ -1,27 +1,24 @@
 {
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
-  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-8-3-6plus1-e8s3t6.json",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus2-e6s9t14.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": false,
+  "overall_passed": true,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
   "release_scope": {
-    "epic": 8,
-    "story": 3,
-    "task": 6,
-    "task_id": "E8:S3:T6",
-    "version_string": "v0.8.3.6+1"
+    "epic": 6,
+    "story": 9,
+    "task": 14,
+    "task_id": "E6:S9:T14",
+    "version_string": "v0.6.9.14+2"
   },
   "summary": {
-    "blocking_failures": [
-      "Gate 4: Corpus canonical state",
-      "Gate 8: Stamp homogeneity (FR-097)"
-    ],
-    "gates_failed": 2,
-    "gates_passed": 7,
+    "blocking_failures": [],
+    "gates_failed": 0,
+    "gates_passed": 9,
     "gates_total": 9,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-03 23:01 UTC",
+  "timestamp_utc": "2026-06-03 23:18 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -85,7 +82,7 @@
     {
       "evidence": {
         "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md": {
-          "rows_changed": 1,
+          "rows_changed": 0,
           "rows_with_duplicate_footers": 0
         },
         "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md": {
@@ -102,32 +99,30 @@
         },
         "stamp_evidence_aggregate": {
           "stamps_appended_with_evidence": 0,
-          "stamps_preserved_existing": 103,
+          "stamps_preserved_existing": 102,
           "stamps_skipped_no_evidence": 8
         }
       },
-      "findings": [
-        "`/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: rows_changed=1 under non_substantive corpus sweep \u2014 corpus is not idempotent."
-      ],
+      "findings": [],
       "gate_id": 4,
-      "is_blocking_failure": true,
+      "is_blocking_failure": false,
       "name": "Corpus canonical state",
-      "passed": false,
+      "passed": true,
       "severity": "block",
-      "summary": "Corpus canonical state violated; see findings.",
+      "summary": "Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.",
       "waive_reason": null,
       "waived": false
     },
     {
       "evidence": {
-        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-8-3-6plus1-e8s3t6.json",
-        "paths_checked": 7,
+        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus2-e6s9t14.json",
+        "paths_checked": 8,
         "release_scope": {
-          "epic": 8,
-          "story": 3,
-          "task": 6,
-          "task_id": "E8:S3:T6",
-          "version_string": "v0.8.3.6+1"
+          "epic": 6,
+          "story": 9,
+          "task": 14,
+          "task_id": "E6:S9:T14",
+          "version_string": "v0.6.9.14+2"
         },
         "violations": 0
       },
@@ -137,14 +132,14 @@
       "name": "Stage-set completeness (BR-070)",
       "passed": true,
       "severity": "block",
-      "summary": "BR-070 satisfied: all 7 Step-7 path(s) are staged or unchanged.",
+      "summary": "BR-070 satisfied: all 8 Step-7 path(s) are staged or unchanged.",
       "waive_reason": null,
       "waived": false
     },
     {
       "evidence": {
         "evidence_mode": null,
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-8-3-6plus1-e8s3t6.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus2-e6s9t14.json",
         "stamps_appended_with_evidence": 0,
         "stamps_preserved_existing": 0,
         "stamps_skipped_no_evidence": 0
@@ -162,41 +157,42 @@
     {
       "evidence": {
         "fbu_doc": {
-          "notes_count": 1,
+          "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-105-dependabot-dependency-security-automation.md",
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md"
+            "docs/project-management/kanban/fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md",
+            "docs/project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md",
+            "docs/project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md"
           ],
-          "touched": false
+          "touched": true
         },
         "fbuboard": {
           "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+            "docs/project-management/kanban/fbuboard.md"
           ],
           "touched": true
         },
         "kboard": {
           "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+            "docs/project-management/kanban/kboard.md"
           ],
           "touched": true
         },
         "release_scope": {
-          "epic": 8,
-          "story": 3,
-          "task": 6,
-          "task_id": "E8:S3:T6",
-          "version_string": "v0.8.3.6+1"
+          "epic": 6,
+          "story": 9,
+          "task": 14,
+          "task_id": "E6:S9:T14",
+          "version_string": "v0.6.9.14+2"
         },
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-8-3-6plus1-e8s3t6.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus2-e6s9t14.json",
         "task_doc": {
-          "notes_count": 1,
+          "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md"
+            "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md"
           ],
-          "touched": false
+          "touched": true
         }
       },
       "findings": [],
@@ -211,21 +207,17 @@
     },
     {
       "evidence": {
-        "fbuboard.md": {
-          "2026-06-03 23:00 UTC": 3
-        },
+        "fbuboard.md": {},
         "homogeneity_threshold": 3,
         "kboard.md": {}
       },
-      "findings": [
-        "fbuboard.md: stamp '2026-06-03 23:00 UTC' appears on 3 rows (threshold 3, not git-single-commit exempt): ['BR-085', 'BR-083', 'BR-084']"
-      ],
+      "findings": [],
       "gate_id": 8,
-      "is_blocking_failure": true,
+      "is_blocking_failure": false,
       "name": "Stamp homogeneity (FR-097)",
-      "passed": false,
+      "passed": true,
       "severity": "block",
-      "summary": "Homogenized stamp cluster(s) detected; run backfill or fix hygiene.",
+      "summary": "No homogeneity clusters at or above threshold.",
       "waive_reason": null,
       "waived": false
     },

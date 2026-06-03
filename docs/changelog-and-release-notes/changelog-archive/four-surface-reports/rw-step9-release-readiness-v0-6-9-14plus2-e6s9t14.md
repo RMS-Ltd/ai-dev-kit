@@ -2,16 +2,15 @@
 
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
-- **Release scope:** E6:S9:T14 (v0.6.9.14+1)
-- **Timestamp (UTC):** 2026-06-03 23:02 UTC
-- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus1-e6s9t14.json`
+- **Release scope:** E6:S9:T14 (v0.6.9.14+2)
+- **Timestamp (UTC):** 2026-06-03 23:18 UTC
+- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus2-e6s9t14.json`
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 5: Stage-set completeness (BR-070)
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 8/9 passed (1 failed, 0 waived).
+- Gates: 9/9 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -62,42 +61,40 @@
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 9, 'stamps_preserved_existing': 102}`
+  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 8, 'stamps_preserved_existing': 102}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: BR-070 violation: 1 Step-7 path(s) are modified-unstaged, untracked, or missing.
-- Findings:
-  - `fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+- Status: **PASS** (severity: `block`)
+- Summary: BR-070 satisfied: all 8 Step-7 path(s) are staged or unchanged.
 - Evidence:
-  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus1-e6s9t14.json`
-  - `paths_checked`: `7`
-  - `violations`: `1`
-  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 14, 'task_id': 'E6:S9:T14', 'version_string': 'v0.6.9.14+1'}`
+  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus2-e6s9t14.json`
+  - `paths_checked`: `8`
+  - `violations`: `0`
+  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 14, 'task_id': 'E6:S9:T14', 'version_string': 'v0.6.9.14+2'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
 
 - Status: **PASS** (severity: `block`)
-- Summary: Forensic stamp evidence consistent: appended=1, skipped=0, preserved=2 (mode=None).
+- Summary: Forensic stamp evidence consistent: appended=0, skipped=0, preserved=0 (mode=None).
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus1-e6s9t14.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus2-e6s9t14.json`
   - `evidence_mode`: `None`
-  - `stamps_appended_with_evidence`: `1`
+  - `stamps_appended_with_evidence`: `0`
   - `stamps_skipped_no_evidence`: `0`
-  - `stamps_preserved_existing`: `2`
+  - `stamps_preserved_existing`: `0`
 
 ### Gate 7 — Four-surface parity (FR-084)
 
 - Status: **PASS** (severity: `block`)
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus1-e6s9t14.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-14plus2-e6s9t14.json`
   - `task_doc`: `{'touched': True, 'paths': ['docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md'], 'notes_count': 0}`
   - `fbu_doc`: `{'touched': True, 'paths': ['docs/project-management/kanban/fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md', 'docs/project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md', 'docs/project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md'], 'notes_count': 0}`
   - `kboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
   - `fbuboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/fbuboard.md'], 'notes_count': 0}`
-  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 14, 'task_id': 'E6:S9:T14', 'version_string': 'v0.6.9.14+1'}`
+  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 14, 'task_id': 'E6:S9:T14', 'version_string': 'v0.6.9.14+2'}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 

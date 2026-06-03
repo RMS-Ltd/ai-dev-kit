@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-085  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (interactive RW install blocked after fresh kanban; book T03 dry-run)  
-**Status:** OPEN (fix **v0.6.9.14+1** / E06:S09:T14 — pending ExpensesTracker T03 replay verification)  
+**Status:** RESOLVED ✅ (fix **v0.6.9.14+1**; verified **v0.6.9.14+2** — ExpensesTracker T03 interactive replay 2026-06-03)  
 **Related:** [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) · [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
 **Implementing Task:** [E06:S09:T14](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)  
 **Created:** 2026-06-03  
@@ -73,9 +73,9 @@ Repeats indefinitely.
 - [x] `{story:03d}` satisfies `{story}` placeholder requirement.
 - [x] Epic-only fresh kanban: Enter on story default completes interactively.
 - [x] Tests in `tests/test_install_release_workflow_patterns.py`.
-- [ ] ExpensesTracker T03 replay passes without manual `rw-config` seed.
+- [x] ExpensesTracker T03 replay passes without manual `rw-config` seed.
 
-**Verification:** User to confirm on book replay before closing BR-085.
+**Verification:** ExpensesTracker T03 replay **2026-06-03** — `install_release_workflow.py --mode c` on epic-only kanban; **Enter** on story default → `Accepting installer-aligned default`; `rw-config.yaml` written; **PARTIAL** (workflow YAML only). ADK submodule **22006ee** (`v0.6.9.14+1`). Closed **v0.6.9.14+2**.
 
 ---
 

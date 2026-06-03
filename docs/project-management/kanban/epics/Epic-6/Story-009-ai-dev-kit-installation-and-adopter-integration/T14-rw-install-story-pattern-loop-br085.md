@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-03 (v0.6.9.14+1 – BR-085 installer fix)  
+**Last updated:** 2026-06-03 (v0.6.9.14+2 – BR-085/083/084 ExpensesTracker T03 verification closure)  
 **Completed:** 2026-06-03  
-**Version:** v0.6.9.14+1  
+**Version:** v0.6.9.14+2  
 **Code:** E06S09T14
 
 **Upstream:** [BR-085](../../../fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)  
@@ -51,19 +51,21 @@ Fix interactive RW mode C story-pattern prompt after fresh kanban install:
 
 - [x] Enter on `FRESH_KANBAN_STORY_PATTERN` passes validation (no `{story}` false negative).
 - [x] Epic-only kanban tree: story default accepted under `strict_zero_match`.
-- [ ] ExpensesTracker T03 interactive install completes without `--config` seed (user replay).
+- [x] ExpensesTracker T03 interactive install completes without `--config` seed (user replay).
 
 ---
 
 ## Version Anchor
 
-✅ COMPLETE (v0.6.9.14+1)
+✅ COMPLETE (v0.6.9.14+2)
 
 ---
 
 ## Completion Summary
 
 Released **v0.6.9.14+1** (`RW --art E06:S09:T14`): format-aware placeholder validation and epic-only fresh kanban story-default acceptance in `install_release_workflow.py`; regression tests added.
+
+**v0.6.9.14+2:** ExpensesTracker T03 interactive replay verified — epic-only kanban, RW `--mode c`, **Enter** on story default (no `--config` seed); `Accepting installer-aligned default`; `rw-config.yaml` written. Closes **BR-085**; confirms **BR-083** / **BR-084** book-path verification (GitHub #15 / #16).
 
 ---
 

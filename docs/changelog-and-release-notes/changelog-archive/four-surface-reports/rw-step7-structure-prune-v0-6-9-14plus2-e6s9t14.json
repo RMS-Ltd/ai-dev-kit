@@ -1,0 +1,22 @@
+{
+  "contract": "FR-097 structure-prune — terminal FBU row removal (RW Step 7)",
+  "release_scope": {
+    "task_id": "E6:S9:T14",
+    "version_string": "v0.6.9.14+2"
+  },
+  "rows": {
+    "BR-083": {
+      "allowed": true,
+      "reason": "RESOLVED v0.6.9.14+2 — archived to fbu-completed.md"
+    },
+    "BR-084": {
+      "allowed": true,
+      "reason": "RESOLVED v0.6.9.14+2 — archived to fbu-completed.md"
+    },
+    "BR-085": {
+      "allowed": true,
+      "reason": "RESOLVED v0.6.9.14+2 — archived to fbu-completed.md"
+    }
+  },
+  "timestamp_utc": "2026-06-03 23:17:03 UTC"
+}

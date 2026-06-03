@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (RW **E06:S09:T14** **v0.6.9.14+1**)
+**Last Updated:** 2026-06-03 (RW **E06:S09:T14** **v0.6.9.14+2** — BR-085/083/084 verified)
 **Version Context:** v0.6.9.14+1 (**SemVer** v0.4.863+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
@@ -57,6 +57,8 @@ This board provides **centralized visibility and prioritization** for all open F
 
 **2026-06-03:** Intake from GitHub issues **#10–#15** (book dry-run / ExpensesTracker T03) → **E06:S09:T07–T12**.
 
+**2026-06-03:** RW **E06:S09:T14** archived **BR-085**, **BR-083**, **BR-084** (**RESOLVED** **v0.6.9.14+2** — ExpensesTracker T03 interactive replay). See [`fbu-completed.md`](fbu-completed.md).
+
 - **BR-080** – Kanban fresh mode validation fails without `--force` on empty repo - 🟢 OPEN (HIGH, fix attempted **v0.6.9.9+2** — pending verification **#12**) | [IPP-E06S09T09](../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [E06:S09:T09](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | —No IPP— | Last modified: 2026-06-03 17:42 UTC
 
 - **BR-082** – RW install fails without venv PyYAML; no preflight hint - 🟢 OPEN (HIGH, fix attempted **v0.6.9.11+2** — pending verification **#14**) | [IPP-E06S09T11](../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md) | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [E06:S09:T11](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | —No IPP— | Last modified: 2026-06-03 17:44 UTC
@@ -64,12 +66,6 @@ This board provides **centralized visibility and prioritization** for all open F
 - **BR-078** – Kanban fresh install: structure template not found - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.7+2** — pending verification **#10**) | [IPP-E06S09T07](../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md) | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [E06:S09:T07](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | —No IPP— | Last modified: 2026-06-03 17:40 UTC
 
 - **BR-079** – Kanban fresh install: Epic 22/23 placeholders only - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.8+2** — pending verification **#11**) | [IPP-E06S09T08](../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [E06:S09:T08](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | —No IPP— | Last modified: 2026-06-03 17:41 UTC
-
-- **BR-085** – RW Mode C story pattern prompt infinite loop after fresh kanban - 🟢 OPEN (MEDIUM, fix **v0.6.9.14+1** — pending ExpensesTracker replay) | Last modified: 2026-06-03 23:00:21 UTC | [BR-085](fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) | [E06:S09:T14](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md) | —No IPP—
-
-- **BR-083** – RW install default epic/story patterns mismatch fresh kanban layout - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.12+2** — verification failed ExpensesTracker; see **BR-085** **#15**) | [IPP-E06S09T12](../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [E06:S09:T12](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | —No IPP— | Last modified: 2026-06-03 17:45 UTC
-
-- **BR-084** – RW Mode C: missing task_doc_pattern; wrong patterns persisted - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.13+2** — verification failed ExpensesTracker; see **BR-085** **#16**) | [IPP-E06S09T13](../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | [E06:S09:T13](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | —No IPP— | Last modified: 2026-06-03 19:18 UTC
 
 ---
 
@@ -82,6 +78,10 @@ This board provides **centralized visibility and prioritization** for all open F
 ---
 
 ### Could Have (C) - Nice-to-Have Items
+
+**2026-06-04:** Intake **FR-108** → **E06:S09:T15** (install/setup interactive feedback shows external SemVer).
+
+- **FR-108** – Install/setup interactive feedback shows external SemVer - 🟢 OPEN (MEDIUM) | [FR-108](fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md) | [E06:S09:T15](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-fr108.md) | —No IPP— | Last modified: 2026-06-04 00:00 UTC
 
 - **BR-081** – Kanban install uses deprecated `datetime.utcnow()` - 🟢 OPEN (LOW, **#13**) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [E06:S09:T10](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | —No IPP— | Last modified: 2026-06-03 17:43 UTC
 

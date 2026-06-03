@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-03 (UKW — **FR-107** ledger)
+**Last Updated:** 2026-06-03 (RW — **BR-085**, **BR-083**, **BR-084** ledger)
 **Version:** v0.2.13.8+2 (**SemVer** v0.4.854+25)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
@@ -34,6 +34,9 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-085 | BR | RW Mode C story pattern prompt infinite loop after fresh kanban (**E06:S09:T14**) | 2026-06-03T23:17:03Z | v0.6.9.14+2 | RW |
+| BR-083 | BR | RW install default epic/story patterns mismatch fresh kanban (**E06:S09:T12**) | 2026-06-03T23:17:03Z | v0.6.9.14+2 | RW |
+| BR-084 | BR | RW Mode C missing task_doc_pattern / wrong patterns persisted (**E06:S09:T13**) | 2026-06-03T23:17:03Z | v0.6.9.14+2 | RW |
 | FR-107 | FR | Comprehensive workflow machinery code review (**E07:S07:T01**) | 2026-06-03T20:28:00Z | v0.7.7.1+1 | RW |
 | BR-066 | BR | IPW Docusaurus filing for planning artifacts — Phase 3 closure (**E02:S15:T01**) | 2026-06-03T14:30:00Z | v0.2.15.1+3 | RW |
 | FR-105 | FR | Dependabot and dependency security automation (**E08:S03:T06**) | 2026-06-03T16:00:00Z | v0.8.3.6+2 | RW |
