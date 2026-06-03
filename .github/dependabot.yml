@@ -1,0 +1,28 @@
+# E08:S03:T06 / FR-105 — Dependabot version + security updates (pip + portal npm).
+# Security updates also require repo setting: Settings → Code security → Dependabot security updates.
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - python
+
+  - package-ecosystem: npm
+    directory: "/portal"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - docusaurus
+    groups:
+      docusaurus:
+        patterns:
+          - "@docusaurus/*"
+          - "docusaurus"

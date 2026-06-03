@@ -9,8 +9,8 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 VERSION_RC = 0        # Release Candidate
 VERSION_EPIC = 8      # Epic 8 — Tooling & Automation
 VERSION_STORY = 3     # Story 3 — Automation Scripts
-VERSION_TASK = 5      # Task 5 — Python minimum version (FR-104 / BR-077)
-VERSION_BUILD = 2     # Build 2: Python 3.11 policy implementation
+VERSION_TASK = 6      # Task 6 — Dependabot enablement (FR-105)
+VERSION_BUILD = 2     # Build 2: dependabot.yml + npm audit fix + triage docs
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.8.3.5+2
+# Current: 0.8.3.6+2

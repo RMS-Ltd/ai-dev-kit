@@ -56,9 +56,7 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/project-management/kanban/kboard.md`
 - `docs/project-management/kanban/fbuboard.md`
-- [ICW-E02S01T17-specification](../../../../../implementation-cycles/ICW-E02S01T17-specification.md)
-- [ICW-E02S01T17-test-design](../../../../../implementation-cycles/ICW-E02S01T17-test-design.md)
-- [ICW-E02S01T17-implementation-plan](../../../../../implementation-cycles/ICW-E02S01T17-implementation-plan.md)
+- ICW trio for E02:S01:T17 — not yet filed under `docs/implementation-cycles/` (use IPW/IPP when created)
 
 ---
 
@@ -90,9 +88,7 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 
 - [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [Story E2:S01](../Story-001-rw-agent-execution-and-docs.md)
-- [ICW-E02S01T17-specification](../../../../../implementation-cycles/ICW-E02S01T17-specification.md)
-- [ICW-E02S01T17-test-design](../../../../../implementation-cycles/ICW-E02S01T17-test-design.md)
-- [ICW-E02S01T17-implementation-plan](../../../../../implementation-cycles/ICW-E02S01T17-implementation-plan.md)
+- ICW trio for E02:S01:T17 — not yet filed under `docs/implementation-cycles/` (use IPW/IPP when created)
 
 ---
 
@@ -122,6 +118,4 @@ Publication N/A Reason: N/A
 
 ## Planning Artifact Links
 
-- [ICW E02:S01:T17 specification](../../../../../implementation-cycles/ICW-E02S01T17-specification.md)
-- [ICW E02:S01:T17 test design](../../../../../implementation-cycles/ICW-E02S01T17-test-design.md)
-- [ICW E02:S01:T17 implementation plan](../../../../../implementation-cycles/ICW-E02S01T17-implementation-plan.md)
+- ICW E02:S01:T17 specification / test design / implementation plan — pending under `docs/implementation-cycles/`

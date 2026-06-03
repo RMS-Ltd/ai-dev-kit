@@ -65,6 +65,30 @@ Canonical structure reference: [Ultimate Canonical KB Structure](../docs/archite
 
 **CI (FR-069):** GitHub Actions runs `npm ci` and `npm run build` in this directory when `portal/`, `docs/`, or [`.github/workflows/docusaurus-build.yml`](../.github/workflows/docusaurus-build.yml) change on pull requests and on pushes to `main`.
 
+## Dependency updates (Dependabot) — FR-105 / E08:S03:T06
+
+**Config:** [`.github/dependabot.yml`](../.github/dependabot.yml) — weekly **pip** (repo root) and **npm** (`portal/`), with a **Docusaurus** npm group to reduce PR noise.
+
+**Repo setting:** **Settings → Code security and analysis → Dependabot security updates** must be **enabled** (not only the YAML file). Maintainer evidence: `gh api repos/RMS-Ltd/ai-dev-kit -q '.security_and_analysis.dependabot_security_updates'`.
+
+### Triage for Dependabot PRs
+
+1. **Merge when green:** Dependabot PRs should pass [**Docusaurus site build**](../.github/workflows/docusaurus-build.yml) (`npm ci` + `npm run build` in `portal/`).
+2. **npm / Docusaurus pins:** Do **not** merge major downgrades of `@docusaurus/*` or React without a deliberate upgrade task and local `npm run build`.
+3. **pip PRs:** Review `requirements.txt` / `setup.py` lower-bound bumps; run targeted pytest if CLI paths change.
+4. **Defer with reason:** Transitive dev-only advisories (e.g. `webpack-dev-server` → `sockjs` / `uuid`) may remain until a planned Docusaurus upgrade — record deferral in the PR or linked task.
+5. **Ignore rules:** Use GitHub **dependabot ignore** only with a documented rationale in the PR body.
+
+### Local verification after lockfile changes
+
+```bash
+cd portal
+npm ci
+npm run build
+```
+
+Optional audit pass (safe first, then selective `--force` only if build stays green): `npm audit` → `npm audit fix` → rebuild → reassess.
+
 ## Production hosting (FR-070)
 
 **Provider:** **GitHub Pages** (project site).

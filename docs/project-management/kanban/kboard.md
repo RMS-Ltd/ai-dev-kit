@@ -1,16 +1,15 @@
 ---
-
-## lifecycle: evergreen
-
+lifecycle: evergreen
 ttl_days: null
 created_at: 2025-12-04T12:02:50Z
 expires_at: null
 housekeeping_policy: keep
+---
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-03 (RW: E08:S03:T05)
-**Version:** v0.8.3.5+2
+**Last Updated:** 2026-06-03 (RW: E08:S03:T06)
+**Version:** v0.8.3.6+2
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -28,7 +27,7 @@ housekeeping_policy: keep
 
 - **E08:S03:T05** – FR-104 / BR-077: Python minimum version policy alignment - ✅ COMPLETE (v0.8.3.5+2 — Python 3.11+ policy) | [Task](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | Last modified: 2026-06-03 15:47 UTC
 
-- **E08:S03:T06** – FR-105: Dependabot and dependency security automation - 📋 TODO (HIGH, Must Have — **v0.8.3.6+1** kanban init) | [Task](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | Last modified: 2026-06-03 15:47 UTC
+- **E08:S03:T06** – FR-105: Dependabot and dependency security automation - ✅ COMPLETE (v0.8.3.6+2) | [Task](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | Last modified: 2026-06-03 15:47 UTC
 
 *(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). FR-099 Phases 0–4 complete; public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) bootstrapped 2026-05-28. **E6:S09** installation story ✅ complete — FR-080/081/082/098; latest **E06:S09:T02** FR-081 brownfield INSTALL chapter **v0.6.9.2+2**.)*
 

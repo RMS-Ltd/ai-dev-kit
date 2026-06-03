@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.5+2] - 03-06-26
+## [0.8.3.6+2] - 03-06-26
 
-E08:S03:T05 — Python 3.11+ minimum policy (FR-104 / BR-077). SemVer **v0.4.851+2**.
+E08:S03:T06 — Dependabot pip + portal npm, security updates, npm audit fix (FR-105). SemVer **v0.4.852+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.5+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.6+2.md)
 
 ---

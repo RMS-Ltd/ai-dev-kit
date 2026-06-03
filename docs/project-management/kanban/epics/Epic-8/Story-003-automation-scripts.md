@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-03 (v0.8.3.5+2 – T05 complete: E08:S03:T05)
-**Version:** v0.8.3.5+2
+**Last updated:** 2026-06-03 (v0.8.3.6+2 – T06 complete: Dependabot FR-105)
+**Version:** v0.8.3.6+2
 **Code:** E8S03
 
 ---
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 - [x] **E08:S03:T05 – Python minimum version policy alignment (FR-104 / BR-077)** ✅ COMPLETE (v0.8.3.5+2) — [Task doc](Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [FR-104](../../fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
 
 
-- [ ] **E08:S03:T06 – Dependabot and dependency security automation (FR-105)** - TODO (**Must Have / HIGH**) — [Task doc](Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [FR-105](../../fr-br/FR-105-dependabot-dependency-security-automation.md)
+- [x] **E08:S03:T06 – Dependabot and dependency security automation (FR-105)** ✅ COMPLETE (v0.8.3.6+2) — [Task doc](Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [FR-105](../../fr-br/FR-105-dependabot-dependency-security-automation.md)
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (RW **E08:S03:T05** — v0.8.3.5+2)
-**Version Context:** v0.8.3.5+2 (**SemVer** v0.4.851+2)
+**Last Updated:** 2026-06-03 (RW **E08:S03:T06** — v0.8.3.6+2)
+**Version Context:** v0.8.3.6+2 (**SemVer** v0.4.852+2)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -45,7 +45,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 - **FR-104** – Python minimum version policy alignment - ✅ IMPLEMENTED (v0.8.3.5+2) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [E08:S03:T05](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [IPP](../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) | Last modified: 2026-06-03 15:47 UTC
 
-- **FR-105** – Dependabot and dependency security automation - 🟢 OPEN (HIGH, Must Have — **v0.8.3.6+1** kanban init) | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | [E08:S03:T06](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | —No IPP— | Last modified: 2026-06-03 15:48 UTC
+- **FR-105** – Dependabot and dependency security automation - ✅ IMPLEMENTED (v0.8.3.6+2) | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | [E08:S03:T06](epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) | [IPP](../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md) | Last modified: 2026-06-03 15:48 UTC
 
 - **BR-077** – Documented Python 3.8+ contradicts repo 3.10+ requirement - ✅ RESOLVED (v0.8.3.5+2) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [E08:S03:T05](epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [IPP](../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) | Last modified: 2026-06-03 15:49 UTC
 
