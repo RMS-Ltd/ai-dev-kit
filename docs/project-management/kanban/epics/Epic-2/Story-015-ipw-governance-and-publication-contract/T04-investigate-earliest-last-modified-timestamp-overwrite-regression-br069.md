@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 - User report that earliest historical row timestamps appear to have been overwritten.
 - User report that task IDs are being multiplied on rows during board mutation/reconciliation flows.
-- Existing timestamp integrity stream: [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), [E06:S07:T115](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md).
+- Existing timestamp integrity stream: [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), [E06:S07:T115](../../Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md).
 - Existing governance hardening stream: [E02:S15:T03](T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md), [FR-089](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md).
 - Current board mutation logic in `update_kanban_docs.py`.
 

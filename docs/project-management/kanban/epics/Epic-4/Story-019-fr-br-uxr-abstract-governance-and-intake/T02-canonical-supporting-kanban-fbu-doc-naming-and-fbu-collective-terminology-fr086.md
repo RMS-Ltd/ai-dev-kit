@@ -25,7 +25,7 @@ housekeeping_policy: keep
 ## Input
 
 - [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) requirements.
-- Existing canonical board naming baseline from [E06:S07:T114](../../../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md).
+- Existing canonical board naming baseline from [E06:S07:T114](../../../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md).
 - Existing collective-reference usage across Kanban/FBU docs.
 
 ---
@@ -68,4 +68,4 @@ Naming and terminology are partially canonicalized (`kboard`/`fbuboard`) but sup
 
 - [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
 - [Story 019](../Story-019-fr-br-uxr-abstract-governance-and-intake.md)
-- [E06:S07:T114](../../../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)
+- [E06:S07:T114](../../../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)

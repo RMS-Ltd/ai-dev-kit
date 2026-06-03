@@ -94,6 +94,6 @@ Running the typical deterministic **UKW** board pass (`enforce_terminal_timestam
 - [IPP-E02S15T04 — BR-069 row-tail normalization and terminal timestamp interaction](../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 - [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
 - [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [E06:S07:T115](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md)
+- [E06:S07:T115](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
 - [E02:S15:T04](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - [FR-089](FR-089-ipw-board-row-footer-duplication-validation-hardening.md) (IMPLEMENTED — validation/reconciliation contract; **not** a substitute for full corpus row repair under this BR)

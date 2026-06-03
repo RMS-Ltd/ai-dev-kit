@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-26 (meta ownership consolidated under E04:S19:T06 for UXR-008/FR-086/FR-073)  
 **Implementing Task:** [E04:S19:T06](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 **Historical implementing tasks:** E06:S07:T114 (completed phase), E04:S19:T05 (re-housed normalization expansion)  
-**Repository Tasks:** [E04:S19:T06](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) · [E06:S07:T114](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md) · [E04:S19:T05](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+**Repository Tasks:** [E04:S19:T06](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) · [E06:S07:T114](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md) · [E04:S19:T05](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 **IPP:** [IPP-E04S19T06](../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)  
 **Planning package (historical ICW):** [Specification](../../../implementation-cycles/ICW-E06S07T114-specification.md) · [Test design](../../../implementation-cycles/ICW-E06S07T114-test-design.md) · [Implementation plan](../../../implementation-cycles/ICW-E06S07T114-implementation-plan.md)
 
@@ -70,6 +70,6 @@ Does extending concise canonical naming beyond the two board files to all kanban
 
 - [kboard](../kboard.md)
 - [fbuboard](../fbuboard.md)
-- [T114](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)
+- [T114](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 - [T06](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 - [T05](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)

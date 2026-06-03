@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Code:** UXR-009  
 **Last updated:** 2026-04-27 (closure gated on FR-092 meta-program Wave 6)  
 **Implementing Task:** E06:S07:T115  
-**Repository Task:** [E06:S07:T115](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md)  
+**Repository Task:** [E06:S07:T115](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)  
 **Planning package (ICW):** [Specification](../../../implementation-cycles/ICW-E06S07T115-specification.md) · [Test design](../../../implementation-cycles/ICW-E06S07T115-test-design.md) · [Implementation plan](../../../implementation-cycles/ICW-E06S07T115-implementation-plan.md)  
-**Closure gated on:** [FR-097 — Board stamp authority and forensic timestamp recovery](FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) / [E02:S15:T08](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (primary); [E06:S07:T115](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md) remains historical script delivery owner
+**Closure gated on:** [FR-097 — Board stamp authority and forensic timestamp recovery](FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) / [E02:S15:T08](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (primary); [E06:S07:T115](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) remains historical script delivery owner
 
 > **Gating note (2026-04-27):** Forensic stamp work-evidence gate integration into row mutation paths in `update_kanban_docs.py` is owned by FR-092 Bucket C4 + Wave 6. The `stamps_appended_with_evidence` / `stamps_skipped_no_evidence` audit counters are FR-092 deliverables; final UXR-009 closure is gated on those shipping under FR-092 sign-off.
 >
@@ -83,5 +83,5 @@ How should board update workflows preserve forensic integrity so `Last modified`
 
 - [fbuboard](../fbuboard.md)
 - [kboard](../kboard.md)
-- [T110](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [T115](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md)
+- [T110](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [T115](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)

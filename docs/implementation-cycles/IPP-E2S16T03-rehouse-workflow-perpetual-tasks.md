@@ -375,15 +375,9 @@ None.
 
 ### Tranche 3B backlog (T02-gated)
 
-**Entry gate: SATISFIED (2026-06-03)** — [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) published; [T02](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) **COMPLETE** with AC1–AC5 evidence.
+**Entry gate: SATISFIED** — [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md); T02 **COMPLETE** (`v0.2.16.2+2`).
 
-**3B entry criteria (all mandatory before migration RW):**
-
-1. [x] [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) — inventory §2.4, disposition §2.4, ID map §2.5, reference map §2.6, links from T01/T02.
-2. [x] T02 AC1–AC5 checked with evidence (discovery counts, pytest).
-3. [ ] T03 AC4 remains `[~] PARTIAL` until **3B execution** completes; T03 **`Status:`** stays **`IN PROGRESS`** (perpetual).
-
-**3B execution (authorized separately):** Apply reference map per IPP-E2S16T02 §2.6; document before/after `Epic-6/Story-007` counts; mark T03 AC4 `[x]`; `RW E02:S16:T03 --art`.
+**3B execution: COMPLETE (2026-06-03)** — ACTIVE_FIX migration (`apply_e6s07_path_migration_3b.py`); `docs/` `Epic-6/Story-007` **167→153** (101→94 files); kanban **35→18** (22→14 files). ARCHIVE_STUB + KB-INDEX deferred per IPP-E2S16T02 §2.6. T03 AC4 `[x]`; release **`RW E02:S16:T03 --art`**.
 
 ### SitRep — E02:S16:T02 (2026-06-03, post-IPW)
 
@@ -400,7 +394,7 @@ None.
 | --------- | ----- |
 | IPP | This document; Tranches 1–3 shipped (`v0.2.16.3+2`) |
 | AC1–AC3, AC5 | Satisfied (T03 verification) |
-| AC4 | PARTIAL — 3B **gate open**; migration not yet executed |
+| AC4 | COMPLETE — Tranche 3B ACTIVE_FIX (2026-06-03) |
 | Board drift | BR-067 **RESOLVED** in source; fbuboard row synced in SitRep housekeeping |
 
 ### SitRep IPW housekeeping (2026-06-03)

@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-03 (RW **v0.2.16.3+3** — SitRep IPW §7 + fbuboard BR-067 sync)  
-**Version anchor:** v0.2.16.3+3
+**Last updated:** 2026-06-03 (RW **v0.2.16.3+4** — Tranche 3B ACTIVE_FIX; AC4 complete)  
+**Version anchor:** v0.2.16.3+4
 **Code:** E02S16T03
 **Task Type:** Perpetual Maintenance
 
@@ -53,7 +53,7 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 - [x] **AC1:** `E02:S16:T03` is documented as the canonical perpetual umbrella for ad-hoc workflow maintenance not tied to a concrete delivery task. *(Wave 2/3: T03 documented as canonical perpetual umbrella with `Task Type: Perpetual Maintenance` marker; policy ratified in IPP-E02S16T01 and versioning policy §6.1.1.)*
 - [x] **AC2:** Migration/hardening activities remain explicitly in scope for `E02:S16:T03`, without narrowing the task to migration/hardening only. *(Wave 3: guardrails explicitly include migration/hardening in scope; no narrowing occurred; Deliverable section covers re-housing, reference updates, and guardrails.)*
 - [x] **AC3:** `E02:S16:T04` is documented as a kanban-focused operational lane under the broader workflow-maintenance model. *(Wave 2: T04 doc updated with cross-links and perpetual marker; T03/T04 boundary documented in both task docs and Story-016.)*
-- [~] **AC4: PARTIAL** — Policy/validator and reference updates preserve deterministic routing and avoid proliferating additional perpetual maintenance tasks without clear ownership boundaries. *(Wave 3 + Tranche 3A: guardrails COMPLETE; 15 active kanban paths corrected from `Epic-6/Story-007` → Story-016 T03/T04. **Tranche 3B (exhaustive migration)** BLOCKED on [T02](./T02-inventory-and-classify-workflow-perpetual-tasks.md) inventory/reference map.)*
+- [x] **AC4:** Policy/validator and reference updates preserve deterministic routing and avoid proliferating additional perpetual maintenance tasks without clear ownership boundaries. *(Tranches 3A+3B: ACTIVE_FIX paths migrated per [IPP-E2S16T02 §2.6](../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md); kanban `Epic-6/Story-007` **35→18** occurrences / **22→14** files; `docs/` **167→153** / **101→94**; retained S07 refs: T107/T111/T112 + story doc + historical anchors.)*
 - [x] **AC5:** Validation passes for updated docs and workflow guardrail behavior. *(15/15 tests pass; validator `--strict --requested E02:S16:T03 --art` exits 0 when BUILD incremented; evidence in Verification Evidence below.)*
 
 ---
@@ -75,12 +75,12 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 ### Tranche 3 — BR-067 closure + link hygiene (2026-06-03) ✅
 - **BR-067:** Status **RESOLVED**; R1–R5 regression PASS (`pytest` 15/15, 2026-06-03).
 - **Link hygiene (3A):** 15 files under `docs/project-management/kanban/` — stale `Epic-6/Story-007/.../T03` → Story-016 `T03` (umbrella/RW) or `T04` (UKW lane).
-- **3B deferred:** Exhaustive `T101+` / archive migration awaits T02 AC1–AC5.
+- **3B (2026-06-03):** ACTIVE_FIX migration via `apply_e6s07_path_migration_3b.py`; archive/KB-INDEX deferred per IPP-E2S16T02 §2.6.
 
 ### SitRep IPW — T02/T03 posture (2026-06-03) ✅
 - **IPP:** [IPP-E2S16T03](../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) §7 SitRep + §4.4 Step 5 (3B entry gate).
-- **T02:** No formal inventory artifact yet; **next IPW host = E02:S16:T02** (`IPP-E2S16T02-perpetual-task-inventory.md` planned).
-- **T03:** Not a greenfield IPW; Tranche 3B blocked until T02 gate.
+- **T02:** COMPLETE — [IPP-E2S16T02](../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) published (`v0.2.16.2+2`).
+- **T03:** Tranche 3B ACTIVE_FIX applied; AC4 satisfied.
 - **Board:** `fbuboard.md` BR-067 row synced to **RESOLVED** (Step 7 drift fix).
 
 ### Tranche 2 — BR-067 Wave A (2026-05-30) ✅

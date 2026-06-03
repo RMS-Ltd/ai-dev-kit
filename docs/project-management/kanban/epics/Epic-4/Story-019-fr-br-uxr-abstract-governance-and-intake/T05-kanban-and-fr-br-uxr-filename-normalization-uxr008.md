@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Upstream:** [UXR-008 – Canonical Kanban filename normalization](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
-**Coordinates:** [E06:S07:T114](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md), [E04:S19:T02](T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md), [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
+**Coordinates:** [E06:S07:T114](../../Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md), [E04:S19:T02](T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md), [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 
 **Superseded by:** [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) · [IPP-E04S19T06](../../../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)
 
@@ -70,7 +70,7 @@ Partial normalization (boards only) leaves the broader kanban surface with incon
 ## References
 
 - [UXR-008](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- [T114](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)
+- [T114](../../Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 - [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
 - [IPP-E04S19T05](../../../../../implementation-cycles/IPP-E04S19T05-kanban-fr-br-uxr-filename-normalization.md)
 - [ICW-E04S19T05-specification](../../../../../implementation-cycles/ICW-E04S19T05-specification.md)

@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.2+2] - 03-06-26
+## [0.2.16.3+4] - 03-06-26
 
-E02:S16:T02 — Perpetual-task inventory IPP; disposition + reference map; T03 Tranche 3B gate open. SemVer **v0.4.848+2**.
+E02:S16:T03 — Tranche 3B ACTIVE_FIX path migration per IPP-E2S16T02; AC4 complete. SemVer **v0.4.848+4**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+4.md)
 
 ---

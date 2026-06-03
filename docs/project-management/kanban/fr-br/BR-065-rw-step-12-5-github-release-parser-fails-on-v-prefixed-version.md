@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-13 (implementation complete in working tree: boundary normalization + deterministic diagnostics + regression tests)  
 **Version:** N/A  
 **Code:** BR-065  
-**Implementing Task:** [E06:S07:T113](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md)
+**Implementing Task:** [E06:S07:T113](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 

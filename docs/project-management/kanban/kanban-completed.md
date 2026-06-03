@@ -350,7 +350,7 @@ housekeeping_policy: keep
 ---
 
 #### **Epic 6: Framework Management and Maintenance**
-- **[E06:S07:T18](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)** – Tool-Agnostic Workflow Step Tracking + Persisted Run Logs  
+- **[E06:S07:T18](epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)** – Tool-Agnostic Workflow Step Tracking + Persisted Run Logs  
   **Completed:** `2026-03-12T14:00:00Z` | **Version:** `v0.6.7.18+1` | **Agent:** `PM-AGENT-001`
 
 
@@ -364,7 +364,7 @@ housekeeping_policy: keep
 ---
 
 #### **Epic 6: Framework Management and Maintenance**
-- **[E06:S07:T106](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T106-windsurf-migration-cursorrules-to-workflows.md)** – Windsurf Migration: .cursorrules to Workflow Equivalents  
+- **[E06:S07:T106](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)** – Windsurf Migration: .cursorrules to Workflow Equivalents  
   **Completed:** `2026-03-12T14:00:00Z` | **Version:** `v0.6.7.106+1` | **Agent:** `PM-AGENT-001`
 
 
@@ -401,7 +401,7 @@ housekeeping_policy: keep
 ### 📅 Recent Completions (Yesterday - 2026-03-11)
 
 #### **Epic 6: Framework Management and Maintenance**
-- **[E06:S07:T108](epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)** – UKW Extension for FR/BR/UXR Temporal Tracking and Synchronization  
+- **[E06:S07:T108](epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)** – UKW Extension for FR/BR/UXR Temporal Tracking and Synchronization  
   **Completed:** `2026-03-11T17:15:00Z` | **Version:** `v0.6.7.108+1` | **Agent:** `RW Agent`
 
 
