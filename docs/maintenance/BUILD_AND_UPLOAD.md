@@ -145,7 +145,7 @@ open https://github.com/RMS-Ltd/ai-dev-kit/releases
 
 ### Build Issues
 - **No files found:** Check framework directory exists
-- **Import errors:** Ensure Python 3.8+ and all dependencies available
+- **Import errors:** Ensure Python 3.11+ and all dependencies available
 
 ### Upload Issues
 - **Release not found:** Create and push Git tags first

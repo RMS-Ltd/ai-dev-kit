@@ -236,7 +236,7 @@ See the [Integration Guide](framework-dependency-integration-guide.md) for migra
 ### What are the system requirements?
 
 - **Git** (required for all methods)
-- **Python 3.8+** (for CLI tool and frameworks)
+- **Python 3.11+** (for CLI tool, validators, and frameworks)
 - **Node.js 16+** (if using npm package manager)
 - Unix-like system (Linux, macOS) or Windows with Git Bash/WSL
 

@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.6+1] - 03-06-26
+## [0.8.3.5+2] - 03-06-26
 
-E08:S03:T06 — Kanban init: FR-105 Dependabot / dependency security automation (Must Have). SemVer **v0.4.851+1**.
+E08:S03:T05 — Python 3.11+ minimum policy (FR-104 / BR-077). SemVer **v0.4.851+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.6+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.5+2.md)
 
 ---

@@ -59,7 +59,7 @@
   ```bash
   python3 --version
   ```
-  Expected: Python 3.8+
+  Expected: Python 3.11+
 
 - [ ] **Verify validation scripts**
   ```bash

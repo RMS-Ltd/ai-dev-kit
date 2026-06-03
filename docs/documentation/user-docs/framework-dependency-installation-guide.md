@@ -56,12 +56,20 @@ AI Dev Kit does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT Lice
 
 ---
 
+## Python version support
+
+**AI Dev Kit requires Python 3.11 or newer** for installing the `ai-dev-kit` package, running workflow validators, and contributing to this repository. This matches [`.github/workflows/framework-release.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/framework-release.yml) (`python-version: "3.11"`). Older interpreters may fail with `SyntaxError` on union-type annotations in repo scripts.
+
+Adopters using [pyenv](https://github.com/pyenv/pyenv) or similar may use the repo-root `.python-version` file (`3.11`).
+
+---
+
 ## Prerequisites
 
 Before installing frameworks, ensure you have:
 
 - **Git** installed and configured
-- **Python 3.8+** (for CLI tool and some frameworks)
+- **Python 3.11+** (for CLI tool, validators, and frameworks)
 - **Node.js 16+** (if using npm package manager)
 - **A Git repository** for your project (frameworks are installed as Git dependencies)
 

@@ -31,7 +31,7 @@ For **adopters** installing frameworks into a project (distinct from CLI maintai
 
 ### Required Tools
 
-- Python 3.8+
+- Python 3.11+
 - pip
 - twine (for uploading to PyPI)
 - build (for building packages)

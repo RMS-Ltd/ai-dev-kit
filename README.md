@@ -7,11 +7,11 @@
 <!-- Badges: Static Shields.io only (private repo–safe). Version line updated by RW. No `shields` branch or BYOB in this repo — see FR-064 / E5:S01:T69. -->
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.851+1` | **Internal:** `v0.8.3.6+1` (see detailed changelog) | **Last Updated:** 2026-06-03
+**Version (SemVer):** `v0.4.851+2` | **Internal:** `v0.8.3.5+2` (see detailed changelog) | **Last Updated:** 2026-06-03
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -191,7 +191,7 @@ The toolkit is designed to be:
 
 ### Built With
 
-- Python 3.8+
+- Python 3.11+
 - Markdown-first documentation
 - GitHub (issues, Actions where enabled)
 

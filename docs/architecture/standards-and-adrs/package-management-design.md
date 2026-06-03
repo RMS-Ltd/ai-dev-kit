@@ -151,7 +151,7 @@ extracted/
     "entry_point": "README.md",
     "install_script": "scripts/install_kanban_framework.py",
     "requirements": {
-      "python": ">=3.8"
+      "python": ">=3.11"
     }
   },
   "changelog": "CHANGELOG.md",
@@ -517,7 +517,7 @@ Action: Re-download package and hash file from trusted source.
 **Script:** `packages/frameworks/workflow mgt/scripts/package_builder.py`
 
 **Dependencies:**
-- Python 3.8+
+- Python 3.11+
 - Standard library: `tarfile`, `hashlib`, `json`, `pathlib`
 
 **Usage:**

@@ -130,7 +130,7 @@ A project wants to know when framework updates are available. CLI tool checks fo
 
 ### Non-Functional Requirements
 
-- [ ] **NFR-1:** CLI tool must be Python 3.8+ compatible
+- [ ] **NFR-1:** CLI tool must be Python 3.11+ compatible *(supersedes original 3.8+ NFR — see [FR-104](FR-104-python-minimum-version-policy-alignment.md) / E08:S03:T05)*
 - [ ] **NFR-2:** CLI tool must support Unix-like systems (Linux, macOS) and Windows (via Git Bash/WSL)
 - [ ] **NFR-3:** CLI tool must have clear, helpful error messages
 - [ ] **NFR-4:** CLI tool must have comprehensive documentation

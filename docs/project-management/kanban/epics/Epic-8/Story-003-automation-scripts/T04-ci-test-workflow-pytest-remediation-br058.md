@@ -26,6 +26,8 @@ Publication Status: NOT_APPLICABLE
 
 Restore a **`Tests`** (or equivalent) GitHub Actions workflow; fix failing pytest suite so CI is green and `workflow_run` triggers (e.g. badge workflows) can fire.
 
+**Python version (E08:S03:T05 / FR-104):** When adding the Tests workflow, pin **`python-version: "3.11"`** (matches [`framework-release.yml`](../../../../../../.github/workflows/framework-release.yml) and repo `python_requires`).
+
 ## Acceptance criteria
 
 - [ ] **AC1:** `.github/workflows` includes runnable test workflow on PR/push.

@@ -66,7 +66,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 ### Python Version Issues
 
-**Problem:** CLI tool requires Python 3.8+ but older version is installed.
+**Problem:** CLI tool requires Python 3.11+ but an older version is installed.
 
 **Solutions:**
 

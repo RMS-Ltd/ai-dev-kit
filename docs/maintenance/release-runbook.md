@@ -99,7 +99,7 @@ SemVer converter OK
 ```
 
 **Validation:**
-- Python 3.8+ must be available
+- Python 3.11+ must be available
 - Validation scripts must be present
 - SemVer converter must be importable
 

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Task ID:** E08:S03:T05 (with FR-104)  
 **Priority:** HIGH (Must Have — MoSCOW **M**)  
 **Severity:** LOW (misleading docs/metadata; runtime failure only when running affected scripts on 3.8/3.9)  
-**Status:** OPEN (kanban init **v0.8.3.5+1** — **E08:S03:T05**)  
+**Status:** RESOLVED (**v0.8.3.5+2** — **E08:S03:T05**, `python_requires>=3.11`)   (kanban init **v0.8.3.5+1** — **E08:S03:T05**)  
 
 **Implementing Task:** [E08:S03:T05](../epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md)  
 **Feature Request:** [FR-104](FR-104-python-minimum-version-policy-alignment.md)  

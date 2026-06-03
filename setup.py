@@ -36,7 +36,7 @@ setup(
         "Tracker": "https://github.com/RMS-Ltd/ai-dev-kit/issues",
     },
     packages=find_packages(exclude=["tests", "tests.*"]),
-    python_requires=">=3.8",
+    python_requires=">=3.11",
     install_requires=[
         "pyyaml>=6.0",
     ],
@@ -61,9 +61,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
         "Topic :: Software Development :: Libraries :: Python Modules",

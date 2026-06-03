@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-03  
 **Submitted By:** User (via agent — dependency audit follow-up)  
 **Priority:** HIGH (Must Have — MoSCOW **M**)  
-**Status:** OPEN (kanban init **v0.8.3.5+1** — **E08:S03:T05**)  
+**Status:** IMPLEMENTED (**v0.8.3.5+2** — **E08:S03:T05**)  
 **Assigned Task:** E08:S03:T05 — [`T05-python-minimum-version-fr104-br077.md`](../epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md)
 
 ---
