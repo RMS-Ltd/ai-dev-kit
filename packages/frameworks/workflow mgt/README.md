@@ -418,7 +418,7 @@ If using different branch naming conventions:
 
 When a user sends an RW trigger **with a mandatory task id** in the **same message** (case-insensitive; FR-060):
 
-- **`RW <task_id>`** — e.g. `RW E7:S01:T10`, `RW E7S01T10` — Full Release Workflow (all 17 steps)
+- **`RW <task_id>`** — e.g. `RW E7:S01:T10`, `RW E7S01T10` — Full Release Workflow (12 agent steps + optional 9.5/9.6/12.5/13 housekeeping)
 - **`RW -k <task_id>`** — Kanban Documentation Commit (short path; use `--mode rw-k` on validators)
 - **`RW -d <task_id>`** — Documentation-Only Release (short path)
 

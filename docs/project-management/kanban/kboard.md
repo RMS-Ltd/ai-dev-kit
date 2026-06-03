@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-03 (RW: E02:S13:T08)
-**Version:** v0.2.13.8+1
+**Last Updated:** 2026-06-03 (RW -k: E07:S07:T01 --art)
+**Version:** v0.7.7.1+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -31,7 +31,9 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E02:S13:T08** – Sync packaged workflows with live repo implementation - 📋 TODO (HIGH, kanban init **v0.2.13.8+1**, YAML/registry/dual-source parity) | [Task](epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [Story](epics/Epic-2/Story-013-workflow-management-package-implementation-review.md) | Last modified: 2026-06-03 20:06 UTC
+- **E02:S13:T08** – Sync packaged workflows with live repo implementation - 🔄 IN PROGRESS (HIGH, AC1–AC7 done; **RW E02:S13:T08** pending) | [Task](epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [IPP](../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | Last modified: 2026-06-03 20:06 UTC
+
+- **E07:S07:T01** – Comprehensive workflow machinery code review - ✅ COMPLETE (**v0.7.7.1+1**, FR-107 machinery review report) | [Task](epics/Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) | [Report](epics/Epic-7/Story-007-code-reviews/T01-workflow-machinery-code-review-report.md) | [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md) | [IPP](../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md) | [Story](epics/Epic-7/Story-007-code-reviews.md) | Last modified: 2026-06-03 20:28 UTC
 
 **2026-06-03:** Book dry-run / GitHub **#10–#16** → **E06:S09** reopened; installer defects **T07–T13** (fix order: **T09** ✅ → **T11** ✅ → **T07** ✅ → **T08** ✅ → **T12** → **T13** → **T10**).
 

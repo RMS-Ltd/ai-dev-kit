@@ -1,0 +1,108 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-7/Epic-7.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews.md"
+      ],
+      "surface": "story_doc",
+      "touched": false
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated FR-107: IMPLEMENTED v0.7.7.1+1",
+        "Updated Story-007 checklist and status",
+        "Updated Epic-7 header"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 7,
+    "story": 7,
+    "task": 1,
+    "task_id": "E7:S7:T1",
+    "version_string": "v0.7.7.1+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 7,
+    "touched_surfaces": [
+      "task_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": [
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-107-comprehensive-workflow-machinery-code-review.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "fbuboard": {
+      "changes": [
+        "Updated fbuboard FR-107 IMPLEMENTED",
+        "corpus-canonical sweep: fbuboard.md canonical row transform"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Updated kboard E07:S07:T01 COMPLETE"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Updated task doc T01: COMPLETE v0.7.7.1+1"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-03 20:32 UTC"
+}

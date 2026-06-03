@@ -38,6 +38,10 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 - [ ] **Script paths** — Example commands use `packages/frameworks/workflow mgt/scripts/validation/` (or project-customized paths in consumer repos).
 - [ ] **Changelog / claims** — No “verified fixed” language unless policy allows; align with vwmp release guide.
 - [ ] **BR-074 (Step 3 + Step 9)** — Step 3 changelog creation includes “never overwrite existing archive changelog” and “use post-bump version in header” guards. Step 9 validator list includes `validate_changelog_archive_links.py` (non-blocking).
+- [ ] **FR-097 / FR-092 (Step 9)** — Step 9 includes `check_changelog_size.py` (non-blocking; triggers 9.5), `validate_board_stamp_diff.py` (**blocking**, Step 7 snapshots), `validate_kanban_state_icons.py` (**strict**), `validate_release_readiness.py` Gates 1–9; `--doc-policy-zero` on `validate_version_bump.py` when applicable.
+- [ ] **Step 9.5 / 9.6 / 12.5 / 13** — Portable excerpt and `.claude/commands/rw.md` document CMW 9.5, IDE 9.6, GitHub release 12.5, Housekeeping 13 consistent with root `.cursorrules`.
+- [ ] **Step 7 FR-092** — Scoped kanban self-sufficient wording (four-surface contract; no UKW handoff debt) in portable excerpt.
+- [ ] **`.claude/commands/rw.md`** — Step 9 command block matches portable excerpt validator set and `--art` / `--doc-policy-zero` propagation.
 - [ ] **Numbering** — Root `.cursorrules` may label gates **6b/6c/6d**; the portable file may use **5b/5c/5d**. That difference is **cosmetic** if prose and commands match.
 
 ---
@@ -70,6 +74,20 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 **Versioning note:** Forensic release for BR-074 is **v0.2.1.21+{build}** (Epic 2, Story 1, Task 21).
 
 **Substantive policy mismatch remaining:** None identified after this pass.
+
+### 2026-06-03 — E02:S13:T08 parity pass (FR-097 / FR-092 Step 9)
+
+| Area | Before | After |
+|------|--------|--------|
+| Portable + `rw.md` Step 9 | Four validators + archive links only | Full set: branch, changelog, version_bump, check_changelog_size, archive_links, board_stamp_diff, kanban_state_icons, release_readiness |
+| Steps 9.5 / 9.6 / 12.5 / 13 | Missing or incomplete in portable numbered list | Added CMW, IDE, GitHub release, Housekeeping |
+| `canonical-rw-steps.yaml` | 17-step legacy model (kanban at step 6) | v2.0.0 — 12-step agent model + 9.5/9.6/12.5 + step 13 Housekeeping |
+| `release-workflow.yaml` (flat) | Legacy `confidentia` paths | Deprecated stub → subdirectory SoT |
+| `workflow-registry.yaml` | RW steps: 17, UKW steps: 8 | RW steps: 12 (+ sub-steps note), UKW steps: 9 (+ Step 2.5 note) |
+
+**Versioning note:** Forensic release via **`RW E02:S13:T08`**.
+
+**Substantive policy mismatch remaining:** None identified after this pass — portable excerpt and `rw.md` match root Step 9 semantics.
 
 ---
 

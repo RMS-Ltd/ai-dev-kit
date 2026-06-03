@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E02:S13:T08 – Sync Packaged Workflows With Live Repo Implementation
 
 **Task ID:** E02:S13:T08  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium–Large  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-03 (kanban init **v0.2.13.8+1** — RW -k **FR-106**)  
+**Last updated:** 2026-06-03 (IPP + packaged workflow sync — E02:S13:T08) (kanban init **v0.2.13.8+1** — RW -k **FR-106**)  
 **Epic:** E02 – Workflow Management Framework  
 **Story:** E02:S13 – Workflow Management Package Implementation Review  
 **Code:** E02S13T08  
@@ -51,6 +51,7 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ## Inputs
 
+- **IPP:** [`IPP-E02S13T08-sync-packaged-workflows-live-spec.md`](../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 - Live spec: `.cursorrules`, `.claude/commands/rw.md`, `.claude/commands/ukw.md`, `.claude/commands/ipw.md`
 - Packaged: `packages/frameworks/workflow mgt/workflows/`, `canonical-rw-steps.yaml`, `cursorrules-*-trigger-section.md`, `workflow-registry.yaml`
 - vwmp guides: `KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`, `update-kanban-workflow-agent-execution.md`
@@ -83,13 +84,13 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** `cursorrules-rw-trigger-section.md` Step 9 validator list matches root `.cursorrules` (including `check_changelog_size.py`, `validate_changelog_archive_links.py`, `validate_board_stamp_diff.py`, `validate_kanban_state_icons.py`, `validate_release_readiness.py` where applicable).
-- [ ] **AC2:** `.claude/commands/rw.md` Step 9 matches the same validator set and `--art` propagation rules as root `.cursorrules`.
-- [ ] **AC3:** `canonical-rw-steps.yaml` step order/names reflect live RW (BR/FR update, scoped kanban Step 7, staging, validators, CMW 9.5, IDE 9.6, commit/tag/push/housekeeping); `validate_canonical_steps.py` reports zero warnings OR warnings are documented as intentional with fix ticket.
-- [ ] **AC4:** Single authoritative `release-workflow.yaml` (subdirectory); stale flat copy removed or clearly deprecated; Step 10 validators and config paths use ai-dev-kit placeholders / `rw-config` patterns, not legacy `confidentia` paths.
-- [ ] **AC5:** `workflow-registry.yaml` step counts/descriptions match updated YAML for RW, UKW, and PKG-VERSION at minimum.
-- [ ] **AC6:** `rw-trigger-dual-source-parity.md` checklist extended for Step 9 FR-097/FR-092 validators + `.claude/commands/rw.md`; delta log entry appended for T08 pass.
-- [ ] **AC7:** `validate-workflow-docs.py` still passes (0 errors) after README touch-ups.
+- [x] **AC1:** `cursorrules-rw-trigger-section.md` Step 9 validator list matches root `.cursorrules` (including `check_changelog_size.py`, `validate_changelog_archive_links.py`, `validate_board_stamp_diff.py`, `validate_kanban_state_icons.py`, `validate_release_readiness.py` where applicable).
+- [x] **AC2:** `.claude/commands/rw.md` Step 9 matches the same validator set and `--art` propagation rules as root `.cursorrules`.
+- [x] **AC3:** `canonical-rw-steps.yaml` step order/names reflect live RW (BR/FR update, scoped kanban Step 7, staging, validators, CMW 9.5, IDE 9.6, commit/tag/push/housekeeping); `validate_canonical_steps.py` reports zero warnings OR warnings are documented as intentional with fix ticket.
+- [x] **AC4:** Single authoritative `release-workflow.yaml` (subdirectory); stale flat copy removed or clearly deprecated; Step 10 validators and config paths use ai-dev-kit placeholders / `rw-config` patterns, not legacy `confidentia` paths.
+- [x] **AC5:** `workflow-registry.yaml` step counts/descriptions match updated YAML for RW, UKW, and PKG-VERSION at minimum.
+- [x] **AC6:** `rw-trigger-dual-source-parity.md` checklist extended for Step 9 FR-097/FR-092 validators + `.claude/commands/rw.md`; delta log entry appended for T08 pass.
+- [x] **AC7:** `validate-workflow-docs.py` still passes (0 errors) after README touch-ups.
 
 ---
 
@@ -97,21 +98,35 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 - **Soft:** [E02:S13:T01](./T01-expectations-baseline.md) (baseline expectations).
 - **Coordination:** [E02:S16:T03](../Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) for ongoing dual-source maintenance after T08 ships.
-- **Blocked by IPW gate** for implementation until linked IPP exists and user authorizes execution (FR-083 / P-IPW-GATE).
+- **IPW gate:** Satisfied — [IPP-E02S13T08](../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) linked; implementation complete pending **`RW E02:S13:T08`** for version marker.
 
 ---
 
 ## Related Work
 
 - **[FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)** — source feature request (implementing task)
-- [FR-049](../../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md) — canonical step list (needs refresh)
+- [FR-049](../../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md) — canonical step list refreshed (`canonical-rw-steps.yaml` v2.0.0, 2026-06-03)
 - [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) — directory reorg (pending intake)
 - [FR-056](../../../fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md) — packaged README standardization (complete)
 - [E02:S13:T03–T05](./T01-expectations-baseline.md) — validation / gap log (may reference T08 evidence)
 
 ---
 
+## Sync report (E02:S13:T08)
+
+**Surfaces touched:** `cursorrules-rw-trigger-section.md`, `.claude/commands/rw.md`, `canonical-rw-steps.yaml`, `workflows/release-workflow/release-workflow.yaml`, flat `workflows/release-workflow.yaml` (deprecated), `workflow-registry.yaml`, `rw-trigger-dual-source-parity.md`, `cursorrules-ukw-trigger-section.md`, `workflows/release-workflow/README.md`, `release-workflow-agent-execution.md` (tracker + numbering callout).
+
+**Step 9 validator set (aligned):** `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, `check_changelog_size.py`, `validate_changelog_archive_links.py`, `validate_board_stamp_diff.py`, `validate_kanban_state_icons.py`, `validate_release_readiness.py`.
+
+**Validator runs (2026-06-03):**
+
+- `validate_canonical_steps.py` — exit 0 (matcher fix: `id: step-N` in YAML)
+- `validate-workflow-docs.py` — exit 0 (0 errors, 0 warnings)
+
+---
+
 ## References
 
+- **IPP:** [`IPP-E02S13T08-sync-packaged-workflows-live-spec.md`](../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 - Package root: `packages/frameworks/workflow mgt/`
 - Story: [`Story-013-workflow-management-package-implementation-review.md`](../Story-013-workflow-management-package-implementation-review.md)

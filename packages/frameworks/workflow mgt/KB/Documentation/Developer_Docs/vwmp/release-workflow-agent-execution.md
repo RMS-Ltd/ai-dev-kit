@@ -8,9 +8,11 @@ housekeeping_policy: keep
 
 # Release Workflow: Agent Execution Guide
 
-**Version:** 1.8.0
-**Last Updated:** 2025-12-16
+**Version:** 1.11.0
+**Last Updated:** 2026-06-03
 **Related:** [Example: Confidentia - Epic 4 - User Workflows & Use Case Modeling, Release Workflow] | [Example: ai-dev-kit - Epic 2 - Workflow Management Framework, Release Workflow]
+
+> **Step numbering authority (E02:S13:T08 / `canonical-rw-steps.yaml` v2.0.0):** For **agent execution**, follow root `.cursorrules` and `cursorrules-rw-trigger-section.md`: **Step 9** = Run Validators (FR-097/FR-092), **9.5** = CMW, **9.6** = IDE (recommended), **10** = Commit, **11** = Tag, **12** = Push, **12.5** = GitHub Release, **13** = Housekeeping. Some **section headings below** retain legacy labels (e.g. “Step 9: IDE” before “Step 10: Validators”) — use the portable excerpt / `.cursorrules` order when running RW, not the legacy heading numbers alone.
 
 ---
 
@@ -184,16 +186,14 @@ For each step, the agent follows this pattern:
        {'id': 'rw-step-6', 'status': 'pending', 'content': 'Step 6: Update BR/FR Docs - Document flaws and fix attempts in Bug Reports and Feature Requests'},
        {'id': 'rw-step-7', 'status': 'pending', 'content': 'Step 7: Scoped Kanban Reconciliation (Self-Sufficient) - Four-surface release-scope reconciliation (task + FBU + kboard + fbuboard); no UKW dependency (FR-092)'},
       {'id': 'rw-step-8', 'status': 'pending', 'content': 'Step 8: Stage Files - Stage all modified files'},
-      {'id': 'rw-step-9', 'status': 'pending', 'content': 'Step 9: Check for and Address IDE-Flagged Problems - Check errors, warnings, infos in order'},
-      {'id': 'rw-step-10', 'status': 'pending', 'content': 'Step 10: Run Validators - Execute branch context, changelog format, and changelog size validators'},
-      {'id': 'rw-step-10.5', 'status': 'pending', 'content': 'Step 10.5: Changelog Management Workflow (CMW) - Trigger CMW if changelog size exceeds threshold (optional, non-blocking)'},
-      {'id': 'rw-step-11', 'status': 'pending', 'content': 'Step 11: Commit Changes - Create git commit with versioned message'},
-      {'id': 'rw-step-12', 'status': 'pending', 'content': 'Step 12: Create Git Tag - Create annotated tag'},
-      {'id': 'rw-step-13', 'status': 'pending', 'content': 'Step 13: Push to Remote - Push branch and tags'},
-      {'id': 'rw-step-14', 'status': 'pending', 'content': 'Step 14: Post-Commit Verification & Reflection - Verify changes and reflect on results (optional but recommended)'},
-      {'id': 'rw-step-15', 'status': 'pending', 'content': 'Step 15: Act on Verification Results - Update changelog, create follow-ups, document improvements (optional but recommended)'},
-      {'id': 'rw-step-16', 'status': 'pending', 'content': 'Step 16: Check for PIR Trigger - Check Epic/Story COMPLETE status and trigger PIR workflow (optional but recommended)'},
-      {'id': 'rw-step-17', 'status': 'pending', 'content': 'Step 17: Housekeeping - Finalize agent run log; cancel tracker steps'},
+      {'id': 'rw-step-9', 'status': 'pending', 'content': 'Step 9: Run Validators - FR-097 stamp diff, UXR-012 icons, release_readiness Gates 1-9 (see .cursorrules)'},
+      {'id': 'rw-step-9.5', 'status': 'pending', 'content': 'Step 9.5: CMW - Optional when check_changelog_size threshold exceeded'},
+      {'id': 'rw-step-9.6', 'status': 'pending', 'content': 'Step 9.6: IDE diagnostics - Recommended non-blocking before commit'},
+      {'id': 'rw-step-10', 'status': 'pending', 'content': 'Step 10: Commit Changes - Create git commit with versioned message'},
+      {'id': 'rw-step-11', 'status': 'pending', 'content': 'Step 11: Create Git Tag - SemVer task-touch or registry mode'},
+      {'id': 'rw-step-12', 'status': 'pending', 'content': 'Step 12: Push to Remote - Push branch and tags'},
+      {'id': 'rw-step-12.5', 'status': 'pending', 'content': 'Step 12.5: GitHub Release - create_github_release.py (SemVer tag)'},
+      {'id': 'rw-step-13', 'status': 'pending', 'content': 'Step 13: Housekeeping - Cancel rw-step-* tracker; finalize agent run log (ADR-011)'},
    ])
    ```
 

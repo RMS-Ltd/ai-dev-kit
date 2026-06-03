@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
 **Completed:** [Reopened – TBD]  
-**Last updated:** 2026-04-18 (v0.7.6.18+3 — E07:S06:T18 RW full)
+**Last updated:** 2026-06-03 (v0.7.7.1+1 — E07:S07:T01 COMPLETE: workflow machinery code review / FR-107)
 **Branch:** `epic/7-documentation-maintenance`  
 **Version Schema:** `0.7.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -32,6 +32,9 @@ housekeeping_policy: keep
 - [x] **E7:S04 – Maintenance Automation and Tooling** - ✅ COMPLETE (v0.7.4.4+1 – All tasks complete)
 - [x] **E7:S05 – Migration UXR – Pre-Existing Kanban Structures** - ✅ COMPLETE (v0.7.5.4+1 – All tasks complete)
 - [x] **E7:S06 – Post-Windsurf Project Review** - ✅ COMPLETE (v0.7.6.18+1 – T18 complete: installer prompt clarity hardening)
+
+- [ ] **E7:S07 – Code Reviews** - IN PROGRESS (v0.7.7.1+1 — T01 ✅ COMPLETE)
+  - Story: [`Story-007-code-reviews.md`](Story-007-code-reviews.md)
 
 > **CRITICAL:** This Story Checklist is the **SINGLE SOURCE OF TRUTH** for story status and version markers.  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.7.1.3+1)`)  

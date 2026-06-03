@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.7.1+1] - 03-06-26
+
+E07:S07:T01 — Kanban init + workflow machinery code review report (**FR-107**): E07:S07 Code Reviews story, severity-ranked findings and remediation backlog. SemVer **v0.4.860+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.7.1+1.md)
+
+---
+
 ## [0.2.13.8+1] - 03-06-26
 
 E02:S13:T08 — Kanban init: filed **FR-106** (packaged workflows sync with live repo) and wired four-surface intake for **E02:S13:T08**. SemVer **v0.4.859+1**.

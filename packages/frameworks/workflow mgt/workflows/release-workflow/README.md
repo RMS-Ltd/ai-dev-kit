@@ -1,8 +1,10 @@
 # Release Workflow
 
+> **SoT:** Agent execution follows root `.cursorrules` RW section and [release-workflow-agent-execution.md](../../KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). This directory’s `release-workflow.yaml` is the **registry/structural** definition (12 steps + 9.5/9.6/12.5). The flat `workflows/release-workflow.yaml` at the parent level is **deprecated** (E02:S13:T08).
+
 ## Overview
 
-The Release Workflow (RW) automates the complete release process for AI Dev Kit projects, including version management, changelog maintenance, kanban reconciliation, commit, tag creation, and optional GitHub release publishing. It ensures consistent, traceable releases with comprehensive validation at every step.
+The Release Workflow (RW) automates the complete release process for AI Dev Kit projects, including version management, changelog maintenance, kanban reconciliation, commit, tag creation, and GitHub release publishing. It ensures consistent, traceable releases with comprehensive validation at every step (including FR-097 board stamps and FR-092 scoped Step 7 kanban).
 
 ## 🎯 Purpose
 

@@ -201,18 +201,26 @@ git add -A
 ### Step 9 — Run Validators
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" [--requested "<parsed_id>"] [--art]
+python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict [--requested "<parsed_id>"] [--art]
 python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py"
-python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" [--requested "<parsed_id>"] [--art]
-python "packages/frameworks/workflow mgt/scripts/validation/check_changelog_size.py"
+python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --strict [--requested "<parsed_id>"] [--art] [--doc-policy-zero]
+python "packages/frameworks/workflow mgt/scripts/changelog/check_changelog_size.py"
 python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_archive_links.py"
+python "packages/frameworks/workflow mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/kboard.md" --after "<kanban_root>/kboard.md" --strict
+python "packages/frameworks/workflow mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/fbuboard.md" --after "<kanban_root>/fbuboard.md" --strict
+python "packages/frameworks/workflow mgt/scripts/validation/validate_kanban_state_icons.py" --project-root . --strict
+python "packages/frameworks/workflow mgt/scripts/validation/validate_release_readiness.py"
 ```
 
 If `--art` was in `$ARGUMENTS`, propagate `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`.
 
+For docs-only **BUILD +0** on an existing E/S/T, add `--doc-policy-zero` to `validate_version_bump.py` (see BR-067).
+
 `check_changelog_size.py` exit 1 is non-blocking — triggers Step 9.5.
 
 `validate_changelog_archive_links.py` is non-blocking — reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers but does not abort the workflow.
+
+`validate_board_stamp_diff.py` (FR-097) and `validate_release_readiness.py` Gates 1–9 are **blocking** on failure.
 
 ### Step 9.5 — CMW (Conditional)
 

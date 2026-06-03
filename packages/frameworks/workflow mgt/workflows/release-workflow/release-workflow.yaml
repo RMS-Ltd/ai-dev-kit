@@ -4,9 +4,10 @@ type: release
 description: Automated release workflow with PDCA integration (version bump, changelog, commit, tag, push, verification, action, PIR trigger). Includes Step 9: IDE problem checking and Step 17: Housekeeping.
 
 config:
-  version_file: src/confidentia/version.py
+  version_file: src/{project}/version.py
   changelog_dir: docs/changelog-and-release-notes/changelog-archive
   main_changelog: CHANGELOG.md
+  scripts_path: packages/frameworks/workflow mgt/scripts
 
 steps:
   - id: step-1
@@ -94,7 +95,7 @@ steps:
       br_fr_dir: docs/project-management/kanban/fr-br
 
   - id: step-7
-    name: Auto-update Kanban Docs
+    name: Scoped Kanban Reconciliation
     type: kanban_update
     handler: framework.kanban_update
     required: true
@@ -104,11 +105,12 @@ steps:
     dependencies:
       - step-2
     config:
+      invocation_context: rw_step_7
       kanban_update_script: packages/frameworks/workflow mgt/scripts/update_kanban_docs.py
-      epic_doc_pattern: docs/project-management/epics/overview/Epic {epic}/Epic-{epic}.md
+      epic_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md
+      story_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md
       kanban_board: docs/project-management/kanban/kboard.md
       fr_br_uxr_board: docs/project-management/kanban/fbuboard.md
-      kanban_structure: docs/project-management/kanban/kanban-structure.md
       use_rw_config: true
 
   - id: step-8
@@ -128,35 +130,31 @@ steps:
         - "*"
 
   - id: step-9
-    name: Check for and Address IDE-Flagged Problems
-    type: ide_linter_check
-    handler: ide.lint_check
+    name: Run Validators
+    type: validation
+    handler: release.run_validators
     required: true
     mandatory: true
     blocking: true
     dependencies:
       - step-8
     config:
-      check_order: [errors, warnings, infos]
-      blocking: true  # Errors block workflow, warnings/infos are non-blocking but should be addressed
-      use_read_lints: true  # Use IDE diagnostics API (e.g., read_lints tool in Cursor)
-
-  - id: step-10
-    name: Run Validators
-    type: validation
-    handler: confidentia.run_validators
-    required: true
-    dependencies:
-      - step-9
-    config:
+      strict_mode: true
+      propagate_art_to: [validate_branch_context.py, validate_version_bump.py]
       validators:
         - scripts/validation/validate_branch_context.py
         - scripts/validation/validate_changelog_format.py
         - scripts/validation/validate_version_bump.py
         - scripts/changelog/check_changelog_size.py
-      strict_mode: true
+        - scripts/validation/validate_changelog_archive_links.py
+        - scripts/validation/validate_board_stamp_diff.py
+        - scripts/validation/validate_kanban_state_icons.py
+        - scripts/validation/validate_release_readiness.py
+      non_blocking:
+        - scripts/changelog/check_changelog_size.py
+        - scripts/validation/validate_changelog_archive_links.py
 
-  - id: step-10.5
+  - id: step-9.5
     name: Changelog Management Workflow (CMW)
     type: changelog_management
     handler: changelog.cmw
@@ -164,130 +162,83 @@ steps:
     enabled: true
     blocking: false
     dependencies:
-      - step-10
+      - step-9
     config:
       cmw_script: packages/frameworks/workflow mgt/scripts/changelog/cmw.py
       trigger_condition: size_threshold_exceeded
       auto_trigger: true
-      dry_run: false
       use_rw_config: true
 
-  - id: step-11
+  - id: step-9.6
+    name: Check IDE-Flagged Problems
+    type: ide_linter_check
+    handler: ide.lint_check
+    required: false
+    blocking: false
+    dependencies:
+      - step-9
+    config:
+      check_order: [errors, warnings, infos]
+      use_read_lints: true
+
+  - id: step-10
     name: Commit Changes
     type: git_commit
     handler: git.commit
     required: true
     dependencies:
-      - step-10
-      - step-10.5
+      - step-9
+      - step-9.5
+      - step-9.6
     config:
-      message_template: "{version} - {summary}"
+      message_template: "Release v{version}: {summary}"
 
-  - id: step-11.5
-    name: Post-Commit Stage Completeness Verification
-    type: validation
-    handler: validation.post_commit
-    required: true
-    mandatory: true
-    blocking: true
-    dependencies:
-      - step-11
-    config:
-      validator_script: packages/frameworks/workflow mgt/scripts/validate_rw_step7_post_commit.py
-      arguments: --auto
-      strict_mode: true
-
-  - id: step-12
+  - id: step-11
     name: Create Git Tag
     type: git_tag
     handler: git.create_tag
-    required: false
-    enabled: true
+    required: true
     dependencies:
-      - step-11
-      - step-11.5
+      - step-10
     config:
       tag_template: v{semver_version}
       internal_tag_template: v{internal_version}
-      message_template: "Release {tag}: {summary}"
       annotated: true
       detect_semver_strategy: true
-      create_internal_tag: false
-      semver_mapping_strategy: auto
 
-  - id: step-13
+  - id: step-12
     name: Push to Remote
     type: git_push
     handler: git.push
-    required: false
-    enabled: true
+    required: true
     dependencies:
       - step-11
-      - step-11.5
-      - step-12
     config:
       push_tags: true
       remote: origin
 
-  - id: step-14
-    name: Post-Commit Verification & Reflection
-    type: verification_reflection
-    handler: release.verification_reflection
-    required: false
-    enabled: true
+  - id: step-12.5
+    name: Create/Update GitHub Release
+    type: github_release
+    handler: release.github_release
+    required: true
     dependencies:
-      - step-13
+      - step-12
     config:
-      verification_prompt: true
-      reflection_questions: true
-      changelog_update: true
+      script: packages/frameworks/workflow mgt/scripts/create_github_release.py
+      use_env_local: true
 
-  - id: step-15
-    name: Act on Verification Results
-    type: act_on_results
-    handler: release.act_on_results
-    required: false
-    enabled: true
-    dependencies:
-      - step-14
-    config:
-      changelog_update: true
-      follow_up_tasks: true
-      process_improvement: true
-
-  - id: step-16
-    name: Check for PIR Trigger
-    type: pir_trigger_check
-    handler: pir.check_trigger
-    required: false
-    enabled: true
-    blocking: false
-    dependencies:
-      - step-13
-    config:
-      epic_pir_always: true
-      story_pir_significance_criteria:
-        - has_multiple_tasks: true
-        - has_cross_story_dependencies: true
-        - introduces_new_patterns: true
-        - has_significant_technical_debt: true
-      pir_workflow_path: packages/frameworks/workflow mgt/workflows/post-implementation-review/pir-workflow.yaml
-      kanban_root: docs/project-management/kanban
-      epic_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md
-      story_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md
-
-  - id: step-17
+  - id: step-13
     name: Housekeeping
     type: housekeeping
     handler: ide.housekeeping
-    required: false
-    enabled: true
+    required: true
     blocking: false
     dependencies:
-      - step-16
+      - step-12.5
     config:
-      clear_ide_todos: true
-      cleanup_temp_files: false
+      clear_workflow_step_tracker: true
+      finalize_agent_run_log: true
 
 parameters:
   - name: summary

@@ -12,9 +12,9 @@ housekeeping_policy: keep
 
 **Location in `.cursorrules`:** Add this section in the "Version Control and Release Process" section (or equivalent), after the RW trigger section.
 
-**Last Updated:** 2026-05-30  
+**Last Updated:** 2026-06-03  
 **Source Project:** ai-dev-kit  
-**Version:** 1.2.0 (FR-102: `-c` archive completed — keep aligned with root `.cursorrules` UKW block)
+**Version:** 1.3.0 (E02:S13:T08: 9 steps + 2.5, FR-097 stamp rules — align with root `.cursorrules` UKW block)
 
 ---
 
@@ -39,7 +39,7 @@ housekeeping_policy: keep
 5. **Follow** the step-by-step guide below using **BOTTOM-UP APPROACH**
 6. **Execute all steps** using the ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED pattern with **intelligent reasoning at each step**
 7. **Document** each step's analysis, reasoning, decisions, actions, and results
-8. **MUST USE Workflow Step Tracker:** Create and maintain a TODO list tracking all 9 steps
+8. **MUST USE Workflow Step Tracker:** Create and maintain step progress for all 9 UKW steps (plus Step 2.5 on comprehensive runs)
 
 **🔧 Config-Driven Approach (Preferred):**
 
@@ -62,7 +62,7 @@ If `rw-config.yaml` exists in project root and `use_kanban: true`, **MUST** load
 
 **REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md). In Cursor, use `todo_write` as the reference adapter for all 9 UKW steps:
 
-1. **At Workflow Start:** Create TODO list with all 8 steps as `pending`
+1. **At Workflow Start:** Create TODO list with all 9 steps as `pending` (mark Step 2.5 `cancelled` when not comprehensive)
 2. **Before Each Step:** Mark step as `in_progress`
 3. **After Each Step:** Mark step as `completed` and mark next step as `in_progress`
 4. **On Completion:** All steps marked as `completed`
@@ -76,9 +76,11 @@ For each step, follow this pattern:
 4. **VALIDATE** - Verify execution succeeded
 5. **PROCEED** - Document and move to next step
 
-**The 8 Steps (Bottom-Up Approach):**
+**The 9 Steps (Bottom-Up Approach):**
 
-1. **Analyze Recent Activity** - **MANDATORY FIRST STEP:**
+1. **Identify Perpetual UKW Task (Wiring Step)** - **MANDATORY FIRST (always runs):** Discover task with `perpetual_task: true` or `Task Type: Perpetual Maintenance` dedicated to UKW; store E:S:T for RW attribution when user runs RW after UKW.
+
+2. **Analyze Recent Activity** - **Runs if comprehensive (no flags) or bookkeeping (`-u`):**
    - **ANALYZE:**
      - Check git commit history for last 7 days (or configured days)
      - Scan FR/BR/UXR directory for recent files
@@ -98,7 +100,9 @@ For each step, follow this pattern:
      - Relevant changes identified
    - **PROCEED:**
      - Document findings
-     - Move to Step 2
+     - Move to Step 2.5 (comprehensive) or Step 3
+
+2.5. **Discover Board Gaps** - **Comprehensive (no flags) only:** Add missing TODO/IN PROGRESS tasks to board; present open FR/BR/UXR without tasks to user for intake decision.
 
 3. **Update Task Documents** - **BOTTOM-UP STEP 1:**
    - **ANALYZE:**
@@ -228,6 +232,8 @@ For each step, follow this pattern:
      - Update epic status sections
      - Update epic story lists
      - Update board "Last updated" date and version
+     - **FR-097 (stamp authority):** On hygiene-only passes, preserve existing row `| Last modified: … UTC|`; only board `Last Updated` metadata may change. Snapshot boards at UKW start; run `validate_board_stamp_diff.py` before stage — **abort UKW** on un evidenced stamp deltas. Required scope: `kboard.md` and `fbuboard.md` (not best-effort).
+     - **fbuboard:** Prune active rows whose linked FR/BR/UXR status is terminal unless unresolved-verification context remains.
    - **VALIDATE:**
      - `kboard.md` contains no tasks with status `COMPLETE` or `DONE`
      - No task ID appears in more than one MoSCOW section

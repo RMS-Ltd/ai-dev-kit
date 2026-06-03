@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (RW -k **E02:S13:T08 --art**: intake **FR-106**)
-**Version Context:** v0.2.13.8+1 (**SemVer** v0.4.859+1)
+**Last Updated:** 2026-06-03 (RW -k **E07:S07:T01 --art**: FR-107 IMPLEMENTED)
+**Version Context:** v0.7.7.1+1 (**SemVer** v0.4.860+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -49,9 +49,13 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
-**2026-06-03:** Intake **FR-106** → **E02:S13:T08** (packaged workflow sync with live repo; kanban init **v0.2.13.8+1**).
+**2026-06-03:** Intake **FR-106** → **E02:S13:T08** (packaged workflow sync with live repo; kanban init **v0.2.13.8+1**). Intake **FR-107** → **E07:S07:T01** under **E07:S07 – Code Reviews** (workflow machinery code review).
 
 - **FR-106** – Packaged workflows sync with live repo implementation - 🟢 OPEN (HIGH, YAML/registry/dual-source parity) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [E02:S13:T08](epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | —No IPP— | Last modified: 2026-06-03 20:06 UTC
+
+**2026-06-03:** **FR-107** IMPLEMENTED at **v0.7.7.1+1** → **E07:S07:T01** (machinery code review report).
+
+- **FR-107** – Comprehensive workflow machinery code review - ✅ IMPLEMENTED (**v0.7.7.1+1**) | [IPP](../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md) | [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md) | [E07:S07:T01](epics/Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) | —No IPP— | Last modified: 2026-06-03 20:30 UTC
 
 **2026-06-03:** Intake from GitHub issues **#10–#15** (book dry-run / ExpensesTracker T03) → **E06:S09:T07–T12**.
 

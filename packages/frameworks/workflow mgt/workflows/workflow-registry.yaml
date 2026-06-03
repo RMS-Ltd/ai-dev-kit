@@ -1,18 +1,19 @@
 workflow_registry:
-  version: "1.0.0"
-  last_updated: "2026-03-12"
+  version: "1.1.0"
+  last_updated: "2026-06-03"
   
   workflows:
     release-workflow:
       name: "Release Workflow"
       abbreviation: "RW"
-      description: "Complete release process with version management"
+      description: "Intelligent agent release (12 steps + 9.5 CMW + 9.6 IDE + 12.5 GitHub + 13 housekeeping; gates 1b/1c/1d before Step 2)"
       directory: "release-workflow/"
       main_file: "release-workflow.yaml"
       config_file: "release-workflow-config.yaml"
       documentation: "README.md"
       triggers: ["RW", "RW -k", "RW -d"]
-      steps: 17
+      steps: 12
+      notes: "Optional sub-steps 9.5, 9.6, 12.5; flat workflows/release-workflow.yaml is deprecated (E02:S13:T08)"
       
     changelog-management-workflow:
       name: "Changelog Management Workflow"
@@ -28,13 +29,13 @@ workflow_registry:
     update-kanban-workflow:
       name: "Update Kanban Workflow"
       abbreviation: "UKW"
-      description: "Update Kanban board documentation"
+      description: "Agentic kanban sync (9 steps + Step 2.5 gap discovery on comprehensive run; flags -u/-p/-a/--rp/-c)"
       directory: "update-kanban-workflow/"
       main_file: "update-kanban-workflow.yaml"
       config_file: "ukw-config.yaml"
       documentation: "README.md"
       triggers: ["UKW"]
-      steps: 8
+      steps: 9
       
     post-implementation-review:
       name: "Post-Implementation Review"
@@ -94,13 +95,13 @@ workflow_registry:
     package-version-workflow:
       name: "Package Version Workflow"
       abbreviation: "PKG-VERSION"
-      description: "Package version management and updates"
+      description: "Package version bumps (RW Step 2.5 / manual PVW; 6 agent steps)"
       directory: "package-version-workflow/"
       main_file: "package-version-workflow.yaml"
       config_file: "package-version-config.yaml"
       documentation: "README.md"
-      triggers: ["PKG-VERSION"]
-      steps: 4
+      triggers: ["PVW", "PKG-VERSION"]
+      steps: 6
       
     framework-health-monitoring-workflow:
       name: "Framework Health Monitoring Workflow"

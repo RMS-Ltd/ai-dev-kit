@@ -134,7 +134,7 @@ todo_write(merge=False, todos=[
     {'id': 'rw-step-11', 'status': 'pending', 'content': 'Step 11: Create Git Tag - Internal + SemVer annotated tags'},
     {'id': 'rw-step-12', 'status': 'pending', 'content': 'Step 12: Push to Remote - Push branch and tags (with network permissions)'},
     {'id': 'rw-step-12.5', 'status': 'pending', 'content': 'Step 12.5: Create/Update GitHub Release (SemVer tag)'},
-    {'id': 'rw-step-13', 'status': 'pending', 'content': 'Step 13: Post-Commit Verification, Housekeeping & Reflection - Verify release, perform housekeeping tasks, and reflect on process'},
+    {'id': 'rw-step-13', 'status': 'pending', 'content': 'Step 13: Housekeeping - Clear workflow step tracker and finalize agent run log (ADR-011)'},
     {'id': 'rw-step-14', 'status': 'pending', 'content': 'Step 14: Act on Verification Results - Address any issues found during verification'},
     {'id': 'rw-step-15', 'status': 'pending', 'content': 'Step 15: Check for PIR Trigger - Determine if Post-Implementation Review is needed'},
     {'id': 'rw-step-16', 'status': 'pending', 'content': 'Step 16: Housekeeping - Clean up temporary files and IDE todos'},
@@ -419,11 +419,9 @@ For each step, follow this pattern:
      5. **Update ALL Epic sections to match the updated Story file's state**
      6. Validate consistency: Story file, Epic header, Epic checklist, and Epic detailed sections must all match
 8. **Stage Files** - Run `git add -A` to stage all modified files
-9. **Run Validators** - Execute validation scripts. **Use config:** If `rw-config.yaml` exists, read `scripts_path` from config. Otherwise, use `{scripts_path}/validation/` as fallback. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, and `validate_changelog_archive_links.py` (all scripts automatically read from `rw-config.yaml` if available). **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. **Note:** `validate_version_bump` supports perpetual tasks (T101+, `perpetual_task` or `Task Type: Perpetual Maintenance` flag).
-   - **IMPORTANT:** Validators should confirm you're on an epic branch, not `main`
-   - If on `main`, warn user and suggest switching to epic branch
-   - Validators check version format, branch context alignment, changelog format, and version bump logic
-   - **BR-074:** `validate_changelog_archive_links.py` reports dangling links in `CHANGELOG_ARCHIVE.md` but is non-blocking
+9. **Run Validators** - Execute validation scripts. **Use config:** If `rw-config.yaml` exists, read `scripts_path` from config. Otherwise, use `packages/frameworks/workflow mgt/scripts/validation/` as fallback. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` / `fbuboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md` / `fbuboard.md`). Run `validate_release_readiness.py` (Gates 1–9 including stamp homogeneity + MoSCOW state icons). All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For **docs-only** releases requiring **BUILD +0** on an **existing** E/S/T, add **`--doc-policy-zero`** to `validate_version_bump.py` (same **--strict** / **--requested** / **--art** line). **Note:** `validate_version_bump` supports perpetual tasks (`perpetual_task` or `Task Type: Perpetual Maintenance`). **Note:** `check_changelog_size.py` exit code 1 is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking (BR-074).
+9.5. **Changelog Management Workflow (CMW)** - **OPTIONAL, NON-BLOCKING:** If Step 9's `check_changelog_size.py` indicated threshold exceeded (exit code 1), automatically run CMW. Skip if not exceeded. CMW failures are non-blocking.
+9.6. **Check IDE-Flagged Problems (recommended before commit)** - **RECOMMENDED, NON-BLOCKING:** Before Step 10, check IDE/linter issues in modified files; fix where practical and re-stage.
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 11. **Create Git Tag** - Create tags via canonical strategy decision:
    - **Canonical source**: Resolve tags with `semver_converter.get_rw_tag_info(internal_version, finalize=True)`.
@@ -433,11 +431,11 @@ For each step, follow this pattern:
    - **Examples**:
      - Registry mode: `v0.6.7.18+2` (internal version tag)
      - Task-touch mode: `v0.9.5` (SemVer core tag, internal traceability tag: `v0.6.7.18+2`)
-12. **Push to Remote** - Push epic branch and tag to origin (DO NOT push to main unless ready to deploy)
+12. **Push to Remote** - Push epic branch and tags to origin (DO NOT push to main unless ready to deploy)
     - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
-    - Example: `run_terminal_cmd(command="git push origin {branch} --tags", required_permissions=['network'])`
-    - This enables network access in Cursor's sandbox environment
-    - See: `docs/architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md`
+    - Push internal and SemVer tags: `git push origin {branch} --tags`
+12.5. **Create/Update GitHub Release** - **MANDATORY:** Run `create_github_release.py` with SemVer tag (loads `GITHUB_TOKEN` from `.env.local` when present). Non-blocking if token missing.
+13. **Housekeeping** - Cancel/clear workflow step tracker entries (`rw-step-*`); finalize agent run log per [ADR-011](KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md).
 
 **Key Principles:**
 - ✅ **Intelligent Analysis:** Understand each step's requirements before executing

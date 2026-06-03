@@ -1,26 +1,24 @@
 {
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
-  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-7-7-1plus1-e7s7t1.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": false,
+  "overall_passed": true,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
   "release_scope": {
-    "epic": 2,
-    "story": 13,
-    "task": 8,
-    "task_id": "E2:S13:T8",
-    "version_string": "v0.2.13.8+1"
+    "epic": 7,
+    "story": 7,
+    "task": 1,
+    "task_id": "E7:S7:T1",
+    "version_string": "v0.7.7.1+1"
   },
   "summary": {
-    "blocking_failures": [
-      "Gate 4: Corpus canonical state"
-    ],
-    "gates_failed": 1,
-    "gates_passed": 8,
+    "blocking_failures": [],
+    "gates_failed": 0,
+    "gates_passed": 9,
     "gates_total": 9,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-03 20:31 UTC",
+  "timestamp_utc": "2026-06-03 20:32 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -84,7 +82,7 @@
     {
       "evidence": {
         "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md": {
-          "rows_changed": 1,
+          "rows_changed": 0,
           "rows_with_duplicate_footers": 0
         },
         "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md": {
@@ -105,28 +103,26 @@
           "stamps_skipped_no_evidence": 8
         }
       },
-      "findings": [
-        "`/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: rows_changed=1 under non_substantive corpus sweep \u2014 corpus is not idempotent."
-      ],
+      "findings": [],
       "gate_id": 4,
-      "is_blocking_failure": true,
+      "is_blocking_failure": false,
       "name": "Corpus canonical state",
-      "passed": false,
+      "passed": true,
       "severity": "block",
-      "summary": "Corpus canonical state violated; see findings.",
+      "summary": "Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.",
       "waive_reason": null,
       "waived": false
     },
     {
       "evidence": {
-        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json",
+        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-7-7-1plus1-e7s7t1.json",
         "paths_checked": 9,
         "release_scope": {
-          "epic": 2,
-          "story": 13,
-          "task": 8,
-          "task_id": "E2:S13:T8",
-          "version_string": "v0.2.13.8+1"
+          "epic": 7,
+          "story": 7,
+          "task": 1,
+          "task_id": "E7:S7:T1",
+          "version_string": "v0.7.7.1+1"
         },
         "violations": 0
       },
@@ -143,7 +139,7 @@
     {
       "evidence": {
         "evidence_mode": null,
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-7-7-1plus1-e7s7t1.json",
         "stamps_appended_with_evidence": 0,
         "stamps_preserved_existing": 0,
         "stamps_skipped_no_evidence": 0
@@ -163,10 +159,10 @@
         "fbu_doc": {
           "notes_count": 1,
           "paths": [
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-107-comprehensive-workflow-machinery-code-review.md",
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md",
             "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md",
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md",
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md",
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md"
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md"
           ],
           "touched": false
         },
@@ -180,24 +176,24 @@
         "kboard": {
           "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+            "docs/project-management/kanban/kboard.md"
           ],
           "touched": true
         },
         "release_scope": {
-          "epic": 2,
-          "story": 13,
-          "task": 8,
-          "task_id": "E2:S13:T8",
-          "version_string": "v0.2.13.8+1"
+          "epic": 7,
+          "story": 7,
+          "task": 1,
+          "task_id": "E7:S7:T1",
+          "version_string": "v0.7.7.1+1"
         },
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-7-7-1plus1-e7s7t1.json",
         "task_doc": {
-          "notes_count": 1,
+          "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md"
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md"
           ],
-          "touched": false
+          "touched": true
         }
       },
       "findings": [],

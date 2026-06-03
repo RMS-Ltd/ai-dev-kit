@@ -141,13 +141,13 @@ class CanonicalStepsValidator:
                         "Update to include 'Housekeeping'"
                     ))
         
-        # Check total step count references
-        if "17 steps" not in content and "13 steps" in content:
+        # Check total step count references (legacy 17-step model superseded by 12+sub-steps)
+        if "17 steps" in content and "12 steps" not in content:
             self.issues.append(ValidationIssue(
                 str(file_path), 1, "step_count_mismatch",
-                "README may reference old step count (13 instead of 17)",
+                "README may reference legacy 17-step RW count",
                 "warning",
-                "Update step count references to 17"
+                "Update to 12 agent steps (+ optional 9.5, 9.6, 12.5, 13 housekeeping)"
             ))
     
     def _validate_release_workflow_yaml(self):
@@ -159,10 +159,10 @@ class CanonicalStepsValidator:
         
         content = file_path.read_text(encoding='utf-8')
         
-        # Check that all canonical steps are represented
+        # Check that all canonical steps are represented (YAML uses `id: step-N` not `step-N:`)
         for step_num, step_def in self.canonical_steps.items():
-            step_pattern = f"step-{step_num}:"
-            if step_pattern not in content:
+            step_id = f"step-{step_num}"
+            if step_id not in content:
                 self.issues.append(ValidationIssue(
                     str(file_path), 1, "missing_step",
                     f"Step {step_num} ({step_def.name}) not found in release-workflow.yaml",

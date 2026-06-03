@@ -31,9 +31,11 @@ housekeeping_policy: keep
 - [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
   - Task Doc: [`T07-rw-semver-tag-when-task-touch-enabled.md`](Story-013-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)
 
-- [ ] **E02:S13:T08 – Sync packaged workflows with live repo implementation** - TODO ([FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md))
+- [ ] **E02:S13:T08 – Sync packaged workflows with live repo implementation** - IN PROGRESS ([FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md))
   - Task Doc: [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
+  - IPP: [`IPP-E02S13T08-sync-packaged-workflows-live-spec.md`](../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 
+**Code review gate (hosted under E07:S07):** [E07:S07:T01](../../Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)) — feeds T05/T06.
 
 ---
 
@@ -128,23 +130,25 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ### E02:S13:T05 – Create gap log and risk assessment
 
-**Input:** Findings from T01–T04  
+**Input:** Findings from T01–T04 + [E07:S07:T01 machinery review report](../../Epic-7/Story-007-code-reviews/T01-workflow-machinery-code-review-report.md) (§5–§6 severity backlog)  
 **Deliverable:** Gap log with severity and risk notes  
 **Approach:** Consolidate gaps and categorize by RC impact.
 
 ### E02:S13:T06 – Define RC sign-off criteria and remediation tasks
 
-**Input:** Gap log and expected behaviors  
+**Input:** Gap log + [E07:S07:T01 RC gate summary](../../Epic-7/Story-007-code-reviews/T01-workflow-machinery-code-review-report.md#7-e02s13-rc-gate-summary-feeds-t05t06)  
 **Deliverable:** RC sign-off checklist and remediation task list  
 **Approach:** Define minimum bar for RC and backlog tasks.
 
 ### E02:S13:T08 – Sync packaged workflows with live repo implementation
 
 **Task ID:** E02:S13:T08  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Scope:** Reconcile packaged workflow YAML, `canonical-rw-steps.yaml`, portable rule excerpts, and registry metadata with live agent execution spec (root `.cursorrules`, vwmp guides, validators). Extends E05:S01:T66 dual-source parity to Step 9 FR-097/FR-092 validators and YAML/registry drift.  
 **Deliverable:** Updated package artefacts + parity delta log + sync report.  
 **Task Doc:** [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
+
+**Code review gate:** [E07:S07:T01](../../Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)) — machinery review hosted under [E07:S07 – Code Reviews](../../Epic-7/Story-007-code-reviews.md); findings feed T05/T06.
 
 ---
 
@@ -162,6 +166,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 ## Dependencies
 
 - None (RC readiness prerequisite for Epic 2 package sign-off).
+- **Code review gate:** [E07:S07:T01](../../Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)) — **report published** [2026-06-03](../../Epic-7/Story-007-code-reviews/T01-workflow-machinery-code-review-report.md): 0 Critical, 3 High, 6 Medium, 4 Low; **conditional RC** pending remediation backlog (H1 CI pytest, H2 flat YAML, H3 kanban consolidation).
 
 ---
 

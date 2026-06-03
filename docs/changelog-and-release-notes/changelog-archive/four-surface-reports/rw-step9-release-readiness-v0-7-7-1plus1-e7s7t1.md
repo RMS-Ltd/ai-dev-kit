@@ -2,16 +2,15 @@
 
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
-- **Release scope:** E2:S13:T8 (v0.2.13.8+1)
-- **Timestamp (UTC):** 2026-06-03 20:31 UTC
-- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json`
+- **Release scope:** E7:S7:T1 (v0.7.7.1+1)
+- **Timestamp (UTC):** 2026-06-03 20:32 UTC
+- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-7-7-1plus1-e7s7t1.json`
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 4: Corpus canonical state
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 8/9 passed (1 failed, 0 waived).
+- Gates: 9/9 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -55,13 +54,11 @@
 
 ### Gate 4 — Corpus canonical state
 
-- Status: **FAIL** (severity: `block`)
-- Summary: Corpus canonical state violated; see findings.
-- Findings:
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: rows_changed=1 under non_substantive corpus sweep — corpus is not idempotent.
+- Status: **PASS** (severity: `block`)
+- Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 1, 'rows_with_duplicate_footers': 0}`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 8, 'stamps_preserved_existing': 111}`
@@ -71,17 +68,17 @@
 - Status: **PASS** (severity: `block`)
 - Summary: BR-070 satisfied: all 9 Step-7 path(s) are staged or unchanged.
 - Evidence:
-  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json`
+  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-7-7-1plus1-e7s7t1.json`
   - `paths_checked`: `9`
   - `violations`: `0`
-  - `release_scope`: `{'epic': 2, 'story': 13, 'task': 8, 'task_id': 'E2:S13:T8', 'version_string': 'v0.2.13.8+1'}`
+  - `release_scope`: `{'epic': 7, 'story': 7, 'task': 1, 'task_id': 'E7:S7:T1', 'version_string': 'v0.7.7.1+1'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
 
 - Status: **PASS** (severity: `block`)
 - Summary: Forensic stamp evidence consistent: appended=0, skipped=0, preserved=0 (mode=None).
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-7-7-1plus1-e7s7t1.json`
   - `evidence_mode`: `None`
   - `stamps_appended_with_evidence`: `0`
   - `stamps_skipped_no_evidence`: `0`
@@ -92,12 +89,12 @@
 - Status: **PASS** (severity: `block`)
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-13-8plus1-e2s13t8.json`
-  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md'], 'notes_count': 1}`
-  - `fbu_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md'], 'notes_count': 1}`
-  - `kboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-7-7-1plus1-e7s7t1.json`
+  - `task_doc`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md'], 'notes_count': 0}`
+  - `fbu_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-107-comprehensive-workflow-machinery-code-review.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md'], 'notes_count': 1}`
+  - `kboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
   - `fbuboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md'], 'notes_count': 0}`
-  - `release_scope`: `{'epic': 2, 'story': 13, 'task': 8, 'task_id': 'E2:S13:T8', 'version_string': 'v0.2.13.8+1'}`
+  - `release_scope`: `{'epic': 7, 'story': 7, 'task': 1, 'task_id': 'E7:S7:T1', 'version_string': 'v0.7.7.1+1'}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 
