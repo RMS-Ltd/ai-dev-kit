@@ -27,11 +27,11 @@ housekeeping_policy: keep
 
 *(No Must Have tasks — 2026-06-03 UKW archived **E08:S03:T05**, **E08:S03:T06** → [kanban-completed.md](kanban-completed.md); **FR-104**, **FR-105**, **BR-077** → [fbu-completed.md](fbu-completed.md).)*
 
-*(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). FR-099 Phases 0–4 complete; public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) bootstrapped 2026-05-28. **E6:S09** T01–T06 complete (FR-080/081/082/098); **T07–T12** open from book dry-run **BR-078–BR-083** / GitHub #10–#15.)*
+*(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). FR-099 Phases 0–4 complete; public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) bootstrapped 2026-05-28. **E6:S09** T01–T06 complete (FR-080/081/082/098); book dry-run **BR-078–BR-084** / GitHub **#10–#16** — **T07–T08/T09/T11** shipped; **T12–T13/T10** open.)*
 
 ### Should Have (S) - Important Tasks
 
-**2026-06-03:** Book dry-run / GitHub **#10–#15** → **E06:S09** reopened; installer defects **T07–T12** (fix order: **T09** ✅ → **T11** ✅ → **T07** ✅ → **T08/T12**).
+**2026-06-03:** Book dry-run / GitHub **#10–#16** → **E06:S09** reopened; installer defects **T07–T13** (fix order: **T09** ✅ → **T11** ✅ → **T07** ✅ → **T08** ✅ → **T12** → **T13** → **T10**).
 
 - **E06:S09:T09** – BR-080: Kanban fresh mode validation on empty repo - ✅ COMPLETE (**v0.6.9.9+2**, greenfield blocker GitHub #12) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | Last modified: 2026-06-03 17:42 UTC
 
@@ -42,6 +42,8 @@ housekeeping_policy: keep
 - **E06:S09:T08** – BR-079: Epic 22/23 placeholder templates - ✅ COMPLETE (**v0.6.9.8+2**, GitHub #11) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | Last modified: 2026-06-03 17:41 UTC
 
 - **E06:S09:T12** – BR-083: RW install rw-config pattern defaults - 📋 TODO (MEDIUM, GitHub #15) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | Last modified: 2026-06-03 17:45 UTC
+
+- **E06:S09:T13** – BR-084: RW Mode C missing task_doc_pattern / wrong persisted patterns - 📋 TODO (MEDIUM, **v0.6.9.13+1** kanban init, GitHub #16) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | Last modified: 2026-06-03 19:18 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-03 (v0.6.9.8+2 – T08 complete: E06:S09:T08)
-**Version:** v0.6.9.8+2
+**Last updated:** 2026-06-03 (v0.6.9.13+1 – T13 kanban init: BR-084 / #16)
+**Version:** v0.6.9.13+1
 **Code:** E6S09
 
 ---
@@ -53,6 +53,8 @@ housekeeping_policy: keep
 - [x] **E06:S09:T11 – RW install PyYAML preflight (BR-082)** - ✅ COMPLETE (**v0.6.9.11+2**) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | [BR-082](../../fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [IPP-E06S09T11](../../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md) | [#14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)
 
 - [ ] **E06:S09:T12 – RW install rw-config pattern defaults (BR-083)** - TODO (MEDIUM) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [BR-083](../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)
+
+- [ ] **E06:S09:T13 – RW install Mode C rw-config generation (BR-084)** - TODO (MEDIUM, **v0.6.9.13+1** kanban init) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | [BR-084](../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)
 
 ---
 

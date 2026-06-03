@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.8+2] - 03-06-26
+## [0.6.9.13+1] - 03-06-26
 
-E06:S09:T08 — Attempted fix BR-079: Epic 22/23 fresh install from `templates/Epic-{n}/` layout (no placeholders). SemVer **v0.4.858+2**.
+E06:S09:T13 — Kanban init BR-084 / GitHub #16 (RW mode C `task_doc_pattern` + persisted pattern guardrails). SemVer **v0.4.859+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.8+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.13+1.md)
 
 ---

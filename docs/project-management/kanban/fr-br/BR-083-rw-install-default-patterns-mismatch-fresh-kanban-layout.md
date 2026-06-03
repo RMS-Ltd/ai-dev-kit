@@ -13,6 +13,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM (wrong rw-config defaults after fresh kanban install)  
 **Status:** OPEN (INTAKE)  
 **GitHub Issue:** [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)  
+**Related:** [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) → [BR-084](BR-084-rw-install-mode-c-missing-task-doc-pattern.md) / **E06:S09:T13** (persisted YAML + `task_doc_pattern`)  
 **Implementing Task:** [E06:S09:T12](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md)  
 **Created:** 2026-06-03  
 **Source:** Book dry-run T03 after `install_kanban_framework.py --mode fresh`; ADK `dev` @ `84efa7b`

@@ -1,0 +1,59 @@
+---
+lifecycle: evergreen
+ttl_days: null
+created_at: 2026-06-03T20:00:00Z
+expires_at: null
+housekeeping_policy: keep
+---
+
+# Epic 6, Story 9, Task 13: RW install Mode C — rw-config generation (BR-084)
+
+**Task ID:** E06:S09:T13  
+**Status:** TODO  
+**Priority:** MEDIUM  
+**Created:** 2026-06-03  
+**Code:** E06S09T13
+
+**Upstream:** [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
+**Related:** [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) (E06:S09:T12)
+
+## Version Anchor
+
+**Version:** v0.6.9.13+1 (RW -k --art)
+
+---
+
+## Scope
+
+Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes `task_doc_pattern`, detects fresh-kanban layout, and does not persist zero-match patterns without guardrails.
+
+---
+
+## Input
+
+- [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
+- [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)
+- `generate_rw_config_yaml`, `collect_config_interactive`, `prompt_pattern_with_validation`
+
+---
+
+## Deliverable
+
+- `generate_rw_config_yaml` emits `task_doc_pattern` (+ optional `fr_br_root`) for kanban installs
+- Layout detection or safe defaults aligned with fresh kanban output
+- Guardrails when pattern match count is 0
+
+---
+
+## Acceptance Criteria
+
+- [ ] Mode C after fresh kanban: epic pattern matches `epics/Epic-1/Epic-1.md` without manual edit.
+- [ ] Generated config includes `task_doc_pattern`.
+- [ ] Integration test: temp repo, fresh kanban + RW install, epic glob ≥1.
+
+---
+
+## Links
+
+- [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
+- [Story 009](../Story-009-ai-dev-kit-installation-and-adopter-integration.md)
