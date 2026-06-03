@@ -39,7 +39,7 @@ housekeeping_policy: keep
 
 - **E06:S09:T07** – BR-078: Kanban structure template missing on fresh install - ✅ COMPLETE (**v0.6.9.7+2**, GitHub #10) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | Last modified: 2026-06-03 17:40 UTC
 
-- **E06:S09:T08** – BR-079: Epic 22/23 placeholder templates - 📋 TODO (MEDIUM, GitHub #11) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | Last modified: 2026-06-03 17:41 UTC
+- **E06:S09:T08** – BR-079: Epic 22/23 placeholder templates - ✅ COMPLETE (**v0.6.9.8+2**, GitHub #11) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | Last modified: 2026-06-03 17:41 UTC
 
 - **E06:S09:T12** – BR-083: RW install rw-config pattern defaults - 📋 TODO (MEDIUM, GitHub #15) | [Task](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | Last modified: 2026-06-03 17:45 UTC
 

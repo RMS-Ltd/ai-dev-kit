@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.7+2] - 03-06-26
+## [0.6.9.8+2] - 03-06-26
 
-E06:S09:T07 — Attempted fix BR-078: ship KANBAN_STRUCTURE_TEMPLATE; fresh install SUCCESS when board + epics. SemVer **v0.4.857+2**.
+E06:S09:T08 — Attempted fix BR-079: Epic 22/23 fresh install from `templates/Epic-{n}/` layout (no placeholders). SemVer **v0.4.858+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.7+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.8+2.md)
 
 ---

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-03 (v0.6.9.7+2 – T07 complete: E06:S09:T07)
-**Version:** v0.6.9.7+2
+**Last updated:** 2026-06-03 (v0.6.9.8+2 – T08 complete: E06:S09:T08)
+**Version:** v0.6.9.8+2
 **Code:** E6S09
 
 ---
@@ -44,7 +44,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T07 – Kanban fresh install structure template missing (BR-078)** - ✅ COMPLETE (**v0.6.9.7+2**) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | [BR-078](../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [IPP-E06S09T07](../../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md) | [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)
 
-- [ ] **E06:S09:T08 – Kanban fresh install Epic 22/23 templates (BR-079)** - TODO (MEDIUM) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)
+- [x] **E06:S09:T08 – Kanban fresh install Epic 22/23 templates (BR-079)** - COMPLETE (**v0.6.9.8+2**, pending verification) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [IPP-E06S09T08](../../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md) | [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)
 
 - [x] **E06:S09:T09 – Kanban fresh mode validation on empty repo (BR-080)** - ✅ COMPLETE (**v0.6.9.9+2**) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [IPP-E06S09T09](../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) | [#12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)
 

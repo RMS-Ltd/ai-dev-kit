@@ -238,7 +238,7 @@ python3 scripts/install_kanban_framework.py
 After running the installer, you should see:
 - ✅ Canonical epic templates installed in `docs/project-management/kanban/epics/Epic-{N}/`
 - ✅ Epic 1 contextualized with your project name (e.g., "MyProject Core", not "AI Dev Kit Core")
-- ✅ Only canonical core epics (1-8, 10, 18, 22, 23) installed
+- ✅ Only canonical core epics (1-8, 10, 18, 22, 23) installed from templates (`templates/epics/Epic-{n}-*.md` or `templates/Epic-{n}/Epic-{n}.md` for 22/23)
 - ✅ No ai-dev-kit project-specific epics (5-9 from ai-dev-kit)
 - ✅ Empty epic directories ready for you to create stories and tasks
 

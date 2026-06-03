@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-079  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (inconsistent fresh-install epic docs)  
-**Status:** OPEN (INTAKE)  
+**Status:** OPEN (fix attempted **v0.6.9.8+2** — pending verification)  
 **GitHub Issue:** [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)  
 **Implementing Task:** [E06:S09:T08](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md)  
 **Created:** 2026-06-03  
@@ -46,6 +46,8 @@ Manual replacement from template pack when available.
 
 ## Acceptance Criteria
 
-- [ ] Epic 22/23 templates ship in `packages/frameworks/kanban/templates/` (or installer skips with clear doc).
-- [ ] Fresh install no longer emits placeholder-only epics without explicit opt-in.
-- [ ] Installer logs distinguish missing template vs successful install.
+- [x] Epic 22/23 templates ship in `packages/frameworks/kanban/templates/Epic-{22,23}/` (E06:S09:T08).
+- [x] Fresh install no longer emits placeholder-only epics for 22/23 in default path.
+- [x] Installer logs distinguish missing template vs successful install (path in success line).
+
+**Verification:** User to confirm on book replay (GitHub #11) before closing BR-079.

@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T08-kanban-fresh-install-epic-22-23-templates-br079.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) **(E06:S09:T08)**  
 **Planning for:** [BR-079](../project-management/kanban/fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) · [GitHub #11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)  
-**Status:** Approved (planning complete — await explicit implementation authorization)
+**Status:** Implemented (2026-06-03 — pending user verification / RW)
 
 ---
 

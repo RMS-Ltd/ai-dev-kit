@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 8: Kanban fresh install — Epic 22/23 templates (BR-079)
 
 **Task ID:** E06:S09:T08  
-**Status:** TODO  
+**Status:** COMPLETE (pending user verification on book replay)  
 **Priority:** MEDIUM  
 **Created:** 2026-06-03  
 **Code:** E06S09T08
@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ## Version Anchor
 
-**Version:** v0.6.9.8+1 (RW -k)
+**Version:** v0.6.9.8+2 (RW --art)
 
 ---
 
@@ -45,8 +45,13 @@ Provide canonical templates for Epic 22 and 23 (or explicit skip) during fresh k
 
 ## Acceptance Criteria
 
-- [ ] Epic 22/23 templates in package or documented omission.
-- [ ] Installer messaging clear when template missing.
+- [x] Epic 22/23 templates in package (`templates/Epic-22/`, `templates/Epic-23/`).
+- [x] Installer resolves directory-layout templates; logs install vs placeholder.
+
+## Implementation notes (2026-06-03)
+
+- `_get_epic_template_file()` search order: `templates/epics/` then `templates/Epic-{n}/Epic-{n}.md`.
+- Tests: `tests/kanban/test_install_epic_22_23_templates.py`.
 
 ---
 

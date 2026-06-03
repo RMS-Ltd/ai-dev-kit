@@ -258,14 +258,25 @@ class KanbanStructureMigrator:
         return template_dir
     
     def _get_epic_template_file(self, epic_num: int) -> Optional[Path]:
-        """Get path to epic template file for given epic number."""
+        """
+        Resolve canonical epic template for a given epic number (BR-079 / E06:S09:T08).
+
+        Search order:
+        1. ``templates/epics/Epic-{n}-*.md`` (primary pack layout)
+        2. ``templates/Epic-{n}/Epic-{n}.md`` (legacy directory layout for 22, 23, etc.)
+        """
         template_dir = self._get_template_path()
-        # Template files are named like "Epic-1-Project-Core.md", "Epic-2-Workflow-Management.md", etc.
-        # Try to find matching template
         pattern = f"Epic-{epic_num}-*.md"
-        matches = list(template_dir.glob(pattern))
+        matches = sorted(template_dir.glob(pattern))
         if matches:
-            return matches[0]  # Return first match
+            return matches[0]
+
+        script_dir = Path(__file__).parent
+        templates_root = script_dir.parent / "templates"
+        directory_layout = templates_root / f"Epic-{epic_num}" / f"Epic-{epic_num}.md"
+        if directory_layout.is_file():
+            return directory_layout
+
         return None
     
     def _contextualize_template(self, content: str, project_name: str) -> str:
@@ -320,31 +331,61 @@ class KanbanStructureMigrator:
             # Try to get template file
             template_file = self._get_epic_template_file(epic_num)
             template_used = False
-            
-            if not self.dry_run:
-                epic_dir.mkdir(parents=True, exist_ok=True)
-                epic_doc = epic_dir / f"Epic-{epic_num}.md"
-                
-                # Try to copy from template
-                if template_file and template_file.exists():
-                    # Read template content
-                    template_content = template_file.read_text(encoding='utf-8')
-                    # Contextualize (especially important for Epic 1)
-                    contextualized_content = self._contextualize_template(template_content, project_name)
-                    # Write to epic directory
-                    epic_doc.write_text(contextualized_content, encoding='utf-8')
-                    template_used = True
-                    print(f"  ✅ Epic {epic_num} installed from template: {template_file.name}")
+
+            templates_root = Path(__file__).parent.parent / "templates"
+
+            if self.dry_run:
+                if template_file and template_file.is_file():
+                    try:
+                        rel_tpl = template_file.relative_to(templates_root)
+                    except ValueError:
+                        rel_tpl = template_file.name
+                    print(
+                        f"  🔍 [DRY RUN] Would install Epic {epic_num} from template: {rel_tpl}"
+                    )
                 else:
-                    # Fallback: create placeholder if template not found
-                    if not epic_doc.exists():
-                        epic_doc.write_text(
-                            f"# Epic {epic_num}: [Canonical Epic]\n\n"
-                            f"*This epic was installed from canonical framework.*\n"
-                            f"*Template file not found: Epic-{epic_num}-*.md*\n"
-                        )
-                        print(f"  ⚠️  Epic {epic_num} created with placeholder (template not found)")
-            
+                    print(
+                        f"  🔍 [DRY RUN] Would skip Epic {epic_num} — no template "
+                        f"(templates/epics/Epic-{epic_num}-*.md or Epic-{epic_num}/Epic-{epic_num}.md)"
+                    )
+                self.migration_log.append({
+                    "type": "epic",
+                    "action": "dry_run",
+                    "epic_number": epic_num,
+                    "template": str(template_file) if template_file else None,
+                })
+                continue
+
+            epic_dir.mkdir(parents=True, exist_ok=True)
+            epic_doc = epic_dir / f"Epic-{epic_num}.md"
+
+            # Try to copy from template
+            if template_file and template_file.exists():
+                template_content = template_file.read_text(encoding='utf-8')
+                contextualized_content = self._contextualize_template(template_content, project_name)
+                epic_doc.write_text(contextualized_content, encoding='utf-8')
+                template_used = True
+                try:
+                    rel_tpl = template_file.relative_to(templates_root)
+                except ValueError:
+                    rel_tpl = template_file.name
+                print(
+                    f"  ✅ Epic {epic_num} installed from template: {rel_tpl} "
+                    f"→ epics/Epic-{epic_num}/Epic-{epic_num}.md"
+                )
+            else:
+                if not epic_doc.exists():
+                    epic_doc.write_text(
+                        f"# Epic {epic_num}: [Canonical Epic]\n\n"
+                        f"*This epic was installed from canonical framework.*\n"
+                        f"*Template file not found: templates/epics/Epic-{epic_num}-*.md "
+                        f"or templates/Epic-{epic_num}/Epic-{epic_num}.md*\n"
+                    )
+                    print(
+                        f"  ⚠️  Epic {epic_num} created with placeholder (template not found) — "
+                        f"see packages/frameworks/kanban/templates/"
+                    )
+
             self.migration_log.append({
                 "type": "epic",
                 "action": "installed",
