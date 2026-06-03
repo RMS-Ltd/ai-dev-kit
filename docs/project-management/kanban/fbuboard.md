@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (RW **E07:S07:T02** **v0.7.7.2+1**)
-**Version Context:** v0.7.7.2+1 (**SemVer** v0.4.862+1)
+**Last Updated:** 2026-06-03 (RW **E06:S09:T14** **v0.6.9.14+1**)
+**Version Context:** v0.6.9.14+1 (**SemVer** v0.4.863+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -65,9 +65,11 @@ This board provides **centralized visibility and prioritization** for all open F
 
 - **BR-079** – Kanban fresh install: Epic 22/23 placeholders only - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.8+2** — pending verification **#11**) | [IPP-E06S09T08](../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [E06:S09:T08](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | —No IPP— | Last modified: 2026-06-03 17:41 UTC
 
-- **BR-083** – RW install default epic/story patterns mismatch fresh kanban layout - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.12+2** — pending verification **#15**) | [IPP-E06S09T12](../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [E06:S09:T12](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | —No IPP— | Last modified: 2026-06-03 17:45 UTC
+- **BR-085** – RW Mode C story pattern prompt infinite loop after fresh kanban - 🟢 OPEN (MEDIUM, fix **v0.6.9.14+1** — pending ExpensesTracker replay) | Last modified: 2026-06-03 23:00:21 UTC | [BR-085](fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) | [E06:S09:T14](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md) | —No IPP—
 
-- **BR-084** – RW Mode C: missing task_doc_pattern; wrong patterns persisted - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.13+2** — pending verification **#16**) | [IPP-E06S09T13](../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | [E06:S09:T13](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | —No IPP— | Last modified: 2026-06-03 19:18 UTC
+- **BR-083** – RW install default epic/story patterns mismatch fresh kanban layout - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.12+2** — verification failed ExpensesTracker; see **BR-085** **#15**) | [IPP-E06S09T12](../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [E06:S09:T12](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | —No IPP— | Last modified: 2026-06-03 17:45 UTC
+
+- **BR-084** – RW Mode C: missing task_doc_pattern; wrong patterns persisted - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.13+2** — verification failed ExpensesTracker; see **BR-085** **#16**) | [IPP-E06S09T13](../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) | [BR-084](fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) | [E06:S09:T13](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) | —No IPP— | Last modified: 2026-06-03 19:18 UTC
 
 ---
 

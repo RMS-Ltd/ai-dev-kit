@@ -158,9 +158,20 @@ def prompt_yes_no(prompt: str, default: bool = False) -> bool:
     return answer in ('y', 'yes')
 
 
+def placeholder_names_in_pattern(value: str) -> set[str]:
+    """Extract placeholder base names from a pattern (e.g. {story:03d} -> story)."""
+    return {match.group(1) for match in re.finditer(r"\{([^}:]+)(?::[^}]*)?\}", value)}
+
+
 def validate_required_placeholders(value: str, required_placeholders: list[str]) -> list[str]:
     """Return missing placeholders from a pattern value."""
-    return [placeholder for placeholder in required_placeholders if placeholder not in value]
+    names = placeholder_names_in_pattern(value)
+    missing: list[str] = []
+    for placeholder in required_placeholders:
+        base = placeholder.strip("{}").split(":")[0]
+        if base not in names:
+            missing.append(placeholder)
+    return missing
 
 
 def pattern_to_preview_glob(pattern: str) -> str:
@@ -235,6 +246,13 @@ def prompt_pattern_with_validation(
                 for suggestion in suggestion_examples:
                     print(f"    - {suggestion}")
             if strict_zero_match and kanban_root_exists(project_root, kanban_root):
+                # Fresh kanban install creates epics before any Story-*.md files exist.
+                if value == default and not missing:
+                    print(
+                        "  ℹ️  No matching files yet (normal after fresh kanban). "
+                        "Accepting installer-aligned default."
+                    )
+                    return value
                 print(
                     "  ❌ Cannot persist a zero-match pattern while kanban files exist. "
                     "Choose a suggested pattern or enter one that matches files on disk."

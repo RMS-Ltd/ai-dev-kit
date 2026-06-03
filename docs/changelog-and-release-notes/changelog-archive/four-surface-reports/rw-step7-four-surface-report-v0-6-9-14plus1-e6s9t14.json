@@ -1,0 +1,104 @@
+{
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": [
+        "Updated Story-009 checklist: T14 COMPLETE v0.6.9.14+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated kanban-completed.md: E06:S09:T14 entry",
+        "Updated BR-083/BR-084 verification notes",
+        "Updated BR-085 fix version"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 14,
+    "task_id": "E6:S9:T14",
+    "version_string": "v0.6.9.14+1"
+  },
+  "stamp_evidence": {
+    "fbuboard.md": {
+      "BR-085": "2026-06-03 23:00:21 UTC — RW release E06:S09:T14"
+    }
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 2,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "Updated BR-085 status and fix version",
+        "Updated BR-083/BR-084 verification cross-links"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md",
+        "docs/project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md",
+        "docs/project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": [
+        "Added BR-085 row; restored distinct Last modified stamps for BR-083/BR-084"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Updated board metadata v0.6.9.14+1",
+        "Noted T14 release in archive pointer line"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Updated T14: COMPLETE v0.6.9.14+1, Input/Deliverable/Version Anchor"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-03 23:00:21 UTC"
+}

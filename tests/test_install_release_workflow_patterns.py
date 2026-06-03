@@ -24,6 +24,46 @@ def test_validate_required_placeholders_detects_missing_tokens():
     assert missing == ["{story}"]
 
 
+def test_validate_required_placeholders_accepts_formatted_story_token():
+    mod = _load_module()
+    missing = mod.validate_required_placeholders(
+        mod.FRESH_KANBAN_STORY_PATTERN,
+        ["{epic}", "{story}"],
+    )
+    assert missing == []
+
+
+def test_prompt_pattern_accepts_fresh_story_default_with_epic_only_tree():
+    mod = _load_module()
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        kanban = "docs/project-management/kanban"
+        epic1 = root / kanban / "epics" / "Epic-1" / "Epic-1.md"
+        epic1.parent.mkdir(parents=True, exist_ok=True)
+        epic1.write_text("# Epic 1", encoding="utf-8")
+
+        original_prompt = mod.prompt_question
+
+        def _enter_default(prompt, default=None, required=True):
+            return default or ""
+
+        mod.prompt_question = _enter_default
+        try:
+            value = mod.prompt_pattern_with_validation(
+                prompt="Story document pattern",
+                default=mod.FRESH_KANBAN_STORY_PATTERN,
+                project_root=root,
+                kanban_root=kanban,
+                required_placeholders=["{epic}", "{story}"],
+                suggestion_examples=[mod.FRESH_KANBAN_STORY_PATTERN],
+                strict_zero_match=True,
+            )
+        finally:
+            mod.prompt_question = original_prompt
+
+        assert value == mod.FRESH_KANBAN_STORY_PATTERN
+
+
 def test_preview_pattern_matches_finds_files_under_kanban_root():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:

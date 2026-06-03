@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.14+1] - 03-06-26
+
+E06:S09:T14 — RW install story pattern prompt loop (**BR-085**): fix `{story:03d}` placeholder validation and epic-only fresh kanban story default acceptance after kanban `--mode fresh`. SemVer **v0.4.863+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.14+1.md)
+
+---
+
 ## [0.7.7.2+1] - 03-06-26
 
 E07:S07:T02 — CI pytest gate for workflow scripts (review **H1**): GitHub Actions + curated isolated pytest suite (103 tests). SemVer **v0.4.862+1**.
