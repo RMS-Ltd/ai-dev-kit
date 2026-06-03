@@ -26,7 +26,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, Optional
 
-# Install UX version display (FR-108)
+# Install UX version display (UXR-016)
 _WORKFLOW_SCRIPTS = Path(__file__).resolve().parents[2] / "workflow mgt" / "scripts"
 if str(_WORKFLOW_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_WORKFLOW_SCRIPTS))

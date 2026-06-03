@@ -1,5 +1,5 @@
 """
-Bridge to install_ux_version for CLI commands (FR-108).
+Bridge to install_ux_version for CLI commands (UXR-016).
 
 Locates packages/frameworks/workflow mgt/scripts/install_ux_version.py
 relative to the repository root or an installed framework tree.

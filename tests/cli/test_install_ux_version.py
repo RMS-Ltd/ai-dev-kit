@@ -1,5 +1,5 @@
 """
-Tests for install/setup external SemVer display (FR-108 / E06:S09:T15).
+Tests for install/setup external SemVer display (UXR-016 / E06:S09:T15).
 """
 
 from __future__ import annotations

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Install/setup UX version display (FR-108 / E06:S09:T15).
+Install/setup UX version display (UXR-016 / E06:S09:T15).
 
 Resolves AI Dev Kit internal version to external SemVer for interactive
 install and setup feedback. Read-only conversion (finalize=False).

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-04 (RW: E06:S09:T15 **v0.6.9.15+1** — FR-108 install SemVer banners)
-**Version:** v0.6.9.15+1
+**Last Updated:** 2026-06-03 (RW -d: E06:S09:T15 **v0.6.9.15+2** — UXR-016 reclassification docs)
+**Version:** v0.6.9.15+2
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 *(No Must Have tasks — 2026-06-03 UKW archived **E08:S03:T05**, **E08:S03:T06** → [kanban-completed.md](kanban-completed.md); **FR-104**, **FR-105**, **BR-077** → [fbu-completed.md](fbu-completed.md).)*
 
-*(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). **E06:S09** installer tasks **T07–T15** archived → [kanban-completed.md](kanban-completed.md). **E07:S07:T01** archived **v0.7.7.1+1**. **E02:S13:T08** archived **v0.2.13.8+2**. **E07:S07:T02** released **v0.7.7.2+1** — CI pytest gate H1. **E06:S09:T15** **v0.6.9.15+1** — FR-108 install SemVer banners.)*
+*(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). **E06:S09** installer tasks **T07–T15** archived → [kanban-completed.md](kanban-completed.md). **E07:S07:T01** archived **v0.7.7.1+1**. **E02:S13:T08** archived **v0.2.13.8+2**. **E07:S07:T02** released **v0.7.7.2+1** — CI pytest gate H1. **E06:S09:T15** **v0.6.9.15+1** — UXR-016 install SemVer banners.)*
 
 ### Should Have (S) - Important Tasks
 

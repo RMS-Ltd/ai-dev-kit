@@ -46,7 +46,7 @@ After installation, run:
 adk logs prepare-feedback-payload
 ```
 
-The command prints the **AI Dev Kit SemVer** banner (same as install) and packages install telemetry. The payload `context.adk_semver` field matches the version shown during install (FR-108).
+The command prints the **AI Dev Kit SemVer** banner (same as install) and packages install telemetry. The payload `context.adk_semver` field matches the version shown during install (UXR-016).
 
 This will guide you through a structured feedback form covering:
 - Installation experience

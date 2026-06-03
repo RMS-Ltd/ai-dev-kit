@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T15 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T15-install-setup-interactive-feedback-external-semver-fr108.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-fr108.md) **(E06:S09:T15)**  
-**Planning for:** [FR-108](../project-management/kanban/fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md)  
+**Host Task:** [`T15-install-setup-interactive-feedback-external-semver-uxr016.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md) **(E06:S09:T15)**  
+**Planning for:** [UXR-016](../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) *(reclassified from FR-108)*  
 **Status:** Approved
 
 ---
@@ -20,19 +20,19 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF1 | Install/setup version banner contract — external SemVer at session start | FR-108-F1 |
-| RF2 | CLI + framework installer entry points | FR-108-F2 |
-| RF3 | SemVer on interactive headers/prompts/warnings | FR-108-F3 |
-| RF4 | Authoritative resolution + unknown fallback | FR-108-F4 |
-| RF5 | Align stdout with install events + feedback payload | FR-108-F5 |
+| RF1 | Install/setup version banner contract — external SemVer at session start | UXR-016-R1 |
+| RF2 | CLI + framework installer entry points | UXR-016-R2 |
+| RF3 | SemVer on interactive headers/prompts/warnings | UXR-016-R3 |
+| RF4 | Authoritative resolution + unknown fallback | UXR-016-R4 |
+| RF5 | Align stdout with install events + feedback payload | UXR-016-R5 |
 
 ### 1.2 Non-functional requirements
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RNF1 | Per-run cache; no network | FR-108-NF1 |
-| RNF2 | Compact `AI Dev Kit v{semver}` label | FR-108-NF2 |
-| RNF3 | No unconverted internal as SemVer | FR-108-NF3 |
+| RNF1 | Per-run cache; no network | UXR-016-NF1 |
+| RNF2 | Compact `AI Dev Kit v{semver}` label | UXR-016-NF2 |
+| RNF3 | No unconverted internal as SemVer | UXR-016-NF3 |
 
 ### 1.3 Invariants and boundaries
 
@@ -65,10 +65,10 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 
 | ID | Y/N | Evidence |
 | -- | --- | -------- |
-| T1 | N | FR-108 prescribes approach |
+| T1 | N | UXR-016 prescribes approach |
 | T2 | N | Revertible in one PR |
 | T3 | N | Install UX only |
-| T4 | N | FR-108 + IPP authoritative |
+| T4 | N | UXR-016 + IPP authoritative |
 | T5 | N | No policy trade-off |
 | T6 | N | No gate changes |
 | T7 | N | Complements FR-078/079 |
@@ -103,7 +103,7 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 | 3 | Wire CLI commands + framework installers |
 | 4 | Extend `create_install_logger` + feedback payload |
 | 5 | Tests T1–T8 |
-| 6 | Docs (INSTALL, feedback guide, FR-108) |
+| 6 | Docs (INSTALL, feedback guide, UXR-016) |
 | **N** | Status reconcile + **RW E06:S09:T15** |
 
 ### 4.1 Files
@@ -120,7 +120,7 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 | D-U1 | INSTALL_IN_YOUR_PROJECT.md | UPDATE |
 | D-U2 | docs/guides/framework-consumption/adk-feedback-guide.md | UPDATE |
 | D-U3 | T15 task doc | UPDATE |
-| D-U4 | FR-108 | UPDATE |
+| D-U4 | UXR-016 | UPDATE |
 
 ---
 
@@ -136,7 +136,7 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 
 ## 7. Success / verification criteria
 
-- [ ] FR-108 AC1–AC6 evidenced
+- [ ] UXR-016 AC1–AC6 evidenced
 - [ ] Tests pass
 - [ ] RW E06:S09:T15 complete
 
@@ -144,5 +144,5 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 
 ## References
 
-- [FR-108](../project-management/kanban/fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md)
+- [UXR-016](../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 - [semver_converter.py](../../packages/frameworks/workflow%20mgt/scripts/version/semver_converter.py)

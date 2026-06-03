@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-04 (v0.6.9.15+1 – T15 complete: FR-108 install SemVer banners)
-**Version:** v0.6.9.15+1
+**Last updated:** 2026-06-03 (v0.6.9.15+2 – T15 reclassification docs: FR-108 → UXR-016)
+**Version:** v0.6.9.15+2
 **Code:** E6S09
 
 ---
@@ -58,7 +58,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T14 – RW install story pattern prompt loop (BR-085)** - ✅ COMPLETE (v0.6.9.14+2 — fix **+1**, ExpensesTracker verification **+2**) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md) | [BR-085](../../fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
 
-- [ ] **E06:S09:T15 – Install/setup interactive feedback external SemVer (FR-108)** - ✅ COMPLETE (v0.6.9.15+1) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-fr108.md) | [FR-108](../../fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md) | [IPP-E06S09T15](../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
+- [x] **E06:S09:T15 – Install/setup interactive feedback external SemVer (UXR-016)** - ✅ COMPLETE (v0.6.9.15+1) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md) | [UXR-016](../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) | [IPP-E06S09T15](../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 
 ---
 

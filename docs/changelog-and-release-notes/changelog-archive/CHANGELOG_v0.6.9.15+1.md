@@ -62,5 +62,11 @@ Change implemented: all install and setup entry points display the **external Se
 
 ## References
 
-- [FR-108](../../project-management/kanban/fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md)
+- [UXR-016](../../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) *(reclassified from FR-108 post-release)*
 - [IPP-E06S09T15](../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
+
+---
+
+## Post-release reclassification (2026-06-04)
+
+Requirement retyped **FR-108 → UXR-016** (install/setup UX research, not feature contract). FR-108 deleted to free id; task **E06:S09:T15** unchanged.

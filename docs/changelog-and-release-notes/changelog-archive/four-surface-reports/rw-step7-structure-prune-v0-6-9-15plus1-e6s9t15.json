@@ -5,14 +5,15 @@
     "version_string": "v0.6.9.15+1"
   },
   "rows": {
-    "FR-108": {
+    "UXR-016": {
       "allowed": true,
-      "reason": "IMPLEMENTED v0.6.9.15+1 — archived to fbu-completed.md"
+      "reason": "COMPLETE v0.6.9.15+1 — archived to fbu-completed.md (reclassified from FR-108)"
     },
     "E06:S09:T15": {
       "allowed": true,
       "reason": "COMPLETE v0.6.9.15+1 — archived to kanban-completed.md"
     }
   },
-  "timestamp_utc": "2026-06-04 12:00:00 UTC"
+  "timestamp_utc": "2026-06-04 12:00:00 UTC",
+  "reclassification_note": "2026-06-04: FR-108 deleted; UXR-016 is canonical FBU id"
 }

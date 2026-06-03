@@ -9,9 +9,17 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.15+2] - 04-06-26
+
+E06:S09:T15 — **Docs-only:** FR-108 → **UXR-016** reclassification — deleted FR-108, rewired kanban/planning/forensics and traceability comments (no functional install changes). SemVer **v0.4.866+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.15+2.md)
+
+---
+
 ## [0.6.9.15+1] - 04-06-26
 
-E06:S09:T15 — Install/setup interactive feedback shows external SemVer (**FR-108**): shared `install_ux_version` resolver, CLI + framework installer banners, install log and feedback payload fields. SemVer **v0.4.865+1**.
+E06:S09:T15 — Install/setup interactive feedback shows external SemVer (**UXR-016**; reclassified from FR-108): shared `install_ux_version` resolver, CLI + framework installer banners, install log and feedback payload fields. SemVer **v0.4.865+1**.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.15+1.md)
 

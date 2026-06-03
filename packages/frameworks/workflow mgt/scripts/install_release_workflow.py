@@ -26,7 +26,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-# Install UX version display (FR-108)
+# Install UX version display (UXR-016)
 try:
     from install_ux_version import print_section_header, print_session_banner
 except ImportError:

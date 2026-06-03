@@ -6,18 +6,18 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 6, Story 9, Task 15: Install/setup interactive feedback external SemVer (FR-108)
+# Epic 6, Story 9, Task 15: Install/setup interactive feedback external SemVer (UXR-016)
 
 **Task ID:** E06:S09:T15  
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-04  
-**Last updated:** 2026-06-04 (v0.6.9.15+1 — FR-108 implemented)  
+**Last updated:** 2026-06-03 (v0.6.9.15+2 — UXR-016 reclassification docs; implementation v0.6.9.15+1)  
 **Code:** E06S09T15
 
-**Version Anchor:** v0.6.9.15+1
+**Version Anchor:** v0.6.9.15+2
 
-**Upstream:** [FR-108](../../../fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md)
+**Upstream:** [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 
 ---
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Implement [FR-108](../../../fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md): all install and setup **interactive user-facing feedback** must display the **external SemVer** of AI Dev Kit in use (the same outward-facing version shown in README and GitHub releases).
+Implement [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md): all install and setup **interactive user-facing feedback** must display the **external SemVer** of AI Dev Kit in use (the same outward-facing version shown in README and GitHub releases).
 
 Covers CLI install/setup commands, framework installers, and greenfield orchestration entry points—not RW/UKW runtime workflows.
 
@@ -37,7 +37,7 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 ## Input
 
-- [FR-108](../../../fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md) requirements and acceptance criteria
+- [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) research findings, recommendations, and acceptance criteria
 - Existing version sources: `src/fynd_deals/version.py`, `cli/__init__.py`, `semver_converter.py`
 - Install event contract from FR-078 (align displayed SemVer with logged fields)
 - **IPW planning artifact:** [IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
@@ -55,12 +55,12 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 ## Acceptance Criteria
 
-- [x] **AC1:** Every documented install entry point prints external SemVer at session start (FR-108 AC1).
-- [x] **AC2:** Automated test coverage per major entry point (FR-108 AC2).
-- [x] **AC3:** RW installer interactive sections show SemVer on headers and completion (FR-108 AC3).
-- [x] **AC4:** Kanban installer interactive path shows SemVer on equivalent banners (FR-108 AC4).
-- [x] **AC5:** Explicit fallback when SemVer cannot be resolved (FR-108 AC5).
-- [x] **AC6:** Displayed SemVer matches install event / feedback payload for the same run (FR-108 AC6).
+- [x] **AC1:** Every documented install entry point prints external SemVer at session start (UXR-016 AC1).
+- [x] **AC2:** Automated test coverage per major entry point (UXR-016 AC2).
+- [x] **AC3:** RW installer interactive sections show SemVer on headers and completion (UXR-016 AC3).
+- [x] **AC4:** Kanban installer interactive path shows SemVer on equivalent banners (UXR-016 AC4).
+- [x] **AC5:** Explicit fallback when SemVer cannot be resolved (UXR-016 AC5).
+- [x] **AC6:** Displayed SemVer matches install event / feedback payload for the same run (UXR-016 AC6).
 
 ---
 
@@ -90,9 +90,9 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 ## Related Work
 
-**Related BR/FR Links:**
+**Related BR/FR/UXR Links:**
 
-- [FR-108: Install/setup interactive feedback external SemVer](../../../fr-br/FR-108-install-setup-interactive-feedback-external-semver-version.md) — **Implements** — primary requirement source
+- [UXR-016: Install/setup interactive feedback external SemVer](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) — **Implements** — primary UXR source (reclassified from deleted FR-108)
 - [FR-080: Greenfield installation process](../../../fr-br/FR-080-greenfield-installation-process.md) — **Related To** — greenfield entry points in scope
 - [FR-078: Install event contract logging](../../../fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md) — **Complements** — align human-visible and logged SemVer
 - [FR-079: Install feedback submission](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) — **Complements** — feedback UX should match install banners
@@ -105,12 +105,13 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 ## Version Anchor
 
-**Version:** v0.6.9.15+1 — ✅ COMPLETE (v0.6.9.15+1)
+**Version:** v0.6.9.15+2 — ✅ COMPLETE (implementation v0.6.9.15+1; reclassification docs v0.6.9.15+2)
 
 ---
 
 ## References
 
+- [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 - [IPP-E06S09T15 — Install/setup external SemVer display](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 - [dev-kit-versioning-policy.md](../../../../../governance/standards/dev-kit-versioning-policy.md)
 - [`semver_converter.py`](../../../../../../packages/frameworks/workflow%20mgt/scripts/version/semver_converter.py)
