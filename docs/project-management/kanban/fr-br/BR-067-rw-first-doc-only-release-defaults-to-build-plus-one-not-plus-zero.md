@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Bug Report BR-067: RW first doc-only release defaults to BUILD+1 instead of BUILD+0 (doc-init policy)
 
-**Status:** IN PROGRESS (mitigation + policy/docs alignment shipped; pending maintainer verification before RESOLVED)
+**Status:** RESOLVED (Tranche 3 verification 2026-06-03 — R1–R5 regression PASS; policy + `--doc-policy-zero` shipped Tranche 2)
 **Priority:** HIGH  
 **Severity:** HIGH — breaks canonical **doc-init (+0)** semantics for task/story/intake drops; produces incorrect forensic/version signal for documentation-first work.  
 **Created:** 2026-04-19  
-**Last updated:** 2026-05-30 (IPP E02:S16:T03 Tranche 2 — BUILD +0/+1 policy table, RW docs, BR-010 regression checklist)  
-**Version:** v0.2.16.3+0 (released **2026-05-30**; mitigation + policy/docs alignment shipped; pending maintainer verification before RESOLVED)
+**Last updated:** 2026-06-03 (IPP E02:S16:T03 Tranche 3 — BR-010 R1–R5 regression re-run; pytest 15/15 PASS)  
+**Version:** v0.2.16.3+0 (policy/docs Tranche 2); closure evidence under Tranche 3 RW
 **Code:** BR-067  
 
 **Implementing Task:** [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
@@ -97,6 +97,18 @@ Re-verify after any change to doc-init detection or `--doc-policy-zero`:
 | R5 | Perpetual same-task release (E2:S16:T03/T04) | **BUILD > HEAD** | Unchanged BUILD ([BR-075](./BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
 
 **Test command:** `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x`
+
+### Tranche 3 regression run (2026-06-03)
+
+| # | Result | Evidence |
+| - | ------ | -------- |
+| R1 | PASS | `test_validate_version_bump` suite — batch story/task doc-init blocked (+1 path) |
+| R2 | PASS | Same-task docs-only without `--doc-policy-zero` requires increment |
+| R3 | PASS | `test_validate_version_bump_doc_policy_zero_allows_existing_t103_build_zero` |
+| R4 | PASS | First-time doc-init detection tests in suite |
+| R5 | PASS | `validate_perpetual_build_increment` / perpetual BUILD > HEAD paths in suite |
+
+**Command:** `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x` → **15 passed**, 0 failed (2026-06-03).
 
 ---
 

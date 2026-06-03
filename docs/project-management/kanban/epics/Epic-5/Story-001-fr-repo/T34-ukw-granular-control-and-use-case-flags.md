@@ -182,7 +182,7 @@ Add granular control to UKW (Update Kanban Workflow) via use case flags and flex
 
 **Related Tasks:**
 - [E06:S00:T33: UKW Board Disorganization](../../Epic-6/Story-000-br-repo/T33-ukw-board-disorganization.md) - Related bug fix
-- [E02:S16:T03: Update Kanban Workflow (UKW)](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) - Perpetual task
+- [E02:S16:T03: Update Kanban Workflow (UKW)](../../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) - Perpetual task
 
 **Related Stories:**
 - [E5:S01: FR Repo](../Story-001-fr-repo.md) - Repository story

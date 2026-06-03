@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.13+1] - 03-06-26
+## [0.2.16.3+2] - 03-06-26
 
-E02:S16:T13 — BR-059: UKW Step 6 Part B.1 story-checklist MoSCOW enumeration, advisory gap validator, IPP. SemVer **v0.4.845+1**.
+E02:S16:T03 — IPP Tranche 3: BR-067 RESOLVED (R1–R5 PASS), active kanban link hygiene (15 files), AC4 PARTIAL until T02. SemVer **v0.4.846+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.13+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+2.md)
 
 ---

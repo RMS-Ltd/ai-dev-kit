@@ -95,7 +95,7 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 - [FR-027](FR-027-add-cmw-to-workflow-management-package-documentation.md) — CMW package documentation (COMPLETE).
 - [FR-025](FR-025-changelog-management-and-archival-workflow.md) — Changelog management / archival workflow.
 - **Epic 5:** [`Epic-5.md`](../epics/Epic-5/Epic-5.md) — branch `epic/5-documentation-management`.
-- **Perpetual CMW task:** [E02:S16:T03](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — reconcile with E5 execution rule.
+- **Perpetual CMW task:** [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — reconcile with E5 execution rule.
 - **Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`, `cmw-config.yaml`.
 
 ---

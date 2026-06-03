@@ -1,26 +1,26 @@
-# Detailed Changelog — v0.2.16.3+2
+# Changelog v0.2.16.3+2
 
-**Release date:** 20-04-26  
-**Task:** E2:S16:T03  
-**Mode:** RW -d with `--art`  
-**SemVer:** v0.4.764+2
+**Release Date:** 2026-06-03 12:00:00 UTC  
+**Epic | Story | Task:** E2 | S16 | T3 (`RW E02:S16:T03 --art`, BUILD +2)
 
 ## Summary
 
-Completed full repository-wide rewire away from legacy perpetual task anchors (`E6:S07:T101/T102/T103`) to Story 016 migration ownership and removed the old task documents.
+IPP **E02:S16:T03** Tranche 3 — BR-067 **RESOLVED** (R1–R5 regression PASS), active kanban link hygiene (15 files: `Epic-6/Story-007` → Story-016 T03/T04), IPP §2.5/§4.4/§5–§7 Tranche 3. AC4 remains PARTIAL until T02 (3B deferred).
 
-## Included
+## Changes
 
-- Deleted legacy task docs:
-  - `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T101-update-kanban-workflow-ukw.md`
-  - `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T102-changelog-maintenance-workflow-cmw.md`
-  - `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T103-release-workflow-maintenance-perpetual-task.md`
-- Rewired references across kanban docs, FR/BR docs, policies, workflow docs, and changelog archive from legacy T101/T102/T103 anchors to Story 016 migration anchors (`E2:S16:T03`).
+### Attempted resolution
+
+- **BR-067** — Maintainer verification: `pytest test_validate_version_bump.py -x` → 15 passed; regression matrix R1–R5 documented PASS.
+- **Link hygiene** — FR/BR/epic kanban paths corrected to `Epic-2/Story-016-perpetual-ongoing-workflow-operations/` (UKW → T04, umbrella → T03).
+- **IPP-E02S16T03** — Tranche 3 planning sections (§2.5 ADR EXEMPT, §4.4, §5–§7).
+- **Boards** — `kboard.md` / `fbuboard.md` T03 and BR-067 rows synced.
+
+### Documentation
+
+- T03 task doc — Tranche 3 Verification Evidence; AC4 PARTIAL note for 3B/T02 gate.
 
 ## Verification
 
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --requested "E2:S16:T03" --art` ✅
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py" --requested "E2:S16:T03"` ✅
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py" --requested "E2:S16:T03" --art` ✅
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --strict --requested "E2:S16:T03" --art` ✅
-- `rg "E6:S07:T101|E6:S07:T102|E6:S07:T103" /Users/rms/Documents/projects/ai-dev-kit` → no matches ✅
+- `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x` — PASS
+- RW Step 9 validators (post-commit)

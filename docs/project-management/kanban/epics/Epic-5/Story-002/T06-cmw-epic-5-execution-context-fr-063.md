@@ -39,7 +39,7 @@ Implement [FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md): **doc
 - **`cmw.py` (or helper):** blocking precondition for standalone runs; **opt-out / flag** for RW Step 9.5 caller.
 - **`rw-config.yaml` / `cmw-config`:** configurable required epic and branch pattern; documented adopter overrides.
 
-**Coordinates with:** [E02:S16:T03](../../../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (perpetual CMW maintenance — reconcile messaging in docs).
+**Coordinates with:** [E02:S16:T03](../../../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (perpetual CMW maintenance — reconcile messaging in docs).
 
 ---
 
@@ -84,4 +84,4 @@ Implement [FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md): **doc
 ## References
 
 - **FR-063:** [FR-063-cmw-epic-5-execution-context.md](../../../fr-br/FR-063-cmw-epic-5-execution-context.md)
-- **CMW perpetual task:** [T102 — CMW](../../../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- **CMW perpetual task:** [T102 — CMW](../../../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)

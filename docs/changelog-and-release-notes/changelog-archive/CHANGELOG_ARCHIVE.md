@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.2.16.3+2] - 03-06-26
+
+E02:S16:T03 — IPP Tranche 3: BR-067 RESOLVED, link hygiene, AC4 PARTIAL until T02. SemVer **v0.4.846+2**.
+
+[Detailed changelog](CHANGELOG_v0.2.16.3+2.md)
+---
 ## [0.2.16.13+1] - 03-06-26
 
 E02:S16:T13 — BR-059 UKW Step 6 Part B.1 + story MoSCOW coverage validator. SemVer **v0.4.845+1**.

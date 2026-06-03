@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) **(E2:S16:T03)**
 **Planning for:** FR-088 — Dedicated story for perpetual ongoing tasks
-**Status:** Published (Tranche 1 delivered per T03 task doc and changelog `v0.2.16.3+5`; rolling maintenance in §6)
+**Status:** Published (Tranche 1–2 delivered; Tranche 3 planning 2026-06-03 — BR-067 closure + active link hygiene)
 
 ---
 
@@ -86,6 +86,29 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 - **Atomic propagation:** Task doc `Last updated` + evidence sections + kboard row + Story-016 checklist stay aligned in the same change set as the underlying work.
 - **Owner:** Implementation execution step (RW attribution under T03).
 
+### 2.5 ADR necessity decision (Tranche 3 — IPW Phase 5.0)
+
+| ID | Trigger | Y/N | Evidence |
+| -- | ------- | --- | -------- |
+| T1 | Alternatives | N | Follow T02 map + IPP-E02S16T01 when 3B runs |
+| T2 | Reversibility | N | Doc/link edits revert in one PR |
+| T3 | Blast radius | N | Scoped to kanban/governance (3A); 3B bounded by T02 |
+| T4 | Precedent | N | Executes FR-088 / IPP-E02S16T01 precedent |
+| T5 | Constraint trade-off | N | BR-067 policy already decided in Tranche 2 |
+| T6 | Governance contract | N | No RW/IPW gate changes in Tranche 3 |
+| T7 | Supersedes | N | Aligns with existing ADRs/policies |
+
+**Outcome:** **EXEMPT** — governing docs: [dev-kit-versioning-policy.md](../architecture/standards-and-adrs/dev-kit-versioning-policy.md) §6.1.1; [IPP-E02S16T01](IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md) §2.6 guardrails (E1–E5 pass).
+
+### 1.4 Tranche 3 functional requirements (additive)
+
+| ID | Requirement | Source |
+| -- | ----------- | ------ |
+| RF-T3-1 | Close BR-067 after R1–R5 regression evidence | BR-067 |
+| RF-T3-2 | AC4 full satisfaction only after T02 reference map (3B) | T03 AC4; T02 |
+| RF-T3-3 | Active-surface link hygiene (kanban, open FR/BR) | IPP rolling backlog |
+| RF-T3-4 | Host task remains `IN PROGRESS` (perpetual) | IPP-E02S16T01 |
+
 ---
 
 ## 3. Test design
@@ -99,6 +122,16 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 | T5 | Full test suite regression | `pytest packages/frameworks/workflow\ mgt/scripts/validation/test_validate_version_bump.py -x` exits 0. |
 | T6 | Perpetual guardrails live validation | `python validate_version_bump.py --strict --requested E2:S16:T03 --art` exits 0 for T03. |
 | T7 | Legacy draft redirect | All inbound links to `IPW-E6S07T103` resolve to T03 or deprecation notice. |
+
+### 3.1 Tranche 3 test design
+
+| ID | Behavior / layer | Expected check |
+| -- | ---------------- | -------------- |
+| T-T3-1 | Unit | `pytest test_validate_version_bump.py -x` → 0 exit |
+| T-T3-2 | Integration | BR-067 R1–R5 matrix documented PASS in BR-067 + T03 |
+| T-T3-3 | Integration | Perpetual RW: `validate_version_bump.py --strict --requested E02:S16:T03 --art` after Step 2 bump |
+| T-T3-4 | Structural | Active kanban: no stale `Epic-6/Story-007/.../T03` for perpetual routing |
+| T-T3-5 | Structural (3B) | T02-gated exhaustive migration — deferred until T02 AC1–AC5 |
 
 ---
 
@@ -267,30 +300,82 @@ This section prescribes the exact changes for each document. Implementation must
 6. Steps 10–11 (Story/kboard) depend on Step 7.
 7. Step 12 (status reconciliation) is last.
 
----
+### 4.4 Tranche 3 implementation plan
 
-## 5. Success / verification criteria
-
-Tranche 1 outcomes (verified 2026-05-20 against host task doc and [`CHANGELOG_v0.2.16.3+5.md`](../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+5.md)):
-
-- [x] `pytest test_validate_version_bump.py -x` exits 0 (14/14 pass).
-- [x] `python validate_version_bump.py --strict --requested E2:S16:T03 --art` exits 0.
-- [x] T03 task doc AC1–AC3 marked COMPLETE with Wave 2/3 evidence.
-- [x] T03 task doc AC4 reflects PARTIAL with T02 dependency noted (AC4 exhaustive migration remains open until T02 delivers).
-- [x] T03 task doc AC5 includes validator command + test output as evidence.
-- [x] Legacy `IPW-E6S07T103` carries deprecation banner and T03 redirect ([`IPW-E6S07T103-release-workflow-maintenance-perpetual.md`](./IPW-E6S07T103-release-workflow-maintenance-perpetual.md)).
-- [x] Story-016 and kboard T03 rows are consistent with task doc (as of Tranche 1 release).
-- [x] No new dangling links introduced (Tranche 1 scope).
+| Step | Action | Deliverable |
+| ---- | ------ | ----------- |
+| **1** | **[MANDATORY]** Confirm `E02:S16:T03` **`IN PROGRESS`**; refresh `Last updated`. | Task doc |
+| **2** | Run BR-067 R1–R5 regression; record in BR-067 + T03 Verification Evidence. | Evidence table |
+| **3** | Set BR-067 **RESOLVED**; sync kboard/fbuboard rows. | Boards |
+| **4** | Fix active kanban/FR/BR stale `Epic-6/Story-007` T03 paths → Story-016 T03/T04. | Link hygiene |
+| **5** | **3B (T02-gated):** When T02 delivers reference map, exhaustive migration + AC4 `[x]`. | Deferred |
+| **6** | Update IPP §7 Tranche 3 checkboxes. | IPP current |
+| **7** | **`RW E02:S16:T03 --art`** — ship + Step 7 four-surface sync. | Release |
+| **8** | **[MANDATORY]** Reconcile T03: **`IN PROGRESS`**; AC4 `[~] PARTIAL` until 3B; evidence current. | Task doc |
 
 ---
 
-## 6. Rolling backlog (Tranche 2)
+## 5. Documentation deliverables
 
-Planning targets for ongoing work under **E2:S16:T03** without rewriting §1–§4 above:
+### 5.1 Existing documents to update
 
-- **AC4 closure path:** When [E2:S16:T02](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) delivers inventory, disposition, `T101+` mapping, and reference map (T02 AC1–AC5), execute exhaustive reference migration and re-verify boards/policies; then tighten AC4 from PARTIAL to satisfied with evidence.
-- **BR-067 / RW doc-only BUILD:** Align default RW Step 2 / `validate_version_bump.py` behavior with policy doc-init **+0** on an existing E/S/T when intended; track on [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) and [`fbuboard.md`](../project-management/kanban/fbuboard.md) active row until resolved.
-- **Cross-surface hygiene:** Re-run link/board consistency after large kanban or FR/BR moves; prefer scoped RW Step 7 + UKW for drift rather than ad-hoc edits.
+| Doc ID | Path | Action | Tied to |
+| ------ | ---- | ------ | ------- |
+| D1 | `docs/implementation-cycles/IPP-E02S16T03-rehouse-workflow-perpetual-tasks.md` | UPDATE | Tranche 3 |
+| D2 | T03 task doc | UPDATE | BR-067; 3A hygiene |
+| D3 | `fr-br/BR-067-*.md` | UPDATE | RESOLVED |
+| D4 | `kboard.md`, `fbuboard.md` | UPDATE | Rows |
+| D5 | Story-016 doc | UPDATE | Checklist |
+| D6 | Active kanban FR/BR/epic subset | UPDATE | RF-T3-3 |
+
+### 5.2 New documents to create
+
+None.
+
+### 5.3 Documentation gaps and explicit non-changes
+
+| Gap / topic | Resolution |
+| ----------- | ---------- |
+| Exhaustive `T101+` migration | Deferred — T02 (3B) |
+| Changelog archive | NONE — historical |
+| New ADR | NONE — §2.5 EXEMPT |
+
+---
+
+## 6. Documentation housing
+
+| Doc ID | Canonical path | Publication status |
+| ------ | -------------- | ------------------ |
+| D1 | `docs/implementation-cycles/IPP-E02S16T03-rehouse-workflow-perpetual-tasks.md` | PUBLISHED |
+| D2–D6 | `docs/project-management/kanban/...` | PUBLISHED |
+| Workflow KB | `release-workflow-agent-execution.md` | PUBLISHED (Tranche 2) |
+| Portal | — | NOT_APPLICABLE |
+
+---
+
+## 7. Success / verification criteria
+
+### Tranche 1 (verified 2026-05-20)
+
+- [x] `pytest test_validate_version_bump.py -x` exits 0.
+- [x] T03 AC1–AC3, AC5 with Wave 2/3 evidence; AC4 PARTIAL (T02).
+- [x] Legacy `IPW-E6S07T103` deprecated with T03 redirect.
+
+### Tranche 2 (verified 2026-05-30 — `v0.2.16.3+0`)
+
+- [x] BR-067 policy table + `--doc-policy-zero` docs shipped.
+
+### Tranche 3 (2026-06-03 — v0.2.16.3+2)
+
+- [x] BR-067 R1–R5 regression recorded; BR-067 **RESOLVED**.
+- [x] Active kanban stale perpetual links fixed (3A — 15 files).
+- [x] T03 Tranche 3 Verification Evidence added.
+- [x] AC4 `[~] PARTIAL` until T02 (3B deferred).
+- [x] `RW E02:S16:T03 --art` + Step 7 four-surface report.
+
+### Tranche 3B backlog (T02-gated)
+
+When [T02](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) AC1–AC5 complete: apply reference map, mark AC4 `[x]` with migration counts.
 
 ---
 

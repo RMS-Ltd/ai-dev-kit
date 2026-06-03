@@ -34,7 +34,7 @@ Define and implement a **parity discipline**: checklist doc, merge procedure, or
 
 - Current `.cursorrules` RW block.
 - `cursorrules-rw-trigger-section.md` full trigger + step list.
-- [E02:S16:T03](../../Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (RW maintenance perpetual) for ownership overlap.
+- [E02:S16:T03](../../Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (RW maintenance perpetual) for ownership overlap.
 
 ---
 
