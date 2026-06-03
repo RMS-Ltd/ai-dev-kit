@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management
-VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
-VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban synchronization (UKW perpetual)
-VERSION_BUILD = 25    # Build 25: UKW archive T05/T06, BR-066, FR-104/105/077
+VERSION_EPIC = 6      # Epic 6 — Framework Management
+VERSION_STORY = 9     # Story 9 — AI Dev Kit installation and adopter integration
+VERSION_TASK = 7      # Task 7 — BR-078 structure template missing (kanban init)
+VERSION_BUILD = 1     # Build 1: GitHub #10 intake + board wiring (RW -k --art)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.4+25
+# Current: 0.6.9.7+1

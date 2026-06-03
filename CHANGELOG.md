@@ -9,10 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+25] - 03-06-26
+## [0.6.9.7+1] - 03-06-26
 
-E02:S16:T04 — UKW comprehensive sync: archive E08:S03:T05/T06 and terminal BR-066, FR-104, FR-105, BR-077 to ledgers. SemVer **v0.4.854+25**.
+E06:S09:T07 — Kanban init: BR-078 intake (GitHub #10) — structure template missing on fresh install; boards + task wiring. SemVer **v0.4.854+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+25.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.7+1.md)
 
 ---

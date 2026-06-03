@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 009 – AI Dev Kit installation and adopter integration
 
-**Status:** COMPLETE
+**Status:** IN PROGRESS
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-05-29 (RW **v0.6.9.2+3** — **E06:S09:T02** forensic sync; story **E6:S09** complete)
-**Version:** v0.6.9.6+3
+**Last updated:** 2026-06-03 (v0.6.9.7+1 – Kanban documentation setup)
+**Version:** v0.6.9.7+1
 **Code:** E6S09
 
 ---
@@ -41,6 +41,18 @@ housekeeping_policy: keep
 - [x] **E06:S09:T06 – ECC harness phases 2–5 (FR-098)** — ✅ COMPLETE (HIGH — **v0.6.9.6+3** phases 2–5 + dogfood T8)
   - Task: [`T06-ecc-harness-phases-2-5-fr098.md`](Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) | [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
   - IPP: [`IPP-E06S09T06`](../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md)
+
+- [ ] **E06:S09:T07 – Kanban fresh install structure template missing (BR-078)** - TODO (MEDIUM) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | [BR-078](../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)
+
+- [ ] **E06:S09:T08 – Kanban fresh install Epic 22/23 templates (BR-079)** - TODO (MEDIUM) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | [BR-079](../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)
+
+- [ ] **E06:S09:T09 – Kanban fresh mode validation on empty repo (BR-080)** - TODO (HIGH) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [#12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)
+
+- [ ] **E06:S09:T10 – Kanban install `utcnow()` deprecation (BR-081)** - TODO (LOW) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [BR-081](../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
+
+- [ ] **E06:S09:T11 – RW install PyYAML preflight (BR-082)** - TODO (HIGH) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | [BR-082](../../fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [#14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)
+
+- [ ] **E06:S09:T12 – RW install rw-config pattern defaults (BR-083)** - TODO (MEDIUM) — [Task](Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | [BR-083](../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)
 
 ---
 

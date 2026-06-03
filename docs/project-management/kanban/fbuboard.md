@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-03 (UKW comprehensive — archive terminal M/S FBUs)
+**Last Updated:** 2026-06-03 (intake **BR-078–BR-083** — GitHub #10–#15 → Should/Could MoSCOW)
 **Version Context:** v0.2.16.4+25 (**SemVer** v0.4.854+25)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
@@ -49,7 +49,17 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Should Have (S) - Important Items
 
-*(No Should Have FBU items — 2026-06-03 UKW archived **BR-066** **RESOLVED** **v0.2.15.1+3** → [fbu-completed.md](fbu-completed.md).)*
+**2026-06-03:** Intake from GitHub issues **#10–#15** (book dry-run / ExpensesTracker T03) → **E06:S09:T07–T12**.
+
+- **BR-080** – Kanban fresh mode validation fails without `--force` on empty repo - 🟢 OPEN (HIGH, greenfield blocker **#12**) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [E06:S09:T09](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | —No IPP— | Last modified: 2026-06-03 17:42 UTC
+
+- **BR-082** – RW install fails without venv PyYAML; no preflight hint - 🟢 OPEN (HIGH, greenfield blocker **#14**) | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [E06:S09:T11](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | —No IPP— | Last modified: 2026-06-03 17:44 UTC
+
+- **BR-078** – Kanban fresh install: structure template not found - 🟢 OPEN (MEDIUM, **#10**) | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [E06:S09:T07](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) | —No IPP— | Last modified: 2026-06-03 17:40 UTC
+
+- **BR-079** – Kanban fresh install: Epic 22/23 placeholders only - 🟢 OPEN (MEDIUM, **#11**) | [BR-079](fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) | [E06:S09:T08](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) | —No IPP— | Last modified: 2026-06-03 17:41 UTC
+
+- **BR-083** – RW install default epic/story patterns mismatch fresh kanban layout - 🟢 OPEN (MEDIUM, **#15**) | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) | [E06:S09:T12](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) | —No IPP— | Last modified: 2026-06-03 17:45 UTC
 
 ---
 
@@ -62,6 +72,8 @@ This board provides **centralized visibility and prioritization** for all open F
 ---
 
 ### Could Have (C) - Nice-to-Have Items
+
+- **BR-081** – Kanban install uses deprecated `datetime.utcnow()` - 🟢 OPEN (LOW, **#13**) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [E06:S09:T10](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | —No IPP— | Last modified: 2026-06-03 17:43 UTC
 
 - **FR-032** – Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | [E09:S01:T03](epics/Epic-9/Story-001-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | —No IPP— | Last modified: 2026-05-30 10:26 UTC
 
