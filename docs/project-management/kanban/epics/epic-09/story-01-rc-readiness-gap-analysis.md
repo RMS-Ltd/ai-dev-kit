@@ -10,12 +10,12 @@ housekeeping_policy: keep
 
 **Status:** TODO  
 **Priority:** HIGH  
-**Last updated:** 2026-01-17 (v0.9.1.8+9 – E09:S01:T08 COMPLETE: Final validation complete - Kanban board S00→S01 references fixed, versioning policy E6:S06→E6:S07 corrected, acceptance criteria marked complete)  
+**Last updated:** 2026-06-04 (v0.9.1.3+3 – Kanban documentation setup)
 **Estimated Effort:** [TBD]  
 **Actual Effort:** [TBD]  
 **Started:** [TBD]  
 **Completed:** [TBD]  
-**Version:** v0.9.1.0+0  
+**Version:** v0.9.1.3+3
 **Code:** E9S01
 
 ---

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-16  
-**Last updated:** 2026-05-19 (v0.9.5.4+2 – E9:S05 COMPLETE; T04 archived from board)  
+**Last updated:** 2026-06-04 (v0.9.1.3+3 – Kanban documentation setup)
 **Branch:** `epic/9-release-candidate-readiness`  
 **Version Schema:** `0.9.S.T+B`  
 **Production URL:** [N/A for this repo]

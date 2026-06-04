@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 16    # Story 16 — Perpetual Ongoing Workflow Operations
-VERSION_TASK = 10     # Task 10 — Ad-hoc Repository Infrastructure Maintenance (Perpetual)
-VERSION_BUILD = 5     # Build 5: portal npm transitive dependency security overrides
+VERSION_EPIC = 9      # Epic 9 — Release Candidate Readiness
+VERSION_STORY = 1     # Story 1 — RC Readiness Gap Analysis
+VERSION_TASK = 3      # Task 3 — Gap Comparison (FR-032.3)
+VERSION_BUILD = 3     # Build 3: Kanban documentation setup (RW -k)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.10+5 (E02:S16:T10)
+# Current: 0.9.1.3+3 (E09:S01:T03)

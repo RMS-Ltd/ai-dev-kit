@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T03-gap-analysis-fr032.md`](../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) **(E09:S01:T03)**  
 **Planning for:** [FR-032](../project-management/kanban/fr-br/FR-032-release-candidate-readiness-gap-analysis.md)  
-**Status:** Implemented (2026-06-04 — prerequisites T01/T02 + gap report; release via `RW E09:S01:T03`)
+**Status:** Implemented (2026-06-04 — **v0.9.1.3+1** RW complete: T01/T02/T03 + follow-on index)
 
 > **IPW (Implementation Planning Workflow):** Bidirectional wiring to the host task **Input** and **References** is mandatory (FR-042).
 
@@ -154,7 +154,7 @@ Deliver a **gap-comparison report** quantifying distance from RC=0 / current kan
 - [x] T03 gap report with matrix + T04–T07 tags
 - [x] FR-032.3 traceability in report
 - [x] IPP ↔ task wiring
-- [x] RW E09:S01:T03 (pending execution in session)
+- [x] RW E09:S01:T03 (**v0.9.1.3+1** / SemVer **v0.4.885+1**)
 - [x] T04–T07 not marked complete by T03
 
 ---

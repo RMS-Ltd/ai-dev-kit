@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.9.1.3+3] - 04-06-26
+
+E09:S01:T03 — **RW `-k` Kanban documentation setup:** story/epic/kboard markers aligned to v0.9.1.3+3; IPP reconciled. SemVer **v0.4.889+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.9.1.3+3.md)
+
+---
+
 ## [0.2.16.10+5] - 04-06-26
 
 E02:S16:T10 — **Portal npm security overrides:** `uuid` 11.1.1 and `serialize-javascript` 7.0.5 via `package.json` overrides; `npm audit` clean. SemVer **v0.4.887+5**.

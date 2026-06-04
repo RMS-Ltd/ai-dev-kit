@@ -2,8 +2,8 @@
 
 - **Contract:** FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)
 - **Invocation context:** rw_step_7
-- **Release scope:** E9:S1:T3 (v0.9.1.3+2)
-- **Timestamp (UTC):** 2026-06-04 22:32 UTC
+- **Release scope:** E9:S1:T3 (v0.9.1.3+3)
+- **Timestamp (UTC):** 2026-06-04 22:59 UTC
 
 ## Touched-surface summary
 
@@ -66,13 +66,13 @@
 - Path(s):
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-09/epic-09.md`
 - Changes:
-  - Updated Epic Last updated: 2026-06-04 (v0.9.1.3+2 – Kanban documentation setup)
+  - Updated Epic Last updated: 2026-06-04 (v0.9.1.3+3 – Kanban documentation setup)
 
 ### Auxiliary: `uncategorized`
 
 - Touched: **True**
 - Changes:
-  - Updated Version: v0.9.1.3+2
-  - Updated Last updated: 2026-06-04 (v0.9.1.3+2 – Kanban documentation setup)
+  - Updated Version: v0.9.1.3+3
+  - Updated Last updated: 2026-06-04 (v0.9.1.3+3 – Kanban documentation setup)
   - Updated board Last Updated: 2026-06-04 (RW: E09:S01:T03)
-  - Updated board Version: v0.9.1.3+2
+  - Updated board Version: v0.9.1.3+3

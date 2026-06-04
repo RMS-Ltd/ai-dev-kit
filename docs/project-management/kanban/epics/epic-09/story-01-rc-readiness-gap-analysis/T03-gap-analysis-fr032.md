@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-05-29  
-**Last updated:** 2026-06-04 (✅ COMPLETE v0.9.1.3+1 — gap report + RW)  
+**Last updated:** 2026-06-04 (✅ COMPLETE v0.9.1.3+1 — gap report + RW; kanban init **v0.9.1.3+3**)  
 **Completed:** 2026-06-04  
 **Version:** v0.9.1.3+1  
 **Code:** E09S01T03
@@ -58,9 +58,7 @@ Publication N/A Reason: Kanban and implementation-cycle artifacts are repo SoT p
 
 ---
 
-## Version Anchor
-
-**Forensic marker:** ✅ COMPLETE (v0.9.1.3+1)
+**Version Anchor:** v0.9.1.3+1 (delivery) · kanban init **v0.9.1.3+3**
 
 ---
 
