@@ -13,14 +13,14 @@ housekeeping_policy: keep
 **Priority:** MEDIUM
 **Estimated Effort:** Small
 **Created:** 2026-05-19
-**Last updated:** 2026-05-29 16:28:21 UTC (v0.2.16.10+4: project root hygiene — remove no/low-value artifacts; `.gitignore`)
-**Version:** v0.2.16.10+4
+**Last updated:** 2026-06-04 22:55:49 UTC (v0.2.16.10+5: portal npm security overrides — uuid 11.1.1, serialize-javascript 7.0.5)
+**Version:** v0.2.16.10+5
 **Code:** E02S16T10
 **Task Type:** Perpetual Maintenance
 
-**Forensic Marker:** v0.2.16.10+4
+**Forensic Marker:** v0.2.16.10+5
 
-**Version Anchor:** v0.2.16.10+4 (perpetual — root cleanup release)
+**Version Anchor:** v0.2.16.10+5 (perpetual — portal npm security overrides)
 
 ---
 

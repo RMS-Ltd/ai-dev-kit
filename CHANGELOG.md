@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.10+5] - 04-06-26
+
+E02:S16:T10 — **Portal npm security overrides:** `uuid` 11.1.1 and `serialize-javascript` 7.0.5 via `package.json` overrides; `npm audit` clean. SemVer **v0.4.887+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.10+5.md)
+
+---
+
 ## [0.8.3.4+1] - 04-06-26
 
 E08:S03:T04 — **BR-058:** Repo-wide **Tests** CI workflow (Python 3.11) and pytest remediation — 348 tests green locally. SemVer **v0.4.886+1**.

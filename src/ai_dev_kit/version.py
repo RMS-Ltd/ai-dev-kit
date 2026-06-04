@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 8      # Epic 8 — Tooling & Automation
-VERSION_STORY = 3     # Story 3 — Automation Scripts
-VERSION_TASK = 4      # Task 4 — CI test workflow and pytest remediation (BR-058)
-VERSION_BUILD = 1     # Build 1: Tests workflow + pytest remediation
+VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
+VERSION_STORY = 16    # Story 16 — Perpetual Ongoing Workflow Operations
+VERSION_TASK = 10     # Task 10 — Ad-hoc Repository Infrastructure Maintenance (Perpetual)
+VERSION_BUILD = 5     # Build 5: portal npm transitive dependency security overrides
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.8.3.4+1 (E08:S03:T04)
+# Current: 0.2.16.10+5 (E02:S16:T10)

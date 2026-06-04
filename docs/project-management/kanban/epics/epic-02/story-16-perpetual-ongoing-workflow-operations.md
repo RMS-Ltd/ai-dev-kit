@@ -53,7 +53,7 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
 - [x] **E02:S16:T09 – `/ipw` slash command for Claude Code + mandatory IPP state transition (FR-094)** ✅ COMPLETE (v0.2.16.9+1) (HIGH, add `/ipw` slash command via `.claude/commands/ipw.md` with plan-mode enforcement and four-phase gates; mandate task state reconciliation steps in every IPP; CLAUDE.md routing + PLAN_DOC_TEMPLATE.md + IPW doc amendments)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md`](story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md) | [FR-094](../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 
-- [ ] **E02:S16:T10 – Ad-hoc Repository Infrastructure Maintenance (Perpetual)** - IN PROGRESS (MEDIUM, catch-all perpetual lane; last RW **v0.2.16.10+3** — retire `hf-ai-dev-kit`, canonical private `ai-dev-kit-book` + public `RMS-Ltd/ai-dev-kit` URL rewire)
+- [ ] **E02:S16:T10 – Ad-hoc Repository Infrastructure Maintenance (Perpetual)** - IN PROGRESS (MEDIUM, catch-all perpetual lane; last RW **v0.2.16.10+5** — portal npm security overrides: uuid 11.1.1, serialize-javascript 7.0.5)
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md`](story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md)
 
 - [x] **E02:S16:T11 – IPW documentation phases: update/create + housing (FR-096)** - ✅ COMPLETE (v0.2.16.11+1) (HIGH, IPW Phases 5–6; IPP §5–§7; FR-042 aligned with `/ipw` and template)
