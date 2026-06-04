@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.13+0] - 05-06-26
+
+E05:S09:T13 — **BR-090 intake:** Docusaurus 3.10 missing `@docusaurus/faster` + package.json/lockfile drift (Kanban documentation setup). SemVer **v0.4.890+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+0.md)
+
+---
+
 ## [0.6.9.16+3] - 04-06-26
 
 E06:S09:T16 — **BR-086 formal closure:** GitHub #17 closed; install-sign-off cluster #12–#20 verified; UKW `-c` archived T16/BR-086 to completed ledgers. SemVer **v0.4.890+3**.
