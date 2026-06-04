@@ -128,7 +128,7 @@ Assuming 6 epics signed off for RC 0 and task-touch counter starts at 1:
 
 #### Benefits
 
-- **Zero Collisions**: Each internal version maps to exactly one SemVer
+- **Zero Collisions**: Each internal version maps to exactly one SemVer **PATCH** and one **SemVer core** (`MAJOR.MINOR.PATCH`, used for primary Git tags `vX.Y.Z`)
 - **Strict Monotonicity**: PATCH always increases (package-manager friendly)
 - **1:1 Traceability**: Direct mapping between internal and external versions
 - **Deterministic**: Given repository history, mapping is reproducible

@@ -12,9 +12,20 @@ housekeeping_policy: keep
 **Submitted:** 2026-02-26  
 **Submitted By:** XOforge (contributing to AI Dev Kit)  
 **Priority:** HIGH  
-**Status:** IMPLEMENTED  
-**Implementing Task:** [E05:S01:T46](../epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
+**Status:** REOPENED  
+**Last updated:** 2026-06-04 (reopened with **FR-045** — SemVer tag/release boundary collisions recur)  
+**Implementing Task (delivery):** [E03:S02:T12](../epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)  
+**Historical anchor:** [E05:S01:T46](../epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
+**Related:** [FR-045](FR-045-adr-002-task-touch-derived-mapping.md) · [BR-061](BR-061-semver-task-touch-counter-increments-too-often.md)  
 **GitHub Issue:** [#19](https://github.com/RMS-Ltd/ai-dev-kit/issues/19)
+
+---
+
+## Recurrence (2026-06-04)
+
+Closure wave (**v0.5.1.46+7**) assumed collision-free `task_touch` RW tagging. Live registry again maps distinct internal releases to the same SemVer PATCH/core (see **FR-045** recurrence table). RW Step 11/12.5 and `v0.4.870` tag placement must be re-verified under **E03:S02:T12**.
+
+**Fix attempted (2026-06-04):** `validate_semver_registry_injective.py` + injective finalize; registry repair per [semver-registry-collision-repair-2026-06-04.md](../../maintenance/semver-registry-collision-repair-2026-06-04.md). Git tags not moved — pending verification.
 
 ---
 

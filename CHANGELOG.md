@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.3.2.12+4] - 04-06-26
+
+E03:S02:T12 — **FR-045/FR-046/BR-061:** Task-touch SemVer collision wave 2 — PATCH/core injective finalize, registry repair (counter 873), audit/repair/validate scripts, pytest. SemVer **v0.4.874+4**. Git tags not moved.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.12+4.md)
+
+---
+
 ## [0.6.9.17+1] - 04-06-26
 
 E06:S09:T17 — **BR-087:** Framework install directory slugs — release archives and extract use hyphenated paths; migration script for legacy vendor trees; pytest coverage. SemVer **v0.4.870+1**.

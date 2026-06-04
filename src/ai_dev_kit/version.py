@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 6      # Epic 6 — Framework Management
-VERSION_STORY = 9     # Story 9 — AI Dev Kit installation and adopter integration
-VERSION_TASK = 17     # Task 17 — Framework install directory slugs (BR-087)
-VERSION_BUILD = 1     # Build 1: slug archives, extract rename, migration script, tests
+VERSION_EPIC = 3      # Epic 3 — Numbering & Versioning Framework
+VERSION_STORY = 2     # Story 2 — Versioning cookbook & examples
+VERSION_TASK = 12     # Task 12 — Task-touch SemVer collision remediation wave 2 (FR-045/046)
+VERSION_BUILD = 4     # Build 4: PATCH/core injective finalize, registry repair, audit/validate
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.17+1 (E06:S09:T17)
+# Current: 0.3.2.12+4 (E03:S02:T12)

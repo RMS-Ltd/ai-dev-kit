@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 5, Story 1, Task 46: Dual-Version Mode Requires Task-Touch SemVer in RW
 
 **Task ID:** E05:S01:T46  
-**Status:** ✅ COMPLETE (v0.5.1.46+7)  
+**Status:** ✅ COMPLETE (v0.5.1.46+7) — **FR-046 REOPENED 2026-06-04**; remediation on [E03:S02:T12](../../epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-02-26  

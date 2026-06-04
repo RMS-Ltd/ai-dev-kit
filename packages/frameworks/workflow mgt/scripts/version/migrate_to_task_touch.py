@@ -4,6 +4,11 @@ Migration utility for Task-Touch SemVer Mapping (ADR-002)
 
 This utility helps existing projects migrate from registry-based SemVer mapping
 to task-touch derived mapping by analyzing git history and initializing counters.
+
+Registry injectivity (PATCH + SemVer core): use
+``audit_semver_registry_collisions.py`` and ``repair_semver_registry_collisions.py``
+with a maintainer manifest (see ``docs/maintenance/semver-registry-collision-repair-2026-06-04.md``).
+RW Step 9: ``validate_semver_registry_injective.py``.
 """
 
 import subprocess

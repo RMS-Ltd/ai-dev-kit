@@ -2127,6 +2127,7 @@ $ python packages/frameworks/workflow mgt/scripts/update_kanban_docs.py --dry-ru
      - `python {scripts_path}/validation/validate_changelog_archive_links.py` (non-blocking; reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers)
      - `python {scripts_path}/validation/validate_board_stamp_diff.py --before <snapshot_dir>/kboard.md --after <kanban_root>/kboard.md --strict` (repeat for `fbuboard.md`; FR-097)
      - `python {scripts_path}/validation/validate_kanban_state_icons.py --project-root <repo-root> --strict` (UXR-012 / Gate 9)
+     - `python {scripts_path}/validation/validate_semver_registry_injective.py` (FR-045 / **E03:S02:T12** — blocking when `semver_mapping_strategy: task_touch`)
      - `python {scripts_path}/validation/validate_kanban_moscow_spacing.py --project-root <repo-root> --strict` (UXR-005 / **E07:S01:T09**; non-blocking; Release Readiness Gate 10 warn)
    - **Release-readiness gate (FR-092 Wave 7 + FR-097 Gate 8):**
      ```bash

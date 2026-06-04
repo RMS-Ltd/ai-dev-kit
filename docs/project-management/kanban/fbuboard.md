@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-04 (**BR-087** **E06:S09:T17** **v0.6.9.17+1**)
-**Version Context:** v0.6.9.17+1 (**SemVer** v0.4.870+1)
+**Last Updated:** 2026-06-04 (**E03:S02:T12** **v0.3.2.12+4** — task-touch collision wave 2)
+**Version Context:** v0.3.2.12+4 (**SemVer** v0.4.874+4)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -43,7 +43,13 @@ This board provides **centralized visibility and prioritization** for all open F
 
 ### Must Have (M) - Critical Items
 
-*(No Must Have FBU items — 2026-06-03 UKW archived **FR-104**, **FR-105**, **BR-077** → [fbu-completed.md](fbu-completed.md).)*
+**2026-06-04:** **E03:S02:T12** **v0.3.2.12+4** — fix attempted for **FR-045** / **FR-046** / **BR-061** (registry repair, injective finalize). Pending user verification; see [repair doc](../../maintenance/semver-registry-collision-repair-2026-06-04.md).
+
+- **FR-045** – ADR-002 task-touch mapping — 1:1 internal↔SemVer - 🟢 OPEN (HIGH, fix attempted **v0.3.2.12+4**) | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) | [E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [—IPP—](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) | Last modified: 2026-06-04 12:15 UTC
+
+- **FR-046** – RW SemVer tag when `task_touch` enabled - 🟢 OPEN (HIGH, fix attempted **v0.3.2.12+4**) | [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) | [E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [—IPP—](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) | Last modified: 2026-06-04 14:20 UTC
+
+- **BR-061** – Task-touch SemVer PATCH / registry counter - 🟢 OPEN (HIGH, fix attempted **v0.3.2.12+4**) | [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | —No IPP— | Last modified: 2026-06-04 18:45 UTC
 
 ---
 

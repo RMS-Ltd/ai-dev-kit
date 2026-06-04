@@ -1,0 +1,21 @@
+# Maintainer manifest — task_touch mapping_history repair (2026-06-04)
+# Policy: registry + converter only; no Git tag moves (RF7).
+
+rc: 0
+
+# Keep these internals at their current PATCH (canonical per RW lineage)
+canonical_keep:
+  - 0.2.16.10+1
+  - 0.6.9.6+1
+  - 0.5.9.12+2
+  - 0.6.9.17+1
+
+# Duplicate orphan row — same semver as 0.5.9.12+2; remove from history
+remove_internal:
+  - 0.5.1.76+2
+
+# Reassign to next free PATCH after repair (script assigns sequentially from max+1)
+reassign_internal:
+  - 0.2.16.4+8
+  - 0.6.9.5+4
+  - 0.5.9.12+3

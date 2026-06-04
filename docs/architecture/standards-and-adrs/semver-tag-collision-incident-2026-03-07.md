@@ -88,6 +88,14 @@ Dedicated implementation tasks will be filed under the appropriate framework epi
 
 ---
 
+## Wave 2 recurrence (2026-06-04)
+
+Under `task_touch`, finalize guards initially checked only full `semver+BUILD` strings, not **PATCH integer** or **SemVer core**. Live `semver-registry.yaml` had four collision groups (e.g. PATCH **870** shared by `0.5.9.12+3` and `0.6.9.17+1`).
+
+**Remediation (E03:S02:T12):** Injective finalize in `semver_converter.py`; audit/repair scripts; registry repair per [semver-registry-collision-repair-2026-06-04.md](../../maintenance/semver-registry-collision-repair-2026-06-04.md). **Git tags not moved** — `v0.4.870` may remain on an older commit until manually addressed.
+
+---
+
 ## References
 
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`

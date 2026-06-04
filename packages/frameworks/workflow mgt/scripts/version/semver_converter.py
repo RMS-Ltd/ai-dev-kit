@@ -495,6 +495,77 @@ def _find_mapping_entry_by_semver(task_touch_mode: Dict[str, Any], semver: str) 
     return None
 
 
+def semver_core(semver: str) -> str:
+    """MAJOR.MINOR.PATCH without +BUILD (primary Git tag uses core only)."""
+    return semver.split("+", 1)[0]
+
+
+def _find_mapping_entry_by_patch(
+    task_touch_mode: Dict[str, Any], patch: int
+) -> Optional[Dict[str, Any]]:
+    history = task_touch_mode.get("mapping_history", [])
+    for entry in history:
+        if isinstance(entry, dict) and int(entry.get("patch", -1)) == patch:
+            return entry
+    return None
+
+
+def _find_mapping_entry_by_semver_core(
+    task_touch_mode: Dict[str, Any], core: str
+) -> Optional[Dict[str, Any]]:
+    history = task_touch_mode.get("mapping_history", [])
+    for entry in history:
+        if isinstance(entry, dict) and semver_core(entry.get("semver", "")) == core:
+            return entry
+    return None
+
+
+def _sync_task_touch_counter_to_history(task_touch_mode: Dict[str, Any]) -> None:
+    """Ensure counter is at least max(patch) in mapping_history."""
+    history = task_touch_mode.get("mapping_history", [])
+    patches = [
+        int(e["patch"])
+        for e in history
+        if isinstance(e, dict) and e.get("patch") is not None
+    ]
+    if patches:
+        task_touch_mode["task_touch_counter"] = max(
+            int(task_touch_mode.get("task_touch_counter", 0)), max(patches)
+        )
+
+
+def _assert_injective_finalize(
+    task_touch_mode: Dict[str, Any],
+    *,
+    internal_version: str,
+    semver: str,
+    patch: int,
+) -> None:
+    """Raise ValueError if PATCH or SemVer core already owned by another internal."""
+    core = semver_core(semver)
+    patch_owner = _find_mapping_entry_by_patch(task_touch_mode, patch)
+    if patch_owner and patch_owner.get("internal_version") != internal_version:
+        raise ValueError(
+            "SemVer PATCH collision detected during finalize: "
+            f"PATCH {patch} already mapped to {patch_owner.get('internal_version')}, "
+            f"cannot assign to {internal_version}."
+        )
+    core_owner = _find_mapping_entry_by_semver_core(task_touch_mode, core)
+    if core_owner and core_owner.get("internal_version") != internal_version:
+        raise ValueError(
+            "SemVer core collision detected during finalize: "
+            f"{core} already mapped to {core_owner.get('internal_version')}, "
+            f"cannot assign to {internal_version} (primary tag v{core} would collide)."
+        )
+    existing_semver_owner = _find_mapping_entry_by_semver(task_touch_mode, semver)
+    if existing_semver_owner and existing_semver_owner.get("internal_version") != internal_version:
+        raise ValueError(
+            "SemVer collision detected during finalize: "
+            f"{semver} already mapped to {existing_semver_owner.get('internal_version')}, "
+            f"cannot assign to {internal_version}."
+        )
+
+
 def _record_mapping_entry(
     task_touch_mode: Dict[str, Any],
     *,
@@ -571,13 +642,12 @@ def convert_internal_to_semver_task_touch(
 
     if finalize:
         semver = format_semver(major, minor, patch, build_semver)
-        existing_semver_owner = _find_mapping_entry_by_semver(task_touch_mode, semver)
-        if existing_semver_owner and existing_semver_owner.get("internal_version") != internal_version:
-            raise ValueError(
-                "SemVer collision detected during finalize: "
-                f"{semver} already mapped to {existing_semver_owner.get('internal_version')}, "
-                f"cannot assign to {internal_version}."
-            )
+        _assert_injective_finalize(
+            task_touch_mode,
+            internal_version=internal_version,
+            semver=semver,
+            patch=patch,
+        )
         task_touch_mode["task_touch_counter"] = patch
         _record_mapping_entry(
             task_touch_mode,
@@ -590,6 +660,7 @@ def convert_internal_to_semver_task_touch(
             task=task,
             build=build,
         )
+        _sync_task_touch_counter_to_history(task_touch_mode)
         save_semver_registry(registry)
 
     return (major, minor, patch, build_semver)

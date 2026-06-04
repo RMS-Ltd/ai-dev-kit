@@ -312,6 +312,60 @@ class TestCollisionScenarios:
         finally:
             semver_converter.load_rw_config = original_load
 
+    def test_finalize_rejects_duplicate_patch_different_internal(self):
+        """PATCH integer must not be reused across different internal versions."""
+        registry = {
+            "rc_0": {
+                "epic_to_minor": {},
+                "story_to_patch": {},
+                "task_touch_mode": {
+                    "epic_count": 4,
+                    "task_touch_counter": 5,
+                    "mapping_history": [
+                        {
+                            "internal_version": "0.6.7.101+1",
+                            "semver": "0.4.6+1",
+                            "patch": 6,
+                            "rc": 0,
+                            "epic": 6,
+                            "story": 7,
+                            "task": 101,
+                            "build": 1,
+                        }
+                    ],
+                },
+            },
+            "rc_1": {
+                "epic_to_minor": {},
+                "story_to_patch": {},
+                "task_touch_mode": {"epic_count": 0, "task_touch_counter": 0, "mapping_history": []},
+            },
+        }
+        save_semver_registry(registry)
+        with pytest.raises(ValueError, match="PATCH collision"):
+            convert_internal_to_semver_task_touch(0, 6, 7, 102, 1, finalize=True)
+
+    def test_assert_injective_rejects_duplicate_core(self):
+        """SemVer core guard blocks corrupted history with same core, different internals."""
+        from semver_converter import _assert_injective_finalize
+
+        ttm = {
+            "mapping_history": [
+                {
+                    "internal_version": "0.6.7.101+1",
+                    "semver": "0.4.100+1",
+                    "patch": 100,
+                }
+            ]
+        }
+        with pytest.raises(ValueError, match="core collision"):
+            _assert_injective_finalize(
+                ttm,
+                internal_version="0.6.7.102+2",
+                semver="0.4.100+2",
+                patch=101,
+            )
+
     def test_finalize_rejects_semver_collision_with_existing_owner(self):
         """Finalize must reject semver reuse across different internal versions."""
         # Force candidate patch to 101 and pre-seed a conflicting semver owner
@@ -344,7 +398,7 @@ class TestCollisionScenarios:
         }
         save_semver_registry(registry)
 
-        with pytest.raises(ValueError, match="SemVer collision detected during finalize"):
+        with pytest.raises(ValueError, match="collision detected during finalize"):
             convert_internal_to_semver_task_touch(0, 6, 7, 113, 1, finalize=True)
 
     def test_create_rw_tags_fails_on_primary_tag_collision_without_internal_tag(self, monkeypatch):

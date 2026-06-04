@@ -9,14 +9,14 @@ housekeeping_policy: keep
 # T12 – Implement ADR-002 Task-Touch SemVer Mapping Mode
 
 **Task ID:** E03:S02:T12  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-07  
-**Last updated:** 2026-04-13 — regression hardening reopened after observed SemVer collision recurrence at RW tag/release boundaries.
+**Last updated:** 2026-06-04 (v0.3.2.12+4 — wave 2 remediation released)
 
-**Associated BR:** [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)
-**Version Anchor:** v0.3.2.12+2
+**Associated FR/BR:** [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)
+**Version Anchor:** v0.3.2.12+4
 
 ---
 
@@ -38,7 +38,8 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 - Existing converter (Mode A): `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
 - Existing registry: `semver-registry.yaml`
 - Existing config: `rw-config.yaml`
-- Planning artifact (IPW): [IPW-E03S02T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPW-E03S02T12-task-touch-semver-collision-hardening.md)
+- Planning artifact (IPP): [IPP-E03S02T12-task-touch-semver-collision-hardening](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
+- Repair report: [semver-registry-collision-repair-2026-06-04.md](../../../../maintenance/semver-registry-collision-repair-2026-06-04.md)
 
 ---
 
@@ -65,20 +66,25 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 - [x] Mapping is monotonic and collision-free for real dev-kit sequences (including perpetual tasks).
 - [x] **BR-061:** PATCH / `task_touch_counter` does **not** advance on repeated **read-only** SemVer derivation for the same release; behaviour covered by tests (idempotent convert or single explicit increment site).
 - [x] Converter tests include scenarios that previously collide under registry epic/story mapping.
-- [ ] Backfill/migration guidance exists for initializing counters from existing tag history.
+- [x] Backfill/migration guidance exists for initializing counters from existing tag history (audit/repair scripts + maintenance doc, 2026-06-04 wave 2).
 
 ---
 
 ## Related Work
 
+- [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) (**REOPENED** — 1:1 internal↔SemVer invariant)
+- [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) (**REOPENED** — RW SemVer tag boundary)
 - [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) (PATCH over-increment / usage of `semver_converter.py`)
-- FR-046 (RW uses SemVer tag when task_touch enabled)
 - `docs/architecture/standards-and-adrs/semver-implementation-followup-spec.md`
 - [IPW-E03S02T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPW-E03S02T12-task-touch-semver-collision-hardening.md)
 
 ## Implementation note
 
 Implemented converter hardening for BR-061 by splitting task-touch behavior into read-only derivation and explicit finalization, with idempotent mapping history per internal version. Regression tests now cover read-only non-mutation, finalize idempotency, and FR-046 collision scenarios.
+
+## Regression reopening note (2026-06-04)
+
+**FR-045** and **FR-046** reopened after live `semver-registry.yaml` audit: PATCH **870** / **869** / **806** / **789** each map multiple internal versions to one SemVer core. Remediation continues under this task (see FR-045 recurrence table).
 
 ## Regression reopening note (2026-04-13)
 
@@ -90,4 +96,4 @@ Task reopened to enforce collision-invariant SemVer mapping at release boundarie
 
 ## Planning artifacts (publication)
 
-- [IPW-E3S02T12-task-touch-semver-collision-hardening.md](../../../../../implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md)
+- [IPP-E03S02T12-task-touch-semver-collision-hardening.md](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)

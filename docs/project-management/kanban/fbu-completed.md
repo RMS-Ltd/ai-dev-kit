@@ -54,6 +54,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 | BR-076 | BR | E7:S00 must not host concrete tasks — abstract-only detasking (**E04:S19:T10**) | 2026-05-30T13:28:56Z | v0.4.19.10+2 (fix); RW -d v0.4.19.10+3 | RW |
 | FR-085 | FR | UKW optional `--rp` deep reprioritization — ADR-009, agent SoT, cheatsheet (**E02:S16:T06**) | 2026-05-30T12:54:46Z | v0.2.16.6+1 | RW |
 | FR-046 | FR | RW SemVer tag when task_touch enabled — dual-mode closure (**E05:S01:T46**) | 2026-05-30T08:55:34Z | v0.5.1.46+7 | RW |
+
+> **Reopened 2026-06-04:** **FR-046** (with **FR-045**) — registry SemVer PATCH/core collisions; active on [`fbuboard.md`](fbuboard.md) Must Have; delivery **E03:S02:T12**. Closure row retained for forensic history only.
 | FR-074 | FR | Kanban intake atomic KG-R2 & semantic KG-R6 (**E05:S01:T74**) | 2026-05-29T00:00:00Z | v0.5.1.74+3 | RW |
 | FR-049 | FR | Enhanced kanban-completed timestamps + recent tasks dashboard (**E05:S01:T49**) | 2026-03-11T16:20:00Z | v0.5.1.49+2 | RW |
 | FR-011 | FR | Task splitting across multiple canonical epics (**E04:S08:T07**) | 2026-05-29T15:30:00Z | v0.4.8.7+1 | RW |

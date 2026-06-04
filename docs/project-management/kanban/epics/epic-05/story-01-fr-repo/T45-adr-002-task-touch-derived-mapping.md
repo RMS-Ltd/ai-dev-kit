@@ -36,7 +36,7 @@ This task:
 
 ## Input
 
-- **FR-045:** [`FR-045-adr-002-task-touch-derived-mapping.md`](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md)
+- **FR-045:** [`FR-045-adr-002-task-touch-derived-mapping.md`](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) — **REOPENED 2026-06-04**; active delivery: [E03:S02:T12](../../epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 - **Versioning Policy & Strategy:** Numbering & Versioning framework docs.
 
 ---

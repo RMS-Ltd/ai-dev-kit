@@ -9,13 +9,36 @@ housekeeping_policy: keep
 # Feature Request: ADR-002 – Task-Touch Derived Mapping (Kanban → SemVer)
 
 **Type:** Feature Request (FR)  
-**Status:** IMPLEMENTED  
+**Status:** REOPENED  
 **Priority:** HIGH  
 **Created:** 2026-02-26  
-**Last updated:** 2026-03-09  
+**Last updated:** 2026-06-04 (recurrence — internal↔SemVer PATCH/core collisions in `semver-registry.yaml`)  
 **Code:** FR-045  
-**Implementation Task:** [E05:S01:T45](../epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md)  
+**Implementation Task (delivery):** [E03:S02:T12](../epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)  
+**Historical anchor:** [E05:S01:T45](../epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md) (FR repository registry)  
+**Related:** [BR-061](BR-061-semver-task-touch-counter-increments-too-often.md) · [BR-073](BR-073-semver-task-touch-collision-retrospective-fix.md) · [FR-046](FR-046-rw-semver-tag-task-touch-mode.md)  
 **GitHub Issue:** [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
+
+---
+
+## Recurrence (2026-06-04)
+
+**Prior closure:** IMPLEMENTED (converter + tests shipped under **E05:S01:T45** / **E03:S02:T12** hardening).
+
+**Why reopened:** `semver-registry.yaml` `task_touch_mode.mapping_history` again violates the **1:1** invariant (**FR-045:NF02**): multiple distinct internal versions share the same SemVer **PATCH** and **`MAJOR.MINOR.PATCH` core**.
+
+| PATCH | Internal versions | SemVer cores |
+|-------|-------------------|--------------|
+| **870** | `0.5.9.12+3`, `0.6.9.17+1` | both `0.4.870` |
+| **869** | `0.5.1.76+2`, `0.5.9.12+2` | both `0.4.869` |
+| **806** | `0.6.9.5+4`, `0.6.9.6+1` | both `0.4.806` |
+| **789** | `0.2.16.4+8`, `0.2.16.10+1` | both `0.4.789` |
+
+**Observed symptom:** Git primary tag `v0.4.870` on **`d6053e5`** while latest install release **`0.6.9.17+1`** maps to **`0.4.870+1`** at **`a492597`** — external consumers cannot rely on monotonic unique SemVer per internal release.
+
+**Delivery track:** [E03:S02:T12](../epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) + [IPP-E03S02T12](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md).
+
+**Fix attempted (2026-06-04, E03:S02:T12 wave 2):** PATCH + SemVer-core injective finalize; registry repaired per [semver-registry-collision-repair-2026-06-04.md](../../maintenance/semver-registry-collision-repair-2026-06-04.md). Pending user verification; Git tags not moved.
 
 ---
 
@@ -165,7 +188,7 @@ Task-touch mapping delivers:
 
 ## Intake Decision
 
-**Intake Status:** IMPLEMENTED  
+**Intake Status:** REOPENED (2026-06-04 — collision recurrence)  
 **Intake Date:** 2026-02-26  
 **Intake By:** AI Agent (ai-dev-kit)
 
@@ -192,7 +215,8 @@ Task-touch mapping delivers:
 
 ## Notes
 
-- ✅ This FR is IMPLEMENTED and serves as the canonical repository anchor for ADR-002.
+- **REOPENED 2026-06-04:** Collision recurrence in live registry; delivery continues under **E03:S02:T12** (not new intake under closed **E05:S01**).
+- ✅ Original implementation remains the canonical ADR-002 anchor (**E05:S01:T45**); reopen scopes **injective mapping enforcement**, registry repair, and RW finalize guards.
 - ✅ Implementation is complete in `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
 - ✅ Configuration available via `semver_mapping_strategy: task_touch` in `rw-config.yaml`
 - ✅ Comprehensive test suite in `test_task_touch_mapping.py`
