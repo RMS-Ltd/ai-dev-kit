@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.14+0] - 05-06-26
+
+E05:S09:T14 — **BR-093 intake:** Docusaurus CI duplicate build/deploy job waste (Kanban documentation setup). SemVer **v0.4.890+0** (internal).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+0.md)
+
+---
+
 ## [0.8.3.7+0] - 05-06-26
 
 E08:S03:T07 — **BR-092 intake:** Tests CI missing `requests` dev dependency (Kanban documentation setup). SemVer **v0.4.890+0** (internal).
