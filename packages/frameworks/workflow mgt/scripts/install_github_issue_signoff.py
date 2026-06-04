@@ -121,6 +121,19 @@ def _run_check_rw_config_patterns(
         if needle not in val:
             errors.append(f"{key} does not contain {needle!r} (got {val!r})")
 
+    for key, needles in (
+        ("epic_doc_pattern", spec.get("epic_doc_pattern_contains_any")),
+        ("story_doc_pattern", spec.get("story_doc_pattern_contains_any")),
+        ("task_doc_pattern", spec.get("task_doc_pattern_contains_any")),
+    ):
+        if not needles:
+            continue
+        val = str(config.get(key, ""))
+        if not any(str(n) in val for n in needles):
+            errors.append(
+                f"{key} does not contain any of {needles!r} (got {val!r})"
+            )
+
     if errors:
         return CheckResult("rw_config_patterns", False, "; ".join(errors))
     return CheckResult("rw_config_patterns", True, "rw-config.yaml patterns OK")

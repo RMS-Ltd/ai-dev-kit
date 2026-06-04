@@ -40,6 +40,10 @@ LEGACY_EPIC_UNPADDED_PATTERN = "epics/epic-{epic}/epic-{epic}.md"
 LEGACY_STORY_3DIGIT_PATTERN = "epics/epic-{epic:02d}/story-{story:03d}-*.md"
 LEGACY_TASK_3DIGIT_STORY_PATTERN = "epics/epic-{epic:02d}/story-{story:03d}-*/T{task:02d}-*.md"
 
+# Book T03 Step 4.1 target (unpadded epic + 03d story segment + lowercase task file)
+BOOK_STORY_PATTERN = "epics/epic-{epic}/story-{story:03d}-*.md"
+BOOK_TASK_PATTERN = "epics/epic-{epic}/story-{story:03d}/t{task:02d}-*.md"
+
 # Legacy capitalised (pre-UXR-017)
 LEGACY_EPIC_DOC_PATTERN = "epics/Epic-{epic}/Epic-{epic}.md"
 LEGACY_STORY_DOC_PATTERN = "epics/Epic-{epic}/Story-{story:03d}-*.md"
@@ -55,6 +59,7 @@ FRESH_EPIC_PATTERNS: Tuple[str, ...] = (
 )
 
 FRESH_STORY_PATTERNS: Tuple[str, ...] = (
+    BOOK_STORY_PATTERN,
     STORY_DOC_PATTERN,
     LEGACY_STORY_3DIGIT_PATTERN,
     LEGACY_STORY_DOC_PATTERN,
@@ -62,6 +67,7 @@ FRESH_STORY_PATTERNS: Tuple[str, ...] = (
 )
 
 FRESH_TASK_PATTERNS: Tuple[str, ...] = (
+    BOOK_TASK_PATTERN,
     TASK_DOC_PATTERN,
     LEGACY_TASK_3DIGIT_STORY_PATTERN,
     LEGACY_TASK_DOC_PATTERN,

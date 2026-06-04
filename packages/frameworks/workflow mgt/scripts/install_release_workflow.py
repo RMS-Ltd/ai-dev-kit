@@ -37,6 +37,7 @@ except ImportError:
         _spec = _importlib_util.spec_from_file_location("install_ux_version", _install_ux_path)
         _mod = _importlib_util.module_from_spec(_spec)
         assert _spec.loader is not None
+        sys.modules["install_ux_version"] = _mod
         _spec.loader.exec_module(_mod)
         print_section_header = _mod.print_section_header
         print_session_banner = _mod.print_session_banner
@@ -209,6 +210,10 @@ import kanban_paths as _kp  # noqa: E402
 FRESH_KANBAN_EPIC_PATTERN = _kp.EPIC_DOC_PATTERN
 FRESH_KANBAN_STORY_PATTERN = _kp.STORY_DOC_PATTERN
 FRESH_KANBAN_TASK_PATTERN = _kp.TASK_DOC_PATTERN
+BOOK_KANBAN_STORY_PATTERN = _kp.BOOK_STORY_PATTERN
+BOOK_KANBAN_TASK_PATTERN = _kp.BOOK_TASK_PATTERN
+LEGACY_EPIC_UNPADDED_PATTERN = _kp.LEGACY_EPIC_UNPADDED_PATTERN
+LEGACY_STORY_3DIGIT_PATTERN = _kp.LEGACY_STORY_3DIGIT_PATTERN
 SLUG_KANBAN_TASK_PATTERN = _kp.TASK_DOC_PATTERN
 LEGACY_FRESH_KANBAN_EPIC_PATTERN = _kp.LEGACY_EPIC_DOC_PATTERN
 LEGACY_FRESH_KANBAN_STORY_PATTERN = _kp.LEGACY_STORY_DOC_PATTERN
@@ -252,6 +257,7 @@ def prompt_pattern_with_validation(
     suggestion_examples: list[str],
     *,
     strict_zero_match: bool = False,
+    forward_looking_accept: Optional[frozenset[str]] = None,
 ) -> str:
     """Prompt for pattern with required placeholder and preview validation."""
     while True:
@@ -281,6 +287,12 @@ def prompt_pattern_with_validation(
                         "Accepting installer-aligned default."
                     )
                     return value
+                if forward_looking_accept and value in forward_looking_accept and not missing:
+                    print(
+                        "  ℹ️  Forward-looking pattern (book/adopter convention). "
+                        "Accepting before story files exist."
+                    )
+                    return value
                 print(
                     "  ❌ Cannot persist a zero-match pattern while kanban files exist. "
                     "Choose a suggested pattern or enter one that matches files on disk."
@@ -305,6 +317,30 @@ def _pattern_match_score(
     return count if preview_error is None else 0
 
 
+def uses_unpadded_lowercase_epic_layout(project_root: Path, kanban_root: str) -> bool:
+    """
+    True when epics/ contains lowercase epic-N dirs without zero-padded segment (epic-1, not epic-01).
+
+    Glob preview cannot distinguish {epic} vs {epic:02d} placeholders — inspect directory names.
+    """
+    epics_root = (project_root / kanban_root / "epics").resolve()
+    if not epics_root.is_dir():
+        return False
+    for entry in epics_root.iterdir():
+        if not entry.is_dir():
+            continue
+        match = re.fullmatch(r"epic-(\d+)", entry.name)
+        if not match:
+            continue
+        epic_num = int(match.group(1))
+        if entry.name != f"epic-{epic_num}":
+            continue
+        epic_file = entry / f"{entry.name}.md"
+        if epic_file.is_file():
+            return True
+    return False
+
+
 def detect_kanban_doc_patterns(
     project_root: Path,
     kanban_root: str,
@@ -312,19 +348,14 @@ def detect_kanban_doc_patterns(
     """
     Pick epic/story rw-config patterns from on-disk kanban layout.
 
-    Prefers fresh-install layout when it has the highest (or tied) match count.
+    Prefers highest match count across ADR-015 / book / legacy capital layouts.
     Returns (epic_pattern, story_pattern, fresh_layout_detected).
     """
-    epic_candidates = [
-        (FRESH_KANBAN_EPIC_PATTERN, True),
-        (LEGACY_FRESH_KANBAN_EPIC_PATTERN, True),
-        (LEGACY_KANBAN_EPIC_PATTERN, False),
-    ]
-    story_candidates = [
-        (FRESH_KANBAN_STORY_PATTERN, True),
-        (LEGACY_FRESH_KANBAN_STORY_PATTERN, True),
-        (LEGACY_KANBAN_STORY_PATTERN, False),
-    ]
+    epic_candidates = [(pattern, True) for pattern in _kp.FRESH_EPIC_PATTERNS]
+    epic_candidates.append((LEGACY_KANBAN_EPIC_PATTERN, False))
+    story_candidates = [(pattern, True) for pattern in _kp.FRESH_STORY_PATTERNS]
+    story_candidates.append((LEGACY_FRESH_KANBAN_STORY_PATTERN, True))
+    story_candidates.append((LEGACY_KANBAN_STORY_PATTERN, False))
 
     def _best(candidates: List[Tuple[str, bool]]) -> Tuple[str, bool]:
         scored = [
@@ -337,8 +368,18 @@ def detect_kanban_doc_patterns(
             return candidates[0][0], False
         return best_pattern, best_fresh
 
-    epic_pattern, epic_fresh = _best(epic_candidates)
+    if uses_unpadded_lowercase_epic_layout(project_root, kanban_root):
+        epic_pattern, epic_fresh = LEGACY_EPIC_UNPADDED_PATTERN, True
+    else:
+        epic_pattern, epic_fresh = _best(epic_candidates)
     story_pattern, story_fresh = _best(story_candidates)
+    if _pattern_match_score(project_root, kanban_root, story_pattern) == 0:
+        if uses_unpadded_lowercase_epic_layout(project_root, kanban_root):
+            story_pattern = BOOK_KANBAN_STORY_PATTERN
+            story_fresh = True
+        elif epic_pattern == LEGACY_FRESH_KANBAN_EPIC_PATTERN:
+            story_pattern = LEGACY_FRESH_KANBAN_STORY_PATTERN
+            story_fresh = True
     return epic_pattern, story_pattern, epic_fresh and story_fresh
 
 
@@ -372,10 +413,7 @@ def detect_kanban_supplementary_defaults(
 
     Returns (task_doc_pattern, fr_br_root_or_none).
     """
-    task_candidates = [
-        (FRESH_KANBAN_TASK_PATTERN, True),
-        (SLUG_KANBAN_TASK_PATTERN, True),
-    ]
+    task_candidates = [(pattern, True) for pattern in _kp.FRESH_TASK_PATTERNS]
 
     def _best_task() -> str:
         scored = [
@@ -385,6 +423,8 @@ def detect_kanban_supplementary_defaults(
         scored.sort(key=lambda item: item[0], reverse=True)
         if scored[0][0] > 0:
             return scored[0][1]
+        if uses_unpadded_lowercase_epic_layout(project_root, kanban_root):
+            return BOOK_KANBAN_TASK_PATTERN
         return FRESH_KANBAN_TASK_PATTERN
 
     return _best_task(), detect_fr_br_root(project_root, kanban_root)
@@ -510,12 +550,37 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
             project_root, kanban_root
         )
         if fresh_layout:
-            print(
-                "  ℹ️  Detected fresh kanban install layout "
-                "(epics/Epic-{n}/Epic-{n}.md, Story-{story:03d}-*.md)."
-            )
+            if uses_unpadded_lowercase_epic_layout(project_root, kanban_root):
+                print(
+                    "  ℹ️  Detected lowercase fresh kanban layout "
+                    "(epics/epic-{n}/epic-{n}.md; book story-{story:03d}-*.md)."
+                )
+            elif epic_default == LEGACY_FRESH_KANBAN_EPIC_PATTERN:
+                print(
+                    "  ℹ️  Detected fresh kanban install layout "
+                    "(epics/Epic-{n}/Epic-{n}.md, Story-{story:03d}-*.md)."
+                )
+            else:
+                print(
+                    "  ℹ️  Detected fresh kanban install layout "
+                    "(lowercase epic/story patterns)."
+                )
         elif _pattern_match_score(project_root, kanban_root, epic_default) > 0:
             print("  ℹ️  Detected existing kanban files; using best-matching pattern defaults.")
+
+        print(
+            "  ℹ️  Padding: {story:03d} = three-digit story files (book T03); "
+            "{story:02d} / {epic:02d} = ADR-015 two-digit segments."
+        )
+
+        forward_story = frozenset(
+            {
+                story_default,
+                BOOK_KANBAN_STORY_PATTERN,
+                LEGACY_STORY_3DIGIT_PATTERN,
+                LEGACY_FRESH_KANBAN_STORY_PATTERN,
+            }
+        )
 
         task_count, task_samples, _ = preview_pattern_matches(
             project_root, kanban_root, task_default
@@ -539,9 +604,10 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
             kanban_root=kanban_root,
             required_placeholders=["{epic}"],
             suggestion_examples=[
+                LEGACY_EPIC_UNPADDED_PATTERN,
                 FRESH_KANBAN_EPIC_PATTERN,
+                LEGACY_FRESH_KANBAN_EPIC_PATTERN,
                 LEGACY_KANBAN_EPIC_PATTERN,
-                "Epic-{epic}/Epic-{epic}.md",
             ],
             strict_zero_match=strict_patterns,
         )
@@ -553,11 +619,14 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
             kanban_root=kanban_root,
             required_placeholders=["{epic}", "{story}"],
             suggestion_examples=[
+                BOOK_KANBAN_STORY_PATTERN,
                 FRESH_KANBAN_STORY_PATTERN,
+                LEGACY_STORY_3DIGIT_PATTERN,
+                LEGACY_FRESH_KANBAN_STORY_PATTERN,
                 LEGACY_KANBAN_STORY_PATTERN,
-                "Epic-{epic}/stories/E{epic}-S{story}.md",
             ],
             strict_zero_match=strict_patterns,
+            forward_looking_accept=forward_story,
         )
 
         config['task_doc_pattern'] = task_default

@@ -1,6 +1,7 @@
 """Tests for RW installer rw-config generation (BR-084 / E06:S09:T13)."""
 
 import importlib.util
+import sys
 import tempfile
 from pathlib import Path
 from unittest import mock
@@ -97,6 +98,49 @@ def test_e2e_generated_config_epic_pattern_matches_files():
         assert count >= 1
 
 
+def test_signoff_br083_accepts_unpadded_epic_patterns():
+    import yaml
+
+    signoff_path = REPO_ROOT / "packages/frameworks/workflow mgt/scripts/install_github_issue_signoff.py"
+    spec = importlib.util.spec_from_file_location(
+        "install_github_issue_signoff",
+        signoff_path,
+    )
+    signoff = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    sys.modules["install_github_issue_signoff"] = signoff
+    spec.loader.exec_module(signoff)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        (root / "rw-config.yaml").write_text(
+            yaml.dump(
+                {
+                    "use_kanban": True,
+                    "kanban_root": "docs/project-management/kanban",
+                    "epic_doc_pattern": "epics/epic-{epic}/epic-{epic}.md",
+                    "story_doc_pattern": "epics/epic-{epic}/story-{story:03d}-*.md",
+                    "task_doc_pattern": "epics/epic-{epic}/story-{story:03d}/t{task:02d}-*.md",
+                }
+            ),
+            encoding="utf-8",
+        )
+        result = signoff._run_check_rw_config_patterns(
+            root,
+            {
+                "epic_doc_pattern_contains_any": [
+                    "epic-{epic}/epic-{epic}",
+                    "epic-{epic:02d}",
+                ],
+                "story_doc_pattern_contains_any": [
+                    "story-{story:03d}",
+                    "story-{story:02d}",
+                ],
+            },
+        )
+        assert result.passed
+
+
 def test_strict_zero_match_blocks_use_anyway_when_kanban_exists():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
@@ -110,7 +154,7 @@ def test_strict_zero_match_blocks_use_anyway_when_kanban_exists():
             with mock.patch.object(mod, "prompt_yes_no") as mock_yes:
                 result = mod.prompt_pattern_with_validation(
                     prompt="Epic pattern",
-                    default=bad,
+                    default=good,
                     project_root=root,
                     kanban_root=kanban,
                     required_placeholders=["{epic}"],

@@ -98,11 +98,67 @@ def test_detect_kanban_doc_patterns_prefers_lowercase_fresh_layout():
         epic_pat, story_pat, fresh = mod.detect_kanban_doc_patterns(root, kanban)
 
         assert fresh is True
-        assert epic_pat == mod.FRESH_KANBAN_EPIC_PATTERN
-        assert story_pat == mod.FRESH_KANBAN_STORY_PATTERN
-        assert "epic-" in epic_pat
+        assert epic_pat == mod.LEGACY_EPIC_UNPADDED_PATTERN
+        assert story_pat in (
+            mod.BOOK_KANBAN_STORY_PATTERN,
+            mod.FRESH_KANBAN_STORY_PATTERN,
+        )
         assert mod._pattern_match_score(root, kanban, epic_pat) >= 1
         assert mod._pattern_match_score(root, kanban, story_pat) >= 1
+
+
+def test_detect_kanban_doc_patterns_unpadded_epic_only_tree():
+    mod = _load_module()
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        kanban = "docs/project-management/kanban"
+        for n in (1, 2):
+            epic = root / kanban / "epics" / f"epic-{n}" / f"epic-{n}.md"
+            epic.parent.mkdir(parents=True, exist_ok=True)
+            epic.write_text(f"# Epic {n}", encoding="utf-8")
+
+        epic_pat, story_pat, fresh = mod.detect_kanban_doc_patterns(root, kanban)
+        task_pat, _ = mod.detect_kanban_supplementary_defaults(root, kanban)
+
+        assert fresh is True
+        assert epic_pat == mod.LEGACY_EPIC_UNPADDED_PATTERN
+        assert story_pat == mod.BOOK_KANBAN_STORY_PATTERN
+        assert task_pat == mod.BOOK_KANBAN_TASK_PATTERN
+        assert "t{task" in task_pat
+        assert "T{task" not in task_pat
+        assert "-*/" not in task_pat
+
+
+def test_prompt_accepts_forward_looking_story_03d_on_epic_only_tree():
+    mod = _load_module()
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        kanban = "docs/project-management/kanban"
+        epic1 = root / kanban / "epics" / "epic-1" / "epic-1.md"
+        epic1.parent.mkdir(parents=True, exist_ok=True)
+        epic1.write_text("# Epic 1", encoding="utf-8")
+
+        original_prompt = mod.prompt_question
+
+        def _return_book_pattern(prompt, default=None, required=True):
+            return mod.BOOK_KANBAN_STORY_PATTERN
+
+        mod.prompt_question = _return_book_pattern
+        try:
+            value = mod.prompt_pattern_with_validation(
+                prompt="Story document pattern",
+                default=mod.FRESH_KANBAN_STORY_PATTERN,
+                project_root=root,
+                kanban_root=kanban,
+                required_placeholders=["{epic}", "{story}"],
+                suggestion_examples=[],
+                strict_zero_match=True,
+                forward_looking_accept=frozenset({mod.BOOK_KANBAN_STORY_PATTERN}),
+            )
+        finally:
+            mod.prompt_question = original_prompt
+
+        assert value == mod.BOOK_KANBAN_STORY_PATTERN
 
 
 def test_detect_kanban_doc_patterns_legacy_capitalised_fresh_layout():

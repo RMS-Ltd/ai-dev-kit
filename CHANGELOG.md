@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.1.76+1] - 04-06-26
+
+E05:S01:T76 — **Kanban init:** **UXR-018** atomic intake — changelog directory consolidation (`docs/changelog/` vs `docs/changelog-and-release-notes/`); task + boards wired; IPW before implementation. SemVer **v0.4.868+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.76+1.md)
+
+---
+
 ## [0.6.9.16+1] - 04-06-26
 
 E06:S09:T16 — **Kanban init:** **BR-086** / GitHub **#17** intake — lowercase fresh kanban RW mode C patterns & sign-off contract; follow-up on #15/#16. SemVer **v0.4.867+1**.

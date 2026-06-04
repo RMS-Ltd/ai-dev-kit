@@ -134,11 +134,15 @@ Copy-paste fallback if you skip the installer prompts:
 ```yaml
 use_kanban: true
 kanban_root: docs/project-management/kanban
-epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
-story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
+# Lowercase fresh install (UXR-017 / book T03 Step 4.1) — installer mode C detects unpadded epic-N:
+epic_doc_pattern: epics/epic-{epic}/epic-{epic}.md
+story_doc_pattern: epics/epic-{epic}/story-{story:03d}-*.md
+task_doc_pattern: epics/epic-{epic}/story-{story:03d}/t{task:02d}-*.md
 kanban_board: kboard.md
-task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md
 fr_br_root: docs/project-management/kanban/fr-br
+# Capital-case fresh install (legacy) — installer still supports Epic-/Story- paths:
+# epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
+# story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
 ```
 
 Mode C also **detects** `fr-br/` when present and refuses to persist zero-match epic/story patterns while kanban files exist (BR-084).

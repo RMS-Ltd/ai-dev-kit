@@ -1,0 +1,47 @@
+{
+  "version_string": "v0.5.1.76+1",
+  "task_id": "E05:S01:T76",
+  "epic": 5,
+  "story": 1,
+  "task": 76,
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/UXR-018-changelog-directory-consolidation.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md"
+      ]
+    },
+    "epic_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/epic-05.md"
+      ]
+    }
+  },
+  "notes": "RW -k kanban init for UXR-018 atomic intake; implementation deferred pending IPW."
+}

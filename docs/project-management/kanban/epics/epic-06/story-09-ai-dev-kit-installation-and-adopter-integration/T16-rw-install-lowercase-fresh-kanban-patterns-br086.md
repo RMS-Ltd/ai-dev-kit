@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-04  
-**Last updated:** 2026-06-04 (v0.6.9.16+1 — RW -k --art kanban init)  
+**Last updated:** 2026-06-04 (implementation — kit tests green; pending adopter replay + RW)  
 **Version:** v0.6.9.16+1  
 **Code:** E06S09T16
 
@@ -23,6 +23,7 @@ housekeeping_policy: keep
 
 ## Input
 
+- [IPP-E06S09T16](../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md) — IPW planning package (2026-06-04)
 - [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
 - GitHub issue [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) (2026-06-04 book dry-run on `main`)
 - Follow-up comments on [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) / [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) (lowercase path regression)
@@ -45,10 +46,13 @@ housekeeping_policy: keep
 
 ## Deliverables
 
-- `install_release_workflow.py` — lowercase fresh-layout defaults, zero-match policy for forward-looking story patterns, YAML generation
-- `github-issue-install-signoff-contract.yaml` — BR-086 entry; BR-083 check fix
-- Tests: extend `tests/test_install_release_workflow_patterns.py` / `tests/test_install_release_workflow_rw_config.py`
-- Docs: `INSTALL_IN_YOUR_PROJECT.md` / book cross-link as needed
+- [x] `install_release_workflow.py` — filesystem unpadded epic detection; book `03d`/`t{task}` defaults; forward-looking story accept; padding hints
+- [x] `kanban_paths.py` — `BOOK_STORY_PATTERN` / `BOOK_TASK_PATTERN` in fresh pattern tuples
+- [x] `github-issue-install-signoff-contract.yaml` — BR-083 `*_contains_any` alternates; BR-086 entry
+- [x] `install_github_issue_signoff.py` — `*_contains_any` check support
+- [x] Tests — `test_install_release_workflow_patterns.py`, `test_install_release_workflow_rw_config.py` (20 passed locally)
+- [x] `INSTALL_IN_YOUR_PROJECT.md` — lowercase book T03 post-kanban snippet
+- [ ] Adopter replay + sign-off + `RW E06:S09:T16 --art` (uncommitted in working tree)
 
 ---
 
@@ -57,7 +61,7 @@ housekeeping_policy: keep
 - [ ] BR-086 AC satisfied on fresh lowercase kanban replay (ExpensesTracker or kit fixture)
 - [ ] `install_github_issue_signoff.py` reports `[READY] BR-083` when epic pattern matches unpadded on-disk names
 - [ ] GitHub #17 closed after verification comment
-- [ ] IPW package linked before implementation (`IPP-E06S09T16-*`)
+- [x] IPW package linked before implementation — [IPP-E06S09T16](../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
 
 ---
 
@@ -69,4 +73,14 @@ housekeeping_policy: keep
 
 ## Planning
 
-**Next:** `IPW E06:S09:T16` → implement → `RW E06:S09:T16 --art`
+**IPP:** [IPP-E06S09T16](../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md) — **Approved** (2026-06-04)
+
+**Implementation (2026-06-04):** Code complete per [IPP-E06S09T16](../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md) §4 — unpadded `epic-N` dirs detected by name (not glob); capital `Epic-*` path unchanged.
+
+**Next:** ExpensesTracker or book dry-run on `main` → `install_github_issue_signoff.py` `[READY] BR-083` + `[READY] BR-086` → close #17 → **`RW E06:S09:T16 --art`**
+
+## References
+
+- [IPP-E06S09T16](../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
+- [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
+- [GitHub #17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)

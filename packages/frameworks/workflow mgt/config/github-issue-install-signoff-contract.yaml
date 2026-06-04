@@ -37,15 +37,19 @@ issues:
     depends_on: [BR-084]
     when_all:
       - type: rw_config_patterns
-        epic_doc_pattern_contains: "epic-{epic:02d}"
-        story_doc_pattern_contains: "story-{story:02d}"
+        epic_doc_pattern_contains_any:
+          - "epic-{epic}/epic-{epic}"
+          - "epic-{epic:02d}"
+        story_doc_pattern_contains_any:
+          - "story-{story:03d}"
+          - "story-{story:02d}"
       - type: command
         command: python
         args:
           - "{workflow_scripts}/install_release_workflow.py"
           - "--check-deps"
     close_comment: |
-      ✅ **Installer sign-off (automated)** — RW installer deps OK; rw-config uses padded lowercase epic/story patterns aligned with fresh kanban layout (ADR-015).
+      ✅ **Installer sign-off (automated)** — RW installer deps OK; rw-config epic/story patterns match on-disk lowercase fresh layout (unpadded or ADR-015 padded).
       Evidence: adopter `rw-config.yaml`. Related: BR-085 may still need interactive replay for story prompt loop.
 
   - id: UXR-017

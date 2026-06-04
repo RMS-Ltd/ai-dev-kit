@@ -25,7 +25,7 @@ housekeeping_policy: keep
   - **Note:** S00 is Epic-level abstract space only. Repository tasks migrated to S01 (E09:S01:T08).
 
 
-- [x] **E5:S01 – FR Repo (PERPETUAL)** - IN PROGRESS (PERPETUAL - **`v0.5.1.75+1` T75/FR-075**; **v0.5.1.32+0** T32; **v0.5.1.74+3** T74; T73 FR-073)
+- [x] **E5:S01 – FR Repo (PERPETUAL)** - IN PROGRESS (PERPETUAL - **`v0.5.1.76+1` T76/UXR-018**; **`v0.5.1.75+1` T75/FR-075**; **v0.5.1.74+3** T74; T73 FR-073)
   - Story: [`story-01-fr-repo.md`](story-01-fr-repo.md)
   - **Note:** S01 is the repository story (migrated from S00). S01 omitted from board displays (UX optimization).
 
