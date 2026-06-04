@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 4      # Epic 4 — Kanban Framework
-VERSION_STORY = 19    # Story 19 — FR/BR/UXR abstract governance and intake
-VERSION_TASK = 11     # Task 11 — Kanban epic/story path lowercase naming (UXR-017)
-VERSION_BUILD = 1     # Build 1: ADR-015 paths, template pack, installer GH sign-off contract
+VERSION_EPIC = 6      # Epic 6 — Framework Management
+VERSION_STORY = 9     # Story 9 — AI Dev Kit installation and adopter integration
+VERSION_TASK = 16     # Task 16 — RW install lowercase fresh kanban patterns (BR-086)
+VERSION_BUILD = 1     # Build 1: Kanban init — BR-086 / GitHub #17 intake
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.4.19.11+1
+# Current: 0.6.9.16+1

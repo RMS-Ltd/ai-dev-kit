@@ -42,7 +42,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| _(none — refresh on UKW)_ | BR-066 **RESOLVED** at Phase 3 (`--audit-inventory` 0); see T01 if new IPW wiring work is filed | `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
+| E06:S09:T16 | BR-086 / GitHub #17 — lowercase fresh kanban RW mode C patterns & sign-off | `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

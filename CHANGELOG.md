@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.16+1] - 04-06-26
+
+E06:S09:T16 — **Kanban init:** **BR-086** / GitHub **#17** intake — lowercase fresh kanban RW mode C patterns & sign-off contract; follow-up on #15/#16. SemVer **v0.4.867+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.16+1.md)
+
+---
+
 ## [0.4.19.11+1] - 04-06-26
 
 E04:S19:T11 — **UXR-017** kanban path lowercase + padded segments (ADR-015): corpus + template pack migration, installer **GitHub Issue sign-off** contract/hooks, `rw-config` patterns. Expenses Tracker AC5 open. SemVer **v0.4.867+1**.

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-03 (v0.6.9.13+2 – Story 9 Task 13 complete)
+**Last updated:** 2026-06-04 (v0.6.9.16+1 – Kanban documentation setup)
 **Branch:** `epic/6-framework-management`  
 **Version Schema:** `0.6.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -106,7 +106,7 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (2026-06-03 — T07–T12 open from book dry-run BR-078–BR-083 / GitHub #10–#15; T01–T06 complete)
+- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (2026-06-04 — **T16** IN PROGRESS **v0.6.9.16+1** BR-086 / #17; T07–T15 complete)
   - Story: [`story-09-ai-dev-kit-installation-and-adopter-integration.md`](story-09-ai-dev-kit-installation-and-adopter-integration.md)
   - Tasks: **T01–T06** ✅ ([FR-080](../../fr-br/FR-080-greenfield-installation-process.md), [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md), [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md), [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md))
 
@@ -146,7 +146,7 @@ Epic 6 owns the **Framework Management and Maintenance** processes for the ai-de
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-03 (v0.6.9.13+2 – Story 9 Task 13 complete)
+**Last updated:** 2026-06-04 (v0.6.9.16+1 – Kanban documentation setup)
 
 **Goal:**  
 Establish version management processes for framework packages.
@@ -167,7 +167,7 @@ Establish version management processes for framework packages.
 **Status:** TODO  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-03 (v0.6.9.13+2 – Story 9 Task 13 complete)
+**Last updated:** 2026-06-04 (v0.6.9.16+1 – Kanban documentation setup)
 
 **Goal:**  
 Implement processes for updating and migrating framework packages.
@@ -188,7 +188,7 @@ Implement processes for updating and migrating framework packages.
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-03 (v0.6.9.13+2 – Story 9 Task 13 complete)
+**Last updated:** 2026-06-04 (v0.6.9.16+1 – Kanban documentation setup)
 
 **Goal:**  
 Build monitoring and health tracking for framework packages.

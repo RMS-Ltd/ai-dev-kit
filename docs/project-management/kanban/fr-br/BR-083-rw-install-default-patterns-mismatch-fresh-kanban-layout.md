@@ -56,3 +56,9 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
 - [x] Mode C prompt defaults pre-filled from on-disk layout when files exist.
 
 **Verification:** ExpensesTracker T03 replay **2026-06-03** — epic pattern default matched 12 files; story default accepted after **BR-085** fix. Closed **v0.6.9.14+2** (GitHub #15).
+
+---
+
+## Follow-up (2026-06-04 — lowercase fresh install on `main`)
+
+Book dry-run (**#17** / [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)) shows **capital-case path remains RESOLVED**; **lowercase** `epics/epic-{epic}/epic-{epic}.md` still fails install sign-off (`epic-{epic:02d}` required) and mismatched Enter-defaults. Tracked under **E06:S09:T16** — do not reopen #15.

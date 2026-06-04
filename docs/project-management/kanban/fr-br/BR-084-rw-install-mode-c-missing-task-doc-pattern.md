@@ -75,3 +75,9 @@ Manual edit `rw-config.yaml` after install (ai-dev-kit-book T03 Step 4.1).
 - [x] Integration test: `tests/test_install_release_workflow_rw_config.py`.
 
 **Verification:** ExpensesTracker T03 replay **2026-06-03** — generated `rw-config.yaml` includes `task_doc_pattern` and aligned epic/story patterns. Closed **v0.6.9.14+2** (GitHub #16).
+
+---
+
+## Follow-up (2026-06-04 — lowercase fresh install on `main`)
+
+`task_doc_pattern` is **emitted** (sign-off BR-084 READY) but values use wrong padding/glob (`story-{story:02d}-*/T{task:02d}` vs book `story-{story:03d}/t{task:02d}`). See **#17** / [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) · **E06:S09:T16** — do not reopen #16.
