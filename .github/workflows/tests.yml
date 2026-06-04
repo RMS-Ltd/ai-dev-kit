@@ -8,6 +8,9 @@ name: Tests
       - main
       - dev
 
+permissions:
+  contents: read
+
 jobs:
   pytest:
     runs-on: ubuntu-latest
