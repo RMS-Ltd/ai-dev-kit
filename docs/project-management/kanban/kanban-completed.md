@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-04 (RW **E08:S03:T04** — BR-058 resolved)
-**Version:** v0.8.3.4+1
+**Last Updated:** 2026-06-04 (RW **E06:S09:T16** — BR-086 closure)
+**Version:** v0.6.9.16+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,14 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR Abstract Governance)**
+- **[E04:S19:T11](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)** — **UXR-017**: Kanban epic/story path lowercase naming — kit shipped; GH #12–#20 closed.
+  **Completed:** `2026-06-04T23:07:14Z` | **Version:** `v0.4.19.11+1` | **Agent:** `UKW -c` | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+
+#### **Epic 6: Framework Management (Story 9 — Installation)**
+- **[E06:S09:T16](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md)** — **BR-086**: RW install lowercase fresh kanban patterns & sign-off — [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) closed.
+  **Completed:** `2026-06-04T23:09:08Z` | **Version:** `v0.6.9.16+3` | **Agent:** `RW --art` | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | [IPP-E06S09T16](../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
 - **[E08:S03:T04](epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)** — **BR-058**: Repo-wide Tests CI workflow + pytest remediation.

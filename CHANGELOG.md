@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.9.1.3+3] - 04-06-26
+## [0.6.9.16+3] - 04-06-26
 
-E09:S01:T03 — **RW `-k` Kanban documentation setup:** story/epic/kboard markers aligned to v0.9.1.3+3; IPP reconciled. SemVer **v0.4.889+3**.
+E06:S09:T16 — **BR-086 formal closure:** GitHub #17 closed; install-sign-off cluster #12–#20 verified; UKW `-c` archived T16/BR-086 to completed ledgers. SemVer **v0.4.890+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.9.1.3+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.16+3.md)
 
 ---
 

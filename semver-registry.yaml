@@ -1352,6 +1352,14 @@ rc_0:
       story: 1
       task: 3
       build: 3
+    - internal_version: 0.6.9.16+3
+      semver: 0.4.890+3
+      patch: 890
+      rc: 0
+      epic: 6
+      story: 9
+      task: 16
+      build: 3
 rc_1:
   epic_to_minor: {}
   story_to_patch: {}

@@ -1,0 +1,95 @@
+{
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 16,
+    "task_id": "E06:S09:T16",
+    "version_string": "v0.6.9.16+3"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "task_doc",
+      "story_doc",
+      "epic_doc",
+      "fbu_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "surface": "task_doc",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md"
+      ],
+      "changes": [
+        "Version anchor v0.6.9.16+3; RW --art closure note"
+      ],
+      "notes": []
+    },
+    "story_doc": {
+      "surface": "story_doc",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "changes": [
+        "Updated E06:S09:T16 checklist line to v0.6.9.16+3"
+      ],
+      "notes": []
+    },
+    "epic_doc": {
+      "surface": "epic_doc",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-06/epic-06.md"
+      ],
+      "changes": [
+        "Story 9 checklist: T16 COMPLETE v0.6.9.16+3"
+      ],
+      "notes": []
+    },
+    "fbu_doc": {
+      "surface": "fbu_doc",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md"
+      ],
+      "changes": [
+        "BR-086 RESOLVED v0.6.9.16+3; UKW -c archived"
+      ],
+      "notes": []
+    },
+    "kboard": {
+      "surface": "kboard",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "changes": [
+        "Board metadata v0.6.9.16+3 (T16 row previously archived via UKW -c)"
+      ],
+      "notes": []
+    },
+    "fbuboard": {
+      "surface": "fbuboard",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "changes": [
+        "Board metadata v0.6.9.16+3 (BR-086 row previously archived via UKW -c)"
+      ],
+      "notes": []
+    }
+  },
+  "timestamp_utc": "2026-06-04 23:09 UTC"
+}

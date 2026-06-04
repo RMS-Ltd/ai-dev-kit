@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-04 (RW **E08:S03:T04** — BR-058 resolved)
-**Version:** v0.8.3.4+1 (**SemVer** v0.4.886+1)
+**Last Updated:** 2026-06-04 (RW **E06:S09:T16** — BR-086 closure)
+**Version:** v0.6.9.16+3 (**SemVer** v0.4.890+3)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -32,10 +32,11 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 ## 20 Most Recently Completed FR/BR/UXR Items
 
-| FR-003 | FR | Dependency tracking in adopting projects (host owns Best-README / Keep a Changelog / Shields) | 2026-06-04T19:57:56Z | v0.1.2.14+1 | RW |
-
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| UXR-017 | UXR | Kanban epic/story path lowercase naming — GH #20 closed (**E04:S19:T11**) | 2026-06-04T23:07:14Z | v0.4.19.11+1 | UKW -c |
+| BR-086 | BR | RW install lowercase fresh kanban patterns & sign-off — #17 closed (**E06:S09:T16**) | 2026-06-04T23:09:08Z | v0.6.9.16+3 | RW --art |
+| FR-003 | FR | Dependency tracking in adopting projects (host owns Best-README / Keep a Changelog / Shields) | 2026-06-04T19:57:56Z | v0.1.2.14+1 | RW |
 | BR-058 | BR | Missing Tests CI workflow and stale pytest failures (**E08:S03:T04**) | 2026-06-04T22:32:54Z | v0.8.3.4+1 | RW |
 | FR-109 | FR | UKW lean active board contract — validator + Gate 11 (**E02:S16:T18**) | 2026-06-04T22:15:00Z | v0.2.16.18+1 | RW |
 | BR-081 | BR | Kanban install `datetime.utcnow()` deprecated (**E06:S09:T10**) | 2026-06-04T18:04:56Z | v0.6.9.10+2 | RW |

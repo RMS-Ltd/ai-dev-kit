@@ -11,14 +11,14 @@ housekeeping_policy: keep
 **Bug ID:** BR-086  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (wrong persisted `rw-config.yaml` on lowercase fresh kanban; sign-off false negatives)  
-**Status:** OPEN  
+**Status:** RESOLVED ([#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) closed 2026-06-04; adopter replay verified)  
 **GitHub Issue:** [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)  
 **Related:** [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) / [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) (capital-case path **RESOLVED** **v0.6.9.14+2**; lowercase regression) · [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) / [BR-084](BR-084-rw-install-mode-c-missing-task-doc-pattern.md) (`task_doc_pattern` emitted; story/task padding still wrong) · [BR-085](BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) · [UXR-017](UXR-017-kanban-epic-story-path-lowercase-naming.md) / **E04:S19:T11**  
 **Implementing Task:** [E06:S09:T16](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md)  
 **Planning:** [IPP-E06S09T16](../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
 **Created:** 2026-06-04  
-**Last updated:** 2026-06-04 (v0.6.9.16+2 — BR-084/BR-086 sign-off contract; pending adopter verification)  
-**Version:** v0.6.9.16+2  
+**Last updated:** 2026-06-04 (v0.6.9.16+3 — RESOLVED; #17 closed; UKW `-c` archived)  
+**Version:** v0.6.9.16+3  
 **Source:** ai-dev-kit-book setup-spine T03 dry-run (reader `expenses-tracker`); ADK submodule **`main`**; kanban `install_kanban_framework.py --mode fresh` → `install_release_workflow.py --mode c`
 
 ---
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 On **lowercase** fresh kanban (`epics/epic-1/epic-1.md`, unpadded epic segments), RW mode C pre-fills padded `{epic:02d}` defaults, **blocks** forward-looking `story-{story:03d}-*.md`, then persists mismatched `02d` story/task patterns (capital `T`, erroneous `*/` glob). Install sign-off marks **BR-083 NOT READY** when the only epic pattern that matches on-disk files uses unpadded `{epic}`.
 
-**Attempted fix (E06:S09:T16, 2026-06-04):** Installer detects lowercase unpadded epic dirs by filesystem name; pre-fills book-aligned epic/story/task patterns; accepts forward-looking `story:03d` on epic-only trees; BR-083 sign-off uses `*_contains_any` alternates. **BR-084 sign-off (2026-06-04):** `task_doc_pattern_contains_any` accepts `t{task` and `T{task` — fixes book T03 false `ADK-I04.E01` when only capital-`T` substring check failed. Awaiting adopter replay on `main` before RESOLVED.
+**Attempted fix (E06:S09:T16, 2026-06-04):** Installer detects lowercase unpadded epic dirs by filesystem name; pre-fills book-aligned epic/story/task patterns; accepts forward-looking `story:03d` on epic-only trees; BR-083 sign-off uses `*_contains_any` alternates. **BR-084 sign-off (2026-06-04):** `task_doc_pattern_contains_any` accepts `t{task` and `T{task` — fixes book T03 false `ADK-I04.E01` when only capital-`T` substring check failed. **RESOLVED** — [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) closed after adopter replay (2026-06-04).
 
 ---
 
