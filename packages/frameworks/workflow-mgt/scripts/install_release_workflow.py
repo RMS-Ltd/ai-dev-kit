@@ -207,10 +207,11 @@ def prompt_yes_no(prompt: str, default: bool = False) -> bool:
 
 @dataclass
 class ScaffoldResult:
-    """Outcome of version_file scaffold step (BR-088 / E06:S09:T19)."""
+    """Outcome of installer file scaffold steps (BR-088 / #19)."""
 
     status: str
     version_file_missing: bool = False
+    main_changelog_missing: bool = False
     rel_path: str = ""
     message: str = ""
 
@@ -342,6 +343,100 @@ def ensure_version_file_scaffold(
     return ScaffoldResult(
         status="created",
         rel_path=str(version_rel_display),
+        message=msg,
+    )
+
+
+def render_changelog_stub(project_name: str) -> str:
+    """Minimal Keep a Changelog root file for greenfield adopters (#19)."""
+    title = project_name or "Project"
+    return f"""# Changelog — {title}
+
+All notable changes to this project are documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) where applicable.
+
+## [Unreleased]
+
+### Added
+
+- Dev Kit RW scaffolding (initial `CHANGELOG.md` created by `install_release_workflow.py`).
+"""
+
+
+def format_changelog_scaffold_decline_help(changelog_rel: str) -> str:
+    return (
+        f"main_changelog not created at {changelog_rel}. "
+        f"Create before first RW, or re-run the installer and accept scaffold."
+    )
+
+
+def ensure_main_changelog_scaffold(
+    project_root: Path,
+    config: Dict,
+    *,
+    dry_run: bool = False,
+    interactive: bool = True,
+    create_if_missing: Optional[bool] = None,
+) -> ScaffoldResult:
+    """Create main_changelog path when missing (GitHub #19)."""
+    changelog_rel = str(config.get("main_changelog") or "").strip()
+    if not changelog_rel:
+        return ScaffoldResult(status="skipped_no_path")
+
+    changelog_path = (project_root / changelog_rel).resolve()
+    try:
+        changelog_rel_display = changelog_path.relative_to(project_root.resolve())
+    except ValueError:
+        changelog_rel_display = Path(changelog_rel)
+
+    if changelog_path.is_file():
+        return ScaffoldResult(
+            status="skipped_exists",
+            rel_path=str(changelog_rel_display),
+            message=f"✅ main_changelog already exists: {changelog_rel_display}",
+        )
+
+    project_name = str(config.get("project_name") or project_root.name)
+
+    if dry_run:
+        print(
+            f"\n🔍 [DRY RUN] Would offer to create changelog at: {changelog_rel_display}"
+        )
+        return ScaffoldResult(
+            status="dry_run_would_create",
+            rel_path=str(changelog_rel_display),
+        )
+
+    if interactive:
+        if create_if_missing is not None:
+            raise ValueError("create_if_missing is only valid when interactive=False")
+        create = prompt_yes_no(
+            f"Create minimal CHANGELOG at {changelog_rel_display}?",
+            default=True,
+        )
+    else:
+        create = True if create_if_missing is None else create_if_missing
+
+    if not create:
+        help_text = format_changelog_scaffold_decline_help(str(changelog_rel_display))
+        print(f"\n⚠️  {help_text}")
+        return ScaffoldResult(
+            status="declined",
+            main_changelog_missing=True,
+            rel_path=str(changelog_rel_display),
+            message=help_text,
+        )
+
+    changelog_path.write_text(
+        render_changelog_stub(project_name), encoding="utf-8"
+    )
+    msg = f"✅ Created main changelog: {changelog_rel_display}"
+    print(f"\n{msg}")
+    return ScaffoldResult(
+        status="created",
+        rel_path=str(changelog_rel_display),
         message=msg,
     )
 
@@ -1049,6 +1144,7 @@ Brownfield (existing repo):
     print(config_yaml)
     
     version_file_blocking = False
+    changelog_warnings: List[str] = []
 
     if not args.dry_run:
         config_path.write_text(config_yaml, encoding='utf-8')
@@ -1062,9 +1158,25 @@ Brownfield (existing repo):
         if scaffold_result.version_file_missing:
             version_file_blocking = True
             install_warnings.append(scaffold_result.message)
+        changelog_result = ensure_main_changelog_scaffold(
+            project_root,
+            config,
+            dry_run=False,
+            interactive=not bool(args.config),
+        )
+        if changelog_result.main_changelog_missing:
+            changelog_warnings.append(changelog_result.message)
+        elif changelog_result.message and changelog_result.status == "created":
+            print(changelog_result.message)
     else:
         print(f"\n🔍 [DRY RUN] Would write: {config_path}")
         ensure_version_file_scaffold(
+            project_root,
+            config,
+            dry_run=True,
+            interactive=not bool(args.config),
+        )
+        ensure_main_changelog_scaffold(
             project_root,
             config,
             dry_run=True,
@@ -1113,19 +1225,20 @@ Brownfield (existing repo):
     if args.dry_run:
         print("🔍 DRY RUN COMPLETE - No files were modified")
     else:
-        if install_warnings or version_file_blocking:
+        combined_warnings = install_warnings + changelog_warnings
+        if combined_warnings or version_file_blocking:
             if version_file_blocking:
                 emit_install_error("ADK-I03.E12", file=sys.stderr)
             elif any(
                 "pattern" in w.lower() or "kanban" in w.lower() or "sign-off" in w.lower()
-                for w in install_warnings
+                for w in combined_warnings
             ):
                 emit_install_error("ADK-I03.E21", file=sys.stderr)
             else:
                 emit_install_error("ADK-I03.E90", file=sys.stderr)
             print("⚠️  INSTALLATION PARTIAL")
             print("\nIssues requiring follow-up:")
-            for idx, warning in enumerate(install_warnings, start=1):
+            for idx, warning in enumerate(combined_warnings, start=1):
                 print(f"{idx}. {warning}")
             print("\nFinal status: PARTIAL")
         else:

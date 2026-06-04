@@ -103,6 +103,17 @@ issues:
       ✅ **Installer sign-off (automated)** — `version_file` from rw-config.yaml exists on disk (scaffold accepted or created manually).
       Evidence: adopter replay on greenfield repo without pre-existing `src/`. Maintainer: confirm BR-088 AC.
 
+  # GitHub #19: main_changelog scaffold (mode C)
+  - id: BR-089
+    number: 19
+    title: "RW install mode C does not create main_changelog (CHANGELOG.md)"
+    when_all:
+      - type: version_file_exists
+        rw_config_key: main_changelog
+    close_comment: |
+      ✅ **Installer sign-off (automated)** — `main_changelog` from rw-config.yaml exists on disk (scaffold created or pre-existing).
+      Evidence: adopter replay on greenfield repo. Maintainer: confirm #19 AC.
+
   - id: BR-082
     number: 14
     title: "RW install missing pyyaml preflight"
