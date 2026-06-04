@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Changelog and Release Notes
 
-This section is the **sole canonical pillar** for changelog and release-note documentation in this repository. Legacy paths such as `docs/changelog/` and `docs/knowledge/changelog-and-release-notes/` were retired (UXR-018 / E05:S01:T76).
+This section is the **sole canonical pillar** for changelog and release-note documentation in this repository. Legacy paths such as `docs/changelog/` and `docs/knowledge/changelog-and-release-notes/` were retired (UXR-018 / **E05:S09:T12** **v0.5.9.12+2**).
 
 ## Structure
 

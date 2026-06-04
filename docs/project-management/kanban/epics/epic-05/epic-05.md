@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-05-15 (v0.5.1.56+1 — E05:S01:T56 COMPLETE FR-056 workflow docs standardization; E05:S01:T35 COMPLETE FR-035 task template cross-wiring)
+**Last updated:** 2026-06-04 (E05:S09:T12 **v0.5.9.12+3**; E05:S01 **CLOSED**)
 **Branch:** `epic/5-documentation-management`  
 **Version Schema:** `0.5.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -25,9 +25,9 @@ housekeeping_policy: keep
   - **Note:** S00 is Epic-level abstract space only. Repository tasks migrated to S01 (E09:S01:T08).
 
 
-- [x] **E5:S01 – FR Repo (PERPETUAL)** - IN PROGRESS (PERPETUAL - **`v0.5.1.76+1` T76/UXR-018**; **`v0.5.1.75+1` T75/FR-075**; **v0.5.1.74+3** T74; T73 FR-073)
+- [x] **E5:S01 – FR Repo (HISTORICAL REGISTRY)** - ✅ CLOSED (2026-06-04 — FR-072; no new intake; legacy **`v0.5.1.75+1` T75**; T74; T73)
   - Story: [`story-01-fr-repo.md`](story-01-fr-repo.md)
-  - **Note:** S01 is the repository story (migrated from S00). S01 omitted from board displays (UX optimization).
+  - **Note:** S01 is closed historical FR registry only. S01 omitted from board displays (UX optimization).
 
 
 - [ ] **E5:S02 – Documentation Maintenance Framework** - IN PROGRESS (T02-T04 complete, T06 intake ✅ v0.5.2.6+1; T01, T05 TODO — FR-063 impl pending)
@@ -69,7 +69,7 @@ housekeeping_policy: keep
   - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08)
 
 
-- [ ] **E5:S09 – Docusaurus Documentation Portal** - IN PROGRESS (T01–T10 ✅ **v0.5.9.10+2**; portal story tasks complete)
+- [ ] **E5:S09 – Docusaurus Documentation Portal** - IN PROGRESS (T01–T12 ✅; **T12/UXR-018** ✅ **v0.5.9.12+3**)
   - Story: [`story-09-docusaurus-documentation-portal.md`](story-09-docusaurus-documentation-portal.md)
   - **Note:** Atomic FR chain for full Docusaurus adoption (`portal/` → `docs/` publish, CI, deploy, search).
 
@@ -103,19 +103,19 @@ Epic 5 owns the **Documentation Management and Maintenance** framework for the a
 
 ## Stories (Initial)
 
-### Story 1: FR Repo (PERPETUAL)
+### Story 1: FR Repo (HISTORICAL REGISTRY — CLOSED)
 
-**Status:** IN PROGRESS (PERPETUAL)  
+**Status:** CLOSED (HISTORICAL REGISTRY)  
 **Priority:** HIGH  
-**Estimated Effort:** N/A (Perpetual repository)  
-**Last updated:** 2026-04-22 (v0.5.1.42+7 – Story 1 Task 42 complete)
+**Estimated Effort:** N/A (Historical registry)  
+**Last updated:** 2026-06-04 (FR-072 — closed to new intake; legacy FR↔Tnn anchors retained)
 
 **Goal:**  
-Repository story for all Feature Requests. Provides 1:1 traceability between FR numbers and task numbers.
+Historical Feature Request registry. Provides 1:1 traceability between legacy FR numbers and **E05:S01:Tnn** coordinates. **New intake uses semantic delivery stories** (FR-072 / ADR-014).
 
 **Story:** [`story-01-fr-repo.md`](story-01-fr-repo.md)
 
-**Note:** This story was migrated from S00 to S01 as part of repository story abstract space resolution (E09:S01:T08). S00 is now abstract space only.
+**Note:** Migrated from S00 to S01 (E09:S01:T08). **Closed 2026-06-04** — not PERPETUAL / not IN PROGRESS for new work.
 
 ---
 
@@ -222,6 +222,7 @@ Complete Docusaurus adoption: canonical `docs/` ingest (with publish scope), gre
 - [x] E05:S09:T08 – Strict broken links (FR-067 FU-1) ✅ **v0.5.9.8+2** — [T08](story-09-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)
 - [x] E05:S09:T09 – GitHub Pages go-live verification (FR-070 follow-up) ✅ **v0.5.9.9+2** — [T09](story-09-docusaurus-documentation-portal/T09-github-pages-go-live-verification.md)
 - [x] E05:S09:T10 – Strict broken anchors (FR-067 FU-3) ✅ **v0.5.9.10+2** — [T10](story-09-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)
+- [x] E05:S09:T12 – Changelog directory consolidation (UXR-018) ✅ **v0.5.9.12+3** — [T12](story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md)
 
 **Story:** [`story-09-docusaurus-documentation-portal.md`](story-09-docusaurus-documentation-portal.md)
 

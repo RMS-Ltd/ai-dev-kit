@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-04 (RW: E05:S01:T76 **v0.5.1.76+2** — UXR-018 changelog consolidation COMPLETE)
-**Version:** v0.5.1.76+2
+**Last Updated:** 2026-06-04 (RW **E05:S09:T12** **v0.5.9.12+3** — UXR-018 coordinate remediation; E05:S01 CLOSED)
+**Version:** v0.5.9.12+3
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -37,7 +37,7 @@ housekeeping_policy: keep
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-**2026-06-04:** **UXR-018** / **E05:S01:T76** COMPLETE **v0.5.1.76+2** — changelog dirs consolidated; archived from active MoSCOW.
+**2026-06-04:** **UXR-018** / **E05:S09:T12** — **v0.5.9.12+3** coordinate remediation (canonical E05:S09:T12; E05:S01 CLOSED; T76 removed).
 
 - **E04:S19:T11** – UXR-017: Kanban epic/story path lowercase naming - 🔄 IN PROGRESS (MEDIUM, **v0.4.19.11+1** — template pack + installer GH sign-off; ET AC5 open) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md) | Last modified: 2026-06-04 21:00 UTC
 

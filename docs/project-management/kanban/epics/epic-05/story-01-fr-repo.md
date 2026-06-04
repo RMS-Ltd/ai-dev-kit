@@ -6,14 +6,14 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 5, Story 1: FR Repo (HISTORICAL REGISTRY - DEPRECATED FOR NEW INTAKE)
+# Epic 5, Story 1: FR Repo (HISTORICAL REGISTRY — CLOSED)
 
-**Status:** IN PROGRESS (HISTORICAL REGISTRY)
+**Status:** CLOSED (HISTORICAL REGISTRY)
 **Priority:** HIGH  
-**Last updated:** 2026-05-15 (E05:S01:T35 COMPLETE — FR-035 task template cross-wiring; E05:S01:T56 COMPLETE — FR-056 workflow docs standardization)
-**Estimated Effort:** N/A (Perpetual repository)  
+**Last updated:** 2026-06-04 (FR-072 / ADR-014 — registry closed to new intake; semantic delivery stories only)
+**Estimated Effort:** N/A (Historical registry — not a delivery story)  
 **Started:** 2026-01-16  
-**Completed:** N/A (Perpetual - never completes)  
+**Completed:** 2026-06-04 (closed per FR-072 Approach D; legacy task docs retained for traceability)  
 **Version:** v0.5.1.75+1
 **Code:** E5S01
 
@@ -60,7 +60,6 @@ housekeeping_policy: keep
 - [x] **E05:S01:T73 – FR/BR/UXR Board: Open ∧ Taskless Intake Execution Plan** ✅ COMPLETE (v0.5.1.74+2 narrative closure; historical anchor, successor governance on **E04:S19:T06**) — **FR-073**; Phase B/C filed (**T43**, **T109**, **E7:S00** anchors, board MoSCOW) - [Task Document](story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md) | [FR-073](../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md) | [E04:S19:T06](../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 - [x] **E05:S01:T74 – Kanban Intake: Atomic KG-R2 & Semantic KG-R6** ✅ COMPLETE (v0.5.1.74+1 … **+3** reconciliation) — **FR-074**; governance + guides + skill + workflow + board + **epic/6** canonical **T57**/**T109** alignment - [Task Document](story-01-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md) | [FR-074](../../fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
 - [x] **E05:S01:T75 – ICW durable planning artifacts in the documentation system** - ✅ COMPLETE (**v0.5.1.75+1** — **RW E05:S01:T75**; **FR-075**) — policy + ICW docs + `.cursorrules` + `implementation-cycles` README - [Task Document](story-01-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md) | [FR-075](../../fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md)
-- [x] **E05:S01:T76 – Changelog directory consolidation (UXR-018)** - ✅ COMPLETE (**v0.5.1.76+2** — single changelog pillar; legacy dirs retired) - [Task Document](story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md) | [UXR-018](../../fr-br/UXR-018-changelog-directory-consolidation.md) | [IPP](../../implementation-cycles/IPP-E05S01T76-changelog-directory-consolidation.md)
 
 ---
 
@@ -92,8 +91,8 @@ This is the **Feature Request Repository** (FR Repo) for Epic 5. All Feature Req
 - [x] Abstract space established (v0.5.1.0+0)
 - [x] Traceability pattern documented (FR-001 = E05:S01:T01)
 - [x] Migrated from S00 to S01 (E09:S01:T08)
-- [ ] Intake workflow assigns FRs to S01:Txx
-- [ ] Board display logic omits S01 from epic checklists (UX optimization)
+- [x] Intake cutover — new FR/BR/UXR primary tasks use **semantic delivery stories** (not S01) per FR-072 / FR-074
+- [x] Board display logic omits S01 from epic checklists (UX optimization)
 
 ---
 
@@ -121,21 +120,21 @@ This is the **Feature Request Repository** (FR Repo) for Epic 5. All Feature Req
 
 ---
 
-## PERPETUAL State
+## CLOSED — historical registry (not PERPETUAL)
 
-**Status:** IN PROGRESS
+**Status:** CLOSED (2026-06-04)
 
 **Characteristics:**
-- Repository stories never complete
-- Excluded from completion analytics
+- **No new primary intake** on this story after FR-072 / ADR-014
+- Legacy **E05:S01:Tnn** task docs and version coordinates remain for forensic traceability
+- Open checklist rows (e.g. T39, T72) are **historical anchors** — delivery continues under semantic host stories (e.g. **E04:S19**, **E05:S09**)
 - Omitted from epic checklist displays in board views (UX optimization)
-- Still tracked internally in Epic 5 document
+- Still listed internally in the Epic 5 document
 
 **Rationale:**
-- Repository stories are containers, not work units
-- They grow indefinitely (FR-001 through FR-999+)
-- Completion is not meaningful for repositories
-- Board display omission reduces clutter (100+ tasks in S01)
+- Repository story pattern superseded by **KG-R6** semantic placement
+- Treating S01 as “always IN PROGRESS” invited mistaken new intake (e.g. UXR-018 mis-file)
+- **CLOSED** signals: link-only historical coordinates, not an active delivery lane
 
 ---
 
@@ -185,8 +184,8 @@ This is the **Feature Request Repository** (FR Repo) for Epic 5. All Feature Req
 
 ## Notes
 
-- This repository story is PERPETUAL and will never be marked as COMPLETE
-- Tasks in this repository are created automatically by the intake workflow
+- This story is **CLOSED** to new intake (2026-06-04); do not create new primary tasks under S01
+- Historical tasks in this folder remain for FR↔Tnn traceability only
 - Each FR gets a unique task number (T01, T02, T03, etc.)
 - Version numbers follow story-level abstract space pattern (v0.5.1.1+0, v0.5.1.2+0, etc.)
 - Board display omission is intentional (UX optimization)

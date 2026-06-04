@@ -1,4 +1,4 @@
-"""UXR-018 / E05:S01:T76 — changelog directory consolidation regression guards."""
+"""UXR-018 / E05:S09:T12 — changelog directory consolidation regression guards."""
 
 from pathlib import Path
 

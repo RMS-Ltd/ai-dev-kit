@@ -15,10 +15,10 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Code:** UXR-018  
 **Last updated:** 2026-06-04  
-**Version:** v0.5.1.76+2 (E05:S01:T76 — consolidation shipped)
+**Version:** v0.5.9.12+3 (E05:S09:T12 — consolidation + coordinate remediation shipped)
 
-**Implementing Task:** [E05:S01:T76](../epics/epic-05/story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md)  
-**Planning package:** [IPP-E05S01T76](../../../implementation-cycles/IPP-E05S01T76-changelog-directory-consolidation.md)
+**Implementing Task:** [E05:S09:T12](../epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md)  
+**Planning package:** [IPP-E05S09T12](../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)
 
 **Related:** [UXR-013](UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md), [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [E05:S01:T39](../epics/epic-05/story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md), [FR-066](FR-066-docusaurus-canonical-docs-path.md), [portal/README.md](../../../portal/README.md) (Docusaurus pillar map), [IPP-E7S01T11](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (RNF3: no bulk archive path rewrites)
 
@@ -101,7 +101,7 @@ Framework integration examples use `docs/changelog` as a **generic adopter path*
 
 ## Recommendations
 
-- [x] **R1:** Execute phased consolidation under **E05:S01:T76** (inventory → move unique legacy files → fix inbound links → remove empty legacy dirs → portal de-extension).
+- [x] **R1:** Execute phased consolidation under **E05:S09:T12** (inventory → move unique legacy files → fix inbound links → remove empty legacy dirs → portal de-extension).
 - [x] **R2:** Hash-compare and remove `docs/knowledge/changelog-and-release-notes/` duplicates after confirming identity with canonical archive.
 - [x] **R3:** Add a guard (pytest or validator) preventing re-creation of `docs/changelog/` or knowledge mirror paths.
 - [x] **R4:** Cross-link finding into **FR-039** / **E05:S01:T39** review checklist (changelog pillar hygiene item).
@@ -150,9 +150,9 @@ Framework integration examples use `docs/changelog` as a **generic adopter path*
 
 ## Next Steps
 
-- [x] Atomic intake: UXR-018 + **E05:S01:T76** + board wiring (2026-06-04). **AC1** bidirectional links satisfied.
-- [x] Run **IPW** for **E05:S01:T76** — [IPP-E05S01T76](../../../implementation-cycles/IPP-E05S01T76-changelog-directory-consolidation.md).
-- [x] Implementation executed per IPP (2026-06-04); released **v0.5.1.76+2** (**RW E05:S01:T76**).
+- [x] Atomic intake: UXR-018 + task + board wiring (2026-06-04). **AC1** satisfied after remediation to **E05:S09:T12**.
+- [x] Run **IPW** — [IPP-E05S09T12](../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md).
+- [x] Implementation executed per IPP (2026-06-04); released **v0.5.9.12+2** / **v0.5.9.12+3** (**RW E05:S09:T12** — remediation **+3**).
 
 ---
 
@@ -183,22 +183,22 @@ Framework integration examples use `docs/changelog` as a **generic adopter path*
 
 **Decision Flow Results:**
 
-- [x] Story Match Found: Epic 5, Story 1 (FR Repo — maintainer-directed anchor) → Task **T76**
+- [x] Story Match Found: Epic 5, Story 9 (Docusaurus portal) → Task **T12**
 - [ ] New Story Created
 - [ ] New Epic Created
 
 **Assigned To:**
 
 - Epic: 5 — Documentation Management
-- Story: 1 — FR Repo (historical registry; user-requested anchor)
-- Task: 76 — Changelog directory consolidation (UXR-018)
-- Version: `v0.5.1.76+0` (abstract space on first `RW -k` or implementation release)
+- Story: 9 — Docusaurus Documentation Portal (**canonical**)
+- Task: 12 — Changelog directory consolidation (UXR-018)
+- Version: `v0.5.9.12+1` (kanban init), `v0.5.9.12+2` (implementation)
 
 **Kanban Links:**
 
 - Epic: [`epic-05.md`](../epics/epic-05/epic-05.md)
-- Story: [`story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md)
-- Task: [`T76-changelog-directory-consolidation-uxr018.md`](../epics/epic-05/story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md)
+- Story: [`story-09-docusaurus-documentation-portal.md`](../epics/epic-05/story-09-docusaurus-documentation-portal.md)
+- Task: [`T12-changelog-directory-consolidation-uxr018.md`](../epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md)
 
 ---
 
@@ -206,7 +206,7 @@ Framework integration examples use `docs/changelog` as a **generic adopter path*
 
 - User message referenced `docs/changlog/` — no such path; investigation target is **`docs/changelog/`**.
 - Consolidation **does not** change `changelog_dir` in `rw-config.yaml`.
-- Symmetric id **UXR-018 → T76** is optional convenience, not a governance requirement (KG-R6).
+- **KG-R6:** Primary task is **E05:S09:T12** (portal/pillar delivery). Mis-file as E05:S01:T76 was corrected by deleting T76 (see [remediation manifest](../../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)).
 
 ---
 

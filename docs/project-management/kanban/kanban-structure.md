@@ -231,7 +231,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Last Updated:** 2026-02-20 (RW: E05:S08:T02)
 
-**Note:** E5:S01 (FR Repo) is omitted from this board display (PERPETUAL repository story - see Epic 5 document for internal tracking).
+**Note:** E5:S01 (FR Repo) is omitted from this board display (**CLOSED** historical registry — see Epic 5 document for internal tracking).
 
 **Stories:**
 

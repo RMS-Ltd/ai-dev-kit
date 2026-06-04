@@ -8,9 +8,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 
 VERSION_RC = 0        # Release Candidate
 VERSION_EPIC = 5      # Epic 5 — Documentation Management
-VERSION_STORY = 1     # Story 1 — FR Repo (historical registry)
-VERSION_TASK = 76     # Task 76 — Changelog directory consolidation (UXR-018)
-VERSION_BUILD = 2     # Build 2: Consolidate legacy changelog dirs, portal, pytest guard
+VERSION_STORY = 9     # Story 9 — Docusaurus Documentation Portal
+VERSION_TASK = 12     # Task 12 — Changelog directory consolidation (UXR-018)
+VERSION_BUILD = 3     # Build 3: UXR-018 coordinate remediation; E05:S01 CLOSED; T76 removed
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.5.1.76+2
+# Current: 0.5.9.12+3 (E05:S09:T12)

@@ -91,7 +91,7 @@ Actual clean-up (archiving/removal/moves) will be handled by a **separate implem
 ## Related Work
 
 - **FR-039:** AI Dev Kit Project Review and Legacy Clean-Up.
-- **UXR-018 / E05:S01:T76:** Changelog directory consolidation (`docs/changelog/` → canonical `docs/changelog-and-release-notes/`) — scoped implementation sibling to this review.
+- **UXR-018 / E05:S09:T12:** Changelog directory consolidation (`docs/changelog/` → canonical `docs/changelog-and-release-notes/`) — delivered on Docusaurus portal story; not S01 registry.
 - **FR-040:** RW Update Kanban Board on Task Completion.
 - **FR-037:** Kanban Policy – Task Prioritisation and Queue/Stack.
 - **FR-038:** RW Step 7 – Scoped Kanban Sync (UKW Mode).

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-04 (RW: **E05:S01:T76** **v0.5.1.76+2**)
-**Version:** v0.5.1.76+2
+**Last Updated:** 2026-06-04 (**E05:S09:T12** / UXR-018 **v0.5.9.12+3**)
+**Version:** v0.5.9.12+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -21,8 +21,8 @@ housekeeping_policy: keep
 ## 20 Most Recently Completed Tasks
 
 #### **Epic 5: Documentation Management (Story 1 — FR Repo)**
-- **[E05:S01:T76](epics/epic-05/story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md)** — **UXR-018**: Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`.
-  **Completed:** `2026-06-04T14:35:00Z` | **Version:** `v0.5.1.76+2` | **Agent:** `RW` | [UXR-018](fr-br/UXR-018-changelog-directory-consolidation.md) | [IPP](../../implementation-cycles/IPP-E05S01T76-changelog-directory-consolidation.md)
+- **[E05:S09:T12](epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md)** — **UXR-018**: Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`.
+  **Completed:** `2026-06-04T14:35:00Z` | **Version:** `v0.5.9.12+3` | **Agent:** `RW` | [UXR-018](fr-br/UXR-018-changelog-directory-consolidation.md) | [IPP](../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) | [Remediation](../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
 
 #### **Epic 6: Framework Management (Story 9 — Installation)**
 - **[E06:S09:T15](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md)** — **UXR-016**: Install/setup interactive feedback shows external SemVer (banners + telemetry; reclassified from FR-108).

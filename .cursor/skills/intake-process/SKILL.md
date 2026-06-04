@@ -30,8 +30,9 @@ Only **after** 1–5 may you treat intake as complete. **RW / RW -k** versions t
 ### Transition guardrail (FR-072 Approach D)
 
 - For this repo's current migration path, **do not** open new intake tasks under dedicated repository stories (`FR Repo`, `BR Repo`, `UXR Repo`) unless explicitly required for historical backfill.
+- **Hard block (ai-dev-kit):** **E05:S01 is CLOSED** (historical FR registry). **Never** create a new primary task under `story-01-fr-repo/` (FR-072 / ADR-014). UXR-018 → **E05:S09:T12** only ([remediation manifest](../../docs/maintenance/coordinate-remediation-uxr018-e05s09t12.md)); **E05:S01:T76 was deleted** — do not recreate.
 - **Never file primary tasks under `S00` / `Story-000`:** `S00` is **abstract space only** (`0.{epic}.0.0+0`) — no concrete tasks (see **E5:S00**, **E7:S00** after BR-076).
-- New intake should create the **one** primary task in the best semantic delivery story (e.g. **E07:S01**, **E07:S05**, **E06:S06**) and keep historical registry anchors as link-only redirects.
+- New intake should create the **one** primary task in the best semantic delivery story (e.g. **E05:S09** portal, **E05:S02** doc maintenance, **E07:S01**, **E06:S06**) and keep historical registry anchors as link-only redirects.
 
 ### Optional convention (not required)
 

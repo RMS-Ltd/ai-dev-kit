@@ -26,7 +26,7 @@ E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/epic-04/st
 ## Decision
 
 1. **S00** is **abstract space only** (`0.{epic}.0.0+0`) — **no concrete tasks** on any epic’s S00 story.
-2. **E5:S01, E6:S01** (and former E7:S00 registry paths) are **historical registries** — valid forensic anchors, **not** primary homes for **new** intake.
+2. **E5:S01** (CLOSED), **E6:S01** (and former E7:S00 registry paths) are **historical registries** — valid forensic anchors, **not** primary homes for **new** intake.
 3. **New intake** (FR-072 D2): primary implementing tasks MUST be filed under the **semantic delivery story** (KG-R6). Optional numeric symmetry (FR-047 → T47) is not required.
 4. **FR-021** is **superseded for new intake**; historical 1:1 repo-story mapping remains linkable.
 5. **Validators and RW** accept **legacy repository coordinates** as historical-valid; they must not **require** new work on repository stories.
@@ -37,7 +37,7 @@ E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/epic-04/st
 
 | Epic | S00 | Repository / registry story | New intake primary task |
 | ---- | --- | --------------------------- | ------------------------ |
-| E5 | [story-00-fr-repo](../../project-management/kanban/epics/epic-05/story-00-fr-repo.md) abstract | [story-01-fr-repo](../../project-management/kanban/epics/epic-05/story-01-fr-repo.md) historical | Delivery epic/story (e.g. E4, E6, E7:S01) |
+| E5 | [story-00-fr-repo](../../project-management/kanban/epics/epic-05/story-00-fr-repo.md) abstract | [story-01-fr-repo](../../project-management/kanban/epics/epic-05/story-01-fr-repo.md) **CLOSED** historical | Delivery epic/story (e.g. E4, E5:S09, E6, E7:S01) |
 | E6 | story-000 abstract | [story-01-br-repo](../../project-management/kanban/epics/epic-06/story-01-br-repo.md) historical | Delivery epic/story |
 | E7 | [story-00-uxr-repo](../../project-management/kanban/epics/epic-07/story-00-uxr-repo.md) abstract | T01–T06 under `story-00-uxr-repo/` historical only | E7:S01, E7:S05, host epic story |
 
@@ -59,6 +59,7 @@ E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/epic-04/st
 | Legacy anchor | Role | Primary delivery / notes |
 | ------------- | ---- | ------------------------ |
 | E05:S01:T72 | FR-072 registry task | **E04:S19:T08** implements FR-072 |
+| *(retired)* E05:S01:T76 | Deleted — never use | **E05:S09:T12** (UXR-018 changelog pillar + portal IA) |
 | E05:S01:T21 | FR-021 registry | **E04:S19:T07** merged into **T08** |
 | E07:S00:T01–T06 | UXR registry anchors | Historical; see story-00-uxr-repo |
 | E07:S00:T05 (UXR-005) | Split registry | **E07:S01:T09** implementing |

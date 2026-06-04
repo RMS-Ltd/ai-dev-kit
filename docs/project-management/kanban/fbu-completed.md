@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-04 (RW — **UXR-018** changelog consolidation **v0.5.1.76+2**)
-**Version:** v0.5.1.76+2 (**SemVer** v0.4.869+2)
+**Last Updated:** 2026-06-04 (RW — **UXR-018** changelog consolidation **v0.5.9.12+2**)
+**Version:** v0.5.9.12+2 (**SemVer** v0.4.869+2)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,7 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
-| UXR-018 | UXR | Changelog directory consolidation — single pillar `docs/changelog-and-release-notes/` (**E05:S01:T76**) | 2026-06-04T14:35:00Z | v0.5.1.76+2 | RW |
+| UXR-018 | UXR | Changelog directory consolidation — single pillar `docs/changelog-and-release-notes/` (**E05:S09:T12**) | 2026-06-04T14:35:00Z | v0.5.9.12+3 | RW |
 | UXR-016 | UXR | Install/setup interactive feedback shows external SemVer (**E06:S09:T15**; reclassified from FR-108) | 2026-06-04T12:00:00Z | v0.6.9.15+2 | RW |
 | BR-085 | BR | RW Mode C story pattern prompt infinite loop after fresh kanban (**E06:S09:T14**) | 2026-06-03T23:17:03Z | v0.6.9.14+2 | RW |
 | BR-083 | BR | RW install default epic/story patterns mismatch fresh kanban (**E06:S09:T12**) | 2026-06-03T23:17:03Z | v0.6.9.14+2 | RW |

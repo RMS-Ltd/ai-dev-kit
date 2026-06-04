@@ -9,19 +9,27 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.1.76+2] - 04-06-26
+## [0.5.9.12+3] - 04-06-26
 
-E05:S01:T76 — **UXR-018:** Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`; portal sidebar + index link repair; pytest guard. SemVer **v0.4.869+2**.
+E05:S09:T12 — **UXR-018 coordinate remediation:** Canonical task **E05:S09:T12**; deleted mis-placed **E05:S01:T76**; **E05:S01** historical FR registry **CLOSED**; traceability + registry alignment. SemVer **v0.4.870+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.76+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.12+3.md)
 
 ---
 
-## [0.5.1.76+1] - 04-06-26
+## [0.5.9.12+2] - 04-06-26
 
-E05:S01:T76 — **Kanban init:** **UXR-018** atomic intake — changelog directory consolidation (`docs/changelog/` vs `docs/changelog-and-release-notes/`); task + boards wired; IPW before implementation. SemVer **v0.4.868+1**.
+E05:S09:T12 — **UXR-018:** Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`; portal sidebar + index link repair; pytest guard. SemVer **v0.4.869+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.76+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.76+2.md) (archive filename retains orphan label **v0.5.1.76+2**)
+
+---
+
+## [0.5.9.12+1] - 04-06-26
+
+E05:S09:T12 — **Kanban init:** **UXR-018** atomic intake — changelog directory consolidation; task + boards wired; IPW before implementation. SemVer **v0.4.868+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.76+1.md) (archive filename retains orphan label **v0.5.1.76+1**)
 
 ---
 
