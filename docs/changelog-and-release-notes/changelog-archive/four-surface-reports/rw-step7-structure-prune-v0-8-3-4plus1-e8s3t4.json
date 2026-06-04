@@ -1,0 +1,18 @@
+{
+  "contract": "FR-097 structure-prune — terminal task/FBU row removal (RW Step 7 E08:S03:T04)",
+  "release_scope": {
+    "task_id": "E08:S03:T04",
+    "version_string": "v0.8.3.4+1"
+  },
+  "rows": {
+    "E08:S03:T04": {
+      "allowed": true,
+      "reason": "COMPLETE v0.8.3.4+1 — archived to kanban-completed.md"
+    },
+    "BR-058": {
+      "allowed": true,
+      "reason": "RESOLVED v0.8.3.4+1 — archived to fbu-completed.md"
+    }
+  },
+  "timestamp_utc": "2026-06-04 22:32:54 UTC"
+}

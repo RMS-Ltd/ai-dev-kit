@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-04 (RW **E09:S01:T03** — FR-032.3 RC gap comparison)
-**Version:** v0.9.1.3+1
+**Last Updated:** 2026-06-04 (RW **E08:S03:T04** — BR-058 resolved)
+**Version:** v0.8.3.4+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
+- **[E08:S03:T04](epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)** — **BR-058**: Repo-wide Tests CI workflow + pytest remediation.
+  **Completed:** `2026-06-04T22:32:54Z` | **Version:** `v0.8.3.4+1` | **Agent:** `RW` | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | [IPP](../../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
 
 #### **Epic 9: Release Candidate Readiness (Story 1 — RC Readiness Gap Analysis)**
 - **[E09:S01:T03](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md)** — **FR-032.3**: RC gap comparison — T01 inventory, T02 RC=1 criteria, gap matrix report.

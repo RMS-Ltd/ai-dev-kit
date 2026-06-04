@@ -17,4 +17,16 @@ bash "packages/frameworks/workflow-mgt/scripts/validation/run_workflow_scripts_c
 
 **Legacy alias:** `run_isolated_pytest.sh` delegates to the CI runner.
 
-**Broader repo pytest:** See **E08:S03:T04** / **BR-058** for a full-repo Tests workflow (out of scope for H1).
+## Two-gate CI model (E07:S07:T02 + E08:S03:T04)
+
+| Workflow | Scope | Trigger |
+| -------- | ----- | ------- |
+| [`workflow-scripts-pytest.yml`](../../../../../../.github/workflows/workflow-scripts-pytest.yml) | Workflow Management validation corpus + curated co-located tests | Path filter: `packages/frameworks/workflow-mgt/**` |
+| [`tests.yml`](../../../../../../.github/workflows/tests.yml) | Repo-wide root `tests/` suite | Every PR + push to `main`/`dev` |
+
+**Local repo-wide pytest:**
+
+```bash
+pip install -e ".[dev]"
+python -m pytest tests/
+```

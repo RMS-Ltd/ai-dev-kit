@@ -12,7 +12,7 @@ SCRIPT_PATH = (
     REPO_ROOT
     / "packages"
     / "frameworks"
-    / "workflow mgt"
+    / "workflow-mgt"
     / "scripts"
     / "install_receipt.py"
 )

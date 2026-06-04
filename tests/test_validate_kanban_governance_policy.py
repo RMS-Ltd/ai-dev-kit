@@ -132,6 +132,8 @@ Scripts (UKW, RW) that update the MoSCOW section respect stack vs queue or docum
 that ordering is manual or agent-defined.
 
 See the board guide for prioritisation and queue/stack.
+
+Active MoSCOW rows use a terminal pipe-delimited field: `| Last modified: YYYY-MM-DD HH:MM UTC`.
 """
         passed, errors = validate_policy(content)
         assert passed, errors

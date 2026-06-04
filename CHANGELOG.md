@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.4+1] - 04-06-26
+
+E08:S03:T04 — **BR-058:** Repo-wide **Tests** CI workflow (Python 3.11) and pytest remediation — 348 tests green locally. SemVer **v0.4.886+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.4+1.md)
+
+---
+
 ## [0.9.1.3+1] - 04-06-26
 
 E09:S01:T03 — **FR-032.3 gap comparison:** T01 inventory + T02 RC=1 criteria + gap matrix report; T04–T07 follow-on index; IPP wired. SemVer **v0.4.885+1**.

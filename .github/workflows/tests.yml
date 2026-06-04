@@ -1,0 +1,27 @@
+# E08:S03:T04 / BR-058 — repo-wide pytest gate for root tests/ suite.
+name: Tests
+
+"on":
+  pull_request:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install test dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Run pytest
+        run: python -m pytest tests/
