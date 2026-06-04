@@ -129,6 +129,17 @@ docs/project-management/kanban/
 
 Mode **C** of `install_release_workflow.py` **detects** this layout and pre-fills matching defaults (press Enter to accept). If detection finds files, you should see match previews instead of zero-match warnings.
 
+### Greenfield `version_file` scaffold (BR-088 / GitHub #18)
+
+Greenfield adopters often have **no `src/` tree** when mode C runs. After `rw-config.yaml` is written, the installer **prompts** (default **Yes**):
+
+> Create minimal version file at `src/your_app/version.py` (initial `0.1.1.1+1`)?
+
+- **Yes** — creates parent directories and a `version.py` stub with `RC.EPIC.STORY.TASK+BUILD` constants (`VERSION_STRING` included).
+- **No** — install reports **INSTALLATION PARTIAL** with copy-paste `mkdir` / versioning guidance (not **SUCCESS** until the file exists).
+
+Use `--dry-run` to preview without writing the stub. Book T03 Step 3.2 manual scaffold remains valid if you declined the prompt.
+
 Copy-paste fallback if you skip the installer prompts:
 
 ```yaml

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – Kanban Board
 
 **Last Updated:** 2026-06-05 (RW: E06:S09:T18)
-**Version:** v0.6.9.18+2
+**Version:** v0.6.9.19+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -45,7 +45,9 @@ housekeeping_policy: keep
 
 **2026-06-05:** Intake **BR-088** / GitHub **#18** (mode C missing `version_file` scaffold) → **E06:S09:T19**.
 
-- **E06:S09:T19** – BR-088: RW install version_file scaffold (no src/) - 📋 TODO (MEDIUM, GitHub **#18**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | Last modified: 2026-06-05 17:10 UTC
+**2026-06-05:** **E06:S09:T19** released **v0.6.9.19+1** — **BR-088** version_file scaffold on RW mode C.
+
+- **E06:S09:T19** – BR-088: RW install version_file scaffold (no src/) - ✅ COMPLETE (MEDIUM, **v0.6.9.19+1**, GitHub **#18**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | Last modified: 2026-06-05 17:10 UTC
 
 **2026-06-04:** Intake **BR-086** / GitHub **#17** (lowercase fresh kanban RW mode C; follow-up on #15/#16) → **E06:S09:T16**.
 

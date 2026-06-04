@@ -66,7 +66,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T18 – BR-087 framework slug install closure (wave 2)** - ✅ COMPLETE (**v0.6.9.18+2** — maintainer slug dirs, install warnings, registry/GitHub release) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [IPP-E06S09T18](../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md) | [BR-087](../../fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [UXR-016](../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 
-- [ ] **E06:S09:T19 – RW install version_file scaffold (BR-088)** - 📋 TODO (MEDIUM, GitHub **#18**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)
+- [x] **E06:S09:T19 – RW install version_file scaffold (BR-088)** - ✅ COMPLETE (**v0.6.9.19+1** — mode C version_file prompt + stub) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [IPP-E06S09T19](../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md) | [BR-088](../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 
 ---
 

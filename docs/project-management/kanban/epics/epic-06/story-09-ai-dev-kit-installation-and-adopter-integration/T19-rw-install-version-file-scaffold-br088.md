@@ -9,11 +9,14 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 19: RW install version_file scaffold (BR-088)
 
 **Task ID:** E06:S09:T19  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-05  
+**Version:** v0.6.9.19+1  
 **Code:** E06S09T19
+
+**Planning package:** [IPP-E06S09T19](../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
 
 **Upstream:** [BR-088](../../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)  
 **Related:** [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) · [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) · [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
@@ -22,6 +25,7 @@ housekeeping_policy: keep
 
 ## Input
 
+- [IPP-E06S09T19](../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
 - [BR-088](../../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)
 - [GitHub #18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 - `install_release_workflow.py` — mode C `version_file` prompt and post-write hooks
@@ -44,20 +48,20 @@ Update install docs and optional `github-issue-install-signoff-contract.yaml` en
 
 ## Deliverable
 
-- [ ] `install_release_workflow.py` scaffold or explicit blocker for missing `version_file`
-- [ ] Tests under `tests/test_install_release_workflow_*.py`
-- [ ] `INSTALL_IN_YOUR_PROJECT.md` (and book cross-link note if applicable)
+- [x] `install_release_workflow.py` scaffold or explicit blocker for missing `version_file`
+- [x] Tests under `tests/test_install_release_workflow_version_scaffold.py`
+- [x] `INSTALL_IN_YOUR_PROJECT.md` (greenfield version_file scaffold subsection)
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] Greenfield repo without `src/` → after mode C, `version_file` exists on disk **or** install stops with mandatory next step
-- [ ] Sign-off / docs reference scaffold behaviour when `src/` absent
+- [x] Greenfield repo without `src/` → after mode C, `version_file` exists on disk **or** install stops with mandatory next step
+- [x] Sign-off / docs reference scaffold behaviour when `src/` absent
 - [ ] **BR-088** / GitHub **#18** closable after adopter replay
 
 ---
 
 ## Version Anchor
 
-📋 TODO — run **`RW -k E06:S09:T19 --art`** after intake lands on `dev`
+✅ COMPLETE (**v0.6.9.19+1** — RW E06:S09:T19)

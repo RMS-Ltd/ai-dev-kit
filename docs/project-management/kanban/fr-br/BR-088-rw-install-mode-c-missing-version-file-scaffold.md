@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-088  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (adopter manual step; RW blocked until version file exists)  
-**Status:** OPEN  
+**Status:** OPEN (fix attempted **v0.6.9.19+1** — scaffold prompt + stub; adopter verification pending)  
 **GitHub Issue:** [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)  
 **Implementing Task:** [E06:S09:T19](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md)  
 **Created:** 2026-06-05  

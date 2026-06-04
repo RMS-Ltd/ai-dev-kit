@@ -139,6 +139,22 @@ def _run_check_rw_config_patterns(
     return CheckResult("rw_config_patterns", True, "rw-config.yaml patterns OK")
 
 
+def _run_check_version_file_exists(
+    project_root: Path, spec: dict[str, Any]
+) -> CheckResult:
+    config = _read_rw_config(project_root)
+    key = str(spec.get("rw_config_key") or "version_file")
+    rel = config.get(key)
+    if not rel:
+        return CheckResult("version_file_exists", False, f"rw-config missing {key}")
+    path = Path(str(rel))
+    if not path.is_absolute():
+        path = project_root / path
+    if path.is_file():
+        return CheckResult("version_file_exists", True, f"{key} exists: {rel}")
+    return CheckResult("version_file_exists", False, f"{key} not found: {rel}")
+
+
 def _run_check_command(project_root: Path, spec: dict[str, Any]) -> CheckResult:
     cmd = spec.get("command")
     args = _expand_args(spec.get("args") or [], project_root)
@@ -293,6 +309,8 @@ def _evaluate_issue(
             checks.append(_run_check_kanban_padding(project_root, spec))
         elif ctype == "note":
             checks.append(_run_check_note(project_root, spec))
+        elif ctype == "version_file_exists":
+            checks.append(_run_check_version_file_exists(project_root, spec))
         else:
             checks.append(CheckResult(ctype or "unknown", False, f"unknown check type {ctype!r}"))
 

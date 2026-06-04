@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.10+2] - 04-06-26
+## [0.6.9.19+1] - 05-06-26
 
-E06:S09:T10 — **BR-081 / GitHub #13:** Replace deprecated `datetime.utcnow()` in kanban installer with timezone-aware UTC; deprecation guard tests. SemVer **v0.4.878+2**. Fix pending user verification on Python 3.12+.
+E06:S09:T19 — **BR-088 / GitHub #18:** RW mode C prompts to scaffold missing `version_file` (dirs + VERSION_* stub); decline → PARTIAL. SemVer **v0.4.878+1**. Adopter verification pending.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.10+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.19+1.md)
 
 ---
 
