@@ -107,6 +107,7 @@ The project root is kept minimal. Only the following belong there:
 - **CHANGELOG.md** – Main changelog (Keep a Changelog)
 - **CONTRIBUTING.md** – Contribution guidelines
 - **INSTALL_IN_YOUR_PROJECT.md** – How to install frameworks (adopter-facing)
+- **DEPENDENCIES.md** (optional) – Upstream doc/style register; copy template from [`examples/adopter-upstream-register.md`](examples/adopter-upstream-register.md) — see [`adopter-external-resource-dependency-tracking.md`](adopter-external-resource-dependency-tracking.md)
 - **Config files** – e.g. `rw-config.yaml`, `semver-registry.yaml`
 
 **Maintainer runbooks** (build packages, upload to releases, etc.) live in **`docs/maintenance/`**, not in root. See [docs/maintenance/README.md](../../maintenance/README.md).
@@ -138,6 +139,7 @@ The project root is kept minimal. Only the following belong there:
 | **Project utilities** | `scripts/` | Optional reference only |
 | **Book content** | `docs/documentation/`, `docs/knowledge/` | Ignore (book project only) |
 | **Maintainer runbooks** | `docs/maintenance/` | Reference only (build/upload; not for adoption) |
+| **Upstream doc register (optional)** | `DEPENDENCIES.md` or `docs/upstream-register.md` | Copy [`examples/adopter-upstream-register.md`](examples/adopter-upstream-register.md); track Best-README / Keep a Changelog / Shields per [adopter-external-resource-dependency-tracking.md](adopter-external-resource-dependency-tracking.md) |
 
 ---
 

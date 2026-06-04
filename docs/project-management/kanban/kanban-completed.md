@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-04 (RW **E02:S16:T18** — FR-109 lean board enforcement)
-**Version:** v0.2.16.18+1
+**Last Updated:** 2026-06-04 (RW **E01:S02:T14** — FR-003 adopter upstream tracking)
+**Version:** v0.1.2.14+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 1: AI Dev Kit Core (Story 2 — Package & Repo Architecture)**
+- **[E01:S02:T14](epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)** — **FR-003**: Adopter external resource dependency tracking (guide + copy-paste templates).
+  **Completed:** `2026-06-04T19:57:56Z` | **Version:** `v0.1.2.14+1` | **Agent:** `RW` | [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | [IPP](../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 #### **Epic 2: Workflow Management (Story 16 — Perpetual)**
 - **[E02:S16:T18](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T18-ukw-lean-active-board-contract-fr109.md)** — **FR-109**: UKW lean active board contract — validator, Gate 11, dual-source parity.

@@ -9,14 +9,6 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.13.8+1] - 05-06-26
-
-E04:S13:T08 — **UXR-019 MoSCOW state icons:** `IN REVIEW` (A1) and `WAITING` (B1) in `state_icons.py`; governance/guide updates; kboard T11/T16 sign-off rows → WAITING. SemVer **v0.4.884+1**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.13.8+1.md)
-
----
-
 ## [0.1.2.14+1] - 04-06-26
 
 E01:S02:T14 — **Adopter external dependency tracking (FR-003):** Guide + copy-paste register/workflow/shell examples; host projects own Best-README / Keep a Changelog / Shields review. SemVer **v0.4.883+1**.

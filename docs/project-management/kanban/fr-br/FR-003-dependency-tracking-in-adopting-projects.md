@@ -12,10 +12,11 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-07  
 **Submitted By:** RMS  
 **Priority:** MEDIUM  
-**Status:** INTAKE
+**Status:** COMPLETE (v0.1.2.14+1 — RW E01:S02:T14)
 
 **Implementing Task:** [E01:S02:T14](../epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)  
-**Historical registry:** E05:S01:T03
+**Historical registry:** E05:S01:T03  
+**Implementation plan:** [IPP-E01S02T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 ---
 
@@ -27,7 +28,7 @@ When projects using ai-dev-kit are incepted, responsibility for tracking externa
 
 ## Description
 
-Currently, Story 4 (E7:S04) includes tasks for setting up dependency tracking for external resources (Best-README-Template, Keep a Changelog, Shields.io) within ai-dev-kit itself. However, this creates an unnecessary middleman layer.
+Early intake referenced Epic 7 “README template” story tasks for **ai-dev-kit–side** upstream tracking. That approach was rejected: it would make ai-dev-kit a middleman between adopters and third-party style guides.
 
 **Problem:**
 - ai-dev-kit would need to track updates to external resources
@@ -35,14 +36,14 @@ Currently, Story 4 (E7:S04) includes tasks for setting up dependency tracking fo
 - This adds an extra layer of indirection and maintenance overhead
 - Each adopting project should directly track the resources they use
 
-**Solution:**
-- Remove dependency tracking responsibility from ai-dev-kit
-- Provide guidance and tooling for adopting projects to track dependencies directly
-- ai-dev-kit provides the template and initial setup, but tracking becomes the adopting project's responsibility
-- This aligns with the "copy, don't reference" principle from the versioning framework
+**Solution (delivered under E01:S02:T14):**
+- ai-dev-kit does **not** track Best-README / Keep a Changelog / Shields for adopters
+- Adopter guide + copy-paste templates under `docs/documentation/user-docs/`
+- Adopting projects maintain their own register and review cadence
+- Aligns with the "copy, don't reference" principle from the versioning framework
 
 **Use Case:**
-- Project adopts ai-dev-kit and uses the README template
+- Project adopts ai-dev-kit and uses README/changelog/badge patterns
 - Project directly tracks Best-README-Template, Keep a Changelog, and Shields.io for updates
 - No need to wait for ai-dev-kit to update and propagate changes
 - Project has direct control over when and how to incorporate upstream changes
@@ -52,15 +53,15 @@ Currently, Story 4 (E7:S04) includes tasks for setting up dependency tracking fo
 ## Requirements
 
 ### Functional Requirements
-- [ ] Remove dependency tracking tasks from ai-dev-kit (E07:S04:T04, T05, T06)
-- [ ] Create guidance documentation for adopting projects on how to track external dependencies
-- [ ] Provide example tooling/scripts for dependency tracking in adopting projects
-- [ ] Update Story 4 scope to focus on template creation and customization guidance only
+- [x] No ai-dev-kit responsibility to track external README/style upstreams for adopters (policy in adopter guide)
+- [x] Guidance documentation for adopting projects on how to track external dependencies
+- [x] Example copy-paste templates for dependency tracking in adopting projects (`user-docs/examples/`)
+- [x] README template work remains separate ([FR-002](FR-002-update-been-there-readme.md) / E01:S02:T13); this FR covers **tracking** only
 
 ### Non-Functional Requirements
-- [ ] Documentation should be clear and actionable
-- [ ] Tooling should be simple and maintainable
-- [ ] Approach should align with framework principles (copy, don't reference)
+- [x] Documentation is clear and actionable
+- [x] Tooling is simple copy-paste (not maintained bots in ai-dev-kit)
+- [x] Approach aligns with framework principles (copy, don't reference)
 
 ---
 
@@ -87,22 +88,22 @@ Currently, Story 4 (E7:S04) includes tasks for setting up dependency tracking fo
 ## Use Cases
 
 **Primary Use Case:**
-A project adopts ai-dev-kit and uses the README template. The project directly tracks Best-README-Template, Keep a Changelog, and Shields.io for updates, incorporating changes when appropriate without waiting for ai-dev-kit updates.
+A project adopts ai-dev-kit and uses README/changelog/badge patterns. The project directly tracks Best-README-Template, Keep a Changelog, and Shields.io for updates, incorporating changes when appropriate without waiting for ai-dev-kit updates.
 
 **Additional Use Cases:**
 - Project wants to customize dependency tracking approach for their specific needs
 - Project wants to track additional dependencies beyond the standard three
-- Project wants to automate dependency update notifications
+- Project wants to automate dependency update notifications (optional templates provided)
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] E07:S04:T04, T05, T06 removed or reframed as guidance for adopting projects
-- [ ] Documentation created explaining how adopting projects should track external dependencies
-- [ ] Example tooling/scripts provided for dependency tracking
-- [ ] Story 4 scope updated to reflect new approach
-- [ ] Clear separation: ai-dev-kit provides template, adopting projects track dependencies
+- [x] Historical E07:S04 “README + upstream tracking in kit” intent **not** implemented in ai-dev-kit; E07:S04 is [maintenance automation and tooling](../epics/epic-07/story-04-maintenance-automation-and-tooling.md) (unrelated, already complete)
+- [x] Documentation created: [`adopter-external-resource-dependency-tracking.md`](../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
+- [x] Example templates: [`user-docs/examples/`](../../../documentation/user-docs/examples/) (`adopter-upstream-register.md`, `adopter-upstream-check.yml`, `adopter-upstream-check.sh`)
+- [x] Clear separation: ai-dev-kit provides guidance/templates; adopting projects track dependencies
+- [x] **Implementing Task** ↔ **E01:S02:T14** bidirectional links
 
 ---
 
@@ -115,9 +116,9 @@ A project adopts ai-dev-kit and uses the README template. The project directly t
 - None
 
 **Related Work:**
-- **Epic 7:** Examples & Adoption Support
-- **Story 4:** README Template Based on Best-README-Template (E7:S04)
-- **Tasks:** E07:S04:T04, T05, T06 (to be reframed or removed)
+- [FR-002](FR-002-update-been-there-readme.md) — README template (E01:S02:T13); complementary
+- [E01:S02:T14](../epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) — semantic delivery task
+- [INSTALL_IN_YOUR_PROJECT.md](../../../INSTALL_IN_YOUR_PROJECT.md) — adoption index
 
 ---
 
@@ -127,36 +128,25 @@ A project adopts ai-dev-kit and uses the README template. The project directly t
 **Intake Date:** 2025-12-07  
 **Intake By:** RMS
 
-**Decision Flow Results:**
-- [x] Story Match Found: Epic 7, Story 4 → New Tasks
-
-**Assigned To:**
-- Epic: Epic 7 - Examples & Adoption Support
-- Story: Story 4 - README Template Based on Best-README-Template
-- Task: E07:S04:T07 (Create dependency tracking guidance for adopting projects)
-- Version: `v0.7.4.1+2`
+**Delivery (2026-06-04):**
+- Re-housed to **E01:S02:T14** (Epic 1 package & repo architecture)
+- Canonical guide and examples shipped per [IPP-E01S02T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/epic-07/epic-07.md`](../epics/epic-07/epic-07.md)
-- Story: [`docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`](../epics/epic-07/story-04-readme-template-based-on-best-readme-template.md)
+- Epic: [`epic-01.md`](../epics/epic-01/epic-01.md)
+- Story: [`story-02-package-and-repo-architecture.md`](../epics/epic-01/story-02-package-and-repo-architecture.md)
+- Task: [E01:S02:T14](../epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)
 
 ---
 
 ## Notes
 
-This FR reframes the approach from Story 4. Instead of ai-dev-kit tracking external dependencies and propagating updates, adopting projects should track dependencies directly. This:
+**Kanban hygiene:** 2025 intake referenced `story-04-readme-template-based-on-best-readme-template.md` and E07:S04:T04–T07 for kit-side tracking. That story file was superseded; Epic 7 Story 4 on disk is maintenance automation. This FR’s delivery is **adopter-side** tracking only.
 
-1. **Eliminates unnecessary middleman:** No need for ai-dev-kit to track and propagate updates
-2. **Aligns with framework principles:** "Copy, don't reference" - projects own their dependencies
-3. **Reduces maintenance overhead:** ai-dev-kit focuses on template quality, not dependency tracking
+1. **Eliminates unnecessary middleman:** No ai-dev-kit propagation of Best-README / Keep a Changelog / Shields updates
+2. **Aligns with framework principles:** "Copy, don't reference" — projects own their dependencies
+3. **Reduces maintenance overhead:** ai-dev-kit focuses on framework quality, not third-party doc polling
 4. **Gives projects control:** Projects decide when and how to incorporate upstream changes
-5. **Simplifies adoption:** Clearer separation of concerns
-
-**Tasks to Update:**
-- **E07:S04:T04** - Reframe: Remove from ai-dev-kit, create guidance for adopting projects
-- **E07:S04:T05** - Reframe: Remove from ai-dev-kit, provide example tooling for adopting projects
-- **E07:S04:T06** - Reframe: Remove from ai-dev-kit, document PR generation patterns for adopting projects
-- **E07:S04:T07** - New: Create comprehensive dependency tracking guide for adopting projects
 
 ---
 
@@ -165,16 +155,9 @@ This FR reframes the approach from Story 4. Instead of ai-dev-kit tracking exter
 - [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 - [Keep a Changelog](https://keepachangelog.com/)
 - [Shields.io](https://shields.io/)
-- Story 4: [`docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`](../epics/epic-07/story-04-readme-template-based-on-best-readme-template.md)
-
----
-
-**Template Usage:**
-- This FR follows the Kanban Framework FR template
-- Intake decision links to Epic 7, Story 4
-- Tasks will be created in Story 4 to address this FR
+- [Adopter external resource dependency tracking](../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
+- [IPP-E01S02T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 ---
 
 _This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
-

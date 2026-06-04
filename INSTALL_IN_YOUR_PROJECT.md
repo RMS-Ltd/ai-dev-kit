@@ -58,6 +58,7 @@ docs/documentation/user-docs/
 - **Use Cases:** [`framework-dependency-use-cases.md`](docs/documentation/user-docs/framework-dependency-use-cases.md)
 - **FAQ:** [`framework-dependency-faq.md`](docs/documentation/user-docs/framework-dependency-faq.md)
 - **Troubleshooting:** [`framework-dependency-troubleshooting-guide.md`](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md)
+- **External doc/style upstream tracking:** [`adopter-external-resource-dependency-tracking.md`](docs/documentation/user-docs/adopter-external-resource-dependency-tracking.md) — host project owns Best-README-Template, Keep a Changelog, and Shields.io review after copy (FR-003; not framework package updates)
 
 Other guides under [`docs/documentation/user-docs/`](docs/documentation/user-docs/) include a short **Scope (greenfield vs brownfield)** section where relevant, pointing back here and to ADR-003 / FR-081.
 

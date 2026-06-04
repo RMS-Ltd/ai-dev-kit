@@ -101,8 +101,6 @@ housekeeping_policy: keep
 
 - **FR-022** – Policy Docs Machine-Readable Salience - 📋 TODO (LOW, Machine-readable policy documentation) | [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md) | [E05:S07:T01](epics/epic-05/story-07-policy-documentation-structure.md) | —No IPP— | Last modified: 2026-01-16 00:00 UTC
 
-- **FR-003** – Dependency Tracking in Adopting Projects - 📋 TODO (LOW, Dependency tracking for project adoption) | [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | [E01:S02:T14](epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | —No IPP— | Last modified: 2026-06-04 12:05 UTC
-
 - **FR-002** – Update Been There README - 📋 TODO (LOW, Update README for been-there functionality) | [FR-002](fr-br/FR-002-update-been-there-readme.md) | [E01:S02:T13](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | —No IPP— | Last modified: 2026-06-04 12:05 UTC
 
 - **FR-039** – AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | [E07:S01:T10](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | —No IPP— | Last modified: 2026-06-04 12:05 UTC

@@ -60,6 +60,8 @@ For the locked greenfield-first sequence and verification gates, pair this guide
 # Update contact information
 ```
 
+After customizing README structure, initialize an **upstream doc/style register** in your repo (Best-README-Template, Keep a Changelog, Shields.io)—see [`adopter-external-resource-dependency-tracking.md`](adopter-external-resource-dependency-tracking.md). That is separate from **framework package** updates covered in the framework-dependency guides.
+
 **1.2 Search and Replace Project References:**
 
 ```bash

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2025-12-02 (v0.1.2.5+1 – Task 5 complete: Package READMEs updated with modularity information)  
-**Version:** v0.1.2.5+1  
+**Last updated:** 2026-06-04 (v0.1.2.14+1 – E01:S02:T14 FR-003 complete; T13 README template still open)
+**Version:** v0.1.2.14+1
 **Code:** E1S02
 
 ---
@@ -34,7 +34,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 - [ ] **E01:S02:T13 – README / been-there template (FR-002)** - TODO (LOW) — [Task doc](story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](../../fr-br/FR-002-update-been-there-readme.md)
 
-- [ ] **E01:S02:T14 – Dependency tracking for adopters (FR-003)** - TODO (LOW) — [Task doc](story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
+- [x] **E01:S02:T14 – Dependency tracking for adopters (FR-003)** - ✅ COMPLETE (v0.1.2.14+1) — [Task doc](story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | [Guide](../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
 
 - [x] **E01:S02:T01 – Analyze current package structure and dependencies** ✅ COMPLETE (v0.1.2.1+1)
 - [x] **E01:S02:T02 – Document modularity principles and boundaries** ✅ COMPLETE (v0.1.2.2+1)
@@ -53,7 +53,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 **Dependencies:** None  
 **Blocker:** None
 
-**Status:** ✅ **COMPLETE** - Analysis report created in `T01-package-structure-analysis.md`
+**Status:** IN PROGRESS
 
 **Key Findings:**
 - All three framework packages are designed to be modular and can be used standalone
@@ -84,7 +84,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 **Dependencies:** T001  
 **Blocker:** None
 
-**Status:** ✅ **COMPLETE** - Modularity principles document created in `T02-modularity-principles.md`
+**Status:** IN PROGRESS
 
 **Key Deliverables:**
 - Defined what "modular" means for ai-dev-kit
@@ -119,7 +119,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 **Dependencies:** T001, T002  
 **Blocker:** None
 
-**Status:** ✅ **COMPLETE** - Dependency matrix document created in `T03-package-dependency-matrix.md`
+**Status:** IN PROGRESS
 
 **Key Deliverables:**
 - Visual dependency matrix (ASCII art and tabular format)
@@ -153,7 +153,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 **Dependencies:** T002, T003  
 **Blocker:** None
 
-**Status:** ✅ **COMPLETE** - Consumption patterns document created in `T04-consumption-patterns.md`
+**Status:** IN PROGRESS
 
 **Key Deliverables:**
 - Decision tree for package selection
@@ -187,7 +187,7 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 **Dependencies:** T004  
 **Blocker:** None
 
-**Status:** ⏳ TODO
+**Status:** IN PROGRESS
 
 **Approach:**
 1. Update `packages/frameworks/workflow-mgt/README.md`

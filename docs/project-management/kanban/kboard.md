@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (E04:S13:T08 UXR-019 state icons v0.4.13.8+1)
-**Version:** v0.4.13.8+1
+**Last Updated:** 2026-06-04 (E01:S02:T14 FR-003 v0.1.2.14+1)
+**Version:** v0.1.2.14+1
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 

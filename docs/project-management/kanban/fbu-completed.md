@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-04 (RW **E02:S16:T18** — **FR-109** lean board enforcement)
-**Version:** v0.2.16.18+1 (**SemVer** v0.4.880+1)
+**Last Updated:** 2026-06-04 (RW **E01:S02:T14** — **FR-003** adopter upstream tracking)
+**Version:** v0.1.2.14+1 (**SemVer** v0.4.883+1)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -31,6 +31,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 ---
 
 ## 20 Most Recently Completed FR/BR/UXR Items
+
+| FR-003 | FR | Dependency tracking in adopting projects (host owns Best-README / Keep a Changelog / Shields) | 2026-06-04T19:57:56Z | v0.1.2.14+1 | RW |
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
