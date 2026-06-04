@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-081  
 **Priority:** LOW  
 **Severity:** LOW (DeprecationWarning noise; future Python risk)  
-**Status:** FIXED (pending user verification on Python 3.12+)  
+**Status:** RESOLVED (verified ExpensesTracker replay **2026-06-04** @ `v0.4.885+2`)  
 **GitHub Issue:** [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)  
 **Implementing Task:** [E06:S09:T10](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md)  
 **Fix version:** v0.6.9.10+2 (RW E06:S09:T10)  

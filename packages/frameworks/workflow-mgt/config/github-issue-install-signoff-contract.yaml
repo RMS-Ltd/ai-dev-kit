@@ -55,7 +55,7 @@ issues:
       Evidence: adopter `rw-config.yaml`. Related: BR-085 may still need interactive replay for story prompt loop.
 
   - id: UXR-017
-    number: null
+    number: 20
     title: "Kanban epic/story path lowercase naming (adopter tree)"
     when_all:
       - type: no_capitalised_kanban_segments
