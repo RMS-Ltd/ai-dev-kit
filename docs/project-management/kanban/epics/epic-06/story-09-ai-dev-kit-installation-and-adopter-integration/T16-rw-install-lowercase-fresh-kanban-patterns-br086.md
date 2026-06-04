@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-04  
-**Last updated:** 2026-06-04 (implementation — kit tests green; pending adopter replay + RW)  
-**Version:** v0.6.9.16+1  
+**Last updated:** 2026-06-04 (v0.6.9.16+2 — sign-off contract BR-084/BR-086; adopter replay pending)  
+**Version:** v0.6.9.16+2  
 **Code:** E06S09T16
 
 **Upstream:** [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)  
@@ -48,17 +48,19 @@ housekeeping_policy: keep
 
 - [x] `install_release_workflow.py` — filesystem unpadded epic detection; book `03d`/`t{task}` defaults; forward-looking story accept; padding hints
 - [x] `kanban_paths.py` — `BOOK_STORY_PATTERN` / `BOOK_TASK_PATTERN` in fresh pattern tuples
-- [x] `github-issue-install-signoff-contract.yaml` — BR-083 `*_contains_any` alternates; BR-086 entry
+- [x] `github-issue-install-signoff-contract.yaml` — BR-083 `*_contains_any` alternates; BR-086 entry; BR-084 accepts `t{task` or `T{task`
 - [x] `install_github_issue_signoff.py` — `*_contains_any` check support
 - [x] Tests — `test_install_release_workflow_patterns.py`, `test_install_release_workflow_rw_config.py` (20 passed locally)
 - [x] `INSTALL_IN_YOUR_PROJECT.md` — lowercase book T03 post-kanban snippet
-- [ ] Adopter replay + sign-off + `RW E06:S09:T16 --art` (uncommitted in working tree)
+- [x] Kit sign-off contract + tests shipped (**v0.6.9.16+2**)
+- [ ] Adopter replay on updated submodule + close GitHub #17
 
 ---
 
 ## Acceptance Criteria
 
 - [ ] BR-086 AC satisfied on fresh lowercase kanban replay (ExpensesTracker or kit fixture)
+- [x] `install_github_issue_signoff.py` reports `[READY] BR-084` for book `t{task:02d}` pattern (contract `task_doc_pattern_contains_any`)
 - [ ] `install_github_issue_signoff.py` reports `[READY] BR-083` when epic pattern matches unpadded on-disk names
 - [ ] GitHub #17 closed after verification comment
 - [x] IPW package linked before implementation — [IPP-E06S09T16](../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
@@ -67,7 +69,7 @@ housekeeping_policy: keep
 
 ## Version Anchor
 
-🔄 IN PROGRESS (v0.6.9.16+1 — kanban init **RW -k --art**)
+🔄 IN PROGRESS (v0.6.9.16+2 — sign-off contract; #17 open until adopter replay)
 
 ---
 
@@ -77,7 +79,9 @@ housekeeping_policy: keep
 
 **Implementation (2026-06-04):** Code complete per [IPP-E06S09T16](../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md) §4 — unpadded `epic-N` dirs detected by name (not glob); capital `Epic-*` path unchanged.
 
-**Next:** ExpensesTracker or book dry-run on `main` → `install_github_issue_signoff.py` `[READY] BR-083` + `[READY] BR-086` → close #17 → **`RW E06:S09:T16 --art`**
+**Sign-off follow-up (2026-06-04, #17 comment):** BR-084 accepts lowercase `t{task}`; BR-086 epic check accepts `02d` or unpadded — unblocks book T03 `ADK-I04.E01` false positive (kit tests: `test_signoff_br084_*`, `test_book_t03_contract_*`).
+
+**Next:** ExpensesTracker replay on updated submodule → `[READY] BR-083` + `[READY] BR-086` → close #17 → **`RW E06:S09:T16 --art`**
 
 ## References
 

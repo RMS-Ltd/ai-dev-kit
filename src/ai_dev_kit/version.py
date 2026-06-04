@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
-VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban synchronization and hygiene (Perpetual)
-VERSION_BUILD = 27    # Build 27: restore C-band backlog; FR-109 policy correction (UKW)
+VERSION_EPIC = 6      # Epic 6 — Framework Management
+VERSION_STORY = 9     # Story 9 — AI Dev Kit installation and adopter integration
+VERSION_TASK = 16     # Task 16 — RW install lowercase fresh kanban patterns (BR-086)
+VERSION_BUILD = 2     # Build 2: sign-off BR-084/BR-086 contract (book t{task} false positive)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.4+27 (E02:S16:T04)
+# Current: 0.6.9.16+2 (E06:S09:T16)

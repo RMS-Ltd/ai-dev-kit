@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.16+2] - 04-06-26
+
+E06:S09:T16 — **Install sign-off:** BR-084 accepts lowercase `t{task}`; BR-086 epic `02d`/unpadded alternates — fixes book T03 false `ADK-I04.E01` on correct Step 4.1 YAML. SemVer **v0.4.881+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.16+2.md)
+
+---
+
 ## [0.2.16.4+27] - 04-06-26
 
 E02:S16:T04 — **UKW:** Restored Could Have backlog on kboard/fbuboard (39/31 rows); FR-109 policy — prune terminal/bloat only, not C-band queue. SemVer **v0.4.881+27**.

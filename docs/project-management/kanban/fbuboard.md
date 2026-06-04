@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-04 (restored C-band FBU backlog; lean bloat only)
-**Version Context:** v0.2.16.4+27
+**Last Updated:** 2026-06-04 (E06:S09:T16 release v0.6.9.16+2)
+**Version Context:** v0.6.9.16+2
 
 **Active board contract:** Rows are **open FBU work** (OPEN / TODO / PROPOSED with active task), including **Could Have** backlog. Remove **terminal** FBUs and archive/journal prose (use [`fbu-completed.md`](fbu-completed.md)), not filed low-priority queue items.
 
@@ -37,7 +37,7 @@ housekeeping_policy: keep
 
 - **BR-088** – RW Mode C does not create version_file path (no src/) - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.19+1**, GitHub **#18**) | [IPP-E06S09T19](../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [E06:S09:T19](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | —No IPP— | Last modified: 2026-06-05 17:11 UTC
 
-- **BR-086** – RW install lowercase fresh kanban: story 03d blocked, sign-off BR-083 mismatch - 🟢 OPEN (MEDIUM, **v0.6.9.16+1**, GitHub **#17**) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | [E06:S09:T16](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | —No IPP— | Last modified: 2026-06-04 12:56 UTC
+- **BR-086** – RW install lowercase fresh kanban: sign-off BR-084 false positive fixed (**v0.6.9.16+2**) - 🟢 OPEN (MEDIUM, GitHub **#17** — adopter replay pending) | [IPP](https://github.com/RMS-Ltd/ai-dev-kit/blob/dev/docs/implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | [E06:S09:T16](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | —No IPP— | Last modified: 2026-06-04 12:56 UTC
 
 - **BR-080** – Kanban fresh mode validation fails without `--force` on empty repo - 🟢 OPEN (HIGH, fix attempted **v0.6.9.9+2** — pending verification **#12**) | [IPP-E06S09T09](../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [E06:S09:T09](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | —No IPP— | Last modified: 2026-06-03 17:42 UTC
 

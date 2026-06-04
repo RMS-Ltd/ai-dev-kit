@@ -1,0 +1,10 @@
+{
+  "E06:S09:T16": {
+    "allowed": true,
+    "reason": "RW Step 7 release-scope: version anchor v0.6.9.16+2"
+  },
+  "BR-086": {
+    "allowed": true,
+    "reason": "RW Step 7 release-scope: BR-086 fbuboard row sync with T16"
+  }
+}

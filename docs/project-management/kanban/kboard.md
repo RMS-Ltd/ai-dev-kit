@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-04 (restored C-band TODO backlog; lean bloat only)
-**Version:** v0.2.16.4+27
+**Last Updated:** 2026-06-04 (E06:S09:T16 release v0.6.9.16+2)
+**Version:** v0.6.9.16+2
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E06:S09:T16** – BR-086: RW install lowercase fresh kanban patterns & sign-off - 🔄 IN PROGRESS (MEDIUM, **v0.6.9.16+1**, GitHub **#17**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | Last modified: 2026-06-04 12:56 UTC
+- **E06:S09:T16** – BR-086: RW install lowercase fresh kanban patterns & sign-off - 🔄 IN PROGRESS (MEDIUM, **v0.6.9.16+2**, GitHub **#17**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | Last modified: 2026-06-04 12:56 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 - **E01:S02:T13** – FR-002: Update Been There README - 📋 TODO (LOW, Update README for been-there functionality) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](fr-br/FR-002-update-been-there-readme.md) | Last modified: 2026-06-04 12:05 UTC

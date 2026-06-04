@@ -1,0 +1,110 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [
+        "Epic-06 header unchanged this release; story doc carries version marker."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-06/epic-06.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [
+        "Updated E06:S09:T16 checklist line to v0.6.9.16+2"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated BR-086 version and attempted-fix note",
+        "Updated README and CHANGELOG for v0.6.9.16+2"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 16,
+    "task_id": "E06:S09:T16",
+    "version_string": "v0.6.9.16+2"
+  },
+  "stamp_evidence": {
+    "manifest": "rw-step7-stamp-evidence-v0-6-9-16plus2-e6s9t16.json"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 2,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 6,
+    "touched_surfaces": [
+      "task_doc",
+      "story_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": [
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "BR-086 source doc updated under uncategorized/br_doc scope; no separate fbuboard-only FBU doc path for this release."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": [
+        "Updated BR-086 row version v0.6.9.16+2; corpus sweep canonicalized link order"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Updated E06:S09:T16 row version v0.6.9.16+2 and board metadata"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Version anchor v0.6.9.16+2; deliverable and sign-off checkboxes"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-04 19:23 UTC"
+}

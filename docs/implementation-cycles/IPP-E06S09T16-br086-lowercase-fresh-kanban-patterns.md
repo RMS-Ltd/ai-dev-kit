@@ -122,7 +122,7 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 | 3 | **`install_release_workflow.py`:** Import unpadded/03d constants; wire `detect_kanban_doc_patterns` / `detect_kanban_supplementary_defaults` to `FRESH_*_PATTERNS` tuples; fix fresh-layout detection message for lowercase. |
 | 4 | **`prompt_pattern_with_validation`:** Forward-looking allowlist for 03d story pattern when epic unpadded detected; extend `strict_zero_match` escape beyond padded default only. |
 | 5 | **Prompt UX:** Print one-line hint after story default (`:03d` = book story files; `:02d` = ADR-015 segment padding). |
-| 6 | **`github-issue-install-signoff-contract.yaml`:** Relax BR-083 `epic_doc_pattern_contains` to accept `epic-{epic}/epic-{epic}` OR `epic-{epic:02d}` (implementation: dual substring or second optional check in evaluator if needed). |
+| 6 | **`github-issue-install-signoff-contract.yaml`:** BR-083 `epic_doc_pattern_contains_any`; BR-084 `task_doc_pattern_contains_any` (`T{task` / `t{task`); BR-086 `epic_doc_pattern_contains_any` for book `02d` + unpadded epic. |
 | 7 | **Tests:** `tests/test_install_release_workflow_patterns.py` + `tests/test_install_release_workflow_rw_config.py` — unpadded epic-only fixture. |
 | 8 | **Docs:** `INSTALL_IN_YOUR_PROJECT.md` post-kanban snippet — book T03 aligned lowercase example; cross-link BR-086. |
 | 9 | **Verification:** ExpensesTracker T03 replay on `main` submodule; comment/close #17 when AC met. |

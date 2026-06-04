@@ -17,8 +17,8 @@ housekeeping_policy: keep
 **Implementing Task:** [E06:S09:T16](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md)  
 **Planning:** [IPP-E06S09T16](../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
 **Created:** 2026-06-04  
-**Last updated:** 2026-06-04 (fix implemented in kit — pending adopter verification)  
-**Version:** v0.6.9.16+1  
+**Last updated:** 2026-06-04 (v0.6.9.16+2 — BR-084/BR-086 sign-off contract; pending adopter verification)  
+**Version:** v0.6.9.16+2  
 **Source:** ai-dev-kit-book setup-spine T03 dry-run (reader `expenses-tracker`); ADK submodule **`main`**; kanban `install_kanban_framework.py --mode fresh` → `install_release_workflow.py --mode c`
 
 ---
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 On **lowercase** fresh kanban (`epics/epic-1/epic-1.md`, unpadded epic segments), RW mode C pre-fills padded `{epic:02d}` defaults, **blocks** forward-looking `story-{story:03d}-*.md`, then persists mismatched `02d` story/task patterns (capital `T`, erroneous `*/` glob). Install sign-off marks **BR-083 NOT READY** when the only epic pattern that matches on-disk files uses unpadded `{epic}`.
 
-**Attempted fix (E06:S09:T16, 2026-06-04):** Installer detects lowercase unpadded epic dirs by filesystem name; pre-fills book-aligned epic/story/task patterns; accepts forward-looking `story:03d` on epic-only trees; BR-083 sign-off uses `*_contains_any` alternates. Awaiting adopter replay on `main` before RESOLVED.
+**Attempted fix (E06:S09:T16, 2026-06-04):** Installer detects lowercase unpadded epic dirs by filesystem name; pre-fills book-aligned epic/story/task patterns; accepts forward-looking `story:03d` on epic-only trees; BR-083 sign-off uses `*_contains_any` alternates. **BR-084 sign-off (2026-06-04):** `task_doc_pattern_contains_any` accepts `t{task` and `T{task` — fixes book T03 false `ADK-I04.E01` when only capital-`T` substring check failed. Awaiting adopter replay on `main` before RESOLVED.
 
 ---
 

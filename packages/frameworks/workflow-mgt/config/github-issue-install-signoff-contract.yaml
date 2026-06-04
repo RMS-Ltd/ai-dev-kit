@@ -26,9 +26,11 @@ issues:
         require_keys: [use_kanban, kanban_root, epic_doc_pattern, story_doc_pattern, task_doc_pattern]
         epic_doc_pattern_contains: "epic-"
         story_doc_pattern_contains: "story-"
-        task_doc_pattern_contains: "T{task"
+        task_doc_pattern_contains_any:
+          - "T{task"
+          - "t{task"
     close_comment: |
-      ✅ **Installer sign-off (automated)** — `task_doc_pattern` present in generated `rw-config.yaml` and kanban patterns use lowercase epic/story segments.
+      ✅ **Installer sign-off (automated)** — `task_doc_pattern` present in generated `rw-config.yaml` (capital `T{task` or book lowercase `t{task}`) and kanban patterns use lowercase epic/story segments.
       Evidence: install receipt / adopter replay. Maintainer: confirm against BR-084 AC.
 
   - id: BR-083
@@ -80,7 +82,9 @@ issues:
     when_all:
       - type: rw_config_patterns
         require_keys: [use_kanban, kanban_root, epic_doc_pattern, story_doc_pattern, task_doc_pattern]
-        epic_doc_pattern_contains: "epic-{epic}/epic-{epic}"
+        epic_doc_pattern_contains_any:
+          - "epic-{epic}/epic-{epic}"
+          - "epic-{epic:02d}"
         story_doc_pattern_contains: "story-{story:03d}"
         task_doc_pattern_contains: "t{task"
       - type: no_capitalised_kanban_segments
