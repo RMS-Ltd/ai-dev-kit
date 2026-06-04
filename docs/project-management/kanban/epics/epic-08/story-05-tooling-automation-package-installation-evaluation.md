@@ -31,7 +31,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This story evaluates **all installation paths** for the Tooling & Automation framework package (`packages/frameworks/tooling & automation/`) to ensure each path is documented, reproducible, and RC-ready.
+This story evaluates **all installation paths** for the Tooling & Automation framework package (`packages/frameworks/tooling-automation/`) to ensure each path is documented, reproducible, and RC-ready.
 
 ---
 
@@ -100,4 +100,4 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 
 ## References
 
-- Package: `packages/frameworks/tooling & automation/`
+- Package: `packages/frameworks/tooling-automation/`

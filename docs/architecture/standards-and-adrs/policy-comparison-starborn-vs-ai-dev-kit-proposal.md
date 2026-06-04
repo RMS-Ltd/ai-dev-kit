@@ -42,7 +42,7 @@ Starborn defines a **mandatory** implementation cycle in three places:
 - **.cursorrules:** Add a new section "Implementation Cycle (Adoptable Pattern)" that:
   - Describes the same 5 steps (Requirement doc → Task creation → Spec & tests (blocking) → Implementation → RW).
   - States that Step 3 (Spec & Test Creation) is blocking when the pattern is adopted.
-  - References framework SoP for projects that adopt it (e.g. `packages/frameworks/workflow mgt/docs/.../implementation-cycle-sop.md` or equivalent).
+  - References framework SoP for projects that adopt it (e.g. `packages/frameworks/workflow-mgt/docs/.../implementation-cycle-sop.md` or equivalent).
   - Frames it as the **recommended/adoptable** pattern for projects using this framework (not necessarily mandatory for the framework repo itself, but required for adopters who choose it).
 - **Framework package:** Add an `implementation-cycle-sop.md` (or equivalent) under workflow mgt (or shared docs) so installing projects get the same SoP. Content can be framework-agnostic (e.g. "test file" not "test_file_test.dart").
 - **Kanban Governance Policy:** Add a short "Implementation Cycle (optional/adoptable)" subsection that references the SoP and .cursorrules, and states that projects may require this cycle for all task implementations.
@@ -112,7 +112,7 @@ AI Dev Kit already has doc-init, abstract space, and task document requirements 
    - In Perpetual Task section: add requirement to update task document with context (what changed, why, version) for each run.
 
 3. **New file (framework):**  
-   `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`  
+   `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`  
    - Framework-agnostic Implementation Cycle SoP (language-agnostic test file names, "Run tests" not "flutter test") so adopters can use it as-is or adapt.
 
 4. **Kanban Governance Policy**
@@ -123,4 +123,4 @@ AI Dev Kit already has doc-init, abstract space, and task document requirements 
 ## 9. References
 
 - Starborn: `docs/VERSIONING_POLICY.md`, `docs/KANBAN_GOVERNANCE.md`, `docs/release-workflow-agent-execution.md`, `docs/IMPLEMENTATION_CYCLE_SOP.md`, `.cursorrules`.
-- AI Dev Kit: `.cursorrules`, `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`, `packages/frameworks/kanban/policies/kanban-governance-policy.md`, `packages/frameworks/workflow mgt/.../release-workflow-agent-execution.md`.
+- AI Dev Kit: `.cursorrules`, `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`, `packages/frameworks/kanban/policies/kanban-governance-policy.md`, `packages/frameworks/workflow-mgt/.../release-workflow-agent-execution.md`.

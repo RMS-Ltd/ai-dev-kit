@@ -115,7 +115,7 @@ Create a perpetual task for Changelog Management Workflow (CMW) maintenance runs
 - **Workflow:** CMW (Changelog Management Workflow)
 - **Workflow:** RW (Release Workflow)
 - **Related Pattern:** UKW Perpetual Task Pattern (Epic 4, Story Maintenance, T01)
-- **Reference:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
+- **Reference:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
 
 ---
 

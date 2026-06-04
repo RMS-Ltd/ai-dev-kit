@@ -80,13 +80,13 @@ Eliminate high-frequency task-touch SemVer collisions by making conversion idemp
 
 ### 3.1 Files to create or modify
 
-- `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - `semver-registry.yaml` (schema-safe evolution if required)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` (if finalize boundary checks required)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py` (if finalize boundary checks required)
 - `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md`
 - `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md`
 - `docs/project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`
-- Versioning/RW docs under `packages/frameworks/workflow mgt/docs/` as needed
+- Versioning/RW docs under `packages/frameworks/workflow-mgt/docs/` as needed
 
 ### 3.2 Dependency order
 

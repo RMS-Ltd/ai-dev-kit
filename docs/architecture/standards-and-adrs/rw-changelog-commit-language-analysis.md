@@ -111,7 +111,7 @@ Stage 3: Reflect (Post-Commit Verification)
 ### ✅ What's Already Covered
 
 **Changelog Guidance (Good):**
-- **Location:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (lines 101-150)
+- **Location:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (lines 101-150)
 - **Section:** "🔒 Critical Requirement: Fix Verification"
 - **Guidance:**
   - Verified fixes: Must have test evidence
@@ -387,7 +387,7 @@ Add a validator that checks:
 
 ### Priority 0: Add Post-Commit Reflection Step (CRITICAL)
 
-**File:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+**File:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 **Location:** After Step 11 (Push to Remote)
 
@@ -406,7 +406,7 @@ Add a validator that checks:
 
 ### Priority 1: Commit Message Guidance
 
-**File:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+**File:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 **Location:** Step 9 (Commit Changes)
 
@@ -429,7 +429,7 @@ Add a validator that checks:
 
 ### Priority 3: Add Validator
 
-**File:** `packages/frameworks/workflow mgt/scripts/validation/validate_commit_message_language.py` (new)
+**File:** `packages/frameworks/workflow-mgt/scripts/validation/validate_commit_message_language.py` (new)
 
 **Purpose:**
 - Check commit messages for overly confident language
@@ -507,7 +507,7 @@ The Release Workflow documentation **has good foundation** for changelog verific
 
 ## References
 
-- **Current RW Documentation:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Current RW Documentation:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Fix Verification Task:** E2:S01:T04 (completed)
 - **Keep a Changelog:** https://keepachangelog.com/
 - **Conventional Commits:** https://www.conventionalcommits.org/

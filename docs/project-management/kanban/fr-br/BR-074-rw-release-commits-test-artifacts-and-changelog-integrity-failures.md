@@ -38,7 +38,7 @@ Commit `22e3e574c` (Release v0.6.6.63+2) includes three files under `docs/journa
 The JSON journal shows `"status": "failed"` at Step 3 with `version_after: null`. This is the output of `test_rw_integration.py::_simulate_failed_run()`, not a real RW execution. Including a "failed" run artifact in a successful release commit is confusing and pollutes the `docs/journals/` operator-facing documentation tree.
 
 ### Root Cause
-`docs/journals/` has no `.gitignore` exclusion for runtime `rw-*` artifact files. The integration test writes to the production journal directory (`packages/frameworks/workflow mgt/scripts/journal/` defaults to `docs/journals/`) and the RW Step 8 `git add -A` stages everything.
+`docs/journals/` has no `.gitignore` exclusion for runtime `rw-*` artifact files. The integration test writes to the production journal directory (`packages/frameworks/workflow-mgt/scripts/journal/` defaults to `docs/journals/`) and the RW Step 8 `git add -A` stages everything.
 
 ---
 

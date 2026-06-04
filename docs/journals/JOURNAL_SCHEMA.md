@@ -2,7 +2,7 @@
 
 **Schema version:** `1.0.0`  
 **Last updated:** 2026-05-17  
-**Applies to:** `packages/frameworks/workflow mgt/scripts/journal/rw_journal.py`
+**Applies to:** `packages/frameworks/workflow-mgt/scripts/journal/rw_journal.py`
 
 ---
 

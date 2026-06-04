@@ -38,7 +38,7 @@ Extend UKW to discover and address two board-coverage gaps during comprehensive 
 
 - **FR-043:** [FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md](../../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
 - **UKW T101:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
-- **UKW Agent Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- **UKW Agent Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - **FR-034:** UKW granular control (related)
 
 ---
@@ -66,4 +66,4 @@ Extend UKW to discover and address two board-coverage gaps during comprehensive 
 ## References
 
 - **FR-043:** [FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md](../../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
-- **UKW Agent Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- **UKW Agent Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`

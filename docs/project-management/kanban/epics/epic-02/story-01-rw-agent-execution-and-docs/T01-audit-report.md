@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E02:S01:T01 – Audit `release-workflow-agent-execution.md` for project-specific assumptions  
 **Date:** 2025-12-02  
-**File Audited:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+**File Audited:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ---
 
@@ -227,8 +227,8 @@ project_handler_namespace: "{project}"  # e.g., "confidentia", "ai-dev-kit"
 
 ## 📄 Files Referenced
 
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (audited file)
-- Related: `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` (may have similar issues)
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (audited file)
+- Related: `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` (may have similar issues)
 
 ---
 

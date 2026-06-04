@@ -122,13 +122,13 @@ Full matrix: [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementatio
 ### Prior builds (+2…+6)
 
 - `pytest`:
-  - `packages/frameworks/workflow mgt/scripts/version/test_fr046_rw_tagging.py`
-  - `packages/frameworks/workflow mgt/scripts/version/test_fr046_comprehensive.py`
-  - `packages/frameworks/workflow mgt/scripts/version/test_task_touch_mapping.py`
+  - `packages/frameworks/workflow-mgt/scripts/version/test_fr046_rw_tagging.py`
+  - `packages/frameworks/workflow-mgt/scripts/version/test_fr046_comprehensive.py`
+  - `packages/frameworks/workflow-mgt/scripts/version/test_task_touch_mapping.py`
   - Result: `22 passed`.
-- `pytest` `packages/frameworks/workflow mgt/scripts/validation/test_validate_branch_context.py` → **7 passed** (FR-046 dual invariant + non-dual modes).
+- `pytest` `packages/frameworks/workflow-mgt/scripts/validation/test_validate_branch_context.py` → **7 passed** (FR-046 dual invariant + non-dual modes).
 - Validator:
-  - `python "packages/frameworks/workflow mgt/scripts/validation/validate_semver_tag_alignment.py"`
+  - `python "packages/frameworks/workflow-mgt/scripts/validation/validate_semver_tag_alignment.py"`
   - Result: `✅ SemVer tag alignment OK`.
 
 ---

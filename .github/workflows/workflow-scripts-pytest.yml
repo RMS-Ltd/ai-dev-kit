@@ -7,11 +7,11 @@ name: Workflow scripts pytest
       - main
       - dev
     paths:
-      - "packages/frameworks/workflow mgt/**"
+      - "packages/frameworks/workflow-mgt/**"
       - ".github/workflows/workflow-scripts-pytest.yml"
   pull_request:
     paths:
-      - "packages/frameworks/workflow mgt/**"
+      - "packages/frameworks/workflow-mgt/**"
       - ".github/workflows/workflow-scripts-pytest.yml"
 
 jobs:
@@ -30,4 +30,4 @@ jobs:
         run: pip install pytest "pyyaml>=6.0"
 
       - name: Run workflow script pytest gate
-        run: bash "packages/frameworks/workflow mgt/scripts/validation/run_workflow_scripts_ci_pytest.sh"
+        run: bash "packages/frameworks/workflow-mgt/scripts/validation/run_workflow_scripts_ci_pytest.sh"

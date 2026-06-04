@@ -290,7 +290,7 @@ The KB follows a clear hierarchy:
 
 **Package References:**
 - Reference packages using relative paths from KB root
-- Example: `[Workflow Management README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/README.md)`
+- Example: `[Workflow Management README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/README.md)`
 - Use descriptive link text, not raw paths
 
 **Root-Level References:**

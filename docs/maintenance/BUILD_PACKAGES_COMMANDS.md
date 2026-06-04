@@ -16,35 +16,35 @@ cd /Users/rms/Documents/projects/ai-dev-kit
 mkdir -p packages/frameworks/dist/packages
 
 # Build kanban
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     kanban 2.1.0 \
     --output-dir packages/frameworks/dist/packages \
     --frameworks-root packages/frameworks \
     --verbose
 
 # Build workflow mgt
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     "workflow mgt" 2.1.4 \
     --output-dir packages/frameworks/dist/packages \
     --frameworks-root packages/frameworks \
     --verbose
 
 # Build numbering & versioning
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     "numbering & versioning" 2.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --frameworks-root packages/frameworks \
     --verbose
 
 # Build doc-lifecycle
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     doc-lifecycle 1.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --frameworks-root packages/frameworks \
     --verbose
 
 # Build debug-path
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     debug-path 1.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --frameworks-root packages/frameworks \

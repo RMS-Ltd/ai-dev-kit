@@ -239,7 +239,7 @@ housekeeping_policy: delete
    - FR/BR/UXR intake workflow
    - Canonical template system (IN PROGRESS)
 
-2. **Numbering & Versioning** (`numbering & versioning/`)
+2. **Numbering & Versioning** (`numbering-versioning/`)
    - RC.EPIC.STORY.TASK+BUILD schema
    - Forensic traceability
    - Version file management

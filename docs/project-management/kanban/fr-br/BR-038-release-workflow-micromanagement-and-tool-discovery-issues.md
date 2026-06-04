@@ -36,7 +36,7 @@ This BR is now split into:
 - [x] **R1:** Improve tool discovery and operator guidance for RW execution.
 - [x] **R2:** Reduce step-by-step micromanagement in standard RW execution path.
 - [x] **R3:** Improve error clarity and manual fallback guidance.
-- [x] **R4:** Persist per-run RW execution journal (step state, commands, exit codes, touched files, timestamps). — Implemented in `packages/frameworks/workflow mgt/scripts/journal/` via [E06:S06:T63 IPW plan](../../implementation-cycles/IPP-E06S06T63-rw-recovery-journal.md).
+- [x] **R4:** Persist per-run RW execution journal (step state, commands, exit codes, touched files, timestamps). — Implemented in `packages/frameworks/workflow-mgt/scripts/journal/` via [E06:S06:T63 IPW plan](../../implementation-cycles/IPP-E06S06T63-rw-recovery-journal.md).
 - [x] **R5:** Add deterministic recovery artifact/output when RW fails (what changed, what is safe to retry, what must be manually repaired). — Recovery report (Markdown + JSON) emitted by `RecoveryReport` class.
 - [x] **R6:** Provide rollback/compensation mechanism contract (minimum: documented, reproducible manual rollback; target: assisted rollback mode). — Documented in `docs/journals/ROLLBACK_CONTRACT.md` and enforced by `RollbackContract` class.
 

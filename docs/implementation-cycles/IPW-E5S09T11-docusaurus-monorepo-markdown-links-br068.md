@@ -61,7 +61,7 @@ Restore a **green** [`portal/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/
   1. **Canonical GitHub `blob` links** to this repository, default branch **`main`**:  
      `https://github.com/RMS-Ltd/ai-dev-kit/blob/main/<path-from-repo-root>`  
      Examples: `.../blob/main/INSTALL_IN_YOUR_PROJECT.md`, `.../blob/main/packages/frameworks/.../docs/foo.md`.  
-     Path segments that contain spaces (e.g. `workflow mgt`) must be **URL-encoded** in the link target (e.g. `workflow%20mgt`).
+     Path segments that contain spaces (e.g. `workflow mgt`) must be **URL-encoded** in the link target (e.g. `workflow-mgt`).
   2. **Optional short stubs** under `docs/` (e.g. a one-paragraph “see also” that links to the GitHub file) only when the published site must present a first-class in-corpus page; avoid duplicating long content.
   3. **`pathname://`** only when a maintainer explicitly needs to escape the doc plugin for a same-site path; prefer (1) for monorepo file targets to keep behavior obvious in review.
 - **Rejected (for this workstream):** **B – Boundary expansion** (second docs plugin or mirrored trees) — higher ongoing config and sync cost; **revisit only** if (1)+(2) cannot meet maintainability after Wave 2 corpus pass. **C – Narrow `exclude`** as a **blanket** fix for link errors — **rejected**; it hides KB from the portal. Existing **FR-066** archive excludes remain unchanged; any new `exclude` glob needs its own FR/task and must be called out in [portal README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md).

@@ -98,8 +98,8 @@ An **abstract anti-pattern** is a pattern where:
 - Only returns `is_first_time = True` if task doc is created in THIS commit AND docs-only AND no prior version
 
 **Files Updated:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ### Why the Use Case Remains Relevant
 

@@ -108,7 +108,7 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 
 ### 4.1 Files
 
-- **Create:** `packages/frameworks/workflow mgt/scripts/install_ux_version.py`, `cli/adk_version_display.py`, `tests/cli/test_install_ux_version.py`
+- **Create:** `packages/frameworks/workflow-mgt/scripts/install_ux_version.py`, `cli/adk_version_display.py`, `tests/cli/test_install_ux_version.py`
 - **Modify:** CLI commands, logging, installers, tests
 
 ---
@@ -145,4 +145,4 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 ## References
 
 - [UXR-016](../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
-- [semver_converter.py](../../packages/frameworks/workflow%20mgt/scripts/version/semver_converter.py)
+- [semver_converter.py](../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)

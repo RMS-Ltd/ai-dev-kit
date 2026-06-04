@@ -64,12 +64,12 @@ Build comprehensive code generators for framework patterns.
 - Created example generator: `simple_generator_example.py`
 
 **Deliverables:**
-- ✅ `packages/frameworks/tooling & automation/generators/base.py` - BaseGenerator and TemplateBasedGenerator
-- ✅ `packages/frameworks/tooling & automation/generators/registry.py` - GeneratorRegistry
-- ✅ `packages/frameworks/tooling & automation/generators/template_engine.py` - TemplateEngine
-- ✅ `packages/frameworks/tooling & automation/generators/__init__.py` - Package exports
-- ✅ `packages/frameworks/tooling & automation/generators/README.md` - Framework documentation
-- ✅ `packages/frameworks/tooling & automation/generators/examples/simple_generator_example.py` - Example generator
+- ✅ `packages/frameworks/tooling-automation/generators/base.py` - BaseGenerator and TemplateBasedGenerator
+- ✅ `packages/frameworks/tooling-automation/generators/registry.py` - GeneratorRegistry
+- ✅ `packages/frameworks/tooling-automation/generators/template_engine.py` - TemplateEngine
+- ✅ `packages/frameworks/tooling-automation/generators/__init__.py` - Package exports
+- ✅ `packages/frameworks/tooling-automation/generators/README.md` - Framework documentation
+- ✅ `packages/frameworks/tooling-automation/generators/examples/simple_generator_example.py` - Example generator
 - ✅ `docs/architecture/standards-and-adrs/generator-framework-design.md` - Design document
 
 ---
@@ -96,13 +96,13 @@ Build comprehensive code generators for framework patterns.
 - Integrated generators into package exports
 
 **Deliverables:**
-- ✅ `packages/frameworks/tooling & automation/generators/workflow_generator.py` - WorkflowGenerator
-- ✅ `packages/frameworks/tooling & automation/generators/kanban_template_generator.py` - KanbanTemplateGenerator
-- ✅ `packages/frameworks/tooling & automation/generators/templates/workflow-template.yaml` - Workflow template
-- ✅ `packages/frameworks/tooling & automation/generators/templates/epic-template.md` - Epic template
-- ✅ `packages/frameworks/tooling & automation/generators/templates/story-template.md` - Story template
-- ✅ `packages/frameworks/tooling & automation/generators/templates/task-template.md` - Task template
-- ✅ `packages/frameworks/tooling & automation/generators/README-template-generators.md` - Documentation
+- ✅ `packages/frameworks/tooling-automation/generators/workflow_generator.py` - WorkflowGenerator
+- ✅ `packages/frameworks/tooling-automation/generators/kanban_template_generator.py` - KanbanTemplateGenerator
+- ✅ `packages/frameworks/tooling-automation/generators/templates/workflow-template.yaml` - Workflow template
+- ✅ `packages/frameworks/tooling-automation/generators/templates/epic-template.md` - Epic template
+- ✅ `packages/frameworks/tooling-automation/generators/templates/story-template.md` - Story template
+- ✅ `packages/frameworks/tooling-automation/generators/templates/task-template.md` - Task template
+- ✅ `packages/frameworks/tooling-automation/generators/README-template-generators.md` - Documentation
 
 ---
 
@@ -127,9 +127,9 @@ Build comprehensive code generators for framework patterns.
 - Integrated pattern library into framework documentation
 
 **Deliverables:**
-- ✅ `packages/frameworks/tooling & automation/generators/PATTERNS.md` - Comprehensive pattern library (7 categories, 20+ patterns)
-- ✅ `packages/frameworks/tooling & automation/generators/examples/pattern_examples.py` - Pattern examples demonstrating each pattern
-- ✅ Updated `packages/frameworks/tooling & automation/generators/README.md` - Added pattern library reference
+- ✅ `packages/frameworks/tooling-automation/generators/PATTERNS.md` - Comprehensive pattern library (7 categories, 20+ patterns)
+- ✅ `packages/frameworks/tooling-automation/generators/examples/pattern_examples.py` - Pattern examples demonstrating each pattern
+- ✅ Updated `packages/frameworks/tooling-automation/generators/README.md` - Added pattern library reference
 
 ---
 

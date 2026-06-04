@@ -86,9 +86,9 @@ Implement **Option A** as primary fix; consider **Option C** as defense-in-depth
 
 ### Attempted resolution (implementation complete; verify manually)
 
-- **Script:** `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py` — compares parsed `--requested` id to `version.py`; `--mode rw-k`; `--confirmed-override`.
+- **Script:** `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py` — compares parsed `--requested` id to `version.py`; `--mode rw-k`; `--confirmed-override`.
 - **Rules:** `.cursorrules` Step 1b; exception to continuous execution when guard fails.
-- **Template:** `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` (adopters).
+- **Template:** `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` (adopters).
 - **Guide:** Step 1.5 in `release-workflow-agent-execution.md`.
 - **UKW parser fix:** removed duplicate empty `normalize_task_id` stub in `ukw_syntax_parser.py` (blocked imports).
 

@@ -63,7 +63,7 @@ Forensic marker: RW `v0.6.7.114+1` — canonical board naming migration released
 ## Evidence
 
 - Test run:
-  - `python3 "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py" --test-category 4`
+  - `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category 4`
   - Result: all tests passed.
 - Docusaurus production build:
   - `npm run build` (run from `portal/`)

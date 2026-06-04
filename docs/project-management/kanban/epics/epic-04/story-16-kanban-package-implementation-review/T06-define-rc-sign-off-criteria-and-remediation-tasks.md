@@ -78,7 +78,7 @@ The Kanban framework package is considered **RC-ready** when **all** of the foll
 
 4. **Gap log and risk posture**
    - [ ] Gap log exists for the Kanban package with:
-     - Schema validation: run `python packages/frameworks/workflow mgt/scripts/validation/validate_gap_log.py --path <path> --strict` (see `docs/architecture/standards-and-adrs/gap-log-schema.md`).
+     - Schema validation: run `python packages/frameworks/workflow-mgt/scripts/validation/validate_gap_log.py --path <path> --strict` (see `docs/architecture/standards-and-adrs/gap-log-schema.md`).
      - Description, severity, likelihood, and RC impact for each gap.
      - Clear classification into **RC-blocking** vs **non-blocking**.
    - [ ] There are **no unresolved RC-blocking gaps** in the Kanban framework package itself.

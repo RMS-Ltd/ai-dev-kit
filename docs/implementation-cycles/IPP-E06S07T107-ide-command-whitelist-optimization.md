@@ -159,8 +159,8 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 | 2 | **Research spike:** Document current Cursor command allowlist / Auto-Run / sandbox behavior (product docs + maintainer notes). | Guide § “Cursor integration”; UAT log spike entry |
 | 3 | **CREATE** [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md): catalog SoT, enforcement model (catalog + validator + manual Cursor), security rules, BR-039 boundary. | ADR-013 Accepted |
 | 4 | **UPDATE** `.cursor/whitelist-patterns.yaml`: `{PROJECT_ROOT}`; RW patterns; move non-enforceable `settings.*` to `recommended_maintainer_settings` (documentation-only); add `negative_examples` where useful. | YAML v1.1 |
-| 5 | **CREATE** `packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py` (load YAML from repo root `.cursor/whitelist-patterns.yaml`). | Validator CLI |
-| 6 | **CREATE** `packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py`. | pytest |
+| 5 | **CREATE** `packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py` (load YAML from repo root `.cursor/whitelist-patterns.yaml`). | Validator CLI |
+| 6 | **CREATE** `packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py`. | pytest |
 | 7 | **UPDATE** `docs/developer-tools/ide-whitelist-guide.md`: friction taxonomy, integration truth table, validator usage, ADR-013 link. | Guide v1.1 |
 | 8 | **CREATE** `docs/developer-tools/ide-whitelist-uat-log.md` (append-only; T57-style fields). | UAT log |
 | 9 | **UPDATE** [FR-050](../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md): remove T107 from `Implementing Task`; set TBD intake note. | FR wiring |
@@ -176,8 +176,8 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 | ---- | ------ |
 | `docs/architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md` | CREATE |
 | `.cursor/whitelist-patterns.yaml` | UPDATE |
-| `packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py` | CREATE |
-| `packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py` | CREATE |
+| `packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py` | CREATE |
+| `packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py` | CREATE |
 | `docs/developer-tools/ide-whitelist-guide.md` | UPDATE |
 | `docs/developer-tools/ide-whitelist-uat-log.md` | CREATE |
 | `docs/project-management/kanban/.../T107-*.md` | UPDATE (status, AC checkboxes, IPP links) |
@@ -218,8 +218,8 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 | D-C1 | `docs/implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md` | This IPP | IPW |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md` | Allowlist policy | §2.5 REQUIRED |
 | D-C3 | `docs/developer-tools/ide-whitelist-uat-log.md` | UAT evidence | RF6 |
-| D-C4 | `packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py` | Pattern tests | RF5 |
-| D-C5 | `packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py` | pytest | RNF5 |
+| D-C4 | `packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py` | Pattern tests | RF5 |
+| D-C5 | `packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py` | pytest | RNF5 |
 
 ### 5.3 Documentation gaps and explicit non-changes
 
@@ -241,7 +241,7 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 | D-C3 | `docs/developer-tools/ide-whitelist-uat-log.md` | NOT_APPLICABLE | Maintainer evidence | evergreen | T107 References, guide |
 | D-U2 | `.cursor/whitelist-patterns.yaml` | NOT_APPLICABLE | IDE-adjacent config | evergreen | Guide, ADR-013 |
 | D-U3 | `docs/developer-tools/ide-whitelist-guide.md` | NOT_APPLICABLE | Developer maintainer | evergreen | T107, cheatsheet/AGENTS (optional) |
-| D-C4–D-C5 | `packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py` (+ test) | NOT_APPLICABLE | Script | evergreen | Guide § “Running the validator” |
+| D-C4–D-C5 | `packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py` (+ test) | NOT_APPLICABLE | Script | evergreen | Guide § “Running the validator” |
 
 ---
 

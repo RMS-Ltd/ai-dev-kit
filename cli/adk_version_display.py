@@ -1,7 +1,7 @@
 """
 Bridge to install_ux_version for CLI commands (UXR-016).
 
-Locates packages/frameworks/workflow mgt/scripts/install_ux_version.py
+Locates packages/frameworks/workflow-mgt/scripts/install_ux_version.py
 relative to the repository root or an installed framework tree.
 """
 
@@ -21,13 +21,13 @@ def _candidate_script_dirs() -> list[Path]:
     here = Path(__file__).resolve()
     repo_root = here.parents[1]
     dirs = [
-        repo_root / "packages" / "frameworks" / "workflow mgt" / "scripts",
+        repo_root / "packages" / "frameworks" / "workflow-mgt" / "scripts",
     ]
     cwd = Path.cwd()
     for base in (cwd, repo_root):
         cfg = base / "rw-config.yaml"
         if cfg.is_file():
-            dirs.append(base / "packages" / "frameworks" / "workflow mgt" / "scripts")
+            dirs.append(base / "packages" / "frameworks" / "workflow-mgt" / "scripts")
     return dirs
 
 
@@ -55,6 +55,19 @@ def resolve_install_adk_version(project_root: Optional[Path] = None, *, verbose:
 
 def print_session_banner(project_root: Optional[Path] = None, *, verbose: bool = False, file=None):
     return _load_install_ux_version().print_session_banner(project_root, verbose=verbose, file=file)
+
+
+def print_legacy_framework_layout_warning(
+    frameworks_root: Optional[Path] = None,
+    *,
+    project_root: Optional[Path] = None,
+    file=None,
+) -> bool:
+    return _load_install_ux_version().print_legacy_framework_layout_warning(
+        frameworks_root=frameworks_root,
+        project_root=project_root,
+        file=file,
+    )
 
 
 def print_section_header(title: str, project_root: Optional[Path] = None, *, verbose: bool = False, file=None):

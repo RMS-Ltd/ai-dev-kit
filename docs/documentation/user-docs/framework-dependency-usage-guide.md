@@ -109,7 +109,7 @@ kanban:
   story_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md"
 
 scripts:
-  scripts_path: "packages/frameworks/workflow mgt/scripts"
+  scripts_path: "packages/frameworks/workflow-mgt/scripts"
   kanban_update_script: "packages/frameworks/kanban/scripts/update-kanban-docs.py"
 
 validation:

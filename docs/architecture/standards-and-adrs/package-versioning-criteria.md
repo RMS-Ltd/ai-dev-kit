@@ -283,8 +283,8 @@ Decision: PATCH bump (bug fix, no new functionality)
 
 ## References
 
-- **Package Version Workflow:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md`
-- **Agent-Driven Execution:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md`
+- **Package Version Workflow:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md`
+- **Agent-Driven Execution:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md`
 - **Dual-Versioning Guide:** `docs/architecture/standards-and-adrs/dual-versioning-package-managers.md`
 
 ---

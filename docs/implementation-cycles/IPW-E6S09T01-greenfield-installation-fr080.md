@@ -26,8 +26,8 @@ Deliver an **opinionated, reproducible greenfield path**: from acquiring AI Dev 
 |----|-------------|----------------|
 | **F1** | Greenfield installation **specification** (inputs, outputs, ordering, failure modes). | Standalone subsection or linked doc; ordering: acquire → install → configure → verify. |
 | **F2** | **Reproducible** path (scripts, CLI, and/or deterministic checklist). | See **§1.5 Decisions**. |
-| **F3** | **Mandatory installer steps** — not copy-only. | [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py), [`install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py) (or documented successors). |
-| **F4** | **Verification gates** (validators, smoke, checklist) vs `rw-config.yaml` / consumer layout. | Tie to [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md). |
+| **F3** | **Mandatory installer steps** — not copy-only. | [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py), [`install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py) (or documented successors). |
+| **F4** | **Verification gates** (validators, smoke, checklist) vs `rw-config.yaml` / consumer layout. | Tie to [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md). |
 | **F5** | **Adopter docs** — greenfield-only narrative; pointers to brownfield. | [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) and user-docs; cross-link [FR-081](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md). |
 
 ### 1.3 Non-functional requirements
@@ -84,7 +84,7 @@ Decision record (locked):
 | **TD1** | End-to-end greenfield scenario | Matches task **AC2**: documented scratch/template path with **no undocumented** manual steps; capture steps in IPW-derived checklist or automation. |
 | **TD2** | Doc boundaries | **AC3**: `INSTALL_IN_YOUR_PROJECT.md` (or successor) links **ADR-003** and **FR-081** in the greenfield narrative. |
 | **TD3** | Installers invoked | Assert **F3**: process cannot be satisfied by copy-only; installers run (or CI/docs assert exact invocations). |
-| **TD4** | Verification gates | Run or document validator layout per `rw-config.yaml` post-install (align [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)). |
+| **TD4** | Verification gates | Run or document validator layout per `rw-config.yaml` post-install (align [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)). |
 | **TD5** | Example-run forensics | A reference run produces storable artifacts (log file path, transcript, or FR-078-shaped event sequence) suitable for **post-hoc analysis**; redaction rules verified. |
 | **TD6** | Cross-story | Smoke that greenfield docs do not contradict **T02** brownfield doc set (no scope bleed). |
 
@@ -150,9 +150,9 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 **Files likely touched (living list):**
 
 - [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
-- [`packages/frameworks/workflow mgt/scripts/install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)
+- [`packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py)
 - [`packages/frameworks/kanban/scripts/install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)
-- [`packages/frameworks/workflow mgt/docs/rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)
+- [`packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)
 - Consumer `rw-config.yaml` / template in recipient story (as defined by orchestration)
 
 ---

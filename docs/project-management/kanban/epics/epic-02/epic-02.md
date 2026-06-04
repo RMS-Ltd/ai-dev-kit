@@ -90,7 +90,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Epic 2 owns the **Workflow Management framework** living under `packages/frameworks/workflow mgt/`.
+Epic 2 owns the **Workflow Management framework** living under `packages/frameworks/workflow-mgt/`.
 
 It defines how Release Workflow (RW) and other workflows are:
 

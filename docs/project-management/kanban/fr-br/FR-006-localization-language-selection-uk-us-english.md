@@ -421,7 +421,7 @@ Use standard i18n approach:
 
 - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` - Epic 21 definition
 - `docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md` - Setup process
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py` - RW installer
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` - RW installer
 - Standard i18n practices and translation management systems
 
 ---

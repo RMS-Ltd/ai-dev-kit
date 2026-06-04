@@ -207,8 +207,8 @@ After user verification of the enhanced Kanban board structure, update any other
 - Update documentation if needed
 
 **Package Locations:**
-- Release Workflow: `packages/frameworks/workflow mgt/`
-- Validators: `packages/frameworks/workflow mgt/scripts/validation/`
+- Release Workflow: `packages/frameworks/workflow-mgt/`
+- Validators: `packages/frameworks/workflow-mgt/scripts/validation/`
 - Installers: `packages/frameworks/kanban/scripts/`
 - Other packages: As identified in T04 impact assessment
 
@@ -241,8 +241,8 @@ After user verification of the enhanced Kanban board structure, update any other
 ## References
 
 - `docs/knowledge/analysis/kanban-board-enhancement-system-impacts.md` - Impact assessment (T04 deliverable)
-- `packages/frameworks/workflow mgt/` - Release Workflow package
-- `packages/frameworks/workflow mgt/scripts/validation/` - Validator packages
+- `packages/frameworks/workflow-mgt/` - Release Workflow package
+- `packages/frameworks/workflow-mgt/scripts/validation/` - Validator packages
 - `packages/frameworks/kanban/scripts/` - Installer packages
 - `packages/frameworks/kanban/` - Kanban package (T05 deliverable)
 

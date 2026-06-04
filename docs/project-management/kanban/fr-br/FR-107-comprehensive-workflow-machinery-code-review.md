@@ -36,7 +36,7 @@ The workflow framework has **evolved incrementally** over many epics and FRs. Do
 3. **Missed efficiency** — Repeated logic across `scripts/validation/`, `scripts/kanban/`, and workflow-specific modules; opportunities for shared utilities or clearer ownership boundaries.
 4. **RC blind spots** — [E02:S13:T02–T06](../epics/epic-02/story-13-workflow-management-package-implementation-review.md) plan inventory and gap analysis but lack a dedicated **code-level** review pass with remediation backlog.
 
-**Impact:** RC sign-off for `packages/frameworks/workflow mgt/` may approve a package that is **document-aligned** but still **operationally fragmented**, increasing maintainer cost and adopter confusion.
+**Impact:** RC sign-off for `packages/frameworks/workflow-mgt/` may approve a package that is **document-aligned** but still **operationally fragmented**, increasing maintainer cost and adopter confusion.
 
 ---
 
@@ -59,7 +59,7 @@ The workflow framework has **evolved incrementally** over many epics and FRs. Do
 
 ## Functional Requirements
 
-- [ ] **FR-107:R01** — Complete inventory of workflow-related code under `packages/frameworks/workflow mgt/` (scripts, workflows, config, tests) with ownership tags (RW/UKW/CMW/shared).
+- [ ] **FR-107:R01** — Complete inventory of workflow-related code under `packages/frameworks/workflow-mgt/` (scripts, workflows, config, tests) with ownership tags (RW/UKW/CMW/shared).
 - [ ] **FR-107:R02** — Map inventory to [E02:S13:T01](../epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) expectations; flag undocumented or orphan components.
 - [ ] **FR-107:R03** — Duplication and fragmentation analysis (overlapping validators, parallel kanban update paths, duplicate YAML/rule sources).
 - [ ] **FR-107:R04** — Efficiency review: identify consolidation candidates, shared utility extractions, and obsolete code paths (with evidence).

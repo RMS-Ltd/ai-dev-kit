@@ -8,7 +8,7 @@ per docs/architecture/standards-and-adrs/gap-log-schema.md.
 import sys
 from pathlib import Path
 
-validation_dir = Path(__file__).resolve().parent.parent / "packages/frameworks/workflow mgt/scripts/validation"
+validation_dir = Path(__file__).resolve().parent.parent / "packages/frameworks/workflow-mgt/scripts/validation"
 if str(validation_dir) not in sys.path:
     sys.path.insert(0, str(validation_dir))
 

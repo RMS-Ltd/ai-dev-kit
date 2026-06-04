@@ -133,7 +133,7 @@ Update packaged RW to:
 
 ## Input
 
-- Packaged RW framework: `packages/frameworks/workflow mgt/`
+- Packaged RW framework: `packages/frameworks/workflow-mgt/`
 - Source repo RW implementation: `.cursorrules` (UKW context detection)
 - UKW perpetual task: `E06:S06:T08` (pattern example)
 - UKW analysis: `docs/analysis/ukw-versioning-reasoning-analysis.md`
@@ -149,9 +149,9 @@ Update packaged RW to:
 - Updated documentation and examples
 
 **Files to Update:**
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW execution guide)
-- `packages/frameworks/workflow mgt/workflows/release-workflow.yaml` (if needed)
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` (if exists)
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW execution guide)
+- `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml` (if needed)
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` (if exists)
 
 ---
 
@@ -171,9 +171,9 @@ Update packaged RW to:
 
 ## References
 
-- **RW Package:** `packages/frameworks/workflow mgt/`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **RW Workflow YAML:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- **RW Package:** `packages/frameworks/workflow-mgt/`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 - **Source RW Implementation:** `.cursorrules` (RW trigger section)
 - **UKW Analysis:** Analysis document explaining UKW versioning pattern
 

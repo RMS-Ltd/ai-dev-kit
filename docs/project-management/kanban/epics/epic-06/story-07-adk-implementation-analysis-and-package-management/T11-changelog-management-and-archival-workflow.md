@@ -60,10 +60,10 @@ Implement automated changelog management workflow (CMW) with:
 - **Current Changelog:** `CHANGELOG.md` (~9,500 lines)
 - **Changelog Archive Directory:** `docs/changelog-and-release-notes/changelog-archive/`
 - **Existing Validators:**
-  - `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+  - `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 - **Reference Workflow:** Update Kanban Workflow (UKW) - Similar workflow pattern
-- **Release Workflow:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- **Release Workflow:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 
 ---
 
@@ -72,14 +72,14 @@ Implement automated changelog management workflow (CMW) with:
 **Changelog Management and Archival System:**
 
 1. **Changelog Management Workflow (CMW):**
-   - Workflow definition: `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
+   - Workflow definition: `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
    - **Type:** Deterministic (rule-based, script-driven)
    - **Triggers:**
      - Scheduled execution via cron (recommended - **weekly** by default, can be adjusted to biweekly or daily if needed)
      - RW Step 9.5 (automatic when threshold exceeded)
      - Manual: "CMW" or "cmw" command (for testing/debugging)
    - **Execution:** Script-based (no agent execution guide needed - deterministic operations)
-   - Cursor rules trigger section: `packages/frameworks/workflow mgt/cursorrules-cmw-trigger-section.md` (optional, for manual trigger)
+   - Cursor rules trigger section: `packages/frameworks/workflow-mgt/cursorrules-cmw-trigger-section.md` (optional, for manual trigger)
 
 2. **CMW Functionality:**
    - Analyze current changelog state (size, ordering, duplicates)
@@ -112,8 +112,8 @@ Implement automated changelog management workflow (CMW) with:
 5. **SOPs and Documentation:**
    - Changelog management policy: `docs/architecture/standards-and-adrs/changelog-management-policy.md`
    - Changelog archival policy: `docs/architecture/standards-and-adrs/changelog-archival-policy.md`
-   - CMW script documentation: `packages/frameworks/workflow mgt/scripts/changelog/README.md` (deterministic scripts, no agent execution guide needed)
-   - CMW workflow definition: `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
+   - CMW script documentation: `packages/frameworks/workflow-mgt/scripts/changelog/README.md` (deterministic scripts, no agent execution guide needed)
+   - CMW workflow definition: `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
    - Training materials (if needed)
 
 6. **Initial Archival:**

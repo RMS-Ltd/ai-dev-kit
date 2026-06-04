@@ -76,7 +76,7 @@ task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
 
 4. Update `rw-config.yaml` patterns (above).
 5. Grep for broken links: `Epic-`, `Story-`, unpadded `epic-4/`, `story-019/` under `docs/` and fix remaining references.
-6. Run `python packages/frameworks/workflow mgt/scripts/validation/validate_kanban_naming.py --strict`.
+6. Run `python packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py --strict`.
 
 ### Case-insensitive macOS (two-step rename)
 

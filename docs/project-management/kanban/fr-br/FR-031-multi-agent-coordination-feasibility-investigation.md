@@ -116,7 +116,7 @@ Complex tasks could be automatically decomposed by planner agents into smaller, 
 
 **Problem Domain:** Agent Coordination, Workflow Automation, Parallel Execution  
 **Affected Areas:**
-- [ ] Workflow Management Framework (`packages/frameworks/workflow mgt/`)
+- [ ] Workflow Management Framework (`packages/frameworks/workflow-mgt/`)
 - [ ] Release Workflow (RW) implementation
 - [ ] Update Kanban Workflow (UKW) implementation
 - [ ] Package Version Workflow (PVW) implementation
@@ -170,7 +170,7 @@ Investigate and assess feasibility of multi-agent coordination patterns for enha
 
 **Related Work:**
 - **Source Material:** [`cursor-scaling-long-running-autonomous-coding-agents.md`](../../../knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md) - Cursor blog post on multi-agent coordination
-- **Workflow Framework:** `packages/frameworks/workflow mgt/` - Existing workflow infrastructure
+- **Workflow Framework:** `packages/frameworks/workflow-mgt/` - Existing workflow infrastructure
 - **Release Workflow:** RW implementation and documentation
 - **Update Kanban Workflow:** UKW implementation and documentation
 - **Package Version Workflow:** PVW implementation and documentation
@@ -338,8 +338,8 @@ Investigate and assess feasibility of multi-agent coordination patterns for enha
 
 - **Primary Source:** [`cursor-scaling-long-running-autonomous-coding-agents.md`](../../../knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md) - Cursor blog post by Wilson Lin (Jan 14, 2026)
 - **Source URL:** [cursor.com/blog/scaling-agents](https://cursor.com/blog/scaling-agents)
-- **Workflow Management Framework:** `packages/frameworks/workflow mgt/`
-- **Release Workflow Documentation:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Workflow Management Framework:** `packages/frameworks/workflow-mgt/`
+- **Release Workflow Documentation:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Update Kanban Workflow:** UKW implementation and documentation
 - **Package Version Workflow:** PVW implementation and documentation
 - **Changelog Management Workflow:** CMW implementation and documentation

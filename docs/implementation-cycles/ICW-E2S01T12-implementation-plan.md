@@ -69,9 +69,9 @@ housekeeping_policy: keep
 
 ## Integration Touchpoints
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `.cursorrules` RW trigger section and associated dual-source RW trigger docs
 
 ---

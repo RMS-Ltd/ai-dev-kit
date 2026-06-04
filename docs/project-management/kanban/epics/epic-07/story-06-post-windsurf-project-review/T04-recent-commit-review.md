@@ -22,7 +22,7 @@ Review last ~15 commits for RW compliance, batch scope, and quality.
 
 ## Input
 
-Git log, CHANGELOG, commit messages; [.cursorrules (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules); [commit-message-language-guidelines.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Templates/commit-message-language-guidelines.md).
+Git log, CHANGELOG, commit messages; [.cursorrules (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules); [commit-message-language-guidelines.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Templates/commit-message-language-guidelines.md).
 
 ## Deliverable
 

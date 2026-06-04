@@ -128,10 +128,10 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 
 ### 4.1 Files to create or modify
 
-- `packages/frameworks/workflow mgt/scripts/kanban/est_format.py`
-- `packages/frameworks/workflow mgt/scripts/kanban/test_est_format.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_est_inline_format.py`
-- `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
+- `packages/frameworks/workflow-mgt/scripts/kanban/est_format.py`
+- `packages/frameworks/workflow-mgt/scripts/kanban/test_est_format.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_est_inline_format.py`
+- `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - `docs/project-management/kanban/kanban-board-guide.md`
 - `docs/architecture/standards-and-adrs/task-naming-migration-guide.md`

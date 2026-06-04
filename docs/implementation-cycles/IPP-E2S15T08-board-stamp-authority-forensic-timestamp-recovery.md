@@ -49,12 +49,12 @@ See attached IPW plan: RF1–RF8, RNF1–RNF4. User locked: automatic backfill, 
 
 ### 4.1 Files created
 
-- `packages/frameworks/workflow mgt/scripts/kanban/stamp_authority.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_board_stamp_diff.py`
-- `packages/frameworks/workflow mgt/scripts/kanban/backfill_board_row_stamps.py`
-- `packages/frameworks/workflow mgt/scripts/kanban/snapshot_kanban_boards.py`
-- `packages/frameworks/workflow mgt/scripts/test_stamp_authority.py`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md`
+- `packages/frameworks/workflow-mgt/scripts/kanban/stamp_authority.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py`
+- `packages/frameworks/workflow-mgt/scripts/kanban/backfill_board_row_stamps.py`
+- `packages/frameworks/workflow-mgt/scripts/kanban/snapshot_kanban_boards.py`
+- `packages/frameworks/workflow-mgt/scripts/test_stamp_authority.py`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md`
 
 ### 4.2 Agent skill (AC7)
 

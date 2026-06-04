@@ -23,7 +23,7 @@
 
 - [ ] **Run branch safety validator**
   ```bash
-  python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+  python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
   ```
   Expected: Exit code 0 (PASS)
 
@@ -63,7 +63,7 @@
 
 - [ ] **Verify validation scripts**
   ```bash
-  ls -la "packages/frameworks/workflow mgt/scripts/validation/"
+  ls -la "packages/frameworks/workflow-mgt/scripts/validation/"
   ```
   Expected: All required scripts present
 
@@ -221,7 +221,7 @@
 
 - [ ] **Re-run branch validation**
   ```bash
-  python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+  python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
   ```
 
 ### 🚨 Configuration Issues

@@ -31,7 +31,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This story evaluates **all installation paths** for the Numbering & Versioning framework package (`packages/frameworks/numbering & versioning/`) to ensure each path is documented, reproducible, and RC-ready.
+This story evaluates **all installation paths** for the Numbering & Versioning framework package (`packages/frameworks/numbering-versioning/`) to ensure each path is documented, reproducible, and RC-ready.
 
 ---
 
@@ -100,5 +100,5 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 
 ## References
 
-- Package: `packages/frameworks/numbering & versioning/`
+- Package: `packages/frameworks/numbering-versioning/`
 - Installation references in user docs.

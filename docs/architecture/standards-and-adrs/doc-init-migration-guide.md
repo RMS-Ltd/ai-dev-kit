@@ -187,6 +187,6 @@ Avoid these:
 - **FR-018:** Abstract Space for Zero-Numbered E/S/T Docs
 - **FR-020:** Version Validator Abstract Space Awareness
 - **Versioning Policy (Dev-Kit):** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
-- **Versioning Policy (Framework):** `packages/frameworks/numbering & versioning/versioning-policy.md`
-- **RW Agent Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **Changelog Implementation Guide:** `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md`
+- **Versioning Policy (Framework):** `packages/frameworks/numbering-versioning/versioning-policy.md`
+- **RW Agent Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Changelog Implementation Guide:** `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md`

@@ -69,7 +69,7 @@ Deliver a fully validated, consistent set of workflow READMEs across all 11 pack
 
 ### 2.2 Specification mapping from ascertained requirements
 
-- **RF1 (all READMEs exist)** → Create `packages/frameworks/workflow mgt/workflows/release-workflow/README.md` using the canonical template, populated with release-workflow-specific metadata from `workflow-registry.yaml` and agent execution guides.
+- **RF1 (all READMEs exist)** → Create `packages/frameworks/workflow-mgt/workflows/release-workflow/README.md` using the canonical template, populated with release-workflow-specific metadata from `workflow-registry.yaml` and agent execution guides.
 - **RF2 (template compliance)** → Run fixed validator on all 11 READMEs; ensure 0 missing-section reports.
 - **RF6 (functional links)** → Identify all broken internal links across 10 existing READMEs; either create target files or rewrite links to point to existing resources.
 - **RF7 (validator correctness)** → Fix `extract_sections()` regex to strip `## ` prefix from ALL `## ` headings, not just emoji-prefixed ones.
@@ -115,17 +115,17 @@ This is primarily a documentation task. Tests are structural validation scripts 
 | **4** | Create `release-workflow/README.md` using canonical template, populated with RW-specific metadata (triggers: `RW`, `RW -k`, `RW -d`, 17 steps) and references to existing agent execution guides. | New README for release-workflow |
 | **5** | Audit and fix broken internal links across all 10 existing READMEs. For links to non-existent `../../../docs/{workflow}-guide.md` and `../../../examples/{workflow}/`, either create minimal stub files OR rewrite links to point to actual existing resources (e.g., agent execution guides under `KB/`). | All internal links resolve |
 | **6** | Add any genuinely missing sections to existing READMEs where content is thin (e.g., some may lack Configuration or Integration sections based on validator baseline). | Template compliance improved |
-| **7** | Update framework README (`packages/frameworks/workflow mgt/README.md`) if any workflow table links are broken or if text still claims 12 workflows. | Framework README accurate |
+| **7** | Update framework README (`packages/frameworks/workflow-mgt/README.md`) if any workflow table links are broken or if text still claims 12 workflows. | Framework README accurate |
 | **8** | Update task doc and FR-056: correct "12 workflows" to "11 workflows" everywhere; update current state analysis to reflect existing READMEs. | Documentation reflects reality |
 | **9** | Run final validation: fixed validator script + manual link check. Confirm 0 errors, 0 warnings. | Validation passes |
 | **N** | **[MANDATORY] Reconcile task `E5:S01:T56` status** to actual implementation state: if all acceptance criteria satisfied with evidence → transition to `COMPLETE` and add forensic marker `✅ COMPLETE (v{version})`; if ongoing → confirm `IN PROGRESS`; if blocked → `BLOCKED` with reason. Update `Last updated`. | Task doc status reflects actual state |
 
 ### 4.1 Files to create or modify
 
-- **Create:** `packages/frameworks/workflow mgt/workflows/release-workflow/README.md`
-- **Modify:** `packages/frameworks/workflow mgt/scripts/validate-workflow-docs.py` — fix `extract_sections()` regex
-- **Modify:** `packages/frameworks/workflow mgt/workflows/*/README.md` (up to 10 files) — fix broken links, add missing sections
-- **Modify:** `packages/frameworks/workflow mgt/README.md` — correct workflow count, fix table links if needed
+- **Create:** `packages/frameworks/workflow-mgt/workflows/release-workflow/README.md`
+- **Modify:** `packages/frameworks/workflow-mgt/scripts/validate-workflow-docs.py` — fix `extract_sections()` regex
+- **Modify:** `packages/frameworks/workflow-mgt/workflows/*/README.md` (up to 10 files) — fix broken links, add missing sections
+- **Modify:** `packages/frameworks/workflow-mgt/README.md` — correct workflow count, fix table links if needed
 - **Modify:** `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md` — update scope to reflect 11 workflows and audit-and-fix approach
 - **Modify:** `docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md` — correct "12 workflows" to "11 workflows"
 - **Modify:** `docs/project-management/kanban/kboard.md` — update T56 status
@@ -142,7 +142,7 @@ This is primarily a documentation task. Tests are structural validation scripts 
 
 ## 5. Success / verification criteria
 
-- [x] `python "packages/frameworks/workflow mgt/scripts/validate-workflow-docs.py"` reports **0 errors, 0 warnings** across all 11 workflows.
+- [x] `python "packages/frameworks/workflow-mgt/scripts/validate-workflow-docs.py"` reports **0 errors, 0 warnings** across all 11 workflows.
 - [x] `release-workflow/README.md` exists and passes validation.
 - [x] All internal links in all workflow READMEs resolve (no `../../../docs/...` or `../../../examples/...` pointing to non-existent files).
 - [x] Framework README correctly states **11 workflows** (not 12) and all table links work.
@@ -156,10 +156,10 @@ This is primarily a documentation task. Tests are structural validation scripts 
 
 - **Host Task:** `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md`
 - **FR-056:** `docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md`
-- **Workflow registry:** `packages/frameworks/workflow mgt/workflows/workflow-registry.yaml`
-- **Framework README:** `packages/frameworks/workflow mgt/README.md`
-- **Canonical template:** `packages/frameworks/workflow mgt/templates/workflow-readme-template.md`
-- **Style guide:** `packages/frameworks/workflow mgt/docs/workflow-documentation-style-guide.md`
-- **Validator script:** `packages/frameworks/workflow mgt/scripts/validate-workflow-docs.py`
+- **Workflow registry:** `packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml`
+- **Framework README:** `packages/frameworks/workflow-mgt/README.md`
+- **Canonical template:** `packages/frameworks/workflow-mgt/templates/workflow-readme-template.md`
+- **Style guide:** `packages/frameworks/workflow-mgt/docs/workflow-documentation-style-guide.md`
+- **Validator script:** `packages/frameworks/workflow-mgt/scripts/validate-workflow-docs.py`
 - **Plan doc template:** `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
-- **IPW canonical guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- **IPW canonical guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`

@@ -19,8 +19,8 @@ housekeeping_policy: keep
 Top-level entries (repo root):
 
 - `packages/` – **Frameworks SoT**
-  - `packages/frameworks/numbering & versioning` – Numbering & Versioning framework (canonical versioning docs).
-  - `packages/frameworks/workflow mgt` – Workflow Management framework (RW/UKW/CMW, validators, scripts).
+  - `packages/frameworks/numbering-versioning` – Numbering & Versioning framework (canonical versioning docs).
+  - `packages/frameworks/workflow-mgt` – Workflow Management framework (RW/UKW/CMW, validators, scripts).
   - `packages/frameworks/kanban` – Kanban framework (governance, templates, examples).
   - Other framework packages (e.g. document lifecycle, debug path) – framework-specific SoT.
 - `docs/` – **Dev-kit-local specialisation + book material**
@@ -47,7 +47,7 @@ High-level classification:
 
 ## 2. Framework Package Sanity Pass (Conceptual)
 
-### 2.1 Numbering & Versioning (`packages/frameworks/numbering & versioning`)
+### 2.1 Numbering & Versioning (`packages/frameworks/numbering-versioning`)
 
 - **Canonical:**
   - `versioning-policy.md` – primary schema definition.
@@ -59,7 +59,7 @@ High-level classification:
 - **Potential legacy:**
   - Any older references in dev-kit ADRs that predate the refined framework docs should be treated as **historic examples**, not canonical.
 
-### 2.2 Workflow Management (`packages/frameworks/workflow mgt`)
+### 2.2 Workflow Management (`packages/frameworks/workflow-mgt`)
 
 - **Canonical:**
   - `KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` – RW agent execution guide.
@@ -87,12 +87,12 @@ High-level classification:
 ### 3.1 Policy/Doc Duplication
 
 - **Versioning:**
-  - Framework: `packages/frameworks/numbering & versioning/versioning-policy.md`, `versioning-strategy.md`.
+  - Framework: `packages/frameworks/numbering-versioning/versioning-policy.md`, `versioning-strategy.md`.
   - Dev-kit: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`, `dev-kit-versioning-cookbook.md`, `dual-versioning-package-managers.md`.
   - **Pattern:** correct “SoT + specialisation” split, but overlapping explanations can be confusing if readers don’t see the relationship clearly.
 
 - **RW workflow:**
-  - Framework: RW agent execution guide under `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/`.
+  - Framework: RW agent execution guide under `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/`.
   - Dev-kit: `.cursorrules` and ADRs reference RW behaviour and constraints.
   - **Pattern:** dev-kit adds project-level rules (e.g. “RW only for commits/pushes”) on top of framework behaviour.
 
@@ -104,7 +104,7 @@ High-level classification:
 ### 3.2 Scripts
 
 - There is an expected overlap between:
-  - `packages/frameworks/workflow mgt/scripts/*` – framework-level scripts (validators, converters, kanban update).
+  - `packages/frameworks/workflow-mgt/scripts/*` – framework-level scripts (validators, converters, kanban update).
   - `scripts/*` – dev-kit project-level scripts (document installers, package build/publish, utility scanners).
 - **Potential legacy/fat:**
   - Older one-off scripts under `scripts/` that replicate behaviour now encapsulated in the framework scripts.
@@ -151,7 +151,7 @@ High-level classification:
 ## 6. Scripts & Miscellaneous Fat (High-Level)
 
 - **Core tooling:**
-  - Workflow validators and version converters under `packages/frameworks/workflow mgt/scripts`.
+  - Workflow validators and version converters under `packages/frameworks/workflow-mgt/scripts`.
   - RW/UKW integration scripts (e.g. `update_kanban_docs.py`).
 - **Project utilities:**
   - Scripts in `scripts/documentation` and `scripts/frameworks` for building/uploading packages, installing frameworks into adopters, etc.
@@ -173,7 +173,7 @@ The following items are **not executed yet**; they define the next task’s scop
      - Pointers back to framework docs for full detail.
 
 2. **Mark legacy/historic docs:**
-   - Identify older RW/UKW/CMW guides outside `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/` and:
+   - Identify older RW/UKW/CMW guides outside `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/` and:
      - Add a “Historic / superseded by …” banner, or
      - Move them into a `legacy/` or `archive/` subfolder with a README explaining their status.
    - Do the same for any early Kanban board/guide variants or outdated governance texts.

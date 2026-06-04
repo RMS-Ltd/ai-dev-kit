@@ -32,7 +32,7 @@ git branch --show-current
 git status
 
 # Run branch safety validator (MANDATORY)
-python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 ```
 
 **Expected Output:**
@@ -86,7 +86,7 @@ semver_mapping_strategy: task_touch
 python3 --version
 
 # Check validation scripts
-ls -la "packages/frameworks/workflow mgt/scripts/validation/"
+ls -la "packages/frameworks/workflow-mgt/scripts/validation/"
 
 # Test SemVer converter
 python3 -c "from packages.frameworks.workflow_mgt.scripts.version.semver_converter import convert_version_string; print('SemVer converter OK')"
@@ -480,7 +480,7 @@ git add -A
 git commit -m "WIP: Clean up before release"
 
 # Re-run validation
-python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 ```
 
 ---
@@ -615,7 +615,7 @@ git reset --hard HEAD@{1}
 ```bash
 # 1. Pre-Release Checks
 git branch --show-current
-python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 grep "semver_mapping_strategy:" rw-config.yaml
 
 # 2. Execute Release
@@ -633,7 +633,7 @@ git show v0.5.1.48+1 --stat
 ```bash
 # 1. Pre-Release Checks  
 git branch --show-current
-python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 grep "semver_mapping_strategy:" rw-config.yaml
 
 # 2. Execute Release
@@ -675,7 +675,7 @@ python3 -c "import yaml; print('Config OK' if yaml.safe_load(open('rw-config.yam
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: registry
 use_kanban: true
@@ -688,7 +688,7 @@ kanban_root: docs/project-management/kanban
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: task_touch
 use_kanban: true
@@ -727,7 +727,7 @@ jobs:
         run: |
           echo "RW" | python3 -c "
 import sys
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts')
 from workflow_orchestrator import WorkflowOrchestrator
 wo = WorkflowOrchestrator()
 wo.execute_workflow('release-workflow.yaml')

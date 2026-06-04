@@ -32,7 +32,7 @@ Review Intake workflow (FR/BR/UXR processing) for Windsurf impact, .windsurf ski
 
 - .cursorrules intake-related sections
 - .windsurf/skills/ (intake-process, fr_br_uxr_completed_update)
-- packages/frameworks/workflow mgt/workflows/intake-workflow/
+- packages/frameworks/workflow-mgt/workflows/intake-workflow/
 
 ## Deliverable
 

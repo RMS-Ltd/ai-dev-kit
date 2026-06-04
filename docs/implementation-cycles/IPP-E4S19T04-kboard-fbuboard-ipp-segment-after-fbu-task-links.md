@@ -106,8 +106,8 @@ The normative row contract (RF1–RF6) defines exact token text and segment orde
 
 ### 4.1 Files to create or modify
 
-- `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py` — add formatter/resolver
-- `packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py` — add T1–T7 test cases
+- `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py` — add formatter/resolver
+- `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` — add T1–T7 test cases
 - `docs/project-management/kanban/kboard.md` — normalize rows as needed
 - `docs/project-management/kanban/fbuboard.md` — normalize rows as needed
 
@@ -138,6 +138,6 @@ The normative row contract (RF1–RF6) defines exact token text and segment orde
 - [UXR-010](../project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 - [kboard](../project-management/kanban/kboard.md)
 - [fbuboard](../project-management/kanban/fbuboard.md)
-- [update_kanban_docs.py](../../packages/frameworks/workflow%20mgt/scripts/update_kanban_docs.py)
-- [test_update_kanban_docs.py](../../packages/frameworks/workflow%20mgt/scripts/test_update_kanban_docs.py)
+- [update_kanban_docs.py](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py)
+- [test_update_kanban_docs.py](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py)
 - [PLAN_DOC_TEMPLATE.md](../../packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md)

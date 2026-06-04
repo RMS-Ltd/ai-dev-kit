@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.3.2.12+4] - 04-06-26
+## [0.6.9.18+1] - 05-06-26
 
-E03:S02:T12 — **FR-045/FR-046/BR-061:** Task-touch SemVer collision wave 2 — PATCH/core injective finalize, registry repair (counter 873), audit/repair/validate scripts, pytest. SemVer **v0.4.874+4**. Git tags not moved.
+E06:S09:T18 — **BR-087 wave 2:** Maintainer framework dirs renamed to install slugs (`workflow-mgt`, etc.); install legacy-path warnings; path sweep. SemVer **v0.4.875+1**. Adopter verification pending.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.12+4.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.18+1.md)
 
 ---
 

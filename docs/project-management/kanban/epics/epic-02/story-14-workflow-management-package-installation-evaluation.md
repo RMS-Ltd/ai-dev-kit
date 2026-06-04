@@ -31,7 +31,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This story evaluates **all installation paths** for the Workflow Management framework package (`packages/frameworks/workflow mgt/`) to ensure each path is documented, reproducible, and RC-ready.
+This story evaluates **all installation paths** for the Workflow Management framework package (`packages/frameworks/workflow-mgt/`) to ensure each path is documented, reproducible, and RC-ready.
 
 ---
 
@@ -100,5 +100,5 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 
 ## References
 
-- Package: `packages/frameworks/workflow mgt/`
+- Package: `packages/frameworks/workflow-mgt/`
 - Installation guides under `docs/documentation/user-docs/`.

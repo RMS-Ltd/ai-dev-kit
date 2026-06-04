@@ -174,7 +174,7 @@ packages/frameworks/doc-lifecycle/
 ## 🔗 Related Packages
 
 - **Kanban:** [`packages/frameworks/kanban/`](../kanban/) — Project management with lifecycle metadata
-- **Workflow Management:** [`packages/frameworks/workflow mgt/`](../workflow%20mgt/) — Automated workflows including housekeeping
+- **Workflow Management:** [`packages/frameworks/workflow-mgt/`](../workflow-mgt/) — Automated workflows including housekeeping
 
 ---
 

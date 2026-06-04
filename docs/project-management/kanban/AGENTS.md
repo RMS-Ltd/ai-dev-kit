@@ -10,11 +10,11 @@ When executing Release Workflow (RW, RW -d, RW -k):
 
 **Primary responsibilities:** version bump (`RC.EPIC.STORY.TASK+BUILD`), changelog, scoped kanban Step 7 (four surfaces), commit, tag, push via RW — never manual `git commit` / `git push`.
 
-**Skills:** `.cursor/skills/version-bump`, `changelog_create`, `readme_update`, validation scripts under `packages/frameworks/workflow mgt/scripts/validation/`.
+**Skills:** `.cursor/skills/version-bump`, `changelog_create`, `readme_update`, validation scripts under `packages/frameworks/workflow-mgt/scripts/validation/`.
 
 **Coordination:** Validation Agent (branch safety); Documentation Agent (changelog, README, completed ledgers).
 
-**Canonical execution:** `.cursorrules` RW section · `.claude/commands/rw.md` · [release-workflow-agent-execution.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+**Canonical execution:** `.cursorrules` RW section · `.claude/commands/rw.md` · [release-workflow-agent-execution.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 
 **Human quick reference:** [workflow-initiation-cheatsheet.md](../../../guides/workflow-initiation-cheatsheet.md)
 

@@ -138,9 +138,9 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 | D2 | `docs/project-management/kanban/epics/.../T16-*.md` | UPDATE | IPP link; AC checkboxes on verify | Phase 8 |
 | D3 | `docs/project-management/kanban/fr-br/BR-086-*.md` | UPDATE | Status on fix | RF1–RF8 |
 | D4 | `packages/frameworks/kanban/scripts/kanban_paths.py` | UPDATE | Book task constant | RF3 |
-| D5 | `packages/frameworks/workflow mgt/scripts/install_release_workflow.py` | UPDATE | Detection, prompts, YAML | RF1–RF4, RF7 |
-| D6 | `packages/frameworks/workflow mgt/config/github-issue-install-signoff-contract.yaml` | UPDATE | BR-083 check | RF5 |
-| D7 | `packages/frameworks/workflow mgt/docs/INSTALL_IN_YOUR_PROJECT.md` (or kit install doc path) | UPDATE | Lowercase example | RF7 |
+| D5 | `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` | UPDATE | Detection, prompts, YAML | RF1–RF4, RF7 |
+| D6 | `packages/frameworks/workflow-mgt/config/github-issue-install-signoff-contract.yaml` | UPDATE | BR-083 check | RF5 |
+| D7 | `packages/frameworks/workflow-mgt/docs/INSTALL_IN_YOUR_PROJECT.md` (or kit install doc path) | UPDATE | Lowercase example | RF7 |
 | D8 | `tests/test_install_release_workflow_*.py` | UPDATE | Fixtures | T1–T7 |
 | D9 | `docs/project-management/kanban/kboard.md` | UPDATE | T16 row (pending FR-097) | Step N |
 | D10 | `docs/project-management/kanban/fbuboard.md` | UPDATE | BR-086 row | Step N |
@@ -153,8 +153,8 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 | Doc ID | Target path | Publication | Lifecycle | Inbound links |
 | ------ | ----------- | ----------- | --------- | ------------- |
 | D1 | `docs/implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md` | NOT_APPLICABLE | evergreen | T16 Input/References |
-| D5 | `packages/frameworks/workflow mgt/scripts/install_release_workflow.py` | NOT_APPLICABLE | n/a | Framework README |
-| D7 | `packages/frameworks/workflow mgt/docs/INSTALL_IN_YOUR_PROJECT.md` | PUBLISHED (portal if in nav) | evergreen | T16, BR-086 |
+| D5 | `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` | NOT_APPLICABLE | n/a | Framework README |
+| D7 | `packages/frameworks/workflow-mgt/docs/INSTALL_IN_YOUR_PROJECT.md` | PUBLISHED (portal if in nav) | evergreen | T16, BR-086 |
 | D9–D10 | kanban boards | NOT_APPLICABLE | evergreen | RW Step 7 |
 
 **Publication N/A Reason (D1, D5, D6):** Internal planning / framework scripts — not Docusaurus consumer pages per BR-066.

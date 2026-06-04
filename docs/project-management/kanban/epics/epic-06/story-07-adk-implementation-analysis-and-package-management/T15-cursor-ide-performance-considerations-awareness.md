@@ -57,7 +57,7 @@ Create awareness documentation and update framework guidance for Cursor IDE perf
   - Investigation Report: `KB/Documentation/Developer_Docs/cursor-crash-investigation.md`
   - Article: `KB/Documentation/Developer_Docs/cursor-crash-investigation-article.md`
 
-- **Framework Documentation:** `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md`
+- **Framework Documentation:** `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md`
 - **Current File Counts:** ai-dev-kit statistics (1,021 markdown files, 266 changelog archive files, 181 Kanban files)
 
 ---
@@ -72,7 +72,7 @@ Create awareness documentation and update framework guidance for Cursor IDE perf
    - References external investigation appropriately
 
 2. **Framework Documentation Updated:**
-   - File: `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md`
+   - File: `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md`
    - Change: Pre-commit hook examples use `pass_filenames: true` instead of `pass_filenames: false`
    - Add: Performance notes explaining the recommendation
    - Add: Best practices section

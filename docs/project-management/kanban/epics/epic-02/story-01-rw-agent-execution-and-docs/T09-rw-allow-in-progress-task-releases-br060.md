@@ -32,8 +32,8 @@ Fix the Release Workflow gating defect where full RW mode rejects non-perpetual 
 ## Input
 
 - [BR-060](../../../fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_complete.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`
 - `rw-config.yaml`
 
 ---

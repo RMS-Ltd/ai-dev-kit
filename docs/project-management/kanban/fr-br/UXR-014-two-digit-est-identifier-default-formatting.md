@@ -50,7 +50,7 @@ Maintainers and agents should **always default to two-digit zero-padded Epic, St
 - `docs/project-management/kanban/kboard.md`, `fbuboard.md`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - `packages/frameworks/kanban/templates/*` (format callouts)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` (E/S/T regex variants)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py` (E/S/T regex variants)
 
 ---
 

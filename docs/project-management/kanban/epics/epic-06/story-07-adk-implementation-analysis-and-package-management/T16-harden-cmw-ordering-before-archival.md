@@ -90,7 +90,7 @@ Step 6: Validate remaining changelog (should be clean)
 
 ### Phase 1: Create Fix Ordering Script
 
-**File:** `packages/frameworks/workflow mgt/scripts/changelog/fix_ordering.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/changelog/fix_ordering.py`
 
 **Functionality:**
 - Extract all changelog entries
@@ -126,7 +126,7 @@ def fix_changelog_ordering(content: str, format_type: str = None) -> str:
 
 ### Phase 2: Update CMW Workflow YAML
 
-**File:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
+**File:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
 
 **Add Step 3.5:**
 ```yaml
@@ -157,7 +157,7 @@ def fix_changelog_ordering(content: str, format_type: str = None) -> str:
 
 ### Phase 3: Update CMW Main Script
 
-**File:** `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/changelog/cmw.py`
 
 **Add Step 3.5 execution:**
 ```python
@@ -182,7 +182,7 @@ else:
 
 ### Phase 4: Fix Archive Function Sorting
 
-**File:** `packages/frameworks/workflow mgt/scripts/changelog/archive_entries.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/changelog/archive_entries.py`
 
 **Fix sorting logic (Line 90-93):**
 ```python
@@ -204,26 +204,26 @@ sorted_entries_to_archive = sorted(
 ### Phase 5: Update Documentation
 
 **Files to Update:**
-- `packages/frameworks/workflow mgt/scripts/changelog/README.md` - Document Step 3.5
-- `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml` - Update description
+- `packages/frameworks/workflow-mgt/scripts/changelog/README.md` - Document Step 3.5
+- `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml` - Update description
 - `docs/analysis/cmw-ordering-flaw-analysis.md` - Reference this task
 
 ---
 
 ## Deliverables
 
-1. **`packages/frameworks/workflow mgt/scripts/changelog/fix_ordering.py`**
+1. **`packages/frameworks/workflow-mgt/scripts/changelog/fix_ordering.py`**
    - Script to fix changelog ordering
    - Unit tests included
 
-2. **Updated `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`**
+2. **Updated `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`**
    - Step 3.5 added
    - Dependencies updated
 
-3. **Updated `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`**
+3. **Updated `packages/frameworks/workflow-mgt/scripts/changelog/cmw.py`**
    - Step 3.5 execution added
 
-4. **Updated `packages/frameworks/workflow mgt/scripts/changelog/archive_entries.py`**
+4. **Updated `packages/frameworks/workflow-mgt/scripts/changelog/archive_entries.py`**
    - Sorting logic fixed (sort by version, not position)
 
 5. **Updated Documentation:**
@@ -295,12 +295,12 @@ sorted_entries_to_archive = sorted(
 
 ## References
 
-- **CMW Workflow:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- **CMW Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/`
-- **CMW Main Script:** `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`
-- **Archive Function:** `packages/frameworks/workflow mgt/scripts/changelog/archive_entries.py`
-- **Validation Script:** `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
-- **Changelog Utils:** `packages/frameworks/workflow mgt/scripts/changelog/changelog_utils.py`
+- **CMW Workflow:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- **CMW Scripts:** `packages/frameworks/workflow-mgt/scripts/changelog/`
+- **CMW Main Script:** `packages/frameworks/workflow-mgt/scripts/changelog/cmw.py`
+- **Archive Function:** `packages/frameworks/workflow-mgt/scripts/changelog/archive_entries.py`
+- **Validation Script:** `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
+- **Changelog Utils:** `packages/frameworks/workflow-mgt/scripts/changelog/changelog_utils.py`
 - **Analysis Document:** `docs/analysis/cmw-ordering-flaw-analysis.md`
 
 ---

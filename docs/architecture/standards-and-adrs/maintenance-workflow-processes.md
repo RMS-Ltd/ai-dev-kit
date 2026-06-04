@@ -692,8 +692,8 @@ Rapidly respond to critical issues that require immediate attention, bypassing n
 
 - **Maintenance Task Prioritization Framework:** `docs/architecture/standards-and-adrs/maintenance-task-prioritization-framework.md`
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Release Workflow:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
-- **Update Kanban Workflow:** `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
+- **Release Workflow:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
+- **Update Kanban Workflow:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 - **Framework Health Metrics:** `docs/architecture/standards-and-adrs/framework-health-metrics.md`
 - **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
 - **Story 1:** `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`

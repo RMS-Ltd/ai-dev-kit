@@ -48,8 +48,8 @@ This is an **architectural / policy enforcement gap**, not merely a one-off typo
 
 ## Scope / Affected Areas
 
-- [`packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/validation/validate_version_bump.py) — doc-init detection; “same task BUILD increment” messaging vs **`+0`** eligibility.
-- RW Step 2 agent execution docs: [`release-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md).
+- [`packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py) — doc-init detection; “same task BUILD increment” messaging vs **`+0`** eligibility.
+- RW Step 2 agent execution docs: [`release-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md).
 - [`src/fynd_deals/version.py`](../../../../src/fynd_deals/version.py) comments (**BUILD = 0** doc-init convention).
 - **Contrast (avoid conflicting “fix”):** [BR-010](./BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) addressed the **opposite** failure mode (incorrect **`+0`** when **`+1`** was required). BR-067 must be resolved **without regressing BR-010**.
 
@@ -71,7 +71,7 @@ This is an **architectural / policy enforcement gap**, not merely a one-off typo
 - **Doc-only on existing anchor (+0):** `RW -d E02:S16:Txx --art --doc-policy-zero` — Step 2 sets BUILD=0; Step 10 passes `--doc-policy-zero` to `validate_version_bump.py`.
 - **Functional (+1+):** `RW E02:S16:Txx` (or `--art` when adopting anchor) — normal BUILD increment.
 
-See [workflow-initiation-cheatsheet.md](../../../guides/workflow-initiation-cheatsheet.md) §2 and [release-workflow-agent-execution.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) Step 2 / Step 10.
+See [workflow-initiation-cheatsheet.md](../../../guides/workflow-initiation-cheatsheet.md) §2 and [release-workflow-agent-execution.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) Step 2 / Step 10.
 
 ---
 
@@ -96,7 +96,7 @@ Re-verify after any change to doc-init detection or `--doc-policy-zero`:
 | R4 | New task doc only (no prior version); docs-only intake | **+0** | Require +1 |
 | R5 | Perpetual same-task release (E2:S16:T03/T04) | **BUILD > HEAD** | Unchanged BUILD ([BR-075](./BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
 
-**Test command:** `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x`
+**Test command:** `pytest "packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py" -x`
 
 ### Tranche 3 regression run (2026-06-03)
 
@@ -108,7 +108,7 @@ Re-verify after any change to doc-init detection or `--doc-policy-zero`:
 | R4 | PASS | First-time doc-init detection tests in suite |
 | R5 | PASS | `validate_perpetual_build_increment` / perpetual BUILD > HEAD paths in suite |
 
-**Command:** `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x` → **15 passed**, 0 failed (2026-06-03).
+**Command:** `pytest "packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py" -x` → **15 passed**, 0 failed (2026-06-03).
 
 ---
 

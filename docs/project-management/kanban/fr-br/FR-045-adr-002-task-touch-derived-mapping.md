@@ -217,7 +217,7 @@ Task-touch mapping delivers:
 
 - **REOPENED 2026-06-04:** Collision recurrence in live registry; delivery continues under **E03:S02:T12** (not new intake under closed **E05:S01**).
 - ✅ Original implementation remains the canonical ADR-002 anchor (**E05:S01:T45**); reopen scopes **injective mapping enforcement**, registry repair, and RW finalize guards.
-- ✅ Implementation is complete in `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- ✅ Implementation is complete in `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - ✅ Configuration available via `semver_mapping_strategy: task_touch` in `rw-config.yaml`
 - ✅ Comprehensive test suite in `test_task_touch_mapping.py`
 - ✅ Migration utility available in `migrate_to_task_touch.py`

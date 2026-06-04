@@ -46,7 +46,7 @@ Operationalize FR-042 documentation planning intent by adding IPW **Phase 5** (d
 - `implementation-planning-workflow-agent-execution.md` — ten-phase table + documentation phases section.
 - `FR-042-implementation-planning-workflow-ipw.md` — steps 5–9 aligned with operational IPW.
 - `dev-kit-ipw-ipp-vs-icw-artifacts.md`, `specification-and-planning-artifacts-policy.md` — §1–§7 / Phase 5–6 references.
-- `AGENTS.md`, `.cursorrules`, `packages/frameworks/workflow mgt/agents/ipw/AGENTS.md` — gate and agent stub updates.
+- `AGENTS.md`, `.cursorrules`, `packages/frameworks/workflow-mgt/agents/ipw/AGENTS.md` — gate and agent stub updates.
 - `docs/implementation-cycles/README.md` — IPP naming note.
 
 ---

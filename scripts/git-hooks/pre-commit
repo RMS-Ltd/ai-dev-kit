@@ -4,5 +4,5 @@
 
 set -euo pipefail
 ROOT="$(git rev-parse --show-toplevel)"
-exec python "$ROOT/packages/frameworks/workflow mgt/scripts/validation/validate_board_stamps_precommit.py" \
+exec python "$ROOT/packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamps_precommit.py" \
   --project-root "$ROOT"

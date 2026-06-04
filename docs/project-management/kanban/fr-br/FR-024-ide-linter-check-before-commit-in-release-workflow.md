@@ -389,10 +389,10 @@ config:
 
 ## References
 
-- `packages/frameworks/workflow mgt/workflows/release-workflow.yaml` - Current workflow definition
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW agent execution guide
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md` - RW reference documentation
-- `packages/frameworks/workflow mgt/scripts/validation/` - Validation scripts directory
+- `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml` - Current workflow definition
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW agent execution guide
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md` - RW reference documentation
+- `packages/frameworks/workflow-mgt/scripts/validation/` - Validation scripts directory
 
 ---
 

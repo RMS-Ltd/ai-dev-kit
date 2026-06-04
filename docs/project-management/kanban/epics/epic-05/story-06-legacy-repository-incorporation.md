@@ -444,7 +444,7 @@ ai-dev-kit lacks explicit guidelines for effective AI collaboration, including r
 
 **Related Work:**
 - E05:S06:T03 - Source material extraction
-- `packages/frameworks/workflow mgt/` - Workflow framework
+- `packages/frameworks/workflow-mgt/` - Workflow framework
 - `docs/documentation/user-docs/` - User documentation
 
 ---
@@ -717,7 +717,7 @@ ai-dev-kit lacks documentation of common patterns and anti-patterns for AI-assis
 **Related Work:**
 - E05:S06:T03 - Source material extraction
 - E05:S06:T05 - Architectural principles
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/workflow-customization-patterns.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/workflow-customization-patterns.md`
 
 ---
 
@@ -782,8 +782,8 @@ ai-dev-kit has a testing workflow but lacks explicit documentation of testing ph
 
 **Related Work:**
 - E05:S06:T03 - Source material extraction
-- `packages/frameworks/workflow mgt/workflows/testing-workflow.yaml`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/workflows/testing-workflow.yaml`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md`
 
 ---
 
@@ -1080,7 +1080,7 @@ Workflow management framework could benefit from explicit documentation of issue
 
 **Related Work:**
 - E05:S06:T03 - Source material extraction
-- `packages/frameworks/workflow mgt/` - Workflow framework
+- `packages/frameworks/workflow-mgt/` - Workflow framework
 
 ---
 

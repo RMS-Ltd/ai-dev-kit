@@ -193,10 +193,10 @@ Both tags reference the same commit. Internal tag maintains backward compatibili
 
 ### Implementation
 
-- **Converter Script:** `packages/frameworks/workflow mgt/scripts/version/semver_converter.py` (forward and reverse conversion; 1:1 documented)
-- **Migration Script:** `packages/frameworks/workflow mgt/scripts/version/build_semver_registry.py`
-- **Validation Script:** `packages/frameworks/workflow mgt/scripts/validation/validate_semver_monotonic.py`
-- **Tag-alignment validator (optional):** `packages/frameworks/workflow mgt/scripts/validation/validate_semver_tag_alignment.py` — checks that the SemVer tag on the remote points to the same commit as the current release (see 1:1 mapping and tag alignment).
+- **Converter Script:** `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py` (forward and reverse conversion; 1:1 documented)
+- **Migration Script:** `packages/frameworks/workflow-mgt/scripts/version/build_semver_registry.py`
+- **Validation Script:** `packages/frameworks/workflow-mgt/scripts/validation/validate_semver_monotonic.py`
+- **Tag-alignment validator (optional):** `packages/frameworks/workflow-mgt/scripts/validation/validate_semver_tag_alignment.py` — checks that the SemVer tag on the remote points to the same commit as the current release (see 1:1 mapping and tag alignment).
 - **Registry File:** `semver-registry.yaml` (project root)
 
 **Related Documentation:**
@@ -474,7 +474,7 @@ VERSION_BUILD = 1  # ← Reset to 1 for new Task
 - **UKW Pattern:** Epic 4 Story 3 T01 (Update Packaged RW to Handle UKW Context)
 - **CMW Pattern:** Epic 2 Story 1 T05 (CMW Perpetual Task Pattern)
 - **RW Maintenance Pattern:** Epic 2 Story 1 T06 (RW Maintenance Perpetual Task Pattern)
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 2)
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 2)
 
 ---
 
@@ -771,7 +771,7 @@ This repo uses a **two-layer changelog system** aligned with the framework patte
 - Detailed change descriptions
 - **IMMUTABLE** once written (never edit `**Release Date:**`)
 
-> **Reference:** See `packages/frameworks/numbering & versioning/versioning-strategy.md` for complete two-layer timestamp system documentation.
+> **Reference:** See `packages/frameworks/numbering-versioning/versioning-strategy.md` for complete two-layer timestamp system documentation.
 
 ---
 
@@ -791,7 +791,7 @@ This means:
 
 **The internal version continues to encode the work hierarchy (Epic → Story → Task → Build).** The release version provides the canonical ordering for external consumers; the internal version provides the canonical forensic coordinate for tracing work through Kanban, changelogs, and Git history.
 
-> **Reference:** See `packages/frameworks/numbering & versioning/versioning-strategy.md` (Section: Core Principle: Version Numbers Are Canonical) for complete documentation.
+> **Reference:** See `packages/frameworks/numbering-versioning/versioning-strategy.md` (Section: Core Principle: Version Numbers Are Canonical) for complete documentation.
 
 ---
 
@@ -849,7 +849,7 @@ The versioning strategy uses **two distinct timestamp layers** with **different 
    - Versions are ordered by number, not by timestamp
    - Timestamps provide context, not ordering
 
-> **Reference:** See `packages/frameworks/numbering & versioning/versioning-strategy.md` (Section: Two-Layer Timestamp System) for complete documentation.
+> **Reference:** See `packages/frameworks/numbering-versioning/versioning-strategy.md` (Section: Two-Layer Timestamp System) for complete documentation.
 
 ---
 
@@ -916,7 +916,7 @@ The versioning strategy provides **complete traceability** through a multi-dimen
 
 **This grid provides complete accountability and efficient traceability.**
 
-> **Reference:** See `packages/frameworks/numbering & versioning/versioning-strategy.md` (Section: Forensic Traceability Grid) for complete documentation.
+> **Reference:** See `packages/frameworks/numbering-versioning/versioning-strategy.md` (Section: Forensic Traceability Grid) for complete documentation.
 
 ---
 
@@ -960,7 +960,7 @@ The versioning strategy provides **complete traceability** through a multi-dimen
 - They reflect the practices and tools available when they were created
 - Preserving them maintains the complete historical record
 
-> **Reference:** See `packages/frameworks/numbering & versioning/versioning-strategy.md` (Section: Immutability Rules) for complete documentation.
+> **Reference:** See `packages/frameworks/numbering-versioning/versioning-strategy.md` (Section: Immutability Rules) for complete documentation.
 
 ---
 
@@ -970,18 +970,18 @@ The versioning strategy provides **complete traceability** through a multi-dimen
 
 The dev-kit uses validation scripts from the workflow management framework:
 
-- **`packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`**
+- **`packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`**
   - Validates version matches branch/epic
   - Checks version format (old vs new)
   - Validates CHANGELOG entries match branch
 
-- **`packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`**
+- **`packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`**
   - Validates version format in CHANGELOG.md
   - Checks date format (old: `YYYY-MM-DD`, new: `DD-MM-YY`)
   - Validates build number >= 1
   - Grandfathers old format (warnings only)
 
-- **`packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py`**
+- **`packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`**
   - Validates requested RW task intent before Step 2 file edits
   - Supports `--mode rw-k` for RW -k comparison behavior
   - Supports `--art` in all RW modes (`RW`, `RW -d`, `RW -k`) for explicit canonical anchor adoption
@@ -1007,7 +1007,7 @@ The dev-kit uses validation scripts from the workflow management framework:
 2. Verify traceability grid is complete
 3. Verify historical files preserved
 
-> **Reference:** See `packages/frameworks/workflow mgt/scripts/validation/` for validation script implementations.
+> **Reference:** See `packages/frameworks/workflow-mgt/scripts/validation/` for validation script implementations.
 
 ---
 
@@ -1016,8 +1016,8 @@ The dev-kit uses validation scripts from the workflow management framework:
 This policy is a **specialisation** of the general framework policies:
 
 - **Base schema & strategy:**
-  - `packages/frameworks/numbering & versioning/versioning-policy.md` (primary SoT)
-  - `packages/frameworks/numbering & versioning/versioning-strategy.md` (comprehensive strategy)
+  - `packages/frameworks/numbering-versioning/versioning-policy.md` (primary SoT)
+  - `packages/frameworks/numbering-versioning/versioning-strategy.md` (comprehensive strategy)
 - **Kanban integration:**
   - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
   - `docs/project-management/rituals/policy/kanban-governance-policy.md` (dev-kit local)
@@ -1029,7 +1029,7 @@ The dev-kit policy:
 - **References framework policies** as the canonical source of truth for detailed patterns and strategies
 - **Documents dev-kit-specific adaptations** while maintaining alignment with framework principles
 
-**Key Principle:** The framework policies (`packages/frameworks/numbering & versioning/`) serve as the **canonical source of truth**. This dev-kit policy documents how the framework is applied in the dev-kit context, referencing the framework for detailed explanations.
+**Key Principle:** The framework policies (`packages/frameworks/numbering-versioning/`) serve as the **canonical source of truth**. This dev-kit policy documents how the framework is applied in the dev-kit context, referencing the framework for detailed explanations.
 
 ---
 
@@ -1050,9 +1050,9 @@ The dev-kit policy:
 ## 15. References
 
 **Framework Policies (Canonical SoT):**
-- `packages/frameworks/numbering & versioning/versioning-policy.md`
-- `packages/frameworks/numbering & versioning/versioning-strategy.md`
-- `packages/frameworks/numbering & versioning/README.md`
+- `packages/frameworks/numbering-versioning/versioning-policy.md`
+- `packages/frameworks/numbering-versioning/versioning-strategy.md`
+- `packages/frameworks/numbering-versioning/README.md`
 
 **Dev-Kit Implementation:**
 - `src/fynd_deals/version.py` (version file - to be renamed to dev-kit-specific path)
@@ -1061,8 +1061,8 @@ The dev-kit policy:
 - `docs/project-management/kanban/` (Kanban board and Epic/Story docs)
 
 **Validation Scripts:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 **Related Documentation:**
 - **[Versioning Quick Reference](versioning-quick-reference.md)** - 1-2 page summary for quick lookup ⚡

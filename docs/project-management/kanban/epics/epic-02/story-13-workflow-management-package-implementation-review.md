@@ -41,7 +41,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This story performs the RC readiness **implementation review** for the Workflow Management framework package (`packages/frameworks/workflow mgt/`). The review verifies the package implementation against documented expectations and identifies gaps before RC sign-off.
+This story performs the RC readiness **implementation review** for the Workflow Management framework package (`packages/frameworks/workflow-mgt/`). The review verifies the package implementation against documented expectations and identifies gaps before RC sign-off.
 
 ---
 
@@ -77,10 +77,10 @@ This story performs the RC readiness **implementation review** for the Workflow 
 - Installation scripts (RW installer CLI)
 
 **Sources:**
-- `packages/frameworks/workflow mgt/README.md`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/`
-- `packages/frameworks/workflow mgt/workflows/`
-- `packages/frameworks/workflow mgt/config/rw-config-schema.md`
+- `packages/frameworks/workflow-mgt/README.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/`
+- `packages/frameworks/workflow-mgt/workflows/`
+- `packages/frameworks/workflow-mgt/config/rw-config-schema.md`
 
 ---
 
@@ -172,5 +172,5 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## References
 
-- Package: `packages/frameworks/workflow mgt/`
+- Package: `packages/frameworks/workflow-mgt/`
 - Epic 2 documentation and workflow guides.

@@ -46,8 +46,8 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 
 ### Documentation (must)
 
-- **CMW workflow YAML** (`packages/frameworks/workflow mgt/workflows/changelog-management-workflow/`): state **Epic 5 execution context** for standalone CMW; reference `epic/5-documentation-management` and `validate_branch_context`.
-- **CMW script README** (`packages/frameworks/workflow mgt/scripts/changelog/README.md`): prerequisite section — correct branch, `VERSION_EPIC` matches Epic 5 before run; link to dev-kit versioning / branch mapping.
+- **CMW workflow YAML** (`packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/`): state **Epic 5 execution context** for standalone CMW; reference `epic/5-documentation-management` and `validate_branch_context`.
+- **CMW script README** (`packages/frameworks/workflow-mgt/scripts/changelog/README.md`): prerequisite section — correct branch, `VERSION_EPIC` matches Epic 5 before run; link to dev-kit versioning / branch mapping.
 - **`.cursor/skills/cmw-maintain/SKILL.md`**: explicit **ANALYZE** step — confirm branch is Epic 5 doc branch and version epic is 5 (or document exception below).
 - **RW / package docs** (e.g. `release-workflow-agent-execution.md`, RW Step 9.5): clarify **RW-invoked CMW (Step 9.5)** inherits **the active RW epic branch** (no extra E5 requirement); **standalone CMW** requires **E5** context.
 
@@ -96,12 +96,12 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 - [FR-025](FR-025-changelog-management-and-archival-workflow.md) — Changelog management / archival workflow.
 - **Epic 5:** [`epic-05.md`](../epics/epic-05/epic-05.md) — branch `epic/5-documentation-management`.
 - **Perpetual CMW task:** [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — reconcile with E5 execution rule.
-- **Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`, `cmw-config.yaml`.
+- **Scripts:** `packages/frameworks/workflow-mgt/scripts/changelog/cmw.py`, `cmw-config.yaml`.
 
 ---
 
 ## References
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 - `.cursorrules` — RW Step 1 branch safety
 - `rw-config.yaml` — `changelog_archival.mode: latest_only`

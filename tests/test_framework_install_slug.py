@@ -13,13 +13,15 @@ _SCRIPTS = (
     Path(__file__).resolve().parents[1]
     / "packages"
     / "frameworks"
-    / "workflow mgt"
+    / "workflow-mgt"
     / "scripts"
 )
 sys.path.insert(0, str(_SCRIPTS))
 
 from framework_install_slug import (  # noqa: E402
     archive_root_install_slug,
+    detect_legacy_framework_dir_names,
+    ensure_frameworks_slug_layout,
     framework_install_slug,
     relocate_legacy_framework_dir,
 )
@@ -93,3 +95,34 @@ def test_relocate_legacy_framework_dir(tmp_path: Path) -> None:
     assert target == tmp_path / "numbering-versioning"
     assert target.is_dir()
     assert not legacy.exists()
+
+
+def test_detect_legacy_framework_dir_names() -> None:
+    root = Path(__file__).resolve().parents[1] / "packages" / "frameworks"
+    legacy = detect_legacy_framework_dir_names(root)
+    assert legacy == []
+
+
+def test_ensure_frameworks_slug_layout_idempotent(tmp_path: Path) -> None:
+    legacy = tmp_path / "workflow mgt"
+    legacy.mkdir()
+    (legacy / "x.txt").write_text("1", encoding="utf-8")
+    assert ensure_frameworks_slug_layout(tmp_path) == 1
+    assert (tmp_path / "workflow-mgt" / "x.txt").is_file()
+    assert ensure_frameworks_slug_layout(tmp_path) == 0
+
+
+def test_print_session_banner_warns_on_legacy_layout(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    fw = tmp_path / "packages" / "frameworks"
+    fw.mkdir(parents=True)
+    (fw / "workflow mgt").mkdir()
+
+    sys.path.insert(0, str(_SCRIPTS))
+    import install_ux_version  # noqa: E402
+
+    install_ux_version.print_session_banner(tmp_path)
+    err = capsys.readouterr().err
+    assert "Legacy framework directory names" in err
+    assert "relocate_legacy_framework_dirs.py" in err

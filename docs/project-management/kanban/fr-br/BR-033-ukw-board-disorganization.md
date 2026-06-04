@@ -75,7 +75,7 @@ After running UKW, the Kanban board's Epics section is not properly ordered. Cur
 **Environment:** Development  
 **Version:** v0.6.6.8+21  
 **Workflow:** Update Kanban Workflow (UKW)  
-**Component:** `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
+**Component:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 
 ---
 
@@ -195,8 +195,8 @@ This BR was split from a mixed-scope document following the Standard Operating P
 
 ## References
 
-- **UKW Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
-- **UKW Workflow:** `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
+- **UKW Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- **UKW Workflow:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
 - **UKW Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 - **Related FR:** [FR-034 - UKW Granular Control and Use Case Flags](FR-034-ukw-granular-control-and-use-case-flags.md)

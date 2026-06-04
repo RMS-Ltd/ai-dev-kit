@@ -62,7 +62,7 @@ Two-pass merge (reproducible):
 2. **Workflow-keyword scan** — UKW, CMW, RW maintenance, kanban hygiene, perpetual workflow (catch mis-housed candidates without marker).
 3. **Seed merge** — IPP-E2S16T01 §2.4; story-016 T03/T04/T05/T10; E4S19 report §5; epic-06 story-007 checklist rows tagged UKW/CMW/perpetual.
 
-**Helper (2026-06-03):** `packages/frameworks/workflow mgt/scripts/kanban/discover_perpetual_task_candidates.py --json`  
+**Helper (2026-06-03):** `packages/frameworks/workflow-mgt/scripts/kanban/discover_perpetual_task_candidates.py --json`  
 **Run evidence:** `marker_count=6`, `keyword_count=65`, `unique_candidates=65` (keyword pass is broad; inventory table below is the curated authoritative set).
 
 ### 2.3 Disposition taxonomy (AC2)
@@ -189,7 +189,7 @@ Doc-only task — tests validate **inventory artifact integrity**:
 | Action | Path |
 | ------ | ---- |
 | CREATE | `docs/implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md` (this file) |
-| CREATE | `packages/frameworks/workflow mgt/scripts/kanban/discover_perpetual_task_candidates.py` |
+| CREATE | `packages/frameworks/workflow-mgt/scripts/kanban/discover_perpetual_task_candidates.py` |
 | UPDATE | T02, T01, T03, story-016, `kboard.md` |
 | NONE | New ADR; portal sidebar beyond standard `docs/` IPP |
 

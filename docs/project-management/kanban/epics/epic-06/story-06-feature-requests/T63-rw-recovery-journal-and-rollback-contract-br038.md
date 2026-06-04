@@ -47,7 +47,7 @@ RW is operationally stable, but failure recovery is not yet deterministic. When 
 
 ## Acceptance Criteria
 
-- [x] **AC1:** RW journals each step deterministically with run ID, timestamp, and step outcome. — `RWJournal` class in `packages/frameworks/workflow mgt/scripts/journal/rw_journal.py`.
+- [x] **AC1:** RW journals each step deterministically with run ID, timestamp, and step outcome. — `RWJournal` class in `packages/frameworks/workflow-mgt/scripts/journal/rw_journal.py`.
 - [x] **AC2:** Failure path emits a machine-readable and human-readable recovery report. — `RecoveryReport` class generates Markdown + JSON; sample artifacts in `docs/journals/`.
 - [x] **AC3:** Rollback/compensation rules are explicitly documented (automatic vs manual surfaces). — `docs/journals/ROLLBACK_CONTRACT.md` and `RollbackContract` class.
 - [x] **AC4:** Rerun behavior after failed runs is deterministic and test-covered. — Integration test `test_rw_integration.py` simulates failure and verifies deterministic rerun guidance; 28 journal tests pass.

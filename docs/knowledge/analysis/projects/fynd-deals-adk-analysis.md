@@ -616,7 +616,7 @@ None identified - CI/CD not required.
 - **Issues:** May not benefit from ADK framework updates
 
 **ADK Framework Scripts:**
-- Scripts in `temp/workflow mgt/scripts/` (not integrated)
+- Scripts in `temp/workflow-mgt/scripts/` (not integrated)
 - Validation scripts may be copied/adapted
 
 ### 5.3 Distance from ADK Canonical Workflows
@@ -1015,7 +1015,7 @@ None identified - CI/CD not required.
 - `scripts/remediation/` (remediation scripts)
 
 **ADK Framework Files:**
-- `temp/numbering & versioning/` (ADK framework, not integrated)
+- `temp/numbering-versioning/` (ADK framework, not integrated)
 - `temp/workflow mgt/` (ADK framework, not integrated)
 
 ### 10.2 Comparison Tables

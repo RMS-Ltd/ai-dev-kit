@@ -32,7 +32,7 @@ Review Update Kanban Workflow (UKW) for Windsurf impact, .windsurf skill mapping
 
 - .cursorrules UKW section
 - .windsurf/skills/ (ukw-sync, kanban_completed_update)
-- packages/frameworks/workflow mgt/workflows/update-kanban-workflow/
+- packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/
 
 ## Deliverable
 

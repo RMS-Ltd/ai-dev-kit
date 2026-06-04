@@ -46,7 +46,7 @@ Step 8: Report summary
 
 ### 1. Missing Reordering Step
 
-**Location:** `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`
+**Location:** `packages/frameworks/workflow-mgt/scripts/changelog/cmw.py`
 
 **Current Implementation:**
 - Step 2 validates ordering but only **reports** violations
@@ -65,7 +65,7 @@ if not is_valid:
 
 ### 2. Archive Corruption Risk
 
-**Location:** `packages/frameworks/workflow mgt/scripts/changelog/archive_entries.py`
+**Location:** `packages/frameworks/workflow-mgt/scripts/changelog/archive_entries.py`
 
 **Problem:**
 - `archive_entries()` preserves "ordering" from unsorted main changelog
@@ -83,7 +83,7 @@ sorted_entries_to_archive = sorted(
 
 ### 3. Incorrect Archival Selection
 
-**Location:** `packages/frameworks/workflow mgt/scripts/changelog/identify_archival_entries.py`
+**Location:** `packages/frameworks/workflow-mgt/scripts/changelog/identify_archival_entries.py`
 
 **Problem:**
 - Archival selection works on entries in their current (unsorted) order
@@ -141,7 +141,7 @@ Step 8: Report summary
 
 #### 1. Create `fix_ordering.py` Script
 
-**Location:** `packages/frameworks/workflow mgt/scripts/changelog/fix_ordering.py`
+**Location:** `packages/frameworks/workflow-mgt/scripts/changelog/fix_ordering.py`
 
 **Functionality:**
 - Extract all changelog entries
@@ -173,7 +173,7 @@ def fix_changelog_ordering(content: str, format_type: str = None) -> str:
 
 #### 2. Update CMW Workflow YAML
 
-**File:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
+**File:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
 
 **Add Step 3.5:**
 ```yaml
@@ -195,7 +195,7 @@ def fix_changelog_ordering(content: str, format_type: str = None) -> str:
 
 #### 3. Update CMW Main Script
 
-**File:** `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/changelog/cmw.py`
 
 **Add Step 3.5 execution:**
 ```python
@@ -220,7 +220,7 @@ else:
 
 #### 4. Update Archive Function
 
-**File:** `packages/frameworks/workflow mgt/scripts/changelog/archive_entries.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/changelog/archive_entries.py`
 
 **Fix sorting logic:**
 ```python
@@ -316,10 +316,10 @@ sorted_entries_to_archive = sorted(
 
 ## References
 
-- **CMW Workflow:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- **CMW Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/`
-- **Validation Script:** `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
-- **Changelog Utils:** `packages/frameworks/workflow mgt/scripts/changelog/changelog_utils.py`
+- **CMW Workflow:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- **CMW Scripts:** `packages/frameworks/workflow-mgt/scripts/changelog/`
+- **Validation Script:** `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
+- **Changelog Utils:** `packages/frameworks/workflow-mgt/scripts/changelog/changelog_utils.py`
 
 ---
 

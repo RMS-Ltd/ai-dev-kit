@@ -330,8 +330,8 @@ find docs/project-management/kanban -name "*.md" | wc -l
   - Bug Report: `KB/PM_and_Portfolio/kanban/Epic 20/story-05-BR-Cursor-IDE-Crashes.md`
   - Investigation Report: `KB/Documentation/Developer_Docs/cursor-crash-investigation.md`
   - Article: `KB/Documentation/Developer_Docs/cursor-crash-investigation-article.md`
-- **Framework Documentation:** `packages/frameworks/workflow mgt/IMPLEMENTATION_GUIDE.md`
-- **Validation Scripts:** `packages/frameworks/workflow mgt/scripts/validation/`
+- **Framework Documentation:** `packages/frameworks/workflow-mgt/IMPLEMENTATION_GUIDE.md`
+- **Validation Scripts:** `packages/frameworks/workflow-mgt/scripts/validation/`
 
 ---
 

@@ -12,31 +12,31 @@ description: |
 
 patterns:
   python_validation_scripts:
-    pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z0-9_]+\.py"(\s+.*)?$'
+    pattern: '^python "packages/frameworks/workflow-mgt/scripts/validation/validate_[a-z0-9_]+\.py"(\s+.*)?$'
     description: "RW/UKW validation scripts under workflow mgt"
     examples:
-      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict'
-      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py"'
-      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --requested "E06:S07:T107" --strict'
-      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py" --requested "E06:S07:T107"'
-      - 'python "packages/frameworks/workflow mgt/scripts/validation/validate_kanban_state_icons.py" --strict'
+      - 'python "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict'
+      - 'python "packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py"'
+      - 'python "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py" --requested "E06:S07:T107" --strict'
+      - 'python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_complete.py" --requested "E06:S07:T107"'
+      - 'python "packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_state_icons.py" --strict'
     negative_examples:
       - 'python "other/validate_branch_context.py" --strict'
 
   python_framework_scripts:
-    pattern: '^python "packages/frameworks/workflow mgt/scripts/(?:[a-z0-9_]+/)*[a-z0-9_]+\.py"(\s+.*)?$'
+    pattern: '^python "packages/frameworks/workflow-mgt/scripts/(?:[a-z0-9_]+/)*[a-z0-9_]+\.py"(\s+.*)?$'
     description: "Other workflow mgt Python scripts (kanban, release, etc.)"
     examples:
-      - 'python "packages/frameworks/workflow mgt/scripts/create_github_release.py" --summary "Test" --epic 6 --story 7 --task 107'
-      - 'python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py"'
+      - 'python "packages/frameworks/workflow-mgt/scripts/create_github_release.py" --summary "Test" --epic 6 --story 7 --task 107'
+      - 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py"'
     negative_examples:
       - 'python "packages/frameworks/kanban/scripts/foo.py"'
 
   python_semver_converter:
-    pattern: '^python "packages/frameworks/workflow mgt/scripts/version/semver_converter\.py"(\s+.*)?$'
+    pattern: '^python "packages/frameworks/workflow-mgt/scripts/version/semver_converter\.py"(\s+.*)?$'
     description: "SemVer conversion for RW README/tags"
     examples:
-      - 'python "packages/frameworks/workflow mgt/scripts/version/semver_converter.py" "0.6.7.107+1"'
+      - 'python "packages/frameworks/workflow-mgt/scripts/version/semver_converter.py" "0.6.7.107+1"'
 
   git_rw_operations:
     pattern: '^git (add|status|commit|push|tag|checkout|branch|log|diff|restore|show|merge|pull|fetch)(\s+.*)?$'
@@ -71,11 +71,11 @@ patterns:
       - 'rg --pattern "whitelist" --path docs'
 
   pytest_framework:
-    pattern: '^python (-m pytest(\s+.*)?|"packages/frameworks/workflow mgt/scripts/validation/test_validate_[a-z_]+\.py")$'
+    pattern: '^python (-m pytest(\s+.*)?|"packages/frameworks/workflow-mgt/scripts/validation/test_validate_[a-z_]+\.py")$'
     description: "Framework validator pytest (-m) or direct test module invocation"
     examples:
-      - 'python -m pytest -c "packages/frameworks/workflow mgt/scripts/validation/pytest.ini" "packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py"'
-      - 'python "packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py"'
+      - 'python -m pytest -c "packages/frameworks/workflow-mgt/scripts/validation/pytest.ini" "packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py"'
+      - 'python "packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py"'
 
 # Security grouping (documentation for maintainer allowlist tiers — not enforced by YAML)
 contexts:
@@ -109,4 +109,4 @@ recommended_maintainer_settings:
 
 maintenance:
   monitor_pattern_usage: true
-  validator_command: 'python "packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py"'
+  validator_command: 'python "packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py"'

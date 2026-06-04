@@ -76,5 +76,5 @@ Maintainers and agents cannot reliably recall the growing matrix of workflow tri
 - [IPP-E02S16T15](../../../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md)
 - [Workflow initiation cheatsheet](../../../../../guides/workflow-initiation-cheatsheet.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
-- [Release Workflow agent execution guide](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
-- [Update Kanban Workflow agent execution guide](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [Release Workflow agent execution guide](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- [Update Kanban Workflow agent execution guide](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)

@@ -63,8 +63,8 @@ Provide a **versioning cookbook** with worked examples that shows:
 ### E03:S02:T01 – Define core versioning scenarios for the cookbook
 
 **Input:**  
-- `packages/frameworks/numbering & versioning/versioning-policy.md`  
-- `packages/frameworks/numbering & versioning/versioning-strategy.md`  
+- `packages/frameworks/numbering-versioning/versioning-policy.md`  
+- `packages/frameworks/numbering-versioning/versioning-strategy.md`  
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`  
 
 **Deliverable:**  
@@ -264,7 +264,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 **Input:**  
 - User requirement: Projects using `RC.EPIC.STORY.TASK+BUILD` schema need SemVer (`MAJOR.MINOR.PATCH`) for package managers (npm, pub.dev, PyPI, etc.)
 - Issue identified: `been-there` project agent created sync script, indicating need for canonical guidance
-- Framework documentation: `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md`
+- Framework documentation: `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md`
 
 **Deliverable:**  
 - `docs/architecture/standards-and-adrs/dual-versioning-package-managers.md` - Comprehensive guide for managing dual versioning
@@ -385,9 +385,9 @@ Provide a **versioning cookbook** with worked examples that shows:
 - Agent-driven execution methodology
 
 **Deliverable:**  
-- ✅ **PVW Workflow Definition:** `packages/frameworks/workflow mgt/workflows/package-version-workflow.yaml`
-- ✅ **PVW Agent Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md`
-- ✅ **Validation Scripts (Tools):** `packages/frameworks/workflow mgt/scripts/validation/package/`
+- ✅ **PVW Workflow Definition:** `packages/frameworks/workflow-mgt/workflows/package-version-workflow.yaml`
+- ✅ **PVW Agent Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md`
+- ✅ **Validation Scripts (Tools):** `packages/frameworks/workflow-mgt/scripts/validation/package/`
 - ✅ **RW Integration:** Updated `release-workflow.yaml` with PVW as Step 2.5
 - ✅ **Cursor Rules Section:** Added PVW trigger section with comprehensive TODO tracking
 - ✅ **Version Bump Criteria:** `docs/architecture/standards-and-adrs/package-versioning-criteria.md`
@@ -419,7 +419,7 @@ Provide a **versioning cookbook** with worked examples that shows:
 - Release Workflow YAML definition (`release-workflow.yaml` - already has step-2.5)
 
 **Deliverable:**  
-- ✅ **Updated RW Agent Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- ✅ **Updated RW Agent Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
   - Add step-2.5 (PVW) to TODO list (15 steps total, not 14)
   - Add step-2.5 execution documentation (ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED)
   - Reference PVW agent execution guide for detailed step-by-step instructions
@@ -531,8 +531,8 @@ Provide a **versioning cookbook** with worked examples that shows:
 
 ## References
 
-- `packages/frameworks/numbering & versioning/versioning-policy.md`  
-- `packages/frameworks/numbering & versioning/versioning-strategy.md`  
+- `packages/frameworks/numbering-versioning/versioning-policy.md`  
+- `packages/frameworks/numbering-versioning/versioning-strategy.md`  
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`  
 - `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`  
 - `docs/project-management/kanban/story-03-kanban-versioning-rw-integration.md`  

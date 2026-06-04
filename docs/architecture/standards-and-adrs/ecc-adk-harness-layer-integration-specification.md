@@ -70,7 +70,7 @@ ADK answers *what* work exists and *how* it ships. ECC answers *how well* agents
 | Version schema | ADK `RC.EPIC.STORY.TASK+BUILD` (`rw-config.yaml`, version file) |
 | Kanban / FR/BR/UXR intake | ADK Kanban framework |
 | IPW implementation gate | ADK IPP / task doc linkage |
-| Release validators | ADK `packages/frameworks/workflow mgt/scripts/validation/` |
+| Release validators | ADK `packages/frameworks/workflow-mgt/scripts/validation/` |
 | Domain TDD / language skills | ECC (optional) |
 | Session hooks (optional) | ECC — advisory unless explicitly promoted to CI |
 | Security scan skill (optional) | ECC AgentShield — complements, does not replace RW Step 9 |
@@ -105,7 +105,7 @@ Subject to [Phase 0 validation](./ecc-adk-harness-layer-phase0-evaluation.md):
 
 ## 7. Bridge configuration
 
-Template: [`packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
+Template: [`packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
 
 Adopters copy to project root as `ecc-adk-bridge.yaml` (optional). Fields:
 
@@ -159,9 +159,9 @@ Communicate harness-layer availability in release notes and install docs; SemVer
 
 | Artifact | Path |
 | -------- | ---- |
-| Bridge validator | `packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py` |
-| Optional install helper | `packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh` (`--dry-run` default) |
-| AgentShield add-on | `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md` |
+| Bridge validator | `packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py` |
+| Optional install helper | `packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh` (`--dry-run` default) |
+| AgentShield add-on | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md` |
 | Adopter quick-start | [ECC + ADK integration cheatsheet](../documentation/user-docs/ecc-adk-integration-cheatsheet.md) §3, §11 |
 
 Hook policy: default `hook_profile: minimal`, hooks-off install, `disabled_hooks` examples in bridge template; pre-RW ECC hooks are **advisory** only.

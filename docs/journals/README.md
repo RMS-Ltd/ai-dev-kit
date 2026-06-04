@@ -19,7 +19,7 @@ docs/journals/
 
 1. **A run failed.** Locate the latest recovery report:
    ```bash
-   python -m "packages/frameworks/workflow mgt/scripts/journal" list
+   python -m "packages/frameworks/workflow-mgt/scripts/journal" list
    ```
 2. **Read the recovery report** to see which step failed and what artifacts were touched.
 3. **Follow `RECOVERY_PROCEDURE.md`** for deterministic rerun guidance.

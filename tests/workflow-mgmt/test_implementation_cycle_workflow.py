@@ -13,7 +13,7 @@ from pathlib import Path
 import sys
 
 # Add the workflow management scripts to path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent / "packages/frameworks/workflow mgt/scripts"))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / "packages/frameworks/workflow-mgt/scripts"))
 
 from generate_workflow import (
     generate_workflow_yaml,
@@ -235,7 +235,7 @@ class TestICWIntegration:
 
     def test_icw_workflow_file_exists(self):
         """Test that ICW workflow file exists in framework."""
-        icw_workflow_path = Path(__file__).parent.parent.parent / "packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml"
+        icw_workflow_path = Path(__file__).parent.parent.parent / "packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml"
         
         assert icw_workflow_path.exists(), f"ICW workflow file not found at {icw_workflow_path}"
         
@@ -249,7 +249,7 @@ class TestICWIntegration:
 
     def test_icw_config_file_exists(self):
         """Test that ICW config file exists."""
-        icw_config_path = Path(__file__).parent.parent.parent / "packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-config.yaml"
+        icw_config_path = Path(__file__).parent.parent.parent / "packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-config.yaml"
         
         assert icw_config_path.exists(), f"ICW config file not found at {icw_config_path}"
         
@@ -261,7 +261,7 @@ class TestICWIntegration:
 
     def test_icw_documentation_exists(self):
         """Test that ICW documentation exists."""
-        icw_doc_path = Path(__file__).parent.parent.parent / "packages/frameworks/workflow mgt/docs/implementation-cycle-workflow-guide.md"
+        icw_doc_path = Path(__file__).parent.parent.parent / "packages/frameworks/workflow-mgt/docs/implementation-cycle-workflow-guide.md"
         
         assert icw_doc_path.exists(), f"ICW documentation not found at {icw_doc_path}"
         

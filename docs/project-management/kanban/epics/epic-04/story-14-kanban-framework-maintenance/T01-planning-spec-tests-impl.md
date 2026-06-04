@@ -115,8 +115,8 @@ Packaged RW framework must handle UKW context detection and perpetual task attri
 
 ## 4. Files Modified (As-Implemented)
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` – core logic
-- `packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py` – tests
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py` – core logic
+- `packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py` – tests
 - RW execution guide, .cursorrules, T01 task doc (per task deliverables)
 
 ---

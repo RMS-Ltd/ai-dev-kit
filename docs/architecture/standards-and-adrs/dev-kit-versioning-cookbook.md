@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Version:** v0.3.2.3+1
 
 **Based on Framework:** This cookbook is a dev-kit specialisation providing worked examples for the versioning schema defined in the Numbering & Versioning framework. For the canonical schema definition and strategy, see:
-- `packages/frameworks/numbering & versioning/versioning-policy.md` (primary SoT)
-- `packages/frameworks/numbering & versioning/versioning-strategy.md` (comprehensive strategy)
+- `packages/frameworks/numbering-versioning/versioning-policy.md` (primary SoT)
+- `packages/frameworks/numbering-versioning/versioning-strategy.md` (comprehensive strategy)
 
 ---
 
@@ -1463,10 +1463,10 @@ This section documents known edge cases, common mistakes, and anti-patterns when
 
 - **Scenario Definitions:** `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T01-core-versioning-scenarios.md`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
-- **Framework Policy:** `packages/frameworks/numbering & versioning/versioning-policy.md`
+- **Framework Policy:** `packages/frameworks/numbering-versioning/versioning-policy.md`
 - **Integration Guide:** `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`
 - **Integration Examples:** `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples.md`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ---
 

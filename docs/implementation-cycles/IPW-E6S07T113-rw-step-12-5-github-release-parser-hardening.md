@@ -44,7 +44,7 @@ Harden RW Step 12.5 GitHub release creation so `create_github_release.py` accept
 
 ### 1.5 Constraints and notes
 
-- Current script path: `packages/frameworks/workflow mgt/scripts/create_github_release.py`.
+- Current script path: `packages/frameworks/workflow-mgt/scripts/create_github_release.py`.
 - `get_rw_tag_info(...)` may parse internal version numerically; passing `v0...` can trigger the observed failure path.
 - Helper must be reusable for both explicit and auto-detected tag modes.
 
@@ -79,8 +79,8 @@ Harden RW Step 12.5 GitHub release creation so `create_github_release.py` accept
 
 ### 3.1 Files to create or modify
 
-- `packages/frameworks/workflow mgt/scripts/create_github_release.py`
-- `packages/frameworks/workflow mgt/scripts/test_create_github_release.py` (or nearest existing test module for this script)
+- `packages/frameworks/workflow-mgt/scripts/create_github_release.py`
+- `packages/frameworks/workflow-mgt/scripts/test_create_github_release.py` (or nearest existing test module for this script)
 - `docs/project-management/kanban/fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md` (implementation outcome)
 - `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md` (status/evidence updates)
 

@@ -181,4 +181,4 @@ Internal versions:     → Task-Touch SemVer:
 - FR-045: ADR-002 Task-Touch Derived Mapping
 - SemVer tag collision incident (2026-03-07)
 - Dev Kit Versioning Policy
-- Implementation: `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- Implementation: `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`

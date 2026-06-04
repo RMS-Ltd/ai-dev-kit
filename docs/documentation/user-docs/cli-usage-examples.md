@@ -227,7 +227,7 @@ Detecting copy-paste frameworks...
 Found 2 framework(s):
 
   • workflow-mgmt
-    Path: packages/frameworks/workflow mgt
+    Path: packages/frameworks/workflow-mgt
     Type: workflow-mgmt
     Confidence: 95% (version: 2.0.0)
 

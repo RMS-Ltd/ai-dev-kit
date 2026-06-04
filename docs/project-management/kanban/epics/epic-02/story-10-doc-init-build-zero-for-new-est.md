@@ -86,8 +86,8 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 **Approach:**
 1. Review current RW Step 1 procedure:
-   - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-   - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+   - `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+   - `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 2. Add detection logic for "new doc-init" state:
    - Detect if new E/S/T doc was created (separate file OR section)
    - Check if no prior version exists for this E/S/T
@@ -129,8 +129,8 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 **Approach:**
 1. Review current validation scripts:
-   - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
-   - `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
+   - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
+   - `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 2. Add doc-init validation:
    - Check if version is `+0` (doc-init build)
    - Verify all changed files are documentation only:
@@ -218,8 +218,8 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 **Approach:**
 1. Review current versioning policy documents:
    - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (dev-kit local)
-   - `packages/frameworks/numbering & versioning/versioning-policy.md` (framework)
-   - `packages/frameworks/numbering & versioning/versioning-strategy.md` (framework)
+   - `packages/frameworks/numbering-versioning/versioning-policy.md` (framework)
+   - `packages/frameworks/numbering-versioning/versioning-strategy.md` (framework)
 2. Add doc-init logic to versioning policy:
    - Document `+0` build number for doc-init
    - Explain relationship between doc-init (`+0`) and functional work (`+1`)
@@ -237,7 +237,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 **Status:** ✅ COMPLETE (v0.2.10.4+1)
 
 **Completion Summary:**
-- ✅ Updated BUILD section in `packages/frameworks/numbering & versioning/versioning-policy.md`:
+- ✅ Updated BUILD section in `packages/frameworks/numbering-versioning/versioning-policy.md`:
   - Documented doc-init build (`+0`) for first-time Task/Story/Epic document creation
   - Documented normal builds (`+1` or higher) for functional work
   - Explained relationship: Doc-init (`+0`) → Functional work (`+1`, `+2`, ...)
@@ -271,8 +271,8 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 **Approach:**
 1. Review current RW Step 1 documentation:
-   - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-   - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+   - `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+   - `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 2. Update "B. IDENTIFY COMPLETED TASK" section:
    - Document doc-init detection logic
    - Explain `+0` build number emission
@@ -410,7 +410,7 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 **Approach:**
 1. Review current validator implementation:
-   - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+   - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
    - Current logic expects BUILD >= 1
    - No awareness of abstract space (`+0`) concept
 2. Update validator to recognize `+0` as valid:
@@ -547,9 +547,9 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 - **FR-016:** `docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md`
 - **FR-018:** `docs/project-management/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
 - **FR-020:** `docs/project-management/kanban/fr-br/FR-020-version-validator-abstract-space-awareness.md`
-- **RW Agent Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Agent Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Versioning Policy (Dev-Kit):** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
-- **Versioning Policy (Framework):** `packages/frameworks/numbering & versioning/versioning-policy.md`
+- **Versioning Policy (Framework):** `packages/frameworks/numbering-versioning/versioning-policy.md`
 
 ---
 

@@ -74,4 +74,4 @@ Retroactively fix the SemVer collision where two internal versions (`0.24.1.6+1`
 - [BR-073](../../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)
 - `semver-registry.yaml`
 - `README.md`
-- `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`

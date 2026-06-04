@@ -344,7 +344,7 @@ After migration:
 - **Task Template:** `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - **Story Template:** `packages/frameworks/kanban/templates/STORY_TEMPLATE.md`
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md` - Section 3.3: Tasks
-- **RW Agent Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Task Document Requirements section
+- **RW Agent Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Task Document Requirements section
 
 ---
 

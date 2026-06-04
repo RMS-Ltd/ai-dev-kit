@@ -27,7 +27,7 @@ The documentation portal (`portal/`) uses `@docusaurus/preset-classic` with **`p
 The repository’s authoring model predates this boundary: Kanban, FR/BR, ADRs, and user-docs routinely link to:
 
 1. **`INSTALL_IN_YOUR_PROJECT.md`** at **repository root** (not under `docs/`), via patterns such as **`../../../INSTALL_IN_YOUR_PROJECT.md`** from nested `docs/` paths.  
-2. **Framework packages**, e.g. **`packages/frameworks/workflow mgt/docs/...`**, via relative traversals from `docs/` that leave the docs-plugin corpus.
+2. **Framework packages**, e.g. **`packages/frameworks/workflow-mgt/docs/...`**, via relative traversals from `docs/` that leave the docs-plugin corpus.
 
 **Result:** `npm run build` (see **Observed behavior**) exits with errors such as *“Markdown link with URL `../../../INSTALL_IN_YOUR_PROJECT.md` … couldn't be resolved … within the current plugin”* — for **many** files, not a single typo.
 

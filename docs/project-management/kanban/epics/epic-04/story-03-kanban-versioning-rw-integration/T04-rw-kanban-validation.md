@@ -414,7 +414,7 @@ The RW → Kanban integration is **partially implemented** with **good foundatio
 
 ## References
 
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW guide)
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW guide)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md` (Kanban governance)
 - `packages/frameworks/kanban/integration/workflow-management-integration.md` (integration guide)
 - `docs/project-management/kanban/epics/epic-04/epic-04.md` (Epic document)

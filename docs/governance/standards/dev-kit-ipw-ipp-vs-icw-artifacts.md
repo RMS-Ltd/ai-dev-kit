@@ -39,13 +39,13 @@ Both patterns satisfy the **Global Implementation Gate** in root [`AGENTS.md`](.
 
 - **IPP template:** `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` (§2.5 ADR decision — FR-100)
 - **ADR necessity checklist:** [ipw-adr-necessity-checklist.md](../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- **Plan wiring:** `packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py` (where enabled)
+- **Plan wiring:** `packages/frameworks/workflow-mgt/scripts/validation/validate_plan_wiring.py` (where enabled)
 
 ---
 
 ## Adopter note
 
-The framework agent stub at `packages/frameworks/workflow mgt/agents/ipw/AGENTS.md` may still describe a **folder per task** (`docs/implementation-cycles/E#-S#-T#/specification.md`, etc.). That layout is **optional** for downstream repos; **ai-dev-kit** uses **flat `IPP-E…S…T…-*.md`** files under `docs/implementation-cycles/` per `ipw.md`.
+The framework agent stub at `packages/frameworks/workflow-mgt/agents/ipw/AGENTS.md` may still describe a **folder per task** (`docs/implementation-cycles/E#-S#-T#/specification.md`, etc.). That layout is **optional** for downstream repos; **ai-dev-kit** uses **flat `IPP-E…S…T…-*.md`** files under `docs/implementation-cycles/` per `ipw.md`.
 
 ---
 

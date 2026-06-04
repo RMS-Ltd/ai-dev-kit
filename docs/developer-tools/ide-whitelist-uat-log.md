@@ -53,7 +53,7 @@ housekeeping_policy: keep
 | `expected` | Exit 0; all `examples` match; no `/Users/` in YAML |
 | `observed` | PASS; 4 pytest cases green |
 | `result` | `pass` |
-| `notes` | [test_validate_whitelist_patterns.py](../../packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py) |
+| `notes` | [test_validate_whitelist_patterns.py](../../packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py) |
 
 ### Entry 002 — Live prompt reduction (maintainer UAT — pending)
 

@@ -35,7 +35,7 @@ Use fixture-first tests around canonical MoSCOW row tails, then run both RW and 
 ## Test Additions / Updates
 
 - Extend or refactor tests in:
-  - `packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py`
+  - `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py`
 - Preserve and evolve documentary regressions:
   - `test_4_13_br069_pipeline_order_divergence_and_non_terminal_footer_append`
 - Add explicit parity fixtures for RW/UKW shared pipeline assertions.
@@ -43,9 +43,9 @@ Use fixture-first tests around canonical MoSCOW row tails, then run both RW and 
 
 ## Verification Commands
 
-- `pytest "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py"`
-- `python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --mode full --dry-run`
-- `python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --mode kanban_init --dry-run`
+- `pytest "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py"`
+- `python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode full --dry-run`
+- `python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init --dry-run`
 
 ## Pass Criteria
 

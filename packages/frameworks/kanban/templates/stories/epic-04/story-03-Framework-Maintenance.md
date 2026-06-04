@@ -81,7 +81,7 @@ Track ongoing maintenance and updates to the Kanban Framework package. Maintenan
 ## References
 
 - **Kanban Framework:** `packages/frameworks/kanban/`
-- **RW Package:** `packages/frameworks/workflow mgt/`
+- **RW Package:** `packages/frameworks/workflow-mgt/`
 - **Framework Maintenance Patterns:** See Epic 6, Story 6
 
 ---

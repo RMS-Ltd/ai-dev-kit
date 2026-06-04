@@ -37,7 +37,7 @@ Add a temporary execution log file to RW that is written during execution. Enabl
 ## Input
 
 - **FR-044:** [FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md](../../../fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
-- **RW Agent Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Agent Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **rw-config.yaml:** Project config for paths
 
 ---
@@ -65,4 +65,4 @@ Add a temporary execution log file to RW that is written during execution. Enabl
 ## References
 
 - **FR-044:** [FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md](../../../fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
-- **RW Agent Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Agent Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`

@@ -46,7 +46,7 @@ This work is motivated by the SemVer tag collision incident and is dependent on 
 - FR repo anchor task: `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md`
 - Incident log: `docs/architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md`
 - RW config: `rw-config.yaml`
-- SemVer converter: `packages/frameworks/workflow mgt/scripts/version/semver_converter.py` (to be extended for task_touch)
+- SemVer converter: `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py` (to be extended for task_touch)
 - RW execution docs: `.cursorrules` and RW execution guides
 
 ---

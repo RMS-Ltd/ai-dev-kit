@@ -35,7 +35,7 @@ The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **
    [Install in your project](https://github.com/rms-ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
    ```
 
-   For framework paths, include the full path from the repository root after `/blob/main/` (e.g. `packages/frameworks/kanban/...`). If a directory name contains **spaces**, **percent-encode** them in the URL (e.g. `workflow%20mgt`).
+   For framework paths, include the full path from the repository root after `/blob/main/` (e.g. `packages/frameworks/kanban/...`). If a directory name contains **spaces**, **percent-encode** them in the URL (e.g. `workflow-mgt`).
 
 2. **Optional:** Add a **short page under `docs/`** (stub) if the portal must show an in-sidebar summary; link from that stub to the GitHub source. Avoid maintaining two long copies of the same document.
 

@@ -40,7 +40,7 @@ Close the BR-066 backlog slice left after Phase 1 (contract + single-task valida
 ### 1.4 Non-functional requirements
 
 - Validator remains deterministic, read-only, and suitable for RW Step 9 advisory use (non-blocking unless adopted later).
-- Tests run via existing pytest layout under `packages/frameworks/workflow mgt/scripts/validation/`.
+- Tests run via existing pytest layout under `packages/frameworks/workflow-mgt/scripts/validation/`.
 
 ### 1.5 Docusaurus / publication contract
 
@@ -106,8 +106,8 @@ Close the BR-066 backlog slice left after Phase 1 (contract + single-task valida
 | **UPDATE** | `docs/implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md` |
 | **UPDATE** | `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
 | **UPDATE** | Host task docs / story anchors for inventory items (see inventory Phase 2 table) |
-| **UPDATE** | `packages/frameworks/workflow mgt/scripts/validation/validate_ipw_publication_wiring.py` |
-| **UPDATE** | `packages/frameworks/workflow mgt/scripts/validation/test_validate_ipw_publication_wiring.py` |
+| **UPDATE** | `packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py` |
+| **UPDATE** | `packages/frameworks/workflow-mgt/scripts/validation/test_validate_ipw_publication_wiring.py` |
 | **NONE** | New ADR (EXEMPT — no new blocking gate) |
 
 ---
@@ -117,7 +117,7 @@ Close the BR-066 backlog slice left after Phase 1 (contract + single-task valida
 | Artifact | Location |
 | -------- | -------- |
 | IPP (consolidated) | `docs/implementation-cycles/` |
-| Validator | `packages/frameworks/workflow mgt/scripts/validation/` |
+| Validator | `packages/frameworks/workflow-mgt/scripts/validation/` |
 | Tests | co-located under `validation/` |
 | Kanban host | Epic 2 → Story 015 → T01 |
 

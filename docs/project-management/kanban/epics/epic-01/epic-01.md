@@ -168,8 +168,8 @@ Establish core KB locations for architecture, PM & portfolio, and dev-kit govern
 ## References
 
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`  
-- `packages/frameworks/workflow mgt/README.md`  
-- `packages/frameworks/numbering & versioning/README.md`  
+- `packages/frameworks/workflow-mgt/README.md`  
+- `packages/frameworks/numbering-versioning/README.md`  
 - `packages/frameworks/kanban/README.md`  
 - `docs/project-management/kanban/README.md` (Kanban structure)  
 

@@ -75,7 +75,7 @@ Establish `docs/governance/` as the canonical navigation and housing for **book-
 
 - Implementation commits land via **RW E7:S01:T11** (project git policy)—not ad-hoc commits during waves.
 - Coordinate `book-repo-docs-scope.md` with E7:S01:T10 to avoid conflicting edits (T11 owns AC3 row for `docs/governance/`).
-- Update `.cursorrules` and `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` in the same wave (dual-source parity).
+- Update `.cursorrules` and `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` in the same wave (dual-source parity).
 - Changelog language: use “Change implemented” / “Attempted” until user verifies (RW changelog rules).
 
 ### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
@@ -118,7 +118,7 @@ Doc-only relocation: structural verification (no new pytest module). Do **not** 
 
 | ID | Behavior / layer | Expected check |
 | -- | ---------------- | -------------- |
-| T1 | RF2 — kanban policy stub hygiene | `rg 'rituals/policy/kanban-governance-policy' docs .cursorrules .claude 'packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md'` → stub-only banners or zero non-stub hits |
+| T1 | RF2 — kanban policy stub hygiene | `rg 'rituals/policy/kanban-governance-policy' docs .cursorrules .claude 'packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md'` → stub-only banners or zero non-stub hits |
 | T2 | RF2 — versioning policy stub hygiene | `rg 'standards-and-adrs/dev-kit-versioning-policy' docs .cursorrules .claude` → stub-only or zero non-stub hits |
 | T3 | RF4 — wiring principle path | `rg 'fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE' docs packages/frameworks/kanban/templates` → stub-only or paths updated to `governance/principles/` |
 | T4 | RF5 — IPW/IPP policy links | Spot-check `.cursorrules`, `.claude/commands/ipw.md`, `AGENTS.md` point to `docs/governance/standards/specification-and-planning-artifacts-policy.md` (or stubs that resolve) |
@@ -173,7 +173,7 @@ Doc-only relocation: structural verification (no new pytest module). Do **not** 
 - `.claude/commands/ipw.md`, `rw.md`, `ukw.md`
 - `AGENTS.md`
 - `docs/project-management/kanban/kanban-board-guide.md`
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 - `docs/architecture/README.md`
 - `docs/governance/README.md`
 - `docs/governance/GOVERNANCE-REHOUSING-INVENTORY.md`
@@ -218,7 +218,7 @@ housekeeping_policy: keep
 | D-U1 | `docs/governance/GOVERNANCE-REHOUSING-INVENTORY.md` | FIX→MOVE for principles; §4 log | RF4, G |
 | D-U2 | `docs/governance/README.md` | Post-move navigation; remove bootstrap-only wording | RF2–RF4, C–D |
 | D-U3 | `.cursorrules` | Governance policy paths | RF5, E |
-| D-U4 | `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` | Parity with D-U3 | RF5, E |
+| D-U4 | `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` | Parity with D-U3 | RF5, E |
 | D-U5 | `.claude/commands/ipw.md`, `rw.md`, `ukw.md` | Policy path refs | RF5, E |
 | D-U6 | `AGENTS.md` | IPW gate policy paths | RF5, E |
 | D-U7 | `docs/project-management/kanban/kanban-board-guide.md` | Kanban governance path | RF5, E |
@@ -292,5 +292,5 @@ housekeeping_policy: keep
 - [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-094](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 - [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md)
+- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
 - [.claude/commands/ipw.md](../../.claude/commands/ipw.md)

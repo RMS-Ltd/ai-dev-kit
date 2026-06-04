@@ -78,7 +78,7 @@ Inspection used IPP §2.4 patterns on 2026-05-29.
 | -------- | -------------- | -------------- | ----- |
 | Workflow validators | `test_validate_rw_task_intent.py:95-133` — fixture layout under `story-07-adk-…` | **Operator habit / test fixture only** | Uses S07 paths as **test data**, not production routing |
 | Workflow validators | `test_validate_version_bump.py` — story-007 perpetual fixtures | Same | Test scaffolding |
-| Intake/IPW YAML | `rg` over `packages/frameworks/workflow mgt/workflows/` — **no matches** for S07/E6:S07 | **No codification** | — |
+| Intake/IPW YAML | `rg` over `packages/frameworks/workflow-mgt/workflows/` — **no matches** for S07/E6:S07 | **No codification** | — |
 | `.cursorrules` | `rg` — **no matches** for S07 / default housing | **No codification** | Positive routing table absent |
 | Intake skill | `.cursor/skills/intake-process/SKILL.md:14-33` — “delivery story”, “framework → e.g. E6” | **Permissive default** | Does not name S07; Epic 6 is broad |
 | Kanban templates | `rg` over `packages/frameworks/kanban/templates/` — **no S07 matches** | **No codification** | — |

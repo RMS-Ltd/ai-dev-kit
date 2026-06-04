@@ -306,7 +306,7 @@ Ensure that when projects copy the Kanban framework structure, they receive only
 - `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` - Canonical epic definitions
 - `packages/frameworks/kanban/README.md` - Kanban framework documentation
 - `docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md` - Template setup guide
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py` - RW installer (reference implementation)
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` - RW installer (reference implementation)
 
 ---
 

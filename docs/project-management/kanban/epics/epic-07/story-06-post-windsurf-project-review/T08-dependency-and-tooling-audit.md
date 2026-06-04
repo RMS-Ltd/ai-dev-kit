@@ -53,7 +53,7 @@ None
 |--------|------|--------|
 | **Root `pyproject.toml`** | — | **Absent.** Packaging uses `setup.py` only. |
 | **[`setup.py`](../../../../../../setup.py)** | Published `ai-dev-kit` package | `install_requires`: `pyyaml>=6.0` only. `extras_require["dev"]`: pytest, pytest-cov, pytest-mock, black, flake8, mypy. `python_requires>=3.8`. |
-| **[`requirements.txt`](../../../../../../requirements.txt)** | Repo / contributor install | `pyyaml`, `markdownlint-cli2`, `click`, `requests`. Dev tools commented out. **Drift:** `click` not used by `cli/` (stdlib `argparse`). `requests` used by workflow scripts under `packages/frameworks/workflow mgt/scripts/` (e.g. `create_github_release.py`), not the published CLI package. |
+| **[`requirements.txt`](../../../../../../requirements.txt)** | Repo / contributor install | `pyyaml`, `markdownlint-cli2`, `click`, `requests`. Dev tools commented out. **Drift:** `click` not used by `cli/` (stdlib `argparse`). `requests` used by workflow scripts under `packages/frameworks/workflow-mgt/scripts/` (e.g. `create_github_release.py`), not the published CLI package. |
 | **[`tests/requirements.txt`](../../../../../../tests/requirements.txt)** | CI/local tests | `pytest`, `pytest-cov`, `pytest-mock` — aligns with [`pytest.ini`](../../../../../../pytest.ini) and `setup.py` dev extras (versions may differ slightly; acceptable). |
 | **Lockfile** | — | No `requirements.lock` / `poetry.lock`; optional hardening for a future FR. |
 
@@ -83,8 +83,8 @@ None
 
 | Script | Purpose | Notes |
 |--------|---------|--------|
-| [`build_all_packages.sh` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/build_all_packages.sh) | Build tarballs for all frameworks | `set -e`; invokes `build_package.py`; framework list with versions; paths assume script location under `workflow mgt/scripts`. |
-| [`UPLOAD_COMMANDS.sh` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/UPLOAD_COMMANDS.sh) | Upload built packages to GitHub Releases | `cd` four levels to repo root; requires `GITHUB_TOKEN`; expects `packages/frameworks/dist/packages`; hardcoded package filenames/tags — must stay in sync with build versions. |
+| [`build_all_packages.sh` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/build_all_packages.sh) | Build tarballs for all frameworks | `set -e`; invokes `build_package.py`; framework list with versions; paths assume script location under `workflow-mgt/scripts`. |
+| [`UPLOAD_COMMANDS.sh` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/UPLOAD_COMMANDS.sh) | Upload built packages to GitHub Releases | `cd` four levels to repo root; requires `GITHUB_TOKEN`; expects `packages/frameworks/dist/packages`; hardcoded package filenames/tags — must stay in sync with build versions. |
 
 **Footguns:** Paths containing spaces (`workflow mgt`) require careful quoting (scripts generally use quoted variables). UPLOAD_COMMANDS version list must match `build_all_packages.sh` framework versions.
 

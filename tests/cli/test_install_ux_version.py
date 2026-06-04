@@ -16,7 +16,7 @@ from unittest.mock import patch
 import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-SCRIPTS_DIR = REPO_ROOT / "packages" / "frameworks" / "workflow mgt" / "scripts"
+SCRIPTS_DIR = REPO_ROOT / "packages" / "frameworks" / "workflow-mgt" / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 

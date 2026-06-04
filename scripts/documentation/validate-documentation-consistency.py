@@ -286,7 +286,7 @@ def check_moscow_spacing(repo_root: Path) -> Dict:
     """Delegate to workflow mgt MoSCOW spacing validator (UXR-005)."""
     val_script = (
         repo_root
-        / "packages/frameworks/workflow mgt/scripts/validation/validate_kanban_moscow_spacing.py"
+        / "packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_moscow_spacing.py"
     )
     results: Dict = {
         'check': 'moscow_spacing',

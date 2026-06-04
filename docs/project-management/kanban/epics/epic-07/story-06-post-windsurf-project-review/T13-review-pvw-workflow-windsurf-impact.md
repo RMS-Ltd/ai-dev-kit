@@ -32,7 +32,7 @@ Review Package Version Workflow (PVW) for Windsurf impact, .windsurf skill mappi
 
 - .cursorrules PVW section
 - .windsurf/skills/ (if any PVW-specific)
-- packages/frameworks/workflow mgt/workflows/package-version-workflow/
+- packages/frameworks/workflow-mgt/workflows/package-version-workflow/
 
 ## Deliverable
 

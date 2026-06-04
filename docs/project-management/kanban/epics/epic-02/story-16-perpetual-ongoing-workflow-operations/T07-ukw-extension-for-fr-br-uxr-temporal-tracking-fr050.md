@@ -29,8 +29,8 @@ Publication N/A Reason: Single consolidated IPP (Sections 1–7 per IPW); see [I
 
 - [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) — requirements and acceptance criteria.
 - [IPP-E02S16T07](../../../../implementation-cycles/IPP-E02S16T07-ukw-fbu-temporal-tracking-fr050.md) — consolidated implementation plan (IPW).
-- UKW workflow definition: `packages/frameworks/workflow mgt/workflows/update-kanban-workflow/`
-- UKW agents definition: `packages/frameworks/workflow mgt/agents/ukw/AGENTS.md`
+- UKW workflow definition: `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/`
+- UKW agents definition: `packages/frameworks/workflow-mgt/agents/ukw/AGENTS.md`
 - `kanban-completed.md` — format reference for the temporal dashboard.
 - Historical context: [E06:S07:T108](../../epic-06/story-07-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) (SUPERSEDED)
 
@@ -52,7 +52,7 @@ The UKW handles kanban board synchronization with temporal tracking and a recent
 
 ## Scope
 
-1. Extend the UKW workflow definition (`packages/frameworks/workflow mgt/`) with explicit FR/BR/UXR synchronization steps (temporal tracking, board cleanup, structure update).
+1. Extend the UKW workflow definition (`packages/frameworks/workflow-mgt/`) with explicit FR/BR/UXR synchronization steps (temporal tracking, board cleanup, structure update).
 2. Add a recent-completions dashboard section to `fbu-completed.md` (20 most recent, sorted by completion time).
 3. Ensure consistency with the established `kanban-completed.md` format and UKW patterns.
 4. Wire agent instructions and `ukw-sync` skill to existing `.cursor/skills/fr-br-uxr-completed-update/SKILL.md` (no new external tooling).
@@ -75,8 +75,8 @@ The UKW handles kanban board synchronization with temporal tracking and a recent
 - [IPP-E02S16T07](../../../../implementation-cycles/IPP-E02S16T07-ukw-fbu-temporal-tracking-fr050.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
 - Historical anchor: [E06:S07:T108](../../epic-06/story-07-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) (SUPERSEDED)
-- UKW workflow definition: `packages/frameworks/workflow mgt/workflows/update-kanban-workflow/`
-- UKW agent execution: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- UKW workflow definition: `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/`
+- UKW agent execution: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - FBU completed skill: `.cursor/skills/fr-br-uxr-completed-update/SKILL.md`
 
 ## Planning artifacts (publication)

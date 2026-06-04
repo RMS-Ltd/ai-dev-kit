@@ -179,8 +179,8 @@ The specification formalizes the requirements baseline by mapping each AC to con
 - **CLI install (correct pattern):** `cli/commands/install.py`
 - **Backend selector:** `cli/backends/selector.py`
 - **Backend registry:** `cli/backends/registry.py`
-- **Standalone script:** `packages/frameworks/workflow mgt/scripts/uninstall_package.py`
+- **Standalone script:** `packages/frameworks/workflow-mgt/scripts/uninstall_package.py`
 - **Test fixtures:** `tests/conftest.py`
 - **Existing backend tests:** `tests/test_backends.py`
 - **Plan doc template:** `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
-- **IPW canonical guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- **IPW canonical guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`

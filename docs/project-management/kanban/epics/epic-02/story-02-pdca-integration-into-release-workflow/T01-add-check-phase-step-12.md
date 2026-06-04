@@ -26,7 +26,7 @@ Add Step 12 (Post-Commit Verification & Reflection) to the Release Workflow to i
 
 - Current RW workflow (11 steps)
 - PDCA integration plan: `docs/architecture/standards-and-adrs/rw-pdca-integration-plan.md`
-- Fix verification requirements: `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (lines 101-150)
+- Fix verification requirements: `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (lines 101-150)
 
 ---
 
@@ -44,7 +44,7 @@ Add Step 12 (Post-Commit Verification & Reflection) to the Release Workflow to i
 ## Approach
 
 1. **Update Workflow YAML:**
-   - Add Step 12 to `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+   - Add Step 12 to `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
    - Configure dependencies (depends on Step 11)
    - Set as optional but enabled by default
 
@@ -99,6 +99,6 @@ Add Step 12 (Post-Commit Verification & Reflection) to the Release Workflow to i
 ## References
 
 - **PDCA Integration Plan:** `docs/architecture/standards-and-adrs/rw-pdca-integration-plan.md`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **RW Workflow YAML:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 

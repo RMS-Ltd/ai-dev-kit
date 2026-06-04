@@ -202,11 +202,11 @@ Exit:   0 if valid, 1 if issues
 
 | File | Action |
 |------|--------|
-| `packages/frameworks/workflow mgt/scripts/kanban/extract_embedded_tasks.py` | Create |
-| `packages/frameworks/workflow mgt/scripts/kanban/generate_task_doc.py` | Create |
-| `packages/frameworks/workflow mgt/scripts/kanban/update_story_refs.py` | Create |
-| `packages/frameworks/workflow mgt/scripts/kanban/validate_migration.py` | Create |
-| `packages/frameworks/workflow mgt/scripts/kanban/test_migrate_embedded_tasks.py` | Create |
+| `packages/frameworks/workflow-mgt/scripts/kanban/extract_embedded_tasks.py` | Create |
+| `packages/frameworks/workflow-mgt/scripts/kanban/generate_task_doc.py` | Create |
+| `packages/frameworks/workflow-mgt/scripts/kanban/update_story_refs.py` | Create |
+| `packages/frameworks/workflow-mgt/scripts/kanban/validate_migration.py` | Create |
+| `packages/frameworks/workflow-mgt/scripts/kanban/test_migrate_embedded_tasks.py` | Create |
 | `docs/.../migration-plan-embedded-to-discrete-tasks.md` | Update (fill TBDs, link to scripts) |
 
 ---

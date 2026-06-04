@@ -573,13 +573,13 @@ git push origin kanban-v2.1.0
   - Complete package maintenance guide
   - PVW execution and integration
 
-- **Package Version Workflow:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md`
+- **Package Version Workflow:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md`
   - Complete PVW step-by-step guide
   - Agent execution patterns
 
 ### 8.2 Supporting Documents
 
-- **Release Workflow Reference:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md`
+- **Release Workflow Reference:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md`
   - Complete RW reference
   - All 13 steps documented
 

@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Define the implementation expectations baseline for the Workflow Management framework package (`packages/frameworks/workflow mgt/`). Extract expected features, workflows, integration behaviors, and package composition from documentation to establish a comprehensive expectations baseline for RC readiness review.
+Define the implementation expectations baseline for the Workflow Management framework package (`packages/frameworks/workflow-mgt/`). Extract expected features, workflows, integration behaviors, and package composition from documentation to establish a comprehensive expectations baseline for RC readiness review.
 
 **Scope includes:**
 - Extract core operating principles from package README
@@ -32,11 +32,11 @@ Define the implementation expectations baseline for the Workflow Management fram
 
 ## Inputs
 
-- Package README: `packages/frameworks/workflow mgt/README.md`
-- Implementation guides: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/`
-- Workflow definitions: `packages/frameworks/workflow mgt/workflows/`
-- Versioning policy documents: `packages/frameworks/workflow mgt/KB/Architecture/Standards_and_ADRs/`
-- Cursor rules sections: `packages/frameworks/workflow mgt/cursorrules-*.md`
+- Package README: `packages/frameworks/workflow-mgt/README.md`
+- Implementation guides: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/`
+- Workflow definitions: `packages/frameworks/workflow-mgt/workflows/`
+- Versioning policy documents: `packages/frameworks/workflow-mgt/KB/Architecture/Standards_and_ADRs/`
+- Cursor rules sections: `packages/frameworks/workflow-mgt/cursorrules-*.md`
 
 ---
 
@@ -627,13 +627,13 @@ Define the implementation expectations baseline for the Workflow Management fram
 
 ## Sources
 
-- **Package README:** `packages/frameworks/workflow mgt/README.md`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **UKW Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
-- **Workflow Definitions:** `packages/frameworks/workflow mgt/workflows/`
-- **Versioning Policy:** `packages/frameworks/workflow mgt/KB/Architecture/Standards_and_ADRs/versioning-policy.md`
-- **Config Schema:** `packages/frameworks/workflow mgt/config/rw-config-schema.md`
-- **Cursor Rules:** `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`, `cursorrules-ukw-trigger-section.md`
+- **Package README:** `packages/frameworks/workflow-mgt/README.md`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **UKW Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- **Workflow Definitions:** `packages/frameworks/workflow-mgt/workflows/`
+- **Versioning Policy:** `packages/frameworks/workflow-mgt/KB/Architecture/Standards_and_ADRs/versioning-policy.md`
+- **Config Schema:** `packages/frameworks/workflow-mgt/config/rw-config-schema.md`
+- **Cursor Rules:** `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`, `cursorrules-ukw-trigger-section.md`
 
 ---
 

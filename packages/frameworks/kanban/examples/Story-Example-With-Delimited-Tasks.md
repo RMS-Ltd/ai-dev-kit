@@ -128,8 +128,8 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 **Approach:**
 1. Review current versioning policy documents:
    - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (dev-kit local)
-   - `packages/frameworks/numbering & versioning/versioning-policy.md` (framework)
-   - `packages/frameworks/numbering & versioning/versioning-strategy.md` (framework)
+   - `packages/frameworks/numbering-versioning/versioning-policy.md` (framework)
+   - `packages/frameworks/numbering-versioning/versioning-strategy.md` (framework)
 2. Update Kanban-related sections:
    - Add requirement that Task doc must exist before versioning
    - Document Task doc → Version TASK component alignment requirement

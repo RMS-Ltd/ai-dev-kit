@@ -38,7 +38,7 @@ Brownfield teams need to **compose** workflows, Kanban, versioning, and docs lif
 
 - [x] **FR-081-F1:** Publish a **brownfield adoption guide** (or major section of the installation guide) that states **non-goals** (we do not require replacing the host `docs/` tree or PM process) and **integration seams** (`rw-config.yaml`, `scripts_path`, optional `use_kanban`).
 - [x] **FR-081-F2:** Provide **required vs optional vs recommended** matrices **per framework surface** (minimum viable RW-only adoption vs full stack), suitable for experienced architects.
-- [x] **FR-081-F3:** Align **installer UX** messaging so brownfield runs do not imply copying ai-dev-kit’s reference Kanban epics wholesale; reinforce installer-first and contract-first patterns ([`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)).
+- [x] **FR-081-F3:** Align **installer UX** messaging so brownfield runs do not imply copying ai-dev-kit’s reference Kanban epics wholesale; reinforce installer-first and contract-first patterns ([`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)).
 - [x] **FR-081-F4:** Capture **explicit tradeoff decisions** (deferred choices) in Kanban tasks or ADR supplements so future work does not lose context.
 
 ### Non-Functional Requirements
@@ -51,7 +51,7 @@ Brownfield teams need to **compose** workflows, Kanban, versioning, and docs lif
 - [`INSTALL_IN_YOUR_PROJECT.md`](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) — brownfield SoT: non-goals, matrices, RW-only path, worked example, tradeoff table, ADR-003 anchor.
 - [`IPP-E06S09T02`](../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md) — planning package and §8 deferrals.
 - User-docs cross-links (installation guide, rollout checklist, repo-structure, scope stubs).
-- [`packages/frameworks/workflow mgt/README.md`](../../../packages/frameworks/workflow%20mgt/README.md), [`packages/frameworks/kanban/README.md`](../../../packages/frameworks/kanban/README.md) — brownfield messaging.
+- [`packages/frameworks/workflow-mgt/README.md`](../../../packages/frameworks/workflow-mgt/README.md), [`packages/frameworks/kanban/README.md`](../../../packages/frameworks/kanban/README.md) — brownfield messaging.
 - Installers: `install_release_workflow.py` epilog; `install_kanban_framework.py` fresh-mode brownfield warning.
 - [`tests/test_install_brownfield_docs.py`](../../../tests/test_install_brownfield_docs.py) — structural regression (TD7).
 

@@ -16,8 +16,8 @@ This directory contains **guides for adopting** the `ai-dev-kit` frameworks in y
 
 ## Available Frameworks
 
-- **Workflow Management:** See `packages/frameworks/workflow mgt/README.md`
-- **Numbering & Versioning:** See `packages/frameworks/numbering & versioning/README.md`
+- **Workflow Management:** See `packages/frameworks/workflow-mgt/README.md`
+- **Numbering & Versioning:** See `packages/frameworks/numbering-versioning/README.md`
 - **Kanban:** See `packages/frameworks/kanban/README.md`
 
 ## Navigation

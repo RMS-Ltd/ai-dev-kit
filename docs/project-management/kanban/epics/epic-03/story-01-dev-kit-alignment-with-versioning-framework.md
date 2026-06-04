@@ -54,8 +54,8 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
 
 **Approach:**
 1. ✅ Reviewed `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
-2. ✅ Reviewed `packages/frameworks/numbering & versioning/versioning-policy.md`
-3. ✅ Reviewed `packages/frameworks/numbering & versioning/versioning-strategy.md`
+2. ✅ Reviewed `packages/frameworks/numbering-versioning/versioning-policy.md`
+3. ✅ Reviewed `packages/frameworks/numbering-versioning/versioning-strategy.md`
 4. ✅ Compared dev-kit policy with framework policy
 5. ✅ Documented gaps and inconsistencies
 
@@ -81,12 +81,12 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
 
 **Approach:**
 1. ✅ Reviewed framework package versioning files (already contain fynd.deals Epic 15 findings)
-2. ✅ Analyzed versioning patterns from `packages/frameworks/numbering & versioning/`
+2. ✅ Analyzed versioning patterns from `packages/frameworks/numbering-versioning/`
 3. ✅ Extracted reusable patterns (12 key patterns identified)
 4. ✅ Documented findings and recommendations
 5. ✅ Created findings document: `T02-fynd-deals-epic15-findings.md`
 
-**Key Finding:** The framework package (`packages/frameworks/numbering & versioning/`) **already contains** the fynd.deals Epic 15 findings, as documented in `PACKAGE_UPDATE_SUMMARY.md`.
+**Key Finding:** The framework package (`packages/frameworks/numbering-versioning/`) **already contains** the fynd.deals Epic 15 findings, as documented in `PACKAGE_UPDATE_SUMMARY.md`.
 
 **Patterns Extracted:**
 - ✅ Version schema: `RC.EPIC.STORY.TASK+BUILD` format
@@ -138,7 +138,7 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
 - ✅ `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` - Enhanced with all missing sections
 - ✅ Policy status updated to "Active"
 
-**Note:** Framework policies (`packages/frameworks/numbering & versioning/`) remain the canonical SoT. Dev-kit policy now comprehensively documents how the framework is applied in dev-kit context, referencing framework for detailed explanations.
+**Note:** Framework policies (`packages/frameworks/numbering-versioning/`) remain the canonical SoT. Dev-kit policy now comprehensively documents how the framework is applied in dev-kit context, referencing framework for detailed explanations.
 
 ---
 
@@ -195,7 +195,7 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
 **Status:** ✅ **COMPLETE** - Consumption pattern documented in README and IMPLEMENTATION_GUIDE
 
 **Approach:**
-1. ✅ Enhanced `packages/frameworks/numbering & versioning/README.md`:
+1. ✅ Enhanced `packages/frameworks/numbering-versioning/README.md`:
    - Added comprehensive "Consumption Pattern for Other Projects" section
    - Documented copy vs reference pattern (CRITICAL: copy, don't reference)
    - Explained customization boundaries (what can be customized vs what must stay)
@@ -203,7 +203,7 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
    - Added example setup workflow
    - Clarified SoT relationship (ai-dev-kit is canonical source)
 
-2. ✅ Enhanced `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md`:
+2. ✅ Enhanced `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md`:
    - Added "CRITICAL: Copy, Don't Reference" section at top
    - Added comprehensive "Consumption Pattern for Other Projects" section
    - Documented copy vs reference pattern with examples
@@ -219,8 +219,8 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
 - ✅ **SoT relationship:** `ai-dev-kit` is the canonical source, projects adapt for their context
 
 **Files Updated:**
-- ✅ `packages/frameworks/numbering & versioning/README.md` - Added consumption section
-- ✅ `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md` - Enhanced with consumption pattern
+- ✅ `packages/frameworks/numbering-versioning/README.md` - Added consumption section
+- ✅ `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md` - Enhanced with consumption pattern
 
 ---
 
@@ -234,7 +234,7 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
 **Status:** ✅ **COMPLETE** - Cursorrules RW trigger section abstracted with template placeholders
 
 **Approach:**
-1. ✅ Analyzed `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+1. ✅ Analyzed `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 2. ✅ Identified hardcoded version numbers and project-specific paths:
    - Hardcoded paths: `src/fynd_deals/version.py`, `knowledge/fynd_deals/Kanban/`
    - Hardcoded examples: `0.15.1.4+2`, `epic/15`, `epic/10-fastapi-migration`
@@ -253,8 +253,8 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
 - ✅ References canonical policy documents instead of duplicating schema
 
 **Files Updated:**
-- ✅ `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` - Abstracted all hardcoded references
-- ✅ `packages/frameworks/workflow mgt/README.md` - Updated with abstracted examples
+- ✅ `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` - Abstracted all hardcoded references
+- ✅ `packages/frameworks/workflow-mgt/README.md` - Updated with abstracted examples
 
 **Key Changes:**
 - ✅ File paths use template placeholders (`\{project\}`, `\{kanban_path\}`, `{scripts_path}`)
@@ -293,9 +293,9 @@ Make sure the dev kit's versioning implementation demonstrates best practices an
 
 ## References
 
-- `packages/frameworks/numbering & versioning/README.md`
-- `packages/frameworks/numbering & versioning/versioning-policy.md`
-- `packages/frameworks/numbering & versioning/versioning-strategy.md`
+- `packages/frameworks/numbering-versioning/README.md`
+- `packages/frameworks/numbering-versioning/versioning-policy.md`
+- `packages/frameworks/numbering-versioning/versioning-strategy.md`
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - **T001 Gap Analysis:** [`T01-gap-analysis-report.md`](story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md)
 - **T002 Findings:** [`T02-fynd-deals-epic15-findings.md`](story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md)

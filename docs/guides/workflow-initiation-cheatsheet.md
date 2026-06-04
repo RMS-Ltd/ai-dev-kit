@@ -50,7 +50,7 @@ housekeeping_policy: keep
 | **Handoff** | Commits and tags via RW only — do not `git commit` / `git push` outside RW |
 | **Blocked session** | `RW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
-**Deep dive:** [`.claude/commands/rw.md`](../../.claude/commands/rw.md) · [Release Workflow agent execution guide](../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+**Deep dive:** [`.claude/commands/rw.md`](../../.claude/commands/rw.md) · [Release Workflow agent execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 
 ---
 
@@ -85,7 +85,7 @@ housekeeping_policy: keep
 | **Handoff** | UKW stages kanban files; you run **`RW`** to commit (attributes perpetual UKW task) |
 | **Blocked session** | `UKW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
-**Deep dive:** [`.claude/commands/ukw.md`](../../.claude/commands/ukw.md) · [Update Kanban Workflow agent execution guide](../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+**Deep dive:** [`.claude/commands/ukw.md`](../../.claude/commands/ukw.md) · [Update Kanban Workflow agent execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
 
 ---
 

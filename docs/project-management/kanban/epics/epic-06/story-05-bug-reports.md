@@ -55,28 +55,28 @@ Systematically track, prioritize, and resolve bugs in framework packages, instal
 **Blocker:** None
 
 **Problem Statement:**
-The RW installer script (`install_release_workflow.py`) was looking for the `cursorrules-rw-trigger-section.md` template file in the wrong location. It was using `PACKAGE_ROOT` (which points to `packages/frameworks/`) instead of the framework root directory (`packages/frameworks/workflow mgt/`), causing a `FileNotFoundError` when users tried to run the installer.
+The RW installer script (`install_release_workflow.py`) was looking for the `cursorrules-rw-trigger-section.md` template file in the wrong location. It was using `PACKAGE_ROOT` (which points to `packages/frameworks/`) instead of the framework root directory (`packages/frameworks/workflow-mgt/`), causing a `FileNotFoundError` when users tried to run the installer.
 
 **Root Cause:**
 - Script calculated: `PACKAGE_ROOT = SCRIPT_DIR.parent.parent` = `packages/frameworks/`
-- Template file is actually at: `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- Template file is actually at: `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 - Script was looking for: `packages/frameworks/cursorrules-rw-trigger-section.md` (wrong path)
 
 **Solution:**
-- Added `FRAMEWORK_ROOT = SCRIPT_DIR.parent` to correctly point to `packages/frameworks/workflow mgt/`
+- Added `FRAMEWORK_ROOT = SCRIPT_DIR.parent` to correctly point to `packages/frameworks/workflow-mgt/`
 - Updated `CURSORRULES_TEMPLATE` to use `FRAMEWORK_ROOT` instead of `PACKAGE_ROOT`
 - Updated `SCHEMA_DOC` to use `FRAMEWORK_ROOT` for consistency
 
 **Changes Made:**
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`:
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`:
   - Added `FRAMEWORK_ROOT = SCRIPT_DIR.parent`
   - Changed `CURSORRULES_TEMPLATE = PACKAGE_ROOT / "cursorrules-rw-trigger-section.md"` to `FRAMEWORK_ROOT / "cursorrules-rw-trigger-section.md"`
   - Changed `SCHEMA_DOC = PACKAGE_ROOT / "config" / "rw-config-schema.md"` to `FRAMEWORK_ROOT / "config" / "rw-config-schema.md"`
 
 
 **Verification:**
-- ✅ Template file exists at: `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
-- ✅ Schema file exists at: `packages/frameworks/workflow mgt/config/rw-config-schema.md`
+- ✅ Template file exists at: `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
+- ✅ Schema file exists at: `packages/frameworks/workflow-mgt/config/rw-config-schema.md`
 - ✅ Path calculation now correctly resolves to framework root directory
 
 **Impact:**

@@ -218,11 +218,11 @@ The plan is organized as five sequential waves so each can be released atomicall
 
 ## 5. Success / verification criteria
 
-Runnable validators (from [`packages/frameworks/workflow mgt/scripts/validation/`](../../packages/frameworks/workflow%20mgt/scripts/validation/)):
+Runnable validators (from [`packages/frameworks/workflow-mgt/scripts/validation/`](../../packages/frameworks/workflow-mgt/scripts/validation/)):
 
-- [ ] `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py"` — currently blocked by pre-existing unrelated issue (`E5:S01:T75` missing Host Task link); no new T06 wiring regressions observed.
-- [x] `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_ipw_publication_wiring.py" --requested E4:S19:T06` — passes (published Wave 1 used `Publication Status: NOT_APPLICABLE` per consolidated IPP model).
-- [x] `python3 "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --dry-run --mode full` — no path-resolution regressions for renamed files.
+- [ ] `python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_plan_wiring.py"` — currently blocked by pre-existing unrelated issue (`E5:S01:T75` missing Host Task link); no new T06 wiring regressions observed.
+- [x] `python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py" --requested E4:S19:T06` — passes (published Wave 1 used `Publication Status: NOT_APPLICABLE` per consolidated IPP model).
+- [x] `python3 "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --dry-run --mode full` — no path-resolution regressions for renamed files.
 
 Deliverable checks:
 

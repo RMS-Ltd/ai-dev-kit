@@ -31,7 +31,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This story performs the RC readiness **implementation review** for the Tooling & Automation framework package (`packages/frameworks/tooling & automation/`).
+This story performs the RC readiness **implementation review** for the Tooling & Automation framework package (`packages/frameworks/tooling-automation/`).
 
 ---
 
@@ -106,4 +106,4 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## References
 
-- Package: `packages/frameworks/tooling & automation/`
+- Package: `packages/frameworks/tooling-automation/`

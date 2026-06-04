@@ -54,7 +54,7 @@ This document provides a comprehensive root cause analysis of why Task numbers a
 - But it does NOT say: "If task transition detected, UPDATE VERSION_TASK to match new Task number"
 - RW Step 2 only increments BUILD, it doesn't check if we're on a new Task
 
-**Location:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 2)
+**Location:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 2)
 
 **Why It Happened:**
 - Step 2 was designed to handle BUILD increments within the same Task
@@ -73,7 +73,7 @@ This document provides a comprehensive root cause analysis of why Task numbers a
 - No pre-commit hooks to enforce Task/version alignment
 
 **Location:** 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 - RW Step 2 validation section
 
 **Why It Happened:**
@@ -112,7 +112,7 @@ This document provides a comprehensive root cause analysis of why Task numbers a
 
 **Location:**
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 **Why It Happened:**
 - Documentation evolved from different sources (Kanban policy vs RW guide)
@@ -194,7 +194,7 @@ This document provides a comprehensive root cause analysis of why Task numbers a
 - Add explicit action: "If new Task, update `VERSION_TASK` to match new Task number"
 - Add explicit action: "If new Task, reset `VERSION_BUILD` to 1"
 
-**Location:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 2)
+**Location:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 2)
 
 ---
 
@@ -206,7 +206,7 @@ This document provides a comprehensive root cause analysis of why Task numbers a
 - Add validation: "Verify `VERSION_TASK` matches active Task number from Story document"
 - Add check: "If mismatch, STOP workflow and alert user"
 
-**Location:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 1)
+**Location:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 1)
 
 ---
 
@@ -230,7 +230,7 @@ This document provides a comprehensive root cause analysis of why Task numbers a
 - Add check: "Verify `VERSION_TASK` matches active Task number"
 - Add check: "Verify Task exists in Story document"
 
-**Location:** `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
+**Location:** `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 
 ---
 
@@ -269,7 +269,7 @@ This document provides a comprehensive root cause analysis of why Task numbers a
 - Add example: "RW Step 2 handling Task transition"
 - Add example: "Version file update during Task transition"
 
-**Location:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+**Location:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ---
 
@@ -362,7 +362,7 @@ The root cause of Task → version `TASK` component mapping failure is a **syste
 ## References
 
 - `docs/project-management/kanban/story-03-kanban-versioning-rw-integration/T02-kanban-versioning-validation.md` (validation report)
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW guide)
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW guide)
 - `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` (intake guide)
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (versioning policy)
 

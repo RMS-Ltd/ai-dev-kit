@@ -11,7 +11,7 @@ This directory contains **dev-kit project utilities** organized by purpose.
 ## Framework Scripts (Canonical)
 
 **Core workflow scripts** live in the framework packages:
-- `packages/frameworks/workflow mgt/scripts/` - RW/UKW/CMW validators, converters, changelog scripts
+- `packages/frameworks/workflow-mgt/scripts/` - RW/UKW/CMW validators, converters, changelog scripts
 - `packages/frameworks/kanban/scripts/` - Kanban framework installation, migration, template generation
 
 These are the **canonical scripts** that adopters should copy or reference.

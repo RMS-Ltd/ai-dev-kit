@@ -93,14 +93,14 @@ Checklist-driven verification (V1–V10). No new pytest module. `--skip-tests` n
 | D-C1 | `docs/implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md` | CREATE (this file) |
 | D-C2 | `docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md` | CREATE |
 | D-C3 | `docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md` | CREATE |
-| D-C4 | `packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template` | CREATE |
+| D-C4 | `packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template` | CREATE |
 | D-U1–D-U10 | Kanban + README + guides + ADR-003 | UPDATE |
 
 ---
 
 ## 6. Documentation housing
 
-All CREATE paths under `docs/architecture/standards-and-adrs/` (spec + evaluation) and `packages/frameworks/workflow mgt/config/` (bridge). Publication: NOT_APPLICABLE (repo SoT; Docusaurus deferred per BR-066).
+All CREATE paths under `docs/architecture/standards-and-adrs/` (spec + evaluation) and `packages/frameworks/workflow-mgt/config/` (bridge). Publication: NOT_APPLICABLE (repo SoT; Docusaurus deferred per BR-066).
 
 ---
 

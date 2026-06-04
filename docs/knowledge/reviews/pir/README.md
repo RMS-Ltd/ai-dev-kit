@@ -103,8 +103,8 @@ Each PIR report includes:
    - Story PIR: `docs/documentation/templates/story-pir-template.md`
 
 2. **Follow Workflow:**
-   - See [PIR Workflow Reference (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-reference.md)
-   - See [PIR Workflow Planning (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Analysis/PIR-workflow-planning.md)
+   - See [PIR Workflow Reference (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-reference.md)
+   - See [PIR Workflow Planning (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Analysis/PIR-workflow-planning.md)
 
 3. **Link to Work Items:**
    - Link PIR report to Epic/Story document (bidirectional)
@@ -115,10 +115,10 @@ Each PIR report includes:
 
 ## Related Documentation
 
-- [PIR Workflow Planning (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Analysis/PIR-workflow-planning.md) - Complete planning document
-- [PIR Workflow Reference (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-reference.md) - Workflow reference (when available)
+- [PIR Workflow Planning (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Analysis/PIR-workflow-planning.md) - Complete planning document
+- [PIR Workflow Reference (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-reference.md) - Workflow reference (when available)
 - [Epic PIR template](../../../documentation/templates/epic-pir-template.md) · [Story PIR template](../../../documentation/templates/story-pir-template.md)
-- [Release Workflow (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md) - RW integration
+- [Release Workflow (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md) - RW integration
 
 ---
 

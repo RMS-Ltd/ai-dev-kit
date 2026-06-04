@@ -3,11 +3,11 @@
   // Cursor concatenates this file with ~/.cursor/permissions.json (if present).
   // Cursor 3.6+ (e.g. 3.6.31). Run Mode: Auto-review, Allowlist, or Allowlist (with Sandbox). See docs/developer-tools/ide-whitelist-guide.md
   "terminalAllowlist": [
-    "python \"packages/frameworks/workflow mgt/scripts/",
-    "python \"packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py",
-    "python \"packages/frameworks/workflow mgt/scripts/validation/test_validate_",
-    "bash \"packages/frameworks/workflow mgt/scripts/validation/run_isolated_pytest.sh",
-    "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python \"packages/frameworks/workflow mgt/scripts/validation/",
+    "python \"packages/frameworks/workflow-mgt/scripts/",
+    "python \"packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py",
+    "python \"packages/frameworks/workflow-mgt/scripts/validation/test_validate_",
+    "bash \"packages/frameworks/workflow-mgt/scripts/validation/run_isolated_pytest.sh",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python \"packages/frameworks/workflow-mgt/scripts/validation/",
     "python -m pytest",
     "git add",
     "git status",
@@ -31,7 +31,7 @@
   ],
   "autoRun": {
     "allow_instructions": [
-      "RW/UKW validation and release scripts under packages/frameworks/workflow mgt/scripts/ are routine in this repo.",
+      "RW/UKW validation and release scripts under packages/frameworks/workflow-mgt/scripts/ are routine in this repo.",
       "Read-only git inspection (status, diff, log, show) is expected during agent work."
     ],
     "block_instructions": [

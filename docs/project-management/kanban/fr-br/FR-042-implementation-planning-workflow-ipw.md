@@ -284,7 +284,7 @@ Durable planning output may appear in either form under `docs/implementation-cyc
 
 **Related Work:**
 
-- **Implementation Cycle SoP:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`
+- **Implementation Cycle SoP:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`
 - **FR-035:** Task Template Cross-Wiring Section (bidirectional wiring)
 - **FR-016:** Kanban Granularity & Discrete Task Docs (3-tier structure)
 - **E04:S11:T07:** Incident that triggered this FR (plan doc created without wiring)
@@ -298,11 +298,11 @@ Durable planning output may appear in either form under `docs/implementation-cyc
 
 ## References
 
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md` – IPW agent execution
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md` – IPW agent execution
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` – Plan doc template
 - [dev-kit-ipw-ipp-vs-icw-artifacts.md](../../../architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md) – ICW trio vs consolidated IPP (artifact packaging)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py` – AC7 validator
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md` – Implementation Cycle
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_plan_wiring.py` – AC7 validator
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md` – Implementation Cycle
 - `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md` – Example plan doc (unwired)
 - `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md` – Host task for T07
 - `docs/project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance/T01-planning-spec-tests-impl.md` – Example plan doc

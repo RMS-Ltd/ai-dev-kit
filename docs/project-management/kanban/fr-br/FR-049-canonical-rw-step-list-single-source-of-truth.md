@@ -61,7 +61,7 @@ Current inconsistent definitions:
 
 Create a single authoritative source file:
 
-**File:** `packages/frameworks/workflow mgt/canonical-rw-steps.yaml`
+**File:** `packages/frameworks/workflow-mgt/canonical-rw-steps.yaml`
 
 ```yaml
 canonical_rw_steps:

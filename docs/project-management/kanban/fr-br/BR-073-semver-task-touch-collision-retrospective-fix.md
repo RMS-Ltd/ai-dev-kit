@@ -65,8 +65,8 @@ Additionally, the `v0.4.778+1` git tag was created on commit `963ad934f` (`v0.24
 
 ```bash
 # Both commands returned 0.4.778+1 before the registry patch
-python "packages/frameworks/workflow mgt/scripts/version/semver_converter.py" "0.24.1.6+1"
-python "packages/frameworks/workflow mgt/scripts/version/semver_converter.py" "0.2.1.18+1"
+python "packages/frameworks/workflow-mgt/scripts/version/semver_converter.py" "0.24.1.6+1"
+python "packages/frameworks/workflow-mgt/scripts/version/semver_converter.py" "0.2.1.18+1"
 
 # Verify tag placement
 git rev-parse v0.4.778+1^{commit}
@@ -89,8 +89,8 @@ git rev-parse v0.4.778+1^{commit}
 ## References
 
 - `semver-registry.yaml` — canonical SemVer mapping registry
-- `packages/frameworks/workflow mgt/scripts/version/semver_converter.py` — converter logic
-- `packages/frameworks/workflow mgt/scripts/version/create_rw_tags.py` — tag creation helper (should finalize)
+- `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py` — converter logic
+- `packages/frameworks/workflow-mgt/scripts/version/create_rw_tags.py` — tag creation helper (should finalize)
 - `README.md` — version badge line
 - Commit `2d8af696e` — Release v0.24.1.6+1 (first claimant of `0.4.778+1`)
 - Commit `d4e165248` — Release v0.2.1.18+1 (should have received `0.4.779+1`)

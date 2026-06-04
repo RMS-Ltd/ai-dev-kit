@@ -168,7 +168,7 @@ This feature is needed:
 - **FR-016:** Kanban Granularity & Discrete Task Docs (3-Tier Structure) (prerequisite)
 - **FR-017:** Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T (uses abstract space concept)
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Numbering Policy:** `packages/frameworks/numbering & versioning/versioning-policy.md`
+- **Numbering Policy:** `packages/frameworks/numbering-versioning/versioning-policy.md`
 
 ---
 
@@ -223,7 +223,7 @@ This feature is needed:
 - **FR-017:** Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T (uses abstract space)
 - **Kanban Governance Policy (Canonical):** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **Kanban Governance Policy (Dev-Kit):** `docs/project-management/rituals/policy/kanban-governance-policy.md`
-- **Versioning Policy (Framework):** `packages/frameworks/numbering & versioning/versioning-policy.md`
+- **Versioning Policy (Framework):** `packages/frameworks/numbering-versioning/versioning-policy.md`
 - **Versioning Policy (Dev-Kit):** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 
 ---

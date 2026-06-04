@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 This deliverable conforms to the **Gap Log and Risk Assessment Schema**:
 - **Spec:** [docs/architecture/standards-and-adrs/gap-log-schema.md](../../../../../architecture/standards-and-adrs/gap-log-schema.md)
-- **Validator:** `python packages/frameworks/workflow mgt/scripts/validation/validate_gap_log.py --path <path> --strict`
+- **Validator:** `python packages/frameworks/workflow-mgt/scripts/validation/validate_gap_log.py --path <path> --strict`
 
 ---
 

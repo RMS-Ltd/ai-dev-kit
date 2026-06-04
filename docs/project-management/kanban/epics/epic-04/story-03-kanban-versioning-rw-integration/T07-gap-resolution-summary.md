@@ -119,7 +119,7 @@ The gaps were systematically identified during **E04:S03:T04** validation (compl
 - Enhanced validation with consistency checks
 
 **Files Updated:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW Step 6)
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW Step 6)
 
 ---
 
@@ -144,7 +144,7 @@ The gaps were systematically identified during **E04:S03:T04** validation (compl
    - Added consistency checks
 
 **File Updated:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ---
 
@@ -193,7 +193,7 @@ The gaps were systematically identified during **E04:S03:T04** validation (compl
 ## References
 
 - **Validation Report:** `T04-rw-kanban-validation.md`
-- **RW Documentation:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Documentation:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Epic Document:** `docs/project-management/kanban/epics/epic-04/epic-04.md`
 - **Story Document:** `docs/project-management/kanban/story-03-kanban-versioning-rw-integration.md`
 

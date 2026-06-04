@@ -48,7 +48,7 @@ AI Dev Kit and ECC are **genuinely complementary**. Phase 0 found **no ADK skill
 
 ```bash
 git checkout dev
-python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 ```
 
 Expected: exit 0.
@@ -137,7 +137,7 @@ Full tables with evidence in [T04 task doc](../../project-management/kanban/epic
 
 1. Publish ADK workflow skills as `adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, etc.
 2. Define install strategy: ECC domain skills vs ADK skills coexistence under `.cursor/skills/`.
-3. Adopt [`ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template) in adopters.
+3. Adopt [`ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template) in adopters.
 
 ### Follow-on task
 

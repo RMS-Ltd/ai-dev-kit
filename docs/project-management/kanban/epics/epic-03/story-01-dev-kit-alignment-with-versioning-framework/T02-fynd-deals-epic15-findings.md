@@ -17,9 +17,9 @@ housekeeping_policy: keep
 
 ## Executive Summary
 
-This document captures reusable versioning patterns extracted from the fynd.deals Epic 15 work, as reflected in the `packages/frameworks/numbering & versioning/` framework package. The framework package already contains the refined versioning policies and strategies developed in fynd.deals Epic 15, Story 1.
+This document captures reusable versioning patterns extracted from the fynd.deals Epic 15 work, as reflected in the `packages/frameworks/numbering-versioning/` framework package. The framework package already contains the refined versioning policies and strategies developed in fynd.deals Epic 15, Story 1.
 
-**Key Finding:** The framework package (`packages/frameworks/numbering & versioning/`) **already contains** the fynd.deals Epic 15 findings, as documented in `PACKAGE_UPDATE_SUMMARY.md` which states: "Copied current `versioning-policy.md` from `docs/fynd_deals/_design/versioning/`".
+**Key Finding:** The framework package (`packages/frameworks/numbering-versioning/`) **already contains** the fynd.deals Epic 15 findings, as documented in `PACKAGE_UPDATE_SUMMARY.md` which states: "Copied current `versioning-policy.md` from `docs/fynd_deals/_design/versioning/`".
 
 ---
 
@@ -27,7 +27,7 @@ This document captures reusable versioning patterns extracted from the fynd.deal
 
 ### Pattern: `RC.EPIC.STORY.TASK+BUILD`
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-policy.md`
+**Source:** `packages/frameworks/numbering-versioning/versioning-policy.md`
 
 **Structure:**
 - **RC:** Release Candidate (0 = development, 1+ = release candidate)
@@ -57,7 +57,7 @@ This document captures reusable versioning patterns extracted from the fynd.deal
 
 ### Pattern: Legacy vs New Format Separation
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-policy.md` (lines 204-226)
+**Source:** `packages/frameworks/numbering-versioning/versioning-policy.md` (lines 204-226)
 
 **Strategy:**
 - **Epic 1-9:** Legacy format (`RC.EPIC.STORY.PATCH`) - Grandfathered, immutable
@@ -85,7 +85,7 @@ This document captures reusable versioning patterns extracted from the fynd.deal
 
 ### Pattern: Component-Based Version File
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-policy.md` (lines 117-135)
+**Source:** `packages/frameworks/numbering-versioning/versioning-policy.md` (lines 117-135)
 
 **Structure:**
 ```python
@@ -115,7 +115,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Two-Layer Changelog System
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-strategy.md` (lines 88-166)
+**Source:** `packages/frameworks/numbering-versioning/versioning-strategy.md` (lines 88-166)
 
 ### Layer 1: Main Summary Changelog (`CHANGELOG.md`)
 
@@ -145,7 +145,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Branch Context + Changelog Format Validation
 
-**Source:** `packages/frameworks/workflow mgt/scripts/validation/`
+**Source:** `packages/frameworks/workflow-mgt/scripts/validation/`
 
 **Components:**
 
@@ -176,7 +176,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Version Numbers Are Canonical (Not Timestamps)
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-strategy.md` (lines 28-61)
+**Source:** `packages/frameworks/numbering-versioning/versioning-strategy.md` (lines 28-61)
 
 **Fundamental Rule:**
 - Version numbers (`RC.EPIC.STORY.TASK+BUILD`) are the canonical ordering metric
@@ -200,7 +200,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Multi-Dimensional Traceability
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-strategy.md` (lines 169-290)
+**Source:** `packages/frameworks/numbering-versioning/versioning-strategy.md` (lines 169-290)
 
 **Dimensions:**
 1. **Version ↔ Epic/Story/Task** - Version number encodes work hierarchy
@@ -229,7 +229,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Historical Metadata Preservation
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-strategy.md` (lines 294-338)
+**Source:** `packages/frameworks/numbering-versioning/versioning-strategy.md` (lines 294-338)
 
 **Rules:**
 1. **Detailed Changelog Timestamps Are Immutable** - Never edit `**Release Date:**` in existing files
@@ -251,7 +251,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Two-Layer Date System
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-strategy.md` (lines 88-166)
+**Source:** `packages/frameworks/numbering-versioning/versioning-strategy.md` (lines 88-166)
 
 **Layer 1: Main Changelog**
 - Format: `DD-MM-YY` (e.g., `01-12-25`)
@@ -278,7 +278,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Legacy Format Preservation
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-strategy.md` (lines 341-393)
+**Source:** `packages/frameworks/numbering-versioning/versioning-strategy.md` (lines 341-393)
 
 **Approach:**
 - Old format (`RC.EPIC.STORY.PATCH`) automatically grandfathered
@@ -301,7 +301,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Automated Format Enforcement
 
-**Source:** `packages/frameworks/workflow mgt/scripts/validation/`
+**Source:** `packages/frameworks/workflow-mgt/scripts/validation/`
 
 **Scripts:**
 1. `validate_branch_context.py`
@@ -330,7 +330,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Pattern: Standardized Location
 
-**Source:** `packages/frameworks/numbering & versioning/versioning-policy.md` (line 119)
+**Source:** `packages/frameworks/numbering-versioning/versioning-policy.md` (line 119)
 
 **Standard Location:** `src/\{project\}/version.py`
 
@@ -379,8 +379,8 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 **Status:** ✅ Framework package already contains fynd.deals Epic 15 findings
 
 **Evidence:**
-- `packages/frameworks/numbering & versioning/versioning-policy.md` - Complete schema and Epic renumbering strategy
-- `packages/frameworks/numbering & versioning/versioning-strategy.md` - Complete forensic traceability system
+- `packages/frameworks/numbering-versioning/versioning-policy.md` - Complete schema and Epic renumbering strategy
+- `packages/frameworks/numbering-versioning/versioning-strategy.md` - Complete forensic traceability system
 - `PACKAGE_UPDATE_SUMMARY.md` documents that files were copied from fynd.deals
 
 ### 3. Dev-Kit Policy Alignment
@@ -393,7 +393,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 **Status:** ✅ Validators exist and are integrated into Release Workflow
 
-**Location:** `packages/frameworks/workflow mgt/scripts/validation/`
+**Location:** `packages/frameworks/workflow-mgt/scripts/validation/`
 
 ---
 
@@ -408,10 +408,10 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ## References
 
-- `packages/frameworks/numbering & versioning/versioning-policy.md`
-- `packages/frameworks/numbering & versioning/versioning-strategy.md`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+- `packages/frameworks/numbering-versioning/versioning-policy.md`
+- `packages/frameworks/numbering-versioning/versioning-strategy.md`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - `src/fynd_deals/version.py` (current dev-kit version file)
 

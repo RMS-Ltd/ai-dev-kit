@@ -66,8 +66,8 @@ Add Step 17: Housekeeping to the Release Workflow. This step runs at the end of 
 **Status:** ✅ COMPLETE (v0.2.12.1+0 – Step 17 added: workflow YAML, documentation, and cursor rules updated)
 
 **Deliverables:**
-- ✅ `packages/frameworks/workflow mgt/workflows/release-workflow.yaml` - Step 17 added
-- ✅ `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Step 17 documented
+- ✅ `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml` - Step 17 added
+- ✅ `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Step 17 documented
 - ✅ `.cursorrules` - Step 13: Housekeeping added
 
 ---
@@ -96,6 +96,6 @@ Add Step 17: Housekeeping to the Release Workflow. This step runs at the end of 
 ## References
 
 - **Related:** E02:S01:T08 - Add Step 9 - IDE problem checking to Release Workflow (similar pattern)
-- **Workflow:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
-- **Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Workflow:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
+- **Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 

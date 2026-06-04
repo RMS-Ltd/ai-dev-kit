@@ -53,7 +53,7 @@ This causes Step 1 hard-fail and aborts RW before execution can begin.
 2. Ensure `rw-config.yaml` sets `dev_branch_epic: 2`.
 3. Use a version anchored to a different epic (e.g. `0.6.7.110+1`).
 4. Run Step 1 validator in strict mode:
-   - `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict`
+   - `python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict`
 5. Observe failure on forced epic lock for `dev`.
 
 ---

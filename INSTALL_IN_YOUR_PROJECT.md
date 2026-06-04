@@ -71,14 +71,14 @@ ADK adoption does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT). 
 3. Copy the bridge template and validate:
 
    ```bash
-   cp "packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template" ecc-adk-bridge.yaml
-   python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py"
+   cp "packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template" ecc-adk-bridge.yaml
+   python "packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py"
    ```
 
 4. Optional install helper (defaults to **dry-run**; no network):
 
    ```bash
-   "packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
+   "packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
    ```
 
    Use `--execute` only after Phase 0 passes on your project.
@@ -96,7 +96,7 @@ Normative contract: [ECC ↔ ADK integration specification](docs/architecture/st
 - Access to AI Dev Kit framework sources (release asset, submodule, or equivalent bundle).
 - Python runtime available for installer scripts.
 - Installers in scope:
-  - `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
+  - `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
   - `packages/frameworks/kanban/scripts/install_kanban_framework.py`
 
 ### Installer venv dependencies (before Step 3 / RW install)
@@ -111,7 +111,7 @@ pip install 'pyyaml>=6.0'
 pip install -e ./vendor/ai-dev-kit   # adjust path to your submodule/checkout
 
 # Preflight (non-interactive):
-python3 "packages/frameworks/workflow mgt/scripts/install_release_workflow.py" --check-deps
+python3 "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" --check-deps
 ```
 
 The RW installer exits with the same guidance if PyYAML is missing (BR-082).
@@ -171,7 +171,7 @@ Mode C also **detects** `fr-br/` when present and refuses to persist zero-match 
 Use the thin orchestrator to apply the default path with an explicit checkpoint:
 
 ```bash
-python3 "packages/frameworks/workflow mgt/scripts/install_greenfield_path.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \
   --project-root "." \
   --order rw-first
 ```
@@ -218,14 +218,14 @@ python3 "packages/frameworks/workflow mgt/scripts/install_greenfield_path.py" \
 
 ### Wave 4 — Post-install validation (`F4`)
 
-Validators read paths from **`rw-config.yaml`** (especially `scripts_path`). Authoritative layout notes: [`rw-validators-consumer-layout.md`](packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md).
+Validators read paths from **`rw-config.yaml`** (especially `scripts_path`). Authoritative layout notes: [`rw-validators-consumer-layout.md`](packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
 
 From **your project root**, after installers have produced `rw-config.yaml` and copied scripts:
 
 ```bash
 # Resolve scripts_path from rw-config.yaml — examples only (yours may differ):
-WF_SCRIPTS='packages/frameworks/workflow mgt/scripts'   # submodule / monorepo-style layout
-# WF_SCRIPTS='scripts'                                   # typical after copying workflow mgt/* to project root
+WF_SCRIPTS='packages/frameworks/workflow-mgt/scripts'   # submodule / monorepo-style layout
+# WF_SCRIPTS='scripts'                                   # typical after copying workflow-mgt/* to project root
 
 python3 "${WF_SCRIPTS}/validation/validate_branch_context.py" --strict
 python3 "${WF_SCRIPTS}/validation/validate_changelog_format.py"
@@ -247,7 +247,7 @@ Illustrative output only — paths and task ids are placeholders; replace with y
 ```text
 $ export AI_DEV_KIT_INSTALL_LOG_PATH="$PWD/logs/greenfield-example.log"
 $ mkdir -p logs
-$ python3 "packages/frameworks/workflow mgt/scripts/install_greenfield_path.py" \
+$ python3 "packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \
     --project-root "." --non-interactive --order rw-first
 
 ▶ python3 .../install_release_workflow.py --mode c --project-root "."
@@ -258,7 +258,7 @@ $ python3 "packages/frameworks/workflow mgt/scripts/install_greenfield_path.py" 
 ... Kanban scaffold written under <KANBAN_ROOT>/ ...
 ✅ Kanban framework installer completed.
 
-$ python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+$ python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 ✅ Branch context validation passed!
 
 $ tail -n 3 "$AI_DEV_KIT_INSTALL_LOG_PATH"
@@ -318,14 +318,14 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 | **RW + Kanban** | **R** | **R** — host epics or **canonical templates** via `migration` / `canonical_adoption` | **Rec** | **O** | Above + `validate_rw_task_complete.py`, `validate_rw_task_intent.py` when releasing with task docs |
 | **Full stack** | **R** | **R** | **R** — adopt [dev-kit-versioning-policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) or mapped equivalent | **O** | Full RW Step 7 four-surface reconciliation when Kanban + FR/BR paths enabled |
 
-**Contract-first wiring:** All paths assume you map ADK contracts to **your** tree. See [RW validators and consumer layout](packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md).
+**Contract-first wiring:** All paths assume you map ADK contracts to **your** tree. See [RW validators and consumer layout](packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
 
 #### `rw-config.yaml` integration seams (brownfield)
 
 | Key | RW-only minimum | Notes |
 |-----|-----------------|-------|
 | `version_file` | **R** | Your module path (e.g. `src/myapp/version.py`) |
-| `scripts_path` | **R** | Folder containing `validation/` after vendoring workflow mgt |
+| `scripts_path` | **R** | Folder containing `validation/` after vendoring workflow-mgt |
 | `main_changelog`, `changelog_dir` | **R** for RW | Your changelog locations |
 | `use_kanban` | `false` for RW-only | `true` only when Kanban paths exist and are valid |
 | `kanban_root`, `*_doc_pattern` | **O** | Required when `use_kanban: true` |
@@ -336,7 +336,7 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 2. **Install RW** (do not skip the installer):
 
    ```bash
-   python3 "packages/frameworks/workflow mgt/scripts/install_release_workflow.py" \
+   python3 "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" \
      --mode a --project-root "."
    ```
 
@@ -376,7 +376,7 @@ Align `kanban_root` in `rw-config.yaml` with your actual path before RW Step 7.
 
 **Steps taken:**
 
-1. Added submodule `.ai-dev-kit` → copied `workflow mgt/` to `tools/workflow_mgt/`.
+1. Added submodule `.ai-dev-kit` → copied `workflow-mgt/` to `tools/workflow_mgt/`.
 2. Ran `install_release_workflow.py --mode a`; set `version_file: src/acme_api/version.py`, `scripts_path: tools/workflow_mgt/scripts`, `use_kanban: false`.
 3. Created minimal task doc only for release attribution (`E3:S02:T04`) under existing `docs/eng/tasks/`.
 4. Validators: branch + changelog only; skipped task-complete validators until Kanban Phase 2.
@@ -407,11 +407,11 @@ python3 install_package_from_release.py kanban 2.1.0 \
     --install-dir packages/frameworks
 
 # Or download manually
-# See: packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md
+# See: packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md
 ```
 
 **Documentation:**
-- [`PACKAGE_INSTALLATION_GUIDE.md`](packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) - Complete package installation guide
+- [`PACKAGE_INSTALLATION_GUIDE.md`](packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) - Complete package installation guide
 - [`install-receipt-reference.md`](docs/documentation/user-docs/install-receipt-reference.md) - JSON install receipt written under `logs/ai-dev-kit/install/` when your project has `.ai-dev-kit.yaml` (FR-062)
 
 ### Method 2: Git Submodule (Available Now)
@@ -429,24 +429,24 @@ cd ..
 
 # Step 2b (BR-087): If packages/frameworks still has spaces in directory names,
 # run once after copy/submodule sync (see BR-087):
-# python3 "packages/frameworks/workflow mgt/scripts/relocate_legacy_framework_dirs.py" \
+# python3 "packages/frameworks/workflow-mgt/scripts/relocate_legacy_framework_dirs.py" \
 #   --frameworks-root packages/frameworks
 
-# Step 3: Copy frameworks to your project
-cp -r .ai-dev-kit/packages/frameworks/workflow\ mgt/* ./
+# Step 3: Copy frameworks to your project (slug directory names on current main)
+cp -r .ai-dev-kit/packages/frameworks/workflow-mgt/* ./
 cp -r .ai-dev-kit/packages/frameworks/kanban/* ./
 
 # Step 3b: Installer venv dependencies (REQUIRED before RW install — BR-082)
 source .venv/bin/activate   # if you use a venv
 pip install 'pyyaml>=6.0'
-python3 "packages/frameworks/workflow mgt/scripts/install_release_workflow.py" --check-deps
+python3 "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" --check-deps
 
 # Step 4: Run framework installers (REQUIRED - don't skip!)
 # Preferred: orchestration wrapper (includes checkpoint + override support)
-python3 "packages/frameworks/workflow mgt/scripts/install_greenfield_path.py" --project-root "."
+python3 "packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" --project-root "."
 
 # Manual fallback:
-python "packages/frameworks/workflow mgt/scripts/install_release_workflow.py" --mode c --project-root "."
+python "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" --mode c --project-root "."
 python3 "packages/frameworks/kanban/scripts/install_kanban_framework.py" --mode fresh
 ```
 
@@ -479,9 +479,9 @@ ai-dev-kit install kanban@2.1.0
 
 | Framework | Version | Installation Guide |
 |-----------|---------|-------------------|
-| **Workflow Management** | 2.1.4 | [`workflow mgt/README.md`](packages/frameworks/workflow mgt/README.md) |
+| **Workflow Management** | 2.1.4 | [`workflow-mgt/README.md`](packages/frameworks/workflow-mgt/README.md) |
 | **Kanban** | 2.1.0 | [`kanban/README.md`](packages/frameworks/kanban/README.md) |
-| **Numbering & Versioning** | 2.0.0 | [`numbering & versioning/README.md`](packages/frameworks/numbering & versioning/README.md) |
+| **Numbering & Versioning** | 2.0.0 | [`numbering-versioning/README.md`](packages/frameworks/numbering-versioning/README.md) |
 | **Document Lifecycle** | 1.0.0 | [`doc-lifecycle/README.md`](packages/frameworks/doc-lifecycle/README.md) |
 | **Debug Path** | 1.0.0 | [`debug-path/README.md`](packages/frameworks/debug-path/README.md) |
 
@@ -519,7 +519,7 @@ When installing frameworks in a project, follow these steps:
 6. **Release Workflow (RW) and FR-060 (task token):**
    - In Cursor (or any assistant using your `.cursorrules` RW trigger), **do not** send `RW` alone. The same message must include a parseable **Epic/Story/Task** id (**FR-060**).
    - Examples: `RW E5S01T67`, `RW E5:S01:T67`; Kanban-init: `RW -k E5S01T01`; doc-only: `RW -d E5S01T02`.
-   - Without a task token, the agent must **RW ABORTED** before any version bump. See [Release Workflow (agent execution)](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5 task token, releasable task, intent guard).
+   - Without a task token, the agent must **RW ABORTED** before any version bump. See [Release Workflow (agent execution)](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5 task token, releasable task, intent guard).
    - If `rw-config.yaml` has **`use_kanban: true`**, validators expect a real Kanban task document that matches the id you pass (e.g. `validate_rw_task_complete.py`).
 
 7. **Reference Documentation:**
@@ -546,7 +546,7 @@ When installing frameworks in a project, follow these steps:
 ## 🔗 Quick Links
 
 - **Main Installation Guide:** [`docs/documentation/user-docs/framework-dependency-installation-guide.md`](docs/documentation/user-docs/framework-dependency-installation-guide.md)
-- **Package Installation:** [`packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`](packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md)
+- **Package Installation:** [`packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`](packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md)
 - **Use Cases:** [`docs/documentation/user-docs/framework-dependency-use-cases.md`](docs/documentation/user-docs/framework-dependency-use-cases.md)
 - **FAQ:** [`docs/documentation/user-docs/framework-dependency-faq.md`](docs/documentation/user-docs/framework-dependency-faq.md)
 - **Troubleshooting:** [`docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md`](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md)

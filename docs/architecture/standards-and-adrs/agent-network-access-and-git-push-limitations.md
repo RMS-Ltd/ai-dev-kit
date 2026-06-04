@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Author:** AI Assistant (Auto)  
 **Context:** Release Workflow (RW) Step 11 - Git Push Operations  
 **Status:** ✅ Resolved  
-**Related:** [Release Workflow Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) | [Workflow Hardening Guide](./workflow-hardening-guide.md)
+**Related:** [Release Workflow Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) | [Workflow Hardening Guide](./workflow-hardening-guide.md)
 
 ---
 
@@ -167,7 +167,7 @@ run_terminal_cmd(
 
 ### Step 1: Update Release Workflow Step 11
 
-**Location:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+**Location:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 **Action:** Updated Step 11 to use network permissions
 
@@ -435,10 +435,10 @@ When executing RW Step 11:
 
 ## Related Documentation
 
-- **Release Workflow Agent Execution:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- **Release Workflow Agent Execution:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 - **Workflow Hardening Guide:** [`workflow-hardening-guide.md`](./workflow-hardening-guide.md)
-- **Release Workflow Reference:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
-- **Cursor Rules RW Trigger:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)
+- **Release Workflow Reference:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
+- **Cursor Rules RW Trigger:** [source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md)
 
 ---
 

@@ -275,7 +275,7 @@ your-project/
    ```
 
 2. **Use Numbering & Versioning as Canonical:**
-   - Use `numbering & versioning/versioning-policy.md` as the authoritative versioning policy
+   - Use `numbering-versioning/versioning-policy.md` as the authoritative versioning policy
    - Remove or archive Workflow Management's included versioning policy
    - Update Workflow Management docs to reference Numbering & Versioning policy
 

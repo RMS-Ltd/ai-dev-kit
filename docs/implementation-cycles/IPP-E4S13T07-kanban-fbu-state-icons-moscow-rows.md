@@ -99,17 +99,17 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 
 ### 4.1 Files created
 
-- `packages/frameworks/workflow mgt/scripts/kanban/state_icons.py`
-- `packages/frameworks/workflow mgt/scripts/kanban/backfill_board_state_icons.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_state_icons.py`
-- `packages/frameworks/workflow mgt/scripts/test_state_icons.py`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md`
+- `packages/frameworks/workflow-mgt/scripts/kanban/state_icons.py`
+- `packages/frameworks/workflow-mgt/scripts/kanban/backfill_board_state_icons.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_state_icons.py`
+- `packages/frameworks/workflow-mgt/scripts/test_state_icons.py`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md`
 - `docs/changelog-and-release-notes/changelog-archive/four-surface-reports/uxr012-icon-backfill-applied.json`
 
 ### 4.2 Files updated
 
-- `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
-- `packages/frameworks/workflow mgt/scripts/validate_release_readiness.py`
+- `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
+- `packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py`
 - `docs/project-management/kanban/kboard.md`, `fbuboard.md`
 - Governance and workflow docs (see §5)
 
@@ -135,7 +135,7 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 | Artifact | Path | Publication |
 | -------- | ---- | ----------- |
 | IPP | `docs/implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md` | PUBLISHED |
-| Operator KB | `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md` | PUBLISHED |
+| Operator KB | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md` | PUBLISHED |
 
 ---
 
@@ -155,4 +155,4 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 - [UXR-012](../project-management/kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
 - [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- [board-stamp-authority.md](../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md)
+- [board-stamp-authority.md](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md)

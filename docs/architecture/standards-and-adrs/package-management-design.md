@@ -250,7 +250,7 @@ extracted/
 
 ### 4.2 Package Builder Script
 
-**Script Location:** `packages/frameworks/workflow mgt/scripts/package_builder.py`
+**Script Location:** `packages/frameworks/workflow-mgt/scripts/package_builder.py`
 
 **Function:**
 ```python
@@ -514,7 +514,7 @@ Action: Re-download package and hash file from trusted source.
 
 ### 8.1 Package Builder Implementation
 
-**Script:** `packages/frameworks/workflow mgt/scripts/package_builder.py`
+**Script:** `packages/frameworks/workflow-mgt/scripts/package_builder.py`
 
 **Dependencies:**
 - Python 3.11+

@@ -60,16 +60,16 @@ Forensic marker: RW `v0.6.7.110+1` — UKW fbuboard parity + drift/concurrency c
 ## Evidence
 
 - Implementation updates:
-  - `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
+  - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
   - `.cursor/skills/ukw-sync/SKILL.md`
-  - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+  - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
   - `.cursorrules`
-  - `packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py`
+  - `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py`
 - Regression output:
-  - `python3 "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py" --test-category 4`
+  - `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category 4`
   - Result: Tests 4.1, 4.2, 4.3 passed
 - Dry-run verification:
-  - `python3 "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --config rw-config.yaml --dry-run`
+  - `python3 "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --config rw-config.yaml --dry-run`
   - Result includes `fbuboard reconciliation: audited=68, removed=0, kept_exceptions=1, timestamps_normalized=68`
 - Pending:
   - None

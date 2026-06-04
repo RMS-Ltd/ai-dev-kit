@@ -64,6 +64,6 @@ RW Step 7 Kanban updates did not consistently enforce in-progress board hygiene 
 ## Related
 
 - `docs/project-management/kanban/kboard.md`
-- `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
-- `packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py`
+- `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
+- `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py`
 - `BR-060`

@@ -312,7 +312,7 @@ When promoting/demoting documents, agents **MUST**:
 ## 📚 Related Documents
 
 - **Specification:** [`doc-lifecycle-metadata-spec.md`](./doc-lifecycle-metadata-spec.md) – Metadata schema and field definitions
-- **Workflow:** `packages/frameworks/workflow mgt/workflows/doc-housekeeping-workflow.yaml` – Automated housekeeping workflow
+- **Workflow:** `packages/frameworks/workflow-mgt/workflows/doc-housekeeping-workflow.yaml` – Automated housekeeping workflow
 - **KB Structure:** [`kb-structure-overview.md`](./kb-structure-overview.md) – KB organization
 
 ---

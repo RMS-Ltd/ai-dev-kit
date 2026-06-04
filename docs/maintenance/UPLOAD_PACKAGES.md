@@ -40,7 +40,7 @@ cd /Users/rms/Documents/projects/ai-dev-kit
 export GITHUB_TOKEN=your_token_here
 
 # Upload all packages
-python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_all_packages.py" \
     --token $GITHUB_TOKEN \
     --repo RMS-Ltd/ai-dev-kit \
     --verbose
@@ -49,7 +49,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
 ### Dry Run (Test First)
 
 ```bash
-python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_all_packages.py" \
     --token $GITHUB_TOKEN \
     --dry-run
 ```
@@ -61,7 +61,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
 ```bash
 cd /Users/rms/Documents/projects/ai-dev-kit
 PACKAGES_DIR="packages/frameworks/dist/packages"
-UPLOAD_SCRIPT="packages/frameworks/workflow mgt/scripts/upload_to_github_release.py"
+UPLOAD_SCRIPT="packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py"
 REPO="RMS-Ltd/ai-dev-kit"
 
 # Upload kanban package
@@ -120,7 +120,7 @@ python3 "$UPLOAD_SCRIPT" \
 
 cd /Users/rms/Documents/projects/ai-dev-kit
 PACKAGES_DIR="packages/frameworks/dist/packages"
-UPLOAD_SCRIPT="packages/frameworks/workflow mgt/scripts/upload_to_github_release.py"
+UPLOAD_SCRIPT="packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py"
 REPO="RMS-Ltd/ai-dev-kit"
 
 # Check token
@@ -193,7 +193,7 @@ After uploading, verify packages are on GitHub Releases:
 
 3. **Test Installation:**
    ```bash
-   python3 "packages/frameworks/workflow mgt/scripts/install_package_from_release.py" \
+   python3 "packages/frameworks/workflow-mgt/scripts/install_package_from_release.py" \
        kanban 2.1.0 \
        --install-dir /tmp/test-install \
        --repo RMS-Ltd/ai-dev-kit \
@@ -219,7 +219,7 @@ After uploading, verify packages are on GitHub Releases:
 ### Error: Package not found
 - **Solution:** Build packages first:
   ```bash
-  python3 "packages/frameworks/workflow mgt/scripts/build_packages_direct.py"
+  python3 "packages/frameworks/workflow-mgt/scripts/build_packages_direct.py"
   ```
 
 ### Error: Hash file not found
@@ -249,5 +249,5 @@ After uploading, verify packages are on GitHub Releases:
 **Related:**
 - [BUILD_PACKAGES.md](BUILD_PACKAGES.md) – Build quick start
 - [Phase 3 package distribution plan](../analysis/phase3-package-distribution-plan.md)
-- Upload script: `packages/frameworks/workflow mgt/scripts/upload_to_github_release.py`
-- Installation guide: `packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
+- Upload script: `packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py`
+- Installation guide: `packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`

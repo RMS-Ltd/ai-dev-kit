@@ -15,7 +15,7 @@ Validate canonical-board defaults, legacy compatibility behavior, and documentat
 ## Test Matrix
 
 1. **Workflow edge regression**
-   - Command: `python3 "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py" --test-category 4`
+   - Command: `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category 4`
    - Expected: all category-4 tests pass.
 
 2. **Alias compatibility**

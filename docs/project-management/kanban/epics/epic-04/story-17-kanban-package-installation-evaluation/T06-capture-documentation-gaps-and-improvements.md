@@ -112,7 +112,7 @@ Capture and consolidate all documentation gaps and improvements identified durin
 - **Files to Update:**
   - `INSTALL_IN_YOUR_PROJECT.md`
   - `packages/frameworks/kanban/README.md`
-  - `packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
+  - `packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
 
 
 ---

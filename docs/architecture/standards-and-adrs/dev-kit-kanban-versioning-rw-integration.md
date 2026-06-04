@@ -31,8 +31,8 @@ This guide documents how the three core frameworks—**Kanban**, **Versioning**,
 ```yaml
 required:
   - Kanban System package installed (`packages/frameworks/kanban/`)
-  - Numbering & Versioning package installed (`packages/frameworks/numbering & versioning/`)
-  - Workflow Management package installed (`packages/frameworks/workflow mgt/`)
+  - Numbering & Versioning package installed (`packages/frameworks/numbering-versioning/`)
+  - Workflow Management package installed (`packages/frameworks/workflow-mgt/`)
   - .cursorrules configured with RW trigger
   - Epic and Story documents following templates
   - Version file: `src/fynd_deals/version.py`
@@ -59,7 +59,7 @@ versioning:
 release_workflow:
   automates: "Version bumping and Kanban documentation updates"
   provides: "Intelligent agent-driven workflow execution"
-  location: "packages/frameworks/workflow mgt/"
+  location: "packages/frameworks/workflow-mgt/"
 ```
 
 ### Integration Flow
@@ -182,7 +182,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 **What it is not:** **`RW -k` does not mean “no commit”** — you still run the release workflow (version bump, changelog, staging, validators, commit, tags) per project rules; **`-k` relaxes the task/intent gates**, not Git hygiene.
 
-**Canonical procedure:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Steps **1.4** and **1.5**); portable trigger text: `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`.
+**Canonical procedure:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Steps **1.4** and **1.5**); portable trigger text: `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`.
 
 ---
 
@@ -282,7 +282,7 @@ changelog:
   archive: "docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md"
 
 release_workflow:
-  docs: "packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md"
+  docs: "packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md"
   trigger: ".cursorrules RW trigger section"
 ```
 
@@ -514,8 +514,8 @@ All three integration points have been validated in dev-kit:
 
 ### Release Workflow Documentation
 
-- **RW Agent Execution:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **RW Trigger Section:** `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- **RW Agent Execution:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Trigger Section:** `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 
 ### Validation Reports
 

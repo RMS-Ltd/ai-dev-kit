@@ -29,7 +29,7 @@ Publication N/A Reason: Tooling/config/doc task — no specification/test-design
 - [IPP — E02:S16:T09 implementation plan](../../../../../../docs/implementation-cycles/IPP-E02S16T09-ipw-slash-command-and-ipp-state-transition.md)
 - [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) requirements.
 - Existing `/rw` command at `.claude/commands/rw.md` and `/ukw` at `.claude/commands/ukw.md` as pattern references.
-- IPW canonical step guide: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`.
+- IPW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`.
 - IPW trigger spec: `.cursorrules` → IPW trigger section.
 - Plan doc template: `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`.
 - [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) — ownership contract that FR-094 embeds in the IPP artefact.
@@ -88,5 +88,5 @@ See [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-m
 - `.claude/commands/ukw.md`
 - `CLAUDE.md`
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - [IPP artifact](../../../../../../docs/implementation-cycles/IPP-E02S16T09-ipw-slash-command-and-ipp-state-transition.md)

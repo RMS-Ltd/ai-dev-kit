@@ -96,7 +96,7 @@ For each task document: read current status, check recent commits and FR/BR/UXR 
 **🧠 Intelligence required.** For each story document: synthesize task completion data into a coherent tactical overview narrative (not a task list). Infer story status from task completion AND story goal attainment. Update task checklist and sort it numerically:
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "{story_path}"
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "{story_path}"
 ```
 
 ### Step 5 — Update Epic Documents
@@ -104,7 +104,7 @@ python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_che
 **🧠 Intelligence required.** For each epic document: synthesize story-level data into a coherent strategic overview narrative. Infer epic status from story completion AND epic goal attainment. Update story checklist and sort it numerically:
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "{epic_path}"
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "{epic_path}"
 ```
 
 ### Step 6 — Update Kanban Board
@@ -118,14 +118,14 @@ python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_che
 Sort epics, stories, and tasks numerically before writing:
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_board.py"
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_board.py"
 ```
 
 MoSCOW list is always updated **last** within this step.
 
 ### Step 6.5 — fbuboard Reconciliation and Drift Guard
 
-At UKW start, snapshot boards: `python "packages/frameworks/workflow mgt/scripts/kanban/snapshot_kanban_boards.py"`. Read active MoSCOW sections in `fbuboard.md`. For each row, resolve its linked FR/BR/UXR source document. Prune rows whose linked source status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`) — unless the row explicitly indicates unresolved verification context (`IN PROGRESS`, `UNVERIFIED`, `PENDING VERIFICATION`). **FR-097:** Do **not** unify or rewrite row `Last modified` on hygiene; only update board `Last Updated` metadata. **UXR-012:** Do not change MoSCOW **state icons** on hygiene-only passes; icons follow `state_icons.py` when status text changes. Perform pre-write concurrency revalidation (re-read if file changed mid-run). Before Step 8 stage, run `validate_board_stamp_diff.py` (`--before` snapshot dir, `--after` live board) — **abort UKW** on failure. Optionally run `validate_kanban_state_icons.py --strict` when MoSCOW rows were edited. Report: audited rows, rows removed, exceptions kept, stamp-diff pass/fail, revalidation triggered.
+At UKW start, snapshot boards: `python "packages/frameworks/workflow-mgt/scripts/kanban/snapshot_kanban_boards.py"`. Read active MoSCOW sections in `fbuboard.md`. For each row, resolve its linked FR/BR/UXR source document. Prune rows whose linked source status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`) — unless the row explicitly indicates unresolved verification context (`IN PROGRESS`, `UNVERIFIED`, `PENDING VERIFICATION`). **FR-097:** Do **not** unify or rewrite row `Last modified` on hygiene; only update board `Last Updated` metadata. **UXR-012:** Do not change MoSCOW **state icons** on hygiene-only passes; icons follow `state_icons.py` when status text changes. Perform pre-write concurrency revalidation (re-read if file changed mid-run). Before Step 8 stage, run `validate_board_stamp_diff.py` (`--before` snapshot dir, `--after` live board) — **abort UKW** on failure. Optionally run `validate_kanban_state_icons.py --strict` when MoSCOW rows were edited. Report: audited rows, rows removed, exceptions kept, stamp-diff pass/fail, revalidation triggered.
 
 ### Step 7 — Validate Consistency
 
@@ -179,7 +179,7 @@ Use `rw-config.yaml` values when present. Fallbacks:
 
 ## Reference Documentation
 
-- Canonical step guide: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- Canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - UKW trigger section: `.cursorrules` → `### 🔄 UPDATE KANBAN WORKFLOW (UKW) TRIGGER`
 - Kanban governance policy: `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - RW integration: `.claude/commands/rw.md` → Step 2 UKW context detection

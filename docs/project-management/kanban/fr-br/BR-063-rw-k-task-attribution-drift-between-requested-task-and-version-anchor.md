@@ -79,5 +79,5 @@ If requested task and computed version task differ, RW must hard-fail unless an 
 ## Related
 
 - [BR-061](BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`

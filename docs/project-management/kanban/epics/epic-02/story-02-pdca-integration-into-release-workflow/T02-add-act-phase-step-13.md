@@ -44,7 +44,7 @@ Add Step 13 (Act on Verification Results) to the Release Workflow to implement t
 ## Approach
 
 1. **Update Workflow YAML:**
-   - Add Step 13 to `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+   - Add Step 13 to `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
    - Configure dependencies (depends on Step 12)
    - Set as optional but enabled by default
 
@@ -101,6 +101,6 @@ Add Step 13 (Act on Verification Results) to the Release Workflow to implement t
 ## References
 
 - **PDCA Integration Plan:** `docs/architecture/standards-and-adrs/rw-pdca-integration-plan.md`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **RW Workflow YAML:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 

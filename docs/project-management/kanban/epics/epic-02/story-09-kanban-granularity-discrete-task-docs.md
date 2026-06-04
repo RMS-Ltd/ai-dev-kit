@@ -132,8 +132,8 @@ Sequencing is clear: Kanban work (E4:S11) → RW integration (E2:S09).
 
 **Approach:**
 1. Review current RW Step 1 documentation:
-   - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-   - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+   - `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+   - `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 2. Update "B. IDENTIFY COMPLETED TASK" section:
    - Require Task doc presence (separate file OR clearly delimited section)
    - Fail if Task doc not found
@@ -177,8 +177,8 @@ Updated RW Step 1 (B. IDENTIFY COMPLETED TASK) to require Task document presence
 
 **Approach:**
 1. Review current validation scripts:
-   - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
-   - `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
+   - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
+   - `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 2. Enhance `validate_version_bump.py`:
    - Add function to locate Task doc (separate file OR section)
    - Add function to validate Task doc presence
@@ -223,7 +223,7 @@ Enhanced validators to check Task document presence and alignment:
 
 **Approach:**
 1. Review current RW agent execution guide:
-   - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+   - `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 2. Update "B. IDENTIFY COMPLETED TASK" section:
    - Document Task doc location logic
    - Document Task doc validation requirements
@@ -399,8 +399,8 @@ All tasks complete:
 - **E4:S11:** `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md` (Kanban-specific work)
 - **FR-016:** `docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md`
 - **FR-017:** `docs/project-management/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md`
-- **RW Agent Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **Validation Scripts:** `packages/frameworks/workflow mgt/scripts/validation/`
+- **RW Agent Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Validation Scripts:** `packages/frameworks/workflow-mgt/scripts/validation/`
 
 ---
 

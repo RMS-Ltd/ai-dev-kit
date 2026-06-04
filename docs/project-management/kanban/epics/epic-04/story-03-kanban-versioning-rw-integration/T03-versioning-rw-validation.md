@@ -376,9 +376,9 @@ The Versioning → RW integration is **well-implemented** with **strong integrat
 
 ## References
 
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW guide)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py` (validation script)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py` (validation script)
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW guide)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py` (validation script)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py` (validation script)
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (versioning policy)
 - `src/fynd_deals/version.py` (version file)
 

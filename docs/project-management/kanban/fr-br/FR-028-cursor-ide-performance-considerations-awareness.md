@@ -140,7 +140,7 @@ Link to Confidentia project investigation (Epic 20, Story 5, Task 16) as source 
 ## References
 
 - **External Investigation:** Confidentia project (Epic 20, Story 5, Task 16)
-- **Framework Documentation:** `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md`
+- **Framework Documentation:** `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md`
 - **Current File Counts:** ai-dev-kit statistics (1,021 markdown files, 266 changelog archive files, 181 Kanban files)
 
 ---

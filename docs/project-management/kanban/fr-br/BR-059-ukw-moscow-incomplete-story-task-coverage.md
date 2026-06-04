@@ -87,8 +87,8 @@ A **comprehensive UKW** run promoted **E05:S09:T01** to the MoSCOW **Should** se
 
 ### Shipped fix (E02:S16:T13, v0.2.16.13+1)
 
-- **UKW Step 6 Part B.1** in `.cursorrules`, [cursorrules-ukw-trigger-section.md](../../../packages/frameworks/workflow%20mgt/cursorrules-ukw-trigger-section.md), [update-kanban-workflow-agent-execution.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [ukw/AGENTS.md](../../../packages/frameworks/workflow%20mgt/agents/ukw/AGENTS.md).
-- Advisory [`validate_story_moscow_coverage.py`](../../../packages/frameworks/workflow%20mgt/scripts/kanban/validate_story_moscow_coverage.py) (`--story`, `--scan-all`).
+- **UKW Step 6 Part B.1** in `.cursorrules`, [cursorrules-ukw-trigger-section.md](../../../packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md), [update-kanban-workflow-agent-execution.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [ukw/AGENTS.md](../../../packages/frameworks/workflow-mgt/agents/ukw/AGENTS.md).
+- Advisory [`validate_story_moscow_coverage.py`](../../../packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py) (`--story`, `--scan-all`).
 - **IPP:** [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md).
 
 ### Remediation evidence

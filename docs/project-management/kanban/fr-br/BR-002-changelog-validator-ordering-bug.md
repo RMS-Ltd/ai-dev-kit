@@ -250,7 +250,7 @@ Bug report and task structure established. Ready for implementation work.
 
 ## References
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 - [Keep a Changelog](https://keepachangelog.com/) - Industry standard changelog format
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` - Dev-kit canonical ordering policy
 - `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples.md` - Related changelog ordering work (Task 6)

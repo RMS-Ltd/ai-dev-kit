@@ -144,11 +144,11 @@ The `detect_first_time_est_doc` function in `validate_version_bump.py` had flawe
      - If task doc exists AND code changes present → BUILD=1 (not 0)
    
    - **Files Updated:**
-     - ✅ `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+     - ✅ `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
        - Function: `detect_first_time_est_doc` (lines 548-702)
        - Fixed logic: Added task document existence check before determining doc-init
        - Fix prevents BUILD=0 when task doc exists but wasn't created in this commit
-     - ✅ `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+     - ✅ `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
        - Updated doc-init detection logic documentation (A.1 section)
        - Added Example 4: Normal Build (Story + Task Docs Created Together - Bug Fix)
        - Documented the fix and new use case scenario
@@ -314,8 +314,8 @@ The `detect_first_time_est_doc` function in `validate_version_bump.py` had flawe
 ## References
 
 - `docs/architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md` - RW structure
-- `packages/frameworks/workflow mgt/scripts/` - RW scripts
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` - RW validator (bug location)
-- `packages/frameworks/workflow mgt/scripts/validation/` - Validator scripts
+- `packages/frameworks/workflow-mgt/scripts/` - RW scripts
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py` - RW validator (bug location)
+- `packages/frameworks/workflow-mgt/scripts/validation/` - Validator scripts
 - `packages/frameworks/kanban/scripts/` - Installer scripts
 - `docs/project-management/kanban/kboard.md` - Enhanced board structure (T01 deliverable)

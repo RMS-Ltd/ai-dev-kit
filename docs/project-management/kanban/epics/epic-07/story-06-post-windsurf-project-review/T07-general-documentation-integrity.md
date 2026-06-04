@@ -56,7 +56,7 @@ Verified from repo root (paths exist):
 | `INSTALL_IN_YOUR_PROJECT.md` | OK |
 | `docs/documentation/ai-dev-kit-vision-and-purpose.md` | OK |
 | `docs/architecture` | OK (directory) |
-| `packages/frameworks/workflow mgt/docs` | OK (directory) |
+| `packages/frameworks/workflow-mgt/docs` | OK (directory) |
 | `docs/maintenance/README.md` | OK |
 | `docs/documentation` | OK (directory) |
 

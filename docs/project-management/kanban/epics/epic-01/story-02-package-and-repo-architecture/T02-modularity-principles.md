@@ -198,7 +198,7 @@ A package is considered "modular" if it:
 ## Optional Integration
 
 This feature integrates with the **Numbering & Versioning** package
-(see `../numbering & versioning/README.md`).
+(see `../numbering-versioning/README.md`).
 
 If you're not using the Numbering & Versioning package, you can:
 - Use your own versioning policy
@@ -242,7 +242,7 @@ If you're not using the Numbering & Versioning package, you can:
 **Standalone:** ✅ Yes — this package can be used on its own
 
 **Soft / optional companions:**
-- `packages/frameworks/numbering & versioning/` — provides a portable policy set for the version schema that this package uses
+- `packages/frameworks/numbering-versioning/` — provides a portable policy set for the version schema that this package uses
 
 If you prefer a different versioning strategy, you can:
 - Keep this package and swap in your own versioning policy docs, or

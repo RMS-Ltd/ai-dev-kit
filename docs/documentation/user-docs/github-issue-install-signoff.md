@@ -10,7 +10,7 @@ Prevents **orphaned** `ai-dev-kit` GitHub Issues that wait for adopter install v
 
 ## How it works
 
-1. **Contract** — `packages/frameworks/workflow mgt/config/github-issue-install-signoff-contract.yaml` lists each trackable issue and **when_all** checks (rw-config keys, validators, padding scan, etc.).
+1. **Contract** — `packages/frameworks/workflow-mgt/config/github-issue-install-signoff-contract.yaml` lists each trackable issue and **when_all** checks (rw-config keys, validators, padding scan, etc.).
 2. **After install** — `install_kanban_framework.py` and `install_release_workflow.py` run `install_github_issue_signoff.py` (report only by default).
 3. **Close (optional)** — Pass `--close-github-issues` when `gh` is authenticated to comment and close **ready** issues on `RMS-Ltd/ai-dev-kit`.
 

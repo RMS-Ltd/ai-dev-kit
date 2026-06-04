@@ -69,12 +69,12 @@ icw_handler.py --task T47 initialize
 ### 📋 Files Modified
 
 #### **Primary Implementation**
-- `packages/frameworks/workflow mgt/scripts/icw/icw_handler.py` - Core functionality
-- `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-config.yaml` - Configuration
+- `packages/frameworks/workflow-mgt/scripts/icw/icw_handler.py` - Core functionality
+- `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-config.yaml` - Configuration
 
 #### **Testing and Validation**
-- `packages/frameworks/workflow mgt/scripts/icw/test_icw_new.py` - Comprehensive test suite
-- `packages/frameworks/workflow mgt/scripts/icw/validate_task_identifier.py` - Simple validation
+- `packages/frameworks/workflow-mgt/scripts/icw/test_icw_new.py` - Comprehensive test suite
+- `packages/frameworks/workflow-mgt/scripts/icw/validate_task_identifier.py` - Simple validation
 
 ### 🚀 Next Steps
 
@@ -147,7 +147,7 @@ This task:
 
 - **FR Repo Story:** [`story-01-fr-repo.md`](../story-01-fr-repo.md)
 - **FR-048:** [`docs/project-management/kanban/fr-br/FR-048-icw-task-identifier-argument.md`](../../../fr-br/FR-048-icw-task-identifier-argument.md)
-- **ICW Handler:** `packages/frameworks/workflow mgt/scripts/icw/icw_handler.py`
-- **ICW Configuration:** `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/`
+- **ICW Handler:** `packages/frameworks/workflow-mgt/scripts/icw/icw_handler.py`
+- **ICW Configuration:** `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/`
 
 ---

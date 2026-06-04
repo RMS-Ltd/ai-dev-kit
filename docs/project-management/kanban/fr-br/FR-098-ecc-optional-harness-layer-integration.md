@@ -187,7 +187,7 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 
 - [Integration specification](../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) — normative contract + MIT attribution
 - [Phase 0 evaluation](../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) — matrix, procedure, **GO** for Phase 1
-- [Bridge template](../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
+- [Bridge template](../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
 - [IPP-E06S09T04](../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md)
 - Phase 1 **COMPLETE:** [E06:S09:T05](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E06S09T05](../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
 - Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)

@@ -93,7 +93,7 @@ Optimize IDE command whitelist to reduce approval friction by implementing patte
 - **Python Validation Scripts**:
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_*.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_*.py"
 ```
 
 - **Git Operations**:
@@ -174,7 +174,7 @@ read_file, edit, multi_edit, list_dir, find_by_name
 
 - [IPP-E06S07T107](../../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
 - [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
-- [validate_whitelist_patterns.py](../../../../../packages/frameworks/workflow%20mgt/scripts/validation/validate_whitelist_patterns.py)
+- [validate_whitelist_patterns.py](../../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py)
 - [ide-whitelist-guide.md](../../../../developer-tools/ide-whitelist-guide.md) · [ide-whitelist-uat-log.md](../../../../developer-tools/ide-whitelist-uat-log.md)
 - [BR-039 — Cascade whitelist (vendor; out of scope for T107 closure)](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 - [E06:S06:T57 — BR-039 repo track](../epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)

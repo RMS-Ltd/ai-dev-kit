@@ -35,7 +35,7 @@ The repository contains three main framework packages under `packages/frameworks
 ```
 packages/frameworks/
 ├── workflow mgt/          # Workflow Management Framework (v2.0.0)
-├── numbering & versioning/ # Numbering & Versioning Framework (v2.0.0)
+├── numbering-versioning/ # Numbering & Versioning Framework (v2.0.0)
 └── kanban/                # Kanban Framework (v1.0.0)
 ```
 
@@ -54,7 +54,7 @@ packages/frameworks/
   - `README.md` (package documentation)
 
 
-#### Numbering & Versioning (`numbering & versioning/`)
+#### Numbering & Versioning (`numbering-versioning/`)
 - **Purpose:** Semantic versioning and numbering strategies
 - **Key Files:**
   - `versioning-policy.md` (RC.EPIC.STORY.TASK+BUILD schema)
@@ -87,9 +87,9 @@ packages/frameworks/
 #### Workflow Management → Numbering & Versioning
 - **Type:** Soft/Optional
 - **Nature:** Workflow Management includes its own versioning policy documents, but recommends using Numbering & Versioning package for consistency
-- **Documentation:** Explicitly stated in `workflow mgt/README.md`:
+- **Documentation:** Explicitly stated in `workflow-mgt/README.md`:
   > **Soft / optional companions:**
-  > - `packages/frameworks/numbering & versioning/` — provides a portable policy set for the version schema that this package uses
+  > - `packages/frameworks/numbering-versioning/` — provides a portable policy set for the version schema that this package uses
 
 
 #### Kanban → Numbering & Versioning
@@ -159,8 +159,8 @@ packages/frameworks/
 #### Duplicate Versioning Policy Documents
 - **Issue:** Both Workflow Management and Numbering & Versioning include versioning policy documents
 - **Location:**
-  - `workflow mgt/docs/architecture/standards-and-adrs/versioning-policy.md`
-  - `numbering & versioning/versioning-policy.md`
+  - `workflow-mgt/docs/architecture/standards-and-adrs/versioning-policy.md`
+  - `numbering-versioning/versioning-policy.md`
 
 - **Impact:** Potential confusion about which is authoritative
 - **Recommendation:** Document which package's versioning policy should be used when using both packages together
@@ -349,7 +349,7 @@ workflow mgt/
 
 ### Numbering & Versioning Package
 ```
-numbering & versioning/
+numbering-versioning/
 ├── versioning-policy.md
 ├── versioning-strategy.md
 ├── IMPLEMENTATION_GUIDE.md

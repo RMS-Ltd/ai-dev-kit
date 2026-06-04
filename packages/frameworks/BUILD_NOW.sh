@@ -6,7 +6,7 @@ set -e  # Exit on error
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/../../" && pwd)"
-BUILD_SCRIPT="$SCRIPT_DIR/workflow mgt/scripts/build_package.py"
+BUILD_SCRIPT="$SCRIPT_DIR/workflow-mgt/scripts/build_package.py"
 OUTPUT_DIR="$SCRIPT_DIR/dist/packages"
 
 cd "$PROJECT_ROOT"

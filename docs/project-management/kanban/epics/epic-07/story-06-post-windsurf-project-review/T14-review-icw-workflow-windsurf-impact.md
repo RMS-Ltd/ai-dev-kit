@@ -32,7 +32,7 @@ Review Implementation Cycle Workflow (ICW) for Windsurf impact, .windsurf skill 
 
 - .cursorrules ICW section
 - .windsurf/skills/ (if any ICW-specific)
-- packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/
+- packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/
 
 ## Deliverable
 

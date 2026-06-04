@@ -74,7 +74,7 @@
       "intent": "framework-code",
       "keywords": ["package", "validator", "script", "pytest", "framework", "workflow mgt"],
       "loadFirst": [
-        "packages/frameworks/workflow mgt/README.md"
+        "packages/frameworks/workflow-mgt/README.md"
       ],
       "relatedTrack": "frameworks"
     },
@@ -115,7 +115,7 @@
     {
       "id": "frameworks",
       "label": "Packaged frameworks and validators",
-      "entryPath": "packages/frameworks/workflow mgt/README.md"
+      "entryPath": "packages/frameworks/workflow-mgt/README.md"
     },
     {
       "id": "planning",

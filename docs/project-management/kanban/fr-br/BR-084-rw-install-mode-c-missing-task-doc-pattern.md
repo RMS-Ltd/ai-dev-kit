@@ -52,7 +52,7 @@ Missing: `task_doc_pattern`, `fr_br_root`.
 
 ## Root causes (code)
 
-**File:** `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
 
 1. **`collect_config_interactive` (mode C)** — defaults/suggestions omit `epics/Epic-{epic}/Epic-{epic}.md`.
 2. **`prompt_pattern_with_validation`** — user can answer **y** to “Use this pattern anyway?” with 0 matches; invalid pattern is **persisted**.

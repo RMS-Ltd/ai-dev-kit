@@ -71,4 +71,4 @@ Implementation planning often produces structured specs in **editor-local** fold
 ## References
 
 - Policy: [`specification-and-planning-artifacts-policy.md`](../../../architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md)
-- ICW config: `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
+- ICW config: `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`

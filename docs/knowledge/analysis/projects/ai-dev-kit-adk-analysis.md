@@ -263,7 +263,7 @@ docs/
 
 ### 3.1 Structure Overview
 
-- **Workflow Files:** 7 YAML workflow files in `packages/frameworks/workflow mgt/workflows/`
+- **Workflow Files:** 7 YAML workflow files in `packages/frameworks/workflow-mgt/workflows/`
 - **Workflow Types:** Release, Intake, Testing, Migration, Refactor, Package Version, PIR
 - **RW Configuration:** Example config exists (`rw-config-ai-dev-kit.yaml`) but not in project root
 - **RW Execution:** No `.cursorrules` file, RW executed manually/by convention
@@ -283,7 +283,7 @@ docs/
 
 **Workflow File Structure:** ✅ **MATCHES**
 - Format: `\{name\}-workflow.yaml` ✅
-- Location: `packages/frameworks/workflow mgt/workflows/` ✅
+- Location: `packages/frameworks/workflow-mgt/workflows/` ✅
 - YAML structure: Proper structure with steps ✅
 
 **Release Workflow:** ⚠️ **PARTIAL MATCH**
@@ -295,7 +295,7 @@ docs/
 
 **Configuration:** ❌ **MISSING**
 - **Expected:** `rw-config.yaml` in project root
-- **Actual:** Only example config exists (`packages/frameworks/workflow mgt/config/examples/rw-config-ai-dev-kit.yaml`)
+- **Actual:** Only example config exists (`packages/frameworks/workflow-mgt/config/examples/rw-config-ai-dev-kit.yaml`)
 - **Impact:** RW cannot use config-driven approach
 - **Recommendation:** Create `rw-config.yaml` in project root
 
@@ -410,7 +410,7 @@ docs/
 ✅ **What Works Well:**
 
 1. **RW Trigger Template Exists**
-   - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` provides template
+   - `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` provides template
    - Comprehensive 12-step RW trigger documented
    - Good reference for client projects
 
@@ -504,7 +504,7 @@ docs/
 - **Framework Packages:** 4 frameworks in `packages/frameworks/`
   - `kanban/` - Kanban Framework ✅
   - `workflow mgt/` - Workflow Management Framework ✅
-  - `numbering & versioning/` - Versioning Framework ✅
+  - `numbering-versioning/` - Versioning Framework ✅
   - `doc-lifecycle/` - Document Lifecycle Framework ✅
   - `debug-path/` - Debug Path Framework ✅
 
@@ -521,7 +521,7 @@ packages/frameworks/
 │   ├── scripts/           # Workflow scripts ✅
 │   ├── config/            # Config examples ✅
 │   └── README.md          # Framework documentation ✅
-├── numbering & versioning/
+├── numbering-versioning/
 │   ├── versioning-policy.md ✅
 │   └── README.md          # Framework documentation ✅
 ├── doc-lifecycle/

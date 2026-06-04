@@ -26,7 +26,7 @@ housekeeping_policy: keep
 ## Input
 
 - [T01 review report H1](T01-workflow-machinery-code-review-report.md) — no CI pytest gate for workflow script corpus.
-- Existing [`run_isolated_pytest.sh`](../../../../../../packages/frameworks/workflow%20mgt/scripts/validation/run_isolated_pytest.sh) (single-file runner).
+- Existing [`run_isolated_pytest.sh`](../../../../../../packages/frameworks/workflow-mgt/scripts/validation/run_isolated_pytest.sh) (single-file runner).
 
 ---
 
@@ -40,7 +40,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Add a **blocking CI gate** that runs the isolated workflow-script pytest suite on changes under `packages/frameworks/workflow mgt/`. Implements remediation **H1** from [T01](T01-comprehensive-workflow-machinery-code-review.md).
+Add a **blocking CI gate** that runs the isolated workflow-script pytest suite on changes under `packages/frameworks/workflow-mgt/`. Implements remediation **H1** from [T01](T01-comprehensive-workflow-machinery-code-review.md).
 
 **In scope:**
 
@@ -59,7 +59,7 @@ Add a **blocking CI gate** that runs the isolated workflow-script pytest suite o
 
 - [x] **AC1:** `.github/workflows/workflow-scripts-pytest.yml` runs on PR/push for workflow mgt path changes.
 - [x] **AC2:** CI runner executes isolated pytest (`PYTEST_DISABLE_PLUGIN_AUTOLOAD=1`, `validation/pytest.ini`) over `validation/` + curated co-located modules; exits 0 locally and in CI.
-- [x] **AC3:** Entrypoint documented in `packages/frameworks/workflow mgt/scripts/validation/README.md`.
+- [x] **AC3:** Entrypoint documented in `packages/frameworks/workflow-mgt/scripts/validation/README.md`.
 - [x] **AC4:** Task doc + Story checklist + `kboard.md` row wired; **RW** attributing **v0.7.7.2+1**.
 
 ---
@@ -68,4 +68,4 @@ Add a **blocking CI gate** that runs the isolated workflow-script pytest suite o
 
 - [T01 workflow machinery code review report](T01-workflow-machinery-code-review-report.md)
 - [E08:S03:T04 — BR-058 CI test workflow](../../epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) (broader scope)
-- [`run_isolated_pytest.sh`](../../../../../../packages/frameworks/workflow%20mgt/scripts/validation/run_isolated_pytest.sh)
+- [`run_isolated_pytest.sh`](../../../../../../packages/frameworks/workflow-mgt/scripts/validation/run_isolated_pytest.sh)

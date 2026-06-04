@@ -87,7 +87,7 @@ When the user types "RW" or "Release Workflow", execute the following 12-step Re
 
 🚨 **CRITICAL:** This step is MANDATORY and BLOCKING. The workflow MUST abort if this validation fails.
 
-Execute: `python packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py --strict`
+Execute: `python packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py --strict`
 
 **Validation:**
 - Current branch matches expected epic number
@@ -153,8 +153,8 @@ Stage all modified files:
 ### Step 9: Run Validators
 
 Execute validators:
-1. `python packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py --strict`
-2. `python packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+1. `python packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py --strict`
+2. `python packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 **Failure Handling:**
 - Workflow aborts if validation fails

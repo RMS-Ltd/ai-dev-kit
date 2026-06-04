@@ -150,7 +150,7 @@ echo $GITHUB_REPOSITORY
 
 **Manual Execution (if automated step skipped):**
 ```bash
-python "packages/frameworks/workflow mgt/scripts/create_github_release.py" \
+python "packages/frameworks/workflow-mgt/scripts/create_github_release.py" \
   --semver-tag "v0.4.36+1" \
   --internal-version "v0.4.16.4+1" \
   --summary "Release summary" \
@@ -181,7 +181,7 @@ export GITHUB_REPOSITORY=RMS-Ltd/ai-dev-kit  # Optional
 **Verification:**
 ```bash
 # Test with dry-run
-python "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
+python "packages/frameworks/workflow-mgt/scripts/upload_all_packages.py" \
   --dry-run \
   --token "$GITHUB_TOKEN"
 ```
@@ -331,7 +331,7 @@ Before running workflows that require environment variables:
 - This is expected behavior - agent cannot access user's environment variables
 - User must run GitHub release creation manually:
   ```bash
-  python "packages/frameworks/workflow mgt/scripts/create_github_release.py" \
+  python "packages/frameworks/workflow-mgt/scripts/create_github_release.py" \
     --semver-tag "v0.4.36+1" \
     --internal-version "v0.4.16.4+1" \
     --summary "Release summary" \
@@ -372,8 +372,8 @@ Before running workflows that require environment variables:
 
 ## Related Documentation
 
-- **Release Workflow:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 12.5)
-- **GitHub Release Script:** `packages/frameworks/workflow mgt/scripts/create_github_release.py`
+- **Release Workflow:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 12.5)
+- **GitHub Release Script:** `packages/frameworks/workflow-mgt/scripts/create_github_release.py`
 - **Package Upload Guide:** `docs/maintenance/UPLOAD_PACKAGES.md`
 - **Build and Upload Guide:** `docs/maintenance/BUILD_AND_UPLOAD.md`
 - **GitHub Token Setup:** [GitHub Documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)

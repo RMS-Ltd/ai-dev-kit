@@ -97,8 +97,8 @@ Consolidate Kanban file structure to:
 
 - `docs/project-management/rituals/policy/kanban-governance-policy.md`
 - `docs/project-management/kanban/README.md`
-- `packages/frameworks/workflow mgt/config/rw-config-schema.md`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+- `packages/frameworks/workflow-mgt/config/rw-config-schema.md`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 
 ---
 

@@ -121,8 +121,8 @@ This feature is needed:
 
 ## References
 
-- **Versioning Policy:** `packages/frameworks/workflow mgt/KB/Architecture/Standards_and_ADRs/versioning-policy.md`
-- **Release Workflow Reference:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md`
+- **Versioning Policy:** `packages/frameworks/workflow-mgt/KB/Architecture/Standards_and_ADRs/versioning-policy.md`
+- **Release Workflow Reference:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md`
 - **FR-023:** `FR-023-update-kanban-workflow-ukw.md` (related workflow enhancement)
 
 ---

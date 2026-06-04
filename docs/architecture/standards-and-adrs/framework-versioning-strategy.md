@@ -603,7 +603,7 @@ git tag -a ai-dev-kit-v2.0.0 -m "Release ai-dev-kit v2.0.0"
   - Project versioning (`RC.EPIC.STORY.TASK+BUILD`)
   - Internal development versioning
 
-- **Package Version Workflow:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md`
+- **Package Version Workflow:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md`
   - Complete PVW step-by-step guide
   - Agent execution patterns
 

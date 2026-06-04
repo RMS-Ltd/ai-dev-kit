@@ -31,7 +31,7 @@ This incident log captures the current state so that the reasoning, constraints,
 
 ## Root Cause
 
-The currently implemented SemVer mapping (`packages/frameworks/workflow mgt/scripts/version/semver_converter.py`) uses the **registry epic/story mapping mode**:
+The currently implemented SemVer mapping (`packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`) uses the **registry epic/story mapping mode**:
 
 - `MAJOR = RC`
 - `MINOR = epic_to_minor[EPIC]`
@@ -99,9 +99,9 @@ Under `task_touch`, finalize guards initially checked only full `semver+BUILD` s
 ## References
 
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
-- `packages/frameworks/numbering & versioning/versioning-policy.md`
+- `packages/frameworks/numbering-versioning/versioning-policy.md`
 - `docs/architecture/standards-and-adrs/semver-implementation-followup-spec.md`
 - `docs/project-management/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md`
 - `docs/project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`
-- `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - `semver-registry.yaml`

@@ -9,7 +9,7 @@ from unittest import mock
 import pytest
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SCRIPT_PATH = REPO_ROOT / "packages" / "frameworks" / "workflow mgt" / "scripts" / "install_release_workflow.py"
+SCRIPT_PATH = REPO_ROOT / "packages" / "frameworks" / "workflow-mgt" / "scripts" / "install_release_workflow.py"
 INSTALL_DOC = REPO_ROOT / "INSTALL_IN_YOUR_PROJECT.md"
 
 
@@ -101,7 +101,7 @@ def test_e2e_generated_config_epic_pattern_matches_files():
 def test_signoff_br083_accepts_unpadded_epic_patterns():
     import yaml
 
-    signoff_path = REPO_ROOT / "packages/frameworks/workflow mgt/scripts/install_github_issue_signoff.py"
+    signoff_path = REPO_ROOT / "packages/frameworks/workflow-mgt/scripts/install_github_issue_signoff.py"
     spec = importlib.util.spec_from_file_location(
         "install_github_issue_signoff",
         signoff_path,

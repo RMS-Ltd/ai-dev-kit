@@ -66,9 +66,9 @@ git checkout -b "$BR"
 npx -p ecc-universal ecc-install --target cursor --profile core --without baseline:hooks --dry-run
 
 # 3) Bridge (local file; gitignored in ai-dev-kit — see repo .gitignore)
-"packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
-python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py" --bridge ecc-adk-bridge.yaml
-python "packages/frameworks/workflow mgt/scripts/validation/validate_adk_ecc_skill_pack.py"
+"packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py" --bridge ecc-adk-bridge.yaml
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_adk_ecc_skill_pack.py"
 
 # 4) Optional: only after dry-run review — real install ON THIS BRANCH ONLY
 # npx -p ecc-universal ecc-install --target cursor --profile core --without baseline:hooks
@@ -83,7 +83,7 @@ git branch -D "$BR"
 
 | Check | Pass criteria |
 | ----- | ------------- |
-| ADK skill pack | No overwrite of `packages/frameworks/workflow mgt/skills/adk-*` |
+| ADK skill pack | No overwrite of `packages/frameworks/workflow-mgt/skills/adk-*` |
 | ADK governance skills | Existing project `.cursor/skills/` (e.g. `version-bump`, `ukw-sync`) not replaced unintentionally |
 | Hooks | Even with `--without baseline:hooks`, plan may still list `.cursor/hooks/*` and `hooks.json` — treat as **risk** until reviewed |
 | Git / RW policy | Flag `common-git-workflow.mdc` (or similar) — must not override ADK **RW-only** commit/push |
@@ -107,7 +107,7 @@ You should already have:
 
 - `rw-config.yaml`, `.cursorrules` / `CLAUDE.md`
 - `docs/project-management/kanban/`
-- Workflow scripts under `packages/frameworks/workflow mgt/`
+- Workflow scripts under `packages/frameworks/workflow-mgt/`
 
 ### Step B — Phase 0 sanity check (recommended)
 
@@ -122,14 +122,14 @@ Review the planned paths. Confirm **no collision** with existing ADK `.cursor/sk
 ### Step C — Bridge config
 
 ```bash
-cp "packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template" ecc-adk-bridge.yaml
-python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py" --bridge ecc-adk-bridge.yaml
+cp "packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template" ecc-adk-bridge.yaml
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py" --bridge ecc-adk-bridge.yaml
 ```
 
 Or use the install helper (dry-run + optional copy):
 
 ```bash
-"packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
+"packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh" --copy-bridge
 ```
 
 Edit:
@@ -158,7 +158,7 @@ export ECC_SESSION_START_CONTEXT=off
 
 Copy or symlink ADK’s portable skills into the harness (paths on **`main`** after FR-098 Phase 1):
 
-`packages/frameworks/workflow mgt/skills/`
+`packages/frameworks/workflow-mgt/skills/`
 
 | Skill folder | Trigger / use | ADK command |
 | ------------ | ------------- | ----------- |
@@ -175,15 +175,15 @@ Set `adk_skill_pack_path` in `ecc-adk-bridge.yaml` to that directory.
 ### Step F — Validate skill pack + bridge (maintainers / CI)
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_adk_ecc_skill_pack.py"
-python "packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_adk_ecc_skill_pack.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py"
 ```
 
 ### Step G — Hooks (Phase 3 defaults)
 
 - Keep `hook_profile: minimal` and `excluded_components: [baseline:hooks]` until you review SessionStart / pre-RW behavior.
 - Populate `disabled_hooks` from the bridge template examples (RW/git conflicts).
-- **Pre-RW advisory:** Any ECC pre-RW quality hook is **non-blocking**; ADK **Step 10** validators remain authoritative ([AgentShield bridge doc](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md)).
+- **Pre-RW advisory:** Any ECC pre-RW quality hook is **non-blocking**; ADK **Step 10** validators remain authoritative ([AgentShield bridge doc](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md)).
 
 ---
 
@@ -289,8 +289,8 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | FR scope / phases | [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md) |
 | Throwaway dogfood (E2E) | §3 **Throwaway branch playbook** (this doc) |
 | Greenfield install | [INSTALL_IN_YOUR_PROJECT.md](../../../INSTALL_IN_YOUR_PROJECT.md) |
-| RW detail | `packages/frameworks/workflow mgt/KB/.../release-workflow-agent-execution.md` |
-| Bridge template | `packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template` |
+| RW detail | `packages/frameworks/workflow-mgt/KB/.../release-workflow-agent-execution.md` |
+| Bridge template | `packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template` |
 
 ---
 
@@ -302,7 +302,7 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | **1** | `adk-*` skill pack + `validate_adk_ecc_skill_pack.py` — **done** ([T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)) |
 | **2** | `install_ecc_harness_optional.sh`, `validate_ecc_adk_bridge.py`, INSTALL optional step — **done** ([T06](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)) |
 | **3** | Hook defaults in bridge template + cheatsheet §3G — **done** |
-| **4** | [AgentShield RW add-on doc](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md) — **done** |
+| **4** | [AgentShield RW add-on doc](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md) — **done** |
 | **5** | Layered architecture + book sidebar (§11) — **done** |
 
 If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `skills/` tree from [T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md).

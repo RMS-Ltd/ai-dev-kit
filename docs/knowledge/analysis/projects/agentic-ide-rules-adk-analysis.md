@@ -495,13 +495,13 @@ None identified - workflows are correct.
 ### 5.2 Workflow Scripts
 
 **Scripts Used:**
-- Framework scripts in `packages/frameworks/workflow mgt/scripts/` (used as-is)
+- Framework scripts in `packages/frameworks/workflow-mgt/scripts/` (used as-is)
 - Framework scripts in `packages/frameworks/kanban/scripts/` (migration, analysis, etc.)
 
 **Script Analysis:**
 
 **ADK Framework Scripts:**
-- All scripts from `packages/frameworks/workflow mgt/scripts/` are used as-is
+- All scripts from `packages/frameworks/workflow-mgt/scripts/` are used as-is
 - Proper integration
 - No customization detected
 
@@ -572,7 +572,7 @@ None identified - workflows are correct.
 ### 6.1 Script Inventory
 
 **Scripts Found:**
-- Framework scripts in `packages/frameworks/workflow mgt/scripts/` (used as-is)
+- Framework scripts in `packages/frameworks/workflow-mgt/scripts/` (used as-is)
 - Framework scripts in `packages/frameworks/kanban/scripts/` (migration, analysis, installer, etc.)
 - No custom scripts detected
 
@@ -875,17 +875,17 @@ None identified - scripts are correct.
 
 **Workflow Files:**
 - `.cursorrules` (RW trigger section - 13-step with PDCA)
-- `packages/frameworks/workflow mgt/config/rw-config-agentic-ide-rules.yaml` (RW configuration)
+- `packages/frameworks/workflow-mgt/config/rw-config-agentic-ide-rules.yaml` (RW configuration)
 
 **Script Files:**
-- `packages/frameworks/workflow mgt/scripts/` (framework scripts)
+- `packages/frameworks/workflow-mgt/scripts/` (framework scripts)
 - `packages/frameworks/kanban/scripts/` (kanban scripts, including installer)
 
 **Framework Files:**
 - `packages/frameworks/ai-dev-kit/` (entire ai-dev-kit repo as submodule)
 - `packages/frameworks/kanban/` (kanban framework)
-- `packages/frameworks/workflow mgt/` (workflow framework)
-- `packages/frameworks/numbering & versioning/` (versioning framework)
+- `packages/frameworks/workflow-mgt/` (workflow framework)
+- `packages/frameworks/numbering-versioning/` (versioning framework)
 - `packages/frameworks/doc-lifecycle/` (doc lifecycle framework)
 - `packages/frameworks/debug-path/` (debug path framework)
 

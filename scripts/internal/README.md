@@ -8,4 +8,4 @@ This directory contains **dev-kit-specific utility scripts** that are not part o
 - `scan_tasks_for_moscow.py` - Scan task documents for MoSCOW prioritization (UKW helper)
 - `validate_cli.py` - Validation script for ai-dev-kit CLI tool
 
-**Note:** Framework-level scripts (validators, converters, workflow scripts) live in `packages/frameworks/workflow mgt/scripts/` and `packages/frameworks/kanban/scripts/`.
+**Note:** Framework-level scripts (validators, converters, workflow scripts) live in `packages/frameworks/workflow-mgt/scripts/` and `packages/frameworks/kanban/scripts/`.

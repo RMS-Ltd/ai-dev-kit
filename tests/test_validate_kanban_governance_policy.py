@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 # Add validation scripts path for import
-validation_dir = Path(__file__).resolve().parent.parent / "packages/frameworks/workflow mgt/scripts/validation"
+validation_dir = Path(__file__).resolve().parent.parent / "packages/frameworks/workflow-mgt/scripts/validation"
 if str(validation_dir) not in sys.path:
     sys.path.insert(0, str(validation_dir))
 

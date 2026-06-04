@@ -154,5 +154,5 @@ RF1–RF4 map to cheatsheet sections A–E plus sequences, blocked-session, and 
 - [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
 - [T15 task doc](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
 - `.claude/commands/rw.md`, `ukw.md`, `ipw.md`
-- [Release Workflow agent execution guide](../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
-- [Update Kanban Workflow agent execution guide](../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [Release Workflow agent execution guide](../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- [Update Kanban Workflow agent execution guide](../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)

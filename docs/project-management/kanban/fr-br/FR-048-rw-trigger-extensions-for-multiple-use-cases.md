@@ -242,11 +242,11 @@ def should_execute_step(step_number, trigger_type):
 - **FR-046:** RW SemVer Tag Task Touch Mode
 ### Related Documents
 
-- `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 
-- `packages/frameworks/workflow mgt/scripts/workflow_orchestrator.py`
+- `packages/frameworks/workflow-mgt/scripts/workflow_orchestrator.py`
 ### Related Epics/Stories
 
 - **Epic 2:** Workflow Management Framework

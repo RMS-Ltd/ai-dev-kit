@@ -34,16 +34,16 @@ Review and validate the integration points and dependency alignment between the 
 ## Inputs
 
 - **Numbering & Versioning Integration Guides:**
-  - `packages/frameworks/numbering & versioning/integration/kanban-workflow-integration.md`
-  - `packages/frameworks/numbering & versioning/integration/integration-patterns-and-best-practices.md`
-  - `packages/frameworks/numbering & versioning/integration/integration-examples-external-projects.md`
-  - `packages/frameworks/numbering & versioning/integration/integration-troubleshooting-guide.md`
+  - `packages/frameworks/numbering-versioning/integration/kanban-workflow-integration.md`
+  - `packages/frameworks/numbering-versioning/integration/integration-patterns-and-best-practices.md`
+  - `packages/frameworks/numbering-versioning/integration/integration-examples-external-projects.md`
+  - `packages/frameworks/numbering-versioning/integration/integration-troubleshooting-guide.md`
 
 
 - **Workflow Management Integration:**
-  - `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
-  - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-  - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+  - `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
+  - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+  - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
   - `.cursorrules` (RW section – version schema usage, SemVer integration)
 
 

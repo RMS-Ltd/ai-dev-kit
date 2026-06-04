@@ -38,7 +38,7 @@ Deliver **FR-075**: codify that **ICW** persists spec / test design / implementa
 
 - **FR:** [FR-075](../../../fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md)
 - **Prior art:** [FR-040](../../../fr-br/FR-040-implementation-cycle-workflow-icw.md), [FR-048](../../../fr-br/FR-048-icw-task-identifier-argument.md)
-- **Existing ICW output config:** `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
+- **Existing ICW output config:** `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
 
 ---
 
@@ -48,9 +48,9 @@ Deliver **FR-075**: codify that **ICW** persists spec / test design / implementa
 |----------|------|
 | Policy | `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md` |
 | Implementation cycles index | `docs/implementation-cycles/README.md` |
-| ICW framework README section | `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/README.md` |
-| ICW guide | `packages/frameworks/workflow mgt/docs/implementation-cycle-workflow-guide.md` |
-| YAML comment | `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml` |
+| ICW framework README section | `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/README.md` |
+| ICW guide | `packages/frameworks/workflow-mgt/docs/implementation-cycle-workflow-guide.md` |
+| YAML comment | `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml` |
 | Agent rules | `.cursorrules` (ICW trigger + Kanban integration bullet) |
 
 **Release:** Land via **RW** on the appropriate branch; set **Version anchor** on this task per validator when marking **COMPLETE**.

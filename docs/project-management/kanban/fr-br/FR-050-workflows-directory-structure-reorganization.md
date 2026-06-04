@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Problem Statement
 
-The workflows directory `/Users/rms/Documents/projects/ai-dev-kit/packages/frameworks/workflow mgt/workflows` is currently unmanaged and lacks proper organization. Workflow files are not organized into workflow-named subdirectories, making it difficult to:
+The workflows directory `/Users/rms/Documents/projects/ai-dev-kit/packages/frameworks/workflow-mgt/workflows` is currently unmanaged and lacks proper organization. Workflow files are not organized into workflow-named subdirectories, making it difficult to:
 
 1. **Locate specific workflows** - Files are scattered without clear grouping
 2. **Maintain workflow organization** - No consistent structure for workflow definitions

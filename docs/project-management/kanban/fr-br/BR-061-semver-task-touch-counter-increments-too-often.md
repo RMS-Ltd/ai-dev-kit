@@ -29,7 +29,7 @@ The failure mode smells like **“the converter mutates registry state every tim
 
 ## Current Fault (hypothesis tied to code)
 
-In `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`, **`convert_internal_to_semver_task_touch`** sets PATCH by calling **`increment_task_touch_counter(rc)`**, which **loads the registry, increments `task_touch_counter`, and saves** — i.e. a **persistent side effect on every conversion**.
+In `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`, **`convert_internal_to_semver_task_touch`** sets PATCH by calling **`increment_task_touch_counter(rc)`**, which **loads the registry, increments `task_touch_counter`, and saves** — i.e. a **persistent side effect on every conversion**.
 
 The module docstring for that path says PATCH increments **once per RW release**, but the implementation couples **“compute SemVer for this internal version”** with **“increase the global counter”** on **every** call to `convert_version_string(..., task_touch)`.
 

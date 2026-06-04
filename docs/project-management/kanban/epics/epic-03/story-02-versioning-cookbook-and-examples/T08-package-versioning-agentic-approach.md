@@ -134,7 +134,7 @@ For each package, the agent follows this pattern:
 **Agent Analysis:**
 
 1. **ANALYZE:**
-   - Read `packages/frameworks/workflow mgt/README.md` → Current version: 2.0.0
+   - Read `packages/frameworks/workflow-mgt/README.md` → Current version: 2.0.0
    - Identify changes: Added `integration/kanban-integration.md`
    - Understand package type: Documentation + Scripts
    - Review project version: 0.3.2.8+1 (Epic 3, Story 2, Task 8)
@@ -606,8 +606,8 @@ RW Step 4: Update Main Changelog
 
 ## 11. References
 
-- **Release Workflow:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **Agent-Driven Execution:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md`
+- **Release Workflow:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Agent-Driven Execution:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md`
 - **Audit Report:** `T08-dual-versioning-package-audit-report.md`
 - **Guardrails Discussion:** `T08-package-versioning-guardrails-discussion.md`
 

@@ -46,7 +46,7 @@ The RW is an intelligent agent-driven workflow — not a deterministic script. F
 
 - `.cursorrules` → section `## 🚀 RELEASE WORKFLOW (RW) TRIGGER` (canonical trigger spec)
 - `.claude/commands/rw.md` (Claude Code slash command — self-contained execution guide)
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (canonical step guide)
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (canonical step guide)
 
 **Mandatory gates before any file modifications:**
 
@@ -130,4 +130,4 @@ When any of these triggers appear at the start of a user message, treat them as 
 - Version schema: `RC.EPIC.STORY.TASK+BUILD` (internal); SemVer for external display.
 - Config-driven paths: `rw-config.yaml` at project root is the single source of truth for file paths.
 - Kanban board: `docs/project-management/kanban/kboard.md`
-- Validators: `packages/frameworks/workflow mgt/scripts/validation/`
+- Validators: `packages/frameworks/workflow-mgt/scripts/validation/`

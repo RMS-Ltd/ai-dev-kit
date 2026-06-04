@@ -77,7 +77,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 - [x] Minimal config key set is defined and reviewed (no unnecessary knobs) ✅  
 - [x] Decision recorded on which aspects remain hard-coded vs. configurable ✅  
 
-**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow mgt/docs/Analysis/T01-rw-adoption-friction-analysis.md` for complete analysis.  
+**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow-mgt/docs/Analysis/T01-rw-adoption-friction-analysis.md` for complete analysis.  
 
 ---
 
@@ -106,7 +106,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 - [x] At least three example configs (one per mode) checked into repo ✅  
 - [x] Config keys map cleanly to existing RW YAML and `.cursorrules` needs ✅  
 
-**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow mgt/config/rw-config-schema.md` for schema specification and `packages/frameworks/workflow mgt/config/examples/` for example configs.  
+**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow-mgt/config/rw-config-schema.md` for schema specification and `packages/frameworks/workflow-mgt/config/examples/` for example configs.  
 
 ---
 
@@ -137,7 +137,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 - [x] `.cursorrules`, RW YAML, and validation scripts all read from `rw-config.yaml` ✅  
 - [x] `--dry-run` mode works and shows intended changes clearly ✅  
 
-**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow mgt/scripts/install_release_workflow.py` for installer CLI and `packages/frameworks/workflow mgt/scripts/README-rw-installer.md` for documentation. Validation scripts updated to read from `rw-config.yaml`.  
+**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` for installer CLI and `packages/frameworks/workflow-mgt/scripts/README-rw-installer.md` for documentation. Validation scripts updated to read from `rw-config.yaml`.  
 
 ---
 
@@ -163,7 +163,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 - [x] A dedicated KB doc exists for plug-and-play adoption with screenshots or transcripts ✅  
 - [x] At least two worked examples (one greenfield, one brownfield) are documented ✅  
 
-**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow mgt/README.md` (RW Quickstart section) and `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/rw-installer-quickstart-guide.md` (dedicated guide with greenfield/brownfield examples).  
+**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow-mgt/README.md` (RW Quickstart section) and `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/rw-installer-quickstart-guide.md` (dedicated guide with greenfield/brownfield examples).  
 
 ---
 
@@ -190,7 +190,7 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
 - [x] Identified issues are fixed or documented ✅  
 - [x] Story updated with final notes and version marker when complete ✅  
 
-**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow mgt/docs/Analysis/T05-rw-installer-usability-test.md` for complete usability test report with identified issues, recommendations, and test scenarios.  
+**Deliverable:** ✅ **DELIVERED** - See `packages/frameworks/workflow-mgt/docs/Analysis/T05-rw-installer-usability-test.md` for complete usability test report with identified issues, recommendations, and test scenarios.  
 
 ---
 

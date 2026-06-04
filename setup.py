@@ -31,7 +31,7 @@ setup(
     url="https://github.com/RMS-Ltd/ai-dev-kit",
     project_urls={
         "Documentation": "https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/documentation",
-        "Workflow Documentation": "https://github.com/RMS-Ltd/ai-dev-kit/tree/main/packages/frameworks/workflow%20mgt/workflows",
+        "Workflow Documentation": "https://github.com/RMS-Ltd/ai-dev-kit/tree/main/packages/frameworks/workflow-mgt/workflows",
         "Source": "https://github.com/RMS-Ltd/ai-dev-kit",
         "Tracker": "https://github.com/RMS-Ltd/ai-dev-kit/issues",
     },

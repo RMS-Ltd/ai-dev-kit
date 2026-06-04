@@ -38,7 +38,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Epic 3 owns the **Numbering & Versioning framework** living under `packages/frameworks/numbering & versioning/`.
+Epic 3 owns the **Numbering & Versioning framework** living under `packages/frameworks/numbering-versioning/`.
 
 It ensures the dev kit:
 
@@ -154,7 +154,7 @@ Create comprehensive, framework-level integration documentation that explains ho
 
 ## References
 
-- `packages/frameworks/numbering & versioning/README.md`
-- `packages/frameworks/numbering & versioning/versioning-policy.md`
-- `packages/frameworks/numbering & versioning/versioning-strategy.md`
+- `packages/frameworks/numbering-versioning/README.md`
+- `packages/frameworks/numbering-versioning/versioning-policy.md`
+- `packages/frameworks/numbering-versioning/versioning-strategy.md`
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`

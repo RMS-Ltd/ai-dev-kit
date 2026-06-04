@@ -121,7 +121,7 @@ Every active MoSCOW row in `kboard.md` and `fbuboard.md` must end with a termina
 
 `| Last modified: YYYY-MM-DD HH:MM UTC`
 
-This is mandatory for human scanability and forensic traceability. RW/UKW must **preserve** existing row stamps on STRUCTURE-only edits. New stamps only via linked-doc derivation or evidenced CONTENT passes — see [board-stamp-authority.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md).
+This is mandatory for human scanability and forensic traceability. RW/UKW must **preserve** existing row stamps on STRUCTURE-only edits. New stamps only via linked-doc derivation or evidenced CONTENT passes — see [board-stamp-authority.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md).
 
 ### MoSCOW state icons (UXR-012 / E04:S13:T07)
 
@@ -135,7 +135,7 @@ Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly
 
 - **Hygiene / UKW bookkeeping:** Do not change icons on STRUCTURE-only passes (same class as FR-097 stamp preservation). Update icons only when the **status word** changes substantively.
 
-- **Automation:** `state_icons.py`, `backfill_board_state_icons.py`, and `validate_kanban_state_icons.py` (Gate 9 in `validate_release_readiness.py`). Operator notes: [`state-icons.md`](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md).
+- **Automation:** `state_icons.py`, `backfill_board_state_icons.py`, and `validate_kanban_state_icons.py` (Gate 9 in `validate_release_readiness.py`). Operator notes: [`state-icons.md`](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md).
 
 
 ### E/S/T inline notation (UXR-014 / E04:S19:T09)
@@ -149,7 +149,7 @@ Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly
 
 **Read tolerance:** Validators and parsers continue to accept legacy unpadded forms; do not break RW/UKW on historical docs. **New writes** (boards, intake, agents, `update_kanban_docs.py`) MUST emit the padded write-default.
 
-**Formatter:** `packages/frameworks/workflow mgt/scripts/kanban/est_format.py` — shared canonicalization for scripts and corpus hygiene.
+**Formatter:** `packages/frameworks/workflow-mgt/scripts/kanban/est_format.py` — shared canonicalization for scripts and corpus hygiene.
 
 ### Task-Level Display (not story-level)
 
@@ -193,7 +193,7 @@ The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:
 - If a release reveals formatting drift, escalate through T09 (Kanban Template Governance) before touching other boards.
 - RW/UKW/MMW agents should log evidence (MMW log + validator output) showing the rule was checked or restored.
 
-**Validator:** `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_moscow_spacing.py` (also delegated from `scripts/documentation/validate-documentation-consistency.py` with `--check moscow_spacing`). Release Readiness **Gate 10** (warn, non-blocking).
+**Validator:** `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_moscow_spacing.py` (also delegated from `scripts/documentation/validate-documentation-consistency.py` with `--check moscow_spacing`). Release Readiness **Gate 10** (warn, non-blocking).
 
 **Example (before — invalid):**
 

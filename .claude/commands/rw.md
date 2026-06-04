@@ -39,7 +39,7 @@ The RW execution layer now maintains a deterministic per-run journal.
 ```python
 from pathlib import Path
 import sys
-sys.path.insert(0, str(Path("packages/frameworks/workflow mgt/scripts")))
+sys.path.insert(0, str(Path("packages/frameworks/workflow-mgt/scripts")))
 from journal import RWJournal
 
 journal = RWJournal(task_id="<parsed_id>")
@@ -87,7 +87,7 @@ All four gates MUST pass before any file modifications. Failure at any gate = **
 ### Step 1 — Branch Safety Check (BLOCKING)
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 ```
 
 - Exit 0 → pass, proceed to Step 1b.
@@ -104,7 +104,7 @@ Parse `$ARGUMENTS` for the `E…S…T…` token (already done in Trigger Parsing
 ### Step 1c — Task Document Releasable (FR-060)
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py" --requested "<parsed_id>"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_complete.py" --requested "<parsed_id>"
 # For RW -k: append --mode rw-k
 ```
 
@@ -116,7 +116,7 @@ Releasable statuses: `IN PROGRESS`, `COMPLETE`, or perpetual maintenance task.
 ### Step 1d — Task Intent Guard (BR-056)
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py" --requested "<parsed_id>"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py" --requested "<parsed_id>"
 # For RW -k: append --mode rw-k
 # If --art present: append --art
 # If --confirmed-override present: append --confirmed-override (only after explicit user confirmation)
@@ -177,7 +177,7 @@ Prepend `## [version] - DD-MM-YY` entry to `main_changelog`. Follow Keep a Chang
 Run `semver_converter.py` to get SemVer. Update `readme_file` version badge and text.
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/version/semver_converter.py" "<internal_version>"
+python "packages/frameworks/workflow-mgt/scripts/version/semver_converter.py" "<internal_version>"
 ```
 
 ### Step 6 — Update BR/FR Docs
@@ -201,15 +201,15 @@ git add -A
 ### Step 9 — Run Validators
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict [--requested "<parsed_id>"] [--art]
-python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py"
-python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --strict [--requested "<parsed_id>"] [--art] [--doc-policy-zero]
-python "packages/frameworks/workflow mgt/scripts/changelog/check_changelog_size.py"
-python "packages/frameworks/workflow mgt/scripts/validation/validate_changelog_archive_links.py"
-python "packages/frameworks/workflow mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/kboard.md" --after "<kanban_root>/kboard.md" --strict
-python "packages/frameworks/workflow mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/fbuboard.md" --after "<kanban_root>/fbuboard.md" --strict
-python "packages/frameworks/workflow mgt/scripts/validation/validate_kanban_state_icons.py" --project-root . --strict
-python "packages/frameworks/workflow mgt/scripts/validation/validate_release_readiness.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict [--requested "<parsed_id>"] [--art]
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py" --strict [--requested "<parsed_id>"] [--art] [--doc-policy-zero]
+python "packages/frameworks/workflow-mgt/scripts/changelog/check_changelog_size.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_archive_links.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/kboard.md" --after "<kanban_root>/kboard.md" --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/fbuboard.md" --after "<kanban_root>/fbuboard.md" --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_state_icons.py" --project-root . --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_release_readiness.py"
 ```
 
 If `--art` was in `$ARGUMENTS`, propagate `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`.
@@ -251,7 +251,7 @@ git push origin {branch} --tags
 ### Step 12.5 — GitHub Release
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/create_github_release.py" \
+python "packages/frameworks/workflow-mgt/scripts/create_github_release.py" \
   --semver-tag "v{semver}" --internal-version "v{internal_version}" \
   --summary "{summary}" --epic "{epic}" --story "{story}" --task "{task}" \
   --repo "RMS-Ltd/ai-dev-kit"
@@ -294,7 +294,7 @@ Use `rw-config.yaml` values when present. Fallbacks:
 - Version file: `src/fynd_deals/version.py`
 - Main changelog: `CHANGELOG.md`
 - Changelog archive: `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md`
-- Validators: `packages/frameworks/workflow mgt/scripts/validation/`
+- Validators: `packages/frameworks/workflow-mgt/scripts/validation/`
 - README: `README.md`
 - Kanban root: `docs/project-management/kanban/`
 
@@ -302,7 +302,7 @@ Use `rw-config.yaml` values when present. Fallbacks:
 
 ## Reference Documentation
 
-- Canonical step guide: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- Canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - Versioning policy: `docs/governance/standards/dev-kit-versioning-policy.md`
 - RW trigger section: `.cursorrules` → `## 🚀 RELEASE WORKFLOW (RW) TRIGGER`
-- Dual-source parity: `packages/frameworks/workflow mgt/docs/rw-trigger-dual-source-parity.md`
+- Dual-source parity: `packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md`

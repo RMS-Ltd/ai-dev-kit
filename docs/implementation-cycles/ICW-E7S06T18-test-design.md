@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Likely test touchpoints
 
-- [`packages/frameworks/workflow mgt/scripts/install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py) — interactive config, `validate_required_placeholders`, `preview_pattern_matches`, final status messaging.
+- [`packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py) — interactive config, `validate_required_placeholders`, `preview_pattern_matches`, final status messaging.
 - [`packages/frameworks/kanban/scripts/install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py) — root propagation and final status output.
 - [`packages/frameworks/kanban/scripts/validate_installation.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/validate_installation.py) — validation helpers where referenced.
 - Automated tests: [`tests/test_install_release_workflow_patterns.py`](../../tests/test_install_release_workflow_patterns.py) — placeholder detection and preview glob matching.

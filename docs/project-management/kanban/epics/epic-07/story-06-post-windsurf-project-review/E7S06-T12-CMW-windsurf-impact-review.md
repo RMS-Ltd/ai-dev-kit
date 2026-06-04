@@ -35,7 +35,7 @@ No significant divergence. CMW is explicitly rule-based. The skill's step sequen
 
 1. Copy `cmw-maintain` to .cursor/skills/cmw-maintain.
 2. Remove .windsurf/skills/cmw-maintain.
-3. Ensure CMW scripts (check_changelog_size, etc.) remain in packages/frameworks/workflow mgt/.
+3. Ensure CMW scripts (check_changelog_size, etc.) remain in packages/frameworks/workflow-mgt/.
 
 ---
 

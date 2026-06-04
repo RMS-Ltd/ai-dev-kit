@@ -86,7 +86,7 @@ This bug occurs:
 ## Affected Component
 
 **Component:** Release Workflow (RW) Step 7 - Auto-update Kanban Docs  
-**Script:** `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`  
+**Script:** `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`  
 **Function:** `resolve_kanban_paths()`, `update_kanban_board()`
 
 ---
@@ -194,7 +194,7 @@ This bug occurs:
 
 - **FR-040:** [`FR-040-rw-update-kanban-board-on-task-completion.md`](FR-040-rw-update-kanban-board-on-task-completion.md)
 - **E05:S01:T36:** [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T36-rw-update-kanban-board-on-task-completion.md`](../epics/epic-05/story-01-fr-repo/T36-rw-update-kanban-board-on-task-completion.md)
-- **RW Step 7 Script:** `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
+- **RW Step 7 Script:** `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
 
 ---

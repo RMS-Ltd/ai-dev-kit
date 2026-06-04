@@ -5,7 +5,7 @@
 version_file: src/ai_dev_kit/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 
 changelog_archival:

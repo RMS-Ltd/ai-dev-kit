@@ -81,7 +81,7 @@ Updated `packages/frameworks/kanban/policies/kanban-governance-policy.md` with e
 - Enforcement: `validate_kanban_naming.py`
 
 ### Phase I: Regression Validator
-Created `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_naming.py` using only Python stdlib.
+Created `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py` using only Python stdlib.
 
 **Checks performed:**
 - Deprecated T0xx files (T001–T099)
@@ -119,7 +119,7 @@ Created `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_nam
 | `scripts/cleanup/story_reconciliation_decisions.md` | Decision log for duplicate stories |
 | `scripts/cleanup/execute_kanban_naming_cleanup.py` | Batch executor (git mv / git rm) |
 | `scripts/cleanup/update_kanban_links.py` | Markdown link updater |
-| `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_naming.py` | Regression validator |
+| `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py` | Regression validator |
 
 ## Files Modified (Content Updates)
 
@@ -151,7 +151,7 @@ Created `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_nam
 ## How to Use the Regression Validator
 
 ```bash
-python3 "packages/frameworks/workflow mgt/scripts/validation/validate_kanban_naming.py"
+python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py"
 ```
 
 Run this after any kanban file renames, additions, or moves to confirm the tree remains compliant.

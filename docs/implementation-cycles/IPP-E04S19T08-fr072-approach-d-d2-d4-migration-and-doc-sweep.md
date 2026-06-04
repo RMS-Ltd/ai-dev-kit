@@ -124,7 +124,7 @@ RF1–RF2 via intake guardrails + fbuboard audit. RF3 via story/task banners. RF
 - `docs/governance/kanban/kanban-governance-policy.md`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`, `FR_BR_INTAKE_GUIDE.md`
 - `packages/frameworks/kanban/templates/epics/Epic-{5,6,7}-*.md`
-- `packages/frameworks/workflow mgt/KB/.../release-workflow-agent-execution.md`, `update-kanban-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/KB/.../release-workflow-agent-execution.md`, `update-kanban-workflow-agent-execution.md`
 - T08, T07, T72, story-019, kboard, fbuboard, `docs/governance/README.md`
 
 ### 4.2 Dependency order

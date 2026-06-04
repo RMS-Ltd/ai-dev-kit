@@ -173,4 +173,4 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 - [FR-076](../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [Workflow initiation cheatsheet](../guides/workflow-initiation-cheatsheet.md)
-- [archive_completed.py](../packages/frameworks/workflow%20mgt/scripts/kanban/archive_completed.py)
+- [archive_completed.py](../packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py)

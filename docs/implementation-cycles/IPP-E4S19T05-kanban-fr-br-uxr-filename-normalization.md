@@ -60,8 +60,8 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/
 
 ### 2.1 Planned verification commands
 
-- `python3 "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --dry-run --mode full`
-- `python3 "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py" --test-category 4`
+- `python3 "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --dry-run --mode full`
+- `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category 4`
 - `rg "kanban-board\.md|fr-br-uxr-board\.md|fr-br-uxr-structure\.md|fbuboard\.md|kboard\.md" "docs/project-management/kanban"`
 
 ---

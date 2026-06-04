@@ -81,7 +81,7 @@ You do **not** have to switch away from Auto-review if that is already selected.
 **Confirm**
 
 - Terminal allowlist shows entries from `permissions.json` (read-only in UI when file defines `terminalAllowlist`).
-- Smoke test: `python "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict` from repo root.
+- Smoke test: `python "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict` from repo root.
 
 ---
 
@@ -90,26 +90,26 @@ You do **not** have to switch away from Auto-review if that is already selected.
 From repository root:
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py"
 ```
 
 With explicit root:
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py" --project-root /path/to/ai-dev-kit
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py" --project-root /path/to/ai-dev-kit
 ```
 
 Pytest (global **pytest-django** from other projects must be blocked — plain `python -m pytest …/test_validate_*.py` may fail):
 
 ```bash
-bash "packages/frameworks/workflow mgt/scripts/validation/run_isolated_pytest.sh"
+bash "packages/frameworks/workflow-mgt/scripts/validation/run_isolated_pytest.sh"
 ```
 
 Or any of:
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/test_validate_whitelist_patterns.py"
-python "packages/frameworks/workflow mgt/scripts/validation/validate_whitelist_patterns.py" --run-tests
+python "packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py" --run-tests
 ```
 
 All of the above set `PYTEST_DISABLE_PLUGIN_AUTOLOAD=1` and skip `pytest_django`.
@@ -122,7 +122,7 @@ All of the above set `PYTEST_DISABLE_PLUGIN_AUTOLOAD=1` and skip `pytest_django`
 
 ```yaml
 python_validation_scripts:
-  pattern: '^python "packages/frameworks/workflow mgt/scripts/validation/validate_[a-z0-9_]+\.py"(\s+.*)?$'
+  pattern: '^python "packages/frameworks/workflow-mgt/scripts/validation/validate_[a-z0-9_]+\.py"(\s+.*)?$'
 ```
 
 Covers all `validate_*.py` invocations with optional flags (`--strict`, `--requested`, `--art`, etc.).

@@ -14,7 +14,7 @@ import pytest
 import yaml
 
 # Load the standalone script as a module (path contains a space)
-_UNINSTALL_SCRIPT = Path(__file__).parent.parent / "packages" / "frameworks" / "workflow mgt" / "scripts" / "uninstall_package.py"
+_UNINSTALL_SCRIPT = Path(__file__).parent.parent / "packages" / "frameworks" / "workflow-mgt" / "scripts" / "uninstall_package.py"
 spec = importlib.util.spec_from_file_location("uninstall_package", _UNINSTALL_SCRIPT)
 uninstall_module = importlib.util.module_from_spec(spec)
 sys.modules["uninstall_package"] = uninstall_module

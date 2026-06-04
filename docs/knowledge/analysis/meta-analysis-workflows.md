@@ -64,7 +64,7 @@ This document provides **comprehensive meta-analysis** of workflow structures ac
 ### 1.2 File Location Convergence
 
 **Framework Package Location:**
-- **Path:** `packages/frameworks/workflow mgt/workflows/`
+- **Path:** `packages/frameworks/workflow-mgt/workflows/`
 - **Frequency:** 30% (3/10 projects)
 - **Status:** ⚠️ ADK pattern
 
@@ -235,7 +235,7 @@ This document provides **comprehensive meta-analysis** of workflow structures ac
 
 **Recommended: YAML Workflow Files**
 - **Format:** `{workflow-name}-workflow.yaml`
-- **Location:** `workflows/` directory (project root) or `packages/frameworks/workflow mgt/workflows/` (framework)
+- **Location:** `workflows/` directory (project root) or `packages/frameworks/workflow-mgt/workflows/` (framework)
 - **Legacy Support:** Support `\{name\}.yaml` format, script-based workflows (`.py`/`.sh`)
 
 **Rationale:**
@@ -285,7 +285,7 @@ This document provides **comprehensive meta-analysis** of workflow structures ac
 version_file: src/{project}/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 ```
 

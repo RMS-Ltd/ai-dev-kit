@@ -27,7 +27,7 @@ Publication N/A Reason: Tooling/config task — no specification/test-design/imp
 
 - [FR-093](../../../fr-br/FR-093-ukw-slash-command-claude-code.md) requirements.
 - Existing `/rw` slash command at `.claude/commands/rw.md` as pattern reference.
-- UKW canonical step guide: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`.
+- UKW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`.
 - UKW trigger spec: `.cursorrules` → `### 🔄 UPDATE KANBAN WORKFLOW (UKW) TRIGGER`.
 
 ---

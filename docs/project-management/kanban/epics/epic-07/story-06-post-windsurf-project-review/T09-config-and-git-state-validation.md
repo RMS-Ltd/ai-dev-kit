@@ -56,7 +56,7 @@ All paths resolved from repository root; **all OK**.
 | `version_file` | `src/fynd_deals/version.py` | OK (file) |
 | `main_changelog` | `CHANGELOG.md` | OK (file) |
 | `changelog_dir` | `docs/changelog-and-release-notes/changelog-archive` | OK (dir) |
-| `scripts_path` | `packages/frameworks/workflow mgt/scripts` | OK (dir) |
+| `scripts_path` | `packages/frameworks/workflow-mgt/scripts` | OK (dir) |
 | `readme_file` | `README.md` | OK (file) |
 | `kanban_root` | `docs/project-management/kanban` | OK (dir) |
 | `kanban_board` | `kboard.md` (under `kanban_root`) | OK (file) |
@@ -84,7 +84,7 @@ All paths resolved from repository root; **all OK**.
 
 ### 4. `.cursorrules` vs `rw-config.yaml`
 
-- **File Paths (ai-dev-kit)** block lists `src/fynd_deals/version.py`, `CHANGELOG.md`, changelog archive under `docs/changelog-and-release-notes/changelog-archive/`, kanban under `docs/project-management/kanban/`, validators under `packages/frameworks/workflow mgt/scripts/validation/` — **matches** live `rw-config` keys and repo layout.  
+- **File Paths (ai-dev-kit)** block lists `src/fynd_deals/version.py`, `CHANGELOG.md`, changelog archive under `docs/changelog-and-release-notes/changelog-archive/`, kanban under `docs/project-management/kanban/`, validators under `packages/frameworks/workflow-mgt/scripts/validation/` — **matches** live `rw-config` keys and repo layout.  
 - **Kanban board:** Rules mention `_index.md` or `kboard.md`; both exist; `rw-config` primary board file is `kboard.md` — consistent.  
 - **Embedded YAML example** in rules uses generic fallback `docs/changelogs` for projects without config — **not** a contradiction; rules state config overrides when present.  
 - **`validate_rw_task_intent.py`** referenced in rules — present under `scripts_path/validation/`.

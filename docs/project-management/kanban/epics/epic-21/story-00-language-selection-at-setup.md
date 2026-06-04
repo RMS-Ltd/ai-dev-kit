@@ -300,7 +300,7 @@ localization:
 
 - `docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` - Feature request
 - `docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md` - Setup process
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py` - RW installer
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` - RW installer
 - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` - Epic 21 canonical definition
 
 ---

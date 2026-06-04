@@ -54,7 +54,7 @@ Enable portable agent-managed workflow execution across Cursor, Windsurf/Cascade
 
 | Requirement | Specification artifact |
 | ----------- | --------------------- |
-| RF1–RF2 | [workflow-step-tracker-contract.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) |
+| RF1–RF2 | [workflow-step-tracker-contract.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) |
 | RF3 | Contract §Windsurf / Cascade appendix |
 | RF4 | [workflow-agent-run-log-v1.schema.json](../architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json) + example |
 | RF5 | RW agent guide Step 17 + agent run log references |
@@ -182,7 +182,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | ------ | -------------- | ----------- | --------- | ------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E2S01T23-*.md` | NOT_APPLICABLE | evergreen | T23 Input/References |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-011-*.md` | PUBLISHED | evergreen | ADR-008, contract |
-| D-C3 | `packages/frameworks/workflow mgt/KB/.../vwmp/workflow-step-tracker-contract.md` | PUBLISHED | evergreen | All workflow guides |
+| D-C3 | `packages/frameworks/workflow-mgt/KB/.../vwmp/workflow-step-tracker-contract.md` | PUBLISHED | evergreen | All workflow guides |
 | D-C4–D-C5 | `docs/architecture/standards-and-adrs/{schemas,examples}/` | PUBLISHED | evergreen | ADR-011, RW guide |
 
 ---

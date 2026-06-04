@@ -166,7 +166,7 @@ Map each Phase 5 deliverable to a **canonical location** in the project document
 | Kanban task / story / epic | `docs/project-management/kanban/...` |
 | FR / BR / UXR | `docs/project-management/kanban/fr-br/` |
 | Architecture / ADR / policy | `docs/architecture/standards-and-adrs/` |
-| Workflow / developer KB | `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/` |
+| Workflow / developer KB | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/` |
 | Framework package docs | Under relevant `packages/frameworks/{name}/` |
 | User-facing docs | `docs/documentation/user-docs/` |
 | Docusaurus-published | `portal/` navigation + source under `docs/` (see BR-066) |
@@ -254,7 +254,7 @@ Use `rw-config.yaml` values when present. Fallbacks:
 
 ## Reference Documentation
 
-- IPW canonical step guide: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- IPW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - Plan doc template: `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
 - FR-042 (canonical IPW definition): `docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md`
 - FR-094 (this command's origin): `docs/project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md`

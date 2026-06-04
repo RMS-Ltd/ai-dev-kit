@@ -32,10 +32,10 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 - [IPP-E02S01T22](../../../../implementation-cycles/IPP-E02S01T22-rw-perpetual-version-py-build-br075.md)
 - [BR-075](../../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
 - `rw-config.yaml` → `version_file: src/ai_dev_kit/version.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
-- `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py` (`kanban_init`)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
+- `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py` (`kanban_init`)
 - `.cursor/skills/version-bump/SKILL.md` (legacy path hazard)
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ---
 

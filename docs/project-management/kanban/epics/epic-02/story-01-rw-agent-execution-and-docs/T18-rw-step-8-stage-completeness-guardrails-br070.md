@@ -55,8 +55,8 @@ Harden RW Step 8 so release commits cannot omit Step-7 outputs. Add deterministi
 
 ## Completion Evidence
 
-- Pre-commit validator: `packages/frameworks/workflow mgt/scripts/validate_rw_step7_completeness.py` (9 tests, all green)
-- Post-commit validator: `packages/frameworks/workflow mgt/scripts/validate_rw_step7_post_commit.py` (8 tests, all green)
+- Pre-commit validator: `packages/frameworks/workflow-mgt/scripts/validate_rw_step7_completeness.py` (9 tests, all green)
+- Post-commit validator: `packages/frameworks/workflow-mgt/scripts/validate_rw_step7_post_commit.py` (8 tests, all green)
 - Test suites: `test_validate_rw_step7_completeness.py`, `test_validate_rw_step7_post_commit.py`
 - RW execution guide: Step 11.5 documented in `release-workflow-agent-execution.md`
 - Workflow YAML: `step-10.5` added to `release-workflow.yaml`
@@ -67,18 +67,18 @@ Harden RW Step 8 so release commits cannot omit Step-7 outputs. Add deterministi
 
 - [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
-- [Release Workflow Agent Execution Guide](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- [Release Workflow Agent Execution Guide](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 
 ---
 
 ## References
 
 - [IPW Plan — E02:S01:T18](../../../../../../.claude/plans/e2-s01-t18-polished-cerf.md)
-- `packages/frameworks/workflow mgt/scripts/validate_rw_step7_completeness.py`
-- `packages/frameworks/workflow mgt/scripts/test_validate_rw_step7_completeness.py`
-- `packages/frameworks/workflow mgt/scripts/validate_rw_step7_post_commit.py`
-- `packages/frameworks/workflow mgt/scripts/test_validate_rw_step7_post_commit.py`
-- `packages/frameworks/workflow mgt/scripts/validate_release_readiness.py` (Gate 5)
+- `packages/frameworks/workflow-mgt/scripts/validate_rw_step7_completeness.py`
+- `packages/frameworks/workflow-mgt/scripts/test_validate_rw_step7_completeness.py`
+- `packages/frameworks/workflow-mgt/scripts/validate_rw_step7_post_commit.py`
+- `packages/frameworks/workflow-mgt/scripts/test_validate_rw_step7_post_commit.py`
+- `packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py` (Gate 5)
 
 ---
 

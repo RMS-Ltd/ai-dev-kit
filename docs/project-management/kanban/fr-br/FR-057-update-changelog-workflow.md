@@ -67,7 +67,7 @@ UCW must:
 
 ## Proposed Scope
 
-- Create `packages/frameworks/workflow mgt/workflows/update-changelog-workflow/` with README, workflow YAML, config.  
+- Create `packages/frameworks/workflow-mgt/workflows/update-changelog-workflow/` with README, workflow YAML, config.  
 - Implement Python entry script (e.g., `scripts/update_changelog_docs.py`) handling retention + archival.  
 - Wire UCW into RW optional step (similar to CMW).  
 - Document SOP in `docs/maintenance/release-runbook.md` + `CHANGELOG.md` policy section.  

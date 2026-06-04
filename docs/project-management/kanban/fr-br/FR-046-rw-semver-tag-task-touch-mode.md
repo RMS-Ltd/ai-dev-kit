@@ -216,10 +216,10 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 ### Verification Evidence
 
 - Closure wave IPP: [`IPP-E05S01T46-fr046-closure-wave.md`](../../implementation-cycles/IPP-E05S01T46-fr046-closure-wave.md) §7 (requirement-to-evidence matrix).
-- `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_fr046_rw_tagging.py" "packages/frameworks/workflow mgt/scripts/version/test_fr046_comprehensive.py" "packages/frameworks/workflow mgt/scripts/version/test_task_touch_mapping.py" -q` → **24 passed** (2026-05-29).
-- `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_create_github_release_parsing.py" -q` → **7 passed**.
-- `python "packages/frameworks/workflow mgt/scripts/validation/validate_semver_tag_alignment.py"` → **✅ OK**.
-- `python -m pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_branch_context.py" -q` → **7 passed**.
+- `python -m pytest "packages/frameworks/workflow-mgt/scripts/version/test_fr046_rw_tagging.py" "packages/frameworks/workflow-mgt/scripts/version/test_fr046_comprehensive.py" "packages/frameworks/workflow-mgt/scripts/version/test_task_touch_mapping.py" -q` → **24 passed** (2026-05-29).
+- `python -m pytest "packages/frameworks/workflow-mgt/scripts/version/test_create_github_release_parsing.py" -q` → **7 passed**.
+- `python "packages/frameworks/workflow-mgt/scripts/validation/validate_semver_tag_alignment.py"` → **✅ OK**.
+- `python -m pytest "packages/frameworks/workflow-mgt/scripts/validation/test_validate_branch_context.py" -q` → **7 passed**.
 - **Live smoke:** commit `c01aa83` — `v0.4.822` + `v0.2.16.4+16` on same commit (dual-config RW).
 
 ### Latest release anchor

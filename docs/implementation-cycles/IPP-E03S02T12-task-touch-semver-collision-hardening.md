@@ -105,12 +105,12 @@ Converter gains PATCH- and core-level injective guards; counter syncs to `max(pa
 
 ### 4.1 Files to create or modify
 
-- `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
-- `packages/frameworks/workflow mgt/scripts/version/audit_semver_registry_collisions.py`
-- `packages/frameworks/workflow mgt/scripts/version/repair_semver_registry_collisions.py`
-- `packages/frameworks/workflow mgt/scripts/version/task_touch_registry_audit.py` (shared lib)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_semver_registry_injective.py`
-- `packages/frameworks/workflow mgt/scripts/version/test_task_touch_mapping.py`
+- `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
+- `packages/frameworks/workflow-mgt/scripts/version/audit_semver_registry_collisions.py`
+- `packages/frameworks/workflow-mgt/scripts/version/repair_semver_registry_collisions.py`
+- `packages/frameworks/workflow-mgt/scripts/version/task_touch_registry_audit.py` (shared lib)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_semver_registry_injective.py`
+- `packages/frameworks/workflow-mgt/scripts/version/test_task_touch_mapping.py`
 - `tests/test_semver_registry_injective.py`
 - `semver-registry.yaml`
 - `docs/maintenance/semver-registry-collision-repair-2026-06-04.md`
@@ -161,6 +161,6 @@ Converter gains PATCH- and core-level injective guards; counter syncs to `max(pa
 
 ## References
 
-- [semver_converter.py](../../packages/frameworks/workflow%20mgt/scripts/version/semver_converter.py)
+- [semver_converter.py](../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
 - [IPW ADR checklist](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [Incident log](../architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md)

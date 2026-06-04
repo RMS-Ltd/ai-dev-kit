@@ -60,7 +60,7 @@ Implement the enhanced workflow logging system with forensic capabilities and ro
 ## Input
 
 - **FR-059**: Complete specification for enhanced workflow logging system
-- **Workflow Executor**: Current implementation in `packages/frameworks/workflow mgt/scripts/workflow_executor.py`
+- **Workflow Executor**: Current implementation in `packages/frameworks/workflow-mgt/scripts/workflow_executor.py`
 - **Documentation Agent**: Current jurisdiction in `docs/project-management/kanban/AGENTS.md`
 - **Housekeeping Process**: TTL enforcement mechanisms
 
@@ -219,7 +219,7 @@ Implement the enhanced workflow logging system with forensic capabilities and ro
 ## Related Documentation
 
 - **FR-059**: Enhanced Workflow Logging System specification
-- **Workflow Executor**: `packages/frameworks/workflow mgt/scripts/workflow_executor.py`
+- **Workflow Executor**: `packages/frameworks/workflow-mgt/scripts/workflow_executor.py`
 - **Documentation Agent**: `docs/project-management/kanban/AGENTS.md`
 - **Housekeeping Process**: TTL enforcement mechanisms
 

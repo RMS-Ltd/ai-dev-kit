@@ -26,7 +26,7 @@ Implement the change to Kanban Task naming policy from 3-digit format (Txxx) to 
 
 - Current Kanban policy documents specifying Txxx format
 - Task naming policy: `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- Task naming policy: `packages/frameworks/numbering & versioning/kanban-governance-policy.md`
+- Task naming policy: `packages/frameworks/numbering-versioning/kanban-governance-policy.md`
 - Task naming policy: `docs/project-management/rituals/policy/kanban-governance-policy.md`
 
 ---
@@ -45,7 +45,7 @@ Implement the change to Kanban Task naming policy from 3-digit format (Txxx) to 
 
 1. **Update Policy Documents:**
    - Update `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-   - Update `packages/frameworks/numbering & versioning/kanban-governance-policy.md`
+   - Update `packages/frameworks/numbering-versioning/kanban-governance-policy.md`
    - Update `docs/project-management/rituals/policy/kanban-governance-policy.md`
    - Change format from `Exx:Sxx:Txxx` to `Exx:Sxx:Txx`
    - Update examples from `E20:S07:T10` to `E20:S07:T10`
@@ -88,6 +88,6 @@ Implement the change to Kanban Task naming policy from 3-digit format (Txxx) to 
 ## References
 
 - **Kanban Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Versioning Policy:** `packages/frameworks/numbering & versioning/kanban-governance-policy.md`
+- **Versioning Policy:** `packages/frameworks/numbering-versioning/kanban-governance-policy.md`
 - **Dev-Kit Policy:** `docs/project-management/rituals/policy/kanban-governance-policy.md`
 

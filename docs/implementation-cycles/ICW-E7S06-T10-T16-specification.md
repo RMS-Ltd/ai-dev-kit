@@ -52,7 +52,7 @@ Review document MUST document findings (or "none observed") for the deterministi
 
 - .cursorrules workflow section
 - .windsurf/skills/ relevant entries (from mapping table)
-- `packages/frameworks/workflow mgt/workflows/{workflow}/` YAML and config
+- `packages/frameworks/workflow-mgt/workflows/{workflow}/` YAML and config
 
 ---
 

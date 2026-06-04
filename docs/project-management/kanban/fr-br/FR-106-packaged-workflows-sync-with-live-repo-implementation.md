@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Reconcile **packaged workflow artefacts** in `packages/frameworks/workflow mgt/` (YAML definitions, `workflow-registry.yaml`, `canonical-rw-steps.yaml`, portable `.cursorrules` excerpts, Claude command files) with the **live agent execution specification** used in ai-dev-kit (root `.cursorrules`, `KB/.../vwmp/*-agent-execution.md`, validators). Adopters copy the package; drift causes incorrect RW/UKW behavior, stale validator lists, and inconsistent step numbering.
+Reconcile **packaged workflow artefacts** in `packages/frameworks/workflow-mgt/` (YAML definitions, `workflow-registry.yaml`, `canonical-rw-steps.yaml`, portable `.cursorrules` excerpts, Claude command files) with the **live agent execution specification** used in ai-dev-kit (root `.cursorrules`, `KB/.../vwmp/*-agent-execution.md`, validators). Adopters copy the package; drift causes incorrect RW/UKW behavior, stale validator lists, and inconsistent step numbering.
 
 ---
 
@@ -46,7 +46,7 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ### In scope
 
-- Extend RW dual-source parity ([`rw-trigger-dual-source-parity.md`](../../../../packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md)) to Step 9 FR-097 / FR-092 validators and `.claude/commands/rw.md`.
+- Extend RW dual-source parity ([`rw-trigger-dual-source-parity.md`](../../../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)) to Step 9 FR-097 / FR-092 validators and `.claude/commands/rw.md`.
 - Refresh `canonical-rw-steps.yaml` and align `validate_canonical_steps.py` expectations.
 - Consolidate authoritative `release-workflow.yaml`; remove or deprecate stale flat copy; fix validator lists and placeholder paths.
 - Correct `workflow-registry.yaml` metadata (minimum: RW, UKW, PKG-VERSION).

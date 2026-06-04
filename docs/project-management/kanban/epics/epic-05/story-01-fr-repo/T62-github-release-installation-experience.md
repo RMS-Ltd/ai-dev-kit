@@ -33,7 +33,7 @@ Implement the GitHub-release installation workflow for AI Dev Kit frameworks so 
    - Automate the build/publish pipeline (script or CI job) and document operator steps.
 
 2. **Installer Enhancements**  
-   - Ensure `packages/frameworks/workflow mgt/scripts/install_package_from_release.py` handles GitHub releases (download, hash verify, extraction, helpful errors).  
+   - Ensure `packages/frameworks/workflow-mgt/scripts/install_package_from_release.py` handles GitHub releases (download, hash verify, extraction, helpful errors).  
    - Add dry-run/verbose guidance and integrate install receipt generation hooks.
 
 3. **Installation Receipt Artifact**  
@@ -71,7 +71,7 @@ Implement the GitHub-release installation workflow for AI Dev Kit frameworks so 
 
 ## Implementation notes (RW #1 — in progress)
 
-- `packages/frameworks/workflow mgt/scripts/install_receipt.py` — receipt writer (FR-062 simplified schema)
+- `packages/frameworks/workflow-mgt/scripts/install_receipt.py` — receipt writer (FR-062 simplified schema)
 - `install_package_from_release.py` — receipt on success; improved 404 messaging for missing release assets
 - `.github/workflows/framework-release.yml` — build + `gh release upload` on tag push / workflow_dispatch
 - `tests/tests/test_install_receipt_fr062.py` — receipt schema unit tests

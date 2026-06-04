@@ -66,8 +66,8 @@ policy_salience:
 **Version:** 1.0.0
 
 **Based on Framework:** This policy is a dev-kit specialisation of the Changelog Management Workflow (CMW) archival patterns defined in the Workflow Management framework. For the canonical workflow definition and archival implementation, see:
-- `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- `packages/frameworks/workflow mgt/scripts/changelog/archive_entries.py`
+- `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- `packages/frameworks/workflow-mgt/scripts/changelog/archive_entries.py`
 
 ---
 
@@ -469,7 +469,7 @@ changelog_archival:
 - Release Workflow (RW) - Integration point for archival triggers
 
 **Related Documentation:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/changelog-management-workflow-agent-execution.md` - CMW execution guide
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/changelog-management-workflow-agent-execution.md` - CMW execution guide
 
 ---
 

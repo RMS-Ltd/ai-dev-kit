@@ -49,7 +49,7 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
 
 - [x] **AC1:** All in-scope boards pass `validate_kanban_moscow_spacing.py --strict` (kboard, fbuboard, guide, structure, index).
 - [x] **AC2:** Kanban guide documents rule with before/after examples and UXR ownership ([kanban-board-guide.md](../../../kanban-board-guide.md) § Formatting Governance).
-- [x] **AC3:** RW agent guide references **E07:S01:T09** + validator ([release-workflow-agent-execution.md](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)).
+- [x] **AC3:** RW agent guide references **E07:S01:T09** + validator ([release-workflow-agent-execution.md](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)).
 - [x] **AC4:** Validator prevents regression; Gate 10 (warn) on release readiness; UKW guide documents post-MoSCOW check.
 - [x] **AC5:** Evidence bundle linked above; validator PASS log in maintenance log.
 
@@ -58,7 +58,7 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
 ## RW runbook snippet
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_kanban_moscow_spacing.py" --project-root . --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_moscow_spacing.py" --project-root . --strict
 ```
 
 Attribute kanban spacing work to **E07:S01:T09** (`RW E07:S01:T09` or `RW E07:S01:T09 --art` when version file differs).

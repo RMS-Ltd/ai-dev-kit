@@ -98,7 +98,7 @@ This plan covers Phase 3 implementation:
 Create main package builder script with command-line interface, argument parsing, and basic structure.
 
 **Tasks:**
-- Create `packages/frameworks/workflow mgt/scripts/build_package.py` (or similar location)
+- Create `packages/frameworks/workflow-mgt/scripts/build_package.py` (or similar location)
 - Define CLI interface (framework name, version, output directory)
 - Implement argument parsing (argparse)
 - Define main execution flow
@@ -111,7 +111,7 @@ Create main package builder script with command-line interface, argument parsing
 - ✅ Basic error handling implemented
 
 **Files to Create:**
-- `packages/frameworks/workflow mgt/scripts/build_package.py`
+- `packages/frameworks/workflow-mgt/scripts/build_package.py`
 
 **References:**
 - Design spec: `docs/architecture/standards-and-adrs/package-management-design.md`
@@ -142,7 +142,7 @@ Implement tar.gz archive creation from framework source directory.
 - ✅ Archives extract correctly (test with tar -xzf)
 
 **Files to Modify:**
-- `packages/frameworks/workflow mgt/scripts/build_package.py`
+- `packages/frameworks/workflow-mgt/scripts/build_package.py`
 
 **References:**
 - Design spec: Package Structure section
@@ -173,7 +173,7 @@ Generate MANIFEST.json with package metadata (name, version, framework info, fil
 - ✅ JSON schema valid and well-formed
 
 **Files to Modify:**
-- `packages/frameworks/workflow mgt/scripts/build_package.py`
+- `packages/frameworks/workflow-mgt/scripts/build_package.py`
 
 **References:**
 - Design spec: MANIFEST.json schema section
@@ -204,7 +204,7 @@ Compute SHA-256 hash of created package file and generate hash file.
 - ✅ Hash included in MANIFEST.json (optional)
 
 **Files to Modify:**
-- `packages/frameworks/workflow mgt/scripts/build_package.py`
+- `packages/frameworks/workflow-mgt/scripts/build_package.py`
 
 **References:**
 - Hash verification spec: `docs/architecture/standards-and-adrs/package-hash-verification-spec.md`
@@ -238,7 +238,7 @@ Comprehensive testing of package builder with all frameworks, edge cases, and va
 - ✅ Integration with release workflow tested
 
 **Files to Modify:**
-- `packages/frameworks/workflow mgt/scripts/build_package.py`
+- `packages/frameworks/workflow-mgt/scripts/build_package.py`
 - Test scripts/examples
 
 **References:**
@@ -280,7 +280,7 @@ Implement core SHA-256 hash verification function.
 - ✅ Clear error messages for failures
 
 **Files to Create:**
-- `packages/frameworks/workflow mgt/scripts/verify_package.py` (or integrate with build_package.py)
+- `packages/frameworks/workflow-mgt/scripts/verify_package.py` (or integrate with build_package.py)
 
 **References:**
 - Hash verification spec: SHA-256 algorithm, hash file format
@@ -311,7 +311,7 @@ Create CLI interface for hash verification and integrate with installation proce
 - ✅ Clear success/failure messages
 
 **Files to Create/Modify:**
-- `packages/frameworks/workflow mgt/scripts/verify_package.py`
+- `packages/frameworks/workflow-mgt/scripts/verify_package.py`
 - Update `build_package.py` to call verification after creation
 
 **References:**
@@ -346,7 +346,7 @@ Comprehensive testing of hash verification with various scenarios.
 - ✅ All edge cases handled correctly
 
 **Files to Modify:**
-- `packages/frameworks/workflow mgt/scripts/verify_package.py`
+- `packages/frameworks/workflow-mgt/scripts/verify_package.py`
 - Test scripts
 
 **References:**
@@ -424,7 +424,7 @@ Optionally integrate package creation into release workflow (automated upload vi
 
 **References:**
 - GitHub API documentation (Releases API)
-- Release workflow: `packages/frameworks/workflow mgt/`
+- Release workflow: `packages/frameworks/workflow-mgt/`
 
 **Note:** Manual upload process is acceptable initially. Automation can be deferred if time-constrained.
 

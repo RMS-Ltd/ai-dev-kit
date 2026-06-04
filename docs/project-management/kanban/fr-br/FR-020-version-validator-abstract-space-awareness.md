@@ -268,12 +268,12 @@ FR-016 → E4:S11 → E2:S09 → E02:S10:T01 → E02:S10:T02 → E02:S10:T06 (th
 - **FR-017:** `docs/project-management/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md`
 - **FR-018:** `docs/project-management/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
 - **E2:S10:** `docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md`
-- **Validator Script:** `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+- **Validator Script:** `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 
 ---
 
 **Template Usage:**
 This FR follows the Kanban Framework FR template.  
-This feature request is part of the Workflow Management Framework. See `packages/frameworks/workflow mgt/` for complete framework documentation.
+This feature request is part of the Workflow Management Framework. See `packages/frameworks/workflow-mgt/` for complete framework documentation.
 

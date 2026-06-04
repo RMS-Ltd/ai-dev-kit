@@ -182,7 +182,7 @@ This document synthesizes findings from **comprehensive analysis of 10 projects*
 
 **Naming:**
 - **Canonical:** `{workflow-name}-workflow.yaml` (e.g., `release-workflow.yaml`)
-- **Location:** `packages/frameworks/workflow mgt/workflows/` (framework) or `workflows/` (project root)
+- **Location:** `packages/frameworks/workflow-mgt/workflows/` (framework) or `workflows/` (project root)
 - **Legacy Support:** `\{name\}.yaml`, script-based workflows (`.py`/`.sh`)
 
 **Rationale:** 30% convergence on canonical format, but support legacy for migration

@@ -320,8 +320,8 @@ Integrate PDCA cycle into Release Workflow to:
 
 - **PDCA Integration Plan:** `docs/architecture/standards-and-adrs/rw-pdca-integration-plan.md`
 - **Changelog Language Analysis:** `docs/architecture/standards-and-adrs/rw-changelog-commit-language-analysis.md`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **RW Workflow YAML:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 
 ---
 

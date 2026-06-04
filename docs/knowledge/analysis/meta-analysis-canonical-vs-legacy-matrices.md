@@ -133,7 +133,7 @@ This document provides **canonical vs legacy matrices** comparing ADK's canonica
 | Aspect | ADK Canonical | Real-World Pattern | Gap/Over-Engineering | Legacy Support Needed |
 |--------|---------------|-------------------|---------------------|----------------------|
 | **File Naming** | `\{name\}-workflow.yaml` | `\{name\}-workflow.yaml` (33%), `\{name\}.yaml` (22%) | ⚠️ Gap: Support `\{name\}.yaml` | ✅ Yes - Support `.yaml` without `-workflow` |
-| **File Location** | `workflows/` directory | `workflows/` (33%), `packages/frameworks/workflow mgt/workflows/` (33%) | ⚠️ Gap: Support framework location | ✅ Yes - Support framework package location |
+| **File Location** | `workflows/` directory | `workflows/` (33%), `packages/frameworks/workflow-mgt/workflows/` (33%) | ⚠️ Gap: Support framework location | ✅ Yes - Support framework package location |
 | **Script-Based** | Not recommended | `.py`/`.sh` scripts (22%) | ⚠️ Gap: Support script-based workflows | ✅ Yes - Support legacy script workflows |
 
 **Key Findings:**

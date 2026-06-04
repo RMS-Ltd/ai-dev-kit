@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.874+4` | **Internal:** `v0.3.2.12+4` (E03:S02:T12 / FR-045) | **Last Updated:** 2026-06-04
+**Version (SemVer):** `v0.4.875+1` | **Internal:** `v0.6.9.18+1` (E06:S09:T18 / BR-087) | **Last Updated:** 2026-06-05
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -74,8 +74,8 @@ python3 scripts/install_kanban_framework.py --mode fresh
 **Developer Resources:**
 - [Architecture Documentation](docs/architecture)
 - [Framework Development Guides](packages/frameworks)
-- [Workflow Documentation](packages/frameworks/workflow mgt/docs)
-- **Workflow library** — [11 registered workflows](#workflows) in [`workflow-registry.yaml`](packages/frameworks/workflow%20mgt/workflows/workflow-registry.yaml) (see [Workflow Management README](packages/frameworks/workflow%20mgt/README.md) for tables and methodology)
+- [Workflow Documentation](packages/frameworks/workflow-mgt/docs)
+- **Workflow library** — [11 registered workflows](#workflows) in [`workflow-registry.yaml`](packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml) (see [Workflow Management README](packages/frameworks/workflow-mgt/README.md) for tables and methodology)
 - **Maintainers:** [Build and upload runbooks](docs/maintenance/README.md) (package build/publish)
 
 ### 🔍 I'm looking for a specific framework
@@ -115,7 +115,7 @@ Each framework includes installation guides, usage examples, and comprehensive d
 
 ## Workflows
 
-**Canonical registry:** Eleven workflows are defined in [`packages/frameworks/workflow mgt/workflows/workflow-registry.yaml`](packages/frameworks/workflow%20mgt/workflows/workflow-registry.yaml). Some are invoked primarily through **Cursor agent rules** (see [`.cursorrules`](.cursorrules)); others are run via scripts or followed from package YAML/READMEs.
+**Canonical registry:** Eleven workflows are defined in [`packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml`](packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml). Some are invoked primarily through **Cursor agent rules** (see [`.cursorrules`](.cursorrules)); others are run via scripts or followed from package YAML/READMEs.
 
 ### Primary Cursor triggers (this repo)
 
@@ -123,39 +123,39 @@ These are the main **user-typed** triggers documented in `.cursorrules`. **Human
 
 | Trigger | Workflow | What it does | Invocation |
 |--------|-----------|--------------|------------|
-| **RW** | Release Workflow | Version bump, changelogs, kanban markers, commit, tag, push | **`RW E5:S01:T64`** (examples: `RW E7S01T10`, `RW E7:S01:T10`). The **task id must appear in the same message** as `RW`, `RW -d`, or `RW -k`. See [FR-060](docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md) and [Release Workflow agent execution](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). |
-| **UKW** | Update Kanban Workflow | Bookkeeping, priorities, board sync | `UKW` (full run), or `UKW -u`, `UKW -p`, `UKW -a <target>`. See [UKW agent execution](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md). |
-| **PVW** | Package Version Workflow | Package-level version analysis/bumps | `PVW` (often RW Step 2.5). See [PVW agent execution](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md). |
-| **IPW** / **ICW** | Implementation Planning / Cycle | Spec → tests → implementation plan (`IPP` or ICW trio) | `IPW E02:S16:T15` or `/ipw` — **plan mode** required; then implement → **RW**. See [workflow initiation cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) and [Implementation Cycle SOP](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
+| **RW** | Release Workflow | Version bump, changelogs, kanban markers, commit, tag, push | **`RW E5:S01:T64`** (examples: `RW E7S01T10`, `RW E7:S01:T10`). The **task id must appear in the same message** as `RW`, `RW -d`, or `RW -k`. See [FR-060](docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md) and [Release Workflow agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). |
+| **UKW** | Update Kanban Workflow | Bookkeeping, priorities, board sync | `UKW` (full run), or `UKW -u`, `UKW -p`, `UKW -a <target>`. See [UKW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md). |
+| **PVW** | Package Version Workflow | Package-level version analysis/bumps | `PVW` (often RW Step 2.5). See [PVW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md). |
+| **IPW** / **ICW** | Implementation Planning / Cycle | Spec → tests → implementation plan (`IPP` or ICW trio) | `IPW E02:S16:T15` or `/ipw` — **plan mode** required; then implement → **RW**. See [workflow initiation cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) and [Implementation Cycle SOP](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
 
-**CMW** (Changelog Management Workflow) usually runs as **RW Step 9.5** when changelog size exceeds policy, or via the maintainer skill under [`.cursor/skills/cmw-maintain/`](.cursor/skills/cmw-maintain/SKILL.md). Package entry: [changelog-management-workflow README](packages/frameworks/workflow%20mgt/workflows/changelog-management-workflow/README.md).
+**CMW** (Changelog Management Workflow) usually runs as **RW Step 9.5** when changelog size exceeds policy, or via the maintainer skill under [`.cursor/skills/cmw-maintain/`](.cursor/skills/cmw-maintain/SKILL.md). Package entry: [changelog-management-workflow README](packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/README.md).
 
 ### Packaged workflows (registry summary)
 
 | Workflow | Abbrev. | Reference triggers (YAML) | Package README |
 |----------|---------|----------------------------|----------------|
-| Release Workflow | RW | `RW`, `RW -k`, `RW -d` | [release-workflow](packages/frameworks/workflow%20mgt/workflows/release-workflow/README.md) |
-| Changelog Management Workflow | CMW | `CMW` | [changelog-management-workflow](packages/frameworks/workflow%20mgt/workflows/changelog-management-workflow/README.md) |
-| Update Kanban Workflow | UKW | `UKW` | [update-kanban-workflow](packages/frameworks/workflow%20mgt/workflows/update-kanban-workflow/README.md) |
-| Post-Implementation Review | PIR | `PIR` | [post-implementation-review](packages/frameworks/workflow%20mgt/workflows/post-implementation-review/README.md) |
-| Intake Workflow | INTAKE | `INTAKE` | [intake-workflow](packages/frameworks/workflow%20mgt/workflows/intake-workflow/README.md) |
-| Migration Workflow | MIGRATION | `MIGRATION` | [migration-workflow](packages/frameworks/workflow%20mgt/workflows/migration-workflow/README.md) |
-| Refactor Workflow | REFACTOR | `REFACTOR` | [refactor-workflow](packages/frameworks/workflow%20mgt/workflows/refactor-workflow/README.md) |
-| Testing Workflow | TESTING | `TESTING` | [testing-workflow](packages/frameworks/workflow%20mgt/workflows/testing-workflow/README.md) |
-| Package Version Workflow | PKG-VERSION / PVW | `PKG-VERSION` (Cursor: **PVW**) | [package-version-workflow](packages/frameworks/workflow%20mgt/workflows/package-version-workflow/README.md) |
-| Framework Health Monitoring | FHM | `FHM` | [framework-health-monitoring-workflow](packages/frameworks/workflow%20mgt/workflows/framework-health-monitoring-workflow/README.md) |
-| Implementation Cycle Workflow | ICW | `ICW` | [implementation-cycle-workflow](packages/frameworks/workflow%20mgt/workflows/implementation-cycle-workflow/README.md) |
+| Release Workflow | RW | `RW`, `RW -k`, `RW -d` | [release-workflow](packages/frameworks/workflow-mgt/workflows/release-workflow/README.md) |
+| Changelog Management Workflow | CMW | `CMW` | [changelog-management-workflow](packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/README.md) |
+| Update Kanban Workflow | UKW | `UKW` | [update-kanban-workflow](packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/README.md) |
+| Post-Implementation Review | PIR | `PIR` | [post-implementation-review](packages/frameworks/workflow-mgt/workflows/post-implementation-review/README.md) |
+| Intake Workflow | INTAKE | `INTAKE` | [intake-workflow](packages/frameworks/workflow-mgt/workflows/intake-workflow/README.md) |
+| Migration Workflow | MIGRATION | `MIGRATION` | [migration-workflow](packages/frameworks/workflow-mgt/workflows/migration-workflow/README.md) |
+| Refactor Workflow | REFACTOR | `REFACTOR` | [refactor-workflow](packages/frameworks/workflow-mgt/workflows/refactor-workflow/README.md) |
+| Testing Workflow | TESTING | `TESTING` | [testing-workflow](packages/frameworks/workflow-mgt/workflows/testing-workflow/README.md) |
+| Package Version Workflow | PKG-VERSION / PVW | `PKG-VERSION` (Cursor: **PVW**) | [package-version-workflow](packages/frameworks/workflow-mgt/workflows/package-version-workflow/README.md) |
+| Framework Health Monitoring | FHM | `FHM` | [framework-health-monitoring-workflow](packages/frameworks/workflow-mgt/workflows/framework-health-monitoring-workflow/README.md) |
+| Implementation Cycle Workflow | ICW | `ICW` | [implementation-cycle-workflow](packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/README.md) |
 
 ### Agent execution guides (deep dives)
 
-- [Agent-driven workflow execution](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md)
-- [Release Workflow](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) · [Reference](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
-- [Update Kanban Workflow](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
-- [Intake Workflow](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/intake-workflow-agent-execution.md)
-- [Migration](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/migration-workflow-agent-execution.md) · [Refactor](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/refactor-workflow-agent-execution.md) · [Testing](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md)
-- [PIR](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)
+- [Agent-driven workflow execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md)
+- [Release Workflow](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) · [Reference](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
+- [Update Kanban Workflow](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [Intake Workflow](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/intake-workflow-agent-execution.md)
+- [Migration](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/migration-workflow-agent-execution.md) · [Refactor](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/refactor-workflow-agent-execution.md) · [Testing](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md)
+- [PIR](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)
 
-For the full framework overview and validation tooling, see **[Workflow Management README](packages/frameworks/workflow%20mgt/README.md)**.
+For the full framework overview and validation tooling, see **[Workflow Management README](packages/frameworks/workflow-mgt/README.md)**.
 
 ---
 
@@ -223,9 +223,9 @@ Follow **[INSTALL_IN_YOUR_PROJECT.md](INSTALL_IN_YOUR_PROJECT.md)** and the [Qui
 | Area | Location |
 |------|-----------|
 | Packages index | [`packages/README.md`](packages/README.md) |
-| Workflow Management | [`packages/frameworks/workflow mgt/README.md`](packages/frameworks/workflow%20mgt/README.md) |
+| Workflow Management | [`packages/frameworks/workflow-mgt/README.md`](packages/frameworks/workflow-mgt/README.md) |
 | Kanban | [`packages/frameworks/kanban/README.md`](packages/frameworks/kanban/README.md) |
-| Numbering & Versioning | [`packages/frameworks/numbering & versioning/README.md`](packages/frameworks/numbering%20%26%20versioning/README.md) |
+| Numbering & Versioning | [`packages/frameworks/numbering-versioning/README.md`](packages/frameworks/numbering%20%26%20versioning/README.md) |
 | Document Lifecycle | [`packages/frameworks/doc-lifecycle/README.md`](packages/frameworks/doc-lifecycle/README.md) |
 | Debug Path | [`packages/frameworks/debug-path/README.md`](packages/frameworks/debug-path/README.md) |
 

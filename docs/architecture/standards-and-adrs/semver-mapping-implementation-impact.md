@@ -34,14 +34,14 @@ This document identifies all components affected by implementing the SemVer mapp
   - **Changes:** Document dual versioning strategy (internal + SemVer)
   - **Priority:** HIGH
 
-- `packages/frameworks/numbering & versioning/versioning-policy.md` ⚠️ **FRAMEWORK PACKAGE**
+- `packages/frameworks/numbering-versioning/versioning-policy.md` ⚠️ **FRAMEWORK PACKAGE**
   - **Impact:** Framework policy update - **Critical for framework consumers**
   - **Changes:** Add SemVer mapping section with hybrid approach algorithm
   - **Changes:** Document registry-based mapping strategy
   - **Changes:** Add examples of internal → SemVer conversion
   - **Priority:** **HIGH** (framework is portable package, must include new strategy)
 
-- `packages/frameworks/workflow mgt/KB/Architecture/Standards_and_ADRs/versioning-policy.md`
+- `packages/frameworks/workflow-mgt/KB/Architecture/Standards_and_ADRs/versioning-policy.md`
   - **Impact:** Framework reference update
   - **Changes:** Add SemVer mapping documentation
   - **Priority:** MEDIUM
@@ -59,27 +59,27 @@ This document identifies all components affected by implementing the SemVer mapp
   - **Changes:** Document SemVer for releases, internal for development
   - **Priority:** MEDIUM
 
-- `packages/frameworks/numbering & versioning/versioning-strategy.md` ⚠️ **FRAMEWORK PACKAGE**
+- `packages/frameworks/numbering-versioning/versioning-strategy.md` ⚠️ **FRAMEWORK PACKAGE**
   - **Impact:** Framework strategy update - **Critical for framework consumers**
   - **Changes:** Add SemVer mapping strategy section
   - **Changes:** Document dual versioning approach (internal for dev, SemVer for releases)
   - **Changes:** Explain registry management and migration path
   - **Priority:** **HIGH** (framework is portable package, must include new strategy)
 
-- `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md` ⚠️ **FRAMEWORK PACKAGE**
+- `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md` ⚠️ **FRAMEWORK PACKAGE**
   - **Impact:** Implementation guide needs SemVer mapping section
   - **Changes:** Add step-by-step SemVer mapping implementation
   - **Changes:** Document registry setup and migration
   - **Changes:** Update dual-versioning guidance with hybrid approach
   - **Priority:** **HIGH** (primary implementation guide for framework consumers)
 
-- `packages/frameworks/numbering & versioning/README.md` ⚠️ **FRAMEWORK PACKAGE**
+- `packages/frameworks/numbering-versioning/README.md` ⚠️ **FRAMEWORK PACKAGE**
   - **Impact:** Framework overview needs SemVer mapping mention
   - **Changes:** Add SemVer mapping to feature list
   - **Changes:** Update dual-versioning references
   - **Priority:** MEDIUM
 
-- `packages/frameworks/numbering & versioning/PACKAGE_OVERVIEW.md` ⚠️ **FRAMEWORK PACKAGE**
+- `packages/frameworks/numbering-versioning/PACKAGE_OVERVIEW.md` ⚠️ **FRAMEWORK PACKAGE**
   - **Impact:** Package overview may need SemVer mapping feature
   - **Changes:** Add SemVer mapping to key features list
   - **Priority:** LOW
@@ -88,13 +88,13 @@ This document identifies all components affected by implementing the SemVer mapp
 
 ## 1.5 ⚠️ CRITICAL: Versioning Framework Package Updates
 
-**Why Critical:** The `packages/frameworks/numbering & versioning/` package is a **portable framework** that other projects copy and use. It **must** include the SemVer mapping strategy so framework consumers can implement dual versioning.
+**Why Critical:** The `packages/frameworks/numbering-versioning/` package is a **portable framework** that other projects copy and use. It **must** include the SemVer mapping strategy so framework consumers can implement dual versioning.
 
 ### Framework Package Files
 
 **Priority: HIGH (Framework is portable package)**
 
-**Files in `packages/frameworks/numbering & versioning/`:**
+**Files in `packages/frameworks/numbering-versioning/`:**
 
 1. **`versioning-policy.md`** ⚠️ **CRITICAL**
    - **Current:** Defines `RC.EPIC.STORY.TASK+BUILD` schema only
@@ -176,11 +176,11 @@ This document identifies all components affected by implementing the SemVer mapp
 
 **Files to Update:**
 - `.cursorrules` (RW Step 11 instructions)
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 - RW execution guide (if exists)
 
 **New Files Needed:**
-- `packages/frameworks/workflow mgt/scripts/version/semver_converter.py` (or similar)
+- `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py` (or similar)
   - Function: `convert_internal_to_semver(rc, epic, story, task, build) -> (major, minor, patch, build)`
   - Function: `load_semver_registry() -> dict`
   - Function: `update_semver_registry(rc, epic, story, minor, patch) -> dict`
@@ -243,7 +243,7 @@ This document identifies all components affected by implementing the SemVer mapp
 ### 3.2 Registry Utilities
 
 **New Script Needed:**
-- `packages/frameworks/workflow mgt/scripts/version/build_semver_registry.py`
+- `packages/frameworks/workflow-mgt/scripts/version/build_semver_registry.py`
   - **Purpose:** Build initial registry from existing git tags
   - **Input:** All git tags matching `v0.*.*.*+*`
   - **Output:** `semver-registry.yaml`
@@ -256,7 +256,7 @@ This document identifies all components affected by implementing the SemVer mapp
 ### 4.1 Version Bump Validation
 
 **Files to Update:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
   - **Impact:** May need updates for SemVer awareness
   - **Changes:** Verify SemVer increases (optional validation)
   - **Priority:** LOW (internal version validation is primary)
@@ -264,7 +264,7 @@ This document identifies all components affected by implementing the SemVer mapp
 ### 4.2 SemVer Validation (New)
 
 **New Script Needed:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_semver_monotonic.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_semver_monotonic.py`
   - **Purpose:** Verify SemVer increases across all releases
   - **Input:** All git tags (both internal and SemVer)
   - **Output:** Validation report
@@ -344,7 +344,7 @@ This document identifies all components affected by implementing the SemVer mapp
 - **Optional:** `semver_enabled: true`
 
 **Files to Update:**
-- `packages/frameworks/workflow mgt/config/rw-config-schema.md`
+- `packages/frameworks/workflow-mgt/config/rw-config-schema.md`
 - `rw-config.yaml` template/examples
 - RW installer script
 
@@ -360,7 +360,7 @@ This document identifies all components affected by implementing the SemVer mapp
   - **Changes:** Add SemVer conversion logic to Step 11
   - **Priority:** HIGH
 
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
   - **Impact:** Template for other projects
   - **Changes:** Add SemVer conversion to Step 11 template
   - **Priority:** HIGH
@@ -403,7 +403,7 @@ This document identifies all components affected by implementing the SemVer mapp
 - **Document dual versioning** in package releases
 
 **Files to Review:**
-- `packages/frameworks/workflow mgt/workflows/package-version-workflow.yaml`
+- `packages/frameworks/workflow-mgt/workflows/package-version-workflow.yaml`
 - PVW documentation
 - Package versioning criteria
 
@@ -434,8 +434,8 @@ This document identifies all components affected by implementing the SemVer mapp
 - Monotonic increase validation tests
 
 **Files to Create:**
-- `packages/frameworks/workflow mgt/scripts/version/tests/test_semver_converter.py`
-- `packages/frameworks/workflow mgt/scripts/version/tests/test_registry_management.py`
+- `packages/frameworks/workflow-mgt/scripts/version/tests/test_semver_converter.py`
+- `packages/frameworks/workflow-mgt/scripts/version/tests/test_registry_management.py`
 
 ### 11.2 Integration Tests
 
@@ -456,7 +456,7 @@ This document identifies all components affected by implementing the SemVer mapp
 - Generate SemVer for all historical releases (for reference)
 
 **New Script Needed:**
-- `packages/frameworks/workflow mgt/scripts/version/migrate_historical_releases.py`
+- `packages/frameworks/workflow-mgt/scripts/version/migrate_historical_releases.py`
   - **Purpose:** One-time migration script
   - **Input:** All existing git tags
   - **Output:** `semver-registry.yaml` + migration report
@@ -561,7 +561,7 @@ This document identifies all components affected by implementing the SemVer mapp
 3. **Registry File Creation** - `semver-registry.yaml`
 4. **Registry Management Utilities** - Load/update/save registry
 5. **`.cursorrules` RW Step 11** - Instructions for SemVer generation
-6. **Versioning Framework Package** - `packages/frameworks/numbering & versioning/`
+6. **Versioning Framework Package** - `packages/frameworks/numbering-versioning/`
    - `versioning-policy.md` - Add SemVer mapping section
    - `versioning-strategy.md` - Add dual versioning strategy
    - `IMPLEMENTATION_GUIDE.md` - Add SemVer mapping implementation steps

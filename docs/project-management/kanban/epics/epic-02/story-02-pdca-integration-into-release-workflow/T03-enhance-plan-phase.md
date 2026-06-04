@@ -98,6 +98,6 @@ Enhance the PLAN phase of the Release Workflow by adding objectives, expected ou
 ## References
 
 - **PDCA Integration Plan:** `docs/architecture/standards-and-adrs/rw-pdca-integration-plan.md`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Changelog Format:** Current changelog examples in `docs/changelog-and-release-notes/changelog-archive/`
 

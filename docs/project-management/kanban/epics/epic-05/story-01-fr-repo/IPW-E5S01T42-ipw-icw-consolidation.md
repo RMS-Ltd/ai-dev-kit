@@ -111,8 +111,8 @@ flowchart LR
 
 ## References
 
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
 
 
@@ -128,7 +128,7 @@ flowchart LR
 
 ### AC7 validator specification
 
-- Script path: `packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py`
+- Script path: `packages/frameworks/workflow-mgt/scripts/validation/validate_plan_wiring.py`
 - Inputs:
   - Scan planning artifacts in `docs/project-management/kanban/epics/**` matching `*planning*.md` and `IPW-*.md`.
 - Checks:
@@ -147,5 +147,5 @@ flowchart LR
 
 ### Validator result (AC7)
 
-- `python "packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py"`
+- `python "packages/frameworks/workflow-mgt/scripts/validation/validate_plan_wiring.py"`
 - Result: `PASS: all planning docs are bidirectionally wired`

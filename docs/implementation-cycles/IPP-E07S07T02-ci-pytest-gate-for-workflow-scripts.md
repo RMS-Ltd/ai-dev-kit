@@ -29,7 +29,7 @@ Workflow Management has ~36 co-located pytest modules but CI only runs `build_al
 | ID | Requirement |
 | -- | ----------- |
 | R1 | New script `run_workflow_scripts_ci_pytest.sh` runs `validation/` + curated co-located tests |
-| R2 | Workflow triggers on `packages/frameworks/workflow mgt/**` path filter |
+| R2 | Workflow triggers on `packages/frameworks/workflow-mgt/**` path filter |
 | R3 | Python 3.11, deps: `pytest`, `pyyaml` |
 | R4 | `run_isolated_pytest.sh` delegates to CI script for backward compatibility |
 | R5 | Document CI entrypoint in validation README |

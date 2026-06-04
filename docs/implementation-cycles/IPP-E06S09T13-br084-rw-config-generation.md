@@ -49,7 +49,7 @@ After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban 
 
 ### 2.5 ADR necessity decision
 
-**Outcome:** `EXEMPT` — installer UX; [rw-validators-consumer-layout.md](../packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md).
+**Outcome:** `EXEMPT` — installer UX; [rw-validators-consumer-layout.md](../packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
 
 ---
 

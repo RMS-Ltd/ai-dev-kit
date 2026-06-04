@@ -32,7 +32,7 @@ Review Changelog Management Workflow (CMW) for Windsurf impact, .windsurf skill 
 
 - .cursorrules CMW section (RW Step 9.5)
 - .windsurf/skills/ (cmw-maintain)
-- packages/frameworks/workflow mgt/workflows/changelog-management-workflow/
+- packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/
 
 ## Deliverable
 

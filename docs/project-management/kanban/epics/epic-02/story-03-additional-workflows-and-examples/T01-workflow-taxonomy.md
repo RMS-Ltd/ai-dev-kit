@@ -349,9 +349,9 @@ Each will include:
 
 ## References
 
-- **Agent-Driven Execution:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md`
-- **Release Workflow:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **Workflow YAML:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- **Agent-Driven Execution:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md`
+- **Release Workflow:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 
 ---
 

@@ -216,13 +216,13 @@ frameworks:
   numbering-versioning:
     version: "2.0.0"
     backend: "git-submodule"
-    path: "frameworks/ai-dev-kit/packages/frameworks/numbering & versioning"
+    path: "frameworks/ai-dev-kit/packages/frameworks/numbering-versioning"
     source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "numbering-versioning-v2.0.0"
   workflow-mgt:
     version: "2.0.0"
     backend: "git-submodule"
-    path: "frameworks/ai-dev-kit/packages/frameworks/workflow mgt"
+    path: "frameworks/ai-dev-kit/packages/frameworks/workflow-mgt"
     source: "https://github.com/RMS-Ltd/ai-dev-kit.git"
     tag: "workflow-mgt-v2.0.0"
 ```

@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Inventory all components in the Numbering & Versioning framework package (`packages/frameworks/numbering & versioning/`) and map them to the expectations baseline established in T01. Identify actual vs expected coverage, verify component presence, and document any gaps or extra components.
+Inventory all components in the Numbering & Versioning framework package (`packages/frameworks/numbering-versioning/`) and map them to the expectations baseline established in T01. Identify actual vs expected coverage, verify component presence, and document any gaps or extra components.
 
 **Scope includes:**
 - Inventory all files in package directory
@@ -33,10 +33,10 @@ Inventory all components in the Numbering & Versioning framework package (`packa
 
 ## Inputs
 
-- Package directory: `packages/frameworks/numbering & versioning/`
+- Package directory: `packages/frameworks/numbering-versioning/`
 - Expectations baseline: `T01-expectations-baseline.md`
-- Package README: `packages/frameworks/numbering & versioning/README.md`
-- Package Overview: `packages/frameworks/numbering & versioning/PACKAGE_OVERVIEW.md`
+- Package README: `packages/frameworks/numbering-versioning/README.md`
+- Package Overview: `packages/frameworks/numbering-versioning/PACKAGE_OVERVIEW.md`
 
 ---
 
@@ -77,13 +77,13 @@ Inventory all components in the Numbering & Versioning framework package (`packa
 
 ### Package Directory Structure
 
-**Location:** `packages/frameworks/numbering & versioning/`
+**Location:** `packages/frameworks/numbering-versioning/`
 
 **Total Files:** 14 markdown files
 
 **Directory Structure:**
 ```
-packages/frameworks/numbering & versioning/
+packages/frameworks/numbering-versioning/
 ├── README.md
 ├── PACKAGE_OVERVIEW.md
 ├── IMPLEMENTATION_GUIDE.md

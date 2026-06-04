@@ -72,13 +72,13 @@ Step 12.5 should accept canonical `v`-prefixed release inputs (for both SemVer a
   - `v0.EPIC.STORY.TASK+BUILD`
 - Added deterministic validation errors for malformed values (argument-aware, expected format examples included).
 - Added targeted parser regression tests:
-  - `packages/frameworks/workflow mgt/scripts/version/test_create_github_release_parsing.py`
+  - `packages/frameworks/workflow-mgt/scripts/version/test_create_github_release_parsing.py`
 
 ### Verification Evidence
 
-- `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_create_github_release_parsing.py" -q` -> `5 passed`
+- `python -m pytest "packages/frameworks/workflow-mgt/scripts/version/test_create_github_release_parsing.py" -q` -> `5 passed`
 - Manual regression check:
-  - `python "packages/frameworks/workflow mgt/scripts/create_github_release.py" --semver-tag "v0.4.733+1" --internal-version "v0.6.7.113+1" ... --token "dummy"`
+  - `python "packages/frameworks/workflow-mgt/scripts/create_github_release.py" --semver-tag "v0.4.733+1" --internal-version "v0.6.7.113+1" ... --token "dummy"`
   - Result no longer contains `invalid literal for int() with base 10: 'v0'`; script proceeds to expected GitHub auth failure path (`401 Bad credentials` with dummy token).
 
 ---
@@ -88,4 +88,4 @@ Step 12.5 should accept canonical `v`-prefixed release inputs (for both SemVer a
 - [FR-041](FR-041-perpetual-task-for-release-workflow-maintenance.md)
 - [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [IPW-E06S07T113](../../../implementation-cycles/IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening.md)
-- `packages/frameworks/workflow mgt/scripts/create_github_release.py`
+- `packages/frameworks/workflow-mgt/scripts/create_github_release.py`

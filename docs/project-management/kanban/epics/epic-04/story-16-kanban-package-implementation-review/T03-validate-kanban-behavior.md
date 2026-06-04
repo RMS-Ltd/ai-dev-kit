@@ -280,7 +280,7 @@ This validation compares documented guidance against actual implementation behav
 
 **Evidence:**
 - `release-workflow.yaml` Step 7: `kanban_update` handler configured
-- Script path: `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
+- Script path: `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - Integration documented: "auto-update story/epic docs with version markers and task status"
 
 **Compliance:** ✅ **FULLY COMPLIANT**

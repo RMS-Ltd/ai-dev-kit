@@ -240,7 +240,7 @@ packages/frameworks/debug-path/
 
 ### 2. Enhanced Testing Workflow
 
-**Opportunity:** Integrate DRW phases into the existing **Testing Workflow** (`packages/frameworks/workflow mgt/workflows/testing-workflow.yaml`).
+**Opportunity:** Integrate DRW phases into the existing **Testing Workflow** (`packages/frameworks/workflow-mgt/workflows/testing-workflow.yaml`).
 
 **Enhancement:** Add DRW-inspired phases:
 - Phase 1: Execute Tests (already exists)

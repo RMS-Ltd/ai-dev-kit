@@ -22,7 +22,7 @@ This document provides worked examples and edge case documentation for the three
 **Related Documentation:**
 - Integration Guide: `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`
 - FR/BR Intake Guide: `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`
-- Release Workflow Guide: `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- Release Workflow Guide: `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ---
 
@@ -548,7 +548,7 @@ Task 8: Add Kanban consistency validation script
 
 - **Integration Guide:** `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`
 - **FR/BR Intake Guide:** `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`
-- **Release Workflow Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Release Workflow Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Validation Reports:**
   - T002: Kanban → Versioning validation
   - T003: Versioning → RW validation

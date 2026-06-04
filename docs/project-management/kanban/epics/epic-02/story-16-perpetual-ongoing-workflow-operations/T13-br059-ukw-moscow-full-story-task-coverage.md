@@ -66,7 +66,7 @@ IPP reconciliation only (host remains **COMPLETE**). Post-ship posture and BR-05
 ## Verification (2026-06-02)
 
 ```text
-$ python "packages/frameworks/workflow mgt/scripts/kanban/validate_story_moscow_coverage.py" --story E10:S01
+$ python "packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py" --story E10:S01
 Story: E10:S1
   Open checklist tasks: 6
   On kboard (M/S/C/O/W): 0
@@ -74,7 +74,7 @@ FAIL: 6 open task(s) missing from kboard
 ```
 
 ```text
-$ cd packages/frameworks/workflow mgt/scripts/kanban && python -m pytest test_validate_story_moscow_coverage.py -q
+$ cd packages/frameworks/workflow-mgt/scripts/kanban && python -m pytest test_validate_story_moscow_coverage.py -q
 5 passed
 ```
 
@@ -84,4 +84,4 @@ $ cd packages/frameworks/workflow mgt/scripts/kanban && python -m pytest test_va
 - [BR-059](../../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 - [Superseded source: `E06:S07:T109`](../../epic-06/story-07-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md)
 - [FR-087 / E04:S19:T03](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)
-- `packages/frameworks/workflow mgt/scripts/kanban/validate_story_moscow_coverage.py`
+- `packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py`

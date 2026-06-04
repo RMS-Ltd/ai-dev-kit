@@ -232,9 +232,9 @@ This bug was discovered during RW execution for v0.3.3.6+1. The validator failed
 
 ## References
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 - `docs/architecture/standards-and-adrs/workflow-flaws-reference-guide.md`
-- `packages/frameworks/numbering & versioning/integration/integration-troubleshooting-guide.md` (Issue 7: Story File Not Found)
+- `packages/frameworks/numbering-versioning/integration/integration-troubleshooting-guide.md` (Issue 7: Story File Not Found)
 
 ---
 

@@ -33,7 +33,7 @@ ICW section requires planning mode, three-phase guidance. No ICW skill to compar
 
 1. No ICW-specific skill to migrate.
 2. project-manager-coordination (if migrated for PIR/other) does not define ICW; ICW remains in .cursorrules and framework.
-3. Ensure ICW templates (spec, test design, impl plan) remain in packages/frameworks/workflow mgt/.
+3. Ensure ICW templates (spec, test design, impl plan) remain in packages/frameworks/workflow-mgt/.
 
 ---
 

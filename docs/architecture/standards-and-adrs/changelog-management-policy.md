@@ -73,8 +73,8 @@ policy_salience:
 **Version:** 1.0.0
 
 **Based on Framework:** This policy is a dev-kit specialisation of the Changelog Management Workflow (CMW) patterns defined in the Workflow Management framework. For the canonical workflow definition and agent execution guide, see:
-- `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- `packages/frameworks/workflow mgt/scripts/changelog/README.md`
+- `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- `packages/frameworks/workflow-mgt/scripts/changelog/README.md`
 
 ---
 
@@ -475,7 +475,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Release Workflow (RW) - Integration point for validation
 
 **Related Documentation:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/changelog-management-workflow-agent-execution.md` - CMW execution guide
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/changelog-management-workflow-agent-execution.md` - CMW execution guide
 - [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) - Format specification
 
 ---

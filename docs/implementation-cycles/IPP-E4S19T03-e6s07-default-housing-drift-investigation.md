@@ -56,7 +56,7 @@ housekeeping_policy: keep
 - AC6 evidence (re-housing precedent): [`BR-069`](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) -> [`E2:S15:T04`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - Adjacent governance contract (perpetual-task placement, deliberately not duplicated here): [`IPP-E2S16T01`](./IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 - Adjacent governance contract (FBU meta governance shape reference): [`IPP-E4S19T06`](./IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
-- IPW execution guide: [`implementation-planning-workflow-agent-execution.md`](../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
+- IPW execution guide: [`implementation-planning-workflow-agent-execution.md`](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
 
 ---
 
@@ -93,8 +93,8 @@ The investigator must inspect each of the following categories. For each categor
 
 | Category | Sample instances | Suggested inspection patterns |
 | ---- | ---- | ---- |
-| Workflow validators | [`packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`](../../packages/frameworks/workflow%20mgt/scripts/validation/validate_version_bump.py), [`validate_ipw_publication_wiring.py`](../../packages/frameworks/workflow%20mgt/scripts/validation/validate_ipw_publication_wiring.py), [`validate_plan_wiring.py`](../../packages/frameworks/workflow%20mgt/scripts/validation/validate_plan_wiring.py) | `rg -n "S07\|S007\|Story.{0,10}007\|E6:S07" "packages/frameworks/workflow mgt/scripts/validation/"` |
-| Intake/IPW workflow YAML and runners | [`packages/frameworks/workflow mgt/workflows/intake-workflow/`](../../packages/frameworks/workflow%20mgt/workflows/intake-workflow/), [`packages/frameworks/workflow mgt/workflows/ipw-workflow/`](../../packages/frameworks/workflow%20mgt/workflows/ipw-workflow/) | `rg -n "S07\|S007\|Story.{0,10}007\|E6:S07\|default.{0,30}housing" "packages/frameworks/workflow mgt/workflows/"` |
+| Workflow validators | [`packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`](../../packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py), [`validate_ipw_publication_wiring.py`](../../packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py), [`validate_plan_wiring.py`](../../packages/frameworks/workflow-mgt/scripts/validation/validate_plan_wiring.py) | `rg -n "S07\|S007\|Story.{0,10}007\|E6:S07" "packages/frameworks/workflow-mgt/scripts/validation/"` |
+| Intake/IPW workflow YAML and runners | [`packages/frameworks/workflow-mgt/workflows/intake-workflow/`](../../packages/frameworks/workflow-mgt/workflows/intake-workflow/), [`packages/frameworks/workflow-mgt/workflows/ipw-workflow/`](../../packages/frameworks/workflow-mgt/workflows/ipw-workflow/) | `rg -n "S07\|S007\|Story.{0,10}007\|E6:S07\|default.{0,30}housing" "packages/frameworks/workflow-mgt/workflows/"` |
 | Cursor rules | [`/.cursorrules`](../../.cursorrules) | `rg -n "S07\|S006\|S007\|E6:S07\|catch.?all\|default.{0,30}housing" .cursorrules` |
 | Intake skill | [`/.cursor/skills/intake-process/SKILL.md`](../../.cursor/skills/intake-process/SKILL.md) | `rg -n "Epic\|story\|placement\|default" .cursor/skills/intake-process/SKILL.md` |
 | Kanban templates | [`packages/frameworks/kanban/templates/`](../../packages/frameworks/kanban/templates/) | `rg -n "S07\|S006\|S007\|default" "packages/frameworks/kanban/templates/" --type md` |
@@ -155,7 +155,7 @@ The protocol below is the atomic checklist the investigator (or any future opera
 | 6 | Update [`fbuboard.md`](../project-management/kanban/fbuboard.md) FBU row to reference the target task and updated `Last modified` timestamp. | fbuboard row resolves to the new task path. |
 | 7 | Update the source story checklist row (annotate as `SUPERSEDED` with successor link). | Source story checklist line carries a successor pointer. |
 | 8 | Update the target story checklist row (add new entry per template). | Target story checklist line exists. |
-| 9 | Run [`validate_ipw_publication_wiring.py`](../../packages/frameworks/workflow%20mgt/scripts/validation/validate_ipw_publication_wiring.py) against the new task ID. If the task uses the consolidated IPP model, declare `Publication Status: NOT_APPLICABLE` with reason. | Validator returns PASS for the new task. |
+| 9 | Run [`validate_ipw_publication_wiring.py`](../../packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py) against the new task ID. If the task uses the consolidated IPP model, declare `Publication Status: NOT_APPLICABLE` with reason. | Validator returns PASS for the new task. |
 | 10 | Optionally delete the source task document only after RW publication of the re-housing has landed and the source story / FBU / boards no longer link to the source task path. | No dangling links remain (verified by `rg`). |
 
 **Validator-driven publication declaration.** Steps 4-9 must land in the same logical change set so that no intermediate validator run sees a half-rewired graph. The consolidated IPP model (single `Publication Status: NOT_APPLICABLE` line + bolded human-readable variant) is the established pattern for tasks that do not generate three separate ICW artifacts; this pattern was used successfully for `E4:S19:T06`, `E2:S16:T06`, and `E2:S16:T01`, and should be reused for any future re-housing target.
@@ -166,7 +166,7 @@ The IPP identifies the following candidate guardrail tasks that the disposition 
 
 | Candidate | Surface | Brief rationale | Linked to disposition |
 | ---- | ---- | ---- | ---- |
-| Validator extension: placement check | [`packages/frameworks/workflow mgt/scripts/validation/`](../../packages/frameworks/workflow%20mgt/scripts/validation/) | Reject new task creation under a frozen story (e.g. `E6:S07`) unless task carries an explicit override rationale; reject placement that contradicts the story charter when codification can encode the charter. | `keep-open-narrowed`, `split/re-house`, `close` |
+| Validator extension: placement check | [`packages/frameworks/workflow-mgt/scripts/validation/`](../../packages/frameworks/workflow-mgt/scripts/validation/) | Reject new task creation under a frozen story (e.g. `E6:S07`) unless task carries an explicit override rationale; reject placement that contradicts the story charter when codification can encode the charter. | `keep-open-narrowed`, `split/re-house`, `close` |
 | `.cursorrules` placement guidance | [`/.cursorrules`](../../.cursorrules) | Add explicit "do not default new tasks under `E6:S07`" guidance with a positive routing table (delivery story examples per problem domain). | `keep-open-narrowed`, `split/re-house` |
 | Intake skill update | [`/.cursor/skills/intake-process/SKILL.md`](../../.cursor/skills/intake-process/SKILL.md) | Strengthen Step 2 placement language ("delivery story not repository story") with explicit anti-`E6:S07`-default note and a worked example. | `keep-open-narrowed`, `split/re-house` |
 | Intake guide update | [`packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`](../../packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) | Mirror intake skill change in the human-readable guide; add a worked example showing correct placement when no obvious story exists. | `keep-open-narrowed`, `split/re-house` |
@@ -310,10 +310,10 @@ Wave 4 is the operational consequence of the disposition decision and lives enti
 
 ## 5. Success / verification criteria
 
-Runnable validators (from [`packages/frameworks/workflow mgt/scripts/validation/`](../../packages/frameworks/workflow%20mgt/scripts/validation/)):
+Runnable validators (from [`packages/frameworks/workflow-mgt/scripts/validation/`](../../packages/frameworks/workflow-mgt/scripts/validation/)):
 
-- [x] `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_ipw_publication_wiring.py" --requested E4:S19:T03` — **PASS** (2026-04-27). Output: `PASS: publication wiring OK for E4:S19:T3`. Host task carries `Publication Status: NOT_APPLICABLE` plus `Publication N/A Reason:` per the consolidated IPP model.
-- [x] `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py"` — only the pre-existing unrelated `E5:S01:T75: missing Host Task link` failure observed; tracked separately and out of scope for this IPP. No new wiring regressions introduced by E4:S19:T03.
+- [x] `python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py" --requested E4:S19:T03` — **PASS** (2026-04-27). Output: `PASS: publication wiring OK for E4:S19:T3`. Host task carries `Publication Status: NOT_APPLICABLE` plus `Publication N/A Reason:` per the consolidated IPP model.
+- [x] `python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_plan_wiring.py"` — only the pre-existing unrelated `E5:S01:T75: missing Host Task link` failure observed; tracked separately and out of scope for this IPP. No new wiring regressions introduced by E4:S19:T03.
 
 Deliverable checks:
 
@@ -340,5 +340,5 @@ Deliverable checks:
 - [Kanban governance policy](../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
 - [FR/BR intake guide](../../packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md)
 - [Intake skill](../../.cursor/skills/intake-process/SKILL.md)
-- [IPW execution guide](../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
+- [IPW execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
 - [FR-042 - IPW canonical workflow](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

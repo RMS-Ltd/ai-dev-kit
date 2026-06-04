@@ -20,7 +20,7 @@ Map FR-011 FR-1..FR-6: split-candidate detection, task assignment, split-plan re
 
 | Wave | Action |
 |------|--------|
-| 1 | Package `packages/frameworks/workflow mgt/scripts/task_split/` (engine + models) |
+| 1 | Package `packages/frameworks/workflow-mgt/scripts/task_split/` (engine + models) |
 | 2 | CLI `task_split_plan.py` + tests per ICW test design |
 | 3 | Hook in `intake_decision_flow.py` for multi-epic secondary matches |
 | 4 | `RW E4:S08:T07 --art` (BUILD +1); integration docs |

@@ -235,8 +235,8 @@ When debug path investigation leads to fix:
 
 - **Debug Path Framework:** `../README.md`
 - **DRW Methodology:** `../DRW-METHODOLOGY.md`
-- **Workflow Management:** `../../workflow mgt/README.md`
-- **Testing Workflow:** `../../workflow mgt/workflows/testing-workflow.yaml`
+- **Workflow Management:** `../../workflow-mgt/README.md`
+- **Testing Workflow:** `../../workflow-mgt/workflows/testing-workflow.yaml`
 
 ---
 

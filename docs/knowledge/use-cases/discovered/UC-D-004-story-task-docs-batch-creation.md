@@ -81,7 +81,7 @@ When RW runs for first implementation work:
 
 ### The Bug
 
-**Location:** `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`  
+**Location:** `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`  
 **Function:** `detect_first_time_est_doc`
 
 **Flawed Logic:**
@@ -115,8 +115,8 @@ When RW runs for first implementation work:
 - Only returns `is_first_time = True` if task doc is created in THIS commit AND docs-only AND no prior version
 
 **Files Updated:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ---
 
@@ -167,8 +167,8 @@ This use case represents an **abstract anti-pattern**: **Use Case Exposed Design
 - **Canonical Source:** [BR-010 – RW Doc-Init Detection Bug](../../../project-management/kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) - **PRIMARY ANCHOR** - Authoritative bug report
 - **Abstract Anti-Pattern:** [Use Case Exposed Design Flaw](../../analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md) - General pattern derived from this bug (anchored to BR-010)
 - **Task Document:** [E4:S13:T04 – Assess system impacts](../../../project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md) - Where the bug was fixed
-- **RW Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **Bug Fix:** `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+- **RW Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Bug Fix:** `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 
 ---
 

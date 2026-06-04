@@ -10,7 +10,7 @@ cd /Users/rms/Documents/projects/ai-dev-kit
 ## Method 1: Build All Packages at Once
 
 ```bash
-python3 "packages/frameworks/workflow mgt/scripts/build_all_packages.py"
+python3 "packages/frameworks/workflow-mgt/scripts/build_all_packages.py"
 ```
 
 This will build all 5 frameworks:
@@ -29,31 +29,31 @@ If the batch script doesn't work, build each package individually:
 mkdir -p packages/frameworks/dist/packages
 
 # Build kanban package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     kanban 2.1.0 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
 
 # Build workflow mgt package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     "workflow mgt" 2.1.3 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
 
 # Build numbering & versioning package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     "numbering & versioning" 2.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
 
 # Build doc-lifecycle package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     doc-lifecycle 1.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
 
 # Build debug-path package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     debug-path 1.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --verbose

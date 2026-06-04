@@ -45,7 +45,7 @@ policy_salience:
 ### Durable (repository)
 
 - Must live under **`docs/`** (or other committed paths defined by project policy).
-- **ICW** canonical output directory is **`docs/implementation-cycles/`** (see `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml` → `output_dir`).
+- **ICW** canonical output directory is **`docs/implementation-cycles/`** (see `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml` → `output_dir`).
 - **IPW / IPP (consolidated):** A single markdown file `IPP-E{epic}S{story}T{task}-{slug}.md` in the same directory is **equivalent** to the ICW trio when it contains the required sections (requirements/spec, test design, implementation plan, **documentation deliverables**, **documentation housing**, success criteria) per `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` and is bidirectionally wired to the host task. IPW **Phase 5–6** (`.claude/commands/ipw.md`) produce §5–§6 before the IPP is written. See [dev-kit-ipw-ipp-vs-icw-artifacts.md](dev-kit-ipw-ipp-vs-icw-artifacts.md).
 - Naming **convention** for **ICW** split packages (recommended when using three files):
 
@@ -103,7 +103,7 @@ policy_salience:
 - **IPP vs ICW packaging (ai-dev-kit):** [dev-kit-ipw-ipp-vs-icw-artifacts.md](dev-kit-ipw-ipp-vs-icw-artifacts.md)
 - **Intake / traceability:** [FR-075](../../project-management/kanban/fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md); implementing task [E5:S01:T75](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md)
 - Kanban task template: `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
-- ICW workflow config: `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
-- ICW responsibilities (durable artifacts): `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/README.md` (section **Durable planning artifacts**)
+- ICW workflow config: `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
+- ICW responsibilities (durable artifacts): `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/README.md` (section **Durable planning artifacts**)
 - Implementation cycles folder guide: [`docs/implementation-cycles/README.md`](../../implementation-cycles/README.md)
 - Kanban governance: `packages/frameworks/kanban/policies/kanban-governance-policy.md` (task-driven work)

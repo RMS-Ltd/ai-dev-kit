@@ -82,7 +82,7 @@ For every RW (including **`RW -k`**) against a perpetual task:
 - [BR-067](BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) — doc-only BUILD policy
 - [BR-061](BR-061-rw-explicit-task-id-requires-manual-version-alignment.md) — explicit task / version alignment
 - Perpetual UKW task: [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` — Step 2 UKW/CMW attribution
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` — Step 2 UKW/CMW attribution
 
 ---
 

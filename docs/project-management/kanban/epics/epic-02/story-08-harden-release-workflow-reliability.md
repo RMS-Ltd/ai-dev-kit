@@ -109,7 +109,7 @@ Analyze RW Step 7 (Auto-update Kanban Docs) to decompose it into atomic sub-step
 
 **Completion Summary:**
 
-Created comprehensive analysis document (`packages/frameworks/workflow mgt/docs/Analysis/T01-kanban-docs-update-deterministic-vs-agentic-analysis.md`) decomposing RW Step 7 into 18 atomic sub-steps across 6 phases:
+Created comprehensive analysis document (`packages/frameworks/workflow-mgt/docs/Analysis/T01-kanban-docs-update-deterministic-vs-agentic-analysis.md`) decomposing RW Step 7 into 18 atomic sub-steps across 6 phases:
 
 1. **Locate context** (Steps 1-3): Version/E/S/T resolution, path resolution, doc loading
 2. **Extract authoritative state** (Steps 4-6): Parse Story Task Checklist, Story header, compute derived state
@@ -183,7 +183,7 @@ Create a framework-agnostic Python script implementing the deterministic pipelin
 
 **Completion Summary:**
 
-Created framework-agnostic Kanban update script (`packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`) implementing the deterministic pipeline from T01 analysis:
+Created framework-agnostic Kanban update script (`packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`) implementing the deterministic pipeline from T01 analysis:
 
 **Implemented Deterministic Steps:**
 - **Steps 1-3:** Version component extraction, config-driven path resolution, doc loading
@@ -255,7 +255,7 @@ Updated `release-workflow.yaml` Step 7 configuration to harden Kanban docs updat
 - **Added `mandatory: true`** - Explicitly marks step as mandatory
 - **Added `blocking: true`** - Workflow will block if Step 7 fails
 - **Handler:** `confidentia.kanban_update` → `framework.kanban_update` - Updated to framework-agnostic handler
-- **Script path:** Updated to use framework script `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
+- **Script path:** Updated to use framework script `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - **Config:** Added `use_rw_config: true` to enable config-driven path resolution
 
 **Impact:**
@@ -466,11 +466,11 @@ Document the deterministic/agentic split, hooks, and blocked protocol so agents 
 
 **Completion Summary:**
 
-Updated Release Workflow agent execution guide (`packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`) with comprehensive Step 7 hardening documentation:
+Updated Release Workflow agent execution guide (`packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`) with comprehensive Step 7 hardening documentation:
 
 **Step 7 Documentation Updates:**
 - **Mandatory & Blocking:** Documented that Step 7 is mandatory (`required: true`, `mandatory: true`) and blocking (`blocking: true`)
-- **Framework-Agnostic Script:** Documented use of `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
+- **Framework-Agnostic Script:** Documented use of `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - **Execution Flow:** Detailed script execution flow (config loading, version extraction, path resolution, updates, validation)
 - **Validation Details:** Documented Steps 12-14 validation (internal consistency, policy compliance, version drift detection)
 - **Error Handling:** Documented 12 error types and recovery playbooks

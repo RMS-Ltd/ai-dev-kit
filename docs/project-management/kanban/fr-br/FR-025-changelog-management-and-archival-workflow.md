@@ -215,8 +215,8 @@ Enhance RW to include changelog validation:
 Create comprehensive documentation:
 - `docs/architecture/standards-and-adrs/changelog-management-policy.md` - Changelog management policy
 - `docs/architecture/standards-and-adrs/changelog-archival-policy.md` - Archival policy and criteria
-- `packages/frameworks/workflow mgt/scripts/changelog/README.md` - CMW script documentation (deterministic scripts, no agent execution guide needed)
-- `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml` - CMW workflow definition
+- `packages/frameworks/workflow-mgt/scripts/changelog/README.md` - CMW script documentation (deterministic scripts, no agent execution guide needed)
+- `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml` - CMW workflow definition
 - Cron automation setup documentation (scheduled execution configuration)
 
 ---

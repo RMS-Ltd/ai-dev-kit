@@ -243,7 +243,7 @@ grep "Epic 1:" docs/project-management/kanban/epics/epic-01/epic-01.md
 **5.1 Update Release Workflow Configuration:**
 
 ```bash
-# Edit packages/frameworks/workflow mgt/config/examples/rw-config-ai-dev-kit.yaml
+# Edit packages/frameworks/workflow-mgt/config/examples/rw-config-ai-dev-kit.yaml
 # Or create your own: rw-config-my-project.yaml
 
 # Update:
@@ -454,7 +454,7 @@ ls src/fynd_deals/version.py
 **Solution:**
 ```bash
 # If you started fresh, ensure changelog has proper format
-# See: packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md
+# See: packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md
 
 # Or temporarily disable validation for initial setup
 ```
@@ -513,7 +513,7 @@ After completing setup:
 - `src/fynd_deals/version.py` - Version configuration
 - `CHANGELOG.md` - Project changelog
 - `docs/project-management/kanban/` - Kanban board
-- `packages/frameworks/workflow mgt/config/` - RW configuration
+- `packages/frameworks/workflow-mgt/config/` - RW configuration
 
 **Files You Can Keep (Framework Documentation):**
 - `packages/frameworks/*/README.md` - Framework documentation

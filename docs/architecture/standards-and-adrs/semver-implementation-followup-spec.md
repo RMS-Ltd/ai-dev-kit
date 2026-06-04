@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Draft  
 **Scope:** Implement configuration-driven SemVer mapping modes, optional metadata, and RW/PVW behaviour consistent with updated policies.  
-**Related:** `packages/frameworks/numbering & versioning/versioning-policy.md`, `versioning-strategy.md`, dev-kit versioning policy, RW & PVW agent execution guides.
+**Related:** `packages/frameworks/numbering-versioning/versioning-policy.md`, `versioning-strategy.md`, dev-kit versioning policy, RW & PVW agent execution guides.
 
 ---
 

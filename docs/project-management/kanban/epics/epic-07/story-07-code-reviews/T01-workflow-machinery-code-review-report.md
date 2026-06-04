@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Task:** [E07:S07:T01](./T01-comprehensive-workflow-machinery-code-review.md)  
 **FR:** [FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)  
 **Review date:** 2026-06-03  
-**Package:** `packages/frameworks/workflow mgt/`  
+**Package:** `packages/frameworks/workflow-mgt/`  
 **Inputs:** [E02:S13:T01](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md), [E02:S13:T08 sync report](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md), [IPP-E07S07T01](../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
 
 ---
@@ -234,4 +234,4 @@ The Workflow Management package is **functionally rich** (~107 production Python
 
 - [IPP-E07S07T01](../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
 - [code-review-standards-and-guidelines.md](../../../../architecture/standards-and-adrs/code-review-standards-and-guidelines.md)
-- [rw-trigger-dual-source-parity.md](../../../../../packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md)
+- [rw-trigger-dual-source-parity.md](../../../../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)

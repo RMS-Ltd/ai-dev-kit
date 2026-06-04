@@ -50,7 +50,7 @@ After completing RW, Step 13 (Housekeeping) should clear all `rw-step-*` todos f
 
 **Primary Component:** Release Workflow (RW) Step 13: Housekeeping
 **Affected Areas:**
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 17: Housekeeping)
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 17: Housekeeping)
 - `.cursorrules` (Step 13: Housekeeping reference)
 - Agent execution of RW Step 13
 
@@ -149,7 +149,7 @@ This pattern marks todos as completed but doesn't remove them.
 
 ## References
 
-- **RW Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 17: Housekeeping)
+- **RW Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 17: Housekeeping)
 - **Cursor Rules:** `.cursorrules` (Step 13: Housekeeping reference)
 
 ---

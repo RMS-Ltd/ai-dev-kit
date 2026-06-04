@@ -22,7 +22,7 @@ Step-by-step procedure for executing each T10-T16 review. Tasks can run in paral
 
 - Read .cursorrules section for the workflow
 - List .windsurf/skills/ entries from the spec mapping table
-- Read workflow YAML and config in `packages/frameworks/workflow mgt/workflows/{workflow}/`
+- Read workflow YAML and config in `packages/frameworks/workflow-mgt/workflows/{workflow}/`
 
 ### Step 2: Assess Windsurf Impact
 

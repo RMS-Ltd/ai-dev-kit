@@ -75,7 +75,7 @@ Non-negotiable: **wrong-branch / cross-epic contamination** protections must rem
 
 ## Related
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 - RW Step 2 (version bump) ordering vs Step 1
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (internal vs SemVer)
 - **BR-038** (RW micromanagement / friction umbrella)

@@ -23,7 +23,7 @@ housekeeping_policy: keep
 ## Input
 
 - Repro evidence from recent RW runs where Step 12.5 fails with `invalid literal for int() with base 10: 'v0'`.
-- Current Step 12.5 implementation in `packages/frameworks/workflow mgt/scripts/create_github_release.py`.
+- Current Step 12.5 implementation in `packages/frameworks/workflow-mgt/scripts/create_github_release.py`.
 - [IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening](../../../../../implementation-cycles/IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening.md)
 
 ## Deliverable
@@ -52,18 +52,18 @@ housekeeping_policy: keep
 
 ## Implementation note
 
-Implemented parser hardening in `packages/frameworks/workflow mgt/scripts/create_github_release.py`:
+Implemented parser hardening in `packages/frameworks/workflow-mgt/scripts/create_github_release.py`:
 
 - Added internal-version boundary normalization for optional `v` prefix before semver strategy parsing.
 - Added deterministic `ValueError` diagnostics for malformed `--internal-version` values.
 - Updated top-level error handling to report explicit validation errors (instead of opaque `int('v0')` traceback-style surface).
 - Added parser regression coverage:
-  - `packages/frameworks/workflow mgt/scripts/version/test_create_github_release_parsing.py`
+  - `packages/frameworks/workflow-mgt/scripts/version/test_create_github_release_parsing.py`
 
 ## Verification evidence (2026-04-13)
 
-- `python -m pytest "packages/frameworks/workflow mgt/scripts/version/test_create_github_release_parsing.py" -q` -> 5 passed
-- `python "packages/frameworks/workflow mgt/scripts/create_github_release.py" --semver-tag "v0.4.733+1" --internal-version "v0.6.7.113+1" ... --token "dummy"` -> no `invalid literal ... 'v0'`; reaches expected GitHub auth failure path with dummy credentials
+- `python -m pytest "packages/frameworks/workflow-mgt/scripts/version/test_create_github_release_parsing.py" -q` -> 5 passed
+- `python "packages/frameworks/workflow-mgt/scripts/create_github_release.py" --semver-tag "v0.4.733+1" --internal-version "v0.6.7.113+1" ... --token "dummy"` -> no `invalid literal ... 'v0'`; reaches expected GitHub auth failure path with dummy credentials
 
 ---
 

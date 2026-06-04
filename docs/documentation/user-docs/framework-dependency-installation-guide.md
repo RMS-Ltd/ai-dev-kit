@@ -279,7 +279,7 @@ cp -r .ai-dev-kit/packages/frameworks/workflow\ mgt/ ./frameworks/workflow-mgmt
 
 # Or copy multiple frameworks
 cp -r .ai-dev-kit/packages/frameworks/kanban/ ./frameworks/kanban
-cp -r ".ai-dev-kit/packages/frameworks/numbering & versioning" ./frameworks/numbering-versioning
+cp -r ".ai-dev-kit/packages/frameworks/numbering-versioning" ./frameworks/numbering-versioning
 ```
 
 **5. Commit the submodule reference:**
@@ -648,7 +648,7 @@ If you prefer to set it up manually:
 5. **Verify the trigger works:**
    - Restart Cursor to reload `.cursorrules`
    - In chat, use the trigger **plus** a task id, e.g. `RW E5S01T01` or `RW E5:S01:T01` (substitute a completed task from your Kanban). Short paths: `RW -k E5S01T01`, `RW -d E5S01T01`
-   - Full procedure and guardrails: [Release Workflow (agent execution)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5: task token, releasable task, intent guard)
+   - Full procedure and guardrails: [Release Workflow (agent execution)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5: task token, releasable task, intent guard)
    - If **`rw-config.yaml`** sets **`use_kanban: true`**, validators (e.g. `validate_rw_task_complete.py`) expect a real task document matching the id you pass
 
 **What the RW Trigger Does:**
@@ -831,7 +831,7 @@ If you prefer to set it up manually:
 5. **Verify the trigger works:**
    - Restart Cursor to reload `.cursorrules`
    - In chat, use the trigger **plus** a task id, e.g. `RW E5S01T01` or `RW E5:S01:T01` (substitute a completed task from your Kanban). Short paths: `RW -k E5S01T01`, `RW -d E5S01T01`
-   - Full procedure and guardrails: [Release Workflow (agent execution)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5: task token, releasable task, intent guard)
+   - Full procedure and guardrails: [Release Workflow (agent execution)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) (Step 1 branch safety; Steps 1.3–1.5: task token, releasable task, intent guard)
    - If **`rw-config.yaml`** sets **`use_kanban: true`**, validators (e.g. `validate_rw_task_complete.py`) expect a real task document matching the id you pass
 
 **What the RW Trigger Does:**

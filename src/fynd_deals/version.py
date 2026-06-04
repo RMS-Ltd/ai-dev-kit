@@ -14,7 +14,7 @@ Version ordering is canonical (by version number, not timestamp).
 This enables parallel epic development and accurate changelog ordering.
 
 See: docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md
-Framework: packages/frameworks/numbering & versioning/versioning-policy.md
+Framework: packages/frameworks/numbering-versioning/versioning-policy.md
 """
 
 VERSION_RC = 0        # Release candidate (0 = development, 1+ = release candidate)

@@ -28,7 +28,7 @@ def test_kanban_init_performance():
     """Test kanban_init mode performance target."""
     print("🧪 Testing kanban_init performance...")
     
-    cmd = 'python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --mode kanban_init'
+    cmd = 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init'
     success, stdout, stderr, exec_time = run_command(cmd)
     
     print(f"⏱️  Execution time: {exec_time:.3f} seconds")
@@ -52,7 +52,7 @@ def test_pattern_matching_fix():
     """Test that pattern matching issues are resolved."""
     print("\n🧪 Testing pattern matching fixes...")
     
-    cmd = 'python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --mode kanban_init'
+    cmd = 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init'
     success, stdout, stderr, exec_time = run_command(cmd)
     
     # Check for successful story doc discovery
@@ -78,7 +78,7 @@ def test_error_recovery():
     print("\n🧪 Testing error recovery...")
     
     # Test with a non-existent story to trigger fallback
-    cmd = 'python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --mode kanban_init --version-file /tmp/nonexistent_version.py'
+    cmd = 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init --version-file /tmp/nonexistent_version.py'
     success, stdout, stderr, exec_time = run_command(cmd)
     
     if "Attempting manual discovery" in stdout or "Suggestion:" in stdout:
@@ -94,7 +94,7 @@ def test_continuous_execution():
     """Test that script runs continuously without stopping."""
     print("\n🧪 Testing continuous execution...")
     
-    cmd = 'python "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --mode kanban_init'
+    cmd = 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init'
     success, stdout, stderr, exec_time = run_command(cmd)
     
     # Check that it completed without requiring user input

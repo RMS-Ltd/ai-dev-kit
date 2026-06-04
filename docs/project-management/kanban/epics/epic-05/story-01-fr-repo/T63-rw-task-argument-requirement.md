@@ -42,7 +42,7 @@ Enhance Release Workflow (RW) to **require** an explicit task identifier in the 
 
 - **FR-060:** [`FR-060-rw-task-argument-requirement.md`](../../../fr-br/FR-060-rw-task-argument-requirement.md)
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
-- **RW execution:** [.cursorrules (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules), [release-workflow-agent-execution.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- **RW execution:** [.cursorrules (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules), [release-workflow-agent-execution.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 - **Validators:** `validate_rw_task_intent.py`, `validate_rw_task_complete.py`
 
 ---

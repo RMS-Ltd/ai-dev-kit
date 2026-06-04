@@ -27,7 +27,7 @@ Design and implement the missing Update Changelog Workflow (UCW) that keeps `CHA
 
 ## Objectives
 
-1. Build a deterministic UCW workflow (README + YAML + config) under `packages/frameworks/workflow mgt/workflows/`.  
+1. Build a deterministic UCW workflow (README + YAML + config) under `packages/frameworks/workflow-mgt/workflows/`.  
 2. Create a Python entry point (e.g., `scripts/update_changelog_docs.py`) handling retention and archival.  
 3. Enforce retention threshold (default 20 entries) and ensure trimmed sections are archived with backlinks.  
 4. Ensure UCW runs as part of RW (post detailed changelog, pre-validation) and as a standalone CLI (`UCW`).  

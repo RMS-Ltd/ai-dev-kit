@@ -10,7 +10,7 @@ import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION_DIR = ROOT / "packages/frameworks/workflow mgt/scripts/version"
+VERSION_DIR = ROOT / "packages/frameworks/workflow-mgt/scripts/version"
 sys.path.insert(0, str(VERSION_DIR))
 
 from semver_converter import (  # noqa: E402

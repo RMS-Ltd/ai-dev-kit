@@ -32,7 +32,7 @@ Isolate why MoSCOW rows on `kboard.md` and `fbuboard.md` still exhibit **forensi
 ### 1.3 Non-functional requirements
 
 - **N1:** Diagnostics remain auditable (`rows_with_duplicate_footers`, `timestamp_order_divergence_row_ids`, optional new counters for “append suppressed” vs “tail rebuilt”).
-- **N2:** Regression tests target `packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py` patterns (pytest).
+- **N2:** Regression tests target `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` patterns (pytest).
 - **N3:** Behavior is deterministic and idempotent for canonical rows after remediation.
 
 ### 1.4 Out of scope
@@ -101,7 +101,7 @@ Isolate why MoSCOW rows on `kboard.md` and `fbuboard.md` still exhibit **forensi
 
 ### 5.1 Pipeline order divergence (confirmed)
 
-Two different call orders exist in [`update_kanban_docs.py`](../../packages/frameworks/workflow%20mgt/scripts/update_kanban_docs.py):
+Two different call orders exist in [`update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py):
 
 | Path | Order |
 | --- | --- |
@@ -131,12 +131,12 @@ If no match, enforcement **appends** `| Last modified: <timestamp_now>`, introdu
 
 ### 5.3 Controlled reproduction (library-level)
 
-Using in-repo imports from `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`, a minimal MoSCOW section with one bold FBU row and a single historical footer shows:
+Using in-repo imports from `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`, a minimal MoSCOW section with one bold FBU row and a single historical footer shows:
 
 - After **UKW ordering** (reconcile → normalize → enforce), output can append **`timestamp_now`** while retaining the historical chunk earlier in the line—**two** `Last modified` segments.
 - After **`update_kanban_board` ordering** (normalize → reconcile → enforce), outputs **differ** from UKW on the same input for duplicate-footer scenarios—demonstrating ordering sensitivity.
 
-**Automated lock:** `test_4_13_br069_pipeline_order_divergence_and_non_terminal_footer_append` in [`test_update_kanban_docs.py`](../../packages/frameworks/workflow%20mgt/scripts/test_update_kanban_docs.py) encodes both behaviors (documentary until remediation lands).
+**Automated lock:** `test_4_13_br069_pipeline_order_divergence_and_non_terminal_footer_append` in [`test_update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py) encodes both behaviors (documentary until remediation lands).
 
 ### 5.4 Relationship to FR-089 / T03
 
@@ -178,4 +178,4 @@ flowchart LR
 - [FR-089](../project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [UXR-009](../project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [Story 015](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md)
-- Tests: [`packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py`](../../packages/frameworks/workflow%20mgt/scripts/test_update_kanban_docs.py)
+- Tests: [`packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py)

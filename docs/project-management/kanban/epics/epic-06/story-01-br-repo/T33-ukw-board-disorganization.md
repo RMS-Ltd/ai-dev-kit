@@ -50,8 +50,8 @@ Fix UKW (Update Kanban Workflow) board disorganization bug where epics are not s
 ## Input
 
 - **BR-033:** [`BR-033-ukw-board-disorganization.md`](../../../fr-br/BR-033-ukw-board-disorganization.md)
-- **UKW Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
-- **UKW Workflow:** `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
+- **UKW Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- **UKW Workflow:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
 - **UKW Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 
@@ -215,7 +215,7 @@ This task was created from BR-033, which was split from a mixed-scope document f
 **Date:** 2026-01-22
 
 **Completed:**
-1. ✅ **Sorting Utility Script Created:** `packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_board.py`
+1. ✅ **Sorting Utility Script Created:** `packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_board.py`
    - Parses kanban board and extracts epic sections
    - Sorts epics numerically (canonical 1-23, then project-specific 24+)
    - Reconstructs board with sorted epics
@@ -242,7 +242,7 @@ This task was created from BR-033, which was split from a mixed-scope document f
 **Date:** 2026-01-22
 
 **Completed:**
-1. ✅ **Document Checklist Sorting Utility Created:** `packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py`
+1. ✅ **Document Checklist Sorting Utility Created:** `packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_document_checklists.py`
    - Sorts task checklists in story documents numerically (T01, T02, T03, ...)
    - Sorts story checklists in epic documents numerically (S01, S02, S03, ...)
    - Preserves entry formatting and indented lines
@@ -260,25 +260,25 @@ This task was created from BR-033, which was split from a mixed-scope document f
 **Kanban Board Sorting:**
 ```bash
 # Sort kanban board (uses rw-config.yaml or default path)
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_board.py"
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_board.py"
 
 # Preview sorting without making changes
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_board.py" --dry-run
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_board.py" --dry-run
 
 # Specify custom board path
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_board.py" --board-path "path/to/kboard.md"
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_board.py" --board-path "path/to/kboard.md"
 ```
 
 **Document Checklist Sorting:**
 ```bash
 # Sort task checklist in story document
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "docs/project-management/kanban/epics/epic-06/story-01-br-repo.md"
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "docs/project-management/kanban/epics/epic-06/story-01-br-repo.md"
 
 # Sort story checklist in epic document
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "docs/project-management/kanban/epics/epic-06/epic-06.md"
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "docs/project-management/kanban/epics/epic-06/epic-06.md"
 
 # Preview sorting without making changes
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "{path}" --dry-run
+python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "{path}" --dry-run
 ```
 
 ---

@@ -30,7 +30,7 @@ Publication Status: NOT_APPLICABLE
 - [IPP-E02S16T16 — UKW `-c` archive completed](../../../../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 - Completed-ledger skills: `.cursor/skills/kanban-completed-update`, `.cursor/skills/fr-br-uxr-completed-update`
 - Agent SoT: `.cursorrules` UKW section; `update-kanban-workflow-agent-execution.md`
-- Helpers: [`archive_completed.py`](../../../../packages/frameworks/workflow%20mgt/scripts/kanban/archive_completed.py)
+- Helpers: [`archive_completed.py`](../../../../packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py)
 
 ---
 

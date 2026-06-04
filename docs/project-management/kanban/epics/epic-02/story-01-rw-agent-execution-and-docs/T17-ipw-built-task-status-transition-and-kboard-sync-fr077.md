@@ -31,14 +31,14 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 ## Implementation decisions and evidence
 
 - Added mandatory status-transition intent guidance in:
-  - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+  - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
   - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
 - Added RW-side transition drift audit guidance in:
-  - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+  - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - Implemented drift validator:
-  - `packages/frameworks/workflow mgt/scripts/validation/validate_ipw_status_drift.py`
+  - `packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_status_drift.py`
 - Added tests:
-  - `packages/frameworks/workflow mgt/scripts/validation/test_validate_ipw_status_drift.py`
+  - `packages/frameworks/workflow-mgt/scripts/validation/test_validate_ipw_status_drift.py`
 - Follow-up hardening (same defect path):
   - `validate_ipw_status_drift.py` now supports `--requested E:S:T` for task-scoped detection.
   - `validate_rw_task_complete.py` now runs FR-077 drift detection at Step 1c TODO gate and emits explicit remediation guidance when implementation evidence is present.
@@ -52,8 +52,8 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 ## Input
 
 - [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/project-management/kanban/kboard.md`
 - `docs/project-management/kanban/fbuboard.md`
 - ICW trio for E02:S01:T17 — not yet filed under `docs/implementation-cycles/` (use IPW/IPP when created)
@@ -107,7 +107,7 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
   - Added requested-task determinism and opt-in full-scan cases in `test_validate_ipw_status_drift.py`.
   - Expanded Step 1.4 drift diagnostic assertion in `test_validate_rw_task_complete.py`.
 - Command evidence:
-  - `python -m pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_ipw_status_drift.py" "packages/frameworks/workflow mgt/scripts/validation/test_validate_rw_task_complete.py" -q`
+  - `python -m pytest "packages/frameworks/workflow-mgt/scripts/validation/test_validate_ipw_status_drift.py" "packages/frameworks/workflow-mgt/scripts/validation/test_validate_rw_task_complete.py" -q`
   - Result: `15 passed`.
 
 

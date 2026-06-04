@@ -37,7 +37,7 @@ Establish **Board Stamp Authority**: row `| Last modified: … UTC` may change o
 
 Deliver, in order:
 
-1. **Validator-first steward** — `validate_board_stamp_diff.py` (proposed path under `packages/frameworks/workflow mgt/scripts/validation/`) compares before/after board content; **blocks** RW/UKW when any row stamp changes without evidence.
+1. **Validator-first steward** — `validate_board_stamp_diff.py` (proposed path under `packages/frameworks/workflow-mgt/scripts/validation/`) compares before/after board content; **blocks** RW/UKW when any row stamp changes without evidence.
 2. **Script-path hardening** — wire `_cleanup_fbuboard_active_rows` and all UKW/RW board paths through evidence modes; remove agent instructions to “unify active row `Last modified` timestamps.”
 3. **Automatic backfill** — recover homogenized stamps from linked doc `**Last updated:**` and git history (no manual curation required for the bulk corpus).
 4. **Optional phase-2** — Cursor/agent **skill** only if the validator proves insufficient for agentic manual edits.
@@ -134,6 +134,6 @@ New **`backfill_board_row_stamps.py`** (or subcommand):
 ## References
 
 - [kanban-governance-policy.md](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — Timestamp governance / evidence modes
-- [update_kanban_docs.py](../../../packages/frameworks/workflow%20mgt/scripts/update_kanban_docs.py) — `_cleanup_fbuboard_active_rows`, `EVIDENCE_MODE_*`
-- [test_stamp_evidence_gate.py](../../../packages/frameworks/workflow%20mgt/scripts/test_stamp_evidence_gate.py)
-- [validate_release_readiness.py](../../../packages/frameworks/workflow%20mgt/scripts/validate_release_readiness.py) — Gate 6 (extend, do not replace row-diff gate)
+- [update_kanban_docs.py](../../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) — `_cleanup_fbuboard_active_rows`, `EVIDENCE_MODE_*`
+- [test_stamp_evidence_gate.py](../../../packages/frameworks/workflow-mgt/scripts/test_stamp_evidence_gate.py)
+- [validate_release_readiness.py](../../../packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py) — Gate 6 (extend, do not replace row-diff gate)

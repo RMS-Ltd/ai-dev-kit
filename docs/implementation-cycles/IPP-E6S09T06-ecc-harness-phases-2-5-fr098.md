@@ -24,7 +24,7 @@ housekeeping_policy: keep
 | ID | Requirement | Source (FR/BR/Task) |
 | -- | ----------- | ------------------- |
 | RF1 | Optional ECC install step in **greenfield** path (FR-080) and **brownfield** guidance (FR-081); clearly non-blocking for ADK-only adopters | FR-098-F5, T06 AC Phase 2 |
-| RF2 | Bridge workflow: copy [`ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template) → project-root `ecc-adk-bridge.yaml`; pin `ecc_version_pin`; document `minimal` vs `core` profile naming | FR-098-F3, spec §7–§8 |
+| RF2 | Bridge workflow: copy [`ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template) → project-root `ecc-adk-bridge.yaml`; pin `ecc_version_pin`; document `minimal` vs `core` profile naming | FR-098-F3, spec §7–§8 |
 | RF3 | Validate bridge fields including `adk_skill_pack_path` alignment with T05 skill pack | T05 validator, RF2 |
 | RF4 | Hook defaults: `hook_profile: minimal`, hooks-off install discipline; populate `disabled_hooks` from Phase 0 conflict-resolve (RW/git) | spec §8, Phase 0 eval |
 | RF5 | Document SessionStart context hook and **advisory** pre-RW quality gate (ECC hooks do not replace ADK validators) | Roadmap phase 3, T06 |
@@ -139,7 +139,7 @@ Exemption block not used (T1–T7 not all N).
 | ---- | ------ | ----------- |
 | **1** | **[MANDATORY] Transition E6:S09:T06 `TODO → IN PROGRESS`** in task doc; update `Last updated`. | Task doc status |
 | 2 | **Wave A:** Add `validate_ecc_adk_bridge.py` + `test_validate_ecc_adk_bridge.py`; extend or document bridge validation in skills README | Validator PASS |
-| 3 | **Wave A:** Add optional ECC install procedure (`packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh` or KB guide with equivalent steps) | RF1 script/doc |
+| 3 | **Wave A:** Add optional ECC install procedure (`packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh` or KB guide with equivalent steps) | RF1 script/doc |
 | 4 | **Wave A:** UPDATE greenfield install docs + T01 cross-link; FR-098-F5 partial closure | Install docs |
 | 5 | **Wave A:** UPDATE cheatsheet §3–5 (installer + bridge copy steps) | Cheatsheet |
 | 6 | **Wave B:** Populate bridge template `disabled_hooks` examples; document `hook_profile` / SessionStart / pre-RW advisory | spec §8, RF4–RF5 |
@@ -156,26 +156,26 @@ Exemption block not used (T1–T7 not all N).
 
 **CREATE:**
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py`
-- `packages/frameworks/workflow mgt/scripts/validation/test_validate_ecc_adk_bridge.py`
-- `packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh` (or `KB/.../ecc-optional-install.md` if script deferred)
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/test_validate_ecc_adk_bridge.py`
+- `packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh` (or `KB/.../ecc-optional-install.md` if script deferred)
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md`
 
 **UPDATE:**
 
-- `packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template`
-- `packages/frameworks/workflow mgt/skills/README.md`
+- `packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template`
+- `packages/frameworks/workflow-mgt/skills/README.md`
 - `../documentation/user-docs/ecc-adk-integration-cheatsheet.md`
 - `docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md` (§10–§11)
 - `docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md` (optional ECC note)
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (AgentShield add-on)
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (AgentShield add-on)
 - Greenfield install surfaces (T01 doc paths / `INSTALL_IN_YOUR_PROJECT.md` as applicable)
 - `docs/project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md` (F5/F6 status)
 - Task T06, Story 009, Epic 6 (at RW)
 
 **NONE (justified):**
 
-- `packages/frameworks/workflow mgt/skills/adk-*/SKILL.md` — T05 owns Phase 1
+- `packages/frameworks/workflow-mgt/skills/adk-*/SKILL.md` — T05 owns Phase 1
 
 ### 4.2 Dependency order
 
@@ -204,9 +204,9 @@ Exemption block not used (T1–T7 not all N).
 | D-U1 | `docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md` | §10 task column → T06; §11 hooks/AgentShield pointers | RF4–RF6, ADR REQUIRED |
 | D-U2 | `docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md` | Optional ECC harness surface paragraph | RF1, T1 |
 | D-U3 | `../documentation/user-docs/ecc-adk-integration-cheatsheet.md` | Installer, bridge, hooks, AgentShield, architecture | RF1–RF8 |
-| D-U4 | `packages/frameworks/workflow mgt/config/ecc-adk-bridge.yaml.template` | `disabled_hooks` examples, comments | RF4 |
-| D-U5 | `packages/frameworks/workflow mgt/skills/README.md` | Bridge path + validator commands | RF3 |
-| D-U6 | `packages/frameworks/workflow mgt/KB/.../release-workflow-agent-execution.md` | Step 9 AgentShield add-on (non-blocking) | RF6 |
+| D-U4 | `packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template` | `disabled_hooks` examples, comments | RF4 |
+| D-U5 | `packages/frameworks/workflow-mgt/skills/README.md` | Bridge path + validator commands | RF3 |
+| D-U6 | `packages/frameworks/workflow-mgt/KB/.../release-workflow-agent-execution.md` | Step 9 AgentShield add-on (non-blocking) | RF6 |
 | D-U7 | `docs/project-management/kanban/fr-br/FR-098-*.md` | F5/F6 checkboxes when waves land | RF1, RF7 |
 | D-U8 | T01 / install docs | Optional ECC step | RF1 |
 | D-U9 | T06, Story 009 task docs | Status, version, AC checkboxes | impl steps 1, 11 |
@@ -216,10 +216,10 @@ Exemption block not used (T1–T7 not all N).
 | Doc ID | Proposed path | Purpose | Tied to |
 | ------ | ------------- | ------- | ------- |
 | D-C1 | `docs/implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md` | This IPP | IPW |
-| D-C2 | `packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py` | Bridge validation | RF9 |
-| D-C3 | `packages/frameworks/workflow mgt/scripts/validation/test_validate_ecc_adk_bridge.py` | Regression tests | T2 |
-| D-C4 | `packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh` | Optional install helper | RF1 |
-| D-C5 | `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md` | AgentShield add-on contract | RF6 |
+| D-C2 | `packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py` | Bridge validation | RF9 |
+| D-C3 | `packages/frameworks/workflow-mgt/scripts/validation/test_validate_ecc_adk_bridge.py` | Regression tests | T2 |
+| D-C4 | `packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh` | Optional install helper | RF1 |
+| D-C5 | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md` | AgentShield add-on contract | RF6 |
 
 ### 5.3 Documentation gaps and explicit non-changes
 
@@ -237,9 +237,9 @@ Exemption block not used (T1–T7 not all N).
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | --------- | -------------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md` | PUBLISHED | evergreen | T06 Input, References |
-| D-C2–C3 | `packages/frameworks/workflow mgt/scripts/validation/*ecc_adk_bridge*` | PUBLISHED | evergreen | skills README, IPP §7 |
-| D-C4 | `packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh` | PUBLISHED | evergreen | cheatsheet, T01 |
-| D-C5 | `packages/frameworks/workflow mgt/KB/.../ecc-agentshield-rw-step9-bridge.md` | PUBLISHED | evergreen | release-workflow guide, cheatsheet |
+| D-C2–C3 | `packages/frameworks/workflow-mgt/scripts/validation/*ecc_adk_bridge*` | PUBLISHED | evergreen | skills README, IPP §7 |
+| D-C4 | `packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh` | PUBLISHED | evergreen | cheatsheet, T01 |
+| D-C5 | `packages/frameworks/workflow-mgt/KB/.../ecc-agentshield-rw-step9-bridge.md` | PUBLISHED | evergreen | release-workflow guide, cheatsheet |
 | D-U1 | `docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md` | PUBLISHED | evergreen | FR-098, T06 |
 | D-U3 | `../documentation/user-docs/ecc-adk-integration-cheatsheet.md` | PUBLISHED | evergreen | README or install hub |
 

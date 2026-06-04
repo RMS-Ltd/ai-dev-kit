@@ -21,7 +21,7 @@
 ### ✅ Core Components Validated
 
 #### **SemVer Converter Implementation**
-- **File:** `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- **File:** `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - **Status:** ✅ COMPLETE
 - **Functions:** `convert_internal_to_semver_task_touch()`, `get_task_touch_counter()`, `increment_task_touch_counter()`
 - **Test Result:** ✅ PASSED - All basic tests passed
@@ -33,13 +33,13 @@
 - **Default:** `registry` (backward compatible)
 
 #### **Test Suite**
-- **File:** `packages/frameworks/workflow mgt/scripts/version/test_task_touch_mapping.py`
+- **File:** `packages/frameworks/workflow-mgt/scripts/version/test_task_touch_mapping.py`
 - **Coverage:** ✅ COMPREHENSIVE
 - **Tests:** Basic conversion, collision prevention, monotonicity, counter management, configuration
 - **Result:** ✅ ALL TESTS PASSED
 
 #### **Migration Utility**
-- **File:** `packages/frameworks/workflow mgt/scripts/version/migrate_to_task_touch.py`
+- **File:** `packages/frameworks/workflow-mgt/scripts/version/migrate_to_task_touch.py`
 - **Purpose:** ✅ MIGRATION SUPPORT
 - **Functionality:** Git history analysis, counter initialization, registry setup
 

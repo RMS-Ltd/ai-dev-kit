@@ -38,7 +38,7 @@ Extend workflow execution reliability with atomic command logging, forensic I/O 
 
 - [IPP-E2S08T08-forensic-logging-rollback-fr059.md](../../../../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md)
 - [ADR-008](../../../../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
-- [Workflow Forensic Recovery Guide](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md)
+- [Workflow Forensic Recovery Guide](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md)
 
 ---
 
@@ -54,7 +54,7 @@ Extend workflow execution reliability with atomic command logging, forensic I/O 
 
 - [x] FR-059 functional requirements are implemented and testable — see [FR-059 AC](../../../fr-br/FR-059-enhanced-workflow-logging-system.md); `pytest tests/journal tests/workflow` (44 tests).
 - [x] FR-059 performance and integration requirements are validated — perf smoke + schema tests; compression/100+ concurrent deferred per IPP §1.3.
-- [x] Rollback and forensic workflows are documented for operators — [workflow-forensic-recovery-guide.md](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md).
+- [x] Rollback and forensic workflows are documented for operators — [workflow-forensic-recovery-guide.md](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md).
 
 **Releases:** `v0.2.8.8+2` (implementation), `v0.2.8.8+3` (closure tests + AC evidence). Prior `v0.2.8.8+1` was kanban-only mis-attribution.
 

@@ -192,8 +192,8 @@ Currently, the ICW can be called without explicit task binding, which can lead t
 
 - E05:S01:T40 – Implementation Cycle Workflow (ICW)
 - FR-040 – Implementation Cycle Workflow (ICW)
-- ICW Handler: `packages/frameworks/workflow mgt/scripts/icw/icw_handler.py`
-- ICW Configuration: `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/`
+- ICW Handler: `packages/frameworks/workflow-mgt/scripts/icw/icw_handler.py`
+- ICW Configuration: `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/`
 
 ---
 

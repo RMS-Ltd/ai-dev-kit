@@ -168,9 +168,9 @@ User wraps up a sprint/cycle and needs all kanban documentation synchronized to 
 - Agent-driven execution pattern (like RW)
 
 **Key Files Created:**
-- `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
-- `packages/frameworks/workflow mgt/cursorrules-ukw-trigger-section.md`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
+- `packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 
 **Workflow Steps:**
 1. Analyze Recent Activity (commits, FR/BR/UXRs, file changes)
@@ -203,10 +203,10 @@ User wraps up a sprint/cycle and needs all kanban documentation synchronized to 
 
 ## References
 
-- **Workflow Definition:** `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
-- **Cursor Rules:** `packages/frameworks/workflow mgt/cursorrules-ukw-trigger-section.md`
-- **Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
-- **Related:** Release Workflow (RW) - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- **Workflow Definition:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
+- **Cursor Rules:** `packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md`
+- **Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- **Related:** Release Workflow (RW) - `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 - **Kanban Governance:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 
 ---

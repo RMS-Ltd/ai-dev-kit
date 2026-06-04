@@ -156,7 +156,7 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 
 | File | Action | Owner Step |
 |------|--------|-----------|
-| `packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py` | Fix 4 test fixture bugs | 2–5 |
+| `packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py` | Fix 4 test fixture bugs | 2–5 |
 | `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md` | Mark ACs, add evidence sections | 7, 9 |
 | `docs/implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md` | Add deprecation banner + redirect | 8 |
 | `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md` | Update T03 checklist entry | 10 |
@@ -220,9 +220,9 @@ This section prescribes the exact changes for each document. Implementation must
 - **Evidence:** `pytest test_validate_version_bump.py -x` passes (14/14) after fixture fixes (see AC5).
 
 ### AC5 — Validator Regression Evidence
-- **Command:** `python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --strict --requested E2:S16:T03 --art`
+- **Command:** `python "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py" --strict --requested E2:S16:T03 --art`
 - **Result:** Exit 0, perpetual guardrails pass.
-- **Test command:** `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x`
+- **Test command:** `pytest "packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py" -x`
 - **Test result:** 14 passed, 0 failed.
 ```
 
@@ -414,7 +414,7 @@ None.
 - T04 (scope boundary): [`T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - Legacy draft (to archive): [`IPW-E6S07T103-release-workflow-maintenance-perpetual.md`](../../docs/implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md)
 - FR-088: [`FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`](../../docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
-- Guardrail implementation: `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
-- Test file: `packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py`
+- Guardrail implementation: `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
+- Test file: `packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py`
 - Versioning policy §6.1.1: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - Artifact packaging (IPP vs ICW trio): [`dev-kit-ipw-ipp-vs-icw-artifacts.md`](../architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md)

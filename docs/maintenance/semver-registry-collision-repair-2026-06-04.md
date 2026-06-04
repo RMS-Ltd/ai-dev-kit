@@ -41,10 +41,10 @@ Audit: **0** PATCH/core collisions (`audit_semver_registry_collisions.py` exit 0
 ## Tooling
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/version/audit_semver_registry_collisions.py"
-python "packages/frameworks/workflow mgt/scripts/version/repair_semver_registry_collisions.py" \
+python "packages/frameworks/workflow-mgt/scripts/version/audit_semver_registry_collisions.py"
+python "packages/frameworks/workflow-mgt/scripts/version/repair_semver_registry_collisions.py" \
   --manifest docs/maintenance/semver-registry-collision-repair-manifest.yaml
-python "packages/frameworks/workflow mgt/scripts/validation/validate_semver_registry_injective.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_semver_registry_injective.py"
 ```
 
 ## Converter hardening (wave 2)

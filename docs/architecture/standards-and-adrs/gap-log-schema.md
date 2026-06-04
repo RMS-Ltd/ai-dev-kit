@@ -75,7 +75,7 @@ The Risk Assessment section MUST include:
 Use `validate_gap_log.py` to verify a document conforms to this schema:
 
 ```
-python packages/frameworks/workflow mgt/scripts/validation/validate_gap_log.py --path <path-to-gap-log.md> [--strict]
+python packages/frameworks/workflow-mgt/scripts/validation/validate_gap_log.py --path <path-to-gap-log.md> [--strict]
 ```
 
-See [Implementation Cycle SoP](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md) for when gap log validation applies.
+See [Implementation Cycle SoP](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md) for when gap log validation applies.

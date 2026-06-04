@@ -25,7 +25,7 @@ Update the Release Workflow YAML and all related documentation to reflect the co
 ## Input
 
 - All previous task deliverables (T01-T05)
-- Current RW workflow YAML: `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- Current RW workflow YAML: `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 - Current RW documentation
 - PDCA integration plan: `docs/architecture/standards-and-adrs/rw-pdca-integration-plan.md`
 
@@ -109,7 +109,7 @@ Update the Release Workflow YAML and all related documentation to reflect the co
 ## References
 
 - **PDCA Integration Plan:** `docs/architecture/standards-and-adrs/rw-pdca-integration-plan.md`
-- **RW Workflow YAML:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
-- **RW Reference:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md`
-- **RW README:** `packages/frameworks/workflow mgt/README.md`
+- **RW Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
+- **RW Reference:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md`
+- **RW README:** `packages/frameworks/workflow-mgt/README.md`
 

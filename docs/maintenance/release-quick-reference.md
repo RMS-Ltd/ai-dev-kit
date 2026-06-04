@@ -19,7 +19,7 @@
 git branch --show-current
 
 # Validate branch safety
-python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 
 # Check configuration
 grep "semver_mapping_strategy:" rw-config.yaml
@@ -51,7 +51,7 @@ gh release view v0.5.1.48+1
 git branch --show-current
 
 # Validate branch safety
-python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 
 # Check configuration
 grep "semver_mapping_strategy:" rw-config.yaml

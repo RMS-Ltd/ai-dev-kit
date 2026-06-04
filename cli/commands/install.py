@@ -16,7 +16,11 @@ from cli.config import Config
 from cli.exceptions import AIDevKitError, InvalidInputError, BackendNotAvailableError, InstallationError, AppleSDKLicenseError
 from cli.validation import validate_framework_spec, validate_backend, validate_path
 from cli.backends import BackendRegistry, select_backend, get_backend
-from cli.adk_version_display import print_session_banner, resolve_install_adk_version
+from cli.adk_version_display import (
+    print_legacy_framework_layout_warning,
+    print_session_banner,
+    resolve_install_adk_version,
+)
 from cli.logging import create_install_logger, close_install_logger
 from cli.utils import (
     print_success,
@@ -395,6 +399,14 @@ class InstallCommand(BaseCommand):
                 close_install_logger(fh, log_dir, config)
                 return 1
             
+            frameworks_root = project_root / "packages" / "frameworks"
+            if not frameworks_root.is_dir():
+                frameworks_root = project_root / install_path_str
+            print_legacy_framework_layout_warning(
+                frameworks_root=frameworks_root if frameworks_root.is_dir() else None,
+                project_root=project_root,
+            )
+
             print_success(f"Successfully installed {len(frameworks_to_install)} framework(s)")
             log(
                 "INFO",

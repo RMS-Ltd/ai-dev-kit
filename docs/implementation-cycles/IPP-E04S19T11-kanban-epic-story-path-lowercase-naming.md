@@ -128,8 +128,8 @@ RF1–RF4 define path contract and documentation. RF2–RF3 define emission and 
 - `packages/frameworks/kanban/scripts/kanban_paths.py`, `test_kanban_paths.py`
 - `packages/frameworks/kanban/scripts/migrate_structure.py`, `task_creator.py`, `validate_installation.py`, `detect_existing_structure.py`
 - `packages/frameworks/kanban/scripts/rename_kanban_epic_story_paths.py`
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`, `update_kanban_docs.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_naming.py`
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`, `update_kanban_docs.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py`
 - `packages/frameworks/kanban/templates/**` (epic/story renames)
 - `docs/architecture/standards-and-adrs/ADR-015-*.md`, `epic-story-path-migration-guide.md`
 - `docs/project-management/kanban/**` (Wave 2)

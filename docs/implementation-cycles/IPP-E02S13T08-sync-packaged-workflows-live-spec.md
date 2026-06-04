@@ -47,7 +47,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Adopters copying `packages/frameworks/workflow mgt/` receive RW/UKW artefacts aligned with ai-dev-kit live agent execution (Step 9 FR-097/FR-092 validators, FR-092 Step 7 kanban, 12-step tracker model).
+Adopters copying `packages/frameworks/workflow-mgt/` receive RW/UKW artefacts aligned with ai-dev-kit live agent execution (Step 9 FR-097/FR-092 validators, FR-092 Step 7 kanban, 12-step tracker model).
 
 ### 2.4 Status transition intent
 
@@ -56,7 +56,7 @@ Adopters copying `packages/frameworks/workflow mgt/` receive RW/UKW artefacts al
 
 ### 2.5 ADR necessity decision
 
-**Outcome:** `EXEMPT` — implements FR-049/FR-056 and [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md); no new architectural choice.
+**Outcome:** `EXEMPT` — implements FR-049/FR-056 and [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md); no new architectural choice.
 
 ---
 
@@ -111,7 +111,7 @@ See §5.
 | Doc ID | Path | Publication |
 | ------ | ---- | ----------- |
 | D1 | `docs/implementation-cycles/IPP-E02S13T08-*.md` | NOT_APPLICABLE (repo SoT) |
-| D3–D11 | Under `packages/frameworks/workflow mgt/` | NOT_APPLICABLE (framework package) |
+| D3–D11 | Under `packages/frameworks/workflow-mgt/` | NOT_APPLICABLE (framework package) |
 
 ---
 
@@ -141,4 +141,4 @@ See §5.
 
 - [T08 task doc](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
 - [FR-049](../project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md)
-- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md)
+- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)

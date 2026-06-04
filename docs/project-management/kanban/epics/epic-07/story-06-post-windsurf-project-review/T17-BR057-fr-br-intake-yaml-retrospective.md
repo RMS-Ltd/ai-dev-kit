@@ -82,4 +82,4 @@ Retrospective traceability for the **fr-br-intake** GitHub Actions workflow YAML
 ## References
 
 - `.github/workflows/fr-br-intake.yml`  
-- `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`

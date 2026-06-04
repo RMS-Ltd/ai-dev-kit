@@ -61,7 +61,7 @@ Both packages in `temp/` have been updated to reflect the current state of the f
 
 ---
 
-## Package 2: Numbering & Versioning (`numbering & versioning/`)
+## Package 2: Numbering & Versioning (`numbering-versioning/`)
 
 ### Key Updates
 
@@ -179,8 +179,8 @@ Both packages are now ready to be used in other projects:
 4. ✅ Ready for use in other projects
 
 **To use in other projects:**
-- Review `temp/workflow mgt/README.md` for workflow package
-- Review `temp/numbering & versioning/README.md` for versioning package
+- Review `temp/workflow-mgt/README.md` for workflow package
+- Review `temp/numbering-versioning/README.md` for versioning package
 - Follow customization instructions in each package
 
 ---

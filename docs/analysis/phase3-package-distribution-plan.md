@@ -46,7 +46,7 @@ Phase 3 tools are complete:
 
 ```bash
 cd /Users/rms/Documents/projects/ai-dev-kit
-python3 "packages/frameworks/workflow mgt/scripts/build_all_packages.py"
+python3 "packages/frameworks/workflow-mgt/scripts/build_all_packages.py"
 ```
 
 This will:
@@ -63,31 +63,31 @@ cd /Users/rms/Documents/projects/ai-dev-kit
 mkdir -p packages/frameworks/dist/packages
 
 # Build kanban package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     kanban 2.1.0 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
 
 # Build workflow mgt package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     "workflow mgt" 2.1.3 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
 
 # Build numbering & versioning package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     "numbering & versioning" 2.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
 
 # Build doc-lifecycle package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     doc-lifecycle 1.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
 
 # Build debug-path package
-python3 "packages/frameworks/workflow mgt/scripts/build_package.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/build_package.py" \
     debug-path 1.0.0 \
     --output-dir packages/frameworks/dist/packages \
     --verbose
@@ -143,7 +143,7 @@ cd /Users/rms/Documents/projects/ai-dev-kit
 PACKAGES_DIR="packages/frameworks/dist/packages"
 
 # Upload kanban package
-python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/kanban-v2.1.0.tar.gz" \
     --hash-file "$PACKAGES_DIR/kanban-v2.1.0.tar.gz.sha256" \
     --tag kanban-v2.1.0 \
@@ -151,7 +151,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     --verbose
 
 # Upload workflow mgt package
-python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/workflow-mgt-v2.1.3.tar.gz" \
     --hash-file "$PACKAGES_DIR/workflow-mgt-v2.1.3.tar.gz.sha256" \
     --tag workflow-mgt-v2.1.3 \
@@ -159,7 +159,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     --verbose
 
 # Upload numbering & versioning package
-python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/numbering-versioning-v2.0.0.tar.gz" \
     --hash-file "$PACKAGES_DIR/numbering-versioning-v2.0.0.tar.gz.sha256" \
     --tag numbering-versioning-v2.0.0 \
@@ -167,7 +167,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     --verbose
 
 # Upload doc-lifecycle package
-python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/doc-lifecycle-v1.0.0.tar.gz" \
     --hash-file "$PACKAGES_DIR/doc-lifecycle-v1.0.0.tar.gz.sha256" \
     --tag doc-lifecycle-v1.0.0 \
@@ -175,7 +175,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
     --verbose
 
 # Upload debug-path package
-python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py" \
     "$PACKAGES_DIR/debug-path-v1.0.0.tar.gz" \
     --hash-file "$PACKAGES_DIR/debug-path-v1.0.0.tar.gz.sha256" \
     --tag debug-path-v1.0.0 \
@@ -191,7 +191,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_to_github_release.py" \
 
 cd /Users/rms/Documents/projects/ai-dev-kit
 PACKAGES_DIR="packages/frameworks/dist/packages"
-UPLOAD_SCRIPT="packages/frameworks/workflow mgt/scripts/upload_to_github_release.py"
+UPLOAD_SCRIPT="packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py"
 REPO="RMS-Ltd/ai-dev-kit"
 
 # Array of packages: (package_file, tag)
@@ -232,7 +232,7 @@ mkdir -p /tmp/test-framework-install
 cd /tmp/test-framework-install
 
 # Test installing kanban framework
-python3 /Users/rms/Documents/projects/ai-dev-kit/"packages/frameworks/workflow mgt/scripts/install_package_from_release.py" \
+python3 /Users/rms/Documents/projects/ai-dev-kit/"packages/frameworks/workflow-mgt/scripts/install_package_from_release.py" \
     kanban 2.1.0 \
     --install-dir ./frameworks \
     --repo RMS-Ltd/ai-dev-kit \
@@ -247,7 +247,7 @@ cat frameworks/kanban-v2.1.0/MANIFEST.json
 
 ```bash
 # Test with installation script
-python3 "packages/frameworks/workflow mgt/scripts/install_package_from_release.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/install_package_from_release.py" \
     "workflow mgt" 2.1.3 \
     --install-dir ./test-install \
     --verbose
@@ -353,10 +353,10 @@ After packages are uploaded, update:
 ## Related Documents
 
 - Package Management Implementation Plan: `docs/Analysis/package-management-implementation-plan.md`
-- Package Installation Guide: `packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
-- Build Package Script: `packages/frameworks/workflow mgt/scripts/build_package.py`
-- Upload Script: `packages/frameworks/workflow mgt/scripts/upload_to_github_release.py`
-- Installation Script: `packages/frameworks/workflow mgt/scripts/install_package_from_release.py`
+- Package Installation Guide: `packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
+- Build Package Script: `packages/frameworks/workflow-mgt/scripts/build_package.py`
+- Upload Script: `packages/frameworks/workflow-mgt/scripts/upload_to_github_release.py`
+- Installation Script: `packages/frameworks/workflow-mgt/scripts/install_package_from_release.py`
 
 ---
 

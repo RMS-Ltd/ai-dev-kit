@@ -188,8 +188,8 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 - Updated T04 task document with bug analysis and fix
 
 **Files Updated:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` (bug fix)
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (documentation)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py` (bug fix)
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (documentation)
 - `docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` (task doc)
 
 **Verification Status:**
@@ -287,8 +287,8 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 
 ## References
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` - Bug location and fix
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW documentation
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py` - Bug location and fix
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW documentation
 - `docs/knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md` - Discovered use case
 - `docs/knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md` - Abstract anti-pattern definition
 - `docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` - Task document

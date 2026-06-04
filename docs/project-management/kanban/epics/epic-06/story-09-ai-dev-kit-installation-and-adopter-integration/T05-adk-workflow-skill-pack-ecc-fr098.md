@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, `adk-intake-fr-br-uxr`, `adk-version-bump`) under `packages/frameworks/workflow mgt/skills/`, plus `validate_adk_ecc_skill_pack.py`, pytest tests, and [`IPP-E06S09T05`](../../../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md).
+Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, `adk-intake-fr-br-uxr`, `adk-version-bump`) under `packages/frameworks/workflow-mgt/skills/`, plus `validate_adk_ecc_skill_pack.py`, pytest tests, and [`IPP-E06S09T05`](../../../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md).
 
 ---
 
@@ -35,7 +35,7 @@ Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk
 
 ### In scope (v0.6.9.5+2 — shipped)
 
-- Five ECC-format `SKILL.md` skills + `skills/README.md` under `packages/frameworks/workflow mgt/skills/`
+- Five ECC-format `SKILL.md` skills + `skills/README.md` under `packages/frameworks/workflow-mgt/skills/`
 - `validate_adk_ecc_skill_pack.py` + `test_validate_adk_ecc_skill_pack.py`
 - IPP + Kanban/FR/spec/fbuboard reconciliation for Phase 1
 - Bridge template `adk_skill_pack_path` validated by script
@@ -63,7 +63,7 @@ Shipped ADK governance workflow skills in ECC-compatible `SKILL.md` format (`adk
 
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
-- [Bridge template](../../../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
+- [Bridge template](../../../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
 
 ---
 

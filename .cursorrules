@@ -9,7 +9,7 @@
 
 **🧭 Agent cold start (ADR-012):** On a new session, read repo-root **`AGENTS.md` only** — it contains the routing table and binding rules (one step; do not open `docs/project-agent-manifest.json` on cold start). State which track applies, then load only the `loadFirst` paths listed there before ingesting this full rules file or large doc trees. Manifest/index: tooling sync and validators only (`docs/project-agent-index.md`).
 
-**Dual-source (maintainers):** The portable RW excerpt [`packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`](packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md) must stay aligned with this section on FR-060 / 1b–1d / FR-038. Checklist: [`packages/frameworks/workflow mgt/docs/rw-trigger-dual-source-parity.md`](packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md).
+**Dual-source (maintainers):** The portable RW excerpt [`packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`](packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md) must stay aligned with this section on FR-060 / 1b–1d / FR-038. Checklist: [`packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md`](packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md).
 
 ---
 
@@ -61,12 +61,12 @@
    - **CRITICAL:** Parse the **same user message** as the RW trigger for a task identifier (`E7:S01:T10`, `E7S01T10`, `RW -d E7S01T10`, `RW -k E6S6T56`, etc.). Same flexibility as UKW/Step 1d parsing.
    - **If no parseable `E…S…T…` token:** **RW ABORTED** — same severity as Step 1 failure. **Do not** run `validate_rw_task_intent.py` without `--requested` as a substitute. Tell the user to re-send with an explicit task id, e.g. `RW E7:S01:T10` or `RW E7S01T10`.
 6c. **🚨 MANDATORY: Step 1c — RW task document releasable (FR-060)** — **After Step 1b passes**, **before any RW file modifications**
- - Run: `python "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py" --requested "<parsed_id>"` 
+ - Run: `python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_complete.py" --requested "<parsed_id>"` 
  - **Full RW releasable statuses:** `IN PROGRESS`, `COMPLETE`, or perpetual maintenance task.
  - For **`RW -k`**, add **`--mode rw-k`** (requires task doc to exist; status releasability checks are skipped in rw-k mode).
  - **Non-zero exit:** **RW ABORTED** — same severity as Step 1. Print script output.
 6d. **🚨 MANDATORY: Step 1d — RW Task Intent Guard (BR-056 / E6:S06:T56)** — **After Step 1c passes**, **before any RW file modifications** (before Step 2)
-   - Run: `python "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py" --requested "<parsed_id>"`  
+   - Run: `python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py" --requested "<parsed_id>"`  
    - **Use `--mode rw-k`** when the trigger is **`RW -k`**: comparison against `version.py` is skipped so explicit init target does not false-block.
    - **`--art` is supported in all RW modes** (`RW`, `RW -d`, `RW -k`) to adopt the requested `E:S:T` as canonical release anchor when intentional.
    - **If the script exits non-zero:** **RW ABORTED** — same severity as Step 1 failure. **Do not** bump version, edit changelogs, or touch kanban. Print the script output. Tell the user to verify the intended Epic/Story/Task.
@@ -75,7 +75,7 @@
 7. **EXECUTE INTELLIGENTLY** - Use your AI capabilities to solve problems, don't just follow rigid steps
 8. **ADAPT AND RECOVER** - When scripts fail, find alternative approaches or implement manual workarounds
 9. **Document** each step's analysis, actions, and results
-10. **MUST USE Workflow Step Tracker:** Create and maintain step progress per [Workflow Step Tracker Contract](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) (see below)
+10. **MUST USE Workflow Step Tracker:** Create and maintain step progress per [Workflow Step Tracker Contract](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) (see below)
 
 **🧠 AGENT INTELLIGENCE REQUIREMENTS:**
 
@@ -241,7 +241,7 @@ kanban_root = config.get('kanban_root', 'docs/project-management/kanban') if con
 
 **🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 12 Release Workflow steps (plus optional Step 9.5). In Cursor, use `todo_write` as the reference adapter.
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 12 Release Workflow steps (plus optional Step 9.5). In Cursor, use `todo_write` as the reference adapter.
 
 1. **At Workflow Start:** Create step list with all 12 steps as `pending`; initialize agent run log when resumption may be needed (see ADR-011)
 2. **Before Each Step:** Mark step as `in_progress`
@@ -336,7 +336,7 @@ For each step, follow this pattern:
    - **D. VALIDATE BEFORE UPDATING:** Verify new `VERSION_TASK` matches completed task number (unless UKW context)
    - **E. UPDATE VERSION FILE:** Use config path, update `VERSION_TASK` and `VERSION_BUILD`
    - **F. VALIDATE AFTER UPDATING:** Re-read version file, verify new version matches decision
-   - See `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 2 for complete procedure
+   - See `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 2 for complete procedure
 
 3. **Create Detailed Changelog** - Create detailed changelog in changelog archive directory. Use config path. Full timestamp (`YYYY-MM-DD HH:MM:SS UTC`). **CRITICAL:** Timestamp is IMMUTABLE once written - never edit the `**Release Date:**` field.
 
@@ -344,7 +344,7 @@ For each step, follow this pattern:
 
 5. **Update README** - **MANDATORY:** Update project version in README with **SemVer** (outward-facing version):
    - **A. Generate SemVer:** Use `semver_converter.py` to convert internal version to SemVer
-     - Run: `python "packages/frameworks/workflow mgt/scripts/version/semver_converter.py" "{internal_version}"`
+     - Run: `python "packages/frameworks/workflow-mgt/scripts/version/semver_converter.py" "{internal_version}"`
      - Example: `0.3.2.11+2` → `0.3.19+2` (SemVer)
    - **B. Update README:** Update version text with SemVer (e.g., `**Version:** v{semver}`), version badge, and latest release callout if present
    - **C. Use config path:** Read `readme_file` from config or fallback to `README.md`
@@ -371,7 +371,7 @@ For each step, follow this pattern:
 
    **Audit:** RW Step 7 emits a "touched surfaces + why" report (Wave 5/7 deliverable under FR-092) sufficient to reconstruct release-scope reconciliation outcomes.
 
-   See [update-kanban-workflow-agent-execution.md](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) for UKW reactive-only role and `invocation_context` (`rw_step_7` vs `standalone`); see [release-workflow-agent-execution.md](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) for the canonical Step 7 execution detail; see [kanban-governance-policy.md](packages/frameworks/kanban/policies/kanban-governance-policy.md) for the RW preventive / UKW corrective separation.
+   See [update-kanban-workflow-agent-execution.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) for UKW reactive-only role and `invocation_context` (`rw_step_7` vs `standalone`); see [release-workflow-agent-execution.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) for the canonical Step 7 execution detail; see [kanban-governance-policy.md](packages/frameworks/kanban/policies/kanban-governance-policy.md) for the RW preventive / UKW corrective separation.
 
 8. **Stage Files** - Run `git add -A` to stage all modified files
 
@@ -398,7 +398,7 @@ For each step, follow this pattern:
    - **A. Script Auto-Loads .env.local:** The `create_github_release.py` script automatically loads `.env.local` if it exists (checks current directory and project root)
    - **B. Get Repository:** Use `GITHUB_REPOSITORY` env var (from .env.local or environment) or default to `earlution/ai-dev-kit`
    - **C. Create/Update Release:** Run `create_github_release.py` to create or update GitHub release:
-     - Run: `python "packages/frameworks/workflow mgt/scripts/create_github_release.py" --semver-tag "v{semver}" --internal-version "v{internal_version}" --summary "{summary}" --epic "{epic}" --story "{story}" --task "{task}" --repo "{repo}"`
+     - Run: `python "packages/frameworks/workflow-mgt/scripts/create_github_release.py" --semver-tag "v{semver}" --internal-version "v{internal_version}" --summary "{summary}" --epic "{epic}" --story "{story}" --task "{task}" --repo "{repo}"`
      - **Note:** Script automatically loads `GITHUB_TOKEN` from `.env.local` or environment variable
      - **Note:** Do NOT pass `--token` flag - let script load from `.env.local` automatically
      - Example: Creates/updates release for `v0.3.19+3` (SemVer) with release name showing SemVer
@@ -439,11 +439,11 @@ For each step, follow this pattern:
 - Kanban Board: `docs/project-management/kanban/_index.md` or `docs/project-management/kanban/kanban-board.md`
 - Epic Docs: `docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md`
 - Story Docs: `docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md`
-- Validators: `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`, `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+- Validators: `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`, `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 **Reference Documentation:**
 - Versioning Policy: `docs/governance/standards/dev-kit-versioning-policy.md` (canonical SoT)
-- Release Workflow Guide: `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- Release Workflow Guide: `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - Workflow Flaws Reference: `docs/architecture/standards-and-adrs/workflow-flaws-reference-guide.md`
 - Versioning Error Reference: `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md`
 
@@ -475,7 +475,7 @@ For each step, follow this pattern:
 
 **🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 6 PVW steps. In Cursor, use `todo_write` as the reference adapter.
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 6 PVW steps. In Cursor, use `todo_write` as the reference adapter.
 
 **Agent Execution Guide:**
 - See `docs/documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md` for detailed step-by-step guide
@@ -557,7 +557,7 @@ For each step, follow this pattern:
 
 **🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 9 UKW steps (including Step 2.5). In Cursor, use `todo_write` as the reference adapter.
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 9 UKW steps (including Step 2.5). In Cursor, use `todo_write` as the reference adapter.
 
 **The 9 Steps (Bottom-Up Approach) - Conditional Execution Based on Flags:**
 
@@ -640,7 +640,7 @@ For each step, follow this pattern:
 **📋 Workflow YAML:**
 
 The workflow definition is located at:
-- `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
+- `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 
 **📚 Related Documentation:**
 
@@ -772,7 +772,7 @@ Documents in `docs/` directory must have lifecycle metadata in frontmatter:
 
 **When implementing tasks, projects adopting this pattern MUST follow the Implementation Cycle (spec + TDD):**
 
-**Reference:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md` (framework SoP for adopters).
+**Reference:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md` (framework SoP for adopters).
 
 **Steps (do not skip when pattern is adopted):**
 1. **Requirement Documentation** — Create or update BR/FR or document requirement in task.
@@ -817,7 +817,7 @@ Documents in `docs/` directory must have lifecycle metadata in frontmatter:
 
 **Reference:** See `docs/governance/standards/dev-kit-versioning-policy.md` (canonical SoT for dev-kit)
 
-**Inline E/S/T notation (UXR-014):** When writing task tokens in docs, boards, and trigger messages, **default to two-digit zero-padding** for Epic, Story, and Task when `<10` (e.g. `E04:S19:T09`, `RW E04S19T09`). Parsers accept legacy unpadded forms on read; new writes MUST use padded form. Formatter: `packages/frameworks/workflow mgt/scripts/kanban/est_format.py`.
+**Inline E/S/T notation (UXR-014):** When writing task tokens in docs, boards, and trigger messages, **default to two-digit zero-padding** for Epic, Story, and Task when `<10` (e.g. `E04:S19:T09`, `RW E04S19T09`). Parsers accept legacy unpadded forms on read; new writes MUST use padded form. Formatter: `packages/frameworks/workflow-mgt/scripts/kanban/est_format.py`.
 
 ---
 

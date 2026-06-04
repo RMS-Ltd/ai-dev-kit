@@ -15,5 +15,5 @@ housekeeping_policy: keep
 - FAIL when `NOT_APPLICABLE` is present without justification.
 
 ## Verification Commands
-- `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_ipw_publication_wiring.py"`
-- `python "packages/frameworks/workflow mgt/scripts/validation/validate_ipw_publication_wiring.py" --requested E2:S15:T01`
+- `pytest "packages/frameworks/workflow-mgt/scripts/validation/test_validate_ipw_publication_wiring.py"`
+- `python "packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py" --requested E2:S15:T01`

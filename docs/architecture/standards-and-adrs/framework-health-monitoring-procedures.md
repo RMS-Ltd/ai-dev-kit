@@ -230,7 +230,7 @@ python3 scripts/frameworks/framework-health-monitor.py \
 
 ## Monitoring Workflow
 
-**Workflow Definition:** `packages/frameworks/workflow mgt/workflows/framework-health-monitoring-workflow.yaml`
+**Workflow Definition:** `packages/frameworks/workflow-mgt/workflows/framework-health-monitoring-workflow.yaml`
 
 **Steps:**
 1. **Collect Health Metrics** - Run monitoring script

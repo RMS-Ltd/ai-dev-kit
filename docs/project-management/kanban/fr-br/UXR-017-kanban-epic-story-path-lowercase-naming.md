@@ -14,13 +14,13 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** IN PROGRESS  
 **Code:** UXR-017  
-**Last updated:** 2026-06-04  
+**Last updated:** 2026-06-05  
 **Version:** v0.4.19.11+1 (Waves 1–2 + template pack + installer sign-off; AC5 adopter replay open)  
 
 **Implementing Task:** [E04:S19:T11](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)  
 **Planning package:** [IPP-E04S19T11](../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
-**Related:** [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (task `Txx` file hygiene — **COMPLETE**), [UXR-014](UXR-014-two-digit-est-identifier-default-formatting.md) (inline `E:S:T` padding), [UXR-008](UXR-008-kboard-fbuboard-default-naming-adoption.md) (board filename normalization), [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / [E06:S09:T12](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) (install defaults `Epic-{epic}/…`, `Story-{story:03d}-*.md`)
+**Related:** [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (task `Txx` file hygiene — **COMPLETE**), [UXR-014](UXR-014-two-digit-est-identifier-default-formatting.md) (inline `E:S:T` padding), [UXR-008](UXR-008-kboard-fbuboard-default-naming-adoption.md) (board filename normalization), [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / [E06:S09:T12](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) (install defaults `Epic-{epic}/…`, `Story-{story:03d}-*.md`), [BR-087](BR-087-framework-install-directory-slug-mismatch.md) / [UXR-016](UXR-016-install-setup-interactive-feedback-external-semver-version.md) (same Expenses Tracker session — **`packages/frameworks/`** slug layout; out of scope for UXR-017)
 
 ---
 
@@ -51,7 +51,7 @@ During AI Dev Kit installation on **Expenses Tracker**, the generated kanban tre
 **Artifacts reviewed:**
 
 - `packages/frameworks/kanban/scripts/migrate_structure.py` (`Epic-{n}`, `Story-{story}`)
-- `packages/frameworks/workflow mgt/config/rw-config-schema.md` (default patterns)
+- `packages/frameworks/workflow-mgt/config/rw-config-schema.md` (default patterns)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md` (location examples)
 - `docs/project-management/kanban/epics/` (live tree: `Epic-*`, `Story-*`)
 
@@ -128,7 +128,7 @@ Project branches already use lowercase (`epic/6-framework-management`). Lowercas
 
 - `packages/frameworks/kanban/templates/**`
 - `packages/frameworks/kanban/scripts/migrate_structure.py`, `task_creator.py`, `validate_installation.py`
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py` (pattern detection)
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` (pattern detection)
 - `docs/project-management/kanban/epics/**` (ai-dev-kit tree)
 - Adopter projects: **Expenses Tracker** kanban tree
 
@@ -175,11 +175,12 @@ Project branches already use lowercase (`epic/6-framework-management`). Lowercas
 
 - **Not in scope for this UXR:** Renaming `Epic` / `Story` **words** in document titles or H1 headings—only **path segments and filenames** (`epic-` / `story-` prefixes).
 - **Coordination:** Implementation likely spans **E04** (policy/templates) and **E06:S09** (install defaults); T11 owns policy + framework emission; install-only deltas may spawn a linked E06 task if split is cleaner at IPW time.
+- **Same adopter session (2026-06-04/05):** Framework tree under `packages/frameworks/` still uses legacy names with spaces/`&` after kit update — tracked as **[BR-087](BR-087-framework-install-directory-slug-mismatch.md)** with install UX notes in **[UXR-016 addendum](UXR-016-install-setup-interactive-feedback-external-semver-version.md#addendum--framework-directories-still-use-legacy-names-2026-06-05)** (not UXR-017 AC).
 
 ---
 
 ## References
 
 - [kanban-governance-policy.md](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — File naming convention section
-- [rw-config-schema.md](../../../packages/frameworks/workflow%20mgt/config/rw-config-schema.md)
+- [rw-config-schema.md](../../../packages/frameworks/workflow-mgt/config/rw-config-schema.md)
 - [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)

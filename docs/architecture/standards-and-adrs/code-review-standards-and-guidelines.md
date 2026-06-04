@@ -739,7 +739,7 @@ def calculate_total(items):
 
 - **Maintenance Workflow Processes:** `docs/architecture/standards-and-adrs/maintenance-workflow-processes.md`
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Release Workflow:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- **Release Workflow:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 - **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
 - **Story 2:** `docs/project-management/kanban/epics/epic-07/story-02-code-review-standards-and-processes.md`
 

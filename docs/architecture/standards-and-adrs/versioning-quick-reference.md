@@ -177,8 +177,8 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 - **Full Cookbook:** `docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
-- **Versioning Strategy:** `packages/frameworks/numbering & versioning/versioning-strategy.md`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **Versioning Strategy:** `packages/frameworks/numbering-versioning/versioning-strategy.md`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Error Reference:** `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md`
 
 ---

@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Perform a **full engineering code review** of the Workflow Management package (`packages/frameworks/workflow mgt/`) and all **supporting machinery** that workflows depend on — not documentation parity alone ([E02:S13:T08](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)), but **code structure, duplication, dead paths, and efficiency opportunities** across the evolved codebase.
+Perform a **full engineering code review** of the Workflow Management package (`packages/frameworks/workflow-mgt/`) and all **supporting machinery** that workflows depend on — not documentation parity alone ([E02:S13:T08](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)), but **code structure, duplication, dead paths, and efficiency opportunities** across the evolved codebase.
 
 **In scope:**
 
@@ -56,7 +56,7 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 - Expectations baseline: [E02:S13:T01](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 - Packaged/live sync evidence: [E02:S13:T08](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) sync report
 - Source FR: [FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)
-- Package root: `packages/frameworks/workflow mgt/`
+- Package root: `packages/frameworks/workflow-mgt/`
 - Live repo integration: root `.cursorrules`, `rw-config.yaml`, `.pre-commit-config.yaml` (workflow-related hooks)
 
 ---
@@ -74,7 +74,7 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 
 ## Approach
 
-1. **Inventory** — Tree walk of `packages/frameworks/workflow mgt/`; classify by workflow and shared infrastructure.
+1. **Inventory** — Tree walk of `packages/frameworks/workflow-mgt/`; classify by workflow and shared infrastructure.
 2. **Map to expectations** — Cross-reference E02:S13:T01; note gaps in docs vs code.
 3. **Trace execution paths** — RW Step 7/9, UKW Step 6/8, CMW, validators invoked from `.cursorrules` / pre-commit / CI.
 4. **Detect duplication** — Compare validator lists, kanban update scripts, path defaults, YAML copies (post-T08).
@@ -131,4 +131,4 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 - **IPP:** [`IPP-E07S07T01-workflow-machinery-code-review.md`](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
 - **Report (deliverable):** [`T01-workflow-machinery-code-review-report.md`](./T01-workflow-machinery-code-review-report.md)
 - Story: [`story-07-code-reviews.md`](../story-07-code-reviews.md)
-- Package: `packages/frameworks/workflow mgt/`
+- Package: `packages/frameworks/workflow-mgt/`

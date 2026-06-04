@@ -112,7 +112,7 @@ Discoverability = kanban task doc markdown link to artifact basename under `docs
 | Artifact | Location |
 | -------- | -------- |
 | IPP | `docs/implementation-cycles/` |
-| Validator | `packages/frameworks/workflow mgt/scripts/validation/` |
+| Validator | `packages/frameworks/workflow-mgt/scripts/validation/` |
 | Kanban host | Epic 2 → Story 015 → T01 |
 
 ---

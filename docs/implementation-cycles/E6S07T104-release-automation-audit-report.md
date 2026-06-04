@@ -36,12 +36,12 @@ This audit comprehensively analyzed all release automation components for compat
 ### 1. Release Workflow (RW) Components
 
 #### **Primary Release Workflow**
-- **File:** `packages/frameworks/workflow mgt/workflows/release-workflow/release-workflow.yaml`
+- **File:** `packages/frameworks/workflow-mgt/workflows/release-workflow/release-workflow.yaml`
 - **Version:** 2.3.0
 - **Status:** 🔴 INCOMPATIBLE with task-touch SemVer
 
 #### **Release Workflow Configuration**
-- **File:** `packages/frameworks/workflow mgt/workflows/release-workflow/release-workflow-config.yaml`
+- **File:** `packages/frameworks/workflow-mgt/workflows/release-workflow/release-workflow-config.yaml`
 - **Status:** 🟢 COMPATIBLE (configuration-only)
 
 ### 2. GitHub Actions Components
@@ -58,7 +58,7 @@ This audit comprehensively analyzed all release automation components for compat
 ### 3. Version Management Components
 
 #### **SemVer Converter**
-- **File:** `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- **File:** `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - **Status:** 🟢 COMPATIBLE (supports both strategies)
 
 #### **SemVer Registry**
@@ -201,7 +201,7 @@ This audit comprehensively analyzed all release automation components for compat
 ### Priority 1: Critical Fixes (Release Blocking)
 
 #### **Fix 1: Implement Dual Tag Strategy in Release Workflow**
-**File:** `packages/frameworks/workflow mgt/workflows/release-workflow/release-workflow.yaml`
+**File:** `packages/frameworks/workflow-mgt/workflows/release-workflow/release-workflow.yaml`
 **Changes Required:**
 1. Add semver_mapping_strategy detection
 2. Implement conditional tag creation logic

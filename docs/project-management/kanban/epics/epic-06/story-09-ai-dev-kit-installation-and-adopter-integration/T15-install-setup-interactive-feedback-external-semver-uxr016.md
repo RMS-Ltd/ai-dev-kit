@@ -114,6 +114,6 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 - [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 - [IPP-E06S09T15 — Install/setup external SemVer display](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 - [dev-kit-versioning-policy.md](../../../../../governance/standards/dev-kit-versioning-policy.md)
-- [`semver_converter.py`](../../../../../../packages/frameworks/workflow%20mgt/scripts/version/semver_converter.py)
-- [`install_release_workflow.py`](../../../../../../packages/frameworks/workflow%20mgt/scripts/install_release_workflow.py)
+- [`semver_converter.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
+- [`install_release_workflow.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/install_release_workflow.py)
 - [`install_kanban_framework.py`](../../../../../../packages/frameworks/kanban/scripts/install_kanban_framework.py)

@@ -32,9 +32,9 @@ Non-functional: optional integration unchanged; ADK validators remain authoritat
 
 **Goal.** Ship a reproducible skill pack adoptable alongside ECC minimal profile guidance, with deterministic validation for frontmatter, guide links, RW-only git wording, README path disclosure, and bridge `adk_skill_pack_path` alignment.
 
-**Skill set.** `adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, `adk-intake-fr-br-uxr`, `adk-version-bump` under `packages/frameworks/workflow mgt/skills/<slug>/SKILL.md`.
+**Skill set.** `adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, `adk-intake-fr-br-uxr`, `adk-version-bump` under `packages/frameworks/workflow-mgt/skills/<slug>/SKILL.md`.
 
-**Validator.** `packages/frameworks/workflow mgt/scripts/validation/validate_adk_ecc_skill_pack.py`.
+**Validator.** `packages/frameworks/workflow-mgt/scripts/validation/validate_adk_ecc_skill_pack.py`.
 
 ---
 
@@ -65,8 +65,8 @@ Non-functional: optional integration unchanged; ADK validators remain authoritat
 | Doc | Path | Action |
 |-----|------|--------|
 | IPP | `docs/implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md` | CREATE |
-| Validator/tests | `packages/frameworks/workflow mgt/scripts/validation/*adk_ecc*` | CREATE |
-| Skills/README | `packages/frameworks/workflow mgt/skills/**` | CREATE |
+| Validator/tests | `packages/frameworks/workflow-mgt/scripts/validation/*adk_ecc*` | CREATE |
+| Skills/README | `packages/frameworks/workflow-mgt/skills/**` | CREATE |
 
 ---
 

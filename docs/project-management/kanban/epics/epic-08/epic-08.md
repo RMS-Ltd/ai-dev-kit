@@ -141,5 +141,5 @@ Implement automation scripts for common development and maintenance tasks.
 ## References
 
 - `docs/project-management/kanban/README.md`
-- `packages/frameworks/workflow mgt/scripts/`
+- `packages/frameworks/workflow-mgt/scripts/`
 

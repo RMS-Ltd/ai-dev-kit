@@ -32,7 +32,7 @@ housekeeping_policy: keep
 - **FR-081** scope (modular adoption, contract-first wiring).
 - **IPP:** [`IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md`](../../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md)
 - [ADR-003](../../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and greenfield delivery (**FR-080** / **E06:S09:T01**) for cross-links only.
-- [`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md) and user-docs installation guides.
+- [`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md) and user-docs installation guides.
 - **Brownfield SoT:** [`INSTALL_IN_YOUR_PROJECT.md`](../../../../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
 
 ---

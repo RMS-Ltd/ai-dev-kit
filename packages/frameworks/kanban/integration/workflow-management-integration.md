@@ -374,7 +374,7 @@ reference_documentation:
   versioning_errors: "../../docs/architecture/standards-and-adrs/versioning-error-reference-guide.md"
 
 related_packages:
-  numbering_versioning: "temp/numbering & versioning/"
+  numbering_versioning: "temp/numbering-versioning/"
   workflow_management: "temp/workflow-mgt/"
 ```
 

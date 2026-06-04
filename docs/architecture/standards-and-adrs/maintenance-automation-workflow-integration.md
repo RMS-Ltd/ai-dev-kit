@@ -410,8 +410,8 @@ maintenance_automation:
 
 - **Maintenance Automation Requirements:** `docs/architecture/standards-and-adrs/maintenance-automation-requirements.md`
 - **Maintenance Automation Scripts:** `docs/architecture/standards-and-adrs/maintenance-automation-scripts-and-tools.md`
-- **Release Workflow:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
-- **Update Kanban Workflow:** `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
+- **Release Workflow:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
+- **Update Kanban Workflow:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 - **Maintenance Workflow Processes:** `docs/architecture/standards-and-adrs/maintenance-workflow-processes.md`
 - **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
 - **Story 4:** `docs/project-management/kanban/epics/epic-07/story-04-maintenance-automation-and-tooling.md`

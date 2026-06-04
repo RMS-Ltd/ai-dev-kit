@@ -342,7 +342,7 @@ This task addresses gaps identified during **E04:S03:T04 – Validate RW → Kan
 7. Document fixes and update validation report
 
 **Files Updated:**
-- ✅ `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW Step 6 enhanced)
+- ✅ `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW Step 6 enhanced)
 - ✅ `docs/project-management/kanban/epics/epic-04/epic-04.md` (Story Checklist fixed)
 - ✅ `docs/project-management/kanban/story-03-kanban-versioning-rw-integration.md` (forensic markers standardized)
 - ✅ `docs/project-management/kanban/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation.md` (fix status added)
@@ -502,7 +502,7 @@ Story 3 successfully establishes and documents how Kanban, Versioning, and Relea
 
 - `packages/frameworks/kanban/integration/numbering-versioning-integration.md`
 - `packages/frameworks/kanban/integration/workflow-management-integration.md`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - `docs/project-management/rituals/policy/kanban-governance-policy.md`
 

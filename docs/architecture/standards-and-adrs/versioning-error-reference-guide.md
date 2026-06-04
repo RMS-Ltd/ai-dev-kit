@@ -55,7 +55,7 @@ This document serves as a **comprehensive reference** for the versioning error a
 3. **MUST** compare task number to current VERSION_TASK
 4. **MUST** validate before and after updating
 
-**See:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 2 for complete procedure.
+**See:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 2 for complete procedure.
 
 ---
 
@@ -259,8 +259,8 @@ This document serves as a **comprehensive reference** for the versioning error a
 - **[Versioning Strategy (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering%20%26%20versioning/versioning-strategy.md)** - Complete strategy with forensic traceability
 
 ### Procedure Documents
-- **[Release Workflow Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - **MANDATORY** step-by-step procedure for RW Step 2
-- **[Cursor Rules RW Trigger Section (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)** - Updated RW Step 2 with explicit procedure
+- **[Release Workflow Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - **MANDATORY** step-by-step procedure for RW Step 2
+- **[Cursor Rules RW Trigger Section (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md)** - Updated RW Step 2 with explicit procedure
 
 ### Workflow Flaws Documentation
 - **[Workflow Flaws Reference Guide](workflow-flaws-reference-guide.md)** - Comprehensive reference for all RW flaws (this error is documented as WF-002)

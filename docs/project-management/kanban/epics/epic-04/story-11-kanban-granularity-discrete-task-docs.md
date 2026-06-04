@@ -86,7 +86,7 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 1. Review current Kanban governance policy documents:
    - `packages/frameworks/kanban/policies/kanban-governance-policy.md` (canonical SoT)
    - `docs/project-management/rituals/policy/kanban-governance-policy.md` (dev-kit local)
-   - `packages/frameworks/numbering & versioning/kanban-governance-policy.md` (framework)
+   - `packages/frameworks/numbering-versioning/kanban-governance-policy.md` (framework)
 2. Add explicit requirement for 3-tier structure (Epic → Story → Task)
 3. Mandate discrete Task documents (or clearly delimited sections using Task ID)
 4. Define required Task doc fields:
@@ -162,8 +162,8 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 **Approach:**
 1. Review current versioning policy documents:
    - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (dev-kit local)
-   - `packages/frameworks/numbering & versioning/versioning-policy.md` (framework)
-   - `packages/frameworks/numbering & versioning/versioning-strategy.md` (framework)
+   - `packages/frameworks/numbering-versioning/versioning-policy.md` (framework)
+   - `packages/frameworks/numbering-versioning/versioning-strategy.md` (framework)
 2. Update Kanban-related sections:
    - Add requirement that Task doc must exist before versioning
    - Document Task doc → Version TASK component alignment requirement

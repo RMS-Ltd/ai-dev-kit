@@ -61,4 +61,4 @@ Continue and publish UKW + RW work around `E2:S15:T05` canonical row-transform h
 
 - `git log --oneline -n 8`
 - `git tag --list "v0.2.16.4+*" && git tag --list "v0.4.764*"`
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict`
+- `python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict`

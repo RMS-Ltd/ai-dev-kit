@@ -174,9 +174,9 @@ housekeeping_policy: keep
 
 ## References
 
-- [PIR Workflow Planning (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Analysis/PIR-workflow-planning.md)
-- [PIR Workflow Reference (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-reference.md)
-- [Release Workflow (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
+- [PIR Workflow Planning (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Analysis/PIR-workflow-planning.md)
+- [PIR Workflow Reference (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-reference.md)
+- [Release Workflow (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md)
 
 ---
 
@@ -189,4 +189,4 @@ housekeeping_policy: keep
 
 ---
 
-_This template is part of the Workflow Management Framework. See `packages/frameworks/workflow mgt/` for complete framework documentation._
+_This template is part of the Workflow Management Framework. See `packages/frameworks/workflow-mgt/` for complete framework documentation._

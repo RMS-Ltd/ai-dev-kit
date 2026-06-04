@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Define the implementation expectations baseline for the Numbering & Versioning framework package (`packages/frameworks/numbering & versioning/`). Extract expected behaviors, schemas, constraints, and package composition from documentation to establish a comprehensive expectations baseline for RC readiness review.
+Define the implementation expectations baseline for the Numbering & Versioning framework package (`packages/frameworks/numbering-versioning/`). Extract expected behaviors, schemas, constraints, and package composition from documentation to establish a comprehensive expectations baseline for RC readiness review.
 
 **Scope includes:**
 - Extract core operating principles from package README
@@ -32,14 +32,14 @@ Define the implementation expectations baseline for the Numbering & Versioning f
 
 ## Inputs
 
-- Package README: `packages/frameworks/numbering & versioning/README.md`
-- Versioning Policy: `packages/frameworks/numbering & versioning/versioning-policy.md`
-- Versioning Strategy: `packages/frameworks/numbering & versioning/versioning-strategy.md`
-- Implementation Guide: `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md`
-- Package Overview: `packages/frameworks/numbering & versioning/PACKAGE_OVERVIEW.md`
-- Integration Documentation: `packages/frameworks/numbering & versioning/integration/`
-- Templates: `packages/frameworks/numbering & versioning/EPIC_TEMPLATE.md`, `STORY_TEMPLATE.md`
-- Kanban Governance Policy: `packages/frameworks/numbering & versioning/kanban-governance-policy.md`
+- Package README: `packages/frameworks/numbering-versioning/README.md`
+- Versioning Policy: `packages/frameworks/numbering-versioning/versioning-policy.md`
+- Versioning Strategy: `packages/frameworks/numbering-versioning/versioning-strategy.md`
+- Implementation Guide: `packages/frameworks/numbering-versioning/IMPLEMENTATION_GUIDE.md`
+- Package Overview: `packages/frameworks/numbering-versioning/PACKAGE_OVERVIEW.md`
+- Integration Documentation: `packages/frameworks/numbering-versioning/integration/`
+- Templates: `packages/frameworks/numbering-versioning/EPIC_TEMPLATE.md`, `STORY_TEMPLATE.md`
+- Kanban Governance Policy: `packages/frameworks/numbering-versioning/kanban-governance-policy.md`
 
 ---
 
@@ -470,7 +470,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 ### Sources
 
-**Package Location:** `packages/frameworks/numbering & versioning/`
+**Package Location:** `packages/frameworks/numbering-versioning/`
 
 **Core Documentation:**
 - `README.md` - Package overview and quick reference

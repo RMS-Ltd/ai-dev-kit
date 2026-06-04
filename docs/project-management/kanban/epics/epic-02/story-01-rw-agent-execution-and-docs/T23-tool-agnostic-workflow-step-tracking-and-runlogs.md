@@ -61,7 +61,7 @@ Current workflow governance documentation (especially RW) mandated Cursor TODO u
 
 - [IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md](../../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
 - [ADR-011-workflow-step-tracker-and-agent-run-log.md](../../../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
-- [workflow-step-tracker-contract.md](../../../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md)
+- [workflow-step-tracker-contract.md](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md)
 - [workflow-agent-run-log-v1.schema.json](../../../../architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json)
 - [Superseded source: `E06:S07:T18`](../../epic-06/story-07-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
 - [E04:S19:T03 investigation report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)

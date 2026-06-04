@@ -64,11 +64,11 @@ Develop comprehensive validation framework and additional validators.
 - Created example validator: `simple_validator_example.py`
 
 **Deliverables:**
-- ✅ `packages/frameworks/tooling & automation/validators/base.py` - BaseValidator and core types
-- ✅ `packages/frameworks/tooling & automation/validators/registry.py` - ValidatorRegistry
-- ✅ `packages/frameworks/tooling & automation/validators/__init__.py` - Package exports
-- ✅ `packages/frameworks/tooling & automation/validators/README.md` - Framework documentation
-- ✅ `packages/frameworks/tooling & automation/validators/examples/simple_validator_example.py` - Example validator
+- ✅ `packages/frameworks/tooling-automation/validators/base.py` - BaseValidator and core types
+- ✅ `packages/frameworks/tooling-automation/validators/registry.py` - ValidatorRegistry
+- ✅ `packages/frameworks/tooling-automation/validators/__init__.py` - Package exports
+- ✅ `packages/frameworks/tooling-automation/validators/README.md` - Framework documentation
+- ✅ `packages/frameworks/tooling-automation/validators/examples/simple_validator_example.py` - Example validator
 
 ---
 
@@ -96,16 +96,16 @@ Develop comprehensive validation framework and additional validators.
 - Created comprehensive documentation
 
 **Deliverables:**
-- ✅ `packages/frameworks/tooling & automation/validators/framework/__init__.py` - Framework validators package
-- ✅ `packages/frameworks/tooling & automation/validators/framework/kanban_validator.py` - Kanban framework validator
-- ✅ `packages/frameworks/tooling & automation/validators/framework/workflow_validator.py` - Workflow framework validator
-- ✅ `packages/frameworks/tooling & automation/validators/framework/version_validator.py` - Version framework validator
-- ✅ `packages/frameworks/tooling & automation/validators/framework/document_lifecycle_validator.py` - Document lifecycle validator
-- ✅ `packages/frameworks/tooling & automation/validators/framework/README.md` - Framework validators documentation
-- ✅ `packages/frameworks/tooling & automation/validators/tests/test_kanban_validator.py` - Kanban validator tests
-- ✅ `packages/frameworks/tooling & automation/validators/tests/test_workflow_validator.py` - Workflow validator tests
-- ✅ `packages/frameworks/tooling & automation/validators/tests/test_version_validator.py` - Version validator tests
-- ✅ `packages/frameworks/tooling & automation/validators/tests/test_document_lifecycle_validator.py` - Document lifecycle validator tests
+- ✅ `packages/frameworks/tooling-automation/validators/framework/__init__.py` - Framework validators package
+- ✅ `packages/frameworks/tooling-automation/validators/framework/kanban_validator.py` - Kanban framework validator
+- ✅ `packages/frameworks/tooling-automation/validators/framework/workflow_validator.py` - Workflow framework validator
+- ✅ `packages/frameworks/tooling-automation/validators/framework/version_validator.py` - Version framework validator
+- ✅ `packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py` - Document lifecycle validator
+- ✅ `packages/frameworks/tooling-automation/validators/framework/README.md` - Framework validators documentation
+- ✅ `packages/frameworks/tooling-automation/validators/tests/test_kanban_validator.py` - Kanban validator tests
+- ✅ `packages/frameworks/tooling-automation/validators/tests/test_workflow_validator.py` - Workflow validator tests
+- ✅ `packages/frameworks/tooling-automation/validators/tests/test_version_validator.py` - Version validator tests
+- ✅ `packages/frameworks/tooling-automation/validators/tests/test_document_lifecycle_validator.py` - Document lifecycle validator tests
 
 ---
 
@@ -131,8 +131,8 @@ Develop comprehensive validation framework and additional validators.
 - Established best practices for validator development
 
 **Deliverables:**
-- ✅ `packages/frameworks/tooling & automation/validators/PATTERNS.md` - Comprehensive validation patterns library
-- ✅ `packages/frameworks/tooling & automation/validators/examples/pattern_examples.py` - Pattern examples demonstrating each pattern
+- ✅ `packages/frameworks/tooling-automation/validators/PATTERNS.md` - Comprehensive validation patterns library
+- ✅ `packages/frameworks/tooling-automation/validators/examples/pattern_examples.py` - Pattern examples demonstrating each pattern
 
 ---
 

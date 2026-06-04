@@ -74,5 +74,5 @@ The UKW cursorrules definition does include "Remove completed tasks from 'In Pro
 - [BR-072](../../../fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)
 - [Story 001 – BR Repo](../story-01-br-repo.md)
 - [IPP-E06S01T38 – UKW completed task removal defect](../../../../../docs/implementation-cycles/IPP-E06S01T38-ukw-completed-task-removal-defect.md)
-- [UKW cursorrules trigger definition](../../../../../packages/frameworks/workflow%20mgt/cursorrules-ukw-trigger-section.md)
-- [UKW agents definition](../../../../../packages/frameworks/workflow%20mgt/agents/ukw/AGENTS.md)
+- [UKW cursorrules trigger definition](../../../../../packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md)
+- [UKW agents definition](../../../../../packages/frameworks/workflow-mgt/agents/ukw/AGENTS.md)

@@ -39,7 +39,7 @@ The Generator Framework provides a comprehensive foundation for building code ge
 
 #### 1. BaseGenerator (Abstract Base Class)
 
-**Location:** `packages/frameworks/tooling & automation/generators/base.py`
+**Location:** `packages/frameworks/tooling-automation/generators/base.py`
 
 **Purpose:** Abstract base class for all generators
 
@@ -57,7 +57,7 @@ validate_input() → pre_generate() → generate() → validate_output() → pos
 
 #### 2. TemplateBasedGenerator (Base Class)
 
-**Location:** `packages/frameworks/tooling & automation/generators/base.py`
+**Location:** `packages/frameworks/tooling-automation/generators/base.py`
 
 **Purpose:** Base class for template-based generators
 
@@ -68,7 +68,7 @@ validate_input() → pre_generate() → generate() → validate_output() → pos
 
 #### 3. TemplateEngine
 
-**Location:** `packages/frameworks/tooling & automation/generators/template_engine.py`
+**Location:** `packages/frameworks/tooling-automation/generators/template_engine.py`
 
 **Purpose:** Template rendering engine
 
@@ -80,7 +80,7 @@ validate_input() → pre_generate() → generate() → validate_output() → pos
 
 #### 4. GeneratorRegistry
 
-**Location:** `packages/frameworks/tooling & automation/generators/registry.py`
+**Location:** `packages/frameworks/tooling-automation/generators/registry.py`
 
 **Purpose:** Registry for discovering and managing generators
 

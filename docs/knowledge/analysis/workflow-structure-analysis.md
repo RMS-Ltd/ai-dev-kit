@@ -42,7 +42,7 @@ This document provides **detailed workflow structure analysis** of workflow patt
   - `refactor-workflow.yaml`
 - **Projects Using:** ai-dev-kit, been-there, dev-toolkit, starborn_legacy, confidentia
 - **Frequency:** Most common pattern
-- **Location:** `workflows/` directory or `packages/frameworks/workflow mgt/workflows/`
+- **Location:** `workflows/` directory or `packages/frameworks/workflow-mgt/workflows/`
 
 **Pattern 2: Script-Based Workflows**
 - **Format:** `{workflow-name}.py` or `{workflow-name}.sh`
@@ -64,7 +64,7 @@ This document provides **detailed workflow structure analysis** of workflow patt
 
 **Pattern 1: Framework Package Structure**
 ```
-packages/frameworks/workflow mgt/workflows/
+packages/frameworks/workflow-mgt/workflows/
 ├── release-workflow.yaml
 ├── intake-workflow.yaml
 ├── testing-workflow.yaml
@@ -343,7 +343,7 @@ steps:
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 
 # Kanban integration
@@ -385,7 +385,7 @@ project_name: been-there
 version_file: src/fynd_deals/version.py  # NOTE: Incorrect path (should be src/dev_toolkit/version.py)
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 
 use_kanban: true
@@ -754,7 +754,7 @@ todo_write(merge=False, todos=[
 
 **Recommended: YAML Workflow Files**
 - **Format:** `{workflow-name}-workflow.yaml`
-- **Location:** `workflows/` directory (project root) or `packages/frameworks/workflow mgt/workflows/` (framework)
+- **Location:** `workflows/` directory (project root) or `packages/frameworks/workflow-mgt/workflows/` (framework)
 - **Structure:** Standard YAML with `name`, `version`, `type`, `description`, `config`, `steps`
 
 ### 11.2 Workflow YAML Structure

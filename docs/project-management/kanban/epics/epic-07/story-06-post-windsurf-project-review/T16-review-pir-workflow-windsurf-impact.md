@@ -32,7 +32,7 @@ Review Post-Implementation Review (PIR) workflow for Windsurf impact, .windsurf 
 
 - .cursorrules PIR section (RW Step 15)
 - .windsurf/skills/ (if any PIR-specific)
-- packages/frameworks/workflow mgt/workflows/post-implementation-review/
+- packages/frameworks/workflow-mgt/workflows/post-implementation-review/
 
 ## Deliverable
 

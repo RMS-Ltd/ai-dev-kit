@@ -29,14 +29,14 @@ Batch ICW packages may use a range in the basename (e.g. `ICW-E7S06-T10-T16-*`) 
 
 The Implementation Cycle Workflow declares **`output_dir: docs/implementation-cycles`** in:
 
-`packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
+`packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
 
 That path is part of **ICW’s responsibility**: persist the three-phase package here (or the adopt project’s configured `output_dir`), link it from the **task doc**, and do **not** rely on editor-local `plans` as the only copy. New automation or agents should **write here**, not only under editor-local `plans` paths.
 
 ## Related
 
 - [ICW implementation summary](./ICW-IMPLEMENTATION-SUMMARY.md) (historical context)
-- [Framework ICW README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/implementation-cycle-workflow/README.md)
+- [Framework ICW README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/README.md)
 
 
 ## Publication discoverability contract (BR-066)

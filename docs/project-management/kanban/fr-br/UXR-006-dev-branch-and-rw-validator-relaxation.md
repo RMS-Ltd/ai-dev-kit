@@ -88,7 +88,7 @@ This UXR evaluates whether RW validators should treat `dev` as a first-class acc
 
 ## References
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md`

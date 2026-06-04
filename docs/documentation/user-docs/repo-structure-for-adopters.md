@@ -11,7 +11,7 @@
 These are the **canonical framework packages** that adopters should copy or install:
 
 ### Numbering & Versioning Framework
-- **Path:** `packages/frameworks/numbering & versioning/`
+- **Path:** `packages/frameworks/numbering-versioning/`
 - **Canonical docs:**
   - `versioning-policy.md` - Primary schema definition (RC.EPIC.STORY.TASK+BUILD)
   - `versioning-strategy.md` - Comprehensive strategy (ordering, timestamps, traceability)
@@ -19,7 +19,7 @@ These are the **canonical framework packages** that adopters should copy or inst
 - **What to copy:** Entire package directory
 
 ### Workflow Management Framework
-- **Path:** `packages/frameworks/workflow mgt/`
+- **Path:** `packages/frameworks/workflow-mgt/`
 - **Canonical docs:**
   - `KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW agent execution guide
   - `KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md` - UKW agent execution guide
@@ -47,7 +47,7 @@ These are **dev-kit-specific applications** of the frameworks. Adopters should c
 ### Versioning Policy
 - **Path:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - **Purpose:** Dev-kit's application of the versioning framework (fixes Epic space 1-4+, documents dev-kit-specific SemVer mapping)
-- **Framework SoT:** `packages/frameworks/numbering & versioning/versioning-policy.md`
+- **Framework SoT:** `packages/frameworks/numbering-versioning/versioning-policy.md`
 - **For adopters:** Create your own policy that references the framework SoT and documents your project's Epic ranges and adaptations
 
 ### Changelog Policies
@@ -55,7 +55,7 @@ These are **dev-kit-specific applications** of the frameworks. Adopters should c
   - `docs/architecture/standards-and-adrs/changelog-management-policy.md`
   - `docs/architecture/standards-and-adrs/changelog-archival-policy.md`
 - **Purpose:** Dev-kit's application of CMW patterns (latest-only mode, archival thresholds)
-- **Framework SoT:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
+- **Framework SoT:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
 - **For adopters:** Reference these as examples, but create your own policies based on your project's needs
 
 ### Kanban Instance
@@ -88,7 +88,7 @@ Policy: [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-br
 ## Scripts
 
 ### Framework Scripts (Copy These)
-- **Location:** `packages/frameworks/workflow mgt/scripts/` and `packages/frameworks/kanban/scripts/`
+- **Location:** `packages/frameworks/workflow-mgt/scripts/` and `packages/frameworks/kanban/scripts/`
 - **Purpose:** Core workflow validators, converters, changelog management, Kanban installation
 - **For adopters:** Copy these scripts when installing frameworks
 

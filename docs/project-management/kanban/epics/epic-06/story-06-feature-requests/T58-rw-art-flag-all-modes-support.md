@@ -34,11 +34,11 @@ Make `--art` usable across all Release Workflow modes (`RW`, `RW -d`, `RW -k`) b
 ## Input
 
 - [BR-060](../../../fr-br/BR-060-rw-art-flag-should-work-in-all-rw-modes.md)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 - `.cursorrules`
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 
 ---
 

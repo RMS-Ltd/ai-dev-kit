@@ -29,7 +29,7 @@ housekeeping_policy: keep
 | `workflows` | RW, UKW, IPW, CMW, PVW | [Workflow cheatsheet](guides/workflow-initiation-cheatsheet.md) |
 | `kanban` | Boards + intake | [kboard.md](project-management/kanban/kboard.md) |
 | `governance` | Policies + ADRs | [docs/governance/README.md](governance/README.md) |
-| `frameworks` | Packaged frameworks | [workflow mgt README](../packages/frameworks/workflow%20mgt/README.md) |
+| `frameworks` | Packaged frameworks | [workflow mgt README](../packages/frameworks/workflow-mgt/README.md) |
 | `planning` | IPW / IPP / ICW | [.claude/commands/ipw.md](../.claude/commands/ipw.md) |
 | `meta` | Bootstrap architecture | [ADR-012](architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) |
 

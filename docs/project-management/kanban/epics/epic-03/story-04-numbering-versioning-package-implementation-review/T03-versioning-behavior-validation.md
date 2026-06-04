@@ -32,13 +32,13 @@ Validate that actual versioning behavior in the codebase matches the documented 
 
 ## Inputs
 
-- Versioning Policy: `packages/frameworks/numbering & versioning/versioning-policy.md`
-- Versioning Strategy: `packages/frameworks/numbering & versioning/versioning-strategy.md`
+- Versioning Policy: `packages/frameworks/numbering-versioning/versioning-policy.md`
+- Versioning Strategy: `packages/frameworks/numbering-versioning/versioning-strategy.md`
 - Dev-Kit Versioning Policy: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - Version File: `src/fynd_deals/version.py`
 - Changelog Files: `CHANGELOG.md`, `docs/changelog-and-release-notes/changelog-archive/`
-- Validation Scripts: `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
-- SemVer Converter: `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- Validation Scripts: `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
+- SemVer Converter: `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - Expectations Baseline: `T01-expectations-baseline.md`
 
 ---

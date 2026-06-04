@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Remove **stale “12 workflows”** claims in [`workflow mgt/README.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/README.md) wherever they conflict with the **canonical machine list**: [`workflow-registry.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/workflow-registry.yaml) (**11** `workflows:` keys as of 2026-03). Align intro, purpose, feature bullets, and overview tables with **11** or with explicit wording (“11 YAML-defined workflows” + optional note on methodology/docs beyond YAML).
+Remove **stale “12 workflows”** claims in [`workflow-mgt/README.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/README.md) wherever they conflict with the **canonical machine list**: [`workflow-registry.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml) (**11** `workflows:` keys as of 2026-03). Align intro, purpose, feature bullets, and overview tables with **11** or with explicit wording (“11 YAML-defined workflows” + optional note on methodology/docs beyond YAML).
 
 ---
 

@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Add Changelog Management Workflow (CMW) to the workflow management package documentation (`packages/frameworks/workflow mgt/README.md`) to ensure CMW is properly documented and discoverable for projects adopting the workflow management framework.
+Add Changelog Management Workflow (CMW) to the workflow management package documentation (`packages/frameworks/workflow-mgt/README.md`) to ensure CMW is properly documented and discoverable for projects adopting the workflow management framework.
 
 ---
 
@@ -27,9 +27,9 @@ Add Changelog Management Workflow (CMW) to the workflow management package docum
 
 **Current Situation:**
 - CMW (Changelog Management Workflow) is fully implemented and operational (T11 COMPLETE)
-- CMW workflow definition exists: `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- CMW scripts exist: `packages/frameworks/workflow mgt/scripts/changelog/`
-- CMW documentation exists: `packages/frameworks/workflow mgt/scripts/changelog/README.md`
+- CMW workflow definition exists: `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- CMW scripts exist: `packages/frameworks/workflow-mgt/scripts/changelog/`
+- CMW documentation exists: `packages/frameworks/workflow-mgt/scripts/changelog/README.md`
 - CMW is integrated into RW Step 9.5 (automatic trigger when changelog exceeds threshold)
 
 **Issue:**
@@ -51,7 +51,7 @@ Add Changelog Management Workflow (CMW) to the workflow management package docum
 
 ### 1. Update Package README
 
-Update `packages/frameworks/workflow mgt/README.md` to include CMW documentation:
+Update `packages/frameworks/workflow-mgt/README.md` to include CMW documentation:
 
 **Add to "What's Included" section:**
 - List CMW alongside other workflows (RW, UKW, Intake Workflow)
@@ -150,10 +150,10 @@ Verify that CMW files are included in package builds:
 
 ## References
 
-- **CMW Workflow:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- **CMW Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/`
-- **CMW Documentation:** `packages/frameworks/workflow mgt/scripts/changelog/README.md`
-- **Package README:** `packages/frameworks/workflow mgt/README.md`
+- **CMW Workflow:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- **CMW Scripts:** `packages/frameworks/workflow-mgt/scripts/changelog/`
+- **CMW Documentation:** `packages/frameworks/workflow-mgt/scripts/changelog/README.md`
+- **Package README:** `packages/frameworks/workflow-mgt/README.md`
 - **RW Integration:** RW Step 9.5 triggers CMW automatically
 - **CMW Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md`
 

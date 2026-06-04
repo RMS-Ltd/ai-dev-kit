@@ -45,7 +45,7 @@ housekeeping_policy: keep
   - Rollback contract `FORBIDDEN_COMMANDS` remain non-auto-executable.
   - Journal JSON backward compatible via `schema_version` on run records.
   - Mis-attributed release `v0.2.8.8+1` is kanban traceability only — not FR-059 implementation evidence.
-- **In scope:** `packages/frameworks/workflow mgt/scripts/journal/`, `workflow_executor.py`, `tests/journal/`, `tests/workflow/`, KB operator guide, ADR-008, rw-config journal keys.
+- **In scope:** `packages/frameworks/workflow-mgt/scripts/journal/`, `workflow_executor.py`, `tests/journal/`, `tests/workflow/`, KB operator guide, ADR-008, rw-config journal keys.
 - **Out of scope:**
   - [FR-044 / E05:S01:T44](../project-management/kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) — RW temporary execution log product slice.
   - [E02:S01:T23](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) — tool-agnostic step-tracker governance (docs-first).
@@ -151,14 +151,14 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ### 4.1 Files to create or modify
 
-- `packages/frameworks/workflow mgt/scripts/journal/forensic_log.py` (CREATE)
-- `packages/frameworks/workflow mgt/scripts/journal/checkpoint_store.py` (CREATE)
-- `packages/frameworks/workflow mgt/scripts/journal/journal_housekeeping.py` (CREATE)
-- `packages/frameworks/workflow mgt/scripts/journal/rw_journal.py` (UPDATE)
-- `packages/frameworks/workflow mgt/scripts/journal/rollback_contract.py` (UPDATE)
-- `packages/frameworks/workflow mgt/scripts/journal/recovery_report.py` (UPDATE)
-- `packages/frameworks/workflow mgt/scripts/workflow_executor.py` (UPDATE)
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md` (CREATE)
+- `packages/frameworks/workflow-mgt/scripts/journal/forensic_log.py` (CREATE)
+- `packages/frameworks/workflow-mgt/scripts/journal/checkpoint_store.py` (CREATE)
+- `packages/frameworks/workflow-mgt/scripts/journal/journal_housekeeping.py` (CREATE)
+- `packages/frameworks/workflow-mgt/scripts/journal/rw_journal.py` (UPDATE)
+- `packages/frameworks/workflow-mgt/scripts/journal/rollback_contract.py` (UPDATE)
+- `packages/frameworks/workflow-mgt/scripts/journal/recovery_report.py` (UPDATE)
+- `packages/frameworks/workflow-mgt/scripts/workflow_executor.py` (UPDATE)
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md` (CREATE)
 - `rw-config.yaml` (UPDATE)
 - `docs/project-management/kanban/AGENTS.md` (UPDATE)
 - `tests/journal/test_forensic_log.py`, `test_forensic_log_schema.py` (CREATE)
@@ -218,7 +218,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | ------ | -------------- | ------------------ | --------- | ------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md` | NOT_APPLICABLE | evergreen | T08 Input/References |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md` | NOT_APPLICABLE | evergreen | IPP §2.5, FR-059 |
-| D-C3 | `packages/frameworks/workflow mgt/KB/.../workflow-forensic-recovery-guide.md` | NOT_APPLICABLE | evergreen | RW guide, T08 |
+| D-C3 | `packages/frameworks/workflow-mgt/KB/.../workflow-forensic-recovery-guide.md` | NOT_APPLICABLE | evergreen | RW guide, T08 |
 | Runtime logs | `docs/journals/` | transient per record | ephemeral | ADR-008 |
 
 ---
@@ -240,5 +240,5 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - [ADR-008](../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
 - [FR-042 IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [workflow_executor.py](../../packages/frameworks/workflow%20mgt/scripts/workflow_executor.py)
+- [workflow_executor.py](../../packages/frameworks/workflow-mgt/scripts/workflow_executor.py)
 - [CHANGELOG v0.2.8.8+1](../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.8.8+1.md) (mis-attributed kanban release)

@@ -504,9 +504,9 @@ None identified - workflows are correct.
 ### 5.2 Workflow Scripts
 
 **Scripts Used:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
 - `scripts/documentation/validate-documentation-links.py`
 - `scripts/documentation/validate-documentation-consistency.py`
 - `scripts/documentation/documentation-review-workflow.py`
@@ -514,7 +514,7 @@ None identified - workflows are correct.
 **Script Analysis:**
 
 **ADK Framework Scripts:**
-- All scripts from `packages/frameworks/workflow mgt/scripts/` are used as-is
+- All scripts from `packages/frameworks/workflow-mgt/scripts/` are used as-is
 - Proper integration
 - No customization detected
 
@@ -585,7 +585,7 @@ None identified - workflows are correct.
 - `scripts/documentation/validate-documentation-links.py` - Documentation validation
 - `scripts/documentation/validate-documentation-consistency.py` - Documentation consistency
 - `scripts/documentation/documentation-review-workflow.py` - Documentation review
-- Framework scripts in `packages/frameworks/workflow mgt/scripts/` (used as-is)
+- Framework scripts in `packages/frameworks/workflow-mgt/scripts/` (used as-is)
 - Framework scripts in `packages/frameworks/kanban/scripts/` (migration, analysis, etc.)
 
 ### 6.2 Script Usage
@@ -900,7 +900,7 @@ None identified - scripts are correct.
 
 **Script Files:**
 - `scripts/documentation/` (documentation scripts)
-- `packages/frameworks/workflow mgt/scripts/` (framework scripts)
+- `packages/frameworks/workflow-mgt/scripts/` (framework scripts)
 - `packages/frameworks/kanban/scripts/` (kanban scripts)
 
 ### 10.2 Comparison Tables

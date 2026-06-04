@@ -85,7 +85,7 @@ Add **Step 2.5: Discover Board Gaps** to UKW (comprehensive run only).
 
 - **Task:** [T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md](../epics/epic-05/story-01-fr-repo/T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) (E05:S01:T43)
 - **UKW:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
-- **UKW Agent Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
+- **UKW Agent Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - **FR-034:** UKW granular control (use case flags)
 - **BR-034:** UKW MoSCOW prioritization missing (related: ensuring tasks appear in MoSCOW)
 

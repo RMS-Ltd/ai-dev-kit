@@ -281,7 +281,7 @@ housekeeping_policy: delete
 ## 🔗 Related Documents
 
 - **Policy:** [`doc-lifecycle-policy.md`](./doc-lifecycle-policy.md) – Governance and enforcement
-- **Workflow:** `packages/frameworks/workflow mgt/workflows/doc-housekeeping-workflow.yaml` – Automated housekeeping
+- **Workflow:** `packages/frameworks/workflow-mgt/workflows/doc-housekeeping-workflow.yaml` – Automated housekeeping
 - **KB Structure:** [`kb-structure-overview.md`](./kb-structure-overview.md) – KB organization
 
 ---

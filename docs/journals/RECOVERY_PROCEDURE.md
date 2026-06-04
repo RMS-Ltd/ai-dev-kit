@@ -9,7 +9,7 @@
 
 1. **Locate the recovery report.**
    ```bash
-   python -m "packages/frameworks/workflow mgt/scripts/journal" list
+   python -m "packages/frameworks/workflow-mgt/scripts/journal" list
    ```
    Identify the most recent failed run.
 

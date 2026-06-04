@@ -34,7 +34,7 @@ housekeeping_policy: keep
 
 ### 1.3 Boundaries
 
-- **In scope:** `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`, install docs.
+- **In scope:** `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`, install docs.
 - **Out of scope:** Bundling PyYAML in stdlib; auto venv creation (**future FR**).
 
 ---
@@ -77,8 +77,8 @@ Use `unittest.mock.patch.dict(sys.modules, {"yaml": None})` or subprocess with c
 
 ### 4.1 Files
 
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
-- `packages/frameworks/workflow mgt/tests/test_install_release_workflow_deps.py` (new)
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
+- `packages/frameworks/workflow-mgt/tests/test_install_release_workflow_deps.py` (new)
 - Adopter install spine doc (book cross-ref)
 
 ---
@@ -87,7 +87,7 @@ Use `unittest.mock.patch.dict(sys.modules, {"yaml": None})` or subprocess with c
 
 | Doc ID | Path |
 | ------ | ---- |
-| D-U1 | `packages/frameworks/workflow mgt/README.md` or install guide |
+| D-U1 | `packages/frameworks/workflow-mgt/README.md` or install guide |
 | D-U2 | Book T03 Step 3 packet |
 
 ---

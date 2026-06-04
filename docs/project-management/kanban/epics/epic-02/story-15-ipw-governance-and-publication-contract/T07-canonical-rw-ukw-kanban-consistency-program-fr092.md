@@ -40,7 +40,7 @@ housekeeping_policy: keep
 - Open contract FRs (FR-091 / FR-090 / FR-084) with overlapping ownership and unreleased state.
 - Gated dependent reports (BR-069 / BR-070 / UXR-009) lacking a single program owner for cross-cutting outcome.
 - Already-implemented predecessor FBUs (FR-038 / FR-040 / FR-015 / FR-089 / FR-076 / BR-036 / BR-062 / BR-042 / UXR-006) requiring drift assessment vs canonical outcome.
-- Surface code: `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`, RW execution guide, `.cursorrules`, `kanban-governance-policy.md`.
+- Surface code: `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`, RW execution guide, `.cursorrules`, `kanban-governance-policy.md`.
 
 ---
 

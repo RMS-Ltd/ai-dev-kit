@@ -63,7 +63,7 @@ Implement FR-090 by introducing a shared canonical row-transform pipeline for UK
 
 ### 2.1 Planned test updates
 
-- Extend `packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py` with parity fixtures and canonical ordering assertions.
+- Extend `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` with parity fixtures and canonical ordering assertions.
 - Evolve documentary regression `test_4_13` into post-fix preservation/pass assertions once divergence is eliminated.
 - Add repeated-run fixture checks for deduplication and timestamp stability.
 - Add fixtures for repeated non-timestamped tail tokens (`FBU/Task/IPP`) to enforce canonical collapse behavior independent of parseable timestamp chunks.
@@ -114,13 +114,13 @@ Implement FR-090 by introducing a shared canonical row-transform pipeline for UK
 
 ### 5.1 Verification commands and outcomes
 
-- `python3 "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py" --test-category 4`
+- `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category 4`
   - Outcome: 15/15 passed (`4.13`, `4.14`, `4.15` validate parity/order/footer safety/idempotency behavior).
-- `python3 "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py" --test-category all`
+- `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category all`
   - Outcome: broad suite run reports two pre-existing non-T05 failures (`2.2`, `3.1`) and does not invalidate T05 Phase 1-4 acceptance closure.
-- `python3 "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --dry-run --mode full`
+- `python3 "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --dry-run --mode full`
   - Outcome: full-mode pipeline executes successfully with canonical duplicate-footer audit output.
-- `python3 "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --dry-run --mode kanban_init`
+- `python3 "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --dry-run --mode kanban_init`
   - Outcome: kanban-init pipeline executes successfully with same canonical row-transform behavior.
 
 ### 5.2 AC mapping closure

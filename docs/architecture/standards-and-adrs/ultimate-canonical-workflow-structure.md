@@ -38,7 +38,7 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 │   └── testing-workflow.yaml
 ├── rw-config.yaml                   # Release Workflow configuration (canonical)
 ├── intake-config.yaml               # Intake Workflow configuration (optional)
-└── packages/frameworks/workflow mgt/workflows/  # Framework workflows
+└── packages/frameworks/workflow-mgt/workflows/  # Framework workflows
     ├── release-workflow.yaml
     ├── intake-workflow.yaml
     ├── package-version-workflow.yaml
@@ -80,7 +80,7 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 
 ### 1.2 File Location
 
-**CANONICAL:** `workflows/` directory in project root OR `packages/frameworks/workflow mgt/workflows/` (framework)
+**CANONICAL:** `workflows/` directory in project root OR `packages/frameworks/workflow-mgt/workflows/` (framework)
 
 **Structure:**
 ```
@@ -88,7 +88,7 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 ├── workflows/                       # Project workflows (canonical)
 │   ├── release-workflow.yaml
 │   └── package-version-workflow.yaml
-├── packages/frameworks/workflow mgt/workflows/  # Framework workflows
+├── packages/frameworks/workflow-mgt/workflows/  # Framework workflows
 │   ├── release-workflow.yaml
 │   └── package-version-workflow.yaml
 └── ...
@@ -124,7 +124,7 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 
 **Implementation:**
 ```bash
-python packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py --strict
+python packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py --strict
 ```
 
 **Validation:**
@@ -234,8 +234,8 @@ python packages/frameworks/workflow mgt/scripts/validation/validate_branch_conte
 - Stage all modified files (including any new knowledge base articles)
 
 **Step 11: Run Validators**
-- Execute: `python packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py --strict`
-- Execute: `python packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+- Execute: `python packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py --strict`
+- Execute: `python packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 **Step 12: Commit Changes**
 - Execute: `git commit -m "Release v0.N.NNN.T+B: \{description\}"`
@@ -264,7 +264,7 @@ python packages/frameworks/workflow mgt/scripts/validation/validate_branch_conte
 version_file: src/{project}/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 use_kanban: true
 kanban_root: docs/project-management/kanban
@@ -343,7 +343,7 @@ knowledge_base_root: docs/knowledge
 
 **Implementation:**
 ```bash
-python packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py --strict
+python packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py --strict
 ```
 
 **Validation:**
@@ -373,7 +373,7 @@ python packages/frameworks/workflow mgt/scripts/validation/validate_branch_conte
 
 **Implementation:**
 ```bash
-python packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py
+python packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py
 ```
 
 **Validation:**
@@ -602,7 +602,7 @@ task_creation:
 │   └── testing-workflow.yaml
 ├── rw-config.yaml                   # Release Workflow config
 ├── intake-config.yaml               # Intake Workflow config (optional)
-├── packages/frameworks/workflow mgt/
+├── packages/frameworks/workflow-mgt/
 │   └── workflows/                  # Framework workflows
 │       ├── release-workflow.yaml
 │       ├── intake-workflow.yaml

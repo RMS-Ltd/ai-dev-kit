@@ -111,10 +111,10 @@ Update RW to support CMW context detection:
 
 ## References
 
-- **CMW Workflow:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- **CMW Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/`
+- **CMW Workflow:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- **CMW Scripts:** `packages/frameworks/workflow-mgt/scripts/changelog/`
 - **UKW Perpetual Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 
 ---

@@ -64,9 +64,9 @@ Include the CMW perpetual task (T102, migrated from T12) in the canonical framew
   - `packages/frameworks/kanban/templates/tasks/` (task templates)
 
 - **RW Documentation:**
-  - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+  - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
   - `.cursorrules` (RW trigger section)
-  - `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+  - `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 
 - **Versioning Policy:**
   - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
@@ -206,11 +206,11 @@ Include the CMW perpetual task (T102, migrated from T12) in the canonical framew
 
 ## References
 
-- **CMW Workflow:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- **CMW Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/`
+- **CMW Workflow:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- **CMW Scripts:** `packages/frameworks/workflow-mgt/scripts/changelog/`
 - **UKW Perpetual Task:** `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md` (migrated from T08, Story 6→Story 7)
 - **CMW Perpetual Task:** `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md` (migrated from T12, Story 6→Story 7)
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - **Comprehensive Structure:** `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`
 

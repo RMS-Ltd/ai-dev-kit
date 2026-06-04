@@ -453,7 +453,7 @@ VERSION_BUILD = 1     # Reset to 1
 
 ### Framework Policy Alignment
 
-✅ **All scenarios align with `packages/frameworks/numbering & versioning/versioning-policy.md`:**
+✅ **All scenarios align with `packages/frameworks/numbering-versioning/versioning-policy.md`:**
 - RC.EPIC.STORY.TASK+BUILD schema followed
 - BUILD increments within task
 - TASK/STORY/EPIC progression rules followed
@@ -489,8 +489,8 @@ These scenarios will be used in **T002** to create worked examples in the versio
 
 ## 12. References
 
-- `packages/frameworks/numbering & versioning/versioning-policy.md` – Framework versioning policy
-- `packages/frameworks/numbering & versioning/versioning-strategy.md` – Versioning strategy
+- `packages/frameworks/numbering-versioning/versioning-policy.md` – Framework versioning policy
+- `packages/frameworks/numbering-versioning/versioning-strategy.md` – Versioning strategy
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` – Dev-kit versioning policy
 - `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md` – Integration guide
 - `docs/project-management/kanban/story-03-kanban-versioning-rw-integration.md` – Integration validation

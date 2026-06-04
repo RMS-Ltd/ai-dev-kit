@@ -440,7 +440,7 @@ PIR workflow must be auto-triggered when Epic/Story is marked COMPLETE. This req
 ## References
 
 - `docs/project-management/kanban/epics/epic-02/epic-02.md`
-- `packages/frameworks/workflow mgt/docs/Analysis/PIR-workflow-planning.md`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Reference implementation
-- `packages/frameworks/workflow mgt/workflows/release-workflow.yaml` - Workflow structure reference
+- `packages/frameworks/workflow-mgt/docs/Analysis/PIR-workflow-planning.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Reference implementation
+- `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml` - Workflow structure reference
 

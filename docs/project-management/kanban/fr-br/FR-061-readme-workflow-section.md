@@ -140,8 +140,8 @@ This feature is needed:
 ## References
 
 - **Current README:** `README.md`
-- **Workflow Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/`
-- **Workflow Scripts:** `packages/frameworks/workflow mgt/scripts/`
+- **Workflow Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/`
+- **Workflow Scripts:** `packages/frameworks/workflow-mgt/scripts/`
 
 ---
 

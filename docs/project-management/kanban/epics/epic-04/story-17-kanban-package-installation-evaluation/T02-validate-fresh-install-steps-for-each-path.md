@@ -41,7 +41,7 @@ Validate fresh install steps for each supported installation path to ensure each
   - `INSTALL_IN_YOUR_PROJECT.md`
   - `packages/frameworks/kanban/scripts/README.md`
   - `packages/frameworks/kanban/README.md`
-  - `packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
+  - `packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
   - `docs/documentation/user-docs/framework-dependency-installation-guide.md`
 
 
@@ -99,15 +99,15 @@ Validate fresh install steps for each supported installation path to ensure each
 
 ### Path 1: GitHub Releases
 
-**Script:** `packages/frameworks/workflow mgt/scripts/install_package_from_release.py`
+**Script:** `packages/frameworks/workflow-mgt/scripts/install_package_from_release.py`
 
 **Documentation Sources:**
 - `INSTALL_IN_YOUR_PROJECT.md` (lines 33-48)
-- `packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
+- `packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`
 
 **Steps to Validate:**
 1. ✅ **Script exists and is executable**
-   - Location: `packages/frameworks/workflow mgt/scripts/install_package_from_release.py`
+   - Location: `packages/frameworks/workflow-mgt/scripts/install_package_from_release.py`
    - Status: Script exists
    - Notes: Script is part of Workflow Management package, not Kanban package
 

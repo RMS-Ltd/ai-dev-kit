@@ -30,7 +30,7 @@ Then:
 | `workflows` | RW, UKW, IPW, CMW, PVW, release, changelog, kanban sync, workflow | `docs/guides/workflow-initiation-cheatsheet.md`, `.claude/commands/rw.md` (terminal allowlist: `docs/developer-tools/ide-whitelist-guide.md`) |
 | `kanban-intake` | FR, BR, UXR, intake, kboard, fbuboard, MoSCOW, task doc | `docs/project-management/kanban/kboard.md`, `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` |
 | `governance` | ADR, governance, policy, standard, versioning | `docs/governance/README.md` |
-| `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow mgt/README.md` |
+| `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow-mgt/README.md` |
 | `implementation-planning` | IPP, ICW, IPW, plan mode, implementation plan, specification | `.claude/commands/ipw.md`, `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md` |
 | `agent-bootstrap` | bootstrap, routing, cold start, AGENTS | `docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md` |
 
@@ -42,6 +42,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
+| E06:S09:T18 | BR-087 wave 2 — framework slug install closure (source rename, update paths, republish) | `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md` |
 | E06:S09:T16 | BR-086 / GitHub #17 — lowercase fresh kanban RW mode C patterns & sign-off | `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
@@ -95,4 +96,4 @@ Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. I
 
 ## RW agent (summary)
 
-RW: version, changelog, kanban Step 7, commit, tag, push — **`RW E##:S##:T##`** or `/rw`. Details: `.cursorrules` + [release-workflow-agent-execution.md](packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). Role detail: [kanban AGENTS.md](docs/project-management/kanban/AGENTS.md).
+RW: version, changelog, kanban Step 7, commit, tag, push — **`RW E##:S##:T##`** or `/rw`. Details: `.cursorrules` + [release-workflow-agent-execution.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). Role detail: [kanban AGENTS.md](docs/project-management/kanban/AGENTS.md).

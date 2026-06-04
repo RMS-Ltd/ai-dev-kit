@@ -190,8 +190,8 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 **Status:** ⏳ TODO
 
 **Approach:**
-1. Update `packages/frameworks/workflow mgt/README.md`
-2. Update `packages/frameworks/numbering & versioning/README.md`
+1. Update `packages/frameworks/workflow-mgt/README.md`
+2. Update `packages/frameworks/numbering-versioning/README.md`
 3. Update `packages/frameworks/kanban/README.md`
 4. Ensure all READMEs include modularity section
 
@@ -232,8 +232,8 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ## References
 
-- `packages/frameworks/workflow mgt/README.md`
-- `packages/frameworks/numbering & versioning/README.md`
+- `packages/frameworks/workflow-mgt/README.md`
+- `packages/frameworks/numbering-versioning/README.md`
 - `packages/frameworks/kanban/README.md`
 - `README.md` (root)
 

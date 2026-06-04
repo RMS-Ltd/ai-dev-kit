@@ -47,7 +47,7 @@ housekeeping_policy: keep
 **Spec decisions (user-gate defaults):**
 
 - **Multi-line bullet:** Source line length **> 100** characters after `- ` (same as `MULTILINE_THRESHOLD` in validator), OR explicit continuation line (indented, not a new bullet/header).
-- **Validator home:** `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_moscow_spacing.py` + delegate from `scripts/documentation/validate-documentation-consistency.py`.
+- **Validator home:** `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_moscow_spacing.py` + delegate from `scripts/documentation/validate-documentation-consistency.py`.
 - **RW integration:** **Non-blocking** advisory in Step 9 (report-only); promotion to blocking gate deferred.
 
 ---
@@ -128,9 +128,9 @@ RF1 → spacing module + corpus pass. RF2–RF5 → policy and agent guides. RF3
 
 ### 4.1 Files to create or modify
 
-- `packages/frameworks/workflow mgt/scripts/kanban/kanban_moscow_spacing.py` (CREATE)
-- `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_moscow_spacing.py` (CREATE)
-- `packages/frameworks/workflow mgt/scripts/test_kanban_moscow_spacing.py` (CREATE)
+- `packages/frameworks/workflow-mgt/scripts/kanban/kanban_moscow_spacing.py` (CREATE)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_moscow_spacing.py` (CREATE)
+- `packages/frameworks/workflow-mgt/scripts/test_kanban_moscow_spacing.py` (CREATE)
 - `scripts/documentation/validate-documentation-consistency.py` (UPDATE)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md` (UPDATE)
 - RW/UKW agent execution guides (UPDATE)
@@ -180,7 +180,7 @@ RF1 → spacing module + corpus pass. RF2–RF5 → policy and agent guides. RF3
 | ------ | -------------- | ----------- | --------- |
 | D-C1 | `docs/implementation-cycles/IPP-E07S01T09-*.md` | NOT_APPLICABLE | evergreen |
 | D-C2 | `docs/maintenance/logs/` | NOT_APPLICABLE | transient |
-| Validator | `packages/frameworks/workflow mgt/scripts/validation/` | N/A | — |
+| Validator | `packages/frameworks/workflow-mgt/scripts/validation/` | N/A | — |
 
 ---
 

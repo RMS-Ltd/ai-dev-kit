@@ -42,7 +42,7 @@ housekeeping_policy: keep
 
 ### 1.2 Root Cause: RW Step 4 Implementation
 
-**File:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`  
+**File:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`  
 **Section:** Step 4: Update Main Changelog  
 **Lines:** 599-606
 
@@ -94,7 +94,7 @@ housekeeping_policy: keep
 
 ### 2.1 Updated RW Step 4 Instructions
 
-**File:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+**File:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 **Changes Made:**
 
@@ -141,7 +141,7 @@ def find_insertion_point(new_version, existing_entries):
 
 ### 2.2 Added Changelog Ordering Validation
 
-**File:** `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 **Changes Made:**
 - Added function to extract version numbers from changelog entries
@@ -176,7 +176,7 @@ def validate_changelog_ordering(changelog_path):
 
 ### 2.3 Updated RW Step 8 Instructions
 
-**File:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+**File:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 **Changes Made:**
 - Added changelog ordering validation to Step 8 (Run Validators)
@@ -285,13 +285,13 @@ def validate_changelog_ordering(changelog_path):
 
 **Policy Documents:**
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` - Section 8: Canonical Ordering Principle
-- `packages/frameworks/numbering & versioning/versioning-strategy.md` - Core Principle: Version Numbers Are Canonical
+- `packages/frameworks/numbering-versioning/versioning-strategy.md` - Core Principle: Version Numbers Are Canonical
 
 **Workflow Documentation:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Step 4 and Step 8
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Step 4 and Step 8
 
 **Validation Scripts:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 **Related Work:**
 - Epic 3, Story 2, Task 6 (E3:S02:T06) - Investigate and harden changelog ordering process

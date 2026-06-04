@@ -74,9 +74,9 @@ This task:
 
 - **FR-045:** ADR-002 Task-Touch Derived Mapping (Kanban → SemVer) - ✅ IMPLEMENTED
 - **ADR-002:** Task-Touch Derived Mapping - ✅ IMPLEMENTED (2026-03-07)
-- **Implementation:** `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
-- **Tests:** `packages/frameworks/workflow mgt/scripts/version/test_task_touch_mapping.py`
-- **Migration:** `packages/frameworks/workflow mgt/scripts/version/migrate_to_task_touch.py`
+- **Implementation:** `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
+- **Tests:** `packages/frameworks/workflow-mgt/scripts/version/test_task_touch_mapping.py`
+- **Migration:** `packages/frameworks/workflow-mgt/scripts/version/migrate_to_task_touch.py`
 - **Configuration:** `rw-config.yaml` supports `semver_mapping_strategy: task_touch`
 
 ---

@@ -40,13 +40,13 @@ Review and validate the integration points and dependency alignment between the 
 
 
 - **Release Workflow Definition & Docs:**  
-  - `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`  
-  - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md`  
+  - `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`  
+  - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md`  
   - `.cursorrules` (RW section – dual tagging, SemVer integration, GitHub release)
 
 
 - **Update Kanban Workflow (UKW):**  
-  - `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
+  - `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 
 
 - **Dev-Kit Kanban Implementation:**  

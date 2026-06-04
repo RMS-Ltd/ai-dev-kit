@@ -63,7 +63,7 @@ Wired the Phase 1 sample set from host task docs or story task anchors:
 Re-run from repo root:
 
 ```bash
-python "packages/frameworks/workflow mgt/scripts/validation/validate_ipw_publication_wiring.py" --audit-inventory
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py" --audit-inventory
 ```
 
 Record the printed **scanned** and **missing wiring** counts below after each maintenance wave.

@@ -329,7 +329,7 @@ This feature is needed:
 - **E2:S07:** Trigger-Aware Release Workflow (trigger integration)
 - **E4:S08:** Intelligent Epic Matching (semantic matching for decision flow)
 - **FR-012:** Agentic Kanban Task Creation from FR/BR (complementary)
-- **Workflow Management Package:** `packages/frameworks/workflow mgt/`
+- **Workflow Management Package:** `packages/frameworks/workflow-mgt/`
 - **Kanban Framework:** `packages/frameworks/kanban/`
 
 ---

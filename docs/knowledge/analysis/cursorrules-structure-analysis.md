@@ -406,7 +406,7 @@ version_file = config['version_file'] if config and 'version_file' in config els
 ### RW Configuration
 
 The Release Workflow configuration is located at:
-`packages/frameworks/workflow mgt/config/rw-config-agentic-ide-rules.yaml`
+`packages/frameworks/workflow-mgt/config/rw-config-agentic-ide-rules.yaml`
 ```
 
 **Projects Using:** agentic-ide-rules
@@ -954,7 +954,7 @@ After copying this section to your `.cursorrules`, you MUST:
 1. **Update all file paths** to match your project structure
 2. **Update version file location** (currently shows `src/fynd_deals/version.py` as template)
 3. **Update Kanban paths** (currently shows `docs/project-management/kanban/...` as templates)
-4. **Update validator script paths** (currently shows `packages/frameworks/workflow mgt/scripts/...` as templates)
+4. **Update validator script paths** (currently shows `packages/frameworks/workflow-mgt/scripts/...` as templates)
 5. **Reference your project's versioning policy** instead of dev-kit policy
 6. **Customize branch naming** if your project uses different conventions (e.g., `feature/epic-\{n\}` instead of `epic/\{n\}`)
 7. **Customize epic ranges** if your project uses different epic numbering (e.g., legacy range 1-9, new range 10+)

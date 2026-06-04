@@ -17,10 +17,10 @@ housekeeping_policy: keep
 
 ## Executive Summary
 
-This document captures reusable Kanban patterns extracted from the fynd.deals Epic 15 work, as reflected in the `packages/frameworks/kanban/` and `packages/frameworks/workflow mgt/` framework packages. The framework packages already contain refined Kanban governance, workflow integration, and operational patterns developed in fynd.deals Epic 15.
+This document captures reusable Kanban patterns extracted from the fynd.deals Epic 15 work, as reflected in the `packages/frameworks/kanban/` and `packages/frameworks/workflow-mgt/` framework packages. The framework packages already contain refined Kanban governance, workflow integration, and operational patterns developed in fynd.deals Epic 15.
 
 **Key Finding:** The framework packages **already contain** many fynd.deals Epic 15 findings, particularly in:
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `packages/frameworks/kanban/integration/workflow-management-integration.md`
 
 However, **critical operational principles** identified in T001 gap analysis are **not yet explicitly documented** in the Kanban governance policy itself. This document extracts these patterns and provides recommendations for explicit documentation.
@@ -31,7 +31,7 @@ However, **critical operational principles** identified in T001 gap analysis are
 
 ### Pattern: Complete All Steps or Explicit BLOCKED State
 
-**Source:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (lines 250-288)  
+**Source:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (lines 250-288)  
 **Source:** `packages/frameworks/kanban/integration/workflow-management-integration.md` (lines 250-288)
 
 **Pattern Definition:**
@@ -83,7 +83,7 @@ if_blocked:
 ### Pattern: Systematic Documentation Consistency
 
 **Source:** `packages/frameworks/kanban/integration/workflow-management-integration.md` (lines 87-112)  
-**Source:** `packages/frameworks/workflow mgt/README.md` (lines 194-201)
+**Source:** `packages/frameworks/workflow-mgt/README.md` (lines 194-201)
 
 **Pattern Definition:**
 ```yaml
@@ -125,7 +125,7 @@ all_sections:
 ### Pattern: No Partial Updates, No Silent Failures, Clear Actionable Messages
 
 **Source:** `packages/frameworks/kanban/integration/workflow-management-integration.md` (lines 250-288)  
-**Source:** `packages/frameworks/workflow mgt/README.md` (lines 387, 424-425)
+**Source:** `packages/frameworks/workflow-mgt/README.md` (lines 387, 424-425)
 
 **Pattern Definition:**
 ```yaml
@@ -370,7 +370,7 @@ contacts:
 
 ### Pattern: Real-Time Progress Visibility
 
-**Source:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (lines 292-344)  
+**Source:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (lines 292-344)  
 **Source:** `packages/frameworks/kanban/integration/workflow-management-integration.md` (lines 292-344)
 
 **Pattern Definition:**
@@ -533,7 +533,7 @@ todo_tracking:
 
 ## References
 
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `packages/frameworks/kanban/integration/workflow-management-integration.md`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md`

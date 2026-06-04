@@ -140,9 +140,9 @@ After running the fixed UKW:
 
 | File | Change Type |
 |------|-------------|
-| `packages/frameworks/workflow mgt/cursorrules-ukw-trigger-section.md` | Restructure Step 6 EXECUTE — split into Part A (removal) and Part B (classification) |
-| `packages/frameworks/workflow mgt/workflows/update-kanban-workflow/update-kanban-workflow.yaml` | Add explicit sub-steps for removal, archive write, and deduplication under Step 6 |
-| `packages/frameworks/workflow mgt/agents/ukw/AGENTS.md` | Update Step 6 to reflect two-part EXECUTE structure; add archive target and deduplication guard |
+| `packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md` | Restructure Step 6 EXECUTE — split into Part A (removal) and Part B (classification) |
+| `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/update-kanban-workflow.yaml` | Add explicit sub-steps for removal, archive write, and deduplication under Step 6 |
+| `packages/frameworks/workflow-mgt/agents/ukw/AGENTS.md` | Update Step 6 to reflect two-part EXECUTE structure; add archive target and deduplication guard |
 
 ### 3.2 Change: cursorrules-ukw-trigger-section.md
 

@@ -97,9 +97,9 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 - **BR-010 regression checklist:** Added to BR-067 AC4 verification section.
 
 ### AC5 — Validator Regression Evidence
-- **Command:** `python "packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py" --strict --requested E02:S16:T03 --art`
+- **Command:** `python "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py" --strict --requested E02:S16:T03 --art`
 - **Result:** Exit 0, version bump logic validated.
-- **Test command:** `pytest "packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py" -x`
+- **Test command:** `pytest "packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py" -x`
 - **Test result:** 15 passed, 0 failed (2026-05-30).
 
 ---

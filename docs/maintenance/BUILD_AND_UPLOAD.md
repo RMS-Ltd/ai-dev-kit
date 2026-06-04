@@ -6,7 +6,7 @@
 
 ```bash
 cd /Users/rms/Documents/projects/ai-dev-kit
-python3 "packages/frameworks/workflow mgt/scripts/build_packages_direct.py"
+python3 "packages/frameworks/workflow-mgt/scripts/build_packages_direct.py"
 ```
 
 ### Alternative: Build Script
@@ -66,14 +66,14 @@ git push origin --tags
 cd /Users/rms/Documents/projects/ai-dev-kit
 
 # Using Python script
-python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_all_packages.py" \
     --token $GITHUB_TOKEN \
     --repo RMS-Ltd/ai-dev-kit \
     --verbose
 
 # Or using bash script
-chmod +x "packages/frameworks/workflow mgt/scripts/UPLOAD_COMMANDS.sh"
-"packages/frameworks/workflow mgt/scripts/UPLOAD_COMMANDS.sh"
+chmod +x "packages/frameworks/workflow-mgt/scripts/UPLOAD_COMMANDS.sh"
+"packages/frameworks/workflow-mgt/scripts/UPLOAD_COMMANDS.sh"
 ```
 
 ### Method 2: Upload Individually
@@ -84,7 +84,7 @@ See [UPLOAD_PACKAGES.md](UPLOAD_PACKAGES.md) for individual upload commands.
 
 ```bash
 # Test without uploading
-python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_all_packages.py" \
     --token $GITHUB_TOKEN \
     --dry-run
 ```
@@ -104,7 +104,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
 
 3. **Test Installation:**
    ```bash
-   python3 "packages/frameworks/workflow mgt/scripts/install_package_from_release.py" \
+   python3 "packages/frameworks/workflow-mgt/scripts/install_package_from_release.py" \
        kanban 2.1.0 \
        --install-dir /tmp/test-install \
        --repo RMS-Ltd/ai-dev-kit \
@@ -118,7 +118,7 @@ python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
 ```bash
 # 1. Build packages
 cd /Users/rms/Documents/projects/ai-dev-kit
-python3 "packages/frameworks/workflow mgt/scripts/build_packages_direct.py"
+python3 "packages/frameworks/workflow-mgt/scripts/build_packages_direct.py"
 
 # 2. Create Git tags
 git tag -a kanban-v2.1.0 -m "Release kanban v2.1.0"
@@ -130,7 +130,7 @@ git push origin --tags
 
 # 3. Upload packages
 export GITHUB_TOKEN=your_token_here
-python3 "packages/frameworks/workflow mgt/scripts/upload_all_packages.py" \
+python3 "packages/frameworks/workflow-mgt/scripts/upload_all_packages.py" \
     --token $GITHUB_TOKEN \
     --repo RMS-Ltd/ai-dev-kit \
     --verbose

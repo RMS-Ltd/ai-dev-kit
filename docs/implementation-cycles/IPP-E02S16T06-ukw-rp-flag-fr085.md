@@ -164,10 +164,10 @@ For each candidate active row, agents MUST classify using at least one of:
 | CREATE | `docs/implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md` (this file) |
 | CREATE | `docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md` |
 | UPDATE | `.cursorrules` (UKW trigger block) |
-| UPDATE | `packages/frameworks/workflow mgt/cursorrules-ukw-trigger-section.md` |
+| UPDATE | `packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md` |
 | UPDATE | `.claude/commands/ukw.md` |
-| UPDATE | `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md` |
-| UPDATE | `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml` |
+| UPDATE | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md` |
+| UPDATE | `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml` |
 | UPDATE | `.cursor/skills/ukw-sync/SKILL.md` |
 | UPDATE | `docs/guides/workflow-initiation-cheatsheet.md` |
 | UPDATE | T06 task doc, FR-085, `kboard.md`, `fbuboard.md` |
@@ -197,10 +197,10 @@ For each candidate active row, agents MUST classify using at least one of:
 | ------ | ---- | --------------- | ------- |
 | D-U1 | `docs/guides/workflow-initiation-cheatsheet.md` | `UKW --rp` row; `-p` vs `--rp`; sequence; Last verified | RF1, V2 |
 | D-U2 | `.cursorrules` | UKW flag parsing + `--rp` step matrix | RF1, V1 |
-| D-U3 | `packages/frameworks/workflow mgt/cursorrules-ukw-trigger-section.md` | Parity with D-U2 | V1 |
+| D-U3 | `packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md` | Parity with D-U2 | V1 |
 | D-U4 | `.claude/commands/ukw.md` | Flag table + step matrix | V1 |
-| D-U5 | `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md` | `--rp` sub-mode; FR-038 boundary | V3 |
-| D-U6 | `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml` | Optional `--rp` substeps | V3 |
+| D-U5 | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md` | `--rp` sub-mode; FR-038 boundary | V3 |
+| D-U6 | `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml` | Optional `--rp` substeps | V3 |
 | D-U7 | `.cursor/skills/ukw-sync/SKILL.md` | Deep rp guidance | Step 6 |
 | D-U8 | T06 task doc | IPP links; AC checkboxes at completion | RF6 |
 | D-U9 | `docs/project-management/kanban/fr-br/FR-085-*.md` | IMPLEMENTED at RW | RF6 |
@@ -261,5 +261,5 @@ For each candidate active row, agents MUST classify using at least one of:
 - [FR-076](../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [Workflow initiation cheatsheet](../guides/workflow-initiation-cheatsheet.md) (T15; extended by T06)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [Update Kanban Workflow agent execution guide](../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [Update Kanban Workflow agent execution guide](../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
 - [IPP-E02S16T15](../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) (cheatsheet pattern)

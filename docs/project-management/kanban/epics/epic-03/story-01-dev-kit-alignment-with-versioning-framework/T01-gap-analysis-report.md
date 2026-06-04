@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 ## Executive Summary
 
-This document provides a comprehensive gap analysis comparing the dev-kit versioning policy (`docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`) with the framework versioning policies (`packages/frameworks/numbering & versioning/versioning-policy.md` and `versioning-strategy.md`).
+This document provides a comprehensive gap analysis comparing the dev-kit versioning policy (`docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`) with the framework versioning policies (`packages/frameworks/numbering-versioning/versioning-policy.md` and `versioning-strategy.md`).
 
 **Key Finding:** The dev-kit policy is **well-aligned** with the framework but is **missing several important sections** that would make it more comprehensive and consistent with the framework's depth. The framework policies are project-specific (fynd.deals) and include legacy Epic handling, while the dev-kit policy correctly starts fresh with Epic 1+.
 
@@ -430,9 +430,9 @@ VERSION_STRING = "0.9.21.3+1"
 ## References
 
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
-- `packages/frameworks/numbering & versioning/versioning-policy.md`
-- `packages/frameworks/numbering & versioning/versioning-strategy.md`
-- `packages/frameworks/numbering & versioning/README.md`
+- `packages/frameworks/numbering-versioning/versioning-policy.md`
+- `packages/frameworks/numbering-versioning/versioning-strategy.md`
+- `packages/frameworks/numbering-versioning/README.md`
 - `src/fynd_deals/version.py`
 - `CHANGELOG.md`
 - `docs/changelog-and-release-notes/changelog-archive/`

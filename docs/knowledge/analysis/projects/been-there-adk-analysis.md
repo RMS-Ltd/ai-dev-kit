@@ -451,9 +451,9 @@ None identified - CI/CD not required.
 ### 5.2 Workflow Scripts
 
 **Scripts Used:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
 - `scripts/sync_version_to_pubspec.py` (custom - syncs version to Flutter pubspec.yaml)
 - `scripts/documentation/validate-documentation-links.py`
 - `scripts/documentation/validate-documentation-consistency.py`
@@ -469,7 +469,7 @@ None identified - CI/CD not required.
    - **Issues:** None identified
 
 **ADK Framework Scripts:**
-- All scripts from `packages/frameworks/workflow mgt/scripts/` are used as-is
+- All scripts from `packages/frameworks/workflow-mgt/scripts/` are used as-is
 - No customization detected
 - Proper integration
 
@@ -540,7 +540,7 @@ None identified - workflows are correct.
 - `scripts/documentation/validate-documentation-links.py` - Documentation validation
 - `scripts/documentation/validate-documentation-consistency.py` - Documentation consistency
 - `scripts/documentation/documentation-review-workflow.py` - Documentation review
-- Framework scripts in `packages/frameworks/workflow mgt/scripts/` (used as-is)
+- Framework scripts in `packages/frameworks/workflow-mgt/scripts/` (used as-is)
 
 ### 6.2 Script Usage
 
@@ -841,7 +841,7 @@ None identified - scripts are correct.
 **Script Files:**
 - `scripts/sync_version_to_pubspec.py` (custom Flutter sync)
 - `scripts/documentation/` (documentation scripts)
-- `packages/frameworks/workflow mgt/scripts/` (framework scripts)
+- `packages/frameworks/workflow-mgt/scripts/` (framework scripts)
 
 ### 10.2 Comparison Tables
 

@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source (FR/BR/Task) |
 | -- | ----------- | ------------------- |
-| RF1 | Complete inventory of workflow-related code under `packages/frameworks/workflow mgt/` (scripts, workflows, config, tests) with ownership tags (RW/UKW/CMW/shared) | FR-107:R01, T01 AC1 |
+| RF1 | Complete inventory of workflow-related code under `packages/frameworks/workflow-mgt/` (scripts, workflows, config, tests) with ownership tags (RW/UKW/CMW/shared) | FR-107:R01, T01 AC1 |
 | RF2 | Map inventory to [E02:S13:T01](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) expectations; flag undocumented or orphan components | FR-107:R02, T01 AC2 |
 | RF3 | Duplication and fragmentation analysis (overlapping validators, parallel kanban update paths, duplicate YAML/rule sources) | FR-107:R03, T01 AC3 |
 | RF4 | Efficiency review: consolidation candidates, shared utility extractions, obsolete code paths (with evidence) | FR-107:R04, T01 AC4 |
@@ -157,7 +157,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | `docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md` | UPDATE (RC gate pointer) |
 | `docs/project-management/kanban/kboard.md` / `fbuboard.md` | UPDATE on RW Step 7 |
 
-**No changes** to `packages/frameworks/workflow mgt/` Python/YAML except trivial doc fixes if discovered (RNF3).
+**No changes** to `packages/frameworks/workflow-mgt/` Python/YAML except trivial doc fixes if discovered (RNF3).
 
 ### 4.2 Dependency order
 

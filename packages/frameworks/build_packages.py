@@ -9,7 +9,7 @@ from pathlib import Path
 
 # Add the workflow mgt scripts to path
 SCRIPT_DIR = Path(__file__).parent
-WORKFLOW_MGT_SCRIPTS = SCRIPT_DIR / "workflow mgt" / "scripts"
+WORKFLOW_MGT_SCRIPTS = SCRIPT_DIR / "workflow-mgt" / "scripts"
 sys.path.insert(0, str(WORKFLOW_MGT_SCRIPTS))
 
 # Import build_package functions
@@ -33,8 +33,8 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # Framework configurations: (framework_name, version, display_name)
 FRAMEWORKS = [
     ("kanban", "2.1.0", "kanban"),
-    ("workflow mgt", "2.1.3", "workflow-mgt"),
-    ("numbering & versioning", "2.0.0", "numbering-versioning"),
+    ("workflow-mgt", "2.1.3", "workflow-mgt"),
+    ("numbering-versioning", "2.0.0", "numbering-versioning"),
     ("doc-lifecycle", "1.0.0", "doc-lifecycle"),
     ("debug-path", "1.0.0", "debug-path"),
 ]
@@ -88,7 +88,7 @@ def build_framework(framework_name: str, version: str, display_name: str) -> boo
         package_hash = compute_sha256_hash(package_path)
         
         # Create hash file
-        hash_file_path = create_hash_file(package_path, package_hash, OUTPUT_DIR)
+        hash_file_path = create_hash_file(package_path, package_hash)
         print(f"   Hash file created: {hash_file_path.name}")
         
         # Update manifest hash

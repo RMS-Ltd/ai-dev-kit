@@ -74,7 +74,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 **Status:** IN PROGRESS
 
 **Approach:**
-1. ✅ Reviewed `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+1. ✅ Reviewed `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 2. ✅ Identified 15 project-specific assumptions across 4 categories:
    - Hardcoded File Paths (7 instances)
    - Handler Names (2 instances)
@@ -131,7 +131,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 - **Step 11 (Push to Remote):** Tagged branch examples, tag examples, added dev-kit equivalents
 
 **Files Updated:**
-- ✅ `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (comprehensive tagging and dev-kit examples added)
+- ✅ `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (comprehensive tagging and dev-kit examples added)
 
 **Deliverable:** Documentation now clearly distinguishes between Confidentia/fynd.deals examples and dev-kit examples, making it easier for users to understand which examples apply to their project.
 
@@ -147,7 +147,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 **Status:** IN PROGRESS
 
 **Approach:**
-1. ✅ Reviewed `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+1. ✅ Reviewed `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 2. ✅ Reviewed `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 3. ✅ Added dev-kit-specific examples throughout the section
 4. ✅ Enhanced version schema section with new story/epic progression rules
@@ -171,7 +171,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 - **Customization Section:** Added "For ai-dev-kit Usage" subsection with dev-kit-specific paths and policy references
 
 **Files Updated:**
-- ✅ `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` (aligned with dev-kit policy)
+- ✅ `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` (aligned with dev-kit policy)
 
 **Deliverable:** Cursorrules RW trigger section now includes dev-kit-specific examples and aligns with dev-kit versioning policy, making it clear how to use the template in the dev-kit repository itself.
 
@@ -198,7 +198,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 - Maintains integrity of release documentation
 
 **Files to Update:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - Update Step 3 (Create Detailed Changelog) to include verification requirements
 - Update Step 4 (Update Main Changelog) to include verification requirements
 - Add validation checks for verification status
@@ -310,8 +310,8 @@ All subsequent steps have been cancelled.
 ```
 
 **Files to Update:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 1 hardening)
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` (branch safety emphasis)
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 1 hardening)
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` (branch safety emphasis)
 - Agent execution patterns (mandatory validation)
 
 ---
@@ -388,8 +388,8 @@ The `validate_changelog_format.py` validator checks for canonical ordering (vers
 - [ ] Fix verified with actual CHANGELOG.md (Keep a Changelog format)
 
 **Files to Update:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py` - Add format support
-- `packages/frameworks/workflow mgt/config/rw-config-schema.md` - Add format configuration option
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py` - Add format support
+- `packages/frameworks/workflow-mgt/config/rw-config-schema.md` - Add format configuration option
 - Documentation explaining both formats
 
 **Related:**
@@ -457,10 +457,10 @@ The `validate_branch_context.py` script only recognizes `main` branch and `epic/
 - [ ] Optional: Configuration support for custom branch patterns (future enhancement)
 
 **Files to Update:**
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py` - Add update branch support
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Document update branch usage
-- `packages/frameworks/workflow mgt/config/rw-config-schema.md` - Add branch mapping configuration (if implementing config support)
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` - Update branch mapping section (if needed)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py` - Add update branch support
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Document update branch usage
+- `packages/frameworks/workflow-mgt/config/rw-config-schema.md` - Add branch mapping configuration (if implementing config support)
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` - Update branch mapping section (if needed)
 
 **Related:**
 - BR-003: RW Branch Validation Missing Support for Update/Maintenance Branches
@@ -489,8 +489,8 @@ The `validate_branch_context.py` script only recognizes `main` branch and `epic/
 
 ## References
 
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 
 ---

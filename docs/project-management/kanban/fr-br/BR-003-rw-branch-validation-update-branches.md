@@ -248,9 +248,9 @@ Added support for `update/*`, `maintenance/*`, and `upgrade/*` branch patterns i
 
 ## References
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py` - Branch validation script
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW agent execution guide
-- `packages/frameworks/workflow mgt/config/rw-config-schema.md` - RW configuration schema (may need extension)
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py` - Branch validation script
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW agent execution guide
+- `packages/frameworks/workflow-mgt/config/rw-config-schema.md` - RW configuration schema (may need extension)
 
 ---
 

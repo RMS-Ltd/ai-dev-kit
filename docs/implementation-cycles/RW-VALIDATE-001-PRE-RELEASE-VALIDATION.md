@@ -28,7 +28,7 @@ git branch --show-current
 git status
 
 # Run branch safety validator (MANDATORY)
-python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --strict
+python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict
 ```
 
 **Expected Output:**
@@ -80,7 +80,7 @@ changelog_dir: docs/changelog-and-release-notes/changelog-archive
 python3 --version
 
 # Check validation scripts
-ls -la "packages/frameworks/workflow mgt/scripts/validation/"
+ls -la "packages/frameworks/workflow-mgt/scripts/validation/"
 
 # Test SemVer converter
 python3 -c "from packages.frameworks.workflow_mgt.scripts.version.semver_converter import convert_version_string; print('SemVer converter OK')"

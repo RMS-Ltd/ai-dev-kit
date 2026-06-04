@@ -107,7 +107,7 @@ The following documents must be updated to reflect this new mandate:
 
 | Document | Required change |
 |---|---|
-| `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md` | Add explicit `/ipw` slash command invocation; add plan-mode enforcement requirement; update Phase 4 to mandate state transition steps; update Status transition ownership section to reference IPP-prescribed transitions |
+| `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md` | Add explicit `/ipw` slash command invocation; add plan-mode enforcement requirement; update Phase 4 to mandate state transition steps; update Status transition ownership section to reference IPP-prescribed transitions |
 | `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` | Add prescribed Step 1 (`TODO → IN PROGRESS`) and final step (status reconciliation to actual implementation state) as fixed placeholders in the Implementation Plan section |
 | `.cursorrules` → IPW trigger section | Reference `/ipw` as canonical invocation; add plan-mode enforcement note; cross-reference IPP state transition mandate |
 | `CLAUDE.md` | Add `## IPW Trigger Routing` section |

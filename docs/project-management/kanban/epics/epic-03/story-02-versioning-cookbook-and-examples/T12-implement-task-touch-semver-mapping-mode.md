@@ -35,7 +35,7 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 - FR repo anchor task: `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md`
 - FR-046 anchor interaction target: [E05:S01:T46](../../epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
 - Incident log: `docs/architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md`
-- Existing converter (Mode A): `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+- Existing converter (Mode A): `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - Existing registry: `semver-registry.yaml`
 - Existing config: `rw-config.yaml`
 - Planning artifact (IPP): [IPP-E03S02T12-task-touch-semver-collision-hardening](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)

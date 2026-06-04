@@ -65,7 +65,7 @@ housekeeping_policy: keep
 - `docs/project-management/kanban/kanban-board-guide.md`
 - `rw-config.yaml` comments / doc pointers (if any)
 - Top-level `fr-br/` cross-links in open FRs
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` (portable excerpt)
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` (portable excerpt)
 
 ---
 

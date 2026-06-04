@@ -51,11 +51,11 @@ housekeeping_policy: keep
 
 ## Integration Touchpoints
 
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/project-management/kanban/kboard.md`
 - `docs/project-management/kanban/fbuboard.md`
-- Existing validation/audit scripts in `packages/frameworks/workflow mgt/scripts/validation/`
+- Existing validation/audit scripts in `packages/frameworks/workflow-mgt/scripts/validation/`
 
 ---
 

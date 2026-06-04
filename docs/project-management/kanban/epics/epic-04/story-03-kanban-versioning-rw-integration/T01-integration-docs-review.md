@@ -270,7 +270,7 @@ The framework integration documentation is comprehensive and well-structured. Th
 
 - `packages/frameworks/kanban/integration/numbering-versioning-integration.md`
 - `packages/frameworks/kanban/integration/workflow-management-integration.md`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - `docs/project-management/rituals/policy/kanban-governance-policy.md`
 

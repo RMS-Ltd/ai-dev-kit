@@ -121,7 +121,7 @@ This document establishes the **backward compatibility policy** for AI Dev Kit f
 **Example 1: File Location Change**
 ```markdown
 **Breaking Change:** Framework file location changed
-- **Before:** `packages/frameworks/workflow mgt/`
+- **Before:** `packages/frameworks/workflow-mgt/`
 - **After:** `packages/frameworks/workflow-management/`
 - **Impact:** Projects referencing old path will break
 - **Migration:** Update all references to new path

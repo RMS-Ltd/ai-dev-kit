@@ -108,7 +108,7 @@ Establish `ai-dev-kit` as the canonical source for Kanban framework policies, te
 **Deliverable:** See [`T02-fynd-deals-epic15-kanban-findings.md`](story-01-dev-kit-kanban-implementation/T02-fynd-deals-epic15-kanban-findings.md) for complete findings and recommendations.
 
 **Files Reviewed:**
-- ✅ `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- ✅ `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - ✅ `packages/frameworks/kanban/integration/workflow-management-integration.md`
 - ✅ `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - ✅ `docs/project-management/kanban/story-01-dev-kit-kanban-implementation/T01-gap-analysis-report.md`

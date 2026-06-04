@@ -61,7 +61,7 @@ housekeeping_policy: keep
 
 - [ ] Regular `RW E:S:T --art` does not fail due to Step 1d/Step 9 adoption-context mismatch.
 - [ ] `RW -d ... --art` and `RW -k ... --art` use the same documented adoption semantics through Step 9.
-- [ ] `.cursorrules` and `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` are aligned.
+- [ ] `.cursorrules` and `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` are aligned.
 - [ ] RW execution docs and parity checklist explicitly reflect all-mode `--art` support.
 - [ ] Step 9 validator invocation docs include `--requested "<token>" --art` propagation.
 

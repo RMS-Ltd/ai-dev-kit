@@ -118,7 +118,7 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 | F1 | **Phase F:** Run `sed`/`python` across all markdown in `kanban/` to update internal links referencing old filenames. | Zero old-filename references |
 | G1 | **Phase G:** Update `kboard.md` and `fbuboard.md` row references to new filenames. | Boards reference correct files |
 | H1 | **Phase H:** Amend `kanban-governance-policy.md` with explicit naming convention rule (Txx required, Txxx deprecated, Story-NNN required, no duplicate numbers within epic). | Policy updated |
-| I1 | **Phase I:** Create `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_naming.py` — exits 0 on clean tree, exits 1 with report on violations. Wired into governance as post-cleanup check. | Regression script |
+| I1 | **Phase I:** Create `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py` — exits 0 on clean tree, exits 1 with report on violations. Wired into governance as post-cleanup check. | Regression script |
 | I2 | Run regression script; verify all 10 ACs pass. | AC sign-off |
 | **N** | **[MANDATORY] Reconcile E9:S05:T04 status** to COMPLETE with forensic marker `✅ COMPLETE (v0.9.5.4+X)` if all ACs satisfied; remain IN PROGRESS if ongoing; BLOCKED if epic-owner decisions pending. Update task doc, story checklist, epic checklist, boards atomically. | Status reflects actual state |
 
@@ -126,7 +126,7 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 
 **Create:**
 - `scripts/cleanup/generate_kanban_naming_inventory.py` — inventory generator
-- `packages/frameworks/workflow mgt/scripts/validation/validate_kanban_naming.py` — regression validator
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py` — regression validator
 
 **Modify (renames + content updates):**
 - 51 Txxx files → Txx (via `git mv`)

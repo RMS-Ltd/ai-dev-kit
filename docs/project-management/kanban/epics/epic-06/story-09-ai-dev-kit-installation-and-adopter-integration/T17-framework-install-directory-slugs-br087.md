@@ -16,7 +16,8 @@ housekeeping_policy: keep
 **Version:** v0.6.9.17+1  
 **Code:** E06S09T17
 
-**Upstream:** [BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)
+**Upstream:** [BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)  
+**Follow-up:** [E06:S09:T18](T18-br087-framework-slug-install-closure.md) — wave 2 closure (verification failed 2026-06-05)
 
 ---
 
@@ -52,7 +53,7 @@ housekeeping_policy: keep
 - [x] Release archives place framework files under `{slug}/` (e.g. `workflow-mgt/README.md`)
 - [x] `install_package_from_release.py` leaves framework under `install_dir/{slug}/`
 - [x] Regression tests in `tests/test_framework_install_slug.py` pass
-- [ ] Adopter verification on Expenses Tracker (BR-087 — pending user replay)
+- [ ] Adopter verification on Expenses Tracker (BR-087 — **failed** 2026-06-05; legacy `packages/frameworks/` names persist — [UXR-016 addendum](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md#addendum--framework-directories-still-use-legacy-names-2026-06-05))
 - [ ] Republished GitHub release tarballs with slug roots (maintainer follow-up)
 
 **Version anchor:** v0.6.9.17+1 (RW E06:S09:T17)

@@ -160,8 +160,8 @@ policy_salience:
       behavior: "create tasks from FR/BR with proper hierarchy"
   related_policies:
     - "docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md"
-    - "packages/frameworks/numbering & versioning/versioning-policy.md"
-    - "packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md"
+    - "packages/frameworks/numbering-versioning/versioning-policy.md"
+    - "packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md"
 ---
 
 # Kanban Governance Policy
@@ -370,8 +370,8 @@ The Release Workflow (RW) and the Update Kanban Workflow (UKW) own **distinct, n
 
 **See:**
 - [`.cursorrules` Step 7 — Scoped Kanban Reconciliation](../../../../.cursorrules)
-- [`release-workflow-agent-execution.md` Step 7](../../workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
-- [`update-kanban-workflow-agent-execution.md`](../../workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [`release-workflow-agent-execution.md` Step 7](../../workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- [`update-kanban-workflow-agent-execution.md`](../../workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
 - [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../../docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 ### Story Checklist
@@ -671,7 +671,7 @@ The following validations MUST be enforced:
    - Validators check task/version alignment
    - Pre-commit hooks enforce alignment (if implemented)
 
-5. **Implementation Cycle (adoptable):** Projects may require a mandatory Implementation Cycle (spec + TDD) for all task implementations: Requirement doc → Task creation → Specification & Test Creation (blocking) → Implementation (Red-Green-Refactor) → Release Workflow. When adopted, tests must exist and be failing before implementation starts. **Reference:** `.cursorrules` (Implementation Cycle section), `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`.
+5. **Implementation Cycle (adoptable):** Projects may require a mandatory Implementation Cycle (spec + TDD) for all task implementations: Requirement doc → Task creation → Specification & Test Creation (blocking) → Implementation (Red-Green-Refactor) → Release Workflow. When adopted, tests must exist and be failing before implementation starts. **Reference:** `.cursorrules` (Implementation Cycle section), `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`.
 
 **Common Mistakes to Avoid:**
 - ❌ **DON'T:** Keep `VERSION_TASK = 1` and increment `VERSION_BUILD` when moving to Task 2

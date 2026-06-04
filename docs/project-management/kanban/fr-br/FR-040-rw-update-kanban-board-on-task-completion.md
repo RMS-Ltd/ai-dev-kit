@@ -206,8 +206,8 @@ This feature is needed:
 ## References
 
 - **FR-015:** [`FR-015-harden-kanban-docs-update-in-release-workflow.md`](FR-015-harden-kanban-docs-update-in-release-workflow.md)
-- **Release Workflow Reference:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md`
-- **RW Step 7 Script:** `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
+- **Release Workflow Reference:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md`
+- **RW Step 7 Script:** `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
 - **E2:S08:** `docs/project-management/kanban/epics/epic-02/story-08-harden-release-workflow-reliability.md`
 

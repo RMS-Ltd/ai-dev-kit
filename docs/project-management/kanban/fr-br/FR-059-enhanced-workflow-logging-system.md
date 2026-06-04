@@ -88,7 +88,7 @@ Key gaps identified:
 ### **Functional Requirements**
 
 - [x] **Atomic Logging**: `forensic_log.run_subprocess_logged` — [tests/journal/test_forensic_log.py](../../../tests/journal/test_forensic_log.py)
-- [x] **Forensic Capability**: [Workflow Forensic Recovery Guide](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md) + `RecoveryReport` command timeline (operator SLA; not automated)
+- [x] **Forensic Capability**: [Workflow Forensic Recovery Guide](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md) + `RecoveryReport` command timeline (operator SLA; not automated)
 - [x] **Rollback Hardening**: Checkpoint manifests + `rollback_hint.json` (manual reconciliation per ADR-008; not auto `git reset`)
 - [x] **TTL Integration**: `journal_housekeeping.sweep` + `rw-config.yaml` `journal_ttl_days`
 - [x] **Documentation Policy**: [AGENTS.md](../AGENTS.md) `docs/journals/` jurisdiction
@@ -101,9 +101,9 @@ Key gaps identified:
 
 ### **Integration Requirements**
 
-- [x] **Workflow Executor**: [workflow_executor.py](../../../packages/frameworks/workflow%20mgt/scripts/workflow_executor.py)
+- [x] **Workflow Executor**: [workflow_executor.py](../../../packages/frameworks/workflow-mgt/scripts/workflow_executor.py)
 - [x] **Documentation Agent**: [AGENTS.md](../AGENTS.md)
-- [x] **Housekeeping**: [journal_housekeeping.py](../../../packages/frameworks/workflow%20mgt/scripts/journal/journal_housekeeping.py)
+- [x] **Housekeeping**: [journal_housekeeping.py](../../../packages/frameworks/workflow-mgt/scripts/journal/journal_housekeeping.py)
 - [x] **Validation**: [test_forensic_log_schema.py](../../../tests/journal/test_forensic_log_schema.py) + journal/workflow pytest suite
 
 ---
@@ -111,7 +111,7 @@ Key gaps identified:
 ## Dependencies
 
 - **FR-058**: Markdown Maintenance Workflow (for log formatting consistency)
-- **Workflow Executor**: Current implementation in `packages/frameworks/workflow mgt/scripts/workflow_executor.py`
+- **Workflow Executor**: Current implementation in `packages/frameworks/workflow-mgt/scripts/workflow_executor.py`
 - **Documentation Agent**: Lifecycle management capabilities
 - **Housekeeping Process**: TTL enforcement mechanisms
 
@@ -168,7 +168,7 @@ Key gaps identified:
 
 - **FR-044**: RW Temporary Execution Log for Recovery and Forensics (predecessor concept)
 - **FR-058**: Markdown Maintenance Workflow (log formatting context)
-- **Workflow Executor**: `packages/frameworks/workflow mgt/scripts/workflow_executor.py`
+- **Workflow Executor**: `packages/frameworks/workflow-mgt/scripts/workflow_executor.py`
 - **Documentation Agent**: `docs/project-management/kanban/AGENTS.md`
 
 ---

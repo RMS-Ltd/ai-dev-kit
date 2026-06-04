@@ -59,7 +59,7 @@ Ensure the Kanban Framework package remains current, well-maintained, and proper
 **Version:** v0.4.14.1+0
 
 **Input:** 
-- Packaged RW framework (`packages/frameworks/workflow mgt/`)
+- Packaged RW framework (`packages/frameworks/workflow-mgt/`)
 - UKW context detection logic (from `.cursorrules`)
 - Perpetual task pattern (from E06:S06:T08)
 
@@ -115,9 +115,9 @@ Ensure the Kanban Framework package remains current, well-maintained, and proper
 
 ## References
 
-- **RW Package:** `packages/frameworks/workflow mgt/`
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **RW Workflow YAML:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
+- **RW Package:** `packages/frameworks/workflow-mgt/`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml`
 - **UKW Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 - **UKW Analysis:** `docs/analysis/ukw-versioning-reasoning-analysis.md`
 

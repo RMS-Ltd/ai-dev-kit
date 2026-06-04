@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Related:** Implementation Guide, Package Manager Integration
 
 **Based on Framework:** This document is a dev-kit specialisation providing guidance on dual-versioning patterns. For the canonical versioning schema and SemVer mapping modes, see:
-- `packages/frameworks/numbering & versioning/versioning-policy.md` (primary SoT)
-- `packages/frameworks/numbering & versioning/versioning-strategy.md` (comprehensive strategy)
+- `packages/frameworks/numbering-versioning/versioning-policy.md` (primary SoT)
+- `packages/frameworks/numbering-versioning/versioning-strategy.md` (comprehensive strategy)
 
 ---
 

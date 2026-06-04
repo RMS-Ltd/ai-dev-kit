@@ -133,7 +133,7 @@ policy_salience:
   related_policies:
     - "docs/architecture/standards-and-adrs/doc-lifecycle-policy.md"
     - "docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md"
-    - "packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md"
+    - "packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md"
     - "packages/frameworks/kanban/policies/kanban-governance-policy.md"
 ---
 

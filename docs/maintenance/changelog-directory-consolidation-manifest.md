@@ -57,4 +57,4 @@ housekeeping_policy: keep
 
 - `rw-config.yaml` `changelog_dir` unchanged.
 - Bulk `CHANGELOG_v*.md` bodies not rewritten (RNF3).
-- `packages/frameworks/numbering & versioning/integration/integration-examples-external-projects.md` adopter placeholders unchanged.
+- `packages/frameworks/numbering-versioning/integration/integration-examples-external-projects.md` adopter placeholders unchanged.

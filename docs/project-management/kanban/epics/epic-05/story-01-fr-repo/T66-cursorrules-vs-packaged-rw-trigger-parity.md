@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-**ai-dev-kit** ships **two** RW rule surfaces: repo root [`.cursorrules` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) and the installable excerpt [`cursorrules-rw-trigger-section.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md). After **FR-060** (mandatory task token), **FR-038** (Step 7 scoped UKW), and Step/TODO renumbering, adopters copying only the package can **drift** from canonical repo behavior.
+**ai-dev-kit** ships **two** RW rule surfaces: repo root [`.cursorrules` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) and the installable excerpt [`cursorrules-rw-trigger-section.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md). After **FR-060** (mandatory task token), **FR-038** (Step 7 scoped UKW), and Step/TODO renumbering, adopters copying only the package can **drift** from canonical repo behavior.
 
 Define and implement a **parity discipline**: checklist doc, merge procedure, or light “diff targets” (Step 1.x token gate, Step 1.5 intent, Step 1.x `validate_rw_task_complete`, Step 7 scoped UKW naming) so maintainers keep both aligned when RW rules change.
 

@@ -55,7 +55,7 @@ Greenfield adopters need a **single, reproducible first-run path** from acquisit
 1. Produce or extend the **greenfield specification** (ordering: acquire frameworks → run installers → configure → verify).
 2. Implement **orchestration** appropriate to repo conventions (scripts, CLI integration, or deterministic checklist—per FR-080).
 3. Ensure **workflow + Kanban** (and other chosen surfaces) use **install_release_workflow.py** / **install_kanban_framework.py** (or successors) as required—not copy-only adoption.
-4. Add **verification** gates aligned with `rw-config.yaml` and validator layout ([rw-validators-consumer-layout](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/rw-validators-consumer-layout.md)).
+4. Add **verification** gates aligned with `rw-config.yaml` and validator layout ([rw-validators-consumer-layout](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)).
 5. Coordinate documentation updates with **FR-081** so greenfield and brownfield narratives stay distinct.
 
 ---

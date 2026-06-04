@@ -111,7 +111,7 @@ project/
 ├── frameworks/
 │   ├── ai-dev-kit/          # Git submodule
 │   │   └── packages/frameworks/
-│   │       ├── numbering & versioning/
+│   │       ├── numbering-versioning/
 │   │       ├── workflow mgt/
 │   │       └── kanban/
 │   └── .git/                   # Submodule metadata
@@ -222,11 +222,11 @@ frameworks:
   numbering-versioning:
     version: "2.0.0"
     backend: "git-submodule"
-    path: "frameworks/ai-dev-kit/packages/frameworks/numbering & versioning"
+    path: "frameworks/ai-dev-kit/packages/frameworks/numbering-versioning"
   workflow-mgt:
     version: "2.0.0"
     backend: "git-submodule"
-    path: "frameworks/ai-dev-kit/packages/frameworks/workflow mgt"
+    path: "frameworks/ai-dev-kit/packages/frameworks/workflow-mgt"
 ```
 
 **Pros:**
@@ -315,7 +315,7 @@ git tag -a ai-dev-kit-v2.0.0 -m "Release ai-dev-kit v2.0.0"
 Each framework includes a version file:
 
 ```python
-# packages/frameworks/numbering & versioning/VERSION
+# packages/frameworks/numbering-versioning/VERSION
 FRAMEWORK_NAME = "numbering-versioning"
 FRAMEWORK_VERSION = "2.0.0"
 FRAMEWORK_SEMVER = "2.0.0"

@@ -185,7 +185,7 @@ required:
   - Python 3.6+ (for migration utilities)
 
 recommended:
-  - Numbering & Versioning package (temp/numbering & versioning/)
+  - Numbering & Versioning package (temp/numbering-versioning/)
   - Workflow Management package (temp/workflow-mgt/)
   - Markdown-based documentation system
 ```
@@ -935,7 +935,7 @@ schema:
 ```yaml
 step_1:
   action: "Install Numbering & Versioning package"
-  location: "temp/numbering & versioning/"
+  location: "temp/numbering-versioning/"
 
 step_2:
   action: "Adopt version schema"
@@ -1858,7 +1858,7 @@ included_docs:
 ```yaml
 related_packages:
   numbering_versioning:
-    location: "temp/numbering & versioning/"
+    location: "temp/numbering-versioning/"
     relationship: "Complementary - provides version schema"
     required: "Yes (for forensic traceability)"
 
@@ -1922,5 +1922,5 @@ metadata:
 
 **For complete workflow automation, use all three packages together:**
 1. **Kanban Package** (`temp/kanban-complete/`) - Work item tracking
-2. **Numbering & Versioning Package** (`temp/numbering & versioning/`) - Version schema
+2. **Numbering & Versioning Package** (`temp/numbering-versioning/`) - Version schema
 3. **Workflow Management Package** (`temp/workflow-mgt/`) - Automated workflows

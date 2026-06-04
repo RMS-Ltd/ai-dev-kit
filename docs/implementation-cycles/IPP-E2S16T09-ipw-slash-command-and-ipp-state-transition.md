@@ -124,7 +124,7 @@ All RF1–RF12 requirements map directly to the ten deliverable files listed in 
 
 - `CLAUDE.md`
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - `.cursorrules`
 - `AGENTS.md`
 - `docs/project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
@@ -161,4 +161,4 @@ All RF1–RF12 requirements map directly to the ten deliverable files listed in 
 - [ADR-004](../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md)
 - `.claude/commands/ipw.md`
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`

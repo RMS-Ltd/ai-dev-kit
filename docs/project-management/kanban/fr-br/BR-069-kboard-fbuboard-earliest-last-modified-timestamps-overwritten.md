@@ -66,7 +66,7 @@ Running the typical deterministic **UKW** board pass (`enforce_terminal_timestam
 
 - `docs/project-management/kanban/kboard.md`
 - `docs/project-management/kanban/fbuboard.md`
-- `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
+- `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - UKW/RW board update paths that touch row metadata
 - Row-tail traceability segment normalization paths (`FBU | Task | IPP | Last modified`)
 - Gap between **partial** automated reconciliation (footer-focused, divergence-preserving) and **full** row canonicalization required to eliminate repeated fields
@@ -80,7 +80,7 @@ Running the typical deterministic **UKW** board pass (`enforce_terminal_timestam
 - [x] Root cause is identified (specific code path + mutation condition).
 - [x] Guardrail is defined so non-substantive updates cannot overwrite preserved historical row timestamps.
 - [x] Guardrail is defined so row normalization cannot append duplicate task-ID segments.
-- [x] Documentary regression: `test_4_13` in `packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py` encodes UKW vs `update_kanban_board` ordering divergence and the non-terminal footer + second `Last modified` append (see [IPP-E02S15T04](../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md) §5.3).
+- [x] Documentary regression: `test_4_13` in `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` encodes UKW vs `update_kanban_board` ordering divergence and the non-terminal footer + second `Last modified` append (see [IPP-E02S15T04](../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md) §5.3).
 - [x] After code remediation, automated tests assert **preservation** of earliest historical `Last modified` and **no** spurious second footer on touch-only / UKW runs.
 - [x] Regression tests cover single-instance task-ID segment invariants under repeated runs.
 - [x] BR-069, implementing task, and board/story wiring are bidirectionally consistent.

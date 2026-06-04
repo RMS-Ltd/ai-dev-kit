@@ -10,22 +10,22 @@ import pytest
 ROOT = Path(__file__).resolve().parents[2]
 
 CONTRACT = ROOT / (
-    "packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/"
+    "packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/"
     "workflow-step-tracker-contract.md"
 )
 SCHEMA = ROOT / "docs/architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json"
 EXAMPLE = ROOT / "docs/architecture/standards-and-adrs/examples/workflow-agent-run-log-v1.example.json"
 ADR_008 = ROOT / "docs/architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md"
 ADR_011 = ROOT / "docs/architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md"
-PARITY = ROOT / "packages/frameworks/workflow mgt/docs/rw-trigger-dual-source-parity.md"
+PARITY = ROOT / "packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md"
 
 GOVERNANCE_FILES = [
     ROOT / ".cursorrules",
-    ROOT / "packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md",
-    ROOT / "packages/frameworks/workflow mgt/cursorrules-ukw-trigger-section.md",
+    ROOT / "packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md",
+    ROOT / "packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md",
     ROOT / "docs/architecture/standards-and-adrs/workflow-hardening-guide.md",
 ] + list(
-    (ROOT / "packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp").glob(
+    (ROOT / "packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp").glob(
         "*-workflow-agent-execution.md"
     )
 )

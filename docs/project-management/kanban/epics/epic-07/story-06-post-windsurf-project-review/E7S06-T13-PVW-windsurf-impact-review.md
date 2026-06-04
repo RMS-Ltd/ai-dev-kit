@@ -11,7 +11,7 @@
 
 ### Extent of Windsurf-Specific Logic
 
-No direct .windsurf skill for PVW. PVW is invoked as RW Step 2.5. Relevant skills: `rw-execute` (covers RW, which invokes PVW), `version-bump`. PVW logic is in .cursorrules and packages/frameworks/workflow mgt/.
+No direct .windsurf skill for PVW. PVW is invoked as RW Step 2.5. Relevant skills: `rw-execute` (covers RW, which invokes PVW), `version-bump`. PVW logic is in .cursorrules and packages/frameworks/workflow-mgt/.
 
 ### Divergence from .cursorrules
 

@@ -19,7 +19,7 @@
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: registry
 use_kanban: true
@@ -49,7 +49,7 @@ story_doc_pattern: "epics/Epic-{epic}/Story-{story}-*.md"
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: registry
 use_kanban: false
@@ -65,7 +65,7 @@ use_kanban: false
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: task_touch
 use_kanban: true
@@ -80,7 +80,7 @@ story_doc_pattern: "epics/Epic-{epic}/Story-{story}-*.md"
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: task_touch
 use_kanban: true
@@ -117,7 +117,7 @@ story_doc_pattern: "epics/Epic-{epic}/Story-{story}-*.md"
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: registry  # Use registry for development
 use_kanban: true
@@ -136,7 +136,7 @@ skip_github_release: true  # Skip GitHub release in development
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: task_touch  # Use task-touch for production
 use_kanban: true
@@ -156,7 +156,7 @@ skip_validation: false  # Run all validations in production
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: registry
 ```
@@ -172,7 +172,7 @@ semver_mapping_strategy: registry
 | `version_file` | Path to version file | `src/fynd_deals/version.py` |
 | `main_changelog` | Path to main changelog | `CHANGELOG.md` |
 | `changelog_dir` | Directory for changelog archives | `docs/changelog-and-release-notes/changelog-archive` |
-| `scripts_path` | Path to validation scripts | `packages/frameworks/workflow mgt/scripts` |
+| `scripts_path` | Path to validation scripts | `packages/frameworks/workflow-mgt/scripts` |
 | `readme_file` | Path to README file | `README.md` |
 | `semver_mapping_strategy` | SemVer mapping strategy | `registry` or `task_touch` |
 
@@ -390,7 +390,7 @@ cat > test-rw-config.yaml << EOF
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: registry
 EOF
@@ -398,7 +398,7 @@ EOF
 # Test SemVer conversion
 python3 -c "
 import sys
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts/version')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts/version')
 from semver_converter import convert_version_string
 result = convert_version_string('0.5.1.48+1', 'registry')
 print(f'Registry mode conversion: 0.5.1.48+1 → {result}')
@@ -422,7 +422,7 @@ cat > test-rw-config.yaml << EOF
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: task_touch
 EOF
@@ -430,7 +430,7 @@ EOF
 # Test SemVer conversion
 python3 -c "
 import sys
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts/version')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts/version')
 from semver_converter import convert_version_string
 result = convert_version_string('0.5.1.48+1', 'task_touch')
 print(f'Task-touch mode conversion: 0.5.1.48+1 → {result}')
@@ -455,7 +455,7 @@ cat > rw-config.yaml << EOF
 version_file: src/fynd_deals/version.py
 main_changelog: CHANGELOG.md
 changelog_dir: docs/changelog-and-release-notes/changelog-archive
-scripts_path: packages/frameworks/workflow mgt/scripts
+scripts_path: packages/frameworks/workflow-mgt/scripts
 readme_file: README.md
 semver_mapping_strategy: registry
 EOF

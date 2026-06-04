@@ -54,7 +54,7 @@ This package is designed to be **fully modular** with maximum independence. You 
 - **Hard runtime dependencies:** ✅ None — it does not require any scripts or workflows to be useful
 - **Soft / optional companions:**
   - `packages/frameworks/kanban/` — link debug paths to Stories for traceability
-  - `packages/frameworks/workflow mgt/` — automate DRW phases via Debug Path Workflow (future)
+  - `packages/frameworks/workflow-mgt/` — automate DRW phases via Debug Path Workflow (future)
 
 ---
 

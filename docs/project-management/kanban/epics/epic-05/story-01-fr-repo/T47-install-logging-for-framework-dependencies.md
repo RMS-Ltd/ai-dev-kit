@@ -92,7 +92,7 @@ Concrete implementation work (CLI changes, tests, docs) will be carried out unde
 - **Recent runs filtering:** Configurable limit (default: 10)
 
 ### ✅ Framework Installer Integration
-**Files:** `packages/frameworks/kanban/scripts/install_kanban_framework.py`, `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
+**Files:** `packages/frameworks/kanban/scripts/install_kanban_framework.py`, `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
 **Features Implemented:**
 - **Environment variable:** `AI_DEV_KIT_INSTALL_LOG_PATH` integration
 - **Kanban markers:** `[KANBAN_MODE]`, `[KANBAN_DETECT]`, `[KANBAN_ANALYZE]`, `[KANBAN_VALIDATE]`, `[KANBAN_MIGRATE]`, `[KANBAN_FRESH_INSTALL]`

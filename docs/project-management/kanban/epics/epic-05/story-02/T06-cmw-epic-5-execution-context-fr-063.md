@@ -46,8 +46,8 @@ Implement [FR-063](../../../fr-br/FR-063-cmw-epic-05-execution-context.md): **do
 ## Input
 
 - [FR-063](../../../fr-br/FR-063-cmw-epic-05-execution-context.md)
-- `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`
-- `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
+- `packages/frameworks/workflow-mgt/scripts/changelog/cmw.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 - Epic 5 branch: `epic/5-documentation-management` ([epic-05.md](../epic-05.md))
 
 ---

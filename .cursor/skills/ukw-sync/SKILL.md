@@ -12,7 +12,7 @@ When the user invokes **`UKW -c`** (standalone only):
 1. Run Steps 1, 2 (archive scan), 6 (ledger append then MoSCOW removal), 7–9 per agent execution guide — skip 2.5 and 3–5.
 2. **kboard:** For each archivable row, use **`kanban_completed_update`** ([skill](../kanban-completed-update/SKILL.md)) with version/timestamp from **task doc** — then remove the row from active MoSCOW.
 3. **fbuboard:** For each archivable FBU, use **`fr_br_uxr_completed_update`** ([skill](../fr-br-uxr-completed-update/SKILL.md)) — then remove from active MoSCOW.
-4. Helpers: `packages/frameworks/workflow mgt/scripts/kanban/archive_completed.py` (`scan_kboard_candidates`, `scan_fbuboard_candidates`).
+4. Helpers: `packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py` (`scan_kboard_candidates`, `scan_fbuboard_candidates`).
 5. Emit `## Archive completed summary` in Step 9 (archived / skipped / already-in-ledger counts).
 6. **Do not** batch-rewrite row `Last modified` stamps (FR-097). **Do not** combine `-c` with `-u`, `-p`, `-a`, or `--rp`. **Do not** use `-c` during RW Step 7.
 
@@ -38,7 +38,7 @@ Run **FBU substeps** on **comprehensive** (`UKW` no flags) and **bookkeeping** (
 3. **20-recent dashboard** — rebuild `## 20 Most Recently Completed FR/BR/UXR Items` (format aligned with `kanban-completed.md`).
 4. **Cross-doc consistency** — `fbuboard.md` ↔ `fbu-completed.md` ↔ `fbu-structure.md`.
 
-YAML substeps: `step-6-5`, `step-6-6`, `step-6-7` in `packages/frameworks/workflow mgt/workflows/update-kanban-workflow/update-kanban-workflow.yaml`. Agent guide: Step 6.5–6.7 in `update-kanban-workflow-agent-execution.md`.
+YAML substeps: `step-6-5`, `step-6-6`, `step-6-7` in `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/update-kanban-workflow.yaml`. Agent guide: Step 6.5–6.7 in `update-kanban-workflow-agent-execution.md`.
 
 ### Intelligence Requirements
 

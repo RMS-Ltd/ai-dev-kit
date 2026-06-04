@@ -32,7 +32,7 @@ Review Release Workflow (RW) for Windsurf impact, .windsurf skill mappings, and 
 
 - .cursorrules RW section
 - .windsurf/skills/ (version-bump, rw-execute, readme-update)
-- packages/frameworks/workflow mgt/workflows/release-workflow/
+- packages/frameworks/workflow-mgt/workflows/release-workflow/
 
 ## Deliverable
 

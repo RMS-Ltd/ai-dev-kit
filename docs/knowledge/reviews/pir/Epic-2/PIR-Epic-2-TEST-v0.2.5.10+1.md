@@ -269,8 +269,8 @@ This is a **test PIR report** created to validate the Post-Implementation Review
   - [Story 2](../../../../project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow.md) (v0.2.2.2+1)
   - [Story 5](../../../../project-management/kanban/epics/epic-02/story-05-post-implementation-review-workflow.md) (v0.2.5.10+1)
 - **Version Range:** v0.2.1.1+1 to v0.2.5.10+1
-- **PIR Workflow:** [PIR Workflow YAML (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/pir-workflow.yaml)
-- **PIR Execution Guide:** [PIR Agent Execution Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)
+- **PIR Workflow:** [PIR Workflow YAML (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/pir-workflow.yaml)
+- **PIR Execution Guide:** [PIR Agent Execution Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)
 
 ---
 

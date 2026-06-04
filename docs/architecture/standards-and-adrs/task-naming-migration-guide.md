@@ -71,7 +71,7 @@ The Kanban Task naming policy has been updated to always use the full `Exx:Sxx:T
 
 ### Policy Documents
 - ✅ `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- ✅ `packages/frameworks/numbering & versioning/kanban-governance-policy.md`
+- ✅ `packages/frameworks/numbering-versioning/kanban-governance-policy.md`
 - ✅ `docs/project-management/rituals/policy/kanban-governance-policy.md`
 
 ### Templates
@@ -83,10 +83,10 @@ The Kanban Task naming policy has been updated to always use the full `Exx:Sxx:T
 - ✅ `packages/frameworks/kanban/examples/epic-04-Example.md`
 - ✅ `packages/frameworks/kanban/integration/numbering-versioning-integration.md`
 - ✅ `packages/frameworks/kanban/README.md`
-- ✅ `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- ✅ `packages/frameworks/workflow mgt/docs/documentation/templates/action-workflow-template.md`
-- ✅ `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md`
-- ✅ `packages/frameworks/workflow mgt/docs/architecture/standards-and-adrs/versioning-strategy.md`
+- ✅ `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- ✅ `packages/frameworks/workflow-mgt/docs/documentation/templates/action-workflow-template.md`
+- ✅ `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md`
+- ✅ `packages/frameworks/workflow-mgt/docs/architecture/standards-and-adrs/versioning-strategy.md`
 - ✅ `packages/frameworks/kanban/guides/portfolio-kanban-alignment-playbook.md`
 - ✅ `packages/frameworks/kanban/FR_BR_INTAKE_AGENT_GUIDE.md`
 - ✅ `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`
@@ -186,7 +186,7 @@ Release v0.2.2.1+1: E2:S02:T01: Add CHECK Phase
 ## References
 
 - **Kanban Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Versioning Policy:** `packages/frameworks/numbering & versioning/kanban-governance-policy.md`
+- **Versioning Policy:** `packages/frameworks/numbering-versioning/kanban-governance-policy.md`
 - **Dev-Kit Policy:** `docs/project-management/rituals/policy/kanban-governance-policy.md`
 - **Task T07:** `docs/project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md`
 - **Task T08:** `docs/project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md`

@@ -45,14 +45,14 @@ Implement the SemVer mapping system (proposed in `semver-mapping-proposal.md`) t
    - Tracks Epic→MINOR and (Epic,Story)→PATCH mappings per RC
    - YAML structure: `rc_0: { epic_to_minor: {...}, story_to_patch: {...} }`
 
-2. **SemVer Converter Script:** `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
+2. **SemVer Converter Script:** `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
    - Function: `convert_internal_to_semver(rc, epic, story, task, build) -> (major, minor, patch, build)`
    - Function: `load_semver_registry() -> dict`
    - Function: `update_semver_registry(rc, epic, story, minor, patch) -> dict`
    - Function: `save_semver_registry(registry) -> None`
    - Implements Hybrid Approach algorithm
 
-3. **Registry Migration Script:** `packages/frameworks/workflow mgt/scripts/version/build_semver_registry.py`
+3. **Registry Migration Script:** `packages/frameworks/workflow-mgt/scripts/version/build_semver_registry.py`
    - One-time script to build initial registry from existing git tags
    - Parses all `v0.*.*.*+*` tags
    - Generates `semver-registry.yaml` with first-seen mappings
@@ -67,11 +67,11 @@ Implement the SemVer mapping system (proposed in `semver-mapping-proposal.md`) t
 
 5. **Documentation Updates:**
    - Update `.cursorrules` RW Step 11 with SemVer generation instructions
-   - Update `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` template
+   - Update `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` template
    - Update RW execution guide (if exists)
    - Update `rw-config.yaml` schema to include `semver_registry_file` path
 
-6. **Validation Script:** `packages/frameworks/workflow mgt/scripts/validation/validate_semver_monotonic.py`
+6. **Validation Script:** `packages/frameworks/workflow-mgt/scripts/validation/validate_semver_monotonic.py`
    - Verifies SemVer increases across all releases
    - Validates registry consistency
    - Can be run periodically or in CI/CD
@@ -230,7 +230,7 @@ rc_1:
 ## Notes
 
 **Critical Framework Package Updates:**
-The `packages/frameworks/numbering & versioning/` package is a **portable framework** used by other projects. It **must** include SemVer mapping documentation:
+The `packages/frameworks/numbering-versioning/` package is a **portable framework** used by other projects. It **must** include SemVer mapping documentation:
 - `versioning-policy.md` - Add SemVer mapping section
 - `versioning-strategy.md` - Add dual versioning strategy
 - `IMPLEMENTATION_GUIDE.md` - Add SemVer mapping implementation steps

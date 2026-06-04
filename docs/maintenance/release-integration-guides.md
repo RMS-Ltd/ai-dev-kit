@@ -74,7 +74,7 @@ jobs:
           echo "RW" | python3 -c "
           import sys
           import os
-          sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts')
+          sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts')
           
           # Set environment variables for CI
           os.environ['CI'] = 'true'
@@ -97,7 +97,7 @@ jobs:
           if [ "${{ github.event.inputs.mode }}" = "task_touch" ]; then
             TAG=$(python3 -c "
             import sys
-            sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts/version')
+            sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts/version')
             from semver_converter import convert_version_string
             import re
             with open('src/fynd_deals/version.py', 'r') as f:
@@ -210,7 +210,7 @@ jobs:
         run: |
           python3 -c "
           import sys
-          sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts/version')
+          sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts/version')
           from semver_converter import convert_version_string
           import re
           import yaml
@@ -321,7 +321,7 @@ jobs:
           python3 -c "
           import sys
           import os
-          sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts')
+          sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts')
           
           try:
               from workflow_orchestrator import WorkflowOrchestrator
@@ -489,7 +489,7 @@ pipeline {
                     def versionInfo = sh(script: '''
                         python3 -c "
 import sys
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts/version')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts/version')
 from semver_converter import convert_version_string
 import re
 import yaml
@@ -545,7 +545,7 @@ if version_match:
                         python3 -c "
 import sys
 import os
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts')
 
 try:
     from workflow_orchestrator import WorkflowOrchestrator
@@ -730,7 +730,7 @@ release:
       
       python3 -c "
 import sys
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts/version')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts/version')
 from semver_converter import convert_version_string
 import re
 import yaml
@@ -772,7 +772,7 @@ if version_match:
       python3 -c "
 import sys
 import os
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts')
 
 try:
     from workflow_orchestrator import WorkflowOrchestrator
@@ -879,7 +879,7 @@ COPY . .
 
 # Set environment variables
 ENV CI=true
-ENV PYTHONPATH=/app/packages/frameworks/workflow mgt/scripts
+ENV PYTHONPATH=/app/packages/frameworks/workflow-mgt/scripts
 
 # Release script
 RUN echo '#!/bin/bash\n\
@@ -916,7 +916,7 @@ fi\n\
 # Execute release\n\
 python3 -c "\n\
 import sys\n\
-sys.path.insert(0, \"packages/frameworks/workflow mgt/scripts\")\n\
+sys.path.insert(0, \"packages/frameworks/workflow-mgt/scripts\")\n\
 \n\
 try:\n\
     from workflow_orchestrator import WorkflowOrchestrator\n\
@@ -1018,7 +1018,7 @@ VERSION_BUILD = 1
                 'version_file': 'src/fynd_deals/version.py',
                 'main_changelog': 'CHANGELOG.md',
                 'changelog_dir': 'docs/changelog-and-release-notes/changelog-archive',
-                'scripts_path': 'packages/frameworks/workflow mgt/scripts',
+                'scripts_path': 'packages/frameworks/workflow-mgt/scripts',
                 'readme_file': 'README.md',
                 'semver_mapping_strategy': 'registry',
                 'use_kanban': False
@@ -1050,7 +1050,7 @@ VERSION_BUILD = 1
             'python3', '-c',
             '''
 import sys
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts')
 from workflow_orchestrator import WorkflowOrchestrator
 wo = WorkflowOrchestrator()
 result = wo.execute_workflow('release-workflow.yaml')
@@ -1080,7 +1080,7 @@ print(f"success={result.get('success', False)}")
             'python3', '-c',
             '''
 import sys
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts')
 from workflow_orchestrator import WorkflowOrchestrator
 wo = WorkflowOrchestrator()
 result = wo.execute_workflow('release-workflow.yaml')
@@ -1111,7 +1111,7 @@ print(f"success={result.get('success', False)}")
             'python3', '-c',
             '''
 import sys
-sys.path.insert(0, 'packages/frameworks/workflow mgt/scripts')
+sys.path.insert(0, 'packages/frameworks/workflow-mgt/scripts')
 from workflow_orchestrator import WorkflowOrchestrator
 wo = WorkflowOrchestrator()
 result = wo.execute_workflow('release-workflow.yaml')

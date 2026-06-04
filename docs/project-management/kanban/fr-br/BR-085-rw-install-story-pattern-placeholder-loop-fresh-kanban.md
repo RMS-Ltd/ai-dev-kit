@@ -46,7 +46,7 @@ Repeats indefinitely.
 
 ## Root causes
 
-**File:** `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
 
 1. **`validate_required_placeholders`** — substring check `"{story}" in value` fails for `{story:03d}` (next character after `y` is `:`, not `}`).
 2. **`prompt_pattern_with_validation` + `strict_zero_match`** — fresh kanban creates epics before stories; zero-match story pattern is rejected even when the default is installer-aligned.

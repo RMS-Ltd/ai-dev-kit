@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 - BR-069 and T04 evidence confirms non-canonical row mutation behavior across UKW/RW.
 - FR-090 defines redesign requirements for shared transform pipeline and board-specific rendering contracts.
-- Existing implementation surface: `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`.
+- Existing implementation surface: `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`.
 - IPP planning artifact published: [IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090](../../../../../implementation-cycles/IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)
 - Current `kboard`/`fbuboard` state still exhibits repeated tail-segment multiplication on some active rows where per-segment timestamp evidence is absent, partial, or ambiguous.
 
@@ -121,12 +121,12 @@ Task T05 implements the FR-090 architecture so both workflows remain cohesive, l
 ## Phase 4 Verification Evidence
 
 - Full edge-case regression suite passes after Phase 3 hardening additions:
-  - `python3 "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py" --test-category 4`
+  - `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category 4`
   - Result: 15/15 passed, including parity/order (`4.13`, `4.14`) and Phase 3 matrix (`4.15`).
 - Full-suite run shows two pre-existing non-T05 failures outside this implementation surface:
-  - `python3 "packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py" --test-category all`
+  - `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category all`
   - Failing legacy checks: `2.2` (version mismatch expectation) and `3.1` (missing-doc error message expectation).
 - Both update modes verified with dry-run execution:
-  - `python3 "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --dry-run --mode full`
-  - `python3 "packages/frameworks/workflow mgt/scripts/update_kanban_docs.py" --dry-run --mode kanban_init`
+  - `python3 "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --dry-run --mode full`
+  - `python3 "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --dry-run --mode kanban_init`
 - Resulting evidence confirms AC1-AC6 closure for T05 scope and readiness to map residual governance closure in FR-090/BR-069.

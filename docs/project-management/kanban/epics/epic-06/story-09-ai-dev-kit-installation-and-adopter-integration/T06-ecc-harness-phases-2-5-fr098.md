@@ -30,7 +30,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alignment docs, AgentShield RW add-on spec, and adopter positioning (cheatsheet §11, INSTALL optional step). Validators and install helper ship under `packages/frameworks/workflow mgt/`.
+Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alignment docs, AgentShield RW add-on spec, and adopter positioning (cheatsheet §11, INSTALL optional step). Validators and install helper ship under `packages/frameworks/workflow-mgt/`.
 
 ---
 
@@ -70,7 +70,7 @@ Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alig
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
 - [ECC + ADK cheatsheet](../../../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
-- [Bridge template](../../../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
+- [Bridge template](../../../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
 - [IPP-E06S09T05 (Phase 1)](../../../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md)
 - [T01 greenfield install (FR-080)](./T01-greenfield-installation-process-fr080.md)
 
@@ -90,10 +90,10 @@ Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alig
 
 ### Shipped paths
 
-- `packages/frameworks/workflow mgt/scripts/validation/validate_ecc_adk_bridge.py`
-- `packages/frameworks/workflow mgt/scripts/validation/test_validate_ecc_adk_bridge.py`
-- `packages/frameworks/workflow mgt/scripts/install/install_ecc_harness_optional.sh`
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md`
+- `packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py`
+- `packages/frameworks/workflow-mgt/scripts/validation/test_validate_ecc_adk_bridge.py`
+- `packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh`
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md`
 
 ---
 

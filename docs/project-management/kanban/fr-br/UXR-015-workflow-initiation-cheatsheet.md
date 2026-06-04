@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Maintainers and agents cannot reliably hold the growing matrix of workflow triggers, flags, mode prerequisites, and common sequences in working memory. A single **workflow initiation cheatsheet** under `docs/guides/` is needed as a scannable, human-first reference — distinct from the long-form agent execution guides in `packages/frameworks/workflow mgt/`.
+Maintainers and agents cannot reliably hold the growing matrix of workflow triggers, flags, mode prerequisites, and common sequences in working memory. A single **workflow initiation cheatsheet** under `docs/guides/` is needed as a scannable, human-first reference — distinct from the long-form agent execution guides in `packages/frameworks/workflow-mgt/`.
 
 ---
 
@@ -53,7 +53,7 @@ Maintainers and agents cannot reliably hold the growing matrix of workflow trigg
 - `.cursorrules` — RW, UKW, CMW, PVW, ICW full trigger sections
 - `.claude/commands/rw.md`, `ukw.md`, `ipw.md` — slash-command flag matrices
 - `docs/guides/README.md` — guides section structure
-- `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/` — long-form execution guides (reference targets, not substitutes)
+- `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/` — long-form execution guides (reference targets, not substitutes)
 
 ---
 
@@ -273,7 +273,7 @@ Package versions changed?      → PVW (or automatic at RW Step 2.5)
 
 ## References
 
-- [Release Workflow agent execution guide](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
-- [Update Kanban Workflow agent execution guide](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [Release Workflow agent execution guide](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- [Update Kanban Workflow agent execution guide](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
 - [Guides README](../../guides/README.md)
 - `.claude/commands/rw.md`, `ukw.md`, `ipw.md`

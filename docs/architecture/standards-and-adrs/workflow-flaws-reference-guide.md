@@ -100,8 +100,8 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 - Made order explicit: Story file FIRST, then Epic file
 
 **See:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 6
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` Step 6
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 6
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` Step 6
 
 ### Prevention
 
@@ -162,8 +162,8 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 4. **MUST** validate before and after updating
 
 **See:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 2
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` Step 2
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 2
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` Step 2
 - `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md` (detailed analysis)
 
 ### Prevention
@@ -221,8 +221,8 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 ## Related Documentation
 
 ### Core Workflow Documents
-- **[Release Workflow Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - Complete step-by-step guide
-- **[Cursor Rules RW Trigger Section (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)** - RW trigger instructions
+- **[Release Workflow Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - Complete step-by-step guide
+- **[Cursor Rules RW Trigger Section (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md)** - RW trigger instructions
 - **[Workflow Hardening Guide](workflow-hardening-guide.md)** - Core principles for workflow design
 
 ### Versioning Documents
@@ -341,8 +341,8 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 - Complete fix attempt history in BR documents
 
 **See:**
-- **[Release Workflow Agent Execution Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - Step 6 for the complete procedure
-- **[Cursor Rules RW Trigger Section (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/cursorrules-rw-trigger-section.md)** - Step 6 for the updated agent execution rules
+- **[Release Workflow Agent Execution Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)** - Step 6 for the complete procedure
+- **[Cursor Rules RW Trigger Section (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md)** - Step 6 for the updated agent execution rules
 - **[BR Template (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/BR_TEMPLATE.md)** - "Fix Attempt History" section
 
 ---
@@ -427,8 +427,8 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 - Document template path and creation procedure
 
 **See:**
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 7
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` Step 7
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 7
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` Step 7
 - `packages/frameworks/kanban/templates/STORY_TEMPLATE.md` (template to use)
 
 ### Prevention

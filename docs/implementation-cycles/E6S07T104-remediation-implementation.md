@@ -27,7 +27,7 @@ Critical fixes for Release Automation compatibility with task-touch SemVer taggi
 ### ✅ Priority 1: Critical Fixes (COMPLETE)
 
 #### **Fix 1: Dual Tag Strategy in Release Workflow**
-**File:** `packages/frameworks/workflow mgt/workflows/release-workflow/release-workflow.yaml`
+**File:** `packages/frameworks/workflow-mgt/workflows/release-workflow/release-workflow.yaml`
 **Status:** ✅ COMPLETE
 
 **Changes Made:**
@@ -41,7 +41,7 @@ Critical fixes for Release Automation compatibility with task-touch SemVer taggi
   - `semver_mapping_strategy: auto`
 
 #### **Fix 2: Git Tag Handler Implementation**
-**File:** `packages/frameworks/workflow mgt/scripts/git_tag_handler.py`
+**File:** `packages/frameworks/workflow-mgt/scripts/git_tag_handler.py`
 **Status:** ✅ COMPLETE
 
 **Features Implemented:**

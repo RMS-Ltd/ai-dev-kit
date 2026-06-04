@@ -35,8 +35,8 @@ The implementation in this repo starts simple:
 
 ### 1.1 RW Step 7 vs standalone UKW (FR-038)
 
-- **Per-release kanban sync:** [Release Workflow](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) **Step 7 — Scoped Kanban Sync (UKW Mode)** aligns Task/Story/Epic docs and related board lines for the **current release** in a **scoped** manner (conservative MoSCOW; no whole-board reshuffle).
-- **Board-wide kanban sync:** [Update Kanban Workflow (UKW)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) in **standalone** mode handles full-board housekeeping, prioritisation, and narrative updates per UKW flags.
+- **Per-release kanban sync:** [Release Workflow](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) **Step 7 — Scoped Kanban Sync (UKW Mode)** aligns Task/Story/Epic docs and related board lines for the **current release** in a **scoped** manner (conservative MoSCOW; no whole-board reshuffle).
+- **Board-wide kanban sync:** [Update Kanban Workflow (UKW)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) in **standalone** mode handles full-board housekeeping, prioritisation, and narrative updates per UKW flags.
 
 ### 1.2 FR / BR / UXR intake (**KG-R2**, **KG-R6**)
 

@@ -26,8 +26,8 @@ All commands assume you are in the **project root**.
 ## See also
 
 - [Phase 3 package distribution plan](../analysis/phase3-package-distribution-plan.md)
-- Framework scripts: `packages/frameworks/workflow mgt/scripts/` (build_package.py, upload_all_packages.py, etc.)
-- Release Workflow documentation: `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/`
+- Framework scripts: `packages/frameworks/workflow-mgt/scripts/` (build_package.py, upload_all_packages.py, etc.)
+- Release Workflow documentation: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/`
 
 ## 🚨 Critical Policy
 

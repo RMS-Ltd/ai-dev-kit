@@ -46,8 +46,8 @@ Align **installation scripts, defaults, and documentation examples** with the **
 
 ### Implementation evidence (E06:S09:T03)
 
-- [`install_package_from_release.py`](../../../packages/frameworks/workflow%20mgt/scripts/install_package_from_release.py) — `default='RMS-Ltd/ai-dev-kit'`; `--repo` / `GITHUB_REPOSITORY` override documented in help.
-- [`PACKAGE_INSTALLATION_GUIDE.md`](../../../packages/frameworks/workflow%20mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) — examples use `RMS-Ltd/ai-dev-kit` release URLs.
+- [`install_package_from_release.py`](../../../packages/frameworks/workflow-mgt/scripts/install_package_from_release.py) — `default='RMS-Ltd/ai-dev-kit'`; `--repo` / `GITHUB_REPOSITORY` override documented in help.
+- [`PACKAGE_INSTALLATION_GUIDE.md`](../../../packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) — examples use `RMS-Ltd/ai-dev-kit` release URLs.
 - [`INSTALL_IN_YOUR_PROJECT.md`](../../../INSTALL_IN_YOUR_PROJECT.md) — GitHub Releases example includes explicit `--repo RMS-Ltd/ai-dev-kit`; submodule URL canonical.
 - [`scripts/fr099_install_smoke_test.sh`](../../../scripts/fr099_install_smoke_test.sh) — guards against `ai-dev-kit/ai-dev-kit` default regression on public clone.
 - **Backward compatibility:** Default changed from unsafe placeholder to canonical public repo; forks use `--repo owner/fork` (recorded in [T03](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) delivery notes).
@@ -69,8 +69,8 @@ Align **installation scripts, defaults, and documentation examples** with the **
 **Problem Domain:** Tooling hygiene, documentation accuracy  
 **Affected Areas:**
 
-- [x] `packages/frameworks/workflow mgt/scripts/install_package_from_release.py`  
-- [x] `packages/frameworks/workflow mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`  
+- [x] `packages/frameworks/workflow-mgt/scripts/install_package_from_release.py`  
+- [x] `packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md`  
 - [x] `INSTALL_IN_YOUR_PROJECT.md` (as needed)
 
 **Estimated Complexity:**
@@ -85,4 +85,4 @@ Align **installation scripts, defaults, and documentation examples** with the **
 ## Related
 
 - [FR-080](./FR-080-greenfield-installation-process.md) — Greenfield process (consumer of correct defaults)  
-- [PACKAGE_INSTALLATION_GUIDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/PACKAGE_INSTALLATION_GUIDE.md)  
+- [PACKAGE_INSTALLATION_GUIDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md)  

@@ -43,7 +43,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This story performs the RC readiness **implementation review** for the Numbering & Versioning framework package (`packages/frameworks/numbering & versioning/`).
+This story performs the RC readiness **implementation review** for the Numbering & Versioning framework package (`packages/frameworks/numbering-versioning/`).
 
 ---
 
@@ -160,5 +160,5 @@ This implementation review (E3:S04) assumes that abstract spaces are established
 
 ## References
 
-- Package: `packages/frameworks/numbering & versioning/`
+- Package: `packages/frameworks/numbering-versioning/`
 - Versioning policies and templates within the package.

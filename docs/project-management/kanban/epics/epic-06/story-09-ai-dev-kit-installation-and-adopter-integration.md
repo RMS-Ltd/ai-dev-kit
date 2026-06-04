@@ -64,6 +64,8 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T17 – Framework install directory slugs (BR-087)** - ✅ COMPLETE (**v0.6.9.17+1** — slug archives, extract rename, migration script, tests) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) | [BR-087](../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)
 
+- [x] **E06:S09:T18 – BR-087 framework slug install closure (wave 2)** - ✅ COMPLETE (**v0.6.9.18+1** — maintainer slug dirs, install warnings, republish checklist) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [IPP-E06S09T18](../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md) | [BR-087](../../fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [UXR-016](../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
+
 ---
 
 ## Overview

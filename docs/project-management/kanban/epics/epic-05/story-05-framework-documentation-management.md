@@ -411,8 +411,8 @@ Users installing the Workflow Management framework need clear instructions on ho
 
 **Related Work:**
 - E05:S05:T05 (Comprehensive Installation Guide) - Base document updated
-- `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` - Template file referenced
-- `packages/frameworks/workflow mgt/scripts/install_release_workflow.py` - RW installer that generates `.cursorrules`
+- `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` - Template file referenced
+- `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` - RW installer that generates `.cursorrules`
 
 ---
 
@@ -439,5 +439,5 @@ Users installing the Workflow Management framework need clear instructions on ho
 - `docs/project-management/kanban/epics/epic-05/epic-05.md`
 - `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md` (project documentation scope)
 - `docs/project-management/rituals/policy/kanban-governance-policy.md`
-- `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 

@@ -60,7 +60,7 @@ Establish and implement lowercase **2-digit-padded** path segments (`epic-04/`, 
 **Delivered in this task (pre-RW):**
 
 - Framework **template pack** migrated (`packages/frameworks/kanban/templates/` → `epic-NN/`, `story-NN-…`, `TNN-…`)
-- **Sign-off contract:** `packages/frameworks/workflow mgt/config/github-issue-install-signoff-contract.yaml`
+- **Sign-off contract:** `packages/frameworks/workflow-mgt/config/github-issue-install-signoff-contract.yaml`
 - **Evaluator:** `install_github_issue_signoff.py` — report by default; `--close-github-issues` only with explicit flag + `gh` auth
 - **Installer hooks:** end of `install_kanban_framework.py` and `install_release_workflow.py` print contract-driven READY / NOT READY
 - **Docs:** [github-issue-install-signoff.md](../../../../documentation/user-docs/github-issue-install-signoff.md), [adk-install-expenses-tracker-fresh-repo.md](../../../../guides/adk-install-expenses-tracker-fresh-repo.md)

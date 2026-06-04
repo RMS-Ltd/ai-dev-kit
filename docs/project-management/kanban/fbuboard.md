@@ -65,9 +65,11 @@ This board provides **centralized visibility and prioritization** for all open F
 
 **2026-06-03:** RW **E06:S09:T14** archived **BR-085**, **BR-083**, **BR-084** (**RESOLVED** **v0.6.9.14+2** — ExpensesTracker T03 interactive replay). See [`fbu-completed.md`](fbu-completed.md).
 
-**2026-06-04:** **BR-087** fix attempted **v0.6.9.17+1** (framework install slugs; Expenses Tracker verification pending).
+**2026-06-05:** Intake **E06:S09:T18** for **BR-087** wave 2 (source rename, install/update paths, republish tarballs, re-verify).
 
-- **BR-087** – Framework packages install with legacy directory names (spaces, `&`) - 🟢 OPEN (HIGH, fix attempted **v0.6.9.17+1** — pending verification) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [E06:S09:T17](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) | —No IPP— | Last modified: 2026-06-04 13:53 UTC
+**2026-06-05:** **BR-087** adopter verification **failed** — `packages/frameworks/` still has space/`&` dirs after update (see [UXR-016](fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) addendum).
+
+- **BR-087** – Framework packages install with legacy directory names (spaces, `&`) - 🟢 OPEN (HIGH, fix attempted **v0.6.9.18+1** — adopter verification pending) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [E06:S09:T18](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [UXR-016](fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) | Last modified: 2026-06-05 14:40 UTC
 
 **2026-06-04:** Intake **BR-086** from GitHub **#17** (lowercase fresh kanban RW mode C; #15/#16 follow-up on `main`) → **E06:S09:T16**.
 

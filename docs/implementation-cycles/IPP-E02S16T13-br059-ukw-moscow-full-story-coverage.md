@@ -80,7 +80,7 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 
 **Exemption (E1–E5):** All pass — behavior covered by kanban governance + UKW execution guides.
 
-**Outcome: EXEMPT** — no new ADR. Governed by [kanban-governance-policy.md](../../packages/frameworks/kanban/policies/kanban-governance-policy.md), [update-kanban-workflow-agent-execution.md](../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [FR-023](../../docs/project-management/kanban/fr-br/FR-023-update-kanban-workflow-ukw.md).
+**Outcome: EXEMPT** — no new ADR. Governed by [kanban-governance-policy.md](../../packages/frameworks/kanban/policies/kanban-governance-policy.md), [update-kanban-workflow-agent-execution.md](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [FR-023](../../docs/project-management/kanban/fr-br/FR-023-update-kanban-workflow-ukw.md).
 
 ---
 
@@ -116,9 +116,9 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 | ------ | ---- | ------ | ----- |
 | D1 | `docs/implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md` | CREATE | This IPP |
 | D2 | `.cursorrules` UKW Step 6 | UPDATE | Part B.1 BR-059 |
-| D3 | `packages/frameworks/workflow mgt/cursorrules-ukw-trigger-section.md` | UPDATE | Parity with D2 |
+| D3 | `packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md` | UPDATE | Parity with D2 |
 | D4 | `update-kanban-workflow-agent-execution.md` Step 6 | UPDATE | Part B.1 |
-| D5 | `packages/frameworks/workflow mgt/agents/ukw/AGENTS.md` | UPDATE | Step 6 Part B |
+| D5 | `packages/frameworks/workflow-mgt/agents/ukw/AGENTS.md` | UPDATE | Step 6 Part B |
 | D6 | `validate_story_moscow_coverage.py` + tests | CREATE | RF4 |
 | D7 | T13, BR-059, story-016, T04, T109 | UPDATE | Wiring + evidence |
 | D8 | `docs/guides/workflow-initiation-cheatsheet.md` | UPDATE | One-line validator hint |
@@ -131,8 +131,8 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 | Deliverable | Target | Publication |
 | ----------- | ------ | ----------- |
 | IPP | `docs/implementation-cycles/` | PUBLISHED (autogen sidebar) |
-| UKW KB | `packages/frameworks/workflow mgt/KB/...` | PUBLISHED via repo |
-| Validator | `packages/frameworks/workflow mgt/scripts/kanban/` | Package framework |
+| UKW KB | `packages/frameworks/workflow-mgt/KB/...` | PUBLISHED via repo |
+| Validator | `packages/frameworks/workflow-mgt/scripts/kanban/` | Package framework |
 | T13 | Kanban task doc | `NOT_APPLICABLE` (IPP linked) |
 
 ---

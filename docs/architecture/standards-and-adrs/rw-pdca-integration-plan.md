@@ -509,7 +509,7 @@ steps:
 
 - **PDCA Cycle:** Plan-Do-Check-Act (Deming Cycle)
 - **Document-Commit-Reflect Pattern:** Analysis document
-- **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
+- **RW Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Fix Verification:** E2:S01:T04 (completed)
 - **Changelog Language Analysis:** `docs/architecture/standards-and-adrs/rw-changelog-commit-language-analysis.md`
 
