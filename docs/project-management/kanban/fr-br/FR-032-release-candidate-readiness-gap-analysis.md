@@ -97,7 +97,7 @@ Create a clear, prioritized roadmap showing the path from current state to RC=1,
 
 - [ ] **FR-032.1:** Document current project state (epics, stories, tasks, priorities, completion status)
 - [ ] **FR-032.2:** Define RC=1 criteria and requirements (what constitutes release candidate state)
-- [ ] **FR-032.3:** Perform gap analysis (current state vs RC=1 requirements)
+- [x] **FR-032.3:** Perform gap analysis (current state vs RC=1 requirements) — [E09:S01:T03 report](../epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-comparison-fr032-report.md) (2026-06-04)
 - [ ] **FR-032.4:** Review all active tasks for proper prioritization (identify mis-prioritized M/S work)
 - [ ] **FR-032.5:** Identify missing critical work (tasks that should exist but don't)
 - [ ] **FR-032.6:** Create RC readiness checklist (comprehensive criteria for RC=1)

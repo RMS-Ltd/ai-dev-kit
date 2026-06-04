@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.9.1.3+1] - 04-06-26
+
+E09:S01:T03 — **FR-032.3 gap comparison:** T01 inventory + T02 RC=1 criteria + gap matrix report; T04–T07 follow-on index; IPP wired. SemVer **v0.4.885+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.9.1.3+1.md)
+
+---
+
 ## [0.1.2.14+1] - 04-06-26
 
 E01:S02:T14 — **Adopter external dependency tracking (FR-003):** Guide + copy-paste register/workflow/shell examples; host projects own Best-README / Keep a Changelog / Shields review. SemVer **v0.4.883+1**.

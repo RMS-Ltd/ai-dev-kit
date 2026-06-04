@@ -1,0 +1,10 @@
+{
+  "E01:S02:T14": {
+    "allowed": true,
+    "reason": "RW Step 7: terminal task archived to kanban-completed.md (row removed from kboard)"
+  },
+  "FR-003": {
+    "allowed": true,
+    "reason": "RW Step 7: terminal FR archived to fbu-completed.md (row removed from fbuboard)"
+  }
+}

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-04 (E01:S02:T14 FR-003 v0.1.2.14+1)
-**Version:** v0.1.2.14+1
+**Last Updated:** 2026-06-04 (E09:S01:T03 FR-032.3 v0.9.1.3+1)
+**Version:** v0.9.1.3+1
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -35,35 +35,33 @@ housekeeping_policy: keep
 
 - **E08:S03:T04** – BR-058: CI test workflow missing and pytest failures - 🟢 OPEN (LOW) | [Task](epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | Last modified: 2026-05-30 13:35 UTC
 
-- **E09:S01:T03** – FR-032: Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) | [Task](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | Last modified: 2026-06-04 12:05 UTC
-
 - **E04:S19:T11** – UXR-017: Kanban epic/story path lowercase naming - ⏳ WAITING (MEDIUM, **v0.4.19.11+1** — ET AC5 + GH sign-off; impl. complete in kit) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md) | Last modified: 2026-06-04 21:00 UTC
 
 - **E04:S09:T01** – BR-007: Multiple Bugs Kanban Package Installation - 📋 TODO (LOW, Multiple bugs in kanban package installation) | [Task](epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [BR-007](fr-br/BR-007-multiple-bugs-kanban-package-installation.md) | Last modified: 2026-06-04 12:05 UTC
 
-- **E04:S07:T01** – BR-006: Missing Migration Support Pre-existing Kanban - 📋 TODO (LOW, Missing migration support for pre-existing kanban) | [Task](epics/epic-04/story-07-migration-support-and-installation-modes.md) | [BR-006](fr-br/BR-006-missing-migration-support-pre-existing-kanban.md) | Last modified: 2026-06-04 12:05 UTC
+- **E04:S07:T01** – BR-006: Missing Migration Support Pre-existing Kanban - 📋 TODO (LOW, Missing migration support for pre-existing kanban) | [Task](epics/epic-04/story-07-migration-support-and-installation-modes.md) | [BR-006](fr-br/BR-006-missing-migration-support-pre-existing-kanban.md) | Last modified: 2026-06-04 12:06 UTC
 
-- **E04:S07:T02** – FR-007: Migration Utilities and Installation Modes - 📋 TODO (LOW, Migration utilities and installation modes) | [Task](epics/epic-04/story-07-migration-support-and-installation-modes.md) | [FR-007](fr-br/FR-007-migration-utilities-and-installation-modes.md) | Last modified: 2026-06-04 12:05 UTC
+- **E04:S07:T02** – FR-007: Migration Utilities and Installation Modes - 📋 TODO (LOW, Migration utilities and installation modes) | [Task](epics/epic-04/story-07-migration-support-and-installation-modes.md) | [FR-007](fr-br/FR-007-migration-utilities-and-installation-modes.md) | Last modified: 2026-06-04 12:07 UTC
 
 - **E04:S06:T06** – BR-005: Kanban Framework Epic Structure Gap UAT Finding - 📋 TODO (LOW, Gap found in kanban framework epic structure) | [Task](epics/epic-04/story-06-comprehensive-canonical-est-template-system.md) | [BR-005](fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md) | Last modified: 2025-12-22 00:00 UTC
 
-- **E04:S11:T07** – FR-016: Kanban Granularity Discrete Task Docs - 📋 TODO (LOW, Discrete task documents for kanban granularity) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | Last modified: 2026-06-04 12:05 UTC
+- **E04:S11:T07** – FR-016: Kanban Granularity Discrete Task Docs - 📋 TODO (LOW, Discrete task documents for kanban granularity) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | Last modified: 2026-06-04 12:08 UTC
 
 - **E04:S11:T04** – FR-018: Abstract Space Zero Numbered Est Docs - 📋 TODO (LOW, Zero-numbered documents in abstract space) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md) | [FR-018](fr-br/FR-018-abstract-space-zero-numbered-est-docs.md) | Last modified: 2025-12-18 00:00 UTC
 
-- **E04:S10:T01** – FR-012: Agentic Kanban Task Creation from FR/BR - 📋 TODO (LOW, Agentic task creation from FR/BR documents) | [Task](epics/epic-04/story-10-agentic-kanban-task-creation-from-fr-br.md) | [FR-012](fr-br/FR-012-agentic-kanban-task-creation-from-fr-br.md) | Last modified: 2026-06-04 12:05 UTC
+- **E04:S10:T01** – FR-012: Agentic Kanban Task Creation from FR/BR - 📋 TODO (LOW, Agentic task creation from FR/BR documents) | [Task](epics/epic-04/story-10-agentic-kanban-task-creation-from-fr-br.md) | [FR-012](fr-br/FR-012-agentic-kanban-task-creation-from-fr-br.md) | Last modified: 2026-06-04 12:09 UTC
 
-- **E04:S09:T06** – FR-010: Agentic task mapping / template two-phase migration - 📋 TODO (LOW, duplicate FR-010 ids — disambiguate on intake) | [Task](epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [FR-010 mapping](fr-br/FR-010-implement-actual-agentic-intelligence-task-mapping.md) · [FR-010 templates](fr-br/FR-010-template-task-installation-two-phase-migration.md) | Last modified: 2026-06-04 12:05 UTC
+- **E04:S09:T06** – FR-010: Agentic task mapping / template two-phase migration - 📋 TODO (LOW, duplicate FR-010 ids — disambiguate on intake) | [Task](epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [FR-010 mapping](fr-br/FR-010-implement-actual-agentic-intelligence-task-mapping.md) · [FR-010 templates](fr-br/FR-010-template-task-installation-two-phase-migration.md) | Last modified: 2026-06-04 12:10 UTC
 
-- **E04:S09:T05** – BR-008: Arbitrary 80 Threshold Contradicts Agentic Intelligence - 📋 TODO (LOW, Arbitrary threshold contradicts agentic approach) | [Task](epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [BR-008](fr-br/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md) | Last modified: 2026-06-04 12:05 UTC
+- **E04:S09:T05** – BR-008: Arbitrary 80 Threshold Contradicts Agentic Intelligence - 📋 TODO (LOW, Arbitrary threshold contradicts agentic approach) | [Task](epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [BR-008](fr-br/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md) | Last modified: 2026-06-04 12:11 UTC
 
 - **E04:S08:T05** – FR-009: Intelligent Epic Matching AI-Assisted Canonical Adoption - 📋 TODO (LOW, AI-assisted epic matching for canonical adoption) | [Task](epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption.md) | [FR-009](fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md) | Last modified: 2026-04-09 00:00 UTC
 
-- **E07:S05:T03** – UXR-003: Intelligent Epic Matching Canonical Adoption UAT - 📋 TODO (MEDIUM, User acceptance testing for intelligent epic matching) | [Task](epics/epic-07/story-05-migration-uxr-research.md) | [UXR-003](fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md) | Last modified: 2026-06-04 12:05 UTC
+- **E07:S05:T03** – UXR-003: Intelligent Epic Matching Canonical Adoption UAT - 📋 TODO (MEDIUM, User acceptance testing for intelligent epic matching) | [Task](epics/epic-07/story-05-migration-uxr-research.md) | [UXR-003](fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md) | Last modified: 2026-06-04 12:12 UTC
 
 - **E04:S15:T05** – FR-029: Procedural Task Template Generation Hybrid Strategy - 📋 TODO (LOW, Hybrid strategy for task template generation) | [Task](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md) | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | Last modified: 2025-12-22 00:00 UTC
 
-- **E04:S14:T04** – FR-037: Kanban Policy Task Prioritisation Queue Stack - 📋 TODO (LOW, Queue stack for task prioritization) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md) | [FR-037](fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md) | Last modified: 2026-06-04 12:05 UTC
+- **E04:S14:T04** – FR-037: Kanban Policy Task Prioritisation Queue Stack - 📋 TODO (LOW, Queue stack for task prioritization) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md) | [FR-037](fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md) | Last modified: 2026-06-04 12:13 UTC
 
 - **E02:S01:T06** – BR-001: Validate Version Bump Epic Story Detection Bug - 📋 TODO (LOW, Bug in epic/story detection for version bump validation) | [Task](epics/epic-02/story-01-rw-agent-execution-and-docs.md) | [BR-001](fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md) | Last modified: 2026-05-26 00:00 UTC
 
@@ -97,11 +95,11 @@ housekeeping_policy: keep
 
 - **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:49:00 UTC
 
-- **E01:S02:T14** – FR-003: Dependency Tracking in Adopting Projects - 📋 TODO (LOW, Dependency tracking for project adoption) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | Last modified: 2026-06-04 12:05 UTC
+- **E01:S02:T14** – FR-003: Dependency Tracking in Adopting Projects - 📋 TODO (LOW, Dependency tracking for project adoption) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | Last modified: 2026-06-04 21:01 UTC
 
-- **E01:S02:T13** – FR-002: Update Been There README - 📋 TODO (LOW, Update README for been-there functionality) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](fr-br/FR-002-update-been-there-readme.md) | Last modified: 2026-06-04 12:05 UTC
+- **E01:S02:T13** – FR-002: Update Been There README - 📋 TODO (LOW, Update README for been-there functionality) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](fr-br/FR-002-update-been-there-readme.md) | Last modified: 2026-06-04 12:14 UTC
 
-- **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | Last modified: 2026-06-04 12:05 UTC
+- **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | Last modified: 2026-06-04 12:15 UTC
 
 - **E21:S00:T01** – FR-006: Localization Language Selection UK/US English - 📋 TODO (LOW, Language selection for UK/US English) | [Task](epics/epic-21/story-00-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | Last modified: 2025-12-09 00:00 UTC
 

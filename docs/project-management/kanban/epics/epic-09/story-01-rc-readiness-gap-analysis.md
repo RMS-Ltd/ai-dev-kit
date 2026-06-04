@@ -22,9 +22,9 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [ ] **E09:S01:T01 – Current State Inventory** - TODO
-- [ ] **E09:S01:T02 – RC=1 Criteria Definition** - TODO
-- [ ] **E09:S01:T03 – Gap Analysis (FR-032)** - TODO — [Task doc](story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [FR-032](../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+- [x] **E09:S01:T01 – Current State Inventory** - ✅ COMPLETE (2026-06-04 — [T01 inventory](story-01-rc-readiness-gap-analysis/T01-current-state-inventory.md))
+- [x] **E09:S01:T02 – RC=1 Criteria Definition** - ✅ COMPLETE (2026-06-04 — [T02 criteria](story-01-rc-readiness-gap-analysis/T02-rc1-criteria-definition.md))
+- [x] **E09:S01:T03 – Gap Comparison (FR-032.3)** - ✅ COMPLETE (v0.9.1.3+1) — [Task](story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [Report](story-01-rc-readiness-gap-analysis/T03-gap-comparison-fr032-report.md) | [IPP](../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md) | [FR-032](../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
 - [ ] **E09:S01:T04 – Task Prioritization Review** - TODO
 - [ ] **E09:S01:T05 – Missing Work Identification** - TODO
 - [ ] **E09:S01:T06 – RC Readiness Checklist Creation** - TODO

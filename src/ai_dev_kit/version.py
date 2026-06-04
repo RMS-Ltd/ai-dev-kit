@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 1      # Epic 1 — AI Dev Kit Core
-VERSION_STORY = 2     # Story 2 — Package & Repo Architecture
-VERSION_TASK = 14     # Task 14 — Adopter external dependency tracking (FR-003)
-VERSION_BUILD = 1     # Build 1: adopter guide + copy-paste upstream tracking templates
+VERSION_EPIC = 9      # Epic 9 — Release Candidate Readiness
+VERSION_STORY = 1     # Story 1 — RC Readiness Gap Analysis
+VERSION_TASK = 3      # Task 3 — FR-032.3 gap comparison (sequential)
+VERSION_BUILD = 1     # Build 1: T01/T02 prerequisites + gap report + IPP
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.1.2.14+1 (E01:S02:T14)
+# Current: 0.9.1.3+1 (E09:S01:T03)

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-04 (RW **E01:S02:T14** — FR-003 adopter upstream tracking)
-**Version:** v0.1.2.14+1
+**Last Updated:** 2026-06-04 (RW **E09:S01:T03** — FR-032.3 RC gap comparison)
+**Version:** v0.9.1.3+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 9: Release Candidate Readiness (Story 1 — RC Readiness Gap Analysis)**
+- **[E09:S01:T03](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md)** — **FR-032.3**: RC gap comparison — T01 inventory, T02 RC=1 criteria, gap matrix report.
+  **Completed:** `2026-06-04T22:15:00Z` | **Version:** `v0.9.1.3+1` | **Agent:** `RW` | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | [Report](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-comparison-fr032-report.md) | [IPP](../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
 
 #### **Epic 1: AI Dev Kit Core (Story 2 — Package & Repo Architecture)**
 - **[E01:S02:T14](epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)** — **FR-003**: Adopter external resource dependency tracking (guide + copy-paste templates).

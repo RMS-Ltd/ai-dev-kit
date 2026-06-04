@@ -59,6 +59,8 @@ Execute **FR-032**: gap analysis from **RC=0** (development) toward a defined **
 
 ---
 
+**Historical note:** Primary implementing task for FR-032 is **[E09:S01:T03](../../epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md)** (Epic 9). This E05:S01:T32 row remains abstract-space registry only.
+
 ## Approach
 
 1. Capture current snapshot (epics, critical path, RC semantics).  

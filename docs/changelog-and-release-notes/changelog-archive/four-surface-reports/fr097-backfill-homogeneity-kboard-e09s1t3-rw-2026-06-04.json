@@ -1,0 +1,129 @@
+{
+  "boards": [
+    {
+      "board": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "rows_considered": 12,
+      "rows_changed": 1,
+      "rows_ambiguous": 0,
+      "clusters_before": {
+        "2026-06-04 12:05 UTC": [
+          "E04:S09:T01",
+          "E04:S07:T01",
+          "E04:S07:T02",
+          "E04:S11:T07",
+          "E04:S10:T01",
+          "E04:S09:T06",
+          "E04:S09:T05",
+          "E07:S05:T03",
+          "E04:S14:T04",
+          "E01:S02:T14",
+          "E01:S02:T13",
+          "E07:S01:T10"
+        ]
+      },
+      "clusters_after": {
+        "2026-06-04 12:05 UTC": [
+          "E04:S09:T01",
+          "E04:S07:T01",
+          "E04:S07:T02",
+          "E04:S11:T07",
+          "E04:S10:T01",
+          "E04:S09:T06",
+          "E04:S09:T05",
+          "E07:S05:T03",
+          "E04:S14:T04",
+          "E01:S02:T13",
+          "E07:S01:T10"
+        ]
+      },
+      "results": [
+        {
+          "row_id": "E04:S09:T01",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md"
+        },
+        {
+          "row_id": "E04:S07:T01",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md"
+        },
+        {
+          "row_id": "E04:S07:T02",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md"
+        },
+        {
+          "row_id": "E04:S11:T07",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md"
+        },
+        {
+          "row_id": "E04:S10:T01",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-012-agentic-kanban-task-creation-from-fr-br.md"
+        },
+        {
+          "row_id": "E04:S09:T06",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-010-implement-actual-agentic-intelligence-task-mapping.md"
+        },
+        {
+          "row_id": "E04:S09:T05",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md"
+        },
+        {
+          "row_id": "E07:S05:T03",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md"
+        },
+        {
+          "row_id": "E04:S14:T04",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md"
+        },
+        {
+          "row_id": "E01:S02:T14",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 21:01 UTC",
+          "source": "git",
+          "detail": "docs/project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md"
+        },
+        {
+          "row_id": "E01:S02:T13",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-002-update-been-there-readme.md"
+        },
+        {
+          "row_id": "E07:S01:T10",
+          "old_stamp": "2026-06-04 12:05 UTC",
+          "new_stamp": "2026-06-04 12:05 UTC",
+          "source": "unchanged",
+          "detail": "docs/project-management/kanban/fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md"
+        }
+      ]
+    }
+  ],
+  "dry_run": false
+}
