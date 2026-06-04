@@ -73,11 +73,11 @@ Documentation sync: Corrected Epic 6 checklist and story documents to reflect ac
 
 ### Files Modified
 
-1. `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+1. `docs/project-management/kanban/epics/epic-06/epic-06.md`
    - Story Checklist updated (E6:S01, S02, S03 status corrected)
    - "Stories (Initial)" section updated to match
 
-2. `docs/project-management/kanban/epics/Epic-6/Story-001-framework-version-management.md`
+2. `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md`
    - Status changed from TODO to IN PROGRESS
    - T04 marked as COMPLETE with version marker
    - Task checklist updated
@@ -134,8 +134,8 @@ Documentation sync: Corrected Epic 6 checklist and story documents to reflect ac
 
 ## References
 
-- Epic 6: `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- Story 1: `docs/project-management/kanban/epics/Epic-6/Story-001-framework-version-management.md`
+- Epic 6: `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- Story 1: `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md`
 - Framework Dependency Architecture: `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
 - Versioning Policy: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 

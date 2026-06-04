@@ -246,7 +246,7 @@ Adopters **vendor** this folder into their repository (copy or submodule). That 
 - Full three-way integration
 - Automated Kanban updates with version markers
 
-See `docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T004-consumption-patterns.md` for detailed step-by-step guides for each scenario.
+See `docs/project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T04-consumption-patterns.md` for detailed step-by-step guides for each scenario.
 
 ---
 
@@ -702,7 +702,7 @@ If using different branch naming (e.g., `feature/epic-{n}` instead of `epic/{n}`
 1. Update `validate_branch_context.py`:
    ```python
    def parse_branch_epic(branch: str) -> Optional[int]:
-       # Match your pattern (e.g., feature/epic-4 -> 4)
+       # Match your pattern (e.g., feature/epic-04 -> 4)
        # Current default pattern: epic/{n} or epic/{n}-{description}
        match = re.match(r"^epic/(\d+)", branch)  # Default pattern
        # Or customize: match = re.match(r"^feature/epic-(\d+)", branch)

@@ -14,7 +14,7 @@ Completed IPW housing for E6:S06:T62 by adding a dedicated planning artifact and
 - New planning artifact:
   - `docs/implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md`
 - Task cross-link:
-  - `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md`
+  - `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md`
 - FR cross-link:
   - `docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md`
 

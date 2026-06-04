@@ -25,11 +25,11 @@ Implement `/ukw` slash command for Claude Code, providing a dedicated and reliab
 
 - **`docs/project-management/kanban/fr-br/FR-093-ukw-slash-command-claude-code.md`** — Feature request document for this change.
 
-- **`docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md`** — Task document for E2:S16:T08.
+- **`docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md`** — Task document for E2:S16:T08.
 
 ### Modified
 
-- **`docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md`** — Added T08 to task checklist (COMPLETE).
+- **`docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`** — Added T08 to task checklist (COMPLETE).
 
 ---
 

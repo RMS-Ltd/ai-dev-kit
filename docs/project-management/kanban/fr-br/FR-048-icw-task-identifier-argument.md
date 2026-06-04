@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** PENDING  
 
-**Implementing Task:** [E05:S01:T48](../epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md)  
+**Implementing Task:** [E05:S01:T48](../epics/epic-05/story-01-fr-repo/T48-icw-task-identifier-argument.md)  
 **Historical registry:** E02:S01:T14 RW trigger variant
 **GitHub Issue:** TBD
 
@@ -173,9 +173,9 @@ Currently, the ICW can be called without explicit task binding, which can lead t
 
 **Kanban Links:**
 
-- Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
-- Story: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md)
-- Task: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md`](../epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md)
+- Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md)
+- Task: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T48-icw-task-identifier-argument.md`](../epics/epic-05/story-01-fr-repo/T48-icw-task-identifier-argument.md)
 
 ---
 

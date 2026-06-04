@@ -66,7 +66,7 @@ Created comprehensive documentation review cadences document establishing system
 ### 📝 Documentation Updates
 
 **Story Document:**
-- Updated `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md`
+- Updated `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md`
 - Marked E5:S01:T03 as COMPLETE
 - Added comprehensive deliverables list
 
@@ -79,7 +79,7 @@ Created comprehensive documentation review cadences document establishing system
 ## Files Modified
 
 - `src/fynd_deals/version.py` (version bumped to v0.5.1.3+3, build updated)
-- `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md` (task status and version updated)
+- `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md` (task status and version updated)
 
 ---
 

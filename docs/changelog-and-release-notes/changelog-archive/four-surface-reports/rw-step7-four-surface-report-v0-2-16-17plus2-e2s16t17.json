@@ -13,7 +13,7 @@
     "total_changes": 8
   },
   "surfaces": {
-    "task_doc": {"touched": true, "paths": ["docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md"]},
+    "task_doc": {"touched": true, "paths": ["docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md"]},
     "fbu_doc": {"touched": true, "paths": ["docs/project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md"]},
     "kboard": {"touched": true, "paths": ["docs/project-management/kanban/kboard.md"]},
     "fbuboard": {"touched": true, "paths": ["docs/project-management/kanban/fbuboard.md"]}

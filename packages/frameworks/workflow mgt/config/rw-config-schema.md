@@ -45,10 +45,10 @@ These keys are only required if using specific features:
 |-----|------|---------------|-------------|---------|
 | `use_kanban` | boolean | Mode C (Full Stack) | Enable Kanban integration | `true` |
 | `kanban_root` | string | `use_kanban: true` | Root path for Kanban docs | `docs/project-management/kanban` |
-| `epic_doc_pattern` | string | `use_kanban: true` | Pattern for epic docs (relative to `kanban_root`) | `epics/Epic-{epic}/Epic-{epic}.md` |
-| `story_doc_pattern` | string | `use_kanban: true` | Pattern for story docs (relative to `kanban_root`) | `epics/Epic-{epic}/Story-{story}-*.md` |
+| `epic_doc_pattern` | string | `use_kanban: true` | Pattern for epic docs (relative to `kanban_root`) | `epics/epic-{epic:02d}/epic-{epic:02d}.md` |
+| `story_doc_pattern` | string | `use_kanban: true` | Pattern for story docs (relative to `kanban_root`) | `epics/epic-{epic:02d}/story-{story:02d}-*.md` |
 | `kanban_board` | string | `use_kanban: true` | Main Kanban board file (relative to `kanban_root`) | `_index.md` |
-| `task_doc_pattern` | string | `use_kanban: true` (recommended) | Pattern for task docs (relative to `kanban_root`; include `{epic}`, `{story}`, `{task}`) | `epics/Epic-{epic}/Story-{story}/T{task}-*.md` |
+| `task_doc_pattern` | string | `use_kanban: true` (recommended) | Pattern for task docs (relative to `kanban_root`; include `{epic}`, `{story}`, `{task}`) | `epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md` |
 | `fr_br_root` | string | Optional | FR/BR directory (relative to **project root**, not `kanban_root`) | `docs/project-management/kanban/fr-br` |
 | `versioning_schema` | string | Optional | Version schema (default: `RC.EPIC.STORY.TASK+BUILD`) | `RC.EPIC.STORY.TASK+BUILD` |
 | `versioning_mode` | string | Optional (recommended) | Versioning model: `dual`, `semver_only`, `kanban_only` | `dual` |
@@ -141,8 +141,9 @@ scripts_path: tools/workflow_mgt/scripts
 readme_file: README.md
 use_kanban: true
 kanban_root: docs/project-management/kanban
-epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
-story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
+epic_doc_pattern: epics/epic-{epic:02d}/epic-{epic:02d}.md
+story_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*.md
+task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
 kanban_board: _index.md
 versioning_schema: RC.EPIC.STORY.TASK+BUILD
 versioning_mode: dual
@@ -161,8 +162,8 @@ The following variables can be used in path patterns:
 - `{version}` - Full version string (e.g., `0.2.4.1+3`)
 
 **Example patterns:**
-- `epics/Epic-{epic}/Epic-{epic}.md` → `epics/Epic-2/Epic-2.md`
-- `epics/Epic-{epic}/Story-{story}-*.md` → `epics/Epic-2/Story-001-*.md`
+- `epics/Epic-{epic}/Epic-{epic}.md` → `epics/epic-02/epic-02.md`
+- `epics/Epic-{epic}/Story-{story}-*.md` → `epics/epic-02/story-01-*.md`
 - `CHANGELOG_v{version}.md` → `CHANGELOG_v0.2.4.1+3.md`
 
 ---

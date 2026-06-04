@@ -8,9 +8,9 @@ housekeeping_policy: keep
 
 # E02:S16:T13 — Planning: BR-059 UKW MoSCOW full story task coverage (IPW)
 
-**Host Task:** [`T13-br059-ukw-moscow-full-story-task-coverage.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) **(E02:S16:T13)**  
+**Host Task:** [`T13-br059-ukw-moscow-full-story-task-coverage.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) **(E02:S16:T13)**  
 **Planning for:** [BR-059 — UKW MoSCOW incomplete story task coverage](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)  
-**Historical anchor:** [E06:S07:T109](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) (SUPERSEDED, `v0.6.7.109+1`)  
+**Historical anchor:** [E06:S07:T109](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) (SUPERSEDED, `v0.6.7.109+1`)  
 **Status:** Published (implementation complete **v0.2.16.13+1**; SitRep IPW **2026-06-03**)
 
 ---
@@ -39,7 +39,7 @@ housekeeping_policy: keep
 ### 1.3 Invariants and boundaries
 
 - **Invariants:** Story task checklist is SoT for which tasks exist; `kboard.md` MoSCOW must reflect all open work or explicit Won't deferral.
-- **In scope:** UKW agent docs, optional `validate_story_moscow_coverage.py`, T13/BR-059/Story-016 wiring, dry-run evidence.
+- **In scope:** UKW agent docs, optional `validate_story_moscow_coverage.py`, T13/BR-059/story-016 wiring, dry-run evidence.
 - **Out of scope:** `fbuboard.md` FBU rows; `--rp` reprioritization; reactivating **E06:S07:T109** for RW; blocking RW on this validator.
 
 ---
@@ -120,7 +120,7 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 | D4 | `update-kanban-workflow-agent-execution.md` Step 6 | UPDATE | Part B.1 |
 | D5 | `packages/frameworks/workflow mgt/agents/ukw/AGENTS.md` | UPDATE | Step 6 Part B |
 | D6 | `validate_story_moscow_coverage.py` + tests | CREATE | RF4 |
-| D7 | T13, BR-059, Story-016, T04, T109 | UPDATE | Wiring + evidence |
+| D7 | T13, BR-059, story-016, T04, T109 | UPDATE | Wiring + evidence |
 | D8 | `docs/guides/workflow-initiation-cheatsheet.md` | UPDATE | One-line validator hint |
 | D9 | New ADR | NONE | EXEMPT §2.4 |
 
@@ -140,8 +140,8 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 ## 7. Success / verification criteria
 
 - [x] **AC1:** UKW guides contain explicit all-open-tasks-or-Won't rule — [`.cursorrules`](../../.cursorrules) UKW Step 6 Part B.1; [BR-059 Resolution](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) links guides.
-- [x] **AC2:** Dry-run log for **E10:S01** in [T13 Verification](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md#verification-2026-06-02) (6 open / 0 board); **E05:S09** narrative in BR-059.
-- [x] **AC3:** [E02:S16:T04](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) references BR-059 / Step 6 Part B.1.
+- [x] **AC2:** Dry-run log for **E10:S01** in [T13 Verification](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md#verification-2026-06-02) (6 open / 0 board); **E05:S09** narrative in BR-059.
+- [x] **AC3:** [E02:S16:T04](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) references BR-059 / Step 6 Part B.1.
 - [x] **`pytest`:** `test_validate_story_moscow_coverage.py` — 5 passed (2026-06-02, T13 verification).
 - [x] **`validate_ipw_publication_wiring.py --requested E02:S16:T13`** → PASS (`Publication Status: NOT_APPLICABLE` on T13).
 
@@ -161,7 +161,7 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 | ------ | ----- | --------- | --------- |
 | **A — Keep OPEN** | Document known gaps; rely on UKW Part B.1 on next comprehensive UKW | None | None |
 | **B — Board remediation** | UKW `-u` or manual: add missing **E10:S01** (and similar) rows per story checklist | New task under S16 or owning epic (not T13) | New `E:S:T` |
-| **C — Harden validator** | Pre-commit or UKW blocking on `--strict` failures | [E02:S16:T03](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (perpetual) | `RW E02:S16:T03 --art` |
+| **C — Harden validator** | Pre-commit or UKW blocking on `--strict` failures | [E02:S16:T03](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (perpetual) | `RW E02:S16:T03 --art` |
 | **D — Resolve BR** | Mark BR-059 **RESOLVED** after **B** + user verification | Same as B | Same as B |
 
 **Default recommendation:** **Option A** unless explicit board repair (**B**) or enforcement (**C**) is requested.
@@ -173,6 +173,6 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 ## References
 
 - [BR-059](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
-- [T13 host task](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
+- [T13 host task](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
 - [E04:S19:T03 investigation report](./E04S19T03-e6s07-default-housing-investigation-report.md)
 - [BR-042](../project-management/kanban/fr-br/BR-042-ukw-agent-board-cleanup-failure.md) (opposite failure mode)

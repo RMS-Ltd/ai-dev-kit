@@ -67,13 +67,13 @@
 ## Files Changed
 
 **New Files:**
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T01-Define-Project-Structure-and-Directory-Layout.md`
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T02-Set-Up-Version-Control-and-Repository-Configuration.md`
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T03-Configure-Development-Environment-and-Tooling.md`
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T04-Create-Initial-Project-Documentation.md`
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T05-Set-Up-Build-System-and-Dependency-Management.md`
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T06-Configure-Code-Quality-Tools.md`
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T07-Establish-Coding-Standards-and-Conventions.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T01-Define-Project-Structure-and-Directory-Layout.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T02-Set-Up-Version-Control-and-Repository-Configuration.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T03-Configure-Development-Environment-and-Tooling.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T04-Create-Initial-Project-Documentation.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T05-Set-Up-Build-System-and-Dependency-Management.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T06-Configure-Code-Quality-Tools.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T07-Establish-Coding-Standards-and-Conventions.md`
 
 **Modified Files:**
 - `src/fynd_deals/version.py` (version bumped to v0.4.6.4+1)

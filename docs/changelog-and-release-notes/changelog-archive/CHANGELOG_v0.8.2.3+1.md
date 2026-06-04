@@ -96,7 +96,7 @@ Established comprehensive validation patterns library extracted from existing va
 ### Modified Files
 
 - `packages/frameworks/tooling & automation/validators/README.md` - Added validation patterns section
-- `docs/project-management/kanban/epics/Epic-8/Story-002-additional-validators.md` - Updated to mark T03 as COMPLETE and Story as COMPLETE
+- `docs/project-management/kanban/epics/epic-08/story-02-additional-validators.md` - Updated to mark T03 as COMPLETE and Story as COMPLETE
 - `src/fynd_deals/version.py` - Updated to v0.8.2.3+1
 
 ---

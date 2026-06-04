@@ -19,7 +19,7 @@ Created repository task E5:S01:T37 for FR-037 (Kanban Policy – Task Prioritisa
 ### Kanban / FR Repo
 
 - **E5:S01:T37** – Created task document and repository anchor for FR-037
-  - Task document: `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md`
+  - Task document: `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md`
   - FR-037 assigned to E5:S01:T37 in FR document
   - Story 001 (FR Repo) checklist updated with T37 entry
 - **FR-037** – Kanban Policy Task Prioritisation and Queue/Stack
@@ -30,5 +30,5 @@ Created repository task E5:S01:T37 for FR-037 (Kanban Policy – Task Prioritisa
 ## References
 
 - **FR-037:** [FR-037-kanban-policy-task-prioritisation-queue-stack.md](../../project-management/kanban/fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
-- **Task:** [T37-kanban-policy-task-prioritisation-queue-stack.md](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md)
-- **Epic 5 Story 01:** [Story-001-fr-repo.md](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo.md)
+- **Task:** [T37-kanban-policy-task-prioritisation-queue-stack.md](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md)
+- **Epic 5 Story 01:** [story-01-fr-repo.md](../../project-management/kanban/epics/epic-05/story-01-fr-repo.md)

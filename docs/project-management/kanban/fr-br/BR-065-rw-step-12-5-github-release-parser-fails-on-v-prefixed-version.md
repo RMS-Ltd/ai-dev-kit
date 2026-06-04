@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-13 (implementation complete in working tree: boundary normalization + deterministic diagnostics + regression tests)  
 **Version:** N/A  
 **Code:** BR-065  
-**Implementing Task:** [E06:S07:T113](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Implementing Task:** [E06:S07:T113](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 
@@ -86,6 +86,6 @@ Step 12.5 should accept canonical `v`-prefixed release inputs (for both SemVer a
 ## Related
 
 - [FR-041](FR-041-perpetual-task-for-release-workflow-maintenance.md)
-- [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [IPW-E06S07T113](../../../implementation-cycles/IPW-E06S07T113-rw-step-12-5-github-release-parser-hardening.md)
 - `packages/frameworks/workflow mgt/scripts/create_github_release.py`

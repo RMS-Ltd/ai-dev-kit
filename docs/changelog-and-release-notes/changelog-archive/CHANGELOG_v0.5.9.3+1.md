@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-03-30 23:59:59 UTC  
 **Epic:** 5 | **Story:** 9 | **Task:** 3  
-**Task doc:** [T03-docusaurus-build-triage-fr-067.md](../../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T03-docusaurus-build-triage-fr-067.md)  
+**Task doc:** [T03-docusaurus-build-triage-fr-067.md](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T03-docusaurus-build-triage-fr-067.md)  
 **FR:** [FR-067](../../project-management/kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
 
 ## Summary
@@ -15,7 +15,7 @@ E5:S09:T03 — **FR-067:** Docusaurus **`npm run build`** exit 0 for FR-066 publ
 
 - `portal/docusaurus.config.js` — `onBrokenLinks` / `onBrokenMarkdownLinks` set to `warn` (documented); comment cites FR-067.
 - `portal/README.md` — **Broken links and anchors (FR-067)** subsection; link to triage note.
-- Wide `docs/**/*.md` edits for MDX (e.g. `&lt;` for `<N` patterns, `{placeholder}` escapes, PIR template entities, Story-011 list formatting, RW-AGENT placeholders, task-template-generator prose).
+- Wide `docs/**/*.md` edits for MDX (e.g. `&lt;` for `<N` patterns, `{placeholder}` escapes, PIR template entities, story-011 list formatting, RW-AGENT placeholders, task-template-generator prose).
 - `docs/maintenance/docusaurus-corpus-triage-fr-067.md` — triage summary.
 - `docs/knowledge/guides/building-persistent-knowledge.md` — YouTube link + figure notes (no missing images).
 

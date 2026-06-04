@@ -27,7 +27,7 @@ This release completes **Task 5: Document consumption pattern for other projects
   - **Example: New project setup:** Practical example for "myapp" project
   - **Key principles:** Summary of critical consumption principles
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-kanban-implementation.md`):
+- ✅ Updated **Story 001** (`story-01-dev-kit-kanban-implementation.md`):
   - Marked Task 5 as complete in task checklist
   - Updated task details with completion status and summary
 
@@ -105,7 +105,7 @@ The consumption pattern documentation completes the Kanban framework's readiness
 ## 📄 Files Changed
 
 - `packages/frameworks/kanban/README.md` (added comprehensive consumption pattern section)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.1.1+6)
 
 ---

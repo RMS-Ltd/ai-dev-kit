@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** User (Startborn Legacy install session)  
 **Priority:** HIGH  
 **Status:** COMPLETE  
-**Repository Task:** [E07:S06:T18](../epics/Epic-7/Story-006-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md) — **COMPLETE** (**v0.7.6.18+3**)
+**Repository Task:** [E07:S06:T18](../epics/epic-07/story-06-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md) — **COMPLETE** (**v0.7.6.18+3**)
 
 **Planning package (ICW / retrospective publication):** [Specification](../../../implementation-cycles/ICW-E07S06T18-specification.md) · [Test design](../../../implementation-cycles/ICW-E07S06T18-test-design.md) · [Implementation plan](../../../implementation-cycles/ICW-E07S06T18-implementation-plan.md)
 
@@ -46,9 +46,9 @@ A user installing AI Dev Kit in interactive mode reported confusion at the Kanba
 Follow-up execution confirmed that prompt ambiguity leads to concrete misconfiguration and downstream validation failures:
 
 1. **Literal epic path accepted as pattern without guardrails**
-   - User entered `Epic-01/Epic-01.md` at `epic_doc_pattern`.
+   - User entered `epic-01/epic-01.md` at `epic_doc_pattern`.
    - Installer accepted it and wrote:
-     - `epic_doc_pattern: Epic-01/Epic-01.md`
+     - `epic_doc_pattern: epic-01/epic-01.md`
    - This value is over-specific and non-templated, so it cannot generalize across epics.
 
 2. **Story pattern worked only after external coaching**

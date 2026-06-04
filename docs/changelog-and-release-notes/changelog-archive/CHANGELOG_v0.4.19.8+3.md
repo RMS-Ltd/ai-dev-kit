@@ -20,4 +20,4 @@ Docs-only follow-up (**E04:S19:T08**, `RW -d --art`): persist regenerated **Step
 
 ---
 
-**Task:** [E04:S19:T08](docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
+**Task:** [E04:S19:T08](docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)

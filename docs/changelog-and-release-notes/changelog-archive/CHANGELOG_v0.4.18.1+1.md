@@ -56,8 +56,8 @@ Split the Kanban board into two documents: structured information only (`kanban-
 ## Related Work
 
 - **FR-036:** [`docs/project-management/kanban/fr-br/FR-036-kanban-board-info-only-split.md`](../../project-management/kanban/fr-br/FR-036-kanban-board-info-only-split.md)
-- **E4:S18:** [`docs/project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split.md`](../../project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split.md)
-- **E4:S18:T01:** [`docs/project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md`](../../project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md)
+- **E4:S18:** [`docs/project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split.md`](../../project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split.md)
+- **E4:S18:T01:** [`docs/project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split.md`](../../project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split.md)
 
 ---
 

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-03 (E02:S15:T01 Phase 3 — `--audit-inventory` **0** unwired; see [IPP-E02S15T01-br066-corpus-tail-phase3.md](../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md))  
 **Version:** v0.2.15.1+3  
 **Code:** BR-066  
-**Implementing Task:** [E02:S15:T01](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
+**Implementing Task:** [E02:S15:T01](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
 
 ---
 
@@ -103,7 +103,7 @@ When IPW indicates documentation filing responsibilities (especially spec artifa
 
 - [FR-042](FR-042-implementation-planning-workflow-ipw.md)
 - [FR-077](FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- [E02:S01:T17](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
+- [E02:S01:T17](../epics/epic-02/story-01-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
 - `docs/implementation-cycles/ICW-E02S01T17-*`
 
 

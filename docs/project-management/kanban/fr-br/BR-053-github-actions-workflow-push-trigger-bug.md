@@ -13,7 +13,7 @@ labels: ["bug", "github-actions", "critical", "workflow-trigger", "push-events"]
 
 # Bug Report BR-053: GitHub Actions Workflow Push Trigger Bug
 
-**Implementing Task:** [E02:S11:T12](../epics/Epic-2/Story-011-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
+**Implementing Task:** [E02:S11:T12](../epics/epic-02/story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
 
 ## **Bug Summary**
 Critical GitHub Actions bug where workflows are being triggered by push events despite having `on: issues:` only configuration. This affects multiple workflow files with different names and persists across complete workflow recreations.

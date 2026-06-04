@@ -26,7 +26,7 @@ Inventoried all components in the Numbering & Versioning framework package and m
 
 ### Added
 
-- **Component inventory document** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T02-component-inventory.md`)
+- **Component inventory document** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T02-component-inventory.md`)
   - Complete file listing (14 markdown files)
   - Expected vs actual component mapping
   - Component verification results (all 14 components verified complete)
@@ -36,11 +36,11 @@ Inventoried all components in the Numbering & Versioning framework package and m
 
 ### Changed
 
-- **Story document** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review.md`)
+- **Story document** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review.md`)
   - Marked E3:S04:T02 as COMPLETE (v0.3.4.2+1)
   - Updated last updated timestamp and version
 
-- **Epic document** (`docs/project-management/kanban/epics/Epic-3/Epic-3.md`)
+- **Epic document** (`docs/project-management/kanban/epics/epic-03/epic-03.md`)
   - Updated Story 4 progress to reflect T02 completion
   - Updated last updated timestamp and version
 

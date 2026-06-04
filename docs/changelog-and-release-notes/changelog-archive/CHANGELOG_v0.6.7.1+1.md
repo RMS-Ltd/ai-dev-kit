@@ -154,7 +154,7 @@ housekeeping_policy: archive
 - `setup.py` - Package configuration
 - `requirements.txt` - Dependencies
 - `cli/README.md` - CLI tool documentation
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - Updated T01 status
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - Updated T01 status
 
 ---
 

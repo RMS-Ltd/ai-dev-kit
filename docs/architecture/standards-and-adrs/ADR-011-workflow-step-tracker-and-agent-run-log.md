@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E02:S01:T23](../../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)  
+**Implementing task:** [E02:S01:T23](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)  
 **Planning package:** [IPP-E2S01T23](../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
 
 ---

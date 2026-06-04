@@ -4,7 +4,7 @@
   "release_scope": {"epic": 2, "story": 8, "task": 8, "task_id": "E2:S08:T8", "version_string": "v0.2.8.8+4"},
   "summary": {"touched_surfaces": ["task_doc"], "stamps_appended_with_evidence": 0},
   "surfaces": {
-    "task_doc": {"touched": true, "paths": ["docs/project-management/kanban/epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md"]},
+    "task_doc": {"touched": true, "paths": ["docs/project-management/kanban/epics/epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md"]},
     "fbu_doc": {"touched": false, "notes": ["FR-059 already COMPLETE; no FBU doc edit."], "paths": []},
     "kboard": {"touched": false, "notes": ["FR-059 not on active kboard; out of scope."], "paths": []},
     "fbuboard": {"touched": false, "notes": ["FR-059 row already COMPLETE; no board edit (RW -d scoped)."], "paths": []}

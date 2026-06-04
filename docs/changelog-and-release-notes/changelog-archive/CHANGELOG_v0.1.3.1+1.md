@@ -98,7 +98,7 @@ This release completes **Task 1: Analyze current docs/core structure and define 
 This analysis provides the foundation for establishing a solid KB structure for the dev-kit. The target structure supports modularity, clarity, governance, and future growth.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-003-core-kb-structure-for-dev-kit/T001-kb-structure-analysis.md` (comprehensive analysis report)
+- `docs/project-management/kanban/epics/epic-01/stories/story-03-core-kb-structure-for-dev-kit/T01-kb-structure-analysis.md` (comprehensive analysis report)
 
 ---
 
@@ -113,9 +113,9 @@ This analysis provides the foundation for establishing a solid KB structure for 
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-003-core-kb-structure-for-dev-kit/T001-kb-structure-analysis.md` (created)
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-003-core-kb-structure-for-dev-kit.md` (created, task status updated)
-- `docs/project-management/kanban/epics/Epic-1.md` (story added, status updated)
+- `docs/project-management/kanban/epics/epic-01/stories/story-03-core-kb-structure-for-dev-kit/T01-kb-structure-analysis.md` (created)
+- `docs/project-management/kanban/epics/epic-01/stories/story-03-core-kb-structure-for-dev-kit.md` (created, task status updated)
+- `docs/project-management/kanban/epics/epic-01.md` (story added, status updated)
 - `src/fynd_deals/version.py` (version bumped to 0.1.3.1+1)
 
 ---

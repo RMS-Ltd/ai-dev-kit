@@ -618,8 +618,8 @@ This policy defines the framework for maintaining documentation accuracy, consis
 ## References
 
 - **Document Lifecycle Policy:** `packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md`
-- **Epic 5:** `docs/project-management/kanban/epics/Epic-5/Epic-5.md`
-- **Story 1:** `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md`
+- **Epic 5:** `docs/project-management/kanban/epics/epic-05/epic-05.md`
+- **Story 1:** `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md`
 - **Framework Health Metrics:** `docs/architecture/standards-and-adrs/framework-health-metrics.md`
 
 ---

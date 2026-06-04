@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Bug Report BR-059: UKW MoSCOW Update Omits In-Progress Story Tasks (Incomplete Coverage)
 
 **Bug ID:** BR-059  
-**Task ID:** [E02:S16:T13](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)  
+**Task ID:** [E02:S16:T13](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)  
 **Historical implementing task:** `E06:S07:T109` (superseded 2026-05-29, FR-087 Wave 4)  
 **Priority:** HIGH  
 **Severity:** MEDIUM (board SoT diverges from story checklist; planners lose visibility)  
@@ -30,7 +30,7 @@ A **comprehensive UKW** run promoted **E05:S09:T01** to the MoSCOW **Should** se
 
 ### Observed behavior
 
-- Story: [`Story-009-docusaurus-documentation-portal.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal.md) — checklist shows **E05:S09:T01–T07** (FR-065–FR-071), all still open.
+- Story: [`story-09-docusaurus-documentation-portal.md`](../epics/epic-05/story-09-docusaurus-documentation-portal.md) — checklist shows **E05:S09:T01–T07** (FR-065–FR-071), all still open.
 - After UKW (2026-03-30), [`kboard.md`](../kboard.md) **Should** listed **only T01**.
 - Stakeholder expectation: **every** E5:S09 task that is not complete should appear on the board (or be explicitly moved to **Won’t** / documented deferral with rationale).
 
@@ -73,11 +73,11 @@ A **comprehensive UKW** run promoted **E05:S09:T01** to the MoSCOW **Should** se
 
 ## Related work
 
-- **Implementing task:** [E02:S16:T13](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) (historical: `E06:S07:T109`)
-- **Story:** [E5:S09 – Docusaurus Documentation Portal](../epics/Epic-5/Story-009-docusaurus-documentation-portal.md)  
+- **Implementing task:** [E02:S16:T13](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md) (historical: `E06:S07:T109`)
+- **Story:** [E5:S09 – Docusaurus Documentation Portal](../epics/epic-05/story-09-docusaurus-documentation-portal.md)  
 - **Related BR:** [BR-042](BR-042-ukw-agent-board-cleanup-failure.md) (completed tasks left on board — opposite failure mode)  
 - **Related BR:** [BR-034](BR-034-ukw-moscow-prioritization-missing.md)  
-- **Perpetual UKW task:** [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)  
+- **Perpetual UKW task:** [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)  
 
 ---
 

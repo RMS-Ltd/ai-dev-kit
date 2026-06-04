@@ -12,9 +12,9 @@ Started execution of the Story 016 perpetual-task migration inventory by moving 
 ## Included
 
 - Task status transition:
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md`
 - Story checklist alignment:
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
 
 ## Verification
 

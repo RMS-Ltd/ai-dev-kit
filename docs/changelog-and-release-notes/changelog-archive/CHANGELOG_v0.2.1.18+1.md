@@ -64,7 +64,7 @@ Closed BR-070 AC4 by implementing a post-commit verification validator (`validat
 
 ### Task & Bug Report Finalization
 
-- **docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md**
+- **docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md**
   - Marked AC1–AC5 as complete
   - Status changed to COMPLETE
   - Added forensic marker `✅ COMPLETE (v0.2.1.18+1)`

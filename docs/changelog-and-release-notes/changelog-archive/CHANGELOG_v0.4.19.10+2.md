@@ -15,7 +15,7 @@
 
 ## Change implemented
 
-- [`Story-000-uxr-repo.md`](../../project-management/kanban/epics/Epic-7/Story-000-uxr-repo.md) → ABSTRACT SPACE `v0.7.0.0+0`
+- [`story-00-uxr-repo.md`](../../project-management/kanban/epics/epic-07/story-00-uxr-repo.md) → ABSTRACT SPACE `v0.7.0.0+0`
 - Historical anchors T01–T06 + migration table in T10
 - [`IPP-E04S19T10`](../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
 - Intake skill, FR_BR_INTAKE_GUIDE, KG-R2 updated

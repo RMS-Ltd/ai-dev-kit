@@ -175,7 +175,7 @@ Story 2: FR/BR Intake to Tasks is now complete. The intake system includes:
 - `packages/frameworks/kanban/FR_BR_INTAKE_AGENT_GUIDE.md` (created)
 - `packages/frameworks/kanban/FR_BR_INTAKE_USER_GUIDE.md` (created)
 - `packages/frameworks/kanban/FR_BR_INTAKE_QUICK_REFERENCE.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks.md` (status update - Story 2 now COMPLETE)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks.md` (status update - Story 2 now COMPLETE)
 - `src/fynd_deals/version.py` (version bumped to 0.4.2.5+1)
 
 ---

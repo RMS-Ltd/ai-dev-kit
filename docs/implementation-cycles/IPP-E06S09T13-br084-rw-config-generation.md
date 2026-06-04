@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E06:S09:T13 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T13-rw-install-mode-c-rw-config-generation-br084.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) **(E06:S09:T13)**  
+**Host Task:** [`T13-rw-install-mode-c-rw-config-generation-br084.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) **(E06:S09:T13)**  
 **Planning for:** [BR-084](../project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
 **Status:** Implemented (2026-06-03 — shipped **v0.6.9.13+2**, pending user verification)
 

@@ -6,18 +6,18 @@
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Epic-1.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/epic-01.md"
       ],
       "surface": "epic_doc",
       "touched": true
     },
     "story_doc": {
       "changes": [
-        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md"
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md"
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md"
       ],
       "surface": "story_doc",
       "touched": true
@@ -100,7 +100,7 @@
         "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
       ],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md"
       ],
       "surface": "task_doc",
       "touched": false

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Last Updated:** 2025-12-02  
 **Framework:** Kanban Framework  
 **Audience:** AI Assistants / Agents  
-**Related:** `FR_BR_INTAKE_GUIDE.md`, `T002-decision-flow-design.md`
+**Related:** `FR_BR_INTAKE_GUIDE.md`, `T02-decision-flow-design.md`
 
 ---
 
@@ -314,7 +314,7 @@ FR/BR Received
   - Goals: [2-3 high-level goals]
 
 **Step 4b.3: Create Story**
-- **Location:** `docs/project-management/kanban/epics/Epic-X/stories/Story-001-[title].md`
+- **Location:** `docs/project-management/kanban/epics/Epic-X/stories/story-01-[title].md`
 - **Template:** Use `STORY_TEMPLATE.md`
 - **Story Number:** 1 (first Story in new Epic)
 - **Required Fields:**
@@ -442,7 +442,7 @@ After completing intake, verify:
 
 ### Key Documents
 - **Intake Guide:** `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`
-- **Decision Flow:** `T002-decision-flow-design.md`
+- **Decision Flow:** `T02-decision-flow-design.md`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
 - **Kanban Index:** `docs/project-management/kanban/_index.md`
 

@@ -17,4 +17,4 @@
 ## References
 
 - [FR-099](../../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [E1:S04:T03](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
+- [E1:S04:T03](../../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)

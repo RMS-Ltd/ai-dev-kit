@@ -22,22 +22,22 @@ housekeeping_policy: keep
 ### Must Have (M) - Critical Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task Doc](epics/Epic-{epic}/Story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/Epic-{epic}/Story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
 
 ### Should Have (S) - Important Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task Doc](epics/Epic-{epic}/Story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/Epic-{epic}/Story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
 
 ### Could Have (C) - Nice-to-Have Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task Doc](epics/Epic-{epic}/Story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/Epic-{epic}/Story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
 
 ### Ongoing (O) - Perpetual Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description} - Perpetual Task - {Status}  
-  *Last updated: {Date}* | [Task Doc](epics/Epic-{epic}/Story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/Epic-{epic}/Story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
 
 ### Won't Have (W) - Deferred Tasks
 
@@ -53,9 +53,9 @@ housekeeping_policy: keep
 
 **Stories:**
 - [x] **E{epic}:S{story} – {Story name}** - {Status} ({version})
-  - Story: [`Story-{story}-{name}.md`](epics/Epic-{epic}/Story-{story}-{name}.md)
+  - Story: [`story-{story}-{name}.md`](epics/epic-{epic}/story-{story}-{name}.md)
 
-**Epic Doc:** [`epics/Epic-{epic}/Epic-{epic}.md`](epics/Epic-{epic}/Epic-{epic}.md)
+**Epic Doc:** [`epics/epic-{epic}/epic-{epic}.md`](epics/epic-{epic}/epic-{epic}.md)
 
 ---
 

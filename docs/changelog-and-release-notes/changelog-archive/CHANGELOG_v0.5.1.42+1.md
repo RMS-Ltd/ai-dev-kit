@@ -12,12 +12,12 @@ Documentation and Kanban alignment for **FR-042** (Implementation Planning Workf
 
 ### Kanban & traceability
 
-- **New:** Task document [E5:S01:T42](docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T42-implementation-planning-workflow-ipw.md) (FR-042 implementation anchor).
+- **New:** Task document [E5:S01:T42](docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T42-implementation-planning-workflow-ipw.md) (FR-042 implementation anchor).
 - **Updated:** [FR-042](docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md) — §7 merge table, requirements R10–R13 / NF04, AC10–AC12, related work (FR-040/048, BR-055).
-- **Updated:** [Story-001-fr-repo](docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md) — T42 checklist row; last-updated line.
+- **Updated:** [story-01-fr-repo](docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md) — T42 checklist row; last-updated line.
 - **Updated:** [fr-br-uxr-board](docs/project-management/kanban/fr-br-uxr-board.md), [fr-br-uxr-structure](docs/project-management/kanban/fr-br-uxr-structure.md) — FR-042 HIGH + E5:S01:T42 reference.
 
 ## References
 
-- **Task:** [T42-implementation-planning-workflow-ipw.md](docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T42-implementation-planning-workflow-ipw.md)
+- **Task:** [T42-implementation-planning-workflow-ipw.md](docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T42-implementation-planning-workflow-ipw.md)
 - **FR:** [FR-042-implementation-planning-workflow-ipw.md](docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

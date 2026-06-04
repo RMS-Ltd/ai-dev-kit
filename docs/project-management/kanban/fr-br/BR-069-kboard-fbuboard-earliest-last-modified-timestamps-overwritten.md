@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Version:** N/A  
 **Code:** BR-069  
 
-**Implementing Task:** [E02:S15:T04](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)  
-**Closure gated on:** [FR-097 — Board stamp authority and forensic timestamp recovery](FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) / [E02:S15:T08](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (supersedes FR-092-only closure for forensic stamp truth)
+**Implementing Task:** [E02:S15:T04](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)  
+**Closure gated on:** [FR-097 — Board stamp authority and forensic timestamp recovery](FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) / [E02:S15:T08](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (supersedes FR-092-only closure for forensic stamp truth)
 
 > **Gating note (2026-04-27):** T04 Phases A-D delivered narrowed-scope guardrails and remain valid as historical sign-off, but live `kboard.md` / `fbuboard.md` continue to exhibit BR-069-class symptoms (duplicate tail tokens, residual stamp churn). Final BR closure is gated on FR-092 Wave 4 corpus sweep producing zero duplicate tail tokens and zero synthetic stamp churn on live boards (FR-092 AC-M5 + AC-M7).
 >
@@ -94,6 +94,6 @@ Running the typical deterministic **UKW** board pass (`enforce_terminal_timestam
 - [IPP-E02S15T04 — BR-069 row-tail normalization and terminal timestamp interaction](../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 - [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
 - [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [E06:S07:T115](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
-- [E02:S15:T04](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
+- [E06:S07:T115](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
+- [E02:S15:T04](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - [FR-089](FR-089-ipw-board-row-footer-duplication-validation-hardening.md) (IMPLEMENTED — validation/reconciliation contract; **not** a substitute for full corpus row repair under this BR)

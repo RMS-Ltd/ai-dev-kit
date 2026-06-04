@@ -897,7 +897,7 @@ The versioning strategy provides **complete traceability** through a multi-dimen
 
 **Example:**
 - Version: `0.3.1.1+2`
-- Epic 3 document: `docs/project-management/kanban/epics/Epic-3/Epic-3.md`
+- Epic 3 document: `docs/project-management/kanban/epics/epic-03/epic-03.md`
 - Story 1 markers: Version references, commit hashes, workflow runs
 
 ### Dimension 5: Version ↔ Git History
@@ -1068,5 +1068,5 @@ The dev-kit policy:
 - **[Versioning Quick Reference](versioning-quick-reference.md)** - 1-2 page summary for quick lookup ⚡
 - **[Dual-Versioning Guide](dual-versioning-package-managers.md)** - Managing `RC.EPIC.STORY.TASK+BUILD` + SemVer for package managers ⚠️
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md` - Practical worked examples
-- `docs/project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework/T001-gap-analysis-report.md` (gap analysis)
-- `docs/project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework/T002-fynd-deals-epic15-findings.md` (findings)
+- `docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md` (gap analysis)
+- `docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md` (findings)

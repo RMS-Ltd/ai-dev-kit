@@ -11,5 +11,5 @@
 ## Change implemented
 
 - New task docs: T03 (Phase 0), T04 (Phase 1), T05 (Phase 2), T06 (Phase 3), T07 (Phase 4)
-- Umbrella [T03 redirect](../../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
+- Umbrella [T03 redirect](../../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
 - Story 004, FR-099, ADR-006, boards, IPP Wave E links updated

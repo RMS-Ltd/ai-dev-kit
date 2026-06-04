@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-10 — **RW E02:S01:T12** **v0.2.1.12+3** (SemVer **v0.4.723+3**): release-anchor refresh and traceability synchronization after explicit-task `--art` run.  
 **Version:** v0.2.1.12+3  
 **Code:** BR-061  
-**Implementing Task:** [E02:S01:T12](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T12-rw-explicit-task-id-version-alignment-br061.md)
+**Implementing Task:** [E02:S01:T12](../epics/epic-02/story-01-rw-agent-execution-and-docs/T12-rw-explicit-task-id-version-alignment-br061.md)
 
 ---
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S15:T07 - Planning: Spec, Tests, Implementation Plan (IPP) — META
 
-**Host Task:** [`T07-canonical-rw-ukw-kanban-consistency-program-fr092.md`](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) **(E2:S15:T07)**  
+**Host Task:** [`T07-canonical-rw-ukw-kanban-consistency-program-fr092.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) **(E2:S15:T07)**  
 **Planning for:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
 **Status:** Published
 
@@ -104,7 +104,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 2. Add `Superseded by FR-092` banner on FR-091 / FR-090 / FR-084.
 3. Mark T02 / T05 / T06 status `SUPERSEDED -> E2:S15:T07` with redirect note; preserve historical content for traceability.
 4. Wire BR-069 / BR-070 / UXR-009 as gated dependencies (closure deferred to FR-092 sign-off).
-5. Update [`Story-015-ipw-governance-and-publication-contract.md`](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md) checklist.
+5. Update [`story-15-ipw-governance-and-publication-contract.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md) checklist.
 6. Update [`kboard.md`](../project-management/kanban/kboard.md) (add T07 row; mark T02/T05/T06 SUPERSEDED in active sections).
 7. Update [`fbuboard.md`](../project-management/kanban/fbuboard.md) (add FR-092 row; mark FR-091/FR-090/FR-084 SUPERSEDED).
 
@@ -385,7 +385,7 @@ All four active boards are **byte-stable** under the canonical row transform pip
 
 ## 7. References
 
-- [Host task E2:S15:T07](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
+- [Host task E2:S15:T07](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
 - [FR-092](../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 - [FR-091 (superseded)](../project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)
 - [FR-090 (superseded)](../project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)

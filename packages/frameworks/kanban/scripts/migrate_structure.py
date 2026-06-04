@@ -28,9 +28,11 @@ from datetime import datetime
 import re
 
 # Import reference updater from same directory
-sys.path.insert(0, str(Path(__file__).parent))
+_SCRIPT_DIR = Path(__file__).parent
+sys.path.insert(0, str(_SCRIPT_DIR))
 from reference_updater import ReferenceUpdater
 from agentic_mapper import AgenticTaskMapper
+import kanban_paths as kp
 
 
 class KanbanStructureMigrator:
@@ -262,20 +264,29 @@ class KanbanStructureMigrator:
         Resolve canonical epic template for a given epic number (BR-079 / E06:S09:T08).
 
         Search order:
-        1. ``templates/epics/Epic-{n}-*.md`` (primary pack layout)
-        2. ``templates/Epic-{n}/Epic-{n}.md`` (legacy directory layout for 22, 23, etc.)
+        1. ``templates/epics/epic-{n}-*.md`` (primary pack layout)
+        2. ``templates/epic-{n}/epic-{n}.md`` (directory layout for 22, 23, etc.)
         """
         template_dir = self._get_template_path()
-        pattern = f"Epic-{epic_num}-*.md"
-        matches = sorted(template_dir.glob(pattern))
-        if matches:
-            return matches[0]
+        sn = kp.segment_number(epic_num)
+        for pattern in (
+            f"epic-{sn}-*.md",
+            f"epic-{epic_num}-*.md",
+            f"Epic-{epic_num}-*.md",
+        ):
+            matches = sorted(template_dir.glob(pattern))
+            if matches:
+                return matches[0]
 
         script_dir = Path(__file__).parent
         templates_root = script_dir.parent / "templates"
-        directory_layout = templates_root / f"Epic-{epic_num}" / f"Epic-{epic_num}.md"
-        if directory_layout.is_file():
-            return directory_layout
+        for directory_layout in (
+            templates_root / kp.epic_dir_name(epic_num) / kp.epic_doc_basename(epic_num),
+            templates_root / kp.epic_dir_name(epic_num, legacy=True)
+            / kp.epic_doc_basename(epic_num, legacy=True),
+        ):
+            if directory_layout.is_file():
+                return directory_layout
 
         return None
     
@@ -309,7 +320,7 @@ class KanbanStructureMigrator:
             print(f"  ⚠️  Falling back to placeholder epic creation")
         
         for epic_num in canonical_core_epics:
-            epic_dir = self.kanban_path / "epics" / f"Epic-{epic_num}"
+            epic_dir = self.kanban_path / "epics" / kp.epic_dir_name(epic_num)
             
             # In canonical_adoption mode, check if we should skip based on semantic matches
             if self.mode == "canonical_adoption":
@@ -346,7 +357,7 @@ class KanbanStructureMigrator:
                 else:
                     print(
                         f"  🔍 [DRY RUN] Would skip Epic {epic_num} — no template "
-                        f"(templates/epics/Epic-{epic_num}-*.md or Epic-{epic_num}/Epic-{epic_num}.md)"
+                        f"(templates/epics/epic-{epic_num}-*.md or epic-{epic_num}/epic-{epic_num}.md)"
                     )
                 self.migration_log.append({
                     "type": "epic",
@@ -357,7 +368,7 @@ class KanbanStructureMigrator:
                 continue
 
             epic_dir.mkdir(parents=True, exist_ok=True)
-            epic_doc = epic_dir / f"Epic-{epic_num}.md"
+            epic_doc = epic_dir / kp.epic_doc_basename(epic_num)
 
             # Try to copy from template
             if template_file and template_file.exists():
@@ -371,15 +382,15 @@ class KanbanStructureMigrator:
                     rel_tpl = template_file.name
                 print(
                     f"  ✅ Epic {epic_num} installed from template: {rel_tpl} "
-                    f"→ epics/Epic-{epic_num}/Epic-{epic_num}.md"
+                    f"→ epics/epic-{epic_num}/epic-{epic_num}.md"
                 )
             else:
                 if not epic_doc.exists():
                     epic_doc.write_text(
                         f"# Epic {epic_num}: [Canonical Epic]\n\n"
                         f"*This epic was installed from canonical framework.*\n"
-                        f"*Template file not found: templates/epics/Epic-{epic_num}-*.md "
-                        f"or templates/Epic-{epic_num}/Epic-{epic_num}.md*\n"
+                        f"*Template file not found: templates/epics/epic-{epic_num}-*.md "
+                        f"or templates/epic-{epic_num}/epic-{epic_num}.md*\n"
                     )
                     print(
                         f"  ⚠️  Epic {epic_num} created with placeholder (template not found) — "
@@ -532,8 +543,8 @@ class KanbanStructureMigrator:
     
     def _ensure_epic_format_canonical(self, epic_num: int):
         """Ensure epic document follows canonical format."""
-        epic_dir = self.kanban_path / "epics" / f"Epic-{epic_num}"
-        epic_doc = epic_dir / f"Epic-{epic_num}.md"
+        epic_dir = self.kanban_path / "epics" / kp.epic_dir_name(epic_num)
+        epic_doc = epic_dir / kp.epic_doc_basename(epic_num)
         
         if not epic_doc.exists():
             if not self.dry_run:
@@ -553,8 +564,10 @@ class KanbanStructureMigrator:
             print(f"  🔍 [DRY RUN] Would renumber Epic {source_epic_num} → Epic {target_epic_num}")
             return
         
-        source_dir = self.kanban_path / "epics" / f"Epic-{source_epic_num}"
-        target_dir = self.kanban_path / "epics" / f"Epic-{target_epic_num}"
+        source_dir = kp.resolve_epic_dir(self.kanban_path, source_epic_num) or (
+            self.kanban_path / "epics" / kp.epic_dir_name(source_epic_num)
+        )
+        target_dir = self.kanban_path / "epics" / kp.epic_dir_name(target_epic_num)
         
         if not source_dir.exists():
             return
@@ -567,18 +580,27 @@ class KanbanStructureMigrator:
         shutil.move(str(source_dir), str(target_dir))
         
         # Update epic document name
-        old_epic_doc = target_dir / f"Epic-{source_epic_num}.md"
-        new_epic_doc = target_dir / f"Epic-{target_epic_num}.md"
+        old_epic_doc = target_dir / kp.epic_doc_basename(source_epic_num)
+        new_epic_doc = target_dir / kp.epic_doc_basename(target_epic_num)
         if old_epic_doc.exists():
             shutil.move(str(old_epic_doc), str(new_epic_doc))
             # Update epic number in document content
             content = new_epic_doc.read_text(encoding='utf-8')
             content = content.replace(f"Epic {source_epic_num}", f"Epic {target_epic_num}")
-            content = re.sub(r'Epic-{}\.md'.format(source_epic_num), f'Epic-{target_epic_num}.md', content)
+            content = re.sub(
+                rf"Epic-{source_epic_num}\.md",
+                kp.epic_doc_basename(target_epic_num),
+                content,
+            )
+            content = re.sub(
+                rf"epic-{source_epic_num}\.md",
+                kp.epic_doc_basename(target_epic_num),
+                content,
+            )
             new_epic_doc.write_text(content, encoding='utf-8')
         
         # Update story files
-        for story_file in target_dir.glob("Story-*.md"):
+        for story_file in list(target_dir.glob("story-*.md")) + list(target_dir.glob("Story-*.md")):
             content = story_file.read_text(encoding='utf-8')
             # Update epic references in story content
             content = re.sub(rf'E{source_epic_num}:S(\d+):T(\d+)', rf'E{target_epic_num}:S\1:T\2', content)
@@ -694,8 +716,8 @@ class KanbanStructureMigrator:
         epic_mappings = self.analysis_report.get("epic_mappings", [])
         for epic_mapping in epic_mappings:
             target_epic = epic_mapping.get("target_epic_number") or epic_mapping["source_epic_number"]
-            epic_dir = self.kanban_path / "epics" / f"Epic-{target_epic}"
-            epic_doc = epic_dir / f"Epic-{target_epic}.md"
+            epic_dir = self.kanban_path / "epics" / kp.epic_dir_name(target_epic)
+            epic_doc = epic_dir / kp.epic_doc_basename(target_epic)
             
             if not epic_doc.exists():
                 issues.append({

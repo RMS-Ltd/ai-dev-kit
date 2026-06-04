@@ -260,8 +260,8 @@ This document provides **comprehensive meta-analysis** of Kanban structures acro
 - **Abbreviated Support:** `S\{N\}` (for newer projects)
 
 **Numbering:**
-- **Canonical:** 3-digit padding (`Story-001`, `Story-010`)
-- **Legacy Support:** 2-digit padding (`Story-01`, `Story-10`)
+- **Canonical:** 3-digit padding (`story-001`, `story-010`)
+- **Legacy Support:** 2-digit padding (`story-001`, `story-010`)
 
 **Checklist:**
 - **Required:** Story checklist in Epic document

@@ -13,9 +13,9 @@ Published the FR-091 intake package and task activation to formalize the RW/UKW 
 
 - Added new intake and delivery anchor:
   - `docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`
 - Wired story and boards for discoverability:
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md`
   - `docs/project-management/kanban/kboard.md`
   - `docs/project-management/kanban/fbuboard.md`
 - Updated release metadata:

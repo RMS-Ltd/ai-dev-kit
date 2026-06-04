@@ -58,7 +58,7 @@
 
 ## Related
 
-- **Task:** [T15-cursor-ide-performance-considerations-awareness.md](../../../project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T15-cursor-ide-performance-considerations-awareness.md)
+- **Task:** [T15-cursor-ide-performance-considerations-awareness.md](../../../project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T15-cursor-ide-performance-considerations-awareness.md)
 - **Feature Request:** [FR-028](../../../project-management/kanban/fr-br/FR-028-cursor-ide-performance-considerations-awareness.md)
 - **Awareness Document:** `docs/architecture/standards-and-adrs/cursor-ide-performance-considerations.md`
 - **Framework Documentation:** `packages/frameworks/numbering & versioning/IMPLEMENTATION_GUIDE.md`

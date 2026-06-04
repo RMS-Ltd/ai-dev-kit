@@ -23,7 +23,7 @@
 - E1:S03:T006 – Document scalable KB pattern for large codebases
 
 ## Technical Details
-- Created `T006-scalable-kb-pattern.md` with full canonical pattern definition
+- Created `T06-scalable-kb-pattern.md` with full canonical pattern definition
 - Pattern supports projects from small frameworks (dev-kit) to large codebases (100K+ LOC)
 - Maintains 3-level default depth while providing comprehensive section menu
 - Self-documenting directory names and clear separation of concerns

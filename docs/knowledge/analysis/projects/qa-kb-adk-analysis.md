@@ -40,7 +40,7 @@ housekeeping_policy: keep
 - **Epic Count:** 1 epic (Epic 10)
 - **Story Count:** 5 stories
 - **Task Count:** Multiple tasks per story
-- **Directory Structure:** `docs/Epic-10.md` and `docs/epic-10-legacy/` (not in docs/project-management/)
+- **Directory Structure:** `docs/epic-10.md` and `docs/epic-10-legacy/` (not in docs/project-management/)
 - **File Organization:** Flat structure (docs/ directory)
 
 **Epic Inventory:**
@@ -58,14 +58,14 @@ housekeeping_policy: keep
 - **Good:** Project has its own epic structure, no confusion
 
 **Epic Naming:** ⚠️ **DIVERGES**
-- Uses "Epic-10" (with hyphen) which matches ADK canonical
+- Uses "epic-10" (with hyphen) which matches ADK canonical
 - But structure is in `docs/` not `docs/project-management/kanban/epics/`
 - **Difference:** Different root path
 - **Impact:** Major - different structure location
 
 **Story Structure:** ✅ **MATCHES** (mostly)
 - Stories organized in docs/ directory
-- Story naming follows pattern: `Story-001-problem-solution-kb-foundation.md`
+- Story naming follows pattern: `story-01-problem-solution-kb-foundation.md`
 - Story documents include proper structure
 
 **Task Structure:** ⚠️ **DIVERGES**
@@ -75,12 +75,12 @@ housekeeping_policy: keep
 - **Impact:** Minor - different organization pattern
 
 **Naming Conventions:** ✅ **MATCHES**
-- Epic naming: `Epic-10.md` (hyphen format) ✅
-- Story naming: `Story-001-Description.md` (3-digit format) ✅
+- Epic naming: `epic-10.md` (hyphen format) ✅
+- Story naming: `story-01-Description.md` (3-digit format) ✅
 - Task naming: Embedded in stories vs separate files
 
 **File Organization:** ⚠️ **MAJOR DIVERGENCE**
-- Structure: `docs/Epic-10.md` and `docs/Story-001-Description.md` (flat structure)
+- Structure: `docs/epic-10.md` and `docs/story-01-Description.md` (flat structure)
 - **Difference:** Uses `docs/` instead of `docs/project-management/kanban/epics/`
 - **Impact:** Major - completely different structure location
 
@@ -100,7 +100,7 @@ housekeeping_policy: keep
 
 2. **Good Story Organization**
    - Stories well-organized
-   - Clear story naming (Story-001 format)
+   - Clear story naming (story-001 format)
    - Good story documentation
 
 3. **Migration Documentation**
@@ -160,12 +160,12 @@ housekeeping_policy: keep
 **KB Structure:**
 ```
 docs/
-├── Epic-10.md
-├── Story-001-problem-solution-kb-foundation.md
-├── Story-002-architecture-and-solid-design.md
-├── Story-003-api-ui-and-embeddings.md
-├── Story-004-governance-and-quality.md
-├── Story-005-mvp-plan-and-delivery.md
+├── epic-10.md
+├── story-01-problem-solution-kb-foundation.md
+├── story-02-architecture-and-solid-design.md
+├── story-03-api-ui-and-embeddings.md
+├── story-04-governance-and-quality.md
+├── story-05-mvp-plan-and-delivery.md
 ├── FR-009-problem-solution-kb-service.md
 ├── PROJECT_PROPOSAL.md
 ├── adr-e10-ui-framework-codex-selection.md
@@ -551,8 +551,8 @@ None identified - no versioning present.
 ### 8.1 File Inventory
 
 **Kanban Files:**
-- `docs/Epic-10.md` (Epic 10)
-- `docs/Story-001-Description.md` through `Story-005-Description.md` (5 stories)
+- `docs/epic-10.md` (Epic 10)
+- `docs/story-01-Description.md` through `story-05-Description.md` (5 stories)
 - `docs/epic-10-legacy/` (migration history)
 - Tasks embedded in stories
 
@@ -575,7 +575,7 @@ None identified - no versioning present.
 | Aspect | ADK Canonical | qa-kb | Match? |
 |--------|---------------|-------|--------|
 | Epic Structure | Project-specific epics only | Project-specific epic (10) | ✅ YES (no mashup) |
-| Epic Naming | Epic-10 (hyphen) | Epic-10 (hyphen) | ✅ YES |
+| Epic Naming | epic-10 (hyphen) | epic-10 (hyphen) | ✅ YES |
 | Story Structure | Stories under Epic directories | Stories in docs/ (flat) | ⚠️ DIVERGES |
 | Task Structure | Tasks under Story directories | Tasks embedded in stories | ⚠️ DIVERGES |
 | File Organization | docs/project-management/kanban/epics/ | docs/ (flat structure) | ⚠️ MAJOR DIVERGENCE |

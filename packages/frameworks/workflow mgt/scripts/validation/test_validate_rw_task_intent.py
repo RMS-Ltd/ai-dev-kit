@@ -39,9 +39,9 @@ def intent_fixture(tmp_path: Path) -> Path:
     )
 
     # Story checklist with T10 complete
-    sdir = tmp_path / "docs" / "project-management" / "kanban" / "epics" / "Epic-2"
+    sdir = tmp_path / "docs" / "project-management" / "kanban" / "epics" / "epic-02"
     sdir.mkdir(parents=True)
-    (sdir / "Story-001-test.md").write_text(
+    (sdir / "story-01-test.md").write_text(
         "- [x] **E2:S01:T10** - ✅ COMPLETE\n",
         encoding="utf-8",
     )
@@ -92,7 +92,7 @@ def perpetual_ukw_fixture(tmp_path: Path) -> Path:
     (tmp_path / "rw-config.yaml").write_text(cfg, encoding="utf-8")
     tdir = (
         tmp_path
-        / "docs/project-management/kanban/epics/Epic-6/Story-007-adk-example"
+        / "docs/project-management/kanban/epics/epic-06/story-07-adk-example"
     )
     tdir.mkdir(parents=True)
     (tdir / "T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md").write_text(
@@ -117,10 +117,10 @@ def test_full_mode_art_rejects_non_perpetual(intent_fixture: Path):
     # Add a non-perpetual E6:S07:T99 doc so --art fails (not perpetual)
     tdir = (
         intent_fixture
-        / "docs/project-management/kanban/epics/Epic-6/Story-007-x"
+        / "docs/project-management/kanban/epics/epic-06/story-07-x"
     )
     tdir.mkdir(parents=True)
-    (tdir / "T099-not-perpetual.md").write_text(
+    (tdir / "T99-not-perpetual.md").write_text(
         "**Task ID:** E6:S07:T99\n**Code:** E6S07T99\n",
         encoding="utf-8",
     )

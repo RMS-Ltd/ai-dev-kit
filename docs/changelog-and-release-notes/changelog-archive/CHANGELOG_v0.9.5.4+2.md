@@ -26,33 +26,33 @@ Completed the Kanban Naming Hygiene and Directory Systematic Cleanup (UXR-011) b
 ### Naming & Structural Cleanup (105 files)
 
 - **Renamed 51 Txxx → Txx files** using `git mv` across Epics 1–9. Examples:
-  - `Epic-1/Story-002/T001-*` → `T01-*`; `T002-*` → `T02-*`; etc.
-  - `Epic-2/Story-001/T001-*` → `T01-*`
-  - `Epic-2/Story-002/T001-*` → `T01-*`; `T002-*` → `T02-*`; `T003-*` → `T03-*`; etc.
-  - `Epic-3/Story-001/T001-*` → `T01-*`; `T002-*` → `T02-*`
-  - `Epic-3/Story-002/T001-*` → `T01-*`
-  - `Epic-4/Story-001/T001-*` → `T01-*`; `T002-*` → `T02-*`
-  - `Epic-4/Story-002/T001-*` → `T01-*`; `T002-*` → `T02-*`
-  - `Epic-4/Story-003/T001-*` → `T01-*`; `T003-*` → `T03-*`; `T004-*` → `T04-*`; `T006-*` → `T06-*`; `T007-*` → `T07-*`
-  - `Epic-5/Story-002/T006-*` → `T06-*`
-  - `Epic-7/Story-000/T001-*` → `T01-*`; `T002-*` → `T02-*`; `T005-*` → `T05-*`
-  - `Epic-9/Story-001/T001-*` → `T01-*`; `T002-*` → `T02-*`; `T003-*` → `T03-*`; `T004-*` → `T04-*`
+  - `epic-01/story-002/T01-*` → `T01-*`; `T02-*` → `T02-*`; etc.
+  - `epic-02/story-001/T01-*` → `T01-*`
+  - `epic-02/story-002/T01-*` → `T01-*`; `T02-*` → `T02-*`; `T03-*` → `T03-*`; etc.
+  - `epic-03/story-001/T01-*` → `T01-*`; `T02-*` → `T02-*`
+  - `epic-03/story-002/T01-*` → `T01-*`
+  - `epic-04/story-001/T01-*` → `T01-*`; `T02-*` → `T02-*`
+  - `epic-04/story-002/T01-*` → `T01-*`; `T02-*` → `T02-*`
+  - `epic-04/story-003/T01-*` → `T01-*`; `T03-*` → `T03-*`; `T04-*` → `T04-*`; `T06-*` → `T06-*`; `T07-*` → `T07-*`
+  - `epic-05/story-002/T06-*` → `T06-*`
+  - `epic-07/story-000/T01-*` → `T01-*`; `T02-*` → `T02-*`; `T05-*` → `T05-*`
+  - `epic-09/story-001/T01-*` → `T01-*`; `T02-*` → `T02-*`; `T03-*` → `T03-*`; `T04-*` → `T04-*`
 
 - **Deleted 18 duplicate/orphaned files** using `git rm`:
-  - Epic-1/Story-003: `T003-canonical-kb-structure-research.md` (duplicate)
-  - Epic-2/Story-002: `T007-implement-task-naming-change.md`, `T008-update-kanban-docs-to-txx-standard.md`, `T08-update-kanban-docs-to-txx-standard-deliverable.md` (3 duplicates)
-  - Epic-3/Story-002: `T008-dual-versioning-package-audit-report.md`, `T008-package-versioning-guardrails-discussion.md` (2 duplicates)
-  - Epic-4/Story-003: `T002-documentation-updates-summary.md`, `T002-kanban-versioning-validation.md` (2 duplicates)
-  - Epic-4/Story-011: `T07-migrate-embedded-tasks-to-discrete-documents.md` (duplicate)
-  - Epic-4/Story-014: `T01-update-packaged-rw-ukw-perpetual-tasks.md` (duplicate)
-  - Epic-5: `Story-001-documentation-maintenance-framework.md`, `Story-002-documentation-quality-assurance.md`, `Story-003-documentation-automation.md`, `Story-004-framework-documentation-management.md`, `Story-005-legacy-repository-incorporation.md`, `Story-006-policy-documentation-structure.md`, `Story-007-persistent-knowledge-base-investigation.md` (7 duplicate stories)
-  - Epic-6: `Story-001-framework-version-management.md`, `Story-002-framework-update-and-migration.md`, `Story-003-framework-health-monitoring.md`, `Story-004-bug-reports.md`, `Story-005-feature-requests.md`, `Story-006-adk-implementation-analysis-and-package-management.md` (6 duplicate stories)
-  - Epic-6/Story-006: `T41-windsurf-investigate-agents-skills-for-workflows.md` (duplicate)
-  - Epic-6/Story-007: `T107-workflows-directory-structure-reorganization.md` (duplicate)
-  - Epic-7: `Story-001-real-world-adoption-examples.md`, `Story-002-migration-guides.md`, `Story-003-user-onboarding-materials.md` (3 duplicate stories)
-  - Epic-7/Story-04: `Story-04-readme-template-based-on-best-readme-template.md` (zero-padding fix, replaced by Story-004)
-  - Epic-7/Story-000: `T01-migration-user-experience-research-uxr-001.md`, `T02-comprehensive-uat-migration-utilities-uxr-002.md`, `T05-kanban-board-formatting-governance-uxr-005.md` (3 duplicate tasks)
-  - Epic-9: `Story-001-book-content-development.md`, `Story-002-book-integration-with-dev-kit.md`, `Story-003-book-publishing-support.md`, `Story-004-book-material-capture.md` (4 duplicate stories)
+  - epic-01/story-003: `T03-canonical-kb-structure-research.md` (duplicate)
+  - epic-02/story-002: `T07-implement-task-naming-change.md`, `T08-update-kanban-docs-to-txx-standard.md`, `T08-update-kanban-docs-to-txx-standard-deliverable.md` (3 duplicates)
+  - epic-03/story-002: `T08-dual-versioning-package-audit-report.md`, `T08-package-versioning-guardrails-discussion.md` (2 duplicates)
+  - epic-04/story-003: `T02-documentation-updates-summary.md`, `T02-kanban-versioning-validation.md` (2 duplicates)
+  - epic-04/story-011: `T07-migrate-embedded-tasks-to-discrete-documents.md` (duplicate)
+  - epic-04/story-014: `T01-update-packaged-rw-ukw-perpetual-tasks.md` (duplicate)
+  - epic-05: `story-01-documentation-maintenance-framework.md`, `story-02-documentation-quality-assurance.md`, `story-03-documentation-automation.md`, `story-04-framework-documentation-management.md`, `story-05-legacy-repository-incorporation.md`, `story-06-policy-documentation-structure.md`, `story-07-persistent-knowledge-base-investigation.md` (7 duplicate stories)
+  - epic-06: `story-01-framework-version-management.md`, `story-02-framework-update-and-migration.md`, `story-03-framework-health-monitoring.md`, `story-04-bug-reports.md`, `story-05-feature-requests.md`, `story-06-adk-implementation-analysis-and-package-management.md` (6 duplicate stories)
+  - epic-06/story-006: `T41-windsurf-investigate-agents-skills-for-workflows.md` (duplicate)
+  - epic-06/story-007: `T107-workflows-directory-structure-reorganization.md` (duplicate)
+  - epic-07: `story-01-real-world-adoption-examples.md`, `story-02-migration-guides.md`, `story-03-user-onboarding-materials.md` (3 duplicate stories)
+  - epic-07/story-004: `story-04-readme-template-based-on-best-readme-template.md` (zero-padding fix, replaced by story-004)
+  - epic-07/story-000: `T01-migration-user-experience-research-uxr-001.md`, `T02-comprehensive-uat-migration-utilities-uxr-002.md`, `T05-kanban-board-formatting-governance-uxr-005.md` (3 duplicate tasks)
+  - epic-09: `story-01-book-content-development.md`, `story-02-book-integration-with-dev-kit.md`, `story-03-book-publishing-support.md`, `story-04-book-material-capture.md` (4 duplicate stories)
 
 ### Content Updates (40+ files)
 
@@ -85,7 +85,7 @@ Completed the Kanban Naming Hygiene and Directory Systematic Cleanup (UXR-011) b
 - [x] All duplicate story files per epic reconciled (single file per story number)
 - [x] All duplicate task files removed (single file per task number per story)
 - [x] All orphaned directories resolved
-- [x] `Story-04` in Epic-7 renamed to `Story-004`
+- [x] `story-004` in epic-07 renamed to `story-004`
 - [x] All internal markdown links validated (0 dangling links in scope)
 - [x] Board docs updated with correct references
 - [x] Governance policy updated with explicit naming convention

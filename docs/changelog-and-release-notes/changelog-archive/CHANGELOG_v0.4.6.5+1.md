@@ -52,12 +52,12 @@ Contextualization guide and examples complete. This release includes comprehensi
 
 ### Modified
 
-- **Story 6 documentation** (`docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`)
+- **Story 6 documentation** (`docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md`)
   - Updated Task 5 status to COMPLETE (v0.4.6.5+1)
   - Updated acceptance criteria to reflect completion
   - Updated deliverables list with completed items
 
-- **Epic 4 documentation** (`docs/project-management/kanban/epics/Epic-4/Epic-4.md`)
+- **Epic 4 documentation** (`docs/project-management/kanban/epics/epic-04/epic-04.md`)
   - Updated Story 6 status to reflect T05 completion
   - Updated task checklist
 
@@ -131,5 +131,5 @@ Contextualization guide and examples complete. This release includes comprehensi
 - **Contextualization Guide:** `packages/frameworks/kanban/templates/CONTEXTUALIZATION_GUIDE.md`
 - **Example Projects:** `packages/frameworks/kanban/templates/examples/contextualized/`
 - **Comprehensive Structure:** `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`
-- **Story 6:** `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`
+- **Story 6:** `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md`
 

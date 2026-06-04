@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E7:S01:T11 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T11-consolidate-governance-under-docs-governance-fr101.md`](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) **(E7:S01:T11)**  
+**Host Task:** [`T11-consolidate-governance-under-docs-governance-fr101.md`](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) **(E7:S01:T11)**  
 **Planning for:** [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)  
 **Status:** Approved (planning complete — implementation blocked on AC0 maintainer sign-off)
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 | RF3 | INDEX rows remain under `docs/architecture/standards-and-adrs/`; hub cross-links only | FR-101-F4 |
 | RF4 | **Bidirectional wiring principle** relocated to `docs/governance/principles/bidirectional-wiring-principle.md` with stub at `fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | FR-101-F5, maintainer decision (IPW) |
 | RF5 | Active surfaces updated: `.cursorrules`, `.claude/commands/*`, `kanban-board-guide.md`, portable RW excerpt, `AGENTS.md`, `src/ai_dev_kit/version.py` comment if applicable | FR-101-F6, AC4, inventory §2 |
-| RF6 | Create or update `docs/maintenance/book-repo-docs-scope.md` listing `docs/governance/` as **KEEP** | AC3; coordinate [E7:S01:T10](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) |
+| RF6 | Create or update `docs/maintenance/book-repo-docs-scope.md` listing `docs/governance/` as **KEEP** | AC3; coordinate [E7:S01:T10](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) |
 | RF7 | IPP linked from task Input/References | AC2 |
 | RF8 | Populate inventory §4 execution log during Phase 2 execution | FR-101 deliverable table |
 
@@ -284,7 +284,7 @@ housekeeping_policy: keep
 ## References
 
 - [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)
-- [E7:S01:T11 task](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
+- [E7:S01:T11 task](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [docs/governance/README.md](../governance/README.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

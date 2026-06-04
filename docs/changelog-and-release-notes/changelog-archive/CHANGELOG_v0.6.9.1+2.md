@@ -12,8 +12,8 @@
 ## Changes
 
 - Added/expanded **[IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)** with locked decision log and installer-ordering rationale.
-- Updated **[T01 task](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)** with IPW traceability and progress markers.
-- Updated **[Story 009](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md)** T01 row with IPW pointer and consistency.
+- Updated **[T01 task](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)** with IPW traceability and progress markers.
+- Updated **[Story 009](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md)** T01 row with IPW pointer and consistency.
 - Updated version context and release surfaces for this E6:S09:T01 increment.
 
 ## Verification

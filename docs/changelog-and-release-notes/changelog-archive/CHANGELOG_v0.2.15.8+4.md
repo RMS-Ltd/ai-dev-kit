@@ -26,4 +26,4 @@ BUILD +4 used (not +0) because `v0.2.15.8+3` / `v0.4.828` tags already exist; th
 
 ---
 
-**Task:** [E2:S15:T08](docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
+**Task:** [E2:S15:T08](docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)

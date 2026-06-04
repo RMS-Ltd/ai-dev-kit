@@ -314,7 +314,7 @@ Each task entry in the MoSCOW sections includes:
 
 **Example Format:**
 ```markdown
-- **E4:S13:T02** – Update Kanban governance policy - 🔄 IN PROGRESS - [Task Doc](epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T02-update-kanban-governance-policy.md) | [Story](epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view.md) | Last modified: 2025-12-18 14:05 UTC
+- **E4:S13:T02** – Update Kanban governance policy - 🔄 IN PROGRESS - [Task Doc](epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T02-update-kanban-governance-policy.md) | [Story](epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view.md) | Last modified: 2025-12-18 14:05 UTC
 ```
 
 **Timestamp governance (mandatory):**
@@ -385,7 +385,7 @@ After the MoSCOW sections, the board includes a **Story Checklist** section that
 **Example Format:**
 ```markdown
 - [x] **E4:S13 – Kanban Board Enhancement - MoSCOW Prioritized Task View** - IN PROGRESS (v0.4.13.4+3 – T04 COMPLETE: Packaged RW updated)
-  - Story: [`Story-013-kanban-board-moscow-prioritized-task-view.md`](Story-013-kanban-board-moscow-prioritized-task-view.md)
+  - Story: [`story-13-kanban-board-moscow-prioritized-task-view.md`](story-13-kanban-board-moscow-prioritized-task-view.md)
   - Tasks: T01 ✅ COMPLETE (v0.4.13.1+1), T04 ✅ COMPLETE (v0.4.13.4+3), T02-T03 TODO, T05-T06 TODO
 ```
 
@@ -463,7 +463,7 @@ Repository stories are marked with **Status: IN PROGRESS (PERPETUAL)** and have 
 **Traceability pattern (conventional, not mandatory):**
 
 - Some **adopter** layouts use **symmetric ids**: e.g. FR-001 ↔ E5:S01:T01, BR-001 ↔ E6:S01:T01, UXR-001 ↔ repository slot in Epic 7 (`Story-000` / `S00` or `S01` per epic charter).
-- **ai-dev-kit:** **`E7:S00`** is **abstract space only** (detasked BR-076); historical UXR anchors **T01–T06** under `Story-000-uxr-repo/` are **link-only**. New UXR intake uses semantic hosts (**E07:S01**, **E07:S05**, etc.). Epic 5 FR repo commonly uses **E5:S01:Tnn** aligned with FR number—**convenient, optional**.
+- **ai-dev-kit:** **`E7:S00`** is **abstract space only** (detasked BR-076); historical UXR anchors **T01–T06** under `story-00-uxr-repo/` are **link-only**. New UXR intake uses semantic hosts (**E07:S01**, **E07:S05**, etc.). Epic 5 FR repo commonly uses **E5:S01:Tnn** aligned with FR number—**convenient, optional**.
 - **S00 prohibition (KG-R2 extension):** Do **not** create new primary tasks under any epic's **`S00`** story. One implementing task per report on a delivery story.
 - **Regardless of numbering,** every FR/BR/UXR MUST still satisfy **KG-R2** (≥1 task, same-session creation, bidirectional links). Prefer **one** primary delivery task in a **semantically correct** story over id pattern purity.
 
@@ -510,7 +510,7 @@ Every Task MUST have a discrete Task document (or clearly delimited section with
 
 1. **Separate File Format (Recommended):**
    - Location: `kanban/epics/Epic-X/Story-XXX/Task-YYY-description.md` or `kanban/epics/Epic-X/Story-XXX/TYYY-description.md`
-   - Example: `kanban/epics/Epic-4/Story-011/Task-001-update-kanban-policy.md`
+   - Example: `kanban/epics/epic-04/Story-011/Task-001-update-kanban-policy.md`
 
 2. **Delimited Section Format (Alternative):**
    - Location: Within the Story document, using Task ID as a clear header
@@ -560,8 +560,11 @@ The following patterns are **explicitly prohibited**:
 **File Naming Convention:**
 
 - **Task files:** `Txx-{slug}.md` for regular tasks; `Txxx-{slug}.md` for perpetual tasks
-- **Story files:** `Story-NNN-{slug}.md` (3-digit zero-padding required)
-- **Story directories:** `Story-NNN-{slug}/` matching the story file
+- **Epic directory:** `epic-{n}/` (lowercase; write-default per ADR-015)
+- **Epic document:** `epic-{n}.md` inside `epics/epic-{n}/`
+- **Story files:** `story-NNN-{slug}.md` (3-digit zero-padding required; lowercase `story-` prefix)
+- **Story directories:** `story-NNN-{slug}/` matching the story file
+- **Read-tolerance:** Legacy `Epic-` / `Story-` segments remain valid until migration ([epic-story-path-migration-guide.md](../../../docs/architecture/standards-and-adrs/epic-story-path-migration-guide.md))
 - **Prohibited:**
   - ❌ T0xx filenames (T001–T099)
   - ❌ Story-N or Story-NN filenames (missing zero-padding)
@@ -679,7 +682,7 @@ The following validations MUST be enforced:
   - Correct: `0.4.3.2+1` for first release of Task 2
 
 See: **your own canonical story docs** that define guardrails and versioning rules.  
-(*Original example:* `docs/project-management/stories/overview/Epic 20/Story-11-GUARDRAILS-PLAN.md` in the Confidentia project.)
+(*Original example:* `docs/project-management/stories/overview/Epic 20/story-11-GUARDRAILS-PLAN.md` in the Confidentia project.)
 
 ---
 

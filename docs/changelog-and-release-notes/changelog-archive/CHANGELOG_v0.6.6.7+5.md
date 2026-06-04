@@ -46,7 +46,7 @@ This release updates acceptance criteria in E6:S06:T07 to reflect completed work
 ### Files Modified
 
 **Modified Files:**
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (acceptance criteria updated)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (acceptance criteria updated)
 
 **Version File:**
 - `src/fynd_deals/version.py` (updated to v0.6.6.7+5)

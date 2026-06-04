@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S16:T12 — Planning: IPW ADR necessity checklist (FR-100)
 
-**Host Task:** [T12-ipw-adr-necessity-checklist-fr100.md](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) (E2:S16:T12)  
+**Host Task:** [T12-ipw-adr-necessity-checklist-fr100.md](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) (E2:S16:T12)  
 **Status:** Planning complete — implementation executed per §4  
 **Planning doc created:** 2026-05-26
 

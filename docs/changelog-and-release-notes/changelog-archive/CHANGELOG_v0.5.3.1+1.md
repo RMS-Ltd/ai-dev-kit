@@ -101,7 +101,7 @@ Created comprehensive automated documentation update scripts to reduce manual ef
 
 ### Modified Files
 
-- `docs/project-management/kanban/epics/Epic-5/Story-003-documentation-automation.md` - Updated to mark T01 as COMPLETE
+- `docs/project-management/kanban/epics/epic-05/story-03-documentation-automation.md` - Updated to mark T01 as COMPLETE
 - `src/fynd_deals/version.py` - Updated to v0.5.3.1+1
 
 ---

@@ -64,9 +64,9 @@ This release documents the bug report (BR-036) and associated task (E6:S01:T36) 
 ## Related Work
 
 - **BR-036:** [`BR-036-rw-step-7-board-update-bugs.md`](../../project-management/kanban/fr-br/BR-036-rw-step-7-board-update-bugs.md)
-- **E6:S01:T36:** [`T36-rw-step-7-board-update-bugs.md`](../../project-management/kanban/epics/Epic-6/Story-001-br-repo/T36-rw-step-7-board-update-bugs.md)
+- **E6:S01:T36:** [`T36-rw-step-7-board-update-bugs.md`](../../project-management/kanban/epics/epic-06/story-01-br-repo/T36-rw-step-7-board-update-bugs.md)
 - **FR-036:** [`FR-036-rw-update-kanban-board-on-task-completion.md`](../../project-management/kanban/fr-br/FR-036-rw-update-kanban-board-on-task-completion.md) (related feature)
-- **E5:S01:T36:** [`T36-rw-update-kanban-board-on-task-completion.md`](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md) (original implementation)
+- **E5:S01:T36:** [`T36-rw-update-kanban-board-on-task-completion.md`](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T36-rw-update-kanban-board-on-task-completion.md) (original implementation)
 - **Fix Version:** v0.5.1.34+2 (bug fixes applied)
 
 ---

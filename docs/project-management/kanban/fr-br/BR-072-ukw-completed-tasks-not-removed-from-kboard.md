@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.1.38+3  
 **Code:** BR-072
 
-**Implementing Task:** [E06:S01:T38](../epics/Epic-6/Story-001-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)
+**Implementing Task:** [E06:S01:T38](../epics/epic-06/story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)
 
 ---
 
@@ -58,7 +58,7 @@ Known test fixtures currently on the board: `E02:S16:T01` and `E02:S15:T07` (int
 **Recurrence (2026-05-16):**
 - `E02:S07:T01` (COMPLETE v0.2.7.1+0) showing as `TODO` on `kboard.md` in Could Have section.
 - `E02:S07:T05` (COMPLETE v0.2.7.5+1) showing as `TODO` on `kboard.md` in Could Have section.
-- Both tasks confirmed COMPLETE in story doc (`Story-007-trigger-aware-release-workflow.md`) with inline status corrected from TODO → COMPLETE during drift audit.
+- Both tasks confirmed COMPLETE in story doc (`story-07-trigger-aware-release-workflow.md`) with inline status corrected from TODO → COMPLETE during drift audit.
 - Root cause: UKW Step 6 reads task status from **task documents**, but `E02:S07:T01` and `E02:S07:T05` are **embedded inline in story doc** (no standalone task docs). UKW does not scan story docs for inline task status.
 - **This reveals a broader gap:** UKW does not reconcile inline/embedded task statuses in story docs against kboard rows.
 
@@ -97,7 +97,7 @@ Known test fixtures currently on the board: `E02:S16:T01` and `E02:S15:T07` (int
 
 ## Related
 
-- [Story 001 – BR Repo](../epics/Epic-6/Story-001-br-repo.md)
+- [Story 001 – BR Repo](../epics/epic-06/story-01-br-repo.md)
 - [UKW cursorrules trigger definition](../../packages/frameworks/workflow%20mgt/cursorrules-ukw-trigger-section.md)
 - [UKW workflow definition](../../packages/frameworks/workflow%20mgt/workflows/update-kanban-workflow/update-kanban-workflow.yaml)
 - [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) — prior kboard accuracy defect

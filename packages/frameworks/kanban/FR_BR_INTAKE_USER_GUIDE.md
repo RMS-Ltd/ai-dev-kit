@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Last Updated:** 2025-12-02  
 **Framework:** Kanban Framework  
 **Audience:** Human Users  
-**Related:** `FR_BR_INTAKE_GUIDE.md`, `T002-decision-flow-design.md`
+**Related:** `FR_BR_INTAKE_GUIDE.md`, `T02-decision-flow-design.md`
 
 ---
 
@@ -254,7 +254,7 @@ You can create Task documents in two formats:
 
 **Format 1: Separate Task File (Recommended for complex tasks)**
 - Create a new file: `Task-{task}-{description}.md` in the Story directory
-- Example: `docs/project-management/kanban/epics/Epic-4/Story-11/Task-001-update-kanban-policy.md`
+- Example: `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
 
 **Format 2: Delimited Section (Recommended for simple tasks)**
 - Add a section to the Story file with Task ID header

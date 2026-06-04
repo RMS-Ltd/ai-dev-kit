@@ -74,7 +74,7 @@ All kanban documents verified for consistency:
 
 ### Modified Files
 
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+- `docs/project-management/kanban/epics/epic-06/epic-06.md`
   - Updated "Last updated" field to v0.6.7.13+1
   - Story checklist already showed E6:S07 as COMPLETE (from previous RW)
 

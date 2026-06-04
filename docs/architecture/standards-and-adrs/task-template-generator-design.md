@@ -71,7 +71,7 @@ templates/tasks/Epic-{epic}/Story-{story}/T{task:02d}-{kebab-case-description}.m
 
 **Example:**
 ```
-templates/tasks/Epic-1/Story-1/T01-Define-Project-Structure-and-Directory-Layout.md
+templates/tasks/epic-01/story-001/T01-Define-Project-Structure-and-Directory-Layout.md
 ```
 
 **File Structure:**

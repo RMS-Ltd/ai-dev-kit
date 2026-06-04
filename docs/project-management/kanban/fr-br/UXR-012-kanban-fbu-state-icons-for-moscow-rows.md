@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** ACCEPTED — **Set A primary + Unicode fallback** signed off 2026-05-20 (refined from interim Set D; intake **E04:S13:T07**)  
 **Code:** UXR-012  
 
-**Implementing Task:** [E04:S13:T07](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md)
+**Implementing Task:** [E04:S13:T07](../epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md)
 
 **Related:** [UXR-005](UXR-005-kanban-board-formatting-and-governance.md) (readability), [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) (row grammar), [FR-077](FR-077-ipw-built-task-status-transition-and-kboard-sync.md) (status propagation), [kanban-board-guide.md](../kanban-board-guide.md)
 

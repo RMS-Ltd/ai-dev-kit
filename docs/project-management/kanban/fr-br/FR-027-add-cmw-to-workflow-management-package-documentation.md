@@ -155,7 +155,7 @@ Verify that CMW files are included in package builds:
 - **CMW Documentation:** `packages/frameworks/workflow mgt/scripts/changelog/README.md`
 - **Package README:** `packages/frameworks/workflow mgt/README.md`
 - **RW Integration:** RW Step 9.5 triggers CMW automatically
-- **CMW Task:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md`
+- **CMW Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md`
 
 ---
 

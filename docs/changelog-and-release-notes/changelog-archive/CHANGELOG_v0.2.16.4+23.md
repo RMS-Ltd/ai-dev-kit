@@ -35,4 +35,4 @@ Perpetual UKW anchor release (**E02:S16:T04**, `RW --art` after **UKW -u**): syn
 
 ---
 
-**Task:** [E02:S16:T04](docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+**Task:** [E02:S16:T04](docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)

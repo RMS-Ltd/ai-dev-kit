@@ -34,7 +34,7 @@ This release completes **Task 3: Update dev-kit Kanban governance policy as cano
   - Documents relationship between framework policy (SoT) and project-specific adaptations
   - Lists all 9 Operational Principles sections for reference
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-kanban-implementation.md`):
+- ✅ Updated **Story 001** (`story-01-dev-kit-kanban-implementation.md`):
   - Marked Task 3 as complete in task checklist
   - Updated task details with completion status and summary
 
@@ -100,7 +100,7 @@ The framework policy now serves as the comprehensive canonical SoT with all oper
 
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md` (major update - added 9 Operational Principles sections)
 - `docs/project-management/rituals/policy/kanban-governance-policy.md` (enhanced SoT reference)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.1.1+4)
 
 ---

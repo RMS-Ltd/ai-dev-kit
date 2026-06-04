@@ -24,7 +24,7 @@ Attempted resolution of FR-046 (Dual-Version Mode Requires Task-Touch SemVer in 
 - **E2:S13:T07** — SUPERSEDED by E5:S01:T46
 - `FR-046-implementation-guide.md` — dual mode requires task_touch; remove stale registry-default wording for dual repos
 - `kboard.md` / `fbuboard.md` — T46/FR-046 closure rows
-- `Story-001-fr-repo.md` — T46 checklist COMPLETE
+- `story-01-fr-repo.md` — T46 checklist COMPLETE
 
 ## Verification
 
@@ -33,6 +33,6 @@ Attempted resolution of FR-046 (Dual-Version Mode Requires Task-Touch SemVer in 
 
 ---
 
-**Task:** [E5:S01:T46](docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
+**Task:** [E5:S01:T46](docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
 **FR:** [FR-046](docs/project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)  
 **IPP:** [IPP-E5S01T46](docs/implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)

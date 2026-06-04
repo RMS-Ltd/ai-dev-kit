@@ -33,11 +33,11 @@
 
 ## Example: Epic 1 Contextualized
 
-See `Epic-1.md` for the contextualized version of Epic 1.
+See `epic-01.md` for the contextualized version of Epic 1.
 
 ## Example: Epic 11 Contextualized
 
-See `Epic-11.md` for the contextualized version of Epic 11 (API).
+See `epic-11.md` for the contextualized version of Epic 11 (API).
 
 ## Notes
 

@@ -116,8 +116,8 @@ Updated Kanban governance policy documents that:
 - E4:S11:T02: Create Task Document Template and Update Story Template (next task)
 
 **Related Stories:**
-- [E4:S11: Kanban Granularity & Discrete Task Docs (Kanban Framework)](../../docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs.md)
-- [E2:S09: Kanban Granularity & Discrete Task Docs (Workflow Management)](../../docs/project-management/kanban/epics/Epic-2/Story-009-kanban-granularity-discrete-task-docs.md)
+- [E4:S11: Kanban Granularity & Discrete Task Docs (Kanban Framework)](../../docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md)
+- [E2:S09: Kanban Granularity & Discrete Task Docs (Workflow Management)](../../docs/project-management/kanban/epics/epic-02/story-09-kanban-granularity-discrete-task-docs.md)
 
 ---
 

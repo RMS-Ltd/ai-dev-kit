@@ -271,7 +271,7 @@ workflow_execution:
     updates: "CHANGELOG.md (canonical ordering)"
   
   step_6_kanban_update:
-    reads_story: "Story-33-*.md (authoritative)"
+    reads_story: "story-33-*.md (authoritative)"
     updates_epic_header: "Last updated: 2025-12-04 (v0.4.33.1+2 – E4:S33:T01 complete)"
     updates_story_checklist: "No change (story still IN PROGRESS)"
     updates_task_checklist: "- [x] **E4:S33:T01** ✅ COMPLETE (v0.4.33.1+2)"
@@ -492,7 +492,7 @@ validation_scripts:
 ### Dev-Kit Specific (Reference Only)
 
 - **Dev-Kit Integration Guide:** `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`
-- **Dev-Kit Validation:** `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration.md`
+- **Dev-Kit Validation:** `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration.md`
 
 ---
 

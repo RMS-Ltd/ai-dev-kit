@@ -8,9 +8,9 @@ housekeeping_policy: keep
 
 # E5:S09:T11 – Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) **(E5:S09:T11)**  
+**Host Task:** [`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) **(E5:S09:T11)**  
 **Planning for:** [BR-068 – Docusaurus strict MDX / monorepo Markdown links](../project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)  
-**Related:** [FR-067](../project-management/kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md); [Story 009 – Docusaurus Documentation Portal](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal.md) (T08/T10 strict mode)  
+**Related:** [FR-067](../project-management/kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md); [Story 009 – Docusaurus Documentation Portal](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md) (T08/T10 strict mode)  
 **Status:** Complete — **Waves 1–4 delivered** (2026-04-19); closing release **v0.5.9.11+5** (**RW** **`--art`**)
 
 ---
@@ -111,7 +111,7 @@ Execution order should follow **policy lock → corpus/config → verification �
 | Step | Action | Deliverable |
 |------|--------|-------------|
 | 4.1 | Check **BR-068** acceptance criteria; update **[BR-068](../project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** status/history when defect is remediated. | **Done (2026-04-19):** **BR-068** **`Status: COMPLETE`** + **Resolution** + AC checked; **`v0.5.9.11+5`**. |
-| 4.2 | Update **host task** [T11](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) Progress + Acceptance Criteria; optional **RW** when implementation slice is ready ([FR-070](../project-management/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md) depends on green build). | **Done:** **T11** **`COMPLETE`** + AC checked + **`CHANGELOG_v0.5.9.11+5`**. |
+| 4.2 | Update **host task** [T11](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) Progress + Acceptance Criteria; optional **RW** when implementation slice is ready ([FR-070](../project-management/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md) depends on green build). | **Done:** **T11** **`COMPLETE`** + AC checked + **`CHANGELOG_v0.5.9.11+5`**. |
 
 **Files likely touched (living list):**
 
@@ -127,7 +127,7 @@ Execution order should follow **policy lock → corpus/config → verification �
 ## 4. Success / verification criteria
 
 - [x] **BR-068** acceptance criteria satisfied (cross-check [BR-068 § Acceptance Criteria](../project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)).
-- [x] **T11** acceptance criteria satisfied ([task doc](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)): no unexplained regression vs FR-067 strict intent.
+- [x] **T11** acceptance criteria satisfied ([task doc](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)): no unexplained regression vs FR-067 strict intent.
 - [x] **TD1–TD3** executed or explicitly deferred with rationale in task Progress.
 - [x] **Bidirectional wiring:** this IPW ↔ **E5:S09:T11** remain linked ([FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md) host linkage).
 
@@ -135,9 +135,9 @@ Execution order should follow **policy lock → corpus/config → verification �
 
 ## References
 
-- [Host task – E5:S09:T11](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+- [Host task – E5:S09:T11](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
 - [BR-068](../project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)
 - [FR-067](../project-management/kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
 - [FR-070](../project-management/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
-- [E5:S09:T08](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md), [E5:S09:T10](../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)
+- [E5:S09:T08](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md), [E5:S09:T10](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)
 - Docusaurus: [Markdown links](https://docusaurus.io/docs/markdown-features/links), [Multiple docs plugin instances](https://docusaurus.io/docs/docs-multi-instance/)

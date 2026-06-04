@@ -448,7 +448,7 @@ find docs/kanban -name "Story-*.md"
 
 # Check pattern match
 # Pattern: docs/kanban/epics/Epic-{epic}/stories/Story-{N}-*.md
-# Actual: docs/kanban/epics/Epic-1/Story-1-Login-System.md
+# Actual: docs/kanban/epics/epic-01/story-01-Login-System.md
 ```
 
 ### Solution
@@ -462,15 +462,15 @@ story_doc_pattern: "docs/kanban/epics/Epic-{epic}/Story-{N}-*.md"
 **Verify File Structure:**
 ```bash
 # Expected structure
-docs/kanban/epics/Epic-1/Story-1-Login-System.md
-docs/kanban/epics/Epic-1/Story-2-Registration-System.md
+docs/kanban/epics/epic-01/story-01-Login-System.md
+docs/kanban/epics/epic-01/story-02-Registration-System.md
 ```
 
 **Create Story File:**
 ```bash
 # Create Story file if missing
-mkdir -p docs/kanban/epics/Epic-1
-touch docs/kanban/epics/Epic-1/Story-1-Login-System.md
+mkdir -p docs/kanban/epics/epic-01
+touch docs/kanban/epics/epic-01/story-01-Login-System.md
 ```
 
 ### Prevention
@@ -652,7 +652,7 @@ END: Kanban docs fixed
 python -c "from src.myproject.version import VERSION_STRING; print(VERSION_STRING)"
 
 # Test Story file reading
-cat docs/kanban/epics/Epic-1/Story-1-Login-System.md
+cat docs/kanban/epics/epic-01/story-01-Login-System.md
 
 # Test RW Step 2 logic manually
 # Compare completed task vs. current VERSION_TASK

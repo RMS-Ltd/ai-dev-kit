@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** IMPLEMENTED (deliverables on **`dev`** via **E06:S09:T01**; see § Implementation evidence)
 
-**Implementing Task:** [E06:S09:T01](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
+**Implementing Task:** [E06:S09:T01](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
 
 ---
 

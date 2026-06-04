@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ✅ Documentation Update: Kanban documentation updates to reflect E4:S13 completion across all kanban board views.
 
-This release updates all kanban documentation to accurately reflect that Epic 4, Story 13 (Kanban Board Enhancement - MoSCOW Prioritized Task View) is complete with all 6 tasks finished. The updates ensure consistency across the main kanban board, quick view board, and Epic-4 documentation.
+This release updates all kanban documentation to accurately reflect that Epic 4, Story 13 (Kanban Board Enhancement - MoSCOW Prioritized Task View) is complete with all 6 tasks finished. The updates ensure consistency across the main kanban board, quick view board, and epic-04 documentation.
 
 ---
 
@@ -41,7 +41,7 @@ This release updates all kanban documentation to accurately reflect that Epic 4,
   - Updated Epic 4 story count from 12 to 13
   - Updated Epic 4 progress from 8/12 to 10/13 complete
 
-- **Epic-4.md:**
+- **epic-04.md:**
   - Verified E4:S13 is marked as COMPLETE ✅
   - Updated version to v0.4.13.6+2
   - Updated task list to show T05 and T06 as COMPLETE (previously showing T05-T06 as TODO)
@@ -66,7 +66,7 @@ This release updates all kanban documentation to accurately reflect that Epic 4,
 
 - `docs/project-management/kanban/kanban-board.md`
 - `docs/project-management/kanban/_index.md`
-- `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
+- `docs/project-management/kanban/epics/epic-04/epic-04.md`
 - `src/fynd_deals/version.py`
 
 ---

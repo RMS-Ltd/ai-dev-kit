@@ -26,7 +26,7 @@ Validated versioning behavior against documented guidance in the Numbering & Ver
 
 ### Added
 
-- **Versioning behavior validation document** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T03-versioning-behavior-validation.md`)
+- **Versioning behavior validation document** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T03-versioning-behavior-validation.md`)
   - Schema rules validation (all components validated and match documentation)
   - Edge cases validation (doc-init builds, out-of-order tasks, parallel epics)
   - Guidance consistency analysis (policy documents consistent)
@@ -35,11 +35,11 @@ Validated versioning behavior against documented guidance in the Numbering & Ver
 
 ### Changed
 
-- **Story document** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review.md`)
+- **Story document** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review.md`)
   - Marked E3:S04:T03 as COMPLETE (v0.3.4.3+1)
   - Updated last updated timestamp and version
 
-- **Epic document** (`docs/project-management/kanban/epics/Epic-3/Epic-3.md`)
+- **Epic document** (`docs/project-management/kanban/epics/epic-03/epic-03.md`)
   - Updated Story 4 progress to reflect T03 completion
   - Updated last updated timestamp and version
 

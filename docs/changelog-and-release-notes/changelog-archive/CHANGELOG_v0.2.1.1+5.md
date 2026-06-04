@@ -112,7 +112,7 @@ The cursorrules RW trigger section is now fully aligned with the dev-kit version
 ## 📄 Files Changed
 
 - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` (aligned with dev-kit policy)
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-001-rw-agent-execution-and-docs.md` (status update)
+- `docs/project-management/kanban/epics/epic-02/stories/story-01-rw-agent-execution-and-docs.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.2.1.1+5)
 
 ---

@@ -171,7 +171,7 @@ This catalog synthesizes **good practices** (what works well) and **bad practice
 **Impact:** MODERATE - Reduces consistency  
 **Examples:**
 - Mixed usage across projects
-- Some projects use hyphen (`Epic-1`)
+- Some projects use hyphen (`epic-01`)
 - Some projects use space (`Epic 1`)
 - Some projects use abbreviated (`E1`)
 

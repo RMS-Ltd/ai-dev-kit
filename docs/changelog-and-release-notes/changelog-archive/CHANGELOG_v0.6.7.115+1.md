@@ -14,8 +14,8 @@ Filed and housed UXR-driven guardrails work for preserving `Last modified` foren
 - New UXR intake:
   - `docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md`
 - New task anchor and story wiring:
-  - `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md`
-  - `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md`
+  - `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md`
+  - `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md`
 - Planning package (ICW triad) for T115:
   - `docs/implementation-cycles/ICW-E6S07T115-specification.md`
   - `docs/implementation-cycles/ICW-E6S07T115-test-design.md`

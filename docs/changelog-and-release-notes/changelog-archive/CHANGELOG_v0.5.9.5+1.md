@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-03-30 15:52:14 UTC  
 **Epic:** 5 | **Story:** 9 | **Task:** 5  
-**Task doc:** [T05-docusaurus-ci-fr-069.md](../../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T05-docusaurus-ci-fr-069.md)  
+**Task doc:** [T05-docusaurus-ci-fr-069.md](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T05-docusaurus-ci-fr-069.md)  
 **FR:** [FR-069](../../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
 
 ## Summary

@@ -26,7 +26,7 @@ Create individual epic template files for project-specific canonical epics 8-21.
 
 ### Added
 
-- **Epic 11 Template:** `packages/frameworks/kanban/templates/epics/Epic-11-API-Backend.md`
+- **Epic 11 Template:** `packages/frameworks/kanban/templates/epics/epic-11-API-Backend.md`
 
 ### Changed
 

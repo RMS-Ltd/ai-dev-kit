@@ -201,7 +201,7 @@ CMW handles errors gracefully:
 - **Archival Policy:** `docs/architecture/standards-and-adrs/changelog-archival-policy.md`
 - **Management Policy:** `docs/architecture/standards-and-adrs/changelog-management-policy.md`
 - **Workflow Definition:** `packages/frameworks/workflow mgt/workflows/changelog-management-workflow.yaml`
-- **Task Document:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md`
+- **Task Document:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md`
 
 ---
 

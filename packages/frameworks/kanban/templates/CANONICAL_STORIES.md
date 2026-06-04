@@ -38,7 +38,7 @@ This story tracks all bug reports and bug fixes related to the system, framework
 - `FR_BR_INTAKE_GUIDE.md` - Intake process guide
 
 **Example Location:**
-- `docs/project-management/kanban/epics/Epic-6/Story-004-bug-reports.md`
+- `docs/project-management/kanban/epics/epic-06/story-04-bug-reports.md`
 
 ---
 
@@ -64,7 +64,7 @@ This story tracks all feature requests and feature implementations related to th
 - `FR_BR_INTAKE_GUIDE.md` - Intake process guide
 
 **Example Location:**
-- `docs/project-management/kanban/epics/Epic-6/Story-005-feature-requests.md`
+- `docs/project-management/kanban/epics/epic-06/story-05-feature-requests.md`
 
 ---
 
@@ -97,7 +97,7 @@ This story tracks ongoing maintenance tasks for framework packages, including fr
 - Use framework-specific templates for workflow updates
 
 **Example Location:**
-- `docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance.md`
+- `docs/project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance.md`
 
 ---
 

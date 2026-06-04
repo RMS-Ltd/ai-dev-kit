@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 6      # Epic 6 — ADK Installation and Adopter Integration
-VERSION_STORY = 9     # Story 9 — Installation and adopter integration
-VERSION_TASK = 15     # Task 15 — Install/setup interactive feedback external SemVer (UXR-016)
-VERSION_BUILD = 2     # Build 2: UXR-016 reclassification docs (FR-108 deleted; kanban rewire)
+VERSION_EPIC = 4      # Epic 4 — Kanban Framework
+VERSION_STORY = 19    # Story 19 — FR/BR/UXR abstract governance and intake
+VERSION_TASK = 11     # Task 11 — Kanban epic/story path lowercase naming (UXR-017)
+VERSION_BUILD = 1     # Build 1: ADR-015 paths, template pack, installer GH sign-off contract
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.15+2
+# Current: 0.4.19.11+1

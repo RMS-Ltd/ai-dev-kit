@@ -23,7 +23,7 @@
 ### Surface: `task_doc`
 
 - Touched: **True**
-- Path: `docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md`
+- Path: `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md`
 - Changes: Version anchor **v0.6.9.5+4**; status notes dev consolidation from `main`.
 
 ### Surface: `fbu_doc`
@@ -49,5 +49,5 @@
 ### Auxiliary: `story_doc`
 
 - Touched: **True**
-- Path: `docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md`
+- Path: `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md`
 - Changes: Story version **v0.6.9.5+4**; T05 checklist line updated.

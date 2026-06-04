@@ -322,8 +322,8 @@ Provide a high-level overview of code quality across the entire project.
 
 - **Code Quality Metrics Framework:** `docs/architecture/standards-and-adrs/code-quality-metrics-framework.md`
 - **Framework Health Dashboard Guide:** `docs/architecture/standards-and-adrs/framework-health-dashboard-guide.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 3:** `docs/project-management/kanban/epics/Epic-7/Story-003-code-quality-metrics-and-monitoring.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 3:** `docs/project-management/kanban/epics/epic-07/story-03-code-quality-metrics-and-monitoring.md`
 
 ---
 

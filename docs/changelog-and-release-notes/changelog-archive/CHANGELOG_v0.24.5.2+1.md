@@ -28,7 +28,7 @@ Create E24:S05:T02 task document for proposing book chapter structure. Task buil
 
 ### New Files
 
-- `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md` — Task 2 document (updated in previous release)
+- `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md` — Task 2 document (updated in previous release)
 
 ### Modified Files
 
@@ -107,6 +107,6 @@ Manages development of "Vibe Coding For Dummies" book.
 
 ## References
 
-- Task: `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md`
-- Story: `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning.md`
-- Epic: `docs/project-management/kanban/epics/Epic-24/Epic-24.md`
+- Task: `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md`
+- Story: `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning.md`
+- Epic: `docs/project-management/kanban/epics/epic-24/epic-24.md`

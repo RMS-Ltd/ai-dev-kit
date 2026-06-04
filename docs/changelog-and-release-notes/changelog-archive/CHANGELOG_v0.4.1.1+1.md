@@ -17,12 +17,12 @@ This release establishes **Epic 4: Kanban Framework** and creates **Story 1: Dev
 
 ### Epic 4 Structure
 
-- ✅ Created **Epic 4: Kanban Framework** (`docs/project-management/kanban/epics/Epic-4.md`)
+- ✅ Created **Epic 4: Kanban Framework** (`docs/project-management/kanban/epics/epic-04.md`)
   - Owns `packages/frameworks/kanban/` package
   - Defines goals for dev-kit Kanban implementation, FR/BR intake flow, and Kanban+Versioning+RW integration
   - Story checklist with 3 planned stories
 
-- ✅ Created **Story 1: Dev Kit Kanban Implementation** (`docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation.md`)
+- ✅ Created **Story 1: Dev Kit Kanban Implementation** (`docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation.md`)
   - Goal: Establish dev-kit Kanban governance policy as canonical SoT
   - 5 tasks defined:
     - T001: Review existing dev-kit Kanban policies and templates

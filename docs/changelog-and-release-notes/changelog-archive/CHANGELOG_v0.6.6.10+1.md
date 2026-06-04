@@ -111,10 +111,10 @@ Implementation plan complete for Phase 3 package management system. Comprehensiv
 ## Files Changed
 
 - `docs/Analysis/package-management-implementation-plan.md` (new)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T04-create-package-management-implementation-plan.md` (new)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T04-create-package-management-implementation-plan.md` (new)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 - `docs/project-management/kanban/kanban-board.md`
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+- `docs/project-management/kanban/epics/epic-06/epic-06.md`
 - `src/fynd_deals/version.py`
 
 ---

@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.19.11+1] - 04-06-26
+
+E04:S19:T11 — **UXR-017** kanban path lowercase + padded segments (ADR-015): corpus + template pack migration, installer **GitHub Issue sign-off** contract/hooks, `rw-config` patterns. Expenses Tracker AC5 open. SemVer **v0.4.867+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.11+1.md)
+
+---
+
 ## [0.6.9.15+2] - 04-06-26
 
 E06:S09:T15 — **Docs-only:** FR-108 → **UXR-016** reclassification — deleted FR-108, rewired kanban/planning/forensics and traceability comments (no functional install changes). SemVer **v0.4.866+2**.

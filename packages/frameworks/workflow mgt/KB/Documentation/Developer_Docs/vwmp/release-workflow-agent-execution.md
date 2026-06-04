@@ -457,17 +457,17 @@ story_doc_pattern = config.get('story_doc_pattern') if config and config.get('us
 
 - **On `epic/4` branch [Example: Confidentia]:**
   - ✅ Version file shows `0.4.x.x+x` → PASS
-  - ✅ Modified files in `Epic-4/` directory → PASS
+  - ✅ Modified files in `epic-04/` directory → PASS
   - ✅ Changelog entry references Epic 4 [Example: Confidentia] → PASS
   - ❌ Version file shows `0.5.x.x+x` → FAIL (mismatch)
-  - ❌ Modified files in `Epic-5/` directory → FAIL (mismatch)
+  - ❌ Modified files in `epic-05/` directory → FAIL (mismatch)
 
 - **On `epic/2` branch [Example: ai-dev-kit]:**
   - ✅ Version file shows `0.2.x.x+x` → PASS
-  - ✅ Modified files in `Epic-2/` directory → PASS
+  - ✅ Modified files in `epic-02/` directory → PASS
   - ✅ Changelog entry references Epic 2 → PASS
   - ❌ Version file shows `0.3.x.x+x` → FAIL (mismatch)
-  - ❌ Modified files in `Epic-3/` directory → FAIL (mismatch)
+  - ❌ Modified files in `epic-03/` directory → FAIL (mismatch)
 
 - **On `main` branch:**
   - ✅ Any epic number allowed (main can have any epic)
@@ -822,7 +822,7 @@ See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br
         - Location patterns:
           - `{kanban_root}/epics/Epic-{epic}/Story-{story}/Task-{task}-*.md`
           - `{kanban_root}/epics/Epic-{epic}/Story-{story}/T{task}-*.md`
-        - [Example: ai-dev-kit] `docs/project-management/kanban/epics/Epic-4/Story-11/Task-001-*.md` or `T001-*.md`
+        - [Example: ai-dev-kit] `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-*.md` or `T01-*.md`
      2. **Delimited Section Format (Alternative):**
         - Location: Within the Story file itself
         - Pattern: Section header matching `### E{epic}:S{story}:T{task} –` or `### E{epic}:S{story}:T{task} –`
@@ -892,7 +892,7 @@ See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br
 **Example 1: Doc-Init Build (First-Time Task Document Creation)**
 - **Scenario:** Creating Task document for `E2:S10:T01` for the first time
 - **Detection (A.1):**
-  - ✅ New Task document created: `docs/project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md` (delimited section)
+  - ✅ New Task document created: `docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md` (delimited section)
   - ✅ No prior version exists: No `0.2.10.1+*` in git history or changelog
   - ✅ Docs-only changes: Only `.md` files changed, no code files
 - **Task Identification (B):**
@@ -1105,8 +1105,8 @@ Tasks can be documented in one of two formats:
 - `{kanban_root}/epics/Epic-{epic}/Story-{story}/T{task}-*.md`
 
 **Examples:**
-- [Example: ai-dev-kit] `docs/project-management/kanban/epics/Epic-4/Story-11/Task-001-update-kanban-policy.md`
-- [Example: ai-dev-kit] `docs/project-management/kanban/epics/Epic-4/Story-11/T001-update-kanban-policy.md`
+- [Example: ai-dev-kit] `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
+- [Example: ai-dev-kit] `docs/project-management/kanban/epics/epic-04/Story-11/T01-update-kanban-policy.md`
 
 **When to Use:**
 - Tasks with significant complexity or multiple phases
@@ -1185,7 +1185,7 @@ If Task document validation fails, the workflow:
 ❌ TASK DOCUMENT NOT FOUND: Task E4:S11:T01 does not have a Task document.
 
 Action Required:
-1. Create Task document at: docs/project-management/kanban/epics/Epic-4/Story-11/Task-001-description.md
+1. Create Task document at: docs/project-management/kanban/epics/epic-04/Story-11/Task-001-description.md
    OR
 2. Add delimited section to Story file with header: ### E4:S11:T01 – Task Title
 
@@ -1230,7 +1230,7 @@ The Versioning Policy requires that:
 
 **Task:** E4:S11:T01 – Update Kanban Governance Policy
 
-**Location:** `docs/project-management/kanban/epics/Epic-4/Story-11/Task-001-update-kanban-policy.md`
+**Location:** `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
 
 **Task Checklist Entry (in Story file):**
 ```markdown
@@ -1240,7 +1240,7 @@ The Versioning Policy requires that:
 
 **RW Step 2 Behavior:**
 1. Identifies completed task: E4:S11:T01
-2. Locates Task document: `docs/project-management/kanban/epics/Epic-4/Story-11/Task-001-update-kanban-policy.md`
+2. Locates Task document: `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
 3. Validates required fields: ✅ All present
 4. Verifies Task ID alignment: ✅ E4:S11:T01 matches version components
 5. Proceeds to version bump
@@ -1249,7 +1249,7 @@ The Versioning Policy requires that:
 
 **Task:** E4:S11:T02 – Create Task Document Template
 
-**Location:** Delimited section within Story file: `docs/project-management/kanban/epics/Epic-4/Story-11/Story-011-kanban-granularity-discrete-task-docs.md`
+**Location:** Delimited section within Story file: `docs/project-management/kanban/epics/epic-04/Story-11/story-11-kanban-granularity-discrete-task-docs.md`
 
 **Task Section in Story file:**
 ```markdown
@@ -1877,7 +1877,7 @@ Record the snapshot directory path for Step 10 stamp-diff validation.
 ```bash
 $ python packages/frameworks/workflow mgt/scripts/update_kanban_docs.py
 🔍 Updating Kanban docs for v0.2.8.5+1 (E2:S8:T5)
-📄 Story doc: /path/to/Story-008-harden-release-workflow-reliability.md
+📄 Story doc: /path/to/story-08-harden-release-workflow-reliability.md
 ✅ Story doc updated: Updated Status: IN PROGRESS, Updated Last updated: 2025-12-15 (v0.2.8.5+1 – T05 complete: Task), Updated Version: v0.2.8.5+1
 ✅ Epic doc updated: Updated Epic Last updated: 2025-12-15 (v0.2.8.5+1 – Story 8 Task 5 complete)
 ✅ Validation passed: All Kanban docs updates verified
@@ -1888,7 +1888,7 @@ $ python packages/frameworks/workflow mgt/scripts/update_kanban_docs.py
 ```bash
 $ python packages/frameworks/workflow mgt/scripts/update_kanban_docs.py
 🔍 Updating Kanban docs for v0.2.8.5+1 (E2:S8:T5)
-📄 Story doc: /path/to/Story-008-harden-release-workflow-reliability.md
+📄 Story doc: /path/to/story-08-harden-release-workflow-reliability.md
 ✅ Story doc updated: Updated Status: IN PROGRESS, Updated Last updated: 2025-12-15 (v0.2.8.5+1 – T05 complete: Task), Updated Version: v0.2.8.5+1
 
 ❌ VALIDATION FAILED: Kanban docs update validation errors detected
@@ -1896,13 +1896,13 @@ $ python packages/frameworks/workflow mgt/scripts/update_kanban_docs.py
 ❌ VERSION MISMATCH: Story header version mismatch
    Expected: v0.2.8.5+1
    Found: v0.2.8.4+1
-   File: /path/to/Story-008-harden-release-workflow-reliability.md
+   File: /path/to/story-08-harden-release-workflow-reliability.md
 ================================================================================
 
 📋 RECOVERY GUIDANCE:
 ================================================================================
 📋 RECOVERY GUIDANCE: Version mismatch between expected and found values
-📄 Affected file: /path/to/Story-008-harden-release-workflow-reliability.md
+📄 Affected file: /path/to/story-08-harden-release-workflow-reliability.md
 
 🔧 Recovery Steps:
    1. Verify version file has correct version components
@@ -1924,7 +1924,7 @@ $ python packages/frameworks/workflow mgt/scripts/update_kanban_docs.py
 ```bash
 $ python packages/frameworks/workflow mgt/scripts/update_kanban_docs.py --dry-run
 🔍 Updating Kanban docs for v0.2.8.5+1 (E2:S8:T5)
-📄 Story doc: /path/to/Story-008-harden-release-workflow-reliability.md
+📄 Story doc: /path/to/story-08-harden-release-workflow-reliability.md
 ✅ Story doc updated: Updated Status: IN PROGRESS, Updated Last updated: 2025-12-15 (v0.2.8.5+1 – T05 complete: Task), Updated Version: v0.2.8.5+1
 ✅ Epic doc updated: Updated Epic Last updated: 2025-12-15 (v0.2.8.5+1 – Story 8 Task 5 complete)
 ✅ Kanban docs update complete for v0.2.8.5+1

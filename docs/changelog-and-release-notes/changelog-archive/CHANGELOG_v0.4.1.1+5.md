@@ -30,7 +30,7 @@ This release completes **Task 4: Align dev-kit Kanban templates with updated gov
   - Added consistency check reminder
   - Added forensic marker format note (`✅ COMPLETE (vRC.E.S.T+B)`)
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-kanban-implementation.md`):
+- ✅ Updated **Story 001** (`story-01-dev-kit-kanban-implementation.md`):
   - Marked Task 4 as complete in task checklist
   - Updated task details with completion status and summary
 
@@ -97,7 +97,7 @@ The templates now include explicit reminders about "ALL sections" requirement, f
 
 - `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md` (enhanced with governance notes)
 - `packages/frameworks/kanban/templates/STORY_TEMPLATE.md` (enhanced with governance notes)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.1.1+5)
 
 ---

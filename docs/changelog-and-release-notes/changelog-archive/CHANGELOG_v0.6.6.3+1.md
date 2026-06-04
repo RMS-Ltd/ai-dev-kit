@@ -52,7 +52,7 @@ Design and documentation complete for pre-release feedback mechanism. This relea
 
 ### Modified
 
-- **Story 6 documentation** (`docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`)
+- **Story 6 documentation** (`docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`)
   - Updated Task 3 status to COMPLETE (v0.6.6.3+1)
   - Updated acceptance criteria to reflect completion
   - Updated deliverables list with completed items
@@ -121,5 +121,5 @@ Design and documentation complete for pre-release feedback mechanism. This relea
 - **Feedback Mechanism Design:** `docs/architecture/standards-and-adrs/pre-release-feedback-mechanism-design.md`
 - **User-Facing Guide:** `docs/guides/framework-consumption/adk-feedback-guide.md`
 - **Feedback Template:** `packages/frameworks/kanban/templates/feedback-template.md`
-- **Story 6:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- **Story 6:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 

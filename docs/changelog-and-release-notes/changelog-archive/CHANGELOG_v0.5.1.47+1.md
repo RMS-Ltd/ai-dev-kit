@@ -23,8 +23,8 @@ title: "Changelog: v0.5.1.47+1"
 - Added **FR-047 – Install Logging for Framework Dependencies**:
   - `docs/project-management/kanban/fr-br/FR-047-install-logging-for-framework-dependencies.md`
 - Added repository anchor task **E5:S01:T47** to the FR Repo story:
-  - Updated `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`.
-  - Created task document: `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T47-install-logging-for-framework-dependencies.md`.
+  - Updated `docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`.
+  - Created task document: `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T47-install-logging-for-framework-dependencies.md`.
 - Updated **Kanban installer behaviour** so fresh installs for consumer projects:
   - Use canonical templates to install core Epics from `packages/frameworks/kanban/templates/epics/`.
   - Generate a clean consumer `kanban-board.md` and `kanban-board-guide.md` from templates (no ai-dev-kit backlog).

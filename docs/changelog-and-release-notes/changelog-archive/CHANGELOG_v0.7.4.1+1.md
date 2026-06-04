@@ -21,7 +21,7 @@ Created Story 4 for Epic 7: README Template Based on Best-README-Template. This 
 **Status:** TODO (Story created, tasks defined)
 
 **Story Created:**
-- Created Story 4 document: `docs/project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md`
+- Created Story 4 document: `docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`
 - Defined 6 tasks for implementing README template with dependency tracking
 
 **Tasks Defined:**
@@ -41,7 +41,7 @@ Created Story 4 for Epic 7: README Template Based on Best-README-Template. This 
 ## 📚 Documentation
 
 ### Added
-- **Story 4 Document:** `docs/project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md`
+- **Story 4 Document:** `docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`
   - Complete story definition with 6 tasks
   - Goals: Build on Best-README-Template, create ready-to-use template, include acknowledgments, provide customization guidance
   - Dependency tracking and automated update requirements defined

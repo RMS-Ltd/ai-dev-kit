@@ -35,6 +35,6 @@ Kanban-init release for E2:S16:T07. Re-houses `E6:S07:T108` (UKW extension for F
 
 ## Related
 
-- [E2:S16:T07](../../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)
-- [E6:S07:T108](../../../docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) (SUPERSEDED)
+- [E2:S16:T07](../../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)
+- [E6:S07:T108](../../../docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) (SUPERSEDED)
 - [FR-050](../../../docs/project-management/kanban/fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)

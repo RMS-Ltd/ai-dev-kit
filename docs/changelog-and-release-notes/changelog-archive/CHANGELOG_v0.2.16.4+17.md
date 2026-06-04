@@ -20,8 +20,8 @@ Perpetual UKW release attributing comprehensive kanban synchronization to **E2:S
 - **kanban-completed.md** — dashboard entries for T46, T74
 - **fbu-completed.md** — dashboard entries for FR-046, FR-011, FR-049, FR-074
 - **FR-049**, **FR-074** — status → IMPLEMENTED
-- **Story-001-fr-repo.md** — T49 checklist COMPLETE
+- **story-01-fr-repo.md** — T49 checklist COMPLETE
 
 ---
 
-**Task:** [E2:S16:T04](docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+**Task:** [E2:S16:T04](docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)

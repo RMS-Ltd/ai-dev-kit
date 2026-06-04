@@ -33,12 +33,12 @@
 
 ### Changed
 - Updated task references in Epic 2, Story 2 task files:
-  - Task dependency references: T001-T008 → T01-T08
-  - Task range references: "T001-T004" → "T01-T04"
-  - Files: T001-T006 task files updated
+  - Task dependency references: T01-T008 → T01-T08
+  - Task range references: "T01-T004" → "T01-T04"
+  - Files: T01-T006 task files updated
 - Updated task references in Epic 4, Story 3:
-  - Task range references: T001-T008 → T01-T08
-  - File: `T006-integration-examples.md`
+  - Task range references: T01-T008 → T01-T08
+  - File: `T06-integration-examples.md`
 - Updated FR/BR Intake Guide:
   - Task number examples: T004 → T04
   - File: `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`

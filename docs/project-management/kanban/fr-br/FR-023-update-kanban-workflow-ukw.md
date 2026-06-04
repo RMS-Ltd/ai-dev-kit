@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E02:S16:T04](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+**Implementing Task:** [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 
 ---
 
@@ -154,8 +154,8 @@ User wraps up a sprint/cycle and needs all kanban documentation synchronized to 
 - Version: `0.2.14.1+0`
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`Story-014-workflow-management-package-installation-evaluation.md`](../epics/Epic-2/Story-014-workflow-management-package-installation-evaluation.md) *(historical FR target name differed; live story file is this path)*
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`story-14-workflow-management-package-installation-evaluation.md`](../epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) *(historical FR target name differed; live story file is this path)*
 - Task: [Link to Task in Story document]
 
 ---

@@ -6,7 +6,7 @@
       ],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-6/Epic-6.md"
+        "docs/project-management/kanban/epics/epic-06/epic-06.md"
       ],
       "surface": "epic_doc",
       "touched": true
@@ -17,7 +17,7 @@
       ],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md"
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
       ],
       "surface": "story_doc",
       "touched": true
@@ -108,7 +108,7 @@
       ],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md"
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md"
       ],
       "surface": "task_doc",
       "touched": true

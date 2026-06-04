@@ -145,8 +145,8 @@ Added comprehensive task definition for exploring and evaluating KB platform/too
 
 - `src/fynd_deals/version.py` - Version bumped to `0.5.1.5+1`
 - `CHANGELOG.md` - Added entry for v0.5.1.5+1
-- `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md` - Added T05 task definition
-- `docs/project-management/kanban/epics/Epic-5/Epic-5.md` - Updated story status and version
+- `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md` - Added T05 task definition
+- `docs/project-management/kanban/epics/epic-05/epic-05.md` - Updated story status and version
 
 ---
 

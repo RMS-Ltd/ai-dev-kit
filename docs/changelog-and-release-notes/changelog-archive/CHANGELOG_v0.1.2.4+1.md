@@ -105,7 +105,7 @@ This release completes **Task 4: Document consumption patterns for each framewor
 This consumption patterns document provides practical, actionable guidance for users adopting the framework packages. It complements the modularity principles (T002) and dependency matrix (T003) by showing how to actually use the packages in practice.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture/T004-consumption-patterns.md` (comprehensive consumption patterns document)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture/T04-consumption-patterns.md` (comprehensive consumption patterns document)
 
 ---
 
@@ -117,9 +117,9 @@ This consumption patterns document provides practical, actionable guidance for u
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture/T004-consumption-patterns.md` (created)
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture.md` (task status updated)
-- `docs/project-management/kanban/epics/Epic-1.md` (status update)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture/T04-consumption-patterns.md` (created)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture.md` (task status updated)
+- `docs/project-management/kanban/epics/epic-01.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.1.2.4+1)
 
 ---

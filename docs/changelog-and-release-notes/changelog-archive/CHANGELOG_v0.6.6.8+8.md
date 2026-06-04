@@ -45,12 +45,12 @@ Kanban board updated to reflect Epic 7, Stories 3 and 4 completion. Code Quality
 
 ## References
 
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 6:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
-- **Task 8:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 6:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
+- **Task 8:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 - **Kanban Board:** `docs/project-management/kanban/kanban-board.md`
-- **Epic 7, Story 3:** `docs/project-management/kanban/epics/Epic-7/Story-003-code-quality-metrics-and-monitoring.md`
-- **Epic 7, Story 4:** `docs/project-management/kanban/epics/Epic-7/Story-004-maintenance-automation-and-tooling.md`
+- **Epic 7, Story 3:** `docs/project-management/kanban/epics/epic-07/story-03-code-quality-metrics-and-monitoring.md`
+- **Epic 7, Story 4:** `docs/project-management/kanban/epics/epic-07/story-04-maintenance-automation-and-tooling.md`
 
 ---
 

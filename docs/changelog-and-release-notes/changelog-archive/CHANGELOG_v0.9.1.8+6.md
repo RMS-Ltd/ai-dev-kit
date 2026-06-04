@@ -58,7 +58,7 @@ Task document update for T13 (Canonical CMW Perpetual Task) migration from E6:S0
 ## Technical Details
 
 **Files Modified:**
-- `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md`
+- `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md`
   - Story 6 → Story 7 migration
   - Version number updates (v0.6.6.13+* → v0.6.7.13+*)
   - Task reference updates (T12 → T102, T08 → T101)

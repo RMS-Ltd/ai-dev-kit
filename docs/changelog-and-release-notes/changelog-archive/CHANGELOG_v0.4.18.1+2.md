@@ -120,9 +120,9 @@ Completed implementation of **four-way Kanban architecture** with historical tas
 
 - `docs/project-management/kanban/README.md` - Updated to reflect four-way split
 
-- `docs/project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split.md` - Updated completion status
+- `docs/project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split.md` - Updated completion status
 
-- `docs/project-management/kanban/epics/Epic-4/Epic-4.md` - Updated Story 18 completion details
+- `docs/project-management/kanban/epics/epic-04/epic-04.md` - Updated Story 18 completion details
 
 - `rw-config.yaml` - Fixed story pattern for zero-padding
 

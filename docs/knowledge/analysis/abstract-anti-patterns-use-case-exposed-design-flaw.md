@@ -271,7 +271,7 @@ System logic that determines state based on incomplete information, leading to i
 
 - **Canonical Source:** [BR-010 – RW Doc-Init Detection Bug](../../project-management/kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) - **PRIMARY ANCHOR** - The authoritative bug report that documents the concrete example
 - **Use Case:** [UC-D-004 – Story + Task Docs Batch Creation](../use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md) - The valid use case that exposed the bug (anchored to BR-010)
-- **Task Document:** [E4:S13:T04 – Assess system impacts](../../project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md) - Where the bug was fixed
+- **Task Document:** [E4:S13:T04 – Assess system impacts](../../project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md) - Where the bug was fixed
 - **State Detection Logic:** The design flaw pattern category
 - **Design Robustness:** The broader category of design quality
 

@@ -27,10 +27,10 @@ E7:S06:T07: Spot-validated README relative targets; confirmed top-level `docs/` 
 ### Changed
 
 - **T07 task doc:** Status COMPLETE; audit table and findings
-- **Story-006, Epic-7, kanban-board, kanban-completed:** T07 closure and version markers
+- **story-006, epic-07, kanban-board, kanban-completed:** T07 closure and version markers
 
 ---
 
 ## Related Work
 
-**Task:** [T07-general-documentation-integrity.md](../../project-management/kanban/epics/Epic-7/Story-006-post-windsurf-project-review/T07-general-documentation-integrity.md)
+**Task:** [T07-general-documentation-integrity.md](../../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T07-general-documentation-integrity.md)

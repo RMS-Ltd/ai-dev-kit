@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** IMPLEMENTED (v0.2.15.3+2 — **E02:S15:T03**: duplicate-footer dual-agreement + divergence guardrails in `update_kanban_docs.py`; IPP/traceability alignment released)
 
-**Implementing Task:** [E02:S15:T03](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md)
+**Implementing Task:** [E02:S15:T03](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md)
 **IPP:** [IPP-E02S15T03](../../../implementation-cycles/IPP-E02S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
 
 ---

@@ -45,16 +45,16 @@ Wired the Phase 1 sample set from host task docs or story task anchors:
 
 | Artifact | Host surface |
 | -------- | ------------- |
-| `ICW-E5S01T35-*` (+ package-summary) | `Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md` |
-| `ICW-E5S01T46-*` (+ existing IPP plan) | `Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md` |
-| `ICW-E6S07T106-specification.md` | `Epic-6/.../T106-windsurf-migration-cursorrules-to-workflows.md` |
-| `ICW-E6S07T18-specification.md` | `Epic-6/.../T18-tool-agnostic-workflow-step-tracking-and-runlogs.md` |
-| `ICW-E7S01T07-*` | `Epic-7/.../T07-markdown-maintenance-workflow.md` |
-| `ICW-E1S06T01-specification.md` | `Epic-1/.../T01-setup-byob-badges-for-private-repository.md` |
-| `ICW-E4S11T07-specification.md` | `Epic-4/.../T07-planning-spec-tests-impl.md` |
-| `ICW-E10S01T01-specification.md` | `Epic-10/Story-001-document-lifecycle-package-implementation-review.md` (T01 anchor) |
-| `ICW-E11S01T01-specification.md` | `Epic-11/Story-001-debug-path-package-implementation-review.md` (T01 anchor) |
-| `ICW-E8S04T01-specification.md` | `Epic-8/Story-004-tooling-automation-package-implementation-review.md` (T01 anchor) |
+| `ICW-E5S01T35-*` (+ package-summary) | `epic-05/story-01-fr-repo/T35-task-template-cross-wiring-section.md` |
+| `ICW-E5S01T46-*` (+ existing IPP plan) | `epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md` |
+| `ICW-E6S07T106-specification.md` | `epic-06/.../T106-windsurf-migration-cursorrules-to-workflows.md` |
+| `ICW-E6S07T18-specification.md` | `epic-06/.../T18-tool-agnostic-workflow-step-tracking-and-runlogs.md` |
+| `ICW-E7S01T07-*` | `epic-07/.../T07-markdown-maintenance-workflow.md` |
+| `ICW-E1S06T01-specification.md` | `epic-01/.../T01-setup-byob-badges-for-private-repository.md` |
+| `ICW-E4S11T07-specification.md` | `epic-04/.../T07-planning-spec-tests-impl.md` |
+| `ICW-E10S01T01-specification.md` | `epic-10/story-01-document-lifecycle-package-implementation-review.md` (T01 anchor) |
+| `ICW-E11S01T01-specification.md` | `epic-11/story-01-debug-path-package-implementation-review.md` (T01 anchor) |
+| `ICW-E8S04T01-specification.md` | `epic-08/story-04-tooling-automation-package-implementation-review.md` (T01 anchor) |
 
 **Quick win (Phase 1):** `E02:S01:T17` ICW trio already wired in `T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md`.
 

@@ -54,8 +54,8 @@
 - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`
 
 ### 📚 Epic Content (4)
-- `epics/Epic-18-Documentation.md` → `Epic-9-Documentation.md`
-- `epics/Epic-9-User-Management.md` → `Epic-18-User-Management.md`
+- `epics/epic-18-Documentation.md` → `epic-09-Documentation.md`
+- `epics/epic-09-User-Management.md` → `epic-18-User-Management.md`
 - 6 story content files with epic renumbering
 
 ### 📝 Task Files (37)

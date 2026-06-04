@@ -39,7 +39,7 @@ Implemented the RW Recovery Journal and Rollback Contract for task E6:S06:T63 (B
 ### Updated
 
 - **`.claude/commands/rw.md`** — Added Recovery Journal section with initialization, step-boundary logging, abort recovery report emission, and documentation references.
-- **`docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md`** — Task status updated to `COMPLETE ✅ COMPLETE (v0.6.1.38+3)`, all acceptance criteria satisfied.
+- **`docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md`** — Task status updated to `COMPLETE ✅ COMPLETE (v0.6.1.38+3)`, all acceptance criteria satisfied.
 - **`docs/project-management/kanban/fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md`** — R4, R5, R6 marked resolved with references to implementation.
 - **`tests/test_integration.py`** — Fixed pre-existing `MockBackend` initialization bug (`BackendBase.__init__` now called with `name="mock"`).
 
@@ -74,5 +74,5 @@ No breaking changes. Existing RW execution continues unchanged; the journal is o
 
 ## Related Tasks
 
-- [E6:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — Implementing task
+- [E6:S06:T63](../epics/epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — Implementing task
 - [BR-038](../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) — Parent bug report

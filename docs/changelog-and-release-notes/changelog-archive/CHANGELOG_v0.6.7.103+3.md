@@ -31,5 +31,5 @@ E2:S16:T03: FR-042 bidirectional wiring emphasis, T07 plan doc wired to host tas
 
 ## Related
 
-- **Perpetual Task:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- **Perpetual Task:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - **FR-042:** [FR-042-implementation-planning-workflow-ipw.md](../../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

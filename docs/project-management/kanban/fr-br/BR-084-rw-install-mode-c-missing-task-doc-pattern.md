@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Status:** RESOLVED ✅ (fix **v0.6.9.13+2** + **BR-085** **v0.6.9.14+1**; verified **v0.6.9.14+2** — ExpensesTracker T03 replay 2026-06-03)  
 **GitHub Issue:** [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
 **Related:** [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) (BR-083 — prompt defaults) · [BR-085](BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) (story prompt infinite loop)  
-**Implementing Task:** [E06:S09:T13](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md)  
+**Implementing Task:** [E06:S09:T13](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md)  
 **Created:** 2026-06-03  
 **Source:** Book dry-run (ExpensesTracker); ADK `dev` @ `84efa7b`; kanban fresh → RW mode C
 
@@ -31,12 +31,12 @@ After `install_kanban_framework.py --mode fresh`, `install_release_workflow.py -
 ```text
 docs/project-management/kanban/
   kboard.md
-  epics/Epic-1/Epic-1.md
-  epics/Epic-2/Epic-2.md
+  epics/epic-01/epic-01.md
+  epics/epic-02/epic-02.md
   …
 ```
 
-No `epics/Epic-1/stories/` directory.
+No `epics/epic-01/stories/` directory.
 
 ## Actual generated kanban section (reader run)
 
@@ -70,7 +70,7 @@ Manual edit `rw-config.yaml` after install (ai-dev-kit-book T03 Step 4.1).
 
 ## Acceptance Criteria
 
-- [x] Fresh kanban → RW mode C → epic pattern matches `epics/Epic-1/Epic-1.md` without manual edit (T12 + T13).
+- [x] Fresh kanban → RW mode C → epic pattern matches `epics/epic-01/epic-01.md` without manual edit (T12 + T13).
 - [x] Generated config includes `task_doc_pattern` (+ `fr_br_root` when `fr-br/` exists).
 - [x] Integration test: `tests/test_install_release_workflow_rw_config.py`.
 

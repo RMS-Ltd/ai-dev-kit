@@ -73,7 +73,7 @@ Implemented Package Version Workflow (PVW) with intelligent agent-driven executi
 - **Validation Scripts:** `packages/frameworks/workflow mgt/scripts/validation/package/` (4 scripts)
 - **Version Bump Criteria:** `docs/architecture/standards-and-adrs/package-versioning-criteria.md`
 - **Package Changelog:** `packages/frameworks/workflow mgt/CHANGELOG.md`
-- **Task Documentation:** `docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-agentic-approach.md`
+- **Task Documentation:** `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-package-versioning-agentic-approach.md`
 
 ### Changed
 - **Release Workflow:** Added PVW as Step 2.5 in `release-workflow.yaml`

@@ -24,7 +24,7 @@
 
 - Touched: **False**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T06-dependabot-enablement-fr105.md`
 - Notes:
   - Surface within release scope but not touched by this run (idempotent no-op or already canonical).
 
@@ -59,15 +59,15 @@
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md`
 - Changes:
-  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts.md
+  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md
 
 ### Auxiliary: `epic_doc`
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Epic-8.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/epic-08.md`
 - Changes:
   - Updated Epic Last updated: 2026-06-03 (v0.8.3.6+1 – Kanban documentation setup)
 

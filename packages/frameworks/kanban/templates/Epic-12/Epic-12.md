@@ -78,19 +78,19 @@ This epic encompasses frontend and user interface for the {PROJECT_NAME} project
 
 **Brief Summary:** ui framework setup for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-ui-framework-setup.md`](Story-001-ui-framework-setup.md)
+**Story Document:** [`story-01-ui-framework-setup.md`](story-01-ui-framework-setup.md)
 
 ### Story 2: Core UI Components
 
 **Brief Summary:** core ui components for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-core-ui-components.md`](Story-002-core-ui-components.md)
+**Story Document:** [`story-02-core-ui-components.md`](story-02-core-ui-components.md)
 
 ### Story 3: User Interface Implementation
 
 **Brief Summary:** user interface implementation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-user-interface-implementation.md`](Story-003-user-interface-implementation.md)
+**Story Document:** [`story-03-user-interface-implementation.md`](story-03-user-interface-implementation.md)
 
 ---
 

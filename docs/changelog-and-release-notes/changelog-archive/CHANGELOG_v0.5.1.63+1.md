@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-E5:S01:T63 / FR-060: **Strict mandatory `E…S…T…` token** in the same message as `RW` / `RW -d` / `RW -k`. New **`validate_rw_task_complete.py`** (task doc exists; COMPLETE or perpetual; `--mode rw-k` for kanban-init). **`.cursorrules`** and **`cursorrules-rw-trigger-section.md`** Steps 1b–1d. **Renumbered FR-060** from colliding **T37** (FR-037) to **E5:S01:T63**. Documentation: `release-workflow-agent-execution.md` Steps 1.3–1.5, `release-workflow-reference.md`, workflow **README**. **`validate_rw_task_intent.py`**: `find_story_file` prefers `*fr-repo*.md` when multiple `Story-001*` paths match Epic 5. Tests: `test_validate_rw_task_complete.py`.
+E5:S01:T63 / FR-060: **Strict mandatory `E…S…T…` token** in the same message as `RW` / `RW -d` / `RW -k`. New **`validate_rw_task_complete.py`** (task doc exists; COMPLETE or perpetual; `--mode rw-k` for kanban-init). **`.cursorrules`** and **`cursorrules-rw-trigger-section.md`** Steps 1b–1d. **Renumbered FR-060** from colliding **T37** (FR-037) to **E5:S01:T63**. Documentation: `release-workflow-agent-execution.md` Steps 1.3–1.5, `release-workflow-reference.md`, workflow **README**. **`validate_rw_task_intent.py`**: `find_story_file` prefers `*fr-repo*.md` when multiple `story-001*` paths match Epic 5. Tests: `test_validate_rw_task_complete.py`.
 
 ---
 
@@ -36,7 +36,7 @@ E5:S01:T63 / FR-060: **Strict mandatory `E…S…T…` token** in the same messa
 - `release-workflow-agent-execution.md` — Steps 1.3, 1.4, 1.5; Step 2 deps
 - `release-workflow-reference.md`, `packages/frameworks/workflow mgt/README.md`
 - `validate_rw_task_intent.py` — `find_story_file` disambiguation for FR Repo story
-- Kanban: `T63-rw-task-argument-requirement.md`, `FR-060`, `Story-001-fr-repo.md`, `kanban-board.md`, removed duplicate T37 FR-060 file
+- Kanban: `T63-rw-task-argument-requirement.md`, `FR-060`, `story-01-fr-repo.md`, `kanban-board.md`, removed duplicate T37 FR-060 file
 
 ---
 

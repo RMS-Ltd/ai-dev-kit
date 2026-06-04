@@ -576,20 +576,20 @@ All questions have been answered and decisions incorporated into the canonical s
 
 ```
 docs/project-management/kanban/epics/
-├── Epic-1/
-│   ├── Epic-1.md
-│   ├── Story-001-project-foundation-and-setup/
-│   │   └── Story-001-project-foundation-and-setup.md
-│   ├── Story-002-workflow-management-framework/
-│   │   └── Story-002-workflow-management-framework.md
-│   └── Story-003-versioning-framework/
-│       └── Story-003-versioning-framework.md
-├── Epic-2/
-│   ├── Epic-2.md
-│   ├── Story-001-kanban-board-setup/
-│   │   └── Story-001-kanban-board-setup.md
-│   └── Story-002-fr-br-intake-process/
-│       └── Story-002-fr-br-intake-process.md
+├── epic-01/
+│   ├── epic-01.md
+│   ├── story-01-project-foundation-and-setup/
+│   │   └── story-01-project-foundation-and-setup.md
+│   ├── story-02-workflow-management-framework/
+│   │   └── story-02-workflow-management-framework.md
+│   └── story-03-versioning-framework/
+│       └── story-03-versioning-framework.md
+├── epic-02/
+│   ├── epic-02.md
+│   ├── story-01-kanban-board-setup/
+│   │   └── story-01-kanban-board-setup.md
+│   └── story-02-fr-br-intake-process/
+│       └── story-02-fr-br-intake-process.md
 └── ...
 ```
 
@@ -599,7 +599,7 @@ docs/project-management/kanban/epics/
 
 ### Epic Naming
 
-**CANONICAL:** `Epic-\{N\}` (hyphen, e.g., `Epic-1`, `Epic-9`)
+**CANONICAL:** `Epic-\{N\}` (hyphen, e.g., `epic-01`, `epic-09`)
 
 **Epic Numbering:**
 - **Core Epics:** 1-9 (always installed)
@@ -611,8 +611,8 @@ docs/project-management/kanban/epics/
 **CANONICAL:** `Story-{NNN}-\{description\}` (3-digit padding, kebab-case)
 
 **Examples:**
-- `Story-001-project-foundation-and-setup.md`
-- `Story-002-workflow-management-framework.md`
+- `story-01-project-foundation-and-setup.md`
+- `story-02-workflow-management-framework.md`
 
 ### Task Naming
 

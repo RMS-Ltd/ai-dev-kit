@@ -21,8 +21,8 @@ Updated E3:S02:T06 status from COMPLETE to PERPETUAL to reflect that changelog o
 **Status Change:** ✅ COMPLETE → 🔄 PERPETUAL
 
 **Changes Made:**
-- Updated task status in Story-002-versioning-cookbook-and-examples.md task checklist
-- Updated task status in Epic-3.md task checklist
+- Updated task status in story-02-versioning-cookbook-and-examples.md task checklist
+- Updated task status in epic-03.md task checklist
 - Added status note in task section explaining PERPETUAL designation
 - Added "Ongoing maintenance of changelog canonical ordering" to deliverables
 

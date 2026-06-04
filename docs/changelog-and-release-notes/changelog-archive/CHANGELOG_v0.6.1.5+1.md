@@ -121,12 +121,12 @@ Frameworks:
 1. `docs/architecture/standards-and-adrs/framework-version-tagging-strategy.md` (new)
    - Comprehensive framework version tagging strategy document
 
-2. `docs/project-management/kanban/epics/Epic-6/Story-001-framework-version-management.md`
+2. `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md`
    - Task checklist updated: T05 marked as COMPLETE
    - Task details updated with completion status and deliverables
    - Story status changed from IN PROGRESS to COMPLETE
 
-3. `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+3. `docs/project-management/kanban/epics/epic-06/epic-06.md`
    - Story checklist updated: T05 marked as COMPLETE, Story 1 marked as COMPLETE
    - "Stories (Initial)" section updated: T05 marked as COMPLETE, Story 1 marked as COMPLETE
 

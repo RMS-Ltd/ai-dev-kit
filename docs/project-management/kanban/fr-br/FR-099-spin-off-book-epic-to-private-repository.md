@@ -20,13 +20,13 @@ housekeeping_policy: keep
 
 | Phase | Task | Doc | Status |
 |-------|------|-----|--------|
-| 0 | E01:S04:T03 | [T03](../epics/Epic-1/Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | ✅ COMPLETE |
-| 1 | E01:S04:T04 | [T04](../epics/Epic-1/Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | ✅ COMPLETE |
-| 2 | E01:S04:T05 | [T05](../epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | ✅ COMPLETE (`v0.1.4.3+1`) |
-| 3 | E01:S04:T06 | [T06](../epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | ✅ COMPLETE (2026-05-26) |
-| 4 | E01:S04:T07 | [T07](../epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | ✅ COMPLETE (2026-05-26) |
+| 0 | E01:S04:T03 | [T03](../epics/epic-01/story-04-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | ✅ COMPLETE |
+| 1 | E01:S04:T04 | [T04](../epics/epic-01/story-04-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | ✅ COMPLETE |
+| 2 | E01:S04:T05 | [T05](../epics/epic-01/story-04-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | ✅ COMPLETE (`v0.1.4.3+1`) |
+| 3 | E01:S04:T06 | [T06](../epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | ✅ COMPLETE (2026-05-26) |
+| 4 | E01:S04:T07 | [T07](../epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | ✅ COMPLETE (2026-05-26) |
 
-**Umbrella redirect (historical):** [T03-spin-off…](../epics/Epic-1/Story-004-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
+**Umbrella redirect (historical):** [T03-spin-off…](../epics/epic-01/story-04-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md)
 
 **Migration ADR:** [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
@@ -46,7 +46,7 @@ The public AI Dev Kit repository currently co-hosts:
 
 1. **Canonical framework packages** (workflow management, Kanban, versioning) intended for open distribution.
 2. **Unpublished book intellectual property**, including proposals, chapter drafts, outlines, agent correspondence, and structure research under `docs/book-proj/`.
-3. **Epic 24 Kanban** (`docs/project-management/kanban/epics/Epic-24/`) tracking book development on branch `epic/24-book-related-work`, with active tasks on `kboard.md`.
+3. **Epic 24 Kanban** (`docs/project-management/kanban/epics/epic-24/`) tracking book development on branch `epic/24-book-related-work`, with active tasks on `kboard.md`.
 
 This coupling creates **IP exposure risk**: anyone cloning the public repo receives manuscript drafts and publishing strategy documents. It also **confuses adopters**—Kanban installers and greenfield guides already treat Epic 24 as dev-kit-specific contamination (see consumer-board guidance in framework dependency docs).
 
@@ -63,8 +63,8 @@ The maintainer wants AI Dev Kit to stay **public and framework-focused** while t
 - [x] **FR-099-F3:** **Privatize** and **rename** to [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book); retain full history on the private repo (book + frameworks) — **done 2026-05-26**
 - [x] **FR-099-F4:** Land **book extraction genesis commit** on private `hf-ai-dev-kit` — ✅ **E01:S04:T05** (`v0.1.4.3+1`, 2026-05-26)
 - [x] **FR-099-F5:** **Create new public `RMS-Ltd/ai-dev-kit`** from genesis commit — ✅ 2026-05-26 ([bootstrap runbook](../../../maintenance/fr099-phase3-public-repo-bootstrap.md))
-- [x] **FR-099-F6:** **Rewire** remotes, badges, install docs, CI, and submodule URLs to the new public repo; verify greenfield/brownfield install (no Epic-24 contamination). ✅ 2026-05-26
-- [ ] **FR-099-F7:** Mark **[E01:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md)** **SUPERSEDED** — public ADK does not rename to Head First; Head First context remains private `hf-ai-dev-kit` only.
+- [x] **FR-099-F6:** **Rewire** remotes, badges, install docs, CI, and submodule URLs to the new public repo; verify greenfield/brownfield install (no epic-24 contamination). ✅ 2026-05-26
+- [ ] **FR-099-F7:** Mark **[E01:S04:T02](../epics/epic-01/story-04-repository-branding-and-renaming.md)** **SUPERSEDED** — public ADK does not rename to Head First; Head First context remains private `hf-ai-dev-kit` only.
 
 ### Non-Functional Requirements
 
@@ -81,7 +81,7 @@ The maintainer wants AI Dev Kit to stay **public and framework-focused** while t
 **Affected Areas:**
 
 - [x] Repository structure and branding (Epic 1, Story 4)
-- [x] Kanban (`Epic-24/`, `kboard.md`, `kanban-structure.md`, `_index.md`)
+- [x] Kanban (`epic-24/`, `kboard.md`, `kanban-structure.md`, `_index.md`)
 - [x] Book content (`docs/book-proj/`)
 - [x] Documentation (vision, README, kanban-board-guide, changelogs — references only; full changelog history may retain mentions)
 - [x] Git branches (`epic/24-book-related-work`)
@@ -102,7 +102,7 @@ The maintainer wants AI Dev Kit to stay **public and framework-focused** while t
 | Area | Path / artifact | Sensitivity |
 |------|-----------------|-------------|
 | Manuscript & proposals | `docs/book-proj/` (8 files) | **HIGH** — drafts, proposal, agent info |
-| Book Kanban | `docs/project-management/kanban/epics/Epic-24/` | **MEDIUM** — process + content refs |
+| Book Kanban | `docs/project-management/kanban/epics/epic-24/` | **MEDIUM** — process + content refs |
 | Active board rows | `kboard.md` E24:* tasks | **LOW** — remove from public board post-migration |
 | Vision cross-links | `docs/documentation/ai-dev-kit-vision-and-purpose.md` | **LOW** — rewrite for split narrative |
 | Branch | `epic/24-book-related-work` | **MEDIUM** — migrate or archive |
@@ -121,7 +121,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 
 **Genesis commit rule (Option B):** last book-path touch → dedicated **book extraction commit** → that commit (or verified child) becomes the root of **new public** `ai-dev-kit` history.
 
-**Supersedes [E01:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md):** conditional public rename to `head-first-ai-dev-kit` is **cancelled**; Head First naming applies to the **private** book repo only.
+**Supersedes [E01:S04:T02](../epics/epic-01/story-04-repository-branding-and-renaming.md):** conditional public rename to `head-first-ai-dev-kit` is **cancelled**; Head First naming applies to the **private** book repo only.
 
 ## Phased Delivery
 
@@ -152,9 +152,9 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 - [ ] **AC1:** Asset inventory signed off; every book-related path classified private-retain / public-genesis / redact.
 - [ ] **AC2:** [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) approved; **E01:S04:T02** marked SUPERSEDED.
 - [ ] **AC3:** Private `hf-ai-dev-kit` retains full history including book IP and Epic 24.
-- [ ] **AC4:** New public `ai-dev-kit` genesis tree has **no** `docs/book-proj/`, **no** `Epic-24/`, **no** Head First obligation in vision/README.
+- [ ] **AC4:** New public `ai-dev-kit` genesis tree has **no** `docs/book-proj/`, **no** `epic-24/`, **no** Head First obligation in vision/README.
 - [ ] **AC5:** Public `kboard.md` and structure docs contain **no** active E24 rows.
-- [ ] **AC6:** Install smoke test passes without Epic-24 contamination on public repo.
+- [ ] **AC6:** Install smoke test passes without epic-24 contamination on public repo.
 - [ ] **AC7:** Remotes, badges, and install URLs point at new public `RMS-Ltd/ai-dev-kit`.
 
 ---
@@ -173,7 +173,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 **Related Work:**
 
 - [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) — Preferred migration outline (Option C)
-- [E01:S04:T02](../epics/Epic-1/Story-004-repository-branding-and-renaming.md) — **SUPERSEDED** by FR-099 / ADR-006 (public Head First rename cancelled)
+- [E01:S04:T02](../epics/epic-01/story-04-repository-branding-and-renaming.md) — **SUPERSEDED** by FR-099 / ADR-006 (public Head First rename cancelled)
 - [FR-039](./FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) — Broader legacy cleanup (coordinate to avoid duplicate audits)
 - [FR-080](./FR-080-greenfield-installation-process.md) — Consumer Kanban must not include project-specific epics
 - Epic 24 — **removed from public tree**; retained in private `hf-ai-dev-kit` git history only
@@ -200,8 +200,8 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 
 **Kanban Links:**
 
-- Epic: [`Epic-1.md`](../epics/Epic-1/Epic-1.md)
-- Story: [`Story-004-repository-branding-and-renaming.md`](../epics/Epic-1/Story-004-repository-branding-and-renaming.md)
+- Epic: [`epic-01.md`](../epics/epic-01/epic-01.md)
+- Story: [`story-04-repository-branding-and-renaming.md`](../epics/epic-01/story-04-repository-branding-and-renaming.md)
 - **Closed:** All phase tasks T03–T07 complete; public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) live; private [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book)
 
 ---
@@ -220,7 +220,7 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 
 - [ADR-006 — Book project private repository spin-off (preferred migration)](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 - [`docs/book-proj/`](../../book-proj/) — **Removed from public tree** (Phase 2); retained in private git history
-- [`Epic-24/`](../epics/Epic-24/) — **Removed from public tree** (Phase 2); retained in private git history
+- [`epic-24/`](../epics/epic-24/) — **Removed from public tree** (Phase 2); retained in private git history
 - [AI Dev Kit vision and purpose](../../documentation/ai-dev-kit-vision-and-purpose.md)
-- [Framework dependency post-template setup guide](../../documentation/user-docs/framework-dependency-post-template-setup-guide.md) — Epic-24 contamination note
+- [Framework dependency post-template setup guide](../../documentation/user-docs/framework-dependency-post-template-setup-guide.md) — epic-24 contamination note
 - [dev-kit versioning policy](../../architecture/standards-and-adrs/dev-kit-versioning-policy.md)

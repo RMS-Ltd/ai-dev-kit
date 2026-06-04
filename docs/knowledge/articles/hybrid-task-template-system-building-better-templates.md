@@ -403,8 +403,8 @@ packages/frameworks/kanban/
 │   ├── COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md  # Source of truth
 │   ├── TASK_TEMPLATE.md                          # Template structure
 │   └── tasks/                                    # Generated/concrete templates
-│       ├── Epic-1/
-│       │   └── Story-1/
+│       ├── epic-01/
+│       │   └── story-001/
 │       │       └── T01-*.md
 │       └── ...
 └── scripts/
@@ -490,7 +490,7 @@ The hybrid approach isn't a compromise—it's a synthesis. And that's what makes
 - **Architecture Decision Record:** `docs/architecture/standards-and-adrs/task-template-system-hybrid-adr.md`
 - **Design Document:** `docs/architecture/standards-and-adrs/task-template-generator-design.md`
 - **Feature Request:** `docs/project-management/kanban/fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md`
-- **Story:** `docs/project-management/kanban/epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md`
+- **Story:** `docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md`
 - **Generator Script:** `packages/frameworks/kanban/scripts/generate_task_templates.py`
 - **Kanban Framework README:** `packages/frameworks/kanban/README.md`
 

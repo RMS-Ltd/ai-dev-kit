@@ -43,5 +43,5 @@ Project root hygiene: removed no-value artifacts (~61 MB screen recordings, `.DS
 
 ## References
 
-- [E2:S16:T10](../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md)
+- [E2:S16:T10](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md)
 - [UXR-013](../../project-management/kanban/fr-br/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)

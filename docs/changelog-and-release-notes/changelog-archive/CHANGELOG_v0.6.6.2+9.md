@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-03-31 12:35:31 UTC  
 **Epic:** 6 | **Story:** 6 | **Task:** 2  
-**Task doc:** [T02-fix-release-workflow-micromanagement-issues.md](../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T02-fix-release-workflow-micromanagement-issues.md)  
+**Task doc:** [T02-fix-release-workflow-micromanagement-issues.md](../../project-management/kanban/epics/epic-06/story-06-feature-requests/T02-fix-release-workflow-micromanagement-issues.md)  
 **Mode:** RW **-k** (kanban documentation / BR-038 implementing-task alignment)
 
 ## Summary

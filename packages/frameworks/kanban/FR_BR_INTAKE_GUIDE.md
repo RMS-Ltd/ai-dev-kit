@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Version:** 1.2  
 **Last Updated:** 2026-06-01  
 **Framework:** Kanban Framework  
-**Related:** `kanban-governance-policy.md`, [ADR-014](../../../docs/architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) (ai-dev-kit), `T002-decision-flow-design.md`, `FR_TEMPLATE.md`, `BR_TEMPLATE.md`, `UXR_TEMPLATE.md` (if used)
+**Related:** `kanban-governance-policy.md`, [ADR-014](../../../docs/architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) (ai-dev-kit), `T02-decision-flow-design.md`, `FR_TEMPLATE.md`, `BR_TEMPLATE.md`, `UXR_TEMPLATE.md` (if used)
 
 ---
 
@@ -228,7 +228,7 @@ FR / BR / UXR arrives
 
 2. **Create Story:**
    - Use `STORY_TEMPLATE.md`
-   - Location: `docs/project-management/kanban/epics/Epic-X/stories/Story-001-[title].md`
+   - Location: `docs/project-management/kanban/epics/Epic-X/stories/story-01-[title].md`
    - Set Story number to 1
    - Set Status: TODO or IN PROGRESS
    - Define Story goal/scope based on FR/BR
@@ -362,7 +362,7 @@ VERSION_BUILD = 1  # ← Always 1 for new Tasks
 - **Decision:** Story matches ✅
 
 **Step 3: Create Task**
-- Open Story document: `docs/project-management/kanban/epics/Epic-3/Story-002-ui-theme-and-styling.md`
+- Open Story document: `docs/project-management/kanban/epics/epic-03/story-02-ui-theme-and-styling.md`
 - Check existing Tasks: T01, T02, T03
 - Create Task 4: "Add dark mode toggle to settings page"
 - Assign version: `0.3.2.4+1`
@@ -409,7 +409,7 @@ VERSION_BUILD = 1  # ← Always 1 for new Tasks
 
 **Step 4: Create Story and Task**
 - Create Story 3: "User Profile Management"
-  - Location: `docs/project-management/kanban/epics/Epic-2/Story-003-user-profile-management.md`
+  - Location: `docs/project-management/kanban/epics/epic-02/story-03-user-profile-management.md`
   - Status: TODO
   - Goal: "Implement user profile management features including profile picture upload"
 - Create Task 1: "Add user profile picture upload"
@@ -459,13 +459,13 @@ VERSION_BUILD = 1  # ← Always 1 for new Tasks
 
 **Step 4: Create Epic, Story, and Task**
 - Create Epic 8: "Real-Time Collaboration"
-  - Location: `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
+  - Location: `docs/project-management/kanban/epics/epic-07/epic-07.md`
   - Status: TODO
   - **CRITICAL:** Epic is broad and abstract: "Framework for real-time collaboration features"
   - Problem Domain: Real-Time Collaboration
   - **Note:** Epic 8 because canonical epics are 1-7 (see `CANONICAL_EPICS.md`)
 - Create Story 1: "Real-Time Collaboration Foundation"
-  - Location: `docs/project-management/kanban/epics/Epic-7/Story-001-real-time-collaboration-foundation.md`
+  - Location: `docs/project-management/kanban/epics/epic-07/story-01-real-time-collaboration-foundation.md`
   - Status: TODO
   - Goal: "Establish foundation for real-time collaboration features"
 - Create Task 1: "Add real-time collaboration features"
@@ -504,7 +504,7 @@ VERSION_BUILD = 1  # ← Always 1 for new Tasks
 - **Decision:** Story matches ✅
 
 **Step 3: Create Task**
-- Open Story document: `docs/project-management/kanban/epics/Epic-3/Story-002-ui-theme-and-styling.md`
+- Open Story document: `docs/project-management/kanban/epics/epic-03/story-02-ui-theme-and-styling.md`
 - Check existing Tasks: T01, T02, T03, T04 (from Example 1)
 - Create Task 5: "Fix dark mode toggle persistence"
 - Assign version: `0.3.2.5+1`
@@ -555,7 +555,7 @@ VERSION_BUILD = 1  # ← Always 1 for new Tasks
 
 **Step 4: Create Story and Task**
 - Create Story 3 (or Story 4 if Story 3 exists): "User Profile Management"
-  - Location: `docs/project-management/kanban/epics/Epic-2/Story-003-user-profile-management.md`
+  - Location: `docs/project-management/kanban/epics/epic-02/story-03-user-profile-management.md`
   - Status: TODO
   - Goal: "Implement and maintain user profile management features"
 - Create Task 1: "Fix profile picture upload file size limit"
@@ -715,8 +715,8 @@ FR/BR → Search Story
 
 ### Key Documents Quick Reference
 
-- **Decision Flow Design:** `T002-decision-flow-design.md`
-- **Intake Analysis:** `T001-intake-analysis-report.md`
+- **Decision Flow Design:** `T02-decision-flow-design.md`
+- **Intake Analysis:** `T01-intake-analysis-report.md`
 - **Kanban Governance:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 
@@ -738,8 +738,8 @@ After completing intake:
 - `packages/frameworks/kanban/templates/BR_TEMPLATE.md` (Bug Report template)
 - `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md` (Epic template)
 - `packages/frameworks/kanban/templates/STORY_TEMPLATE.md` (Story template)
-- `docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks/T002-decision-flow-design.md` (Decision flow design)
-- `docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks/T001-intake-analysis-report.md` (Intake analysis)
+- `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks/T02-decision-flow-design.md` (Decision flow design)
+- `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks/T01-intake-analysis-report.md` (Intake analysis)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md` (Kanban governance)
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (Versioning policy)
 

@@ -14,10 +14,10 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** SUPERSEDED (2026-06-01 — new intake per **FR-072** / [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md); historical baseline preserved)
 
-> **Supersession (FR-072 Approach D):** This FR introduced dedicated FR/BR/UXR repository stories. **New intake** MUST use **semantic delivery-story** placement ([FR-074](FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md) KG-R6). Repository-story task IDs remain **historical** anchors only. Implementation: [E04:S19:T08](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) (includes former **T07**).
+> **Supersession (FR-072 Approach D):** This FR introduced dedicated FR/BR/UXR repository stories. **New intake** MUST use **semantic delivery-story** placement ([FR-074](FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md) KG-R6). Repository-story task IDs remain **historical** anchors only. Implementation: [E04:S19:T08](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) (includes former **T07**).
 
-**Implementing Task:** [E04:S19:T08](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
-**Historical registry:** [E05:S01:T21](../epics/Epic-5/Story-001-fr-repo/T21-fr-br-uxr-repository-stories.md)
+**Implementing Task:** [E04:S19:T08](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
+**Historical registry:** [E05:S01:T21](../epics/epic-05/story-01-fr-repo/T21-fr-br-uxr-repository-stories.md)
 
 ---
 
@@ -265,8 +265,8 @@ This feature is needed:
 - Version: `v0.4.12.0+0` (Story creation)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`docs/project-management/kanban/epics/Epic-4/Story-012-fr-br-uxr-repository-stories.md`](../epics/Epic-4/Story-012-fr-br-uxr-repository-stories.md)
+- Epic: [`docs/project-management/kanban/epics/epic-04/epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`docs/project-management/kanban/epics/epic-04/story-12-fr-br-uxr-repository-stories.md`](../epics/epic-04/story-12-fr-br-uxr-repository-stories.md)
 - Task: See Story 12 task checklist
 
 ---
@@ -332,11 +332,11 @@ This feature is needed:
 ## References
 
 - **FR-018:** `docs/project-management/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
-- **E2:S11:** `docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation.md`
-- **E4:S02:** `docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md`
-- **Epic 5 Template:** `packages/frameworks/kanban/templates/epics/Epic-5-FR-Implementation.md`
-- **Epic 6 Template:** `packages/frameworks/kanban/templates/epics/Epic-6-BR-Implementation.md`
-- **Epic 7 Template:** `packages/frameworks/kanban/templates/epics/Epic-7-UXR.md`
+- **E2:S11:** `docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md`
+- **E4:S02:** `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md`
+- **Epic 5 Template:** `packages/frameworks/kanban/templates/epics/epic-05-FR-Implementation.md`
+- **Epic 6 Template:** `packages/frameworks/kanban/templates/epics/epic-06-BR-Implementation.md`
+- **Epic 7 Template:** `packages/frameworks/kanban/templates/epics/epic-07-UXR.md`
 - **Kanban Policy:** `docs/project-management/rituals/policy/kanban-governance-policy.md`
 
 ---

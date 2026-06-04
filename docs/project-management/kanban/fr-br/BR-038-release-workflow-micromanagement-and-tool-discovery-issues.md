@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Created:** 2026-03-09  
 **Last Updated:** 2026-04-20 — Relevance review: legacy friction mostly resolved; recovery/logging scope expanded and re-housed to follow-on task
 
-**Implementing Task:** [E06:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)
+**Implementing Task:** [E06:S06:T63](../epics/epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)
 
-**Note:** **Cascade / whitelist** productivity blockers that worsen RW friction are tracked under **[BR-039](BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** / **[E06:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)** (vendor-side).
+**Note:** **Cascade / whitelist** productivity blockers that worsen RW friction are tracked under **[BR-039](BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** / **[E06:S06:T57](../epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)** (vendor-side).
 
 ---
 
@@ -44,7 +44,7 @@ This BR is now split into:
 
 Active implementation for unresolved recovery scope is tracked under:
 
-- [E06:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)
+- [E06:S06:T63](../epics/epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)
 
 ## Current Issues
 

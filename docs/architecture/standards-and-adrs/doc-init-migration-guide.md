@@ -182,7 +182,7 @@ Avoid these:
 
 ## 8. References
 
-- **E2:S10 Story:** `docs/project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md`
+- **E2:S10 Story:** `docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md`
 - **FR-017:** Doc-Init Build (+0) for New E/S/T
 - **FR-018:** Abstract Space for Zero-Numbered E/S/T Docs
 - **FR-020:** Version Validator Abstract Space Awareness

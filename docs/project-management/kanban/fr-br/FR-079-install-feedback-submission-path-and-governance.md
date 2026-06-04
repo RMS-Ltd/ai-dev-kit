@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** COMPLETE
 
-**Implementing Task:** [E06:S07:T112](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md)
+**Implementing Task:** [E06:S07:T112](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md)
 
 ---
 

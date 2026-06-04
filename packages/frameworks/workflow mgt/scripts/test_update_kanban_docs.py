@@ -655,7 +655,7 @@ def test_4_8_traceability_segment_normalization_for_fbuboard_rows():
         line = (
             "- **UXR-010** – kboard/fbuboard add IPP segment - OPEN "
             "- [UXR-010](fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) "
-            "| [E4:S19:T04](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/"
+            "| [E4:S19:T04](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/"
             "T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) "
             "| Last modified: 2026-04-20 21:35 UTC"
         )
@@ -1126,8 +1126,8 @@ def test_4_18_four_surface_reconciliation_report_classifies_changes_and_resolves
     def setup():
         test_dir = Path(tempfile.mkdtemp())
         kb_dir = test_dir / "docs" / "project-management" / "kanban"
-        epic_dir = kb_dir / "epics" / "Epic-2"
-        story_dir = epic_dir / "Story-015-ipw-governance-and-publication-contract"
+        epic_dir = kb_dir / "epics" / "epic-02"
+        story_dir = epic_dir / "story-15-ipw-governance-and-publication-contract"
         frbr_dir = kb_dir / "fr-br"
         for d in (epic_dir, story_dir, frbr_dir):
             d.mkdir(parents=True, exist_ok=True)
@@ -1167,7 +1167,7 @@ def test_4_18_four_surface_reconciliation_report_classifies_changes_and_resolves
             project_root=project_root,
             paths={
                 "kanban_board": kb_dir / "kboard.md",
-                "story_doc": kb_dir / "epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-test-task.md",
+                "story_doc": kb_dir / "epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-test-task.md",
             },
             all_changes=all_changes,
         )
@@ -1209,7 +1209,7 @@ def test_4_20_fr092_wave4_b1_drift_eliminates_duplicate_inline_fbu_link():
         test_dir = Path(tempfile.mkdtemp())
         kb_dir = test_dir / "docs" / "project-management" / "kanban"
         frbr_dir = kb_dir / "fr-br"
-        epics_dir = kb_dir / "epics" / "Epic-2" / "Story-015-ipw-governance-and-publication-contract"
+        epics_dir = kb_dir / "epics" / "epic-02" / "story-15-ipw-governance-and-publication-contract"
         for d in (frbr_dir, epics_dir):
             d.mkdir(parents=True, exist_ok=True)
         (frbr_dir / "FR-092-canonical-rw-ukw-kanban-consistency-program.md").write_text("# FR-092\n", encoding="utf-8")

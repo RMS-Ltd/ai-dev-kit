@@ -31,7 +31,7 @@ First markdown maintenance cycle completed using the newly established E7:S01:T0
 - **Formatting**: Standardized document structure and spacing consistency
 
 #### Documents Cleaned
-1. **Story 7 Document** (`docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md`)
+1. **Story 7 Document** (`docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md`)
    - Fixed excessive blank lines between task entries
    - Removed trailing spaces from status lines
    - Standardized task formatting

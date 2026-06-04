@@ -69,7 +69,7 @@ This guide provides practical, user-friendly instructions for using the Post-Imp
 1. RW Step 15 detects Epic 2 is COMPLETE
 2. PIR workflow automatically triggered
 3. All 16 steps execute (Step 2 skipped for Epic-level)
-4. PIR report generated: `docs/Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md`
+4. PIR report generated: `docs/Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md`
 5. Epic document updated with PIR summary
 6. Follow-up tasks created if needed
 
@@ -84,7 +84,7 @@ This guide provides practical, user-friendly instructions for using the Post-Imp
 2. Significance evaluation: High (introduces new patterns, multiple tasks)
 3. PIR workflow triggered
 4. All 16 steps execute (including Step 2 significance evaluation)
-5. PIR report generated: `docs/Reviews/pir/Story-5/PIR-Story-5-v0.2.5.11+1.md`
+5. PIR report generated: `docs/Reviews/pir/Story-5/PIR-story-05-v0.2.5.11+1.md`
 6. Story document updated with PIR summary
 7. Follow-up tasks created if needed
 
@@ -111,7 +111,7 @@ This guide provides practical, user-friendly instructions for using the Post-Imp
 **Step 1: Identify Review Scope**
 ```bash
 # Read Epic document
-Epic: docs/project-management/kanban/epics/Epic-2/Epic-2.md
+Epic: docs/project-management/kanban/epics/epic-02/epic-02.md
 Status: COMPLETE ✅
 Review Level: Epic
 ```
@@ -199,7 +199,7 @@ Related documents: ✅ (3 BR/FR documents)
 **Step 10: Create PIR Report**
 ```bash
 # Report created
-Location: docs/Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md
+Location: docs/Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md
 Version Range: v0.2.1.1+1 to v0.2.11.9+3
 ```
 
@@ -218,7 +218,7 @@ Cross-references created: ✅
 **PIR Status:** Complete  
 **PIR Date:** 2025-12-16  
 **PIR Version:** v0.2.11.9+3  
-**PIR Report:** [PIR-Epic-2-v0.2.11.9+3.md](../../Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md)
+**PIR Report:** [PIR-epic-02-v0.2.11.9+3.md](../../Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md)
 
 ### Summary
 Epic 2 successfully delivered the Workflow Management Framework...
@@ -233,14 +233,14 @@ Epic 2 successfully delivered the Workflow Management Framework...
 ```markdown
 - [ ] **Action 1:** Create automated tests for PIR workflow
   - Priority: Medium
-  - PIR Reference: [PIR Report](../../Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md)
+  - PIR Reference: [PIR Report](../../Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md)
 ```
 
 **Step 14: Link PIR to Work Items**
 ```markdown
 ## Related Work
 
-- **Epic:** [Epic 2 Documentation](../../project-management/kanban/epics/Epic-2/Epic-2.md) (v0.2.11.9+3)
+- **Epic:** [Epic 2 Documentation](../../project-management/kanban/epics/epic-02/epic-02.md) (v0.2.11.9+3)
 - **Stories:** [Links to all stories with versions]
 - **Version Range:** v0.2.1.1+1 to v0.2.11.9+3
 ```
@@ -255,7 +255,7 @@ Epic 2 successfully delivered the Workflow Management Framework...
 
 **Step 1: Identify Review Scope**
 ```bash
-Story: docs/project-management/kanban/epics/Epic-2/Story-5-*.md
+Story: docs/project-management/kanban/epics/epic-02/story-05-*.md
 Status: COMPLETE ✅
 Review Level: Story
 ```
@@ -435,7 +435,7 @@ config:
 
 ### Example PIR Report: Epic-Level
 
-See: `docs/Reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md`
+See: `docs/Reviews/pir/epic-02/PIR-epic-02-TEST-v0.2.5.10+1.md`
 
 **Key Features:**
 - Version range (first to last version)
@@ -445,7 +445,7 @@ See: `docs/Reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md`
 
 ### Example PIR Report: Story-Level
 
-See: `docs/Reviews/pir/Story-2/PIR-Story-2-TEST-v0.2.2.8+1.md`
+See: `docs/Reviews/pir/Story-2/PIR-story-02-TEST-v0.2.2.8+1.md`
 
 **Key Features:**
 - Single version reference
@@ -480,7 +480,7 @@ add_pir_section_to_epic(
     epic=2,
     summary=executive_summary,
     findings=key_findings,
-    pir_report_path="docs/Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md"
+    pir_report_path="docs/Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md"
 )
 ```
 

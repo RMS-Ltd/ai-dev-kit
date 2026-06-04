@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # IPW Package - E6:S06:T57 (BR-039)
 
 **Task ID:** E6:S06:T57  
-**Host Task:** [T57-br039-cascade-whitelist-security-prompt-blocker.md](../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)  
+**Host Task:** [T57-br039-cascade-whitelist-security-prompt-blocker.md](../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)  
 **Intake BR:** [BR-039-cascade-whitelist-security-prompt-usability-blocker.md](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)  
 **Scope type:** Vendor blocker with repository-owned traceability and validation workflow
 

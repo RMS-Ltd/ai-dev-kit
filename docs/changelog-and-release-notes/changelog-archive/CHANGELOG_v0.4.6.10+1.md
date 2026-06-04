@@ -26,16 +26,16 @@ Complete creation of individual epic template files for project-specific canonic
 
 ### Added
 
-- **Epic 12 Template:** `packages/frameworks/kanban/templates/epics/Epic-12-Frontend-UI.md`
-- **Epic 13 Template:** `packages/frameworks/kanban/templates/epics/Epic-13-Testing-QA.md`
-- **Epic 14 Template:** `packages/frameworks/kanban/templates/epics/Epic-14-Deployment-DevOps.md`
-- **Epic 15 Template:** `packages/frameworks/kanban/templates/epics/Epic-15-Security.md`
-- **Epic 16 Template:** `packages/frameworks/kanban/templates/epics/Epic-16-Performance.md`
-- **Epic 17 Template:** `packages/frameworks/kanban/templates/epics/Epic-17-Integration.md`
-- **Epic 18 Template:** `packages/frameworks/kanban/templates/epics/Epic-18-Documentation.md`
-- **Epic 19 Template:** `packages/frameworks/kanban/templates/epics/Epic-19-Analytics.md`
-- **Epic 20 Template:** `packages/frameworks/kanban/templates/epics/Epic-20-Mobile.md`
-- **Epic 21 Template:** `packages/frameworks/kanban/templates/epics/Epic-21-Internationalization.md`
+- **Epic 12 Template:** `packages/frameworks/kanban/templates/epics/epic-12-Frontend-UI.md`
+- **Epic 13 Template:** `packages/frameworks/kanban/templates/epics/epic-13-Testing-QA.md`
+- **Epic 14 Template:** `packages/frameworks/kanban/templates/epics/epic-14-Deployment-DevOps.md`
+- **Epic 15 Template:** `packages/frameworks/kanban/templates/epics/epic-15-Security.md`
+- **Epic 16 Template:** `packages/frameworks/kanban/templates/epics/epic-16-Performance.md`
+- **Epic 17 Template:** `packages/frameworks/kanban/templates/epics/epic-17-Integration.md`
+- **Epic 18 Template:** `packages/frameworks/kanban/templates/epics/epic-18-Documentation.md`
+- **Epic 19 Template:** `packages/frameworks/kanban/templates/epics/epic-19-Analytics.md`
+- **Epic 20 Template:** `packages/frameworks/kanban/templates/epics/epic-20-Mobile.md`
+- **Epic 21 Template:** `packages/frameworks/kanban/templates/epics/epic-21-Internationalization.md`
 
 ### Changed
 

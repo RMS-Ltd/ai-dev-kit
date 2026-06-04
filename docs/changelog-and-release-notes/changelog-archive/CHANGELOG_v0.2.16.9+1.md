@@ -31,7 +31,7 @@ Implement FR-094: `/ipw` slash command for Claude Code and mandatory task state 
 - `.cursorrules` — Global Implementation Gate section: added canonical `/ipw` invocation note and IPP state transition mandate paragraph. ICW trigger section: added Claude Code `/ipw` note at the top.
 - `AGENTS.md` — Global Implementation Gate section: added canonical `/ipw [E:S:T]` invocation line for Claude Code.
 - `docs/project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md` — Related section: added FR-094 cross-reference with ADR-004 link, noting FR-094 as the mechanism embedding the FR-077 ownership contract inside the IPP artefact.
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md` — Status updated `TODO → IN PROGRESS`; IPP artifact linked in Input and References.
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md` — Status updated `TODO → IN PROGRESS`; IPP artifact linked in Input and References.
 
 ---
 

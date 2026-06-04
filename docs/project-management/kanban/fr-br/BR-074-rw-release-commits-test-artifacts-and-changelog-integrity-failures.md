@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.2.1.21+1
 **Code:** BR-074
 
-**Implementing Task:** [E02:S01:T21](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md)
+**Implementing Task:** [E02:S01:T21](../epics/epic-02/story-01-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md)
 
 ---
 
@@ -176,7 +176,7 @@ Likely a copy-paste or template variable error in the detailed changelog generat
 - None
 
 **Related Work:**
-- [E06:S06:T63](../epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — The release that exposed these issues.
+- [E06:S06:T63](../epics/epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — The release that exposed these issues.
 - [BR-038](BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) — Parent BR where recovery journal scope was defined.
 - [FR-042](FR-042-implementation-planning-workflow-ipw.md) — IPW process that planned T63.
 

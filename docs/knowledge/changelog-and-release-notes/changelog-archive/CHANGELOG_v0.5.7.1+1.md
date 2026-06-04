@@ -24,7 +24,7 @@ housekeeping_policy: keep
 **Epic 5 Story 7 Creation:**
 
 1. **Created Story 007 – Persistent Knowledge Base Investigation**
-   - Created `KB/PM_and_Portfolio/kanban/epics/Epic-5/Story-007-persistent-knowledge-base-investigation.md`
+   - Created `KB/PM_and_Portfolio/kanban/epics/epic-05/story-07-persistent-knowledge-base-investigation.md`
    - Story investigates ramifications of persistent knowledge base concept
    - Includes Task 1: Investigate persistent knowledge base concept and ramifications
    - Story status: TODO, Priority: HIGH
@@ -37,7 +37,7 @@ housekeeping_policy: keep
    - References GitHub repo: https://github.com/philippe-page/cursor-knowledge
 
 3. **Updated Epic 5 Documentation**
-   - Updated `KB/PM_and_Portfolio/kanban/epics/Epic-5/Epic-5.md`
+   - Updated `KB/PM_and_Portfolio/kanban/epics/epic-05/epic-05.md`
    - Added Story 7 to Story Checklist
    - Updated Epic header with Story 7 creation
    - Added Story 7 summary section
@@ -59,11 +59,11 @@ housekeeping_policy: keep
   - Maintenance and curation strategies
 
 **Files Created:**
-- `KB/PM_and_Portfolio/kanban/epics/Epic-5/Story-007-persistent-knowledge-base-investigation.md`
+- `KB/PM_and_Portfolio/kanban/epics/epic-05/story-07-persistent-knowledge-base-investigation.md`
 - `docs/knowledge/guides/building-persistent-knowledge.md`
 
 **Files Modified:**
-- `KB/PM_and_Portfolio/kanban/epics/Epic-5/Epic-5.md`
+- `KB/PM_and_Portfolio/kanban/epics/epic-05/epic-05.md`
 - `docs/knowledge/guides/README.md`
 - `src/fynd_deals/version.py`
 

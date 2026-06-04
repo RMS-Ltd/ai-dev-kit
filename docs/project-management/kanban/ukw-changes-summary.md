@@ -59,10 +59,10 @@ Update Kanban Workflow executed to synchronize kanban documentation with recent 
 
 ## Documents Modified
 
-1. `docs/project-management/kanban/epics/Epic-6/Story-001-framework-version-management.md`
+1. `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md`
    - Status corrected from IN PROGRESS to COMPLETE
 
-2. `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+2. `docs/project-management/kanban/epics/epic-06/epic-06.md`
    - Story checklist updated: E6:S01 marked as COMPLETE ✅
    - All task versions verified
    - UKW sync note added
@@ -71,7 +71,7 @@ Update Kanban Workflow executed to synchronize kanban documentation with recent 
    - Updated board metadata (Last Updated, Version, UKW Sync)
    - Epic 6 section updated: E6:S01 confirmed COMPLETE, E6:S02 progress reflected
 
-4. `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+4. `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
    - Updated to reflect UKW run #5
    - Version: v0.6.6.8+5
 

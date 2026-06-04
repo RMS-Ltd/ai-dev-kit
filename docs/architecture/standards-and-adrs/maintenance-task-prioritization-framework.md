@@ -696,8 +696,8 @@ Priority Score = (1 × 0.4) + (2 × 0.4) + ((6 - 1) × 0.2)
 
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **Framework Health Metrics:** `docs/architecture/standards-and-adrs/framework-health-metrics.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 1:** `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 1:** `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
 
 ---
 

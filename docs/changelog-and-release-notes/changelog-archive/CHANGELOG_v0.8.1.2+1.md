@@ -116,7 +116,7 @@ Implemented template-based generators using the Generator Framework. Created Wor
 
 - `src/fynd_deals/version.py` - Updated to v0.8.1.2+1
 - `packages/frameworks/tooling & automation/generators/__init__.py` - Added generator exports
-- `docs/project-management/kanban/epics/Epic-8/Story-001-code-generators.md` - Marked T02 as complete
+- `docs/project-management/kanban/epics/epic-08/story-01-code-generators.md` - Marked T02 as complete
 
 ---
 

@@ -80,11 +80,9 @@ Every Task MUST have a discrete Task document. Tasks can be documented in one of
 
 ### Format 1: Separate Task File (Recommended)
 
-**Location:** `kanban/epics/Epic-X/Story-XXX/Task-YYY-description.md` or `kanban/epics/Epic-X/Story-XXX/TYYY-description.md`
+**Location:** `kanban/epics/epic-XX/story-YY/TYY-description.md` or `kanban/epics/epic-XX/story-YY/TYY-description.md`
 
-**Example:**
-- `kanban/epics/Epic-4/Story-011/Task-001-update-kanban-policy.md`
-- `kanban/epics/Epic-4/Story-011/T001-update-kanban-policy.md`
+**Example:** `kanban/epics/epic-04/story-11/T01-update-kanban-policy.md` (2-digit epic/story/task when ≤ 99; 3-digit when > 99)
 
 **When to Use:**
 - Tasks with significant complexity or multiple phases

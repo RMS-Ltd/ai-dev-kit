@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S16:T03 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) **(E2:S16:T03)**
+**Host Task:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) **(E2:S16:T03)**
 **Planning for:** FR-088 — Dedicated story for perpetual ongoing tasks
 **Status:** Published (Tranches 1–3 delivered `v0.2.16.3+2`; SitRep IPW 2026-06-03 — T02/3B gate documented; fbuboard BR-067 sync in housekeeping)
 
@@ -82,8 +82,8 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 
 - **Current task status:** `IN PROGRESS` (perpetual maintenance — stable).
 - **Transition trigger to IN PROGRESS:** N/A for first entry; thereafter any new maintenance wave may refresh `Last updated` while **`Status:` remains `IN PROGRESS`**.
-- **Acceptance criteria vs task status:** AC1–AC3 and AC5 may be marked satisfied with verification evidence; AC4 may remain `[~] PARTIAL` until [E2:S16:T02](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) completes. None of that implies flipping the host task to terminal `COMPLETE`.
-- **Atomic propagation:** Task doc `Last updated` + evidence sections + kboard row + Story-016 checklist stay aligned in the same change set as the underlying work.
+- **Acceptance criteria vs task status:** AC1–AC3 and AC5 may be marked satisfied with verification evidence; AC4 may remain `[~] PARTIAL` until [E2:S16:T02](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) completes. None of that implies flipping the host task to terminal `COMPLETE`.
+- **Atomic propagation:** Task doc `Last updated` + evidence sections + kboard row + story-016 checklist stay aligned in the same change set as the underlying work.
 - **Owner:** Implementation execution step (RW attribution under T03).
 
 ### 2.5 ADR necessity decision (Tranche 3 — IPW Phase 5.0)
@@ -104,10 +104,10 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF-T3-1 | Close BR-067 after R1–R5 regression evidence | BR-067 |
-| RF-T3-2 | AC4 full satisfaction only after T02 reference map (3B) | T03 AC4; T02 |
-| RF-T3-3 | Active-surface link hygiene (kanban, open FR/BR) | IPP rolling backlog |
-| RF-T3-4 | Host task remains `IN PROGRESS` (perpetual) | IPP-E02S16T01 |
+| RF-T03-1 | Close BR-067 after R1–R5 regression evidence | BR-067 |
+| RF-T03-2 | AC4 full satisfaction only after T02 reference map (3B) | T03 AC4; T02 |
+| RF-T03-3 | Active-surface link hygiene (kanban, open FR/BR) | IPP rolling backlog |
+| RF-T03-4 | Host task remains `IN PROGRESS` (perpetual) | IPP-E02S16T01 |
 
 ---
 
@@ -116,9 +116,9 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 | ID | Behavior / layer | Expected check |
 | -- | ---------------- | -------------- |
 | T1 | `test_task_id_extraction_prefers_canonical_section` | Assertion expects `(2, 16, 3)` to match `**Value:** E2:S16:T03` in mock content. |
-| T2 | `test_validate_version_bump_passes_for_perpetual_task` (T101) | Mock task file named `T101-*.md` (not `T03-*.md`) under Epic-6/Story-007 so `locate_task_doc` finds it. |
+| T2 | `test_validate_version_bump_passes_for_perpetual_task` (T101) | Mock task file named `T101-*.md` (not `T03-*.md`) under epic-06/story-007 so `locate_task_doc` finds it. |
 | T3 | `test_validate_version_bump_build_increment_perpetual` | Same as T2 — mock file must match the task number under test. |
-| T4 | `test_validate_version_bump_passes_for_t103` (T103) | Mock task file named `T103-*.md` under Epic-6/Story-007 so `locate_task_doc` finds it. |
+| T4 | `test_validate_version_bump_passes_for_t103` (T103) | Mock task file named `T103-*.md` under epic-06/story-007 so `locate_task_doc` finds it. |
 | T5 | Full test suite regression | `pytest packages/frameworks/workflow\ mgt/scripts/validation/test_validate_version_bump.py -x` exits 0. |
 | T6 | Perpetual guardrails live validation | `python validate_version_bump.py --strict --requested E2:S16:T03 --art` exits 0 for T03. |
 | T7 | Legacy draft redirect | All inbound links to `IPW-E6S07T103` resolve to T03 or deprecation notice. |
@@ -127,11 +127,11 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 
 | ID | Behavior / layer | Expected check |
 | -- | ---------------- | -------------- |
-| T-T3-1 | Unit | `pytest test_validate_version_bump.py -x` → 0 exit |
-| T-T3-2 | Integration | BR-067 R1–R5 matrix documented PASS in BR-067 + T03 |
-| T-T3-3 | Integration | Perpetual RW: `validate_version_bump.py --strict --requested E02:S16:T03 --art` after Step 2 bump |
-| T-T3-4 | Structural | Active kanban: no stale `Epic-6/Story-007/.../T03` for perpetual routing |
-| T-T3-5 | Structural (3B) | T02-gated exhaustive migration — deferred until T02 AC1–AC5 |
+| T-T03-1 | Unit | `pytest test_validate_version_bump.py -x` → 0 exit |
+| T-T03-2 | Integration | BR-067 R1–R5 matrix documented PASS in BR-067 + T03 |
+| T-T03-3 | Integration | Perpetual RW: `validate_version_bump.py --strict --requested E02:S16:T03 --art` after Step 2 bump |
+| T-T03-4 | Structural | Active kanban: no stale `epic-06/story-007/.../T03` for perpetual routing |
+| T-T03-5 | Structural (3B) | T02-gated exhaustive migration — deferred until T02 AC1–AC5 |
 
 ---
 
@@ -143,12 +143,12 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 | **2** | Fix `test_task_id_extraction_prefers_canonical_section`: update assertion to `(2, 16, 3)` to match mock content `**Value:** E2:S16:T03`. | Test passes |
 | **3** | Fix `test_validate_version_bump_passes_for_perpetual_task`: rename mock task file from `T03-*.md` to `T101-*.md` (or create T101 mock). | Test passes |
 | **4** | Fix `test_validate_version_bump_build_increment_perpetual`: ensure mock task file matches T101 under test. | Test passes |
-| **5** | Fix `test_validate_version_bump_passes_for_t103`: rename/create mock task file to `T103-*.md` under Epic-6/Story-007. | Test passes |
+| **5** | Fix `test_validate_version_bump_passes_for_t103`: rename/create mock task file to `T103-*.md` under epic-06/story-007. | Test passes |
 | **6** | Run full test suite: `pytest test_validate_version_bump.py -x`. | 14/14 pass |
 | **7** | Update T03 task doc: mark AC1–AC3 as COMPLETE with evidence (Wave 2 & 3); mark AC4 as PARTIAL (guardrails pass, T02 dependency noted for reference migration); mark AC5 with test output + validator command. | ACs reflect actual state |
 | **8** | Archive legacy `IPW-E6S07T103`: add deprecation banner at top, update status to `Deprecated`, add redirect link to T03 task doc. | Draft no longer appears active |
 | **9** | Run `validate_version_bump.py --strict --requested E2:S16:T03 --art` and capture output in T03 doc as AC5 evidence. | Validator passes |
-| **10** | Update Story-016 doc: mark T03 checklist entry with current status and version marker. | Story doc current |
+| **10** | Update story-016 doc: mark T03 checklist entry with current status and version marker. | Story doc current |
 | **11** | Update `kboard.md` T03 row metadata if changed. | Board consistent |
 | **12** | **[MANDATORY] Reconcile task `E2:S16:T03` with actual state:** keep **`Status: IN PROGRESS`** (perpetual). Update AC checkboxes and Verification Evidence to match shipped work; if T02 still blocks exhaustive reference migration, keep AC4 `[~] PARTIAL` with explicit T02 pointer. Update `Last updated` and forensic version line. | Task doc reflects actual state without terminal COMPLETE |
 
@@ -157,9 +157,9 @@ Close the gap between implemented guardrail/discoverability work (Waves 2 & 3) a
 | File | Action | Owner Step |
 |------|--------|-----------|
 | `packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py` | Fix 4 test fixture bugs | 2–5 |
-| `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md` | Mark ACs, add evidence sections | 7, 9 |
+| `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md` | Mark ACs, add evidence sections | 7, 9 |
 | `docs/implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md` | Add deprecation banner + redirect | 8 |
-| `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md` | Update T03 checklist entry | 10 |
+| `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md` | Update T03 checklist entry | 10 |
 | `docs/project-management/kanban/kboard.md` | Update T03 row metadata | 11 |
 
 ### 4.2 Document Update Details
@@ -242,7 +242,7 @@ This section prescribes the exact changes for each document. Implementation must
 > 
 > The canonical perpetual task for workflow maintenance is now **E2:S16:T03**.
 > All active planning and work for perpetual workflow maintenance should reference:
-> - [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+> - [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 > - [`IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../docs/implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 >
 > This draft is retained for historical traceability only. Do not extend or update.
@@ -254,15 +254,15 @@ This section prescribes the exact changes for each document. Implementation must
 - With: `**Status:** Deprecated (superseded by E2:S16:T03; canonical policy in IPP-E2S16T01)`
 
 **Update Host Task link:**
-- Replace: `[`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)`
-- With: `[`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)`
-- **Rationale:** Old link points to wrong path (Epic-6/Story-007). Must redirect to actual T03 location.
+- Replace: `[`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)`
+- With: `[`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)`
+- **Rationale:** Old link points to wrong path (epic-06/story-007). Must redirect to actual T03 location.
 
 **Update FR-041 reference:**
 - Replace: `FR-041 – Perpetual Task for Release Workflow Maintenance`
 - With: `FR-088 – Dedicated story for perpetual ongoing tasks (supersedes FR-041)`
 
-#### Document D: Story-016 doc (`Story-016-perpetual-ongoing-workflow-operations.md`)
+#### Document D: story-016 doc (`story-16-perpetual-ongoing-workflow-operations.md`)
 
 **Update T03 checklist entry (line 29):**
 - Current: `- [ ] **E2:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual anchor for ad-hoc workflow maintenance...)`
@@ -307,8 +307,8 @@ This section prescribes the exact changes for each document. Implementation must
 | **1** | **[MANDATORY]** Confirm `E02:S16:T03` **`IN PROGRESS`**; refresh `Last updated`. | Task doc |
 | **2** | Run BR-067 R1–R5 regression; record in BR-067 + T03 Verification Evidence. | Evidence table |
 | **3** | Set BR-067 **RESOLVED**; sync kboard/fbuboard rows. | Boards |
-| **4** | Fix active kanban/FR/BR stale `Epic-6/Story-007` T03 paths → Story-016 T03/T04. | Link hygiene |
-| **5** | **3B (T02-gated):** **Entry gate** — [T02](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) AC1–AC5 complete; required artifact [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) (CREATE on T02 IPW) linked from T01, T02, and T03. Then: apply reference map (active kanban + agreed archive surfaces), document before/after stale `Epic-6/Story-007` path counts, mark T03 AC4 `[x]`, `RW E02:S16:T03 --art`. | Deferred until gate |
+| **4** | Fix active kanban/FR/BR stale `epic-06/story-007` T03 paths → story-016 T03/T04. | Link hygiene |
+| **5** | **3B (T02-gated):** **Entry gate** — [T02](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) AC1–AC5 complete; required artifact [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) (CREATE on T02 IPW) linked from T01, T02, and T03. Then: apply reference map (active kanban + agreed archive surfaces), document before/after stale `epic-06/story-007` path counts, mark T03 AC4 `[x]`, `RW E02:S16:T03 --art`. | Deferred until gate |
 | **6** | Update IPP §7 Tranche 3 checkboxes. | IPP current |
 | **7** | **`RW E02:S16:T03 --art`** — ship + Step 7 four-surface sync. | Release |
 | **8** | **[MANDATORY]** Reconcile T03: **`IN PROGRESS`**; AC4 `[~] PARTIAL` until 3B; evidence current. | Task doc |
@@ -325,8 +325,8 @@ This section prescribes the exact changes for each document. Implementation must
 | D2 | T03 task doc | UPDATE | BR-067; 3A hygiene |
 | D3 | `fr-br/BR-067-*.md` | UPDATE | RESOLVED |
 | D4 | `kboard.md`, `fbuboard.md` | UPDATE | Rows |
-| D5 | Story-016 doc | UPDATE | Checklist |
-| D6 | Active kanban FR/BR/epic subset | UPDATE | RF-T3-3 |
+| D5 | story-016 doc | UPDATE | Checklist |
+| D6 | Active kanban FR/BR/epic subset | UPDATE | RF-T03-3 |
 
 ### 5.2 New documents to create
 
@@ -377,7 +377,7 @@ None.
 
 **Entry gate: SATISFIED** — [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md); T02 **COMPLETE** (`v0.2.16.2+2`).
 
-**3B execution: COMPLETE (2026-06-03)** — ACTIVE_FIX migration (`apply_e6s07_path_migration_3b.py`); `docs/` `Epic-6/Story-007` **167→153** (101→94 files); kanban **35→18** (22→14 files). ARCHIVE_STUB + KB-INDEX deferred per IPP-E2S16T02 §2.6. T03 AC4 `[x]`; release **`RW E02:S16:T03 --art`**.
+**3B execution: COMPLETE (2026-06-03)** — ACTIVE_FIX migration (`apply_e6s07_path_migration_3b.py`); `docs/` `epic-06/story-007` **167→153** (101→94 files); kanban **35→18** (22→14 files). ARCHIVE_STUB + KB-INDEX deferred per IPP-E2S16T02 §2.6. T03 AC4 `[x]`; release **`RW E02:S16:T03 --art`**.
 
 ### SitRep — E02:S16:T02 (2026-06-03, post-IPW)
 
@@ -385,7 +385,7 @@ None.
 | --------- | ----- |
 | Task doc | **COMPLETE**; IPP published |
 | IPP | [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) |
-| Reference baseline | 167 `Epic-6/Story-007` occurrences / 101 files under `docs/` |
+| Reference baseline | 167 `epic-06/story-007` occurrences / 101 files under `docs/` |
 | 3B | **Unblocked** — execution is T03 Tranche 3B, not another T02 IPW |
 
 ### SitRep — E02:S16:T03 host (2026-06-03)
@@ -407,11 +407,11 @@ None.
 
 ## References
 
-- Host task: [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- Host task: [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - Canonical policy: [`IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../docs/implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
-- T02 (dependency): [`T02-inventory-and-classify-workflow-perpetual-tasks.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
+- T02 (dependency): [`T02-inventory-and-classify-workflow-perpetual-tasks.md`](../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
 - T02 inventory IPP (3B gate — **published**): [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md)
-- T04 (scope boundary): [`T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](../../docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- T04 (scope boundary): [`T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - Legacy draft (to archive): [`IPW-E6S07T103-release-workflow-maintenance-perpetual.md`](../../docs/implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md)
 - FR-088: [`FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`](../../docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 - Guardrail implementation: `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`

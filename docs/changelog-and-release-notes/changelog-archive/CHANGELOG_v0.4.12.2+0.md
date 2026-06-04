@@ -19,7 +19,7 @@ Created Epic 6, Story 0: BR Repo (PERPETUAL) as the canonical repository for all
 ### Repository Story Creation
 
 - **E6:S00 - BR Repo (PERPETUAL):** Created repository story document
-  - Location: `docs/project-management/kanban/epics/Epic-6/Story-000-br-repo.md`
+  - Location: `docs/project-management/kanban/epics/epic-06/story-00-br-repo.md`
   - Status: IN PROGRESS (PERPETUAL)
   - Abstract space: v0.6.0.0+0
   - Traceability pattern: BR-001 = E6:S00:T01

@@ -31,15 +31,15 @@
 ## Changes
 
 ### Updated
-- `docs/project-management/kanban/epics/Epic-1.md`
+- `docs/project-management/kanban/epics/epic-01.md`
   - Set Epic 1 status to COMPLETE ✅
   - Updated last updated to `2025-12-03 (v0.1.3.6+1 – All stories complete: Core KB structure established)`
   - Updated Story Checklist entry for E1:S03 to show COMPLETE with all tasks T001–T006 and correct versions
-- `docs/project-management/kanban/epics/Epic-2.md`
+- `docs/project-management/kanban/epics/epic-02.md`
   - Set Epic 2 status to IN PROGRESS (stories 1–3 complete, Story 4 TODO)
   - Updated Story Checklist entry for E2:S03 to COMPLETE ✅ (v0.2.3.6+1 – All tasks complete)
   - Updated Story 1 status block to COMPLETE ✅ with concrete last updated marker
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-003-additional-workflows-and-examples.md`
+- `docs/project-management/kanban/epics/epic-02/stories/story-03-additional-workflows-and-examples.md`
   - Updated status to COMPLETE ✅
   - Updated last updated note to "All tasks complete" at v0.2.3.6+1
 
@@ -56,6 +56,6 @@
 
 ## References
 - **Previous Release (v0.2.3.6+1):** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.6+1.md`
-- **Story E2:S03:** `docs/project-management/kanban/epics/Epic-2/stories/Story-003-additional-workflows-and-examples.md`
-- **Epic 1:** `docs/project-management/kanban/epics/Epic-1.md`
-- **Epic 2:** `docs/project-management/kanban/epics/Epic-2.md`
+- **Story E2:S03:** `docs/project-management/kanban/epics/epic-02/stories/story-03-additional-workflows-and-examples.md`
+- **Epic 1:** `docs/project-management/kanban/epics/epic-01.md`
+- **Epic 2:** `docs/project-management/kanban/epics/epic-02.md`

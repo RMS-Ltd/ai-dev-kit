@@ -4,18 +4,18 @@
       "changes": [],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Epic-8.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/epic-08.md"
       ],
       "surface": "epic_doc",
       "touched": false
     },
     "story_doc": {
       "changes": [
-        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts.md"
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"
       ],
       "surface": "story_doc",
       "touched": true
@@ -100,7 +100,7 @@
         "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
       ],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T05-python-minimum-version-fr104-br077.md"
       ],
       "surface": "task_doc",
       "touched": false

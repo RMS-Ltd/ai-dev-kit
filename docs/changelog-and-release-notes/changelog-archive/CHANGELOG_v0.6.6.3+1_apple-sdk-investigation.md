@@ -32,7 +32,7 @@ E6:S06:T03+1 – Apple SDK License Blocking Issue Investigation Created: Compreh
 ## Task Document
 
 ### E6:S06:T03 Created
-- **File Location:** `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T03-apple-sdk-license-blocking-issue.md`
+- **File Location:** `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T03-apple-sdk-license-blocking-issue.md`
 - **Implementation Plan:** Detailed 4-phase implementation approach
 - **Success Criteria:** Clear metrics for completion
 - **Risk Assessment:** High/medium/low risks identified

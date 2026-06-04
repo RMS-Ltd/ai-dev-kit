@@ -656,7 +656,17 @@ Examples:
         action="store_true",
         help="Skip analysis step (use existing analysis_report.json)"
     )
-    
+    parser.add_argument(
+        "--skip-github-signoff",
+        action="store_true",
+        help="Do not run GitHub issue install sign-off report after install",
+    )
+    parser.add_argument(
+        "--close-github-issues",
+        action="store_true",
+        help="Close ai-dev-kit issues whose sign-off checks passed (requires gh auth)",
+    )
+
     args = parser.parse_args()
     
     project_root = Path.cwd()
@@ -805,7 +815,36 @@ Examples:
         print("  1. Review migration log in analysis_report.json")
         print("  2. Verify migrated structure")
         print("  3. Continue using Kanban framework")
-    
+
+    if not args.skip_github_signoff:
+        try:
+            from install_github_issue_signoff import post_install_signoff
+
+            post_install_signoff(
+                project_root,
+                install_dry_run=args.dry_run,
+                close_github_issues=args.close_github_issues,
+            )
+        except ImportError:
+            signoff = _WORKFLOW_SCRIPTS / "install_github_issue_signoff.py"
+            if signoff.is_file() and not args.dry_run:
+                subprocess.run(
+                    [
+                        sys.executable,
+                        str(signoff),
+                        "--project-root",
+                        str(project_root),
+                        "--list-open-awaiting",
+                        *(
+                            ["--close-github-issues"]
+                            if args.close_github_issues
+                            else []
+                        ),
+                    ],
+                    cwd=project_root,
+                    check=False,
+                )
+
     return 0
 
 

@@ -30,11 +30,11 @@ Complete E24:S05:T01: produce a research document analysing O'Reilly Head First 
 
 ### Updated Files
 
-- `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T01-research-oreilly-head-first-book-structure.md` — Status `TODO → COMPLETE`; deliverable path added.
-- `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md` — Reference paths updated to `docs/book-proj/`.
-- `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development.md` — Reference paths updated to `docs/book-proj/`.
-- `docs/project-management/kanban/epics/Epic-24/Epic-24.md` — Reference paths updated to `docs/book-proj/`.
-- `docs/project-management/kanban/epics/Epic-9/Story-001-book-content-development.md` — Reference paths updated to `docs/book-proj/`.
+- `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T01-research-oreilly-head-first-book-structure.md` — Status `TODO → COMPLETE`; deliverable path added.
+- `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md` — Reference paths updated to `docs/book-proj/`.
+- `docs/project-management/kanban/epics/epic-24/story-01-book-content-development.md` — Reference paths updated to `docs/book-proj/`.
+- `docs/project-management/kanban/epics/epic-24/epic-24.md` — Reference paths updated to `docs/book-proj/`.
+- `docs/project-management/kanban/epics/epic-09/story-01-book-content-development.md` — Reference paths updated to `docs/book-proj/`.
 - `docs/documentation/user-docs/repo-structure-for-adopters.md` — Book/Authoring Content section updated to reference `docs/book-proj/` as the canonical location.
 
 ---

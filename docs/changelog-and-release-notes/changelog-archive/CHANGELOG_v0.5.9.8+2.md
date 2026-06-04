@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-04-01 14:20:00 UTC  
 **Epic:** 5 | **Story:** 9 | **Task:** 8  
-**Task doc:** [T08-docusaurus-strict-broken-links-post-fr067.md](../../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)  
+**Task doc:** [T08-docusaurus-strict-broken-links-post-fr067.md](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)  
 **FR:** [FR-067](../../project-management/kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md) (**FU-1** strict links)
 
 ## Summary

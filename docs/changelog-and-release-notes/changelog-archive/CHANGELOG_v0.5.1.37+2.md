@@ -34,7 +34,7 @@ Documented the **doc-init / abstract space (`+0`) usage** more clearly in the de
 ### Numbering & Versioning Package Implementation Review – Quick Reference
 
 - **Story E3:S04 – Numbering & Versioning Package Implementation Review**  
-  (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review.md`)
+  (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review.md`)
   - Added a **“Doc-Init / Abstract Space Quick Reference”** section that:
     - Summarizes doc-init usage for this story.
     - Notes that abstract spaces are established via `+0` builds.
@@ -45,6 +45,6 @@ Documented the **doc-init / abstract space (`+0`) usage** more clearly in the de
 ## References
 
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`  
-- **Story E3:S04:** `docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review.md`  
+- **Story E3:S04:** `docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review.md`  
 - **Task:** E5:S01:T37 – Kanban Policy Task Prioritisation and Queue/Stack (FR-037)
 

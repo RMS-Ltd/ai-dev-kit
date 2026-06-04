@@ -28,7 +28,7 @@ def test_perpetual_task_not_archivable():
         root = Path(tmp)
         kanban = root / "docs/project-management/kanban"
         kanban.mkdir(parents=True)
-        task = kanban / "epics/Epic-2/Story-016/T04-perpetual.md"
+        task = kanban / "epics/epic-02/Story-016/T04-perpetual.md"
         task.parent.mkdir(parents=True)
         task.write_text(
             "**Status:** IN PROGRESS\n**Task Type:** Perpetual Maintenance\nperpetual_task: true\n",
@@ -36,7 +36,7 @@ def test_perpetual_task_not_archivable():
         )
         board = """## MoSCOW Prioritized In-Progress Tasks
 ### Ongoing (O) - Perpetual Tasks
-- **E2:S16:T04** – UKW perpetual | [Task](epics/Epic-2/Story-016/T04-perpetual.md) | Last modified: 2026-05-30 00:00 UTC
+- **E2:S16:T04** – UKW perpetual | [Task](epics/epic-02/Story-016/T04-perpetual.md) | Last modified: 2026-05-30 00:00 UTC
 """
         cands = mod.scan_kboard_candidates(board, kanban)
         assert len(cands) == 1
@@ -50,12 +50,12 @@ def test_complete_task_archivable():
         root = Path(tmp)
         kanban = root / "docs/project-management/kanban"
         kanban.mkdir(parents=True)
-        task = kanban / "epics/Epic-2/Story-016/T15-done.md"
+        task = kanban / "epics/epic-02/Story-016/T15-done.md"
         task.parent.mkdir(parents=True)
         task.write_text("**Status:** COMPLETE\n**Version Anchor:** v0.2.16.15+1\n", encoding="utf-8")
         board = """## MoSCOW Prioritized In-Progress Tasks
 ### Should Have (S) - Important Tasks
-- **E2:S16:T15** – done | [Task](epics/Epic-2/Story-016/T15-done.md) | Last modified: 2026-05-30 20:30 UTC
+- **E2:S16:T15** – done | [Task](epics/epic-02/Story-016/T15-done.md) | Last modified: 2026-05-30 20:30 UTC
 """
         cands = mod.scan_kboard_candidates(board, kanban)
         assert len(cands) == 1

@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-E2:S11:T12+2 — **Kanban clarity:** **E2:S11:T12**<sup>*</sup> on [kanban-board.md](../../../docs/project-management/kanban/kanban-board.md) with supporting **footnote** (workaround vs vendor fix). Aligned [Story-011](../../../docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation.md) checklist and [Epic-2](../../../docs/project-management/kanban/epics/Epic-2/Epic-2.md) task line to **v0.2.11.12+2**.
+E2:S11:T12+2 — **Kanban clarity:** **E2:S11:T12**<sup>*</sup> on [kanban-board.md](../../../docs/project-management/kanban/kanban-board.md) with supporting **footnote** (workaround vs vendor fix). Aligned [story-011](../../../docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md) checklist and [epic-02](../../../docs/project-management/kanban/epics/epic-02/epic-02.md) task line to **v0.2.11.12+2**.
 
 ---
 
@@ -33,5 +33,5 @@ E2:S11:T12+2 — **Kanban clarity:** **E2:S11:T12**<sup>*</sup> on [kanban-board
 
 ## References
 
-- [T12 task](../../../docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
+- [T12 task](../../../docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
 - [BR-053](../../../docs/project-management/kanban/fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)

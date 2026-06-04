@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
 **Status:** COMPLETE (implementation **v0.6.9.15+1**; reclassification docs **v0.6.9.15+2** — pending user verification)  
-**Implementing Task:** [E06:S09:T15](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md)
+**Implementing Task:** [E06:S09:T15](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md)
 
 **Reclassification (2026-06-04):** Originally filed as **FR-108**; retyped to UXR — install/setup **user-facing feedback** and version traceability in console UX, not a standalone feature contract. FR-108 deleted to free the id.
 
@@ -105,7 +105,7 @@ Determine whether install/setup interactive feedback (banners, prompts, progress
 
 - [FR-078](./FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md) · [FR-079](./FR-079-install-feedback-submission-path-and-governance.md)
 - [FR-080](./FR-080-greenfield-installation-process.md) · [FR-062](./FR-062-github-release-installation-experience.md)
-- [E06:S09:T15](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md)
+- [E06:S09:T15](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md)
 
 ---
 

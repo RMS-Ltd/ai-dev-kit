@@ -278,8 +278,8 @@ def extract_epic_story_from_path(story_file: Path) -> Optional[Tuple[int, int]]:
     Extract Epic and Story numbers from file path.
     
     Examples:
-    - Epic-3/stories/Story-003-*.md → (3, 3)
-    - Epic-2/stories/Story-001-*.md → (2, 1)
+    - epic-03/stories/story-03-*.md → (3, 3)
+    - epic-02/stories/story-01-*.md → (2, 1)
     """
     path_str = str(story_file)
     
@@ -469,7 +469,7 @@ def locate_task_doc(
         if not story_dir.exists():
             story_dir = kanban_root / f"epics/Epic-{epic}/Story-{story}"
         if not story_dir.exists() and story_file.exists():
-            # Fallback: story dir may match story file stem (e.g. Story-001-fr-repo/)
+            # Fallback: story dir may match story file stem (e.g. story-01-fr-repo/)
             story_dir = story_file.parent / story_file.stem
     else:
         # Fallback patterns
@@ -872,7 +872,7 @@ def detect_first_time_est_doc(
         re.compile(rf'.*Epic-{epic}/Story-{story}/Task-{task:03d}.*\.md$'),      # Mixed
         re.compile(rf'.*Epic-{epic}/Story-{story:03d}/Task-{task}.*\.md$'),     # Mixed
         re.compile(rf'.*Epic-{epic}/Story-{story}/Task-{task}.*\.md$'),          # Non-zero-padded
-        # T-prefix format (e.g. T01-*.md in Story-006-post-windsurf-project-review/)
+        # T-prefix format (e.g. T01-*.md in story-06-post-windsurf-project-review/)
         re.compile(rf'.*Epic-{epic}/Story-{story:03d}[^/]*/T{task:02d}-.*\.md$'),
         re.compile(rf'.*Epic-{epic}/Story-{story}[^/]*/T{task}-.*\.md$'),
     ]

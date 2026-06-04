@@ -15,10 +15,10 @@
 - Marked `E4:S19:T02` and `E4:S19:T05` as `SUPERSEDED` with explicit redirect to `E4:S19:T06`
 - Added canonical `IPP-E4S19T02-...` copy for legacy `IPW-E4S19T02-...` planning artifact naming normalization
 - Rewired `UXR-008`, `FR-086`, and `FR-073` implementing-task ownership to `E4:S19:T06` with historical lineage notes preserved
-- Updated `Story-019`, `Story-001`, and `fbuboard.md` rows/links to reflect T06 ownership and `IPP-E4S19T06` wiring
+- Updated `story-019`, `story-001`, and `fbuboard.md` rows/links to reflect T06 ownership and `IPP-E4S19T06` wiring
 
 ## References
 
-- Task: `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md`
+- Task: `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md`
 - IPP: `docs/implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md`
-- Boards: `docs/project-management/kanban/fbuboard.md`, `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md`
+- Boards: `docs/project-management/kanban/fbuboard.md`, `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`

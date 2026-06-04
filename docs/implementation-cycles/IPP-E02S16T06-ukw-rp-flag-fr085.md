@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E02:S16:T06 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T06-ukw-optional-reprioritization-rp-flag-fr085.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) **(E02:S16:T06)**  
+**Host Task:** [`T06-ukw-optional-reprioritization-rp-flag-fr085.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) **(E02:S16:T06)**  
 **Planning for:** [FR-085 — UKW optional reprioritization (`--rp`)](../project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)  
 **Status:** Published
 
@@ -254,7 +254,7 @@ For each candidate active row, agents MUST classify using at least one of:
 ## References
 
 - [FR-085](../project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
-- [T06 task doc](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
+- [T06 task doc](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
 - [FR-023](../project-management/kanban/fr-br/FR-023-update-kanban-workflow-ukw.md)
 - [FR-038](../project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
 - [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)

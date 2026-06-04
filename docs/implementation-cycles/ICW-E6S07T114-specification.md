@@ -43,4 +43,4 @@ Define canonical board filenames and required compatibility behavior across proj
 ## Dependencies
 
 - [UXR-008](../project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- [Task E6:S07:T114](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)
+- [Task E6:S07:T114](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)

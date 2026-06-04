@@ -8,7 +8,7 @@
 | Surface | Action | Why |
 | ------- | ------ | --- |
 | T16 task doc | Version anchor + Last updated | Host task |
-| Story-016 | T16 checklist + version | Hierarchy sync |
+| story-016 | T16 checklist + version | Hierarchy sync |
 | FR-102 | Version line (hygiene release) | Source FBU |
 | kanban-completed.md | E02:S16:T16 ledger entry | UKW `-c` ledger-before-prune |
 | fbu-completed.md | FR-102 ledger entry | UKW `-c` ledger-before-prune |

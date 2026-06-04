@@ -18,7 +18,7 @@ Merge branch **`epic/5-documentation-management`** into **`main`**: integrates *
 ## Changed
 
 - **Git:** merge commit for **epic/5** → **main**.
-- **Kanban / UXR:** `Story-000-uxr-repo`, **fr-br-uxr-board**, **UXR-001/002/005** header wiring (repository + implementation links).
+- **Kanban / UXR:** `story-00-uxr-repo`, **fr-br-uxr-board**, **UXR-001/002/005** header wiring (repository + implementation links).
 - **Version / SemVer:** internal **`0.5.1.32+1`**; task_touch SemVer from **`semver_converter.py`** on merge resolution.
 
 ---

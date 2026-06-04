@@ -118,7 +118,7 @@ This document provides **detailed task-level analysis** of Kanban structures acr
 - **Location:** `kanban/epics/Epic-X/Story-XXX/Task-YYY-description.md` or `TYYY-description.md`
 - **Structure:** Each task has its own markdown file
 - **Projects Using:** ADK templates (recommended), some tasks in ai-dev-kit
-- **Example:** `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T01-Define-Project-Structure.md`
+- **Example:** `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T01-Define-Project-Structure.md`
 - **Frequency:** Recommended but not always used in practice
 
 **Advantages:**
@@ -178,7 +178,7 @@ This document provides **detailed task-level analysis** of Kanban structures acr
 - **Location:** Task checklist in Story document, with detailed sections below
 - **Structure:** Checklist at top, detailed task sections below
 - **Projects Using:** confidentia, fynd.deals, starborn_legacy
-- **Example:** `Story-4-Test-Coverage-and-Quality-Improvements.md` (confidentia)
+- **Example:** `story-04-Test-Coverage-and-Quality-Improvements.md` (confidentia)
 - **Frequency:** Common pattern
 
 **Advantages:**
@@ -379,7 +379,7 @@ This document provides **detailed task-level analysis** of Kanban structures acr
 **In Epic Document:**
 - High-level task tracking
 - Shows all tasks across stories
-- Example: `Epic-20.md` (been-there)
+- Example: `epic-20.md` (been-there)
 
 **In Story Document:**
 - Story-level task tracking

@@ -24,7 +24,7 @@
 
 - Touched: **False**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md`
 - Notes:
   - Surface within release scope but not touched by this run (idempotent no-op or already canonical).
 
@@ -60,15 +60,15 @@
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md`
 - Changes:
-  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md
+  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md
 
 ### Auxiliary: `epic_doc`
 
 - Touched: **False**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Epic-1.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/epic-01.md`
 
 ### Auxiliary: `uncategorized`
 

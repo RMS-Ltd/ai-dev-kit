@@ -62,7 +62,7 @@ cd frameworks/kanban
 
 # Update example project references
 find . -type f -name "*.md" \
-  -exec sed -i '' 's|docs/project-management/epics/overview/Epic 4|docs/project-management/kanban/epics/Epic-4|g' {} \;
+  -exec sed -i '' 's|docs/project-management/epics/overview/Epic 4|docs/project-management/kanban/epics/epic-04|g' {} \;
 
 # Update example project names
 find . -type f -name "*.md" \
@@ -160,8 +160,8 @@ mkdir -p docs/project-management/kanban/epics
 cp frameworks/kanban/templates/kboard.md docs/project-management/kanban/kboard.md
 
 # Create first epic
-mkdir -p docs/project-management/kanban/epics/Epic-1
-cp frameworks/kanban/templates/epic-template.md docs/project-management/kanban/epics/Epic-1/Epic-1.md
+mkdir -p docs/project-management/kanban/epics/epic-01
+cp frameworks/kanban/templates/epic-template.md docs/project-management/kanban/epics/epic-01/epic-01.md
 ```
 
 ---
@@ -230,13 +230,13 @@ python3 scripts/release-workflow.py
 
 ```bash
 # Create epic directory
-mkdir -p docs/project-management/kanban/epics/Epic-1
+mkdir -p docs/project-management/kanban/epics/epic-01
 
 # Create epic document
-cp frameworks/kanban/templates/epic-template.md docs/project-management/kanban/epics/Epic-1/Epic-1.md
+cp frameworks/kanban/templates/epic-template.md docs/project-management/kanban/epics/epic-01/epic-01.md
 
 # Edit epic document
-vim docs/project-management/kanban/epics/Epic-1/Epic-1.md
+vim docs/project-management/kanban/epics/epic-01/epic-01.md
 
 # Update:
 # - Epic title and description
@@ -249,10 +249,10 @@ vim docs/project-management/kanban/epics/Epic-1/Epic-1.md
 ```bash
 # Create story document
 cp frameworks/kanban/templates/story-template.md \
-   docs/project-management/kanban/epics/Epic-1/Story-001-epic-title.md
+   docs/project-management/kanban/epics/epic-01/story-01-epic-title.md
 
 # Edit story document
-vim docs/project-management/kanban/epics/Epic-1/Story-001-epic-title.md
+vim docs/project-management/kanban/epics/epic-01/story-01-epic-title.md
 
 # Update:
 # - Story title and description

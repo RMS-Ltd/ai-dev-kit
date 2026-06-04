@@ -66,14 +66,14 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 | FR-091 | FR | RW Step 7 self-sufficient kanban — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
 | FR-084 | FR | IPP post-run governance — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
 | FR-040 | FR | ICW workflow — **SUPERSEDED** by **FR-042** IPW | 2026-05-20 | v0.2.16.3+6 | IPW |
-| FR-005 | FR | Systematic canonical E/S/T template system — Story-006 corpus; closure audit (E04:S06:T01); R5 deferred | 2026-05-29 | v0.4.6.1+1 | RW |
+| FR-005 | FR | Systematic canonical E/S/T template system — story-006 corpus; closure audit (E04:S06:T01); R5 deferred | 2026-05-29 | v0.4.6.1+1 | RW |
 | FR-101 | FR | Consolidate governance under `docs/governance/` — ADR-007; Waves 0–F (E07:S01:T11) | 2026-05-29 | v0.7.1.11+8 | RW |
 | FR-031 | FR | Multi-agent coordination feasibility — **WON'T HAVE** (deferred; E05:S01:T31) | 2026-05-29 | v0.5.1.31+0 | Maintainer |
 | FR-024 | FR | IDE/linter check before RW commit — Step 9.6 (E02:S01:T08) | 2026-05-29 | v0.2.1.8+1 | RW |
 | FR-057 | FR | Update Changelog Workflow (UCW/CMW) — E07:S01:T06 | 2026-03-16 | v0.7.1.7+4 | RW |
 | FR-081 | FR | Brownfield modular adopter integration — INSTALL chapter, matrices, installer messaging (E06:S09:T02) | 2026-05-29 | v0.6.9.2+2 | RW |
 | FR-082 | FR | Installation canonical repo — public `RMS-Ltd/ai-dev-kit` bootstrap + rewire (E06:S09:T03) | 2026-05-28 | v0.6.9.3+2 | RW |
-| FR-099 | FR | Book/Epic-24 spin-off — private `hf-ai-dev-kit` + public `earlution/ai-dev-kit` (ADR-006; T03–T07) | 2026-05-26 | v0.1.4.7+2 | RW |
+| FR-099 | FR | Book/epic-24 spin-off — private `hf-ai-dev-kit` + public `earlution/ai-dev-kit` (ADR-006; T03–T07) | 2026-05-26 | v0.1.4.7+2 | RW |
 | FR-098 | FR | Optional ECC harness layer integration (phases 0–5; T04–T06) | 2026-05-26 | v0.6.9.6+3 | RW |
 | FR-100 | FR | IPW ADR necessity checklist — Phase 5.0 gate; T1–T7 / E1–E5; policy SoT; IPP §2.5 (**E02:S16:T12**) | 2026-05-26 | v0.2.16.12+2 | RW |
 | FR-096 | FR | IPW mandatory documentation phases — update/create (Phase 5) + housing (Phase 6); IPP §5–§7; ten-phase `/ipw` (**E02:S16:T11**) | 2026-05-20 | v0.2.16.11+1 | RW |
@@ -115,7 +115,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **BR-068 – Docusaurus strict MDX cannot resolve monorepo markdown links — production build fails**  
 **Completed:** 2026-04-19 (`v0.5.9.11+5`)  
-**Implementing Task:** [E05:S09:T11](epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)  
+**Implementing Task:** [E05:S09:T11](epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)  
 **Completing Agent:** RW Agent  
 **Resolution:** **[IPW-E05S09T11](../../implementation-cycles/IPW-E05S09T11-docusaurus-monorepo-markdown-links-br068.md)** Waves **1–4** — Strategy **A** corpus normalization; **`npm run build`** strict green; **BR-068** §Acceptance Criteria satisfied (CI gate: **`docusaurus-build.yml`**). Row removed from [`fbuboard.md`](fbuboard.md).
 
@@ -123,7 +123,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **FR-080 – End-to-end greenfield installation process**  
 **Completed:** 2026-04-19 (`v0.6.9.1+8`)  
-**Implementing Task:** [E06:S09:T01](epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)  
+**Implementing Task:** [E06:S09:T01](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)  
 **Completing Agent:** RW Agent  
 **Resolution:** Functional + non-functional requirements satisfied per **Implementation evidence** on [FR-080](fr-br/FR-080-greenfield-installation-process.md); deferrals explicit (FR-078/079 product telemetry, FR-082/T03 canonical coordinates). Row removed from [`fbuboard.md`](fbuboard.md).
 
@@ -133,7 +133,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **UXR-007 – Interactive Installer Kanban Pattern Prompt Clarity**  
 **Completed:** 2026-04-18 (`v0.7.6.18+3`)  
-**Implementing Task:** [E07:S06:T18](epics/Epic-7/Story-006-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md)  
+**Implementing Task:** [E07:S06:T18](epics/epic-07/story-06-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md)  
 **Completing Agent:** UKW Agent  
 **Resolution:** Implementing task **COMPLETE**; intake doc [`UXR-007`](fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md) set to **`Status: COMPLETE`**; Must Have row removed from [`fbuboard.md`](fbuboard.md) per active-board hygiene.
 
@@ -145,7 +145,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **BR-056 – RW Accepts Ambiguous Task Identifier Without Validation (Typo Risk)**  
 **Completed:** 2026-03-25T12:55:31Z (v0.6.6.56+4)  
-**Implementing Task:** [E06:S06:T56](epics/Epic-6/Story-006-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md)  
+**Implementing Task:** [E06:S06:T56](epics/epic-06/story-06-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md)  
 **Completing Agent:** RW Agent  
 **Resolution:** `validate_rw_task_intent.py` + RW Step 1b guard; live verification confirmed story-mismatch and epic-mismatch abort before Step 2 edits.
 
@@ -154,14 +154,14 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **BR-055 – Missing Implementation Cycle Workflow (ICW)**  
 **Completed:** 2026-03-12T15:35:00Z (v0.4.14.3+2)  
 **GitHub Issue:** [#22](https://github.com/earlution/ai-dev-kit/issues/22)  
-**Implementing Task:** [E04:S14:T03](epics/Epic-4/Story-014-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)  
+**Implementing Task:** [E04:S14:T03](epics/epic-04/story-14-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)  
 **Completing Agent:** ICW Agent  
 **Resolution:** Complete ICW implementation with workflow generator integration, comprehensive documentation, and testing suite. ICW now available as standard workflow type following agent-driven execution pattern. Framework completeness restored with all standard workflow types available.
 
 **BR-054 – Kanban Package Migration/Installation Completely Broken**  
 **Completed:** 2026-03-12T13:20:00Z (v0.24.2.1+1)  
 **GitHub Issue:** [#17](https://github.com/earlution/ai-dev-kit/issues/17)  
-**Implementing Story:** [E4:S17](epics/Epic-4/Story-017-kanban-package-installation-evaluation.md)  
+**Implementing Story:** [E4:S17](epics/epic-04/story-17-kanban-package-installation-evaluation.md)  
 **Completing Agent:** Documentation Agent  
 **Description:** Comprehensive evaluation and resolution of kanban package installation issues including migration path failures, path inflexibility, missing validation, and poor error handling  
 **Impact:** Package upgraded from beta to production-ready with comprehensive testing and validation  
@@ -173,7 +173,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **BR-009 – Installer Discoverability and Documentation**  
 **Completed:** 2026-03-09T16:00:00Z (v0.6.7.104+2)  
 **GitHub Issue:** [#14](https://github.com/earlution/ai-dev-kit/issues/14)  
-**Implementing Task:** [E04:S06:T07](epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/E04S06T07-integration-validation-report.md)  
+**Implementing Task:** [E04:S06:T07](epics/epic-04/story-06-comprehensive-canonical-est-template-system/E04S06T07-integration-validation-report.md)  
 **Completing Agent:** RW Agent  
 **Description:** Fixed installer prominence and template distinction issues in kanban framework installation  
 **Impact:** Users now properly guided to use interactive installer with clear template vs. actual kanban distinction  
@@ -188,7 +188,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 
 **FR-051 – FR/BR/UXR Prioritization Board**  
 **Completed:** 2026-03-09T15:20:00Z (v0.6.7.107+1)  
-**Implementing Task:** [E06:S06:T01](epics/Epic-6/Story-006-feature-requests/T01-fr-br-uxr-prioritization-board.md)  
+**Implementing Task:** [E06:S06:T01](epics/epic-06/story-06-feature-requests/T01-fr-br-uxr-prioritization-board.md)  
 **Completing Agent:** Documentation Agent  
 **Description:** Created prioritization board for FRs, BRs, and UXRs with identical structure to Kanban board  
 **Impact:** Provides systematic FR/BR/UXR management with centralized visibility and prioritization  

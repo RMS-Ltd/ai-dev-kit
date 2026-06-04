@@ -144,7 +144,7 @@ This guide provides the complete intake process documentation needed for convert
 ## 📄 Files Changed
 
 - `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.2.4+1)
 
 ---

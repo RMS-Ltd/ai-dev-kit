@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** IMPLEMENTED
 
-**Implementing Task:** [E06:S06:T62](../epics/Epic-6/Story-006-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md)
+**Implementing Task:** [E06:S06:T62](../epics/epic-06/story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md)
 **Planning package (IPW):** [IPW-E06S06T62-global-ipw-gated-implementation-contract](../../../implementation-cycles/IPW-E06S06T62-global-ipw-gated-implementation-contract.md)
 
 ---

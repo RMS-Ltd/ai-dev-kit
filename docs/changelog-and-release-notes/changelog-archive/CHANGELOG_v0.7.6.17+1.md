@@ -22,7 +22,7 @@ Fix invalid GitHub Actions YAML in `fr-br-intake.yml` (dedented lines inside `sc
 ### Kanban / traceability
 
 - **BR-057** — Retrospective bug report for the YAML block-scalar root cause and resolution.
-- **E7:S06:T17** — Task doc `T17-BR057-fr-br-intake-yaml-retrospective.md`; Story-006 and Epic-7 checklists updated.
+- **E7:S06:T17** — Task doc `T17-BR057-fr-br-intake-yaml-retrospective.md`; story-006 and epic-07 checklists updated.
 
 ### Framework scripts
 

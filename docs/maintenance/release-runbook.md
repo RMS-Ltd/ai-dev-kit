@@ -156,7 +156,7 @@ origin  https://github.com/RMS-Ltd/ai-dev-kit.git (push)
 
 ### References
 - Spec/Test/Plan: `docs/implementation-cycles/ICW-E7S01T06-*.md`
-- Task: `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md`
+- Task: `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T06-update-changelog-workflow.md`
 - FR: `docs/project-management/kanban/fr-br/FR-057-update-changelog-workflow.md`
 
 ---

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E04:S08:T05](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md)
+**Implementing Task:** [E04:S08:T05](../epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption.md)
 **GitHub Issue:** [#7](https://github.com/RMS-Ltd/ai-dev-kit/issues/7)
 
 ---
@@ -175,8 +175,8 @@ The Kanban framework migration process needs intelligent capabilities to:
 - Version: `[TBD]`
 
 **Kanban Links:**
-- Epic: [`Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`Story-008-intelligent-epic-matching-canonical-adoption.md`](../epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md) - TO BE CREATED
+- Epic: [`epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`story-08-intelligent-epic-matching-canonical-adoption.md`](../epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption.md) - TO BE CREATED
 - Task: [TBD]
 
 ---

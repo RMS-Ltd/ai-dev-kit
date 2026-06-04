@@ -24,7 +24,7 @@ This release completes **Task 2: Validate Kanban → Versioning integration in d
   - Validated version file updates alignment with Kanban Task creation
   - Documented gaps and inconsistencies
 
-- ✅ **Validation Report Created** (`T002-kanban-versioning-validation.md`):
+- ✅ **Validation Report Created** (`T02-kanban-versioning-validation.md`):
   - Validation methodology and test cases
   - Epic/Story mapping validation (✅ PASS)
   - Task mapping validation (❌ FAIL - critical issue identified)
@@ -129,7 +129,7 @@ This release completes **Task 2: Validate Kanban → Versioning integration in d
 This validation has identified a critical inconsistency that needs to be addressed. The issue affects forensic traceability and violates the versioning schema rules. Recommendations have been provided for immediate fixes, process improvements, and long-term solutions.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T002-kanban-versioning-validation.md` (comprehensive validation report)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T02-kanban-versioning-validation.md` (comprehensive validation report)
 
 ---
 
@@ -143,8 +143,8 @@ This validation has identified a critical inconsistency that needs to be address
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T002-kanban-versioning-validation.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T02-kanban-versioning-validation.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.3.2+1)
 
 ---

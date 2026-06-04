@@ -80,7 +80,7 @@ This represents an **abstract anti-pattern**: **Use Case Exposed Design Flaw**
 
 ## Steps to Reproduce
 
-1. Create Story document (e.g., `Story-013-kanban-board-moscow-prioritized-task-view.md`)
+1. Create Story document (e.g., `story-13-kanban-board-moscow-prioritized-task-view.md`)
 2. Create all Task documents for that Story in the same commit
 3. Commit all documents together in story's abstract space (v0.E.S.0+0)
 4. Begin implementation work on Task 1 (make code changes, not just docs)
@@ -91,7 +91,7 @@ This represents an **abstract anti-pattern**: **Use Case Exposed Design Flaw**
 **Example Scenario:**
 ```
 Commit 1: Story + Task docs created together
-- Story-013-kanban-board-moscow-prioritized-task-view.md
+- story-13-kanban-board-moscow-prioritized-task-view.md
 - T01-kanban-board-moscow-prioritized-task-view.md
 - T02-update-kanban-governance-policy.md
 - T03-update-kanban-board-template.md
@@ -190,7 +190,7 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 **Files Updated:**
 - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` (bug fix)
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (documentation)
-- `docs/project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` (task doc)
+- `docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` (task doc)
 
 **Verification Status:**
 - [x] Verified (test suite passed / manual test passed)
@@ -264,9 +264,9 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 **Verification Status:** Verified (manual test passed)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`docs/project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view.md`](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view.md)
-- Task: [E04:S13:T04 – Assess system impacts](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
+- Epic: [`docs/project-management/kanban/epics/epic-04/epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view.md`](../epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view.md)
+- Task: [E04:S13:T04 – Assess system impacts](../epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
 
 ---
 
@@ -281,7 +281,7 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 **Related Knowledge:**
 - **Use Case:** [UC-D-004 – Story + Task Docs Batch Creation](../../../knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md)
 - **Abstract Anti-Pattern:** [Use Case Exposed Design Flaw](../../../knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md)
-- **Task Document:** [E04:S13:T04 – Assess system impacts](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
+- **Task Document:** [E04:S13:T04 – Assess system impacts](../epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
 
 ---
 
@@ -291,7 +291,7 @@ Updated `detect_first_time_est_doc` function in `validate_version_bump.py` to ch
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW documentation
 - `docs/knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md` - Discovered use case
 - `docs/knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md` - Abstract anti-pattern definition
-- `docs/project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` - Task document
+- `docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` - Task document
 
 ---
 

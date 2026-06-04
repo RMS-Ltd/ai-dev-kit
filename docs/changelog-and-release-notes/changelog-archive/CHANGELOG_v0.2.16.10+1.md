@@ -29,7 +29,7 @@ FR-095 implementation: auto-detect GitHub remote repository in `create_github_re
 
 - **FR-095** status updated to `COMPLETE`
 - **T10 task doc** version/last_updated updated
-- **Story-016** T10 checklist updated to `IN PROGRESS`
+- **story-016** T10 checklist updated to `IN PROGRESS`
 - **kboard.md** version/last_updated updated
 
 ## Acceptance Criteria

@@ -273,7 +273,7 @@ housekeeping_policy: delete
 
 ## Steps to Renumber Story IDs
 
-1. Update Epic-2.md...
+1. Update epic-02.md...
 ```
 
 ---

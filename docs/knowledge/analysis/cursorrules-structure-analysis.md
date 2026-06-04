@@ -720,7 +720,7 @@ The Release Workflow configuration is located at:
    - For new Epics: Use `templates/kanban/EPIC_TEMPLATE.md`
    - For new Stories: Use `templates/kanban/STORY_TEMPLATE.md`
    - For other docs: Use appropriate template from `templates/` or `docs/fynd_deals/_design/architecture/templates/`
-   - **NEVER copy from existing documents** (e.g., don't copy `Story-08-Route-Validation.md` to create `Story-09-Route-Error-Handling.md`)
+   - **NEVER copy from existing documents** (e.g., don't copy `story-08-Route-Validation.md` to create `story-09-Route-Error-Handling.md`)
 
 2. **Template locations:**
    [Template locations]

@@ -84,8 +84,8 @@ This release improves the discoverability and accessibility of GitHub submission
 
 ## References
 
-- Epic 4: `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
-- Story 2: `docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md`
+- Epic 4: `docs/project-management/kanban/epics/epic-04/epic-04.md`
+- Story 2: `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md`
 - CONTRIBUTING.md: `CONTRIBUTING.md`
 - GitHub Submission Guide: `packages/frameworks/kanban/FR_BR_UXR_GITHUB_SUBMISSION_GUIDE.md`
 

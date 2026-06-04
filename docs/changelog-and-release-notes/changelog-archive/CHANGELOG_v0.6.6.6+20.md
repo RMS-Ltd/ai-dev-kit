@@ -46,8 +46,8 @@ housekeeping_policy: keep
    - Version marker updated to v0.6.6.6+20
 
 **Files Modified:**
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 - `src/fynd_deals/version.py`
 
 ---
@@ -128,6 +128,6 @@ housekeeping_policy: keep
 
 **Related:**
 - Epic 6, Story 6, Task 6
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 

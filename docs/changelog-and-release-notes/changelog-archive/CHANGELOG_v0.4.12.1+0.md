@@ -19,7 +19,7 @@ Created Epic 5, Story 0: FR Repo (PERPETUAL) as the canonical repository for all
 ### Repository Story Creation
 
 - **E5:S00 - FR Repo (PERPETUAL):** Created repository story document
-  - Location: `docs/project-management/kanban/epics/Epic-5/Story-000-fr-repo.md`
+  - Location: `docs/project-management/kanban/epics/epic-05/story-00-fr-repo.md`
   - Status: IN PROGRESS (PERPETUAL)
   - Abstract space: v0.5.0.0+0
   - Traceability pattern: FR-001 = E5:S00:T01

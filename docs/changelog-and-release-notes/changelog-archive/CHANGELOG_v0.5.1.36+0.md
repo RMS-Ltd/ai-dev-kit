@@ -25,7 +25,7 @@ FR-036 and task E5:S01:T36 created to address missing Kanban board updates in RW
   - Identifies gap: RW Step 7 updates Story/Epic docs but not Kanban board
 
 - **Task E5:S01:T36:** Implementation task created
-  - Location: `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md`
+  - Location: `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T36-rw-update-kanban-board-on-task-completion.md`
   - Status: TODO
   - Priority: HIGH
   - Traceability: FR-036 = E5:S01:T36
@@ -68,6 +68,6 @@ Enhance RW Step 7 to automatically update the Kanban board:
 
 - **FR-015:** Harden Kanban Docs Update in Release Workflow (partially implemented - board updates missing)
 - **FR-036:** RW Update Kanban Board on Task Completion (this FR)
-- **Task:** [E5:S01:T36](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md)
-- **Story:** [E5:S01: FR Repo](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo.md)
+- **Task:** [E5:S01:T36](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T36-rw-update-kanban-board-on-task-completion.md)
+- **Story:** [E5:S01: FR Repo](../../project-management/kanban/epics/epic-05/story-01-fr-repo.md)
 - **RW Step 7 Script:** `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`

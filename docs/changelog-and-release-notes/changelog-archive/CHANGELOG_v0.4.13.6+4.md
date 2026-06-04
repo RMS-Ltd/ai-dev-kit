@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ✅ Documentation Correction: Fixed E4:S10 status inconsistency in kanban board documentation.
 
-This release corrects a documentation error where E4:S10 (Agentic Kanban Task Creation from FR/BR) was incorrectly marked as COMPLETE in the kanban board, when it is actually IN PROGRESS. The story document shows most tasks (T01-T07) are still IN PROGRESS, and Epic-4.md correctly lists it as TODO/IN PROGRESS.
+This release corrects a documentation error where E4:S10 (Agentic Kanban Task Creation from FR/BR) was incorrectly marked as COMPLETE in the kanban board, when it is actually IN PROGRESS. The story document shows most tasks (T01-T07) are still IN PROGRESS, and epic-04.md correctly lists it as TODO/IN PROGRESS.
 
 ---
 
@@ -33,7 +33,7 @@ This release corrects a documentation error where E4:S10 (Agentic Kanban Task Cr
   - Corrected E4:S10 status from COMPLETE ✅ to IN PROGRESS
   - Added task details: T00 ✅ COMPLETE, T01-T07 IN PROGRESS
   - Updated Epic 4 note to clarify S10 is IN PROGRESS (not TODO)
-  - Aligns kanban board with Epic-4.md and Story-010 document actual status
+  - Aligns kanban board with epic-04.md and story-010 document actual status
 
 ### Version File
 
@@ -62,7 +62,7 @@ This release corrects a documentation error where E4:S10 (Agentic Kanban Task Cr
 
 - ✅ Branch context validation passed (on `main` branch)
 - ✅ Version format validated
-- ✅ Documentation consistency verified across Epic-4.md and Story-010 document
+- ✅ Documentation consistency verified across epic-04.md and story-010 document
 
 ---
 

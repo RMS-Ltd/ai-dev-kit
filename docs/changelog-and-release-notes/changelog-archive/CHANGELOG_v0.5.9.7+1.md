@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-03-30 16:59:05 UTC  
 **Epic:** 5 | **Story:** 9 | **Task:** 7  
-**Task doc:** [T07-docusaurus-search-fr-071.md](../../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T07-docusaurus-search-fr-071.md)  
+**Task doc:** [T07-docusaurus-search-fr-071.md](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T07-docusaurus-search-fr-071.md)  
 **FR:** [FR-071](../../project-management/kanban/fr-br/FR-071-docusaurus-site-search.md)
 
 ## Summary

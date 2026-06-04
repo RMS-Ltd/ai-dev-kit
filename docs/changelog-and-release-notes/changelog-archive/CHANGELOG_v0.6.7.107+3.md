@@ -6,7 +6,7 @@
 **Story:** S07 — ADK implementation analysis and package management  
 **Task:** T107 — IDE command whitelist optimization  
 
-**Task doc:** [T107-ide-command-whitelist-optimization.md](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
+**Task doc:** [T107-ide-command-whitelist-optimization.md](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
 
 ---
 

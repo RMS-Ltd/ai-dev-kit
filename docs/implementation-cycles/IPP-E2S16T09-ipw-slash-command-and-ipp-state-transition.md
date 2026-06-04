@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S16:T09 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T09-ipw-slash-command-claude-code-fr094.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md) **(E2:S16:T09)**  
+**Host Task:** [`T09-ipw-slash-command-claude-code-fr094.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md) **(E2:S16:T09)**  
 **Planning for:** [FR-094](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)  
 **Status:** Approved
 
@@ -128,7 +128,7 @@ All RF1–RF12 requirements map directly to the ten deliverable files listed in 
 - `.cursorrules`
 - `AGENTS.md`
 - `docs/project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md`
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md`
 
 ### 4.3 Dependency order
 
@@ -155,7 +155,7 @@ All RF1–RF12 requirements map directly to the ten deliverable files listed in 
 
 ## References
 
-- [Host Task E2:S16:T09](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)
+- [Host Task E2:S16:T09](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)
 - [FR-094](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 - [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [ADR-004](../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md)

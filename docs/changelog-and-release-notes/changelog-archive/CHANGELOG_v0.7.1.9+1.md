@@ -7,12 +7,12 @@
 
 ## Summary
 
-`RW -k` kanban documentation setup for **E7:S01:T09** (Kanban Template Governance & **UXR-005**), plus intake hygiene: **UXR-001 / UXR-002 / UXR-005** registry tasks **E7:S00:T01**, **T02**, **T05** under [`Story-000-uxr-repo`](../../project-management/kanban/epics/Epic-7/Story-000-uxr-repo.md); **`fr-br-uxr-board`** and UXR markdown intake sections updated; **E7:S01:T09** ↔ **E7:S00:T05** cross-links. Restored **`validate_rw_task_complete.py`** on this branch (from **`epic/6-framework-management`**) so FR-060 RW guards can run here.
+`RW -k` kanban documentation setup for **E7:S01:T09** (Kanban Template Governance & **UXR-005**), plus intake hygiene: **UXR-001 / UXR-002 / UXR-005** registry tasks **E7:S00:T01**, **T02**, **T05** under [`story-00-uxr-repo`](../../project-management/kanban/epics/epic-07/story-00-uxr-repo.md); **`fr-br-uxr-board`** and UXR markdown intake sections updated; **E7:S01:T09** ↔ **E7:S00:T05** cross-links. Restored **`validate_rw_task_complete.py`** on this branch (from **`epic/6-framework-management`**) so FR-060 RW guards can run here.
 
 ## Changed
 
-- `docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo/` — new T01, T02, T05 task docs; story checklist
-- `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md` — **Task ID**, registry link, version marker
+- `docs/project-management/kanban/epics/epic-07/story-00-uxr-repo/` — new T01, T02, T05 task docs; story checklist
+- `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md` — **Task ID**, registry link, version marker
 - `docs/project-management/kanban/fr-br-uxr-board.md` — UXR links + metadata (merge with **epic/7**)
 - `docs/project-management/kanban/fr-br/UXR-001*.md`, `UXR-002*.md`, `UXR-005*.md` — intake / kanban links
 - `packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py` — restored (branch parity)

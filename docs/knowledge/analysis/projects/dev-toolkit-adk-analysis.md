@@ -152,10 +152,10 @@ housekeeping_policy: keep
    - **Problem:** Confusion about what Epic 1 represents
    - **Impact:** Unclear project boundaries
    - **Examples:**
-     - `Story-001-vibe-dev-kit-kanban-and-versioning.md` (framework story)
-     - `Story-001-tool-management-system.md` (project-specific story)
-     - `Story-002-package-and-repo-architecture.md` (framework story)
-     - `Story-002-tool-distribution-strategy.md` (project-specific story)
+     - `story-01-vibe-dev-kit-kanban-and-versioning.md` (framework story)
+     - `story-01-tool-management-system.md` (project-specific story)
+     - `story-02-package-and-repo-architecture.md` (framework story)
+     - `story-02-tool-distribution-strategy.md` (project-specific story)
 
 3. **Framework Epics in Project Kanban**
    - **Issue:** Epics 1-8 are framework infrastructure epics, not project epics
@@ -175,7 +175,7 @@ housekeeping_policy: keep
    - **Description:** Epic 9 from ai-dev-kit's own Kanban structure present in toolkit project
    - **Impact:** CRITICAL - Epic has no relevance to toolkit project
    - **Root Cause:** Project copied ai-dev-kit's own Kanban structure instead of using Kanban package template
-   - **Evidence:** `docs/project-management/kanban/epics/Epic-9/Epic-9.md` exists with "Book Related Work" content
+   - **Evidence:** `docs/project-management/kanban/epics/epic-09/epic-09.md` exists with "Book Related Work" content
 
 2. **Framework Infrastructure Epics (1-8) in Project**
    - **Description:** Epics 1-8 are framework infrastructure epics from ai-dev-kit repo
@@ -883,8 +883,8 @@ None identified - scripts are correct.
 ### 10.1 File Inventory
 
 **Kanban Files:**
-- `docs/project-management/kanban/epics/Epic-1/` through `Epic-9/` (framework epics)
-- `docs/project-management/kanban/epics/Epic-18/`, `Epic-22/`, `Epic-23/` (project epics?)
+- `docs/project-management/kanban/epics/epic-01/` through `epic-09/` (framework epics)
+- `docs/project-management/kanban/epics/epic-18/`, `epic-22/`, `epic-23/` (project epics?)
 - Multiple stories and tasks per epic
 
 **KB Files:**

@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-29  
 **Decision owner:** Maintainer  
-**Implementing work:** [FR-101](../../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) · [E7:S01:T11](../../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) · [IPP-E7S01T11](../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
+**Implementing work:** [FR-101](../../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) · [E7:S01:T11](../../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) · [IPP-E7S01T11](../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
 
 **Related:** [ADR-006](ADR-006-book-project-private-repository-spin-off.md) (book vs public repo split), [GOVERNANCE-REHOUSING-INVENTORY.md](../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 

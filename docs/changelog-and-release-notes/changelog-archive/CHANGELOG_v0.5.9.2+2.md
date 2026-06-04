@@ -25,7 +25,7 @@ Release **FR-066** (canonical docs path and publish scope): Docusaurus docs plug
 
 ### Documentation / Kanban
 
-- E5:S09:T02 COMPLETE; Story 009 checklist; Epic-5; board; `kanban-completed.md`.
+- E5:S09:T02 COMPLETE; Story 009 checklist; epic-05; board; `kanban-completed.md`.
 
 ## References
 

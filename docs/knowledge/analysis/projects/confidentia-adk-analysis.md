@@ -24,7 +24,7 @@ housekeeping_policy: keep
 **Overall Assessment:** Good (mature project with custom structure, NO Epic mashup)  
 **Key Findings:**
 - ✅ **NO Epic Mashup** - Epic 9 is "Future Considerations" (project-specific), NOT "Book Related Work"
-- ⚠️ Different Epic naming convention ("Epic 9" with space vs "Epic-9" with hyphen)
+- ⚠️ Different Epic naming convention ("Epic 9" with space vs "epic-09" with hyphen)
 - ⚠️ Multi-branch structure (03, 04, 19, 20, 21, main) with different versioning schemes
 - ⚠️ Custom RW workflow (11-step, not using ADK framework directly)
 - ⚠️ No ADK frameworks as packages (no packages/frameworks/ directory)
@@ -73,8 +73,8 @@ housekeeping_policy: keep
 - **Good:** Project has its own epic structure, no confusion
 
 **Epic Naming:** ⚠️ **DIVERGES**
-- Uses "Epic 9" (with space) instead of "Epic-9" (with hyphen)
-- Directory structure: `Epic 9/` instead of `Epic-9/`
+- Uses "Epic 9" (with space) instead of "epic-09" (with hyphen)
+- Directory structure: `Epic 9/` instead of `epic-09/`
 - **Difference:** Space vs hyphen in naming
 - **Impact:** Minor - different naming convention, but functional
 
@@ -138,7 +138,7 @@ housekeeping_policy: keep
 ❌ **What Doesn't Work:**
 
 1. **Epic Naming Convention**
-   - **Issue:** Uses "Epic 9" (with space) instead of "Epic-9" (with hyphen)
+   - **Issue:** Uses "Epic 9" (with space) instead of "epic-09" (with hyphen)
    - **Problem:** Inconsistent with ADK canonical
    - **Impact:** Minor - works but inconsistent
    - **Root Cause:** Pre-ADK structure, evolved before ADK existed
@@ -162,14 +162,14 @@ housekeeping_policy: keep
 ### 1.6 Recommendations
 
 **For This Project:**
-1. **Consider Epic Naming Migration** - Evaluate migrating to "Epic-9" format for consistency
+1. **Consider Epic Naming Migration** - Evaluate migrating to "epic-09" format for consistency
 2. **Task Organization** - Consider separating tasks into individual files for better granularity
 3. **None Otherwise** - Epic structure is correct, no mashup
 
 **For ADK:**
 1. **Support Legacy Naming**
    - ADK should support projects with different Epic naming conventions
-   - Support both "Epic 9" and "Epic-9" formats
+   - Support both "Epic 9" and "epic-09" formats
    - Make tools flexible for naming conventions
 
 2. **Document Pre-ADK Patterns**
@@ -801,7 +801,7 @@ None identified - scripts are well-designed.
 1. **Support Legacy Naming**
    - **What to Harden:** Support for projects with different Epic naming conventions
    - **How:**
-     - Support both "Epic 9" and "Epic-9" formats
+     - Support both "Epic 9" and "epic-09" formats
      - Make tools flexible for naming conventions
      - Don't hardcode naming patterns
 
@@ -824,7 +824,7 @@ None identified - scripts are well-designed.
 ❌ **Anti-Patterns to Prevent:**
 
 1. **Hardcoded Naming**
-   - **Anti-Pattern:** Hardcoding "Epic-9" format in ADK tools
+   - **Anti-Pattern:** Hardcoding "epic-09" format in ADK tools
    - **Why Bad:** Incompatible with projects using "Epic 9" format
    - **How to Prevent:** Make naming flexible, support both formats
 
@@ -836,7 +836,7 @@ None identified - scripts are well-designed.
 **Current ADK Issues:**
 
 1. **Naming Hardcoding**
-   - **Issue:** ADK tools may hardcode "Epic-9" format
+   - **Issue:** ADK tools may hardcode "epic-09" format
    - **How to Fix:** Make naming flexible, support both formats
 
 2. **Structure Assumptions**
@@ -848,9 +848,9 @@ None identified - scripts are well-designed.
 🔄 **Improvements:**
 
 1. **Support Legacy Naming**
-   - **Current Approach:** May assume "Epic-9" format
+   - **Current Approach:** May assume "epic-09" format
    - **Better Approach:**
-     - Support both "Epic 9" and "Epic-9" formats
+     - Support both "Epic 9" and "epic-09" formats
      - Make tools flexible for naming conventions
      - Don't hardcode naming patterns
 
@@ -904,7 +904,7 @@ None identified - scripts are well-designed.
    - Document as advanced patterns
 
 2. **Support Legacy Naming** (Priority: Medium)
-   - Support both "Epic 9" and "Epic-9" formats
+   - Support both "Epic 9" and "epic-09" formats
    - Make tools flexible for naming conventions
    - Don't hardcode naming patterns
 
@@ -973,7 +973,7 @@ None identified - scripts are well-designed.
 | Aspect | ADK Canonical | confidentia | Match? |
 |--------|---------------|-------------|--------|
 | Epic Structure | Project-specific epics only | Project-specific epics (1-22) | ✅ YES (no mashup) |
-| Epic Naming | Epic-9 (hyphen) | Epic 9 (space) | ⚠️ DIVERGES |
+| Epic Naming | epic-09 (hyphen) | Epic 9 (space) | ⚠️ DIVERGES |
 | Story Structure | Stories under Epic directories | ✅ Matches | ✅ YES |
 | Task Structure | Tasks under Story directories | Tasks embedded in stories | ⚠️ DIVERGES |
 | File Organization | docs/project-management/kanban/ | ✅ Matches | ✅ YES |

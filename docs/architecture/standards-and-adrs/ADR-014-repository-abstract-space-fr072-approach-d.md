@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 Epic 5, 6, and 7 used **Story 0** and **repository stories** inconsistently. FR-021 introduced dedicated FR/BR/UXR repo stories; FR-072 selects **Approach D**: phased migration to **S00 abstract-only** and **semantic delivery-story** intake without mass coordinate renumbering.
 
-E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)) completed the E7 slice. **E04:S19:T08** completes D2–D4 globally.
+E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)) completed the E7 slice. **E04:S19:T08** completes D2–D4 globally.
 
 ---
 
@@ -37,9 +37,9 @@ E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/Epic-4/Sto
 
 | Epic | S00 | Repository / registry story | New intake primary task |
 | ---- | --- | --------------------------- | ------------------------ |
-| E5 | [Story-000-fr-repo](../../project-management/kanban/epics/Epic-5/Story-000-fr-repo.md) abstract | [Story-001-fr-repo](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo.md) historical | Delivery epic/story (e.g. E4, E6, E7:S01) |
-| E6 | Story-000 abstract | [Story-001-br-repo](../../project-management/kanban/epics/Epic-6/Story-001-br-repo.md) historical | Delivery epic/story |
-| E7 | [Story-000-uxr-repo](../../project-management/kanban/epics/Epic-7/Story-000-uxr-repo.md) abstract | T01–T06 under `Story-000-uxr-repo/` historical only | E7:S01, E7:S05, host epic story |
+| E5 | [story-00-fr-repo](../../project-management/kanban/epics/epic-05/story-00-fr-repo.md) abstract | [story-01-fr-repo](../../project-management/kanban/epics/epic-05/story-01-fr-repo.md) historical | Delivery epic/story (e.g. E4, E6, E7:S01) |
+| E6 | story-000 abstract | [story-01-br-repo](../../project-management/kanban/epics/epic-06/story-01-br-repo.md) historical | Delivery epic/story |
+| E7 | [story-00-uxr-repo](../../project-management/kanban/epics/epic-07/story-00-uxr-repo.md) abstract | T01–T06 under `story-00-uxr-repo/` historical only | E7:S01, E7:S05, host epic story |
 
 ---
 
@@ -49,7 +49,7 @@ E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/Epic-4/Sto
 | ----- | ----- | --------- |
 | D1 | Canonical model published | FR-072 decision memo + this ADR |
 | D2 | Semantic intake cutover | Intake skill, FR_BR_INTAKE_GUIDE, KG-R6 |
-| D3 | Historical labeling | Story-001 / Story-000 banners, T72/T21 |
+| D3 | Historical labeling | story-001 / story-000 banners, T72/T21 |
 | D4 | Validator/workflow alignment | RW/UKW guides, versioning policy § S00 |
 
 ---
@@ -60,7 +60,7 @@ E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/Epic-4/Sto
 | ------------- | ---- | ------------------------ |
 | E05:S01:T72 | FR-072 registry task | **E04:S19:T08** implements FR-072 |
 | E05:S01:T21 | FR-021 registry | **E04:S19:T07** merged into **T08** |
-| E07:S00:T01–T06 | UXR registry anchors | Historical; see Story-000-uxr-repo |
+| E07:S00:T01–T06 | UXR registry anchors | Historical; see story-00-uxr-repo |
 | E07:S00:T05 (UXR-005) | Split registry | **E07:S01:T09** implementing |
 | Open FBUs on fbuboard | Active work | Semantic `E:S:T` on row (2026-05-29 batch + T08) |
 

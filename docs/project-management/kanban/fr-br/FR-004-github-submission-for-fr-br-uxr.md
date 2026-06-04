@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED - IMPLEMENTED
 
-**Implementing Task:** [E04:S02:T06](../epics/Epic-4/Story-002-fr-br-intake-to-tasks/T06-github-submission-fr-br-uxr-fr004.md)
+**Implementing Task:** [E04:S02:T06](../epics/epic-04/story-02-fr-br-intake-to-tasks/T06-github-submission-fr-br-uxr-fr004.md)
 
 ---
 
@@ -147,8 +147,8 @@ An external contributor discovers a bug and wants to report it. They create a Gi
 - Version: `0.4.2.6+1`
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md`](../epics/Epic-4/Story-002-fr-br-intake-to-tasks.md)
+- Epic: [`docs/project-management/kanban/epics/epic-04/epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md`](../epics/epic-04/story-02-fr-br-intake-to-tasks.md)
 - Task: E04:S02:T06 (to be added to Story 2)
 
 ---
@@ -171,7 +171,7 @@ An external contributor discovers a bug and wants to report it. They create a Gi
 
 - `packages/frameworks/kanban/templates/FR_TEMPLATE.md` - Feature Request template
 - `packages/frameworks/kanban/templates/BR_TEMPLATE.md` - Bug Report template
-- `docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md` - FR/BR intake workflow
+- `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md` - FR/BR intake workflow
 - [GitHub Issue Forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-github-forms) - GitHub's structured issue templates
 - [GitHub Discussions](https://docs.github.com/en/discussions) - GitHub Discussions feature
 

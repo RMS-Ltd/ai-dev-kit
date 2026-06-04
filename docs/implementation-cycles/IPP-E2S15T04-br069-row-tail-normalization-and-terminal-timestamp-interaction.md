@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S15:T04 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md`](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) **(E2:S15:T04)**  
+**Host Task:** [`T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) **(E2:S15:T04)**  
 **Planning for:** [BR-069 - kboard/fbuboard earliest `Last modified` timestamps overwritten / task-ID multiplication](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
 **Status:** Published
 
@@ -172,10 +172,10 @@ flowchart LR
 
 ## References
 
-- [Host task E2:S15:T04](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
+- [Host task E2:S15:T04](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - [BR-069](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [IPP-E2S15T03 – duplicate footer / divergence guardrails](IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
 - [FR-089](../project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [UXR-009](../project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [Story 015](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md)
+- [Story 015](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md)
 - Tests: [`packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py`](../../packages/frameworks/workflow%20mgt/scripts/test_update_kanban_docs.py)

@@ -16,7 +16,7 @@ Kanban init (`RW -k --art`): **E04:S19:T10** for **BR-076** — E7:S00 must not 
 ## Change implemented
 
 - **BR-076** filed with implementing task **E04:S19:T10** (semantic home under Story 019).
-- **FR-072**, **E04:S19:T08**, **UXR-005**, **E07:S01:T09**, **Story-000-uxr-repo** cross-linked.
+- **FR-072**, **E04:S19:T08**, **UXR-005**, **E07:S01:T09**, **story-00-uxr-repo** cross-linked.
 - **kboard** / **fbuboard** rows for T10 / BR-076 (intake).
 - Version adopted via `--art` from prior **E02:S16:T06** anchor.
 

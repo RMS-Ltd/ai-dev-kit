@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM (PARTIAL install status; structure doc missing)  
 **Status:** OPEN (fix attempted — pending verification)  
 **GitHub Issue:** [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)  
-**Implementing Task:** [E06:S09:T07](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)  
+**Implementing Task:** [E06:S09:T07](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)  
 **Created:** 2026-06-03  
 **Source:** Book dry-run (ExpensesTracker T03 Step 1); ADK `dev` @ `84efa7b`
 

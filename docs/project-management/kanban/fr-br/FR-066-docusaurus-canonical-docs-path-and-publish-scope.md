@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent)  
 **Priority:** HIGH  
 **Status:** IMPLEMENTED (pending RW forensic close — config + scope **2026-03-30**)  
-**Assigned Task:** E05:S09:T02 — [`T02-docusaurus-canonical-docs-path-fr-066.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T02-docusaurus-canonical-docs-path-fr-066.md)
+**Assigned Task:** E05:S09:T02 — [`T02-docusaurus-canonical-docs-path-fr-066.md`](../epics/epic-05/story-09-docusaurus-documentation-portal/T02-docusaurus-canonical-docs-path-fr-066.md)
 
 ---
 

@@ -359,15 +359,15 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 **Anti-Pattern:** RW Step 7 assumes Story file exists and fails when it doesn't, even if the Story is referenced in the Epic file.
 
 **Symptom:**
-- Epic file references Story in Story Checklist (e.g., `Story-004-*.md`)
+- Epic file references Story in Story Checklist (e.g., `story-04-*.md`)
 - Story file doesn't exist in filesystem
 - RW Step 7 fails with "Story file not found" error
 - RW workflow stops, blocking release
 - Result: Release blocked due to missing Story file
 
 **Example:**
-- ❌ **Wrong:** Epic-5.md references `Story-004-*.md` in Story Checklist, but file doesn't exist → RW Step 7 fails
-- ✅ **Correct:** Epic-5.md references `Story-004-*.md`, file doesn't exist → RW Step 7 checks existence, creates from template, then updates
+- ❌ **Wrong:** epic-05.md references `story-04-*.md` in Story Checklist, but file doesn't exist → RW Step 7 fails
+- ✅ **Correct:** epic-05.md references `story-04-*.md`, file doesn't exist → RW Step 7 checks existence, creates from template, then updates
 
 **Impact:** RW workflow fails when Story files are referenced but not yet created, blocking releases unnecessarily.
 

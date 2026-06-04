@@ -24,17 +24,17 @@ Notion project hub and Knowledge Base container (RMS Teamspace), repo wired via 
 - **`scripts/kb_index.py`** – KB index generator: walks `docs/`, collects path/size/word count/frontmatter, emits Markdown and optional JSON; changelog archive summarized by default.
 - **`docs/knowledge/KB-INDEX.md`** – Human-readable KB index (section summary, optimization signals, full inventory).
 - **`docs/knowledge/KB-INDEX.json`** – Machine-readable KB index for migration tooling.
-- **E5:S08:T02** – Task doc: Notion hub, KB container, KB index; Story 008 task checklist and Epic-5 Story 8 section updated.
+- **E5:S08:T02** – Task doc: Notion hub, KB container, KB index; Story 008 task checklist and epic-05 Story 8 section updated.
 
 ---
 
 ## Changed
 
-- **E5:S08** – Story renamed from "Persistent Knowledge Base Investigation" to "Knowledge Base"; story file `Story-008-knowledge-base.md`; Epic-5 checklist and Story 8 section updated.
+- **E5:S08** – Story renamed from "Persistent Knowledge Base Investigation" to "Knowledge Base"; story file `story-08-knowledge-base.md`; epic-05 checklist and Story 8 section updated.
 
 ---
 
 ## References
 
-- **Task:** `docs/project-management/kanban/epics/Epic-5/Story-008-knowledge-base/T02-notion-hub-and-kb-index.md`
-- **Story:** `docs/project-management/kanban/epics/Epic-5/Story-008-knowledge-base.md`
+- **Task:** `docs/project-management/kanban/epics/epic-05/story-08-knowledge-base/T02-notion-hub-and-kb-index.md`
+- **Story:** `docs/project-management/kanban/epics/epic-05/story-08-knowledge-base.md`

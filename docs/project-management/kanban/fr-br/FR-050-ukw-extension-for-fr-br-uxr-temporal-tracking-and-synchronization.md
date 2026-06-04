@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** IMPLEMENTED  
 
-**Implementing Task:** [E02:S16:T07](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)
+**Implementing Task:** [E02:S16:T07](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)
 **Historical implementing task:** E06:S07:T108 (SUPERSEDED — Windsurf skill approach obsolete; re-housed 2026-05-13)
 **Priority:** HIGH  
 **Estimated Effort:** Medium (3-4 days)  

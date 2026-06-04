@@ -13,8 +13,8 @@ Published T04 Phase D governance sign-off housekeeping by reconciling IPP Sectio
 
 - Governance closeout updates:
   - `docs/implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md`
   - `docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md`
 - Release metadata updates:
   - `src/fynd_deals/version.py`

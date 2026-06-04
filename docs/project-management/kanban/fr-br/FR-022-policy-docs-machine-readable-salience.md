@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E05:S07:T01](../epics/Epic-5/Story-007-policy-documentation-structure.md)
+**Implementing Task:** [E05:S07:T01](../epics/epic-05/story-07-policy-documentation-structure.md)
 **Intake Date:** 2025-12-12  
 **Assigned To:** Epic 5, Story 6, Task 1  
 **Version:** v0.5.6.1+0 (doc-init)
@@ -35,8 +35,8 @@ housekeeping_policy: keep
 - Task 1 will implement the policy salience section feature
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
-- Story: [`docs/project-management/kanban/epics/Epic-5/Story-006-policy-documentation-structure.md`](../epics/Epic-5/Story-006-policy-documentation-structure.md)
+- Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-06-policy-documentation-structure.md`](../epics/epic-05/story-06-policy-documentation-structure.md)
 - Task: See Story 6 Task Checklist (E05:S06:T01)
 
 ---
@@ -327,8 +327,8 @@ policy_salience:
 - Version: v0.5.6.1+0 (doc-init)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
-- Story: [`docs/project-management/kanban/epics/Epic-5/Story-006-policy-documentation-structure.md`](../epics/Epic-5/Story-006-policy-documentation-structure.md)
+- Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-06-policy-documentation-structure.md`](../epics/epic-05/story-06-policy-documentation-structure.md)
 - Task: See Story 6 Task Checklist (T01)
 
 ---

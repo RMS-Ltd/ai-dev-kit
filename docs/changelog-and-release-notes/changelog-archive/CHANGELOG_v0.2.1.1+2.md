@@ -35,7 +35,7 @@ This release completes **Task 4: Update RW changelog step to require verificatio
   - Specified separate "Fixed" and "Attempted Fixes" subsections
   - Added requirement to stop workflow if unverified fixes are in "Fixed" section
 
-- ✅ Updated **Story 001** (`Story-001-rw-agent-execution-and-docs.md`):
+- ✅ Updated **Story 001** (`story-01-rw-agent-execution-and-docs.md`):
   - Marked Task 4 as complete in task checklist
   - Updated task details with completion status and summary
   - Updated acceptance criteria
@@ -87,7 +87,7 @@ The verification requirement addresses a critical gap in the Release Workflow: e
 
 **Files Updated:**
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (major update with verification requirements)
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-001-rw-agent-execution-and-docs.md` (status update)
+- `docs/project-management/kanban/epics/epic-02/stories/story-01-rw-agent-execution-and-docs.md` (status update)
 
 ---
 
@@ -103,7 +103,7 @@ The verification requirement addresses a critical gap in the Release Workflow: e
 ## 📄 Files Changed
 
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (added verification requirements)
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-001-rw-agent-execution-and-docs.md` (status update)
+- `docs/project-management/kanban/epics/epic-02/stories/story-01-rw-agent-execution-and-docs.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.2.1.1+2)
 
 ---

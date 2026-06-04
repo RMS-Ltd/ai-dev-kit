@@ -16,7 +16,7 @@
 
 ### Documentation & hygiene
 
-- [T06 task doc](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — T8 dogfood checklist complete; task **COMPLETE**
+- [T06 task doc](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — T8 dogfood checklist complete; task **COMPLETE**
 - [ECC + ADK cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md) — dry-run still lists hooks despite `--without baseline:hooks`
 - `.gitignore` — `ecc-adk-bridge.yaml` (adopter-local bridge copy)
 

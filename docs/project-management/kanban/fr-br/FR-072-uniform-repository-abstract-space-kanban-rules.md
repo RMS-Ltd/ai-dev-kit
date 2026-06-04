@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** COMPLETE (2026-06-01 — **E04:S19:T08** D2–D4 + [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md); pending maintainer verification)
 
-**Implementing Task:** [E04:S19:T08](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
-**Historical registry:** [E05:S01:T72](../epics/Epic-5/Story-001-fr-repo/T72-uniform-repository-abstract-space-kanban-rules.md) (historical-only)  
+**Implementing Task:** [E04:S19:T08](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
+**Historical registry:** [E05:S01:T72](../epics/epic-05/story-01-fr-repo/T72-uniform-repository-abstract-space-kanban-rules.md) (historical-only)  
 **Canonical policy:** [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)  
 **Related BR:** [BR-076](./BR-076-e7-s00-must-not-host-concrete-tasks.md) — E7:S00 must not host concrete tasks (**E04:S19:T10**)
 
@@ -64,7 +64,7 @@ This FR requests a **single, documented rule model** for:
 
 ### Approach C — **Introduce dedicated high-number repository story (e.g. E7:S10+ UXR repo); hollow out E7:S00**
 
-- **Idea:** Create **new** story **E7:Snn** “UXR Repo (PERPETUAL)”, migrate **E7:S00:Txx** tasks and `Story-000-uxr-repo` → new folder/story; leave **E7:S00** as **abstract-only** `v0.7.0.0+0`.
+- **Idea:** Create **new** story **E7:Snn** “UXR Repo (PERPETUAL)”, migrate **E7:S00:Txx** tasks and `story-00-uxr-repo` → new folder/story; leave **E7:S00** as **abstract-only** `v0.7.0.0+0`.
 - **Pros:** Aligns **semantics** with E5 (**S00** abstract) **without** stealing existing **S01** codebase-maintenance identity.
 - **Cons:** New story number; **version coordinate migration** for UXR registry (`0.7.0.n` → `0.7.N.n`); board and doc churn, but **bounded** compared to renumbering all Epic 7.
 
@@ -124,7 +124,7 @@ Select **one** primary model (or **D** phased to **A** / **C**) and record:
 | ---- | -------- |
 | **Architecture / ADRs** | `dev-kit-versioning-policy.md`, new or updated ADR for repository vs abstract space |
 | **Kanban governance** | `kanban-governance-policy.md`, templates (`TASK_TEMPLATE`, story templates), `Epic-*` headers |
-| **Epic 5–7 story docs** | `Story-000-*`, `Story-001-*`, Epic 7 UXR repo vs S01 maintenance — align to chosen model |
+| **Epic 5–7 story docs** | `story-00-*`, `story-01-*`, Epic 7 UXR repo vs S01 maintenance — align to chosen model |
 | **FR-021** | Update to match **live IDs** or mark **superseded** with pointer to ADR |
 | **Workflow agent docs** | RW / UKW / intake docs referencing `E7:S00` vs `E7:S01` |
 | **Cursor rules** | `.cursorrules` fragments that assume repository story numbering |
@@ -162,7 +162,7 @@ Select **one** primary model (or **D** phased to **A** / **C**) and record:
 - [FR-021 – FR/BR/UXR Repository Stories](FR-021-fr-br-uxr-repository-stories.md) — **must reconcile**.
 - [FR-018 – Abstract space / zero-numbered EST](FR-018-abstract-space-zero-numbered-est-docs.md) — align terminology.
 - [FR-020 – Version validator abstract space awareness](FR-020-version-validator-abstract-space-awareness.md) — validator behavior vs S00.
-- Epic 7: [`Story-000-uxr-repo.md`](../epics/Epic-7/Story-000-uxr-repo.md), [`Epic-7.md`](../epics/Epic-7/Epic-7.md).
+- Epic 7: [`story-00-uxr-repo.md`](../epics/epic-07/story-00-uxr-repo.md), [`epic-07.md`](../epics/epic-07/epic-07.md).
 
 ---
 
@@ -178,9 +178,9 @@ Select **one** primary model (or **D** phased to **A** / **C**) and record:
 
 **Kanban Links:**
 
-- Epic: [`Epic-5.md`](../epics/Epic-5/Epic-5.md)  
-- Story: [`Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md)  
-- Task: [`T72`](../epics/Epic-5/Story-001-fr-repo/T72-uniform-repository-abstract-space-kanban-rules.md)
+- Epic: [`epic-05.md`](../epics/epic-05/epic-05.md)  
+- Story: [`story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md)  
+- Task: [`T72`](../epics/epic-05/story-01-fr-repo/T72-uniform-repository-abstract-space-kanban-rules.md)
 
 ---
 

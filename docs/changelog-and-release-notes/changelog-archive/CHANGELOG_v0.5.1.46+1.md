@@ -23,9 +23,9 @@ title: "Changelog: v0.5.1.46+1"
 - Created feature request document for RW SemVer tagging when task_touch is enabled:
   - `docs/project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`
 - Added FR-046 to the FR repository story checklist as `E5:S01:T46`:
-  - Updated `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`.
+  - Updated `docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`.
 - Added repository task document for `E5:S01:T46`:
-  - `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md`
+  - `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md`
 
 No implementation work or non-documentation code changes are included in this build.
 

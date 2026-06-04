@@ -37,14 +37,14 @@ def _write_task(path: Path, status: str, body: str) -> None:
 
 def test_passes_when_no_ipw_tasks(tmp_path: Path):
     root = tmp_path
-    (root / "docs/project-management/kanban/epics/Epic-2/Story-001").mkdir(parents=True)
+    (root / "docs/project-management/kanban/epics/epic-02/Story-001").mkdir(parents=True)
     r = _run([], cwd=root)
     assert r.returncode == 0
 
 
 def test_detects_todo_with_implementation_evidence(tmp_path: Path):
     root = tmp_path
-    task = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T01-foo.md"
+    task = root / "docs/project-management/kanban/epics/epic-02/Story-001/T01-foo.md"
     _write_task(
         task,
         "TODO",
@@ -57,7 +57,7 @@ def test_detects_todo_with_implementation_evidence(tmp_path: Path):
 
 def test_ignores_complete_with_evidence(tmp_path: Path):
     root = tmp_path
-    task = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T01-foo.md"
+    task = root / "docs/project-management/kanban/epics/epic-02/Story-001/T01-foo.md"
     _write_task(task, "COMPLETE", "## Verification evidence\n\npytest -q -> 5 passed\n")
     r = _run([], cwd=root)
     assert r.returncode == 0
@@ -65,13 +65,13 @@ def test_ignores_complete_with_evidence(tmp_path: Path):
 
 def test_requested_task_mode_detects_targeted_drift(tmp_path: Path):
     root = tmp_path
-    drifted = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T01-foo.md"
+    drifted = root / "docs/project-management/kanban/epics/epic-02/Story-001/T01-foo.md"
     _write_task(
         drifted,
         "TODO",
         "## Implementation note\n\nReleased **v0.2.1.1+1** with tests.\n",
     )
-    clean = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T02-bar.md"
+    clean = root / "docs/project-management/kanban/epics/epic-02/Story-001/T02-bar.md"
     clean.parent.mkdir(parents=True, exist_ok=True)
     clean.write_text(
         (
@@ -90,7 +90,7 @@ def test_requested_task_mode_detects_targeted_drift(tmp_path: Path):
 
 def test_requested_task_mode_passes_when_requested_clean(tmp_path: Path):
     root = tmp_path
-    clean = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T01-foo.md"
+    clean = root / "docs/project-management/kanban/epics/epic-02/Story-001/T01-foo.md"
     _write_task(clean, "IN PROGRESS", "## Verification evidence\n\npytest -q -> 5 passed\n")
     r = _run(["--requested", "E2S01T01"], cwd=root)
     assert r.returncode == 0
@@ -99,9 +99,9 @@ def test_requested_task_mode_passes_when_requested_clean(tmp_path: Path):
 
 def test_requested_task_mode_is_deterministic_when_other_tasks_drift(tmp_path: Path):
     root = tmp_path
-    clean = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T01-foo.md"
+    clean = root / "docs/project-management/kanban/epics/epic-02/Story-001/T01-foo.md"
     _write_task(clean, "IN PROGRESS", "## Verification evidence\n\npytest -q -> 5 passed\n")
-    drifted = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T02-bar.md"
+    drifted = root / "docs/project-management/kanban/epics/epic-02/Story-001/T02-bar.md"
     drifted.parent.mkdir(parents=True, exist_ok=True)
     drifted.write_text(
         (
@@ -122,9 +122,9 @@ def test_requested_task_mode_is_deterministic_when_other_tasks_drift(tmp_path: P
 
 def test_requested_task_mode_can_scan_all_when_enabled(tmp_path: Path):
     root = tmp_path
-    clean = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T01-foo.md"
+    clean = root / "docs/project-management/kanban/epics/epic-02/Story-001/T01-foo.md"
     _write_task(clean, "IN PROGRESS", "## Verification evidence\n\npytest -q -> 5 passed\n")
-    drifted = root / "docs/project-management/kanban/epics/Epic-2/Story-001/T02-bar.md"
+    drifted = root / "docs/project-management/kanban/epics/epic-02/Story-001/T02-bar.md"
     drifted.parent.mkdir(parents=True, exist_ok=True)
     drifted.write_text(
         (

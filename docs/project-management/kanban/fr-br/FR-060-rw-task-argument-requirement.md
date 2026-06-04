@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** N/A  
 **Status:** IMPLEMENTED (v0.5.1.63+1)  
-**Assigned Task:** E05:S01:T63 — [Task document](../epics/Epic-5/Story-001-fr-repo/T63-rw-task-argument-requirement.md)
+**Assigned Task:** E05:S01:T63 — [Task document](../epics/epic-05/story-01-fr-repo/T63-rw-task-argument-requirement.md)
 
 ---
 

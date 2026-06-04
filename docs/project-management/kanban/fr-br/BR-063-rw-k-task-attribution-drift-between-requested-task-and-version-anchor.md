@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-07 — `E02:S01:T13+2` released runtime hardening to `dev` (`RW -k` mismatch guard, `--art`, `validate_version_bump` alignment, tests, dual-source docs).  
 **Version:** v0.2.1.13+2  
 **Code:** BR-063  
-**Implementing Task:** [E02:S01:T13](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T13-rw-k-forensic-task-attribution-alignment-br063.md)
+**Implementing Task:** [E02:S01:T13](../epics/epic-02/story-01-rw-agent-execution-and-docs/T13-rw-k-forensic-task-attribution-alignment-br063.md)
 
 ---
 

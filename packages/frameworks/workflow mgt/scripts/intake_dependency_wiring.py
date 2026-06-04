@@ -336,7 +336,7 @@ class IntakeDependencyWiring:
         
         elif dep.type == 'epic_story':
             # Check Epic/Story exists
-            # Format: E2:S11 -> Epic-2/Story-011-*.md
+            # Format: E2:S11 -> epic-02/story-11-*.md
             match = re.match(r'E(\d+):S(\d+)', dep.identifier, re.IGNORECASE)
             if match:
                 epic_num = match.group(1)
@@ -350,7 +350,7 @@ class IntakeDependencyWiring:
         
         elif dep.type == 'task':
             # Check Task exists
-            # Format: E2:S11:T05 -> Epic-2/Story-011-*/Task-005-*.md
+            # Format: E2:S11:T05 -> epic-02/story-11-*/Task-005-*.md
             match = re.match(r'E(\d+):S(\d+):T(\d+)', dep.identifier, re.IGNORECASE)
             if match:
                 epic_num = match.group(1)

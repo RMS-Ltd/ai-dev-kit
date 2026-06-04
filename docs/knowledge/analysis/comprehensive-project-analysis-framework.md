@@ -517,7 +517,7 @@ housekeeping_policy: keep
 
 - **Canonical Structures:**
   - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`
-  - `docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/`
+  - `docs/project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/`
 
 - **Vision:**
   - `docs/documentation/ai-dev-kit-vision-and-purpose.md` (rationale for canonical structures)

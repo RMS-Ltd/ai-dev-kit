@@ -78,4 +78,4 @@ Captured the overarching vision and purpose of AI Dev Kit, including the motivat
 - **Epic 1**: AI Dev Kit Core (repo structure, KB structure, and dev-kit versioning policy)
 - **Kanban & KB Architecture Docs:**
   - `docs/architecture/standards-and-adrs/kb-structure-overview.md`
-  - `docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit.md`
+  - `docs/project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit.md`

@@ -108,7 +108,7 @@ This release completes **Task 2: Document modularity principles and boundaries**
 This modularity principles document provides the foundation for creating the dependency matrix (T003), documenting consumption patterns (T004), and updating package READMEs (T005). It establishes the rules and guidelines that govern how packages interact and how users consume them.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture/T002-modularity-principles.md` (comprehensive modularity principles document)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture/T02-modularity-principles.md` (comprehensive modularity principles document)
 
 ---
 
@@ -122,9 +122,9 @@ This modularity principles document provides the foundation for creating the dep
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture/T002-modularity-principles.md` (created)
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture.md` (task status updated)
-- `docs/project-management/kanban/epics/Epic-1.md` (status update)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture/T02-modularity-principles.md` (created)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture.md` (task status updated)
+- `docs/project-management/kanban/epics/epic-01.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.1.2.2+1)
 
 ---

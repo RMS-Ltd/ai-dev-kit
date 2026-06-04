@@ -119,9 +119,9 @@ Final validation and completion of E9:S01:T08 (Repository Story Abstract Space C
 
 - `docs/project-management/kanban/kanban-board.md` - Removed T08 from MoSCOW section, fixed S00→S01 references, corrected Epic 6 story numbers
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` - Corrected perpetual task examples (E6:S06→E6:S07)
-- `docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md` - Marked all acceptance criteria complete, updated status to COMPLETE
-- `docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md` - Updated T08 status to COMPLETE
-- `docs/project-management/kanban/epics/Epic-9/Epic-9.md` - Updated "Last updated" field
+- `docs/project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md` - Marked all acceptance criteria complete, updated status to COMPLETE
+- `docs/project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md` - Updated T08 status to COMPLETE
+- `docs/project-management/kanban/epics/epic-09/epic-09.md` - Updated "Last updated" field
 - `src/fynd_deals/version.py` - Updated version to v0.9.1.8+10
 
 ---

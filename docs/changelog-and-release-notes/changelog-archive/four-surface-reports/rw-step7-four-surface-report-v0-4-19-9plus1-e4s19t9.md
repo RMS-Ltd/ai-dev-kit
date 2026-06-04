@@ -24,7 +24,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md`
+  - `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md`
 - Changes:
   - Version anchor **v0.4.19.9+1**; last-updated RW -k marker; Publication Status NOT_APPLICABLE
 

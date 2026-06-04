@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S15:T03 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md`](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md) **(E2:S15:T03)**  
+**Host Task:** [`T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md) **(E2:S15:T03)**  
 **Planning for:** [FR-089 - IPW board-row traceability-churn hardening (footer duplication + task-ID multiplication)](../project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)  
 **Status:** Published (closure: v0.2.15.3+2 — T03 FR-089 governance; implementation v0.2.15.3+1)
 
@@ -110,7 +110,7 @@ Harden IPW governance so board-row traceability churn on `kboard.md` and `fbuboa
 
 ## References
 
-- [Host task E2:S15:T03](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md)
+- [Host task E2:S15:T03](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md)
 - [FR-089](../project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
-- [Story 015](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md)
+- [Story 015](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md)
 - [BR-069](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)

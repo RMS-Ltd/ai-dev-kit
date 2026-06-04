@@ -12,7 +12,7 @@ housekeeping_policy: keep
 
 > **Agent source of truth:** If this cheatsheet and [`.cursorrules`](../../.cursorrules) or [`.claude/commands/`](../../.claude/commands/) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
-**Task:** [E02:S16:T15](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
+**Task:** [E02:S16:T15](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
 
 ---
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 | Fix suspected kanban drift (specific) | `UKW -ad <targets>` then `RW` — **planned** (not yet in `.cursorrules`) |
 | Maintain changelog size/order | `CMW` then `RW` |
 | Bump package versions | `PVW` (or automatic at RW Step 2.5) |
-| Reduce Cursor terminal approval friction | See [IDE whitelist guide](../developer-tools/ide-whitelist-guide.md) (pattern catalog + validator; [E06:S07:T107](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)) |
+| Reduce Cursor terminal approval friction | See [IDE whitelist guide](../developer-tools/ide-whitelist-guide.md) (pattern catalog + validator; [E06:S07:T107](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)) |
 
 **Examples use padded E/S/T** ([UXR-014](../project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)): `E02:S16:T15`, compact `E02S16T15`.
 

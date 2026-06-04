@@ -26,9 +26,9 @@ housekeeping_policy: keep
 
 ### Kanban / documentation
 
-- Task [T67-adopter-install-docs-rw-task-token.md](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T67-adopter-install-docs-rw-task-token.md): forensic version **v0.5.1.67+1**.
-- [Story-001-fr-repo.md](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo.md): story version **v0.5.1.67+1**.
-- [Epic-5.md](../../project-management/kanban/epics/Epic-5/Epic-5.md): S01 checklist line updated.
+- Task [T67-adopter-install-docs-rw-task-token.md](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T67-adopter-install-docs-rw-task-token.md): forensic version **v0.5.1.67+1**.
+- [story-01-fr-repo.md](../../project-management/kanban/epics/epic-05/story-01-fr-repo.md): story version **v0.5.1.67+1**.
+- [epic-05.md](../../project-management/kanban/epics/epic-05/epic-05.md): S01 checklist line updated.
 - [kanban-board.md](../../project-management/kanban/kanban-board.md): board header refresh.
 
 ---

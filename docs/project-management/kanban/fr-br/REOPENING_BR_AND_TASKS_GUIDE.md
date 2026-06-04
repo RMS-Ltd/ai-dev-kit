@@ -237,7 +237,7 @@ See [`BR-002-changelog-validator-ordering-bug.md`](BR-002-changelog-validator-or
 
 ## Example: Task Re-opening
 
-See [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) Task T06 for an example of:
+See [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md) Task T06 for an example of:
 - Task checklist update with reopening status
 - Task section with reopening context
 - Previous attempt documentation
@@ -253,7 +253,7 @@ See [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-a
 - [UC-D-001: Re-opening BRs/Tasks](../../../knowledge/use-cases/discovered/UC-D-001-reopening-br-tasks.md) - Discovered use case for this pattern
 - `BR_TEMPLATE.md` - Bug Report template
 - `docs/project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md` - Example reopened BR
-- `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md` - Example reopened task
+- `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md` - Example reopened task
 
 ---
 

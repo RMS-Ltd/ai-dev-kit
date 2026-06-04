@@ -13,7 +13,7 @@ SemVer: v0.4.764+3
 
 ## Included Files
 
-- `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md`
+- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`
 - `src/fynd_deals/version.py`
 - `CHANGELOG.md`
 - `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_ARCHIVE.md`

@@ -20,8 +20,8 @@ This package provides validators for each framework in the AI Dev Kit ecosystem.
 **Purpose:** Validates Kanban document structure, naming conventions, and consistency.
 
 **Validates:**
-- Epic document structure and naming (`Epic-{N}`)
-- Story document structure and naming (`Story-{NNN}-{description}`)
+- Epic document structure and naming (`epic-{NN}/`, `epic-{NN}.md`; 3-digit when epic > 99)
+- Story document structure and naming (`story-{NN}-{description}`; task files `T{NN}-*`)
 - Task document structure and Task ID format (`E{epic}:S{story}:T{task}`)
 - Required fields in Epic/Story/Task documents
 - Task checklist consistency

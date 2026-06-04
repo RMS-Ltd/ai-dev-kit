@@ -41,7 +41,7 @@
   - Overall assessment: Installer is functional and usable
 
 ### Updated
-- **Story 4 Task Checklist:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4 Task Checklist:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`
   - Marked T05 acceptance criteria as complete ✅
   - Added deliverable reference pointing to usability test report
 
@@ -78,4 +78,4 @@
 - **Usability Test Report:** `packages/frameworks/workflow mgt/docs/Analysis/T05-rw-installer-usability-test.md`
 - **Installer CLI:** `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
 - **Previous Release (v0.2.4.4+1):** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.4.4+1.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`

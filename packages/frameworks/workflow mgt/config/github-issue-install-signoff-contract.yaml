@@ -1,0 +1,82 @@
+# GitHub Issue install sign-off contract (machine-readable triggers).
+# Evaluated by install_github_issue_signoff.py after kanban/RW install steps.
+#
+# Maintainer workflow:
+#   1. File GH issue; add label: awaiting-adopter-signoff
+#   2. Add/extend an entry here with when_all checks
+#   3. Link BR/UXR doc: **GitHub Issue:** [#N](...)
+#   4. On adopter install, installer reports ready issues; use --close-github-issues to close
+#
+# Checks (types):
+#   rw_config_patterns  — rw-config.yaml kanban keys match expected substrings
+#   command             — subprocess must exit 0 (paths relative to project_root)
+#   no_capitalised_kanban_segments — no Epic-/Story- under kanban/epics/
+#   kanban_paths_padding — padding_violations empty (optional ignore_duplicate_tasks)
+
+schema_version: "1.0.0"
+default_repo: RMS-Ltd/ai-dev-kit
+awaiting_label: awaiting-adopter-signoff
+
+issues:
+  - id: BR-084
+    number: 16
+    title: "RW install mode C missing task_doc_pattern"
+    when_all:
+      - type: rw_config_patterns
+        require_keys: [use_kanban, kanban_root, epic_doc_pattern, story_doc_pattern, task_doc_pattern]
+        epic_doc_pattern_contains: "epic-"
+        story_doc_pattern_contains: "story-"
+        task_doc_pattern_contains: "T{task"
+    close_comment: |
+      ✅ **Installer sign-off (automated)** — `task_doc_pattern` present in generated `rw-config.yaml` and kanban patterns use lowercase epic/story segments.
+      Evidence: install receipt / adopter replay. Maintainer: confirm against BR-084 AC.
+
+  - id: BR-083
+    number: 15
+    title: "RW install default patterns mismatch fresh kanban layout"
+    depends_on: [BR-084]
+    when_all:
+      - type: rw_config_patterns
+        epic_doc_pattern_contains: "epic-{epic:02d}"
+        story_doc_pattern_contains: "story-{story:02d}"
+      - type: command
+        command: python
+        args:
+          - "{workflow_scripts}/install_release_workflow.py"
+          - "--check-deps"
+    close_comment: |
+      ✅ **Installer sign-off (automated)** — RW installer deps OK; rw-config uses padded lowercase epic/story patterns aligned with fresh kanban layout (ADR-015).
+      Evidence: adopter `rw-config.yaml`. Related: BR-085 may still need interactive replay for story prompt loop.
+
+  - id: UXR-017
+    number: null
+    title: "Kanban epic/story path lowercase naming (adopter tree)"
+    when_all:
+      - type: no_capitalised_kanban_segments
+      - type: kanban_paths_padding
+        strict: true
+        ignore_duplicate_tasks: true
+    close_comment: |
+      ✅ **Installer sign-off (automated)** — Adopter kanban tree uses lowercase padded `epic-NN` / `story-NN` / `TNN` path segments (no `Epic-`/`Story-` dirs).
+      Evidence: validate_kanban_naming + padding scan. Link: UXR-017 / E04:S19:T11 AC5.
+
+  # BR-080 (#12): fresh install without --force — verified in kit CI / T09, not adopter rw-config
+  - id: BR-080
+    number: 12
+    title: "Kanban fresh mode without --force on empty repo"
+    scope: kit_only
+    when_all:
+      - type: note
+        message: "Close manually when E06:S09:T09 merged and Expenses Tracker confirms `install_kanban_framework.py --mode fresh` on empty repo (no --force)."
+
+  - id: BR-082
+    number: 14
+    title: "RW install missing pyyaml preflight"
+    when_all:
+      - type: command
+        command: python
+        args:
+          - "{workflow_scripts}/install_release_workflow.py"
+          - "--check-deps"
+    close_comment: |
+      ✅ **Installer sign-off (automated)** — `install_release_workflow.py --check-deps` passed in adopter environment.

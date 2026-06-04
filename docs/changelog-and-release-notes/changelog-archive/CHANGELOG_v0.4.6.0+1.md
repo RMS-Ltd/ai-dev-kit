@@ -57,12 +57,12 @@ This release creates Story 6 for implementing a comprehensive canonical Epics/St
   - Scalability design
   - Contextualization system
   - Implementation requirements (4 phases)
-- `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md` - Story 6 document
+- `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md` - Story 6 document
   - 8 tasks defined for implementation
   - Complete task descriptions and acceptance criteria
 
 **Enhanced Files:**
-- `docs/project-management/kanban/epics/Epic-4/Epic-4.md` - Added Story 6
+- `docs/project-management/kanban/epics/epic-04/epic-04.md` - Added Story 6
 - `docs/project-management/kanban/kanban-board.md` - Added Story 6, updated status to IN PROGRESS
 - `docs/project-management/kanban/_index.md` - Updated Epic 4 status and progress
 
@@ -135,8 +135,8 @@ This release creates Story 6 for implementing a comprehensive canonical Epics/St
 
 ## References
 
-- Epic 4: `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
-- Story 6: `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`
+- Epic 4: `docs/project-management/kanban/epics/epic-04/epic-04.md`
+- Story 6: `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md`
 - Comprehensive Structure: `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`
 - Design Documentation: `docs/documentation/engineering-and-platform/comprehensive-canonical-est-structure-design.md`
 - FR-005: `docs/project-management/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md`

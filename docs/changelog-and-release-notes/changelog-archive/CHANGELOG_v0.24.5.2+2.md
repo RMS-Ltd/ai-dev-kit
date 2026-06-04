@@ -31,7 +31,7 @@ Complete E24:S05:T02: produce the chapter structure proposal for *Vibe Coding Fo
 
 ### Updated Files
 
-- `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md` — Status `TODO → COMPLETE`; deliverable path added; T01 reference updated to full path.
+- `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md` — Status `TODO → COMPLETE`; deliverable path added; T01 reference updated to full path.
 
 ---
 

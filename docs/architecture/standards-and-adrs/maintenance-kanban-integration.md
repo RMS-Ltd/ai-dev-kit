@@ -526,9 +526,9 @@ Board Updates:
 - **Maintenance Task Prioritization Framework:** `docs/architecture/standards-and-adrs/maintenance-task-prioritization-framework.md`
 - **Maintenance Workflow Processes:** `docs/architecture/standards-and-adrs/maintenance-workflow-processes.md`
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Epic 4 (Kanban Framework):** `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
-- **Epic 7 (Codebase Maintenance):** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 1 (Codebase Maintenance Tasks):** `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`
+- **Epic 4 (Kanban Framework):** `docs/project-management/kanban/epics/epic-04/epic-04.md`
+- **Epic 7 (Codebase Maintenance):** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 1 (Codebase Maintenance Tasks):** `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
 
 ---

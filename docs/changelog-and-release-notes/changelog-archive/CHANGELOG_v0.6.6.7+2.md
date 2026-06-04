@@ -74,7 +74,7 @@ This release implements Phase 2 (CRITICAL) of the framework hardening recommenda
 
 **Modified Files:**
 - `packages/frameworks/kanban/scripts/install_kanban_framework.py` (validation integration)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (acceptance criteria updated)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (acceptance criteria updated)
 
 **Version File:**
 - `src/fynd_deals/version.py` (updated to v0.6.6.7+2)

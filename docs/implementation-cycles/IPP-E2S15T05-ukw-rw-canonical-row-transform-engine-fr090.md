@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S15:T05 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md) **(E2:S15:T05)**  
+**Host Task:** [`T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md) **(E2:S15:T05)**  
 **Planning for:** [FR-090 - UKW canonical row transform engine and board-specific rendering contracts](../project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)  
 **Status:** Published
 
@@ -134,7 +134,7 @@ Implement FR-090 by introducing a shared canonical row-transform pipeline for UK
 
 ## References
 
-- [Host task E2:S15:T05](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md)
+- [Host task E2:S15:T05](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md)
 - [FR-090](../project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
 - [BR-069](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [ICW-E2S15T05-specification](ICW-E2S15T05-specification.md)

@@ -221,9 +221,9 @@ Contains: **Release Date:** 2025-11-26 15:42:58 UTC
 ```
 Version: 0.20.11.14+3
   ↓
-Epic 20 document: docs/project-management/epics/overview/Epic 20/Epic-20.md
+Epic 20 document: docs/project-management/epics/overview/Epic 20/epic-20.md
   ↓
-Story 11 document: docs/project-management/stories/overview/Epic 20/Story-11-*.md
+Story 11 document: docs/project-management/stories/overview/Epic 20/story-11-*.md
   ↓
 Task 14 markers: Version references, commit hashes, workflow runs
 ```

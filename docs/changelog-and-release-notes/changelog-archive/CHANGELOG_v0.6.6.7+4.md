@@ -107,9 +107,9 @@ This release implements Phase 3 (HIGH) remaining work: Created comprehensive `.c
 - `.cursorrules` (project root - comprehensive cursor rules file)
 
 **Modified Files:**
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (acceptance criteria updated)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md` (task version updated)
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md` (epic version updated)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (acceptance criteria updated)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md` (task version updated)
+- `docs/project-management/kanban/epics/epic-06/epic-06.md` (epic version updated)
 
 **Version File:**
 - `src/fynd_deals/version.py` (updated to v0.6.6.7+4)

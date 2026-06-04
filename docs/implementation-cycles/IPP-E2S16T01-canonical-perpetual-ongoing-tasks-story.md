@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S16:T01 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md) **(E2:S16:T01)**  
+**Host Task:** [`T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md) **(E2:S16:T01)**  
 **Planning for:** [FR-088 - Dedicated story for perpetual ongoing tasks](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)  
 **Status:** Published (planning artifact; downstream waves owned by `E2:S16:T03`)
 
@@ -43,13 +43,13 @@ housekeeping_policy: keep
   - Perpetual task documents must carry the canonical `Task Type: Perpetual Maintenance` marker so the existing validator pattern (`validate_version_bump.py:78`) can detect them.
   - Existing perpetual `BUILD` history is preserved across any renumbering; legacy IDs survive only as historical aliases, not active anchors.
 - **In scope:** Story 016 ownership policy, perpetual-task inclusion criteria, legacy `T101+` renumbering map, ratification of follow-on tasks, guardrail contract for downstream enforcement, bidirectional wiring contract.
-- **Out of scope:** Executing the inventory and disposition (owned by [`E2:S16:T02`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)), executing migrations and validator/policy implementation (owned by [`E2:S16:T03`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)), routing-away-from-`E6:S07` enforcement (owned by [FR-087](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) / `E4:S19:T03`).
+- **Out of scope:** Executing the inventory and disposition (owned by [`E2:S16:T02`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)), executing migrations and validator/policy implementation (owned by [`E2:S16:T03`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)), routing-away-from-`E6:S07` enforcement (owned by [FR-087](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) / `E4:S19:T03`).
 
 ### 1.4 Referenced sources
 
-- Host task: [`T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
+- Host task: [`T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
 - Upstream FR: [`FR-088`](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
-- Story container: [`Story-016-perpetual-ongoing-workflow-operations.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md)
+- Story container: [`story-16-perpetual-ongoing-workflow-operations.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md)
 - Versioning policy §6.1.1: [`dev-kit-versioning-policy.md`](../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
 - IPW execution guide: [`implementation-planning-workflow-agent-execution.md`](../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
 - Related FRs: [`FR-041`](../project-management/kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md) (RW maintenance), [`FR-026`](../project-management/kanban/fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md) (CMW), [`FR-087`](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) (E6:S07 default-housing drift)
@@ -91,9 +91,9 @@ A task is **not** perpetual (and must be filed in a delivery story instead) when
 
 | Legacy anchor | Workflow | Canonical Story 016 anchor | Disposition |
 | ---- | ---- | ---- | ---- |
-| `T101` | UKW (Update Kanban Workflow) | [`E2:S16:T03`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (workflow-maintenance umbrella) | Map to `T03`; legacy ID retained as historical alias only |
-| `T102` | CMW (Changelog Management Workflow) | [`E2:S16:T03`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | Map to `T03`; legacy ID retained as historical alias only |
-| `T103` | RW maintenance | [`E2:S16:T03`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | Map to `T03`; legacy ID retained as historical alias only |
+| `T101` | UKW (Update Kanban Workflow) | [`E2:S16:T03`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (workflow-maintenance umbrella) | Map to `T03`; legacy ID retained as historical alias only |
+| `T102` | CMW (Changelog Management Workflow) | [`E2:S16:T03`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | Map to `T03`; legacy ID retained as historical alias only |
+| `T103` | RW maintenance | [`E2:S16:T03`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | Map to `T03`; legacy ID retained as historical alias only |
 | `T1xx` (any future 3-digit perpetual id) | n/a | n/a | Disallowed for new tasks (see policy below) |
 
 **Renumbering policy:**
@@ -109,12 +109,12 @@ The following Story 016 tasks are ratified as the canonical implementation lanes
 
 | Task | Role | Owns |
 | ---- | ---- | ---- |
-| [`E2:S16:T01`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md) (this task) | Canonical policy + IPP | Inclusion criteria, renumbering policy, follow-on ratification, guardrail contract |
-| [`E2:S16:T02`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | Inventory and classification | Exhaustive perpetual-task inventory and disposition (`migrate_to_S16` / `retain_with_rationale` / `deprecate_or_redirect`) and reference map |
-| [`E2:S16:T03`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | Workflow-maintenance umbrella + hardening | Migration execution, validator/policy enforcement, perpetual-task marker hardening |
-| [`E2:S16:T04`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | Kanban hygiene lane | Ad-hoc kanban synchronization/hygiene attribution under the umbrella |
-| [`E2:S16:T05`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md) | Markdown hygiene lane | Markdown-only documentation upkeep attribution under the umbrella |
-| [`E2:S16:T06`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) | FR-085 governance task (re-housed) | UKW `--rp` deep reprioritization governance and follow-on |
+| [`E2:S16:T01`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md) (this task) | Canonical policy + IPP | Inclusion criteria, renumbering policy, follow-on ratification, guardrail contract |
+| [`E2:S16:T02`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) | Inventory and classification | Exhaustive perpetual-task inventory and disposition (`migrate_to_S16` / `retain_with_rationale` / `deprecate_or_redirect`) and reference map |
+| [`E2:S16:T03`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | Workflow-maintenance umbrella + hardening | Migration execution, validator/policy enforcement, perpetual-task marker hardening |
+| [`E2:S16:T04`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | Kanban hygiene lane | Ad-hoc kanban synchronization/hygiene attribution under the umbrella |
+| [`E2:S16:T05`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md) | Markdown hygiene lane | Markdown-only documentation upkeep attribution under the umbrella |
+| [`E2:S16:T06`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) | FR-085 governance task (re-housed) | UKW `--rp` deep reprioritization governance and follow-on |
 
 No new follow-on tasks are proposed by this IPP. If gaps surface during `T02` inventory, those are recorded under `T02`/`T03` rather than expanded here.
 
@@ -222,16 +222,16 @@ Wave 3 landed under `T03` as the substantive guardrail enforcement layer. T01 re
 ### 4.5 Files touched by Wave 1
 
 - `docs/implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md` (new — this file)
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
 - `docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md`
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
 
 ### 4.6 Additional files touched by Wave 2 and Wave 3
 
 - Wave 2:
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md`
 - Wave 3:
   - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
   - `packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py`
@@ -263,14 +263,14 @@ Deliverable checks:
 
 ## 6. References
 
-- [Host task E2:S16:T01](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
+- [Host task E2:S16:T01](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
 - [FR-088 - Dedicated story for perpetual ongoing tasks](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
-- [Story 016 - Perpetual ongoing workflow operations](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md)
-- [E2:S16:T02 - Inventory and classify workflow perpetual tasks](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
-- [E2:S16:T03 - Workflow maintenance perpetual umbrella](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
-- [E2:S16:T04 - Ad-hoc kanban synchronization and hygiene perpetual](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
-- [E2:S16:T05 - Markdown documentation maintenance perpetual](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md)
-- [E2:S16:T06 - UKW optional reprioritization `--rp` flag (FR-085)](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
+- [Story 016 - Perpetual ongoing workflow operations](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md)
+- [E2:S16:T02 - Inventory and classify workflow perpetual tasks](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
+- [E2:S16:T03 - Workflow maintenance perpetual umbrella](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [E2:S16:T04 - Ad-hoc kanban synchronization and hygiene perpetual](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- [E2:S16:T05 - Markdown documentation maintenance perpetual](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md)
+- [E2:S16:T06 - UKW optional reprioritization `--rp` flag (FR-085)](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
 - [Dev-kit versioning policy §6.1.1 - Perpetual tasks](../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
 - [IPW execution guide](../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
 - [FR-042 - IPW canonical workflow](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

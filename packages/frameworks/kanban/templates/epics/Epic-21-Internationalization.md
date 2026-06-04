@@ -93,7 +93,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/Epic-21/Story-000-language-selection-at-setup.md`
+> Full story: `docs/project-management/kanban/epics/epic-21/story-00-language-selection-at-setup.md`
 
 ---
 
@@ -133,7 +133,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - Depends on Story 0 (Language Selection at Setup)
 - *Parallel Development Candidacy:* Blocked (requires Story 0 language selection)
 
-> Full story: `docs/project-management/kanban/epics/Epic-21/Story-001-internationalization-infrastructure.md`
+> Full story: `docs/project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md`
 
 ---
 
@@ -173,7 +173,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - Depends on Story 1 (Internationalization Infrastructure)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 infrastructure)
 
-> Full story: `docs/project-management/kanban/epics/Epic-21/Story-002-translation-and-localization.md`
+> Full story: `docs/project-management/kanban/epics/epic-21/story-02-translation-and-localization.md`
 
 ---
 
@@ -214,7 +214,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - Coordinates with Epic 12 (Frontend & UI) for RTL support
 - *Parallel Development Candidacy:* Blocked (requires Story 2 translations)
 
-> Full story: `docs/project-management/kanban/epics/Epic-21/Story-003-cultural-adaptation.md`
+> Full story: `docs/project-management/kanban/epics/epic-21/story-03-cultural-adaptation.md`
 
 ---
 

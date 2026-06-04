@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E5:S01:T46 — Planning: FR-046 Closure Wave (IPW)
 
-**Host Task:** [`T46-rw-semver-tag-task-touch-mode.md`](../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md) **(E5:S01:T46)**  
+**Host Task:** [`T46-rw-semver-tag-task-touch-mode.md`](../project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md) **(E5:S01:T46)**  
 **Planning for:** [FR-046 — Dual-Version Mode Requires Task-Touch SemVer in RW](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)  
 **Related planning:** [IPW-E3S02T12-task-touch-semver-collision-hardening.md](IPW-E3S02T12-task-touch-semver-collision-hardening.md) (converter finalize/idempotency — do not duplicate)  
 **Status:** Published
@@ -223,7 +223,7 @@ git rev-parse v0.4.822^{commit} v0.2.16.4+16^{commit} → c01aa83 (same commit)
 ## References
 
 - [FR-046](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
-- [T46 host task](../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
+- [T46 host task](../project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
 - [IPW-E3S02T12](IPW-E3S02T12-task-touch-semver-collision-hardening.md)
 - [FR-046 implementation guide](../architecture/standards-and-adrs/FR-046-implementation-guide.md)
 - [ADR-002 task-touch mapping](../architecture/standards-and-adrs/) (governing spec)

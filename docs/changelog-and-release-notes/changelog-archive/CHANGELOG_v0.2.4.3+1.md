@@ -57,7 +57,7 @@
   - Both scripts maintain backward compatibility with hardcoded defaults
   - Config loading is optional (graceful fallback if config missing)
 
-- **Story 4 Task Checklist:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4 Task Checklist:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`
   - Marked T03 acceptance criteria as complete ✅
   - Added deliverable references pointing to installer script and documentation
 
@@ -81,4 +81,4 @@
 - **Installer Docs:** `packages/frameworks/workflow mgt/scripts/README-rw-installer.md`
 - **Config Schema:** `packages/frameworks/workflow mgt/config/rw-config-schema.md`
 - **Previous Release (v0.2.4.2+1):** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.4.2+1.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`

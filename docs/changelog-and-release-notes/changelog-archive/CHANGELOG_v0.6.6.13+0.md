@@ -26,7 +26,7 @@ Created task document for FR-026: Canonical Perpetual Task for Changelog Mainten
 - **Status:** TODO
 - **Priority:** HIGH
 - **Feature Request:** FR-026
-- **Document:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md`
+- **Document:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md`
 
 ### Task Scope
 

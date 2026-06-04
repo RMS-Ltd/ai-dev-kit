@@ -29,7 +29,7 @@ Created Bug Report BR-035 documenting that RW Step 13 (Housekeeping) is not work
 
 ### Kanban Documentation
 
-- **E6:S01: BR Repo** (`docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md`)
+- **E6:S01: BR Repo** (`docs/project-management/kanban/epics/epic-06/story-01-br-repo.md`)
   - Added E6:S01:T35 to task checklist
   - Updated version to v0.6.1.35+0
 
@@ -63,8 +63,8 @@ Created Bug Report BR-035 documenting that RW Step 13 (Housekeeping) is not work
 ## Files Modified
 
 - `docs/project-management/kanban/fr-br/BR-035-rw-housekeeping-step-not-working.md` (new)
-- `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T35-rw-housekeeping-step-not-working.md` (new)
-- `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md`
+- `docs/project-management/kanban/epics/epic-06/story-01-br-repo/T35-rw-housekeeping-step-not-working.md` (new)
+- `docs/project-management/kanban/epics/epic-06/story-01-br-repo.md`
 - `src/fynd_deals/version.py`
 
 ---

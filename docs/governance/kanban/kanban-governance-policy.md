@@ -175,12 +175,12 @@ Epics represent broad, conceptual areas of work (for example, “Kanban Framewor
 **Structure:**
 ```
 kanban/epics/
-├── Epic-1/                # Epic 1 directory (all files here)
-│   ├── Epic-1.md          # Epic 1 overview
-│   ├── Story-001-*.md     # Story files
+├── epic-01/                # Epic 1 directory (all files here)
+│   ├── epic-01.md          # Epic 1 overview
+│   ├── story-01-*.md     # Story files
 │   └── [other story files]
-├── Epic-2/                # Epic 2 directory
-│   ├── Epic-2.md
+├── epic-02/                # Epic 2 directory
+│   ├── epic-02.md
 │   └── Story-XXX-*.md
 ```
 
@@ -194,7 +194,7 @@ Stories are the **primary unit of planning** in this repo.
 - **ID:** `XXX` (numeric string, e.g. `001`, `002`)
 - **Directory:** Each Story lives in its Epic's directory, allowing for associated files (diagrams, notes, etc.) in Story subdirectories
 - **Examples:**
-  - `docs/project-management/kanban/epics/Epic-1/Story-001-ai-dev-kit-kanban-and-versioning.md`
+  - `docs/project-management/kanban/epics/epic-01/story-01-ai-dev-kit-kanban-and-versioning.md`
 
 **Each Story file should include:**
 
@@ -226,7 +226,7 @@ Every Task MUST have a discrete Task document (or clearly delimited section with
 
 1. **Separate File Format (Recommended):**
    - Location: `docs/project-management/kanban/epics/Epic-X/Story-XXX/Task-YYY-description.md` or `docs/project-management/kanban/epics/Epic-X/Story-XXX/TYYY-description.md`
-   - Example: `docs/project-management/kanban/epics/Epic-4/Story-011/Task-001-update-kanban-policy.md`
+   - Example: `docs/project-management/kanban/epics/epic-04/story-011/Task-001-update-kanban-policy.md`
 
 2. **Delimited Section Format (Alternative):**
    - Location: Within the Story document, using Task ID as a clear header

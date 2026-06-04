@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # IDE whitelist — UAT and integration evidence log
 
-**Task:** [E06:S07:T107](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)  
+**Task:** [E06:S07:T107](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)  
 **ADR:** [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)  
 **Append-only:** Add new entries at the top of [Evidence entries](#evidence-entries).
 

@@ -29,7 +29,7 @@ Doc-init release: Created task document for E9:S01:T08 (Repository Story Abstrac
 
 - **Task Document: E9:S01:T08 - Repository Story Abstract Space Contradiction**
   - Created task document for analyzing and resolving repository story abstract space contradiction
-  - Task document: `docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md`
+  - Task document: `docs/project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md`
   - Establishes version anchor: `v0.9.1.8+0` (abstract space)
   - Links to analysis documents and related work
 
@@ -55,7 +55,7 @@ Doc-init release: Created task document for E9:S01:T08 (Repository Story Abstrac
   - Updated `VERSION_TASK` to `8` (Repository Story Abstract Space Contradiction)
   - Updated `VERSION_BUILD` to `0` (doc-init)
 
-- **Story Document (`docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md`)**
+- **Story Document (`docs/project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md`)**
   - Added E9:S01:T08 to Task Checklist
   - Task document created and linked
 
@@ -79,11 +79,11 @@ Doc-init release: Created task document for E9:S01:T08 (Repository Story Abstrac
 
 ## Related Work
 
-- **Task Document:** [`T08-repository-story-abstract-space-contradiction.md`](../../project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md)
+- **Task Document:** [`T08-repository-story-abstract-space-contradiction.md`](../../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md)
 - **Analysis:** [`repository-story-abstract-space-contradiction-analysis.md`](../../analysis/repository-story-abstract-space-contradiction-analysis.md)
 - **Analysis:** [`perpetual-task-range-options-analysis.md`](../../analysis/perpetual-task-range-options-analysis.md)
-- **Story:** [`Story-001-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md)
-- **Epic:** [`Epic-9.md`](../../project-management/kanban/epics/Epic-9/Epic-9.md)
+- **Story:** [`story-01-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md)
+- **Epic:** [`epic-09.md`](../../project-management/kanban/epics/epic-09/epic-09.md)
 
 ---
 

@@ -27,9 +27,9 @@ housekeeping_policy: keep
 
 **Stories:**
 
-*(Add stories under `epics/Epic-1/` as work is planned.)*
+*(Add stories under `epics/epic-01/` as work is planned.)*
 
-**Epic Doc:** [`epics/Epic-1/Epic-1.md`](epics/Epic-1/Epic-1.md)
+**Epic Doc:** [`epics/epic-01/epic-01.md`](epics/epic-01/epic-01.md)
 
 ---
 

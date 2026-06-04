@@ -17,7 +17,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md`
 - Notes:
   - Version anchor v0.2.16.12+1; RW -k kanban documentation setup; status remains TODO.
 
@@ -51,7 +51,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
 - Notes:
   - T12 checklist row; version v0.2.16.12+1.
 
@@ -59,6 +59,6 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-2/Epic-2.md`
+  - `docs/project-management/kanban/epics/epic-02/epic-02.md`
 - Notes:
   - S16 summary references T12 intake.

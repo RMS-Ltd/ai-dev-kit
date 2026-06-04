@@ -30,4 +30,4 @@ E2:S16:T03: UKW bookkeeping run. Checklist sorting applied to Story 007 task che
 
 ## Related
 
-- **Perpetual Task:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- **Perpetual Task:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)

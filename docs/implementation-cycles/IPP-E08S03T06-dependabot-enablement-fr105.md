@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E08:S03:T06 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T06-dependabot-enablement-fr105.md`](../project-management/kanban/epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md) **(E08:S03:T06)**  
+**Host Task:** [`T06-dependabot-enablement-fr105.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T06-dependabot-enablement-fr105.md) **(E08:S03:T06)**  
 **Planning for:** [FR-105](../project-management/kanban/fr-br/FR-105-dependabot-dependency-security-automation.md)  
 **Status:** Approved (implementation authorized)
 
@@ -171,6 +171,6 @@ UI evidence ∥ dependabot.yml → npm audit/build → docs/tests → FR → RW.
 
 - [FR-105](../project-management/kanban/fr-br/FR-105-dependabot-dependency-security-automation.md)
 - [FR-069](../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
-- [E07:S06:T08](../project-management/kanban/epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
+- [E07:S06:T08](../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [`.github/workflows/docusaurus-build.yml`](../../.github/workflows/docusaurus-build.yml)

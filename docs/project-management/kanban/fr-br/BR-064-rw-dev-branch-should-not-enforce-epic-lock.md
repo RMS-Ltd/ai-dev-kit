@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-09 (`v0.2.1.16+1`)  
 **Version:** v0.2.1.16+1  
 **Code:** BR-064  
-**Implementing Task:** [E02:S01:T16](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T16-rw-dev-branch-neutral-context-no-epic-lock-br064.md)
+**Implementing Task:** [E02:S01:T16](../epics/epic-02/story-01-rw-agent-execution-and-docs/T16-rw-dev-branch-neutral-context-no-epic-lock-br064.md)
 
 ---
 
@@ -71,4 +71,4 @@ This causes Step 1 hard-fail and aborts RW before execution can begin.
 
 - [UXR-006](UXR-006-dev-branch-and-rw-validator-relaxation.md)
 - [BR-061](BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
-- [Story E2:S01](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
+- [Story E2:S01](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)

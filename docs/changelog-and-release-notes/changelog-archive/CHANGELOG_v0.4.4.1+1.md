@@ -86,7 +86,7 @@ housekeeping_policy: keep
 - **Kanban Board Updates** - Updated all board views with new paths
   - Updated `_index.md` with new Story and Epic paths
   - Updated `kanban-board.md` with new path references
-  - Updated Epic-4.md with new Story 4 entry
+  - Updated epic-04.md with new Story 4 entry
 
 ### Summary
 

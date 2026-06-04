@@ -1970,7 +1970,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "knowledge/reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md",
+      "path": "knowledge/reviews/pir/epic-02/PIR-epic-02-TEST-v0.2.5.10+1.md",
       "size": 11831,
       "words": 1503,
       "lifecycle": "evergreen",
@@ -1980,7 +1980,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "knowledge/reviews/pir/Epic-2/PIR-TEST-EXECUTION-REPORT.md",
+      "path": "knowledge/reviews/pir/epic-02/PIR-TEST-EXECUTION-REPORT.md",
       "size": 5857,
       "words": 791,
       "lifecycle": "evergreen",
@@ -2000,7 +2000,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "knowledge/reviews/pir/Story-2/PIR-STORY-TEST-EXECUTION-REPORT.md",
+      "path": "knowledge/reviews/pir/story-002/PIR-STORY-TEST-EXECUTION-REPORT.md",
       "size": 7493,
       "words": 991,
       "lifecycle": "evergreen",
@@ -2010,7 +2010,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "knowledge/reviews/pir/Story-2/PIR-Story-2-TEST-v0.2.2.8+1.md",
+      "path": "knowledge/reviews/pir/story-002/PIR-story-02-TEST-v0.2.2.8+1.md",
       "size": 9457,
       "words": 1221,
       "lifecycle": "evergreen",
@@ -2162,7 +2162,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Epic-1.md",
+      "path": "project-management/kanban/epics/epic-01/epic-01.md",
       "size": 7506,
       "words": 917,
       "lifecycle": "evergreen",
@@ -2172,7 +2172,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-001-vibe-dev-kit-kanban-and-versioning.md",
+      "path": "project-management/kanban/epics/epic-01/story-01-vibe-dev-kit-kanban-and-versioning.md",
       "size": 4232,
       "words": 549,
       "lifecycle": "evergreen",
@@ -2182,7 +2182,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T001-package-structure-analysis.md",
+      "path": "project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T01-package-structure-analysis.md",
       "size": 14168,
       "words": 1635,
       "lifecycle": "evergreen",
@@ -2192,7 +2192,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T002-modularity-principles.md",
+      "path": "project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T02-modularity-principles.md",
       "size": 18165,
       "words": 2480,
       "lifecycle": "evergreen",
@@ -2202,7 +2202,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T003-package-dependency-matrix.md",
+      "path": "project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T03-package-dependency-matrix.md",
       "size": 18958,
       "words": 2026,
       "lifecycle": "evergreen",
@@ -2212,7 +2212,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T004-consumption-patterns.md",
+      "path": "project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T04-consumption-patterns.md",
       "size": 21696,
       "words": 2840,
       "lifecycle": "evergreen",
@@ -2222,7 +2222,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture.md",
+      "path": "project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture.md",
       "size": 8030,
       "words": 1013,
       "lifecycle": "evergreen",
@@ -2232,7 +2232,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T001-kb-structure-analysis.md",
+      "path": "project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T01-kb-structure-analysis.md",
       "size": 12249,
       "words": 1428,
       "lifecycle": "evergreen",
@@ -2242,7 +2242,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T002-kb-structure-principles.md",
+      "path": "project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T02-kb-structure-principles.md",
       "size": 15496,
       "words": 1840,
       "lifecycle": "evergreen",
@@ -2252,7 +2252,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T003-canonical-kb-structure-research.md",
+      "path": "project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T03-canonical-kb-structure-research.md",
       "size": 18136,
       "words": 2250,
       "lifecycle": "evergreen",
@@ -2262,7 +2262,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T003-kb-structure-migration-guide.md",
+      "path": "project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T03-kb-structure-migration-guide.md",
       "size": 5808,
       "words": 712,
       "lifecycle": "evergreen",
@@ -2272,7 +2272,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T006-scalable-kb-pattern.md",
+      "path": "project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T06-scalable-kb-pattern.md",
       "size": 16140,
       "words": 1734,
       "lifecycle": "evergreen",
@@ -2282,7 +2282,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit.md",
+      "path": "project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit.md",
       "size": 6483,
       "words": 871,
       "lifecycle": "evergreen",
@@ -2292,7 +2292,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md",
+      "path": "project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md",
       "size": 6824,
       "words": 873,
       "lifecycle": "evergreen",
@@ -2302,7 +2302,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-005-comprehensive-project-analysis-for-canonical-patterns.md",
+      "path": "project-management/kanban/epics/epic-01/story-05-comprehensive-project-analysis-for-canonical-patterns.md",
       "size": 16887,
       "words": 2069,
       "lifecycle": "evergreen",
@@ -2312,7 +2312,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-006-repository-ci-cd-setup/T01-setup-byob-badges-for-private-repository.md",
+      "path": "project-management/kanban/epics/epic-01/story-06-repository-ci-cd-setup/T01-setup-byob-badges-for-private-repository.md",
       "size": 8087,
       "words": 1108,
       "lifecycle": "evergreen",
@@ -2322,7 +2322,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-1/Story-006-repository-ci-cd-setup.md",
+      "path": "project-management/kanban/epics/epic-01/story-06-repository-ci-cd-setup.md",
       "size": 2962,
       "words": 399,
       "lifecycle": "evergreen",
@@ -2332,7 +2332,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-10/Epic-10.md",
+      "path": "project-management/kanban/epics/epic-10/epic-10.md",
       "size": 1712,
       "words": 166,
       "lifecycle": "evergreen",
@@ -2342,7 +2342,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-10/Story-001-document-lifecycle-package-implementation-review.md",
+      "path": "project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md",
       "size": 3207,
       "words": 402,
       "lifecycle": "evergreen",
@@ -2352,7 +2352,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-10/Story-002-document-lifecycle-package-installation-evaluation.md",
+      "path": "project-management/kanban/epics/epic-10/story-02-document-lifecycle-package-installation-evaluation.md",
       "size": 3154,
       "words": 386,
       "lifecycle": "evergreen",
@@ -2362,7 +2362,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-11/Epic-11.md",
+      "path": "project-management/kanban/epics/epic-11/epic-11.md",
       "size": 1645,
       "words": 166,
       "lifecycle": "evergreen",
@@ -2372,7 +2372,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-11/Story-001-debug-path-package-implementation-review.md",
+      "path": "project-management/kanban/epics/epic-11/story-01-debug-path-package-implementation-review.md",
       "size": 3145,
       "words": 401,
       "lifecycle": "evergreen",
@@ -2382,7 +2382,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-11/Story-002-debug-path-package-installation-evaluation.md",
+      "path": "project-management/kanban/epics/epic-11/story-02-debug-path-package-installation-evaluation.md",
       "size": 3116,
       "words": 386,
       "lifecycle": "evergreen",
@@ -2392,7 +2392,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Epic-2.md",
+      "path": "project-management/kanban/epics/epic-02/epic-02.md",
       "size": 7116,
       "words": 823,
       "lifecycle": "evergreen",
@@ -2402,7 +2402,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T001-audit-report.md",
+      "path": "project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T01-audit-report.md",
       "size": 9447,
       "words": 1022,
       "lifecycle": "evergreen",
@@ -2412,7 +2412,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md",
+      "path": "project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md",
       "size": 22826,
       "words": 2830,
       "lifecycle": "evergreen",
@@ -2422,7 +2422,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T001-add-check-phase-step-12.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T01-add-check-phase-step-12.md",
       "size": 3322,
       "words": 405,
       "lifecycle": "evergreen",
@@ -2432,7 +2432,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T002-add-act-phase-step-13.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T02-add-act-phase-step-13.md",
       "size": 3409,
       "words": 439,
       "lifecycle": "evergreen",
@@ -2442,7 +2442,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T003-enhance-plan-phase.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T03-enhance-plan-phase.md",
       "size": 2932,
       "words": 370,
       "lifecycle": "evergreen",
@@ -2452,7 +2452,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T004-enhance-do-phase.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T04-enhance-do-phase.md",
       "size": 3131,
       "words": 371,
       "lifecycle": "evergreen",
@@ -2462,7 +2462,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T005-create-pdca-templates-examples.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T05-create-pdca-templates-examples.md",
       "size": 2859,
       "words": 362,
       "lifecycle": "evergreen",
@@ -2472,7 +2472,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T006-update-rw-workflow-yaml-docs.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T06-update-rw-workflow-yaml-docs.md",
       "size": 3117,
       "words": 382,
       "lifecycle": "evergreen",
@@ -2482,7 +2482,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T007-implement-task-naming-change.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md",
       "size": 2803,
       "words": 332,
       "lifecycle": "evergreen",
@@ -2492,7 +2492,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T008-update-kanban-docs-to-txx-standard.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md",
       "size": 2804,
       "words": 383,
       "lifecycle": "evergreen",
@@ -2502,7 +2502,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md",
       "size": 2803,
       "words": 332,
       "lifecycle": "evergreen",
@@ -2512,7 +2512,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard-deliverable.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard-deliverable.md",
       "size": 3908,
       "words": 405,
       "lifecycle": "evergreen",
@@ -2522,7 +2522,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md",
       "size": 2804,
       "words": 383,
       "lifecycle": "evergreen",
@@ -2532,7 +2532,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow.md",
+      "path": "project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow.md",
       "size": 9515,
       "words": 1355,
       "lifecycle": "evergreen",
@@ -2542,7 +2542,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-003-additional-workflows-and-examples/T01-workflow-taxonomy.md",
+      "path": "project-management/kanban/epics/epic-02/story-03-additional-workflows-and-examples/T01-workflow-taxonomy.md",
       "size": 7697,
       "words": 962,
       "lifecycle": "evergreen",
@@ -2552,7 +2552,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-003-additional-workflows-and-examples.md",
+      "path": "project-management/kanban/epics/epic-02/story-03-additional-workflows-and-examples.md",
       "size": 4922,
       "words": 615,
       "lifecycle": "evergreen",
@@ -2562,7 +2562,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-004-rw-installer-and-plug-and-play-adoption.md",
+      "path": "project-management/kanban/epics/epic-02/story-04-rw-installer-and-plug-and-play-adoption.md",
       "size": 14631,
       "words": 1965,
       "lifecycle": "evergreen",
@@ -2572,7 +2572,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-005-post-implementation-review-workflow.md",
+      "path": "project-management/kanban/epics/epic-02/story-05-post-implementation-review-workflow.md",
       "size": 16192,
       "words": 2081,
       "lifecycle": "evergreen",
@@ -2582,7 +2582,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-006-package-uninstall-and-recovery.md",
+      "path": "project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md",
       "size": 2680,
       "words": 301,
       "lifecycle": "evergreen",
@@ -2592,7 +2592,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-007-trigger-aware-release-workflow.md",
+      "path": "project-management/kanban/epics/epic-02/story-07-trigger-aware-release-workflow.md",
       "size": 9441,
       "words": 1197,
       "lifecycle": "evergreen",
@@ -2602,7 +2602,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-008-harden-release-workflow-reliability.md",
+      "path": "project-management/kanban/epics/epic-02/story-08-harden-release-workflow-reliability.md",
       "size": 22453,
       "words": 2942,
       "lifecycle": "evergreen",
@@ -2612,7 +2612,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-009-kanban-granularity-discrete-task-docs.md",
+      "path": "project-management/kanban/epics/epic-02/story-09-kanban-granularity-discrete-task-docs.md",
       "size": 18318,
       "words": 2455,
       "lifecycle": "evergreen",
@@ -2622,7 +2622,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md",
+      "path": "project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md",
       "size": 27718,
       "words": 3707,
       "lifecycle": "evergreen",
@@ -2632,7 +2632,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation/Task-010-Investigate-CHANGELOG-Entry-Removal-and-Harden-Processes.md",
+      "path": "project-management/kanban/epics/epic-02/story-11-intake-workflow-automation/Task-010-Investigate-CHANGELOG-Entry-Removal-and-Harden-Processes.md",
       "size": 9636,
       "words": 1261,
       "lifecycle": "evergreen",
@@ -2642,7 +2642,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md",
+      "path": "project-management/kanban/epics/epic-02/story-11-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md",
       "size": 6431,
       "words": 887,
       "lifecycle": "evergreen",
@@ -2652,7 +2652,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation.md",
+      "path": "project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md",
       "size": 6165,
       "words": 783,
       "lifecycle": "evergreen",
@@ -2662,7 +2662,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-012-rw-step-17-housekeeping.md",
+      "path": "project-management/kanban/epics/epic-02/story-12-rw-step-17-housekeeping.md",
       "size": 3180,
       "words": 413,
       "lifecycle": "evergreen",
@@ -2672,7 +2672,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T01-expectations-baseline.md",
+      "path": "project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md",
       "size": 24548,
       "words": 3026,
       "lifecycle": "evergreen",
@@ -2682,7 +2682,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review.md",
+      "path": "project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md",
       "size": 6127,
       "words": 738,
       "lifecycle": "evergreen",
@@ -2692,7 +2692,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-2/Story-014-workflow-management-package-installation-evaluation.md",
+      "path": "project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation.md",
       "size": 3203,
       "words": 393,
       "lifecycle": "evergreen",
@@ -2702,7 +2702,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-21/Epic-21.md",
+      "path": "project-management/kanban/epics/epic-21/epic-21.md",
       "size": 7281,
       "words": 855,
       "lifecycle": "evergreen",
@@ -2712,7 +2712,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-21/Story-000-language-selection-at-setup.md",
+      "path": "project-management/kanban/epics/epic-21/story-00-language-selection-at-setup.md",
       "size": 9260,
       "words": 1232,
       "lifecycle": "evergreen",
@@ -2722,7 +2722,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-21/Story-001-internationalization-infrastructure.md",
+      "path": "project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md",
       "size": 7221,
       "words": 936,
       "lifecycle": "evergreen",
@@ -2732,7 +2732,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-21/Story-002-translation-and-localization.md",
+      "path": "project-management/kanban/epics/epic-21/story-02-translation-and-localization.md",
       "size": 7163,
       "words": 916,
       "lifecycle": "evergreen",
@@ -2742,7 +2742,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-21/Story-003-cultural-adaptation.md",
+      "path": "project-management/kanban/epics/epic-21/story-03-cultural-adaptation.md",
       "size": 7332,
       "words": 936,
       "lifecycle": "evergreen",
@@ -2752,7 +2752,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-24/Epic-24.md",
+      "path": "project-management/kanban/epics/epic-24/epic-24.md",
       "size": 5034,
       "words": 584,
       "lifecycle": "evergreen",
@@ -2762,7 +2762,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-24/Story-001-book-content-development.md",
+      "path": "project-management/kanban/epics/epic-24/story-01-book-content-development.md",
       "size": 3419,
       "words": 417,
       "lifecycle": "evergreen",
@@ -2772,7 +2772,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-24/Story-002-book-integration-with-dev-kit.md",
+      "path": "project-management/kanban/epics/epic-24/story-02-book-integration-with-dev-kit.md",
       "size": 2223,
       "words": 244,
       "lifecycle": "evergreen",
@@ -2782,7 +2782,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-24/Story-003-book-publishing-support.md",
+      "path": "project-management/kanban/epics/epic-24/story-03-book-publishing-support.md",
       "size": 2170,
       "words": 226,
       "lifecycle": "evergreen",
@@ -2792,7 +2792,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-24/Story-004-book-material-capture.md",
+      "path": "project-management/kanban/epics/epic-24/story-04-book-material-capture.md",
       "size": 25555,
       "words": 3421,
       "lifecycle": "evergreen",
@@ -2802,7 +2802,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Epic-3.md",
+      "path": "project-management/kanban/epics/epic-03/epic-03.md",
       "size": 7311,
       "words": 867,
       "lifecycle": "evergreen",
@@ -2812,7 +2812,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework/T001-gap-analysis-report.md",
+      "path": "project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md",
       "size": 13291,
       "words": 1642,
       "lifecycle": "evergreen",
@@ -2822,7 +2822,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework/T002-fynd-deals-epic15-findings.md",
+      "path": "project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md",
       "size": 14411,
       "words": 1692,
       "lifecycle": "evergreen",
@@ -2832,7 +2832,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-001-dev-kit-alignment-with-versioning-framework.md",
+      "path": "project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework.md",
       "size": 13982,
       "words": 1636,
       "lifecycle": "evergreen",
@@ -2842,7 +2842,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T001-core-versioning-scenarios.md",
+      "path": "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T01-core-versioning-scenarios.md",
       "size": 15571,
       "words": 2370,
       "lifecycle": "evergreen",
@@ -2852,7 +2852,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-dual-versioning-package-audit-report.md",
+      "path": "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-dual-versioning-package-audit-report.md",
       "size": 15617,
       "words": 1929,
       "lifecycle": null,
@@ -2862,7 +2862,7 @@
       "housekeeping_policy": null
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-agentic-approach.md",
+      "path": "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-package-versioning-agentic-approach.md",
       "size": 18919,
       "words": 2530,
       "lifecycle": null,
@@ -2872,7 +2872,7 @@
       "housekeeping_policy": null
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-guardrails-discussion.md",
+      "path": "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-package-versioning-guardrails-discussion.md",
       "size": 20285,
       "words": 2606,
       "lifecycle": null,
@@ -2882,7 +2882,7 @@
       "housekeeping_policy": null
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T11-implement-semver-mapping-for-rw.md",
+      "path": "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T11-implement-semver-mapping-for-rw.md",
       "size": 9488,
       "words": 1174,
       "lifecycle": "evergreen",
@@ -2892,7 +2892,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples.md",
+      "path": "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples.md",
       "size": 22544,
       "words": 2882,
       "lifecycle": "evergreen",
@@ -2902,7 +2902,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-003-versioning-integration-with-kanban-and-rw.md",
+      "path": "project-management/kanban/epics/epic-03/story-03-versioning-integration-with-kanban-and-rw.md",
       "size": 7498,
       "words": 901,
       "lifecycle": "evergreen",
@@ -2912,7 +2912,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T01-expectations-baseline.md",
+      "path": "project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T01-expectations-baseline.md",
       "size": 19356,
       "words": 2430,
       "lifecycle": "evergreen",
@@ -2922,7 +2922,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T02-component-inventory.md",
+      "path": "project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T02-component-inventory.md",
       "size": 15417,
       "words": 1878,
       "lifecycle": "evergreen",
@@ -2932,7 +2932,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T03-versioning-behavior-validation.md",
+      "path": "project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T03-versioning-behavior-validation.md",
       "size": 15465,
       "words": 2008,
       "lifecycle": "evergreen",
@@ -2942,7 +2942,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T04-integrations-and-dependency-alignment.md",
+      "path": "project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T04-integrations-and-dependency-alignment.md",
       "size": 13723,
       "words": 1721,
       "lifecycle": "evergreen",
@@ -2952,7 +2952,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T05-gap-log-and-risk-assessment.md",
+      "path": "project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T05-gap-log-and-risk-assessment.md",
       "size": 11964,
       "words": 1581,
       "lifecycle": "evergreen",
@@ -2962,7 +2962,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T06-rc-sign-off-criteria-and-remediation-tasks.md",
+      "path": "project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T06-rc-sign-off-criteria-and-remediation-tasks.md",
       "size": 13126,
       "words": 1691,
       "lifecycle": "evergreen",
@@ -2972,7 +2972,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review.md",
+      "path": "project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review.md",
       "size": 6462,
       "words": 744,
       "lifecycle": "evergreen",
@@ -2982,7 +2982,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-3/Story-005-numbering-versioning-package-installation-evaluation.md",
+      "path": "project-management/kanban/epics/epic-03/story-05-numbering-versioning-package-installation-evaluation.md",
       "size": 3212,
       "words": 400,
       "lifecycle": "evergreen",
@@ -2992,7 +2992,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Epic-4.md",
+      "path": "project-management/kanban/epics/epic-04/epic-04.md",
       "size": 12651,
       "words": 1476,
       "lifecycle": "evergreen",
@@ -3002,7 +3002,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-001-dev-kit-kanban-implementation/T001-gap-analysis-report.md",
+      "path": "project-management/kanban/epics/epic-04/story-01-dev-kit-kanban-implementation/T01-gap-analysis-report.md",
       "size": 14821,
       "words": 1963,
       "lifecycle": "evergreen",
@@ -3012,7 +3012,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-001-dev-kit-kanban-implementation/T002-fynd-deals-epic15-kanban-findings.md",
+      "path": "project-management/kanban/epics/epic-04/story-01-dev-kit-kanban-implementation/T02-fynd-deals-epic15-kanban-findings.md",
       "size": 19896,
       "words": 2270,
       "lifecycle": "evergreen",
@@ -3022,7 +3022,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-001-dev-kit-kanban-implementation.md",
+      "path": "project-management/kanban/epics/epic-04/story-01-dev-kit-kanban-implementation.md",
       "size": 12711,
       "words": 1420,
       "lifecycle": "evergreen",
@@ -3032,7 +3032,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks/T001-intake-analysis-report.md",
+      "path": "project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks/T01-intake-analysis-report.md",
       "size": 11571,
       "words": 1687,
       "lifecycle": "evergreen",
@@ -3042,7 +3042,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks/T002-decision-flow-design.md",
+      "path": "project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks/T02-decision-flow-design.md",
       "size": 21477,
       "words": 3068,
       "lifecycle": "evergreen",
@@ -3052,7 +3052,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md",
+      "path": "project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md",
       "size": 16488,
       "words": 2128,
       "lifecycle": "evergreen",
@@ -3062,7 +3062,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T001-integration-docs-review.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T01-integration-docs-review.md",
       "size": 9774,
       "words": 1237,
       "lifecycle": "evergreen",
@@ -3072,7 +3072,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-documentation-updates-summary.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T02-documentation-updates-summary.md",
       "size": 9855,
       "words": 1228,
       "lifecycle": "evergreen",
@@ -3082,7 +3082,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-kanban-versioning-validation.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T02-kanban-versioning-validation.md",
       "size": 11774,
       "words": 1697,
       "lifecycle": "evergreen",
@@ -3092,7 +3092,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-root-cause-analysis.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T02-root-cause-analysis.md",
       "size": 13705,
       "words": 1780,
       "lifecycle": "evergreen",
@@ -3102,7 +3102,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T003-versioning-rw-validation.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T03-versioning-rw-validation.md",
       "size": 12860,
       "words": 1769,
       "lifecycle": "evergreen",
@@ -3112,7 +3112,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T004-rw-kanban-validation.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation.md",
       "size": 16437,
       "words": 2254,
       "lifecycle": "evergreen",
@@ -3122,7 +3122,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T006-integration-examples.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples.md",
       "size": 17327,
       "words": 2479,
       "lifecycle": "evergreen",
@@ -3132,7 +3132,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T007-gap-resolution-summary.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T07-gap-resolution-summary.md",
       "size": 6880,
       "words": 862,
       "lifecycle": "evergreen",
@@ -3142,7 +3142,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration.md",
+      "path": "project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration.md",
       "size": 22031,
       "words": 2744,
       "lifecycle": "evergreen",
@@ -3152,7 +3152,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-004-kanban-structure-refactoring.md",
+      "path": "project-management/kanban/epics/epic-04/story-04-kanban-structure-refactoring.md",
       "size": 4024,
       "words": 485,
       "lifecycle": "evergreen",
@@ -3162,7 +3162,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-005-canonical-epics-for-kanban-framework.md",
+      "path": "project-management/kanban/epics/epic-04/story-05-canonical-epics-for-kanban-framework.md",
       "size": 3879,
       "words": 487,
       "lifecycle": "evergreen",
@@ -3172,7 +3172,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md",
+      "path": "project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md",
       "size": 25545,
       "words": 3068,
       "lifecycle": "evergreen",
@@ -3182,7 +3182,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-007-migration-support-and-installation-modes.md",
+      "path": "project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md",
       "size": 3541,
       "words": 373,
       "lifecycle": "evergreen",
@@ -3192,7 +3192,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md",
+      "path": "project-management/kanban/epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption.md",
       "size": 7057,
       "words": 848,
       "lifecycle": "evergreen",
@@ -3202,7 +3202,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md",
+      "path": "project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md",
       "size": 5939,
       "words": 673,
       "lifecycle": "evergreen",
@@ -3212,7 +3212,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-010-agentic-kanban-task-creation-from-fr-br.md",
+      "path": "project-management/kanban/epics/epic-04/story-10-agentic-kanban-task-creation-from-fr-br.md",
       "size": 8973,
       "words": 1128,
       "lifecycle": "evergreen",
@@ -3222,7 +3222,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md",
+      "path": "project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md",
       "size": 10257,
       "words": 1380,
       "lifecycle": "evergreen",
@@ -3232,7 +3232,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md",
+      "path": "project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md",
       "size": 13229,
       "words": 1838,
       "lifecycle": "evergreen",
@@ -3242,7 +3242,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs.md",
+      "path": "project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md",
       "size": 18564,
       "words": 2350,
       "lifecycle": "evergreen",
@@ -3252,7 +3252,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-012-fr-br-uxr-repository-stories.md",
+      "path": "project-management/kanban/epics/epic-04/story-12-fr-br-uxr-repository-stories.md",
       "size": 15963,
       "words": 2210,
       "lifecycle": "evergreen",
@@ -3262,7 +3262,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T01-kanban-board-moscow-prioritized-task-view.md",
+      "path": "project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T01-kanban-board-moscow-prioritized-task-view.md",
       "size": 10407,
       "words": 1354,
       "lifecycle": "evergreen",
@@ -3272,7 +3272,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T02-update-kanban-governance-policy.md",
+      "path": "project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T02-update-kanban-governance-policy.md",
       "size": 7856,
       "words": 932,
       "lifecycle": "evergreen",
@@ -3282,7 +3282,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T03-update-kanban-board-template.md",
+      "path": "project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T03-update-kanban-board-template.md",
       "size": 7970,
       "words": 1045,
       "lifecycle": "evergreen",
@@ -3292,7 +3292,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md",
+      "path": "project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md",
       "size": 11939,
       "words": 1577,
       "lifecycle": "evergreen",
@@ -3302,7 +3302,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T05-update-kanban-package.md",
+      "path": "project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T05-update-kanban-package.md",
       "size": 7707,
       "words": 999,
       "lifecycle": "evergreen",
@@ -3312,7 +3312,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T06-update-other-affected-packages.md",
+      "path": "project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T06-update-other-affected-packages.md",
       "size": 7930,
       "words": 1063,
       "lifecycle": "evergreen",
@@ -3322,7 +3322,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view.md",
+      "path": "project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view.md",
       "size": 9517,
       "words": 1147,
       "lifecycle": "evergreen",
@@ -3332,7 +3332,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance/T01-update-packaged-rw-ukw-perpetual-tasks.md",
+      "path": "project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance/T01-update-packaged-rw-ukw-perpetual-tasks.md",
       "size": 6095,
       "words": 790,
       "lifecycle": "evergreen",
@@ -3342,7 +3342,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance/T02-restore-rc-review-artifacts.md",
+      "path": "project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance/T02-restore-rc-review-artifacts.md",
       "size": 1014,
       "words": 136,
       "lifecycle": "evergreen",
@@ -3352,7 +3352,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance.md",
+      "path": "project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance.md",
       "size": 4209,
       "words": 500,
       "lifecycle": "evergreen",
@@ -3362,7 +3362,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md",
+      "path": "project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md",
       "size": 7472,
       "words": 955,
       "lifecycle": "evergreen",
@@ -3372,7 +3372,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T03-validate-kanban-behavior.md",
+      "path": "project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T03-validate-kanban-behavior.md",
       "size": 14995,
       "words": 1911,
       "lifecycle": "evergreen",
@@ -3382,7 +3382,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T04-review-integrations-and-dependency-alignment.md",
+      "path": "project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T04-review-integrations-and-dependency-alignment.md",
       "size": 8208,
       "words": 979,
       "lifecycle": "evergreen",
@@ -3392,7 +3392,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md",
+      "path": "project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md",
       "size": 9183,
       "words": 1222,
       "lifecycle": "evergreen",
@@ -3402,7 +3402,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T6-define-rc-sign-off-criteria-and-remediation-tasks.md",
+      "path": "project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md",
       "size": 8517,
       "words": 1222,
       "lifecycle": "evergreen",
@@ -3412,7 +3412,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review.md",
+      "path": "project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review.md",
       "size": 9557,
       "words": 1122,
       "lifecycle": "evergreen",
@@ -3422,7 +3422,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-017-kanban-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md",
+      "path": "project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md",
       "size": 8967,
       "words": 1077,
       "lifecycle": "evergreen",
@@ -3432,7 +3432,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-017-kanban-package-installation-evaluation/T03-validate-migration-update-paths.md",
+      "path": "project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation/T03-validate-migration-update-paths.md",
       "size": 12274,
       "words": 1523,
       "lifecycle": "evergreen",
@@ -3442,7 +3442,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-017-kanban-package-installation-evaluation/T04-verify-post-install-configuration-and-validation-steps.md",
+      "path": "project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation/T04-verify-post-install-configuration-and-validation-steps.md",
       "size": 10130,
       "words": 1292,
       "lifecycle": "evergreen",
@@ -3452,7 +3452,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-017-kanban-package-installation-evaluation/T05-document-failure-modes-and-rollback-guidance.md",
+      "path": "project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation/T05-document-failure-modes-and-rollback-guidance.md",
       "size": 14783,
       "words": 1853,
       "lifecycle": "evergreen",
@@ -3462,7 +3462,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-017-kanban-package-installation-evaluation/T06-capture-documentation-gaps-and-improvements.md",
+      "path": "project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation/T06-capture-documentation-gaps-and-improvements.md",
       "size": 14634,
       "words": 1929,
       "lifecycle": "evergreen",
@@ -3472,7 +3472,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-017-kanban-package-installation-evaluation.md",
+      "path": "project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation.md",
       "size": 9325,
       "words": 1077,
       "lifecycle": "evergreen",
@@ -3482,7 +3482,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md",
+      "path": "project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split.md",
       "size": 3775,
       "words": 507,
       "lifecycle": "evergreen",
@@ -3492,7 +3492,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split/T2-upgrade-packaged-kanban-framework-board-split.md",
+      "path": "project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split/T02-upgrade-packaged-kanban-framework-board-split.md",
       "size": 3771,
       "words": 483,
       "lifecycle": "evergreen",
@@ -3502,7 +3502,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split.md",
+      "path": "project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split.md",
       "size": 2619,
       "words": 264,
       "lifecycle": "evergreen",
@@ -3512,7 +3512,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Epic-5.md",
+      "path": "project-management/kanban/epics/epic-05/epic-05.md",
       "size": 7748,
       "words": 862,
       "lifecycle": "evergreen",
@@ -3522,7 +3522,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-000-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md",
+      "path": "project-management/kanban/epics/epic-05/story-00-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md",
       "size": 8612,
       "words": 1023,
       "lifecycle": "evergreen",
@@ -3532,7 +3532,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-000-fr-repo/T34-ukw-granular-control-and-use-case-flags.md",
+      "path": "project-management/kanban/epics/epic-05/story-00-fr-repo/T34-ukw-granular-control-and-use-case-flags.md",
       "size": 9450,
       "words": 1187,
       "lifecycle": "evergreen",
@@ -3542,7 +3542,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-000-fr-repo/T35-task-template-cross-wiring-section.md",
+      "path": "project-management/kanban/epics/epic-05/story-00-fr-repo/T35-task-template-cross-wiring-section.md",
       "size": 7857,
       "words": 907,
       "lifecycle": "evergreen",
@@ -3552,7 +3552,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-000-fr-repo.md",
+      "path": "project-management/kanban/epics/epic-05/story-00-fr-repo.md",
       "size": 4187,
       "words": 499,
       "lifecycle": "evergreen",
@@ -3562,7 +3562,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md",
+      "path": "project-management/kanban/epics/epic-05/story-01-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md",
       "size": 8612,
       "words": 1023,
       "lifecycle": "evergreen",
@@ -3572,7 +3572,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-001-fr-repo/T34-ukw-granular-control-and-use-case-flags.md",
+      "path": "project-management/kanban/epics/epic-05/story-01-fr-repo/T34-ukw-granular-control-and-use-case-flags.md",
       "size": 11733,
       "words": 1483,
       "lifecycle": "evergreen",
@@ -3582,7 +3582,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md",
+      "path": "project-management/kanban/epics/epic-05/story-01-fr-repo/T35-task-template-cross-wiring-section.md",
       "size": 7857,
       "words": 907,
       "lifecycle": "evergreen",
@@ -3592,7 +3592,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md",
+      "path": "project-management/kanban/epics/epic-05/story-01-fr-repo/T36-rw-update-kanban-board-on-task-completion.md",
       "size": 8322,
       "words": 1096,
       "lifecycle": "evergreen",
@@ -3602,7 +3602,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-001-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md",
+      "path": "project-management/kanban/epics/epic-05/story-01-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md",
       "size": 3301,
       "words": 373,
       "lifecycle": "evergreen",
@@ -3612,7 +3612,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-001-fr-repo/T38-rw-step-7-scoped-kanban-sync-ukw-mode.md",
+      "path": "project-management/kanban/epics/epic-05/story-01-fr-repo/T38-rw-step-7-scoped-kanban-sync-ukw-mode.md",
       "size": 3901,
       "words": 491,
       "lifecycle": "evergreen",
@@ -3622,7 +3622,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-001-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md",
+      "path": "project-management/kanban/epics/epic-05/story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md",
       "size": 3950,
       "words": 461,
       "lifecycle": "evergreen",
@@ -3632,7 +3632,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-001-fr-repo.md",
+      "path": "project-management/kanban/epics/epic-05/story-01-fr-repo.md",
       "size": 8001,
       "words": 960,
       "lifecycle": "evergreen",
@@ -3642,7 +3642,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-002-documentation-maintenance-framework.md",
+      "path": "project-management/kanban/epics/epic-05/story-02-documentation-maintenance-framework.md",
       "size": 23019,
       "words": 2741,
       "lifecycle": "evergreen",
@@ -3652,7 +3652,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-003-documentation-quality-assurance.md",
+      "path": "project-management/kanban/epics/epic-05/story-03-documentation-quality-assurance.md",
       "size": 5604,
       "words": 628,
       "lifecycle": "evergreen",
@@ -3662,7 +3662,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-004-documentation-automation.md",
+      "path": "project-management/kanban/epics/epic-05/story-04-documentation-automation.md",
       "size": 3884,
       "words": 425,
       "lifecycle": "evergreen",
@@ -3672,7 +3672,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-005-framework-documentation-management.md",
+      "path": "project-management/kanban/epics/epic-05/story-05-framework-documentation-management.md",
       "size": 22230,
       "words": 2658,
       "lifecycle": "evergreen",
@@ -3682,7 +3682,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-006-legacy-repository-incorporation.md",
+      "path": "project-management/kanban/epics/epic-05/story-06-legacy-repository-incorporation.md",
       "size": 44311,
       "words": 5521,
       "lifecycle": "evergreen",
@@ -3692,7 +3692,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-007-policy-documentation-structure.md",
+      "path": "project-management/kanban/epics/epic-05/story-07-policy-documentation-structure.md",
       "size": 4510,
       "words": 536,
       "lifecycle": "evergreen",
@@ -3702,7 +3702,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-5/Story-008-persistent-knowledge-base-investigation.md",
+      "path": "project-management/kanban/epics/epic-05/story-08-persistent-knowledge-base-investigation.md",
       "size": 4924,
       "words": 562,
       "lifecycle": "evergreen",
@@ -3712,7 +3712,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Epic-6.md",
+      "path": "project-management/kanban/epics/epic-06/epic-06.md",
       "size": 10316,
       "words": 1239,
       "lifecycle": "evergreen",
@@ -3722,7 +3722,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-000-br-repo/T33-ukw-board-disorganization.md",
+      "path": "project-management/kanban/epics/epic-06/story-00-br-repo/T33-ukw-board-disorganization.md",
       "size": 6538,
       "words": 821,
       "lifecycle": "evergreen",
@@ -3732,7 +3732,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-000-br-repo.md",
+      "path": "project-management/kanban/epics/epic-06/story-00-br-repo.md",
       "size": 4153,
       "words": 497,
       "lifecycle": "evergreen",
@@ -3742,7 +3742,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md",
+      "path": "project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md",
       "size": 12108,
       "words": 1539,
       "lifecycle": "evergreen",
@@ -3752,7 +3752,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-001-br-repo/T34-ukw-moscow-prioritization-missing.md",
+      "path": "project-management/kanban/epics/epic-06/story-01-br-repo/T34-ukw-moscow-prioritization-missing.md",
       "size": 7794,
       "words": 1003,
       "lifecycle": "evergreen",
@@ -3762,7 +3762,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-001-br-repo/T35-rw-housekeeping-step-not-working.md",
+      "path": "project-management/kanban/epics/epic-06/story-01-br-repo/T35-rw-housekeeping-step-not-working.md",
       "size": 4390,
       "words": 598,
       "lifecycle": "evergreen",
@@ -3772,7 +3772,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-001-br-repo/T36-rw-step-7-board-update-bugs.md",
+      "path": "project-management/kanban/epics/epic-06/story-01-br-repo/T36-rw-step-7-board-update-bugs.md",
       "size": 6131,
       "words": 813,
       "lifecycle": "evergreen",
@@ -3782,7 +3782,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-001-br-repo.md",
+      "path": "project-management/kanban/epics/epic-06/story-01-br-repo.md",
       "size": 7167,
       "words": 908,
       "lifecycle": "evergreen",
@@ -3792,7 +3792,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-002-framework-version-management.md",
+      "path": "project-management/kanban/epics/epic-06/story-02-framework-version-management.md",
       "size": 6091,
       "words": 680,
       "lifecycle": "evergreen",
@@ -3802,7 +3802,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-003-framework-update-and-migration.md",
+      "path": "project-management/kanban/epics/epic-06/story-03-framework-update-and-migration.md",
       "size": 7710,
       "words": 903,
       "lifecycle": "evergreen",
@@ -3812,7 +3812,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-004-framework-health-monitoring.md",
+      "path": "project-management/kanban/epics/epic-06/story-04-framework-health-monitoring.md",
       "size": 2787,
       "words": 308,
       "lifecycle": "evergreen",
@@ -3822,7 +3822,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-005-bug-reports.md",
+      "path": "project-management/kanban/epics/epic-06/story-05-bug-reports.md",
       "size": 6950,
       "words": 841,
       "lifecycle": "evergreen",
@@ -3832,7 +3832,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-006-feature-requests.md",
+      "path": "project-management/kanban/epics/epic-06/story-06-feature-requests.md",
       "size": 2453,
       "words": 320,
       "lifecycle": "evergreen",
@@ -3842,7 +3842,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T04-create-package-management-implementation-plan.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T04-create-package-management-implementation-plan.md",
       "size": 5566,
       "words": 648,
       "lifecycle": "evergreen",
@@ -3852,7 +3852,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md",
       "size": 14882,
       "words": 1747,
       "lifecycle": "evergreen",
@@ -3862,7 +3862,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md",
       "size": 13687,
       "words": 1720,
       "lifecycle": "evergreen",
@@ -3872,7 +3872,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T09-review-and-prioritize-package-management-investigation.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T09-review-and-prioritize-package-management-investigation.md",
       "size": 7148,
       "words": 815,
       "lifecycle": "evergreen",
@@ -3882,7 +3882,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md",
       "size": 5183,
       "words": 652,
       "lifecycle": "evergreen",
@@ -3892,7 +3892,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md",
       "size": 5908,
       "words": 745,
       "lifecycle": "evergreen",
@@ -3902,7 +3902,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md",
       "size": 12069,
       "words": 1467,
       "lifecycle": "evergreen",
@@ -3912,7 +3912,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md",
       "size": 9695,
       "words": 1161,
       "lifecycle": "evergreen",
@@ -3922,7 +3922,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T14-add-cmw-to-workflow-management-package-documentation.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T14-add-cmw-to-workflow-management-package-documentation.md",
       "size": 7402,
       "words": 903,
       "lifecycle": "evergreen",
@@ -3932,7 +3932,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T15-cursor-ide-performance-considerations-awareness.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T15-cursor-ide-performance-considerations-awareness.md",
       "size": 7427,
       "words": 797,
       "lifecycle": "evergreen",
@@ -3942,7 +3942,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T16-harden-cmw-ordering-before-archival.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T16-harden-cmw-ordering-before-archival.md",
       "size": 9984,
       "words": 1170,
       "lifecycle": "evergreen",
@@ -3952,7 +3952,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md",
+      "path": "project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md",
       "size": 47063,
       "words": 5328,
       "lifecycle": "evergreen",
@@ -3962,7 +3962,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md",
+      "path": "project-management/kanban/epics/epic-06/story-08-ai-dev-kit-cli-tool.md",
       "size": 23983,
       "words": 2951,
       "lifecycle": "evergreen",
@@ -3972,7 +3972,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Epic-7.md",
+      "path": "project-management/kanban/epics/epic-07/epic-07.md",
       "size": 11154,
       "words": 1385,
       "lifecycle": "evergreen",
@@ -3982,7 +3982,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-000-uxr-repo.md",
+      "path": "project-management/kanban/epics/epic-07/story-00-uxr-repo.md",
       "size": 5090,
       "words": 667,
       "lifecycle": "evergreen",
@@ -3992,7 +3992,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md",
+      "path": "project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md",
       "size": 9103,
       "words": 1150,
       "lifecycle": "evergreen",
@@ -4002,7 +4002,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-001-real-world-adoption-examples.md",
+      "path": "project-management/kanban/epics/epic-07/story-01-real-world-adoption-examples.md",
       "size": 2095,
       "words": 247,
       "lifecycle": "evergreen",
@@ -4012,7 +4012,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-002-code-review-standards-and-processes.md",
+      "path": "project-management/kanban/epics/epic-07/story-02-code-review-standards-and-processes.md",
       "size": 9231,
       "words": 1136,
       "lifecycle": "evergreen",
@@ -4022,7 +4022,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-002-migration-guides.md",
+      "path": "project-management/kanban/epics/epic-07/story-02-migration-guides.md",
       "size": 2124,
       "words": 232,
       "lifecycle": "evergreen",
@@ -4032,7 +4032,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-003-code-quality-metrics-and-monitoring.md",
+      "path": "project-management/kanban/epics/epic-07/story-03-code-quality-metrics-and-monitoring.md",
       "size": 8501,
       "words": 1045,
       "lifecycle": "evergreen",
@@ -4042,7 +4042,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-003-user-onboarding-materials.md",
+      "path": "project-management/kanban/epics/epic-07/story-03-user-onboarding-materials.md",
       "size": 2105,
       "words": 229,
       "lifecycle": "evergreen",
@@ -4052,7 +4052,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-004-maintenance-automation-and-tooling.md",
+      "path": "project-management/kanban/epics/epic-07/story-04-maintenance-automation-and-tooling.md",
       "size": 8966,
       "words": 1053,
       "lifecycle": "evergreen",
@@ -4062,7 +4062,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-005-migration-uxr-research.md",
+      "path": "project-management/kanban/epics/epic-07/story-05-migration-uxr-research.md",
       "size": 14270,
       "words": 1849,
       "lifecycle": "evergreen",
@@ -4072,7 +4072,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md",
+      "path": "project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md",
       "size": 14135,
       "words": 1818,
       "lifecycle": "evergreen",
@@ -4082,7 +4082,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-8/Epic-8.md",
+      "path": "project-management/kanban/epics/epic-08/epic-08.md",
       "size": 4143,
       "words": 443,
       "lifecycle": "evergreen",
@@ -4092,7 +4092,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-8/Story-001-code-generators.md",
+      "path": "project-management/kanban/epics/epic-08/story-01-code-generators.md",
       "size": 5581,
       "words": 535,
       "lifecycle": "evergreen",
@@ -4102,7 +4102,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-8/Story-002-additional-validators.md",
+      "path": "project-management/kanban/epics/epic-08/story-02-additional-validators.md",
       "size": 5938,
       "words": 579,
       "lifecycle": "evergreen",
@@ -4112,7 +4112,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-8/Story-003-automation-scripts.md",
+      "path": "project-management/kanban/epics/epic-08/story-03-automation-scripts.md",
       "size": 2171,
       "words": 226,
       "lifecycle": "evergreen",
@@ -4122,7 +4122,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-8/Story-004-tooling-automation-package-implementation-review.md",
+      "path": "project-management/kanban/epics/epic-08/story-04-tooling-automation-package-implementation-review.md",
       "size": 3195,
       "words": 410,
       "lifecycle": "evergreen",
@@ -4132,7 +4132,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-8/Story-005-tooling-automation-package-installation-evaluation.md",
+      "path": "project-management/kanban/epics/epic-08/story-05-tooling-automation-package-installation-evaluation.md",
       "size": 3160,
       "words": 394,
       "lifecycle": "evergreen",
@@ -4142,7 +4142,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-9/Epic-9.md",
+      "path": "project-management/kanban/epics/epic-09/epic-09.md",
       "size": 9060,
       "words": 987,
       "lifecycle": "evergreen",
@@ -4152,7 +4152,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md",
+      "path": "project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md",
       "size": 8588,
       "words": 1065,
       "lifecycle": "evergreen",
@@ -4162,7 +4162,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md",
+      "path": "project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md",
       "size": 11374,
       "words": 1304,
       "lifecycle": "evergreen",
@@ -4172,7 +4172,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-9/Story-002-kanban-framework-rc-readiness-review.md",
+      "path": "project-management/kanban/epics/epic-09/story-02-kanban-framework-rc-readiness-review.md",
       "size": 10431,
       "words": 1379,
       "lifecycle": "evergreen",
@@ -4182,7 +4182,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-9/Story-003-workflow-management-framework-rc-readiness-review.md",
+      "path": "project-management/kanban/epics/epic-09/story-03-workflow-management-framework-rc-readiness-review.md",
       "size": 10650,
       "words": 1398,
       "lifecycle": "evergreen",
@@ -4192,7 +4192,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/epics/Epic-9/Story-004-numbering-versioning-framework-rc-readiness-review.md",
+      "path": "project-management/kanban/epics/epic-09/story-04-numbering-versioning-framework-rc-readiness-review.md",
       "size": 10686,
       "words": 1408,
       "lifecycle": "evergreen",
@@ -5315,9 +5315,9 @@
       "maintenance/BUILD_PACKAGES_COMMANDS.md",
       "maintenance/README.md",
       "maintenance/UPLOAD_PACKAGES.md",
-      "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-dual-versioning-package-audit-report.md",
-      "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-agentic-approach.md",
-      "project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T008-package-versioning-guardrails-discussion.md",
+      "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-dual-versioning-package-audit-report.md",
+      "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-package-versioning-agentic-approach.md",
+      "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-package-versioning-guardrails-discussion.md",
       "project-management/kanban/ukw-changes-summary-2026-01-05.md",
       "project-management/kanban/ukw-changes-summary.md",
       "vibe-coding-for-dummies-outline-and-sample.md"

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent — dependency audit follow-up)  
 **Priority:** HIGH (Must Have — MoSCOW **M**)  
 **Status:** IMPLEMENTED (v0.8.3.6+2 — **E08:S03:T06**)  
-**Assigned Task:** E08:S03:T06 — [`T06-dependabot-enablement-fr105.md`](../epics/Epic-8/Story-003-automation-scripts/T06-dependabot-enablement-fr105.md)
+**Assigned Task:** E08:S03:T06 — [`T06-dependabot-enablement-fr105.md`](../epics/epic-08/story-03-automation-scripts/T06-dependabot-enablement-fr105.md)
 
 ---
 
@@ -30,7 +30,7 @@ Enable **GitHub Dependabot** (security updates + version updates) for **pip** (r
 - **0** open Dependabot alerts via API — reflects disabled automation, not verified absence of issues.
 - Local **`npm audit`** in `portal/` reports **33** vulnerabilities (6 high, 27 moderate), largely transitive (`webpack-dev-server` → `sockjs`/`uuid`, `ws`).
 - Python deps are **unpinned** (`requirements.txt`, `setup.py` lower bounds only); no lockfile.
-- Audit context: [E07:S06:T08](../epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md).
+- Audit context: [E07:S06:T08](../epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md).
 
 ---
 
@@ -46,7 +46,7 @@ Enable **GitHub Dependabot** (security updates + version updates) for **pip** (r
   - Sensible `open-pull-requests-limit` and grouping if needed
 - Run initial **`npm audit fix`** (non-`--force` first) in `portal/`; verify **`npm run build`** (Docusaurus gate).
 - Document in **`portal/README.md`** or contributor doc: how to handle Dependabot PRs, when to defer Docusaurus major bumps.
-- Optional: add **`pip-audit`** or **`pip install -r requirements.txt && pip audit`** to future Tests workflow ([E08:S03:T04](../epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)) — note as follow-up, not blocking AC.
+- Optional: add **`pip-audit`** or **`pip install -r requirements.txt && pip audit`** to future Tests workflow ([E08:S03:T04](../epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)) — note as follow-up, not blocking AC.
 
 **Out of scope**
 
@@ -93,4 +93,4 @@ Enable **GitHub Dependabot** (security updates + version updates) for **pip** (r
 
 - [FR-069](FR-069-docusaurus-ci-build-gate.md) (portal build gate)
 - [BR-058](BR-058-ci-test-workflow-missing-and-pytest-failures.md) (Tests workflow)
-- [T08 audit](../epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
+- [T08 audit](../epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)

@@ -110,7 +110,7 @@ Every Task MUST have a discrete Task document (or clearly delimited section with
 
 1. **Separate File Format (Recommended):**
    - Location: `kanban/epics/Epic-X/Story-XXX/Task-YYY-description.md` or `kanban/epics/Epic-X/Story-XXX/TYYY-description.md`
-   - Example: `kanban/epics/Epic-4/Story-011/Task-001-update-kanban-policy.md`
+   - Example: `kanban/epics/epic-04/Story-011/Task-001-update-kanban-policy.md`
 
 2. **Delimited Section Format (Alternative):**
    - Location: Within the Story document, using Task ID as a clear header

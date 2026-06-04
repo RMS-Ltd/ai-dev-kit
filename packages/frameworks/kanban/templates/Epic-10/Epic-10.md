@@ -78,19 +78,19 @@ This epic encompasses data management and database for the {PROJECT_NAME} projec
 
 **Brief Summary:** database schema design for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-database-schema-design.md`](Story-001-database-schema-design.md)
+**Story Document:** [`story-01-database-schema-design.md`](story-01-database-schema-design.md)
 
 ### Story 2: Data Access Layer
 
 **Brief Summary:** data access layer for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-data-access-layer.md`](Story-002-data-access-layer.md)
+**Story Document:** [`story-02-data-access-layer.md`](story-02-data-access-layer.md)
 
 ### Story 3: Data Migration and Seeding
 
 **Brief Summary:** data migration and seeding for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-data-migration-and-seeding.md`](Story-003-data-migration-and-seeding.md)
+**Story Document:** [`story-03-data-migration-and-seeding.md`](story-03-data-migration-and-seeding.md)
 
 ---
 

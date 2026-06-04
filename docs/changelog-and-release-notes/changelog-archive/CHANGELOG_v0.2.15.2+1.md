@@ -14,16 +14,16 @@ Filed FR-084 and anchored E2:S15:T02 to make IPW explicitly responsible for post
 - New FR intake:
 - `docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md`
 - New implementing task:
-- `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`
+- `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`
 - Story wiring:
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md`
 - Board wiring:
   - `docs/project-management/kanban/kboard.md`
   - `docs/project-management/kanban/fbuboard.md`
 - Related closeout reconciliation carried in same release set:
-  - `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md`
+  - `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md`
   - `docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md`
-  - `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md`
+  - `docs/project-management/kanban/epics/epic-06/story-06-feature-requests.md`
 
 ## Verification
 

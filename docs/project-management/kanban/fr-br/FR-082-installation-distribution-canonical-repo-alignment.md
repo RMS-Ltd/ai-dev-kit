@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** LOW  
 **Status:** IMPLEMENTED (2026-05-28 — E06:S09:T03; public bootstrap `RMS-Ltd/ai-dev-kit`)
 
-**Implementing Task:** [E06:S09:T03](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md)
+**Implementing Task:** [E06:S09:T03](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md)
 
 ---
 
@@ -50,7 +50,7 @@ Align **installation scripts, defaults, and documentation examples** with the **
 - [`PACKAGE_INSTALLATION_GUIDE.md`](../../../packages/frameworks/workflow%20mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) — examples use `RMS-Ltd/ai-dev-kit` release URLs.
 - [`INSTALL_IN_YOUR_PROJECT.md`](../../../INSTALL_IN_YOUR_PROJECT.md) — GitHub Releases example includes explicit `--repo RMS-Ltd/ai-dev-kit`; submodule URL canonical.
 - [`scripts/fr099_install_smoke_test.sh`](../../../scripts/fr099_install_smoke_test.sh) — guards against `ai-dev-kit/ai-dev-kit` default regression on public clone.
-- **Backward compatibility:** Default changed from unsafe placeholder to canonical public repo; forks use `--repo owner/fork` (recorded in [T03](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) delivery notes).
+- **Backward compatibility:** Default changed from unsafe placeholder to canonical public repo; forks use `--repo owner/fork` (recorded in [T03](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) delivery notes).
 
 **Deferral (not FR-082):** Publishing framework release tarballs on GitHub Releases → [FR-062](./FR-062-github-release-installation-experience.md).
 

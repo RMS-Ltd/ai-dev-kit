@@ -20,7 +20,7 @@ Make interactive installer Kanban prompts self-explanatory, enforce placeholder-
 
 ## 2. Functional requirements
 
-- **F1:** Epic pattern input must require `{epic}` and reject literal one-epic paths (for example `Epic-01/Epic-01.md`).
+- **F1:** Epic pattern input must require `{epic}` and reject literal one-epic paths (for example `epic-01/epic-01.md`).
 - **F2:** Story pattern input must require both `{epic}` and `{story}`.
 - **F3:** Prompt copy must explain paths are relative to selected `kanban_root`, with concrete examples.
 - **F4:** Installer must provide immediate match-preview feedback (match count and sample matches) for pattern-based inputs.

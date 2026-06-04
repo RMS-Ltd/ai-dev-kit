@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IMPLEMENTED (v0.7.1.7+4 — E07:S01:T06 / CMW; board hygiene 2026-05-29)
 
-**Implementing Task:** [E07:S01:T06](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md) (**v0.7.1.7+4**)
+**Implementing Task:** [E07:S01:T06](../epics/epic-07/story-01-codebase-maintenance-tasks/T06-update-changelog-workflow.md) (**v0.7.1.7+4**)
 
 ---
 

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** COMPLETE
 
-**Implementing Task:** [E06:S07:T111](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md)
+**Implementing Task:** [E06:S07:T111](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md)
 
 ---
 

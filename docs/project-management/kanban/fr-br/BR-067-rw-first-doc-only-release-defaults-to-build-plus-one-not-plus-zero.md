@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.2.16.3+0 (policy/docs Tranche 2); closure evidence under Tranche 3 RW
 **Code:** BR-067  
 
-**Implementing Task:** [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Implementing Task:** [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 

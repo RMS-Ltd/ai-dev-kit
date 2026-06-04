@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E05:S01:T35](../epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)
+**Implementing Task:** [E05:S01:T35](../epics/epic-05/story-01-fr-repo/T35-task-template-cross-wiring-section.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.5.1.35+1 (implemented)
 
@@ -238,9 +238,9 @@ A comprehensive Standard Operating Procedure has been created based on web resea
 - Version: `v0.5.1.35+0` (doc-init, migrated from v0.5.0.35+0)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
-- Story: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md) (migrated from Story-000-fr-repo)
-- Task: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md`](../epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)
+- Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md) (migrated from story-00-fr-repo)
+- Task: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T35-task-template-cross-wiring-section.md`](../epics/epic-05/story-01-fr-repo/T35-task-template-cross-wiring-section.md)
 
 ---
 
@@ -254,7 +254,7 @@ A comprehensive Standard Operating Procedure has been created based on web resea
 
 ## Implementation
 
-**Implemented by:** [E05:S01:T35](../epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)  
+**Implemented by:** [E05:S01:T35](../epics/epic-05/story-01-fr-repo/T35-task-template-cross-wiring-section.md)  
 **Version:** v0.5.1.35+1  
 **Date:** 2026-05-15
 

@@ -227,5 +227,5 @@ agentic_intelligence:
 
 ---
 
-_This design document is part of Epic 4 Story 9 Task 6. See `Story-009-bug-fixes-and-agentic-intelligence.md` for complete story context._
+_This design document is part of Epic 4 Story 9 Task 6. See `story-09-bug-fixes-and-agentic-intelligence.md` for complete story context._
 

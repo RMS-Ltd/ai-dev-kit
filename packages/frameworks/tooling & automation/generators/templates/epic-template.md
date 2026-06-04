@@ -56,7 +56,7 @@ housekeeping_policy: keep
 - [ ] E{epic_padded}:S01:T02 – [Task Title]
 - [ ] E{epic_padded}:S01:T03 – [Task Title]
 
-**Story:** [`Story-001-[story-slug].md`](Story-001-[story-slug].md)
+**Story:** [`story-01-[story-slug].md`](story-01-[story-slug].md)
 
 ---
 

@@ -21,17 +21,17 @@ This release implements Phase 1 (Epic 9 → Epic 24 rename) and Phase 3 (`rw-con
 **Problem:** ai-dev-kit's Epic 9 "Book Related Work" conflicts with canonical Epic 9 "User Management and Authentication", causing Epic mashup when projects copy ai-dev-kit's actual Kanban.
 
 **Actions Taken:**
-1. Renamed Epic-9 directory to Epic-24
-2. Renamed Epic-9.md to Epic-24.md
-3. Updated Epic-24.md:
+1. Renamed epic-09 directory to epic-24
+2. Renamed epic-09.md to epic-24.md
+3. Updated epic-24.md:
    - Changed Epic number from 9 to 24
    - Updated version schema from `0.9.S.T+B` to `0.24.S.T+B`
    - Added note that Epic 24+ is project-specific range (not canonical)
    - Updated all task references from E9:S to E24:S
    - Updated all version references from v0.9.x.x to v0.24.x.x
-4. Updated all Story documents in Epic-24:
+4. Updated all Story documents in epic-24:
    - Changed all E9:S references to E24:S
-   - Updated all path references from `epics/Epic-9/` to `epics/Epic-24/`
+   - Updated all path references from `epics/epic-09/` to `epics/epic-24/`
    - Updated version references
 5. Updated kanban-board.md:
    - Changed Epic 9 section to Epic 24
@@ -65,10 +65,10 @@ This release implements Phase 1 (Epic 9 → Epic 24 rename) and Phase 3 (`rw-con
 ### Validation Results
 
 ✅ **Epic 9 Rename:**
-- Epic-9 directory successfully renamed to Epic-24
-- All Epic-9.md files renamed to Epic-24.md
+- epic-09 directory successfully renamed to epic-24
+- All epic-09.md files renamed to epic-24.md
 - All E9:S references updated to E24:S in all documents
-- All `epics/Epic-9/` path references updated to `epics/Epic-24/`
+- All `epics/epic-09/` path references updated to `epics/epic-24/`
 - All version references (v0.9.x.x) updated to v0.24.x.x
 - Kanban board updated with Epic 24 entry
 - Quick view board (_index.md) updated
@@ -84,14 +84,14 @@ This release implements Phase 1 (Epic 9 → Epic 24 rename) and Phase 3 (`rw-con
 ### Files Modified
 
 **Epic Rename:**
-- `docs/project-management/kanban/epics/Epic-24/Epic-24.md` (renamed and updated)
-- `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development.md` (updated)
-- `docs/project-management/kanban/epics/Epic-24/Story-002-book-integration-with-dev-kit.md` (updated)
-- `docs/project-management/kanban/epics/Epic-24/Story-003-book-publishing-support.md` (updated)
-- `docs/project-management/kanban/epics/Epic-24/Story-004-book-material-capture.md` (updated)
+- `docs/project-management/kanban/epics/epic-24/epic-24.md` (renamed and updated)
+- `docs/project-management/kanban/epics/epic-24/story-01-book-content-development.md` (updated)
+- `docs/project-management/kanban/epics/epic-24/story-02-book-integration-with-dev-kit.md` (updated)
+- `docs/project-management/kanban/epics/epic-24/story-03-book-publishing-support.md` (updated)
+- `docs/project-management/kanban/epics/epic-24/story-04-book-material-capture.md` (updated)
 - `docs/project-management/kanban/kanban-board.md` (updated)
 - `docs/project-management/kanban/_index.md` (updated)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (updated)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (updated)
 
 **New Files:**
 - `rw-config.yaml` (created)

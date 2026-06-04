@@ -70,7 +70,7 @@ Rollout checklist created and packaged Release Workflow updated to reflect Step 
   - Updated troubleshooting section
 
 - **Kanban Documentation:**
-  - Updated `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`
+  - Updated `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md`
   - Marked E4:S06:T08 acceptance criteria as complete
   - Updated story version to v0.4.6.8+1
 

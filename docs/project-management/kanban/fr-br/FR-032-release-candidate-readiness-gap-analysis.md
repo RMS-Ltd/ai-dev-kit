@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **GitHub Issue:** [TBD]  
 **Version:** v0.9.1.0+0 (Story created via UKW v0.6.6.8+21)
 
-**Implementing Task:** [E09:S01:T03](../epics/Epic-9/Story-001-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md)  
+**Implementing Task:** [E09:S01:T03](../epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md)  
 **Historical registry:** E05:S01:T32 registry
 
 ---
@@ -298,8 +298,8 @@ Investigate and document the gap between current project state (RC=0, no M/S tas
 - Version: `v0.9.1.0+0` (Story created, tasks pending)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-9/Epic-9.md`](../epics/Epic-9/Epic-9.md)
-- Story: [`docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md`](../epics/Epic-9/Story-001-rc-readiness-gap-analysis.md)
+- Epic: [`docs/project-management/kanban/epics/epic-09/epic-09.md`](../epics/epic-09/epic-09.md)
+- Story: [`docs/project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md`](../epics/epic-09/story-01-rc-readiness-gap-analysis.md)
 - Task: [TBD - Task documents to be created]
 
 ---
@@ -343,11 +343,11 @@ Investigate and document the gap between current project state (RC=0, no M/S tas
 
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` - RC definition and schema
 - **Kanban Board:** `docs/project-management/kanban/kboard.md` - Current task priorities and status
-- **Epic 5:** `docs/project-management/kanban/epics/Epic-5/Epic-5.md` - Documentation Management
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md` - Framework Management
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md` - Examples & Adoption
-- **Epic 8:** `docs/project-management/kanban/epics/Epic-8/Epic-8.md` - Quality & Validation
-- **Epic 24:** `docs/project-management/kanban/epics/Epic-24/Epic-24.md` - Book Related Work
+- **Epic 5:** `docs/project-management/kanban/epics/epic-05/epic-05.md` - Documentation Management
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md` - Framework Management
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md` - Examples & Adoption
+- **Epic 8:** `docs/project-management/kanban/epics/epic-08/epic-08.md` - Quality & Validation
+- **Epic 24:** `docs/project-management/kanban/epics/epic-24/epic-24.md` - Book Related Work
 
 ---
 

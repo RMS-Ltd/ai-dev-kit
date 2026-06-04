@@ -20,7 +20,7 @@ Perpetual-task inventory IPP (`IPP-E2S16T02`) published; T02 **COMPLETE**; T03 T
 - T02 task doc (AC1–AC5, verification, **COMPLETE**).
 - T01 AC3 → links inventory IPP.
 - `IPP-E2S16T03` §7 — 3B gate **SATISFIED**.
-- Story-016 checklist, `kboard.md` T02 row + IPP link.
+- story-016 checklist, `kboard.md` T02 row + IPP link.
 
 ### Attempted fixes
 

@@ -17,7 +17,7 @@ Operationalized **IPW Phases 5–6** after implementation planning: documentatio
 ### Added
 
 - `docs/project-management/kanban/fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md`
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md`
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md`
 
 ### Updated
 
@@ -30,7 +30,7 @@ Operationalized **IPW Phases 5–6** after implementation planning: documentatio
 - `AGENTS.md`, `.cursorrules` — Global gate references IPP Sections 1–7.
 - `packages/frameworks/workflow mgt/agents/ipw/AGENTS.md` — ten-phase note for ai-dev-kit.
 - `docs/implementation-cycles/README.md` — IPP naming.
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md` — T11 checklist row.
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md` — T11 checklist row.
 - `README.md`, `semver-registry.yaml` — version and SemVer mapping.
 
 ---
@@ -38,4 +38,4 @@ Operationalized **IPW Phases 5–6** after implementation planning: documentatio
 ## References
 
 - [FR-096](../../project-management/kanban/fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
-- [E2:S16:T11](../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md)
+- [E2:S16:T11](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md)

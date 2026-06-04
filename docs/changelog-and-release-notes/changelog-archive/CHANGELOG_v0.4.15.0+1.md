@@ -43,7 +43,7 @@
 
 ### Story Documentation
 
-**Created:** `docs/project-management/kanban/epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md`
+**Created:** `docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md`
 - Defines 5 tasks for implementing hybrid template system:
   - T01: Finalize and validate concrete task template coverage
   - T02: Design procedural task template generator

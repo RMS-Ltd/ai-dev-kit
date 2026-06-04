@@ -31,13 +31,13 @@ Restored RC review planning artifacts (Epics 10/11 and package review story docs
 
 ## Files Changed
 
-- `docs/project-management/kanban/epics/Epic-10/`
-- `docs/project-management/kanban/epics/Epic-11/`
-- `docs/project-management/kanban/epics/Epic-2/Epic-2.md`
-- `docs/project-management/kanban/epics/Epic-3/Epic-3.md`
-- `docs/project-management/kanban/epics/Epic-8/Epic-8.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance/T02-restore-rc-review-artifacts.md`
+- `docs/project-management/kanban/epics/epic-10/`
+- `docs/project-management/kanban/epics/epic-11/`
+- `docs/project-management/kanban/epics/epic-02/epic-02.md`
+- `docs/project-management/kanban/epics/epic-03/epic-03.md`
+- `docs/project-management/kanban/epics/epic-08/epic-08.md`
+- `docs/project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance.md`
+- `docs/project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance/T02-restore-rc-review-artifacts.md`
 - `docs/project-management/kanban/kanban-board.md`
 - `src/fynd_deals/version.py`
 

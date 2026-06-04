@@ -39,4 +39,4 @@ E5:S01:T38 / **FR-038:** Documentation contract for **RW Step 7 — Scoped Kanba
 ## Related
 
 - **FR-038:** [`FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md`](../../project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
-- **Task:** [`T38-rw-step-7-scoped-kanban-sync-ukw-mode.md`](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T38-rw-step-7-scoped-kanban-sync-ukw-mode.md)
+- **Task:** [`T38-rw-step-7-scoped-kanban-sync-ukw-mode.md`](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T38-rw-step-7-scoped-kanban-sync-ukw-mode.md)

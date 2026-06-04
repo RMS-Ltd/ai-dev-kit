@@ -16,11 +16,11 @@
   "auxiliary_surfaces": {
     "story_doc": {
       "changes": [
-        "Updated Story-009 checklist: T12/T13 verified; T14 v0.6.9.14+2"
+        "Updated story-009 checklist: T12/T13 verified; T14 v0.6.9.14+2"
       ],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md"
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
       ],
       "surface": "story_doc",
       "touched": true
@@ -112,7 +112,7 @@
       ],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md"
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md"
       ],
       "surface": "task_doc",
       "touched": true

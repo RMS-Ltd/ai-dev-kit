@@ -56,8 +56,8 @@ This release represents a UKW (Update Kanban Workflow) synchronization run, upda
 
 ### Files Modified
 
-- `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md`
+- `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md`
+- `docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md`
 - `docs/project-management/kanban/kanban-board.md`
 - `packages/frameworks/kanban/scripts/generate_task_templates.py`
 - `packages/frameworks/kanban/scripts/agentic_template_generator.py`

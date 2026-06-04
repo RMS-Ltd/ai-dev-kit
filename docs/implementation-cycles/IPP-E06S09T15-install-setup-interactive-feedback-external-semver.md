@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E06:S09:T15 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T15-install-setup-interactive-feedback-external-semver-uxr016.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md) **(E06:S09:T15)**  
+**Host Task:** [`T15-install-setup-interactive-feedback-external-semver-uxr016.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md) **(E06:S09:T15)**  
 **Planning for:** [UXR-016](../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) *(reclassified from FR-108)*  
 **Status:** Approved
 

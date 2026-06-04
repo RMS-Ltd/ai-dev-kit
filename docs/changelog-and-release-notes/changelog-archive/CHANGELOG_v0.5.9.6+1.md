@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-03-30 16:11:41 UTC  
 **Epic:** 5 | **Story:** 9 | **Task:** 6  
-**Task doc:** [T06-docusaurus-deployment-fr-070.md](../../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T06-docusaurus-deployment-fr-070.md)  
+**Task doc:** [T06-docusaurus-deployment-fr-070.md](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T06-docusaurus-deployment-fr-070.md)  
 **FR:** [FR-070](../../project-management/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
 
 ## Summary

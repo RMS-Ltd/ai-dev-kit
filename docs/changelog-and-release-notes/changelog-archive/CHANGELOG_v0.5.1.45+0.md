@@ -26,7 +26,7 @@ title: "Changelog: v0.5.1.45+0"
 - Created feature request document for ADR-002 task-touch derived mapping:
   - `docs/project-management/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md`
 - Registered FR-045 in the FR repository story as `E5:S01:T45`:
-  - Updated `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md` checklist.
+  - Updated `docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md` checklist.
 
 No implementation work or code changes are included in this build; this release only establishes the canonical FR/Task anchor for ADR-002.
 

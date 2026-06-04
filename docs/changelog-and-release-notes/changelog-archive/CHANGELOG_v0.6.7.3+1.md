@@ -118,7 +118,7 @@ housekeeping_policy: archive
 - `cli/commands/status.py` - Status command implementation
 - `cli/commands/list.py` - List command implementation
 - `cli/main.py` - Command registration
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - Updated T03 status
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - Updated T03 status
 
 ---
 

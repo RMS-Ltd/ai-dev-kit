@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** INTAKE
 
-**Implementing Task:** [E01:S02:T14](../epics/Epic-1/Story-002-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)  
+**Implementing Task:** [E01:S02:T14](../epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)  
 **Historical registry:** E05:S01:T03
 
 ---
@@ -137,8 +137,8 @@ A project adopts ai-dev-kit and uses the README template. The project directly t
 - Version: `v0.7.4.1+2`
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-7/Epic-7.md`](../epics/Epic-7/Epic-7.md)
-- Story: [`docs/project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md`](../epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md)
+- Epic: [`docs/project-management/kanban/epics/epic-07/epic-07.md`](../epics/epic-07/epic-07.md)
+- Story: [`docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`](../epics/epic-07/story-04-readme-template-based-on-best-readme-template.md)
 
 ---
 
@@ -165,7 +165,7 @@ This FR reframes the approach from Story 4. Instead of ai-dev-kit tracking exter
 - [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 - [Keep a Changelog](https://keepachangelog.com/)
 - [Shields.io](https://shields.io/)
-- Story 4: [`docs/project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md`](../epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md)
+- Story 4: [`docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`](../epics/epic-07/story-04-readme-template-based-on-best-readme-template.md)
 
 ---
 

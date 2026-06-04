@@ -295,7 +295,7 @@ Contains: **Release Date:** 2025-12-01 16:51:30 UTC
 ```
 Version: 0.9.21.3+1
   ↓
-Epic 9 document: knowledge/fynd_deals/Kanban/Epic-9/Epic-9.md
+Epic 9 document: knowledge/fynd_deals/Kanban/epic-09/epic-09.md
   ↓
 Story 21 markers: Version references, commit hashes, workflow runs
 ```

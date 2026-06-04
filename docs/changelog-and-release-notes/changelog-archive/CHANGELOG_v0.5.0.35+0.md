@@ -20,7 +20,7 @@ This release creates task E5:S00:T35 for FR-035: Task Template Cross-Wiring Sect
 ### Added
 
 - **Task E5:S00:T35: Task Template Cross-Wiring Section (FR-035)**
-  - Created task document `docs/project-management/kanban/epics/Epic-5/Story-000-fr-repo/T35-task-template-cross-wiring-section.md`
+  - Created task document `docs/project-management/kanban/epics/epic-05/story-00-fr-repo/T35-task-template-cross-wiring-section.md`
   - Task assigned to Epic 5, Story 0 (FR Repo), Task 35
   - Version: v0.5.0.35+0 (doc-init release)
   - Priority: MEDIUM
@@ -76,11 +76,11 @@ This release creates task E5:S00:T35 for FR-035: Task Template Cross-Wiring Sect
 **Branch:** main
 
 **Files Changed:**
-- `docs/project-management/kanban/epics/Epic-5/Story-000-fr-repo/T35-task-template-cross-wiring-section.md` (created)
+- `docs/project-management/kanban/epics/epic-05/story-00-fr-repo/T35-task-template-cross-wiring-section.md` (created)
 - `docs/project-management/kanban/fr-br/FR-035-task-template-cross-wiring-section.md` (created)
 - `docs/architecture/standards-and-adrs/task-template-cross-wiring-sop.md` (created)
 - `docs/knowledge/guides/README.md` (created)
-- `docs/project-management/kanban/epics/Epic-5/Story-000-fr-repo.md` (updated)
+- `docs/project-management/kanban/epics/epic-05/story-00-fr-repo.md` (updated)
 - `src/fynd_deals/version.py` (updated)
 
 ---

@@ -32,7 +32,7 @@ This release completes **Task 6: Make .cursorrules abstract (remove hardcoded ve
   - Updated branch mapping examples to use generic patterns
   - Added note about template placeholders
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-alignment-with-versioning-framework.md`)
+- ✅ Updated **Story 001** (`story-01-dev-kit-alignment-with-versioning-framework.md`)
   - Marked Task 6 as complete in task checklist
   - Updated task details with completion status and summary
 
@@ -85,6 +85,6 @@ The cursorrules RW trigger section is now fully abstract and can be copied to ot
 
 - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` (abstracted all hardcoded references)
 - `packages/frameworks/workflow mgt/README.md` (updated with abstracted examples)
-- `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework.md` (updated)
+- `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework.md` (updated)
 - `src/fynd_deals/version.py` (version bumped to 0.3.1.6+1)
 

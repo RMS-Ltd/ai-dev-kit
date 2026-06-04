@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E04:S07:T01](../epics/Epic-4/Story-007-migration-support-and-installation-modes.md)
+**Implementing Task:** [E04:S07:T01](../epics/epic-04/story-07-migration-support-and-installation-modes.md)
 **GitHub Issue:** [#2](https://github.com/RMS-Ltd/ai-dev-kit/issues/2)
 
 ---
@@ -340,8 +340,8 @@ _No fix attempts yet. This is the initial bug report._
 - Version: `[TBD]`
 
 **Kanban Links:**
-- Epic: [`Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`Story-007-migration-support-and-installation-modes.md`](../epics/Epic-4/Story-007-migration-support-and-installation-modes.md) - TO BE CREATED
+- Epic: [`epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`story-07-migration-support-and-installation-modes.md`](../epics/epic-04/story-07-migration-support-and-installation-modes.md) - TO BE CREATED
 - Task: [TBD]
 
 ---

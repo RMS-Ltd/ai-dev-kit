@@ -87,4 +87,4 @@ This release completes the documentation and testing work for doc-init functiona
 - `docs/architecture/standards-and-adrs/doc-init-migration-guide.md`
 
 **Modified Files:**
-- `docs/project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md` (T07 completion)
+- `docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md` (T07 completion)

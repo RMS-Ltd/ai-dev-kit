@@ -78,25 +78,25 @@ This epic encompasses internationalization and localization for the {PROJECT_NAM
 
 **Brief Summary:** language selection at setup (mvp - uk/us english) for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-000-language-selection-at-setup-mvp-ukus-english.md`](Story-000-language-selection-at-setup-mvp-ukus-english.md)
+**Story Document:** [`story-00-language-selection-at-setup-mvp-ukus-english.md`](story-00-language-selection-at-setup-mvp-ukus-english.md)
 
 ### Story 1: Internationalization Infrastructure
 
 **Brief Summary:** internationalization infrastructure for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-internationalization-infrastructure.md`](Story-001-internationalization-infrastructure.md)
+**Story Document:** [`story-01-internationalization-infrastructure.md`](story-01-internationalization-infrastructure.md)
 
 ### Story 2: Translation and Localization
 
 **Brief Summary:** translation and localization for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-translation-and-localization.md`](Story-002-translation-and-localization.md)
+**Story Document:** [`story-02-translation-and-localization.md`](story-02-translation-and-localization.md)
 
 ### Story 3: Cultural Adaptation
 
 **Brief Summary:** cultural adaptation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-cultural-adaptation.md`](Story-003-cultural-adaptation.md)
+**Story Document:** [`story-03-cultural-adaptation.md`](story-03-cultural-adaptation.md)
 
 ---
 

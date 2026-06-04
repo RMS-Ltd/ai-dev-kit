@@ -92,7 +92,7 @@ This epic encompasses security measures, vulnerability management, and security 
 - Coordinates with Epic 11 (API & Backend) for API security
 - *Parallel Development Candidacy:* Safe (can coordinate with other epics)
 
-> Full story: `docs/project-management/kanban/epics/Epic-15/Story-001-security-infrastructure.md`
+> Full story: `docs/project-management/kanban/epics/epic-15/story-01-security-infrastructure.md`
 
 ---
 
@@ -128,7 +128,7 @@ This epic encompasses security measures, vulnerability management, and security 
 - Depends on Story 1 (Security Infrastructure)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 security foundation)
 
-> Full story: `docs/project-management/kanban/epics/Epic-15/Story-002-vulnerability-management.md`
+> Full story: `docs/project-management/kanban/epics/epic-15/story-02-vulnerability-management.md`
 
 ---
 
@@ -164,7 +164,7 @@ This epic encompasses security measures, vulnerability management, and security 
 - Depends on Story 2 (Vulnerability Management)
 - *Parallel Development Candidacy:* Blocked (requires Story 2 vulnerability management)
 
-> Full story: `docs/project-management/kanban/epics/Epic-15/Story-003-security-best-practices.md`
+> Full story: `docs/project-management/kanban/epics/epic-15/story-03-security-best-practices.md`
 
 ---
 

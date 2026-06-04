@@ -28,7 +28,7 @@
 ## Technical Details
 - Created `docs/architecture/standards-and-adrs/rw-pdca-integration-plan.md` - Comprehensive PDCA integration plan
 - Created `docs/architecture/standards-and-adrs/rw-changelog-commit-language-analysis.md` - Analysis of changelog and commit language patterns
-- Created Story 2 file: `docs/project-management/kanban/epics/Epic-2/stories/Story-002-pdca-integration-into-release-workflow.md`
+- Created Story 2 file: `docs/project-management/kanban/epics/epic-02/stories/story-02-pdca-integration-into-release-workflow.md`
 - Created 6 task files with detailed approaches and acceptance criteria
 - Updated Epic 2 story checklist to include Story 2
 

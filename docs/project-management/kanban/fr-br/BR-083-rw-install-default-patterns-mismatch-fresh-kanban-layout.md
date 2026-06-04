@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Status:** RESOLVED ✅ (fix **v0.6.9.12+2** + **BR-085** **v0.6.9.14+1**; verified **v0.6.9.14+2** — ExpensesTracker T03 replay 2026-06-03)  
 **GitHub Issue:** [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)  
 **Related:** [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) → [BR-084](BR-084-rw-install-mode-c-missing-task-doc-pattern.md) / **E06:S09:T13** (persisted YAML + `task_doc_pattern`) · [BR-085](BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) / **E06:S09:T14** (interactive story prompt loop)  
-**Implementing Task:** [E06:S09:T12](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md)  
+**Implementing Task:** [E06:S09:T12](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md)  
 **Created:** 2026-06-03  
 **Source:** Book dry-run T03 after `install_kanban_framework.py --mode fresh`; ADK `dev` @ `84efa7b`
 
@@ -28,7 +28,7 @@ RW installer mode C defaults (`epics/Epic-{epic}.md`, `epics/Epic-{epic}/stories
 
 ## Actual layout after fresh install
 
-- `docs/project-management/kanban/epics/Epic-1/Epic-1.md`
+- `docs/project-management/kanban/epics/epic-01/epic-01.md`
 - `docs/project-management/kanban/kboard.md`
 - (no `stories/` subfolder)
 

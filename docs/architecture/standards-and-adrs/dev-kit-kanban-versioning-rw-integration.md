@@ -105,7 +105,7 @@ forensic_marker: "✅ COMPLETE (v0.4.3.1+1)"
 - Task mapping: ✅ PASS (fixed in E4:S03:T02)
 - Version assignment: ✅ PASS
 
-**Reference:** `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-kanban-versioning-validation.md`
+**Reference:** `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T02-kanban-versioning-validation.md`
 
 ---
 
@@ -135,7 +135,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 - Task transition handling: ✅ PASS
 - EPIC/STORY progression: ⚠️ PARTIAL (not explicitly documented)
 
-**Reference:** `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T003-versioning-rw-validation.md`
+**Reference:** `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T03-versioning-rw-validation.md`
 
 ---
 
@@ -149,7 +149,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 
 **Dev-Kit Example:**
 ```markdown
-# Epic-4.md
+# epic-04.md
 **Last updated:** 2025-12-02 (v0.4.3.7+1 – Task 7 complete: Address RW → Kanban integration gaps)
 
 ## Story Checklist
@@ -164,8 +164,8 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 - Forensic marker format: ✅ PASS (after fixes)
 
 **Reference:** 
-- `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T004-rw-kanban-validation.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T007-gap-resolution-summary.md`
+- `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation.md`
+- `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T07-gap-resolution-summary.md`
 
 ---
 
@@ -226,13 +226,13 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 - Updates latest release callout (if present)
 
 **Step 8: RW Step 6 - Auto-update Kanban Docs**
-- Updates Epic-4.md header: `**Last updated:** 2025-12-02 (v0.4.3.5+1 – Task 5 complete: Create dev-kit integration guide)`
-- Updates Epic-4.md Story Checklist: `- [x] **E4:S03 – ...** - COMPLETE ✅ (v0.4.3.7+1)`
-- Updates Epic-4.md detailed Story section: Task 5 marked complete
-- Updates Story-003.md header: `**Last updated:** ...`, `**Version:** v0.4.3.5+1`
-- Updates Story-003.md Task Checklist: `- [x] **E4:S03:T05 – ...** ✅ COMPLETE (v0.4.3.5+1)`
-- Updates Story-003.md detailed Task section: `**Status:** ✅ **COMPLETE** (v0.4.3.5+1) - ...`
-- Updates Story-003.md footer: `_Last updated: ..._`
+- Updates epic-04.md header: `**Last updated:** 2025-12-02 (v0.4.3.5+1 – Task 5 complete: Create dev-kit integration guide)`
+- Updates epic-04.md Story Checklist: `- [x] **E4:S03 – ...** - COMPLETE ✅ (v0.4.3.7+1)`
+- Updates epic-04.md detailed Story section: Task 5 marked complete
+- Updates story-003.md header: `**Last updated:** ...`, `**Version:** v0.4.3.5+1`
+- Updates story-003.md Task Checklist: `- [x] **E4:S03:T05 – ...** ✅ COMPLETE (v0.4.3.5+1)`
+- Updates story-003.md detailed Task section: `**Status:** ✅ **COMPLETE** (v0.4.3.5+1) - ...`
+- Updates story-003.md footer: `_Last updated: ..._`
 
 **Step 9: RW Step 7 - Stage Files**
 - Runs `git add -A` to stage all modified files
@@ -356,10 +356,10 @@ All three integration points have been validated in dev-kit:
 - Forensic marker format: ✅ PASS
 
 **Reference Documents:**
-- T002: `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-kanban-versioning-validation.md`
-- T003: `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T003-versioning-rw-validation.md`
-- T004: `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T004-rw-kanban-validation.md`
-- T007: `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T007-gap-resolution-summary.md`
+- T002: `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T02-kanban-versioning-validation.md`
+- T003: `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T03-versioning-rw-validation.md`
+- T004: `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation.md`
+- T007: `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T07-gap-resolution-summary.md`
 
 ---
 

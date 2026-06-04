@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E4:S19:T06 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md`](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) **(E4:S19:T06)**  
+**Host Task:** [`T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) **(E4:S19:T06)**  
 **Planning for:** [UXR-008](../project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md), [FR-086](../project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md), [FR-073](../project-management/kanban/fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)  
 **Status:** Complete (Waves 1-5 implemented and published through `v0.4.19.6+5`)
 
@@ -56,7 +56,7 @@ This IPP absorbs and unifies the prior fragmented planning artifacts authored un
 | [`ICW-E4S19T05-specification.md`](ICW-E4S19T05-specification.md) | E4:S19:T05 (SUPERSEDED, pre-consolidation ICW set) | Folded into unified IPP per [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md) §7 ICW→IPW consolidation | §1, §2 |
 | [`ICW-E4S19T05-test-design.md`](ICW-E4S19T05-test-design.md) | E4:S19:T05 (SUPERSEDED) | Consolidated | §3 test design |
 | [`ICW-E4S19T05-implementation-plan.md`](ICW-E4S19T05-implementation-plan.md) | E4:S19:T05 (SUPERSEDED) | Consolidated and re-organized into wave plan | §4 implementation plan |
-| FR-073 governance prose (Phase B/C closure under [`E5:S01:T73`](../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)) | E5:S01:T73 (COMPLETE — historical anchor) | T73 retained for historical phases; AC3 (UKW/statistics pass) absorbed by T06 | §1.1 (RF5), §4 Wave 4 |
+| FR-073 governance prose (Phase B/C closure under [`E5:S01:T73`](../project-management/kanban/epics/epic-05/story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)) | E5:S01:T73 (COMPLETE — historical anchor) | T73 retained for historical phases; AC3 (UKW/statistics pass) absorbed by T06 | §1.1 (RF5), §4 Wave 4 |
 
 ---
 
@@ -201,14 +201,14 @@ The plan is organized as five sequential waves so each can be released atomicall
 
 ### 4.7 Files touched by Wave 1 (already published)
 
-- `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md` (new)
+- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md` (new)
 - `docs/implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md` (new)
 - `docs/implementation-cycles/IPP-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md` (new — canonical-prefix migration of legacy `IPW-E4S19T02-...md`)
-- `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`
+- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`
+- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md`
+- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md`
+- `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md`
+- `docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`
 - `docs/project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md`
 - `docs/project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md`
 - `docs/project-management/kanban/fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md`
@@ -239,10 +239,10 @@ Deliverable checks:
 
 ## References
 
-- [Host task E4:S19:T06](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
+- [Host task E4:S19:T06](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 - [UXR-008](../project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 - [FR-086](../project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
 - [FR-073](../project-management/kanban/fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
-- [T02](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md)
-- [T05](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
-- [T73](../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
+- [T02](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md)
+- [T05](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- [T73](../project-management/kanban/epics/epic-05/story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)

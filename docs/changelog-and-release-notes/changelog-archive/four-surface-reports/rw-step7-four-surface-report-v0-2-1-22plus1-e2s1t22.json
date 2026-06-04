@@ -4,18 +4,18 @@
       "changes": [],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/epic-02.md"
       ],
       "surface": "epic_doc",
       "touched": false
     },
     "story_doc": {
       "changes": [
-        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md"
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md"
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md"
       ],
       "surface": "story_doc",
       "touched": true
@@ -104,7 +104,7 @@
         "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
       ],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md"
       ],
       "surface": "task_doc",
       "touched": false

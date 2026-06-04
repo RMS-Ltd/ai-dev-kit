@@ -15,11 +15,11 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** COMPLETE (`v0.6.7.110+1` — `RW E06:S07:T110 --art`) — wired as Bucket-D6 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
 
-**Implementing Task:** [E06:S07:T110](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Implementing Task:** [E06:S07:T110](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 > **Predecessor of FR-092 (2026-04-27):** FR-076 expanded UKW to fbuboard scope with concurrency / drift controls. FR-092 (Wave 4) shares the divergence/drift framework and corpus-level normalization model. FR-076 remains valid as historical predecessor.
 
-**Related:** [FR-050](./FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md); [E06:S07:T108](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md); [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Related:** [FR-050](./FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md); [E06:S07:T108](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md); [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E04:S07:T02](../epics/Epic-4/Story-007-migration-support-and-installation-modes.md)
+**Implementing Task:** [E04:S07:T02](../epics/epic-04/story-07-migration-support-and-installation-modes.md)
 **GitHub Issue:** [#3](https://github.com/RMS-Ltd/ai-dev-kit/issues/3)
 
 ---
@@ -247,8 +247,8 @@ A project (dev-toolkit) has an existing Kanban structure with completed work. Th
 - Version: `[TBD]`
 
 **Kanban Links:**
-- Epic: [`Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`Story-007-migration-support-and-installation-modes.md`](../epics/Epic-4/Story-007-migration-support-and-installation-modes.md) - TO BE CREATED
+- Epic: [`epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`story-07-migration-support-and-installation-modes.md`](../epics/epic-04/story-07-migration-support-and-installation-modes.md) - TO BE CREATED
 - Task: [TBD]
 
 ---

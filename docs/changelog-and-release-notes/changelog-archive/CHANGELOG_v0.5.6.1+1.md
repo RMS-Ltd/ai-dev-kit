@@ -121,4 +121,4 @@ Agents can now:
 **Modified Files:**
 - `docs/architecture/standards-and-adrs/documentation-maintenance-policy.md`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-006-policy-documentation-structure.md`
+- `docs/project-management/kanban/epics/epic-05/story-06-policy-documentation-structure.md`

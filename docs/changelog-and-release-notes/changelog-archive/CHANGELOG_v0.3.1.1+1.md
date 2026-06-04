@@ -17,12 +17,12 @@ This release establishes **Epic 3: Numbering & Versioning Framework** and create
 
 ### Epic 3 Structure
 
-- ✅ Created **Epic 3: Numbering & Versioning Framework** (`docs/project-management/kanban/epics/Epic-3.md`)
+- ✅ Created **Epic 3: Numbering & Versioning Framework** (`docs/project-management/kanban/epics/epic-03.md`)
   - Owns `packages/frameworks/numbering & versioning/` package
   - Defines goals for dev-kit alignment, versioning cookbook, and Kanban/RW integration
   - Story checklist with 3 planned stories
 
-- ✅ Created **Story 1: Dev Kit Alignment with Versioning Framework** (`docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework.md`)
+- ✅ Created **Story 1: Dev Kit Alignment with Versioning Framework** (`docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework.md`)
   - Goal: Make dev-kit versioning policy the canonical SoT
   - 5 tasks defined:
     - T001: Review dev-kit versioning policy vs framework policy

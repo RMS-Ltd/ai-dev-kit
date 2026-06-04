@@ -12,7 +12,7 @@
 ## Changes
 - Marked Story 3 as COMPLETE (all 6 tasks finished)
 - Updated Epic 1 Story 3 status to COMPLETE
-- All KB structure tasks completed (T001-T006)
+- All KB structure tasks completed (T01-T006)
 
 ## Related Tasks
 - E1:S03:T001 – Analyze current docs/core structure ✅ COMPLETE (v0.1.3.1+1)

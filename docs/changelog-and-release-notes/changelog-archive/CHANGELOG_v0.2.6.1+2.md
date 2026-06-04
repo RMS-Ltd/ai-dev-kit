@@ -30,7 +30,7 @@ Full re-implementation of E2:S06:T01 to close the gap between the story document
 
 ### Documentation
 - **FR-008** — AC-1..AC-5 checkboxes checked. NFR-1..NFR-5 checkboxes checked. FR-1, FR-2, FR-5 checked.
-- **Story-006** — T01 status updated to `COMPLETE (v0.2.6.1+2 — re-implemented 2026-05-15)` with plan doc link.
+- **story-006** — T01 status updated to `COMPLETE (v0.2.6.1+2 — re-implemented 2026-05-15)` with plan doc link.
 - **kboard.md** — E2:S06:T01 moved from TODO to completed.
 - **kanban-completed.md** — E2:S06:T01 archived with forensic details.
 - **Plan doc** — `docs/implementation-cycles/IPP-E2S06T01-package-uninstall-reimplementation.md` created with bidirectional wiring.
@@ -50,6 +50,6 @@ Full re-implementation of E2:S06:T01 to close the gap between the story document
 ## References
 
 - FR-008: `docs/project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md`
-- Story-006: `docs/project-management/kanban/epics/Epic-2/Story-006-package-uninstall-and-recovery.md`
+- story-006: `docs/project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md`
 - Plan doc: `docs/implementation-cycles/IPP-E2S06T01-package-uninstall-reimplementation.md`
 - Implementation PR/commits: to be linked after push

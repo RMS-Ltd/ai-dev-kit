@@ -6,18 +6,18 @@
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/epic-02.md"
       ],
       "surface": "epic_doc",
       "touched": true
     },
     "story_doc": {
       "changes": [
-        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md"
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
       ],
       "surface": "story_doc",
       "touched": true
@@ -99,7 +99,7 @@
         "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
       ],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
       ],
       "surface": "task_doc",
       "touched": false

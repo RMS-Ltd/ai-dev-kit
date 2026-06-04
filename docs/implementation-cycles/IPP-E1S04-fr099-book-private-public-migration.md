@@ -10,18 +10,18 @@ housekeeping_policy: keep
 
 **Host program:** [FR-099 — Spin off book epic to a private repository](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Governing ADR:** [ADR-006 — Book project private repository spin-off](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)  
-**Story:** [Story 004 — Repository branding and renaming](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md)  
+**Story:** [Story 004 — Repository branding and renaming](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md)  
 **Status:** **Complete** — Phases 0–4 implemented; **FR-099** IMPLEMENTED (**v0.1.4.7+2**)
 
 **Phase tasks (shared IPP):**
 
 | Phase | Task | Doc | IPP § |
 |-------|------|-----|-------|
-| 0 | E1:S04:T03 | [T03](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | §4.1 |
-| 1 | E1:S04:T04 | [T04](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | §4.2 |
-| 2 | E1:S04:T05 | [T05](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | §4.3 |
-| 3 | E1:S04:T06 | [T06](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | §4.4 |
-| 4 | E1:S04:T07 | [T07](../project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | §4.5 |
+| 0 | E1:S04:T03 | [T03](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | §4.1 |
+| 1 | E1:S04:T04 | [T04](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | §4.2 |
+| 2 | E1:S04:T05 | [T05](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | §4.3 |
+| 3 | E1:S04:T06 | [T06](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | §4.4 |
+| 4 | E1:S04:T07 | [T07](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | §4.5 |
 
 **Cross-program:** [IPP-E6S09T06 §8 Wave E](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) — public-repo ECC validation **after** Phase 3.
 
@@ -36,7 +36,7 @@ housekeeping_policy: keep
 | RF3 | Private `hf-ai-dev-kit` with full history | FR-099-F3 | T04 |
 | RF4 | Book extraction genesis on private tree | FR-099-F4 | T05 |
 | RF5 | New public `RMS-Ltd/ai-dev-kit` from genesis | FR-099-F5 | T06 |
-| RF6 | Rewire URLs + install smoke (no Epic-24) | FR-099-F6 | T07 |
+| RF6 | Rewire URLs + install smoke (no epic-24) | FR-099-F6 | T07 |
 | RF7 | E1:S04:T02 SUPERSEDED | FR-099-F7 | T03 |
 
 | ID | Acceptance criterion | Phase |
@@ -74,7 +74,7 @@ housekeeping_policy: keep
 
 | ID | Phase | Verification |
 |----|-------|--------------|
-| T1 | 0–2 | Tree: no `docs/book-proj/`, no `Epic-24/` on `dev` |
+| T1 | 0–2 | Tree: no `docs/book-proj/`, no `epic-24/` on `dev` |
 | T2 | 3 | Public remote has no pre-genesis book objects |
 | T3 | 4 | Greenfield/brownfield install smoke (FR-080); RW/UKW validators |
 | T4 | 4 | Optional Wave E ECC on **public** clone ([IPP-E6S09T06 §8](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)) |

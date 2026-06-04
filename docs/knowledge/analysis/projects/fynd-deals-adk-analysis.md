@@ -70,7 +70,7 @@ housekeeping_policy: keep
 
 **Story Structure:** ⚠️ **DIVERGES**
 - Stories organized under Epic directories ✅
-- Story naming: `Story-XX-Description.md` (e.g., `Story-01-Foundation-Setup.md`)
+- Story naming: `Story-XX-Description.md` (e.g., `story-01-Foundation-Setup.md`)
 - **Difference:** Uses `Story-XX` format instead of `Story-XXX` (3-digit)
 - **Impact:** Minor - different naming convention
 
@@ -138,7 +138,7 @@ housekeeping_policy: keep
    - **Impact:** Minor - works but less flexible than ADK canonical
 
 3. **Story Naming Convention**
-   - **Issue:** Uses 2-digit story numbers (`Story-01`) vs ADK 3-digit (`Story-001`)
+   - **Issue:** Uses 2-digit story numbers (`story-001`) vs ADK 3-digit (`story-001`)
    - **Problem:** Inconsistent with ADK canonical
    - **Impact:** Minor - works but inconsistent
 

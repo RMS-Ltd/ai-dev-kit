@@ -27,18 +27,18 @@ Created Epic 5: Documentation Management and Maintenance with initial story stru
 
 ### 📚 Story Documents Created
 
-- `Story-001-documentation-maintenance-framework.md` - Framework for maintaining documentation
-- `Story-002-documentation-quality-assurance.md` - Quality assurance processes and tools
-- `Story-003-documentation-automation.md` - Automation of documentation maintenance
+- `story-01-documentation-maintenance-framework.md` - Framework for maintaining documentation
+- `story-02-documentation-quality-assurance.md` - Quality assurance processes and tools
+- `story-03-documentation-automation.md` - Automation of documentation maintenance
 
 ---
 
 ## Files Created
 
-- `docs/project-management/kanban/epics/Epic-5/Epic-5.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-002-documentation-quality-assurance.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-003-documentation-automation.md`
+- `docs/project-management/kanban/epics/epic-05/epic-05.md`
+- `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md`
+- `docs/project-management/kanban/epics/epic-05/story-02-documentation-quality-assurance.md`
+- `docs/project-management/kanban/epics/epic-05/story-03-documentation-automation.md`
 - `src/fynd_deals/version.py` (updated to v0.5.1.1+1)
 
 ---

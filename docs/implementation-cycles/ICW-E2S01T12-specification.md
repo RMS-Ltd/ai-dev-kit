@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E2:S01:T12  
 **Related BR:** BR-061  
-**Host Task:** [T12-rw-explicit-task-id-version-alignment-br061.md](../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T12-rw-explicit-task-id-version-alignment-br061.md)  
+**Host Task:** [T12-rw-explicit-task-id-version-alignment-br061.md](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T12-rw-explicit-task-id-version-alignment-br061.md)  
 **Created:** 2026-04-09
 
 ---

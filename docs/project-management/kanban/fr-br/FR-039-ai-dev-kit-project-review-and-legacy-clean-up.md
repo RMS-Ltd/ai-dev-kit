@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IN PROGRESS  
 
-**Implementing Task:** [E07:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)  
+**Implementing Task:** [E07:S01:T10](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)  
 **Historical registry:** E05:S01:T39
 **Assigned Task:** E05:S01:T39  
 **GitHub Issue:** [TBD]  

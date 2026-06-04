@@ -79,8 +79,8 @@ The Kanban Task naming policy has been updated to always use the full `Exx:Sxx:T
 - ✅ `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md`
 
 ### Examples
-- ✅ `packages/frameworks/kanban/examples/Story-33-Example.md`
-- ✅ `packages/frameworks/kanban/examples/Epic-4-Example.md`
+- ✅ `packages/frameworks/kanban/examples/story-33-Example.md`
+- ✅ `packages/frameworks/kanban/examples/epic-04-Example.md`
 - ✅ `packages/frameworks/kanban/integration/numbering-versioning-integration.md`
 - ✅ `packages/frameworks/kanban/README.md`
 - ✅ `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
@@ -117,9 +117,9 @@ The Kanban Task naming policy has been updated to always use the full `Exx:Sxx:T
 
 **Old:**
 ```
-T001-add-check-phase.md
-T002-add-act-phase.md
-T010-some-task.md
+T01-add-check-phase.md
+T02-add-act-phase.md
+T10-some-task.md
 ```
 
 **New:**
@@ -188,8 +188,8 @@ Release v0.2.2.1+1: E2:S02:T01: Add CHECK Phase
 - **Kanban Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **Versioning Policy:** `packages/frameworks/numbering & versioning/kanban-governance-policy.md`
 - **Dev-Kit Policy:** `docs/project-management/rituals/policy/kanban-governance-policy.md`
-- **Task T07:** `docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md`
-- **Task T08:** `docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md`
+- **Task T07:** `docs/project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md`
+- **Task T08:** `docs/project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md`
 
 ---
 

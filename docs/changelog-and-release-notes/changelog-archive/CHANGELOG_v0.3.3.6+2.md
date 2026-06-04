@@ -21,15 +21,15 @@ housekeeping_policy: keep
 ### Objectives
 - Mark Epic 3 as COMPLETE in all Kanban documentation
 - Update kanban-board.md to reflect Epic 3 completion
-- Update Epic-3.md status to COMPLETE
+- Update epic-03.md status to COMPLETE
 
 ### Expected Outcomes
-- Epic 3 marked as COMPLETE in Epic-3.md
+- Epic 3 marked as COMPLETE in epic-03.md
 - Epic 3 marked as COMPLETE in kanban-board.md
 - All 3 stories shown as COMPLETE in kanban-board.md
 
 ### Verification Plan
-- Verify Epic-3.md shows Status: COMPLETE ✅
+- Verify epic-03.md shows Status: COMPLETE ✅
 - Verify kanban-board.md shows Epic 3 as COMPLETE ✅
 - Verify all 3 stories are marked complete in kanban-board.md
 
@@ -40,7 +40,7 @@ housekeeping_policy: keep
 ### Changed
 
 - **Epic 3 Status Update** - Marked Epic 3 as COMPLETE in all Kanban documentation
-  - Updated `docs/project-management/kanban/epics/Epic-3.md`:
+  - Updated `docs/project-management/kanban/epics/epic-03.md`:
     - Status changed from TODO to COMPLETE ✅
     - Added Completed date: 2025-12-05
     - Updated last updated message to reflect Epic 3 completion
@@ -61,7 +61,7 @@ Epic 3: Numbering & Versioning Framework is now **COMPLETE** with all 3 stories 
 ## Technical Details
 
 ### Files Modified
-- `docs/project-management/kanban/epics/Epic-3.md` - Marked Epic 3 as COMPLETE
+- `docs/project-management/kanban/epics/epic-03.md` - Marked Epic 3 as COMPLETE
 - `docs/project-management/kanban/kanban-board.md` - Updated Epic 3 status and all stories
 
 ### Version Information

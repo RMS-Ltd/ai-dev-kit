@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E06:S09:T09 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T09-kanban-fresh-mode-validation-br080.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) **(E06:S09:T09)**  
+**Host Task:** [`T09-kanban-fresh-mode-validation-br080.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) **(E06:S09:T09)**  
 **Planning for:** [BR-080](../project-management/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) · [GitHub #12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)  
 **Status:** Approved (planning complete — **HIGH** greenfield blocker; await implementation authorization)
 

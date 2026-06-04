@@ -29,7 +29,7 @@ This release completes **Task 3: Update dev-kit versioning policy as canonical S
   - Added Section 15: Comprehensive References
   - Updated status from "Draft" to "Active"
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-alignment-with-versioning-framework.md`)
+- ✅ Updated **Story 001** (`story-01-dev-kit-alignment-with-versioning-framework.md`)
   - Marked Task 3 as complete in task checklist
   - Updated task details with completion status and summary
 
@@ -77,6 +77,6 @@ The dev-kit versioning policy is now comprehensive and fully aligned with the fr
 ## 📄 Files Changed
 
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (comprehensively enhanced)
-- `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework.md` (updated)
+- `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework.md` (updated)
 - `src/fynd_deals/version.py` (version bumped to 0.3.1.3+1)
 

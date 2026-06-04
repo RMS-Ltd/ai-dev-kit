@@ -3,7 +3,7 @@
     "epic_doc": {
       "changes": [],
       "notes": ["Epic 2 doc not version-stamped this release."],
-      "paths": ["/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md"],
+      "paths": ["/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/epic-02.md"],
       "surface": "epic_doc",
       "touched": false
     },
@@ -14,7 +14,7 @@
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
       ],
       "surface": "story_doc",
       "touched": true
@@ -73,7 +73,7 @@
       "changes": ["T17 COMPLETE all AC; IPP/ADR/manifest links"],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md"
       ],
       "surface": "task_doc",
       "touched": true

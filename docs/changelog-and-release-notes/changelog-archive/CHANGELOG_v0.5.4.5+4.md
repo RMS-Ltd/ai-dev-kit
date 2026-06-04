@@ -97,7 +97,7 @@ Created comprehensive use cases guide documenting all 12 adoption patterns for a
 - `docs/documentation/user-docs/framework-dependency-installation-guide.md` - Enhanced with use cases section
 - `docs/documentation/user-docs/framework-dependency-faq.md` - Enhanced with use case questions
 - `README.md` - Added link to Use Cases Guide
-- `docs/project-management/kanban/epics/Epic-5/Story-004-framework-documentation-management.md` - T07 task added, version updated
+- `docs/project-management/kanban/epics/epic-05/story-04-framework-documentation-management.md` - T07 task added, version updated
 - `src/fynd_deals/version.py` - Version bumped to `0.5.4.5+4`
 - `CHANGELOG.md` - Added entry for v0.5.4.5+4
 

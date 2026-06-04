@@ -78,19 +78,19 @@ This epic encompasses deployment and devops for the {PROJECT_NAME} project. It p
 
 **Brief Summary:** deployment pipeline setup for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-deployment-pipeline-setup.md`](Story-001-deployment-pipeline-setup.md)
+**Story Document:** [`story-01-deployment-pipeline-setup.md`](story-01-deployment-pipeline-setup.md)
 
 ### Story 2: Infrastructure Setup
 
 **Brief Summary:** infrastructure setup for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-infrastructure-setup.md`](Story-002-infrastructure-setup.md)
+**Story Document:** [`story-02-infrastructure-setup.md`](story-02-infrastructure-setup.md)
 
 ### Story 3: Monitoring and Logging
 
 **Brief Summary:** monitoring and logging for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-monitoring-and-logging.md`](Story-003-monitoring-and-logging.md)
+**Story Document:** [`story-03-monitoring-and-logging.md`](story-03-monitoring-and-logging.md)
 
 ---
 

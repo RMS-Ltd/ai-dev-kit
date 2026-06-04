@@ -13,14 +13,14 @@
 ### Removed (public genesis tree)
 
 - **`docs/book-proj/`** — 8 manuscript / proposal files
-- **`docs/project-management/kanban/epics/Epic-24/`** — full book epic, stories, and task docs
+- **`docs/project-management/kanban/epics/epic-24/`** — full book epic, stories, and task docs
 
 ### Kanban / boards
 
 - **`kboard.md`** — removed E24 task rows; Epic 24 note replaced with private-repo pointer
 - **`_index.md`**, **`kanban-structure.md`** — Epic 24 section removed
 - **`kanban-completed.md`** — E24 completion entries archived (pointer to private repo)
-- **`KB-INDEX.md`** — Epic-24 index rows removed
+- **`KB-INDEX.md`** — epic-24 index rows removed
 
 ### Public narrative (de-Head-First)
 
@@ -42,5 +42,5 @@
 
 ## Verification
 
-- Tree has no `docs/book-proj/` or `Epic-24/` on default branch after commit
+- Tree has no `docs/book-proj/` or `epic-24/` on default branch after commit
 - `git branch book/epic-24` points at pre-extraction commit with full book tree

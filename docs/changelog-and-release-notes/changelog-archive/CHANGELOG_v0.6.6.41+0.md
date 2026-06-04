@@ -94,7 +94,7 @@ Investigate and implement AGENTS.md and SKILL.md to define specialized workflow 
 #### Files Created
 
 - `docs/project-management/kanban/fr-br/FR-041-windsurf-investigate-agents-skills-for-workflows.md` - Feature request document
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T41-windsurf-investigate-agents-skills-for-workflows.md` - Task document
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T41-windsurf-investigate-agents-skills-for-workflows.md` - Task document
 - Updated `docs/project-management/kanban/kanban-board.md` - Added task to CRITICAL priority section
 
 #### Success Criteria

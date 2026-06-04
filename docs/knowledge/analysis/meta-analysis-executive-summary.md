@@ -42,7 +42,7 @@ This document synthesizes findings from **comprehensive analysis of 10 projects*
 ### 1.1 Epic Structure
 
 **Naming:**
-- **Canonical:** `Epic-\{N\}` (hyphen, e.g., `Epic-1`, `Epic-9`)
+- **Canonical:** `Epic-\{N\}` (hyphen, e.g., `epic-01`, `epic-09`)
 - **Legacy Support:** `Epic \{N\}` (space), `E\{N\}` (abbreviated)
 - **Rationale:** 40% convergence on hyphen format, but support legacy formats for migration
 
@@ -63,7 +63,7 @@ This document synthesizes findings from **comprehensive analysis of 10 projects*
 ### 1.2 Story Structure
 
 **Naming:**
-- **Canonical:** `Story-{NNN}-\{description\}` (3-digit padding, e.g., `Story-001-project-setup.md`)
+- **Canonical:** `Story-{NNN}-\{description\}` (3-digit padding, e.g., `story-01-project-setup.md`)
 - **Legacy Support:** `Story \{N\}` (space), `S\{N\}` (abbreviated)
 - **Rationale:** 30% convergence on canonical format, but support legacy for migration
 

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** PENDING
 
-**Implementing Task:** [E21:S00:T01](../epics/Epic-21/Story-000-language-selection-at-setup.md)
+**Implementing Task:** [E21:S00:T01](../epics/epic-21/story-00-language-selection-at-setup.md)
 
 ---
 
@@ -465,8 +465,8 @@ Use standard i18n approach:
 - Version: `v0.21.1.1+1` (to be assigned when Epic 21 is created)
 
 **Kanban Links:**
-- Epic: [To be created: `docs/project-management/kanban/epics/Epic-21/Epic-21.md`]
-- Story: [To be created: `docs/project-management/kanban/epics/Epic-21/Story-001-internationalization-infrastructure.md`]
+- Epic: [To be created: `docs/project-management/kanban/epics/epic-21/epic-21.md`]
+- Story: [To be created: `docs/project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md`]
 - Task: [To be created in Story document]
 
 ---

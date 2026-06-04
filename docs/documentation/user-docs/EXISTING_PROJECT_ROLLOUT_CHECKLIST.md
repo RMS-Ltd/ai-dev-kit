@@ -98,7 +98,7 @@ git checkout -b epic/1-test
 
 # Test Kanban installer worked
 ls docs/project-management/kanban/epics/
-# Should show: Epic-1, Epic-2, Epic-3, Epic-4, Epic-5, Epic-6, Epic-7, Epic-8, Epic-10, Epic-18, Epic-22, Epic-23
+# Should show: epic-01, epic-02, epic-03, epic-04, epic-05, epic-06, epic-07, epic-08, epic-10, epic-18, epic-22, epic-23
 ```
 
 ### Step 6: Review Configuration
@@ -167,7 +167,7 @@ python3 scripts/install_kanban_framework.py --mode fresh
 ls docs/project-management/kanban/epics/
 
 # Check Epic 1 is contextualized with your project name
-grep "Epic 1:" docs/project-management/kanban/epics/Epic-1/Epic-1.md
+grep "Epic 1:" docs/project-management/kanban/epics/epic-01/epic-01.md
 ```
 
 ---

@@ -58,6 +58,6 @@
 
 ## References
 
-- **Task:** [T07-canonical-rw-ukw-kanban-consistency-program-fr092.md](docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
+- **Task:** [T07-canonical-rw-ukw-kanban-consistency-program-fr092.md](docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
 - **FR:** [FR-092](docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 - **IPP:** [IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md](docs/implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)

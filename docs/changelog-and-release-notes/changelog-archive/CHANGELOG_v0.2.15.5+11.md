@@ -18,6 +18,6 @@
 
 ## References
 
-- **Task:** [T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md](docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md)
+- **Task:** [T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md](docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md)
 - **FR:** [FR-090](docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
 - **IPP:** [IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md](docs/implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)

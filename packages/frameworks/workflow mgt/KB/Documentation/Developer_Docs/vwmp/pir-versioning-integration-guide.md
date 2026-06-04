@@ -36,12 +36,12 @@ This guide documents the integration between the Post-Implementation Review (PIR
 
 **Epic-Level PIR:**
 - Format: `PIR-Epic-{N}-v{version}.md`
-- Example: `PIR-Epic-2-v0.2.11.9+3.md`
+- Example: `PIR-epic-02-v0.2.11.9+3.md`
 - Version: Last version in Epic (when Epic marked COMPLETE)
 
 **Story-Level PIR:**
 - Format: `PIR-Story-{N}-v{version}.md`
-- Example: `PIR-Story-5-v0.2.5.11+1.md`
+- Example: `PIR-story-05-v0.2.5.11+1.md`
 - Version: Last version in Story (when Story marked COMPLETE)
 
 ### 3. Version References in PIR Reports
@@ -85,13 +85,13 @@ pir_version = story_last_version
 **Epic-Level:**
 ```python
 pir_report_name = f"PIR-Epic-{epic}-v{pir_version}.md"
-# Example: PIR-Epic-2-v0.2.11.9+3.md
+# Example: PIR-epic-02-v0.2.11.9+3.md
 ```
 
 **Story-Level:**
 ```python
 pir_report_name = f"PIR-Story-{story}-v{pir_version}.md"
-# Example: PIR-Story-5-v0.2.5.11+1.md
+# Example: PIR-story-05-v0.2.5.11+1.md
 ```
 
 ### Step 3: Include Version in PIR Report
@@ -193,7 +193,7 @@ pir_version = story_version
 **Epic:** Epic 2 - Workflow Management Framework  
 **Stories:** Stories 1-11  
 **Version Range:** `v0.2.1.1+1` to `v0.2.11.9+3`  
-**PIR Report:** `PIR-Epic-2-v0.2.11.9+3.md`
+**PIR Report:** `PIR-epic-02-v0.2.11.9+3.md`
 
 **PIR Report Header:**
 ```markdown
@@ -225,7 +225,7 @@ pir_version = story_version
 **Story:** Story 5 - Post-Implementation Review Workflow  
 **Epic:** Epic 2  
 **Version:** `v0.2.5.11+1`  
-**PIR Report:** `PIR-Story-5-v0.2.5.11+1.md`
+**PIR Report:** `PIR-story-05-v0.2.5.11+1.md`
 
 **PIR Report Header:**
 ```markdown

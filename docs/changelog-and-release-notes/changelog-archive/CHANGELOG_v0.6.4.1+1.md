@@ -38,13 +38,13 @@ Fixed a critical bug in the RW installer script where it was looking for the `cu
 ### Framework Management
 
 #### Bug Reports Story Created
-- **File:** `docs/project-management/kanban/epics/Epic-6/Story-004-bug-reports.md`
+- **File:** `docs/project-management/kanban/epics/epic-06/story-04-bug-reports.md`
 - **Purpose:** Track all bug reports and bug fixes related to framework management
 - **Status:** IN PROGRESS
 - **First Task:** E6:S04:T01 - Fix RW installer template path bug (COMPLETE)
 
 #### Feature Requests Story Created
-- **File:** `docs/project-management/kanban/epics/Epic-6/Story-005-feature-requests.md`
+- **File:** `docs/project-management/kanban/epics/epic-06/story-05-feature-requests.md`
 - **Purpose:** Track all feature requests related to framework management
 - **Status:** TODO
 - **Ready for:** Future feature requests to be converted to tasks
@@ -52,7 +52,7 @@ Fixed a critical bug in the RW installer script where it was looking for the `cu
 ### Kanban Updates
 
 #### Epic 6 Structure Updates
-- **File:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+- **File:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
 - **Changes:**
   - Added Story 4: Bug Reports (IN PROGRESS)
   - Added Story 5: Feature Requests (TODO)
@@ -60,7 +60,7 @@ Fixed a critical bug in the RW installer script where it was looking for the `cu
   - Updated last updated timestamp
 
 #### Story 2 Cleanup
-- **File:** `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md`
+- **File:** `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
 - **Changes:**
   - Removed bug fix task (E6:S02:T06) - moved to Story 4
   - Cleaned up task checklist
@@ -88,12 +88,12 @@ Fixed a critical bug in the RW installer script where it was looking for the `cu
 
 ### Files Modified
 - `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md`
+- `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
 
 ### Files Created
-- `docs/project-management/kanban/epics/Epic-6/Story-004-bug-reports.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-005-feature-requests.md`
+- `docs/project-management/kanban/epics/epic-06/story-04-bug-reports.md`
+- `docs/project-management/kanban/epics/epic-06/story-05-feature-requests.md`
 
 ### Code Changes
 ```python

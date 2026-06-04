@@ -46,4 +46,4 @@ E02:S16:T06 (FR-085) — Change implemented: optional standalone UKW `--rp` (ReP
 ## References
 
 - [FR-085](../../project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
-- [T06 task doc](../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
+- [T06 task doc](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)

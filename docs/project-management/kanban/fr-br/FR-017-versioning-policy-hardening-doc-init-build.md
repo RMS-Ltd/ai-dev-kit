@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E02:S10:T00](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
+**Implementing Task:** [E02:S10:T00](../epics/epic-02/story-10-doc-init-build-zero-for-new-est.md)
 
 ---
 
@@ -180,8 +180,8 @@ This feature is needed:
 - Version: `v0.2.10.0+0` (Story creation)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`docs/project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md`](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md`](../epics/epic-02/story-10-doc-init-build-zero-for-new-est.md)
 - Task: See Story 10 task checklist
 
 **Note:** This story is blocked by FR-016 (requires discrete Task docs first). Implementation should begin after FR-016 completion.

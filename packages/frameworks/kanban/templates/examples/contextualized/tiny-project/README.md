@@ -31,7 +31,7 @@
 
 ## Example: Epic 1 Contextualized
 
-See `Epic-1.md` for the contextualized version of Epic 1 with all placeholders replaced.
+See `epic-01.md` for the contextualized version of Epic 1 with all placeholders replaced.
 
 ## Notes
 

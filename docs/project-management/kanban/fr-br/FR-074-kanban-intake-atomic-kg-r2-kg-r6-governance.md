@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IMPLEMENTED  
 
-**Implementing Task:** [E05:S01:T74](../epics/Epic-5/Story-001-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
+**Implementing Task:** [E05:S01:T74](../epics/epic-05/story-01-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
 
 ---
 
@@ -75,6 +75,6 @@ Orphan `fr-br/*.md` files and inconsistent intake order produced board drift and
 
 **Kanban Links:**
 
-- Epic: [`Epic-5.md`](../epics/Epic-5/Epic-5.md)  
-- Story: [`Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md)  
-- Task: [`T74`](../epics/Epic-5/Story-001-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
+- Epic: [`epic-05.md`](../epics/epic-05/epic-05.md)  
+- Story: [`story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md)  
+- Task: [`T74`](../epics/epic-05/story-01-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md)

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** IMPLEMENTED (2026-05-29 — E06:S09:T02)
 
-**Implementing Task:** [E06:S09:T02](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
+**Implementing Task:** [E06:S09:T02](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
 
 ---
 

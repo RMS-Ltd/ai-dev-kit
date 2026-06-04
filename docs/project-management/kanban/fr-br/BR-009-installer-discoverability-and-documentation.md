@@ -51,7 +51,7 @@ The interactive installation process (`install_kanban_framework.py`) exists but 
   5. Customizes the Kanban structure for the consuming project's needs
 
 - Installation results in:
-  - Canonical epic templates (Epic-1-Project-Core.md, etc.) available for reference
+  - Canonical epic templates (epic-01-Project-Core.md, etc.) available for reference
   - **Empty epic directories** ready for the project to create their own epics
   - Project-specific customization based on interactive prompts
 
@@ -59,7 +59,7 @@ The interactive installation process (`install_kanban_framework.py`) exists but 
 **Actual Behavior:**
 - Users manually copy files: `cp -r packages/frameworks/ai-dev-kit/docs/project-management/kanban/epics/* docs/project-management/kanban/epics/`
 - Receive direct copy of ai-dev-kit's actual Kanban board
-- Get ai-dev-kit's project-specific epics (Epic-1: AI Dev Kit Core, Epic-2: Workflow Management Framework, etc.)
+- Get ai-dev-kit's project-specific epics (epic-01: AI Dev Kit Core, epic-02: Workflow Management Framework, etc.)
 - Get ai-dev-kit's actual stories and tasks with their specific content
 - No interactive installation process executed
 - No customization for consuming project

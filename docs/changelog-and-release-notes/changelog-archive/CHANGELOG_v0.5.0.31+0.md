@@ -32,7 +32,7 @@ housekeeping_policy: keep
    - **Source Material:** Based on Cursor's research blog post on scaling long-running autonomous coding agents
 
 2. **Created Task Document E5:S00:T31**
-   - Document: `docs/project-management/kanban/epics/Epic-5/Story-000-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md`
+   - Document: `docs/project-management/kanban/epics/epic-05/story-00-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md`
    - **Task ID:** E5:S00:T31
    - **Status:** TODO
    - **Priority:** C (Could Have)
@@ -121,16 +121,16 @@ housekeeping_policy: keep
 - [FR-031: Multi-Agent Coordination Feasibility Investigation](../../project-management/kanban/fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md)
 
 **Task:**
-- [E5:S00:T31: Multi-Agent Coordination Feasibility Investigation](../../project-management/kanban/epics/Epic-5/Story-000-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)
+- [E5:S00:T31: Multi-Agent Coordination Feasibility Investigation](../../project-management/kanban/epics/epic-05/story-00-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)
 
 **Source Material:**
 - [Scaling long-running autonomous coding](../../knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md) - Cursor blog post
 
 **Epic:**
-- [Epic 5: Documentation Management and Maintenance](../../project-management/kanban/epics/Epic-5/Epic-5.md)
+- [Epic 5: Documentation Management and Maintenance](../../project-management/kanban/epics/epic-05/epic-05.md)
 
 **Story:**
-- [Story 0: FR Repo (PERPETUAL)](../../project-management/kanban/epics/Epic-5/Story-000-fr-repo.md)
+- [Story 0: FR Repo (PERPETUAL)](../../project-management/kanban/epics/epic-05/story-00-fr-repo.md)
 
 ---
 

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Version:** v0.2.8.8+3  
 
-**Implementing Task:** [E02:S08:T08](../epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md)
+**Implementing Task:** [E02:S08:T08](../epics/epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md)
 **Priority:** HIGH  
 **Created:** 2026-03-17  
 **Last Updated:** 2026-05-30  

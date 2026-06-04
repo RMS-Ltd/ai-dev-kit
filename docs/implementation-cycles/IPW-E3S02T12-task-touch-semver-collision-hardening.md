@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E3:S02:T12 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T12-implement-task-touch-semver-mapping-mode.md`](../project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) **(E3:S02:T12)**  
-**Cross-Task Interaction:** [`T46-rw-semver-tag-task-touch-mode.md`](../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md) **(E5:S01:T46)**  
+**Host Task:** [`T12-implement-task-touch-semver-mapping-mode.md`](../project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) **(E3:S02:T12)**  
+**Cross-Task Interaction:** [`T46-rw-semver-tag-task-touch-mode.md`](../project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md) **(E5:S01:T46)**  
 **Planning for:** [BR-061](../project-management/kanban/fr-br/BR-061-semver-task-touch-counter-increments-too-often.md), [FR-046](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)  
 **Status:** Draft
 
@@ -83,8 +83,8 @@ Eliminate high-frequency task-touch SemVer collisions by making conversion idemp
 - `packages/frameworks/workflow mgt/scripts/version/semver_converter.py`
 - `semver-registry.yaml` (schema-safe evolution if required)
 - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` (if finalize boundary checks required)
-- `docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md`
+- `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md`
+- `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md`
 - `docs/project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`
 - Versioning/RW docs under `packages/frameworks/workflow mgt/docs/` as needed
 
@@ -111,7 +111,7 @@ Eliminate high-frequency task-touch SemVer collisions by making conversion idemp
 
 ## References
 
-- [Host Task E3:S02:T12](../project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
-- [Cross-task E5:S01:T46](../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
+- [Host Task E3:S02:T12](../project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
+- [Cross-task E5:S01:T46](../project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
 - [BR-061](../project-management/kanban/fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)
 - [FR-046](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)

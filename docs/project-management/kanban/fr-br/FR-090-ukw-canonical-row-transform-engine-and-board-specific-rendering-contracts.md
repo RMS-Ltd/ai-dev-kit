@@ -17,8 +17,8 @@ housekeeping_policy: keep
 **Status:** SUPERSEDED by [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
 
 **Superseded by:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
-**Implementing Task (current):** [E02:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) (FR-092 meta)  
-**Implementing Task (historical):** [E02:S15:T05](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md) (SUPERSEDED)
+**Implementing Task (current):** [E02:S15:T07](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) (FR-092 meta)  
+**Implementing Task (historical):** [E02:S15:T05](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md) (SUPERSEDED)
 
 **Primary driver:** [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
 **Analysis basis:** [IPP-E02S15T04](../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
@@ -135,4 +135,4 @@ RW and UKW must remain cohesive within their own domains while staying loosely c
 - [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [FR-089](./FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [IPP-E02S15T04](../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
-- [T04 (E02:S15:T04)](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
+- [T04 (E02:S15:T04)](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)

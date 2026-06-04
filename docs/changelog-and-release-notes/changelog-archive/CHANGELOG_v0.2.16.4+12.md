@@ -43,5 +43,5 @@ Kanban/FBU documentation release: **FR-098** reprioritized to **Must Have (M)** 
 
 ## References
 
-- Perpetual UKW task: `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
+- Perpetual UKW task: `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
 - FR-098: `docs/project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md`

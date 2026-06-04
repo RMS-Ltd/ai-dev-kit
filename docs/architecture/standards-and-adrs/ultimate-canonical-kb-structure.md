@@ -168,8 +168,8 @@ docs/
 │   └── kanban/
 │       ├── README.md
 │       └── epics/
-│           ├── Epic-1/
-│           └── Epic-6/
+│           ├── epic-01/
+│           └── epic-06/
 ├── guides/
 │   ├── README.md
 │   └── getting-started.md
@@ -289,7 +289,7 @@ docs/
 
 **Examples:**
 - `[Architecture Decision Record](Architecture/ADRs/ADR-001.md)`
-- `[Epic 1 Overview](project-management/kanban/epics/Epic-1/Epic-1.md)`
+- `[Epic 1 Overview](project-management/kanban/epics/epic-01/epic-01.md)`
 - `[Getting Started Guide](Guides/getting-started.md)`
 
 ### 5.2 Obsidian Support (Optional)

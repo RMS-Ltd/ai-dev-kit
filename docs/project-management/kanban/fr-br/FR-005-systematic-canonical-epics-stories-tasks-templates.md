@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-09  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** IMPLEMENTED — closure **v0.4.6.1+1** (`RW E04:S06:T01`, `--art`; Story-006 T00–T10 corpus; FR-005-R5 deferred)
+**Status:** IMPLEMENTED — closure **v0.4.6.1+1** (`RW E04:S06:T01`, `--art`; story-006 T00–T10 corpus; FR-005-R5 deferred)
 
-**Implementing Task:** [E04:S06:T01 — FR-005 closure](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)  
+**Implementing Task:** [E04:S06:T01 — FR-005 closure](../epics/epic-04/story-06-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)  
 **Planning (IPW):** [IPP-E04S06T01](../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md)
 
 ---
@@ -59,20 +59,20 @@ A complete, systematic template system that defines abstract canonical epics, st
 
 ### Functional Requirements
 
-- [x] **FR-005-R1:** Complete template set for all canonical epics (1-7) — Story-006 T01–T02; 21 epic templates
+- [x] **FR-005-R1:** Complete template set for all canonical epics (1-7) — story-006 T01–T02; 21 epic templates
   - Each epic template includes: purpose, scope, key characteristics, typical stories
   - Templates use placeholders for contextualization (e.g., `\{PROJECT_NAME\} Core`)
   - Templates stored in `packages/frameworks/kanban/templates/epics/`
 
 
-- [x] **FR-005-R2:** Complete template set for canonical stories — Story-006 T03
+- [x] **FR-005-R2:** Complete template set for canonical stories — story-006 T03
   - Stories defined for each canonical epic
   - Story templates include: purpose, typical tasks, key deliverables, integration points
   - Templates use placeholders for contextualization
   - Templates stored in `packages/frameworks/kanban/templates/stories/`
 
 
-- [x] **FR-005-R3:** Complete template set for canonical tasks — Story-006 T04 (378 templates; validator PASS)
+- [x] **FR-005-R3:** Complete template set for canonical tasks — story-006 T04 (378 templates; validator PASS)
   - Tasks defined for each canonical story
   - Task templates include: input, deliverable, approach, acceptance criteria
   - Templates use placeholders for contextualization
@@ -86,7 +86,7 @@ A complete, systematic template system that defines abstract canonical epics, st
 
 
 - [ ] **FR-005-R5:** Systematic canonical addition process — **DEFERRED** (closure v0.4.6.1+1)
-  - Interim: `CANONICAL_EPICS.md` § document pattern + Story-006 T06; follow-up FR/task for standalone `CANONICAL_ADDITION_PROCESS.md`
+  - Interim: `CANONICAL_EPICS.md` § document pattern + story-006 T06; follow-up FR/task for standalone `CANONICAL_ADDITION_PROCESS.md`
 
 
 - [x] **FR-005-R6:** Template documentation and usage guide — contextualization guide + setup/install docs (T07)
@@ -262,8 +262,8 @@ A developer starts a new project using ai-dev-kit as a template:
 - Version: `v0.4.6.0+1`
 
 **Kanban Links:**
-- Epic: [`Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`Story-006-comprehensive-canonical-est-template-system.md`](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
+- Epic: [`epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`story-06-comprehensive-canonical-est-template-system.md`](../epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
 - Task: Task 0 in Story 6 document
 
 ---
@@ -294,7 +294,7 @@ A developer starts a new project using ai-dev-kit as a template:
 - `docs/project-management/kanban/fr-br/BR-004-kanban-installation-includes-project-specific-epics.md` - Related bug report
 - `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md` - Epic template structure
 - `packages/frameworks/kanban/templates/STORY_TEMPLATE.md` - Story template structure
-- `docs/project-management/kanban/epics/Epic-4/Story-005-canonical-epics-for-kanban-framework.md` - Previous canonical epic work
+- `docs/project-management/kanban/epics/epic-04/story-05-canonical-epics-for-kanban-framework.md` - Previous canonical epic work
 
 ---
 

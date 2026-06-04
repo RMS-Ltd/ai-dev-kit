@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E02:S06:T01](../epics/Epic-2/Story-006-package-uninstall-and-recovery.md)
+**Implementing Task:** [E02:S06:T01](../epics/epic-02/story-06-package-uninstall-and-recovery.md)
 **GitHub Issue:** [#5](https://github.com/RMS-Ltd/ai-dev-kit/issues/5)
 
 ---
@@ -268,7 +268,7 @@ A project wants to switch from Git submodule to npm package manager. User needs 
 - Version: `[TBD]`
 
 **Kanban Links:**
-- Epic: [`Epic-2.md`](../epics/Epic-2/Epic-2.md)
+- Epic: [`epic-02.md`](../epics/epic-02/epic-02.md)
 - Story: [TBD]
 - Task: [TBD]
 

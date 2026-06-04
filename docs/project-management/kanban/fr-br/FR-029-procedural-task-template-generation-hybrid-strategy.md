@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Type:** Feature Request  
 **Status:** Proposed  
 
-**Implementing Task:** [E04:S15:T05](../epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md)
+**Implementing Task:** [E04:S15:T05](../epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md)
 **Priority:** HIGH  
 **Requested By:** ai-dev-kit maintainers  
 **Related Epic(s):** E4 (Kanban Framework), E6 (Framework Management and Maintenance)  
@@ -136,7 +136,7 @@ A hybrid approach addresses these issues by:
 
 ## Related Work
 
-- **Story:** `docs/project-management/kanban/epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md`
+- **Story:** `docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md`
 - **ADR:** `docs/architecture/standards-and-adrs/task-template-system-hybrid-adr.md`
 - **Existing Work:**
   - E4:S06 – Comprehensive Canonical Epics/Stories/Tasks Template System.

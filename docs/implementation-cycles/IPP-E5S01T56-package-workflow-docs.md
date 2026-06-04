@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E5:S01:T56 — Planning: Standardize Packaged Workflow Documentation and Instructions
 
-**Host Task:** [`T56-standardize-packaged-workflow-documentation-and-instructions.md`](../docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md) **(E5:S01:T56)**
+**Host Task:** [`T56-standardize-packaged-workflow-documentation-and-instructions.md`](../docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md) **(E5:S01:T56)**
 **Planning for:** [FR-056](../docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md)
 **Status:** Approved
 
@@ -126,7 +126,7 @@ This is primarily a documentation task. Tests are structural validation scripts 
 - **Modify:** `packages/frameworks/workflow mgt/scripts/validate-workflow-docs.py` — fix `extract_sections()` regex
 - **Modify:** `packages/frameworks/workflow mgt/workflows/*/README.md` (up to 10 files) — fix broken links, add missing sections
 - **Modify:** `packages/frameworks/workflow mgt/README.md` — correct workflow count, fix table links if needed
-- **Modify:** `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md` — update scope to reflect 11 workflows and audit-and-fix approach
+- **Modify:** `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md` — update scope to reflect 11 workflows and audit-and-fix approach
 - **Modify:** `docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md` — correct "12 workflows" to "11 workflows"
 - **Modify:** `docs/project-management/kanban/kboard.md` — update T56 status
 
@@ -154,7 +154,7 @@ This is primarily a documentation task. Tests are structural validation scripts 
 
 ## References
 
-- **Host Task:** `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md`
+- **Host Task:** `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md`
 - **FR-056:** `docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md`
 - **Workflow registry:** `packages/frameworks/workflow mgt/workflows/workflow-registry.yaml`
 - **Framework README:** `packages/frameworks/workflow mgt/README.md`

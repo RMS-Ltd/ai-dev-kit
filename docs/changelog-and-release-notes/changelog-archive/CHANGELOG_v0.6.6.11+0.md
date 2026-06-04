@@ -18,7 +18,7 @@
 
 **Task Document Created:**
 - **E6:S06:T11 – Changelog Management and Archival Workflow**
-  - Task document: `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md`
+  - Task document: `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md`
   - **Feature Request:** [FR-025](../../project-management/kanban/fr-br/FR-025-changelog-management-and-archival-workflow.md)
   - **Status:** TODO
   - **Priority:** HIGH

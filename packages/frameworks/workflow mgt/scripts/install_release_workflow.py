@@ -200,13 +200,20 @@ def pattern_to_preview_glob(pattern: str) -> str:
     return re.sub(r"\{[^}]+\}", "*", pattern)
 
 
-# Kanban installer (fresh) layout — matches install_kanban_framework.py output (BR-083).
-FRESH_KANBAN_EPIC_PATTERN = "epics/Epic-{epic}/Epic-{epic}.md"
-FRESH_KANBAN_STORY_PATTERN = "epics/Epic-{epic}/Story-{story:03d}-*.md"
-FRESH_KANBAN_TASK_PATTERN = "epics/Epic-{epic}/Story-{story}/T{task}-*.md"
-SLUG_KANBAN_TASK_PATTERN = "epics/Epic-{epic}/Story-{story:03d}-*/T{task}-*.md"
-LEGACY_KANBAN_EPIC_PATTERN = "epics/Epic-{epic}.md"
-LEGACY_KANBAN_STORY_PATTERN = "epics/Epic-{epic}/stories/Story-{story}-*.md"
+# Kanban path patterns (ADR-015 / UXR-017) — write-default lowercase; legacy capitalised read-tolerance.
+_KANBAN_SCRIPTS = Path(__file__).resolve().parent.parent.parent / "kanban" / "scripts"
+if str(_KANBAN_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_KANBAN_SCRIPTS))
+import kanban_paths as _kp  # noqa: E402
+
+FRESH_KANBAN_EPIC_PATTERN = _kp.EPIC_DOC_PATTERN
+FRESH_KANBAN_STORY_PATTERN = _kp.STORY_DOC_PATTERN
+FRESH_KANBAN_TASK_PATTERN = _kp.TASK_DOC_PATTERN
+SLUG_KANBAN_TASK_PATTERN = _kp.TASK_DOC_PATTERN
+LEGACY_FRESH_KANBAN_EPIC_PATTERN = _kp.LEGACY_EPIC_DOC_PATTERN
+LEGACY_FRESH_KANBAN_STORY_PATTERN = _kp.LEGACY_STORY_DOC_PATTERN
+LEGACY_KANBAN_EPIC_PATTERN = _kp.LEGACY_EPIC_FLAT_PATTERN
+LEGACY_KANBAN_STORY_PATTERN = _kp.LEGACY_STORY_NESTED_PATTERN
 DEFAULT_FR_BR_SUBDIR = "fr-br"
 
 
@@ -310,10 +317,12 @@ def detect_kanban_doc_patterns(
     """
     epic_candidates = [
         (FRESH_KANBAN_EPIC_PATTERN, True),
+        (LEGACY_FRESH_KANBAN_EPIC_PATTERN, True),
         (LEGACY_KANBAN_EPIC_PATTERN, False),
     ]
     story_candidates = [
         (FRESH_KANBAN_STORY_PATTERN, True),
+        (LEGACY_FRESH_KANBAN_STORY_PATTERN, True),
         (LEGACY_KANBAN_STORY_PATTERN, False),
     ]
 
@@ -741,7 +750,17 @@ Brownfield (existing repo):
         action='store_true',
         help='Verify installer dependencies (pyyaml) and exit (0=OK, 1=missing)',
     )
-    
+    parser.add_argument(
+        '--skip-github-signoff',
+        action='store_true',
+        help='Do not run install_github_issue_signoff after install',
+    )
+    parser.add_argument(
+        '--close-github-issues',
+        action='store_true',
+        help='Close ai-dev-kit issues whose install sign-off checks passed (requires gh auth)',
+    )
+
     args = parser.parse_args()
 
     if args.check_deps:
@@ -856,6 +875,35 @@ Brownfield (existing repo):
         print("3. Copy validation scripts to your scripts_path if not already present")
         print("4. Test RW by typing 'RW' in your AI assistant")
     print("=" * 60)
+
+    if not args.skip_github_signoff:
+        try:
+            from install_github_issue_signoff import post_install_signoff
+
+            post_install_signoff(
+                project_root,
+                install_dry_run=args.dry_run,
+                close_github_issues=args.close_github_issues,
+            )
+        except ImportError:
+            _signoff = SCRIPT_DIR / "install_github_issue_signoff.py"
+            if _signoff.is_file() and not args.dry_run:
+                subprocess.run(
+                    [
+                        sys.executable,
+                        str(_signoff),
+                        "--project-root",
+                        str(project_root),
+                        "--list-open-awaiting",
+                        *(
+                            ["--close-github-issues"]
+                            if args.close_github_issues
+                            else []
+                        ),
+                    ],
+                    cwd=project_root,
+                    check=False,
+                )
 
 
 if __name__ == "__main__":

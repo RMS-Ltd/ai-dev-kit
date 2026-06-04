@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Active (Phase 0 — normative contract)  
 **Version:** 1.0.0  
 **Last Updated:** 2026-05-26  
-**Task:** [E6:S09:T04](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)  
+**Task:** [E6:S09:T04](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)  
 **FR:** [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
 **Empirical evidence:** [Phase 0 evaluation](./ecc-adk-harness-layer-phase0-evaluation.md)
 

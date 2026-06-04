@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E04:S18:T01](../epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md)
+**Implementing Task:** [E04:S18:T01](../epics/epic-04/story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.4.18.1+0
 
@@ -174,9 +174,9 @@ User opens `kboard.md` to quickly scan active tasks and epic status. Sees only s
 - Version: `0.4.18.1+0`
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`docs/project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split.md`](../epics/Epic-4/Story-018-kanban-board-info-only-split.md)
-- Task: [`docs/project-management/kanban/epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md`](../epics/Epic-4/Story-018-kanban-board-info-only-split/T1-implement-kanban-board-info-only-split.md)
+- Epic: [`docs/project-management/kanban/epics/epic-04/epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`docs/project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split.md`](../epics/epic-04/story-18-kanban-board-info-only-split.md)
+- Task: [`docs/project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split.md`](../epics/epic-04/story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split.md)
 
 ---
 
@@ -217,7 +217,7 @@ User opens `kboard.md` to quickly scan active tasks and epic status. Sees only s
 - **Current Board:** `docs/project-management/kanban/kboard.md`
 - **Kanban Governance:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **Board Template:** `packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md`
-- **Related Story:** [`docs/project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view.md`](../epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view.md)
+- **Related Story:** [`docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view.md`](../epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view.md)
 
 ---
 

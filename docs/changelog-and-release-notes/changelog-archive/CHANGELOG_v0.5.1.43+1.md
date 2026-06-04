@@ -28,5 +28,5 @@ E5:S01:T43: FR-043 task created – UKW gap discovery (TODO tasks not on board, 
 
 ## Related
 
-- **Task:** [T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
+- **Task:** [T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
 - **FR-043:** [FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md](../../project-management/kanban/fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)

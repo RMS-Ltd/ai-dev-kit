@@ -116,7 +116,7 @@ housekeeping_policy: archive
 - `cli/config.py` - Enhanced with validation, schema, and additional methods
 - `cli/commands/config.py` - Config command implementation (new)
 - `cli/main.py` - Config command registration
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - Updated T08 status
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - Updated T08 status
 
 ---
 

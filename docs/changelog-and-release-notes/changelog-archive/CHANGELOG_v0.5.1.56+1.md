@@ -56,6 +56,6 @@ Audit-and-fix release closing the documentation standardization gap identified i
 ## References
 
 - FR-056: `docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md`
-- Task doc: `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md`
+- Task doc: `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md`
 - Plan doc: `docs/implementation-cycles/IPP-E5S01T56-package-workflow-docs.md`
 - Validator script: `packages/frameworks/workflow mgt/scripts/validate-workflow-docs.py`

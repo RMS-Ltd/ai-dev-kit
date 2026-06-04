@@ -16,8 +16,8 @@ Established and released a repository-wide implementation gate that requires IPW
   - `.cursorrules`
 - Intake and task wiring for the new contract:
   - `docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md`
-  - `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md`
-  - `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md`
+  - `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md`
+  - `docs/project-management/kanban/epics/epic-06/story-06-feature-requests.md`
 - Board visibility updates:
   - `docs/project-management/kanban/fbuboard.md`
   - `docs/project-management/kanban/kboard.md`

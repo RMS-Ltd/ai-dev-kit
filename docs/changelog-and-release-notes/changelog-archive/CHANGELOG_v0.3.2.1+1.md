@@ -22,7 +22,7 @@
 - E3:S02:T001 – Define core versioning scenarios for the cookbook
 
 ## Technical Details
-- Created `T001-core-versioning-scenarios.md` with detailed scenario definitions
+- Created `T01-core-versioning-scenarios.md` with detailed scenario definitions
 - Each scenario includes: context, expected version behaviour, Kanban/RW interactions, branch strategy
 - Scenarios validated against framework policy, dev-kit policy, and integration docs
 - Foundation for T002 cookbook document with worked examples

@@ -270,7 +270,7 @@ Every RW execution should automatically and reliably update all relevant Kanban 
 - **Release Workflow Reference:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md`
 - **Release Workflow YAML:** `packages/frameworks/workflow mgt/workflows/release-workflow.yaml`
 - **Kanban Governance Policy:** `docs/project-management/rituals/policy/kanban-governance-policy.md`
-- **Epic 2 Story 7:** `docs/project-management/kanban/epics/Epic-2/Story-007-trigger-aware-release-workflow.md`
+- **Epic 2 Story 7:** `docs/project-management/kanban/epics/epic-02/story-07-trigger-aware-release-workflow.md`
 
 ---
 

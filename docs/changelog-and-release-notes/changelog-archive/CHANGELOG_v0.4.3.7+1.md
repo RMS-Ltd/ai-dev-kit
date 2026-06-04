@@ -30,7 +30,7 @@ This release completes **Task 7: Address RW → Kanban integration gaps identifi
   - Enhanced validation with consistency checks
 
 - ✅ **Epic Story Checklist Fixed:**
-  - Updated Epic-4.md Story Checklist to include Task-level version markers
+  - Updated epic-04.md Story Checklist to include Task-level version markers
   - Format: `- [ ] **E4:S03 – Story Name** - IN PROGRESS (v{version})`
   - Added Task completion list showing all completed Tasks with versions
 
@@ -40,7 +40,7 @@ This release completes **Task 7: Address RW → Kanban integration gaps identifi
   - Applied consistently across all completed Tasks (T001, T002, T003, T004)
 
 - ✅ **Gap Resolution Summary Created:**
-  - Created comprehensive summary document (`T007-gap-resolution-summary.md`)
+  - Created comprehensive summary document (`T07-gap-resolution-summary.md`)
   - Documented how gaps were identified (from T004 validation)
   - Documented all fixes applied with evidence and references
 
@@ -48,13 +48,13 @@ This release completes **Task 7: Address RW → Kanban integration gaps identifi
 
 **Gap 1: Epic Story Checklist Not Updated ✅ FIXED**
 - Problem: Story Checklist in Epic document not consistently updated with Task-level version markers
-- Fix: Updated Epic-4.md Story Checklist to include Task-level version markers and Task completion list
-- Files: `docs/project-management/kanban/epics/Epic-4.md`
+- Fix: Updated epic-04.md Story Checklist to include Task-level version markers and Task completion list
+- Files: `docs/project-management/kanban/epics/epic-04.md`
 
 **Gap 2: Forensic Marker Format Inconsistency ✅ FIXED**
 - Problem: Some sections used correct format, others missing version markers
 - Fix: Standardized forensic marker format across all sections: `✅ COMPLETE (v{version})`
-- Files: `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md`
+- Files: `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md`
 
 **Gap 3: "ALL Sections" Requirement Not Fully Implemented ✅ FIXED**
 - Problem: Epic Story Checklist not consistently updated, detailed sections missing version markers
@@ -94,13 +94,13 @@ This release completes **Task 7: Address RW → Kanban integration gaps identifi
 This task addresses all gaps identified in T004 validation report, ensuring RW → Kanban integration is fully compliant with "ALL sections" requirement. All fixes are documented with evidence and references to the validation report, ensuring traceability and preventing recurrence.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T007-gap-resolution-summary.md` (comprehensive gap resolution summary)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T07-gap-resolution-summary.md` (comprehensive gap resolution summary)
 
 **Files Updated:**
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (RW Step 6 enhanced)
-- `docs/project-management/kanban/epics/Epic-4.md` (Story Checklist fixed)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md` (forensic markers standardized)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T004-rw-kanban-validation.md` (fix status added)
+- `docs/project-management/kanban/epics/epic-04.md` (Story Checklist fixed)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md` (forensic markers standardized)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation.md` (fix status added)
 
 ---
 
@@ -114,11 +114,11 @@ This task addresses all gaps identified in T004 validation report, ensuring RW �
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T007-gap-resolution-summary.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T07-gap-resolution-summary.md` (created)
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (enhanced)
-- `docs/project-management/kanban/epics/Epic-4.md` (fixed)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md` (standardized)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T004-rw-kanban-validation.md` (updated)
+- `docs/project-management/kanban/epics/epic-04.md` (fixed)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md` (standardized)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation.md` (updated)
 - `src/fynd_deals/version.py` (version bumped to 0.4.3.7+1)
 
 ---

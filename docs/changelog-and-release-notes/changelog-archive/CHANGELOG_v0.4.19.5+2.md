@@ -18,6 +18,6 @@
 
 ## References
 
-- **Task:** [T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md](docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- **Task:** [T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md](docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 - **IPP:** [IPP-E4S19T05-kanban-fr-br-uxr-filename-normalization.md](docs/implementation-cycles/IPP-E4S19T05-kanban-fr-br-uxr-filename-normalization.md)
 - **ICW:** [ICW-E4S19T05-specification.md](docs/implementation-cycles/ICW-E4S19T05-specification.md)

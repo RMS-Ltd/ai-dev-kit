@@ -33,7 +33,7 @@ Change implemented: retyped install/setup SemVer display requirement from **FR-1
 - **Created** `UXR-016-install-setup-interactive-feedback-external-semver-version.md`
 - **Deleted** `FR-108-install-setup-interactive-feedback-external-semver-version.md`
 - **Renamed** task doc → `T15-install-setup-interactive-feedback-external-semver-uxr016.md`
-- Updated Story-009 checklist, `kanban-completed.md`, `fbu-completed.md`, `kboard.md`, `fbuboard.md`
+- Updated story-009 checklist, `kanban-completed.md`, `fbu-completed.md`, `kboard.md`, `fbuboard.md`
 
 ### Planning & release forensics
 
@@ -50,5 +50,5 @@ Change implemented: retyped install/setup SemVer display requirement from **FR-1
 ## References
 
 - [UXR-016](../../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
-- [T15 task doc](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md)
+- [T15 task doc](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md)
 - [IPP-E06S09T15](../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)

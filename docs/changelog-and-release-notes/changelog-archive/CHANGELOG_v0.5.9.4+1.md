@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-03-30 15:27:28 UTC  
 **Epic:** 5 | **Story:** 9 | **Task:** 4  
-**Task doc:** [T04-docusaurus-navigation-fr-068.md](../../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T04-docusaurus-navigation-fr-068.md)  
+**Task doc:** [T04-docusaurus-navigation-fr-068.md](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T04-docusaurus-navigation-fr-068.md)  
 **FR:** [FR-068](../../project-management/kanban/fr-br/FR-068-docusaurus-navigation-sidebar-and-landing.md)
 
 ## Summary

@@ -51,12 +51,12 @@ Ad-hoc book content development: created perpetual catch-all task for committing
 
 ### Kanban / Task Infrastructure
 
-- **docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development/T06-ad-hoc-book-content-development-perpetual.md** (NEW)
+- **docs/project-management/kanban/epics/epic-24/story-01-book-content-development/T06-ad-hoc-book-content-development-perpetual.md** (NEW)
   - Perpetual catch-all task for ad-hoc book content commits
   - Scoped to `docs/book-proj/` and publishing materials
   - Added to Story 001 checklist and `kboard.md` Ongoing section
 
-- **docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development.md**
+- **docs/project-management/kanban/epics/epic-24/story-01-book-content-development.md**
   - Added T06 to task checklist
 
 - **docs/project-management/kanban/kboard.md**

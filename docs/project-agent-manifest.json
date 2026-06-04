@@ -149,7 +149,7 @@
     {
       "taskId": "E02:S15:T01",
       "summary": "BR-066 IPW publication backfill corpus tail",
-      "taskDocPath": "docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md",
+      "taskDocPath": "docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md",
       "priority": "MEDIUM"
     }
   ]

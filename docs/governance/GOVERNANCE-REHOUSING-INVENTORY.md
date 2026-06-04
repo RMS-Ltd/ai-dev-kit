@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Governance rehousing inventory (Phase 0)
 
 **FR:** [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)  
-**Task:** [E7:S01:T11](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)  
+**Task:** [E7:S01:T11](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)  
 **Status:** COMPLETE — execution finished **v0.7.1.11+8** (2026-05-29)
 
 ---

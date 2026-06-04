@@ -112,7 +112,7 @@ All generators return a `GeneratorResult` object containing:
 ### Modified Files
 
 - `src/fynd_deals/version.py` - Updated to v0.8.1.1+1
-- `docs/project-management/kanban/epics/Epic-8/Story-001-code-generators.md` - Marked T01 as complete
+- `docs/project-management/kanban/epics/epic-08/story-01-code-generators.md` - Marked T01 as complete
 
 ---
 

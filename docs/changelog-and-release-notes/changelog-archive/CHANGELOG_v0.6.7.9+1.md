@@ -125,7 +125,7 @@ housekeeping_policy: archive
 - `cli/utils.py` - Enhanced error handling with `handle_error()` function
 - `cli/main.py` - Updated to use centralized error handling
 - `cli/commands/install.py` - Updated to use validation and error handling
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - Updated T09 status
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - Updated T09 status
 
 ---
 

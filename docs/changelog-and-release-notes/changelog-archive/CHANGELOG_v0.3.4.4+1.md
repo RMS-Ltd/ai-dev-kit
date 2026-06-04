@@ -26,7 +26,7 @@ Completed integration and dependency alignment review for the Numbering & Versio
 
 ### Added
 
-- **Integration alignment report** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T04-integrations-and-dependency-alignment.md`)
+- **Integration alignment report** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T04-integrations-and-dependency-alignment.md`)
   - Comprehensive review of Numbering & Versioning ↔ Workflow Management integration
   - Comprehensive review of Numbering & Versioning ↔ Kanban integration
   - Three-way integration (Kanban ↔ Versioning ↔ RW) validation

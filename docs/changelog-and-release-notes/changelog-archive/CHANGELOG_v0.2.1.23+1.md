@@ -29,4 +29,4 @@
 
 ---
 
-**Task:** [E02:S01:T23](docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+**Task:** [E02:S01:T23](docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)

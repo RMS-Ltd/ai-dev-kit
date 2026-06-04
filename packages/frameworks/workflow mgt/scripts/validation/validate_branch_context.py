@@ -287,7 +287,7 @@ def locate_task_doc_for_version(
             task_file = task_files[0]
             return (task_file, task_file.read_text(), "separate_file")
     
-    # Format 1b: Task file under descriptive Story-* folder (e.g. Story-001-codebase-maintenance-tasks/)
+    # Format 1b: Task file under descriptive Story-* folder (e.g. story-01-codebase-maintenance-tasks/)
     if epic_dir.is_dir():
         patterns = [
             f"Task-{task:03d}-*.md",

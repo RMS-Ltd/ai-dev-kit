@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E02:S16:T17](../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)  
+**Implementing task:** [E02:S16:T17](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)  
 **Planning package:** [IPP-E02S16T17](../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)  
 **Related:** [FR-103](../../project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md), `README.md`, `AGENTS.md`, `docs/project-agent-manifest.json`, `docs/project-agent-index.md`
 

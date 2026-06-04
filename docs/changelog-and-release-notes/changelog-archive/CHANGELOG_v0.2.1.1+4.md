@@ -33,7 +33,7 @@ This release completes **Task 2: Tag Confidentia/fynd.deals examples and add dev
   - Step 10: Create Git Tag (version examples, tag names/messages)
   - Step 11: Push to Remote (branch examples, tag examples)
 
-- ✅ Updated **Story 001** (`Story-001-rw-agent-execution-and-docs.md`):
+- ✅ Updated **Story 001** (`story-01-rw-agent-execution-and-docs.md`):
   - Marked Task 2 as complete in task checklist
   - Updated task details with completion status and summary
 
@@ -100,7 +100,7 @@ The example tagging system provides a clear foundation for making the Release Wo
 ## 📄 Files Changed
 
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (example tagging added)
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-001-rw-agent-execution-and-docs.md` (status update)
+- `docs/project-management/kanban/epics/epic-02/stories/story-01-rw-agent-execution-and-docs.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.2.1.1+4)
 
 ---

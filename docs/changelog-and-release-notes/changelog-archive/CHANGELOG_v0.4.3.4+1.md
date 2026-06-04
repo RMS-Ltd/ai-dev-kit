@@ -25,7 +25,7 @@ This release completes **Task 4: Validate RW → Kanban integration in dev-kit**
   - Validated consistency across all Kanban documents
   - Documented gaps and inconsistencies
 
-- ✅ **Validation Report Created** (`T004-rw-kanban-validation.md`):
+- ✅ **Validation Report Created** (`T04-rw-kanban-validation.md`):
   - Validation methodology and test cases
   - Epic document updates validation (⚠️ PARTIAL)
   - Story document updates validation (✅ PASS)
@@ -125,7 +125,7 @@ This release completes **Task 4: Validate RW → Kanban integration in dev-kit**
 This validation confirms that RW → Kanban integration is partially implemented. Story document updates are working correctly, but Epic document Story Checklist updates and forensic marker format consistency need improvement. The "ALL sections" requirement is not fully implemented, creating documentation inconsistencies.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T004-rw-kanban-validation.md` (comprehensive validation report)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation.md` (comprehensive validation report)
 
 ---
 
@@ -139,8 +139,8 @@ This validation confirms that RW → Kanban integration is partially implemented
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T004-rw-kanban-validation.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.3.4+1)
 
 ---

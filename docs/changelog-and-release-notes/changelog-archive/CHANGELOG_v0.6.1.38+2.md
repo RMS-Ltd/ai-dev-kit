@@ -42,5 +42,5 @@ Kanban reconciliation release for E6:S01:T38 (BR-072). All four kanban surfaces 
 ## Related
 
 - [BR-072](../../../docs/project-management/kanban/fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)
-- [T38 task doc](../../../docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)
+- [T38 task doc](../../../docs/project-management/kanban/epics/epic-06/story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)
 - [IPP-E6S01T38](../../../docs/implementation-cycles/IPP-E6S01T38-ukw-completed-task-removal-defect.md)

@@ -27,9 +27,9 @@ Reintroduced the Update Changelog Workflow (UCW) governance track that went miss
 ## Files Updated
 
 - `docs/project-management/kanban/fr-br/FR-057-update-changelog-workflow.md`
-- `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T06-update-changelog-workflow.md`
-- `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`
-- `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
+- `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T06-update-changelog-workflow.md`
+- `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
+- `docs/project-management/kanban/epics/epic-07/epic-07.md`
 - `docs/project-management/kanban/kanban-board.md`
 - `CHANGELOG.md`
 - `src/fynd_deals/version.py`

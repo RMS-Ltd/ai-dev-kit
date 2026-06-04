@@ -87,8 +87,8 @@ UKW execution: Restored RC review artifacts (Epics 10/11 and package review stor
 
 **Files Modified:**
 - `T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md` - Progress updated, version bumped to v0.6.7.101+23
-- `Story-007-adk-implementation-analysis-and-package-management.md` - T101 status updated
-- `Epic-6.md` - S07 status updated, version markers synced
+- `story-07-adk-implementation-analysis-and-package-management.md` - T101 status updated
+- `epic-06.md` - S07 status updated, version markers synced
 - `kanban-board.md` - MoSCOW section refreshed, metadata updated
 
 **Version Changes:**

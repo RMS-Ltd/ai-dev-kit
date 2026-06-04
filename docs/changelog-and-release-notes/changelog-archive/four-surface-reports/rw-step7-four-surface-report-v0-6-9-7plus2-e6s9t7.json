@@ -3,14 +3,14 @@
     "epic_doc": {
       "changes": ["Updated Epic Last updated: v0.6.9.7+2 – Story 9 Task 7 complete"],
       "notes": [],
-      "paths": ["docs/project-management/kanban/epics/Epic-6/Epic-6.md"],
+      "paths": ["docs/project-management/kanban/epics/epic-06/epic-06.md"],
       "surface": "epic_doc",
       "touched": true
     },
     "story_doc": {
       "changes": ["Story checklist T07 COMPLETE v0.6.9.7+2"],
       "notes": [],
-      "paths": ["docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md"],
+      "paths": ["docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"],
       "surface": "story_doc",
       "touched": true
     },
@@ -72,7 +72,7 @@
     "task_doc": {
       "changes": ["Version anchor v0.6.9.7+2"],
       "notes": [],
-      "paths": ["docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md"],
+      "paths": ["docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md"],
       "surface": "task_doc",
       "touched": true
     }

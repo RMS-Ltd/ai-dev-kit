@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E04:S06:T06](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
+**Implementing Task:** [E04:S06:T06](../epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
 
 ---
 
@@ -115,7 +115,7 @@ The `CANONICAL_EPICS.md` file was never updated to include all 21 epics. The fra
    - Agent assumes framework only has 7 epics
 
 3. **Agent Creates Structure:** Agent creates new Epic 1 for dev-toolkit:
-   - Creates `docs/project-management/kanban/epics/Epic-1/Epic-1.md`
+   - Creates `docs/project-management/kanban/epics/epic-01/epic-01.md`
    - Creates Story 1 and Story 2 under Epic 1
    - Does NOT use canonical Epic 1 template
 
@@ -417,8 +417,8 @@ Added detailed comment on GitHub issue #1 with full traceability to internal Kan
 - Version: `v0.4.6.6+0` (to be assigned when task starts)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
+- Epic: [`docs/project-management/kanban/epics/epic-04/epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md`](../epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
 - Task: E04:S06:T06 (Update CANONICAL_EPICS.md - enhanced scope to address BR-005)
 
 ---

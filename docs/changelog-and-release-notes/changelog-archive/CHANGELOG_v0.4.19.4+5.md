@@ -12,7 +12,7 @@ Change implemented: rewrote `IPP-E4S19T04` plan doc to `PLAN_DOC_TEMPLATE`-confo
 ## Included Files
 
 - `docs/implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md` — full rewrite to PLAN_DOC_TEMPLATE structure
-- `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md` — status COMPLETE, Last updated 2026-05-14, IPP links added to Input + References
+- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md` — status COMPLETE, Last updated 2026-05-14, IPP links added to Input + References
 - `src/fynd_deals/version.py`
 
 ## Verification

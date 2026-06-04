@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** LOW  
 **Status:** IMPLEMENTED (v0.2.16.8+1 — E02:S16:T08)
 
-**Implementing Task:** [E02:S16:T08](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md)
+**Implementing Task:** [E02:S16:T08](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md)
 
 ---
 
@@ -68,8 +68,8 @@ The UKW was only triggerable via plain-text `UKW` (handled by `.cursorrules` in 
 
 ## Related
 
-- [E02:S16:T08](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md)
-- [Story 016](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md)
+- [E02:S16:T08](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T08-ukw-slash-command-claude-code-fr093.md)
+- [Story 016](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md)
 - `.claude/commands/ukw.md`
 - `.claude/commands/rw.md` (pattern reference)
 - `CLAUDE.md` (routing entry)

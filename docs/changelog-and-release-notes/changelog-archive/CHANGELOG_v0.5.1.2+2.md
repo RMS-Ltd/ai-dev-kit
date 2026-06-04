@@ -69,7 +69,7 @@ Created comprehensive documentation maintenance policy establishing ownership mo
 ### 📝 Documentation Updates
 
 **Story Document:**
-- Updated `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md`
+- Updated `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md`
 - Marked E5:S01:T02 as COMPLETE
 - Added comprehensive deliverables list
 
@@ -82,7 +82,7 @@ Created comprehensive documentation maintenance policy establishing ownership mo
 ## Files Modified
 
 - `src/fynd_deals/version.py` (version bumped to v0.5.1.2+2, task and build updated)
-- `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md` (task status and version updated)
+- `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md` (task status and version updated)
 
 ---
 

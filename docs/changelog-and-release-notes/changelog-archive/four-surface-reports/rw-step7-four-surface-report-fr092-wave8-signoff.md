@@ -24,7 +24,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md`
 - Changes:
   - task doc updated: T07 sign-off log
 

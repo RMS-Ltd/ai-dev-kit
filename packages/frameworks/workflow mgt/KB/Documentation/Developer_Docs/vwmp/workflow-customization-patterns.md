@@ -822,7 +822,7 @@ python scripts/validation/validate_changelog_format.py
 ## 📖 Related Documentation
 
 - **Agent-Driven Execution:** `agent-driven-workflow-execution.md`
-- **Workflow Taxonomy:** `docs/project-management/kanban/epics/Epic-2/Story-003-additional-workflows-and-examples/T01-workflow-taxonomy.md`
+- **Workflow Taxonomy:** `docs/project-management/kanban/epics/epic-02/story-03-additional-workflows-and-examples/T01-workflow-taxonomy.md`
 - **Portable Implementation Guide:** `portable-workflow-implementation-guide.md`
 - **Workflow Template Generator:** `scripts/README-workflow-generator.md`
 

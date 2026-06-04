@@ -71,10 +71,10 @@ Update Kanban Workflow (UKW) run #5: Kanban documentation synchronized. Story E6
 
 ## Files Modified
 
-1. `docs/project-management/kanban/epics/Epic-6/Story-001-framework-version-management.md`
+1. `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md`
    - Status corrected from IN PROGRESS to COMPLETE
 
-2. `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+2. `docs/project-management/kanban/epics/epic-06/epic-06.md`
    - Story checklist updated: E6:S01 marked as COMPLETE ✅
    - Detailed task sections updated: E6:S02 tasks marked as COMPLETE where appropriate
    - UKW sync note added
@@ -83,7 +83,7 @@ Update Kanban Workflow (UKW) run #5: Kanban documentation synchronized. Story E6
    - Updated board metadata (Last Updated, Version, UKW Sync)
    - Epic 6 section updated: E6:S01 confirmed COMPLETE, E6:S02 progress reflected
 
-4. `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+4. `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
    - Updated to reflect UKW run #5
    - Version: v0.6.6.8+5
 
@@ -127,7 +127,7 @@ Update Kanban Workflow (UKW) run #5: Kanban documentation synchronized. Story E6
 ## References
 
 - UKW Changes Summary: `docs/project-management/kanban/ukw-changes-summary.md`
-- UKW Task Document: `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
-- Epic 6: `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+- UKW Task Document: `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+- Epic 6: `docs/project-management/kanban/epics/epic-06/epic-06.md`
 - Kanban Board: `docs/project-management/kanban/kanban-board.md`
 

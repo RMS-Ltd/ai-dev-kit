@@ -37,9 +37,9 @@
   - `docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md`: `OK`
   - `docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md`: `OK`
   - `docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md`: `OK`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`: `OK`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`: `OK`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`: `OK`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`: `OK`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`: `OK`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`: `OK`
   - `docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md`: `OK`
   - `docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`: `OK`
   - `docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md`: `OK`
@@ -76,9 +76,9 @@
   - `fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
   - `fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
   - `kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Epic-6.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+  - `task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+  - `epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-06/epic-06.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+  - `story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
 - Evidence:
   - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-9plus2-e6s9t9.json`
   - `paths_checked`: `7`
@@ -102,7 +102,7 @@
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
   - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-9plus2-e6s9t9.json`
-  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md'], 'notes_count': 1}`
+  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md'], 'notes_count': 1}`
   - `fbu_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md'], 'notes_count': 1}`
   - `kboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
   - `fbuboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md'], 'notes_count': 0}`

@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E02:S16:T16](../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)  
+**Implementing task:** [E02:S16:T16](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)  
 **Origin FR:** [FR-102](../../project-management/kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)  
 **Planning package:** [IPP-E02S16T16](../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 

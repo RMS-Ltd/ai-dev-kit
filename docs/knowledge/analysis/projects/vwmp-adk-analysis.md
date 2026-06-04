@@ -58,14 +58,14 @@ housekeeping_policy: keep
 - **Good:** Project has its own epic structure, no confusion
 
 **Epic Naming:** ⚠️ **DIVERGES**
-- Uses "Epic 01" (with space and zero-padding) instead of "Epic-1" (with hyphen, no zero-padding)
-- Directory structure: `Epic 01/` instead of `Epic-1/`
+- Uses "Epic 01" (with space and zero-padding) instead of "epic-01" (with hyphen, no zero-padding)
+- Directory structure: `Epic 01/` instead of `epic-01/`
 - **Difference:** Space vs hyphen, zero-padding vs no zero-padding
 - **Impact:** Minor - different naming convention, but functional
 
 **Story Structure:** ✅ **MATCHES** (mostly)
 - Stories organized under Epic directories
-- Story naming follows pattern: `Story-1-Visual-Workflow-Management-Platform.md`
+- Story naming follows pattern: `story-01-Visual-Workflow-Management-Platform.md`
 - Story documents include proper structure
 
 **Task Structure:** ⚠️ **DIVERGES**
@@ -75,12 +75,12 @@ housekeeping_policy: keep
 - **Impact:** Minor - different organization pattern
 
 **Naming Conventions:** ⚠️ **DIVERGES**
-- Epic naming: `Epic 01/Epic-01.md` (space in directory, hyphen in file, zero-padding)
-- Story naming: `Story-1-Description.md` (hyphen format)
+- Epic naming: `Epic 01/epic-01.md` (space in directory, hyphen in file, zero-padding)
+- Story naming: `story-01-Description.md` (hyphen format)
 - Task naming: Embedded in stories vs separate files
 
 **File Organization:** ⚠️ **DIVERGES**
-- Structure: `docs/project-management/epics/overview/Epic 01/Story-1-Description.md`
+- Structure: `docs/project-management/epics/overview/Epic 01/story-01-Description.md`
 - **Difference:** Uses `epics/overview/` instead of `kanban/epics/`
 - **Impact:** Minor - different path, but functional
 
@@ -113,7 +113,7 @@ housekeeping_policy: keep
 ❌ **What Doesn't Work:**
 
 1. **Epic Naming Convention**
-   - **Issue:** Uses "Epic 01" (with space and zero-padding) instead of "Epic-1" (with hyphen, no zero-padding)
+   - **Issue:** Uses "Epic 01" (with space and zero-padding) instead of "epic-01" (with hyphen, no zero-padding)
    - **Problem:** Inconsistent with ADK canonical
    - **Impact:** Minor - works but inconsistent
 
@@ -136,7 +136,7 @@ housekeeping_policy: keep
 ### 1.6 Recommendations
 
 **For This Project:**
-1. **Consider Epic Naming Migration** - Evaluate migrating to "Epic-1" format for consistency
+1. **Consider Epic Naming Migration** - Evaluate migrating to "epic-01" format for consistency
 2. **Task Organization** - Consider separating tasks into individual files for better granularity
 3. **Consider KB Path Migration** - Evaluate migrating to `kanban/epics/` path for consistency
 4. **None Otherwise** - Epic structure is correct, no mashup
@@ -144,7 +144,7 @@ housekeeping_policy: keep
 **For ADK:**
 1. **Support Legacy Naming**
    - ADK should support projects with different Epic naming conventions
-   - Support both "Epic 01" and "Epic-1" formats
+   - Support both "Epic 01" and "epic-01" formats
    - Make tools flexible for naming conventions
 
 2. **Support Different KB Paths**
@@ -580,7 +580,7 @@ None identified - no .cursorrules file present.
 | Aspect | ADK Canonical | vwmp | Match? |
 |--------|---------------|------|--------|
 | Epic Structure | Project-specific epics only | Project-specific epic (01) | ✅ YES (no mashup) |
-| Epic Naming | Epic-1 (hyphen) | Epic 01 (space, zero-padding) | ⚠️ DIVERGES |
+| Epic Naming | epic-01 (hyphen) | Epic 01 (space, zero-padding) | ⚠️ DIVERGES |
 | Story Structure | Stories under Epic directories | ✅ Matches | ✅ YES |
 | Task Structure | Tasks under Story directories | Tasks embedded in stories | ⚠️ DIVERGES |
 | File Organization | docs/project-management/kanban/epics/ | docs/project-management/epics/overview/ | ⚠️ DIVERGES |

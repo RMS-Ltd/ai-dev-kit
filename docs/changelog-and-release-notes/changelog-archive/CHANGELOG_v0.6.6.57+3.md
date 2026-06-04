@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-04-02 14:48:56 UTC  
 **Epic:** 6 | **Story:** 6 | **Task:** 57  
-**Task doc:** [T57-br039-cascade-whitelist-security-prompt-blocker.md](../../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)  
+**Task doc:** [T57-br039-cascade-whitelist-security-prompt-blocker.md](../../../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)  
 **Associated BR:** [BR-039](../../../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 
 ## Summary

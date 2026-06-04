@@ -65,11 +65,11 @@ Created comprehensive planning story for repository branding and renaming strate
 
 ## Files Created
 
-- `docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md` - Comprehensive planning story
+- `docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md` - Comprehensive planning story
 
 ## Files Modified
 
-- `docs/project-management/kanban/epics/Epic-1/Epic-1.md` - Added Story 4, updated status to IN PROGRESS
+- `docs/project-management/kanban/epics/epic-01/epic-01.md` - Added Story 4, updated status to IN PROGRESS
 - `src/fynd_deals/version.py` - Version bumped to `0.1.4.0+1`
 - `CHANGELOG.md` - Added entry for v0.1.4.0+1
 

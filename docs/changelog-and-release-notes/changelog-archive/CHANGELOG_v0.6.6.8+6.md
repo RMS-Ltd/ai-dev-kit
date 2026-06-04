@@ -33,17 +33,17 @@ UKW run #6: Kanban documentation synchronized to reflect E6:S03 (Framework Healt
 
 ### Documents Updated
 
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+- `docs/project-management/kanban/epics/epic-06/epic-06.md`
 - `docs/project-management/kanban/kanban-board.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 
 ---
 
 ## Related
 
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 6:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
-- **UKW Task:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 6:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
+- **UKW Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 
 ---
 

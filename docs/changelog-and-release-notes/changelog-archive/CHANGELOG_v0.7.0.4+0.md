@@ -11,14 +11,14 @@
 
 ## Summary
 
-**`RW -k E7:S00:T04`** on `epic/7-documentation-maintenance`: first-time version pinning for **T04** repository task document, **UXR-004** **`Repository Task:`** / synthesis pointers, **`Story-000-uxr-repo`** checklist row, and **`fr-br-uxr-board`** **UXR-004** **pre-identified** + **Could** links.
+**`RW -k E7:S00:T04`** on `epic/7-documentation-maintenance`: first-time version pinning for **T04** repository task document, **UXR-004** **`Repository Task:`** / synthesis pointers, **`story-00-uxr-repo`** checklist row, and **`fr-br-uxr-board`** **UXR-004** **pre-identified** + **Could** links.
 
 ---
 
 ## Changed
 
 - **`T04-uxr-004-repository-anchor.md`**, **`UXR-004`** report header.  
-- **`Story-000-uxr-repo.md`**, **`Epic-7.md`**, **`fr-br-uxr-board.md`**.
+- **`story-00-uxr-repo.md`**, **`epic-07.md`**, **`fr-br-uxr-board.md`**.
 
 ---
 

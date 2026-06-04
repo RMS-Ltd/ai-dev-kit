@@ -17,7 +17,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md`
+  - `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md`
 - Changes:
   - Status updated: `TODO → COMPLETE`
   - Deliverable path added: `docs/book-proj/chapter-structure-proposal.md`
@@ -58,15 +58,15 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning.md`
+  - `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning.md`
 - Changes:
   - Task checklist: `[ ] E24:S05:T02` → `[x] E24:S05:T02 - COMPLETE ✅ (v0.24.5.2+2)`
-  - Story-005 now has both tasks complete — E24:S05 story is fully done
+  - story-005 now has both tasks complete — E24:S05 story is fully done
 
 ### Auxiliary: `epic_doc`
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-24/Epic-24.md`
+  - `docs/project-management/kanban/epics/epic-24/epic-24.md`
 - Changes:
   - `Last updated` updated: `v0.24.5.2+2 – E24:S05:T02 COMPLETE; E24:S05 story complete`

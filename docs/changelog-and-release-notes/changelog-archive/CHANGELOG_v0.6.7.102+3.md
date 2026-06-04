@@ -81,5 +81,5 @@ This release documents the execution of the Changelog Management Workflow (CMW),
 
 ---
 
-_This changelog is part of Epic 6: Framework Management and Maintenance, Story 7: ADK Implementation Analysis and Package Management. See [`Story-007-adk-implementation-analysis-and-package-management.md`](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md) for story context._
+_This changelog is part of Epic 6: Framework Management and Maintenance, Story 7: ADK Implementation Analysis and Package Management. See [`story-07-adk-implementation-analysis-and-package-management.md`](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md) for story context._
 

@@ -89,7 +89,7 @@ This release completes **Task 1: Analyze current package structure and dependenc
 This analysis report provides the foundation for documenting modularity principles, creating dependency matrices, and establishing clear consumption patterns. The findings will inform the remaining tasks in Story 2.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture/T001-package-structure-analysis.md` (comprehensive analysis report)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture/T01-package-structure-analysis.md` (comprehensive analysis report)
 
 ---
 
@@ -104,9 +104,9 @@ This analysis report provides the foundation for documenting modularity principl
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture/T001-package-structure-analysis.md` (created)
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture.md` (task status updated)
-- `docs/project-management/kanban/epics/Epic-1.md` (status update)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture/T01-package-structure-analysis.md` (created)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture.md` (task status updated)
+- `docs/project-management/kanban/epics/epic-01.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.1.2.1+1)
 
 ---

@@ -74,8 +74,8 @@ Code review workflow processes established. Comprehensive workflows for standard
 
 ## References
 
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 2:** `docs/project-management/kanban/epics/Epic-7/Story-002-code-review-standards-and-processes.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 2:** `docs/project-management/kanban/epics/epic-07/story-02-code-review-standards-and-processes.md`
 - **Workflow Processes Document:** `docs/architecture/standards-and-adrs/code-review-workflow-processes.md`
 
 ---

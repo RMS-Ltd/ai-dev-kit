@@ -26,9 +26,9 @@ Create individual epic template files for project-specific canonical epics 8-21.
 
 ### Added
 
-- **Epic 8 Template:** `packages/frameworks/kanban/templates/epics/Epic-8-Codebase-Maintenance.md`
-- **Epic 9 Template:** `packages/frameworks/kanban/templates/epics/Epic-9-User-Management.md`
-- **Epic 10 Template:** `packages/frameworks/kanban/templates/epics/Epic-10-Data-Management.md`
+- **Epic 8 Template:** `packages/frameworks/kanban/templates/epics/epic-08-Codebase-Maintenance.md`
+- **Epic 9 Template:** `packages/frameworks/kanban/templates/epics/epic-09-User-Management.md`
+- **Epic 10 Template:** `packages/frameworks/kanban/templates/epics/epic-10-Data-Management.md`
 
 ### Changed
 

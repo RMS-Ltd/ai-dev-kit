@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM (CI integration dead; local test signal degraded)  
 **Status:** OPEN  
 
-**Implementing Task:** [E08:S03:T04](../epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)
+**Implementing Task:** [E08:S03:T04](../epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)
 **Created:** 2026-03-25  
 **Classification:** CI/CD + test maintenance
 
@@ -56,6 +56,6 @@ Separately, **`pytest`** at repo root reports **7 failing tests** (85 passed, 92
 
 ## Related Work
 
-- **Audit:** [T08-dependency-and-tooling-audit.md](../epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)  
+- **Audit:** [T08-dependency-and-tooling-audit.md](../epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)  
   
 - **Workflow:** `update-badges.yml` was **removed** from this repo (see **Bug Summary**); historical file: [update-badges.yml (last known commit search)](https://github.com/RMS-Ltd/ai-dev-kit/commits/main/.github/workflows)

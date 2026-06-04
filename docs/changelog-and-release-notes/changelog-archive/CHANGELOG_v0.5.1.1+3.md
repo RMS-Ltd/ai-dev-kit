@@ -46,7 +46,7 @@ Expanded E5:S01:T04 (Establish documentation update triggers) with comprehensive
 
 ## Files Modified
 
-- `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md`
+- `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md`
 
 ---
 

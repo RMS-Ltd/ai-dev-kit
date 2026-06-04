@@ -245,5 +245,5 @@ creator = TaskCreator(..., use_agentic=True, agentic_provider="openai")
 
 ---
 
-_This integration guide is part of Epic 4 Story 15. See `Story-015-procedural-task-template-generation-and-hybrid-strategy.md` for complete story context._
+_This integration guide is part of Epic 4 Story 15. See `story-15-procedural-task-template-generation-and-hybrid-strategy.md` for complete story context._
 

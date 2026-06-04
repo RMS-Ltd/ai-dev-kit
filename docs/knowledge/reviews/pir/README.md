@@ -39,11 +39,11 @@ docs/Reviews/pir/
 
 **Epic PIR Reports:**
 - Format: `PIR-Epic-\{N\}-v{version}.md`
-- Example: `PIR-Epic-2-v0.2.11.9+3.md`
+- Example: `PIR-epic-02-v0.2.11.9+3.md`
 
 **Story PIR Reports:**
 - Format: `PIR-Story-\{N\}-v{version}.md`
-- Example: `PIR-Story-001-v0.2.1.6+4.md`
+- Example: `PIR-story-01-v0.2.1.6+4.md`
 
 **Version Format:**
 - Uses project versioning schema: `RC.EPIC.STORY.TASK+BUILD`

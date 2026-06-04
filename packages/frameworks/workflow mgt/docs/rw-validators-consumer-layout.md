@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Audience:** You copied **`workflow mgt/`** into your own repository (with or without **`kanban/`** from the same distribution). You need Release Workflow (RW) validators to resolve paths correctly and to match **FR-060** (mandatory task token).
 
-**See also:** [INSTALL_IN_YOUR_PROJECT.md](../../../../INSTALL_IN_YOUR_PROJECT.md) (repo root), [Brownfield adoption (FR-081)](../../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories), [PACKAGE_INSTALLATION_GUIDE.md](PACKAGE_INSTALLATION_GUIDE.md), [Framework dependency architecture](../../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md), [rw-config schema](../config/rw-config-schema.md), [cursorrules-rw-trigger-section.md](../cursorrules-rw-trigger-section.md). Install logging overlap: [E5:S01:T47](../../../../docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T47-install-logging-for-framework-dependencies.md).
+**See also:** [INSTALL_IN_YOUR_PROJECT.md](../../../../INSTALL_IN_YOUR_PROJECT.md) (repo root), [Brownfield adoption (FR-081)](../../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories), [PACKAGE_INSTALLATION_GUIDE.md](PACKAGE_INSTALLATION_GUIDE.md), [Framework dependency architecture](../../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md), [rw-config schema](../config/rw-config-schema.md), [cursorrules-rw-trigger-section.md](../cursorrules-rw-trigger-section.md). Install logging overlap: [E5:S01:T47](../../../../docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T47-install-logging-for-framework-dependencies.md).
 
 ---
 

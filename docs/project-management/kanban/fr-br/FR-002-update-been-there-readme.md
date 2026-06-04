@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E01:S02:T13](../epics/Epic-1/Story-002-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)  
+**Implementing Task:** [E01:S02:T13](../epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)  
 **Historical registry:** E05:S01:T02
 
 ---
@@ -146,8 +146,8 @@ A project adopting ai-dev-kit needs guidance on how to customize their README to
 - Version: `v0.7.4.1+1`
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-7/Epic-7.md`](../epics/Epic-7/Epic-7.md)
-- Story: [`docs/project-management/kanban/epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md`](../epics/Epic-7/Story-04-readme-template-based-on-best-readme-template.md)
+- Epic: [`docs/project-management/kanban/epics/epic-07/epic-07.md`](../epics/epic-07/epic-07.md)
+- Story: [`docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`](../epics/epic-07/story-04-readme-template-based-on-best-readme-template.md)
 - Tasks: E07:S04:T01, T02, T03
 
 ---
@@ -169,8 +169,8 @@ This FR creates a concrete README template based on Best-README-Template, buildi
 - Best-README-Template: https://github.com/othneildrew/Best-README-Template
 - Keep a Changelog: https://keepachangelog.com/
 - Shields.io: https://shields.io/
-- Epic 7: [`docs/project-management/kanban/epics/Epic-7/Epic-7.md`](../epics/Epic-7/Epic-7.md)
-- Story 4: [`Story-004-maintenance-automation-and-tooling.md`](../epics/Epic-7/Story-004-maintenance-automation-and-tooling.md) *(successor path; “been there README” work consolidated here)*
+- Epic 7: [`docs/project-management/kanban/epics/epic-07/epic-07.md`](../epics/epic-07/epic-07.md)
+- Story 4: [`story-04-maintenance-automation-and-tooling.md`](../epics/epic-07/story-04-maintenance-automation-and-tooling.md) *(successor path; “been there README” work consolidated here)*
 
 ---
 

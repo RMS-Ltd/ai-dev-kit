@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E4:S19:T05 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md`](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md) **(E4:S19:T05)**  
+**Host Task:** [`T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md) **(E4:S19:T05)**  
 **Planning for:** [UXR-008 - Canonical Kanban filename normalization](../project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)  
 **Status:** Draft
 
@@ -108,6 +108,6 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/
 
 ## References
 
-- [T05 host task](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- [T05 host task](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 - [UXR-008](../project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 - [FR-086](../project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)

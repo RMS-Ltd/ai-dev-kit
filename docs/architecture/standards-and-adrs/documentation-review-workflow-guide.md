@@ -243,8 +243,8 @@ python3 scripts/documentation/documentation-review-workflow.py \
 
 - **Documentation Review Cadences:** `docs/architecture/standards-and-adrs/documentation-review-cadences.md`
 - **Documentation Maintenance Policy:** `docs/architecture/standards-and-adrs/documentation-maintenance-policy.md`
-- **Epic 5:** `docs/project-management/kanban/epics/Epic-5/Epic-5.md`
-- **Story 2:** `docs/project-management/kanban/epics/Epic-5/Story-002-documentation-quality-assurance.md`
+- **Epic 5:** `docs/project-management/kanban/epics/epic-05/epic-05.md`
+- **Story 2:** `docs/project-management/kanban/epics/epic-05/story-02-documentation-quality-assurance.md`
 
 ---
 

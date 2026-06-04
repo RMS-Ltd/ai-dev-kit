@@ -80,11 +80,11 @@ Created task E3:S02:T11 to implement SemVer mapping system for Release Workflow.
 4. **Phase 4: Documentation** - Update policy documents, RW documentation
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T11-implement-semver-mapping-for-rw.md`
+- `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T11-implement-semver-mapping-for-rw.md`
 
 **Files Modified:**
-- `docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples.md` - Added T11 to checklist and description
-- `docs/project-management/kanban/epics/Epic-3/Epic-3.md` - Updated story checklist
+- `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples.md` - Added T11 to checklist and description
+- `docs/project-management/kanban/epics/epic-03/epic-03.md` - Updated story checklist
 
 **Version Changes:**
 - `src/fynd_deals/version.py`: `0.6.7.101+24` → `0.3.2.11+1`

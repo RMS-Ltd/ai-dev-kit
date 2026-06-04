@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.5.9.11+5  
 **Code:** BR-068  
 
-**Implementing Task:** [E05:S09:T11](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+**Implementing Task:** [E05:S09:T11](../epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
 
 ---
 
@@ -92,7 +92,7 @@ Strict FR-067 / T08 / T10 “throw” behavior is working as configured; the **d
 ## Related
 
 - [FR-067](./FR-067-docusaurus-production-build-corpus-triage.md) — production corpus triage; enabled strict checks.  
-- [Story 009 – Docusaurus Documentation Portal](../epics/Epic-5/Story-009-docusaurus-documentation-portal.md) — T08 / T10 strict links & anchors (**COMPLETE** historically; this BR is **post-completion regression class**).  
+- [Story 009 – Docusaurus Documentation Portal](../epics/epic-05/story-09-docusaurus-documentation-portal.md) — T08 / T10 strict links & anchors (**COMPLETE** historically; this BR is **post-completion regression class**).  
 - [BR-066](./BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) — planning artifacts filing (related portal surface).  
 - [FR-070](./FR-070-docusaurus-deployment-and-hosting.md) — GitHub Pages deployment depends on green build.
 

@@ -17,7 +17,7 @@ This release completes **Task 2: Ingest findings from fynd.deals Epic 15 Kanban 
 
 ### Task 2 Completion
 
-- ✅ Created **findings document** (`T002-fynd-deals-epic15-kanban-findings.md`)
+- ✅ Created **findings document** (`T02-fynd-deals-epic15-kanban-findings.md`)
   - Extracted 7 reusable patterns from framework packages:
     1. Atomic Release Workflow (RW) Behaviour Pattern
     2. "ALL Sections" Update Requirement Pattern
@@ -30,7 +30,7 @@ This release completes **Task 2: Ingest findings from fynd.deals Epic 15 Kanban 
   - Provided 9 high-priority recommendations for `kanban-governance-policy.md`
   - Provided medium-priority recommendations for templates
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-kanban-implementation.md`)
+- ✅ Updated **Story 001** (`story-01-dev-kit-kanban-implementation.md`)
   - Marked Task 2 as complete in task checklist
   - Updated task details with completion status and findings summary
 
@@ -104,8 +104,8 @@ The findings document serves as the foundation for T003 (Update dev-kit Kanban g
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation/T002-fynd-deals-epic15-kanban-findings.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation.md` (updated)
+- `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation/T02-fynd-deals-epic15-kanban-findings.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation.md` (updated)
 - `src/fynd_deals/version.py` (version bumped to 0.4.1.1+3)
 
 ---

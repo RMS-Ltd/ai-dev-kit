@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E02:S15:T01 — BR-066 publication backfill Phase 2 (IPP)
 
-**Host Task:** [`T01-ipw-docusaurus-filing-contract-and-backfill-br066.md`](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) **(E02:S15:T01)**  
+**Host Task:** [`T01-ipw-docusaurus-filing-contract-and-backfill-br066.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) **(E02:S15:T01)**  
 **Planning for:** [BR-066 — IPW missing Docusaurus filing for planning artifacts](../project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)  
 **Status:** Implementation complete (Phase 2 hardening)
 
@@ -104,7 +104,7 @@ Close the BR-066 backlog slice left after Phase 1 (contract + single-task valida
 | ------ | ---- |
 | **CREATE** | `docs/implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md` (this file) |
 | **UPDATE** | `docs/implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md` |
-| **UPDATE** | `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
+| **UPDATE** | `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
 | **UPDATE** | Host task docs / story anchors for inventory items (see inventory Phase 2 table) |
 | **UPDATE** | `packages/frameworks/workflow mgt/scripts/validation/validate_ipw_publication_wiring.py` |
 | **UPDATE** | `packages/frameworks/workflow mgt/scripts/validation/test_validate_ipw_publication_wiring.py` |
@@ -146,7 +146,7 @@ Close the BR-066 backlog slice left after Phase 1 (contract + single-task valida
 ## References
 
 - [BR-066](../project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
-- [T01 host task](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
+- [T01 host task](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
 - [Phase 1 inventory](./IPW-PUBLICATION-BACKFILL-INVENTORY.md)
 - [ICW E02:S15:T01 package](./ICW-E2S15T01-specification.md)
 - [Portal FR-066 scope](../../portal/README.md)

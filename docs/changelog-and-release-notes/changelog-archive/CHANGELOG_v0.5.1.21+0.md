@@ -22,7 +22,7 @@
 - **`T21`** — Task doc; **Version** / **Last updated** aligned to **`v0.5.1.21+0`**.  
 - **`FR-021`**, **`FR-034`** — Bidirectional **`Implementing Task`** links.  
 - **`fr-br-uxr-board.md`** — **FR-021** mapping row; **Could** lines adjusted so links match committed artifacts (no **T32**/**T03**/**T04** anchor files in this release).  
-- **`Story-001-fr-repo.md`**, **`Epic-5.md`**, **`T73`** — Forensic/version alignment for **T21** **`RW -k`**.
+- **`story-01-fr-repo.md`**, **`epic-05.md`**, **`T73`** — Forensic/version alignment for **T21** **`RW -k`**.
 
 ---
 

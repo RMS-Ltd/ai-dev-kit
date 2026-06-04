@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** INTAKE  
 **Code:** UXR-013
 
-**Implementing Task:** [E07:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
+**Implementing Task:** [E07:S01:T10](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
 
 **Related:** [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
 
@@ -125,7 +125,7 @@ Determine which root-level artifacts are still canonical and which should be mov
 **Related Work:**
 - [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
 - [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
-- [E07:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
+- [E07:S01:T10](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
 
 ---
 
@@ -147,9 +147,9 @@ Determine which root-level artifacts are still canonical and which should be mov
 - Version: `0.7.1.10+1` (target at release time)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-7/Epic-7.md`](../epics/Epic-7/Epic-7.md)
-- Story: [`docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`](../epics/Epic-7/Story-001-codebase-maintenance-tasks.md)
-- Task: [`docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md`](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
+- Epic: [`docs/project-management/kanban/epics/epic-07/epic-07.md`](../epics/epic-07/epic-07.md)
+- Story: [`docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`](../epics/epic-07/story-01-codebase-maintenance-tasks.md)
+- Task: [`docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md`](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
 
 ---
 

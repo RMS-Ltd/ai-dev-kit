@@ -1,0 +1,34 @@
+{
+  "version": "0.4.19.11+1",
+  "semver": "0.4.867+1",
+  "task": "E04:S19:T11",
+  "invocation_context": "rw_step_7",
+  "rw_art": true,
+  "timestamp_utc": "2026-06-04T21:00:00Z",
+  "surfaces": [
+    {
+      "surface": "task_doc",
+      "path": "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md",
+      "why": "Version anchor v0.4.19.11+1; status IN PROGRESS (AC5/AC5b open)"
+    },
+    {
+      "surface": "fbu_doc",
+      "path": "docs/project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md",
+      "why": "Version marker; IN PROGRESS until adopter AC5"
+    },
+    {
+      "surface": "kboard",
+      "path": "docs/project-management/kanban/kboard.md",
+      "why": "E04:S19:T11 row version + Last modified"
+    },
+    {
+      "surface": "fbuboard",
+      "path": "docs/project-management/kanban/fbuboard.md",
+      "why": "UXR-017 row version + Last modified"
+    }
+  ],
+  "also_updated": [
+    "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md",
+    "docs/project-management/kanban/epics/epic-04/epic-04.md"
+  ]
+}

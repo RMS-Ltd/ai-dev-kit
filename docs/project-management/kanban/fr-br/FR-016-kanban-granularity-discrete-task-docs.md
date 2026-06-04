@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E04:S11:T07](../epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
+**Implementing Task:** [E04:S11:T07](../epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
 
 ---
 
@@ -183,8 +183,8 @@ This feature is needed:
 - Version: `v0.2.9.0+0` (Story creation)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`docs/project-management/kanban/epics/Epic-2/Story-009-kanban-granularity-discrete-task-docs.md`](../epics/Epic-2/Story-009-kanban-granularity-discrete-task-docs.md)
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`docs/project-management/kanban/epics/epic-02/story-09-kanban-granularity-discrete-task-docs.md`](../epics/epic-02/story-09-kanban-granularity-discrete-task-docs.md)
 - Task: See Story 9 task checklist
 
 ---

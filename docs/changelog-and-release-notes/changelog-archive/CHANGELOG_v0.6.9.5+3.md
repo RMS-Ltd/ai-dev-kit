@@ -23,5 +23,5 @@
 
 ## References
 
-- [T05 task doc](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)
+- [T05 task doc](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)
 - [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)

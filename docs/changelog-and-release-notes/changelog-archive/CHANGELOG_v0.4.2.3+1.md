@@ -133,7 +133,7 @@ These templates provide the structured format needed for FR/BR intake. They will
 
 - `packages/frameworks/kanban/templates/FR_TEMPLATE.md` (created)
 - `packages/frameworks/kanban/templates/BR_TEMPLATE.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.2.3+1)
 
 ---

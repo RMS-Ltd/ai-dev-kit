@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E4:S19:T02 - Planning: Spec, Tests, Implementation Plan (IPW) — LEGACY ALIAS
 
 > **Canonical artifact:** [`IPP-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md`](IPP-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md)  
-> **Successor planning artifact:** [`IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md`](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md) (meta IPP that supersedes T02 scope under [`E4:S19:T06`](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md))  
+> **Successor planning artifact:** [`IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md`](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md) (meta IPP that supersedes T02 scope under [`E4:S19:T06`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md))  
 > This file is retained under its legacy `IPW-` prefix as a backward-compatible alias per the canonical-prefix migration policy in [`IPP-E4S19T06` §2.4](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md). New references should target the canonical `IPP-` files above.
 
-**Host Task:** [`T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md`](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md) **(E4:S19:T02 — SUPERSEDED by E4:S19:T06)**  
+**Host Task:** [`T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md) **(E4:S19:T02 — SUPERSEDED by E4:S19:T06)**  
 **Planning for:** [FR-086 - Canonical supporting Kanban/FBU doc naming and `FBU` collective terminology](../project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)  
 **Status:** Superseded (historical content preserved below)
 
@@ -107,7 +107,7 @@ Define and implement a canonical naming + terminology contract for supporting Ka
 
 ## References
 
-- [Host task E4:S19:T02](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md)
+- [Host task E4:S19:T02](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md)
 - [FR-086](../project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
-- [Story 019](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md)
-- [Canonical board baseline T114](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)
+- [Story 019](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
+- [Canonical board baseline T114](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)

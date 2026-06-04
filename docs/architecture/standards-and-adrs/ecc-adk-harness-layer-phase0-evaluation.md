@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Complete (Phase 0)  
 **Date:** 2026-05-26  
-**Task:** [E6:S09:T04](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)  
+**Task:** [E6:S09:T04](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)  
 **Normative spec:** [Integration specification](./ecc-adk-harness-layer-integration-specification.md)  
 **Attribution:** See [spec §1](./ecc-adk-harness-layer-integration-specification.md#1-third-party-attribution)
 
@@ -108,7 +108,7 @@ git checkout dev && git branch -D spike/ecc-adk-phase0
 
 ## 5. Checklist evidence (summary)
 
-Full tables with evidence in [T04 task doc](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md).
+Full tables with evidence in [T04 task doc](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md).
 
 | Section | Result |
 |---------|--------|

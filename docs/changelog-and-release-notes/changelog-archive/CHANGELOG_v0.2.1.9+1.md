@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-04-02 17:24:57 UTC  
 **Epic:** 2 | **Story:** 1 | **Task:** 9  
-**Task doc:** [T09-rw-allow-in-progress-task-releases-br060.md](../../../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)  
+**Task doc:** [T09-rw-allow-in-progress-task-releases-br060.md](../../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)  
 **Associated BR:** [BR-060](../../../project-management/kanban/fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md) (traceability); [BR-061](../../../project-management/kanban/fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md) (filed — Step 1 / `version.py` alignment friction)
 
 ## Summary

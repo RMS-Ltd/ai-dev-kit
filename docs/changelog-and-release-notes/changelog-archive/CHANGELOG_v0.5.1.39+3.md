@@ -38,4 +38,4 @@ Legacy clean-up implementation (T39): clarified SoT vs specialisation in dev-kit
 
 - **Review report:** `docs/architecture/standards-and-adrs/ai-dev-kit-project-review.md`
 - **FR:** `docs/project-management/kanban/fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md`
-- **Task:** `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md`
+- **Task:** `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md`

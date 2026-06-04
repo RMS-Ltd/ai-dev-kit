@@ -62,7 +62,7 @@ This release implements Phase 2 of E6:S01:T33 (UKW Board Disorganization). A sor
    - Added sorting utility usage instructions to Step 6
    - Updated Key Rules section with script reference
 
-2. `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md`
+2. `docs/project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md`
    - Added Phase 2 implementation progress section
    - Updated acceptance criteria status
    - Added script usage examples
@@ -129,9 +129,9 @@ Agents executing UKW Step 6 should:
 ## Related Issues
 
 - **Bug Report:** [BR-033: UKW Board Disorganization](../../../project-management/kanban/fr-br/BR-033-ukw-board-disorganization.md)
-- **Task:** [E6:S01:T33: UKW Board Disorganization](../../../project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)
-- **Story:** [E6:S01: BR Repo](../../../project-management/kanban/epics/Epic-6/Story-001-br-repo.md)
-- **Epic:** [Epic 6: Framework Management and Maintenance](../../../project-management/kanban/epics/Epic-6/Epic-6.md)
+- **Task:** [E6:S01:T33: UKW Board Disorganization](../../../project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md)
+- **Story:** [E6:S01: BR Repo](../../../project-management/kanban/epics/epic-06/story-01-br-repo.md)
+- **Epic:** [Epic 6: Framework Management and Maintenance](../../../project-management/kanban/epics/epic-06/epic-06.md)
 
 ---
 

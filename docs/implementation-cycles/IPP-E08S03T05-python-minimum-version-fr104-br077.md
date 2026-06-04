@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E08:S03:T05 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T05-python-minimum-version-fr104-br077.md`](../project-management/kanban/epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md) **(E08:S03:T05)**  
+**Host Task:** [`T05-python-minimum-version-fr104-br077.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T05-python-minimum-version-fr104-br077.md) **(E08:S03:T05)**  
 **Planning for:** [FR-104](../project-management/kanban/fr-br/FR-104-python-minimum-version-policy-alignment.md), [BR-077](../project-management/kanban/fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)  
 **Status:** Approved (implementation authorized)
 
@@ -180,6 +180,6 @@ Policy → setup.py → README → user docs → maintenance → tests → FR/BR
 
 - [FR-104](../project-management/kanban/fr-br/FR-104-python-minimum-version-policy-alignment.md)
 - [BR-077](../project-management/kanban/fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
-- [E07:S06:T08](../project-management/kanban/epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
+- [E07:S06:T08](../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [`.github/workflows/framework-release.yml`](../../.github/workflows/framework-release.yml)

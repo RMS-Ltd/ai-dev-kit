@@ -78,19 +78,19 @@ This epic encompasses testing and quality assurance for the {PROJECT_NAME} proje
 
 **Brief Summary:** testing infrastructure setup for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-testing-infrastructure-setup.md`](Story-001-testing-infrastructure-setup.md)
+**Story Document:** [`story-01-testing-infrastructure-setup.md`](story-01-testing-infrastructure-setup.md)
 
 ### Story 2: Test Implementation
 
 **Brief Summary:** test implementation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-test-implementation.md`](Story-002-test-implementation.md)
+**Story Document:** [`story-02-test-implementation.md`](story-02-test-implementation.md)
 
 ### Story 3: Test Automation and CI/CD Integration
 
 **Brief Summary:** test automation and ci/cd integration for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-test-automation-and-cicd-integration.md`](Story-003-test-automation-and-cicd-integration.md)
+**Story Document:** [`story-03-test-automation-and-cicd-integration.md`](story-03-test-automation-and-cicd-integration.md)
 
 ---
 

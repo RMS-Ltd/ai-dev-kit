@@ -189,7 +189,7 @@ Following the established agent-driven execution pattern, the PIR workflow will 
 **Approach:**
 - PIR reports reference project version numbers (RC.EPIC.STORY.TASK+BUILD)
 - Link PIR to specific version releases for traceability
-- Use project versioning for PIR report naming (e.g., `PIR-Epic-2-v0.2.4.9+3.md`)
+- Use project versioning for PIR report naming (e.g., `PIR-epic-02-v0.2.4.9+3.md`)
 - **No separate PIR versioning** - PIR reports are artifacts of the project, not packages
 
 ### 3.3 Release Workflow Integration

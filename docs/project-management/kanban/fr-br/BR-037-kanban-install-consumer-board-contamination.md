@@ -90,7 +90,7 @@ As of the remediation work for **E06:S01:T37**:
 **Historical symptoms:**
 
 - Board titled `AI Dev Kit – Kanban Board` in a consumer repository.
-- Presence of dev-kit specific epics (e.g., `Epic-24/Epic-24.md – Book Related Work`) in a consumer project.
+- Presence of dev-kit specific epics (e.g., `epic-24/epic-24.md – Book Related Work`) in a consumer project.
 - Dev-kit FR/BR repo structure (`docs/project-management/kanban/fr-br/FR-0xx-*.md`) inside consumer trees.
 - Kanban install logs (before FR-047) lacking enough detail to reconstruct what happened.
 

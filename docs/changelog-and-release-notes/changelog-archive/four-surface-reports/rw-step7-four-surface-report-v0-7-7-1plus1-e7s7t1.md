@@ -24,7 +24,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md`
 - Changes:
   - Updated task doc T01: COMPLETE v0.7.7.1+1
 
@@ -62,18 +62,18 @@
 
 - Touched: **False**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews.md`
+  - `docs/project-management/kanban/epics/epic-07/story-07-code-reviews.md`
 
 ### Auxiliary: `epic_doc`
 
 - Touched: **False**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
+  - `docs/project-management/kanban/epics/epic-07/epic-07.md`
 
 ### Auxiliary: `uncategorized`
 
 - Touched: **True**
 - Changes:
   - Updated FR-107: IMPLEMENTED v0.7.7.1+1
-  - Updated Story-007 checklist and status
-  - Updated Epic-7 header
+  - Updated story-007 checklist and status
+  - Updated epic-07 header

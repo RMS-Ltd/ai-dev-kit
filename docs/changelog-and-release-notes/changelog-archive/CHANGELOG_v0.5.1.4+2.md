@@ -55,13 +55,13 @@ Established comprehensive documentation update triggers system with automatic an
 ### 📝 Documentation Updates
 
 **Story Document:**
-- Updated `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md`
+- Updated `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md`
 - Marked E5:S01:T04 as COMPLETE
 - Updated Story 1 status to COMPLETE (all tasks completed)
 - Added comprehensive deliverables list
 
 **Epic Document:**
-- Updated `docs/project-management/kanban/epics/Epic-5/Epic-5.md`
+- Updated `docs/project-management/kanban/epics/epic-05/epic-05.md`
 - Marked Story 1 as COMPLETE
 - Updated version to v0.5.1.4+1
 
@@ -74,8 +74,8 @@ Established comprehensive documentation update triggers system with automatic an
 ## Files Modified
 
 - `src/fynd_deals/version.py` (version bumped to v0.5.1.4+2, task and build updated)
-- `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md` (task status, story status, and version updated)
-- `docs/project-management/kanban/epics/Epic-5/Epic-5.md` (story checklist and version updated)
+- `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md` (task status, story status, and version updated)
+- `docs/project-management/kanban/epics/epic-05/epic-05.md` (story checklist and version updated)
 
 ---
 

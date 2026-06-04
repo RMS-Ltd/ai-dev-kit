@@ -153,8 +153,8 @@ This integration guide serves as the canonical reference for how Kanban, Version
 ## 📄 Files Changed
 
 - `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md` (status update)
-- `docs/project-management/kanban/epics/Epic-4.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md` (status update)
+- `docs/project-management/kanban/epics/epic-04.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.3.5+1)
 
 ---

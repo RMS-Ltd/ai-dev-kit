@@ -570,7 +570,7 @@ docs/use-cases/
 ## Related Work
 
 **Implementation:**
-- **Task:** [E2:S01:T06](../../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md#e2s01t06)
+- **Task:** [E2:S01:T06](../../epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06)
 - **BR/FR:** [BR-002](../../fr-br/BR-002-changelog-validator-ordering-bug.md)
 - **Documentation:** [Guide Title](../../guides/guide-title.md)
 ```

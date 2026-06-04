@@ -4,7 +4,7 @@
       "changes": ["Story 016 checklist: T13 COMPLETE v0.2.16.13+1"],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
       ],
       "surface": "story_doc",
       "touched": true
@@ -56,7 +56,7 @@
       "changes": ["T13 COMPLETE; IPP; validator; AC1–AC3 evidence"],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md"
       ],
       "surface": "task_doc",
       "touched": true

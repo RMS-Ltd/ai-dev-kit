@@ -493,8 +493,8 @@ Additional notes and observations...
 ## References
 
 - **Documentation Maintenance Policy:** `docs/architecture/standards-and-adrs/documentation-maintenance-policy.md`
-- **Epic 5:** `docs/project-management/kanban/epics/Epic-5/Epic-5.md`
-- **Story 1:** `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md`
+- **Epic 5:** `docs/project-management/kanban/epics/epic-05/epic-05.md`
+- **Story 1:** `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md`
 
 ---
 

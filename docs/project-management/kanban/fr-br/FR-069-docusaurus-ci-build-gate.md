@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent)  
 **Priority:** MEDIUM  
 **Status:** IMPLEMENTED (AC1–AC3 for merge delivery; AC2 optional manual)  
-**Assigned Task:** E05:S09:T05 — [`T05-docusaurus-ci-fr-069.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T05-docusaurus-ci-fr-069.md)
+**Assigned Task:** E05:S09:T05 — [`T05-docusaurus-ci-fr-069.md`](../epics/epic-05/story-09-docusaurus-documentation-portal/T05-docusaurus-ci-fr-069.md)
 
 ---
 

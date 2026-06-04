@@ -14,8 +14,8 @@ Published the canonical planning artifact for Story 016 perpetual-task governanc
 - Published canonical IPP artifact:
   - `docs/implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md`
 - Updated host task and story wiring:
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
 - Updated source FR wiring:
   - `docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`
 - Updated board discoverability rows:

@@ -83,9 +83,9 @@ This document provides the detailed migration plan for implementing the reposito
 ### Step 1: Renumber Epic 5 Stories (S01-S07 → S02-S08)
 
 **Files to Update:**
-- `Epic-5.md` (Story checklist)
-- `Story-001-*.md` → `Story-002-*.md` (rename files)
-- `Story-002-*.md` → `Story-003-*.md`
+- `epic-05.md` (Story checklist)
+- `story-01-*.md` → `story-02-*.md` (rename files)
+- `story-02-*.md` → `story-03-*.md`
 - ... (continue for all stories)
 - All task documents in each story directory
 - All references in FR/BR documents
@@ -104,14 +104,14 @@ This document provides the detailed migration plan for implementing the reposito
 ### Step 3: Create E5:S01 (FR Repo)
 
 **Create new story document:**
-- `Story-001-fr-repo.md`
-- Based on `Story-000-fr-repo.md` but updated for S01
+- `story-01-fr-repo.md`
+- Based on `story-00-fr-repo.md` but updated for S01
 - Abstract space: `v0.5.1.0+0`
 
 ### Step 4: Migrate E5:S00 Tasks to E5:S01
 
 **For each task (T31, T34, T35):**
-- Move task file: `Story-000-fr-repo/T31-*.md` → `Story-001-fr-repo/T31-*.md`
+- Move task file: `story-00-fr-repo/T31-*.md` → `story-01-fr-repo/T31-*.md`
 - Update task document (Task ID, version references)
 - Update FR document (task ID, version)
 - Update changelog entries
@@ -166,5 +166,5 @@ This document provides the detailed migration plan for implementing the reposito
 
 ---
 
-_This migration plan is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`Story-001-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md) for story context._
+_This migration plan is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`story-01-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md) for story context._
 

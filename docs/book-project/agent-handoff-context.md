@@ -116,7 +116,7 @@ As of **2026-05-26**, the project operates as **two separate repositories**:
 
 **Known Assets (from inventory):**
 - 8 manuscript/proposal files in `docs/book-proj/`
-- Epic 24 Kanban: `docs/project-management/kanban/epics/Epic-24/`
+- Epic 24 Kanban: `docs/project-management/kanban/epics/epic-24/`
 - Active branch: `epic/24-book-related-work`
 
 **Epic 24 Structure (private Kanban):**
@@ -230,7 +230,7 @@ git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 | Document | Purpose |
 |----------|---------|
 | `docs/book-proj/` | Manuscript drafts |
-| `docs/project-management/kanban/epics/Epic-24/` | Book Kanban |
+| `docs/project-management/kanban/epics/epic-24/` | Book Kanban |
 | [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Same ADR (retained in history) |
 | [FR-099](docs/project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | Migration FR (retained in history) |
 

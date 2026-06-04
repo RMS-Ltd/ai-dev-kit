@@ -30,7 +30,7 @@ E5:S01:T69 — **FR-064:** Removed [`.github/workflows/update-badges.yml`](../..
 
 ### Documentation
 
-- README HTML comment; FR-064 **COMPLETE**; T69 inventory + evidence; Epic-5 / Story-001 / boards; `fr-br-uxr-completed`; `kanban-completed`.
+- README HTML comment; FR-064 **COMPLETE**; T69 inventory + evidence; epic-05 / story-001 / boards; `fr-br-uxr-completed`; `kanban-completed`.
 
 ### Repository hygiene
 
@@ -41,4 +41,4 @@ E5:S01:T69 — **FR-064:** Removed [`.github/workflows/update-badges.yml`](../..
 ## References
 
 - [FR-064](../../../docs/project-management/kanban/fr-br/FR-064-shields-branch-private-repo-badges.md)
-- [T69](../../../docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T69-shields-branch-private-repo-fr-064.md)
+- [T69](../../../docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T69-shields-branch-private-repo-fr-064.md)

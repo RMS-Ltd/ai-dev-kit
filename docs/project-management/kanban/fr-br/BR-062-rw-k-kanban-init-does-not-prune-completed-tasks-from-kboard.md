@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-27 — wired as Bucket-D5 predecessor of FR-092 (active row hygiene consolidation). Original closure: 2026-04-10 — scope expanded and fixed via `E02:S01:T11`: active kboard MoSCOW cleanup now applies to both `kanban_init` and full RW Step 7 mode; category 4 edge tests include full-mode regression.  
 **Version:** v0.2.1.11+2  
 **Code:** BR-062  
-**Implementing Task:** [E02:S01:T11](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T11-rw-k-kanban-init-board-hygiene-for-completed-tasks-br062.md)
+**Implementing Task:** [E02:S01:T11](../epics/epic-02/story-01-rw-agent-execution-and-docs/T11-rw-k-kanban-init-board-hygiene-for-completed-tasks-br062.md)
 
 > **Predecessor of FR-092 (2026-04-27):** BR-062 fixed completed-row leak in RW Step 7 board hygiene. FR-092 consolidates active-row hygiene under one sub-program (BR-042 / BR-062 / FR-040 / FR-076). BR-062 remains valid as historical predecessor; the consolidation supersedes BR-042 (closed as duplicate of FR-090).
 

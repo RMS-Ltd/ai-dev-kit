@@ -72,4 +72,4 @@
 - **KB Article:** `docs/architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md`
 - **RW Step 11:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 11 section)
 - **Previous Release (v0.2.4.7+1):** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.4.7+1.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`

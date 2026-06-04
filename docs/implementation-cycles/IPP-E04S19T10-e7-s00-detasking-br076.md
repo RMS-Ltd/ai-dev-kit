@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E04:S19:T10 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T10-e7-s00-detasking-abstract-space-enforcement-br076.md`](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) **(E04:S19:T10)**  
+**Host Task:** [`T10-e7-s00-detasking-abstract-space-enforcement-br076.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) **(E04:S19:T10)**  
 **Planning for:** [BR-076](../project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)  
 **Status:** Approved
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF1 | `Story-000-uxr-repo.md` → ABSTRACT SPACE (`v0.7.0.0+0`); no active task checklist | BR-076 AC1, T10 AC1 |
+| RF1 | `story-00-uxr-repo.md` → ABSTRACT SPACE (`v0.7.0.0+0`); no active task checklist | BR-076 AC1, T10 AC1 |
 | RF2 | T01–T06 anchor docs → historical-only + redirect to semantic host | BR-076 AC2, T10 AC2 |
 | RF3 | UXR-005: single implementing path **E07:S01:T09**; no active S00 work rows | BR-076 AC3, T10 AC2 |
 | RF4 | Migration table in T10 doc | BR-076, T10 AC4 |
@@ -53,7 +53,7 @@ Complete the E7 slice of FR-072 Approach D: hollow **E07:S00** to match **E05:S0
 
 ### 2.2 Specification mapping
 
-RF1–RF3 delivered via Story-000 rewrite and anchor banners. RF4 via T10 migration table. RF5 via intake skill, FR_BR_INTAKE_GUIDE, KG-R2. RF6 via T08 coordination note.
+RF1–RF3 delivered via story-000 rewrite and anchor banners. RF4 via T10 migration table. RF5 via intake skill, FR_BR_INTAKE_GUIDE, KG-R2. RF6 via T08 coordination note.
 
 ### 2.3 Constraints
 
@@ -90,7 +90,7 @@ RF1–RF3 delivered via Story-000 rewrite and anchor banners. RF4 via T10 migrat
 | ID | Behavior / layer | Expected check |
 | -- | ---------------- | -------------- |
 | V1 | Active boards | No MoSCOW row uses E07:S00:T0x as implementing task |
-| V2 | Story-000 | Status ABSTRACT SPACE; no TODO/IN PROGRESS checklist rows |
+| V2 | story-000 | Status ABSTRACT SPACE; no TODO/IN PROGRESS checklist rows |
 | V3 | Anchor T01–T06 | Historical banner + primary implementing task link |
 | V4 | UXR-005 | Implementing Task = E07:S01:T09 only |
 | V5 | Intake docs | Explicit S00 prohibition for new tasks |
@@ -104,7 +104,7 @@ RF1–RF3 delivered via Story-000 rewrite and anchor banners. RF4 via T10 migrat
 | Step | Action | Deliverable |
 | ---- | ------ | ----------- |
 | **1** | Transition E04:S19:T10 TODO → IN PROGRESS | Task doc updated |
-| 2 | Wave 1: Hollow Story-000; Epic-7 S00 row | RF1 |
+| 2 | Wave 1: Hollow story-000; epic-07 S00 row | RF1 |
 | 3 | Wave 2: Historical banners T01–T06 | RF2 |
 | 4 | Wave 3: UXR-005 + kboard/fbuboard | RF3 |
 | 5 | Wave 4: Intake skill, FR_BR_INTAKE_GUIDE, KG-R2 | RF5 |
@@ -113,17 +113,17 @@ RF1–RF3 delivered via Story-000 rewrite and anchor banners. RF4 via T10 migrat
 
 ### 4.1 Files to create or modify
 
-- `docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo.md`
-- `docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo/T0*.md` (6 files)
+- `docs/project-management/kanban/epics/epic-07/story-00-uxr-repo.md`
+- `docs/project-management/kanban/epics/epic-07/story-00-uxr-repo/T0*.md` (6 files)
 - `docs/project-management/kanban/fr-br/UXR-005-*.md`, `BR-076-*.md`
 - `docs/project-management/kanban/kboard.md`, `fbuboard.md`
 - `.cursor/skills/intake-process/SKILL.md`
 - `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`, `kanban-governance-policy.md`
-- T10, T08, Story-019, Epic-4, Epic-7
+- T10, T08, story-019, epic-04, epic-07
 
 ### 4.2 Dependency order
 
-1. Story-000 hollow → anchors → UXR/boards → governance → closure → RW
+1. story-000 hollow → anchors → UXR/boards → governance → closure → RW
 
 ### 4.3 Documentation implementation steps
 
@@ -137,11 +137,11 @@ RF1–RF3 delivered via Story-000 rewrite and anchor banners. RF4 via T10 migrat
 
 | Doc ID | Path | Scope | Tied to |
 | ------ | ---- | ----- | ------- |
-| D-U1 | Story-000-uxr-repo.md | Abstract-only | RF1 |
+| D-U1 | story-00-uxr-repo.md | Abstract-only | RF1 |
 | D-U2 | T01–T06 anchors | Historical banners | RF2 |
 | D-U3 | UXR-005, E07S01T09, kboard, fbuboard | Single implementing path | RF3 |
 | D-U4 | intake-process SKILL, FR_BR_INTAKE_GUIDE, KG-R2 | S00 prohibition | RF5 |
-| D-U5 | BR-076, T08, T10, Story-019 | Closure | RF4, RF6 |
+| D-U5 | BR-076, T08, T10, story-019 | Closure | RF4, RF6 |
 
 ### 5.2 New documents to create
 
@@ -179,4 +179,4 @@ RF1–RF3 delivered via Story-000 rewrite and anchor banners. RF4 via T10 migrat
 
 - [BR-076](../project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)
 - [FR-072](../project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
-- [E5:S00](../project-management/kanban/epics/Epic-5/Story-000-fr-repo.md)
+- [E5:S00](../project-management/kanban/epics/epic-05/story-00-fr-repo.md)

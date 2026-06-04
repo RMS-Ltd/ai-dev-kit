@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E07:S01:T09 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`E07S01T09-kanban-template-governance.md`](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) **(E07:S01:T09)**  
+**Host Task:** [`E07S01T09-kanban-template-governance.md`](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) **(E07:S01:T09)**  
 **Planning for:** [UXR-005](../project-management/kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md)  
 **Status:** Approved
 
@@ -197,7 +197,7 @@ RF1 → spacing module + corpus pass. RF2–RF5 → policy and agent guides. RF3
 ## References
 
 - [UXR-005](../project-management/kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md)
-- [E07:S01:T09 task](../project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
+- [E07:S01:T09 task](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
 - [BR-076](../project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) (detasking context)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [kanban-board-guide.md](../project-management/kanban/kanban-board-guide.md) § Formatting Governance

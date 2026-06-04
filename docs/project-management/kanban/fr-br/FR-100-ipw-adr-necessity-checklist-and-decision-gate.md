@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** RESOLVED (v0.2.16.12+2 — E02:S16:T12)
 
-**Implementing Task:** [E02:S16:T12](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) (v0.2.16.12+2)
+**Implementing Task:** [E02:S16:T12](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) (v0.2.16.12+2)
 
 **Related:** [FR-042](./FR-042-implementation-planning-workflow-ipw.md), [FR-096](./FR-096-ipw-documentation-phases-update-create-and-housing.md), [FR-094](./FR-094-ipw-slash-command-and-task-state-transition-mandate.md), [ADR-004](../../../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md) (example of IPW-adjacent decision warranting ADR)
 

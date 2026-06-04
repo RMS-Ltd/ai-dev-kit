@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** ✅ FIXED (All acceptance criteria met, task complete)  
 
-**Implementing Task:** [E06:S01:T33](../epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)  
+**Implementing Task:** [E06:S01:T33](../epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md)  
 **Historical registry:** E06:S00:T33
 **GitHub Issue:** [TBD]  
 **Version:** v0.6.1.33+5
@@ -171,9 +171,9 @@ After running UKW, the Kanban board's Epics section is not properly ordered. Cur
 - Version: `v0.6.1.33+0` (doc-init, migrated from v0.6.0.33+0)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-6/Epic-6.md`](../epics/Epic-6/Epic-6.md)
-- Story: [`docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md`](../epics/Epic-6/Story-001-br-repo.md) (migrated from Story-000-br-repo)
-- Task: [`docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md`](../epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)
+- Epic: [`docs/project-management/kanban/epics/epic-06/epic-06.md`](../epics/epic-06/epic-06.md)
+- Story: [`docs/project-management/kanban/epics/epic-06/story-01-br-repo.md`](../epics/epic-06/story-01-br-repo.md) (migrated from story-00-br-repo)
+- Task: [`docs/project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md`](../epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md)
 
 ---
 
@@ -198,7 +198,7 @@ This BR was split from a mixed-scope document following the Standard Operating P
 - **UKW Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - **UKW Workflow:** `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
-- **UKW Task:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+- **UKW Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 - **Related FR:** [FR-034 - UKW Granular Control and Use Case Flags](FR-034-ukw-granular-control-and-use-case-flags.md)
 - **SoP:** [Mixed BR/FR Scope Handling](../../../architecture/standards-and-adrs/mixed-br-fr-scope-sop.md)
 

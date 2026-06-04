@@ -64,8 +64,8 @@ housekeeping_policy: keep
 - **Good:** Project has its own epic structure, no confusion
 
 **Epic Naming:** ⚠️ **DIVERGES**
-- Uses "Epic 1" (with space) instead of "Epic-1" (with hyphen)
-- Directory structure: `Epic 1/` instead of `Epic-1/`
+- Uses "Epic 1" (with space) instead of "epic-01" (with hyphen)
+- Directory structure: `Epic 1/` instead of `epic-01/`
 - **Difference:** Space vs hyphen in naming
 - **Impact:** Minor - different naming convention, but functional
 
@@ -81,7 +81,7 @@ housekeeping_policy: keep
 - **Impact:** Minor - different organization pattern
 
 **Naming Conventions:** ⚠️ **DIVERGES**
-- Epic naming: `Epic 1/Epic-1.md` (space in directory, hyphen in file)
+- Epic naming: `Epic 1/epic-01.md` (space in directory, hyphen in file)
 - Story naming: `E2S1-Description.md` (Epic-Story format)
 - Task naming: Embedded in stories vs separate files
 
@@ -124,7 +124,7 @@ housekeeping_policy: keep
 ❌ **What Doesn't Work:**
 
 1. **Epic Naming Convention**
-   - **Issue:** Uses "Epic 1" (with space) instead of "Epic-1" (with hyphen)
+   - **Issue:** Uses "Epic 1" (with space) instead of "epic-01" (with hyphen)
    - **Problem:** Inconsistent with ADK canonical
    - **Impact:** Minor - works but inconsistent
    - **Root Cause:** Pre-ADK structure, evolved before ADK existed
@@ -148,7 +148,7 @@ housekeeping_policy: keep
 ### 1.6 Recommendations
 
 **For This Project:**
-1. **Consider Epic Naming Migration** - Evaluate migrating to "Epic-1" format for consistency
+1. **Consider Epic Naming Migration** - Evaluate migrating to "epic-01" format for consistency
 2. **Task Organization** - Consider separating tasks into individual files for better granularity
 3. **Consider KB Path Migration** - Evaluate migrating to `kanban/epics/` path for consistency
 4. **None Otherwise** - Epic structure is correct, no mashup
@@ -156,7 +156,7 @@ housekeeping_policy: keep
 **For ADK:**
 1. **Support Legacy Naming**
    - ADK should support projects with different Epic naming conventions
-   - Support both "Epic 1" and "Epic-1" formats
+   - Support both "Epic 1" and "epic-01" formats
    - Make tools flexible for naming conventions
 
 2. **Support Different KB Paths**
@@ -782,7 +782,7 @@ None identified - no workflows present.
 | Aspect | ADK Canonical | free-party-promoter | Match? |
 |--------|---------------|---------------------|--------|
 | Epic Structure | Project-specific epics only | Project-specific epics (1-6) | ✅ YES (no mashup) |
-| Epic Naming | Epic-1 (hyphen) | Epic 1 (space) | ⚠️ DIVERGES |
+| Epic Naming | epic-01 (hyphen) | Epic 1 (space) | ⚠️ DIVERGES |
 | Story Structure | Stories under Epic directories | ✅ Matches | ✅ YES |
 | Task Structure | Tasks under Story directories | Tasks embedded in stories | ⚠️ DIVERGES |
 | File Organization | docs/project-management/kanban/epics/ | docs/project-management/epics/overview/ | ⚠️ DIVERGES |

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E02:S01:T10](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md)  
+**Implementing Task:** [E02:S01:T10](../epics/epic-02/story-01-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md)  
 **Historical registry:** E06:S01:T03
 
 ---
@@ -221,8 +221,8 @@ Added support for `update/*`, `maintenance/*`, and `upgrade/*` branch patterns i
 - Version: `0.2.1.7+1`
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)
 - Task: E02:S01:T07 (to be added to Story 1)
 
 ---

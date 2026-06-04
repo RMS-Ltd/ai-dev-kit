@@ -22,9 +22,9 @@ Kanban-init release anchoring E24:S01:T05. Raises the content development task f
 
 ### Book Project (E24)
 
-- **New:** `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development/T05-draft-chapter-1-this-isnt-working.md` — standalone task document for E24:S01:T05 with full input/deliverable/AC/approach spec
-- **New:** `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development/` — task directory created for S01 following E24:S05 pattern
-- **Updated:** `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development.md` — story file updated: title, overview, goal, task checklist, and references reframed for *Head First AI Dev Kit: The Vibe-Coder's Complete Guide*; T05 added to checklist
+- **New:** `docs/project-management/kanban/epics/epic-24/story-01-book-content-development/T05-draft-chapter-1-this-isnt-working.md` — standalone task document for E24:S01:T05 with full input/deliverable/AC/approach spec
+- **New:** `docs/project-management/kanban/epics/epic-24/story-01-book-content-development/` — task directory created for S01 following E24:S05 pattern
+- **Updated:** `docs/project-management/kanban/epics/epic-24/story-01-book-content-development.md` — story file updated: title, overview, goal, task checklist, and references reframed for *Head First AI Dev Kit: The Vibe-Coder's Complete Guide*; T05 added to checklist
 
 ### Chapter Structure & Drafts (produced in planning session, released here)
 

@@ -28,10 +28,10 @@ class Finding:
 
 
 CANONICAL_EPIC_PREFIXES = {
-    "Epic-1": "Core",
-    "Epic-2": "Workflow",
-    "Epic-3": "Numbering",
-    "Epic-4": "Kanban",
+    "epic-01": "Core",
+    "epic-02": "Workflow",
+    "epic-03": "Numbering",
+    "epic-04": "Kanban",
 }
 
 
@@ -66,8 +66,8 @@ def _classify_md(rel: Path, text: str) -> tuple[Classification, str]:
         if "Bug Report:" in text or "Feature Request:" in text:
             return "contaminated", "FR/BR repo document"
 
-    # Dev-kit epic/story patterns (Epic-5+, Epic-6 BR repo, etc.)
-    if "Epic-6/Story-001-br-repo" in rel_str or "Story-006-feature-requests" in rel_str:
+    # Dev-kit epic/story patterns (epic-05+, epic-06 BR repo, etc.)
+    if "epic-06/story-01-br-repo" in rel_str or "story-06-feature-requests" in rel_str:
         return "contaminated", "dev-kit BR/FR repository story"
 
     # Canonical epic overviews (consumer templates)

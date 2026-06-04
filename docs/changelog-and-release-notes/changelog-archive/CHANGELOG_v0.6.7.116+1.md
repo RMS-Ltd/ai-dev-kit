@@ -14,9 +14,9 @@ Filed FR-085 and housed task E6:S07:T116 for optional UKW reprioritization mode 
 - New FR intake:
   - `docs/project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md`
 - New implementing task:
-  - `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T116-ukw-optional-reprioritization-rp-flag-fr085.md`
+  - `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T116-ukw-optional-reprioritization-rp-flag-fr085.md`
 - Story wiring:
-  - `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md`
+  - `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md`
 - Board wiring:
   - `docs/project-management/kanban/fbuboard.md`
   - `docs/project-management/kanban/kboard.md`

@@ -17,13 +17,13 @@ This release completes **Task 2: Ingest versioning findings from fynd.deals Epic
 
 ### Task 2 Completion
 
-- ✅ Created **findings document** (`docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework/T002-fynd-deals-epic15-findings.md`)
+- ✅ Created **findings document** (`docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md`)
   - Analyzed versioning patterns from `packages/frameworks/numbering & versioning/` package
   - Extracted 12 reusable patterns (8 fully portable, 3 project-specific)
   - Documented key findings and recommendations
   - Identified that framework package already contains fynd.deals Epic 15 findings
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-alignment-with-versioning-framework.md`)
+- ✅ Updated **Story 001** (`story-01-dev-kit-alignment-with-versioning-framework.md`)
   - Marked Task 2 as complete in task checklist
   - Updated task details with completion status and findings reference
   - Added reference to findings document in References section
@@ -76,7 +76,7 @@ The findings document provides a comprehensive analysis of versioning patterns t
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework/T002-fynd-deals-epic15-findings.md` (new)
-- `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework.md` (updated)
+- `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md` (new)
+- `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework.md` (updated)
 - `src/fynd_deals/version.py` (version bumped to 0.3.1.2+1)
 

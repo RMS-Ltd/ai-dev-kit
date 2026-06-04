@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** LOW  
 **Status:** IMPLEMENTED
 
-**Implementing Tasks:** [E06:S09:T04](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) (Phase 0), [E06:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) (Phase 1), [E06:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (Phases 2–5)
+**Implementing Tasks:** [E06:S09:T04](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) (Phase 0), [E06:S09:T05](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) (Phase 1), [E06:S09:T06](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (Phases 2–5)
 
 ---
 
@@ -171,9 +171,9 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 
 **Kanban Links:**
 
-- Epic: [`docs/project-management/kanban/epics/Epic-6/Epic-6.md`](../epics/Epic-6/Epic-6.md)
-- Story: [`docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md`](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md)
-- Task: [`T04-ecc-harness-layer-phase0-compatibility-fr098.md`](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)
+- Epic: [`docs/project-management/kanban/epics/epic-06/epic-06.md`](../epics/epic-06/epic-06.md)
+- Story: [`docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md`](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md)
+- Task: [`T04-ecc-harness-layer-phase0-compatibility-fr098.md`](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)
 
 ---
 
@@ -189,9 +189,9 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 - [Phase 0 evaluation](../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) — matrix, procedure, **GO** for Phase 1
 - [Bridge template](../../../packages/frameworks/workflow%20mgt/config/ecc-adk-bridge.yaml.template)
 - [IPP-E06S09T04](../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md)
-- Phase 1 **COMPLETE:** [E06:S09:T05](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E06S09T05](../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
+- Phase 1 **COMPLETE:** [E06:S09:T05](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E06S09T05](../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
 - Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
-- **Phases 2–5:** [E06:S09:T06](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — **COMPLETE** **v0.6.9.6+3** (dogfood T8 on `throwaway/ecc-dogfood-E06S09T06`; dry-run only)
+- **Phases 2–5:** [E06:S09:T06](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — **COMPLETE** **v0.6.9.6+3** (dogfood T8 on `throwaway/ecc-dogfood-E06S09T06`; dry-run only)
 
 ---
 

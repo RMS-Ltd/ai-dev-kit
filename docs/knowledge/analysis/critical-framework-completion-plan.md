@@ -51,9 +51,9 @@ Complete the **critical framework work** that directly impacts canonical structu
 **Deliverable:**
 - Story template files for each typical story per epic
 - Organized in `templates/stories/` directory structure:
-  - `templates/stories/Epic-1/Story-1-Project-Foundation.md`
-  - `templates/stories/Epic-1/Story-2-Core-Infrastructure.md`
-  - `templates/stories/Epic-1/Story-3-Initial-Features.md`
+  - `templates/stories/epic-01/story-01-Project-Foundation.md`
+  - `templates/stories/epic-01/story-02-Core-Infrastructure.md`
+  - `templates/stories/epic-01/story-03-Initial-Features.md`
   - ... (for all epics and their typical stories)
 - Each story template includes:
   - Purpose and goal
@@ -78,8 +78,8 @@ Complete the **critical framework work** that directly impacts canonical structu
 - [ ] Templates follow consistent structure
 
 **Files to Create:**
-- `packages/frameworks/kanban/templates/stories/Epic-1/Story-1-Project-Foundation.md`
-- `packages/frameworks/kanban/templates/stories/Epic-1/Story-2-Core-Infrastructure.md`
+- `packages/frameworks/kanban/templates/stories/epic-01/story-01-Project-Foundation.md`
+- `packages/frameworks/kanban/templates/stories/epic-01/story-02-Core-Infrastructure.md`
 - ... (all typical stories for Epics 1-21)
 
 ---
@@ -99,8 +99,8 @@ Complete the **critical framework work** that directly impacts canonical structu
 **Deliverable:**
 - Task template files for each typical task per story
 - Organized in `templates/tasks/` directory structure:
-  - `templates/tasks/Epic-1/Story-1/T01-Project-Structure.md`
-  - `templates/tasks/Epic-1/Story-1/T02-Version-Control.md`
+  - `templates/tasks/epic-01/story-001/T01-Project-Structure.md`
+  - `templates/tasks/epic-01/story-001/T02-Version-Control.md`
   - ... (for all stories and their typical tasks)
 - Each task template includes:
   - Input and deliverable
@@ -127,8 +127,8 @@ Complete the **critical framework work** that directly impacts canonical structu
 **Note:** This is a large task. Consider creating templates for high-priority epics first (Epics 1-8), then expanding to project-specific epics (9-21).
 
 **Files to Create:**
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T01-Project-Structure.md`
-- `packages/frameworks/kanban/templates/tasks/Epic-1/Story-1/T02-Version-Control.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T01-Project-Structure.md`
+- `packages/frameworks/kanban/templates/tasks/epic-01/story-001/T02-Version-Control.md`
 - ... (all typical tasks for all stories)
 
 ---
@@ -174,7 +174,7 @@ Complete the **critical framework work** that directly impacts canonical structu
 
 **Files to Create:**
 - `packages/frameworks/kanban/templates/CONTEXTUALIZATION_GUIDE.md`
-- `packages/frameworks/kanban/templates/examples/contextualized/tiny-project/Epic-1-\{PROJECT_NAME\}-Core.md`
+- `packages/frameworks/kanban/templates/examples/contextualized/tiny-project/epic-01-\{PROJECT_NAME\}-Core.md`
 - `packages/frameworks/kanban/templates/examples/contextualized/small-project/...`
 - `packages/frameworks/kanban/templates/examples/contextualized/ambitious-project/...`
 

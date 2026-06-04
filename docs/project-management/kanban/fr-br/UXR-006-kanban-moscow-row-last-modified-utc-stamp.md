@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED — implementation **E06:S06:T61** (registry **E07:S00:T06**); **RW** **v0.6.6.61+1** (**SemVer** **v0.4.702+1**) 2026-04-02 — wired as Bucket-D7 predecessor of [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (forensic semantics owned by [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md))  
 **GitHub Issue:** _TBD_  
-**Repository Task:** [E07:S00:T06](../epics/Epic-7/Story-000-uxr-repo/T06-uxr-006-repository-anchor.md)
+**Repository Task:** [E07:S00:T06](../epics/epic-07/story-00-uxr-repo/T06-uxr-006-repository-anchor.md)
 
-**Implementation Task:** [E06:S06:T61](../epics/Epic-6/Story-006-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)
+**Implementation Task:** [E06:S06:T61](../epics/epic-06/story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)
 
 > **Predecessor of FR-092 (2026-04-27):** UXR-006 introduced the surface convention `| Last modified: YYYY-MM-DD HH:MM UTC` on MoSCOW rows. FR-092 (Wave 6, gating UXR-009) extends this to the **forensic semantics** layer (work-evidence gate at write boundary). UXR-006 remains valid as the surface-convention predecessor; the AC4 residual is owned by UXR-009 + FR-092 Wave 6.
 
@@ -97,9 +97,9 @@ Heuristic review of board structure, FR-051 parity between boards, and planning 
 **Kanban links:**
 
 - UXR: [UXR-006](UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)  
-- Registry task: [T06](../epics/Epic-7/Story-000-uxr-repo/T06-uxr-006-repository-anchor.md)  
-- Implementation task: [T61](../epics/Epic-6/Story-006-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)  
-- Story: [Story-006-feature-requests](../epics/Epic-6/Story-006-feature-requests.md) · [Story-000-uxr-repo](../epics/Epic-7/Story-000-uxr-repo.md)
+- Registry task: [T06](../epics/epic-07/story-00-uxr-repo/T06-uxr-006-repository-anchor.md)  
+- Implementation task: [T61](../epics/epic-06/story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)  
+- Story: [story-06-feature-requests](../epics/epic-06/story-06-feature-requests.md) · [story-00-uxr-repo](../epics/epic-07/story-00-uxr-repo.md)
 
 ---
 

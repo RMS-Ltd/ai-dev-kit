@@ -171,7 +171,7 @@ Comprehensive validation checks:
 - `setup.py`
 - `cli/__init__.py`
 - `cli/README.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md`
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md`
 - `src/fynd_deals/version.py`
 
 ---

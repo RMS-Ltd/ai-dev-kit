@@ -78,31 +78,31 @@ This epic encompasses architecture refactoring and code quality for the {PROJECT
 
 **Brief Summary:** define core contracts (protocols/interfaces) for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-define-core-contracts-protocolsinterfaces.md`](Story-001-define-core-contracts-protocolsinterfaces.md)
+**Story Document:** [`story-01-define-core-contracts-protocolsinterfaces.md`](story-01-define-core-contracts-protocolsinterfaces.md)
 
 ### Story 2: Repository Pattern Implementation
 
 **Brief Summary:** repository pattern implementation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-repository-pattern-implementation.md`](Story-002-repository-pattern-implementation.md)
+**Story Document:** [`story-02-repository-pattern-implementation.md`](story-02-repository-pattern-implementation.md)
 
 ### Story 3: Service Layer Refactoring
 
 **Brief Summary:** service layer refactoring for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-service-layer-refactoring.md`](Story-003-service-layer-refactoring.md)
+**Story Document:** [`story-03-service-layer-refactoring.md`](story-03-service-layer-refactoring.md)
 
 ### Story 4: Contract Enforcement System
 
 **Brief Summary:** contract enforcement system for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-004-contract-enforcement-system.md`](Story-004-contract-enforcement-system.md)
+**Story Document:** [`story-04-contract-enforcement-system.md`](story-04-contract-enforcement-system.md)
 
 ### Story 5: Code Quality Improvements
 
 **Brief Summary:** code quality improvements for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-005-code-quality-improvements.md`](Story-005-code-quality-improvements.md)
+**Story Document:** [`story-05-code-quality-improvements.md`](story-05-code-quality-improvements.md)
 
 ---
 

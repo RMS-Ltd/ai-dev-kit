@@ -339,5 +339,5 @@ This document analyzes different approaches for reserving task number ranges for
 
 ---
 
-_This analysis is part of Epic 9: Release Candidate Readiness. See `docs/project-management/kanban/epics/Epic-9/Epic-9.md` for epic context._
+_This analysis is part of Epic 9: Release Candidate Readiness. See `docs/project-management/kanban/epics/epic-09/epic-09.md` for epic context._
 

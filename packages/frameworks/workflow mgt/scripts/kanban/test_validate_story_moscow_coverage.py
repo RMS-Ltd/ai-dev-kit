@@ -60,8 +60,8 @@ def test_wont_have_counts_as_covered(tmp_path: Path):
 def test_cli_pass_on_fixture(tmp_path: Path):
     root = tmp_path
     kroot = root / "docs/project-management/kanban"
-    (kroot / "epics/Epic-10").mkdir(parents=True)
-    story = kroot / "epics/Epic-10/Story-001-sample.md"
+    (kroot / "epics/epic-10").mkdir(parents=True)
+    story = kroot / "epics/epic-10/story-01-sample.md"
     story.write_text(
         """**Code:** E10S01
 ## Task Checklist

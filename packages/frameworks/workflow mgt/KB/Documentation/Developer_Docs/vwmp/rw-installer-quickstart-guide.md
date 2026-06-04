@@ -276,7 +276,7 @@ VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{V
 EOF
 
 # 6. Create initial Kanban structure (if Mode C)
-mkdir -p docs/kanban/epics/Epic-1
+mkdir -p docs/kanban/epics/epic-01
 
 # 7. Test RW
 git checkout -b epic/1-setup

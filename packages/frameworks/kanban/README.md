@@ -24,7 +24,7 @@ package:
 
 **Consumer vs framework Kanban trees:** In a **consumer project**, your working Kanban lives at **`docs/project-management/kanban/`** at the repo root (epics, stories, board files). The framework’s own files (e.g. under `.ai-dev-kit/packages/frameworks/kanban/` or wherever the framework is installed) are the **framework’s internal** board and templates—**do not edit or use them as your project’s Kanban**. Always run the installer from your project root so that it creates/updates `docs/project-management/kanban/` in your repo.
 
-> **Note:** All references to specific projects (for example, *Confidentia*, *Epic 4*, or concrete paths like `docs/project-management/epics/overview/Epic 4/Epic-4.md`) are **examples only**.  
+> **Note:** All references to specific projects (for example, *Confidentia*, *Epic 4*, or concrete paths like `docs/project-management/epics/overview/Epic 4/epic-04.md`) are **examples only**.  
 > When you install this package, you should:
 > - Replace project names with your own.
 > - Replace file paths with your own KB structure.
@@ -151,8 +151,8 @@ structure:
     - TIER_DELEGATION_GUIDELINES.md     # Guidelines for proper tier delegation (Epic → Story → Task)
 
   examples/:
-    - Epic-4-Example.md                  # Real Epic (37 stories, 36 complete)
-    - Story-33-Example.md                # Real Story (3 tasks, all complete)
+    - epic-04-Example.md                  # Real Epic (37 stories, 36 complete)
+    - story-33-Example.md                # Real Story (3 tasks, all complete)
 
   guides/:
     - portfolio-kanban-alignment-playbook.md  # Alignment guide
@@ -247,9 +247,9 @@ After running the installer, you should see:
 🔍 Step 1: Detecting existing Kanban structure...
 📊 Step 2: Analyzing structure and generating migration plan...
 🔧 Installing canonical core epics from templates...
-  ✅ Epic 1 installed from template: Epic-1-Project-Core.md
-  ✅ Epic 2 installed from template: Epic-2-Workflow-Management.md
-  ✅ Epic 3 installed from template: Epic-3-Versioning.md
+  ✅ Epic 1 installed from template: epic-01-Project-Core.md
+  ✅ Epic 2 installed from template: epic-02-Workflow-Management.md
+  ✅ Epic 3 installed from template: epic-03-Versioning.md
   ...
 ✅ Installation complete!
 ```
@@ -493,13 +493,13 @@ step_3:
   action: "Create first Epic"
   template: "templates/EPIC_TEMPLATE.md"
   naming: "Epic-{N}-{Name}.md"
-  example: "Epic-1-User-Authentication.md"
+  example: "epic-01-User-Authentication.md"
 
 step_4:
   action: "Create first Story"
   template: "templates/STORY_TEMPLATE.md"
   naming: "Story-{N}-{Name}.md"
-  example: "Story-1-Login-System.md"
+  example: "story-01-Login-System.md"
 
 step_5:
   action: "Integrate with versioning"
@@ -681,8 +681,8 @@ tasks:
     files:
       - templates/EPIC_TEMPLATE.md
       - templates/STORY_TEMPLATE.md
-      - examples/Epic-4-Example.md
-      - examples/Story-33-Example.md
+      - examples/epic-04-Example.md
+      - examples/story-33-Example.md
 ```
 
 ### Phase 2: First Epic (Day 1-2)
@@ -796,18 +796,18 @@ project_root/
       epics/:
         overview/:                        # Epic documents
           Epic 1/:
-            Epic-1.md
+            epic-01.md
           Epic 2/:
-            Epic-2.md
+            epic-02.md
         templates/:
           EPIC_TEMPLATE.md
 
       kanban/:                            # Story documents (detailed)
         Epic 1/:
-          Story-1-Feature-Name.md
-          Story-2-Feature-Name.md
+          story-01-Feature-Name.md
+          story-02-Feature-Name.md
         Epic 2/:
-          Story-1-Feature-Name.md
+          story-01-Feature-Name.md
 
       stories/:
         templates/:
@@ -827,10 +827,10 @@ flat_structure:
   description: "All Epics and Stories in single directory"
   structure: |
     docs/kanban/
-      Epic-1-Name.md
-      Epic-2-Name.md
-      Story-1-Name.md
-      Story-2-Name.md
+      epic-01-Name.md
+      epic-02-Name.md
+      story-01-Name.md
+      story-02-Name.md
   pros:
     - Simple
     - Easy to navigate
@@ -841,13 +841,13 @@ hierarchical_structure:
   description: "Epics contain Stories (nested)"
   structure: |
     docs/epics/
-      Epic-1-Name/
-        Epic-1.md
-        Story-1-Name.md
-        Story-2-Name.md
-      Epic-2-Name/
-        Epic-2.md
-        Story-1-Name.md
+      epic-01-Name/
+        epic-01.md
+        story-01-Name.md
+        story-02-Name.md
+      epic-02-Name/
+        epic-02.md
+        story-01-Name.md
   pros:
     - Clear Epic-Story relationship
     - Organized by Epic
@@ -859,8 +859,8 @@ hybrid_structure:
   description: "Epics in one directory, Stories in another (Confidentia approach)"
   structure: |
     docs/project-management/
-      epics/overview/Epic 1/Epic-1.md
-      kanban/Epic 1/Story-1-Name.md
+      epics/overview/Epic 1/epic-01.md
+      kanban/Epic 1/story-01-Name.md
   pros:
     - Clear separation of concerns
     - Epic overviews separate from detailed stories
@@ -1154,7 +1154,7 @@ steps:
   1:
     action: "Create Epic document"
     template: "templates/EPIC_TEMPLATE.md"
-    output: "Epic-8-Mobile-App.md"  # Note: Canonical epics are 1-7, so new epics start at 8
+    output: "epic-08-Mobile-App.md"  # Note: Canonical epics are 1-7, so new epics start at 8
 
   2:
     action: "Define stories"
@@ -1165,7 +1165,7 @@ steps:
   3:
     action: "Create Story documents"
     template: "templates/STORY_TEMPLATE.md"
-    output: "Story-1-User-Login.md, Story-2-User-Profile.md, ..."
+    output: "story-01-User-Login.md, story-02-User-Profile.md, ..."
 
   4:
     action: "Track progress"
@@ -1578,8 +1578,8 @@ integration/workflow-management-integration.md
 **Optional Files:**
 ```bash
 # Examples (helpful for reference)
-examples/Epic-4-Example.md
-examples/Story-33-Example.md
+examples/epic-04-Example.md
+examples/story-33-Example.md
 
 # Guides (helpful for alignment)
 guides/portfolio-kanban-alignment-playbook.md
@@ -1763,15 +1763,15 @@ update_workflow:
 4. **Create first Epic:**
    ```bash
    cp myapp/docs/kanban/templates/EPIC_TEMPLATE.md \
-      myapp/docs/kanban/epics/Epic-1/Epic-1.md
-   # Edit Epic-1.md with your project details
+      myapp/docs/kanban/epics/epic-01/epic-01.md
+   # Edit epic-01.md with your project details
    ```
 
 5. **Create first Story:**
    ```bash
-   mkdir -p myapp/docs/kanban/epics/Epic-1
+   mkdir -p myapp/docs/kanban/epics/epic-01
    cp myapp/docs/kanban/templates/STORY_TEMPLATE.md \
-      myapp/docs/kanban/epics/Epic-1/Story-001.md
+      myapp/docs/kanban/epics/epic-01/Story-001.md
    # Edit Story-001.md with your project details
    ```
 
@@ -1826,19 +1826,19 @@ included_docs:
   - file: "templates/UXR_TEMPLATE.md"
     purpose: "User Experience Research (UXR) template for UX research reports"
 
-  - file: "examples/Epic-4-Example.md"
+  - file: "examples/epic-04-Example.md"
     purpose: "Real Epic with 37 stories"
 
-  - file: "examples/Story-33-Example.md"
+  - file: "examples/story-33-Example.md"
     purpose: "Real Story with 3 tasks"
 
-  - file: "examples/Epic-5-FR-Implementation-Example.md"
+  - file: "examples/epic-05-FR-Implementation-Example.md"
     purpose: "Example Epic 5 (FR Implementation) demonstrating canonical epic structure"
 
-  - file: "examples/Epic-6-BR-Implementation-Example.md"
+  - file: "examples/epic-06-BR-Implementation-Example.md"
     purpose: "Example Epic 6 (BR Implementation) demonstrating canonical epic structure"
 
-  - file: "examples/Epic-7-Codebase-Maintenance-Example.md"
+  - file: "examples/epic-07-Codebase-Maintenance-Example.md"
     purpose: "Example Epic 7 (UXR - User Experience Research) demonstrating canonical epic structure (Note: Epic 7 is now UXR, Codebase Maintenance moved to Epic 8)"
 
   - file: "guides/portfolio-kanban-alignment-playbook.md"

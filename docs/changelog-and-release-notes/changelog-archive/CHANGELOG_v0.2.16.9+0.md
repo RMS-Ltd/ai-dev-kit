@@ -20,13 +20,13 @@ FR-094 intake filing: `/ipw` slash command for Claude Code and mandatory task st
 ### New Files
 
 - `docs/project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md` — Feature request document. Two coupled requirements: (1) `/ipw` slash command for Claude Code with plan-mode enforcement and four sequential phase gates; (2) mandatory task state reconciliation steps as first and final items in every IPP produced by IPW (Step 1: `TODO → IN PROGRESS`; final step: reconcile to actual state — `COMPLETE`, `IN PROGRESS`, or `BLOCKED`).
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md` — Implementing task document for FR-094, housed in E2:S16. Status: TODO.
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md` — Implementing task document for FR-094, housed in E2:S16. Status: TODO.
 
 ### Updated Files
 
 - `docs/project-management/kanban/fbuboard.md` — FR-094 row added to Should Have (S) section, placed before FR-077 (the related IPW ownership contract FR it extends). Total FBU count updated to 75 (FR: 53).
 - `docs/project-management/kanban/kboard.md` — E2:S16:T09 row added to Should Have (S) section with HIGH priority.
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md` — T09 entry appended to task checklist (TODO).
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md` — T09 entry appended to task checklist (TODO).
 
 ---
 

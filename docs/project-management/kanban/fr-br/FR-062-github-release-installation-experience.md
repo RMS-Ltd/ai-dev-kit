@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IMPLEMENTED
 
-**Implementing Task:** [E05:S01:T62](../epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md)
+**Implementing Task:** [E05:S01:T62](../epics/epic-05/story-01-fr-repo/T62-github-release-installation-experience.md)
 
 ---
 

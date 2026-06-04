@@ -119,7 +119,7 @@ housekeeping_policy: archive
 - `cli/backends/selector.py` - Backend selection logic (new)
 - `cli/backends/__init__.py` - Package exports updated
 - `cli/backends/README.md` - Backend documentation (new)
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - Updated T04 status
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - Updated T04 status
 
 ---
 

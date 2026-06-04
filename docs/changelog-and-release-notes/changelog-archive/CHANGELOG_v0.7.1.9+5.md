@@ -42,4 +42,4 @@ Change implemented: operationalized **UXR-005** — `validate_kanban_moscow_spac
 
 ---
 
-**Task:** [E07:S01:T09](docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
+**Task:** [E07:S01:T09](docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)

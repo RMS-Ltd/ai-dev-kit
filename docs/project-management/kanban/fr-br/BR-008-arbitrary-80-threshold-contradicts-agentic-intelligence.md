@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** PENDING  
 
-**Implementing Task:** [E04:S09:T05](../epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md)
+**Implementing Task:** [E04:S09:T05](../epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md)
 **GitHub Issue:** [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)
 
 ---

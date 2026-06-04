@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-04-19 12:00:00 UTC  
 **Epic:** 6 | **Story:** 7 | **Task:** 103  
-**Task doc:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)  
+**Task doc:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)  
 **FR:** [FR-041](../../project-management/kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md) | **BR:** [BR-067](../../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
 
 ## Summary

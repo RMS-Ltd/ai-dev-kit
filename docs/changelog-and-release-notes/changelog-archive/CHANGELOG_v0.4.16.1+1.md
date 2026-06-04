@@ -45,8 +45,8 @@ Established the expectations baseline for the Kanban framework package to suppor
 
 ## Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review.md`
-- `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
+- `docs/project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review.md`
+- `docs/project-management/kanban/epics/epic-04/epic-04.md`
 - `docs/project-management/kanban/kanban-board.md`
 - `src/fynd_deals/version.py`
 

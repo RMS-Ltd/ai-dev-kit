@@ -23,7 +23,7 @@ This release completes **Task 1: Review existing integration documentation** for
   - Identified gaps between framework docs and dev-kit implementation
   - Documented findings and recommendations
 
-- ✅ **Analysis Report Created** (`T001-integration-docs-review.md`):
+- ✅ **Analysis Report Created** (`T01-integration-docs-review.md`):
   - Review of Numbering & Versioning integration
   - Review of Workflow Management integration
   - Cross-integration analysis
@@ -116,7 +116,7 @@ This release completes **Task 1: Review existing integration documentation** for
 This review provides the foundation for validating and documenting the integration between Kanban, Versioning, and Release Workflow systems within the dev-kit. The identified gaps will be addressed in subsequent tasks.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T001-integration-docs-review.md` (comprehensive review report)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T01-integration-docs-review.md` (comprehensive review report)
 
 ---
 
@@ -130,8 +130,8 @@ This review provides the foundation for validating and documenting the integrati
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T001-integration-docs-review.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T01-integration-docs-review.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.3.1+1)
 
 ---

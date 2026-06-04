@@ -26,7 +26,7 @@ housekeeping_policy: keep
 |-------|-------|
 | SHA | `f21bac102` |
 | Tag / release | `v0.1.4.3+1` — FR-099 Phase 2 book extraction |
-| Verification | No `docs/book-proj/`, no `docs/project-management/kanban/epics/Epic-24/` on tree |
+| Verification | No `docs/book-proj/`, no `docs/project-management/kanban/epics/epic-24/` on tree |
 
 ## Repository roles after Phase 3
 

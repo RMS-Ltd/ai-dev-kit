@@ -12,7 +12,7 @@ Reconciled host-task and FR requirement/acceptance state to match implemented `I
 ## Included
 
 - Updated host task acceptance state and metadata:
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
 - Updated FR-088 requirement and acceptance state:
   - `docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`
 

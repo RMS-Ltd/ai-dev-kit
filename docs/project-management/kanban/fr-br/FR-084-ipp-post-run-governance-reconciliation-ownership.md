@@ -17,8 +17,8 @@ housekeeping_policy: keep
 **Status:** SUPERSEDED by [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 **Superseded by:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
-**Implementing Task (current):** [E02:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) (FR-092 meta)  
-**Implementing Task (historical):** [E02:S15:T02](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md) (SUPERSEDED)
+**Implementing Task (current):** [E02:S15:T07](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) (FR-092 meta)  
+**Implementing Task (historical):** [E02:S15:T02](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md) (SUPERSEDED)
 **IPP (historical):** [`IPP-E02S15T02-ipp-post-run-governance-reconciliation-ownership.md`](../../../implementation-cycles/IPP-E02S15T02-ipp-post-run-governance-reconciliation-ownership.md)
 **IPP (current):** [IPP-E02S15T07](../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 

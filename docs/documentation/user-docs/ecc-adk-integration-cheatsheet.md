@@ -97,7 +97,7 @@ git branch -D "$BR"
 | Hooks/git rules in plan | Keep hooks off; extend `disabled_hooks` in bridge; re-dry-run |
 | Too many collisions | Stay ADK-only; ECC optional path documented but not enabled |
 
-Maintainer evidence: [T06 dogfood notes](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (dry-run on `throwaway/ecc-dogfood-e6s09t06`, **342** ops, validators PASS, no `--execute` on canonical repo).
+Maintainer evidence: [T06 dogfood notes](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (dry-run on `throwaway/ecc-dogfood-e6s09t06`, **342** ops, validators PASS, no `--execute` on canonical repo).
 
 ---
 
@@ -299,13 +299,13 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | Phase | What you get today |
 | ----- | ------------------ |
 | **0** | Spec, evaluation, bridge template — **done** |
-| **1** | `adk-*` skill pack + `validate_adk_ecc_skill_pack.py` — **done** ([T05](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)) |
-| **2** | `install_ecc_harness_optional.sh`, `validate_ecc_adk_bridge.py`, INSTALL optional step — **done** ([T06](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)) |
+| **1** | `adk-*` skill pack + `validate_adk_ecc_skill_pack.py` — **done** ([T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)) |
+| **2** | `install_ecc_harness_optional.sh`, `validate_ecc_adk_bridge.py`, INSTALL optional step — **done** ([T06](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)) |
 | **3** | Hook defaults in bridge template + cheatsheet §3G — **done** |
 | **4** | [AgentShield RW add-on doc](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md) — **done** |
 | **5** | Layered architecture + book sidebar (§11) — **done** |
 
-If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `skills/` tree from [T05](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md).
+If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `skills/` tree from [T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md).
 
 ---
 

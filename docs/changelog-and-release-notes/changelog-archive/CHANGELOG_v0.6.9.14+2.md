@@ -52,5 +52,5 @@ Isolated temp-dir replay produced the same story-prompt behaviour.
 ## Related
 
 - [BR-085](../project-management/kanban/fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
-- [T14](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)
+- [T14](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)
 - Prior fix release: [CHANGELOG_v0.6.9.14+1.md](CHANGELOG_v0.6.9.14+1.md)

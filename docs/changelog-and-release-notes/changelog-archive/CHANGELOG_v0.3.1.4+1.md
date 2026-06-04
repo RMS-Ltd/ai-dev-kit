@@ -35,7 +35,7 @@ This release completes **Task 4: Align dev-kit version.py and CHANGELOG with fra
   - Updated version file location note
   - Documented that legacy path is acceptable for now
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-alignment-with-versioning-framework.md`)
+- ✅ Updated **Story 001** (`story-01-dev-kit-alignment-with-versioning-framework.md`)
   - Marked Task 4 as complete in task checklist
   - Updated task details with completion status and summary
 
@@ -82,5 +82,5 @@ The version file and CHANGELOG are now fully aligned with the framework. The ver
 
 - `src/fynd_deals/version.py` (enhanced with documentation and validation notes)
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (updated version file location note)
-- `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework.md` (updated)
+- `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework.md` (updated)
 

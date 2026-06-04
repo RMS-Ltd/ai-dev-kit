@@ -640,7 +640,7 @@ The `epic_doc_pattern` supports variable substitution:
 - Branch: `epic/21-workflow-platform`
 - Epic extracted: `21`
 - Pattern: `docs/project-management/epics/overview/Epic {epic}/Epic-{epic}.md`
-- Resolved: `docs/project-management/epics/overview/Epic 21/Epic-21.md`
+- Resolved: `docs/project-management/epics/overview/Epic 21/epic-21.md`
 
 #### What Gets Updated
 
@@ -670,7 +670,7 @@ After execution, this step outputs:
 
 ```json
 {
-  "epic_doc": "docs/project-management/epics/overview/Epic 21/Epic-21.md",
+  "epic_doc": "docs/project-management/epics/overview/Epic 21/epic-21.md",
   "tasks_updated": 1,
   "version": "0.21.0.2"
 }

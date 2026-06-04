@@ -27,13 +27,13 @@ FR-037 implementation: Kanban governance policy updated with task prioritisation
 - **`packages/frameworks/kanban/policies/kanban-governance-policy.md`** – Task prioritisation section, MUST HAVE stack (bug-based) / queue (other), scripts/UKW/RW statement, COMPLETE definition, board guide reference
 - **`packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`** – Stack/queue for MUST HAVE; reference to governance policy
 - **`packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`** – FR-037 mention; Kanban policy alignment note
-- **`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md`** – Specification subsection (R01–R05 mapping)
+- **`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md`** – Specification subsection (R01–R05 mapping)
 - **`docs/project-management/kanban/fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md`** – R01–R05, NF01–NF03, acceptance criteria marked complete; manual UAT checklist
 
 ---
 
 ## References
 
-- **Task:** `docs/project-management/kanban/epics/Epic-5/Story-008-knowledge-base/T02-notion-hub-and-kb-index.md`
-- **Story:** `docs/project-management/kanban/epics/Epic-5/Story-008-knowledge-base.md`
+- **Task:** `docs/project-management/kanban/epics/epic-05/story-08-knowledge-base/T02-notion-hub-and-kb-index.md`
+- **Story:** `docs/project-management/kanban/epics/epic-05/story-08-knowledge-base.md`
 - **FR-037:** `docs/project-management/kanban/fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md`

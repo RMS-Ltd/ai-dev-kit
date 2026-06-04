@@ -101,8 +101,8 @@ This release adds comprehensive analysis of epic patterns across all projects to
 
 ## References
 
-- Epic 4: `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
-- Story 6: `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`
+- Epic 4: `docs/project-management/kanban/epics/epic-04/epic-04.md`
+- Story 6: `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md`
 - Analysis Document: `docs/documentation/engineering-and-platform/canonical-epic-pattern-analysis.md`
 - Comprehensive Structure: `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`
 

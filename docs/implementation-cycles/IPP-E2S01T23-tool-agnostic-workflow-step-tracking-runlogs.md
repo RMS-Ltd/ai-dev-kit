@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E02:S01:T23 — Planning: Tool-agnostic workflow step tracking + persisted run logs (IPW)
 
-**Host Task:** [`T23-tool-agnostic-workflow-step-tracking-and-runlogs.md`](../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) **(E02:S01:T23)**  
+**Host Task:** [`T23-tool-agnostic-workflow-step-tracking-and-runlogs.md`](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) **(E02:S01:T23)**  
 **Status:** Approved — implementation landed 2026-05-30
 
 > **IPW (Implementation Planning Workflow):** Consolidated planning package for E02:S01:T23. Supersedes missing `ICW-E06S07T18-specification.md` under legacy E06:S07:T18 housing.
@@ -202,8 +202,8 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## References
 
-- [E02:S01:T23 task doc](../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
-- [E06:S07:T18 superseded task](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+- [E02:S01:T23 task doc](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+- [E06:S07:T18 superseded task](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
 - [ADR-011](../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 - [ADR-008](../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
 - [IPP-E2S08T08](IPP-E2S08T08-forensic-logging-rollback-fr059.md)

@@ -41,8 +41,8 @@
   - `STORY_TEMPLATE.md`: T001 → T01, T002 → T02
   - `EPIC_TEMPLATE.md`: T001 → T01, T002 → T02
 - Updated Kanban examples to use Txx format:
-  - `Story-33-Example.md`: E4:S33:T001 → E4:S33:T01
-  - `Epic-4-Example.md`: E4:S34:T001 → E4:S34:T01
+  - `story-33-Example.md`: E4:S33:T001 → E4:S33:T01
+  - `epic-04-Example.md`: E4:S34:T001 → E4:S34:T01
   - `numbering-versioning-integration.md`: All examples updated
   - `README.md`: All examples updated
   - `FR_BR_INTAKE_AGENT_GUIDE.md`: T001 → T01
@@ -71,6 +71,6 @@
 ## Migration Notes
 - Existing tasks can keep their current format (backward compatible)
 - New tasks should use Txx format
-- Task file naming: `T01-*.md` instead of `T001-*.md`
+- Task file naming: `T01-*.md` instead of `T01-*.md`
 - Version numbers unaffected (numeric Task component remains the same)
 

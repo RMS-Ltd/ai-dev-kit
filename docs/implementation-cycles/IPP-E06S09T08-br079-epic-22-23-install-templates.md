@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E06:S09:T08 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T08-kanban-fresh-install-epic-22-23-templates-br079.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) **(E06:S09:T08)**  
+**Host Task:** [`T08-kanban-fresh-install-epic-22-23-templates-br079.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) **(E06:S09:T08)**  
 **Planning for:** [BR-079](../project-management/kanban/fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) · [GitHub #11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)  
 **Status:** Implemented (2026-06-03 — pending user verification / RW)
 
@@ -55,7 +55,7 @@ Fresh installs produce real Epic 22/23 starter docs (or a deliberate, documented
 
 | ID | Behavior | Expected check |
 | -- | -------- | -------------- |
-| T1 | Templates `Epic-22*.md` / `Epic-23*.md` exist or skip path documented | File glob / policy test |
+| T1 | Templates `epic-22*.md` / `epic-23*.md` exist or skip path documented | File glob / policy test |
 | T2 | Fresh install to tmpdir | Epic files do not contain `template not found` placeholder |
 | T3 | Log output | Success lines for E22/E23 or explicit SKIP with reason |
 
@@ -74,8 +74,8 @@ Fresh installs produce real Epic 22/23 starter docs (or a deliberate, documented
 
 ### 4.1 Files
 
-- `packages/frameworks/kanban/templates/epics/Epic-22/` (new)
-- `packages/frameworks/kanban/templates/epics/Epic-23/` (new)
+- `packages/frameworks/kanban/templates/epics/epic-22/` (new)
+- `packages/frameworks/kanban/templates/epics/epic-23/` (new)
 - `packages/frameworks/kanban/scripts/install_kanban_framework.py`
 
 ---

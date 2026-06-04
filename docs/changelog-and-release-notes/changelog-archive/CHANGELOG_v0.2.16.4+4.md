@@ -18,6 +18,6 @@
 
 ## References
 
-- **Task:** [T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md](docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- **Task:** [T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md](docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - **Board:** [fbuboard.md](docs/project-management/kanban/fbuboard.md)
 - **Handover context:** [HANDOVER-2026-04-25-ukw-rw-e2s16t04.md](docs/implementation-cycles/HANDOVER-2026-04-25-ukw-rw-e2s16t04.md)

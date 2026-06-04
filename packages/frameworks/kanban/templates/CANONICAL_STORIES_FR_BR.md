@@ -290,8 +290,8 @@ These canonical stories are designed to work with:
 - `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` - Canonical epic definitions
 - `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md` - Epic template
 - `packages/frameworks/kanban/templates/STORY_TEMPLATE.md` - Story template
-- `packages/frameworks/kanban/examples/Epic-5-FR-Implementation-Example.md` - Epic 5 example
-- `packages/frameworks/kanban/examples/Epic-6-BR-Implementation-Example.md` - Epic 6 example
+- `packages/frameworks/kanban/examples/epic-05-FR-Implementation-Example.md` - Epic 5 example
+- `packages/frameworks/kanban/examples/epic-06-BR-Implementation-Example.md` - Epic 6 example
 
 ---
 

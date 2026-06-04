@@ -270,7 +270,7 @@ docs/README.md
 
 ### 6.1 Canonical Pattern
 
-The dev-kit uses a **minimal subset** of the canonical KB pattern (see `T006-scalable-kb-pattern.md`):
+The dev-kit uses a **minimal subset** of the canonical KB pattern (see `T06-scalable-kb-pattern.md`):
 
 **Core Sections (Always Present):**
 - Architecture
@@ -297,16 +297,16 @@ The dev-kit uses a **minimal subset** of the canonical KB pattern (see `T006-sca
 - Adopt canonical pattern
 - Add optional sections as needed
 - Maintain 3-level default depth
-- See `T006-scalable-kb-pattern.md` for full guidance
+- See `T06-scalable-kb-pattern.md` for full guidance
 
 ---
 
 ## 7. Related Documents
 
-- `docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T001-kb-structure-analysis.md` – Structure analysis
-- `docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T002-kb-structure-principles.md` – Structure principles
-- `docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T003-kb-structure-migration-guide.md` – Migration guide
-- `docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit/T006-scalable-kb-pattern.md` – Scalable pattern
+- `docs/project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T01-kb-structure-analysis.md` – Structure analysis
+- `docs/project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T02-kb-structure-principles.md` – Structure principles
+- `docs/project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T03-kb-structure-migration-guide.md` – Migration guide
+- `docs/project-management/kanban/epics/epic-01/story-03-core-kb-structure-for-dev-kit/T06-scalable-kb-pattern.md` – Scalable pattern
 
 ---
 

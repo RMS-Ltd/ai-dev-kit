@@ -24,7 +24,7 @@
 
 - Touched: **False**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md`
 - Notes:
   - Surface within release scope but not touched by this run (idempotent no-op or already canonical).
 
@@ -59,15 +59,15 @@
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md`
 - Changes:
-  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md
+  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md
 
 ### Auxiliary: `epic_doc`
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Epic-1.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/epic-01.md`
 - Changes:
   - Updated Epic Last updated: 2026-05-26 (v0.1.4.4+1 – Kanban documentation setup)
 

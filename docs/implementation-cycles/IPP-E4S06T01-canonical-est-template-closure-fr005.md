@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # E4:S06:T01 — Planning: FR-005 canonical EST template system closure (IPW)
 
-**Host Task:** [`T01-canonical-est-template-closure-fr005.md`](../project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md) **(E4:S06:T01)**  
+**Host Task:** [`T01-canonical-est-template-closure-fr005.md`](../project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md) **(E4:S06:T01)**  
 **Planning for:** [FR-005](../project-management/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)  
 **Status:** Approved (planning complete — implementation blocked until explicit authorize)
 
-> **IPW:** Closure and hygiene for FR-005. Story-006 (T00–T10) already delivered the template corpus; this IPP plans audit, kanban/FR reconciliation, and RW — not re-generation of templates.
+> **IPW:** Closure and hygiene for FR-005. story-006 (T00–T10) already delivered the template corpus; this IPP plans audit, kanban/FR reconciliation, and RW — not re-generation of templates.
 
 ---
 
@@ -22,8 +22,8 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF1 | Discrete task doc exists and is bidirectionally wired to FR-005 and Story-006 | IPW plan, FR-042 |
-| RF2 | FR-005 closure audit: map FR-005-R1–R6 and FR acceptance criteria to evidence or explicit deferral | FR-005, Story-006 |
+| RF1 | Discrete task doc exists and is bidirectionally wired to FR-005 and story-006 | IPW plan, FR-042 |
+| RF2 | FR-005 closure audit: map FR-005-R1–R6 and FR acceptance criteria to evidence or explicit deferral | FR-005, story-006 |
 | RF3 | Reconcile `kboard`, `fbuboard`, `kanban-completed`, story checklist — single truth for T01 + FR-005 | Kanban drift |
 | RF4 | FR-005 status → **IMPLEMENTED** when audit satisfied or deferrals documented | FR-005 |
 | RF5 | IPP filed; `validate_ipw_publication_wiring.py --requested E4:S06:T01` passes | FR-042 |
@@ -38,9 +38,9 @@ housekeeping_policy: keep
 
 ### 1.3 Invariants and boundaries
 
-- **Invariants:** Story-006 embedded tasks T01–T10 remain the forensic record of delivery; closure does not rewrite history.
+- **Invariants:** story-006 embedded tasks T01–T10 remain the forensic record of delivery; closure does not rewrite history.
 - **In scope:** Audit matrix, kanban/FR sync, discrete task doc, optional follow-up note for FR-005-R5.
-- **Out of scope:** New template authoring waves; installer rewrites; changing ai-dev-kit live epic numbering vs adopter template numbering (documented in Story-006).
+- **Out of scope:** New template authoring waves; installer rewrites; changing ai-dev-kit live epic numbering vs adopter template numbering (documented in story-006).
 
 ---
 
@@ -48,13 +48,13 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Close [FR-005](../project-management/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) by proving Story-006 delivery satisfies FR intent, eliminating board/FR drift (T01 TODO on `kboard` while story marks T01 COMPLETE), and leaving a discrete task + audit trail for maintainers.
+Close [FR-005](../project-management/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) by proving story-006 delivery satisfies FR intent, eliminating board/FR drift (T01 TODO on `kboard` while story marks T01 COMPLETE), and leaving a discrete task + audit trail for maintainers.
 
 ### 2.2 Specification mapping
 
 | Requirement | Specification |
 |-------------|---------------|
-| RF1 | Host task at `Story-006/.../T01-canonical-est-template-closure-fr005.md` with `**Task ID:** E4:S06:T01` |
+| RF1 | Host task at `story-006/.../T01-canonical-est-template-closure-fr005.md` with `**Task ID:** E4:S06:T01` |
 | RF2 | §7 audit matrix (PASS/DEFER) populated from T1–T6 runs at IPW time |
 | RF3 | Implementation Step 4 updates boards; remove T01 from `kboard` Could; FR-005 off `fbuboard` active; fix `kanban-completed` version line |
 | RF4 | FR-005 criteria checked; status IMPLEMENTED on closure RW |
@@ -107,7 +107,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | T1 | Epic template corpus | 21 × `templates/epics/Epic-*.md` | **PASS** (21 files) |
 | T2 | Task template validator | `python .../generate_task_templates.py --validate` exit 0; 378/378 coverage | **PASS** |
 | T3 | Contextualization | `CONTEXTUALIZATION_GUIDE.md` + `examples/contextualized/{tiny,small,ambitious}-project/` | **PASS** |
-| T4 | Placeholders | Epics 1–7 use contextualization placeholders (e.g. `{PROJECT_NAME}`) | **PASS** (spot-check Epic-1) |
+| T4 | Placeholders | Epics 1–7 use contextualization placeholders (e.g. `{PROJECT_NAME}`) | **PASS** (spot-check epic-01) |
 | T5 | CANONICAL_EPICS | References `COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` | **PASS** |
 | T6 | Installer template source | `migrate_structure.py` uses `templates/epics/` not live `docs/.../epics/` | **PASS** (line ~255) |
 | T7 | FR-005 matrix | §7 all PASS or documented DEFER | **PASS** (one DEFER: R5) |
@@ -132,12 +132,12 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 **CREATE (IPW — done):**
 
 - `docs/implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md`
+- `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md`
 
 **UPDATE (implementation):**
 
 - `docs/project-management/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md` (checklist link)
+- `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md` (checklist link)
 - `docs/project-management/kanban/kboard.md`, `fbuboard.md`, `kanban-completed.md`, `fbu-completed.md`
 
 ### 4.2 Dependency order
@@ -153,7 +153,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | Doc ID | Path | Scope | Tied to |
 | ------ | ---- | ----- | ------- |
 | D-U1 | `FR-005-...md` | Status, criteria, implementing task link | RF4, Step 5 |
-| D-U2 | `Story-006-...md` | Checklist → discrete T01 | RF1 |
+| D-U2 | `story-06-...md` | Checklist → discrete T01 | RF1 |
 | D-U3 | `kboard.md`, `fbuboard.md`, `kanban-completed.md`, `fbu-completed.md` | Reconciliation | RF3 |
 
 ### 5.2 New documents to create
@@ -167,7 +167,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Gap / topic | Resolution |
 | ----------- | ---------- |
-| **FR-005-R5** systematic canonical addition process | **DEFER** — follow-up task/FR; interim: `CANONICAL_EPICS.md` § addition pattern + Story-006 T06. Not blocking IMPLEMENTED for corpus delivery. |
+| **FR-005-R5** systematic canonical addition process | **DEFER** — follow-up task/FR; interim: `CANONICAL_EPICS.md` § addition pattern + story-006 T06. Not blocking IMPLEMENTED for corpus delivery. |
 | `CANONICAL_ADDITION_PROCESS.md` | **NONE** in closure RW (deferred) |
 | Changelog archives | **NONE** |
 | Re-generate 378 tasks | **NONE** unless T2 fails on implementation |
@@ -179,7 +179,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links |
 | ------ | ---------------- | ------------------ | --------- | ------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md` | NOT_APPLICABLE | evergreen | T01 Input, References |
-| D-C2 | `.../T01-canonical-est-template-closure-fr005.md` | NOT_APPLICABLE | evergreen | FR-005, Story-006 |
+| D-C2 | `.../T01-canonical-est-template-closure-fr005.md` | NOT_APPLICABLE | evergreen | FR-005, story-006 |
 | D-U1–D-U3 | (see §5.1) | NOT_APPLICABLE | evergreen | Closure RW |
 
 ---
@@ -190,9 +190,9 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Ref | Requirement | Result | Evidence |
 | --- | ----------- | ------ | -------- |
-| FR-005-R1 | Epic templates 1–7+ in `templates/epics/` | **PASS** | 21 epic files; T01+T02 Story-006 |
-| FR-005-R2 | Story templates per epic | **PASS** | Story-006 T03; ~62 story files under `templates/stories/` |
-| FR-005-R3 | Task templates per story | **PASS** | Story-006 T04; 378 tasks; T2 validator |
+| FR-005-R1 | Epic templates 1–7+ in `templates/epics/` | **PASS** | 21 epic files; T01+T02 story-006 |
+| FR-005-R2 | Story templates per epic | **PASS** | story-006 T03; ~62 story files under `templates/stories/` |
+| FR-005-R3 | Task templates per story | **PASS** | story-006 T04; 378 tasks; T2 validator |
 | FR-005-R4 | Contextualization mechanism | **PASS** | `CONTEXTUALIZATION_GUIDE.md`, examples (T05) |
 | FR-005-R5 | Systematic addition process | **DEFER** | No standalone doc; partial in `CANONICAL_EPICS.md` |
 | FR-005-R6 | Usage guide | **PASS** | Contextualization guide + kanban `README.md` / setup guides (T07) |
@@ -219,8 +219,8 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 ## References
 
 - [FR-005](../project-management/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
-- [Story-006](../project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
-- [T01 host task](../project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)
+- [story-006](../project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
+- [T01 host task](../project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)
 - [COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md](../../packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

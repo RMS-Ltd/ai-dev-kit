@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E06:S07:T107](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)  
+**Implementing task:** [E06:S07:T107](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)  
 **Planning package:** [IPP-E06S07T107](../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)  
 **Related:** [BR-039](../../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md), [ide-whitelist-guide.md](../../developer-tools/ide-whitelist-guide.md), `.cursor/whitelist-patterns.yaml`
 
@@ -83,5 +83,5 @@ Adopters may copy `.cursor/whitelist-patterns.yaml` and substitute `{PROJECT_ROO
 ## References
 
 - [IPP-E06S07T107](../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
-- [T107](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
+- [T107](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
 - [ipw-adr-necessity-checklist.md](ipw-adr-necessity-checklist.md) — §2.5 REQUIRED for T107

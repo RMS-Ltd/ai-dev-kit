@@ -26,7 +26,7 @@ Completed RC sign-off criteria definition and remediation task creation for the 
 
 ### Added
 
-- **RC sign-off criteria and remediation tasks document** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T06-rc-sign-off-criteria-and-remediation-tasks.md`)
+- **RC sign-off criteria and remediation tasks document** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T06-rc-sign-off-criteria-and-remediation-tasks.md`)
   - Comprehensive RC sign-off criteria with clear pass/fail conditions
   - Remediation task list for identified gaps (all post-RC, non-blocking)
   - Minimum bar for RC approval established

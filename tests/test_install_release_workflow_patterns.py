@@ -84,7 +84,28 @@ def test_preview_pattern_matches_finds_files_under_kanban_root():
         assert samples == ["Epic-15/stories/E15-S01.md"]
 
 
-def test_detect_kanban_doc_patterns_prefers_fresh_install_layout():
+def test_detect_kanban_doc_patterns_prefers_lowercase_fresh_layout():
+    mod = _load_module()
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        kanban = "docs/project-management/kanban"
+        epic1 = root / kanban / "epics" / "epic-1" / "epic-1.md"
+        story1 = root / kanban / "epics" / "epic-1" / "story-009-greenfield.md"
+        epic1.parent.mkdir(parents=True, exist_ok=True)
+        epic1.write_text("# Epic 1", encoding="utf-8")
+        story1.write_text("# Story", encoding="utf-8")
+
+        epic_pat, story_pat, fresh = mod.detect_kanban_doc_patterns(root, kanban)
+
+        assert fresh is True
+        assert epic_pat == mod.FRESH_KANBAN_EPIC_PATTERN
+        assert story_pat == mod.FRESH_KANBAN_STORY_PATTERN
+        assert "epic-" in epic_pat
+        assert mod._pattern_match_score(root, kanban, epic_pat) >= 1
+        assert mod._pattern_match_score(root, kanban, story_pat) >= 1
+
+
+def test_detect_kanban_doc_patterns_legacy_capitalised_fresh_layout():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
@@ -98,10 +119,8 @@ def test_detect_kanban_doc_patterns_prefers_fresh_install_layout():
         epic_pat, story_pat, fresh = mod.detect_kanban_doc_patterns(root, kanban)
 
         assert fresh is True
-        assert epic_pat == mod.FRESH_KANBAN_EPIC_PATTERN
-        assert story_pat == mod.FRESH_KANBAN_STORY_PATTERN
-        assert mod._pattern_match_score(root, kanban, epic_pat) >= 1
-        assert mod._pattern_match_score(root, kanban, story_pat) >= 1
+        assert epic_pat == mod.LEGACY_FRESH_KANBAN_EPIC_PATTERN
+        assert story_pat == mod.LEGACY_FRESH_KANBAN_STORY_PATTERN
 
 
 def test_detect_kanban_board_default_prefers_kboard():

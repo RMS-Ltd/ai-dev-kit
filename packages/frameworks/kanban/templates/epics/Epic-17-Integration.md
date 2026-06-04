@@ -92,7 +92,7 @@ This epic encompasses integration with external services and third-party APIs, i
 - Coordinates with Epic 15 (Security) for integration security
 - *Parallel Development Candidacy:* Safe (can coordinate with other epics)
 
-> Full story: `docs/project-management/kanban/epics/Epic-17/Story-001-third-party-service-integration.md`
+> Full story: `docs/project-management/kanban/epics/epic-17/story-01-third-party-service-integration.md`
 
 ---
 
@@ -131,7 +131,7 @@ This epic encompasses integration with external services and third-party APIs, i
 - Coordinates with Epic 15 (Security) for webhook security
 - *Parallel Development Candidacy:* Blocked (requires Story 1 integration)
 
-> Full story: `docs/project-management/kanban/epics/Epic-17/Story-002-webhook-implementation.md`
+> Full story: `docs/project-management/kanban/epics/epic-17/story-02-webhook-implementation.md`
 
 ---
 
@@ -171,7 +171,7 @@ This epic encompasses integration with external services and third-party APIs, i
 - Coordinates with Epic 15 (Security) for payment security
 - *Parallel Development Candidacy:* Blocked (requires Story 2 webhooks)
 
-> Full story: `docs/project-management/kanban/epics/Epic-17/Story-003-payment-processing.md`
+> Full story: `docs/project-management/kanban/epics/epic-17/story-03-payment-processing.md`
 
 ---
 

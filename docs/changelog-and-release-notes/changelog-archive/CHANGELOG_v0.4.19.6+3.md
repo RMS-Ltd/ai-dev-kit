@@ -18,7 +18,7 @@
 
 ## References
 
-- Task: `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md`
+- Task: `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md`
 - IPP: `docs/implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md`
 - Board: `docs/project-management/kanban/fbuboard.md`
 - Structure: `docs/project-management/kanban/fbu-structure.md`

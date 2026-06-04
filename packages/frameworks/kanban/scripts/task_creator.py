@@ -19,8 +19,12 @@ Usage:
 """
 
 import re
+import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+sys.path.insert(0, str(Path(__file__).parent))
+import kanban_paths as kp
 from dataclasses import dataclass
 from datetime import datetime
 
@@ -169,18 +173,18 @@ class TaskCreator:
             return epic_story_mapping.story_match["story_number"]
         
         # New story - find next available story number
-        epic_path = self.kanban_path / "epics" / f"Epic-{epic_num}"
-        if not epic_path.exists():
+        epic_path = kp.resolve_epic_dir(self.kanban_path, epic_num)
+        if not epic_path or not epic_path.exists():
             return 1
         
         # Find highest story number
-        story_files = list(epic_path.glob("Story-*.md"))
+        story_files = list(epic_path.glob("story-*.md")) + list(epic_path.glob("Story-*.md"))
         if not story_files:
             return 1
         
         story_numbers = []
         for story_file in story_files:
-            match = re.search(r'Story-(\d+)', story_file.name)
+            match = re.search(r"[Ss]tory-(\d+)", story_file.name)
             if match:
                 story_numbers.append(int(match.group(1)))
         
@@ -616,11 +620,23 @@ housekeeping_policy: keep
         # Create sanitized filename from title
         filename = re.sub(r'[^\w\s-]', '', task_title)
         filename = re.sub(r'[-\s]+', '-', filename)
-        filename = f"T{task_num:02d}-{filename[:50]}.md"
-        
-        epic_path = self.kanban_path / "epics" / f"Epic-{epic_num}" / f"Story-{story_number:02d}"
-        epic_path.mkdir(parents=True, exist_ok=True)
-        
+        filename = f"{kp.task_file_prefix(task_num)}{filename[:50]}.md"
+
+        epic_dir = kp.resolve_epic_dir(self.kanban_path, epic_num) or (
+            self.kanban_path / "epics" / kp.epic_dir_name(epic_num)
+        )
+        story_seg = kp.segment_number(story_number)
+        story_dirs = [
+            d
+            for d in epic_dir.iterdir()
+            if d.is_dir() and d.name.startswith(f"story-{story_seg}-")
+        ]
+        if story_dirs:
+            epic_path = story_dirs[0]
+        else:
+            epic_path = epic_dir / f"story-{story_seg}"
+            epic_path.mkdir(parents=True, exist_ok=True)
+
         return epic_path / filename
     
     def _determine_task_priority(

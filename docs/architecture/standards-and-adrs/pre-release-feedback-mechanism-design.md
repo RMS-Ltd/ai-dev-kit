@@ -321,10 +321,10 @@ See `docs/guides/framework-consumption/adk-feedback-guide.md` for the user-facin
 
 ## References
 
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 6:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
-- **Task 3:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T03-design-pre-release-feedback-mechanism.md`
-- **Task 5:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T05-implement-feedback-mechanism.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 6:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
+- **Task 3:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T03-design-pre-release-feedback-mechanism.md`
+- **Task 5:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T05-implement-feedback-mechanism.md`
 
 ---
 

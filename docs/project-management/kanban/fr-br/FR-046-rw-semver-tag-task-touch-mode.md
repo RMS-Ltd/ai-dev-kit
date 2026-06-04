@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** XOforge (contributing to AI Dev Kit)  
 **Priority:** HIGH  
 **Status:** IMPLEMENTED  
-**Implementing Task:** [E05:S01:T46](../epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
+**Implementing Task:** [E05:S01:T46](../epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)  
 **GitHub Issue:** [#19](https://github.com/RMS-Ltd/ai-dev-kit/issues/19)
 
 ---
@@ -180,9 +180,9 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 
 **Kanban Links:**
 
-- Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
-- Story: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md)
-- Task: [`T46 – RW SemVer tag when task_touch`](../epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
+- Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md)
+- Task: [`T46 – RW SemVer tag when task_touch`](../epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
 
 ---
 

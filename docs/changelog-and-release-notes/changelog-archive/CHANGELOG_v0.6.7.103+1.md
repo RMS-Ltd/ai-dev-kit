@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-04-19 12:37:40 UTC  
 **Epic:** 6 | **Story:** 7 | **Task:** 103  
-**Task doc:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)  
+**Task doc:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)  
 **FR:** [FR-041](../../project-management/kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md) | **IPW:** [IPW-E6S07T103](../../implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md)
 
 ## Summary
@@ -15,7 +15,7 @@
 
 - **`docs/implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md`** — New IPW document (perpetual maintenance framing; Waves A–C for **BR-067** follow-through and adoption).
 - **T103 task doc** — **Input** / **References** wired to IPW; **Progress** and version markers updated.
-- **Story-007-adk-implementation-analysis-and-package-management.md** — T103 row: IPW pointer, task link path, summary line **v0.6.7.103+1**.
+- **story-07-adk-implementation-analysis-and-package-management.md** — T103 row: IPW pointer, task link path, summary line **v0.6.7.103+1**.
 
 ### Versioning registry
 

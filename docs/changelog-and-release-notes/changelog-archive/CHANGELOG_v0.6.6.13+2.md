@@ -18,7 +18,7 @@ T13 implementation complete: All phases done. CMW perpetual task pattern canonic
 
 ### Framework Templates
 
-- **CMW Perpetual Task Template Created:** `packages/frameworks/kanban/templates/tasks/Epic-2/Story-1/T05-CMW-Perpetual-Task-Pattern.md`
+- **CMW Perpetual Task Template Created:** `packages/frameworks/kanban/templates/tasks/epic-02/story-001/T05-CMW-Perpetual-Task-Pattern.md`
   - Template for creating CMW perpetual tasks in projects
   - Follows same pattern as UKW perpetual task template
   - Includes metadata requirements (`Task Type: Perpetual Maintenance`, `Build Warning Suppression: true`)
@@ -97,7 +97,7 @@ T13 implementation complete: All phases done. CMW perpetual task pattern canonic
 
 ## Related
 
-- **Task:** [T13-canonical-cmw-perpetual-task.md](../../../project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md)
+- **Task:** [T13-canonical-cmw-perpetual-task.md](../../../project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md)
 - **Feature Request:** [FR-026](../../../project-management/kanban/fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)
 - **Related Task:** T12 - Changelog Maintenance Workflow (CMW) - Perpetual Task
 - **Related Task:** T08 - Update Kanban Workflow (UKW) - Perpetual Task

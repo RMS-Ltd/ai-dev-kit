@@ -14,11 +14,11 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E07:S05:T03](../epics/Epic-7/Story-005-migration-uxr-research.md)  
-**Repository Task:** [E07:S00:T03](../epics/Epic-7/Story-000-uxr-repo/T03-uxr-003-repository-anchor.md)
+**Implementing Task:** [E07:S05:T03](../epics/epic-07/story-05-migration-uxr-research.md)  
+**Repository Task:** [E07:S00:T03](../epics/epic-07/story-00-uxr-repo/T03-uxr-003-repository-anchor.md)
 **GitHub Issue:** [#8](https://github.com/RMS-Ltd/ai-dev-kit/issues/8)  
-**Repository Task:** [E07:S00:T03](../epics/Epic-7/Story-000-uxr-repo/T03-uxr-003-repository-anchor.md)  
-**Implementation (synthesis):** [E07:S05:T03](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T03**
+**Repository Task:** [E07:S00:T03](../epics/epic-07/story-00-uxr-repo/T03-uxr-003-repository-anchor.md)  
+**Implementation (synthesis):** [E07:S05:T03](../epics/epic-07/story-05-migration-uxr-research.md) — see Story 5 **T03**
 
 ---
 
@@ -146,8 +146,8 @@ UAT findings from analyzing the Kanban migration process reveal critical gaps in
 - Version: `[TBD]`
 
 **Kanban Links:**
-- Epic: [`Epic-7.md`](../epics/Epic-7/Epic-7.md)
-- Story: [`Story-005-migration-uxr-research.md`](../epics/Epic-7/Story-005-migration-uxr-research.md)
+- Epic: [`epic-07.md`](../epics/epic-07/epic-07.md)
+- Story: [`story-05-migration-uxr-research.md`](../epics/epic-07/story-05-migration-uxr-research.md)
 - Task: [TBD]
 
 ---

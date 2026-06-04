@@ -90,7 +90,7 @@ This epic encompasses analytics, metrics, and business intelligence, including u
 - Coordinates with Epic 15 (Security) for privacy compliance
 - *Parallel Development Candidacy:* Safe (can coordinate with other epics)
 
-> Full story: `docs/project-management/kanban/epics/Epic-19/Story-001-analytics-infrastructure.md`
+> Full story: `docs/project-management/kanban/epics/epic-19/story-01-analytics-infrastructure.md`
 
 ---
 
@@ -126,7 +126,7 @@ This epic encompasses analytics, metrics, and business intelligence, including u
 - Depends on Story 1 (Analytics Infrastructure)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 infrastructure)
 
-> Full story: `docs/project-management/kanban/epics/Epic-19/Story-002-metrics-and-reporting.md`
+> Full story: `docs/project-management/kanban/epics/epic-19/story-02-metrics-and-reporting.md`
 
 ---
 
@@ -163,7 +163,7 @@ This epic encompasses analytics, metrics, and business intelligence, including u
 - Coordinates with Epic 10 (Data Management) for data warehouse
 - *Parallel Development Candidacy:* Blocked (requires Story 2 metrics)
 
-> Full story: `docs/project-management/kanban/epics/Epic-19/Story-003-business-intelligence.md`
+> Full story: `docs/project-management/kanban/epics/epic-19/story-03-business-intelligence.md`
 
 ---
 

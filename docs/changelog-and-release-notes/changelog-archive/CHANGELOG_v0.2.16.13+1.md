@@ -23,7 +23,7 @@ Change implemented: **E02:S16:T13** for **BR-059** — UKW agents must enumerate
 ## Changed
 
 - `.cursorrules`, `cursorrules-ukw-trigger-section.md`, `update-kanban-workflow-agent-execution.md`, `ukw/AGENTS.md` — Step 6 Part B.1 (BR-059)
-- **BR-059** Resolution; **T13**, **Story-016**, **T109** traceability, **T04** perpetual cross-reference
+- **BR-059** Resolution; **T13**, **story-016**, **T109** traceability, **T04** perpetual cross-reference
 - `workflow-initiation-cheatsheet.md` — UKW comprehensive note for Part B.1
 
 ---

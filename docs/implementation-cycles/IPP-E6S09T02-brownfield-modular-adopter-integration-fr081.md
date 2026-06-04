@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E6:S09:T02 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T02-brownfield-modular-adopter-integration-fr081.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) **(E6:S09:T02)**  
+**Host Task:** [`T02-brownfield-modular-adopter-integration-fr081.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) **(E6:S09:T02)**  
 **Planning for:** [FR-081 – Brownfield modular adopter integration](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)  
 **Status:** Approved
 
@@ -116,7 +116,7 @@ Brownfield adopters with existing repositories can determine **what must be wire
 | 3 | Update satellite user-docs (Wave B). | D2, D3, etc. |
 | 4 | README audit + installer messaging (Waves C–D). | D4, D5, scripts |
 | 5 | Add structural test TD7. | `tests/test_install_brownfield_docs.py` |
-| 6 | Close FR-081 + T02 ACs; Story-009 checklist. | Kanban traceability |
+| 6 | Close FR-081 + T02 ACs; story-009 checklist. | Kanban traceability |
 | **N** | Reconcile task → **COMPLETE** + `✅ COMPLETE (v{version})` after RW; update kboard/fbu as needed. | Forensic closure |
 
 ### 4.1 Files to create or modify
@@ -132,7 +132,7 @@ Brownfield adopters with existing repositories can determine **what must be wire
 - `packages/frameworks/workflow mgt/scripts/install_release_workflow.py`
 - `packages/frameworks/kanban/scripts/install_kanban_framework.py`
 - `tests/test_install_brownfield_docs.py`
-- Task T02, FR-081, Story-009
+- Task T02, FR-081, story-009
 
 ### 4.2 Dependency order
 
@@ -196,7 +196,7 @@ Brownfield adopters with existing repositories can determine **what must be wire
 
 ## References
 
-- [T02](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
+- [T02](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
 - [FR-081](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [IPW-E6S09T01](IPW-E6S09T01-greenfield-installation-fr080.md)

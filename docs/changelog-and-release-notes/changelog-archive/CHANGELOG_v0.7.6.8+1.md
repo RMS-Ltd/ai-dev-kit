@@ -32,11 +32,11 @@ E7:S06:T08: Audited `setup.py`, `requirements.txt`, `tests/requirements.txt` (no
 
 - **`tests/test_validation.py`** — Aligned with `validate_framework_spec`, `validate_backend`, `validate_version_string`, `is_valid_version`, exception-based API
 - **T08 task doc** — Full audit report, Version Anchor
-- **Story-006, Epic-7, kanban-board, kanban-completed** — T08 closure
+- **story-006, epic-07, kanban-board, kanban-completed** — T08 closure
 
 ---
 
 ## Related Work
 
-**Task:** [T08-dependency-and-tooling-audit.md](../../project-management/kanban/epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)  
+**Task:** [T08-dependency-and-tooling-audit.md](../../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)  
 **BR:** [BR-058](../../project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)

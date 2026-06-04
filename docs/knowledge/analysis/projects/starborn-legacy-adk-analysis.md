@@ -24,7 +24,7 @@ housekeeping_policy: keep
 **Overall Assessment:** Good (mature project with custom structure, NO Epic mashup)  
 **Key Findings:**
 - ✅ **NO Epic Mashup** - Epic 9 is "Ship Design Interface" (project-specific), NOT "Book Related Work"
-- ⚠️ Different Epic naming convention ("Epic-09" with zero-padding vs "Epic-9")
+- ⚠️ Different Epic naming convention ("epic-09" with zero-padding vs "epic-09")
 - ⚠️ Different KB structure (`docs/project-management/epics/overview/` vs `docs/project-management/kanban/epics/`)
 - ⚠️ Custom RW workflow (10-step, not using ADK framework directly)
 - ⚠️ No ADK frameworks as packages (no packages/frameworks/ directory)
@@ -69,8 +69,8 @@ housekeeping_policy: keep
 - **Good:** Project has its own epic structure, no confusion
 
 **Epic Naming:** ⚠️ **DIVERGES**
-- Uses "Epic-09" (with zero-padding) instead of "Epic-9" (without zero-padding)
-- Directory structure: `Epic-09/` instead of `Epic-9/`
+- Uses "epic-09" (with zero-padding) instead of "epic-09" (without zero-padding)
+- Directory structure: `epic-09/` instead of `epic-09/`
 - **Difference:** Zero-padding vs no zero-padding
 - **Impact:** Minor - different naming convention, but functional
 
@@ -86,12 +86,12 @@ housekeeping_policy: keep
 - **Impact:** Minor - different organization pattern
 
 **Naming Conventions:** ⚠️ **DIVERGES**
-- Epic naming: `Epic-09/Epic-09.md` (zero-padded)
+- Epic naming: `epic-09/epic-09.md` (zero-padded)
 - Story naming: `E09-S01.md` (Epic-Story format)
 - Task naming: Embedded in stories vs separate files
 
 **File Organization:** ⚠️ **DIVERGES**
-- Structure: `docs/project-management/epics/overview/Epic-09/E09-S01.md`
+- Structure: `docs/project-management/epics/overview/epic-09/E09-S01.md`
 - **Difference:** Uses `epics/overview/` instead of `kanban/epics/`
 - **Impact:** Minor - different path, but functional
 
@@ -134,7 +134,7 @@ housekeeping_policy: keep
 ❌ **What Doesn't Work:**
 
 1. **Epic Naming Convention**
-   - **Issue:** Uses "Epic-09" (with zero-padding) instead of "Epic-9" (without zero-padding)
+   - **Issue:** Uses "epic-09" (with zero-padding) instead of "epic-09" (without zero-padding)
    - **Problem:** Inconsistent with ADK canonical
    - **Impact:** Minor - works but inconsistent
    - **Root Cause:** Pre-ADK structure, evolved before ADK existed
@@ -158,7 +158,7 @@ housekeeping_policy: keep
 ### 1.6 Recommendations
 
 **For This Project:**
-1. **Consider Epic Naming Migration** - Evaluate migrating to "Epic-9" format for consistency
+1. **Consider Epic Naming Migration** - Evaluate migrating to "epic-09" format for consistency
 2. **Task Organization** - Consider separating tasks into individual files for better granularity
 3. **Consider KB Path Migration** - Evaluate migrating to `kanban/epics/` path for consistency
 4. **None Otherwise** - Epic structure is correct, no mashup
@@ -166,7 +166,7 @@ housekeeping_policy: keep
 **For ADK:**
 1. **Support Legacy Naming**
    - ADK should support projects with different Epic naming conventions
-   - Support both "Epic-09" and "Epic-9" formats
+   - Support both "epic-09" and "epic-09" formats
    - Make tools flexible for naming conventions
 
 2. **Support Different KB Paths**
@@ -835,7 +835,7 @@ None identified - scripts are well-designed.
 1. **Support Legacy Naming**
    - **What to Harden:** Support for projects with different Epic naming conventions
    - **How:**
-     - Support both "Epic-09" and "Epic-9" formats
+     - Support both "epic-09" and "epic-09" formats
      - Make tools flexible for naming conventions
      - Don't hardcode naming patterns
 
@@ -858,8 +858,8 @@ None identified - scripts are well-designed.
 ❌ **Anti-Patterns to Prevent:**
 
 1. **Hardcoded Naming**
-   - **Anti-Pattern:** Hardcoding "Epic-9" format in ADK tools
-   - **Why Bad:** Incompatible with projects using "Epic-09" format
+   - **Anti-Pattern:** Hardcoding "epic-09" format in ADK tools
+   - **Why Bad:** Incompatible with projects using "epic-09" format
    - **How to Prevent:** Make naming flexible, support both formats
 
 2. **Assuming Canonical Structure**
@@ -870,7 +870,7 @@ None identified - scripts are well-designed.
 **Current ADK Issues:**
 
 1. **Naming Hardcoding**
-   - **Issue:** ADK tools may hardcode "Epic-9" format
+   - **Issue:** ADK tools may hardcode "epic-09" format
    - **How to Fix:** Make naming flexible, support both formats
 
 2. **Structure Assumptions**
@@ -882,9 +882,9 @@ None identified - scripts are well-designed.
 🔄 **Improvements:**
 
 1. **Support Legacy Naming**
-   - **Current Approach:** May assume "Epic-9" format
+   - **Current Approach:** May assume "epic-09" format
    - **Better Approach:**
-     - Support both "Epic-09" and "Epic-9" formats
+     - Support both "epic-09" and "epic-09" formats
      - Make tools flexible for naming conventions
      - Don't hardcode naming patterns
 
@@ -935,7 +935,7 @@ None identified - scripts are well-designed.
    - Document as best practice
 
 2. **Support Legacy Naming** (Priority: Medium)
-   - Support both "Epic-09" and "Epic-9" formats
+   - Support both "epic-09" and "epic-09" formats
    - Make tools flexible for naming conventions
    - Don't hardcode naming patterns
 
@@ -1000,7 +1000,7 @@ None identified - scripts are well-designed.
 | Aspect | ADK Canonical | starborn_legacy | Match? |
 |--------|---------------|-----------------|--------|
 | Epic Structure | Project-specific epics only | Project-specific epics (01-18) | ✅ YES (no mashup) |
-| Epic Naming | Epic-9 (no zero-padding) | Epic-09 (zero-padding) | ⚠️ DIVERGES |
+| Epic Naming | epic-09 (no zero-padding) | epic-09 (zero-padding) | ⚠️ DIVERGES |
 | Story Structure | Stories under Epic directories | ✅ Matches | ✅ YES |
 | Task Structure | Tasks under Story directories | Tasks embedded in stories | ⚠️ DIVERGES |
 | File Organization | docs/project-management/kanban/epics/ | docs/project-management/epics/overview/ | ⚠️ DIVERGES |

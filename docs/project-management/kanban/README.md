@@ -30,12 +30,12 @@ kanban/
 │   ├── BR-XXX-*.md        # Bug Report documents
 │   └── UXR-XXX-*.md       # User Experience Research documents
 └── epics/
-    ├── Epic-1/            # Epic 1 directory (all files here)
-    │   ├── Epic-1.md      # Epic 1 overview
-    │   ├── Story-001-ai-dev-kit-kanban-and-versioning.md
+    ├── epic-01/            # Epic 1 directory (all files here)
+    │   ├── epic-01.md      # Epic 1 overview
+    │   ├── story-01-ai-dev-kit-kanban-and-versioning.md
     │   └── [other story files as needed]
-    ├── Epic-2/            # Epic 2 directory
-    │   ├── Epic-2.md
+    ├── epic-02/            # Epic 2 directory
+    │   ├── epic-02.md
     │   └── Story-XXX-*.md
     └── ...
 ```

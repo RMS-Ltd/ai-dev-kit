@@ -24,7 +24,7 @@ housekeeping_policy: keep
 **Created Migration Plan for Embedded Tasks to Discrete Task Documents:**
 
 1. **Created Task Document**
-   - `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md`
+   - `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md`
    - Follows canonical Task document template structure
    - Includes all required fields per FR-016:
      - Task ID (E4:S11:T07)
@@ -36,7 +36,7 @@ housekeeping_policy: keep
      - Next Actions
 
 2. **Created Migration Plan Document**
-   - `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md`
+   - `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md`
    - Comprehensive migration strategy
    - Current state analysis framework
    - Hybrid approach (automated + manual review)
@@ -59,11 +59,11 @@ housekeeping_policy: keep
 - **Phases:** Preparation → Pilot → Phased Rollout → Validation
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md`
+- `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md`
+- `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md`
 
 **Files Modified:**
-- `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs.md`
+- `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md`
 
 ---
 
@@ -144,7 +144,7 @@ housekeeping_policy: keep
 **Related:**
 - Epic 4, Story 11, Task 7
 - FR-016: Kanban Granularity & Discrete Task Docs (3-Tier Structure)
-- `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs.md`
+- `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-migrate-embedded-tasks-to-discrete-documents.md`
+- `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md`
+- `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md`
 

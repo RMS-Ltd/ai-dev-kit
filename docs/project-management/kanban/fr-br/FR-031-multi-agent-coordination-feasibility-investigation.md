@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (ai-dev-kit)  
 **Priority:** C (Could Have)  
 **Status:** WON'T HAVE (2026-05-29 — closed off board; investigation deferred)  
-**Implementing Task:** [E05:S01:T31](../epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)  
+**Implementing Task:** [E05:S01:T31](../epics/epic-05/story-01-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)  
 **GitHub Issue:** [TBD]  
 **Version:** v0.5.1.31+0 (migrated from v0.5.0.31+0; no delivery RW)
 
@@ -295,9 +295,9 @@ Investigate and assess feasibility of multi-agent coordination patterns for enha
 - Version: `v0.5.1.31+0` (story-level abstract space, migrated from v0.5.0.31+0)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
-- Story: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md) (migrated from Story-000-fr-repo)
-- Task: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md`](../epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)
+- Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md) (migrated from story-00-fr-repo)
+- Task: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md`](../epics/epic-05/story-01-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md)
 
 **Note:** This FR is assigned to the FR Repository (E5:S01, migrated from E5:S00) as Task 31. After the feasibility investigation is complete, implementation work (if approved) will be assigned to an appropriate Epic/Story based on the investigation findings.
 

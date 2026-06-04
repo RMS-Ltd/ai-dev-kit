@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** IN PROGRESS  
 
-**Implementing Task:** [E02:S01:T17](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
+**Implementing Task:** [E02:S01:T17](../epics/epic-02/story-01-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
 
 ---
 

@@ -328,8 +328,8 @@ python3 scripts/frameworks/framework-health-monitor.py \
 - **Framework Health Metrics:** `docs/architecture/standards-and-adrs/framework-health-metrics.md`
 - **Framework Update Procedures:** `docs/architecture/standards-and-adrs/framework-update-procedures.md`
 - **Framework Compatibility Tracking:** `docs/architecture/standards-and-adrs/framework-compatibility-tracking.md`
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 3:** `docs/project-management/kanban/epics/Epic-6/Story-003-framework-health-monitoring.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 3:** `docs/project-management/kanban/epics/epic-06/story-03-framework-health-monitoring.md`
 
 ---
 

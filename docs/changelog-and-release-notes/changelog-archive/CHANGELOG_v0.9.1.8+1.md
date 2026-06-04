@@ -60,7 +60,7 @@ This release implements the repository story abstract space resolution (E9:S01:T
 
 **Story Renumbering:**
 - S01-S07 → S02-S08 (files renamed, content updates pending)
-- Epic-6.md story checklist updated
+- epic-06.md story checklist updated
 
 **Repository Story Creation:**
 - E6:S01 (BR Repo) created as concrete repository story
@@ -101,25 +101,25 @@ This release implements the repository story abstract space resolution (E9:S01:T
 ### Created
 - `docs/architecture/standards-and-adrs/repository-story-migration-status.md`
 - `docs/architecture/standards-and-adrs/repository-story-migration-progress.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md`
+- `docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`
+- `docs/project-management/kanban/epics/epic-06/story-01-br-repo.md`
 - `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.9.1.8+1.md`
 
 ### Renamed
-- `Story-001-documentation-maintenance-framework.md` → `Story-002-documentation-maintenance-framework.md`
-- `Story-002-documentation-quality-assurance.md` → `Story-003-documentation-quality-assurance.md`
-- `Story-003-documentation-automation.md` → `Story-004-documentation-automation.md`
-- `Story-004-framework-documentation-management.md` → `Story-005-framework-documentation-management.md`
-- `Story-005-legacy-repository-incorporation.md` → `Story-006-legacy-repository-incorporation.md`
-- `Story-006-policy-documentation-structure.md` → `Story-007-policy-documentation-structure.md`
-- `Story-007-persistent-knowledge-base-investigation.md` → `Story-008-persistent-knowledge-base-investigation.md`
-- `Story-001-framework-version-management.md` → `Story-002-framework-version-management.md`
-- `Story-002-framework-update-and-migration.md` → `Story-003-framework-update-and-migration.md`
-- `Story-003-framework-health-monitoring.md` → `Story-004-framework-health-monitoring.md`
-- `Story-004-bug-reports.md` → `Story-005-bug-reports.md`
-- `Story-005-feature-requests.md` → `Story-006-feature-requests.md`
-- `Story-006-adk-implementation-analysis-and-package-management/` → `Story-007-adk-implementation-analysis-and-package-management/`
-- `Story-007-ai-dev-kit-cli-tool.md` → `Story-008-ai-dev-kit-cli-tool.md`
+- `story-01-documentation-maintenance-framework.md` → `story-02-documentation-maintenance-framework.md`
+- `story-02-documentation-quality-assurance.md` → `story-03-documentation-quality-assurance.md`
+- `story-03-documentation-automation.md` → `story-04-documentation-automation.md`
+- `story-04-framework-documentation-management.md` → `story-05-framework-documentation-management.md`
+- `story-05-legacy-repository-incorporation.md` → `story-06-legacy-repository-incorporation.md`
+- `story-06-policy-documentation-structure.md` → `story-07-policy-documentation-structure.md`
+- `story-07-persistent-knowledge-base-investigation.md` → `story-08-persistent-knowledge-base-investigation.md`
+- `story-01-framework-version-management.md` → `story-02-framework-version-management.md`
+- `story-02-framework-update-and-migration.md` → `story-03-framework-update-and-migration.md`
+- `story-03-framework-health-monitoring.md` → `story-04-framework-health-monitoring.md`
+- `story-04-bug-reports.md` → `story-05-bug-reports.md`
+- `story-05-feature-requests.md` → `story-06-feature-requests.md`
+- `story-06-adk-implementation-analysis-and-package-management/` → `story-07-adk-implementation-analysis-and-package-management/`
+- `story-07-ai-dev-kit-cli-tool.md` → `story-08-ai-dev-kit-cli-tool.md`
 - `T08-update-kanban-workflow-ukw.md` → `T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`
 - `T12-changelog-maintenance-workflow-cmw.md` → `T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`
 
@@ -127,10 +127,10 @@ This release implements the repository story abstract space resolution (E9:S01:T
 - `src/fynd_deals/version.py` - Version updated to v0.9.1.8+1
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` - T101+ policy added
 - `.cursorrules` - Updated UKW/CMW references (T101, T102)
-- `docs/project-management/kanban/epics/Epic-5/Epic-5.md` - Story checklist updated
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md` - Story checklist updated
-- `docs/project-management/kanban/epics/Epic-5/Story-000-fr-repo.md` - Updated to abstract space only
-- `docs/project-management/kanban/epics/Epic-6/Story-000-br-repo.md` - Updated to abstract space only
+- `docs/project-management/kanban/epics/epic-05/epic-05.md` - Story checklist updated
+- `docs/project-management/kanban/epics/epic-06/epic-06.md` - Story checklist updated
+- `docs/project-management/kanban/epics/epic-05/story-00-fr-repo.md` - Updated to abstract space only
+- `docs/project-management/kanban/epics/epic-06/story-00-br-repo.md` - Updated to abstract space only
 - All Epic 5 story files (S02-S08) - Headers and references updated
 - All Epic 5 task documents - Updated with new story numbers
 - All FR documents (FR-031, FR-034, FR-035) - Updated task IDs and versions
@@ -202,5 +202,5 @@ This release implements the repository story abstract space resolution (E9:S01:T
 
 ---
 
-_This changelog is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`Story-001-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md) for story context._
+_This changelog is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`story-01-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md) for story context._
 

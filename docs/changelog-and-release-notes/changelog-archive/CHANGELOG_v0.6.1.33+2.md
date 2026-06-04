@@ -54,13 +54,13 @@ This release implements partial fix for E6:S01:T33 (UKW Board Disorganization). 
 1. `docs/project-management/kanban/kanban-board.md`
    - Reordered epic sections to numerical order (E1-E11, E21, E24)
 
-2. `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md`
+2. `docs/project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md`
    - Status: TODO → IN PROGRESS
    - Version: v0.6.1.33+0 → v0.6.1.33+1 → v0.6.1.33+2
    - Added Implementation Progress section
    - Updated acceptance criteria (2 of 7 complete)
 
-3. `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md`
+3. `docs/project-management/kanban/epics/epic-06/story-01-br-repo.md`
    - Updated T33 task checklist entry
 
 4. `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
@@ -110,9 +110,9 @@ The following work remains to fully complete E6:S01:T33:
 ## Related Issues
 
 - **Bug Report:** [BR-033: UKW Board Disorganization](../../../project-management/kanban/fr-br/BR-033-ukw-board-disorganization.md)
-- **Task:** [E6:S01:T33: UKW Board Disorganization](../../../project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)
-- **Story:** [E6:S01: BR Repo](../../../project-management/kanban/epics/Epic-6/Story-001-br-repo.md)
-- **Epic:** [Epic 6: Framework Management and Maintenance](../../../project-management/kanban/epics/Epic-6/Epic-6.md)
+- **Task:** [E6:S01:T33: UKW Board Disorganization](../../../project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md)
+- **Story:** [E6:S01: BR Repo](../../../project-management/kanban/epics/epic-06/story-01-br-repo.md)
+- **Epic:** [Epic 6: Framework Management and Maintenance](../../../project-management/kanban/epics/epic-06/epic-06.md)
 
 ---
 

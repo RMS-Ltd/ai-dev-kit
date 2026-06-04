@@ -254,13 +254,13 @@ Ensure that when projects copy the Kanban framework structure, they receive only
 ### Files to Create/Update
 
 **New Files:**
-- `packages/frameworks/kanban/templates/epics/Epic-1-Project-Core.md` - Generic Epic 1 template (with &lbrace;PROJECT_NAME&rbrace; placeholder)
-- `packages/frameworks/kanban/templates/epics/Epic-2-Workflow-Management.md` - Epic 2 template
-- `packages/frameworks/kanban/templates/epics/Epic-3-Versioning.md` - Epic 3 template
-- `packages/frameworks/kanban/templates/epics/Epic-4-Kanban-Framework.md` - Epic 4 template
-- `packages/frameworks/kanban/templates/epics/Epic-5-FR-Implementation.md` - Epic 5 template
-- `packages/frameworks/kanban/templates/epics/Epic-6-BR-Implementation.md` - Epic 6 template
-- `packages/frameworks/kanban/templates/epics/Epic-7-Codebase-Maintenance.md` - Epic 7 template
+- `packages/frameworks/kanban/templates/epics/epic-01-Project-Core.md` - Generic Epic 1 template (with &lbrace;PROJECT_NAME&rbrace; placeholder)
+- `packages/frameworks/kanban/templates/epics/epic-02-Workflow-Management.md` - Epic 2 template
+- `packages/frameworks/kanban/templates/epics/epic-03-Versioning.md` - Epic 3 template
+- `packages/frameworks/kanban/templates/epics/epic-04-Kanban-Framework.md` - Epic 4 template
+- `packages/frameworks/kanban/templates/epics/epic-05-FR-Implementation.md` - Epic 5 template
+- `packages/frameworks/kanban/templates/epics/epic-06-BR-Implementation.md` - Epic 6 template
+- `packages/frameworks/kanban/templates/epics/epic-07-Codebase-Maintenance.md` - Epic 7 template
 
 **Files to Update:**
 - `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` - Update Epic 1 name to "Project Core", add template location reference
@@ -284,8 +284,8 @@ Ensure that when projects copy the Kanban framework structure, they receive only
 - Version: `v0.4.6.10+1` (T10 COMPLETE)
 
 **Kanban Links:**
-- Epic: [`epics/Epic-4/Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md`](../epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
+- Epic: [`epics/epic-04/epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`epics/epic-04/story-06-comprehensive-canonical-est-template-system.md`](../epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
 - Task: E04:S06:T10
 
 ---

@@ -13,13 +13,13 @@ Standardized FR-084/T02 governance wording to `IPP` and renamed the FR/task file
 
 - FR/task filename and wording normalization:
   - `docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md` (new)
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md` (new)
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md` (new)
   - removed legacy filenames:
     - `docs/project-management/kanban/fr-br/FR-084-ipw-post-run-governance-reconciliation-ownership.md`
-    - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipw-post-run-governance-reconciliation-ownership-fr084.md`
+    - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipw-post-run-governance-reconciliation-ownership-fr084.md`
 - Link/reference updates:
   - `docs/project-management/kanban/fbuboard.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md`
   - `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.2+1.md`
 
 ## Verification

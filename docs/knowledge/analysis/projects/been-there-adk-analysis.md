@@ -157,7 +157,7 @@ housekeeping_policy: keep
    - **Description:** Epic 9 from ai-dev-kit's own Kanban structure present in mobile app project
    - **Impact:** CRITICAL - Epic has no relevance to mobile app project
    - **Root Cause:** Project copied ai-dev-kit's own Kanban structure instead of using Kanban package template
-   - **Evidence:** `docs/project-management/kanban/epics/Epic-9/Epic-9.md` exists with "Book Related Work" content
+   - **Evidence:** `docs/project-management/kanban/epics/epic-09/epic-09.md` exists with "Book Related Work" content
 
 2. **Framework Infrastructure Epics (1-8) in Project**
    - **Description:** Epics 1-8 are framework infrastructure epics from ai-dev-kit repo
@@ -824,8 +824,8 @@ None identified - scripts are correct.
 ### 10.1 File Inventory
 
 **Kanban Files:**
-- `docs/project-management/kanban/epics/Epic-1/` through `Epic-9/` (framework epics)
-- `docs/project-management/kanban/epics/Epic-20/` (project epic)
+- `docs/project-management/kanban/epics/epic-01/` through `epic-09/` (framework epics)
+- `docs/project-management/kanban/epics/epic-20/` (project epic)
 - Multiple stories and tasks per epic
 
 **KB Files:**

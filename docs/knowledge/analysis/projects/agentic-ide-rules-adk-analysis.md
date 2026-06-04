@@ -173,7 +173,7 @@ housekeeping_policy: keep
    - **Description:** Epic 9 from ai-dev-kit's own Kanban structure present in rules project
    - **Impact:** CRITICAL - Epic has no relevance to rules project
    - **Root Cause:** Manual copy of ai-dev-kit's own Kanban structure instead of using installer
-   - **Evidence:** `docs/project-management/kanban/epics/Epic-9/Epic-9.md` exists with "Book Related Work" content
+   - **Evidence:** `docs/project-management/kanban/epics/epic-09/epic-09.md` exists with "Book Related Work" content
    - **Self-Awareness:** Project discovered and reported issue (BR-kanban-installation-issue.md)
 
 2. **Framework Infrastructure Epics (1-8) in Project**
@@ -863,7 +863,7 @@ None identified - scripts are correct.
 ### 10.1 File Inventory
 
 **Kanban Files:**
-- `docs/project-management/kanban/epics/Epic-1/` through `Epic-10/` (Epics 1-9 framework, Epic 10 project)
+- `docs/project-management/kanban/epics/epic-01/` through `epic-10/` (Epics 1-9 framework, Epic 10 project)
 - Multiple stories and tasks per epic
 - Bug report: `docs/project-management/kanban/fr-br/BR-kanban-installation-issue.md`
 

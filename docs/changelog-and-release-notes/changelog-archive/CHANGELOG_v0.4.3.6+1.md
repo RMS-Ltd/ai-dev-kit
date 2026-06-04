@@ -51,7 +51,7 @@ This release completes **Task 6: Document integration examples and edge cases**.
 - Shows forensic marker creation and traceability
 
 **Example 2: Multiple Tasks in Same Story**
-- 7 Tasks example (T001-T008) with version sequence
+- 7 Tasks example (T01-T008) with version sequence
 - Shows Task transitions and BUILD resets
 - Demonstrates Epic Story Checklist format with Task completion list
 
@@ -127,7 +127,7 @@ This release completes **Task 6: Document integration examples and edge cases**.
 This examples and edge cases document complements the integration guide (T005) by providing concrete worked examples and edge case solutions. Together, they provide comprehensive documentation for using the integrated system in practice.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T006-integration-examples.md` (comprehensive examples and edge cases documentation)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T06-integration-examples.md` (comprehensive examples and edge cases documentation)
 
 ---
 
@@ -140,9 +140,9 @@ This examples and edge cases document complements the integration guide (T005) b
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T006-integration-examples.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md` (status update)
-- `docs/project-management/kanban/epics/Epic-4.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T06-integration-examples.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md` (status update)
+- `docs/project-management/kanban/epics/epic-04.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.3.6+1)
 
 ---

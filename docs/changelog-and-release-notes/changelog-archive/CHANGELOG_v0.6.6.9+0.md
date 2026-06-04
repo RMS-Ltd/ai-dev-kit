@@ -61,10 +61,10 @@ T09 serves as a bridge between T02 (Investigation) and T04 (Implementation Plan)
 
 ## Files Changed
 
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T09-review-and-prioritize-package-management-investigation.md` (new)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T09-review-and-prioritize-package-management-investigation.md` (new)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 - `docs/project-management/kanban/kanban-board.md`
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+- `docs/project-management/kanban/epics/epic-06/epic-06.md`
 - `src/fynd_deals/version.py`
 
 ---

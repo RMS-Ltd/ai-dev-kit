@@ -37,7 +37,7 @@ Attempted fix for silent wrong RW attribution when user shorthand task ids typo 
 - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md` — same; TODO lists include `rw-step-1b`
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` — Step 1.5
 - `docs/project-management/kanban/fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md` — attempted resolution notes; `PENDING_VERIFICATION`
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md` — status / criteria
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md` — status / criteria
 
 ### Fixed
 - `packages/frameworks/workflow mgt/scripts/kanban/ukw_syntax_parser.py` — duplicate empty `normalize_task_id` stub (IndentationError on import)

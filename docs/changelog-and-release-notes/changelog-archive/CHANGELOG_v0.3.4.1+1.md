@@ -26,7 +26,7 @@ Established comprehensive expectations baseline for the Numbering & Versioning f
 
 ### Added
 
-- **Expectations baseline document** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T01-expectations-baseline.md`)
+- **Expectations baseline document** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T01-expectations-baseline.md`)
   - Core operating principles (standalone usage, copy vs reference pattern, independence score 10/10)
   - Versioning schema definition (`RC.EPIC.STORY.TASK+BUILD`) with calculation rules
   - SemVer mapping for external releases (Hybrid Approach algorithm)
@@ -38,12 +38,12 @@ Established comprehensive expectations baseline for the Numbering & Versioning f
 
 ### Changed
 
-- **Story document** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review.md`)
+- **Story document** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review.md`)
   - Marked E3:S04:T01 as COMPLETE (v0.3.4.1+1)
   - Updated story status to IN PROGRESS
   - Updated last updated timestamp and version
 
-- **Epic document** (`docs/project-management/kanban/epics/Epic-3/Epic-3.md`)
+- **Epic document** (`docs/project-management/kanban/epics/epic-03/epic-03.md`)
   - Updated Story 4 status to IN PROGRESS
   - Updated last updated timestamp and version
   - Added task completion marker for T01

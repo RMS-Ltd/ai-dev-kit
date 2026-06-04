@@ -21,7 +21,7 @@
 
 - **`T32`** — Task doc; forensic markers for **`v0.5.1.32+0`**.  
 - **`FR-032`** — **`Implementing Task:`** ↔ **T32**.  
-- **`fr-br-uxr-board.md`**, **`Story-001`**, **`Epic-5`**, **`T73`** — Board table + MoSCOW + checklist alignment.
+- **`fr-br-uxr-board.md`**, **`story-001`**, **`epic-05`**, **`T73`** — Board table + MoSCOW + checklist alignment.
 
 ---
 

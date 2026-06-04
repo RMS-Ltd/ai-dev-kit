@@ -142,8 +142,8 @@ This pattern marks todos as completed but doesn't remove them.
 
 ## Kanban Links
 
-- Story: [E6:S01: BR Repo (PERPETUAL)](../epics/Epic-6/Story-001-br-repo.md)
-- Task: [E06:S01:T35: RW Housekeeping Step Not Working](../epics/Epic-6/Story-001-br-repo/T35-rw-housekeeping-step-not-working.md)
+- Story: [E6:S01: BR Repo (PERPETUAL)](../epics/epic-06/story-01-br-repo.md)
+- Task: [E06:S01:T35: RW Housekeeping Step Not Working](../epics/epic-06/story-01-br-repo/T35-rw-housekeeping-step-not-working.md)
 
 ---
 

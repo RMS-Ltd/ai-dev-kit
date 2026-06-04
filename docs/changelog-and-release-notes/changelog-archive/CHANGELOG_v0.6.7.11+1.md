@@ -119,7 +119,7 @@ housekeeping_policy: archive
 
 - `cli/commands/remove.py` - Remove command implementation (new)
 - `cli/main.py` - Remove command registration
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - Updated T11 status
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - Updated T11 status
 
 ---
 

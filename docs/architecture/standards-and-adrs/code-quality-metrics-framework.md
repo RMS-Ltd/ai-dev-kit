@@ -515,8 +515,8 @@ The framework organizes metrics into seven key dimensions:
 - **Code Review Standards and Guidelines:** `docs/architecture/standards-and-adrs/code-review-standards-and-guidelines.md`
 - **Maintenance Workflow Processes:** `docs/architecture/standards-and-adrs/maintenance-workflow-processes.md`
 - **Framework Health Metrics:** `docs/architecture/standards-and-adrs/framework-health-metrics.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 3:** `docs/project-management/kanban/epics/Epic-7/Story-003-code-quality-metrics-and-monitoring.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 3:** `docs/project-management/kanban/epics/epic-07/story-03-code-quality-metrics-and-monitoring.md`
 
 ---
 

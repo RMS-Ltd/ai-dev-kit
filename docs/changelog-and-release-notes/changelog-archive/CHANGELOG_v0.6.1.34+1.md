@@ -88,8 +88,8 @@ Implemented MoSCOW prioritization logic for UKW Step 6, fixing the bug where the
 ### Files Modified
 
 - `docs/project-management/kanban/kanban-board.md` - MoSCOW section regenerated
-- `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T34-ukw-moscow-prioritization-missing.md` - Status updated, implementation documented
-- `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md` - Task checklist updated
+- `docs/project-management/kanban/epics/epic-06/story-01-br-repo/T34-ukw-moscow-prioritization-missing.md` - Status updated, implementation documented
+- `docs/project-management/kanban/epics/epic-06/story-01-br-repo.md` - Task checklist updated
 - `scripts/scan_tasks_for_moscow.py` - Helper script created (can be used for future UKW runs)
 
 ---
@@ -112,9 +112,9 @@ Implemented MoSCOW prioritization logic for UKW Step 6, fixing the bug where the
 ## Related Work
 
 **Bug Report:** [BR-034: UKW MoSCOW Prioritization Missing](../../project-management/kanban/fr-br/BR-034-ukw-moscow-prioritization-missing.md)  
-**Task:** [E6:S01:T34: UKW MoSCOW Prioritization Missing](../../project-management/kanban/epics/Epic-6/Story-001-br-repo/T34-ukw-moscow-prioritization-missing.md)  
-**Story:** [E6:S01: BR Repo (PERPETUAL)](../../project-management/kanban/epics/Epic-6/Story-001-br-repo.md)  
-**Workflow:** [Update Kanban Workflow (UKW)](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Task:** [E6:S01:T34: UKW MoSCOW Prioritization Missing](../../project-management/kanban/epics/epic-06/story-01-br-repo/T34-ukw-moscow-prioritization-missing.md)  
+**Story:** [E6:S01: BR Repo (PERPETUAL)](../../project-management/kanban/epics/epic-06/story-01-br-repo.md)  
+**Workflow:** [Update Kanban Workflow (UKW)](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 

@@ -105,11 +105,11 @@ Each framework review (E9:S02-S04) now covers:
 **Type:** Kanban Documentation Synchronization
 
 **Files Modified:**
-- `docs/project-management/kanban/epics/Epic-9/Epic-9.md` (new)
-- `docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md` (new)
-- `docs/project-management/kanban/epics/Epic-9/Story-002-kanban-framework-rc-readiness-review.md` (new)
-- `docs/project-management/kanban/epics/Epic-9/Story-003-workflow-management-framework-rc-readiness-review.md` (new)
-- `docs/project-management/kanban/epics/Epic-9/Story-004-numbering-versioning-framework-rc-readiness-review.md` (new)
+- `docs/project-management/kanban/epics/epic-09/epic-09.md` (new)
+- `docs/project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md` (new)
+- `docs/project-management/kanban/epics/epic-09/story-02-kanban-framework-rc-readiness-review.md` (new)
+- `docs/project-management/kanban/epics/epic-09/story-03-workflow-management-framework-rc-readiness-review.md` (new)
+- `docs/project-management/kanban/epics/epic-09/story-04-numbering-versioning-framework-rc-readiness-review.md` (new)
 - `docs/project-management/kanban/fr-br/FR-032-release-candidate-readiness-gap-analysis.md` (new)
 - `docs/project-management/kanban/kanban-board.md` (modified)
 - `src/fynd_deals/version.py` (modified)

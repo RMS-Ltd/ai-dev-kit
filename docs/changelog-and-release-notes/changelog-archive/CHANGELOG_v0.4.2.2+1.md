@@ -103,7 +103,7 @@ This release completes **Task 2: Design FR/BR → Task → Story → Epic decisi
 This decision flow design provides the foundation for creating templates, process documentation, and user guides in the next tasks. The flow is designed to be both systematic (for AI agents) and intuitive (for human users).
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks/T002-decision-flow-design.md` (comprehensive design)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks/T02-decision-flow-design.md` (comprehensive design)
 
 ---
 
@@ -117,8 +117,8 @@ This decision flow design provides the foundation for creating templates, proces
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks/T002-decision-flow-design.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks/T02-decision-flow-design.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.2.2+1)
 
 ---

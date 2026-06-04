@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # ECC AgentShield — optional RW Step 10 add-on (non-blocking)
 
-**Task:** [E6:S09:T06](../../../../../../docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)  
+**Task:** [E6:S09:T06](../../../../../../docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)  
 **FR:** [FR-098](../../../../../../docs/project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
 
 ---

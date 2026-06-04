@@ -116,7 +116,7 @@ VERSION_BUILD = 1      # NEW: Reset to first build
 
 ### Kanban Context
 
-**Epic Document:** `docs/project-management/kanban/epics/Epic-5/Epic-5.md`
+**Epic Document:** `docs/project-management/kanban/epics/epic-05/epic-05.md`
 ```markdown
 # Epic 5: Documentation Framework
 
@@ -127,7 +127,7 @@ VERSION_BUILD = 1      # NEW: Reset to first build
 - [ ] **E5:S01 – Framework Documentation Structure** - TODO
 ```
 
-**Story Document:** `docs/project-management/kanban/epics/Epic-5/Story-001-*.md`
+**Story Document:** `docs/project-management/kanban/epics/epic-05/story-01-*.md`
 ```markdown
 # Story 001 – Framework Documentation Structure
 
@@ -154,8 +154,8 @@ VERSION_BUILD = 1      # NEW: Reset to first build
 - Includes Epic 5 context
 
 **RW Step 6: Auto-update Kanban Docs**
-- Updates Epic-5.md with version marker
-- Updates Story-001-*.md with version marker
+- Updates epic-05.md with version marker
+- Updates story-01-*.md with version marker
 
 ### Real Dev-Kit Example
 
@@ -204,14 +204,14 @@ VERSION_BUILD = 1      # NEW: Reset to first build
 
 ### Kanban Context
 
-**Epic Document:** `docs/project-management/kanban/epics/Epic-3/Epic-3.md`
+**Epic Document:** `docs/project-management/kanban/epics/epic-03/epic-03.md`
 ```markdown
 ## Story Checklist
 - [x] **E3:S01 – Dev Kit Alignment with Versioning Framework** - COMPLETE ✅ (v0.3.1.6+1)
 - [ ] **E3:S02 – Versioning Cookbook & Examples** - IN PROGRESS
 ```
 
-**Story Document:** `docs/project-management/kanban/epics/Epic-3/Story-002-*.md`
+**Story Document:** `docs/project-management/kanban/epics/epic-03/story-02-*.md`
 ```markdown
 # Story 002 – Versioning Cookbook & Examples
 
@@ -238,8 +238,8 @@ VERSION_BUILD = 1      # NEW: Reset to first build
 - Includes Epic 3, Story 2 context
 
 **RW Step 6: Auto-update Kanban Docs**
-- Updates Epic-3.md with Story 2 reference
-- Updates Story-002-*.md with version marker
+- Updates epic-03.md with Story 2 reference
+- Updates story-02-*.md with version marker
 
 ### Real Dev-Kit Example
 
@@ -290,7 +290,7 @@ VERSION_BUILD = 1      # NEW: Reset to 1 for new task
 
 ### Kanban Context
 
-**Story Document:** `docs/project-management/kanban/epics/Epic-3/Story-001-*.md`
+**Story Document:** `docs/project-management/kanban/epics/epic-03/story-01-*.md`
 ```markdown
 ## Task Checklist
 - [x] **E3:S01:T01 – Review dev-kit versioning policy vs framework policy** ✅ COMPLETE (v0.3.1.1+2)
@@ -643,14 +643,14 @@ VERSION_BUILD = 1      # Reset to first build
 
 ### Kanban Context
 
-**Epic Document:** `docs/project-management/kanban/epics/Epic-3/Epic-3.md`
+**Epic Document:** `docs/project-management/kanban/epics/epic-03/epic-03.md`
 ```markdown
 ## Story Checklist
 - [x] **E3:S01 – Dev Kit Alignment with Versioning Framework** - COMPLETE ✅ (v0.3.1.6+1)
 - [x] **E3:S02 – Versioning Cookbook & Examples** - COMPLETE ✅ (v0.3.2.5+3)
 ```
 
-**Story Document:** `docs/project-management/kanban/epics/Epic-3/Story-001-*.md`
+**Story Document:** `docs/project-management/kanban/epics/epic-03/story-01-*.md`
 ```markdown
 **Status:** COMPLETE ✅
 **Completed:** 2025-12-02 (v0.3.1.6+1)
@@ -681,7 +681,7 @@ VERSION_BUILD = 1      # Reset to first build
 - Story 1: Completed at `v0.1.1.1+2`
 - Story 2: Completed at `v0.1.2.5+1`
 - Story 3: Completed at `v0.1.3.6+1`
-- See: `docs/project-management/kanban/epics/Epic-1/Epic-1.md`
+- See: `docs/project-management/kanban/epics/epic-01/epic-01.md`
 
 ---
 
@@ -719,7 +719,7 @@ VERSION_BUILD = 1     # Reset to first build
 
 ### Kanban Context
 
-**Epic Document:** `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
+**Epic Document:** `docs/project-management/kanban/epics/epic-04/epic-04.md`
 ```markdown
 **Status:** COMPLETE ✅
 **Completed:** 2025-12-02 (v0.4.3.7+1)
@@ -753,7 +753,7 @@ VERSION_BUILD = 1     # Reset to first build
 **Epic 4 Completion:**
 - Epic 4: Completed at `v0.4.3.7+1`
 - All 3 stories completed
-- See: `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
+- See: `docs/project-management/kanban/epics/epic-04/epic-04.md`
 
 ---
 
@@ -788,7 +788,7 @@ This section demonstrates **end-to-end flows** that tie together Kanban, Version
 
 **Task Created:**
 - Task: E4:S03:T08 – Add Kanban consistency validation script
-- Added to `Story-003-kanban-versioning-rw-integration.md`
+- Added to `story-03-kanban-versioning-rw-integration.md`
 - Task status: TODO
 
 #### Step 3: Assign Version Number
@@ -843,10 +843,10 @@ VERSION_BUILD = 1     # Reset to 1 for new Task
 - ✅ Updates latest release callout
 
 **RW Step 6: Auto-update Kanban Docs**
-- ✅ Updates `Epic-4.md`:
+- ✅ Updates `epic-04.md`:
   - `**Last updated:** 2025-12-02 (v0.4.3.8+1 – Task 8 complete: Add Kanban consistency validation script)`
   - Story Checklist: `- [x] **E4:S03 – ...** - COMPLETE ✅ (v0.4.3.7+1)`
-- ✅ Updates `Story-003-kanban-versioning-rw-integration.md`:
+- ✅ Updates `story-03-kanban-versioning-rw-integration.md`:
   - `**Last updated:** 2025-12-02 (v0.4.3.8+1)`
   - `**Version:** v0.4.3.8+1`
   - Task Checklist: `- [x] **E4:S03:T08 – Add Kanban consistency validation script** ✅ COMPLETE (v0.4.3.8+1)`
@@ -1018,13 +1018,13 @@ VERSION_BUILD = 1
 - ✅ Step 1: Validates branch `epic/3-*` matches version `0.3.2.1+1`
 - ✅ Step 2: Bumps version (if needed)
 - ✅ Step 3: Creates `CHANGELOG_v0.3.2.1+1.md`
-- ✅ Step 6: Updates Epic-3.md and Story-002-*.md
+- ✅ Step 6: Updates epic-03.md and story-02-*.md
 
 **Epic 4 RW (on `epic/4-*` branch):**
 - ✅ Step 1: Validates branch `epic/4-*` matches version `0.4.3.1+1`
 - ✅ Step 2: Bumps version (if needed)
 - ✅ Step 3: Creates `CHANGELOG_v0.4.3.1+1.md`
-- ✅ Step 6: Updates Epic-4.md and Story-003-*.md
+- ✅ Step 6: Updates epic-04.md and story-03-*.md
 
 **No Conflicts:** Each epic maintains independent version stream
 
@@ -1233,7 +1233,7 @@ This section documents known edge cases, common mistakes, and anti-patterns when
 - ❌ **NEVER:** Skip Task/version validation
 - ❌ **NEVER:** Assume `VERSION_TASK` is correct without checking
 
-**Reference:** `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T002-root-cause-analysis.md`
+**Reference:** `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T02-root-cause-analysis.md`
 
 ---
 
@@ -1461,11 +1461,11 @@ This section documents known edge cases, common mistakes, and anti-patterns when
 
 ## References
 
-- **Scenario Definitions:** `docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples/T001-core-versioning-scenarios.md`
+- **Scenario Definitions:** `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T01-core-versioning-scenarios.md`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - **Framework Policy:** `packages/frameworks/numbering & versioning/versioning-policy.md`
 - **Integration Guide:** `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`
-- **Integration Examples:** `docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration/T006-integration-examples.md`
+- **Integration Examples:** `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples.md`
 - **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 
 ---

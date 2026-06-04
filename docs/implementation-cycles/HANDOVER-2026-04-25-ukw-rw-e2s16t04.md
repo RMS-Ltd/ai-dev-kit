@@ -15,7 +15,7 @@ Continue and publish UKW + RW work around `E2:S15:T05` canonical row-transform h
 ## What was completed
 
 1. Kept task-doc wording updates for non-timestamped repeating tail segments in:
-   - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`
+   - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`
 2. Updated IPP to explicitly include non-timestamped tail-duplication requirements/tests:
    - `docs/implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md`
 3. Ran UKW full-mode synchronization and verified board/epic/story metadata updates.
@@ -46,14 +46,14 @@ Continue and publish UKW + RW work around `E2:S15:T05` canonical row-transform h
 ## Read-first list for next instance
 
 1. `docs/implementation-cycles/HANDOVER-2026-04-25-ukw-rw-e2s16t04.md` (this handover)
-2. `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`
+2. `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`
 3. `docs/implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md`
 4. `src/fynd_deals/version.py`
 5. `CHANGELOG.md`
 6. `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+3.md`
 7. `docs/project-management/kanban/kboard.md`
 8. `docs/project-management/kanban/fbuboard.md`
-9. `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
+9. `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
 10. `rw-config.yaml`
 11. `.cursorrules` (RW/UKW trigger and guardrail contract)
 

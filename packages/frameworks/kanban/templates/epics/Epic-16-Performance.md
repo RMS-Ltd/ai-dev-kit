@@ -89,7 +89,7 @@ This epic encompasses performance optimization, caching, and scalability improve
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/Epic-16/Story-001-performance-analysis.md`
+> Full story: `docs/project-management/kanban/epics/epic-16/story-01-performance-analysis.md`
 
 ---
 
@@ -129,7 +129,7 @@ This epic encompasses performance optimization, caching, and scalability improve
 - Coordinates with Epic 12 (Frontend & UI) for frontend optimization
 - *Parallel Development Candidacy:* Blocked (requires Story 1 analysis)
 
-> Full story: `docs/project-management/kanban/epics/Epic-16/Story-002-performance-optimization.md`
+> Full story: `docs/project-management/kanban/epics/epic-16/story-02-performance-optimization.md`
 
 ---
 
@@ -166,7 +166,7 @@ This epic encompasses performance optimization, caching, and scalability improve
 - Coordinates with Epic 14 (Deployment & DevOps) for infrastructure scaling
 - *Parallel Development Candidacy:* Blocked (requires Story 2 optimizations)
 
-> Full story: `docs/project-management/kanban/epics/Epic-16/Story-003-scalability-improvements.md`
+> Full story: `docs/project-management/kanban/epics/epic-16/story-03-scalability-improvements.md`
 
 ---
 

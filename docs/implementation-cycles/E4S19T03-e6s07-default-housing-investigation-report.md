@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E4:S19:T03 — `E6:S07` default-housing investigation report (FR-087)
 
-**Host task:** [E4:S19:T03](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)  
+**Host task:** [E4:S19:T03](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)  
 **Planning contract:** [IPP-E4S19T03-e6s07-default-housing-drift-investigation.md](./IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)  
 **Upstream FR:** [FR-087](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)  
 **Report date:** 2026-05-29  
@@ -34,9 +34,9 @@ housekeeping_policy: keep
 
 | Source | Evidence | Charter stated |
 | ------ | -------- | -------------- |
-| Story 007 (current) | `Story-007-adk-implementation-analysis-and-package-management.md:150-203` — Overview, Goal, Success Criteria | Comprehensive ADK implementation analysis across projects; package management investigation; feedback mechanisms; ADK hardening before continued development |
+| Story 007 (current) | `story-07-adk-implementation-analysis-and-package-management.md:150-203` — Overview, Goal, Success Criteria | Comprehensive ADK implementation analysis across projects; package management investigation; feedback mechanisms; ADK hardening before continued development |
 | Changelog genesis (CLI) | `CHANGELOG_v0.6.7.0+1.md:14-27` — Story created for **ai-dev-kit CLI tool**, FR-030, 14-task CLI breakdown | CLI tool implementation (Phases 1–4: foundation, backends, advanced features, PyPI) |
-| Renumbering / abstract space | `CHANGELOG_v0.9.1.8+10.md` (cited in E9:S01:T08); story header `Story-007…md:19` | Story renumbered from S06→S07 as part of repository story abstract space resolution |
+| Renumbering / abstract space | `CHANGELOG_v0.9.1.8+10.md` (cited in E9:S01:T08); story header `story-007…md:19` | Story renumbered from S06→S07 as part of repository story abstract space resolution |
 
 **Synthesis (commentary on primary evidence):** The **current** charter (analysis + package management + hardening) is authoritative in the live story document. The **earliest** release anchor (`v0.6.7.0+1`) documents a **different** charter (CLI tool). The two charters were **merged into one story number** during Epic 6 renumbering, which is the root structural reason `S07` reads as two stories in one container.
 
@@ -45,7 +45,7 @@ housekeeping_policy: keep
 | Date (approx.) | Inflection | Primary evidence | Placement rationale recorded? |
 | ------------- | ---------- | ---------------- | ----------------------------- |
 | 2025-12-22 | Story created as **CLI tool** (`E6:S07`, FR-030) | `CHANGELOG_v0.6.7.0+1.md` | Yes — FR-030 / CLI delivery |
-| 2026-01 (E9:S01:T08) | **S06 analysis story → S07**; CLI tool shifted to S08 per changelog note | `CHANGELOG_v0.9.1.8+10.md`; `Story-007…md:19` | Yes — abstract space / renumbering policy |
+| 2026-01 (E9:S01:T08) | **S06 analysis story → S07**; CLI tool shifted to S08 per changelog note | `CHANGELOG_v0.9.1.8+10.md`; `story-007…md:19` | Yes — abstract space / renumbering policy |
 | 2026-03 | Workflow governance cluster (`T18`, `T106`, `T107`) filed under S07 | Task docs; `CHANGELOG_v0.5.1.46+2.md` (T106 next release note) | Weak — “framework” / tooling adjacency |
 | 2026-03-31 | **BR-059** → `E6:S07:T109` (UKW MoSCOW coverage) | `CHANGELOG_v0.6.7.109+1.md`; `CHANGELOG_v0.5.1.74+3.md` | Partial — BR on epic/6 branch |
 | 2026-04 | UKW / board / stamp cluster (`T108`–`T115`, `T114`) | `CHANGELOG_v0.6.7.108+1.md` through `CHANGELOG_v0.6.7.115+1.md` | Often cites E2:S16:T03 “coordinates” but task **housing** stayed S07 |
@@ -56,7 +56,7 @@ housekeeping_policy: keep
 
 ## 2. Current usage shape (RF1 / §2.3.4)
 
-**Task document count:** **22** files under `Story-007-adk-implementation-analysis-and-package-management/` (IPP baseline recorded 23; **T116** doc removed after re-housing to `E2:S16:T06`; **T117** removed after re-housing).
+**Task document count:** **22** files under `story-07-adk-implementation-analysis-and-package-management/` (IPP baseline recorded 23; **T116** doc removed after re-housing to `E2:S16:T06`; **T117** removed after re-housing).
 
 | Metric | Value |
 | ------ | ----- |
@@ -76,8 +76,8 @@ Inspection used IPP §2.4 patterns on 2026-05-29.
 
 | Category | Instance cited | Classification | Notes |
 | -------- | -------------- | -------------- | ----- |
-| Workflow validators | `test_validate_rw_task_intent.py:95-133` — fixture layout under `Story-007-adk-…` | **Operator habit / test fixture only** | Uses S07 paths as **test data**, not production routing |
-| Workflow validators | `test_validate_version_bump.py` — Story-007 perpetual fixtures | Same | Test scaffolding |
+| Workflow validators | `test_validate_rw_task_intent.py:95-133` — fixture layout under `story-07-adk-…` | **Operator habit / test fixture only** | Uses S07 paths as **test data**, not production routing |
+| Workflow validators | `test_validate_version_bump.py` — story-007 perpetual fixtures | Same | Test scaffolding |
 | Intake/IPW YAML | `rg` over `packages/frameworks/workflow mgt/workflows/` — **no matches** for S07/E6:S07 | **No codification** | — |
 | `.cursorrules` | `rg` — **no matches** for S07 / default housing | **No codification** | Positive routing table absent |
 | Intake skill | `.cursor/skills/intake-process/SKILL.md:14-33` — “delivery story”, “framework → e.g. E6” | **Permissive default** | Does not name S07; Epic 6 is broad |
@@ -85,7 +85,7 @@ Inspection used IPP §2.4 patterns on 2026-05-29.
 | Kanban governance policy | `kanban-governance-policy.md:545` — example `E20:S07:T10` only | **No codification** | Numeric example, not routing |
 | Intake guide | `FR_BR_INTAKE_GUIDE.md:27` — “framework bugs → Epic 6 story” | **Permissive default** | Does not distinguish S07 vs other E6 stories |
 | Intake agent guide | `FR_BR_INTAKE_AGENT_GUIDE.md` — **no S07 matches** | **No codification** | — |
-| Story 007 charter | `Story-007-adk-implementation-analysis-and-package-management.md` | **Permissive default** | Broad Epic 6 home; checklist still lists heterogeneous work |
+| Story 007 charter | `story-07-adk-implementation-analysis-and-package-management.md` | **Permissive default** | Broad Epic 6 home; checklist still lists heterogeneous work |
 | Prior IPPs | `IPP-E2S16T01`, `IPP-E4S19T03`, `IPW-E6S07T112`, etc. | **Operator habit** | Documents defer routing to FR-087 / T03; does not hard-code S07 |
 
 **Conclusion:** Drift is driven primarily by **permissive Epic 6 placement** and **habit on `epic/6-framework-management`**, not validator hard-coding. Guardrails should target **intake language**, **story-level In/Out of Scope**, and optional **placement validator** (IPP §2.8).
@@ -94,7 +94,7 @@ Inspection used IPP §2.4 patterns on 2026-05-29.
 
 ## 4. Semantic-fit triage (RF3 / AC3)
 
-Charter reference: Story 007 Goal at `Story-007-adk-implementation-analysis-and-package-management.md:190-203`.
+Charter reference: Story 007 Goal at `story-07-adk-implementation-analysis-and-package-management.md:190-203`.
 
 | Task | Status | Bucket | Rationale (one line) | Better home (if out/borderline) |
 | ---- | ------ | ------ | -------------------- | -------------------------------- |
@@ -159,7 +159,7 @@ Per IPP §2.5 (`active` = non-COMPLETE, non-SUPERSEDED):
    - `E6:S07:T18` → `E2:S01:T{new}` or `E2:S16` (workflow step tracking).
    - `E6:S07:T107` → resolve: mark COMPLETE if work done (story checklist already ✅) or move to E2/E6 tooling story.
 3. **Retrospective migration (batched):** Completed out-of-scope tasks `T110`, `T113`, `T114`, `T115`, `T16` — lower urgency; use §2.7 with `Historical Anchor:` only where traceability requires.
-4. **Restate charter** on `Story-007-adk-implementation-analysis-and-package-management.md`:
+4. **Restate charter** on `story-07-adk-implementation-analysis-and-package-management.md`:
    - **In scope:** ADK cross-project analysis, package management design/implementation, install telemetry/feedback, framework hardening derived from analysis.
    - **Out of scope:** UKW/CMW/RW perpetual ops, kboard/fbuboard governance meta-work, IPW publication contract, abstract FBU policy (→ E2:S16, E2:S15, E4:S19).
 5. **Final state:** `keep-open-narrowed` with guardrails (§6).
@@ -203,7 +203,7 @@ No additional re-housing executed in this wave; Wave 4 owns migrations in §5.2.
 | ---- | ------ | ------ |
 | 4.1 | Re-house `E6:S07:T109` → `E2:S16:T13` (BR-059) | ✅ Done — superseded source doc; BR-059 + Story 016 + fbuboard/kboard rewired |
 | 4.1 | Re-house `E6:S07:T18` → `E2:S01:T23` (workflow step tracking) | ✅ Done — superseded source doc; Story 001 checklist + kboard |
-| 4.2 | Restate `S07` In/Out of Scope + intake freeze note | ✅ Done — `Story-007-adk-implementation-analysis-and-package-management.md` |
+| 4.2 | Restate `S07` In/Out of Scope + intake freeze note | ✅ Done — `story-07-adk-implementation-analysis-and-package-management.md` |
 | 4.2 | Correct T107 story checklist (was mislabeled COMPLETE / wrong scope title) | ✅ Done — TODO, IDE whitelist |
 | 4.3 | Retrospective migration of completed out-of-scope tasks | ⏸ Deferred (T110, T113, T114, T115 batch — lower urgency) |
 | Guardrail filing (§6) | Intake guide / `.cursorrules` / validator | ⏸ Deferred — follow-on tasks not yet filed |
@@ -223,6 +223,6 @@ No additional re-housing executed in this wave; Wave 4 owns migrations in §5.2.
 ## 9. References
 
 - [IPP-E4S19T03](./IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
-- [Story 007](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md)
+- [Story 007](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
 - [FR-087](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 - [IPP-E2S16T01](./IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md) (delegated perpetual scope)

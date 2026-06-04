@@ -89,7 +89,7 @@ This epic encompasses API design, implementation, and backend service architectu
 - Depends on Epic 10 (Data Management) for data access layer
 - *Parallel Development Candidacy:* Blocked (requires data management foundation)
 
-> Full story: `docs/project-management/kanban/epics/Epic-11/Story-001-api-design-and-architecture.md`
+> Full story: `docs/project-management/kanban/epics/epic-11/story-01-api-design-and-architecture.md`
 
 ---
 
@@ -128,7 +128,7 @@ This epic encompasses API design, implementation, and backend service architectu
 - Coordinates with Epic 9 (User Management) for authentication
 - *Parallel Development Candidacy:* Blocked (requires Story 1 design)
 
-> Full story: `docs/project-management/kanban/epics/Epic-11/Story-002-api-implementation.md`
+> Full story: `docs/project-management/kanban/epics/epic-11/story-02-api-implementation.md`
 
 ---
 
@@ -164,7 +164,7 @@ This epic encompasses API design, implementation, and backend service architectu
 - Depends on Story 2 (API Implementation)
 - *Parallel Development Candidacy:* Blocked (requires Story 2 implementation)
 
-> Full story: `docs/project-management/kanban/epics/Epic-11/Story-003-api-documentation-and-testing.md`
+> Full story: `docs/project-management/kanban/epics/epic-11/story-03-api-documentation-and-testing.md`
 
 ---
 

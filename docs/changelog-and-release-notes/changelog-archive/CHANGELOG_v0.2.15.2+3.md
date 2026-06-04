@@ -14,9 +14,9 @@ Published the E2:S15:T02 IPP planning artifact and completed deterministic gover
 - New IPP planning artifact:
   - `docs/implementation-cycles/IPP-E2S15T02-ipp-post-run-governance-reconciliation-ownership.md`
 - Governance wiring updates:
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`
   - `docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md`
 - Version/changelog updates:
   - `src/fynd_deals/version.py`
   - `CHANGELOG.md`

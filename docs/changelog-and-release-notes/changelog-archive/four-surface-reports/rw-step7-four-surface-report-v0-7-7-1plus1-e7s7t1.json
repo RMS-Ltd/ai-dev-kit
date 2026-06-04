@@ -4,7 +4,7 @@
       "changes": [],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-7/Epic-7.md"
+        "docs/project-management/kanban/epics/epic-07/epic-07.md"
       ],
       "surface": "epic_doc",
       "touched": false
@@ -13,7 +13,7 @@
       "changes": [],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews.md"
+        "docs/project-management/kanban/epics/epic-07/story-07-code-reviews.md"
       ],
       "surface": "story_doc",
       "touched": false
@@ -21,8 +21,8 @@
     "uncategorized": {
       "changes": [
         "Updated FR-107: IMPLEMENTED v0.7.7.1+1",
-        "Updated Story-007 checklist and status",
-        "Updated Epic-7 header"
+        "Updated story-007 checklist and status",
+        "Updated epic-07 header"
       ],
       "notes": [],
       "paths": [],
@@ -98,7 +98,7 @@
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-comprehensive-workflow-machinery-code-review.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md"
       ],
       "surface": "task_doc",
       "touched": true

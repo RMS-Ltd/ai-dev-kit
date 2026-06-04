@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E4:S08:T07  
 **Related FR:** FR-011  
-**Host Task:** [T07-task-splitting-across-multiple-canonical-epics-fr-011.md](../project-management/kanban/epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md)  
+**Host Task:** [T07-task-splitting-across-multiple-canonical-epics-fr-011.md](../project-management/kanban/epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md)  
 **Created:** 2026-04-09
 
 ---

@@ -28,5 +28,5 @@ E5:S01:T44: FR-044 task created – RW temporary execution log for recovery and 
 
 ## Related
 
-- **Task:** [T44-rw-temporary-execution-log-for-recovery-and-forensics.md](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)
+- **Task:** [T44-rw-temporary-execution-log-for-recovery-and-forensics.md](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)
 - **FR-044:** [FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md](../../project-management/kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)

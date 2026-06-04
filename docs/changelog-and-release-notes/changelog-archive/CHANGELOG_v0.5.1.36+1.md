@@ -92,8 +92,8 @@ Task E5:S01:T36 (RW Update Kanban Board on Task Completion) is now **COMPLETE**.
 
 ## Related
 
-- **Story:** [E5:S01: FR Repo](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo.md)
-- **Task Document:** [E5:S01:T36](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T36-rw-update-kanban-board-on-task-completion.md)
+- **Story:** [E5:S01: FR Repo](../../project-management/kanban/epics/epic-05/story-01-fr-repo.md)
+- **Task Document:** [E5:S01:T36](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T36-rw-update-kanban-board-on-task-completion.md)
 - **FR-015:** [Harden Kanban Docs Update in Release Workflow](../../project-management/kanban/fr-br/FR-015-harden-kanban-docs-update-in-release-workflow.md)
 - **FR-036:** [RW Update Kanban Board on Task Completion](../../project-management/kanban/fr-br/FR-036-rw-update-kanban-board-on-task-completion.md)
 - **Script:** `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`

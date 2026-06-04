@@ -78,7 +78,7 @@ Successfully implemented AGENTS.md and SKILL.md to define specialized workflow a
 - `/.windsurf/skills/readme-update/SKILL.md` - README updates
 
 **Documentation:**
-- `/docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T41-implementation-summary.md` - Implementation summary
+- `/docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T41-implementation-summary.md` - Implementation summary
 
 #### Agent Coordination Patterns
 
@@ -187,8 +187,8 @@ Successfully implemented AGENTS.md and SKILL.md to define specialized workflow a
 ## 🔗 Related Documentation
 
 - **Implementation Plan:** `/Users/rms/.windsurf/plans/e6s6t41-agents-skills-implementation-024559.md`
-- **Implementation Summary:** `/docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T41-implementation-summary.md`
-- **Task Document:** `/docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T41-windsurf-investigate-agents-skills-for-workflows.md`
+- **Implementation Summary:** `/docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T41-implementation-summary.md`
+- **Task Document:** `/docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T41-windsurf-investigate-agents-skills-for-workflows.md`
 - **Feature Request:** `/docs/project-management/kanban/fr-br/FR-041-windsurf-investigate-agents-skills-for-workflows.md`
 
 ---

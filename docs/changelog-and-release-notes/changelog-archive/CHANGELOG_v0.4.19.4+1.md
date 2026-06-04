@@ -17,7 +17,7 @@ SemVer: v0.4.764+1
 ## Included Files
 
 - `docs/implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md`
-- `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md`
+- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md`
 - `docs/project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md`
 - `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
 - `packages/frameworks/workflow mgt/scripts/test_update_kanban_docs.py`

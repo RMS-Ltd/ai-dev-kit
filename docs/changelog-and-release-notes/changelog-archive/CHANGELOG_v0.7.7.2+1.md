@@ -23,11 +23,11 @@ E07:S07:T02 — CI pytest gate for Workflow Management scripts (review **H1**): 
 
 ### Kanban / planning
 
-- Task doc, IPP, Story-007 checklist updated for **E07:S07:T02** release attribution.
+- Task doc, IPP, story-007 checklist updated for **E07:S07:T02** release attribution.
 
 ---
 
 ## References
 
 - [IPP-E07S07T02](../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
-- [T01 review report H1](../../project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [T01 review report H1](../../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)

@@ -459,8 +459,8 @@ python scripts/maintenance/dependencies/scan_dependencies.py \
 
 - **Maintenance Automation Requirements:** `docs/architecture/standards-and-adrs/maintenance-automation-requirements.md`
 - **Maintenance Workflow Processes:** `docs/architecture/standards-and-adrs/maintenance-workflow-processes.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-7/Story-004-maintenance-automation-and-tooling.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-07/story-04-maintenance-automation-and-tooling.md`
 
 ---
 

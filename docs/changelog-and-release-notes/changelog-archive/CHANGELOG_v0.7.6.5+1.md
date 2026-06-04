@@ -31,10 +31,10 @@ E7:S06:T05: Validated workflow scripts tied to RW/UKW; repaired `test_rw_trigger
 - **workflow_orchestrator.py:** Duplicate import cleanup
 - **ukw_syntax_parser.py, task_inference.py:** Documentation only
 - **T05 task doc:** Findings, acceptance, version anchor
-- **Story-006, Epic-7, kanban-board, kanban-completed:** T05 complete
+- **story-006, epic-07, kanban-board, kanban-completed:** T05 complete
 
 ---
 
 ## Related Work
 
-**Task:** [T05-workflow-script-integrity.md](../../project-management/kanban/epics/Epic-7/Story-006-post-windsurf-project-review/T05-workflow-script-integrity.md)
+**Task:** [T05-workflow-script-integrity.md](../../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T05-workflow-script-integrity.md)

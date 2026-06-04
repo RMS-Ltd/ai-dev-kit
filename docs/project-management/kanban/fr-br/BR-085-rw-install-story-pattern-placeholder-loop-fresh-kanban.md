@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM (interactive RW install blocked after fresh kanban; book T03 dry-run)  
 **Status:** RESOLVED ✅ (fix **v0.6.9.14+1**; verified **v0.6.9.14+2** — ExpensesTracker T03 interactive replay 2026-06-03)  
 **Related:** [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) · [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
-**Implementing Task:** [E06:S09:T14](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)  
+**Implementing Task:** [E06:S09:T14](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)  
 **Created:** 2026-06-03  
 **Source:** ExpensesTracker T03 replay; ADK `dev` @ `7a24046`; kanban fresh → RW mode C
 
@@ -81,5 +81,5 @@ Repeats indefinitely.
 
 ## Kanban Links
 
-- **Story:** [E06:S09](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md)
-- **Task:** [E06:S09:T14](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)
+- **Story:** [E06:S09](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md)
+- **Task:** [E06:S09:T14](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)

@@ -6,7 +6,7 @@
 
 ## Summary
 
-`RW -d E4:S19:T06 --art` publishes Wave 5 closure for the T06 meta-task by recording final validator evidence, flipping T06 and Story-019 checklist state to `COMPLETE`, and stabilizing the IPP Wave 5 verification section.
+`RW -d E4:S19:T06 --art` publishes Wave 5 closure for the T06 meta-task by recording final validator evidence, flipping T06 and story-019 checklist state to `COMPLETE`, and stabilizing the IPP Wave 5 verification section.
 
 ## Changes
 
@@ -20,6 +20,6 @@
 
 ## References
 
-- Task: `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md`
-- Story: `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md`
+- Task: `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md`
+- Story: `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`
 - IPP: `docs/implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md`

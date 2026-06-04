@@ -78,31 +78,31 @@ This epic encompasses process automation and ci/cd for the {PROJECT_NAME} projec
 
 **Brief Summary:** ci/cd pipeline setup for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-cicd-pipeline-setup.md`](Story-001-cicd-pipeline-setup.md)
+**Story Document:** [`story-01-cicd-pipeline-setup.md`](story-01-cicd-pipeline-setup.md)
 
 ### Story 2: Automated Rule Enforcement (Pre-commit Hooks)
 
 **Brief Summary:** automated rule enforcement (pre-commit hooks) for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-automated-rule-enforcement-pre-commit-hooks.md`](Story-002-automated-rule-enforcement-pre-commit-hooks.md)
+**Story Document:** [`story-02-automated-rule-enforcement-pre-commit-hooks.md`](story-02-automated-rule-enforcement-pre-commit-hooks.md)
 
 ### Story 3: Testing Infrastructure
 
 **Brief Summary:** testing infrastructure for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-testing-infrastructure.md`](Story-003-testing-infrastructure.md)
+**Story Document:** [`story-03-testing-infrastructure.md`](story-03-testing-infrastructure.md)
 
 ### Story 4: Quality Gates and Branch Protection
 
 **Brief Summary:** quality gates and branch protection for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-004-quality-gates-and-branch-protection.md`](Story-004-quality-gates-and-branch-protection.md)
+**Story Document:** [`story-04-quality-gates-and-branch-protection.md`](story-04-quality-gates-and-branch-protection.md)
 
 ### Story 5: Automated Dependency Management
 
 **Brief Summary:** automated dependency management for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-005-automated-dependency-management.md`](Story-005-automated-dependency-management.md)
+**Story Document:** [`story-05-automated-dependency-management.md`](story-05-automated-dependency-management.md)
 
 ---
 

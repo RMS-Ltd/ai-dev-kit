@@ -28,7 +28,7 @@ Kanban board MoSCOW prioritization section updated with all open tasks across al
 
 ### Epic 7 Documentation
 
-- **Epic-7.md:** Updated to reflect Epic 7 completion status
+- **epic-07.md:** Updated to reflect Epic 7 completion status
 
 ---
 

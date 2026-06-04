@@ -22,19 +22,19 @@ This is the **first proper release** of the `ai-dev-kit` repository using the fu
 
 ### Epic Structure & Versioning
 
-- ✅ Created **Epic 1: AI Dev Kit Core** (`docs/project-management/epics/overview/Epic 1/Epic-1.md`)
+- ✅ Created **Epic 1: AI Dev Kit Core** (`docs/project-management/epics/overview/Epic 1/epic-01.md`)
   - Defines repo architecture, modularity, and dev-kit versioning policy
   - Story checklist for versioning policy, package structure, and KB organization
 
-- ✅ Created **Epic 2: Workflow Management Framework** (`docs/project-management/epics/overview/Epic 2/Epic-2.md`)
+- ✅ Created **Epic 2: Workflow Management Framework** (`docs/project-management/epics/overview/Epic 2/epic-02.md`)
   - Owns `packages/frameworks/workflow mgt/` package
   - Story checklist for RW agent execution docs and workflow examples
 
-- ✅ Created **Epic 3: Numbering & Versioning Framework** (`docs/project-management/epics/overview/Epic 3/Epic-3.md`)
+- ✅ Created **Epic 3: Numbering & Versioning Framework** (`docs/project-management/epics/overview/Epic 3/epic-03.md`)
   - Owns `packages/frameworks/numbering & versioning/` package
   - Story checklist for dev-kit alignment and versioning cookbook
 
-- ✅ Created **Epic 4: Kanban Framework** (`docs/project-management/epics/overview/Epic 4/Epic-4.md`)
+- ✅ Created **Epic 4: Kanban Framework** (`docs/project-management/epics/overview/Epic 4/epic-04.md`)
   - Owns `packages/frameworks/kanban/` package and dev-kit Kanban implementation
   - Story checklist for FR/BR intake flow and Kanban+Versioning+RW integration
 

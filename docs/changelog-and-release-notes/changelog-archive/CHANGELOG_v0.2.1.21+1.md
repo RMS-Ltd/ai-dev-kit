@@ -54,7 +54,7 @@ All three defects are eliminated by hardening artifact boundaries (`.gitignore`)
 
 - **`docs/project-management/kanban/fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md`** — Status updated to IN PROGRESS; Fix Attempt 1 history added with full action list.
 
-- **`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md`** — Status updated to IN PROGRESS; all 8 ACs checked off; completion summary added.
+- **`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md`** — Status updated to IN PROGRESS; all 8 ACs checked off; completion summary added.
 
 ### Removed
 
@@ -80,5 +80,5 @@ All three defects are eliminated by hardening artifact boundaries (`.gitignore`)
 ## Related
 
 - [BR-074](../../../../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md) — Parent bug report
-- [E6:S06:T63](../../../../Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — Release that exposed these defects
-- [E2:S01:T18](../../../../Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md) — Coordinates with BR-070 stage-completeness guardrails
+- [E6:S06:T63](../../../../epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — Release that exposed these defects
+- [E2:S01:T18](../../../../epic-02/story-01-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md) — Coordinates with BR-070 stage-completeness guardrails

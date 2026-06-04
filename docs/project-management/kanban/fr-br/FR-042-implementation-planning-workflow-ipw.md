@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** COMPLETE  
 **Last updated:** 2026-05-20 — §8 ICW trio vs consolidated IPP; `dev-kit-ipw-ipp-vs-icw-artifacts.md`; RW **v0.2.16.3+6** traceability.  
-**Implementation Task:** [E05:S01:T42](../epics/Epic-5/Story-001-fr-repo/T42-implementation-planning-workflow-ipw.md)
+**Implementation Task:** [E05:S01:T42](../epics/epic-05/story-01-fr-repo/T42-implementation-planning-workflow-ipw.md)
 
 ---
 
@@ -303,8 +303,8 @@ Durable planning output may appear in either form under `docs/implementation-cyc
 - [dev-kit-ipw-ipp-vs-icw-artifacts.md](../../../architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md) – ICW trio vs consolidated IPP (artifact packaging)
 - `packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py` – AC7 validator
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md` – Implementation Cycle
-- `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md` – Example plan doc (unwired)
-- `docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md` – Host task for T07
-- `docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance/T01-planning-spec-tests-impl.md` – Example plan doc
+- `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md` – Example plan doc (unwired)
+- `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md` – Host task for T07
+- `docs/project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance/T01-planning-spec-tests-impl.md` – Example plan doc
 - `packages/frameworks/kanban/templates/TASK_TEMPLATE.md` – Task template
 - FR-035: Task Template Cross-Wiring Section

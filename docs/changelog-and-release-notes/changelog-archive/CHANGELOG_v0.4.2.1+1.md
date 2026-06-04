@@ -18,12 +18,12 @@ This release completes **Task 1: Analyze current FR/BR intake process and requir
 ### Task 1 Completion
 
 - ✅ **Created Story 2 Structure:**
-  - Story document: `Story-002-fr-br-intake-to-tasks.md`
+  - Story document: `story-02-fr-br-intake-to-tasks.md`
   - 5 tasks defined (T001–T005)
   - Added to Epic 4 story checklist
 
 - ✅ **Analysis Report Created:**
-  - Comprehensive analysis: `T001-intake-analysis-report.md`
+  - Comprehensive analysis: `T01-intake-analysis-report.md`
   - Current state analysis (policy foundation, gaps)
   - Requirements analysis (functional, non-functional, integration)
   - 5 use cases documented:
@@ -105,8 +105,8 @@ This release completes **Task 1: Analyze current FR/BR intake process and requir
 This analysis provides the foundation for implementing a complete FR/BR intake system. The next tasks will build on these findings to create templates, decision flows, and documentation that operationalize the policy rules.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks.md` (story structure)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks/T001-intake-analysis-report.md` (analysis report)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks.md` (story structure)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks/T01-intake-analysis-report.md` (analysis report)
 
 ---
 
@@ -121,9 +121,9 @@ This analysis provides the foundation for implementing a complete FR/BR intake s
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-002-fr-br-intake-to-tasks/T001-intake-analysis-report.md` (created)
-- `docs/project-management/kanban/epics/Epic-4.md` (updated with Story 2 reference)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-02-fr-br-intake-to-tasks/T01-intake-analysis-report.md` (created)
+- `docs/project-management/kanban/epics/epic-04.md` (updated with Story 2 reference)
 - `src/fynd_deals/version.py` (version bumped to 0.4.2.1+1)
 
 ---

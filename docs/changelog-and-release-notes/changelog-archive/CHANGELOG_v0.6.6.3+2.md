@@ -51,7 +51,7 @@
 - `cli/backends/git_submodule.py` - Added prerequisite checks and error detection
 - `cli/commands/install.py` - Updated exception handling for Apple SDK errors
 - `docs/documentation/user-docs/apple-platform-setup-guide.md` - New comprehensive setup guide
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T03-apple-sdk-license-blocking-issue.md` - Updated task status
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T03-apple-sdk-license-blocking-issue.md` - Updated task status
 
 #### User Impact
 

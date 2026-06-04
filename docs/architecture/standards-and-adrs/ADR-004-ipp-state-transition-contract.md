@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-14  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E2:S16:T09](../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)  
+**Implementing task:** [E2:S16:T09](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)  
 **Origin FR:** [FR-094](../../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)  
 **Related:** [FR-077](../../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) — established the ownership contract that this ADR embeds in the IPP artefact
 

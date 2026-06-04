@@ -11,7 +11,7 @@
 
 ## Summary
 
-**FR-072** filed as **E5:S01:T72**: task document, FR markdown, **Story-001** checklist row, bidirectional **Implementing Task** wiring. **ID note:** FR-072 avoids collision with **FR-064** / **T69** (shields branch).
+**FR-072** filed as **E5:S01:T72**: task document, FR markdown, **story-001** checklist row, bidirectional **Implementing Task** wiring. **ID note:** FR-072 avoids collision with **FR-064** / **T69** (shields branch).
 
 ---
 
@@ -21,7 +21,7 @@
 
 - **FR-072** — Uniform repository vs abstract-space Kanban rules (cross-epic governance intake).
 - **T72** — Task doc for FR-072 scope, acceptance criteria, references.
-- **Story-001-fr-repo.md** — Task checklist entry **T72** ↔ **FR-072**.
+- **story-01-fr-repo.md** — Task checklist entry **T72** ↔ **FR-072**.
 
 ---
 

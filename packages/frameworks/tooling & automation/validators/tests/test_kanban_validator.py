@@ -30,11 +30,11 @@ def test_kanban_validator_valid_structure():
     with tempfile.TemporaryDirectory() as tmpdir:
         # Create valid kanban structure
         kanban_root = Path(tmpdir) / "kanban"
-        epics_dir = kanban_root / "epics" / "Epic-1"
+        epics_dir = kanban_root / "epics" / "epic-01"
         epics_dir.mkdir(parents=True)
         
         # Create valid Epic document
-        epic_doc = epics_dir / "Epic-1.md"
+        epic_doc = epics_dir / "epic-01.md"
         epic_doc.write_text("""# Epic 1
 
 **Status:** IN PROGRESS
@@ -47,7 +47,7 @@ def test_kanban_validator_valid_structure():
 """)
         
         # Create valid Story document
-        story_doc = epics_dir / "Story-001-story-one.md"
+        story_doc = epics_dir / "story-01-story-one.md"
         story_doc.write_text("""# Story 1
 
 **Status:** TODO
@@ -85,7 +85,7 @@ def test_kanban_validator_missing_epic_doc():
     """Test KanbanValidator with missing Epic document."""
     with tempfile.TemporaryDirectory() as tmpdir:
         kanban_root = Path(tmpdir) / "kanban"
-        epics_dir = kanban_root / "epics" / "Epic-1"
+        epics_dir = kanban_root / "epics" / "epic-01"
         epics_dir.mkdir(parents=True)
         
         config = ValidatorConfig(project_root=Path(tmpdir))

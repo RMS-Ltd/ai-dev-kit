@@ -41,12 +41,12 @@ Kanban board updated to reflect Epic 7, Story 5 completion and Epic 7 completion
 
 ## References
 
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 6:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
-- **Task 8:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 6:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
+- **Task 8:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 - **Kanban Board:** `docs/project-management/kanban/kanban-board.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Epic 7, Story 5:** `docs/project-management/kanban/epics/Epic-7/Story-005-migration-uxr-research.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Epic 7, Story 5:** `docs/project-management/kanban/epics/epic-07/story-05-migration-uxr-research.md`
 
 ---
 

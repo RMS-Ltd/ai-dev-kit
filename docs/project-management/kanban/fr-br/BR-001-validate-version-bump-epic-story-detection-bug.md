@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E02:S01:T06](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)  
+**Implementing Task:** [E02:S01:T06](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)  
 **Historical registry:** E06:S01:T01
 
 ---
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 The `validate_version_bump.py` validator's `find_story_file()` function uses regex to search for "Epic X" and "Story Y" patterns in file content. When a Story file references other Epics (e.g., "Epic 4 Story 3" in References section), the validator matches the first occurrence, which may be the wrong Epic.
 
 **What should happen vs. what actually happens?**
-- **Should:** Validator correctly identifies Epic 3, Story 3 from file path (`Epic-3/stories/Story-003`) or Code field (`E3S03`)
+- **Should:** Validator correctly identifies Epic 3, Story 3 from file path (`epic-03/stories/story-003`) or Code field (`E3S03`)
 - **Actually:** Validator matches "Epic 4" from References section, fails to find correct Story file
 
 **When does it occur?**
@@ -72,7 +72,7 @@ The `find_story_file()` function in `validate_version_bump.py` uses content-base
 5. Validator fails: "Could not find Story file for Epic 3, Story 3"
 
 **Expected result:**
-- Validator should extract Epic/Story from file path (`Epic-3/stories/Story-003`) or Code field (`E3S03`)
+- Validator should extract Epic/Story from file path (`epic-03/stories/story-003`) or Code field (`E3S03`)
 - Validator should successfully find and validate Story file
 
 **Actual result:**
@@ -104,7 +104,7 @@ The `find_story_file()` function in `validate_version_bump.py` uses content-base
 
 **Workaround:**
 - Use `--story-file` argument to explicitly provide Story file path
-- Example: `python validate_version_bump.py --story-file "docs/project-management/kanban/epics/Epic-3/stories/Story-003-versioning-integration-with-kanban-and-rw.md" --strict`
+- Example: `python validate_version_bump.py --story-file "docs/project-management/kanban/epics/epic-03/stories/story-03-versioning-integration-with-kanban-and-rw.md" --strict`
 
 ---
 
@@ -113,7 +113,7 @@ The `find_story_file()` function in `validate_version_bump.py` uses content-base
 - [ ] Criterion 1: Validator should extract Epic/Story from file path (`Epic-\{N\}/stories/Story-{NNN}`)
 - [ ] Criterion 2: Validator should use Code field (`E\{epic\}S\{story\}`) as fallback if path extraction fails
 - [ ] Criterion 3: Validator should only use content-based regex as last resort, and prefer path/Code field
-- [ ] Criterion 4: Validator should correctly identify Epic 3, Story 3 from `Story-003-versioning-integration-with-kanban-and-rw.md`
+- [ ] Criterion 4: Validator should correctly identify Epic 3, Story 3 from `story-03-versioning-integration-with-kanban-and-rw.md`
 
 **Verification Method:**
 - [x] Test suite execution
@@ -161,8 +161,8 @@ The `find_story_file()` function in `validate_version_bump.py` uses content-base
 **Verification Status:** Verified (manual test passed)
 
 **Kanban Links:**
-- Epic: [`Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
+- Epic: [`epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)
 - Task: [To be created]
 
 ---
@@ -204,7 +204,7 @@ Updated `find_story_file()` function in `validate_version_bump.py` to use a thre
 
 **Verification Evidence:**
 - Manual test: `python validate_version_bump.py --strict` successfully found Story file for Epic 3, Story 3
-- Validator correctly identified `Story-003-versioning-integration-with-kanban-and-rw.md` using path extraction
+- Validator correctly identified `story-03-versioning-integration-with-kanban-and-rw.md` using path extraction
 - Validator passed validation for v0.3.3.6+1
 
 **Result:**

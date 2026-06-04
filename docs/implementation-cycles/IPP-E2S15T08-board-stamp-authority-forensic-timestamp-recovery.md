@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S15:T08 — Planning: Board Stamp Authority and Forensic Timestamp Recovery (IPW)
 
-**Host Task:** [T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) **(E2:S15:T08)**  
+**Host Task:** [T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) **(E2:S15:T08)**  
 **Planning for:** [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)  
 **Status:** Approved (implementation delivered 2026-05-20)
 

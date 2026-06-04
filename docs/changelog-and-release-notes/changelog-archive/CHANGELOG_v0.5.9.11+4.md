@@ -12,7 +12,7 @@
 ## Changes
 
 - **`docs/implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md`**: Wave 3 steps marked delivered.
-- **`docs/project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md`**: Wave 3 Progress + version anchor.
+- **`docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md`**: Wave 3 Progress + version anchor.
 - **`docs/maintenance/docusaurus-corpus-triage-fr-067.md`**: Wave 3 TD2/TD3 evidence subsection.
 
 ## Verification

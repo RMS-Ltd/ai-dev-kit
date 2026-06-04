@@ -30,7 +30,7 @@ To maintain accurate, up-to-date kanban board documentation through intelligent 
 UKW
 
 # Example with specific scope
-UKW --scope epic-5
+UKW --scope epic-05
 
 # Example with dry run
 UKW --dry-run
@@ -96,13 +96,13 @@ UKW
 ### Example 2: Epic-Specific Update
 ```bash
 # Update specific epic only
-UKW --scope epic-5 --verbose
+UKW --scope epic-05 --verbose
 
 # Configuration:
 update_kanban:
   scope:
-    - epic-5
-    - epic-4
+    - epic-05
+    - epic-04
   depth: stories
   include_fr_br_uxr: true
 
@@ -227,7 +227,7 @@ UKW --validate-structure --fix-issues
 UKW --reset-structure --preserve-content
 
 # Check specific sections
-UKW --validate-sections epic-5 story-5.1
+UKW --validate-sections epic-05 story-5.1
 ```
 
 ### Debug Mode
@@ -308,7 +308,7 @@ from ai_dev_kit.workflows import UpdateKanbanWorkflow
 
 workflow = UpdateKanbanWorkflow()
 result = workflow.execute(
-    scope="epic-5",
+    scope="epic-05",
     dry_run=False,
     status_inference=True,
     auto_prioritize=True

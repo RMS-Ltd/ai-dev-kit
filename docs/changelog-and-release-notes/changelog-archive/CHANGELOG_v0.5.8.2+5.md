@@ -48,6 +48,6 @@ KB migration: migration log updated with stub sweep session, 8 small stubs and E
 
 ## References
 
-- **Task:** `docs/project-management/kanban/epics/Epic-5/Story-008-knowledge-base/T02-notion-hub-and-kb-index.md`
-- **Story:** `docs/project-management/kanban/epics/Epic-5/Story-008-knowledge-base.md`
+- **Task:** `docs/project-management/kanban/epics/epic-05/story-08-knowledge-base/T02-notion-hub-and-kb-index.md`
+- **Story:** `docs/project-management/kanban/epics/epic-05/story-08-knowledge-base.md`
 - **Migration log:** `docs/knowledge/kb-migration-log.md`

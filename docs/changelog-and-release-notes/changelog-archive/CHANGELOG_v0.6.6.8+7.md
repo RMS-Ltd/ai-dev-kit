@@ -36,11 +36,11 @@ Kanban board updated to reflect Epic 7, Story 2 (Code Review Standards and Proce
 
 ## References
 
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 6:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
-- **Task 8:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 6:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
+- **Task 8:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 - **Kanban Board:** `docs/project-management/kanban/kanban-board.md`
-- **Epic 7, Story 2:** `docs/project-management/kanban/epics/Epic-7/Story-002-code-review-standards-and-processes.md`
+- **Epic 7, Story 2:** `docs/project-management/kanban/epics/epic-07/story-02-code-review-standards-and-processes.md`
 
 ---
 

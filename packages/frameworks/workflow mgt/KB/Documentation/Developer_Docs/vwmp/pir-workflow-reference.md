@@ -671,7 +671,7 @@ Generates comprehensive PIR report using template, populates all sections with r
 ```json
 {
   "pir_report_created": true,
-  "report_path": "docs/Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md",
+  "report_path": "docs/Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md",
   "version": "v0.2.11.9+3"
 }
 ```
@@ -1053,7 +1053,7 @@ Step 1 (Identify Review Scope)
 7. Step 7: Review technical implementation
 8. Step 8: Assess documentation quality
 9. Step 9: Identify lessons learned
-10. Step 10: Create PIR report (`docs/Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md`)
+10. Step 10: Create PIR report (`docs/Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md`)
 11. Step 11: Update KB with PIR report
 12. Step 12: Update Epic 2 document with PIR summary
 13. Step 13: Create follow-up tasks from findings
@@ -1077,7 +1077,7 @@ Step 1 (Identify Review Scope)
 7. Step 7: Review technical implementation
 8. Step 8: Assess documentation quality
 9. Step 9: Identify lessons learned
-10. Step 10: Create PIR report (`docs/Reviews/pir/Story-5/PIR-Story-5-v0.2.5.11+1.md`)
+10. Step 10: Create PIR report (`docs/Reviews/pir/Story-5/PIR-story-05-v0.2.5.11+1.md`)
 11. Step 11: Update KB with PIR report
 12. Step 12: Update Story 5 document with PIR summary
 13. Step 13: Create follow-up tasks from findings

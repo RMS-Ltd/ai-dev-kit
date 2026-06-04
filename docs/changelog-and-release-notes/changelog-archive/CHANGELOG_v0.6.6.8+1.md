@@ -77,12 +77,12 @@ After v0.6.6.7+6, analysis revealed a critical versioning attribution flaw:
 ### Files Modified
 
 **New Files:**
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md` (T08 task document)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md` (T08 task document)
 - `docs/analysis/ukw-versioning-reasoning-analysis.md` (analysis document)
 
 **Modified Files:**
 - `.cursorrules` (RW Step 2 updated with UKW context detection)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md` (T08 added to checklist)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md` (T08 added to checklist)
 - `src/fynd_deals/version.py` (version updated to v0.6.6.8+1)
 
 ---

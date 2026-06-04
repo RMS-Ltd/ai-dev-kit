@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E06:S09:T07 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T07-kanban-fresh-install-structure-template-missing-br078.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) **(E06:S09:T07)**  
+**Host Task:** [`T07-kanban-fresh-install-structure-template-missing-br078.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) **(E06:S09:T07)**  
 **Planning for:** [BR-078](../project-management/kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) · [GitHub #10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)  
 **Status:** Implemented (2026-06-03 — pending user verification / RW)
 

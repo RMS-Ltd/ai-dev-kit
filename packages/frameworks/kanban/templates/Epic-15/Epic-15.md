@@ -78,19 +78,19 @@ This epic encompasses security for the {PROJECT_NAME} project. It provides the f
 
 **Brief Summary:** security infrastructure for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-security-infrastructure.md`](Story-001-security-infrastructure.md)
+**Story Document:** [`story-01-security-infrastructure.md`](story-01-security-infrastructure.md)
 
 ### Story 2: Vulnerability Management
 
 **Brief Summary:** vulnerability management for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-vulnerability-management.md`](Story-002-vulnerability-management.md)
+**Story Document:** [`story-02-vulnerability-management.md`](story-02-vulnerability-management.md)
 
 ### Story 3: Security Best Practices
 
 **Brief Summary:** security best practices for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-security-best-practices.md`](Story-003-security-best-practices.md)
+**Story Document:** [`story-03-security-best-practices.md`](story-03-security-best-practices.md)
 
 ---
 

@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Superseded by split ICW package — content is canonical in the three files below (BR-066 publication contract).
 
-**Host Task:** [`T18-interactive-installer-kanban-pattern-prompt-clarity.md`](../project-management/kanban/epics/Epic-7/Story-006-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md) **(E7:S06:T18)**  
+**Host Task:** [`T18-interactive-installer-kanban-pattern-prompt-clarity.md`](../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md) **(E7:S06:T18)**  
 **Planning for:** [UXR-007](../project-management/kanban/fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
 
 ## Canonical planning artifacts

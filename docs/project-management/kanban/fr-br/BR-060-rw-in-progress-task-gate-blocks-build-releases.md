@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-07 — closeout: behavior verified in audit and aligned docs/task wiring for canonical home **E02:S01:T09** (implementation forensic: **RW E06:S06:T60** **v0.6.6.60+1**, SemVer **v0.4.698+1**).  
 **Version:** v0.6.6.60+1  
 **Code:** BR-060  
-**Implementing Task:** [E02:S01:T09](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md) (superseded stubs: [E04:S19:T01](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T01-rw-allow-in-progress-task-releases-br060.md), [E06:S06:T60](../epics/Epic-6/Story-006-feature-requests/T60-rw-allow-in-progress-task-releases.md))
+**Implementing Task:** [E02:S01:T09](../epics/epic-02/story-01-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md) (superseded stubs: [E04:S19:T01](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T01-rw-allow-in-progress-task-releases-br060.md), [E06:S06:T60](../epics/epic-06/story-06-feature-requests/T60-rw-allow-in-progress-task-releases.md))
 
 ---
 

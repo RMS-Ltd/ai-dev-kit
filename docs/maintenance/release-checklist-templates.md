@@ -186,13 +186,13 @@
 
 - [ ] **Check Epic document updated**
   ```bash
-  grep "v0.5.1.48+1" docs/project-management/kanban/epics/Epic-5/Epic-5.md
+  grep "v0.5.1.48+1" docs/project-management/kanban/epics/epic-05/epic-05.md
   ```
   Expected: Version markers added
 
 - [ ] **Verify Story document updated**
   ```bash
-  grep "v0.5.1.48+1" docs/project-management/kanban/epics/Epic-5/Story-001-*.md
+  grep "v0.5.1.48+1" docs/project-management/kanban/epics/epic-05/story-01-*.md
   ```
   Expected: Version markers added
 

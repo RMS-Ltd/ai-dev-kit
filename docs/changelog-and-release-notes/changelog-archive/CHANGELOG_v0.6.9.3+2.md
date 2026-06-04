@@ -14,7 +14,7 @@
 - Bootstrapped empty public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) via `scripts/fr099_bootstrap_public_ai_dev_kit.sh` (default `PUBLIC_ORG=RMS-Ltd`).
 - Updated `rw-config.yaml` canonical public repo/Pages URLs; README, INSTALL, CONTRIBUTING, Docusaurus, issue templates, install script defaults.
 - ADR-006 canonical table and FR-099 Phase 3 runbook aligned to **RMS-Ltd** (interim `earlution/ai-dev-kit` noted as superseded).
-- `fr099_install_smoke_test.sh` PASS on public clone (no book-proj, no Epic-24).
+- `fr099_install_smoke_test.sh` PASS on public clone (no book-proj, no epic-24).
 
 ## Verification
 

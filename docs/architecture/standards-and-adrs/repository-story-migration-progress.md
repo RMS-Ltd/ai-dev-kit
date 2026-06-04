@@ -53,7 +53,7 @@ The repository story abstract space resolution migration is **substantially comp
 - ✅ E5:S01 (FR Repo) created
 - ✅ Repository tasks migrated: E5:S00 → E5:S01 (T31, T34, T35)
 - ✅ E5:S00 updated to abstract space only
-- ✅ Epic-5.md updated
+- ✅ epic-05.md updated
 - ✅ Story files renamed
 - ✅ Story file headers updated
 - ✅ Task documents updated
@@ -69,7 +69,7 @@ The repository story abstract space resolution migration is **substantially comp
 - ✅ E6:S01 (BR Repo) created
 - ✅ Repository task migrated: E6:S00 → E6:S01 (T33)
 - ✅ E6:S00 updated to abstract space only
-- ✅ Epic-6.md updated
+- ✅ epic-06.md updated
 - ✅ BR document updated
 
 **Pending:**
@@ -99,7 +99,7 @@ The repository story abstract space resolution migration is **substantially comp
 - ✅ E5:S00 updated to abstract space only
 
 **Documentation:**
-- ✅ Epic-5.md updated
+- ✅ epic-05.md updated
 - ✅ Story files updated
 - ✅ Task documents updated
 - ✅ FR documents updated
@@ -118,7 +118,7 @@ The repository story abstract space resolution migration is **substantially comp
 - ✅ E6:S00 updated to abstract space only
 
 **Documentation:**
-- ✅ Epic-6.md updated (story checklist)
+- ✅ epic-06.md updated (story checklist)
 - ⏳ Story files need content updates
 - ⏳ Task documents need updates
 - ✅ BR document updated
@@ -135,16 +135,16 @@ The repository story abstract space resolution migration is **substantially comp
 ### Epic 6 Story File Updates ⏳
 
 **Files Needing Updates:**
-- `Story-002-framework-version-management.md` - Header, E6:S01→E6:S02, v0.6.1.→v0.6.2.
-- `Story-003-framework-update-and-migration.md` - Header, E6:S02→E6:S03, v0.6.2.→v0.6.3.
-- `Story-004-framework-health-monitoring.md` - Header, E6:S03→E6:S04, v0.6.3.→v0.6.4.
-- `Story-005-bug-reports.md` - Header, E6:S04→E6:S05, v0.6.4.→v0.6.5.
-- `Story-006-feature-requests.md` - Header, E6:S05→E6:S06, v0.6.5.→v0.6.6.
-- `Story-007-adk-implementation-analysis-and-package-management.md` - Header, E6:S06→E6:S07, v0.6.6.→v0.6.7., all task references
-- `Story-008-ai-dev-kit-cli-tool.md` - Header, E6:S07→E6:S08, v0.6.7.→v0.6.8.
+- `story-02-framework-version-management.md` - Header, E6:S01→E6:S02, v0.6.1.→v0.6.2.
+- `story-03-framework-update-and-migration.md` - Header, E6:S02→E6:S03, v0.6.2.→v0.6.3.
+- `story-04-framework-health-monitoring.md` - Header, E6:S03→E6:S04, v0.6.3.→v0.6.4.
+- `story-05-bug-reports.md` - Header, E6:S04→E6:S05, v0.6.4.→v0.6.5.
+- `story-06-feature-requests.md` - Header, E6:S05→E6:S06, v0.6.5.→v0.6.6.
+- `story-07-adk-implementation-analysis-and-package-management.md` - Header, E6:S06→E6:S07, v0.6.6.→v0.6.7., all task references
+- `story-08-ai-dev-kit-cli-tool.md` - Header, E6:S07→E6:S08, v0.6.7.→v0.6.8.
 
 **Task Documents in S07:**
-- All task documents in `Story-007-adk-implementation-analysis-and-package-management/` need E6:S06→E6:S07, v0.6.6.→v0.6.7. updates
+- All task documents in `story-07-adk-implementation-analysis-and-package-management/` need E6:S06→E6:S07, v0.6.6.→v0.6.7. updates
 
 ### Changelog Updates ⏳
 
@@ -212,5 +212,5 @@ The repository story abstract space resolution migration is **substantially comp
 
 ---
 
-_This progress document is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`Story-001-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md) for story context._
+_This progress document is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`story-01-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md) for story context._
 

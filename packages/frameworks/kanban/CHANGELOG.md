@@ -173,7 +173,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated README to include Epic 7 in canonical epic definitions
 
 ### Documentation
-- Added Epic 7 example document: `examples/Epic-7-Codebase-Maintenance-Example.md`
+- Added Epic 7 example document: `examples/epic-07-Codebase-Maintenance-Example.md`
 - Updated `CANONICAL_EPICS.md` with Epic 7 definition and ordering rationale
 - Updated all intake guides (`FR_BR_INTAKE_GUIDE.md`, `FR_BR_INTAKE_AGENT_GUIDE.md`, `FR_BR_INTAKE_USER_GUIDE.md`)
 

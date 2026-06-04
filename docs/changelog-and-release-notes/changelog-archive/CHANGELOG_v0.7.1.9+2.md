@@ -7,7 +7,7 @@
 
 ## Summary
 
-**`validate_branch_context.py`** now discovers task markdown the same way as **`validate_version_bump.py`**: extra `T**` glob variants, canonical **`E{epic:02d}S{story:02d}T{task:02d}-*.md`** filenames, and **`Epic-{n}`**-wide **`rglob`** fallback for descriptive **`Story-*`** folders (e.g. **`Story-001-codebase-maintenance-tasks`**). Removes false **“Task document not found”** warnings for **0.7.1.9+1**-style releases.
+**`validate_branch_context.py`** now discovers task markdown the same way as **`validate_version_bump.py`**: extra `T**` glob variants, canonical **`E{epic:02d}S{story:02d}T{task:02d}-*.md`** filenames, and **`Epic-{n}`**-wide **`rglob`** fallback for descriptive **`Story-*`** folders (e.g. **`story-01-codebase-maintenance-tasks`**). Removes false **“Task document not found”** warnings for **0.7.1.9+1**-style releases.
 
 ## Changed
 

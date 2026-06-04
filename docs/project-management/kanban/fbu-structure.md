@@ -36,17 +36,17 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 ### High Priority (Should Have - S)
 
-- **FR-051** – FBU Prioritization Board - ✅ COMPLETED (HIGH, Create prioritization board for FRs, BRs, and UXRs) - [FR-051](fr-br/FR-051-fr-br-uxr-prioritization-board.md) | [E06:S06:T01](epics/Epic-6/Story-006-feature-requests/T01-fr-br-uxr-prioritization-board.md) ✅ *IMPLEMENTED - BOARD CREATED*
-- **FR-045** – ADR-002 Task-Touch Derived Mapping (Kanban → SemVer) - TODO (HIGH, SemVer mapping for task_touch and Kanban integration) - [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) | [E05:S01:T45](epics/Epic-5/Story-001-fr-repo/T45-adr-002-task-touch-derived-mapping.md)
-- **FR-047** – Install Logging for Framework Dependencies - TODO (HIGH, Enables detailed post-install analysis and debugging) - [FR-047](fr-br/FR-047-install-logging-for-framework-dependencies.md) | [E05:S01:T47](epics/Epic-5/Story-001-fr-repo/T47-install-logging-for-framework-dependencies.md)
-- **FR-046** – RW SemVer Tag When task_touch Enabled - TODO (HIGH, RW tagging behaviour when task_touch is enabled) - [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) | [E05:S01:T46](epics/Epic-5/Story-001-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
+- **FR-051** – FBU Prioritization Board - ✅ COMPLETED (HIGH, Create prioritization board for FRs, BRs, and UXRs) - [FR-051](fr-br/FR-051-fr-br-uxr-prioritization-board.md) | [E06:S06:T01](epics/epic-06/story-06-feature-requests/T01-fr-br-uxr-prioritization-board.md) ✅ *IMPLEMENTED - BOARD CREATED*
+- **FR-045** – ADR-002 Task-Touch Derived Mapping (Kanban → SemVer) - TODO (HIGH, SemVer mapping for task_touch and Kanban integration) - [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) | [E05:S01:T45](epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md)
+- **FR-047** – Install Logging for Framework Dependencies - TODO (HIGH, Enables detailed post-install analysis and debugging) - [FR-047](fr-br/FR-047-install-logging-for-framework-dependencies.md) | [E05:S01:T47](epics/epic-05/story-01-fr-repo/T47-install-logging-for-framework-dependencies.md)
+- **FR-046** – RW SemVer Tag When task_touch Enabled - TODO (HIGH, RW tagging behaviour when task_touch is enabled) - [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) | [E05:S01:T46](epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
 
 ### Medium Priority (Could Have - C)
 
-- **FR-035** – Task Template Cross-Wiring Section - TODO (MEDIUM, Cross-wiring section in task templates) - [FR-035](fr-br/FR-035-task-template-cross-wiring-section.md) | [E05:S01:T35](epics/Epic-5/Story-001-fr-repo/T35-task-template-cross-wiring-section.md)
+- **FR-035** – Task Template Cross-Wiring Section - TODO (MEDIUM, Cross-wiring section in task templates) - [FR-035](fr-br/FR-035-task-template-cross-wiring-section.md) | [E05:S01:T35](epics/epic-05/story-01-fr-repo/T35-task-template-cross-wiring-section.md)
 - **FR-034** – UKW Granular Control and Use Case Flags - TODO (MEDIUM, Granular control for Update Kanban Workflow) - [FR-034](fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
 - **FR-032** – Release Candidate Readiness Gap Analysis - TODO (MEDIUM, Analyze gaps in release candidate readiness) - [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
-- **FR-030** – AI Dev Kit CLI Tool - TODO (MEDIUM, Command-line interface tool) - [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md) | [E6:S08](epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md)
+- **FR-030** – AI Dev Kit CLI Tool - TODO (MEDIUM, Command-line interface tool) - [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md) | [E6:S08](epics/epic-06/story-08-ai-dev-kit-cli-tool.md)
 - **FR-021** – FBU Repository Stories - TODO (MEDIUM, Repository stories for FBU management) - [FR-021](fr-br/FR-021-fr-br-uxr-repository-stories.md)
 
 ### Low Priority (Could Have - C)
@@ -94,11 +94,11 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 ### Critical Priority (Must Have - M)
 
 - **BR-038** – Release Workflow Micromanagement and Tool Discovery Issues - TODO (HIGH, Excessive manual intervention, tool discovery problems, and poor error recovery in Release Workflow) - [BR-038](fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
-- **BR-037** – Kanban Install Consumer Board Contamination - IN PROGRESS (CRITICAL, Technical implementation finished, core contamination problem solved, Release Workflow blocked by tooling friction) - [BR-037](fr-br/BR-037-kanban-install-consumer-board-contamination.md) | [E06:S01:T37](epics/Epic-6/Story-001-br-repo/T37-kanban-install-consumer-board-contamination.md)
+- **BR-037** – Kanban Install Consumer Board Contamination - IN PROGRESS (CRITICAL, Technical implementation finished, core contamination problem solved, Release Workflow blocked by tooling friction) - [BR-037](fr-br/BR-037-kanban-install-consumer-board-contamination.md) | [E06:S01:T37](epics/epic-06/story-01-br-repo/T37-kanban-install-consumer-board-contamination.md)
 
 ### High Priority (Should Have - S)
 
-- **BR-061** – Task-touch SemVer PATCH bumps on every `semver_converter` run (registry over-increment / tag pressure) - TODO (HIGH, `semver_converter.py` vs RW — **E03:S02:T12**, not E6:S06) - [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [E03:S02:T12](epics/Epic-3/Story-002-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
+- **BR-061** – Task-touch SemVer PATCH bumps on every `semver_converter` run (registry over-increment / tag pressure) - TODO (HIGH, `semver_converter.py` vs RW — **E03:S02:T12**, not E6:S06) - [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 
 ### Medium Priority (Could Have - C)
 
@@ -130,7 +130,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **UXR-002** – Comprehensive UAT Migration Utilities - TODO (HIGH, User acceptance testing tools for migration) - [UXR-002](fr-br/UXR-002-comprehensive-uat-migration-utilities.md)
 - **UXR-005** – Kanban Board Formatting & Governance - TODO (HIGH, Enforce blank-line readability rule across Kanban docs and establish UXR ownership for template maintenance) - [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md)
 - **UXR-006** – Single `dev` branch and RW validator relaxation (solo workflow) - TODO (HIGH, evaluate allowing `dev` as accepted RW branch context to reduce multi-branch hygiene friction while preserving safety controls) - [UXR-006](fr-br/UXR-006-dev-branch-and-rw-validator-relaxation.md)
-- **UXR-008** – Canonical kanban filename normalization (`kboard.md` / `fbuboard.md` pattern) - IN PROGRESS (HIGH, expand board-default migration into full kanban + FBU filename normalization with compatibility-safe transition) - [UXR-008](fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md) | [E04:S19:T05](epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- **UXR-008** – Canonical kanban filename normalization (`kboard.md` / `fbuboard.md` pattern) - IN PROGRESS (HIGH, expand board-default migration into full kanban + FBU filename normalization with compatibility-safe transition) - [UXR-008](fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md) | [E04:S19:T05](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 
 ### Medium Priority (Could Have - C)
 

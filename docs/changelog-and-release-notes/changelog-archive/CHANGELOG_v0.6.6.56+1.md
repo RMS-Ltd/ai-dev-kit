@@ -23,9 +23,9 @@ title: "Changelog: v0.6.6.56+1"
 - Created bug report document:
   - `docs/project-management/kanban/fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md`
 - Created task document for E6:S06:T56:
-  - `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md`
+  - `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md`
 - Added T56 to Story 6 task checklist:
-  - Updated `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md`
+  - Updated `docs/project-management/kanban/epics/epic-06/story-06-feature-requests.md`
 
 No implementation work or non-documentation code changes are included in this build.
 

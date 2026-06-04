@@ -70,7 +70,7 @@ def _write_synthetic_release_scope(repo: Path) -> dict:
     fr_doc = fbu_dir / "FR-999-test.md"
     fr_doc.write_text("# FR-999\nbody\n")
 
-    epic_dir = repo / "docs/project-management/kanban/epics/Epic-2/Story-015-test"
+    epic_dir = repo / "docs/project-management/kanban/epics/epic-02/story-15-test"
     epic_dir.mkdir(parents=True, exist_ok=True)
     task_doc = epic_dir / "T99-test.md"
     task_doc.write_text("# Task 99\nbody\n")

@@ -209,7 +209,7 @@ This feature is needed:
 - **Release Workflow Reference:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-reference.md`
 - **RW Step 7 Script:** `packages/frameworks/workflow mgt/scripts/update_kanban_docs.py`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
-- **E2:S08:** `docs/project-management/kanban/epics/Epic-2/Story-008-harden-release-workflow-reliability.md`
+- **E2:S08:** `docs/project-management/kanban/epics/epic-02/story-08-harden-release-workflow-reliability.md`
 
 ---
 

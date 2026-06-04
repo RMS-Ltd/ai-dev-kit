@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** IMPLEMENTED — closure **v0.7.1.11+8** (`RW E07:S01:T11`, `--art`; Waves 0–F)
 
-**Implementing Task:** [E07:S01:T11](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
+**Implementing Task:** [E07:S01:T11](../epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 
-**Related:** [FR-039](./FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [UXR-013](./UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md), [E07:S01:T10](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md), [FR-075](./FR-075-icw-durable-planning-artifacts-documentation-system.md), [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
+**Related:** [FR-039](./FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [UXR-013](./UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md), [E07:S01:T10](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md), [FR-075](./FR-075-icw-durable-planning-artifacts-documentation-system.md), [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
 
@@ -109,4 +109,4 @@ Governance policies for the maintainer book workspace are split across rituals, 
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [docs/architecture/README.md](../../../architecture/README.md)
 - [packages/frameworks/kanban/policies/kanban-governance-policy.md](../../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) (framework SoT)
-- Task: [E07:S01:T11](../epics/Epic-7/Story-001-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
+- Task: [E07:S01:T11](../epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)

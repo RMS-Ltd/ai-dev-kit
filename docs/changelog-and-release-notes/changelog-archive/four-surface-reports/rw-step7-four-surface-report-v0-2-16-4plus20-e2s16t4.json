@@ -4,7 +4,7 @@
   "release_scope": {"epic": 2, "story": 16, "task": 4, "task_id": "E2:S16:T4", "version_string": "v0.2.16.4+20"},
   "summary": {"touched_surfaces": ["task_doc", "kboard", "fbuboard"], "stamps_appended_with_evidence": 0},
   "surfaces": {
-    "task_doc": {"touched": true, "paths": ["docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"]},
+    "task_doc": {"touched": true, "paths": ["docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"]},
     "fbu_doc": {"touched": false, "notes": ["Docs-only release; no FBU doc changes."], "paths": ["docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md"]},
     "kboard": {"touched": true, "paths": ["docs/project-management/kanban/kboard.md"]},
     "fbuboard": {"touched": true, "paths": ["docs/project-management/kanban/fbuboard.md"]}

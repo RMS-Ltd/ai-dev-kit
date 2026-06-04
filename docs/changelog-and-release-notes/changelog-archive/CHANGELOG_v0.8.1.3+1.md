@@ -126,8 +126,8 @@ Documented best practices include:
 
 - `src/fynd_deals/version.py` - Updated to v0.8.1.3+1
 - `packages/frameworks/tooling & automation/generators/README.md` - Added pattern library reference
-- `docs/project-management/kanban/epics/Epic-8/Story-001-code-generators.md` - Marked T03 as complete, story as COMPLETE
-- `docs/project-management/kanban/epics/Epic-8/Epic-8.md` - Updated story status and version
+- `docs/project-management/kanban/epics/epic-08/story-01-code-generators.md` - Marked T03 as complete, story as COMPLETE
+- `docs/project-management/kanban/epics/epic-08/epic-08.md` - Updated story status and version
 
 ---
 

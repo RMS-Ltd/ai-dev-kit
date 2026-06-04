@@ -60,4 +60,4 @@ Attempted fix for interactive RW mode C **infinite loop** on the story document 
 ## References
 
 - [BR-085](../../project-management/kanban/fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
-- [E06:S09:T14](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)
+- [E06:S09:T14](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)

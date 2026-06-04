@@ -13,7 +13,7 @@ labels: ["bug", "github-actions", "workflow", "optimization", "notifications"]
 
 # Bug Report BR-052: GitHub Actions Workflow Optimization
 
-**Implementing Task:** [E02:S11:T14](../epics/Epic-2/Story-011-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)
+**Implementing Task:** [E02:S11:T14](../epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)
 
 ## **Bug Summary**
 GitHub Actions workflow `fr-br-intake.yml` was generating unnecessary "No jobs were run" email notifications due to overly broad trigger conditions.

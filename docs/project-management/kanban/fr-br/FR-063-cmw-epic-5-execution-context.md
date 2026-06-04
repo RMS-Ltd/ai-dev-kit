@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Status:** ACTIVE (intake released v0.5.2.6+1; implementation ACs open)  
 
 **Repository Pattern:** FR-063 = E05:S02:T06  
-**Implementing Task:** [E05:S02:T06](../epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md)
+**Implementing Task:** [E05:S02:T06](../epics/epic-05/story-002/T06-cmw-epic-05-execution-context-fr-063.md)
 
 ---
 
@@ -32,7 +32,7 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 
 - CMW can be executed from any working tree; `cmw.py` does not validate branch or `VERSION_EPIC`.
 - RW **Step 1** (`validate_branch_context.py --strict`) requires branch name and version epic to match.
-- Changelog maintenance is **owned by the Documentation epic** (**Epic 5**); canonical branch is **`epic/5-documentation-management`** (see [`Epic-5.md`](../epics/Epic-5/Epic-5.md)).
+- Changelog maintenance is **owned by the Documentation epic** (**Epic 5**); canonical branch is **`epic/5-documentation-management`** (see [`epic-05.md`](../epics/epic-05/epic-05.md)).
 - Running CMW on another epic branch (e.g. with `VERSION_EPIC = 7`) then attempting **RW** produces **branch mismatch** or forces manual version repair.
 
 **Gap**
@@ -60,7 +60,7 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 
 ### Kanban / attribution (should)
 
-- **Done:** [E05:S02:T06](../epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md) under **E5:S02 – Documentation Maintenance Framework** for implementation and RW on **`epic/5-documentation-management`**.
+- **Done:** [E05:S02:T06](../epics/epic-05/story-002/T06-cmw-epic-05-execution-context-fr-063.md) under **E5:S02 – Documentation Maintenance Framework** for implementation and RW on **`epic/5-documentation-management`**.
 - Reconcile messaging with **E02:S16:T03** (perpetual CMW maintenance): either narrow T102 to **framework script behavior** and use **E5** for doc-maintenance **runs**, or document a single source of truth — **decision recorded in task + Epic 5/Epic 6 docs**.
 
 ---
@@ -94,8 +94,8 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 
 - [FR-027](FR-027-add-cmw-to-workflow-management-package-documentation.md) — CMW package documentation (COMPLETE).
 - [FR-025](FR-025-changelog-management-and-archival-workflow.md) — Changelog management / archival workflow.
-- **Epic 5:** [`Epic-5.md`](../epics/Epic-5/Epic-5.md) — branch `epic/5-documentation-management`.
-- **Perpetual CMW task:** [E02:S16:T03](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — reconcile with E5 execution rule.
+- **Epic 5:** [`epic-05.md`](../epics/epic-05/epic-05.md) — branch `epic/5-documentation-management`.
+- **Perpetual CMW task:** [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — reconcile with E5 execution rule.
 - **Scripts:** `packages/frameworks/workflow mgt/scripts/changelog/cmw.py`, `cmw-config.yaml`.
 
 ---

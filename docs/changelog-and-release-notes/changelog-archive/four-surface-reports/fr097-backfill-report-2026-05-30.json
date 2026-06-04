@@ -70,28 +70,28 @@
           "old_stamp": "2026-05-29 17:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md"
         },
         {
           "row_id": "E02:S16:T06",
           "old_stamp": "2026-05-29 18:00 UTC",
           "new_stamp": "2026-04-26 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md"
         },
         {
           "row_id": "E02:S01:T17",
           "old_stamp": "2026-05-29 18:00 UTC",
           "new_stamp": "2026-04-14 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md"
         },
         {
           "row_id": "E06:S07:T107",
           "old_stamp": "2026-05-29 17:00 UTC",
           "new_stamp": "2026-05-30 10:26 UTC",
           "source": "git",
-          "detail": "docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md"
+          "detail": "docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md"
         },
         {
           "row_id": "E07:S01:T09",
@@ -105,7 +105,7 @@
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md"
         },
         {
           "row_id": "E02:S15:T01",
@@ -140,28 +140,28 @@
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md"
         },
         {
           "row_id": "E08:S03:T04",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md"
+          "detail": "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md"
         },
         {
           "row_id": "E05:S01:T48",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-03-11 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md"
+          "detail": "docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T48-icw-task-identifier-argument.md"
         },
         {
           "row_id": "E05:S02:T06",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-03-25 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md"
+          "detail": "docs/project-management/kanban/epics/epic-05/story-002/T06-cmw-epic-05-execution-context-fr-063.md"
         },
         {
           "row_id": "E02:S16:T03",
@@ -175,21 +175,21 @@
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-30 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
         },
         {
           "row_id": "E02:S16:T14",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md"
         },
         {
           "row_id": "E07:S01:T05",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-03-07 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T05-markdown-maintenance-perpetual-task.md"
+          "detail": "docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T05-markdown-maintenance-perpetual-task.md"
         }
       ]
     },
@@ -309,21 +309,21 @@
           "old_stamp": "2026-05-29 18:00 UTC",
           "new_stamp": "2026-04-26 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md"
         },
         {
           "row_id": "FR-087",
           "old_stamp": "2026-05-29 18:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md"
         },
         {
           "row_id": "FR-077",
           "old_stamp": "2026-05-29 18:00 UTC",
           "new_stamp": "2026-04-14 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md"
         },
         {
           "row_id": "BR-066",
@@ -351,105 +351,105 @@
           "old_stamp": "2026-05-29 18:00 UTC",
           "new_stamp": "2026-01-05 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-7/Story-005-migration-uxr-research.md"
+          "detail": "docs/project-management/kanban/epics/epic-07/story-05-migration-uxr-research.md"
         },
         {
           "row_id": "UXR-002",
           "old_stamp": "2026-05-29 18:00 UTC",
           "new_stamp": "2026-01-05 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-7/Story-005-migration-uxr-research.md"
+          "detail": "docs/project-management/kanban/epics/epic-07/story-05-migration-uxr-research.md"
         },
         {
           "row_id": "FR-032",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md"
+          "detail": "docs/project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md"
         },
         {
           "row_id": "FR-030",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-01-16 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md"
+          "detail": "docs/project-management/kanban/epics/epic-06/story-08-ai-dev-kit-cli-tool.md"
         },
         {
           "row_id": "UXR-003",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-01-05 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-7/Story-005-migration-uxr-research.md"
+          "detail": "docs/project-management/kanban/epics/epic-07/story-05-migration-uxr-research.md"
         },
         {
           "row_id": "FR-044",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-02-22 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md"
+          "detail": "docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md"
         },
         {
           "row_id": "FR-039",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md"
+          "detail": "docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md"
         },
         {
           "row_id": "FR-037",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md"
         },
         {
           "row_id": "FR-029",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2025-12-22 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-015-procedural-task-template-generation-and-hybrid-strategy.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md"
         },
         {
           "row_id": "FR-023",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-30 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
         },
         {
           "row_id": "FR-022",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-01-16 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-5/Story-007-policy-documentation-structure.md"
+          "detail": "docs/project-management/kanban/epics/epic-05/story-07-policy-documentation-structure.md"
         },
         {
           "row_id": "FR-020",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2025-12-12 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md"
         },
         {
           "row_id": "FR-019",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-03-30 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md"
         },
         {
           "row_id": "FR-018",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2025-12-18 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md"
         },
         {
           "row_id": "FR-017",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2025-12-12 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md"
         },
         {
           "row_id": "FR-016",
@@ -463,105 +463,105 @@
           "old_stamp": "2025-12-10 00:00 UTC",
           "new_stamp": "2025-12-10 00:00 UTC",
           "source": "unchanged",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md"
         },
         {
           "row_id": "FR-009",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-04-09 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption.md"
         },
         {
           "row_id": "FR-007",
           "old_stamp": "2025-12-10 00:00 UTC",
           "new_stamp": "2025-12-10 00:00 UTC",
           "source": "unchanged",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-007-migration-support-and-installation-modes.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md"
         },
         {
           "row_id": "FR-003",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md"
+          "detail": "docs/project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md"
         },
         {
           "row_id": "FR-002",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md"
+          "detail": "docs/project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md"
         },
         {
           "row_id": "BR-008",
           "old_stamp": "2025-12-10 00:00 UTC",
           "new_stamp": "2025-12-10 00:00 UTC",
           "source": "unchanged",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md"
         },
         {
           "row_id": "BR-007",
           "old_stamp": "2025-12-10 00:00 UTC",
           "new_stamp": "2025-12-10 00:00 UTC",
           "source": "unchanged",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md"
         },
         {
           "row_id": "BR-006",
           "old_stamp": "2025-12-10 00:00 UTC",
           "new_stamp": "2025-12-10 00:00 UTC",
           "source": "unchanged",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-007-migration-support-and-installation-modes.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md"
         },
         {
           "row_id": "BR-005",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2025-12-22 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md"
+          "detail": "docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md"
         },
         {
           "row_id": "BR-003",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-04-07 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T10-dev-branch-support-in-rw-validators.md"
         },
         {
           "row_id": "BR-002",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2025-12-16 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md"
         },
         {
           "row_id": "BR-001",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-26 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md"
+          "detail": "docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md"
         },
         {
           "row_id": "BR-058",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-8/Story-003-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md"
+          "detail": "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md"
         },
         {
           "row_id": "FR-048",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-03-11 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md"
+          "detail": "docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T48-icw-task-identifier-argument.md"
         },
         {
           "row_id": "FR-058",
           "old_stamp": "2026-05-29 18:00 UTC",
           "new_stamp": "2026-03-07 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks/T05-markdown-maintenance-perpetual-task.md"
+          "detail": "docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T05-markdown-maintenance-perpetual-task.md"
         },
         {
           "row_id": "FR-059",
@@ -582,14 +582,14 @@
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-03-25 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-5/Story-002/T06-cmw-epic-5-execution-context-fr-063.md"
+          "detail": "docs/project-management/kanban/epics/epic-05/story-002/T06-cmw-epic-05-execution-context-fr-063.md"
         },
         {
           "row_id": "FR-031",
           "old_stamp": "2026-05-29 19:00 UTC",
           "new_stamp": "2026-05-29 00:00 UTC",
           "source": "doc",
-          "detail": "docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md"
+          "detail": "docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md"
         }
       ]
     }

@@ -16,13 +16,13 @@
     "task_doc": {
       "touched": true,
       "paths": [
-        "docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md"
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md"
       ]
     },
     "story_doc": {
       "touched": true,
       "paths": [
-        "docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review.md"
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md"
       ]
     },
     "fbu_doc": {

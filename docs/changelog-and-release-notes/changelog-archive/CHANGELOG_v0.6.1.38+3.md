@@ -57,6 +57,6 @@ BR-072 reopened: E2:S07:T01 and E2:S07:T05 found showing as TODO on kboard despi
 
 ## References
 
-- Task: [E6:S01:T38](../../../project-management/kanban/epics/Epic-6/Story-001-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)
+- Task: [E6:S01:T38](../../../project-management/kanban/epics/epic-06/story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)
 - BR-072: [BR-072](../../../project-management/kanban/fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)
-- Perpetual task: [E2:S16:T04](../../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- Perpetual task: [E2:S16:T04](../../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)

@@ -26,13 +26,13 @@ Create individual epic template files for canonical epics 1-7, using the EPIC_TE
 
 ### Added
 
-- **Epic 1 Template:** `packages/frameworks/kanban/templates/epics/Epic-1-Project-Core.md`
-- **Epic 2 Template:** `packages/frameworks/kanban/templates/epics/Epic-2-Workflow-Management.md`
-- **Epic 3 Template:** `packages/frameworks/kanban/templates/epics/Epic-3-Versioning.md`
-- **Epic 4 Template:** `packages/frameworks/kanban/templates/epics/Epic-4-Kanban-Framework.md`
-- **Epic 5 Template:** `packages/frameworks/kanban/templates/epics/Epic-5-FR-Implementation.md`
-- **Epic 6 Template:** `packages/frameworks/kanban/templates/epics/Epic-6-BR-Implementation.md`
-- **Epic 7 Template:** `packages/frameworks/kanban/templates/epics/Epic-7-UXR.md`
+- **Epic 1 Template:** `packages/frameworks/kanban/templates/epics/epic-01-Project-Core.md`
+- **Epic 2 Template:** `packages/frameworks/kanban/templates/epics/epic-02-Workflow-Management.md`
+- **Epic 3 Template:** `packages/frameworks/kanban/templates/epics/epic-03-Versioning.md`
+- **Epic 4 Template:** `packages/frameworks/kanban/templates/epics/epic-04-Kanban-Framework.md`
+- **Epic 5 Template:** `packages/frameworks/kanban/templates/epics/epic-05-FR-Implementation.md`
+- **Epic 6 Template:** `packages/frameworks/kanban/templates/epics/epic-06-BR-Implementation.md`
+- **Epic 7 Template:** `packages/frameworks/kanban/templates/epics/epic-07-UXR.md`
 
 ### Changed
 

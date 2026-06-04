@@ -74,12 +74,12 @@ housekeeping_policy: keep
 
 #### Step 10: Create PIR Report ✅
 - **Action:** Generated PIR report using Epic template
-- **Result:** ✅ Success - PIR report created: `PIR-Epic-2-TEST-v0.2.5.10+1.md`
+- **Result:** ✅ Success - PIR report created: `PIR-epic-02-TEST-v0.2.5.10+1.md`
 - **Version Integration:** ✅ Version range correctly included (v0.2.1.1+1 to v0.2.5.10+1)
 
 #### Step 11: Update Knowledge Base ✅
 - **Action:** Stored PIR report in KB structure
-- **Result:** ✅ Success - Report stored at `docs/Reviews/pir/Epic-2/`
+- **Result:** ✅ Success - Report stored at `docs/Reviews/pir/epic-02/`
 
 #### Step 12: Update Kanban Documentation ✅ (Simulated)
 - **Action:** Simulated Kanban document update with PIR summary
@@ -148,8 +148,8 @@ housekeeping_policy: keep
 
 ## Test Artifacts
 
-1. **PIR Report:** `docs/Reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md`
-2. **Test Execution Report:** `docs/Reviews/pir/Epic-2/PIR-TEST-EXECUTION-REPORT.md` (this document)
+1. **PIR Report:** `docs/Reviews/pir/epic-02/PIR-epic-02-TEST-v0.2.5.10+1.md`
+2. **Test Execution Report:** `docs/Reviews/pir/epic-02/PIR-TEST-EXECUTION-REPORT.md` (this document)
 3. **Integration Validation:** All integration guides validated
 
 ---

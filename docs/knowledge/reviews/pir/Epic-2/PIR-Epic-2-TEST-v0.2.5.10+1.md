@@ -217,7 +217,7 @@ This is a **test PIR report** created to validate the Post-Implementation Review
    - Priority: High
    - Tasks: T12 (test with sample Story), T13 (test with sample Epic - full), T14 (reference documentation), T15 (usage guide)
    - Owner: TBD
-   - Related Work: [Story 5](../../../../project-management/kanban/epics/Epic-2/Story-005-post-implementation-review-workflow.md)
+   - Related Work: [Story 5](../../../../project-management/kanban/epics/epic-02/story-05-post-implementation-review-workflow.md)
 
 2. **Create Automated Tests:**
    - Priority: Medium
@@ -263,11 +263,11 @@ This is a **test PIR report** created to validate the Post-Implementation Review
 
 ## Related Work
 
-- **Epic:** [Epic 2 Documentation](../../../../project-management/kanban/epics/Epic-2/Epic-2.md) (v0.2.5.10+1)
+- **Epic:** [Epic 2 Documentation](../../../../project-management/kanban/epics/epic-02/epic-02.md) (v0.2.5.10+1)
 - **Stories:**
-  - [Story 1](../../../../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) (v0.2.1.6+4)
-  - [Story 2](../../../../project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow.md) (v0.2.2.2+1)
-  - [Story 5](../../../../project-management/kanban/epics/Epic-2/Story-005-post-implementation-review-workflow.md) (v0.2.5.10+1)
+  - [Story 1](../../../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) (v0.2.1.6+4)
+  - [Story 2](../../../../project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow.md) (v0.2.2.2+1)
+  - [Story 5](../../../../project-management/kanban/epics/epic-02/story-05-post-implementation-review-workflow.md) (v0.2.5.10+1)
 - **Version Range:** v0.2.1.1+1 to v0.2.5.10+1
 - **PIR Workflow:** [PIR Workflow YAML (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/workflows/pir-workflow.yaml)
 - **PIR Execution Guide:** [PIR Agent Execution Guide (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow%20mgt/docs/documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)

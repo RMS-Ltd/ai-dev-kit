@@ -143,11 +143,11 @@ action: "Configure Kanban document paths"
 paths_to_configure:
   epic_docs:
     pattern: "docs/project-management/epics/overview/Epic {epic}/Epic-{epic}.md"
-    example: "docs/project-management/epics/overview/Epic 4/Epic-4.md"
+    example: "docs/project-management/epics/overview/Epic 4/epic-04.md"
 
   story_docs:
     pattern: "docs/project-management/kanban/epics/Epic-{epic}/Story-{N}-{Name}.md"
-    example: "docs/project-management/kanban/epics/Epic-4/Story-33-Parent-Inclusivity-and-Accessibility.md"
+    example: "docs/project-management/kanban/epics/epic-04/story-33-Parent-Inclusivity-and-Accessibility.md"
 
 files_to_update:
   - ".cursorrules (RW trigger section, Step 4 description)"
@@ -362,8 +362,8 @@ documentation:
   kanban_policy: "policies/kanban-governance-policy.md"
   epic_template: "templates/EPIC_TEMPLATE.md"
   story_template: "templates/STORY_TEMPLATE.md"
-  epic_example: "examples/Epic-4-Example.md"
-  story_example: "examples/Story-33-Example.md"
+  epic_example: "examples/epic-04-Example.md"
+  story_example: "examples/story-33-Example.md"
 
 integration_guides:
   versioning: "integration/numbering-versioning-integration.md"

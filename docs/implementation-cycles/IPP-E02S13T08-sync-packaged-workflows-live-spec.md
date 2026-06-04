@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S13:T08 — Planning: Sync Packaged Workflows With Live Repo (IPW)
 
-**Host Task:** [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](../project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) **(E02:S13:T08)**  
-**Planning for:** [FR-049](../project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md) · extends [E05:S01:T66](../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T66-cursorrules-vs-packaged-rw-trigger-parity.md)  
+**Host Task:** [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) **(E02:S13:T08)**  
+**Planning for:** [FR-049](../project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md) · extends [E05:S01:T66](../project-management/kanban/epics/epic-05/story-01-fr-repo/T66-cursorrules-vs-packaged-rw-trigger-parity.md)  
 **Status:** Implemented (2026-06-03 — validators PASS; release via `RW E02:S13:T08`)
 
 ---
@@ -139,6 +139,6 @@ See §5.
 
 ## References
 
-- [T08 task doc](../project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
+- [T08 task doc](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
 - [FR-049](../project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md)
 - [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow%20mgt/docs/rw-trigger-dual-source-parity.md)

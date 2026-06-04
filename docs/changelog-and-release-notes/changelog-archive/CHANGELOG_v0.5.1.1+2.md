@@ -36,14 +36,14 @@ Planned comprehensive documentation hygiene analysis task (E5:S01:T01) and restr
 **Task Restructuring:**
 - Renumbered tasks: T01 → Hygiene Analysis, T02 → Define Policies, T03 → Review Cadences, T04 → Update Triggers
 - Updated dependencies: T02 now depends on T01, T03 depends on T02, T04 depends on T02
-- Updated Epic-5.md task list to reflect new structure
+- Updated epic-05.md task list to reflect new structure
 
 ---
 
 ## Files Modified
 
-- `docs/project-management/kanban/epics/Epic-5/Story-001-documentation-maintenance-framework.md`
-- `docs/project-management/kanban/epics/Epic-5/Epic-5.md`
+- `docs/project-management/kanban/epics/epic-05/story-01-documentation-maintenance-framework.md`
+- `docs/project-management/kanban/epics/epic-05/epic-05.md`
 - `src/fynd_deals/version.py`
 
 ---

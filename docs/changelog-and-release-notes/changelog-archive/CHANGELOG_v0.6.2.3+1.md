@@ -130,12 +130,12 @@ Framework backward compatibility policy established. Comprehensive backward comp
 1. `docs/architecture/standards-and-adrs/framework-backward-compatibility-policy.md` (new)
    - Comprehensive framework backward compatibility policy document
 
-2. `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md`
+2. `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
    - Task checklist updated: T03 marked as COMPLETE
    - Task details updated with completion status and deliverables
    - Story version updated to v0.6.2.3+1
 
-3. `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+3. `docs/project-management/kanban/epics/epic-06/epic-06.md`
    - Story checklist updated: T03 marked as COMPLETE, Story 2 status updated
    - "Stories (Initial)" section updated: T03 marked as COMPLETE
 

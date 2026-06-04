@@ -34,9 +34,9 @@
   - `docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md`: `OK`
   - `docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md`: `OK`
   - `docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md`: `OK`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`: `OK`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`: `OK`
-  - `docs/project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`: `OK`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`: `OK`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`: `OK`
+  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`: `OK`
   - `docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md`: `OK`
   - `docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`: `OK`
   - `docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md`: `OK`
@@ -90,7 +90,7 @@
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
   - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-1-4-7plus2-e1s4t7.json`
-  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md'], 'notes_count': 1}`
+  - `task_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md'], 'notes_count': 1}`
   - `fbu_doc`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-080-greenfield-installation-process.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/FR-082-installation-distribution-canonical-repo-alignment.md'], 'notes_count': 1}`
   - `kboard`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md'], 'notes_count': 1}`
   - `fbuboard`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md'], 'notes_count': 1}`

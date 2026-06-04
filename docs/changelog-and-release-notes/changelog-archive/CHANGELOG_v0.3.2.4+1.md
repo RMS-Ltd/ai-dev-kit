@@ -43,7 +43,7 @@ Each edge case/anti-pattern entry includes:
 ## Files Modified
 
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md` – Added Section 10 (10 edge cases and anti-patterns)
-- `docs/project-management/kanban/epics/Epic-3/stories/Story-002-versioning-cookbook-and-examples.md` – Updated task status and completion details
+- `docs/project-management/kanban/epics/epic-03/stories/story-02-versioning-cookbook-and-examples.md` – Updated task status and completion details
 - `src/fynd_deals/version.py` (version bumped to 0.3.2.4+1)
 
 ---
@@ -90,7 +90,7 @@ Each edge case/anti-pattern entry includes:
 ## References
 
 - **Error Reference Guide:** `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md`
-- **Root Cause Analysis:** `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T002-root-cause-analysis.md`
+- **Root Cause Analysis:** `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T02-root-cause-analysis.md`
 - **Task Naming Migration Guide:** `docs/architecture/standards-and-adrs/task-naming-migration-guide.md`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 

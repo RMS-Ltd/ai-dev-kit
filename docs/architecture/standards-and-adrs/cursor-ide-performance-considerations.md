@@ -327,7 +327,7 @@ find docs/project-management/kanban -name "*.md" | wc -l
 ## Related Documentation
 
 - **External Investigation:** Confidentia project - Epic 20, Story 5, Task 16
-  - Bug Report: `KB/PM_and_Portfolio/kanban/Epic 20/Story-5-BR-Cursor-IDE-Crashes.md`
+  - Bug Report: `KB/PM_and_Portfolio/kanban/Epic 20/story-05-BR-Cursor-IDE-Crashes.md`
   - Investigation Report: `KB/Documentation/Developer_Docs/cursor-crash-investigation.md`
   - Article: `KB/Documentation/Developer_Docs/cursor-crash-investigation-article.md`
 - **Framework Documentation:** `packages/frameworks/workflow mgt/IMPLEMENTATION_GUIDE.md`

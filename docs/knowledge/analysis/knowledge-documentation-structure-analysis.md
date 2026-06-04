@@ -432,7 +432,7 @@ knowledge/fynd_deals/
 
 **Pattern 2: Inline References**
 ```markdown
-See [Epic 20](Epic-20.md) for details.
+See [Epic 20](epic-20.md) for details.
 ```
 
 **Projects Using:** All projects
@@ -440,8 +440,8 @@ See [Epic 20](Epic-20.md) for details.
 
 **Pattern 3: Hub-Based References**
 ```markdown
-- [[Kanban/Epic-1/Epic-1.md]] — Epic 1
-- [[Kanban/Epic-2/Epic-2.md]] — Epic 2
+- [[Kanban/epic-01/epic-01.md]] — Epic 1
+- [[Kanban/epic-02/epic-02.md]] — Epic 2
 ```
 
 **Projects Using:** fynd.deals

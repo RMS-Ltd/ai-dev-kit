@@ -3,7 +3,7 @@
 **Purpose:** Setup guide for ai-dev-kit on Apple platforms (macOS, iOS) to resolve Apple SDK license blocking issues.
 
 **Related Issue:** [BR-040](../../project-management/kanban/fr-br/BR-040-apple-sdk-license-blocking-issue.md)  
-**Task:** [E6:S06:T03](../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T03-apple-sdk-license-blocking-issue.md)
+**Task:** [E6:S06:T03](../../project-management/kanban/epics/epic-06/story-06-feature-requests/T03-apple-sdk-license-blocking-issue.md)
 
 ### Scope (greenfield vs brownfield)
 

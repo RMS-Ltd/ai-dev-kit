@@ -35,7 +35,7 @@ Completed comprehensive FR/BR/UXR Prioritization Board implementation with MoSCO
    - Feature request for FR/BR/UXR prioritization board
    - Marked as COMPLETED with implementing task link
 
-5. **`docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T01-fr-br-uxr-prioritization-board.md`**
+5. **`docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T01-fr-br-uxr-prioritization-board.md`**
    - Implementation task document
    - Marked as COMPLETED with all phases completed
    - Comprehensive technical specifications and success metrics
@@ -59,7 +59,7 @@ Completed comprehensive FR/BR/UXR Prioritization Board implementation with MoSCO
    - Updated task E6:S06:T01 status to COMPLETED
 
 #### Story Documents
-9. **`docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md`**
+9. **`docs/project-management/kanban/epics/epic-06/story-06-feature-requests.md`**
    - Added T01 task to Task Checklist and Tasks sections
    - Updated last updated version
 

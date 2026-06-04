@@ -21,7 +21,7 @@
 
 - **FR-073** — Feature request + intake decision block.  
 - **T73** — Task doc (phased plan, mapping table, story-choice policy).  
-- **Story-001-fr-repo.md** — Checklist row **T73**.  
+- **story-01-fr-repo.md** — Checklist row **T73**.  
 - **fr-br-uxr-board.md** — Intake plan: mapping table, housing policy, execution order.  
 - **fr-br-uxr-structure.md** — Last updated; operational plan pointer.
 

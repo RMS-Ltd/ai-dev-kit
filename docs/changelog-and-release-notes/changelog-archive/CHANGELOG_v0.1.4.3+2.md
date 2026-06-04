@@ -15,7 +15,7 @@
 - **`kboard.md`** — **E1:S04:T03** restored (Should Have, HIGH; Phases 3–4 pending)
 - **`fbuboard.md`** — **FR-099** restored (IN PROGRESS; Phase 1–2 ✅; Phases 3–4 pending)
 - **Story 004** — T03 checklist aligned to **IN PROGRESS** (not COMPLETE until Phases 3–4 finish)
-- **T03**, **FR-099**, **Epic-1** — version markers and Phase 3–4 status sync
+- **T03**, **FR-099**, **epic-01** — version markers and Phase 3–4 status sync
 - **Cross-link:** [IPP-E6S09T06 §8 Wave E](../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) — public-repo ECC test after FR-099 Phase 3
 
 ### Version
@@ -29,5 +29,5 @@
 
 ## Verification
 
-- `docs/book-proj/` and `Epic-24/` remain absent on `dev` (Phase 2 genesis unchanged)
+- `docs/book-proj/` and `epic-24/` remain absent on `dev` (Phase 2 genesis unchanged)
 - FR-099 active on FBU board; E1:S04:T03 active on task board

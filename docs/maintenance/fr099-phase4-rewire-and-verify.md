@@ -35,8 +35,8 @@ chmod +x scripts/fr099_install_smoke_test.sh scripts/fr099_sync_public_from_priv
 Smoke test shallow-clones **public** `main` and asserts:
 
 - No `docs/book-proj/`
-- No `docs/project-management/kanban/epics/Epic-24/`
-- No `Epic-24` on `kboard.md`
+- No `docs/project-management/kanban/epics/epic-24/`
+- No `epic-24` on `kboard.md`
 
 ## Sync private → public (post-rewire)
 

@@ -26,7 +26,7 @@ Completed gap log and risk assessment for the Numbering & Versioning package imp
 
 ### Added
 
-- **Gap log and risk assessment document** (`docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T05-gap-log-and-risk-assessment.md`)
+- **Gap log and risk assessment document** (`docs/project-management/kanban/epics/epic-03/story-04-numbering-versioning-package-implementation-review/T05-gap-log-and-risk-assessment.md`)
   - Comprehensive gap log consolidating findings from T01–T04
   - Risk assessment with RC readiness statement
   - Gap classification by severity, likelihood, and RC impact

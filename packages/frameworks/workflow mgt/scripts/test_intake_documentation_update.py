@@ -57,7 +57,7 @@ def test_documentation_update():
             self.task_path = task_path
     
     created_tasks = [
-        MockTask("E2:S11:T04", "docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation.md")
+        MockTask("E2:S11:T04", "docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md")
     ]
     
     # Initialize documentation update

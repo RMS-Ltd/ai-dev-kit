@@ -11,7 +11,7 @@ Kanban forensic sync for **E6:S09:T02** / **FR-081** after primary implementatio
 
 ## Changed
 
-- [`T02-brownfield-modular-adopter-integration-fr081.md`](docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) — last-updated / RW attribution.
+- [`T02-brownfield-modular-adopter-integration-fr081.md`](docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) — last-updated / RW attribution.
 - [`kboard.md`](docs/project-management/kanban/kboard.md) — board version stamp.
 
 ## Verification

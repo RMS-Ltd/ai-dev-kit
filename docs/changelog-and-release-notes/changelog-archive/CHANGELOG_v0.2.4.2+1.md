@@ -46,7 +46,7 @@
   - `rw-config-ai-dev-kit.yaml` - Real example from ai-dev-kit repo
 
 ### Updated
-- **Story 4 Task Checklist:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4 Task Checklist:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`
   - Marked T02 acceptance criteria as complete ✅
   - Added deliverable references pointing to schema and examples
 
@@ -69,4 +69,4 @@
 - **Example Configs:** `packages/frameworks/workflow mgt/config/examples/`
 - **T01 Analysis:** `packages/frameworks/workflow mgt/docs/Analysis/T01-rw-adoption-friction-analysis.md`
 - **Previous Release (v0.2.4.1+3):** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.4.1+3.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`

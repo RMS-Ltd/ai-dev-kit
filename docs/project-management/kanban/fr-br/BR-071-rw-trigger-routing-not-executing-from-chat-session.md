@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.2.1.19+1  
 **Code:** BR-071
 
-**Implementing Task:** [E02:S01:T19](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md)
+**Implementing Task:** [E02:S01:T19](../epics/epic-02/story-01-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md)
 
 ---
 
@@ -88,12 +88,12 @@ This causes repeated failed publish attempts and forces out-of-band/manual fallb
 
 **Fix:** Created `CLAUDE.md` (plain-text `RW ` routing rule + blocked-session error) and `.claude/commands/rw.md` (Claude Code slash command `/rw` with self-contained execution guide, environment check, mandatory gates, abort protocol).
 
-**Implementing task:** [E02:S01:T19](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md) — COMPLETE.
+**Implementing task:** [E02:S01:T19](../epics/epic-02/story-01-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md) — COMPLETE.
 
 ---
 
 ## Related
 
-- [Story 001 – RW Agent Execution & Docs](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
+- [Story 001 – RW Agent Execution & Docs](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)
 - [BR-070](BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
 - [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)

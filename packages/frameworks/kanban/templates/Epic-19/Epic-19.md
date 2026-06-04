@@ -78,19 +78,19 @@ This epic encompasses analytics and monitoring for the {PROJECT_NAME} project. I
 
 **Brief Summary:** analytics infrastructure for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-analytics-infrastructure.md`](Story-001-analytics-infrastructure.md)
+**Story Document:** [`story-01-analytics-infrastructure.md`](story-01-analytics-infrastructure.md)
 
 ### Story 2: Metrics and Reporting
 
 **Brief Summary:** metrics and reporting for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-metrics-and-reporting.md`](Story-002-metrics-and-reporting.md)
+**Story Document:** [`story-02-metrics-and-reporting.md`](story-02-metrics-and-reporting.md)
 
 ### Story 3: Business Intelligence
 
 **Brief Summary:** business intelligence for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-business-intelligence.md`](Story-003-business-intelligence.md)
+**Story Document:** [`story-03-business-intelligence.md`](story-03-business-intelligence.md)
 
 ---
 

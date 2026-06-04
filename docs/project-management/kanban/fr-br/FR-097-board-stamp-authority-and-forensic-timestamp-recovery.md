@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** RESOLVED — v0.2.15.8+2 (`RW E02:S15:T08 --art`)
 
-**Implementing Task:** [E02:S15:T08](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
+**Implementing Task:** [E02:S15:T08](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
 
 **IPP:** [IPP-E02S15T08](../../../implementation-cycles/IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 

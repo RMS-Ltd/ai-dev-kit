@@ -1096,7 +1096,7 @@ ai-dev-kit verify kanban-v2.0.0.tar.gz
 - **Framework Dependency Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
 - **ADK Implementation Analysis:** `docs/knowledge/analysis/adk-implementation-analysis-report.md`
 - **ADK Hardening Recommendations:** `docs/knowledge/analysis/adk-hardening-recommendations.md`
-- **Epic 6, Story 6:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- **Epic 6, Story 6:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 
 ---
 

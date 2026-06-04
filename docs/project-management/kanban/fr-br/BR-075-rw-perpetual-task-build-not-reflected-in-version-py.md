@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.2.1.22+1  
 **Code:** BR-075  
 
-**Implementing Task:** [E02:S01:T22](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md)
+**Implementing Task:** [E02:S01:T22](../epics/epic-02/story-01-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md)
 
 ---
 
@@ -81,7 +81,7 @@ For every RW (including **`RW -k`**) against a perpetual task:
 - [BR-063](BR-063-rw-k-task-attribution-drift-between-requested-task-and-version-anchor.md) — task anchor vs requested id (`--art`)
 - [BR-067](BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) — doc-only BUILD policy
 - [BR-061](BR-061-rw-explicit-task-id-requires-manual-version-alignment.md) — explicit task / version alignment
-- Perpetual UKW task: [E02:S16:T04](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- Perpetual UKW task: [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` — Step 2 UKW/CMW attribution
 
 ---

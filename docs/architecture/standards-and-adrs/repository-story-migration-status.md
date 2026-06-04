@@ -43,9 +43,9 @@ This document tracks the implementation status of the repository story abstract 
   - All references updated in task document
 
 **Files Updated:**
-- ✅ `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`
-- ✅ `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`
-- ✅ `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md` (story checklist)
+- ✅ `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`
+- ✅ `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`
+- ✅ `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md` (story checklist)
 - ✅ `.cursorrules` (UKW/CMW references)
 - ✅ `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (T101+ policy)
 
@@ -146,14 +146,14 @@ This document tracks the implementation status of the repository story abstract 
 ## Next Steps
 
 1. **Renumber Epic 5 Stories** (S01-S07 → S02-S08)
-   - Update Epic-5.md story checklist
+   - Update epic-05.md story checklist
    - Rename story files
    - Update all task documents
    - Update all version numbers
    - Update all references
 
 2. **Renumber Epic 6 Stories** (S01-S07 → S02-S08)
-   - Update Epic-6.md story checklist
+   - Update epic-06.md story checklist
    - Rename story files
    - Update all task documents
    - Update all version numbers
@@ -227,5 +227,5 @@ This document tracks the implementation status of the repository story abstract 
 
 ---
 
-_This status document is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`Story-001-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md) for story context._
+_This status document is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`story-01-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md) for story context._
 

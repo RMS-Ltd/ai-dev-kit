@@ -29,7 +29,7 @@ Doc-init release: Created task document for FR-034 (UKW Granular Control and Use
 
 - **Task Document: E5:S00:T34 - UKW Granular Control and Use Case Flags**
   - Created task document for FR-034 in Epic 5, Story 0 (FR Repo)
-  - Task document: `docs/project-management/kanban/epics/Epic-5/Story-000-fr-repo/T34-ukw-granular-control-and-use-case-flags.md`
+  - Task document: `docs/project-management/kanban/epics/epic-05/story-00-fr-repo/T34-ukw-granular-control-and-use-case-flags.md`
   - Establishes version anchor: `v0.5.0.34+0` (abstract space)
   - Links FR-034 to E5:S00:T34 for perfect traceability
 
@@ -77,7 +77,7 @@ Doc-init release: Created task document for FR-034 (UKW Granular Control and Use
 - **FR-034:** [`FR-034-ukw-granular-control-and-use-case-flags.md`](../../project-management/kanban/fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
 - **BR-033:** [`BR-033-ukw-board-disorganization.md`](../../project-management/kanban/fr-br/BR-033-ukw-board-disorganization.md) (related bug report, split from original mixed-scope document)
 - **SoP:** [`mixed-br-fr-scope-sop.md`](../../architecture/standards-and-adrs/mixed-br-fr-scope-sop.md)
-- **Task Document:** [`T34-ukw-granular-control-and-use-case-flags.md`](../../project-management/kanban/epics/Epic-5/Story-000-fr-repo/T34-ukw-granular-control-and-use-case-flags.md)
+- **Task Document:** [`T34-ukw-granular-control-and-use-case-flags.md`](../../project-management/kanban/epics/epic-05/story-00-fr-repo/T34-ukw-granular-control-and-use-case-flags.md)
 
 ---
 

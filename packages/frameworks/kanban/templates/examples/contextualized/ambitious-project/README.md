@@ -42,11 +42,11 @@
 
 ## Example: Epic 1 Contextualized
 
-See `Epic-1.md` for the contextualized version of Epic 1.
+See `epic-01.md` for the contextualized version of Epic 1.
 
 ## Example: Epic 9 Contextualized
 
-See `Epic-9.md` for the contextualized version of Epic 9 (Microservices).
+See `epic-09.md` for the contextualized version of Epic 9 (Microservices).
 
 ## Notes
 

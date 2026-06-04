@@ -103,7 +103,7 @@ Created comprehensive framework-specific validators for Kanban, Workflow Managem
 
 - `packages/frameworks/tooling & automation/validators/__init__.py` - Added framework validators to exports
 - `packages/frameworks/tooling & automation/validators/README.md` - Added framework validators section
-- `docs/project-management/kanban/epics/Epic-8/Story-002-additional-validators.md` - Updated to mark T02 as COMPLETE
+- `docs/project-management/kanban/epics/epic-08/story-02-additional-validators.md` - Updated to mark T02 as COMPLETE
 - `src/fynd_deals/version.py` - Updated to v0.8.2.2+1
 
 ---

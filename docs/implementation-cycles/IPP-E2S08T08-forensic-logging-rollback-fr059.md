@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E02:S08:T08 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md`](../project-management/kanban/epics/Epic-2/Story-008-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) **(E02:S08:T08)**  
+**Host Task:** [`T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md`](../project-management/kanban/epics/epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) **(E02:S08:T08)**  
 **Planning for:** [FR-059](../project-management/kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)  
 **Status:** Closed — planning complete; implementation `v0.2.8.8+2`, closure RW `v0.2.8.8+3` (2026-05-30)
 
@@ -48,7 +48,7 @@ housekeeping_policy: keep
 - **In scope:** `packages/frameworks/workflow mgt/scripts/journal/`, `workflow_executor.py`, `tests/journal/`, `tests/workflow/`, KB operator guide, ADR-008, rw-config journal keys.
 - **Out of scope:**
   - [FR-044 / E05:S01:T44](../project-management/kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) — RW temporary execution log product slice.
-  - [E02:S01:T23](../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) — tool-agnostic step-tracker governance (docs-first).
+  - [E02:S01:T23](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) — tool-agnostic step-tracker governance (docs-first).
   - 100+ concurrent workflow scale (document as future load test).
 
 **IPP policy defaults (FR-059 open questions):**
@@ -188,7 +188,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | ------ | ---- | --------------- | ------- |
 | D-U1 | Host task T08 | Input/References → IPP; COMPLETE | Phase 8 / closure |
 | D-U2 | FR-059 | Status COMPLETE (`v0.2.8.8+3`) | Closure RW |
-| D-U3 | Story-008 checklist | T08 → COMPLETE | Closure RW |
+| D-U3 | story-008 checklist | T08 → COMPLETE | Closure RW |
 | D-U4 | `fbuboard.md` | IPP link replaces —No IPP— | Step 1 |
 | D-U5 | `rw-config.yaml` | `journal_dir`, `journal_ttl_days`, `journal_failed_ttl_days` | RF6 |
 | D-U6 | `AGENTS.md` | Documentation Agent jurisdiction for journals | RF7 |

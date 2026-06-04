@@ -8,9 +8,9 @@ housekeeping_policy: keep
 
 # E04:S19:T08 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md`](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) **(E04:S19:T08)**  
+**Host Task:** [`T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) **(E04:S19:T08)**  
 **Planning for:** [FR-072](../project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)  
-**Merged delivery:** [T07 FR-021 supersession](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)  
+**Merged delivery:** [T07 FR-021 supersession](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)  
 **Status:** Approved
 
 > **IPW:** Consolidated IPP for FR-072 Approach D phases **D2–D4** + FR-021 supersession. E7:S00 detasking is **out of scope** ([IPP-E04S19T10](IPP-E04S19T10-e7-s00-detasking-br076.md) COMPLETE).
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 | RF4 | **D4:** Redirect table maintained (repo coordinates → semantic host / historical) | FR-072 D4 |
 | RF5 | **D4:** Sweep intake, workflow, `.cursorrules` / `AGENTS.md` for contradictory repo-default language | T08 deliverable |
 | RF6 | **FR-021** superseded for new intake; points to FR-072 + ADR-014 | T07 AC2 (merged) |
-| RF7 | Story-019 checklists cross-link; no active “file under FR repo story” guidance | T07 AC3 (merged) |
+| RF7 | story-019 checklists cross-link; no active “file under FR repo story” guidance | T07 AC3 (merged) |
 | RF8 | Governance entry: ADR-014 + FR-072 decision memo | T08 AC1 |
 | RF9 | FR-072 COMPLETE; E05:S01:T72 historical-only | T08 AC3 |
 
@@ -94,7 +94,7 @@ RF1–RF2 via intake guardrails + fbuboard audit. RF3 via story/task banners. RF
 | -- | ---------------- | -------------- |
 | V1 | Active `fbuboard` OPEN/IN PROGRESS rows | Semantic implementing task (not repo-only primary) |
 | V2 | Intake docs | No “default file under FR repo story” without FR-072 guardrail |
-| V3 | E5/E6/E7 Story-000 / Story-001 | Historical registry banners |
+| V3 | E5/E6/E7 story-000 / story-001 | Historical registry banners |
 | V4 | FR-021 | Superseded banner + ADR-014 / FR-072 links |
 | V5 | IPW wiring | `validate_ipw_publication_wiring.py` PASS |
 | V6 | Closure RW | `validate_release_readiness.py` PASS (four-surface report) |
@@ -125,7 +125,7 @@ RF1–RF2 via intake guardrails + fbuboard audit. RF3 via story/task banners. RF
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`, `FR_BR_INTAKE_GUIDE.md`
 - `packages/frameworks/kanban/templates/epics/Epic-{5,6,7}-*.md`
 - `packages/frameworks/workflow mgt/KB/.../release-workflow-agent-execution.md`, `update-kanban-workflow-agent-execution.md`
-- T08, T07, T72, Story-019, kboard, fbuboard, `docs/governance/README.md`
+- T08, T07, T72, story-019, kboard, fbuboard, `docs/governance/README.md`
 
 ### 4.2 Dependency order
 
@@ -141,12 +141,12 @@ ADR-014 → FR-021/FR-072 → governance/templates → verification → RW
 | ------ | ---- | ----- | ------- |
 | D-U1 | FR-072 | Redirect pointer, COMPLETE | RF9 |
 | D-U2 | FR-021 | Superseded banner | RF6 |
-| D-U3 | Story-001-fr/br/uxr-repo (E5,E6,E7) | Historical banners | RF3 |
+| D-U3 | story-01-fr/br/uxr-repo (E5,E6,E7) | Historical banners | RF3 |
 | D-U4 | T72, T21, T08, T07 | Status, IPP links | RF8, RF9 |
 | D-U5 | Framework + dev-kit governance, intake skill | Approach D | RF5 |
 | D-U6 | RW/UKW agent guides | S00 / historical coords | RF4 |
 | D-U7 | Epic templates E5/E6/E7 | Semantic intake examples | RF7 |
-| D-U8 | kboard, fbuboard, Story-019 | IPP link, FR-072 closure | RF2 |
+| D-U8 | kboard, fbuboard, story-019 | IPP link, FR-072 closure | RF2 |
 
 ### 5.2 New documents to create
 

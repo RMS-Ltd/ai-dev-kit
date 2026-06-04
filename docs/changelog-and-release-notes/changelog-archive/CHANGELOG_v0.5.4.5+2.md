@@ -90,7 +90,7 @@ Completed comprehensive user documentation suite for Epic 6 framework dependency
 - Updated installation section to reference dependency-based installation
 
 **Story Document:**
-- Updated `docs/project-management/kanban/epics/Epic-5/Story-004-framework-documentation-management.md`
+- Updated `docs/project-management/kanban/epics/epic-05/story-04-framework-documentation-management.md`
 - Marked E05:S04:T05 as COMPLETE
 - Updated deliverables list with completion status
 
@@ -110,7 +110,7 @@ Completed comprehensive user documentation suite for Epic 6 framework dependency
 
 - `src/fynd_deals/version.py` (version bumped to v0.5.4.5+2, build updated)
 - `README.md` (added framework dependency documentation section with links)
-- `docs/project-management/kanban/epics/Epic-5/Story-004-framework-documentation-management.md` (task status and deliverables updated)
+- `docs/project-management/kanban/epics/epic-05/story-04-framework-documentation-management.md` (task status and deliverables updated)
 
 ---
 

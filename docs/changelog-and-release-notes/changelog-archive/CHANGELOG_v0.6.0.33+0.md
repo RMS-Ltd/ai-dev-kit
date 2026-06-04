@@ -29,7 +29,7 @@ Doc-init release: Created task document for BR-033 (UKW Board Disorganization) i
 
 - **Task Document: E6:S00:T33 - UKW Board Disorganization**
   - Created task document for BR-033 in Epic 6, Story 0 (BR Repo)
-  - Task document: `docs/project-management/kanban/epics/Epic-6/Story-000-br-repo/T33-ukw-board-disorganization.md`
+  - Task document: `docs/project-management/kanban/epics/epic-06/story-00-br-repo/T33-ukw-board-disorganization.md`
   - Establishes version anchor: `v0.6.0.33+0` (abstract space)
   - Links BR-033 to E6:S00:T33 for perfect traceability
 
@@ -86,7 +86,7 @@ Doc-init release: Created task document for BR-033 (UKW Board Disorganization) i
 - **BR-033:** [`BR-033-ukw-board-disorganization.md`](../../project-management/kanban/fr-br/BR-033-ukw-board-disorganization.md)
 - **FR-034:** [`FR-034-ukw-granular-control-and-use-case-flags.md`](../../project-management/kanban/fr-br/FR-034-ukw-granular-control-and-use-case-flags.md) (enhancements split from original mixed-scope document)
 - **SoP:** [`mixed-br-fr-scope-sop.md`](../../architecture/standards-and-adrs/mixed-br-fr-scope-sop.md)
-- **Task Document:** [`T33-ukw-board-disorganization.md`](../../project-management/kanban/epics/Epic-6/Story-000-br-repo/T33-ukw-board-disorganization.md)
+- **Task Document:** [`T33-ukw-board-disorganization.md`](../../project-management/kanban/epics/epic-06/story-00-br-repo/T33-ukw-board-disorganization.md)
 
 ---
 

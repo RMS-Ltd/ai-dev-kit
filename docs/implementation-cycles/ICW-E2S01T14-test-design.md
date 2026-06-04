@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E2:S01:T14  
 **Related FR:** FR-048  
-**Host Task:** [T14-rw-trigger-extensions-multiple-use-cases-fr048.md](../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T14-rw-trigger-extensions-multiple-use-cases-fr048.md)  
+**Host Task:** [T14-rw-trigger-extensions-multiple-use-cases-fr048.md](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T14-rw-trigger-extensions-multiple-use-cases-fr048.md)  
 **Created:** 2026-04-09
 
 ---
@@ -32,7 +32,7 @@ Validate documentation-level traceability invariants with deterministic checks o
    - Check: task title/ID aligns with `E2:S01:T14`.
 
 3. **Story checklist wiring**
-   - File: `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`
+   - File: `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
    - Check: checklist row references `T14` task doc and `FR-048`.
 
 4. **Bidirectional links**

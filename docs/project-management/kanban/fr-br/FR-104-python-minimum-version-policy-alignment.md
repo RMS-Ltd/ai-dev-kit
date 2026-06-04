@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent — dependency audit follow-up)  
 **Priority:** HIGH (Must Have — MoSCOW **M**)  
 **Status:** IMPLEMENTED (**v0.8.3.5+2** — **E08:S03:T05**)  
-**Assigned Task:** E08:S03:T05 — [`T05-python-minimum-version-fr104-br077.md`](../epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md)
+**Assigned Task:** E08:S03:T05 — [`T05-python-minimum-version-fr104-br077.md`](../epics/epic-08/story-03-automation-scripts/T05-python-minimum-version-fr104-br077.md)
 
 ---
 
@@ -29,7 +29,7 @@ Align the **declared** Python floor (`setup.py`, README, user docs, CI examples)
 - [`setup.py`](../../../../setup.py) and [`README.md`](../../../../README.md) state **`python_requires>=3.8`** and “Python 3.8+”.
 - Several repo scripts use **PEP 604** union syntax (`str | None`, `dict | None`) **without** `from __future__ import annotations`, e.g. [`scripts/kb_stub_sweep.py`](../../../../scripts/kb_stub_sweep.py), [`scripts/kb_push_to_notion.py`](../../../../scripts/kb_push_to_notion.py), [`scripts/kb_migrate_full_content.py`](../../../../scripts/kb_migrate_full_content.py) — these **fail on Python 3.8/3.9**.
 - The published **CLI** (`cli/`) remains stdlib + PyYAML only and could stay on a lower floor if documented separately.
-- Audit context: [E07:S06:T08](../epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md); inconsistency tracked in [BR-077](BR-077-documented-python-38-contradicts-repo-310-requirement.md).
+- Audit context: [E07:S06:T08](../epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md); inconsistency tracked in [BR-077](BR-077-documented-python-38-contradicts-repo-310-requirement.md).
 
 ---
 
@@ -89,5 +89,5 @@ Align the **declared** Python floor (`setup.py`, README, user docs, CI examples)
 ## Related
 
 - [BR-077](BR-077-documented-python-38-contradicts-repo-310-requirement.md)
-- [T08 dependency audit](../epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
+- [T08 dependency audit](../epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 - [FR-030](FR-030-ai-dev-kit-cli-tool.md) (original CLI NFR: Python 3.8+ — revisit if floor rises)

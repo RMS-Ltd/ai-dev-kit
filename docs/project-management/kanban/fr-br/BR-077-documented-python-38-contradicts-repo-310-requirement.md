@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Severity:** LOW (misleading docs/metadata; runtime failure only when running affected scripts on 3.8/3.9)  
 **Status:** RESOLVED (**v0.8.3.5+2** — **E08:S03:T05**, `python_requires>=3.11`)   (kanban init **v0.8.3.5+1** — **E08:S03:T05**)  
 
-**Implementing Task:** [E08:S03:T05](../epics/Epic-8/Story-003-automation-scripts/T05-python-minimum-version-fr104-br077.md)  
+**Implementing Task:** [E08:S03:T05](../epics/epic-08/story-03-automation-scripts/T05-python-minimum-version-fr104-br077.md)  
 **Feature Request:** [FR-104](FR-104-python-minimum-version-policy-alignment.md)  
 **Created:** 2026-06-03  
 **Classification:** Documentation + packaging metadata
@@ -67,5 +67,5 @@ Delivered via **FR-104** / **E08:S03:T05** (raise floor to 3.10+ and update docs
 
 ## Related Work
 
-- [E07:S06:T08](../epics/Epic-7/Story-006-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) — dependency audit (2026-03-25)
+- [E07:S06:T08](../epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) — dependency audit (2026-03-25)
 - [FR-104](FR-104-python-minimum-version-policy-alignment.md)

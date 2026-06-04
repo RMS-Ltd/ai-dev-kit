@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM  
 **Status:** REOPENED
 
-**Implementing Task:** [E02:S11:T11](../epics/Epic-2/Story-011-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)  
+**Implementing Task:** [E02:S11:T11](../epics/epic-02/story-11-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)  
 **Historical registry:** E06:S01:T02
 
 ---
@@ -232,9 +232,9 @@ Bug report and task structure established. Ready for implementation work.
 - Version: `0.2.1.6+1`
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
-- Task: [E02:S01:T06 - Fix changelog validator ordering bug](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md#E02S01T06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)
+- Task: [E02:S01:T06 - Fix changelog validator ordering bug](../epics/epic-02/story-01-rw-agent-execution-and-docs.md#E02S01T06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
 
 ---
 
@@ -253,7 +253,7 @@ Bug report and task structure established. Ready for implementation work.
 - `packages/frameworks/workflow mgt/scripts/validation/validate_changelog_format.py`
 - [Keep a Changelog](https://keepachangelog.com/) - Industry standard changelog format
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` - Dev-kit canonical ordering policy
-- `docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples.md` - Related changelog ordering work (Task 6)
+- `docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples.md` - Related changelog ordering work (Task 6)
 - [REOPENING_BR_AND_TASKS_GUIDE.md](REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks (this BR is an example)
 - [BIDIRECTIONAL_WIRING_PRINCIPLE.md](BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Principle for bidirectional linking (this BR demonstrates the pattern)
 

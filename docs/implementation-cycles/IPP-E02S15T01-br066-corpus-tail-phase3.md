@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E02:S15:T01 — BR-066 corpus tail Phase 3 (IPP)
 
-**Host Task:** [`T01-ipw-docusaurus-filing-contract-and-backfill-br066.md`](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) **(E02:S15:T01)**  
+**Host Task:** [`T01-ipw-docusaurus-filing-contract-and-backfill-br066.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md) **(E02:S15:T01)**  
 **Planning for:** [BR-066 — IPW missing Docusaurus filing for planning artifacts](../project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)  
 **Status:** COMPLETE (released **v0.2.15.1+3**)
 

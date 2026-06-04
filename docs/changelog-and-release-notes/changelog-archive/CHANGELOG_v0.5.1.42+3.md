@@ -21,11 +21,11 @@ Close remaining **FR-042** acceptance criteria: **AC5** retro-wiring for histori
 - Updated FR/task tracking docs for closure:
   - `FR-042-implementation-planning-workflow-ipw.md`
   - `T42-implementation-planning-workflow-ipw.md`
-  - `Story-001-fr-repo.md`
+  - `story-01-fr-repo.md`
   - `IPW-E5S01T42-ipw-icw-consolidation.md`
 
 ## References
 
-- Task: `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T42-implementation-planning-workflow-ipw.md`
+- Task: `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T42-implementation-planning-workflow-ipw.md`
 - FR: `docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md`
 - Validator: `packages/frameworks/workflow mgt/scripts/validation/validate_plan_wiring.py`

@@ -14,7 +14,7 @@ Created the E4:S19:T02 IPW artifact and wired bidirectional governance traceabil
 - New IPW planning artifact:
   - `docs/implementation-cycles/IPW-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md`
 - Task wiring:
-  - `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md`
+  - `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md`
 - FR cross-link wiring:
   - `docs/project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md`
 - Version/changelog reconciliation:

@@ -51,7 +51,7 @@ This document provides **hardening recommendations** to improve ADK framework ro
 **Required Actions:**
 1. Rename ai-dev-kit's Epic 9 "Book Related Work" to Epic 24+ (project-specific range)
 2. Update all Epic 9 references in ai-dev-kit source:
-   - Epic document: `Epic-9.md` → `Epic-24.md` (or appropriate number)
+   - Epic document: `epic-09.md` → `epic-24.md` (or appropriate number)
    - Story documents: Update all Story references
    - Task documents: Update all Task references
    - Kanban board: Update Epic 9 entry

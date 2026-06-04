@@ -148,7 +148,7 @@ The UXR template includes:
 
 ### Conversion Process
 
-**Status (2026-03-30):** The GitHub Actions workflow that converted issues to `fr-br` documents is **disabled**. It was defined in [`.github/workflows/fr-br-intake.yml.DISABLED`](../../../.github/workflows/fr-br-intake.yml.DISABLED) because GitHub continued to **schedule runs on every push** even though the workflow declared `on: issues` only (see [BR-053](../../../docs/project-management/kanban/fr-br/BR-053-github-actions-workflow-push-trigger-bug.md), [E2:S11:T12](../../../docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)). **Use manual intake:** the [intake-process](../../../.cursor/skills/intake-process/SKILL.md) skill / maintainer process until the workflow is re-enabled after a verified GitHub-side fix.
+**Status (2026-03-30):** The GitHub Actions workflow that converted issues to `fr-br` documents is **disabled**. It was defined in [`.github/workflows/fr-br-intake.yml.DISABLED`](../../../.github/workflows/fr-br-intake.yml.DISABLED) because GitHub continued to **schedule runs on every push** even though the workflow declared `on: issues` only (see [BR-053](../../../docs/project-management/kanban/fr-br/BR-053-github-actions-workflow-push-trigger-bug.md), [E2:S11:T12](../../../docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)). **Use manual intake:** the [intake-process](../../../.cursor/skills/intake-process/SKILL.md) skill / maintainer process until the workflow is re-enabled after a verified GitHub-side fix.
 
 When automation is restored, submitting an issue using one of our templates should:
 

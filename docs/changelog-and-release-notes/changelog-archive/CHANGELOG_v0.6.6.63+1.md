@@ -13,9 +13,9 @@ SemVer: v0.4.764+1
 
 ## Included Files
 
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md`
 - `docs/project-management/kanban/fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests.md`
 - `docs/project-management/kanban/fbuboard.md`
 - `src/fynd_deals/version.py`
 

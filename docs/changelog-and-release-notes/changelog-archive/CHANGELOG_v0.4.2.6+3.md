@@ -92,8 +92,8 @@ This release creates FR-006 for localization and language selection (UK/US Engli
 
 ## References
 
-- Epic 4: `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
-- Story 2: `docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md`
+- Epic 4: `docs/project-management/kanban/epics/epic-04/epic-04.md`
+- Story 2: `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md`
 - FR-006: `docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md`
 - Epic 21: `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`
 

@@ -73,8 +73,8 @@ Created comprehensive README.md based on the Best-README-Template, providing pro
 - `README.md` - Complete rewrite based on Best-README-Template
 - `src/fynd_deals/version.py` - Version bumped to `0.1.4.1+3`
 - `CHANGELOG.md` - Added entry for v0.1.4.1+3
-- `docs/project-management/kanban/epics/Epic-1/Story-004-repository-branding-and-renaming.md` - Updated version
-- `docs/project-management/kanban/epics/Epic-1/Epic-1.md` - Updated version
+- `docs/project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md` - Updated version
+- `docs/project-management/kanban/epics/epic-01/epic-01.md` - Updated version
 
 ---
 

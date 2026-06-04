@@ -55,7 +55,7 @@ housekeeping_policy: keep
 
 4. **Documentation Updated**
    - Updated canonical structure documentation (`ultimate-canonical-kb-structure.md`)
-   - Updated naming conventions documentation (`T002-kb-structure-principles.md`)
+   - Updated naming conventions documentation (`T02-kb-structure-principles.md`)
    - Updated all examples and references
 
 ---

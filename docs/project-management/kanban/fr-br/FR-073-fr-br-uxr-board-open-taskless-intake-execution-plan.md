@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** CLOSED *(Phase B/C filed **v0.5.1.74+2**; AC3 closed via Wave 4 scoped reconciliation under **E04:S19:T06**)*  
 
-**Implementing Task:** [E04:S19:T06](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
-**Historical implementing task:** [E05:S01:T73](../epics/Epic-5/Story-001-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
+**Implementing Task:** [E04:S19:T06](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
+**Historical implementing task:** [E05:S01:T73](../epics/epic-05/story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
 **IPP:** [IPP-E04S19T06](../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)
 
 ---
@@ -86,7 +86,7 @@ The **Intake plan** prose on [`fbuboard.md`](../fbuboard.md) (open ∧ taskless 
 
 **Kanban Links:**
 
-- Epic: [`Epic-5.md`](../epics/Epic-5/Epic-5.md)  
-- Story: [`Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md)  
-- Task: [`T06`](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
-- Historical task: [`T73`](../epics/Epic-5/Story-001-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
+- Epic: [`epic-05.md`](../epics/epic-05/epic-05.md)  
+- Story: [`story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md)  
+- Task: [`T06`](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
+- Historical task: [`T73`](../epics/epic-05/story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)

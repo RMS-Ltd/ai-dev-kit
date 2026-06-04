@@ -47,13 +47,13 @@ Fixed BR-035: Updated RW Step 13 (Housekeeping) to mark `rw-step-*` todos as `ca
   - Updated solution section with implemented approach
   - Added version history entry
 
-- **E6:S01:T35** (`docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T35-rw-housekeeping-step-not-working.md`)
+- **E6:S01:T35** (`docs/project-management/kanban/epics/epic-06/story-01-br-repo/T35-rw-housekeeping-step-not-working.md`)
   - Updated status to COMPLETE
   - Added Progress section documenting implementation
   - Updated acceptance criteria (all marked complete)
   - Updated version to v0.6.1.35+1
 
-- **E6:S01: BR Repo** (`docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md`)
+- **E6:S01: BR Repo** (`docs/project-management/kanban/epics/epic-06/story-01-br-repo.md`)
   - Updated T35 status to COMPLETE
   - Updated version to v0.6.1.35+1
 
@@ -95,8 +95,8 @@ Fixed BR-035: Updated RW Step 13 (Housekeeping) to mark `rw-step-*` todos as `ca
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `.cursorrules`
 - `docs/project-management/kanban/fr-br/BR-035-rw-housekeeping-step-not-working.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T35-rw-housekeeping-step-not-working.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md`
+- `docs/project-management/kanban/epics/epic-06/story-01-br-repo/T35-rw-housekeeping-step-not-working.md`
+- `docs/project-management/kanban/epics/epic-06/story-01-br-repo.md`
 - `src/fynd_deals/version.py`
 
 ---

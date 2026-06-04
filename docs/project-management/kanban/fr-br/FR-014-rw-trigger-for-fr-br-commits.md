@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Severity:** N/A  
 **Status:** PENDING  
 
-**Implementing Task:** [E02:S07:T05](../epics/Epic-2/Story-007-trigger-aware-release-workflow.md)
+**Implementing Task:** [E02:S07:T05](../epics/epic-02/story-07-trigger-aware-release-workflow.md)
 
 ---
 

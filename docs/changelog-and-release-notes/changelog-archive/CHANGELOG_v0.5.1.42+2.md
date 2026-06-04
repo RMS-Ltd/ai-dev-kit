@@ -6,7 +6,7 @@
 
 ## Summary
 
-**FR-042 / IPW:** Implementation Planning Workflow documentation and consolidation of legacy **ICW** into canonical **IPW** — agent execution guide, plan template, `.cursorrules` and Implementation Cycle SoP **Step 2.5**, `workflow-registry` triggers, implementation-cycle package README, cross-references (FR-040, FR-048, T40, T48), `icw_handler` module docstring, root README tables. Planning artifact [IPW-E5S01T42-ipw-icw-consolidation.md](docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/IPW-E5S01T42-ipw-icw-consolidation.md) wired to host task.
+**FR-042 / IPW:** Implementation Planning Workflow documentation and consolidation of legacy **ICW** into canonical **IPW** — agent execution guide, plan template, `.cursorrules` and Implementation Cycle SoP **Step 2.5**, `workflow-registry` triggers, implementation-cycle package README, cross-references (FR-040, FR-048, T40, T48), `icw_handler` module docstring, root README tables. Planning artifact [IPW-E5S01T42-ipw-icw-consolidation.md](docs/project-management/kanban/epics/epic-05/story-01-fr-repo/IPW-E5S01T42-ipw-icw-consolidation.md) wired to host task.
 
 ## Change implemented
 
@@ -23,5 +23,5 @@
 
 ## References
 
-- **Task:** [T42-implementation-planning-workflow-ipw.md](docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T42-implementation-planning-workflow-ipw.md)
+- **Task:** [T42-implementation-planning-workflow-ipw.md](docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T42-implementation-planning-workflow-ipw.md)
 - **FR:** [FR-042](docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

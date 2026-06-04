@@ -17,13 +17,13 @@ This release completes **Task 1: Audit `release-workflow-agent-execution.md` for
 
 ### Task 1 Completion
 
-- ✅ Created **comprehensive audit report** (`T001-audit-report.md`):
+- ✅ Created **comprehensive audit report** (`T01-audit-report.md`):
   - Identified 15 project-specific assumptions across 4 categories
   - Documented all findings with locations, issues, recommendations, and impact
   - Provided template placeholder recommendations
   - Prioritized fixes (High/Medium/Low priority)
 
-- ✅ Updated **Story 001** (`Story-001-rw-agent-execution-and-docs.md`):
+- ✅ Updated **Story 001** (`story-01-rw-agent-execution-and-docs.md`):
   - Marked Task 1 as complete in task checklist
   - Updated task details with completion status and summary
 
@@ -36,7 +36,7 @@ This release completes **Task 1: Audit `release-workflow-agent-execution.md` for
    - `docs/changelog-and-release-notes/changelog-archive` - changelog directory
    - `docs/project-management/epics/overview/Epic {epic}/Epic-{epic}.md` - epic document pattern
    - `docs/project-management/epics/overview/_index.md` - kanban board path
-   - `docs/project-management/kanban/Epic 4/Story-3-*.md` - story document pattern
+   - `docs/project-management/kanban/Epic 4/story-03-*.md` - story document pattern
    - `scripts/validation/validate_branch_context.py` - validation script paths
    - `scripts/validation/validate_changelog_format.py` - validation script paths
 
@@ -96,7 +96,7 @@ This release completes **Task 1: Audit `release-workflow-agent-execution.md` for
 The audit report provides a comprehensive foundation for making the Release Workflow documentation template-ready. The identified assumptions will be addressed in subsequent tasks (T002, T003) to ensure the documentation can be easily adopted by other projects.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-001-rw-agent-execution-and-docs/T001-audit-report.md` (comprehensive audit report)
+- `docs/project-management/kanban/epics/epic-02/stories/story-01-rw-agent-execution-and-docs/T01-audit-report.md` (comprehensive audit report)
 
 ---
 
@@ -109,8 +109,8 @@ The audit report provides a comprehensive foundation for making the Release Work
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-001-rw-agent-execution-and-docs/T001-audit-report.md` (created)
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-001-rw-agent-execution-and-docs.md` (status update)
+- `docs/project-management/kanban/epics/epic-02/stories/story-01-rw-agent-execution-and-docs/T01-audit-report.md` (created)
+- `docs/project-management/kanban/epics/epic-02/stories/story-01-rw-agent-execution-and-docs.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.2.1.1+3)
 
 ---

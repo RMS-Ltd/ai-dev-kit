@@ -17,7 +17,7 @@ Kanban init (`RW -k --art`): atomic intake for **FR-106** (packaged workflows sy
 
 - New **FR-106** feature request with requirements **R01–R07**, acceptance criteria, and related-work links.
 - **E02:S13:T08** task doc updated with **Source FR:** header and Related Work cross-link.
-- **Story-013** checklist row cites **FR-106**.
+- **story-013** checklist row cites **FR-106**.
 
 ---
 

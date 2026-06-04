@@ -17,7 +17,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T01-research-oreilly-head-first-book-structure.md`
+  - `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T01-research-oreilly-head-first-book-structure.md`
 - Changes:
   - Status updated: `TODO → COMPLETE`
   - Deliverable path added: `docs/book-proj/head-first-structure-research.md`
@@ -58,7 +58,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning.md`
+  - `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning.md`
 - Changes:
   - Task checklist: `[ ] E24:S05:T01` → `[x] E24:S05:T01 - COMPLETE ✅ (v0.24.5.1+1)`
 
@@ -66,6 +66,6 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-24/Epic-24.md`
+  - `docs/project-management/kanban/epics/epic-24/epic-24.md`
 - Changes:
   - `Last updated` updated: `v0.24.5.1+1 – E24:S05:T01 COMPLETE`

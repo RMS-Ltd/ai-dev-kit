@@ -55,7 +55,7 @@ This guide helps existing projects migrate to the **3-tier structure** (Epic →
   - Projects requiring maximum traceability
 
 - **Location:** `{kanban_root}/epics/Epic-{epic}/Story-{story}/Task-{task}-*.md`
-- **Example:** `docs/project-management/kanban/epics/Epic-4/Story-11/Task-001-update-kanban-policy.md`
+- **Example:** `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
 
 **Format 2: Delimited Section Within Story (Alternative)**
 - **When to Use:**
@@ -209,7 +209,7 @@ This guide helps existing projects migrate to the **3-tier structure** (Epic →
 **Before:** Task described in Story document with multiple phases
 
 **After:** Separate Task file created:
-- `docs/project-management/kanban/epics/Epic-4/Story-11/Task-002-create-task-template.md`
+- `docs/project-management/kanban/epics/epic-04/Story-11/Task-002-create-task-template.md`
 - Story Task Checklist references the file:
   ```markdown
   - [ ] **E4:S11:T02 – Create Task Document Template** - TODO

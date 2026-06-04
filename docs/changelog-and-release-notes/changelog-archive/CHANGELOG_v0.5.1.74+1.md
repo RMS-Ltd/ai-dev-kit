@@ -23,7 +23,7 @@
 - **Intake** — `FR_BR_INTAKE_GUIDE.md`, `.cursor/skills/intake-process/SKILL.md`, `intake-workflow.yaml`, `packages/frameworks/workflow mgt/README.md`.  
 - **Rituals / hub** — `docs/project-management/rituals/policy/kanban-governance-policy.md` §1.2; `docs/project-management/kanban/README.md`.  
 - **Board** — `fr-br-uxr-board.md` consistency with KG-R6 / T73 story-choice narrative.  
-- **Kanban** — **FR-074**, **T74** task doc; **Story-001** checklist; **Epic-5** markers.
+- **Kanban** — **FR-074**, **T74** task doc; **story-001** checklist; **epic-05** markers.
 
 ---
 

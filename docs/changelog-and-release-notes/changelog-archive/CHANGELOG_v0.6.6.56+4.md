@@ -29,9 +29,9 @@ User verified live RW guardrails: **story mismatch** (`RW E7S5T1` vs `version.py
 ### Changed
 
 - `src/fynd_deals/version.py` — `0.6.6.56+4` (E6:S06:T56)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md` — T56 complete; version marker
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md` — status COMPLETE; verification notes
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md` — S06 task summary and last-updated markers
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests.md` — T56 complete; version marker
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md` — status COMPLETE; verification notes
+- `docs/project-management/kanban/epics/epic-06/epic-06.md` — S06 task summary and last-updated markers
 - `docs/project-management/kanban/fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md` — VERIFIED_FIXED; acceptance criteria
 
 ### References

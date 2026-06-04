@@ -9,8 +9,8 @@ housekeeping_policy: archive
 # IPP — E07:S07:T02: CI pytest gate for workflow scripts (H1)
 
 **Task:** E07:S07:T02  
-**Host:** [T02-ci-pytest-gate-for-workflow-scripts.md](../project-management/kanban/epics/Epic-7/Story-007-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md)  
-**Source finding:** [T01 report H1](../project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-workflow-machinery-code-review-report.md)
+**Host:** [T02-ci-pytest-gate-for-workflow-scripts.md](../project-management/kanban/epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md)  
+**Source finding:** [T01 report H1](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 
 ---
 
@@ -55,7 +55,7 @@ Workflow Management has ~36 co-located pytest modules but CI only runs `build_al
 
 - Validation README CI section
 - Task doc AC checkboxes
-- Story-007 checklist entry
+- story-007 checklist entry
 
 ## 7. Verification checklist
 

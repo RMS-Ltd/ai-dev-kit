@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E6:S07:T113 - Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T113-rw-step-12-5-github-release-parser-hardening-br065.md`](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md) **(E6:S07:T113)**  
+**Host Task:** [`T113-rw-step-12-5-github-release-parser-hardening-br065.md`](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md) **(E6:S07:T113)**  
 **Planning for:** [BR-065](../project-management/kanban/fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)  
 **Status:** Draft
 
@@ -82,7 +82,7 @@ Harden RW Step 12.5 GitHub release creation so `create_github_release.py` accept
 - `packages/frameworks/workflow mgt/scripts/create_github_release.py`
 - `packages/frameworks/workflow mgt/scripts/test_create_github_release.py` (or nearest existing test module for this script)
 - `docs/project-management/kanban/fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md` (implementation outcome)
-- `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md` (status/evidence updates)
+- `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md` (status/evidence updates)
 
 ### 3.2 Dependency order
 
@@ -107,6 +107,6 @@ Harden RW Step 12.5 GitHub release creation so `create_github_release.py` accept
 
 ## References
 
-- [Host Task E6:S07:T113](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md)
+- [Host Task E6:S07:T113](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md)
 - [BR-065](../project-management/kanban/fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
 - [FR-041](../project-management/kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)

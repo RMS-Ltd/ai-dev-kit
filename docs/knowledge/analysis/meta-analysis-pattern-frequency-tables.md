@@ -38,9 +38,9 @@ This document provides **pattern frequency tables** extracted from all granular 
 
 | Format | Projects Using | Frequency | Examples |
 |--------|---------------|-----------|----------|
-| `Epic-\{N\}` (hyphen) | been-there, dev-toolkit, agentic-ide-rules, ai-dev-kit | 4/10 (40%) | `Epic-9`, `Epic-20` |
+| `Epic-\{N\}` (hyphen) | been-there, dev-toolkit, agentic-ide-rules, ai-dev-kit | 4/10 (40%) | `epic-09`, `epic-20` |
 | `Epic \{N\}` (space) | confidentia, starborn_legacy | 2/10 (20%) | `Epic 9`, `Epic 20` |
-| `Epic-\{NN\}` (zero-padded) | starborn_legacy | 1/10 (10%) | `Epic-09`, `Epic-20` |
+| `Epic-\{NN\}` (zero-padded) | starborn_legacy | 1/10 (10%) | `epic-09`, `epic-20` |
 | `E\{N\}` (abbreviated) | free-party-promoter, vwmp, qa-kb | 3/10 (30%) | `E01`, `E10` |
 | `Epic \{NN\}` (zero-padded space) | confidentia (some) | 1/10 (10%) | `Epic 09` |
 
@@ -50,10 +50,10 @@ This document provides **pattern frequency tables** extracted from all granular 
 
 | Format | Projects Using | Frequency | Examples |
 |--------|---------------|-----------|----------|
-| `Story-{NNN}-\{description\}` | ai-dev-kit, been-there, dev-toolkit | 3/10 (30%) | `Story-006-adk-implementation-analysis.md` |
+| `Story-{NNN}-\{description\}` | ai-dev-kit, been-there, dev-toolkit | 3/10 (30%) | `story-06-adk-implementation-analysis.md` |
 | `Story \{N\}` (space) | confidentia, starborn_legacy | 2/10 (20%) | `Story 1`, `Story 2` |
 | `S\{N\}` (abbreviated) | free-party-promoter, vwmp, qa-kb | 3/10 (30%) | `S01`, `S10` |
-| `Story-\{N\}-\{description\}` | agentic-ide-rules | 1/10 (10%) | `Story-1-framework-version.md` |
+| `Story-\{N\}-\{description\}` | agentic-ide-rules | 1/10 (10%) | `story-01-framework-version.md` |
 
 **Convergence:** Mixed patterns. `Story-{NNN}-\{description\}` is ADK canonical (3/10), but abbreviated `S\{N\}` is also common (3/10).
 

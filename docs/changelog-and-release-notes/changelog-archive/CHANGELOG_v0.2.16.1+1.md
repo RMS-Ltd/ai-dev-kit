@@ -14,10 +14,10 @@ Established a dedicated Epic 2 story for perpetual ongoing workflow operations, 
 - New FR intake:
   - `docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`
 - New story and task anchors:
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md`
-  - `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
+  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
 - Epic and board wiring:
-  - `docs/project-management/kanban/epics/Epic-2/Epic-2.md`
+  - `docs/project-management/kanban/epics/epic-02/epic-02.md`
   - `docs/project-management/kanban/kboard.md`
   - `docs/project-management/kanban/fbuboard.md`
 

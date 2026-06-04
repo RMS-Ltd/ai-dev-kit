@@ -78,7 +78,7 @@ Task E4:S16:T05 (Create Gap Log and Risk Assessment) is now **COMPLETE**. Gap lo
 
 ## Related
 
-- **Story:** [E4:S16: Kanban Package Implementation Review](../../project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review.md)
-- **Task Document:** [E4:S16:T05](../../project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- **Story:** [E4:S16: Kanban Package Implementation Review](../../project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review.md)
+- **Task Document:** [E4:S16:T05](../../project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - **Previous Tasks:** T01 (Expectations Baseline), T02 (Component Inventory), T03 (Behavioral Validation), T04 (Integration Review)
 - **Related Tasks:** E6:S01:T34 (UKW MoSCOW), E6:S01:T35 (RW Housekeeping)

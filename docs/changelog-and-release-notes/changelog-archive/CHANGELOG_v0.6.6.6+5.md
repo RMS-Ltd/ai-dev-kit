@@ -48,7 +48,7 @@ housekeeping_policy: keep
   - **Focus:** Decision-oriented, executive-friendly format
   - **References:** Supporting tactical docs for implementation details
 
-- **Task Definition** (`docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`)
+- **Task Definition** (`docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`)
   - Updated executive summary requirements to clarify decision-focused format
   - Specified that executive summary must include proposed "ultimate" canonical structures
   - Emphasized that detailed analysis belongs in supporting tactical docs

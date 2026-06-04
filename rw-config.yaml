@@ -20,9 +20,9 @@ use_kanban: true
 
 # Kanban paths (relative to kanban_root)
 kanban_root: docs/project-management/kanban
-epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
-story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
-task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md
+epic_doc_pattern: epics/epic-{epic:02d}/epic-{epic:02d}.md
+story_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*.md
+task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
 kanban_board: kboard.md
 fr_br_root: docs/project-management/kanban/fr-br
 

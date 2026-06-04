@@ -93,4 +93,4 @@ Single markdown document per task with sections:
 
 - [Test Design](ICW-E7S06-T10-T16-test-design.md)
 - [Implementation Plan](ICW-E7S06-T10-T16-implementation-plan.md)
-- Task docs: T10, T11, T12, T13, T14, T15, T16 in `Story-006-post-windsurf-project-review/`
+- Task docs: T10, T11, T12, T13, T14, T15, T16 in `story-06-post-windsurf-project-review/`

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** PENDING  
 
-**Implementing Task:** [E04:S11:T04](../epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs.md)
+**Implementing Task:** [E04:S11:T04](../epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md)
 
 ---
 

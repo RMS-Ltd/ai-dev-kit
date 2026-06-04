@@ -42,7 +42,7 @@ This release adds Epic 7: Codebase Maintenance and Review to the canonical epics
 
 **Added:**
 - Epic 7: Codebase Maintenance and Review to canonical epics
-- Example Epic 7 document: `examples/Epic-7-Codebase-Maintenance-Example.md`
+- Example Epic 7 document: `examples/epic-07-Codebase-Maintenance-Example.md`
 - Epic 7 Story 1 document with perpetual task structure
 - CHANGELOG.md for kanban package
 
@@ -56,9 +56,9 @@ This release adds Epic 7: Codebase Maintenance and Review to the canonical epics
 ### Documentation Updates
 
 **Epic 7 Documentation:**
-- Created `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- Created `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`
-- Created `packages/frameworks/kanban/examples/Epic-7-Codebase-Maintenance-Example.md`
+- Created `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- Created `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
+- Created `packages/frameworks/kanban/examples/epic-07-Codebase-Maintenance-Example.md`
 
 **Framework Documentation:**
 - Updated `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` with Epic 7
@@ -111,8 +111,8 @@ This release adds Epic 7: Codebase Maintenance and Review to the canonical epics
 
 ## References
 
-- Epic 7: `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- Story 1: `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`
+- Epic 7: `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- Story 1: `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
 - Canonical Epics: `packages/frameworks/kanban/templates/CANONICAL_EPICS.md`
 - Kanban Package: `packages/frameworks/kanban/README.md`
 

@@ -501,9 +501,9 @@ Board Updates:
 - **Code Review Workflow Processes:** `docs/architecture/standards-and-adrs/code-review-workflow-processes.md`
 - **Maintenance Kanban Integration:** `docs/architecture/standards-and-adrs/maintenance-kanban-integration.md`
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Epic 4 (Kanban Framework):** `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
-- **Epic 7 (Codebase Maintenance):** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 2 (Code Review Standards and Processes):** `docs/project-management/kanban/epics/Epic-7/Story-002-code-review-standards-and-processes.md`
+- **Epic 4 (Kanban Framework):** `docs/project-management/kanban/epics/epic-04/epic-04.md`
+- **Epic 7 (Codebase Maintenance):** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 2 (Code Review Standards and Processes):** `docs/project-management/kanban/epics/epic-07/story-02-code-review-standards-and-processes.md`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
 
 ---

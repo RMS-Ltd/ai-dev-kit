@@ -93,5 +93,5 @@ See [agent-cold-start-checklist.md](guides/agent-cold-start-checklist.md).
 
 ## Related
 
-- [FR-103](project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md) · [E02:S16:T17](project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
+- [FR-103](project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md) · [E02:S16:T17](project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
 - [Kanban workflow agents](project-management/kanban/AGENTS.md)

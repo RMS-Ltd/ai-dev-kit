@@ -33,7 +33,7 @@ housekeeping_policy: keep
 
 **Outstanding Stories:**
 - [ ] **E1:S04 – Repository Branding and Renaming** - TODO
-  - Story: `Story-004-repository-branding-and-renaming.md`
+  - Story: `story-04-repository-branding-and-renaming.md`
   - **Status:** Story created, tasks not yet defined
 
 **Next Steps:**
@@ -49,7 +49,7 @@ housekeeping_policy: keep
 
 **Outstanding Stories:**
 - [ ] **E2:S05 – Post-Implementation Review (PIR) Workflow** - TODO
-  - Story: `Story-005-post-implementation-review-workflow.md`
+  - Story: `story-05-post-implementation-review-workflow.md`
   - **Status:** Story defined, tasks TODO
 
 **Note:** Epic 2 is essentially complete (11/12 stories done). E2:S11 (Intake Workflow Automation) was just completed.
@@ -64,17 +64,17 @@ housekeeping_policy: keep
 
 **Outstanding Stories:**
 - [ ] **E4:S06 – Comprehensive Canonical Epics/Stories/Tasks Template System** - IN PROGRESS
-  - Story: `Story-006-comprehensive-canonical-est-template-system.md`
+  - Story: `story-06-comprehensive-canonical-est-template-system.md`
   - **Tasks:** T03-T05 TODO, T07-T08 TODO (T00, T01-T02, T06, T09-T10 ✅ COMPLETE)
   - **Status:** Partially complete, remaining tasks for template system completion
 
 - [ ] **E4:S10 – Agentic Kanban Task Creation from FR/BR** - TODO
-  - Story: `Story-010-agentic-kanban-task-creation-from-fr-br.md`
+  - Story: `story-10-agentic-kanban-task-creation-from-fr-br.md`
   - **Tasks:** T00-T07 TODO
   - **Note:** This is actually COMPLETE (v0.4.10.7+0) - Epic doc may need update
 
 - [ ] **E4:S12 – FR/BR/UXR Repository Stories (S00 Pattern)** - TODO
-  - Story: `Story-012-fr-br-uxr-repository-stories.md`
+  - Story: `story-12-fr-br-uxr-repository-stories.md`
   - **Tasks:** T01-T10 TODO (T00 ✅ COMPLETE)
   - **Status:** Story created for FR-021, implementation pending
 

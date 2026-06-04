@@ -102,8 +102,8 @@ Framework health monitoring tools implemented. Created comprehensive monitoring 
 
 - **Framework Health Metrics:** `docs/architecture/standards-and-adrs/framework-health-metrics.md` (E6:S03:T01)
 - **Framework Update Procedures:** `docs/architecture/standards-and-adrs/framework-update-procedures.md`
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 3:** `docs/project-management/kanban/epics/Epic-6/Story-003-framework-health-monitoring.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 3:** `docs/project-management/kanban/epics/epic-06/story-03-framework-health-monitoring.md`
 
 ---
 

@@ -91,7 +91,7 @@ This epic encompasses project documentation, user guides, and developer document
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/Epic-9/Story-001-developer-documentation.md`
+> Full story: `docs/project-management/kanban/epics/epic-09/story-01-developer-documentation.md`
 
 ---
 
@@ -129,7 +129,7 @@ This epic encompasses project documentation, user guides, and developer document
 - Coordinates with Epic 12 (Frontend & UI) for in-app help
 - *Parallel Development Candidacy:* Safe (can coordinate with Epic 12)
 
-> Full story: `docs/project-management/kanban/epics/Epic-9/Story-002-user-documentation.md`
+> Full story: `docs/project-management/kanban/epics/epic-09/story-02-user-documentation.md`
 
 ---
 
@@ -165,7 +165,7 @@ This epic encompasses project documentation, user guides, and developer document
 - Depends on Epic 11 (API & Backend Services) for API implementation
 - *Parallel Development Candidacy:* Blocked (requires Epic 11 API)
 
-> Full story: `docs/project-management/kanban/epics/Epic-9/Story-003-api-documentation.md`
+> Full story: `docs/project-management/kanban/epics/epic-09/story-03-api-documentation.md`
 
 ---
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E02:S16:T02 — Planning: Perpetual task inventory and classification (IPP)
 
-**Host Task:** [`T02-inventory-and-classify-workflow-perpetual-tasks.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) **(E02:S16:T02)**  
+**Host Task:** [`T02-inventory-and-classify-workflow-perpetual-tasks.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) **(E02:S16:T02)**  
 **Planning for:** Exhaustive inventory, disposition, ID map, and tiered reference map for workflow-related perpetual anchors (unblocks [IPP-E2S16T03 §7 Tranche 3B](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md))  
 **Upstream:** [FR-088](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md), [IPP-E2S16T01](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md), [E4S19T03 investigation report](E4S19T03-e6s07-default-housing-investigation-report.md)  
 **Status:** Published (inventory artifact; execution of link edits is **T03 Tranche 3B**)
@@ -41,7 +41,7 @@ housekeeping_policy: keep
 
 ### 1.4 Referenced sources
 
-- Host: [`T02`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
+- Host: [`T02`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
 - Policy IPP: [`IPP-E2S16T01`](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 - Re-house IPP: [`IPP-E2S16T03`](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md)
 - E6:S07 drift: [`E4S19T03-e6s07-default-housing-investigation-report.md`](E4S19T03-e6s07-default-housing-investigation-report.md)
@@ -60,7 +60,7 @@ Two-pass merge (reproducible):
 
 1. **Marker scan** — task docs under `docs/project-management/kanban/epics/**/T*.md` for `Task Type: Perpetual Maintenance`, `perpetual_task: true`, `Historical Anchor:`, `SUPERSEDED`.
 2. **Workflow-keyword scan** — UKW, CMW, RW maintenance, kanban hygiene, perpetual workflow (catch mis-housed candidates without marker).
-3. **Seed merge** — IPP-E2S16T01 §2.4; Story-016 T03/T04/T05/T10; E4S19 report §5; Epic-6 Story-007 checklist rows tagged UKW/CMW/perpetual.
+3. **Seed merge** — IPP-E2S16T01 §2.4; story-016 T03/T04/T05/T10; E4S19 report §5; epic-06 story-007 checklist rows tagged UKW/CMW/perpetual.
 
 **Helper (2026-06-03):** `packages/frameworks/workflow mgt/scripts/kanban/discover_perpetual_task_candidates.py --json`  
 **Run evidence:** `marker_count=6`, `keyword_count=65`, `unique_candidates=65` (keyword pass is broad; inventory table below is the curated authoritative set).
@@ -82,28 +82,28 @@ Uses IPP-E2S16T01 definitions unchanged:
 | `T101` (UKW) | Historical / E6:S06 legacy | `migrate_to_S16` (alias) | `E02:S16:T03` | IPP-E2S16T01 §2.4; RW attribution → umbrella |
 | `T102` (CMW) | Historical / E6:S06 legacy | `migrate_to_S16` (alias) | `E02:S16:T03` | Same |
 | `T103` (RW maint.) | Historical / E6:S06 legacy | `migrate_to_S16` (alias) | `E02:S16:T03` | Same |
-| `E02:S16:T03` | Story-016 | `retain_with_rationale` | — | Workflow-maintenance umbrella (perpetual) |
-| `E02:S16:T04` | Story-016 | `retain_with_rationale` | — | Kanban hygiene lane |
-| `E02:S16:T05` | Story-016 | `retain_with_rationale` | — | Markdown hygiene lane |
-| `E02:S16:T10` | Story-016 | `retain_with_rationale` | — | Repo infrastructure perpetual lane |
-| `E06:S06:T101` | Epic-6 (UKW perpetual) | `deprecate_or_redirect` | `E02:S16:T03` | Superseded by S16 policy; historical BUILD preserved |
-| `E06:S06:T102` | Epic-6 (CMW perpetual) | `deprecate_or_redirect` | `E02:S16:T03` | Same |
-| `E06:S07:T11` | Epic-6 (UKW doc) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 re-house (IPP-E2S16T03) |
-| `E06:S07:T13` | Epic-6 (CMW doc) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 |
-| `E06:S07:T16` | Epic-6 (CMW) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 |
-| `E06:S07:T106` | Epic-6 | `deprecate_or_redirect` | `E02:S16:T03` | SUPERSEDED → T03 (Tranche 1) |
-| `E06:S07:T108` | Epic-6 | `deprecate_or_redirect` | `E02:S16:T07` | FR-050 UKW extension; **re-housed** |
-| `E06:S07:T109` | Epic-6 | `deprecate_or_redirect` | `E02:S16:T13` | BR-059 UKW MoSCOW; **re-housed** |
-| `E06:S07:T116` | Epic-6 | `deprecate_or_redirect` | `E02:S16:T06` | FR-085 `--rp`; **re-housed** |
-| `E06:S07:T18` | Epic-6 (active) | `migrate_to_S16` | `E02:S01:T23` | Workflow step tracking; E4S19 §5.2 — **done** at T23 |
-| `E06:S07:T107` | Epic-6 (borderline) | `retain_with_rationale` | `E06:S07:T107` | IDE whitelist / tooling; in-scope for S07 until FR-087 closure |
-| `E06:S07:T110` | Epic-6 (COMPLETE) | `deprecate_or_redirect` | `E02:S16:T03` or archive-only | Out-of-scope UKW meta; 3B: path stubs only |
-| `E06:S07:T113` | Epic-6 (COMPLETE) | `deprecate_or_redirect` | `E02:S16:T03` | RW parser hardening meta; 3B archive tier |
-| `E06:S07:T114` | Epic-6 (COMPLETE) | `deprecate_or_redirect` | `E02:S16:T03` | ICW trio; 3B archive tier |
-| `E06:S07:T115` | Epic-6 (COMPLETE) | `deprecate_or_redirect` | `E02:S16:T03` | ICW trio; 3B archive tier |
-| `E02:S01:T23` | Epic-2 S01 | `retain_with_rationale` | — | Canonical host for step-tracking (from T18) |
-| `E02:S16:T06`–`T09`, `T13`–`T17` | Story-016 | `retain_with_rationale` | — | Delivery/governance tasks under perpetual story (not all perpetual type) |
-| `E06:S07:T104`, `T105` | Epic-6 | `retain_with_rationale` | — | ADK/package analysis in-scope per FR-087 narrowed charter |
+| `E02:S16:T03` | story-016 | `retain_with_rationale` | — | Workflow-maintenance umbrella (perpetual) |
+| `E02:S16:T04` | story-016 | `retain_with_rationale` | — | Kanban hygiene lane |
+| `E02:S16:T05` | story-016 | `retain_with_rationale` | — | Markdown hygiene lane |
+| `E02:S16:T10` | story-016 | `retain_with_rationale` | — | Repo infrastructure perpetual lane |
+| `E06:S06:T101` | epic-06 (UKW perpetual) | `deprecate_or_redirect` | `E02:S16:T03` | Superseded by S16 policy; historical BUILD preserved |
+| `E06:S06:T102` | epic-06 (CMW perpetual) | `deprecate_or_redirect` | `E02:S16:T03` | Same |
+| `E06:S07:T11` | epic-06 (UKW doc) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 re-house (IPP-E2S16T03) |
+| `E06:S07:T13` | epic-06 (CMW doc) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 |
+| `E06:S07:T16` | epic-06 (CMW) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 |
+| `E06:S07:T106` | epic-06 | `deprecate_or_redirect` | `E02:S16:T03` | SUPERSEDED → T03 (Tranche 1) |
+| `E06:S07:T108` | epic-06 | `deprecate_or_redirect` | `E02:S16:T07` | FR-050 UKW extension; **re-housed** |
+| `E06:S07:T109` | epic-06 | `deprecate_or_redirect` | `E02:S16:T13` | BR-059 UKW MoSCOW; **re-housed** |
+| `E06:S07:T116` | epic-06 | `deprecate_or_redirect` | `E02:S16:T06` | FR-085 `--rp`; **re-housed** |
+| `E06:S07:T18` | epic-06 (active) | `migrate_to_S16` | `E02:S01:T23` | Workflow step tracking; E4S19 §5.2 — **done** at T23 |
+| `E06:S07:T107` | epic-06 (borderline) | `retain_with_rationale` | `E06:S07:T107` | IDE whitelist / tooling; in-scope for S07 until FR-087 closure |
+| `E06:S07:T110` | epic-06 (COMPLETE) | `deprecate_or_redirect` | `E02:S16:T03` or archive-only | Out-of-scope UKW meta; 3B: path stubs only |
+| `E06:S07:T113` | epic-06 (COMPLETE) | `deprecate_or_redirect` | `E02:S16:T03` | RW parser hardening meta; 3B archive tier |
+| `E06:S07:T114` | epic-06 (COMPLETE) | `deprecate_or_redirect` | `E02:S16:T03` | ICW trio; 3B archive tier |
+| `E06:S07:T115` | epic-06 (COMPLETE) | `deprecate_or_redirect` | `E02:S16:T03` | ICW trio; 3B archive tier |
+| `E02:S01:T23` | epic-02 S01 | `retain_with_rationale` | — | Canonical host for step-tracking (from T18) |
+| `E02:S16:T06`–`T09`, `T13`–`T17` | story-016 | `retain_with_rationale` | — | Delivery/governance tasks under perpetual story (not all perpetual type) |
+| `E06:S07:T104`, `T105` | epic-06 | `retain_with_rationale` | — | ADK/package analysis in-scope per FR-087 narrowed charter |
 
 ### 2.5 Migration ID map (AC3)
 
@@ -139,7 +139,7 @@ python3 -c "from pathlib import Path
 t,f=0,0
 for p in Path('docs').rglob('*'):
     if p.is_file():
-        try: n=p.read_text(encoding='utf-8',errors='replace').count('Epic-6/Story-007')
+        try: n=p.read_text(encoding='utf-8',errors='replace').count('epic-06/story-007')
         except: continue
         if n: t+=n; f+=1
 print(t,f)"
@@ -175,8 +175,8 @@ Doc-only task — tests validate **inventory artifact integrity**:
 1. **[MANDATORY]** T02 **IN PROGRESS**; refresh `Last updated` at IPW start.
 2. **IPW Phases 0–7:** Produce this IPP (ADR §2.7 **EXEMPT**).
 3. **Discovery pass:** Marker + keyword scans; merge seeds into §2.4–§2.5.
-4. **Reference map:** Count `Epic-6/Story-007` per tier; document §2.6.
-5. **Wire:** T01 AC3, T02, T03 §7 3B gate, Story-016 checklist, `kboard.md`.
+4. **Reference map:** Count `epic-06/story-007` per tier; document §2.6.
+5. **Wire:** T01 AC3, T02, T03 §7 3B gate, story-016 checklist, `kboard.md`.
 6. **Verification:** T02 AC1–AC5 checked with evidence in task doc.
 7. **[MANDATORY final step]** T02 → **COMPLETE**; version anchor on `RW E02:S16:T02 --art`.
 
@@ -190,7 +190,7 @@ Doc-only task — tests validate **inventory artifact integrity**:
 | ------ | ---- |
 | CREATE | `docs/implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md` (this file) |
 | CREATE | `packages/frameworks/workflow mgt/scripts/kanban/discover_perpetual_task_candidates.py` |
-| UPDATE | T02, T01, T03, Story-016, `kboard.md` |
+| UPDATE | T02, T01, T03, story-016, `kboard.md` |
 | NONE | New ADR; portal sidebar beyond standard `docs/` IPP |
 
 ---
@@ -214,7 +214,7 @@ Doc-only task — tests validate **inventory artifact integrity**:
 | Migration map includes T101+ and E6:S07 chain | §2.5 | PASS |
 | Reference map ≥3 tiers with counts | §2.6 | PASS |
 | Discovery script | `discover_perpetual_task_candidates.py --json` → `unique_candidates=65` | PASS |
-| `Epic-6/Story-007` baseline | 167 / 101 files under `docs/` | PASS |
+| `epic-06/story-007` baseline | 167 / 101 files under `docs/` | PASS |
 | T01 links inventory IPP | T01 AC3 (updated on RW) | PASS (on wire) |
 | T03 §7 3B gate | Inventory exists → gate **satisfied** | PASS |
 | `validate_ipw_publication_wiring.py --requested E02:S16:T02` | NOT_APPLICABLE + IPP link | PASS (on RW) |

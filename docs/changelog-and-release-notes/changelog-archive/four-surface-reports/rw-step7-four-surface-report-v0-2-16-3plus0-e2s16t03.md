@@ -8,7 +8,7 @@
 | Surface | Action | Why |
 | ------- | ------ | --- |
 | T03 task doc | Version anchor, Last updated, Tranche 2 evidence | Host task forensic sync |
-| Story-016 | T03 checklist + version header | Bottom-up hierarchy |
+| story-016 | T03 checklist + version header | Bottom-up hierarchy |
 | BR-067 | Version field, policy table (source FBU) | Release-scope FBU sync |
 | kboard.md | T03 perpetual row + board version | Canonical task row |
 | fbuboard.md | BR-067 active row + version context | Bidirectional FBU wiring |

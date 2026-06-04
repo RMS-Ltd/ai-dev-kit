@@ -78,4 +78,4 @@
 - **Analysis:** `docs/Analysis/debug-path-framework-analysis.md`
 - **DRW Methodology:** `packages/frameworks/debug-path/DRW-METHODOLOGY.md`
 - **Previous Release (v0.2.4.5+3):** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.4.5+3.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`

@@ -380,8 +380,8 @@ Available backends: git-submodule, git-subtree
 ## References
 
 - **Framework Dependency Architecture:** `framework-dependency-architecture.md`
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 2:** `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 2:** `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
 
 ---
 

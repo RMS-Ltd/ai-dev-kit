@@ -86,8 +86,8 @@ E4:S06:T07+2 – Kanban Template Integration Complete: Enhanced integration betw
 
 ### Files Modified
 - `packages/frameworks/kanban/templates/CONTEXTUALIZATION_GUIDE.md` - Enhanced with cross-references
-- `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md` - Updated task completion
-- `docs/project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system/E4S06T07-integration-validation-report.md` - Created validation report
+- `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md` - Updated task completion
+- `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/E4S06T07-integration-validation-report.md` - Created validation report
 
 ### Files Referenced
 - `docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md` - Setup guide integration

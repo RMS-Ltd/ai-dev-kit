@@ -121,7 +121,7 @@ housekeeping_policy: archive
 - `cli/migration.py` - Framework detection and migration utilities (new)
 - `cli/commands/migrate.py` - Migration command implementation (new)
 - `cli/main.py` - Migration command registration
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - Updated T10 status
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - Updated T10 status
 
 ---
 

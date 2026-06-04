@@ -85,7 +85,7 @@ This release completes **Task 2: Document KB structure principles and convention
 This principles document provides the foundation for consistent KB organization. It establishes clear rules and conventions that will guide the migration (T003) and implementation (T004) phases.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-003-core-kb-structure-for-dev-kit/T002-kb-structure-principles.md` (comprehensive principles document)
+- `docs/project-management/kanban/epics/epic-01/stories/story-03-core-kb-structure-for-dev-kit/T02-kb-structure-principles.md` (comprehensive principles document)
 
 ---
 
@@ -99,9 +99,9 @@ This principles document provides the foundation for consistent KB organization.
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-003-core-kb-structure-for-dev-kit/T002-kb-structure-principles.md` (created)
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-003-core-kb-structure-for-dev-kit.md` (task status updated)
-- `docs/project-management/kanban/epics/Epic-1.md` (status update)
+- `docs/project-management/kanban/epics/epic-01/stories/story-03-core-kb-structure-for-dev-kit/T02-kb-structure-principles.md` (created)
+- `docs/project-management/kanban/epics/epic-01/stories/story-03-core-kb-structure-for-dev-kit.md` (task status updated)
+- `docs/project-management/kanban/epics/epic-01.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.1.3.2+1)
 
 ---

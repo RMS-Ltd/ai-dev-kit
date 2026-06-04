@@ -19,5 +19,5 @@
 ## References
 
 - **UXR:** [UXR-008-kboard-fbuboard-default-naming-adoption.md](docs/project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- **Task:** [T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md](docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
-- **Story:** [Story-019-fr-br-uxr-abstract-governance-and-intake.md](docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md)
+- **Task:** [T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md](docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- **Story:** [story-19-fr-br-uxr-abstract-governance-and-intake.md](docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)

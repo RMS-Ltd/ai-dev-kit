@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** OPEN
 
-**Implementing Task:** [E04:S19:T06](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
+**Implementing Task:** [E04:S19:T06](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 **IPP:** [`IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md`](../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)
-**Historical implementing tasks:** [E04:S19:T02](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md)
+**Historical implementing tasks:** [E04:S19:T02](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md)
 
 ---
 

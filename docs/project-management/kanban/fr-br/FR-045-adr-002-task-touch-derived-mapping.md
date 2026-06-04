@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Created:** 2026-02-26  
 **Last updated:** 2026-03-09  
 **Code:** FR-045  
-**Implementation Task:** [E05:S01:T45](../epics/Epic-5/Story-001-fr-repo/T45-adr-002-task-touch-derived-mapping.md)  
+**Implementation Task:** [E05:S01:T45](../epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md)  
 **GitHub Issue:** [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 
 ---
@@ -184,9 +184,9 @@ Task-touch mapping delivers:
 
 **Kanban Links:**
 
-- Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
-- Story: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md)
-- Task: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T45-adr-002-task-touch-derived-mapping.md`](../epics/Epic-5/Story-001-fr-repo/T45-adr-002-task-touch-derived-mapping.md)
+- Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md)
+- Task: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md`](../epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md)
 
 ---
 

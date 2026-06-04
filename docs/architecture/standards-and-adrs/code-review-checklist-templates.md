@@ -588,8 +588,8 @@ This document provides **reusable code review checklist templates** for differen
 - **Code Review Standards and Guidelines:** `docs/architecture/standards-and-adrs/code-review-standards-and-guidelines.md`
 - **Maintenance Workflow Processes:** `docs/architecture/standards-and-adrs/maintenance-workflow-processes.md`
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 2:** `docs/project-management/kanban/epics/Epic-7/Story-002-code-review-standards-and-processes.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 2:** `docs/project-management/kanban/epics/epic-07/story-02-code-review-standards-and-processes.md`
 
 ---
 

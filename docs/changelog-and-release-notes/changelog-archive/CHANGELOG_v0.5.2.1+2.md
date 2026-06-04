@@ -49,7 +49,7 @@ Created documentation consistency validation scripts for link validation and cro
 ### 📝 Documentation Updates
 
 **Story Document:**
-- Updated `docs/project-management/kanban/epics/Epic-5/Story-002-documentation-quality-assurance.md`
+- Updated `docs/project-management/kanban/epics/epic-05/story-02-documentation-quality-assurance.md`
 - Marked E5:S02:T01 as COMPLETE
 - Added comprehensive deliverables list
 
@@ -63,7 +63,7 @@ Created documentation consistency validation scripts for link validation and cro
 ## Files Modified
 
 - `src/fynd_deals/version.py` (version bumped to v0.5.2.1+2, build updated)
-- `docs/project-management/kanban/epics/Epic-5/Story-002-documentation-quality-assurance.md` (task status and version updated)
+- `docs/project-management/kanban/epics/epic-05/story-02-documentation-quality-assurance.md` (task status and version updated)
 
 ---
 

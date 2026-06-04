@@ -13,7 +13,7 @@ Created Story 9 under Epic 2 for FR-016: Kanban Granularity & Discrete Task Docs
 
 ### Added
 - **Story 9:** Kanban Granularity & Discrete Task Docs (3-Tier Structure)
-  - Created `docs/project-management/kanban/epics/Epic-2/Story-009-kanban-granularity-discrete-task-docs.md`
+  - Created `docs/project-management/kanban/epics/epic-02/story-09-kanban-granularity-discrete-task-docs.md`
   - Defined 8 tasks (T00-T07) for implementing 3-tier structure enforcement
   - T00 (Story Creation and FR-016 Intake) marked complete
 

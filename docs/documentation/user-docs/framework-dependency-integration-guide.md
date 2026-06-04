@@ -261,9 +261,9 @@ cd frameworks/workflow-mgmt
 python3 scripts/validation/validate_branch_context.py
 
 # Create first epic
-mkdir -p docs/project-management/kanban/epics/Epic-1
+mkdir -p docs/project-management/kanban/epics/epic-01
 cp frameworks/kanban/templates/epic-template.md \
-   docs/project-management/kanban/epics/Epic-1/Epic-1.md
+   docs/project-management/kanban/epics/epic-01/epic-01.md
 
 # Test Release Workflow
 git checkout -b epic/1-setup

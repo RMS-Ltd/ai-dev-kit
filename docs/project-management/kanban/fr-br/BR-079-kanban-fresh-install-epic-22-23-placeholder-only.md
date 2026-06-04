@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM (inconsistent fresh-install epic docs)  
 **Status:** OPEN (fix attempted **v0.6.9.8+2** — pending verification)  
 **GitHub Issue:** [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)  
-**Implementing Task:** [E06:S09:T08](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md)  
+**Implementing Task:** [E06:S09:T08](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md)  
 **Created:** 2026-06-03  
 **Source:** Book dry-run (ExpensesTracker T03 Step 1); ADK `dev` @ `84efa7b`
 

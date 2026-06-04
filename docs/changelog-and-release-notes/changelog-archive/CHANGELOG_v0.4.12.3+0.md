@@ -19,7 +19,7 @@ Created Epic 7, Story 0: UXR Repo (PERPETUAL) as the canonical repository for al
 ### Repository Story Creation
 
 - **E7:S00 - UXR Repo (PERPETUAL):** Created repository story document
-  - Location: `docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo.md`
+  - Location: `docs/project-management/kanban/epics/epic-07/story-00-uxr-repo.md`
   - Status: IN PROGRESS (PERPETUAL)
   - Abstract space: v0.7.0.0+0
   - Traceability pattern: UXR-001 = E7:S00:T01

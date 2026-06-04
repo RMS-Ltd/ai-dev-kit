@@ -190,7 +190,7 @@ Each task entry in the MoSCOW sections should include:
 **Format:**
 ```markdown
 - **E{epic}:S{story}:T{task}** – {Task description}  
-  *Last updated: {Date}* | [Task Doc](epics/Epic-{epic}/Story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/Epic-{epic}/Story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
 ```
 
 ### Story Checklist Format
@@ -200,7 +200,7 @@ The Story Checklist section should list all stories in a compact format (one lin
 **Format:**
 ```markdown
 - [x] **E{epic}:S{story} – {Story name}** - {Status} ({version} – {Status note})
-  - Story: [`Story-{story}-{name}.md`](epics/Epic-{epic}/Story-{story}-{name}.md)
+  - Story: [`story-{story}-{name}.md`](epics/epic-{epic}/story-{story}-{name}.md)
   - Tasks: {Task summary}
 ```
 

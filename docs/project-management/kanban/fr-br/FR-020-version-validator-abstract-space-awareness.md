@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E02:S10:T06](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
+**Implementing Task:** [E02:S10:T06](../epics/epic-02/story-10-doc-init-build-zero-for-new-est.md)
 
 ---
 
@@ -131,7 +131,7 @@ This feature is needed:
 ## Use Cases
 
 **Primary Use Case:**
-1. Developer creates new Story doc: `Epic-2/Story-011-intake-workflow-automation.md`
+1. Developer creates new Story doc: `epic-02/story-11-intake-workflow-automation.md`
 2. Developer runs RW for E02:S11:T00 (Story Creation)
 3. RW Step 2 bumps version to `0.2.11.0+0` (abstract space)
 4. RW Step 8 runs validator: `validate_version_bump.py`
@@ -212,8 +212,8 @@ FR-016 → E4:S11 → E2:S09 → E02:S10:T01 → E02:S10:T02 → E02:S10:T06 (th
 - Version: `v0.2.10.6+0` (Task creation - abstract space)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`docs/project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md`](../epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md)
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md`](../epics/epic-02/story-10-doc-init-build-zero-for-new-est.md)
 - Task: See Story 10 task checklist (T06)
 
 ---
@@ -267,7 +267,7 @@ FR-016 → E4:S11 → E2:S09 → E02:S10:T01 → E02:S10:T02 → E02:S10:T06 (th
 
 - **FR-017:** `docs/project-management/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md`
 - **FR-018:** `docs/project-management/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
-- **E2:S10:** `docs/project-management/kanban/epics/Epic-2/Story-010-doc-init-build-zero-for-new-est.md`
+- **E2:S10:** `docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md`
 - **Validator Script:** `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py`
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 

@@ -109,8 +109,8 @@ def _scaffold_supersede_chain(root: Path, *, complete: bool = True) -> None:
     fbu_dir = root / "docs/project-management/kanban/fr-br"
     epic_dir = (
         root
-        / "docs/project-management/kanban/epics/Epic-2/"
-        "Story-015-ipw-governance-and-publication-contract"
+        / "docs/project-management/kanban/epics/epic-02/"
+        "story-15-ipw-governance-and-publication-contract"
     )
 
     def banner(rel_id: str) -> str:

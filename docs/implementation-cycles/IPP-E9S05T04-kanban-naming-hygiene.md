@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E9:S05:T04 — Planning: Kanban Naming Hygiene and Directory Systematic Cleanup (UXR-011)
 
-**Host Task:** [`T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md`](../docs/project-management/kanban/epics/Epic-9/Story-005-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md) **(E9:S05:T04)**
+**Host Task:** [`T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md`](../docs/project-management/kanban/epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md) **(E9:S05:T04)**
 **Planning for:** [UXR-011](../docs/project-management/kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
 **Status:** COMPLETE
 **Completed:** 2026-05-18
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 | RF2 | Each story number within an epic MUST map to exactly one `Story-NNN-*.md` file. | UXR-011 Finding 2 |
 | RF3 | Each task number within a story MUST map to exactly one task file. | UXR-011 Finding 3 |
 | RF4 | Every story directory MUST have a matching `Story-NNN-*.md` file at the epic root. | UXR-011 Finding 4 |
-| RF5 | Story filenames MUST use 3-digit zero-padding (`Story-004`, not `Story-04`). | UXR-011 Finding 5 |
+| RF5 | Story filenames MUST use 3-digit zero-padding (`story-004`, not `story-004`). | UXR-011 Finding 5 |
 | RF6 | All internal markdown links referencing renamed files MUST be updated. | UXR-011 AC7 |
 | RF7 | Board docs (`kboard.md`, `fbuboard.md`) MUST reference correct post-cleanup filenames. | UXR-011 AC8 |
 | RF8 | Kanban governance policy MUST codify the naming convention and prohibit duplicates. | UXR-011 AC9 |
@@ -47,7 +47,7 @@ housekeeping_policy: keep
 
 - **Invariants:** Epic directory structure (`Epic-X/Story-NNN-*.md` + `Epic-X/Story-NNN-slug/`) must remain valid.
 - **In scope:** `docs/project-management/kanban/epics/` tree, board docs (`kboard.md`, `fbuboard.md`), governance policy, regression script.
-- **Out of scope:** Cross-epic story name collisions (Epic-9 vs Epic-24 book stories) — these are semantically acceptable. Fixing pre-existing dangling links in `CHANGELOG_ARCHIVE.md` (12 links) — tracked separately.
+- **Out of scope:** Cross-epic story name collisions (epic-09 vs epic-24 book stories) — these are semantically acceptable. Fixing pre-existing dangling links in `CHANGELOG_ARCHIVE.md` (12 links) — tracked separately.
 - **Boundary:** Epic-owner input required for Epics 5, 6, 7 duplicate story reconciliation. Plan includes deferred decision points for these.
 
 ---
@@ -64,7 +64,7 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 - RF2 → Phase B: Duplicate story reconciliation per epic
 - RF3 → Phase C: Duplicate task removal
 - RF4 → Phase D: Orphaned directory resolution
-- RF5 → Phase E: Story-04 → Story-004 rename
+- RF5 → Phase E: story-004 → story-004 rename
 - RF6 → Phase F: Link update pass across all markdown files
 - RF7 → Phase G: Board doc reference update
 - RF8 → Phase H: Governance policy amendment
@@ -75,7 +75,7 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 - No new pip dependencies.
 - All renames via `git mv` to preserve history.
 - Duplicate story reconciliation in Epics 5, 6, 7 requires human judgment (registry vs functional stories). Plan includes a decision table.
-- Epic-9 is canonical for E/S/T review per user directive.
+- epic-09 is canonical for E/S/T review per user directive.
 
 ### 2.4 Status transition intent
 
@@ -92,10 +92,10 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 | -- | ---------------- | -------------- |
 | T1 | Naming regression script | Run `validate_kanban_naming.py`; expect exit 0 with "0 Txxx, 0 duplicate stories, 0 duplicate tasks, 0 orphaned dirs" |
 | T2 | Txxx → Txx rename integrity | For each renamed file, `git log --follow` shows continuous history; no `T[0-9]{3}-` files remain |
-| T3 | Duplicate story reconciliation | `find kanban/epics/Epic-5 -maxdepth 1 -name "Story-001-*.md" | wc -l` → 1 (same for Epic-6, 7, 9) |
-| T4 | Duplicate task removal | `find kanban/epics/Epic-2/Story-002-pdca* -maxdepth 1 -name "T0[0-9]-*" | wc -l` → 2 (only T07, T08) |
-| T5 | Orphaned directory cleanup | `[ -d "kanban/epics/Epic-5/Story-002" ]` → false OR `[ -f "kanban/epics/Epic-5/Story-002.md" ]` → true |
-| T6 | Zero-padding fix | `[ -f "kanban/epics/Epic-7/Story-004-readme-template-based-on-best-readme-template.md" ]` → true |
+| T3 | Duplicate story reconciliation | `find kanban/epics/epic-05 -maxdepth 1 -name "story-01-*.md" | wc -l` → 1 (same for epic-06, 7, 9) |
+| T4 | Duplicate task removal | `find kanban/epics/epic-02/story-02-pdca* -maxdepth 1 -name "T0[0-9]-*" | wc -l` → 2 (only T07, T08) |
+| T5 | Orphaned directory cleanup | `[ -d "kanban/epics/epic-05/story-002" ]` → false OR `[ -f "kanban/epics/epic-05/story-002.md" ]` → true |
+| T6 | Zero-padding fix | `[ -f "kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md" ]` → true |
 | T7 | Link validation | `validate_changelog_archive_links.py` (existing) and grep for old filenames across all markdown → 0 matches |
 | T8 | Board doc consistency | `kboard.md` and `fbuboard.md` contain zero references to old filenames |
 | T9 | Governance policy rule | `kanban-governance-policy.md` contains explicit "Txx (2-digit) required; Txxx deprecated; Story-NNN (3-digit) required" language |
@@ -112,9 +112,9 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 | A2 | Human review of inventory for Epics 5, 6, 7 duplicate stories — decide canonical file per story number. Decision table: registry story (fr-repo/br-repo) vs functional story. | Decision log |
 | B1 | **Phase A:** Rename all Txxx → Txx using `git mv` batch script driven by inventory. T001→T01, T010→T10, etc. | Zero Txxx files remain |
 | C1 | **Phase B:** Merge/delete duplicate story files per decisions from A2. Use `git mv` to rename canonical files if needed. Update epic story checklists. | One file per story number per epic |
-| C2 | **Phase C:** Remove duplicate task files (Epic-2/Story-002: delete T007, T008, T08-deliverable; keep T07, T08). `git rm` the duplicates. | One file per task number per story |
-| D1 | **Phase D:** Resolve `Epic-5/Story-002/` — either create `Story-002.md` or remove directory per A2 decision. | Zero orphaned dirs |
-| E1 | **Phase E:** Rename `Epic-7/Story-04-*` → `Epic-7/Story-004-*`. | Story-004 files exist |
+| C2 | **Phase C:** Remove duplicate task files (epic-02/story-002: delete T007, T008, T08-deliverable; keep T07, T08). `git rm` the duplicates. | One file per task number per story |
+| D1 | **Phase D:** Resolve `epic-05/story-002/` — either create `story-002.md` or remove directory per A2 decision. | Zero orphaned dirs |
+| E1 | **Phase E:** Rename `epic-07/story-04-*` → `epic-07/story-04-*`. | story-004 files exist |
 | F1 | **Phase F:** Run `sed`/`python` across all markdown in `kanban/` to update internal links referencing old filenames. | Zero old-filename references |
 | G1 | **Phase G:** Update `kboard.md` and `fbuboard.md` row references to new filenames. | Boards reference correct files |
 | H1 | **Phase H:** Amend `kanban-governance-policy.md` with explicit naming convention rule (Txx required, Txxx deprecated, Story-NNN required, no duplicate numbers within epic). | Policy updated |
@@ -131,9 +131,9 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 **Modify (renames + content updates):**
 - 51 Txxx files → Txx (via `git mv`)
 - 14 duplicate story files → merged/renamed/deleted (Epics 5, 6, 7, 9)
-- 3 duplicate task files → deleted (Epic-2/Story-002)
-- `Epic-7/Story-04-*` → `Epic-7/Story-004-*`
-- `Epic-5/Story-002/` → resolved (create .md or remove)
+- 3 duplicate task files → deleted (epic-02/story-002)
+- `epic-07/story-04-*` → `epic-07/story-04-*`
+- `epic-05/story-002/` → resolved (create .md or remove)
 - `kanban-governance-policy.md` — new naming rule
 - `kboard.md`, `fbuboard.md` — reference updates
 - All epic/story docs with outdated links
@@ -148,10 +148,10 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 
 - [x] Inventory exists listing all 51 Txxx files with before/after names
 - [x] `find kanban/epics -name 'T[0-9][0-9][0-9]-*' | wc -l` → 0
-- [x] `find kanban/epics/Epic-5 -maxdepth 1 -name 'Story-001-*' | wc -l` → 1 (same for all duplicate story numbers)
-- [x] `find kanban/epics/Epic-2/Story-002* -maxdepth 1 -name 'T0[0-9]-*' | wc -l` → 2 (T07, T08 only)
-- [x] `test -d kanban/epics/Epic-5/Story-002 && test -f kanban/epics/Epic-5/Story-002.md` (or directory removed)
-- [x] `test -f kanban/epics/Epic-7/Story-004-readme-template-based-on-best-readme-template.md`
+- [x] `find kanban/epics/epic-05 -maxdepth 1 -name 'story-01-*' | wc -l` → 1 (same for all duplicate story numbers)
+- [x] `find kanban/epics/epic-02/story-002* -maxdepth 1 -name 'T0[0-9]-*' | wc -l` → 2 (T07, T08 only)
+- [x] `test -d kanban/epics/epic-05/story-002 && test -f kanban/epics/epic-05/story-002.md` (or directory removed)
+- [x] `test -f kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`
 - [x] `grep -r "T[0-9][0-9][0-9]-" kanban/ --include="*.md" | wc -l` → 0 (excluding historical references in changelog-archive)
 - [x] `validate_kanban_naming.py` exits 0
 - [x] `kanban-governance-policy.md` contains explicit Txx/Story-NNN naming convention
@@ -161,9 +161,9 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 
 ## References
 
-- [E9:S05:T04 Host Task](../docs/project-management/kanban/epics/Epic-9/Story-005-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
+- [E9:S05:T04 Host Task](../docs/project-management/kanban/epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
 - [UXR-011](../docs/project-management/kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
-- [E2:S02:T007](../docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T007-implement-task-naming-change.md)
-- [E2:S02:T008](../docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow/T008-update-kanban-docs-to-txx-standard.md)
+- [E2:S02:T007](../docs/project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)
+- [E2:S02:T008](../docs/project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)
 - [kanban-governance-policy](../packages/frameworks/kanban/policies/kanban-governance-policy.md)
 - [FR-042](../docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

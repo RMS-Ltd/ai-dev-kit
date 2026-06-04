@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-30 (E04:S19:T09 implementation — write-default rule shipped)  
 **Code:** UXR-014  
 
-**Implementing Task:** [E04:S19:T09](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
+**Implementing Task:** [E04:S19:T09](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
 
 **Related:** [UXR-005](UXR-005-kanban-board-formatting-and-governance.md) (board formatting), [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (file naming hygiene), [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) (`Exx:Sxx:Txx` row contract), [task-naming-migration-guide.md](../../architecture/standards-and-adrs/task-naming-migration-guide.md)
 
@@ -172,9 +172,9 @@ Concrete example: `kboard.md` metadata references **`E02:S16:T04`** (unpadded ta
 
 **Kanban links:**
 
-- Epic: [`Epic-4.md`](../epics/Epic-4/Epic-4.md)
-- Story: [`Story-019-fr-br-uxr-abstract-governance-and-intake.md`](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md)
-- Task: [`T09-two-digit-est-identifier-default-formatting-uxr014.md`](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
+- Epic: [`epic-04.md`](../epics/epic-04/epic-04.md)
+- Story: [`story-19-fr-br-uxr-abstract-governance-and-intake.md`](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
+- Task: [`T09-two-digit-est-identifier-default-formatting-uxr014.md`](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
 
 ---
 

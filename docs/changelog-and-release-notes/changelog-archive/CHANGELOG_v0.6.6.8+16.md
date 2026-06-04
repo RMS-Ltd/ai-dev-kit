@@ -63,7 +63,7 @@ Enhanced MoSCOW prioritization system by adding a new "Ongoing (O)" category for
   - `docs/architecture/standards-and-adrs/maintenance-kanban-integration.md`
   - Both updated to include "Ongoing (O)" category
 
-- **Example File** (`packages/frameworks/kanban/examples/Epic-4-Example.md`)
+- **Example File** (`packages/frameworks/kanban/examples/epic-04-Example.md`)
   - Updated MoSCOW legend to include "ONGOING" category
 
 ---
@@ -105,7 +105,7 @@ Enhanced MoSCOW prioritization system by adding a new "Ongoing (O)" category for
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md` - Updated classification guidance
 - `docs/architecture/standards-and-adrs/maintenance-task-prioritization-framework.md` - Added "Ongoing (O)" to classification
 - `docs/architecture/standards-and-adrs/maintenance-kanban-integration.md` - Added "Ongoing (O)" to sections list
-- `packages/frameworks/kanban/examples/Epic-4-Example.md` - Updated MoSCOW legend
+- `packages/frameworks/kanban/examples/epic-04-Example.md` - Updated MoSCOW legend
 - `src/fynd_deals/version.py` - Updated to v0.6.6.8+16
 
 ---

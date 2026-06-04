@@ -80,5 +80,5 @@
 - **Refactor Workflow:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/refactor-workflow-agent-execution.md`
 - **Migration Workflow:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/migration-workflow-agent-execution.md`
 - **Testing Workflow:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md`
-- **Workflow Taxonomy:** `docs/project-management/kanban/epics/Epic-2/stories/Story-003-additional-workflows-and-examples/T01-workflow-taxonomy.md`
+- **Workflow Taxonomy:** `docs/project-management/kanban/epics/epic-02/stories/story-03-additional-workflows-and-examples/T01-workflow-taxonomy.md`
 

@@ -8,7 +8,7 @@ RW Step 7 mutates a known set of "touched surfaces" (task doc + FR/BR/UXR
 doc(s) + kboard.md + fbuboard.md, plus auxiliary Story/Epic docs). Step 8
 ("Stage Files") is contractually required to stage every Step-7 output before
 commit. BR-070 captured a real-world failure where a partial manual staging
-path bypassed this invariant: Step 7 modified `kboard.md` and `Epic-2.md` but
+path bypassed this invariant: Step 7 modified `kboard.md` and `epic-02.md` but
 Step 8 staged only a subset, producing a release commit that omitted Step-7
 outputs.
 

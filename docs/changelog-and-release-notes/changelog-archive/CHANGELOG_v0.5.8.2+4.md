@@ -46,6 +46,6 @@ KB migration: stub sweeps (10 stubs pushed), Epic 3 Story 002 Versioning Cookboo
 
 ## References
 
-- **Task:** `docs/project-management/kanban/epics/Epic-5/Story-008-knowledge-base/T02-notion-hub-and-kb-index.md`
-- **Story:** `docs/project-management/kanban/epics/Epic-5/Story-008-knowledge-base.md`
+- **Task:** `docs/project-management/kanban/epics/epic-05/story-08-knowledge-base/T02-notion-hub-and-kb-index.md`
+- **Story:** `docs/project-management/kanban/epics/epic-05/story-08-knowledge-base.md`
 - **Migration log:** `docs/knowledge/kb-migration-log.md`

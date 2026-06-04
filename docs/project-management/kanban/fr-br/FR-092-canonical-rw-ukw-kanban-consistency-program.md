@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** CRITICAL  
 **Status:** COMPLETE (Waves 0-8 delivered; v0.2.15.7+9 --art sign-off release cut; canonical anchor established)
 
-**Implementing Task:** [E02:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
+**Implementing Task:** [E02:S15:T07](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **IPP:** [IPP-E02S15T07](../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 ---
@@ -165,5 +165,5 @@ A single meta program that:
 - [FR-089 (predecessor + B2 drift)](FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [FR-076 (predecessor)](FR-076-ukw-fbuboard-scope-and-drift-concurrency.md)
 - [BR-042 (duplicate; close)](BR-042-ukw-agent-board-cleanup-failure.md)
-- [E02:S15:T07 (implementing task)](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
+- [E02:S15:T07 (implementing task)](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
 - [IPP-E02S15T07](../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)

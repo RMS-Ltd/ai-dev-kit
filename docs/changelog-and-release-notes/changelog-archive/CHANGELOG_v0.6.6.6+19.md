@@ -24,7 +24,7 @@ housekeeping_policy: keep
 **Created Discrete Task Document for T06 (FR-016 Compliance):**
 
 1. **Created Task Document**
-   - `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
+   - `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
    - Follows canonical Task document template structure
    - Includes all required fields per FR-016:
      - Task ID (E6:S06:T06)
@@ -52,10 +52,10 @@ housekeeping_policy: keep
    - Related BR/FR links included
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
 
 **Files Modified:**
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 
 ---
 
@@ -130,6 +130,6 @@ housekeeping_policy: keep
 **Related:**
 - Epic 6, Story 6, Task 6
 - FR-016: Kanban Granularity & Discrete Task Docs (3-Tier Structure)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 

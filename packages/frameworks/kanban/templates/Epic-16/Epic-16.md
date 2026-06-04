@@ -78,19 +78,19 @@ This epic encompasses performance and optimization for the {PROJECT_NAME} projec
 
 **Brief Summary:** performance analysis for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-performance-analysis.md`](Story-001-performance-analysis.md)
+**Story Document:** [`story-01-performance-analysis.md`](story-01-performance-analysis.md)
 
 ### Story 2: Performance Optimization
 
 **Brief Summary:** performance optimization for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-performance-optimization.md`](Story-002-performance-optimization.md)
+**Story Document:** [`story-02-performance-optimization.md`](story-02-performance-optimization.md)
 
 ### Story 3: Scalability Improvements
 
 **Brief Summary:** scalability improvements for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-scalability-improvements.md`](Story-003-scalability-improvements.md)
+**Story Document:** [`story-03-scalability-improvements.md`](story-03-scalability-improvements.md)
 
 ---
 

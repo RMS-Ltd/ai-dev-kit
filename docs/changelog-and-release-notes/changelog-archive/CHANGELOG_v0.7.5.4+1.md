@@ -53,15 +53,15 @@ Migration UXR synthesis complete. All 4 UXR documents (UXR-001 through UXR-004) 
 
 ## References
 
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 5:** `docs/project-management/kanban/epics/Epic-7/Story-005-migration-uxr-research.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 5:** `docs/project-management/kanban/epics/epic-07/story-05-migration-uxr-research.md`
 - **UXR-001:** `docs/project-management/kanban/fr-br/UXR-001-migration-user-experience-research.md`
 - **UXR-002:** `docs/project-management/kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md`
 - **UXR-003:** `docs/project-management/kanban/fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md`
 - **UXR-004:** `docs/project-management/kanban/fr-br/UXR-004-kanban-package-installation-uat.md`
-- **Epic 4 Story 7:** `docs/project-management/kanban/epics/Epic-4/Story-007-migration-support-and-installation-modes.md`
-- **Epic 4 Story 8:** `docs/project-management/kanban/epics/Epic-4/Story-008-intelligent-epic-matching-canonical-adoption.md`
-- **Epic 4 Story 9:** `docs/project-management/kanban/epics/Epic-4/Story-009-bug-fixes-and-agentic-intelligence.md`
+- **Epic 4 Story 7:** `docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md`
+- **Epic 4 Story 8:** `docs/project-management/kanban/epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption.md`
+- **Epic 4 Story 9:** `docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md`
 
 ---
 

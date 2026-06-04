@@ -48,12 +48,12 @@ Created comprehensive installation guide for Epic 6 framework dependency archite
 ### 📝 Documentation Updates
 
 **Story Document:**
-- Updated `docs/project-management/kanban/epics/Epic-5/Story-004-framework-documentation-management.md`
+- Updated `docs/project-management/kanban/epics/epic-05/story-04-framework-documentation-management.md`
 - Added E05:S04:T05 task definition with comprehensive approach
 - Added task to checklist
 
 **Epic Document:**
-- Updated `docs/project-management/kanban/epics/Epic-5/Epic-5.md`
+- Updated `docs/project-management/kanban/epics/epic-05/epic-05.md`
 - Added Story 4 to story checklist
 
 ---
@@ -65,8 +65,8 @@ Created comprehensive installation guide for Epic 6 framework dependency archite
 ## Files Modified
 
 - `src/fynd_deals/version.py` (version bumped to v0.5.4.5+1, story and task updated)
-- `docs/project-management/kanban/epics/Epic-5/Story-004-framework-documentation-management.md` (task added)
-- `docs/project-management/kanban/epics/Epic-5/Epic-5.md` (story checklist updated)
+- `docs/project-management/kanban/epics/epic-05/story-04-framework-documentation-management.md` (task added)
+- `docs/project-management/kanban/epics/epic-05/epic-05.md` (story checklist updated)
 
 ---
 

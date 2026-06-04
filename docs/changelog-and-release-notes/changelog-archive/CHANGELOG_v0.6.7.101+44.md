@@ -17,7 +17,7 @@ Change implemented: **RW -d** documentation release attributing the post-UKW Kan
 
 - `kanban-board.md`: `Last Updated` / `Version`; added **E2:S16:T03** Ongoing row (UKW); normalized MoSCOW `Last modified` stamps.
 - `fr-br-uxr-board.md`: version context, **FR-046** row status narrative, row timestamps.
-- `T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`, Story-007 rollup, `Epic-6.md` (header): UKW + release traceability.
+- `T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`, story-007 rollup, `epic-06.md` (header): UKW + release traceability.
 - `T46-rw-semver-tag-task-touch-mode.md`: UKW bookkeeping section (cross-release note).
 
 ---

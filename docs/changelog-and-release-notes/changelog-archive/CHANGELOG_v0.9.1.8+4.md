@@ -36,7 +36,7 @@ This release updates task document T07 in Epic 6 Story 7 to reflect the reposito
 ## Files Changed
 
 ### Updated
-- `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md`
+- `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md`
 - `src/fynd_deals/version.py` - Version updated to v0.9.1.8+4
 
 ## Impact
@@ -67,5 +67,5 @@ This release updates task document T07 in Epic 6 Story 7 to reflect the reposito
 
 ---
 
-_This changelog is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`Story-001-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md) for story context._
+_This changelog is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`story-01-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md) for story context._
 

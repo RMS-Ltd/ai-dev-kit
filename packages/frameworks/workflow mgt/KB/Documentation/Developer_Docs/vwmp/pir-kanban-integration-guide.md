@@ -33,7 +33,7 @@ This guide documents the integration between the Post-Implementation Review (PIR
 **PIR Status:** Complete  
 **PIR Date:** 2025-12-16  
 **PIR Version:** v0.2.11.9+3  
-**PIR Report:** [PIR-Epic-2-v0.2.11.9+3.md](../../Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md)
+**PIR Report:** [PIR-epic-02-v0.2.11.9+3.md](../../Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md)
 
 ### Summary
 [One paragraph summary of PIR findings]
@@ -51,7 +51,7 @@ This guide documents the integration between the Post-Implementation Review (PIR
 **PIR Status:** Complete  
 **PIR Date:** 2025-12-16  
 **PIR Version:** v0.2.5.11+1  
-**PIR Report:** [PIR-Story-5-v0.2.5.11+1.md](../../Reviews/pir/Story-5/PIR-Story-5-v0.2.5.11+1.md)
+**PIR Report:** [PIR-story-05-v0.2.5.11+1.md](../../Reviews/pir/Story-5/PIR-story-05-v0.2.5.11+1.md)
 
 ### Summary
 [One paragraph summary of PIR findings]
@@ -212,7 +212,7 @@ python packages/frameworks/workflow mgt/scripts/update_pir_kanban.py \
 
 **Epic:** Epic 2 - Workflow Management Framework  
 **Version:** v0.2.11.9+3  
-**PIR Report:** `docs/Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md`
+**PIR Report:** `docs/Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md`
 
 **Epic Document Update:**
 ```markdown
@@ -221,7 +221,7 @@ python packages/frameworks/workflow mgt/scripts/update_pir_kanban.py \
 **PIR Status:** Complete  
 **PIR Date:** 2025-12-16  
 **PIR Version:** v0.2.11.9+3  
-**PIR Report:** [PIR-Epic-2-v0.2.11.9+3.md](../../Reviews/pir/Epic-2/PIR-Epic-2-v0.2.11.9+3.md)
+**PIR Report:** [PIR-epic-02-v0.2.11.9+3.md](../../Reviews/pir/epic-02/PIR-epic-02-v0.2.11.9+3.md)
 
 ### Summary
 Epic 2 successfully delivered the Workflow Management Framework with comprehensive workflow definitions, agent execution guides, and integration patterns. All 11 Stories were completed successfully, with high-quality documentation and reusable templates.
@@ -237,7 +237,7 @@ Epic 2 successfully delivered the Workflow Management Framework with comprehensi
 
 **Story:** Story 5 - Post-Implementation Review Workflow  
 **Version:** v0.2.5.11+1  
-**PIR Report:** `docs/Reviews/pir/Story-5/PIR-Story-5-v0.2.5.11+1.md`
+**PIR Report:** `docs/Reviews/pir/Story-5/PIR-story-05-v0.2.5.11+1.md`
 
 **Story Document Update:**
 ```markdown
@@ -246,7 +246,7 @@ Epic 2 successfully delivered the Workflow Management Framework with comprehensi
 **PIR Status:** Complete  
 **PIR Date:** 2025-12-16  
 **PIR Version:** v0.2.5.11+1  
-**PIR Report:** [PIR-Story-5-v0.2.5.11+1.md](../../Reviews/pir/Story-5/PIR-Story-5-v0.2.5.11+1.md)
+**PIR Report:** [PIR-story-05-v0.2.5.11+1.md](../../Reviews/pir/Story-5/PIR-story-05-v0.2.5.11+1.md)
 
 ### Summary
 Story 5 successfully delivered the Post-Implementation Review workflow with comprehensive templates, execution guides, and integration with RW and Kanban systems. All 15 tasks were completed successfully.
@@ -267,8 +267,8 @@ Story 5 successfully delivered the Post-Implementation Review workflow with comp
 - [ ] **E2:S05:T15 – Create PIR usage guide and examples** - TODO
   - **Priority:** Medium
   - **Owner:** TBD
-  - **Related Work:** [Story 5](../../Story-005-post-implementation-review-workflow.md)
-  - **PIR Reference:** [PIR-Story-5-v0.2.5.11+1.md](../../Reviews/pir/Story-5/PIR-Story-5-v0.2.5.11+1.md)
+  - **Related Work:** [Story 5](../../story-05-post-implementation-review-workflow.md)
+  - **PIR Reference:** [PIR-story-05-v0.2.5.11+1.md](../../Reviews/pir/Story-5/PIR-story-05-v0.2.5.11+1.md)
 ```
 
 ---

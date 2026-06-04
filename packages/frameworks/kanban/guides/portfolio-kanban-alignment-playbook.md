@@ -130,7 +130,7 @@ Store the audit log near the bottom of `kboard.md` (new section) or attach a CSV
 
 ## References
 - `docs/project-management/rituals/overview/kboard.md`
-- `docs/project-management/stories/overview/Epic 19/Story-8-Portfolio-Kanban-Alignment.md`
+- `docs/project-management/stories/overview/Epic 19/story-08-Portfolio-Kanban-Alignment.md`
 - `scripts/sync_epic19_to_trello.py`
 - `docs/Governance_and_Process/decision-records/kb-taxonomy-architecture.md`
 

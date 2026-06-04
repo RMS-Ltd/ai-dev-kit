@@ -78,19 +78,19 @@ This epic encompasses api and backend services for the {PROJECT_NAME} project. I
 
 **Brief Summary:** api design and architecture for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-api-design-and-architecture.md`](Story-001-api-design-and-architecture.md)
+**Story Document:** [`story-01-api-design-and-architecture.md`](story-01-api-design-and-architecture.md)
 
 ### Story 2: API Implementation
 
 **Brief Summary:** api implementation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-api-implementation.md`](Story-002-api-implementation.md)
+**Story Document:** [`story-02-api-implementation.md`](story-02-api-implementation.md)
 
 ### Story 3: API Documentation and Testing
 
 **Brief Summary:** api documentation and testing for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-api-documentation-and-testing.md`](Story-003-api-documentation-and-testing.md)
+**Story Document:** [`story-03-api-documentation-and-testing.md`](story-03-api-documentation-and-testing.md)
 
 ---
 

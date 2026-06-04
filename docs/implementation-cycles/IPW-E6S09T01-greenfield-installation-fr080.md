@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E6:S09:T01 - Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T01-greenfield-installation-process-fr080.md`](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) **(E6:S09:T01)**  
+**Host Task:** [`T01-greenfield-installation-process-fr080.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) **(E6:S09:T01)**  
 **Planning for:** [FR-080 – End-to-end greenfield installation process](../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md)  
 **Status:** Draft
 
@@ -145,7 +145,7 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 | 5.1 | Update **FR-080** checkboxes / **T01** acceptance with evidence links. | **AC1** closure or explicit deferrals. |
 | 5.2 | Align with **E6:S09:T03** if copy-paste examples depend on canonical coordinates. | Coordination note in task Progress. |
 
-**Delivered (Wave 5):** [FR-080](../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md) functional/NFR boxes checked with **Implementation evidence** section; [T01](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) acceptance criteria checked with evidence links; **T03** coordination sentence under task Dependencies.
+**Delivered (Wave 5):** [FR-080](../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md) functional/NFR boxes checked with **Implementation evidence** section; [T01](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) acceptance criteria checked with evidence links; **T03** coordination sentence under task Dependencies.
 
 **Files likely touched (living list):**
 
@@ -164,13 +164,13 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 - [x] Task **AC3:** Install docs link **ADR-003** and **FR-081**.
 - [x] **F3** evidenced: installers are part of the canonical greenfield story.
 - [x] **§1.6:** Example/reference run + logging posture documented; aligned with **FR-078** / **FR-079** boundaries ([`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) Wave 4).
-- [x] Bidirectional wiring: this IPW ↔ host task remain linked ([T01](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)).
+- [x] Bidirectional wiring: this IPW ↔ host task remain linked ([T01](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)).
 
 ---
 
 ## References
 
-- [Host task E6:S09:T01](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
+- [Host task E6:S09:T01](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
 - [FR-080](../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [FR-081](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)

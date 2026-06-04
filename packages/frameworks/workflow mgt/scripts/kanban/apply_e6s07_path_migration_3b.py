@@ -8,44 +8,44 @@ import re
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-S07 = "Epic-6/Story-007-adk-implementation-analysis-and-package-management"
+S07 = "epic-06/story-07-adk-implementation-analysis-and-package-management"
 
 # legacy task file stem -> canonical path (under docs/project-management/kanban/epics/)
 REPLACEMENTS: Dict[str, str] = {
     f"{S07}/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md": (
-        "Epic-2/Story-016-perpetual-ongoing-workflow-operations/"
+        "epic-02/story-16-perpetual-ongoing-workflow-operations/"
         "T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md"
     ),
     f"{S07}/T109-br059-ukw-moscow-full-story-task-coverage.md": (
-        "Epic-2/Story-016-perpetual-ongoing-workflow-operations/"
+        "epic-02/story-16-perpetual-ongoing-workflow-operations/"
         "T13-br059-ukw-moscow-full-story-task-coverage.md"
     ),
     f"{S07}/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md": (
-        "Epic-2/Story-016-perpetual-ongoing-workflow-operations/"
+        "epic-02/story-16-perpetual-ongoing-workflow-operations/"
         "T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md"
     ),
     f"{S07}/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md": (
-        "Epic-2/Story-001-rw-agent-execution-and-docs/"
+        "epic-02/story-01-rw-agent-execution-and-docs/"
         "T23-tool-agnostic-workflow-step-tracking-and-runlogs.md"
     ),
     f"{S07}/T106-windsurf-migration-cursorrules-to-workflows.md": (
-        "Epic-2/Story-016-perpetual-ongoing-workflow-operations/"
+        "epic-02/story-16-perpetual-ongoing-workflow-operations/"
         "T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md"
     ),
     f"{S07}/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md": (
-        "Epic-2/Story-016-perpetual-ongoing-workflow-operations/"
+        "epic-02/story-16-perpetual-ongoing-workflow-operations/"
         "T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md"
     ),
     f"{S07}/T113-rw-step-12-5-github-release-parser-hardening-br065.md": (
-        "Epic-2/Story-016-perpetual-ongoing-workflow-operations/"
+        "epic-02/story-16-perpetual-ongoing-workflow-operations/"
         "T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md"
     ),
     f"{S07}/T114-canonical-board-filename-migration-kboard-fbuboard.md": (
-        "Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/"
+        "epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/"
         "T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md"
     ),
     f"{S07}/T115-last-modified-stamp-forensic-integrity-guardrails.md": (
-        "Epic-2/Story-015-ipw-governance-and-publication-contract/"
+        "epic-02/story-15-ipw-governance-and-publication-contract/"
         "T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md"
     ),
 }
@@ -128,7 +128,7 @@ def main() -> int:
     after_t, after_f = count_occurrences(docs)
     mode = "DRY-RUN" if args.dry_run else "APPLIED"
     print(f"{mode}: {files_touched} files, {lines_changed} lines with replacements")
-    print(f"docs/ Epic-6/Story-007: before={before_t}/{before_f} after={after_t}/{after_f}")
+    print(f"docs/ epic-06/Story-007: before={before_t}/{before_f} after={after_t}/{after_f}")
     return 0
 
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E06:S07:T107 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T107-ide-command-whitelist-optimization.md`](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) **(E06:S07:T107)**  
+**Host Task:** [`T107-ide-command-whitelist-optimization.md`](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) **(E06:S07:T107)**  
 **Planning for:** Developer-experience / agent terminal approval friction (no dedicated FR; complements [BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md))  
 **Status:** Approved (implementation complete 2026-05-30 — release via `RW E06:S07:T107`)
 
@@ -38,7 +38,7 @@ housekeeping_policy: keep
 | RNF1 | **Security:** No unbounded `.*` on destructive commands (`rm`, `git push --force`, etc.); document `high_security` patterns and review gate | T107 Risks, guide |
 | RNF2 | **Portability:** No hardcoded maintainer home paths in committed YAML; use `{PROJECT_ROOT}` placeholder + documented substitution | Draft YAML `find_operations` |
 | RNF3 | **Honesty:** Do not claim YAML auto-approves in Cursor unless product integration is proven; changelog uses “attempted” language for IDE behavior | BR-039 guardrails, T107 Out of Scope |
-| RNF4 | **Adopter copy:** Patterns and guide copyable to other ADK adopters with path substitution | Story-007 in-scope |
+| RNF4 | **Adopter copy:** Patterns and guide copyable to other ADK adopters with path substitution | story-007 in-scope |
 | RNF5 | **Validator CI:** `validate_whitelist_patterns.py` exits non-zero on failure; pytest module in framework scripts tree | ADK convention |
 
 ### 1.3 Invariants and boundaries
@@ -46,7 +46,7 @@ housekeeping_policy: keep
 - **Invariants:**
   - `.cursor/whitelist-patterns.yaml` remains the pattern catalog SoT.
   - RW/IPW/UKW workflow gates and validators are unchanged by this task.
-  - Cursor is the primary maintainer IDE ([T57](../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md) closure policy).
+  - Cursor is the primary maintainer IDE ([T57](../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md) closure policy).
 - **In scope:** Pattern catalog refinement, repo validator + tests, maintainer playbook for Cursor Auto-Run/allowlist, UAT log, ADR-013 policy, FR-050 link correction.
 - **Out of scope:**
   - Fixing Cascade/Windsurf product whitelist ([BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) / [IPW-E6S06T57](IPW-E6S06T57-br039-vendor-blocker-planning.md)).
@@ -279,10 +279,10 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 
 ## References
 
-- [T107 — IDE command whitelist optimization](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
-- [Story-007 — ADK implementation analysis](../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md)
+- [T107 — IDE command whitelist optimization](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
+- [story-007 — ADK implementation analysis](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
 - [BR-039 — Cascade whitelist usability](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
-- [E06:S06:T57 — BR-039 repo track](../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
+- [E06:S06:T57 — BR-039 repo track](../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
 - [IPW-E6S06T57 — BR-039 planning](IPW-E6S06T57-br039-vendor-blocker-planning.md)
 - [ide-whitelist-guide.md](../developer-tools/ide-whitelist-guide.md) (draft)
 - [.cursor/whitelist-patterns.yaml](../../.cursor/whitelist-patterns.yaml) (draft)

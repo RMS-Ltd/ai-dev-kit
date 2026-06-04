@@ -34,13 +34,13 @@ Completed Story 4 (RW Installer & Plug-and-Play Adoption) and Epic 2 (Workflow M
 - ✅ Updated Epic 2 "Last updated" field with completion timestamp
 
 ### Documentation Updates
-- Updated `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`:
+- Updated `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`:
   - Status changed from IN PROGRESS to COMPLETE ✅
   - Added completion date
   - Updated success criteria checklist (all checked ✅)
   - Added T09 task entry to task checklist
   - Added T09 task description section
-- Updated `docs/project-management/kanban/epics/Epic-2.md`:
+- Updated `docs/project-management/kanban/epics/epic-02.md`:
   - Status changed from IN PROGRESS to COMPLETE ✅
   - Added completion date
   - Updated Story 4 checklist entry to COMPLETE ✅
@@ -50,8 +50,8 @@ Completed Story 4 (RW Installer & Plug-and-Play Adoption) and Epic 2 (Workflow M
 
 ## Files Modified
 
-- `docs/project-management/kanban/epics/Epic-2.md`
-- `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- `docs/project-management/kanban/epics/epic-02.md`
+- `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`
 - `src/fynd_deals/version.py` (version bumped to 0.2.4.9+1)
 
 ---

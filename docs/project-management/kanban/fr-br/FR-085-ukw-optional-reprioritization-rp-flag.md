@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Status:** IMPLEMENTED  
 **Version Anchor:** v0.2.16.6+1
 
-**Implementing Task:** [E02:S16:T06](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
+**Implementing Task:** [E02:S16:T06](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
 **Historical implementing task:** E06:S07:T116 (legacy task doc removed after re-housing publication)
 
 ---

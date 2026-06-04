@@ -101,8 +101,8 @@ This release fixes BR-003 by adding support for `update/*`, `maintenance/*`, and
 
 ## References
 
-- Epic 2: `docs/project-management/kanban/epics/Epic-2/Epic-2.md`
-- Story 1: `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`
+- Epic 2: `docs/project-management/kanban/epics/epic-02/epic-02.md`
+- Story 1: `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
 - BR-003: `docs/project-management/kanban/fr-br/BR-003-rw-branch-validation-update-branches.md`
 - Workflow Management Package: `packages/frameworks/workflow mgt/README.md`
 

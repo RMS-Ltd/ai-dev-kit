@@ -112,8 +112,8 @@ This task completes Story 2: Package & Repo Architecture. All package READMEs no
 - `packages/frameworks/workflow mgt/README.md` (modularity section enhanced)
 - `packages/frameworks/numbering & versioning/README.md` (modularity section added)
 - `packages/frameworks/kanban/README.md` (modularity section added)
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture.md` (task status updated)
-- `docs/project-management/kanban/epics/Epic-1.md` (status update)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture.md` (task status updated)
+- `docs/project-management/kanban/epics/epic-01.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.1.2.5+1)
 
 ---

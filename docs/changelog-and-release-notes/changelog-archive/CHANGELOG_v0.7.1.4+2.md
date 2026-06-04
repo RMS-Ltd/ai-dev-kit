@@ -46,8 +46,8 @@ Story E7:S01 (Codebase Maintenance Tasks) marked as COMPLETE. All non-perpetual 
 
 ## Files Changed
 
-- `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md` (updated - Story marked COMPLETE)
-- `docs/project-management/kanban/epics/Epic-7/Epic-7.md` (updated - Story 1 marked COMPLETE in checklist and detailed section)
+- `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md` (updated - Story marked COMPLETE)
+- `docs/project-management/kanban/epics/epic-07/epic-07.md` (updated - Story 1 marked COMPLETE in checklist and detailed section)
 - `docs/project-management/kanban/kanban-board.md` (updated - Story 1 marked COMPLETE)
 
 ---
@@ -57,8 +57,8 @@ Story E7:S01 (Codebase Maintenance Tasks) marked as COMPLETE. All non-perpetual 
 - **Maintenance Task Prioritization Framework:** `docs/architecture/standards-and-adrs/maintenance-task-prioritization-framework.md`
 - **Maintenance Workflow Processes:** `docs/architecture/standards-and-adrs/maintenance-workflow-processes.md`
 - **Maintenance Kanban Integration:** `docs/architecture/standards-and-adrs/maintenance-kanban-integration.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 1:** `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 1:** `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
 
 ---
 

@@ -26,4 +26,4 @@ E2:S16:T03: Doc-init validator update to allow required version file changes dur
 ## Related
 
 - **Validator:** `packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py`
-- **Perpetual Task:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- **Perpetual Task:** [T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)

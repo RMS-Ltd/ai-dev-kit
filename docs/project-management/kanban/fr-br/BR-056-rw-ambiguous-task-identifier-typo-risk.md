@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Severity:** MEDIUM (wrong attribution, requires manual rollback)
 **Status:** VERIFIED_FIXED
 
-**Implementing Task:** [E06:S06:T56](../epics/Epic-6/Story-006-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md)  
+**Implementing Task:** [E06:S06:T56](../epics/epic-06/story-06-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md)  
 **Historical registry:** E2:S01 intent guard
 **Created:** 2026-03-18
 **Classification:** Bug + UX gap

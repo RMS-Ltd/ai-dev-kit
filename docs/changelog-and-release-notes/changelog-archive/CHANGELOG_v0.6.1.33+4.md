@@ -41,7 +41,7 @@ This release enhances the sorting utility script for E6:S01:T33 (UKW Board Disor
    - Implemented epic content reconstruction with sorted stories
    - Stories are now properly sorted and inserted back into the Stories section
 
-2. `docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md`
+2. `docs/project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md`
    - Updated acceptance criteria (Criterion 2 marked complete)
    - Enhanced Phase 2 section with story sorting details
    - Updated remaining work section
@@ -101,9 +101,9 @@ python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_board.py" --
 ## Related Issues
 
 - **Bug Report:** [BR-033: UKW Board Disorganization](../../../project-management/kanban/fr-br/BR-033-ukw-board-disorganization.md)
-- **Task:** [E6:S01:T33: UKW Board Disorganization](../../../project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)
-- **Story:** [E6:S01: BR Repo](../../../project-management/kanban/epics/Epic-6/Story-001-br-repo.md)
-- **Epic:** [Epic 6: Framework Management and Maintenance](../../../project-management/kanban/epics/Epic-6/Epic-6.md)
+- **Task:** [E6:S01:T33: UKW Board Disorganization](../../../project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md)
+- **Story:** [E6:S01: BR Repo](../../../project-management/kanban/epics/epic-06/story-01-br-repo.md)
+- **Epic:** [Epic 6: Framework Management and Maintenance](../../../project-management/kanban/epics/epic-06/epic-06.md)
 
 ---
 

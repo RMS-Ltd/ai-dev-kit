@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E06:S08:T01](../epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md)
+**Implementing Task:** [E06:S08:T01](../epics/epic-06/story-08-ai-dev-kit-cli-tool.md)
 **GitHub Issue:** [TBD]  
 **Version:** v0.6.7.13+1
 
@@ -286,8 +286,8 @@ ai-dev-kit list --versions
 - Version: v0.6.7.13+1 (T13: Testing, validation, and PyPI packaging complete - Story E6:S07 COMPLETE)
 
 **Kanban Links:**
-- Epic: [`epics/Epic-6/Epic-6.md`](../epics/Epic-6/Epic-6.md)
-- Story: [`Story-007-adk-implementation-analysis-and-package-management.md`](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md)
+- Epic: [`epics/epic-06/epic-06.md`](../epics/epic-06/epic-06.md)
+- Story: [`story-07-adk-implementation-analysis-and-package-management.md`](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
 - Tasks: E06:S07:T00-T13 (14 tasks covering complete CLI tool implementation)
 
 ---
@@ -316,8 +316,8 @@ ai-dev-kit list --versions
 
 ## References
 
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 2:** `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 2:** `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
 - **Task 4:** E06:S02:T04 (Build framework update CLI tool)
 - **Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
 - **Design:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md`

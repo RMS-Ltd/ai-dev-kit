@@ -14,11 +14,11 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E07:S05:T02](../epics/Epic-7/Story-005-migration-uxr-research.md)
-**Repository Task:** [E07:S00:T02](../epics/Epic-7/Story-000-uxr-repo/T02-uxr-002-repository-anchor.md)
+**Implementing Task:** [E07:S05:T02](../epics/epic-07/story-05-migration-uxr-research.md)
+**Repository Task:** [E07:S00:T02](../epics/epic-07/story-00-uxr-repo/T02-uxr-002-repository-anchor.md)
 **GitHub Issue:** [#6](https://github.com/RMS-Ltd/ai-dev-kit/issues/6)  
-**Repository Task:** [E07:S00:T02](../epics/Epic-7/Story-000-uxr-repo/T02-uxr-002-repository-anchor.md)  
-**Implementation (synthesis):** [E07:S05:T02](../epics/Epic-7/Story-005-migration-uxr-research.md) — see Story 5 **T02**
+**Repository Task:** [E07:S00:T02](../epics/epic-07/story-00-uxr-repo/T02-uxr-002-repository-anchor.md)  
+**Implementation (synthesis):** [E07:S05:T02](../epics/epic-07/story-05-migration-uxr-research.md) — see Story 5 **T02**
 
 ---
 
@@ -269,10 +269,10 @@ Comprehensive User Acceptance Testing (UAT) of ai-dev-kit migration utilities (v
 - Version: `v0.7.0.2+1` (task filed 2026-03-31)
 
 **Kanban Links:**
-- Epic: [`Epic-7.md`](../epics/Epic-7/Epic-7.md)
-- Story (registry): [`Story-000-uxr-repo.md`](../epics/Epic-7/Story-000-uxr-repo.md)
-- Task: [`T02-uxr-002-repository-anchor.md`](../epics/Epic-7/Story-000-uxr-repo/T02-uxr-002-repository-anchor.md)
-- Synthesis (historical): [`Story-005-migration-uxr-research.md`](../epics/Epic-7/Story-005-migration-uxr-research.md) (**E07:S05:T02**)
+- Epic: [`epic-07.md`](../epics/epic-07/epic-07.md)
+- Story (registry): [`story-00-uxr-repo.md`](../epics/epic-07/story-00-uxr-repo.md)
+- Task: [`T02-uxr-002-repository-anchor.md`](../epics/epic-07/story-00-uxr-repo/T02-uxr-002-repository-anchor.md)
+- Synthesis (historical): [`story-05-migration-uxr-research.md`](../epics/epic-07/story-05-migration-uxr-research.md) (**E07:S05:T02**)
 
 ---
 

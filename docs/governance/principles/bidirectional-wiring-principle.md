@@ -106,7 +106,7 @@ BR/FR → Task (one-way only)
 ## Examples
 
 - **BR-002:** [Changelog Validator Ordering Bug](../fr-br/BR-002-changelog-validator-ordering-bug.md) - Example of this pattern
-- **Task:** [E2:S01:T06](../../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) - Implements this pattern
+- **Task:** [E2:S01:T06](../../epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) - Implements this pattern
 ```
 
 ---
@@ -200,12 +200,12 @@ Use relative paths from the document location:
 
 ```markdown
 - From `docs/project-management/kanban/fr-br/BR-002.md`:
-  - To Epic: `../epics/Epic-2/Epic-2.md`
-  - To Story: `../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`
-  - To Task: `../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug`
+  - To Epic: `../epics/epic-02/epic-02.md`
+  - To Story: `../epics/epic-02/story-01-rw-agent-execution-and-docs.md`
+  - To Task: `../epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug`
 
 
-- From `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`:
+- From `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`:
   - To BR: `../../fr-br/BR-002-changelog-validator-ordering-bug.md`
   - To Documentation: `../../fr-br/REOPENING_BR_AND_TASKS_GUIDE.md`
 
@@ -222,16 +222,16 @@ Use relative paths from the document location:
 ## Intake Decision
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
-- Task: [E2:S01:T06 - Fix changelog validator ordering bug](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)
+- Task: [E2:S01:T06 - Fix changelog validator ordering bug](../epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
 
 ## References
 
 - [REOPENING_BR_AND_TASKS_GUIDE.md](REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks (this BR is an example)
 ```
 
-**Task T06 (`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`):**
+**Task T06 (`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`):**
 ```markdown
 ### E2:S01:T06 – Fix changelog validator ordering bug 🔄 REOPENED
 
@@ -251,12 +251,12 @@ See [`BR-002-changelog-validator-ordering-bug.md`](BR-002-changelog-validator-or
 
 ## Example: Task Re-opening
 
-See [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) Task T06 for an example
+See [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md) Task T06 for an example
 
 ## Related Documentation
 
 - [`BR-002-changelog-validator-ordering-bug.md`](BR-002-changelog-validator-ordering-bug.md) - Example reopened BR
-- [`docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md) - Example reopened task
+- [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md) - Example reopened task
 ```
 
 ---

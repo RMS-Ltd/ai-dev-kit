@@ -45,8 +45,8 @@ This release includes enhancements to the canonical epics documentation in the K
 - Enhanced "Adding New Canonical Epics" section with detailed process and example
 
 **New Example Documents:**
-- Created `Epic-5-FR-Implementation-Example.md` - Complete example Epic 5 document
-- Created `Epic-6-BR-Implementation-Example.md` - Complete example Epic 6 document
+- Created `epic-05-FR-Implementation-Example.md` - Complete example Epic 5 document
+- Created `epic-06-BR-Implementation-Example.md` - Complete example Epic 6 document
 - Both examples demonstrate canonical epic structure with 5 typical stories each
 
 **New Template:**
@@ -76,10 +76,10 @@ This release includes enhancements to the canonical epics documentation in the K
 
 ### Modified Files
 - `src/fynd_deals/version.py` - Bumped BUILD from +1 to +2
-- `docs/project-management/kanban/epics/Epic-2/Epic-2.md` - Updated with Task 6 status
-- `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md` - Updated with Task 6 status
-- `docs/project-management/kanban/epics/Epic-4/Epic-4.md` - Updated with Story 2 Task 6 and Story 5 enhancements
-- `docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md` - Added Task 6
+- `docs/project-management/kanban/epics/epic-02/epic-02.md` - Updated with Task 6 status
+- `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md` - Updated with Task 6 status
+- `docs/project-management/kanban/epics/epic-04/epic-04.md` - Updated with Story 2 Task 6 and Story 5 enhancements
+- `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md` - Added Task 6
 - `packages/frameworks/kanban/README.md` - Added references to new examples and templates
 - `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` - Enhanced with detailed descriptions and guidance
 - `CHANGELOG.md` - Updated with new release entry
@@ -87,8 +87,8 @@ This release includes enhancements to the canonical epics documentation in the K
 ### New Files
 - `docs/project-management/kanban/fr-br/FR-004-github-submission-for-fr-br-uxr.md` - Feature Request for GitHub submission
 - `docs/project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md` - Bug Report for changelog validator
-- `packages/frameworks/kanban/examples/Epic-5-FR-Implementation-Example.md` - Example Epic 5 document
-- `packages/frameworks/kanban/examples/Epic-6-BR-Implementation-Example.md` - Example Epic 6 document
+- `packages/frameworks/kanban/examples/epic-05-FR-Implementation-Example.md` - Example Epic 5 document
+- `packages/frameworks/kanban/examples/epic-06-BR-Implementation-Example.md` - Example Epic 6 document
 - `packages/frameworks/kanban/templates/CANONICAL_STORIES_FR_BR.md` - Canonical stories guide for FR/BR Implementation
 
 ---

@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** COMPLETE (implementation **E07:S01:T09** **v0.7.1.9+5** — pending maintainer verification)  
 **GitHub Issue:** _TBD_  
-**Implementing Task:** [E07:S01:T09](../epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)  
-**Historical registry anchor (do not use for RW):** [E07:S00:T05](../epics/Epic-7/Story-000-uxr-repo/T05-uxr-005-repository-anchor.md) — detasked [BR-076](./BR-076-e7-s00-must-not-host-concrete-tasks.md)
+**Implementing Task:** [E07:S01:T09](../epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)  
+**Historical registry anchor (do not use for RW):** [E07:S00:T05](../epics/epic-07/story-00-uxr-repo/T05-uxr-005-repository-anchor.md) — detasked [BR-076](./BR-076-e7-s00-must-not-host-concrete-tasks.md)
 
 ---
 
@@ -125,10 +125,10 @@ Readers reported poor readability on Kanban boards because multi-line task entri
 
 **Kanban Links:**
 
-- Epic: [`Epic-7.md`](../epics/Epic-7/Epic-7.md)  
-- Story (registry): [`Story-000-uxr-repo.md`](../epics/Epic-7/Story-000-uxr-repo.md)  
-- Task (registry): [`T05-uxr-005-repository-anchor.md`](../epics/Epic-7/Story-000-uxr-repo/T05-uxr-005-repository-anchor.md)  
-- Task (implementation): [`E07S01T09-kanban-template-governance.md`](../epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
+- Epic: [`epic-07.md`](../epics/epic-07/epic-07.md)  
+- Story (registry): [`story-00-uxr-repo.md`](../epics/epic-07/story-00-uxr-repo.md)  
+- Task (registry): [`T05-uxr-005-repository-anchor.md`](../epics/epic-07/story-00-uxr-repo/T05-uxr-005-repository-anchor.md)  
+- Task (implementation): [`E07S01T09-kanban-template-governance.md`](../epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
 
 ---
 

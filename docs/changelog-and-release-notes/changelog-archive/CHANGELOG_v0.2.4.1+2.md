@@ -63,4 +63,4 @@
 - **Workflow Hardening Guide:** `docs/architecture/standards-and-adrs/workflow-hardening-guide.md`
 - **RW Execution Guide:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Previous Release (v0.2.4.1+1):** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.4.1+1.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`

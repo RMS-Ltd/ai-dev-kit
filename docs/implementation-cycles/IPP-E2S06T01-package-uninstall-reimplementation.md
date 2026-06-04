@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S06:T01 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`Story-006-package-uninstall-and-recovery.md`](../../project-management/kanban/epics/Epic-2/Story-006-package-uninstall-and-recovery.md) **(E2:S06:T01)**  
+**Host Task:** [`story-06-package-uninstall-and-recovery.md`](../../project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md) **(E2:S06:T01)**  
 **Planning for:** [FR-008](../../project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md)  
 **Status:** Approved
 
@@ -121,7 +121,7 @@ The specification formalizes the requirements baseline by mapping each AC to con
 
 | Step | Action | Deliverable |
 | ---- | ------ | ----------- |
-| **1** | **[MANDATORY] Transition task `E2:S06:T01` status `TODO → IN PROGRESS`** in `Story-006-package-uninstall-and-recovery.md` and `kboard.md`. Update `Last updated` date. | Task doc and board `Status` = `IN PROGRESS` |
+| **1** | **[MANDATORY] Transition task `E2:S06:T01` status `TODO → IN PROGRESS`** in `story-06-package-uninstall-and-recovery.md` and `kboard.md`. Update `Last updated` date. | Task doc and board `Status` = `IN PROGRESS` |
 | **2** | Fix `cli/commands/remove.py` backend selection bug. Change `select_backend(preferred_backend=..., project_root=..., default_backend_from_config=...)` to `select_backend(preferred=backend_name, project_root=project_root, auto_detect=True)`. Then instantiate backend: `backend_class = get_backend(selected_backend_name); backend = backend_class(); success = backend.remove(...)` | `remove.py` compiles and matches `install.py` pattern |
 | **3** | Add backup creation to `remove.py` `_handle_removal()`. Before calling `backend.remove()`, create a timestamped backup directory under project root, copy framework files and `.ai-dev-kit.yaml` into it. Reuse backup logic from `uninstall_package.py` where possible. | Removal flow creates recoverable backup |
 | **4** | Implement `_check_dependencies()` in `remove.py`. Scan `.ai-dev-kit.yaml` `frameworks` entries for any `depends_on` list containing the target framework name. If found and not `--force`, warn and require confirmation. | Dependency validation no longer stubbed |
@@ -131,7 +131,7 @@ The specification formalizes the requirements baseline by mapping each AC to con
 | **8** | Add `tests/test_uninstall_package.py` covering T10–T12 (standalone script dry-run, backup, verification). Mock filesystem and subprocess. | Test file with passing tests |
 | **9** | Verify standalone `uninstall_package.py` runs end-to-end in a temp project directory with a dummy framework. Confirm `--dry-run`, `--force`, and normal uninstall paths all behave correctly. | Manual verification notes recorded |
 | **10** | Check FR-008 AC-1..AC-5 checkboxes in `FR-008-package-uninstall-capabilities.md` and update NFR-1..NFR-3 checkboxes as satisfied. | FR-008 reflects verified completion |
-| **11** | Update `Story-006-package-uninstall-and-recovery.md`: ensure T01 status accurately reflects implementation state, link to plan doc under Input and References. | Bidirectional wiring complete |
+| **11** | Update `story-06-package-uninstall-and-recovery.md`: ensure T01 status accurately reflects implementation state, link to plan doc under Input and References. | Bidirectional wiring complete |
 | **12** | Update `kboard.md`: move E2:S06:T01 to appropriate column (In Progress if ongoing, Done if complete) with updated timestamp. | Board state accurate |
 | **N** | **[MANDATORY] Reconcile task `E2:S06:T01` status** to actual implementation state: if all acceptance criteria are satisfied with evidence (tests pass, checkboxes checked) → transition to `COMPLETE` and add forensic marker `✅ COMPLETE (v{version})`; if implementation is ongoing → confirm status remains `IN PROGRESS`; if blocked → transition to `BLOCKED` with documented reason. Update `Last updated`. | Task doc status reflects actual state |
 
@@ -143,7 +143,7 @@ The specification formalizes the requirements baseline by mapping each AC to con
 - **Create:** `tests/cli/test_remove_command.py` — CLI remove command tests
 - **Create:** `tests/test_uninstall_package.py` — standalone script tests
 - **Modify:** `docs/project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md` — check AC-1..AC-5, NFR-1..NFR-3 boxes
-- **Modify:** `docs/project-management/kanban/epics/Epic-2/Story-006-package-uninstall-and-recovery.md` — update T01 status, add plan links
+- **Modify:** `docs/project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md` — update T01 status, add plan links
 - **Modify:** `docs/project-management/kanban/kboard.md` — update T01 row status
 
 ### 4.2 Dependency order
@@ -172,7 +172,7 @@ The specification formalizes the requirements baseline by mapping each AC to con
 
 ## References
 
-- **Host Task:** `docs/project-management/kanban/epics/Epic-2/Story-006-package-uninstall-and-recovery.md`
+- **Host Task:** `docs/project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md`
 - **FR-008:** `docs/project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md`
 - **CLI main:** `cli/main.py`
 - **CLI remove (fixed):** `cli/commands/remove.py`

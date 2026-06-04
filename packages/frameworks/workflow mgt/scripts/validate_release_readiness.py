@@ -131,14 +131,14 @@ SUPERSEDED_FBUS = (
     "FR-084-ipp-post-run-governance-reconciliation-ownership.md",
 )
 SUPERSEDED_TASKS = (
-    "docs/project-management/kanban/epics/Epic-2/"
-    "Story-015-ipw-governance-and-publication-contract/"
+    "docs/project-management/kanban/epics/epic-02/"
+    "story-15-ipw-governance-and-publication-contract/"
     "T02-ipp-post-run-governance-reconciliation-ownership-fr084.md",
-    "docs/project-management/kanban/epics/Epic-2/"
-    "Story-015-ipw-governance-and-publication-contract/"
+    "docs/project-management/kanban/epics/epic-02/"
+    "story-15-ipw-governance-and-publication-contract/"
     "T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md",
-    "docs/project-management/kanban/epics/Epic-2/"
-    "Story-015-ipw-governance-and-publication-contract/"
+    "docs/project-management/kanban/epics/epic-02/"
+    "story-15-ipw-governance-and-publication-contract/"
     "T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md",
 )
 GATED_FBUS = (

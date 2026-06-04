@@ -19,7 +19,7 @@
 
 ### Verification (AC6)
 
-- **`scripts/fr099_install_smoke_test.sh`:** Public clone smoke (no `book-proj` / `Epic-24` dirs).
+- **`scripts/fr099_install_smoke_test.sh`:** Public clone smoke (no `book-proj` / `epic-24` dirs).
 - **`scripts/fr099_sync_public_from_private.sh`:** Falls back to Phase 3 bootstrap replay when histories diverge.
 - **`docs/maintenance/fr099-phase4-rewire-and-verify.md`:** Phase 4 runbook.
 

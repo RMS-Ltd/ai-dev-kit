@@ -34,5 +34,5 @@ Change implemented: **FR-100** hybrid ADR decision gate for IPW — canonical po
 ## References
 
 - [FR-100](../../project-management/kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
-- [E2:S16:T12](../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md)
+- [E2:S16:T12](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md)
 - [IPP](../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)

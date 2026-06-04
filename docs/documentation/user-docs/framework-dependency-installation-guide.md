@@ -37,7 +37,7 @@ For policy and boundaries:
 - [ADR-003 – Greenfield vs Brownfield adoption](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [FR-081 – Brownfield modular adopter integration](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 - [IPP-E6S09T02 planning package](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
-- [FR-080 implementing task (E6:S09:T01)](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
+- [FR-080 implementing task (E6:S09:T01)](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
 - [IPW-E6S09T01 planning package](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 For the current canonical greenfield sequence (default RW-first with explicit override checkpoint), see:

@@ -78,19 +78,19 @@ This epic encompasses integration and third-party services for the {PROJECT_NAME
 
 **Brief Summary:** third-party service integration for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-third-party-service-integration.md`](Story-001-third-party-service-integration.md)
+**Story Document:** [`story-01-third-party-service-integration.md`](story-01-third-party-service-integration.md)
 
 ### Story 2: Webhook Implementation
 
 **Brief Summary:** webhook implementation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-webhook-implementation.md`](Story-002-webhook-implementation.md)
+**Story Document:** [`story-02-webhook-implementation.md`](story-02-webhook-implementation.md)
 
 ### Story 3: Payment Processing (if applicable)
 
 **Brief Summary:** payment processing (if applicable) for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-payment-processing-if-applicable.md`](Story-003-payment-processing-if-applicable.md)
+**Story Document:** [`story-03-payment-processing-if-applicable.md`](story-03-payment-processing-if-applicable.md)
 
 ---
 

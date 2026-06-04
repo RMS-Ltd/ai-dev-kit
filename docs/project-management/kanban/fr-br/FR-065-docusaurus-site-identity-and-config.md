@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (via agent)  
 **Priority:** HIGH  
 **Status:** IMPLEMENTED (v0.5.9.1+2 / E05:S09:T01)  
-**Assigned Task:** E05:S09:T01 — [`T01-docusaurus-site-identity-fr-065.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T01-docusaurus-site-identity-fr-065.md)
+**Assigned Task:** E05:S09:T01 — [`T01-docusaurus-site-identity-fr-065.md`](../epics/epic-05/story-09-docusaurus-documentation-portal/T01-docusaurus-site-identity-fr-065.md)
 
 ---
 

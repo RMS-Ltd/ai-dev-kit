@@ -45,8 +45,8 @@ Enumerated all supported installation paths and installer modes for the Kanban p
 
 ## Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/Story-017-kanban-package-installation-evaluation.md`
-- `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
+- `docs/project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation.md`
+- `docs/project-management/kanban/epics/epic-04/epic-04.md`
 - `docs/project-management/kanban/kanban-board.md`
 - `src/fynd_deals/version.py`
 

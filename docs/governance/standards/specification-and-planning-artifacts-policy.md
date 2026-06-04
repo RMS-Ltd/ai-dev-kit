@@ -101,7 +101,7 @@ policy_salience:
 ## 6. References
 
 - **IPP vs ICW packaging (ai-dev-kit):** [dev-kit-ipw-ipp-vs-icw-artifacts.md](dev-kit-ipw-ipp-vs-icw-artifacts.md)
-- **Intake / traceability:** [FR-075](../../project-management/kanban/fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md); implementing task [E5:S01:T75](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md)
+- **Intake / traceability:** [FR-075](../../project-management/kanban/fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md); implementing task [E5:S01:T75](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md)
 - Kanban task template: `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - ICW workflow config: `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
 - ICW responsibilities (durable artifacts): `packages/frameworks/workflow mgt/workflows/implementation-cycle-workflow/README.md` (section **Durable planning artifacts**)

@@ -43,8 +43,8 @@ Implements the fix for BR-071: RW trigger routing not executing from chat sessio
 | Created | `CLAUDE.md` |
 | Created | `.claude/commands/rw.md` |
 | Updated | `docs/project-management/kanban/fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md` |
-| Updated | `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md` |
-| Updated | `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md` |
+| Updated | `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md` |
+| Updated | `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md` |
 | Updated | `docs/project-management/kanban/kboard.md` |
 | Updated | `src/fynd_deals/version.py` |
 
@@ -56,11 +56,11 @@ Implements the fix for BR-071: RW trigger routing not executing from chat sessio
 - [x] AC2: Fix applied — `RW E#:S##:T## --art` and `/rw E#:S##:T## --art` both route to RW engine in supported Claude Code sessions
 - [x] AC3: Blocked-session explicit error (`RW BLOCKED: tool execution is unavailable`) replaces silent no-op
 - [x] AC4: Environment check in `.claude/commands/rw.md` provides regression/health-check coverage for trigger availability
-- [x] AC5: BR-071 RESOLVED, E2:S01:T19 COMPLETE, Story-001 checklist wired, kboard.md updated
+- [x] AC5: BR-071 RESOLVED, E2:S01:T19 COMPLETE, story-001 checklist wired, kboard.md updated
 
 ---
 
 ## Related
 
 - [BR-071](../../../docs/project-management/kanban/fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
-- [E2:S01:T19](../../../docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md)
+- [E2:S01:T19](../../../docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md)

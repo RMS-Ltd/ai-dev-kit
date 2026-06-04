@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Code:** UXR-015  
 
-**Implementing Task:** [E02:S16:T15](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
+**Implementing Task:** [E02:S16:T15](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
 
 **Implementation:** [`docs/guides/workflow-initiation-cheatsheet.md`](../../guides/workflow-initiation-cheatsheet.md) · [IPP-E02S16T15](../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md)
 
@@ -257,9 +257,9 @@ Package versions changed?      → PVW (or automatic at RW Step 2.5)
 
 **Kanban links:**
 
-- Epic: [`Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`Story-016-perpetual-ongoing-workflow-operations.md`](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md)
-- Task: [`T15-workflow-initiation-cheatsheet-uxr015.md`](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
+- Epic: [`epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`story-16-perpetual-ongoing-workflow-operations.md`](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md)
+- Task: [`T15-workflow-initiation-cheatsheet-uxr015.md`](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
 
 ---
 

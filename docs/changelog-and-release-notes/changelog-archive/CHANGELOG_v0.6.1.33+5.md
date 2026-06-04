@@ -71,10 +71,10 @@ Task E6:S01:T33 (UKW Board Disorganization) is now **COMPLETE**. All 7 acceptanc
 **Document Checklist Sorting:**
 ```bash
 # Sort task checklist in story document
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "docs/project-management/kanban/epics/Epic-6/Story-001-br-repo.md"
+python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "docs/project-management/kanban/epics/epic-06/story-01-br-repo.md"
 
 # Sort story checklist in epic document
-python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "docs/project-management/kanban/epics/Epic-6/Epic-6.md"
+python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "docs/project-management/kanban/epics/epic-06/epic-06.md"
 
 # Preview sorting without making changes
 python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_checklists.py" --document-path "{path}" --dry-run
@@ -93,5 +93,5 @@ python "packages/frameworks/workflow mgt/scripts/kanban/sort_kanban_document_che
 ## Related
 
 - **Bug Report:** [BR-033](../../project-management/kanban/fr-br/BR-033-ukw-board-disorganization.md)
-- **Task Document:** [E6:S01:T33](../../project-management/kanban/epics/Epic-6/Story-001-br-repo/T33-ukw-board-disorganization.md)
+- **Task Document:** [E6:S01:T33](../../project-management/kanban/epics/epic-06/story-01-br-repo/T33-ukw-board-disorganization.md)
 - **Previous Release:** [v0.6.1.33+4](CHANGELOG_v0.6.1.33+4.md)

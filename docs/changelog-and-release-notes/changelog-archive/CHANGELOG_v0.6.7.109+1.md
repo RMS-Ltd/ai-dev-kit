@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-03-31 12:36:32 UTC  
 **Epic:** 6 | **Story:** 7 | **Task:** 109  
-**Task doc:** [T109-br059-ukw-moscow-full-story-task-coverage.md](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md)  
+**Task doc:** [T109-br059-ukw-moscow-full-story-task-coverage.md](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md)  
 **Mode:** RW **-k** (kanban init for **BR-059** / UKW MoSCOW coverage task)
 
 ## Summary

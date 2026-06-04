@@ -228,9 +228,9 @@ This document defines the **integration of code quality metrics with the Kanban 
 - **Code Quality Monitoring Dashboards:** `docs/architecture/standards-and-adrs/code-quality-monitoring-dashboards.md`
 - **Maintenance Kanban Integration:** `docs/architecture/standards-and-adrs/maintenance-kanban-integration.md`
 - **Code Review Kanban Integration:** `docs/architecture/standards-and-adrs/code-review-kanban-integration.md`
-- **Epic 4 (Kanban Framework):** `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 3:** `docs/project-management/kanban/epics/Epic-7/Story-003-code-quality-metrics-and-monitoring.md`
+- **Epic 4 (Kanban Framework):** `docs/project-management/kanban/epics/epic-04/epic-04.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 3:** `docs/project-management/kanban/epics/epic-07/story-03-code-quality-metrics-and-monitoring.md`
 
 ---
 

@@ -90,7 +90,7 @@ housekeeping_policy: archive
 
 ## Steps to Renumber Story IDs
 
-1. Update Epic-2.md...
+1. Update epic-02.md...
 ```
 
 **Rationale:** Implementation planning document, may be useful historically, but not actively maintained. Archive after 90 days.
@@ -114,7 +114,7 @@ housekeeping_policy: delete
 
 ## Steps to Renumber Story IDs
 
-1. Update Epic-2.md...
+1. Update epic-02.md...
 ```
 
 **Rationale:** One-time operational document, easily regenerated, low unique value. Delete after 14 days.

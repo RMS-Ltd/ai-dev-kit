@@ -40,5 +40,5 @@ UKW comprehensive kanban synchronization release under perpetual UKW anchor **E2
 
 ## References
 
-- Perpetual UKW task: `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
+- Perpetual UKW task: `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
 - Prior epic/6 delivery: E6:S09:T05 (`v0.6.9.5+3` / SemVer `v0.4.802+3`)

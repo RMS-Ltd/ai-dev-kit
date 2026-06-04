@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E02:S11:T00](../epics/Epic-2/Story-011-intake-workflow-automation.md)
+**Implementing Task:** [E02:S11:T00](../epics/epic-02/story-11-intake-workflow-automation.md)
 
 ---
 
@@ -279,8 +279,8 @@ This feature is needed:
 - Version: `v0.2.11.0+0` (Story creation)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-2/Epic-2.md`](../epics/Epic-2/Epic-2.md)
-- Story: [`docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation.md`](../epics/Epic-2/Story-011-intake-workflow-automation.md)
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
+- Story: [`docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md`](../epics/epic-02/story-11-intake-workflow-automation.md)
 - Task: See Story 11 task checklist
 
 ---
@@ -324,7 +324,7 @@ This feature is needed:
 
 ## References
 
-- **E2:S11:** `docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation.md` (this story)
+- **E2:S11:** `docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md` (this story)
 - **E4:S10:** Agentic Kanban Task Creation from FR/BR (task creation integration)
 - **E2:S07:** Trigger-Aware Release Workflow (trigger integration)
 - **E4:S08:** Intelligent Epic Matching (semantic matching for decision flow)
@@ -341,5 +341,5 @@ This feature request is part of the Kanban Framework. See `packages/frameworks/k
 
 ## Related Tasks
 
-Legacy numbered links were removed (paths no longer exist on disk). Intake automation work lives under **E2:S11** — see [`Story-011-intake-workflow-automation.md`](../epics/Epic-2/Story-011-intake-workflow-automation.md) and its task documents.
+Legacy numbered links were removed (paths no longer exist on disk). Intake automation work lives under **E2:S11** — see [`story-11-intake-workflow-automation.md`](../epics/epic-02/story-11-intake-workflow-automation.md) and its task documents.
 

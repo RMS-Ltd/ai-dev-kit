@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E2:S01:T17  
 **Related FR:** FR-077  
-**Host Task:** [T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md](../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)  
+**Host Task:** [T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)  
 **Created:** 2026-04-09
 
 ---

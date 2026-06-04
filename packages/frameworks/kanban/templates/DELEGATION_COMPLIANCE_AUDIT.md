@@ -30,7 +30,7 @@ housekeeping_policy: keep
 
 ### Epic 4: Kanban Framework
 
-**File:** `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
+**File:** `docs/project-management/kanban/epics/epic-04/epic-04.md`
 
 **Violations Found:**
 - ❌ **Lines 94-112:** Detailed Story 1 section with Status, Priority, Goal, Tasks list
@@ -61,7 +61,7 @@ Replace with brief summary and link:
 
 **Brief Summary:** Fully align the dev-kit Kanban board, stories, and governance policy with the Kanban framework package.
 
-**Story Document:** [`Story-001-dev-kit-kanban-implementation.md`](Story-001-dev-kit-kanban-implementation.md)
+**Story Document:** [`story-01-dev-kit-kanban-implementation.md`](story-01-dev-kit-kanban-implementation.md)
 ```
 
 **Priority:** HIGH  
@@ -71,7 +71,7 @@ Replace with brief summary and link:
 
 ### Epic 2: Workflow Management Framework
 
-**File:** `docs/project-management/kanban/epics/Epic-2/Epic-2.md`
+**File:** `docs/project-management/kanban/epics/epic-02/epic-02.md`
 
 **Violations Found:**
 - ❌ **Lines 90-109:** Detailed Story 1 section with Status, Priority, Goal, Tasks list
@@ -100,7 +100,7 @@ Replace with brief summary and link:
 
 **Brief Summary:** Make RW agent execution documentation fully portable, clearly distinguishing dev-kit behaviour from external examples.
 
-**Story Document:** [`Story-001-rw-agent-execution-and-docs.md`](Story-001-rw-agent-execution-and-docs.md)
+**Story Document:** [`story-01-rw-agent-execution-and-docs.md`](story-01-rw-agent-execution-and-docs.md)
 ```
 
 **Priority:** HIGH  
@@ -149,8 +149,8 @@ Replace with brief summary and link:
 ## Migration Priority
 
 ### High Priority
-1. **Epic-4.md** - Multiple detailed Story sections (3+ violations)
-2. **Epic-2.md** - Detailed Story sections (1+ violations)
+1. **epic-04.md** - Multiple detailed Story sections (3+ violations)
+2. **epic-02.md** - Detailed Story sections (1+ violations)
 
 ### Medium Priority
 3. **Other Epic documents** - Review for similar violations

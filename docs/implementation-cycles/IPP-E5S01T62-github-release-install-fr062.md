@@ -6,7 +6,7 @@ housekeeping_policy: keep
 
 # E5:S01:T62 — Planning: FR-062 GitHub release installation (IPP)
 
-**Host Task:** [`T62-github-release-installation-experience.md`](../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T62-github-release-installation-experience.md) **(E5:S01:T62)**  
+**Host Task:** [`T62-github-release-installation-experience.md`](../project-management/kanban/epics/epic-05/story-01-fr-repo/T62-github-release-installation-experience.md) **(E5:S01:T62)**  
 **Planning for:** [FR-062](../project-management/kanban/fr-br/FR-062-github-release-installation-experience.md)  
 **Status:** Published
 

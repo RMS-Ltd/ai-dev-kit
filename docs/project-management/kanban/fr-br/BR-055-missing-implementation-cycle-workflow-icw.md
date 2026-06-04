@@ -15,9 +15,9 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** 🔄 ASSIGNED TO TASK  
 
-**Implementing Task:** [E04:S14:T03](../epics/Epic-4/Story-014-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)
+**Implementing Task:** [E04:S14:T03](../epics/epic-04/story-14-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)
 **GitHub Issue:** #22  
-**Assigned Task:** [E04:S14:T03](../epics/Epic-4/Story-014-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)
+**Assigned Task:** [E04:S14:T03](../epics/epic-04/story-14-kanban-framework-maintenance/T03-add-missing-implementation-cycle-workflow-icw.md)
 
 ---
 

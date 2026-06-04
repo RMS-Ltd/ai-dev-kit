@@ -16,11 +16,11 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** RESOLVED (**v0.4.19.10+2** — E04:S19:T10; docs-only alignment **v0.4.19.10+3**)
 
-**Implementing Task:** [E04:S19:T10](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) (**v0.4.19.10+2**)
+**Implementing Task:** [E04:S19:T10](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) (**v0.4.19.10+2**)
 
 **Fix Version:** v0.4.19.10+2
 
-**Related:** [FR-072](./FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach A / D), [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md) (S00 Abstract Space), [E5:S00 abstract model](../epics/Epic-5/Story-000-fr-repo.md)
+**Related:** [FR-072](./FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach A / D), [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md) (S00 Abstract Space), [E5:S00 abstract model](../epics/epic-05/story-00-fr-repo.md)
 
 ---
 
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 **Story 0 (`S00`) is abstract space** across epics: forensic anchor only (`0.{epic}.0.0+0`), **no concrete tasks**, and **no temporary “registry” housing** that must later be re-homed to a delivery story.
 
-**Epic 7 `E07:S00`** still contains **concrete task documents** (`T01`–`T06` under `Story-000-uxr-repo/`) and drives **split traceability** (e.g. **E07:S00:T05** registry + **E07:S01:T09** implementation for **UXR-005**). That pattern creates **admin overhead**, violates the **E5:S00** precedent, and conflicts with **FR-072 Approach D** (“do not file new intake under repository stories”).
+**Epic 7 `E07:S00`** still contains **concrete task documents** (`T01`–`T06` under `story-00-uxr-repo/`) and drives **split traceability** (e.g. **E07:S00:T05** registry + **E07:S01:T09** implementation for **UXR-005**). That pattern creates **admin overhead**, violates the **E5:S00** precedent, and conflicts with **FR-072 Approach D** (“do not file new intake under repository stories”).
 
 ---
 
@@ -37,7 +37,7 @@ housekeeping_policy: keep
 1. **Semantic violation:** `S00` reads as “abstract space” but **E7:S00** behaves as a **perpetual UXR repository** with a full task checklist and RW version coordinates on `0.7.0.{task}+build`.
 2. **Double housing:** New UXRs are filed as **S00:Txx “anchors”** plus a separate **S01** (or other) **implementing** task — two E:S:T identities, two board rows, and later migration cost.
 3. **Policy drift:** [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md) already states new intake should use **semantic delivery** placement; **E7:S00** task files contradict that for agents and humans.
-4. **Precedent ignored:** [E5:S00](../epics/Epic-5/Story-000-fr-repo.md) was **detasked** (repository work moved to **S01**); **E7** was not brought to the same end state.
+4. **Precedent ignored:** [E5:S00](../epics/epic-05/story-00-fr-repo.md) was **detasked** (repository work moved to **S01**); **E7** was not brought to the same end state.
 
 ---
 
@@ -52,8 +52,8 @@ housekeeping_policy: keep
 
 ## Observed Behavior
 
-- `Story-000-uxr-repo.md` lists **E07:S00:T01–T06** as active/historical registry tasks.
-- **UXR-005:** [E07:S00:T05](../epics/Epic-7/Story-000-uxr-repo/T05-uxr-005-repository-anchor.md) + [E07:S01:T09](../epics/Epic-7/Story-001-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md).
+- `story-00-uxr-repo.md` lists **E07:S00:T01–T06** as active/historical registry tasks.
+- **UXR-005:** [E07:S00:T05](../epics/epic-07/story-00-uxr-repo/T05-uxr-005-repository-anchor.md) + [E07:S01:T09](../epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md).
 - **kboard** / **fbuboard** rows reference **both** registry and implementation tasks for the same UXR.
 - **FR-072** migration (**E04:S19:T08**) is in progress but **E7 S00 detasking** is not explicitly tracked as a closure criterion.
 
@@ -87,7 +87,7 @@ housekeeping_policy: keep
 
 ## Acceptance Criteria
 
-- [x] **AC1:** `Story-000-uxr-repo.md` marked **abstract-only**; no **TODO/IN PROGRESS** tasks remain on S00 checklist (historical rows redirected).
+- [x] **AC1:** `story-00-uxr-repo.md` marked **abstract-only**; no **TODO/IN PROGRESS** tasks remain on S00 checklist (historical rows redirected).
 - [x] **AC2:** Each legacy **E07:S00:T01–T06** has a documented **semantic host** or **historical-only** banner + UXR/FR header redirect (no dual primary implementing tasks).
 - [x] **AC3:** **UXR-005** (and boards) reference **one** implementing task; **E07:S00:T05** is not an active work row.
 - [x] **AC4:** Active intake policy docs state **S00 never hosts new tasks** (all epics); aligns with **FR-072 Approach D**.
@@ -98,6 +98,6 @@ housekeeping_policy: keep
 ## References
 
 - [FR-072 — Uniform repository vs abstract-space kanban rules](./FR-072-uniform-repository-abstract-space-kanban-rules.md)
-- [E04:S19:T08 — FR-072 Approach D migration](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
-- [E04:S19:T10 — E7 S00 detasking](../epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)
+- [E04:S19:T08 — FR-072 Approach D migration](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
+- [E04:S19:T10 — E7 S00 detasking](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)
 - [UXR-005](./UXR-005-kanban-board-formatting-and-governance.md) (exemplar split)

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E4:S13:T07 — Planning: Kanban and FBU state icons for MoSCOW rows (IPW)
 
-**Host Task:** [T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md](../project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) **(E4:S13:T07)**  
+**Host Task:** [T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md](../project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) **(E4:S13:T07)**  
 **Planning for:** [UXR-012](../project-management/kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)  
 **Status:** Approved (implementation executed 2026-05-20)
 
@@ -126,7 +126,7 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 | D5 | `release-workflow-agent-execution.md` | UPDATE — Gate 9 / Step 10 |
 | D6 | `board-stamp-authority.md` | UPDATE — cross-link UXR-012 |
 | D7 | `state-icons.md` (vwmp) | CREATE |
-| D8 | `UXR-012`, T07, Story-013 | UPDATE — AC closure, links |
+| D8 | `UXR-012`, T07, story-013 | UPDATE — AC closure, links |
 
 ---
 

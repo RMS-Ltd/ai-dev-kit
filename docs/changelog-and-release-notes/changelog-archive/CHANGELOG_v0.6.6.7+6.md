@@ -79,9 +79,9 @@ This release marks E6:S06:T07 as COMPLETE and synchronizes all kanban documentat
 ### Files Modified
 
 **Modified Files:**
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (marked COMPLETE)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md` (task checklist and success criteria updated)
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md` (story checklist updated)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T07-implement-framework-hardening-recommendations.md` (marked COMPLETE)
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md` (task checklist and success criteria updated)
+- `docs/project-management/kanban/epics/epic-06/epic-06.md` (story checklist updated)
 - `docs/project-management/kanban/kanban-board.md` (MoSCOW list and Epic 6 section updated)
 - `docs/project-management/kanban/_index.md` (version and date updated)
 

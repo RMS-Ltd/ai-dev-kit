@@ -18,6 +18,11 @@ from typing import Dict, List, Optional, Tuple
 
 from contamination_detector import scan_kanban_tree
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).parent))
+import kanban_paths as kp
+
 
 # Canonical epic range: 1-23
 CANONICAL_EPIC_MIN = 1
@@ -61,19 +66,37 @@ class InstallationValidator:
         is_valid = len(self.errors) == 0
         return is_valid, self.errors, self.warnings
     
+    def _list_epic_dirs(self) -> List[Path]:
+        dirs: List[Path] = []
+        seen = set()
+        for pattern in ("epics/epic-*", "epics/Epic-*"):
+            for epic_dir in self.kanban_path.glob(pattern):
+                if epic_dir.is_dir() and epic_dir.name not in seen:
+                    seen.add(epic_dir.name)
+                    dirs.append(epic_dir)
+        return dirs
+
+    def _epic_num_from_dir(self, name: str) -> int:
+        if name.startswith(kp.EPIC_DIR_PREFIX):
+            return int(name[len(kp.EPIC_DIR_PREFIX) :])
+        return int(name[len(kp.LEGACY_EPIC_DIR_PREFIX) :])
+
+    def _epic_doc_path(self, epic_dir: Path, epic_num: int) -> Path:
+        lowercase = epic_dir / kp.epic_doc_basename(epic_num)
+        if lowercase.is_file():
+            return lowercase
+        return epic_dir / kp.epic_doc_basename(epic_num, legacy=True)
+
     def validate_epic_numbering(self) -> None:
         """Validate Epic numbering (Epic 1-23 canonical, Epic 24+ project-specific)."""
-        epic_dirs = list(self.kanban_path.glob("epics/Epic-*"))
-        
-        for epic_dir in epic_dirs:
+        for epic_dir in self._list_epic_dirs():
             try:
-                epic_num_str = epic_dir.name.replace("Epic-", "")
-                epic_num = int(epic_num_str)
+                epic_num = self._epic_num_from_dir(epic_dir.name)
                 
                 # Check if epic is in canonical range but contains project-specific content
                 if CANONICAL_EPIC_MIN <= epic_num <= CANONICAL_EPIC_MAX:
                     # Validate this is actually canonical content
-                    epic_doc = epic_dir / f"Epic-{epic_num}.md"
+                    epic_doc = self._epic_doc_path(epic_dir, epic_num)
                     if epic_doc.exists():
                         content = epic_doc.read_text(encoding='utf-8')
                         # Check for known project-specific content patterns
@@ -109,16 +132,12 @@ class InstallationValidator:
     
     def validate_epic_mashup(self) -> None:
         """Detect Epic mashup (copying ai-dev-kit's actual Kanban instead of templates)."""
-        epic_dirs = list(self.kanban_path.glob("epics/Epic-*"))
-        
-        # Check for Epic 24 "Book Related Work" which indicates ai-dev-kit's actual Kanban was copied
-        for epic_dir in epic_dirs:
+        for epic_dir in self._list_epic_dirs():
             try:
-                epic_num_str = epic_dir.name.replace("Epic-", "")
-                epic_num = int(epic_num_str)
+                epic_num = self._epic_num_from_dir(epic_dir.name)
                 
                 if epic_num == 24:
-                    epic_doc = epic_dir / f"Epic-{epic_num}.md"
+                    epic_doc = self._epic_doc_path(epic_dir, epic_num)
                     if epic_doc.exists():
                         content = epic_doc.read_text(encoding='utf-8')
                         if "Book Related Work" in content:
@@ -131,7 +150,7 @@ class InstallationValidator:
                 
                 # Check for Epic 9 with wrong content (should have been fixed, but validate anyway)
                 if epic_num == 9:
-                    epic_doc = epic_dir / f"Epic-{epic_num}.md"
+                    epic_doc = self._epic_doc_path(epic_dir, epic_num)
                     if epic_doc.exists():
                         content = epic_doc.read_text(encoding='utf-8')
                         if "Book Related Work" in content:
@@ -146,13 +165,11 @@ class InstallationValidator:
     
     def validate_canonical_conflicts(self) -> None:
         """Validate canonical vs project-specific epic conflicts."""
-        epic_dirs = list(self.kanban_path.glob("epics/Epic-*"))
         epic_numbers = []
         
-        for epic_dir in epic_dirs:
+        for epic_dir in self._list_epic_dirs():
             try:
-                epic_num_str = epic_dir.name.replace("Epic-", "")
-                epic_num = int(epic_num_str)
+                epic_num = self._epic_num_from_dir(epic_dir.name)
                 epic_numbers.append(epic_num)
             except ValueError:
                 continue
@@ -172,8 +189,10 @@ class InstallationValidator:
         if canonical_epics and project_epics:
             # This is fine, but check that canonical epics don't have project-specific content
             for epic_num in canonical_epics:
-                epic_dir = self.kanban_path / f"epics/Epic-{epic_num}"
-                epic_doc = epic_dir / f"Epic-{epic_num}.md"
+                epic_dir = kp.resolve_epic_dir(self.kanban_path, epic_num)
+                if not epic_dir:
+                    continue
+                epic_doc = self._epic_doc_path(epic_dir, epic_num)
                 if epic_doc.exists():
                     content = epic_doc.read_text(encoding='utf-8')
                     # Check for project-specific indicators
@@ -251,7 +270,7 @@ class InstallationValidator:
         """Check if ai-dev-kit's actual Kanban was copied (should use templates instead)."""
         # Check for indicators that ai-dev-kit's actual Kanban was copied
         indicators = [
-            ("Epic-24", "Book Related Work"),  # Epic 24 is ai-dev-kit specific
+            ("epic-24", "Book Related Work"),  # Epic 24 is ai-dev-kit specific
         ]
         
         for epic_pattern, content_pattern in indicators:

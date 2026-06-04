@@ -10,14 +10,14 @@ housekeeping_policy: keep
 >
 > The canonical perpetual task for workflow maintenance is now **E2:S16:T03**.
 > All active planning and work for perpetual workflow maintenance should reference:
-> - [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+> - [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 > - [`IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md`](./IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 >
 > This draft is retained for historical traceability only. Do not extend or update.
 
 # E2:S16:T03 - Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) **(E2:S16:T03)**  
+**Host Task:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) **(E2:S16:T03)**  
 **Planning for:** [FR-088 – Dedicated story for perpetual ongoing tasks](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) (supersedes FR-041); current policy thread [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) (doc-init **+0** vs default **+1**)  
 **Status:** Deprecated (superseded by E2:S16:T03; canonical policy in IPP-E2S16T01)
 
@@ -99,14 +99,14 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 
 - [ ] [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) acceptance criteria satisfied (policy table, RW docs, BR-010 regression).
 - [ ] **`pytest`** `packages/frameworks/workflow mgt/scripts/validation/test_validate_version_bump.py` passes after substantive validator edits.
-- [x] Bidirectional links: this IPW ↔ [T03 host task](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) remain valid (relative paths).
+- [x] Bidirectional links: this IPW ↔ [T03 host task](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) remain valid (relative paths).
 - [ ] No contradictory guidance between **versioning policy**, **validators**, and **RW** docs for **+0** / **+1**.
 
 ---
 
 ## References
 
-- [Host task E2:S16:T03](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [Host task E2:S16:T03](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [FR-088 – Dedicated story for perpetual ongoing tasks](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) (supersedes FR-041)
 - [BR-067 – BUILD +0 vs +1](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
 - [BR-010 – inverse doc-init bug](../project-management/kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)

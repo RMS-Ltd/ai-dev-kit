@@ -25,5 +25,5 @@
 
 ## References
 
-- [T06 task doc](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)
+- [T06 task doc](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)
 - [IPP-E6S09T06](../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)

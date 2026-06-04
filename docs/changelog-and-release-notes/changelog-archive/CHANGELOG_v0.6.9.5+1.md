@@ -14,8 +14,8 @@
 
 - **[FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)** — `Release / SemVer strategy` section + **FR-098-NF5** non-functional requirement
 - **[Integration specification](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)** — §9 Release and SemVer (`task_touch` discipline)
-- **[E6:S09:T05](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)** — release guidance + acceptance criterion; status **IN PROGRESS**
-- **[Story 009](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md)** — goal bullet linking SemVer strategy
+- **[E6:S09:T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)** — release guidance + acceptance criterion; status **IN PROGRESS**
+- **[Story 009](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md)** — goal bullet linking SemVer strategy
 
 ### Versioning outcome
 

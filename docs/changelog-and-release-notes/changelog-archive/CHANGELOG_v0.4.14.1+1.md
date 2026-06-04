@@ -45,5 +45,5 @@ E4:S14:T01: Update packaged Release Workflow (RW) to handle UKW context and perp
 
 ## Related
 
-- **Task:** [E4:S14:T01](../../project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance/T01-update-packaged-rw-ukw-perpetual-tasks.md)
-- **UKW Task:** [E2:S16:T03](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- **Task:** [E4:S14:T01](../../project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance/T01-update-packaged-rw-ukw-perpetual-tasks.md)
+- **UKW Task:** [E2:S16:T03](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)

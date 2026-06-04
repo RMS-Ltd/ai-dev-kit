@@ -72,8 +72,8 @@ Maintenance task prioritization framework created. Comprehensive framework for s
 ## Files Changed
 
 - `docs/architecture/standards-and-adrs/maintenance-task-prioritization-framework.md` (new)
-- `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md` (updated - T02 marked COMPLETE)
-- `docs/project-management/kanban/epics/Epic-7/Epic-7.md` (updated - T02 marked COMPLETE)
+- `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md` (updated - T02 marked COMPLETE)
+- `docs/project-management/kanban/epics/epic-07/epic-07.md` (updated - T02 marked COMPLETE)
 - `docs/project-management/kanban/kanban-board.md` (updated - T02 marked COMPLETE, task descriptions corrected)
 
 ---
@@ -82,8 +82,8 @@ Maintenance task prioritization framework created. Comprehensive framework for s
 
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **Framework Health Metrics:** `docs/architecture/standards-and-adrs/framework-health-metrics.md`
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 1:** `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 1:** `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
 
 ---
 

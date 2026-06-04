@@ -57,7 +57,7 @@
 
 ## Related
 
-- **Task:** [T14-add-cmw-to-workflow-management-package-documentation.md](../../../project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T14-add-cmw-to-workflow-management-package-documentation.md)
+- **Task:** [T14-add-cmw-to-workflow-management-package-documentation.md](../../../project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T14-add-cmw-to-workflow-management-package-documentation.md)
 - **Feature Request:** [FR-027](../../../project-management/kanban/fr-br/FR-027-add-cmw-to-workflow-management-package-documentation.md)
 - **Related Task:** T11 - Changelog Management and Archival Workflow (CMW implementation, COMPLETE)
 - **Package README:** `packages/frameworks/workflow mgt/README.md`

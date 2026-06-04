@@ -27,11 +27,11 @@ E7:S06:T04: Reviewed the last 15 commits from `HEAD` on `epic/7-documentation-ma
 ### Changed
 
 - **T04 task doc:** Findings table, summary, acceptance criteria, review sample (reproducible `git log -15`), relative links to `.cursorrules` and commit-message guidelines
-- **Story-006, Epic-7, kanban-board, kanban-completed:** T04 complete; T04 removed from board Should Have
+- **story-006, epic-07, kanban-board, kanban-completed:** T04 complete; T04 removed from board Should Have
 - **Version, README, CHANGELOG:** `0.7.6.4+1` / SemVer `0.4.625+1`
 
 ---
 
 ## Related Work
 
-**Task:** [T04-recent-commit-review.md](../../project-management/kanban/epics/Epic-7/Story-006-post-windsurf-project-review/T04-recent-commit-review.md)
+**Task:** [T04-recent-commit-review.md](../../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T04-recent-commit-review.md)

@@ -89,7 +89,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 - Epic 2 (Workflow Management) - May use workflows for maintenance automation
 - *Parallel Development Candidacy:* Safe (can develop independently)
 
-> Full story: `docs/project-management/kanban/epics/Epic-7/Story-001-codebase-maintenance-tasks.md`
+> Full story: `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
 
 ---
 
@@ -118,7 +118,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 - Epic 4 (Kanban Framework) - Uses Kanban for tracking review tasks
 - *Parallel Development Candidacy:* Safe (can develop independently)
 
-> Full story: `docs/project-management/kanban/epics/Epic-7/Story-002-code-review-standards-and-processes.md`
+> Full story: `docs/project-management/kanban/epics/epic-07/story-02-code-review-standards-and-processes.md`
 
 ---
 
@@ -148,7 +148,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 - Epic 2 (Workflow Management) - May use workflows for metrics automation
 - *Parallel Development Candidacy:* Safe (can develop independently)
 
-> Full story: `docs/project-management/kanban/epics/Epic-7/Story-003-code-quality-metrics-and-monitoring.md`
+> Full story: `docs/project-management/kanban/epics/epic-07/story-03-code-quality-metrics-and-monitoring.md`
 
 ---
 
@@ -178,7 +178,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 - Epic 4 (Kanban Framework) - Integrates with Kanban processes
 - *Parallel Development Candidacy:* Safe (can develop independently)
 
-> Full story: `docs/project-management/kanban/epics/Epic-7/Story-004-maintenance-automation-and-tooling.md`
+> Full story: `docs/project-management/kanban/epics/epic-07/story-04-maintenance-automation-and-tooling.md`
 
 ---
 
@@ -215,7 +215,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 
 - `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` - Canonical epic definitions
 - `packages/frameworks/kanban/templates/BR_TEMPLATE.md` - Bug Report template (for converting IDE issues to BRs)
-- `docs/project-management/kanban/epics/Epic-4/Epic-4.md` - Kanban Framework epic
+- `docs/project-management/kanban/epics/epic-04/epic-04.md` - Kanban Framework epic
 
 ---
 

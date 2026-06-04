@@ -13,7 +13,7 @@ Established abstract space `0.2.11.0+0` for Epic 2 Story 11: Intake Workflow Aut
 
 ### Added
 - **Story 11:** Intake Workflow Automation
-  - Created `docs/project-management/kanban/epics/Epic-2/Story-011-intake-workflow-automation.md`
+  - Created `docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md`
   - Defined 10 tasks (T00-T09) for implementing automated intake workflow
   - T00 (Story Creation and FR-019 Intake) marked complete
 

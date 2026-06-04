@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Version:** N/A  
 **Code:** BR-070  
 
-**Implementing Task:** [E02:S01:T18](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md)  
-**Closure gated on:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](FR-092-canonical-rw-ukw-kanban-consistency-program.md) / [E02:S15:T07](../epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) Wave 5 + Wave 8
+**Implementing Task:** [E02:S01:T18](../epics/epic-02/story-01-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md)  
+**Closure gated on:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](FR-092-canonical-rw-ukw-kanban-consistency-program.md) / [E02:S15:T07](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) Wave 5 + Wave 8
 
 > **Gating note (2026-04-27):** Stage completeness invariant (Step-8 stage-set parity) is owned end-to-end by FR-092 Bucket C2 + Wave 5. The `validate_rw_step7_completeness.py` validator and Step-8 enforcement are deliverables of FR-092 Wave 5; final BR-070 closure is gated on those artifacts shipping under FR-092 sign-off.
 >
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 >
 > **Wave 7 + Wave 8 sign-off (2026-04-27):** Stage-set completeness is composed into the FR-092 Wave 7 release-readiness gate as Gate 5 in [`validate_release_readiness.py`](../../../../packages/frameworks/workflow%20mgt/scripts/validate_release_readiness.py); wired into RW Step 10 (Run Validators) via `release_readiness_gate.blocking: true`. Wave 8 live demonstration: against the in-progress repo state with 12 unstaged FR-092 Wave 0-7 artefacts, Gate 5 returned exit 1 with per-path diagnostics naming every modified-unstaged and untracked Step-7 output, blocking RW commit — exactly the contracted behavior. **AC1, AC2, AC3, AC5 closed; AC4 (post-commit verification) deferred to live RW E02:S15:T07 --art (Wave 8 terminal).**
 >
-> **AC4 closure (2026-05-15):** Post-commit verification validator [`validate_rw_step7_post_commit.py`](../../../../packages/frameworks/workflow%20mgt/scripts/validate_rw_step7_post_commit.py) implemented under [E02:S01:T18](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md) with 8 unit tests (all green). Validator runs after `git commit` (RW Step 11) and before `git tag` (Step 12), proving the release commit contains every Step-7 output. RW execution guide updated with Step 11.5 documentation; `release-workflow.yaml` updated with `step-10.5`. **All BR-070 ACs now closed.**
+> **AC4 closure (2026-05-15):** Post-commit verification validator [`validate_rw_step7_post_commit.py`](../../../../packages/frameworks/workflow%20mgt/scripts/validate_rw_step7_post_commit.py) implemented under [E02:S01:T18](../epics/epic-02/story-01-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md) with 8 unit tests (all green). Validator runs after `git commit` (RW Step 11) and before `git tag` (Step 12), proving the release commit contains every Step-7 output. RW execution guide updated with Step 11.5 documentation; `release-workflow.yaml` updated with `step-10.5`. **All BR-070 ACs now closed.**
 
 ---
 
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 
 `RW -k` intends scoped Kanban release behavior for the requested task slice, and Step 8 policy requires staging all modified files (`git add -A` / `git.stage_all`). In practice, a partial manual staging path can still pass validators and create a release commit that omits Step 7 outputs.
 
-Observed failure mode: Step 7 (`update_kanban_docs.py --mode kanban_init`) modified task-adjacent Kanban files (including `kboard.md` and `Epic-2.md`), but those files were not staged into the release commit while other release files were committed and pushed.
+Observed failure mode: Step 7 (`update_kanban_docs.py --mode kanban_init`) modified task-adjacent Kanban files (including `kboard.md` and `epic-02.md`), but those files were not staged into the release commit while other release files were committed and pushed.
 
 ---
 
@@ -77,4 +77,4 @@ Observed failure mode: Step 7 (`update_kanban_docs.py --mode kanban_init`) modif
 
 - [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [FR-090](./FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
-- [Story E2:S01](../epics/Epic-2/Story-001-rw-agent-execution-and-docs.md)
+- [Story E2:S01](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)

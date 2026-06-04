@@ -55,12 +55,12 @@ The `validate_changelog_format.py` validator incorrectly expects canonical order
   - Fix attempt history section ready for future attempts
 
 ### Changed
-- **Story 1 Document:** `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`
+- **Story 1 Document:** `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
   - Added Task 6 to task checklist
   - Added Task 6 definition with approach and acceptance criteria
   - Status changed from COMPLETE to IN PROGRESS
   - Updated last updated field
-- **Epic 2 Document:** `docs/project-management/kanban/epics/Epic-2/Epic-2.md`
+- **Epic 2 Document:** `docs/project-management/kanban/epics/epic-02/epic-02.md`
   - Updated Story 1 status from COMPLETE to IN PROGRESS
   - Updated last updated field
 - **`src/fynd_deals/version.py`:** Version bumped to `0.2.1.6+1`

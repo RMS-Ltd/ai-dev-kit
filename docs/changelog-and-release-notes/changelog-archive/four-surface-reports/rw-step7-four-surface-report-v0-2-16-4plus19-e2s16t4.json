@@ -4,7 +4,7 @@
       "changes": [],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-2/Epic-2.md"
+        "docs/project-management/kanban/epics/epic-02/epic-02.md"
       ],
       "surface": "epic_doc",
       "touched": false
@@ -15,7 +15,7 @@
         "Story doc unchanged; docs-only release."
       ],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md"
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
       ],
       "surface": "story_doc",
       "touched": false
@@ -87,7 +87,7 @@
       ],
       "notes": [],
       "paths": [
-        "docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
       ],
       "surface": "task_doc",
       "touched": true

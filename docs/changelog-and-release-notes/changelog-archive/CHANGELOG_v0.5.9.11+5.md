@@ -13,7 +13,7 @@
 
 - **`BR-068` intake doc**: COMPLETE + **Resolution** + acceptance criteria checked.
 - **`docs/implementation-cycles/IPW-E5S09T11-*.md`**: Waves **1–4** complete; §4 criteria satisfied.
-- **`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`**, **`Story-009-docusaurus-documentation-portal.md`**: Task + story checklist closure.
+- **`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`**, **`story-09-docusaurus-documentation-portal.md`**: Task + story checklist closure.
 - **`fr-br-uxr-board.md`**, **`fr-br-uxr-completed.md`**, **`kanban-completed.md`**, **`kanban-board.md`**: Board/completed ledger updates.
 
 ## Verification

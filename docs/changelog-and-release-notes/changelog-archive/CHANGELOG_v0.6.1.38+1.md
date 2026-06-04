@@ -39,7 +39,7 @@ Implements the BR-072 definition fix: UKW Step 6 restructured so completed tasks
 
 ### Kanban
 
-**`docs/project-management/kanban/epics/Epic-6/Story-001-br-repo/T38-...md`**
+**`docs/project-management/kanban/epics/epic-06/story-01-br-repo/T38-...md`**
 - Status updated: TODO → IN PROGRESS
 - IPP link and Publication Status field added
 - Last updated timestamp reflects implementation completion

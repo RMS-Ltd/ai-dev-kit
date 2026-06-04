@@ -38,4 +38,4 @@ E5:S01:T64 / **FR-061:** Root [README.md](README.md) gains a **Workflows** secti
 ## Related
 
 - **FR-061:** [`FR-061-readme-workflow-section.md`](../../project-management/kanban/fr-br/FR-061-readme-workflow-section.md)
-- **Task:** [`T64-readme-workflow-section.md`](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T64-readme-workflow-section.md)
+- **Task:** [`T64-readme-workflow-section.md`](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T64-readme-workflow-section.md)

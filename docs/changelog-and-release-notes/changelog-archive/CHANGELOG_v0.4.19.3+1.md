@@ -20,7 +20,7 @@
 ## References
 
 - IPP: `docs/implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md`
-- Host task: `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`
+- Host task: `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`
 - Source FR: `docs/project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md`
-- Story: `docs/project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake.md`
+- Story: `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`
 - Boards: `docs/project-management/kanban/kboard.md`, `docs/project-management/kanban/fbuboard.md`

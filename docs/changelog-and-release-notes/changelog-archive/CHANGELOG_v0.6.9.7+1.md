@@ -13,9 +13,9 @@
 ### Kanban / intake
 
 - [BR-078](../../project-management/kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) — OPEN (INTAKE)
-- [T07 task doc](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)
-- [Story 009](../../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md) — checklist T07–T12 (batch intake corpus; this release anchors **T07**)
-- [Epic 6](../../project-management/kanban/epics/Epic-6/Epic-6.md) — S09 IN PROGRESS
+- [T07 task doc](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)
+- [Story 009](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md) — checklist T07–T12 (batch intake corpus; this release anchors **T07**)
+- [Epic 6](../../project-management/kanban/epics/epic-06/epic-06.md) — S09 IN PROGRESS
 - [kboard.md](../../project-management/kanban/kboard.md) / [fbuboard.md](../../project-management/kanban/fbuboard.md) — MoSCOW rows for installer defect batch
 
 ## References

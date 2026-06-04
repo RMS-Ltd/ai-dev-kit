@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** RESOLVED — v0.2.16.9+1
 
-**Implementing Task:** [E02:S16:T09](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)
+**Implementing Task:** [E02:S16:T09](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)
 
 ---
 

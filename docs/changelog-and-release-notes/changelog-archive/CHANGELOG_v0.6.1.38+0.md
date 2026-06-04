@@ -21,7 +21,7 @@ Intake of BR-072: UKW completed tasks not removed from kboard. This release file
 
 ### Kanban
 - **E6:S01:T38 created** — investigation and fix task for BR-072; housed in BR Repo (E6:S01) per traceability pattern.
-- **Story-001-br-repo.md** — T38 added to task checklist.
+- **story-01-br-repo.md** — T38 added to task checklist.
 - **kboard.md** — E6:S01:T38 added to Should Have section.
 - **fbuboard.md** — BR-072 added to Should Have section.
 

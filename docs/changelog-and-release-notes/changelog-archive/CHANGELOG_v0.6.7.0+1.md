@@ -42,7 +42,7 @@ housekeeping_policy: archive
 
 ### Created E6:S07 – ai-dev-kit CLI Tool Story
 
-- **Action:** Created `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` Story document
+- **Action:** Created `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` Story document
 - **Content:** Comprehensive Story with 14 tasks organized into 4 phases:
   - **Phase 1: Foundation (T01-T04):** Architecture, core commands, status commands, backend abstraction
   - **Phase 2: Backend Implementations (T05-T08):** Git submodule, Git subtree, package manager backends, configuration management
@@ -62,7 +62,7 @@ housekeeping_policy: archive
 
 ### Updated Epic 6 Documentation
 
-- **Action:** Updated `docs/project-management/kanban/epics/Epic-6/Epic-6.md` to include Story 7 in checklist
+- **Action:** Updated `docs/project-management/kanban/epics/epic-06/epic-06.md` to include Story 7 in checklist
 - **Changes:**
   - Added E6:S07 to Story Checklist
   - Included task summary (T00 ✅ COMPLETE, T01-T13 TODO)
@@ -79,7 +79,7 @@ housekeeping_policy: archive
 
 ### Updated E6:S02:T04 to Note Supersession
 
-- **Action:** Updated `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md` Task T04
+- **Action:** Updated `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md` Task T04
 - **Changes:**
   - Added status note: "SUPERSEDED"
   - Added reference to E6:S07 (full Story)
@@ -109,11 +109,11 @@ housekeeping_policy: archive
 
 ## Files Changed
 
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - New Story document (14 tasks)
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - New Story document (14 tasks)
 - `docs/project-management/kanban/fr-br/FR-030-ai-dev-kit-cli-tool.md` - Updated to reference E6:S07
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md` - Added Story 7 to checklist
+- `docs/project-management/kanban/epics/epic-06/epic-06.md` - Added Story 7 to checklist
 - `docs/project-management/kanban/kanban-board.md` - Added Story 7 entry
-- `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md` - Updated T04 to note supersession
+- `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md` - Updated T04 to note supersession
 
 ---
 

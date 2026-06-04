@@ -30,10 +30,10 @@ E7:S06:T06: Audited FR/BR/UXR aggregate docs and a representative sample of inta
 - **`fr-br-uxr-structure.md`, `fr-br-uxr-board.md`, `fr-br-uxr-completed.md`:** Header Last Updated / Version
 - **`kanban-completed.md`, `fr-br-uxr-completed.md`:** Reciprocal “see also” links in blockquotes
 - **T06 task doc:** Findings and acceptance
-- **Story-006, Epic-7, kanban-board, kanban-completed (task list):** T06 closure
+- **story-006, epic-07, kanban-board, kanban-completed (task list):** T06 closure
 
 ---
 
 ## Related Work
 
-**Task:** [T06-fr-br-uxr-intake-documentation-quality.md](../../project-management/kanban/epics/Epic-7/Story-006-post-windsurf-project-review/T06-fr-br-uxr-intake-documentation-quality.md)
+**Task:** [T06-fr-br-uxr-intake-documentation-quality.md](../../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T06-fr-br-uxr-intake-documentation-quality.md)

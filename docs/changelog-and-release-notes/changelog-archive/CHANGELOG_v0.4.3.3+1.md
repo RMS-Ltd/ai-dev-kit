@@ -25,7 +25,7 @@ This release completes **Task 3: Validate Versioning → RW integration in dev-k
   - Validated version format validation
   - Documented integration points and gaps
 
-- ✅ **Validation Report Created** (`T003-versioning-rw-validation.md`):
+- ✅ **Validation Report Created** (`T03-versioning-rw-validation.md`):
   - Validation methodology and test cases
   - Version file reading validation (✅ PASS)
   - BUILD increment validation (✅ PASS)
@@ -117,7 +117,7 @@ This release completes **Task 3: Validate Versioning → RW integration in dev-k
 This validation confirms that the Versioning → RW integration is working correctly. The integration points are well-implemented, and the recent enhancements to Task transition handling (from Task 2) are functioning as expected. The identified gaps are minor and primarily relate to documentation and validation comprehensiveness.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T003-versioning-rw-validation.md` (comprehensive validation report)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T03-versioning-rw-validation.md` (comprehensive validation report)
 
 ---
 
@@ -132,8 +132,8 @@ This validation confirms that the Versioning → RW integration is working corre
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T003-versioning-rw-validation.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration.md` (status update)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T03-versioning-rw-validation.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.4.3.3+1)
 
 ---

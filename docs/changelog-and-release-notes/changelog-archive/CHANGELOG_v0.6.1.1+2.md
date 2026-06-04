@@ -74,9 +74,9 @@ Designed framework dependency architecture and updated all documentation to refl
 
 - `src/fynd_deals/version.py` (version bumped to v0.6.1.1+2)
 - `README.md` (updated with dependency architecture vision)
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md` (updated vision and tasks)
-- `docs/project-management/kanban/epics/Epic-6/Story-001-framework-version-management.md` (added tasks)
-- `docs/project-management/kanban/epics/Epic-6/Story-002-framework-update-and-migration.md` (added tasks)
+- `docs/project-management/kanban/epics/epic-06/epic-06.md` (updated vision and tasks)
+- `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md` (added tasks)
+- `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md` (added tasks)
 - `packages/frameworks/numbering & versioning/README.md` (added dependency notice)
 - `packages/frameworks/workflow mgt/README.md` (added dependency notice)
 - `packages/frameworks/kanban/README.md` (added dependency notice)

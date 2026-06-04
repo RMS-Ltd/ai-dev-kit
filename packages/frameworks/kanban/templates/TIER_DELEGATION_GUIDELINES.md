@@ -52,7 +52,7 @@ housekeeping_policy: keep
 ### Story 11: Kanban Granularity & Discrete Task Docs
 **Brief Summary:** Implements 3-tier structure with discrete Task documents.
 
-**Story Document:** [`Story-011-kanban-granularity-discrete-task-docs.md`](Story-011-kanban-granularity-discrete-task-docs.md)
+**Story Document:** [`story-11-kanban-granularity-discrete-task-docs.md`](story-11-kanban-granularity-discrete-task-docs.md)
 ```
 
 **Example - Anti-Pattern (Bad Epic Structure):**
@@ -186,7 +186,7 @@ Updates the Kanban governance policy to mandate 3-tier structure (Epic → Story
 ### Story 11: Kanban Granularity & Discrete Task Docs
 **Brief Summary:** Implements 3-tier structure with discrete Task documents.
 
-**Story Document:** [`Story-011-kanban-granularity-discrete-task-docs.md`](Story-011-kanban-granularity-discrete-task-docs.md)
+**Story Document:** [`story-11-kanban-granularity-discrete-task-docs.md`](story-11-kanban-granularity-discrete-task-docs.md)
 ```
 
 **Story → Task:**

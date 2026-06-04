@@ -137,7 +137,7 @@ housekeeping_policy: archive
 
 - `cli/backends/package_manager.py` - Package manager backend implementation (new, 500+ lines)
 - `cli/backends/__init__.py` - Backend registration updated
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md` - Updated T07 status and removed blocker
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md` - Updated T07 status and removed blocker
 
 ---
 

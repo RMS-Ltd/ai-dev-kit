@@ -47,15 +47,15 @@ Quick reference board for all Kanban work. For detailed views, see:
 
 **Epic Docs:**
 
-- [`epics/Epic-1/Epic-1.md`](epics/Epic-1/Epic-1.md)
-- [`epics/Epic-2/Epic-2.md`](epics/Epic-2/Epic-2.md)
-- [`epics/Epic-3/Epic-3.md`](epics/Epic-3/Epic-3.md)
-- [`epics/Epic-4/Epic-4.md`](epics/Epic-4/Epic-4.md)
-- [`epics/Epic-5/Epic-5.md`](epics/Epic-5/Epic-5.md)
-- [`epics/Epic-6/Epic-6.md`](epics/Epic-6/Epic-6.md)
-- [`epics/Epic-7/Epic-7.md`](epics/Epic-7/Epic-7.md)
-- [`epics/Epic-8/Epic-8.md`](epics/Epic-8/Epic-8.md)
-- [`epics/Epic-21/Epic-21.md`](epics/Epic-21/Epic-21.md)
+- [`epics/epic-01/epic-01.md`](epics/epic-01/epic-01.md)
+- [`epics/epic-02/epic-02.md`](epics/epic-02/epic-02.md)
+- [`epics/epic-03/epic-03.md`](epics/epic-03/epic-03.md)
+- [`epics/epic-04/epic-04.md`](epics/epic-04/epic-04.md)
+- [`epics/epic-05/epic-05.md`](epics/epic-05/epic-05.md)
+- [`epics/epic-06/epic-06.md`](epics/epic-06/epic-06.md)
+- [`epics/epic-07/epic-07.md`](epics/epic-07/epic-07.md)
+- [`epics/epic-08/epic-08.md`](epics/epic-08/epic-08.md)
+- [`epics/epic-21/epic-21.md`](epics/epic-21/epic-21.md)
 
 ---
 

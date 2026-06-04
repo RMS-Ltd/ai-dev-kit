@@ -27,18 +27,18 @@ Created Epic 9: Book Related Work with initial story structure. This epic manage
 
 ### 📚 Story Documents Created
 
-- `Story-001-book-content-development.md` - Book content development
-- `Story-002-book-integration-with-dev-kit.md` - Book-dev-kit integration
-- `Story-003-book-publishing-support.md` - Book publishing support
+- `story-01-book-content-development.md` - Book content development
+- `story-02-book-integration-with-dev-kit.md` - Book-dev-kit integration
+- `story-03-book-publishing-support.md` - Book publishing support
 
 ---
 
 ## Files Created
 
-- `docs/project-management/kanban/epics/Epic-9/Epic-9.md`
-- `docs/project-management/kanban/epics/Epic-9/Story-001-book-content-development.md`
-- `docs/project-management/kanban/epics/Epic-9/Story-002-book-integration-with-dev-kit.md`
-- `docs/project-management/kanban/epics/Epic-9/Story-003-book-publishing-support.md`
+- `docs/project-management/kanban/epics/epic-09/epic-09.md`
+- `docs/project-management/kanban/epics/epic-09/story-01-book-content-development.md`
+- `docs/project-management/kanban/epics/epic-09/story-02-book-integration-with-dev-kit.md`
+- `docs/project-management/kanban/epics/epic-09/story-03-book-publishing-support.md`
 - `src/fynd_deals/version.py` (updated to v0.9.1.1+1)
 
 ---

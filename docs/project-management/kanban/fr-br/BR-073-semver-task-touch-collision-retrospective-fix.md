@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.2.1.20+1  
 **Code:** BR-073
 
-**Implementing Task:** [E02:S01:T20](../epics/Epic-2/Story-001-rw-agent-execution-and-docs/T20-semver-task-touch-collision-retrospective-fix-br073.md)
+**Implementing Task:** [E02:S01:T20](../epics/epic-02/story-01-rw-agent-execution-and-docs/T20-semver-task-touch-collision-retrospective-fix-br073.md)
 
 ---
 

@@ -123,8 +123,8 @@ This release implements GitHub Issue integration for submitting Feature Requests
 
 ## References
 
-- Epic 4: `docs/project-management/kanban/epics/Epic-4/Epic-4.md`
-- Story 2: `docs/project-management/kanban/epics/Epic-4/Story-002-fr-br-intake-to-tasks.md`
+- Epic 4: `docs/project-management/kanban/epics/epic-04/epic-04.md`
+- Story 2: `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md`
 - FR-004: `docs/project-management/kanban/fr-br/FR-004-github-submission-for-fr-br-uxr.md`
 - GitHub Submission Guide: `packages/frameworks/kanban/FR_BR_UXR_GITHUB_SUBMISSION_GUIDE.md`
 - Kanban Package: `packages/frameworks/kanban/README.md`

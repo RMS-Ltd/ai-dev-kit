@@ -57,8 +57,8 @@ Maintenance automation and tooling usage documented. Comprehensive usage guides,
 
 ## References
 
-- **Epic 7:** `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-7/Story-004-maintenance-automation-and-tooling.md`
+- **Epic 7:** `docs/project-management/kanban/epics/epic-07/epic-07.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-07/story-04-maintenance-automation-and-tooling.md`
 - **Automation Requirements:** `docs/architecture/standards-and-adrs/maintenance-automation-requirements.md`
 - **Automation Scripts:** `docs/architecture/standards-and-adrs/maintenance-automation-scripts-and-tools.md`
 - **Workflow Integration:** `docs/architecture/standards-and-adrs/maintenance-automation-workflow-integration.md`

@@ -123,17 +123,17 @@ housekeeping_policy: keep
 
 **Example 1: Complements**
 ```markdown
-- **[E9:S01:T01: Current State Inventory](../../Epic-9/Story-001/T01-current-state-inventory.md)** - **Relationship Type:** Complements - **Context:** Both tasks analyze RC readiness gaps from different perspectives; inventory provides input for gap analysis
+- **[E9:S01:T01: Current State Inventory](../../epic-09/story-001/T01-current-state-inventory.md)** - **Relationship Type:** Complements - **Context:** Both tasks analyze RC readiness gaps from different perspectives; inventory provides input for gap analysis
 ```
 
 **Example 2: Coordinates With**
 ```markdown
-- **[E9:S01:T07: Roadmap Planning](../../Epic-9/Story-001/T07-roadmap-planning.md)** - **Relationship Type:** Coordinates With - **Context:** Both tasks modify the same versioning policy document; changes must be synchronized
+- **[E9:S01:T07: Roadmap Planning](../../epic-09/story-001/T07-roadmap-planning.md)** - **Relationship Type:** Coordinates With - **Context:** Both tasks modify the same versioning policy document; changes must be synchronized
 ```
 
 **Example 3: Informs**
 ```markdown
-- **[E2:S01:T02: RC=1 Criteria Definition](../../Epic-2/Story-001/T02-rc1-criteria-definition.md)** - **Relationship Type:** Informs - **Context:** Criteria definition provides context and constraints for this task's design decisions
+- **[E2:S01:T02: RC=1 Criteria Definition](../../epic-02/story-001/T02-rc1-criteria-definition.md)** - **Relationship Type:** Informs - **Context:** Criteria definition provides context and constraints for this task's design decisions
 ```
 
 ---

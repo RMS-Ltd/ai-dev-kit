@@ -145,7 +145,7 @@ def validate_execution_mode_with_task(self, task_id: str) -> bool:
   - Validates FR-048 requirements compliance
 
 ### Documentation Files
-- **`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T48-icw-task-identifier-argument.md`**
+- **`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T48-icw-task-identifier-argument.md`**
   - Updated with implementation status
   - Added usage examples and technical details
   - Documented all FR-048 requirements

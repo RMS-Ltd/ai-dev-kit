@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Severity:** HIGH (first-run install aborts; book must document `--force`)  
 **Status:** OPEN (INTAKE — fix attempted, pending user verification)  
 **GitHub Issue:** [#12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)  
-**Implementing Task:** [E06:S09:T09](../epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md)  
+**Implementing Task:** [E06:S09:T09](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md)  
 **Created:** 2026-06-03  
 **Source:** Book dry-run (ExpensesTracker T03 Step 1); ADK `dev` @ `84efa7b`
 

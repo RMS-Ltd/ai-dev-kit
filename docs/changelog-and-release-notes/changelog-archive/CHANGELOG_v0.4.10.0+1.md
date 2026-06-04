@@ -34,8 +34,8 @@ Create Story 10 in Epic 4 for FR-012, and Story 7 in Epic 2 for FR-013 and FR-01
 - **FR-012:** `docs/project-management/kanban/fr-br/FR-012-agentic-kanban-task-creation-from-fr-br.md`
 - **FR-013:** `docs/project-management/kanban/fr-br/FR-013-trigger-aware-release-workflow.md`
 - **FR-014:** `docs/project-management/kanban/fr-br/FR-014-rw-trigger-for-fr-br-commits.md`
-- **Epic 4 Story 10:** `docs/project-management/kanban/epics/Epic-4/Story-010-agentic-kanban-task-creation-from-fr-br.md`
-- **Epic 2 Story 7:** `docs/project-management/kanban/epics/Epic-2/Story-007-trigger-aware-release-workflow.md`
+- **Epic 4 Story 10:** `docs/project-management/kanban/epics/epic-04/story-10-agentic-kanban-task-creation-from-fr-br.md`
+- **Epic 2 Story 7:** `docs/project-management/kanban/epics/epic-02/story-07-trigger-aware-release-workflow.md`
 
 ### Changed
 

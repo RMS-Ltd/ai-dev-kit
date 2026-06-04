@@ -17,5 +17,5 @@ Kanban documentation setup for **BR-084** / GitHub **#16** (RW mode C missing `t
 ## References
 
 - [BR-084](../project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
-- [T13](../project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md)
+- [T13](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md)
 - GitHub [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)

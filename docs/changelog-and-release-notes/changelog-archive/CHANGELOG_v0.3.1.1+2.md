@@ -17,13 +17,13 @@ This release completes **Task 1: Review dev-kit versioning policy vs framework p
 
 ### Task 1 Completion
 
-- ✅ Created **gap analysis report** (`docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework/T001-gap-analysis-report.md`)
+- ✅ Created **gap analysis report** (`docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md`)
   - Compared dev-kit policy with framework policies
   - Identified 6 critical gaps (missing sections)
   - Documented alignment strengths
   - Provided prioritized recommendations
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-alignment-with-versioning-framework.md`)
+- ✅ Updated **Story 001** (`story-01-dev-kit-alignment-with-versioning-framework.md`)
   - Marked Task 1 as complete in task checklist
   - Updated task details with completion status and findings summary
   - Added reference to gap analysis report in References section
@@ -80,7 +80,7 @@ The gap analysis provides a clear roadmap for enhancing the dev-kit versioning p
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework/T001-gap-analysis-report.md` (new)
-- `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework.md` (updated)
+- `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md` (new)
+- `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework.md` (updated)
 - `src/fynd_deals/version.py` (version bumped to 0.3.1.1+2)
 

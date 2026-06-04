@@ -28,13 +28,13 @@ Create E24:S05 (Book Structure Planning) story with T01 research task and T02 pr
 
 ### New Files
 
-- `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning.md` — Story definition
-- `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T01-research-oreilly-head-first-book-structure.md` — Task 1 document
-- `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md` — Task 2 document
+- `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning.md` — Story definition
+- `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T01-research-oreilly-head-first-book-structure.md` — Task 1 document
+- `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T02-propose-chapter-structure-for-aidevkit-book.md` — Task 2 document
 
 ### Modified Files
 
-- `docs/project-management/kanban/epics/Epic-24/Epic-24.md` — Added Story 5 to story checklist and goals section
+- `docs/project-management/kanban/epics/epic-24/epic-24.md` — Added Story 5 to story checklist and goals section
 - `src/fynd_deals/version.py` — Bumped version to 0.24.5.1+0
 
 ---
@@ -140,7 +140,7 @@ Manages development of "Vibe Coding For Dummies" book including:
 
 ## References
 
-- Task: `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning/T01-research-oreilly-head-first-book-structure.md`
-- Story: `docs/project-management/kanban/epics/Epic-24/Story-005-book-structure-planning.md`
-- Epic: `docs/project-management/kanban/epics/Epic-24/Epic-24.md`
+- Task: `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning/T01-research-oreilly-head-first-book-structure.md`
+- Story: `docs/project-management/kanban/epics/epic-24/story-05-book-structure-planning.md`
+- Epic: `docs/project-management/kanban/epics/epic-24/epic-24.md`
 - Kanban: `docs/project-management/kanban/kboard.md`

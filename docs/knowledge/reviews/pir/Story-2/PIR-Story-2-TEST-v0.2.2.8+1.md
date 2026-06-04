@@ -223,8 +223,8 @@ This is a **test PIR report** created to validate the Story-level Post-Implement
 
 ## Related Work
 
-- **Story:** [Story 2 Documentation](../../../../project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow.md) (v0.2.2.8+1)
-- **Epic:** [Epic 2 Documentation](../../../../project-management/kanban/epics/Epic-2/Epic-2.md)
+- **Story:** [Story 2 Documentation](../../../../project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow.md) (v0.2.2.8+1)
+- **Epic:** [Epic 2 Documentation](../../../../project-management/kanban/epics/epic-02/epic-02.md)
 - **Tasks:**
   - Task 1: Add CHECK Phase (v0.2.2.1+1)
   - Task 2: Add ACT Phase (v0.2.2.2+1)

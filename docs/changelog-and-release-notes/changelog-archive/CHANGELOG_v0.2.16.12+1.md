@@ -17,12 +17,12 @@
 ### Added
 
 - `docs/project-management/kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md`
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md`
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md`
 
 ### Updated
 
-- `docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations.md` — T12 checklist row
-- `docs/project-management/kanban/epics/Epic-2/Epic-2.md` — S16 summary
+- `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md` — T12 checklist row
+- `docs/project-management/kanban/epics/epic-02/epic-02.md` — S16 summary
 - `docs/project-management/kanban/kboard.md` — E2:S16:T12 Should Have row
 - `docs/project-management/kanban/fbuboard.md` — FR-100 Should Have row
 - `src/ai_dev_kit/version.py`, `README.md` — version and SemVer display
@@ -32,5 +32,5 @@
 ## References
 
 - [FR-100](../../project-management/kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
-- [E2:S16:T12](../../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md)
+- [E2:S16:T12](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md)
 - [FR-096](../../project-management/kanban/fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md) (dependency — COMPLETE)

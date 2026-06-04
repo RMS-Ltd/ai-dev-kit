@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **GitHub Issue:** [TBD]  
 **Version:** v0.5.1.34+1 (Internal) | v0.5.39+1 (SemVer)
 
-**Implementing Task:** [E05:S01:T34](../epics/Epic-5/Story-001-fr-repo/T34-ukw-granular-control-and-use-case-flags.md)
+**Implementing Task:** [E05:S01:T34](../epics/epic-05/story-01-fr-repo/T34-ukw-granular-control-and-use-case-flags.md)
 
 ---
 
@@ -263,9 +263,9 @@ A modular UKW workflow system that supports:
 - Version: `v0.5.1.34+0` (doc-init, migrated from v0.5.0.34+0)
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-5/Epic-5.md`](../epics/Epic-5/Epic-5.md)
-- Story: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`](../epics/Epic-5/Story-001-fr-repo.md) (migrated from Story-000-fr-repo)
-- Task: [`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T34-ukw-granular-control-and-use-case-flags.md`](../epics/Epic-5/Story-001-fr-repo/T34-ukw-granular-control-and-use-case-flags.md)
+- Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`](../epics/epic-05/story-01-fr-repo.md) (migrated from story-00-fr-repo)
+- Task: [`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T34-ukw-granular-control-and-use-case-flags.md`](../epics/epic-05/story-01-fr-repo/T34-ukw-granular-control-and-use-case-flags.md)
 
 ---
 
@@ -298,7 +298,7 @@ Priority operations (UC2/UC3) require significant agentic intelligence and are c
 - **UKW Documentation:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - **UKW Workflow:** `packages/frameworks/workflow mgt/workflows/update-kanban-workflow.yaml`
 - **Kanban Board:** `docs/project-management/kanban/kboard.md`
-- **UKW Task:** `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
+- **UKW Task:** `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T08-update-kanban-workflow-ukw.md`
 - **Related BR:** [BR-033 - UKW Board Disorganization](BR-033-ukw-board-disorganization.md)
 - **SoP:** [Mixed BR/FR Scope Handling](../../../architecture/standards-and-adrs/mixed-br-fr-scope-sop.md)
 

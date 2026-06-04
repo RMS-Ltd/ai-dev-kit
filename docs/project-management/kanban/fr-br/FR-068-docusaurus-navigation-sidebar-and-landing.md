@@ -15,8 +15,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** ACCEPTED  
 
-**Implementing Task:** [E05:S09:T11](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
-**Assigned Task:** E05:S09:T04 — [`T04-docusaurus-navigation-fr-068.md`](../epics/Epic-5/Story-009-docusaurus-documentation-portal/T04-docusaurus-navigation-fr-068.md)
+**Implementing Task:** [E05:S09:T11](../epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+**Assigned Task:** E05:S09:T04 — [`T04-docusaurus-navigation-fr-068.md`](../epics/epic-05/story-09-docusaurus-documentation-portal/T04-docusaurus-navigation-fr-068.md)
 
 ---
 

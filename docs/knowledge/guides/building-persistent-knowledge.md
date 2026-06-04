@@ -86,7 +86,7 @@ To ensure all knowledge in the fynd.deals knowledge base is organized, discovera
 
 ## File Naming Conventions
 - Use lowercase, hyphen-separated names (e.g., `process-overview.md`)
-- Prefix with context if needed (e.g., `epic-2-core-system-stability.md`)
+- Prefix with context if needed (e.g., `epic-02-core-system-stability.md`)
 - For SoPs: `sop-taxonomy.md`, `sop-debugging.md`, etc.
 - For templates: `template-<purpose>.md`
 
@@ -106,7 +106,7 @@ To ensure all knowledge in the fynd.deals knowledge base is organized, discovera
 knowledge/fynd_deals/
   epics/
     README.md
-    epic-2-core-system-stability.md
+    epic-02-core-system-stability.md
   building-persistent-knowledge/
     README.md
     sop-taxonomy.md

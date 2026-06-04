@@ -84,14 +84,14 @@ This release addresses the **critical issue** identified in Task 2 validation: T
 
 ### Analysis Documents Created
 
-- ✅ **Root Cause Analysis** (`T002-root-cause-analysis.md`):
+- ✅ **Root Cause Analysis** (`T02-root-cause-analysis.md`):
   - Comprehensive analysis of why the issue occurred
   - 4 primary root causes identified
   - 6 contributing factors documented
   - 8 documentation gaps identified
   - Prevention strategy outlined
 
-- ✅ **Documentation Updates Summary** (`T002-documentation-updates-summary.md`):
+- ✅ **Documentation Updates Summary** (`T02-documentation-updates-summary.md`):
   - Summary of all 8 documentation updates
   - Impact assessment for each update
   - Testing recommendations
@@ -128,8 +128,8 @@ This release addresses the **critical issue** identified in Task 2 validation: T
 This release completes the critical issue resolution for Task → version `TASK` component mapping failure. All documentation has been updated to prevent recurrence, with explicit requirements, validation checks, and examples throughout.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T002-root-cause-analysis.md`
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T002-documentation-updates-summary.md`
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T02-root-cause-analysis.md`
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T02-documentation-updates-summary.md`
 
 **Files Updated:**
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
@@ -151,8 +151,8 @@ This release completes the critical issue resolution for Task → version `TASK`
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T002-root-cause-analysis.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-003-kanban-versioning-rw-integration/T002-documentation-updates-summary.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T02-root-cause-analysis.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-03-kanban-versioning-rw-integration/T02-documentation-updates-summary.md` (created)
 - `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (updated)
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` (updated)
 - `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` (updated)

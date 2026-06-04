@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-FR-005 closure and hygiene: forensic audit of Story-006 template corpus (T00–T10), kanban/FR reconciliation, discrete host task doc, IPP wiring. **FR-005-R5** (systematic canonical addition process) explicitly deferred.
+FR-005 closure and hygiene: forensic audit of story-006 template corpus (T00–T10), kanban/FR reconciliation, discrete host task doc, IPP wiring. **FR-005-R5** (systematic canonical addition process) explicitly deferred.
 
 ---
 
@@ -48,4 +48,4 @@ FR-005 closure and hygiene: forensic audit of Story-006 template corpus (T00–T
 
 - [IPP-E4S06T01](../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)
 - [FR-005](../../project-management/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
-- [Story-006](../../project-management/kanban/epics/Epic-4/Story-006-comprehensive-canonical-est-template-system.md)
+- [story-006](../../project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)

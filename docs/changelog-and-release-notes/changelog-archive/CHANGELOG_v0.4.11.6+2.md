@@ -14,7 +14,7 @@ Completed compliance audit of existing Epic/Story documents and created comprehe
 ### New Documentation
 - **Delegation Compliance Audit** (`packages/frameworks/kanban/templates/DELEGATION_COMPLIANCE_AUDIT.md`):
   - Comprehensive audit of Epic and Story documents for tier delegation violations
-  - Documented violations in Epic-4.md and Epic-2.md
+  - Documented violations in epic-04.md and epic-02.md
   - Compliance status tracking and migration priority
   - Migration progress tracking
 
@@ -25,8 +25,8 @@ Completed compliance audit of existing Epic/Story documents and created comprehe
   - Enhanced migration process documentation
 
 ### Compliance Audit Findings
-- **Epic-4.md:** Multiple violations - detailed Story sections with Status, Priority, Goals, Tasks
-- **Epic-2.md:** Violations found - detailed Story sections with Status, Priority, Goals, Tasks
+- **epic-04.md:** Multiple violations - detailed Story sections with Status, Priority, Goals, Tasks
+- **epic-02.md:** Violations found - detailed Story sections with Status, Priority, Goals, Tasks
 - **Other Epic documents:** Not yet audited (medium priority)
 
 ## Related Work
@@ -37,7 +37,7 @@ Completed compliance audit of existing Epic/Story documents and created comprehe
 
 ## Next Steps
 
-- Execute migrations for high-priority violations (Epic-4.md, Epic-2.md)
+- Execute migrations for high-priority violations (epic-04.md, epic-02.md)
 - Complete audits for remaining Epic documents
 - Review Story documents for detailed Task sections
 

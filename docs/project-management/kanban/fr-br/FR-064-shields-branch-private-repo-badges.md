@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE (2026-03-30 — E05:S01:T69 / v0.5.1.69+1)
 
 **Repository Pattern:** FR-064 = E05:S01:T69  
-**Implementing Task:** [E05:S01:T69 – Shields branch retirement (private repo)](../epics/Epic-5/Story-001-fr-repo/T69-shields-branch-private-repo-fr-064.md)
+**Implementing Task:** [E05:S01:T69 – Shields branch retirement (private repo)](../epics/epic-05/story-01-fr-repo/T69-shields-branch-private-repo-fr-064.md)
 
 ---
 

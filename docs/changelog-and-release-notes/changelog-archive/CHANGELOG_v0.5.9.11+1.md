@@ -13,7 +13,7 @@
 
 - **`BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md`**: new bug report (strict links, out-of-`docs/` targets).
 - **`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`**: implementing task scope and acceptance alignment with BR-068.
-- **`Story-009-docusaurus-documentation-portal.md`**: T11 checklist row; Related BRs table; Last updated note.
+- **`story-09-docusaurus-documentation-portal.md`**: T11 checklist row; Related BRs table; Last updated note.
 - **`fr-br-uxr-board.md`**: BR-068 prioritized row; Last Updated context.
 
 ## Verification

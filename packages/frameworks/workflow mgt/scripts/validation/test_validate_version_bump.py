@@ -97,13 +97,13 @@ kanban_root: docs/project-management/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
-            # Kanban layout: Epic-6/Story-007-.../T101-...
-            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-6"
+            # Kanban layout: epic-06/story-07-.../T101-...
+            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-06"
             story_dir.mkdir(parents=True)
-            task_dir = story_dir / "Story-007-adk-implementation-analysis-and-package-management"
+            task_dir = story_dir / "story-07-adk-implementation-analysis-and-package-management"
             task_dir.mkdir(parents=True)
 
-            story_file = story_dir / "Story-007-adk-implementation-analysis-and-package-management.md"
+            story_file = story_dir / "story-07-adk-implementation-analysis-and-package-management.md"
             story_file.write_text("""
 # Story 007 – ADK Implementation Analysis
 **Code:** E6S07
@@ -139,7 +139,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
-            story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-6" / "Story-007-adk-implementation-analysis-and-package-management.md"
+            story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-06" / "story-07-adk-implementation-analysis-and-package-management.md"
             is_valid, errors = validate_version_bump(
                 version_file, story_file=story_path, config=config
             )
@@ -184,11 +184,11 @@ def test_validate_version_bump_build_increment_perpetual():
             version_dir.mkdir(parents=True)
             version_file = version_dir / "version.py"
 
-            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-6"
-            task_dir = story_dir / "Story-007-adk-implementation-analysis-and-package-management"
+            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-06"
+            task_dir = story_dir / "story-07-adk-implementation-analysis-and-package-management"
             task_dir.mkdir(parents=True)
 
-            story_file = story_dir / "Story-007-adk-implementation-analysis-and-package-management.md"
+            story_file = story_dir / "story-07-adk-implementation-analysis-and-package-management.md"
             story_file.write_text("""
 # Story 007
 **Code:** E6S07
@@ -253,12 +253,12 @@ kanban_root: docs/project-management/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
-            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-6"
+            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-06"
             story_dir.mkdir(parents=True)
-            task_dir = story_dir / "Story-007-adk-implementation-analysis-and-package-management"
+            task_dir = story_dir / "story-07-adk-implementation-analysis-and-package-management"
             task_dir.mkdir(parents=True)
 
-            story_file = story_dir / "Story-007-adk-implementation-analysis-and-package-management.md"
+            story_file = story_dir / "story-07-adk-implementation-analysis-and-package-management.md"
             story_file.write_text("""
 # Story 007 – ADK Implementation Analysis
 **Code:** E6S07
@@ -292,7 +292,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
-            story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-6" / "Story-007-adk-implementation-analysis-and-package-management.md"
+            story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-06" / "story-07-adk-implementation-analysis-and-package-management.md"
             is_valid, errors = validate_version_bump(
                 version_file, story_file=story_path, config=config
             )
@@ -328,12 +328,12 @@ kanban_root: docs/project-management/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
-            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-6"
+            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-06"
             story_dir.mkdir(parents=True)
-            task_dir = story_dir / "Story-007-adk-implementation-analysis-and-package-management"
+            task_dir = story_dir / "story-07-adk-implementation-analysis-and-package-management"
             task_dir.mkdir(parents=True)
 
-            story_file = story_dir / "Story-007-adk-implementation-analysis-and-package-management.md"
+            story_file = story_dir / "story-07-adk-implementation-analysis-and-package-management.md"
             story_file.write_text("""
 # Story 007 – ADK Implementation Analysis
 **Code:** E6S07
@@ -360,11 +360,11 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
             # Create canonical T03 doc for --art adoption
-            story2_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-2"
+            story2_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-02"
             story2_dir.mkdir(parents=True)
-            task2_dir = story2_dir / "Story-016-perpetual-ongoing-workflow-operations"
+            task2_dir = story2_dir / "story-16-perpetual-ongoing-workflow-operations"
             task2_dir.mkdir(parents=True)
-            story2_file = story2_dir / "Story-016-perpetual-ongoing-workflow-operations.md"
+            story2_file = story2_dir / "story-16-perpetual-ongoing-workflow-operations.md"
             story2_file.write_text("""
 # Story 016 – Perpetual Ongoing Workflow Operations
 **Code:** E2S16
@@ -394,7 +394,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
-            story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-2" / "Story-016-perpetual-ongoing-workflow-operations.md"
+            story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-02" / "story-16-perpetual-ongoing-workflow-operations.md"
             is_valid, errors = validate_version_bump(
                 version_file,
                 story_file=story_path,
@@ -442,10 +442,10 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
                 )
             )
 
-            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "Epic-2"
-            task_dir = story_dir / "Story-001-test"
+            story_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-02"
+            task_dir = story_dir / "story-01-test"
             task_dir.mkdir(parents=True)
-            story_file = story_dir / "Story-001-test.md"
+            story_file = story_dir / "story-01-test.md"
             story_file.write_text("- [x] **E2:S01:T13** - ✅ COMPLETE\n")
             task_file = task_dir / "T13-test.md"
             task_file.write_text(

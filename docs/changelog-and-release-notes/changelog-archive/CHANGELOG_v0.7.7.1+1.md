@@ -19,7 +19,7 @@ Kanban init and first release for **E07:S07 – Code Reviews**: published workfl
 ### E07:S07:T01 — Workflow machinery code review (FR-107)
 
 - Created **E07:S07** story *Code Reviews* and rehomed review task from E02:S13:T09.
-- Published [`T01-workflow-machinery-code-review-report.md`](../../project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-workflow-machinery-code-review-report.md): component inventory (~107 scripts), fragmentation matrix, efficiency recommendations, severity-ranked findings (0 Critical, 3 High, 6 Medium, 4 Low), remediation backlog.
+- Published [`T01-workflow-machinery-code-review-report.md`](../../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md): component inventory (~107 scripts), fragmentation matrix, efficiency recommendations, severity-ranked findings (0 Critical, 3 High, 6 Medium, 4 Low), remediation backlog.
 - Completed [`IPP-E07S07T01`](../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md) implementation; verification V1–V7 PASS.
 - **E02:S13** RC gate: conditional sign-off — schedule CI pytest gate (H1) and FR-050 flat YAML cleanup (H2) before full RC.
 
@@ -41,4 +41,4 @@ Kanban init and first release for **E07:S07 – Code Reviews**: published workfl
 ## References
 
 - [FR-107](../../project-management/kanban/fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)
-- [Review report](../../project-management/kanban/epics/Epic-7/Story-007-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [Review report](../../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)

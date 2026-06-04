@@ -326,6 +326,10 @@ def resolve_kanban_paths(
     else:
         # Default fallback: try multiple patterns
         story_patterns = [
+            f"epics/epic-{epic:02d}/story-{story:02d}-*.md",
+            f"epics/epic-{epic}/story-{story:02d}-*.md",
+            f"epics/epic-{epic}/story-{story:03d}-*.md",
+            f"epics/epic-{epic}/story-{story}-*.md",
             f"epics/Epic-{epic}/Story-{story:03d}-*.md",
             f"epics/Epic-{epic}/Story-{story}-*.md",
         ]
@@ -360,8 +364,9 @@ def resolve_kanban_paths(
     else:
         # Default fallback patterns
         epic_patterns = [
+            kanban_root / f"epics/epic-{epic}/epic-{epic}.md",
+            kanban_root / f"epics/Epic-{epic}/Epic-{epic}.md",
             project_root / f"docs/project-management/epics/overview/Epic {epic}/Epic-{epic}.md",
-            project_root / f"docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md",
         ]
         epic_doc = None
         for pattern in epic_patterns:

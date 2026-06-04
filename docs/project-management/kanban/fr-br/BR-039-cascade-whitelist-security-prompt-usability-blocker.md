@@ -8,17 +8,17 @@ housekeeping_policy: keep
 
 # Bug Report BR-039 – Cascade Whitelist Security Prompt Usability Blocker
 
-**Status:** IN PROGRESS (**product** / Cascade fix **unverified** — maintainer **does not use Windsurf**; **no subscription**; **[E06:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)** = **✅ COMPLETE** for **repo** traceability + docs only)  
+**Status:** IN PROGRESS (**product** / Cascade fix **unverified** — maintainer **does not use Windsurf**; **no subscription**; **[E06:S06:T57](../epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)** = **✅ COMPLETE** for **repo** traceability + docs only)  
 **Priority:** CRITICAL  
 **Severity:** HIGH  
 **Created:** 2026-03-09  
 **Last updated:** 2026-04-02 — **`RW -k`** **E06:S06:T57** **v0.6.6.57+6** (SemVer **v0.4.705+6**); **T57** repo **COMPLETE**; **BR-039** stays open for vendor/community verification  
 **Version:** v0.6.6.57+6  
 **Code:** BR-039  
-**Implementing Task (repo — COMPLETE):** [E06:S06:T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
+**Implementing Task (repo — COMPLETE):** [E06:S06:T57](../epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
 **Planning Artifact (IPW):** [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md)
 
-**Complementary (repo — Cursor):** [E06:S07:T107](../epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) — pattern catalog + validator ([ADR-013](../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)); **does not** fix Cascade product whitelist.
+**Complementary (repo — Cursor):** [E06:S07:T107](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) — pattern catalog + validator ([ADR-013](../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)); **does not** fix Cascade product whitelist.
 
 ---
 
@@ -144,7 +144,7 @@ Use append-only entries with these fields:
 - **expected:** (1) Whitelist persists, no repeat prompt. (2) Validator exit 0.  
 - **observed:** (1) Not executed here. (2) Exit 0 for both.  
 - **result:** **`blocked`** for (1); auxiliary **`pass`** for (2) — does not prove Cascade fixed.  
-- **notes:** Mirror of [T57 — Evidence § E1](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md). *(Superseded for this maintainer by **E2**: optional Windsurf retest **waived** — Cursor-only.)*
+- **notes:** Mirror of [T57 — Evidence § E1](../epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md). *(Superseded for this maintainer by **E2**: optional Windsurf retest **waived** — Cursor-only.)*
 
 ### Log entry E2 — 2026-04-02 (reporter Cursor-only)
 
@@ -154,7 +154,7 @@ Use append-only entries with these fields:
 - **expected:** N/A (waived).  
 - **observed:** Maintainer **switched back to Cursor**; no Windsurf verification planned.  
 - **result:** **`blocked` / waived (reporter)** — product behavior **not** re-tested; **not** “fixed”.  
-- **notes:** Mirror of [T57 — Evidence § E2](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md). **Superseded** by maintainer policy: **no Windsurf subscription** — **T57** closed repo-side; **BR-039** remains for **Cascade** product state.
+- **notes:** Mirror of [T57 — Evidence § E2](../epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md). **Superseded** by maintainer policy: **no Windsurf subscription** — **T57** closed repo-side; **BR-039** remains for **Cascade** product state.
 
 ## Success Criteria
 
@@ -175,7 +175,7 @@ Use append-only entries with these fields:
 
 - **BR-038:** Release Workflow Micromanagement and Tool Discovery Issues (symptom of this root cause)
 - **E06:S06:T02:** Fix Release Workflow Micromanagement Issues (attempted to fix symptoms, not root cause)
-- **E06:S06:T57:** Implementing task — [T57](../epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
+- **E06:S06:T57:** Implementing task — [T57](../epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
 
 ## Priority Justification
 

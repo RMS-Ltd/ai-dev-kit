@@ -17,7 +17,7 @@ This release completes **Task 1: Review existing dev-kit Kanban policies and tem
 
 ### Task 1 Completion
 
-- ✅ Created **gap analysis report** (`T001-gap-analysis-report.md`)
+- ✅ Created **gap analysis report** (`T01-gap-analysis-report.md`)
   - Compared framework Kanban governance policy with dev-kit policy
   - Compared framework templates (Epic, Story) with dev-kit usage
   - Identified 7 critical gaps:
@@ -32,7 +32,7 @@ This release completes **Task 1: Review existing dev-kit Kanban policies and tem
   - Identified dev-kit policy gaps (missing framework principles)
   - Provided prioritized recommendations
 
-- ✅ Updated **Story 001** (`Story-001-dev-kit-kanban-implementation.md`)
+- ✅ Updated **Story 001** (`story-01-dev-kit-kanban-implementation.md`)
   - Marked Task 1 as complete in task checklist
   - Updated task details with completion status and findings summary
 
@@ -68,7 +68,7 @@ This release completes **Task 1: Review existing dev-kit Kanban policies and tem
 
 ## 📝 Notes
 
-The gap analysis provides a comprehensive foundation for the next tasks (T002-T005) which will ingest findings from fynd.deals Epic 15 work and update the dev-kit Kanban governance policy as canonical SoT.
+The gap analysis provides a comprehensive foundation for the next tasks (T02-T005) which will ingest findings from fynd.deals Epic 15 work and update the dev-kit Kanban governance policy as canonical SoT.
 
 ---
 
@@ -83,7 +83,7 @@ The gap analysis provides a comprehensive foundation for the next tasks (T002-T0
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation/T001-gap-analysis-report.md` (created)
-- `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation.md` (updated)
+- `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation/T01-gap-analysis-report.md` (created)
+- `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation.md` (updated)
 - `src/fynd_deals/version.py` (version bumped to 0.4.1.1+2)
 

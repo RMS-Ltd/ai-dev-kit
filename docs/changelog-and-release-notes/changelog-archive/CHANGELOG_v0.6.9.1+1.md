@@ -11,7 +11,7 @@
 
 ## Documentation & traceability
 
-- New story **[E6:S09](docs/project-management/kanban/epics/Epic-6/Story-009-ai-dev-kit-installation-and-adopter-integration.md)** and tasks **T01–T03** under **Epic 6 / Story 007** pointer.
+- New story **[E6:S09](docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md)** and tasks **T01–T03** under **Epic 6 / Story 007** pointer.
 - **[FR-080](docs/project-management/kanban/fr-br/FR-080-greenfield-installation-process.md)** implementing task **E6:S09:T01**; **[FR-081](docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)** / **[FR-082](docs/project-management/kanban/fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)** filed with tasks **T02**, **T03**.
 - **[ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)** Related section links **E6:S09** and FRs.
 

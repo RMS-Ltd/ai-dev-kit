@@ -24,7 +24,7 @@
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md`
 - Changes:
   - Updated T02 task doc COMPLETE v0.7.7.2+1
 
@@ -57,16 +57,16 @@
 
 - Touched: **False**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-7/Story-007-code-reviews.md`
+  - `docs/project-management/kanban/epics/epic-07/story-07-code-reviews.md`
 
 ### Auxiliary: `epic_doc`
 
 - Touched: **False**
 - Path(s):
-  - `docs/project-management/kanban/epics/Epic-7/Epic-7.md`
+  - `docs/project-management/kanban/epics/epic-07/epic-07.md`
 
 ### Auxiliary: `uncategorized`
 
 - Touched: **True**
 - Changes:
-  - Updated Story-007 and Epic-7 headers
+  - Updated story-007 and epic-07 headers

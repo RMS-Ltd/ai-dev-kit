@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.2.16.16+2 (Internal functional) | v0.2.16.16+3 (UKW `-c` hygiene) | v0.4.840+3 (SemVer)
 **GitHub Issue:** [TBD]
 
-**Implementing Task:** [E02:S16:T16](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)
+**Implementing Task:** [E02:S16:T16](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)
 
 ---
 
@@ -38,7 +38,7 @@ Active boards still carry rows whose **source-of-truth** status is terminal (for
 | **kboard** | Comprehensive UKW and RW Step 7 may reconcile status text on rows | No **lightweight, explicit** operator command whose **only** job is “archive completes → remove from active MoSCOW” |
 | **fbuboard** | [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) stale-row **prune** | Prune can drop active rows without a mandated **`fbu-completed.md`** append + recent-dashboard update in the same run |
 | **Completed ledgers** | [`kanban-completed.md`](../kanban-completed.md), [`fbu-completed.md`](../fbu-completed.md) | Archival must use **Documentation Agent** skills (`kanban_completed_update`, `fr_br_uxr_completed_update`) — not delete-only hygiene |
-| **Historical fix** | [E06:S06:T42](../epics/Epic-6/Story-006-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md) (BR-042) | Addressed general cleanup; did not define a **standalone UKW flag** or dual-board contract |
+| **Historical fix** | [E06:S06:T42](../epics/epic-06/story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md) (BR-042) | Addressed general cleanup; did not define a **standalone UKW flag** or dual-board contract |
 
 Operators need a **fast, safe, repeatable** UKW use case: “clean the boards” means **move** completed work to the completed ledgers, not silent deletion.
 
@@ -146,8 +146,8 @@ For each active MoSCOW row on **`fbuboard.md`**:
 - [FR-049](FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md) — completed ledger format
 - [FR-050](FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) — FBU temporal sync
 - [FR-086](FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) — canonical `kanban-completed` / `fbu-completed` naming
-- [BR-042](../fr-br/BR-042-ukw-agent-board-cleanup-failure.md) / [E06:S06:T42](../epics/Epic-6/Story-006-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md)
-- [E02:S16:T04](../epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) — UKW perpetual attribution
+- [BR-042](../fr-br/BR-042-ukw-agent-board-cleanup-failure.md) / [E06:S06:T42](../epics/epic-06/story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md)
+- [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) — UKW perpetual attribution
 - [Workflow initiation cheatsheet](../../guides/workflow-initiation-cheatsheet.md)
 
 ---

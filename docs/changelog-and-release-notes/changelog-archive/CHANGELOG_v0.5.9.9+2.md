@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-03-31 12:11:04 UTC  
 **Epic:** 5 | **Story:** 9 | **Task:** 9  
-**Task doc:** [T09-github-pages-go-live-verification.md](../../project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T09-github-pages-go-live-verification.md)  
+**Task doc:** [T09-github-pages-go-live-verification.md](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T09-github-pages-go-live-verification.md)  
 **Mode:** Full **RW** (E5:S09:T09)
 
 ## Summary

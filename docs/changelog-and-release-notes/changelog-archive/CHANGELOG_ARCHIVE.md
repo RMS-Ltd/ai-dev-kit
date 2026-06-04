@@ -568,7 +568,7 @@ E2:S01:T09+2 — Re-implemented terminal row timestamp governance for active boa
 ---
 ## [0.2.1.9+1] - 02-04-26
 
-E2:S01:T09+1 — **BR-060** kanban traceability (canonical **E2:S01:T09**); **E2:S01** reopened; stubs **E6:S06:T60** / **E4:S19:T01**; **BR-061** filed (**CRITICAL** — RW explicit `E:S:T` vs `version.py` / Step 1). [T09](../../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md); [BR-060](../../project-management/kanban/fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md); [BR-061](../../project-management/kanban/fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md).
+E2:S01:T09+1 — **BR-060** kanban traceability (canonical **E2:S01:T09**); **E2:S01** reopened; stubs **E6:S06:T60** / **E4:S19:T01**; **BR-061** filed (**CRITICAL** — RW explicit `E:S:T` vs `version.py` / Step 1). [T09](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md); [BR-060](../../project-management/kanban/fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md); [BR-061](../../project-management/kanban/fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md).
 
 [Detailed changelog](CHANGELOG_v0.2.1.9+1.md)
 
@@ -577,7 +577,7 @@ E2:S01:T09+1 — **BR-060** kanban traceability (canonical **E2:S01:T09**); **E2
 ---
 ## [0.6.6.61+1] - 02-04-26
 
-E6:S06:T61 — **UXR-006** (change implemented): MoSCOW **`Last modified`** UTC on task + FR/BR/UXR boards; **KG-R2** intake (**T61**); guide and board notes. [T61](../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md); [UXR-006](../../project-management/kanban/fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md).
+E6:S06:T61 — **UXR-006** (change implemented): MoSCOW **`Last modified`** UTC on task + FR/BR/UXR boards; **KG-R2** intake (**T61**); guide and board notes. [T61](../../project-management/kanban/epics/epic-06/story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md); [UXR-006](../../project-management/kanban/fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md).
 
 [Detailed changelog](CHANGELOG_v0.6.6.61+1.md)
 
@@ -586,7 +586,7 @@ E6:S06:T61 — **UXR-006** (change implemented): MoSCOW **`Last modified`** UTC 
 ---
 ## [0.6.6.60+1] - 02-04-26
 
-E6:S06:T60 — **BR-060** (change implemented): RW Step 1c allows **`IN PROGRESS`** task releases; **`validate_version_bump`** task-doc lookup by **Task ID** across kanban when story pattern matches the wrong file; RW Step 1c wording in `.cursorrules` / portable RW excerpt. [T60 stub](../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T60-rw-allow-in-progress-task-releases.md); canonical task **[E2:S01:T09](../../project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)**; [BR-060](../../project-management/kanban/fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md).
+E6:S06:T60 — **BR-060** (change implemented): RW Step 1c allows **`IN PROGRESS`** task releases; **`validate_version_bump`** task-doc lookup by **Task ID** across kanban when story pattern matches the wrong file; RW Step 1c wording in `.cursorrules` / portable RW excerpt. [T60 stub](../../project-management/kanban/epics/epic-06/story-06-feature-requests/T60-rw-allow-in-progress-task-releases.md); canonical task **[E2:S01:T09](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T09-rw-allow-in-progress-task-releases-br060.md)**; [BR-060](../../project-management/kanban/fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md).
 
 [Detailed changelog](CHANGELOG_v0.6.6.60+1.md)
 
@@ -595,7 +595,7 @@ E6:S06:T60 — **BR-060** (change implemented): RW Step 1c allows **`IN PROGRESS
 ---
 ## [0.6.6.57+5] - 02-04-26
 
-**`RW -k` repair (Option B) E6:S06:T57** — Outward **SemVer `v0.4.704+5`**; remote **`v0.4.703+4`** collision avoided. [T57](../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
+**`RW -k` repair (Option B) E6:S06:T57** — Outward **SemVer `v0.4.704+5`**; remote **`v0.4.703+4`** collision avoided. [T57](../../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
 
 [Detailed changelog](CHANGELOG_v0.6.6.57+5.md)
 
@@ -604,7 +604,7 @@ E6:S06:T60 — **BR-060** (change implemented): RW Step 1c allows **`IN PROGRESS
 ---
 ## [0.6.6.57+4] - 02-04-26
 
-**`RW -k` E6:S06:T57** — **BR-039** repo task **COMPLETE** (no Windsurf obligation; **BR-039** open for product); boards + **BR-039** + **`dev-kit-kanban-versioning-rw-integration.md`** § **`RW -k`**. [T57](../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md); [BR-039](../../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md).
+**`RW -k` E6:S06:T57** — **BR-039** repo task **COMPLETE** (no Windsurf obligation; **BR-039** open for product); boards + **BR-039** + **`dev-kit-kanban-versioning-rw-integration.md`** § **`RW -k`**. [T57](../../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md); [BR-039](../../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md).
 
 [Detailed changelog](CHANGELOG_v0.6.6.57+4.md)
 
@@ -613,7 +613,7 @@ E6:S06:T60 — **BR-060** (change implemented): RW Step 1c allows **`IN PROGRESS
 ---
 ## [0.6.6.57+3] - 02-04-26
 
-E6:S06:T57 — **BR-039** (change implemented in repo): Evidence **E1**/**E2** (agent checklist + **Cursor-only** maintainer; Windsurf retest **waived**); BR-039 **Maintainer disposition**; board row — **not** a verified Cascade fix. [T57](../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md); [BR-039](../../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md).
+E6:S06:T57 — **BR-039** (change implemented in repo): Evidence **E1**/**E2** (agent checklist + **Cursor-only** maintainer; Windsurf retest **waived**); BR-039 **Maintainer disposition**; board row — **not** a verified Cascade fix. [T57](../../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md); [BR-039](../../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md).
 
 [Detailed changelog](CHANGELOG_v0.6.6.57+3.md)
 
@@ -622,7 +622,7 @@ E6:S06:T57 — **BR-039** (change implemented in repo): Evidence **E1**/**E2** (
 ---
 ## [0.6.6.57+2] - 02-04-26
 
-E6:S06:T57 — **BR-039** (change implemented in repo): Durable **IPW** package, task↔BR↔plan wiring, re-verification protocol and evidence schema; no vendor product fix claimed. [T57](../../project-management/kanban/epics/Epic-6/Story-006-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md); [BR-039](../../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md); [IPW](../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md).
+E6:S06:T57 — **BR-039** (change implemented in repo): Durable **IPW** package, task↔BR↔plan wiring, re-verification protocol and evidence schema; no vendor product fix claimed. [T57](../../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md); [BR-039](../../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md); [IPW](../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md).
 
 [Detailed changelog](CHANGELOG_v0.6.6.57+2.md)
 
@@ -631,7 +631,7 @@ E6:S06:T57 — **BR-039** (change implemented in repo): Durable **IPW** package,
 ---
 ## [0.5.1.75+1] - 01-04-26
 
-E5:S01:T75 — **ICW durable planning artifacts** in repo docs (**FR-075**): policy, `implementation-cycles` README, ICW framework docs, `.cursorrules`. [T75](../../project-management/kanban/epics/Epic-5/Story-001-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md); [FR-075](../../project-management/kanban/fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md).
+E5:S01:T75 — **ICW durable planning artifacts** in repo docs (**FR-075**): policy, `implementation-cycles` README, ICW framework docs, `.cursorrules`. [T75](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md); [FR-075](../../project-management/kanban/fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md).
 
 [Detailed changelog](CHANGELOG_v0.5.1.75+1.md)
 
@@ -667,7 +667,7 @@ E7:S00:T04 **`RW -k`** — UXR-004 repository anchor + board row restore.
 ---
 ## [0.7.0.3+0] - 31-03-26
 
-E7:S00:T03 **`RW -k`** — UXR-003 repository anchor + board/Story-000 slice.
+E7:S00:T03 **`RW -k`** — UXR-003 repository anchor + board/story-000 slice.
 
 [Detailed changelog](CHANGELOG_v0.7.0.3+0.md)
 
@@ -838,7 +838,7 @@ E7:S06:T04+1 – Recent commit review: RW/batch/quality findings in T04; kanban 
 ---
 ## [0.7.6.3+1] - 25-03-26
 
-E7:S06:T03+1 – Kanban documentation consistency: live SoT, E9/E18 disambiguation, kanban links, Epic-9 S05 stub.
+E7:S06:T03+1 – Kanban documentation consistency: live SoT, E9/E18 disambiguation, kanban links, epic-09 S05 stub.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.6.3+1.md)
 
@@ -1395,7 +1395,7 @@ E1:S06:T01+1 – BYOB Badges: Set up BYOB badges for private repository: Impleme
 ### Notes
 
 - See `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.1+3.md` for full details
-- Audit report: `docs/project-management/kanban/epics/Epic-2/stories/Story-001-rw-agent-execution-and-docs/T001-audit-report.md`
+- Audit report: `docs/project-management/kanban/epics/epic-02/stories/story-01-rw-agent-execution-and-docs/T01-audit-report.md`
 - Findings will be addressed in T002 and T003
 
 ---
@@ -1576,7 +1576,7 @@ E1:S06:T01+1 – BYOB Badges: Set up BYOB badges for private repository: Impleme
 - Created Story 2: PDCA Integration into Release Workflow
 - Created comprehensive PDCA integration plan document
 - Created changelog and commit language analysis document
-- Created 6 tasks for PDCA implementation (T001-T006)
+- Created 6 tasks for PDCA implementation (T01-T006)
 
 ### Changed
 
@@ -1821,7 +1821,7 @@ E1:S06:T01+1 – BYOB Badges: Set up BYOB badges for private repository: Impleme
 
 ### Changed
 
-- Updated task references in KB documentation to Txx format (T001-T008 → T01-T08)
+- Updated task references in KB documentation to Txx format (T01-T008 → T01-T08)
 - Updated task range references in documentation
 - Updated FR/BR Intake Guide examples
 
@@ -2827,7 +2827,7 @@ E1:S06:T01+1 – BYOB Badges: Set up BYOB badges for private repository: Impleme
 **Test Execution:**
 - ✅ Executed PIR workflow end-to-end with Epic 2 (partial - Stories 1, 2, 5)
 - ✅ All 16 workflow steps completed successfully
-- ✅ Generated test PIR report: `PIR-Epic-2-TEST-v0.2.5.10+1.md`
+- ✅ Generated test PIR report: `PIR-epic-02-TEST-v0.2.5.10+1.md`
 - ✅ Created test execution report documenting test results
 
 **Integration Validation:**
@@ -2853,7 +2853,7 @@ E1:S06:T01+1 – BYOB Badges: Set up BYOB badges for private repository: Impleme
 - **Story:** Story 5 - Post-Implementation Review Workflow
 - **Task:** Task 12 - Test PIR workflow with sample Epic
 - **Test Subject:** Epic 2 (partial - Stories 1, 2, 5)
-- **Test Report:** `docs/Reviews/pir/Epic-2/PIR-TEST-EXECUTION-REPORT.md`
+- **Test Report:** `docs/Reviews/pir/epic-02/PIR-TEST-EXECUTION-REPORT.md`
 
 ---
 
@@ -2872,7 +2872,7 @@ E1:S06:T01+1 – BYOB Badges: Set up BYOB badges for private repository: Impleme
 - ✅ Executed Story-level PIR workflow end-to-end with Story 2
 - ✅ Significance evaluation tested (Step 2): High Significance → Proceed
 - ✅ All 16 workflow steps completed successfully
-- ✅ Generated test PIR report: `PIR-Story-2-TEST-v0.2.2.8+1.md`
+- ✅ Generated test PIR report: `PIR-story-02-TEST-v0.2.2.8+1.md`
 - ✅ Created test execution report documenting test results
 
 **Significance Evaluation Validation:**
@@ -2905,7 +2905,7 @@ E1:S06:T01+1 – BYOB Badges: Set up BYOB badges for private repository: Impleme
 - **Story:** Story 5 - Post-Implementation Review Workflow
 - **Task:** Task 13 - Test PIR workflow with sample Story
 - **Test Subject:** Story 2 - PDCA Integration into Release Workflow (v0.2.2.8+1)
-- **Test Report:** `docs/Reviews/pir/Story-2/PIR-STORY-TEST-EXECUTION-REPORT.md`
+- **Test Report:** `docs/Reviews/pir/story-002/PIR-STORY-TEST-EXECUTION-REPORT.md`
 
 ---
 
@@ -2993,7 +2993,7 @@ E1:S06:T01+1 – BYOB Badges: Set up BYOB badges for private repository: Impleme
 - **Task:** Task 15 - Create PIR usage guide and examples
 - **PIR Reference:** `pir-workflow-reference.md`
 - **PIR Execution Guide:** `pir-workflow-agent-execution.md`
-- **Example Reports:** `docs/Reviews/pir/Epic-2/PIR-Epic-2-TEST-*.md`, `docs/Reviews/pir/Story-2/PIR-Story-2-TEST-*.md`
+- **Example Reports:** `docs/Reviews/pir/epic-02/PIR-epic-02-TEST-*.md`, `docs/Reviews/pir/story-002/PIR-story-02-TEST-*.md`
 
 ---
 
@@ -4581,7 +4581,7 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 
 ### Added
 
-- Created **Epic 3: Numbering & Versioning Framework** (`docs/project-management/kanban/epics/Epic-3.md`)
+- Created **Epic 3: Numbering & Versioning Framework** (`docs/project-management/kanban/epics/epic-03.md`)
 - Created **Story 1: Dev Kit Alignment with Versioning Framework** with 5 initial tasks
 - Updated Kanban board views with Epic 3 Story 1 references
 
@@ -4612,7 +4612,7 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 
 ### Notes
 
-- Gap analysis: `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework/T001-gap-analysis-report.md`
+- Gap analysis: `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md`
 - See `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.1.1+2.md` for full details
 
 ---
@@ -4636,7 +4636,7 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 
 ### Notes
 
-- Findings document: `docs/project-management/kanban/epics/Epic-3/stories/Story-001-dev-kit-alignment-with-versioning-framework/T002-fynd-deals-epic15-findings.md`
+- Findings document: `docs/project-management/kanban/epics/epic-03/stories/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md`
 - See `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.1.2+1.md` for full details
 
 ---
@@ -5002,11 +5002,11 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
   - Added package manager compatibility warning
 - **Dev-Kit Versioning Policy** (`docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`):
   - Added reference to dual-versioning guide in Related Documentation section
-- **Epic 3 Documentation** (`docs/project-management/kanban/epics/Epic-3/Epic-3.md`):
+- **Epic 3 Documentation** (`docs/project-management/kanban/epics/epic-03/epic-03.md`):
   - Updated Story 2 status to IN PROGRESS
   - Added T07 to task checklist
   - Updated last updated timestamp
-- **Story 2 Documentation** (`docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples.md`):
+- **Story 2 Documentation** (`docs/project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples.md`):
   - Added T07: Create dual-versioning guide for package manager compatibility
   - Updated status to IN PROGRESS
   - Updated last updated timestamp
@@ -5265,7 +5265,7 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 ### Changed
 
 - **Epic 3 Status Update** - Marked Epic 3 as COMPLETE in all Kanban documentation
-  - Updated Epic-3.md: Status changed from TODO to COMPLETE ✅
+  - Updated epic-03.md: Status changed from TODO to COMPLETE ✅
   - Updated kanban-board.md: Epic 3 and all 3 stories marked as COMPLETE ✅
   - Epic 3: Numbering & Versioning Framework is now complete with all stories finished
 
@@ -5282,7 +5282,7 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 
 ### Added
 
-- Created **Epic 4: Kanban Framework** (`docs/project-management/kanban/epics/Epic-4.md`)
+- Created **Epic 4: Kanban Framework** (`docs/project-management/kanban/epics/epic-04.md`)
 - Created **Story 1: Dev Kit Kanban Implementation** with 5 initial tasks
 - Updated Kanban board views with Epic 4 Story 1 references
 
@@ -5309,7 +5309,7 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 
 ### Notes
 
-- Gap analysis: `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation/T001-gap-analysis-report.md`
+- Gap analysis: `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation/T01-gap-analysis-report.md`
 - See `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.1.1+2.md` for full details
 
 ---
@@ -5329,7 +5329,7 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 
 ### Notes
 
-- Findings document: `docs/project-management/kanban/epics/Epic-4/stories/Story-001-dev-kit-kanban-implementation/T002-fynd-deals-epic15-kanban-findings.md`
+- Findings document: `docs/project-management/kanban/epics/epic-04/stories/story-01-dev-kit-kanban-implementation/T02-fynd-deals-epic15-kanban-findings.md`
 - See `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.1.1+3.md` for full details
 
 ---
@@ -8152,7 +8152,7 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 
 ### Added
 
-- **Epic 11 Template:** Epic-11-API-Backend.md (Project-specific)
+- **Epic 11 Template:** epic-11-API-Backend.md (Project-specific)
 
 ### Changed
 
@@ -8216,16 +8216,16 @@ Completed E2:S09 by verifying T06 completion status and marking story as COMPLET
 ### Added
 
 - **Epic Templates:** Created 10 remaining epic template files (Epics 12-21):
-  - Epic-12-Frontend-UI.md
-  - Epic-13-Testing-QA.md
-  - Epic-14-Deployment-DevOps.md
-  - Epic-15-Security.md
-  - Epic-16-Performance.md
-  - Epic-17-Integration.md
-  - Epic-18-Documentation.md (Core Framework Epic)
-  - Epic-19-Analytics.md
-  - Epic-20-Mobile.md
-  - Epic-21-Internationalization.md
+  - epic-12-Frontend-UI.md
+  - epic-13-Testing-QA.md
+  - epic-14-Deployment-DevOps.md
+  - epic-15-Security.md
+  - epic-16-Performance.md
+  - epic-17-Integration.md
+  - epic-18-Documentation.md (Core Framework Epic)
+  - epic-19-Analytics.md
+  - epic-20-Mobile.md
+  - epic-21-Internationalization.md
 
 ### Changed
 
@@ -8962,7 +8962,7 @@ Story 11 (Kanban Granularity & Discrete Task Docs) is now COMPLETE. All tasks (T
 
 - **Delegation Compliance Audit** (`packages/frameworks/kanban/templates/DELEGATION_COMPLIANCE_AUDIT.md`):
   - Comprehensive audit of Epic and Story documents for tier delegation violations
-  - Documented violations in Epic-4.md and Epic-2.md
+  - Documented violations in epic-04.md and epic-02.md
   - Compliance status tracking and migration priority
   - Migration progress tracking
 
@@ -8975,8 +8975,8 @@ Story 11 (Kanban Granularity & Discrete Task Docs) is now COMPLETE. All tasks (T
 
 ### Compliance Audit Findings
 
-- **Epic-4.md:** Multiple violations - detailed Story sections with Status, Priority, Goals, Tasks
-- **Epic-2.md:** Violations found - detailed Story sections with Status, Priority, Goals, Tasks
+- **epic-04.md:** Multiple violations - detailed Story sections with Status, Priority, Goals, Tasks
+- **epic-02.md:** Violations found - detailed Story sections with Status, Priority, Goals, Tasks
 - **Other Epic documents:** Not yet audited (medium priority)
 
 ### Related Work
@@ -9366,7 +9366,7 @@ E5:S03:T01-T03+1 – Documentation Automation: Proper archival with comprehensiv
   - Added link to post-template setup guide for Use Case 1 (Template → All Packages)
 - **FAQ** (`framework-dependency-faq.md`):
   - Added both new template guides to references section
-- **Story 4 Documentation** (`Epic-5/Story-004-framework-documentation-management.md`):
+- **Story 4 Documentation** (`epic-05/story-04-framework-documentation-management.md`):
   - Updated T07 deliverables with completed documentation items
   - Updated success criteria to reflect documentation completion
 
@@ -9411,7 +9411,7 @@ E5:S03:T01-T03+1 – Documentation Automation: Proper archival with comprehensiv
   - Incorporation plan with 3 phases (High, Medium, Low priority)
   - Source material references and recommendations
   - Missing components analysis
-- **Story 5: Legacy Repository Incorporation** (`docs/project-management/kanban/epics/Epic-5/Story-005-legacy-repository-incorporation.md`):
+- **Story 5: Legacy Repository Incorporation** (`docs/project-management/kanban/epics/epic-05/story-05-legacy-repository-incorporation.md`):
   - Complete story with 25 tasks across 4 phases
   - Phase 0: Planning and Preparation (T01-T04)
   - Phase 1: High Priority Components (T05-T09) - Architectural principles, AI collaboration, template script
@@ -9421,7 +9421,7 @@ E5:S03:T01-T03+1 – Documentation Automation: Proper archival with comprehensiv
   - Each task includes problem statement, approach, deliverables, success criteria, and dependencies
 
 ### Changed
-- **Epic 5 Documentation** (`docs/project-management/kanban/epics/Epic-5/Epic-5.md`):
+- **Epic 5 Documentation** (`docs/project-management/kanban/epics/epic-05/epic-05.md`):
   - Added Story 5 to story checklist
   - Updated last updated timestamp
 
@@ -10578,7 +10578,7 @@ E6:S06:T41+0 – Windsurf: Investigate how to leverage AGENTS.md and SKILL.md fo
 ### Files Created
 
 - `docs/project-management/kanban/fr-br/FR-041-windsurf-investigate-agents-skills-for-workflows.md` - Feature request document
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T41-windsurf-investigate-agents-skills-for-workflows.md` - Task document
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T41-windsurf-investigate-agents-skills-for-workflows.md` - Task document
 - Updated kanban board with CRITICAL priority task
 
 ### Agent Architecture Design
@@ -10623,7 +10623,7 @@ E6:S06:T03+2 – Apple SDK License Blocking Issue Investigation Complete: Succes
 - `cli/backends/git_submodule.py` - Added prerequisite checks and error detection
 - `cli/commands/install.py` - Updated exception handling for Apple SDK errors
 - `docs/documentation/user-docs/apple-platform-setup-guide.md` - New comprehensive setup guide
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests/T03-apple-sdk-license-blocking-issue.md` - Updated task status
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T03-apple-sdk-license-blocking-issue.md` - Updated task status
 
 ### User Impact
 
@@ -11151,9 +11151,9 @@ Kanban-init release anchoring E24:S01:T05. Raises the content development task f
 
 ### Book Project (E24)
 
-- **New:** `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development/T05-draft-chapter-1-this-isnt-working.md` — standalone task document for E24:S01:T05 with full input/deliverable/AC/approach spec
-- **New:** `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development/` — task directory created for S01 following E24:S05 pattern
-- **Updated:** `docs/project-management/kanban/epics/Epic-24/Story-001-book-content-development.md` — story file updated: title, overview, goal, task checklist, and references reframed for *Head First AI Dev Kit: The Vibe-Coder's Complete Guide*; T05 added to checklist
+- **New:** `docs/project-management/kanban/epics/epic-24/story-01-book-content-development/T05-draft-chapter-1-this-isnt-working.md` — standalone task document for E24:S01:T05 with full input/deliverable/AC/approach spec
+- **New:** `docs/project-management/kanban/epics/epic-24/story-01-book-content-development/` — task directory created for S01 following E24:S05 pattern
+- **Updated:** `docs/project-management/kanban/epics/epic-24/story-01-book-content-development.md` — story file updated: title, overview, goal, task checklist, and references reframed for *Head First AI Dev Kit: The Vibe-Coder's Complete Guide*; T05 added to checklist
 
 ### Chapter Structure & Drafts (produced in planning session, released here)
 

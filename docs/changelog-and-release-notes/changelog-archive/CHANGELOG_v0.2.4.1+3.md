@@ -42,7 +42,7 @@
   - Recommendations for T02-T03 implementation
 
 ### Updated
-- **Story 4 Task Checklist:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4 Task Checklist:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`
   - Marked T01 acceptance criteria as complete ✅
   - Added deliverable reference pointing to analysis document
 
@@ -62,4 +62,4 @@
 ## References
 - **Analysis Document:** `packages/frameworks/workflow mgt/docs/Analysis/T01-rw-adoption-friction-analysis.md`
 - **Previous Release (v0.2.4.1+2):** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.4.1+2.md`
-- **Story 4:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`

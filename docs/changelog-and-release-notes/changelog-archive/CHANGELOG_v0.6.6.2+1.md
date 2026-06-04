@@ -69,9 +69,9 @@ Package management investigation complete. Comprehensive evaluation of package m
 - `docs/Analysis/package-management-investigation-report.md` (new)
 - `docs/architecture/standards-and-adrs/package-management-design.md` (new)
 - `docs/architecture/standards-and-adrs/package-hash-verification-spec.md` (new)
-- `docs/project-management/kanban/epics/Epic-6/Story-006-adk-implementation-analysis-and-package-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md`
 - `docs/project-management/kanban/kanban-board.md`
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
+- `docs/project-management/kanban/epics/epic-06/epic-06.md`
 - `src/fynd_deals/version.py`
 
 ---

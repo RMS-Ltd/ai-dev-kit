@@ -25,8 +25,8 @@ E4:S16:T05 spec and validator: Gap log schema, `validate_gap_log.py`, unit tests
 
 ## Changed
 
-- **`docs/project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md`** – Spec and validator reference; AC "Overall RC risk posture" marked complete
-- **`docs/project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T6-define-rc-sign-off-criteria-and-remediation-tasks.md`** – Gap log checklist: schema validation command
+- **`docs/project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md`** – Spec and validator reference; AC "Overall RC risk posture" marked complete
+- **`docs/project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md`** – Gap log checklist: schema validation command
 - **`packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`** – Exception: gap log deliverables use `validate_gap_log.py`
 - **`docs/project-management/kanban/kanban-board.md`** – E4:S16:T05, E4:S16:T06 marked COMPLETE
 
@@ -34,5 +34,5 @@ E4:S16:T05 spec and validator: Gap log schema, `validate_gap_log.py`, unit tests
 
 ## References
 
-- **Task (E4:S16:T05):** `docs/project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md`
+- **Task (E4:S16:T05):** `docs/project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md`
 - **Spec:** `docs/architecture/standards-and-adrs/gap-log-schema.md`

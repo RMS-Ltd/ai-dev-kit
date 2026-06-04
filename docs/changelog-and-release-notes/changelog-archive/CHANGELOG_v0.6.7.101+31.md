@@ -46,6 +46,6 @@ UKW (Update Kanban Workflow) execution: MoSCOW Prioritized In-Progress Tasks sec
 
 ## Related
 
-- **Perpetual Task:** [E2:S16:T03](../../project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- **Perpetual Task:** [E2:S16:T03](../../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - **Previous Release:** [v0.6.7.101+30](CHANGELOG_v0.6.7.101+30.md)
 - **UKW Execution Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`

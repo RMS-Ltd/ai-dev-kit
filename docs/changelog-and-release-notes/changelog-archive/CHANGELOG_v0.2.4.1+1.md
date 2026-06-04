@@ -32,7 +32,7 @@
 
 ### Added
 - Story scaffold and analysis scope for RW installer story:
-  - `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+  - `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`
     - Defined Story 4 overview and goals
     - Defined Task Checklist for T01–T05
     - Scoped T01 analysis work (integration touchpoints and config keys)
@@ -51,6 +51,6 @@
 - Changes limited to Kanban/story documentation and analysis scope
 
 ## References
-- **Story 4:** `docs/project-management/kanban/epics/Epic-2/stories/Story-004-rw-installer-and-plug-and-play-adoption.md`
+- **Story 4:** `docs/project-management/kanban/epics/epic-02/stories/story-04-rw-installer-and-plug-and-play-adoption.md`
 - **Previous RW releases:** `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.6+2.md`, `CHANGELOG_v0.2.3.6+1.md`
 - **RW docs:** `packages/frameworks/workflow mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`

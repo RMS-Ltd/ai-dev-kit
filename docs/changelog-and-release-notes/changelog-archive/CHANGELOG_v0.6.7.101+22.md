@@ -79,7 +79,7 @@ UKW execution: Fixed T101 task header (Story 6 → Story 7), updated kanban boar
 **Files Modified:**
 - `T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md` - Header correction (Story 6 → Story 7)
 - `kanban-board.md` - MoSCOW section updated, Epic 9 status updated, references corrected
-- `Story-001-br-repo.md` - Added T34 to task checklist
+- `story-01-br-repo.md` - Added T34 to task checklist
 
 **Files Created:**
 - `BR-034-ukw-moscow-prioritization-missing.md` - Bug report document

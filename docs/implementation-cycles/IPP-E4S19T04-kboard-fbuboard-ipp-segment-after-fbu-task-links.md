@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E4:S19:T04 — Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md`](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) **(E4:S19:T04)**  
+**Host Task:** [`T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) **(E4:S19:T04)**  
 **Planning for:** [UXR-010 — kboard/fbuboard add `IPP` segment after FBU and task links](../project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)  
 **Status:** Published
 
@@ -134,7 +134,7 @@ The normative row contract (RF1–RF6) defines exact token text and segment orde
 
 ## References
 
-- [Host task E4:S19:T04](../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)
+- [Host task E4:S19:T04](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)
 - [UXR-010](../project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 - [kboard](../project-management/kanban/kboard.md)
 - [fbuboard](../project-management/kanban/fbuboard.md)

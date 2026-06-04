@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E02:S16:T16 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T16-ukw-archive-completed-board-rows-fr102.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) **(E02:S16:T16)**  
+**Host Task:** [`T16-ukw-archive-completed-board-rows-fr102.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) **(E02:S16:T16)**  
 **Planning for:** [FR-102 — UKW archive-completed (`-c`)](../project-management/kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)  
 **Status:** Published
 

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-13 — recurrence observed: SemVer tag collisions still possible in RW/tag boundary handling; reopened for regression hardening under **E03:S02:T12**.  
 **Version:** v0.3.2.12+3  
 **Code:** BR-061  
-**Implementing Task:** [E03:S02:T12](../epics/Epic-3/Story-002-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
+**Implementing Task:** [E03:S02:T12](../epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 
 **Scope note:** This tracks **versioning / `semver_converter.py` / RW usage**, not FR/BR intake mechanics.
 

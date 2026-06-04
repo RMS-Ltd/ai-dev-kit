@@ -76,7 +76,7 @@ Added comprehensive documentation for setting up the `.cursorrules` file to enab
 - `docs/documentation/user-docs/framework-dependency-installation-guide.md`
 - `docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md`
 - `docs/documentation/user-docs/framework-dependency-faq.md`
-- `docs/project-management/kanban/epics/Epic-5/Story-004-framework-documentation-management.md`
+- `docs/project-management/kanban/epics/epic-05/story-04-framework-documentation-management.md`
 
 ### Template File Referenced
 - `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`

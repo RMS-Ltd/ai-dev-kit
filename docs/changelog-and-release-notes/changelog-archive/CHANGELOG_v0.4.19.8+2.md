@@ -6,7 +6,7 @@
 **Story:** S19 — FR/BR/UXR abstract governance and intake  
 **Task:** T08 — FR-072 Approach D phases D2–D4 (merged T07)
 
-**Task doc:** [T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md](../../project-management/kanban/epics/Epic-4/Story-019-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
+**Task doc:** [T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md](../../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
 
 ---
 

@@ -26,5 +26,5 @@
 - Created `docs/architecture/standards-and-adrs/kb-structure-overview.md` as primary KB reference
 - Document serves as comprehensive guide for understanding and navigating KB structure
 - Includes directory purposes, navigation patterns, maintenance procedures, and scalability guidance
-- References related documents (T001-T006) for detailed information
+- References related documents (T01-T006) for detailed information
 

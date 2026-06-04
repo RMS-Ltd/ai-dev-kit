@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E2:S15:T02 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md) **(E2:S15:T02)**  
+**Host Task:** [`T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md) **(E2:S15:T02)**  
 **Planning for:** [FR-084 - IPP post-run governance reconciliation ownership](../project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md)  
 **Status:** Draft
 
@@ -101,7 +101,7 @@ Define an explicit, deterministic, and idempotent IPP post-run reconciliation co
 
 ## References
 
-- [Host task E2:S15:T02](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md)
+- [Host task E2:S15:T02](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md)
 - [FR-084](../project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md)
-- [Story 015](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract.md)
-- [T01 in Story 015](../project-management/kanban/epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
+- [Story 015](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md)
+- [T01 in Story 015](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)

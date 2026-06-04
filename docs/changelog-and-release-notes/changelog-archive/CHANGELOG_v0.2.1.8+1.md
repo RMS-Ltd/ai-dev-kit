@@ -124,5 +124,5 @@ This release implements **FR-024: IDE/Linter Check Before Commit in Release Work
 - **Release Workflow Guide:** `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Cursor Rules:** `packages/frameworks/workflow mgt/cursorrules-rw-trigger-section.md`
 - **Feature Request:** `docs/project-management/kanban/fr-br/FR-024-ide-linter-check-before-commit-in-release-workflow.md`
-- **Story 1:** `docs/project-management/kanban/epics/Epic-2/Story-001-rw-agent-execution-and-docs.md`
+- **Story 1:** `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
 

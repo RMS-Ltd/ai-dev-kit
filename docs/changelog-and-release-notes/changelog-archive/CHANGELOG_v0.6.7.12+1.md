@@ -79,7 +79,7 @@ Comprehensive documentation and usage examples for the ai-dev-kit CLI tool, incl
   - Added comprehensive documentation references
   - Updated to include all new documentation files
 
-- **Story Document** (`docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md`)
+- **Story Document** (`docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md`)
   - Marked T12 as COMPLETE
   - Updated version to v0.6.7.12+1
   - Added completed deliverables section
@@ -121,7 +121,7 @@ All documentation follows the established patterns:
 - `docs/documentation/user-docs/framework-dependency-cli-reference.md`
 - `docs/documentation/user-docs/framework-dependency-installation-guide.md`
 - `cli/README.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md`
+- `docs/project-management/kanban/epics/epic-06/story-07-ai-dev-kit-cli-tool.md`
 - `src/fynd_deals/version.py`
 
 ---

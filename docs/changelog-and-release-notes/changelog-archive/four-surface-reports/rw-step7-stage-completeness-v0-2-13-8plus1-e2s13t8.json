@@ -65,21 +65,21 @@
       "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
       "git_status": "staged",
       "is_violation": false,
-      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md",
       "surface": "task_doc"
     },
     {
       "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
       "git_status": "staged",
       "is_violation": false,
-      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Epic-2.md",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/epic-02.md",
       "surface": "epic_doc"
     },
     {
       "detail": "Step 7 mutation is staged for commit (Step 8 honoured).",
       "git_status": "staged",
       "is_violation": false,
-      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-013-workflow-management-package-implementation-review.md",
+      "path": "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md",
       "surface": "story_doc"
     }
   ]

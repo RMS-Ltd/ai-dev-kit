@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E02:S16:T17 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T17-agent-bootstrap-and-task-routing-fr103.md`](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) **(E02:S16:T17)**  
+**Host Task:** [`T17-agent-bootstrap-and-task-routing-fr103.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) **(E02:S16:T17)**  
 **Planning for:** [FR-103 — Agent bootstrap and task routing](../project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)  
 **Status:** Published (implementation complete **v0.2.16.17+1**)
 
@@ -155,5 +155,5 @@ Deterministic cold-start path: slim `AGENTS.md` → scan manifest → load only 
 
 - [FR-103](../project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)
 - [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
-- [T17](../project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
+- [T17](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

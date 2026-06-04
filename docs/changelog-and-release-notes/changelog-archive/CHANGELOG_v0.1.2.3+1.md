@@ -91,7 +91,7 @@ This release completes **Task 3: Create package dependency matrix**. A comprehen
 This dependency matrix provides the foundation for documenting consumption patterns (T004) and updating package READMEs (T005). It clearly shows how packages relate to each other and how they can be used independently or together.
 
 **Files Created:**
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture/T003-package-dependency-matrix.md` (comprehensive dependency matrix document)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture/T03-package-dependency-matrix.md` (comprehensive dependency matrix document)
 
 ---
 
@@ -104,9 +104,9 @@ This dependency matrix provides the foundation for documenting consumption patte
 
 ## 📄 Files Changed
 
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture/T003-package-dependency-matrix.md` (created)
-- `docs/project-management/kanban/epics/Epic-1/stories/Story-002-package-and-repo-architecture.md` (task status updated)
-- `docs/project-management/kanban/epics/Epic-1.md` (status update)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture/T03-package-dependency-matrix.md` (created)
+- `docs/project-management/kanban/epics/epic-01/stories/story-02-package-and-repo-architecture.md` (task status updated)
+- `docs/project-management/kanban/epics/epic-01.md` (status update)
 - `src/fynd_deals/version.py` (version bumped to 0.1.2.3+1)
 
 ---

@@ -78,19 +78,19 @@ This epic encompasses mobile application (if applicable) for the {PROJECT_NAME} 
 
 **Brief Summary:** mobile app foundation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-001-mobile-app-foundation.md`](Story-001-mobile-app-foundation.md)
+**Story Document:** [`story-01-mobile-app-foundation.md`](story-01-mobile-app-foundation.md)
 
 ### Story 2: Mobile UI Implementation
 
 **Brief Summary:** mobile ui implementation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-002-mobile-ui-implementation.md`](Story-002-mobile-ui-implementation.md)
+**Story Document:** [`story-02-mobile-ui-implementation.md`](story-02-mobile-ui-implementation.md)
 
 ### Story 3: Mobile App Deployment
 
 **Brief Summary:** mobile app deployment for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`Story-003-mobile-app-deployment.md`](Story-003-mobile-app-deployment.md)
+**Story Document:** [`story-03-mobile-app-deployment.md`](story-03-mobile-app-deployment.md)
 
 ---
 

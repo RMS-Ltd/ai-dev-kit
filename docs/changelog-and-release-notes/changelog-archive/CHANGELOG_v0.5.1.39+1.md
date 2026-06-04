@@ -23,12 +23,12 @@ Initial review release for E5:S01:T39, capturing the AI Dev Kit project review a
   - Scopes the work as read-only analysis plus a review report and clean-up checklist.
   - Lists functional and non-functional requirements for the review phase.
 
-- **`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md`**
+- **`docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md`**
   - Repository Task anchor for FR-039 (`E5:S01:T39`).
   - Describes scope, inputs, deliverables, and acceptance criteria for the review work.
   - Records that this Task is wired to FR-039 and that this release is the initial review/planning build.
 
-- **`docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`**
+- **`docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`**
   - Story 1 (FR Repo) Task Checklist updated to include `E5:S01:T39 – AI Dev Kit Project Review and Legacy Clean-Up` linked to the new Task and FR.
 
 ### Review Report & Clean-Up Checklist
@@ -47,5 +47,5 @@ Initial review release for E5:S01:T39, capturing the AI Dev Kit project review a
 
 - **Task:** E5:S01:T39 – AI Dev Kit Project Review and Legacy Clean-Up.  
 - **Feature Request:** FR-039 – AI Dev Kit Project Review and Legacy Clean-Up.  
-- **FR Repo Story:** `docs/project-management/kanban/epics/Epic-5/Story-001-fr-repo.md`.  
+- **FR Repo Story:** `docs/project-management/kanban/epics/epic-05/story-01-fr-repo.md`.  
 

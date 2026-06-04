@@ -28,7 +28,7 @@ UKW stale-task purge: identified and archived 7 completed tasks that were still 
   - E4:S10:T01 (COMPLETE v0.4.10.1+0)
   - E5:S01:T56 (COMPLETE v0.5.1.56+1)
 - **kanban-completed.md** — Archived all 7 tasks with completion metadata
-- **Epic-4.md** — Last updated bumped to 2026-05-16
+- **epic-04.md** — Last updated bumped to 2026-05-16
 
 ### Version
 
@@ -46,5 +46,5 @@ UKW stale-task purge: identified and archived 7 completed tasks that were still 
 
 ## References
 
-- UKW perpetual task: [E2:S16:T04](docs/project-management/kanban/epics/Epic-2/Story-016-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- UKW perpetual task: [E2:S16:T04](docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - Prior kanban release: v0.2.16.4+6

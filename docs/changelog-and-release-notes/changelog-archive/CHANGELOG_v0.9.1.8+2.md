@@ -26,12 +26,12 @@ This release completes the Epic 6 story file updates for the repository story ab
 ### Epic 6 Story File Updates
 
 **Story Headers Updated:**
-- Story-003 (Framework Update and Migration): S02→S03, v0.6.2.*→v0.6.3.*
-- Story-004 (Framework Health Monitoring): S03→S04, v0.6.3.*→v0.6.4.*
-- Story-005 (Bug Reports): S04→S05, v0.6.4.*→v0.6.5.*
-- Story-006 (Feature Requests): S05→S06, v0.6.5.*→v0.6.6.*
-- Story-007 (ADK Implementation Analysis): S06→S07, v0.6.6.*→v0.6.7.*
-- Story-008 (ai-dev-kit CLI Tool): S07→S08, v0.6.7.*→v0.6.8.*
+- story-003 (Framework Update and Migration): S02→S03, v0.6.2.*→v0.6.3.*
+- story-004 (Framework Health Monitoring): S03→S04, v0.6.3.*→v0.6.4.*
+- story-005 (Bug Reports): S04→S05, v0.6.4.*→v0.6.5.*
+- story-006 (Feature Requests): S05→S06, v0.6.5.*→v0.6.6.*
+- story-007 (ADK Implementation Analysis): S06→S07, v0.6.6.*→v0.6.7.*
+- story-008 (ai-dev-kit CLI Tool): S07→S08, v0.6.7.*→v0.6.8.*
 
 **Task References Updated:**
 - All E6:S02 references → E6:S03
@@ -56,12 +56,12 @@ This release completes the Epic 6 story file updates for the repository story ab
 ## Files Changed
 
 ### Updated
-- `docs/project-management/kanban/epics/Epic-6/Story-003-framework-update-and-migration.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-004-framework-health-monitoring.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-005-bug-reports.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management.md`
-- `docs/project-management/kanban/epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md`
+- `docs/project-management/kanban/epics/epic-06/story-03-framework-update-and-migration.md`
+- `docs/project-management/kanban/epics/epic-06/story-04-framework-health-monitoring.md`
+- `docs/project-management/kanban/epics/epic-06/story-05-bug-reports.md`
+- `docs/project-management/kanban/epics/epic-06/story-06-feature-requests.md`
+- `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-08-ai-dev-kit-cli-tool.md`
 - `src/fynd_deals/version.py` - Version updated to v0.9.1.8+2
 
 ## Impact
@@ -93,5 +93,5 @@ This release completes the Epic 6 story file updates for the repository story ab
 
 ---
 
-_This changelog is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`Story-001-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/Epic-9/Story-001-rc-readiness-gap-analysis.md) for story context._
+_This changelog is part of Epic 9: Release Candidate Readiness, Story 1: RC Readiness Gap Analysis. See [`story-01-rc-readiness-gap-analysis.md`](../../project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md) for story context._
 

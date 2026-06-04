@@ -117,7 +117,7 @@ This release implements the UKW (Update Kanban Workflow) extension to bring FR/B
 - `.windsurf/skills/ukw-sync/skill.md` - Added Steps 7-9 for FR/BR/UXR handling
 - `docs/project-management/kanban/fr-br-uxr-completed.md` - Dashboard and temporal tracking
 - `docs/project-management/kanban/AGENTS.md` - Updated agent coordination patterns
-- `docs/project-management/kanban/epics/Epic-6/Story-007/.../T108-...md` - Status updated to IN PROGRESS
+- `docs/project-management/kanban/epics/epic-06/story-007/.../T108-...md` - Status updated to IN PROGRESS
 - `src/fynd_deals/version.py` - Version bumped to 0.6.7.108+1
 
 ---

@@ -72,8 +72,8 @@ Framework health dashboard generator and comprehensive dashboard guide created. 
 
 - `scripts/frameworks/generate-dashboard.py` (new)
 - `docs/architecture/standards-and-adrs/framework-health-dashboard-guide.md` (new)
-- `docs/project-management/kanban/epics/Epic-6/Story-003-framework-health-monitoring.md` (updated - Story COMPLETE)
-- `docs/project-management/kanban/epics/Epic-6/Epic-6.md` (updated - Story 3 COMPLETE)
+- `docs/project-management/kanban/epics/epic-06/story-03-framework-health-monitoring.md` (updated - Story COMPLETE)
+- `docs/project-management/kanban/epics/epic-06/epic-06.md` (updated - Story 3 COMPLETE)
 - `docs/project-management/kanban/kanban-board.md` (updated - Story 3 COMPLETE)
 
 ---
@@ -83,8 +83,8 @@ Framework health dashboard generator and comprehensive dashboard guide created. 
 - **Framework Health Metrics:** `docs/architecture/standards-and-adrs/framework-health-metrics.md` (E6:S03:T01)
 - **Framework Health Monitoring Procedures:** `docs/architecture/standards-and-adrs/framework-health-monitoring-procedures.md` (E6:S03:T02)
 - **Framework Health Monitor:** `scripts/frameworks/framework-health-monitor.py` (E6:S03:T02)
-- **Epic 6:** `docs/project-management/kanban/epics/Epic-6/Epic-6.md`
-- **Story 3:** `docs/project-management/kanban/epics/Epic-6/Story-003-framework-health-monitoring.md`
+- **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
+- **Story 3:** `docs/project-management/kanban/epics/epic-06/story-03-framework-health-monitoring.md`
 
 ---
 

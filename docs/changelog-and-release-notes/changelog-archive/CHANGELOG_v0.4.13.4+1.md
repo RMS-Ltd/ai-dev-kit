@@ -46,7 +46,7 @@
 **Files Updated:**
 - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` (bug fix)
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (documentation)
-- `docs/project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` (task doc)
+- `docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` (task doc)
 
 ## CHECK (Validation & Verification)
 
@@ -180,5 +180,5 @@
 
 - `packages/frameworks/workflow mgt/scripts/validation/validate_version_bump.py` - Bug fix location
 - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - RW documentation
-- `docs/project-management/kanban/epics/Epic-4/Story-013-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` - Task document
+- `docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md` - Task document
 
