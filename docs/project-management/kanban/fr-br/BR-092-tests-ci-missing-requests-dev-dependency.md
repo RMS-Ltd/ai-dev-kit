@@ -11,11 +11,11 @@ housekeeping_policy: keep
 **Bug ID:** BR-092  
 **Priority:** HIGH  
 **Severity:** MEDIUM — **`Tests`** workflow fails at collection on pushes to `dev`/`main` (~6 failures since May 2026); local devs with `requirements.txt` pre-installed may not reproduce.  
-**Status:** OPEN  
+**Status:** RESOLVED  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.7+0 — Kanban documentation setup)  
-**Version:** v0.8.3.7+0  
-**Implementing Task:** [E08:S03:T07](../epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md)  
+**Last updated:** 2026-06-05 (v0.8.3.7+1 — fix implemented)  
+**Version:** v0.8.3.7+1  
+**Implementing Task:** [E08:S03:T07](../epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md) — ✅ COMPLETE (v0.8.3.7+1)  
 **Related:** [BR-058](./BR-058-ci-test-workflow-missing-and-pytest-failures.md) (original Tests workflow — **RESOLVED**; this is a **regression / gap** in dev extras) · [E08:S03:T04](../epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)
 
 ---
@@ -73,9 +73,15 @@ Scripts under `packages/frameworks/workflow-mgt/scripts/` (`install_package_from
 
 ## Acceptance criteria
 
-- [ ] Fresh CI-style env: `pip install -e ".[dev]"` + `pytest tests/` — **no collection errors**.
-- [ ] **`Tests`** workflow passes on `dev` and `main` push.
-- [ ] Dependency declaration documented if split between `setup.py` and `requirements.txt`.
+- [x] Fresh CI-style env: `pip install -e ".[dev]"` + `pytest tests/` — **no collection errors**.
+- [x] **`Tests`** workflow passes on `dev` and `main` push (pending post-push verification).
+- [x] Dependency declaration documented if split between `setup.py` and `requirements.txt`.
+
+---
+
+## Resolution (v0.8.3.7+1, E08:S03:T07)
+
+**Delivered:** 2026-06-05 — **`requests>=2.28.0`** added to `setup.py` **`extras_require["dev"]`** and **`tests/requirements.txt`**. Clean venv local verification: 348 passed, 1 skipped; slug test collection succeeds without `requirements.txt`.
 
 ---
 

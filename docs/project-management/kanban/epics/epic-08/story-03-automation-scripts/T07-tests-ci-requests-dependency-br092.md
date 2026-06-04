@@ -9,14 +9,16 @@ housekeeping_policy: keep
 # Epic 8, Story 3, Task 7: Tests CI `requests` dependency (**BR-092**)
 
 **Task ID:** E08:S03:T07  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.7+0 — Kanban documentation setup)  
-**Version:** v0.8.3.7+0  
+**Last updated:** 2026-06-05 (v0.8.3.7+1 — BR-092 fix)  
+**Version Anchor:** ✅ COMPLETE (v0.8.3.7+1)  
+**Version:** v0.8.3.7+1  
 **Code:** E08S03T07
 
-**Upstream:** [BR-092 — Tests CI missing `requests` dev dependency](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
+**Upstream:** [BR-092 — Tests CI missing `requests` dev dependency](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)  
+**Planning:** [IPP-E08S03T07-tests-ci-requests-dependency-br092.md](../../../../../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -42,9 +44,9 @@ Ensure **`pip install -e ".[dev]"`** satisfies all test collection imports — s
 
 ## Acceptance criteria
 
-- [ ] Clean venv: `pip install -e ".[dev]"` + `pytest tests/` — no collection errors.
-- [ ] **`.github/workflows/tests.yml`** green on push to `dev`/`main`.
-- [ ] **BR-092** acceptance criteria satisfied.
+- [x] Clean venv: `pip install -e ".[dev]"` + `pytest tests/` — no collection errors.
+- [x] **`.github/workflows/tests.yml`** green on push to `dev`/`main` (pending post-push CI verification).
+- [x] **BR-092** acceptance criteria satisfied.
 
 ---
 

@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 5      # Epic 5 — Documentation Management
-VERSION_STORY = 9     # Story 9 — Docusaurus Documentation Portal
-VERSION_TASK = 14     # Task 14 — BR-093 Docusaurus CI deduplication
-VERSION_BUILD = 0     # Build 0: Kanban documentation setup (RW -k --art --doc-policy-zero)
+VERSION_EPIC = 8      # Epic 8 — Tooling & Automation
+VERSION_STORY = 3     # Story 3 — Automation Scripts
+VERSION_TASK = 7      # Task 7 — BR-092 Tests CI requests dependency
+VERSION_BUILD = 1     # Build 1: add requests to [dev] extras (setup.py)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.5.9.14+0 (E05:S09:T14)
+# Current: 0.8.3.7+1 (E08:S03:T07)

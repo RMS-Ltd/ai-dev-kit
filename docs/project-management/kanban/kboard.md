@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E05:S09:T14** — BR-093 intake v0.5.9.14+0)
-**Version:** v0.5.9.14+0
+**Last Updated:** 2026-06-05 (RW **E08:S03:T07** — BR-092 closure v0.8.3.7+1)
+**Version:** v0.8.3.7+1
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -28,8 +28,6 @@ housekeeping_policy: keep
 *(None.)*
 
 ### Should Have (S) - Important Tasks
-
-- **E08:S03:T07** – BR-092: Tests CI `requests` dependency - 📋 TODO (HIGH, pytest collection error) | [Task](epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md) | [BR-092](fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md) | Last modified: 2026-06-05 18:52 UTC
 
 - **E05:S09:T14** – BR-093: Docusaurus CI build/deploy deduplication - 📋 TODO (MEDIUM, duplicate npm build on main) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | Last modified: 2026-06-05 18:56 UTC
 
