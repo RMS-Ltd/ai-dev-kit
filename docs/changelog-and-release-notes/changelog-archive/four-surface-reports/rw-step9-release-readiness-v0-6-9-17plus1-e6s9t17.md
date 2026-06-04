@@ -3,14 +3,16 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E6:S9:T17 (v0.6.9.17+1)
-- **Timestamp (UTC):** 2026-06-04 13:55 UTC
+- **Timestamp (UTC):** 2026-06-04 15:59 UTC
 - **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-17plus1-e6s9t17.json`
 
 ## Overall verdict
 
-- **Status:** PASS — RW MAY proceed past Step 9.
+- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
+  - Gate 4: Corpus canonical state
+  - Gate 8: Stamp homogeneity (FR-097)
 
-- Gates: 9/9 passed (0 failed, 0 waived).
+- Gates: 7/9 passed (2 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -22,7 +24,7 @@
   - No IPW governance doc found that references FR-091/FR-084/FR-092. Recommend cross-linking from IPW guide for cross-doc consistency.
 - Evidence:
   - `.cursorrules`: `OK`
-  - `packages/frameworks/workflow mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`: `OK`
+  - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`: `OK`
   - `packages/frameworks/kanban/policies/kanban-governance-policy.md`: `OK`
   - `ipw_governance`: `MISSING (info)`
 
@@ -54,14 +56,16 @@
 
 ### Gate 4 — Corpus canonical state
 
-- Status: **PASS** (severity: `block`)
-- Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
+- Status: **FAIL** (severity: `block`)
+- Summary: Corpus canonical state violated; see findings.
+- Findings:
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: rows_changed=4 under non_substantive corpus sweep — corpus is not idempotent.
 - Evidence:
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 4, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 106}`
+  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 8, 'stamps_preserved_existing': 111}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
@@ -98,12 +102,14 @@
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 
-- Status: **PASS** (severity: `block`)
-- Summary: No homogeneity clusters at or above threshold.
+- Status: **FAIL** (severity: `block`)
+- Summary: Homogenized stamp cluster(s) detected; run backfill or fix hygiene.
+- Findings:
+  - fbuboard.md: stamp '2026-06-04 12:05 UTC' appears on 18 rows (threshold 3, not git-single-commit exempt): ['FR-032', 'UXR-003', 'FR-039', 'FR-037', 'FR-016']...
 - Evidence:
   - `homogeneity_threshold`: `3`
   - `kboard.md`: `{}`
-  - `fbuboard.md`: `{}`
+  - `fbuboard.md`: `{'2026-06-04 12:05 UTC': 18}`
 
 ### Gate 9 — MoSCOW state icons (UXR-012)
 

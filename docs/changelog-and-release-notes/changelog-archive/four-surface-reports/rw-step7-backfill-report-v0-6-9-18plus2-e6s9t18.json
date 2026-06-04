@@ -1,0 +1,16 @@
+{
+  "report_type": "rw_step7_scoped_reconciliation",
+  "release_version": "0.6.9.18+2",
+  "release_scope": "E06:S09:T18",
+  "evidence_mode": "release_scope_stamp_sync",
+  "rows": {
+    "E06:S09:T18": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.18+2 — kboard T18 version anchor housekeeping release"
+    },
+    "BR-087": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.18+2 — fbuboard BR-087 fix attempted v0.6.9.18+2"
+    }
+  }
+}

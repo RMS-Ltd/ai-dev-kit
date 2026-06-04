@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-05  
-**Version:** v0.6.9.18+1  
+**Version:** v0.6.9.18+2  
 **Code:** E06S09T18
 
 **Planning package:** [IPP-E06S09T18](../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
@@ -21,6 +21,18 @@ housekeeping_policy: keep
 **Upstream:** [BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)  
 **Predecessor:** [E06:S09:T17](T17-framework-install-directory-slugs-br087.md) (**v0.6.9.17+1**)  
 **Related:** [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) · [FR-062](../../../fr-br/FR-062-github-release-installation-experience.md) · [package-management-design.md](../../../../../architecture/standards-and-adrs/package-management-design.md)
+
+---
+
+## Input
+
+[BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md) · [IPP-E06S09T18](../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md) · [E06:S09:T17](T17-framework-install-directory-slugs-br087.md)
+
+---
+
+## Scope
+
+Rename maintainer framework source directories to install slugs; wire install/update detection and UXR-016 warnings; republish checklist for release tarballs; adopter verification on Expenses Tracker.
 
 ---
 
@@ -61,4 +73,4 @@ Close **BR-087** end-to-end for the **ai-dev-kit** repo: slug directories in sou
 
 ## Version Anchor
 
-✅ COMPLETE (**v0.6.9.18+1** — RW E06:S09:T18)
+✅ COMPLETE (**v0.6.9.18+2** — RW E06:S09:T18)

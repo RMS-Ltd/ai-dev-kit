@@ -69,7 +69,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 **2026-06-05:** **BR-087** adopter verification **failed** — `packages/frameworks/` still has space/`&` dirs after update (see [UXR-016](fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) addendum).
 
-- **BR-087** – Framework packages install with legacy directory names (spaces, `&`) - 🟢 OPEN (HIGH, fix attempted **v0.6.9.18+1** — adopter verification pending) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [E06:S09:T18](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [UXR-016](fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) | Last modified: 2026-06-05 14:40 UTC
+- **BR-087** – Framework packages install with legacy directory names (spaces, `&`) - 🟢 OPEN (HIGH, fix attempted **v0.6.9.18+2** — adopter verification pending) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [E06:S09:T18](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [UXR-016](fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) | Last modified: 2026-06-05 14:40 UTC
 
 **2026-06-04:** Intake **BR-086** from GitHub **#17** (lowercase fresh kanban RW mode C; #15/#16 follow-up on `main`) → **E06:S09:T16**.
 
@@ -196,7 +196,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 
 
-- **FR-031** – Multi-agent coordination feasibility — **WON'T HAVE** (deferred **E05:S01:T31**) | [fbu-completed](fbu-completed.md) | [FR-031](fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md) | [E05:S01:T31](epics/epic-05/story-01-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md) | —No IPP— | Last modified: 2026-06-04 12:05 UTC
+- **FR-031** – Multi-agent coordination feasibility — **WON'T HAVE** (deferred **E05:S01:T31**) | [fbu-completed](fbu-completed.md) | [FR-031](fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md) | [E05:S01:T31](epics/epic-05/story-01-fr-repo/T31-multi-agent-coordination-feasibility-investigation.md) | —No IPP— | Last modified: 2026-06-04 16:55 UTC
 
 ### Ongoing (O) - Perpetual Items
 

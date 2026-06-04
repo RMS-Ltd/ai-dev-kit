@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-087  
 **Priority:** HIGH  
 **Severity:** MEDIUM (shell/CI friction; wrong paths in `rw-config.yaml` / docs)  
-**Status:** OPEN (fix attempted **v0.6.9.18+1** — maintainer source rename + install warnings; adopter re-verify pending)  
+**Status:** OPEN (fix attempted **v0.6.9.18+2** — wave 2 + release housekeeping; adopter re-verify pending)  
 **Implementing Task:** [E06:S09:T18](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) (TODO — wave 2 closure)  
 **Prior task:** [E06:S09:T17](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) (**v0.6.9.17+1** — scripts only; verification failed)  
 **UXR:** [UXR-016](UXR-016-install-setup-interactive-feedback-external-semver-version.md) (addendum — install UX does not surface legacy framework paths)  

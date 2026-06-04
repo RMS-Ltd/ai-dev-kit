@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – Kanban Board
 
 **Last Updated:** 2026-06-05 (RW: E06:S09:T18)
-**Version:** v0.6.9.18+1
+**Version:** v0.6.9.18+2
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -35,9 +35,9 @@ housekeeping_policy: keep
 
 - **E03:S02:T12** – FR-045/046/BR-061: Task-touch SemVer collision remediation - ✅ COMPLETE (HIGH, **v0.3.2.12+4**) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | Last modified: 2026-06-04 23:00 UTC
 
-**2026-06-05:** **E06:S09:T18** released **v0.6.9.18+1** — **BR-087** wave 2 (maintainer framework slug dirs, install legacy-path warnings).
+**2026-06-05:** **E06:S09:T18** released **v0.6.9.18+2** — **BR-087** housekeeping (semver registry finalize, GitHub release).
 
-- **E06:S09:T18** – BR-087: Framework slug install closure (wave 2) - ✅ COMPLETE (HIGH, **v0.6.9.18+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | Last modified: 2026-06-05 14:35 UTC
+- **E06:S09:T18** – BR-087: Framework slug install closure (wave 2) - ✅ COMPLETE (HIGH, **v0.6.9.18+2**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | Last modified: 2026-06-05 14:35 UTC
 
 **2026-06-04:** **E06:S09:T17** released **v0.6.9.17+1** — **BR-087** framework install directory slugs (build/extract/migration scripts only).
 

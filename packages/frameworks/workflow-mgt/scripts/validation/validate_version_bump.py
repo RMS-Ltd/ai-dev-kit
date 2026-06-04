@@ -292,6 +292,11 @@ def extract_epic_story_from_path(story_file: Path) -> Optional[Tuple[int, int]]:
     pattern2 = re.search(r'Epic-(\d+)/Story-(\d+)', path_str)
     if pattern2:
         return (int(pattern2.group(1)), int(pattern2.group(2)))
+
+    # Pattern 3: epic-{NN}/story-{NN} (lowercase kanban paths)
+    pattern3 = re.search(r'epic-(\d+)/story-(\d+)', path_str, re.IGNORECASE)
+    if pattern3:
+        return (int(pattern3.group(1)), int(pattern3.group(2)))
     
     return None
 
@@ -327,6 +332,8 @@ def find_story_file(config: Optional[Dict] = None, epic: int = None, story: int 
     if config and config.get('use_kanban') and 'kanban_root' in config:
         kanban_root = Path(config['kanban_root'])
         story_pattern = config.get('story_doc_pattern', '**/Story-*.md')
+        if epic is not None and story is not None and '{' in story_pattern:
+            story_pattern = story_pattern.format(epic=epic, story=story)
         candidate_files.extend(project_root.glob(str(kanban_root / story_pattern)))
     
     # Fallback: Search for Story files
@@ -586,8 +593,13 @@ def locate_task_doc_from_requested(epic: int, story: int, task: int, config: Opt
     else:
         kanban_root = project_root / "docs/project-management/kanban"
 
-    epic_dir = kanban_root / f"epics/Epic-{epic}"
-    if not epic_dir.exists():
+    epic_dirs = [
+        kanban_root / f"epics/epic-{epic:02d}",
+        kanban_root / f"epics/Epic-{epic}",
+        kanban_root / f"epics/epic-{epic}",
+    ]
+    epic_dir = next((d for d in epic_dirs if d.exists()), None)
+    if epic_dir is None:
         return (None, None)
 
     patterns = [
@@ -595,6 +607,9 @@ def locate_task_doc_from_requested(epic: int, story: int, task: int, config: Opt
         f"Story-{story:03d}-*/T{task:02d}-*.md",
         f"Story-{story:03d}-*/T{task}-*.md",
         f"Story-{story:03d}-*/Task-{task:03d}-*.md",
+        f"story-{story:02d}-*/T{task:02d}-*.md",
+        f"story-{story:02d}-*/T{task:03d}-*.md",
+        f"story-{story}-*/T{task:02d}-*.md",
     ]
     for pat in patterns:
         hits = sorted(epic_dir.glob(pat))
