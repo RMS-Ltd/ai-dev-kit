@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-04 (v0.2.16.4+26 — RW UKW comprehensive: archive **E03:S02:T12**, **E06:S09:T17–T20**, **FR-108**)
-**Version Anchor:** v0.2.16.4+26
+**Last updated:** 2026-06-04 (v0.2.16.4+27 — UKW: restore C-band backlog; FR-109 lean policy correction)
+**Version Anchor:** v0.2.16.4+27
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 

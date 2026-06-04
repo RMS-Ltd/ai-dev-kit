@@ -28,7 +28,7 @@ Codify and enforce that **`kboard.md`** and **`fbuboard.md`** list **live work o
 
 ## Problem Statement
 
-UKW **BR-059** coverage and bidirectional FBU mirroring inflated active boards (~185 / ~273 lines). Operators lost signal on in-flight work. **`UKW -c`** and manual prune reduced noise, but nothing blocked regression on commit or release.
+UKW **BR-059** coverage and bidirectional FBU mirroring inflated active boards (~185 / ~273 lines) with **journal lines**, **archive footnotes**, and **terminal rows** left on active MoSCOW. An over-aggressive “lean” pass (2026-06-04) also removed ~37 legitimate **Could Have** `TODO`/`OPEN` backlog rows — corrected by restoring live C-band rows from `9b4765f` while keeping bloat removed. **`UKW -c`** and validators target **terminal + prose**, not the filed C-band queue.
 
 ---
 

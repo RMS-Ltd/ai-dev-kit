@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+27] - 04-06-26
+
+E02:S16:T04 — **UKW:** Restored Could Have backlog on kboard/fbuboard (39/31 rows); FR-109 policy — prune terminal/bloat only, not C-band queue. SemVer **v0.4.881+27**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+27.md)
+
+---
+
 ## [0.2.16.18+1] - 04-06-26
 
 E02:S16:T18 — **FR-109:** Lean active board contract — `validate_active_kanban_board.py`, pre-commit + RW Gate 11, UKW parity doc, pruned kboard/fbuboard. SemVer **v0.4.880+1**.

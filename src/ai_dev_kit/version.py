@@ -9,8 +9,8 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 VERSION_RC = 0        # Release Candidate
 VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
 VERSION_STORY = 16    # Story 16 — Perpetual ongoing workflow operations
-VERSION_TASK = 18     # Task 18 — UKW lean active board contract (FR-109)
-VERSION_BUILD = 1     # Build 1: validator, Gate 11, dual-source parity, lean boards
+VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban synchronization and hygiene (Perpetual)
+VERSION_BUILD = 27    # Build 27: restore C-band backlog; FR-109 policy correction (UKW)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.18+1 (E02:S16:T18)
+# Current: 0.2.16.4+27 (E02:S16:T04)

@@ -123,7 +123,7 @@ python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_board.py"
 
 MoSCOW list is always updated **last** within this step.
 
-**Lean active board contract (FR-109):** `kboard.md` and `fbuboard.md` list **live work only** in MoSCOW (TODO / IN PROGRESS / OPEN / PERPETUAL / PROPOSED with active task). **Do not** leave `✅ COMPLETE` / terminal-status rows, `**YYYY-MM-DD:**` journal lines, or archive footnotes on active boards — append to **`kanban-completed.md`** / **`fbu-completed.md`** (use **`UKW -c`** or manual ledger-then-prune). **BR-059 (narrowed):** For **IN PROGRESS** stories, reconcile open checklist `E:S:T` tokens to MoSCOW — add only **in-flight** tasks; do **not** bulk-mirror every story TODO; defer/shipped items → Won't Have + ledger, not C-band clutter.
+**Lean active board contract (FR-109):** Prune **terminal** rows, `**YYYY-MM-DD:**` journal lines, and archive footnotes — not a filed **Could Have** backlog of `TODO`/`OPEN` tasks. **Do not** leave `✅ COMPLETE` on active boards; use **`kanban-completed.md`** / **`fbu-completed.md`** and **`UKW -c`**. **BR-059 (narrowed):** Do not **auto-add** every story-checklist TODO during UKW; existing C-band queue rows stay unless terminal or explicitly deferred to Won't Have + ledger.
 
 ### Step 6.5 — fbuboard Reconciliation and Drift Guard
 

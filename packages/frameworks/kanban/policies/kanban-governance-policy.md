@@ -264,7 +264,7 @@ The board serves as the **parent document** to Story documents, similar to how S
 1. **Ledger before prune** — append `kanban-completed.md` / `fbu-completed.md` (skills or `UKW -c`) **before** removing a terminal row from active MoSCOW.
 2. **No archive footnotes on active boards** — do not add italic paragraphs or multi-line “archived …” journals inside M/S/C/O/W; one header pointer to the completed ledger is enough.
 3. **No date-stamped journal bullets** — do not insert `**YYYY-MM-DD:**` narrative lines between MoSCOW rows (release notes belong in changelogs or Step 9 UKW summary).
-4. **No full-backlog mirror** — do not copy every open story-checklist `TODO` onto the board by default (BR-059). Add a row only when the task is **in flight** (IN PROGRESS / OPEN) or explicitly promoted to M/S for the current cycle.
+4. **BR-059 vs C-band backlog (FR-109 correction)** — BR-059 means: do not **auto-add every story-checklist TODO** during UKW without intent. It does **not** mean deleting an existing **Could Have** backlog of filed `TODO` / `OPEN` tasks. Prune **terminal** rows and **prose bloat** (journals, archive footnotes, stats sections); keep legitimate C-band queue rows.
 5. **fbuboard slim** — no duplicate “Usage instructions”, “Board statistics”, or long consolidation history on the active file; use `kanban-board-guide.md` and `fbu-completed.md`.
 6. **Enforcement (FR-109)** — `validate_active_kanban_board.py --strict` on active boards (pre-commit + RW Release Readiness **Gate 11**).
 

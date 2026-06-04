@@ -1,0 +1,71 @@
+{
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": ["Story 016 version v0.2.16.4+27; T04 UKW note"],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 4,
+    "task_id": "E02:S16:T04",
+    "version_string": "v0.2.16.4+27"
+  },
+  "stamp_evidence": {
+    "E02:S16:T04": {
+      "allowed": true,
+      "reason": "Perpetual UKW anchor version bump v0.2.16.4+27"
+    }
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 6,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": ["FR-109 problem statement: C-band restoration note"],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-109-ukw-lean-active-board-contract.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": ["Restored 31 Could Have FBU rows; version v0.2.16.4+27"],
+      "notes": [],
+      "paths": ["docs/project-management/kanban/fbuboard.md"],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["Restored 39 Could Have task rows; T04 stamp v0.2.16.4+27"],
+      "notes": [],
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": ["T04 perpetual version anchor v0.2.16.4+27"],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-04 23:30 UTC"
+}

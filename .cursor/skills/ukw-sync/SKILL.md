@@ -101,7 +101,7 @@ The MoSCOW priority list is updated LAST.
 - **Ledger first:** append `kanban-completed.md` / `fbu-completed.md` before removing any terminal row from active MoSCOW
 - Scan MoSCOW for terminal rows (`COMPLETE`, `RESOLVED`, shipped Won't) and **prune** after ledger update
 - **Forbidden:** archive footnote paragraphs on `kboard.md` / `fbuboard.md`; `**YYYY-MM-DD:**` journal lines between rows; leaving `✅ COMPLETE` on the active board
-- **BR-059 (narrow):** do not bulk-add every story-checklist `TODO` to Could Have — only IN PROGRESS / OPEN / M/S-promoted work
+- **BR-059 (narrow):** do not auto-add every story-checklist `TODO` during UKW — keep existing **Could Have** backlog; prune terminal rows + journal/footnote bloat only (FR-109)
 - Active board = live priorities; backlog remains in story checklists and `fr-br/` until promoted
 
 **Step 7: FR/BR/UXR Board Cleanup (`fbuboard.md`) — FR-050 / FR-076 / FR-097**
