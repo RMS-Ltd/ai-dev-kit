@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-04 (v0.2.16.4+27 — UKW: restore C-band backlog; FR-109 lean policy correction)
-**Version Anchor:** v0.2.16.4+27
+**Last updated:** 2026-06-04 (v0.2.16.4+28 — RW -k: kboard C-band reprioritisation; fbuboard mirrored; BR-051/052 wired)
+**Version Anchor:** v0.2.16.4+28
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 

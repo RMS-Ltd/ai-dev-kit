@@ -229,6 +229,7 @@ git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 
 | Document | Purpose |
 |----------|---------|
+| [install-error-codes-book-integration.md](./install-error-codes-book-integration.md) | **FR-108 / ADK-* error codes** — appendix sync, setup spine, reader reporting (v0.6.9.20+) |
 | `docs/book-proj/` | Manuscript drafts |
 | `docs/project-management/kanban/epics/epic-24/` | Book Kanban |
 | [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Same ADR (retained in history) |

@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+28] - 04-06-26
+
+E02:S16:T04 — **Kanban init:** Could Have queue reordered on kboard (value + dependencies); fbuboard mirrored; BR-051/BR-052 wired on fbuboard. SemVer **v0.4.882+28**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+28.md)
+
+---
+
 ## [0.6.9.16+2] - 04-06-26
 
 E06:S09:T16 — **Install sign-off:** BR-084 accepts lowercase `t{task}`; BR-086 epic `02d`/unpadded alternates — fixes book T03 false `ADK-I04.E01` on correct Step 4.1 YAML. SemVer **v0.4.881+2**.
