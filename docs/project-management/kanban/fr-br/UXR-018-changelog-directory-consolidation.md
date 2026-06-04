@@ -12,12 +12,13 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-04  
 **Submitted By:** User (maintainer)  
 **Priority:** MEDIUM  
-**Status:** INTAKE  
+**Status:** COMPLETE  
 **Code:** UXR-018  
 **Last updated:** 2026-06-04  
-**Version:** v0.5.1.76+1 (kanban init — E05:S01:T76)
+**Version:** v0.5.1.76+2 (E05:S01:T76 — consolidation shipped)
 
-**Implementing Task:** [E05:S01:T76](../epics/epic-05/story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md)
+**Implementing Task:** [E05:S01:T76](../epics/epic-05/story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md)  
+**Planning package:** [IPP-E05S01T76](../../../implementation-cycles/IPP-E05S01T76-changelog-directory-consolidation.md)
 
 **Related:** [UXR-013](UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md), [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [E05:S01:T39](../epics/epic-05/story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md), [FR-066](FR-066-docusaurus-canonical-docs-path.md), [portal/README.md](../../../portal/README.md) (Docusaurus pillar map), [IPP-E7S01T11](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (RNF3: no bulk archive path rewrites)
 
@@ -100,11 +101,11 @@ Framework integration examples use `docs/changelog` as a **generic adopter path*
 
 ## Recommendations
 
-- [ ] **R1:** Execute phased consolidation under **E05:S01:T76** (inventory → move unique legacy files → fix inbound links → remove empty legacy dirs → portal de-extension).
-- [ ] **R2:** Hash-compare and remove `docs/knowledge/changelog-and-release-notes/` duplicates after confirming identity with canonical archive.
-- [ ] **R3:** Add a guard (pytest or validator) preventing re-creation of `docs/changelog/` or knowledge mirror paths.
-- [ ] **R4:** Cross-link finding into **FR-039** / **E05:S01:T39** review checklist (changelog pillar hygiene item).
-- [ ] **R5:** Clarify in `docs/changelog-and-release-notes/README.md` that this pillar is the sole detailed-archive home (root `CHANGELOG.md` remains summary).
+- [x] **R1:** Execute phased consolidation under **E05:S01:T76** (inventory → move unique legacy files → fix inbound links → remove empty legacy dirs → portal de-extension).
+- [x] **R2:** Hash-compare and remove `docs/knowledge/changelog-and-release-notes/` duplicates after confirming identity with canonical archive.
+- [x] **R3:** Add a guard (pytest or validator) preventing re-creation of `docs/changelog/` or knowledge mirror paths.
+- [x] **R4:** Cross-link finding into **FR-039** / **E05:S01:T39** review checklist (changelog pillar hygiene item).
+- [x] **R5:** Clarify in `docs/changelog-and-release-notes/README.md` that this pillar is the sole detailed-archive home (root `CHANGELOG.md` remains summary).
 
 **Priority Order:**
 
@@ -150,8 +151,8 @@ Framework integration examples use `docs/changelog` as a **generic adopter path*
 ## Next Steps
 
 - [x] Atomic intake: UXR-018 + **E05:S01:T76** + board wiring (2026-06-04). **AC1** bidirectional links satisfied.
-- [ ] Run **IPW** for **E05:S01:T76** before implementation edits.
-- [ ] Implement consolidation only after explicit user authorization (`implement` or `RW E05:S01:T76`).
+- [x] Run **IPW** for **E05:S01:T76** — [IPP-E05S01T76](../../../implementation-cycles/IPP-E05S01T76-changelog-directory-consolidation.md).
+- [x] Implementation executed per IPP (2026-06-04); released **v0.5.1.76+2** (**RW E05:S01:T76**).
 
 ---
 

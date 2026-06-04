@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Changelog and Release Notes
 
-This section contains the **main changelog** and the **detailed changelog archive** for the `ai-dev-kit` repository.
+This section is the **sole canonical pillar** for changelog and release-note documentation in this repository. Legacy paths such as `docs/changelog/` and `docs/knowledge/changelog-and-release-notes/` were retired (UXR-018 / E05:S01:T76).
 
 ## Structure
 
-- `CHANGELOG.md` (root) – Main summary changelog (in project root)
-- `changelog-archive/` – Detailed per-version changelog files
+- `CHANGELOG.md` (project root) – Main summary changelog (Keep a Changelog; `latest_only` archival per `rw-config.yaml`)
+- `changelog-archive/` – Detailed per-version changelog files (`CHANGELOG_v*.md`); RW writes here via `changelog_dir`
 
 ## Navigation
 

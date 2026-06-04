@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 5, Story 1, Task 76: Changelog Directory Consolidation (UXR-018)
 
 **Task ID:** E05:S01:T76  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Small–Medium  
 **Created:** 2026-06-04  
-**Last updated:** 2026-06-04 (**RW -k** **v0.5.1.76+1** — UXR-018 kanban init)  
-**Version:** v0.5.1.76+1  
+**Last updated:** 2026-06-04 (**RW** **v0.5.1.76+2** — UXR-018 consolidation complete)  
+**Version:** v0.5.1.76+2  
 **Code:** E05S01T76  
 
 **Placement note:** Story 1 is a **historical FR registry** under FR-072 Approach D; this task is filed here per **maintainer-directed intake** (same pattern as recent E05:S01 anchors). Delivery semantics: documentation / legacy hygiene.
@@ -50,6 +50,8 @@ Consolidate **legacy and stray changelog directory trees** into the **existing c
 
 ## Input
 
+- **IPP:** [`IPP-E05S01T76-changelog-directory-consolidation.md`](../../../../implementation-cycles/IPP-E05S01T76-changelog-directory-consolidation.md)
+- **Manifest:** [`changelog-directory-consolidation-manifest.md`](../../../../maintenance/changelog-directory-consolidation-manifest.md)
 - **UXR-018:** [`UXR-018-changelog-directory-consolidation.md`](../../../fr-br/UXR-018-changelog-directory-consolidation.md)
 - **Config SoT:** [`rw-config.yaml`](../../../../../../rw-config.yaml) → `changelog_dir`
 - **Legacy file:** `docs/changelog/archive/0.4.14.4+1_epic-renumbering.md`
@@ -72,12 +74,12 @@ Consolidate **legacy and stray changelog directory trees** into the **existing c
 ## Acceptance Criteria
 
 - [x] **AC1:** UXR-018 ↔ E05:S01:T76 bidirectional links present (intake complete).
-- [ ] **AC2:** No files remain under `docs/changelog/` or `docs/knowledge/changelog-and-release-notes/` unless documented redirect stubs are explicitly approved in IPP.
-- [ ] **AC3:** All known stale `docs/changelog/` inbound links in active index/release docs resolve to canonical paths (or removed if duplicate content).
-- [ ] **AC4:** `rw-config.yaml` `changelog_dir` unchanged; RW smoke: new detailed changelog still writes under `docs/changelog-and-release-notes/changelog-archive/`.
-- [ ] **AC5:** Docusaurus / portal docs list only **Changelog & release notes** canonical pillar (legacy extension row removed).
-- [ ] **AC6:** IPP published under `docs/implementation-cycles/` and linked from this task before implementation.
-- [ ] **AC7:** Released via **RW E05:S01:T76** (or `RW -k` for doc-init if scope is intake-only doc touch).
+- [x] **AC2:** No files remain under `docs/changelog/` or `docs/knowledge/changelog-and-release-notes/` (manifest + pytest).
+- [x] **AC3:** Active index links repaired (`CHANGELOG_ARCHIVE.md`, `GITHUB_RELEASE_v0.4.14.4+1.md`).
+- [x] **AC4:** `rw-config.yaml` `changelog_dir` unchanged (`tests/test_changelog_directory_layout.py`).
+- [x] **AC5:** Portal sidebar/README updated; `npm run build` (FR-069).
+- [x] **AC6:** IPP published and linked from this task.
+- [x] **AC7:** Released via **RW E05:S01:T76** (**v0.5.1.76+2**).
 
 ---
 
@@ -96,14 +98,22 @@ Execute in order; do not skip inventory.
 
 ---
 
+## Version Anchor
+
+**Forensic marker:** ✅ COMPLETE (**v0.5.1.76+2** — UXR-018 changelog directory consolidation)
+
+---
+
 ## Dependencies
 
-- **Blocked by:** IPW / IPP (FR-083 global implementation gate).
+- **Blocked by:** IPW / IPP (FR-083 global implementation gate) — **cleared** for this slice.
 - **Related:** E05:S01:T39 (FR-039), E07:S01:T10 (UXR-013), FR-066 (Docusaurus paths), IPP E7:S01:T11 RNF3.
 
 ---
 
 ## References
 
+- [IPP-E05S01T76](../../../../implementation-cycles/IPP-E05S01T76-changelog-directory-consolidation.md)
+- [Consolidation manifest](../../../../maintenance/changelog-directory-consolidation-manifest.md)
 - [Story 1 — FR Repo](../story-01-fr-repo.md)
 - [Changelog management policy](../../../../../architecture/standards-and-adrs/changelog-management-policy.md)

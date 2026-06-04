@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.1.76+2] - 04-06-26
+
+E05:S01:T76 — **UXR-018:** Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`; portal sidebar + index link repair; pytest guard. SemVer **v0.4.869+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.76+2.md)
+
+---
+
 ## [0.5.1.76+1] - 04-06-26
 
 E05:S01:T76 — **Kanban init:** **UXR-018** atomic intake — changelog directory consolidation (`docs/changelog/` vs `docs/changelog-and-release-notes/`); task + boards wired; IPW before implementation. SemVer **v0.4.868+1**.

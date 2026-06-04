@@ -9084,7 +9084,7 @@ E4:S14:T03+2 – Implementation Cycle Workflow (ICW) Complete: Full ICW implemen
 
 E4:S14:T04 – Epic Renumbering Complete: Major structural reorganization establishing contiguous epic numbering and logical grouping. Documentation epic moved from E18 to E09 (Core Framework), User Management epic moved from E09 to E18 (Ancillary). Core epics redefined as E1-E10, ancillary epics as E11-E23. All 47 files updated with 100% reference consistency including version schemas, task codes, forensic markers, and related links. Framework now features improved scalability with clear universal vs project-specific epic separation.
 
-[Detailed changelog](docs/changelog/archive/0.4.14.4+1_epic-renumbering.md)
+[Detailed changelog](CHANGELOG_v0.4.14.4+1.md)
 
 ---
 

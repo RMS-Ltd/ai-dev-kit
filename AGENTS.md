@@ -42,7 +42,6 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E05:S01:T76 | UXR-018 — changelog directory consolidation (kanban init v0.5.1.76+1) | `docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md` |
 | E06:S09:T16 | BR-086 / GitHub #17 — lowercase fresh kanban RW mode C patterns & sign-off | `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.

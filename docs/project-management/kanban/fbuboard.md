@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-04 (RW -k: **UXR-018** **v0.5.1.76+1** / E05:S01:T76)
-**Version Context:** v0.5.1.76+1 (**SemVer** v0.4.868+1)
+**Last Updated:** 2026-06-04 (RW: **UXR-018** **v0.5.1.76+2** / E05:S01:T76 COMPLETE)
+**Version Context:** v0.5.1.76+2 (**SemVer** v0.4.869+2)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -89,9 +89,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 **2026-06-04:** **UXR-017** intake — lowercase `epic-*` / `story-*` path naming (Expenses Tracker install observation) → **E04:S19:T11**.
 
-**2026-06-04:** Intake **UXR-018** — changelog directory consolidation → **E05:S01:T76** (**RW -k** **v0.5.1.76+1**).
-
-- **UXR-018** – Changelog directory consolidation (`docs/changelog/` vs `docs/changelog-and-release-notes/`) - 🟢 OPEN (MEDIUM, **v0.5.1.76+1** kanban init) | [UXR-018](fr-br/UXR-018-changelog-directory-consolidation.md) | [E05:S01:T76](epics/epic-05/story-01-fr-repo/T76-changelog-directory-consolidation-uxr018.md) | —No IPP— | Last modified: 2026-06-04 13:15 UTC
+**2026-06-04:** **UXR-018** COMPLETE **v0.5.1.76+2** → archived [fbu-completed.md](fbu-completed.md).
 
 - **UXR-017** – Kanban epic/story path lowercase naming (`epic-*` / `story-*`) - 🟢 OPEN (MEDIUM, **v0.4.19.11+1** — kit shipped; Expenses Tracker AC5 open) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [E04:S19:T11](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md) | Last modified: 2026-06-04 21:00 UTC
 

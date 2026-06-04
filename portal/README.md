@@ -59,7 +59,6 @@ The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **
 | Analysis | `analysis/` | **Extension** |
 | Implementation cycles | `implementation-cycles/` | **Extension** |
 | Developer tools | `developer-tools/` | **Extension** |
-| Changelog (legacy root) | `changelog/` | **Extension** (legacy alongside `changelog-and-release-notes/`) |
 
 Canonical structure reference: [Ultimate Canonical KB Structure](../docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md).
 

@@ -110,7 +110,7 @@ cp -r .ai-dev-kit/packages/frameworks/kanban/* ./
 
 ## 📚 Documentation
 
-- **[Detailed Changelog](docs/changelog/archive/0.4.14.4+1_epic-renumbering.md)**
+- **[Detailed Changelog](CHANGELOG_v0.4.14.4+1.md)**
 - **[Canonical Epics](packages/frameworks/kanban/templates/CANONICAL_EPICS.md)**
 - **[Comprehensive Structure](packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md)**
 

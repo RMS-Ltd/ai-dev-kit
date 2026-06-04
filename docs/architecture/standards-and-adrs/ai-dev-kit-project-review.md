@@ -189,6 +189,7 @@ The following items are **not executed yet**; they define the next task’s scop
      - Framework versioning policy/strategy as SoT.
      - Dev-kit versioning policy as “application of framework”.
    - Mark any ad-hoc or partial changelog files as historical and stop adding new entries to them.
+   - **Done (2026-06-04, UXR-018 / E05:S01:T76):** Retired `docs/changelog/` and `docs/knowledge/changelog-and-release-notes/`; single pillar `docs/changelog-and-release-notes/` — see [manifest](../../maintenance/changelog-directory-consolidation-manifest.md).
 
 5. **Rationalise scripts:**
    - Tag or move:
