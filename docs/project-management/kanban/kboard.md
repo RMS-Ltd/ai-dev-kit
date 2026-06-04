@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E07:S07:T03** — BR-091 intake v0.7.7.3+0)
-**Version:** v0.7.7.3+0
+**Last Updated:** 2026-06-05 (RW **E08:S03:T07** — BR-092 intake v0.8.3.7+0)
+**Version:** v0.8.3.7+0
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -28,6 +28,8 @@ housekeeping_policy: keep
 *(None.)*
 
 ### Should Have (S) - Important Tasks
+
+- **E08:S03:T07** – BR-092: Tests CI `requests` dependency - 📋 TODO (HIGH, pytest collection error) | [Task](epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md) | [BR-092](fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md) | Last modified: 2026-06-05 18:52 UTC
 
 - **E05:S09:T13** – BR-090: Docusaurus `@docusaurus/faster` + package.json 3.10.1 alignment - 📋 TODO (HIGH, CI build gate red on main) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | Last modified: 2026-06-05 18:30 UTC
 

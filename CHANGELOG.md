@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.7+0] - 05-06-26
+
+E08:S03:T07 — **BR-092 intake:** Tests CI missing `requests` dev dependency (Kanban documentation setup). SemVer **v0.4.890+0** (internal).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.7+0.md)
+
+---
+
 ## [0.7.7.3+0] - 05-06-26
 
 E07:S07:T03 — **BR-091 intake:** Workflow validators hardcode legacy `workflow mgt` path (Kanban documentation setup). SemVer **v0.4.890+0** (internal).

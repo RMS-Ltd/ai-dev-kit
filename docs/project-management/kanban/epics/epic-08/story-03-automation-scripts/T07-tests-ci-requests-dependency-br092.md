@@ -1,0 +1,54 @@
+---
+lifecycle: evergreen
+ttl_days: null
+created_at: 2026-06-05T12:00:00Z
+expires_at: null
+housekeeping_policy: keep
+---
+
+# Epic 8, Story 3, Task 7: Tests CI `requests` dependency (**BR-092**)
+
+**Task ID:** E08:S03:T07  
+**Status:** TODO  
+**Priority:** HIGH  
+**Created:** 2026-06-05  
+**Last updated:** 2026-06-05 (v0.8.3.7+0 — Kanban documentation setup)  
+**Version:** v0.8.3.7+0  
+**Code:** E08S03T07
+
+**Upstream:** [BR-092 — Tests CI missing `requests` dev dependency](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
+
+Publication Status: NOT_APPLICABLE
+
+---
+
+## Input
+
+- [BR-092](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
+- [`setup.py`](../../../../../../setup.py) — `[dev]` extras
+- [`requirements.txt`](../../../../../../requirements.txt)
+- [`.github/workflows/tests.yml`](../../../../../../.github/workflows/tests.yml)
+- [E08:S03:T04 — CI test workflow (BR-058)](./T04-ci-test-workflow-pytest-remediation-br058.md)
+
+---
+
+## Deliverable
+
+Ensure **`pip install -e ".[dev]"`** satisfies all test collection imports — specifically **`requests`** for `tests/test_framework_install_slug.py`.
+
+**Preferred fix:** Add `requests>=2.28.0` to `setup.py` `extras_require["dev"]`.
+
+---
+
+## Acceptance criteria
+
+- [ ] Clean venv: `pip install -e ".[dev]"` + `pytest tests/` — no collection errors.
+- [ ] **`.github/workflows/tests.yml`** green on push to `dev`/`main`.
+- [ ] **BR-092** acceptance criteria satisfied.
+
+---
+
+## References
+
+- [BR-092](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
+- [BR-058](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
