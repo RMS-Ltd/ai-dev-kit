@@ -19,6 +19,20 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: adk_semver_banner
+    attributes:
+      label: AI Dev Kit version (SemVer banner)
+      description: Paste the `AI Dev Kit v…` line from install/setup console output (UXR-016)
+      placeholder: "AI Dev Kit v0.4.900+1"
+
+  - type: input
+    id: adk_error_code
+    attributes:
+      label: Install error code (ADK-*)
+      description: Paste the `ERROR [ADK-…]` code from install failure output if applicable (FR-108)
+      placeholder: "ADK-I03.E04"
+
   - type: textarea
     id: description
     attributes:

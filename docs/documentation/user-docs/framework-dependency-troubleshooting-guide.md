@@ -31,6 +31,7 @@ This guide provides solutions to common issues when installing, updating, and us
 - [Git Submodule Issues](#git-submodule-issues)
 - [CLI Tool Issues](#cli-tool-issues)
 - [Framework Functionality Issues](#framework-functionality-issues)
+- [Install error codes (ADK-*)](#install-error-codes-adk)
 
 ### Scope (greenfield vs brownfield)
 
@@ -1171,6 +1172,50 @@ ai-dev-kit report-issue \
 # - Steps to reproduce
 # - Diagnostic information
 ```
+
+---
+
+## Install error codes (ADK-*)
+
+Registry version: **1.0.0**. When install fails, copy the `ERROR [ADK-…]` line from your console together with the AI Dev Kit SemVer banner ([UXR-016](../../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).
+
+Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes.yaml`. Regenerate this appendix: `python packages/frameworks/workflow-mgt/scripts/generate_install_error_docs.py`.
+
+### ADK-I01.S01 {#adk-i01-s01}
+
+**Summary:** Greenfield RW install step failed — review subprocess output for `ADK-I03.*` codes.
+
+### ADK-I01.S02 {#adk-i01-s02}
+
+**Summary:** Greenfield Kanban install step failed — review subprocess output for `ADK-I02.*` codes.
+
+### ADK-I02.E01 {#adk-i02-e01}
+
+**Summary:** Kanban framework install failed. **See also:** BR-054.
+
+### ADK-I02.E08 {#adk-i02-e08}
+
+**Summary:** Kanban path contamination detected. **Remediation:** run contamination remediation or use a clean target path. **See also:** BR-037.
+
+### ADK-I03.E04 {#adk-i03-e04}
+
+**Summary:** RW installer dependencies missing (e.g. PyYAML). **Remediation:** `pip install 'pyyaml>=6.0'`. **See also:** BR-082.
+
+### ADK-I03.E12 {#adk-i03-e12}
+
+**Summary:** `version_file` missing or scaffold declined. **See also:** BR-088.
+
+### ADK-I03.E21 {#adk-i03-e21}
+
+**Summary:** rw-config kanban patterns mismatch fresh layout. **See also:** BR-083, BR-086.
+
+### ADK-I03.E90 {#adk-i03-e90}
+
+**Summary:** RW install PARTIAL — complete follow-up items at end of installer output.
+
+### ADK-I04.E01 {#adk-i04-e01}
+
+**Summary:** GitHub install sign-off not READY — run `install_github_issue_signoff.py` and fix contract checks.
 
 ---
 

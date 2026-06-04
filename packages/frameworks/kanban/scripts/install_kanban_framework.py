@@ -39,6 +39,20 @@ except ImportError:
     def print_section_header(title, project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
         print(title)
 
+try:
+    from adk_install_errors import emit_install_error
+except ImportError:
+    def emit_install_error(code, *, detail=None, file=None):  # type: ignore[misc]
+        print(f"ERROR [{code}]", file=file or sys.stderr)
+
+
+def _kanban_failure_code(errors: Optional[list] = None) -> str:
+    if errors:
+        for err in errors:
+            if "contaminated" in str(err).lower():
+                return "ADK-I02.E08"
+    return "ADK-I02.E01"
+
 # Import validation module
 try:
     from validate_installation import InstallationValidator
@@ -533,7 +547,8 @@ def validate_installation(
         print("\n❌ ERRORS (must be fixed before installation):")
         for error in errors:
             print(f"  {error}")
-        
+        emit_install_error(_kanban_failure_code(errors), file=sys.stderr)
+
         if not force:
             if install_mode == "fresh":
                 print(
@@ -732,6 +747,7 @@ Examples:
         final_status = "PARTIAL"
     if not should_continue:
         _log("ERROR", "[KANBAN_VALIDATE] Validation failed before migration/install")
+        emit_install_error("ADK-I02.E01", detail="validation cancelled or failed")
         return 1
     
     # Step 4: Migrate/Install
@@ -757,6 +773,7 @@ Examples:
             if result.get("status") != "completed":
                 print("❌ Canonical epic installation did not complete successfully.")
                 _log("ERROR", f"[KANBAN_FRESH_INSTALL] Canonical epic installation did not complete successfully: {result}")
+                emit_install_error("ADK-I02.E01", detail="canonical epic install incomplete")
                 return 1
         else:
             print("⚠️  install_canonical_epics_only helper not available; skipping canonical epic installation.")
@@ -773,6 +790,7 @@ Examples:
     else:
         if not analysis_report:
             print("❌ Error: Analysis report required for migration/update/hybrid modes")
+            emit_install_error("ADK-I02.E01", detail="missing analysis report")
             return 1
         
         success = migrate_structure(
@@ -784,6 +802,7 @@ Examples:
         )
         
         if not success:
+            emit_install_error("ADK-I02.E01", detail="migration failed")
             return 1
         
         # Step 5: Post-installation validation
@@ -800,6 +819,7 @@ Examples:
             if not should_continue:
                 print("⚠️  Post-installation validation found issues. Please review warnings/errors above.")
                 final_status = "FAILED"
+                emit_install_error("ADK-I02.E01", detail="post-install validation failed")
                 return 1
     
     print("\n" + "=" * 60)

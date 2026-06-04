@@ -281,6 +281,43 @@ install_logging:
         finally:
             close_install_logger(fh, log_dir, config)
 
+    def test_strict_event_contract_accepts_adk_error_fields(self, temp_project_dir: Path):
+        """FR-108: error results may include adk_error_code when strict mode is on."""
+        config_content = """version: "1.0.0"
+default_backend: "git-submodule"
+frameworks: {}
+install_logging:
+  enabled: true
+  path: "logs/ai-dev-kit/install"
+  format: json
+  strict_event_contract: true
+"""
+        config_path = temp_project_dir / ".ai-dev-kit.yaml"
+        config_path.write_text(config_content)
+        config = Config(config_path)
+        args = argparse.Namespace(log_path=None, no_install_log=False)
+        log, log_dir, log_file, fh = create_install_logger(temp_project_dir, config, args)
+        try:
+            log(
+                "ERROR",
+                "install.framework",
+                "install failed",
+                event={
+                    "intent": {"summary": "Install framework"},
+                    "action": {"summary": "Run backend"},
+                    "result": {
+                        "status": "error",
+                        "details": "failed",
+                        "adk_error_code": "ADK-I02.E01",
+                        "error_registry_version": "1.0.0",
+                    },
+                },
+            )
+            content = log_file.read_text(encoding="utf-8")
+            assert "ADK-I02.E01" in content
+        finally:
+            close_install_logger(fh, log_dir, config)
+
 
 class TestInstallLogRedaction:
     """Sensitive patterns are redacted in log output (via cli.utils.redact)."""

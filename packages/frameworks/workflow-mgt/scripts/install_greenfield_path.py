@@ -24,6 +24,12 @@ except ImportError:
     def print_session_banner(project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
         return None
 
+try:
+    from adk_install_errors import emit_install_error
+except ImportError:
+    def emit_install_error(code, *, detail=None, file=None):  # type: ignore[misc]
+        print(f"ERROR [{code}]", file=file or sys.stderr)
+
 
 def run_step(command: list[str], project_root: Path, dry_run: bool) -> int:
     printable = " ".join(command)
@@ -129,7 +135,11 @@ def main() -> int:
     for step in ordered_steps:
         code = run_step(step, project_root, args.dry_run)
         if code != 0:
+            is_rw = "install_release_workflow" in step[1]
+            err = "ADK-I01.S01" if is_rw else "ADK-I01.S02"
+            emit_install_error(err, detail=f"subprocess exit {code}")
             print(f"\nInstallation halted due to step failure (exit {code}).")
+            print("See subprocess output above for ADK-I02.* or ADK-I03.* detail codes.")
             return code
 
     print("\nGreenfield orchestration finished.")

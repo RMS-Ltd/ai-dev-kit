@@ -305,9 +305,21 @@ class LogsCommand(BaseCommand):
                 adk_semver = None
                 adk_internal_version = None
 
+        primary_codes: List[str] = []
+        registry_ver = None
+        for e in entries:
+            ec = e.get("event_contract") or {}
+            result = ec.get("result") if isinstance(ec, dict) else {}
+            code = result.get("adk_error_code") if isinstance(result, dict) else None
+            if code and code not in primary_codes:
+                primary_codes.append(str(code))
+            rv = result.get("error_registry_version") if isinstance(result, dict) else None
+            if rv and registry_ver is None:
+                registry_ver = str(rv)
+
         payload = {
             "schema_version": "1.0.0",
-            "feedback_contract_version": "1.0.0",
+            "feedback_contract_version": "1.1.0",
             "generated_at_utc": first.get("timestamp_utc"),
             "install_run_id": run_id,
             "source": {
@@ -322,11 +334,16 @@ class LogsCommand(BaseCommand):
                 "error_count": error_count,
                 "adk_semver": adk_semver,
                 "adk_internal_version": adk_internal_version,
+                "primary_adk_error_codes": primary_codes,
+                "error_registry_version": registry_ver,
             },
             "triage": {
                 "recommended_flow": "FR/BR intake from payload diagnostics",
-                "reproduction_hint": "Use install_run_id and step_id to replay timeline",
+                "reproduction_hint": "Use install_run_id, step_id, and ADK-* codes to replay timeline",
                 "t111_t112_boundary": "T111 produces telemetry; T112 packages/submits validated payload",
+                "adk_error_code_hint": (
+                    primary_codes[0] if primary_codes else "Paste ADK-* line from install stderr if absent"
+                ),
             },
             "events_sample": entries[:5],
             "redaction": {

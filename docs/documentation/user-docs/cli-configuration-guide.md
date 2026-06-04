@@ -181,6 +181,7 @@ Per-run install logging (FR-047). When enabled, each `ai-dev-kit install` run wr
     keep: 10
   ```
 - **CLI overrides:** Use `--log-path PATH` to override the log directory for a single run, or `--no-install-log` to disable logging for a single run.
+- **JSON + FR-108:** With `format: json`, failed steps may include `event_contract.result.adk_error_code` and `error_registry_version`. `ai-dev-kit logs prepare-feedback-payload` (contract **1.1.0**) surfaces `context.primary_adk_error_codes` for triage.
 
 #### `frameworks` (required)
 

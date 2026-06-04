@@ -75,6 +75,16 @@ def _validate_event_contract(event: Dict[str, Any]) -> None:
     if not isinstance(result, dict) or not result.get("details"):
         raise ValueError("event_contract.result.details is required")
 
+    status = str(result.get("status", "")).lower()
+    if status in ("error", "failed"):
+        code = result.get("adk_error_code")
+        if code is not None:
+            if not isinstance(code, str) or not code.startswith("ADK-"):
+                raise ValueError("event_contract.result.adk_error_code must be an ADK-* string")
+        reg_ver = result.get("error_registry_version")
+        if reg_ver is not None and not isinstance(reg_ver, str):
+            raise ValueError("event_contract.result.error_registry_version must be a string")
+
 
 def create_install_logger(
     project_root: Path,

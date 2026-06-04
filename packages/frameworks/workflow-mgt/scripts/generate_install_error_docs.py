@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+"""Render install error code appendix markdown from registry YAML (FR-108)."""
+
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+
+from adk_install_errors import load_registry
+
+
+def anchor_for(code: str) -> str:
+    return code.lower().replace(":", "-").replace(".", "-")
+
+
+def render_markdown() -> str:
+    reg = load_registry()
+    lines = [
+        "## Install error codes (ADK-*)",
+        "",
+        f"Registry version: **{reg.get('registry_version', 'unknown')}**. "
+        "When install fails, copy the `ERROR [ADK-…]` line from your console "
+        "together with the AI Dev Kit SemVer banner ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).",
+        "",
+        "Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes.yaml`.",
+        "",
+    ]
+    codes = reg.get("codes") or {}
+    for code in sorted(codes.keys()):
+        entry = codes[code]
+        lines.append(f"### {code} {{#{anchor_for(code)}}}")
+        lines.append("")
+        lines.append(f"**Summary:** {entry.get('summary', '')}")
+        lines.append("")
+        if entry.get("symptom"):
+            lines.append(f"**Symptom:** {entry['symptom']}")
+            lines.append("")
+        rem = entry.get("remediation") or []
+        if rem:
+            lines.append("**Remediation:**")
+            for step in rem:
+                lines.append(f"- {step}")
+            lines.append("")
+        see = entry.get("see_also") or []
+        if see:
+            lines.append(f"**See also:** {', '.join(see)}")
+            lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Generate install error codes markdown appendix.")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="Write fragment to file (default: stdout)",
+    )
+    args = parser.parse_args()
+    text = render_markdown()
+    if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(text, encoding="utf-8")
+        print(f"Wrote {args.output}")
+    else:
+        print(text, end="")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

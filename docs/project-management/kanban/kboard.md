@@ -49,6 +49,10 @@ housekeeping_policy: keep
 
 - **E06:S09:T19** – BR-088: RW install version_file scaffold (no src/) - ✅ COMPLETE (MEDIUM, **v0.6.9.19+1**, GitHub **#18**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | Last modified: 2026-06-05 17:10 UTC
 
+**2026-06-04:** **E06:S09:T20** released **v0.6.9.20+1** — **FR-108** install/setup `ADK-*` error code registry.
+
+- **E06:S09:T20** – FR-108: Install/setup error code registry - ✅ COMPLETE (HIGH, **v0.6.9.20+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | Last modified: 2026-06-04 20:30 UTC
+
 **2026-06-04:** Intake **BR-086** / GitHub **#17** (lowercase fresh kanban RW mode C; follow-up on #15/#16) → **E06:S09:T16**.
 
 - **E06:S09:T16** – BR-086: RW install lowercase fresh kanban patterns & sign-off - 🔄 IN PROGRESS (MEDIUM, **v0.6.9.16+1**, GitHub **#17**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | Last modified: 2026-06-04 12:56 UTC

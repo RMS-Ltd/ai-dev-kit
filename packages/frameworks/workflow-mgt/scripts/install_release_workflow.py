@@ -55,6 +55,23 @@ except ImportError:
         def print_section_header(title, project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
             print(title)
 
+try:
+    from adk_install_errors import emit_install_error
+except ImportError:
+    _adk_err_path = Path(__file__).resolve().parent / "adk_install_errors.py"
+    if _adk_err_path.is_file():
+        import importlib.util as _iu
+
+        _spec_err = _iu.spec_from_file_location("adk_install_errors", _adk_err_path)
+        _mod_err = _iu.module_from_spec(_spec_err)
+        assert _spec_err.loader is not None
+        sys.modules["adk_install_errors"] = _mod_err
+        _spec_err.loader.exec_module(_mod_err)
+        emit_install_error = _mod_err.emit_install_error
+    else:
+        def emit_install_error(code, *, detail=None, file=None):  # type: ignore[misc]
+            print(f"ERROR [{code}]", file=file or sys.stderr)
+
 # Minimal RW installer runtime dependencies (see repo setup.py).
 INSTALLER_DEPENDENCIES: Tuple[Tuple[str, str, str], ...] = (
     ("yaml", "pyyaml", "pyyaml>=6.0"),
@@ -104,6 +121,7 @@ def require_dependencies() -> None:
     ok, missing = check_dependencies()
     if ok:
         return
+    emit_install_error("ADK-I03.E04", file=sys.stderr)
     print(format_dependency_help(missing), file=sys.stderr)
     sys.exit(1)
 
@@ -987,6 +1005,7 @@ Brownfield (existing repo):
             for _import_name, pip_name, spec in INSTALLER_DEPENDENCIES:
                 print(f"  - {pip_name} ({spec})")
             sys.exit(0)
+        emit_install_error("ADK-I03.E04", file=sys.stderr)
         print(format_dependency_help(missing), file=sys.stderr)
         sys.exit(1)
 
@@ -1095,6 +1114,15 @@ Brownfield (existing repo):
         print("🔍 DRY RUN COMPLETE - No files were modified")
     else:
         if install_warnings or version_file_blocking:
+            if version_file_blocking:
+                emit_install_error("ADK-I03.E12", file=sys.stderr)
+            elif any(
+                "pattern" in w.lower() or "kanban" in w.lower() or "sign-off" in w.lower()
+                for w in install_warnings
+            ):
+                emit_install_error("ADK-I03.E21", file=sys.stderr)
+            else:
+                emit_install_error("ADK-I03.E90", file=sys.stderr)
             print("⚠️  INSTALLATION PARTIAL")
             print("\nIssues requiring follow-up:")
             for idx, warning in enumerate(install_warnings, start=1):

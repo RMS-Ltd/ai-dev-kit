@@ -75,6 +75,10 @@ This board provides **centralized visibility and prioritization** for all open F
 
 - **BR-088** – RW Mode C does not create version_file path (no src/) - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.19+1**, GitHub **#18**) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [E06:S09:T19](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [IPP-E06S09T19](../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md) | Last modified: 2026-06-05 17:11 UTC
 
+**2026-06-04:** **FR-108** IMPLEMENTED **v0.6.9.20+1** → **E06:S09:T20** (install/setup `ADK-*` error codes).
+
+- **FR-108** – Install/setup error code registry and emission - ✅ IMPLEMENTED (HIGH, **v0.6.9.20+1**) | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [E06:S09:T20](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | Last modified: 2026-06-04 20:30 UTC
+
 **2026-06-04:** Intake **BR-086** from GitHub **#17** (lowercase fresh kanban RW mode C; #15/#16 follow-up on `main`) → **E06:S09:T16**.
 
 - **BR-086** – RW install lowercase fresh kanban: story 03d blocked, sign-off BR-083 mismatch - 🟢 OPEN (MEDIUM, **v0.6.9.16+1**, GitHub **#17**) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | [E06:S09:T16](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | —No IPP— | Last modified: 2026-06-04 12:56 UTC

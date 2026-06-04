@@ -29,6 +29,14 @@ except ImportError:
     yaml = None  # type: ignore
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+try:
+    from adk_install_errors import emit_install_error
+except ImportError:
+    def emit_install_error(code, *, detail=None, file=None):  # type: ignore[misc]
+        print(f"ERROR [{code}]", file=file or sys.stderr)
+
 WORKFLOW_ROOT = SCRIPT_DIR.parent
 CONTRACT_PATH = WORKFLOW_ROOT / "config" / "github-issue-install-signoff-contract.yaml"
 KANBAN_SCRIPTS = WORKFLOW_ROOT.parent / "kanban" / "scripts"
@@ -520,6 +528,12 @@ def run_signoff(
         print("\n⚠️  Ready but no GitHub issue number in contract (cannot auto-close):")
         for i in ready_without_number:
             print(f"    {i.get('id')}")
+
+    not_ready = [
+        i for i in report.get("issues") or [] if not i.get("ready") and not i.get("skipped")
+    ]
+    if not_ready:
+        emit_install_error("ADK-I04.E01", detail=f"{len(not_ready)} contract check(s) not READY")
 
     if close:
         actions = close_ready_issues(contract, report, dry_run=dry_run)

@@ -32,6 +32,17 @@ AI Dev Kit v0.4.863+1
 
 Paste this line into GitHub issues or feedback so maintainers can match your console output to a released version. Install JSON logs and feedback payloads include matching `adk_semver` / `adk_internal_version` fields when logging is enabled.
 
+### Install error codes (FR-108)
+
+When an install step fails, installers print a stable code such as:
+
+```text
+ERROR [ADK-I03.E04] RW installer dependencies missing
+  → pip install 'pyyaml>=6.0'
+```
+
+**Report both** the SemVer banner line and the `ADK-*` code in GitHub issues or UAT feedback. Lookup tables and remediation steps are in [`framework-dependency-troubleshooting-guide.md`](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk).
+
 ---
 
 ## 📚 Documentation Location

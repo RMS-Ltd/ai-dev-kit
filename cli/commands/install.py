@@ -22,6 +22,9 @@ from cli.adk_version_display import (
     resolve_install_adk_version,
 )
 from cli.logging import create_install_logger, close_install_logger
+from cli.adk_install_errors_bridge import emit_install_error, merge_error_into_event
+
+CLI_INSTALL_ERROR_CODE = "ADK-I02.E01"
 from cli.utils import (
     print_success,
     print_error,
@@ -112,7 +115,27 @@ class InstallCommand(BaseCommand):
                     "result": {"status": status, "details": details},
                 }
                 payload.update(extra)
+                if status in ("error", "failed"):
+                    try:
+                        payload = merge_error_into_event(payload, CLI_INSTALL_ERROR_CODE)
+                    except Exception:
+                        pass
                 return payload
+
+            def fail_install(message: str, context: str, intent: str, action: str, details: str) -> int:
+                try:
+                    emit_install_error(CLI_INSTALL_ERROR_CODE, detail=details)
+                except Exception:
+                    pass
+                print_error(message)
+                log(
+                    "ERROR",
+                    context,
+                    message,
+                    step_id=next_step_id(),
+                    event=make_event(intent, action, "error", details),
+                )
+                return 1
 
             project_root = get_project_root()
             if project_root is None:
@@ -139,40 +162,26 @@ class InstallCommand(BaseCommand):
                     framework, version = validate_framework_spec(spec)
                     frameworks_to_install.append((framework, version))
                 except InvalidInputError as e:
-                    print_error(str(e))
-                    log(
-                        "ERROR",
+                    return fail_install(
+                        str(e),
                         "install.spec",
-                        f"Invalid framework spec '{spec}': {e}",
-                        step_id=next_step_id(),
-                        event=make_event(
-                            "Validate framework specification",
-                            f"Parse and validate framework spec '{spec}'",
-                            "error",
-                            str(e),
-                        ),
+                        "Validate framework specification",
+                        f"Parse and validate framework spec '{spec}'",
+                        str(e),
                     )
-                    return 1
             
             # Determine and validate backend
             backend_name = self.args.backend or config.get("default_backend", "git-submodule")
             try:
                 backend_name = validate_backend(backend_name)
             except InvalidInputError as e:
-                print_error(str(e))
-                log(
-                    "ERROR",
+                return fail_install(
+                    str(e),
                     "install.backend",
-                    f"Invalid backend '{backend_name}': {e}",
-                    step_id=next_step_id(),
-                    event=make_event(
-                        "Validate selected install backend",
-                        f"Validate backend '{backend_name}'",
-                        "error",
-                        str(e),
-                    ),
+                    "Validate selected install backend",
+                    f"Validate backend '{backend_name}'",
+                    str(e),
                 )
-                return 1
             
             # Select backend
             selected_backend_name = select_backend(
@@ -220,20 +229,13 @@ class InstallCommand(BaseCommand):
             try:
                 install_path = validate_path(install_path_str, must_exist=False, must_be_directory=True)
             except InvalidInputError as e:
-                print_error(str(e))
-                log(
-                    "ERROR",
+                return fail_install(
+                    str(e),
                     "install.path",
-                    f"Invalid install path '{install_path_str}': {e}",
-                    step_id=next_step_id(),
-                    event=make_event(
-                        "Validate install path",
-                        f"Validate path '{install_path_str}'",
-                        "error",
-                        str(e),
-                    ),
+                    "Validate install path",
+                    f"Validate path '{install_path_str}'",
+                    str(e),
                 )
-                return 1
             
             if self.args.dry_run:
                 print_info("DRY RUN MODE - No changes will be made")
@@ -341,6 +343,13 @@ class InstallCommand(BaseCommand):
                         )
                         config.save()
                     else:
+                        try:
+                            emit_install_error(
+                                CLI_INSTALL_ERROR_CODE,
+                                detail=f"{framework}@{version_str}",
+                            )
+                        except Exception:
+                            pass
                         log(
                             "ERROR",
                             "install.framework",
