@@ -1,0 +1,27 @@
+{
+  "contract": "FR-097",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 10,
+    "task_id": "E02:S16:T10",
+    "version_string": "v0.2.16.10+5"
+  },
+  "summary": "RW Step 7 v0.2.16.10+5 — kboard E02:S16:T10 last RW + Last modified stamp (portal npm security overrides)",
+  "boards": [
+    {
+      "board": "docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "results": [
+        {
+          "row_id": "E02:S16:T10",
+          "old_stamp": "2026-05-29 10:59 UTC",
+          "new_stamp": "2026-06-04 22:55 UTC",
+          "source": "doc",
+          "detail": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md"
+        }
+      ]
+    }
+  ]
+}

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-04 (E09:S01:T03 FR-032.3 v0.9.1.3+1)
-**Version:** v0.9.1.3+1
+**Last Updated:** 2026-06-04 (RW **E06:S09:T16** — BR-086 closure v0.6.9.16+3)
+**Version:** v0.6.9.16+3
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -29,13 +29,9 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E06:S09:T16** – BR-086: RW install lowercase fresh kanban patterns & sign-off - ⏳ WAITING (MEDIUM, **v0.6.9.16+2**, GitHub **#17** — adopter replay) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | Last modified: 2026-06-04 12:56 UTC
+*(None.)*
 
 ### Could Have (C) - Nice-to-Have Tasks
-
-- **E08:S03:T04** – BR-058: CI test workflow missing and pytest failures - 🟢 OPEN (LOW) | [Task](epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | Last modified: 2026-05-30 13:35 UTC
-
-- **E04:S19:T11** – UXR-017: Kanban epic/story path lowercase naming - ⏳ WAITING (MEDIUM, **v0.4.19.11+1** — ET AC5 + GH sign-off; impl. complete in kit) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md) | Last modified: 2026-06-04 21:00 UTC
 
 - **E04:S09:T01** – BR-007: Multiple Bugs Kanban Package Installation - 📋 TODO (LOW, Multiple bugs in kanban package installation) | [Task](epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [BR-007](fr-br/BR-007-multiple-bugs-kanban-package-installation.md) | Last modified: 2026-06-04 12:05 UTC
 
@@ -71,9 +67,9 @@ housekeeping_policy: keep
 
 - **E02:S10:T06** – FR-020: Version Validator Abstract Space Awareness - 📋 TODO (LOW, Abstract space awareness in version validator) | [Task](epics/epic-02/story-10-doc-init-build-zero-for-new-est.md) | [FR-020](fr-br/FR-020-version-validator-abstract-space-awareness.md) | Last modified: 2025-12-12 00:00 UTC
 
-- **E02:S11:T13** – GitHub Actions workflow spam emails (BR-051) - 📋 TODO (LOW, post-story hardening) | [Task](epics/epic-02/story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](fr-br/BR-051-github-actions-workflow-spam-emails.md) | Last modified: 2026-05-29 17:15:00 UTC
+- **E02:S11:T13** – GitHub Actions workflow spam emails (BR-051) - 📋 TODO (LOW, post-story hardening) | [Task](epics/epic-02/story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](fr-br/BR-051-github-actions-workflow-spam-emails.md) | Last modified: 2026-05-29 17:15 UTC
 
-- **E02:S11:T14** – GitHub Actions workflow optimization (BR-052) - 📋 TODO (LOW, post-story hardening) | [Task](epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md) | Last modified: 2026-05-29 17:16:00 UTC
+- **E02:S11:T14** – GitHub Actions workflow optimization (BR-052) - 📋 TODO (LOW, post-story hardening) | [Task](epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md) | Last modified: 2026-05-29 17:16 UTC
 
 - **E02:S11:T00** – FR-019: Intake Workflow Automation - 📋 TODO (LOW, Automation for intake workflow) | [Task](epics/epic-02/story-11-intake-workflow-automation.md) | [FR-019](fr-br/FR-019-intake-workflow-automation.md) | Last modified: 2026-03-30 00:00 UTC
 
@@ -83,17 +79,17 @@ housekeeping_policy: keep
 
 - **E05:S07:T01** – FR-022: Policy Docs Machine-Readable Salience - 📋 TODO (LOW, Machine-readable policy documentation) | [Task](epics/epic-05/story-07-policy-documentation-structure.md) | [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md) | Last modified: 2026-01-16 00:00 UTC
 
-- **E10:S01:T01** – Establish expectations baseline for Document Lifecycle package - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md#E10S01T01--establish-expectations-baseline-for-document-lifecycle-package) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:44:08 UTC
+- **E10:S01:T01** – Establish expectations baseline for Document Lifecycle package - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md#E10S01T01--establish-expectations-baseline-for-document-lifecycle-package) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:44 UTC
 
-- **E10:S01:T02** – Inventory package components and map to expectations - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:45:00 UTC
+- **E10:S01:T02** – Inventory package components and map to expectations - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:45 UTC
 
-- **E10:S01:T03** – Validate lifecycle behavior against documented guidance - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:46:00 UTC
+- **E10:S01:T03** – Validate lifecycle behavior against documented guidance - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:46 UTC
 
-- **E10:S01:T04** – Review integrations and dependency alignment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:47:00 UTC
+- **E10:S01:T04** – Review integrations and dependency alignment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:47 UTC
 
-- **E10:S01:T05** – Create gap log and risk assessment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:48:00 UTC
+- **E10:S01:T05** – Create gap log and risk assessment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:48 UTC
 
-- **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:49:00 UTC
+- **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:49 UTC
 
 - **E01:S02:T14** – FR-003: Dependency Tracking in Adopting Projects - 📋 TODO (LOW, Dependency tracking for project adoption) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | Last modified: 2026-06-04 21:01 UTC
 
@@ -115,7 +111,7 @@ housekeeping_policy: keep
 
 - **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.4+28**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | Last modified: 2026-06-04 17:34 UTC
 
-- **E02:S16:T10** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (last RW **v0.2.16.10+4**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | Last modified: 2026-05-29 10:59 UTC
+- **E02:S16:T10** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (last RW **v0.2.16.10+5**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | Last modified: 2026-06-04 22:55 UTC
 
 - **E02:S16:T14** – UKW gap discovery: TODO tasks and unfiled FR/BR (**FR-043**) - 📋 TODO (HIGH, perpetual UKW intake hygiene) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | Last modified: 2026-05-30 13:36 UTC
 

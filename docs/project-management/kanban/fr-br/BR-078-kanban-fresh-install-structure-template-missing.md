@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-078  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (PARTIAL install status; structure doc missing)  
-**Status:** OPEN (fix attempted — pending verification)  
+**Status:** RESOLVED (verified ExpensesTracker replay **2026-06-04** @ `v0.4.885+2`)  
 **GitHub Issue:** [#10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)  
 **Implementing Task:** [E06:S09:T07](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)  
 **Created:** 2026-06-03  

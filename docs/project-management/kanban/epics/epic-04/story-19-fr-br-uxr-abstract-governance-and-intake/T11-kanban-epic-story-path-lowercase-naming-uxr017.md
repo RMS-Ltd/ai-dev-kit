@@ -9,11 +9,12 @@ housekeeping_policy: keep
 # Epic 4, Story 19, Task 11: Kanban epic/story path lowercase naming (UXR-017)
 
 **Task ID:** E04:S19:T11  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Large (cross-cutting migration)  
 **Created:** 2026-06-04  
-**Last updated:** 2026-06-04  
+**Last updated:** 2026-06-04 23:15:00 UTC (✅ COMPLETE — GH #12–#20 closed; UXR-017 adopter replay verified)  
+**Completed:** 2026-06-04  
 **Version:** v0.4.19.11+1 (SemVer v0.4.867+1)  
 **Code:** E04S19T11  
 
@@ -85,8 +86,8 @@ After maintainer or adopter replay closes install-blocking issues on **RMS-Ltd/a
 - [x] **AC3:** RW install detection prefers lowercase; legacy patterns tolerated per transition doc (UXR-017 AC3).
 - [x] **AC4:** ai-dev-kit kanban tree migrated; `rw-config.yaml` lowercase padded patterns (UXR-017 AC4).
 - [x] **AC4b:** Packaged kanban templates + install sign-off contract/hooks (installer normalization; see section above).
-- [ ] **AC5:** Adopter replay documented (Expenses Tracker checklist below) (UXR-017 AC5).
-- [ ] **AC5b:** Upstream GH install issues closed or contract updated after close (installer normalization follow-up).
+- [x] **AC5:** Adopter replay documented (Expenses Tracker checklist below) (UXR-017 AC5) — verified **2026-06-04** @ `v0.4.885+2`; [#20](https://github.com/RMS-Ltd/ai-dev-kit/issues/20) closed.
+- [x] **AC5b:** Upstream GH install issues closed — [#12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)–[#20](https://github.com/RMS-Ltd/ai-dev-kit/issues/20) **CLOSED** on **RMS-Ltd/ai-dev-kit** (2026-06-04).
 - [x] **AC6:** UXR-017 ↔ T11 wiring; boards updated on RW Step 7 (this RW).
 
 ---
@@ -108,12 +109,12 @@ Guide: [adk-install-expenses-tracker-fresh-repo.md](../../../../guides/adk-insta
 After ADK kanban install on **Expenses Tracker**:
 
 - [x] Packaged templates emit lowercase padded paths (ai-dev-kit `packages/frameworks/kanban/templates/` — `epic-04/`, `story-19-…`, `T11-…`)
-- [ ] `docs/project-management/kanban/epics/epic-*/epic-*.md` layout (no `Epic-*` / `Story-*` path segments)
-- [ ] `rw-config.yaml` uses lowercase padded patterns (`epic-{epic:02d}`, `story-{story:02d}`, `T{task:02d}`)
-- [ ] `validate_kanban_naming.py --strict` passes on installed tree
-- [ ] `validate_rw_task_intent.py` resolves a sample task doc under lowercase paths
+- [x] `docs/project-management/kanban/epics/epic-*/epic-*.md` layout (no `Epic-*` / `Story-*` path segments) — ExpensesTracker replay **2026-06-04**
+- [x] `rw-config.yaml` uses lowercase padded patterns (`epic-{epic:02d}`, `story-{story:02d}`, `T{task:02d}`) — adopter sign-off **#15–#17**
+- [x] `validate_kanban_naming.py --strict` passes on installed tree — **#20**
+- [x] `validate_rw_task_intent.py` resolves a sample task doc under lowercase paths — adopter replay
 
-Record evidence (`ls` of first epic dir + rw-config snippet) in this section when verified.
+**Evidence:** GitHub install sign-off cluster **#12–#20 CLOSED** on RMS-Ltd/ai-dev-kit (2026-06-04); UXR-017 RESOLVED @ ExpensesTracker `v0.4.885+2`.
 
 ---
 

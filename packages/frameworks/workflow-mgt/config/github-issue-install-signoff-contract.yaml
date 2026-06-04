@@ -1,6 +1,9 @@
 # GitHub Issue install sign-off contract (machine-readable triggers).
 # Evaluated by install_github_issue_signoff.py after kanban/RW install steps.
 #
+# **2026-06-04:** All contract issues #12–#20 CLOSED on RMS-Ltd/ai-dev-kit (E04:S19:T11 AC5b).
+# Entries retained for audit; new installs should not re-close. See T11 task doc.
+#
 # Maintainer workflow:
 #   1. File GH issue; add label: awaiting-adopter-signoff
 #   2. Add/extend an entry here with when_all checks
@@ -55,7 +58,7 @@ issues:
       Evidence: adopter `rw-config.yaml`. Related: BR-085 may still need interactive replay for story prompt loop.
 
   - id: UXR-017
-    number: null
+    number: 20
     title: "Kanban epic/story path lowercase naming (adopter tree)"
     when_all:
       - type: no_capitalised_kanban_segments

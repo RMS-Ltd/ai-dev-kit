@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-04 (v0.6.9.20+2 – UKW archive T17–T20; **T16** sole open delivery)
-**Version:** v0.6.9.20+2
+**Last updated:** 2026-06-04 (v0.6.9.16+3 – **T16** COMPLETE / BR-086 closed; install sign-off cluster archived)
+**Version:** v0.6.9.16+3
 **Code:** E6S09
 
 ---
@@ -60,7 +60,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T15 – Install/setup interactive feedback external SemVer (UXR-016)** - ✅ COMPLETE (v0.6.9.15+1) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md) | [UXR-016](../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) | [IPP-E06S09T15](../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 
-- [ ] **E06:S09:T16 – RW install lowercase fresh kanban patterns & sign-off (BR-086)** - IN PROGRESS (MEDIUM — **v0.6.9.16+2** sign-off contract; GitHub **#17**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)
+- [x] **E06:S09:T16 – RW install lowercase fresh kanban patterns & sign-off (BR-086)** - ✅ COMPLETE (v0.6.9.16+3 — [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) closed; UKW `-c` archived) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
 
 - [x] **E06:S09:T17 – Framework install directory slugs (BR-087)** - ✅ COMPLETE (**v0.6.9.17+1** — slug archives, extract rename, migration script, tests) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) | [BR-087](../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)
 

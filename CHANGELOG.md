@@ -9,6 +9,30 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.16+3] - 04-06-26
+
+E06:S09:T16 — **BR-086 formal closure:** GitHub #17 closed; install-sign-off cluster #12–#20 verified; UKW `-c` archived T16/BR-086 to completed ledgers. SemVer **v0.4.890+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.16+3.md)
+
+---
+
+## [0.2.16.10+5] - 04-06-26
+
+E02:S16:T10 — **Portal npm security overrides:** `uuid` 11.1.1 and `serialize-javascript` 7.0.5 via `package.json` overrides; `npm audit` clean. SemVer **v0.4.887+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.10+5.md)
+
+---
+
+## [0.8.3.4+1] - 04-06-26
+
+E08:S03:T04 — **BR-058:** Repo-wide **Tests** CI workflow (Python 3.11) and pytest remediation — 348 tests green locally. SemVer **v0.4.886+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.4+1.md)
+
+---
+
 ## [0.9.1.3+1] - 04-06-26
 
 E09:S01:T03 — **FR-032.3 gap comparison:** T01 inventory + T02 RC=1 criteria + gap matrix report; T04–T07 follow-on index; IPP wired. SemVer **v0.4.885+1**.

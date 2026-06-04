@@ -1,0 +1,28 @@
+{
+  "contract": "FR-097 structure-prune — UKW -c archive completed (terminal rows removed from active boards)",
+  "release_scope": {
+    "task_id": "E02:S16:T04",
+    "version_string": "v0.9.1.3+3",
+    "invocation": "UKW -c"
+  },
+  "rows": {
+    "E04:S19:T11": {
+      "allowed": true,
+      "reason": "COMPLETE v0.4.19.11+1 — archived to kanban-completed.md (UKW -c); row pruned from kboard Should/Could"
+    },
+    "E06:S09:T16": {
+      "allowed": true,
+      "reason": "COMPLETE v0.6.9.16+2 — archived to kanban-completed.md (UKW -c); row pruned from kboard Should Have"
+    },
+    "UXR-017": {
+      "allowed": true,
+      "reason": "RESOLVED v0.4.19.11+1 — archived to fbu-completed.md (UKW -c); row pruned from fbuboard Could Have"
+    },
+    "BR-086": {
+      "allowed": true,
+      "reason": "RESOLVED v0.6.9.16+2 — archived to fbu-completed.md (UKW -c); row pruned from fbuboard Should Have"
+    }
+  },
+  "board_metadata_only": true,
+  "timestamp_utc": "2026-06-04 23:07:14 UTC"
+}

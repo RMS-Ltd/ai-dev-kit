@@ -12,10 +12,12 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-04  
 **Submitted By:** User (Expenses Tracker ADK install observation)  
 **Priority:** MEDIUM  
-**Status:** IN PROGRESS  
+**Status:** RESOLVED (adopter replay **2026-06-04** — ExpensesTracker @ `v0.4.885+2`)  
 **Code:** UXR-017  
-**Last updated:** 2026-06-05  
-**Version:** v0.4.19.11+1 (Waves 1–2 + template pack + installer sign-off; AC5 adopter replay open)  
+**Last updated:** 2026-06-04  
+**Version:** v0.4.19.11+1 (Waves 1–2 + template pack + installer sign-off; **AC5 verified**)  
+
+**GitHub Issue:** [#20](https://github.com/RMS-Ltd/ai-dev-kit/issues/20)  
 
 **Implementing Task:** [E04:S19:T11](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)  
 **Planning package:** [IPP-E04S19T11](../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
@@ -140,7 +142,7 @@ Project branches already use lowercase (`epic/6-framework-management`). Lowercas
 - [x] **AC2:** Framework fresh install and `canonical_adoption` emit lowercase epic/story paths without manual rename.
 - [x] **AC3:** `rw-config-schema.md` and install detection document lowercase defaults; legacy `Epic-/Story-` documented as **read-tolerance** during transition.
 - [x] **AC4:** ai-dev-kit kanban tree migrated; `validate_kanban_naming.py --strict` passes capitalised-segment check (pre-existing duplicate-task warnings only).
-- [ ] **AC5:** Expenses Tracker (or documented adopter replay) confirms consistent lowercase tree after reinstall/migration.
+- [x] **AC5:** Expenses Tracker (or documented adopter replay) confirms consistent lowercase tree after reinstall/migration. **Verified 2026-06-04** @ `v0.4.885+2`; [#20](https://github.com/RMS-Ltd/ai-dev-kit/issues/20).
 - [x] **AC6:** UXR-017 ↔ E04:S19:T11 bidirectional links; IPP published.
 
 ---

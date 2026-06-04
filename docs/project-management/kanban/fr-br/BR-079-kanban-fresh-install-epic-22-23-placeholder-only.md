@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-079  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (inconsistent fresh-install epic docs)  
-**Status:** OPEN (fix attempted **v0.6.9.8+2** — pending verification)  
+**Status:** RESOLVED (verified ExpensesTracker replay **2026-06-04** @ `v0.4.885+2`)  
 **GitHub Issue:** [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)  
 **Implementing Task:** [E06:S09:T08](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md)  
 **Created:** 2026-06-03  

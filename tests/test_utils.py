@@ -25,7 +25,7 @@ class TestProjectRoot:
         try:
             os.chdir(temp_project_dir)
             root = get_project_root()
-            assert root == temp_project_dir
+            assert root.resolve() == temp_project_dir.resolve()
         finally:
             os.chdir(original_cwd)
     
@@ -36,7 +36,7 @@ class TestProjectRoot:
         try:
             os.chdir(temp_config_file.parent)
             root = get_project_root()
-            assert root == temp_config_file.parent
+            assert root.resolve() == temp_config_file.parent.resolve()
         finally:
             os.chdir(original_cwd)
 

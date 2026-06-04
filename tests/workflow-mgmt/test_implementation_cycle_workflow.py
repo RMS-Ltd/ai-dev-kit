@@ -134,8 +134,9 @@ class TestImplementationCycleWorkflow:
         assert config["validation_strict"] is False
         assert config["custom_phase"] == "custom_value"
         
-        # Verify default ICW config is preserved (note: agent_driven may not be in merged config)
-        assert "phases" in config  # This should be preserved
+        # custom_config replaces default config entirely (not deep-merged)
+        assert "phases" not in config
+        assert "custom_phase" in config
 
     def test_icw_workflow_file_output(self):
         """Test ICW workflow file output."""

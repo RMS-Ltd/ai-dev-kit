@@ -143,17 +143,27 @@ class TestKanbanFreshInstallIntegration:
             )
             assert result.returncode == 0, f"stderr: {result.stderr}"
 
-            # Consumer board: no Epic 24 (BR-037), canonical epics only
+            # Consumer board: no Epic 24 (BR-037), canonical epics only (lowercase epic-* dirs)
             epics_dir = kanban_path / "epics"
             if epics_dir.exists():
-                epic_dirs = [d.name for d in epics_dir.iterdir() if d.is_dir() and d.name.startswith("Epic-")]
-                assert "Epic-24" not in epic_dirs, "consumer board must not contain Epic 24 (ai-dev-kit-specific)"
-                canonical = {"Epic-1", "Epic-2", "Epic-3", "Epic-4", "Epic-5", "Epic-6", "Epic-7", "Epic-8", "Epic-10", "Epic-18", "Epic-22", "Epic-23"}
+                epic_dirs = [
+                    d.name
+                    for d in epics_dir.iterdir()
+                    if d.is_dir() and d.name.lower().startswith("epic-")
+                ]
+                assert "Epic-24" not in epic_dirs and "epic-24" not in epic_dirs, (
+                    "consumer board must not contain Epic 24 (ai-dev-kit-specific)"
+                )
+                canonical = {
+                    "epic-01", "epic-02", "epic-03", "epic-04", "epic-05",
+                    "epic-06", "epic-07", "epic-08", "epic-10", "epic-18",
+                    "epic-22", "epic-23",
+                }
                 found = set(epic_dirs) & canonical
                 assert len(found) >= 1, "canonical epics should be installed"
 
-            # Board skeleton at repo root
-            board_file = kanban_path / "kanban-board.md"
+            # Board skeleton at repo root (fresh install uses kboard.md)
+            board_file = kanban_path / "kboard.md"
             assert board_file.exists()
             board_content = board_file.read_text(encoding="utf-8")
             # Post-fix invariant: consumer boards must NOT claim to be "AI Dev Kit – Kanban Board"

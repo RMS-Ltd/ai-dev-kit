@@ -1,0 +1,53 @@
+{
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": ["E08:S03:T04 checklist COMPLETE v0.8.3.4+1"],
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 4,
+    "task_id": "E08:S03:T04",
+    "version_string": "v0.8.3.4+1"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "structure_prune",
+    "manifest": "rw-step7-structure-prune-v0-8-3-4plus1-e8s3t4.json"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard", "story_doc", "kanban-completed", "fbu-completed"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "changes": ["COMPLETE v0.8.3.4+1; AC1–AC3 checked"],
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md"],
+      "surface": "task_doc",
+      "touched": true
+    },
+    "fbu_doc": {
+      "changes": ["BR-058 RESOLVED v0.8.3.4+1"],
+      "paths": ["docs/project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md"],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["Pruned E08:S03:T04 terminal row; fixed duplicate stamp suffixes on E02/E10 rows"],
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": ["Pruned BR-058 terminal row"],
+      "paths": ["docs/project-management/kanban/fbuboard.md"],
+      "surface": "fbuboard",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-04 22:32:54 UTC"
+}

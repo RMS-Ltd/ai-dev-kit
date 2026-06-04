@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-03 (v0.8.3.6+2 – T06 complete: Dependabot FR-105)
-**Version:** v0.8.3.6+2
+**Last updated:** 2026-06-04 (v0.8.3.4+1 – T04 complete: Tests CI + pytest remediation)
+**Version:** v0.8.3.4+1
 **Code:** E8S03
 
 ---
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 - [ ] **E08:S03:T03 – Establish automation patterns** - TODO
 
 
-- [ ] **E08:S03:T04 – CI test workflow and pytest remediation (BR-058)** - TODO (LOW) — [Task doc](story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+- [ ] **E08:S03:T04 – CI test workflow and pytest remediation (BR-058)** ✅ COMPLETE (v0.8.3.4+1) — [Task doc](story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | [IPP](../../../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
 
 
 - [x] **E08:S03:T05 – Python minimum version policy alignment (FR-104 / BR-077)** ✅ COMPLETE (v0.8.3.5+2) — [Task doc](story-03-automation-scripts/T05-python-minimum-version-fr104-br077.md) | [FR-104](../../fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)

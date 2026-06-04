@@ -50,7 +50,7 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T10 – E7:S00 detasking — abstract space enforcement (BR-076)** - ✅ COMPLETE (HIGH, **v0.4.19.10+2** — hollow E7:S00, historical T01–T06, UXR-005 exemplar, intake S00 ban) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) | [BR-076](../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) | [IPP](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md) | Related: [FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [E04:S19:T08](story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
 
-- [ ] **E04:S19:T11 – Kanban epic/story path lowercase naming (UXR-017)** - 🔄 IN PROGRESS (MEDIUM, **v0.4.19.11+1** — paths + template pack + installer GH sign-off; ET AC5 / AC5b open) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+- [x] **E04:S19:T11 – Kanban epic/story path lowercase naming (UXR-017)** - ✅ COMPLETE (v0.4.19.11+1 — GH #12–#20 closed; adopter replay verified) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
 ---
 

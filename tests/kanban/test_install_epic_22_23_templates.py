@@ -39,8 +39,8 @@ def test_epic_22_23_templates_exist_in_package():
     t23 = migrator._get_epic_template_file(23)
     assert t22 is not None and t22.is_file()
     assert t23 is not None and t23.is_file()
-    assert t22.name == "Epic-22.md"
-    assert t23.name == "Epic-23.md"
+    assert t22.name == "epic-22.md"
+    assert t23.name == "epic-23.md"
 
 
 @pytest.fixture
@@ -75,8 +75,8 @@ def test_fresh_install_epic_22_23_not_placeholder(empty_project: Path) -> None:
     assert "Epic 22 created with placeholder" not in combined
     assert "Epic 23 created with placeholder" not in combined
     assert "installed from template" in combined
-    e22 = empty_project / kanban_rel / "epics" / "Epic-22" / "Epic-22.md"
-    e23 = empty_project / kanban_rel / "epics" / "Epic-23" / "Epic-23.md"
+    e22 = empty_project / kanban_rel / "epics" / "epic-22" / "epic-22.md"
+    e23 = empty_project / kanban_rel / "epics" / "epic-23" / "epic-23.md"
     assert e22.is_file() and e23.is_file()
     assert PLACEHOLDER_SNIPPET not in e22.read_text(encoding="utf-8").lower()
     assert PLACEHOLDER_SNIPPET not in e23.read_text(encoding="utf-8").lower()
@@ -105,7 +105,7 @@ def test_dry_run_logs_template_paths_for_epic_22_23(empty_project: Path) -> None
         timeout=120,
     )
     combined = result.stdout + result.stderr
-    assert "Epic-22/Epic-22.md" in combined or "Epic-22.md" in combined
-    assert "Epic-23/Epic-23.md" in combined or "Epic-23.md" in combined
+    assert "epic-22/epic-22.md" in combined or "epic-22.md" in combined
+    assert "epic-23/epic-23.md" in combined or "epic-23.md" in combined
     assert "Would install Epic 22 from template" in combined
     assert "Would install Epic 23 from template" in combined
