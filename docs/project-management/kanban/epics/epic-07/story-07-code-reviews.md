@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-03 (v0.7.7.2+1 — E07:S07:T02 CI pytest gate)
-**Version:** v0.7.7.2+1
+**Last updated:** 2026-06-05 (v0.7.7.3+0 — **T03 / BR-091** Kanban documentation setup)
+**Version:** v0.7.7.3+0
 
 ---
 
@@ -28,6 +28,9 @@ housekeeping_policy: keep
   - Task Doc: [`T02-ci-pytest-gate-for-workflow-scripts.md`](story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md)
   - IPP: [`IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md`](../../../../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
   - Source: [T01 report H1](story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+
+- [ ] **E07:S07:T03 – Workflow validator slug path resolution ([BR-091](../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md))** — 📋 TODO — Kanban documentation setup (**v0.7.7.3+0**)
+  - Task Doc: [`T03-workflow-validator-slug-path-resolution-br091.md`](story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md)
 
 > **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`  

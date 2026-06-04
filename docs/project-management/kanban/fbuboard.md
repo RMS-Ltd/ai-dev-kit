@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-05 (RW **E05:S09:T13** — BR-090 intake v0.5.9.13+0)
-**Version Context:** v0.5.9.13+0
+**Last Updated:** 2026-06-05 (RW **E07:S07:T03** — BR-091 intake v0.7.7.3+0)
+**Version Context:** v0.7.7.3+0
 
 **Active board contract:** Rows are **open FBU work** (OPEN / TODO / PROPOSED with active task), including **Could Have** backlog. Remove **terminal** FBUs and archive/journal prose (use [`fbu-completed.md`](fbu-completed.md)), not filed low-priority queue items.
 
@@ -31,7 +31,9 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Items
 
-- **BR-090** – Docusaurus 3.10 build fails: missing `@docusaurus/faster` + lockfile drift - 📋 TODO (HIGH, ~97 failed build jobs; GitHub Actions metrics 2026-06-05) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [E05:S09:T13](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | —No IPP— | Last modified: 2026-06-05 18:30 UTC
+- **BR-090** – Docusaurus 3.10 build fails: missing `@docusaurus/faster` + lockfile drift - 📋 TODO (HIGH) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [E05:S09:T13](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | —No IPP— | Last modified: 2026-06-05 18:30 UTC
+
+- **BR-091** – Workflow validators hardcode legacy `workflow mgt` path - 📋 TODO (HIGH, Workflow scripts pytest gate red) | [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) | [E07:S07:T03](epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md) | —No IPP— | Last modified: 2026-06-05 18:45 UTC
 
 - **FR-106** – Packaged workflows sync with live repo implementation - 🟢 OPEN (HIGH, fix attempted **v0.2.13.8+2** — pending verification) | [IPP](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [E02:S13:T08](epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | —No IPP— | Last modified: 2026-06-03 20:06 UTC
 
