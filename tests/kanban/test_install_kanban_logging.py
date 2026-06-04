@@ -3,9 +3,12 @@ Tests for Kanban installer logging (FR-047): env-based log path and KANBAN_* mar
 
 When AI_DEV_KIT_INSTALL_LOG_PATH is set, the installer appends phase-tagged lines
 ([KANBAN_MODE], [KANBAN_VALIDATE], [KANBAN_FRESH_INSTALL], etc.) to that file.
+
+BR-081 / E06:S09:T10: no datetime.utcnow() in installer; DeprecationWarning guard.
 """
 
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -17,6 +20,43 @@ import pytest
 # Repo root (tests/kanban -> tests -> root)
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 KANBAN_SCRIPT = REPO_ROOT / "packages" / "frameworks" / "kanban" / "scripts" / "install_kanban_framework.py"
+
+
+@pytest.mark.skipif(not KANBAN_SCRIPT.exists(), reason="Kanban installer script not found")
+class TestInstallNoUtcnowDeprecation:
+    """BR-081: installer must not use deprecated datetime.utcnow()."""
+
+    def test_installer_source_has_no_utcnow(self):
+        content = KANBAN_SCRIPT.read_text(encoding="utf-8")
+        assert "utcnow" not in content
+
+    def test_fresh_dry_run_no_deprecation_warning_as_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            temp_dir = Path(tmp)
+            kanban_path = temp_dir / "docs" / "project-management" / "kanban"
+            kanban_path.mkdir(parents=True)
+            env = {
+                **os.environ,
+                "PYTHONWARNINGS": "error::DeprecationWarning",
+            }
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(KANBAN_SCRIPT),
+                    "--mode",
+                    "fresh",
+                    "--dry-run",
+                    "--force",
+                    "--kanban-path",
+                    str(kanban_path),
+                ],
+                cwd=str(temp_dir),
+                env=env,
+                capture_output=True,
+                text=True,
+                timeout=60,
+            )
+            assert result.returncode == 0, result.stderr + result.stdout
 
 
 @pytest.mark.skipif(not KANBAN_SCRIPT.exists(), reason="Kanban installer script not found")
@@ -69,10 +109,14 @@ class TestKanbanInstallerEnvLogPath:
             content = log_file.read_text(encoding="utf-8")
             lines = [l.strip() for l in content.strip().split("\n") if l.strip()]
             assert lines
+            iso_ts = re.compile(
+                r"^\[\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\] \[(INFO|ERROR|WARNING)\] kanban\.install "
+            )
             for line in lines:
                 assert line.startswith("["), "each log line should start with [timestamp]"
                 assert "] [INFO]" in line or "] [ERROR]" in line or "] [WARNING]" in line
                 assert "kanban.install" in line
+                assert iso_ts.match(line), f"log line should use ISO-Z UTC timestamp: {line!r}"
 
 
 @pytest.mark.skipif(not KANBAN_SCRIPT.exists(), reason="Kanban installer script not found")

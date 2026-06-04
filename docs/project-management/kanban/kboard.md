@@ -43,6 +43,10 @@ housekeeping_policy: keep
 
 - **E06:S09:T17** – BR-087: Framework install directory slugs (wave 1) - ✅ COMPLETE (HIGH, **v0.6.9.17+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | Last modified: 2026-06-04 13:53 UTC
 
+**2026-06-05:** Intake **BR-088** / GitHub **#18** (mode C missing `version_file` scaffold) → **E06:S09:T19**.
+
+- **E06:S09:T19** – BR-088: RW install version_file scaffold (no src/) - 📋 TODO (MEDIUM, GitHub **#18**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | Last modified: 2026-06-05 17:10 UTC
+
 **2026-06-04:** Intake **BR-086** / GitHub **#17** (lowercase fresh kanban RW mode C; follow-up on #15/#16) → **E06:S09:T16**.
 
 - **E06:S09:T16** – BR-086: RW install lowercase fresh kanban patterns & sign-off - 🔄 IN PROGRESS (MEDIUM, **v0.6.9.16+1**, GitHub **#17**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | Last modified: 2026-06-04 12:56 UTC
@@ -53,7 +57,7 @@ housekeeping_policy: keep
 
 - **E04:S19:T11** – UXR-017: Kanban epic/story path lowercase naming - 🔄 IN PROGRESS (MEDIUM, **v0.4.19.11+1** — template pack + installer GH sign-off; ET AC5 open) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md) | Last modified: 2026-06-04 21:00 UTC
 
-- **E06:S09:T10** – BR-081: Kanban install `utcnow()` deprecation - 📋 TODO (LOW, GitHub #13) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | Last modified: 2026-06-03 17:43 UTC
+- **E06:S09:T10** – BR-081: Kanban install `utcnow()` deprecation - ✅ COMPLETE (LOW, **v0.6.9.10+2**, GitHub #13) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [IPP](../../implementation-cycles/IPP-E06S09T10-br081-kanban-install-datetime-utcnow.md) | Last modified: 2026-06-03 17:43 UTC
 
 - **E10:S01:T01** – Establish expectations baseline for Document Lifecycle package - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md#E10S01T01--establish-expectations-baseline-for-document-lifecycle-package) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:44:08 UTC
 - **E10:S01:T02** – Inventory package components and map to expectations - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:45:00 UTC

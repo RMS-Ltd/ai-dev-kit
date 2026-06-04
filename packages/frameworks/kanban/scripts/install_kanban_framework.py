@@ -22,7 +22,7 @@ import json
 import os
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -103,7 +103,7 @@ def _log(level: str, message: str) -> None:
     try:
         if _ENV_LOG_FH is None:
             _ENV_LOG_FH = open(log_path, "a", encoding="utf-8")
-        ts = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         _ENV_LOG_FH.write(f"[{ts}] [{level}] kanban.install {message}\n")
         _ENV_LOG_FH.flush()
     except Exception:
@@ -221,7 +221,7 @@ def create_consumer_board_skeleton(
     created = {"board": False, "structure": False, "guide": False}
 
     project_name = _get_project_name(project_root)
-    today = datetime.utcnow().strftime("%Y-%m-%d")
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     version_placeholder = "v0.0.0.0+0"
 
     kanban_path = Path(kanban_path)

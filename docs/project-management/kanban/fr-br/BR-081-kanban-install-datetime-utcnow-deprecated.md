@@ -11,9 +11,10 @@ housekeeping_policy: keep
 **Bug ID:** BR-081  
 **Priority:** LOW  
 **Severity:** LOW (DeprecationWarning noise; future Python risk)  
-**Status:** OPEN (INTAKE)  
+**Status:** FIXED (pending user verification on Python 3.12+)  
 **GitHub Issue:** [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)  
 **Implementing Task:** [E06:S09:T10](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md)  
+**Fix version:** v0.6.9.10+2 (RW E06:S09:T10)  
 **Created:** 2026-06-03  
 **Source:** Book dry-run; Python 3.14.5; ADK `dev` @ `84efa7b`
 
@@ -31,5 +32,5 @@ Timezone-aware UTC, e.g. `datetime.now(datetime.UTC)`.
 
 ## Acceptance Criteria
 
-- [ ] No `utcnow()` in `install_kanban_framework.py` on supported Python versions.
-- [ ] Regression test or lint guard optional (no new warning on 3.12+).
+- [x] No `utcnow()` in `install_kanban_framework.py` on supported Python versions.
+- [x] Regression test (`tests/kanban/test_install_kanban_logging.py::TestInstallNoUtcnowDeprecation`).

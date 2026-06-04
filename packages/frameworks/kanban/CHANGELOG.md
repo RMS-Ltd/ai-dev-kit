@@ -5,6 +5,14 @@ All notable changes to the Kanban System Implementation Package will be document
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- **BR-081 / E06:S09:T10:** Replace deprecated `datetime.utcnow()` with `datetime.now(timezone.utc)` in `install_kanban_framework.py` (logging and template date substitution).
+
+---
+
 ## [2.2.0] - 2026-04-13
 
 **Package Version:** 2.2.0

@@ -48,7 +48,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T09 – Kanban fresh mode validation on empty repo (BR-080)** - ✅ COMPLETE (**v0.6.9.9+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) | [BR-080](../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [IPP-E06S09T09](../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) | [#12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)
 
-- [ ] **E06:S09:T10 – Kanban install `utcnow()` deprecation (BR-081)** - TODO (LOW) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [BR-081](../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
+- [x] **E06:S09:T10 – Kanban install `utcnow()` deprecation (BR-081)** - ✅ COMPLETE (**v0.6.9.10+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [BR-081](../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [IPP](../../../implementation-cycles/IPP-E06S09T10-br081-kanban-install-datetime-utcnow.md) | [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
 
 - [x] **E06:S09:T11 – RW install PyYAML preflight (BR-082)** - ✅ COMPLETE (**v0.6.9.11+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | [BR-082](../../fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [IPP-E06S09T11](../../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md) | [#14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)
 
@@ -65,6 +65,8 @@ housekeeping_policy: keep
 - [x] **E06:S09:T17 – Framework install directory slugs (BR-087)** - ✅ COMPLETE (**v0.6.9.17+1** — slug archives, extract rename, migration script, tests) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) | [BR-087](../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)
 
 - [x] **E06:S09:T18 – BR-087 framework slug install closure (wave 2)** - ✅ COMPLETE (**v0.6.9.18+2** — maintainer slug dirs, install warnings, registry/GitHub release) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [IPP-E06S09T18](../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md) | [BR-087](../../fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [UXR-016](../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
+
+- [ ] **E06:S09:T19 – RW install version_file scaffold (BR-088)** - 📋 TODO (MEDIUM, GitHub **#18**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)
 
 ---
 
