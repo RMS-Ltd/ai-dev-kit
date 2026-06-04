@@ -97,13 +97,12 @@ The MoSCOW priority list is updated LAST.
 - Validate consistency across all documents
 - Update board version and metadata
 
-**Step 6: Board Cleanup**
-- Scan all MoSCOW sections for COMPLETED tasks
-- Remove COMPLETED tasks from active MoSCOW sections
-- Invoke Documentation Agent for kanban_completed_update skill
-- Archive completed tasks with timestamps to kanban-completed.md
-- Validate active sections contain only IN PROGRESS/TODO tasks
-- Ensure board organization reflects current work priorities
+**Step 6: Board Cleanup (lean active board)**
+- **Ledger first:** append `kanban-completed.md` / `fbu-completed.md` before removing any terminal row from active MoSCOW
+- Scan MoSCOW for terminal rows (`COMPLETE`, `RESOLVED`, shipped Won't) and **prune** after ledger update
+- **Forbidden:** archive footnote paragraphs on `kboard.md` / `fbuboard.md`; `**YYYY-MM-DD:**` journal lines between rows; leaving `✅ COMPLETE` on the active board
+- **BR-059 (narrow):** do not bulk-add every story-checklist `TODO` to Could Have — only IN PROGRESS / OPEN / M/S-promoted work
+- Active board = live priorities; backlog remains in story checklists and `fr-br/` until promoted
 
 **Step 7: FR/BR/UXR Board Cleanup (`fbuboard.md`) — FR-050 / FR-076 / FR-097**
 - Analyze FR/BR/UXR completion status from linked `fr-br/*.md` source docs

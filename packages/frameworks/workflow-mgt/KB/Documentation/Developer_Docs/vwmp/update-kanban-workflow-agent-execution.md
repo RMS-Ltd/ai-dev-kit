@@ -507,6 +507,14 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 **Purpose:** Update the main kanban board, with MoSCOW list LAST (requires intelligent prioritization)
 
+**Active board contract (lean MoSCOW — mandatory):**
+
+- `kboard.md` and `fbuboard.md` show **live work only**. Terminal outcomes live in `kanban-completed.md` / `fbu-completed.md` after ledger append (`UKW -c` or Step 6.5–6.6).
+- **Forbidden on active boards:** archive footnote paragraphs inside MoSCOW sections; `**YYYY-MM-DD:**` journal lines between rows; `✅ COMPLETE` / terminal rows without immediate prune; fbuboard “Usage instructions” / statistics essays.
+- **BR-059 scope (narrow):** add missing checklist tasks to MoSCOW only when **IN PROGRESS**, **OPEN**, or **explicitly promoted** to M/S this cycle — not every `TODO` in the repo.
+- **Bidirectional wiring (narrow):** M/S and in-flight C/O rows on `kboard.md` must match `fbuboard.md` for the same work. FBU **OPEN + task COMPLETE** (verification backlog) may stay on `fbuboard` without a kboard twin — document in board header, not extra journal lines.
+- **After comprehensive UKW:** run terminal prune (Step 6.5–6.6 / `UKW -c` scan) so COMPLETE rows do not accumulate on the active board.
+
 **Agent Execution:**
 
 1. **ANALYZE (🧠 INTELLIGENCE REQUIRED):**
@@ -554,7 +562,9 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 3. **EXECUTE:**
    - **Part B.1 — Story checklist enumeration (BR-059; before MoSCOW classification):**
      - For each story **IN PROGRESS** (or with ≥2 open checklist tasks): extract open tasks from the story checklist; compare to `kboard.md` MoSCOW rows for that story.
-     - Add missing `E:S:T` rows in stable task order, or **Won't Have** with explicit deferral rationale.
+     - Add missing `E:S:T` rows **only** when task-doc status is **IN PROGRESS** or **OPEN**, or the operator promotes the item to **M/S** this cycle.
+     - Do **not** bulk-add every checklist `TODO` to Could Have (backlog stays in story docs + `fr-br/` until promoted).
+     - Defer unpromoted gaps to **Won't Have** with one-line rationale, or leave off the active board per lean contract.
      - Advisory: `python "packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py" --story E##:S##`.
      - If gaps remain, Step 9 must include `## Story MoSCOW coverage` (story id, open count, board count, missing ids).
    - **FIRST: Update Epic Sections (WITH NUMERICAL SORTING):**

@@ -1,0 +1,334 @@
+{
+  "contract": "FR-097 structure-prune \u2014 UKW lean active board hygiene (FR-109 / E02:S16:T18)",
+  "release_scope": {
+    "task_id": "E02:S16:T18",
+    "version_string": "v0.2.16.18+1"
+  },
+  "rows": {
+    "BR-001": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "BR-002": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "BR-003": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "BR-005": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "BR-006": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "BR-007": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "BR-008": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "BR-039": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "BR-081": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E01:S02:T13": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E01:S02:T14": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S01:T06": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S01:T10": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S01:T17": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S06:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S07:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S07:T05": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S10:T00": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S10:T06": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S11:T00": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S11:T11": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E02:S16:T02": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S06:T06": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S07:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S07:T02": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S08:T05": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S09:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S09:T05": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S09:T06": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S10:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S11:T04": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S11:T07": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S14:T04": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S15:T05": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S19:T03": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E04:S19:T09": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E05:S01:T44": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E05:S01:T48": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E05:S02:T06": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E05:S07:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E06:S06:T57": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E06:S08:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E06:S09:T10": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E07:S01:T10": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E07:S05:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E07:S05:T02": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E07:S05:T03": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E09:S01:T03": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "E21:S00:T01": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-002": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-003": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-006": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-007": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-008": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-009": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-010": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-012": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-013": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-014": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-016": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-017": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-018": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-019": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-020": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-022": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-029": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-030": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-031": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-032": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-037": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-039": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-044": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-048": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-063": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-077": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "FR-087": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "UXR-001": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "UXR-002": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "UXR-003": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "UXR-006": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    },
+    "UXR-014": {
+      "allowed": true,
+      "reason": "UKW lean-board prune \u2014 row archived to kanban-completed.md / fbu-completed.md (FR-109)"
+    }
+  },
+  "timestamp_utc": "2026-06-04 22:15:00 UTC"
+}

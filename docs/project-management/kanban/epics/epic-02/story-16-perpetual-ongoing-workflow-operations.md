@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-04 (v0.2.16.4+26 — **T04** RW UKW release)
-**Version:** v0.2.16.4+26
+**Last updated:** 2026-06-04 (v0.2.16.18+1 — **T18** FR-109 lean board enforcement)
+**Version:** v0.2.16.18+1
 **Code:** E2S16
 
 ---
@@ -75,6 +75,9 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
 
 - [x] **E02:S16:T17 – Agent bootstrap and task routing (FR-103)** - ✅ COMPLETE (v0.2.16.17+2) (HIGH, ADR-012, single-step AGENTS.md bootstrap)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md`](story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) | [FR-103](../../fr-br/FR-103-agent-bootstrap-and-task-routing.md) | [IPP](../../../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md) | [ADR-012](../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
+
+- [x] **E02:S16:T18 – UKW lean active board contract (FR-109)** - ✅ COMPLETE (v0.2.16.18+1 — validator, Gate 11, lean boards, UKW parity)  
+  - Task: [`story-16-perpetual-ongoing-workflow-operations/T18-ukw-lean-active-board-contract-fr109.md`](story-16-perpetual-ongoing-workflow-operations/T18-ukw-lean-active-board-contract-fr109.md) | [FR-109](../../fr-br/FR-109-ukw-lean-active-board-contract.md)
 
 ---
 

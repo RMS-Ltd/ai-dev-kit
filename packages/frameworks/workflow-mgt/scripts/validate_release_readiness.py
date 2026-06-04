@@ -61,6 +61,7 @@ The validator runs nine independent gates and aggregates their verdicts:
 
     Gate 9  MoSCOW state icons (UXR-012 / E4:S13:T07)
     Gate 10 MoSCOW multi-line spacing (UXR-005 / E07:S01:T09) — non-blocking (warn)
+    Gate 11 Active board lean contract (FR-109 / E02:S16:T18) — blocking
             (every parseable MoSCOW row on `kboard.md` / `fbuboard.md`
             carries the canonical Set A emoji before its status token).
 
@@ -1272,6 +1273,50 @@ def gate_10_moscow_spacing(project_root: Path) -> GateVerdict:
 
 
 # --------------------------------------------------------------------------- #
+# Gate 11: Active board lean contract (FR-109 / E02:S16:T18) — blocking
+# --------------------------------------------------------------------------- #
+
+
+def gate_11_active_board_lean(project_root: Path) -> GateVerdict:
+    """Fail when active kboard/fbuboard violate lean MoSCOW contract."""
+    findings: List[str] = []
+    evidence: Dict[str, Any] = {}
+    val_dir = project_root / "packages/frameworks/workflow-mgt/scripts/validation"
+    if str(val_dir) not in sys.path:
+        sys.path.insert(0, str(val_dir))
+    try:
+        from validate_active_kanban_board import validate_project
+    except ImportError as exc:
+        return GateVerdict(
+            gate_id=11,
+            name="Active board lean (FR-109)",
+            passed=False,
+            severity="block",
+            summary=f"Cannot import validate_active_kanban_board: {exc}",
+            findings=[str(exc)],
+            evidence=evidence,
+        )
+
+    ok, rows = validate_project(project_root)
+    evidence["failure_count"] = len(rows)
+    findings.extend(rows)
+    summary = (
+        "Active boards contain live work only (no terminal rows or archive prose)."
+        if ok
+        else "Active board bloat detected; archive to completed ledgers and prune MoSCOW."
+    )
+    return GateVerdict(
+        gate_id=11,
+        name="Active board lean (FR-109)",
+        passed=ok,
+        severity="block",
+        summary=summary,
+        findings=findings,
+        evidence=evidence,
+    )
+
+
+# --------------------------------------------------------------------------- #
 # Orchestration
 # --------------------------------------------------------------------------- #
 
@@ -1287,6 +1332,7 @@ GATE_FUNCS: Tuple[Tuple[int, str, Callable[..., GateVerdict]], ...] = (
     (8, "homogeneity", gate_8_stamp_homogeneity),
     (9, "state_icons", gate_9_state_icons),
     (10, "moscow_spacing", gate_10_moscow_spacing),
+    (11, "active_board_lean", gate_11_active_board_lean),
 )
 
 
@@ -1311,7 +1357,7 @@ def run_release_readiness(
         invocation_context=invocation_context,
     )
 
-    selected = set(selected_gates) if selected_gates else set(range(1, 10))
+    selected = set(selected_gates) if selected_gates else set(range(1, 12))
 
     if 1 in selected:
         report.verdicts.append(gate_1_governance_alignment(project_root))
@@ -1348,6 +1394,10 @@ def run_release_readiness(
         report.verdicts.append(gate_8_stamp_homogeneity(project_root))
     if 9 in selected:
         report.verdicts.append(gate_9_state_icons(project_root))
+    if 10 in selected:
+        report.verdicts.append(gate_10_moscow_spacing(project_root))
+    if 11 in selected:
+        report.verdicts.append(gate_11_active_board_lean(project_root))
 
     if four_surface_report_path is not None:
         report.four_surface_report_path = str(four_surface_report_path)

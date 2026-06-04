@@ -2071,7 +2071,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
 
 ### Step 10: Run Validators
 
-**Release-readiness gate (FR-092 Wave 7 + FR-097 Gate 8 + UXR-012 Gate 9):** Step 10 is the canonical pre-commit gate. Run per-domain validators plus **`validate_board_stamp_diff.py`** (FR-097: `--before` Step 7 snapshot, `--after` live boards — **blocking**). Invoke `validate_release_readiness.py` Gates **1–9** (Gate 8 = stamp homogeneity; Gate 9 = MoSCOW state icons). Any blocking failure aborts RW before Step 11 commit.
+**Release-readiness gate (FR-092 Wave 7 + FR-097 Gate 8 + UXR-012 Gate 9 + FR-109 Gate 11):** Step 10 is the canonical pre-commit gate. Run per-domain validators plus **`validate_board_stamp_diff.py`** (FR-097: `--before` Step 7 snapshot, `--after` live boards — **blocking**). Invoke `validate_release_readiness.py` Gates **1–11** (Gate 8 = stamp homogeneity; Gate 9 = MoSCOW state icons; Gate 10 = spacing advisory; Gate 11 = active-board lean). Any blocking failure aborts RW before Step 11 commit.
 
 **Step Definition:**
 ```yaml
@@ -2127,6 +2127,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
      - `python {scripts_path}/validation/validate_changelog_archive_links.py` (non-blocking; reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers)
      - `python {scripts_path}/validation/validate_board_stamp_diff.py --before <snapshot_dir>/kboard.md --after <kanban_root>/kboard.md --strict` (repeat for `fbuboard.md`; FR-097)
      - `python {scripts_path}/validation/validate_kanban_state_icons.py --project-root <repo-root> --strict` (UXR-012 / Gate 9)
+     - `python {scripts_path}/validation/validate_active_kanban_board.py --project-root <repo-root> --strict` (FR-109 / Gate 11)
      - `python {scripts_path}/validation/validate_semver_registry_injective.py` (FR-045 / **E03:S02:T12** — blocking when `semver_mapping_strategy: task_touch`)
      - `python {scripts_path}/validation/validate_kanban_moscow_spacing.py --project-root <repo-root> --strict` (UXR-005 / **E07:S01:T09**; non-blocking; Release Readiness Gate 10 warn)
    - **Release-readiness gate (FR-092 Wave 7 + FR-097 Gate 8):**

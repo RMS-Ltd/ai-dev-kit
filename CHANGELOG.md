@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.18+1] - 04-06-26
+
+E02:S16:T18 — **FR-109:** Lean active board contract — `validate_active_kanban_board.py`, pre-commit + RW Gate 11, UKW parity doc, pruned kboard/fbuboard. SemVer **v0.4.880+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.18+1.md)
+
+---
+
 ## [0.2.16.4+26] - 04-06-26
 
 E02:S16:T04 — **UKW:** Comprehensive kanban sync — archive **E06:S09:T17–T20**, **E03:S02:T12**, **FR-108**; **E06:S09:T16** remains open. SemVer **v0.4.879+26**.

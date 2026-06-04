@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-04 (UKW — **FR-108** archived from active fbuboard)
-**Version:** v0.6.9.20+2 (**SemVer** v0.4.882+2)
+**Last Updated:** 2026-06-04 (RW **E02:S16:T18** — **FR-109** lean board enforcement)
+**Version:** v0.2.16.18+1 (**SemVer** v0.4.880+1)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-109 | FR | UKW lean active board contract — validator + Gate 11 (**E02:S16:T18**) | 2026-06-04T22:15:00Z | v0.2.16.18+1 | RW |
+| BR-081 | BR | Kanban install `datetime.utcnow()` deprecated (**E06:S09:T10**) | 2026-06-04T18:04:56Z | v0.6.9.10+2 | RW |
 | FR-108 | FR | Install/setup error code registry and emission (**E06:S09:T20**) | 2026-06-04T17:32:25Z | v0.6.9.20+2 | RW |
 | UXR-018 | UXR | Changelog directory consolidation — single pillar `docs/changelog-and-release-notes/` (**E05:S09:T12**) | 2026-06-04T14:35:00Z | v0.5.9.12+3 | RW |
 | UXR-016 | UXR | Install/setup interactive feedback shows external SemVer (**E06:S09:T15**; reclassified from FR-108) | 2026-06-04T12:00:00Z | v0.6.9.15+2 | RW |

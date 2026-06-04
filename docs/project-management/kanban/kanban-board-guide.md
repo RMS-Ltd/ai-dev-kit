@@ -48,6 +48,13 @@ This Kanban board serves as the **parent document** to Story documents, similar 
 
 UKW and RW agents must follow this when updating the board.
 
+### Active board vs completed ledger (lean MoSCOW)
+
+- **`kboard.md` / `fbuboard.md`:** live work only (`TODO` / `IN PROGRESS` / `OPEN` / `PERPETUAL`, plus FBU verification rows where the task is done but the FBU is still OPEN).
+- **`kanban-completed.md` / `fbu-completed.md`:** terminal tasks and FBUs — append here **before** removing rows from the active board (`UKW -c` or UKW Step 6.5–6.6).
+- **Do not** use the active board as an archive log: no multi-line “archived …” footnotes, no `**date:**` release journals between bullets, no `✅ COMPLETE` rows left in MoSCOW after hygiene.
+- **BR-059:** story-checklist gaps do not justify mirroring the entire TODO backlog onto the board; promote or add only in-flight work. See Kanban governance policy § MoSCOW — active board vs completed ledger.
+
 **RW Step 7 vs UKW (FR-038):** During a release, **RW Step 7 — Scoped Kanban Sync (UKW Mode)** updates the board and docs for the **release task** only (scoped). **Standalone UKW** is for **board-wide** MoSCOW and housekeeping. See Kanban governance policy §1.1.
 
 ### Status transition ownership (FR-077)

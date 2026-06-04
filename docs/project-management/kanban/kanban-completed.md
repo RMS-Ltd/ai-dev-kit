@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-04 (UKW — **E06:S09:T17–T20**, **E03:S02:T12** archived from active MoSCOW)
-**Version:** v0.6.9.20+2
+**Last Updated:** 2026-06-04 (RW **E02:S16:T18** — FR-109 lean board enforcement)
+**Version:** v0.2.16.18+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -20,7 +20,14 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **Epic 2: Workflow Management (Story 16 — Perpetual)**
+- **[E02:S16:T18](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T18-ukw-lean-active-board-contract-fr109.md)** — **FR-109**: UKW lean active board contract — validator, Gate 11, dual-source parity.
+  **Completed:** `2026-06-04T22:15:00Z` | **Version:** `v0.2.16.18+1` | **Agent:** `RW` | [FR-109](fr-br/FR-109-ukw-lean-active-board-contract.md)
+
 #### **Epic 6: Framework Management (Story 9 — Installation)**
+- **[E06:S09:T10](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md)** — **BR-081**: Kanban install `datetime.utcnow()` deprecation fix.
+  **Completed:** `2026-06-04T18:04:56Z` | **Version:** `v0.6.9.10+2` | **Agent:** `RW` | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
+
 - **[E06:S09:T20](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md)** — **FR-108**: Install/setup `ADK-*` error code registry + emission + docs.
   **Completed:** `2026-06-04T17:32:25Z` | **Version:** `v0.6.9.20+2` | **Agent:** `RW` | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
 
@@ -32,6 +39,10 @@ housekeeping_policy: keep
 
 - **[E06:S09:T17](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md)** — **BR-087** wave 1: framework install directory slugs.
   **Completed:** `2026-06-04T12:53:00Z` | **Version:** `v0.6.9.17+1` | **Agent:** `RW` | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md)
+
+#### **Epic 2: Workflow Management (Story 16 — Perpetual operations)**
+- **[E02:S16:T02](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)** — Perpetual task inventory and classification (IPP).
+  **Completed:** `2026-04-20T18:20:00Z` | **Version:** (inventory IPP) | **Agent:** `UKW` | [IPP-E2S16T02](../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
 
 #### **Epic 3: Numbering & Versioning (Story 2 — Cookbook)**
 - **[E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)** — **FR-045** / **FR-046** / **BR-061**: Task-touch SemVer collision remediation wave 2.
