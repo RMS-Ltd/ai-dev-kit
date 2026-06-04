@@ -256,7 +256,7 @@ The board serves as the **parent document** to Story documents, similar to how S
 
 | Surface | Role | Must contain |
 | ------- | ---- | ------------ |
-| `kboard.md` / `fbuboard.md` | **Active** MoSCOW | `TODO`, `IN PROGRESS`, `OPEN`, `PERPETUAL`, and FBU rows with unresolved verification (task may be COMPLETE) |
+| `kboard.md` / `fbuboard.md` | **Active** MoSCOW | `TODO`, `IN PROGRESS`, `IN REVIEW`, `WAITING`, `OPEN`, `PERPETUAL`, and FBU rows with unresolved verification (task may be COMPLETE) |
 | `kanban-completed.md` / `fbu-completed.md` | **Terminal** history | `COMPLETE` / `RESOLVED` / `IMPLEMENTED` / `FIXED` / shipped Won't items |
 
 **UKW / RW agents MUST:**
@@ -355,8 +355,9 @@ Each task entry in the MoSCOW sections includes:
 - **Pre-commit:** `validate_board_stamps_precommit.py` blocks homogenized stamps and unevidenced stamp churn on commit (`pre-commit install`).
 - **Deprecated / removed:** row-level “temporal-drift normalization”, batch `current UTC` assignment, and `normalize_board_row_timestamps.py` (deleted).
 
-**MoSCOW state icons (UXR-012 / E4:S13:T07):**
-- Active MoSCOW rows on `kboard.md` and `fbuboard.md` carry a **canonical Set A emoji** before the status word; see `kanban-board-guide.md` and UXR-012 for the mapping and **Set B fallback** (non-board contexts only).
+**MoSCOW state icons (UXR-012 / E4:S13:T07; UXR-019 / E4:S13:T08):**
+- Active MoSCOW rows on `kboard.md` and `fbuboard.md` carry a **canonical Set A emoji** before the status word; see `kanban-board-guide.md`, UXR-012, and UXR-019 (`IN REVIEW`, `WAITING`) for mappings and **Set B fallback** (non-board contexts only).
+- **Task nuance:** Use `IN REVIEW` for peer/maintainer review in flight; `WAITING` for external gates (sign-off, adopter replay) — not `IN PROGRESS` or `BLOCKED`.
 - **Hygiene-only passes** must not swap or remove icons unless the row’s **status token** changes (same intent as FR-097: no cosmetic churn).
 - **Enforcement:** `validate_kanban_state_icons.py` and Release Readiness **Gate 9** after corpus backfill.
 

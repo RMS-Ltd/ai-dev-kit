@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-04 (E02:S16:T04 kanban init v0.2.16.4+28)
-**Version:** v0.2.16.4+28
+**Last Updated:** 2026-06-05 (E04:S13:T08 UXR-019 state icons v0.4.13.8+1)
+**Version:** v0.4.13.8+1
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E06:S09:T16** – BR-086: RW install lowercase fresh kanban patterns & sign-off - 🔄 IN PROGRESS (MEDIUM, **v0.6.9.16+2**, GitHub **#17**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | Last modified: 2026-06-04 12:56 UTC
+- **E06:S09:T16** – BR-086: RW install lowercase fresh kanban patterns & sign-off - ⏳ WAITING (MEDIUM, **v0.6.9.16+2**, GitHub **#17** — adopter replay) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | Last modified: 2026-06-04 12:56 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 
@@ -37,7 +37,7 @@ housekeeping_policy: keep
 
 - **E09:S01:T03** – FR-032: Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) | [Task](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | Last modified: 2026-06-04 12:05 UTC
 
-- **E04:S19:T11** – UXR-017: Kanban epic/story path lowercase naming - 🔄 IN PROGRESS (MEDIUM, **v0.4.19.11+1** — template pack + installer GH sign-off; ET AC5 open) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md) | Last modified: 2026-06-04 21:00 UTC
+- **E04:S19:T11** – UXR-017: Kanban epic/story path lowercase naming - ⏳ WAITING (MEDIUM, **v0.4.19.11+1** — ET AC5 + GH sign-off; impl. complete in kit) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md) | Last modified: 2026-06-04 21:00 UTC
 
 - **E04:S09:T01** – BR-007: Multiple Bugs Kanban Package Installation - 📋 TODO (LOW, Multiple bugs in kanban package installation) | [Task](epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [BR-007](fr-br/BR-007-multiple-bugs-kanban-package-installation.md) | Last modified: 2026-06-04 12:05 UTC
 

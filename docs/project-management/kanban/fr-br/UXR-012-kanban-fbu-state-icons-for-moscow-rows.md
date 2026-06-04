@@ -263,6 +263,12 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 
 ---
 
+## Extension (task-board nuance)
+
+**[UXR-019](UXR-019-kanban-task-waiting-in-review-state-icons.md)** — `IN REVIEW` / `WAITING` icons atop this mapping (**E04:S13:T08**, **v0.4.13.8+1**). Editorial: **IN REVIEW = 🔍 (A1)**; **WAITING = ⏳ (B1)** — locked 2026-06-05.
+
+---
+
 ## Next steps
 
 1. ~~**User/editorial:** Pick Set A, B, C, or D~~ — **Done:** Set A on boards; Set B fallback where emoji unsupported.

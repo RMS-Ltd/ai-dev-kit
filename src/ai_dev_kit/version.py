@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 16    # Story 16 — Perpetual Ongoing Workflow Operations
-VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban synchronization and hygiene (perpetual)
-VERSION_BUILD = 28    # Build 28: kboard/fbuboard C-band dependency-ordered queue (RW -k)
+VERSION_EPIC = 1      # Epic 1 — AI Dev Kit Core
+VERSION_STORY = 2     # Story 2 — Package & Repo Architecture
+VERSION_TASK = 14     # Task 14 — Adopter external dependency tracking (FR-003)
+VERSION_BUILD = 1     # Build 1: adopter guide + copy-paste upstream tracking templates
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.2.16.4+28 (E02:S16:T04)
+# Current: 0.1.2.14+1 (E01:S02:T14)

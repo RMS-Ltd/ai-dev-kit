@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for state_icons.py (UXR-012 / E4:S13:T07)."""
+"""Tests for state_icons.py (UXR-012 / E4:S13:T07; UXR-019 / E4:S13:T08)."""
 
 from __future__ import annotations
 
@@ -27,6 +27,51 @@ def test_primary_and_fallback():
     assert si.primary_icon("TODO") == "📋"
     assert si.fallback_icon("TODO") == "○"
     assert si.primary_icon("IN_PROGRESS") == "🔄"
+    assert si.primary_icon("IN_REVIEW") == "🔍"
+    assert si.fallback_icon("IN_REVIEW") == "◎"
+    assert si.primary_icon("WAITING") == "⏳"
+    assert si.fallback_icon("WAITING") == "⌛"
+
+
+def test_inject_in_review():
+    line = (
+        "- **E07:S07:T01** – Workflow machinery code review - IN REVIEW (HIGH) "
+        "| Last modified: 2026-06-05 12:00 UTC"
+    )
+    new_line, ch = si.inject_primary_icon_into_moscow_line(line)
+    assert ch is True
+    assert "🔍 IN REVIEW" in new_line
+    assert "Last modified: 2026-06-05 12:00 UTC" in new_line
+
+
+def test_inject_waiting():
+    line = (
+        "- **E04:S19:T11** – UXR-017 path lowercase - WAITING (MEDIUM, sign-off) "
+        "| Last modified: 2026-06-05 12:00 UTC"
+    )
+    new_line, ch = si.inject_primary_icon_into_moscow_line(line)
+    assert ch is True
+    assert "⏳ WAITING" in new_line
+
+
+def test_alias_waiting_for_signoff():
+    line = (
+        "- **E06:S09:T16** – BR-086 install patterns - WAITING FOR SIGN-OFF (MEDIUM) "
+        "| Last modified: 2026-06-05 12:00 UTC"
+    )
+    new_line, ch = si.inject_primary_icon_into_moscow_line(line)
+    assert ch is True
+    assert "⏳ WAITING FOR SIGN-OFF" in new_line
+    assert si.match_canonical_at_start("WAITING FOR SIGN-OFF") == "WAITING"
+
+
+def test_alias_under_review():
+    line = (
+        "- **E04:S13:T08** – State icons - UNDER REVIEW (LOW) | Last modified: 2026-06-05 12:00 UTC"
+    )
+    new_line, ch = si.inject_primary_icon_into_moscow_line(line)
+    assert ch is True
+    assert "🔍 UNDER REVIEW" in new_line
 
 
 def test_inject_inserts_icon():
@@ -105,6 +150,17 @@ def test_fixture_board_validator():
         ok2, f2 = vsci.validate_board_file(good)
         assert ok2 is True
         assert not f2
+
+        waiting = root / "w.md"
+        waiting.write_text(
+            "## MoSCOW Prioritized\n\n"
+            "- **E04:S19:T11** – t - ⏳ WAITING (MEDIUM) | Last modified: 2026-06-05 12:00 UTC\n"
+            "- **E07:S07:T01** – t - 🔍 IN REVIEW (HIGH) | Last modified: 2026-06-05 12:00 UTC\n",
+            encoding="utf-8",
+        )
+        ok3, f3 = vsci.validate_board_file(waiting)
+        assert ok3 is True
+        assert not f3
 
 
 if __name__ == "__main__":

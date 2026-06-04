@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MoSCOW row state icons (UXR-012 / E4:S13:T07).
+MoSCOW row state icons (UXR-012 / E4:S13:T07; UXR-019 / E4:S13:T08).
 
 Boards (kboard.md, fbuboard.md): Set A (emoji) only before the status token.
 Plain-text / degraded contexts: Set B (Unicode) documented as fallback — not
@@ -36,11 +36,20 @@ STATE_ICON_MAP: Dict[str, Tuple[str, str]] = {
     "SUPERSEDED": ("⏭️", "≫"),
     "ACCEPTED": ("📥", "⊕"),
     "PERPETUAL": ("🔄", "◐"),
+    "IN_REVIEW": ("🔍", "◎"),
+    "WAITING": ("⏳", "⌛"),
 }
 
 # Longest-first status tokens after the " - " separator (ASCII hyphen + space).
 _STATUS_TOKEN_ORDER: Tuple[str, ...] = (
     "IN PROGRESS (PERPETUAL)",
+    "WAITING FOR SIGN-OFF",
+    "WAITING FOR APPROVAL",
+    "AWAITING SIGN-OFF",
+    "WAITING",
+    "PEER REVIEW",
+    "UNDER REVIEW",
+    "IN REVIEW",
     "IN PROGRESS",
     "SUPERSEDED",
     "IMPLEMENTED",
@@ -79,6 +88,13 @@ _TOKEN_TO_CANONICAL: Dict[str, str] = {
     "FIXED": "FIXED",
     "PENDING": "OPEN",
     "ACTIVE": "IN_PROGRESS",
+    "WAITING FOR SIGN-OFF": "WAITING",
+    "WAITING FOR APPROVAL": "WAITING",
+    "AWAITING SIGN-OFF": "WAITING",
+    "WAITING": "WAITING",
+    "PEER REVIEW": "IN_REVIEW",
+    "UNDER REVIEW": "IN_REVIEW",
+    "IN REVIEW": "IN_REVIEW",
 }
 
 # Any leading icon chars (primary + fallback) we strip before re-injecting.
@@ -105,6 +121,16 @@ def normalize_status_token(raw: str) -> Optional[str]:
     for token, canon in _TOKEN_TO_CANONICAL.items():
         if s == token.upper():
             return canon
+    if s.startswith("WAITING FOR SIGN-OFF") or s.startswith("WAITING FOR APPROVAL"):
+        return "WAITING"
+    if s.startswith("AWAITING SIGN-OFF"):
+        return "WAITING"
+    if s.startswith("WAITING"):
+        return "WAITING"
+    if s.startswith("PEER REVIEW") or s.startswith("UNDER REVIEW"):
+        return "IN_REVIEW"
+    if s.startswith("IN REVIEW"):
+        return "IN_REVIEW"
     if s.startswith("IN PROGRESS"):
         return "IN_PROGRESS"
     if s.startswith("COMPLETE") or s.startswith("✅"):

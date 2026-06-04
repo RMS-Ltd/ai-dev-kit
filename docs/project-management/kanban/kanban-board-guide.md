@@ -50,7 +50,7 @@ UKW and RW agents must follow this when updating the board.
 
 ### Active board vs completed ledger (lean MoSCOW)
 
-- **`kboard.md` / `fbuboard.md`:** live work only (`TODO` / `IN PROGRESS` / `OPEN` / `PERPETUAL`, plus FBU verification rows where the task is done but the FBU is still OPEN).
+- **`kboard.md` / `fbuboard.md`:** live work only (`TODO` / `IN PROGRESS` / `IN REVIEW` / `WAITING` / `OPEN` / `PERPETUAL`, plus FBU verification rows where the task is done but the FBU is still OPEN).
 - **`kanban-completed.md` / `fbu-completed.md`:** terminal tasks and FBUs — append here **before** removing rows from the active board (`UKW -c` or UKW Step 6.5–6.6).
 - **Do not** use the active board as an archive log: no multi-line “archived …” footnotes, no `**date:**` release journals between bullets, no `✅ COMPLETE` rows left in MoSCOW after hygiene.
 - **BR-059:** story-checklist gaps do not justify mirroring the entire TODO backlog onto the board; promote or add only in-flight work. See Kanban governance policy § MoSCOW — active board vs completed ledger.
@@ -92,7 +92,7 @@ Each line in **MoSCOW Prioritized In-Progress Tasks** (`kboard.md`) and **MoSCOW
 
 ## MoSCOW Prioritized In-Progress Tasks
 
-The board includes a **MoSCOW Prioritized In-Progress Tasks** section that shows all in-progress tasks (status: IN PROGRESS or TODO) organized by MoSCOW priority and ordered chronologically (most recently updated first).
+The board includes a **MoSCOW Prioritized In-Progress Tasks** section that shows active tasks (status: `TODO`, `IN PROGRESS`, `IN REVIEW`, `WAITING`, or perpetual variants) organized by MoSCOW priority and ordered chronologically (most recently updated first).
 
 ### MoSCOW Categories
 
@@ -130,7 +130,7 @@ Every active MoSCOW row in `kboard.md` and `fbuboard.md` must end with a termina
 
 This is mandatory for human scanability and forensic traceability. RW/UKW must **preserve** existing row stamps on STRUCTURE-only edits. New stamps only via linked-doc derivation or evidenced CONTENT passes — see [board-stamp-authority.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md).
 
-### MoSCOW state icons (UXR-012 / E04:S13:T07)
+### MoSCOW state icons (UXR-012 / E04:S13:T07; UXR-019 / E04:S13:T08)
 
 Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly one Set A (emoji) icon** immediately before the status token, after the title segment:
 
@@ -138,7 +138,9 @@ Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly
 - **{E:S:T or FR/BR/UXR-id}** – {title} - {emoji} {STATUS} (notes…) | … | Last modified: … UTC
 ```
 
-- **Primary (boards):** Use the mapping in [UXR-012](fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md) (Set A). **Fallback (Set B)** is for plain-text exports only — do not mix Set B into repo board rows by default.
+- **Primary (boards):** Use the mapping in [UXR-012](fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md) (Set A) plus task extensions in [UXR-019](fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md). **Fallback (Set B)** is for plain-text exports only — do not mix Set B into repo board rows by default.
+
+- **Task lifecycle nuance (UXR-019):** Use `IN REVIEW` when implementation is done and peer/maintainer review is in flight. Use `WAITING` when blocked on an **external gate** (GitHub install sign-off, adopter replay, PO acceptance) — not for active coding (`IN PROGRESS`) or hard blockers (`BLOCKED`).
 
 - **Hygiene / UKW bookkeeping:** Do not change icons on STRUCTURE-only passes (same class as FR-097 stamp preservation). Update icons only when the **status word** changes substantively.
 

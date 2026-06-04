@@ -1,0 +1,10 @@
+{
+  "E04:S19:T11": {
+    "allowed": true,
+    "reason": "RW Step 7: MoSCOW status IN PROGRESS -> WAITING (UXR-019); stamp preserved"
+  },
+  "E06:S09:T16": {
+    "allowed": true,
+    "reason": "RW Step 7: MoSCOW status IN PROGRESS -> WAITING (UXR-019); stamp preserved"
+  }
+}

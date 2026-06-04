@@ -1,8 +1,17 @@
-# MoSCOW state icons (UXR-012 / E4:S13:T07)
+# MoSCOW state icons (UXR-012 / E4:S13:T07; UXR-019 / E4:S13:T08)
 
 ## Purpose
 
-Prefix every active MoSCOW row on `kboard.md` and `fbuboard.md` with a **canonical Set A (emoji)** icon immediately before the status word (e.g. `TODO`, `IN PROGRESS`, `RESOLVED`), while keeping the status text for grep and legacy validators.
+Prefix every active MoSCOW row on `kboard.md` and `fbuboard.md` with a **canonical Set A (emoji)** icon immediately before the status word (e.g. `TODO`, `IN PROGRESS`, `WAITING`, `IN REVIEW`, `RESOLVED`), while keeping the status text for grep and legacy validators.
+
+## Task-board extensions (UXR-019)
+
+| Canonical | Status token | Set A | Set B |
+| --------- | ------------ | ----- | ----- |
+| `IN_REVIEW` | `IN REVIEW` (aliases: `UNDER REVIEW`, `PEER REVIEW`) | magnifying glass | U+25CE |
+| `WAITING` | `WAITING` (aliases: `WAITING FOR SIGN-OFF`, `AWAITING SIGN-OFF`, `WAITING FOR APPROVAL`) | hourglass | U+231B |
+
+**Semantics:** `IN REVIEW` = deliverable ready, peer/maintainer review in flight. `WAITING` = external gate (sign-off, adopter replay, PO acceptance) — not `BLOCKED`. See [UXR-019](../../../../../../docs/project-management/kanban/fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md).
 
 ## Source of truth
 
