@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-04 (**E03:S02:T12** **v0.3.2.12+4** — task-touch collision wave 2)
-**Version Context:** v0.3.2.12+4 (**SemVer** v0.4.874+4)
+**Last Updated:** 2026-06-04 (RW: E02:S16:T04)
+**Version Context:** v0.2.16.4+26 (**SemVer** v0.4.879+26)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -75,9 +75,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 - **BR-088** – RW Mode C does not create version_file path (no src/) - 🟢 OPEN (MEDIUM, fix attempted **v0.6.9.19+1**, GitHub **#18**) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [E06:S09:T19](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [IPP-E06S09T19](../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md) | Last modified: 2026-06-05 17:11 UTC
 
-**2026-06-04:** **FR-108** IMPLEMENTED **v0.6.9.20+1** → **E06:S09:T20** (install/setup `ADK-*` error codes).
-
-- **FR-108** – Install/setup error code registry and emission - ✅ IMPLEMENTED (HIGH, **v0.6.9.20+2**) | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [E06:S09:T20](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | Last modified: 2026-06-04 20:30 UTC
+**2026-06-04:** **FR-108** IMPLEMENTED **v0.6.9.20+2** → archived [fbu-completed.md](fbu-completed.md) (**E06:S09:T20**).
 
 **2026-06-04:** Intake **BR-086** from GitHub **#17** (lowercase fresh kanban RW mode C; #15/#16 follow-up on `main`) → **E06:S09:T16**.
 
@@ -113,7 +111,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 - **UXR-017** – Kanban epic/story path lowercase naming (`epic-*` / `story-*`) - 🟢 OPEN (MEDIUM, **v0.4.19.11+1** — kit shipped; Expenses Tracker AC5 open) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [E04:S19:T11](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | —No IPP— | Last modified: 2026-06-04 21:00 UTC
 
-- **BR-081** – Kanban install uses deprecated `datetime.utcnow()` - ✅ FIXED (**v0.6.9.10+2**, **#13**, pending verification) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [E06:S09:T10](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [IPP](../../implementation-cycles/IPP-E06S09T10-br081-kanban-install-datetime-utcnow.md) | Last modified: 2026-06-03 17:43 UTC
+- **BR-081** – Kanban install uses deprecated `datetime.utcnow()` - ✅ COMPLETE (**v0.6.9.10+2**, **#13**, pending verification) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [E06:S09:T10](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | [IPP](../../implementation-cycles/IPP-E06S09T10-br081-kanban-install-datetime-utcnow.md) | Last modified: 2026-06-03 17:43 UTC
 
 - **FR-032** – Release Candidate Readiness Gap Analysis - 📋 TODO (MEDIUM, Analyze gaps in release candidate readiness) | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | [E09:S01:T03](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | —No IPP— | Last modified: 2026-06-04 12:05 UTC
 

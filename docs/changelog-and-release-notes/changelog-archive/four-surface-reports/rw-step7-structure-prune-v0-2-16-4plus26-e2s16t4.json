@@ -1,0 +1,38 @@
+{
+  "contract": "FR-097 structure-prune — UKW archive completed tasks + terminal FBU (RW Step 7)",
+  "release_scope": {
+    "task_id": "E02:S16:T04",
+    "version_string": "v0.2.16.4+26"
+  },
+  "rows": {
+    "E02:S16:T04": {
+      "allowed": true,
+      "reason": "RW Step 7 perpetual UKW anchor stamp sync (v0.2.16.4+26)"
+    },
+    "E03:S02:T12": {
+      "allowed": true,
+      "reason": "COMPLETE v0.3.2.12+4 — archived to kanban-completed.md (UKW)"
+    },
+    "E06:S09:T17": {
+      "allowed": true,
+      "reason": "COMPLETE v0.6.9.17+1 — archived to kanban-completed.md (UKW)"
+    },
+    "E06:S09:T18": {
+      "allowed": true,
+      "reason": "COMPLETE v0.6.9.18+2 — archived to kanban-completed.md (UKW)"
+    },
+    "E06:S09:T19": {
+      "allowed": true,
+      "reason": "COMPLETE v0.6.9.19+1 — archived to kanban-completed.md (UKW)"
+    },
+    "E06:S09:T20": {
+      "allowed": true,
+      "reason": "COMPLETE v0.6.9.20+2 — archived to kanban-completed.md (UKW)"
+    },
+    "FR-108": {
+      "allowed": true,
+      "reason": "IMPLEMENTED v0.6.9.20+2 — archived to fbu-completed.md (UKW)"
+    }
+  },
+  "timestamp_utc": "2026-06-04 17:34:53 UTC"
+}

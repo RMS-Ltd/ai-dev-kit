@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-04 (**E05:S09:T12** / UXR-018 **v0.5.9.12+3**)
-**Version:** v0.5.9.12+3
+**Last Updated:** 2026-06-04 (UKW — **E06:S09:T17–T20**, **E03:S02:T12** archived from active MoSCOW)
+**Version:** v0.6.9.20+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,23 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 6: Framework Management (Story 9 — Installation)**
+- **[E06:S09:T20](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md)** — **FR-108**: Install/setup `ADK-*` error code registry + emission + docs.
+  **Completed:** `2026-06-04T17:32:25Z` | **Version:** `v0.6.9.20+2` | **Agent:** `RW` | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
+
+- **[E06:S09:T19](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md)** — **BR-088**: RW mode C `version_file` scaffold when no `src/`.
+  **Completed:** `2026-06-04T17:08:38Z` | **Version:** `v0.6.9.19+1` | **Agent:** `RW` | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [IPP-E06S09T19](../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
+
+- **[E06:S09:T18](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md)** — **BR-087** wave 2: framework slug install closure (registry, GitHub release).
+  **Completed:** `2026-06-04T16:00:30Z` | **Version:** `v0.6.9.18+2` | **Agent:** `RW` | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [IPP-E06S09T18](../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
+
+- **[E06:S09:T17](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md)** — **BR-087** wave 1: framework install directory slugs.
+  **Completed:** `2026-06-04T12:53:00Z` | **Version:** `v0.6.9.17+1` | **Agent:** `RW` | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md)
+
+#### **Epic 3: Numbering & Versioning (Story 2 — Cookbook)**
+- **[E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)** — **FR-045** / **FR-046** / **BR-061**: Task-touch SemVer collision remediation wave 2.
+  **Completed:** `2026-06-04T22:00:00Z` | **Version:** `v0.3.2.12+4` | **Agent:** `RW` | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [IPP-E03S02T12](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
 
 #### **Epic 5: Documentation Management (Story 1 — FR Repo)**
 - **[E05:S09:T12](epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md)** — **UXR-018**: Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`.

@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.20+2] - 05-06-26
+## [0.2.16.4+26] - 04-06-26
 
-E06:S09:T20 — **FR-108:** IPP planning package status sync post-release (docs-only). SemVer **v0.4.879+2**.
+E02:S16:T04 — **UKW:** Comprehensive kanban sync — archive **E06:S09:T17–T20**, **E03:S02:T12**, **FR-108**; **E06:S09:T16** remains open. SemVer **v0.4.879+26**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.20+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+26.md)
 
 ---
 

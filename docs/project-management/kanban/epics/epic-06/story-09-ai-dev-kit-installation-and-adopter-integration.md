@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-04 (v0.6.9.17+1 – Kanban documentation setup)
-**Version:** v0.6.9.17+1
+**Last updated:** 2026-06-04 (v0.6.9.20+2 – UKW archive T17–T20; **T16** sole open delivery)
+**Version:** v0.6.9.20+2
 **Code:** E6S09
 
 ---

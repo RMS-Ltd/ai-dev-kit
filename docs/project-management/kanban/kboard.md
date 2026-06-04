@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW: E06:S09:T20)
-**Version:** v0.6.9.20+2
+**Last Updated:** 2026-06-04 (RW: E02:S16:T04)
+**Version:** v0.2.16.4+26
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -27,33 +27,11 @@ housekeeping_policy: keep
 
 *(No Must Have tasks — 2026-06-03 UKW archived **E08:S03:T05**, **E08:S03:T06** → [kanban-completed.md](kanban-completed.md); **FR-104**, **FR-105**, **BR-077** → [fbu-completed.md](fbu-completed.md).)*
 
-*(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). **E06:S09** installer tasks **T07–T15** archived → [kanban-completed.md](kanban-completed.md). **E07:S07:T01** archived **v0.7.7.1+1**. **E02:S13:T08** archived **v0.2.13.8+2**. **E07:S07:T02** released **v0.7.7.2+1** — CI pytest gate H1. **E06:S09:T15** **v0.6.9.15+1** — UXR-016 install SemVer banners.)*
+*(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). **E06:S09** installer tasks **T07–T20** archived → [kanban-completed.md](kanban-completed.md). **E03:S02:T12** archived **v0.3.2.12+4**. **E07:S07:T01** archived **v0.7.7.1+1**. **E02:S13:T08** archived **v0.2.13.8+2**. **E07:S07:T02** released **v0.7.7.2+1** — CI pytest gate H1.)*
 
 ### Should Have (S) - Important Tasks
 
-**2026-06-04:** **E03:S02:T12** released **v0.3.2.12+4** — FR-045/046/BR-061 task-touch collision wave 2 (registry repair, injective finalize).
-
-- **E03:S02:T12** – FR-045/046/BR-061: Task-touch SemVer collision remediation - ✅ COMPLETE (HIGH, **v0.3.2.12+4**) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | Last modified: 2026-06-04 23:00 UTC
-
-**2026-06-05:** **E06:S09:T18** released **v0.6.9.18+2** — **BR-087** housekeeping (semver registry finalize, GitHub release).
-
-- **E06:S09:T18** – BR-087: Framework slug install closure (wave 2) - ✅ COMPLETE (HIGH, **v0.6.9.18+2**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | Last modified: 2026-06-05 14:35 UTC
-
-**2026-06-04:** **E06:S09:T17** released **v0.6.9.17+1** — **BR-087** framework install directory slugs (build/extract/migration scripts only).
-
-- **E06:S09:T17** – BR-087: Framework install directory slugs (wave 1) - ✅ COMPLETE (HIGH, **v0.6.9.17+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | Last modified: 2026-06-04 13:53 UTC
-
-**2026-06-05:** Intake **BR-088** / GitHub **#18** (mode C missing `version_file` scaffold) → **E06:S09:T19**.
-
-**2026-06-05:** **E06:S09:T19** released **v0.6.9.19+1** — **BR-088** version_file scaffold on RW mode C.
-
-- **E06:S09:T19** – BR-088: RW install version_file scaffold (no src/) - ✅ COMPLETE (MEDIUM, **v0.6.9.19+1**, GitHub **#18**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | Last modified: 2026-06-05 17:10 UTC
-
-**2026-06-04:** **E06:S09:T20** released **v0.6.9.20+1** — **FR-108** install/setup `ADK-*` error code registry.
-
-- **E06:S09:T20** – FR-108: Install/setup error code registry - ✅ COMPLETE (HIGH, **v0.6.9.20+2**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | Last modified: 2026-06-04 20:30 UTC
-
-**2026-06-04:** Intake **BR-086** / GitHub **#17** (lowercase fresh kanban RW mode C; follow-up on #15/#16) → **E06:S09:T16**.
+**2026-06-04:** Intake **BR-086** / GitHub **#17** (lowercase fresh kanban RW mode C; follow-up on #15/#16) → **E06:S09:T16** — sole active **E06:S09** delivery row on board.
 
 - **E06:S09:T16** – BR-086: RW install lowercase fresh kanban patterns & sign-off - 🔄 IN PROGRESS (MEDIUM, **v0.6.9.16+1**, GitHub **#17**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | Last modified: 2026-06-04 12:56 UTC
 
@@ -144,7 +122,7 @@ housekeeping_policy: keep
 
 - **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**; corpus scan) - [Task Document](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [IPP-E2S16T03](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [E02:S16:T03](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-03 12:29 UTC
 
-- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (v0.2.16.4+25 — UKW archive T05/T06, BR-066, FR-104/105/077) - [Task Document](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | [E02:S16:T04](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | —No IPP— | Last modified: 2026-05-30 17:22 UTC
+- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.4+26** — UKW archive **E03:S02:T12**, **E06:S09:T17–T20**, **FR-108**) - [Task Document](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | [E02:S16:T04](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | —No IPP— | Last modified: 2026-06-04 17:34 UTC
 
 - **E02:S16:T10** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (last RW **v0.2.16.10+4** — project root hygiene: remove junk media/logs/snapshots; relocate low-value root files; `.gitignore`) - [Task Document](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [E02:S16:T10](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | —No IPP— | Last modified: 2026-05-29 10:59 UTC
 

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-03 (v0.2.13.8+1 – Kanban documentation setup)
+**Last updated:** 2026-06-04 (v0.2.16.4+26 – Story 16 T04 UKW release)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -82,7 +82,7 @@ housekeeping_policy: keep
   - Story: [`story-15-ipw-governance-and-publication-contract.md`](story-15-ipw-governance-and-publication-contract.md)
   - Tasks: T01 ✅ COMPLETE — [BR-066](../../fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
 
-- [ ] **E2:S16 – Perpetual Ongoing Workflow Operations** - IN PROGRESS (v0.2.16.4+24)
+- [ ] **E2:S16 – Perpetual Ongoing Workflow Operations** - IN PROGRESS (v0.2.16.4+26 — **T04** UKW archive wave)
   - Story: [`story-16-perpetual-ongoing-workflow-operations.md`](story-16-perpetual-ongoing-workflow-operations.md)
   - Tasks: T01 ✅ COMPLETE; T11 ✅ COMPLETE (FR-096) — [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 

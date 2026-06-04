@@ -1,4 +1,10 @@
 # Changelog Archive
+## [0.6.9.20+2] - 05-06-26
+
+E06:S09:T20 — **FR-108:** IPP planning package status sync post-release (docs-only). SemVer **v0.4.879+2**.
+
+[Detailed changelog](CHANGELOG_v0.6.9.20+2.md)
+---
 ## [0.6.9.11+2] - 03-06-26
 
 E06:S09:T11 — Attempted fix BR-082: RW install PyYAML preflight (`--check-deps`, INSTALL Step 3b, tests). SemVer **v0.4.857+2**.

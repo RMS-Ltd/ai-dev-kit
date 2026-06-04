@@ -1,0 +1,37 @@
+{
+  "release_version": "0.2.16.4+26",
+  "semver": "0.4.879+26",
+  "epic": 2,
+  "story": 16,
+  "task": 4,
+  "invocation_context": "rw_step_7",
+  "generated_at": "2026-06-04T17:34:53Z",
+  "surfaces": [
+    {
+      "surface": "task_doc",
+      "path": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md",
+      "why": "Version anchor v0.2.16.4+26; perpetual IN PROGRESS; UKW archive evidence"
+    },
+    {
+      "surface": "fr_br_uxr",
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md"
+      ],
+      "why": "Terminal IMPLEMENTED; archived to fbu-completed in UKW scope"
+    },
+    {
+      "surface": "kboard",
+      "path": "docs/project-management/kanban/kboard.md",
+      "why": "RW metadata v0.2.16.4+26; T04 perpetual row stamp; Should Have hygiene from UKW"
+    },
+    {
+      "surface": "fbuboard",
+      "path": "docs/project-management/kanban/fbuboard.md",
+      "why": "RW metadata; FR-108 pruned from active Should Have"
+    }
+  ],
+  "story_epic": [
+    "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md",
+    "docs/project-management/kanban/epics/epic-02/epic-02.md"
+  ]
+}
