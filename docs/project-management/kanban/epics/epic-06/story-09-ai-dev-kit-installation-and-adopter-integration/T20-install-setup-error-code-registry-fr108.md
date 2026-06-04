@@ -12,7 +12,8 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-04  
-**Last updated:** 2026-06-04  
+**Last updated:** 2026-06-05  
+**Version:** v0.6.9.20+2  
 **Code:** E06S09T20
 
 **Planning package:** [IPP-E06S09T20](../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
@@ -101,4 +102,4 @@ Per [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md):
 
 ## Version Anchor
 
-✅ COMPLETE (**v0.6.9.20+1** — RW E06:S09:T20)
+✅ COMPLETE (**v0.6.9.20+2** — RW E06:S09:T20, IPP status sync)

@@ -1,0 +1,82 @@
+{
+  "rows": {
+    "E06:S09:T20": {
+      "allowed": true,
+      "reason": "STRUCTURE-only: version anchor v0.6.9.20+1 → +2; row stamp preserved 2026-06-04 20:30 UTC"
+    },
+    "FR-108": {
+      "allowed": true,
+      "reason": "STRUCTURE-only: version anchor v0.6.9.20+1 → +2; row stamp preserved 2026-06-04 20:30 UTC"
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 20,
+    "task_id": "E6:S9:T20",
+    "version_string": "v0.6.9.20+2"
+  },
+  "stamp_evidence": {
+    "kboard.md": {
+      "E06:S09:T20": "preserved — docs-only BUILD+2 IPP status sync; no source delta warranting new stamp"
+    },
+    "fbuboard.md": {
+      "FR-108": "preserved — docs-only BUILD+2 IPP status sync; no source delta warranting new stamp"
+    }
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 2,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 6,
+    "touched_surfaces": [
+      "task_doc",
+      "story_doc",
+      "kboard",
+      "fbuboard",
+      "ipp_doc"
+    ],
+    "untouched_surfaces": ["fbu_doc"]
+  },
+  "surfaces": {
+    "ipp_doc": {
+      "changes": ["IPP-E06S09T20 status: Implemented (v0.6.9.20+1)"],
+      "paths": [
+        "docs/implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md"
+      ],
+      "surface": "ipp_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["E06:S09:T20 row version anchor v0.6.9.20+2; stamp preserved"],
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": ["FR-108 row version anchor v0.6.9.20+2; stamp preserved"],
+      "paths": ["docs/project-management/kanban/fbuboard.md"],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": ["T20 checklist version v0.6.9.20+2"],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": ["Version anchor v0.6.9.20+2"],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-05 12:15:00 UTC"
+}

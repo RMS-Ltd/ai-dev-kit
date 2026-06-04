@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T20-install-setup-error-code-registry-fr108.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) **(E06:S09:T20)**  
 **Planning for:** [FR-108](../project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)  
-**Status:** Approved (implementation in progress)
+**Status:** Implemented (**v0.6.9.20+1**)
 
 ---
 

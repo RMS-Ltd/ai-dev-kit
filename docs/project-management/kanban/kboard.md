@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW: E06:S09:T18)
-**Version:** v0.6.9.19+1
+**Last Updated:** 2026-06-05 (RW: E06:S09:T20)
+**Version:** v0.6.9.20+2
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -51,7 +51,7 @@ housekeeping_policy: keep
 
 **2026-06-04:** **E06:S09:T20** released **v0.6.9.20+1** — **FR-108** install/setup `ADK-*` error code registry.
 
-- **E06:S09:T20** – FR-108: Install/setup error code registry - ✅ COMPLETE (HIGH, **v0.6.9.20+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | Last modified: 2026-06-04 20:30 UTC
+- **E06:S09:T20** – FR-108: Install/setup error code registry - ✅ COMPLETE (HIGH, **v0.6.9.20+2**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | Last modified: 2026-06-04 20:30 UTC
 
 **2026-06-04:** Intake **BR-086** / GitHub **#17** (lowercase fresh kanban RW mode C; follow-up on #15/#16) → **E06:S09:T16**.
 

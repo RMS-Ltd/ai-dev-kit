@@ -77,7 +77,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 **2026-06-04:** **FR-108** IMPLEMENTED **v0.6.9.20+1** → **E06:S09:T20** (install/setup `ADK-*` error codes).
 
-- **FR-108** – Install/setup error code registry and emission - ✅ IMPLEMENTED (HIGH, **v0.6.9.20+1**) | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [E06:S09:T20](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | Last modified: 2026-06-04 20:30 UTC
+- **FR-108** – Install/setup error code registry and emission - ✅ IMPLEMENTED (HIGH, **v0.6.9.20+2**) | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [E06:S09:T20](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [IPP-E06S09T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | Last modified: 2026-06-04 20:30 UTC
 
 **2026-06-04:** Intake **BR-086** from GitHub **#17** (lowercase fresh kanban RW mode C; #15/#16 follow-up on `main`) → **E06:S09:T16**.
 

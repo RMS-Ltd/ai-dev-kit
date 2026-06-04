@@ -9,11 +9,13 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.20+1] - 04-06-26
+## [0.6.9.20+2] - 05-06-26
 
-E06:S09:T20 — **FR-108:** Install/setup **ADK-*** error code registry and emission (alpha triage + book troubleshooting). Registry YAML, installer stderr banners, CLI/feedback fields, ADR-016. SemVer **v0.4.879+1**.
+E06:S09:T20 — **FR-108:** IPP planning package status sync post-release (docs-only). SemVer **v0.4.879+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.20+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.20+2.md)
+
+---
 
 ---
 

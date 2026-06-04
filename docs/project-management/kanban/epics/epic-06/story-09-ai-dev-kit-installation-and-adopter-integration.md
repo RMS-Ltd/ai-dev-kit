@@ -68,7 +68,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T19 – RW install version_file scaffold (BR-088)** - ✅ COMPLETE (**v0.6.9.19+1** — mode C version_file prompt + stub) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [IPP-E06S09T19](../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md) | [BR-088](../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 
-- [x] **E06:S09:T20 – Install/setup error code registry (FR-108)** - ✅ COMPLETE (**v0.6.9.20+1** — ADK-* registry + emitters + docs) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [IPP-E06S09T20](../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | [FR-108](../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
+- [x] **E06:S09:T20 – Install/setup error code registry (FR-108)** - ✅ COMPLETE (**v0.6.9.20+2** — ADK-* registry + emitters + docs; IPP sync) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [IPP-E06S09T20](../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | [FR-108](../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
 
 ---
 
