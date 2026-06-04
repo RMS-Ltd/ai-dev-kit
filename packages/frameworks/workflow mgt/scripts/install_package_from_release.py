@@ -26,6 +26,7 @@ _SCRIPT_DIR = Path(__file__).resolve().parent
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
+from framework_install_slug import framework_install_slug, relocate_legacy_framework_dir
 from install_receipt import emit_install_receipt, find_adopter_project_root
 
 try:
@@ -103,8 +104,8 @@ Examples:
 
 
 def normalize_framework_name(framework_name: str) -> str:
-    """Normalize framework name for URL/path (lowercase, replace spaces with hyphens)."""
-    return framework_name.lower().replace(' ', '-')
+    """Normalize framework name for URL/path and on-disk install directory."""
+    return framework_install_slug(framework_name)
 
 
 def compute_sha256_hash(file_path: Path) -> str:
@@ -227,8 +228,13 @@ def verify_package_hash(package_path: Path, hash_file_path: Path, verbose: bool 
         return False
 
 
-def extract_package(package_path: Path, install_dir: Path, verbose: bool = False) -> bool:
-    """Extract package to installation directory."""
+def extract_package(
+    package_path: Path,
+    install_dir: Path,
+    install_slug: str,
+    verbose: bool = False,
+) -> bool:
+    """Extract package to installation directory under install_slug."""
     try:
         install_dir.mkdir(parents=True, exist_ok=True)
         
@@ -236,17 +242,15 @@ def extract_package(package_path: Path, install_dir: Path, verbose: bool = False
             print(f"   Extracting to: {install_dir}")
         
         with tarfile.open(package_path, 'r:gz') as tar:
-            # Get framework directory name from archive
             members = tar.getmembers()
             if not members:
                 print(f"❌ Package archive is empty", file=sys.stderr)
                 return False
             
-            # Find the root directory in the archive
             root_dir = None
             for member in members:
                 parts = member.name.split('/')
-                if len(parts) > 0 and parts[0]:
+                if len(parts) > 0 and parts[0] and parts[0] != "MANIFEST.json":
                     root_dir = parts[0]
                     break
             
@@ -254,17 +258,9 @@ def extract_package(package_path: Path, install_dir: Path, verbose: bool = False
                 print(f"❌ Cannot determine package root directory", file=sys.stderr)
                 return False
             
-            # Extract all files
             tar.extractall(install_dir)
-            
-            # Move framework directory to expected location
-            extracted_path = install_dir / root_dir
-            framework_name = root_dir
-            target_path = install_dir / framework_name
-            
-            if extracted_path != target_path:
-                # Already in the right place
-                pass
+
+            target_path = relocate_legacy_framework_dir(install_dir, root_dir, install_slug)
             
             if verbose:
                 print(f"   ✅ Package extracted: {target_path}")
@@ -396,7 +392,7 @@ def main() -> int:
             print(f"\n📦 Installing package...")
             install_dir = Path(args.install_dir).resolve()
             
-            if not extract_package(package_path, install_dir, args.verbose):
+            if not extract_package(package_path, install_dir, normalized_name, args.verbose):
                 return 1
             
             # Verify installation

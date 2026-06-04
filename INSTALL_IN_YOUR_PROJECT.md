@@ -427,6 +427,11 @@ cd .ai-dev-kit
 git checkout v0.6.6.10+13  # Or latest tag
 cd ..
 
+# Step 2b (BR-087): If packages/frameworks still has spaces in directory names,
+# run once after copy/submodule sync (see BR-087):
+# python3 "packages/frameworks/workflow mgt/scripts/relocate_legacy_framework_dirs.py" \
+#   --frameworks-root packages/frameworks
+
 # Step 3: Copy frameworks to your project
 cp -r .ai-dev-kit/packages/frameworks/workflow\ mgt/* ./
 cp -r .ai-dev-kit/packages/frameworks/kanban/* ./

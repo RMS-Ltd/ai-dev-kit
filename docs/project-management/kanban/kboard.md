@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-04 (RW **E05:S09:T12** **v0.5.9.12+3** — UXR-018 coordinate remediation; E05:S01 CLOSED)
-**Version:** v0.5.9.12+3
+**Last Updated:** 2026-06-04 (RW: E06:S09:T17)
+**Version:** v0.6.9.17+1
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epics 21 are TODO. **MoSCOW lists tasks only (not stories)**—story-level rows hide real progress. **Bidirectional wiring:** task rows with FBU links must have matching rows on [`fbuboard.md`](fbuboard.md) (and vice versa for M/S/active C/O). *(Epic 24 book work lives in private `RMS-Ltd/ai-dev-kit-book` — FR-099 / ADR-006.)*
 **Intake migration note (FR-072 / Approach D):** Dedicated FR/BR/UXR repository stories are historical registries only; new intake tasks should be created in semantic delivery stories.
@@ -30,6 +30,10 @@ housekeeping_policy: keep
 *(E01:S04:T03–T07 archived — [kanban-completed.md](kanban-completed.md). **E06:S09** installer tasks **T07–T15** archived → [kanban-completed.md](kanban-completed.md). **E07:S07:T01** archived **v0.7.7.1+1**. **E02:S13:T08** archived **v0.2.13.8+2**. **E07:S07:T02** released **v0.7.7.2+1** — CI pytest gate H1. **E06:S09:T15** **v0.6.9.15+1** — UXR-016 install SemVer banners.)*
 
 ### Should Have (S) - Important Tasks
+
+**2026-06-04:** **E06:S09:T17** released **v0.6.9.17+1** — **BR-087** framework install directory slugs (build/extract/migration).
+
+- **E06:S09:T17** – BR-087: Framework install directory slugs - ✅ COMPLETE (HIGH, **v0.6.9.17+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | Last modified: 2026-06-04 13:53 UTC
 
 **2026-06-04:** Intake **BR-086** / GitHub **#17** (lowercase fresh kanban RW mode C; follow-up on #15/#16) → **E06:S09:T16**.
 

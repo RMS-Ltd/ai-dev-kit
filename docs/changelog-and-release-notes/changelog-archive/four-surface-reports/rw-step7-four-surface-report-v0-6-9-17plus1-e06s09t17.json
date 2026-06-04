@@ -1,0 +1,109 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic Last updated: 2026-06-04 (v0.6.9.17+1 – E06:S09:T17 BR-087 framework install slugs)",
+        "Updated E6:S09 story line: T17 COMPLETE"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-06/epic-06.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "Story checklist: E06:S09:T17 COMPLETE v0.6.9.17+1",
+        "Version / Last updated → v0.6.9.17+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "README version v0.4.870+1 / v0.6.9.17+1",
+        "CHANGELOG.md release entry",
+        "BR-087 fix attempted v0.6.9.17+1"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 17,
+    "task_id": "E6:S9:T17",
+    "version_string": "v0.6.9.17+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 10,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "BR-087 status fix attempted v0.6.9.17+1; implementing task link"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-087-framework-install-directory-slug-mismatch.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": [
+        "Added BR-087 Should Have row; board metadata v0.6.9.17+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Added E06:S09:T17 COMPLETE row; board metadata v0.6.9.17+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "T17 COMPLETE; version anchor v0.6.9.17+1; Input + Acceptance Criteria"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-04 13:53 UTC"
+}

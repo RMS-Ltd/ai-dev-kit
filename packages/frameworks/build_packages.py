@@ -19,13 +19,12 @@ from build_package import (
     find_framework_directory,
     validate_framework_structure,
     collect_framework_files,
-    extract_framework_metadata,
     create_tar_gz_archive,
     compute_sha256_hash,
     create_hash_file,
     update_manifest_hash,
-    main as build_package_main
 )
+from framework_install_slug import framework_install_slug
 
 FRAMEWORKS_ROOT = Path(__file__).parent
 OUTPUT_DIR = FRAMEWORKS_ROOT.parent / "dist" / "packages"
@@ -71,12 +70,14 @@ def build_framework(framework_name: str, version: str, display_name: str) -> boo
         
         # Create archive
         print("\n   📦 Creating tar.gz archive...")
+        install_slug = framework_install_slug(display_name)
         package_path = create_tar_gz_archive(
             framework_dir=framework_dir,
             framework_name=framework_name,
             version=version,
             output_dir=OUTPUT_DIR,
-            files=files
+            files=files,
+            install_slug=install_slug,
         )
         
         package_size = package_path.stat().st_size

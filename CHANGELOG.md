@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.17+1] - 04-06-26
+
+E06:S09:T17 — **BR-087:** Framework install directory slugs — release archives and extract use hyphenated paths; migration script for legacy vendor trees; pytest coverage. SemVer **v0.4.870+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.17+1.md)
+
+---
+
 ## [0.5.9.12+3] - 04-06-26
 
 E05:S09:T12 — **UXR-018 coordinate remediation:** Canonical task **E05:S09:T12**; deleted mis-placed **E05:S01:T76**; **E05:S01** historical FR registry **CLOSED**; traceability + registry alignment. SemVer **v0.4.870+3**.

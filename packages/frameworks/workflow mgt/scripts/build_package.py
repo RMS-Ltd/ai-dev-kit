@@ -24,6 +24,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from framework_install_slug import framework_install_slug
+
 
 def parse_arguments() -> argparse.Namespace:
     """Parse command-line arguments."""
@@ -68,6 +70,13 @@ def parse_arguments() -> argparse.Namespace:
         "--verbose",
         action="store_true",
         help="Enable verbose output"
+    )
+
+    parser.add_argument(
+        "--install-slug",
+        type=str,
+        default=None,
+        help="On-disk directory name inside the archive (default: hyphenated slug, not source dir name)",
     )
     
     return parser.parse_args()
@@ -350,7 +359,8 @@ def create_tar_gz_archive(
     framework_name: str,
     version: str,
     output_dir: Path,
-    files: List[Path]
+    files: List[Path],
+    install_slug: Optional[str] = None,
 ) -> Path:
     """
     Create tar.gz archive from framework files.
@@ -360,15 +370,15 @@ def create_tar_gz_archive(
     
     Note: MANIFEST.json will be added separately after archive creation.
     """
-    # Normalize framework name for filename (lowercase, replace spaces with hyphens)
-    normalized_name = framework_name.lower().replace(' ', '-')
+    # Normalize framework name for filename (canonical install slug)
+    normalized_name = install_slug or framework_install_slug(framework_dir.name)
     package_filename = f"{normalized_name}-v{version}.tar.gz"
     package_path = output_dir / package_filename
     
     # Create tar.gz archive
     with tarfile.open(package_path, 'w:gz') as tar:
-        # Get framework directory name (for archive root)
-        framework_archive_name = framework_dir.name
+        # Archive root uses install slug (not legacy source directory name)
+        framework_archive_name = normalized_name
         
         # Add all files to archive, preserving directory structure
         for file_path in files:
@@ -405,9 +415,12 @@ def main() -> int:
         
         # Validate framework structure
         validate_framework_structure(framework_dir)
+
+        install_slug = args.install_slug or framework_install_slug(framework_dir.name)
         
         if args.verbose:
             print(f"Framework: {framework_name}")
+            print(f"Install slug: {install_slug}")
             print(f"Version: {version}")
             print(f"Framework directory: {framework_dir}")
             print(f"Output directory: {output_dir}")
@@ -433,7 +446,8 @@ def main() -> int:
             framework_name=framework_name,
             version=version,
             output_dir=output_dir,
-            files=files
+            files=files,
+            install_slug=install_slug,
         )
         
         package_size = package_path.stat().st_size
@@ -448,7 +462,7 @@ def main() -> int:
         
         package_filename = package_path.name
         manifest = generate_manifest_json(
-            framework_name=framework_name,
+            framework_name=install_slug,
             version=version,
             package_filename=package_filename,
             files=files,

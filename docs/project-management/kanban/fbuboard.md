@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-04 (**UXR-018** **E05:S09:T12** **v0.5.9.12+3**)
-**Version Context:** v0.5.9.12+3 (**SemVer** v0.4.870+3)
+**Last Updated:** 2026-06-04 (**BR-087** **E06:S09:T17** **v0.6.9.17+1**)
+**Version Context:** v0.6.9.17+1 (**SemVer** v0.4.870+1)
 **Intake migration note (FR-072 / Approach D):** New FBU intake must use semantic host-story placement; dedicated repository stories remain historical traceability registries.
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -59,6 +59,10 @@ This board provides **centralized visibility and prioritization** for all open F
 
 **2026-06-03:** RW **E06:S09:T14** archived **BR-085**, **BR-083**, **BR-084** (**RESOLVED** **v0.6.9.14+2** — ExpensesTracker T03 interactive replay). See [`fbu-completed.md`](fbu-completed.md).
 
+**2026-06-04:** **BR-087** fix attempted **v0.6.9.17+1** (framework install slugs; Expenses Tracker verification pending).
+
+- **BR-087** – Framework packages install with legacy directory names (spaces, `&`) - 🟢 OPEN (HIGH, fix attempted **v0.6.9.17+1** — pending verification) | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [E06:S09:T17](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) | —No IPP— | Last modified: 2026-06-04 13:53 UTC
+
 **2026-06-04:** Intake **BR-086** from GitHub **#17** (lowercase fresh kanban RW mode C; #15/#16 follow-up on `main`) → **E06:S09:T16**.
 
 - **BR-086** – RW install lowercase fresh kanban: story 03d blocked, sign-off BR-083 mismatch - 🟢 OPEN (MEDIUM, **v0.6.9.16+1**, GitHub **#17**) | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | [E06:S09:T16](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) | —No IPP— | Last modified: 2026-06-04 12:56 UTC
@@ -91,7 +95,7 @@ This board provides **centralized visibility and prioritization** for all open F
 
 **2026-06-04:** **UXR-018** COMPLETE **v0.5.9.12+2** → archived [fbu-completed.md](fbu-completed.md).
 
-- **UXR-017** – Kanban epic/story path lowercase naming (`epic-*` / `story-*`) - 🟢 OPEN (MEDIUM, **v0.4.19.11+1** — kit shipped; Expenses Tracker AC5 open) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [E04:S19:T11](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md) | Last modified: 2026-06-04 21:00 UTC
+- **UXR-017** – Kanban epic/story path lowercase naming (`epic-*` / `story-*`) - 🟢 OPEN (MEDIUM, **v0.4.19.11+1** — kit shipped; Expenses Tracker AC5 open) | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [E04:S19:T11](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | —No IPP— | Last modified: 2026-06-04 21:00 UTC
 
 - **BR-081** – Kanban install uses deprecated `datetime.utcnow()` - 🟢 OPEN (LOW, **#13**) | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [E06:S09:T10](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) | —No IPP— | Last modified: 2026-06-03 17:43 UTC
 
