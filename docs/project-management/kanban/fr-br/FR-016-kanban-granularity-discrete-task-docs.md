@@ -205,7 +205,7 @@ This feature is needed:
 
 ## Implementation Notes
 
-**Planning package (E04:S11:T07):** [IPP-E04S11T07-fr016-discrete-task-docs-migration.md](../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) — consolidated IPW plan for phased migration of embedded tasks to discrete Task documents. Status: **IN PROGRESS** (v0.4.11.7+7 — Wave 2 pilot complete; Waves 3–5 pending).
+**Planning package (E04:S11:T07):** [IPP-E04S11T07-fr016-discrete-task-docs-migration.md](../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) — consolidated IPW plan for phased migration of embedded tasks to discrete Task documents. Status: **IN PROGRESS** (v0.4.11.7+12 — Wave 3 Epics 1–8 complete; Epics 10, 11, 21 pending).
 
 **Key Considerations:**
 1. Task docs can be either:

@@ -395,7 +395,11 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 - [x] Validate Epic 5 migration — **2026-06-05**: 14/14 pytest; 0 broken links
 - [x] Migrate Epic 6 (Framework Management) — Wave 3 **2026-06-05**: 9 stories processed, ~34 new task docs, 0 embedded remaining
 - [x] Validate Epic 6 migration — **2026-06-05**: 14/14 pytest; 0 broken links
-- [ ] Continue with remaining Epics (7, 8, 10, 11, 21…)
+- [x] Migrate Epic 7 (Codebase Maintenance) — Wave 3 **2026-06-05**: 5 stories with embedded tasks (S01–S04, S06); 17 new task docs, 13 reused; 0 embedded remaining
+- [x] Validate Epic 7 migration — **2026-06-05**: 14/14 pytest; 0 broken links; idempotent re-run
+- [x] Migrate Epic 8 (Tooling & Automation) — Wave 3 **2026-06-05**: 5 stories processed; 21 new task docs; 0 embedded remaining
+- [x] Validate Epic 8 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [ ] Continue with remaining Epics (10, 11, 21…)
 - [ ] Validate after each Epic
 
 **Deliverables:**
