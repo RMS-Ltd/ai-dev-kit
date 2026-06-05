@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T15 — FR-112 perpetual CI/security lanes)
-**Version:** v0.8.3.15+1
+**Last updated:** 2026-06-05 (RW E08:S03:T16 — Wave 0 baseline + IPP)
+**Version:** v0.8.3.16+1
 **Code:** E8S03
 
 ---
@@ -55,7 +55,7 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+1** — FR-112 intake; Actions baseline: Tests/Docusaurus/Greenfield **failure** on `main` @ 16:39 UTC) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | —No IPP—
 
-- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (HIGH, [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) + [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality); post T12–T14 handoff; FR-112) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | —No IPP—
+- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+1** — Wave 0 baseline @ `777e956`; code-scanning **0** open; CI merge gate → T15) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
 
 ---
 

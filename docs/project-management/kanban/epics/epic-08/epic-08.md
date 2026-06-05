@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T15 — FR-112 perpetual lanes)
+**Last updated:** 2026-06-05 (RW E08:S03:T16 — T16 Wave 0 baseline)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 - [x] **E8:S02 – Additional Validators** - ✅ COMPLETE (v0.8.2.3+1 – All tasks complete)
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
-- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.15+1 – FR-112 T15/T16 perpetual lanes; T12–T14 backlog active)
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.16+1 – T16 Wave 0 baseline; T12–T14 backlog active; T15 CI triage)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
 
 - [ ] **E8:S04 – Tooling & Automation Package Implementation Review** - TODO (v0.8.4.0+0)
@@ -71,7 +71,7 @@ Epic 8 owns the **Tooling & Automation** framework for the ai-dev-kit repository
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
-**Last updated:** 2026-06-05 (RW E08:S03:T15 — FR-112 perpetual lanes)
+**Last updated:** 2026-06-05 (RW E08:S03:T16 — T16 Wave 0 baseline)
 
 **Goal:**  
 Build code generators for common framework patterns and templates.
@@ -90,7 +90,7 @@ Build code generators for common framework patterns and templates.
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
-**Last updated:** 2026-06-05 (RW E08:S03:T15 — FR-112 perpetual lanes)
+**Last updated:** 2026-06-05 (RW E08:S03:T16 — T16 Wave 0 baseline)
 
 **Goal:**  
 Develop additional validators beyond the current 3 validation scripts.
@@ -109,7 +109,7 @@ Develop additional validators beyond the current 3 validation scripts.
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-05 (RW E08:S03:T15 — FR-112 perpetual lanes)
+**Last updated:** 2026-06-05 (RW E08:S03:T16 — T16 Wave 0 baseline)
 
 **Goal:**  
 Implement automation scripts for common development and maintenance tasks.

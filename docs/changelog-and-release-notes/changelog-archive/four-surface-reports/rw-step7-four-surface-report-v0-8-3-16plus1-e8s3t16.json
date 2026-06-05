@@ -1,0 +1,55 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 scoped reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 16,
+    "task_id": "E08:S03:T16",
+    "version_string": "v0.8.3.16+1"
+  },
+  "timestamp_utc": "2026-06-05 16:52 UTC",
+  "stamp_evidence": {
+    "E08:S03:T16": {
+      "allowed": true,
+      "reason": "Wave 0 baseline @ 777e956; AC4 satisfied"
+    }
+  },
+  "summary": {
+    "stamps_updated": 1,
+    "total_changes": 6,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "story_doc", "ipp"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md"
+      ],
+      "changes": ["Baseline manifest", "Coordination matrix", "AC4 complete", "IPP link"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md"],
+      "changes": ["F2/NF1 satisfied", "v0.8.3.16+1"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "changes": ["T16 O-band IPP + version stamp", "Board metadata"]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"],
+      "changes": ["T16 checklist", "v0.8.3.16+1"]
+    },
+    "ipp": {
+      "touched": true,
+      "paths": [
+        "docs/implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md"
+      ],
+      "changes": ["Wave 0 IPP created", "§7 success criteria satisfied"]
+    }
+  }
+}

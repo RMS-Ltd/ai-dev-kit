@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (v0.8.3.15+1 — T15/T16 perpetual lanes filed)  
+**Status:** IN PROGRESS (v0.8.3.16+1 — T16 Wave 0 baseline; T15 CI triage ongoing)  
 **Implementing Tasks:**
 - **E08:S03:T15** — [GitHub Actions CI health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - **E08:S03:T16** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
@@ -39,13 +39,13 @@ Establish **two perpetual maintenance lanes** under Epic 8 Story 3 so recurring 
 ### Functional
 
 - [ ] **FR-112:F1** — Perpetual task **E08:S03:T15** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (red-build triage, workflow config, CI dependency/test fixes).
-- [ ] **FR-112:F2** — Perpetual task **E08:S03:T16** owns [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) and [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) ongoing hygiene (re-scans, routine waves, dismiss/verify).
+- [x] **FR-112:F2** — Perpetual task **E08:S03:T16** owns [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) and [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) ongoing hygiene (re-scans, routine waves, dismiss/verify). Wave 0 baseline @ v0.8.3.16+1.
 - [ ] **FR-112:F3** — Both tasks carry `Task Type: Perpetual Maintenance` and explicit scope boundaries (including handoff from T12–T14).
 - [x] **FR-112:F4** — Story 003 checklist and `kboard.md` **Ongoing (O)** band wired bidirectionally.
 
 ### Non-functional
 
-- [ ] **FR-112:NF1** — Scope split is unambiguous: CI lane does not own CodeQL/Code Quality dashboards; security lane does not own Actions workflow failures.
+- [x] **FR-112:NF1** — Scope split is unambiguous: CI lane does not own CodeQL/Code Quality dashboards; security lane does not own Actions workflow failures.
 - [ ] **FR-112:NF2** — Novel **HIGH** severity CodeQL findings may still spawn dedicated BR + task; perpetual lane remains default for routine hygiene.
 
 ---
