@@ -1,6 +1,6 @@
 # Changelog: v0.4.15.5+1
 
-**Release Date:** 2025-12-22 10:00:00 UTC  
+**Release Date:** 2026-06-05 18:45:00 UTC  
 **Version:** v0.4.15.5+1  
 **Epic:** E4 (Kanban Framework)  
 **Story:** S15 (Procedural Task Template Generation and Hybrid Strategy)  
@@ -11,97 +11,36 @@
 
 ## Summary
 
-**Documentation Complete:** Integrated generator into Kanban framework package and documented hybrid strategy for maintainers and adopting projects. Generator is now discoverable and fully documented with usage guidance.
+Change implemented for **FR-029** hybrid task template system: generator path resolution aligned to lowercase on-disk layouts, maintainer/adopter guide published, installer `--generate-task-templates` flag wired, and four-surface kanban reconciliation for E04:S15:T05.
 
 ---
 
 ## Changes
 
-### Generator Integration (T04)
+### Generator path fix
 
-**Scripts Documentation Updated:**
-- `packages/frameworks/kanban/scripts/README.md` updated with generator documentation
-- Added comprehensive usage guide for `generate_task_templates.py`
-- Documented CLI options, examples, and use cases
-- Added guidance for framework maintainers and adopting projects
+- `kanban_paths.resolve_template_task_file` — canonical lowercase `epic-NN/story-NN/` resolution
+- `generate_task_templates.py` — write paths match on-disk template layout
+- Validation: **378/378** templates, 0 structure invalid
 
-**Package Contents Updated:**
-- `packages/frameworks/kanban/README.md` updated to include generator in scripts list
-- Generator script listed in package contents section
+### Documentation and installer
 
-### Hybrid Strategy Documentation (T05)
+- `packages/frameworks/kanban/docs/hybrid-task-template-guide.md` — maintainer and adopter usage
+- `install_kanban_framework.py` — `--generate-task-templates` / `--generate-task-templates-overwrite`
+- Package README and scripts README updated
 
-**Main README Updated:**
-- `packages/frameworks/kanban/README.md` enhanced with hybrid template system section
-- Added comprehensive explanation of hybrid strategy
-- Documented benefits and trade-offs
-- Provided usage guidance for:
-  - Framework maintainers (regeneration, validation)
-  - Adopting projects (pre-generated vs local generation)
-- Included examples and when to regenerate templates
-- Added references to ADR, design document, and FR-029
+### Tests
 
-**Documentation Sections Added:**
-- **What is the Hybrid System?** - Overview of concrete templates + procedural generator
-- **Why Hybrid?** - Benefits (storage efficiency, maintenance efficiency) and trade-offs
-- **Using the Generator** - Separate guidance for maintainers and adopting projects
-- **When to Regenerate** - Clear guidance on when regeneration is needed
+- `packages/frameworks/kanban/scripts/test_generate_task_templates.py` — path resolution and CLI coverage
+
+### Kanban / planning
+
+- IPP: `docs/implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md`
+- Task doc, FR-029, story checklist, `kboard.md` prune, completion ledgers reconciled
 
 ---
 
-## Integration Status
+## Related
 
-**Generator Integration:**
-- ✅ Script placed in stable location (`packages/frameworks/kanban/scripts/`)
-- ✅ CLI interface documented with comprehensive options
-- ✅ Usage guidance provided for maintainers
-- ✅ Usage guidance provided for adopting projects
-
-**Documentation:**
-- ✅ Hybrid strategy explained in main README
-- ✅ Generator usage documented in scripts README
-- ✅ References to ADR and FR-029 included
-- ✅ Examples and use cases provided
-
----
-
-## Related Work
-
-- **Story:** E4:S15 - Procedural Task Template Generation and Hybrid Strategy
-- **Epic:** Epic 4 - Kanban Framework
-- **Task:** E4:S15:T04 - Integrate generator into Kanban framework package (complete)
-- **Task:** E4:S15:T05 - Document hybrid strategy and usage (complete)
-- **Feature Request:** FR-029 - Procedural Task Template Generation (Hybrid Strategy)
-- **ADR:** `task-template-system-hybrid-adr.md`
-- **Design:** `task-template-generator-design.md`
-
----
-
-## Next Steps
-
-1. Complete remaining concrete task templates (E4:S06:T04)
-2. Validate generator output against all concrete templates (T03 validation)
-3. Consider AI enhancement for richer content generation (future)
-
----
-
-## Usage Examples
-
-**For Framework Maintainers:**
-```bash
-# Regenerate templates after structure changes
-python3 scripts/generate_task_templates.py --overwrite
-
-# Validate generated templates
-python3 scripts/generate_task_templates.py --validate
-```
-
-**For Adopting Projects:**
-```bash
-# Generate missing templates locally
-python3 scripts/generate_task_templates.py
-
-# Or use pre-generated templates (included in package)
-# No action needed - templates are ready to use
-```
-
+- [FR-029](../../project-management/kanban/fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md)
+- [IPP-E04S15T05](../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium-Large  
 **Created:** 2025-12-22  
-**Last updated:** 2025-12-22 (v0.4.15.5+2 – T05 enhanced: Agentic template generator and integration complete)  
-**Version:** v0.4.15.5+2  
+**Last updated:** 2026-06-05 (v0.4.15.5+1 – T05 hybrid guide, path fix, installer)  
+**Version:** v0.4.15.5+1  
 **Code:** E4S15
 
 ---
@@ -49,7 +49,7 @@ Deliver a robust, documented hybrid template system where:
 - [x] **E04:S15:T02 – Design procedural task template generator** ✅ COMPLETE (v0.4.15.3+1)
 - [x] **E04:S15:T03 – Implement generator and validate against concrete templates** ✅ COMPLETE (v0.4.15.3+1)
 - [x] **E04:S15:T04 – Integrate generator into Kanban framework package** ✅ COMPLETE (v0.4.15.5+1)
-- [x] **E04:S15:T05 – Document hybrid strategy and usage for maintainers and clients** ✅ COMPLETE (v0.4.15.5+2 – Agentic template generator and integration complete)
+- [x] **E04:S15:T05** ✅ COMPLETE (v0.4.15.5+1 – [T05](story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md), [IPP](../../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md))
 
 ---
 

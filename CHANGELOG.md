@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.15.5+1] - 05-06-26
+
+E04:S15:T05 — **FR-029 hybrid templates:** generator path fix (378/378 validate), maintainer guide, installer `--generate-task-templates`. SemVer **v0.4.922+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.15.5+1.md)
+
+---
+
 ## [0.2.16.4+31] - 05-06-26
 
 E02:S16:T04 — **UKW -c:** 14 doc-terminal C-band rows archived from `kboard.md`; kanban-completed ledger updated. SemVer **v0.4.922+31**.

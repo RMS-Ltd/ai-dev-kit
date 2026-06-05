@@ -1,0 +1,12 @@
+{
+  "release_version": "0.4.15.5+1",
+  "task": "E04:S15:T05",
+  "invocation_context": "rw_step_7",
+  "touched_surfaces": [
+    {"surface": "task_doc", "path": "docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md", "why": "COMPLETE + version"},
+    {"surface": "story_doc", "path": "docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md", "why": "T05 checklist complete"},
+    {"surface": "fr_br_doc", "path": "docs/project-management/kanban/fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md", "why": "IMPLEMENTED status"},
+    {"surface": "kboard", "path": "docs/project-management/kanban/kboard.md", "why": "T05 row pruned"},
+    {"surface": "kanban_completed", "path": "docs/project-management/kanban/kanban-completed.md", "why": "ledger entry"}
+  ]
+}

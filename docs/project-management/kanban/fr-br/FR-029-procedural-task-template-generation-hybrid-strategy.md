@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # FR-029 – Procedural Task Template Generation (Hybrid Strategy)
 
 **Type:** Feature Request  
-**Status:** Proposed  
+**Status:** IMPLEMENTED (v0.4.15.5+1)  
 
 **Implementing Task:** [E04:S15:T05](../epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md)
 **Priority:** HIGH  
@@ -115,21 +115,9 @@ A hybrid approach addresses these issues by:
 
 ## Acceptance Criteria
 
-- [ ] All canonical tasks in the structure document have corresponding templates under `templates/tasks/`.
-- [ ] A procedural task template generator exists in the Kanban framework package.
-- [ ] The generator can:
-  - [ ] Create missing templates.
-  - [ ] Regenerate templates from the canonical structure with an explicit flag.
-  - [ ] Run in dry-run mode.
-
-- [ ] Generated templates match the concrete “golden” templates for:
-  - [ ] Task IDs and file paths.
-  - [ ] Core structural sections (frontmatter + main headings).
-
-- [ ] Documentation is updated to:
-  - [ ] Explain the hybrid strategy.
-  - [ ] Show maintainers how to run/extend the generator.
-  - [ ] Show clients how to generate templates in their own projects.
+- [x] All canonical tasks have templates; generator supports dry-run, overwrite, validate (378/378).
+- [x] Documentation: `packages/frameworks/kanban/docs/hybrid-task-template-guide.md`, installer `--generate-task-templates`.
+- **IPP:** [IPP-E04S15T05](../../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
 
 
 ---

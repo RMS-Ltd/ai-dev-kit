@@ -7,9 +7,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 16    # Story 16 — Perpetual Ongoing Workflow Operations
-VERSION_TASK = 4      # Task 4 — Ad-hoc Kanban synchronization and hygiene (Perpetual)
-VERSION_BUILD = 31    # Build 31: UKW -c — 14 doc-terminal C-band rows archived
+VERSION_EPIC = 4      # Epic 4 — Kanban Framework
+VERSION_STORY = 15    # Story 15 — Procedural Task Template Generation and Hybrid Strategy
+VERSION_TASK = 5      # Task 5 — Hybrid strategy maintainer/client docs (FR-029)
+VERSION_BUILD = 1     # Build 1: generator path fix, hybrid guide, installer flag
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"

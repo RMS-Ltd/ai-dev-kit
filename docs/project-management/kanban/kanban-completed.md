@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E04:S15:T05](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md)** — **FR-029** hybrid task template docs.
+  **Completed:** `2026-06-05T12:30:00Z` | **Version:** `v0.4.15.5+1` | **Agent:** `RW E04:S15:T05 --art` | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | [IPP](../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
+
 #### **UKW -c archive batch (2026-06-05)** — doc-terminal rows pruned from active `kboard.md` C-band
 
 - **[E02:S07:T01](epics/epic-02/story-07-trigger-aware-release-workflow.md)** — **FR-013** trigger-aware RW verification closure (parallel E04 wave merge).
