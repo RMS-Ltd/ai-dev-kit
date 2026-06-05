@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-04 (v0.2.16.4+28 — RW -k: kboard C-band reprioritisation; fbuboard mirrored; BR-051/052 wired)
-**Version Anchor:** v0.2.16.4+28
+**Last updated:** 2026-06-05 (v0.2.16.4+29 — UKW hygiene: revert erroneous mirror; prune RESOLVED FBUs; wiring contract)
+**Version Anchor:** v0.2.16.4+29
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 

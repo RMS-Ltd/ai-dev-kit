@@ -52,6 +52,8 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T11 – Kanban epic/story path lowercase naming (UXR-017)** - ✅ COMPLETE (v0.4.19.11+1 — GH #12–#20 closed; adopter replay verified) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
+- [ ] **E04:S19:T12 – `fbuboard` necessity investigation (UXR-020)** - 🔄 IN PROGRESS (HIGH, research complete 2026-06-05 — scoped consolidation recommended; user direction + IPW pending) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)
+
 ---
 
 ## Overview

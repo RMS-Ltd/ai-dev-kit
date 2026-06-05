@@ -42,7 +42,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E06:S09:T16 | BR-086 / GitHub #17 — lowercase fresh kanban RW mode C patterns & sign-off | `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md` |
+| E07:S07:T03 | BR-091 — workflow validator slug path resolution (v0.7.7.3+1 released; CI verification pending) | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

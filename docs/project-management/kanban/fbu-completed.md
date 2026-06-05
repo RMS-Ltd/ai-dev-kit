@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T10** — BR-096 closure v0.8.3.10+1)
-**Version:** v0.8.3.10+1 (**SemVer** v0.4.897+1)
+**Last Updated:** 2026-06-05 (RW **E02:S16:T04** — BR-078/079/080/087 pruned v0.2.16.4+29)
+**Version:** v0.2.16.4+29 (**SemVer** v0.4.898+29)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,10 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-087 | BR | Framework install directory slug mismatch — RESOLVED (**E06:S09:T18**) | 2026-06-04T16:00:30Z | v0.6.9.18+2 | UKW hygiene |
+| BR-080 | BR | Kanban fresh mode validation on empty repo without `--force` (**E06:S09:T09**) | 2026-06-03T19:15:00Z | v0.6.9.9+2 | UKW hygiene |
+| BR-079 | BR | Kanban fresh install Epic 22/23 templates — verified replay (**E06:S09:T08**) | 2026-06-04T12:00:00Z | v0.6.9.8+2 | UKW hygiene |
+| BR-078 | BR | Kanban fresh install structure template missing (**E06:S09:T07**) | 2026-06-03T20:25:00Z | v0.6.9.7+2 | UKW hygiene |
 | BR-096 | BR | CodeQL incomplete URL substring sanitization in portal test (**E08:S03:T10**) | 2026-06-05T01:06:43Z | v0.8.3.10+1 | RW --art |
 | BR-095 | BR | CodeQL insecure `tempfile.mktemp` in intake test script (**E08:S03:T09**) | 2026-06-05T01:03:42Z | v0.8.3.9+1 | RW --art |
 | BR-094 | BR | CodeQL `git_tag_handler.py` indentation syntax error (**E08:S03:T08**) | 2026-06-05T00:10:09Z | v0.8.3.8+1 | RW --art |

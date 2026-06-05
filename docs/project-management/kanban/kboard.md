@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T10** — BR-096 CodeQL URL substring fix v0.8.3.10+1)
-**Version:** v0.8.3.10+1
+**Last Updated:** 2026-06-05 (RW **E02:S16:T04** — UKW board hygiene v0.2.16.4+29)
+**Version:** v0.2.16.4+29
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
 **Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epic 21 is TODO. MoSCOW lists **tasks only** (not stories).
 
-**Wiring:** In-flight tasks on this board match [`fbuboard.md`](fbuboard.md) for the same work. **FBU OPEN + task COMPLETE** (adopter verification) may appear on fbuboard only — see story checklists and [`fbu-completed.md`](fbu-completed.md) when closed.
+**Wiring:** In-flight **task** rows here match live work in task docs. [`fbuboard.md`](fbuboard.md) may hold additional **FBU OPEN + task COMPLETE** rows (verification pending) — **do not** re-add those tasks to kboard when syncing boards; use task docs + [`kanban-completed.md`](kanban-completed.md) as SoT.
 
 > **Structure:** [`kanban-structure.md`](kanban-structure.md) · **Guide:** [`kanban-board-guide.md`](kanban-board-guide.md) · **Completed:** [`kanban-completed.md`](kanban-completed.md) · **FBU board:** [`fbuboard.md`](fbuboard.md)
 
@@ -91,8 +91,6 @@ housekeeping_policy: keep
 
 - **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:49 UTC
 
-- **E01:S02:T14** – FR-003: Dependency Tracking in Adopting Projects - 📋 TODO (LOW, Dependency tracking for project adoption) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | Last modified: 2026-06-04 21:01 UTC
-
 - **E01:S02:T13** – FR-002: Update Been There README - 📋 TODO (LOW, Update README for been-there functionality) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](fr-br/FR-002-update-been-there-readme.md) | Last modified: 2026-06-04 12:14 UTC
 
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | Last modified: 2026-06-04 12:15 UTC
@@ -109,7 +107,9 @@ housekeeping_policy: keep
 
 - **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Last modified: 2026-06-03 12:29 UTC
 
-- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.4+28**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | Last modified: 2026-06-04 17:34 UTC
+- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.4+29**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | Last modified: 2026-06-04 17:34 UTC
+
+- **E02:S16:T05** – Markdown Documentation Maintenance (Perpetual) - 🔄 PERPETUAL (dedicated markdown-only upkeep lane) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-088](fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | Last modified: 2026-04-27 00:00 UTC
 
 - **E02:S16:T10** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (last RW **v0.2.16.10+5**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | Last modified: 2026-06-04 22:55 UTC
 

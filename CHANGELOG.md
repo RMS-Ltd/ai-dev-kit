@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.10+1] - 05-06-26
+## [0.2.16.4+29] - 05-06-26
 
-E08:S03:T10 — **BR-096:** Replace bare URL substring check with `urlparse` hostname validation in portal identity test (CodeQL CWE-020). SemVer **v0.4.897+1**.
+E02:S16:T04 — **UKW board hygiene:** Reverted erroneous fbuboard→kboard mirror of archived tasks; pruned RESOLVED FBUs (BR-078/079/080/087); clarified fbuboard-only verification-pending wiring. SemVer **v0.4.898+29**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.10+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+29.md)
 
 ---
 

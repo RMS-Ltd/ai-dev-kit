@@ -12,15 +12,15 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-04 (v0.2.16.4+28 — **T04** kanban init: kboard/fbuboard C-band queue mirror)
-**Version:** v0.2.16.4+28
+**Last updated:** 2026-06-05 (v0.2.16.4+29 — T04 UKW hygiene: lean boards; fbuboard RESOLVED prune; wiring contract)
+**Version:** v0.2.16.4+29
 **Code:** E2S16
 
 ---
 
 ## Tactical overview
 
-Story 016 remains the operational home for perpetual workflow work. **T04** UKW (2026-06-04) archived **E03:S02:T12**, **E06:S09:T17–T20**, and **FR-108** from active MoSCOW; prior wave (2026-06-03) archived **E08:S03:T05/T06** and **BR-066**, **FR-104**, **FR-105**, **BR-077**. **T03** BR-059 closure (**v0.2.16.3+6**). Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**. **COMPLETE** discrete: T01–T02, T06–T09, T11–T13, T15–T17.
+Story 016 remains the operational home for perpetual workflow work. **T04** RW **v0.2.16.4+29** — reverted erroneous fbuboard→kboard mirror; pruned **BR-078/079/080/087** from active fbuboard; clarified fbuboard-only verification-pending contract. Prior UKW (2026-06-05) wired **T05** Ongoing + **T17** drift fix. **T04** UKW (2026-06-04) archived **E03:S02:T12**, **E06:S09:T17–T20**, **FR-108**. **T03** BR-059 closure (**v0.2.16.3+6**). Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**. **COMPLETE** discrete: T01–T02, T06–T09, T11–T13, T15–T17.
 
 ---
 
@@ -35,7 +35,7 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
 - [ ] **E02:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual; Tranche **3B** ACTIVE_FIX complete; AC4 satisfied)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+28** — C-band dependency-ordered queue; fbuboard mirror)  
+- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+29** — lean board hygiene; wiring contract)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E02:S16:T05 – Markdown Documentation Maintenance (Perpetual)** - IN PROGRESS (HIGH, dedicated perpetual lane for recurring markdown-only documentation upkeep outside workflow-maintenance umbrella and kanban synchronization lanes)  
