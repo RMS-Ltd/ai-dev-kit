@@ -1,3 +1,11 @@
+adk:
+  name: AI Dev Kit maintainers
+  title: Documentation portal team
+  url: https://github.com/RMS-Ltd/ai-dev-kit
+  image_url: https://github.com/RMS-Ltd.png
+  socials:
+    github: RMS-Ltd
+
 yangshun:
   name: Yangshun Tay
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd

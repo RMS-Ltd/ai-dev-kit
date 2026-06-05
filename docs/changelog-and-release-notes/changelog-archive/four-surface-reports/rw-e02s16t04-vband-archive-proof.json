@@ -1,0 +1,38 @@
+{
+  "report_type": "ukw_rw_archive_proof",
+  "invocation": "UKW -c + RW E02:S16:T04 --art",
+  "evidence_mode": "structure_prune",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 4,
+    "task_id": "E02:S16:T04",
+    "version_string": "v0.2.16.4+30"
+  },
+  "summary": {
+    "kboard_v_band_pruned": 3,
+    "ledger_before_removal": true
+  },
+  "archived": {
+    "kboard": ["E02:S13:T08", "E06:S09:T11", "E06:S09:T19"]
+  },
+  "rows": {
+    "E02:S13:T08": {
+      "allowed": true,
+      "reason": "V-band prune; FR-106 IMPLEMENTED; intake-completed.md 2026-06-05"
+    },
+    "E06:S09:T11": {
+      "allowed": true,
+      "reason": "V-band prune; BR-082 FIXED; intake-completed.md 2026-06-05; GitHub #14 closed"
+    },
+    "E06:S09:T19": {
+      "allowed": true,
+      "reason": "V-band prune; BR-088 FIXED; intake-completed.md 2026-06-05; GitHub #18 closed"
+    },
+    "E02:S16:T04": {
+      "allowed": true,
+      "reason": "RW release scope host task; version anchor v0.2.16.4+30"
+    }
+  },
+  "timestamp": "2026-06-05T03:32:26Z"
+}

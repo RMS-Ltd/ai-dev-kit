@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (Cursor) acting as user/client for dev-toolkit  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** PENDING  
+**Status:** FIXED  
 
-**Implementing Task:** [E04:S09:T01](../epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md)
+**Implementing Task:** [E04:S09:T01](../epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification.md)
 **GitHub Issue:** [#9](https://github.com/RMS-Ltd/ai-dev-kit/issues/9)
 
 ---
@@ -154,12 +154,12 @@ These bugs occur when:
 
 ## Acceptance Criteria (Fix Requirements)
 
-- [ ] **Criterion 1:** `analyze_structure.py` imports `Tuple` from `typing`
-- [ ] **Criterion 2:** `semantic_matcher.py` handles optional regex groups correctly
-- [ ] **Criterion 3:** `migrate_structure.py` supports `canonical_adoption` mode in argparse
-- [ ] **Criterion 4:** Analysis recommendation logic correctly considers detected structure
-- [ ] **Criterion 5:** All bugs fixed and tested with real-world Kanban structures
-- [ ] **Criterion 6:** Installation completes successfully in canonical_adoption mode
+- [x] **Criterion 1:** `analyze_structure.py` imports `Tuple` from `typing`
+- [x] **Criterion 2:** `semantic_matcher.py` handles optional regex groups correctly
+- [x] **Criterion 3:** `migrate_structure.py` supports `canonical_adoption` mode in argparse
+- [x] **Criterion 4:** Analysis recommendation logic correctly considers detected structure
+- [x] **Criterion 5:** All bugs fixed and tested with real-world Kanban structures
+- [x] **Criterion 6:** Installation completes successfully in canonical_adoption mode
 
 **Verification Method:**
 - [x] Manual testing (UAT scenario reproduction)
@@ -174,7 +174,17 @@ These bugs occur when:
 
 ### Fix Attempts
 
-*No fix attempts yet - bugs discovered during UAT*
+#### Fix Attempt 1 (2025-12-10 — Story T01–T04)
+
+- **Version:** v0.4.9.1+1 (implementation wave)
+- **Changes:** Tuple import; semantic regex try/except; `canonical_adoption` in migrate argparse; `structure_detected` guard in recommendation logic.
+- **Verification Status:** Verified via static/runtime checks (IPP E04:S09:T01).
+
+#### Fix Attempt 2 (2026-06-05 — E04:S09:T01 verification wave)
+
+- **Version:** v0.4.9.1+1
+- **Changes:** `analyze_structure.py` — `_generate_migration_plan` uses `len(self.semantic_matches)` (RF9 NameError gap).
+- **Verification Status:** V1–V5 PASS; 23 canonical epics load; BR-007 closed.
 
 ---
 
@@ -197,7 +207,7 @@ These bugs occur when:
 
 ## Intake Decision
 
-**Intake Status:** PENDING  
+**Intake Status:** COMPLETE  
 **Intake Date:** 2025-12-10  
 **Intake By:** AI Agent (ai-dev-kit)
 

@@ -21,8 +21,11 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E08:S02:T01 – Create validator framework** - ✅ COMPLETE (v0.8.2.1+1 – Validator framework implemented: BaseValidator, ValidationResult, ValidatorRegistry)
+  - Task: [`T01-create-validator-framework`](story-02-additional-validators/T01-create-validator-framework.md)
 - [x] **E08:S02:T02 – Build framework-specific validators** - ✅ COMPLETE (v0.8.2.2+1 – Framework-specific validators created: KanbanValidator, WorkflowValidator, VersionValidator, DocumentLifecycleValidator)
+  - Task: [`T02-build-framework-specific-validators`](story-02-additional-validators/T02-build-framework-specific-validators.md)
 - [x] **E08:S02:T03 – Establish validation patterns** - ✅ COMPLETE (v0.8.2.3+1 – Validation patterns library created: 7 pattern categories, pattern examples, best practices)
+  - Task: [`T03-establish-validation-patterns`](story-02-additional-validators/T03-establish-validation-patterns.md)
 
 ---
 
@@ -35,104 +38,6 @@ This story develops additional validators beyond the current 3 validation script
 ## Goal
 
 Develop comprehensive validation framework and additional validators.
-
----
-
-## Tasks
-
-### E08:S02:T01 – Create validator framework
-
-**Status:** ✅ COMPLETE (v0.8.2.1+1)  
-**Input:** Current validators, validation requirements  
-**Deliverable:** Validator framework implementation  
-**Dependencies:** None  
-**Blocker:** None
-
-**Approach:**
-1. Analyze current validator patterns
-2. Design validator framework
-3. Implement core validator framework
-4. Document validator framework
-
-**Implementation:**
-- Created `BaseValidator` abstract base class with workflow orchestration
-- Created `ValidationResult` with status, issues, and metadata
-- Created `ValidationIssue` with severity levels (ERROR, WARNING, INFO)
-- Created `ValidatorRegistry` for validator discovery and management
-- Created `ValidatorConfig` for validator configuration
-- Created README with usage examples
-- Created example validator: `simple_validator_example.py`
-
-**Deliverables:**
-- ✅ `packages/frameworks/tooling-automation/validators/base.py` - BaseValidator and core types
-- ✅ `packages/frameworks/tooling-automation/validators/registry.py` - ValidatorRegistry
-- ✅ `packages/frameworks/tooling-automation/validators/__init__.py` - Package exports
-- ✅ `packages/frameworks/tooling-automation/validators/README.md` - Framework documentation
-- ✅ `packages/frameworks/tooling-automation/validators/examples/simple_validator_example.py` - Example validator
-
----
-
-### E08:S02:T02 – Build framework-specific validators
-
-**Status:** ✅ COMPLETE (v0.8.2.2+1)
-
-**Input:** Validator framework, framework requirements  
-**Deliverable:** Framework-specific validator implementations  
-**Dependencies:** E08:S02:T01  
-**Blocker:** None
-
-**Approach:**
-1. ✅ Identify validation needs per framework
-2. ✅ Create framework-specific validators
-3. ✅ Build validation test suites
-4. ✅ Document validators
-
-**Implementation:**
-- Created `KanbanValidator` - Validates Epic/Story/Task document structure, naming conventions, and consistency
-- Created `WorkflowValidator` - Validates workflow YAML files for structure, dependencies, and handler references
-- Created `VersionValidator` - Validates version file format and version schema compliance
-- Created `DocumentLifecycleValidator` - Validates document lifecycle metadata and policy compliance
-- Created test suites for all validators
-- Created comprehensive documentation
-
-**Deliverables:**
-- ✅ `packages/frameworks/tooling-automation/validators/framework/__init__.py` - Framework validators package
-- ✅ `packages/frameworks/tooling-automation/validators/framework/kanban_validator.py` - Kanban framework validator
-- ✅ `packages/frameworks/tooling-automation/validators/framework/workflow_validator.py` - Workflow framework validator
-- ✅ `packages/frameworks/tooling-automation/validators/framework/version_validator.py` - Version framework validator
-- ✅ `packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py` - Document lifecycle validator
-- ✅ `packages/frameworks/tooling-automation/validators/framework/README.md` - Framework validators documentation
-- ✅ `packages/frameworks/tooling-automation/validators/tests/test_kanban_validator.py` - Kanban validator tests
-- ✅ `packages/frameworks/tooling-automation/validators/tests/test_workflow_validator.py` - Workflow validator tests
-- ✅ `packages/frameworks/tooling-automation/validators/tests/test_version_validator.py` - Version validator tests
-- ✅ `packages/frameworks/tooling-automation/validators/tests/test_document_lifecycle_validator.py` - Document lifecycle validator tests
-
----
-
-### E08:S02:T03 – Establish validation patterns
-
-**Status:** ✅ COMPLETE (v0.8.2.3+1)
-
-**Input:** Validator implementations  
-**Deliverable:** Validation pattern documentation  
-**Dependencies:** E08:S02:T02  
-**Blocker:** None
-
-**Approach:**
-1. ✅ Extract validation patterns
-2. ✅ Document pattern library
-3. ✅ Create pattern examples
-4. ✅ Publish pattern documentation
-
-**Implementation:**
-- Extracted 7 pattern categories from existing validators
-- Documented 20+ specific validation patterns
-- Created pattern examples demonstrating each pattern
-- Established best practices for validator development
-
-**Deliverables:**
-- ✅ `packages/frameworks/tooling-automation/validators/PATTERNS.md` - Comprehensive validation patterns library
-- ✅ `packages/frameworks/tooling-automation/validators/examples/pattern_examples.py` - Pattern examples demonstrating each pattern
 
 ---
 

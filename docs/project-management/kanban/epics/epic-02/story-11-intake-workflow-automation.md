@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Last updated:** 2026-03-30 (UKW — T12 off MoSCOW; archived to kanban-completed; * = workaround)  
+**Last updated:** 2026-06-05 (story closure reconciliation — T13 checklist typo fixed)  
 **Estimated Effort:** 2+ weeks  
 **Started:** 2025-12-15  
 **Completed:** 2025-12-16 (core story); **T12** completed 2026-03-30 (GitHub Actions intake workaround — see task doc)
@@ -34,14 +34,16 @@ housekeeping_policy: keep
 - [x] **E02:S11:T08 – Create Agent Execution Guide** ✅ COMPLETE (v0.2.11.8+1)
 - [x] **E02:S11:T09 – Documentation and Testing** ✅ COMPLETE (v0.2.11.9+3)
 - [x] **E02:S11:T10 – Investigate CHANGELOG Entry Removal and Harden Processes** - ✅ COMPLETE (v0.2.11.10+1 – Root cause identified, safeguards implemented)
+  - Task: [`T10-investigate-changelog-entry-removal-and-harden-processes`](story-11-intake-workflow-automation/T10-investigate-changelog-entry-removal-and-harden-processes.md)
 - [x] **E02:S11:T11 – Fix CHANGELOG Ordering Violations** - ✅ COMPLETE (v0.2.11.11+1 – All ordering violations fixed, duplicates removed, validator passes)
+  - Task: [`T11-fix-changelog-ordering-violations`](story-11-intake-workflow-automation/T11-fix-changelog-ordering-violations.md)
 - [x] **E02:S11:T12 – GitHub Actions Workflow Bug Resolution** – ✅ **COMPLETE (workaround, v0.2.11.12+2)** — intake workflow `.DISABLED`; resolution documented; manual intake (* = workaround, not vendor fix — [kanban-completed](../../kanban-completed.md))
   - Task: [`T12-github-actions-workflow-bug-resolution.md`](story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
   - **Related BR:** [BR-053](../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)
 
-- [ ] **E02:S11:T13 – GitHub Actions workflow spam emails (BR-051)** - TODO — [Task doc](story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
+- [x] **E02:S11:T13 – GitHub Actions workflow spam emails (BR-051)** – ✅ **COMPLETE (v0.2.11.13+2)** — [Task doc](story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
 
-- [ ] **E02:S11:T14 – GitHub Actions workflow optimization (BR-052)** - TODO — [Task doc](story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fr-br/BR-052-github-actions-workflow-optimization.md)
+- [x] **E02:S11:T14 – GitHub Actions workflow optimization (BR-052)** – ✅ **COMPLETE (v0.2.11.14+2)** — path filters + pip cache; BR-052 intake scope in disabled template — [Task doc](story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fr-br/BR-052-github-actions-workflow-optimization.md) | [IPP-E02S11T14](../../../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)
 
 
 > **Format:** `E2:S11:Txx` (Epic 2, Story 11, Task with 2-digit zero padding)  
@@ -64,78 +66,6 @@ Create an automated intake workflow in the workflow management package that form
 - [x] Support trigger-aware execution
 - [x] Investigate and prevent accidental CHANGELOG entry removal
 - [ ] Fix CHANGELOG ordering violations (separate from validator fix)
-
----
-
-## Tasks
-
-### E02:S11:T10 – Investigate CHANGELOG Entry Removal and Harden Processes
-
-**Status:** ✅ COMPLETE  
-**Priority:** HIGH  
-**Created:** 2025-12-16  
-**Completed:** 2025-12-16  
-**Version:** v0.2.11.10+1
-
-**Problem:** In commit `f092c1f` (v0.2.11.9+3), 5,174 lines were accidentally removed from `CHANGELOG.md`, deleting 11 changelog entries (0.2.8.1+1 through 0.2.8.5+1, and 0.2.11.1+1 through 0.2.11.6+1). The commit message did not mention changelog pruning, suggesting this was accidental.
-
-**Investigation Objectives:**
-1. Determine root cause of accidental removal
-2. Identify process gaps that allowed this to happen
-3. Design safeguards to prevent recurrence
-4. Implement validation and protection mechanisms
-
-**Deliverables:**
-- ✅ Root cause analysis document
-- ✅ Process improvement recommendations
-- ✅ CHANGELOG protection mechanisms (validation, pre-commit hooks, etc.)
-- ✅ Updated RW documentation with changelog protection guidelines
-
-**Acceptance Criteria:**
-- [x] Root cause identified and documented
-- [x] Process gaps documented
-- [x] Safeguards designed and implemented
-- [x] RW documentation updated with protection guidelines
-- [x] Prevention mechanisms validated
-
-**Task Document:** [`Task-010-Investigate-CHANGELOG-Entry-Removal-and-Harden-Processes.md`](story-11-intake-workflow-automation/Task-010-Investigate-CHANGELOG-Entry-Removal-and-Harden-Processes.md)
-
----
-
-### E02:S11:T11 – Fix CHANGELOG Ordering Violations
-
-**Status:** ✅ COMPLETE (v0.2.11.11+1)  
-**Priority:** MEDIUM  
-**Created:** 2025-12-16  
-**Version:** v0.2.11.11+0
-
-**Problem:** The enhanced validator (E02:S01:T06) now correctly detects Keep a Changelog format and identifies ~100+ ordering violations in CHANGELOG.md. While the validator is fixed, the CHANGELOG content itself needs to be corrected.
-
-**Scope:**
-- Fix all ordering violations in CHANGELOG.md
-- Ensure all entries are in correct Keep a Changelog order (newest first)
-- Preserve all entry content, links, and references
-- Document process improvements to prevent future violations
-
-**Deliverables:**
-- CHANGELOG.md with all entries in correct order
-- Validation passes with `--format keep_a_changelog`
-- Documentation of corrections made
-- Process improvements documented
-
-**Acceptance Criteria:**
-- [ ] All CHANGELOG entries are in correct Keep a Changelog order (newest first)
-- [ ] Validator passes with `--format keep_a_changelog` (no ordering violations)
-- [ ] No entries are lost or duplicated during reordering
-- [ ] All version references remain correct
-- [ ] All links to detailed changelogs remain valid
-
-**Task Document:** [`Task-011-Fix-CHANGELOG-Ordering-Violations.md`](story-11-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)
-
-**Related:**
-- E02:S01:T06 - Validator format support (COMPLETE)
-- E02:S11:T10 - CHANGELOG protection (COMPLETE)
-- E03:S02:T06 - Changelog ordering process (PERPETUAL)
 
 ---
 

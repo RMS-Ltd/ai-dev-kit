@@ -1,0 +1,74 @@
+---
+lifecycle: evergreen
+ttl_days: null
+created_at: 2026-06-05T04:53:29Z
+expires_at: null
+housekeeping_policy: keep
+---
+
+# Epic 4, Story 10, Task 6: Add agentic intelligence and explanations
+
+**Task ID:** E04:S10:T06  
+**Status:** ✅ COMPLETE  
+**Priority:** MEDIUM  
+**Last updated:** 2026-06-05 (v0.0.0.0+0 – migrated from embedded Story section)  
+**Version:** v0.0.0.0+0  
+**Code:** E04S10T06
+
+---
+
+## Task ID
+
+**Format:** `E{epic}:S{story}:T{task}`
+
+**Full Task ID:** `E04:S10:T06`
+
+---
+
+## Scope
+
+[To be filled during migration]
+
+---
+
+## Input
+
+- Task creation workflow from T05
+- Agentic intelligence foundation (Epic 4 Story 9)
+- LLM integration (if applicable)
+
+---
+
+## Deliverable
+
+- Enhanced agentic intelligence ✅ (enhanced `agentic_task_workflow.py`)
+- Decision explanation system ✅
+- Context understanding capabilities ✅
+- Confidence scoring ✅
+- Step-by-step reasoning ✅
+
+---
+
+## Acceptance Criteria
+
+- ✅ Agentic intelligence integrated
+- ✅ Explanations provided for all decisions (analysis, mapping, task structure)
+- ✅ Context understanding validated with confidence scores
+- ✅ Reasoning provided for each workflow step
+
+---
+
+---
+
+## Version Anchor
+
+**Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`
+
+---
+
+## Migration Notes
+
+Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
+
+**Source Story:** `docs/project-management/kanban/epics/epic-04/story-10-agentic-kanban-task-creation-from-fr-br.md`
+

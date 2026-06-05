@@ -21,11 +21,17 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E04:S16:T01 – Establish expectations baseline for Kanban package** ✅ COMPLETE (v0.4.16.1+1)
+  - Task: [`T01-establish-expectations-baseline-for-kanban-package`](story-16-kanban-package-implementation-review/T01-establish-expectations-baseline-for-kanban-package.md)
 - [x] **E04:S16:T02 – Inventory package components and map to expectations** ✅ COMPLETE (v0.4.16.2+1)
+  - Task: [`T02-inventory-package-components-and-map-to-expectations`](story-16-kanban-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
 - [x] **E04:S16:T03 – Validate Kanban behavior against documented guidance** ✅ COMPLETE (v0.4.16.3+1)
+  - Task: [`T03-validate-kanban-behavior`](story-16-kanban-package-implementation-review/T03-validate-kanban-behavior.md)
 - [x] **E04:S16:T04 – Review integrations and dependency alignment** ✅ COMPLETE (v0.4.16.4+1)
+  - Task: [`T04-review-integrations-and-dependency-alignment`](story-16-kanban-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
 - [x] **E04:S16:T05 – Create gap log and risk assessment** ✅ COMPLETE (v0.4.16.5+2 – Gap log and risk assessment finalized, all acceptance criteria met)
+  - Task: [`T05-create-gap-log-and-risk-assessment`](story-16-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [x] **E04:S16:T06 – Define RC sign-off criteria and remediation tasks** ✅ COMPLETE (v0.4.16.6+1)
+  - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-16-kanban-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 
 ---
 
@@ -66,116 +72,6 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ---
 
-## Tasks
-
-### E04:S16:T01 – Establish expectations baseline for Kanban package
-
-**Task ID:** E04:S16:T01  
-**Status:** COMPLETE  
-**Scope:** Define the implementation expectations baseline for the Kanban framework package.  
-**Input:** Package README, governance policy, templates, and guides.  
-**Deliverable:** Expectations baseline documented in this story.  
-**Version Anchor:** ✅ COMPLETE (v0.4.16.1+1)
-
-**Acceptance Criteria:**
-- [x] Expectations baseline documented and approved.
-- [x] Core operating principles captured.
-- [x] Governance rules summarized.
-- [x] Package composition mapped.
-- [x] Sources referenced.
-
-**Input:** Package README, policies, templates, and guides  
-**Deliverable:** Expectations baseline document  
-**Approach:** Extract expected behaviors, policies, and structures.
-
-### E04:S16:T02 – Inventory package components and map to expectations
-
-**Task ID:** E04:S16:T02  
-**Status:** COMPLETE  
-**Scope:** Inventory Kanban package components and map them to expectations baseline.  
-**Input:** Package directory inventory.  
-**Deliverable:** Component map with expected vs actual coverage.  
-**Version Anchor:** ✅ COMPLETE (v0.4.16.2+1)
-
-**Acceptance Criteria:**
-- [x] Core documentation mapped to expectations baseline.
-- [x] Governance policy and integration guides identified.
-- [x] Scripts and templates cataloged with purpose.
-- [x] Examples and supporting guides accounted for.
-
-**Component Inventory (Mapped to Expectations):**
-- **Core Documentation**
-  - `README.md` (package overview, install modes, usage expectations)
-  - `CHANGELOG.md` (version history)
-  - `MIGRATION_GUIDE_TASK_DOCS.md` (task doc migration guidance)
-
-- **Governance & Policy**
-  - `policies/kanban-governance-policy.md` (rules and lifecycle)
-
-- **Integration Guidance**
-  - `integration/numbering-versioning-integration.md`
-  - `integration/workflow-management-integration.md`
-
-- **FR/BR Intake Guides**
-  - `FR_BR_INTAKE_AGENT_GUIDE.md`
-  - `FR_BR_INTAKE_GUIDE.md`
-  - `FR_BR_INTAKE_QUICK_REFERENCE.md`
-  - `FR_BR_INTAKE_USER_GUIDE.md`
-  - `FR_BR_UXR_FB_GITHUB_SUBMISSION_GUIDE.md`
-
-- **Guides & Design Notes**
-  - `guides/portfolio-kanban-alignment-playbook.md`
-  - `docs/agentic-task-creation-workflow-documentation.md`
-  - `design/agentic-fr-br-analysis-workflow-design.md`
-
-- **Scripts (Installer, Migration, Agentic Tools)**
-  - `scripts/install_kanban_framework.py`, `scripts/migrate_structure.py`, `scripts/validate_installation.py`
-  - `scripts/agentic_mapper.py`, `scripts/agentic_task_workflow.py`, `scripts/fr_br_analyzer.py`
-  - `scripts/semantic_matcher.py`, `scripts/reference_updater.py`, `scripts/analyze_structure.py`
-  - `scripts/README.md` (script usage)
-
-- **Templates**
-  - `templates/` (epic/story/task templates and canonical structures; 900+ files)
-
-- **Examples**
-  - `examples/` (epic, story, task example documents)
-
-
-**Input:** Package directory inventory  
-**Deliverable:** Component map with expected vs actual coverage  
-**Approach:** Map templates, scripts, and docs to expectations.
-
-### E04:S16:T03 – Validate Kanban behavior against documented guidance
-
-**Input:** Policies and board templates  
-**Deliverable:** Behavior validation notes and discrepancies  
-**Approach:** Validate governance rules and document structure.
-
-### E04:S16:T04 – Review integrations and dependency alignment
-
-**Input:** Integration references across frameworks  
-**Deliverable:** Integration alignment report  
-**Approach:** Verify ties to versioning and workflow frameworks.
-
-### E04:S16:T05 – Create gap log and risk assessment
-
-**Task ID:** E04:S16:T05  
-**Status:** COMPLETE  
-**Scope:** Synthesize T01–T04 findings into a consolidated gap log and RC risk assessment for the Kanban framework package.  
-**Input:** Findings from T01–T04, BR-034, BR-035, and environment/SOP improvements.  
-**Deliverable:** Gap log with severity, likelihood, RC impact, and ownership, plus overall RC risk posture.  
-**Version Anchor:** ✅ COMPLETE (v0.4.16.5+1)
-
-### E04:S16:T06 – Define RC sign-off criteria and remediation tasks
-
-**Input:** Gap log and expected behaviors, plus findings from T01–T05  
-**Deliverable:** RC sign-off checklist for the Kanban package and remediation task pattern for non-blocking gaps  
-**Approach:** Synthesize expectations, inventory, behavior validation, integrations, and the gap log into:
-- A concrete, checkable RC sign-off checklist (governance, structure, integrations, gap posture, traceability)
-- A reusable remediation pattern that wires non-blocking gaps into Kanban/FR/BR tasks without blocking RC
-
----
-
 ## Acceptance Criteria (Story-Level)
 
 - [x] Expectations baseline documented and approved. ✅ COMPLETE (v0.4.16.1+1)
@@ -201,32 +97,6 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 **Input:** Package directory inventory  
 **Deliverable:** Component map with expected vs actual coverage  
 **Approach:** Map templates, scripts, and docs to expectations.
-
-### E04:S16:T03 – Validate Kanban behavior against documented guidance
-
-**Input:** Policies and board templates  
-**Deliverable:** Behavior validation notes and discrepancies  
-**Approach:** Validate governance rules and document structure.
-
-### E04:S16:T04 – Review integrations and dependency alignment
-
-**Input:** Integration references across frameworks  
-**Deliverable:** Integration alignment report  
-**Approach:** Verify ties to versioning and workflow frameworks.
-
-### E04:S16:T05 – Create gap log and risk assessment
-
-**Input:** Findings from T01–T04  
-**Deliverable:** Gap log with severity and risk notes  
-**Approach:** Consolidate gaps and categorize by RC impact.
-
-### E04:S16:T06 – Define RC sign-off criteria and remediation tasks
-
-**Input:** Gap log and expected behaviors  
-**Deliverable:** RC sign-off checklist and remediation task list  
-**Approach:** Define minimum bar for RC and backlog tasks.
-
----
 
 ## Acceptance Criteria
 

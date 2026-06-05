@@ -20,9 +20,9 @@ housekeeping_policy: archive
 | E07:S07:T03 | BR-091 | **PASS — close** | CI green `dev` + `main`; local 105/105 pytest |
 | E05:S09:T13 | BR-090 | **HOLD** | `Docusaurus site build` still **FAIL** on `main` (MDX broken links) |
 | E05:S09:T14 | BR-093 | **HOLD** | Dedup workflow on `main`; same MDX failure blocks green run |
-| E02:S13:T08 | FR-106 | **HOLD** | User sign-off on packaged-workflows sync report |
-| E06:S09:T11 | BR-082 | **HOLD** | Adopter book replay — GitHub **#14** |
-| E06:S09:T19 | BR-088 | **HOLD** | Greenfield Mode C replay — GitHub **#18** |
+| E02:S13:T08 | FR-106 | **CLOSED** | Operator sign-off 2026-06-05 → IMPLEMENTED |
+| E06:S09:T11 | BR-082 | **CLOSED** | #14 closed; operator verification 2026-06-05 |
+| E06:S09:T19 | BR-088 | **CLOSED** | #18 closed; operator verification 2026-06-05 |
 
 ---
 
@@ -78,20 +78,20 @@ housekeeping_policy: archive
 | `validate-workflow-docs.py` | ✅ exit 0 (per task doc, 2026-06-03) |
 | User sign-off | ❌ not recorded |
 
-**Action:** Operator confirms sync acceptable → FR-106 **IMPLEMENTED** → prune V-band.
+**Action:** ✅ Closed 2026-06-05 — operator sign-off; FR-106 **IMPLEMENTED**; V-band pruned.
 
 ---
 
-## E06:S09:T11 / BR-082 — HOLD
+## E06:S09:T11 / BR-082 — CLOSED
 
-**Fix release:** `v0.6.9.11+2` · Issue **#14** OPEN
+**Fix release:** `v0.6.9.11+2` · Issue **#14** CLOSED
 
-**Action:** Fresh submodule install without pre-installed PyYAML; confirm preflight messaging.
+**Action:** ✅ Closed 2026-06-05 — operator confirmed expenses-tracker install path resolved; V-band pruned.
 
 ---
 
-## E06:S09:T19 / BR-088 — HOLD
+## E06:S09:T19 / BR-088 — CLOSED
 
-**Fix release:** `v0.6.9.19+1` · Issue **#18** OPEN
+**Fix release:** `v0.6.9.19+1` · Issue **#18** CLOSED
 
-**Action:** Mode C greenfield replay; confirm `version_file` scaffold prompt + stub.
+**Action:** ✅ Closed 2026-06-05 — operator confirmed greenfield scaffold; V-band pruned.

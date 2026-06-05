@@ -20,10 +20,13 @@ housekeeping_policy: keep
 
 ## Task Checklist
 - [ ] **E08:S03:T01 – Create automation framework** - TODO
+  - Task: [`T01-create-automation-framework`](story-03-automation-scripts/T01-create-automation-framework.md)
 
 - [ ] **E08:S03:T02 – Build workflow automation scripts** - TODO
+  - Task: [`T02-build-workflow-automation-scripts`](story-03-automation-scripts/T02-build-workflow-automation-scripts.md)
 
 - [ ] **E08:S03:T03 – Establish automation patterns** - TODO
+  - Task: [`T03-establish-automation-patterns`](story-03-automation-scripts/T03-establish-automation-patterns.md)
 
 
 - [ ] **E08:S03:T04 – CI test workflow and pytest remediation (BR-058)** ✅ COMPLETE (v0.8.3.4+1) — [Task doc](story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) | [BR-058](../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
@@ -53,53 +56,6 @@ This story implements automation scripts for common development and maintenance 
 ## Goal
 
 Implement comprehensive automation for common tasks.
-
----
-
-## Tasks
-
-### E08:S03:T01 – Create automation framework
-
-**Input:** Automation requirements, current scripts  
-**Deliverable:** Automation framework implementation  
-**Dependencies:** None  
-**Blocker:** None
-
-**Approach:**
-1. Design automation framework
-2. Implement core automation framework
-3. Create automation API
-4. Document automation framework
-
----
-
-### E08:S03:T02 – Build workflow automation scripts
-
-**Input:** Automation framework, workflow requirements  
-**Deliverable:** Workflow automation script implementations  
-**Dependencies:** E08:S03:T01  
-**Blocker:** None
-
-**Approach:**
-1. Identify automation opportunities
-2. Create workflow automation scripts
-3. Build script templates
-4. Document script usage
-
----
-
-### E08:S03:T03 – Establish automation patterns
-
-**Input:** Automation implementations  
-**Deliverable:** Automation pattern documentation  
-**Dependencies:** E08:S03:T02  
-**Blocker:** None
-
-**Approach:**
-1. Extract automation patterns
-2. Document pattern library
-3. Create pattern examples
-4. Publish pattern documentation
 
 ---
 

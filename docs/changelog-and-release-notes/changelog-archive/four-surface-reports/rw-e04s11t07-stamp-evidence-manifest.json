@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E04:S11:T07": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.4.11.7+6 — Wave 1 migration tooling release; task doc + FR-016 + story checklist updated"
+    }
+  }
+}

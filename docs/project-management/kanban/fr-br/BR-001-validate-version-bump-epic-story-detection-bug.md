@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (Auto)  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** ACCEPTED
+**Status:** FIXED
 
-**Implementing Task:** [E02:S01:T06](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)  
+**Implementing Task:** [E02:S01:T06](../epics/epic-02/story-01-rw-agent-execution-and-docs/T06-validate-version-bump-story-detection-br001.md)  
 **Historical registry:** E06:S01:T01
 
 ---

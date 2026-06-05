@@ -58,7 +58,7 @@ Update install docs and optional `github-issue-install-signoff-contract.yaml` en
 
 - [x] Greenfield repo without `src/` → after mode C, `version_file` exists on disk **or** install stops with mandatory next step
 - [x] Sign-off / docs reference scaffold behaviour when `src/` absent
-- [ ] **BR-088** / GitHub **#18** closable after adopter replay
+- [x] **BR-088** / GitHub **#18** closable after adopter replay (verified 2026-06-05; #18 closed)
 
 ---
 

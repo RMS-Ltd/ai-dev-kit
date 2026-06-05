@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (E02:S01:T24 — BR-097 RESOLVED)
-**Version:** v0.2.1.24+1
+**Last Updated:** 2026-06-05 (RW: E04:S11:T07 — closure)
+**Version:** v0.4.11.7+16
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,46 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E04:S11:T07](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)** — **FR-016** embedded → discrete task doc migration (Waves 0–5).
+  **Completed:** `2026-06-05T05:12:40Z` | **Version:** `v0.4.11.7+16` | **Agent:** `RW E04:S11:T07 --art` | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | [migration guide](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-guide.md)
+
+- **[E04:S15:T05](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md)** — **FR-029** hybrid task template docs.
+  **Completed:** `2026-06-05T12:30:00Z` | **Version:** `v0.4.15.5+1` | **Agent:** `RW E04:S15:T05 --art` | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | [IPP](../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
+
+- **[E02:S11:T14](epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)** — **BR-052** GHA workflow optimization.
+  **Completed:** `2026-06-05T20:00:00Z` | **Version:** `v0.2.11.14+2` | **Agent:** `RW` | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md)
+
+- **[E02:S11:T13](epics/epic-02/story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md)** — **BR-051** GHA workflow spam hygiene.
+  **Completed:** `2026-06-05T19:30:00Z` | **Version:** `v0.2.11.13+3` | **Agent:** `RW` | [BR-051](fr-br/BR-051-github-actions-workflow-spam-emails.md)
+
+- **[E02:S01:T06](epics/epic-02/story-01-rw-agent-execution-and-docs/T06-validate-version-bump-story-detection-br001.md)** — **BR-001** validate_version_bump path/Code detection.
+  **Completed:** `2026-06-05T19:15:00Z` | **Version:** `v0.2.1.6+2` | **Agent:** `RW` | [BR-001](fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)
+
+#### **UKW -c archive batch (2026-06-05)** — doc-terminal rows pruned from active `kboard.md` C-band
+
+- **[E02:S07:T01](epics/epic-02/story-07-trigger-aware-release-workflow.md)** — **FR-013** trigger-aware RW verification closure (parallel E04 wave merge).
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.16.4+7` | **Agent:** `UKW -c` | [FR-013](fr-br/FR-013-trigger-aware-release-workflow.md)
+
+- **[E02:S07:T05](epics/epic-02/story-07-trigger-aware-release-workflow.md)** — **FR-014** RW trigger for FR/BR commits verification closure.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.16.4+7` | **Agent:** `UKW -c` | [FR-014](fr-br/FR-014-rw-trigger-for-fr-br-commits.md)
+
+- **[E04:S14:T04](epics/epic-04/story-14-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md)** — **FR-037** Kanban policy task prioritisation queue stack.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.5.1.37+3` | **Agent:** `UKW -c` | [FR-037](fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
+
+- **[E02:S11:T11](epics/epic-02/story-11-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)** — **BR-002** changelog validator ordering.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.11.11+1` | **Agent:** `UKW -c` | [BR-002](fr-br/BR-002-changelog-validator-ordering-bug.md)
+
+- **[E02:S10:T00](epics/epic-02/story-10-doc-init-build-zero-for-new-est.md)** — **FR-017** doc-init build (+0) policy hardening.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.10.7+1` | **Agent:** `UKW -c` | [FR-017](fr-br/FR-017-versioning-policy-hardening-doc-init-build.md)
+
+- **[E02:S10:T06](epics/epic-02/story-10-doc-init-build-zero-for-new-est.md)** — **FR-020** version validator abstract-space awareness.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.10.7+1` | **Agent:** `UKW -c` | [FR-020](fr-br/FR-020-version-validator-abstract-space-awareness.md)
+
+- **[E02:S11:T00](epics/epic-02/story-11-intake-workflow-automation.md)** — **FR-019** intake workflow automation.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.11.12+1` | **Agent:** `UKW -c` | [FR-019](fr-br/FR-019-intake-workflow-automation.md)
+
+*(Seven additional pruned rows were already present in this ledger: E04:S11:T04, E04:S10:T01, E04:S09:T06, E04:S09:T05, E07:S05:T03, E02:S06:T01, E06:S08:T01.)*
 
 #### **Epic 2: Workflow Management Framework (Story 1 — RW Agent Execution & Docs)**
 - **[E02:S01:T24](epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)** — **BR-097**: RW BUILD increment enforcement + release-tag immutability (`resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contract).
@@ -288,8 +328,8 @@ housekeeping_policy: keep
 - **[E04:S07:T02](epics/epic-04/story-07-migration-support-and-installation-modes.md)** — FR-007 migration utilities and installation modes. Implemented `migrate_structure.py` (backups, migration, preserve forensic markers, all modes). Implemented `install_kanban_framework.py` (interactive mode selection, Fresh/Migration/Update/Hybrid). Timestamp-based backup directories.  
   **Completed:** `2026-05-15T00:00:00Z` | **Version:** `v0.4.7.2+1` | **Agent:** `RW Agent`
 
-- **[E04:S07:T01](epics/epic-04/story-07-migration-support-and-installation-modes.md)** — BR-006 detection/analysis utilities for existing structures. Implemented `detect_existing_structure.py` (scans epic directories, detects documents, identifies tasks, generates report). Implemented `analyze_structure.py` (maps to E/S/T format, identifies conflicts/gaps, generates migration plan).  
-  **Completed:** `2026-05-15T00:00:00Z` | **Version:** `v0.4.7.1+1` | **Agent:** `RW Agent`
+- **[E04:S07:T01](epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md)** — BR-006 detection/analysis utilities for existing structures. Implemented `detect_existing_structure.py` (scans epic directories, detects documents, identifies tasks, generates report). Implemented `analyze_structure.py` (maps to E/S/T format, identifies conflicts/gaps, generates migration plan). Verification closure: analyze_structure NameError fix; IPP wired.  
+  **Completed:** `2026-06-05T03:38:55Z` | **Version:** `v0.4.7.1+1` | **Agent:** `RW Agent` | [BR-006](fr-br/BR-006-missing-migration-support-pre-existing-kanban.md) | [IPP](../../implementation-cycles/IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md)
 
 #### **Epic 2: Workflow Management Framework (Story 6 — Package Uninstall and Recovery)**
 - **[E02:S06:T01](epics/epic-02/story-06-package-uninstall-and-recovery.md)** — FR-008 uninstall command and safety rails — **RE-IMPLEMENTED**. Fixed broken CLI `remove` command (`select_backend` parameter mismatch, backend instantiation bug). Added `uninstall` alias. Implemented dependency validation (`_check_dependencies`) and backup creation (`_create_backup`). Added 27 tests across `tests/cli/test_remove_command.py`, `tests/test_backends.py`, and `tests/test_uninstall_package.py`. All FR-008 AC-1..AC-5 and NFR-1..NFR-3 verified. **[FR-008](fr-br/FR-008-package-uninstall-capabilities.md)** **COMPLETE (AC-1..AC-5)**.  
@@ -736,7 +776,7 @@ This document tracks all **completed tasks** across the AI Dev Kit project. Task
 - **E04:S06:T03** – Build Task templates - ✅ COMPLETE (v0.4.6.4+1)
 - **E04:S06:T04** – Create template validation - ✅ COMPLETE (v0.4.6.5+1)
 - **E04:S06:T05** – Implement template system - ✅ COMPLETE (v0.4.6.6+1)
-- **E04:S06:T06** – Create template documentation - ✅ COMPLETE (v0.4.6.7+1)
+- **E04:S06:T06** – BR-005: CANONICAL_EPICS.md gap closure (verification wave) - ✅ COMPLETE (v0.4.6.6+1) — [task](epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md) | [BR-005](fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
 - **E04:S06:T07** – Add template examples - ✅ COMPLETE (v0.4.6.8+1)
 - **E04:S06:T08** – Create template testing - ✅ COMPLETE (v0.4.6.8+1)
 - **E04:S06:T09** – Implement template distribution - ✅ COMPLETE (v0.4.6.8+1)

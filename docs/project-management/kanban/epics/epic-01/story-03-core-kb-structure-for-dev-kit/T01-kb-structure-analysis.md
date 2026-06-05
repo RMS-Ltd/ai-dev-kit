@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # KB Structure Analysis and Target Definition
 
+**Task ID:** E01:S03:T01  
 **Task:** E01:S03:T01 – Analyze current docs/core structure and define target structure  
 **Date:** 2025-12-02  
 **Status:** ✅ COMPLETE

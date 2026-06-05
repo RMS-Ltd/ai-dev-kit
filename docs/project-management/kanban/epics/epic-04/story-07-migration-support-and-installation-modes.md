@@ -31,11 +31,14 @@ Provide safe adoption paths for projects with pre-existing Kanban/Sprint/Issue s
   - Implemented analysis utility (`analyze_structure.py`) - maps existing items to E/S/T format, identifies conflicts and gaps, generates migration plan
   - Created scripts README with usage documentation
   - Tested on current project structure (10 epics, 46 stories, 335 tasks detected)
+  - **Discrete task:** [`T01-br006-detection-analysis-verification-closure.md`](story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md) | **IPP:** [`IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md`](../../../../implementation-cycles/IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md)
   - **Linked BR:** `BR-006-missing-migration-support-pre-existing-kanban.md` (GitHub issue #2)  
   - **Acceptance:** ✅ Criteria 1-4 of BR-006 satisfied and documented.
 
 
 - [x] **E04:S07:T02 – FR-007: Migration utilities and installation modes** ✅ COMPLETE (v0.4.7.2+1)
+  - Task doc: [`T02-fr007-migration-utilities-installation-modes.md`](story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md)
+  - IPP: [`IPP-E04S07T02`](../../../../implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md)
   - Implemented migration utility (`migrate_structure.py`) - creates backups, migrates epics/stories/tasks, preserves forensic markers, supports all installation modes
   - Implemented installation script (`install_kanban_framework.py`) - interactive mode selection, integrates detection/analysis/migration, supports Fresh/Migration/Update/Hybrid modes
   - Updated scripts README with migration utility documentation and integrated workflow

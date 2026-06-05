@@ -1,5 +1,6 @@
 # E07:S06:T15 – Intake Workflow Windsurf Impact Review
 
+**Task ID:** E07:S06:T15  
 **Task:** E07:S06:T15
 **Workflow:** Intake (FR/BR/UXR processing)
 **Review Date:** 2026-03-18

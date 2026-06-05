@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # RW → Kanban Integration Gap Resolution Summary
 
+**Task ID:** E04:S03:T07  
 **Task:** E04:S03:T07 – Address RW → Kanban integration gaps identified in T004  
 **Date:** 2025-12-02  
 **Author:** AI Agent (Auto)  

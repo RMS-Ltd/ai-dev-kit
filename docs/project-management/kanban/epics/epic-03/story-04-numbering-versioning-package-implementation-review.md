@@ -21,21 +21,27 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E03:S04:T01 – Establish expectations baseline for Numbering & Versioning package** - ✅ COMPLETE (v0.3.4.1+1)
+  - Task: [`T01-expectations-baseline`](story-04-numbering-versioning-package-implementation-review/T01-expectations-baseline.md)
   - Task Doc: [`T01-expectations-baseline.md`](story-04-numbering-versioning-package-implementation-review/T01-expectations-baseline.md)
 
 - [x] **E03:S04:T02 – Inventory package components and map to expectations** - ✅ COMPLETE (v0.3.4.2+1)
+  - Task: [`T02-component-inventory`](story-04-numbering-versioning-package-implementation-review/T02-component-inventory.md)
   - Task Doc: [`T02-component-inventory.md`](story-04-numbering-versioning-package-implementation-review/T02-component-inventory.md)
 
 - [x] **E03:S04:T03 – Validate versioning behavior against documented guidance** - ✅ COMPLETE (v0.3.4.3+1)
+  - Task: [`T03-versioning-behavior-validation`](story-04-numbering-versioning-package-implementation-review/T03-versioning-behavior-validation.md)
   - Task Doc: [`T03-versioning-behavior-validation.md`](story-04-numbering-versioning-package-implementation-review/T03-versioning-behavior-validation.md)
 
 - [x] **E03:S04:T04 – Review integrations and dependency alignment** - ✅ COMPLETE (v0.3.4.4+1)
+  - Task: [`T04-integrations-and-dependency-alignment`](story-04-numbering-versioning-package-implementation-review/T04-integrations-and-dependency-alignment.md)
   - Task Doc: [`T04-integrations-and-dependency-alignment.md`](story-04-numbering-versioning-package-implementation-review/T04-integrations-and-dependency-alignment.md)
 
 - [x] **E03:S04:T05 – Create gap log and risk assessment** - ✅ COMPLETE (v0.3.4.5+1)
+  - Task: [`T05-gap-log-and-risk-assessment`](story-04-numbering-versioning-package-implementation-review/T05-gap-log-and-risk-assessment.md)
   - Task Doc: [`T05-gap-log-and-risk-assessment.md`](story-04-numbering-versioning-package-implementation-review/T05-gap-log-and-risk-assessment.md)
 
 - [x] **E03:S04:T06 – Define RC sign-off criteria and remediation tasks** - ✅ COMPLETE (v0.3.4.6+1)
+  - Task: [`T06-rc-sign-off-criteria-and-remediation-tasks`](story-04-numbering-versioning-package-implementation-review/T06-rc-sign-off-criteria-and-remediation-tasks.md)
   - Task Doc: [`T06-rc-sign-off-criteria-and-remediation-tasks.md`](story-04-numbering-versioning-package-implementation-review/T06-rc-sign-off-criteria-and-remediation-tasks.md)
 
 
@@ -66,78 +72,6 @@ For this story, doc-init (`+0`) builds are used for **documentation-only anchors
 
 
 This implementation review (E3:S04) assumes that abstract spaces are established via the `+0` doc-init path, and that all RC readiness checks (T01–T06) evaluate the **functional behavior and integrations** built on top of those anchors.
-
----
-
-## Tasks
-
-### E03:S04:T01 – Establish expectations baseline for Numbering & Versioning package
-
-**Task ID:** E03:S04:T01  
-**Status:** ✅ COMPLETE  
-**Input:** Package README, policy docs, implementation guides  
-**Deliverable:** Expectations baseline document  
-**Approach:** Extract expected behaviors, schemas, and constraints.  
-**Version Anchor:** ✅ COMPLETE (v0.3.4.1+1)
-
-**Acceptance Criteria:**
-- [x] Expectations baseline documented and approved ✅
-- [x] Core operating principles captured ✅
-- [x] Expected versioning schema documented ✅
-- [x] Integration expectations mapped ✅
-- [x] Package composition documented ✅
-- [x] Sources referenced ✅
-
-### E03:S04:T02 – Inventory package components and map to expectations
-
-**Task ID:** E03:S04:T02  
-**Status:** ✅ COMPLETE  
-**Input:** Package directory inventory  
-**Deliverable:** Component map with expected vs actual coverage  
-**Approach:** Map policies, templates, and examples to expectations.  
-**Version Anchor:** ✅ COMPLETE (v0.3.4.2+1)
-
-**Acceptance Criteria:**
-- [x] Package directory fully inventoried ✅
-- [x] All components mapped to expectations ✅
-- [x] Component presence verified ✅
-- [x] Gaps identified and documented ✅
-- [x] Extras identified and documented ✅
-- [x] Component map created ✅
-
-### E03:S04:T03 – Validate versioning behavior against documented guidance
-
-**Task ID:** E03:S04:T03  
-**Status:** ✅ COMPLETE  
-**Input:** Versioning policy and examples  
-**Deliverable:** Behavior validation notes and discrepancies  
-**Approach:** Validate schema rules, edge cases, and guidance consistency.  
-**Version Anchor:** ✅ COMPLETE (v0.3.4.3+1)
-
-**Acceptance Criteria:**
-- [x] Schema rules validated against documented guidance ✅
-- [x] Edge cases validated against documented guidance ✅
-- [x] Guidance consistency checked across policy documents ✅
-- [x] Implementation validated against documented rules ✅
-- [x] Validation notes and discrepancies documented ✅
-
-### E03:S04:T04 – Review integrations and dependency alignment
-
-**Input:** Integration references across Kanban and RW  
-**Deliverable:** Integration alignment report  
-**Approach:** Verify usage patterns across frameworks.
-
-### E03:S04:T05 – Create gap log and risk assessment
-
-**Input:** Findings from T01–T04  
-**Deliverable:** Gap log with severity and risk notes  
-**Approach:** Consolidate gaps and categorize by RC impact.
-
-### E03:S04:T06 – Define RC sign-off criteria and remediation tasks
-
-**Input:** Gap log and expected behaviors  
-**Deliverable:** RC sign-off checklist and remediation task list  
-**Approach:** Define minimum bar for RC and backlog tasks.
 
 ---
 

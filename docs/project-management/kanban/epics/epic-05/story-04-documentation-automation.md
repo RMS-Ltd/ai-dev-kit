@@ -23,8 +23,11 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E05:S04:T01 – Create automated documentation update scripts** - ✅ COMPLETE (v0.5.4.1+1 – Documentation update scripts created: version references, cross-references, metadata, link validation, documentation sync)
+  - Task: [`T01-create-automated-documentation-update-scripts`](story-04-documentation-automation/T01-create-automated-documentation-update-scripts.md)
 - [ ] **E05:S04:T02 – Implement documentation synchronization workflows** - TODO
+  - Task: [`T02-implement-documentation-synchronization-workflows`](story-04-documentation-automation/T02-implement-documentation-synchronization-workflows.md)
 - [ ] **E05:S04:T03 – Build documentation change detection and notification** - TODO
+  - Task: [`T03-build-documentation-change-detection-and-notification`](story-04-documentation-automation/T03-build-documentation-change-detection-and-notification.md)
 
 ---
 
@@ -37,71 +40,6 @@ This story automates documentation maintenance tasks to reduce manual effort and
 ## Goal
 
 Automate documentation maintenance tasks to reduce manual effort and improve consistency.
-
----
-
-## Tasks
-
-### E05:S04:T01 – Create automated documentation update scripts
-
-**Status:** ✅ COMPLETE (v0.5.4.1+1)
-
-**Input:** Documentation update triggers  
-**Deliverable:** Automated documentation update scripts  
-**Dependencies:** E05:S01:T03  
-**Blocker:** None
-
-**Approach:**
-1. ✅ Identify documentation update automation opportunities
-2. ✅ Create scripts for automated updates
-3. ✅ Integrate scripts into workflows
-4. ✅ Document script usage and maintenance
-
-**Deliverables:**
-- `update_version_references.py` - Updates version references across documentation
-- `update_cross_references.py` - Updates cross-references when files are moved/renamed
-- `update_metadata.py` - Updates metadata fields (last_updated, version, etc.)
-- `validate_links.py` - Validates and fixes broken links
-- `sync_documentation.py` - Synchronizes documentation between locations
-- `README.md` - Comprehensive documentation for all scripts
-- `integration_guide.md` - Workflow integration guide
-
-**Implementation Details:**
-- Created 5 core documentation update scripts
-- Scripts support dry-run mode for safe testing
-- Scripts integrate with rw-config.yaml for configuration
-- Scripts can be integrated into Release Workflow, UKW, and CI/CD pipelines
-- Comprehensive documentation and integration guide provided
-
----
-
-### E05:S04:T02 – Implement documentation synchronization workflows
-
-**Input:** Documentation maintenance policies  
-**Deliverable:** Documentation synchronization workflow  
-**Dependencies:** E5:S01 (Documentation Maintenance Framework)  
-**Blocker:** None
-
-**Approach:**
-1. Identify documentation synchronization needs
-2. Design synchronization workflows
-3. Implement synchronization processes
-4. Document synchronization procedures
-
----
-
-### E05:S04:T03 – Build documentation change detection and notification
-
-**Input:** Documentation health monitoring  
-**Deliverable:** Change detection and notification system  
-**Dependencies:** E05:S02:T03  
-**Blocker:** None
-
-**Approach:**
-1. Design change detection mechanisms
-2. Create notification systems
-3. Implement change tracking
-4. Document change detection procedures
 
 ---
 

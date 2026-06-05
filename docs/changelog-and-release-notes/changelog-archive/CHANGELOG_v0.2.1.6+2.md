@@ -1,115 +1,29 @@
 # Changelog: v0.2.1.6+2
 
-**Release Date:** 2025-12-09 01:30:00 UTC  
-**Epic:** Epic 2 - Workflow Management Framework  
-**Story:** Story 1 - RW Agent Execution & Docs  
-**Task:** Task 6 - Fix changelog validator ordering bug  
-**Version:** 0.2.1.6+2
+**Release Date:** 2026-06-05 19:15:00 UTC  
+**Version:** v0.2.1.6+2  
+**Epic:** E2 (Workflow Management Framework)  
+**Story:** S1 (RW Agent Execution and Docs)  
+**Task:** T06 (validate_version_bump story detection — BR-001)  
+**Build:** +2
 
 ---
 
 ## Summary
 
-This release includes enhancements to the canonical epics documentation in the Kanban framework package, additional work on Epic 4 Story 2 Task 6 (GitHub submission integration), and continuation of Epic 2 Story 1 Task 6 work.
+RW Step 7 follow-up: four-surface kanban reconciliation for **E02:S01:T06** / **BR-001** (deferred from v0.2.1.6+1).
 
 ---
 
 ## Changes
 
-### Epic 2: Workflow Management Framework
-
-#### Story 1: RW Agent Execution & Docs
-
-**Task 6: Fix changelog validator ordering bug** (Build 2)
-- Continued work on changelog validator ordering bug fix
-- Additional refinements and documentation updates
+- `kboard.md` — pruned **E02:S01:T06** C-band row
+- `kanban-completed.md` — ledger entry
+- **BR-001** — status FIXED; implementing task link to discrete task doc
 
 ---
 
-### Epic 4: Kanban Framework
+## Related
 
-#### Story 2: FR/BR Intake to Tasks
-
-**Task 6: GitHub submission integration for FR, BR, and UXR** (New Task Created)
-- Created Feature Request FR-004 for GitHub submission integration
-- Added task E4:S02:T06 to Story 2
-- Documented requirements for GitHub Issues, Discussions, and Issue Forms integration
-- Defined acceptance criteria and implementation approach
-
-#### Story 5: Canonical Epics for Kanban Framework
-
-**Enhancements to Canonical Epics Documentation:**
-- Enhanced `CANONICAL_EPICS.md` with detailed descriptions, typical stories, and integration points
-- Added comprehensive usage guidance with customization examples
-- Expanded "How to Use Canonical Epics" section with adoption steps
-- Enhanced "Adding New Canonical Epics" section with detailed process and example
-
-**New Example Documents:**
-- Created `epic-05-FR-Implementation-Example.md` - Complete example Epic 5 document
-- Created `epic-06-BR-Implementation-Example.md` - Complete example Epic 6 document
-- Both examples demonstrate canonical epic structure with 5 typical stories each
-
-**New Template:**
-- Created `CANONICAL_STORIES_FR_BR.md` - Canonical story patterns guide for Epic 5 and Epic 6
-- Documents typical stories, tasks, deliverables, and integration points for FR/BR Implementation epics
-
-**Package Updates:**
-- Updated `packages/frameworks/kanban/README.md` with references to new examples and templates
-- Enhanced package documentation completeness
-
----
-
-## Package Version Updates
-
-### Kanban Framework Package
-- **Version:** 1.0.0 → 1.1.0 (MINOR bump)
-- **Reason:** New examples, enhanced documentation, new template
-- **Changes:**
-  - New example Epic 5 and Epic 6 documents
-  - New CANONICAL_STORIES_FR_BR.md template
-  - Enhanced CANONICAL_EPICS.md with detailed guidance
-  - Updated README with new references
-
----
-
-## Files Changed
-
-### Modified Files
-- `src/fynd_deals/version.py` - Bumped BUILD from +1 to +2
-- `docs/project-management/kanban/epics/epic-02/epic-02.md` - Updated with Task 6 status
-- `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md` - Updated with Task 6 status
-- `docs/project-management/kanban/epics/epic-04/epic-04.md` - Updated with Story 2 Task 6 and Story 5 enhancements
-- `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md` - Added Task 6
-- `packages/frameworks/kanban/README.md` - Added references to new examples and templates
-- `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` - Enhanced with detailed descriptions and guidance
-- `CHANGELOG.md` - Updated with new release entry
-
-### New Files
-- `docs/project-management/kanban/fr-br/FR-004-github-submission-for-fr-br-uxr.md` - Feature Request for GitHub submission
-- `docs/project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md` - Bug Report for changelog validator
-- `packages/frameworks/kanban/examples/epic-05-FR-Implementation-Example.md` - Example Epic 5 document
-- `packages/frameworks/kanban/examples/epic-06-BR-Implementation-Example.md` - Example Epic 6 document
-- `packages/frameworks/kanban/templates/CANONICAL_STORIES_FR_BR.md` - Canonical stories guide for FR/BR Implementation
-
----
-
-## Related Work
-
-- **Epic 2 Story 1 Task 6:** Fix changelog validator ordering bug
-- **Epic 4 Story 2 Task 6:** GitHub submission integration for FR, BR, and UXR
-- **Epic 4 Story 5:** Canonical Epics for Kanban Framework (enhancements)
-
----
-
-## Next Steps
-
-- Continue implementation of Epic 4 Story 2 Task 6 (GitHub submission integration)
-- Address changelog validator ordering bug (Epic 2 Story 1 Task 6)
-- Consider additional enhancements to canonical epics documentation based on usage feedback
-
----
-
-**Generated by:** Release Workflow (RW)  
-**Workflow Version:** 1.4.0  
-**Agent:** Auto
-
+- [BR-001](../../project-management/kanban/fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)
+- Prior: [CHANGELOG_v0.2.1.6+1.md](CHANGELOG_v0.2.1.6+1.md)

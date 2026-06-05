@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Package Dependency Matrix
 
+**Task ID:** E01:S02:T03  
 **Task:** E01:S02:T03 – Create package dependency matrix  
 **Date:** 2025-12-02  
 **Status:** ✅ COMPLETE

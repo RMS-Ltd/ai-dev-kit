@@ -1,0 +1,26 @@
+{
+  "contract": "FR-097 structure-prune — merge dev into T14 branch kboard reconcile",
+  "release_scope": {
+    "task_id": "E02:S11:T14",
+    "version_string": "v0.2.11.14+2"
+  },
+  "evidence_mode": "structure_prune",
+  "archived": {
+    "kboard": ["E02:S11:T14", "E02:S11:T13", "E02:S01:T06"],
+    "kanban_completed": ["E02:S11:T14"]
+  },
+  "rows": {
+    "E02:S11:T14": {
+      "allowed": true,
+      "reason": "COMPLETE v0.2.11.14+2 — BR-052; kboard prune at release"
+    },
+    "E02:S11:T13": {
+      "allowed": true,
+      "reason": "Stale on T14 branch; archived dev v0.2.11.13+3"
+    },
+    "E02:S01:T06": {
+      "allowed": true,
+      "reason": "Stale on T14 branch; archived dev v0.2.1.6+2"
+    }
+  }
+}

@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 004 – Enhance DO Phase (Improve commit message guidance and execution docs)
 
+**Task ID:** E02:S02:T04  
 **Task:** E02:S02:T04  
 **Status:** TODO  
 **Priority:** MEDIUM  

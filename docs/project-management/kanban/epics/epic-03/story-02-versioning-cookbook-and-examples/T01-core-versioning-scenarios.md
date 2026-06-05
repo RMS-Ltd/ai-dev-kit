@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Core Versioning Scenarios
 
+**Task ID:** E03:S02:T01  
 **Task:** E03:S02:T01 – Define core versioning scenarios for the cookbook  
 **Date:** 2025-12-03  
 **Status:** ✅ COMPLETE  

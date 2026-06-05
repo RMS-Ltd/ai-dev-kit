@@ -22,21 +22,27 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board** ✅ COMPLETE (v0.4.13.1+1)
+  - Task: [`T01-kanban-board-moscow-prioritized-task-view`](story-13-kanban-board-moscow-prioritized-task-view/T01-kanban-board-moscow-prioritized-task-view.md)
   - Task: [`T01-kanban-board-moscow-prioritized-task-view.md`](story-13-kanban-board-moscow-prioritized-task-view/T01-kanban-board-moscow-prioritized-task-view.md)
 
 - [x] **E04:S13:T02 – Update Kanban governance policy** ✅ COMPLETE (v0.4.13.2+1)
+  - Task: [`T02-update-kanban-governance-policy`](story-13-kanban-board-moscow-prioritized-task-view/T02-update-kanban-governance-policy.md)
   - Task: [`T02-update-kanban-governance-policy.md`](story-13-kanban-board-moscow-prioritized-task-view/T02-update-kanban-governance-policy.md)
 
 - [x] **E04:S13:T03 – Update Kanban board template** ✅ COMPLETE (v0.4.13.3+1)
+  - Task: [`T03-update-kanban-board-template`](story-13-kanban-board-moscow-prioritized-task-view/T03-update-kanban-board-template.md)
   - Task: [`T03-update-kanban-board-template.md`](story-13-kanban-board-moscow-prioritized-task-view/T03-update-kanban-board-template.md)
 
 - [x] **E04:S13:T04 – Assess system impacts** ✅ COMPLETE (v0.4.13.4+3)
+  - Task: [`T04-assess-system-impacts`](story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
   - Task: [`T04-assess-system-impacts.md`](story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
 
 - [x] **E04:S13:T05 – Update Kanban package** ✅ COMPLETE (v0.4.13.5+1)
+  - Task: [`T05-update-kanban-package`](story-13-kanban-board-moscow-prioritized-task-view/T05-update-kanban-package.md)
   - Task: [`T05-update-kanban-package.md`](story-13-kanban-board-moscow-prioritized-task-view/T05-update-kanban-package.md)
 
 - [x] **E04:S13:T06 – Update other affected packages** ✅ COMPLETE (v0.4.13.6+1)
+  - Task: [`T06-update-other-affected-packages`](story-13-kanban-board-moscow-prioritized-task-view/T06-update-other-affected-packages.md)
   - Task: [`T06-update-other-affected-packages.md`](story-13-kanban-board-moscow-prioritized-task-view/T06-update-other-affected-packages.md)
 
 - [x] **E04:S13:T07 – Kanban and FBU state icons for MoSCOW rows (UXR-012)** ✅ COMPLETE (v0.4.13.7+2) — [Task doc](story-13-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) | [UXR-012](../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
@@ -69,130 +75,6 @@ Enhance the Kanban board to be more useful by:
 - [ ] Update Kanban board template in framework package
 - [ ] Assess and document impact on other systems (RW, validators, etc.)
 - [ ] Update Kanban package and affected packages after user verification
-
----
-
-## Tasks
-
-### E04:S13:T01 – Design and implement MoSCOW prioritized task view in Kanban board
-
-**Input:** Current Kanban board structure, Kanban governance policy, user requirements  
-**Deliverable:** Enhanced Kanban board with MoSCOW prioritized task view, updated policy and template, impact assessment document  
-**Dependencies:** None  
-**Blocker:** None  
-**Parallel Development Candidacy:** Safe (documentation and structure changes)
-
-**Status:** ✅ COMPLETE
-
-**Task Document:** [`T01-kanban-board-moscow-prioritized-task-view.md`](story-13-kanban-board-moscow-prioritized-task-view/T01-kanban-board-moscow-prioritized-task-view.md)
-
-**Approach:**
-1. Analyze current Kanban board structure (`kboard.md`)
-2. Design new structure with MoSCOW sections before story checklist
-3. Implement chronological ordering logic (most recently updated at top)
-4. Update Kanban board document with new structure
-
----
-
-### E04:S13:T02 – Update Kanban governance policy
-
-**Input:** Enhanced Kanban board structure (T01), current Kanban governance policy  
-**Deliverable:** Updated Kanban governance policy documents (canonical and local)  
-**Dependencies:** T01  
-**Blocker:** None  
-**Parallel Development Candidacy:** Blocked (depends on T01)
-
-**Status:** ✅ COMPLETE
-
-**Task Document:** [`T02-update-kanban-governance-policy.md`](story-13-kanban-board-moscow-prioritized-task-view/T02-update-kanban-governance-policy.md)
-
-**Approach:**
-1. Review enhanced board structure from T01
-2. Update canonical Kanban governance policy
-3. Update local Kanban governance policy
-4. Document MoSCOW priority levels and chronological ordering rules
-
----
-
-### E04:S13:T03 – Update Kanban board template
-
-**Input:** Enhanced Kanban board structure (T01), updated Kanban governance policy (T02)  
-**Deliverable:** Updated Kanban board template in framework package  
-**Dependencies:** T01, T02  
-**Blocker:** None  
-**Parallel Development Candidacy:** Blocked (depends on T01 and T02)
-
-**Status:** ✅ COMPLETE
-
-**Task Document:** [`T03-update-kanban-board-template.md`](story-13-kanban-board-moscow-prioritized-task-view/T03-update-kanban-board-template.md)
-
-**Approach:**
-1. Locate or create Kanban board template in framework package
-2. Update template to include MoSCOW section structure
-3. Include example format and usage instructions
-4. Reference updated Kanban governance policy
-
----
-
-### E04:S13:T04 – Assess system impacts
-
-**Input:** Enhanced Kanban board structure (T01)  
-**Deliverable:** System impact assessment document, RW doc-init detection bug fix  
-**Dependencies:** T01  
-**Blocker:** None  
-**Parallel Development Candidacy:** Blocked (depends on T01)
-
-**Status:** ✅ COMPLETE
-
-**Task Document:** [`T04-assess-system-impacts.md`](story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md)
-
-**Approach:**
-1. Identify all systems that interact with Kanban
-2. Analyze impact for each system (RW, validators, installers, etc.)
-3. Document required updates for each affected system
-4. Create impact assessment document
-5. **NEW:** Identified and fixed RW doc-init detection bug (story + task docs created together scenario)
-
----
-
-### E04:S13:T05 – Update Kanban package
-
-**Input:** All previous task deliverables, user verification  
-**Deliverable:** Updated Kanban package with new board structure  
-**Dependencies:** T01, T02, T03, T04, **User verification**  
-**Blocker:** None  
-**Parallel Development Candidacy:** Blocked (depends on all previous tasks and user verification)
-
-**Status:** ✅ COMPLETE
-
-**Task Document:** [`T05-update-kanban-package.md`](story-13-kanban-board-moscow-prioritized-task-view/T05-update-kanban-package.md)
-
-**Approach:**
-1. Verify user verification obtained
-2. Update Kanban board template in package (from T03)
-3. Update Kanban governance policy in package (from T02)
-4. Update package documentation
-5. Verify package consistency
-
----
-
-### E04:S13:T06 – Update other affected packages
-
-**Input:** System impact assessment (T04), user verification  
-**Deliverable:** Updated affected packages (RW, validators, installers, etc.)  
-**Dependencies:** T01, T02, T03, T04, T05, **User verification**  
-**Blocker:** None  
-**Parallel Development Candidacy:** Blocked (depends on all previous tasks and user verification)
-
-**Status:** ✅ COMPLETE
-
-**Task Document:** [`T06-update-other-affected-packages.md`](story-13-kanban-board-moscow-prioritized-task-view/T06-update-other-affected-packages.md)
-
-**Approach:**
-1. Review system impact assessment from T04
-2. Update each affected package according to impact assessment
-3. Update package documentation if needed
-4. Verify all required updates are complete
 
 ---
 

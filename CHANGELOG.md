@@ -9,11 +9,163 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.9.13+4] - 05-06-26
+## [0.2.16.4+32] - 05-06-26
 
-E05:S09:T13 — **BR-090 FIXED:** post-merge CI evidence (Actions 26992999149); V-band prune; intake ledger. SemVer **v0.4.909+4**.
+E02:S16:T04 — **Kanban hygiene (RW -k):** FR-016 Task ID headers + E01:S01 backfill; E02:S09/S11/S15 story closure. SemVer **v0.4.933+32**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+4.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+32.md)
+
+---
+
+## [0.4.11.7+10] - 05-06-26
+
+E04:S11:T07 — **Wave 3 Epics 1 & 3:** FR-016 discrete task migration (11 stories, ~35 new task docs). SemVer **v0.4.926+10**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+10.md)
+
+---
+
+## [0.4.11.7+9] - 05-06-26
+
+E04:S11:T07 — **Wave 3 Epic 4:** FR-016 discrete task migration (19 stories, ~26 new task docs). SemVer **v0.4.925+9**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+9.md)
+
+---
+
+## [0.4.11.7+8] - 05-06-26
+
+E04:S11:T07 — **Wave 3 Epic 2:** FR-016 discrete task migration (13 stories, ~90 task docs). SemVer **v0.4.924+8**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+8.md)
+
+---
+
+## [0.4.11.7+7] - 05-06-26
+
+E04:S11:T07 — **Wave 2 pilot:** `migrate_story.py`; E04:S11 T00–T06 + E06:S07 T00–T03 discrete task docs. SemVer **v0.4.923+7**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+7.md)
+
+---
+
+## [0.2.1.6+2] - 05-06-26
+
+E02:S01:T06 — **RW Step 7:** kboard/BR-001 four-surface reconciliation (deferred from +1). SemVer **v0.4.922+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.6+2.md)
+
+---
+
+## [0.2.1.6+1] - 05-06-26
+
+E02:S01:T06 — **BR-001:** find_story_file path/Code-field detection. SemVer **v0.4.922+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.6+1.md)
+
+---
+
+## [0.2.1.24+2] - 05-06-26
+
+E02:S01:T24 — **BR-097 Step 12:** `push_rw_release.py` scoped tag push; forbid `git push --tags`. SemVer **v0.4.922+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.24+2.md)
+
+---
+
+## [0.2.16.4+31] - 05-06-26
+
+E02:S16:T04 — **UKW -c:** 14 doc-terminal C-band rows archived from `kboard.md`; kanban-completed ledger updated. SemVer **v0.4.922+31**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+31.md)
+
+---
+
+## [0.4.11.7+6] - 05-06-26
+
+E04:S11:T07 — **Wave 1 tooling:** `extract_embedded_tasks`, `generate_task_doc`, `update_story_refs`, `validate_migration` + unit tests T1–T8. SemVer **v0.4.921+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+6.md)
+
+---
+
+## [0.4.11.7+5] - 05-06-26
+
+E04:S11:T07 — **Wave 0 catalog:** Embedded/discrete task census (417 / 301); migration plan §1.1 filled. SemVer **v0.4.920+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+5.md)
+
+---
+
+## [0.4.11.7+4] - 05-06-26
+
+E04:S11:T07 — **Dev merge consolidation:** Five parallel E04 task branches merged; SemVer tag **v0.4.914** (BR-097 collision recovery). SemVer **v0.4.914+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+4.md)
+
+---
+
+## [0.4.11.7+3] - 05-06-26
+
+E04:S11:T07 — **FR-016 IPW:** Consolidated IPP for embedded-to-discrete Task migration (~784 tasks); phased hybrid plan, test design, ADR matrix; task wired `IN PROGRESS`. SemVer **v0.4.911+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+3.md)
+
+---
+
+## [0.4.6.6+4] - 05-06-26
+
+E04:S06:T06 — **BR-005 Fix 1 verification (BUILD +4):** SemVer tag collision recovery; primary tag **v0.4.913**. SemVer **v0.4.913+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.6.6+4.md)
+
+---
+
+## [0.4.7.2+2] - 05-06-26
+
+E04:S07:T02 — **FR-007 verification closure:** IPP + discrete task doc; pytest re-verification (20 passed); kboard four-surface reconciliation. SemVer **v0.4.912+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.7.2+2.md)
+
+---
+
+## [0.4.7.1+1] - 05-06-26
+
+E04:S07:T01 — **BR-006 verification closure:** criteria 1–4 verified; `analyze_structure.py` NameError fix; IPP + discrete task doc; `kboard` drift reconciled. SemVer **v0.4.911+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.7.1+1.md)
+
+---
+
+## [0.4.6.6+2] - 05-06-26
+
+E04:S06:T06 — **BR-005 Fix 1 verification (BUILD +2):** SemVer tag collision recovery (`v0.4.911` pre-existed). SemVer **v0.4.912+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.6.6+2.md)
+
+---
+
+## [0.4.6.6+1] - 05-06-26
+
+E04:S06:T06 — **BR-005 Fix 1 verification:** CANONICAL_EPICS.md gap closure confirmed; discrete task doc + IPP; kanban four-surface reconciliation. SemVer **v0.4.911+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.6.6+1.md)
+
+---
+
+## [0.4.9.1+1] - 05-06-26
+
+E04:S09:T01 — **BR-007** verification closure: confirm installation bug fixes (T01–T04); fix `high_similarity_matches` NameError in `analyze_structure.py`; FBU **FIXED**; kboard prune. SemVer **v0.4.911+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.9.1+1.md)
+
+---
+
+## [0.2.16.4+30] - 05-06-26
+
+E02:S16:T04 — **UKW -c** V-band prune: **FR-106** IMPLEMENTED, **BR-082**/**BR-088** FIXED; operator verification closure. SemVer **v0.4.910+30**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+30.md)
 
 ---
 

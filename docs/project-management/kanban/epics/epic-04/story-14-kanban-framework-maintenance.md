@@ -21,9 +21,11 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E04:S14:T01 – Update packaged RW to handle UKW context and perpetual tasks** ✅ COMPLETE (v0.4.14.1+1)
+  - Task: [`T01-planning-spec-tests-impl`](story-14-kanban-framework-maintenance/T01-planning-spec-tests-impl.md)
   - Task: [`T01-planning-spec-tests-impl.md`](story-14-kanban-framework-maintenance/T01-planning-spec-tests-impl.md)
 
 - [x] **E04:S14:T02 – Restore RC review planning artifacts** ✅ COMPLETE (v0.4.14.2+1)
+  - Task: [`T02-restore-rc-review-artifacts`](story-14-kanban-framework-maintenance/T02-restore-rc-review-artifacts.md)
   - Task: [`T02-restore-rc-review-artifacts.md`](story-14-kanban-framework-maintenance/T02-restore-rc-review-artifacts.md)
 
 - [x] **E04:S14:T03 – Add Missing Implementation Cycle Workflow (ICW)** ✅ COMPLETE (v0.4.14.3+1)
@@ -45,57 +47,6 @@ This story tracks ongoing maintenance and updates to the Kanban Framework packag
 ## Goal
 
 Ensure the Kanban Framework package remains current, well-maintained, and properly integrated with other ADK frameworks. Address maintenance issues, update documentation, and implement framework improvements as needed.
-
----
-
-## Tasks
-
-### E04:S14:T01 – Update packaged RW to handle UKW context and perpetual tasks
-
-**Status:** TODO  
-**Priority:** HIGH  
-**Dependencies:** None  
-**Estimated Effort:** Medium  
-**Version:** v0.4.14.1+0
-
-**Input:** 
-- Packaged RW framework (`packages/frameworks/workflow-mgt/`)
-- UKW context detection logic (from `.cursorrules`)
-- Perpetual task pattern (from E06:S06:T08)
-
-**Deliverable:** Updated packaged RW with UKW context detection and perpetual task support
-
-**Approach:**
-1. Update packaged RW Step 2 (Bump Version) to detect UKW context
-2. Add auto-attribution logic for UKW releases (to perpetual task)
-3. Add perpetual task flag checking for build warning suppression
-4. Update RW execution guide documentation
-5. Update RW YAML workflow definition if needed
-6. Test UKW context detection and perpetual task handling
-
-**Acceptance Criteria:**
-- [ ] Packaged RW Step 2 detects UKW context (user ran "UKW" then "RW")
-- [ ] UKW releases auto-attributed to perpetual task (E06:S06:T08 pattern)
-- [ ] Perpetual task flag (`perpetual_task: true`) checked in RW Step 2
-- [ ] Build warning suppression works for perpetual tasks
-- [ ] RW execution guide updated with UKW attribution pattern
-- [ ] RW workflow YAML updated if needed
-- [ ] Documentation reflects perpetual task pattern
-
-### E04:S14:T02 – Restore RC review planning artifacts
-
-**Task ID:** E04:S14:T02  
-**Status:** COMPLETE  
-**Scope:** Restore RC review planning artifacts and re-align Kanban references.  
-**Input:** Stashed RC review files, kanban board, and epic story lists.  
-**Deliverable:** RC review artifacts restored and committed under this task.  
-**Version Anchor:** ✅ COMPLETE (v0.4.14.2+1)
-
-**Acceptance Criteria:**
-- [x] Epic 10 and Epic 11 docs restored.
-- [x] Package review story docs restored for Epics 2, 3, and 8.
-- [x] Kanban board reflects restored epics/stories.
-- [x] Changes committed under this task.
 
 ---
 

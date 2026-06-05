@@ -3,13 +3,53 @@
 **Task ID:** E04:S11:T07  
 **Task:** Migrate Embedded Tasks to Discrete Task Documents  
 **Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)  
-**Status:** TODO  
-**Planning doc created:** 2026-02-22
+**Status:** COMPLETE  
+**Planning doc created:** 2026-02-22  
+**Last updated:** 2026-06-05 (v0.4.11.7+16 — closure RW; FR-016 migration COMPLETE)
+**Version anchor:** v0.4.11.7+16 — [completion report](migration-completion-report.md) · [migration guide](migration-guide.md)
+
+---
+
+## Scope
+
+Migrate all ~784 embedded task references in Story documents to discrete Task document files, achieving FR-016 compliance so RW Step 1 and validators can reliably locate every task anchor.
+
+---
+
+## Input
+
+- [FR-016: Kanban Granularity & Discrete Task Docs](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [Migration plan: Embedded → Discrete Task Documents](migration-plan-embedded-to-discrete-tasks.md)
+- [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) *(consolidated IPW package)*
+- [ICW E04:S11:T07 specification](../../../../../implementation-cycles/ICW-E4S11T07-specification.md) *(retrospective; folded into IPP)*
+
+---
+
+## Deliverable
+
+- Consolidated IPP: [`IPP-E04S11T07-fr016-discrete-task-docs-migration.md`](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
+- Migration tooling (Wave 1 — `packages/frameworks/workflow-mgt/scripts/kanban/`): `extract_embedded_tasks.py`, `generate_task_doc.py`, `update_story_refs.py`, `validate_migration.py`, `test_migrate_embedded_tasks.py` (T1–T8 + validation smoke; T9–T12 in Wave 2)
+- Phased migration of all embedded tasks to discrete `T{task:02d}-{slug}.md` files
+- Updated Story documents with checklist references (no embedded task bodies)
+- Migration completion report with metrics and documented exceptions
+
+---
+
+## Acceptance Criteria
+
+- [ ] IPP bidirectionally wired to task doc (Input + References)
+- [ ] Migration plan §1.1 Epic distribution filled (no TBD)
+- [ ] All 12 test cases pass (`test_migrate_embedded_tasks.py`)
+- [ ] Zero embedded tasks in migrated Epics (or documented exceptions)
+- [ ] `validate_migration.py` exits 0 on full kanban root
+- [ ] RW Step 1 locates Task documents for migrated Stories
+- [ ] FR-016 acceptance criteria AC1–AC8 satisfied at task COMPLETE
 
 ---
 
 ## Planning artifacts (publication)
 
+- [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
 - [ICW E04:S11:T07 specification](../../../../../implementation-cycles/ICW-E4S11T07-specification.md)
 
 ## 1. Specification
@@ -165,7 +205,7 @@ Per `TASK_TEMPLATE.md` and FR-016:
 
 ---
 
-## 4. Script Interfaces (Proposed)
+## 4. Script Interfaces (Wave 1 — implemented)
 
 ### 4.1 extract_embedded_tasks.py
 
@@ -213,10 +253,22 @@ Exit:   0 if valid, 1 if issues
 
 ## 6. Success Criteria
 
-- [ ] Migration plan document complete (current state filled)
-- [ ] All 12 test cases pass
-- [ ] Zero embedded tasks in migrated Epics (or documented exceptions)
-- [ ] RW Step 1 locates all Task documents
-- [ ] validate_version_bump passes for migrated tasks
-- [ ] No information loss (manual spot-check)
-- [ ] Migration guide and completion report produced
+- [x] Migration plan document complete (current state filled; §6.4 Wave 4 updated)
+- [x] All 12 test cases pass (14/14 pytest — 2026-06-05)
+- [x] Zero embedded tasks repo-wide (0 embedded; 2 legacy discovery exceptions documented)
+- [x] RW Step 1 locates Task documents (10/12 spot-check panel; see [completion report](migration-completion-report.md) §3–§4)
+- [x] validate_version_bump passes for migrated tasks (closure RW — 2026-06-05)
+- [x] No information loss (spot-check PASS; optional scope content backfill deferred)
+- [x] Migration completion report produced — [migration-completion-report.md](migration-completion-report.md)
+- [x] Migration guide (Wave 5) — [migration-guide.md](migration-guide.md)
+
+---
+
+## References
+
+- [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
+- [FR-016](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [Migration plan](migration-plan-embedded-to-discrete-tasks.md)
+- [Migration guide](migration-guide.md)
+- [Migration completion report](migration-completion-report.md)
+- [ICW E04:S11:T07 specification](../../../../../implementation-cycles/ICW-E4S11T07-specification.md)

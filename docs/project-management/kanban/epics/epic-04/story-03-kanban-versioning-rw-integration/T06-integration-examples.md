@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Integration Examples and Edge Cases
 
+**Task ID:** E04:S03:T06  
 **Task:** E04:S03:T06 – Document integration examples and edge cases  
 **Date:** 2025-12-02  
 **Author:** AI Agent (Auto)  

@@ -81,9 +81,9 @@ It defines how the repo is structured, how versioning works for the dev kit itse
 Define and implement how the dev kit uses `RC.EPIC.STORY.TASK+BUILD`, and how RW interprets versions and tasks when run in this repo.
 
 **Tasks:**
-- [x] E01:S01:T01 – Create `dev-kit-versioning-policy.md` ✅ COMPLETE (v0.1.1.1+1)  
-- [x] E01:S01:T02 – Align `version.py` and CHANGELOG with dev-kit policy ✅ COMPLETE (v0.1.1.1+1)  
-- [x] E01:S01:T03 – Update RW docs to distinguish dev-kit vs external examples ✅ COMPLETE (completed in E02:S01:T02 and E02:S01:T03)  
+- [x] **E01:S01:T01** – Create `dev-kit-versioning-policy.md` ✅ COMPLETE (v0.1.1.1+1) — [Task](story-01-vibe-dev-kit-kanban-and-versioning/T01-create-dev-kit-versioning-policy.md)
+- [x] **E01:S01:T02** – Align `version.py` and CHANGELOG with dev-kit policy ✅ COMPLETE (v0.1.1.1+1) — [Task](story-01-vibe-dev-kit-kanban-and-versioning/T02-align-version-py-and-changelog.md)
+- [x] **E01:S01:T03** – Update RW docs to distinguish dev-kit vs external examples ✅ COMPLETE — [Task](story-01-vibe-dev-kit-kanban-and-versioning/T03-update-rw-docs-dev-kit-vs-external.md)  
 
 **Acceptance Criteria:**
 - [x] Dev-kit versioning policy exists and is referenced by other docs ✅  

@@ -1,0 +1,35 @@
+{
+  "version_string": "v0.4.11.7+6",
+  "task_id": "E04:S11:T07",
+  "epic": 4,
+  "story": 11,
+  "task": 7,
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md"
+      ]
+    }
+  },
+  "notes": "RW E04:S11:T07 --art Wave 1: migration tooling scripts + unit tests T1–T8."
+}

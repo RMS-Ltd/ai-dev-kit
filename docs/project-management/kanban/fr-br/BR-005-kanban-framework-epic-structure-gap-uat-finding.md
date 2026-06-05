@@ -15,9 +15,11 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (Cursor) acting as user/client  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** ACCEPTED
+**Status:** FIXED (Fix 1 — v0.4.6.6+1; Fix 2–4 DEFER)
 
-**Implementing Task:** [E04:S06:T06](../epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
+**Implementing Task:** [E04:S06:T06](../epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md)
+
+> **Fix 1 closure (v0.4.6.6+1):** CANONICAL_EPICS.md gap verified and kanban reconciled via RW `E04:S06:T06 --art`. Fix 2–4 (epic template batch, installation script, README) remain **DEFER** — tracked as open criteria below.
 
 ---
 

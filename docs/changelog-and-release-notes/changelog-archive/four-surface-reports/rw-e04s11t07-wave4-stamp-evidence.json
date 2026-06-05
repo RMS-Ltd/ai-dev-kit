@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E04:S11:T07": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.4.11.7+15 — Wave 4 validation release; completion report + version anchor on task/story/FR-016/kboard"
+    }
+  }
+}

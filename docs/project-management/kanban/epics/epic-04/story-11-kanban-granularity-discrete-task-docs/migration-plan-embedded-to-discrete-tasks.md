@@ -9,8 +9,8 @@ housekeeping_policy: keep
 # Migration Plan: Embedded Tasks to Discrete Task Documents
 
 **Purpose:** Comprehensive migration plan to convert all embedded tasks (delimited sections in Story documents) to discrete Task documents (separate files)  
-**Status:** DRAFT  
-**Version:** 1.0.0  
+**Status:** APPROVED — migration executed (Wave 5 docs final 2026-06-05)  
+**Version:** 1.1.0  
 **Part of:** E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents  
 **Related:** FR-016: Kanban Granularity & Discrete Task Docs (3-Tier Structure)
 
@@ -20,16 +20,17 @@ housekeeping_policy: keep
 
 This document provides a comprehensive migration plan to convert **784 embedded task references** in Story documents to **discrete Task documents** (separate files), fully implementing the 3-tier Kanban structure as mandated by FR-016.
 
-**Current State:**
-- 784 embedded task references in Story documents
-- 43 discrete Task documents exist (examples)
+**Current State (catalog scan 2026-06-05, Wave 0):**
+- **417** embedded task sections (`##`/`###` headers with `E:S:T` tokens) across **69** Story files
+- **301** discrete Task documents (`T{nn}-*.md`) already on disk
+- Legacy estimate **784** (pre-scan) — superseded; recount used header-boundary detection only
 - Policy mandates discrete Task documents (recommended format)
 
-**Target State:**
-- All tasks have discrete Task documents
-- Story documents reference discrete Task documents
-- Full FR-016 compliance
-- RW Step 1 can reliably locate all Task documents
+**Target State (achieved 2026-06-05):**
+- **636** discrete Task documents (`T*.md`) across all migrated epics
+- **0** embedded task sections in 92 Story files (`validate_migration.py`)
+- Story documents reference discrete Task documents via checklist links
+- RW Step 1 locates Task documents (2 grandfathered exceptions — see [completion report](migration-completion-report.md))
 
 **Migration Approach:**
 - **Hybrid:** Automated extraction with manual review and refinement
@@ -42,21 +43,33 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 
 ### 1.1 Task Distribution
 
-**Embedded Tasks by Epic:**
-- Epic 1: [TBD - to be analyzed]
-- Epic 2: [TBD - to be analyzed]
-- Epic 3: [TBD - to be analyzed]
-- Epic 4: [TBD - to be analyzed]
-- Epic 5: [TBD - to be analyzed]
-- Epic 6: [TBD - to be analyzed]
-- Epic 7+: [TBD - to be analyzed]
+**Embedded task sections by Epic (2026-06-05 scan):**
 
-**Total:** 784 embedded task references across all Epics
+| Epic | Embedded sections | Discrete `T*.md` files | Notes |
+|------|-------------------|------------------------|-------|
+| E01 | 21 | 17 | Core framework |
+| E02 | 93 | 61 | Largest embedded count |
+| E03 | 34 | 12 | Versioning framework |
+| E04 | 86 | 54 | Host epic (FR-016) |
+| E05 | 47 | 47 | Parity embedded/discrete |
+| E06 | 38 | 63 | More discrete than embedded |
+| E07 | 30 | 33 | Maintenance / reviews |
+| E08 | 21 | 7 | Tooling & automation |
+| E09 | 0 | 7 | Discrete-only stories |
+| E10 | 12 | 0 | Embedded-only (doc-lifecycle RC) |
+| E11 | 12 | 0 | Embedded-only (debug-path RC) |
+| E21 | 28 | 0 | Project-specific |
+
+**Total (Wave 0):** **417** embedded sections · **301** discrete files · **69** stories with ≥1 embedded section
+
+**Post-migration (Wave 4 validation):** **0** embedded · **636** discrete · **92** stories scanned · **0** broken task links
+
+**Highest-density stories (pilot candidates):** E05:S06 (25), E02:S05 (15), E06:S08 (14), E03:S02 (11), E04:S12 (11), E07:S06 (11)
 
 **Discrete Task Documents:**
-- 43 discrete Task documents exist (examples)
-- Located in various Story directories
-- Follow canonical template structure
+- 301 files under `epics/epic-*/story-*/T*.md`
+- Mix of fully migrated stories (E05:S06, E06:S09) and partial migration (E04:S19)
+- Follow canonical template structure where created via intake/RW
 
 ### 1.2 Task Patterns
 
@@ -190,6 +203,19 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 ---
 
 ## 3. Migration Script Design
+
+### 3.0 Implemented scripts (canonical paths)
+
+| Script | Repository path | Role |
+|--------|-----------------|------|
+| `extract_embedded_tasks.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/extract_embedded_tasks.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/extract_embedded_tasks.py) | Parse embedded task sections |
+| `generate_task_doc.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/generate_task_doc.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/generate_task_doc.py) | Generate discrete `T*.md` |
+| `update_story_refs.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/update_story_refs.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/update_story_refs.py) | Checklist links + strip embedded bodies |
+| `migrate_story.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/migrate_story.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/migrate_story.py) | Orchestrator (Wave 2–3 rollout) |
+| `validate_migration.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/validate_migration.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/validate_migration.py) | Post-migration validation |
+| `test_migrate_embedded_tasks.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/test_migrate_embedded_tasks.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/test_migrate_embedded_tasks.py) | Tests T1–T12 |
+
+**Operator guide:** [migration-guide.md](migration-guide.md)
 
 ### 3.1 Task Extraction
 
@@ -372,14 +398,29 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 ### 6.3 Phase 3: Phased Rollout (Weeks 3-6)
 
 **Tasks:**
-- [ ] Migrate Epic 1 (Project Foundation)
-- [ ] Validate Epic 1 migration
-- [ ] Migrate Epic 2 (Workflow Management)
-- [ ] Validate Epic 2 migration
-- [ ] Migrate Epic 4 (Kanban Framework)
-- [ ] Validate Epic 4 migration
-- [ ] Continue with remaining Epics
-- [ ] Validate after each Epic
+- [x] Migrate Epic 1 (Project Foundation) — Wave 3 **2026-06-05**: 6 stories processed, ~15 new task docs, 0 embedded remaining
+- [x] Validate Epic 1 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [x] Migrate Epic 2 (Workflow Management) — Wave 3 **2026-06-05**: 13 stories, ~90 new task docs, 0 embedded remaining per `validate_migration.py --story`
+- [x] Validate Epic 2 migration — **2026-06-05**: 14/14 `test_migrate_embedded_tasks.py`; 0 broken links; idempotent re-run
+- [x] Migrate Epic 4 (Kanban Framework) — Wave 3 **2026-06-05**: 19 stories processed, ~40 new task docs, 0 embedded remaining per `validate_migration.py`
+- [x] Validate Epic 4 migration — **2026-06-05**: 14/14 `test_migrate_embedded_tasks.py`; 0 broken links; idempotent re-run
+- [x] Migrate Epic 3 (Numbering & Versioning) — Wave 3 **2026-06-05**: 5 stories processed, ~20 new task docs, 0 embedded remaining
+- [x] Validate Epic 3 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [x] Migrate Epic 5 (Documentation) — Wave 3 **2026-06-05**: 9 stories processed, ~47 new task docs, 0 embedded remaining
+- [x] Validate Epic 5 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [x] Migrate Epic 6 (Framework Management) — Wave 3 **2026-06-05**: 9 stories processed, ~34 new task docs, 0 embedded remaining
+- [x] Validate Epic 6 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [x] Migrate Epic 7 (Codebase Maintenance) — Wave 3 **2026-06-05**: 5 stories with embedded tasks (S01–S04, S06); 17 new task docs, 13 reused; 0 embedded remaining
+- [x] Validate Epic 7 migration — **2026-06-05**: 14/14 pytest; 0 broken links; idempotent re-run
+- [x] Migrate Epic 8 (Tooling & Automation) — Wave 3 **2026-06-05**: 5 stories processed; 21 new task docs; 0 embedded remaining
+- [x] Validate Epic 8 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [x] Migrate Epic 10 (Document Lifecycle RC) — Wave 3 **2026-06-05**: 2 stories processed; 12 new task docs; 0 embedded remaining
+- [x] Validate Epic 10 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [x] Migrate Epic 11 (Debug Path RC) — Wave 3 **2026-06-05**: 2 stories processed; 12 new task docs; 0 embedded remaining
+- [x] Validate Epic 11 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [x] Migrate Epic 21 (Internationalization) — Wave 3 **2026-06-05**: 4 stories processed; 28 new task docs; 0 embedded remaining
+- [x] Validate Epic 21 migration — **2026-06-05**: 14/14 pytest; 0 broken links; **repo-wide 0 embedded** per `validate_migration.py`
+- [x] **Wave 3 phased rollout complete** — all canonical + project-specific epics migrated
 
 **Deliverables:**
 - Migrated Epics
@@ -389,17 +430,32 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 ### 6.4 Phase 4: Final Validation and Cleanup (Week 7)
 
 **Tasks:**
-- [ ] Comprehensive validation
-- [ ] Fix any issues
-- [ ] Update documentation
-- [ ] Update examples
-- [ ] Archive migration artifacts
-- [ ] Final report
+- [x] Comprehensive validation — **2026-06-05**: `validate_migration.py` — 92 stories, 0 embedded, 0 broken links
+- [x] RW Step 1 spot-check — **2026-06-05**: 10/12 discovery panel PASS; 2 documented exceptions (legacy headers, E01:S01)
+- [x] Tooling regression — **2026-06-05**: 14/14 pytest; idempotent re-run PASS
+- [x] Fix any issues — **grandfathered** 2 discovery exceptions documented (no bulk header rewrite)
+- [x] Update documentation (Wave 5) — [migration-guide.md](migration-guide.md); script links §3.0
+- [x] Update examples — migration guide §3–§4 command examples
+- [x] Archive migration artifacts — completion report + four-surface reports under `changelog-archive/four-surface-reports/`
+- [x] Final report — [migration-completion-report.md](migration-completion-report.md)
 
 **Deliverables:**
-- Migration completion report
-- Updated documentation
-- Validation report
+- [x] Migration completion report
+- [x] Updated documentation (Wave 5)
+- [x] Validation report (§2–§5 of completion report)
+
+### 6.5 Phase 5: Documentation Finalization (Wave 5)
+
+**Tasks:**
+- [x] Migration plan status → APPROVED (executed); §3.0 script path links
+- [x] Publish [migration-guide.md](migration-guide.md) for operators and adopters
+- [x] FR-016 implementation notes sync (structural migration complete; closure RW pending)
+- [x] T07 success criteria — migration guide + plan finalization
+
+**Deliverables:**
+- [x] Migration guide
+- [x] Migration plan v1.1.0
+- [x] Closure RW — v0.4.11.7+16 — E04:S11:T07 **COMPLETE**
 
 ---
 
@@ -449,30 +505,13 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 
 ## 9. Next Steps
 
-1. **Approve Migration Plan**
-   - Review and approve this migration plan
-   - Allocate resources
-   - Set timeline
-
-2. **Start Phase 1: Preparation**
-   - Complete current state analysis
-   - Develop migration scripts
-   - Test on sample documents
-
-3. **Execute Pilot Migration**
-   - Select pilot Stories
-   - Execute migration
-   - Validate and refine
-
-4. **Execute Phased Rollout**
-   - Migrate Epics in priority order
-   - Validate after each phase
-   - Document progress
-
-5. **Final Validation**
-   - Comprehensive validation
-   - Fix issues
-   - Complete migration
+1. ~~**Approve Migration Plan**~~ — **DONE** (APPROVED 2026-06-05)
+2. ~~**Preparation + tooling**~~ — **DONE** (Waves 0–1)
+3. ~~**Pilot migration**~~ — **DONE** (Wave 2, v0.4.11.7+7)
+4. ~~**Phased rollout**~~ — **DONE** (Wave 3, v0.4.11.7+8–+14)
+5. ~~**Final validation**~~ — **DONE** (Wave 4, v0.4.11.7+15)
+6. ~~**Documentation finalization**~~ — **DONE** (Wave 5 — this guide)
+7. ~~**Closure RW**~~ — **DONE** (v0.4.11.7+16 — E04:S11:T07 COMPLETE)
 
 ---
 
@@ -482,11 +521,13 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 - `packages/frameworks/kanban/templates/TASK_TEMPLATE.md` - Task document template
 - `docs/project-management/rituals/policy/kanban-governance-policy.md` - Kanban governance policy
 - `docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md` - Parent story
+- [migration-guide.md](migration-guide.md) - Operator guide (Wave 5)
+- [migration-completion-report.md](migration-completion-report.md) - Final metrics (Wave 4)
 - `docs/project-management/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md` - Example discrete Task document
 
 ---
 
-**Last Updated:** 2025-12-18  
-**Version:** 1.0.0  
-**Status:** DRAFT
+**Last Updated:** 2026-06-05 (Wave 5)  
+**Version:** 1.1.0  
+**Status:** APPROVED — migration executed; E04:S11:T07 COMPLETE (v0.4.11.7+16)
 

@@ -1,0 +1,33 @@
+{
+  "release_version": "0.4.7.2+2",
+  "task_id": "E04:S07:T02",
+  "fbu_id": "FR-007",
+  "invocation_context": "rw_step_7",
+  "timestamp_utc": "2026-06-05T03:39:04Z",
+  "surfaces": [
+    {
+      "surface": "task_doc",
+      "path": "docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md",
+      "action": "CREATE+COMPLETE",
+      "reason": "Discrete task doc filed; status COMPLETE with forensic marker"
+    },
+    {
+      "surface": "fbu_doc",
+      "path": "docs/project-management/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md",
+      "action": "UPDATE",
+      "reason": "Status IMPLEMENTED; all AC/FR/NFR checkboxes satisfied"
+    },
+    {
+      "surface": "kboard",
+      "path": "docs/project-management/kanban/kboard.md",
+      "action": "PRUNE",
+      "reason": "Removed stale C-band TODO row for E04:S07:T02 (story already COMPLETE)"
+    },
+    {
+      "surface": "story_doc",
+      "path": "docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md",
+      "action": "UPDATE",
+      "reason": "T02 links to discrete task doc and IPP"
+    }
+  ]
+}

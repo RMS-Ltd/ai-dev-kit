@@ -1,5 +1,6 @@
 # Package Versioning: Agentic Approach (Revised)
 
+**Task ID:** E03:S02:T08  
 **Task:** E03:S02:T08 – Audit dual-versioning application across packages and propose strategy  
 **Date:** 2025-12-08  
 **Status:** PROPOSAL  

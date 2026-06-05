@@ -114,7 +114,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **BR-008** – Arbitrary 80 Threshold Contradicts Agentic Intelligence - TODO (LOW, Arbitrary threshold contradicts agentic approach) - [BR-008](fr-br/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md)
 - **BR-007** – Multiple Bugs Kanban Package Installation - TODO (LOW, Multiple bugs in kanban package installation) - [BR-007](fr-br/BR-007-multiple-bugs-kanban-package-installation.md)
 - **BR-006** – Missing Migration Support Pre-existing Kanban - TODO (LOW, Missing migration support for pre-existing kanban) - [BR-006](fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)
-- **BR-005** – Kanban Framework Epic Structure Gap UAT Finding - TODO (LOW, Gap found in kanban framework epic structure) - [BR-005](fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
+- **BR-005** – Kanban Framework Epic Structure Gap UAT Finding - ✅ FIXED Fix 1 (v0.4.6.6+1; Fix 2–4 DEFER) - [BR-005](fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
 - **BR-004** – Kanban Installation Includes Project-Specific Epics - TODO (LOW, Installation includes project-specific epics issue) - [BR-004](fr-br/BR-004-kanban-installation-includes-project-specific-epics.md)
 - **BR-003** – RW Branch Validation Update Branches - TODO (LOW, RW branch validation for update branches) - [BR-003](fr-br/BR-003-rw-branch-validation-update-branches.md)
 - **BR-002** – Changelog Validator Ordering Bug - TODO (LOW, Ordering bug in changelog validator) - [BR-002](fr-br/BR-002-changelog-validator-ordering-bug.md)

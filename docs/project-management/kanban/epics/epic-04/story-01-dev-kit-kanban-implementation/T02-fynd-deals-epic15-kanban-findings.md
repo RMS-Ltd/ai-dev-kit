@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 2 Findings: fynd.deals Epic 15 Kanban Patterns
 
+**Task ID:** E04:S01:T02  
 **Task:** E04:S01:T02 – Ingest findings from fynd.deals Epic 15 Kanban work into dev-kit  
 **Created:** 2025-12-02  
 **Status:** Complete  

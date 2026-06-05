@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 007 – Implement Task Naming Change (Txxx → Txx)
 
+**Task ID:** E02:S02:T07  
 **Task:** E02:S02:T07  
 **Status:** TODO  
 **Priority:** MEDIUM  

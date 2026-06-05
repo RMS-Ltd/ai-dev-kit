@@ -11,10 +11,11 @@ housekeeping_policy: keep
 **Bug ID:** BR-082  
 **Priority:** HIGH  
 **Severity:** HIGH (hard stop on first RW install after submodule-only setup)  
-**Status:** OPEN (fix attempted — pending verification)  
+**Status:** FIXED ([#14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14) closed; RW **v0.2.16.4+30** / E02:S16:T04)  
 **GitHub Issue:** [#14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)  
-**Implementing Task:** [E06:S09:T11](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md)  
+**Implementing Task:** [E06:S09:T11](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) — ✅ COMPLETE (**v0.6.9.11+2**)  
 **Created:** 2026-06-03  
+**Last updated:** 2026-06-05  
 **Source:** Book dry-run (ExpensesTracker T03 Step 3); ADK `vendor/ai-dev-kit` @ `84efa7b`
 
 ---
@@ -59,4 +60,4 @@ pip install 'pyyaml>=6.0'
 - [x] Greenfield/book spine Step 3 does not dead-end without deps list (`INSTALL_IN_YOUR_PROJECT.md` Step 3b).
 - [x] Error message cites `setup.py` / minimal install one-liner (`pip install 'pyyaml>=6.0'`, `pip install -e` kit path).
 
-**Verification:** User to confirm on book replay (ExpensesTracker T03) before closing BR-082.
+**Verification:** ✅ Operator confirmed (2026-06-05) — expenses-tracker install path resolved; #14 closed.

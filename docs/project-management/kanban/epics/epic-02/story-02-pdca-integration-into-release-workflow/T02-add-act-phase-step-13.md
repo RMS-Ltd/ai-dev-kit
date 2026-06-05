@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 002 – Add ACT Phase (Step 13: Act on Verification Results)
 
+**Task ID:** E02:S02:T02  
 **Task:** E02:S02:T02  
 **Status:** TODO  
 **Priority:** HIGH  

@@ -1,0 +1,24 @@
+{
+  "invocation": "rw_e04s11t07_wave3_epic1_epic3",
+  "timestamp_utc": "2026-06-05 04:56 UTC",
+  "boards": [
+    {
+      "board": "docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "rows_changed": 1,
+      "results": [
+        {
+          "row_id": "E04:S11:T07",
+          "old_stamp": "2026-06-05 04:54 UTC",
+          "new_stamp": "2026-06-05 04:56 UTC",
+          "source": "doc",
+          "detail": "RW Step 7 Wave 3 Epics 1 & 3 — T07 task doc + migration plan + epic-01/epic-03 story migrations"
+        }
+      ]
+    }
+  ],
+  "E04:S11:T07": {
+    "allowed": true,
+    "reason": "Substantive RW Step 7 — Wave 3 Epics 1 & 3 migration release v0.4.11.7+10"
+  }
+}
