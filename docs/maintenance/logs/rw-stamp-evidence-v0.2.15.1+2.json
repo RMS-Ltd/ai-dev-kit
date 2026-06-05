@@ -1,0 +1,10 @@
+{
+  "E02:S15:T01": {
+    "allowed": true,
+    "reason": "RW E02:S15:T01 v0.2.15.1+2 — scoped kboard row reconciliation (Phase 2 release)"
+  },
+  "BR-066": {
+    "allowed": true,
+    "reason": "RW E02:S15:T01 v0.2.15.1+2 — scoped fbuboard row reconciliation (Phase 2 release)"
+  }
+}

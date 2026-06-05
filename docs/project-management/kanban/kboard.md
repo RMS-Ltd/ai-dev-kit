@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
-- **E05:S09:T13** – BR-090 Wave 2: local `npm run build` green (**v0.5.9.13+2**); post-merge **Docusaurus site build** + **deploy** on `main` pending | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | Last modified: 2026-06-05 23:30 UTC
+- **E05:S09:T13** – BR-090: CI parity fix **v0.5.9.13+3** (gitignored evidence log); **Docusaurus site build** on PR #26 / `main` pending | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | Last modified: 2026-06-05 03:15 UTC
 
 - **E02:S13:T08** – FR-106: Packaged workflows sync with live spec — ⏳ WAITING (HIGH, task **v0.2.13.8+2** · **user sign-off** pending) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [—IPP—](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | Last modified: 2026-06-03 20:06 UTC
 

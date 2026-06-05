@@ -1,0 +1,24 @@
+{
+  "boards": [
+    {
+      "board": "docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "rows_considered": 1,
+      "rows_changed": 1,
+      "rows_ambiguous": 0,
+      "results": [
+        {
+          "row_id": "E05:S09:T13",
+          "old_stamp": "2026-06-05 23:30 UTC",
+          "new_stamp": "2026-06-05 03:15 UTC",
+          "source": "rw_step_7",
+          "detail": "docs/project-management/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md"
+        }
+      ]
+    }
+  ],
+  "dry_run": false,
+  "invocation_context": "rw_step_7",
+  "release_version": "0.5.9.13+3",
+  "task_id": "E05:S09:T13"
+}

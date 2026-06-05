@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS — Wave 2 fix attempted **v0.5.9.13+2** (local `npm run build` green; pytest T8–T11 green); **post-merge Actions verification pending** on `main`
 **Created:** 2026-06-05
 **Last updated:** 2026-06-05 (RW E05:S09:T13 Wave 2)
-**Version:** v0.5.9.13+2  
+**Version:** v0.5.9.13+3  
 **Implementing Task:** [E05:S09:T13](../epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)  
 **Related:** [FR-069](FR-069-docusaurus-ci-build-gate.md) · [FR-070](FR-070-docusaurus-deployment-and-hosting.md) · [BR-068](BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) (prior build class; distinct from this regression)
 

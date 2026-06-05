@@ -1,5 +1,0 @@
-
-> portal@0.0.0 build
-> docusaurus build --no-minify
-
-[INFO] [en] Creating an optimized production build...

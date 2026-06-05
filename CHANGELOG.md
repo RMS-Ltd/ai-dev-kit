@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.13+3] - 05-06-26
+
+E05:S09:T13 — **BR-090 Wave 2 CI parity:** track `uxr-005-spacing` evidence log; fix `logs/` gitignore gap. SemVer **v0.4.909+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+3.md)
+
+---
+
 ## [0.5.9.13+2] - 05-06-26
 
 E05:S09:T13 — **BR-090 Wave 2:** Full Docusaurus build triage; BR-068 Strategy A link remediation; pytest T8–T11; local `npm run build` green. SemVer **v0.4.909+2**.
