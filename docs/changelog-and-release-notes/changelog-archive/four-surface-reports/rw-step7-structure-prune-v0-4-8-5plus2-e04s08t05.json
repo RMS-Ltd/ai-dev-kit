@@ -1,0 +1,18 @@
+{
+  "contract": "FR-097 structure-prune — COMPLETE task row removal (RW Step 7 E04:S08:T05 BUILD+2)",
+  "release_scope": {
+    "task_id": "E04:S08:T05",
+    "version_string": "v0.4.8.5+2"
+  },
+  "evidence_mode": "structure_prune",
+  "archived": {
+    "kboard": ["E04:S08:T05"],
+    "kanban_completed": ["E04:S08:T05"]
+  },
+  "rows": {
+    "E04:S08:T05": {
+      "allowed": true,
+      "reason": "COMPLETE v0.4.8.5+1 — deferred kboard prune reconciled at BUILD+2"
+    }
+  }
+}
