@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E07:S07:T03** — BR-091 validator slug path fix v0.7.7.3+1)
-**Version:** v0.7.7.3+1
+**Last Updated:** 2026-06-05 (RW **E08:S03:T10** — BR-096 CodeQL URL substring fix v0.8.3.10+1)
+**Version:** v0.8.3.10+1
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 

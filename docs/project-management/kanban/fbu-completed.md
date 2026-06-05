@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T08** — BR-094 closure v0.8.3.8+1)
-**Version:** v0.8.3.8+1 (**SemVer** v0.4.891+1)
+**Last Updated:** 2026-06-05 (RW **E08:S03:T10** — BR-096 closure v0.8.3.10+1)
+**Version:** v0.8.3.10+1 (**SemVer** v0.4.897+1)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-096 | BR | CodeQL incomplete URL substring sanitization in portal test (**E08:S03:T10**) | 2026-06-05T01:06:43Z | v0.8.3.10+1 | RW --art |
+| BR-095 | BR | CodeQL insecure `tempfile.mktemp` in intake test script (**E08:S03:T09**) | 2026-06-05T01:03:42Z | v0.8.3.9+1 | RW --art |
 | BR-094 | BR | CodeQL `git_tag_handler.py` indentation syntax error (**E08:S03:T08**) | 2026-06-05T00:10:09Z | v0.8.3.8+1 | RW --art |
 | BR-092 | BR | Tests CI missing `requests` dev dependency (**E08:S03:T07**) | 2026-06-04T23:51:26Z | v0.8.3.7+1 | RW |
 | UXR-017 | UXR | Kanban epic/story path lowercase naming — GH #20 closed (**E04:S19:T11**) | 2026-06-04T23:07:14Z | v0.4.19.11+1 | UKW -c |

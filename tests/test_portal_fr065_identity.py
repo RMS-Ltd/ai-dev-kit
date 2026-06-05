@@ -7,8 +7,10 @@ Executable spec S1–S8. S9: green build with PORTAL_BUILD_STRICT=1 (FR-067).
 from __future__ import annotations
 
 import os
+import re
 import subprocess
 from pathlib import Path
+from urllib.parse import urlparse
 
 import pytest
 
@@ -64,7 +66,10 @@ def test_fr065_s2_org_project_names(config_text: str):
 def test_fr065_s3_url_not_example(config_text: str):
     """S3 — production URL strategy (GitHub Pages)."""
     assert "your-docusaurus-site.example.com" not in config_text
-    assert "https://rms-ltd.github.io" in config_text
+    url_match = re.search(r"url:\s*['\"]([^'\"]+)['\"]", config_text)
+    assert url_match, "docusaurus.config.js must declare url"
+    host = urlparse(url_match.group(1)).hostname
+    assert host == "rms-ltd.github.io"
     assert "'/ai-dev-kit/'" in config_text or '"/ai-dev-kit/"' in config_text
 
 
