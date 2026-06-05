@@ -8,12 +8,13 @@ housekeeping_policy: keep
 
 # Story 009 – AI Dev Kit installation and adopter integration
 
-**Status:** IN PROGRESS
+**Status:** ✅ COMPLETE
+**Completed:** 2026-06-05
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-04 (v0.6.9.16+3 – **T16** COMPLETE / BR-086 closed; install sign-off cluster archived)
-**Version:** v0.6.9.16+3
+**Last updated:** 2026-06-05 (v0.6.9.21+4 – T21 greenfield-install tree shipped)
+**Version:** v0.6.9.21+4
 **Code:** E6S09
 
 ---
@@ -70,6 +71,10 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T20 – Install/setup error code registry (FR-108)** - ✅ COMPLETE (**v0.6.9.20+2** — ADK-* registry + emitters + docs; IPP sync) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) | [IPP-E6S9T20](../../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) | [FR-108](../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
 
+- [x] **E06:S09:T21 – Lean adopter distribution footprint (FR-110)** - ✅ COMPLETE (**v0.6.9.21+4** — `greenfield-install/` tree, sync script, CI drift guard) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) | [FR-110](../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+
+- [x] **E06:S09:T22 – Package documentation greenfield-install alignment (FR-110)** - ✅ COMPLETE (**v0.6.9.22+1** — framework READMEs + install guides) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md) | [FR-110](../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+
 ---
 
 ## Overview
@@ -92,5 +97,5 @@ Work is tracked in **Epic 6** because this is **framework distribution and adopt
 ## Related
 
 - [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [FR-080](../../fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) · [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md) · [FR-108](../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
+- [FR-080](../../fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) · [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md) · [FR-108](../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md) · [FR-110](../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

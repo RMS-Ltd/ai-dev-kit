@@ -1,0 +1,21 @@
+# RW Config: Mode B - RW + Dev-Kit Versioning
+# Use Case: RW with dev-kit RC.EPIC.STORY.TASK+BUILD versioning schema
+
+version_file: src/myproject/version.py
+main_changelog: CHANGELOG.md
+changelog_dir: docs/changelogs
+scripts_path: tools/workflow_mgt/scripts
+readme_file: README.md
+
+# Optional: Disable Kanban integration
+use_kanban: false
+
+# Explicitly use dev-kit versioning schema
+versioning_schema: RC.EPIC.STORY.TASK+BUILD
+
+# FR-046: dual internal+SemVer requires task-touch mapping
+versioning_mode: dual
+semver_mapping_strategy: task_touch
+
+# Optional: Project name for examples/comments
+project_name: myproject

@@ -1,0 +1,125 @@
+# Install/setup error code registry (FR-108 / ADR-016)
+# SoT for adk_install_errors.py and generated troubleshooting docs.
+
+registry_version: "1.0.0"
+
+domains:
+  I:
+    title: Install and setup
+    description: Framework installers and greenfield orchestration
+
+processes:
+  I01:
+    title: Greenfield orchestrator
+    script: install_greenfield_path.py
+  I02:
+    title: Kanban framework install
+    script: install_kanban_framework.py
+  I03:
+    title: Release Workflow install
+    script: install_release_workflow.py
+  I04:
+    title: GitHub install sign-off
+    script: install_github_issue_signoff.py
+
+codes:
+  ADK-I01.S01:
+    summary: Greenfield RW install step failed
+    symptom: The Release Workflow installer subprocess exited non-zero during greenfield orchestration.
+    remediation:
+      - "Review subprocess output above for an ADK-I03.* code from the RW installer."
+      - "See INSTALL_IN_YOUR_PROJECT.md greenfield section and framework-dependency-troubleshooting-guide.md."
+    see_also:
+      - FR-080
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I01.S02:
+    summary: Greenfield Kanban install step failed
+    symptom: The Kanban framework installer subprocess exited non-zero during greenfield orchestration.
+    remediation:
+      - "Review subprocess output above for an ADK-I02.* code from the Kanban installer."
+      - "Confirm kanban_root and fresh-mode options match your layout."
+    see_also:
+      - FR-080
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I02.E01:
+    summary: Kanban framework install failed
+    symptom: install_kanban_framework.py exited with an error before completion.
+    remediation:
+      - "Re-run with verbose logging if available and capture the full console transcript."
+      - "Verify target directory and install mode (fresh vs migration)."
+    see_also:
+      - BR-054
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I02.E08:
+    summary: Kanban install detected board or path contamination
+    symptom: Validation reported foreign or legacy kanban content in the target tree.
+    remediation:
+      - "Use the documented remediation tool or a clean target path for fresh install."
+      - "See BR-037 for contamination recovery guidance."
+    see_also:
+      - BR-037
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I03.E04:
+    summary: RW installer dependencies missing
+    symptom: Required Python packages (e.g. PyYAML) are not installed in the active environment.
+    remediation:
+      - "pip install 'pyyaml>=6.0'"
+      - "Or pip install -e ./vendor/ai-dev-kit from your kit checkout."
+      - "Run python install_release_workflow.py --check-deps for preflight."
+    see_also:
+      - BR-082
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I03.E12:
+    summary: RW install version_file missing or not scaffolded
+    symptom: mode C configured version_file but the path does not exist and scaffold was declined or skipped.
+    remediation:
+      - "Re-run RW installer and accept version_file scaffold when prompted."
+      - "Or create the file manually per dev-kit versioning policy."
+    see_also:
+      - BR-088
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I03.E21:
+    summary: RW install kanban path or pattern mismatch
+    symptom: rw-config epic/story/task patterns do not match on-disk fresh kanban layout.
+    remediation:
+      - "Align epic_doc_pattern and story_doc_pattern with your tree (lowercase vs padded epic ids)."
+      - "See BR-083, BR-086, and UXR-017 for naming conventions."
+    see_also:
+      - BR-083
+      - BR-086
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I03.E90:
+    summary: RW install completed with warnings or partial success
+    symptom: Installer finished but reported PARTIAL status or follow-up warnings.
+    remediation:
+      - "Complete each numbered follow-up item printed at end of install."
+      - "Re-run install_github_issue_signoff when ready."
+    see_also:
+      - FR-080
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I03.E90:W01:
+    summary: RW install partial (non-blocking warning aggregate)
+    symptom: Same as ADK-I03.E90; emitted when exit code is 0 but PARTIAL was reported.
+    remediation:
+      - "Address follow-up items before first RW release in the adopter repo."
+    see_also:
+      - FR-080
+    introduced_in_adk_semver: "0.4.900"
+
+  ADK-I04.E01:
+    summary: Install GitHub sign-off not ready
+    symptom: Automated sign-off checks did not pass; one or more contract entries are not READY.
+    remediation:
+      - "Run install_github_issue_signoff.py and resolve each NOT READY entry."
+      - "Update rw-config patterns or on-disk files per sign-off hints."
+    see_also:
+      - FR-080
+    introduced_in_adk_semver: "0.4.900"

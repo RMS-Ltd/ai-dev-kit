@@ -1,0 +1,142 @@
+workflow_registry:
+  version: "1.2.0"
+  last_updated: "2026-06-05"
+  
+  workflows:
+    release-workflow:
+      name: "Release Workflow"
+      abbreviation: "RW"
+      description: "Intelligent agent release (12 steps + 9.5 CMW + 9.6 IDE + 12.5 GitHub + 13 housekeeping; gates 1b/1c/1d before Step 2)"
+      directory: "release-workflow/"
+      main_file: "release-workflow.yaml"
+      config_file: "release-workflow-config.yaml"
+      documentation: "README.md"
+      triggers: ["RW", "RW -k", "RW -d"]
+      steps: 12
+      notes: "Optional sub-steps 9.5, 9.6, 12.5; flat workflows/release-workflow.yaml is deprecated (E02:S13:T08)"
+      
+    changelog-management-workflow:
+      name: "Changelog Management Workflow"
+      abbreviation: "CMW"
+      description: "Manage changelog size and organization"
+      directory: "changelog-management-workflow/"
+      main_file: "changelog-management-workflow.yaml"
+      config_file: "cmw-config.yaml"
+      documentation: "README.md"
+      triggers: ["CMW"]
+      steps: 5
+      
+    update-kanban-workflow:
+      name: "Update Kanban Workflow"
+      abbreviation: "UKW"
+      description: "Agentic kanban sync (9 steps + Step 2.5 gap discovery on comprehensive run; flags -u/-p/-a/--rp/-c)"
+      directory: "update-kanban-workflow/"
+      main_file: "update-kanban-workflow.yaml"
+      config_file: "ukw-config.yaml"
+      documentation: "README.md"
+      triggers: ["UKW"]
+      steps: 9
+      
+    post-implementation-review:
+      name: "Post-Implementation Review"
+      abbreviation: "PIR"
+      description: "Review implementation after release"
+      directory: "post-implementation-review/"
+      main_file: "pir-workflow.yaml"
+      config_file: "pir-config.yaml"
+      documentation: "README.md"
+      triggers: ["PIR"]
+      steps: 6
+      notes: "Flat workflows/pir-workflow.yaml is deprecated (E02:S13:T09); SoT is post-implementation-review/pir-workflow.yaml"
+      
+    intake-workflow:
+      name: "Intake Workflow"
+      abbreviation: "INTAKE"
+      description: "FR/BR/UXR automation and intake process (semantic host-story placement for new intake; historical repository anchors remain valid)"
+      directory: "intake-workflow/"
+      main_file: "intake-workflow.yaml"
+      config_file: "intake-config.yaml"
+      documentation: "README.md"
+      triggers: ["INTAKE"]
+      steps: 7
+      notes: "Flat workflows/intake-workflow.yaml is deprecated (E02:S13:T09); SoT is intake-workflow/intake-workflow.yaml"
+      
+    migration-workflow:
+      name: "Migration Workflow"
+      abbreviation: "MIGRATION"
+      description: "Migration and data transfer tasks"
+      directory: "migration-workflow/"
+      main_file: "migration-workflow.yaml"
+      config_file: "migration-config.yaml"
+      documentation: "README.md"
+      triggers: ["MIGRATION"]
+      steps: 9
+      notes: "Flat workflows/migration-workflow.yaml is deprecated (E02:S13:T09)"
+      
+    refactor-workflow:
+      name: "Refactor Workflow"
+      abbreviation: "REFACTOR"
+      description: "Code refactoring and improvement tasks"
+      directory: "refactor-workflow/"
+      main_file: "refactor-workflow.yaml"
+      config_file: "refactor-config.yaml"
+      documentation: "README.md"
+      triggers: ["REFACTOR"]
+      steps: 8
+      notes: "Flat workflows/refactor-workflow.yaml is deprecated (E02:S13:T09)"
+      
+    testing-workflow:
+      name: "Testing Workflow"
+      abbreviation: "TESTING"
+      description: "Testing and quality assurance tasks"
+      directory: "testing-workflow/"
+      main_file: "testing-workflow.yaml"
+      config_file: "testing-config.yaml"
+      documentation: "README.md"
+      triggers: ["TESTING"]
+      steps: 10
+      notes: "Flat workflows/testing-workflow.yaml is deprecated (E02:S13:T09)"
+      
+    package-version-workflow:
+      name: "Package Version Workflow"
+      abbreviation: "PKG-VERSION"
+      description: "Package version bumps (RW Step 2.5 / manual PVW; 6 agent steps)"
+      directory: "package-version-workflow/"
+      main_file: "package-version-workflow.yaml"
+      config_file: "package-version-config.yaml"
+      documentation: "README.md"
+      triggers: ["PVW", "PKG-VERSION"]
+      steps: 6
+      notes: "Flat workflows/package-version-workflow.yaml is deprecated (E02:S13:T09)"
+      
+    framework-health-monitoring-workflow:
+      name: "Framework Health Monitoring Workflow"
+      abbreviation: "FHM"
+      description: "Framework health monitoring and maintenance"
+      directory: "framework-health-monitoring-workflow/"
+      main_file: "framework-health-monitoring-workflow.yaml"
+      config_file: "fhm-config.yaml"
+      documentation: "README.md"
+      triggers: ["FHM"]
+      steps: 3
+      
+    implementation-cycle-workflow:
+      name: "Implementation Cycle Workflow"
+      abbreviation: "ICW"
+      description: "Planning workflow (spec, test design, impl plan). Canonical Cursor/agent trigger is IPW (Implementation Planning Workflow, FR-042 / E5:S01:T42). ICW is a deprecated alias — same steps. See KB vwmp implementation-planning-workflow-agent-execution.md."
+      directory: "implementation-cycle-workflow/"
+      main_file: "icw-workflow.yaml"
+      config_file: "icw-config.yaml"
+      documentation: "README.md"
+      triggers: ["IPW", "ICW"]
+      steps: 8
+      
+  common_components:
+    templates: "common/templates/"
+    schemas: "common/schemas/"
+    utilities: "common/utilities/"
+    
+  documentation_standards:
+    template: "templates/workflow-readme-template.md"
+    style_guide: "docs/workflow-documentation-style-guide.md"
+    validation_script: "scripts/validate-workflow-docs.py"

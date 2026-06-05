@@ -1,0 +1,147 @@
+name: Intake Workflow
+version: 1.0.0
+type: intake
+description: >
+  Automated intake for FR/BR/UXR into Kanban. Policy: atomic intake (KG-R2)—task
+  document + bidirectional links in the same session as the report; KG-R6—primary
+  task under delivery-appropriate story; optional FR-nnn↔Tnn symmetry.
+
+config:
+  fr_br_dir: docs/project-management/kanban/fr-br
+  kanban_dir: docs/project-management/kanban/epics
+  version_file: src/fynd_deals/version.py
+  semantic_matching:
+    enabled: true
+    threshold: 0.7
+    use_e4s08: true
+  task_creation:
+    use_e4s10: true
+    template_path: packages/frameworks/kanban/templates
+  intake_status:
+    default: ACCEPTED
+    allowed_values: [ACCEPTED, PENDING, REJECTED, DEFERRED]
+  version_schema: RC.EPIC.STORY.TASK+BUILD
+  intake_build: 0
+
+steps:
+  - id: step-1
+    name: Load & Parse FR/BR/UXR Document
+    type: document_load
+    handler: intake.document_load
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies: []
+    config:
+      document_patterns:
+        fr: FR-*.md
+        br: BR-*.md
+        uxr: UXR-*.md
+
+  - id: step-2
+    name: Decision Flow Analysis
+    type: decision_flow
+    handler: intake.decision_flow
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-1
+    config:
+      semantic_matching:
+        enabled: true
+        threshold: 0.7
+        use_e4s08: true
+      epic_assignment:
+        auto_detect: true
+
+  - id: step-3
+    name: Create/Update Kanban Tasks
+    type: kanban_task_creation
+    handler: intake.kanban_task_creation
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-2
+    config:
+      use_e4s10: true
+      template_path: packages/frameworks/kanban/templates
+      auto_link_fr_br: true
+
+  - id: step-4
+    name: Update FR/BR/UXR Documentation
+    type: intake_documentation_update
+    handler: intake.documentation_update
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-2
+      - step-3
+    config:
+      intake_status:
+        default: ACCEPTED
+        allowed_values: [ACCEPTED, PENDING, REJECTED, DEFERRED]
+      version_marker:
+        format: v{rc}.{epic}.{story}.{task}+{build}
+        build_zero_for_intake: true
+
+  - id: step-5
+    name: Wire Dependencies
+    type: dependency_wiring
+    handler: intake.dependency_wiring
+    required: true
+    mandatory: false
+    blocking: false
+    dependencies:
+      - step-2
+      - step-3
+    config:
+      dependency_patterns:
+        fr: FR-\d+
+        br: BR-\d+
+        uxr: UXR-\d+
+        epic_story: E\d+:S\d+
+        task: E\d+:S\d+:T\d+
+      validation:
+        check_existence: true
+        check_circular: true
+        strict_mode: false
+
+  - id: step-6
+    name: Assign Version Marker
+    type: version_assignment
+    handler: intake.version_assignment
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-2
+      - step-3
+    config:
+      version_schema: RC.EPIC.STORY.TASK+BUILD
+      intake_build: 0
+      version_file: src/fynd_deals/version.py
+
+  - id: step-7
+    name: Validate & Report Results
+    type: intake_validation
+    handler: intake.validation
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-1
+      - step-2
+      - step-3
+      - step-4
+      - step-5
+      - step-6
+    config:
+      validation:
+        check_document_updates: true
+        check_task_creation: true
+        check_dependency_wiring: true
+        generate_report: true
+      report_format: markdown

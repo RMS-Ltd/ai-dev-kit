@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.946+1` | **Internal:** `v0.2.14.1+1` (E02:S14:T01 / workflow-mgt installation paths enumeration) | **Last Updated:** 2026-06-05
+**Version (SemVer):** `v0.4.952+4` | **Internal:** `v0.6.9.21+4` (E06:S09:T21 / FR-110 greenfield-install tree) | **Last Updated:** 2026-06-05
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -31,19 +31,20 @@
 - **Existing project?** Migrate from copy-paste to package management
 - **Just exploring?** Browse frameworks and documentation first
 
-**Quick Install (Git Submodule - Recommended for Existing Projects):**
+**Quick Install (lean vendor — recommended, [FR-110](docs/project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)):**
 ```bash
-# 1. Add ai-dev-kit as submodule
-git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
+# 1. Vendor ai-dev-kit (submodule at vendor/ or .ai-dev-kit/)
+git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
+cd vendor/ai-dev-kit && git checkout tags/v0.4.949 && cd ../..
 
-# 2. Copy frameworks
-cp -r .ai-dev-kit/packages/frameworks/workflow\ mgt/* ./
-cp -r .ai-dev-kit/packages/frameworks/kanban/* ./
-
-# 3. Run installers (REQUIRED)
-python scripts/install_release_workflow.py --mode c
-python3 scripts/install_kanban_framework.py --mode fresh
+# 2. Sparse-checkout greenfield-install/ only (~10 MiB) — see INSTALL guide
+#    cd vendor/ai-dev-kit && git sparse-checkout set greenfield-install
+pip install 'pyyaml>=6.0'
+python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py \
+  --project-root . --non-interactive
 ```
+
+**Full copy alternative** (copies frameworks into project root): see [INSTALL_IN_YOUR_PROJECT.md — Method 2](INSTALL_IN_YOUR_PROJECT.md#method-2-git-submodule-available-now).
 
 **📖 Complete Guide:** See [`INSTALL_IN_YOUR_PROJECT.md`](INSTALL_IN_YOUR_PROJECT.md) for detailed instructions and all installation methods.
 
@@ -204,7 +205,7 @@ The toolkit is designed to be:
 
 ### Installation
 
-Follow **[INSTALL_IN_YOUR_PROJECT.md](INSTALL_IN_YOUR_PROJECT.md)** and the [Quick Start](#-quick-start--bootstrap) section for submodule copy, installers, and framework layout.
+Follow **[INSTALL_IN_YOUR_PROJECT.md](INSTALL_IN_YOUR_PROJECT.md)** — start with the **[lean vendor install](INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110)** section (FR-110), then greenfield or brownfield paths as appropriate.
 
 ---
 

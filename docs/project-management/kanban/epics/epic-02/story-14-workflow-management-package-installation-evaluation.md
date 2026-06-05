@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-05 (v0.2.14.1+1 – T01 complete)  
-**Version:** v0.2.14.1+1  
+**Last updated:** 2026-06-05 (v0.2.14.6+1 – T06 wave 1 IN PROGRESS)  
+**Version:** v0.2.14.6+1  
 **Code:** E2S14
 
 ---
@@ -32,7 +32,7 @@ housekeeping_policy: keep
   - Task: [`T04-verify-post-install-configuration-and-validation-steps`](story-14-workflow-management-package-installation-evaluation/T04-verify-post-install-configuration-and-validation-steps.md)
 - [ ] **E02:S14:T05 – Document failure modes and rollback guidance** - TODO
   - Task: [`T05-document-failure-modes-and-rollback-guidance`](story-14-workflow-management-package-installation-evaluation/T05-document-failure-modes-and-rollback-guidance.md)
-- [ ] **E02:S14:T06 – Capture documentation gaps and improvements** - TODO
+- [ ] **E02:S14:T06 – Capture documentation gaps and improvements** - 🔄 IN PROGRESS (v0.2.14.6+1 wave 1)
   - Task: [`T06-capture-documentation-gaps-and-improvements`](story-14-workflow-management-package-installation-evaluation/T06-capture-documentation-gaps-and-improvements.md)
 
 ---

@@ -76,17 +76,17 @@ Components from [component-inventory-map.md §5](../story-13-workflow-management
 
 ---
 
-## Known gaps (T06 handoff)
+## Known gaps (T06 remediation status)
 
-| Gap ID | Topic | Paths / docs involved | Suggested owner |
-| ------ | ----- | ---------------------- | --------------- |
-| GAP-CLI-001 | CLI "Available Now" vs "Coming Soon" | `framework-dependency-installation-guide.md` vs `INSTALL_IN_YOUR_PROJECT.md` § Method 3 | T06 |
-| GAP-PY-001 | Python 3.7+ vs 3.11+ | `README-rw-installer.md` / package README vs user-docs install guide | T06 |
-| GAP-SLUG-001 | `workflow-mgt` vs `workflow mgt` slug | BR-087; mixed examples in user-docs and quickstart | T06 |
-| GAP-ACQ-CFG-001 | Acquisition without installer call | ACQ-CLI-INSTALL, ACQ-RELEASE-TARBALL, ACQ-SUBMODULE | T05/T06 |
-| GAP-QS-001 | Stale quickstart patterns | `rw-installer-quickstart-guide.md` vs UXR-017 / INSTALL_IN_YOUR_PROJECT | T06 |
-| GAP-DOC-001 | PACKAGE_INSTALLATION_GUIDE Kanban-centric | Under workflow-mgt but weak workflow-mgt-specific guidance | T06 |
-| GAP-MANUAL-001 | Manual install step count vs live RW spec | Package README § Manual Installation | T06 |
+| Gap ID | Topic | Status | Notes |
+| ------ | ----- | ------ | ----- |
+| GAP-CLI-001 | CLI "Available Now" vs "Coming Soon" | **Resolved (INSTALL)** | `INSTALL_IN_YOUR_PROJECT.md` § Method 3 — v0.2.14.6+1 |
+| GAP-ACQ-CFG-001 | Acquisition without installer call | **Resolved (INSTALL)** | Two-phase callout + Methods 1 & 3 — v0.2.14.6+1 |
+| GAP-QS-001 | Stale quickstart / kanban tree patterns | **Partial** | INSTALL greenfield tree fixed (ADR-018/UXR-017); quickstart guide still open |
+| GAP-PY-001 | Python 3.7+ vs 3.11+ | **Open** | user-docs vs README-rw-installer — wave 2 |
+| GAP-SLUG-001 | `workflow-mgt` vs `workflow mgt` slug | **Open** | user-docs / quickstart — wave 2 |
+| GAP-DOC-001 | PACKAGE_INSTALLATION_GUIDE Kanban-centric | **Open** | wave 2 |
+| GAP-MANUAL-001 | Manual install step count vs live RW spec | **Open** | package README — wave 2 |
 
 ---
 

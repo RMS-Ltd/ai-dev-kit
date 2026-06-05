@@ -1,0 +1,13 @@
+# Maintainer manifest for greenfield-install/ sync (FR-110 / E06:S09:T21).
+# Consumed by scripts/sync_greenfield_install.py — do not edit dest tree by hand.
+schema_version: 1
+dest_root: greenfield-install
+copy_trees:
+  - src: packages/frameworks
+    dest: packages/frameworks
+ignore_globs:
+  - "**/__pycache__"
+  - "**/*.pyc"
+  - "**/.DS_Store"
+  - "**/.pytest_cache"
+  - "**/*.pyo"

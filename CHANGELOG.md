@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.21+4] - 05-06-26
+
+E06:S09:T21 — **Lean adopter distribution footprint (FR-110):** `greenfield-install/` tree, sync script, CI drift guard, install smoke. SemVer **v0.4.952+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.21+4.md)
+
+---
+
 ## [0.2.14.1+1] - 05-06-26
 
 E02:S14:T01 — **Enumerate workflow-mgt installation paths:** IPP + 19-row installation paths matrix (two-phase acquisition/configuration model); S13 §5 cross-ref; T06 gap handoff. SemVer **v0.4.946+1**.

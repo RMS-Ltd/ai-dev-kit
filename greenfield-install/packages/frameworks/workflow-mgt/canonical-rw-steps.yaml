@@ -1,0 +1,170 @@
+# Canonical Release Workflow (RW) Step List
+# Single Source of Truth for RW step definitions (agent execution model)
+#
+# Aligns with root .cursorrules "The 12 Steps" + optional 9.5, 9.6, 12.5
+# Pre-release gates 1b/1c/1d run after Step 1 (documented in portable excerpt + vwmp guide)
+#
+# Last Updated: 2026-06-03
+# Version: 2.0.0
+
+canonical_rw_steps:
+  step_1:
+    number: 1
+    name: "Branch Safety Check"
+    description: "validate_branch_context.py --strict; abort on non-zero before any file modifications"
+    mandatory: true
+    blocking: true
+    category: "safety"
+
+  step_2:
+    number: 2
+    name: "Bump Version"
+    description: "UKW/CMW attribution, task identification, VERSION_TASK/BUILD update per schema"
+    mandatory: true
+    blocking: false
+    category: "version"
+
+  step_3:
+    number: 3
+    name: "Create Detailed Changelog"
+    description: "Archive changelog with immutable Release Date timestamp (BR-074 guards)"
+    mandatory: true
+    blocking: false
+    category: "documentation"
+
+  step_4:
+    number: 4
+    name: "Update Main Changelog"
+    description: "Keep a Changelog entry at top with link to detailed changelog"
+    mandatory: true
+    blocking: false
+    category: "documentation"
+
+  step_5:
+    number: 5
+    name: "Update README"
+    description: "SemVer via semver_converter.py; version text, badge, latest release callout"
+    mandatory: true
+    blocking: false
+    category: "documentation"
+
+  step_6:
+    number: 6
+    name: "Update BR/FR Docs"
+    description: "Fix attempt / verification status on linked FR/BR docs"
+    mandatory: true
+    blocking: false
+    category: "documentation"
+
+  step_7:
+    number: 7
+    name: "Scoped Kanban Reconciliation"
+    description: "FR-092 four-surface release-scope reconciliation (self-sufficient; rw_step_7; no UKW handoff debt)"
+    mandatory: true
+    blocking: false
+    category: "documentation"
+
+  step_8:
+    number: 8
+    name: "Stage Files"
+    description: "git add -A (or scoped paths per project policy)"
+    mandatory: true
+    blocking: false
+    category: "git"
+
+  step_9:
+    number: 9
+    name: "Run Validators"
+    description: "branch, changelog, version_bump, check_changelog_size, archive_links, board_stamp_diff (FR-097), kanban_state_icons (UXR-012), release_readiness Gates 1-9; --art/--doc-policy-zero propagation"
+    mandatory: true
+    blocking: true
+    category: "validation"
+
+  step_9_5:
+    number: 9.5
+    name: "Changelog Management Workflow (CMW)"
+    description: "Optional non-blocking when check_changelog_size threshold exceeded"
+    mandatory: false
+    blocking: false
+    category: "maintenance"
+
+  step_9_6:
+    number: 9.6
+    name: "Check IDE-Flagged Problems"
+    description: "Recommended non-blocking linter/IDE pass before commit"
+    mandatory: false
+    blocking: false
+    category: "validation"
+
+  step_10:
+    number: 10
+    name: "Commit Changes"
+    description: "Release commit with epic/story/task footer"
+    mandatory: true
+    blocking: false
+    category: "git"
+
+  step_11:
+    number: 11
+    name: "Create Git Tag"
+    description: "SemVer task-touch or registry mode via semver_converter.get_rw_tag_info"
+    mandatory: true
+    blocking: false
+    category: "git"
+
+  step_12:
+    number: 12
+    name: "Push to Remote"
+    description: "Push branch and tags with network permissions"
+    mandatory: true
+    blocking: false
+    category: "git"
+
+  step_12_5:
+    number: 12.5
+    name: "Create/Update GitHub Release"
+    description: "create_github_release.py with SemVer tag"
+    mandatory: true
+    blocking: false
+    category: "git"
+
+  step_13:
+    number: 13
+    name: "Housekeeping"
+    description: "Workflow step tracker + agent run log finalization (ADR-011)"
+    mandatory: true
+    blocking: false
+    category: "maintenance"
+    recommended: true
+
+execution_paths:
+  full_release:
+    trigger: "RW"
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 10, 11, 12, 12.5, 13]
+    description: "Complete intelligent agent release (12 steps + optional 9.5/9.6 + 12.5 + housekeeping)"
+    category: "full"
+
+  kanban_init:
+    trigger: "RW -k"
+    steps: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 12.5, 13]
+    description: "Kanban documentation init (scoped Step 7 kanban_init mode)"
+    category: "documentation"
+    step_modifications:
+      7:
+        mode: "kanban_init"
+
+  documentation_only:
+    trigger: "RW -d"
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 10, 13]
+    description: "Documentation release without tag/push (project policy may vary)"
+    category: "documentation"
+
+metadata:
+  version: "2.0.0"
+  created: "2026-03-09"
+  last_updated: "2026-06-03"
+  total_steps: 13
+  optional_sub_steps: [9.5, 9.6, 12.5]
+  mandatory_steps: 11
+  agent_tracker_steps: 12
+  notes: "Steps 1b/1c/1d (FR-060, BR-056) are mandatory pre-Step-2 gates documented in portable excerpt, not separate canonical step numbers"

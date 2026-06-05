@@ -1,0 +1,108 @@
+name: Package Version Workflow
+version: 1.0.0
+type: package_version
+description: Intelligent agent-driven package versioning workflow (triggered by RW Step 2.5)
+
+config:
+  packages_dir: packages/frameworks
+  validation_scripts: scripts/validation/package
+  auto_detect_changes: true
+
+steps:
+  - id: step-1
+    name: Detect Changed Packages
+    type: change_detection
+    handler: package.detect_changes
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies: []
+    config:
+      packages_dir: ${config.packages_dir}
+      git_diff: true
+      change_threshold: significant
+
+  - id: step-2
+    name: Analyze Package Changes
+    type: change_analysis
+    handler: package.analyze_changes
+    required: true
+    dependencies:
+      - step-1
+    config:
+      packages_dir: ${config.packages_dir}
+      analysis_depth: full
+      include_context: true
+
+  - id: step-3
+    name: Determine Version Bumps
+    type: version_determination
+    handler: package.determine_bumps
+    required: true
+    dependencies:
+      - step-2
+    config:
+      criteria_guidance: true
+      intelligent_analysis: true
+      document_reasoning: true
+
+  - id: step-4
+    name: Execute Version Updates
+    type: version_update
+    handler: package.update_versions
+    required: true
+    dependencies:
+      - step-3
+    config:
+      update_readme: true
+      update_manifests: true
+      create_changelog: true
+      document_justification: true
+
+  - id: step-5
+    name: Validate Updates
+    type: validation
+    handler: package.validate_updates
+    required: true
+    dependencies:
+      - step-4
+    config:
+      scripts_path: ${config.validation_scripts}
+      validate_format: true
+      validate_increment: true
+      validate_consistency: true
+      validate_changelog: true
+
+  - id: step-6
+    name: Document & Proceed
+    type: documentation
+    handler: package.document_changes
+    required: true
+    dependencies:
+      - step-5
+    config:
+      document_reasoning: true
+      pass_to_rw: true
+      continue_rw: true
+
+parameters:
+  - name: packages
+    type: array
+    required: false
+    label: Specific Packages
+    description: Optional list of specific packages to version (if not provided, auto-detect)
+
+  - name: skip_validation
+    type: boolean
+    required: false
+    default: false
+    label: Skip Validation
+    description: Skip validation steps (not recommended)
+
+  - name: dry_run
+    type: boolean
+    required: false
+    default: false
+    label: Dry Run
+    description: Show what would be done without making changes
+

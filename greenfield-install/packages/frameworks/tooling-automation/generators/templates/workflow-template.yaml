@@ -1,0 +1,69 @@
+name: {workflow_name}
+version: {version}
+type: {workflow_type}
+description: {description}
+
+config:
+  # Add workflow-specific configuration here
+
+steps:
+  - id: step-1
+    name: Analyze
+    type: analysis
+    handler: {workflow_type}.analyze
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies: []
+    config:
+      target_paths: []
+      analysis_depth: full
+
+  - id: step-2
+    name: Plan
+    type: planning
+    handler: {workflow_type}.plan
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-1
+    config:
+      create_plan_doc: true
+
+  - id: step-3
+    name: Execute
+    type: execution
+    handler: {workflow_type}.execute
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-2
+    config:
+      incremental: true
+
+  - id: step-4
+    name: Validate
+    type: validation
+    handler: {workflow_type}.validate
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-3
+    config:
+      strict_mode: true
+
+  - id: step-5
+    name: Document
+    type: documentation
+    handler: {workflow_type}.update_docs
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-3
+    config:
+      update_readme: true
+

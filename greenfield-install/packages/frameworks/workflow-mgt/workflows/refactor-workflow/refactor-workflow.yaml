@@ -1,0 +1,226 @@
+name: Refactor Workflow
+version: 1.0.0
+type: refactor
+description: Systematic code refactoring workflow with validation and documentation
+
+config:
+  refactor_branch_prefix: refactor/
+  test_command: pytest
+  lint_command: ruff check
+  type_check_command: mypy
+
+steps:
+  - id: step-1
+    name: Analyze Current Code Structure
+    type: analysis
+    handler: refactor.analyze_structure
+    required: true
+    dependencies: []
+    config:
+      target_paths: []
+      analysis_depth: full
+      include_dependencies: true
+
+  - id: step-2
+    name: Plan Refactoring Approach
+    type: planning
+    handler: refactor.plan_approach
+    required: true
+    dependencies:
+      - step-1
+    config:
+      refactoring_type: structural
+      preserve_functionality: true
+      create_plan_doc: true
+
+  - id: step-3
+    name: Create Refactoring Branch
+    type: git_branch
+    handler: git.create_branch
+    required: true
+    dependencies:
+      - step-2
+    config:
+      branch_prefix: ${config.refactor_branch_prefix}
+      branch_name_template: "${refactor_type}-${target_module}"
+
+  - id: step-4
+    name: Execute Refactoring
+    type: execution
+    handler: refactor.execute
+    required: true
+    dependencies:
+      - step-3
+    config:
+      refactoring_steps: []
+      backup_before: true
+      incremental: true
+
+  - id: step-5
+    name: Run Linting
+    type: validation
+    handler: refactor.run_linting
+    required: true
+    dependencies:
+      - step-4
+    config:
+      lint_command: ${config.lint_command}
+      strict_mode: true
+      auto_fix: false
+
+  - id: step-6
+    name: Run Type Checking
+    type: validation
+    handler: refactor.run_type_check
+    required: false
+    enabled: true
+    dependencies:
+      - step-4
+    config:
+      type_check_command: ${config.type_check_command}
+      strict_mode: false
+
+  - id: step-7
+    name: Run Test Suite
+    type: validation
+    handler: refactor.run_tests
+    required: true
+    dependencies:
+      - step-4
+    config:
+      test_command: ${config.test_command}
+      coverage_threshold: 80
+      fail_on_regression: true
+
+  - id: step-8
+    name: Update Documentation
+    type: documentation
+    handler: refactor.update_docs
+    required: true
+    dependencies:
+      - step-4
+    config:
+      update_readme: true
+      update_api_docs: true
+      update_changelog: false
+
+  - id: step-9
+    name: Stage Changes
+    type: git_stage
+    handler: git.stage_all
+    required: true
+    dependencies:
+      - step-4
+      - step-5
+      - step-6
+      - step-7
+      - step-8
+    config:
+      paths:
+        - "*"
+
+  - id: step-10
+    name: Commit Changes
+    type: git_commit
+    handler: git.commit
+    required: true
+    dependencies:
+      - step-9
+    config:
+      message_template: "Refactor: {summary}\n\n{detailed_changes}"
+
+  - id: step-11
+    name: Push Branch
+    type: git_push
+    handler: git.push
+    required: false
+    enabled: true
+    dependencies:
+      - step-10
+    config:
+      remote: origin
+      push_tags: false
+
+  - id: step-12
+    name: Post-Refactor Verification
+    type: verification
+    handler: refactor.verify_refactoring
+    required: false
+    enabled: true
+    dependencies:
+      - step-11
+    config:
+      verify_functionality: true
+      verify_performance: false
+      verify_tests: true
+
+  - id: step-13
+    name: Document Refactoring Results
+    type: documentation
+    handler: refactor.document_results
+    required: false
+    enabled: true
+    dependencies:
+      - step-12
+    config:
+      create_summary: true
+      document_improvements: true
+      document_metrics: true
+
+parameters:
+  - name: refactor_type
+    type: enum
+    required: true
+    label: Refactoring Type
+    description: Type of refactoring to perform
+    options:
+      - value: structural
+        label: Structural (reorganize code structure)
+      - value: naming
+        label: Naming (improve naming conventions)
+      - value: extraction
+        label: Extraction (extract functions/classes)
+      - value: simplification
+        label: Simplification (simplify complex code)
+      - value: performance
+        label: Performance (optimize performance)
+
+  - name: target_module
+    type: string
+    required: true
+    label: Target Module
+    description: Module or component to refactor
+
+  - name: summary
+    type: string
+    required: true
+    label: Refactoring Summary
+    description: Brief description of the refactoring
+
+  - name: detailed_changes
+    type: textarea
+    required: false
+    label: Detailed Changes
+    description: Optional detailed list of refactoring changes
+
+  - name: preserve_functionality
+    type: boolean
+    required: false
+    default: true
+    label: Preserve Functionality
+    description: Ensure refactoring does not change functionality
+
+  - name: run_tests
+    type: boolean
+    required: false
+    default: true
+    label: Run Test Suite
+    description: Run test suite after refactoring
+
+  - name: update_docs
+    type: boolean
+    required: false
+    default: true
+    label: Update Documentation
+    description: Update documentation after refactoring
+
