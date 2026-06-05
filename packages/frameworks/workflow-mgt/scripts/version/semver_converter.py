@@ -176,20 +176,8 @@ def create_rw_tags(internal_version: str, create_internal_tag: bool = True) -> D
 
 
 def find_registry_file() -> Path:
-    """Find semver-registry.yaml in project root."""
-    # Start from script location and walk up to find project root
-    current = Path(__file__).parent
-    while current != current.parent:
-        registry_file = current / "semver-registry.yaml"
-        if registry_file.exists():
-            return registry_file
-        # Also check one level up (common project root location)
-        parent_registry = current.parent / "semver-registry.yaml"
-        if parent_registry.exists():
-            return parent_registry
-        current = current.parent
-    # Default: assume project root is 4 levels up from scripts/version/
-    return Path(__file__).parent.parent.parent.parent.parent / "semver-registry.yaml"
+    """Return semver-registry.yaml path at the rw-config project root."""
+    return find_project_root(Path(__file__).parent) / "semver-registry.yaml"
 
 
 def load_semver_registry() -> Dict[str, Any]:
