@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.11.7+5] - 05-06-26
+
+E04:S11:T07 — **Wave 0 catalog:** Embedded/discrete task census (417 / 301); migration plan §1.1 filled. SemVer **v0.4.920+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+5.md)
+
+---
+
 ## [0.4.11.7+4] - 05-06-26
 
 E04:S11:T07 — **Dev merge consolidation:** Five parallel E04 task branches merged; SemVer tag **v0.4.914** (BR-097 collision recovery). SemVer **v0.4.914+4**.

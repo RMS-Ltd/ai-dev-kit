@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Migration Plan: Embedded Tasks to Discrete Task Documents
 
 **Purpose:** Comprehensive migration plan to convert all embedded tasks (delimited sections in Story documents) to discrete Task documents (separate files)  
-**Status:** DRAFT  
+**Status:** APPROVED (Wave 0 catalog complete 2026-06-05)  
 **Version:** 1.0.0  
 **Part of:** E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents  
 **Related:** FR-016: Kanban Granularity & Discrete Task Docs (3-Tier Structure)
@@ -20,9 +20,10 @@ housekeeping_policy: keep
 
 This document provides a comprehensive migration plan to convert **784 embedded task references** in Story documents to **discrete Task documents** (separate files), fully implementing the 3-tier Kanban structure as mandated by FR-016.
 
-**Current State:**
-- 784 embedded task references in Story documents
-- 43 discrete Task documents exist (examples)
+**Current State (catalog scan 2026-06-05, Wave 0):**
+- **417** embedded task sections (`##`/`###` headers with `E:S:T` tokens) across **69** Story files
+- **301** discrete Task documents (`T{nn}-*.md`) already on disk
+- Legacy estimate **784** (pre-scan) — superseded; recount used header-boundary detection only
 - Policy mandates discrete Task documents (recommended format)
 
 **Target State:**
@@ -42,21 +43,31 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 
 ### 1.1 Task Distribution
 
-**Embedded Tasks by Epic:**
-- Epic 1: [TBD - to be analyzed]
-- Epic 2: [TBD - to be analyzed]
-- Epic 3: [TBD - to be analyzed]
-- Epic 4: [TBD - to be analyzed]
-- Epic 5: [TBD - to be analyzed]
-- Epic 6: [TBD - to be analyzed]
-- Epic 7+: [TBD - to be analyzed]
+**Embedded task sections by Epic (2026-06-05 scan):**
 
-**Total:** 784 embedded task references across all Epics
+| Epic | Embedded sections | Discrete `T*.md` files | Notes |
+|------|-------------------|------------------------|-------|
+| E01 | 21 | 17 | Core framework |
+| E02 | 93 | 61 | Largest embedded count |
+| E03 | 34 | 12 | Versioning framework |
+| E04 | 86 | 54 | Host epic (FR-016) |
+| E05 | 47 | 47 | Parity embedded/discrete |
+| E06 | 38 | 63 | More discrete than embedded |
+| E07 | 30 | 33 | Maintenance / reviews |
+| E08 | 21 | 7 | Tooling & automation |
+| E09 | 0 | 7 | Discrete-only stories |
+| E10 | 12 | 0 | Embedded-only (doc-lifecycle RC) |
+| E11 | 12 | 0 | Embedded-only (debug-path RC) |
+| E21 | 28 | 0 | Project-specific |
+
+**Total:** **417** embedded sections · **301** discrete files · **69** stories with ≥1 embedded section
+
+**Highest-density stories (pilot candidates):** E05:S06 (25), E02:S05 (15), E06:S08 (14), E03:S02 (11), E04:S12 (11), E07:S06 (11)
 
 **Discrete Task Documents:**
-- 43 discrete Task documents exist (examples)
-- Located in various Story directories
-- Follow canonical template structure
+- 301 files under `epics/epic-*/story-*/T*.md`
+- Mix of fully migrated stories (E05:S06, E06:S09) and partial migration (E04:S19)
+- Follow canonical template structure where created via intake/RW
 
 ### 1.2 Task Patterns
 
