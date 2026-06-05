@@ -17,7 +17,9 @@ if str(script_dir) not in sys.path:
     sys.path.insert(0, str(script_dir))
 
 from validate_version_bump import (
+    extract_epic_story_from_path,
     extract_task_id_canonical,
+    find_story_file,
     is_perpetual_task,
     parse_requested_task_id,
     validate_perpetual_build_increment,
@@ -26,6 +28,27 @@ from validate_version_bump import (
     validate_perpetual_guardrails,
     validate_version_bump,
 )
+
+
+def test_extract_epic_story_from_path_legacy_stories_subdir():
+    path = Path("docs/project-management/kanban/epics/epic-03/stories/story-003-versioning.md")
+    assert extract_epic_story_from_path(path) == (3, 3)
+
+
+def test_find_story_file_ignores_references_epic_mismatch():
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = Path(tmpdir)
+        orig_cwd = os.getcwd()
+        try:
+            os.chdir(tmp)
+            d = tmp / "docs/project-management/kanban/epics/epic-03/stories"
+            d.mkdir(parents=True)
+            sf = d / "story-003-versioning.md"
+            sf.write_text("# Story 003\n**Code:** E3S03\n\n## References\n- Epic 4 Story 3\n")
+            found = find_story_file({"use_kanban": True, "kanban_root": "docs/project-management/kanban", "story_doc_pattern": "epics/epic-{epic:02d}/story-{story:02d}-*.md"}, 3, 3)
+            assert found and found.name == sf.name
+        finally:
+            os.chdir(orig_cwd)
 
 
 # --- T1: Task ID extraction prefers canonical section ---

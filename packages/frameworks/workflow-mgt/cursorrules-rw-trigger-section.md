@@ -442,9 +442,10 @@ For each step, follow this pattern:
    - **Examples**:
      - Registry mode: `v0.6.7.18+2` (internal version tag)
      - Task-touch mode: `v0.9.5` (SemVer core tag, internal traceability tag: `v0.6.7.18+2`)
-12. **Push to Remote** - Push epic branch and tags to origin (DO NOT push to main unless ready to deploy)
+12. **Push to Remote** - Push epic branch and release-scoped tags to origin (DO NOT push to main unless ready to deploy)
     - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
-    - Push internal and SemVer tags: `git push origin {branch} --tags`
+    - **🚨 FORBIDDEN:** `git push origin {branch} --tags` (pushes all local tags; stale SemVer tags → false failures)
+    - **Use:** `python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" --branch "{branch}" --internal-version "{internal_version}"`
 12.5. **Create/Update GitHub Release** - **MANDATORY:** Run `create_github_release.py` with SemVer tag (loads `GITHUB_TOKEN` from `.env.local` when present). Non-blocking if token missing.
 13. **Housekeeping** - Cancel/clear workflow step tracker entries (`rw-step-*`); finalize agent run log per [ADR-011](KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md).
 

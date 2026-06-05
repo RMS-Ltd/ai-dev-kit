@@ -1,0 +1,13 @@
+{
+  "release_version": "0.2.11.14+2",
+  "task": "E02:S11:T14",
+  "invocation_context": "rw_step_7",
+  "touched_surfaces": [
+    {"surface": "task_doc", "path": "docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md", "why": "COMPLETE + version"},
+    {"surface": "story_doc", "path": "docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md", "why": "T14 checklist complete"},
+    {"surface": "fr_br_doc", "path": "docs/project-management/kanban/fr-br/BR-052-github-actions-workflow-optimization.md", "why": "T14 delivery section"},
+    {"surface": "kboard", "path": "docs/project-management/kanban/kboard.md", "why": "T14 row COMPLETE stamp"},
+    {"surface": "kanban_completed", "path": "docs/project-management/kanban/kanban-completed.md", "why": "ledger entry"},
+    {"surface": "ipp", "path": "docs/implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md", "why": "planning package"}
+  ]
+}

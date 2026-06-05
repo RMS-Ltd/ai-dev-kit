@@ -338,28 +338,20 @@ def get_version_components(version_file: Path) -> Optional[Tuple[int, int, int, 
 def extract_epic_story_from_path(story_file: Path) -> Optional[Tuple[int, int]]:
     """
     Extract Epic and Story numbers from file path.
-    
-    Examples:
-    - epic-03/stories/story-03-*.md → (3, 3)
-    - epic-02/stories/story-01-*.md → (2, 1)
+
+    Path extraction is authoritative — never infer Epic/Story from file content.
     """
     path_str = str(story_file)
-    
-    # Pattern 1: Epic-{N}/stories/Story-{NNN}
-    pattern1 = re.search(r'Epic-(\d+)/stories/Story-(\d+)', path_str)
-    if pattern1:
-        return (int(pattern1.group(1)), int(pattern1.group(2)))
-    
-    # Pattern 2: Epic-{N}/Story-{NNN}
-    pattern2 = re.search(r'Epic-(\d+)/Story-(\d+)', path_str)
-    if pattern2:
-        return (int(pattern2.group(1)), int(pattern2.group(2)))
-
-    # Pattern 3: epic-{NN}/story-{NN} (lowercase kanban paths)
-    pattern3 = re.search(r'epic-(\d+)/story-(\d+)', path_str, re.IGNORECASE)
-    if pattern3:
-        return (int(pattern3.group(1)), int(pattern3.group(2)))
-    
+    path_patterns = [
+        r'[Ee]pic-(\d+)/stories/[Ss]tory-(\d+)',
+        r'[Ee]pic-(\d+)/[Ss]tory-(\d+)',
+        r'epic-(\d+)/stories/story-(\d+)',
+        r'epic-(\d+)/story-(\d+)',
+    ]
+    for pattern in path_patterns:
+        match = re.search(pattern, path_str, re.IGNORECASE)
+        if match:
+            return (int(match.group(1)), int(match.group(2)))
     return None
 
 
@@ -381,9 +373,9 @@ def find_story_file(config: Optional[Dict] = None, epic: int = None, story: int 
     Find Story file based on config or fallback patterns.
     
     Detection priority:
-    1. File path extraction (Epic-{N}/stories/Story-{NNN})
+    1. File path extraction (epic-{N}/story-{NN}, epic-{N}/stories/story-{NNN}, Epic-{N}/Story-{NNN})
     2. Code field extraction (**Code:** E{epic}S{story})
-    3. Content-based regex (last resort, more specific patterns)
+    Content-based Epic/Story regex is intentionally omitted (BR-001).
     
     If epic and story are provided, tries to find matching Story file.
     """
@@ -400,8 +392,10 @@ def find_story_file(config: Optional[Dict] = None, epic: int = None, story: int 
     
     # Fallback: Search for Story files
     fallback_patterns = [
+        "docs/project-management/kanban/epics/epic-*/story-*.md",
+        "docs/project-management/kanban/epics/epic-*/stories/story-*.md",
         "docs/project-management/kanban/epics/Epic-*/Story-*.md",
-        "docs/project-management/kanban/epics/Epic-*/stories/Story-*.md",  # Legacy support
+        "docs/project-management/kanban/epics/Epic-*/stories/Story-*.md",
     ]
     
     for pattern in fallback_patterns:
@@ -437,25 +431,6 @@ def find_story_file(config: Optional[Dict] = None, epic: int = None, story: int 
             code_epic_story = extract_epic_story_from_code_field(content)
             if code_epic_story and code_epic_story == (epic, story):
                 return story_file
-        except Exception:
-            continue
-    
-    # Method 3: Content-based regex (last resort, but more specific)
-    # Look for patterns in header/metadata sections, not References
-    for story_file in candidate_files:
-        try:
-            content = story_file.read_text()
-            # Look for "Story {NNN}" in title/header (first 50 lines)
-            header_content = '\n'.join(content.split('\n')[:50])
-            story_match = re.search(r'#\s*Story\s+(\d+)', header_content, re.IGNORECASE)
-            if story_match:
-                file_story = int(story_match.group(1))
-                # Extract epic from path (more reliable than content)
-                path_epic_story = extract_epic_story_from_path(story_file)
-                if path_epic_story:
-                    file_epic = path_epic_story[0]
-                    if file_epic == epic and file_story == story:
-                        return story_file
         except Exception:
             continue
     
