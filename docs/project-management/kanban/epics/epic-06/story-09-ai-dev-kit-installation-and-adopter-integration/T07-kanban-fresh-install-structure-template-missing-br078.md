@@ -34,7 +34,7 @@ Fix missing `KANBAN_STRUCTURE_TEMPLATE.md` resolution in `install_kanban_framewo
 
 - [BR-078](../../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) reproduction (book dry-run / greenfield clone)
 - `packages/frameworks/kanban/` installer sources and template paths
-- **IPW planning artifact:** [IPP-E06S09T07-br078-kanban-structure-template-missing.md](../../../../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md) — **Publication Status: PUBLISHED**
+- **IPW planning artifact:** [IPP-E6S9T7-br078-kanban-structure-template-missing.md](../../../../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md) — **Publication Status: PUBLISHED**
 
 ---
 
@@ -62,5 +62,5 @@ Fix missing `KANBAN_STRUCTURE_TEMPLATE.md` resolution in `install_kanban_framewo
 ## Links
 
 - [BR-078](../../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md)
-- [IPP-E06S09T07](../../../../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md)
+- [IPP-E6S9T7](../../../../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

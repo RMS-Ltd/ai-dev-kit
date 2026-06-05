@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E6S07T111-Test-Design: FR-078 Comprehensive Install Event-Contract Logging Quality
+# ICW-E6S7T111-Test-Design: FR-078 Comprehensive Install Event-Contract Logging Quality
 
 **Task:** E6:S07:T111  
 **Related FR:** FR-078  

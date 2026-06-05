@@ -64,6 +64,6 @@ Separately, **`pytest`** at repo root reports **7 failing tests** (85 passed, 92
 
 ## Resolution (v0.8.3.4+1, E08:S03:T04)
 
-- Added [`.github/workflows/tests.yml`](../../../../.github/workflows/tests.yml) — `name: Tests`, Python 3.11, `pytest tests/` on PR + push to `main`/`dev`.
+- Added [`.github/workflows/tests.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/tests.yml) — `name: Tests`, Python 3.11, `pytest tests/` on PR + push to `main`/`dev`.
 - Remediated root pytest suite (348 passed locally); complements [E07:S07:T02](../epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md) scoped workflow-mgt gate.
 - Historical `workflow_run: Tests` trigger remains moot (badges workflow removed per FR-064).

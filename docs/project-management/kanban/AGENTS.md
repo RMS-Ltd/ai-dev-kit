@@ -1,6 +1,6 @@
 # Kanban Workflow Agents
 
-**Cold-start bootstrap (all agents):** repo-root [`AGENTS.md`](../../../AGENTS.md) and [`docs/project-agent-manifest.json`](../../../project-agent-manifest.json). This file holds **domain role** detail for kanban, intake, and documentation coordination.
+**Cold-start bootstrap (all agents):** repo-root [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) and [`docs/project-agent-manifest.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-agent-manifest.json). This file holds **domain role** detail for kanban, intake, and documentation coordination.
 
 ---
 
@@ -14,9 +14,9 @@ When executing Release Workflow (RW, RW -d, RW -k):
 
 **Coordination:** Validation Agent (branch safety); Documentation Agent (changelog, README, completed ledgers).
 
-**Canonical execution:** `.cursorrules` RW section · `.claude/commands/rw.md` · [release-workflow-agent-execution.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+**Canonical execution:** `.cursorrules` RW section · `.claude/commands/rw.md` · [release-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 
-**Human quick reference:** [workflow-initiation-cheatsheet.md](../../../guides/workflow-initiation-cheatsheet.md)
+**Human quick reference:** [workflow-initiation-cheatsheet.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/guides/workflow-initiation-cheatsheet.md)
 
 ---
 

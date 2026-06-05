@@ -123,7 +123,7 @@ Greenfield kanban installs copy a canonical **kanban structure** document from a
 
 | Doc ID | Canonical path | Publication status |
 | ------ | -------------- | ------------------ |
-| IPP | `docs/implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md` | PUBLISHED |
+| IPP | `docs/implementation-cycles/IPP-E6S9T7-br078-kanban-structure-template-missing.md` | PUBLISHED |
 | D-U1 | `packages/frameworks/kanban/README.md` | PUBLISHED on implementation |
 
 ---

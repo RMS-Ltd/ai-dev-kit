@@ -114,7 +114,7 @@ MoSCOW task rows express peer review (`IN REVIEW`, icon A1) and external queue (
 
 ### 4.1 Files to create or modify
 
-- `docs/implementation-cycles/IPP-E04S13T08-*.md` (this file)
+- `docs/implementation-cycles/IPP-E4S13T8-*.md` (this file)
 - `packages/frameworks/workflow-mgt/scripts/kanban/state_icons.py`
 - `packages/frameworks/workflow-mgt/scripts/test_state_icons.py`
 - `packages/frameworks/workflow-mgt/KB/.../state-icons.md`
@@ -130,7 +130,7 @@ MoSCOW task rows express peer review (`IN REVIEW`, icon A1) and external queue (
 
 | Doc ID | Path | Action |
 | ------ | ---- | ------ |
-| D1 | IPP-E04S13T08 | CREATE |
+| D1 | IPP-E4S13T8 | CREATE |
 | D2 | T08 task | UPDATE |
 | D3 | UXR-019 | UPDATE |
 | D4–D7 | state_icons, tests, guides, kboard | UPDATE |
@@ -147,7 +147,7 @@ MoSCOW task rows express peer review (`IN REVIEW`, icon A1) and external queue (
 
 | Doc ID | Path | Publication |
 | ------ | ---- | ----------- |
-| D1 | `docs/implementation-cycles/IPP-E04S13T08-*.md` | PUBLISHED |
+| D1 | `docs/implementation-cycles/IPP-E4S13T8-*.md` | PUBLISHED |
 | D2 | T08 task doc | NOT_APPLICABLE |
 | D3–D7 | As §5 | PUBLISHED |
 

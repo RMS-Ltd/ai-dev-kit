@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-After `install_kanban_framework.py --mode fresh`, `install_release_workflow.py --mode c` **loops forever** on the story document pattern prompt when the reader presses **Enter** to accept the fresh-layout default `epics/Epic-{epic}/Story-{story:03d}-*.md`.
+After `install_kanban_framework.py --mode fresh`, `install_release_workflow.py --mode c` **loops forever** on the story document pattern prompt when the reader presses **Enter** to accept the fresh-layout default `epics/Epic-\{epic\}/Story-{story:03d}-*.md`.
 
 BR-083/T12 improved detection and defaults but left two gaps that block the **interactive** greenfield path.
 
@@ -31,7 +31,7 @@ BR-083/T12 improved detection and defaults but left two gaps that block the **in
 
 1. Fresh kanban install (epics only — no `Story-*.md` files yet).
 2. Run RW installer mode C; accept epic default (12 matches).
-3. At story pattern, press **Enter** on default `[epics/Epic-{epic}/Story-{story:03d}-*.md]`.
+3. At story pattern, press **Enter** on default `[epics/Epic-\{epic\}/Story-{story:03d}-*.md]`.
 
 **Observed:**
 
@@ -48,7 +48,7 @@ Repeats indefinitely.
 
 **File:** `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
 
-1. **`validate_required_placeholders`** — substring check `"{story}" in value` fails for `{story:03d}` (next character after `y` is `:`, not `}`).
+1. **`validate_required_placeholders`** — substring check `"\{story\}" in value` fails for `{story:03d}` (next character after `y` is `:`, not `}`).
 2. **`prompt_pattern_with_validation` + `strict_zero_match`** — fresh kanban creates epics before stories; zero-match story pattern is rejected even when the default is installer-aligned.
 
 ---
@@ -64,13 +64,13 @@ Repeats indefinitely.
 ## Workaround (until fix ships)
 
 - `install_release_workflow.py --mode c --config rw-config.seed.yaml` (book dry-run), **or**
-- Type `epics/Epic-{epic}/Story-{story}-*.md` after adding a placeholder `Story-*.md` file.
+- Type `epics/Epic-\{epic\}/Story-\{story\}-*.md` after adding a placeholder `Story-*.md` file.
 
 ---
 
 ## Acceptance Criteria
 
-- [x] `{story:03d}` satisfies `{story}` placeholder requirement.
+- [x] `{story:03d}` satisfies `\{story\}` placeholder requirement.
 - [x] Epic-only fresh kanban: Enter on story default completes interactively.
 - [x] Tests in `tests/test_install_release_workflow_patterns.py`.
 - [x] ExpensesTracker T03 replay passes without manual `rw-config` seed.

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}`
+**Format:** `E\{epic\}:S\{story\}:T\{task\}`
 
 **Full Task ID:** `E02:S01:T10`
 
@@ -54,7 +54,7 @@ Implement support for a dedicated `dev` branch in RW branch-context validation u
 - Define strict behavior on `dev`:
   - `dev` requires configured `dev_branch_epic` in `rw-config.yaml`.
   - Missing/invalid `dev_branch_epic` is a blocking validation failure.
-  - Keep epic/version alignment blocking exactly as `epic/{n}` branch mode.
+  - Keep epic/version alignment blocking exactly as `epic/\{n\}` branch mode.
   - Keep task intent, version bump, and changelog validators strict.
 - Update RW execution docs and rules to document `dev` behavior and guardrails.
 - Ensure release traces clearly indicate `dev`-mode execution where applicable.
@@ -64,7 +64,7 @@ Implement support for a dedicated `dev` branch in RW branch-context validation u
 ## Acceptance Criteria
 
 - [x] `validate_branch_context.py` recognizes `dev` and requires `dev_branch_epic` mapping.
-- [x] `dev` follows strict epic/version alignment checks (same blocking behavior as `epic/{n}`).
+- [x] `dev` follows strict epic/version alignment checks (same blocking behavior as `epic/\{n\}`).
 - [x] RW docs define required blocking behavior for `dev` strict-equal-epic mode.
 - [x] `.cursorrules` branch mapping and validation guidance updated for strict `dev` mode.
 - [x] UXR-006 remains cross-linked and traceable.

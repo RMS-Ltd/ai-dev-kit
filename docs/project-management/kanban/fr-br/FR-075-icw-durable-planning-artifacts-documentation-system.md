@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E05:S01:T75](../epics/epic-05/story-01-fr-repo/T75-icw-durable-planning-artifacts-documentation-system.md)
 
-**Related:** [FR-040 – Implementation Cycle Workflow (ICW)](./FR-040-implementation-cycle-workflow-icw.md); [FR-048 – ICW task identifier argument](./FR-048-icw-task-identifier-argument.md)
+**Related:** [FR-040 – Implementation Cycle Workflow (ICW)](FR-040-implementation-cycle-workflow-icw.md); [FR-048 – ICW task identifier argument](FR-048-icw-task-identifier-argument.md)
 
 ---
 

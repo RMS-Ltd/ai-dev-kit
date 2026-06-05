@@ -183,7 +183,7 @@ python "packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bri
 
 - Keep `hook_profile: minimal` and `excluded_components: [baseline:hooks]` until you review SessionStart / pre-RW behavior.
 - Populate `disabled_hooks` from the bridge template examples (RW/git conflicts).
-- **Pre-RW advisory:** Any ECC pre-RW quality hook is **non-blocking**; ADK **Step 10** validators remain authoritative ([AgentShield bridge doc](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md)).
+- **Pre-RW advisory:** Any ECC pre-RW quality hook is **non-blocking**; ADK **Step 10** validators remain authoritative ([AgentShield bridge doc](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md)).
 
 ---
 
@@ -288,7 +288,7 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | GO/NO-GO matrix | [Phase 0 evaluation](../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) |
 | FR scope / phases | [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md) |
 | Throwaway dogfood (E2E) | §3 **Throwaway branch playbook** (this doc) |
-| Greenfield install | [INSTALL_IN_YOUR_PROJECT.md](../../../INSTALL_IN_YOUR_PROJECT.md) |
+| Greenfield install | [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) |
 | RW detail | `packages/frameworks/workflow-mgt/KB/.../release-workflow-agent-execution.md` |
 | Bridge template | `packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template` |
 
@@ -302,7 +302,7 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | **1** | `adk-*` skill pack + `validate_adk_ecc_skill_pack.py` — **done** ([T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)) |
 | **2** | `install_ecc_harness_optional.sh`, `validate_ecc_adk_bridge.py`, INSTALL optional step — **done** ([T06](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)) |
 | **3** | Hook defaults in bridge template + cheatsheet §3G — **done** |
-| **4** | [AgentShield RW add-on doc](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md) — **done** |
+| **4** | [AgentShield RW add-on doc](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md) — **done** |
 | **5** | Layered architecture + book sidebar (§11) — **done** |
 
 If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `skills/` tree from [T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md).
@@ -316,7 +316,7 @@ If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `sk
 
 Cross-links:
 
-- [AI Dev Kit vision and purpose](../../documentation/ai-dev-kit-vision-and-purpose.md)
+- [AI Dev Kit vision and purpose](../ai-dev-kit-vision-and-purpose.md)
 - [Integration specification](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 
 **Book sidebar (Head First AI-Assisted Development):** Position ECC as an optional **15-minute harness sidebar** after the ADK full-stack install — same mental model as §1 above. Readers install ADK first; ECC augments agent craft without replacing governance workflows.

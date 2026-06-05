@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Bug Report BR-069: kboard row-footer timestamp overwrite and task-ID multiplication regression
 
-**Status:** CLOSED (FR-097 / E02:S15:T08 — `validate_board_stamp_diff.py` blocking gate, pipeline `non_substantive`, automatic backfill 71 rows, Gate 8 homogeneity PASS; evidence: [fr097-backfill-report.json](../../../docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json); formal version on `RW E02:S15:T08`)  
+**Status:** CLOSED (FR-097 / E02:S15:T08 — `validate_board_stamp_diff.py` blocking gate, pipeline `non_substantive`, automatic backfill 71 rows, Gate 8 homogeneity PASS; evidence: [fr097-backfill-report.json](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json); formal version on `RW E02:S15:T08`)  
 **Priority:** CRITICAL  
 **Severity:** HIGH  
 **Created:** 2026-04-21  
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 > **Gating note (2026-04-27):** T04 Phases A-D delivered narrowed-scope guardrails and remain valid as historical sign-off, but live `kboard.md` continue to exhibit BR-069-class symptoms (duplicate tail tokens, residual stamp churn). Final BR closure is gated on FR-092 Wave 4 corpus sweep producing zero duplicate tail tokens and zero synthetic stamp churn on live boards (FR-092 AC-M5 + AC-M7).
 >
-> **Wave 4 + Wave 6 + Wave 8 sign-off (2026-04-27):** B1 root cause identified and fixed (regex flaw in `_normalize_traceability_segments_for_row` — separator class broadened from `[|]` to `[-|]` so hyphen-preceded inline FBU/Task drift is removed). Corpus-canonical sweep evidence in [`fr092-wave4-corpus-sweep-evidence.md`](../../../changelog-and-release-notes/changelog-archive/four-surface-reports/fr092-wave4-corpus-sweep-evidence.md). Wave 6 forensic stamp evidence gate (UXR-009 absorbed) prevents future synthetic stamp churn on board-hygiene paths. Wave 8 live re-sweep across all 4 active boards: `rows_changed=0`, `rows_with_duplicate_footers=0`, `stamps_appended_with_evidence=0`, `stamps_preserved_existing=109`. The systemic regression is structurally eliminated. **All ACs proved satisfied; final BR-069 closure remains scoped to the live RW E02:S15:T07 --art that publishes the meta-program (Wave 8 terminal).**
+> **Wave 4 + Wave 6 + Wave 8 sign-off (2026-04-27):** B1 root cause identified and fixed (regex flaw in `_normalize_traceability_segments_for_row` — separator class broadened from `[|]` to `[-|]` so hyphen-preceded inline FBU/Task drift is removed). Corpus-canonical sweep evidence in [`fr092-wave4-corpus-sweep-evidence.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr092-wave4-corpus-sweep-evidence.md). Wave 6 forensic stamp evidence gate (UXR-009 absorbed) prevents future synthetic stamp churn on board-hygiene paths. Wave 8 live re-sweep across all 4 active boards: `rows_changed=0`, `rows_with_duplicate_footers=0`, `stamps_appended_with_evidence=0`, `stamps_preserved_existing=109`. The systemic regression is structurally eliminated. **All ACs proved satisfied; final BR-069 closure remains scoped to the live RW E02:S15:T07 --art that publishes the meta-program (Wave 8 terminal).**
 
 ---
 
@@ -80,7 +80,7 @@ Running the typical deterministic **UKW** board pass (`enforce_terminal_timestam
 - [x] Root cause is identified (specific code path + mutation condition).
 - [x] Guardrail is defined so non-substantive updates cannot overwrite preserved historical row timestamps.
 - [x] Guardrail is defined so row normalization cannot append duplicate task-ID segments.
-- [x] Documentary regression: `test_4_13` in `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` encodes UKW vs `update_kanban_board` ordering divergence and the non-terminal footer + second `Last modified` append (see [IPP-E02S15T04](../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md) §5.3).
+- [x] Documentary regression: `test_4_13` in `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` encodes UKW vs `update_kanban_board` ordering divergence and the non-terminal footer + second `Last modified` append (see [IPP-E2S15T4](../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md) §5.3).
 - [x] After code remediation, automated tests assert **preservation** of earliest historical `Last modified` and **no** spurious second footer on touch-only / UKW runs.
 - [x] Regression tests cover single-instance task-ID segment invariants under repeated runs.
 - [x] BR-069, implementing task, and board/story wiring are bidirectionally consistent.
@@ -91,7 +91,7 @@ Running the typical deterministic **UKW** board pass (`enforce_terminal_timestam
 
 ## Related
 
-- [IPP-E02S15T04 — BR-069 row-tail normalization and terminal timestamp interaction](../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
+- [IPP-E2S15T4 — BR-069 row-tail normalization and terminal timestamp interaction](../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 - [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
 - [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [E06:S07:T115](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)

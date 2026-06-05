@@ -72,7 +72,7 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 
 **Rationale:** ECC is **optional and backward-compatible**. Release notes and install docs carry the harness-layer signal; SemVer PATCH reflects incremental delivery without inflating MINOR for every phase.
 
-**Out of scope for FR-098 SemVer:** Public repo rebirth ([FR-099](./FR-099-spin-off-book-epic-to-private-repository.md) Phase 3) — version that cut on the **new public** repo policy, not as an ECC MINOR bump on the private lineage.
+**Out of scope for FR-098 SemVer:** Public repo rebirth ([FR-099](FR-099-spin-off-book-epic-to-private-repository.md) Phase 3) — version that cut on the **new public** repo policy, not as an ECC MINOR bump on the private lineage.
 
 ---
 
@@ -144,9 +144,9 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 
 **Related Work:**
 
-- [FR-080](./FR-080-greenfield-installation-process.md) — Greenfield install (optional ECC step extends this)
-- [FR-081](./FR-081-brownfield-modular-adopter-integration.md) — Brownfield modular adoption (ECC as optional surface)
-- [FR-041](./FR-041-windsurf-investigate-agents-skills-for-workflows.md) — Prior harness/skills investigation (CLOSED; Cursor skills pattern)
+- [FR-080](FR-080-greenfield-installation-process.md) — Greenfield install (optional ECC step extends this)
+- [FR-081](FR-081-brownfield-modular-adopter-integration.md) — Brownfield modular adoption (ECC as optional surface)
+- [FR-041](FR-041-windsurf-investigate-agents-skills-for-workflows.md) — Prior harness/skills investigation (CLOSED; Cursor skills pattern)
 - [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) — Adoption policy
 - External: [affaan-m/ECC](https://github.com/affaan-m/ECC) (MIT, harness-native operator system)
 
@@ -187,9 +187,9 @@ ADK uses **`semver_mapping_strategy: task_touch`** ([dev-kit-versioning-policy](
 
 - [Integration specification](../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) — normative contract + MIT attribution
 - [Phase 0 evaluation](../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) — matrix, procedure, **GO** for Phase 1
-- [Bridge template](../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
-- [IPP-E06S09T04](../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md)
-- Phase 1 **COMPLETE:** [E06:S09:T05](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E06S09T05](../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
+- [Bridge template](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
+- [IPP-E6S9T4](../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
+- Phase 1 **COMPLETE:** [E06:S09:T05](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) — [IPP-E6S9T5](../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md); five `adk-*` skills + validator on `dev` (consolidated from `main` 2026-05-26)
 - Adopter quick-start: [ECC + ADK integration cheatsheet](../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
 - **Phases 2–5:** [E06:S09:T06](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) — **COMPLETE** **v0.6.9.6+3** (dogfood T8 on `throwaway/ecc-dogfood-E06S09T06`; dry-run only)
 

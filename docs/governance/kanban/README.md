@@ -16,7 +16,7 @@ This directory contains **book-active** Kanban governance for the maintainer wor
 
 ## Framework SoT (adopters)
 
-- [`packages/frameworks/kanban/policies/kanban-governance-policy.md`](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [`packages/frameworks/kanban/policies/kanban-governance-policy.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)
 
 ## Hub
 

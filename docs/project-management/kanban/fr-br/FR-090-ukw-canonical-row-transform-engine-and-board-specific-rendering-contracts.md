@@ -20,8 +20,8 @@ housekeeping_policy: keep
 **Implementing Task (current):** [E02:S15:T07](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) (FR-092 meta)  
 **Implementing Task (historical):** [E02:S15:T05](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md) (SUPERSEDED)
 
-**Primary driver:** [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
-**Analysis basis:** [IPP-E02S15T04](../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
+**Primary driver:** [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
+**Analysis basis:** [IPP-E2S15T4](../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 
 > **Supersede note (2026-04-27):** FR-090 architecture (shared canonical row transform pipeline + board-specific rendering contracts) is absorbed into FR-092 Bucket B/Wave 4. T05 Phase-4 evidence asserted AC1-AC6 satisfied, but the user-visible outcome on live `kboard.md` is not produced — duplicate tail tokens persist. The drift (B1-B4 in FR-092) is owned by the meta program; this FR remains authoritative for the architectural target and is closed only when FR-092 sign-off proves the canonical outcome on live boards.
 
@@ -132,7 +132,7 @@ RW and UKW must remain cohesive within their own domains while staying loosely c
 
 ## Related
 
-- [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [FR-089](./FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
-- [IPP-E02S15T04](../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
+- [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [FR-089](FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
+- [IPP-E2S15T4](../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 - [T04 (E02:S15:T04)](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)

@@ -17,13 +17,13 @@ housekeeping_policy: keep
 **Status:** COMPLETE (Waves 0-8 delivered; v0.2.15.7+9 --art sign-off release cut; canonical anchor established)
 
 **Implementing Task:** [E02:S15:T07](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
-**IPP:** [IPP-E02S15T07](../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+**IPP:** [IPP-E2S15T7](../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 ---
 
 ## Summary
 
-Consolidate every open architectural, contract, implementation-drift, and enforcement gap that contributes to RW publishing without producing the canonical release-scope consistency the user expects (clean `task` + `FR/BR/UXR` + `kboard.md`; legacy four-surface included `kboard.md` until [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) **v0.4.19.12+1**). This meta-FR supersedes [FR-091](FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md), [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md), and [FR-084](FR-084-ipp-post-run-governance-reconciliation-ownership.md), gates closure of [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) / [BR-070](BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md) / [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), and wires already-implemented predecessors (FR-038 / FR-040 / FR-015 / FR-089 / FR-076 / BR-036 / BR-062 / BR-042 / UXR-006) as historical evidence with explicit drift assessment.
+Consolidate every open architectural, contract, implementation-drift, and enforcement gap that contributes to RW publishing without producing the canonical release-scope consistency the user expects (clean `task` + `FR/BR/UXR` + `kboard.md`; legacy four-surface included `kboard.md` until [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) **v0.4.19.12+1**). This meta-FR supersedes [FR-091](FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md), [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md), and [FR-084](FR-084-ipp-post-run-governance-reconciliation-ownership.md), gates closure of [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) / [BR-070](BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md) / [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), and wires already-implemented predecessors (FR-038 / FR-040 / FR-015 / FR-089 / FR-076 / BR-036 / BR-062 / BR-042 / UXR-006) as historical evidence with explicit drift assessment.
 
 ---
 
@@ -61,7 +61,7 @@ A single meta program that:
 
 ### Bucket B — Implementation-claimed but outcome-not-achieved (DRIFT)
 
-- **B1** [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) canonical row transform engine — [T05 Phase-4 evidence](../../../implementation-cycles/IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090.md) marks AC1-AC6 satisfied, yet live `kboard.md` rows still exhibit duplicated tail tokens
+- **B1** [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) canonical row transform engine — [T05 Phase-4 evidence](../../../implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md) marks AC1-AC6 satisfied, yet live `kboard.md` rows still exhibit duplicated tail tokens
 - **B2** [FR-089](FR-089-ipw-board-row-footer-duplication-validation-hardening.md) duplicate-footer multiplication hardening flagged `IMPLEMENTED v0.2.15.3+2` yet multiplication observed on live boards
 - **B3** [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) narrowed, but residual `Last modified` / `Task` / `FBU` repetition still present on live `kboard.md`
 - **B4** RW Step 7 routes only metadata-touched rows through `apply_canonical_row_transform_pipeline(...)`, never the full corpus
@@ -81,7 +81,7 @@ A single meta program that:
 - **D3** FR-015 — Harden RW kanban update step (`IMPLEMENTED` with R07-R10 still unchecked — captured as residual gap)
 - **D4** BR-036 — RW Step 7 board update bugs (`FIXED v0.5.1.34+2`)
 - **D5** BR-062 — completed tasks left on active kboard (`COMPLETE v0.2.1.11+2`)
-- **D6** [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency.md) — UKW fbuboard scope + concurrency (`COMPLETE v0.6.7.110+1`)
+- **D6** [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) — UKW fbuboard scope + concurrency (`COMPLETE v0.6.7.110+1`)
 - **D7** [UXR-006](UXR-006-dev-branch-and-rw-validator-relaxation.md) — Last-modified UTC stamp (`ACCEPTED`, AC4 still optional) -> historical predecessor of UXR-009
 - **D8** [FR-089](FR-089-ipw-board-row-footer-duplication-validation-hardening.md) — duplicate-footer hardening (`IMPLEMENTED v0.2.15.3+2`) -> predecessor of FR-090; B2 drift owned by meta
 - **D9** [BR-042](BR-042-ukw-agent-board-cleanup-failure.md) — UKW agent board cleanup failure (`NEW`) -> subsumed by FR-090; closes as duplicate
@@ -163,7 +163,7 @@ A single meta program that:
 - [UXR-009 (gated)](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [FR-038 (predecessor)](FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
 - [FR-089 (predecessor + B2 drift)](FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
-- [FR-076 (predecessor)](FR-076-ukw-fbuboard-scope-and-drift-concurrency.md)
+- [FR-076 (predecessor)](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [BR-042 (duplicate; close)](BR-042-ukw-agent-board-cleanup-failure.md)
 - [E02:S15:T07 (implementing task)](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
-- [IPP-E02S15T07](../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+- [IPP-E2S15T7](../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)

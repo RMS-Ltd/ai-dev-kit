@@ -44,16 +44,16 @@ Brownfield teams need to **compose** workflows, Kanban, versioning, and docs lif
 ### Non-Functional Requirements
 
 - [x] **FR-081-NF1:** Documentation tone must **respect host-project sovereignty** (aligns with ADR-003 **Decision §2**).
-- [x] **FR-081-NF2:** Changes must remain consistent with **[FR-080](./FR-080-greenfield-installation-process.md)** greenfield narrative by **cross-linking**, not merging incompatible instructions into one undifferentiated path.
+- [x] **FR-081-NF2:** Changes must remain consistent with **[FR-080](FR-080-greenfield-installation-process.md)** greenfield narrative by **cross-linking**, not merging incompatible instructions into one undifferentiated path.
 
 ### Implementation evidence (E06:S09:T02)
 
-- [`INSTALL_IN_YOUR_PROJECT.md`](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) — brownfield SoT: non-goals, matrices, RW-only path, worked example, tradeoff table, ADR-003 anchor.
-- [`IPP-E06S09T02`](../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md) — planning package and §8 deferrals.
+- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) — brownfield SoT: non-goals, matrices, RW-only path, worked example, tradeoff table, ADR-003 anchor.
+- [`IPP-E6S9T2`](../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md) — planning package and §8 deferrals.
 - User-docs cross-links (installation guide, rollout checklist, repo-structure, scope stubs).
-- [`packages/frameworks/workflow-mgt/README.md`](../../../packages/frameworks/workflow-mgt/README.md), [`packages/frameworks/kanban/README.md`](../../../packages/frameworks/kanban/README.md) — brownfield messaging.
+- [`packages/frameworks/workflow-mgt/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/README.md), [`packages/frameworks/kanban/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/README.md) — brownfield messaging.
 - Installers: `install_release_workflow.py` epilog; `install_kanban_framework.py` fresh-mode brownfield warning.
-- [`tests/test_install_brownfield_docs.py`](../../../tests/test_install_brownfield_docs.py) — structural regression (TD7).
+- [`tests/test_install_brownfield_docs.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_install_brownfield_docs.py) — structural regression (TD7).
 
 ---
 
@@ -86,6 +86,6 @@ Brownfield teams need to **compose** workflows, Kanban, versioning, and docs lif
 ## Related
 
 - [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)  
-- [FR-080](./FR-080-greenfield-installation-process.md) — Greenfield process  
-- [FR-082](./FR-082-installation-distribution-canonical-repo-alignment.md) — Canonical repo alignment  
+- [FR-080](FR-080-greenfield-installation-process.md) — Greenfield process  
+- [FR-082](FR-082-installation-distribution-canonical-repo-alignment.md) — Canonical repo alignment  
 - [framework-dependency-architecture.md](../../../architecture/standards-and-adrs/framework-dependency-architecture.md)  

@@ -33,7 +33,7 @@ housekeeping_policy: keep
 
 ## 2. Specification
 
-Interactive prompt (default **Yes**) after `rw-config.yaml` write. Hook: [`install_release_workflow.py`](../packages/frameworks/workflow-mgt/scripts/install_release_workflow.py) `main()`.
+Interactive prompt (default **Yes**) after `rw-config.yaml` write. Hook: [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py) `main()`.
 
 ### 2.5 ADR necessity
 
@@ -51,7 +51,7 @@ Interactive prompt (default **Yes**) after `rw-config.yaml` write. Hook: [`insta
 | `test_ensure_scaffold_decline_sets_missing_flag` | RF3 |
 | `test_ensure_scaffold_dry_run_no_write` | RNF2 |
 
-File: [`tests/test_install_release_workflow_version_scaffold.py`](../../tests/test_install_release_workflow_version_scaffold.py)
+File: [`tests/test_install_release_workflow_version_scaffold.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_install_release_workflow_version_scaffold.py)
 
 ---
 

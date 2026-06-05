@@ -1,6 +1,6 @@
 # ICW Specification: E8:S04:T01 - Tooling & Automation expectations baseline
 
-**ICW Instance:** ICW-E8S04T01  
+**ICW Instance:** ICW-E8S4T1  
 **Task:** E8:S04:T01 - Tooling & Automation expectations baseline  
 **Phase:** Specification  
 **Timestamp:** 2026-03-12T11:05:00Z  

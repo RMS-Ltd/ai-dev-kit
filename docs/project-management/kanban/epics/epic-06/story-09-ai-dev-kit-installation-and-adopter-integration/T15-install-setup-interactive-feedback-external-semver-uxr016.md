@@ -40,7 +40,7 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 - [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) research findings, recommendations, and acceptance criteria
 - Existing version sources: `src/fynd_deals/version.py`, `cli/__init__.py`, `semver_converter.py`
 - Install event contract from FR-078 (align displayed SemVer with logged fields)
-- **IPW planning artifact:** [IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
+- **IPW planning artifact:** [IPP-E6S9T15-install-setup-interactive-feedback-external-semver.md](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 
 ---
 
@@ -112,8 +112,8 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 ## References
 
 - [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
-- [IPP-E06S09T15 — Install/setup external SemVer display](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
+- [IPP-E6S9T15 — Install/setup external SemVer display](../../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 - [dev-kit-versioning-policy.md](../../../../../governance/standards/dev-kit-versioning-policy.md)
-- [`semver_converter.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
-- [`install_release_workflow.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/install_release_workflow.py)
-- [`install_kanban_framework.py`](../../../../../../packages/frameworks/kanban/scripts/install_kanban_framework.py)
+- [`semver_converter.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
+- [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py)
+- [`install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py)

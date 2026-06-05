@@ -24,7 +24,7 @@ This guide walks you through the essential setup steps after creating a new proj
 For the locked greenfield-first sequence and verification gates, pair this guide with:
 
 - [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
-- [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- [IPW-E6S9T1](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 **When to Use This Guide:**
 - You just created a repository from the ai-dev-kit template

@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T46-rw-semver-tag-task-touch-mode.md`](../project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md) **(E5:S01:T46)**  
 **Planning for:** [FR-046 — Dual-Version Mode Requires Task-Touch SemVer in RW](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)  
-**Related planning:** [IPW-E3S02T12-task-touch-semver-collision-hardening.md](IPW-E3S02T12-task-touch-semver-collision-hardening.md) (converter finalize/idempotency — do not duplicate)  
+**Related planning:** [IPW-E3S2T12-task-touch-semver-collision-hardening.md](IPW-E3S02T12-task-touch-semver-collision-hardening.md) (converter finalize/idempotency — do not duplicate)  
 **Status:** Published
 
 > **IPW closure wave:** Audit shipped FR-046 behaviour (builds +2…+6), close evidenced doc gaps, record live RW smoke, supersede duplicate E2:S13:T07, reconcile kanban four-surface, release via `RW E5:S01:T46`.
@@ -65,7 +65,7 @@ Close FR-046 by proving shipped behaviour satisfies R01–R05 and AC1–AC4, fix
 
 - Changelog language: "Attempted resolution" until user verifies; follow-up may say "Fixed".
 - Do not duplicate E3:S02:T12 converter work.
-- Legacy ICW trio under `ICW-E5S01T46-*` superseded by this consolidated IPP (FR-042).
+- Legacy ICW trio under `ICW-E5S1T46-*` superseded by this consolidated IPP (FR-042).
 
 ### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
 
@@ -128,7 +128,7 @@ Close FR-046 by proving shipped behaviour satisfies R01–R05 and AC1–AC4, fix
 
 ### 4.1 Files to create or modify
 
-- **CREATE:** `docs/implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md`
+- **CREATE:** `docs/implementation-cycles/IPP-E5S1T46-fr046-closure-wave.md`
 - **UPDATE:** T46, FR-046, T07, FR-046-implementation-guide.md, kboard.md, kboard.md
 
 ### 4.2 Dependency order
@@ -159,7 +159,7 @@ Close FR-046 by proving shipped behaviour satisfies R01–R05 and AC1–AC4, fix
 
 | Doc ID | Path | Purpose | Tied to |
 | ------ | ---- | ------- | ------- |
-| D1 | `IPP-E5S01T46-fr046-closure-wave.md` | Consolidated closure IPP | IPW output |
+| D1 | `IPP-E5S1T46-fr046-closure-wave.md` | Consolidated closure IPP | IPW output |
 
 ### 5.3 Documentation gaps and explicit non-changes
 
@@ -176,7 +176,7 @@ Close FR-046 by proving shipped behaviour satisfies R01–R05 and AC1–AC4, fix
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links |
 | ------ | -------------- | ------------------ | --------- | ------------- |
-| D1 | `docs/implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md` | PUBLISHED | evergreen | T46 Input + References |
+| D1 | `docs/implementation-cycles/IPP-E5S1T46-fr046-closure-wave.md` | PUBLISHED | evergreen | T46 Input + References |
 | D4 | `docs/architecture/standards-and-adrs/FR-046-implementation-guide.md` | PUBLISHED | evergreen | FR-046 References |
 
 ---
@@ -224,7 +224,7 @@ git rev-parse v0.4.822^{commit} v0.2.16.4+16^{commit} → c01aa83 (same commit)
 
 - [FR-046](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
 - [T46 host task](../project-management/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
-- [IPW-E3S02T12](IPW-E3S02T12-task-touch-semver-collision-hardening.md)
+- [IPW-E3S2T12](IPW-E3S02T12-task-touch-semver-collision-hardening.md)
 - [FR-046 implementation guide](../architecture/standards-and-adrs/FR-046-implementation-guide.md)
-- [ADR-002 task-touch mapping](../architecture/standards-and-adrs/) (governing spec)
-- Legacy ICW trio `ICW-E5S01T46-*` — superseded by this IPP
+- [ADR-002 task-touch mapping](../architecture/standards-and-adrs/ADR-002-task-touch-derived-mapping.md) (governing spec)
+- Legacy ICW trio `ICW-E5S1T46-*` — superseded by this IPP

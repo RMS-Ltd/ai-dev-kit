@@ -25,12 +25,12 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E07S07T03 — Workflow validator slug path resolution](../../../../../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
+- [IPP-E7S7T3 — Workflow validator slug path resolution](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E7S7T3-workflow-validator-slug-path-resolution-br091.md)
 - [BR-091](../../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)
-- [`validate_adk_ecc_skill_pack.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_adk_ecc_skill_pack.py)
-- [`validate_ecc_adk_bridge.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py)
-- [`framework_install_slug.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/framework_install_slug.py)
-- [E07:S07:T02 — CI pytest gate](./T02-ci-pytest-gate-for-workflow-scripts.md)
+- [`validate_adk_ecc_skill_pack.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_adk_ecc_skill_pack.py)
+- [`validate_ecc_adk_bridge.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py)
+- [`framework_install_slug.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/framework_install_slug.py)
+- [E07:S07:T02 — CI pytest gate](T02-ci-pytest-gate-for-workflow-scripts.md)
 
 ---
 
@@ -51,6 +51,6 @@ Fix **`workflow_mgt_dir()`** resolution in FR-098 validators to use canonical **
 
 ## References
 
-- [IPP-E07S07T03](../../../../../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
+- [IPP-E7S7T3](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
 - [BR-091](../../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)
 - [BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)

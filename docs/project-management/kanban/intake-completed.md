@@ -139,7 +139,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Completed:** 2026-04-19 (`v0.5.9.11+5`)  
 **Implementing Task:** [E05:S09:T11](epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)  
 **Completing Agent:** RW Agent  
-**Resolution:** **[IPW-E05S09T11](../../implementation-cycles/IPW-E05S09T11-docusaurus-monorepo-markdown-links-br068.md)** Waves **1–4** — Strategy **A** corpus normalization; **`npm run build`** strict green; **BR-068** §Acceptance Criteria satisfied (CI gate: **`docusaurus-build.yml`**). Row removed from [`kboard.md`](kboard.md).
+**Resolution:** **[IPW-E5S9T11](../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)** Waves **1–4** — Strategy **A** corpus normalization; **`npm run build`** strict green; **BR-068** §Acceptance Criteria satisfied (CI gate: **`docusaurus-build.yml`**). Row removed from [`kboard.md`](kboard.md).
 
 ---
 
@@ -195,7 +195,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **BR-009 – Installer Discoverability and Documentation**  
 **Completed:** 2026-03-09T16:00:00Z (v0.6.7.104+2)  
 **GitHub Issue:** [#14](https://github.com/earlution/ai-dev-kit/issues/14)  
-**Implementing Task:** [E04:S06:T07](epics/epic-04/story-06-comprehensive-canonical-est-template-system/E04S06T07-integration-validation-report.md)  
+**Implementing Task:** [E04:S06:T07](epics/epic-09/story-05-canonical-est-review-and-refinement/POST-IMPLEMENTATION-REPORT.md)  
 **Completing Agent:** RW Agent  
 **Description:** Fixed installer prominence and template distinction issues in kanban framework installation  
 **Impact:** Users now properly guided to use interactive installer with clear template vs. actual kanban distinction  

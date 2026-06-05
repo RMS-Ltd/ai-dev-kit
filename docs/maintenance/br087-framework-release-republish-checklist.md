@@ -6,7 +6,7 @@ housekeeping_policy: keep
 
 # BR-087 — Framework release republish checklist (E06:S09:T18)
 
-After maintainer rename to slug directories, republish GitHub release assets so download installs receive `{slug}/` archive roots.
+After maintainer rename to slug directories, republish GitHub release assets so download installs receive `\{slug\}/` archive roots.
 
 ## Build (local)
 

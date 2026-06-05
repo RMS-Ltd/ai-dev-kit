@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Planning for:** [BR-092](../project-management/kanban/fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)  
 **Status:** Approved (implementation authorized)
 
-> **IPW:** Produced for E08:S03:T07. Complements [IPP-E08S03T04](IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md) (repo-wide Tests CI gate).
+> **IPW:** Produced for E08:S03:T07. Complements [IPP-E8S3T4](IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md) (repo-wide Tests CI gate).
 
 ---
 
@@ -140,7 +140,7 @@ RF2 → `setup.py` `extras_require["dev"]`; RF3 → unchanged `tests.yml`; RF4 �
 
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
-| D-C1 | `docs/implementation-cycles/IPP-E08S03T07-*.md` | NOT_APPLICABLE | evergreen |
+| D-C1 | `docs/implementation-cycles/IPP-E8S3T7-*.md` | NOT_APPLICABLE | evergreen |
 
 ---
 
@@ -157,5 +157,5 @@ RF2 → `setup.py` `extras_require["dev"]`; RF3 → unchanged `tests.yml`; RF4 �
 ## References
 
 - [BR-092](../project-management/kanban/fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
-- [IPP-E08S03T04](IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
+- [IPP-E8S3T4](IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

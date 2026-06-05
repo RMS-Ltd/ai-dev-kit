@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T15-Implementation-Plan: FR-049 Canonical RW Step SoT
+# ICW-E2S1T15-Implementation-Plan: FR-049 Canonical RW Step SoT
 
 **Task:** E2:S01:T15  
 **Related FR:** FR-049  
@@ -43,12 +43,12 @@ housekeeping_policy: keep
 
 ## Validation Checklist (Exit Criteria)
 
-- [ ] `ICW-E2S01T15-specification.md` exists and is `FR-049`/`T15` specific.
-- [ ] `ICW-E2S01T15-test-design.md` exists and covers SoT + traceability risks.
-- [ ] `ICW-E2S01T15-implementation-plan.md` exists and defines execution + recovery.
+- [ ] `ICW-E2S1T15-specification.md` exists and is `FR-049`/`T15` specific.
+- [ ] `ICW-E2S1T15-test-design.md` exists and covers SoT + traceability risks.
+- [ ] `ICW-E2S1T15-implementation-plan.md` exists and defines execution + recovery.
 - [ ] `T15` task doc links all three artifacts in both `Input` and `Links`.
 - [ ] All three artifacts link back to `T15` host task.
-- [ ] No residual prior-task identifiers remain in `ICW-E2S01T15-*`.
+- [ ] No residual prior-task identifiers remain in `ICW-E2S1T15-*`.
 
 ---
 

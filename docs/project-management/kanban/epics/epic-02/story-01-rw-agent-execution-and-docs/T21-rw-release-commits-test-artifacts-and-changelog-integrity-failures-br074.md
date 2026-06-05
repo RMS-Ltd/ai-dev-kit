@@ -38,7 +38,7 @@ All three defects will recur on every same-task BUILD > 1 release until the unde
 
 ## Input
 
-- [BR-074](../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md) — Bug report with full forensic analysis.
+- [BR-074](../../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md) — Bug report with full forensic analysis.
 - Commit `22e3e574c` — Release v0.6.6.63+2 (contains all three defects).
 - Commit `27bbcd297` — Release v0.6.6.63+1 (contains the deleted changelog to restore).
 - `rw-config.yaml` — Contains `changelog_archival.mode: latest_only` (applies to main `CHANGELOG.md`, not per-build archive files).
@@ -113,22 +113,22 @@ All three defects will recur on every same-task BUILD > 1 release until the unde
 
 **Related Tasks:**
 
-- **[E06:S06:T63: RW Recovery Journal and Rollback Contract](../epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)** — **Relationship Type:** Informs — **Context:** T63's integration test produced the committed artifacts; T63's RW run exposed the changelog and version-typo defects.
-- **[E02:S01:T18: RW Step 8 Stage Completeness Guardrails](../epic-02/story-01-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md)** — **Relationship Type:** Coordinates With — **Context:** T18 added stage-file completeness guardrails; BR-074 extends that work by identifying artifact-boundary gaps in what `git add -A` stages.
+- **[E06:S06:T63: RW Recovery Journal and Rollback Contract](../../epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md)** — **Relationship Type:** Informs — **Context:** T63's integration test produced the committed artifacts; T63's RW run exposed the changelog and version-typo defects.
+- **[E02:S01:T18: RW Step 8 Stage Completeness Guardrails](T18-rw-step-8-stage-completeness-guardrails-br070.md)** — **Relationship Type:** Coordinates With — **Context:** T18 added stage-file completeness guardrails; BR-074 extends that work by identifying artifact-boundary gaps in what `git add -A` stages.
 
 **Related BR/FR Documents:**
 
-- **[BR-074: RW release commits test artifacts and changelog integrity failures](../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)** — **Relationship Type:** Informs — **Context:** BR-074 is the originating bug report with full forensic analysis.
+- **[BR-074: RW release commits test artifacts and changelog integrity failures](../../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)** — **Relationship Type:** Informs — **Context:** BR-074 is the originating bug report with full forensic analysis.
 
 ---
 
 ## Related Work
 
 **Related BR/FR Links:**
-- [BR-074: RW release commits test artifacts and changelog integrity failures](../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md) — *Bidirectional: BR-074 links back to this task in its Implementing Task section.*
+- [BR-074: RW release commits test artifacts and changelog integrity failures](../../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md) — *Bidirectional: BR-074 links back to this task in its Implementing Task section.*
 
 **Related Tasks:**
-- [E06:S06:T63: RW Recovery Journal and Rollback Contract](../epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — *Bidirectional: T63's task doc references BR-038 which spawned the recovery-journal scope where these defects surfaced.*
+- [E06:S06:T63: RW Recovery Journal and Rollback Contract](../../epic-06/story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) — *Bidirectional: T63's task doc references BR-038 which spawned the recovery-journal scope where these defects surfaced.*
 
 ---
 
@@ -160,7 +160,7 @@ Phase C (validation automation): `validate_changelog_archive_links.py` created w
 
 ## References
 
-- [BR-074](../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
+- [BR-074](../../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
 - Commit `22e3e574c` — Release v0.6.6.63+2 (defective commit)
 - Commit `27bbcd297` — Release v0.6.6.63+1 (source of deleted changelog)
 - `docs/journals/` — Operator documentation tree polluted by test artifacts

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-05 (v0.8.3.7+1 — fix implemented)  
 **Version:** v0.8.3.7+1  
 **Implementing Task:** [E08:S03:T07](../epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md) — ✅ COMPLETE (v0.8.3.7+1)  
-**Related:** [BR-058](./BR-058-ci-test-workflow-missing-and-pytest-failures.md) (original Tests workflow — **RESOLVED**; this is a **regression / gap** in dev extras) · [E08:S03:T04](../epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)
+**Related:** [BR-058](BR-058-ci-test-workflow-missing-and-pytest-failures.md) (original Tests workflow — **RESOLVED**; this is a **regression / gap** in dev extras) · [E08:S03:T04](../epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)
 
 ---
 

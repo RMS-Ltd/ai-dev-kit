@@ -221,7 +221,7 @@ Release-scope reconciliation outputs:
 
 | Artifact | Canonical path |
 | -------- | -------------- |
-| IPP | `docs/implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md` |
+| IPP | `docs/implementation-cycles/IPP-E4S19T12-single-board-consolidation-uxr020.md` |
 | ADR | `docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md` |
 | Task link | Task doc **References** + **IPP** segment |
 

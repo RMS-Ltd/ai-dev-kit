@@ -1,6 +1,6 @@
 # ICW Specification: E1:S06:T01 - Set up BYOB badges for private repository
 
-**ICW Instance:** ICW-E1S06T01  
+**ICW Instance:** ICW-E1S6T1  
 **Task:** E1:S06:T01 - Set up BYOB badges for private repository  
 **Phase:** Specification  
 **Timestamp:** 2026-03-12T11:00:00Z  

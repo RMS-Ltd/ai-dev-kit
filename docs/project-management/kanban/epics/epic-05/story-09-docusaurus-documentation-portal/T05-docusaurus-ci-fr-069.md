@@ -49,7 +49,7 @@ Implement **FR-069**: GitHub Actions workflow running `npm ci` and `npm run buil
 
 ## Specification (executable — FR-069)
 
-**Workflow file:** [`.github/workflows/docusaurus-build.yml`](../../../../../../.github/workflows/docusaurus-build.yml)  
+**Workflow file:** [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)  
 **Push policy:** `push` is limited to **`main`**; `pull_request` uses path filters for all PR base branches (standard).
 
 | ID | Source | Statement |
@@ -63,7 +63,7 @@ Implement **FR-069**: GitHub Actions workflow running `npm ci` and `npm run buil
 | **S7** | NF02 | `portal/README.md` links to this workflow path. |
 | **S8** | R02 / AC2–3 | Failed `npm run build` fails the job; green `main` after merge is observational (AC3). |
 
-**Tests:** [`tests/test_portal_fr069_ci.py`](../../../../../../tests/test_portal_fr069_ci.py)
+**Tests:** [`tests/test_portal_fr069_ci.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr069_ci.py)
 
 ---
 
@@ -75,8 +75,8 @@ Implement **FR-069**: GitHub Actions workflow running `npm ci` and `npm run buil
 
 ## Evidence
 
-- [`.github/workflows/docusaurus-build.yml`](../../../../../../.github/workflows/docusaurus-build.yml) — `npm ci` / `npm run build` in `portal/`, path filters, Node 20, npm cache.
-- [`tests/test_portal_fr069_ci.py`](../../../../../../tests/test_portal_fr069_ci.py) — S1–S7 contract tests (`"on"` key quoted for PyYAML-safe parsing).
+- [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml) — `npm ci` / `npm run build` in `portal/`, path filters, Node 20, npm cache.
+- [`tests/test_portal_fr069_ci.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr069_ci.py) — S1–S7 contract tests (`"on"` key quoted for PyYAML-safe parsing).
 - [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — CI (FR-069) pointer.
 - **AC3:** Green **Docusaurus site build** on `main` after this release push (verify in GitHub Actions).
 - **AC2:** Optional — intentional break on a throwaway branch to prove job failure.

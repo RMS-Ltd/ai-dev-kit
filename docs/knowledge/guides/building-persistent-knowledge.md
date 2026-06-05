@@ -67,7 +67,7 @@ his feature makes knowledge expandable and more permanent rather than ephemeral,
 
 *(Figures: cursor_crew_graph_lg, network_lg — diagrams from source article; images not bundled in this repo.)*
 
-## Standard Operating Procedure (SoP): Taxonomical Standards for Structuring Knowledge {#standard-operating-procedure-sop-taxonomical-standards-for-structuring-knowledge}
+## Standard Operating Procedure (SoP): Taxonomical Standards for Structuring Knowledge
 
 ## Purpose
 To ensure all knowledge in the fynd.deals knowledge base is organized, discoverable, maintainable, and process-compliant, this SoP defines canonical standards for taxonomy, directory structure, file naming, and update workflows.

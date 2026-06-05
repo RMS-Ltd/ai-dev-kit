@@ -161,7 +161,7 @@ For each candidate active row, agents MUST classify using at least one of:
 
 | Action | Path |
 | ------ | ---- |
-| CREATE | `docs/implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md` (this file) |
+| CREATE | `docs/implementation-cycles/IPP-E2S16T6-ukw-rp-flag-fr085.md` (this file) |
 | CREATE | `docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md` |
 | UPDATE | `.cursorrules` (UKW trigger block) |
 | UPDATE | `packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md` |
@@ -210,7 +210,7 @@ For each candidate active row, agents MUST classify using at least one of:
 
 | Doc ID | Path | Purpose | Tied to |
 | ------ | ---- | ------- | ------- |
-| D-C1 | `docs/implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md` | This IPP | IPW |
+| D-C1 | `docs/implementation-cycles/IPP-E2S16T6-ukw-rp-flag-fr085.md` | This IPP | IPW |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md` | Governance contract for `--rp` | §2.5 |
 
 ### 5.3 Documentation gaps and explicit non-changes
@@ -227,7 +227,7 @@ For each candidate active row, agents MUST classify using at least one of:
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | --------- | -------------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md` | PUBLISHED | evergreen | T06 Input, References; FR-085 Related |
+| D-C1 | `docs/implementation-cycles/IPP-E2S16T6-ukw-rp-flag-fr085.md` | PUBLISHED | evergreen | T06 Input, References; FR-085 Related |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md` | PUBLISHED | evergreen | IPP §2.5; FR-085 Related; VWMP doc |
 | D-U1 | `docs/guides/workflow-initiation-cheatsheet.md` | PUBLISHED | evergreen | (existing guides README) |
 | D-U2–D-U7 | See §5.1 | PUBLISHED | evergreen | ADR-009 References |
@@ -261,5 +261,5 @@ For each candidate active row, agents MUST classify using at least one of:
 - [FR-076](../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [Workflow initiation cheatsheet](../guides/workflow-initiation-cheatsheet.md) (T15; extended by T06)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [Update Kanban Workflow agent execution guide](../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
-- [IPP-E02S16T15](../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) (cheatsheet pattern)
+- [Update Kanban Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [IPP-E2S16T15](IPP-E02S16T15-workflow-initiation-cheatsheet.md) (cheatsheet pattern)

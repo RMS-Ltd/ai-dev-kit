@@ -1,6 +1,6 @@
 # ICW Specification: E6:S07:T106 - Windsurf Migration: .cursorrules to Workflow Equivalents
 
-**ICW Instance:** ICW-E6S07T106  
+**ICW Instance:** ICW-E6S7T106  
 **Task:** E6:S07:T106 - Windsurf Migration: .cursorrules to Workflow Equivalents  
 **Phase:** Specification  
 **Timestamp:** 2026-03-12T10:45:00Z  

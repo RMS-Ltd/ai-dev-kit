@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Code:** E08S03T07
 
 **Upstream:** [BR-092 — Tests CI missing `requests` dev dependency](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)  
-**Planning:** [IPP-E08S03T07-tests-ci-requests-dependency-br092.md](../../../../../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
+**Planning:** [IPP-E8S3T7-tests-ci-requests-dependency-br092.md](../../../../../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -27,10 +27,10 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [BR-092](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
-- [`setup.py`](../../../../../../setup.py) — `[dev]` extras
-- [`requirements.txt`](../../../../../../requirements.txt)
-- [`.github/workflows/tests.yml`](../../../../../../.github/workflows/tests.yml)
-- [E08:S03:T04 — CI test workflow (BR-058)](./T04-ci-test-workflow-pytest-remediation-br058.md)
+- [`setup.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/setup.py) — `[dev]` extras
+- [`requirements.txt`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/requirements.txt)
+- [`.github/workflows/tests.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/tests.yml)
+- [E08:S03:T04 — CI test workflow (BR-058)](T04-ci-test-workflow-pytest-remediation-br058.md)
 
 ---
 

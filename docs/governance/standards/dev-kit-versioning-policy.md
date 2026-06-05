@@ -1065,8 +1065,8 @@ The dev-kit policy:
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 **Related Documentation:**
-- **[Versioning Quick Reference](versioning-quick-reference.md)** - 1-2 page summary for quick lookup ⚡
-- **[Dual-Versioning Guide](dual-versioning-package-managers.md)** - Managing `RC.EPIC.STORY.TASK+BUILD` + SemVer for package managers ⚠️
+- **[Versioning Quick Reference](../../architecture/standards-and-adrs/versioning-quick-reference.md)** - 1-2 page summary for quick lookup ⚡
+- **[Dual-Versioning Guide](../../architecture/standards-and-adrs/dual-versioning-package-managers.md)** - Managing `RC.EPIC.STORY.TASK+BUILD` + SemVer for package managers ⚠️
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md` - Practical worked examples
 - `docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md` (gap analysis)
 - `docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md` (findings)

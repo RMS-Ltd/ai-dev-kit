@@ -19,14 +19,14 @@ housekeeping_policy: keep
 
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.1 Phase 0**  
-**Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
+**Migration ADR:** [ADR-006](../../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
 
 ## Input
 
 - [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
+- [ADR-006](../../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 - Book asset paths listed in FR-099 § Known Asset Inventory
 
 ## Deliverable
@@ -35,14 +35,14 @@ Validated inventory, signed ADR-006 outline, E01:S04:T02 marked SUPERSEDED (see 
 
 ## Summary
 
-**Phase 0** of [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md): validated book-asset inventory, maintainer alignment on Option C migration, and [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) outline. Mark **E01:S04:T02** superseded (no public Head First rename).
+**Phase 0** of [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md): validated book-asset inventory, maintainer alignment on Option C migration, and [ADR-006](../../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) outline. Mark **E01:S04:T02** superseded (no public Head First rename).
 
 ---
 
 ## Deliverables
 
 1. Validated book asset inventory (paths, sensitivity, private-retain / public-genesis / redact) — see [FR-099 § Known Asset Inventory](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md).
-2. [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) accepted as preferred migration outline.
+2. [ADR-006](../../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) accepted as preferred migration outline.
 3. **E01:S04:T02** documented as SUPERSEDED in Story 004 and ADR-006.
 
 ---

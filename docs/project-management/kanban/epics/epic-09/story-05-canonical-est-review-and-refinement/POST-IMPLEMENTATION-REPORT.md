@@ -75,8 +75,8 @@ Updated `kboard.md`:
 
 ### Phase H: Governance Policy Amendment
 Updated `packages/frameworks/kanban/policies/kanban-governance-policy.md` with explicit naming convention rules:
-- Task files: `Txx-{slug}.md` (regular), `Txxx-{slug}.md` (perpetual only)
-- Story files: `Story-NNN-{slug}.md`
+- Task files: `Txx-\{slug\}.md` (regular), `Txxx-\{slug\}.md` (perpetual only)
+- Story files: `Story-NNN-\{slug\}.md`
 - Prohibited: T0xx, Story-N/Story-NN, duplicates, orphans
 - Enforcement: `validate_kanban_naming.py`
 
@@ -161,6 +161,6 @@ Run this after any kanban file renames, additions, or moves to confirm the tree 
 ## References
 
 - [E09:S05:T04 Host Task](T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
-- [IPP-E09S05T04 Implementation Plan](../../../../../../implementation-cycles/IPP-E09S05T04-kanban-naming-hygiene.md)
-- [UXR-011](../../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
-- [kanban-governance-policy](../../../../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [IPP-E9S5T4 Implementation Plan](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E9S5T4-kanban-naming-hygiene.md)
+- [UXR-011](../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
+- [kanban-governance-policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)

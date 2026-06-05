@@ -18,10 +18,10 @@ This directory holds **durable** planning outputs: ICW-style **specifications**,
 
 Prefer predictable filenames so grep and humans can find work by **E/S/T**:
 
-- `IPP-E{epic}S{story}T{task}-{slug}.md` (consolidated IPW output; preferred in ai-dev-kit)
-- `ICW-E{epic}S{story}T{task}-specification.md`
-- `ICW-E{epic}S{story}T{task}-test-design.md`
-- `ICW-E{epic}S{story}T{task}-implementation-plan.md`
+- `IPP-E\{epic\}S\{story\}T\{task\}-\{slug\}.md` (consolidated IPW output; preferred in ai-dev-kit)
+- `ICW-E\{epic\}S\{story\}T\{task\}-specification.md`
+- `ICW-E\{epic\}S\{story\}T\{task\}-test-design.md`
+- `ICW-E\{epic\}S\{story\}T\{task\}-implementation-plan.md`
 
 Batch ICW packages may use a range in the basename (e.g. `ICW-E7S06-T10-T16-*`) when one cycle deliberately covers multiple tasks.
 
@@ -35,7 +35,7 @@ That path is part of **ICW’s responsibility**: persist the three-phase package
 
 ## Related
 
-- [ICW implementation summary](./ICW-IMPLEMENTATION-SUMMARY.md) (historical context)
+- [ICW implementation summary](ICW-IMPLEMENTATION-SUMMARY.md) (historical context)
 - [Framework ICW README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/README.md)
 
 
@@ -44,7 +44,7 @@ That path is part of **ICW’s responsibility**: persist the three-phase package
 Planning artifacts are only considered published when the host task doc links to the package in this directory (or marks publication as not applicable with reason).
 
 Reference package for this hardening task:
-- [ICW-E2S15T01-specification](./ICW-E2S15T01-specification.md)
-- [ICW-E2S15T01-test-design](./ICW-E2S15T01-test-design.md)
-- [ICW-E2S15T01-implementation-plan](./ICW-E2S15T01-implementation-plan.md)
+- [ICW-E2S15T1-specification](ICW-E2S15T01-test-design.md)
+- [ICW-E2S15T1-test-design](ICW-E2S15T01-test-design.md)
+- [ICW-E2S15T1-implementation-plan](ICW-E2S15T01-test-design.md)
 

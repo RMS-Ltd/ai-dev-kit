@@ -55,7 +55,7 @@ Quick reference board for all Kanban work. For detailed views, see:
 - [`epics/epic-06/epic-06.md`](epics/epic-06/epic-06.md)
 - [`epics/epic-07/epic-07.md`](epics/epic-07/epic-07.md)
 - [`epics/epic-08/epic-08.md`](epics/epic-08/epic-08.md)
-- [`epics/epic-21/epic-21.md`](epics/epic-21/epic-21.md)
+- [`epics/epic-21/Epic-21.md`](epics/epic-21/Epic-21.md)
 
 ---
 

@@ -10,7 +10,7 @@ housekeeping_policy: keep
 **Planning for:** [FR-011](../project-management/kanban/fr-br/FR-011-task-splitting-multiple-canonical-epics.md)  
 **Status:** Published
 
-**Supersedes (consolidated):** [ICW-E4S08T07-specification.md](./ICW-E4S08T07-specification.md), [ICW-E4S08T07-test-design.md](./ICW-E4S08T07-test-design.md), [ICW-E4S08T07-implementation-plan.md](./ICW-E4S08T07-implementation-plan.md)
+**Supersedes (consolidated):** [ICW-E4S8T7-specification.md](ICW-E4S08T07-implementation-plan.md), [ICW-E4S8T7-test-design.md](ICW-E4S08T07-implementation-plan.md), [ICW-E4S8T7-implementation-plan.md](ICW-E4S08T07-implementation-plan.md)
 
 ## 1. Requirements
 

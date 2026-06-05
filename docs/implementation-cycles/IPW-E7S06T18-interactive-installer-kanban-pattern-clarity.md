@@ -15,8 +15,8 @@ housekeeping_policy: keep
 
 ## Canonical planning artifacts
 
-- [ICW-E7S06T18-specification.md](./ICW-E7S06T18-specification.md) — requirements, success criteria, as-delivered verification (`v0.7.6.18+1`).
-- [ICW-E7S06T18-test-design.md](./ICW-E7S06T18-test-design.md) — T1–T9 and automated coverage notes.
-- [ICW-E7S06T18-implementation-plan.md](./ICW-E7S06T18-implementation-plan.md) — ordered actions and files touched.
+- [ICW-E7S6T18-specification.md](ICW-E7S06T18-implementation-plan.md) — requirements, success criteria, as-delivered verification (`v0.7.6.18+1`).
+- [ICW-E7S6T18-test-design.md](ICW-E7S06T18-implementation-plan.md) — T1–T9 and automated coverage notes.
+- [ICW-E7S6T18-implementation-plan.md](ICW-E7S06T18-implementation-plan.md) — ordered actions and files touched.
 
 This file remains as a stable redirect from historical links to the monolithic IPW filename.

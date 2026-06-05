@@ -73,4 +73,4 @@ Greenfield documentation may be opinionated for speed and clarity. That does **n
 - [FR-080](../../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md) — delivery: end-to-end greenfield installation process.
 - [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md) — delivery: brownfield modular adopter integration.
 - [FR-082](../../project-management/kanban/fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) — tooling/docs: canonical GitHub repo alignment for install assets.
-- [ECC ↔ ADK harness integration specification](./ecc-adk-harness-layer-integration-specification.md) — optional third-party harness (MIT ECC); modular surface for greenfield and brownfield adopters ([FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)).
+- [ECC ↔ ADK harness integration specification](ecc-adk-harness-layer-integration-specification.md) — optional third-party harness (MIT ECC); modular surface for greenfield and brownfield adopters ([FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)).

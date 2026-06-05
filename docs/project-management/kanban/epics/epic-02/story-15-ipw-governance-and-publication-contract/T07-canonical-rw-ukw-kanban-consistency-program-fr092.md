@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.15.7+9
 
 **Upstream:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
-**IPP:** [`IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md`](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+**IPP:** [`IPP-E2S15T7-canonical-rw-ukw-kanban-consistency-program.md`](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 **Supersedes (this task absorbs):**
 
@@ -103,7 +103,7 @@ The 16 atomic issues from FR-092 are owned here, organized into eight execution 
 - [UXR-009 (gated)](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [FR-089 (predecessor + B2 drift)](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [FR-038 (predecessor)](../../../fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
-- [FR-076 (predecessor)](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency.md)
+- [FR-076 (predecessor)](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [BR-042 (close as duplicate)](../../../fr-br/BR-042-ukw-agent-board-cleanup-failure.md)
 - [Story 015](../story-15-ipw-governance-and-publication-contract.md)
-- [IPP-E02S15T07](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+- [IPP-E2S15T7](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)

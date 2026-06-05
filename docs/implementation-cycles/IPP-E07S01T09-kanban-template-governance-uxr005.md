@@ -178,7 +178,7 @@ RF1 → spacing module + corpus pass. RF2–RF5 → policy and agent guides. RF3
 
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
-| D-C1 | `docs/implementation-cycles/IPP-E07S01T09-*.md` | NOT_APPLICABLE | evergreen |
+| D-C1 | `docs/implementation-cycles/IPP-E7S1T9-*.md` | NOT_APPLICABLE | evergreen |
 | D-C2 | `docs/maintenance/logs/` | NOT_APPLICABLE | transient |
 | Validator | `packages/frameworks/workflow-mgt/scripts/validation/` | N/A | — |
 

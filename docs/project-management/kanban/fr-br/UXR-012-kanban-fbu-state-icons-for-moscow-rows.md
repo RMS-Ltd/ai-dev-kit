@@ -272,7 +272,7 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 ## Next steps
 
 1. ~~**User/editorial:** Pick Set A, B, C, or D~~ — **Done:** Set A on boards; Set B fallback where emoji unsupported.
-2. ~~**IPW** on **E04:S13:T07**~~ — **Done:** [IPP-E04S13T07](../../../implementation-cycles/IPP-E04S13T07-kanban-fbu-state-icons-moscow-rows.md).
+2. ~~**IPW** on **E04:S13:T07**~~ — **Done:** [IPP-E4S13T7](../../../implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md).
 3. ~~**RW** after implementation~~ — **Done:** v0.4.13.7+1.
 
 ---
@@ -281,4 +281,4 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 
 - [kboard.md](../kboard.md) — E02:S15:T08 `✅ COMPLETE` exemplar
 - [kboard.md](../kboard.md)
-- [Kanban governance policy](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [Kanban governance policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)

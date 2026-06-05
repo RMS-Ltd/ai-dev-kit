@@ -105,8 +105,8 @@ BR/FR → Task (one-way only)
 ```markdown
 ## Examples
 
-- **BR-002:** [Changelog Validator Ordering Bug](../fr-br/BR-002-changelog-validator-ordering-bug.md) - Example of this pattern
-- **Task:** [E2:S01:T06](../../epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) - Implements this pattern
+- **BR-002:** [Changelog Validator Ordering Bug](../../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) - Example of this pattern
+- **Task:** [E2:S01:T06](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) - Implements this pattern
 ```
 
 ---
@@ -222,13 +222,13 @@ Use relative paths from the document location:
 ## Intake Decision
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
-- Story: [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)
-- Task: [E2:S01:T06 - Fix changelog validator ordering bug](../epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
+- Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../../project-management/kanban/epics/epic-02/epic-02.md)
+- Story: [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md)
+- Task: [E2:S01:T06 - Fix changelog validator ordering bug](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
 
 ## References
 
-- [REOPENING_BR_AND_TASKS_GUIDE.md](REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks (this BR is an example)
+- [REOPENING_BR_AND_TASKS_GUIDE.md](../../project-management/kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks (this BR is an example)
 ```
 
 **Task T06 (`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`):**
@@ -236,27 +236,27 @@ Use relative paths from the document location:
 ### E2:S01:T06 – Fix changelog validator ordering bug 🔄 REOPENED
 
 **Input:**  
-- **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../fr-br/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
+- **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
 
 **Related:**
-- **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../fr-br/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
-- **Documentation:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks
+- **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
+- **Documentation:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../project-management/kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks
 ```
 
 **Documentation (`docs/project-management/kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md`):**
 ```markdown
 ## Example: BR-002 Re-opening
 
-See [`BR-002-changelog-validator-ordering-bug.md`](BR-002-changelog-validator-ordering-bug.md) for a complete example
+See [`BR-002-changelog-validator-ordering-bug.md`](../../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) for a complete example
 
 ## Example: Task Re-opening
 
-See [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md) Task T06 for an example
+See [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) Task T06 for an example
 
 ## Related Documentation
 
-- [`BR-002-changelog-validator-ordering-bug.md`](BR-002-changelog-validator-ordering-bug.md) - Example reopened BR
-- [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md) - Example reopened task
+- [`BR-002-changelog-validator-ordering-bug.md`](../../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) - Example reopened BR
+- [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) - Example reopened task
 ```
 
 ---
@@ -363,9 +363,9 @@ Consider creating a validation script that:
 
 ## Related Documentation
 
-- [REOPENING_BR_AND_TASKS_GUIDE.md](REOPENING_BR_AND_TASKS_GUIDE.md) - Example of pattern discovery and wiring
-- [USE_CASE_METHODOLOGY.md](../../../knowledge/USE_CASE_METHODOLOGY.md) - Use case methodology (includes wiring)
-- [UC-D-002: Bidirectional Wiring](../../../knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md) - Discovered use case (promoted to canonical)
+- [REOPENING_BR_AND_TASKS_GUIDE.md](../../project-management/kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Example of pattern discovery and wiring
+- [USE_CASE_METHODOLOGY.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/knowledge/USE_CASE_METHODOLOGY.md) - Use case methodology (includes wiring)
+- [UC-D-002: Bidirectional Wiring](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md) - Discovered use case (promoted to canonical)
 - [FR_BR_INTAKE_GUIDE.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) - Intake process (includes linking)
 - [BR_TEMPLATE.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/BR_TEMPLATE.md) - BR template (includes Kanban Links section)
 - [FR_TEMPLATE.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/FR_TEMPLATE.md) - FR template (includes Kanban Links section)

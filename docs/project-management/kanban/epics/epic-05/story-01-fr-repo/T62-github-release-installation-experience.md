@@ -16,7 +16,7 @@ housekeeping_policy: keep
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Consolidated IPP per FR-042.
 
-**Implementation plan:** [IPP-E5S01T62-github-release-install-fr062.md](../../../../../implementation-cycles/IPP-E5S01T62-github-release-install-fr062.md)
+**Implementation plan:** [IPP-E5S1T62-github-release-install-fr062.md](../../../../../implementation-cycles/IPP-E5S01T62-github-release-install-fr062.md)
 
 ---
 

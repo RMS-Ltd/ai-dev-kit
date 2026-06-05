@@ -579,7 +579,7 @@ Overall Health Score =
 - **Framework Backward Compatibility Policy:** `docs/architecture/standards-and-adrs/framework-backward-compatibility-policy.md`
 - **Documentation Health Monitoring:** `docs/architecture/standards-and-adrs/documentation-health-monitoring.md`
 - **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
-- **Story 3:** `docs/project-management/kanban/epics/epic-06/story-03-framework-health-monitoring.md`
+- **Story 3:** `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md`
 
 ---
 

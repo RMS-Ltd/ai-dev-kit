@@ -203,7 +203,7 @@ This story enables comprehensive monitoring of codebase health and quality metri
 - `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` - Canonical epic definitions
 - `docs/project-management/kanban/epics/epic-07/epic-07.md` - Epic 7 overview
 - `docs/project-management/kanban/epics/epic-04/epic-04.md` - Kanban Framework epic
-- `docs/project-management/kanban/epics/epic-06/story-03-framework-health-monitoring.md` - Framework health monitoring (related)
+- `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md` - Framework health monitoring (related)
 
 ---
 

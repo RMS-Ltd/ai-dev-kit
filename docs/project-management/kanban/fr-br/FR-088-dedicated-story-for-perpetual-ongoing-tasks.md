@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Status:** CLOSED
 
 **Implementing Task:** [E02:S16:T01](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)  
-**IPP:** [`IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md)
+**IPP:** [`IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 
 ---
 
@@ -63,5 +63,5 @@ Perpetual tasks have been spread or repeatedly routed into stories that are not 
 
 ## Related
 
-- [FR-087](./FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
-- [FR-041](./FR-041-perpetual-task-for-release-workflow-maintenance.md)
+- [FR-087](FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
+- [FR-041](FR-041-perpetual-task-for-release-workflow-maintenance.md)

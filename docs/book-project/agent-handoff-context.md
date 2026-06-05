@@ -221,19 +221,19 @@ git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 | [README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md) | Framework overview, quick start |
 | [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) | Installation guide |
 | [CLAUDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CLAUDE.md) | Claude Code project instructions |
-| [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Repository split decision |
-| [Vision & Purpose](docs/documentation/ai-dev-kit-vision-and-purpose.md) | Project vision |
-| [Versioning Policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) | Version schema docs |
+| [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Repository split decision |
+| [Vision & Purpose](../documentation/ai-dev-kit-vision-and-purpose.md) | Project vision |
+| [Versioning Policy](../architecture/standards-and-adrs/dev-kit-versioning-policy.md) | Version schema docs |
 
 ### Private Book Repo (RMS-Ltd/ai-dev-kit-book)
 
 | Document | Purpose |
 |----------|---------|
-| [install-error-codes-book-integration.md](./install-error-codes-book-integration.md) | **FR-108 / ADK-* error codes** — appendix sync, setup spine, reader reporting (v0.6.9.20+) |
+| [install-error-codes-book-integration.md](install-error-codes-book-integration.md) | **FR-108 / ADK-* error codes** — appendix sync, setup spine, reader reporting (v0.6.9.20+) |
 | `docs/book-proj/` | Manuscript drafts |
 | `docs/project-management/kanban/epics/epic-24/` | Book Kanban |
-| [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Same ADR (retained in history) |
-| [FR-099](docs/project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | Migration FR (retained in history) |
+| [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Same ADR (retained in history) |
+| [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | Migration FR (retained in history) |
 
 ---
 

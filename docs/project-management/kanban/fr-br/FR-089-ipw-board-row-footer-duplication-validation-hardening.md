@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Status:** IMPLEMENTED (v0.2.15.3+2 — **E02:S15:T03**: duplicate-footer dual-agreement + divergence guardrails in `update_kanban_docs.py`; IPP/traceability alignment released)
 
 **Implementing Task:** [E02:S15:T03](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md)
-**IPP:** [IPP-E02S15T03](../../../implementation-cycles/IPP-E02S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
+**IPP:** [IPP-E2S15T3](../../../implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
 
 ---
 
@@ -70,7 +70,7 @@ Current governance validation does not explicitly assert row-tail uniqueness for
 
 ## Related
 
-- [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [UXR-009](./UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [FR-084](./FR-084-ipp-post-run-governance-reconciliation-ownership.md)
-- [IPP-E02S15T03](../../../implementation-cycles/IPP-E02S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
+- [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [FR-084](FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- [IPP-E2S15T3](../../../implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)

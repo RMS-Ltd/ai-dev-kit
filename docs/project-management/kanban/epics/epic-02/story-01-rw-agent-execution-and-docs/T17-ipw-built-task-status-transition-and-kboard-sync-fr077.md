@@ -122,8 +122,8 @@ Publication N/A Reason: N/A
 
 ## Planning artifacts (publication)
 
-- [ICW-E2S01T17-test-design.md](../../../../../implementation-cycles/ICW-E2S01T17-test-design.md)
+- [ICW-E2S1T17-test-design.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
 
-- [ICW-E2S01T17-specification.md](../../../../../implementation-cycles/ICW-E2S01T17-specification.md)
+- [ICW-E2S1T17-specification.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
 
-- [ICW-E2S01T17-implementation-plan.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
+- [ICW-E2S1T17-implementation-plan.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)

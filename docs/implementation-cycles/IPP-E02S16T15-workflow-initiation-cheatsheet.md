@@ -111,7 +111,7 @@ RF1–RF4 map to cheatsheet sections A–E plus sequences, blocked-session, and 
 ### 4.1 Files to create or modify
 
 - CREATE: `docs/guides/workflow-initiation-cheatsheet.md`
-- CREATE: `docs/implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md`
+- CREATE: `docs/implementation-cycles/IPP-E2S16T15-workflow-initiation-cheatsheet.md`
 - UPDATE: `docs/guides/README.md`, `CLAUDE.md`, `AGENTS.md`, task T15 doc
 
 ---
@@ -121,7 +121,7 @@ RF1–RF4 map to cheatsheet sections A–E plus sequences, blocked-session, and 
 | Doc ID | Path | Action | Scope |
 | ------ | ---- | ------ | ----- |
 | D-C1 | `docs/guides/workflow-initiation-cheatsheet.md` | CREATE | Full cheatsheet |
-| D-C2 | `docs/implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md` | CREATE | This IPP |
+| D-C2 | `docs/implementation-cycles/IPP-E2S16T15-workflow-initiation-cheatsheet.md` | CREATE | This IPP |
 | D-U1 | `docs/guides/README.md` | UPDATE | Key Documents link |
 | D-U2 | `CLAUDE.md` | UPDATE | Cheatsheet pointer |
 | D-U3 | `AGENTS.md` | UPDATE | Cheatsheet pointer |
@@ -135,7 +135,7 @@ RF1–RF4 map to cheatsheet sections A–E plus sequences, blocked-session, and 
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
 | D-C1 | `docs/guides/workflow-initiation-cheatsheet.md` | PUBLISHED | evergreen |
-| D-C2 | `docs/implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md` | PUBLISHED | evergreen |
+| D-C2 | `docs/implementation-cycles/IPP-E2S16T15-workflow-initiation-cheatsheet.md` | PUBLISHED | evergreen |
 
 ---
 
@@ -154,5 +154,5 @@ RF1–RF4 map to cheatsheet sections A–E plus sequences, blocked-session, and 
 - [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
 - [T15 task doc](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
 - `.claude/commands/rw.md`, `ukw.md`, `ipw.md`
-- [Release Workflow agent execution guide](../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
-- [Update Kanban Workflow agent execution guide](../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [Release Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- [Update Kanban Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)

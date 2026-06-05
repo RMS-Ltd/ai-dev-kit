@@ -1,4 +1,4 @@
-# ICW-E7S01T07-Implementation-Plan: Markdown Maintenance Workflow (MMW)
+# ICW-E7S1T7-Implementation-Plan: Markdown Maintenance Workflow (MMW)
 
 **Implementation Cycle Workflow Build Plan**  
 **Task:** E7:S01:T07 – Markdown Maintenance Workflow (MMW)  
@@ -17,9 +17,9 @@ Detailed implementation roadmap for the Markdown Maintenance Workflow (MMW) with
 ## Phase 1: Specification & Design ✅ COMPLETED
 
 **Deliverables Completed:**
-- ICW-E7S01T07-specification.md: Complete workflow architecture and interfaces
-- ICW-E7S01T07-test-design.md: Comprehensive test strategy and automation plan
-- ICW-E7S01T07-implementation-plan.md: This document with build roadmap
+- ICW-E7S1T7-specification.md: Complete workflow architecture and interfaces
+- ICW-E7S1T7-test-design.md: Comprehensive test strategy and automation plan
+- ICW-E7S1T7-implementation-plan.md: This document with build roadmap
 
 **Quality Gates Passed:**
 - Peer review of specifications
@@ -341,7 +341,7 @@ Detailed implementation roadmap for the Markdown Maintenance Workflow (MMW) with
 ## References
 
 - **FR-058:** Markdown Maintenance Workflow requirements
-- **ICW-E7S01T07-Specification:** Detailed workflow specification
-- **ICW-E7S01T07-Test-Design:** Comprehensive test strategy
+- **ICW-E7S1T7-Specification:** Detailed workflow specification
+- **ICW-E7S1T7-Test-Design:** Comprehensive test strategy
 - **E7:S01:T05:** Perpetual markdown maintenance task context
 - **RW Framework:** Release workflow integration requirements

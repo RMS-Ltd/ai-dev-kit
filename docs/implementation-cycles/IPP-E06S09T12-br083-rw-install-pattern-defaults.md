@@ -18,8 +18,8 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF1 | Mode C defaults/detect `epics/Epic-{epic}/Epic-{epic}.md` when fresh kanban present | BR-083 |
-| RF2 | Mode C defaults/detect `epics/Epic-{epic}/Story-{story:03d}-*.md` | BR-083 |
+| RF1 | Mode C defaults/detect `epics/Epic-\{epic\}/Epic-\{epic\}.md` when fresh kanban present | BR-083 |
+| RF2 | Mode C defaults/detect `epics/Epic-\{epic\}/Story-{story:03d}-*.md` | BR-083 |
 | RF3 | Install doc copy-paste `rw-config` kanban keys | BR-083 AC |
 | RF4 | Prefer `kboard.md` as board default when present | Book dry-run |
 

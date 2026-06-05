@@ -117,7 +117,7 @@ The archive file follows the same format as the main changelog:
 
 This file contains historical changelog entries archived from `CHANGELOG.md`.
 
-For recent changes, see [CHANGELOG.md](../../../CHANGELOG.md).
+For recent changes, see [CHANGELOG.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CHANGELOG.md).
 
 ---
 

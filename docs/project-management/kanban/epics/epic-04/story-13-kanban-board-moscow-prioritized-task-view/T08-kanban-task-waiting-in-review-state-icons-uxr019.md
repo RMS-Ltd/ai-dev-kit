@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Code:** E04S13T08  
 
 **Upstream:** [UXR-019 — Kanban task WAITING / IN REVIEW state icons](../../../fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md)  
-**Planning package:** [IPP-E04S13T08](../../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
+**Planning package:** [IPP-E4S13T8](../../../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
 
 **Related:** [UXR-012](../../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md) / [E04:S13:T07](T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) (base Set A map)
 
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- [IPP-E04S13T08](../../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
+- [IPP-E4S13T8](../../../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
 
 ---
 
@@ -62,13 +62,13 @@ Update `state_icons.py`, governance/guide, Gate 9 validator, UKW/RW notes; backf
 ## Dependencies
 
 - **Blocked by:** IPW + explicit implementation authorization (P-IPW-GATE).
-- **Coordinates with:** [E04:S19:T11](../../story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) (candidate **⏳ WAITING** row).
+- **Coordinates with:** [E04:S19:T11](../story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) (candidate **⏳ WAITING** row).
 
 ---
 
 ## Links
 
-- [IPP-E04S13T08](../../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
+- [IPP-E4S13T8](../../../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
 - [UXR-019](../../../fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md)
 - [Story 013](../story-13-kanban-board-moscow-prioritized-task-view.md)
-- [state-icons.md](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md)
+- [state-icons.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md)

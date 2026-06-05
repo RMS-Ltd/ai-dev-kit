@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** HIGH  
 **Created:** 2026-04-02  
-**Last updated:** 2026-06-05 — wave 3 closure **v0.3.2.12+5** (counter **903**, read-only path stable). See [evidence](../../maintenance/semver-verification-evidence-E03S02T12-wave3.md).
+**Last updated:** 2026-06-05 — wave 3 closure **v0.3.2.12+5** (counter **903**, read-only path stable). See [evidence](../../../maintenance/semver-verification-evidence-E03S02T12-wave3.md).
 **Version:** v0.3.2.12+5
 **Code:** BR-061  
 **Implementing Task:** [E03:S02:T12](../epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ## Problem Statement
 
-With `semver_mapping_strategy: task_touch` in `rw-config.yaml`, the outward **SemVer PATCH** (backed by `task_touch_counter` in `semver-registry.yaml`) appears to advance **far too often**. Maintainers see **rapid PATCH inflation**, **repeated SemVer strings** competing with **Git tags** on `origin`, and fragile workarounds (extra internal `+BUILD` bumps until an unused `v{semver}` exists).
+With `semver_mapping_strategy: task_touch` in `rw-config.yaml`, the outward **SemVer PATCH** (backed by `task_touch_counter` in `semver-registry.yaml`) appears to advance **far too often**. Maintainers see **rapid PATCH inflation**, **repeated SemVer strings** competing with **Git tags** on `origin`, and fragile workarounds (extra internal `+BUILD` bumps until an unused `v\{semver\}` exists).
 
 The failure mode smells like **“the converter mutates registry state every time it runs”**, not **“once per completed release.”**
 
@@ -43,7 +43,7 @@ Therefore **any** extra invocation burns a PATCH level, for example:
 
 - **Idempotency (per release):** For a given **intended release** (internal `RC.EPIC.STORY.TASK+BUILD` that is committed as the version of record), deriving SemVer should yield the **same** SemVer until the release boundary changes — or increments should be **explicitly** tied to a single RW “finalize” step, not to every read/convert.
 - **Registry mutations** should not occur from **read-only** “what is SemVer for X?” calls.
-- Alignment with **Git tags:** PUSH of `v{semver}` should not routinely fail because PATCH leaped ahead due to duplicate converter runs.
+- Alignment with **Git tags:** PUSH of `v\{semver\}` should not routinely fail because PATCH leaped ahead due to duplicate converter runs.
 
 ## Impact
 

@@ -34,7 +34,7 @@ housekeeping_policy: keep
 
 Fix interactive RW mode C story-pattern prompt after fresh kanban install:
 
-1. Recognise formatted placeholders (`{story:03d}`) as satisfying `{story}`.
+1. Recognise formatted placeholders (`{story:03d}`) as satisfying `\{story\}`.
 2. Accept installer-aligned story default when epic files exist but no story files yet.
 
 ---
@@ -49,7 +49,7 @@ Fix interactive RW mode C story-pattern prompt after fresh kanban install:
 
 ## Acceptance Criteria
 
-- [x] Enter on `FRESH_KANBAN_STORY_PATTERN` passes validation (no `{story}` false negative).
+- [x] Enter on `FRESH_KANBAN_STORY_PATTERN` passes validation (no `\{story\}` false negative).
 - [x] Epic-only kanban tree: story default accepted under `strict_zero_match`.
 - [x] ExpensesTracker T03 interactive install completes without `--config` seed (user replay).
 

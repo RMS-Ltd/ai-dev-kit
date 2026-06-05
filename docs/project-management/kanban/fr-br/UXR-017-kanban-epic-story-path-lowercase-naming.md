@@ -20,9 +20,9 @@ housekeeping_policy: keep
 **GitHub Issue:** [#20](https://github.com/RMS-Ltd/ai-dev-kit/issues/20)  
 
 **Implementing Task:** [E04:S19:T11](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)  
-**Planning package:** [IPP-E04S19T11](../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+**Planning package:** [IPP-E4S19T11](../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
-**Related:** [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (task `Txx` file hygiene — **COMPLETE**), [UXR-014](UXR-014-two-digit-est-identifier-default-formatting.md) (inline `E:S:T` padding), [UXR-008](UXR-008-kboard-fbuboard-default-naming-adoption.md) (board filename normalization), [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / [E06:S09:T12](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) (install defaults `Epic-{epic}/…`, `Story-{story:03d}-*.md`), [BR-087](BR-087-framework-install-directory-slug-mismatch.md) / [UXR-016](UXR-016-install-setup-interactive-feedback-external-semver-version.md) (same Expenses Tracker session — **`packages/frameworks/`** slug layout; out of scope for UXR-017)
+**Related:** [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (task `Txx` file hygiene — **COMPLETE**), [UXR-014](UXR-014-two-digit-est-identifier-default-formatting.md) (inline `E:S:T` padding), [UXR-008](UXR-008-kboard-fbuboard-default-naming-adoption.md) (board filename normalization), [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / [E06:S09:T12](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) (install defaults `Epic-\{epic\}/…`, `Story-{story:03d}-*.md`), [BR-087](BR-087-framework-install-directory-slug-mismatch.md) / [UXR-016](UXR-016-install-setup-interactive-feedback-external-semver-version.md) (same Expenses Tracker session — **`packages/frameworks/`** slug layout; out of scope for UXR-017)
 
 ---
 
@@ -34,7 +34,7 @@ During AI Dev Kit installation on **Expenses Tracker**, the generated kanban tre
 
 ## Research Objective
 
-**Primary question:** Should canonical kanban **epic and story directory names and epic/story document filenames** use **lowercase** `epic-{n}` / `story-{nnn}-{slug}` instead of **`Epic-{n}` / `Story-{nnn}-{slug}`**?
+**Primary question:** Should canonical kanban **epic and story directory names and epic/story document filenames** use **lowercase** `epic-\{n\}` / `story-{nnn}-\{slug\}` instead of **`Epic-\{n\}` / `Story-{nnn}-\{slug\}`**?
 
 **Secondary questions:**
 
@@ -52,7 +52,7 @@ During AI Dev Kit installation on **Expenses Tracker**, the generated kanban tre
 
 **Artifacts reviewed:**
 
-- `packages/frameworks/kanban/scripts/migrate_structure.py` (`Epic-{n}`, `Story-{story}`)
+- `packages/frameworks/kanban/scripts/migrate_structure.py` (`Epic-\{n\}`, `Story-\{story\}`)
 - `packages/frameworks/workflow-mgt/config/rw-config-schema.md` (default patterns)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md` (location examples)
 - `docs/project-management/kanban/epics/` (live tree: `Epic-*`, `Story-*`)
@@ -65,9 +65,9 @@ During AI Dev Kit installation on **Expenses Tracker**, the generated kanban tre
 
 Fresh install and canonical adoption write paths such as:
 
-- `epics/Epic-{epic}/Epic-{epic}.md`
-- `epics/Epic-{epic}/Story-{story:03d}-*.md`
-- `epics/Epic-{epic}/Story-{story:03d}-{slug}/` (task subdirs)
+- `epics/Epic-\{epic\}/Epic-\{epic\}.md`
+- `epics/Epic-\{epic\}/Story-{story:03d}-*.md`
+- `epics/Epic-\{epic\}/Story-{story:03d}-\{slug\}/` (task subdirs)
 
 **Expenses Tracker** (and any project following the pack) inherits this layout. The user perceives this as a **capitalisation inconsistency** relative to lowercase slug segments elsewhere in the repo.
 
@@ -76,11 +76,11 @@ Fresh install and canonical adoption write paths such as:
 | Surface | Current convention | Example |
 | ------- | ------------------ | ------- |
 | Kanban governance policy | `Epic-XX`, `Story-NNN-` | `kanban/epics/epic-04/story-13-…` |
-| `rw-config.yaml` schema defaults | `Epic-{epic}`, `Story-{story}` | BR-083 / T12 detection targets |
+| `rw-config.yaml` schema defaults | `Epic-\{epic\}`, `Story-\{story\}` | BR-083 / T12 detection targets |
 | `migrate_structure.py`, `task_creator.py`, `validate_installation.py` | `glob("epics/Epic-*")` | Hard-coded segment case |
 | Framework templates | `templates/Epic-N/`, `Epic-N.md` | Pack layout |
 
-Task-level naming was normalised under **UXR-011** (`Txx-{slug}.md`); **epic/story path segment case** was explicitly **out of scope** there.
+Task-level naming was normalised under **UXR-011** (`Txx-\{slug\}.md`); **epic/story path segment case** was explicitly **out of scope** there.
 
 ### Finding 3: Case-sensitive filesystems amplify the UX defect (Severity: Medium)
 
@@ -88,7 +88,7 @@ On Linux/macOS default (case-sensitive or mixed), `epic-01` vs `epic-01` are **d
 
 ### Finding 4: Lowercase aligns with branch and slug conventions (Severity: Low — design signal)
 
-Project branches already use lowercase (`epic/6-framework-management`). Lowercase `epic-{n}` / `story-{nnn}` would align path segments with **kebab-case slugs** used in task filenames and FR/BR/UXR reports.
+Project branches already use lowercase (`epic/6-framework-management`). Lowercase `epic-\{n\}` / `story-{nnn}` would align path segments with **kebab-case slugs** used in task filenames and FR/BR/UXR reports.
 
 ---
 
@@ -103,7 +103,7 @@ Project branches already use lowercase (`epic/6-framework-management`). Lowercas
 
 ## Recommendations
 
-1. **Define a normative path policy** in kanban governance: lowercase `epic-{nn}/`, `epic-{nn}.md`, `story-{nn}-{slug}.md`, `story-{nn}-{slug}/`, `T{nn}-*.md` with **2-digit** segments when ID ≤ 99 and **3-digit** when ID > 99 (epic/story/task); inline `E:S:T` remains UXR-014 two-digit in prose.
+1. **Define a normative path policy** in kanban governance: lowercase `epic-{nn}/`, `epic-{nn}.md`, `story-{nn}-\{slug\}.md`, `story-{nn}-\{slug\}/`, `T{nn}-*.md` with **2-digit** segments when ID ≤ 99 and **3-digit** when ID > 99 (epic/story/task); inline `E:S:T` remains UXR-014 two-digit in prose.
 2. **Update framework pack** — templates, `migrate_structure.py`, `task_creator.py`, `validate_installation.py`, fresh-install copy paths — to emit lowercase segments by default.
 3. **Update RW installer detection** (extends BR-083 / E06:S09:T12) to recognise **both** legacy `Epic-/Story-` and new `epic-/story-` during transition; prefer lowercase in Mode C defaults when both absent.
 4. **Migration guide + optional script** for ai-dev-kit and adopters: rename map, link sweep checklist, `rw-config` pattern update, validator tolerance window.
@@ -157,7 +157,7 @@ Project branches already use lowercase (`epic/6-framework-management`). Lowercas
 
 - [x] Story match: **Epic 4**, **Story 019** (kanban naming / governance — complements UXR-011, UXR-014)
 - [x] Task created: **E04:S19:T11**
-- [x] IPW / IPP: [IPP-E04S19T11](../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+- [x] IPW / IPP: [IPP-E4S19T11](../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
 **Assigned to:**
 
@@ -183,6 +183,6 @@ Project branches already use lowercase (`epic/6-framework-management`). Lowercas
 
 ## References
 
-- [kanban-governance-policy.md](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — File naming convention section
-- [rw-config-schema.md](../../../packages/frameworks/workflow-mgt/config/rw-config-schema.md)
+- [kanban-governance-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) — File naming convention section
+- [rw-config-schema.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/rw-config-schema.md)
 - [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)

@@ -20,12 +20,12 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF1 | Mode C **detects** unpadded lowercase fresh layout (`epics/epic-{epic}/epic-{epic}.md`) and pre-fills matching epic default when glob score > 0 | BR-086, #17 |
+| RF1 | Mode C **detects** unpadded lowercase fresh layout (`epics/epic-\{epic\}/epic-\{epic\}.md`) and pre-fills matching epic default when glob score > 0 | BR-086, #17 |
 | RF2 | Mode C **allows** persisting forward-looking `story-{story:03d}-*.md` (book T03) when only epic files exist — same escape as T14 but for **detected** 03d default, not only padded `02d` | BR-086, #17 |
-| RF3 | `generate_rw_config_yaml` emits **book-aligned** task pattern: `epics/epic-{epic}/story-{story:03d}/t{task:02d}-*.md` when layout is unpadded lowercase fresh (no `*/` + capital `T` glob) | BR-086, #17 |
+| RF3 | `generate_rw_config_yaml` emits **book-aligned** task pattern: `epics/epic-\{epic\}/story-{story:03d}/t{task:02d}-*.md` when layout is unpadded lowercase fresh (no `*/` + capital `T` glob) | BR-086, #17 |
 | RF4 | Epic/story **prompt suggestions** include unpadded + 03d book examples from `kanban_paths.py` | BR-086 |
-| RF5 | Install sign-off **BR-083** accepts unpadded epic pattern (`epic-{epic}/epic-{epic}`) when on-disk tree uses `epic-1` … `epic-N` | BR-086, contract |
-| RF6 | **BR-086** sign-off entry (already in contract) remains valid for lowercase + `story:03d` + `t{task}` | T16 intake |
+| RF5 | Install sign-off **BR-083** accepts unpadded epic pattern (`epic-\{epic\}/epic-\{epic\}`) when on-disk tree uses `epic-1` … `epic-N` | BR-086, contract |
+| RF6 | **BR-086** sign-off entry (already in contract) remains valid for lowercase + `story:03d` + `t\{task\}` | T16 intake |
 | RF7 | Prompt **hints** explain `:02d` vs `:03d` (one-line pointer to ADR-015 / book T03 Step 4.1) | BR-086 AC |
 | RF8 | Regression tests: fixture tree `epic-1/epic-1.md` only → detection, YAML, strict_zero_match story path | BR-086 |
 
@@ -95,7 +95,7 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 | E4 | Spec elsewhere | Y | This IPP + BR-086 AC |
 | E5 | Documented NONE | Y | §5.3 below |
 
-**§5.3 governing docs:** [ADR-015](../architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md); [UXR-017](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md); [`kanban_paths.py`](../../packages/frameworks/kanban/scripts/kanban_paths.py); [BR-086](../project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md).
+**§5.3 governing docs:** [ADR-015](../architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md); [UXR-017](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md); [`kanban_paths.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/kanban_paths.py); [BR-086](../project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md).
 
 ---
 
@@ -104,12 +104,12 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 | ID | Behavior / layer | Expected check |
 | -- | ---------------- | -------------- |
 | T1 | `detect_kanban_doc_patterns` on `epic-1/epic-1.md` only | Returns `LEGACY_EPIC_UNPADDED_PATTERN` (or unpadded epic), fresh_layout true |
-| T2 | `detect_kanban_supplementary_defaults` same tree | Task pattern contains `t{task:02d}` and `story-{story:03d}`; no `T{task}` or `-*/` |
+| T2 | `detect_kanban_supplementary_defaults` same tree | Task pattern contains `t{task:02d}` and `story-{story:03d}`; no `T\{task\}` or `-*/` |
 | T3 | `prompt_pattern_with_validation` strict, user enters 03d story pattern, epic-only tree | Accepts pattern (no infinite loop / no hard block) |
 | T4 | `generate_rw_config_yaml` from mode C config dict | YAML matches book T03 excerpt for epic/story/task |
 | T5 | `install_github_issue_signoff.py` on generated config | `[READY] BR-083` and `[READY] BR-086` |
 | T6 | Capital-case fixture `Epic-1/Epic-1.md` | Still selects legacy capital or padded lowercase per T12 behaviour (regression) |
-| T7 | `validate_required_placeholders` | `{story:03d}` satisfies `{story}` (regression from T14) |
+| T7 | `validate_required_placeholders` | `{story:03d}` satisfies `\{story\}` (regression from T14) |
 
 ---
 
@@ -134,7 +134,7 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 
 | Doc ID | Path | Action | Scope | Tied to |
 | ------ | ---- | ------ | ----- | ------- |
-| D1 | `docs/implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md` | CREATE | This plan | IPW |
+| D1 | `docs/implementation-cycles/IPP-E6S9T16-br086-lowercase-fresh-kanban-patterns.md` | CREATE | This plan | IPW |
 | D2 | `docs/project-management/kanban/epics/.../T16-*.md` | UPDATE | IPP link; AC checkboxes on verify | Phase 8 |
 | D3 | `docs/project-management/kanban/fr-br/BR-086-*.md` | UPDATE | Status on fix | RF1–RF8 |
 | D4 | `packages/frameworks/kanban/scripts/kanban_paths.py` | UPDATE | Book task constant | RF3 |
@@ -152,7 +152,7 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 
 | Doc ID | Target path | Publication | Lifecycle | Inbound links |
 | ------ | ----------- | ----------- | --------- | ------------- |
-| D1 | `docs/implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md` | NOT_APPLICABLE | evergreen | T16 Input/References |
+| D1 | `docs/implementation-cycles/IPP-E6S9T16-br086-lowercase-fresh-kanban-patterns.md` | NOT_APPLICABLE | evergreen | T16 Input/References |
 | D5 | `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` | NOT_APPLICABLE | n/a | Framework README |
 | D7 | `packages/frameworks/workflow-mgt/docs/INSTALL_IN_YOUR_PROJECT.md` | PUBLISHED (portal if in nav) | evergreen | T16, BR-086 |
 | D9–D10 | kanban boards | NOT_APPLICABLE | evergreen | RW Step 7 |
@@ -178,6 +178,6 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 - [BR-086](../project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
 - [BR-083](../project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](../project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [BR-085](../project-management/kanban/fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
 - [UXR-017](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
-- [IPP-E06S09T13](./IPP-E06S09T13-br084-rw-config-generation.md) · [IPP-E06S09T12](./IPP-E06S09T12-br083-rw-install-pattern-defaults.md)
-- [kanban_paths.py](../../packages/frameworks/kanban/scripts/kanban_paths.py)
+- [IPP-E6S9T13](IPP-E06S09T13-br084-rw-config-generation.md) · [IPP-E6S9T12](IPP-E06S09T12-br083-rw-install-pattern-defaults.md)
+- [kanban_paths.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/kanban_paths.py)
 - [GitHub #17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)

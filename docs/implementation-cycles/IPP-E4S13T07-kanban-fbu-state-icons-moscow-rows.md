@@ -134,7 +134,7 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 
 | Artifact | Path | Publication |
 | -------- | ---- | ----------- |
-| IPP | `docs/implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md` | PUBLISHED |
+| IPP | `docs/implementation-cycles/IPP-E4S13T7-kanban-fbu-state-icons-moscow-rows.md` | PUBLISHED |
 | Operator KB | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md` | PUBLISHED |
 
 ---
@@ -155,4 +155,4 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 - [UXR-012](../project-management/kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
 - [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- [board-stamp-authority.md](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md)
+- [board-stamp-authority.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md)

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Planning for:** [FR-081 – Brownfield modular adopter integration](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)  
 **Status:** Approved
 
-> **IPW:** Consolidated planning package for FR-081. Brownfield SoT: [`INSTALL_IN_YOUR_PROJECT.md`](../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories). Greenfield counterpart: [IPW-E6S09T01](IPW-E6S09T01-greenfield-installation-fr080.md).
+> **IPW:** Consolidated planning package for FR-081. Brownfield SoT: [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories). Greenfield counterpart: [IPW-E6S9T1](IPW-E6S09T01-greenfield-installation-fr080.md).
 
 ---
 
@@ -53,7 +53,7 @@ Brownfield adopters with existing repositories can determine **what must be wire
 ### 2.2 Specification mapping
 
 - **RF1–RF2:** INSTALL §Brownfield adoption — non-goals, decision tree, matrices, contract table.
-- **RF3:** README + installer epilog/warnings; link to [rw-validators-consumer-layout.md](../../packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
+- **RF3:** README + installer epilog/warnings; link to [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
 - **RF5:** Worked example subsection (anonymized SaaS API monorepo, RW-only).
 - **RF4:** §8 deferrals table.
 
@@ -121,7 +121,7 @@ Brownfield adopters with existing repositories can determine **what must be wire
 
 ### 4.1 Files to create or modify
 
-- `docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md` (this file)
+- `docs/implementation-cycles/IPP-E6S9T2-brownfield-modular-adopter-integration-fr081.md` (this file)
 - `INSTALL_IN_YOUR_PROJECT.md`
 - `docs/documentation/user-docs/framework-dependency-installation-guide.md`
 - `docs/documentation/user-docs/EXISTING_PROJECT_ROLLOUT_CHECKLIST.md`
@@ -144,7 +144,7 @@ Brownfield adopters with existing repositories can determine **what must be wire
 
 | Doc ID | Path | Action | Tied to |
 | ------ | ---- | ------ | ------- |
-| D0 | `docs/implementation-cycles/IPP-E6S09T02-*.md` | CREATE | IPW |
+| D0 | `docs/implementation-cycles/IPP-E6S9T2-*.md` | CREATE | IPW |
 | D1 | `INSTALL_IN_YOUR_PROJECT.md` | UPDATE | RF1–RF2, RF5 |
 | D2 | `docs/documentation/user-docs/framework-dependency-installation-guide.md` | UPDATE | RF1 |
 | D3 | `docs/documentation/user-docs/EXISTING_PROJECT_ROLLOUT_CHECKLIST.md` | UPDATE | RF2–RF3 |
@@ -167,7 +167,7 @@ Brownfield adopters with existing repositories can determine **what must be wire
 
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
-| D0 | `docs/implementation-cycles/IPP-E6S09T02-*.md` | NOT_APPLICABLE | evergreen |
+| D0 | `docs/implementation-cycles/IPP-E6S9T2-*.md` | NOT_APPLICABLE | evergreen |
 | D1 | `INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories` | PUBLISHED | evergreen |
 | D2–D6 | user-docs / package docs | PUBLISHED | evergreen |
 
@@ -199,5 +199,5 @@ Brownfield adopters with existing repositories can determine **what must be wire
 - [T02](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
 - [FR-081](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [IPW-E6S09T01](IPW-E6S09T01-greenfield-installation-fr080.md)
-- [rw-validators-consumer-layout.md](../../packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)
+- [IPW-E6S9T1](IPW-E6S09T01-greenfield-installation-fr080.md)
+- [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)

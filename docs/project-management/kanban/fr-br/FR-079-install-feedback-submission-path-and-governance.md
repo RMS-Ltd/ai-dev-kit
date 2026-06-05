@@ -83,9 +83,9 @@ Even with high-fidelity local install event logging, quality feedback loops rema
 
 ## Related
 
-- [FR-078](./FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md) - Local event-contract logging responsibility
-- [FR-047](./FR-047-install-logging-for-framework-dependencies.md) - Baseline install logging
-- [FR-003](./FR-003-dependency-tracking-in-adopting-projects.md) - Adoption telemetry goals
+- [FR-078](FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md) - Local event-contract logging responsibility
+- [FR-047](FR-047-install-logging-for-framework-dependencies.md) - Baseline install logging
+- [FR-003](FR-003-dependency-tracking-in-adopting-projects.md) - Adoption telemetry goals
 
 ## Release trace
 

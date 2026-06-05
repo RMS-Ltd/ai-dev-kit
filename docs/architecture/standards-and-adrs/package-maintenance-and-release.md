@@ -468,9 +468,9 @@ steps:
 ## 10. Related Documents
 
 - [Package Version Workflow: Agent Execution (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md) - Complete step-by-step PVW guide
-- [Package Versioning Criteria](./package-versioning-criteria.md) - Version bump criteria (guidance)
+- [Package Versioning Criteria](package-versioning-criteria.md) - Version bump criteria (guidance)
 - [Release Workflow Structure](ultimate-canonical-workflow-structure.md) - RW integration
-- [Dual Versioning Guide](./dual-versioning-package-managers.md) - Project vs. package versioning
+- [Dual Versioning Guide](dual-versioning-package-managers.md) - Project vs. package versioning
 
 ---
 

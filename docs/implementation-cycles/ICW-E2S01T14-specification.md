@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T14-Specification: FR-048 Traceability Wiring Hardening
+# ICW-E2S1T14-Specification: FR-048 Traceability Wiring Hardening
 
 **Task:** E2:S01:T14  
 **Related FR:** FR-048  

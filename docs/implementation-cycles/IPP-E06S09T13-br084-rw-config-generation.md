@@ -49,7 +49,7 @@ After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban 
 
 ### 2.5 ADR necessity decision
 
-**Outcome:** `EXEMPT` — installer UX; [rw-validators-consumer-layout.md](../packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
+**Outcome:** `EXEMPT` — installer UX; [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
 
 ---
 
@@ -83,7 +83,7 @@ After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban 
 
 | Doc ID | Path | Action |
 | ------ | ---- | ------ |
-| D1 | `docs/implementation-cycles/IPP-E06S09T13-*.md` | CREATE |
+| D1 | `docs/implementation-cycles/IPP-E6S9T13-*.md` | CREATE |
 | D3 | `install_release_workflow.py` | UPDATE |
 | D5 | `INSTALL_IN_YOUR_PROJECT.md` | UPDATE |
 | D6 | `rw-config-schema.md` | UPDATE |
@@ -98,4 +98,4 @@ After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban 
 ## References
 
 - [BR-084](../project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
-- [IPP-E06S09T12](../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md)
+- [IPP-E6S9T12](IPP-E06S09T12-br083-rw-install-pattern-defaults.md)

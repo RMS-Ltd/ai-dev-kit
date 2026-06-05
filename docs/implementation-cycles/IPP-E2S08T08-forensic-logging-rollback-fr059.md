@@ -216,7 +216,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links |
 | ------ | -------------- | ------------------ | --------- | ------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md` | NOT_APPLICABLE | evergreen | T08 Input/References |
+| D-C1 | `docs/implementation-cycles/IPP-E2S8T8-forensic-logging-rollback-fr059.md` | NOT_APPLICABLE | evergreen | T08 Input/References |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md` | NOT_APPLICABLE | evergreen | IPP §2.5, FR-059 |
 | D-C3 | `packages/frameworks/workflow-mgt/KB/.../workflow-forensic-recovery-guide.md` | NOT_APPLICABLE | evergreen | RW guide, T08 |
 | Runtime logs | `docs/journals/` | transient per record | ephemeral | ADR-008 |
@@ -240,5 +240,5 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - [ADR-008](../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
 - [FR-042 IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [workflow_executor.py](../../packages/frameworks/workflow-mgt/scripts/workflow_executor.py)
-- [CHANGELOG v0.2.8.8+1](../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.8.8+1.md) (mis-attributed kanban release)
+- [workflow_executor.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/workflow_executor.py)
+- [CHANGELOG v0.2.8.8+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.8.8%2B1.md) (mis-attributed kanban release)

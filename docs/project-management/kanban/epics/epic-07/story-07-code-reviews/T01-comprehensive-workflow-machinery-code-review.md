@@ -51,7 +51,7 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 
 ## Inputs
 
-- **IPP:** [`IPP-E07S07T01-workflow-machinery-code-review.md`](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
+- **IPP:** [`IPP-E7S7T1-workflow-machinery-code-review.md`](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
 - Code review standards: [E07:S02](../story-02-code-review-standards-and-processes.md)
 - Expectations baseline: [E02:S13:T01](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 - Packaged/live sync evidence: [E02:S13:T08](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) sync report
@@ -87,12 +87,12 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 
 ## Acceptance Criteria
 
-- [x] **AC1:** Complete component inventory with ownership tags (FR-107:R01). → [Report §1](./T01-workflow-machinery-code-review-report.md#1-component-inventory)
-- [x] **AC2:** Inventory mapped to E02:S13:T01 expectations; orphans documented (FR-107:R02). → [Report §2](./T01-workflow-machinery-code-review-report.md#2-expectations-gap-table-e02s13t01)
-- [x] **AC3:** Fragmentation/duplication matrix published (FR-107:R03). → [Report §3](./T01-workflow-machinery-code-review-report.md#3-fragmentation-and-duplication-matrix)
-- [x] **AC4:** Efficiency recommendations with evidence (FR-107:R04). → [Report §4](./T01-workflow-machinery-code-review-report.md#4-efficiency-recommendations)
-- [x] **AC5:** Severity-ranked code review report with remediation proposals (FR-107:R05). → [Report §5–§6](./T01-workflow-machinery-code-review-report.md#5-findings-by-severity)
-- [x] **AC6:** Findings cross-linked to E02:S13 T05/T06 scope (FR-107:R06). → [Report §7](./T01-workflow-machinery-code-review-report.md#7-e02s13-rc-gate-summary-feeds-t05t06)
+- [x] **AC1:** Complete component inventory with ownership tags (FR-107:R01). → [Report §1](T01-workflow-machinery-code-review-report.md#1-component-inventory)
+- [x] **AC2:** Inventory mapped to E02:S13:T01 expectations; orphans documented (FR-107:R02). → [Report §2](T01-workflow-machinery-code-review-report.md)
+- [x] **AC3:** Fragmentation/duplication matrix published (FR-107:R03). → [Report §3](T01-workflow-machinery-code-review-report.md#3-fragmentation-and-duplication-matrix)
+- [x] **AC4:** Efficiency recommendations with evidence (FR-107:R04). → [Report §4](T01-workflow-machinery-code-review-report.md#4-efficiency-recommendations)
+- [x] **AC5:** Severity-ranked code review report with remediation proposals (FR-107:R05). → [Report §5–§6](T01-workflow-machinery-code-review-report.md#5-findings-by-severity)
+- [x] **AC6:** Findings cross-linked to E02:S13 T05/T06 scope (FR-107:R06). → [Report §7](T01-workflow-machinery-code-review-report.md)
 
 ---
 
@@ -100,7 +100,7 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 
 | Check | Result |
 | ----- | ------ |
-| V1–V7 | PASS — see [Report §8](./T01-workflow-machinery-code-review-report.md#8-verification-checklist-ipp-3) |
+| V1–V7 | PASS — see [Report §8](T01-workflow-machinery-code-review-report.md#8-verification-checklist-ipp-3) |
 
 **Release:** Task remains **IN PROGRESS** until **`RW E07:S07:T01`** attributes version and reconciles to **COMPLETE**.
 
@@ -128,7 +128,7 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 
 ## References
 
-- **IPP:** [`IPP-E07S07T01-workflow-machinery-code-review.md`](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
-- **Report (deliverable):** [`T01-workflow-machinery-code-review-report.md`](./T01-workflow-machinery-code-review-report.md)
+- **IPP:** [`IPP-E7S7T1-workflow-machinery-code-review.md`](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
+- **Report (deliverable):** [`T01-workflow-machinery-code-review-report.md`](T01-workflow-machinery-code-review-report.md)
 - Story: [`story-07-code-reviews.md`](../story-07-code-reviews.md)
 - Package: `packages/frameworks/workflow-mgt/`

@@ -31,7 +31,7 @@ Provide safe uninstall, cleanup, recovery, and rollback capabilities for ai-dev-
 - Existing `uninstall_package.py` standalone script
 - Existing `cli/commands/remove.py` (broken implementation)
 - Existing backend `remove()` methods (`cli/backends/git_submodule.py`, `git_subtree.py`, `package_manager.py`)
-- IPW planning artifact: `docs/implementation-cycles/IPP-E02S06T01-package-uninstall-reimplementation.md`
+- IPW planning artifact: `docs/implementation-cycles/IPP-E2S6T1-package-uninstall-reimplementation.md`
 
 ---
 
@@ -68,7 +68,7 @@ Provide safe uninstall, cleanup, recovery, and rollback capabilities for ai-dev-
   - Supports all backends: Git submodule, npm, pip (auto-detect or manual selection)
   - Safety features: backup before removal, dependency checking, confirmation prompts, dry-run mode
   - **Linked FR:** `FR-008-package-uninstall-capabilities.md` (GitHub issue #5)
-  - **Implementation Plan:** `docs/implementation-cycles/IPP-E02S06T01-package-uninstall-reimplementation.md`
+  - **Implementation Plan:** `docs/implementation-cycles/IPP-E2S6T1-package-uninstall-reimplementation.md`
   - **Acceptance:** ✅ AC-1..AC-5 of FR-008 verified with tests; backup/validation/confirmation documented.
 
 
@@ -94,7 +94,7 @@ Provide safe uninstall, cleanup, recovery, and rollback capabilities for ai-dev-
 ## References
 
 - FR-008: `docs/project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md`
-- Implementation Plan: `docs/implementation-cycles/IPP-E02S06T01-package-uninstall-reimplementation.md`
+- Implementation Plan: `docs/implementation-cycles/IPP-E2S6T1-package-uninstall-reimplementation.md`
 - Framework dependency guides under `docs/documentation/user-docs/`
 
 ---
@@ -103,4 +103,4 @@ Provide safe uninstall, cleanup, recovery, and rollback capabilities for ai-dev-
 
 ## Planning artifacts (publication)
 
-- [IPP-E2S06T01-package-uninstall-reimplementation.md](../../../../implementation-cycles/IPP-E2S06T01-package-uninstall-reimplementation.md)
+- [IPP-E2S6T1-package-uninstall-reimplementation.md](../../../../implementation-cycles/IPP-E2S06T01-package-uninstall-reimplementation.md)

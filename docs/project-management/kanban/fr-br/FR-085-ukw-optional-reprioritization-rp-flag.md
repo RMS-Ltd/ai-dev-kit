@@ -83,9 +83,9 @@ Current UKW synchronization focuses on structural reconciliation and board hygie
 
 ## Related
 
-- [IPP-E02S16T06](../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp`)
+- [IPP-E2S16T6](../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp`)
 - [ADR-009](../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) — governance contract (v0.2.16.6+1)
-- [FR-023](./FR-023-update-kanban-workflow-ukw.md)
-- [FR-050](./FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
-- [FR-076](./FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [BR-059](./BR-059-ukw-moscow-incomplete-story-task-coverage.md)
+- [FR-023](FR-023-update-kanban-workflow-ukw.md)
+- [FR-050](FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
+- [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [BR-059](BR-059-ukw-moscow-incomplete-story-task-coverage.md)

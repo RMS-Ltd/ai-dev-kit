@@ -114,7 +114,7 @@ Deliver a **gap-comparison report** quantifying distance from RC=0 / current kan
 
 | File | Action |
 | ---- | ------ |
-| `docs/implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md` | CREATE |
+| `docs/implementation-cycles/IPP-E9S1T3-gap-comparison-fr032.md` | CREATE |
 | `…/T01-current-state-inventory.md` | CREATE |
 | `…/T02-rc1-criteria-definition.md` | CREATE |
 | `…/T03-gap-comparison-fr032-report.md` | CREATE |
@@ -128,7 +128,7 @@ Deliver a **gap-comparison report** quantifying distance from RC=0 / current kan
 
 | Doc ID | Path | Action |
 | ------ | ---- | ------ |
-| D-C1 | `docs/implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md` | CREATE |
+| D-C1 | `docs/implementation-cycles/IPP-E9S1T3-gap-comparison-fr032.md` | CREATE |
 | D-C2 | `…/T01-current-state-inventory.md` | CREATE |
 | D-C3 | `…/T02-rc1-criteria-definition.md` | CREATE |
 | D-C4 | `…/T03-gap-comparison-fr032-report.md` | CREATE |
@@ -142,7 +142,7 @@ Deliver a **gap-comparison report** quantifying distance from RC=0 / current kan
 
 | Doc ID | Path | Publication | Lifecycle |
 | ------ | ---- | ----------- | --------- |
-| D-C1 | `docs/implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md` | NOT_APPLICABLE | evergreen |
+| D-C1 | `docs/implementation-cycles/IPP-E9S1T3-gap-comparison-fr032.md` | NOT_APPLICABLE | evergreen |
 | D-C2–D-C4 | Story 1 folder paths above | NOT_APPLICABLE | evergreen |
 | D-U1 | T03 task doc | NOT_APPLICABLE | evergreen |
 

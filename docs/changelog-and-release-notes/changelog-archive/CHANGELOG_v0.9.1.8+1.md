@@ -115,7 +115,7 @@ This release implements the repository story abstract space resolution (E9:S01:T
 - `story-07-persistent-knowledge-base-investigation.md` → `story-08-persistent-knowledge-base-investigation.md`
 - `story-01-framework-version-management.md` → `story-02-framework-version-management.md`
 - `story-02-framework-update-and-migration.md` → `story-03-framework-update-and-migration.md`
-- `story-03-framework-health-monitoring.md` → `story-04-framework-health-monitoring.md`
+- `story-07-adk-implementation-analysis-and-package-management.md` → `story-04-framework-health-monitoring.md`
 - `story-04-bug-reports.md` → `story-05-bug-reports.md`
 - `story-05-feature-requests.md` → `story-06-feature-requests.md`
 - `story-06-adk-implementation-analysis-and-package-management/` → `story-07-adk-implementation-analysis-and-package-management/`

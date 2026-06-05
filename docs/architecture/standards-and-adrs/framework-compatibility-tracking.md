@@ -295,7 +295,7 @@ frameworks:
 **Compatibility:**
 - Backward compatible with v2.0.0+
 - MAJOR version bumps may require migration
-- See [Compatibility Tracking](../../../docs/architecture/standards-and-adrs/framework-compatibility-tracking.md) for details
+- See [Compatibility Tracking](framework-compatibility-tracking.md) for details
 ```
 
 ### 5.2 Package Changelog Documentation

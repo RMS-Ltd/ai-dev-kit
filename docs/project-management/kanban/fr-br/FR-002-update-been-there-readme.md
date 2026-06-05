@@ -147,7 +147,7 @@ A project adopting ai-dev-kit needs guidance on how to customize their README to
 
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/epic-07/epic-07.md`](../epics/epic-07/epic-07.md)
-- Story: [`docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`](../epics/epic-07/story-04-readme-template-based-on-best-readme-template.md)
+- Story: [`docs/project-management/kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md`](../epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)
 - Tasks: E07:S04:T01, T02, T03
 
 ---

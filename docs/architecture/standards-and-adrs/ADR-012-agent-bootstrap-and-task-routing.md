@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E02:S16:T17](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)  
-**Planning package:** [IPP-E02S16T17](../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)  
+**Planning package:** [IPP-E2S16T17](../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)  
 **Related:** [FR-103](../../project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md), `README.md`, `AGENTS.md`, `docs/project-agent-manifest.json`, `docs/project-agent-index.md`
 
 ---
@@ -41,7 +41,7 @@ Adopt a **three-layer agent context model** with two repo entrypoints (human + m
 
 ### Layer 1 — Intro (always load)
 
-**File:** repo-root [`AGENTS.md`](../../../AGENTS.md).
+**File:** repo-root [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md).
 
 **Target size:** ≤ 150 lines. Sections: project summary, bootstrap steps, use-case table, binding-rule pointers, ascertainment rule, anti-patterns. **Must not** contain full workflow prose.
 
@@ -67,7 +67,7 @@ Governance, registers, journals, and application source load **only after** tria
 
 ### IDE integration
 
-- Cursor / Claude: bootstrap pointers in [`.cursorrules`](../../../.cursorrules) and [`CLAUDE.md`](../../../CLAUDE.md); full workflow SoT remains `.cursorrules` / slash commands.
+- Cursor / Claude: bootstrap pointers in [`.cursorrules`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) and [`CLAUDE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CLAUDE.md); full workflow SoT remains `.cursorrules` / slash commands.
 - Skills: invoke-only (`.cursor/skills/`), not cold-load.
 - Encouraged operator format: `Track: … | File: … | Task: …`
 

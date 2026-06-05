@@ -1,6 +1,6 @@
 # ICW Specification: E4:S11:T07 - Migrate Embedded Tasks to Discrete Task Documents
 
-**ICW Instance:** ICW-E4S11T07  
+**ICW Instance:** ICW-E4S11T7  
 **Task:** E4:S11:T07 - Migrate Embedded Tasks to Discrete Task Documents  
 **Phase:** Specification  
 **Timestamp:** 2026-03-12T10:50:00Z  

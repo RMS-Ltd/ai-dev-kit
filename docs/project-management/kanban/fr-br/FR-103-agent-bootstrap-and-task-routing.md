@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E02:S16:T17](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) (v0.2.16.17+2)
 
-**Related:** [FR-041](./FR-041-windsurf-investigate-agents-skills-for-workflows.md), [FR-022](./FR-022-policy-docs-machine-readable-salience.md), [FR-028](./FR-028-cursor-ide-performance-considerations-awareness.md), [UXR-015](./UXR-015-workflow-initiation-cheatsheet.md), [BR-071](./BR-071-rw-trigger-routing-not-executing-from-chat-session.md), draft ADR at repo root [`ADR-agent-bootstrap-and-task-routing.md`](../../../../ADR-agent-bootstrap-and-task-routing.md)
+**Related:** [FR-041](FR-041-windsurf-investigate-agents-skills-for-workflows.md), [FR-022](FR-022-policy-docs-machine-readable-salience.md), [FR-028](FR-028-cursor-ide-performance-considerations-awareness.md), [UXR-015](UXR-015-workflow-initiation-cheatsheet.md), [BR-071](BR-071-rw-trigger-routing-not-executing-from-chat-session.md), draft ADR at repo root [`ADR-agent-bootstrap-and-task-routing.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/ADR-agent-bootstrap-and-task-routing.md)
 
 ---
 
@@ -47,7 +47,7 @@ Today:
 | `.cursorrules` / `CLAUDE.md` | Full workflow prose — correct as agent SoT but **too heavy** for cold-start scan |
 | `docs/project-agent-manifest.json` | **Missing** — no machine-readable `taskRouting[]` / `protocol[]` |
 | `docs/project-agent-index.md` | **Missing** — no human-readable bootstrap mirror |
-| Cheatsheet ([UXR-015](./UXR-015-workflow-initiation-cheatsheet.md)) | Human-oriented workflow triggers — complementary, not a substitute for manifest routing |
+| Cheatsheet ([UXR-015](UXR-015-workflow-initiation-cheatsheet.md)) | Human-oriented workflow triggers — complementary, not a substitute for manifest routing |
 
 ---
 
@@ -91,7 +91,7 @@ Adopt the architecture in draft ADR **`ADR-agent-bootstrap-and-task-routing.md`*
 
 ### Framework packaging (adopter surface)
 
-- Provide portable templates under workflow-management or kanban framework package so adopters can copy manifest schema + ADR pattern (align with [FR-081](./FR-081-brownfield-modular-adopter-integration.md) distribution story).
+- Provide portable templates under workflow-management or kanban framework package so adopters can copy manifest schema + ADR pattern (align with [FR-081](FR-081-brownfield-modular-adopter-integration.md) distribution story).
 
 ---
 
@@ -149,9 +149,9 @@ Adopt the architecture in draft ADR **`ADR-agent-bootstrap-and-task-routing.md`*
 
 **Related Work:**
 
-- [FR-041](./FR-041-windsurf-investigate-agents-skills-for-workflows.md) — skills vs bootstrap layering
-- [FR-022](./FR-022-policy-docs-machine-readable-salience.md) — overlaps `protocol[]`; coordinate to avoid duplicate SoT
-- [UXR-015](./UXR-015-workflow-initiation-cheatsheet.md) — linked from workflow `taskRouting` row
+- [FR-041](FR-041-windsurf-investigate-agents-skills-for-workflows.md) — skills vs bootstrap layering
+- [FR-022](FR-022-policy-docs-machine-readable-salience.md) — overlaps `protocol[]`; coordinate to avoid duplicate SoT
+- [UXR-015](UXR-015-workflow-initiation-cheatsheet.md) — linked from workflow `taskRouting` row
 
 ---
 
@@ -183,7 +183,7 @@ Adopt the architecture in draft ADR **`ADR-agent-bootstrap-and-task-routing.md`*
 
 ## Notes
 
-- Source decision doc: [`ADR-agent-bootstrap-and-task-routing.md`](../../../../ADR-agent-bootstrap-and-task-routing.md) (repo root; v0.0.1 Proposed).
+- Source decision doc: [`ADR-agent-bootstrap-and-task-routing.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/ADR-agent-bootstrap-and-task-routing.md) (repo root; v0.0.1 Proposed).
 - Implementation should run **IPW** on **E02:S16:T17** before code/docs execution (global gate).
 - Splitting `AGENTS.md` may require moving current role definitions to `docs/project-management/kanban/AGENTS.md` (already exists) or a dedicated `docs/agents/` index — IPP should decide housing.
 
@@ -191,7 +191,7 @@ Adopt the architecture in draft ADR **`ADR-agent-bootstrap-and-task-routing.md`*
 
 ## References
 
-- [`ADR-agent-bootstrap-and-task-routing.md`](../../../../ADR-agent-bootstrap-and-task-routing.md)
-- [`AGENTS.md`](../../../../AGENTS.md)
+- [`ADR-agent-bootstrap-and-task-routing.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/ADR-agent-bootstrap-and-task-routing.md)
+- [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md)
 - [`docs/guides/workflow-initiation-cheatsheet.md`](../../../guides/workflow-initiation-cheatsheet.md)
-- [Kanban governance policy](../../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [Kanban governance policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)

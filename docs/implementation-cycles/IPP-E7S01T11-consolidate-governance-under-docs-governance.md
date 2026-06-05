@@ -233,7 +233,7 @@ housekeeping_policy: keep
 
 | Doc ID | Proposed path | Purpose | Tied to (RF/step) |
 | ------ | ------------- | ------- | ----------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md` | This IPP | RF7 |
+| D-C1 | `docs/implementation-cycles/IPP-E7S1T11-consolidate-governance-under-docs-governance.md` | This IPP | RF7 |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md` | Topology ADR | §2.5, A |
 | D-C3 | `docs/maintenance/book-repo-docs-scope.md` | AC3 docs scope | RF6, F |
 | D-C4 | `docs/governance/principles/bidirectional-wiring-principle.md` | Canonical principle | RF4, D |
@@ -256,7 +256,7 @@ housekeeping_policy: keep
 
 | Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md` | NOT_APPLICABLE | Internal planning artifact (BR-066); linked from task doc | evergreen | T11 Input, References |
+| D-C1 | `docs/implementation-cycles/IPP-E7S1T11-consolidate-governance-under-docs-governance.md` | NOT_APPLICABLE | Internal planning artifact (BR-066); linked from task doc | evergreen | T11 Input, References |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md` | NOT_APPLICABLE | ADR index via architecture README | evergreen | governance README, FR-101 |
 | D-C3 | `docs/maintenance/book-repo-docs-scope.md` | NOT_APPLICABLE | Maintainer scope doc | evergreen | governance README, T10/T11 |
 | D-C4 | `docs/governance/principles/bidirectional-wiring-principle.md` | NOT_APPLICABLE | Book workspace governance | evergreen | TASK_TEMPLATE, intake-open-taskless-queue, fr-br stub |
@@ -292,5 +292,5 @@ housekeeping_policy: keep
 - [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-094](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 - [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
-- [.claude/commands/ipw.md](../../.claude/commands/ipw.md)
+- [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
+- [.claude/commands/ipw.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md)

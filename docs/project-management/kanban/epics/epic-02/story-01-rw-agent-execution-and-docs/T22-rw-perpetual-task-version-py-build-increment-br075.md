@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** LOW  
 Publication Status: NOT_APPLICABLE  
-Publication N/A Reason: Consolidated IPP per FR-042 (see IPP-E02S01T22 in docs/implementation-cycles/).
+Publication N/A Reason: Consolidated IPP per FR-042 (see IPP-E2S1T22 in docs/implementation-cycles/).
 **Estimated Effort:** Small  
 **Created:** 2026-05-26  
 **Last updated:** 2026-05-26 (**v0.2.1.22+1** — BR-075 intake; RW `-k` `--art`)  
@@ -29,7 +29,7 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 
 ## Input
 
-- [IPP-E02S01T22](../../../../implementation-cycles/IPP-E02S01T22-rw-perpetual-version-py-build-br075.md)
+- [IPP-E2S1T22](../../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
 - [BR-075](../../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
 - `rw-config.yaml` → `version_file: src/ai_dev_kit/version.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
@@ -61,11 +61,11 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 
 ## References
 
-- [IPP-E02S01T22](../../../../implementation-cycles/IPP-E02S01T22-rw-perpetual-version-py-build-br075.md)
+- [IPP-E2S1T22](../../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
 - [BR-075](../../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
 - [E02:S16:T04 — Perpetual UKW/kanban lane](../story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
-- [dev-kit-versioning-policy.md](../../../../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
+- [dev-kit-versioning-policy.md](../../../../../governance/standards/dev-kit-versioning-policy.md)
 
 ## Planning artifacts (publication)
 
-- [IPP-E2S01T22-rw-perpetual-version-py-build-br075.md](../../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
+- [IPP-E2S1T22-rw-perpetual-version-py-build-br075.md](../../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)

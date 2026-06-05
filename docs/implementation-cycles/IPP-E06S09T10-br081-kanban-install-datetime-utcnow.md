@@ -113,7 +113,7 @@ Eliminate deprecation noise during book/adopter dry-runs of `install_kanban_fram
 
 - `packages/frameworks/kanban/scripts/install_kanban_framework.py`
 - `tests/kanban/test_install_kanban_logging.py`
-- `docs/implementation-cycles/IPP-E06S09T10-br081-kanban-install-datetime-utcnow.md` (this file)
+- `docs/implementation-cycles/IPP-E6S9T10-br081-kanban-install-datetime-utcnow.md` (this file)
 - `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md`
 - `docs/project-management/kanban/fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md`
 - `packages/frameworks/kanban/CHANGELOG.md`
@@ -153,7 +153,7 @@ Eliminate deprecation noise during book/adopter dry-runs of `install_kanban_fram
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links |
 | ------ | -------------- | ------------------ | --------- | ------------- |
-| D-IPP | `docs/implementation-cycles/IPP-E06S09T10-br081-kanban-install-datetime-utcnow.md` | PUBLISHED | evergreen | T10 Input/References |
+| D-IPP | `docs/implementation-cycles/IPP-E6S9T10-br081-kanban-install-datetime-utcnow.md` | PUBLISHED | evergreen | T10 Input/References |
 | D-TASK | `.../T10-kanban-install-datetime-utcnow-br081.md` | PUBLISHED | evergreen | Story 9 checklist |
 | D-BR | `.../BR-081-*.md` | PUBLISHED | evergreen | fbuboard, T10 |
 | D-PKG | `packages/frameworks/kanban/CHANGELOG.md` | PUBLISHED | evergreen | — |
@@ -174,5 +174,5 @@ Eliminate deprecation noise during book/adopter dry-runs of `install_kanban_fram
 
 - [BR-081](../project-management/kanban/fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md)
 - [GitHub #13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
-- [`install_receipt.py`](../../packages/frameworks/workflow-mgt/scripts/install_receipt.py)
+- [`install_receipt.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_receipt.py)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

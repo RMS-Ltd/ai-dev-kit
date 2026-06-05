@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Task ID
 
-**Format:** `E{epic}:S{story}:T{task}`  
+**Format:** `E\{epic\}:S\{story\}:T\{task\}`  
 **Full Task ID:** `E07:S01:T10`
 
 ---
@@ -148,5 +148,5 @@ Pending.
 ## Next Actions
 
 - [ ] Run `IPW E07:S01:T10` in plan mode.
-- [ ] Produce `IPP-E07S01T10-*.md` under `docs/implementation-cycles/`.
+- [ ] Produce `IPP-E7S1T10-*.md` under `docs/implementation-cycles/`.
 - [ ] Start implementation only after explicit authorization.

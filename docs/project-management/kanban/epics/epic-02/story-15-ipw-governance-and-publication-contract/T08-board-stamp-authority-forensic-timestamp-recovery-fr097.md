@@ -19,12 +19,12 @@ housekeeping_policy: keep
 
 **Upstream:** [FR-097 — Board stamp authority, blocking validation, and forensic timestamp recovery](../../../fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 
-**Planning artifact (IPP):** [IPP-E02S15T08 — Board stamp authority and forensic timestamp recovery](../../../../../implementation-cycles/IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
+**Planning artifact (IPP):** [IPP-E2S15T8 — Board stamp authority and forensic timestamp recovery](../../../../../implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
 **Reopens closure for:**
 
 - [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) — [E02:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) (historical delivery retained; forensic truth owned here)
-- [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md) — [E06:S07:T115](../../epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (Wave 6 script gate retained; agentic + backfill owned here)
+- [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md) — [E06:S07:T115](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (Wave 6 script gate retained; agentic + backfill owned here)
 
 **Predecessor:** [E02:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) / [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- [IPP-E02S15T08](../../../../../implementation-cycles/IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
+- [IPP-E2S15T8](../../../../../implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
 - User report: mass-identical `Last modified` on `kboard.md` (~61× `2026-04-20 15:52 UTC`) destroys staleness signal.
 - Confirmed conflict: UKW guides mandate row temporal-drift normalization while FR-092 Wave 6 forbids synthetic stamp churn on hygiene paths.
@@ -65,8 +65,8 @@ Forensic row stamps are a primary signal for workload and staleness. Board-hygie
 - [x] **AC1:** UKW/RW guides and `kanban-governance-policy.md` aligned with Board Stamp Authority (no row unify on hygiene).
 - [x] **AC2:** Blocking validator integrated; UKW/RW **abort** when stamp delta lacks evidence (see `board-stamp-authority.md`).
 - [x] **AC3:** Fbuboard cleanup path cannot append `now()` stamps on hygiene runs (`non_substantive`; tests green).
-- [x] **AC4:** Automatic backfill — 71 rows changed; [fr097-backfill-report.json](../../../../../docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json).
-- **Forensic (+4):** Step 9 readiness report corrected to PASS — [rw-step9-release-readiness-v0-2-15-8plus3-e2s15t8.md](../../../../../docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step9-release-readiness-v0-2-15-8plus3-e2s15t8.md) (v0.2.15.8+4 docs-only release).
+- [x] **AC4:** Automatic backfill — 71 rows changed; [fr097-backfill-report.json](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json).
+- **Forensic (+4):** Step 9 readiness report corrected to PASS — [rw-step9-release-readiness-v0-2-15-8plus3-e2s15t8.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step9-release-readiness-v0-2-15-8plus3-e2s15t8.md) (v0.2.15.8+4 docs-only release).
 - [x] **AC5:** Gate 8 homogeneity PASS post-backfill; stamp-diff validator + tests shipped.
 - [x] **AC6:** BR-069 + UXR-009 CLOSED on `RW E02:S15:T08` release (v0.2.15.8+1).
 - [x] **AC7 (optional):** Agent skill NONE — validator + snapshot sufficient (IPP §4.2).
@@ -75,5 +75,5 @@ Forensic row stamps are a primary signal for workload and staleness. Board-hygie
 
 ## References
 
-- [IPP-E02S15T04](../../../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md) (historical)
-- [IPP-E02S15T07](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md) (Wave 6 stamp gate)
+- [IPP-E2S15T4](../../../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md) (historical)
+- [IPP-E2S15T7](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md) (Wave 6 stamp gate)

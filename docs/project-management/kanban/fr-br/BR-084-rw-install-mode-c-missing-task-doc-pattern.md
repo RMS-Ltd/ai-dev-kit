@@ -54,14 +54,14 @@ Missing: `task_doc_pattern`, `fr_br_root`.
 
 **File:** `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
 
-1. **`collect_config_interactive` (mode C)** — defaults/suggestions omit `epics/Epic-{epic}/Epic-{epic}.md`.
+1. **`collect_config_interactive` (mode C)** — defaults/suggestions omit `epics/Epic-\{epic\}/Epic-\{epic\}.md`.
 2. **`prompt_pattern_with_validation`** — user can answer **y** to “Use this pattern anyway?” with 0 matches; invalid pattern is **persisted**.
 3. **`generate_rw_config_yaml`** — omits `task_doc_pattern` (and optionally `fr_br_root`) when `use_kanban: true`.
 
 ## Expected
 
 - Detect `epics/Epic-*/Epic-*.md` after fresh kanban and pre-fill aligned patterns.
-- Emit `task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md` (or installer-aligned variant).
+- Emit `task_doc_pattern: epics/Epic-\{epic\}/Story-\{story\}/T\{task\}-*.md` (or installer-aligned variant).
 - Do not silently persist 0-match patterns without loud warning or block.
 
 ## Workaround

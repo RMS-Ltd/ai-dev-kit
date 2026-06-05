@@ -1,6 +1,6 @@
 # ICW Specification: E5:S01:T46 - RW SemVer Tag task_touch Mode
 
-**ICW Instance:** ICW-E5S01T46  
+**ICW Instance:** ICW-E5S1T46  
 **Task:** E5:S01:T46 - Release Workflow Uses SemVer Tag When task_touch Enabled  
 **Phase:** Specification  
 **Timestamp:** 2026-03-12T10:40:00Z  

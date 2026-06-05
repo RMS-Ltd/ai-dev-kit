@@ -23,8 +23,8 @@ housekeeping_policy: keep
 **Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
 **Prerequisites:**
 
-- [E06:S09:T04 — Phase 0 evaluation](./T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
-- [E06:S09:T05 — Phase 1 skill pack](./T05-adk-workflow-skill-pack-ecc-fr098.md) (**shipped** v0.6.9.5+4)
+- [E06:S09:T04 — Phase 0 evaluation](T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
+- [E06:S09:T05 — Phase 1 skill pack](T05-adk-workflow-skill-pack-ecc-fr098.md) (**shipped** v0.6.9.5+4)
 
 ---
 
@@ -66,13 +66,13 @@ Delivered FR-098 **phases 2–5**: optional ECC installer/bridge path, hook alig
 
 ## Input
 
-- [IPP (planning package — §7 closed; §8 Wave E plan **v0.6.9.6+5**)](../../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md)
+- [IPP (planning package — §7 closed; §8 Wave E plan **v0.6.9.6+5**)](../../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
 - [ECC + ADK cheatsheet](../../../../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)
-- [Bridge template](../../../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
-- [IPP-E06S09T05 (Phase 1)](../../../../../implementation-cycles/IPP-E06S09T05-adk-ecc-workflow-skill-pack-fr098.md)
-- [T01 greenfield install (FR-080)](./T01-greenfield-installation-process-fr080.md)
+- [Bridge template](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
+- [IPP-E6S9T5 (Phase 1)](../../../../../implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
+- [T01 greenfield install (FR-080)](T01-greenfield-installation-process-fr080.md)
 
 ---
 
@@ -138,8 +138,8 @@ Ship via **`RW E06:S09:T06`** when ready to release implementation (`--art`).
 
 ## References
 
-- [IPP-E06S09T06 (planning package)](../../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md)
+- [IPP-E6S9T6 (planning package)](../../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
 - [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-- [T04 Phase 0](./T04-ecc-harness-layer-phase0-compatibility-fr098.md)
-- [T05 Phase 1](./T05-adk-workflow-skill-pack-ecc-fr098.md)
-- [ADR-003 greenfield vs brownfield](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
+- [T04 Phase 0](T04-ecc-harness-layer-phase0-compatibility-fr098.md)
+- [T05 Phase 1](T05-adk-workflow-skill-pack-ecc-fr098.md)
+- [ADR-003 greenfield vs brownfield](../../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)

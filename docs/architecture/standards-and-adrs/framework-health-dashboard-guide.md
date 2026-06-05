@@ -312,7 +312,7 @@ Extend the dashboard generator to support:
 - **Framework Health Monitor:** `scripts/frameworks/framework-health-monitor.py`
 - **Dashboard Generator:** `scripts/frameworks/generate-dashboard.py`
 - **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
-- **Story 3:** `docs/project-management/kanban/epics/epic-06/story-03-framework-health-monitoring.md`
+- **Story 3:** `docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md`
 
 ---
 

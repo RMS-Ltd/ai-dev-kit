@@ -19,13 +19,13 @@ housekeeping_policy: keep
 **Resolved in:** v0.4.19.12+1 through v0.4.19.12+5 (ADR-018 R3 + intake rename)  
 
 **Implementing Task:** [E04:S19:T12](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)  
-**Planning package:** [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
+**Planning package:** [IPP-E4S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 ---
 
 ## Summary
 
-With bidirectional **task ↔ FBU** wiring now standard, **`kboard.md` largely mirror each other** in the Could Have backlog and create **duplicate UKW/RW maintenance**. Investigation found **`fbuboard` M/S bands** still hold verification-pending rows today, but the user selected **R3**: enrich **`kboard`** with a **Verification (V)** band and **dual-status rows**, then **retire active `fbuboard`**. Implementation plan: [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md).
+With bidirectional **task ↔ FBU** wiring now standard, **`kboard.md` largely mirror each other** in the Could Have backlog and create **duplicate UKW/RW maintenance**. Investigation found **`fbuboard` M/S bands** still hold verification-pending rows today, but the user selected **R3**: enrich **`kboard`** with a **Verification (V)** band and **dual-status rows**, then **retire active `fbuboard`**. Implementation plan: [IPP-E4S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md).
 
 ---
 
@@ -50,7 +50,7 @@ With bidirectional **task ↔ FBU** wiring now standard, **`kboard.md` largely m
 
 - [`kboard.md`](../kboard.md)(../kboard.md)
 - [`kanban-completed.md`](../kanban-completed.md), [`intake-completed.md`](../intake-completed.md)
-- [`kanban-governance-policy.md`](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) (active vs completed surfaces, RW Step 7)
+- [`kanban-governance-policy.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) (active vs completed surfaces, RW Step 7)
 - [FR-051](FR-051-fr-br-uxr-prioritization-board.md) (original rationale for fbuboard)
 - [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (four-surface RW contract)
 - UKW/RW changelog entries for consolidation passes and **2026-06-05 lean-board revert** on `kboard.md`
@@ -161,7 +161,7 @@ Enrich **`kboard` row contract** with explicit **dual status** tokens, e.g. `Tas
 - [x] **AC2:** Non-redundant fbuboard behaviours documented (verification-pending, taskless intake).
 - [x] **AC3:** Workflow/validator dependency inventory captured at high level.
 - [x] **AC4:** Actionable recommendation set (retain / partial consolidate / full retire) with trade-offs.
-- [x] **AC5:** User sign-off — **R3 (full single-board)** recorded 2026-06-05; [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) approved.
+- [x] **AC5:** User sign-off — **R3 (full single-board)** recorded 2026-06-05; [IPP-E4S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) approved.
 
 ---
 

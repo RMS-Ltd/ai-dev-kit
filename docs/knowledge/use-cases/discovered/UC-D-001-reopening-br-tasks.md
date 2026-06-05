@@ -102,7 +102,7 @@ When a bug persists despite a previous fix attempt, re-open the existing BR and 
 ## Implementation
 
 **Related Work:**
-- **Task:** [E2:S01:T06 - Fix changelog validator ordering bug](../../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened)
+- **Task:** [E2:S01:T06 - Fix changelog validator ordering bug](../../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md)
 - **BR:** [BR-002: Changelog Validator Ordering Bug](../../../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md)
 - **Documentation:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../../project-management/kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md)
 - **Epic/Story:** Epic 2, Story 1
@@ -171,7 +171,7 @@ When a bug persists despite a previous fix attempt, re-open the existing BR and 
 
 - [REOPENING_BR_AND_TASKS_GUIDE.md](../../../project-management/kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Complete guide for this pattern
 - [BR-002: Changelog Validator Ordering Bug](../../../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) - Example BR
-- [Task E2:S01:T06](../../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) - Example task
+- [Task E2:S01:T06](../../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) - Example task
 
 ---
 

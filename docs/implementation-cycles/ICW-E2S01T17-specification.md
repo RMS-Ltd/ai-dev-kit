@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T17-Specification: FR-077 IPW-built Task Status Transition and Kboard Sync
+# ICW-E2S1T17-Specification: FR-077 IPW-built Task Status Transition and Kboard Sync
 
 **Task:** E2:S01:T17  
 **Related FR:** FR-077  

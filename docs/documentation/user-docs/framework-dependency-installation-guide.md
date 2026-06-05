@@ -36,9 +36,9 @@ For policy and boundaries:
 
 - [ADR-003 – Greenfield vs Brownfield adoption](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [FR-081 – Brownfield modular adopter integration](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
-- [IPP-E6S09T02 planning package](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- [IPP-E6S9T2 planning package](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - [FR-080 implementing task (E6:S09:T01)](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
-- [IPW-E6S09T01 planning package](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- [IPW-E6S9T1 planning package](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 For the current canonical greenfield sequence (default RW-first with explicit override checkpoint), see:
 
@@ -131,7 +131,7 @@ git status
 git remote -v
 ```
 
-### Alternative: Use ai-dev-kit as a GitHub template {#alternative-use-ai-dev-kit-as-a-github-template}
+### Alternative: Use ai-dev-kit as a GitHub template
 
 Instead of creating a repository from scratch, you can use `ai-dev-kit` as a template:
 
@@ -214,11 +214,11 @@ Before installing, identify which use case matches your needs:
 
 **📖 For complete use case details and additional scenarios, see the [Use Cases Guide](framework-dependency-use-cases.md)**
 
-### Selective framework installation {#selective-framework-installation}
+### Selective framework installation
 
 Install only the packages you need (CLI, submodule copy, or template trim). See [Use Case 2: Template → Some Packages](framework-dependency-use-cases.md#use-case-2-template--some-packages) and [Use Case 4: Existing Project → Some Packages](framework-dependency-use-cases.md#use-case-4-existing-project--some-packages).
 
-### Monorepo setup {#monorepo-setup}
+### Monorepo setup
 
 Share one ai-dev-kit installation across multiple packages. See [Use Case 6: Monorepo/Multi-Project Setup](framework-dependency-use-cases.md#use-case-6-monorepomulti-project-setup).
 
@@ -988,7 +988,7 @@ ai-dev-kit install workflow-mgmt@2.0.0
 
 ---
 
-## Uninstalling frameworks {#uninstalling-frameworks}
+## Uninstalling frameworks
 
 If you need to remove a framework:
 

@@ -26,8 +26,8 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [BR-058](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
-- [IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md](../../../../../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
-- [IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md](../../../../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md) (scoped workflow-mgt gate — complementary)
+- [IPP-E8S3T4-ci-test-workflow-pytest-remediation-br058.md](../../../../../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
+- [IPP-E7S7T2-ci-pytest-gate-for-workflow-scripts.md](../../../../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md) (scoped workflow-mgt gate — complementary)
 
 ---
 
@@ -35,7 +35,7 @@ Publication Status: NOT_APPLICABLE
 
 Restore a **`Tests`** (or equivalent) GitHub Actions workflow; fix failing pytest suite so CI is green.
 
-**Python version (E08:S03:T05 / FR-104):** Tests workflow pins **`python-version: "3.11"`** (matches [`framework-release.yml`](../../../../../../.github/workflows/framework-release.yml) and repo `python_requires`).
+**Python version (E08:S03:T05 / FR-104):** Tests workflow pins **`python-version: "3.11"`** (matches [`framework-release.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/framework-release.yml) and repo `python_requires`).
 
 ## Acceptance criteria
 
@@ -46,4 +46,4 @@ Restore a **`Tests`** (or equivalent) GitHub Actions workflow; fix failing pytes
 ## References
 
 - [BR-058](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
-- [IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md](../../../../../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
+- [IPP-E8S3T4-ci-test-workflow-pytest-remediation-br058.md](../../../../../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)

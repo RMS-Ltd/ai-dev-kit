@@ -183,7 +183,7 @@ Fix UKW (Update Kanban Workflow) bug where the MoSCOW Prioritized In-Progress Ta
 
 **Bug Report:** [BR-034: UKW MoSCOW Prioritization Missing](../../../fr-br/BR-034-ukw-moscow-prioritization-missing.md)  
 **Story:** [E6:S01: BR Repo (PERPETUAL)](../story-01-br-repo.md)  
-**Workflow:** [Update Kanban Workflow (UKW)](../story-07-adk-implementation-analysis-and-package-management/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Workflow:** [Update Kanban Workflow (UKW)](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 **Related Tasks:**
 - **E02:S16:T03:** Update Kanban Workflow (UKW) - Perpetual task (UKW workflow implementation)

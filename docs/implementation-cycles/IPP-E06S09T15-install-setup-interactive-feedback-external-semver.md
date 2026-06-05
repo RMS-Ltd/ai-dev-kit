@@ -31,7 +31,7 @@ housekeeping_policy: keep
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
 | RNF1 | Per-run cache; no network | UXR-016-NF1 |
-| RNF2 | Compact `AI Dev Kit v{semver}` label | UXR-016-NF2 |
+| RNF2 | Compact `AI Dev Kit v\{semver\}` label | UXR-016-NF2 |
 | RNF3 | No unconverted internal as SemVer | UXR-016-NF3 |
 
 ### 1.3 Invariants and boundaries
@@ -128,7 +128,7 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 
 | Doc ID | Path | Publication |
 | ------ | ---- | ----------- |
-| D-C1 | docs/implementation-cycles/IPP-E06S09T15-... | NOT_APPLICABLE |
+| D-C1 | docs/implementation-cycles/IPP-E6S9T15-... | NOT_APPLICABLE |
 | D-U1 | INSTALL_IN_YOUR_PROJECT.md | PUBLISHED |
 | D-U2 | adk-feedback-guide.md | PUBLISHED |
 
@@ -145,4 +145,4 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 ## References
 
 - [UXR-016](../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
-- [semver_converter.py](../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
+- [semver_converter.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)

@@ -28,7 +28,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [UXR-014](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) findings and recommendations.
-- [IPP-E4S19T09-two-digit-est-identifier-default-formatting.md](../../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
+- [IPP-E4S19T9-two-digit-est-identifier-default-formatting.md](../../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 - Current mixed inline notation on `kboard.md`, and story checklists.
 - Existing **`Exx:Sxx:Txx`** policy language in kanban governance and templates.
 - Parser tolerance patterns in workflow validators.
@@ -86,7 +86,7 @@ Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and 
 ## References
 
 - [UXR-014](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
-- [IPP-E4S19T09-two-digit-est-identifier-default-formatting.md](../../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
+- [IPP-E4S19T9-two-digit-est-identifier-default-formatting.md](../../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [kboard](../../../kboard.md)
 - [fbuboard](../../../kboard.md)

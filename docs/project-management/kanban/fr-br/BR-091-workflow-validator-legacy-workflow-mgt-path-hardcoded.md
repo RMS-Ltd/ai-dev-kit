@@ -13,10 +13,10 @@ housekeeping_policy: keep
 **Severity:** HIGH — **`Workflow scripts pytest`** fails on every push to `dev`/`main` that touches `packages/frameworks/workflow-mgt/**` (~16 failures since May 2026).  
 **Status:** FIXED ✅  
 **Created:** 2026-06-05
-**Last updated:** 2026-06-05 — verification closure **v0.7.7.3+1** (CI pytest green `dev` + `main`; local 105/105). See [evidence](../../maintenance/v-band-verification-scan-2026-06-05.md).
+**Last updated:** 2026-06-05 — verification closure **v0.7.7.3+1** (CI pytest green `dev` + `main`; local 105/105). See [evidence](../../../maintenance/v-band-verification-scan-2026-06-05.md).
 **Version:** v0.7.7.3+1  
 **Implementing Task:** [E07:S07:T03](../epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md)  
-**Related:** [BR-087](./BR-087-framework-install-directory-slug-mismatch.md) (install slug migration) · [E07:S07:T02](../epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md) (gate that exposes this defect)
+**Related:** [BR-087](BR-087-framework-install-directory-slug-mismatch.md) (install slug migration) · [E07:S07:T02](../epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md) (gate that exposes this defect)
 
 ---
 

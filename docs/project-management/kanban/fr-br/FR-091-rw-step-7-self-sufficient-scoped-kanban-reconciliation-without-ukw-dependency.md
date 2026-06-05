@@ -79,6 +79,6 @@ The desired steady state is that canonical workflows are precise enough that UKW
 
 ## Related
 
-- [FR-038 - RW Step 7 scoped kanban sync](./FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
-- [FR-090 - canonical RW/UKW row transform parity](./FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
-- [FR-084 - IPP post-run reconciliation ownership](./FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- [FR-038 - RW Step 7 scoped kanban sync](FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
+- [FR-090 - canonical RW/UKW row transform parity](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
+- [FR-084 - IPP post-run reconciliation ownership](FR-084-ipp-post-run-governance-reconciliation-ownership.md)

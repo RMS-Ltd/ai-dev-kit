@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T15-Specification: FR-049 Canonical RW Step SoT Hardening
+# ICW-E2S1T15-Specification: FR-049 Canonical RW Step SoT Hardening
 
 **Task:** E2:S01:T15  
 **Related FR:** FR-049  

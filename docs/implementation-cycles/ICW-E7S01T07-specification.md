@@ -1,4 +1,4 @@
-# ICW-E7S01T07-Specification: Markdown Maintenance Workflow (MMW)
+# ICW-E7S1T7-Specification: Markdown Maintenance Workflow (MMW)
 
 **Implementation Cycle Workflow Specification**  
 **Task:** E7:S01:T07 – Markdown Maintenance Workflow (MMW)  

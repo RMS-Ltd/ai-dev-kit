@@ -23,7 +23,7 @@ This guide explains how to build, test, and publish the `ai-dev-kit` CLI tool to
 
 ### Scope (greenfield vs brownfield)
 
-For **adopters** installing frameworks into a project (distinct from CLI maintainer publishing), see [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md), [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md), [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
+For **adopters** installing frameworks into a project (distinct from CLI maintainer publishing), see [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md), [IPW-E6S9T1](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md), [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
 
 ---
 

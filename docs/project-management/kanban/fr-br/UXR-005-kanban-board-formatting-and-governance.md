@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE (implementation **E07:S01:T09** **v0.7.1.9+5** — pending maintainer verification)  
 **GitHub Issue:** _TBD_  
 **Implementing Task:** [E07:S01:T09](../epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)  
-**Historical registry anchor (do not use for RW):** [E07:S00:T05](../epics/epic-07/story-00-uxr-repo/T05-uxr-005-repository-anchor.md) — detasked [BR-076](./BR-076-e7-s00-must-not-host-concrete-tasks.md)
+**Historical registry anchor (do not use for RW):** [E07:S00:T05](../epics/epic-07/story-00-uxr-repo/T05-uxr-005-repository-anchor.md) — detasked [BR-076](BR-076-e7-s00-must-not-host-concrete-tasks.md)
 
 ---
 
@@ -83,7 +83,7 @@ Readers reported poor readability on Kanban boards because multi-line task entri
 
 - [x] AC-1: Every multi-line MoSCOW bullet in `kboard.md`, `kanban-board-guide.md`, `kanban-structure.md`, and `_index.md` has a blank line separating it from adjacent entries (`validate_kanban_moscow_spacing.py --strict` PASS).
 - [x] AC-2: Kanban templates and guide explicitly document the spacing rule with an example ([kanban-board-guide.md](../kanban-board-guide.md) § Formatting Governance).
-- [x] AC-3: Documentation states that UXR owns Kanban template/document updates and governance changes ([README.md](../README.md), [kanban-governance-policy.md](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)).
+- [x] AC-3: Documentation states that UXR owns Kanban template/document updates and governance changes ([README.md](../README.md), [kanban-governance-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)).
 - [x] AC-4: Related validators/tests reference the rule (`validate_kanban_moscow_spacing.py`, pytest, Release Readiness Gate 10).
 
 ---

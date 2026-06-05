@@ -15,13 +15,13 @@ housekeeping_policy: keep
 
 **Task ID:** `E06:S07:T18` (historical)
 
-**Superseded by:** [E02:S01:T23](../../../epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+**Superseded by:** [E02:S01:T23](../../epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
 
 ---
 
 ## Supersede note
 
-Canonical implementing task is **[E02:S01:T23](../../../epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)** (RW / workflow governance). Planning: [IPP-E2S01T23](../../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md).
+Canonical implementing task is **[E02:S01:T23](../../epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)** (RW / workflow governance). Planning: [IPP-E2S1T23](../../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md).
 
 ---
 
@@ -31,5 +31,5 @@ Canonical implementing task is **[E02:S01:T23](../../../epic-02/story-01-rw-agen
 
 ## References
 
-- [E02:S01:T23 (successor)](../../../epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
-- [E04:S19:T03 investigation report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)
+- [E02:S01:T23 (successor)](../../epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)
+- [E04:S19:T03 investigation report](../../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)

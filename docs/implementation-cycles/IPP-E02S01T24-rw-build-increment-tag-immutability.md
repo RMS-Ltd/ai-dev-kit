@@ -104,7 +104,7 @@ RW triggered with E:S:T
 
 | Doc ID | Path | Action |
 | ------ | ---- | ------ |
-| D-IPP | `docs/implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md` | CREATE |
+| D-IPP | `docs/implementation-cycles/IPP-E2S1T24-rw-build-increment-tag-immutability.md` | CREATE |
 | D-RW | `.claude/commands/rw.md`, `release-workflow-agent-execution.md` | UPDATE |
 | D-IPW | `.claude/commands/ipw.md`, `PLAN_DOC_TEMPLATE.md` | UPDATE |
 | D-AGENTS | `AGENTS.md`, `.cursorrules` | UPDATE |
@@ -121,7 +121,7 @@ RW triggered with E:S:T
 
 | Doc ID | Canonical path | Lifecycle |
 | ------ | -------------- | --------- |
-| D-IPP | `docs/implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md` | evergreen |
+| D-IPP | `docs/implementation-cycles/IPP-E2S1T24-rw-build-increment-tag-immutability.md` | evergreen |
 | D-ADR | `docs/architecture/standards-and-adrs/ADR-019-rw-build-increment-and-tag-immutability.md` | evergreen |
 
 ---
@@ -139,5 +139,5 @@ RW triggered with E:S:T
 ## References
 
 - [BR-097](../project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
-- [CHANGELOG_v0.5.9.14+3](../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+3.md) — partial Step 9 guard (do not re-implement)
+- [CHANGELOG_v0.5.9.14+3](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14%2B3.md) — partial Step 9 guard (do not re-implement)
 - [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)

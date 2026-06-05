@@ -10,8 +10,8 @@ housekeeping_policy: keep
 
 **Purpose:** Working queue for filings under the **open taskless FBU** intake plan (agentic task creation, one `RW -k` per epic-aligned filing). **Do not** batch-generate task bodies; each row is processed with deliberate reasoning.
 
-**MoSCOW source:** [`kboard.md`](kboard.md) (sole active board per [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md); `kboard.md` deprecated)  
-**Governance:** KG-R2 (FR/BR), UXR pattern Epic 7 story-000; [`bidirectional-wiring-principle.md`](../../../governance/principles/bidirectional-wiring-principle.md)
+**MoSCOW source:** [`kboard.md`](kboard.md) (sole active board per [ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md); `kboard.md` deprecated)  
+**Governance:** KG-R2 (FR/BR), UXR pattern Epic 7 story-000; [`bidirectional-wiring-principle.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/governance/principles/bidirectional-wiring-principle.md)
 
 ---
 
@@ -38,7 +38,7 @@ Before `RW -k`:
 4. Author **task doc:** scope, deliverables, acceptance criteria tailored to the source — not a generic stub.  
 5. **Story checklist** row + **`**Implementing Task:**`** on the FBU item doc + task doc links back.  
 6. **fbuboard** / **intake-structure** line for that id shows `E#:S##:T##`.  
-7. `git checkout epic/{N}-…` matching epic; run `validate_branch_context.py --strict`; then **`RW -k E{N}:S{SS}:T{TT}`** (Step 1b: `--mode rw-k`).
+7. `git checkout epic/\{N\}-…` matching epic; run `validate_branch_context.py --strict`; then **`RW -k E\{N\}:S{SS}:T{TT}`** (Step 1b: `--mode rw-k`).
 
 ---
 
@@ -80,4 +80,4 @@ Before `RW -k`:
 
 - [ ] Every open item in scope has **Implementing Task** + task file (or explicit non-standard id like T109).  
 - [ ] Board/structure lines match.  
-- [ ] Each **new** filing has a **git** trace via `RW -k` on the matching `epic/{N}-…` branch.
+- [ ] Each **new** filing has a **git** trace via `RW -k` on the matching `epic/\{N\}-…` branch.

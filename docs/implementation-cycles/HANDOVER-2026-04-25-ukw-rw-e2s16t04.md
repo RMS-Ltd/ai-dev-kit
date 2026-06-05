@@ -17,7 +17,7 @@ Continue and publish UKW + RW work around `E2:S15:T05` canonical row-transform h
 1. Kept task-doc wording updates for non-timestamped repeating tail segments in:
    - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`
 2. Updated IPP to explicitly include non-timestamped tail-duplication requirements/tests:
-   - `docs/implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md`
+   - `docs/implementation-cycles/IPP-E2S15T5-ukw-rw-canonical-row-transform-engine-fr090.md`
 3. Ran UKW full-mode synchronization and verified board/epic/story metadata updates.
 4. Executed RW for perpetual kanban maintenance anchor with confirmed intent override:
    - Requested: `RW -d E2:S16:T04 --art`
@@ -47,7 +47,7 @@ Continue and publish UKW + RW work around `E2:S15:T05` canonical row-transform h
 
 1. `docs/implementation-cycles/HANDOVER-2026-04-25-ukw-rw-e2s16t04.md` (this handover)
 2. `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`
-3. `docs/implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md`
+3. `docs/implementation-cycles/IPP-E2S15T5-ukw-rw-canonical-row-transform-engine-fr090.md`
 4. `src/fynd_deals/version.py`
 5. `CHANGELOG.md`
 6. `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+3.md`

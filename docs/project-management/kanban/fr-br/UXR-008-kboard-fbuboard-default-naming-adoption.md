@@ -18,8 +18,8 @@ housekeeping_policy: keep
 **Implementing Task:** [E04:S19:T06](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 **Historical implementing tasks:** E06:S07:T114 (completed phase), E04:S19:T05 (re-housed normalization expansion)  
 **Repository Tasks:** [E04:S19:T06](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) · [E06:S07:T114](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md) · [E04:S19:T05](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
-**IPP:** [IPP-E04S19T06](../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)  
-**Planning package (historical ICW):** [Specification](../../../implementation-cycles/ICW-E06S07T114-specification.md) · [Test design](../../../implementation-cycles/ICW-E06S07T114-test-design.md) · [Implementation plan](../../../implementation-cycles/ICW-E06S07T114-implementation-plan.md)
+**IPP:** [IPP-E4S19T6](../../../implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)  
+**Planning package (historical ICW):** [Specification](../../../implementation-cycles/ICW-E6S07T114-specification.md) · [Test design](../../../implementation-cycles/ICW-E6S07T114-specification.md) · [Implementation plan](../../../implementation-cycles/ICW-E6S07T114-specification.md)
 
 ---
 

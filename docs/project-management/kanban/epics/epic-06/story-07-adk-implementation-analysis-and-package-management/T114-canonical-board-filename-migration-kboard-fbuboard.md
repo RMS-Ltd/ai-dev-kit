@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 **Upstream:** [UXR-008 – Default board naming adoption](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
-**Coordinates:** [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [E06:S07:T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+**Coordinates:** [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [E06:S07:T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 
 ---
 
@@ -74,6 +74,6 @@ Forensic marker: RW `v0.6.7.114+1` — canonical board naming migration released
 ## References
 
 - [UXR-008](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- [ICW-E06S07T114-specification](../../../../../implementation-cycles/ICW-E06S07T114-specification.md)
-- [ICW-E06S07T114-test-design](../../../../../implementation-cycles/ICW-E06S07T114-test-design.md)
-- [ICW-E06S07T114-implementation-plan](../../../../../implementation-cycles/ICW-E06S07T114-implementation-plan.md)
+- [ICW-E6S7T114-specification](../../../../../implementation-cycles/ICW-E6S07T114-specification.md)
+- [ICW-E6S7T114-test-design](../../../../../implementation-cycles/ICW-E6S07T114-specification.md)
+- [ICW-E6S7T114-implementation-plan](../../../../../implementation-cycles/ICW-E6S07T114-specification.md)

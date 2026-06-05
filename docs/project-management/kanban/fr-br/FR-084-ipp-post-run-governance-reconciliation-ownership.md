@@ -19,8 +19,8 @@ housekeeping_policy: keep
 **Superseded by:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
 **Implementing Task (current):** [E02:S15:T07](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) (FR-092 meta)  
 **Implementing Task (historical):** [E02:S15:T02](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md) (SUPERSEDED)
-**IPP (historical):** [`IPP-E02S15T02-ipp-post-run-governance-reconciliation-ownership.md`](../../../implementation-cycles/IPP-E02S15T02-ipp-post-run-governance-reconciliation-ownership.md)
-**IPP (current):** [IPP-E02S15T07](../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+**IPP (historical):** [`IPP-E2S15T2-ipp-post-run-governance-reconciliation-ownership.md`](../../../implementation-cycles/IPP-E2S15T02-ipp-post-run-governance-reconciliation-ownership.md)
+**IPP (current):** [IPP-E2S15T7](../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 > **Supersede note (2026-04-27):** FR-084 four-surface (task + FR/BR/UXR + kboard + fbuboard) IPP post-run reconciliation contract is absorbed into FR-092 Bucket A (A4) and Wave 3. All open ACs remain authoritative; ownership and execution have moved to E02:S15:T07.
 
@@ -85,7 +85,7 @@ IPW planning runs can leave governance artifacts out of sync even when planning 
 
 ## Related
 
-- [FR-042](./FR-042-implementation-planning-workflow-ipw.md)
-- [FR-075](./FR-075-icw-durable-planning-artifacts-documentation-system.md)
-- [FR-083](./FR-083-global-ipw-gated-implementation-contract.md)
-- [BR-066](./BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
+- [FR-042](FR-042-implementation-planning-workflow-ipw.md)
+- [FR-075](FR-075-icw-durable-planning-artifacts-documentation-system.md)
+- [FR-083](FR-083-global-ipw-gated-implementation-contract.md)
+- [BR-066](BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)

@@ -33,7 +33,7 @@ Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes 
 
 - [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
 - [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)
-- **IPW:** [IPP-E06S09T13-br084-rw-config-generation.md](../../../../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) — **Publication Status: PUBLISHED**
+- **IPW:** [IPP-E6S9T13-br084-rw-config-generation.md](../../../../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) — **Publication Status: PUBLISHED**
 - `generate_rw_config_yaml`, `collect_config_interactive`, `prompt_pattern_with_validation`
 
 ---
@@ -62,5 +62,5 @@ Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes 
 ## Links
 
 - [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
-- [IPP-E06S09T13](../../../../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md)
+- [IPP-E6S9T13](../../../../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

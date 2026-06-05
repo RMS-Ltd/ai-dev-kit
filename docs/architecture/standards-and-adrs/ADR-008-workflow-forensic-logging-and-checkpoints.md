@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E02:S08:T08](../../project-management/kanban/epics/epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md)  
 **Origin FR:** [FR-059](../../project-management/kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)  
-**Planning package:** [IPP-E2S08T08](../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md)
+**Planning package:** [IPP-E2S8T8](../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md)
 
 ---
 

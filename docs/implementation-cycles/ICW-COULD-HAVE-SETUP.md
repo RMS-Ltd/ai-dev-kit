@@ -13,27 +13,27 @@
 ### 1. E5:S01:T35 - Task Template Cross-Wiring Section
 - **Priority:** MEDIUM
 - **Status:** TODO
-- **ICW Instance:** ICW-E5S01T35
+- **ICW Instance:** ICW-E5S1T35
 
 ### 2. E5:S01:T31 - Multi-Agent Coordination Feasibility Investigation  
 - **Priority:** C
 - **Status:** TODO
-- **ICW Instance:** ICW-E5S01T31
+- **ICW Instance:** ICW-E5S1T31
 
 ### 3. E5:S03:T01-T03 - Documentation Automation
 - **Priority:** MEDIUM
 - **Status:** TODO (3 tasks)
-- **ICW Instance:** ICW-E5S03T01-03
+- **ICW Instance:** ICW-E5S3T1-03
 
 ### 4. E8:S03:T01-T03 - Automation Scripts
 - **Priority:** MEDIUM  
 - **Status:** TODO (3 tasks)
-- **ICW Instance:** ICW-E8S03T01-03
+- **ICW Instance:** ICW-E8S3T1-03
 
 ### 5. E24:S02:T01-T03 - Book Integration with Dev-Kit
 - **Priority:** MEDIUM
 - **Status:** TODO (3 tasks)
-- **ICW Instance:** ICW-E24S02T01-03
+- **ICW Instance:** ICW-E24S2T1-03
 
 ---
 

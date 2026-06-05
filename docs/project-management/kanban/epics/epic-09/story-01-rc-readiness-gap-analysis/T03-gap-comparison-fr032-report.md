@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** [E09:S01:T03](T03-gap-analysis-fr032.md) · **FR:** [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)  
 **Snapshot:** 2026-06-04 UTC  
-**IPP:** [IPP-E09S01T03](../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
+**IPP:** [IPP-E9S1T3](../../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
 
 ---
 

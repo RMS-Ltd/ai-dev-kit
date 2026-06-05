@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
 **Status:** IN PROGRESS (fix attempted **v0.2.13.8+2** — pending user verification)  
 **Implementing Task:** [E02:S13:T08](../epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) — ✅ COMPLETE (**v0.2.13.8+2**)  
-**IPP:** [IPP-E02S13T08](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)  
+**IPP:** [IPP-E2S13T8](../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)  
 **Kanban init:** v0.2.13.8+1 (RW -k --art, 2026-06-03)
 
 ---
@@ -46,7 +46,7 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ### In scope
 
-- Extend RW dual-source parity ([`rw-trigger-dual-source-parity.md`](../../../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)) to Step 9 FR-097 / FR-092 validators and `.claude/commands/rw.md`.
+- Extend RW dual-source parity ([`rw-trigger-dual-source-parity.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)) to Step 9 FR-097 / FR-092 validators and `.claude/commands/rw.md`.
 - Refresh `canonical-rw-steps.yaml` and align `validate_canonical_steps.py` expectations.
 - Consolidate authoritative `release-workflow.yaml`; remove or deprecate stale flat copy; fix validator lists and placeholder paths.
 - Correct `workflow-registry.yaml` metadata (minimum: RW, UKW, PKG-VERSION).

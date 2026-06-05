@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF1 | Write-default: `epic-{nn}/`, `story-{nn}-{slug}/`, `T{nn}-*.md` (2-digit ≤99; 3-digit >99) | UXR-017, T11 AC1 |
+| RF1 | Write-default: `epic-{nn}/`, `story-{nn}-\{slug\}/`, `T{nn}-*.md` (2-digit ≤99; 3-digit >99) | UXR-017, T11 AC1 |
 | RF2 | Fresh install + `canonical_adoption` emit lowercase paths | UXR-017 AC2 |
 | RF3 | RW install defaults + `detect_kanban_doc_patterns()` prefer lowercase; score legacy + new | UXR-017 AC3, BR-083 |
 | RF4 | Governance + `rw-config-schema` document write-default and read-tolerance | UXR-017 AC1–AC3 |
@@ -177,7 +177,7 @@ RF1–RF4 define path contract and documentation. RF2–RF3 define emission and 
 
 | Doc ID | Canonical path | Publication status | Lifecycle |
 | ------ | -------------- | ------------------ | --------- |
-| D-C1 | `docs/implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md` | NOT_APPLICABLE | evergreen |
+| D-C1 | `docs/implementation-cycles/IPP-E4S19T11-kanban-epic-story-path-lowercase-naming.md` | NOT_APPLICABLE | evergreen |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md` | PUBLISHED | evergreen |
 | D-C3 | `docs/architecture/standards-and-adrs/epic-story-path-migration-guide.md` | PUBLISHED | evergreen |
 | D-U1–U6 | Per §5.1 | PUBLISHED | evergreen |

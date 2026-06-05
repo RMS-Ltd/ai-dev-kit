@@ -33,7 +33,7 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RNF1 | Historical `0.7.0.{n}+*` coordinates remain linkable | FR-072 D4 |
+| RNF1 | Historical `0.7.0.\{n\}+*` coordinates remain linkable | FR-072 D4 |
 | RNF2 | Four-surface RW reconciliation (task, BR, kboard, fbuboard) | FR-092 |
 | RNF3 | No Epic 7 story renumbering (hollow S00 only) | FR-072, BR-076 scope |
 
@@ -162,7 +162,7 @@ RF1–RF3 delivered via story-000 rewrite and anchor banners. RF4 via T10 migrat
 
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
-| D-C1 | `docs/implementation-cycles/IPP-E04S19T10-*.md` | NOT_APPLICABLE (planning) | evergreen |
+| D-C1 | `docs/implementation-cycles/IPP-E4S19T10-*.md` | NOT_APPLICABLE (planning) | evergreen |
 | D-U1–D-U5 | kanban tree | PUBLISHED via RW | evergreen |
 
 ---

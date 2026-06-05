@@ -11,12 +11,12 @@ housekeeping_policy: keep
 **Bug ID:** BR-090  
 **Priority:** HIGH  
 **Severity:** HIGH — **`Docusaurus site build`** and **`Docusaurus deploy to GitHub Pages`** fail on every qualifying push to `main`; ~97+ failed build jobs since May 2026.  
-**Status:** OPEN — fix attempted **v0.5.9.13+1** (`@docusaurus/faster` on `main` ✅; **Docusaurus site build** still FAIL — MDX broken links, run `26989204716`)
+**Status:** IN PROGRESS — Wave 2 fix attempted **v0.5.9.13+2** (local `npm run build` green; pytest T8–T11 green); **post-merge Actions verification pending** on `main`
 **Created:** 2026-06-05
-**Last updated:** 2026-06-05 (V-band scan — [evidence](../../maintenance/v-band-verification-scan-2026-06-05.md))
-**Version:** v0.5.9.13+1  
+**Last updated:** 2026-06-05 (RW E05:S09:T13 Wave 2)
+**Version:** v0.5.9.13+2  
 **Implementing Task:** [E05:S09:T13](../epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)  
-**Related:** [FR-069](./FR-069-docusaurus-ci-build-gate.md) · [FR-070](./FR-070-docusaurus-deployment-and-hosting.md) · [BR-068](./BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) (prior build class; distinct from this regression)
+**Related:** [FR-069](FR-069-docusaurus-ci-build-gate.md) · [FR-070](FR-070-docusaurus-deployment-and-hosting.md) · [BR-068](BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) (prior build class; distinct from this regression)
 
 ---
 
@@ -75,11 +75,11 @@ Representative run: merge `dev` → `main` (`Merge branch 'dev' into main`).
 
 ## Acceptance criteria
 
-- [ ] **`@docusaurus/faster`** added to `portal/package.json` (version compatible with Docusaurus 3.10.x).
-- [ ] **`portal/package.json`** Docusaurus packages aligned with **`portal/package-lock.json`** (3.10.1 on integration branch).
-- [ ] **`cd portal && npm ci && npm run build`** exits **0** locally and in **`.github/workflows/docusaurus-build.yml`**.
-- [ ] **`docusaurus-build.yml`** **`deploy`** job build artifact path succeeds on `main` (merged workflow per [ADR-017](../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
-- [ ] Contributor note in `portal/README.md` if faster / v4 future flag has new install requirements.
+- [x] **`@docusaurus/faster`** added to `portal/package.json` (version compatible with Docusaurus 3.10.x) — Wave 1 **v0.5.9.13+1**.
+- [x] **`portal/package.json`** Docusaurus packages aligned with **`portal/package-lock.json`** (3.10.1) — Wave 1.
+- [x] **`cd portal && npm ci && npm run build`** exits **0** locally — Wave 2 **v0.5.9.13+2** (BR-068 Strategy A link remediation).
+- [ ] **`docusaurus-build.yml`** green on **`main`** (build + deploy) — pending post-merge verification.
+- [x] Contributor note in `portal/README.md` if faster / v4 future flag has new install requirements — Wave 1.
 
 ---
 
@@ -93,9 +93,9 @@ Representative run: merge `dev` → `main` (`Merge branch 'dev' into main`).
 
 ## Related work
 
-- [E05:S09:T05](../epics/epic-05/story-09-docusaurus-documentation-portal/T05-ci-build-gate-fr069.md) — original CI build gate (**COMPLETE**).
-- [E05:S09:T06](../epics/epic-05/story-09-docusaurus-documentation-portal/T06-deployment-hosting-fr070.md) — deploy workflow (**COMPLETE**).
-- [BR-093](./BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) — duplicate CI job waste (separate fix set).
+- [E05:S09:T05](../epics/epic-05/story-09-docusaurus-documentation-portal/T05-docusaurus-ci-fr-069.md) — original CI build gate (**COMPLETE**).
+- [E05:S09:T06](../epics/epic-05/story-09-docusaurus-documentation-portal/T06-docusaurus-deployment-fr-070.md) — deploy workflow (**COMPLETE**).
+- [BR-093](BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) — duplicate CI job waste (separate fix set).
 
 ---
 

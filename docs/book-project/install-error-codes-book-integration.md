@@ -64,7 +64,7 @@ Public ADK BRs from book setup exercises map cleanly to seed codes:
 | RW install missing PyYAML | `ADK-I03.E04` | [BR-082](../project-management/kanban/fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) |
 | Mode C, no `version_file` scaffold | `ADK-I03.E12` | [BR-088](../project-management/kanban/fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) |
 | Fresh kanban pattern mismatch (lowercase epics) | `ADK-I03.E21` | [BR-083](../project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md), [BR-086](../project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) |
-| Kanban contamination on “fresh” path | `ADK-I02.E08` | [BR-037](../project-management/kanban/fr-br/BR-037-kanban-install-path-contamination-fresh-mode.md) |
+| Kanban contamination on “fresh” path | `ADK-I02.E08` | [BR-037](../project-management/kanban/fr-br/BR-037-kanban-install-consumer-board-contamination.md) |
 | Greenfield orchestrator: RW step failed | `ADK-I01.S01` | (wrapper — look for child `ADK-I03.*` above) |
 | Greenfield orchestrator: Kanban step failed | `ADK-I01.S02` | (wrapper — look for child `ADK-I02.*` above) |
 
@@ -293,12 +293,12 @@ Use during alpha / technical review:
 | Topic | Public ADK link |
 | ----- | --------------- |
 | Repository split | [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) |
-| Agent handoff (general) | [agent-handoff-context.md](./agent-handoff-context.md) |
-| Install entry | [INSTALL_IN_YOUR_PROJECT.md](../../INSTALL_IN_YOUR_PROJECT.md) |
+| Agent handoff (general) | [agent-handoff-context.md](agent-handoff-context.md) |
+| Install entry | [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) |
 | Full troubleshooting | [framework-dependency-troubleshooting-guide.md](../documentation/user-docs/framework-dependency-troubleshooting-guide.md) |
 | CLI JSON / feedback | [cli-configuration-guide.md](../documentation/user-docs/cli-configuration-guide.md) |
 | Implementation task | [T20](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) |
-| Planning package | [IPP-E06S09T20](../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) |
+| Planning package | [IPP-E6S9T20](../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md) |
 
 ---
 

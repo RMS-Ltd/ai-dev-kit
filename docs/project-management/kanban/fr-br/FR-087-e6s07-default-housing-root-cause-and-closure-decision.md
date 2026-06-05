@@ -17,8 +17,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 
 **Implementing Task:** [E04:S19:T03](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)  
-**IPP:** [`IPP-E04S19T03-e6s07-default-housing-drift-investigation.md`](../../../implementation-cycles/IPP-E04S19T03-e6s07-default-housing-drift-investigation.md)  
-**Investigation report:** [`E04S19T03-e6s07-default-housing-investigation-report.md`](../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)
+**IPP:** [`IPP-E4S19T3-e6s07-default-housing-drift-investigation.md`](../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)  
+**Investigation report:** [`E4S19T03-e6s07-default-housing-investigation-report.md`](../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
 
 ---
 
@@ -92,9 +92,9 @@ The project needs an evidence-backed explanation of:
 
 ## Related
 
-- [FR-086](./FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
-- [FR-084](./FR-084-ipp-post-run-governance-reconciliation-ownership.md)
-- [FR-041](./FR-041-perpetual-task-for-release-workflow-maintenance.md)
+- [FR-086](FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
+- [FR-084](FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- [FR-041](FR-041-perpetual-task-for-release-workflow-maintenance.md)
 - [Story 007](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
 - [Story 019](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
-- [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)

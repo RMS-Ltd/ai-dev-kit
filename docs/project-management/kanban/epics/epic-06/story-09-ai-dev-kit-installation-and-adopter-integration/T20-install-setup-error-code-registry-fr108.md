@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.9.20+2  
 **Code:** E06S09T20
 
-**Planning package:** [IPP-E06S09T20](../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
+**Planning package:** [IPP-E6S9T20](../../../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
 
 **Upstream:** [FR-108](../../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
 
@@ -32,9 +32,9 @@ Implement a hierarchical **`ADK-*` install/setup error code registry**, emit cod
 
 ## Input
 
-- [IPP-E06S09T20](../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
+- [IPP-E6S9T20](../../../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
 - [FR-108](../../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md) — requirements and taxonomy
-- [ADR-016](../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md)
+- [ADR-016](../../../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md)
 - Alpha failure corpus: BR-082, BR-083, BR-086, BR-088 (seed sub-codes)
 - Existing installers: `install_greenfield_path.py`, `install_release_workflow.py`, `install_kanban_framework.py`, `install_github_issue_signoff.py`, CLI install path
 
@@ -95,8 +95,8 @@ Per [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md):
 
 ## References
 
-- [IPP-E06S09T20](../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
-- [ADR-016](../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md)
+- [IPP-E6S9T20](../../../../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
+- [ADR-016](../../../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md)
 
 ---
 

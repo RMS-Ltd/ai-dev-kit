@@ -135,7 +135,7 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 
 | Doc ID | Path | Action |
 | ------ | ---- | ------ |
-| D-C1 | `docs/implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md` | CREATE |
+| D-C1 | `docs/implementation-cycles/IPP-E2S16T16-ukw-archive-completed-fr102.md` | CREATE |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md` | CREATE |
 | D-U1–D-U7 | `.cursorrules`, excerpt, `ukw.md`, VWMP, YAML, skill, cheatsheet | UPDATE |
 | D-U8 | `update_kanban_docs.py`, `archive_completed.py` | UPDATE / CREATE |
@@ -147,7 +147,7 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 
 | Doc ID | Path | Publication |
 | ------ | ---- | ----------- |
-| D-C1 | `docs/implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md` | PUBLISHED |
+| D-C1 | `docs/implementation-cycles/IPP-E2S16T16-ukw-archive-completed-fr102.md` | PUBLISHED |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md` | PUBLISHED |
 | Skills / cursorrules | `.cursor/skills/*`, `.cursorrules` | NOT_APPLICABLE (repo agent config) |
 
@@ -173,4 +173,4 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 - [FR-076](../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [Workflow initiation cheatsheet](../guides/workflow-initiation-cheatsheet.md)
-- [archive_completed.py](../packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py)
+- [archive_completed.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py)

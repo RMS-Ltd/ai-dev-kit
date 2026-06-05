@@ -38,15 +38,14 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 
 | Flaw ID | Step | Symptom | Status | Solution Location |
 |---------|------|---------|--------|-------------------|
-| [WF-001](#wf-001-story-file-not-updated-first) | Step 7 | Story file lacks forensic markers, Epic matches incomplete state | ✅ FIXED | [Solution](#wf-001-story-file-not-updated-first) |
-| [WF-002](#wf-002-version-bump-logic-error) | Step 2 | BUILD incremented instead of TASK for new tasks | ✅ FIXED | [Solution](#wf-002-version-bump-logic-error) |
-| [WF-003](#wf-003-br-fr-fix-attempts-not-documented) | N/A (New Step 6) | Fix attempts not documented in BR/FR docs, preventing knowledge transfer between builds | ✅ FIXED | [Solution](#wf-003-br-fr-fix-attempts-not-documented) |
-| [WF-004](#wf-004-story-file-missing-during-rw-update) | Step 7 | RW fails when Story file referenced in Epic doesn't exist | 🔧 TO FIX | [Solution](#wf-004-story-file-missing-during-rw-update) |
+| [WF-001](#wf-001-story-file-not-updated-first-step-7) | Step 7 | Story file lacks forensic markers, Epic matches incomplete state | ✅ FIXED | [Solution](#wf-001-story-file-not-updated-first-step-7) |
+| [WF-002](#wf-002-version-bump-logic-error-step-2) | Step 2 | BUILD incremented instead of TASK for new tasks | ✅ FIXED | [Solution](#wf-002-version-bump-logic-error-step-2) |
+| [WF-003](#wf-003-brfr-fix-attempts-not-documented) | N/A (New Step 6) | Fix attempts not documented in BR/FR docs, preventing knowledge transfer between builds | ✅ FIXED | [Solution](#wf-003-brfr-fix-attempts-not-documented) |
+| [WF-004](#wf-004-story-file-missing-during-rw-update-step-7) | Step 7 | RW fails when Story file referenced in Epic doesn't exist | 🔧 TO FIX | [Solution](#wf-004-story-file-missing-during-rw-update-step-7) |
 
 ---
 
-## WF-001: Story File Not Updated First (Step 7) {#wf-001-story-file-not-updated-first}
-
+## WF-001: Story File Not Updated First (Step 7)
 **Status:** ✅ FIXED  
 **Date Discovered:** 2025-12-04  
 **Date Fixed:** 2025-12-04  
@@ -117,8 +116,7 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 
 ---
 
-## WF-002: Version Bump Logic Error (Step 2) {#wf-002-version-bump-logic-error}
-
+## WF-002: Version Bump Logic Error (Step 2)
 **Status:** ✅ FIXED  
 **Date Discovered:** 2025-12-03  
 **Date Fixed:** 2025-12-03  
@@ -259,8 +257,7 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 
 ---
 
-## WF-003: BR/FR Fix Attempts Not Documented {#wf-003-br-fr-fix-attempts-not-documented}
-
+## WF-003: BR/FR Fix Attempts Not Documented
 **Status:** ✅ FIXED  
 **Date Discovered:** 2025-12-05  
 **Date Fixed:** 2025-12-05  
@@ -347,8 +344,7 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 
 ---
 
-## WF-004: Story File Missing During RW Update (Step 7) {#wf-004-story-file-missing-during-rw-update}
-
+## WF-004: Story File Missing During RW Update (Step 7)
 **Status:** 🔧 TO FIX  
 **Date Discovered:** 2025-12-05  
 **Date Fixed:** TBD  

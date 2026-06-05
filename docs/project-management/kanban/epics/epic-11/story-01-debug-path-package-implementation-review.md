@@ -43,8 +43,9 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## Tasks
 
-### E11:S01:T01 – Establish expectations baseline for Debug Path package {#E11S01T01--establish-expectations-baseline-for-debug-path-package}
+<span id="e11s01t01--establish-expectations-baseline-for-debug-path-package"></span>
 
+### E11:S01:T01 – Establish expectations baseline for Debug Path package
 **Task ID:** E11:S01:T01
 
 **Planning artifacts (publication):**

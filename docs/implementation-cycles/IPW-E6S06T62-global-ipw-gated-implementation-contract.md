@@ -88,5 +88,5 @@ Codify a repository-wide execution contract that prevents intent override by blo
 
 - [Host task E6:S06:T62](../project-management/kanban/epics/epic-06/story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md)
 - [FR-083](../project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
-- [Global rules](../AGENTS.md)
-- [Global rules mirror](../.cursorrules)
+- [Global rules](../project-management/kanban/AGENTS.md)
+- [Global rules mirror](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules)

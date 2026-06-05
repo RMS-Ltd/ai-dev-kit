@@ -21,7 +21,7 @@ housekeeping_policy: keep
 **Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.5 Phase 4**  
 **Depends on:** [E01:S04:T06 — Phase 3 public rebirth](T06-fr099-phase3-public-ai-dev-kit-rebirth.md) ✅  
-**Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
+**Migration ADR:** [ADR-006](../../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 
 ---
 
@@ -37,7 +37,7 @@ Rewired remotes, badges, install docs, CI; install smoke test with no epic-24 co
 
 ## Summary
 
-**Phase 4:** Rewire remotes, badges, install docs, CI, and submodule URLs to the **new public** `RMS-Ltd/ai-dev-kit`. Run install smoke test (no epic-24 contamination). Capture evidence for [IPP Wave E](../../../../implementation-cycles/IPP-E06S09T06-ecc-harness-phases-2-5-fr098.md) if applicable.
+**Phase 4:** Rewire remotes, badges, install docs, CI, and submodule URLs to the **new public** `RMS-Ltd/ai-dev-kit`. Run install smoke test (no epic-24 contamination). Capture evidence for [IPP Wave E](../../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) if applicable.
 
 ---
 
@@ -68,7 +68,7 @@ Rewired remotes, badges, install docs, CI; install smoke test with no epic-24 co
 
 ## Version Anchor
 
-**Forensic:** `✅ COMPLETE (v0.1.4.7+2)` — [`fr099-phase4-rewire-and-verify.md`](../../../../../maintenance/fr099-phase4-rewire-and-verify.md); smoke [`scripts/fr099_install_smoke_test.sh`](../../../../../scripts/fr099_install_smoke_test.sh).
+**Forensic:** `✅ COMPLETE (v0.1.4.7+2)` — [`fr099-phase4-rewire-and-verify.md`](../../../../../maintenance/fr099-phase4-rewire-and-verify.md); smoke [`scripts/fr099_install_smoke_test.sh`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/fr099_install_smoke_test.sh).
 
 ## IPW gate
 

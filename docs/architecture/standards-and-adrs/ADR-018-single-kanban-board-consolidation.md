@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-05  
 **Deciders:** Maintainer (via E04:S19:T12 / UXR-020 R3)  
-**Related:** [UXR-020](../../project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md), [IPP-E04S19T12](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md), [FR-051](../../project-management/kanban/fr-br/FR-051-fr-br-uxr-prioritization-board.md), [FR-092](../../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md), [ADR-015](ADR-015-kanban-epic-story-path-lowercase-convention.md)
+**Related:** [UXR-020](../../project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md), [IPP-E4S19T12](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md), [FR-051](../../project-management/kanban/fr-br/FR-051-fr-br-uxr-prioritization-board.md), [FR-092](../../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md), [ADR-015](ADR-015-kanban-epic-story-path-lowercase-convention.md)
 
 ---
 

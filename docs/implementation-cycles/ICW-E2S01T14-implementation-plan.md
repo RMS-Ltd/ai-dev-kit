@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T14-Implementation-Plan: FR-048 Traceability Wiring
+# ICW-E2S1T14-Implementation-Plan: FR-048 Traceability Wiring
 
 **Task:** E2:S01:T14  
 **Related FR:** FR-048  
@@ -44,7 +44,7 @@ housekeeping_policy: keep
 
 A subsequent `IPW E2S01T15` should:
 
-1. Clone this package structure using `ICW-E2S01T15-*` filenames.
+1. Clone this package structure using `ICW-E2S1T15-*` filenames.
 2. Replace FR/task identifiers:
    - `FR-048` -> `FR-049`
    - `E2:S01:T14` -> `E2:S01:T15`
@@ -68,9 +68,9 @@ A subsequent `IPW E2S01T15` should:
 Use this checklist in the next run:
 
 1. Create:
-   - `docs/implementation-cycles/ICW-E2S01T15-specification.md`
-   - `docs/implementation-cycles/ICW-E2S01T15-test-design.md`
-   - `docs/implementation-cycles/ICW-E2S01T15-implementation-plan.md`
+   - `docs/implementation-cycles/ICW-E2S1T15-specification.md`
+   - `docs/implementation-cycles/ICW-E2S1T15-test-design.md`
+   - `docs/implementation-cycles/ICW-E2S1T15-implementation-plan.md`
 2. Repoint host task links in `T15` task doc.
 3. Apply ID/path substitutions listed in the delta plan.
 4. Re-run traceability checks against `FR-049`, `T15`, and Story 001 checklist row.

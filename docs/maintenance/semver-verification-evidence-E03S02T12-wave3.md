@@ -7,7 +7,7 @@ housekeeping_policy: keep
 # SemVer verification evidence — E03:S02:T12 wave 3
 
 **Task:** E03:S02:T12 · **FR-045** / **FR-046** / **BR-061  
-**IPP:** [IPP-E03S02T12](../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) §8.2  
+**IPP:** [IPP-E3S2T12](../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) §8.2  
 **Run at:** 2026-06-05 02:01:33 UTC  
 **Git:** `dev` @ `70b7242`
 

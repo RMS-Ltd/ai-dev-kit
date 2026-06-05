@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T14-Test-Design: FR-048 Traceability Wiring
+# ICW-E2S1T14-Test-Design: FR-048 Traceability Wiring
 
 **Task:** E2:S01:T14  
 **Related FR:** FR-048  

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-05 (v0.8.3.9+1 — fix released)  
 **Version:** v0.8.3.9+1  
 **Implementing Task:** [E08:S03:T09](../epics/epic-08/story-03-automation-scripts/T09-codeql-insecure-temporary-file-mktemp-br095.md) — ✅ COMPLETE (v0.8.3.9+1)  
-**Related:** [CodeQL alert #4](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/4) · [BR-094](./BR-094-codeql-git-tag-handler-syntax-error.md)
+**Related:** [CodeQL alert #4](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/4) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)
 
 ---
 

@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.1.2.13+1
 
 **Upstream:** [FR-002 — Update been-there README](../../../fr-br/FR-002-update-been-there-readme.md)  
-**Historical registry:** [E05:S01:T02](../../epic-05/story-01-fr-repo/T02-update-been-there-readme.md) (if present)
+**Historical registry:** [E05:S01:T02](../../../fr-br/FR-002-update-been-there-readme.md) (if present)
 
 Publication Status: NOT_APPLICABLE
 
@@ -33,7 +33,7 @@ Remove stale **book-workspace** branding from the public project README (FR-002 
 ## Input
 
 - [FR-002 — Update been-there README](../../../fr-br/FR-002-update-been-there-readme.md)
-- Public [`README.md`](../../../../../../README.md)
+- Public [`README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md)
 
 ---
 

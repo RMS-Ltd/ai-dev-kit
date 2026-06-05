@@ -36,7 +36,7 @@ Publication N/A Reason: Kanban and implementation-cycle artifacts are repo SoT p
 
 ## Input
 
-- [IPP-E09S01T03-gap-comparison-fr032.md](../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
+- [IPP-E9S1T3-gap-comparison-fr032.md](../../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
 - [T01 — Current state inventory (FR-032.1)](T01-current-state-inventory.md)
 - [T02 — RC=1 criteria (FR-032.2)](T02-rc1-criteria-definition.md)
 - [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
@@ -66,4 +66,4 @@ Publication N/A Reason: Kanban and implementation-cycle artifacts are repo SoT p
 
 - [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
 - [Gap comparison report](T03-gap-comparison-fr032-report.md)
-- [IPP](../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
+- [IPP](../../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)

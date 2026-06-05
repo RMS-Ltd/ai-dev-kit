@@ -353,12 +353,12 @@
 | project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md | 24.0 KB | 3026 | evergreen | 2026-01-20T00:00:00 |  |
 | project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md | 6.0 KB | 738 | evergreen | 2026-01-18T16:44:08 |  |
 | project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation.md | 3.1 KB | 393 | evergreen | 2026-01-18T16:44:08 |  |
-| project-management/kanban/epics/epic-21/epic-21.md | 7.1 KB | 855 | evergreen | 2025-12-09T18:30:00 |  |
+| project-management/kanban/epics/epic-21/Epic-21.md | 7.1 KB | 855 | evergreen | 2025-12-09T18:30:00 |  |
 | project-management/kanban/epics/epic-21/story-00-language-selection-at-setup.md | 9.0 KB | 1232 | evergreen | 2025-12-09T18:30:00 |  |
 | project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md | 7.1 KB | 936 | evergreen | 2025-12-09T18:35:00 |  |
 | project-management/kanban/epics/epic-21/story-02-translation-and-localization.md | 7.0 KB | 916 | evergreen | 2025-12-09T18:35:00 |  |
 | project-management/kanban/epics/epic-21/story-03-cultural-adaptation.md | 7.2 KB | 936 | evergreen | 2025-12-09T18:35:00 |  |
-| project-management/kanban/epics/epic-21/epic-21.md |
+| project-management/kanban/epics/epic-21/Epic-21.md |
 | project-management/kanban/epics/epic-03/epic-03.md | 7.1 KB | 867 | evergreen | 2025-12-04T12:01:47 |  |
 | project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md | 13.0 KB | 1642 | evergreen | 2025-12-04T12:01:50 |  |
 | project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md | 14.1 KB | 1692 | evergreen | 2025-12-04T12:01:50 |  |

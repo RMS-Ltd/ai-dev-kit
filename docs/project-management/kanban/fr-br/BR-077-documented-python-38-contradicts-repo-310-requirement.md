@@ -37,11 +37,11 @@ Declared minimum Python version should match what the repo actually runs for val
 
 | Source | States |
 |--------|--------|
-| [`setup.py`](../../../../setup.py) | `python_requires=">=3.8"` |
-| [`README.md`](../../../../README.md) | Python 3.8+ |
+| [`setup.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/setup.py) | `python_requires=">=3.8"` |
+| [`README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md) | Python 3.8+ |
 | Scripts (examples) | `Path \| None`, `dict \| None` without `from __future__ import annotations` |
 
-**CI reference:** [`framework-release.yml`](../../../../.github/workflows/framework-release.yml) uses Python **3.11** — further drift from “3.8+” messaging.
+**CI reference:** [`framework-release.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/framework-release.yml) uses Python **3.11** — further drift from “3.8+” messaging.
 
 ### Impact
 

@@ -11,7 +11,7 @@ housekeeping_policy: keep
 > The canonical perpetual task for workflow maintenance is now **E2:S16:T03**.
 > All active planning and work for perpetual workflow maintenance should reference:
 > - [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
-> - [`IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md`](./IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
+> - [`IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 >
 > This draft is retained for historical traceability only. Do not extend or update.
 
@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) **(E2:S16:T03)**  
 **Planning for:** [FR-088 – Dedicated story for perpetual ongoing tasks](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) (supersedes FR-041); current policy thread [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) (doc-init **+0** vs default **+1**)  
-**Status:** Deprecated (superseded by E2:S16:T03; canonical policy in IPP-E2S16T01)
+**Status:** Deprecated (superseded by E2:S16:T03; canonical policy in IPP-E2S16T1)
 
 ---
 

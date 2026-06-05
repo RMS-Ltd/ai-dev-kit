@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.9.19+1  
 **Code:** E06S09T19
 
-**Planning package:** [IPP-E06S09T19](../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
+**Planning package:** [IPP-E6S9T19](../../../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
 
 **Upstream:** [BR-088](../../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)  
 **Related:** [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) · [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) · [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- [IPP-E06S09T19](../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
+- [IPP-E6S9T19](../../../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
 - [BR-088](../../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)
 - [GitHub #18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 - `install_release_workflow.py` — mode C `version_file` prompt and post-write hooks

@@ -98,6 +98,6 @@ Known test fixtures currently on the board: `E02:S16:T01` and `E02:S15:T07` (int
 ## Related
 
 - [Story 001 – BR Repo](../epics/epic-06/story-01-br-repo.md)
-- [UKW cursorrules trigger definition](../../packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md)
-- [UKW workflow definition](../../packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/update-kanban-workflow.yaml)
+- [UKW cursorrules trigger definition](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages%2Fframeworks%2Fworkflow-mgt%2Fcursorrules-ukw-trigger-section.md)
+- [UKW workflow definition](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/update-kanban-workflow.yaml)
 - [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) — prior kboard accuracy defect

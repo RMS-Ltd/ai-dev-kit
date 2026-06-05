@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E4:S19:T03 — `E6:S07` default-housing investigation report (FR-087)
 
 **Host task:** [E4:S19:T03](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)  
-**Planning contract:** [IPP-E4S19T03-e6s07-default-housing-drift-investigation.md](./IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)  
+**Planning contract:** [IPP-E4S19T3-e6s07-default-housing-drift-investigation.md](IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)  
 **Upstream FR:** [FR-087](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)  
 **Report date:** 2026-05-29  
 **Waves covered:** Wave 2 (forensic execution) + Wave 3 (disposition recommendation; guardrail **filing** deferred to follow-on tasks)
@@ -86,7 +86,7 @@ Inspection used IPP §2.4 patterns on 2026-05-29.
 | Intake guide | `FR_BR_INTAKE_GUIDE.md:27` — “framework bugs → Epic 6 story” | **Permissive default** | Does not distinguish S07 vs other E6 stories |
 | Intake agent guide | `FR_BR_INTAKE_AGENT_GUIDE.md` — **no S07 matches** | **No codification** | — |
 | Story 007 charter | `story-07-adk-implementation-analysis-and-package-management.md` | **Permissive default** | Broad Epic 6 home; checklist still lists heterogeneous work |
-| Prior IPPs | `IPP-E2S16T01`, `IPP-E4S19T03`, `IPW-E6S07T112`, etc. | **Operator habit** | Documents defer routing to FR-087 / T03; does not hard-code S07 |
+| Prior IPPs | `IPP-E2S16T1`, `IPP-E4S19T3`, `IPW-E6S7T112`, etc. | **Operator habit** | Documents defer routing to FR-087 / T03; does not hard-code S07 |
 
 **Conclusion:** Drift is driven primarily by **permissive Epic 6 placement** and **habit on `epic/6-framework-management`**, not validator hard-coding. Guardrails should target **intake language**, **story-level In/Out of Scope**, and optional **placement validator** (IPP §2.8).
 
@@ -216,13 +216,13 @@ No additional re-housing executed in this wave; Wave 4 owns migrations in §5.2.
 | -------- | ------ |
 | E4:S19:T03 task doc | Link this report; AC1–AC5 checklist |
 | FR-087 | Link report; F5 partial until guardrails implemented |
-| IPP-E4S19T03 | Wave 4 log in §8 |
+| IPP-E4S19T3 | Wave 4 log in §8 |
 
 ---
 
 ## 9. References
 
-- [IPP-E4S19T03](./IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
+- [IPP-E4S19T3](IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
 - [Story 007](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
 - [FR-087](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
-- [IPP-E2S16T01](./IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md) (delegated perpetual scope)
+- [IPP-E2S16T1](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md) (delegated perpetual scope)

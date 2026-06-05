@@ -167,5 +167,5 @@ Full process list and sub-codes are defined in implementation (YAML registry); v
 ## References
 
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
-- [framework-dependency-troubleshooting-guide.md](../../documentation/user-docs/framework-dependency-troubleshooting-guide.md)
+- [framework-dependency-troubleshooting-guide.md](../../../documentation/user-docs/framework-dependency-troubleshooting-guide.md)
 - [E06:S07:T111](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md) — install event contract (complete)

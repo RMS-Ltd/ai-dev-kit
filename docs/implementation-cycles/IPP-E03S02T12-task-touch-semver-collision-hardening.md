@@ -202,11 +202,11 @@ housekeeping_policy: keep
 
 | Doc ID | Path | Action | Scope | Wave |
 | ------ | ---- | ------ | ----- | ---- |
-| D-U1 | [IPP-E03S02T12](IPP-E03S02T12-task-touch-semver-collision-hardening.md) | UPDATE | Wave ledger, §7–§8 | 3 ✅ (this revision) |
+| D-U1 | [IPP-E3S2T12](IPP-E03S02T12-task-touch-semver-collision-hardening.md) | UPDATE | Wave ledger, §7–§8 | 3 ✅ (this revision) |
 | D-U2 | T12 task doc | DONE | Wave 3 pointer, verification section | 3 ✅ |
 | D-U3 | FR-045, FR-046, BR-061 | DONE | Verification outcome / fix attempted | 3 ✅ |
 | D-U4 | [semver-registry-collision-repair-2026-06-04.md](../maintenance/semver-registry-collision-repair-2026-06-04.md) | DONE | Wave 3 verification addendum | 3 ✅ |
-| D-U5 | [release-workflow-agent-execution.md](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) | NONE | Unless wave 3b changes Step 11 | — |
+| D-U5 | [release-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) | NONE | Unless wave 3b changes Step 11 | — |
 | D-U6 | T12 task doc (wave 2) | DONE | IPP link, AC notes | 2 ✅ |
 | D-U7 | dev-kit-versioning-policy.md | DONE | PATCH + core injectivity | 2 ✅ |
 | D-U8 | semver-tag-collision-incident | DONE | Wave-2 addendum | 2 ✅ |
@@ -233,7 +233,7 @@ housekeeping_policy: keep
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links |
 | ------ | -------------- | ------------------ | --------- | ------------- |
-| IPP | docs/implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md | PUBLISHED | evergreen | T12 Input, References |
+| IPP | docs/implementation-cycles/IPP-E3S2T12-task-touch-semver-collision-hardening.md | PUBLISHED | evergreen | T12 Input, References |
 | D-C1, D-C2 | docs/maintenance/ | PUBLISHED | evergreen | IPP §4, FR-045/046 |
 | D-C3 | docs/maintenance/semver-verification-evidence-E03S02T12-wave3.md | PUBLISHED | evergreen | T12 verification section, IPP §8 |
 
@@ -302,7 +302,7 @@ Activate wave 3b if any of:
 
 ## References
 
-- [semver_converter.py](../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
+- [semver_converter.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
 - [IPW ADR checklist](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [Incident log](../architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md)
 - [Repair report](../maintenance/semver-registry-collision-repair-2026-06-04.md)

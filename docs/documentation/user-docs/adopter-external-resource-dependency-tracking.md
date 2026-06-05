@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Purpose:** Explain how **your project** tracks upstream documentation and style resources after copying material from ai-dev-kit—without expecting ai-dev-kit to poll upstream repos on your behalf.
 
-**Implementing work:** [E01:S02:T14](../../../project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) · [FR-003](../../../project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
+**Implementing work:** [E01:S02:T14](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) · [FR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
 
 ---
 
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 | **Greenfield** | After install or template setup, add a register when you copy README/changelog/badge patterns from ai-dev-kit examples. |
 | **Brownfield** | Only track resources you **actually use**. Existing README/changelog may already follow another convention—do not duplicate tracking for unused templates. |
 
-Policy: [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md). Install hub: [INSTALL_IN_YOUR_PROJECT.md](../../../INSTALL_IN_YOUR_PROJECT.md).
+Policy: [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md). Install hub: [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md).
 
 ---
 
@@ -32,13 +32,13 @@ Policy: [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs
 | **Framework packages** | ai-dev-kit workflow/kanban/versioning copies or CLI-managed packages | [`framework-dependency-installation-guide.md`](framework-dependency-installation-guide.md), [`framework-dependency-update-guide.md`](framework-dependency-update-guide.md) |
 | **External doc/style resources** | Third-party templates and conventions you copied into **your** README, changelog, or badges | **This guide** |
 
-ai-dev-kit follows **copy, don't reference** for frameworks ([numbering-versioning README](../../../packages/frameworks/numbering-versioning/README.md)). The same principle applies here: once you copy a README structure or changelog format, **your repo** owns staying aware of upstream changes.
+ai-dev-kit follows **copy, don't reference** for frameworks ([numbering-versioning README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering-versioning/README.md)). The same principle applies here: once you copy a README structure or changelog format, **your repo** owns staying aware of upstream changes.
 
 ---
 
 ## Standard trio (when you use README template patterns)
 
-If your project adopted README or presentation patterns influenced by ai-dev-kit guidance (see [FR-002 / E01:S02:T13](../../../project-management/kanban/fr-br/FR-002-update-been-there-readme.md) when the template ships), you typically acknowledge:
+If your project adopted README or presentation patterns influenced by ai-dev-kit guidance (see [FR-002 / E01:S02:T13](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-management/kanban/fr-br/FR-002-update-been-there-readme.md) when the template ships), you typically acknowledge:
 
 | Resource | URL | What you copied |
 | -------- | --- | ---------------- |
@@ -72,7 +72,7 @@ This avoids a middleman: ai-dev-kit → adopter → upstream. You connect **dire
 
 ## When you adopt the README template (FR-002 / T13)
 
-When [E01:S02:T13](../../../project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) delivers a project README template:
+When [E01:S02:T13](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) delivers a project README template:
 
 1. Copy the template into your repo and customize placeholders.
 2. Initialize or update your upstream register with the trio rows above.
@@ -82,7 +82,7 @@ When [E01:S02:T13](../../../project-management/kanban/epics/epic-01/story-02-pac
 
 ## Copy-paste templates (host repo)
 
-All files under [`examples/`](examples/) are **examples to copy**, not scripts ai-dev-kit runs in this repository.
+All files under [`examples/`](examples/adopter-upstream-register.md) are **examples to copy**, not scripts ai-dev-kit runs in this repository.
 
 | File | Use in your project |
 | ---- | ------------------- |
@@ -96,4 +96,4 @@ All files under [`examples/`](examples/) are **examples to copy**, not scripts a
 
 - [Repository structure for adopters](repo-structure-for-adopters.md) — optional `DEPENDENCIES.md` at project root
 - [Post-template setup guide](framework-dependency-post-template-setup-guide.md) — README customization step
-- [IPP-E01S02T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md) — implementation plan
+- [IPP-E1S2T14](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md) — implementation plan

@@ -94,7 +94,7 @@ Add this perpetual task to the packaged Kanban framework:
 - **FR-026** – Canonical Perpetual Task for Changelog Maintenance (similar pattern)
 - **Epic 2** – Workflow Management Framework (RW package owner)
 - **Epic 6** – Framework Management and Maintenance (UKW/CMW perpetual tasks)
-- **FR-067 [FU-2](./FR-067-docusaurus-production-build-corpus-triage.md)** – Docusaurus/corpus work is still released via **RW**; **GitHub Releases** for SemVer tags (**Step 12.5**, `create_github_release.py`) are traced to **E02:S16:T03** (this FR), not as a standalone portal task.
+- **FR-067 [FU-2](FR-067-docusaurus-production-build-corpus-triage.md)** – Docusaurus/corpus work is still released via **RW**; **GitHub Releases** for SemVer tags (**Step 12.5**, `create_github_release.py`) are traced to **E02:S16:T03** (this FR), not as a standalone portal task.
 
 ---
 

@@ -17,15 +17,15 @@ housekeeping_policy: keep
 **Code:** E04S19T02
 
 **Upstream:** [FR-086 - Canonical supporting Kanban/FBU doc naming and `FBU` collective terminology](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
-**IPP (historical):** [`IPP-E04S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md`](../../../../../implementation-cycles/IPP-E04S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md)
-**Superseded by:** [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) · [IPP-E04S19T06](../../../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)
+**IPP (historical):** [`IPP-E4S19T2-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md`](../../../../../implementation-cycles/IPP-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md)
+**Superseded by:** [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) · [IPP-E4S19T6](../../../../../implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
 
 ---
 
 ## Input
 
 - [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) requirements.
-- Existing canonical board naming baseline from [E06:S07:T114](../../../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md).
+- Existing canonical board naming baseline from [E06:S07:T114](T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md).
 - Existing collective-reference usage across Kanban/FBU docs.
 
 ---
@@ -68,8 +68,8 @@ Naming and terminology are partially canonicalized (`kboard`/`fbuboard`) but sup
 
 - [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
-- [E06:S07:T114](../../../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- [E06:S07:T114](T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 
 ## Planning artifacts (publication)
 
-- [IPW-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md](../../../../../implementation-cycles/IPW-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md)
+- [IPW-E4S19T2-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md](../../../../../implementation-cycles/IPW-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md)

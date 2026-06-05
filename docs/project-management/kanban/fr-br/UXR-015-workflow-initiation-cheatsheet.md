@@ -17,9 +17,9 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E02:S16:T15](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
 
-**Implementation:** [`docs/guides/workflow-initiation-cheatsheet.md`](../../guides/workflow-initiation-cheatsheet.md) · [IPP-E02S16T15](../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md)
+**Implementation:** [`docs/guides/workflow-initiation-cheatsheet.md`](../../../guides/workflow-initiation-cheatsheet.md) · [IPP-E2S16T15](../../../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md)
 
-**Related:** [CLAUDE.md](../../../../CLAUDE.md) (trigger routing), [.cursorrules](../../../../.cursorrules) (canonical trigger specs), [FR-023](FR-023-update-kanban-workflow-ukw.md) (UKW), [FR-042](FR-042-implementation-planning-workflow-ipw.md) (IPW), [FR-057](FR-057-update-changelog-workflow.md) (CMW), [FR-091](FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md) (RW/UKW separation), [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (four-surface contract)
+**Related:** [CLAUDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CLAUDE.md) (trigger routing), [.cursorrules](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) (canonical trigger specs), [FR-023](FR-023-update-kanban-workflow-ukw.md) (UKW), [FR-042](FR-042-implementation-planning-workflow-ipw.md) (IPW), [FR-057](FR-057-update-changelog-workflow.md) (CMW), [FR-091](FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md) (RW/UKW separation), [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (four-surface contract)
 
 ---
 
@@ -273,7 +273,7 @@ Package versions changed?      → PVW (or automatic at RW Step 2.5)
 
 ## References
 
-- [Release Workflow agent execution guide](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
-- [Update Kanban Workflow agent execution guide](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
-- [Guides README](../../guides/README.md)
+- [Release Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- [Update Kanban Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+- [Guides README](../../../guides/README.md)
 - `.claude/commands/rw.md`, `ukw.md`, `ipw.md`

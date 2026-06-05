@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Last Updated:** 2026-05-26  
 **Task:** [E6:S09:T04](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)  
 **FR:** [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
-**Empirical evidence:** [Phase 0 evaluation](./ecc-adk-harness-layer-phase0-evaluation.md)
+**Empirical evidence:** [Phase 0 evaluation](ecc-adk-harness-layer-phase0-evaluation.md)
 
 ---
 
@@ -57,7 +57,7 @@ Define how an adopter may **optionally** combine:
 | **Harness execution (optional)** | ECC (upstream) | Coding craft, TDD, language patterns, harness hooks, security scan skills |
 | **Agent runtime** | Cursor / Claude Code / etc. | Loads rules, skills, hooks from both layers |
 
-ADK answers *what* work exists and *how* it ships. ECC answers *how well* agents execute domain tasks. See [Phase 0 evaluation](./ecc-adk-harness-layer-phase0-evaluation.md) for empirical compatibility evidence.
+ADK answers *what* work exists and *how* it ships. ECC answers *how well* agents execute domain tasks. See [Phase 0 evaluation](ecc-adk-harness-layer-phase0-evaluation.md) for empirical compatibility evidence.
 
 ---
 
@@ -92,7 +92,7 @@ When mapping ADK surfaces to ECC in the compatibility matrix:
 
 ## 6. Known conflict rules (initial)
 
-Subject to [Phase 0 validation](./ecc-adk-harness-layer-phase0-evaluation.md):
+Subject to [Phase 0 validation](ecc-adk-harness-layer-phase0-evaluation.md):
 
 | ADK rule | ECC surface | Resolution |
 |----------|-------------|------------|
@@ -105,7 +105,7 @@ Subject to [Phase 0 validation](./ecc-adk-harness-layer-phase0-evaluation.md):
 
 ## 7. Bridge configuration
 
-Template: [`packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
+Template: [`packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
 
 Adopters copy to project root as `ecc-adk-bridge.yaml` (optional). Fields:
 
@@ -125,13 +125,13 @@ Adopters copy to project root as `ecc-adk-bridge.yaml` (optional). Fields:
 4. **Hooks** — prefer hooks-off or `ECC_HOOK_PROFILE=minimal` until Phase 3 hook alignment is validated.
 5. **Rollback** — `node scripts/ecc.js uninstall --dry-run` from ECC clone, or remove `.cursor/ecc-install-state.json` and ECC-managed paths listed in install state.
 
-Canonical procedure: [Phase 0 evaluation §3](./ecc-adk-harness-layer-phase0-evaluation.md).
+Canonical procedure: [Phase 0 evaluation §3](ecc-adk-harness-layer-phase0-evaluation.md).
 
 ---
 
 ## 9. Release and SemVer (ADK `task_touch`)
 
-ECC integration does **not** change ADK version schema or RW bump rules. Under `semver_mapping_strategy: task_touch` ([dev-kit-versioning-policy](./dev-kit-versioning-policy.md)):
+ECC integration does **not** change ADK version schema or RW bump rules. Under `semver_mapping_strategy: task_touch` ([dev-kit-versioning-policy](dev-kit-versioning-policy.md)):
 
 - **Each FR-098 phase** ships via normal RW on its task anchor → **PATCH** increment only (`task_touch_counter`).
 - **Do not** hand-bump SemVer **MINOR** for optional ECC phases (Phase 0–4).
@@ -162,7 +162,7 @@ Communicate harness-layer availability in release notes and install docs; SemVer
 | Bridge validator | `packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py` |
 | Optional install helper | `packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh` (`--dry-run` default) |
 | AgentShield add-on | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md` |
-| Adopter quick-start | [ECC + ADK integration cheatsheet](../documentation/user-docs/ecc-adk-integration-cheatsheet.md) §3, §11 |
+| Adopter quick-start | [ECC + ADK integration cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md) §3, §11 |
 
 Hook policy: default `hook_profile: minimal`, hooks-off install, `disabled_hooks` examples in bridge template; pre-RW ECC hooks are **advisory** only.
 
@@ -170,9 +170,9 @@ Hook policy: default `hook_profile: minimal`, hooks-off install, `disabled_hooks
 
 ## 12. References
 
-- **[ECC + ADK integration cheatsheet](../documentation/user-docs/ecc-adk-integration-cheatsheet.md)** — quick-start for adopters (workflows, conflicts, setup)
+- **[ECC + ADK integration cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)** — quick-start for adopters (workflows, conflicts, setup)
 - [ECC repository](https://github.com/affaan-m/ECC)
 - [ECC cross-harness architecture](https://github.com/affaan-m/ECC/blob/main/docs/architecture/cross-harness.md)
 - [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-- [ADR-003 — Greenfield vs brownfield adoption](./ADR-003-greenfield-vs-brownfield-adoption.md)
-- [IPP-E6S09T04](../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
+- [ADR-003 — Greenfield vs brownfield adoption](ADR-003-greenfield-vs-brownfield-adoption.md)
+- [IPP-E6S9T4](../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)

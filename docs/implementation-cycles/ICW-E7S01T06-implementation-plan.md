@@ -39,13 +39,13 @@ Manual UCW process replacing missing changelog governance. Execution focuses on 
 
 ### Phase 1 – Specification
 
-- Finalize `ICW-E7S01T06-specification.md` (done) and attach checklist template.
+- Finalize `ICW-E7S1T6-specification.md` (done) and attach checklist template.
 - Define evidence requirements (UCW log file, diff artifact, reviewer sign-off).
 - Draft governance addendum for release runbook + FR-057 cross-links.
 
 ### Phase 2 – Test Design & Dry Run
 
-- Publish `ICW-E7S01T06-test-design.md` (done) with UCW-T01–T04 scenarios.
+- Publish `ICW-E7S1T6-test-design.md` (done) with UCW-T01–T04 scenarios.
 - Run tabletop dry run on current changelog; store outputs in `docs/maintenance/logs/ucw/UCW-DRYRUN-20260315.md`.
 - Validate CI read-only script detects missing evidence but never edits files.
 

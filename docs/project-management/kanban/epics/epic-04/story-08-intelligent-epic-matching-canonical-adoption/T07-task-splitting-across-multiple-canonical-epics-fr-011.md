@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Feature Request:** [FR-011](../../../fr-br/FR-011-task-splitting-multiple-canonical-epics.md)
 
-**Planning artifact (IPP):** [IPP-E04S08T07-task-split-multi-epic-fr011.md](../../../../../implementation-cycles/IPP-E04S08T07-task-split-multi-epic-fr011.md)
+**Planning artifact (IPP):** [IPP-E4S8T7-task-split-multi-epic-fr011.md](../../../../../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Consolidated FR-042 IPP/ICW package under `docs/implementation-cycles/`; no separate specification/test-design/implementation-plan publication set.
@@ -30,10 +30,10 @@ Implement task-level split planning so mixed-responsibility source epics can map
 
 - Existing semantic epic matching in Story 008 (FR-009 lineage).  
 - [FR-011](../../../fr-br/FR-011-task-splitting-multiple-canonical-epics.md) requirements and acceptance criteria.
-- [IPP-E04S08T07-task-split-multi-epic-fr011.md](../../../../../implementation-cycles/IPP-E04S08T07-task-split-multi-epic-fr011.md)
-- [ICW-E04S08T07-specification](../../../../../implementation-cycles/ICW-E04S08T07-specification.md)
-- [ICW-E04S08T07-test-design](../../../../../implementation-cycles/ICW-E04S08T07-test-design.md)
-- [ICW-E04S08T07-implementation-plan](../../../../../implementation-cycles/ICW-E04S08T07-implementation-plan.md)
+- [IPP-E4S8T7-task-split-multi-epic-fr011.md](../../../../../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
+- [ICW-E4S8T7-specification](../../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)
+- [ICW-E4S8T7-test-design](../../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)
+- [ICW-E4S8T7-implementation-plan](../../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)
 
 ---
 
@@ -63,7 +63,7 @@ Implement task-level split planning so mixed-responsibility source epics can map
 ## Links
 
 - Feature Request: [FR-011](../../../fr-br/FR-011-task-splitting-multiple-canonical-epics.md)
-- Planning artifact: [IPP-E04S08T07-task-split-multi-epic-fr011.md](../../../../../implementation-cycles/IPP-E04S08T07-task-split-multi-epic-fr011.md)
-- Planning artifact: [ICW-E04S08T07-specification](../../../../../implementation-cycles/ICW-E04S08T07-specification.md)
-- Planning artifact: [ICW-E04S08T07-test-design](../../../../../implementation-cycles/ICW-E04S08T07-test-design.md)
-- Planning artifact: [ICW-E04S08T07-implementation-plan](../../../../../implementation-cycles/ICW-E04S08T07-implementation-plan.md)
+- Planning artifact: [IPP-E4S8T7-task-split-multi-epic-fr011.md](../../../../../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
+- Planning artifact: [ICW-E4S8T7-specification](../../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)
+- Planning artifact: [ICW-E4S8T7-test-design](../../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)
+- Planning artifact: [ICW-E4S8T7-implementation-plan](../../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)

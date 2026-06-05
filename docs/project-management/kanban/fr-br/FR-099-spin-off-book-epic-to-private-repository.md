@@ -174,10 +174,10 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 
 - [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) — Preferred migration outline (Option C)
 - [E01:S04:T02](../epics/epic-01/story-04-repository-branding-and-renaming.md) — **SUPERSEDED** by FR-099 / ADR-006 (public Head First rename cancelled)
-- [FR-039](./FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) — Broader legacy cleanup (coordinate to avoid duplicate audits)
-- [FR-080](./FR-080-greenfield-installation-process.md) — Consumer Kanban must not include project-specific epics
+- [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) — Broader legacy cleanup (coordinate to avoid duplicate audits)
+- [FR-080](FR-080-greenfield-installation-process.md) — Consumer Kanban must not include project-specific epics
 - Epic 24 — **removed from public tree**; retained in private `hf-ai-dev-kit` git history only
-- [FR-064](./FR-064-shields-branch-private-repo-badges.md) — Prior private-repo hygiene pattern
+- [FR-064](FR-064-shields-branch-private-repo-badges.md) — Prior private-repo hygiene pattern
 
 ---
 
@@ -219,8 +219,8 @@ Canonical outline: **[ADR-006 — Book project private repository spin-off](../.
 ## References
 
 - [ADR-006 — Book project private repository spin-off (preferred migration)](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
-- [`docs/book-proj/`](../../book-proj/) — **Removed from public tree** (Phase 2); retained in private git history
-- [`epic-24/`](../epics/epic-24/) — **Removed from public tree** (Phase 2); retained in private git history
-- [AI Dev Kit vision and purpose](../../documentation/ai-dev-kit-vision-and-purpose.md)
-- [Framework dependency post-template setup guide](../../documentation/user-docs/framework-dependency-post-template-setup-guide.md) — epic-24 contamination note
-- [dev-kit versioning policy](../../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
+- `docs/book-proj/` — **Removed from public tree** (Phase 2); retained in private git history
+- `docs/project-management/kanban/epics/epic-24/` — **Removed from public tree** (Phase 2); retained in private git history
+- [AI Dev Kit vision and purpose](../../../documentation/ai-dev-kit-vision-and-purpose.md)
+- [Framework dependency post-template setup guide](../../../documentation/user-docs/framework-dependency-post-template-setup-guide.md) — epic-24 contamination note
+- [dev-kit versioning policy](../../../governance/standards/dev-kit-versioning-policy.md)

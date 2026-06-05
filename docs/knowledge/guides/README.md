@@ -42,11 +42,11 @@ SoPs define standardized processes and procedures for consistent execution of wo
 
 ### Knowledge Management
 
-- **[Building Persistent Knowledge](./building-persistent-knowledge.md)** - Guide for building and maintaining persistent knowledge bases in Cursor.
+- **[Building Persistent Knowledge](building-persistent-knowledge.md)** - Guide for building and maintaining persistent knowledge bases in Cursor.
 
 ### Repository Setup
 
-- **[Badge Setup for Private Repos](./badge-setup-for-private-repos.md)** - Guide for setting up badges in private repositories.
+- **[Badge Setup for Private Repos](badge-setup-for-private-repos.md)** - Guide for setting up badges in private repositories.
 
 ---
 

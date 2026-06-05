@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Last verified against:** 2026-05-30 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` / ADR-009; FR-102 `UKW -c` / ADR-010; BR-067 `RW -d --doc-policy-zero`)
 
-> **Agent source of truth:** If this cheatsheet and [`.cursorrules`](../../.cursorrules) or [`.claude/commands/`](../../.claude/commands/) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
+> **Agent source of truth:** If this cheatsheet and [`.cursorrules` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) or [`.claude/commands/` (source)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/.claude/commands) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
 **Task:** [E02:S16:T15](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
 
@@ -53,7 +53,7 @@ housekeeping_policy: keep
 | **Handoff** | Commits and tags via RW only — do not `git commit` / `git push` outside RW |
 | **Blocked session** | `RW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
-**Deep dive:** [`.claude/commands/rw.md`](../../.claude/commands/rw.md) · [Release Workflow agent execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+**Deep dive:** [`.claude/commands/rw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/rw.md) · [Release Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 
 ---
 
@@ -88,7 +88,7 @@ housekeeping_policy: keep
 | **Handoff** | UKW stages kanban files; you run **`RW`** to commit (attributes perpetual UKW task) |
 | **Blocked session** | `UKW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
-**Deep dive:** [`.claude/commands/ukw.md`](../../.claude/commands/ukw.md) · [Update Kanban Workflow agent execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
+**Deep dive:** [`.claude/commands/ukw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ukw.md) · [Update Kanban Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
 
 ---
 
@@ -104,11 +104,11 @@ housekeeping_policy: keep
 | --- | --- |
 | **Prerequisites** | **Plan mode required** (Cursor `/plan` or Claude plan session); tool access |
 | **Handoff** | Produces `docs/implementation-cycles/IPP-E…S…T…-*.md` (or ICW trio); link from task; **no code/docs implementation until IPW complete + user says implement**; then **`RW E02:S16:T15`** |
-| **Planning package** | [IPP-E02S16T15-workflow-initiation-cheatsheet.md](../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) (example) |
+| **Planning package** | [IPP-E2S16T15-workflow-initiation-cheatsheet.md](../implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) (example) |
 | **Blocked (plan mode)** | `IPW BLOCKED: plan mode required. Type /plan to enter plan mode, then invoke /ipw again from within the plan session.` |
 | **Blocked (tools)** | `IPW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
-**Deep dive:** [`.claude/commands/ipw.md`](../../.claude/commands/ipw.md) · [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+**Deep dive:** [`.claude/commands/ipw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) · [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 
 ---
 
@@ -160,18 +160,18 @@ housekeeping_policy: keep
 
 | Resource | Path |
 | -------- | ---- |
-| Agent trigger spec (SoT) | [`.cursorrules`](../../.cursorrules) |
-| RW slash command | [`.claude/commands/rw.md`](../../.claude/commands/rw.md) |
-| UKW slash command | [`.claude/commands/ukw.md`](../../.claude/commands/ukw.md) |
-| IPW slash command | [`.claude/commands/ipw.md`](../../.claude/commands/ipw.md) |
-| Claude routing | [`CLAUDE.md`](../../CLAUDE.md) |
-| Config paths | [`rw-config.yaml`](../../rw-config.yaml) |
+| Agent trigger spec (SoT) | [`.cursorrules` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) |
+| RW slash command | [`.claude/commands/rw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/rw.md) |
+| UKW slash command | [`.claude/commands/ukw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ukw.md) |
+| IPW slash command | [`.claude/commands/ipw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) |
+| Claude routing | [`CLAUDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CLAUDE.md) |
+| Config paths | [`rw-config.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/rw-config.yaml) |
 | Guides index | [`docs/guides/README.md`](README.md) |
 
 ---
 
 ## Related workflows (not detailed here)
 
-- **Intake** — FR/BR/UXR → task in same session ([`FR_BR_INTAKE_GUIDE.md`](../../packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md), [intake-process skill](../../.cursor/skills/intake-process/SKILL.md)); never primary tasks on **`S00`** ([BR-076](../project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md))
+- **Intake** — FR/BR/UXR → task in same session ([`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md), [intake-process skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)); never primary tasks on **`S00`** ([BR-076](../project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md))
 - **ICW** — legacy Cursor planning trigger (prefer **IPW**)
-- **Global implementation gate** — IPW/IPP required before implementation edits ([`AGENTS.md`](../../AGENTS.md), `.cursorrules`)
+- **Global implementation gate** — IPW/IPP required before implementation edits ([`AGENTS.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md), `.cursorrules`)

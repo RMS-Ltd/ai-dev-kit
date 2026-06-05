@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Merged delivery:** [T07 FR-021 supersession](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)  
 **Status:** Approved
 
-> **IPW:** Consolidated IPP for FR-072 Approach D phases **D2–D4** + FR-021 supersession. E7:S00 detasking is **out of scope** ([IPP-E04S19T10](IPP-E04S19T10-e7-s00-detasking-br076.md) COMPLETE).
+> **IPW:** Consolidated IPP for FR-072 Approach D phases **D2–D4** + FR-021 supersession. E7:S00 detasking is **out of scope** ([IPP-E4S19T10](IPP-E04S19T10-e7-s00-detasking-br076.md) COMPLETE).
 
 ---
 
@@ -119,7 +119,7 @@ RF1–RF2 via intake guardrails + fbuboard audit. RF3 via story/task banners. RF
 ### 4.1 Files to create or modify
 
 - `docs/architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md` (CREATE)
-- `docs/implementation-cycles/IPP-E04S19T08-*.md` (this file)
+- `docs/implementation-cycles/IPP-E4S19T8-*.md` (this file)
 - `docs/project-management/kanban/fr-br/FR-072-*.md`, `FR-021-*.md`
 - `docs/governance/kanban/kanban-governance-policy.md`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`, `FR_BR_INTAKE_GUIDE.md`
@@ -169,7 +169,7 @@ ADR-014 → FR-021/FR-072 → governance/templates → verification → RW
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
 | D-C1 | `docs/architecture/standards-and-adrs/ADR-014-*.md` | NOT_APPLICABLE | evergreen |
-| D-C2 | `docs/implementation-cycles/IPP-E04S19T08-*.md` | NOT_APPLICABLE | evergreen |
+| D-C2 | `docs/implementation-cycles/IPP-E4S19T8-*.md` | NOT_APPLICABLE | evergreen |
 | D-U* | kanban / governance / framework | PUBLISHED via RW | evergreen |
 
 ---
@@ -188,5 +188,5 @@ ADR-014 → FR-021/FR-072 → governance/templates → verification → RW
 - [FR-072](../project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
 - [FR-021](../project-management/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md)
 - [ADR-014](../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)
-- [IPP-E04S19T10](IPP-E04S19T10-e7-s00-detasking-br076.md)
+- [IPP-E4S19T10](IPP-E04S19T10-e7-s00-detasking-br076.md)
 - [dev-kit-versioning-policy § S00](../governance/standards/dev-kit-versioning-policy.md)

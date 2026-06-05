@@ -234,7 +234,7 @@ Bug report and task structure established. Ready for implementation work.
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/epic-02/epic-02.md`](../epics/epic-02/epic-02.md)
 - Story: [`docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../epics/epic-02/story-01-rw-agent-execution-and-docs.md)
-- Task: [E02:S01:T06 - Fix changelog validator ordering bug](../epics/epic-02/story-01-rw-agent-execution-and-docs.md#E02S01T06--fix-changelog-validator-ordering-bug--reopened) (🔄 REOPENED)
+- Task: [E02:S01:T06 - Fix changelog validator ordering bug](../epics/epic-02/story-01-rw-agent-execution-and-docs.md) (🔄 REOPENED)
 
 ---
 

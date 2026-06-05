@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.4.6.1+1  
 **Code:** E04S06T01
 
-Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E04S06T01-canonical-est-template-closure-fr005.md`](../../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md))
+Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E4S6T1-canonical-est-template-closure-fr005.md`](../../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md))
 
 Publication N/A Reason: FR-042 consolidated IPP; closure audit and kanban reconciliation are specified in IPP §4 — no separate ICW trio or Docusaurus publication.
 
@@ -38,11 +38,11 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 
 ## Input
 
-- **[IPP-E04S06T01](../../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md)** — specification, test design, implementation plan (IPW)
+- **[IPP-E4S6T1](../../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)** — specification, test design, implementation plan (IPW)
 - **[FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)** — requirements and acceptance criteria
 - **[story-006](../story-06-comprehensive-canonical-est-template-system.md)** — program delivery record (T00–T10)
-- [`packages/frameworks/kanban/templates/`](../../../../../../packages/frameworks/kanban/templates/) — template corpus
-- [`generate_task_templates.py --validate`](../../../../../../packages/frameworks/kanban/scripts/generate_task_templates.py)
+- [`packages/frameworks/kanban/templates/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates) — template corpus
+- [`generate_task_templates.py --validate`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/generate_task_templates.py)
 
 ---
 
@@ -97,10 +97,10 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 
 ## References
 
-- [IPP-E04S06T01](../../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md)
+- [IPP-E4S6T1](../../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)
 - [story-006](../story-06-comprehensive-canonical-est-template-system.md)
 - [FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
 
 ## Planning artifacts (publication)
 
-- [IPP-E4S06T01-canonical-est-template-closure-fr005.md](../../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)
+- [IPP-E4S6T1-canonical-est-template-closure-fr005.md](../../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)

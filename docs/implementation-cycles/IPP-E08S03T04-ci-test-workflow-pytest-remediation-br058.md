@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Planning for:** [BR-058](../project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)  
 **Status:** Approved (implementation authorized)
 
-> **IPW:** Produced for E08:S03:T04. Complements [IPP-E07S07T02](IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md) (scoped workflow-mgt pytest only).
+> **IPW:** Produced for E08:S03:T04. Complements [IPP-E7S7T2](IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md) (scoped workflow-mgt pytest only).
 
 ---
 
@@ -83,7 +83,7 @@ RF1–RF3 → `.github/workflows/tests.yml`; RF4 → test remediation; RF5 → R
 | E2 | No new options | Pass | Implements BR-058 + T04 AC |
 | E3 | Reversible | Pass | Standard revert |
 | E4 | Spec elsewhere | Pass | This IPP + task AC |
-| E5 | Documented NONE | Pass | validation README + IPP-E07S07T02 |
+| E5 | Documented NONE | Pass | validation README + IPP-E7S7T2 |
 
 **Outcome:** `EXEMPT`
 
@@ -152,7 +152,7 @@ Test fixes → local green → workflow YAML → RW kanban closure
 
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
-| D-C2 | `docs/implementation-cycles/IPP-E08S03T04-*.md` | NOT_APPLICABLE | evergreen |
+| D-C2 | `docs/implementation-cycles/IPP-E8S3T4-*.md` | NOT_APPLICABLE | evergreen |
 | D-C1 | `.github/workflows/tests.yml` | NOT_APPLICABLE | evergreen |
 | D-U2 | validation README | NOT_APPLICABLE | evergreen |
 
@@ -171,6 +171,6 @@ Test fixes → local green → workflow YAML → RW kanban closure
 ## References
 
 - [BR-058](../project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
-- [IPP-E07S07T02](IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
+- [IPP-E7S7T2](IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
 - [FR-104](../project-management/kanban/fr-br/FR-104-python-minimum-version-policy-alignment.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

@@ -45,7 +45,7 @@ Installation guidance today mixes methods (submodule copy, GitHub Releases, futu
 ### Non-Functional Requirements
 
 - [x] **FR-080-NF1:** Greenfield defaults must remain **maintainable** when framework packages version independently (framework README vs monorepo version policy).
-- [x] **FR-080-NF2:** Process must align with existing install logging and feedback contracts where applicable ([FR-078](./FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](./FR-079-install-feedback-submission-path-and-governance.md)).
+- [x] **FR-080-NF2:** Process must align with existing install logging and feedback contracts where applicable ([FR-078](FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](FR-079-install-feedback-submission-path-and-governance.md)).
 
 ### Implementation evidence (E06:S09:T01)
 
@@ -53,7 +53,7 @@ Primary artifacts (dev-kit repo):
 
 - [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — Wave 1–4 greenfield specification, orchestrator usage, manual gates, Wave 4 post-install validators and reference transcript.
 - [`install_greenfield_path.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py) — hybrid orchestration (RW-first default, checkpoint override).
-- [`IPW-E06S09T01`](../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md) — planning / decisions / wave traceability.
+- [`IPW-E6S9T1`](../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md) — planning / decisions / wave traceability.
 - User-docs under [`docs/documentation/user-docs/` (repo tree)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/documentation/user-docs) — scope sections (greenfield vs brownfield) per Wave 3.
 
 **Explicit deferrals (owned elsewhere):** Full install **telemetry product** contracts remain under **FR-078** / **FR-079**; T01 documents boundaries and log capture (`AI_DEV_KIT_INSTALL_LOG_PATH`). **Canonical distribution coordinates** / copy-paste URL policy are **FR-082 / E06:S09:T03**, not blocking F1–F5 above.
@@ -64,7 +64,7 @@ Primary artifacts (dev-kit repo):
 
 - A new project (or documented scratch scenario) can follow the greenfield path from **empty or template** to **verified** install without undocumented manual steps.
 - Deliverables include **implementation artifacts** (not documentation alone) and **tests or validation** appropriate to the chosen orchestration.
-- Install docs distinguish **greenfield** from **brownfield** and cross-link [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](./FR-081-brownfield-modular-adopter-integration.md).
+- Install docs distinguish **greenfield** from **brownfield** and cross-link [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](FR-081-brownfield-modular-adopter-integration.md).
 
 ---
 
@@ -90,7 +90,7 @@ Primary artifacts (dev-kit repo):
 ## Related
 
 - [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) — Greenfield vs brownfield policy  
-- [FR-081](./FR-081-brownfield-modular-adopter-integration.md) — Brownfield modular integration  
-- [FR-082](./FR-082-installation-distribution-canonical-repo-alignment.md) — Canonical repo/org alignment for install assets  
-- [FR-062](./FR-062-github-release-installation-experience.md) — Release-based install UX  
-- [FR-003](./FR-003-dependency-tracking-in-adopting-projects.md) — Adoption dependency tracking  
+- [FR-081](FR-081-brownfield-modular-adopter-integration.md) — Brownfield modular integration  
+- [FR-082](FR-082-installation-distribution-canonical-repo-alignment.md) — Canonical repo/org alignment for install assets  
+- [FR-062](FR-062-github-release-installation-experience.md) — Release-based install UX  
+- [FR-003](FR-003-dependency-tracking-in-adopting-projects.md) — Adoption dependency tracking  

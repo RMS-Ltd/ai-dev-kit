@@ -28,7 +28,7 @@ housekeeping_policy: keep
 - [x] **E05:S02:T04 – Establish documentation update triggers** - COMPLETE ✅ (migrated from E05:S02:T04)
 - [ ] **E05:S02:T05 – Explore and evaluate KB platform/tooling options** - TODO (migrated from E05:S02:T05)
 - [x] **E05:S02:T06 – CMW Epic 5 execution context (FR-063)** - ✅ COMPLETE (v0.5.2.6+1) (MEDIUM — intake: FR-063 + task + board + CMW archival on E5 branch; **FR-063 implementation** still open per FR checklist)
-  - Task: [`T06-cmw-epic-05-execution-context-fr-063.md`](story-002/T06-cmw-epic-05-execution-context-fr-063.md) | [FR-063](../../fr-br/FR-063-cmw-epic-05-execution-context.md)
+  - Task: [`T06-cmw-epic-05-execution-context-fr-063.md`](story-02/T06-cmw-epic-5-execution-context-fr-063.md) | [FR-063](../../fr-br/FR-063-cmw-epic-5-execution-context.md)
 
 ---
 
@@ -548,12 +548,12 @@ The current KB is Git-based (Markdown files in `docs/` directory), which works w
 
 ### E05:S02:T06 – CMW Epic 5 execution context (FR-063)
 
-**Input:** [FR-063](../../fr-br/FR-063-cmw-epic-05-execution-context.md); `cmw.py`; `validate_branch_context.py`; Epic 5 branch `epic/5-documentation-management`  
+**Input:** [FR-063](../../fr-br/FR-063-cmw-epic-5-execution-context.md); `cmw.py`; `validate_branch_context.py`; Epic 5 branch `epic/5-documentation-management`  
 **Deliverable:** Per FR-063: docs + standalone CMW precondition + RW Step 9.5 escape hatch + config  
 **Dependencies:** None  
 **Blocker:** None
 
-Discrete task doc: [`story-002/T06-cmw-epic-05-execution-context-fr-063.md`](story-002/T06-cmw-epic-05-execution-context-fr-063.md)
+Discrete task doc: [`T06-cmw-epic-5-execution-context-fr-063.md`](story-02/T06-cmw-epic-5-execution-context-fr-063.md)
 
 ---
 

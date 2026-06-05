@@ -56,5 +56,5 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 
 ## Inventory and task
 
-- **Phase 0 SoT:** [GOVERNANCE-REHOUSING-INVENTORY.md](./GOVERNANCE-REHOUSING-INVENTORY.md)
-- **IPP:** [IPP-E7S01T11](../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
+- **Phase 0 SoT:** [GOVERNANCE-REHOUSING-INVENTORY.md](GOVERNANCE-REHOUSING-INVENTORY.md)
+- **IPP:** [IPP-E7S1T11](../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)

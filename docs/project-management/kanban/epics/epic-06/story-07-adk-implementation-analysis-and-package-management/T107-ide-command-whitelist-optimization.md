@@ -70,19 +70,19 @@ Optimize IDE command whitelist to reduce approval friction by implementing patte
 
 ## Acceptance Criteria
 
-- [x] **AC1**: Friction taxonomy — [ide-whitelist-guide.md § Friction analysis](../../../../developer-tools/ide-whitelist-guide.md#friction-analysis-ac1)
-- [x] **AC2**: Pattern catalog v1.1 — [`.cursor/whitelist-patterns.yaml`](../../../../../.cursor/whitelist-patterns.yaml); validator PASS
+- [x] **AC1**: Friction taxonomy — [ide-whitelist-guide.md § Friction analysis](../../../../../developer-tools/ide-whitelist-guide.md#friction-analysis-ac1)
+- [x] **AC2**: Pattern catalog v1.1 — [`.cursor/whitelist-patterns.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/whitelist-patterns.yaml); validator PASS
 - [x] **AC3**: Python/git/gh/find/rg/pytest patterns — catalog `patterns` map
-- [x] **AC4**: Configuration file + [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
-- [x] **AC5**: `validate_whitelist_patterns.py` + pytest; [UAT log entry 001](../../../../developer-tools/ide-whitelist-uat-log.md)
-- [x] **AC6**: [ide-whitelist-guide.md](../../../../developer-tools/ide-whitelist-guide.md) v1.1
-- [x] **AC7**: Catalog enables reduction when applied in Cursor ([UAT entry 002](../../../../developer-tools/ide-whitelist-uat-log.md) — live prompt counts pending maintainer session)
+- [x] **AC4**: Configuration file + [ADR-013](../../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
+- [x] **AC5**: `validate_whitelist_patterns.py` + pytest; [UAT log entry 001](../../../../../developer-tools/ide-whitelist-uat-log.md)
+- [x] **AC6**: [ide-whitelist-guide.md](../../../../../developer-tools/ide-whitelist-guide.md) v1.1
+- [x] **AC7**: Catalog enables reduction when applied in Cursor ([UAT entry 002](../../../../../developer-tools/ide-whitelist-uat-log.md) — live prompt counts pending maintainer session)
 
 ---
 
 ## Implementation Plan
 
-**Canonical plan:** [IPP-E06S07T107 §4](../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md#4-implementation-plan) (IPW). The phased outline below is **superseded** by the IPP for execution order, ADR-013, validator, and UAT evidence.
+**Canonical plan:** [IPP-E6S7T107 §4](../../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md#4-implementation-plan) (IPW). The phased outline below is **superseded** by the IPP for execution order, ADR-013, validator, and UAT evidence.
 
 ---
 
@@ -162,28 +162,28 @@ read_file, edit, multi_edit, list_dir, find_by_name
 
 ## Input
 
-- [IPP-E06S07T107](../../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
-- [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
-- [`.cursor/whitelist-patterns.yaml`](../../../../../.cursor/whitelist-patterns.yaml)
-- [ide-whitelist-guide.md](../../../../developer-tools/ide-whitelist-guide.md)
-- [ide-whitelist-uat-log.md](../../../../developer-tools/ide-whitelist-uat-log.md)
+- [IPP-E6S7T107](../../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+- [ADR-013](../../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
+- [`.cursor/whitelist-patterns.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/whitelist-patterns.yaml)
+- [ide-whitelist-guide.md](../../../../../developer-tools/ide-whitelist-guide.md)
+- [ide-whitelist-uat-log.md](../../../../../developer-tools/ide-whitelist-uat-log.md)
 
 ---
 
 ## References
 
-- [IPP-E06S07T107](../../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
-- [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
-- [validate_whitelist_patterns.py](../../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py)
-- [ide-whitelist-guide.md](../../../../developer-tools/ide-whitelist-guide.md) · [ide-whitelist-uat-log.md](../../../../developer-tools/ide-whitelist-uat-log.md)
+- [IPP-E6S7T107](../../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+- [ADR-013](../../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
+- [validate_whitelist_patterns.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py)
+- [ide-whitelist-guide.md](../../../../../developer-tools/ide-whitelist-guide.md) · [ide-whitelist-uat-log.md](../../../../../developer-tools/ide-whitelist-uat-log.md)
 - [BR-039 — Cascade whitelist (vendor; out of scope for T107 closure)](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
-- [E06:S06:T57 — BR-039 repo track](../epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
-- [IPW-E6S06T57](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
+- [E06:S06:T57 — BR-039 repo track](../story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
+- [IPW-E6S6T57](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
 - [story-007 — In scope / charter freeze](../story-07-adk-implementation-analysis-and-package-management.md) (T107 pre-existing; in scope for ADK agent friction)
 
 ---
 
-**Related Tasks**: [E06:S06:T57](../epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md) (BR-039 — complementary, not duplicate)
+**Related Tasks**: [E06:S06:T57](../story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md) (BR-039 — complementary, not duplicate)
 
 **Feature Requests**: None (developer experience improvement). **Note:** [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) was incorrectly linked to T107 — correct on implementation per IPP RF8.
 

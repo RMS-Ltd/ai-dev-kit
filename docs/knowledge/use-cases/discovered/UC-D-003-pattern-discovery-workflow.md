@@ -104,7 +104,7 @@ When work reveals a reusable pattern, document it and wire it bidirectionally to
 
 **Related Work:**
 - **Tasks:** 
-  - [E2:S01:T06 - Fix changelog validator ordering bug](../../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened)
+  - [E2:S01:T06 - Fix changelog validator ordering bug](../../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md)
   - [E2:S11:T10 - Investigate CHANGELOG Entry Removal](../../../project-management/kanban/epics/epic-02/story-11-intake-workflow-automation/Task-010-Investigate-CHANGELOG-Entry-Removal-and-Harden-Processes.md)
 - **BR:** [BR-002: Changelog Validator Ordering Bug](../../../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md)
 - **Documentation:** 

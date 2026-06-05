@@ -49,7 +49,7 @@ housekeeping_policy: keep
   - Cursor is the primary maintainer IDE ([T57](../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md) closure policy).
 - **In scope:** Pattern catalog refinement, repo validator + tests, maintainer playbook for Cursor Auto-Run/allowlist, UAT log, ADR-013 policy, FR-050 link correction.
 - **Out of scope:**
-  - Fixing Cascade/Windsurf product whitelist ([BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) / [IPW-E6S06T57](IPW-E6S06T57-br039-vendor-blocker-planning.md)).
+  - Fixing Cascade/Windsurf product whitelist ([BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) / [IPW-E6S6T57](IPW-E6S06T57-br039-vendor-blocker-planning.md)).
   - IDE vendor code changes (T107 Out of Scope).
   - FR-050 workflows directory reorganization delivery.
   - Cross-IDE parity (T107 Out of Scope).
@@ -165,7 +165,7 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 | 8 | **CREATE** `docs/developer-tools/ide-whitelist-uat-log.md` (append-only; T57-style fields). | UAT log |
 | 9 | **UPDATE** [FR-050](../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md): remove T107 from `Implementing Task`; set TBD intake note. | FR wiring |
 | 10 | **UPDATE** [BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md): complementary link to T107 / guide (does not fix product). | Cross-link |
-| 11 | **UPDATE** [workflow-initiation-cheatsheet.md](../guides/workflow-initiation-cheatsheet.md) or [AGENTS.md](../../AGENTS.md): one-line pointer to guide under agent friction (if warranted). | Discoverability |
+| 11 | **UPDATE** [workflow-initiation-cheatsheet.md](../guides/workflow-initiation-cheatsheet.md) or [AGENTS.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md): one-line pointer to guide under agent friction (if warranted). | Discoverability |
 | 12 | Run validator + pytest; complete UAT T7; tick T107 AC1–AC7 with evidence links. | §7 checklist |
 | 13 | **`RW E06:S07:T107`** — version, changelog, four-surface kanban. | Release |
 | **14** | **[MANDATORY] Reconcile T107 status** → `COMPLETE` + `✅ COMPLETE (v{version})` if all ACs met; else `IN PROGRESS` or `BLOCKED` with reason. | Task + kboard |
@@ -215,7 +215,7 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 
 | Doc ID | Proposed path | Purpose | Tied to |
 | ------ | ------------- | ------- | ------- |
-| D-C1 | `docs/implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md` | This IPP | IPW |
+| D-C1 | `docs/implementation-cycles/IPP-E6S7T107-ide-command-whitelist-optimization.md` | This IPP | IPW |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md` | Allowlist policy | §2.5 REQUIRED |
 | D-C3 | `docs/developer-tools/ide-whitelist-uat-log.md` | UAT evidence | RF6 |
 | D-C4 | `packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py` | Pattern tests | RF5 |
@@ -236,7 +236,7 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 
 | Doc ID | Canonical path | Publication status | Publication N/A reason | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ---------------------- | --------- | -------------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md` | NOT_APPLICABLE | Planning package; task-linked | evergreen | T107 Input, References |
+| D-C1 | `docs/implementation-cycles/IPP-E6S7T107-ide-command-whitelist-optimization.md` | NOT_APPLICABLE | Planning package; task-linked | evergreen | T107 Input, References |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md` | NOT_APPLICABLE | ADR index via governance README | evergreen | Guide, IPP §2.5, governance README |
 | D-C3 | `docs/developer-tools/ide-whitelist-uat-log.md` | NOT_APPLICABLE | Maintainer evidence | evergreen | T107 References, guide |
 | D-U2 | `.cursor/whitelist-patterns.yaml` | NOT_APPLICABLE | IDE-adjacent config | evergreen | Guide, ADR-013 |
@@ -283,9 +283,9 @@ Record `prompts_before` (baseline session) vs `prompts_after` (after applying Cu
 - [story-007 — ADK implementation analysis](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
 - [BR-039 — Cascade whitelist usability](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 - [E06:S06:T57 — BR-039 repo track](../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
-- [IPW-E6S06T57 — BR-039 planning](IPW-E6S06T57-br039-vendor-blocker-planning.md)
+- [IPW-E6S6T57 — BR-039 planning](IPW-E6S06T57-br039-vendor-blocker-planning.md)
 - [ide-whitelist-guide.md](../developer-tools/ide-whitelist-guide.md) (draft)
-- [.cursor/whitelist-patterns.yaml](../../.cursor/whitelist-patterns.yaml) (draft)
+- [.cursor/whitelist-patterns.yaml](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/whitelist-patterns.yaml) (draft)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [FR-042 — IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-094 — IPW slash command](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)

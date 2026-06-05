@@ -45,8 +45,8 @@ This task covers:
 
 ## Input
 
-- **IPW planning artifact (spec / test design / impl plan):** [IPW-E05S01T42-ipw-icw-consolidation.md](IPW-E05S01T42-ipw-icw-consolidation.md)
-- **IPP closure artifact (R14/AC13):** [IPP-E05S01T42-ascertain-requirements-sequence-closure.md](../../../../../implementation-cycles/IPP-E05S01T42-ascertain-requirements-sequence-closure.md)
+- **IPW planning artifact (spec / test design / impl plan):** [IPP-E5S1T42-ascertain-requirements-sequence-closure.md](../../../../../implementation-cycles/IPP-E5S01T42-ascertain-requirements-sequence-closure.md)
+- **IPP closure artifact (R14/AC13):** [IPP-E5S1T42-ascertain-requirements-sequence-closure.md](../../../../../implementation-cycles/IPP-E5S01T42-ascertain-requirements-sequence-closure.md)
 - [FR-042 — IPW + ICW consolidation](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`
 - **Prior ICW work (historical):** [FR-040](../../../fr-br/FR-040-implementation-cycle-workflow-icw.md), [E05:S01:T40](T40-implementation-cycle-workflow-icw.md), [FR-048](../../../fr-br/FR-048-icw-task-identifier-argument.md), [E05:S01:T48](T48-icw-task-identifier-argument.md)
@@ -71,6 +71,6 @@ Aligned with **FR-042** acceptance criteria (AC1–AC13).
 
 ## References
 
-- **Plan doc (bidirectional):** [IPW-E05S01T42-ipw-icw-consolidation.md](IPW-E05S01T42-ipw-icw-consolidation.md)
-- **IPP closure artifact:** [IPP-E05S01T42-ascertain-requirements-sequence-closure.md](../../../../../implementation-cycles/IPP-E05S01T42-ascertain-requirements-sequence-closure.md)
+- **Plan doc (bidirectional):** [IPP-E5S1T42-ascertain-requirements-sequence-closure.md](../../../../../implementation-cycles/IPP-E5S01T42-ascertain-requirements-sequence-closure.md)
+- **IPP closure artifact:** [IPP-E5S1T42-ascertain-requirements-sequence-closure.md](../../../../../implementation-cycles/IPP-E5S01T42-ascertain-requirements-sequence-closure.md)
 - Implementation Cycle Workflow package (legacy ICW): `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/`

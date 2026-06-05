@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Status:** ACTIVE (intake released v0.5.2.6+1; implementation ACs open)  
 
 **Repository Pattern:** FR-063 = E05:S02:T06  
-**Implementing Task:** [E05:S02:T06](../epics/epic-05/story-002/T06-cmw-epic-05-execution-context-fr-063.md)
+**Implementing Task:** [E05:S02:T06](../epics/epic-05/story-02/T06-cmw-epic-5-execution-context-fr-063.md)
 
 ---
 
@@ -60,7 +60,7 @@ Update **Changelog Management Workflow (CMW)** documentation and implementation 
 
 ### Kanban / attribution (should)
 
-- **Done:** [E05:S02:T06](../epics/epic-05/story-002/T06-cmw-epic-05-execution-context-fr-063.md) under **E5:S02 – Documentation Maintenance Framework** for implementation and RW on **`epic/5-documentation-management`**.
+- **Done:** [E05:S02:T06](../epics/epic-05/story-02/T06-cmw-epic-5-execution-context-fr-063.md) under **E5:S02 – Documentation Maintenance Framework** for implementation and RW on **`epic/5-documentation-management`**.
 - Reconcile messaging with **E02:S16:T03** (perpetual CMW maintenance): either narrow T102 to **framework script behavior** and use **E5** for doc-maintenance **runs**, or document a single source of truth — **decision recorded in task + Epic 5/Epic 6 docs**.
 
 ---

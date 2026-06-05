@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Status:** IMPLEMENTED
 
 **Implementing Task:** [E06:S06:T62](../epics/epic-06/story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md)
-**Planning package (IPW):** [IPW-E06S06T62-global-ipw-gated-implementation-contract](../../../implementation-cycles/IPW-E06S06T62-global-ipw-gated-implementation-contract.md)
+**Planning package (IPW):** [IPW-E6S6T62-global-ipw-gated-implementation-contract](../../../implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md)
 
 ---
 
@@ -78,6 +78,6 @@ Current behavior can drift from requested artifact scope (for example, a request
 
 ## Related
 
-- [FR-042](./FR-042-implementation-planning-workflow-ipw.md)
-- [FR-074](./FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
-- [UXR-008](./UXR-008-kboard-fbuboard-default-naming-adoption.md)
+- [FR-042](FR-042-implementation-planning-workflow-ipw.md)
+- [FR-074](FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
+- [UXR-008](UXR-008-kboard-fbuboard-default-naming-adoption.md)

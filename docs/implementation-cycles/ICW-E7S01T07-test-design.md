@@ -1,4 +1,4 @@
-# ICW-E7S01T07-Test-Design: Markdown Maintenance Workflow (MMW)
+# ICW-E7S1T7-Test-Design: Markdown Maintenance Workflow (MMW)
 
 **Implementation Cycle Workflow Test Design**  
 **Task:** E7:S01:T07 – Markdown Maintenance Workflow (MMW)  
@@ -317,6 +317,6 @@ Comprehensive test design for the Markdown Maintenance Workflow (MMW) covering v
 ## References
 
 - **FR-058:** Markdown Maintenance Workflow requirements
-- **ICW-E7S01T07-Specification:** Detailed workflow specification
+- **ICW-E7S1T7-Specification:** Detailed workflow specification
 - **E7:S01:T05:** Perpetual markdown maintenance task context
 - **RW Framework:** Release workflow integration requirements

@@ -10,9 +10,9 @@
 
 ## Planning artifacts (publication)
 
-- [ICW E07:S01:T07 specification](../../../../../implementation-cycles/ICW-E7S01T07-specification.md)
+- [ICW E07:S01:T07 specification](../../../../../implementation-cycles/ICW-E7S01T07-test-design.md)
 - [ICW E07:S01:T07 test design](../../../../../implementation-cycles/ICW-E7S01T07-test-design.md)
-- [ICW E07:S01:T07 implementation plan](../../../../../implementation-cycles/ICW-E7S01T07-implementation-plan.md)
+- [ICW E07:S01:T07 implementation plan](../../../../../implementation-cycles/ICW-E7S01T07-test-design.md)
 
 ## Summary
 
@@ -33,7 +33,7 @@ Design and implement the Markdown Maintenance Workflow (MMW) that triggers when 
 
 ## Deliverables
 
-- MMW specification/test design/implementation plan (`docs/implementation-cycles/ICW-E07S01T07-*`).  
+- MMW specification/test design/implementation plan (`docs/implementation-cycles/ICW-E7S1T7-*`).  
 - Validator update supporting scoped/baseline outputs + CLI flags.  
 - `docs/maintenance/logs/mmw/UCW-<date>.md` template populated for first cycle.  
 - Release Runbook, Kanban board, and Story document updates describing MMW invocation + evidence.  

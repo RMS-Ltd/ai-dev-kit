@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 - [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
 - Story-level perpetual ownership model in [Story 016](../story-16-perpetual-ongoing-workflow-operations.md).
-- Canonical policy IPP: [`IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md).
+- Canonical policy IPP: [`IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md).
 
 ---
 
@@ -70,7 +70,7 @@ Recurring markdown-only documentation maintenance is a distinct operational stre
 
 ## References
 
-- [Canonical policy IPP: `IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md)
-- [E02:S16:T01 - Establish canonical perpetual ongoing tasks story (FR-088)](./T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
-- [E02:S16:T03 - Workflow maintenance (Perpetual)](./T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
-- [E02:S16:T04 - Ad-hoc Kanban synchronization and hygiene (Perpetual)](./T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- [Canonical policy IPP: `IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
+- [E02:S16:T01 - Establish canonical perpetual ongoing tasks story (FR-088)](T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
+- [E02:S16:T03 - Workflow maintenance (Perpetual)](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [E02:S16:T04 - Ad-hoc Kanban synchronization and hygiene (Perpetual)](T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)

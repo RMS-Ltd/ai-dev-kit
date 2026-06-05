@@ -86,7 +86,7 @@ If Step 9/11 reports a tagged BUILD collision, SemVer tag already exists, or pus
 1. **Do not** run `git tag -f`, `git push -f`, or `git push origin +v*` on release tags.
 2. Confirm `version.py` was not left at a reused BUILD (run `resolve_rw_build.py` if unsure).
 3. Bump `VERSION_BUILD` to **HEAD_BUILD + 1** for the same E:S:T.
-4. Re-invoke: `RW E{epic}:S{story}:T{task} --art` (normal release — not `--doc-policy-zero` unless user explicitly required BUILD +0 on untagged doc-init).
+4. Re-invoke: `RW E\{epic\}:S\{story\}:T\{task\} --art` (normal release — not `--doc-policy-zero` unless user explicitly required BUILD +0 on untagged doc-init).
 
 Historical mis-pointed tags remain forensic evidence; correction is forward-only via new BUILD.
 

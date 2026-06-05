@@ -20,10 +20,10 @@ housekeeping_policy: keep
 
 | Pattern | Files | When to use (ai-dev-kit) |
 |--------|--------|---------------------------|
-| **IPP (consolidated)** | One `IPP-E{epic}S{story}T{task}-{slug}.md` with Sections 1–Requirements, 2–Specification (incl. **§2.5 ADR necessity**), 3–Test design, 4–Implementation plan, 5–Documentation deliverables, 6–Documentation housing, 7–Success/verification; optional **§8** rolling backlog for perpetual tasks | **Default** for IPW runs that follow `ipw.md` Phase 7 (`PLAN_DOC_TEMPLATE.md`). IPW **Phase 5.0** (ADR gate per [ipw-adr-necessity-checklist.md](../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)), then Phases 5–6, run before the IPP is written. Example: [`IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md`](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md). |
-| **ICW trio (split)** | `ICW-E{epic}S{story}T{task}-specification.md`, `-test-design.md`, `-implementation-plan.md` | Retrospective publication, multi-audience splits, or historical packages already authored as three files. Example: `ICW-E7S06T18-*` (see changelog for E7:S06:T18). |
+| **IPP (consolidated)** | One `IPP-E\{epic\}S\{story\}T\{task\}-\{slug\}.md` with Sections 1–Requirements, 2–Specification (incl. **§2.5 ADR necessity**), 3–Test design, 4–Implementation plan, 5–Documentation deliverables, 6–Documentation housing, 7–Success/verification; optional **§8** rolling backlog for perpetual tasks | **Default** for IPW runs that follow `ipw.md` Phase 7 (`PLAN_DOC_TEMPLATE.md`). IPW **Phase 5.0** (ADR gate per [ipw-adr-necessity-checklist.md](../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)), then Phases 5–6, run before the IPP is written. Example: [`IPP-E2S16T3-rehouse-workflow-perpetual-tasks.md`](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md). |
+| **ICW trio (split)** | `ICW-E\{epic\}S\{story\}T\{task\}-specification.md`, `-test-design.md`, `-implementation-plan.md` | Retrospective publication, multi-audience splits, or historical packages already authored as three files. Example: `ICW-E7S6T18-*` (see changelog for E7:S06:T18). |
 
-Both patterns satisfy the **Global Implementation Gate** in root [`AGENTS.md`](../../../AGENTS.md) when the host **task document** links to them under **Input** / **References** (bidirectional wiring per FR-042).
+Both patterns satisfy the **Global Implementation Gate** in root [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) when the host **task document** links to them under **Input** / **References** (bidirectional wiring per FR-042).
 
 ---
 
@@ -31,7 +31,7 @@ Both patterns satisfy the **Global Implementation Gate** in root [`AGENTS.md`](.
 
 - **New IPW session in ai-dev-kit:** Prefer **IPP** unless a task explicitly requires split files for governance or tooling.
 - **Perpetual / umbrella maintenance tasks:** Prefer **IPP** with **§8 Rolling backlog** for follow-on waves without rewriting §1–§6.
-- **Retrospective alignment or external review packages:** **ICW trio** is acceptable; may later be consolidated into one IPP (see [`IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md`](../../implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)) — cite superseded ICW files inside the IPP if folded.
+- **Retrospective alignment or external review packages:** **ICW trio** is acceptable; may later be consolidated into one IPP (see [`IPP-E4S19T6-fbu-meta-normalization-and-intake-governance.md`](../../implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)) — cite superseded ICW files inside the IPP if folded.
 
 ---
 

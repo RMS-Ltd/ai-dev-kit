@@ -13,12 +13,12 @@ housekeeping_policy: keep
 **Submitted:** 2026-03-31  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** COMPLETE (2026-06-01 — **E04:S19:T08** D2–D4 + [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md); pending maintainer verification)
+**Status:** COMPLETE (2026-06-01 — **E04:S19:T08** D2–D4 + [ADR-014](../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md); pending maintainer verification)
 
 **Implementing Task:** [E04:S19:T08](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
 **Historical registry:** [E05:S01:T72](../epics/epic-05/story-01-fr-repo/T72-uniform-repository-abstract-space-kanban-rules.md) (historical-only)  
-**Canonical policy:** [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)  
-**Related BR:** [BR-076](./BR-076-e7-s00-must-not-host-concrete-tasks.md) — E7:S00 must not host concrete tasks (**E04:S19:T10**)
+**Canonical policy:** [ADR-014](../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)  
+**Related BR:** [BR-076](BR-076-e7-s00-must-not-host-concrete-tasks.md) — E7:S00 must not host concrete tasks (**E04:S19:T10**)
 
 ---
 

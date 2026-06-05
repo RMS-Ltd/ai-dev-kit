@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic/Story path migration guide (lowercase segments)
 
 **Date:** 2026-06-04  
-**Change:** Kanban epic/story **directories and filenames** use lowercase `epic-{n}` / `story-{nnn}-` instead of `Epic-{n}` / `Story-{nnn}-`  
+**Change:** Kanban epic/story **directories and filenames** use lowercase `epic-\{n\}` / `story-{nnn}-` instead of `Epic-\{n\}` / `Story-{nnn}-`  
 **Policy:** [ADR-015](ADR-015-kanban-epic-story-path-lowercase-convention.md), `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 
 ---

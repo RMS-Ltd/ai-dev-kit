@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF1 | Inline notation write-default is `E{NN}:S{NN}:T{NN}` with zero-padding when component `<10` | UXR-014 R1, AC1 |
+| RF1 | Inline notation write-default is `E\{NN\}:S\{NN\}:T\{NN\}` with zero-padding when component `<10` | UXR-014 R1, AC1 |
 | RF2 | Values `≥10` use natural width; no truncation | UXR-014 Notes |
 | RF3 | Perpetual tasks (`T101+`) use three-digit task display | UXR-014 Notes |
 | RF4 | Compact trigger tokens (`E02S16T04`) follow same padding on write | UXR-014 Finding 2 |
@@ -167,7 +167,7 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 
 | Doc ID | Path | Purpose |
 | ------ | ---- | ------- |
-| D-C1 | `docs/implementation-cycles/IPP-E4S19T09-*.md` | This IPP |
+| D-C1 | `docs/implementation-cycles/IPP-E4S19T9-*.md` | This IPP |
 | D-C2 | `scripts/kanban/est_format.py` | Shared formatter |
 | D-C3 | `validation/validate_est_inline_format.py` | Optional lint |
 
@@ -185,7 +185,7 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links |
 | ------ | -------------- | ------------------ | --------- | ------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md` | NOT_APPLICABLE | evergreen | T09 Input/References |
+| D-C1 | `docs/implementation-cycles/IPP-E4S19T9-two-digit-est-identifier-default-formatting.md` | NOT_APPLICABLE | evergreen | T09 Input/References |
 | D-U1–D-U3 | Policy + architecture standards | PUBLISHED | evergreen | Task References |
 | D-C2–D-C3 | Workflow scripts | NOT_APPLICABLE | evergreen | IPP §4 |
 
@@ -208,4 +208,4 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 - [Host task E4:S19:T09](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
 - [UXR-014](../project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
 - [task-naming-migration-guide.md](../architecture/standards-and-adrs/task-naming-migration-guide.md)
-- [kanban-governance-policy.md](../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [kanban-governance-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)

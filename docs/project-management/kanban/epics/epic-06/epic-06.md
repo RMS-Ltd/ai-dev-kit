@@ -158,7 +158,7 @@ Establish version management processes for framework packages.
 - [x] E06:S01:T04 – Design framework dependency architecture ✅ COMPLETE (v0.6.1.1+2)
 - [x] E06:S01:T05 – Create framework version tagging strategy ✅ COMPLETE (v0.6.1.5+1)
 
-**Story:** [`story-01-framework-version-management.md`](story-01-framework-version-management.md)
+**Story:** [`story-02-versioning-cookbook-and-examples.md`](../epic-03/story-02-versioning-cookbook-and-examples.md)
 
 ---
 
@@ -179,7 +179,7 @@ Implement processes for updating and migrating framework packages.
 - [ ] E06:S02:T04 – Build framework update CLI tool (SUPERSEDED by E6:S07)
 - [x] E06:S02:T05 – Create auto-update mechanisms ✅ COMPLETE (v0.6.2.5+1)
 
-**Story:** [`story-02-framework-update-and-migration.md`](story-02-framework-update-and-migration.md)
+**Story:** [`story-09-ai-dev-kit-installation-and-adopter-integration.md`](story-09-ai-dev-kit-installation-and-adopter-integration.md)
 
 ---
 
@@ -198,7 +198,7 @@ Build monitoring and health tracking for framework packages.
 - [x] E06:S03:T02 – Implement health monitoring tools ✅ COMPLETE (v0.6.3.2+1)
 - [x] E06:S03:T03 – Build framework health dashboards ✅ COMPLETE (v0.6.3.3+1)
 
-**Story:** [`story-03-framework-health-monitoring.md`](story-03-framework-health-monitoring.md)
+**Story:** [`story-07-adk-implementation-analysis-and-package-management.md`](story-07-adk-implementation-analysis-and-package-management.md)
 
 ---
 

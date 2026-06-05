@@ -32,8 +32,8 @@ policy_salience:
 |----------|----------|------|
 | 1 | **Kanban task document** (`docs/project-management/kanban/.../T*.md` or embedded task section) | **Authoritative** for task scope, acceptance criteria, deliverables, status, and **version anchor** when complete. |
 | 2 | **Linked FR / BR / UXR** | Authoritative for *intake intent*, acceptance at feature level, and explicit follow-up rows (e.g. FU-1..n). |
-| 3 | **Planning package under `docs/implementation-cycles/`** | Durable **specification**, **test design**, and **implementation plan** intent. Acceptable forms: (a) **ICW trio** — `ICW-E{epic}S{story}T{task}-{specification,test-design,implementation-plan}.md`; or (b) **IPP (consolidated IPW)** — single `IPP-E{epic}S{story}T{task}-*.md` whose numbered sections map to those three concerns (per `.claude/commands/ipw.md`). Must be **linked from the task**. See [dev-kit-ipw-ipp-vs-icw-artifacts.md](dev-kit-ipw-ipp-vs-icw-artifacts.md). |
-| 4 | **Architecture / ADR / policy docs** | Cross-cutting rules and decisions (not a substitute for task-level acceptance). IPW **Phase 5.0** uses [ipw-adr-necessity-checklist.md](ipw-adr-necessity-checklist.md) (FR-100) to decide ADR REQUIRED vs EXEMPT before documentation inventory. |
+| 3 | **Planning package under `docs/implementation-cycles/`** | Durable **specification**, **test design**, and **implementation plan** intent. Acceptable forms: (a) **ICW trio** — `ICW-E\{epic\}S\{story\}T\{task\}-{specification,test-design,implementation-plan}.md`; or (b) **IPP (consolidated IPW)** — single `IPP-E\{epic\}S\{story\}T\{task\}-*.md` whose numbered sections map to those three concerns (per `.claude/commands/ipw.md`). Must be **linked from the task**. See [dev-kit-ipw-ipp-vs-icw-artifacts.md](dev-kit-ipw-ipp-vs-icw-artifacts.md). |
+| 4 | **Architecture / ADR / policy docs** | Cross-cutting rules and decisions (not a substitute for task-level acceptance). IPW **Phase 5.0** uses [ipw-adr-necessity-checklist.md](../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100) to decide ADR REQUIRED vs EXEMPT before documentation inventory. |
 | 5 | **Automated tests** | **Executable** spec: failing/passing behavior. Names and docstrings **should** reference task or FR where practical. |
 
 **Rule:** If a Cursor plan and a task doc disagree, **update the task doc** (and FR if needed), then adjust code/tests. The plan is **not** the owner of truth.
@@ -46,12 +46,12 @@ policy_salience:
 
 - Must live under **`docs/`** (or other committed paths defined by project policy).
 - **ICW** canonical output directory is **`docs/implementation-cycles/`** (see `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml` → `output_dir`).
-- **IPW / IPP (consolidated):** A single markdown file `IPP-E{epic}S{story}T{task}-{slug}.md` in the same directory is **equivalent** to the ICW trio when it contains the required sections (requirements/spec, test design, implementation plan, **documentation deliverables**, **documentation housing**, success criteria) per `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` and is bidirectionally wired to the host task. IPW **Phase 5–6** (`.claude/commands/ipw.md`) produce §5–§6 before the IPP is written. See [dev-kit-ipw-ipp-vs-icw-artifacts.md](dev-kit-ipw-ipp-vs-icw-artifacts.md).
+- **IPW / IPP (consolidated):** A single markdown file `IPP-E\{epic\}S\{story\}T\{task\}-\{slug\}.md` in the same directory is **equivalent** to the ICW trio when it contains the required sections (requirements/spec, test design, implementation plan, **documentation deliverables**, **documentation housing**, success criteria) per `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md` and is bidirectionally wired to the host task. IPW **Phase 5–6** (`.claude/commands/ipw.md`) produce §5–§6 before the IPP is written. See [dev-kit-ipw-ipp-vs-icw-artifacts.md](dev-kit-ipw-ipp-vs-icw-artifacts.md).
 - Naming **convention** for **ICW** split packages (recommended when using three files):
 
-  `ICW-E{epic}S{story}T{task}-specification.md`  
-  `ICW-E{epic}S{story}T{task}-test-design.md`  
-  `ICW-E{epic}S{story}T{task}-implementation-plan.md`
+  `ICW-E\{epic\}S\{story\}T\{task\}-specification.md`  
+  `ICW-E\{epic\}S\{story\}T\{task\}-test-design.md`  
+  `ICW-E\{epic\}S\{story\}T\{task\}-implementation-plan.md`
 
   Multi-task batches may use a **range suffix** already in use in this repo (e.g. `ICW-E7S06-T10-T16-*`) when one planning package intentionally covers several tasks.
 
@@ -65,7 +65,7 @@ policy_salience:
 
 ## 3. Workflow: planning → implementation handoff
 
-1. **Ensure a task exists** (Kanban governance: substantive work is task-driven). Note the task id placeholder `E{epic}:S{story}:T{task}` in the plan title or body.
+1. **Ensure a task exists** (Kanban governance: substantive work is task-driven). Note the task id placeholder `E\{epic\}:S\{story\}:T\{task\}` in the plan title or body.
 2. **Draft in Cursor Plan (optional):** acceptable for speed.
 3. **Promote before or as implementation starts:**
    - Copy **executable spec** statements (IDs, acceptance bullets) into the **task doc** sections *Scope*, *Acceptance Criteria*, *Deliverable* as appropriate; and/or

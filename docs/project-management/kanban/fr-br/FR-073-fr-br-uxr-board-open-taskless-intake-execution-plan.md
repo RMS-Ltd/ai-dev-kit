@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E04:S19:T06](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 **Historical implementing task:** [E05:S01:T73](../epics/epic-05/story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
-**IPP:** [IPP-E04S19T06](../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)
+**IPP:** [IPP-E4S19T6](../../../implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
 
 ---
 

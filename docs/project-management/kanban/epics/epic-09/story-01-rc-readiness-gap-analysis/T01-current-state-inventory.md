@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 | Signal | Value | Source |
 | ------ | ----- | ------ |
-| `VERSION_RC` | `0` (development) | [`src/fynd_deals/version.py`](../../../../../src/fynd_deals/version.py) |
+| `VERSION_RC` | `0` (development) | [`src/fynd_deals/version.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/src/fynd_deals/version.py) |
 | Active version string (repo) | `0.2.16.4+7` (E02:S16:T04 UKW hygiene) | Same |
 | Epic 9 branch (documented) | `epic/9-release-candidate-readiness` | [epic-09.md](../epic-09.md) |
 | Integration branch | `dev` (`dev_branch_epic: 2` in `rw-config.yaml`) | RW config |

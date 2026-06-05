@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Upstream:** [BR-039 – Cascade Whitelist Security Prompt Usability Blocker](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 
-**Planning Artifact (IPW):** [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md)
+**Planning Artifact (IPW):** [IPW-E6S6T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
 
 **Related:** [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) (symptoms); [E06:S06:T02](T02-fix-release-workflow-micromanagement-issues.md) (RW micromanagement — partial overlap; **BR-039** describes Cascade product behavior)
 
@@ -43,7 +43,7 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 
 - [BR-039](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (open for **product**; CRITICAL).
 - Kanban / FR-UXR board rows; **epic/6-framework-management** as integration branch.
-- [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md) (durable planning package; optional read).
+- [IPW-E6S6T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md) (durable planning package; optional read).
 
 ---
 
@@ -131,4 +131,4 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 
 - **BR-039:** [BR-039-cascade-whitelist-security-prompt-usability-blocker.md](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 - **Video:** *(removed from repository root 2026-05-29 — was `Screen Recording 2026-03-09 at 16.07.14.mov`; per BR-039)*
-- **IPW package:** [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md)
+- **IPW package:** [IPW-E6S6T57-br039-vendor-blocker-planning.md](../../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)

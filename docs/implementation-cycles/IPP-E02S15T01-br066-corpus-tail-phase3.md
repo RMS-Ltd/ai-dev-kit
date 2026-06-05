@@ -26,7 +26,7 @@ Close **BR-066** by wiring every remaining task-addressed planning artifact unde
 | -------- | ------------ |
 | Wire all unwired `ICW-*` / `IPW-*` / `IPP-*` from kanban host task docs or story anchors | New blocking RW gate |
 | Update inventory + BR-066 **RESOLVED** | Rewriting artifact bodies |
-| Fix T01 broken `ICW-E02S15T01-*` links (never filed; IPP-only host) | Batch board `Last modified` stamps (FR-097) |
+| Fix T01 broken `ICW-E2S15T1-*` links (never filed; IPP-only host) | Batch board `Last modified` stamps (FR-097) |
 | fbuboard BR-066: single IPP segment → this IPP | Editing Cursor plan file |
 
 ### 1.3 Functional requirements
@@ -34,7 +34,7 @@ Close **BR-066** by wiring every remaining task-addressed planning artifact unde
 - **F1:** Baseline `--audit-inventory` recorded in §7 (35 unwired at Phase 3 start).
 - **F2:** Each unwired basename linked from a kanban host with `## Planning artifacts (publication)` (or equivalent link graph satisfying validator).
 - **F3:** Hosts without discrete task docs use story-level anchors with `**Task ID:**` (e.g. E02:S06:T01 story doc).
-- **F4:** Legacy `IPW-E6S07T103-*` wired from **E02:S16:T03** (re-house target).
+- **F4:** Legacy `IPW-E6S7T103-*` wired from **E02:S16:T03** (re-house target).
 - **F5:** `IPW-PUBLICATION-BACKFILL-INVENTORY.md` post–Phase 3 row: **0** unwired.
 - **F6:** **BR-066** → **RESOLVED**; fbuboard one IPP link only.
 
@@ -98,7 +98,7 @@ Discoverability = kanban task doc markdown link to artifact basename under `docs
 
 | Action | Path |
 | ------ | ---- |
-| **CREATE** | `docs/implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md` (this file) |
+| **CREATE** | `docs/implementation-cycles/IPP-E2S15T1-br066-corpus-tail-phase3.md` (this file) |
 | **UPDATE** | `docs/implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md` |
 | **UPDATE** | Host task docs (~35 wiring targets) |
 | **UPDATE** | `T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
@@ -137,17 +137,17 @@ Discoverability = kanban task doc markdown link to artifact basename under `docs
 
 ### Baseline unwired list (Phase 3 start)
 
-- ICW-E2S01T17-implementation-plan.md, ICW-E2S01T17-specification.md, ICW-E2S01T17-test-design.md
-- ICW-E7S01T06-implementation-plan.md, ICW-E7S01T06-specification.md, ICW-E7S01T06-test-design.md
-- IPP-E02S16T06 through IPP-E02S16T17 (Story 016 batch)
-- IPP-E04S19T08, IPP-E07S01T09, IPP-E08S03T05, IPP-E08S03T06
-- IPP-E2S01T22, IPP-E2S06T01, IPP-E2S16T02/T03/T07/T12, IPP-E4S06T01, IPP-E5S01T56, IPP-E5S01T62, IPP-E7S01T11
-- IPW-E3S02T12, IPW-E4S19T02, IPW-E5S09T11, IPW-E6S06T57/T62, IPW-E6S07T103/T112/T113, IPW-E6S09T01, IPW-E7S06T18
+- ICW-E2S1T17-implementation-plan.md, ICW-E2S1T17-specification.md, ICW-E2S1T17-test-design.md
+- ICW-E7S1T6-implementation-plan.md, ICW-E7S1T6-specification.md, ICW-E7S1T6-test-design.md
+- IPP-E2S16T6 through IPP-E2S16T17 (Story 016 batch)
+- IPP-E4S19T8, IPP-E7S1T9, IPP-E8S3T5, IPP-E8S3T6
+- IPP-E2S1T22, IPP-E2S6T1, IPP-E2S16T2/T03/T07/T12, IPP-E4S6T1, IPP-E5S1T56, IPP-E5S1T62, IPP-E7S1T11
+- IPW-E3S2T12, IPW-E4S19T2, IPW-E5S9T11, IPW-E6S6T57/T62, IPW-E6S7T103/T112/T113, IPW-E6S9T1, IPW-E7S6T18
 
 ---
 
 ## References
 
 - [BR-066](../project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
-- [Phase 2 IPP](./IPP-E02S15T01-br066-publication-backfill-phase2.md)
-- [Inventory](./IPW-PUBLICATION-BACKFILL-INVENTORY.md)
+- [Phase 2 IPP](IPP-E02S15T01-br066-corpus-tail-phase3.md)
+- [Inventory](IPW-PUBLICATION-BACKFILL-INVENTORY.md)

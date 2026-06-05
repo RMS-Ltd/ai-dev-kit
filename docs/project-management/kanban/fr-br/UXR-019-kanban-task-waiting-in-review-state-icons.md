@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version:** v0.4.13.8+1 (E04:S13:T08)  
 
 **Implementing Task:** [E04:S13:T08](../epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T08-kanban-task-waiting-in-review-state-icons-uxr019.md)  
-**Planning package:** [IPP-E04S13T08](../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
+**Planning package:** [IPP-E4S13T8](../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
 
 **Related:** [UXR-012](UXR-012-kanban-fbu-state-icons-for-moscow-rows.md) (Set A primary + Set B fallback; **E04:S13:T07** ✅), [E04:S19:T11](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) (sign-off / adopter replay queue), [kanban-board-guide.md](../kanban-board-guide.md), `packages/frameworks/workflow-mgt/scripts/kanban/state_icons.py`
 

@@ -3,7 +3,7 @@
 **Version:** 1.0.0  
 **Last Updated:** 2025-12-04  
 **Status:** Draft  
-**Related:** [Document Lifecycle Metadata Spec](./doc-lifecycle-metadata-spec.md) | [KB Structure Overview](./kb-structure-overview.md)
+**Related:** [Document Lifecycle Metadata Spec](doc-lifecycle-metadata-spec.md) | [KB Structure Overview](kb-structure-overview.md)
 
 ---
 
@@ -72,7 +72,7 @@ This policy governs the **lifecycle management** of Knowledge Base (KB) document
 
 ### 5. Agent-Driven Management
 
-**Rule:** AI agents **MUST** create and maintain lifecycle metadata according to the [Document Lifecycle Metadata Spec](./doc-lifecycle-metadata-spec.md).
+**Rule:** AI agents **MUST** create and maintain lifecycle metadata according to the [Document Lifecycle Metadata Spec](doc-lifecycle-metadata-spec.md).
 
 **Requirements:**
 - Set lifecycle based on document type
@@ -311,9 +311,9 @@ When promoting/demoting documents, agents **MUST**:
 
 ## 📚 Related Documents
 
-- **Specification:** [`doc-lifecycle-metadata-spec.md`](./doc-lifecycle-metadata-spec.md) – Metadata schema and field definitions
+- **Specification:** [`doc-lifecycle-metadata-spec.md`](doc-lifecycle-metadata-spec.md) – Metadata schema and field definitions
 - **Workflow:** `packages/frameworks/workflow-mgt/workflows/doc-housekeeping-workflow.yaml` – Automated housekeeping workflow
-- **KB Structure:** [`kb-structure-overview.md`](./kb-structure-overview.md) – KB organization
+- **KB Structure:** [`kb-structure-overview.md`](kb-structure-overview.md) – KB organization
 
 ---
 

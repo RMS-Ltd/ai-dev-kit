@@ -104,6 +104,6 @@ Build comprehensive monitoring and health tracking for framework packages.
 ## References
 
 - `docs/project-management/kanban/epics/epic-06/epic-06.md`
-- `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md`
-- `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
+- `docs/project-management/kanban/epics/epic-06/story-02-versioning-cookbook-and-examples.md`
+- `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md`
 

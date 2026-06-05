@@ -52,7 +52,7 @@ Operators need a **fast, safe, repeatable** UKW use case: “clean the boards”
 | ------- | ------- |
 | **`UKW -c`** / **`ukw -c`** | **Archive completed** — dual-board archival sub-workflow only |
 
-**Constraints (align with [FR-085](FR-085-ukw-optional-reprioritization-rp-flag.md) / [ADR-009](../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) pattern):**
+**Constraints (align with [FR-085](FR-085-ukw-optional-reprioritization-rp-flag.md) / [ADR-009](../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) pattern):**
 
 - **Standalone only** — do not combine `-c` with `-u`, `-p`, `-a`, or `--rp`.
 - **Does not** run UKW Step 2.5 (gap discovery), MoSCOW reprioritization, or story/epic narrative synthesis unless a row’s removal exposes a blocking inconsistency (document in run summary).
@@ -139,16 +139,16 @@ For each active MoSCOW row on **`kboard.md`**:
 
 ## Related work
 
-- [ADR-010](../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
-- [IPP-E02S16T16](../../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
+- [ADR-010](../../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
+- [IPP-E2S16T16](../../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 - [FR-034](FR-034-ukw-granular-control-and-use-case-flags.md) — UKW flag pattern (`-u`, `-p`, `-a`)
 - [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) — fbuboard terminal prune (predecessor; `-c` adds ledger append mandate)
 - [FR-049](FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md) — completed ledger format
 - [FR-050](FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) — FBU temporal sync
 - [FR-086](FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) — canonical `kanban-completed` / `intake-completed` naming
-- [BR-042](../fr-br/BR-042-ukw-agent-board-cleanup-failure.md) / [E06:S06:T42](../epics/epic-06/story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md)
+- [BR-042](BR-042-ukw-agent-board-cleanup-failure.md) / [E06:S06:T42](../epics/epic-06/story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md)
 - [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) — UKW perpetual attribution
-- [Workflow initiation cheatsheet](../../guides/workflow-initiation-cheatsheet.md)
+- [Workflow initiation cheatsheet](../../../guides/workflow-initiation-cheatsheet.md)
 
 ---
 

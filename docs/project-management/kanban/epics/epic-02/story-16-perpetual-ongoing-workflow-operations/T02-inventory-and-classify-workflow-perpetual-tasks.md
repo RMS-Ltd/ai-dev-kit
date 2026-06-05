@@ -27,11 +27,11 @@ Publication N/A Reason: Consolidated inventory IPP per FR-042; governance artifa
 ## Input
 
 - [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
-- Planning baseline from [E02:S16:T01](./T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md).
-- **Canonical IPP:** [`IPP-E2S16T02-perpetual-task-inventory.md`](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
-- **T03 Tranche 3B:** Entry gate satisfied per [IPP-E2S16T03 §7](../../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) (execution remains separate authorization).
+- Planning baseline from [E02:S16:T01](T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md).
+- **Canonical IPP:** [`IPP-E2S16T2-perpetual-task-inventory.md`](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
+- **T03 Tranche 3B:** Entry gate satisfied per [IPP-E2S16T3 §7](../../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) (execution remains separate authorization).
 
-**Implementation package:** [IPP-E2S16T02-perpetual-task-inventory.md](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
+**Implementation package:** [IPP-E2S16T2-perpetual-task-inventory.md](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
 
 ---
 
@@ -69,14 +69,14 @@ Migration cannot be executed safely until all workflow-related perpetual tasks a
 | -------- | ------ |
 | `discover_perpetual_task_candidates.py --json` | `marker_count=6`, `unique_candidates=65` |
 | `epic-06/story-007` under `docs/` | 167 occurrences, 101 files |
-| IPP sections 1–7 | [`IPP-E2S16T02-perpetual-task-inventory.md`](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) |
+| IPP sections 1–7 | [`IPP-E2S16T2-perpetual-task-inventory.md`](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) |
 | pytest `test_discover_perpetual_task_candidates.py` | 2 passed |
 
 ---
 
 ## References
 
-- [IPP-E2S16T02-perpetual-task-inventory.md](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
-- [IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md](../../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
-- [IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md](../../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md)
+- [IPP-E2S16T2-perpetual-task-inventory.md](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
+- [IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md](../../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
+- [IPP-E2S16T3-rehouse-workflow-perpetual-tasks.md](../../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md)
 - [E4S19T03 investigation report](../../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)

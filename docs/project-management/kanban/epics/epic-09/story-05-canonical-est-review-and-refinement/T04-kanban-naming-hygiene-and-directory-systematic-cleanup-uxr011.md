@@ -38,11 +38,11 @@ Systematically clean up naming and structural hygiene issues across the entire `
 
 ## Input
 
-- [IPP-E09S05T04 Implementation Plan](../../../../../implementation-cycles/IPP-E09S05T04-kanban-naming-hygiene.md) — Formal implementation plan for this task (FR-042, IPW)
-- [UXR-011](../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) — User Experience Research with full audit findings
+- [IPP-E9S5T4 Implementation Plan](../../../../../implementation-cycles/IPP-E9S05T04-kanban-naming-hygiene.md) — Formal implementation plan for this task (FR-042, IPW)
+- [UXR-011](../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) — User Experience Research with full audit findings
 - [E02:S02:T07](../../epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Original task naming change (TODO, informs approach)
 - [E02:S02:T08](../../epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md) — Original kanban docs standardization (TODO, informs approach)
-- [kanban-governance-policy](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — Naming policy source of truth
+- [kanban-governance-policy](../../../../../governance/kanban/kanban-governance-policy.md) — Naming policy source of truth
 
 ---
 
@@ -98,14 +98,14 @@ Systematically clean up naming and structural hygiene issues across the entire `
 - **[E02:S02:T08](../../epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)** — Relationship Type: Informs — Context: Original kanban docs standardization task that was never completed.
 
 **Related UXR Documents:**
-- **[UXR-011](../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)** — Relationship Type: Informs — Context: UXR-011 is the originating research with full forensic analysis.
+- **[UXR-011](../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)** — Relationship Type: Informs — Context: UXR-011 is the originating research with full forensic analysis.
 
 ---
 
 ## Related Work
 
 **Related UXR Links:**
-- [UXR-011: Kanban naming hygiene and directory systematic cleanup](../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) — Bidirectional: UXR-011 links back to this task in its Implementing Task section.
+- [UXR-011: Kanban naming hygiene and directory systematic cleanup](../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) — Bidirectional: UXR-011 links back to this task in its Implementing Task section.
 
 **Related Tasks:**
 - [E02:S02:T07: Implement task naming change](../../epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Bidirectional: T007's task doc references the naming standard that this cleanup enforces.
@@ -132,9 +132,9 @@ Systematically clean up naming and structural hygiene issues across the entire `
 
 ## References
 
-- [IPP-E09S05T04 Implementation Plan](../../../../../implementation-cycles/IPP-E09S05T04-kanban-naming-hygiene.md) — Formal implementation plan for this task (FR-042, IPW)
-- [UXR-011](../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
+- [IPP-E9S5T4 Implementation Plan](../../../../../implementation-cycles/IPP-E9S05T04-kanban-naming-hygiene.md) — Formal implementation plan for this task (FR-042, IPW)
+- [UXR-011](../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
 - [E02:S02:T07](../../epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)
 - [E02:S02:T08](../../epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)
-- [kanban-governance-policy](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [kanban-governance-policy](../../../../../governance/kanban/kanban-governance-policy.md)
 - [epic-09](../epic-09.md)

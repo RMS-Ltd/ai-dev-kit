@@ -465,7 +465,7 @@ Use standard i18n approach:
 - Version: `v0.21.1.1+1` (to be assigned when Epic 21 is created)
 
 **Kanban Links:**
-- Epic: [To be created: `docs/project-management/kanban/epics/epic-21/epic-21.md`]
+- Epic: [To be created: `docs/project-management/kanban/epics/epic-21/Epic-21.md`]
 - Story: [To be created: `docs/project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md`]
 - Task: [To be created in Story document]
 

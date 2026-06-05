@@ -15,13 +15,13 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Repository Task:** [E07:S06:T18](../epics/epic-07/story-06-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md) — **COMPLETE** (**v0.7.6.18+3**)
 
-**Planning package (ICW / retrospective publication):** [Specification](../../../implementation-cycles/ICW-E07S06T18-specification.md) · [Test design](../../../implementation-cycles/ICW-E07S06T18-test-design.md) · [Implementation plan](../../../implementation-cycles/ICW-E07S06T18-implementation-plan.md)
+**Planning package (ICW / retrospective publication):** [Specification](../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md) · [Test design](../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md) · [Implementation plan](../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md)
 
 ---
 
 ## Summary
 
-A user installing AI Dev Kit in interactive mode reported confusion at the Kanban integration prompt asking for an epic document pattern with `{epic}` placeholder. The user had already provided a custom Kanban root path but could not confidently answer the next pattern question, indicating that current prompt wording is not self-explanatory for real project layouts.
+A user installing AI Dev Kit in interactive mode reported confusion at the Kanban integration prompt asking for an epic document pattern with `\{epic\}` placeholder. The user had already provided a custom Kanban root path but could not confidently answer the next pattern question, indicating that current prompt wording is not self-explanatory for real project layouts.
 
 ---
 
@@ -32,7 +32,7 @@ A user installing AI Dev Kit in interactive mode reported confusion at the Kanba
 **Prompt sequence observed:**
 
 1. `Kanban root directory [docs/project-management/kanban]: KB/PM_and_Portfolio/epics/overview`
-2. `Epic document pattern (use {epic} placeholder) [epics/Epic-{epic}.md]:`
+2. `Epic document pattern (use \{epic\} placeholder) [epics/Epic-\{epic\}.md]:`
 
 **User-reported friction:**
 
@@ -52,7 +52,7 @@ Follow-up execution confirmed that prompt ambiguity leads to concrete misconfigu
    - This value is over-specific and non-templated, so it cannot generalize across epics.
 
 2. **Story pattern worked only after external coaching**
-   - User eventually provided `Epic-{epic}/stories/E{epic}-S{story}.md`, matching actual project layout.
+   - User eventually provided `Epic-\{epic\}/stories/E\{epic\}-S\{story\}.md`, matching actual project layout.
    - Confirms usability issue: correct value was discoverable, but not from installer guidance alone.
 
 3. **Kanban framework installer validated a different root**
@@ -92,7 +92,7 @@ Follow-up execution confirmed that prompt ambiguity leads to concrete misconfigu
    - Users are not told the pattern is relative to the entered root and must match real filenames.
 
 2. **Placeholder instruction is too abstract**
-   - "use `{epic}` placeholder" is insufficient without concrete examples tied to typical structures.
+   - "use `\{epic\}` placeholder" is insufficient without concrete examples tied to typical structures.
 
 3. **No inline validation guidance**
    - User is not shown candidate matches or "no files matched" feedback while answering.
@@ -101,7 +101,7 @@ Follow-up execution confirmed that prompt ambiguity leads to concrete misconfigu
    - If a project owner cannot answer confidently, non-maintainers are likely to fail or misconfigure setup.
 
 5. **No placeholder validation on pattern inputs**
-   - Installer does not enforce `{epic}` in epic patterns or `{epic}`/`{story}` in story patterns.
+   - Installer does not enforce `\{epic\}` in epic patterns or `\{epic\}`/`\{story\}` in story patterns.
    - Invalid literal values are accepted and persisted into `rw-config.yaml`.
 
 6. **Cross-installer path context is inconsistent**
@@ -137,15 +137,15 @@ Follow-up execution confirmed that prompt ambiguity leads to concrete misconfigu
 
 4. **Context-aware helper text (medium priority)**
    - If root path already includes `epics/overview`, suggest likely patterns such as:
-     - `Epic-{epic}.md`
-     - `Epic-{epic}/Epic-{epic}.md`
+     - `Epic-\{epic\}.md`
+     - `Epic-\{epic\}/Epic-\{epic\}.md`
 
 5. **Error copy hardening (medium priority)**
    - On invalid pattern, provide exact remediation text and examples instead of generic retry.
 
 6. **Placeholder enforcement + semantic validation (high priority)**
-   - Reject epic patterns missing `{epic}`.
-   - Reject story patterns missing either `{epic}` or `{story}`.
+   - Reject epic patterns missing `\{epic\}`.
+   - Reject story patterns missing either `\{epic\}` or `\{story\}`.
    - Show "why rejected" and nearest valid examples based on detected filenames.
 
 7. **Cross-tool path propagation (high priority)**

@@ -129,7 +129,7 @@ Every active MoSCOW row in `kboard.md` must end with a terminal pipe-delimited t
 
 `| Last modified: YYYY-MM-DD HH:MM UTC`
 
-This is mandatory for human scanability and forensic traceability. RW/UKW must **preserve** existing row stamps on STRUCTURE-only edits. New stamps only via linked-doc derivation or evidenced CONTENT passes — see [board-stamp-authority.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md).
+This is mandatory for human scanability and forensic traceability. RW/UKW must **preserve** existing row stamps on STRUCTURE-only edits. New stamps only via linked-doc derivation or evidenced CONTENT passes — see [board-stamp-authority.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md).
 
 ### MoSCOW state icons (UXR-012 / E04:S13:T07; UXR-019 / E04:S13:T08)
 
@@ -145,7 +145,7 @@ Every active MoSCOW bullet on `kboard.md` must place **exactly one Set A (emoji)
 
 - **Hygiene / UKW bookkeeping:** Do not change icons on STRUCTURE-only passes (same class as FR-097 stamp preservation). Update icons only when the **status word** changes substantively.
 
-- **Automation:** `state_icons.py`, `backfill_board_state_icons.py`, and `validate_kanban_state_icons.py` (Gate 9 in `validate_release_readiness.py`). Operator notes: [`state-icons.md`](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md).
+- **Automation:** `state_icons.py`, `backfill_board_state_icons.py`, and `validate_kanban_state_icons.py` (Gate 9 in `validate_release_readiness.py`). Operator notes: [`state-icons.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md).
 
 
 ### E/S/T inline notation (UXR-014 / E04:S19:T09)
@@ -237,7 +237,7 @@ The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:
 
 The board is organized into five separate documents:
 
-1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Sole active board: M/S/**V**/C/O/W (includes wired FBUs and **Verification** band per [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md))
+1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Sole active board: M/S/**V**/C/O/W (includes wired FBUs and **Verification** band per [ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md))
 2. **Epic/Story/Task Structure** (`kanban-structure.md`) - Shows all epics with their status, priority, stories, and links
 3. **FR/BR/UXR Structure** (`intake-structure.md`) - Complete listings of all FRs, BRs, and UXRs by type
 4. **Rules and Explanations** (`kanban-board-guide.md`) - This document with how-to content and policies

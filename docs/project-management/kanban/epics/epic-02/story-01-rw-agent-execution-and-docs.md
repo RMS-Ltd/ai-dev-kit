@@ -55,12 +55,12 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 - [x] **E02:S01:T19 – RW trigger routing execution regression (BR-071)** - ✅ COMPLETE (v0.2.1.19+1 — fix: CLAUDE.md + .claude/commands/rw.md; root cause: no Claude Code instruction file; BR-071 RESOLVED) — [Task doc](story-01-rw-agent-execution-and-docs/T19-rw-trigger-routing-execution-regression-br071.md) | [BR-071](../../fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
 - [x] **E02:S01:T20 – SemVer task-touch collision retrospective fix (BR-073)** - ✅ COMPLETE (v0.2.1.20+1 — registry patch, BR doc, task doc, kanban updates) — [Task doc](story-01-rw-agent-execution-and-docs/T20-semver-task-touch-collision-retrospective-fix-br073.md) | [BR-073](../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)
 - [x] **E02:S01:T21 – RW release commits test artifacts, deletes prior-build changelog, emits version typo (BR-074)** - ✅ COMPLETE (v0.2.1.21+1 — `.gitignore` exclusions, restored +1 changelog, patched +2 typo, Step 3 immutability guards, archive link validator, dual-source parity updated) — [Task doc](story-01-rw-agent-execution-and-docs/T21-rw-release-commits-test-artifacts-and-changelog-integrity-failures-br074.md) | [BR-074](../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
-- [x] **E02:S01:T22 – RW perpetual-task BUILD must persist in `version.py` (BR-075)** - ✅ COMPLETE (**v0.2.1.22+1** — perpetual BUILD validator; version-bump skill path) — [Task doc](story-01-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md) | [BR-075](../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md) | [IPP](../../../implementation-cycles/IPP-E02S01T22-rw-perpetual-version-py-build-br075.md)
+- [x] **E02:S01:T22 – RW perpetual-task BUILD must persist in `version.py` (BR-075)** - ✅ COMPLETE (**v0.2.1.22+1** — perpetual BUILD validator; version-bump skill path) — [Task doc](story-01-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md) | [BR-075](../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md) | [IPP](../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
 
 - [x] **E02:S01:T23 – Tool-agnostic workflow step tracking + persisted run logs** - ✅ COMPLETE (**v0.2.1.23+1**)
   - Task: [T23-tool-agnostic-workflow-step-tracking-and-runlogs.md](story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | [IPP](../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md) | [ADR-011](../../../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 
-- [x] **E02:S01:T24 – RW BUILD increment enforcement and release-tag immutability (BR-097)** - ✅ COMPLETE (**v0.2.1.24+1** — Step 2 resolver + tag immutability + agent contract) — [Task doc](story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) | [BR-097](../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [IPP](../../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
+- [x] **E02:S01:T24 – RW BUILD increment enforcement and release-tag immutability (BR-097)** - ✅ COMPLETE (**v0.2.1.24+1** — Step 2 resolver + tag immutability + agent contract) — [Task doc](story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) | [BR-097](../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [IPP](../../../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
 
 ---
 
@@ -318,8 +318,9 @@ All subsequent steps have been cancelled.
 
 ---
 
-### E02:S01:T06 – Fix changelog validator ordering bug 🔄 REOPENED {#E02S01T06--fix-changelog-validator-ordering-bug--reopened}
+<span id="e02s01t06--fix-changelog-validator-ordering-bug--reopened"></span>
 
+### E02:S01:T06 – Fix changelog validator ordering bug 🔄 REOPENED
 **Input:**  
 - **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../fr-br/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
 - Current `validate_changelog_format.py` implementation

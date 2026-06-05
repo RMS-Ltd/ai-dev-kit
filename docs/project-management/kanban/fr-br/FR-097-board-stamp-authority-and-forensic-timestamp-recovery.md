@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E02:S15:T08](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)
 
-**IPP:** [IPP-E02S15T08](../../../implementation-cycles/IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
+**IPP:** [IPP-E2S15T8](../../../implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
 **Reopens / gates closure of:**
 
@@ -133,7 +133,7 @@ New **`backfill_board_row_stamps.py`** (or subcommand):
 
 ## References
 
-- [kanban-governance-policy.md](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — Timestamp governance / evidence modes
-- [update_kanban_docs.py](../../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) — `_cleanup_fbuboard_active_rows`, `EVIDENCE_MODE_*`
-- [test_stamp_evidence_gate.py](../../../packages/frameworks/workflow-mgt/scripts/test_stamp_evidence_gate.py)
-- [validate_release_readiness.py](../../../packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py) — Gate 6 (extend, do not replace row-diff gate)
+- [kanban-governance-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) — Timestamp governance / evidence modes
+- [update_kanban_docs.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) — `_cleanup_fbuboard_active_rows`, `EVIDENCE_MODE_*`
+- [test_stamp_evidence_gate.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_stamp_evidence_gate.py)
+- [validate_release_readiness.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py) — Gate 6 (extend, do not replace row-diff gate)

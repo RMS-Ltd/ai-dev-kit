@@ -21,7 +21,7 @@ housekeeping_policy: keep
 **Publication Status:** NOT_APPLICABLE
 
 **Upstream:** [UXR-020 — Is `kboard.md` still necessary after task–FBU wiring?](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
-**IPP:** [IPP-E04S19T12-single-board-consolidation-uxr020.md](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
+**IPP:** [IPP-E4S19T12-single-board-consolidation-uxr020.md](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 ---
 
@@ -29,8 +29,8 @@ housekeeping_policy: keep
 
 - [UXR-020](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) research findings and user **R3** direction.
 - Live boards `kboard.md` (2026-06-05 snapshot).
-- [IPP-E04S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) phased implementation plan.
-- [ADR-018](../../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) (Wave 1).
+- [IPP-E4S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) phased implementation plan.
+- [ADR-018](../../../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) (Wave 1).
 
 ---
 
@@ -84,7 +84,7 @@ Operators report that keeping `kboard.md` in sync creates **unnecessary admin** 
 - [x] **AC2:** Live-board overlap/divergence documented with examples.
 - [x] **AC3:** Non-redundant fbuboard behaviours identified (verification-pending, taskless queue).
 - [x] **AC4:** User selects **R3** (full single-board).
-- [x] **AC5:** IPP linked ([IPP-E04S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)).
+- [x] **AC5:** IPP linked ([IPP-E4S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)).
 - [x] **AC6:** Wave 1 delivered (ADR-018, policy, board migration, fbuboard stub) via RW **v0.4.19.12+1**.
 - [x] **AC7:** Wave 2 validators/scripts + tests green (**v0.4.19.12+2**).
 - [x] **AC8:** Wave 3 framework templates + `rw-config` schema + adopter migration note (**v0.4.19.12+3**).

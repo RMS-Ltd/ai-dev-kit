@@ -10,7 +10,9 @@ housekeeping_policy: keep
 
 **Host Task:** [`T13-docusaurus-faster-package-alignment-br090.md`](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) **(E05:S09:T13)**  
 **Planning for:** [BR-090](../project-management/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)  
-**Status:** Approved
+**Status:** Revised — Wave 2 (build closure)
+
+> **IPW revision:** Wave 1 (`v0.5.9.13+1`) shipped `@docusaurus/faster@3.10.1` and aligned pins. Wave 2 closes **BR-090** via full build triage, BR-068 Strategy A link remediation, pytest T8–T11, and CI verification.
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-083. Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
 
@@ -59,7 +61,7 @@ Restore a green production Docusaurus build on CI and locally by satisfying Docu
 | ----------- | -------- |
 | RF1–RF3 | Bump all `@docusaurus/*` to 3.10.1; add `@docusaurus/faster@3.10.1`; regenerate lockfile |
 | RF4 | Local `npm ci && npm run build` exit 0 |
-| RF5–RF6 | CI build + deploy jobs green via existing [`docusaurus-build.yml`](../../.github/workflows/docusaurus-build.yml) |
+| RF5–RF6 | CI build + deploy jobs green via existing [`docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml) |
 | RF7 | `portal/README.md` documents faster requirement and Docusaurus 3.10.x |
 | RNF1 | `tests/test_portal_br090_faster_alignment.py` |
 | RNF3 | `future.v4: true` unchanged in config |
@@ -116,7 +118,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | T6 | README maintainer note | `portal/README.md` documents `@docusaurus/faster` requirement when `future.v4` is enabled | RF7 |
 | T7 | Optional integration | `test_portal_fr065_identity.py::test_fr065_s9_portal_production_build` with `PORTAL_BUILD_STRICT=1` (manual/CI optional) | RF4 |
 
-**Implementation:** [`tests/test_portal_br090_faster_alignment.py`](../../tests/test_portal_br090_faster_alignment.py).
+**Implementation:** [`tests/test_portal_br090_faster_alignment.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_br090_faster_alignment.py).
 
 ---
 
@@ -125,22 +127,22 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | Step | Action | Deliverable |
 | ---- | ------ | ----------- |
 | **1** | **[MANDATORY] Transition task `E05:S09:T13` status `TODO → IN PROGRESS`** in task doc. Update `Last updated` date. | Task doc `Status` = `IN PROGRESS` |
-| 2 | Edit [`portal/package.json`](../../portal/package.json): bump `@docusaurus/*` to **3.10.1**; add `@docusaurus/faster` | Updated manifest |
-| 3 | Run `cd portal && npm install` to regenerate [`portal/package-lock.json`](../../portal/package-lock.json) | Consistent lockfile |
+| 2 | Edit [`portal/package.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/package.json): bump `@docusaurus/*` to **3.10.1**; add `@docusaurus/faster` | Updated manifest |
+| 3 | Run `cd portal && npm install` to regenerate [`portal/package-lock.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/package-lock.json) | Consistent lockfile |
 | 4 | Verify `npm ci && npm run build` locally | Build exit 0 |
-| 5 | Add [`tests/test_portal_br090_faster_alignment.py`](../../tests/test_portal_br090_faster_alignment.py) (T1–T6) | Pytest green |
-| 6 | Update [`portal/README.md`](../../portal/README.md) — faster + 3.10.x install/build notes | RF7 |
+| 5 | Add [`tests/test_portal_br090_faster_alignment.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_br090_faster_alignment.py) (T1–T6) | Pytest green |
+| 6 | Update [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — faster + 3.10.x install/build notes | RF7 |
 | 7 | Update [BR-090](../project-management/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) deploy AC wording | BR hygiene |
 | 8 | Release via **`RW E05:S09:T13`** (version bump, changelog, Step 7 four-surface kanban) | Tagged release |
 | **N** | **[MANDATORY] Reconcile task `E05:S09:T13` status** to actual implementation state: `COMPLETE` + `✅ COMPLETE (v{version})` if all ACs satisfied; `IN PROGRESS` if ongoing; `BLOCKED` + reason if blocked. Update `Last updated`. | Task doc + kboard + fbuboard |
 
 ### 4.1 Files to create or modify
 
-- UPDATE: [`portal/package.json`](../../portal/package.json)
-- UPDATE: [`portal/package-lock.json`](../../portal/package-lock.json)
-- UPDATE: [`portal/README.md`](../../portal/README.md)
-- CREATE: [`tests/test_portal_br090_faster_alignment.py`](../../tests/test_portal_br090_faster_alignment.py)
-- CREATE: [`docs/implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md`](IPP-E05S09T13-docusaurus-faster-package-alignment.md)
+- UPDATE: [`portal/package.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/package.json)
+- UPDATE: [`portal/package-lock.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/package-lock.json)
+- UPDATE: [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md)
+- CREATE: [`tests/test_portal_br090_faster_alignment.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_br090_faster_alignment.py)
+- CREATE: [`docs/implementation-cycles/IPP-E5S9T13-docusaurus-faster-package-alignment.md`](IPP-E05S09T13-docusaurus-faster-package-alignment.md)
 - UPDATE: Host task T13 — IPP links; status transitions
 - UPDATE (RW Step 7): story checklist, `kboard.md`, BR-090
 
@@ -171,7 +173,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Proposed path (draft) | Purpose | Tied to (RF/T/impl step) |
 | ------ | --------------------- | ------- | ------------------------ |
-| D-C1 | `docs/implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md` | This IPP | IPW |
+| D-C1 | `docs/implementation-cycles/IPP-E5S9T13-docusaurus-faster-package-alignment.md` | This IPP | IPW |
 | D-C2 | `tests/test_portal_br090_faster_alignment.py` | Executable BR-090 contract | T1–T6; Step 5 |
 
 ### 5.3 Documentation gaps and explicit non-changes
@@ -189,7 +191,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md` | NOT_APPLICABLE | Planning artifact; not Docusaurus user doc | evergreen | T13 Input/References |
+| D-C1 | `docs/implementation-cycles/IPP-E5S9T13-docusaurus-faster-package-alignment.md` | NOT_APPLICABLE | Planning artifact; not Docusaurus user doc | evergreen | T13 Input/References |
 | D-U3 | `portal/README.md` | NOT_APPLICABLE | Repo-local maintainer doc | evergreen | Already linked from docs pillar |
 | D-C2 | `tests/test_portal_br090_faster_alignment.py` | NOT_APPLICABLE | Executable spec, not published doc | evergreen | IPP §3; BR-090 |
 
@@ -199,16 +201,109 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## 7. Success / verification criteria
 
-- [ ] IPP written with all §1–§7 sections; bidirectional task ↔ IPP links
-- [ ] `@docusaurus/faster@3.10.1` in package.json + lockfile
-- [ ] All `@docusaurus/*` portal deps at **3.10.1**
-- [ ] `npm ci && npm run build` green locally
-- [ ] `pytest tests/test_portal_br090_faster_alignment.py tests/test_portal_fr069_ci.py` green
-- [ ] Post-merge: GitHub Actions **Docusaurus site build** green on `main`
-- [ ] BR-090 deploy AC references merged workflow; BR status updated on RW verification
-- [ ] `future.v4: true` unchanged
-- [ ] RW E05:S09:T13 completes four-surface Step 7 reconciliation
-- [ ] All §5 UPDATE/CREATE items implemented or explicitly deferred with reason
+### 7.1 Wave 1 (shipped — v0.5.9.13+1)
+
+- [x] IPP written with all §1–§7 sections; bidirectional task ↔ IPP links
+- [x] `@docusaurus/faster@3.10.1` in package.json + lockfile
+- [x] All `@docusaurus/*` portal deps at **3.10.1**
+- [x] `pytest tests/test_portal_br090_faster_alignment.py` T1–T6 green
+- [x] `future.v4: true` unchanged
+- [x] BR-090 deploy AC references merged workflow
+- [ ] `npm ci && npm run build` green locally — **deferred to Wave 2** (MDX/link failures)
+- [ ] Post-merge: GitHub Actions **Docusaurus site build** green on `main` — **deferred to Wave 2**
+
+### 7.2 Wave 2 (build closure — target v0.5.9.13+2)
+
+- [x] Full build triage manifest recorded ([docusaurus-corpus-triage-fr-067.md](../maintenance/docusaurus-corpus-triage-fr-067.md))
+- [x] `npm run build` exit 0 locally after BR-068 Strategy A repairs
+- [x] `PORTAL_BUILD_STRICT=1` production build pytest green (T10)
+- [x] Pytest T1–T11 green
+- [ ] Post-merge Actions **Docusaurus site build** + **deploy** green on `main`
+- [ ] BR-090 → **FIXED** (pending CI); V-band pruned; T13 `✅ COMPLETE (v0.5.9.13+2)`
+
+---
+
+## 8. Wave 2 — MDX link remediation + CI verification (BR-090 build closure)
+
+### 8.1 Requirements (Wave 2)
+
+| ID | Requirement | Source |
+|----|-------------|--------|
+| RF8 | `cd portal && npm run build` exits **0** locally after link repairs | BR-090 AC; T13 AC |
+| RF9 | **Docusaurus site build** green on `main` post-merge | BR-090 AC; FR-069 |
+| RF10 | **deploy** job succeeds after green build | BR-090 AC (ADR-017) |
+| RF11 | Apply **BR-068 Strategy A** (GitHub `blob/main/` URLs) for all out-of-`docs/` relative targets in publish scope | T11; portal README |
+| RF12 | Record triage manifest (files + link classes) in maintenance doc | FR-067 triage pattern |
+
+| ID | Non-functional | Source |
+|----|----------------|--------|
+| RNF5 | Preserve `onBrokenLinks/MarkdownLinks/Anchors: 'throw'` — no config downgrade | FR-067; RNF4 |
+| RNF6 | Executable pytest guards for known out-of-plugin patterns | extends RNF1 |
+| RNF7 | `@docusaurus/faster` + 3.10.1 pins unchanged | Wave 1 deliverable |
+
+**Out of scope:** Docusaurus version bumps; removing `future.v4`; CI topology (T14); implementing `UKW -ad`.
+
+### 8.2 Specification (Wave 2)
+
+| Requirement | Delivery |
+| ----------- | -------- |
+| RF8–RF10 | Full corpus link/anchor triage; `npm run build` green; CI smoke on `main` |
+| RF11 | GitHub `blob/main/` URLs for `.claude/`, `.cursor/`, `.cursorrules`, `packages/`, `scripts/`, `src/`, `tests/` targets |
+| RF12 | Wave 2 row in [docusaurus-corpus-triage-fr-067.md](../maintenance/docusaurus-corpus-triage-fr-067.md) |
+| RNF6 | `tests/test_portal_br090_faster_alignment.py` T8–T11 |
+
+**Cross-note:** UXR-015 RNF2 satisfied for GitHub browsing; Docusaurus publish scope required Strategy A — document in BR-090 resolution.
+
+### 8.3 Test design (Wave 2)
+
+| ID | Behavior | Check | Covers |
+|----|----------|-------|--------|
+| T8 | Out-of-plugin relative ban | `docs/guides/workflow-initiation-cheatsheet.md` — no `](../../.claude/`, `](../../.cursorrules`, `](../../CLAUDE.md`, `](../../rw-config`, `](../../.cursor/` markdown targets | RF11 |
+| T9 | Strategy A presence | Cheatsheet deep-link table uses `github.com/RMS-Ltd/ai-dev-kit/blob/main/` for agent/command targets | RF11 |
+| T10 | Production build gate | `test_fr065_s9_portal_production_build` with `PORTAL_BUILD_STRICT=1` exits 0 | RF8; BR-090 AC |
+| T11 | Wave 1 regression | T1–T6 still pass | RNF7 |
+
+### 8.4 Implementation plan (Wave 2)
+
+| Step | Action | Deliverable |
+|------|--------|-------------|
+| **1** | Reopen T13: `COMPLETE` → `IN PROGRESS`; uncheck CI AC; link IPP §8 | T13 task doc |
+| 2 | Extend IPP with §8 Wave 2 | This document |
+| 3 | Run full build triage; write manifest | Triage doc / evidence |
+| 4 | Repair failing links (Strategy A) + anchor hygiene | `docs/**/*.md` |
+| 5 | Add pytest T8–T11 | `tests/test_portal_br090_faster_alignment.py` |
+| 6 | Verify: `pytest` + `PORTAL_BUILD_STRICT=1` | Local green |
+| 7 | **`RW E05:S09:T13 --art`** → **v0.5.9.13+2** | Changelog; Step 7 four-surface |
+| 8 | Post-merge: Actions build + deploy green on `main` | BR-090 evidence |
+| **N** | Reconcile T13 → `COMPLETE` + `✅ COMPLETE (v0.5.9.13+2)` when RF8–RF10 evidenced | Task, kboard, BR-090 |
+
+### 8.5 Documentation deliverables (Wave 2)
+
+| Doc | Action |
+|-----|--------|
+| IPP-E05S09T13 | UPDATE — §8 Wave 2 |
+| T13 task doc | UPDATE — status, AC, IPP §8 link |
+| BR-090 | UPDATE — resolution + Actions run IDs |
+| docusaurus-corpus-triage-fr-067.md | UPDATE — Wave 2 failure-class row |
+| workflow-initiation-cheatsheet.md | UPDATE — primary link repairs |
+| tests/test_portal_br090_faster_alignment.py | UPDATE — T8–T11 |
+| portal/docusaurus.config.js | NONE — strict throw preserved |
+
+### 8.6 ADR decision (Wave 2)
+
+**Outcome: EXEMPT** — implements existing BR-068 policy; reversible corpus edits only.
+
+### 8.7 Success criteria (Wave 2)
+
+- [x] IPP §8 Wave 2 written; task ↔ IPP bidirectional links current
+- [x] Full build triage manifest recorded
+- [x] `npm run build` exit 0 locally
+- [x] `PORTAL_BUILD_STRICT=1` production build pytest green
+- [x] Pytest T1–T11 green
+- [ ] Post-merge Actions run green on `main` (build + deploy)
+- [ ] BR-090 → **FIXED** (pending CI evidence)
+- [x] T13 forensic marker `✅ COMPLETE (v0.5.9.13+2)`
+- [x] `future.v4: true` and `@docusaurus/faster@3.10.1` unchanged
 
 ---
 

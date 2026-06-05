@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E02:S16:T06](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)  
 **Origin FR:** [FR-085](../../project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)  
-**Planning package:** [IPP-E02S16T06](../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
+**Planning package:** [IPP-E2S16T6](../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
 
 ---
 

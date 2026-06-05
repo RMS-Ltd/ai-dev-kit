@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** HIGH - planning/spec artifacts are assumed published but are not discoverable in the Docusaurus documentation system.  
 **Created:** 2026-04-14  
-**Last updated:** 2026-06-03 (E02:S15:T01 Phase 3 — `--audit-inventory` **0** unwired; see [IPP-E02S15T01-br066-corpus-tail-phase3.md](../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md))  
+**Last updated:** 2026-06-03 (E02:S15:T01 Phase 3 — `--audit-inventory` **0** unwired; see [IPP-E2S15T1-br066-corpus-tail-phase3.md](../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md))  
 **Version:** v0.2.15.1+3  
 **Code:** BR-066  
 **Implementing Task:** [E02:S15:T01](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
@@ -32,9 +32,9 @@ This creates a false-positive expectation that specifications are published/disc
 - IPW target: `E02:S01:T17` (FR-077)
 - Plan file: `~/.cursor/plans/ipw_e2s01t17_0af57720.plan.md`
 - Durable artifacts exist:
-  - `docs/implementation-cycles/ICW-E02S01T17-specification.md`
-  - `docs/implementation-cycles/ICW-E02S01T17-test-design.md`
-  - `docs/implementation-cycles/ICW-E02S01T17-implementation-plan.md`
+  - `docs/implementation-cycles/ICW-E2S1T17-specification.md`
+  - `docs/implementation-cycles/ICW-E2S1T17-test-design.md`
+  - `docs/implementation-cycles/ICW-E2S1T17-implementation-plan.md`
 - No corresponding Docusaurus filing/wiring was present for this IPW item at verification time.
 
 ---
@@ -104,7 +104,7 @@ When IPW indicates documentation filing responsibilities (especially spec artifa
 - [FR-042](FR-042-implementation-planning-workflow-ipw.md)
 - [FR-077](FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [E02:S01:T17](../epics/epic-02/story-01-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)
-- `docs/implementation-cycles/ICW-E02S01T17-*`
+- `docs/implementation-cycles/ICW-E2S1T17-*`
 
 
 ## Backfill Inventory and Phasing
@@ -117,7 +117,7 @@ When IPW indicates documentation filing responsibilities (especially spec artifa
 ## Release Evidence
 
 - Phase 3 closure (2026-06-03): `python ".../validate_ipw_publication_wiring.py" --audit-inventory` → **0** unwired (scanned 114).
-- Phase 2: `v0.2.15.1+2` — bulk audit mode, targeted backfill ([IPP-E02S15T01-br066-publication-backfill-phase2.md](../../../implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md)).
+- Phase 2: `v0.2.15.1+2` — bulk audit mode, targeted backfill ([IPP-E2S15T1-br066-publication-backfill-phase2.md](../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)).
 - Phase 1: `v0.2.15.1+1` (`v0.4.739+1` SemVer).
 - Deterministic validator: `validate_ipw_publication_wiring.py`.
 - Backfill inventory: [IPW-PUBLICATION-BACKFILL-INVENTORY.md](../../../implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md).

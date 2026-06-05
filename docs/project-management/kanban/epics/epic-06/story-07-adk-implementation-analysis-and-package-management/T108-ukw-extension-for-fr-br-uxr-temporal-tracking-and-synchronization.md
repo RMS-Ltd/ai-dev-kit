@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-13 (SUPERSEDED — re-housed to E02:S16:T07; Windsurf skill approach obsolete; FR-050 intent carried forward in Claude Code context)
 **Version:** v0.6.7.107+2  
 **Code:** E06:S07:T108
-**Superseded by:** [E02:S16:T07](../../../epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)
+**Superseded by:** [E02:S16:T07](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)
 **Associated FR:** [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
 
 ---

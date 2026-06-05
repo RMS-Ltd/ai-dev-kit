@@ -45,8 +45,8 @@ housekeeping_policy: keep
 ### 1.3 Invariants and boundaries
 
 - **Invariants:** GitHub Pages provider, `peaceiris/actions-gh-pages`, `publish_dir: ./portal/build`, path filters unchanged; FR-069 PR merge gate behavior preserved.
-- **In scope:** Merge deploy into [`docusaurus-build.yml`](../../.github/workflows/docusaurus-build.yml); retire duplicate `main` push on [`docusaurus-deploy.yml`](../../.github/workflows/docusaurus-deploy.yml); pytest + README + ADR.
-- **Out of scope:** Fixing underlying build breakage ([BR-090](docs/project-management/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) / E05:S09:T13); portal MDX / broken markdown links (blocks green build, not BR-093 structural ACs); changing path filters; hosting provider change; Docusaurus version upgrades.
+- **In scope:** Merge deploy into [`docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml); retire duplicate `main` push on [`docusaurus-deploy.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml); pytest + README + ADR.
+- **Out of scope:** Fixing underlying build breakage ([BR-090](../project-management/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) / E05:S09:T13); portal MDX / broken markdown links (blocks green build, not BR-093 structural ACs); changing path filters; hosting provider change; Docusaurus version upgrades.
 
 **Soft dependency:** E05:S09:T13 fixes chronic build failures; T14 is structurally independent but post-merge green-run verification is easier after T13.
 
@@ -118,7 +118,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | T7 | README topology | `portal/README.md` references merged workflow; documents one-build / deploy-skipped-on-failure | RF4 |
 | T8 | Manual smoke (post-merge) | Push to `main` → Actions: one npm build; deploy runs only on green | RF1–RF2 |
 
-**Implementation:** [`tests/test_portal_br093_ci_deduplication.py`](../../tests/test_portal_br093_ci_deduplication.py) (new) + updates to [`tests/test_portal_fr070_deployment.py`](../../tests/test_portal_fr070_deployment.py).
+**Implementation:** [`tests/test_portal_br093_ci_deduplication.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_br093_ci_deduplication.py) (new) + updates to [`tests/test_portal_fr070_deployment.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr070_deployment.py).
 
 ---
 
@@ -128,9 +128,9 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | ---- | ------ | ----------- |
 | **1** | **[MANDATORY] Transition task `E05:S09:T14` status `TODO → IN PROGRESS`** in task doc. Update `Last updated` date. | Task doc `Status` = `IN PROGRESS` |
 | 2 | Write [ADR-017](../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md) — Option 2 choice, artifact contract, PR vs main job matrix, FR-070 S7 supersession note | ADR file |
-| 3 | Extend [`docusaurus-build.yml`](../../.github/workflows/docusaurus-build.yml): `upload-artifact` on `build`; add `deploy` job with `needs`, `if`, `download-artifact`, `peaceiris`; add `workflow_dispatch`; `permissions: contents: write` on deploy job only | Merged workflow |
-| 4 | Remove duplicate push trigger — delete [`docusaurus-deploy.yml`](../../.github/workflows/docusaurus-deploy.yml) | No double-trigger on `main` |
-| 5 | Update [`portal/README.md`](../../portal/README.md) CI + Production hosting sections | RF4 |
+| 3 | Extend [`docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml): `upload-artifact` on `build`; add `deploy` job with `needs`, `if`, `download-artifact`, `peaceiris`; add `workflow_dispatch`; `permissions: contents: write` on deploy job only | Merged workflow |
+| 4 | Remove duplicate push trigger — delete [`docusaurus-deploy.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml) | No double-trigger on `main` |
+| 5 | Update [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) CI + Production hosting sections | RF4 |
 | 6 | Add/update pytest modules (T1–T7) | Green `pytest tests/test_portal_fr069_ci.py tests/test_portal_fr070_deployment.py tests/test_portal_br093_ci_deduplication.py` |
 | 7 | Update [BR-093](../project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) status when verified | BR closure prep |
 | 8 | Release via **`RW E05:S09:T14`** (version bump, changelog, Step 7 four-surface kanban) | `v0.5.9.14+1` |
@@ -138,13 +138,13 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ### 4.1 Files to create or modify
 
-- UPDATE: [`.github/workflows/docusaurus-build.yml`](../../.github/workflows/docusaurus-build.yml)
-- DELETE: [`.github/workflows/docusaurus-deploy.yml`](../../.github/workflows/docusaurus-deploy.yml)
+- UPDATE: [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)
+- DELETE: [`.github/workflows/docusaurus-deploy.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml)
 - CREATE: [`docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md`](../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)
-- UPDATE: [`portal/README.md`](../../portal/README.md)
-- CREATE: [`tests/test_portal_br093_ci_deduplication.py`](../../tests/test_portal_br093_ci_deduplication.py)
-- UPDATE: [`tests/test_portal_fr070_deployment.py`](../../tests/test_portal_fr070_deployment.py)
-- UPDATE (minimal): [`tests/test_portal_fr069_ci.py`](../../tests/test_portal_fr069_ci.py) if artifact step added to build job
+- UPDATE: [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md)
+- CREATE: [`tests/test_portal_br093_ci_deduplication.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_br093_ci_deduplication.py)
+- UPDATE: [`tests/test_portal_fr070_deployment.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr070_deployment.py)
+- UPDATE (minimal): [`tests/test_portal_fr069_ci.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr069_ci.py) if artifact step added to build job
 - UPDATE (RW Step 7): task doc, story checklist, `kboard.md`, BR-093
 
 ### 4.2 Dependency order
@@ -181,7 +181,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Proposed path (draft) | Purpose | Tied to (RF/T/impl step) |
 | ------ | --------------------- | ------- | ------------------------ |
-| D-C1 | `docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md` | This IPP | IPW |
+| D-C1 | `docs/implementation-cycles/IPP-E5S9T14-docusaurus-ci-workflow-deduplication.md` | This IPP | IPW |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md` | Topology decision (§2.5 REQUIRED) | Step 2 |
 | D-C3 | `tests/test_portal_br093_ci_deduplication.py` | Executable BR-093 contract | T1–T4; Step 6 |
 
@@ -199,7 +199,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md` | NOT_APPLICABLE | Planning artifact; not Docusaurus user doc | evergreen | T14 Input/References |
+| D-C1 | `docs/implementation-cycles/IPP-E5S9T14-docusaurus-ci-workflow-deduplication.md` | NOT_APPLICABLE | Planning artifact; not Docusaurus user doc | evergreen | T14 Input/References |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md` | PUBLISHED | — | evergreen | T14 References; IPP §2.5; FR-069/FR-070 cross-links |
 | D-C3 | `tests/test_portal_br093_ci_deduplication.py` | NOT_APPLICABLE | Executable spec, not published doc | evergreen | IPP §3; BR-093 |
 | D-U3 | `portal/README.md` | NOT_APPLICABLE | Repo-local maintainer doc | evergreen | Already linked from docs pillar |
@@ -279,7 +279,7 @@ Record outputs in [docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md]
 - [FR-069 — Docusaurus CI build gate](../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
 - [FR-070 — Docusaurus deployment and hosting](../project-management/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100)
-- [`.github/workflows/docusaurus-build.yml`](../../.github/workflows/docusaurus-build.yml)
+- [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)
 - [Wave 2 evidence](../maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md)
 - ~~`.github/workflows/docusaurus-deploy.yml`~~ — deleted Wave 1
 

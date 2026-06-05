@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Workflow Machinery Code Review Report — E07:S07:T01
 
-**Task:** [E07:S07:T01](./T01-comprehensive-workflow-machinery-code-review.md)  
+**Task:** [E07:S07:T01](T01-comprehensive-workflow-machinery-code-review.md)  
 **FR:** [FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)  
 **Review date:** 2026-06-03  
 **Package:** `packages/frameworks/workflow-mgt/`  
-**Inputs:** [E02:S13:T01](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md), [E02:S13:T08 sync report](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md), [IPP-E07S07T01](../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
+**Inputs:** [E02:S13:T01](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md), [E02:S13:T08 sync report](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md), [IPP-E7S7T1](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
 
 ---
 
@@ -92,8 +92,9 @@ The Workflow Management package is **functionally rich** (~107 production Python
 
 ---
 
-## 2. Expectations gap table (E02:S13:T01)
+<span id="2-expectations-gap-table-e02s13t01"></span>
 
+## 2. Expectations gap table (E02:S13:T01)
 | T01 expectation | Inventory status | Gap |
 | --------------- | ---------------- | --- |
 | RW 13-step process | Live spec + YAML + validators | **Met** (T08 sync); machinery adds Step 9.5/9.6/12.5 validators beyond original T01 Step 9 list |
@@ -141,7 +142,7 @@ The Workflow Management package is **functionally rich** (~107 production Python
 | E3 | **Fix README/T01 script paths** for `check_changelog_size.py` | Only exists under `scripts/changelog/` | Low | Medium |
 | E4 | **CI job: workflow script pytest** — run `validation/run_isolated_pytest.sh` + targeted `scripts/**/test_*.py` | CI only runs `build_all_packages.sh` | Medium | High — regression safety |
 | E5 | **Kanban module boundary doc** — when to use `update_kanban_docs.py` vs agent-only Step 7 vs UKW | Multiple IPPs reference overlapping behavior | Low | Medium |
-| E6 | **KB confidentia example sweep** — replace with `{project}` / rw-config placeholders in vwmp guides | 15+ `confidentia` references in KB | Low | Medium (adopter UX) |
+| E6 | **KB confidentia example sweep** — replace with `\{project\}` / rw-config placeholders in vwmp guides | 15+ `confidentia` references in KB | Low | Medium (adopter UX) |
 | E7 | **Audit packaging scripts** (`build_*`, `upload_*`) — document adopter-facing vs maintainer-only or move to dev-only | 6 root scripts, unclear in README | Low | Low |
 | E8 | **Consolidate RW Step 7 validators** — document relationship between `validate_rw_step7_completeness`, `validate_rw_step7_post_commit`, and `validate_release_readiness` Gate 5 | Three overlapping completeness checks | Medium | Medium |
 
@@ -198,8 +199,9 @@ The Workflow Management package is **functionally rich** (~107 production Python
 
 ---
 
-## 7. E02:S13 RC gate summary (feeds T05/T06)
+<span id="7-e02s13-rc-gate-summary-feeds-t05t06"></span>
 
+## 7. E02:S13 RC gate summary (feeds T05/T06)
 | RC theme (T05/T06) | Review outcome |
 | ------------------ | -------------- |
 | Component inventory mapped to expectations | **Partially ready** — this report provides inventory; T02 should formalize in gap log |
@@ -232,6 +234,6 @@ The Workflow Management package is **functionally rich** (~107 production Python
 
 ## References
 
-- [IPP-E07S07T01](../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
-- [code-review-standards-and-guidelines.md](../../../../architecture/standards-and-adrs/code-review-standards-and-guidelines.md)
-- [rw-trigger-dual-source-parity.md](../../../../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
+- [IPP-E7S7T1](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
+- [code-review-standards-and-guidelines.md](../../../../../architecture/standards-and-adrs/code-review-standards-and-guidelines.md)
+- [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)

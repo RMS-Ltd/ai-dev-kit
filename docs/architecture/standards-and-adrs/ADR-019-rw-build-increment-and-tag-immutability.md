@@ -36,5 +36,5 @@ RW agents reused tagged BUILD numbers and force-moved release tags when follow-o
 
 ## References
 
-- [IPP-E02S01T24](../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
+- [IPP-E2S1T24](../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
 - [RECOVERY_PROCEDURE.md](../../journals/RECOVERY_PROCEDURE.md) §4.3

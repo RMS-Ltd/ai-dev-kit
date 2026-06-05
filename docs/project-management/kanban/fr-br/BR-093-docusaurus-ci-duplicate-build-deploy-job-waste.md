@@ -13,17 +13,17 @@ housekeeping_policy: keep
 **Severity:** MEDIUM — Every qualifying push to **`main`** triggers **two** independent workflows that each run **`npm ci`** + **`npm run build`**; when build is broken, both fail (~91 deploy + ~97 build failures since May 2026).  
 **Status:** FIXED ✅  
 **Created:** 2026-06-05
-**Last updated:** 2026-06-05 — Wave 2 verification closure **v0.5.9.14+2** (structural + Actions evidence). See [evidence](../../maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md).
+**Last updated:** 2026-06-05 — Wave 2 verification closure **v0.5.9.14+2** (structural + Actions evidence). See [evidence](../../../maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md).
 **Version:** v0.5.9.14+2  
 **Implementing Task:** [E05:S09:T14](../epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) ✅ COMPLETE  
-**Planning:** [IPP-E05S09T14](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) · [ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)  
-**Related:** [BR-052](./BR-052-github-actions-workflow-optimization.md) (general GHA optimization) · [BR-090](./BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) (underlying build failure — fix separately first) · [FR-069](./FR-069-docusaurus-ci-build-gate.md) · [FR-070](./FR-070-docusaurus-deployment-and-hosting.md)
+**Planning:** [IPP-E5S9T14](../../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) · [ADR-017](../../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)  
+**Related:** [BR-052](BR-052-github-actions-workflow-optimization.md) (general GHA optimization) · [BR-090](BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) (underlying build failure — fix separately first) · [FR-069](FR-069-docusaurus-ci-build-gate.md) · [FR-070](FR-070-docusaurus-deployment-and-hosting.md)
 
 ---
 
 ## Summary
 
-**`.github/workflows/docusaurus-build.yml`** and **`.github/workflows/docusaurus-deploy.yml`** use the same path filters on `main` and each performs a full **`npm ci`** + **`npm run build`**. On build failure (e.g. [BR-090](./BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)), GitHub Actions burns **two jobs** and **~2× wall time** for the same error — a major contributor to **~303 wasted minutes** at **~84% failure rate**.
+**`.github/workflows/docusaurus-build.yml`** and **`.github/workflows/docusaurus-deploy.yml`** use the same path filters on `main` and each performs a full **`npm ci`** + **`npm run build`**. On build failure (e.g. [BR-090](BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)), GitHub Actions burns **two jobs** and **~2× wall time** for the same error — a major contributor to **~303 wasted minutes** at **~84% failure rate**.
 
 ---
 
@@ -48,7 +48,7 @@ Both workflows triggered by the same commit (e.g. `Merge branch 'dev' into main`
 
 - **~2× CI minutes** per failed portal/docs push to `main`.
 - Duplicate failure notifications and noisy Actions metrics.
-- Even after [BR-090](./BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) is fixed, structural duplication wastes minutes on every green run too.
+- Even after [BR-090](BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) is fixed, structural duplication wastes minutes on every green run too.
 
 ---
 

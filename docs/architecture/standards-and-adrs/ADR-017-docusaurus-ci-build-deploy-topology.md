@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Date:** 2026-06-05  
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E05:S09:T14](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)  
-**Planning package:** [IPP-E05S09T14](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)  
+**Planning package:** [IPP-E5S9T14](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)  
 **Related:** [BR-093](../../project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md), [FR-069](../../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md), [FR-070](../../project-management/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
 
 ---
@@ -38,7 +38,7 @@ Prior layout:
 
 ## Decision
 
-Adopt **Option 2** from BR-093 — extend [`.github/workflows/docusaurus-build.yml`](../../../.github/workflows/docusaurus-build.yml) with:
+Adopt **Option 2** from BR-093 — extend [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml) with:
 
 1. **`build` job** — unchanged FR-069 contract; adds `actions/upload-artifact@v4` for `portal/build`.
 2. **`deploy` job** — `needs: build`; `if:` for `main` push or `workflow_dispatch`; downloads artifact; `peaceiris/actions-gh-pages@v4` to `gh-pages`; **no** `npm ci` or `npm run build`.

@@ -31,23 +31,23 @@ Deliver [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governa
 
 **Problem:** Book-active governance policies are scattered across `rituals/policy/` and `architecture/standards-and-adrs/` with no single hub.
 
-**Solution:** Inventory-first rehousing per [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md); execute only after sign-off and IPW when needed.
+**Solution:** Inventory-first rehousing per [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md); execute only after sign-off and IPW when needed.
 
 ---
 
 ## Input
 
-Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E07S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md))
+Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E7S1T11-consolidate-governance-under-docs-governance.md`](../../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md))
 
 Publication N/A Reason: FR-042 consolidated IPP packages specification, test design, and implementation plan in one durable artifact under `docs/implementation-cycles/`; no separate ICW trio or Docusaurus publication required (BR-066).
 
-- **[IPP-E07S01T11](../../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md)** — specification, test design, implementation plan (IPW)
+- **[IPP-E7S1T11](../../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)** — specification, test design, implementation plan (IPW)
 - **[FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — requirements and acceptance criteria
-- **[GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)** — Phase 0 SoT (draft at intake)
-- [kanban-governance-policy.md](../../../../governance/kanban/kanban-governance-policy.md) (book SoT)
-- [docs/architecture/README.md](../../../../architecture/README.md)
-- [book-repo-adk-removal-inventory.md](../../../../maintenance/fr099-phase4-rewire-and-verify.md) — inventory methodology (FR-099)
-- **IPW planning artifact:** [`IPP-E07S01T11-consolidate-governance-under-docs-governance.md`](../../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md) (filed 2026-05-29)
+- **[GOVERNANCE-REHOUSING-INVENTORY.md](../../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)** — Phase 0 SoT (draft at intake)
+- [kanban-governance-policy.md](../../../../../governance/kanban/kanban-governance-policy.md) (book SoT)
+- [docs/architecture/README.md](../../../../../guides/README.md)
+- [book-repo-adk-removal-inventory.md](../../../../../maintenance/fr099-phase4-rewire-and-verify.md) — inventory methodology (FR-099)
+- **IPW planning artifact:** [`IPP-E7S1T11-consolidate-governance-under-docs-governance.md`](../../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (filed 2026-05-29)
 
 ---
 
@@ -55,8 +55,8 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 | Phase | Output |
 |-------|--------|
-| **0 — Inventory** | Completed [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) with maintainer sign-off |
-| **1 — IPW** | Optional `IPP-E07S01T11-*.md` if execution is multi-wave |
+| **0 — Inventory** | Completed [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) with maintainer sign-off |
+| **1 — IPW** | Optional `IPP-E7S1T11-*.md` if execution is multi-wave |
 | **2 — Execute** | `git mv` per inventory; stubs; sign-off table marked done |
 | **3 — Verify** | Legacy path `rg` clean or stub-only; `book-repo-docs-scope.md` updated |
 
@@ -67,7 +67,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 - [x] **AC0:** Inventory complete and **maintainer-approved** before any `git mv`.
 - [x] **AC1:** [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md) functional requirements satisfied (Waves A–F; framework KB paths deferred per IPP RNF3).
 - [x] **AC2:** IPP linked from this task when execution proceeds.
-- [x] **AC3:** [`docs/maintenance/book-repo-docs-scope.md`](../../../../maintenance/book-repo-docs-scope.md) lists `docs/governance/` as **KEEP**.
+- [x] **AC3:** [`docs/maintenance/book-repo-docs-scope.md`](../../../../../maintenance/book-repo-docs-scope.md) lists `docs/governance/` as **KEEP**.
 - [x] **AC4:** Active surfaces updated (`.cursorrules`, `.claude/commands/*`, `kanban-board-guide.md`); stubs at legacy paths.
 
 ✅ **COMPLETE (v0.7.1.11+8)** — FR-101 governance consolidation Waves 0–F.
@@ -120,7 +120,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 ## Related Work
 
 - [E7:S01: Codebase Maintenance Tasks](../story-01-codebase-maintenance-tasks.md)
-- [docs/governance/README.md](../../../../governance/README.md)
+- [docs/governance/README.md](../../../../../guides/README.md)
 
 ---
 
@@ -132,8 +132,8 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 ## References
 
-- [IPP-E07S01T11-consolidate-governance-under-docs-governance.md](../../../../implementation-cycles/IPP-E07S01T11-consolidate-governance-under-docs-governance.md)
-- [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
+- [IPP-E7S1T11-consolidate-governance-under-docs-governance.md](../../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
+- [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 
@@ -147,4 +147,4 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 ## Planning artifacts (publication)
 
-- [IPP-E7S01T11-consolidate-governance-under-docs-governance.md](../../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
+- [IPP-E7S1T11-consolidate-governance-under-docs-governance.md](../../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)

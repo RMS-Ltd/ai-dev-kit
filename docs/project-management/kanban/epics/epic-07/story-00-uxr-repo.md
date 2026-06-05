@@ -61,7 +61,7 @@ housekeeping_policy: keep
 
 **2026-05-30 (BR-076 / E04:S19:T10):** Story hollowed to E5:S00 model; registry pattern retired for new intake.
 
-**Previous state:** S00 hosted perpetual UXR repository tasks (`0.7.0.{task}+build`) with split registry + implementation coordinates.
+**Previous state:** S00 hosted perpetual UXR repository tasks (`0.7.0.\{task\}+build`) with split registry + implementation coordinates.
 
 ---
 
@@ -77,7 +77,7 @@ housekeeping_policy: keep
 ## References
 
 - **Epic 7:** [`epic-07.md`](epic-07.md)
-- **IPP:** [`IPP-E04S19T10`](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
+- **IPP:** [`IPP-E4S19T10`](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
 
 ---
 

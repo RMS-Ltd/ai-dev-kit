@@ -18,9 +18,9 @@ housekeeping_policy: keep
 **Version:** v0.5.9.12+3 (E05:S09:T12 — consolidation + coordinate remediation shipped)
 
 **Implementing Task:** [E05:S09:T12](../epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md)  
-**Planning package:** [IPP-E05S09T12](../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)
+**Planning package:** [IPP-E5S9T12](../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)
 
-**Related:** [UXR-013](UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md), [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [E05:S01:T39](../epics/epic-05/story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md), [FR-066](FR-066-docusaurus-canonical-docs-path.md), [portal/README.md](../../../portal/README.md) (Docusaurus pillar map), [IPP-E7S01T11](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (RNF3: no bulk archive path rewrites)
+**Related:** [UXR-013](UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md), [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md), [E05:S01:T39](../epics/epic-05/story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md), [FR-066](FR-066-docusaurus-canonical-docs-path-and-publish-scope.md), [portal/README.md](../../../guides/README.md) (Docusaurus pillar map), [IPP-E7S1T11](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (RNF3: no bulk archive path rewrites)
 
 ---
 
@@ -151,7 +151,7 @@ Framework integration examples use `docs/changelog` as a **generic adopter path*
 ## Next Steps
 
 - [x] Atomic intake: UXR-018 + task + board wiring (2026-06-04). **AC1** satisfied after remediation to **E05:S09:T12**.
-- [x] Run **IPW** — [IPP-E05S09T12](../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md).
+- [x] Run **IPW** — [IPP-E5S9T12](../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md).
 - [x] Implementation executed per IPP (2026-06-04); released **v0.5.9.12+2** / **v0.5.9.12+3** (**RW E05:S09:T12** — remediation **+3**).
 
 ---

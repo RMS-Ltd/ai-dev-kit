@@ -26,13 +26,13 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E05S09T14 — Docusaurus CI workflow deduplication](../../../../../../docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) (IPW planning package)
-- [ADR-017 — Docusaurus CI build/deploy topology](../../../../../../docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)
+- [IPP-E5S9T14 — Docusaurus CI workflow deduplication](../../../../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) (IPW planning package)
+- [ADR-017 — Docusaurus CI build/deploy topology](../../../../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)
 - [BR-093](../../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)
-- [`.github/workflows/docusaurus-build.yml`](../../../../../../.github/workflows/docusaurus-build.yml)
+- [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)
 - [FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md) · [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md)
 - [BR-090](../../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) — underlying build failures (orthogonal)
-- [Wave 2 evidence](../../../../../../docs/maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md)
+- [Wave 2 evidence](../../../../../maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md)
 
 ---
 
@@ -57,9 +57,9 @@ Eliminate duplicate **`npm ci` + `npm run build`** on `main` pushes:
 
 ## References
 
-- [IPP-E05S09T14 — Docusaurus CI workflow deduplication](../../../../../../docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)
-- [ADR-017 — Docusaurus CI build/deploy topology](../../../../../../docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)
+- [IPP-E5S9T14 — Docusaurus CI workflow deduplication](../../../../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)
+- [ADR-017 — Docusaurus CI build/deploy topology](../../../../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)
 - [BR-093](../../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)
 - [BR-052](../../../fr-br/BR-052-github-actions-workflow-optimization.md)
-- [E05:S09:T05 — CI build gate](./T05-ci-build-gate-fr069.md)
-- [E05:S09:T06 — Deployment](./T06-deployment-hosting-fr070.md)
+- [E05:S09:T05 — CI build gate](T05-docusaurus-ci-fr-069.md)
+- [E05:S09:T06 — Deployment](./T06-docusaurus-deployment-fr-070.md)

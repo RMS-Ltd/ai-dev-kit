@@ -50,8 +50,8 @@ housekeeping_policy: keep
 
 ## Acceptance Criteria
 
-- [x] Release archives place framework files under `{slug}/` (e.g. `workflow-mgt/README.md`)
-- [x] `install_package_from_release.py` leaves framework under `install_dir/{slug}/`
+- [x] Release archives place framework files under `\{slug\}/` (e.g. `workflow-mgt/README.md`)
+- [x] `install_package_from_release.py` leaves framework under `install_dir/\{slug\}/`
 - [x] Regression tests in `tests/test_framework_install_slug.py` pass
 - [ ] Adopter verification on Expenses Tracker (BR-087 — **failed** 2026-06-05; legacy `packages/frameworks/` names persist — [UXR-016 addendum](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md#addendum--framework-directories-still-use-legacy-names-2026-06-05))
 - [ ] Republished GitHub release tarballs with slug roots (maintainer follow-up)

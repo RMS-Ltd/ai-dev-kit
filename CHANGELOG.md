@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.13+2] - 05-06-26
+
+E05:S09:T13 — **BR-090 Wave 2:** Full Docusaurus build triage; BR-068 Strategy A link remediation; pytest T8–T11; local `npm run build` green. SemVer **v0.4.909+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+2.md)
+
+---
+
 ## [0.2.1.24+1] - 05-06-26
 
 E02:S01:T24 — **BR-097:** Step 2 `resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contracts, IPW/ADR-019. SemVer **v0.4.908+1**.

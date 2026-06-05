@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Consumer projects expect **hyphenated install slugs** (`workflow-mgt`, `numbering-versioning`, `tooling-automation`) per [package-management-design.md](../../architecture/standards-and-adrs/package-management-design.md). After updating AI Dev Kit, adopters still see **maintainer source tree names** (spaces and `&`) under `packages/frameworks/`, breaking copy-paste commands, quoting in shells, and alignment with `install_package_from_release.py` verification paths.
+Consumer projects expect **hyphenated install slugs** (`workflow-mgt`, `numbering-versioning`, `tooling-automation`) per [package-management-design.md](../../../architecture/standards-and-adrs/package-management-design.md). After updating AI Dev Kit, adopters still see **maintainer source tree names** (spaces and `&`) under `packages/frameworks/`, breaking copy-paste commands, quoting in shells, and alignment with `install_package_from_release.py` verification paths.
 
 ---
 
@@ -89,8 +89,8 @@ Then update `rw-config.yaml` `scripts_path` and any docs to use `packages/framew
 
 ## Acceptance criteria
 
-- [x] New release archives place framework files under `{slug}/` (e.g. `workflow-mgt/README.md`).
-- [x] `install_package_from_release.py` leaves framework under `install_dir/{slug}/`.
+- [x] New release archives place framework files under `\{slug\}/` (e.g. `workflow-mgt/README.md`).
+- [x] `install_package_from_release.py` leaves framework under `install_dir/\{slug\}/`.
 - [x] Regression tests for slug normalization, archive layout, and extract rename.
 - [ ] Expenses Tracker (or other adopter) confirms clean install / migration without space paths. **Failed 2026-06-05** — legacy names still present post-update (see [UXR-016 addendum](UXR-016-install-setup-interactive-feedback-external-semver-version.md#addendum--framework-directories-still-use-legacy-names-2026-06-05)).
 - [ ] Rebuilt GitHub release assets published with slug roots (maintainer release step).
@@ -117,5 +117,5 @@ Then update `rw-config.yaml` `scripts_path` and any docs to use `packages/framew
 - [E06:S09:T17](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) — Wave 1 (scripts)  
 - [UXR-016](UXR-016-install-setup-interactive-feedback-external-semver-version.md) — Install feedback addendum (path layout visibility)  
 - [FR-062](FR-062-github-release-installation-experience.md) — GitHub release install path  
-- [package-management-design.md](../../architecture/standards-and-adrs/package-management-design.md) — `{framework-name}/` convention  
-- [INSTALL_IN_YOUR_PROJECT.md](../../../../INSTALL_IN_YOUR_PROJECT.md) — submodule copy path (still documents legacy paths until doc sweep)
+- [package-management-design.md](../../../architecture/standards-and-adrs/package-management-design.md) — `{framework-name}/` convention  
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — submodule copy path (still documents legacy paths until doc sweep)

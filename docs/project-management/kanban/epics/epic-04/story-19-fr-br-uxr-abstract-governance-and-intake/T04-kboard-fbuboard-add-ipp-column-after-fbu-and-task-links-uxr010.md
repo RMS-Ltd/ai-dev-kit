@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Code:** E04S19T04
 
 **Upstream:** [UXR-010 - kboard add `IPP` column after FBU and task links](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
-**IPP:** [IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
+**IPP:** [IPP-E4S19T4-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
 
 ---
 
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 - [UXR-010](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) requirements.
 - Current row formats in `kboard.md`.
 - Existing planning artifact naming/placement conventions (`IPP-*` / legacy `IPW-*` where applicable).
-- [IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
+- [IPP-E4S19T4-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
 
 ---
 
@@ -76,4 +76,4 @@ Board rows currently do not consistently expose planning artifact presence after
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [kboard](../../../kboard.md)
 - [fbuboard](../../../kboard.md)
-- [IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
+- [IPP-E4S19T4-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)

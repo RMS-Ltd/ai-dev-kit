@@ -26,9 +26,9 @@ housekeeping_policy: keep
 
 Closure wave (**v0.5.1.46+7**) assumed collision-free `task_touch` RW tagging. Live registry again maps distinct internal releases to the same SemVer PATCH/core (see **FR-045** recurrence table). RW Step 11/12.5 and `v0.4.870` tag placement must be re-verified under **E03:S02:T12**.
 
-**Fix attempted (2026-06-04):** `validate_semver_registry_injective.py` + injective finalize; registry repair per [semver-registry-collision-repair-2026-06-04.md](../../maintenance/semver-registry-collision-repair-2026-06-04.md). Git tags not moved.
+**Fix attempted (2026-06-04):** `validate_semver_registry_injective.py` + injective finalize; registry repair per [semver-registry-collision-repair-2026-06-04.md](../../../maintenance/semver-registry-collision-repair-2026-06-04.md). Git tags not moved.
 
-**Verification (2026-06-05, wave 3):** RW boundary covered by regression tests; registry injective on live `dev`. Evidence: [semver-verification-evidence-E03S02T12-wave3.md](../../maintenance/semver-verification-evidence-E03S02T12-wave3.md). **Closed** via `RW E03:S02:T12 --art` **v0.3.2.12+5**.
+**Verification (2026-06-05, wave 3):** RW boundary covered by regression tests; registry injective on live `dev`. Evidence: [semver-verification-evidence-E03S02T12-wave3.md](../../../maintenance/semver-verification-evidence-E03S02T12-wave3.md). **Closed** via `RW E03:S02:T12 --art` **v0.3.2.12+5**.
 
 ---
 
@@ -218,7 +218,7 @@ Using SemVer tags with mandatory task-touch in dual-version mode ensures:
 
 ### Verification Evidence
 
-- Closure wave IPP: [`IPP-E05S01T46-fr046-closure-wave.md`](../../implementation-cycles/IPP-E05S01T46-fr046-closure-wave.md) §7 (requirement-to-evidence matrix).
+- Closure wave IPP: [`IPP-E5S1T46-fr046-closure-wave.md`](../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md) §7 (requirement-to-evidence matrix).
 - `python -m pytest "packages/frameworks/workflow-mgt/scripts/version/test_fr046_rw_tagging.py" "packages/frameworks/workflow-mgt/scripts/version/test_fr046_comprehensive.py" "packages/frameworks/workflow-mgt/scripts/version/test_task_touch_mapping.py" -q` → **24 passed** (2026-05-29).
 - `python -m pytest "packages/frameworks/workflow-mgt/scripts/version/test_create_github_release_parsing.py" -q` → **7 passed**.
 - `python "packages/frameworks/workflow-mgt/scripts/validation/validate_semver_tag_alignment.py"` → **✅ OK**.

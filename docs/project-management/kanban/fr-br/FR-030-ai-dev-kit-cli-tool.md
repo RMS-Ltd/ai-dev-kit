@@ -317,7 +317,7 @@ ai-dev-kit list --versions
 ## References
 
 - **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
-- **Story 2:** `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
+- **Story 2:** `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md`
 - **Task 4:** E06:S02:T04 (Build framework update CLI tool)
 - **Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
 - **Design:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md`

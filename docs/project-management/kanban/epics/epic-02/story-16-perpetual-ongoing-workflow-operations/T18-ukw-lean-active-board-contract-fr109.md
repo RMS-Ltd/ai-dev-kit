@@ -50,5 +50,5 @@ Ship **`validate_active_kanban_board.py`**, pre-commit + RW Gate 11, UKW dual-so
 ## References
 
 - [FR-109](../../../fr-br/FR-109-ukw-lean-active-board-contract.md)
-- [ukw-dual-source-parity.md](../../../../packages/frameworks/workflow-mgt/docs/ukw-dual-source-parity.md)
+- [ukw-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages%2Fframeworks%2Fworkflow-mgt%2Fdocs%2Fukw-dual-source-parity.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_active_kanban_board.py`

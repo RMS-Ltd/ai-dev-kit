@@ -142,7 +142,7 @@ Fix UKW (Update Kanban Workflow) board disorganization bug where epics are not s
 
 **Related Stories:**
 - [E6:S01: BR Repo](../story-01-br-repo.md) - Repository story
-- [E6:S06: ADK Implementation Analysis and Package Management](../../epic-06/story-06-adk-implementation-analysis-and-package-management.md)
+- [E6:S06: ADK Implementation Analysis and Package Management](../../epic-06/story-07-adk-implementation-analysis-and-package-management.md)
 
 ---
 

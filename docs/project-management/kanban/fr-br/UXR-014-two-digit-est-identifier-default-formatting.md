@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E04:S19:T09](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
 
-**Related:** [UXR-005](UXR-005-kanban-board-formatting-and-governance.md) (board formatting), [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (file naming hygiene), [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) (`Exx:Sxx:Txx` row contract), [task-naming-migration-guide.md](../../architecture/standards-and-adrs/task-naming-migration-guide.md)
+**Related:** [UXR-005](UXR-005-kanban-board-formatting-and-governance.md) (board formatting), [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (file naming hygiene), [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) (`Exx:Sxx:Txx` row contract), [task-naming-migration-guide.md](../../../architecture/standards-and-adrs/task-naming-migration-guide.md)
 
 ---
 
@@ -91,7 +91,7 @@ Concrete example: `kboard.md` metadata references **`E02:S16:T04`** (unpadded ta
 
 ## Recommendations
 
-- [x] **R1 — Canonical display rule:** Define normative inline form **`E{NN}:S{NN}:T{NN}`** where each `{NN}` is **two digits, zero-padded** when the numeric value is `<10`. Values `≥10` use natural width (no truncation): `E12:S16:T57`.
+- [x] **R1 — Canonical display rule:** Define normative inline form **`E\{NN\}:S\{NN\}:T\{NN\}`** where each `\{NN\}` is **two digits, zero-padded** when the numeric value is `<10`. Values `≥10` use natural width (no truncation): `E12:S16:T57`.
 - [x] **R2 — Write path default:** UKW, RW Step 7, intake agents, and board row templates **emit padded form by default** on all new/edited references.
 - [x] **R3 — Read path tolerance:** Parsers and validators **continue accepting** unpadded legacy input; optional `--strict-est-format` (or lint) for CI/hygiene passes.
 - [x] **R4 — Corpus normalization:** Scheduled hygiene pass on `kboard.md`, active task/story docs, and packaged templates (coordinate with UXR-005 spacing work where practical).
@@ -186,6 +186,6 @@ Perpetual tasks (**T101+**) retain three-digit task numbers; this UXR applies to
 
 ## References
 
-- [Kanban governance policy](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
-- [Task naming migration guide](../../architecture/standards-and-adrs/task-naming-migration-guide.md)
-- [Bidirectional wiring principle](../../governance/principles/bidirectional-wiring-principle.md)
+- [Kanban governance policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [Task naming migration guide](../../../architecture/standards-and-adrs/task-naming-migration-guide.md)
+- [Bidirectional wiring principle](../../../governance/principles/bidirectional-wiring-principle.md)

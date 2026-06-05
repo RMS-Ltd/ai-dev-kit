@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E02:S16:T12](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T12-ipw-adr-necessity-checklist-fr100.md) (v0.2.16.12+2)
 
-**Related:** [FR-042](./FR-042-implementation-planning-workflow-ipw.md), [FR-096](./FR-096-ipw-documentation-phases-update-create-and-housing.md), [FR-094](./FR-094-ipw-slash-command-and-task-state-transition-mandate.md), [ADR-004](../../../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md) (example of IPW-adjacent decision warranting ADR)
+**Related:** [FR-042](FR-042-implementation-planning-workflow-ipw.md), [FR-096](FR-096-ipw-documentation-phases-update-create-and-housing.md), [FR-094](FR-094-ipw-slash-command-and-task-state-transition-mandate.md), [ADR-004](../../../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md) (example of IPW-adjacent decision warranting ADR)
 
 ---
 
@@ -112,16 +112,16 @@ Optional (non-blocking): lightweight validator script or IPW Phase 9 checklist e
 
 ## Dependencies
 
-**Blocked By:** [FR-096](./FR-096-ipw-documentation-phases-update-create-and-housing.md) (COMPLETE — Phases 5–6 baseline)  
+**Blocked By:** [FR-096](FR-096-ipw-documentation-phases-update-create-and-housing.md) (COMPLETE — Phases 5–6 baseline)  
 **Blocks:** None  
-**Related:** [FR-042](./FR-042-implementation-planning-workflow-ipw.md), [ADR-004](../../../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md)
+**Related:** [FR-042](FR-042-implementation-planning-workflow-ipw.md), [ADR-004](../../../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md)
 
 ---
 
 ## References
 
-- [FR-042](./FR-042-implementation-planning-workflow-ipw.md)
-- [FR-096](./FR-096-ipw-documentation-phases-update-create-and-housing.md)
+- [FR-042](FR-042-implementation-planning-workflow-ipw.md)
+- [FR-096](FR-096-ipw-documentation-phases-update-create-and-housing.md)
 - [specification-and-planning-artifacts-policy.md](../../../architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md)
 - `.claude/commands/ipw.md`
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`

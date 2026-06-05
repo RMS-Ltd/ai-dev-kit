@@ -381,7 +381,7 @@ Available backends: git-submodule, git-subtree
 
 - **Framework Dependency Architecture:** `framework-dependency-architecture.md`
 - **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
-- **Story 2:** `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
+- **Story 2:** `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md`
 
 ---
 
