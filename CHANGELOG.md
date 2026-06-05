@@ -9,6 +9,22 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.8.5+2] - 05-06-26
+
+E04:S08:T05 — **RW Step 7:** kboard structure-prune for COMPLETE T05 (deferred from +1). SemVer **v0.4.923+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.8.5+2.md)
+
+---
+
+## [0.4.8.5+1] - 05-06-26
+
+E04:S08:T05 — **FR-009 AC-10:** Migration plan presenter module, NameError fix, pytest coverage. SemVer **v0.4.922+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.8.5+1.md)
+
+---
+
 ## [0.2.11.14+2] - 05-06-26
 
 E02:S11:T14 — **BR-052:** GHA workflow optimization — path filters + pip cache on active CI; BR-052 intake scope in disabled template. SemVer **v0.4.922+2**.

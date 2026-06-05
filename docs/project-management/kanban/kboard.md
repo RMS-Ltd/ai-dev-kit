@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW: E02:S11:T14)
-**Version:** v0.2.11.14+2
+**Last Updated:** 2026-06-05 (RW: E04:S08:T05)
+**Version:** v0.4.8.5+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -36,8 +36,6 @@ housekeeping_policy: keep
 ### Could Have (C) - Nice-to-Have Tasks
 
 - **E04:S11:T07** – FR-016: Kanban Granularity Discrete Task Docs - 🔄 IN PROGRESS (LOW, Wave 1 tooling shipped — pilot Wave 2 pending) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | Last modified: 2026-06-05 03:39 UTC
-
-- **E04:S08:T05** – FR-009: Intelligent Epic Matching AI-Assisted Canonical Adoption - 📋 TODO (LOW, AI-assisted epic matching for canonical adoption) | [Task](epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption.md) | [FR-009](fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md) | Last modified: 2026-04-09 00:00 UTC
 
 - **E04:S15:T05** – FR-029: Procedural Task Template Generation Hybrid Strategy - 📋 TODO (LOW, Hybrid strategy for task template generation) | [Task](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md) | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | Last modified: 2025-12-22 00:00 UTC
 
