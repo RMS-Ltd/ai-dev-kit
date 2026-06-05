@@ -13,7 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-04-27 (Wave 2 discoverability uplift: IPP cross-link parity and perpetual marker alignment)  
+**Last updated:** 2026-06-05 (v0.2.16.5+6 — Wave 2 link-depth hygiene; BR-068 guard green)  
+**Version Anchor:** v0.2.16.5+6  
 **Code:** E02S16T05
 **Task Type:** Perpetual Maintenance
 
@@ -65,6 +66,12 @@ Recurring markdown-only documentation maintenance is a distinct operational stre
 - [ ] **AC2:** Story 016 checklist includes this task as an active perpetual lane.
 - [ ] **AC3:** Scope boundaries with `E02:S16:T03` and `E02:S16:T04` are explicitly documented and unambiguous.
 - [ ] **AC4:** References are stable and suitable for ongoing attribution of markdown-only maintenance work.
+
+---
+
+## Progress
+
+**Wave 2 (2026-06-05):** Corrected relative markdown link depth across kanban task docs, implementation-cycle IPPs, ADR-020 related-links, and FR/BR surfaces left unstaged after E05:S09:T11 / E06:S09:T21 releases. Scope: path-only `../` corrections (no workflow script changes). Verification: `pytest tests/test_portal_br068_monorepo_links.py` — 2 passed.
 
 ---
 

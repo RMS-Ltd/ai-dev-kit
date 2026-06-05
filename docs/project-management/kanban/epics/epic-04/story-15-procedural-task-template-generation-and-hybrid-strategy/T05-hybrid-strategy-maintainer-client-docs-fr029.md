@@ -8,7 +8,7 @@
 FR-029 hybrid documentation and generator path integration.
 
 ## Input
-FR-029, generator scripts, [IPP](../../../../../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
+FR-029, generator scripts, [IPP](../../../../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
 
 ## Deliverable
 hybrid-task-template-guide.md, path fix, installer flag, kanban sync.

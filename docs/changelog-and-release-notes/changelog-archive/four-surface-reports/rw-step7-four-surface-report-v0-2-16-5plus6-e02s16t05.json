@@ -1,0 +1,55 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 5,
+    "task_id": "E02:S16:T05",
+    "version_string": "v0.2.16.5+6"
+  },
+  "surfaces": {
+    "task_doc": {
+      "surface": "task_doc",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md"
+      ],
+      "changes": [
+        "Version anchor v0.2.16.5+6",
+        "Wave 2 progress section"
+      ]
+    },
+    "kboard": {
+      "surface": "kboard",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "changes": [
+        "Board Version v0.2.16.5+6",
+        "T05 perpetual row release note + stamp"
+      ]
+    }
+  },
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "surface": "story_doc",
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
+      ],
+      "changes": [
+        "T05 tactical + checklist RW marker"
+      ]
+    }
+  },
+  "stamp_evidence": {
+    "E02:S16:T05": "RW v0.2.16.5+6 — task doc fingerprint delta"
+  },
+  "summary": {
+    "total_changes": 36,
+    "touched_surfaces": ["task_doc", "kboard", "story_doc"],
+    "notes": "36 markdown link-depth files + kanban reconciliation"
+  }
+}

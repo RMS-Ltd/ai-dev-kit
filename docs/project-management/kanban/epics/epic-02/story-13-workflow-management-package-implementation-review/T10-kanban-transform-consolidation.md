@@ -41,7 +41,7 @@ Also resolve **GAP-WFMGT-INTG-002 (M1)** — `rw-config.yaml` loader fragmentati
 ## Input
 
 - [E02:S13:T05 gap log](T05-create-gap-log-and-risk-assessment.md) — Gap 2 (GAP-WFMGT-INTG-001)
-- [E07:S07:T01 report §5 H3](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E07:S07:T01 report §5 H3](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [E02:S13:T06 RC sign-off](T06-define-rc-sign-off-criteria-and-remediation-tasks.md) — remediation package R2
 - [integration-alignment-report.md](integration-alignment-report.md)
 - [IPP-E02S13T10 plan](../../../../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md)
@@ -87,5 +87,5 @@ Also resolve **GAP-WFMGT-INTG-002 (M1)** — `rw-config.yaml` loader fragmentati
 - [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 - [IPP-E02S13T10 plan](../../../../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md)
 - [ADR-020: Kanban transform entrypoint + `rw_config_loader` unification](../../../../../architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md)
-- [KB: Kanban transform entrypoint boundary](../../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/kanban-transform-entrypoint-boundary.md)
-- [KB: `rw_config_loader` entrypoint boundary](../../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/rw-config-loader-entrypoint-boundary.md)
+- [KB: Kanban transform entrypoint boundary](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/kanban-transform-entrypoint-boundary.md)
+- [KB: `rw_config_loader` entrypoint boundary](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/rw-config-loader-entrypoint-boundary.md)

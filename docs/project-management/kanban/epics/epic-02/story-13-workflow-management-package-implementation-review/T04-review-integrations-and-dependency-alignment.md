@@ -50,10 +50,10 @@ Review whether the Workflow Management package (`packages/frameworks/workflow-mg
 - [T01 expectations baseline](T01-expectations-baseline.md) — §Integration Expectations
 - [T02 component inventory](component-inventory-map.md)
 - [T03 behavior validation report](workflow-behavior-validation-report.md) — D9, D11
-- [E07:S07:T01 code review report](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) — §Integration alignment, H3, M1
+- [E07:S07:T01 code review report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) — §Integration alignment, H3, M1
 - Package integration docs: `packages/frameworks/workflow-mgt/README.md`, `config/rw-config-schema.md`, `workflows/workflow-registry.yaml`
 - Live reference config: `rw-config.yaml` (project root)
-- [IPP-E02S13T04](../../../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
+- [IPP-E02S13T04](../../../../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
 
 ---
 
@@ -126,6 +126,6 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 
 - [Story 13 — Workflow Management Package Implementation Review](../story-13-workflow-management-package-implementation-review.md)
 - [Integration alignment report](integration-alignment-report.md)
-- [IPP-E02S13T04](../../../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
-- [framework-dependency-architecture.md](../../../../architecture/standards-and-adrs/framework-dependency-architecture.md)
-- [FR-098 — ECC optional harness layer](../../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [IPP-E02S13T04](../../../../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
+- [framework-dependency-architecture.md](../../../../../architecture/standards-and-adrs/framework-dependency-architecture.md)
+- [FR-098 — ECC optional harness layer](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)

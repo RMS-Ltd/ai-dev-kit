@@ -34,9 +34,9 @@ Inventory `packages/frameworks/workflow-mgt/` components and map them to the [T0
 ## Input
 
 - [T01 expectations baseline](T01-expectations-baseline.md)
-- [E07:S07:T01 code review report §1–2](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E07:S07:T01 code review report §1–2](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - Package root: `packages/frameworks/workflow-mgt/`
-- [IPP-E02S13T02](../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
+- [IPP-E02S13T02](../../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
 
 ---
 
@@ -82,11 +82,11 @@ Full tables: [component-inventory-map.md](component-inventory-map.md).
 
 ## References
 
-- [IPP-E02S13T02](../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
+- [IPP-E02S13T02](../../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
 - [Component inventory map](component-inventory-map.md)
 - [T01 expectations baseline](T01-expectations-baseline.md)
 - [Story 13](../story-13-workflow-management-package-implementation-review.md)
-- [E07:S07:T01 report](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E07:S07:T01 report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 
 ---
 

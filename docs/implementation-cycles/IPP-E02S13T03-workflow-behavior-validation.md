@@ -206,4 +206,4 @@ Seven validation domains in companion file: (1) RW, (2) UKW, (3) CMW, (4) Intake
 - [E07:S07:T01 report](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [E04:S16:T03 pattern](../project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T03-validate-kanban-behavior.md)
 - [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
+- [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)

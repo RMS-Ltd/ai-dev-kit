@@ -192,6 +192,6 @@ Companion `installation-paths-matrix.md` encodes RF1–RF3 as rows with canonica
 - [T01 task doc](../project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md)
 - [Story 14](../project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation.md)
 - [S13 component inventory §5](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
-- [INSTALL_IN_YOUR_PROJECT.md](../../INSTALL_IN_YOUR_PROJECT.md)
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 - [IPP-E02S13T02 pattern](IPP-E02S13T02-inventory-package-components-map.md)
 - [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Task:** [E02:S13:T03](T03-validate-workflow-behavior-against-documented-guidance.md)  
 **Expectations baseline:** [T01-expectations-baseline.md](T01-expectations-baseline.md)  
 **Component inventory:** [component-inventory-map.md](component-inventory-map.md)  
-**Code review input:** [E07:S07:T01 report §1–7](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
+**Code review input:** [E07:S07:T01 report §1–7](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
 **Doc sync baseline:** [T08 sync task](T08-sync-packaged-workflows-with-live-repo-implementation.md)  
 **Package root:** `packages/frameworks/workflow-mgt/`  
 **Validation date:** 2026-06-05
@@ -250,10 +250,10 @@ Status: ✅ OK (554 lines, threshold 1000)
 
 ## References
 
-- [IPP-E02S13T03](../../../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
+- [IPP-E02S13T03](../../../../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
 - [T03 task doc](T03-validate-workflow-behavior-against-documented-guidance.md)
 - [T01 expectations baseline](T01-expectations-baseline.md)
 - [T02 component inventory](component-inventory-map.md)
-- [E07:S07:T01 report](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
-- [rw-trigger-dual-source-parity.md](../../../../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
+- [E07:S07:T01 report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
 - [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)

@@ -3,7 +3,7 @@
 **Status:** ✅ COMPLETE (v0.2.11.13+2)
 **Last updated:** 2026-06-05 (RW **v0.2.11.13+3** — Step 7 kboard prune)
 ## Input
-- [IPP-E02S11T13](../../../../implementation-cycles/IPP-E02S11T13-github-actions-workflow-spam-emails.md)
+- [IPP-E02S11T13](../../../../../implementation-cycles/IPP-E02S11T13-github-actions-workflow-spam-emails.md)
 ## Acceptance criteria
 - [x] **AC1:** Root cause documented; workflow YAML updated.
 - [x] **AC2:** **BR-051** resolution + **Implementing Task** link.

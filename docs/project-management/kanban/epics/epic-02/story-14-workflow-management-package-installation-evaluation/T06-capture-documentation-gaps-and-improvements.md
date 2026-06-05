@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 **In scope (wave 1 — adopter SoT):**
 
-- Refresh [`INSTALL_IN_YOUR_PROJECT.md`](../../../../../../INSTALL_IN_YOUR_PROJECT.md) per T01 matrix known gaps affecting the install entry point
+- Refresh [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) per T01 matrix known gaps affecting the install entry point
 - Update resolution status in [`installation-paths-matrix.md`](installation-paths-matrix.md) §Known gaps
 
 **Out of scope (follow-on waves):**
@@ -52,7 +52,7 @@ housekeeping_policy: keep
 
 ## Deliverable
 
-1. Refreshed [`INSTALL_IN_YOUR_PROJECT.md`](../../../../../../INSTALL_IN_YOUR_PROJECT.md)
+1. Refreshed [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 2. Updated gap resolution table in [`installation-paths-matrix.md`](installation-paths-matrix.md)
 
 ---
@@ -99,7 +99,7 @@ housekeeping_policy: keep
 
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
-**Source Story:** [`story-14-workflow-management-package-installation-evaluation.md`](story-14-workflow-management-package-installation-evaluation.md)
+**Source Story:** [`story-14-workflow-management-package-installation-evaluation.md`](../story-14-workflow-management-package-installation-evaluation.md)
 
 ---
 
@@ -107,4 +107,4 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 
 - [installation-paths-matrix.md](installation-paths-matrix.md)
 - [T01 task doc](T01-enumerate-supported-installation-paths-for-workflow-manageme.md)
-- [INSTALL_IN_YOUR_PROJECT.md](../../../../../../INSTALL_IN_YOUR_PROJECT.md)
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

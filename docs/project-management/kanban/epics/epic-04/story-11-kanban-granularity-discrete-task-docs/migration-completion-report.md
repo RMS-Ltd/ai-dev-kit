@@ -152,7 +152,7 @@ Wave 2+ `generate_task_doc.py` output may retain `[To be filled during migration
 
 ## 9. References
 
-- [IPP E04:S11:T07](../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
+- [IPP E04:S11:T07](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
 - [Migration plan](migration-plan-embedded-to-discrete-tasks.md)
 - [FR-016](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
 - Tooling: `packages/frameworks/workflow-mgt/scripts/kanban/{validate_migration,migrate_story,extract_embedded_tasks}.py`

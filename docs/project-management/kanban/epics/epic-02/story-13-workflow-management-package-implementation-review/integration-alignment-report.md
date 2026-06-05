@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Expectations baseline:** [T01-expectations-baseline.md](T01-expectations-baseline.md) — §Integration Expectations  
 **Component inventory:** [component-inventory-map.md](component-inventory-map.md)  
 **Behavior validation input:** [workflow-behavior-validation-report.md](workflow-behavior-validation-report.md) — D9, D11  
-**Code review input:** [E07:S07:T01 report §Integration](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
+**Code review input:** [E07:S07:T01 report §Integration](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
 **Live reference config:** `rw-config.yaml` (project root)  
 **Package root:** `packages/frameworks/workflow-mgt/`  
 **Review date:** 2026-06-05
@@ -261,11 +261,11 @@ $ python .../validate_version_bump.py --strict --requested E02:S13:T04 --art
 
 ## References
 
-- [IPP-E02S13T04](../../../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
+- [IPP-E02S13T04](../../../../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
 - [T04 task doc](T04-review-integrations-and-dependency-alignment.md)
 - [T03 behavior validation](workflow-behavior-validation-report.md)
 - [T02 component inventory](component-inventory-map.md)
-- [rw-config-schema.md](../../../../../packages/frameworks/workflow-mgt/config/rw-config-schema.md)
-- [framework-dependency-architecture.md](../../../../architecture/standards-and-adrs/framework-dependency-architecture.md)
-- [FR-092](../../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
-- [FR-098](../../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [rw-config-schema.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/rw-config-schema.md)
+- [framework-dependency-architecture.md](../../../../../architecture/standards-and-adrs/framework-dependency-architecture.md)
+- [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)

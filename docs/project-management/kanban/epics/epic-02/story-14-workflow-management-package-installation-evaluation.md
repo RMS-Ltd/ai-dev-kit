@@ -23,7 +23,7 @@ housekeeping_policy: keep
 - [x] **E02:S14:T01 – Enumerate supported installation paths for Workflow Management** - ✅ COMPLETE (v0.2.14.1+1)
   - Task: [`T01-enumerate-supported-installation-paths-for-workflow-manageme`](story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md)
   - Matrix: [`installation-paths-matrix.md`](story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md)
-  - IPP: [`IPP-E02S14T01`](../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
+  - IPP: [`IPP-E02S14T01`](../../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
 - [ ] **E02:S14:T02 – Validate fresh install steps for each path** - TODO
   - Task: [`T02-validate-fresh-install-steps-for-each-path`](story-14-workflow-management-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md)
 - [ ] **E02:S14:T03 – Validate migration/update paths (if supported)** - TODO
@@ -71,4 +71,4 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 - Package: `packages/frameworks/workflow-mgt/`
 - Installation guides under `docs/documentation/user-docs/`.
 - [installation-paths-matrix.md](story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md) — T01 enumeration artefact
-- [IPP-E02S14T01](../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
+- [IPP-E02S14T01](../../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)

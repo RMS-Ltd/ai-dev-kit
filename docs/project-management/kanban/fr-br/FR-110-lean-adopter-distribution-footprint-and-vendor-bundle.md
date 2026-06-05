@@ -158,8 +158,8 @@ ai-dev-kit/                          # maintainer repo (full corpus)
 - [FR-081](FR-081-brownfield-modular-adopter-integration.md) — brownfield modular adoption
 - [FR-082](FR-082-installation-distribution-canonical-repo-alignment.md) — canonical repo coordinates
 - [FR-099](FR-099-spin-off-book-epic-to-private-repository.md) — book split clarifies what stays public
-- [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) — adoption policy anchor
-- [INSTALL_IN_YOUR_PROJECT.md](../../../INSTALL_IN_YOUR_PROJECT.md)
+- [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) — adoption policy anchor
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 
 **Blocked By:** None (investigation may proceed immediately).
 
@@ -193,5 +193,5 @@ The worth/complexity tradeoff is intentional: a **named directory adopters can p
 
 ## References
 
-- [INSTALL_IN_YOUR_PROJECT.md — submodule path](../../../INSTALL_IN_YOUR_PROJECT.md)
+- [INSTALL_IN_YOUR_PROJECT.md — submodule path](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 - [framework-dependency-installation-guide.md](../../../documentation/user-docs/framework-dependency-installation-guide.md)

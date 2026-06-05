@@ -25,7 +25,7 @@ Optimize active GitHub Actions workflows (runtime, caching, trigger scope) per B
 
 ## Input
 
-- [IPP-E02S11T14-github-actions-workflow-optimization.md](../../../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)
+- [IPP-E02S11T14-github-actions-workflow-optimization.md](../../../../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)
 - [BR-052](../../../fr-br/BR-052-github-actions-workflow-optimization.md)
 
 ## Deliverable
@@ -45,4 +45,4 @@ Optimize GitHub Actions workflows per **BR-052** (runtime, caching, trigger scop
 
 - [BR-052](../../../fr-br/BR-052-github-actions-workflow-optimization.md)
 - [BR-053](../../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)
-- [IPP-E02S11T14](../../../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)
+- [IPP-E02S11T14](../../../../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)

@@ -36,7 +36,7 @@ Verify and close **BR-007** (multiple Kanban package installation bugs) after im
 
 - [BR-007 — Multiple Bugs Kanban Package Installation](../../../fr-br/BR-007-multiple-bugs-kanban-package-installation.md)
 - [Story 9 checklist](../story-09-bug-fixes-and-agentic-intelligence.md) — T01–T04 marked COMPLETE
-- [IPP-E04S09T01](../../../../implementation-cycles/IPP-E04S09T01-br007-kanban-package-installation.md)
+- [IPP-E04S09T01](../../../../../implementation-cycles/IPP-E04S09T01-br007-kanban-package-installation.md)
 - Framework scripts under `packages/frameworks/kanban/scripts/`
 
 ---
@@ -86,7 +86,7 @@ Verify and close **BR-007** (multiple Kanban package installation bugs) after im
 
 ## References
 
-- [IPP-E04S09T01 — BR-007 verification and closure](../../../../implementation-cycles/IPP-E04S09T01-br007-kanban-package-installation.md)
+- [IPP-E04S09T01 — BR-007 verification and closure](../../../../../implementation-cycles/IPP-E04S09T01-br007-kanban-package-installation.md)
 - [BR-007](../../../fr-br/BR-007-multiple-bugs-kanban-package-installation.md)
 - [UXR-004](../../../fr-br/UXR-004-kanban-package-installation-uat.md)
 - [Story 9](../story-09-bug-fixes-and-agentic-intelligence.md)

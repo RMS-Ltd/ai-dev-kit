@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Status:** IMPLEMENTED (v0.5.1.44+1 — pending user verification)  
 
 **Implementing Task:** [E05:S01:T44](../epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)  
-**Planning:** [IPP-E05S01T44](../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md)  
+**Planning:** [IPP-E05S01T44](../../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md)  
 **Historical registry:** E05:S01:T44
 
 ---

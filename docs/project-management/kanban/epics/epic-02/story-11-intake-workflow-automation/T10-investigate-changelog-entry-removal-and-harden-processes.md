@@ -51,7 +51,7 @@ housekeeping_policy: keep
 - [x] RW documentation updated with protection guidelines
 - [x] Prevention mechanisms validated
 
-**Task Document:** [`Task-010-Investigate-CHANGELOG-Entry-Removal-and-Harden-Processes.md`](story-11-intake-workflow-automation/Task-010-Investigate-CHANGELOG-Entry-Removal-and-Harden-Processes.md)
+**Task Document:** [`T10-investigate-changelog-entry-removal-and-harden-processes.md`](T10-investigate-changelog-entry-removal-and-harden-processes.md)
 
 ---
 

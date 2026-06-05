@@ -250,6 +250,6 @@ Wave 0 (catalog) → Wave 1 (tooling + T1–T8)
 - [Migration plan](../project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md)
 - [ICW-E4S11T07 specification](ICW-E4S11T07-specification.md) *(retrospective; folded into this IPP)*
 - [dev-kit-ipw-ipp-vs-icw-artifacts.md](../governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md)
-- [TASK_TEMPLATE.md](../../../packages/frameworks/kanban/templates/TASK_TEMPLATE.md)
-- [FR-017](../project-management/kanban/fr-br/FR-017-versioning-policy-doc-init-build-zero.md) — doc-init for new Task docs
+- [TASK_TEMPLATE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/TASK_TEMPLATE.md)
+- [FR-017](../project-management/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md) — doc-init for new Task docs
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
