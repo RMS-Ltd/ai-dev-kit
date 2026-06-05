@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Story 009 – AI Dev Kit installation and adopter integration
 
-**Status:** 🔄 IN PROGRESS (T23 open — UXR-021 GitHub Packages delivery)
+**Status:** 🔄 IN PROGRESS (T24 open — FR-111 acquisition ADK error codes)
 **Completed:** —
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-05 (v0.6.9.23+3 – T23 post-ship CI fix)
-**Version:** v0.6.9.23+3
+**Last updated:** 2026-06-05 (v0.6.9.24+1 – T24 kanban init / FR-111 intake)
+**Version:** v0.6.9.24+1
 **Code:** E6S09
 
 ---
@@ -77,6 +77,8 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T23 – Greenfield lean tree GitHub Packages delivery (UXR-021)** - ✅ COMPLETE (**v0.6.9.23+3** — GHCR + FR-110-F5 tarball; ADR-021; Linux drift + release workflow fix) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [IPP-E06S09T23](../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
 
+- [ ] **E06:S09:T24 – Acquisition-layer ADK error codes (FR-111)** - 📋 TODO (MEDIUM — kanban init **v0.6.9.24+1**; IPW gate before implementation) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) | [FR-111](../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
+
 ---
 
 ## Overview
@@ -99,5 +101,5 @@ Work is tracked in **Epic 6** because this is **framework distribution and adopt
 ## Related
 
 - [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [FR-080](../../fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) · [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md) · [FR-108](../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md) · [FR-110](../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-080](../../fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) · [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md) · [FR-108](../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md) · [FR-110](../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [FR-111](../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

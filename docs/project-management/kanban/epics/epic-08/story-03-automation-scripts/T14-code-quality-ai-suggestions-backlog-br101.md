@@ -27,6 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
+- [IPP-E08S03T14](../../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 - [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
 - [Security & quality dashboard](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) — AI suggestions panel
 - [E08:S03:T12](T12-code-quality-maintainability-backlog-br099.md) · [E08:S03:T13](T13-code-quality-reliability-backlog-br100.md) (dedupe overlaps)
@@ -52,6 +53,7 @@ Publication Status: NOT_APPLICABLE
 
 ## References
 
+- [IPP-E08S03T14](../../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 - [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
