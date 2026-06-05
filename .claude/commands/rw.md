@@ -259,9 +259,14 @@ Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to deter
 
 ### Step 12 — Push to Remote
 
+**🚨 FORBIDDEN:** `git push origin {branch} --tags` — pushes every local tag; divergent stale SemVer tags cause false push failures.
+
 ```bash
-git push origin {branch} --tags
+python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" \
+  --branch "{branch}" --internal-version "{internal_version}"
 ```
+
+Manual: push branch, then `git push origin refs/tags/v{internal}` (+ SemVer-core tag in task-touch mode). Never `--tags`.
 
 ### Step 12.5 — GitHub Release
 

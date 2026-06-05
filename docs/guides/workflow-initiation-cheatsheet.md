@@ -46,6 +46,8 @@ housekeeping_policy: keep
 
 **Same-task follow-on release (BR-097):** Default is **BUILD +1** (`RW E02:S16:T15 --art`). Never reuse a tagged BUILD; never `git tag -f` on release tags — bump BUILD and re-RW instead.
 
+**Step 12 push:** Never `git push origin {branch} --tags` (pushes *all* local tags → false failures from stale SemVer tags). Use `push_rw_release.py` or push `refs/tags/v{release}` explicitly. Sync local tags: `git fetch origin --tags --force`.
+
 | | |
 | --- | --- |
 | **Prerequisites** | Tool/bash access; on correct epic branch; task token in message |
