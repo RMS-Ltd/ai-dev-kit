@@ -9,13 +9,13 @@ housekeeping_policy: keep
 # Epic 5, Story 9, Task 11: Monorepo cross-root Markdown link resolution (**BR-068**)
 
 **Task ID:** E05:S09:T11  
-**Status:** COMPLETE (**v0.5.9.11+5** — **RW** **`--art`** Waves **3–4**)  
+**Status:** COMPLETE (**v0.5.9.11+6** — **RW** **`--art`** Wave 5)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium–Large (policy + corpus and/or plugin boundary changes)  
 **Created:** 2026-04-19  
-**Last updated:** 2026-04-19 (**v0.5.9.11+5** — **RW** **`--art`** Wave 4 **BR-068** closure + traceability; prior **v0.5.9.11+4** Wave 3)  
+**Last updated:** 2026-06-05 (**v0.5.9.11+6** — Wave 5 canonical IPP + pytest guard + straggler repairs)  
 **Code:** E05S09T11  
-**Version anchor:** v0.5.9.11+5 (**BR-068** **`COMPLETE`**; IPW §4 satisfied)  
+**Version anchor:** v0.5.9.11+6 (**BR-068** enforcement; IPP §7.2 satisfied)  
 
 **Origin:** **[BR-068](../../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** — strict MDX resolution (`onBrokenMarkdownLinks: 'throw'`) fails on relative links from `docs/` to repository paths outside the `@docusaurus/plugin-content-docs` root (`../docs`), including **`INSTALL_IN_YOUR_PROJECT.md`** (repo root) and **`packages/frameworks/...`**.
 
@@ -23,12 +23,14 @@ housekeeping_policy: keep
 
 ## Progress
 
-- **2026-04-19 — Wave 1 (policy lock):** **[IPW §1.5](../../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)** locked **Strategy A** (GitHub blob URLs + optional stubs; rejects B/C as blanket approaches). Contributor rules landed in **[portal/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md#br-068-monorepo-links-outside-the-docs-plugin-E05S09T11)** and **[docusaurus-corpus-triage-fr-067.md](../../../../../maintenance/docusaurus-corpus-triage-fr-067.md)** (**Failure classes** row).
+- **2026-04-19 — Wave 1 (policy lock):** **[IPP §1.4](../../../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)** locked **Strategy A** (GitHub blob URLs + optional stubs; rejects B/C as blanket approaches). Contributor rules landed in **[portal/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md#br-068-monorepo-links-outside-the-docs-plugin-E05S09T11)** and **[docusaurus-corpus-triage-fr-067.md](../../../../../maintenance/docusaurus-corpus-triage-fr-067.md)** (**Failure classes** row).
 - **2026-04-19 — Wave 2 (corpus):** BR-068 sweep — repaired Kanban/Epic/story/task relatives, **`fr-br`** / ICW / IPW targets, ADR traversal into **`project-management`**, MDX-safe placeholders (**`specification-and-planning-artifacts-policy`**), Strategy A URLs for paths outside the docs plugin (`docs/` tree, **`.cursorrules`**, **`user-docs`** tree). Verification: **`cd portal && npm run build`** exit **0**.
 
 - **2026-04-19 — Wave 3 (verification — TD1–TD3):** **TD1:** `cd portal && npm run build` → **SUCCESS** (strict **`onBrokenLinks`** / **`onBrokenMarkdownLinks`** / **`onBrokenAnchors`** unchanged). **TD2:** Spot-checked Strategy A targets vs BR-068 failure classes — **`INSTALL_IN_YOUR_PROJECT.md`** (**`docs/documentation/user-docs/install-receipt-reference.md`**, **`ADR-003`**), **`packages/frameworks/**`** (**`docs/implementation-cycles/IPW-E6S7T103-release-workflow-maintenance-perpetual.md`**, Kanban tasks already on GitHub **`blob`** URLs). **TD3:** No intentional internal corpus relaxations; regression covered by successive green strict builds since Wave 2.
 
-- **2026-04-19 — Wave 4 (traceability):** **[BR-068](../../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** **`Status: COMPLETE`** + **Resolution** + acceptance criteria checked; **[IPW](../../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)** §4 success criteria satisfied; **`fr-br-uxr-board`** hygiene (row retired to **`fr-br-uxr-completed`**).
+- **2026-04-19 — Wave 4 (traceability):** **[BR-068](../../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** **`Status: COMPLETE`** + **Resolution** + acceptance criteria checked; legacy IPW §4 success criteria satisfied; **`fr-br-uxr-board`** hygiene (row retired to **`fr-br-uxr-completed`**). Release **`v0.5.9.11+5`**.
+
+- **2026-06-05 — Wave 5 (governance + regression guard):** Canonical **[IPP-E05S09T11](../../../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)**; **`tests/test_portal_br068_monorepo_links.py`** publish-scope guard; Strategy A straggler repairs; triage doc Wave 5 row. Release **`v0.5.9.11+6`**.
 
 ---
 
@@ -42,11 +44,12 @@ housekeeping_policy: keep
 
 ## Input
 
-- **[IPW – spec, tests, implementation plan](../../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)** (**E05:S09:T11** / **BR-068**)
+- **[IPP — spec, tests, implementation plan](../../../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)** (**E05:S09:T11** / **BR-068**)
 - [BR-068](../../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)
 - [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — strict mode intent; T08/T10 follow-ups
 - [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js)
 - [`docs/maintenance/docusaurus-corpus-triage-fr-067.md`](../../../../../maintenance/docusaurus-corpus-triage-fr-067.md) — failure classes (update when policy is chosen)
+- [Legacy IPW (deprecated)](../../../../../implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)
 
 ---
 
@@ -55,21 +58,24 @@ housekeeping_policy: keep
 - **`npm run build`** (from `portal/`) exits **0** with strict hooks unchanged **or** an explicit, documented adjustment to strictness tied to an approved strategy.
 - **Contributor-facing rule** for links to repo root `INSTALL_*`, `packages/**`, and similar — recorded in `portal/README.md` and/or maintenance doc.
 - PR-sized verification: representative pages that previously failed MDX (INSTALL pointers; framework paths from Kanban/FR docs) behave per policy.
+- **Wave 5:** Repo-wide pytest guard (`test_portal_br068_monorepo_links.py`) for publish-scope out-of-plugin relative links.
 
 ---
 
 ## Acceptance Criteria
 
-- [x] BR-068 acceptance criteria satisfied (cross-check list in report).
-- [x] No unexplained regression in **internal** link/anchor strictness vs FR-067 policy (document any intentional relaxation).
+- [x] BR-068 acceptance criteria satisfied (cross-check list in report) — Waves 1–4.
+- [x] No unexplained regression in **internal** link/anchor strictness vs FR-067 policy (document any intentional relaxation) — Waves 1–4.
+- [x] Wave 5: canonical IPP wired; pytest T1–T2 green; stragglers repaired; **`RW E05:S09:T11 --art`** shipped (**`v0.5.9.11+6`**).
 
 ---
 
 ## References
 
-- [IPW-E5S9T11](../../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
+- [IPP-E05S09T11](../../../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+- [Legacy IPW-E5S09T11 (deprecated)](../../../../../implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)
 - Docusaurus: [Markdown links](https://docusaurus.io/docs/markdown-features/links), [Multiple docs plugins](https://docusaurus.io/docs/docs-multi-instance/) (if considering split roots)
 
 ## Planning artifacts (publication)
 
-- [IPW-E5S9T11-docusaurus-monorepo-markdown-links-br068.md](../../../../../implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)
+- [IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md](../../../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md) — **PUBLISHED** (`implementation-cycles/` sidebar)

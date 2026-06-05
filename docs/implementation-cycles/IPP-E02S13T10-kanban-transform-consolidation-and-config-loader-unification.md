@@ -216,5 +216,5 @@ The specification defines (1) the transform entrypoint contract as the canonical
 - [T05-create-gap-log-and-risk-assessment (GAP-WFMGT-INTG-001/002)](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [T04 integration alignment report](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
 - [FR-092 canonical RW/UKW kanban consistency program](../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
-- [`apply_canonical_row_transform_pipeline` implementation](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py)
+- [`apply_canonical_row_transform_pipeline` implementation](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py)
 

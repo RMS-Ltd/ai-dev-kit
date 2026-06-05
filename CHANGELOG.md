@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.11+6] - 05-06-26
+
+E05:S09:T11 — **BR-068 Wave 5:** canonical IPP, publish-scope pytest guard for out-of-plugin links, Strategy A straggler repairs. SemVer **v0.4.953+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.11+6.md)
+
+---
+
 ## [0.6.9.21+4] - 05-06-26
 
 E06:S09:T21 — **Lean adopter distribution footprint (FR-110):** `greenfield-install/` tree, sync script, CI drift guard, install smoke. SemVer **v0.4.952+4**.

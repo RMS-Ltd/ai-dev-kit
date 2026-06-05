@@ -208,12 +208,12 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 
 | Script | Repository path | Role |
 |--------|-----------------|------|
-| `extract_embedded_tasks.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/extract_embedded_tasks.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/extract_embedded_tasks.py) | Parse embedded task sections |
-| `generate_task_doc.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/generate_task_doc.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/generate_task_doc.py) | Generate discrete `T*.md` |
-| `update_story_refs.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/update_story_refs.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/update_story_refs.py) | Checklist links + strip embedded bodies |
-| `migrate_story.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/migrate_story.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/migrate_story.py) | Orchestrator (Wave 2–3 rollout) |
-| `validate_migration.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/validate_migration.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/validate_migration.py) | Post-migration validation |
-| `test_migrate_embedded_tasks.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/test_migrate_embedded_tasks.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/kanban/test_migrate_embedded_tasks.py) | Tests T1–T12 |
+| `extract_embedded_tasks.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/extract_embedded_tasks.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/extract_embedded_tasks.py) | Parse embedded task sections |
+| `generate_task_doc.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/generate_task_doc.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/generate_task_doc.py) | Generate discrete `T*.md` |
+| `update_story_refs.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/update_story_refs.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/update_story_refs.py) | Checklist links + strip embedded bodies |
+| `migrate_story.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/migrate_story.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/migrate_story.py) | Orchestrator (Wave 2–3 rollout) |
+| `validate_migration.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/validate_migration.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/validate_migration.py) | Post-migration validation |
+| `test_migrate_embedded_tasks.py` | [`packages/frameworks/workflow-mgt/scripts/kanban/test_migrate_embedded_tasks.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/test_migrate_embedded_tasks.py) | Tests T1–T12 |
 
 **Operator guide:** [migration-guide.md](migration-guide.md)
 
