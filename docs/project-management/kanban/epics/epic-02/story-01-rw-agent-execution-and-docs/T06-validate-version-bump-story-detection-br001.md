@@ -29,7 +29,7 @@ Fix `validate_version_bump.py` `find_story_file()` Epic/Story auto-detection: us
 ## Input
 
 - [BR-001](../../../fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)
-- [IPP-E02S01T06](../../../../implementation-cycles/IPP-E02S01T06-validate-version-bump-story-detection-br001.md)
+- [IPP-E02S01T06](../../../../../implementation-cycles/IPP-E02S01T06-validate-version-bump-story-detection-br001.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 
 ---

@@ -45,8 +45,8 @@ Validate that `packages/frameworks/workflow-mgt/` **runtime and documented behav
 - [T01 expectations baseline](T01-expectations-baseline.md)
 - [T02 component inventory](component-inventory-map.md)
 - [T08 sync task](T08-sync-packaged-workflows-with-live-repo-implementation.md)
-- [E07:S07:T01 machinery review report](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
-- [IPP-E02S13T03](../../../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
+- [E07:S07:T01 machinery review report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [IPP-E02S13T03](../../../../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
 - Live spec: `.cursorrules`, `.claude/commands/rw.md`, `packages/frameworks/workflow-mgt/`
 
 ---
@@ -114,11 +114,11 @@ Full matrix: [workflow-behavior-validation-report.md](workflow-behavior-validati
 
 ## References
 
-- [IPP-E02S13T03](../../../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
+- [IPP-E02S13T03](../../../../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
 - [Workflow behavior validation report](workflow-behavior-validation-report.md)
 - [T01 expectations baseline](T01-expectations-baseline.md)
 - [T02 component inventory](component-inventory-map.md)
-- [E07:S07:T01 report](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E07:S07:T01 report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [Story 13](../story-13-workflow-management-package-implementation-review.md)
 
 ---

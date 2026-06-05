@@ -26,7 +26,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E04S07T02 — FR-007 migration utilities verification closure](../../../../../../implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md) (IPW planning package)
+- [IPP-E04S07T02 — FR-007 migration utilities verification closure](../../../../../implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md) (IPW planning package)
 - [FR-007](../../../fr-br/FR-007-migration-utilities-and-installation-modes.md)
 - [BR-006](../../../fr-br/BR-006-missing-migration-support-pre-existing-kanban.md) (detection/analysis — E04:S07:T01)
 - [UXR-001](../../../fr-br/UXR-001-migration-user-experience-research.md)
@@ -61,7 +61,7 @@ Migration utility and installation-mode integration for pre-existing Kanban stru
 
 ## References
 
-- [IPP-E04S07T02 — FR-007 migration utilities verification closure](../../../../../../implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md)
+- [IPP-E04S07T02 — FR-007 migration utilities verification closure](../../../../../implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md)
 - [FR-007](../../../fr-br/FR-007-migration-utilities-and-installation-modes.md)
 - [Story 7 — Migration Support and Installation Modes](../story-07-migration-support-and-installation-modes.md)
 - [E04:S07:T01](../story-07-migration-support-and-installation-modes.md) (detection/analysis)

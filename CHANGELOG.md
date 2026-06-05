@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.5+6] - 05-06-26
+
+E02:S16:T05 — **Markdown link-depth hygiene (Wave 2):** 36 docs — relative path corrections across kanban, IPPs, ADR-020, FR/BR; BR-068 guard green. SemVer **v0.4.956+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+6.md)
+
+---
+
 ## [0.6.9.21+5] - 05-06-26
 
 E06:S09:T21 — **FR-110 Wave 5:** greenfield sync uses `git ls-files` (index-safe copy); lean tree re-synced; footprint ~7.93 MiB. SemVer **v0.4.954+5**.

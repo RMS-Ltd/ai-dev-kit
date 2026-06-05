@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** [E02:S14:T01](T01-enumerate-supported-installation-paths-for-workflow-manageme.md)  
 **Package:** `packages/frameworks/workflow-mgt/`  
-**Adopter SoT:** [`INSTALL_IN_YOUR_PROJECT.md`](../../../../../../INSTALL_IN_YOUR_PROJECT.md)
+**Adopter SoT:** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 
 ---
 
@@ -107,7 +107,7 @@ Components from [component-inventory-map.md §5](../story-13-workflow-management
 ## References
 
 - [T01 task doc](T01-enumerate-supported-installation-paths-for-workflow-manageme.md)
-- [IPP-E02S14T01](../../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
+- [IPP-E02S14T01](../../../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
 - [S13 component inventory §5](../story-13-workflow-management-package-implementation-review/component-inventory-map.md)
-- [INSTALL_IN_YOUR_PROJECT.md](../../../../../../INSTALL_IN_YOUR_PROJECT.md)
-- [Story 14](story-14-workflow-management-package-installation-evaluation.md)
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+- [Story 14](../story-14-workflow-management-package-installation-evaluation.md)

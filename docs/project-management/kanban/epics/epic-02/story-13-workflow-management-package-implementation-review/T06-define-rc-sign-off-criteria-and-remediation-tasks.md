@@ -51,8 +51,8 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 - [E02:S13:T03 behavioral validation](workflow-behavior-validation-report.md)
 - [E02:S13:T04 integration alignment](integration-alignment-report.md)
 - [E02:S13:T05 gap log and risk assessment](T05-create-gap-log-and-risk-assessment.md) — 16 gaps; 0 RC-blocking
-- [E07:S07:T01 RC gate summary](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) §7
-- [IPP-E02S13T06-rc-sign-off-remediation.md](../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
+- [E07:S07:T01 RC gate summary](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) §7
+- [IPP-E02S13T06-rc-sign-off-remediation.md](../../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
 
 ---
 
@@ -115,7 +115,7 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 
 | Status | Evidence |
 | ------ | -------- |
-| **PASS** | [E07:S07:T01 report](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) — 0 Critical; H1 CI mitigated (T03 D12) |
+| **PASS** | [E07:S07:T01 report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) — 0 Critical; H1 CI mitigated (T03 D12) |
 
 ---
 
@@ -315,9 +315,9 @@ RC sign-off may be **recommended** (upgrade from DEFER) when **all** of the foll
 
 ## References
 
-- [IPP-E02S13T06](../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
+- [IPP-E02S13T06](../../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
-- [E07:S07:T01 report](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E07:S07:T01 report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
 - [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md)
 - [E02:S13:T10](T10-kanban-transform-consolidation.md)

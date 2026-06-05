@@ -1,0 +1,21 @@
+{
+  "report_type": "rw_step7_stamp_evidence",
+  "invocation": "RW E02:S16:T05 --art",
+  "evidence_mode": "release_scope_reconciliation",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 5,
+    "task_id": "E02:S16:T05",
+    "version_string": "v0.2.16.5+6"
+  },
+  "summary": {
+    "notes": "RW Step 7 scoped reconciliation — T05 perpetual row stamp refresh after Wave 2 link-depth hygiene release"
+  },
+  "rows": {
+    "E02:S16:T05": {
+      "allowed": true,
+      "reason": "RW v0.2.16.5+6 release — T05 task doc + story-16 updated; perpetual row version anchor refresh"
+    }
+  }
+}

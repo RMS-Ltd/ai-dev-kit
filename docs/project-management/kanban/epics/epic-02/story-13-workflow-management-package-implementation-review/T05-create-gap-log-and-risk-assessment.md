@@ -24,13 +24,13 @@ This deliverable conforms to the **Gap Log and Risk Assessment Schema**:
 
 - **Spec:** [docs/architecture/standards-and-adrs/gap-log-schema.md](../../../../../architecture/standards-and-adrs/gap-log-schema.md)
 - **Validator:** `python packages/frameworks/workflow-mgt/scripts/validation/validate_gap_log.py --path <this-file> --strict`
-- **IPP:** [IPP-E02S13T05-gap-log-risk-assessment.md](../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
+- **IPP:** [IPP-E02S13T05-gap-log-risk-assessment.md](../../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
 
 ---
 
 ## Scope
 
-Consolidate all findings from **T01–T04** and **[E07:S07:T01](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) §5–§7** into a single **gap log and risk assessment** for the Workflow Management framework package (`packages/frameworks/workflow-mgt/`).
+Consolidate all findings from **T01–T04** and **[E07:S07:T01](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) §5–§7** into a single **gap log and risk assessment** for the Workflow Management framework package (`packages/frameworks/workflow-mgt/`).
 
 This includes:
 
@@ -49,9 +49,9 @@ This includes:
 - [T02 – Component inventory map](component-inventory-map.md)
 - [T03 – Behavioral validation report](workflow-behavior-validation-report.md)
 - [T04 – Integration alignment report](integration-alignment-report.md)
-- [E07:S07:T01 – Workflow machinery code review report §5–§7](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E07:S07:T01 – Workflow machinery code review report §5–§7](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [FR-050 – Workflows directory reorganization](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
-- [IPP-E02S13T05](../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
+- [IPP-E02S13T05](../../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
 
 ---
 
@@ -389,9 +389,9 @@ All 16 gaps are **Workflow Management package implementation or documentation ga
 - [T02 component inventory](component-inventory-map.md)
 - [T03 behavior validation report](workflow-behavior-validation-report.md)
 - [T04 integration alignment report](integration-alignment-report.md)
-- [E07:S07:T01 code review report](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E07:S07:T01 code review report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [T06 RC sign-off task](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-- [IPP-E02S13T05](../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
+- [IPP-E02S13T05](../../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
 - [gap-log-schema.md](../../../../../architecture/standards-and-adrs/gap-log-schema.md)
 - [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
 - [FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)

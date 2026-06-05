@@ -45,9 +45,9 @@ Execute [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganizat
 
 ## Input
 
-- IPP: [`IPP-E02S13T09-fr050-workflows-directory-reorganization.md`](../../../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md)
+- IPP: [`IPP-E02S13T09-fr050-workflows-directory-reorganization.md`](../../../../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md)
 - [E02:S13:T05 gap log](T05-create-gap-log-and-risk-assessment.md) — Gap 1 (GAP-WFMGT-STRUCT-001)
-- [E07:S07:T01 report §5 H2](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E07:S07:T01 report §5 H2](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [E02:S13:T06 RC sign-off](T06-define-rc-sign-off-criteria-and-remediation-tasks.md) — remediation package R1
 - [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
 
@@ -92,7 +92,7 @@ Execute [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganizat
 
 ## References
 
-- IPP: [`IPP-E02S13T09-fr050-workflows-directory-reorganization.md`](../../../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md)
+- IPP: [`IPP-E02S13T09-fr050-workflows-directory-reorganization.md`](../../../../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md)
 - [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
 - [T06 RC sign-off](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T05 gap log — Gap 1](T05-create-gap-log-and-risk-assessment.md)

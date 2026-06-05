@@ -14,7 +14,7 @@ Define and document the dev-kit-specific versioning policy using `RC.EPIC.STORY.
 
 ## Deliverable
 
-- [`docs/governance/standards/dev-kit-versioning-policy.md`](../../../../governance/standards/dev-kit-versioning-policy.md) (canonical SoT)
+- [`docs/governance/standards/dev-kit-versioning-policy.md`](../../../../../governance/standards/dev-kit-versioning-policy.md) (canonical SoT)
 
 ## Acceptance Criteria
 

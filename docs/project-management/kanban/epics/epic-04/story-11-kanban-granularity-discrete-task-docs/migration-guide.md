@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Task:** E04:S11:T07  
 **Audience:** Maintainers and adopters running or verifying FR-016 migration  
 **Status:** Published (Wave 5 — 2026-06-05)  
-**Related:** [Migration plan](migration-plan-embedded-to-discrete-tasks.md) · [Completion report](migration-completion-report.md) · [IPP](../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
+**Related:** [Migration plan](migration-plan-embedded-to-discrete-tasks.md) · [Completion report](migration-completion-report.md) · [IPP](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
 
 ---
 
@@ -107,7 +107,7 @@ Full history: [completion report §4](migration-completion-report.md#4-documente
 
 ## 7. New tasks (post-migration policy)
 
-1. Create discrete `T{nn}-{slug}.md` **before** implementation ([FR-017](../../../fr-br/FR-017-versioning-policy-doc-init-build-zero.md) doc-init).
+1. Create discrete `T{nn}-{slug}.md` **before** implementation ([FR-017](../../../fr-br/FR-017-versioning-policy-hardening-doc-init-build.md) doc-init).
 2. Use `**Task ID:**` header (required for RW Step 1c discovery).
 3. Add checklist entry on Story with link to discrete doc.
 4. Do **not** embed task bodies in Story files.

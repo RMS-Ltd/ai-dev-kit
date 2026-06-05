@@ -60,7 +60,7 @@ housekeeping_policy: keep
 - [ ] All version references remain correct
 - [ ] All links to detailed changelogs remain valid
 
-**Task Document:** [`Task-011-Fix-CHANGELOG-Ordering-Violations.md`](story-11-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)
+**Task Document:** [`T11-fix-changelog-ordering-violations.md`](T11-fix-changelog-ordering-violations.md)
 
 **Related:**
 - E02:S01:T06 - Validator format support (COMPLETE)

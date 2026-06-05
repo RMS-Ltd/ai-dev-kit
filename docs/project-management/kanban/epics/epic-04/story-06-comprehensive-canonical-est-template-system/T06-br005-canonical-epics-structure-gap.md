@@ -41,8 +41,8 @@ This discrete task reconciles BR-005 Fix 1, kanban boards, and forensic markers 
 - **[IPP-E04S06T06](../../../../../implementation-cycles/IPP-E04S06T06-br005-canonical-epics-structure-gap.md)** — specification, test design, implementation plan (IPW)
 - **[BR-005](../../../fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)** — UAT finding and acceptance criteria
 - **[story-006](../story-06-comprehensive-canonical-est-template-system.md)** — program delivery record (T00–T10)
-- [`packages/frameworks/kanban/templates/CANONICAL_EPICS.md`](../../../../../../packages/frameworks/kanban/templates/CANONICAL_EPICS.md) — primary fix target
-- [`packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`](../../../../../../packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md) — authoritative source
+- [`packages/frameworks/kanban/templates/CANONICAL_EPICS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/CANONICAL_EPICS.md) — primary fix target
+- [`packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md) — authoritative source
 
 ---
 
@@ -101,4 +101,4 @@ This discrete task reconciles BR-005 Fix 1, kanban boards, and forensic markers 
 - [BR-005](../../../fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
 - [IPP-E04S06T06](../../../../../implementation-cycles/IPP-E04S06T06-br005-canonical-epics-structure-gap.md)
 - [story-006](../story-06-comprehensive-canonical-est-template-system.md)
-- [`CANONICAL_EPICS.md`](../../../../../../packages/frameworks/kanban/templates/CANONICAL_EPICS.md)
+- [`CANONICAL_EPICS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/CANONICAL_EPICS.md)

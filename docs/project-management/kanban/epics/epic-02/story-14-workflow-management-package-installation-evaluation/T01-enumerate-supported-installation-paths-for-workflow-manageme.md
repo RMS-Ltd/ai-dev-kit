@@ -43,11 +43,11 @@ housekeeping_policy: keep
 ## Input
 
 - [S13 component inventory §5](../story-13-workflow-management-package-implementation-review/component-inventory-map.md) — Config & Install baseline
-- [`INSTALL_IN_YOUR_PROJECT.md`](../../../../../../INSTALL_IN_YOUR_PROJECT.md) — greenfield/brownfield adopter SoT
-- [`packages/frameworks/workflow-mgt/README.md`](../../../../../../packages/frameworks/workflow-mgt/README.md) — package install modes A/B/C
-- [`packages/frameworks/workflow-mgt/scripts/README-rw-installer.md`](../../../../../../packages/frameworks/workflow-mgt/scripts/README-rw-installer.md) — installer CLI contract
+- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — greenfield/brownfield adopter SoT
+- [`packages/frameworks/workflow-mgt/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/README.md) — package install modes A/B/C
+- [`packages/frameworks/workflow-mgt/scripts/README-rw-installer.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/README-rw-installer.md) — installer CLI contract
 - User-docs install guides under `docs/documentation/user-docs/`
-- [IPP-E02S14T01](../../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
+- [IPP-E02S14T01](../../../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
 
 ---
 
@@ -88,14 +88,14 @@ The Workflow Management package supports **19 distinct installation paths** acro
 
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
-**Source Story:** [`story-14-workflow-management-package-installation-evaluation.md`](story-14-workflow-management-package-installation-evaluation.md)
+**Source Story:** [`story-14-workflow-management-package-installation-evaluation.md`](../story-14-workflow-management-package-installation-evaluation.md)
 
 ---
 
 ## References
 
-- [IPP-E02S14T01 — Enumerate workflow-mgt installation paths](../../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
+- [IPP-E02S14T01 — Enumerate workflow-mgt installation paths](../../../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
 - [installation-paths-matrix.md](installation-paths-matrix.md)
-- [Story 14](story-14-workflow-management-package-installation-evaluation.md)
+- [Story 14](../story-14-workflow-management-package-installation-evaluation.md)
 - [S13 component inventory §5](../story-13-workflow-management-package-implementation-review/component-inventory-map.md)
-- [INSTALL_IN_YOUR_PROJECT.md](../../../../../../INSTALL_IN_YOUR_PROJECT.md)
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
