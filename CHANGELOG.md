@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.7.2+2] - 05-06-26
+
+E04:S07:T02 — **FR-007 verification closure:** IPP + discrete task doc; pytest re-verification (20 passed); kboard four-surface reconciliation. SemVer **v0.4.912+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.7.2+2.md)
+
+---
+
 ## [0.2.16.4+30] - 05-06-26
 
 E02:S16:T04 — **UKW -c** V-band prune: **FR-106** IMPLEMENTED, **BR-082**/**BR-088** FIXED; operator verification closure. SemVer **v0.4.910+30**.

@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Submitted:** 2025-01-27  
 **Submitted By:** AI Agent (Cursor) acting as user/client for dev-toolkit  
 **Priority:** HIGH  
-**Status:** ACCEPTED  
+**Status:** IMPLEMENTED ✅ (v0.4.7.2+2 — E04:S07:T02 verification closure)  
 
-**Implementing Task:** [E04:S07:T02](../epics/epic-04/story-07-migration-support-and-installation-modes.md)
+**Implementing Task:** [E04:S07:T02](../epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md)
 **GitHub Issue:** [#3](https://github.com/RMS-Ltd/ai-dev-kit/issues/3)
 
 ---
@@ -88,35 +88,35 @@ A project (dev-toolkit) has an existing Kanban structure with completed work. Th
 
 ### Functional Requirements
 
-- [ ] **FR-1:** Detection utility can scan for existing Kanban structures
+- [x] **FR-1:** Detection utility can scan for existing Kanban structures
   - Scan epic directories
   - Detect epic documents
   - Identify story documents
   - Report findings
 
 
-- [ ] **FR-2:** Analysis utility can map existing work to E/S/T structure
+- [x] **FR-2:** Analysis utility can map existing work to E/S/T structure
   - Map existing epics to canonical format
   - Map existing stories to canonical format
   - Map existing tasks to canonical format
   - Identify conflicts and gaps
 
 
-- [ ] **FR-3:** Migration utility can convert existing items to canonical structure
+- [x] **FR-3:** Migration utility can convert existing items to canonical structure
   - Preserve existing content
   - Convert to canonical format
   - Preserve forensic markers
   - Preserve work history
 
 
-- [ ] **FR-4:** Installation modes support different scenarios
+- [x] **FR-4:** Installation modes support different scenarios
   - Fresh Install mode (current behavior)
   - Migration Install mode (detect and migrate)
   - Update Install mode (update existing framework)
   - Hybrid Install mode (preserve project epics, install framework epics)
 
 
-- [ ] **FR-5:** Preservation utility backs up existing work
+- [x] **FR-5:** Preservation utility backs up existing work
   - Create backup before migration
   - Preserve complete structure
   - Enable rollback if needed
@@ -124,11 +124,11 @@ A project (dev-toolkit) has an existing Kanban structure with completed work. Th
 
 ### Non-Functional Requirements
 
-- [ ] **NFR-1:** Performance: Detection completes in < 5 seconds for typical structures
-- [ ] **NFR-2:** Security: Backups preserve file permissions and metadata
-- [ ] **NFR-3:** Usability: Interactive mode selection with clear prompts
-- [ ] **NFR-4:** Compatibility: Supports migration from common Kanban/Sprint systems
-- [ ] **NFR-5:** Reliability: Migration preserves all work items and forensic markers
+- [x] **NFR-1:** Performance: Detection completes in < 5 seconds for typical structures
+- [x] **NFR-2:** Security: Backups preserve file permissions and metadata
+- [x] **NFR-3:** Usability: Interactive mode selection with clear prompts
+- [x] **NFR-4:** Compatibility: Supports migration from common Kanban/Sprint systems
+- [x] **NFR-5:** Reliability: Migration preserves all work items and forensic markers
 
 ---
 
@@ -199,14 +199,14 @@ A project (dev-toolkit) has an existing Kanban structure with completed work. Th
 
 ## Acceptance Criteria
 
-- [ ] **AC-1:** Detection utility (`detect_existing_structure.py`) can scan and detect existing Kanban structures
-- [ ] **AC-2:** Analysis utility (`analyze_structure.py`) can map existing work to E/S/T format
-- [ ] **AC-3:** Migration utility (`migrate_structure.py`) can convert existing items to canonical structure
-- [ ] **AC-4:** Installation process supports mode selection (Fresh, Migration, Update, Hybrid)
-- [ ] **AC-5:** Migration preserves all existing work items and forensic markers
-- [ ] **AC-6:** Migration utilities documented with examples
-- [ ] **AC-7:** Installation guide updated with migration scenarios
-- [ ] **AC-8:** Migration utilities tested with multiple scenarios (Kanban, Sprint, Issues)
+- [x] **AC-1:** Detection utility (`detect_existing_structure.py`) can scan and detect existing Kanban structures
+- [x] **AC-2:** Analysis utility (`analyze_structure.py`) can map existing work to E/S/T format
+- [x] **AC-3:** Migration utility (`migrate_structure.py`) can convert existing items to canonical structure
+- [x] **AC-4:** Installation process supports mode selection (Fresh, Migration, Update, Hybrid)
+- [x] **AC-5:** Migration preserves all existing work items and forensic markers
+- [x] **AC-6:** Migration utilities documented with examples
+- [x] **AC-7:** Installation guide updated with migration scenarios
+- [x] **AC-8:** Migration utilities tested with multiple scenarios (Kanban, Sprint, Issues)
 
 ---
 

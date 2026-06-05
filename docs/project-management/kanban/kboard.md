@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW E02:S16:T04 v0.2.16.4+30 — V-band prune)
-**Version:** v0.2.16.4+30
+**Last Updated:** 2026-06-05 (RW E04:S07:T02 v0.4.7.2+2 — FR-007 verification closure)
+**Version:** v0.4.7.2+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -39,8 +39,6 @@ housekeeping_policy: keep
 - **E04:S09:T01** – BR-007: Multiple Bugs Kanban Package Installation - 📋 TODO (LOW, Multiple bugs in kanban package installation) | [Task](epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [BR-007](fr-br/BR-007-multiple-bugs-kanban-package-installation.md) | Last modified: 2026-06-04 12:05 UTC
 
 - **E04:S07:T01** – BR-006: Missing Migration Support Pre-existing Kanban - 📋 TODO (LOW, Missing migration support for pre-existing kanban) | [Task](epics/epic-04/story-07-migration-support-and-installation-modes.md) | [BR-006](fr-br/BR-006-missing-migration-support-pre-existing-kanban.md) | Last modified: 2026-06-04 12:06 UTC
-
-- **E04:S07:T02** – FR-007: Migration Utilities and Installation Modes - 📋 TODO (LOW, Migration utilities and installation modes) | [Task](epics/epic-04/story-07-migration-support-and-installation-modes.md) | [FR-007](fr-br/FR-007-migration-utilities-and-installation-modes.md) | Last modified: 2026-06-04 12:07 UTC
 
 - **E04:S06:T06** – BR-005: Kanban Framework Epic Structure Gap UAT Finding - 📋 TODO (LOW, Gap found in kanban framework epic structure) | [Task](epics/epic-04/story-06-comprehensive-canonical-est-template-system.md) | [BR-005](fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md) | Last modified: 2025-12-22 00:00 UTC
 
