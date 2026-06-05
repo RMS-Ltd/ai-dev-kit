@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.6.6+2] - 05-06-26
+
+E04:S06:T06 — **BR-005 Fix 1 verification (BUILD +2):** SemVer tag collision recovery (`v0.4.911` pre-existed). SemVer **v0.4.912+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.6.6+2.md)
+
+---
+
 ## [0.4.6.6+1] - 05-06-26
 
 E04:S06:T06 — **BR-005 Fix 1 verification:** CANONICAL_EPICS.md gap closure confirmed; discrete task doc + IPP; kanban four-surface reconciliation. SemVer **v0.4.911+1**.
