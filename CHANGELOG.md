@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.15+3] - 05-06-26
+
+E08:S03:T15 — **Change implemented:** Wave 2 MDX-safe ADK appendix markers; Docusaurus build restore + IPP. SemVer **v0.4.995+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.15+3.md)
+
+---
+
 ## [0.8.3.14+4] - 05-06-26
 
 E08:S03:T14 — **Change implemented:** FBU verification wave — GH AI panel refresh pending; **F-SYNC-02** only open code item. SemVer **v0.4.994+4**.

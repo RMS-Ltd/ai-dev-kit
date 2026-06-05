@@ -13,14 +13,16 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T15+2 — CI triage pass; pending Actions verify)  
-**Version Anchor:** v0.8.3.15+2  
+**Last updated:** 2026-06-05 (RW E08:S03:T15+3 — Wave 2 MDX-safe ADK markers; Docusaurus fix; pending Actions verify)  
+**Version Anchor:** v0.8.3.15+3  
 **Code:** E08S03T15  
 **Task Type:** Perpetual Maintenance
 
 **Perpetual Override Rationale:** Automation/CI domain perpetual lane under Epic 8 Story 3 per FR-112; Story 016 (E02:S16) scope excludes non-workflow security/CI ownership.
 
 **Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+
+**Input:** [IPP-E08S03T15 — GitHub Actions CI health (Perpetual)](../../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -95,15 +97,24 @@ Use **`RW E08:S03:T15`** for recurring CI hygiene passes (BUILD increments on pe
 | Workflow | Root cause (identified) | Fix in this release |
 | -------- | ----------------------- | ------------------- |
 | Tests | `test_install_error_docs_sync` — troubleshooting guide missing ADK `<!-- ADK-ERROR-CODES:* -->` markers / per-code anchors | Sync marked block from `generate_install_error_docs.py` |
-| Docusaurus site build | Broken `#install-error-codes-adk` anchor on troubleshooting guide | H2 `{#install-error-codes-adk}` in generator + guide |
+| Docusaurus site build | MDX rejects HTML `<!-- ADK-ERROR-CODES:* -->` and legacy `{#anchor}` heading ids | **Fixed v0.8.3.15+3:** JSX comment markers + `{/* #anchor */}` syntax + ADK-I06.E02 backticks |
 | Greenfield install | `sync_greenfield_install.py --check` drift (40 files under `greenfield-install/packages/frameworks`) | Full mirror sync |
 
-**Post-merge verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) on `dev`/`main` after push.
+**Post-merge verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) on `dev`/`main` after push (**v0.8.3.15+3** — local `npm run build` exit 0).
+
+### Wave 2 (v0.8.3.15+3)
+
+| Workflow | Local verify | Fix |
+| -------- | ------------ | --- |
+| Docusaurus site build | `npm run build` exit 0 | MDX-safe markers + heading-id comments + registry backtick |
+| Tests | `test_install_error_docs_sync` pass | JSX markers + generator sync |
+| Greenfield install | `sync_greenfield_install.py --check` pass | Mirror sync |
 
 ---
 
 ## References
 
+- [IPP-E08S03T15 — GitHub Actions CI health (Perpetual)](../../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 - [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [E08:S03:T16 — GitHub Security & Code Quality health (Perpetual)](T16-github-security-code-quality-health-perpetual-fr112.md)
 - [E08:S03:T04 — CI test workflow (BR-058)](T04-ci-test-workflow-pytest-remediation-br058.md)

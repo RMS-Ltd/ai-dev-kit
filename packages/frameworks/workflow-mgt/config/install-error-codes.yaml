@@ -209,7 +209,7 @@ codes:
     summary: CLI framework or version not available
     symptom: Requested framework name or version could not be resolved by the selected backend.
     remediation:
-      - "Run adk list --versions <framework> for available tags."
+      - "Run `adk list --versions <framework>` for available tags."
       - "Check .ai-dev-kit.yaml framework source configuration."
     see_also:
       - FR-030

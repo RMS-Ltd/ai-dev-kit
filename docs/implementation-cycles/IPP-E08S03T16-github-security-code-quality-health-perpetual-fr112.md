@@ -10,9 +10,11 @@ housekeeping_policy: keep
 
 **Host Task:** [`T16-github-security-code-quality-health-perpetual-fr112.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) **(E08:S03:T16)**  
 **Planning for:** [FR-112](../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
-**Status:** Approved (planning complete; Wave 0 implementation authorized)
+**Status:** Approved (Wave 0 complete @ v0.8.3.16+1; **Wave 1 re-scan revision** 2026-06-05)
 
 > **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E08:S03:T15**) or finite **standard-finding** burn-down while **E08:S03:T12–T14** are IN PROGRESS.
+>
+> **Revision (2026-06-05 — Wave 1 re-scan):** Operator refresh of [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) @ `main` **`f6aa4dca`**. **Maintainability 146 / Fair**; **Reliability 28 / Fair** (↑ from Needs Improvement after T13 wave-2); **AI panel 12** open. T16 records manifest + coordination delta only — **no standard-finding code edits** while T12–T14 remain IN PROGRESS.
 
 ---
 
@@ -29,6 +31,7 @@ housekeeping_policy: keep
 | RF5 | **Cross-lane gate:** T16 code remediation requires green **Tests** + **workflow-scripts-pytest**; red Actions on `main` escalates to **T15** before merge | FR-112 NF1, T15 baseline |
 | RF6 | First version anchor: **`RW E08:S03:T16 --art`** after baseline manifest (AC4) | T16 AC4 |
 | RF7 | Novel **HIGH** CodeQL security alerts → dedicated BR + task (BR-094 pattern); return to T16 routine hygiene after | T16 scope boundary |
+| RF8 | **Wave 1+ re-scan manifest:** refresh Standard findings rule breakdown + scores @ current `main` SHA; record delta vs prior T16 baseline; cross-lane score milestones (e.g. reliability **Fair**) | Operator refresh 2026-06-05 |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -43,7 +46,8 @@ housekeeping_policy: keep
 
 - **Invariants:** Python 3.11+ (FR-104); no `git tag -f` on release tags (BR-097); three-surface split (Actions / standard findings / perpetual security-quality)
 - **In scope (Wave 0):** Baseline manifest + coordination matrix + AC4 RW; read-only Actions cross-lane snapshot
-- **In scope (Wave 1+):** Perpetual themed hygiene after T12–T14 handoff or net-new code-scanning alerts
+- **In scope (Wave 1 re-scan):** Dashboard manifest refresh @ `f6aa4dca`; coordination matrix delta; read-only cross-lane score notes — **no code remediation**
+- **In scope (Wave 1+ remediation):** Perpetual themed hygiene after T12–T14 handoff or net-new code-scanning alerts
 - **Out of scope:** [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow fixes → **T15**; BR-099/100/101 standard-finding waves → **T12–T14**; BR-099 wave-3 `greenfield-install/` → **T12**
 
 ---
@@ -63,6 +67,7 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 - RF5 → Actions cross-lane snapshot; merge gate documented in baseline
 - RF6 → Wave 0 step 5 RW release
 - RF7 → Escalation path to dedicated BR+task documented in §1.3
+- RF8 → Wave 1 re-scan tables in T16 task doc; rule breakdown @ `f6aa4dca`; reliability score **Fair** milestone cited for T13
 
 ### 2.3 Constraints
 
@@ -110,9 +115,13 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 | TC3 | AC4 SHA evidence | Manifest `main` SHA matches capture-time `origin/main` | RF1, RF6 | 0 |
 | TC4 | Actions cross-lane | T16 doc cites T15 baseline; merge gate stated when CI red | RF5 | 0 |
 | TC5 | Local regression | `python3.11 -m pytest tests/` + workflow-scripts gate green | RF5 | 1+ |
-| TC6 | Dashboard delta | Post-wave manifest with open-count delta (operator-verified) | RF3 | 1+ |
+| TC6 | Dashboard delta | Post-wave manifest with open-count delta (operator-verified) | RF3, RF8 | 1+ |
+| TC7 | Wave 1 re-scan manifest | T16 task doc: SHA `f6aa4dca`, maintainability **146**, reliability **28**, rule table matches GH UI | RF8 | 1 re-scan |
+| TC8 | Cross-lane score delta | Reliability **Needs Improvement → Fair** recorded; T13 wave-2 attribution noted | RF8 | 1 re-scan |
 
 **Wave 0 verification:** TC1–TC4 only (docs-only; no `--skip-tests` — TC5 deferred to Wave 1+).
+
+**Wave 1 re-scan verification:** TC7–TC8 (docs-only manifest refresh; no `--skip-tests`).
 
 ---
 
@@ -128,15 +137,27 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 | 6 | `RW E08:S03:T16 --art` — version anchor `v0.8.3.16+1`, changelog, RW Step 7 | RF6 |
 | **7** | **[MANDATORY] Reconcile task status:** perpetual lane stays **IN PROGRESS**; mark AC4 `[x]` with version anchor; update `Last updated` | T16 AC4 |
 
-**Wave 1+ (after T12–T14 handoff or net-new alerts):**
+**Wave 1 re-scan (2026-06-05 — manifest refresh only):**
+
+| Step | Action | Deliverable |
+| ---- | ------ | ----------- |
+| **8** | **[MANDATORY] Confirm task `E08:S03:T16` status `IN PROGRESS`**. Update `Last updated`. | Task doc |
+| 9 | Record **Wave 1 re-scan manifest** @ `main` `f6aa4dca` from [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality): scores + rule breakdown + AI panel cross-ref (**12** open) | RF8, TC7 |
+| 10 | Update **coordination matrix** delta vs Wave 0 (`777e956`): reliability **34→28**, score **Needs Improvement→Fair**; maintainability **~145→146** | RF8, TC8 |
+| 11 | Cross-cite T13 wave-2 outcome (read-only); no T16 code edits | RF2 |
+| **12** | **[MANDATORY] Reconcile status:** perpetual lane stays **IN PROGRESS**; update `Last updated` | TC8 |
+
+**Optional Wave 1 RW:** Manifest-only refresh may ship via **`RW E08:S03:T16 --art`** (BUILD +1) when operator batches doc updates; not required for IPW completion.
+
+**Wave 2+ (after T12–T14 handoff or net-new alerts):**
 
 | Step | Action |
 | ---- | ------ |
-| 8 | Re-scan dashboards; pick one theme |
-| 9 | Triage: fix / dismiss / defer-to-BR |
-| 10 | Implement + TC5; mirror `greenfield-install/` when implicated |
-| 11 | `RW E08:S03:T16 --art` per wave |
-| 12 | Status reconciliation — remain IN PROGRESS |
+| 13 | Re-scan dashboards; pick one theme |
+| 14 | Triage: fix / dismiss / defer-to-BR |
+| 15 | Implement + TC5; mirror `greenfield-install/` when implicated |
+| 16 | `RW E08:S03:T16 --art` per wave |
+| 17 | Status reconciliation — remain IN PROGRESS |
 
 **RW verification rule (BR-097):** Post-ship waves prescribe **`RW E08:S03:T16 --art`** only. No `--doc-policy-zero`.
 
@@ -208,6 +229,8 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 - [x] IPP bidirectionally linked from task doc + kboard
 - [x] FR-112 F2 updated when AC4 satisfied
 - [x] Task remains IN PROGRESS (perpetual); not marked COMPLETE
+- [x] Wave 1 re-scan manifest @ `f6aa4dca` in T16 task doc (TC7–TC8)
+- [x] Coordination matrix reflects reliability **Fair** + **28** open (TC8)
 
 ---
 

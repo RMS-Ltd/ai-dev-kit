@@ -1175,14 +1175,14 @@ ai-dev-kit report-issue \
 
 ---
 
-<!-- ADK-ERROR-CODES:START -->
-## Install error codes (ADK-*) {#install-error-codes-adk}
+{/* ADK-ERROR-CODES:START */}
+## Install error codes (ADK-*) {/* #install-error-codes-adk */}
 
 Registry version: **1.1.0**. When install fails, copy the `ERROR [ADK-…]` line from your console together with the AI Dev Kit SemVer banner ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).
 
 Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes.yaml`.
 
-### ADK-I01.S01 {#adk-i01-s01}
+### ADK-I01.S01 {/* #adk-i01-s01 */}
 
 **Summary:** Greenfield RW install step failed
 
@@ -1194,7 +1194,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-080
 
-### ADK-I01.S02 {#adk-i01-s02}
+### ADK-I01.S02 {/* #adk-i01-s02 */}
 
 **Summary:** Greenfield Kanban install step failed
 
@@ -1206,7 +1206,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-080
 
-### ADK-I02.E01 {#adk-i02-e01}
+### ADK-I02.E01 {/* #adk-i02-e01 */}
 
 **Summary:** Kanban framework install failed
 
@@ -1218,7 +1218,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** BR-054
 
-### ADK-I02.E08 {#adk-i02-e08}
+### ADK-I02.E08 {/* #adk-i02-e08 */}
 
 **Summary:** Kanban install detected board or path contamination
 
@@ -1230,7 +1230,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** BR-037
 
-### ADK-I03.E04 {#adk-i03-e04}
+### ADK-I03.E04 {/* #adk-i03-e04 */}
 
 **Summary:** RW installer dependencies missing
 
@@ -1243,7 +1243,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** BR-082
 
-### ADK-I03.E12 {#adk-i03-e12}
+### ADK-I03.E12 {/* #adk-i03-e12 */}
 
 **Summary:** RW install version_file missing or not scaffolded
 
@@ -1255,7 +1255,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** BR-088
 
-### ADK-I03.E21 {#adk-i03-e21}
+### ADK-I03.E21 {/* #adk-i03-e21 */}
 
 **Summary:** RW install kanban path or pattern mismatch
 
@@ -1267,7 +1267,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** BR-083, BR-086
 
-### ADK-I03.E90 {#adk-i03-e90}
+### ADK-I03.E90 {/* #adk-i03-e90 */}
 
 **Summary:** RW install completed with warnings or partial success
 
@@ -1279,7 +1279,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-080
 
-### ADK-I03.E90:W01 {#adk-i03-e90-w01}
+### ADK-I03.E90:W01 {/* #adk-i03-e90-w01 */}
 
 **Summary:** RW install partial (non-blocking warning aggregate)
 
@@ -1290,7 +1290,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-080
 
-### ADK-I04.E01 {#adk-i04-e01}
+### ADK-I04.E01 {/* #adk-i04-e01 */}
 
 **Summary:** Install GitHub sign-off not ready
 
@@ -1302,7 +1302,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-080
 
-### ADK-I05.E01 {#adk-i05-e01}
+### ADK-I05.E01 {/* #adk-i05-e01 */}
 
 **Summary:** GHCR image pull failed
 
@@ -1315,7 +1315,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** ADR-021, FR-110
 
-### ADK-I05.E02 {#adk-i05-e02}
+### ADK-I05.E02 {/* #adk-i05-e02 */}
 
 **Summary:** GHCR extract failed
 
@@ -1327,7 +1327,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** ADR-021
 
-### ADK-I05.E03 {#adk-i05-e03}
+### ADK-I05.E03 {/* #adk-i05-e03 */}
 
 **Summary:** Release tarball checksum mismatch
 
@@ -1339,7 +1339,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-110
 
-### ADK-I05.E04 {#adk-i05-e04}
+### ADK-I05.E04 {/* #adk-i05-e04 */}
 
 **Summary:** Vendor tree missing required install entrypoints
 
@@ -1351,7 +1351,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-110, FR-111
 
-### ADK-I05.E05 {#adk-i05-e05}
+### ADK-I05.E05 {/* #adk-i05-e05 */}
 
 **Summary:** Vendor tree missing install error registry or emitter
 
@@ -1363,7 +1363,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-108, FR-111
 
-### ADK-I05.E06 {#adk-i05-e06}
+### ADK-I05.E06 {/* #adk-i05-e06 */}
 
 **Summary:** Git or sparse submodule acquisition failed
 
@@ -1375,7 +1375,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-110
 
-### ADK-I06.E01 {#adk-i06-e01}
+### ADK-I06.E01 {/* #adk-i06-e01 */}
 
 **Summary:** CLI framework install failed
 
@@ -1387,19 +1387,18 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** FR-030, FR-111
 
-### ADK-I06.E02 {#adk-i06-e02}
+### ADK-I06.E02 {/* #adk-i06-e02 */}
 
 **Summary:** CLI framework or version not available
 
 **Symptom:** Requested framework name or version could not be resolved by the selected backend.
 
 **Remediation:**
-- Run adk list --versions <framework> for available tags.
+- Run `adk list --versions <framework>` for available tags.
 - Check .ai-dev-kit.yaml framework source configuration.
 
 **See also:** FR-030
-<!-- ADK-ERROR-CODES:END -->
-
+{/* ADK-ERROR-CODES:END */}
 ---
 
 ## References

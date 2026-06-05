@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Render install error code appendix markdown from registry YAML (FR-108)."""
+"""Render install error code appendix markdown from registry YAML (FR-108).
+
+Boundary markers use MDX-safe JSX comments ({/* ... */}) so the troubleshooting
+guide compiles in Docusaurus while remaining extractable for test_install_error_docs_sync.
+"""
 
 from __future__ import annotations
 
@@ -8,18 +12,23 @@ from pathlib import Path
 
 from adk_install_errors import load_registry
 
-MARKER_START = "<!-- ADK-ERROR-CODES:START -->"
-MARKER_END = "<!-- ADK-ERROR-CODES:END -->"
+MARKER_START = "{/* ADK-ERROR-CODES:START */}"
+MARKER_END = "{/* ADK-ERROR-CODES:END */}"
 
 
 def anchor_for(code: str) -> str:
     return code.lower().replace(":", "-").replace(".", "-")
 
 
+def heading_id_comment(anchor: str) -> str:
+    """MDX-safe explicit heading id (Docusaurus v3 mdx-comment syntax)."""
+    return f"{{/* #{anchor} */}}"
+
+
 def render_markdown() -> str:
     reg = load_registry()
     lines = [
-        "## Install error codes (ADK-*) {#install-error-codes-adk}",
+        f"## Install error codes (ADK-*) {heading_id_comment('install-error-codes-adk')}",
         "",
         f"Registry version: **{reg.get('registry_version', 'unknown')}**. "
         "When install fails, copy the `ERROR [ADK-…]` line from your console "
@@ -31,7 +40,7 @@ def render_markdown() -> str:
     codes = reg.get("codes") or {}
     for code in sorted(codes.keys()):
         entry = codes[code]
-        lines.append(f"### {code} {{#{anchor_for(code)}}}")
+        lines.append(f"### {code} {heading_id_comment(anchor_for(code))}")
         lines.append("")
         lines.append(f"**Summary:** {entry.get('summary', '')}")
         lines.append("")

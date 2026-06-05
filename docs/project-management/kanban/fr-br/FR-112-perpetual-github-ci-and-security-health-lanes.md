@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (v0.8.3.16+1 — T16 Wave 0 baseline; T15 CI triage ongoing)  
+**Status:** IN PROGRESS (v0.8.3.15+3 — T15 Wave 2 MDX marker fix shipped; pending Actions verify; T16 Wave 0 @ v0.8.3.16+1)  
 **Implementing Tasks:**
 - **E08:S03:T15** — [GitHub Actions CI health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - **E08:S03:T16** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
@@ -38,7 +38,7 @@ Establish **two perpetual maintenance lanes** under Epic 8 Story 3 so recurring 
 
 ### Functional
 
-- [ ] **FR-112:F1** — Perpetual task **E08:S03:T15** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (red-build triage, workflow config, CI dependency/test fixes).
+- [ ] **FR-112:F1** — Perpetual task **E08:S03:T15** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (Wave 2 MDX fix @ v0.8.3.15+3; pending Actions verify).
 - [x] **FR-112:F2** — Perpetual task **E08:S03:T16** owns [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) and [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) ongoing hygiene (re-scans, routine waves, dismiss/verify). Wave 0 baseline @ v0.8.3.16+1.
 - [ ] **FR-112:F3** — Both tasks carry `Task Type: Perpetual Maintenance` and explicit scope boundaries (including handoff from T12–T14).
 - [x] **FR-112:F4** — Story 003 checklist and `kboard.md` **Ongoing (O)** band wired bidirectionally.
