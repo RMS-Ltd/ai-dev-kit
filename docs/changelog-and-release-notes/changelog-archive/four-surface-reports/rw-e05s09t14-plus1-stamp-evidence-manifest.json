@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E05:S09:T14": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.5.9.14+1 — IPW recovery; kboard row status IN PROGRESS + IPP link + stamp"
+    },
+    "BR-093": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.5.9.14+1 — fbuboard BR-093 row IPP link + OPEN icon + stamp"
+    }
+  }
+}

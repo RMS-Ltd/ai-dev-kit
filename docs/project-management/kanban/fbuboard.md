@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-04 (RW **E06:S09:T16** — BR-086 closure v0.6.9.16+3)
-**Version Context:** v0.6.9.16+3
+**Last Updated:** 2026-06-05 (RW **E07:S07:T03** — BR-091 fix attempted v0.7.7.3+1)
+**Version Context:** v0.7.7.3+1
 
 **Active board contract:** Rows are **open FBU work** (OPEN / TODO / PROPOSED with active task), including **Could Have** backlog. Remove **terminal** FBUs and archive/journal prose (use [`fbu-completed.md`](fbu-completed.md)), not filed low-priority queue items.
 
@@ -30,6 +30,12 @@ housekeeping_policy: keep
 - **BR-061** – Task-touch SemVer PATCH / registry counter - 🟢 OPEN (HIGH, fix attempted **v0.3.2.12+4**) | [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [—IPP—](../../implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md) | Last modified: 2026-06-04 18:45 UTC
 
 ### Should Have (S) - Important Items
+
+- **BR-093** – Docusaurus CI duplicate build + deploy jobs waste minutes - 🟢 OPEN (MEDIUM, fix attempted **v0.5.9.14+2** — pending Actions verification on `main`) | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [E05:S09:T14](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) | [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) | Last modified: 2026-06-05 18:56 UTC
+
+- **BR-090** – Docusaurus 3.10 build fails: missing `@docusaurus/faster` + lockfile drift - 🟢 OPEN (HIGH, fix attempted **v0.5.9.13+1** — pending Actions verification on `main`) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [E05:S09:T13](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [IPP](../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md) | Last modified: 2026-06-05 00:31 UTC
+
+- **BR-091** – Workflow validators hardcode legacy `workflow mgt` path - 🔄 IN PROGRESS (HIGH, fix attempted v0.7.7.3+1 — CI verify pending) | [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) | [E07:S07:T03](epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md) | [IPP](../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md) | Last modified: 2026-06-05 18:45 UTC
 
 - **FR-106** – Packaged workflows sync with live repo implementation - 🟢 OPEN (HIGH, fix attempted **v0.2.13.8+2** — pending verification) | [IPP](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [E02:S13:T08](epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | —No IPP— | Last modified: 2026-06-03 20:06 UTC
 

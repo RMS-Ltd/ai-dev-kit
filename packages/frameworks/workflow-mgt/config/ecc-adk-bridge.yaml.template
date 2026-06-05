@@ -29,7 +29,7 @@ harness_layer:
   # Advisory pre-RW hook IDs (non-blocking; document in cheatsheet §3b):
   # pre:rw:quality-gate — optional signal only; ADK Step 10 validators remain authoritative
 
-  adk_skill_pack_path: packages/frameworks/workflow mgt/skills/  # Phase 1 placeholder
+  adk_skill_pack_path: packages/frameworks/workflow-mgt/skills/
 
   conflict_rules:
     - ecc: git-workflow

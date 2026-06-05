@@ -1,0 +1,56 @@
+{
+  "auxiliary_surfaces": {
+    "ipp_doc": {
+      "changes": ["§7 T3 CI verification checked"],
+      "paths": ["docs/implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md"],
+      "surface": "ipp_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 7,
+    "task_id": "E08:S03:T07",
+    "version_string": "v0.8.3.7+2"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 4,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard", "ipp_doc"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "changes": ["Post-CI verification AC notes v0.8.3.7+2"],
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md"],
+      "surface": "task_doc",
+      "touched": true
+    },
+    "fbu_doc": {
+      "changes": ["BR-092 resolution CI evidence"],
+      "paths": ["docs/project-management/kanban/fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md"],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [],
+      "notes": ["Terminal row already archived at v0.8.3.7+1; no active-row change"],
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": false
+    },
+    "fbuboard": {
+      "changes": [],
+      "notes": ["Terminal row already archived at v0.8.3.7+1; no active-row change"],
+      "paths": ["docs/project-management/kanban/fbuboard.md"],
+      "surface": "fbuboard",
+      "touched": false
+    }
+  },
+  "timestamp_utc": "2026-06-05 00:09:35 UTC"
+}

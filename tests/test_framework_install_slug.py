@@ -19,11 +19,15 @@ _SCRIPTS = (
 sys.path.insert(0, str(_SCRIPTS))
 
 from framework_install_slug import (  # noqa: E402
+    WORKFLOW_MGT_INSTALL_SLUG,
+    WORKFLOW_MGT_LEGACY_DIR_NAME,
     archive_root_install_slug,
     detect_legacy_framework_dir_names,
     ensure_frameworks_slug_layout,
     framework_install_slug,
     relocate_legacy_framework_dir,
+    workflow_mgt_package_dir,
+    workflow_mgt_package_dir_missing_hint,
 )
 from build_package import create_tar_gz_archive  # noqa: E402
 from install_package_from_release import extract_package  # noqa: E402
@@ -42,6 +46,44 @@ from install_package_from_release import extract_package  # noqa: E402
 def test_framework_install_slug(source: str, expected: str) -> None:
     assert framework_install_slug(source) == expected
     assert archive_root_install_slug(source) == expected
+
+
+def test_workflow_mgt_package_dir_prefers_canonical_slug(tmp_path: Path) -> None:
+    fw = tmp_path / "packages" / "frameworks"
+    fw.mkdir(parents=True)
+    canonical = fw / WORKFLOW_MGT_INSTALL_SLUG
+    legacy = fw / WORKFLOW_MGT_LEGACY_DIR_NAME
+    canonical.mkdir()
+    legacy.mkdir()
+    resolved = workflow_mgt_package_dir(tmp_path)
+    assert resolved == canonical
+
+
+def test_workflow_mgt_package_dir_falls_back_to_legacy(tmp_path: Path) -> None:
+    fw = tmp_path / "packages" / "frameworks"
+    fw.mkdir(parents=True)
+    legacy = fw / WORKFLOW_MGT_LEGACY_DIR_NAME
+    legacy.mkdir()
+    resolved = workflow_mgt_package_dir(tmp_path)
+    assert resolved == legacy
+
+
+def test_workflow_mgt_package_dir_returns_canonical_when_missing(tmp_path: Path) -> None:
+    fw = tmp_path / "packages" / "frameworks"
+    fw.mkdir(parents=True)
+    resolved = workflow_mgt_package_dir(tmp_path)
+    assert resolved == fw / WORKFLOW_MGT_INSTALL_SLUG
+    assert not resolved.is_dir()
+    hint = workflow_mgt_package_dir_missing_hint(tmp_path)
+    assert WORKFLOW_MGT_INSTALL_SLUG in hint
+    assert WORKFLOW_MGT_LEGACY_DIR_NAME in hint
+
+
+def test_workflow_mgt_package_dir_on_monorepo() -> None:
+    repo = Path(__file__).resolve().parents[1]
+    resolved = workflow_mgt_package_dir(repo)
+    assert resolved.is_dir()
+    assert resolved.name == WORKFLOW_MGT_INSTALL_SLUG
 
 
 def test_create_tar_gz_uses_install_slug_not_source_dir_name(tmp_path: Path) -> None:

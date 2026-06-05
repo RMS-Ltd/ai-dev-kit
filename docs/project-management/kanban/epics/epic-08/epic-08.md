@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-03 (v0.8.3.5+2 – Story 3 Task 5 complete)
+**Last updated:** 2026-06-05 (v0.8.3.8+1 – Story 3 Task 8 complete)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 - [x] **E8:S02 – Additional Validators** - ✅ COMPLETE (v0.8.2.3+1 – All tasks complete)
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
-- [ ] **E8:S03 – Automation Scripts** - TODO (v0.8.3.5+2 – T05 Python 3.11 policy complete)
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.8+1 – T08 BR-094 CodeQL syntax fix complete)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
 
 - [ ] **E8:S04 – Tooling & Automation Package Implementation Review** - TODO (v0.8.4.0+0)

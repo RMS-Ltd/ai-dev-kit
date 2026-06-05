@@ -1,0 +1,69 @@
+{
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": ["E08:S03:T07 checklist COMPLETE v0.8.3.7+1"],
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "kanban-completed": {
+      "changes": ["Appended E08:S03:T07 completion entry v0.8.3.7+1"],
+      "paths": ["docs/project-management/kanban/kanban-completed.md"],
+      "surface": "kanban-completed",
+      "touched": true
+    },
+    "fbu-completed": {
+      "changes": ["Appended BR-092 completion entry v0.8.3.7+1"],
+      "paths": ["docs/project-management/kanban/fbu-completed.md"],
+      "surface": "fbu-completed",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 7,
+    "task_id": "E08:S03:T07",
+    "version_string": "v0.8.3.7+1"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "structure_prune",
+    "manifest": "rw-step7-structure-prune-v0-8-3-7plus1-e8s3t7.json"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard", "story_doc", "kanban-completed", "fbu-completed"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "changes": ["COMPLETE v0.8.3.7+1; Version Anchor; AC checked"],
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md"],
+      "surface": "task_doc",
+      "touched": true
+    },
+    "fbu_doc": {
+      "changes": ["BR-092 RESOLVED v0.8.3.7+1"],
+      "paths": ["docs/project-management/kanban/fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md"],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["Pruned E08:S03:T07 terminal row from Should Have"],
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": ["Pruned BR-092 terminal row from Should Have"],
+      "paths": ["docs/project-management/kanban/fbuboard.md"],
+      "surface": "fbuboard",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-04 23:55:00 UTC"
+}

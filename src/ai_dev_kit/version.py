@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 6      # Epic 6 — Framework Management
-VERSION_STORY = 9     # Story 9 — Installation and adopter integration
-VERSION_TASK = 16     # Task 16 — BR-086 lowercase fresh kanban patterns
-VERSION_BUILD = 3     # Build 3: Formal closure + UKW -c archive (RW --art)
+VERSION_EPIC = 7      # Epic 7 — Codebase Maintenance
+VERSION_STORY = 7     # Story 7 — Code Reviews
+VERSION_TASK = 3      # Task 3 — BR-091 workflow validator slug path resolution
+VERSION_BUILD = 1     # Build 1: workflow-mgt slug resolver + bridge template path
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.6.9.16+3 (E06:S09:T16)
+# Current: 0.7.7.3+1 (E07:S07:T03)

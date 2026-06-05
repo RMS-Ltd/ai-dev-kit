@@ -1,0 +1,47 @@
+{
+  "version_string": "v0.5.9.14+1",
+  "task_id": "E05:S09:T14",
+  "epic": 5,
+  "story": 9,
+  "task": 14,
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md"
+      ]
+    },
+    "planning_artifact": {
+      "touched": true,
+      "paths": [
+        "docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md"
+      ]
+    }
+  },
+  "notes": "RW -d --art docs-only: IPW E05:S09:T14 recovery — persist IPP + bidirectional task wiring."
+}

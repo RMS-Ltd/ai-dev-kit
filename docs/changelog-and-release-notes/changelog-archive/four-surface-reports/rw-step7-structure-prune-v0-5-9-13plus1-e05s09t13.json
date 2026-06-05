@@ -1,0 +1,18 @@
+{
+  "rows": {
+    "E05:S09:T13": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.5.9.13+1 — terminal row removed from kboard; ledger kanban-completed.md"
+    },
+    "BR-090": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.5.9.13+1 — fix attempted status + IPP link; BR doc last-updated aligned"
+    }
+  },
+  "structure_prune": {
+    "kboard.md": {
+      "removed_row_ids": ["E05:S09:T13"],
+      "reason": "Task COMPLETE v0.5.9.13+1"
+    }
+  }
+}

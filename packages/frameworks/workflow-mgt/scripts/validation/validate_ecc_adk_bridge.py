@@ -14,6 +14,15 @@ import sys
 from pathlib import Path
 from typing import Any, List
 
+_SCRIPTS = Path(__file__).resolve().parents[1]
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from framework_install_slug import (  # noqa: E402
+    workflow_mgt_package_dir,
+    workflow_mgt_package_dir_missing_hint,
+)
+
 try:
     import yaml
 except ImportError:
@@ -26,7 +35,7 @@ CANONICAL_SKILL_PACK = "packages/frameworks/workflow-mgt/skills/"
 
 
 def workflow_mgt_dir(project_root: Path) -> Path:
-    return project_root / "packages" / "frameworks" / "workflow mgt"
+    return workflow_mgt_package_dir(project_root)
 
 
 def default_bridge_path(project_root: Path) -> Path:
@@ -164,7 +173,11 @@ def main(argv: List[str]) -> int:
     bridge = args.bridge or default_bridge_path(root)
 
     if not args.bridge and not workflow_mgt_dir(root).is_dir():
-        print(f"ERROR: workflow mgt not found under {root}", file=sys.stderr)
+        print(
+            f"ERROR: workflow framework directory not found under {root} "
+            f"({workflow_mgt_package_dir_missing_hint(root)})",
+            file=sys.stderr,
+        )
         return 2
 
     errors = validate_bridge_file(bridge.resolve())

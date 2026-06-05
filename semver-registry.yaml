@@ -77,7 +77,7 @@ rc_0:
     (5,8): 65
   task_touch_mode:
     epic_count: 4
-    task_touch_counter: 889
+    task_touch_counter: 895
     mapping_history:
     - internal_version: 0.3.2.12+2
       semver: 0.4.727+2
@@ -1360,6 +1360,46 @@ rc_0:
       story: 9
       task: 16
       build: 3
+    - internal_version: 0.8.3.8+1
+      semver: 0.4.891+1
+      patch: 891
+      rc: 0
+      epic: 8
+      story: 3
+      task: 8
+      build: 1
+    - internal_version: 0.5.9.14+1
+      semver: 0.4.892+1
+      patch: 892
+      rc: 0
+      epic: 5
+      story: 9
+      task: 14
+      build: 1
+    - internal_version: 0.5.9.14+2
+      semver: 0.4.893+2
+      patch: 893
+      rc: 0
+      epic: 5
+      story: 9
+      task: 14
+      build: 2
+    - internal_version: 0.5.9.13+1
+      semver: 0.4.894+1
+      patch: 894
+      rc: 0
+      epic: 5
+      story: 9
+      task: 13
+      build: 1
+    - internal_version: 0.7.7.3+1
+      semver: 0.4.895+1
+      patch: 895
+      rc: 0
+      epic: 7
+      story: 7
+      task: 3
+      build: 1
 rc_1:
   epic_to_minor: {}
   story_to_patch: {}

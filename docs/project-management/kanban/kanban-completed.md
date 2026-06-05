@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-04 (RW **E06:S09:T16** — BR-086 closure)
-**Version:** v0.6.9.16+3
+**Last Updated:** 2026-06-05 (RW **E07:S07:T03** — BR-091 validator slug paths v0.7.7.3+1)
+**Version:** v0.7.7.3+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,24 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 7: Codebase Maintenance (Story 7 — Code Reviews)**
+- **[E07:S07:T03](epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md)** — **BR-091**: Workflow validator slug path resolution (`workflow-mgt` first, legacy fallback).
+  **Completed:** `2026-06-05T00:34:25Z` | **Version:** `v0.7.7.3+1` | **Agent:** `RW E07:S07:T03` | [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) | [IPP](../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
+
+#### **Epic 5: Documentation Management (Story 9 — Docusaurus Documentation Portal)**
+- **[E05:S09:T13](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)** — **BR-090**: Docusaurus `@docusaurus/faster@3.10.1` + package.json alignment.
+  **Completed:** `2026-06-05T00:30:47Z` | **Version:** `v0.5.9.13+1` | **Agent:** `RW E05:S09:T13` | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [IPP](../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md)
+
+- **[E05:S09:T14](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)** — **BR-093**: Docusaurus CI build/deploy deduplication — merged workflow + artifact handoff ([ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
+  **Completed:** `2026-06-05T00:23:30Z` | **Version:** `v0.5.9.14+2` | **Agent:** `RW E05:S09:T14` | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)
+
+#### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
+- **[E08:S03:T08](epics/epic-08/story-03-automation-scripts/T08-codeql-git-tag-handler-syntax-br094.md)** — **BR-094**: CodeQL `git_tag_handler.py` indentation syntax fix.
+  **Completed:** `2026-06-05T00:10:09Z` | **Version:** `v0.8.3.8+1` | **Agent:** `RW --art` | [BR-094](fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
+
+- **[E08:S03:T07](epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md)** — **BR-092**: Tests CI `requests` dependency — `setup.py` [dev] extras + `tests/requirements.txt` parity.
+  **Completed:** `2026-06-04T23:51:26Z` | **Version:** `v0.8.3.7+1` | **Agent:** `RW` | [BR-092](fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md) | [IPP](../../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
 
 #### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR Abstract Governance)**
 - **[E04:S19:T11](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)** — **UXR-017**: Kanban epic/story path lowercase naming — kit shipped; GH #12–#20 closed.

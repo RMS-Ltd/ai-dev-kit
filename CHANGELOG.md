@@ -9,6 +9,94 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.7.3+1] - 05-06-26
+
+E07:S07:T03 — **BR-091:** Attempted fix — workflow validator slug path resolution (`workflow-mgt` first, legacy fallback); bridge template canonical path; pytest 105/105. SemVer **v0.4.895+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.7.3+1.md)
+
+---
+
+## [0.5.9.13+1] - 05-06-26
+
+E05:S09:T13 — **BR-090:** Docusaurus `@docusaurus/faster@3.10.1` + package.json alignment; restore CI build gate. SemVer **v0.4.894+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+1.md)
+
+---
+
+## [0.5.9.14+2] - 05-06-26
+
+E05:S09:T14 — **BR-093:** Merged Docusaurus CI build+deploy (ADR-017); one production build per `main` push. SemVer **v0.4.893+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+2.md)
+
+---
+
+## [0.5.9.14+1] - 05-06-26
+
+E05:S09:T14 — **BR-093 IPW recovery:** Persist IPP planning package + task wiring (docs-only). SemVer **v0.4.892+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+1.md)
+
+---
+
+## [0.8.3.8+1] - 05-06-26
+
+E08:S03:T08 — **BR-094:** CodeQL parse failure fix — indent optional import in `git_tag_handler.py`. SemVer **v0.4.891+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.8+1.md)
+
+---
+
+## [0.8.3.7+2] - 05-06-26
+
+E08:S03:T07 — **BR-092 docs:** Post-CI verification notes (run 26986650468; slug tests PASSED). SemVer **v0.4.890+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.7+2.md)
+
+---
+
+## [0.8.3.7+1] - 05-06-26
+
+E08:S03:T07 — **BR-092:** Add `requests` to `[dev]` extras — Tests CI collection fix (348 tests green locally). SemVer **v0.4.890+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.7+1.md)
+
+---
+
+## [0.5.9.14+0] - 05-06-26
+
+E05:S09:T14 — **BR-093 intake:** Docusaurus CI duplicate build/deploy job waste (Kanban documentation setup). SemVer **v0.4.890+0** (internal).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+0.md)
+
+---
+
+## [0.8.3.7+0] - 05-06-26
+
+E08:S03:T07 — **BR-092 intake:** Tests CI missing `requests` dev dependency (Kanban documentation setup). SemVer **v0.4.890+0** (internal).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.7+0.md)
+
+---
+
+## [0.7.7.3+0] - 05-06-26
+
+E07:S07:T03 — **BR-091 intake:** Workflow validators hardcode legacy `workflow mgt` path (Kanban documentation setup). SemVer **v0.4.890+0** (internal).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.7.3+0.md)
+
+---
+
+## [0.5.9.13+0] - 05-06-26
+
+E05:S09:T13 — **BR-090 intake:** Docusaurus 3.10 missing `@docusaurus/faster` + package.json/lockfile drift (Kanban documentation setup). SemVer **v0.4.890+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+0.md)
+
+---
+
 ## [0.6.9.16+3] - 04-06-26
 
 E06:S09:T16 — **BR-086 formal closure:** GitHub #17 closed; install-sign-off cluster #12–#20 verified; UKW `-c` archived T16/BR-086 to completed ledgers. SemVer **v0.4.890+3**.
