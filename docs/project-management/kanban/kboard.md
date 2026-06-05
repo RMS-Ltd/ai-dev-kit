@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW E02:S16:T19 — UXR-022 `--dpz` shipped)
-**Version:** v0.2.16.19+2
+**Last Updated:** 2026-06-05 (RW -d E02:S16:T20 — UXR-023 intake)
+**Version:** v0.2.16.20+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -38,7 +38,7 @@ housekeeping_policy: keep
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-- **E02:S16:T20** – Restore kboard IPP segment on MoSCOW rows (UXR-023) - 📋 TODO (HIGH, UXR-010 regression — IPP segment missing on live board) | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](fr-br/UXR-023-kboard-ipp-segment-regression.md) | —No IPP— | Last modified: 2026-06-05 16:30 UTC
+- **E02:S16:T20** – Restore kboard IPP segment on MoSCOW rows (UXR-023) - 🔄 IN PROGRESS (HIGH, **v0.2.16.20+1** intake; implementation pending) | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](fr-br/UXR-023-kboard-ipp-segment-regression.md) | —No IPP— | Last modified: 2026-06-05 16:30 UTC
 
 - **E02:S14:T02** – Validate fresh install steps for each path - 📋 TODO (HIGH, Epic 2 workflow-mgt install evaluation) | [Task](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md) | [Story](epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) | Last modified: 2026-06-05 13:08 UTC
 

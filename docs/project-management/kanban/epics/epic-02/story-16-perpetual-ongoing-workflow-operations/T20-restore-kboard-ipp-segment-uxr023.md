@@ -9,11 +9,12 @@ housekeeping_policy: keep
 # Epic 2, Story 16, Task 20: Restore kboard IPP segment on MoSCOW rows (UXR-023)
 
 **Task ID:** E02:S16:T20  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (UXR-023 intake)  
+**Last updated:** 2026-06-05 (RW **v0.2.16.20+1** — UXR-023 intake release)  
+**Version Anchor:** v0.2.16.20+1  
 **Code:** E02S16T20  
 
 **Upstream:** [UXR-023 — kboard IPP segment regression](../../../fr-br/UXR-023-kboard-ipp-segment-regression.md)

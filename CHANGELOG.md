@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.20+1] - 05-06-26
+
+E02:S16:T20 — **Intake:** UXR-023 kboard IPP segment regression; task + kanban wiring. SemVer **v0.4.977+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.20+1.md)
+
+---
+
 ## [0.2.16.19+2] - 05-06-26
 
 E02:S16:T19 — **Change implemented:** RW `--dpz` short flag; `--doc-policy-zero` alias in parsers, tests, cheatsheet, agent SoT. SemVer **v0.4.976+2**.

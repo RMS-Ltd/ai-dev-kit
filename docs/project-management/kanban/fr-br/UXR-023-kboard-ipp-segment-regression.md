@@ -14,6 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 **Code:** UXR-023  
+**Intake release:** v0.2.16.20+1 (SemVer: v0.4.977+1)  
 
 **Implementing Task:** [E02:S16:T20](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md)
 
