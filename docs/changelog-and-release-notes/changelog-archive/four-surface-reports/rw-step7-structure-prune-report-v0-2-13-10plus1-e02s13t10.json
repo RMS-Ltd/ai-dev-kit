@@ -1,0 +1,15 @@
+{
+  "rows": {
+    "E02:S13:T10": {
+      "allowed": true,
+      "reason": "RW Step 7 structure-prune removed completed task from active kboard"
+    }
+  },
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 10,
+    "task_id": "E02:S13:T10",
+    "version_string": "v0.2.13.10+1"
+  }
+}

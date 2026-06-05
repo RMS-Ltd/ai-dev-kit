@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.13.10+1] - 05-06-26
+
+E02:S13:T10 — **Kanban transform consolidation + `rw_config_loader` unification:** shared transform-entrypoint boundaries (RW/UKW/script), unified config-loader behavior, and parity tests. SemVer **v0.4.944+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.10+1.md)
+
+---
+
 ## [0.2.13.9+1] - 05-06-26
 
 E02:S13:T09 — **FR-050 workflows directory reorganization:** flat YAML duplicates deprecated as redirect stubs; nested subdirectories registry SoT; docs/registry aligned. SemVer **v0.4.943+1**.

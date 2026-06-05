@@ -12,6 +12,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
@@ -21,6 +22,13 @@ try:
     import yaml
 except ImportError:
     yaml = None
+
+# Allow importing shared loader from parent `scripts/` directory.
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import load_rw_config  # noqa: E402
 
 TERMINAL_STAMP_RE = re.compile(
     r"\|\sLast modified:\s(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}\sUTC)\s*$"
@@ -76,17 +84,6 @@ class BackfillRowResult:
     new_stamp: Optional[str]
     source: str  # doc | git | ambiguous | unchanged
     detail: str = ""
-
-
-def load_rw_config(project_root: Path) -> Optional[Dict[str, Any]]:
-    config_path = project_root / "rw-config.yaml"
-    if not config_path.exists() or yaml is None:
-        return None
-    try:
-        with open(config_path, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
 
 
 def kanban_root_from_config(project_root: Path, config: Optional[Dict[str, Any]]) -> Path:

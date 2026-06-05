@@ -24,6 +24,10 @@ _validation_dir = Path(__file__).resolve().parent.parent / "validation"
 if str(_validation_dir) not in sys.path:
     sys.path.insert(0, str(_validation_dir))
 
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
 from validate_version_bump import (  # noqa: E402
     get_version_build_from_git_ref,
     get_version_components,
@@ -34,15 +38,10 @@ from validate_version_bump import (  # noqa: E402
 
 
 def load_rw_config(project_root: Path) -> Dict[str, Any]:
-    config_path = project_root / "rw-config.yaml"
-    if not config_path.exists() or yaml is None:
-        return {}
-    try:
-        with open(config_path, encoding="utf-8") as f:
-            data = yaml.safe_load(f)
-        return data if isinstance(data, dict) else {}
-    except Exception:
-        return {}
+    # Backward-compatible alias; use shared loader from `rw_config_loader`.
+    from rw_config_loader import load_rw_config_or_empty
+
+    return load_rw_config_or_empty(project_root)
 
 
 def version_file_path(project_root: Path, config: Dict[str, Any]) -> Path:

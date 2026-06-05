@@ -18,6 +18,8 @@ import os
 from pathlib import Path
 from typing import Dict, Any, Optional, Tuple
 
+from rw_config_loader import load_rw_config_from_path
+
 # Add version scripts to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'version'))
 try:
@@ -47,12 +49,9 @@ class GitTagHandler:
         ]
         
         for config_path in config_paths:
-            if config_path.exists():
-                try:
-                    with open(config_path, 'r', encoding='utf-8') as f:
-                        return yaml.safe_load(f) or {}
-                except Exception as e:
-                    print(f"⚠️  Warning: Failed to load {config_path}: {e}")
+            cfg = load_rw_config_from_path(config_path)
+            if cfg is not None:
+                return cfg or {}
         
         return {}
     

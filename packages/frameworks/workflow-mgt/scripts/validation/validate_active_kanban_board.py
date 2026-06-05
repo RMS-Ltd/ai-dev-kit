@@ -28,6 +28,12 @@ except ImportError:
 from stamp_authority import MOSCOW_HEADER_RE  # noqa: E402
 from state_icons import match_canonical_at_start, parse_row_status_segment  # noqa: E402
 
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import load_rw_config  # noqa: E402
+
 _TERMINAL_CANONICAL = frozenset(
     {"COMPLETE", "CLOSED", "RESOLVED", "IMPLEMENTED", "FIXED"}
 )
@@ -47,17 +53,6 @@ _LEGACY_FORBIDDEN_SECTIONS = (
 )
 
 _PLACEHOLDER_LINE_RE = re.compile(r"^\s*\*\(")
-
-
-def load_rw_config(project_root: Path):
-    p = project_root / "rw-config.yaml"
-    if not p.exists() or yaml is None:
-        return None
-    try:
-        with open(p, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    except OSError:
-        return None
 
 
 def active_board_paths(project_root: Path) -> List[Path]:

@@ -20,6 +20,13 @@ try:
 except ImportError:
     yaml = None
 
+# Allow importing shared loader from parent `scripts/` directory.
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import load_rw_config  # noqa: E402
+
 CHECKLIST_TASK_RE = re.compile(
     r"^\s*-\s+\[[ xX]\]\s+\*\*(E\d+:S\d+:T\d+)",
     re.IGNORECASE,
@@ -49,17 +56,6 @@ class CoverageReport:
     @property
     def ok(self) -> bool:
         return not self.missing
-
-
-def load_rw_config(project_root: Path) -> Optional[dict]:
-    path = project_root / "rw-config.yaml"
-    if not path.exists() or yaml is None:
-        return None
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
 
 
 def kanban_root(project_root: Path, config: Optional[dict]) -> Path:

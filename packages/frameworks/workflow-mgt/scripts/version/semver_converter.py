@@ -24,38 +24,15 @@ Registry-based mapping ensures monotonic SemVer increases while preserving seman
 import argparse
 import yaml
 import os
+import sys
 from pathlib import Path
 from typing import Tuple, Dict, Any, Optional
 
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
-def load_rw_config() -> Dict[str, Any]:
-    """Load RW configuration from YAML file."""
-    # Start from script location and walk up to find project root
-    current = Path(__file__).parent
-    while current != current.parent:
-        config_file = current / "rw-config.yaml"
-        if config_file.exists():
-            break
-        # Also check one level up (common project root location)
-        parent_config = current.parent / "rw-config.yaml"
-        if parent_config.exists():
-            config_file = parent_config
-            break
-        current = current.parent
-    
-    # Default: assume project root is 4 levels up from scripts/version/
-    if not 'config_file' in locals():
-        config_file = Path(__file__).parent.parent.parent.parent.parent / "rw-config.yaml"
-    
-    if not config_file.exists():
-        return {}
-    
-    try:
-        with open(config_file, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f) or {}
-    except Exception as e:
-        print(f"⚠️  Warning: Failed to load RW config: {e}")
-        return {}
+from rw_config_loader import find_project_root, load_rw_config_or_empty  # noqa: E402
 
 
 def get_semver_mapping_strategy() -> str:
@@ -65,7 +42,7 @@ def get_semver_mapping_strategy() -> str:
     Returns:
         "registry" (default) or "task_touch"
     """
-    config = load_rw_config()
+    config = load_rw_config_or_empty(find_project_root(Path(__file__).parent))
     strategy = config.get("semver_mapping_strategy", "registry")
     
     if strategy not in ["registry", "task_touch"]:

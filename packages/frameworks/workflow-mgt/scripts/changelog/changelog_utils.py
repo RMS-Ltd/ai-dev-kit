@@ -7,9 +7,17 @@ Common utilities for CMW scripts: version parsing, entry extraction, date parsin
 
 import re
 from datetime import datetime, timedelta
+import sys
 from pathlib import Path
 from typing import Tuple, List, Optional, Dict, NamedTuple
 import yaml
+
+# Allow importing shared loader from parent `scripts/` directory.
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import load_rw_config as shared_load_rw_config  # noqa: E402
 
 # Version patterns
 OLD_VERSION_PATTERN = re.compile(r"## \[(\d+)\.(\d+)\.(\d+)\.(\d+)\] - (\d{4}-\d{2}-\d{2})")
@@ -177,19 +185,9 @@ def compare_versions(v1: Tuple[int, int, int, int, int], v2: Tuple[int, int, int
 
 
 def load_rw_config(project_root: Path = None) -> Optional[Dict]:
-    """Load rw-config.yaml if it exists."""
-    if project_root is None:
-        project_root = Path.cwd()
-    
-    config_path = project_root / "rw-config.yaml"
-    if not config_path.exists():
-        return None
-    
-    try:
-        with open(config_path, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+    """Backward-compatible wrapper; logic is centralized in `rw_config_loader`."""
+
+    return shared_load_rw_config(project_root)
 
 
 def get_main_changelog_path(config: Optional[Dict] = None) -> Path:

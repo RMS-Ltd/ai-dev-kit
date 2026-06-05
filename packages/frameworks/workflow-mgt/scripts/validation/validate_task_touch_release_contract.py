@@ -39,6 +39,12 @@ try:
 except ImportError:
     yaml = None
 
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import load_rw_config_or_empty  # noqa: E402
+
 
 def _project_root(start: Path) -> Path:
     current = start.resolve()
@@ -46,18 +52,6 @@ def _project_root(start: Path) -> Path:
         if (parent / "rw-config.yaml").exists():
             return parent
     return current
-
-
-def _load_rw_config(root: Path) -> Dict[str, Any]:
-    cfg = root / "rw-config.yaml"
-    if not cfg.exists() or yaml is None:
-        return {}
-    try:
-        with open(cfg, encoding="utf-8") as f:
-            data = yaml.safe_load(f)
-        return data if isinstance(data, dict) else {}
-    except Exception:
-        return {}
 
 
 def _load_internal_version(root: Path, config: Dict[str, Any]) -> Optional[str]:
@@ -106,7 +100,7 @@ def validate_task_touch_release_contract(
     if get_semver_mapping_strategy() != "task_touch":
         return True, []
 
-    config = _load_rw_config(root)
+    config = load_rw_config_or_empty(root)
     internal = (internal_version or _load_internal_version(root, config) or "").lstrip("v")
     if not internal:
         return False, ["Could not determine internal version from version file."]

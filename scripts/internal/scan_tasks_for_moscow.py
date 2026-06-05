@@ -5,22 +5,17 @@ Part of E6:S01:T34 - UKW MoSCOW Prioritization Missing implementation.
 """
 
 import re
+import sys
 import yaml
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from datetime import datetime
 
-def load_rw_config() -> Optional[Dict]:
-    """Load rw-config.yaml if it exists."""
-    config_path = Path("rw-config.yaml")
-    if not config_path.exists():
-        return None
-    
-    try:
-        with open(config_path, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import load_rw_config  # noqa: E402
 
 def extract_task_metadata(task_file: Path) -> Optional[Dict]:
     """Extract metadata from a task document."""

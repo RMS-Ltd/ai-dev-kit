@@ -36,18 +36,11 @@ if str(_KANBAN_DIR) not in sys.path:
 
 from ukw_syntax_parser import parse_single_task_id  # noqa: E402
 
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
-def load_rw_config(project_root: Path = None) -> Optional[Dict]:
-    if project_root is None:
-        project_root = Path.cwd()
-    config_path = project_root / "rw-config.yaml"
-    if not config_path.exists() or yaml is None:
-        return None
-    try:
-        with open(config_path, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+from rw_config_loader import load_rw_config  # noqa: E402
 
 
 def get_version_file_path(config: Optional[Dict]) -> Path:

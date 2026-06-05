@@ -28,6 +28,8 @@ try:
 except ImportError:
     yaml = None  # type: ignore[assignment,misc]
 
+from rw_config_loader import load_rw_config_from_path
+
 try:
     from semver_converter import convert_version_string
 except ImportError:
@@ -55,13 +57,9 @@ def _walk_up_for_file(start: Path, name: str, *, max_depth: int = 32) -> Optiona
 
 def _load_rw_config(project_root: Path) -> Optional[dict]:
     cfg_path = _walk_up_for_file(project_root, "rw-config.yaml")
-    if cfg_path is None or yaml is None:
+    if cfg_path is None:
         return None
-    try:
-        with open(cfg_path, "r", encoding="utf-8") as handle:
-            return yaml.safe_load(handle)
-    except Exception:
-        return None
+    return load_rw_config_from_path(cfg_path)
 
 
 def _read_version_string_from_file(version_file: Path) -> Optional[str]:

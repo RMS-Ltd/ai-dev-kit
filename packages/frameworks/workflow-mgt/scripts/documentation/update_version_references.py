@@ -23,19 +23,11 @@ except ImportError:
     yaml = None
 
 
-def load_rw_config(config_path: Optional[Path] = None) -> Optional[Dict]:
-    """Load rw-config.yaml if it exists."""
-    if config_path is None:
-        config_path = Path.cwd() / "rw-config.yaml"
-    
-    if not config_path.exists() or yaml is None:
-        return None
-    
-    try:
-        with open(config_path, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import load_rw_config_from_path
 
 
 def get_version_file_path(config: Optional[Dict] = None) -> Path:
@@ -187,7 +179,7 @@ def main():
     args = parser.parse_args()
     
     # Load config
-    config = load_rw_config(args.config)
+    config = load_rw_config_from_path(args.config)
     
     # Get version
     version_file = args.version_file or get_version_file_path(config)

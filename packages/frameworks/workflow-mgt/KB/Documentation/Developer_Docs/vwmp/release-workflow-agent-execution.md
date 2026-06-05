@@ -1702,6 +1702,10 @@ The Versioning Policy requires that:
 
 The four surfaces must converge as: idempotent (repeated runs produce no changes), deterministic (identical input + commit produces identical output), and ordered (host task → source FBU → kboard → fbuboard).
 
+**Entrypoint boundaries:** The canonical shared row-transform entrypoint contract (RW Step 7 vs standalone/UKW contexts) and the unified `rw_config_loader` behavior are documented as:
+- [`kanban-transform-entrypoint-boundary.md`](kanban-transform-entrypoint-boundary.md)
+- [`rw-config-loader-entrypoint-boundary.md`](rw-config-loader-entrypoint-boundary.md)
+
 **🚨 MANDATORY BLOCKING STEP - DO NOT BYPASS**
 
 **Step Definition:**

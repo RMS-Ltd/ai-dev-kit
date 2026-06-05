@@ -39,17 +39,11 @@ try:
 except ImportError:
     yaml = None
 
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
-def load_rw_config(project_root: Path):
-    """Load rw-config.yaml if present."""
-    cfg = project_root / "rw-config.yaml"
-    if not cfg.exists() or yaml is None:
-        return None
-    try:
-        with open(cfg, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+from rw_config_loader import load_rw_config  # noqa: E402
 
 
 def load_internal_version(project_root: Path) -> str:

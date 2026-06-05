@@ -25,32 +25,14 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
-
-def load_rw_config(config_path: Optional[Path] = None) -> Optional[Dict]:
-    """Load rw-config.yaml if it exists."""
-    if config_path is None:
-        # Try project root
-        project_root = Path.cwd()
-        config_path = project_root / "rw-config.yaml"
-        if not config_path.exists():
-            return None
-    
-    if not config_path.exists():
-        return None
-    
-    if yaml is None:
-        return None
-    
-    try:
-        with open(config_path, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+from rw_config_loader import (  # noqa: E402
+    load_rw_config as shared_load_rw_config,
+    load_rw_config_from_path,
+)
 
 
 def extract_epic_number(epic_header: str) -> Optional[int]:
@@ -364,7 +346,11 @@ def main():
     board_path = args.board_path
     if board_path is None:
         # Try config first
-        config = load_rw_config(args.config)
+        config = (
+            shared_load_rw_config(Path.cwd())
+            if args.config is None
+            else load_rw_config_from_path(args.config)
+        )
         if config and 'kanban_root' in config and 'kanban_board' in config:
             kanban_root = Path(config['kanban_root'])
             kanban_board = config['kanban_board']

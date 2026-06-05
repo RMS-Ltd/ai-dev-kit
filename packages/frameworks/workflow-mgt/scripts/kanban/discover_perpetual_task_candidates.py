@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
@@ -29,17 +30,11 @@ TASK_ID_LINE_RE = re.compile(
 )
 
 
-def load_rw_config(project_root: Path) -> Optional[dict]:
-    path = project_root / "rw-config.yaml"
-    if not path.exists():
-        return None
-    try:
-        import yaml
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
-        with open(path, encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+from rw_config_loader import load_rw_config  # noqa: E402
 
 
 def kanban_epics_root(project_root: Path, config: Optional[dict]) -> Path:

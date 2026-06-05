@@ -25,7 +25,6 @@ housekeeping_policy: keep
 
 ### Must Have (M) - Critical Tasks
 
-- **E02:S13:T10** – Kanban Transform Consolidation - 📋 TODO (HIGH, RC remediation GAP-INTG-001) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) | [Story](epics/epic-02/story-13-workflow-management-package-implementation-review.md) | Last modified: 2026-06-05 14:00 UTC
 
 ### Should Have (S) - Important Tasks
 

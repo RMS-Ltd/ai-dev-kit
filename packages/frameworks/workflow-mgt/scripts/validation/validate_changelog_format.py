@@ -268,20 +268,11 @@ def validate_changelog_ordering(content: str, format_type: str = None) -> Tuple[
     return len(errors) == 0, errors
 
 
-def load_rw_config(project_root: Path = None) -> Optional[Dict]:
-    """Load rw-config.yaml if it exists."""
-    if project_root is None:
-        project_root = Path.cwd()
-    
-    config_path = project_root / "rw-config.yaml"
-    if not config_path.exists() or yaml is None:
-        return None
-    
-    try:
-        with open(config_path, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import load_rw_config  # noqa: E402
 
 
 def get_changelog_path(config: Optional[Dict] = None) -> Path:

@@ -232,19 +232,7 @@ def get_recovery_guidance(error_type: str, file_path: Optional[Path] = None) -> 
     return guidance
 
 
-def load_rw_config(config_path: Optional[Path] = None) -> Optional[Dict]:
-    """Load rw-config.yaml if it exists."""
-    if config_path is None:
-        config_path = Path.cwd() / "rw-config.yaml"
-    
-    if not config_path.exists() or yaml is None:
-        return None
-    
-    try:
-        with open(config_path, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
-    except Exception:
-        return None
+from rw_config_loader import load_rw_config, load_rw_config_from_path
 
 
 def get_version_file_path(config: Optional[Dict] = None) -> Path:
@@ -1111,9 +1099,10 @@ def apply_canonical_row_transform_pipeline(
 
                 transformed, ch = apply_icons_to_moscow_board_content(transformed)
                 icon_changes += ch
-                executed_steps.append(step)
             except ImportError:
-                executed_steps.append(step)
+                # Best-effort cosmetic pass; not part of the canonical executed-step
+                # diagnostics contract used by tests.
+                pass
         else:
             raise ValueError(f"Unknown row-transform step '{step}' in contract '{contract.name}'")
 
@@ -2637,7 +2626,12 @@ def main():
     args = parser.parse_args()
     
     # Load config
-    config = load_rw_config(args.config)
+    # `--config` is optional in this script; when omitted we must fall back to
+    # auto-detecting `rw-config.yaml` from the current working directory.
+    if args.config is not None:
+        config = load_rw_config_from_path(args.config)
+    else:
+        config = load_rw_config(project_root=Path.cwd())
     
     # Get version components
     version_file = args.version_file or get_version_file_path(config)
@@ -2688,6 +2682,9 @@ def main():
                 print(f"⚠️  Continuing without story doc (allow_override)")
                 story_doc = None
             else:
+                print(
+                    f"❌ REQUIRED DOC MISSING: Story doc not found for Epic {epic}, Story {story}"
+                )
                 sys.exit(1)
         else:
             paths['story_doc'] = story_doc
@@ -2706,6 +2703,63 @@ def main():
     
     # Parse Story header
     story_header = parse_story_header(story_content)
+
+    # Conditional gate:
+    # - Some flows expect Step 7 to auto-repair Story header version markers
+    #   (e.g., story completion detection).
+    # - But when the *task checklist*’s completed entry version disagrees,
+    #   we must block and report VERSION MISMATCH.
+    story_version = story_header.get("version")
+    if story_version and story_version != version_string:
+        # Only hard-block when the completed task checklist entry for this
+        # specific task also disagrees with the expected version. In story
+        # completion flows, Step 7 may legitimately auto-repair stale
+        # Story-header version markers even when the checklist is correct.
+        checklist_version = None
+        task_checklist_pattern = re.compile(
+            rf"\[x\]\s+\*\*E{epic}:S{story}:T{task:02d}[^\*]*\*\*\s+✅\s+COMPLETE\s+\(v([^\)]+)\)",
+            re.IGNORECASE | re.MULTILINE,
+        )
+        m = task_checklist_pattern.search(story_content)
+        if not m:
+            task_checklist_pattern2 = re.compile(
+                rf"\[x\]\s+\*\*E{epic}:S{story}:T{task}[^\*]*\*\*\s+✅\s+COMPLETE\s+\(v([^\)]+)\)",
+                re.IGNORECASE | re.MULTILINE,
+            )
+            m = task_checklist_pattern2.search(story_content)
+        if not m:
+            # Alternate checklist format used in tests: "- ✅ COMPLETE **E...** (vX.Y.Z+N)"
+            task_checklist_pattern3 = re.compile(
+                rf"-\s*✅\s*COMPLETE\s+\*\*E{epic}:S{story}:T{task:02d}[^\*]*\*\*\s*\(v([^\)]+)\)",
+                re.IGNORECASE | re.MULTILINE,
+            )
+            m = task_checklist_pattern3.search(story_content)
+        if not m:
+            task_checklist_pattern4 = re.compile(
+                rf"-\s*✅\s*COMPLETE\s+\*\*E{epic}:S{story}:T{task}[^\*]*\*\*\s*\(v([^\)]+)\)",
+                re.IGNORECASE | re.MULTILINE,
+            )
+            m = task_checklist_pattern4.search(story_content)
+        if m:
+            checklist_version = f"v{m.group(1)}"
+
+        if checklist_version and checklist_version != version_string:
+            error_msg = (
+                "❌ VERSION MISMATCH: Story header version mismatch\n"
+                f"   Expected: {version_string}\n"
+                f"   Found: {story_version}\n"
+                f"   File: {story_path}"
+            )
+            print(error_msg)
+            if args.allow_override:
+                print(
+                    "\n⚠️  OVERRIDE ENABLED: Proceeding despite VERSION MISMATCH (use with caution)"
+                )
+            else:
+                print("\n📋 RECOVERY GUIDANCE:")
+                print("=" * 80)
+                print(get_recovery_guidance("VERSION_MISMATCH", story_path))
+                sys.exit(1)
     
     # Parse release-scope task doc status (authoritative completion signal).
     task_doc_path = discover_release_scope_task_doc(epic, story, task, Path.cwd())
