@@ -1320,6 +1320,14 @@ def validate_version_bump(
         
         if not doc_init_valid:
             errors.extend(doc_init_errors)
+    elif doc_policy_zero:
+        # BR-097: --doc-policy-zero only applies to BUILD=0 doc-init; never for follow-on BUILD≥1
+        errors.append(
+            "❌ --doc-policy-zero blocked: flag is only valid when VERSION_BUILD=0 (doc-init / explicit BUILD +0). "
+            f"Current VERSION_BUILD={current_build}. Same-task follow-on releases require BUILD +1 "
+            f"(normal `RW E{epic}:S{story}:T{current_task} --art`). "
+            "See BR-097 / CHANGELOG_v0.2.16.3+3."
+        )
     else:
         # Normal build (BUILD >= 1) - validate that it's not incorrectly using doc-init
         # This is handled in version bump logic validation below

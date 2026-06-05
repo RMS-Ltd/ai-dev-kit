@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S01:T24 — RW BUILD increment enforcement and release-tag immutability (BR-097)
 
 **Task ID:** E02:S01:T24  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.2.1.24+0** — kanban-init intake)  
-**Version Anchor:** v0.2.1.24+0  
+**Last updated:** 2026-06-05 (RW **v0.2.1.24+1** — BR-097 closure)  
+**Version Anchor:** v0.2.1.24+1  
 **Code:** E02S01T24
 
 Publication Status: NOT_APPLICABLE
@@ -32,6 +32,7 @@ Stop RW agents from **reusing tagged BUILD numbers** and **force-moving release 
 ## Input
 
 - [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) — problem statement, prior-work failure analysis, acceptance criteria
+- [IPP-E02S01T24](../../../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md) — IPW implementation plan (Sections 1–7)
 - [CHANGELOG_v0.5.9.14+3](../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+3.md) — partial `validate_tagged_build_collision` (Step 9 only)
 - `.cursorrules` · `.claude/commands/rw.md` · `.claude/commands/ipw.md` · `AGENTS.md`
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
@@ -103,6 +104,8 @@ Mirror [BR-097 AC1–AC7](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and
 
 ## Related
 
+- [IPP-E02S01T24](../../../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
+- [ADR-019](../../../../architecture/standards-and-adrs/ADR-019-rw-build-increment-and-tag-immutability.md)
 - [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 - [E05:S09:T14](../../../epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) — trigger incident
 - [Story 001 – RW Agent Execution & Docs](../story-01-rw-agent-execution-and-docs.md)

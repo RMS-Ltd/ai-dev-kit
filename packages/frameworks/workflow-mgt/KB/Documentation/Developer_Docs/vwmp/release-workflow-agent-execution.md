@@ -638,6 +638,16 @@ For full RW / `RW -d`, releasable statuses are **IN PROGRESS**, **COMPLETE**, or
 
 **🚨 MANDATORY: Follow this 8-step procedure (A-H) exactly. Do not skip any step.**
 
+**C.1. RESOLVE BUILD (BR-097 / E02:S01:T24 — before writing `version_file`):**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--doc-policy-zero] [--perpetual-same-task]
+```
+
+- Non-zero exit → **RW ABORTED** at Step 2 (do not edit changelogs or kanban).
+- Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
+- **FORBIDDEN:** tagged BUILD reuse; `git tag -f` / force-push on release tags; inferred `--doc-policy-zero` for post-ship verification waves.
+
 **A. CHECK UKW CONTEXT (BEFORE READING VERSION):**
 1. **ANALYZE:**
    - **CRITICAL:** Check if this RW was triggered immediately after UKW execution

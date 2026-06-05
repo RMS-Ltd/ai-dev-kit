@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (E04:S19:T12 — Wave 4 closure)
-**Version:** v0.4.19.12+4
+**Last Updated:** 2026-06-05 (E02:S01:T24 — BR-097 RESOLVED)
+**Version:** v0.2.1.24+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 2: Workflow Management Framework (Story 1 — RW Agent Execution & Docs)**
+- **[E02:S01:T24](epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)** — **BR-097**: RW BUILD increment enforcement + release-tag immutability (`resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contract).
+  **Completed:** `2026-06-05T02:37:30Z` | **Version:** `v0.2.1.24+1` | **Agent:** `RW --art` | [BR-097](fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [ADR-019](../../architecture/standards-and-adrs/ADR-019-rw-build-increment-and-tag-immutability.md) | [IPP](../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
 
 #### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR abstract governance)**
 - **[E04:S19:T12](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)** — **UXR-020 R3**: Single-board consolidation — `kboard` sole active MoSCOW; `fbuboard` deprecated stub; V-band; kanban-root `fr-br-uxr-*` aliases removed (Waves 1–4).

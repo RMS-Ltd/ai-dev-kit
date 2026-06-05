@@ -41,7 +41,10 @@ housekeeping_policy: keep
 | `RW -d E02:S16:T15` | **Docs-only release** (documentation path; not kanban drift repair). On an **existing** E:S:T use `--art` and optionally `--doc-policy-zero` (BUILD +0 policy; see [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
 | `RW -k E02:S16:T15` | Kanban-init release |
 | `… --art` | Adopt requested E:S:T as canonical version anchor |
+| `… --doc-policy-zero` | BUILD +0 only when **you** typed it, HEAD BUILD is **untagged**, and BUILD=0 doc-init path ([BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
 | `… --confirmed-override` | Step 1d intent override (after explicit user confirmation) |
+
+**Same-task follow-on release (BR-097):** Default is **BUILD +1** (`RW E02:S16:T15 --art`). Never reuse a tagged BUILD; never `git tag -f` on release tags — bump BUILD and re-RW instead.
 
 | | |
 | --- | --- |

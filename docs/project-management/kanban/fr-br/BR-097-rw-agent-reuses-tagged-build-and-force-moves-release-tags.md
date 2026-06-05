@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Bug Report BR-097: RW agents reuse tagged BUILD and force-move release tags instead of incrementing
 
 **Code:** BR-097  
-**Status:** OPEN  
+**Status:** RESOLVED  
 **Priority:** HIGH  
 **Severity:** HIGH — forensic corruption (version ↔ commit ↔ tag ↔ changelog divergence), wasted agent tokens, operator trust erosion. Guardrails that catch late do not prevent the failure mode.  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-05  
-**Version:** v0.2.1.24+0 (kanban-init intake)
+**Version:** v0.2.1.24+1 (implemented — E02:S01:T24)
 
 **Implementing Task:** [E02:S01:T24](../epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)
 
@@ -75,13 +75,13 @@ Agent bypassed `semver_converter.create_rw_tags` collision raise with manual `gi
 
 ## Acceptance Criteria
 
-- [ ] **AC1 — Agent FORBIDDEN contract** in `.cursorrules`, `.claude/commands/rw.md`, `AGENTS.md`: no BUILD reuse when tag exists; no `git tag -f` on release tags; `--doc-policy-zero` only if user typed it.
-- [ ] **AC2 — Step 2 deterministic resolver** (`resolve_rw_build.py` or equivalent): same E:S:T + tagged HEAD BUILD → next BUILD = HEAD+1 before any file edits.
-- [ ] **AC3 — IPW template** (`.claude/commands/ipw.md` / `PLAN_DOC_TEMPLATE.md`): verification/FBU waves prescribe `RW E:S:T --art` only; never `--doc-policy-zero` post-ship.
-- [ ] **AC4 — Tag immutability gate** in RW Step 11/12: block session that used `git tag -f` or `-f` push on `v*` release tags.
-- [ ] **AC5 — Recovery procedure** (`docs/journals/RECOVERY_PROCEDURE.md`): tag collision → bump BUILD, re-RW; never force-tag.
-- [ ] **AC6 — Regression tests** for resolver + tag-immutability validator + agent doc parity check.
-- [ ] **AC7 — De-emphasize or narrow** `--doc-policy-zero` in RW agent docs to doc-init (`RW -k` / BUILD=0) contexts.
+- [x] **AC1 — Agent FORBIDDEN contract** in `.cursorrules`, `.claude/commands/rw.md`, `AGENTS.md`: no BUILD reuse when tag exists; no `git tag -f` on release tags; `--doc-policy-zero` only if user typed it. **Evidence:** v0.2.1.24+1 — §C.2 FORBIDDEN blocks; `P-RW-BUILD` in AGENTS.md.
+- [x] **AC2 — Step 2 deterministic resolver** (`resolve_rw_build.py` or equivalent): same E:S:T + tagged HEAD BUILD → next BUILD = HEAD+1 before any file edits. **Evidence:** `resolve_rw_build.py`; `test_resolve_rw_build.py` T1–T3.
+- [x] **AC3 — IPW template** (`.claude/commands/ipw.md` / `PLAN_DOC_TEMPLATE.md`): verification/FBU waves prescribe `RW E:S:T --art` only; never `--doc-policy-zero` post-ship. **Evidence:** ipw.md RW prescription rules; PLAN_DOC_TEMPLATE §4 note.
+- [x] **AC4 — Tag immutability gate** in RW Step 11/12: block session that used `git tag -f` or `-f` push on `v*` release tags. **Evidence:** `validate_release_tag_immutability.py` Step 9; Step 11 FORBIDDEN in rw.md.
+- [x] **AC5 — Recovery procedure** (`docs/journals/RECOVERY_PROCEDURE.md`): tag collision → bump BUILD, re-RW; never force-tag. **Evidence:** RECOVERY_PROCEDURE §4.3; dev-kit-versioning-policy §1:1.
+- [x] **AC6 — Regression tests** for resolver + tag-immutability validator + agent doc parity check. **Evidence:** 10 pytest cases green; `rw-trigger-dual-source-parity.md` BR-097 checklist row.
+- [x] **AC7 — De-emphasize or narrow** `--doc-policy-zero` in RW agent docs to doc-init (`RW -k` / BUILD=0) contexts. **Evidence:** cheatsheet row; `validate_version_bump.py` BUILD≥1 rejection; resolver BUILD≥1 block.
 
 ---
 

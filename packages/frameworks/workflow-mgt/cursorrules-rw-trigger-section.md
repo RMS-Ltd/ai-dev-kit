@@ -301,9 +301,19 @@ For each step, follow this pattern:
        - **CRITICAL:** Version reflects completed task, not current VERSION_TASK
        - **CRITICAL:** Changelog entry will appear before higher task numbers (canonical ordering)
 
+   **C.1. RESOLVE BUILD (BR-097 — MANDATORY BEFORE `version.py` WRITE):**
+   ```bash
+   python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--doc-policy-zero] [--perpetual-same-task]
+   ```
+   - Non-zero exit → **RW ABORTED** at Step 2.
+   - Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
+   - `--doc-policy-zero` only when user typed it AND HEAD BUILD untagged AND BUILD=0 path.
+
+   **C.2. FORBIDDEN (BR-097):** No tagged BUILD reuse; no `git tag -f` / force-push on release tags; no inferred `--doc-policy-zero` for post-ship waves.
+
    **D. VALIDATE BEFORE UPDATING:**
    - Verify: New `VERSION_TASK` matches completed task number (unless UKW context)
-   - Verify: If new task, `VERSION_BUILD` = 1; if same task, `VERSION_BUILD` = current + 1
+   - Verify: `VERSION_BUILD` matches resolver `next_build`
    - Document decision: "Task {completed_task} completed. Current TASK={current_task}, BUILD={current_build}. Decision: {new_task/new_build} → TASK={new_task}, BUILD={new_build}"
 
    **E. UPDATE VERSION FILE:**
@@ -419,11 +429,12 @@ For each step, follow this pattern:
      5. **Update ALL Epic sections to match the updated Story file's state**
      6. Validate consistency: Story file, Epic header, Epic checklist, and Epic detailed sections must all match
 8. **Stage Files** - Run `git add -A` to stage all modified files
-9. **Run Validators** - Execute validation scripts. **Use config:** If `rw-config.yaml` exists, read `scripts_path` from config. Otherwise, use `packages/frameworks/workflow-mgt/scripts/validation/` as fallback. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md`). Run `validate_release_readiness.py` (Gates 1–9 including stamp homogeneity + MoSCOW state icons). All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For **docs-only** releases requiring **BUILD +0** on an **existing** E/S/T, add **`--doc-policy-zero`** to `validate_version_bump.py` (same **--strict** / **--requested** / **--art** line). **Note:** `validate_version_bump` supports perpetual tasks (`perpetual_task` or `Task Type: Perpetual Maintenance`). **Note:** `check_changelog_size.py` exit code 1 is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking (BR-074).
+9. **Run Validators** - Execute validation scripts. **Use config:** If `rw-config.yaml` exists, read `scripts_path` from config. Otherwise, use `packages/frameworks/workflow-mgt/scripts/validation/` as fallback. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, `validate_release_tag_immutability.py`, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md`). Run `validate_release_readiness.py` (Gates 1–9 including stamp homogeneity + MoSCOW state icons). All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For **docs-only** releases requiring **BUILD +0** on an **existing** E/S/T, add **`--doc-policy-zero`** to `validate_version_bump.py` (same **--strict** / **--requested** / **--art** line). **Note:** `validate_version_bump` supports perpetual tasks (`perpetual_task` or `Task Type: Perpetual Maintenance`). **Note:** `check_changelog_size.py` exit code 1 is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking (BR-074).
 9.5. **Changelog Management Workflow (CMW)** - **OPTIONAL, NON-BLOCKING:** If Step 9's `check_changelog_size.py` indicated threshold exceeded (exit code 1), automatically run CMW. Skip if not exceeded. CMW failures are non-blocking.
 9.6. **Check IDE-Flagged Problems (recommended before commit)** - **RECOMMENDED, NON-BLOCKING:** Before Step 10, check IDE/linter issues in modified files; fix where practical and re-stage.
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 11. **Create Git Tag** - Create tags via canonical strategy decision:
+   - **FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Tag collision → bump BUILD (+1) and re-RW.
    - **Canonical source**: Resolve tags with `semver_converter.get_rw_tag_info(internal_version, finalize=True)`.
    - **Default (Registry mode)**: Create primary annotated tag `v{version}`.
    - **Task-touch mode**: Create primary SemVer-core tag `vX.Y.Z` (no `+BUILD` in tag name); create internal traceability tag `v{version}` on same commit unless explicitly disabled.

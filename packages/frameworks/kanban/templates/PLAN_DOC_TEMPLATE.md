@@ -106,6 +106,8 @@ If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record �
 | … | … | … |
 | **N** | **[MANDATORY] Reconcile task `E{epic}:S{story}:T{task}` status** to actual implementation state: `COMPLETE` + `✅ COMPLETE (v{version})` if all ACs satisfied; `IN PROGRESS` if ongoing; `BLOCKED` + reason if blocked. Update `Last updated`. | Task doc status reflects actual state |
 
+**RW verification / FBU wave rule (BR-097):** Any post-ship verification or FBU-closure step in §4 must prescribe **`RW E{epic}:S{story}:T{task} --art`** only. Do **not** prescribe `--doc-policy-zero` for follow-on releases after a tagged BUILD.
+
 ### 4.1 Files to create or modify
 
 - …

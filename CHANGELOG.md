@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.1.24+0] - 05-06-26
+## [0.2.1.24+1] - 05-06-26
 
-E02:S01:T24 — **BR-097 intake:** RW BUILD increment enforcement + tag immutability; prior-work failure analysis. SemVer **v0.4.907+0**.
+E02:S01:T24 — **BR-097:** Step 2 `resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contracts, IPW/ADR-019. SemVer **v0.4.908+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.24+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.24+1.md)
 
 ---
 

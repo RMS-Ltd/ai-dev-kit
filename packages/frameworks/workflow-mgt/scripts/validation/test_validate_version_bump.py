@@ -552,6 +552,46 @@ def test_validate_tagged_build_collision_blocks_unchanged_build_when_tag_exists(
     assert ok2, errs2
 
 
+def test_doc_policy_zero_rejected_when_build_ge_one():
+    """BR-097 RF7: --doc-policy-zero must fail when VERSION_BUILD >= 1."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = Path(tmpdir)
+        orig_cwd = os.getcwd()
+        try:
+            os.chdir(tmp)
+            version_dir = tmp / "src" / "proj"
+            version_dir.mkdir(parents=True)
+            version_file = version_dir / "version.py"
+            version_file.write_text(
+                "VERSION_RC = 0\nVERSION_EPIC = 5\nVERSION_STORY = 9\n"
+                "VERSION_TASK = 14\nVERSION_BUILD = 2\n"
+            )
+            story_dir = tmp / "docs" / "kanban" / "epics" / "epic-05"
+            story_dir.mkdir(parents=True)
+            story_file = story_dir / "Story-009-test.md"
+            story_file.write_text(
+                "## Task Checklist\n- [x] **E05:S09:T14** — Done ✅ COMPLETE\n"
+            )
+            task_dir = story_dir / "story-09-docusaurus"
+            task_dir.mkdir(parents=True)
+            task_doc = task_dir / "T14-test.md"
+            task_doc.write_text(
+                "**Task ID:** E05:S09:T14\n**Scope:** test\n**Deliverable:** test\n"
+                "**Version Anchor:** v0.5.9.14+2\n**Status:** COMPLETE\n"
+            )
+            is_valid, errors = validate_version_bump(
+                version_file,
+                story_file=story_file,
+                requested="E05:S09:T14",
+                art=True,
+                doc_policy_zero=True,
+            )
+            assert not is_valid
+            assert any("doc-policy-zero blocked" in e for e in errors)
+        finally:
+            os.chdir(orig_cwd)
+
+
 def test_validate_perpetual_guardrails_warns_for_missing_marker_on_story_016_lane():
     content = """
 **Task ID:** E2:S16:T03

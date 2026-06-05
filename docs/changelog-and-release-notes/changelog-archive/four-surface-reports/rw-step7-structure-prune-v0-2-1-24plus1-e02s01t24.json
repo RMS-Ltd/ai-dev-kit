@@ -1,0 +1,14 @@
+{
+  "contract": "FR-097 structure-prune — RW Step 7 completed task row removal",
+  "release_scope": {
+    "task_id": "E02:S01:T24",
+    "version_string": "v0.2.1.24+1"
+  },
+  "rows": {
+    "E02:S01:T24": {
+      "allowed": true,
+      "reason": "COMPLETE v0.2.1.24+1 — archived to kanban-completed.md (RW Step 7)"
+    }
+  },
+  "timestamp_utc": "2026-06-05 02:37:30 UTC"
+}

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (E02:S01:T24 v0.2.1.24+0 — BR-097 intake)
+**Last Updated:** 2026-06-05 (E02:S01:T24 v0.2.1.24+1 — BR-097 RESOLVED)
 **Version:** v0.2.1.24+0
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
@@ -29,7 +29,6 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E02:S01:T24** – BR-097: RW BUILD increment + tag immutability — 📋 TODO (HIGH, stop agent BUILD reuse / `git tag -f`; Step 2 resolver + contract) | [Task](epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) | [BR-097](fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | Last modified: 2026-06-05 21:00 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
