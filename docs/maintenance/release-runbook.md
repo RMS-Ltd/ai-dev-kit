@@ -134,7 +134,7 @@ origin  https://github.com/RMS-Ltd/ai-dev-kit.git (push)
 
 ## � UCW – Update Changelog Workflow (Manual Stewardship)
 
-**Scope:** UCW keeps `CHANGELOG.md` limited to the most recent 20 releases via a manual, checklist-driven process documented in `docs/implementation-cycles/ICW-E7S01T06-specification.md`.
+**Scope:** UCW keeps `CHANGELOG.md` limited to the most recent 20 releases via a manual, checklist-driven process documented in `docs/implementation-cycles/ICW-E7S1T6-specification.md`.
 
 ### When to Run UCW
 - After RW Step 3 (Detailed Changelog) and before Step 8 (Validators).
@@ -155,7 +155,7 @@ origin  https://github.com/RMS-Ltd/ai-dev-kit.git (push)
 - Fails RW Step 8 if evidence is missing. Hook **never** edits changelog files.
 
 ### References
-- Spec/Test/Plan: `docs/implementation-cycles/ICW-E7S01T06-*.md`
+- Spec/Test/Plan: `docs/implementation-cycles/ICW-E7S1T6-*.md`
 - Task: `docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T06-update-changelog-workflow.md`
 - FR: `docs/project-management/kanban/fr-br/FR-057-update-changelog-workflow.md`
 

@@ -178,7 +178,7 @@ Both tags reference the same commit. Internal tag maintains backward compatibili
 
 - **One internal version → one SemVer:** The registry plus BUILD ensure that each internal version string maps to exactly one SemVer string. The converter (`semver_converter.py`) is the single source of truth for this mapping.
 - **One SemVer tag → one commit:** For each release, the SemVer tag and the internal tag MUST point to the **same commit**. No SemVer tag may point to a different commit than the one that contains the corresponding internal version for that release.
-- **Consequence:** If a SemVer tag already exists on the remote but points to a different commit than the current release, that is a violation; it MUST be corrected (e.g. by force-pushing the tag to the correct commit: `git push origin +vX.Y.Z+N`) before considering the release complete. An optional validator can check this before push (see Implementation below).
+- **Consequence (BR-097 / ADR-019):** If a release tag already exists on the remote, the release MUST **not** be force-moved. **Forbidden:** `git tag -f`, `git push -f`, or `git push origin +v*` on release tags. Recovery: increment `VERSION_BUILD` (+1) and re-run `RW E:S:T --art` so the new tag points at a new commit. See `docs/journals/RECOVERY_PROCEDURE.md` §4.3.
 
 ### README Version Display
 
@@ -1065,8 +1065,8 @@ The dev-kit policy:
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
 **Related Documentation:**
-- **[Versioning Quick Reference](versioning-quick-reference.md)** - 1-2 page summary for quick lookup ⚡
-- **[Dual-Versioning Guide](dual-versioning-package-managers.md)** - Managing `RC.EPIC.STORY.TASK+BUILD` + SemVer for package managers ⚠️
+- **[Versioning Quick Reference](../../architecture/standards-and-adrs/versioning-quick-reference.md)** - 1-2 page summary for quick lookup ⚡
+- **[Dual-Versioning Guide](../../architecture/standards-and-adrs/dual-versioning-package-managers.md)** - Managing `RC.EPIC.STORY.TASK+BUILD` + SemVer for package managers ⚠️
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md` - Practical worked examples
 - `docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md` (gap analysis)
 - `docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md` (findings)

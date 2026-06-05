@@ -9,8 +9,8 @@ housekeeping_policy: keep
 # E02:S16:T02 — Planning: Perpetual task inventory and classification (IPP)
 
 **Host Task:** [`T02-inventory-and-classify-workflow-perpetual-tasks.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) **(E02:S16:T02)**  
-**Planning for:** Exhaustive inventory, disposition, ID map, and tiered reference map for workflow-related perpetual anchors (unblocks [IPP-E2S16T03 §7 Tranche 3B](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md))  
-**Upstream:** [FR-088](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md), [IPP-E2S16T01](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md), [E4S19T03 investigation report](E4S19T03-e6s07-default-housing-investigation-report.md)  
+**Planning for:** Exhaustive inventory, disposition, ID map, and tiered reference map for workflow-related perpetual anchors (unblocks [IPP-E2S16T3 §7 Tranche 3B](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md))  
+**Upstream:** [FR-088](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md), [IPP-E2S16T1](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md), [E4S19T03 investigation report](E4S19T03-e6s07-default-housing-investigation-report.md)  
 **Status:** Published (inventory artifact; execution of link edits is **T03 Tranche 3B**)
 
 ---
@@ -22,8 +22,8 @@ housekeeping_policy: keep
 | ID | Requirement | Source |
 | ---- | ------------- | ------ |
 | RF1 | Exhaustive inventory of workflow-related perpetual anchors and mis-housed candidates | T02 AC1 |
-| RF2 | Each row: disposition (`migrate_to_S16` / `retain_with_rationale` / `deprecate_or_redirect`) + rationale | T02 AC2, IPP-E2S16T01 §2.3 |
-| RF3 | Old→new ID map for migrations, including `T101`/`T102`/`T103` and E6:S07 supersede chains | T02 AC3, IPP-E2S16T01 §2.4 |
+| RF2 | Each row: disposition (`migrate_to_S16` / `retain_with_rationale` / `deprecate_or_redirect`) + rationale | T02 AC2, IPP-E2S16T1 §2.3 |
+| RF3 | Old→new ID map for migrations, including `T101`/`T102`/`T103` and E6:S07 supersede chains | T02 AC3, IPP-E2S16T1 §2.4 |
 | RF4 | Reference map: surfaces + edit policy per surface class | T02 AC4 |
 | RF5 | Artifact linked from T01/T02; ready for T03 3B execution | T02 AC5 |
 
@@ -31,8 +31,8 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | ---- | ------------- | ------ |
-| RNF1 | Preserve historical anchors; no changelog tag rewrites | IPP-E2S16T01 RNF1 |
-| RNF2 | Reference map tiers: **ACTIVE_FIX** vs **ARCHIVE_STUB** vs **DEFER** (changelog archive not bulk-rewritten in 3B) | IPP-E2S16T03 §5.3 |
+| RNF1 | Preserve historical anchors; no changelog tag rewrites | IPP-E2S16T1 RNF1 |
+| RNF2 | Reference map tiers: **ACTIVE_FIX** vs **ARCHIVE_STUB** vs **DEFER** (changelog archive not bulk-rewritten in 3B) | IPP-E2S16T3 §5.3 |
 
 ### 1.3 Invariants and boundaries
 
@@ -42,8 +42,8 @@ housekeeping_policy: keep
 ### 1.4 Referenced sources
 
 - Host: [`T02`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
-- Policy IPP: [`IPP-E2S16T01`](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
-- Re-house IPP: [`IPP-E2S16T03`](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md)
+- Policy IPP: [`IPP-E2S16T1`](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
+- Re-house IPP: [`IPP-E2S16T3`](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md)
 - E6:S07 drift: [`E4S19T03-e6s07-default-housing-investigation-report.md`](E4S19T03-e6s07-default-housing-investigation-report.md)
 
 ---
@@ -60,14 +60,14 @@ Two-pass merge (reproducible):
 
 1. **Marker scan** — task docs under `docs/project-management/kanban/epics/**/T*.md` for `Task Type: Perpetual Maintenance`, `perpetual_task: true`, `Historical Anchor:`, `SUPERSEDED`.
 2. **Workflow-keyword scan** — UKW, CMW, RW maintenance, kanban hygiene, perpetual workflow (catch mis-housed candidates without marker).
-3. **Seed merge** — IPP-E2S16T01 §2.4; story-016 T03/T04/T05/T10; E4S19 report §5; epic-06 story-007 checklist rows tagged UKW/CMW/perpetual.
+3. **Seed merge** — IPP-E2S16T1 §2.4; story-016 T03/T04/T05/T10; E4S19 report §5; epic-06 story-007 checklist rows tagged UKW/CMW/perpetual.
 
 **Helper (2026-06-03):** `packages/frameworks/workflow-mgt/scripts/kanban/discover_perpetual_task_candidates.py --json`  
 **Run evidence:** `marker_count=6`, `keyword_count=65`, `unique_candidates=65` (keyword pass is broad; inventory table below is the curated authoritative set).
 
 ### 2.3 Disposition taxonomy (AC2)
 
-Uses IPP-E2S16T01 definitions unchanged:
+Uses IPP-E2S16T1 definitions unchanged:
 
 | Disposition | Meaning |
 | ----------- | ------- |
@@ -79,7 +79,7 @@ Uses IPP-E2S16T01 definitions unchanged:
 
 | Candidate / legacy | Current location | Disposition | Canonical target | Rationale |
 | ------------------ | ---------------- | ----------- | ---------------- | --------- |
-| `T101` (UKW) | Historical / E6:S06 legacy | `migrate_to_S16` (alias) | `E02:S16:T03` | IPP-E2S16T01 §2.4; RW attribution → umbrella |
+| `T101` (UKW) | Historical / E6:S06 legacy | `migrate_to_S16` (alias) | `E02:S16:T03` | IPP-E2S16T1 §2.4; RW attribution → umbrella |
 | `T102` (CMW) | Historical / E6:S06 legacy | `migrate_to_S16` (alias) | `E02:S16:T03` | Same |
 | `T103` (RW maint.) | Historical / E6:S06 legacy | `migrate_to_S16` (alias) | `E02:S16:T03` | Same |
 | `E02:S16:T03` | story-016 | `retain_with_rationale` | — | Workflow-maintenance umbrella (perpetual) |
@@ -88,7 +88,7 @@ Uses IPP-E2S16T01 definitions unchanged:
 | `E02:S16:T10` | story-016 | `retain_with_rationale` | — | Repo infrastructure perpetual lane |
 | `E06:S06:T101` | epic-06 (UKW perpetual) | `deprecate_or_redirect` | `E02:S16:T03` | Superseded by S16 policy; historical BUILD preserved |
 | `E06:S06:T102` | epic-06 (CMW perpetual) | `deprecate_or_redirect` | `E02:S16:T03` | Same |
-| `E06:S07:T11` | epic-06 (UKW doc) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 re-house (IPP-E2S16T03) |
+| `E06:S07:T11` | epic-06 (UKW doc) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 re-house (IPP-E2S16T3) |
 | `E06:S07:T13` | epic-06 (CMW doc) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 |
 | `E06:S07:T16` | epic-06 (CMW) | `deprecate_or_redirect` | `E02:S16:T03` | Tranche 1 |
 | `E06:S07:T106` | epic-06 | `deprecate_or_redirect` | `E02:S16:T03` | SUPERSEDED → T03 (Tranche 1) |
@@ -150,7 +150,7 @@ print(t,f)"
 
 | ADR criterion | Score | Notes |
 | ------------- | ----- | ----- |
-| New architectural decision required? | No | Executes FR-088 / IPP-E2S16T01 |
+| New architectural decision required? | No | Executes FR-088 / IPP-E2S16T1 |
 | Cross-cutting runtime behavior change? | No | Doc inventory only |
 | **ADR outcome** | **EXEMPT** | Inventory implements existing policy |
 
@@ -180,7 +180,7 @@ Doc-only task — tests validate **inventory artifact integrity**:
 6. **Verification:** T02 AC1–AC5 checked with evidence in task doc.
 7. **[MANDATORY final step]** T02 → **COMPLETE**; version anchor on `RW E02:S16:T02 --art`.
 
-**Post-IPW (separate authorization):** T03 **Tranche 3B** per [IPP-E2S16T03 §4.4 Step 5](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md).
+**Post-IPW (separate authorization):** T03 **Tranche 3B** per [IPP-E2S16T3 §4.4 Step 5](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md).
 
 ---
 
@@ -188,7 +188,7 @@ Doc-only task — tests validate **inventory artifact integrity**:
 
 | Action | Path |
 | ------ | ---- |
-| CREATE | `docs/implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md` (this file) |
+| CREATE | `docs/implementation-cycles/IPP-E2S16T2-perpetual-task-inventory.md` (this file) |
 | CREATE | `packages/frameworks/workflow-mgt/scripts/kanban/discover_perpetual_task_candidates.py` |
 | UPDATE | T02, T01, T03, story-016, `kboard.md` |
 | NONE | New ADR; portal sidebar beyond standard `docs/` IPP |

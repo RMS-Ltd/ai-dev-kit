@@ -22,7 +22,7 @@ See [ADR-010](../../../docs/architecture/standards-and-adrs/ADR-010-ukw-archive-
 
 When the user invokes **`UKW --rp`** (standalone only):
 
-1. Run Steps 1, 2, 6 (deep MoSCOW on `kboard.md` + `fbuboard.md`), 6.5, 7–9 per agent execution guide — skip 2.5 and 3–5 unless status mismatch blocks reprioritization.
+1. Run Steps 1, 2, 6 (deep MoSCOW on `kboard.md` + `kboard.md`), 6.5, 7–9 per agent execution guide — skip 2.5 and 3–5 unless status mismatch blocks reprioritization.
 2. Classify each moved row with evidence: **intent**, **dependencies**, **blockers**, or **impact**.
 3. Emit `## Reprioritization rationale` in Step 9 summary (one line per moved row; `No priority changes.` if idempotent re-run).
 4. **Do not** batch-rewrite row `Last modified` stamps (FR-097). **Do not** use `--rp` during RW Step 7.
@@ -34,9 +34,9 @@ See [ADR-009](../../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-rep
 Run **FBU substeps** on **comprehensive** (`UKW` no flags) and **bookkeeping** (`UKW -u`) paths only — not on `-p` / `-a` priority-only runs:
 
 1. **fbuboard cleanup** — deterministic active-row reconciliation (Step 7 below).
-2. **`fbu-completed.md` timestamps** — ISO 8601 completions in the same run via [fr-br-uxr-completed-update](../fr-br-uxr-completed-update/SKILL.md).
+2. **`intake-completed.md` timestamps** — ISO 8601 completions in the same run via [fr-br-uxr-completed-update](../fr-br-uxr-completed-update/SKILL.md).
 3. **20-recent dashboard** — rebuild `## 20 Most Recently Completed FR/BR/UXR Items` (format aligned with `kanban-completed.md`).
-4. **Cross-doc consistency** — `fbuboard.md` ↔ `fbu-completed.md` ↔ `fbu-structure.md`.
+4. **Cross-doc consistency** — `kboard.md` ↔ `intake-completed.md` ↔ `intake-structure.md`.
 
 YAML substeps: `step-6-5`, `step-6-6`, `step-6-7` in `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/update-kanban-workflow.yaml`. Agent guide: Step 6.5–6.7 in `update-kanban-workflow-agent-execution.md`.
 
@@ -92,19 +92,19 @@ The MoSCOW priority list is updated LAST.
 - Ensure consistent prioritization across hierarchy
 
 **Step 5: Board Synchronization**
-- Update kanban-board.md with latest status
+- Update kboard.md with latest status
 - Ensure all sections reflect current reality
 - Validate consistency across all documents
 - Update board version and metadata
 
 **Step 6: Board Cleanup (lean active board)**
-- **Ledger first:** append `kanban-completed.md` / `fbu-completed.md` before removing any terminal row from active MoSCOW
+- **Ledger first:** append `kanban-completed.md` / `intake-completed.md` before removing any terminal row from active MoSCOW
 - Scan MoSCOW for terminal rows (`COMPLETE`, `RESOLVED`, shipped Won't) and **prune** after ledger update
-- **Forbidden:** archive footnote paragraphs on `kboard.md` / `fbuboard.md`; `**YYYY-MM-DD:**` journal lines between rows; leaving `✅ COMPLETE` on the active board
+- **Forbidden:** archive footnote paragraphs on `kboard.md`; `**YYYY-MM-DD:**` journal lines between rows; leaving `✅ COMPLETE` on the active board
 - **BR-059 (narrow):** do not auto-add every story-checklist `TODO` during UKW — keep existing **Could Have** backlog; prune terminal rows + journal/footnote bloat only (FR-109)
 - Active board = live priorities; backlog remains in story checklists and `fr-br/` until promoted
 
-**Step 7: FR/BR/UXR Board Cleanup (`fbuboard.md`) — FR-050 / FR-076 / FR-097**
+**Step 7: FR/BR/UXR Board Cleanup (`kboard.md`) — FR-050 / FR-076 / FR-097**
 - Analyze FR/BR/UXR completion status from linked `fr-br/*.md` source docs
 - Treat fbuboard sync as **required** in comprehensive and bookkeeping paths (not best-effort)
 - Apply deterministic active-row reconciliation:
@@ -117,10 +117,10 @@ The MoSCOW priority list is updated LAST.
   - New/missing stamps: `backfill_board_row_stamps.py` or `update_kanban_docs.py` with `non_substantive` / `gated` evidence only.
   - Snapshot at UKW start; `validate_board_stamp_diff.py` before stage — **abort** on failure.
   - Pre-commit blocks ≥3 rows with identical stamp (`homogeneity_threshold: 3` in `rw-config.yaml`).
-- Apply concurrency guard: re-read `fbuboard.md` before write if changed mid-run; re-apply transforms
+- Apply concurrency guard: re-read `kboard.md` before write if changed mid-run; re-apply transforms
 - Emit reconciliation summary (audited, removed, kept exceptions, revalidation triggered)
 
-**Step 8: FR/BR/UXR Temporal Tracking (`fbu-completed.md`) — FR-050**
+**Step 8: FR/BR/UXR Temporal Tracking (`intake-completed.md`) — FR-050**
 - In the **same UKW run** as Step 7, for each FBU removed from active fbuboard sections:
   - Follow [fr-br-uxr-completed-update/SKILL.md](../fr-br-uxr-completed-update/SKILL.md)
   - Append/update entries with ISO 8601 timestamps (`YYYY-MM-DDTHH:MM:SSZ`)
@@ -129,8 +129,8 @@ The MoSCOW priority list is updated LAST.
 - Deduplicate dashboard IDs; preserve link integrity to source FR/BR/UXR docs
 
 **Step 9: FR/BR/UXR Cross-Document Consistency — FR-050**
-- Update `fbu-structure.md` inventory when `fr-br/` changed
-- Validate `fbuboard.md` ↔ `fbu-completed.md` ↔ `fbu-structure.md`:
+- Update `intake-structure.md` inventory when `fr-br/` changed
+- Validate `kboard.md` ↔ `intake-completed.md` ↔ `intake-structure.md`:
   - No terminal FBUs on active board (except documented exceptions)
   - Pruned FBUs present in completed archive with timestamps
   - Structure links and version markers align with source docs

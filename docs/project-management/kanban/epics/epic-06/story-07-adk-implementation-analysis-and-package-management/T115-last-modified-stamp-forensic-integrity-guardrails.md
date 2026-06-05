@@ -18,14 +18,14 @@ housekeeping_policy: keep
 
 **Upstream:** [UXR-009 – Last-modified stamp forensic integrity and drift protection](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 
-**Coordinates:** [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md), [E06:S07:T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+**Coordinates:** [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md), [E06:S07:T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 
 ---
 
 ## Input
 
 - User report: row-level `Last modified` timestamps are being overwritten by board rewrite passes.
-- Observed board state in `fbuboard.md` / `kboard.md` showing homogenized timestamps.
+- Observed board state in `kboard.md` showing homogenized timestamps.
 - Existing UKW temporal logic in Story 007 tasks (`T101`, `T110`, `T108`).
 
 ---
@@ -66,8 +66,8 @@ Timestamp churn from non-substantive board rewrites corrupts forensic signal. Op
 ## References
 
 - [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [T101](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [T101](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [ICW-E06S07T115-specification](../../../../../implementation-cycles/ICW-E06S07T115-specification.md)
-- [ICW-E06S07T115-test-design](../../../../../implementation-cycles/ICW-E06S07T115-test-design.md)
-- [ICW-E06S07T115-implementation-plan](../../../../../implementation-cycles/ICW-E06S07T115-implementation-plan.md)
+- [ICW-E6S7T115-specification](../../../../../implementation-cycles/ICW-E6S07T115-implementation-plan.md)
+- [ICW-E6S7T115-test-design](../../../../../implementation-cycles/ICW-E6S07T115-implementation-plan.md)
+- [ICW-E6S7T115-implementation-plan](../../../../../implementation-cycles/ICW-E6S07T115-implementation-plan.md)

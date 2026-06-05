@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **GitHub Issue:** [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)  
 **Related:** [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) / [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) (capital-case path **RESOLVED** **v0.6.9.14+2**; lowercase regression) · [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) / [BR-084](BR-084-rw-install-mode-c-missing-task-doc-pattern.md) (`task_doc_pattern` emitted; story/task padding still wrong) · [BR-085](BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) · [UXR-017](UXR-017-kanban-epic-story-path-lowercase-naming.md) / **E04:S19:T11**  
 **Implementing Task:** [E06:S09:T16](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md)  
-**Planning:** [IPP-E06S09T16](../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
+**Planning:** [IPP-E6S9T16](../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
 **Created:** 2026-06-04  
 **Last updated:** 2026-06-04 (v0.6.9.16+3 — RESOLVED; #17 closed; UKW `-c` archived)  
 **Version:** v0.6.9.16+3  
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-On **lowercase** fresh kanban (`epics/epic-1/epic-1.md`, unpadded epic segments), RW mode C pre-fills padded `{epic:02d}` defaults, **blocks** forward-looking `story-{story:03d}-*.md`, then persists mismatched `02d` story/task patterns (capital `T`, erroneous `*/` glob). Install sign-off marks **BR-083 NOT READY** when the only epic pattern that matches on-disk files uses unpadded `{epic}`.
+On **lowercase** fresh kanban (`epics/epic-1/epic-1.md`, unpadded epic segments), RW mode C pre-fills padded `{epic:02d}` defaults, **blocks** forward-looking `story-{story:03d}-*.md`, then persists mismatched `02d` story/task patterns (capital `T`, erroneous `*/` glob). Install sign-off marks **BR-083 NOT READY** when the only epic pattern that matches on-disk files uses unpadded `\{epic\}`.
 
 **Attempted fix (E06:S09:T16, 2026-06-04):** Installer detects lowercase unpadded epic dirs by filesystem name; pre-fills book-aligned epic/story/task patterns; accepts forward-looking `story:03d` on epic-only trees; BR-083 sign-off uses `*_contains_any` alternates. **BR-084 sign-off (2026-06-04):** `task_doc_pattern_contains_any` accepts `t{task` and `T{task` — fixes book T03 false `ADK-I04.E01` when only capital-`T` substring check failed. **RESOLVED** — [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) closed after adopter replay (2026-06-04).
 
@@ -49,8 +49,8 @@ docs/project-management/kanban/
 
 | Step | Behaviour |
 |------|-----------|
-| Epic prompt | User `epics/epic-{epic}/epic-{epic}.md` → **12 matches** |
-| Story prompt | User `epics/epic-{epic}/story-{story:03d}-*.md` → **❌ Cannot persist zero-match pattern** |
+| Epic prompt | User `epics/epic-\{epic\}/epic-\{epic\}.md` → **12 matches** |
+| Story prompt | User `epics/epic-\{epic\}/story-{story:03d}-*.md` → **❌ Cannot persist zero-match pattern** |
 | Enter on default | Accepts `story-{story:02d}-*.md` (“no matching files yet”) |
 | Generated YAML | Mixed unpadded epic + `02d` story/task; `T{task:02d}` + `*/` glob |
 
@@ -67,7 +67,7 @@ task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
 ## Problems
 
 1. **Forward-looking story pattern blocked** — Book/adopter convention `story-{story:03d}-*.md` refused when only epic files exist; Enter silently saves different `02d` pattern.
-2. **Epic padding mismatch** — On-disk `epic-1`, `epic-18`; installer defaults/sign-off expect `{epic:02d}`; matching pattern uses unpadded `{epic}`.
+2. **Epic padding mismatch** — On-disk `epic-1`, `epic-18`; installer defaults/sign-off expect `{epic:02d}`; matching pattern uses unpadded `\{epic\}`.
 3. **Task pattern wrong for lowercase adopters** — Persisted `…-*/T{task:02d}-*.md` vs book target `…/story-{story:03d}/t{task:02d}-*.md`.
 4. **`:02d` vs `:03d` unexplained** at prompt — drives manual T03 Step 4.1 edits.
 
@@ -77,7 +77,7 @@ task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
 
 After fresh **lowercase** kanban + RW mode C:
 
-- Pre-fill epic pattern that **matches** existing files (`epics/epic-{epic}/epic-{epic}.md` when glob confirms).
+- Pre-fill epic pattern that **matches** existing files (`epics/epic-\{epic\}/epic-\{epic\}.md` when glob confirms).
 - Allow persisting **intended** `story_doc_pattern` (e.g. `{story:03d}`) with no story files yet — or Enter writes the **same** pattern docs recommend.
 - `task_doc_pattern`: lowercase `t{task:02d}`, path layout aligned with book T03 Step 4.1.
 - `github-issue-install-signoff-contract.yaml` **BR-083** checks accept unpadded on-disk `epic-N` **or** document single padding policy (UXR-017 / ADR-015).

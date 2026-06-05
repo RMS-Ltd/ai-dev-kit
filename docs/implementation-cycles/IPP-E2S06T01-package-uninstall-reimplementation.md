@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E2:S06:T01 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`story-06-package-uninstall-and-recovery.md`](../../project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md) **(E2:S06:T01)**  
-**Planning for:** [FR-008](../../project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md)  
+**Host Task:** [`story-06-package-uninstall-and-recovery.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md) **(E2:S06:T01)**  
+**Planning for:** [FR-008](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md)  
 **Status:** Approved
 
 > **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/project-management/kanban/fr-br/`).

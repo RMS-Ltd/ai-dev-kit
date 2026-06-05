@@ -74,7 +74,7 @@ This UXR evaluates whether RW validators should treat `dev` as a first-class acc
 **Selected policy:** `strict-equal-epic`
 
 - `dev` is accepted as a branch mode only when `rw-config.yaml` defines `dev_branch_epic` (integer).
-- `dev` does not bypass branch safety; it enforces the same blocking epic/version alignment checks as `epic/{n}`.
+- `dev` does not bypass branch safety; it enforces the same blocking epic/version alignment checks as `epic/\{n\}`.
 - Missing or invalid `dev_branch_epic` is a hard validation failure.
 
 **Residual risks / mitigations:**

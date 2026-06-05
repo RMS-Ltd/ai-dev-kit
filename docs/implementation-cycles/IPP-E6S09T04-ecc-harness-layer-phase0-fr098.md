@@ -90,7 +90,7 @@ Checklist-driven verification (V1–V10). No new pytest module. `--skip-tests` n
 
 | Doc ID | Path | Action |
 |--------|------|--------|
-| D-C1 | `docs/implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md` | CREATE (this file) |
+| D-C1 | `docs/implementation-cycles/IPP-E6S9T4-ecc-harness-layer-phase0-fr098.md` | CREATE (this file) |
 | D-C2 | `docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md` | CREATE |
 | D-C3 | `docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md` | CREATE |
 | D-C4 | `packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template` | CREATE |

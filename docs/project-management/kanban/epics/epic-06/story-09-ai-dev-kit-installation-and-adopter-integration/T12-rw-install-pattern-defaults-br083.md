@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Code:** E06S09T12
 
 **Upstream:** [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [GitHub #15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)  
-**IPW:** [IPP-E06S09T12-br083-rw-install-pattern-defaults.md](../../../../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) — **Publication Status: PUBLISHED**
+**IPW:** [IPP-E6S9T12-br083-rw-install-pattern-defaults.md](../../../../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) — **Publication Status: PUBLISHED**
 
 ## Version Anchor
 
@@ -38,14 +38,14 @@ Align RW installer default epic/story `rw-config` patterns with fresh kanban ins
 
 ## Deliverable
 
-- Mode C defaults or detection for `Epic-{epic}/Epic-{epic}.md` and `Story-{story:03d}-*.md`
+- Mode C defaults or detection for `Epic-\{epic\}/Epic-\{epic\}.md` and `Story-{story:03d}-*.md`
 - Install doc snippet for post-kanban RW install
 
 ---
 
 ## Acceptance Criteria
 
-- [x] Mode C suggests or defaults to `Epic-{epic}/Epic-{epic}.md` and `Story-{story:03d}-*.md` when detected.
+- [x] Mode C suggests or defaults to `Epic-\{epic\}/Epic-\{epic\}.md` and `Story-{story:03d}-*.md` when detected.
 - [x] Post-kanban-install snippet in install docs.
 
 ## Implementation notes (2026-06-03)
@@ -58,5 +58,5 @@ Align RW installer default epic/story `rw-config` patterns with fresh kanban ins
 ## Links
 
 - [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
-- [IPP-E06S09T12](../../../../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md)
+- [IPP-E6S9T12](../../../../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

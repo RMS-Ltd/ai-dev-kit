@@ -53,7 +53,7 @@ housekeeping_policy: keep
 | `expected` | Exit 0; all `examples` match; no `/Users/` in YAML |
 | `observed` | PASS; 4 pytest cases green |
 | `result` | `pass` |
-| `notes` | [test_validate_whitelist_patterns.py](../../packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py) |
+| `notes` | [test_validate_whitelist_patterns.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/test_validate_whitelist_patterns.py) |
 
 ### Entry 002 — Live prompt reduction (maintainer UAT — pending)
 
@@ -62,7 +62,7 @@ housekeeping_policy: keep
 | `date_utc` | 2026-06-01T17:30:00Z |
 | `scenario` | Repo `.cursor/permissions.json` applied from catalog; Run Mode Allowlist required on maintainer machine |
 | `expected` | Fewer repeated approvals for validation/git command families vs concrete-string allowlist |
-| `observed` | **Repo configured:** `terminalAllowlist` prefixes in [`.cursor/permissions.json`](../../.cursor/permissions.json). **Pending:** maintainer enables Allowlist run mode and records prompt counts on next RW mini-sequence |
+| `observed` | **Repo configured:** `terminalAllowlist` prefixes in [`.cursor/permissions.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/permissions.json). **Pending:** maintainer enables Allowlist run mode and records prompt counts on next RW mini-sequence |
 | `prompts_before` | TBD |
 | `prompts_after` | TBD |
 | `result` | `partial` |
@@ -73,7 +73,7 @@ housekeeping_policy: keep
 | Field | Value |
 | ----- | ----- |
 | `date_utc` | 2026-06-01T17:30:00Z |
-| `scenario` | Map [whitelist-patterns.yaml](../../.cursor/whitelist-patterns.yaml) families → [permissions.json](../../.cursor/permissions.json) per Cursor docs |
+| `scenario` | Map [whitelist-patterns.yaml](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/whitelist-patterns.yaml) families → [permissions.json](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/permissions.json) per Cursor docs |
 | `expected` | Prefix entries cover validation scripts, framework scripts, git RW subset, gh, rg, find |
 | `observed` | File committed in repo; Cursor hot-reloads on change |
 | `result` | `pass` |

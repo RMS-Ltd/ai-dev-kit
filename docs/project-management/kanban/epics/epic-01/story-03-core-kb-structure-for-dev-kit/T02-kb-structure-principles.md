@@ -273,13 +273,13 @@ The KB follows a clear hierarchy:
 
 **Relative Paths:**
 - Use relative paths for internal references
-- Example: `[Epic 1](epics/epic-01/epic-01.md)`
-- Example: `[Task 1 Analysis](story-03-core-kb-structure-for-dev-kit/T01-kb-structure-analysis.md)`
+- Example: `[Epic 1](../epic-01.md)`
+- Example: `[Task 1 Analysis](T01-kb-structure-analysis.md)`
 
 **Absolute Paths (from KB root):**
 - Use absolute paths from `docs/` root when referencing across sections
-- Example: `[Versioning Policy](../Architecture/standards-and-adrs/dev-kit-versioning-policy.md)`
-- Example: `[Kanban Governance](../project-management/rituals/policy/kanban-governance-policy.md)`
+- Example: `[Versioning Policy](../../../../../governance/standards/dev-kit-versioning-policy.md)`
+- Example: `[Kanban Governance](../../../../../governance/kanban/kanban-governance-policy.md)`
 
 **Cross-Section References:**
 - Always use relative paths from current file location
@@ -296,7 +296,7 @@ The KB follows a clear hierarchy:
 **Root-Level References:**
 - Reference root-level files using relative paths
 - Example: `[Main Changelog](../../CHANGELOG.md)`
-- Example: `[Root README](../../README.md)`
+- Example: `[Root README](../../../../../guides/README.md)`
 
 ### 4.3 Reference Format
 
@@ -314,7 +314,7 @@ The KB follows a clear hierarchy:
 **Version References:**
 - Reference versions using format: `v{RC}.\{EPIC\}.\{STORY\}.\{TASK\}+\{BUILD\}`
 - Example: `v0.1.3.1+1`
-- Link to changelog: `[v0.1.3.1+1](../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.3.1+1.md)`
+- Link to changelog: `[v0.1.3.1+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-01/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.3.1%2B1.md)`
 
 ---
 
@@ -440,9 +440,9 @@ docs/
 ```markdown
 ## Related Documentation
 
-- [Versioning Policy](../Architecture/standards-and-adrs/dev-kit-versioning-policy.md)
-- [Kanban Governance](../project-management/rituals/policy/kanban-governance-policy.md)
-- [Changelog Archive](../changelog-and-release-notes/changelog-archive/README.md)
+- [Versioning Policy](../../../../../governance/standards/dev-kit-versioning-policy.md)
+- [Kanban Governance](../../../../../governance/kanban/kanban-governance-policy.md)
+- [Changelog Archive](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-01/changelog-and-release-notes/changelog-archive/README.md)
 ```
 
 ### 8.3 Good README Example
@@ -461,14 +461,14 @@ This section contains technical standards, ADRs, and framework integration docum
 
 ## Key Documents
 
-- [Versioning Policy](standards-and-adrs/dev-kit-versioning-policy.md)
-- [Kanban-Versioning-RW Integration](standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md)
+- [Versioning Policy](../../../../../governance/standards/dev-kit-versioning-policy.md)
+- [Kanban-Versioning-RW Integration](../../../../../architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md)
 
 ## Navigation
 
-- [Project Management](../project-management/README.md)
-- [Changelog](../changelog-and-release-notes/README.md)
-- [Guides](../Guides/README.md)
+- [Project Management](../../../../../guides/README.md)
+- [Changelog](../../../../../guides/README.md)
+- [Guides](../../../../../guides/README.md)
 ```
 
 ---

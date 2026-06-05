@@ -1,0 +1,32 @@
+{
+  "report_type": "rw_step7_structure_prune",
+  "release_scope": "E02:S16:T04",
+  "version": "v0.2.16.4+29",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E01:S02:T14": {
+      "allowed": true,
+      "reason": "Terminal task COMPLETE v0.1.2.14+1 — removed from active kboard C-band (kanban-completed ledger)"
+    },
+    "BR-078": {
+      "allowed": true,
+      "reason": "FBU RESOLVED — pruned from active fbuboard after fbu-completed ledger (v0.2.16.4+29)"
+    },
+    "BR-079": {
+      "allowed": true,
+      "reason": "FBU RESOLVED — pruned from active fbuboard after fbu-completed ledger (v0.2.16.4+29)"
+    },
+    "BR-080": {
+      "allowed": true,
+      "reason": "FBU RESOLVED — pruned from active fbuboard after fbu-completed ledger (v0.2.16.4+29)"
+    },
+    "BR-087": {
+      "allowed": true,
+      "reason": "FBU RESOLVED — pruned from active fbuboard after fbu-completed ledger (v0.2.16.4+29)"
+    },
+    "FR-032": {
+      "allowed": true,
+      "reason": "E09:S01:T03 COMPLETE v0.9.1.3+1 — pruned stale active fbuboard row (kanban-completed ledger)"
+    }
+  }
+}

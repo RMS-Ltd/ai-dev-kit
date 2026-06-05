@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Host Task:** [`T23-tool-agnostic-workflow-step-tracking-and-runlogs.md`](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) **(E02:S01:T23)**  
 **Status:** Approved — implementation landed 2026-05-30
 
-> **IPW (Implementation Planning Workflow):** Consolidated planning package for E02:S01:T23. Supersedes missing `ICW-E06S07T18-specification.md` under legacy E06:S07:T18 housing.
+> **IPW (Implementation Planning Workflow):** Consolidated planning package for E02:S01:T23. Supersedes missing `ICW-E6S7T18-specification.md` under legacy E06:S07:T18 housing.
 
 ---
 
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RNF1 | No overlap with ADR-008 forensic journals — explicit boundary cross-links | ADR-008 §Decision item 6; IPP-E2S08T08 |
+| RNF1 | No overlap with ADR-008 forensic journals — explicit boundary cross-links | ADR-008 §Decision item 6; IPP-E2S8T8 |
 | RNF2 | Adopter-facing patterns remain project-agnostic where possible | workflow-hardening-guide |
 | RNF3 | Doc changes verifiable by automated governance tests | FR-100 / IPW Phase 3 |
 
@@ -54,7 +54,7 @@ Enable portable agent-managed workflow execution across Cursor, Windsurf/Cascade
 
 | Requirement | Specification artifact |
 | ----------- | --------------------- |
-| RF1–RF2 | [workflow-step-tracker-contract.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) |
+| RF1–RF2 | [workflow-step-tracker-contract.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages%2Fframeworks%2Fworkflow-mgt%2FKB%2FDocumentation%2FDeveloper_Docs%2Fvwmp%2Fworkflow-step-tracker-contract.md) |
 | RF3 | Contract §Windsurf / Cascade appendix |
 | RF4 | [workflow-agent-run-log-v1.schema.json](../architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json) + example |
 | RF5 | RW agent guide Step 17 + agent run log references |
@@ -160,7 +160,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Path | Purpose | Tied to |
 | ------ | ---- | ------- | ------- |
-| D-C1 | `IPP-E2S01T23-*.md` | This plan | IPW |
+| D-C1 | `IPP-E2S1T23-*.md` | This plan | IPW |
 | D-C2 | `ADR-011-*.md` | Architecture decision | T6 |
 | D-C3 | `workflow-step-tracker-contract.md` | Tracker SoT | RF2 |
 | D-C4 | `workflow-agent-run-log-v1.schema.json` | Run log spec | RF4 |
@@ -180,7 +180,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Canonical path | Publication | Lifecycle | Inbound links |
 | ------ | -------------- | ----------- | --------- | ------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E2S01T23-*.md` | NOT_APPLICABLE | evergreen | T23 Input/References |
+| D-C1 | `docs/implementation-cycles/IPP-E2S1T23-*.md` | NOT_APPLICABLE | evergreen | T23 Input/References |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-011-*.md` | PUBLISHED | evergreen | ADR-008, contract |
 | D-C3 | `packages/frameworks/workflow-mgt/KB/.../vwmp/workflow-step-tracker-contract.md` | PUBLISHED | evergreen | All workflow guides |
 | D-C4–D-C5 | `docs/architecture/standards-and-adrs/{schemas,examples}/` | PUBLISHED | evergreen | ADR-011, RW guide |
@@ -206,5 +206,5 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - [E06:S07:T18 superseded task](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T18-tool-agnostic-workflow-step-tracking-and-runlogs.md)
 - [ADR-011](../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 - [ADR-008](../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
-- [IPP-E2S08T08](IPP-E2S08T08-forensic-logging-rollback-fr059.md)
-- [E04:S19:T03 investigation report](E04S19T03-e6s07-default-housing-investigation-report.md)
+- [IPP-E2S8T8](IPP-E2S08T08-forensic-logging-rollback-fr059.md)
+- [E04:S19:T03 investigation report](E4S19T03-e6s07-default-housing-investigation-report.md)

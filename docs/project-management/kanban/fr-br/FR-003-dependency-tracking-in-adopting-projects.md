@@ -16,7 +16,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E01:S02:T14](../epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)  
 **Historical registry:** E05:S01:T03  
-**Implementation plan:** [IPP-E01S02T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
+**Implementation plan:** [IPP-E1S2T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 ---
 
@@ -101,7 +101,7 @@ A project adopts ai-dev-kit and uses README/changelog/badge patterns. The projec
 
 - [x] Historical E07:S04 “README + upstream tracking in kit” intent **not** implemented in ai-dev-kit; E07:S04 is [maintenance automation and tooling](../epics/epic-07/story-04-maintenance-automation-and-tooling.md) (unrelated, already complete)
 - [x] Documentation created: [`adopter-external-resource-dependency-tracking.md`](../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
-- [x] Example templates: [`user-docs/examples/`](../../../documentation/user-docs/examples/) (`adopter-upstream-register.md`, `adopter-upstream-check.yml`, `adopter-upstream-check.sh`)
+- [x] Example templates: [`user-docs/examples/`](../../../documentation/user-docs/examples/adopter-upstream-register.md) (`adopter-upstream-register.md`, `adopter-upstream-check.yml`, `adopter-upstream-check.sh`)
 - [x] Clear separation: ai-dev-kit provides guidance/templates; adopting projects track dependencies
 - [x] **Implementing Task** ↔ **E01:S02:T14** bidirectional links
 
@@ -118,7 +118,7 @@ A project adopts ai-dev-kit and uses README/changelog/badge patterns. The projec
 **Related Work:**
 - [FR-002](FR-002-update-been-there-readme.md) — README template (E01:S02:T13); complementary
 - [E01:S02:T14](../epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) — semantic delivery task
-- [INSTALL_IN_YOUR_PROJECT.md](../../../INSTALL_IN_YOUR_PROJECT.md) — adoption index
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — adoption index
 
 ---
 
@@ -130,7 +130,7 @@ A project adopts ai-dev-kit and uses README/changelog/badge patterns. The projec
 
 **Delivery (2026-06-04):**
 - Re-housed to **E01:S02:T14** (Epic 1 package & repo architecture)
-- Canonical guide and examples shipped per [IPP-E01S02T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
+- Canonical guide and examples shipped per [IPP-E1S2T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 **Kanban Links:**
 - Epic: [`epic-01.md`](../epics/epic-01/epic-01.md)
@@ -156,7 +156,7 @@ A project adopts ai-dev-kit and uses README/changelog/badge patterns. The projec
 - [Keep a Changelog](https://keepachangelog.com/)
 - [Shields.io](https://shields.io/)
 - [Adopter external resource dependency tracking](../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
-- [IPP-E01S02T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
+- [IPP-E1S2T14](../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 ---
 

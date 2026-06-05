@@ -59,7 +59,7 @@ Implement **FR-068**: sidebar information architecture aligned to **canonical KB
 | **S6** | R04 / AC3 | `npm run build` green with **PORTAL_BUILD_STRICT=1** (`tests/test_portal_fr065_identity.py::test_fr065_s9_portal_production_build`). |
 | **S7** | AC1 (surrogate) | Sidebar includes **autogen categories** for each canonical pillar folder used in FR-068 (`architecture`, `changelog-and-release-notes`, `project-management`, `guides`, `documentation`, `knowledge`); homepage links include **≥1** doc under **documentation/** and **≥1** under **architecture/**. Full two-click review remains human AC1. |
 
-**Tests:** [`tests/test_portal_fr068_navigation.py`](../../../../../../tests/test_portal_fr068_navigation.py) (S1–S5, S7); S6 via FR-065 strict build test.
+**Tests:** [`tests/test_portal_fr068_navigation.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr068_navigation.py) (S1–S5, S7); S6 via FR-065 strict build test.
 
 ---
 

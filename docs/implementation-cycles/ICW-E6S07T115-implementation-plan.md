@@ -45,6 +45,6 @@ Task is implementation-ready complete when policy is explicit, guardrail design 
 
 ## References
 
-- [ICW Specification](./ICW-E6S07T115-specification.md)
-- [ICW Test Design](./ICW-E6S07T115-test-design.md)
+- [ICW Specification](ICW-E6S07T115-implementation-plan.md)
+- [ICW Test Design](ICW-E6S07T115-implementation-plan.md)
 - [Task E6:S07:T115](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md)

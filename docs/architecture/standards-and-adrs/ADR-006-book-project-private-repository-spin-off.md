@@ -163,4 +163,4 @@ Before public genesis push: abort by re-publicizing the private line under its t
 - [E1:S04:T02 — superseded](../../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md) (public Head First rename)
 - [FR-064](../../project-management/kanban/fr-br/FR-064-shields-branch-private-repo-badges.md) — prior private-repo hygiene pattern
 - [FR-080](../../project-management/kanban/fr-br/FR-080-greenfield-installation-process.md) — consumer Kanban must not include Epic 24
-- [ADR-003](./ADR-003-greenfield-vs-brownfield-adoption.md) — public ADK remains reference implementation for adopters
+- [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md) — public ADK remains reference implementation for adopters

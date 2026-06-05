@@ -26,10 +26,10 @@ The documentation portal (`portal/`) uses `@docusaurus/preset-classic` with **`p
 
 The repository’s authoring model predates this boundary: Kanban, FR/BR, ADRs, and user-docs routinely link to:
 
-1. **`INSTALL_IN_YOUR_PROJECT.md`** at **repository root** (not under `docs/`), via patterns such as **`../../../INSTALL_IN_YOUR_PROJECT.md`** from nested `docs/` paths.  
+1. **`INSTALL_IN_YOUR_PROJECT.md`** at **repository root** (not under `docs/`), via patterns such as **`https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md`** from nested `docs/` paths.  
 2. **Framework packages**, e.g. **`packages/frameworks/workflow-mgt/docs/...`**, via relative traversals from `docs/` that leave the docs-plugin corpus.
 
-**Result:** `npm run build` (see **Observed behavior**) exits with errors such as *“Markdown link with URL `../../../INSTALL_IN_YOUR_PROJECT.md` … couldn't be resolved … within the current plugin”* — for **many** files, not a single typo.
+**Result:** `npm run build` (see **Observed behavior**) exits with errors such as *“Markdown link with URL `https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md` … couldn't be resolved … within the current plugin”* — for **many** files, not a single typo.
 
 Strict FR-067 / T08 / T10 “throw” behavior is working as configured; the **defect** is that **the combined policy (strict gates + monorepo link graph) is incompatible**, so the **published site pipeline is effectively broken** until links are normalized, stubbed, or explicitly exempted.
 
@@ -52,7 +52,7 @@ Strict FR-067 / T08 / T10 “throw” behavior is working as configured; the **d
 - **`cd portal && npm run build`** → **failure** (non-zero exit).  
 - Representative MDX errors (paraphrased from compiler output):
 
-  - Unresolved **`../../../INSTALL_IN_YOUR_PROJECT.md`** from e.g. `docs/documentation/user-docs/*.md`, `docs/architecture/standards-and-adrs/ADR-003-*.md`, `docs/project-management/kanban/fr-br/FR-080-*.md`.  
+  - Unresolved **`https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md`** from e.g. `docs/documentation/user-docs/*.md`, `docs/architecture/standards-and-adrs/ADR-003-*.md`, `docs/project-management/kanban/fr-br/FR-080-*.md`.  
   - Unresolved **`../../../../packages/frameworks/...`** from Kanban / FR documents.  
   - Additional unresolved intra-repo paths where relative navigation leaves `docs/`.
 
@@ -91,10 +91,10 @@ Strict FR-067 / T08 / T10 “throw” behavior is working as configured; the **d
 
 ## Related
 
-- [FR-067](./FR-067-docusaurus-production-build-corpus-triage.md) — production corpus triage; enabled strict checks.  
+- [FR-067](FR-067-docusaurus-production-build-corpus-triage.md) — production corpus triage; enabled strict checks.  
 - [Story 009 – Docusaurus Documentation Portal](../epics/epic-05/story-09-docusaurus-documentation-portal.md) — T08 / T10 strict links & anchors (**COMPLETE** historically; this BR is **post-completion regression class**).  
-- [BR-066](./BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) — planning artifacts filing (related portal surface).  
-- [FR-070](./FR-070-docusaurus-deployment-and-hosting.md) — GitHub Pages deployment depends on green build.
+- [BR-066](BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) — planning artifacts filing (related portal surface).  
+- [FR-070](FR-070-docusaurus-deployment-and-hosting.md) — GitHub Pages deployment depends on green build.
 
 ---
 

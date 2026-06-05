@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-04 (v0.2.16.4+28 — RW -k: kboard C-band reprioritisation; fbuboard mirrored; BR-051/052 wired)
-**Version Anchor:** v0.2.16.4+28
+**Last updated:** 2026-06-05 (v0.2.16.4+29 — UKW hygiene: revert erroneous mirror; prune RESOLVED FBUs; wiring contract)
+**Version Anchor:** v0.2.16.4+29
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 
 - [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
 - Story-level perpetual ownership model in [Story 016](../story-16-perpetual-ongoing-workflow-operations.md).
-- Canonical policy IPP: [`IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md).
+- Canonical policy IPP: [`IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md).
 
 ---
 
@@ -41,7 +41,7 @@ Ad-hoc Kanban updates that are not directly tied to a specific delivery task nee
 - Canonical perpetual task lane for ad-hoc Kanban synchronization and hygiene activity.
 - Explicit semantic boundary: this task is the kanban-focused lane, while `E02:S16:T03` remains the broader workflow-maintenance umbrella.
 - Cross-linked documentation so RW/UKW attribution can consistently target this task for kanban-specific work.
-- **BR-059 / UKW Step 6 Part B.1:** Comprehensive UKW runs must enumerate all open story-checklist tasks onto `kboard.md` MoSCOW (or **Won't Have** with deferral rationale) — see [E02:S16:T13](T13-br059-ukw-moscow-full-story-task-coverage.md) and [IPP-E02S16T13](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md). Advisory: `validate_story_moscow_coverage.py --story E##:S##`.
+- **BR-059 / UKW Step 6 Part B.1:** Comprehensive UKW runs must enumerate all open story-checklist tasks onto `kboard.md` MoSCOW (or **Won't Have** with deferral rationale) — see [E02:S16:T13](T13-br059-ukw-moscow-full-story-task-coverage.md) and [IPP-E2S16T13](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md). Advisory: `validate_story_moscow_coverage.py --story E##:S##`.
 
 ---
 
@@ -56,7 +56,7 @@ Ad-hoc Kanban updates that are not directly tied to a specific delivery task nee
 
 ## References
 
-- [Canonical policy IPP: `IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E02S16T01-canonical-perpetual-ongoing-tasks-story.md)
-- [E02:S16:T01 - Establish canonical perpetual ongoing tasks story (FR-088)](./T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
-- [E02:S16:T03 - Workflow maintenance (Perpetual)](./T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
-- [E02:S16:T05 - Markdown documentation maintenance (Perpetual)](./T05-markdown-documentation-maintenance-perpetual.md)
+- [Canonical policy IPP: `IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
+- [E02:S16:T01 - Establish canonical perpetual ongoing tasks story (FR-088)](T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
+- [E02:S16:T03 - Workflow maintenance (Perpetual)](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [E02:S16:T05 - Markdown documentation maintenance (Perpetual)](T05-markdown-documentation-maintenance-perpetual.md)

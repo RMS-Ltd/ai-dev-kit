@@ -133,7 +133,7 @@ This enables projects to adopt ai-dev-kit with zero cognitive load for E/S/T str
 
 ### ADK live kanban vs package templates
 
-Epic numbers in the template list above follow **adopter-oriented** canonical numbering (e.g. `epic-18-Documentation.md` under `packages/frameworks/kanban/templates/`). The **ai-dev-kit** live board under [`docs/project-management/kanban/`](../../) does not use the same epic-to-role map: **Epic 9** is **Release Candidate Readiness** (see [`kanban-structure.md`](../../kanban-structure.md)); there is no live `epics/epic-18/` directory in this repo.
+Epic numbers in the template list above follow **adopter-oriented** canonical numbering (e.g. `epic-18-Documentation.md` under `packages/frameworks/kanban/templates/`). The **ai-dev-kit** live board under [`docs/project-management/kanban/`](../..) does not use the same epic-to-role map: **Epic 9** is **Release Candidate Readiness** (see [`kanban-structure.md`](../../kanban-structure.md)); there is no live `epics/epic-18/` directory in this repo.
 
 **Approach:**
 1. Extract epic definitions from comprehensive structure

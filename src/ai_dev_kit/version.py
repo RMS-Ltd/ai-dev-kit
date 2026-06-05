@@ -7,10 +7,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 8      # Epic 8 — Tooling & Automation
-VERSION_STORY = 3     # Story 3 — Automation Scripts
-VERSION_TASK = 10     # Task 10 — BR-096 CodeQL incomplete URL substring sanitization
-VERSION_BUILD = 1     # Build 1: urlparse hostname check in portal identity test
+VERSION_EPIC = 5      # Epic 5 — FR Repo / Docusaurus portal
+VERSION_STORY = 9     # Story 9 — Docusaurus Documentation Portal
+VERSION_TASK = 13     # Task 13 — BR-090 Wave 2 build closure (RW --art)
+VERSION_BUILD = 3     # Build 3: commit gitignored maintenance evidence log for CI parity
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.8.3.10+1 (E08:S03:T10)

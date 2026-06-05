@@ -61,7 +61,7 @@ For every RW (including **`RW -k`**) against a perpetual task:
 
 1. Start from perpetual anchor with `version.py` at `0.2.16.4+11` (E02:S16:T04).
 2. Run `RW -k E02:S16:T04 --art` with an agent that prioritizes Step 7 / `update_kanban_docs.py --mode kanban_init` early.
-3. Inspect `version_file` **before commit** — BUILD may still be **11** while `kboard.md` / `fbuboard.md` already show **+12**.
+3. Inspect `version_file` **before commit** — BUILD may still be **11** while `kboard.md` already show **+12**.
 4. Optional: follow `.cursor/skills/version-bump/SKILL.md` literally → wrong `src/fynd_deals/version.py` path.
 
 ---

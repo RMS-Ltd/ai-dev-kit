@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Version Anchor:** ✅ COMPLETE (v0.7.7.3+1)  
 **Priority:** HIGH  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.7.7.3+1 — BR-091 fix attempted; pytest 105/105)  
+**Last updated:** 2026-06-05 (v0.7.7.3+1 — BR-091 **FIXED**; CI + local pytest verified)  
 **Version:** v0.7.7.3+1  
 **Code:** E07S07T03
 
@@ -25,12 +25,12 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E07S07T03 — Workflow validator slug path resolution](../../../../../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
+- [IPP-E7S7T3 — Workflow validator slug path resolution](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E7S7T3-workflow-validator-slug-path-resolution-br091.md)
 - [BR-091](../../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)
-- [`validate_adk_ecc_skill_pack.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_adk_ecc_skill_pack.py)
-- [`validate_ecc_adk_bridge.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py)
-- [`framework_install_slug.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/framework_install_slug.py)
-- [E07:S07:T02 — CI pytest gate](./T02-ci-pytest-gate-for-workflow-scripts.md)
+- [`validate_adk_ecc_skill_pack.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_adk_ecc_skill_pack.py)
+- [`validate_ecc_adk_bridge.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py)
+- [`framework_install_slug.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/framework_install_slug.py)
+- [E07:S07:T02 — CI pytest gate](T02-ci-pytest-gate-for-workflow-scripts.md)
 
 ---
 
@@ -45,12 +45,12 @@ Fix **`workflow_mgt_dir()`** resolution in FR-098 validators to use canonical **
 - [x] Validators resolve `packages/frameworks/workflow-mgt` in ai-dev-kit monorepo.
 - [x] Legacy `packages/frameworks/workflow mgt` still supported when present (`workflow_mgt_package_dir` + unit tests).
 - [x] **`run_workflow_scripts_ci_pytest.sh`** — 105 tests pass (0 failures) — verified locally 2026-06-05.
-- [ ] **`.github/workflows/workflow-scripts-pytest.yml`** green on `dev`/`main` — pending post-push CI confirmation.
+- [x] **`.github/workflows/workflow-scripts-pytest.yml`** green on `dev`/`main` — runs `26990632033` (`dev`), `26989204694` (`main`) 2026-06-05.
 
 ---
 
 ## References
 
-- [IPP-E07S07T03](../../../../../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
+- [IPP-E7S7T3](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
 - [BR-091](../../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)
 - [BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)

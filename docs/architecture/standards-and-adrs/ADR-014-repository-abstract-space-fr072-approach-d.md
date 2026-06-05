@@ -25,7 +25,7 @@ E7:S00 detasking ([E04:S19:T10](../../project-management/kanban/epics/epic-04/st
 
 ## Decision
 
-1. **S00** is **abstract space only** (`0.{epic}.0.0+0`) — **no concrete tasks** on any epic’s S00 story.
+1. **S00** is **abstract space only** (`0.\{epic\}.0.0+0`) — **no concrete tasks** on any epic’s S00 story.
 2. **E5:S01** (CLOSED), **E6:S01** (and former E7:S00 registry paths) are **historical registries** — valid forensic anchors, **not** primary homes for **new** intake.
 3. **New intake** (FR-072 D2): primary implementing tasks MUST be filed under the **semantic delivery story** (KG-R6). Optional numeric symmetry (FR-047 → T47) is not required.
 4. **FR-021** is **superseded for new intake**; historical 1:1 repo-story mapping remains linkable.
@@ -79,5 +79,5 @@ Full FR-level history remains on each `fr-br/*.md` **Implementing Task** line; c
 
 ## Compliance
 
-- Intake: [.cursor/skills/intake-process/SKILL.md](../../../.cursor/skills/intake-process/SKILL.md), [FR_BR_INTAKE_GUIDE.md](../../../packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md)
-- IPP: [IPP-E04S19T08](../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
+- Intake: [.cursor/skills/intake-process/SKILL.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [FR_BR_INTAKE_GUIDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md)
+- IPP: [IPP-E4S19T8](../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # ICW E7:S06:T18 — Implementation plan (UXR-007)
 
 **Host task:** E7:S06:T18  
-**Specification:** [ICW-E7S06T18-specification.md](./ICW-E7S06T18-specification.md)
+**Specification:** [ICW-E7S6T18-specification.md](ICW-E7S06T18-implementation-plan.md)
 
 ---
 
@@ -57,6 +57,6 @@ housekeeping_policy: keep
 
 ## As-delivered notes (`v0.7.6.18+1`)
 
-Delivered behaviour matches ordered actions **1–5** and **7** (validators, prompts, preview, root adoption, status banners, [`tests/test_install_release_workflow_patterns.py`](../../tests/test_install_release_workflow_patterns.py)).
+Delivered behaviour matches ordered actions **1–5** and **7** (validators, prompts, preview, root adoption, status banners, [`tests/test_install_release_workflow_patterns.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_install_release_workflow_patterns.py)).
 
 **Action 6 (existing `.cursorrules` trigger):** Implemented as **detect duplicate RW trigger → skip append, print guidance, collect warning → PARTIAL** in [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py). An optional **diff artifact path** was not implemented; operators reconcile manually.

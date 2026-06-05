@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E4:S19:T02 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-> **Successor planning artifact:** [`IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md`](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md) — T02 scope is consolidated into the [`E4:S19:T06`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) meta-task with historical content preserved below for traceability.
+> **Successor planning artifact:** [`IPP-E4S19T6-fbu-meta-normalization-and-intake-governance.md`](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md) — T02 scope is consolidated into the [`E4:S19:T06`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) meta-task with historical content preserved below for traceability.
 
 **Host Task:** [`T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md) **(E4:S19:T02 — SUPERSEDED by E4:S19:T06)**  
 **Planning for:** [FR-086 - Canonical supporting Kanban/FBU doc naming and `FBU` collective terminology](../project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)  
@@ -47,7 +47,7 @@ Define and implement a canonical naming + terminology contract for supporting Ka
 ### 1.5 Constraints and caveats
 
 - User caveat is mandatory: `FBU` is collective shorthand only; individual issue identities remain unchanged.
-- Existing board canonical names (`kboard.md`, `fbuboard.md`) are baseline and must not regress.
+- Existing board canonical names (`kboard.md`) are baseline and must not regress.
 
 ---
 

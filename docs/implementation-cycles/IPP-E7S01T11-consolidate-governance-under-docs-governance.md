@@ -48,7 +48,7 @@ housekeeping_policy: keep
 - **In scope:**
   - Five MOVE policies (four standards + one kanban), rituals README merge, bidirectional-wiring principle MOVE, ADR-007, hub/inventory updates, active link sweep, docs scope file.
 - **Out of scope:**
-  - Kanban boards (`kboard.md`, `fbuboard.md`), epic/story/task trees, `fr-br/` intake queue (except wiring stub), `vendor/`, bulk historical archive edits.
+  - Kanban boards (`kboard.md`), epic/story/task trees, `fr-br/` intake queue (except wiring stub), `vendor/`, bulk historical archive edits.
 
 ---
 
@@ -179,7 +179,7 @@ Doc-only relocation: structural verification (no new pytest module). Do **not** 
 - `docs/governance/GOVERNANCE-REHOUSING-INVENTORY.md`
 - `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - `docs/architecture/standards-and-adrs/task-template-cross-wiring-sop.md`
-- `docs/project-management/kanban/fbu-open-taskless-queue.md`
+- `docs/project-management/kanban/intake-open-taskless-queue.md`
 - Inbound links from moved policy bodies (grep each moved filename)
 
 ### 4.2 Dependency order
@@ -225,7 +225,7 @@ housekeeping_policy: keep
 | D-U8 | `docs/architecture/README.md` | Point to governance hub for moved policies | RF3, E |
 | D-U9 | `packages/frameworks/kanban/templates/TASK_TEMPLATE.md` | Bidirectional wiring link | RF4, D |
 | D-U10 | `docs/architecture/standards-and-adrs/task-template-cross-wiring-sop.md` | Wiring principle path | RF4, D |
-| D-U11 | `docs/project-management/kanban/fbu-open-taskless-queue.md` | Governance link | RF4, D |
+| D-U11 | `docs/project-management/kanban/intake-open-taskless-queue.md` | Governance link | RF4, D |
 | D-U12 | Host task + FR-101 | Status, IPP link, closure | RF7, H |
 | D-U13 | `src/ai_dev_kit/version.py` | Comment pointer if references versioning policy path | RF5, E |
 
@@ -233,7 +233,7 @@ housekeeping_policy: keep
 
 | Doc ID | Proposed path | Purpose | Tied to (RF/step) |
 | ------ | ------------- | ------- | ----------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md` | This IPP | RF7 |
+| D-C1 | `docs/implementation-cycles/IPP-E7S1T11-consolidate-governance-under-docs-governance.md` | This IPP | RF7 |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md` | Topology ADR | §2.5, A |
 | D-C3 | `docs/maintenance/book-repo-docs-scope.md` | AC3 docs scope | RF6, F |
 | D-C4 | `docs/governance/principles/bidirectional-wiring-principle.md` | Canonical principle | RF4, D |
@@ -256,10 +256,10 @@ housekeeping_policy: keep
 
 | Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md` | NOT_APPLICABLE | Internal planning artifact (BR-066); linked from task doc | evergreen | T11 Input, References |
+| D-C1 | `docs/implementation-cycles/IPP-E7S1T11-consolidate-governance-under-docs-governance.md` | NOT_APPLICABLE | Internal planning artifact (BR-066); linked from task doc | evergreen | T11 Input, References |
 | D-C2 | `docs/architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md` | NOT_APPLICABLE | ADR index via architecture README | evergreen | governance README, FR-101 |
 | D-C3 | `docs/maintenance/book-repo-docs-scope.md` | NOT_APPLICABLE | Maintainer scope doc | evergreen | governance README, T10/T11 |
-| D-C4 | `docs/governance/principles/bidirectional-wiring-principle.md` | NOT_APPLICABLE | Book workspace governance | evergreen | TASK_TEMPLATE, fbu-open-taskless-queue, fr-br stub |
+| D-C4 | `docs/governance/principles/bidirectional-wiring-principle.md` | NOT_APPLICABLE | Book workspace governance | evergreen | TASK_TEMPLATE, intake-open-taskless-queue, fr-br stub |
 | D-C5–D-C8 | `docs/governance/standards/*.md` | NOT_APPLICABLE | Book workspace governance | evergreen | governance README, stubs, .cursorrules |
 | D-C9 | `docs/governance/kanban/kanban-governance-policy.md` | NOT_APPLICABLE | Book workspace governance | evergreen | governance README, kanban-board-guide |
 | D-U2 | `docs/governance/README.md` | NOT_APPLICABLE | Hub; portal inclusion optional in Wave E | evergreen | FR-101, inventory |
@@ -292,5 +292,5 @@ housekeeping_policy: keep
 - [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-094](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 - [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
-- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
-- [.claude/commands/ipw.md](../../.claude/commands/ipw.md)
+- [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
+- [.claude/commands/ipw.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md)

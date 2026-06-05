@@ -333,7 +333,19 @@ For each step, follow this pattern:
      - **IF perpetual task:** Note for build warning suppression (high BUILD numbers expected and valid)
      - **IF not perpetual:** Normal task handling applies
    - **C. DETERMINE VERSION BUMP (MANDATORY LOGIC):** Compare completed task number to current `VERSION_TASK` (new task vs same task vs out-of-order)
-   - **D. VALIDATE BEFORE UPDATING:** Verify new `VERSION_TASK` matches completed task number (unless UKW context)
+   - **C.1. RESOLVE BUILD (BR-097 / E02:S01:T24 — MANDATORY BEFORE `version.py` WRITE):** Run deterministic resolver **before** any changelog/kanban edits:
+     ```bash
+     python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--doc-policy-zero] [--perpetual-same-task]
+     ```
+     - **Non-zero exit = RW ABORTED** at Step 2 (wrong BUILD choice blocked early).
+     - **Default (same E:S:T, no `--doc-policy-zero`):** `VERSION_BUILD = HEAD_BUILD + 1`.
+     - **`--doc-policy-zero`:** Only when the **user typed it** in the RW trigger **and** HEAD BUILD is untagged **and** `VERSION_BUILD=0` path (BR-067 doc-init). Never infer from "docs-only" or task COMPLETE status.
+     - **UKW/CMW context:** Pass `--perpetual-same-task` (BUILD +1 on perpetual task).
+   - **C.2. FORBIDDEN (BR-097):** Agents MUST NOT:
+     - Reuse a tagged BUILD for same-task follow-on releases.
+     - Use `git tag -f` / `git push -f` / `git push origin +v*` on **release tags** (`v*` internal or SemVer). Tag collision → **RW ABORTED**; recovery = bump BUILD (+1) and re-RW.
+     - Prescribe or apply `--doc-policy-zero` for post-ship verification/FBU waves (use normal `RW E:S:T --art`).
+   - **D. VALIDATE BEFORE UPDATING:** Verify new `VERSION_TASK` matches completed task number (unless UKW context); `VERSION_BUILD` must match resolver JSON `next_build`
    - **E. UPDATE VERSION FILE:** Use config path, update `VERSION_TASK` and `VERSION_BUILD`
    - **F. VALIDATE AFTER UPDATING:** Re-read version file, verify new version matches decision
    - See `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` Step 2 for complete procedure
@@ -364,10 +376,10 @@ For each step, follow this pattern:
 
    1. **Task doc** — version anchor + status + last-updated + checklist sync (host task and any directly affected child tasks).
    2. **Source FR/BR/UXR doc(s)** — status sync + linked-task references + closure/gating banners where applicable.
-   3. **`kboard.md`** — canonical row(s) for the release-scope task(s); active-row hygiene for completed rows; no duplicate tail tokens.
-   4. **`fbuboard.md`** — canonical row(s) for the release-scope FBU(s); supersede / gating / closure markers; no duplicate tail tokens.
+   3. **`kboard.md`** — canonical row(s) for release-scope task(s) and wired FBUs (including **Verification (V)** band per ADR-018); active-row hygiene; no duplicate tail tokens.
+   4. **`kboard.md`** — **deprecated** redirect stub only ([ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)); do not maintain active MoSCOW rows.
 
-   **Execution:** Update Task (then Story, then Epic) with version markers and forensic consistency; update FR/BR/UXR doc(s) tied to this release; emit canonical row(s) on `kboard.md` and `fbuboard.md`; apply **limited** MoSCOW prioritisation only for **new or newly significant** items per Kanban governance (do not re-prioritise the whole board). Prefer `update_kanban_docs.py` when applicable; otherwise follow the same bottom-up scope. Use config paths. **CRITICAL: Check Story file existence, create from template if missing, then update.** Update Story file FIRST, then Epic file to match.
+   **Execution:** Update Task (then Story, then Epic) with version markers and forensic consistency; update FR/BR/UXR doc(s) tied to this release; emit canonical row(s) on `kboard.md` and `kboard.md`; apply **limited** MoSCOW prioritisation only for **new or newly significant** items per Kanban governance (do not re-prioritise the whole board). Prefer `update_kanban_docs.py` when applicable; otherwise follow the same bottom-up scope. Use config paths. **CRITICAL: Check Story file existence, create from template if missing, then update.** Update Story file FIRST, then Epic file to match.
 
    **Audit:** RW Step 7 emits a "touched surfaces + why" report (Wave 5/7 deliverable under FR-092) sufficient to reconstruct release-scope reconciliation outcomes.
 
@@ -375,7 +387,7 @@ For each step, follow this pattern:
 
 8. **Stage Files** - Run `git add -A` to stage all modified files
 
-9. **Run Validators** - Execute validation scripts. Use config path. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` / `fbuboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md` / `fbuboard.md`). Run **`validate_active_kanban_board.py`** (FR-109: `--strict` on active boards). Run `validate_release_readiness.py` (Gates 1–11: stamp homogeneity, MoSCOW state icons, active-board lean; Gate 10 spacing advisory). When `semver_mapping_strategy: task_touch`, run **`validate_semver_registry_injective.py`** (FR-045 / E03:S02:T12 — blocking on PATCH or SemVer core collisions in `semver-registry.yaml`). All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For a **docs-only** release that must use **BUILD +0** on an **existing** E/S/T (e.g. perpetual **T103**, [BR-067](docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)), add **`--doc-policy-zero`** to `validate_version_bump.py` (same **--strict** / **--requested** / **--art** line). **Note:** `check_changelog_size.py` exit code 1 (threshold exceeded) is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking and reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers (BR-074).
+9. **Run Validators** - Execute validation scripts. Use config path. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, **`validate_release_tag_immutability.py`**, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` / `kboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md` / `kboard.md`). Run **`validate_active_kanban_board.py`** (FR-109: `--strict` on active boards). Run `validate_release_readiness.py` (Gates 1–11: stamp homogeneity, MoSCOW state icons, active-board lean; Gate 10 spacing advisory). When `semver_mapping_strategy: task_touch`, run **`validate_semver_registry_injective.py`** (FR-045 / E03:S02:T12 — blocking on PATCH or SemVer core collisions in `semver-registry.yaml`). All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For a **docs-only** release that must use **BUILD +0** on an **existing** E/S/T (e.g. perpetual **T103**, [BR-067](docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)), add **`--doc-policy-zero`** to `validate_version_bump.py` (same **--strict** / **--requested** / **--art** line). **Note:** `check_changelog_size.py` exit code 1 (threshold exceeded) is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking and reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers (BR-074).
 
 9.5. **Changelog Management Workflow (CMW)** - **OPTIONAL, NON-BLOCKING:** If Step 9's `check_changelog_size.py` indicated threshold exceeded (exit code 1), automatically run CMW to archive entries, remove duplicates, and fix ordering. CMW is deterministic (rule-based, no agentic intelligence required). If threshold not exceeded, skip this step. CMW failures are non-blocking (workflow continues).
 
@@ -384,6 +396,7 @@ For each step, follow this pattern:
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 
 11. **Create Git Tag** - Create tags via canonical strategy decision:
+ - **🚨 FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. If tag exists on remote → **RW ABORTED**; bump BUILD and re-RW.
  - **A. Canonical source:** Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to determine tags for both Step 11 and Step 12.5.
  - **B. Registry mode:** Create annotated primary tag `v{internal_version}`.
  - **C. Task-touch mode:** Create annotated primary tag `vX.Y.Z` (SemVer core; no `+BUILD` in tag name). Also create internal traceability tag `v{internal_version}` on the same commit unless explicitly disabled.
@@ -436,7 +449,7 @@ For each step, follow this pattern:
 - Changelog: `CHANGELOG.md`
 - Notion project hub: `rw-config.yaml` → `notion_hub_url` (single entry point for project context; RMS Teamspace)
 - Changelog Archive: `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md`
-- Kanban Board: `docs/project-management/kanban/_index.md` or `docs/project-management/kanban/kanban-board.md`
+- Kanban Board: `docs/project-management/kanban/_index.md` or `docs/project-management/kanban/kboard.md`
 - Epic Docs: `docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md`
 - Story Docs: `docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md`
 - Validators: `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`, `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
@@ -506,8 +519,8 @@ For each step, follow this pattern:
 - `UKW -u -a <target>` = Bookkeeping + assign priorities to target(s)
 - `UKW -p -a <target>` = Update + assign priorities only
 - `UKW -u -p -a <target>` = Same as comprehensive (redundant with no flags)
-- `UKW --rp` = **Standalone deep reprioritization** (`RePrioritise`) — evidence-based MoSCOW reorder on `kboard.md` + `fbuboard.md` with Step 9 rationale (see ADR-009; **not** combinable with `-u`/`-p`/`-a`)
-- `UKW -c` = **Standalone archive completed** — append `kanban-completed.md` / `fbu-completed.md` then remove terminal rows from active MoSCOW (see ADR-010; **not** combinable with `-u`/`-p`/`-a`/`--rp`)
+- `UKW --rp` = **Standalone deep reprioritization** (`RePrioritise`) — evidence-based MoSCOW reorder on `kboard.md` + `kboard.md` with Step 9 rationale (see ADR-009; **not** combinable with `-u`/`-p`/`-a`)
+- `UKW -c` = **Standalone archive completed** — append `kanban-completed.md` / `intake-completed.md` then remove terminal rows from active MoSCOW (see ADR-010; **not** combinable with `-u`/`-p`/`-a`/`--rp`)
 
 **Use Case Flags (limit scope when present):**
 - `-u` (bookkeeping): Restrict to bookkeeping sub-workflow only
@@ -552,7 +565,7 @@ For each step, follow this pattern:
 - `epic_doc_pattern`: `epics/Epic-{epic}/Epic-{epic}.md`
 - `story_doc_pattern`: `epics/Epic-{epic}/Story-{story}-*.md`
 - `task_doc_pattern`: `epics/Epic-{epic}/Story-{story}/T{task}-*.md`
-- `kanban_board`: `kanban-board.md`
+- `kanban_board`: `kboard.md`
 - `fr_br_root`: `fr-br`
 
 **🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
@@ -590,7 +603,7 @@ For each step, follow this pattern:
    - **CRITICAL:** Use `sort_kanban_board.py` to sort epics/stories numerically before writing to board
    - **CRITICAL:** MoSCOW prioritization requires **🧠 INTELLIGENT PRIORITIZATION** - analyze context, dependencies, impact
    - **CRITICAL (BR-059 / Step 6 Part B.1, narrowed FR-109):** For each story **IN PROGRESS** with open checklist tasks: diff open `E:S:T` tokens ↔ `kboard.md` MoSCOW; add **in-flight** missing rows only — do **not** bulk-mirror every story TODO onto the active board; deferred/shipped → **Won't Have** + `kanban-completed.md`, not C-band clutter. Optional `validate_story_moscow_coverage.py --story E##:S##`; if incomplete, Step 9 must include `## Story MoSCOW coverage`.
-   - **CRITICAL (FR-109 / lean active boards):** MoSCOW = live work only: prune **terminal** rows, `**YYYY-MM-DD:**` journal lines, and archive footnotes — **not** an existing **Could Have** backlog of filed `TODO`/`OPEN` tasks (BR-059 ≠ delete C-band queue). Use `kanban-completed.md` / `fbu-completed.md` and **`UKW -c`**. After prune, run `validate_active_kanban_board.py --strict`.
+   - **CRITICAL (FR-109 / lean active boards):** MoSCOW = live work only: prune **terminal** rows, `**YYYY-MM-DD:**` journal lines, and archive footnotes — **not** an existing **Could Have** backlog of filed `TODO`/`OPEN` tasks (BR-059 ≠ delete C-band queue). Use `kanban-completed.md` / `intake-completed.md` and **`UKW -c`**. After prune, run `validate_active_kanban_board.py --strict`.
    - **CRITICAL:** `fr-br-uxr-board.md` (fbuboard) is required UKW scope for comprehensive/bookkeeping runs; do not treat as best-effort
    - **CRITICAL:** Apply deterministic fbuboard active-row reconciliation:
      - Prune active MoSCOW rows whose linked FR/BR/UXR doc status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`)

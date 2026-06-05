@@ -9,11 +9,59 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.10+1] - 05-06-26
+## [0.5.9.13+3] - 05-06-26
 
-E08:S03:T10 — **BR-096:** Replace bare URL substring check with `urlparse` hostname validation in portal identity test (CodeQL CWE-020). SemVer **v0.4.897+1**.
+E05:S09:T13 — **BR-090 Wave 2 CI parity:** track `uxr-005-spacing` evidence log; fix `logs/` gitignore gap. SemVer **v0.4.909+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.10+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+3.md)
+
+---
+
+## [0.5.9.13+2] - 05-06-26
+
+E05:S09:T13 — **BR-090 Wave 2:** Full Docusaurus build triage; BR-068 Strategy A link remediation; pytest T8–T11; local `npm run build` green. SemVer **v0.4.909+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+2.md)
+
+---
+
+## [0.2.1.24+1] - 05-06-26
+
+E02:S01:T24 — **BR-097:** Step 2 `resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contracts, IPW/ADR-019. SemVer **v0.4.908+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.24+1.md)
+
+---
+
+## [0.4.19.12+3] - 05-06-26
+
+E04:S19:T12 — **Single-board Wave 3:** Framework install templates, `fbuboard` stub on fresh install, adopter migration guide. SemVer **v0.4.902+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+3.md)
+
+---
+
+## [0.4.19.12+2] - 05-06-26
+
+E04:S19:T12 — **Single-board Wave 2:** Tooling skips deprecated `fbuboard`; three-surface RW report; UKW Step 6.5 skip. SemVer **v0.4.900+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+2.md)
+
+---
+
+## [0.4.19.12+1] - 05-06-26
+
+E04:S19:T12 — **Single-board Wave 1 (UXR-020 R3):** ADR-018; `kboard` Verification (V) band; `fbuboard` deprecated stub; policy/guide updates. SemVer **v0.4.899+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+1.md)
+
+---
+
+## [0.2.16.4+29] - 05-06-26
+
+E02:S16:T04 — **UKW board hygiene:** Reverted erroneous fbuboard→kboard mirror of archived tasks; pruned RESOLVED FBUs (BR-078/079/080/087); clarified fbuboard-only verification-pending wiring. SemVer **v0.4.898+29**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+29.md)
 
 ---
 
@@ -163,7 +211,7 @@ E06:S09:T16 — **Install sign-off:** BR-084 accepts lowercase `t{task}`; BR-086
 
 ## [0.2.16.4+27] - 04-06-26
 
-E02:S16:T04 — **UKW:** Restored Could Have backlog on kboard/fbuboard (39/31 rows); FR-109 policy — prune terminal/bloat only, not C-band queue. SemVer **v0.4.881+27**.
+E02:S16:T04 — **UKW:** Restored Could Have backlog on kboard (39/31 rows); FR-109 policy — prune terminal/bloat only, not C-band queue. SemVer **v0.4.881+27**.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+27.md)
 
@@ -171,7 +219,7 @@ E02:S16:T04 — **UKW:** Restored Could Have backlog on kboard/fbuboard (39/31 r
 
 ## [0.2.16.18+1] - 04-06-26
 
-E02:S16:T18 — **FR-109:** Lean active board contract — `validate_active_kanban_board.py`, pre-commit + RW Gate 11, UKW parity doc, pruned kboard/fbuboard. SemVer **v0.4.880+1**.
+E02:S16:T18 — **FR-109:** Lean active board contract — `validate_active_kanban_board.py`, pre-commit + RW Gate 11, UKW parity doc, pruned kboard. SemVer **v0.4.880+1**.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.18+1.md)
 

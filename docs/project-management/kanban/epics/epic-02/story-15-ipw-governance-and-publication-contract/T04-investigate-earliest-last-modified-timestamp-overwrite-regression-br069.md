@@ -17,9 +17,9 @@ housekeeping_policy: keep
 **Code:** E02S15T04
 **Version Anchor:** v0.2.15.4+4
 
-**Upstream:** [BR-069 – kboard/fbuboard earliest `Last modified` timestamps are being overwritten](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+**Upstream:** [BR-069 – kboard earliest `Last modified` timestamps are being overwritten](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 
-**Planning artifact (IPP):** [IPP-E02S15T04 — BR-069 row-tail normalization and terminal timestamp interaction](../../../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
+**Planning artifact (IPP):** [IPP-E2S15T4 — BR-069 row-tail normalization and terminal timestamp interaction](../../../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 
 ---
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 - User report that earliest historical row timestamps appear to have been overwritten.
 - User report that task IDs are being multiplied on rows during board mutation/reconciliation flows.
-- Existing timestamp integrity stream: [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), [E06:S07:T115](../../epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md).
+- Existing timestamp integrity stream: [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), [E06:S07:T115](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md).
 - Existing governance hardening stream: [E02:S15:T03](T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md), [FR-089](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md).
 - Current board mutation logic in `update_kanban_docs.py`.
 
@@ -74,7 +74,7 @@ Additionally, row traceability fidelity requires exactly one canonical task-ID s
 
 ## References
 
-- [IPP-E02S15T04 — BR-069 row-tail normalization and terminal timestamp interaction](../../../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
+- [IPP-E2S15T4 — BR-069 row-tail normalization and terminal timestamp interaction](../../../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 - [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [FR-089](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)

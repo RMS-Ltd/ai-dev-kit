@@ -1,0 +1,14 @@
+{
+  "contract": "FR-097 structure-prune — terminal task row removal (RW Step 7 E01:S02:T13)",
+  "release_scope": {
+    "task_id": "E01:S02:T13",
+    "version_string": "v0.1.2.13+1"
+  },
+  "rows": {
+    "E01:S02:T13": {
+      "allowed": true,
+      "reason": "COMPLETE v0.1.2.13+1 — archived to kanban-completed.md"
+    }
+  },
+  "timestamp_utc": "2026-06-05 01:29:00 UTC"
+}

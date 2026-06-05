@@ -117,7 +117,7 @@ This creates governance and traceability gaps because documentation no longer re
 
 ## Related
 
-- [FR-042](./FR-042-implementation-planning-workflow-ipw.md) - IPW workflow and planning artifacts
-- [FR-075](./FR-075-icw-durable-planning-artifacts-documentation-system.md) - Durable planning artifacts
-- [FR-076](./FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) - Drift/concurrency controls
-- [FR-094](./FR-094-ipw-slash-command-and-task-state-transition-mandate.md) - `/ipw` slash command + mandatory IPP state transition mandate. FR-094 is the mechanism that embeds the FR-077 ownership contract directly inside the IPP artefact — mandatory Step 1 (`TODO → IN PROGRESS`) and final status reconciliation step prescribed in every IPP's Implementation Plan section. See also: [ADR-004](../../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md).
+- [FR-042](FR-042-implementation-planning-workflow-ipw.md) - IPW workflow and planning artifacts
+- [FR-075](FR-075-icw-durable-planning-artifacts-documentation-system.md) - Durable planning artifacts
+- [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) - Drift/concurrency controls
+- [FR-094](FR-094-ipw-slash-command-and-task-state-transition-mandate.md) - `/ipw` slash command + mandatory IPP state transition mandate. FR-094 is the mechanism that embeds the FR-077 ownership contract directly inside the IPP artefact — mandatory Step 1 (`TODO → IN PROGRESS`) and final status reconciliation step prescribed in every IPP's Implementation Plan section. See also: [ADR-004](../../../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md).

@@ -26,7 +26,7 @@ Publication N/A Reason: Tooling/config/doc task — no specification/test-design
 
 ## Input
 
-- [IPP — E02:S16:T09 implementation plan](../../../../../../docs/implementation-cycles/IPP-E02S16T09-ipw-slash-command-and-ipp-state-transition.md)
+- [IPP — E02:S16:T09 implementation plan](../../../../../implementation-cycles/IPP-E2S16T09-ipw-slash-command-and-ipp-state-transition.md)
 - [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) requirements.
 - Existing `/rw` command at `.claude/commands/rw.md` and `/ukw` at `.claude/commands/ukw.md` as pattern references.
 - IPW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`.
@@ -89,4 +89,4 @@ See [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-m
 - `CLAUDE.md`
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
-- [IPP artifact](../../../../../../docs/implementation-cycles/IPP-E02S16T09-ipw-slash-command-and-ipp-state-transition.md)
+- [IPP artifact](../../../../../implementation-cycles/IPP-E2S16T09-ipw-slash-command-and-ipp-state-transition.md)

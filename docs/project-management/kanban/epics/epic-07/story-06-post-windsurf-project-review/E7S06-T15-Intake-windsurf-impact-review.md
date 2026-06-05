@@ -28,7 +28,7 @@ Intake workflow in .cursorrules requires agentic analysis. intake-process matche
 | .windsurf Skill | Purpose | .cursorrules Equivalent | Target Path |
 |-----------------|---------|--------------------------|-------------|
 | intake-process | FR/BR/UXR intake; task creation | Intake workflow; agentic analysis | .cursor/skills/intake-process |
-| fr_br_uxr_completed_update | Update fbu-completed.md | UKW FR/BR/UXR sync; doc interface | .cursor/skills/fr-br-uxr-completed-update |
+| fr_br_uxr_completed_update | Update intake-completed.md | UKW FR/BR/UXR sync; doc interface | .cursor/skills/fr-br-uxr-completed-update |
 
 ---
 

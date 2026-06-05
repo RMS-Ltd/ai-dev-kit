@@ -1,6 +1,6 @@
 # Kanban Workflow Agents
 
-**Cold-start bootstrap (all agents):** repo-root [`AGENTS.md`](../../../AGENTS.md) and [`docs/project-agent-manifest.json`](../../../project-agent-manifest.json). This file holds **domain role** detail for kanban, intake, and documentation coordination.
+**Cold-start bootstrap (all agents):** repo-root [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) and [`docs/project-agent-manifest.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-agent-manifest.json). This file holds **domain role** detail for kanban, intake, and documentation coordination.
 
 ---
 
@@ -14,9 +14,9 @@ When executing Release Workflow (RW, RW -d, RW -k):
 
 **Coordination:** Validation Agent (branch safety); Documentation Agent (changelog, README, completed ledgers).
 
-**Canonical execution:** `.cursorrules` RW section · `.claude/commands/rw.md` · [release-workflow-agent-execution.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+**Canonical execution:** `.cursorrules` RW section · `.claude/commands/rw.md` · [release-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 
-**Human quick reference:** [workflow-initiation-cheatsheet.md](../../../guides/workflow-initiation-cheatsheet.md)
+**Human quick reference:** [workflow-initiation-cheatsheet.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/guides/workflow-initiation-cheatsheet.md)
 
 ---
 
@@ -76,8 +76,8 @@ When working with documentation:
 - Use docs_generate skill for documentation generation from templates
 - Use changelog_manage skill for changelog updates and archival
 - Use kanban_completed_update skill for kanban-completed.md maintenance
-- Use fr_br_uxr_completed_update skill for fbu-completed.md maintenance
-- Ultimate responsibility for kanban-completed.md and fbu-completed.md integrity and updates
+- Use fr_br_uxr_completed_update skill for intake-completed.md maintenance
+- Ultimate responsibility for kanban-completed.md and intake-completed.md integrity and updates
 
 **Intelligence Requirements:**
 - Follow documentation-first approach for all project changes
@@ -93,7 +93,7 @@ When working with documentation:
 
 **Ultimate Responsibility:**
 - **kanban-completed.md:** Final authority over structure, format, and updates
-- **fbu-completed.md:** Final authority over structure, format, and updates
+- **intake-completed.md:** Final authority over structure, format, and updates
 - **docs/journals/:** Workflow forensic run logs and checkpoint manifests (FR-059 / ADR-008); TTL housekeeping per `journal_ttl_days` in `rw-config.yaml`
 - **Agent Coordination:** Primary interface for all agents updating completed tasks and FR/BR/UXR items
 - **Validation:** Ensures consistent timestamp format and recent tasks tracking for both kanban and FR/BR/UXR
@@ -113,7 +113,7 @@ Documentation Agent.update_kanban_completed({
 })
 ```
 
-### Standard Update Interface for fbu-completed.md
+### Standard Update Interface for intake-completed.md
 ```
 Documentation Agent.fr_br_uxr_completed_update({
   fr_br_uxr_id: "FR-048",

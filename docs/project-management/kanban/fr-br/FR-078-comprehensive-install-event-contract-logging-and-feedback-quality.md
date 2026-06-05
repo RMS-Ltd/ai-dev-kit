@@ -97,6 +97,6 @@ For shippable quality, the install telemetry model must answer:
 
 ## Related
 
-- [FR-047](./FR-047-install-logging-for-framework-dependencies.md) - Baseline install logging capability
-- [FR-059](./FR-059-enhanced-workflow-logging-system.md) - Workflow-level forensic logging patterns
-- [FR-079](./FR-079-install-feedback-submission-path-and-governance.md) - Submission-path responsibility split from FR-078
+- [FR-047](FR-047-install-logging-for-framework-dependencies.md) - Baseline install logging capability
+- [FR-059](FR-059-enhanced-workflow-logging-system.md) - Workflow-level forensic logging patterns
+- [FR-079](FR-079-install-feedback-submission-path-and-governance.md) - Submission-path responsibility split from FR-078

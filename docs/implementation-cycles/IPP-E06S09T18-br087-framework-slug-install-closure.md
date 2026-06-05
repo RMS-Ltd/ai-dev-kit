@@ -21,7 +21,7 @@ housekeeping_policy: keep
 | -- | ----------- | ------ |
 | RF1 | Fresh **ai-dev-kit** checkout: slug-only top-level `packages/frameworks/` dirs | T18 AC |
 | RF2 | Install/update paths auto-relocate or warn with migration command | T18 Wave A, UXR-016 A1/A2 |
-| RF3 | GitHub release tarballs use `{slug}/` archive roots; republish checklist done | BR-087 AC |
+| RF3 | GitHub release tarballs use `\{slug\}/` archive roots; republish checklist done | BR-087 AC |
 | RF4 | Install docs normative on slugs; legacy names migration-only | T18 |
 | RF5 | BR-087 RESOLVED only after user adopter verification | Project rules |
 | RF6 | T17 slug mapping, extract rename, tests preserved | Regression |
@@ -49,7 +49,7 @@ Mechanical path update (active repo only): `rw-config.yaml`, CI, `build_packages
 ### Wave C — Release assets
 
 - `build_packages.py` / `build_all_packages.sh`
-- Maintainer republish + `tar -tzf` verify `{slug}/` root
+- Maintainer republish + `tar -tzf` verify `\{slug\}/` root
 
 ### Status transitions (FR-094)
 
@@ -91,7 +91,7 @@ Mechanical path update (active repo only): `rw-config.yaml`, CI, `build_packages
 
 | Doc | Action |
 |-----|--------|
-| IPP-E06S09T18 | This file |
+| IPP-E6S9T18 | This file |
 | T18, BR-087, UXR-016, INSTALL, packages/README | Updated on RW |
 
 ---

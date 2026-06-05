@@ -13,13 +13,13 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E02:S16:T16](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)  
 **Origin FR:** [FR-102](../../project-management/kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)  
-**Planning package:** [IPP-E02S16T16](../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
+**Planning package:** [IPP-E2S16T16](../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 
 ---
 
 ## Context
 
-Active MoSCOW rows on `kboard.md` and `fbuboard.md` can show **COMPLETE** (or terminal FBU) work while source task/FBU docs are already closed. [FR-076](../../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) and `update_kanban_docs.py` hygiene could **remove** such rows without appending to [**kanban-completed.md**](../../project-management/kanban/kanban-completed.md) or [**fbu-completed.md**](../../project-management/kanban/fbu-completed.md) — losing the ledger-first contract operators expect.
+Active MoSCOW rows on `kboard.md` can show **COMPLETE** (or terminal FBU) work while source task/FBU docs are already closed. [FR-076](../../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) and `update_kanban_docs.py` hygiene could **remove** such rows without appending to [**kanban-completed.md**](../../project-management/kanban/kanban-completed.md) or [**intake-completed.md**](../../project-management/kanban/intake-completed.md) — losing the ledger-first contract operators expect.
 
 Operators need a **fast, explicit** UKW path: “clean the boards” means **archive then remove**, not silent deletion.
 
@@ -38,8 +38,8 @@ Operators need a **fast, explicit** UKW path: “clean the boards” means **arc
    - **fbuboard:** linked **FR/BR/UXR** document status (terminal per FR-076 rules; keep unresolved-verification exceptions).
 
 5. **Ledger-before-removal (mandatory):**
-   - Tasks → `kanban_completed_update` / [kanban-completed-update skill](../../../.cursor/skills/kanban-completed-update/SKILL.md) before row removal.
-   - FBUs → `fr_br_uxr_completed_update` / [fr-br-uxr-completed-update skill](../../../.cursor/skills/fr-br-uxr-completed-update/SKILL.md) before row removal.
+   - Tasks → `kanban_completed_update` / [kanban-completed-update skill](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/kanban-completed-update/SKILL.md) before row removal.
+   - FBUs → `fr_br_uxr_completed_update` / [fr-br-uxr-completed-update skill](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/fr-br-uxr-completed-update/SKILL.md) before row removal.
 
 6. **Step scope for `-c`:** Run Steps 1, 2 (archive scan), 6 (archive + prune), 7–9. Skip 2.5, 3–5. Step 9 **must** include `## Archive completed summary` (archived / skipped / already-in-ledger counts).
 

@@ -47,7 +47,8 @@ These keys are only required if using specific features:
 | `kanban_root` | string | `use_kanban: true` | Root path for Kanban docs | `docs/project-management/kanban` |
 | `epic_doc_pattern` | string | `use_kanban: true` | Pattern for epic docs (relative to `kanban_root`) | `epics/epic-{epic:02d}/epic-{epic:02d}.md` |
 | `story_doc_pattern` | string | `use_kanban: true` | Pattern for story docs (relative to `kanban_root`) | `epics/epic-{epic:02d}/story-{story:02d}-*.md` |
-| `kanban_board` | string | `use_kanban: true` | Main Kanban board file (relative to `kanban_root`) | `_index.md` |
+| `kanban_board` | string | `use_kanban: true` | Active MoSCOW board file (relative to `kanban_root`); sole board per ADR-018 | `kboard.md` |
+| `fbu_board` | string | **Deprecated** | Legacy second MoSCOW board (`kboard.md`). **Do not set** on new installs — use redirect stub only. Validators skip deprecated stubs. | *(omit)* |
 | `task_doc_pattern` | string | `use_kanban: true` (recommended) | Pattern for task docs (relative to `kanban_root`; include `{epic}`, `{story}`, `{task}`) | `epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md` |
 | `fr_br_root` | string | Optional | FR/BR directory (relative to **project root**, not `kanban_root`) | `docs/project-management/kanban/fr-br` |
 | `versioning_schema` | string | Optional | Version schema (default: `RC.EPIC.STORY.TASK+BUILD`) | `RC.EPIC.STORY.TASK+BUILD` |
@@ -144,7 +145,8 @@ kanban_root: docs/project-management/kanban
 epic_doc_pattern: epics/epic-{epic:02d}/epic-{epic:02d}.md
 story_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*.md
 task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
-kanban_board: _index.md
+kanban_board: kboard.md
+# fbu_board: kboard.md  # DEPRECATED (ADR-018) — omit; stub only if file exists
 versioning_schema: RC.EPIC.STORY.TASK+BUILD
 versioning_mode: dual
 semver_mapping_strategy: task_touch

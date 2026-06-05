@@ -608,9 +608,12 @@ The Kanban board uses a **split pattern** to optimize for quick scanning:
 - Rules/explanations remain accessible when needed
 
 **Templates:**
-- `templates/KANBAN_BOARD_TEMPLATE.md` - Board template (structured information only)
+- `templates/KANBAN_BOARD_TEMPLATE.md` - Board template (structured information only; includes Verification (V) band per ADR-018)
+- Fresh install emits `kboard.md` only (no `fbuboard.md` / `kanban-board.md` stub)
 - `templates/KANBAN_STRUCTURE_TEMPLATE.md` - Epic/Story/Task structure scaffold (`kanban-structure.md` on `--mode fresh`)
 - `templates/KANBAN_BOARD_GUIDE_TEMPLATE.md` - Guide template (rules/explanations)
+
+**Brownfield single-board migration:** `guides/single-board-migration-adopter-note.md` (ADR-018)
 
 **Usage:**
 - Use `kboard.md` for quick scanning of active tasks and epic status

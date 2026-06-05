@@ -42,5 +42,5 @@ Verify mapping completeness, link integrity, and workflow compatibility after fi
 
 ## References
 
-- [ICW Specification](./ICW-E4S19T05-specification.md)
+- [ICW Specification](ICW-E4S19T05-specification.md)
 - [Task E4:S19:T05](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)

@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Policy
 
-**AI Dev Kit Python:** Minimum **3.11** for package install, development, validators, and CI. Matches `python_requires` in [`setup.py`](../../../../../../setup.py) and [`.github/workflows/framework-release.yml`](../../../../../../.github/workflows/framework-release.yml).
+**AI Dev Kit Python:** Minimum **3.11** for package install, development, validators, and CI. Matches `python_requires` in [`setup.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/setup.py) and [`.github/workflows/framework-release.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/framework-release.yml).
 
 ---
 
@@ -41,7 +41,7 @@ Align declared Python minimum version (`setup.py`, README, install guides) with 
 
 - [FR-104](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md), [BR-077](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
 - [E07:S06:T08](../../epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) audit findings
-- [IPP-E08S03T05-python-minimum-version-fr104-br077.md](../../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) (IPW)
+- [IPP-E8S3T5-python-minimum-version-fr104-br077.md](../../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) (IPW)
 
 ---
 
@@ -59,11 +59,11 @@ Single coherent **Python version policy** for ai-dev-kit: update `setup.py`, REA
 
 ## Out of scope (this task)
 
-- Dependabot ([FR-105](story-03-automation-scripts/T06-dependabot-enablement-fr105.md))
-- pytest fixes ([BR-058](story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md))
+- Dependabot ([FR-105](T06-dependabot-enablement-fr105.md))
+- pytest fixes ([BR-058](T04-ci-test-workflow-pytest-remediation-br058.md))
 
 ## References
 
-- [IPP-E08S03T05-python-minimum-version-fr104-br077.md](../../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md)
+- [IPP-E8S3T5-python-minimum-version-fr104-br077.md](../../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md)
 - [FR-104](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md)
 - [BR-077](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)

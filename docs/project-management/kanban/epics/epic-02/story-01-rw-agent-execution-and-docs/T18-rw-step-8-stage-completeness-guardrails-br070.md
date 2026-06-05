@@ -39,7 +39,7 @@ Harden RW Step 8 so release commits cannot omit Step-7 outputs. Add deterministi
 ## Input
 
 - [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
-- [IPW Plan — E02:S01:T18](../../../../../../.claude/plans/e2-s01-t18-polished-cerf.md)
+- [IPW Plan — E02:S01:T18](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/plans/e2-s01-t18-polished-cerf.md)
 
 ---
 
@@ -67,13 +67,13 @@ Harden RW Step 8 so release commits cannot omit Step-7 outputs. Add deterministi
 
 - [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
-- [Release Workflow Agent Execution Guide](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
+- [Release Workflow Agent Execution Guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 
 ---
 
 ## References
 
-- [IPW Plan — E02:S01:T18](../../../../../../.claude/plans/e2-s01-t18-polished-cerf.md)
+- [IPW Plan — E02:S01:T18](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/plans/e2-s01-t18-polished-cerf.md)
 - `packages/frameworks/workflow-mgt/scripts/validate_rw_step7_completeness.py`
 - `packages/frameworks/workflow-mgt/scripts/test_validate_rw_step7_completeness.py`
 - `packages/frameworks/workflow-mgt/scripts/validate_rw_step7_post_commit.py`

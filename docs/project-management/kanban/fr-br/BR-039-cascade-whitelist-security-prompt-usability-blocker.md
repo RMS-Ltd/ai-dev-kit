@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.6.57+6  
 **Code:** BR-039  
 **Implementing Task (repo — COMPLETE):** [E06:S06:T57](../epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
-**Planning Artifact (IPW):** [IPW-E06S06T57-br039-vendor-blocker-planning.md](../../../implementation-cycles/IPW-E06S06T57-br039-vendor-blocker-planning.md)
+**Planning Artifact (IPW):** [IPW-E6S6T57-br039-vendor-blocker-planning.md](../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
 
 **Complementary (repo — Cursor):** [E06:S07:T107](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) — pattern catalog + validator ([ADR-013](../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)); **does not** fix Cascade product whitelist.
 

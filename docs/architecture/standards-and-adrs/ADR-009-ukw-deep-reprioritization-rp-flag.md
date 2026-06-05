@@ -13,13 +13,13 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E02:S16:T06](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)  
 **Origin FR:** [FR-085](../../project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)  
-**Planning package:** [IPP-E02S16T06](../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
+**Planning package:** [IPP-E2S16T6](../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
 
 ---
 
 ## Context
 
-UKW supports MoSCOW maintenance via comprehensive runs, `-p` (update priorities), and `-a` (assign to targets). None of these provide an explicit **deep reprioritization** mode that systematically reorders `kboard.md` and `fbuboard.md` from evidence across intent, dependencies, blockers, and delivery impact, with an audit trail.
+UKW supports MoSCOW maintenance via comprehensive runs, `-p` (update priorities), and `-a` (assign to targets). None of these provide an explicit **deep reprioritization** mode that systematically reorders `kboard.md` from evidence across intent, dependencies, blockers, and delivery impact, with an audit trail.
 
 [FR-038](../../project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md) reserves **narrow** MoSCOW for RW Step 7 (`rw_step_7`). Whole-board priority realignment belongs in **standalone** UKW, not release-scope sync.
 
@@ -34,7 +34,7 @@ UKW supports MoSCOW maintenance via comprehensive runs, `-p` (update priorities)
 3. **Invocation context:** `--rp` runs only under **`standalone`** user invocation. Agents **MUST NOT** use `--rp` during RW Step 7 (`rw_step_7`).
 
 4. **Step scope for `--rp`:**
-   - Run: Step 1 (perpetual wiring), Step 2 (evidence scan), Step 6 (deep MoSCOW on `kboard.md` + `fbuboard.md`), Step 6.5 (fbuboard terminal prune per FR-076), Step 7–9.
+   - Run: Step 1 (perpetual wiring), Step 2 (evidence scan), Step 6 (deep MoSCOW on `kboard.md` + `kboard.md`), Step 6.5 (fbuboard terminal prune per FR-076), Step 7–9.
    - Skip: Step 2.5, Steps 3–5 (unless status mismatch blocks reprioritization — fix and document in Step 9).
 
 5. **Evidence categories** (mandatory in rationale for each moved row): **intent**, **dependencies**, **blockers**, **impact**.

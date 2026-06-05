@@ -48,10 +48,10 @@ housekeeping_policy: keep
 | `docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md` | **INDEX** | — | Repo-boundary ADR |
 | `docs/architecture/standards-and-adrs/workflow-flaws-reference-guide.md` | **INDEX** | — | Operational reference |
 | `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md` | **INDEX** | — | Operational reference |
-| `docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | **MOVE** | `docs/governance/principles/bidirectional-wiring-principle.md` | Maintainer decision (IPW E7:S01:T11): promote to principles; stub at `fr-br/`; update templates, `fbu-open-taskless-queue.md`, cross-wiring SoP |
+| `docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | **MOVE** | `docs/governance/principles/bidirectional-wiring-principle.md` | Maintainer decision (IPW E7:S01:T11): promote to principles; stub at `fr-br/`; update templates, `intake-open-taskless-queue.md`, cross-wiring SoP |
 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | **OUT** | — | Framework SoT; book stub points here |
 | `docs/project-management/kanban/kboard.md` | **OUT** | — | Board surface |
-| `docs/project-management/kanban/fbuboard.md` | **OUT** | — | Board surface |
+| `docs/project-management/kanban/kboard.md` | **OUT** | — | Board surface |
 | `docs/project-management/kanban/fr-br/` (intake queue) | **OUT** | — | Except principles promoted per FIX row |
 | `docs/maintenance/*` | **OUT** | — | Runbooks; index-only from governance README |
 | `docs/maintenance/book-repo-docs-scope.md` | **FIX** | Created (Wave F) | AC3: `docs/governance/` **KEEP** |

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 
 ## Read order (cold start)
 
-**One step for agents:** read repo-root [`AGENTS.md`](../AGENTS.md) through the ascertainment rule. Routing, keywords, `loadFirst`, binding rules, and open-work snapshot live there — **not** in a second manifest read.
+**One step for agents:** read repo-root [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) through the ascertainment rule. Routing, keywords, `loadFirst`, binding rules, and open-work snapshot live there — **not** in a second manifest read.
 
 [`project-agent-manifest.json`](project-agent-manifest.json) is the machine mirror for validators and automation. Keep it aligned when editing the routing table in `AGENTS.md`.
 
@@ -29,21 +29,21 @@ housekeeping_policy: keep
 | `workflows` | RW, UKW, IPW, CMW, PVW | [Workflow cheatsheet](guides/workflow-initiation-cheatsheet.md) |
 | `kanban` | Boards + intake | [kboard.md](project-management/kanban/kboard.md) |
 | `governance` | Policies + ADRs | [docs/governance/README.md](governance/README.md) |
-| `frameworks` | Packaged frameworks | [workflow mgt README](../packages/frameworks/workflow-mgt/README.md) |
-| `planning` | IPW / IPP / ICW | [.claude/commands/ipw.md](../.claude/commands/ipw.md) |
+| `frameworks` | Packaged frameworks | [workflow mgt README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/README.md) |
+| `planning` | IPW / IPP / ICW | [.claude/commands/ipw.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) |
 | `meta` | Bootstrap architecture | [ADR-012](architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) |
 
-Full routing table: [`AGENTS.md`](../AGENTS.md) § Task routing (mirror: manifest `taskRouting[]`).
+Full routing table: [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) § Task routing (mirror: manifest `taskRouting[]`).
 
 ---
 
 ## Anti-patterns (do not cold-load)
 
-- Entire [`CHANGELOG.md`](../CHANGELOG.md) archive tree or `docs/changelog-and-release-notes/changelog-archive/` unless doing changelog work.
-- [`docs/journals/`](../docs/journals/) unless forensic/RW recovery is routed.
-- Full [`fbuboard.md`](project-management/kanban/fbuboard.md) MoSCOW scan unless kanban/FBU track matched.
+- Entire [`CHANGELOG.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CHANGELOG.md) archive tree or `docs/changelog-and-release-notes/changelog-archive/` unless doing changelog work.
+- [`docs/journals/`](journals) unless forensic/RW recovery is routed.
+- Full [`fbuboard.md`](project-management/kanban/kboard.md) MoSCOW scan unless kanban/FBU track matched.
 - Agent transcripts or plan folders outside the repo.
-- Full [`.cursorrules`](../.cursorrules) ingest before reading [`AGENTS.md`](../AGENTS.md) — load workflow sections when `workflows` track matches.
+- Full [`.cursorrules`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) ingest before reading [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) — load workflow sections when `workflows` track matches.
 - [`project-agent-manifest.json`](project-agent-manifest.json) on cold start (routing is in `AGENTS.md`).
 
 ---

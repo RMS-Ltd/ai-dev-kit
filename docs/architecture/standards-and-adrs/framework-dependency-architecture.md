@@ -396,8 +396,8 @@ Each MAJOR version release includes:
 ## References
 
 - **Epic 6:** `docs/project-management/kanban/epics/epic-06/epic-06.md`
-- **Story 1:** `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md`
-- **Story 2:** `docs/project-management/kanban/epics/epic-06/story-02-framework-update-and-migration.md`
+- **Story 1:** `docs/project-management/kanban/epics/epic-06/story-02-versioning-cookbook-and-examples.md`
+- **Story 2:** `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md`
 - **Git Submodules:** https://git-scm.com/book/en/v2/Git-Tools-Submodules
 - **Semantic Versioning:** https://semver.org/
 

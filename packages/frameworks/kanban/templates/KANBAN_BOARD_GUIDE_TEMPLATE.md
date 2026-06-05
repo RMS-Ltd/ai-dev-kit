@@ -60,6 +60,10 @@ The board includes a **MoSCOW Prioritized In-Progress Tasks** section that shows
   - High-value items that contribute significantly to goals
   - Tasks that are important but not blocking
 
+- **V (Verification):** Task shipped, FBU still open (verification pending)
+  - Lives between Should Have and Could Have per ADR-018
+  - Use `⏳ WAITING` status (not terminal `COMPLETE` on active MoSCOW)
+
 - **C (Could Have):** Nice-to-have tasks that could be completed
   - Lower priority items that add value but are not essential
   - Tasks that can be deferred if needed
@@ -138,9 +142,10 @@ See [`README.md`](README.md) for full structure details and `{local_policy_path}
 
 The board is organized into three separate documents:
 
-1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Shows all active tasks organized by priority (M/S/C/O/W)
+1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Sole active board: M/S/**V**/C/O/W (wired FBUs + Verification band)
 2. **Epic/Story/Task Structure** (`kanban-structure.md`) - Shows all epics with their status, priority, stories, and links
 3. **Rules and Explanations** (`kanban-board-guide.md`) - This document with how-to content and policies
+4. **`kboard.md`** - Deprecated redirect stub (no active MoSCOW); see ADR-018
 
 The board serves as the parent document to Story documents, providing a comprehensive view of all work items in the project.
 
@@ -234,6 +239,6 @@ The Story Checklist section should list all stories in a compact format (one lin
 
 ---
 
-**Template Version:** 2.0.0  
-**Last Updated:** 2026-01-20  
-**Based On:** Kanban board info-only split (E04:S18:T01)
+**Template Version:** 2.1.0  
+**Last Updated:** 2026-06-05  
+**Based On:** Kanban board info-only split (E04:S18:T01); ADR-018 single-board (E04:S19:T12 Wave 3)

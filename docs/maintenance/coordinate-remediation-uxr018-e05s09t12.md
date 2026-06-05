@@ -19,7 +19,7 @@ housekeeping_policy: keep
 | ------- | -- |
 | **Primary task** | **E05:S09:T12** — [task doc](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md) |
 | **UXR** | [UXR-018](../project-management/kanban/fr-br/UXR-018-changelog-directory-consolidation.md) |
-| **IPP** | [IPP-E05S09T12](../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) |
+| **IPP** | [IPP-E5S9T12](../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) |
 | **Semantic version anchor** | **v0.5.9.12+2** (portal story) |
 
 **E05:S01:T76 does not exist** — task doc deleted; no redirect stub. **E05:S01** story is **CLOSED** (historical registry; no new intake).

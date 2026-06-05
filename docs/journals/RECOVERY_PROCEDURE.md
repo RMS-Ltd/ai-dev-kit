@@ -79,6 +79,17 @@ git tag -l
 - If the commit was pushed: do **not** force-push. Create a revert commit or a follow-up fix.
 - If a tag was pushed to remote: do **not** delete the remote tag. Create a new release with a corrected tag.
 
+### 4.3 Tag collision / wrong BUILD (BR-097)
+
+If Step 9/11 reports a tagged BUILD collision, SemVer tag already exists, or push rejects an existing tag:
+
+1. **Do not** run `git tag -f`, `git push -f`, or `git push origin +v*` on release tags.
+2. Confirm `version.py` was not left at a reused BUILD (run `resolve_rw_build.py` if unsure).
+3. Bump `VERSION_BUILD` to **HEAD_BUILD + 1** for the same E:S:T.
+4. Re-invoke: `RW E\{epic\}:S\{story\}:T\{task\} --art` (normal release — not `--doc-policy-zero` unless user explicitly required BUILD +0 on untagged doc-init).
+
+Historical mis-pointed tags remain forensic evidence; correction is forward-only via new BUILD.
+
 ## 5. Verify Clean Recovery
 
 After the rerun succeeds:

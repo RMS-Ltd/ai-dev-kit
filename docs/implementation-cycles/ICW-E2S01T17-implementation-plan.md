@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T17-Implementation-Plan: FR-077 IPW-built Task Status Transition and Kboard Sync
+# ICW-E2S1T17-Implementation-Plan: FR-077 IPW-built Task Status Transition and Kboard Sync
 
 **Task:** E2:S01:T17  
 **Related FR:** FR-077  
@@ -54,7 +54,7 @@ housekeeping_policy: keep
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - Existing validation/audit scripts in `packages/frameworks/workflow-mgt/scripts/validation/`
 
 ---

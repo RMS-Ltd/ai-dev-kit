@@ -33,7 +33,7 @@ Relax or reorder pre-install validation for `--mode fresh` on empty repos so fir
 
 - [BR-080](../../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)
 - `install_kanban_framework.py` validation path for fresh mode
-- **IPW:** [IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md](../../../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) — **Publication Status: PUBLISHED**
+- **IPW:** [IPP-E6S9T9-br080-fresh-mode-empty-repo-validation.md](../../../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) — **Publication Status: PUBLISHED**
 
 ---
 
@@ -55,6 +55,6 @@ Relax or reorder pre-install validation for `--mode fresh` on empty repos so fir
 ## Links
 
 - [BR-080](../../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)
-- [IPP-E06S09T09](../../../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md)
+- [IPP-E6S9T9](../../../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md)
 - [BR-078](../../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

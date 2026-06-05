@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E2:S15:T04 - Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) **(E2:S15:T04)**  
-**Planning for:** [BR-069 - kboard/fbuboard earliest `Last modified` timestamps overwritten / task-ID multiplication](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
+**Planning for:** [BR-069 - kboard earliest `Last modified` timestamps overwritten / task-ID multiplication](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
 **Status:** Published
 
 ---
@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ### 1.1 Goal
 
-Isolate why MoSCOW rows on `kboard.md` and `fbuboard.md` still exhibit **forensic timestamp churn** and **traceability segment multiplication** after FR-089 / E2:S15:T03 guardrails. Deliver a concrete **root-cause narrative**, **ordering invariants**, and **implementation-ready guardrails** so touch-only and reconciliation flows cannot shift preserved historical evidence or append duplicate FBU/task segments.
+Isolate why MoSCOW rows on `kboard.md` still exhibit **forensic timestamp churn** and **traceability segment multiplication** after FR-089 / E2:S15:T03 guardrails. Deliver a concrete **root-cause narrative**, **ordering invariants**, and **implementation-ready guardrails** so touch-only and reconciliation flows cannot shift preserved historical evidence or append duplicate FBU/task segments.
 
 ### 1.2 Functional requirements
 
@@ -26,7 +26,7 @@ Isolate why MoSCOW rows on `kboard.md` and `fbuboard.md` still exhibit **forensi
 - **F2:** `_normalize_traceability_segments_for_row` MUST NOT leave legacy `Last modified` segments **non-terminal** when appending `| FBU | Task | IPP` tails, or MUST strip/reposition footers before rebuild so enforcement does not mis-detect “missing” timestamps.
 - **F3:** `enforce_moscow_row_timestamps` MUST NOT append a synthetic “now” timestamp when any valid `Last modified` chunk already exists on the row (not only when it is syntactically terminal).
 - **F4:** **Pipeline order** between `update_kanban_board` and `enforce_terminal_timestamps_on_boards` MUST converge to the same canonical semantics for identical inputs, or one path MUST be deprecated in favor of a single shared transform DAG.
-- **F5:** Duplicate-footer reconciliation (`reconcile_duplicate_moscow_row_footers`) remains governed by dual-agreement policy from [IPP-E2S15T03](IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md); divergence rows remain unchanged by design.
+- **F5:** Duplicate-footer reconciliation (`reconcile_duplicate_moscow_row_footers`) remains governed by dual-agreement policy from [IPP-E2S15T3](IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md); divergence rows remain unchanged by design.
 - **F6:** Task-ID link segments MUST NOT duplicate after repeated `normalize_board_traceability_segments` passes (extends FR-089 F8/F9).
 
 ### 1.3 Non-functional requirements
@@ -89,7 +89,7 @@ Isolate why MoSCOW rows on `kboard.md` and `fbuboard.md` still exhibit **forensi
 
 ## 4. Success criteria (investigation + planning)
 
-- [x] IPP filed under `docs/implementation-cycles/IPP-E2S15T04-*.md` with spec, tests, and plan.
+- [x] IPP filed under `docs/implementation-cycles/IPP-E2S15T4-*.md` with spec, tests, and plan.
 - [x] Root cause hypothesis substantiated with code references and reproduction (§5).
 - [x] Guardrail requirements F1–F6 and test matrix R1–R8 defined for implementation follow-on.
 - [x] Code changes merged and regression tests passing (Phases A-C published under `v0.2.15.4+1` through `v0.2.15.4+3`; category-4 suite passing with `test_4_17`).
@@ -101,7 +101,7 @@ Isolate why MoSCOW rows on `kboard.md` and `fbuboard.md` still exhibit **forensi
 
 ### 5.1 Pipeline order divergence (confirmed)
 
-Two different call orders exist in [`update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py):
+Two different call orders exist in [`update_kanban_docs.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py):
 
 | Path | Order |
 | --- | --- |
@@ -136,11 +136,11 @@ Using in-repo imports from `packages/frameworks/workflow-mgt/scripts/update_kanb
 - After **UKW ordering** (reconcile → normalize → enforce), output can append **`timestamp_now`** while retaining the historical chunk earlier in the line—**two** `Last modified` segments.
 - After **`update_kanban_board` ordering** (normalize → reconcile → enforce), outputs **differ** from UKW on the same input for duplicate-footer scenarios—demonstrating ordering sensitivity.
 
-**Automated lock:** `test_4_13_br069_pipeline_order_divergence_and_non_terminal_footer_append` in [`test_update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py) encodes both behaviors (documentary until remediation lands).
+**Automated lock:** `test_4_13_br069_pipeline_order_divergence_and_non_terminal_footer_append` in [`test_update_kanban_docs.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py) encodes both behaviors (documentary until remediation lands).
 
 ### 5.4 Relationship to FR-089 / T03
 
-[IPP-E2S15T03](IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md) defines duplicate-footer **detection** and dual-agreement **reconciliation** but does not eliminate the **normalize-then-append-footer** class of bugs above. BR-069 remains valid until normalize and enforcement share a single invariant on footer placement.
+[IPP-E2S15T3](IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md) defines duplicate-footer **detection** and dual-agreement **reconciliation** but does not eliminate the **normalize-then-append-footer** class of bugs above. BR-069 remains valid until normalize and enforcement share a single invariant on footer placement.
 
 ---
 
@@ -174,8 +174,8 @@ flowchart LR
 
 - [Host task E2:S15:T04](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - [BR-069](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [IPP-E2S15T03 – duplicate footer / divergence guardrails](IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
+- [IPP-E2S15T3 – duplicate footer / divergence guardrails](IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
 - [FR-089](../project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [UXR-009](../project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [Story 015](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md)
-- Tests: [`packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py)
+- Tests: [`packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py)

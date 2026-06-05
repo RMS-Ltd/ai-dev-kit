@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Agent cold-start checklist
 
-Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md). Cold start is **one file**: [AGENTS.md](../../AGENTS.md). Each simulation must load **≤5 files** before substantive work (manifest not required at cold start).
+Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md). Cold start is **one file**: [AGENTS.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md). Each simulation must load **≤5 files** before substantive work (manifest not required at cold start).
 
 ---
 

@@ -146,6 +146,68 @@ def get_version_build_from_git_ref(version_file: Path, git_ref: str) -> Optional
     return int(match.group(1)) if match else None
 
 
+def internal_version_tag_name(rc: int, epic: int, story: int, task: int, build: int) -> str:
+    """Canonical annotated tag for an internal RC.EPIC.STORY.TASK+BUILD release."""
+    return f"v{rc}.{epic}.{story}.{task}+{build}"
+
+
+def git_ref_exists(ref: str) -> bool:
+    """Return True when ref resolves in the current repository."""
+    result = subprocess.run(
+        ["git", "rev-parse", "--verify", ref],
+        capture_output=True,
+        text=True,
+        cwd=Path.cwd(),
+    )
+    return result.returncode == 0
+
+
+def validate_tagged_build_collision(
+    rc: int,
+    epic: int,
+    story: int,
+    task: int,
+    current_build: int,
+    version_file: Path,
+    policy_zero_ok: bool,
+) -> Tuple[bool, List[str]]:
+    """
+    Block reuse of a BUILD that already has a release tag (BR-067 follow-on guard).
+
+    --doc-policy-zero must not re-publish a tagged BUILD. Same-task releases when HEAD
+    already carries a tagged BUILD require BUILD + 1 (see CHANGELOG_v0.2.16.3+3).
+    """
+    errors: List[str] = []
+    est = f"E{epic}:S{story}:T{task}"
+
+    if policy_zero_ok:
+        tag = internal_version_tag_name(rc, epic, story, task, current_build)
+        if git_ref_exists(tag):
+            errors.append(
+                f"❌ TAGGED BUILD REUSE (BR-067): --doc-policy-zero blocked because git tag "
+                f"{tag} already exists. Same-task follow-on release for {est} requires "
+                f"BUILD +1 (normal `RW {est} --art`). "
+                f"See CHANGELOG_v0.2.16.3+3 precedent."
+            )
+        return len(errors) == 0, errors
+
+    head_build = get_version_build_from_git_ref(version_file, "HEAD")
+    if head_build is None:
+        return True, []
+
+    if current_build <= head_build:
+        tag = internal_version_tag_name(rc, epic, story, task, head_build)
+        if git_ref_exists(tag):
+            errors.append(
+                f"❌ TAGGED BUILD NOT INCREMENTED: git tag {tag} already exists. "
+                f"VERSION_BUILD={current_build} but HEAD has BUILD={head_build}. "
+                f"Same-task release for {est} requires BUILD > {head_build} "
+                f"(e.g. {internal_version_tag_name(rc, epic, story, task, head_build + 1)}). "
+                f"--doc-policy-zero is not valid when a release tag already exists."
+            )
+    return len(errors) == 0, errors
+
+
 def validate_perpetual_build_increment(
     version_file: Path,
     epic: int,
@@ -1258,6 +1320,14 @@ def validate_version_bump(
         
         if not doc_init_valid:
             errors.extend(doc_init_errors)
+    elif doc_policy_zero:
+        # BR-097: --doc-policy-zero only applies to BUILD=0 doc-init; never for follow-on BUILD≥1
+        errors.append(
+            "❌ --doc-policy-zero blocked: flag is only valid when VERSION_BUILD=0 (doc-init / explicit BUILD +0). "
+            f"Current VERSION_BUILD={current_build}. Same-task follow-on releases require BUILD +1 "
+            f"(normal `RW E{epic}:S{story}:T{current_task} --art`). "
+            "See BR-097 / CHANGELOG_v0.2.16.3+3."
+        )
     else:
         # Normal build (BUILD >= 1) - validate that it's not incorrectly using doc-init
         # This is handled in version bump logic validation below
@@ -1427,6 +1497,18 @@ def validate_version_bump(
             )
             if not inc_ok:
                 errors.extend(inc_errors)
+
+        tag_ok, tag_errors = validate_tagged_build_collision(
+            rc,
+            epic,
+            story,
+            completed_task,
+            current_build,
+            version_file,
+            policy_zero_ok,
+        )
+        if not tag_ok:
+            errors.extend(tag_errors)
     
     elif completed_task < current_task:
         # Out-of-order completion

@@ -33,7 +33,7 @@ housekeeping_policy: keep
 | ID | Requirement |
 | -- | ----------- |
 | RNF1 | Edit `.cursorrules` first on future RW changes; port to package excerpt |
-| RNF2 | Adopter paths use `{project}` / `rw-config` patterns in packaged YAML |
+| RNF2 | Adopter paths use `\{project\}` / `rw-config` patterns in packaged YAML |
 | RNF3 | Sync report in T08 task doc with validator output |
 
 ### 1.3 Invariants and boundaries
@@ -56,7 +56,7 @@ Adopters copying `packages/frameworks/workflow-mgt/` receive RW/UKW artefacts al
 
 ### 2.5 ADR necessity decision
 
-**Outcome:** `EXEMPT` — implements FR-049/FR-056 and [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md); no new architectural choice.
+**Outcome:** `EXEMPT` — implements FR-049/FR-056 and [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md); no new architectural choice.
 
 ---
 
@@ -92,7 +92,7 @@ See §5.
 
 | Doc ID | Path | Action |
 | ------ | ---- | ------ |
-| D1 | `docs/implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md` | CREATE |
+| D1 | `docs/implementation-cycles/IPP-E2S13T8-sync-packaged-workflows-live-spec.md` | CREATE |
 | D3 | `cursorrules-rw-trigger-section.md` | UPDATE |
 | D4 | `.claude/commands/rw.md` | UPDATE |
 | D5 | `canonical-rw-steps.yaml` | UPDATE |
@@ -110,7 +110,7 @@ See §5.
 
 | Doc ID | Path | Publication |
 | ------ | ---- | ----------- |
-| D1 | `docs/implementation-cycles/IPP-E02S13T08-*.md` | NOT_APPLICABLE (repo SoT) |
+| D1 | `docs/implementation-cycles/IPP-E2S13T8-*.md` | NOT_APPLICABLE (repo SoT) |
 | D3–D11 | Under `packages/frameworks/workflow-mgt/` | NOT_APPLICABLE (framework package) |
 
 ---
@@ -141,4 +141,4 @@ See §5.
 
 - [T08 task doc](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
 - [FR-049](../project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md)
-- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
+- [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)

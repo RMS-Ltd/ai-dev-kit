@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-04 (v0.1.2.14+1 – E01:S02:T14 FR-003 complete; T13 README template still open)
-**Version:** v0.1.2.14+1
+**Last updated:** 2026-06-05 (v0.1.2.13+1 – E01:S02:T13 README hygiene complete)
+**Version:** v0.1.2.13+1
 **Code:** E1S02
 
 ---
@@ -32,9 +32,9 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ## Task Checklist
 
-- [ ] **E01:S02:T13 – README / been-there template (FR-002)** - TODO (LOW) — [Task doc](story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](../../fr-br/FR-002-update-been-there-readme.md)
+- [x] **E01:S02:T13 – README / been-there template (FR-002)** - ✅ COMPLETE (v0.1.2.13+1) — [Task doc](story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](../../fr-br/FR-002-update-been-there-readme.md)
 
-- [x] **E01:S02:T14 – Dependency tracking for adopters (FR-003)** - ✅ COMPLETE (v0.1.2.14+1) — [Task doc](story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | [Guide](../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
+- [x] **E01:S02:T14 – Dependency tracking for adopters (FR-003)** - ✅ COMPLETE (v0.1.2.14+1) — [Task doc](story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | [Guide](../../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
 
 - [x] **E01:S02:T01 – Analyze current package structure and dependencies** ✅ COMPLETE (v0.1.2.1+1)
 - [x] **E01:S02:T02 – Document modularity principles and boundaries** ✅ COMPLETE (v0.1.2.2+1)

@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Code:** E06S06T62
 
 **Upstream:** [FR-083 - Global IPW-gated implementation contract](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)
-**IPW:** [IPW-E06S06T62-global-ipw-gated-implementation-contract](../../../../../implementation-cycles/IPW-E06S06T62-global-ipw-gated-implementation-contract.md)
+**IPW:** [IPW-E6S6T62-global-ipw-gated-implementation-contract](../../../../../implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md)
 
 ---
 
@@ -73,4 +73,4 @@ Implementation can begin prematurely when a user requested only intake/planning 
 
 ## Planning artifacts (publication)
 
-- [IPW-E6S06T62-global-ipw-gated-implementation-contract.md](../../../../../implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md)
+- [IPW-E6S6T62-global-ipw-gated-implementation-contract.md](../../../../../implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md)

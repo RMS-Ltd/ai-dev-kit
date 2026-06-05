@@ -18,8 +18,8 @@ This guide explains the **pattern catalog + validator + Cursor playbook** model 
 
 | Layer | File | Role |
 | ----- | ---- | ---- |
-| Catalog | [`.cursor/whitelist-patterns.yaml`](../../.cursor/whitelist-patterns.yaml) | Regex SoT with examples |
-| Cursor apply | [`.cursor/permissions.json`](../../.cursor/permissions.json) | **Terminal allowlist** Cursor loads automatically (prefix rules) |
+| Catalog | [`.cursor/whitelist-patterns.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/whitelist-patterns.yaml) | Regex SoT with examples |
+| Cursor apply | [`.cursor/permissions.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/permissions.json) | **Terminal allowlist** Cursor loads automatically (prefix rules) |
 | Proof | `validate_whitelist_patterns.py` | Ensures patterns compile and examples match |
 | Playbook | This guide | Tune `permissions.json`; optional IDE UI for gaps |
 | Evidence | [ide-whitelist-uat-log.md](ide-whitelist-uat-log.md) | UAT and integration spike entries |
@@ -46,7 +46,7 @@ This guide explains the **pattern catalog + validator + Cursor playbook** model 
 | -------- | ------ |
 | Does Cursor load `whitelist-patterns.yaml`? | **No** — regex catalog is repo SoT only |
 | Does Cursor load `.cursor/permissions.json`? | **Yes** — [permissions.json reference](https://cursor.com/docs/reference/permissions). Terminal entries use **prefix** matching on the full command string. |
-| What should maintainers do? | 1) Enable **Run Mode → Allowlist** (or Allowlist with Sandbox). 2) Commit/use [`.cursor/permissions.json`](../../.cursor/permissions.json) (already mapped from the catalog). 3) After catalog changes, update `permissions.json` prefixes and re-run the validator. |
+| What should maintainers do? | 1) Enable **Run Mode → Allowlist** (or Allowlist with Sandbox). 2) Commit/use [`.cursor/permissions.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/permissions.json) (already mapped from the catalog). 3) After catalog changes, update `permissions.json` prefixes and re-run the validator. |
 | What does the repo automate? | `validate_whitelist_patterns.py` — YAML coherence; `permissions.json` is maintained alongside the catalog (see maintainer workflow). |
 
 ### One-time setup (this machine)
@@ -69,7 +69,7 @@ In **Cursor Settings**, use the **left sidebar** (not General / Privacy only). S
 | **Allowlist (with Sandbox)** | **Yes** — allowlisted outside sandbox; rest sandboxed |
 | **Run Everything** | Allowlist still defined but everything runs (not recommended) |
 
-You do **not** have to switch away from Auto-review if that is already selected. The repo [`.cursor/permissions.json`](../../.cursor/permissions.json) supplies the terminal allowlist in all modes above except deprecated “Ask every time”.
+You do **not** have to switch away from Auto-review if that is already selected. The repo [`.cursor/permissions.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/permissions.json) supplies the terminal allowlist in all modes above except deprecated “Ask every time”.
 
 **If you still cannot find Agents**
 
@@ -180,7 +180,7 @@ find {PROJECT_ROOT} -name "validate_*.py"
 ## Support
 
 1. This guide and [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
-2. [IPP-E06S07T107](../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+2. [IPP-E6S7T107](../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
 3. [T107 task doc](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
 
 **Last updated:** 2026-05-30

@@ -78,8 +78,8 @@ Manuscript, proposals, and book-project Kanban (formerly Epic 24) live in the **
 
 Installer-driven adoption is documented from repository root **[`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)**:
 
-- **Greenfield (FR-080):** [Greenfield Install Specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#greenfield-install-specification-wave-1-lock) · [IPW-E6S09T01](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
-- **Brownfield (FR-081):** [Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · [IPP-E6S09T02](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- **Greenfield (FR-080):** [Greenfield Install Specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#greenfield-install-specification-wave-1-lock) · [IPW-E6S9T1](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- **Brownfield (FR-081):** [Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · [IPP-E6S9T2](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 
 Policy: [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md). Host projects **map** ADK contracts to their own trees; reference layouts in this repo are not mandatory for brownfield adopters.
 

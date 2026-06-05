@@ -25,22 +25,22 @@ Publication N/A Reason: N/A
 
 Planning artifacts (canonical):
 
-- [ICW E07:S06:T18 specification](../../../../../implementation-cycles/ICW-E07S06T18-specification.md)
-- [ICW E07:S06:T18 test design](../../../../../implementation-cycles/ICW-E07S06T18-test-design.md)
-- [ICW E07:S06:T18 implementation plan](../../../../../implementation-cycles/ICW-E07S06T18-implementation-plan.md)
+- [ICW E07:S06:T18 specification](../../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md)
+- [ICW E07:S06:T18 test design](../../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md)
+- [ICW E07:S06:T18 implementation plan](../../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md)
 
-Historical IPW filename (redirect index): [IPW index E07:S06:T18](../../../../../implementation-cycles/IPW-E07S06T18-interactive-installer-kanban-pattern-clarity.md)
+Historical IPW filename (redirect index): [IPW index E07:S06:T18](../../../../../implementation-cycles/IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md)
 
 ---
 
 ## Scope
 
-Address UXR-007 by improving interactive installer wording and guidance for Kanban path/pattern prompts, especially "epic document pattern" input using `{epic}` placeholder.
+Address UXR-007 by improving interactive installer wording and guidance for Kanban path/pattern prompts, especially "epic document pattern" input using `\{epic\}` placeholder.
 
 ## Input
 
 - [UXR-007](../../../fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
-- Planning package: [spec](../../../../../implementation-cycles/ICW-E07S06T18-specification.md) · [tests](../../../../../implementation-cycles/ICW-E07S06T18-test-design.md) · [plan](../../../../../implementation-cycles/ICW-E07S06T18-implementation-plan.md); [IPW index](../../../../../implementation-cycles/IPW-E07S06T18-interactive-installer-kanban-pattern-clarity.md)
+- Planning package: [spec](../../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md) · [tests](../../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md) · [plan](../../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md); [IPW index](../../../../../implementation-cycles/IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md)
 - Installer prompt flow for Kanban integration in interactive mode
 - `rw-config.yaml` keys: `kanban_root`, `epic_doc_pattern`, `story_doc_pattern`
 
@@ -55,7 +55,7 @@ Address UXR-007 by improving interactive installer wording and guidance for Kanb
 
 - [x] User can understand and answer epic pattern prompt without external assistance.
 - [x] Installer provides immediate actionable feedback when pattern matches zero files.
-- [x] Prompt copy explicitly explains `{epic}` usage with examples.
+- [x] Prompt copy explicitly explains `\{epic\}` usage with examples.
 - [x] UXR-007 is cross-linked with implementation evidence.
 
 ## Dependencies
@@ -73,9 +73,9 @@ Address UXR-007 by improving interactive installer wording and guidance for Kanb
 
 ## References
 
-- [ICW specification E07:S06:T18](../../../../../implementation-cycles/ICW-E07S06T18-specification.md)
+- [ICW specification E07:S06:T18](../../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md)
 - [UXR-007](../../../fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
 
 ## Planning artifacts (publication)
 
-- [IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md](../../../../../implementation-cycles/IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md)
+- [IPW-E7S6T18-interactive-installer-kanban-pattern-clarity.md](../../../../../implementation-cycles/IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md)

@@ -32,8 +32,8 @@ Implement an FR/BR/UXR Prioritization Board with identical responsibility struct
 ## Acceptance Criteria
 
 ### Core Functionality:
-1. ✅ **Main Board Created** - Functional `fbuboard.md` with prioritized FR/BR/UXR list
-2. ✅ **Completed Board Created** - Functional `fbu-completed.md` for historical tracking
+1. ✅ **Main Board Created** - Functional `kboard.md` with prioritized FR/BR/UXR list
+2. ✅ **Completed Board Created** - Functional `intake-completed.md` for historical tracking
 3. ✅ **Priority System** - Clear priority levels (CRITICAL, HIGH, MEDIUM, LOW) and status tracking
 4. ✅ **Document Integration** - Links to all existing FR/BR/UXR documents in `/fr-br/` directory
 5. ✅ **Kanban Integration** - Cross-references to associated Kanban tasks
@@ -59,8 +59,8 @@ Implement an FR/BR/UXR Prioritization Board with identical responsibility struct
 
 ### Phase 1: Foundation (Day 1)
 
-- Create main FR/BR/UXR board structure (`fbuboard.md`)
-- Create completed board structure (`fbu-completed.md`)
+- Create main FR/BR/UXR board structure (`kboard.md`)
+- Create completed board structure (`intake-completed.md`)
 - Scan existing FR/BR/UXR documents in `/fr-br/` directory
 - Populate main board with all open FRs, BRs, and UXRs
 - Assign initial priorities based on content and dates
@@ -88,14 +88,14 @@ Implement an FR/BR/UXR Prioritization Board with identical responsibility struct
 
 ```
 docs/project-management/kanban/
-├── fbuboard.md          # Main prioritization board
-├── fbu-completed.md            # Completed items tracking
+├── kboard.md          # Main prioritization board
+├── intake-completed.md            # Completed items tracking
 └── kanban-board-guide.md       # Updated with FR/BR/UXR board info
 ```
 
 ### Board Sections
 
-#### Main Board (`fbuboard.md`)
+#### Main Board (`kboard.md`)
 
 - **Critical Priority** - Urgent items requiring immediate attention
 - **High Priority** - Important items for near-term work
@@ -104,7 +104,7 @@ docs/project-management/kanban/
 - **Under Review** - Items being evaluated or worked on
 - **Awaiting Information** - Items blocked by missing info
 
-#### Completed Board (`fbu-completed.md`)
+#### Completed Board (`intake-completed.md`)
 
 - **Completed Feature Requests** - Implemented features
 - **Resolved Bug Reports** - Fixed bugs
@@ -199,8 +199,8 @@ docs/project-management/kanban/
 
 ### Primary Deliverables:
 
-1. **Main Board** - `fbuboard.md` with prioritized FR/BR/UXR list
-2. **Completed Board** - `fbu-completed.md` with historical tracking
+1. **Main Board** - `kboard.md` with prioritized FR/BR/UXR list
+2. **Completed Board** - `intake-completed.md` with historical tracking
 3. **Integration Guide** - Updated documentation and usage instructions
 4. **Automation Scripts** - Intake workflow integration for board updates
 

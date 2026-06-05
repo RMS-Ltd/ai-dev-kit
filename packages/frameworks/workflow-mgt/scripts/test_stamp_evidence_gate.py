@@ -186,7 +186,7 @@ def test_corpus_sweep_uses_non_substantive_mode():
         kanban = tmp / "docs/project-management/kanban"
         kanban.mkdir(parents=True)
         (kanban / "kboard.md").write_text(SAMPLE_BOARD)
-        (kanban / "fbuboard.md").write_text(SAMPLE_BOARD)
+        (kanban / "kboard.md").write_text(SAMPLE_BOARD)
         _, sweep_report = target.run_corpus_canonical_sweep(
             tmp, dry_run=True, timestamp_value="2026-04-27 16:00 UTC"
         )

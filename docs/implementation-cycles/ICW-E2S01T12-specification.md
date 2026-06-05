@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T12-Specification: BR-061 Explicit RW Task-ID Version Alignment
+# ICW-E2S1T12-Specification: BR-061 Explicit RW Task-ID Version Alignment
 
 **Task:** E2:S01:T12  
 **Related BR:** BR-061  

@@ -9,6 +9,9 @@ htmlcov/
 tmp-*.log
 .kanban-snapshots/
 logs/
+# Published maintenance evidence logs (Docusaurus links under docs/maintenance/logs/)
+!docs/maintenance/logs/
+!docs/maintenance/logs/**
 
 # macOS
 .DS_Store

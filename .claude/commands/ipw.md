@@ -107,6 +107,12 @@ Define ordered implementation steps, files to create or modify, and dependency s
 
 These steps are executor-prescribed — IPW does not execute them. The plan mandates them; implementation execution follows the plan.
 
+**RW prescription rules (BR-097 — mandatory in every IPP verification/FBU wave):**
+
+- Post-ship verification, FBU closure, and kanban/doc reconciliation waves: prescribe **`RW E{epic}:S{story}:T{task} --art`** only (BUILD +1).
+- **FORBIDDEN in IPP plans:** `--doc-policy-zero` for follow-on waves after a functional release; inferring BUILD +0 from "docs-only" or task COMPLETE status.
+- Recovery after tag collision: bump BUILD (+1) and re-RW — never `git tag -f` or force-push release tags.
+
 **Gate to proceed:** Implementation steps defined; Step 1 (`TODO → IN PROGRESS`) is the first item; status reconciliation is the final item.
 
 ---

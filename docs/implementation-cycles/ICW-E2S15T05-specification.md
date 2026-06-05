@@ -56,5 +56,5 @@ housekeeping_policy: keep
 
 - Upstream FR: `FR-090`
 - Defect record: `BR-069`
-- Evidence basis: `IPP-E2S15T04`
+- Evidence basis: `IPP-E2S15T4`
 - Implementing task: `E2:S15:T05`

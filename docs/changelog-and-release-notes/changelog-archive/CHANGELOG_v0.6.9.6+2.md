@@ -18,7 +18,7 @@
 ### Documentation
 
 - [ECC + ADK cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md) — §3 installer/bridge/hooks; §10–11 roadmap + layered architecture
-- [INSTALL_IN_YOUR_PROJECT.md](../../../INSTALL_IN_YOUR_PROJECT.md) — optional ECC steps after greenfield ADK baseline
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — optional ECC steps after greenfield ADK baseline
 - [Integration spec §11](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) — phase 2–5 artifacts
 - [ecc-agentshield-rw-step9-bridge.md](../../../packages/frameworks/workflow%20mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md) — non-blocking RW Step 10 add-on
 - **FR-098-F5 / F6** marked implemented

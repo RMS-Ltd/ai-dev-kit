@@ -256,16 +256,17 @@ The board serves as the **parent document** to Story documents, similar to how S
 
 | Surface | Role | Must contain |
 | ------- | ---- | ------------ |
-| `kboard.md` / `fbuboard.md` | **Active** MoSCOW | `TODO`, `IN PROGRESS`, `IN REVIEW`, `WAITING`, `OPEN`, `PERPETUAL`, and FBU rows with unresolved verification (task may be COMPLETE) |
-| `kanban-completed.md` / `fbu-completed.md` | **Terminal** history | `COMPLETE` / `RESOLVED` / `IMPLEMENTED` / `FIXED` / shipped Won't items |
+| `kboard.md` | **Active** MoSCOW (sole board; [ADR-018](../../../docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)) | `TODO`, `IN PROGRESS`, `IN REVIEW`, `WAITING`, `OPEN`, `PERPETUAL`; **Verification (V)** band for task-shipped / FBU-open rows |
+| `kboard.md` | **Deprecated** redirect stub | No active MoSCOW rows (historical pointer only) |
+| `kanban-completed.md` / `intake-completed.md` | **Terminal** history | `COMPLETE` / `RESOLVED` / `IMPLEMENTED` / `FIXED` / shipped Won't items |
 
 **UKW / RW agents MUST:**
 
-1. **Ledger before prune** — append `kanban-completed.md` / `fbu-completed.md` (skills or `UKW -c`) **before** removing a terminal row from active MoSCOW.
+1. **Ledger before prune** — append `kanban-completed.md` / `intake-completed.md` (skills or `UKW -c`) **before** removing a terminal row from active MoSCOW.
 2. **No archive footnotes on active boards** — do not add italic paragraphs or multi-line “archived …” journals inside M/S/C/O/W; one header pointer to the completed ledger is enough.
 3. **No date-stamped journal bullets** — do not insert `**YYYY-MM-DD:**` narrative lines between MoSCOW rows (release notes belong in changelogs or Step 9 UKW summary).
 4. **BR-059 vs C-band backlog (FR-109 correction)** — BR-059 means: do not **auto-add every story-checklist TODO** during UKW without intent. It does **not** mean deleting an existing **Could Have** backlog of filed `TODO` / `OPEN` tasks. Prune **terminal** rows and **prose bloat** (journals, archive footnotes, stats sections); keep legitimate C-band queue rows.
-5. **fbuboard slim** — no duplicate “Usage instructions”, “Board statistics”, or long consolidation history on the active file; use `kanban-board-guide.md` and `fbu-completed.md`.
+5. **Single active board (ADR-018)** — `kboard.md` only for MoSCOW; `kboard.md` is a redirect stub. FBU inventory: `intake-structure.md`; terminal FBUs: `intake-completed.md`.
 6. **Enforcement (FR-109)** — `validate_active_kanban_board.py --strict` on active boards (pre-commit + RW Release Readiness **Gate 11**).
 
 **Purpose (MoSCOW view):** Shows prioritized **live** tasks organized by MoSCOW; not every filed TODO in the repository.
@@ -336,7 +337,7 @@ Each task entry in the MoSCOW sections includes:
 ```
 
 **Timestamp governance (mandatory):**
-- The terminal `| Last modified: ... UTC` field is required on all active MoSCOW rows in `kboard.md` and `fbuboard.md`.
+- The terminal `| Last modified: ... UTC` field is required on all active MoSCOW rows in `kboard.md`.
 - RW/UKW/automation that creates or updates rows must append or refresh this field.
 - Human-readable timestamp values must use UTC and 24-hour format (`YYYY-MM-DD HH:MM UTC`).
 - **Forensic semantics (UXR-009 / FR-092 Wave 6):** Stamps mutate **only when underlying work evidence exists** on the linked record (status change, content delta, version anchor update, AC progression, or new evidence link). No-op board rewrites, sorting, formatting, alias migration, or metadata refresh **must not** mutate `Last modified`. Synthetic stamp churn at write boundary is blocked.
@@ -356,13 +357,13 @@ Each task entry in the MoSCOW sections includes:
 - **Deprecated / removed:** row-level “temporal-drift normalization”, batch `current UTC` assignment, and `normalize_board_row_timestamps.py` (deleted).
 
 **MoSCOW state icons (UXR-012 / E4:S13:T07; UXR-019 / E4:S13:T08):**
-- Active MoSCOW rows on `kboard.md` and `fbuboard.md` carry a **canonical Set A emoji** before the status word; see `kanban-board-guide.md`, UXR-012, and UXR-019 (`IN REVIEW`, `WAITING`) for mappings and **Set B fallback** (non-board contexts only).
+- Active MoSCOW rows on `kboard.md` carry a **canonical Set A emoji** before the status word; see `kanban-board-guide.md`, UXR-012, and UXR-019 (`IN REVIEW`, `WAITING`) for mappings and **Set B fallback** (non-board contexts only).
 - **Task nuance:** Use `IN REVIEW` for peer/maintainer review in flight; `WAITING` for external gates (sign-off, adopter replay) — not `IN PROGRESS` or `BLOCKED`.
 - **Hygiene-only passes** must not swap or remove icons unless the row’s **status token** changes (same intent as FR-097: no cosmetic churn).
 - **Enforcement:** `validate_kanban_state_icons.py` and Release Readiness **Gate 9** after corpus backfill.
 
 **MoSCOW multi-line spacing (UXR-005 / E07:S01:T09):**
-- Between adjacent **multi-line** MoSCOW bullets on `kboard.md`, `fbuboard.md`, and related Kanban docs, require **exactly one blank line**; single-line bullets (≤100 characters in source) may stay contiguous.
+- Between adjacent **multi-line** MoSCOW bullets on `kboard.md`, and related Kanban docs, require **exactly one blank line**; single-line bullets (≤100 characters in source) may stay contiguous.
 - **UXR ownership:** Kanban template and board formatting governance is owned by the UXR workflow; implementation anchor **E07:S01:T09** ([`kanban-board-guide.md`](../../../docs/project-management/kanban/kanban-board-guide.md) § Formatting Governance).
 - **Enforcement:** `validate_kanban_moscow_spacing.py` (non-blocking Release Readiness **Gate 10**); UKW/RW agents run after MoSCOW edits.
 
@@ -376,8 +377,7 @@ The Release Workflow (RW) and the Update Kanban Workflow (UKW) own **distinct, n
 - Release-scope minimum reconciliation outputs (four-surface contract, deterministic + idempotent + ordered):
   1. Task doc (host + directly affected child tasks).
   2. Source FR/BR/UXR doc(s).
-  3. `kboard.md` canonical row(s) for release-scope task(s); active-row hygiene; no duplicate tail tokens.
-  4. `fbuboard.md` canonical row(s) for release-scope FBU(s); supersede / gating / closure markers; no duplicate tail tokens.
+  3. `kboard.md` canonical row(s) for release-scope task(s) and wired FBUs (including **Verification (V)** band when task shipped / FBU open); active-row hygiene; no duplicate tail tokens.
 - RW Step 7 emits a "touched surfaces + why" report sufficient to reconstruct the reconciliation outcome.
 
 **UKW is corrective and drift-oriented:**

@@ -1,0 +1,18 @@
+{
+  "contract": "FR-097 structure-prune — COMPLETE task row removal (RW Step 7 E03:S02:T12)",
+  "release_scope": {
+    "task_id": "E03:S02:T12",
+    "version_string": "v0.3.2.12+5"
+  },
+  "evidence_mode": "structure_prune",
+  "archived": {
+    "kboard": ["E03:S02:T12"],
+    "intake_completed": ["FR-045", "FR-046", "BR-061"]
+  },
+  "rows": {
+    "E03:S02:T12": {
+      "allowed": true,
+      "reason": "COMPLETE v0.3.2.12+5 — wave 3 FBU closure; ledger intake-completed.md"
+    }
+  }
+}

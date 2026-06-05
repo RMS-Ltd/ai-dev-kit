@@ -53,8 +53,8 @@ housekeeping_policy: keep
 | **T08-S1** | Deliverable | In [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js), `onBrokenLinks` and `onBrokenMarkdownLinks` are both **`'throw'`**. |
 | **T08-S2** | AC1 / README | [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) describes **strict** link policy (build fails on broken links); interim **warn** is not the active policy. |
 | **T08-S3** | AC1 | `npm run build` in `portal/` exits **0** (no in-scope broken links under **throw**). |
-| **T08-S4** | FR-067 S1 | `PORTAL_BUILD_STRICT=1` — [`tests/test_portal_fr065_identity.py`](../../../../../../tests/test_portal_fr065_identity.py) `test_fr065_s9_portal_production_build` passes. |
-| **T08-S5** | Deliverable | [`tests/test_portal_fr067_build_triage.py`](../../../../../../tests/test_portal_fr067_build_triage.py) encodes **throw** for link policy (S2). |
+| **T08-S4** | FR-067 S1 | `PORTAL_BUILD_STRICT=1` — [`tests/test_portal_fr065_identity.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr065_identity.py) `test_fr065_s9_portal_production_build` passes. |
+| **T08-S5** | Deliverable | [`tests/test_portal_fr067_build_triage.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr067_build_triage.py) encodes **throw** for link policy (S2). |
 | **T08-S6** | AC3 | [`docs/maintenance/docusaurus-corpus-triage-fr-067.md`](../../../../../maintenance/docusaurus-corpus-triage-fr-067.md) **FU-1** closed with completion + forensic marker. |
 | **T08-S7** | AC2 | [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) **FU-1** row marked **done** (or superseded). |
 | **T08-S8** | NF | Surgical link fixes / justified `docs.exclude` only; exclude globs documented in portal README (**FR-067 S3** parity). |
@@ -85,4 +85,4 @@ housekeeping_policy: keep
 
 - **E05:S09:T03** — completed warn-mode triage.
 - **E05:S09:T05** — CI should run the same strict build.
-- **E05:S09:T10** — optional **strict broken anchors** (`onBrokenAnchors`) — [T10](./T10-docusaurus-strict-broken-anchors-post-t08.md); **FR-067 FU-3**.
+- **E05:S09:T10** — optional **strict broken anchors** (`onBrokenAnchors`) — [T10](T10-docusaurus-strict-broken-anchors-post-t08.md); **FR-067 FU-3**.

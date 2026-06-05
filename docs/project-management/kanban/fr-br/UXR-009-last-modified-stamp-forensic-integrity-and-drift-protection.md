@@ -17,14 +17,14 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-27 (closure gated on FR-092 meta-program Wave 6)  
 **Implementing Task:** E06:S07:T115  
 **Repository Task:** [E06:S07:T115](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)  
-**Planning package (ICW):** [Specification](../../../implementation-cycles/ICW-E06S07T115-specification.md) · [Test design](../../../implementation-cycles/ICW-E06S07T115-test-design.md) · [Implementation plan](../../../implementation-cycles/ICW-E06S07T115-implementation-plan.md)  
+**Planning package (ICW):** [Specification](../../../implementation-cycles/ICW-E6S07T115-implementation-plan.md) · [Test design](../../../implementation-cycles/ICW-E6S07T115-implementation-plan.md) · [Implementation plan](../../../implementation-cycles/ICW-E6S07T115-implementation-plan.md)  
 **Closure gated on:** [FR-097 — Board stamp authority and forensic timestamp recovery](FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) / [E02:S15:T08](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (primary); [E06:S07:T115](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) remains historical script delivery owner
 
 > **Gating note (2026-04-27):** Forensic stamp work-evidence gate integration into row mutation paths in `update_kanban_docs.py` is owned by FR-092 Bucket C4 + Wave 6. The `stamps_appended_with_evidence` / `stamps_skipped_no_evidence` audit counters are FR-092 deliverables; final UXR-009 closure is gated on those shipping under FR-092 sign-off.
 >
-> **Wave 6 progress (2026-04-27):** Work-evidence gate implemented in [`update_kanban_docs.py`](../../../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) as the `EVIDENCE_MODE_*` family (`work_authoritative`, `non_substantive`, `gated`) plumbed through `enforce_moscow_row_timestamps_with_stats` and `apply_canonical_row_transform_pipeline`. `run_corpus_canonical_sweep` now defaults to `non_substantive`, eliminating synthetic stamp churn from board-hygiene passes. Counters `stamps_appended_with_evidence`, `stamps_skipped_no_evidence`, `stamps_preserved_existing` exposed on the corpus-sweep report and on `FourSurfaceReport.summary`. Test coverage at [`test_stamp_evidence_gate.py`](../../../../packages/frameworks/workflow-mgt/scripts/test_stamp_evidence_gate.py) (7/7 green) confirms: never-rewrite for existing stamps, `non_substantive` skips append even when row is stampless, `gated` requires positive `evidence_provider` response, default-deny when provider absent, corpus sweep defaults to `non_substantive`. Live corpus dry-run reports 0 synthetic stamps and 109 preserved. AC1–AC5 drafted satisfied; final closure remains gated on Wave 8 RW dry-run.
+> **Wave 6 progress (2026-04-27):** Work-evidence gate implemented in [`update_kanban_docs.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) as the `EVIDENCE_MODE_*` family (`work_authoritative`, `non_substantive`, `gated`) plumbed through `enforce_moscow_row_timestamps_with_stats` and `apply_canonical_row_transform_pipeline`. `run_corpus_canonical_sweep` now defaults to `non_substantive`, eliminating synthetic stamp churn from board-hygiene passes. Counters `stamps_appended_with_evidence`, `stamps_skipped_no_evidence`, `stamps_preserved_existing` exposed on the corpus-sweep report and on `FourSurfaceReport.summary`. Test coverage at [`test_stamp_evidence_gate.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_stamp_evidence_gate.py) (7/7 green) confirms: never-rewrite for existing stamps, `non_substantive` skips append even when row is stampless, `gated` requires positive `evidence_provider` response, default-deny when provider absent, corpus sweep defaults to `non_substantive`. Live corpus dry-run reports 0 synthetic stamps and 109 preserved. AC1–AC5 drafted satisfied; final closure remains gated on Wave 8 RW dry-run.
 >
-> **Wave 7 + Wave 8 sign-off (2026-04-27):** Forensic stamp evidence is composed into the FR-092 Wave 7 release-readiness gate as Gate 6 in [`validate_release_readiness.py`](../../../../packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py); wired into RW Step 10 with `blocking: true`. Wave 8 live demonstration: against the live repo + a fixture four-surface report describing FR-092 Wave 0-7 release scope (`evidence_mode=non_substantive`, `appended=0`, `skipped=0`, `preserved=109`), Gate 6 returned PASS — confirming forensic stamp counters are internally consistent and synthetic stamp churn is structurally impossible in non-substantive mode. The Wave 6 gate is now exercised on every RW release. **All ACs proved satisfied; final UXR-009 closure remains scoped to the live RW E02:S15:T07 --art that publishes the meta-program (Wave 8 terminal).**
+> **Wave 7 + Wave 8 sign-off (2026-04-27):** Forensic stamp evidence is composed into the FR-092 Wave 7 release-readiness gate as Gate 6 in [`validate_release_readiness.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py); wired into RW Step 10 with `blocking: true`. Wave 8 live demonstration: against the live repo + a fixture four-surface report describing FR-092 Wave 0-7 release scope (`evidence_mode=non_substantive`, `appended=0`, `skipped=0`, `preserved=109`), Gate 6 returned PASS — confirming forensic stamp counters are internally consistent and synthetic stamp churn is structurally impossible in non-substantive mode. The Wave 6 gate is now exercised on every RW release. **All ACs proved satisfied; final UXR-009 closure remains scoped to the live RW E02:S15:T07 --art that publishes the meta-program (Wave 8 terminal).**
 
 ---
 
@@ -42,7 +42,7 @@ How should board update workflows preserve forensic integrity so `Last modified`
 
 ## Findings So Far
 
-1. `fbuboard.md` currently shows broad timestamp homogenization (many rows with the same minute), indicating rewrite-driven updates rather than work-driven updates.
+1. `kboard.md` currently shows broad timestamp homogenization (many rows with the same minute), indicating rewrite-driven updates rather than work-driven updates.
 2. This behavior makes at-a-glance drift inspection unreliable and undermines temporal triage.
 3. Current logic appears to conflate "row touched by workflow" with "underlying work occurred."
 
@@ -81,7 +81,7 @@ How should board update workflows preserve forensic integrity so `Last modified`
 
 ## References
 
-- [fbuboard](../fbuboard.md)
+- [fbuboard](../kboard.md)
 - [kboard](../kboard.md)
 - [T110](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [T115](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)

@@ -35,7 +35,7 @@ This task:
 ## Cross-task interaction (E03:S02:T12)
 
 - `E03:S02:T12` is authorized to update this task's wording/acceptance criteria so FR-046 documentation stays aligned with implemented task-touch converter behavior and BR-061 fixes.
-- Current planning artifact: [IPW-E03S02T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPW-E03S02T12-task-touch-semver-collision-hardening.md)
+- Current planning artifact: [IPW-E3S2T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
 
 ---
 
@@ -43,10 +43,10 @@ This task:
 
 - **FR-046:** [`FR-046-rw-semver-tag-task-touch-mode.md`](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
 - **FR-045:** ADR-002 Task-Touch Derived Mapping (prerequisite).
-- **IPP (closure wave):** [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
+- **IPP (closure wave):** [`IPP-E5S1T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
 - [ICW E05:S01:T46 specification](../../../../../implementation-cycles/ICW-E5S01T46-specification.md)
-- [ICW E05:S01:T46 test design](../../../../../implementation-cycles/ICW-E5S01T46-test-design.md)
-- **Related IPP:** [`IPW-E03S02T12-task-touch-semver-collision-hardening.md`](../../../../../implementation-cycles/IPW-E03S02T12-task-touch-semver-collision-hardening.md) (converter finalize — E03:S02:T12)
+- [ICW E05:S01:T46 test design](../../../../../implementation-cycles/ICW-E5S01T46-specification.md)
+- **Related IPP:** [`IPP-E3S2T12-task-touch-semver-collision-hardening.md`](../../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) (converter finalize — E03:S02:T12)
 - RW execution guide and `.cursorrules` RW trigger section.
 
 ---
@@ -104,13 +104,13 @@ This task:
 ## UKW bookkeeping (2026-04-13)
 
 - Main `kboard.md` now lists perpetual **E02:S16:T03** in Ongoing (was missing next to T102/T103).
-- `fbuboard.md` version context and **FR-046** active row updated to reflect **v0.5.1.46+6** implementation drop (verification still open on FR/T46).
+- `kboard.md` version context and **FR-046** active row updated to reflect **v0.5.1.46+6** implementation drop (verification still open on FR/T46).
 
 ## Verification Evidence
 
 ### Closure wave audit (2026-05-29)
 
-Full matrix: [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md) §7.
+Full matrix: [`IPP-E5S1T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md) §7.
 
 - `pytest test_validate_branch_context.py -q` → **7 passed** (RF1, RNF1, AC2)
 - `pytest test_fr046_rw_tagging.py test_fr046_comprehensive.py test_task_touch_mapping.py -q` → **24 passed** (RF2–RF3, AC2)
@@ -135,7 +135,7 @@ Full matrix: [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementatio
 
 ## References
 
-- **IPP (closure):** [`IPP-E5S01T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
+- **IPP (closure):** [`IPP-E5S1T46-fr046-closure-wave.md`](../../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
 - **FR Repo Story:** [`story-01-fr-repo.md`](../story-01-fr-repo.md)
 - **FR-046:** [`docs/project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
 - **Superseded duplicate:** [`E02:S13:T07`](../../epic-02/story-13-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)

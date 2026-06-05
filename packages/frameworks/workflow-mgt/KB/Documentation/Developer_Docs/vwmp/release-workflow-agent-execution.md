@@ -638,6 +638,16 @@ For full RW / `RW -d`, releasable statuses are **IN PROGRESS**, **COMPLETE**, or
 
 **🚨 MANDATORY: Follow this 8-step procedure (A-H) exactly. Do not skip any step.**
 
+**C.1. RESOLVE BUILD (BR-097 / E02:S01:T24 — before writing `version_file`):**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--doc-policy-zero] [--perpetual-same-task]
+```
+
+- Non-zero exit → **RW ABORTED** at Step 2 (do not edit changelogs or kanban).
+- Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
+- **FORBIDDEN:** tagged BUILD reuse; `git tag -f` / force-push on release tags; inferred `--doc-policy-zero` for post-ship verification waves.
+
 **A. CHECK UKW CONTEXT (BEFORE READING VERSION):**
 1. **ANALYZE:**
    - **CRITICAL:** Check if this RW was triggered immediately after UKW execution
@@ -1678,7 +1688,7 @@ The Versioning Policy requires that:
 1. **Task doc** — version anchor + status + last-updated + checklist sync (host task and any directly affected child tasks).
 2. **Source FR/BR/UXR doc(s)** — status sync + linked-task references + closure/gating banners where applicable.
 3. **`kboard.md`** — canonical row(s) for the release-scope task(s); active-row hygiene for completed rows; no duplicate tail tokens.
-4. **`fbuboard.md`** — canonical row(s) for the release-scope FBU(s); supersede / gating / closure markers; no duplicate tail tokens.
+4. **`kboard.md`** — canonical row(s) for the release-scope FBU(s); supersede / gating / closure markers; no duplicate tail tokens.
 
 The four surfaces must converge as: idempotent (repeated runs produce no changes), deterministic (identical input + commit produces identical output), and ordered (host task → source FBU → kboard → fbuboard).
 
@@ -1707,14 +1717,14 @@ The four surfaces must converge as: idempotent (repeated runs produce no changes
 - ✅ **SELF-SUFFICIENT (FR-092 / FR-091):** RW Step 7 must converge release-scope four-surface consistency without depending on a follow-up UKW run.
 - ✅ **FRAMEWORK-AGNOSTIC:** Uses framework script that works across all projects
 - ✅ **KANBAN POLICY:** Updates align with Kanban governance policy (FR-037: task prioritisation, stack/queue for MUST HAVE). In **scoped** mode, prefer **limited** MoSCOW/board edits for the active release; full-board MoSCOW reshuffles belong in **standalone UKW** (`UKW`, `-p`, `-a`, etc.).
-- ✅ **AGENTIC RESPONSIBILITIES (FR-038:R03 + FR-092):** Task-level updates (status, version markers, narrative where needed); Story/Epic checklist and overview consistency; Kanban board updates for the active epic/story; **limited** prioritisation of new or newly significant tasks only; FBU/BR/UXR doc reconciliation; canonical row enforcement on `kboard.md` and `fbuboard.md`.
+- ✅ **AGENTIC RESPONSIBILITIES (FR-038:R03 + FR-092):** Task-level updates (status, version markers, narrative where needed); Story/Epic checklist and overview consistency; Kanban board updates for the active epic/story; **limited** prioritisation of new or newly significant tasks only; FBU/BR/UXR doc reconciliation; canonical row enforcement on `kboard.md`.
 - ✅ **UKW RELATIONSHIP (FR-091):** UKW is **reactive and optional** with respect to RW. UKW agent guide: [Update Kanban Workflow — invocation context](update-kanban-workflow-agent-execution.md#invocation-context-fr-038--rw-step-7).
 - ✅ **AUDIT (FR-092-NF1):** Step 7 emits a "touched surfaces + why" report (Wave 5/7 deliverable under FR-092) sufficient to reconstruct release-scope reconciliation outcomes.
 - ✅ **VALIDATION:** Comprehensive validation runs automatically after updates
 - ✅ **ERROR HANDLING:** Recovery guidance provided for all error types
 - ❌ **DO NOT PROCEED:** If Step 7 fails, DO NOT proceed to Step 8 or any subsequent step
 
-**Board Stamp Authority (FR-097):** At the **start** of Step 7, snapshot `kboard.md` and `fbuboard.md`:
+**Board Stamp Authority (FR-097):** At the **start** of Step 7, snapshot `kboard.md`:
 
 ```bash
 python "packages/frameworks/workflow-mgt/scripts/kanban/snapshot_kanban_boards.py"
@@ -1966,7 +1976,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
      - Detailed changelog (new file)
      - Main changelog
      - README
-     - Kanban docs (four-surface set: task doc + FR/BR/UXR doc(s) + `kboard.md` + `fbuboard.md` + auxiliary Story/Epic docs)
+     - Kanban docs (four-surface set: task doc + FR/BR/UXR doc(s) + `kboard.md` + `kboard.md` + auxiliary Story/Epic docs)
    - Check current Git status
    - Understand `git add -A` stages all changes
    - Locate the four-surface report emitted by Step 7 under `docs/changelog-and-release-notes/changelog-archive/four-surface-reports/` (this is the authoritative source for "what Step 7 touched")
@@ -2125,7 +2135,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
      - `python {scripts_path}/validation/validate_version_bump.py --strict --requested "<token>" --art --doc-policy-zero` (if RW trigger used **`--doc-policy-zero`** for docs-only **+0** on existing E/S/T; see BR-067)
      - `python {scripts_path}/changelog/check_changelog_size.py` (script automatically reads `rw-config.yaml` if available)
      - `python {scripts_path}/validation/validate_changelog_archive_links.py` (non-blocking; reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers)
-     - `python {scripts_path}/validation/validate_board_stamp_diff.py --before <snapshot_dir>/kboard.md --after <kanban_root>/kboard.md --strict` (repeat for `fbuboard.md`; FR-097)
+     - `python {scripts_path}/validation/validate_board_stamp_diff.py --before <snapshot_dir>/kboard.md --after <kanban_root>/kboard.md --strict` (repeat for `kboard.md`; FR-097)
      - `python {scripts_path}/validation/validate_kanban_state_icons.py --project-root <repo-root> --strict` (UXR-012 / Gate 9)
      - `python {scripts_path}/validation/validate_active_kanban_board.py --project-root <repo-root> --strict` (FR-109 / Gate 11)
      - `python {scripts_path}/validation/validate_semver_registry_injective.py` (FR-045 / **E03:S02:T12** — blocking when `semver_mapping_strategy: task_touch`)

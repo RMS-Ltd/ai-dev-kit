@@ -29,8 +29,8 @@ Publication Status: NOT_APPLICABLE
 
 - [BR-096](../../../fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
 - [CodeQL alert #5](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/5)
-- [`tests/test_portal_fr065_identity.py`](../../../../../../tests/test_portal_fr065_identity.py)
-- [E08:S03:T09 — CodeQL mktemp fix (BR-095)](./T09-codeql-insecure-temporary-file-mktemp-br095.md)
+- [`tests/test_portal_fr065_identity.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr065_identity.py)
+- [E08:S03:T09 — CodeQL mktemp fix (BR-095)](T09-codeql-insecure-temporary-file-mktemp-br095.md)
 
 ---
 

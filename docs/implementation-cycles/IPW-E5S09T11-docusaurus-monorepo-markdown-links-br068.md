@@ -75,7 +75,7 @@ Restore a **green** [`portal/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/
 | ID | Focus | Acceptance / method |
 |----|--------|---------------------|
 | **TD1** | Portal production build | `cd portal && npm run build` exits **0** with current strict flags in `docusaurus.config.js`. |
-| **TD2** | BR-068 failure classes | After fix, spot-check Markdown that targeted **`../../../INSTALL_IN_YOUR_PROJECT.md`** and **`../../../../packages/frameworks/...`** patterns per §1.5 policy (render or link without MDX resolve error). |
+| **TD2** | BR-068 failure classes | After fix, spot-check Markdown that targeted **`https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md`** and **`../../../../packages/frameworks/...`** patterns per §1.5 policy (render or link without MDX resolve error). |
 | **TD3** | Regression (internal corpus) | Sample cross-doc links and anchors in `docs/` still satisfy **T08/T10** intent (no new broken internal links introduced by bulk replace). |
 | **TD4** | CI path triggers | If portal CI exists, confirm **or** document gap: changes under `portal/` and ingested `docs/` paths trigger build ([FR-069](../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)). |
 

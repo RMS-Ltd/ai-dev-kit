@@ -22,17 +22,17 @@ housekeeping_policy: keep
 **Upstream:** [FR-085 - UKW optional reprioritization (`--rp`) with deep intent/dependency analysis](../../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
 **Re-housed from:** E06:S07:T116 (legacy task doc removed after re-housing publication)
 
-**Planning package:** [`IPP-E02S16T06-ukw-rp-flag-fr085.md`](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
+**Planning package:** [`IPP-E2S16T6-ukw-rp-flag-fr085.md`](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
 
 Publication Status: NOT_APPLICABLE  
-Publication N/A Reason: Consolidated IPP per [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md) — [`IPP-E02S16T06`](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md); ICW trio not used.
+Publication N/A Reason: Consolidated IPP per [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md) — [`IPP-E2S16T6`](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md); ICW trio not used.
 
 ---
 
 ## Input
 
 - [FR-085](../../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) requirements.
-- [IPP-E02S16T06](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp` contract).
+- [IPP-E2S16T6](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp` contract).
 - [ADR-009](../../../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) — governance contract.
 - Existing UKW baseline and ongoing ownership model in [E2:S16](../story-16-perpetual-ongoing-workflow-operations.md).
 - [Workflow initiation cheatsheet](../../../../../guides/workflow-initiation-cheatsheet.md).
@@ -66,7 +66,7 @@ UKW lacked an explicit optional mode for deep reprioritization based on inferred
 
 - [x] **AC1:** `--rp` mode is explicitly specified and default UKW behavior is unchanged when absent.
 - [x] **AC2:** Reprioritization criteria include intent inference, dependency discovery, blocker detection, and impact weighting.
-- [x] **AC3:** `kboard.md` and `fbuboard.md` updates are deterministic and stable under repeated identical runs (contract in ADR-009; operational idempotency verified on first `UKW --rp` run by operator).
+- [x] **AC3:** `kboard.md` updates are deterministic and stable under repeated identical runs (contract in ADR-009; operational idempotency verified on first `UKW --rp` run by operator).
 - [x] **AC4:** UKW emits per-change rationale for reordered/promoted/demoted items (Step 9 template in agent SoT).
 - [x] **AC5:** FR-085 and E02:S16:T06 are bidirectionally linked and visible in active story/board tracking.
 
@@ -74,9 +74,9 @@ UKW lacked an explicit optional mode for deep reprioritization based on inferred
 
 ## References
 
-- [IPP-E02S16T06](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
+- [IPP-E2S16T6](../../../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
 - [ADR-009](../../../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)
 - [FR-085](../../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
-- [E02:S16:T03](./T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
-- [E02:S16:T04](./T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [E02:S16:T04](T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)

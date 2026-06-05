@@ -53,10 +53,10 @@ Include the CMW perpetual task (T102, migrated from T12) in the canonical framew
   - Acceptance criteria
   - Implementation considerations
 
-- **Task T102:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (migrated from T12)
+- **Task T102:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (migrated from T12)
   - Perpetual task document (reference pattern)
 
-- **Task T101:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (migrated from T08)
+- **Task T101:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (migrated from T08)
   - UKW perpetual task pattern (reference implementation)
 
 - **Framework Templates:**

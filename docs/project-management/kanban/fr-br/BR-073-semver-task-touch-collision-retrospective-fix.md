@@ -48,7 +48,7 @@ Additionally, the `v0.4.778+1` git tag was created on commit `963ad934f` (`v0.24
 ## Expected Behavior
 
 1. Every finalized internal version maps to a unique SemVer PATCH value under the `task_touch` strategy.
-2. The `v{semver}` tag is created on the release commit that bumped the version, not on its parent.
+2. The `v\{semver\}` tag is created on the release commit that bumped the version, not on its parent.
 3. Registry state is updated atomically with tag creation.
 
 ---

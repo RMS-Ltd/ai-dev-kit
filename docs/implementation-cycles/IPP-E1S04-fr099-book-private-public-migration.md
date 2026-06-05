@@ -23,7 +23,7 @@ housekeeping_policy: keep
 | 3 | E1:S04:T06 | [T06](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | §4.4 |
 | 4 | E1:S04:T07 | [T07](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | §4.5 |
 
-**Cross-program:** [IPP-E6S09T06 §8 Wave E](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) — public-repo ECC validation **after** Phase 3.
+**Cross-program:** [IPP-E6S9T6 §8 Wave E](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) — public-repo ECC validation **after** Phase 3.
 
 ---
 
@@ -77,7 +77,7 @@ housekeeping_policy: keep
 | T1 | 0–2 | Tree: no `docs/book-proj/`, no `epic-24/` on `dev` |
 | T2 | 3 | Public remote has no pre-genesis book objects |
 | T3 | 4 | Greenfield/brownfield install smoke (FR-080); RW/UKW validators |
-| T4 | 4 | Optional Wave E ECC on **public** clone ([IPP-E6S09T06 §8](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)) |
+| T4 | 4 | Optional Wave E ECC on **public** clone ([IPP-E6S9T6 §8](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)) |
 
 ---
 
@@ -130,7 +130,7 @@ housekeeping_policy: keep
 |-----|--------|
 | ADR-006 | UPDATE open questions when Phase 3 bootstrap chosen |
 | INSTALL / README / rw-config remotes | UPDATE in T07 |
-| Cheatsheet Wave E callout | OPTIONAL (IPP-E6S09T06) |
+| Cheatsheet Wave E callout | OPTIONAL (IPP-E6S9T6) |
 
 ---
 
@@ -153,4 +153,4 @@ Repository SoT under `docs/` and root install docs; no manuscript in public gene
 
 - [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
 - [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
-- [IPP-E6S09T06 — ECC / Wave E](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
+- [IPP-E6S9T6 — ECC / Wave E](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)

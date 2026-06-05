@@ -41,7 +41,7 @@ Current UKW synchronization focuses on structural reconciliation and board hygie
 - [x] **FR-085-F1:** Add optional UKW flag `--rp` that enables reprioritization behavior.
 - [x] **FR-085-F2:** In `--rp` mode, analyze open tasks and FR/BR/UXR records to infer current intent and delivery criticality.
 - [x] **FR-085-F3:** In `--rp` mode, identify dependency chains and blocker relationships and use them in prioritization decisions.
-- [x] **FR-085-F4:** Produce deterministic reprioritization updates for `kboard.md` and `fbuboard.md` without duplicate or unstable ordering churn.
+- [x] **FR-085-F4:** Produce deterministic reprioritization updates for `kboard.md` without duplicate or unstable ordering churn.
 - [x] **FR-085-F5:** Emit an audit summary of why priority changes were made (intent/dependency/blocker evidence per moved item).
 
 ### Non-Functional Requirements
@@ -56,7 +56,7 @@ Current UKW synchronization focuses on structural reconciliation and board hygie
 
 - [ ] UKW accepts `--rp` and executes reprioritization only when the flag is present.
 - [ ] Reprioritization uses explicit evidence categories: intent, dependencies, blockers, and impact.
-- [ ] `kboard.md` and `fbuboard.md` show consistent priority updates after `--rp` runs.
+- [ ] `kboard.md` show consistent priority updates after `--rp` runs.
 - [ ] UKW output includes a concise "reprioritization rationale" section for changed rows.
 - [ ] Repeat `--rp` run on unchanged data yields no additional priority movement.
 
@@ -68,7 +68,7 @@ Current UKW synchronization focuses on structural reconciliation and board hygie
 **Affected Areas:**
 
 - [x] UKW behavior/flags and prioritization logic
-- [x] `kboard.md` / `fbuboard.md` MoSCOW ordering
+- [x] `kboard.md` MoSCOW ordering
 - [x] FR/BR/UXR + task dependency interpretation
 - [ ] RW behavior (out of scope unless explicitly requested)
 
@@ -83,9 +83,9 @@ Current UKW synchronization focuses on structural reconciliation and board hygie
 
 ## Related
 
-- [IPP-E02S16T06](../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp`)
+- [IPP-E2S16T6](../../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) — IPW planning package (standalone `UKW --rp`)
 - [ADR-009](../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) — governance contract (v0.2.16.6+1)
-- [FR-023](./FR-023-update-kanban-workflow-ukw.md)
-- [FR-050](./FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
-- [FR-076](./FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [BR-059](./BR-059-ukw-moscow-incomplete-story-task-coverage.md)
+- [FR-023](FR-023-update-kanban-workflow-ukw.md)
+- [FR-050](FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
+- [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [BR-059](BR-059-ukw-moscow-incomplete-story-task-coverage.md)

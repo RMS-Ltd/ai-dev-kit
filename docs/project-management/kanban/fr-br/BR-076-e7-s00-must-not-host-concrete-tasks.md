@@ -20,13 +20,13 @@ housekeeping_policy: keep
 
 **Fix Version:** v0.4.19.10+2
 
-**Related:** [FR-072](./FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach A / D), [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md) (S00 Abstract Space), [E5:S00 abstract model](../epics/epic-05/story-00-fr-repo.md)
+**Related:** [FR-072](FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach A / D), [dev-kit-versioning-policy.md](../../../governance/standards/dev-kit-versioning-policy.md) (S00 Abstract Space), [E5:S00 abstract model](../epics/epic-05/story-00-fr-repo.md)
 
 ---
 
 ## Summary
 
-**Story 0 (`S00`) is abstract space** across epics: forensic anchor only (`0.{epic}.0.0+0`), **no concrete tasks**, and **no temporary “registry” housing** that must later be re-homed to a delivery story.
+**Story 0 (`S00`) is abstract space** across epics: forensic anchor only (`0.\{epic\}.0.0+0`), **no concrete tasks**, and **no temporary “registry” housing** that must later be re-homed to a delivery story.
 
 **Epic 7 `E07:S00`** still contains **concrete task documents** (`T01`–`T06` under `story-00-uxr-repo/`) and drives **split traceability** (e.g. **E07:S00:T05** registry + **E07:S01:T09** implementation for **UXR-005**). That pattern creates **admin overhead**, violates the **E5:S00** precedent, and conflicts with **FR-072 Approach D** (“do not file new intake under repository stories”).
 
@@ -34,9 +34,9 @@ housekeeping_policy: keep
 
 ## Problem Statement
 
-1. **Semantic violation:** `S00` reads as “abstract space” but **E7:S00** behaves as a **perpetual UXR repository** with a full task checklist and RW version coordinates on `0.7.0.{task}+build`.
+1. **Semantic violation:** `S00` reads as “abstract space” but **E7:S00** behaves as a **perpetual UXR repository** with a full task checklist and RW version coordinates on `0.7.0.\{task\}+build`.
 2. **Double housing:** New UXRs are filed as **S00:Txx “anchors”** plus a separate **S01** (or other) **implementing** task — two E:S:T identities, two board rows, and later migration cost.
-3. **Policy drift:** [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md) already states new intake should use **semantic delivery** placement; **E7:S00** task files contradict that for agents and humans.
+3. **Policy drift:** [dev-kit-versioning-policy.md](../../../governance/standards/dev-kit-versioning-policy.md) already states new intake should use **semantic delivery** placement; **E7:S00** task files contradict that for agents and humans.
 4. **Precedent ignored:** [E5:S00](../epics/epic-05/story-00-fr-repo.md) was **detasked** (repository work moved to **S01**); **E7** was not brought to the same end state.
 
 ---
@@ -75,7 +75,7 @@ housekeeping_policy: keep
 - **E7:S00 detasking:** Hollow **E07:S00** to abstract-only; migrate or supersede **T01–T06** registry roles into semantic hosts with redirect notes.
 - **UXR-005 exemplar:** Collapse to **E07:S01:T09** only (or chosen semantic task); update **UXR-005**, boards, and story checklists.
 - **Governance:** Intake guide, kanban governance, `.cursorrules` / agent intake skill — **explicit “never S00 for tasks.”**
-- **Coordination with [FR-072](./FR-072-uniform-repository-abstract-space-kanban-rules.md)** — this BR is the **E7-specific enforcement slice** (may complete before or as part of T08 D2–D4).
+- **Coordination with [FR-072](FR-072-uniform-repository-abstract-space-kanban-rules.md)** — this BR is the **E7-specific enforcement slice** (may complete before or as part of T08 D2–D4).
 
 ### Out of scope (follow-on)
 
@@ -97,7 +97,7 @@ housekeeping_policy: keep
 
 ## References
 
-- [FR-072 — Uniform repository vs abstract-space kanban rules](./FR-072-uniform-repository-abstract-space-kanban-rules.md)
+- [FR-072 — Uniform repository vs abstract-space kanban rules](FR-072-uniform-repository-abstract-space-kanban-rules.md)
 - [E04:S19:T08 — FR-072 Approach D migration](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
 - [E04:S19:T10 — E7 S00 detasking](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)
-- [UXR-005](./UXR-005-kanban-board-formatting-and-governance.md) (exemplar split)
+- [UXR-005](UXR-005-kanban-board-formatting-and-governance.md) (exemplar split)

@@ -34,7 +34,7 @@ Enable automated dependency security monitoring for **pip** (repo root) and **np
 
 - [FR-105](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)
 - [E07:S06:T08](../../epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) audit findings
-- [IPP-E08S03T06-dependabot-enablement-fr105.md](../../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md) (IPW)
+- [IPP-E8S3T6-dependabot-enablement-fr105.md](../../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md) (IPW)
 - GitHub org/repo admin access for Dependabot settings
 
 ---
@@ -69,7 +69,7 @@ Enable GitHub Dependabot for **pip** and **portal/npm**; commit `.github/dependa
 - [x] **AC1:** `.github/dependabot.yml` committed (pip + npm schedules).
 - [x] **AC2:** Dependabot security updates enabled on `RMS-Ltd/ai-dev-kit` (evidence above).
 - [x] **AC3:** `npm audit` before/after documented; `npm run build` green in `portal/` after applied fixes.
-- [x] **AC4:** Contributor note in [`portal/README.md`](../../../../../../portal/README.md) (Dependabot section); link from [`docs/guides/README.md`](../../../../guides/README.md).
+- [x] **AC4:** Contributor note in [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) (Dependabot section); link from [`docs/guides/README.md`](../../../../../guides/README.md).
 - [x] **AC5:** **FR-105** bidirectional links verified.
 
 ## Maintainer note
@@ -87,4 +87,4 @@ Repo settings: **Settings → Code security → Dependabot**. Re-verify with:
 
 - [FR-105](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)
 - [FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md) (build gate)
-- [IPP-E08S03T06-dependabot-enablement-fr105.md](../../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)
+- [IPP-E8S3T6-dependabot-enablement-fr105.md](../../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)

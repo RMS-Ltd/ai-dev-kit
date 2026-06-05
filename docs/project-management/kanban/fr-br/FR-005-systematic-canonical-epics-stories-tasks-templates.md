@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Status:** IMPLEMENTED — closure **v0.4.6.1+1** (`RW E04:S06:T01`, `--art`; story-006 T00–T10 corpus; FR-005-R5 deferred)
 
 **Implementing Task:** [E04:S06:T01 — FR-005 closure](../epics/epic-04/story-06-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)  
-**Planning (IPW):** [IPP-E04S06T01](../../../implementation-cycles/IPP-E04S06T01-canonical-est-template-closure-fr005.md)
+**Planning (IPW):** [IPP-E4S6T1](../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)
 
 ---
 

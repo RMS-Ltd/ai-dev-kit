@@ -5,7 +5,7 @@ RW Release-Readiness Gate (FR-092 Wave 7).
 Purpose
 -------
 The Release Workflow (RW) commits a release-scope mutation across four
-canonical surfaces (task doc, FR/BR/UXR doc, kboard.md, fbuboard.md) and
+canonical surfaces (task doc, FR/BR/UXR doc, kboard.md, kboard.md) and
 auxiliary surfaces (Story doc, Epic doc). Prior waves (FR-092 Wave 0..6)
 codified the contracts (FR-091, FR-084, FR-090) and the per-step preventive
 gates (FR-084 four-surface report, BR-070 stage-set completeness, UXR-009
@@ -62,7 +62,7 @@ The validator runs nine independent gates and aggregates their verdicts:
     Gate 9  MoSCOW state icons (UXR-012 / E4:S13:T07)
     Gate 10 MoSCOW multi-line spacing (UXR-005 / E07:S01:T09) — non-blocking (warn)
     Gate 11 Active board lean contract (FR-109 / E02:S16:T18) — blocking
-            (every parseable MoSCOW row on `kboard.md` / `fbuboard.md`
+            (every parseable MoSCOW row on `kboard.md`
             carries the canonical Set A emoji before its status token).
 
 Wiring
@@ -154,9 +154,6 @@ GATED_FBUS = (
 # Active boards subject to corpus-canonical idempotency.
 CORPUS_BOARDS_REL = (
     "docs/project-management/kanban/kboard.md",
-    "docs/project-management/kanban/fbuboard.md",
-    "docs/project-management/kanban/kanban-board.md",
-    "docs/project-management/kanban/fr-br-uxr-board.md",
 )
 
 # Phrases each governance doc MUST contain (Gate 1). Empty matches mean
@@ -1026,7 +1023,7 @@ def gate_7_four_surface_parity(
         )
 
     surfaces = report_data.get("surfaces", {}) or {}
-    expected_surfaces = ("task_doc", "fbu_doc", "kboard", "fbuboard")
+    expected_surfaces = ("task_doc", "fbu_doc", "kboard")
     evidence["report"] = str(report_path)
 
     missing_surfaces: List[str] = []
@@ -1278,7 +1275,7 @@ def gate_10_moscow_spacing(project_root: Path) -> GateVerdict:
 
 
 def gate_11_active_board_lean(project_root: Path) -> GateVerdict:
-    """Fail when active kboard/fbuboard violate lean MoSCOW contract."""
+    """Fail when active kboard violate lean MoSCOW contract."""
     findings: List[str] = []
     evidence: Dict[str, Any] = {}
     val_dir = project_root / "packages/frameworks/workflow-mgt/scripts/validation"

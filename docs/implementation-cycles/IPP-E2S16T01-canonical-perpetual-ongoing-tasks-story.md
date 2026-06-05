@@ -51,7 +51,7 @@ housekeeping_policy: keep
 - Upstream FR: [`FR-088`](../project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 - Story container: [`story-16-perpetual-ongoing-workflow-operations.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md)
 - Versioning policy §6.1.1: [`dev-kit-versioning-policy.md`](../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
-- IPW execution guide: [`implementation-planning-workflow-agent-execution.md`](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
+- IPW execution guide: [`implementation-planning-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
 - Related FRs: [`FR-041`](../project-management/kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md) (RW maintenance), [`FR-026`](../project-management/kanban/fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md) (CMW), [`FR-087`](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) (E6:S07 default-housing drift)
 
 ---
@@ -122,11 +122,11 @@ No new follow-on tasks are proposed by this IPP. If gaps surface during `T02` in
 
 This IPP does not change validator behavior. It records the **contract** that `T03` is expected to implement:
 
-- **Placement guardrail:** A validator (or extension to an existing validator) should reject a task carrying `Task Type: Perpetual Maintenance` outside `E2:S16` unless the task document includes a `Perpetual Override Rationale:` line. Candidate hosts: a new `validate_perpetual_placement.py` under [`packages/frameworks/workflow-mgt/scripts/validation/`](../../packages/frameworks/workflow-mgt/scripts/validation/), or an extension of `validate_version_bump.py` (which already centralises perpetual detection at [`is_perpetual_task`](../../packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py)).
+- **Placement guardrail:** A validator (or extension to an existing validator) should reject a task carrying `Task Type: Perpetual Maintenance` outside `E2:S16` unless the task document includes a `Perpetual Override Rationale:` line. Candidate hosts: a new `validate_perpetual_placement.py` under [`packages/frameworks/workflow-mgt/scripts/validation/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation), or an extension of `validate_version_bump.py` (which already centralises perpetual detection at [`is_perpetual_task`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py)).
 - **Numbering guardrail:** New perpetual task documents must use `Txx` (2-digit). `T1xx` (3-digit) anchors created after this IPP's publication should produce a hard validation failure unless they are explicitly historical aliases (declared via a `Historical Anchor:` line).
 - **Marker guardrail:** The validator should warn when a task in Story 016 lacks the `Task Type: Perpetual Maintenance` marker, except for `T01` and `T02` (which are governance/inventory tasks, not perpetual lanes themselves).
 - **RW attribution guardrail:** RW Step 2 perpetual context detection (currently UKW/CMW automatic, RW maintenance manual) continues to attribute to `E2:S16:T03` as the canonical umbrella. No automatic change to RW logic is required by T01; T03 may extend Step 2 if multi-lane attribution is later split out.
-- **Workflow registry alignment:** [`workflow-registry.yaml`](../../packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml) remains the source of truth for workflow abbreviations and trigger phrases; perpetual lane attribution is not encoded there and does not need to be.
+- **Workflow registry alignment:** [`workflow-registry.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml) remains the source of truth for workflow abbreviations and trigger phrases; perpetual lane attribution is not encoded there and does not need to be.
 
 ### 2.7 Constraints
 
@@ -151,7 +151,7 @@ This is a doc-only verification set; no code is changed by this IPP.
 
 | ID | Behavior / layer | Expected check |
 | ---- | ---- | ---- |
-| T1 | IPP publication | `IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md` exists in `docs/implementation-cycles/` and conforms to FR-042 IPP shape. |
+| T1 | IPP publication | `IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md` exists in `docs/implementation-cycles/` and conforms to FR-042 IPP shape. |
 | T2 | Host task wiring | T01 task doc links the IPP under both Input and References, and declares `Publication Status: NOT_APPLICABLE` with a reason consistent with the consolidated IPP model. |
 | T3 | Upstream FR wiring | FR-088 lists T01 as Implementing Task and the IPP as a planning backlink. |
 | T4 | Story checklist annotation | Story 016's T01 checklist row references the IPP for discoverability. |
@@ -178,7 +178,7 @@ The plan is structured as three waves so each can be released or deferred atomic
 
 | Step | Action | Deliverable |
 | ---- | ------ | ----------- |
-| 1.1 | Publish this IPP | `IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md` |
+| 1.1 | Publish this IPP | `IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md` |
 | 1.2 | Wire host task T01 (Input, References, Publication Status block) | Task doc linked to IPP and validator-clean |
 | 1.3 | Wire FR-088 (IPP backlink under Implementing Task) | FR doc bidirectionally discoverable |
 | 1.4 | Annotate Story 016 checklist row for T01 with IPP path | Story-level discoverability |
@@ -221,7 +221,7 @@ Wave 3 landed under `T03` as the substantive guardrail enforcement layer. T01 re
 
 ### 4.5 Files touched by Wave 1
 
-- `docs/implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md` (new — this file)
+- `docs/implementation-cycles/IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md` (new — this file)
 - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
 - `docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`
 - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
@@ -241,7 +241,7 @@ Wave 3 landed under `T03` as the substantive guardrail enforcement layer. T01 re
 
 ## 5. Success / verification criteria
 
-Runnable validators (from [`packages/frameworks/workflow-mgt/scripts/validation/`](../../packages/frameworks/workflow-mgt/scripts/validation/)):
+Runnable validators (from [`packages/frameworks/workflow-mgt/scripts/validation/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation)):
 
 - [x] `python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py" --requested E2:S16:T01` — **PASS** (2026-04-27). Output: `PASS: publication wiring OK for E2:S16:T1`. Host task carries `Publication Status: NOT_APPLICABLE` plus `Publication N/A Reason:` per the consolidated IPP model.
 - [x] `python3 "packages/frameworks/workflow-mgt/scripts/validation/validate_plan_wiring.py"` — only pre-existing unrelated failure observed (`E5:S01:T75: missing Host Task link`), out of scope for this IPP and tracked separately. No new wiring regressions introduced by T01.
@@ -253,7 +253,7 @@ Runnable validators (from [`packages/frameworks/workflow-mgt/scripts/validation/
 
 Deliverable checks:
 
-- [x] `IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md` exists and follows FR-042 IPP shape.
+- [x] `IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md` exists and follows FR-042 IPP shape.
 - [x] T01 task doc links this IPP under Input and References and declares `Publication Status: NOT_APPLICABLE` with a reason.
 - [x] FR-088 lists T01 as Implementing Task with an IPP backlink.
 - [x] Story 016 checklist row for T01 references the IPP for discoverability.
@@ -272,7 +272,7 @@ Deliverable checks:
 - [E2:S16:T05 - Markdown documentation maintenance perpetual](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md)
 - [E2:S16:T06 - UKW optional reprioritization `--rp` flag (FR-085)](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
 - [Dev-kit versioning policy §6.1.1 - Perpetual tasks](../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
-- [IPW execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
+- [IPW execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
 - [FR-042 - IPW canonical workflow](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-041 - Perpetual task for RW maintenance](../project-management/kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)
 - [FR-026 - Canonical perpetual task for changelog maintenance](../project-management/kanban/fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)

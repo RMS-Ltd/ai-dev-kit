@@ -2,9 +2,9 @@
 """
 Active kanban board lean contract (FR-109 / E02:S16:T18).
 
-Blocks terminal-status MoSCOW rows, journal lines, archive footnotes, and
-legacy fbuboard boilerplate on active boards (kboard.md, fbuboard.md).
-Completed history belongs in kanban-completed.md / fbu-completed.md.
+Blocks terminal-status MoSCOW rows, journal lines, and archive footnotes on
+the sole active board (kboard.md). Completed history belongs in
+kanban-completed.md / intake-completed.md.
 """
 
 from __future__ import annotations
@@ -37,11 +37,11 @@ _JOURNAL_LINE_RE = re.compile(
 )
 
 _ARCHIVE_FOOTNOTE_RE = re.compile(
-    r"(kanban-completed\.md\)|fbu-completed\.md\)|\(archived\b|\*\*Archived\*\*)",
+    r"(kanban-completed\.md\)|intake-completed\.md\)|\(archived\b|\*\*Archived\*\*)",
     re.IGNORECASE,
 )
 
-_FBU_FORBIDDEN_SECTIONS = (
+_LEGACY_FORBIDDEN_SECTIONS = (
     "## Board Statistics",
     "## Usage Instructions",
 )
@@ -66,19 +66,19 @@ def active_board_paths(project_root: Path) -> List[Path]:
         root = project_root / cfg["kanban_root"]
     else:
         root = project_root / "docs/project-management/kanban"
-    return [root / "kboard.md", root / "fbuboard.md"]
+    return [root / "kboard.md"]
 
 
-def _validate_fbu_sections(path: Path) -> List[str]:
+def _validate_legacy_sections(path: Path) -> List[str]:
     findings: List[str] = []
-    if path.name != "fbuboard.md" or not path.exists():
+    if not path.exists():
         return findings
     text = path.read_text(encoding="utf-8", errors="replace")
-    for heading in _FBU_FORBIDDEN_SECTIONS:
+    for heading in _LEGACY_FORBIDDEN_SECTIONS:
         if heading in text:
             findings.append(
                 f"{path.name}: forbidden legacy section '{heading}' "
-                "(remove; use fbu-structure.md / kanban-board-guide.md)"
+                "(remove; use intake-structure.md / kanban-board-guide.md)"
             )
     return findings
 
@@ -88,9 +88,10 @@ def validate_board_file(path: Path) -> Tuple[bool, List[str]]:
     if not path.exists():
         return True, []
 
-    findings.extend(_validate_fbu_sections(path))
+    text = path.read_text(encoding="utf-8", errors="replace")
+    findings.extend(_validate_legacy_sections(path))
 
-    lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    lines = text.splitlines()
     in_moscow = False
     for i, line in enumerate(lines, start=1):
         st = line.strip()
@@ -116,7 +117,7 @@ def validate_board_file(path: Path) -> Tuple[bool, List[str]]:
             if canon in _TERMINAL_CANONICAL:
                 findings.append(
                     f"{path.name}:{i}: terminal status '{canon}' on active MoSCOW row "
-                    "(archive to kanban-completed.md / fbu-completed.md)"
+                    "(archive to kanban-completed.md / intake-completed.md)"
                 )
             continue
 

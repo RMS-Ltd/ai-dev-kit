@@ -43,7 +43,7 @@ def active_board_paths(project_root: Path):
         root = project_root / cfg["kanban_root"]
     else:
         root = project_root / "docs/project-management/kanban"
-    return [root / "kboard.md", root / "fbuboard.md"]
+    return [root / "kboard.md", root / "kboard.md"]
 
 
 def validate_board_file(path: Path) -> Tuple[bool, List[str]]:

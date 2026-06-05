@@ -26,14 +26,14 @@ housekeeping_policy: keep
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Re-housed UKW governance task; consolidated IPP satisfies FR-042 gate.
 
-**Implementation package:** [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
+**Implementation package:** [IPP-E2S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
 
 ---
 
 ## Input
 
 - [BR-059](../../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md); [story-009](../../epic-05/story-09-docusaurus-documentation-portal.md) checklist vs **kboard** MoSCOW history.
-- [E04:S19:T03 investigation report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md) §5.2 (Wave 4 migration).
+- [E04:S19:T03 investigation report](../../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md) §5.2 (Wave 4 migration).
 
 ## Deliverable
 
@@ -57,7 +57,7 @@ Comprehensive **UKW** can promote **one** task from an in-progress story while t
 
 ## SitRep (2026-06-03)
 
-IPP reconciliation only (host remains **COMPLETE**). Post-ship posture and BR-059 closure options **A–D** are documented in [IPP-E02S16T13 §7.1–§7.2](../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md#71-sitrep--post-ship-posture-2026-06-03).
+IPP reconciliation only (host remains **COMPLETE**). Post-ship posture and BR-059 closure options **A–D** are documented in [IPP-E2S16T13 §7.1–§7.2](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md#71-sitrep--post-ship-posture-2026-06-03).
 
 **Follow-up (2026-06-03):** Option **B (partial)** executed under **E02:S16:T03** — **E10:S01** MoSCOW rows added on `kboard.md`; validator re-check recorded on T03/BR-059.
 
@@ -80,8 +80,8 @@ $ cd packages/frameworks/workflow-mgt/scripts/kanban && python -m pytest test_va
 
 ## References
 
-- [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
+- [IPP-E2S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
 - [BR-059](../../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 - [Superseded source: `E06:S07:T109`](../../epic-06/story-07-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md)
-- [FR-087 / E04:S19:T03](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)
+- [FR-087 / E04:S19:T03](../../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
 - `packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py`

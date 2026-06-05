@@ -64,8 +64,8 @@ def test_blocks_journal_line(tmp_path: Path) -> None:
     assert any("journal line" in f for f in findings)
 
 
-def test_blocks_fbuboard_statistics_section(tmp_path: Path) -> None:
-    path = tmp_path / "fbuboard.md"
+def test_blocks_legacy_statistics_section(tmp_path: Path) -> None:
+    path = tmp_path / "kboard.md"
     path.write_text(
         "# FBU\n\n## Board Statistics\n\nTotal: 99\n",
         encoding="utf-8",

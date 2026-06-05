@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E1:S04:T07  
 **Depends on:** [Phase 3 bootstrap](fr099-phase3-public-repo-bootstrap.md)  
-**Config SoT:** [`rw-config.yaml`](../../rw-config.yaml) (`canonical_public_repo`, `maintainer_private_repo`)
+**Config SoT:** [`rw-config.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/rw-config.yaml) (`canonical_public_repo`, `maintainer_private_repo`)
 
 ## Rewire checklist (AC7)
 
@@ -61,7 +61,7 @@ git remote add private https://github.com/RMS-Ltd/ai-dev-kit-book.git
 
 ## Wave E (optional)
 
-Run [IPP-E6S09T06 §8](../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) ECC validation on a **fresh clone** of public `RMS-Ltd/ai-dev-kit` after sync.
+Run [IPP-E6S9T6 §8](../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) ECC validation on a **fresh clone** of public `RMS-Ltd/ai-dev-kit` after sync.
 
 ## FR-099 closure
 

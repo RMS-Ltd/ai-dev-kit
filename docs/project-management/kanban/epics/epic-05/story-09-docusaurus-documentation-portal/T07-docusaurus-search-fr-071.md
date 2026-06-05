@@ -58,7 +58,7 @@ Implement **FR-071**: add **Algolia DocSearch** (or self-serve) **or** **local/o
 | **S5** | NF02 | README notes **build time** with local search (observed or CI reference). |
 | **S6** | AC3 | `package.json` **build** script remains `docusaurus build --no-minify`; FR-069 workflow unchanged in intent. |
 
-**Tests:** [`tests/test_portal_fr071_search.py`](../../../../../../tests/test_portal_fr071_search.py)
+**Tests:** [`tests/test_portal_fr071_search.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr071_search.py)
 
 **Provider decision:** **Local / offline** search (`@easyops-cn/docusaurus-search-local`) — no Algolia DocSearch queue, index ships with `build/`, fits GitHub Pages and NF01.
 
@@ -74,7 +74,7 @@ Implement **FR-071**: add **Algolia DocSearch** (or self-serve) **or** **local/o
 
 - [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js) — `themes` + `@easyops-cn/docusaurus-search-local`
 - [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — Site search (FR-071)
-- [`tests/test_portal_fr071_search.py`](../../../../../../tests/test_portal_fr071_search.py)
+- [`tests/test_portal_fr071_search.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr071_search.py)
 
 ---
 

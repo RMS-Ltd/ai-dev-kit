@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 **Upstream:** [FR-076 – UKW scope expansion to fbuboard with concurrency and temporal-drift controls](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 
-**Coordinates:** [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [E06:S07:T108](T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
+**Coordinates:** [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [E06:S07:T108](T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
 
 ---
 
@@ -38,7 +38,7 @@ Forensic marker: RW `v0.6.7.110+1` — UKW fbuboard parity + drift/concurrency c
 
 ## Scope
 
-1. **fbuboard mandatory coverage:** UKW comprehensive mode includes `fbuboard.md` synchronization by default.
+1. **fbuboard mandatory coverage:** UKW comprehensive mode includes `kboard.md` synchronization by default.
 2. **Stale active-row pruning:** Remove active rows whose linked FR/BR/UXR doc is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`), with explicit keep-rules for unresolved product-validation exceptions.
 3. **Concurrency control:** Add deterministic read-check-write order and pre-write revalidation when board file hashes/content change mid-run.
 4. **Temporal drift normalization:** Align board metadata and row timestamp updates in one deterministic pass.
@@ -79,5 +79,5 @@ Forensic marker: RW `v0.6.7.110+1` — UKW fbuboard parity + drift/concurrency c
 ## References
 
 - [FR-076](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [fbuboard.md](../../../fbuboard.md)
-- [T101 UKW perpetual task](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+- [kboard.md](../../../kboard.md)
+- [T101 UKW perpetual task](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)

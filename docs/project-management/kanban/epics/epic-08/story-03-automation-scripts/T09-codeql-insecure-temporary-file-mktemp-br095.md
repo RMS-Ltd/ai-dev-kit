@@ -29,8 +29,8 @@ Publication Status: NOT_APPLICABLE
 
 - [BR-095](../../../fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
 - [CodeQL alert #4](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/4)
-- [`test_intake_documentation_update.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/test_intake_documentation_update.py)
-- [E08:S03:T08 — CodeQL git_tag_handler syntax (BR-094)](./T08-codeql-git-tag-handler-syntax-br094.md)
+- [`test_intake_documentation_update.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_intake_documentation_update.py)
+- [E08:S03:T08 — CodeQL git_tag_handler syntax (BR-094)](T08-codeql-git-tag-handler-syntax-br094.md)
 
 ---
 

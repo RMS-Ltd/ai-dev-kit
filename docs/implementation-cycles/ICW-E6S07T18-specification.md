@@ -1,6 +1,6 @@
 # ICW Specification: E6:S07:T18 - Tool-Agnostic Workflow Step Tracking + Persisted Run Logs
 
-**ICW Instance:** ICW-E6S07T18  
+**ICW Instance:** ICW-E6S7T18  
 **Task:** E6:S07:T18 - Tool-Agnostic Workflow Step Tracking + Persisted Run Logs  
 **Phase:** Specification  
 **Timestamp:** 2026-03-12T10:55:00Z  

@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S01:T24": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.1.24+1 — T24 COMPLETE; active row pruned to kanban-completed.md; stamp delta row removal"
+    }
+  }
+}

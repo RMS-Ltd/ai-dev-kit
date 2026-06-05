@@ -29,6 +29,12 @@ housekeeping_policy: keep
 - **{E{epic}:S{story}:T{task}}** – {Task description}  
   *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
 
+### Verification (V) - Task Shipped, FBU Open
+
+Rows where the **task is terminal** but the **FBU remains open** (verification pending). Use `⏳ WAITING` status per ADR-018 / FR-109.
+
+- **{E{epic}:S{story}:T{task}}** – {Task description} — ⏳ WAITING (HIGH, task shipped · FBU verification pending) | [Task Doc](…) | [FR-XXX](fr-br/FR-XXX-*.md) | —No IPP— | Last modified: {Date} UTC
+
 ### Could Have (C) - Nice-to-Have Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description}  
@@ -59,7 +65,7 @@ housekeeping_policy: keep
 
 ---
 
-**Template Version:** 2.0.0  
-**Last Updated:** 2026-01-20  
-**Based On:** Kanban board info-only split (E04:S18:T01)
+**Template Version:** 2.1.0  
+**Last Updated:** 2026-06-05  
+**Based On:** Kanban board info-only split (E04:S18:T01); ADR-018 Verification (V) band (E04:S19:T12 Wave 3)
 

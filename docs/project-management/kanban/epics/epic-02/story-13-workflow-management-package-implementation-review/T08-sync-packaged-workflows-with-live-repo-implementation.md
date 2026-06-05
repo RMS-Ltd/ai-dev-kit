@@ -28,7 +28,7 @@ Reconcile **packaged workflow artefacts** under `packages/frameworks/workflow-mg
 
 **In scope:**
 
-1. **RW dual-source parity (extend [T66](../../epic-05/story-01-fr-repo/T66-cursorrules-vs-packaged-rw-trigger-parity.md) pass):** Port post-BR-074 / FR-097 / FR-092 Step 9 validators from root `.cursorrules` into `cursorrules-rw-trigger-section.md` and `.claude/commands/rw.md`; update [`rw-trigger-dual-source-parity.md`](../../../../../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md) checklist + delta log.
+1. **RW dual-source parity (extend [T66](../../epic-05/story-01-fr-repo/T66-cursorrules-vs-packaged-rw-trigger-parity.md) pass):** Port post-BR-074 / FR-097 / FR-092 Step 9 validators from root `.cursorrules` into `cursorrules-rw-trigger-section.md` and `.claude/commands/rw.md`; update [`rw-trigger-dual-source-parity.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md) checklist + delta log.
 2. **`canonical-rw-steps.yaml`:** Refresh step definitions, ordering, and execution paths to match live RW semantics (BR/FR step, scoped Step 7 kanban, Step 9 validator set, sub-steps 9.5 / 9.6 / 12.5).
 3. **Workflow YAML:** Align `workflows/release-workflow/release-workflow.yaml` (registry SoT) with live RW; remove or redirect stale flat copy `workflows/release-workflow.yaml`; fix legacy default paths (`confidentia/version.py`, old kanban paths); expand Step 10 validator list to match live spec.
 4. **`workflow-registry.yaml`:** Correct step counts and descriptions where they disagree with YAML + vwmp guides (e.g. UKW, PKG-VERSION).
@@ -51,12 +51,12 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ## Inputs
 
-- **IPP:** [`IPP-E02S13T08-sync-packaged-workflows-live-spec.md`](../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
+- **IPP:** [`IPP-E2S13T8-sync-packaged-workflows-live-spec.md`](../../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 - Live spec: `.cursorrules`, `.claude/commands/rw.md`, `.claude/commands/ukw.md`, `.claude/commands/ipw.md`
 - Packaged: `packages/frameworks/workflow-mgt/workflows/`, `canonical-rw-steps.yaml`, `cursorrules-*-trigger-section.md`, `workflow-registry.yaml`
 - vwmp guides: `KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`, `update-kanban-workflow-agent-execution.md`
 - Parity doc: `packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md`
-- Baseline: [E02:S13:T01](./T01-expectations-baseline.md)
+- Baseline: [E02:S13:T01](T01-expectations-baseline.md)
 - Related completed work: [E05:S01:T56](../../epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md), [E05:S01:T66](../../epic-05/story-01-fr-repo/T66-cursorrules-vs-packaged-rw-trigger-parity.md)
 - Perpetual maintenance overlap: [E02:S16:T03](../story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
@@ -96,9 +96,9 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ## Dependencies
 
-- **Soft:** [E02:S13:T01](./T01-expectations-baseline.md) (baseline expectations).
+- **Soft:** [E02:S13:T01](T01-expectations-baseline.md) (baseline expectations).
 - **Coordination:** [E02:S16:T03](../story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) for ongoing dual-source maintenance after T08 ships.
-- **IPW gate:** Satisfied — [IPP-E02S13T08](../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) linked; implementation complete pending **`RW E02:S13:T08`** for version marker.
+- **IPW gate:** Satisfied — [IPP-E2S13T8](../../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) linked; implementation complete pending **`RW E02:S13:T08`** for version marker.
 
 ---
 
@@ -108,7 +108,7 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 - [FR-049](../../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md) — canonical step list refreshed (`canonical-rw-steps.yaml` v2.0.0, 2026-06-03)
 - [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) — directory reorg (pending intake)
 - [FR-056](../../../fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md) — packaged README standardization (complete)
-- [E02:S13:T03–T05](./T01-expectations-baseline.md) — validation / gap log (may reference T08 evidence)
+- [E02:S13:T03–T05](T01-expectations-baseline.md) — validation / gap log (may reference T08 evidence)
 
 ---
 
@@ -127,6 +127,6 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ## References
 
-- **IPP:** [`IPP-E02S13T08-sync-packaged-workflows-live-spec.md`](../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
+- **IPP:** [`IPP-E2S13T8-sync-packaged-workflows-live-spec.md`](../../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 - Package root: `packages/frameworks/workflow-mgt/`
 - Story: [`story-13-workflow-management-package-implementation-review.md`](../story-13-workflow-management-package-implementation-review.md)

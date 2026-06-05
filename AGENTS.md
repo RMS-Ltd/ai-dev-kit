@@ -42,7 +42,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E06:S09:T16 | BR-086 / GitHub #17 — lowercase fresh kanban RW mode C patterns & sign-off | `docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md` |
+| E07:S07:T03 | BR-091 — workflow validator slug path resolution (v0.7.7.3+1 released; CI verification pending) | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 
@@ -59,6 +59,7 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 | P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) |
 | P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
 | P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
+| P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--doc-policy-zero` only if user-triggered + untagged | [BR-097](docs/project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
 
 **Workflow execution SoT:** `.cursorrules` and `.claude/commands/` — load when `workflows` track applies, not at cold start.
 
@@ -80,7 +81,7 @@ If no keyword match, ask **one** clarifying question. Do not grep the whole repo
 - [`docs/project-agent-manifest.json`](docs/project-agent-manifest.json) at cold start (routing is in this file).
 - Changelog archive tree unless changelog/release work.
 - [`docs/journals/`](docs/journals/) unless forensic recovery.
-- Entire [`fbuboard.md`](docs/project-management/kanban/fbuboard.md) MoSCOW unless kanban-intake track.
+- Entire [`kboard.md`](docs/project-management/kanban/kboard.md) MoSCOW unless kanban-intake track.
 - IDE plan folders outside repo (`~/.cursor/plans/`).
 
 ---

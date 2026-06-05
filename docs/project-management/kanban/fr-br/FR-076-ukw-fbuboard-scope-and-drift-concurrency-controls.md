@@ -19,13 +19,13 @@ housekeeping_policy: keep
 
 > **Predecessor of FR-092 (2026-04-27):** FR-076 expanded UKW to fbuboard scope with concurrency / drift controls. FR-092 (Wave 4) shares the divergence/drift framework and corpus-level normalization model. FR-076 remains valid as historical predecessor.
 
-**Related:** [FR-050](./FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md); [E06:S07:T108](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md); [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
+**Related:** [FR-050](FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md); [E06:S07:T108](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md); [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
 ---
 
 ## Summary
 
-Upgrade UKW so `fbuboard.md` ("fbuboard") is first-class in scope, and enforce the same active-row integrity protections recently applied manually: stale completed-row pruning, timestamp normalization, concurrency-safe update order, and temporal-drift detection/resolution.
+Upgrade UKW so `kboard.md` ("fbuboard") is first-class in scope, and enforce the same active-row integrity protections recently applied manually: stale completed-row pruning, timestamp normalization, concurrency-safe update order, and temporal-drift detection/resolution.
 
 ---
 
@@ -53,7 +53,7 @@ Extend UKW documentation, execution logic, and validation behavior so fbuboard r
 
 ## Requirements
 
-- **FR-076:R01 (Scope):** UKW comprehensive runs must include `fbuboard.md` synchronization and cleanup as a required step.
+- **FR-076:R01 (Scope):** UKW comprehensive runs must include `kboard.md` synchronization and cleanup as a required step.
 - **FR-076:R02 (Stale Active Rows):** Remove active rows whose linked FR/BR/UXR doc status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`), with documented exceptions where status text explicitly indicates unresolved product verification.
 - **FR-076:R03 (Concurrency Guard):** UKW must use deterministic read/check/write sequencing and conflict-aware revalidation before final write when board files changed during the run.
 - **FR-076:R04 (Temporal Drift Check):** Validate and normalize `Last Updated`/row timestamp consistency to avoid stale metadata after sync.
@@ -89,12 +89,12 @@ Extend UKW documentation, execution logic, and validation behavior so fbuboard r
 ## Out of scope
 
 - Re-prioritizing all fbuboard items each run when no status drift exists.
-- Rewriting historical `fbu-completed.md` entries beyond consistency fixes required by the new checks.
+- Rewriting historical `intake-completed.md` entries beyond consistency fixes required by the new checks.
 
 ---
 
 ## References
 
-- Board: [`fbuboard.md`](../fbuboard.md)
+- Board: [`kboard.md`](../kboard.md)
 - UKW guide: [`update-kanban-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
 - Governance: [`kanban-governance-policy.md`](../../rituals/policy/kanban-governance-policy.md)

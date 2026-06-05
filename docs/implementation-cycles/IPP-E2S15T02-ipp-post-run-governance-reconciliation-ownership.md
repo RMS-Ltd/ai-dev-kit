@@ -18,14 +18,14 @@ housekeeping_policy: keep
 
 ### 1.1 Goal
 
-Define an explicit, deterministic, and idempotent IPP post-run reconciliation contract so planning completion consistently updates all required governance surfaces: host task doc, source FR/BR/UXR doc, `kboard.md`, and `fbuboard.md`.
+Define an explicit, deterministic, and idempotent IPP post-run reconciliation contract so planning completion consistently updates all required governance surfaces: host task doc, source FR/BR/UXR doc, `kboard.md`, and `kboard.md`.
 
 ### 1.2 Functional requirements
 
 - **F1:** Assign explicit ownership for post-run reconciliation of the host task document.
 - **F2:** Assign explicit ownership for post-run reconciliation of source FR/BR/UXR documents.
 - **F3:** Assign explicit ownership for post-run reconciliation of task board surface (`kboard.md`).
-- **F4:** Assign explicit ownership for post-run reconciliation of FBU board surface (`fbuboard.md`).
+- **F4:** Assign explicit ownership for post-run reconciliation of FBU board surface (`kboard.md`).
 - **F5:** Define deterministic reconciliation order across all surfaces.
 - **F6:** Define idempotent rerun behavior (no duplicate rows, no contradictory status drift).
 - **F7:** Define ambiguity handling rules with explicit warning behavior when evidence is insufficient for safe automatic reconciliation.
@@ -51,7 +51,7 @@ Define an explicit, deterministic, and idempotent IPP post-run reconciliation co
 | ---- | ------ | ---------------- |
 | T1 | Host task reconciliation | Task doc reflects expected post-run state/links and remains stable across reruns. |
 | T2 | Source FBU reconciliation | Source FR/BR/UXR doc reflects expected implementing-task/planning links. |
-| T3 | Board reconciliation | `kboard.md` and `fbuboard.md` include correct entries/state without duplicate rows. |
+| T3 | Board reconciliation | `kboard.md` include correct entries/state without duplicate rows. |
 | T4 | Deterministic order | Reconciliation runs in defined sequence and yields consistent outcomes. |
 | T5 | Idempotency | Re-running with unchanged inputs produces no net drift. |
 | T6 | Ambiguity handling | Ambiguous evidence emits explicit warnings and avoids silent destructive overwrite. |

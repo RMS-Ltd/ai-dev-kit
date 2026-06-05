@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-05 (v0.8.3.10+1 — fix released)  
 **Version:** v0.8.3.10+1  
 **Implementing Task:** [E08:S03:T10](../epics/epic-08/story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md) — ✅ COMPLETE (v0.8.3.10+1)  
-**Related:** [CodeQL alert #5](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/5) · [BR-095](./BR-095-codeql-insecure-temporary-file-mktemp.md) · [FR-065](./FR-065-docusaurus-site-identity.md)
+**Related:** [CodeQL alert #5](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/5) · [BR-095](BR-095-codeql-insecure-temporary-file-mktemp.md) · [FR-065](./FR-065-docusaurus-site-identity-and-config.md)
 
 ---
 

@@ -424,7 +424,7 @@ knowledge/fynd_deals/
 
 **Pattern 1: Explicit Cross-References**
 ```markdown
-**Related:** [Document Lifecycle Policy](./doc-lifecycle-policy.md) | [KB Structure Overview](./kb-structure-overview.md)
+**Related:** [Document Lifecycle Policy](../../architecture/standards-and-adrs/doc-lifecycle-policy.md) | [KB Structure Overview](../../architecture/standards-and-adrs/kb-structure-overview.md)
 ```
 
 **Projects Using:** ai-dev-kit, dev-toolkit

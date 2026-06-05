@@ -50,8 +50,8 @@ This is an **architectural / policy enforcement gap**, not merely a one-off typo
 
 - [`packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py) — doc-init detection; “same task BUILD increment” messaging vs **`+0`** eligibility.
 - RW Step 2 agent execution docs: [`release-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md).
-- [`src/fynd_deals/version.py`](../../../../src/fynd_deals/version.py) comments (**BUILD = 0** doc-init convention).
-- **Contrast (avoid conflicting “fix”):** [BR-010](./BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) addressed the **opposite** failure mode (incorrect **`+0`** when **`+1`** was required). BR-067 must be resolved **without regressing BR-010**.
+- [`src/fynd_deals/version.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/src/fynd_deals/version.py) comments (**BUILD = 0** doc-init convention).
+- **Contrast (avoid conflicting “fix”):** [BR-010](BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) addressed the **opposite** failure mode (incorrect **`+0`** when **`+1`** was required). BR-067 must be resolved **without regressing BR-010**.
 
 ---
 
@@ -61,8 +61,8 @@ This is an **architectural / policy enforcement gap**, not merely a one-off typo
 | -------- | ---------------- | ---------- | ------------- | ----------------- | --------------- |
 | **First-time E/S/T doc** (abstract space / intake) | No (created in this commit) | Docs-only | **+0** | — | Auto doc-init detection |
 | **First functional work** on new task | Yes (from prior +0) | Any functional change | **+1** | — | Normal new-task path |
-| **Same-task docs-only** on existing E/S/T | Yes | Docs-only only | **+1** (default RW Step 2) | **`--doc-policy-zero`** with **`--requested` + `--art`** → **+0** | `validate_version_bump.py --strict --requested E:S:T --art --doc-policy-zero` |
-| **Same-task functional** release | Yes | Code or mixed | **BUILD + 1** | — | Perpetual: must exceed HEAD BUILD ([BR-075](./BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
+| **Same-task docs-only** on existing E/S/T | Yes | Docs-only only | **+1** (default RW Step 2) | **`--doc-policy-zero`** with **`--requested` + `--art`** → **+0** only when **no git tag** exists for that BUILD (blocked when tag exists; use **+1** instead — see `CHANGELOG_v0.2.16.3+3`) | `validate_version_bump.py --strict --requested E:S:T --art --doc-policy-zero` |
+| **Same-task functional** release | Yes | Code or mixed | **BUILD + 1** | — | Perpetual: must exceed HEAD BUILD ([BR-075](BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
 | **Batch story + task creation** (BR-010 class) | Task doc created same commit as story | Mixed docs | **+1** (not +0) | — | Doc-init blocked when task doc already exists in tree |
 
 **RW invocation patterns:**
@@ -71,7 +71,7 @@ This is an **architectural / policy enforcement gap**, not merely a one-off typo
 - **Doc-only on existing anchor (+0):** `RW -d E02:S16:Txx --art --doc-policy-zero` — Step 2 sets BUILD=0; Step 10 passes `--doc-policy-zero` to `validate_version_bump.py`.
 - **Functional (+1+):** `RW E02:S16:Txx` (or `--art` when adopting anchor) — normal BUILD increment.
 
-See [workflow-initiation-cheatsheet.md](../../../guides/workflow-initiation-cheatsheet.md) §2 and [release-workflow-agent-execution.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) Step 2 / Step 10.
+See [workflow-initiation-cheatsheet.md](../../../guides/workflow-initiation-cheatsheet.md) §2 and [release-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md) Step 2 / Step 10.
 
 ---
 
@@ -94,7 +94,7 @@ Re-verify after any change to doc-init detection or `--doc-policy-zero`:
 | R2 | Task doc exists from prior release; docs-only follow-up without `--doc-policy-zero` | **+1** (increment) | Silently accept +0 |
 | R3 | Task doc exists; docs-only with `RW -d … --art --doc-policy-zero` | **+0** | Require +1 |
 | R4 | New task doc only (no prior version); docs-only intake | **+0** | Require +1 |
-| R5 | Perpetual same-task release (E2:S16:T03/T04) | **BUILD > HEAD** | Unchanged BUILD ([BR-075](./BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
+| R5 | Perpetual same-task release (E2:S16:T03/T04) | **BUILD > HEAD** | Unchanged BUILD ([BR-075](BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
 
 **Test command:** `pytest "packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py" -x`
 
@@ -114,8 +114,8 @@ Re-verify after any change to doc-init detection or `--doc-policy-zero`:
 
 ## Related
 
-- [BR-010](./BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) — inverse bug (`+0` when **`+1`** needed).
-- [FR-020](./FR-020-version-validator-abstract-space-awareness.md) — validator abstract-space / **`+0`** awareness.
+- [BR-010](BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) — inverse bug (`+0` when **`+1`** needed).
+- [FR-020](FR-020-version-validator-abstract-space-awareness.md) — validator abstract-space / **`+0`** awareness.
 - [ADR-003](../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) — delivered under **E6:S09** (example where **`+0`** semantics were expected by policy).
 - [`dev-kit-versioning-policy.md`](../../../architecture/standards-and-adrs/dev-kit-versioning-policy.md) — canonical **BUILD** semantics.
 

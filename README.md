@@ -11,11 +11,9 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.897+1` | **Internal:** `v0.8.3.10+1` (E08:S03:T10 / BR-096 CodeQL URL substring fix) | **Last Updated:** 2026-06-05
+**Version (SemVer):** `v0.4.909+3` | **Internal:** `v0.5.9.13+3` (E05:S09:T13 / BR-090 CI parity) | **Last Updated:** 2026-06-05
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
-
-**Repositories:** Adopters clone [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) (public). Maintainers use private [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) for book work — see [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 </div>
 
@@ -233,7 +231,7 @@ Follow **[INSTALL_IN_YOUR_PROJECT.md](INSTALL_IN_YOUR_PROJECT.md)** and the [Qui
 
 ## Roadmap
 
-Work is tracked in **[Kanban](docs/project-management/kanban/kanban-board.md)** and **[GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)**.
+Work is tracked in **[Kanban](docs/project-management/kanban/kboard.md)** and **[GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)**.
 
 ---
 

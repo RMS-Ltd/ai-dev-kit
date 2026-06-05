@@ -64,7 +64,7 @@ Non-functional: optional integration unchanged; ADK validators remain authoritat
 
 | Doc | Path | Action |
 |-----|------|--------|
-| IPP | `docs/implementation-cycles/IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md` | CREATE |
+| IPP | `docs/implementation-cycles/IPP-E6S9T5-adk-ecc-workflow-skill-pack-fr098.md` | CREATE |
 | Validator/tests | `packages/frameworks/workflow-mgt/scripts/validation/*adk_ecc*` | CREATE |
 | Skills/README | `packages/frameworks/workflow-mgt/skills/**` | CREATE |
 

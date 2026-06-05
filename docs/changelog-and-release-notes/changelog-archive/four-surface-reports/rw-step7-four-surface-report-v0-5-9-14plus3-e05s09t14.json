@@ -1,0 +1,100 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 5,
+    "story": 9,
+    "task": 14,
+    "task_id": "E05:S09:T14",
+    "version_string": "v0.5.9.14+3"
+  },
+  "timestamp_utc": "2026-06-05 20:30:00 UTC",
+  "surfaces": {
+    "task_doc": {
+      "name": "task_doc",
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md"
+      ],
+      "touched": true,
+      "changes": [
+        "Version anchor v0.5.9.14+3; COMPLETE retained"
+      ],
+      "notes": []
+    },
+    "fbu_doc": {
+      "name": "fbu_doc",
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md",
+        "docs/project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md"
+      ],
+      "touched": true,
+      "changes": [
+        "BR-067 policy table tagged-BUILD guard; BR-093 remains FIXED"
+      ],
+      "notes": []
+    },
+    "kboard": {
+      "name": "kboard",
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "touched": true,
+      "changes": [
+        "Board metadata v0.5.9.14+3"
+      ],
+      "notes": []
+    }
+  },
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "name": "story_doc",
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md"
+      ],
+      "touched": true,
+      "changes": [
+        "T14 v0.5.9.14+3 BUILD remediation note"
+      ],
+      "notes": []
+    },
+    "ipp": {
+      "name": "ipp",
+      "paths": [
+        "docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md"
+      ],
+      "touched": true,
+      "changes": [
+        "§8.1 +3 wave ledger; §8.5 RW guidance fix"
+      ],
+      "notes": []
+    },
+    "validator": {
+      "name": "validator",
+      "paths": [
+        "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py",
+        "packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py"
+      ],
+      "touched": true,
+      "changes": [
+        "validate_tagged_build_collision guard"
+      ],
+      "notes": []
+    }
+  },
+  "summary": {
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": [
+      "fbuboard"
+    ],
+    "untouched_rationale": "ADR-018 redirect stub — no active MoSCOW on fbuboard",
+    "total_changes": 6,
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 44
+  },
+  "notes": "BUILD collision remediation: Wave 2 at +3; restore +2 archive; tagged-BUILD validator guard."
+}

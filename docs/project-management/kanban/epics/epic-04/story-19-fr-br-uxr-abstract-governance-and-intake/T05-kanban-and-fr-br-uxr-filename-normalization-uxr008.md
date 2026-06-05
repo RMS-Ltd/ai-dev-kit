@@ -18,16 +18,16 @@ housekeeping_policy: keep
 
 **Upstream:** [UXR-008 – Canonical Kanban filename normalization](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
-**Coordinates:** [E06:S07:T114](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md), [E04:S19:T02](T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md), [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
+**Coordinates:** [E06:S07:T114](T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md), [E04:S19:T02](T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md), [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 
-**Superseded by:** [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) · [IPP-E04S19T06](../../../../../implementation-cycles/IPP-E04S19T06-fbu-meta-normalization-and-intake-governance.md)
+**Superseded by:** [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) · [IPP-E4S19T6](../../../../../implementation-cycles/IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
 
 ---
 
 ## Input
 
 - Reopened UXR scope to normalize filename patterns beyond board files.
-- Existing canonical board defaults already migrated (`kboard.md`, `fbuboard.md`) under `E06:S07:T114`.
+- Existing canonical board defaults already migrated (`kboard.md`) under `E06:S07:T114`.
 - Remaining supporting kanban + FR/BR/UXR docs under `docs/project-management/kanban/` still use mixed naming styles.
 
 ---
@@ -70,9 +70,9 @@ Partial normalization (boards only) leaves the broader kanban surface with incon
 ## References
 
 - [UXR-008](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- [T114](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- [T114](T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 - [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
-- [IPP-E04S19T05](../../../../../implementation-cycles/IPP-E04S19T05-kanban-fr-br-uxr-filename-normalization.md)
-- [ICW-E04S19T05-specification](../../../../../implementation-cycles/ICW-E04S19T05-specification.md)
-- [ICW-E04S19T05-test-design](../../../../../implementation-cycles/ICW-E04S19T05-test-design.md)
-- [ICW-E04S19T05-implementation-plan](../../../../../implementation-cycles/ICW-E04S19T05-implementation-plan.md)
+- [IPP-E4S19T5](../../../../../implementation-cycles/IPP-E4S19T05-kanban-fr-br-uxr-filename-normalization.md)
+- [ICW-E4S19T5-specification](../../../../../implementation-cycles/ICW-E4S19T05-specification.md)
+- [ICW-E4S19T5-test-design](../../../../../implementation-cycles/ICW-E4S19T05-specification.md)
+- [ICW-E4S19T5-implementation-plan](../../../../../implementation-cycles/ICW-E4S19T05-specification.md)

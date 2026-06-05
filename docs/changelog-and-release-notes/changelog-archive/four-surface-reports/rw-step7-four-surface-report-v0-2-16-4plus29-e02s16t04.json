@@ -1,0 +1,37 @@
+{
+  "release_version": "v0.2.16.4+29",
+  "task_id": "E02:S16:T04",
+  "invocation_context": "rw_step_7",
+  "touched_surfaces": [
+    {
+      "surface": "task_doc",
+      "path": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md",
+      "why": "Version anchor v0.2.16.4+29; UKW hygiene forensic note"
+    },
+    {
+      "surface": "story_doc",
+      "path": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md",
+      "why": "Tactical overview + T04 checklist marker v0.2.16.4+29"
+    },
+    {
+      "surface": "epic_doc",
+      "path": "docs/project-management/kanban/epics/epic-02/epic-02.md",
+      "why": "Story 16 T04 release marker"
+    },
+    {
+      "surface": "kboard.md",
+      "path": "docs/project-management/kanban/kboard.md",
+      "why": "Board metadata + T04 perpetual row version marker"
+    },
+    {
+      "surface": "fbuboard.md",
+      "path": "docs/project-management/kanban/fbuboard.md",
+      "why": "Board metadata after RESOLVED FBU prune"
+    },
+    {
+      "surface": "fbu-completed.md",
+      "path": "docs/project-management/kanban/fbu-completed.md",
+      "why": "Ledger entries BR-078/079/080/087"
+    }
+  ]
+}

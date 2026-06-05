@@ -50,12 +50,12 @@ Consolidate **legacy and stray changelog directory trees** into the **existing c
 
 ## Input
 
-- **IPP:** [`IPP-E05S09T12-changelog-directory-consolidation.md`](../../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)
-- **Manifest:** [`changelog-directory-consolidation-manifest.md`](../../../../maintenance/changelog-directory-consolidation-manifest.md)
+- **IPP:** [`IPP-E5S9T12-changelog-directory-consolidation.md`](../../../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)
+- **Manifest:** [`changelog-directory-consolidation-manifest.md`](../../../../../maintenance/changelog-directory-consolidation-manifest.md)
 - **UXR-018:** [`UXR-018-changelog-directory-consolidation.md`](../../../fr-br/UXR-018-changelog-directory-consolidation.md)
-- **Config SoT:** [`rw-config.yaml`](../../../../../../rw-config.yaml) → `changelog_dir`
-- **Portal map:** [`portal/README.md`](../../../../../../portal/README.md)
-- **Related:** [FR-066](../../../fr-br/FR-066-docusaurus-canonical-docs-path.md), [FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) / [E05:S01:T39](../../story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md)
+- **Config SoT:** [`rw-config.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/rw-config.yaml) → `changelog_dir`
+- **Portal map:** [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md)
+- **Related:** [FR-066](../../../fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md), [FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) / [E05:S01:T39](../story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md)
 
 ---
 
@@ -108,8 +108,8 @@ Consolidate **legacy and stray changelog directory trees** into the **existing c
 
 ## References
 
-- [IPP-E05S09T12](../../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)
-- [Consolidation manifest](../../../../maintenance/changelog-directory-consolidation-manifest.md)
+- [IPP-E5S9T12](../../../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)
+- [Consolidation manifest](../../../../../maintenance/changelog-directory-consolidation-manifest.md)
 - [Story 9 — Docusaurus Documentation Portal](../story-09-docusaurus-documentation-portal.md)
-- [Coordinate remediation](../../../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
+- [Coordinate remediation](../../../../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
 - [Changelog management policy](../../../../../architecture/standards-and-adrs/changelog-management-policy.md)

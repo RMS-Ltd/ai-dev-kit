@@ -39,7 +39,7 @@ Implement and document **UKW Step 2.5** gap discovery: surface TODO/IN PROGRESS 
 
 - [ ] **AC1:** UKW agent execution guide + YAML describe gap-discovery behaviour.
 - [ ] **AC2:** At least one UKW run documents gap stats (tasks added, FBUs presented, user decisions).
-- [ ] **AC3:** **FR-043** linked to this task; **fbuboard** / **fbu-open-taskless-queue** maintained.
+- [ ] **AC3:** **FR-043** linked to this task; **fbuboard** / **intake-open-taskless-queue** maintained.
 
 ## References
 

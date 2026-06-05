@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Changelog directory consolidation manifest (UXR-018 / E05:S09:T12)
 
 **Date:** 2026-06-04  
-**IPP:** [IPP-E05S09T12-changelog-directory-consolidation.md](../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)  
+**IPP:** [IPP-E5S9T12-changelog-directory-consolidation.md](../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)  
 **Remediation:** [coordinate-remediation-uxr018-e05s09t12.md](coordinate-remediation-uxr018-e05s09t12.md)
 
 ## Summary

@@ -14,9 +14,9 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 |----|-------------|--------|
-| RF1 | UKW YAML + agent doc: explicit FBU board cleanup on `fbuboard.md` | AC1 |
-| RF2 | Append resolved FBUs to `fbu-completed.md` with ISO timestamps | AC2 |
-| RF3 | "20 most recent" dashboard on `fbu-completed.md` | AC3 |
+| RF1 | UKW YAML + agent doc: explicit FBU board cleanup on `kboard.md` | AC1 |
+| RF2 | Append resolved FBUs to `intake-completed.md` with ISO timestamps | AC2 |
+| RF3 | "20 most recent" dashboard on `intake-completed.md` | AC3 |
 | RF4 | Cross-doc consistency check fbu board ↔ completed ↔ structure | AC4 |
 | RF5 | No breaking changes to kanban UKW steps | AC5 |
 

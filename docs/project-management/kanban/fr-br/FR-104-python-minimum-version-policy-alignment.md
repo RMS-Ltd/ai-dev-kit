@@ -26,8 +26,8 @@ Align the **declared** Python floor (`setup.py`, README, user docs, CI examples)
 
 ## Problem Statement
 
-- [`setup.py`](../../../../setup.py) and [`README.md`](../../../../README.md) state **`python_requires>=3.8`** and “Python 3.8+”.
-- Several repo scripts use **PEP 604** union syntax (`str | None`, `dict | None`) **without** `from __future__ import annotations`, e.g. [`scripts/kb_stub_sweep.py`](../../../../scripts/kb_stub_sweep.py), [`scripts/kb_push_to_notion.py`](../../../../scripts/kb_push_to_notion.py), [`scripts/kb_migrate_full_content.py`](../../../../scripts/kb_migrate_full_content.py) — these **fail on Python 3.8/3.9**.
+- [`setup.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/setup.py) and [`README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md) state **`python_requires>=3.8`** and “Python 3.8+”.
+- Several repo scripts use **PEP 604** union syntax (`str | None`, `dict | None`) **without** `from __future__ import annotations`, e.g. [`scripts/kb_stub_sweep.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/kb_stub_sweep.py), [`scripts/kb_push_to_notion.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/kb_push_to_notion.py), [`scripts/kb_migrate_full_content.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/kb_migrate_full_content.py) — these **fail on Python 3.8/3.9**.
 - The published **CLI** (`cli/`) remains stdlib + PyYAML only and could stay on a lower floor if documented separately.
 - Audit context: [E07:S06:T08](../epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md); inconsistency tracked in [BR-077](BR-077-documented-python-38-contradicts-repo-310-requirement.md).
 
@@ -41,7 +41,7 @@ Align the **declared** Python floor (`setup.py`, README, user docs, CI examples)
   - **Option A (recommended):** Raise repo-wide declared floor to **`>=3.10`**; recommend **3.11** for contributors and CI.
   - **Option B:** Keep **`>=3.8`** for published package only; add `from __future__ import annotations` or quoted unions in all scripts using `X | Y`; split “CLI install” vs “full dev kit” in docs.
 - Update **`setup.py`** `python_requires` and PyPI classifiers (drop 3.8/3.9 if Option A).
-- Update **README** badge and prerequisites, [`docs/documentation/user-docs/framework-dependency-installation-guide.md`](../../../../docs/documentation/user-docs/framework-dependency-installation-guide.md), and other canonical “3.8+” callouts found by grep.
+- Update **README** badge and prerequisites, [`docs/documentation/user-docs/framework-dependency-installation-guide.md`](../../../documentation/user-docs/framework-dependency-installation-guide.md), and other canonical “3.8+” callouts found by grep.
 - Align **example** CI snippets in `docs/maintenance/release-integration-guides.md` with active workflows (**3.11** where Python is shown).
 - Optional: add **`.python-version`** or **`requires-python`** note in contributor section (`3.11`).
 

@@ -17,13 +17,13 @@ housekeeping_policy: keep
 **Status:** IMPLEMENTED (v0.2.15.3+2 — **E02:S15:T03**: duplicate-footer dual-agreement + divergence guardrails in `update_kanban_docs.py`; IPP/traceability alignment released)
 
 **Implementing Task:** [E02:S15:T03](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md)
-**IPP:** [IPP-E02S15T03](../../../implementation-cycles/IPP-E02S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
+**IPP:** [IPP-E2S15T3](../../../implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
 
 ---
 
 ## Summary
 
-IPW governance must explicitly validate and prevent board-row traceability churn on `kboard.md` and `fbuboard.md`, including both footer duplication and task-ID multiplication anti-patterns (repeated appended segments like `| [E#:S#:T#] | ... | Last modified: ...` on the same row). This is distinct from simple timestamp drift and requires deterministic structural checks.
+IPW governance must explicitly validate and prevent board-row traceability churn on `kboard.md`, including both footer duplication and task-ID multiplication anti-patterns (repeated appended segments like `| [E#:S#:T#] | ... | Last modified: ...` on the same row). This is distinct from simple timestamp drift and requires deterministic structural checks.
 
 ---
 
@@ -37,7 +37,7 @@ Current governance validation does not explicitly assert row-tail uniqueness for
 
 ### Functional Requirements
 
-- [x] **FR-089-F1:** IPW spec must define canonical row-tail grammar for `kboard.md` and `fbuboard.md` with single-instance footer segments.
+- [x] **FR-089-F1:** IPW spec must define canonical row-tail grammar for `kboard.md` with single-instance footer segments.
 - [x] **FR-089-F2:** Validation must detect repeated appended footer segments on the same row and classify them as structural corruption.
 - [x] **FR-089-F3:** IPW post-run governance contract must include de-duplication/normalization expectations for corrupted rows.
 - [x] **FR-089-F4:** Validation output must include explicit counters for `rows_with_duplicate_footers` and affected row IDs.
@@ -70,7 +70,7 @@ Current governance validation does not explicitly assert row-tail uniqueness for
 
 ## Related
 
-- [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [UXR-009](./UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [FR-084](./FR-084-ipp-post-run-governance-reconciliation-ownership.md)
-- [IPP-E02S15T03](../../../implementation-cycles/IPP-E02S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
+- [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [FR-084](FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- [IPP-E2S15T3](../../../implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)

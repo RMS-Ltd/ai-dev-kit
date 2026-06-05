@@ -67,8 +67,8 @@ Create `.claude/commands/ipw.md` as a self-contained IPW execution guide, follow
 
 **Command syntax:**
 - `/ipw` — infer host task from current context.
-- `/ipw E{epic}:S{story}:T{task}` — explicit host task (formats: `E02:S16:T08`, `E02S16T08`).
-- `/ipw E{epic}:S{story}:T{task} --skip-tests` — doc/config-only tasks where test design is not applicable (must be explicitly justified in the plan doc).
+- `/ipw E\{epic\}:S\{story\}:T\{task\}` — explicit host task (formats: `E02:S16:T08`, `E02S16T08`).
+- `/ipw E\{epic\}:S\{story\}:T\{task\} --skip-tests` — doc/config-only tasks where test design is not applicable (must be explicitly justified in the plan doc).
 
 **The command must enforce the four sequential phases with phase gates:**
 
@@ -92,10 +92,10 @@ Create `.claude/commands/ipw.md` as a self-contained IPW execution guide, follow
 Every implementation plan section produced by IPW **must** include these two prescribed steps, regardless of task type:
 
 **Step 1 (always first):**
-> Transition task `E{epic}:S{story}:T{task}` status from `TODO` to `IN PROGRESS` in task document. Update `Last updated` date.
+> Transition task `E\{epic\}:S\{story\}:T\{task\}` status from `TODO` to `IN PROGRESS` in task document. Update `Last updated` date.
 
 **Final step (always last):**
-> Reconcile task `E{epic}:S{story}:T{task}` status with actual implementation state. If all acceptance criteria are satisfied with evidence → transition to `COMPLETE` and add forensic marker `✅ COMPLETE (v{version})`; if implementation is ongoing → confirm status remains `IN PROGRESS`; if blocked → transition to `BLOCKED` with documented reason. Update `Last updated` date.
+> Reconcile task `E\{epic\}:S\{story\}:T\{task\}` status with actual implementation state. If all acceptance criteria are satisfied with evidence → transition to `COMPLETE` and add forensic marker `✅ COMPLETE (v{version})`; if implementation is ongoing → confirm status remains `IN PROGRESS`; if blocked → transition to `BLOCKED` with documented reason. Update `Last updated` date.
 
 These steps are executor-prescribed and therefore fall naturally inside implementation execution — consistent with FR-077's ownership contract. IPW does not execute them; the plan it produces mandates them.
 

@@ -181,7 +181,7 @@ docs/README.md
 ### 3.3 Cross-Referencing
 
 **Internal References:**
-- Use relative paths: `[Architecture Policy](../Architecture/standards-and-adrs/dev-kit-versioning-policy.md)`
+- Use relative paths: `[Architecture Policy](../../governance/standards/dev-kit-versioning-policy.md)`
 - Test all links to ensure they work
 
 **External References:**

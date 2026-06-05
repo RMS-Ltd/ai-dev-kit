@@ -50,7 +50,7 @@ The JSON journal shows `"status": "failed"` at Step 3 with `version_after: null`
 ```markdown
 ## [0.6.6.63+1] - 21-04-26
 ...
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.6.63+1.md)
+[Detailed changelog](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.6.63%2B1.md)
 ```
 
 This link is now **broken** (404 equivalent in the repository).
@@ -198,8 +198,8 @@ Both mitigations (test isolation + gitignore) are recommended for defense in dep
 
 - Commit `22e3e574c` — Release v0.6.6.63+2 (contains test artifacts, deletes +1 changelog)
 - Commit `27bbcd297` — Release v0.6.6.63+1 (contains the deleted changelog)
-- [CHANGELOG_ARCHIVE.md](../changelog-and-release-notes/changelog-archive/CHANGELOG_ARCHIVE.md) — Contains broken link to +1 changelog
-- [CHANGELOG_v0.6.6.63+2.md](../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.6.63+2.md) — Contains version typo
+- [CHANGELOG_ARCHIVE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/changelog-and-release-notes/changelog-archive/CHANGELOG_ARCHIVE.md) — Contains broken link to +1 changelog
+- [CHANGELOG_v0.6.6.63+2.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.6.63%2B2.md) — Contains version typo
 - `tests/journal/test_rw_integration.py` — Source of committed test artifacts
 - `.gitignore` — Missing journal artifact exclusion
 

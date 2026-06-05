@@ -64,7 +64,7 @@ Implement **FR-066**: point the Docusaurus docs plugin at repository **`docs/`**
 
 ## Specification (E05:S09:T02 / FR-066)
 
-Testable behaviors **S1–S7** are enforced by [`tests/test_portal_fr066_docs_path.py`](../../../../../../tests/test_portal_fr066_docs_path.py). **S8** is process: `npm run build` may fail until **FR-067**; failures should reflect corpus/link issues, not missing `docs/` path.
+Testable behaviors **S1–S7** are enforced by [`tests/test_portal_fr066_docs_path.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr066_docs_path.py). **S8** is process: `npm run build` may fail until **FR-067**; failures should reflect corpus/link issues, not missing `docs/` path.
 
 | ID | Behavior | FR map |
 |----|----------|--------|

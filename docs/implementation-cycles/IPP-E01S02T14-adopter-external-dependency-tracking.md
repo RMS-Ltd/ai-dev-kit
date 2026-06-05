@@ -70,7 +70,7 @@ Adopters have one canonical guide and optional copy-paste templates so **host pr
 - **Current task status:** IN PROGRESS (implementation session).
 - **Transition to IN PROGRESS:** First implementation change (this session).
 - **Transition to COMPLETE:** All AC evidence in task doc; version marker via `RW E01:S02:T14`.
-- **Atomic propagation:** Task doc + kboard/fbuboard via RW Step 7.
+- **Atomic propagation:** Task doc + kboard via RW Step 7.
 
 ### 2.5 ADR necessity decision
 
@@ -94,7 +94,7 @@ Adopters have one canonical guide and optional copy-paste templates so **host pr
 | E4 | Spec elsewhere | Y | This IPP + task AC |
 | E5 | Documented NONE | Y | §5.3 |
 
-**§5.3 governing docs:** [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md); [`packages/frameworks/numbering-versioning/README.md`](../../packages/frameworks/numbering-versioning/README.md); [FR-003](../project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md).
+**§5.3 governing docs:** [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md); [`packages/frameworks/numbering-versioning/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering-versioning/README.md); [FR-003](../project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md).
 
 ---
 
@@ -203,4 +203,4 @@ Adopters have one canonical guide and optional copy-paste templates so **host pr
 - [FR-003](../project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
 - [FR-002](../project-management/kanban/fr-br/FR-002-update-been-there-readme.md) (related README template)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [INSTALL_IN_YOUR_PROJECT.md](../../INSTALL_IN_YOUR_PROJECT.md)
+- [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

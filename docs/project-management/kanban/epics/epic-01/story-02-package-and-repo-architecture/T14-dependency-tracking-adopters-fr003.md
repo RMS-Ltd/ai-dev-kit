@@ -31,7 +31,7 @@ Adopter-facing documentation and copy-paste templates for host-project tracking 
 
 ## Input
 
-- [IPP-E01S02T14 — Adopter external dependency tracking](../../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
+- [IPP-E1S2T14 — Adopter external dependency tracking](../../../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 ---
 
@@ -40,10 +40,10 @@ Adopter-facing documentation and copy-paste templates for host-project tracking 
 Document and provide copy-paste templates for **dependency tracking** patterns so adopting projects track external README/doc/style resources (Best-README-Template, Keep a Changelog, Shields.io) directly—not via ai-dev-kit as middleman.
 
 **Shipped artifacts:**
-- [`adopter-external-resource-dependency-tracking.md`](../../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
-- [`examples/adopter-upstream-register.md`](../../../../documentation/user-docs/examples/adopter-upstream-register.md)
-- [`examples/adopter-upstream-check.yml`](../../../../documentation/user-docs/examples/adopter-upstream-check.yml)
-- [`examples/adopter-upstream-check.sh`](../../../../documentation/user-docs/examples/adopter-upstream-check.sh)
+- [`adopter-external-resource-dependency-tracking.md`](../../../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
+- [`examples/adopter-upstream-register.md`](../../../../../documentation/user-docs/examples/adopter-upstream-register.md)
+- [`examples/adopter-upstream-check.yml`](../../../../../documentation/user-docs/examples/adopter-upstream-check.yml)
+- [`examples/adopter-upstream-check.sh`](../../../../../documentation/user-docs/examples/adopter-upstream-check.sh)
 
 ---
 
@@ -66,5 +66,5 @@ Document and provide copy-paste templates for **dependency tracking** patterns s
 ## References
 
 - [FR-003](../../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
-- [IPP-E01S02T14](../../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
+- [IPP-E1S2T14](../../../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 - [FR-002 / T13](T13-readme-template-best-readme-fr002.md) (related README template — separate task)

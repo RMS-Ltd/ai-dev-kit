@@ -210,5 +210,5 @@ Implement comprehensive processes for updating and migrating framework packages.
 ## References
 
 - `docs/project-management/kanban/epics/epic-06/epic-06.md`
-- `docs/project-management/kanban/epics/epic-06/story-01-framework-version-management.md`
+- `docs/project-management/kanban/epics/epic-06/story-02-versioning-cookbook-and-examples.md`
 

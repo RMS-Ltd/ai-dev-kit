@@ -87,9 +87,9 @@ A **comprehensive UKW** run promoted **E05:S09:T01** to the MoSCOW **Should** se
 
 ### Shipped fix (E02:S16:T13, v0.2.16.13+1)
 
-- **UKW Step 6 Part B.1** in `.cursorrules`, [cursorrules-ukw-trigger-section.md](../../../packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md), [update-kanban-workflow-agent-execution.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [ukw/AGENTS.md](../../../packages/frameworks/workflow-mgt/agents/ukw/AGENTS.md).
-- Advisory [`validate_story_moscow_coverage.py`](../../../packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py) (`--story`, `--scan-all`).
-- **IPP:** [IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md](../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md).
+- **UKW Step 6 Part B.1** in `.cursorrules`, [cursorrules-ukw-trigger-section.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md), [update-kanban-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [ukw/AGENTS.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/agents/ukw/AGENTS.md).
+- Advisory [`validate_story_moscow_coverage.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py) (`--story`, `--scan-all`).
+- **IPP:** [IPP-E2S16T13-br059-ukw-moscow-full-story-coverage.md](../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md).
 
 ### Remediation evidence
 
@@ -103,8 +103,8 @@ A **comprehensive UKW** run promoted **E05:S09:T01** to the MoSCOW **Should** se
 
 `validate_story_moscow_coverage.py --scan-all` (2026-06-03): **37** stories with open checklist tasks still lack full MoSCOW rows — mostly TODO/backlog epics intentionally absent from the active board per MoSCOW value audit. **UKW Part B.1** applies on the next comprehensive UKW for **IN PROGRESS** stories; backlog enumeration is a separate hygiene program (not BR-059).
 
-Report: [`br059-corpus-scan-2026-06-03.json`](../../changelog-and-release-notes/changelog-archive/four-surface-reports/br059-corpus-scan-2026-06-03.json).
+Report: [`br059-corpus-scan-2026-06-03.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/changelog-and-release-notes/changelog-archive/four-surface-reports/br059-corpus-scan-2026-06-03.json).
 
 ### SitRep / closure
 
-- [IPP-E02S16T13 §7.1–§7.2](../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md) — Option **D** (scoped RESOLVED): process + regression fixed; full backlog board fill deferred.
+- [IPP-E2S16T13 §7.1–§7.2](../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md) — Option **D** (scoped RESOLVED): process + regression fixed; full backlog board fill deferred.

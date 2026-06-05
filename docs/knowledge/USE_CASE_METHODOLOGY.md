@@ -570,17 +570,17 @@ docs/use-cases/
 ## Related Work
 
 **Implementation:**
-- **Task:** [E2:S01:T06](../../epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06)
-- **BR/FR:** [BR-002](../../fr-br/BR-002-changelog-validator-ordering-bug.md)
-- **Documentation:** [Guide Title](../../guides/guide-title.md)
+- **Task:** [E2:S01:T06](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06)
+- **BR/FR:** [BR-002](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/fr-br/BR-002-changelog-validator-ordering-bug.md)
+- **Documentation:** [Guide Title](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/guides/guide-title.md)
 ```
 
 **BR/FR/Task/Documentation:**
 ```markdown
 ## Related Use Cases
 
-- **Canonical:** [UC-XXX](../../use-cases/canonical/UC-XXX.md)
-- **Discovered:** [UC-D-XXX](../../use-cases/discovered/UC-D-XXX.md)
+- **Canonical:** [UC-XXX](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/use-cases/canonical/UC-XXX.md)
+- **Discovered:** [UC-D-XXX](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/use-cases/discovered/UC-D-XXX.md)
 ```
 
 ---

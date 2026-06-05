@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** 🟡 **PENDING INTAKE**  
 
-**Implementing Task:** TBD (intake pending — **not** [E06:S07:T107](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md); prior miswire corrected 2026-05-30 per [IPP-E06S07T107](../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md))
+**Implementing Task:** TBD (intake pending — **not** [E06:S07:T107](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md); prior miswire corrected 2026-05-30 per [IPP-E6S7T107](../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md))
 **Priority:** MEDIUM - Improve organization and maintainability of workflow definitions  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-09  

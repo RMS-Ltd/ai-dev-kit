@@ -3,7 +3,7 @@
 **Version:** 1.0.0  
 **Last Updated:** 2025-12-04  
 **Status:** Draft  
-**Related:** [Document Lifecycle Policy](./doc-lifecycle-policy.md) | [KB Structure Overview](./kb-structure-overview.md)
+**Related:** [Document Lifecycle Policy](doc-lifecycle-policy.md) | [KB Structure Overview](kb-structure-overview.md)
 
 ---
 
@@ -280,9 +280,9 @@ housekeeping_policy: delete
 
 ## 🔗 Related Documents
 
-- **Policy:** [`doc-lifecycle-policy.md`](./doc-lifecycle-policy.md) – Governance and enforcement
+- **Policy:** [`doc-lifecycle-policy.md`](doc-lifecycle-policy.md) – Governance and enforcement
 - **Workflow:** `packages/frameworks/workflow-mgt/workflows/doc-housekeeping-workflow.yaml` – Automated housekeeping
-- **KB Structure:** [`kb-structure-overview.md`](./kb-structure-overview.md) – KB organization
+- **KB Structure:** [`kb-structure-overview.md`](kb-structure-overview.md) – KB organization
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E6:S01:T38 — IPP: UKW Completed Task Removal Defect (BR-072)
 
-**Host Task:** [E6:S01:T38](../docs/project-management/kanban/epics/epic-06/story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)  
-**Planning for:** [BR-072](../docs/project-management/kanban/fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)  
+**Host Task:** [E6:S01:T38](../project-management/kanban/epics/epic-06/story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)  
+**Planning for:** [BR-072](../project-management/kanban/fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)  
 **Status:** Published  
 **Created:** 2026-05-12  
 **Version context:** v0.6.1.38+0
@@ -80,7 +80,7 @@ Directly from BR-072 and T38:
 - [ ] **AC4:** Completed tasks removed from `kboard.md` are written to `kanban-completed.md` in the same UKW run
 - [ ] **AC5:** Known test fixtures (`E2:S16:T01` × 2, `E2:S15:T07`) confirmed removed by the fixed UKW
 - [ ] **AC6:** `agents/ukw/AGENTS.md` reflects definition changes
-- [ ] **AC7:** BR-072, T38, Story 001 checklist, `kboard.md`, and `fbuboard.md` are bidirectionally wired *(done at intake)*
+- [ ] **AC7:** BR-072, T38, Story 001 checklist, `kboard.md`, and `kboard.md` are bidirectionally wired *(done at intake)*
 
 ---
 

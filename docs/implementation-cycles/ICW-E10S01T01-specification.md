@@ -1,6 +1,6 @@
 # ICW Specification: E10:S01:T01 - Doc lifecycle expectations baseline
 
-**ICW Instance:** ICW-E10S01T01  
+**ICW Instance:** ICW-E10S1T1  
 **Task:** E10:S01:T01 - Doc lifecycle expectations baseline  
 **Phase:** Specification  
 **Timestamp:** 2026-03-12T11:10:00Z  

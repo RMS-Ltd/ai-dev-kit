@@ -156,7 +156,19 @@ After all four gates pass, create a TODO list for all steps (`rw-step-1` through
 
 Load config. Read current version from `version_file`. Identify completed task from Story file. Determine version bump (EPIC.STORY.TASK+BUILD schema). Update version file. Validate before and after.
 
-**UKW/CMW context detection:** If RW was triggered immediately after UKW or CMW, attribute to the relevant perpetual task and increment BUILD only.
+**🚨 BUILD resolver (BR-097 — run BEFORE writing `version_file`):**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--doc-policy-zero] [--perpetual-same-task]
+```
+
+- Non-zero exit → **RW ABORTED** at Step 2.
+- Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
+- `--doc-policy-zero` only if **user typed it** in trigger AND HEAD BUILD is untagged AND BUILD=0 path.
+
+**FORBIDDEN (BR-097):** Reusing tagged BUILDs; `git tag -f` / `git push -f` / `git push origin +v*` on release tags; inferring `--doc-policy-zero` from docs-only or COMPLETE status; post-ship verification waves with `--doc-policy-zero` (use `RW E:S:T --art`).
+
+**UKW/CMW context detection:** If RW was triggered immediately after UKW or CMW, attribute to the relevant perpetual task, pass `--perpetual-same-task`, and increment BUILD only.
 
 ### Step 3 — Create Detailed Changelog
 
@@ -186,7 +198,7 @@ Update bug report and/or feature request documents tied to this release with fix
 
 ### Step 7 — Scoped Kanban Reconciliation
 
-Self-sufficient scoped reconciliation. Four-surface contract (task doc → FR/BR/UXR doc → `kboard.md` → `fbuboard.md`). RW Step 7 must finish release-scope reconciliation autonomously — no deferred UKW handoff.
+Self-sufficient scoped reconciliation. Four-surface contract (task doc → FR/BR/UXR doc → `kboard.md` → `kboard.md`). RW Step 7 must finish release-scope reconciliation autonomously — no deferred UKW handoff.
 
 Prefer `update_kanban_docs.py` when applicable. Emit "touched surfaces + why" audit report.
 
@@ -204,10 +216,11 @@ git add -A
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict [--requested "<parsed_id>"] [--art]
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py"
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py" --strict [--requested "<parsed_id>"] [--art] [--doc-policy-zero]
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_release_tag_immutability.py" --strict [--journal "<rw_journal_path>"]
 python "packages/frameworks/workflow-mgt/scripts/changelog/check_changelog_size.py"
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_archive_links.py"
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/kboard.md" --after "<kanban_root>/kboard.md" --strict
-python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/fbuboard.md" --after "<kanban_root>/fbuboard.md" --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/kboard.md" --after "<kanban_root>/kboard.md" --strict
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_state_icons.py" --project-root . --strict
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_release_readiness.py"
 ```
@@ -239,6 +252,8 @@ Epic: {epic} | Story: {story} | Task: {task}"
 ```
 
 ### Step 11 — Create Git Tag
+
+**FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Tag collision → **RW ABORTED**; bump BUILD (+1) and re-RW.
 
 Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to determine tags. Create annotated primary tag `v{internal_version}` and SemVer tag `vX.Y.Z` on the same commit.
 

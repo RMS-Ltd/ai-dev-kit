@@ -59,7 +59,7 @@ Implement **FR-067**: after FR-066, achieve **`npm run build` = 0** for the agre
 | **S5** | NF01 | Prefer surgical MDX/link fixes or targeted `exclude` over bulk rewrites. |
 | **S6** | NF02 | Release/changelog language: no unverified “Fixed” claims for corpus triage. |
 
-**Tests:** [`tests/test_portal_fr067_build_triage.py`](../../../../../../tests/test_portal_fr067_build_triage.py) (S2–S4); S1 via [`tests/test_portal_fr065_identity.py`](../../../../../../tests/test_portal_fr065_identity.py) `test_fr065_s9_portal_production_build` + `PORTAL_BUILD_STRICT=1`.
+**Tests:** [`tests/test_portal_fr067_build_triage.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr067_build_triage.py) (S2–S4); S1 via [`tests/test_portal_fr065_identity.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr065_identity.py) `test_fr065_s9_portal_production_build` + `PORTAL_BUILD_STRICT=1`.
 
 ---
 
@@ -72,9 +72,9 @@ Implement **FR-067**: after FR-066, achieve **`npm run build` = 0** for the agre
 ## Evidence
 
 - **`npm run build`:** exit 0 (`portal/`); link check `warn` with documented follow-up in `portal/README.md`.
-- **MDX / placeholders:** broad corpus fixes + [`scripts/escape_mdx_placeholders.py`](../../../../../../scripts/escape_mdx_placeholders.py) for repeatable `{token}` escapes outside fenced code.
+- **MDX / placeholders:** broad corpus fixes + [`scripts/escape_mdx_placeholders.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/escape_mdx_placeholders.py) for repeatable `{token}` escapes outside fenced code.
 - **Triage note:** [`docs/maintenance/docusaurus-corpus-triage-fr-067.md`](../../../../../maintenance/docusaurus-corpus-triage-fr-067.md).
-- **Tests:** [`tests/test_portal_fr067_build_triage.py`](../../../../../../tests/test_portal_fr067_build_triage.py); strict build gate `test_fr065_s9` + `PORTAL_BUILD_STRICT=1`.
+- **Tests:** [`tests/test_portal_fr067_build_triage.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr067_build_triage.py); strict build gate `test_fr065_s9` + `PORTAL_BUILD_STRICT=1`.
 
 ---
 

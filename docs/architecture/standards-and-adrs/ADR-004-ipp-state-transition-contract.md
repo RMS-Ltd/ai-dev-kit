@@ -34,10 +34,10 @@ Multiple incidents recorded in FR-077: tasks found in `TODO` state after IPW com
 **Every IPP (Implementation Plan document) produced by IPW must include two mandatory prescribed steps in its Implementation Plan section (Section 4), regardless of task type:**
 
 **Step 1 (always first):**
-> Transition task `E{epic}:S{story}:T{task}` status from `TODO` to `IN PROGRESS` in task document. Update `Last updated` date.
+> Transition task `E\{epic\}:S\{story\}:T\{task\}` status from `TODO` to `IN PROGRESS` in task document. Update `Last updated` date.
 
 **Final step (always last):**
-> Reconcile task `E{epic}:S{story}:T{task}` status with actual implementation state: if all acceptance criteria are satisfied with evidence → transition to `COMPLETE` and add forensic marker `✅ COMPLETE (v{version})`; if implementation is ongoing → confirm status remains `IN PROGRESS`; if blocked → transition to `BLOCKED` with documented reason. Update `Last updated` date.
+> Reconcile task `E\{epic\}:S\{story\}:T\{task\}` status with actual implementation state: if all acceptance criteria are satisfied with evidence → transition to `COMPLETE` and add forensic marker `✅ COMPLETE (v{version})`; if implementation is ongoing → confirm status remains `IN PROGRESS`; if blocked → transition to `BLOCKED` with documented reason. Update `Last updated` date.
 
 These steps are **executor-prescribed**: IPW (planning) writes them into the plan, but implementation execution runs them. This preserves the FR-077 ownership contract while making compliance automatic for any implementer following the plan.
 

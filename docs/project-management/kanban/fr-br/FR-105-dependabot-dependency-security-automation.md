@@ -39,7 +39,7 @@ Enable **GitHub Dependabot** (security updates + version updates) for **pip** (r
 **In scope**
 
 - Enable **Dependabot security updates** in GitHub repository settings (document steps for maintainer if agent cannot change org settings).
-- Add [`.github/dependabot.yml`](../../../../.github/dependabot.yml) with:
+- Add [`.github/dependabot.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/dependabot.yml) with:
   - **pip** — directory `/` (or documented alternative if monorepo layout requires)
   - **npm** — directory `/portal`
   - Weekly schedule (or team-agreed interval)

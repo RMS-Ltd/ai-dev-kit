@@ -14,7 +14,7 @@ housekeeping_policy: keep
 > **For structured information only, see:** [`kboard.md`](kboard.md)  
 > **For Epic/Story/Task structure, see:** [`kanban-structure.md`](kanban-structure.md)  
 > **For completed tasks, see:** [`kanban-completed.md`](kanban-completed.md)  
-> **For FR/BR/UXR prioritization, see:** [`fbuboard.md`](fbuboard.md)
+> **For FR/BR/UXR inventory, see:** [`intake-structure.md`](intake-structure.md) and [`intake-open-taskless-queue.md`](intake-open-taskless-queue.md)
 
 ---
 
@@ -50,8 +50,9 @@ UKW and RW agents must follow this when updating the board.
 
 ### Active board vs completed ledger (lean MoSCOW)
 
-- **`kboard.md` / `fbuboard.md`:** live work only (`TODO` / `IN PROGRESS` / `IN REVIEW` / `WAITING` / `OPEN` / `PERPETUAL`, plus FBU verification rows where the task is done but the FBU is still OPEN).
-- **`kanban-completed.md` / `fbu-completed.md`:** terminal tasks and FBUs — append here **before** removing rows from the active board (`UKW -c` or UKW Step 6.5–6.6).
+- **`kboard.md`:** sole **active** MoSCOW board — live work only (`TODO` / `IN PROGRESS` / `IN REVIEW` / `WAITING` / `OPEN` / `PERPETUAL`), plus **Verification (V)** band rows where the task is shipped but the FBU is still OPEN ([ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)).
+- **`intake-structure.md` / `intake-open-taskless-queue.md`:** FR/BR/UXR inventory and open ∧ taskless queue (not MoSCOW).
+- **`kanban-completed.md` / `intake-completed.md`:** terminal tasks and FBUs — append here **before** removing rows from the active board (`UKW -c` or UKW Step 6.5–6.6).
 - **Do not** use the active board as an archive log: no multi-line “archived …” footnotes, no `**date:**` release journals between bullets, no `✅ COMPLETE` rows left in MoSCOW after hygiene.
 - **BR-059:** story-checklist gaps do not justify mirroring the entire TODO backlog onto the board; promote or add only in-flight work. See Kanban governance policy § MoSCOW — active board vs completed ledger.
 
@@ -78,7 +79,7 @@ UKW and RW agents must follow this when updating the board.
 
 ### MoSCOW row `Last modified` (UTC)
 
-Each line in **MoSCOW Prioritized In-Progress Tasks** (`kboard.md`) and **MoSCOW Prioritized FR/BR/UXR Items** (`fbuboard.md`) must end with a pipe-delimited field:
+Each line in **MoSCOW Prioritized In-Progress Tasks** (`kboard.md`) and **MoSCOW Prioritized FR/BR/UXR Items** (`kboard.md`) must end with a pipe-delimited field:
 
 `| Last modified: YYYY-MM-DD HH:MM UTC`
 
@@ -86,7 +87,7 @@ Each line in **MoSCOW Prioritized In-Progress Tasks** (`kboard.md`) and **MoSCOW
 - **STRUCTURE hygiene (UKW prune/sort/wiring):** **Do not** change row `Last modified`. Board header `Last Updated` may change.
 - **CONTENT (status/version/substantive row delta):** May update stamp only with linked-source evidence or release-scope manifest (`validate_board_stamp_diff.py`).
 - **Forbidden:** `normalize_board_row_timestamps.py` (removed), manual “set all rows to current UTC”, or hour-bucket homogenization (`17:00` / `18:00` / `19:00` on dozens of rows).
-- **Same convention** on both boards; wired kboard/fbuboard pairs should match when derived from the same source doc.
+- **Same convention** on both boards; wired kboard pairs should match when derived from the same source doc.
 
 ---
 
@@ -124,15 +125,15 @@ Tasks within each MoSCOW section are ordered chronologically, with most recently
 
 ### Required Row Timestamp
 
-Every active MoSCOW row in `kboard.md` and `fbuboard.md` must end with a terminal pipe-delimited timestamp field:
+Every active MoSCOW row in `kboard.md` must end with a terminal pipe-delimited timestamp field:
 
 `| Last modified: YYYY-MM-DD HH:MM UTC`
 
-This is mandatory for human scanability and forensic traceability. RW/UKW must **preserve** existing row stamps on STRUCTURE-only edits. New stamps only via linked-doc derivation or evidenced CONTENT passes — see [board-stamp-authority.md](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md).
+This is mandatory for human scanability and forensic traceability. RW/UKW must **preserve** existing row stamps on STRUCTURE-only edits. New stamps only via linked-doc derivation or evidenced CONTENT passes — see [board-stamp-authority.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md).
 
 ### MoSCOW state icons (UXR-012 / E04:S13:T07; UXR-019 / E04:S13:T08)
 
-Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly one Set A (emoji) icon** immediately before the status token, after the title segment:
+Every active MoSCOW bullet on `kboard.md` must place **exactly one Set A (emoji) icon** immediately before the status token, after the title segment:
 
 ```text
 - **{E:S:T or FR/BR/UXR-id}** – {title} - {emoji} {STATUS} (notes…) | … | Last modified: … UTC
@@ -144,7 +145,7 @@ Every active MoSCOW bullet on `kboard.md` and `fbuboard.md` must place **exactly
 
 - **Hygiene / UKW bookkeeping:** Do not change icons on STRUCTURE-only passes (same class as FR-097 stamp preservation). Update icons only when the **status word** changes substantively.
 
-- **Automation:** `state_icons.py`, `backfill_board_state_icons.py`, and `validate_kanban_state_icons.py` (Gate 9 in `validate_release_readiness.py`). Operator notes: [`state-icons.md`](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md).
+- **Automation:** `state_icons.py`, `backfill_board_state_icons.py`, and `validate_kanban_state_icons.py` (Gate 9 in `validate_release_readiness.py`). Operator notes: [`state-icons.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/state-icons.md).
 
 
 ### E/S/T inline notation (UXR-014 / E04:S19:T09)
@@ -195,7 +196,7 @@ See [`README.md`](README.md) for full structure details and `docs/governance/kan
 
 ## Formatting Governance (E07:S01:T09 / UXR-005)
 
-The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:T09 / UXR-005**, every multi-line MoSCOW bullet must have **exactly one blank line** separating it from adjacent entries (single-line bullets stay contiguous). When updating `kanban-board*.md`, `fbuboard.md`, `kanban-structure.md`, `_index.md`, or related templates:
+The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:T09 / UXR-005**, every multi-line MoSCOW bullet must have **exactly one blank line** separating it from adjacent entries (single-line bullets stay contiguous). When updating `kanban-board*.md`, `kboard.md`, `kanban-structure.md`, `_index.md`, or related templates:
 
 - Insert a blank line between bullets whose description spans more than one visual line.
 - Leave single-line bullets directly adjacent to minimize vertical noise.
@@ -226,7 +227,7 @@ The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:
 - **Board Quick View:** [`_index.md`](_index.md)
 - **Board (MoSCOW Tasks):** [`kboard.md`](kboard.md)
 - **Board (Epic Structure):** [`kanban-structure.md`](kanban-structure.md)
-- **Board (FR/BR/UXR Prioritization):** [`fbuboard.md`](fbuboard.md)
+- **Board (FR/BR/UXR Prioritization):** [`kboard.md`](kboard.md)
 - **Kanban Policy:** `docs/governance/kanban/kanban-governance-policy.md`
 - **Versioning Policy:** `docs/governance/standards/dev-kit-versioning-policy.md`
 
@@ -236,11 +237,11 @@ The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:
 
 The board is organized into five separate documents:
 
-1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Shows all active tasks organized by priority (M/S/C/O/W)
+1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Sole active board: M/S/**V**/C/O/W (includes wired FBUs and **Verification** band per [ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md))
 2. **Epic/Story/Task Structure** (`kanban-structure.md`) - Shows all epics with their status, priority, stories, and links
-3. **FR/BR/UXR Prioritization** (`fbuboard.md`) - Shows all open FRs, BRs, and UXRs organized by priority
-4. **FR/BR/UXR Structure** (`fbu-structure.md`) - Shows complete listings of all FRs, BRs, and UXRs by type
-5. **Rules and Explanations** (`kanban-board-guide.md`) - This document with how-to content and policies
+3. **FR/BR/UXR Structure** (`intake-structure.md`) - Complete listings of all FRs, BRs, and UXRs by type
+4. **Rules and Explanations** (`kanban-board-guide.md`) - This document with how-to content and policies
+5. **`kboard.md`** - Deprecated redirect stub (no active MoSCOW)
 
 The board serves as the parent document to Story documents, providing a comprehensive view of all work items in the project.
 
@@ -248,7 +249,7 @@ The board serves as the parent document to Story documents, providing a comprehe
 
 ## FR/BR/UXR Prioritization Board
 
-The **FR/BR/UXR Prioritization Board** (`fbuboard.md`) provides centralized visibility and prioritization for all open Feature Requests, Bug Reports, and User Experience Research items.
+The **FR/BR/UXR Prioritization Board** (`kboard.md`) provides centralized visibility and prioritization for all open Feature Requests, Bug Reports, and User Experience Research items.
 
 ### Board Sections
 
@@ -269,7 +270,7 @@ The **FR/BR/UXR Prioritization Board** (`fbuboard.md`) provides centralized visi
 
 - Links to individual FR/BR/UXR documents in `/fr-br/` directory
 - Cross-references to associated Kanban tasks when created
-- Completed items move to `fbu-completed.md`
+- Completed items move to `intake-completed.md`
 
 ---
 

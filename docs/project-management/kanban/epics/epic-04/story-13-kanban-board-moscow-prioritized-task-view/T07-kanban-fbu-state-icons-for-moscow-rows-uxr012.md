@@ -18,14 +18,14 @@ housekeeping_policy: keep
 
 **Upstream:** [UXR-012 — Kanban and FBU state icons for MoSCOW rows](../../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
 
-**Planning artifact:** [IPP-E04S13T07 — Kanban and FBU state icons](../../../../../implementation-cycles/IPP-E04S13T07-kanban-fbu-state-icons-moscow-rows.md)
+**Planning artifact:** [IPP-E4S13T7 — Kanban and FBU state icons](../../../../../implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md)
 
 ---
 
 ## Input
 
 - User validated `✅` prefix on COMPLETE task rows improves scanability.
-- Requirement: **all** task and FBU states on `kboard.md` / `fbuboard.md` get a canonical icon.
+- Requirement: **all** task and FBU states on `kboard.md` get a canonical icon.
 - **Editorial decision (2026-05-20):** **Set A (emoji) on boards**; **Set B (Unicode) fallback** where emoji unsupported (see UXR-012 primary → fallback table).
 
 ---
@@ -52,6 +52,6 @@ housekeeping_policy: keep
 ## References
 
 - [UXR-012](../../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
-- [IPP-E04S13T07](../../../../../implementation-cycles/IPP-E04S13T07-kanban-fbu-state-icons-moscow-rows.md)
+- [IPP-E4S13T7](../../../../../implementation-cycles/IPP-E4S13T07-kanban-fbu-state-icons-moscow-rows.md)
 - [kanban-board-guide.md](../../../kanban-board-guide.md)
 - [Story 013](../story-13-kanban-board-moscow-prioritized-task-view.md)

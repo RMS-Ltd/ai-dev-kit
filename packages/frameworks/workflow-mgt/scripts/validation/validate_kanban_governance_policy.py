@@ -11,7 +11,7 @@ Validates that the Kanban governance policy contains the FR-037 required content
 - R06: Policy defines terminal row timestamp format
 
 Also validates active board row compliance:
-- `kboard.md` and `fbuboard.md` MoSCOW rows must end with:
+- `kboard.md` MoSCOW rows must end with:
   `| Last modified: YYYY-MM-DD HH:MM UTC`
 
 Usage:
@@ -175,9 +175,6 @@ def validate_board_timestamp_rows(project_root: Path) -> Tuple[bool, List[str]]:
     errors: List[str] = []
     boards = [
         project_root / "docs/project-management/kanban/kboard.md",
-        project_root / "docs/project-management/kanban/fbuboard.md",
-        project_root / "docs/project-management/kanban/kanban-board.md",
-        project_root / "docs/project-management/kanban/fr-br-uxr-board.md",
     ]
     ts_pattern = re.compile(r"\|\sLast modified:\s\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}\sUTC\s*$")
     for board in boards:

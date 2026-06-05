@@ -106,7 +106,7 @@ housekeeping_policy: keep
 
 
 - [x] **E06:S07:T107 – IDE command whitelist optimization** - ✅ COMPLETE (**v0.6.7.107+3**)
-  - Task: [`T107-ide-command-whitelist-optimization.md`](story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) | [IPP-E06S07T107](../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md) | [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
+  - Task: [`T107-ide-command-whitelist-optimization.md`](story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md) | [IPP-E6S7T107](../../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md) | [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
 
 
 
@@ -132,7 +132,7 @@ housekeeping_policy: keep
   - Task: [`T113-rw-step-12-5-github-release-parser-hardening-br065.md`](story-07-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md) | [BR-065](../../fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
 
 
-- [x] **E06:S07:T114 – Canonical board filename migration (`kboard.md` / `fbuboard.md`)** - ✅ COMPLETE (HIGH, v0.6.7.114+1 — defaults migrated across project + packages; UXR/task/ICW backfilled)
+- [x] **E06:S07:T114 – Canonical board filename migration (`kboard.md`)** - ✅ COMPLETE (HIGH, v0.6.7.114+1 — defaults migrated across project + packages; UXR/task/ICW backfilled)
   - Task: [`T114-canonical-board-filename-migration-kboard-fbuboard.md`](story-07-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md) | [UXR-008](../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
 
@@ -161,9 +161,9 @@ housekeeping_policy: keep
 - RW agent execution, step tracking, release automation policy → **E2:S01** (e.g. T23)
 - Kanban/FBU abstract governance, board naming, intake meta-policy → **E4:S19**
 - IPW publication contract, RW/UKW architectural programs → **E2:S15** (FR-092)
-- Perpetual task placement inventory → **E02:S16:T02** / **IPP-E02S16T01** (defers from FR-087)
+- Perpetual task placement inventory → **E02:S16:T02** / **IPP-E2S16T1** (defers from FR-087)
 
-**Freeze:** New tasks under `E6:S07` require explicit `Default Housing Override Rationale:` until guardrail validator lands (see [E04:S19:T03 report](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md) §6).
+**Freeze:** New tasks under `E6:S07` require explicit `Default Housing Override Rationale:` until guardrail validator lands (see [E04:S19:T03 report](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md) §6).
 
 ---
 
@@ -363,7 +363,7 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 **Deliverables:**
 
-- **Per-Project Reports:** `docs/Analysis/projects/{PROJECT_NAME}-adk-analysis.md` - Comprehensive analysis for each project
+- **Per-Project Reports:** `docs/Analysis/projects/\{PROJECT_NAME\}-adk-analysis.md` - Comprehensive analysis for each project
 - **Synthesis Reports:**
 
   - `docs/Analysis/adk-implementation-analysis-report.md` - Overall analysis report
@@ -396,7 +396,7 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 **Files to Create:**
 
-- `docs/Analysis/projects/{PROJECT_NAME}-adk-analysis.md` (one per project with ADK implementation)
+- `docs/Analysis/projects/\{PROJECT_NAME\}-adk-analysis.md` (one per project with ADK implementation)
 - `docs/Analysis/adk-implementation-analysis-report.md`
 - `docs/Analysis/adk-implementation-patterns.md`
 - `docs/Analysis/adk-drift-analysis.md`

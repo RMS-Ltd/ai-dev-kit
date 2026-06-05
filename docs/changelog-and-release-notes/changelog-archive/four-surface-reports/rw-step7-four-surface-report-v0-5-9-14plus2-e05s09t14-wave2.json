@@ -1,0 +1,99 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 5,
+    "story": 9,
+    "task": 14,
+    "task_id": "E5:S9:T14",
+    "version_string": "v0.5.9.14+2"
+  },
+  "timestamp_utc": "2026-06-05 19:05:00 UTC",
+  "surfaces": {
+    "task_doc": {
+      "name": "task_doc",
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md"
+      ],
+      "touched": true,
+      "changes": [
+        "Wave 2 verification; BR-093 FIXED; evidence linked"
+      ],
+      "notes": []
+    },
+    "fbu_doc": {
+      "name": "fbu_doc",
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md",
+        "docs/project-management/kanban/fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md"
+      ],
+      "touched": true,
+      "changes": [
+        "BR-093 FIXED; BR-091 FIXED (bundled V-band scan)"
+      ],
+      "notes": []
+    },
+    "kboard": {
+      "name": "kboard",
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "touched": true,
+      "changes": [
+        "Pruned E05:S09:T14 V-band row"
+      ],
+      "notes": []
+    }
+  },
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "name": "story_doc",
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md"
+      ],
+      "touched": true,
+      "changes": [
+        "T14 Wave 2 BR-093 closure note"
+      ],
+      "notes": []
+    },
+    "intake_completed": {
+      "name": "intake_completed",
+      "paths": [
+        "docs/project-management/kanban/intake-completed.md"
+      ],
+      "touched": true,
+      "changes": [
+        "Ledger BR-093"
+      ],
+      "notes": []
+    },
+    "ipp": {
+      "name": "ipp",
+      "paths": [
+        "docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md"
+      ],
+      "touched": true,
+      "changes": [
+        "§8 Wave 2 ledger complete"
+      ],
+      "notes": []
+    }
+  },
+  "stamp_evidence": {
+    "evidence_mode": "structure_prune",
+    "manifest": "rw-step7-structure-prune-v0-5-9-14plus2-e05s09t14-wave2.json"
+  },
+  "summary": {
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": [],
+    "total_changes": 6,
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 45
+  }
+}

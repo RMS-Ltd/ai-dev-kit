@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E5:S01:T56 — Planning: Standardize Packaged Workflow Documentation and Instructions
 
-**Host Task:** [`T56-standardize-packaged-workflow-documentation-and-instructions.md`](../docs/project-management/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md) **(E5:S01:T56)**
-**Planning for:** [FR-056](../docs/project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md)
+**Host Task:** [`T56-standardize-packaged-workflow-documentation-and-instructions.md`](../project-management/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md) **(E5:S01:T56)**
+**Planning for:** [FR-056](../project-management/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md)
 **Status:** Approved
 
 > **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/project-management/kanban/fr-br/`).

@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [FR-109](../../../fr-br/FR-109-ukw-lean-active-board-contract.md)
-- UKW lean-board hygiene (2026-06-04): pruned `kboard.md` / `fbuboard.md`, ledger append
+- UKW lean-board hygiene (2026-06-04): pruned `kboard.md`, ledger append
 - Agent SoT: `kanban-governance-policy.md`, `update-kanban-workflow-agent-execution.md`, `.cursor/skills/ukw-sync`
 
 ---
@@ -50,5 +50,5 @@ Ship **`validate_active_kanban_board.py`**, pre-commit + RW Gate 11, UKW dual-so
 ## References
 
 - [FR-109](../../../fr-br/FR-109-ukw-lean-active-board-contract.md)
-- [ukw-dual-source-parity.md](../../../../packages/frameworks/workflow-mgt/docs/ukw-dual-source-parity.md)
+- [ukw-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages%2Fframeworks%2Fworkflow-mgt%2Fdocs%2Fukw-dual-source-parity.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_active_kanban_board.py`

@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E1:S04:T06 (initial bootstrap); **FR-082 / E6:S09:T03** (2026-05-28 canonical org correction)  
 **ADR:** [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)  
-**Script:** [`scripts/fr099_bootstrap_public_ai_dev_kit.sh`](../../scripts/fr099_bootstrap_public_ai_dev_kit.sh)
+**Script:** [`scripts/fr099_bootstrap_public_ai_dev_kit.sh`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/fr099_bootstrap_public_ai_dev_kit.sh)
 
 ## Bootstrap decision (ADR-006 open question)
 

@@ -11,7 +11,7 @@
 
 ## Changes
 
-- **Wave 1 spec lock** in [`INSTALL_IN_YOUR_PROJECT.md`](../../../../INSTALL_IN_YOUR_PROJECT.md) for FR-080/T01.
+- **Wave 1 spec lock** in [`INSTALL_IN_YOUR_PROJECT.md`](../https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) for FR-080/T01.
 - Updated **T01 progress** to record Wave 1 completion and traceability to IPW decisions.
 - Version/changelog/board surfaces advanced to **v0.6.9.1+3 / v0.4.749+3**.
 

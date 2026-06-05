@@ -360,7 +360,7 @@ class Gate7FourSurfaceParityTests(unittest.TestCase):
 
     def _baseline_report_payload(self, root: Path) -> dict:
         kboard = root / "docs/project-management/kanban/kboard.md"
-        fbuboard = root / "docs/project-management/kanban/fbuboard.md"
+        fbuboard = root / "docs/project-management/kanban/kboard.md"
         task_doc = root / "docs/project-management/kanban/task.md"
         fbu_doc = root / "docs/project-management/kanban/fbu.md"
         for p in (kboard, fbuboard, task_doc, fbu_doc):

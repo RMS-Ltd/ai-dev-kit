@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.15.7+9
 
 **Upstream:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
-**IPP:** [`IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md`](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+**IPP:** [`IPP-E2S15T7-canonical-rw-ukw-kanban-consistency-program.md`](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 **Supersedes (this task absorbs):**
 
@@ -36,7 +36,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- User-articulated outcome drift after `RW E02:S15:T04 --art`: live `kboard.md` / `fbuboard.md` retained BR-069-class symptoms despite T04 sign-off, T03 (FR-089 IMPLEMENTED) closure, and T05 Phase-4 evidence asserting AC1-AC6 satisfied.
+- User-articulated outcome drift after `RW E02:S15:T04 --art`: live `kboard.md` retained BR-069-class symptoms despite T04 sign-off, T03 (FR-089 IMPLEMENTED) closure, and T05 Phase-4 evidence asserting AC1-AC6 satisfied.
 - Open contract FRs (FR-091 / FR-090 / FR-084) with overlapping ownership and unreleased state.
 - Gated dependent reports (BR-069 / BR-070 / UXR-009) lacking a single program owner for cross-cutting outcome.
 - Already-implemented predecessor FBUs (FR-038 / FR-040 / FR-015 / FR-089 / FR-076 / BR-036 / BR-062 / BR-042 / UXR-006) requiring drift assessment vs canonical outcome.
@@ -83,11 +83,11 @@ The 16 atomic issues from FR-092 are owned here, organized into eight execution 
 ## Acceptance Criteria
 
 - [x] **AC1 (Bucket A):** All architectural gaps (A1-A5) codified in `.cursorrules` + `release-workflow-agent-execution.md` + `kanban-governance-policy.md` + IPW governance, with consistent "what/why" narrative for RW preventive vs UKW corrective ownership. *(Wave 2 + Wave 5 + Wave 6; release-readiness Gate 1 verifies cross-doc parity on every release; IPW cross-link is INFO-level)*
-- [x] **AC2 (Bucket B):** Each drift item (B1-B4) is reproduced on canonical fixtures, root-caused, fixed in code, and the fix is proven on live `kboard.md` + `fbuboard.md` (not just unit fixtures). *(Wave 4 B1 regex fix; Test 4.20; live sweep evidence in `fr092-wave4-corpus-sweep-evidence.md`; Wave 8 live re-sweep `rows_changed=0` across all boards)*
+- [x] **AC2 (Bucket B):** Each drift item (B1-B4) is reproduced on canonical fixtures, root-caused, fixed in code, and the fix is proven on live `kboard.md` + `kboard.md` (not just unit fixtures). *(Wave 4 B1 regex fix; Test 4.20; live sweep evidence in `fr092-wave4-corpus-sweep-evidence.md`; Wave 8 live re-sweep `rows_changed=0` across all boards)*
 - [x] **AC3 (Bucket C):** Preventive gates (C1-C5) implemented; RW commit is blocked when any gate fails; "touched surfaces + why" report emitted to changelog archive. *(Waves 5+6+7; Wave 8 live demonstration: readiness gate exit 1 with Gate 5 correctly identifying 12 unstaged Step-7 outputs and refusing to allow commit — exact BR-070 contract)*
 - [x] **AC4 (Bucket D):** Each predecessor (D1-D9) has an explicit evidence link in the FR-092 traceability matrix; BR-042 is closed as duplicate of FR-090. *(Wave 1 IPP §5 matrix; Gate 2 verifies on every release)*
-- [x] **AC5 (Corpus sweep):** Retroactive corpus normalization is run once over `kboard.md` and `fbuboard.md`; the resulting boards show zero duplicate tail tokens and zero synthetic stamp churn (verified by `validate_release_readiness.py` Gate 4). *(Wave 4 + Wave 8: live `run_corpus_canonical_sweep(non_substantive)` returns `clean (idempotent)` for all 4 boards; `stamps_appended_with_evidence=0`, `stamps_preserved_existing=109`)*
-- [x] **AC6 (Supersede chain):** T02/T05/T06 marked SUPERSEDED with redirect; FR-091/FR-090/FR-084 banner-superseded; BR-069/BR-070/UXR-009 closure gated on FR-092 sign-off; Story 015 checklist + `kboard.md` + `fbuboard.md` updated. *(Wave 0; Gate 2 verified live; kboard/fbuboard updates will be re-stamped by the live RW E02:S15:T07 --art that closes this task)*
+- [x] **AC5 (Corpus sweep):** Retroactive corpus normalization is run once over `kboard.md`; the resulting boards show zero duplicate tail tokens and zero synthetic stamp churn (verified by `validate_release_readiness.py` Gate 4). *(Wave 4 + Wave 8: live `run_corpus_canonical_sweep(non_substantive)` returns `clean (idempotent)` for all 4 boards; `stamps_appended_with_evidence=0`, `stamps_preserved_existing=109`)*
+- [x] **AC6 (Supersede chain):** T02/T05/T06 marked SUPERSEDED with redirect; FR-091/FR-090/FR-084 banner-superseded; BR-069/BR-070/UXR-009 closure gated on FR-092 sign-off; Story 015 checklist + `kboard.md` + `kboard.md` updated. *(Wave 0; Gate 2 verified live; kboard updates will be re-stamped by the live RW E02:S15:T07 --art that closes this task)*
 - [x] **AC7 (Sign-off RW dry-run):** Final dry-run produces a clean four-surface diff with audit report; live boards remain canonical post-sweep; readiness gate fixture demonstrates end-to-end PASS for Gates 1-4, 6, 7 and BLOCK for Gate 5 against unstaged work (which is the contracted behavior — Step 8 stages, then Gate 5 must pass). FR-092 implementation-complete. BR-069/BR-070/UXR-009 ACs proved satisfied (see their own gating notes); their final closure remains scoped to the live RW E02:S15:T07 --art that publishes this task.
 
 ---
@@ -103,7 +103,7 @@ The 16 atomic issues from FR-092 are owned here, organized into eight execution 
 - [UXR-009 (gated)](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [FR-089 (predecessor + B2 drift)](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [FR-038 (predecessor)](../../../fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
-- [FR-076 (predecessor)](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency.md)
+- [FR-076 (predecessor)](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [BR-042 (close as duplicate)](../../../fr-br/BR-042-ukw-agent-board-cleanup-failure.md)
 - [Story 015](../story-15-ipw-governance-and-publication-contract.md)
-- [IPP-E02S15T07](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+- [IPP-E2S15T7](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)

@@ -4812,26 +4812,6 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "project-management/kanban/ukw-changes-summary-2026-01-05.md",
-      "size": 2345,
-      "words": 327,
-      "lifecycle": null,
-      "created_at": null,
-      "ttl_days": null,
-      "expires_at": null,
-      "housekeeping_policy": null
-    },
-    {
-      "path": "project-management/kanban/ukw-changes-summary.md",
-      "size": 3346,
-      "words": 430,
-      "lifecycle": null,
-      "created_at": null,
-      "ttl_days": null,
-      "expires_at": null,
-      "housekeeping_policy": null
-    },
-    {
       "path": "project-management/rituals/README.md",
       "size": 396,
       "words": 31,
@@ -5318,8 +5298,6 @@
       "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-dual-versioning-package-audit-report.md",
       "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-package-versioning-agentic-approach.md",
       "project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T08-package-versioning-guardrails-discussion.md",
-      "project-management/kanban/ukw-changes-summary-2026-01-05.md",
-      "project-management/kanban/ukw-changes-summary.md",
       "vibe-coding-for-dummies-outline-and-sample.md"
     ],
     "expired_paths": [

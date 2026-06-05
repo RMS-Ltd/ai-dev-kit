@@ -131,13 +131,13 @@ When IPW or implementation execution mutates substantive task fields (status, AC
 1. **Task doc** — host task plus directly affected child tasks.
 2. **Source FR / BR / UXR doc(s)** — bidirectional links and status mirroring.
 3. **`kboard.md`** — canonical row(s) for the release-scope task(s); active-row hygiene; canonical row tail grammar (no duplicate tokens).
-4. **`fbuboard.md`** — canonical row(s) for the release-scope FBU(s); supersede / gating / closure markers; canonical row tail grammar (no duplicate tokens).
+4. **`kboard.md`** — canonical row(s) for the release-scope FBU(s); supersede / gating / closure markers; canonical row tail grammar (no duplicate tokens).
 
 **Properties (FR-092):**
 
 - **Idempotent.** Re-running reconciliation on already-clean surfaces is a no-op.
 - **Deterministic.** Output is fully determined by input state (no nondeterministic ordering).
-- **Ordered.** Host task -> source FBU -> `kboard.md` -> `fbuboard.md`.
+- **Ordered.** Host task -> source FBU -> `kboard.md` -> `kboard.md`.
 - **Atomic at session level.** No split-brain task-doc vs board status.
 - **Auditable.** A "touched surfaces + why" report is emitted by RW Step 7 covering the release slice.
 

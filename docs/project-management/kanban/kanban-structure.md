@@ -267,17 +267,17 @@ housekeeping_policy: keep
 **Stories:**
 
 - [x] **E6:S01 – Framework Version Management** - COMPLETE (v0.6.1.5+1 – All tasks complete: Framework versioning strategy, release processes, compatibility tracking, dependency architecture, and version tagging strategy)
-  - Story: [`epics/epic-06/story-01-framework-version-management.md`](epics/epic-06/story-01-framework-version-management.md)
+  - Story: [`epics/epic-06/story-02-versioning-cookbook-and-examples.md`](epics/epic-03/story-02-versioning-cookbook-and-examples.md)
   - Tasks: T01 COMPLETE (v0.6.1.1+1), T02 COMPLETE (v0.6.1.2+1), T03 COMPLETE (v0.6.1.3+1), T04 COMPLETE (v0.6.1.1+2), T05 COMPLETE (v0.6.1.5+1)
 
 
 - [x] **E6:S02 – Framework Update and Migration** - COMPLETE (v0.6.2.3+1 – All active tasks complete: Framework update procedures, migration guide, backward compatibility policy, and auto-update mechanisms)
-  - Story: [`epics/epic-06/story-02-framework-update-and-migration.md`](epics/epic-06/story-02-framework-update-and-migration.md)
+  - Story: [`epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md`](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md)
   - Tasks: T01 COMPLETE (v0.6.2.1+1 - Framework update procedures), T02 COMPLETE (v0.6.2.2+1 - Framework migration guide), T03 COMPLETE (v0.6.2.3+1 - Framework backward compatibility policy), T05 COMPLETE (v0.6.2.5+1 - Framework auto-update mechanisms), T04 SUPERSEDED (by E6:S07)
 
 
 - [x] **E6:S03 – Framework Health Monitoring** - COMPLETE (v0.6.3.3+1 – All tasks complete: Framework health metrics defined, monitoring tools implemented, dashboard built)
-  - Story: [`epics/epic-06/story-03-framework-health-monitoring.md`](epics/epic-06/story-03-framework-health-monitoring.md)
+  - Story: [`epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md`](epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
   - Tasks: T01 COMPLETE (v0.6.3.1+1 - Framework health metrics), T02 COMPLETE (v0.6.3.2+1 - Framework health monitoring tools), T03 COMPLETE (v0.6.3.3+1 - Framework health dashboard)
 
 
@@ -431,7 +431,7 @@ housekeeping_policy: keep
 - [ ] **E10:S02 – Document Lifecycle Package Installation Evaluation** - TODO (v0.10.2.0+0)
   - Story: [`epics/epic-10/story-02-document-lifecycle-package-installation-evaluation.md`](epics/epic-10/story-02-document-lifecycle-package-installation-evaluation.md)
 
-**Epic Doc:** [`epics/epic-10/epic-10.md`](epics/epic-10/epic-10.md)
+**Epic Doc:** [`epics/epic-10/Epic-10.md`](epics/epic-10/Epic-10.md)
 
 ---
 
@@ -450,7 +450,7 @@ housekeeping_policy: keep
 - [ ] **E11:S02 – Debug Path Package Installation Evaluation** - TODO (v0.11.2.0+0)
   - Story: [`epics/epic-11/story-02-debug-path-package-installation-evaluation.md`](epics/epic-11/story-02-debug-path-package-installation-evaluation.md)
 
-**Epic Doc:** [`epics/epic-11/epic-11.md`](epics/epic-11/epic-11.md)
+**Epic Doc:** [`epics/epic-11/Epic-11.md`](epics/epic-11/Epic-11.md)
 
 ---
 
@@ -480,6 +480,6 @@ housekeeping_policy: keep
   - Story: [`epics/epic-21/story-03-cultural-adaptation.md`](epics/epic-21/story-03-cultural-adaptation.md)
   - Tasks: T01-T07 TODO
 
-**Epic Doc:** [`epics/epic-21/epic-21.md`](epics/epic-21/epic-21.md)
+**Epic Doc:** [`epics/epic-21/Epic-21.md`](epics/epic-21/Epic-21.md)
 
 ---

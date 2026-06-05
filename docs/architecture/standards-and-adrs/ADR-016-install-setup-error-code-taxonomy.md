@@ -87,5 +87,5 @@ Future processes require ADR update or FR intake.
 
 ## References
 
-- [install-error-codes.yaml](../../../packages/frameworks/workflow-mgt/config/install-error-codes.yaml)
-- [adk_install_errors.py](../../../packages/frameworks/workflow-mgt/scripts/adk_install_errors.py)
+- [install-error-codes.yaml](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/install-error-codes.yaml)
+- [adk_install_errors.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/adk_install_errors.py)

@@ -52,17 +52,17 @@ None
 | Source | Role | Notes |
 |--------|------|--------|
 | **Root `pyproject.toml`** | — | **Absent.** Packaging uses `setup.py` only. |
-| **[`setup.py`](../../../../../../setup.py)** | Published `ai-dev-kit` package | `install_requires`: `pyyaml>=6.0` only. `extras_require["dev"]`: pytest, pytest-cov, pytest-mock, black, flake8, mypy. `python_requires>=3.8`. |
-| **[`requirements.txt`](../../../../../../requirements.txt)** | Repo / contributor install | `pyyaml`, `markdownlint-cli2`, `click`, `requests`. Dev tools commented out. **Drift:** `click` not used by `cli/` (stdlib `argparse`). `requests` used by workflow scripts under `packages/frameworks/workflow-mgt/scripts/` (e.g. `create_github_release.py`), not the published CLI package. |
-| **[`tests/requirements.txt`](../../../../../../tests/requirements.txt)** | CI/local tests | `pytest`, `pytest-cov`, `pytest-mock` — aligns with [`pytest.ini`](../../../../../../pytest.ini) and `setup.py` dev extras (versions may differ slightly; acceptable). |
+| **[`setup.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/setup.py)** | Published `ai-dev-kit` package | `install_requires`: `pyyaml>=6.0` only. `extras_require["dev"]`: pytest, pytest-cov, pytest-mock, black, flake8, mypy. `python_requires>=3.8`. |
+| **[`requirements.txt`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/requirements.txt)** | Repo / contributor install | `pyyaml`, `markdownlint-cli2`, `click`, `requests`. Dev tools commented out. **Drift:** `click` not used by `cli/` (stdlib `argparse`). `requests` used by workflow scripts under `packages/frameworks/workflow-mgt/scripts/` (e.g. `create_github_release.py`), not the published CLI package. |
+| **[`tests/requirements.txt`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/requirements.txt)** | CI/local tests | `pytest`, `pytest-cov`, `pytest-mock` — aligns with [`pytest.ini`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/pytest.ini) and `setup.py` dev extras (versions may differ slightly; acceptable). |
 | **Lockfile** | — | No `requirements.lock` / `poetry.lock`; optional hardening for a future FR. |
 
 **CLI runtime:** `cli/` uses `yaml` (PyYAML) and stdlib only — consistent with `setup.py` `install_requires`.
 
 ### Test suite status
 
-- **Config:** [`pytest.ini`](../../../../../../pytest.ini) — `testpaths=tests`, `--cov=cli`, markers `unit` / `integration` / etc.
-- **Run:** `python3 -m pytest tests/` — **92 collected**, **85 passed**, **7 failed** (after **tests/test_validation.py** was rewritten to match current [`cli/validation.py`](../../../../../../cli/validation.py); prior revision imported non-existent `validate_version` and assumed boolean APIs).
+- **Config:** [`pytest.ini`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/pytest.ini) — `testpaths=tests`, `--cov=cli`, markers `unit` / `integration` / etc.
+- **Run:** `python3 -m pytest tests/` — **92 collected**, **85 passed**, **7 failed** (after **tests/test_validation.py** was rewritten to match current [`cli/validation.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/cli/validation.py); prior revision imported non-existent `validate_version` and assumed boolean APIs).
 - **Coverage (terminal):** ~35% total on `cli/` (reported by pytest-cov); backends and several commands lightly covered.
 
 **Failure buckets (detail in [BR-058](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)):**
@@ -76,7 +76,7 @@ None
 
 | Workflow | Triggers | Notes |
 |----------|----------|--------|
-| [`fr-br-intake.yml.DISABLED`](../../../../../../.github/workflows/fr-br-intake.yml.DISABLED) | *(disabled)* Was issues-only; GitHub fired on push (BR-053). | Reference YAML only; not active. |
+| [`fr-br-intake.yml.DISABLED`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/fr-br-intake.yml.DISABLED) | *(disabled)* Was issues-only; GitHub fired on push (BR-053). | Reference YAML only; not active. |
 | *(removed)* ~~`update-badges.yml`~~ | — | **E05:S01:T69 / FR-064:** workflow **deleted** (BYOB / `shields`); see [T69](../../epic-05/story-01-fr-repo/T69-shields-branch-private-repo-fr-064.md). |
 
 ### Build / release scripts (spot review)

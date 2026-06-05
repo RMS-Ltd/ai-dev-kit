@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-05 (v0.7.7.3+1 — **T03 / BR-091** fix attempted)
+**Last updated:** 2026-06-05 (v0.7.7.3+1 — **T03 / BR-091** FIXED; CI verified)
 **Version:** v0.7.7.3+1
 
 ---
@@ -21,17 +21,17 @@ housekeeping_policy: keep
 
 - [x] **E07:S07:T01 – Comprehensive workflow machinery code review** - ✅ COMPLETE (v0.7.7.1+1 — machinery review report; 0 Critical / 3 High findings) ([FR-107](../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md))
   - Task Doc: [`T01-comprehensive-workflow-machinery-code-review.md`](story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md)
-  - IPP: [`IPP-E07S07T01-workflow-machinery-code-review.md`](../../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
+  - IPP: [`IPP-E7S7T1-workflow-machinery-code-review.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E7S7T1-workflow-machinery-code-review.md)
   - Report: [`T01-workflow-machinery-code-review-report.md`](story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 
 - [x] **E07:S07:T02 – CI pytest gate for workflow scripts (H1)** - ✅ COMPLETE (v0.7.7.2+1 — GitHub Actions + 103-test curated suite)
   - Task Doc: [`T02-ci-pytest-gate-for-workflow-scripts.md`](story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md)
-  - IPP: [`IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md`](../../../../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
+  - IPP: [`IPP-E7S7T2-ci-pytest-gate-for-workflow-scripts.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E7S7T2-ci-pytest-gate-for-workflow-scripts.md)
   - Source: [T01 report H1](story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 
-- [x] **E07:S07:T03 – Workflow validator slug path resolution ([BR-091](../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md))** — ✅ COMPLETE (v0.7.7.3+1 — slug resolver + pytest 105/105; CI pending)
+- [x] **E07:S07:T03 – Workflow validator slug path resolution ([BR-091](../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md))** — ✅ COMPLETE (v0.7.7.3+1 — BR-091 **FIXED**; CI + local pytest verified)
   - Task Doc: [`T03-workflow-validator-slug-path-resolution-br091.md`](story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md)
-  - IPP: [`IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md`](../../../../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
+  - IPP: [`IPP-E7S7T3-workflow-validator-slug-path-resolution-br091.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E7S7T3-workflow-validator-slug-path-resolution-br091.md)
 
 > **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`  
@@ -47,7 +47,7 @@ Home for **subsystem code review execution** — one task per substantive review
 
 - **Story** — backlog of reviews and shared output contract (inventory, severity matrix, remediation handoff).
 - **Task** — one scoped review (analysis-only; implementation spawns follow-on tasks / FRs with IPP per [FR-083](../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
-- **Domain RC stories** (e.g. [E02:S13](../../epic-02/story-13-workflow-management-package-implementation-review.md)) may **consume** review outputs as sign-off gates without hosting the review task.
+- **Domain RC stories** (e.g. [E02:S13](../epic-02/story-13-workflow-management-package-implementation-review.md)) may **consume** review outputs as sign-off gates without hosting the review task.
 
 ---
 

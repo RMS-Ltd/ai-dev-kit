@@ -26,12 +26,12 @@ This guide explains how to integrate AI Dev Kit frameworks into existing project
 - This guide primarily supports **integration / migration** flows for existing repositories.
 - For the canonical **greenfield first-run** sequence (FR-080 / E6:S09:T01), use:
   - [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
-  - [IPW-E6S09T01 planning package](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+  - [IPW-E6S9T1 planning package](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 - Brownfield canonical entry:
   - [`INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
   - [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
   - [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
-  - [IPP-E6S09T02](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+  - [IPP-E6S9T2](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 
 **Use Cases:**
 - Migrating existing projects from copy-paste to dependencies
@@ -41,8 +41,7 @@ This guide explains how to integrate AI Dev Kit frameworks into existing project
 
 ---
 
-## Migration from copy-paste to dependencies {#migration-from-copy-paste}
-
+## Migration from copy-paste to dependencies
 ### Assessment
 
 **1. Identify Current Framework Usage:**
@@ -423,15 +422,15 @@ pipeline {
 
 ## Multiple Framework Management
 
-### Selective framework adoption {#selective-framework-adoption}
+### Selective framework adoption
 
 Adopt frameworks incrementally (existing projects or trimmed templates). See [Use Case 4](framework-dependency-use-cases.md#use-case-4-existing-project--some-packages) in the Use Cases guide.
 
-### Monorepo integration {#monorepo-integration}
+### Monorepo integration
 
 Centralize installs and updates for multiple packages. See [Use Case 6](framework-dependency-use-cases.md#use-case-6-monorepomulti-project-setup).
 
-### Gradual adoption {#gradual-adoption}
+### Gradual adoption
 
 Add frameworks over time or finish migrating from copy-paste. See [Use Case 7](framework-dependency-use-cases.md#use-case-7-gradualmigratory-adoption).
 

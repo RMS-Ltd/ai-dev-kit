@@ -1,6 +1,6 @@
 # ICW Specification: E11:S01:T01 - Debug path expectations baseline
 
-**ICW Instance:** ICW-E11S01T01  
+**ICW Instance:** ICW-E11S1T1  
 **Task:** E11:S01:T01 - Debug path expectations baseline  
 **Phase:** Specification  
 **Timestamp:** 2026-03-12T11:15:00Z  

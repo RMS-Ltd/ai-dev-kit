@@ -102,7 +102,7 @@ Close the BR-066 backlog slice left after Phase 1 (contract + single-task valida
 
 | Action | Path |
 | ------ | ---- |
-| **CREATE** | `docs/implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md` (this file) |
+| **CREATE** | `docs/implementation-cycles/IPP-E2S15T1-br066-publication-backfill-phase2.md` (this file) |
 | **UPDATE** | `docs/implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md` |
 | **UPDATE** | `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
 | **UPDATE** | Host task docs / story anchors for inventory items (see inventory Phase 2 table) |
@@ -147,6 +147,6 @@ Close the BR-066 backlog slice left after Phase 1 (contract + single-task valida
 
 - [BR-066](../project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
 - [T01 host task](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)
-- [Phase 1 inventory](./IPW-PUBLICATION-BACKFILL-INVENTORY.md)
-- [ICW E02:S15:T01 package](./ICW-E2S15T01-specification.md)
-- [Portal FR-066 scope](../../portal/README.md)
+- [Phase 1 inventory](IPW-PUBLICATION-BACKFILL-INVENTORY.md)
+- [ICW E02:S15:T01 package](ICW-E2S15T01-test-design.md)
+- [Portal FR-066 scope](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md)

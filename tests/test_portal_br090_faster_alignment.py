@@ -82,3 +82,47 @@ def test_br090_t6_readme_faster_note():
     text = README_PATH.read_text(encoding="utf-8").lower()
     assert "@docusaurus/faster" in text
     assert "future.v4" in text or "future v4" in text or "v4 future" in text
+
+
+CHEATSHEET_PATH = REPO_ROOT / "docs/guides/workflow-initiation-cheatsheet.md"
+GITHUB_BLOB_PREFIX = "github.com/RMS-Ltd/ai-dev-kit/blob/main/"
+OUT_OF_PLUGIN_BANNED_PREFIXES = (
+    "](../../.claude/",
+    "](../../.cursorrules",
+    "](../../CLAUDE.md",
+    "](../../rw-config",
+    "](../../.cursor/",
+    "](../../../.claude/",
+    "](../../../.cursorrules",
+)
+
+
+def test_br090_t8_cheatsheet_out_of_plugin_ban():
+    """T8 — cheatsheet has no out-of-docs relative link targets (BR-068 Wave 2)."""
+    text = CHEATSHEET_PATH.read_text(encoding="utf-8")
+    for prefix in OUT_OF_PLUGIN_BANNED_PREFIXES:
+        assert prefix not in text, f"Found banned out-of-plugin pattern: {prefix}"
+
+
+def test_br090_t9_cheatsheet_strategy_a_blob_links():
+    """T9 — cheatsheet agent/command deep links use GitHub blob URLs."""
+    text = CHEATSHEET_PATH.read_text(encoding="utf-8")
+    assert GITHUB_BLOB_PREFIX in text
+    assert f"{GITHUB_BLOB_PREFIX}.cursorrules" in text
+    assert f"{GITHUB_BLOB_PREFIX}.claude/commands/rw.md" in text
+
+
+def test_br090_t10_portal_production_build_gate():
+    """T10 — PORTAL_BUILD_STRICT=1 production build passes (delegates to FR-065 S9)."""
+    from tests.test_portal_fr065_identity import test_fr065_s9_portal_production_build
+
+    test_fr065_s9_portal_production_build()
+
+
+def test_br090_t11_wave1_regression_t1_t6(package_manifest: dict, lock_manifest: dict):
+    """T11 — Wave 1 T1–T6 contracts still hold."""
+    test_br090_t1_faster_dependency(package_manifest)
+    test_br090_t2_version_homogeneity(package_manifest)
+    test_br090_t3_lockfile_alignment(package_manifest, lock_manifest)
+    test_br090_t4_v4_flag_preserved()
+    test_br090_t6_readme_faster_note()

@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Upstream (historical):** [FR-091 — RW Step 7 self-sufficient scoped kanban reconciliation without UKW dependency](../../../fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)  
 **Current owner:** [E02:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
-**Current IPP:** [IPP-E02S15T07](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+**Current IPP:** [IPP-E2S15T7](../../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 > **Supersede note (2026-04-27):** RW Step 7 self-sufficiency contract (FR-091) is absorbed into FR-092 (Bucket A1-A5 + Wave 2). All open ACs below remain authoritative for traceability; execution has moved to T07. Do not run RW against T06 — release this scope under T07 instead.
 

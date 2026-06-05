@@ -33,8 +33,8 @@ Implement [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decisio
 ## Input
 
 - [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
-- [IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md)
-- [ipw-adr-necessity-checklist.md](../../../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
+- [IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)
+- [ipw-adr-necessity-checklist.md](../../../../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [FR-096](../../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
 - [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
 
@@ -61,7 +61,7 @@ Shipped: policy SoT, `ipw.md` Phase 5.0/9, `PLAN_DOC_TEMPLATE.md` §2.5, KB guid
 ## References
 
 - [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
-- [IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E02S16T12-ipw-adr-necessity-checklist-fr100.md)
+- [IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
 
 ## Planning artifacts (publication)

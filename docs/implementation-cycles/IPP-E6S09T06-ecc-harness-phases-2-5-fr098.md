@@ -24,7 +24,7 @@ housekeeping_policy: keep
 | ID | Requirement | Source (FR/BR/Task) |
 | -- | ----------- | ------------------- |
 | RF1 | Optional ECC install step in **greenfield** path (FR-080) and **brownfield** guidance (FR-081); clearly non-blocking for ADK-only adopters | FR-098-F5, T06 AC Phase 2 |
-| RF2 | Bridge workflow: copy [`ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template) → project-root `ecc-adk-bridge.yaml`; pin `ecc_version_pin`; document `minimal` vs `core` profile naming | FR-098-F3, spec §7–§8 |
+| RF2 | Bridge workflow: copy [`ecc-adk-bridge.yaml.template`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template) → project-root `ecc-adk-bridge.yaml`; pin `ecc_version_pin`; document `minimal` vs `core` profile naming | FR-098-F3, spec §7–§8 |
 | RF3 | Validate bridge fields including `adk_skill_pack_path` alignment with T05 skill pack | T05 validator, RF2 |
 | RF4 | Hook defaults: `hook_profile: minimal`, hooks-off install discipline; populate `disabled_hooks` from Phase 0 conflict-resolve (RW/git) | spec §8, Phase 0 eval |
 | RF5 | Document SessionStart context hook and **advisory** pre-RW quality gate (ECC hooks do not replace ADK validators) | Roadmap phase 3, T06 |
@@ -50,7 +50,7 @@ housekeeping_policy: keep
 ### 1.3 Invariants and boundaries
 
 - **Invariants:** ADK owns RW/UKW/IPW/git/version/Kanban; ECC defers per `conflict_rules` in bridge template; T05 `adk-*` skills remain authoritative workflow surface.
-- **In scope:** Phases 2–5 per [integration spec §10](../../docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md); ordered waves in one task (**T06**).
+- **In scope:** Phases 2–5 per [integration spec §10](../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md); ordered waves in one task (**T06**).
 - **Out of scope:** Re-shipping Phase 1 skills; ECC Pro; mandatory ECC; replacing blocking RW Step 9 validators; live `npx ecc-install` in CI without opt-in gate; **full ECC overlay on canonical `RMS-Ltd/ai-dev-kit-book` `dev`** (framework source — dry-run only there).
 - **Post-delivery (Wave E):** Real **`ecc-install --execute`** and adopter feedback on **new public** `RMS-Ltd/ai-dev-kit` after FR-099 genesis — see §8.
 
@@ -75,7 +75,7 @@ Enable adopters to **optionally** install ECC alongside ADK with a validated bri
 ### 2.3 Constraints
 
 - Installer step must not block [T01 FR-080](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) acceptance.
-- Brownfield path references [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) optional surfaces only.
+- Brownfield path references [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) optional surfaces only.
 - kboard MoSCOW rows must avoid bare `COMPLETE` token in row text (UKW prune); use “Phase 1 shipped” wording for T05 references.
 - ECC profile pin must match documented package (`minimal` on GitHub rc vs `core` on npm 1.10.0 — spec §8).
 
@@ -84,12 +84,12 @@ Enable adopters to **optionally** install ECC alongside ADK with a validated bri
 - **Current task status:** `COMPLETE` (**v0.6.9.6+3**)
 - **Transition trigger to IN PROGRESS:** First non-planning implementation change (Wave A file creation or script) — done at **v0.6.9.6+2**.
 - **Transition trigger to COMPLETE:** All T06 acceptance criteria satisfied with validator/pytest PASS and dogfood checklist recorded — done at **v0.6.9.6+3**.
-- **Atomic propagation requirement:** Task doc status and kboard/fbuboard row for **E6:S09:T06** update in same RW Step 7 session — done (T06/FR-098 archived from Must Have).
+- **Atomic propagation requirement:** Task doc status and kboard row for **E6:S09:T06** update in same RW Step 7 session — done (T06/FR-098 archived from Must Have).
 - **Owner:** Implementation execution (not this IPW session).
 
 ### 2.5 ADR necessity decision (mandatory — IPW Phase 5.0)
 
-Criteria: [`ipw-adr-necessity-checklist.md`](docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100).
+Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100).
 
 | ID | Trigger | Y/N | Evidence |
 | -- | ------- | --- | -------- |
@@ -101,7 +101,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](docs/architecture/standards-and-adr
 | T6 | Governance contract | Y | Pre-RW hook and Step 9 add-on touch RW boundary |
 | T7 | Supersedes | N | Extends existing integration spec; no ADR contradiction |
 
-**Outcome:** `REQUIRED` — **UPDATE** existing normative docs (no new ADR): [integration spec](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) §10–§11; light **UPDATE** [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) optional ECC surface note.
+**Outcome:** `REQUIRED` — **UPDATE** existing normative docs (no new ADR): [integration spec](../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) §10–§11; light **UPDATE** [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) optional ECC surface note.
 
 Exemption block not used (T1–T7 not all N).
 
@@ -215,7 +215,7 @@ Exemption block not used (T1–T7 not all N).
 
 | Doc ID | Proposed path | Purpose | Tied to |
 | ------ | ------------- | ------- | ------- |
-| D-C1 | `docs/implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md` | This IPP | IPW |
+| D-C1 | `docs/implementation-cycles/IPP-E6S9T6-ecc-harness-phases-2-5-fr098.md` | This IPP | IPW |
 | D-C2 | `packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py` | Bridge validation | RF9 |
 | D-C3 | `packages/frameworks/workflow-mgt/scripts/validation/test_validate_ecc_adk_bridge.py` | Regression tests | T2 |
 | D-C4 | `packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh` | Optional install helper | RF1 |
@@ -236,7 +236,7 @@ Exemption block not used (T1–T7 not all N).
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | --------- | -------------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md` | PUBLISHED | evergreen | T06 Input, References |
+| D-C1 | `docs/implementation-cycles/IPP-E6S9T6-ecc-harness-phases-2-5-fr098.md` | PUBLISHED | evergreen | T06 Input, References |
 | D-C2–C3 | `packages/frameworks/workflow-mgt/scripts/validation/*ecc_adk_bridge*` | PUBLISHED | evergreen | skills README, IPP §7 |
 | D-C4 | `packages/frameworks/workflow-mgt/scripts/install/install_ecc_harness_optional.sh` | PUBLISHED | evergreen | cheatsheet, T01 |
 | D-C5 | `packages/frameworks/workflow-mgt/KB/.../ecc-agentshield-rw-step9-bridge.md` | PUBLISHED | evergreen | release-workflow guide, cheatsheet |
@@ -300,7 +300,7 @@ flowchart LR
 | ---- | -------------- | ------ |
 | 1 | [E1:S04:T05](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | Phase 2 genesis ✅ on private `dev` tree |
 | 2 | FR-099 Phase 3 | Create **public** `RMS-Ltd/ai-dev-kit` from genesis (no pre-genesis book objects on public remote) |
-| 3 | FR-099 Phase 4 / FR-080 | Clone public repo; greenfield ADK install per [INSTALL_IN_YOUR_PROJECT.md](../../INSTALL_IN_YOUR_PROJECT.md); verify RW, UKW, validators **without** ECC |
+| 3 | FR-099 Phase 4 / FR-080 | Clone public repo; greenfield ADK install per [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md); verify RW, UKW, validators **without** ECC |
 | 4 | Wave E (this plan) | Feature branch on **public** clone; run [cheatsheet §3](../documentation/user-docs/ecc-adk-integration-cheatsheet.md#throwaway-branch-playbook-end-to-end) through validators; **optionally** `--execute` after dry-run review |
 | 5 | RF11 | File feedback; link from FR-098 notes or new intake task |
 
@@ -342,7 +342,7 @@ Record in UXR/FR or task notes:
 - [FR-098](../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
 - [T06 host task](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)
 - [T05 Phase 1 IPP](IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
-- [IPP-E6S09T04 Phase 0](IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
+- [IPP-E6S9T4 Phase 0](IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 - [Integration specification](../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
 - [ipw-adr-necessity-checklist](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

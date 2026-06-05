@@ -132,7 +132,7 @@ FR-098 validators locate the Workflow Management package using canonical install
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_adk_ecc_skill_pack.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_ecc_adk_bridge.py`
 - `tests/test_framework_install_slug.py`
-- `docs/implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md` (this file)
+- `docs/implementation-cycles/IPP-E7S7T3-workflow-validator-slug-path-resolution-br091.md` (this file)
 - `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md`
 
 ### 4.2 Dependency order
@@ -170,7 +170,7 @@ FR-098 validators locate the Workflow Management package using canonical install
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links |
 | ------ | -------------- | ------------------ | --------- | ------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E07S07T03-*.md` | NOT_APPLICABLE | timeboxed | T03 Input/References |
+| D-C1 | `docs/implementation-cycles/IPP-E7S7T3-*.md` | NOT_APPLICABLE | timeboxed | T03 Input/References |
 | D-U1 | T03 task doc | NOT_APPLICABLE | evergreen | Story checklist |
 | D-U2 | BR-091 | NOT_APPLICABLE | evergreen | fbuboard |
 
@@ -190,5 +190,5 @@ FR-098 validators locate the Workflow Management package using canonical install
 
 - [BR-091](../project-management/kanban/fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)
 - [BR-087](../project-management/kanban/fr-br/BR-087-framework-install-directory-slug-mismatch.md)
-- [IPP-E07S07T02](../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
+- [IPP-E7S7T2](IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
 - [package-management-design.md](../architecture/standards-and-adrs/package-management-design.md)

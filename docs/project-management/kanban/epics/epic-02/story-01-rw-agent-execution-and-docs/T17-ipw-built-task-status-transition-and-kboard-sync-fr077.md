@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Task E02:S01:T17 - IPW-built task status transition and kboard synchronization (FR-077)
 
 **Task ID:** E02:S01:T17  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE  
 **Version Anchor:** v0.2.1.17+3  
 **Priority:** HIGH  
 **Created:** 2026-04-09  
@@ -55,7 +55,7 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - ICW trio for E02:S01:T17 — not yet filed under `docs/implementation-cycles/` (use IPW/IPP when created)
 
 ---
@@ -122,8 +122,8 @@ Publication N/A Reason: N/A
 
 ## Planning artifacts (publication)
 
-- [ICW-E2S01T17-test-design.md](../../../../../implementation-cycles/ICW-E2S01T17-test-design.md)
+- [ICW-E2S1T17-test-design.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
 
-- [ICW-E2S01T17-specification.md](../../../../../implementation-cycles/ICW-E2S01T17-specification.md)
+- [ICW-E2S1T17-specification.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
 
-- [ICW-E2S01T17-implementation-plan.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)
+- [ICW-E2S1T17-implementation-plan.md](../../../../../implementation-cycles/ICW-E2S01T17-implementation-plan.md)

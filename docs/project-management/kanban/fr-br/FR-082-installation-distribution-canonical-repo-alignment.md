@@ -28,7 +28,7 @@ Align **installation scripts, defaults, and documentation examples** with the **
 
 ## Problem Statement
 
-`install_package_from_release.py` and some package installation docs use **placeholder** or **incorrect** GitHub coordinates (e.g. defaults or examples pointing at `ai-dev-kit/ai-dev-kit`). That creates **silent wrong-target** risk for automated installs and undermines trust in the greenfield path ([FR-080](./FR-080-greenfield-installation-process.md)).
+`install_package_from_release.py` and some package installation docs use **placeholder** or **incorrect** GitHub coordinates (e.g. defaults or examples pointing at `ai-dev-kit/ai-dev-kit`). That creates **silent wrong-target** risk for automated installs and undermines trust in the greenfield path ([FR-080](FR-080-greenfield-installation-process.md)).
 
 ---
 
@@ -46,13 +46,13 @@ Align **installation scripts, defaults, and documentation examples** with the **
 
 ### Implementation evidence (E06:S09:T03)
 
-- [`install_package_from_release.py`](../../../packages/frameworks/workflow-mgt/scripts/install_package_from_release.py) — `default='RMS-Ltd/ai-dev-kit'`; `--repo` / `GITHUB_REPOSITORY` override documented in help.
-- [`PACKAGE_INSTALLATION_GUIDE.md`](../../../packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) — examples use `RMS-Ltd/ai-dev-kit` release URLs.
-- [`INSTALL_IN_YOUR_PROJECT.md`](../../../INSTALL_IN_YOUR_PROJECT.md) — GitHub Releases example includes explicit `--repo RMS-Ltd/ai-dev-kit`; submodule URL canonical.
-- [`scripts/fr099_install_smoke_test.sh`](../../../scripts/fr099_install_smoke_test.sh) — guards against `ai-dev-kit/ai-dev-kit` default regression on public clone.
+- [`install_package_from_release.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_package_from_release.py) — `default='RMS-Ltd/ai-dev-kit'`; `--repo` / `GITHUB_REPOSITORY` override documented in help.
+- [`PACKAGE_INSTALLATION_GUIDE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md) — examples use `RMS-Ltd/ai-dev-kit` release URLs.
+- [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — GitHub Releases example includes explicit `--repo RMS-Ltd/ai-dev-kit`; submodule URL canonical.
+- [`scripts/fr099_install_smoke_test.sh`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/fr099_install_smoke_test.sh) — guards against `ai-dev-kit/ai-dev-kit` default regression on public clone.
 - **Backward compatibility:** Default changed from unsafe placeholder to canonical public repo; forks use `--repo owner/fork` (recorded in [T03](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md) delivery notes).
 
-**Deferral (not FR-082):** Publishing framework release tarballs on GitHub Releases → [FR-062](./FR-062-github-release-installation-experience.md).
+**Deferral (not FR-082):** Publishing framework release tarballs on GitHub Releases → [FR-062](FR-062-github-release-installation-experience.md).
 
 ---
 
@@ -84,5 +84,5 @@ Align **installation scripts, defaults, and documentation examples** with the **
 
 ## Related
 
-- [FR-080](./FR-080-greenfield-installation-process.md) — Greenfield process (consumer of correct defaults)  
+- [FR-080](FR-080-greenfield-installation-process.md) — Greenfield process (consumer of correct defaults)  
 - [PACKAGE_INSTALLATION_GUIDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md)  

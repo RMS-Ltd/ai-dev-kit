@@ -95,9 +95,9 @@ It also **replaces the `ICW` trigger for planning**: users and docs should prefe
 
 | Direction | Where | What to add |
 | --------- | ----- | ----------- |
-| **Task doc → Plan doc** | Task doc **Input** | Link to plan doc (e.g. `[T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md)`) |
+| **Task doc → Plan doc** | Task doc **Input** | Link to plan doc (e.g. `[T07-planning-spec-tests-impl.md](../epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)`) |
 | **Task doc → Plan doc** | Task doc **References** | Same link |
-| **Plan doc → Task doc** | Plan doc header | `**Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)` |
+| **Plan doc → Task doc** | Plan doc header | `**Host Task:** [T07-planning-spec-tests-impl.md](../epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) (E04:S11:T07)` |
 
 - **Task doc must link to plan doc** – Otherwise the plan is orphaned; developers cannot discover it from the task.
 - **Plan doc must link to task doc** – Otherwise the plan lacks context; the host task cannot be identified.
@@ -107,8 +107,8 @@ It also **replaces the `ICW` trigger for planning**: users and docs should prefe
 
 **Header (required):**
 
-- Task title (`E{epic}:S{story}:T{task}` – Planning: Spec, Tests, Implementation Plan)
-- **Host Task:** relative path to the host task doc (`E{epic}:S{story}:T{task}`) — link to the task markdown file (bidirectional wiring)
+- Task title (`E\{epic\}:S\{story\}:T\{task\}` – Planning: Spec, Tests, Implementation Plan)
+- **Host Task:** relative path to the host task doc (`E\{epic\}:S\{story\}:T\{task\}`) — link to the task markdown file (bidirectional wiring)
 - Status
 - Planning doc created date
 
@@ -185,10 +185,10 @@ Durable planning output may appear in either form under `docs/implementation-cyc
 
 | Form | Files | Notes |
 |------|-------|--------|
-| **IPP** | Single `IPP-E{epic}S{story}T{task}-{slug}.md` | Canonical for **ai-dev-kit** runs that follow `.claude/commands/ipw.md` Phase 7 (`PLAN_DOC_TEMPLATE.md`). Sections 1–7 carry requirements, specification, test design, implementation plan, documentation deliverables, documentation housing, and success criteria (optional §8 for perpetual rolling backlog). |
+| **IPP** | Single `IPP-E\{epic\}S\{story\}T\{task\}-\{slug\}.md` | Canonical for **ai-dev-kit** runs that follow `.claude/commands/ipw.md` Phase 7 (`PLAN_DOC_TEMPLATE.md`). Sections 1–7 carry requirements, specification, test design, implementation plan, documentation deliverables, documentation housing, and success criteria (optional §8 for perpetual rolling backlog). |
 | **ICW trio** | `ICW-*-specification.md`, `-test-design.md`, `-implementation-plan.md` | Valid for retrospective splits, multi-file review, or legacy packages. May be **superseded** by a later IPP that consolidates content (cite superseded paths in the IPP). |
 
-**Global Implementation Gate** ([`AGENTS.md`](../../../../AGENTS.md)) treats **either** form as satisfying precondition “IPW package” when linked from the task. Full matrix: [`dev-kit-ipw-ipp-vs-icw-artifacts.md`](../../../../architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md).
+**Global Implementation Gate** ([`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md)) treats **either** form as satisfying precondition “IPW package” when linked from the task. Full matrix: [`dev-kit-ipw-ipp-vs-icw-artifacts.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md).
 
 ---
 

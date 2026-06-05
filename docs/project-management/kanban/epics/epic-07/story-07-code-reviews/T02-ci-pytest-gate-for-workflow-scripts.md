@@ -19,14 +19,14 @@ housekeeping_policy: keep
 **Code:** E07S07T02  
 **Source:** [T01 review report §5 H1](T01-workflow-machinery-code-review-report.md) — no CI pytest gate for workflow script corpus
 
-**Planning:** [IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md](../../../../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
+**Planning:** [IPP-E7S7T2-ci-pytest-gate-for-workflow-scripts.md](../../../../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
 
 ---
 
 ## Input
 
 - [T01 review report H1](T01-workflow-machinery-code-review-report.md) — no CI pytest gate for workflow script corpus.
-- Existing [`run_isolated_pytest.sh`](../../../../../../packages/frameworks/workflow-mgt/scripts/validation/run_isolated_pytest.sh) (single-file runner).
+- Existing [`run_isolated_pytest.sh`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/run_isolated_pytest.sh) (single-file runner).
 
 ---
 
@@ -68,4 +68,4 @@ Add a **blocking CI gate** that runs the isolated workflow-script pytest suite o
 
 - [T01 workflow machinery code review report](T01-workflow-machinery-code-review-report.md)
 - [E08:S03:T04 — BR-058 CI test workflow](../../epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) (broader scope)
-- [`run_isolated_pytest.sh`](../../../../../../packages/frameworks/workflow-mgt/scripts/validation/run_isolated_pytest.sh)
+- [`run_isolated_pytest.sh`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/run_isolated_pytest.sh)

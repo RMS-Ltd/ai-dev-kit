@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Created:** 2026-03-17  
 **Last Updated:** 2026-05-30  
 
-**Planning:** [IPP-E2S08T08](../../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md) | [ADR-008](../../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
+**Planning:** [IPP-E2S8T8](../../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md) | [ADR-008](../../../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
 
 ---
 
@@ -87,24 +87,24 @@ Key gaps identified:
 
 ### **Functional Requirements**
 
-- [x] **Atomic Logging**: `forensic_log.run_subprocess_logged` — [tests/journal/test_forensic_log.py](../../../tests/journal/test_forensic_log.py)
-- [x] **Forensic Capability**: [Workflow Forensic Recovery Guide](../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md) + `RecoveryReport` command timeline (operator SLA; not automated)
+- [x] **Atomic Logging**: `forensic_log.run_subprocess_logged` — [tests/journal/test_forensic_log.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/journal/test_forensic_log.py)
+- [x] **Forensic Capability**: [Workflow Forensic Recovery Guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md) + `RecoveryReport` command timeline (operator SLA; not automated)
 - [x] **Rollback Hardening**: Checkpoint manifests + `rollback_hint.json` (manual reconciliation per ADR-008; not auto `git reset`)
 - [x] **TTL Integration**: `journal_housekeeping.sweep` + `rw-config.yaml` `journal_ttl_days`
 - [x] **Documentation Policy**: [AGENTS.md](../AGENTS.md) `docs/journals/` jurisdiction
 
 ### **Performance Requirements**
 
-- [x] **Minimal Overhead**: Smoke test [test_forensic_log_perf.py](../../../tests/journal/test_forensic_log_perf.py) (15% CI guard; formal &lt;5% benchmark deferred v2)
+- [x] **Minimal Overhead**: Smoke test [test_forensic_log_perf.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/journal/test_forensic_log_perf.py) (15% CI guard; formal &lt;5% benchmark deferred v2)
 - [ ] **Storage Efficient**: **Deferred v2** — no compression layer in v1
 - [ ] **Scalable**: **Deferred v2** — single-agent RW scope per ADR-008
 
 ### **Integration Requirements**
 
-- [x] **Workflow Executor**: [workflow_executor.py](../../../packages/frameworks/workflow-mgt/scripts/workflow_executor.py)
+- [x] **Workflow Executor**: [workflow_executor.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/workflow_executor.py)
 - [x] **Documentation Agent**: [AGENTS.md](../AGENTS.md)
-- [x] **Housekeeping**: [journal_housekeeping.py](../../../packages/frameworks/workflow-mgt/scripts/journal/journal_housekeeping.py)
-- [x] **Validation**: [test_forensic_log_schema.py](../../../tests/journal/test_forensic_log_schema.py) + journal/workflow pytest suite
+- [x] **Housekeeping**: [journal_housekeeping.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/journal/journal_housekeeping.py)
+- [x] **Validation**: [test_forensic_log_schema.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/journal/test_forensic_log_schema.py) + journal/workflow pytest suite
 
 ---
 

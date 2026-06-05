@@ -43,8 +43,9 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## Tasks
 
-### E10:S01:T01 – Establish expectations baseline for Document Lifecycle package {#E10S01T01--establish-expectations-baseline-for-document-lifecycle-package}
+<span id="e10s01t01--establish-expectations-baseline-for-document-lifecycle-package"></span>
 
+### E10:S01:T01 – Establish expectations baseline for Document Lifecycle package
 **Task ID:** E10:S01:T01
 
 **Planning artifacts (publication):**

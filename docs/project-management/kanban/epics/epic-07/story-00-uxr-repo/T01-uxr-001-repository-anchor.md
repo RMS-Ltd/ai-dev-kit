@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Task E07:S00:T01 – UXR-001 Repository Anchor
 
-> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S05:T01](../story-05-migration-uxr-research.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) / [E04:S19:T10](../../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md).
+> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S05:T01](../story-05-migration-uxr-research.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) / [E04:S19:T10](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md).
 
 **Task ID:** E07:S00:T01  
 **Status:** HISTORICAL (superseded)  
@@ -44,7 +44,7 @@ Canonical **repository** task for **UXR-001** per [story-00-uxr-repo](../story-0
 
 - [x] **AC1:** Task doc exists under **E7:S00** with required sections.  
 - [x] **AC2:** UXR-001 header lists **Repository Task** **E07:S00:T01**.  
-- [x] **AC3:** `fbuboard.md` MoSCOW row lists both **S00:T01** and implementation pointer **E07:S05:T01**.
+- [x] **AC3:** `kboard.md` MoSCOW row lists both **S00:T01** and implementation pointer **E07:S05:T01**.
 
 ---
 

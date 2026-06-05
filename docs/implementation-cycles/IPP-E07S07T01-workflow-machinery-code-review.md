@@ -133,7 +133,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | ---- | ------ | ----------- |
 | **1** | **[MANDATORY] Transition E07:S07:T01 `TODO → IN PROGRESS`** in task doc; update `Last updated` | Task doc `Status` = `IN PROGRESS` |
 | 2 | Confirm IPP linked from task **Input** and **References** | Bidirectional wiring |
-| 3 | Load inputs: E02:S13:T01, E02:S13:T08 sync report, E07:S02 standards, [IPP-E02S13T08](IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | Input checklist |
+| 3 | Load inputs: E02:S13:T01, E02:S13:T08 sync report, E07:S02 standards, [IPP-E2S13T8](IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | Input checklist |
 | 4 | Run automated inventory (tree + script count by subdir); draft ownership tags | Inventory draft |
 | 5 | Map inventory → T01 expectations; mark orphans | Expectations gap table |
 | 6 | Trace RW/UKW/CMW execution paths; document validator/kanban script call graph | Execution trace notes |
@@ -150,12 +150,12 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | File | Action |
 | ---- | ------ |
-| `docs/implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md` | CREATE (this document) |
+| `docs/implementation-cycles/IPP-E7S7T1-workflow-machinery-code-review.md` | CREATE (this document) |
 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md` | CREATE |
 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md` | UPDATE |
 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews.md` | UPDATE (on complete) |
 | `docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md` | UPDATE (RC gate pointer) |
-| `docs/project-management/kanban/kboard.md` / `fbuboard.md` | UPDATE on RW Step 7 |
+| `docs/project-management/kanban/kboard.md` | UPDATE on RW Step 7 |
 
 **No changes** to `packages/frameworks/workflow-mgt/` Python/YAML except trivial doc fixes if discovered (RNF3).
 
@@ -187,13 +187,13 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | D-U2 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews.md` | Checklist forensic marker on complete | Step N |
 | D-U3 | `docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md` | RC gate / review consumption pointer | Step 11 |
 | D-U4 | `docs/project-management/kanban/kboard.md` | E07:S07:T01 status/version on RW | Step 13 |
-| D-U5 | `docs/project-management/kanban/fbuboard.md` | FR-107 row IPP link | Step 13 |
+| D-U5 | `docs/project-management/kanban/kboard.md` | FR-107 row IPP link | Step 13 |
 
 ### 5.2 New documents to create
 
 | Doc ID | Proposed path | Purpose | Tied to (RF/T/impl step) |
 | ------ | ------------- | ------- | ------------------------ |
-| D-C1 | `docs/implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md` | IPW planning package | IPW |
+| D-C1 | `docs/implementation-cycles/IPP-E7S7T1-workflow-machinery-code-review.md` | IPW planning package | IPW |
 | D-C2 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md` | Primary code review report | RF5, Step 10 |
 
 ### 5.3 Documentation gaps and explicit non-changes
@@ -211,7 +211,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 | Doc ID | Canonical path | Publication status | Publication N/A reason | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ---------------------- | --------- | -------------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md` | NOT_APPLICABLE | Repo SoT planning artifact | evergreen | T01 Input, References |
+| D-C1 | `docs/implementation-cycles/IPP-E7S7T1-workflow-machinery-code-review.md` | NOT_APPLICABLE | Repo SoT planning artifact | evergreen | T01 Input, References |
 | D-C2 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md` | NOT_APPLICABLE | Kanban task deliverable | evergreen | T01 References; E02:S13 Dependencies |
 | D-U1 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md` | NOT_APPLICABLE | Kanban task doc | evergreen | — |
 | D-U2–D-U5 | Kanban board/story paths above | NOT_APPLICABLE | RW Step 7 surfaces | evergreen | RW Step 7 |
@@ -257,4 +257,4 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - [E02:S13:T08 sync report](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
 - [code-review-standards-and-guidelines.md](../architecture/standards-and-adrs/code-review-standards-and-guidelines.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [IPP-E02S13T08](IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
+- [IPP-E2S13T8](IPP-E02S13T08-sync-packaged-workflows-live-spec.md)

@@ -30,10 +30,10 @@ housekeeping_policy: keep
 ## Input
 
 - **FR-081** scope (modular adoption, contract-first wiring).
-- **IPP:** [`IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md`](../../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md)
+- **IPP:** [`IPP-E6S9T2-brownfield-modular-adopter-integration-fr081.md`](../../../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - [ADR-003](../../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and greenfield delivery (**FR-080** / **E06:S09:T01**) for cross-links only.
 - [`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md) and user-docs installation guides.
-- **Brownfield SoT:** [`INSTALL_IN_YOUR_PROJECT.md`](../../../../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
+- **Brownfield SoT:** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
 
 ---
 
@@ -62,14 +62,14 @@ housekeeping_policy: keep
 
 ## Acceptance criteria
 
-- [x] **AC1:** FR-081 requirements satisfied or deferred with documented rationale ([FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) implementation evidence; [IPP §8](../../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md)).
-- [x] **AC2:** Brownfield readers can determine **minimum wiring** for RW-only vs fuller stack paths ([INSTALL brownfield matrices](../../../../../../INSTALL_IN_YOUR_PROJECT.md#per-surface-adoption-matrix)).
-- [x] **AC3:** ADR-003 referenced from installation docs as policy anchor for brownfield ([INSTALL §Brownfield](../../../../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)).
+- [x] **AC1:** FR-081 requirements satisfied or deferred with documented rationale ([FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) implementation evidence; [IPP §8](../../../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)).
+- [x] **AC2:** Brownfield readers can determine **minimum wiring** for RW-only vs fuller stack paths ([INSTALL brownfield matrices](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#per-surface-adoption-matrix)).
+- [x] **AC3:** ADR-003 referenced from installation docs as policy anchor for brownfield ([INSTALL §Brownfield](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)).
 
 ## Delivery notes (2026-05-29)
 
-- Canonical brownfield SoT: [`INSTALL_IN_YOUR_PROJECT.md`](../../../../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories).
-- Planning: [IPP-E06S09T02](../../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md).
+- Canonical brownfield SoT: [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories).
+- Planning: [IPP-E6S9T2](../../../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md).
 - Structural test: `tests/test_install_brownfield_docs.py`.
 
 ## Version Anchor
@@ -86,8 +86,8 @@ housekeeping_policy: keep
 
 ## References
 
-- [IPP-E06S09T02](../../../../implementation-cycles/IPP-E06S09T02-brownfield-modular-adopter-integration-fr081.md)
-- [INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption](../../../../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
+- [IPP-E6S9T2](../../../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- [INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
 - [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md)
 - [ADR-003](../../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [IPW-E06S09T01](../../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md) (greenfield counterpart)
+- [IPW-E6S9T1](../../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md) (greenfield counterpart)

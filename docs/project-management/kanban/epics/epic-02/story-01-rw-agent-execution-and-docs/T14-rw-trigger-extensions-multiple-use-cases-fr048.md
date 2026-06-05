@@ -29,9 +29,9 @@ Create canonical task wiring for FR-048 under the semantically correct RW delive
 
 - [FR-048](../../../fr-br/FR-048-rw-trigger-extensions-for-multiple-use-cases.md)
 - Story host: [E2:S01 Story](../story-01-rw-agent-execution-and-docs.md)
-- [ICW-E02S01T14 Specification](../../../../../implementation-cycles/ICW-E02S01T14-specification.md)
-- [ICW-E02S01T14 Test Design](../../../../../implementation-cycles/ICW-E02S01T14-test-design.md)
-- [ICW-E02S01T14 Implementation Plan](../../../../../implementation-cycles/ICW-E02S01T14-implementation-plan.md)
+- [ICW-E2S1T14 Specification](../../../../../implementation-cycles/ICW-E2S01T14-implementation-plan.md)
+- [ICW-E2S1T14 Test Design](../../../../../implementation-cycles/ICW-E2S01T14-implementation-plan.md)
+- [ICW-E2S1T14 Implementation Plan](../../../../../implementation-cycles/ICW-E2S01T14-implementation-plan.md)
 
 ---
 
@@ -56,6 +56,6 @@ Create canonical task wiring for FR-048 under the semantically correct RW delive
 
 - [FR-048](../../../fr-br/FR-048-rw-trigger-extensions-for-multiple-use-cases.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
-- [ICW-E02S01T14 Specification](../../../../../implementation-cycles/ICW-E02S01T14-specification.md)
-- [ICW-E02S01T14 Test Design](../../../../../implementation-cycles/ICW-E02S01T14-test-design.md)
-- [ICW-E02S01T14 Implementation Plan](../../../../../implementation-cycles/ICW-E02S01T14-implementation-plan.md)
+- [ICW-E2S1T14 Specification](../../../../../implementation-cycles/ICW-E2S01T14-implementation-plan.md)
+- [ICW-E2S1T14 Test Design](../../../../../implementation-cycles/ICW-E2S01T14-implementation-plan.md)
+- [ICW-E2S1T14 Implementation Plan](../../../../../implementation-cycles/ICW-E2S01T14-implementation-plan.md)

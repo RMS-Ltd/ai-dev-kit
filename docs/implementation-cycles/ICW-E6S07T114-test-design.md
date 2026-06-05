@@ -38,5 +38,5 @@ Validate canonical-board defaults, legacy compatibility behavior, and documentat
 
 ## References
 
-- [ICW Specification](./ICW-E6S07T114-specification.md)
+- [ICW Specification](ICW-E6S07T114-specification.md)
 - [Task E6:S07:T114](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)

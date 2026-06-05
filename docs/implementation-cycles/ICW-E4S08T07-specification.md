@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E4S08T07-Specification: FR-011 Multi-Epic Task Splitting
+# ICW-E4S8T7-Specification: FR-011 Multi-Epic Task Splitting
 
 **Task:** E4:S08:T07  
 **Related FR:** FR-011  

@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 - Structured local telemetry artifacts produced by `E06:S07:T111`.
 - Requirement for high-quality, governable feedback from external adopters to AI Dev Kit maintainers.
-- [IPW-E06S07T112-install-feedback-submission-governance](../../../../../implementation-cycles/IPW-E06S07T112-install-feedback-submission-governance.md)
+- [IPW-E6S7T112-install-feedback-submission-governance](../../../../../implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md)
 
 ## Deliverable
 
@@ -65,8 +65,8 @@ Released **v0.6.7.112+2** (SemVer **v0.4.726+2**): implemented deterministic fee
 
 - [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
 - [FR-078](../../../fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
-- [IPW-E06S07T112-install-feedback-submission-governance](../../../../../implementation-cycles/IPW-E06S07T112-install-feedback-submission-governance.md)
+- [IPW-E6S7T112-install-feedback-submission-governance](../../../../../implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md)
 
 ## Planning artifacts (publication)
 
-- [IPW-E6S07T112-install-feedback-submission-governance.md](../../../../../implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md)
+- [IPW-E6S7T112-install-feedback-submission-governance.md](../../../../../implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md)

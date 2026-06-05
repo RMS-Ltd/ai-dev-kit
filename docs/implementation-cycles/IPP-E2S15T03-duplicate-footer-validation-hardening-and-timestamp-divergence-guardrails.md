@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ### 1.1 Goal
 
-Harden IPW governance so board-row traceability churn on `kboard.md` and `fbuboard.md` is deterministically detected, surfaced, and handled without silently corrupting forensic timestamp evidence. Traceability churn includes duplicated row-footer chunks and task-ID multiplication on the same row.
+Harden IPW governance so board-row traceability churn on `kboard.md` is deterministically detected, surfaced, and handled without silently corrupting forensic timestamp evidence. Traceability churn includes duplicated row-footer chunks and task-ID multiplication on the same row.
 
 ### 1.2 Functional requirements
 
@@ -59,7 +59,7 @@ Harden IPW governance so board-row traceability churn on `kboard.md` and `fbuboa
 | T3 | Dual-agreement pass | Oldest timestamp and first footer chunk agree, allowing deterministic canonical recovery. |
 | T4 | Dual-agreement fail | Oldest timestamp and first footer chunk disagree; `timestamp-order divergence` is emitted and silent normalization is blocked. |
 | T5 | Drift prevention | Repeated enforcement/update passes do not introduce forward timestamp creep. |
-| T6 | Board parity | Detection and reporting behave consistently for both `kboard.md` and `fbuboard.md` style rows. |
+| T6 | Board parity | Detection and reporting behave consistently for both `kboard.md` style rows. |
 | T7 | Task-ID multiplication guardrail | Repeated runs preserve single-instance task-ID segments and avoid multiplied `E#:S#:T#` tokens. |
 | T8 | Traceability | FR-089, E2:S15:T03, Story 015, and this IPP remain bidirectionally linked. |
 

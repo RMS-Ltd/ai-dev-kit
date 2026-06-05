@@ -1,18 +1,18 @@
 ---
 name: fr-br-uxr-completed-update
-description: Maintain and update fbu-completed.md with FR/BR/UXR completion timestamps
+description: Maintain and update intake-completed.md with FR/BR/UXR completion timestamps
 ---
 
 ## Purpose
 
-Maintain and update `fbu-completed.md` with completion timestamps, recent FR/BR/UXR items dashboard, and consistent formatting. This skill provides the standard interface for all agents to update completed FR/BR/UXR information with temporal tracking.
+Maintain and update `intake-completed.md` with completion timestamps, recent FR/BR/UXR items dashboard, and consistent formatting. This skill provides the standard interface for all agents to update completed FR/BR/UXR information with temporal tracking.
 
 ---
 
 ## Primary Responsibilities
 
 ### **Document Maintenance**
-- Update fbu-completed.md with FR/BR/UXR completion information
+- Update intake-completed.md with FR/BR/UXR completion information
 - Maintain completion timestamps in ISO 8601 format
 - Update "20 Most Recently Completed FR/BR/UXR Items" dashboard
 - Ensure consistent formatting across all FR/BR/UXR entries

@@ -101,5 +101,5 @@ Close FR-042 reopen follow-up by codifying the canonical IPW sequence so "Ascert
 
 - [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [Host task E5:S01:T42](../project-management/kanban/epics/epic-05/story-01-fr-repo/T42-implementation-planning-workflow-ipw.md)
-- [IPW execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
-- [Plan doc template](../../packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md)
+- [IPW execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
+- [Plan doc template](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md)

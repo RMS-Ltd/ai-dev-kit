@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** Complete (Phase 0)  
 **Date:** 2026-05-26  
 **Task:** [E6:S09:T04](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)  
-**Normative spec:** [Integration specification](./ecc-adk-harness-layer-integration-specification.md)  
-**Attribution:** See [spec §1](./ecc-adk-harness-layer-integration-specification.md#1-third-party-attribution)
+**Normative spec:** [Integration specification](ecc-adk-harness-layer-integration-specification.md)  
+**Attribution:** See [spec §1](ecc-adk-harness-layer-integration-specification.md#1-third-party-attribution)
 
 ---
 
@@ -137,7 +137,7 @@ Full tables with evidence in [T04 task doc](../../project-management/kanban/epic
 
 1. Publish ADK workflow skills as `adk-release-workflow`, `adk-kanban-sync`, `adk-implementation-planning`, etc.
 2. Define install strategy: ECC domain skills vs ADK skills coexistence under `.cursor/skills/`.
-3. Adopt [`ecc-adk-bridge.yaml.template`](../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template) in adopters.
+3. Adopt [`ecc-adk-bridge.yaml.template`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template) in adopters.
 
 ### Follow-on task
 
@@ -152,4 +152,4 @@ Full tables with evidence in [T04 task doc](../../project-management/kanban/epic
 
 ## 8. Attribution
 
-ECC is third-party MIT software. See [integration specification §1](./ecc-adk-harness-layer-integration-specification.md#1-third-party-attribution).
+ECC is third-party MIT software. See [integration specification §1](ecc-adk-harness-layer-integration-specification.md#1-third-party-attribution).

@@ -36,7 +36,7 @@ housekeeping_policy: keep
 
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
-- Story: [`docs/project-management/kanban/epics/epic-05/story-06-policy-documentation-structure.md`](../epics/epic-05/story-06-policy-documentation-structure.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-06-policy-documentation-structure.md`](../epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 - Task: See Story 6 Task Checklist (E05:S06:T01)
 
 ---
@@ -328,7 +328,7 @@ policy_salience:
 
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/epic-05/epic-05.md`](../epics/epic-05/epic-05.md)
-- Story: [`docs/project-management/kanban/epics/epic-05/story-06-policy-documentation-structure.md`](../epics/epic-05/story-06-policy-documentation-structure.md)
+- Story: [`docs/project-management/kanban/epics/epic-05/story-06-policy-documentation-structure.md`](../epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 - Task: See Story 6 Task Checklist (T01)
 
 ---

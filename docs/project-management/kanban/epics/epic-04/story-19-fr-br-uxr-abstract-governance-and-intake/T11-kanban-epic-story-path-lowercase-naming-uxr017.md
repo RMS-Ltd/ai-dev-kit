@@ -21,7 +21,7 @@ housekeeping_policy: keep
 **Publication Status:** NOT_APPLICABLE
 
 **Upstream:** [UXR-017 — Kanban Epic/Story Path Lowercase Naming](../../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)  
-**Planning package:** [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+**Planning package:** [IPP-E4S19T11](../../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
 ---
 
@@ -35,7 +35,7 @@ Establish and implement lowercase **2-digit-padded** path segments (`epic-04/`, 
 
 ## Input
 
-- [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+- [IPP-E4S19T11](../../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 - [UXR-017](../../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) findings and acceptance criteria
 - Framework scripts: `migrate_structure.py`, `task_creator.py`, `validate_installation.py`
 - RW install pattern detection ([BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / E06:S09:T12)
@@ -64,7 +64,7 @@ Establish and implement lowercase **2-digit-padded** path segments (`epic-04/`, 
 - **Sign-off contract:** `packages/frameworks/workflow-mgt/config/github-issue-install-signoff-contract.yaml`
 - **Evaluator:** `install_github_issue_signoff.py` — report by default; `--close-github-issues` only with explicit flag + `gh` auth
 - **Installer hooks:** end of `install_kanban_framework.py` and `install_release_workflow.py` print contract-driven READY / NOT READY
-- **Docs:** [github-issue-install-signoff.md](../../../../documentation/user-docs/github-issue-install-signoff.md), [adk-install-expenses-tracker-fresh-repo.md](../../../../guides/adk-install-expenses-tracker-fresh-repo.md)
+- **Docs:** [github-issue-install-signoff.md](../../../../../documentation/user-docs/github-issue-install-signoff.md), [adk-install-expenses-tracker-fresh-repo.md](../../../../../guides/adk-install-expenses-tracker-fresh-repo.md)
 
 **Follow-up when GitHub Issues are closed**
 
@@ -104,7 +104,7 @@ After maintainer or adopter replay closes install-blocking issues on **RMS-Ltd/a
 
 **Context (2026-06-04):** Fresh blank GitHub repo; prior local Expenses Tracker clone removed. Re-verify from clean install.
 
-Guide: [adk-install-expenses-tracker-fresh-repo.md](../../../../guides/adk-install-expenses-tracker-fresh-repo.md)
+Guide: [adk-install-expenses-tracker-fresh-repo.md](../../../../../guides/adk-install-expenses-tracker-fresh-repo.md)
 
 After ADK kanban install on **Expenses Tracker**:
 
@@ -120,10 +120,10 @@ After ADK kanban install on **Expenses Tracker**:
 
 ## Links
 
-- [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
-- [ADR-015](../../../../architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md)
-- [epic-story-path-migration-guide](../../../../architecture/standards-and-adrs/epic-story-path-migration-guide.md)
+- [IPP-E4S19T11](../../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+- [ADR-015](../../../../../architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md)
+- [epic-story-path-migration-guide](../../../../../architecture/standards-and-adrs/epic-story-path-migration-guide.md)
 - [UXR-017](../../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
-- [github-issue-install-signoff.md](../../../../documentation/user-docs/github-issue-install-signoff.md)
+- [github-issue-install-signoff.md](../../../../../documentation/user-docs/github-issue-install-signoff.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [Epic 4](../epic-04.md)

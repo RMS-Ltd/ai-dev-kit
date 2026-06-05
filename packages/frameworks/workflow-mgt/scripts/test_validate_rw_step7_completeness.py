@@ -62,7 +62,7 @@ def _write_synthetic_release_scope(repo: Path) -> dict:
     kboard.parent.mkdir(parents=True, exist_ok=True)
     kboard.write_text("# kboard\nrow A\n")
 
-    fbuboard = repo / "docs/project-management/kanban/fbuboard.md"
+    fbuboard = repo / "docs/project-management/kanban/kboard.md"
     fbuboard.write_text("# fbuboard\nrow A\n")
 
     fbu_dir = repo / "docs/project-management/kanban/fr-br"
@@ -229,8 +229,8 @@ def test_block_when_step7_output_unstaged(tmp: Path):
 def test_block_when_partial_stage_subset(tmp: Path):
     """
     Reproduces the original BR-070 failure mode: Step 7 mutates kboard.md
-    AND fbuboard.md, but Step 8 only stages kboard.md. Validator must catch
-    the unstaged fbuboard.md.
+    AND kboard.md, but Step 8 only stages kboard.md. Validator must catch
+    the unstaged kboard.md.
     """
     validator = _load_validator()
     repo = _init_repo(tmp)

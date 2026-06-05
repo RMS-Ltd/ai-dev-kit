@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E02:S16:T11](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T11-ipw-documentation-phases-update-create-and-housing-fr096.md)
 
-**Related:** [FR-042](./FR-042-implementation-planning-workflow-ipw.md) (product definition; steps 5–6 now operationalized), [FR-094](./FR-094-ipw-slash-command-and-task-state-transition-mandate.md) (slash command + phase gates), [BR-066](./BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) (publication housing)
+**Related:** [FR-042](FR-042-implementation-planning-workflow-ipw.md) (product definition; steps 5–6 now operationalized), [FR-094](FR-094-ipw-slash-command-and-task-state-transition-mandate.md) (slash command + phase gates), [BR-066](BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) (publication housing)
 
 ---
 
@@ -72,7 +72,7 @@ Update `.claude/commands/ipw.md`, `implementation-planning-workflow-agent-execut
 
 ## References
 
-- [FR-042](./FR-042-implementation-planning-workflow-ipw.md)
-- [FR-094](./FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [BR-066](./BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
+- [FR-042](FR-042-implementation-planning-workflow-ipw.md)
+- [FR-094](FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [BR-066](BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
 - `.claude/commands/ipw.md`

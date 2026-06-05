@@ -14,13 +14,13 @@ housekeeping_policy: keep
 **Version Anchor:** v0.5.1.72+0 (RW -k doc-init — **Released** 2026-03-31)  
 **Feature Request:** [FR-072 – Uniform Repository vs Abstract-Space Kanban Rules](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
 
-> **Historical anchor:** FR-072 intake filed here (`0.5.1.72+0`). **Primary delivery:** [E04:S19:T08](../../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md). **Policy:** [ADR-014](../../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md).
+> **Historical anchor:** FR-072 intake filed here (`0.5.1.72+0`). **Primary delivery:** [E04:S19:T08](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md). **Policy:** [ADR-014](../../../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md).
 
 ---
 
 ## Summary
 
-**Historical registry task** for FR-072. Cross-epic rules are **implemented** via **E04:S19:T08** and [ADR-014](../../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md). Do not add new primary intake tasks under **E05:S01** for FR-072 follow-on work.
+**Historical registry task** for FR-072. Cross-epic rules are **implemented** via **E04:S19:T08** and [ADR-014](../../../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md). Do not add new primary intake tasks under **E05:S01** for FR-072 follow-on work.
 
 **Traceability:** **FR-072** (not **FR-064**, which is [`FR-064-shields-branch-private-repo-badges.md`](../../../fr-br/FR-064-shields-branch-private-repo-badges.md) / **E05:S01:T69**).
 

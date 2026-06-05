@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E4S08T07-Implementation-Plan: FR-011 Multi-Epic Task Splitting
+# ICW-E4S8T7-Implementation-Plan: FR-011 Multi-Epic Task Splitting
 
 **Task:** E4:S08:T07  
 **Related FR:** FR-011  
@@ -44,7 +44,7 @@ housekeeping_policy: keep
 
 1. Run test suite and refine
 
-   - Execute tests defined in `ICW-E4S08T07-test-design.md`.
+   - Execute tests defined in `ICW-E4S8T7-test-design.md`.
    - Resolve failing guards and confirm regression stability.
 
 ---

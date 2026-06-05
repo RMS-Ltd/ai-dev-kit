@@ -1,0 +1,31 @@
+{
+  "release_version": "0.5.9.13+2",
+  "task_id": "E05:S09:T13",
+  "invocation_context": "rw_step_7",
+  "surfaces": [
+    {
+      "surface": "task_doc",
+      "path": "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md",
+      "action": "UPDATE",
+      "reason": "Wave 2 COMPLETE v0.5.9.13+2; CI AC pending post-merge"
+    },
+    {
+      "surface": "fr_br",
+      "path": "docs/project-management/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md",
+      "action": "UPDATE",
+      "reason": "Local build green; post-merge Actions verification pending"
+    },
+    {
+      "surface": "kboard",
+      "path": "docs/project-management/kanban/kboard.md",
+      "action": "UPDATE",
+      "reason": "V-band row updated for Wave 2 closure; stamp backfill evidenced"
+    },
+    {
+      "surface": "story",
+      "path": "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md",
+      "action": "UPDATE",
+      "reason": "T13 checklist marker v0.5.9.13+2"
+    }
+  ]
+}

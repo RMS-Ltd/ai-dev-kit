@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-RW installer mode C defaults (`epics/Epic-{epic}.md`, `epics/Epic-{epic}/stories/Story-{story}-*.md`) do not match fresh kanban install output (`Epic-{epic}/Epic-{epic}.md`, `Story-{story:03d}-*.md` under epic folder).
+RW installer mode C defaults (`epics/Epic-\{epic\}.md`, `epics/Epic-\{epic\}/stories/Story-\{story\}-*.md`) do not match fresh kanban install output (`Epic-\{epic\}/Epic-\{epic\}.md`, `Story-{story:03d}-*.md` under epic folder).
 
 ---
 
@@ -34,8 +34,8 @@ RW installer mode C defaults (`epics/Epic-{epic}.md`, `epics/Epic-{epic}/stories
 
 ## RW installer defaults (mode C)
 
-- Epic: `epics/Epic-{epic}.md` — **no match**
-- Story: `epics/Epic-{epic}/stories/Story-{story}-*.md` — **no match**
+- Epic: `epics/Epic-\{epic\}.md` — **no match**
+- Story: `epics/Epic-\{epic\}/stories/Story-\{story\}-*.md` — **no match**
 
 ## Expected
 
@@ -61,4 +61,4 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
 
 ## Follow-up (2026-06-04 — lowercase fresh install on `main`)
 
-Book dry-run (**#17** / [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)) shows **capital-case path remains RESOLVED**; **lowercase** `epics/epic-{epic}/epic-{epic}.md` still fails install sign-off (`epic-{epic:02d}` required) and mismatched Enter-defaults. Tracked under **E06:S09:T16** — do not reopen #15.
+Book dry-run (**#17** / [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)) shows **capital-case path remains RESOLVED**; **lowercase** `epics/epic-\{epic\}/epic-\{epic\}.md` still fails install sign-off (`epic-{epic:02d}` required) and mismatched Enter-defaults. Tracked under **E06:S09:T16** — do not reopen #15.

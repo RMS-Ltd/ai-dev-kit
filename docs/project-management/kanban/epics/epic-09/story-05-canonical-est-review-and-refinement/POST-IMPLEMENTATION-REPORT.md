@@ -67,7 +67,7 @@ Ran `scripts/cleanup/update_kanban_links.py` to update internal markdown links a
 **Results:** 34 markdown files modified with corrected internal references.
 
 ### Phase G: Board Doc Updates
-Updated `kboard.md` and `fbuboard.md`:
+Updated `kboard.md`:
 - E09:S05:T04 status: TODO → COMPLETE
 - UXR-011 status: OPEN → COMPLETE
 - Version updated: v0.9.5.4+1
@@ -75,8 +75,8 @@ Updated `kboard.md` and `fbuboard.md`:
 
 ### Phase H: Governance Policy Amendment
 Updated `packages/frameworks/kanban/policies/kanban-governance-policy.md` with explicit naming convention rules:
-- Task files: `Txx-{slug}.md` (regular), `Txxx-{slug}.md` (perpetual only)
-- Story files: `Story-NNN-{slug}.md`
+- Task files: `Txx-\{slug\}.md` (regular), `Txxx-\{slug\}.md` (perpetual only)
+- Story files: `Story-NNN-\{slug\}.md`
 - Prohibited: T0xx, Story-N/Story-NN, duplicates, orphans
 - Enforcement: `validate_kanban_naming.py`
 
@@ -105,7 +105,7 @@ Created `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_nam
 | 5 | Orphaned directories resolved | ✅ PASS | 0 orphaned directories found |
 | 6 | story-004 → story-004 | ✅ PASS | `epic-07/story-04-*.md` exists; `story-004` removed |
 | 7 | Internal links validated | ✅ PASS | 34 files updated; `validate_kanban_naming.py` green |
-| 8 | Board docs updated | ✅ PASS | `kboard.md` + `fbuboard.md` updated |
+| 8 | Board docs updated | ✅ PASS | `kboard.md` + `kboard.md` updated |
 | 9 | Governance policy updated | ✅ PASS | Policy now contains explicit Txx/Story-NNN convention |
 | 10 | Regression test green | ✅ PASS | `validate_kanban_naming.py` exits 0 |
 
@@ -126,9 +126,9 @@ Created `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_nam
 | File | Update |
 |------|--------|
 | `docs/project-management/kanban/kboard.md` | E09:S05:T04 → COMPLETE, version v0.9.5.4+1 |
-| `docs/project-management/kanban/fbuboard.md` | UXR-011 → COMPLETE, version v0.9.5.4+1 |
+| `docs/project-management/kanban/kboard.md` | UXR-011 → COMPLETE, version v0.9.5.4+1 |
 | `docs/project-management/kanban/kanban-completed.md` | Added E09:S05:T04 completion entry |
-| `docs/project-management/kanban/fbu-completed.md` | Added UXR-011 completion entry |
+| `docs/project-management/kanban/intake-completed.md` | Added UXR-011 completion entry |
 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | Naming convention enforcement rules |
 
 ## Files Renamed (git mv)
@@ -161,6 +161,6 @@ Run this after any kanban file renames, additions, or moves to confirm the tree 
 ## References
 
 - [E09:S05:T04 Host Task](T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
-- [IPP-E09S05T04 Implementation Plan](../../../../../../implementation-cycles/IPP-E09S05T04-kanban-naming-hygiene.md)
-- [UXR-011](../../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
-- [kanban-governance-policy](../../../../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)
+- [IPP-E9S5T4 Implementation Plan](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E9S5T4-kanban-naming-hygiene.md)
+- [UXR-011](../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
+- [kanban-governance-policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)

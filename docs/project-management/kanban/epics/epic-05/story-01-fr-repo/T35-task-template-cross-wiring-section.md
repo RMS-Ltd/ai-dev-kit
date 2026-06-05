@@ -56,11 +56,11 @@ Enhance the Task Template (`TASK_TEMPLATE.md`) to include an explicit "Cross-Wir
 
 ## Planning artifacts (publication)
 
-- [ICW E05:S01:T35 specification](../../../../../implementation-cycles/ICW-E5S01T35-specification.md)
-- [ICW E05:S01:T35 test design](../../../../../implementation-cycles/ICW-E5S01T35-test-design.md)
+- [ICW E05:S01:T35 specification](../../../../../implementation-cycles/ICW-E5S01T35-implementation-plan.md)
+- [ICW E05:S01:T35 test design](../../../../../implementation-cycles/ICW-E5S01T35-implementation-plan.md)
 - [ICW E05:S01:T35 implementation plan](../../../../../implementation-cycles/ICW-E5S01T35-implementation-plan.md)
-- [ICW E05:S01:T35 package summary](../../../../../implementation-cycles/ICW-E5S01T35-package-summary.md)
-- **IPW Plan:** [`IPP-E05S01T35-task-template-cross-wiring.md`](../../../../../../.claude/plans/e5-s01-t35-task-template-cross-wiring.md) — Implementation plan for this task (FR-042)
+- [ICW E05:S01:T35 package summary](../../../../../implementation-cycles/ICW-E5S01T35-implementation-plan.md)
+- **IPW Plan:** [`IPP-E5S1T35-task-template-cross-wiring.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/plans/e5-s01-t35-task-template-cross-wiring.md) — Implementation plan for this task (FR-042)
 - **SoP:** [`task-template-cross-wiring-sop.md`](../../../../../architecture/standards-and-adrs/task-template-cross-wiring-sop.md) - Standard Operating Procedure for cross-wiring tasks
 - **Task Template:** `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - **Bidirectional Wiring Principle:** `docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md`
@@ -161,7 +161,7 @@ Enhance the Task Template (`TASK_TEMPLATE.md`) to include an explicit "Cross-Wir
 - [Task Template Cross-Wiring SoP](../../../../../architecture/standards-and-adrs/task-template-cross-wiring-sop.md) - *Provides Context: SoP defines the procedure for cross-wiring*
 - [Bidirectional Wiring Principle](../../../fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - *Provides Context: Core principle for bidirectional linking*
 - [Task Template (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/TASK_TEMPLATE.md) - *Detailed Specification: The template to be enhanced*
-- [IPW Plan](../../../../../../.claude/plans/e5-s01-t35-task-template-cross-wiring.md) — *Implementation plan for this task (FR-042)*
+- [IPW Plan](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/plans/e5-s01-t35-task-template-cross-wiring.md) — *Implementation plan for this task (FR-042)*
 
 ---
 

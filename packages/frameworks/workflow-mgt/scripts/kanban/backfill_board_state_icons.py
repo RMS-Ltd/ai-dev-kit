@@ -45,7 +45,7 @@ def kanban_root(project_root: Path, config: Optional[Dict[str, Any]]) -> Path:
 
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(
-        description="Backfill Set A state icons on kboard.md / fbuboard.md MoSCOW rows."
+        description="Backfill Set A state icons on kboard.md MoSCOW rows."
     )
     parser.add_argument(
         "--project-root",
@@ -68,7 +68,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     root = args.project_root.resolve()
     cfg = load_rw_config(root)
     kb = kanban_root(root, cfg)
-    boards = [kb / "kboard.md", kb / "fbuboard.md"]
+    boards = [kb / "kboard.md", kb / "kboard.md"]
     report: Dict[str, Any] = {
         "generated_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
         "dry_run": args.dry_run,

@@ -186,7 +186,7 @@ Add granular control to UKW (Update Kanban Workflow) via use case flags and flex
 
 **Related Stories:**
 - [E5:S01: FR Repo](../story-01-fr-repo.md) - Repository story
-- [E6:S06: ADK Implementation Analysis and Package Management](../../epic-06/story-06-adk-implementation-analysis-and-package-management.md)
+- [E6:S06: ADK Implementation Analysis and Package Management](../../epic-06/story-07-adk-implementation-analysis-and-package-management.md)
 
 ---
 

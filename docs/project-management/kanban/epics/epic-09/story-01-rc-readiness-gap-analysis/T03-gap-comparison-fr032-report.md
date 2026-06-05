@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** [E09:S01:T03](T03-gap-analysis-fr032.md) · **FR:** [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)  
 **Snapshot:** 2026-06-04 UTC  
-**IPP:** [IPP-E09S01T03](../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
+**IPP:** [IPP-E9S1T3](../../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
 
 ---
 
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 | T01 Current state | [T01-current-state-inventory.md](T01-current-state-inventory.md) |
 | T02 RC=1 criteria | [T02-rc1-criteria-definition.md](T02-rc1-criteria-definition.md) |
 | Active board | [kboard.md](../../../kboard.md) (2026-06-04, v0.1.2.14+1) |
-| FBU board | [fbuboard.md](../../../fbuboard.md) |
+| Active board | [kboard.md](../../../kboard.md) |
 | Workflow RC signals | [E07:S07:T01 workflow machinery report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) |
 
 ---

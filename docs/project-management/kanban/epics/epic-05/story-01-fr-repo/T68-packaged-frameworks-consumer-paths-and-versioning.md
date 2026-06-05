@@ -36,7 +36,7 @@ This task is **scoping + documentation + checklist**, not a full dependency arch
 
 ## Input
 
-- [Framework Dependency Architecture](../../../../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md) (if present).
+- [Framework Dependency Architecture](../../../../../architecture/standards-and-adrs/framework-dependency-architecture.md) (if present).
 - [`packages/README.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/README.md).
 - [E05:S01:T47](T47-install-logging-for-framework-dependencies.md) / FR-047 (install logging overlap).
 

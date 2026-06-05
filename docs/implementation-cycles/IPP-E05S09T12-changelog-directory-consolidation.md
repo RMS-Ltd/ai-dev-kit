@@ -93,7 +93,7 @@ Deliver a single changelog documentation pillar under `docs/changelog-and-releas
 | T4 | Config | `changelog_dir` unchanged in `rw-config.yaml` | AC4 |
 | T5 | Portal | `portal/sidebars.js` has no `dirName: 'changelog'` | AC5 |
 
-**Implementation:** [`tests/test_changelog_directory_layout.py`](../../tests/test_changelog_directory_layout.py)
+**Implementation:** [`tests/test_changelog_directory_layout.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_changelog_directory_layout.py)
 
 ---
 
@@ -111,7 +111,7 @@ Deliver a single changelog documentation pillar under `docs/changelog-and-releas
 
 | Doc ID | Canonical path |
 | ------ | -------------- |
-| D-C1 | `docs/implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md` |
+| D-C1 | `docs/implementation-cycles/IPP-E5S9T12-changelog-directory-consolidation.md` |
 | D-C2 | `docs/maintenance/changelog-directory-consolidation-manifest.md` |
 | Host | `docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T12-*.md` |
 

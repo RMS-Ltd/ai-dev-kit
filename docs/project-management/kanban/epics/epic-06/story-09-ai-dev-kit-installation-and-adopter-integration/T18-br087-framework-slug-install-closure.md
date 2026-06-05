@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.9.18+2  
 **Code:** E06S09T18
 
-**Planning package:** [IPP-E06S09T18](../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
+**Planning package:** [IPP-E6S9T18](../../../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
 
 **Upstream:** [BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)  
 **Predecessor:** [E06:S09:T17](T17-framework-install-directory-slugs-br087.md) (**v0.6.9.17+1**)  
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 
 ## Input
 
-[BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md) · [IPP-E06S09T18](../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md) · [E06:S09:T17](T17-framework-install-directory-slugs-br087.md)
+[BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md) · [IPP-E6S9T18](../../../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md) · [E06:S09:T17](T17-framework-install-directory-slugs-br087.md)
 
 ---
 
@@ -51,13 +51,13 @@ Close **BR-087** end-to-end for the **ai-dev-kit** repo: slug directories in sou
 ## Deliverables
 
 - [x] Update/install path runs or prompts slug relocation (Wave A.1)
-- [x] Republish checklist — [br087-framework-release-republish-checklist.md](../../../../maintenance/br087-framework-release-republish-checklist.md) (Wave A.2; GitHub upload maintainer step)
+- [x] Republish checklist — [br087-framework-release-republish-checklist.md](../../../../../maintenance/br087-framework-release-republish-checklist.md) (Wave A.2; GitHub upload maintainer step)
 - [x] Install feedback flags legacy framework paths (Wave A.3)
 - [x] Install docs updated (Wave A.4)
 - [x] Maintainer `packages/frameworks/` renamed to slugs (Wave B.5)
 - [x] Reference sweep — active repo paths (exclude changelog-archive) (Wave B.6)
 - [ ] Expenses Tracker adopter replay (BR-087 AC — pending user)
-- [x] IPP linked — [IPP-E06S09T18](../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
+- [x] IPP linked — [IPP-E6S9T18](../../../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
 
 ---
 

@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 6, Story 7, Task 114: Canonical board filename migration (`kboard.md` / `fbuboard.md`)
+# Epic 6, Story 7, Task 114: Canonical board filename migration (`kboard.md`)
 
 **Task ID:** E06:S07:T114  
 **Status:** COMPLETE  
@@ -17,13 +17,13 @@ housekeeping_policy: keep
 
 **Upstream:** [UXR-008 – Default board naming adoption](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
-**Coordinates:** [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [E06:S07:T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+**Coordinates:** [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [E06:S07:T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 
 ---
 
 ## Input
 
-- User request to set canonical board names to `kboard.md` and `fbuboard.md`.
+- User request to set canonical board names to `kboard.md`.
 - Existing implementation diff that migrated references and defaults without prior planning artifacts.
 - Need to backfill governance-complete artifacts (task + ICW suite + verification notes).
 
@@ -45,7 +45,7 @@ Forensic marker: RW `v0.6.7.114+1` — canonical board naming migration released
 
 1. Anchor migration to task E06:S07:T114 and re-wire UXR-008.
 2. Produce ICW artifact triad for the migration.
-3. Ensure script defaults and package install paths use `kboard.md`/`fbuboard.md` while maintaining alias fallback support.
+3. Ensure script defaults and package install paths use `kboard.md`/`kboard.md` while maintaining alias fallback support.
 4. Verify with existing workflow tests and Docusaurus production build.
 
 ---
@@ -74,6 +74,6 @@ Forensic marker: RW `v0.6.7.114+1` — canonical board naming migration released
 ## References
 
 - [UXR-008](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- [ICW-E06S07T114-specification](../../../../../implementation-cycles/ICW-E06S07T114-specification.md)
-- [ICW-E06S07T114-test-design](../../../../../implementation-cycles/ICW-E06S07T114-test-design.md)
-- [ICW-E06S07T114-implementation-plan](../../../../../implementation-cycles/ICW-E06S07T114-implementation-plan.md)
+- [ICW-E6S7T114-specification](../../../../../implementation-cycles/ICW-E6S07T114-specification.md)
+- [ICW-E6S7T114-test-design](../../../../../implementation-cycles/ICW-E6S07T114-specification.md)
+- [ICW-E6S7T114-implementation-plan](../../../../../implementation-cycles/ICW-E6S07T114-specification.md)

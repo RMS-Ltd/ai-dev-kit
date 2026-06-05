@@ -37,10 +37,10 @@ This task does **not** implement the ADK workflow skill pack or installer bridge
 ## Input
 
 - [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md) — full phased program
-- [IPP-E06S09T04](../../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md) — planning package
+- [IPP-E6S9T4](../../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md) — planning package
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
-- [Bridge template](../../../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
+- [Bridge template](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
 - Current ADK harness surface:
   - `.cursor/skills/` (7 skills: `version-bump`, `ukw-sync`, `intake-process`, `cmw-maintain`, `readme-update`, `kanban-completed-update`, `fr-br-uxr-completed-update`)
   - `.cursorrules` (RW / UKW / IPW / CMW / PVW triggers)
@@ -64,7 +64,7 @@ Adopters may install ECC alongside ADK for harness performance (domain skills, h
 4. **`ecc-adk-bridge.yaml` draft** — template only (may be stub); lists proposed disabled hooks and conflict rules from findings.
 5. **Recommendation memo** — proceed to Phase 1 (skill pack) yes/no; blockers if any.
 
-**Housing:** [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md), [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md), [bridge template](../../../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template).
+**Housing:** [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md), [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md), [bridge template](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template).
 
 ---
 
@@ -179,9 +179,9 @@ Adopters may install ECC alongside ADK for harness performance (domain skills, h
 | # | Check | Result | Evidence |
 |---|-------|--------|----------|
 | G1 | Compatibility matrix published | PASS | [Evaluation §4](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) |
-| G2 | Bridge template checked in | PASS | [ecc-adk-bridge.yaml.template](../../../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template) |
+| G2 | Bridge template checked in | PASS | [ecc-adk-bridge.yaml.template](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template) |
 | G3 | Phase 1 GO/NO-GO | PASS | **GO** — evaluation §1 |
-| G4 | Follow-on T05 filed | PASS | [T05 stub](./T05-adk-workflow-skill-pack-ecc-fr098.md) |
+| G4 | Follow-on T05 filed | PASS | [T05 stub](T05-adk-workflow-skill-pack-ecc-fr098.md) |
 
 ---
 
@@ -199,11 +199,11 @@ Adopters may install ECC alongside ADK for harness performance (domain skills, h
 ## References
 
 - [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-- [IPP-E06S09T04](../../../../implementation-cycles/IPP-E06S09T04-ecc-harness-layer-phase0-fr098.md)
+- [IPP-E6S9T4](../../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 - [Integration specification](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
-- [Bridge template](../../../../../packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
-- [T05 follow-on](./T05-adk-workflow-skill-pack-ecc-fr098.md)
+- [Bridge template](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template)
+- [T05 follow-on](T05-adk-workflow-skill-pack-ecc-fr098.md)
 - [ECC README](https://github.com/affaan-m/ECC/blob/main/README.md) (MIT)
 - [ECC cross-harness architecture](https://github.com/affaan-m/ECC/blob/main/docs/architecture/cross-harness.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

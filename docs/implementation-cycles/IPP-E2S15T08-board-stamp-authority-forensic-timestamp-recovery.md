@@ -83,7 +83,7 @@ See attached IPW plan: RF1–RF8, RNF1–RNF4. User locked: automatic backfill, 
 - [x] AC1: Policy/docs aligned (no row unify on hygiene)
 - [x] AC2: `validate_board_stamp_diff.py` + workflow integration documented
 - [x] AC3: Pipeline `non_substantive` on fbuboard cleanup / enforce_terminal
-- [x] AC4: Backfill report [`fr097-backfill-report.json`](../changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json) — 71 rows changed
+- [x] AC4: Backfill report [`fr097-backfill-report.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json) — 71 rows changed
 - [x] AC5: Gate 8 homogeneity PASS post-backfill
 - [x] AC6: BR-069 / UXR-009 CLOSED on RW release (**v0.2.15.8+1**)
 - [x] AC7: Skill NONE with documented rationale
@@ -91,5 +91,5 @@ See attached IPW plan: RF1–RF8, RNF1–RNF4. User locked: automatic backfill, 
 ## References
 
 - [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
-- [IPP-E2S15T07](IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
-- [IPP-E2S15T04](IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
+- [IPP-E2S15T7](IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+- [IPP-E2S15T4](IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)

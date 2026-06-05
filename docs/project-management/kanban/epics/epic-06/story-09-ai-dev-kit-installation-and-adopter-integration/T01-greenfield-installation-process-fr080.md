@@ -33,7 +33,7 @@ housekeeping_policy: keep
 - **FR-080** accepted scope and dependencies (install telemetry **FR-078** / **FR-079** where applicable).
 - Policy anchor [ADR-003](../../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and distinction from brownfield track (**FR-081**).
 - Existing `INSTALL_IN_YOUR_PROJECT.md` and framework installers (`install_release_workflow.py`, `install_kanban_framework.py`).
-- **IPW planning artifact:** [IPW-E06S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md)
+- **IPW planning artifact:** [IPW-E6S9T1-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 ---
 
@@ -77,9 +77,9 @@ Greenfield adopters need a **single, reproducible first-run path** from acquisit
 
 ## References
 
-- **IPW (planning package):** [IPW-E06S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E06S09T01-greenfield-installation-fr080.md)
+- **IPW (planning package):** [IPW-E6S9T1-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 - [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md)
 
 ## Planning artifacts (publication)
 
-- [IPW-E6S09T01-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- [IPW-E6S9T1-greenfield-installation-fr080.md](../../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)

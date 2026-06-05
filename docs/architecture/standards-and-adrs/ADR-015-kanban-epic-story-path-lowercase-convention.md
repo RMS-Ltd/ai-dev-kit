@@ -25,7 +25,7 @@ Kanban installs (including Expenses Tracker) emit **Pascal-case** path segments 
 
 1. **Write-default (new installs and new paths):**
    - `epics/epic-{nn}/epic-{nn}.md` — **2-digit** epic segment when epic ≤ 99 (`epic-04`); **3-digit** when epic > 99.
-   - `epics/epic-{nn}/story-{nn}-{slug}.md` and matching `story-{nn}-{slug}/` directories — same **2-digit / >99 → 3-digit** rule for story numbers.
+   - `epics/epic-{nn}/story-{nn}-\{slug\}.md` and matching `story-{nn}-\{slug\}/` directories — same **2-digit / >99 → 3-digit** rule for story numbers.
    - Task files: `T{nn}-*.md` — **2-digit** when task ≤ 99 (`T01`, `T11`); **3-digit** when task > 99 (`T101+`, perpetual UKW/CMW tasks).
    - Inline `E:S:T` tokens remain **UXR-014** two-digit in prose (`E04:S19:T11`); path segments follow the rules above.
 
@@ -61,5 +61,5 @@ Kanban installs (including Expenses Tracker) emit **Pascal-case** path segments 
 
 ## References
 
-- [IPP-E04S19T11](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+- [IPP-E4S19T11](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 - [E04:S19:T11](../../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)

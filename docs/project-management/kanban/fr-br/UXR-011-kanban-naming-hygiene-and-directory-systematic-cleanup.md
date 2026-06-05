@@ -71,9 +71,9 @@ The Txxx → Txx migration (E02:S02:T07, E02:S02:T08) was filed 2025-12-03 but r
 - story-007: `story-07-persistent-knowledge-base-investigation.md` + `story-07-policy-documentation-structure.md`
 
 **epic-06:** Stories 001–006 each have 2 files:
-- story-001: `story-01-br-repo.md` + `story-01-framework-version-management.md`
-- story-002: `story-02-framework-update-and-migration.md` + `story-02-framework-version-management.md`
-- story-003: `story-03-framework-health-monitoring.md` + `story-03-framework-update-and-migration.md`
+- story-001: `story-01-br-repo.md` + `story-02-versioning-cookbook-and-examples.md`
+- story-002: `story-09-ai-dev-kit-installation-and-adopter-integration.md` + `story-02-framework-version-management.md`
+- story-003: `story-07-adk-implementation-analysis-and-package-management.md` + `story-03-framework-update-and-migration.md`
 - story-004: `story-04-bug-reports.md` + `story-04-framework-health-monitoring.md`
 - story-005: `story-05-bug-reports.md` + `story-05-feature-requests.md`
 - story-006: `story-06-adk-implementation-analysis-and-package-management.md` + `story-06-feature-requests.md`
@@ -123,7 +123,7 @@ epic-09 and epic-24 both have book-content stories with identical names (001–0
 1. Rename all Txxx files to Txx (zero-pad single digits: T1 → T01).
 2. Update all internal markdown links referencing the old filenames.
 3. Update story checklists to reference new filenames.
-4. Update board rows (`kboard.md`, `fbuboard.md`) to reference new task IDs.
+4. Update board rows (`kboard.md`) to reference new task IDs.
 
 ### Phase B: Duplicate Story Reconciliation
 1. For each epic with duplicate story numbers, determine which file is canonical.
@@ -153,7 +153,7 @@ epic-09 and epic-24 both have book-content stories with identical names (001–0
 - [x] All orphaned directories resolved.
 - [x] `story-004` in epic-07 renamed to `story-004`.
 - [x] All internal markdown links validated (0 dangling links post-cleanup).
-- [x] All board docs (`kboard.md`, `fbuboard.md`) updated with correct references.
+- [x] All board docs (`kboard.md`) updated with correct references.
 - [x] Kanban governance policy updated with explicit naming convention and prohibition on duplicate story numbers within an epic.
 - [x] Regression test: automated scan confirms 0 Txxx files, 0 duplicate story numbers per epic, 0 orphaned directories.
 
@@ -181,5 +181,5 @@ epic-09 and epic-24 both have book-content stories with identical names (001–0
 - [E09:S05:T04](../epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md) — Implementing task
 - [E02:S02:T07](../epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md) — Original task naming change (TODO)
 - [E02:S02:T08](../epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md) — Original kanban docs standardization (TODO)
-- [kanban-governance-policy](../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — Naming policy source of truth
+- [kanban-governance-policy](../../../governance/kanban/kanban-governance-policy.md) — Naming policy source of truth
 - [epic-09](../epics/epic-09/epic-09.md) — Release Candidate Readiness epic (canonical for E/S/T review)

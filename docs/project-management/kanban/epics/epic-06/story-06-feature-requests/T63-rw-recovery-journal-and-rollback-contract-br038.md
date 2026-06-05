@@ -25,7 +25,7 @@ housekeeping_policy: keep
 - [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) active unresolved scope.
 - Current RW execution and validation contract.
 - Existing workflow executor placeholders for checkpoint/rollback semantics.
-- [IPW Plan: E06:S06:T63 — Planning: Spec, Tests, Implementation Plan](../../../../../../implementation-cycles/IPP-E06S06T63-rw-recovery-journal.md)
+- [IPW Plan: E06:S06:T63 — Planning: Spec, Tests, Implementation Plan](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md)
 
 ## Problem Statement
 
@@ -57,4 +57,4 @@ RW is operationally stable, but failure recovery is not yet deterministic. When 
 
 - [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
 - [T02 historical anchor](T02-fix-release-workflow-micromanagement-issues.md)
-- [IPW Plan: E06:S06:T63 — Planning: Spec, Tests, Implementation Plan](../../../../../../implementation-cycles/IPP-E06S06T63-rw-recovery-journal.md)
+- [IPW Plan: E06:S06:T63 — Planning: Spec, Tests, Implementation Plan](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md)

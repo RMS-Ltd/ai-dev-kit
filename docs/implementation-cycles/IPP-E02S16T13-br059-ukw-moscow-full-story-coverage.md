@@ -40,7 +40,7 @@ housekeeping_policy: keep
 
 - **Invariants:** Story task checklist is SoT for which tasks exist; `kboard.md` MoSCOW must reflect all open work or explicit Won't deferral.
 - **In scope:** UKW agent docs, optional `validate_story_moscow_coverage.py`, T13/BR-059/story-016 wiring, dry-run evidence.
-- **Out of scope:** `fbuboard.md` FBU rows; `--rp` reprioritization; reactivating **E06:S07:T109** for RW; blocking RW on this validator.
+- **Out of scope:** `kboard.md` FBU rows; `--rp` reprioritization; reactivating **E06:S07:T109** for RW; blocking RW on this validator.
 
 ---
 
@@ -80,7 +80,7 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 
 **Exemption (E1–E5):** All pass — behavior covered by kanban governance + UKW execution guides.
 
-**Outcome: EXEMPT** — no new ADR. Governed by [kanban-governance-policy.md](../../packages/frameworks/kanban/policies/kanban-governance-policy.md), [update-kanban-workflow-agent-execution.md](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [FR-023](../../docs/project-management/kanban/fr-br/FR-023-update-kanban-workflow-ukw.md).
+**Outcome: EXEMPT** — no new ADR. Governed by [kanban-governance-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md), [update-kanban-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md), [FR-023](../project-management/kanban/fr-br/FR-023-update-kanban-workflow-ukw.md).
 
 ---
 
@@ -114,7 +114,7 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 
 | Doc ID | Path | Action | Scope |
 | ------ | ---- | ------ | ----- |
-| D1 | `docs/implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md` | CREATE | This IPP |
+| D1 | `docs/implementation-cycles/IPP-E2S16T13-br059-ukw-moscow-full-story-coverage.md` | CREATE | This IPP |
 | D2 | `.cursorrules` UKW Step 6 | UPDATE | Part B.1 BR-059 |
 | D3 | `packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md` | UPDATE | Parity with D2 |
 | D4 | `update-kanban-workflow-agent-execution.md` Step 6 | UPDATE | Part B.1 |
@@ -139,7 +139,7 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 
 ## 7. Success / verification criteria
 
-- [x] **AC1:** UKW guides contain explicit all-open-tasks-or-Won't rule — [`.cursorrules`](../../.cursorrules) UKW Step 6 Part B.1; [BR-059 Resolution](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) links guides.
+- [x] **AC1:** UKW guides contain explicit all-open-tasks-or-Won't rule — [`.cursorrules`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) UKW Step 6 Part B.1; [BR-059 Resolution](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) links guides.
 - [x] **AC2:** Dry-run log for **E10:S01** in [T13 Verification](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md#verification-2026-06-02) (6 open / 0 board); **E05:S09** narrative in BR-059.
 - [x] **AC3:** [E02:S16:T04](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) references BR-059 / Step 6 Part B.1.
 - [x] **`pytest`:** `test_validate_story_moscow_coverage.py` — 5 passed (2026-06-02, T13 verification).
@@ -174,5 +174,5 @@ Prevent UKW from treating a single “lead” task per story as sufficient MoSCO
 
 - [BR-059](../project-management/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 - [T13 host task](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
-- [E04:S19:T03 investigation report](./E04S19T03-e6s07-default-housing-investigation-report.md)
+- [E04:S19:T03 investigation report](./E4S19T03-e6s07-default-housing-investigation-report.md)
 - [BR-042](../project-management/kanban/fr-br/BR-042-ukw-agent-board-cleanup-failure.md) (opposite failure mode)

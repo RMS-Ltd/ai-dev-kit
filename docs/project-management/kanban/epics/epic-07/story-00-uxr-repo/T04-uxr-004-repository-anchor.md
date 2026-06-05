@@ -36,7 +36,7 @@ Canonical **repository** task for **UXR-004** (Kanban package installation UAT) 
 ## Deliverable
 
 - Intake headers + stable **E07:S00:T04** anchor; **`RW -k`** when epic/7 registry slot needs a doc-init release.  
-- Board rows: **E07:S00:T04** · **E07:S05:T04** on **`fbuboard.md`**.
+- Board rows: **E07:S00:T04** · **E07:S05:T04** on **`kboard.md`**.
 
 ---
 
@@ -44,7 +44,7 @@ Canonical **repository** task for **UXR-004** (Kanban package installation UAT) 
 
 - [x] **AC1:** Task doc exists under **E7:S00** with required sections.  
 - [x] **AC2:** UXR-004 header lists **Repository Task** **E07:S00:T04**.  
-- [x] **AC3:** `fbuboard.md` MoSCOW row lists both repository and synthesis pointers.
+- [x] **AC3:** `kboard.md` MoSCOW row lists both repository and synthesis pointers.
 
 ---
 

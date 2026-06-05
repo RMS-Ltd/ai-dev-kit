@@ -57,7 +57,7 @@ Registry YAML is SoT; `adk_install_errors.py` loads and emits; installers call `
 
 ### 2.3 Constraints
 
-- Mirror [install_ux_version.py](../../packages/frameworks/workflow-mgt/scripts/install_ux_version.py) import pattern for scripts.
+- Mirror [install_ux_version.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_ux_version.py) import pattern for scripts.
 - Preserve existing human remediation text (BR-082 class).
 
 ### 2.4 Status transition intent
@@ -134,7 +134,7 @@ Registry YAML is SoT; `adk_install_errors.py` loads and emits; installers call `
 
 | Doc ID | Path | Publication |
 | ------ | ---- | ----------- |
-| IPP | `docs/implementation-cycles/IPP-E06S09T20-*.md` | NOT_APPLICABLE |
+| IPP | `docs/implementation-cycles/IPP-E6S9T20-*.md` | NOT_APPLICABLE |
 | ADR-016 | `docs/architecture/standards-and-adrs/` | PUBLISHED |
 | User troubleshooting | `docs/documentation/user-docs/` | PUBLISHED |
 

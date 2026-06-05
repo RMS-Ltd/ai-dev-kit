@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH
 **Estimated Effort:** [TBD]
 **Created:** 2025-12-02
-**Last updated:** 2026-04-13 (v0.3.2.12+3 – Story 2 Task 12 complete)
+**Last updated:** 2026-06-05 (v0.3.2.12+5 — T12 wave 3 FBU closure)
 **Branch:** `epic/3-numbering-and-versioning-framework`
 **Version Schema:** `0.3.S.T+B`
 **Production URL:** [N/A for this repo]
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 ## Story Checklist
 
 - [x] **E3:S01 – Dev Kit Alignment with Versioning Framework** - COMPLETE ✅ (v0.3.1.6+1)
-- [ ] **E3:S02 – Versioning Cookbook & Examples** - IN PROGRESS (v0.3.2.11+4 – T11 complete; **T12** TODO ADR-002 / **[BR-061](../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)** task_touch counter semantics)
+- [ ] **E3:S02 – Versioning Cookbook & Examples** - IN PROGRESS (v0.3.2.12+5 – **T12** ✅ wave 3 closure; T10 TODO)
 - [x] **E3:S03 – Versioning Integration with Kanban & RW** - COMPLETE ✅ (v0.3.3.6+2 – All tasks complete: Epic 3 marked COMPLETE)
   - Story: [`story-03-versioning-integration-with-kanban-and-rw.md`](story-03-versioning-integration-with-kanban-and-rw.md)
 
@@ -73,7 +73,7 @@ It ensures the dev kit:
 **Status:** COMPLETE
 **Priority:** HIGH
 **Estimated Effort:** [TBD]
-**Last updated:** 2026-04-13 (v0.3.2.12+3 – Story 2 Task 12 complete)
+**Last updated:** 2026-06-05 (v0.3.2.12+5 — T12 wave 3 FBU closure)
 
 **Goal:**
 Make sure the dev kit's own versioning policy, version file, and docs align cleanly with the generic versioning framework. Establish `ai-dev-kit` as the canonical SoT for versioning policies and strategies.
@@ -95,7 +95,7 @@ Make sure the dev kit's own versioning policy, version file, and docs align clea
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-13 (v0.3.2.12+3 – Story 2 Task 12 complete)
+**Last updated:** 2026-06-05 (v0.3.2.12+5 — T12 wave 3 FBU closure)
 
 **Goal:**  
 Provide a practical versioning cookbook with worked examples for RC.EPIC.STORY.TASK+BUILD, making it easy for other projects to adopt the dev-kit versioning strategy safely and correctly.
@@ -121,7 +121,7 @@ Provide a practical versioning cookbook with worked examples for RC.EPIC.STORY.T
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-13 (v0.3.2.12+3 – Story 2 Task 12 complete)
+**Last updated:** 2026-06-05 (v0.3.2.12+5 — T12 wave 3 FBU closure)
 
 **Goal:**  
 Create comprehensive, framework-level integration documentation that explains how the Numbering & Versioning framework integrates with the Kanban and Workflow Management frameworks. Unlike E4:S03 (which validated dev-kit implementation), this story focuses on **portable, template-ready documentation** that external projects can use to integrate all three frameworks.

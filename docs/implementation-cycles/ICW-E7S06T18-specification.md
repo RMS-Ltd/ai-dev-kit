@@ -20,8 +20,8 @@ Make interactive installer Kanban prompts self-explanatory, enforce placeholder-
 
 ## 2. Functional requirements
 
-- **F1:** Epic pattern input must require `{epic}` and reject literal one-epic paths (for example `epic-01/epic-01.md`).
-- **F2:** Story pattern input must require both `{epic}` and `{story}`.
+- **F1:** Epic pattern input must require `\{epic\}` and reject literal one-epic paths (for example `epic-01/epic-01.md`).
+- **F2:** Story pattern input must require both `\{epic\}` and `\{story\}`.
 - **F3:** Prompt copy must explain paths are relative to selected `kanban_root`, with concrete examples.
 - **F4:** Installer must provide immediate match-preview feedback (match count and sample matches) for pattern-based inputs.
 - **F5:** When pattern validation fails, installer must emit remediation with nearest valid examples derived from discovered files.
@@ -68,4 +68,4 @@ Evidence is **repository-based** (code + tests); end-user verification in arbitr
 | F7 | Canonical final status | RW installer: `Final status: SUCCESS` / `PARTIAL` from `install_warnings`; Kanban installer aggregates `SUCCESS`/`PARTIAL`/`CANCELLED`. |
 | F8 | Existing `.cursorrules` | **Partial:** duplicate RW trigger detected → skip append, print reconciliation message, add warning → **PARTIAL** outcome. Optional diff artifact path was **not** implemented; manual review remains. |
 
-Regression tests added for placeholder validation and preview globbing: [`tests/test_install_release_workflow_patterns.py`](../../tests/test_install_release_workflow_patterns.py).
+Regression tests added for placeholder validation and preview globbing: [`tests/test_install_release_workflow_patterns.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_install_release_workflow_patterns.py).

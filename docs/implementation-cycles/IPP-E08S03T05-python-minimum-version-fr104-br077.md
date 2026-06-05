@@ -120,7 +120,7 @@ RF1–RF3 → packaging + README; RF4–RF5 → doc corpus; RF6–RF7 → kanban
 
 ### 4.1 Files to create or modify
 
-- CREATE: `docs/implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md`, `.python-version`, `tests/test_python_version_policy.py`
+- CREATE: `docs/implementation-cycles/IPP-E8S3T5-python-minimum-version-fr104-br077.md`, `.python-version`, `tests/test_python_version_policy.py`
 - UPDATE: `setup.py`, `README.md`, user-docs (4), maintenance (4), `package-management-design.md`, FR-104, BR-077, T04, FR-030, task T05
 
 ### 4.2 Dependency order
@@ -161,7 +161,7 @@ Policy → setup.py → README → user docs → maintenance → tests → FR/BR
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
 | D3 | `docs/documentation/user-docs/...` | PUBLISHED | evergreen |
-| D15 | `docs/implementation-cycles/IPP-E08S03T05-*.md` | PUBLISHED | evergreen |
+| D15 | `docs/implementation-cycles/IPP-E8S3T5-*.md` | PUBLISHED | evergreen |
 | D9 | `.python-version` | NOT_APPLICABLE | tooling hint |
 
 ---
@@ -182,4 +182,4 @@ Policy → setup.py → README → user docs → maintenance → tests → FR/BR
 - [BR-077](../project-management/kanban/fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
 - [E07:S06:T08](../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [`.github/workflows/framework-release.yml`](../../.github/workflows/framework-release.yml)
+- [`.github/workflows/framework-release.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/framework-release.yml)

@@ -28,7 +28,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [BR-094](../../../fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
-- [`git_tag_handler.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/git_tag_handler.py)
+- [`git_tag_handler.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/git_tag_handler.py)
 - [CodeQL configuration status](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/tools/CodeQL/status/configurations/automatic/02af035c656f34be1a763cec498ac15c1e93278238bf93383d8439147ad1aafc)
 
 ---
@@ -50,4 +50,4 @@ Fix Python **IndentationError** in `git_tag_handler.py` by indenting the optiona
 ## References
 
 - [BR-094](../../../fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
-- [E08:S03:T04 — CI test workflow (BR-058)](./T04-ci-test-workflow-pytest-remediation-br058.md)
+- [E08:S03:T04 — CI test workflow (BR-058)](T04-ci-test-workflow-pytest-remediation-br058.md)

@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# ICW-E2S01T15-Test-Design: FR-049 Canonical RW Step SoT
+# ICW-E2S1T15-Test-Design: FR-049 Canonical RW Step SoT
 
 **Task:** E2:S01:T15  
 **Related FR:** FR-049  

@@ -109,7 +109,7 @@ All RF1–RF12 requirements map directly to the ten deliverable files listed in 
 | 7 | Update `AGENTS.md` — Global Implementation Gate: add `/ipw [E:S:T]` as canonical Claude Code invocation | `AGENTS.md` updated |
 | 8 | Create `docs/architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md` | `ADR-004` exists |
 | 9 | Update `FR-077` — add FR-094 cross-reference in Related section | `FR-077` updated |
-| 10 | Create this IPP artifact at `docs/implementation-cycles/IPP-E2S16T09-ipw-slash-command-and-ipp-state-transition.md` | IPP exists |
+| 10 | Create this IPP artifact at `docs/implementation-cycles/IPP-E2S16T9-ipw-slash-command-and-ipp-state-transition.md` | IPP exists |
 | 11 | Update T09 task doc `Input` and `References` to link this IPP | T09 wired to IPP |
 | 12 | Run `/rw E2:S16:T09` to commit all changes | Release committed and pushed |
 | **13** | **[MANDATORY] Reconcile E2:S16:T09 status** — if all ACs satisfied: `COMPLETE` + `✅ COMPLETE (v{version})`; otherwise `IN PROGRESS`. Handled by RW Step 7 kanban reconciliation. | Task doc status correct |
@@ -118,7 +118,7 @@ All RF1–RF12 requirements map directly to the ten deliverable files listed in 
 
 - `.claude/commands/ipw.md`
 - `docs/architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md`
-- `docs/implementation-cycles/IPP-E2S16T09-ipw-slash-command-and-ipp-state-transition.md` (this file)
+- `docs/implementation-cycles/IPP-E2S16T9-ipw-slash-command-and-ipp-state-transition.md` (this file)
 
 ### 4.2 Files to modify
 

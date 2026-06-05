@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RNF1 | Docusaurus production build remains green ([`docusaurus-build.yml`](../../.github/workflows/docusaurus-build.yml)) | FR-105:NF01, FR-069 |
+| RNF1 | Docusaurus production build remains green ([`docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)) | FR-105:NF01, FR-069 |
 | RNF2 | PR noise bounded (weekly schedule, limits, Docusaurus group) | FR-105:NF02 |
 
 ### 1.3 Invariants and boundaries
@@ -84,7 +84,7 @@ RF1 → dependabot.yml; RF2 → GitHub UI + task Evidence §; RF3 → portal REA
 | E4 | Spec elsewhere | Pass | portal README triage section |
 | E5 | Documented NONE | Pass | This IPP |
 
-**Outcome:** `EXEMPT` — governing doc: [`portal/README.md`](../../portal/README.md) (Dependency updates section).
+**Outcome:** `EXEMPT` — governing doc: [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) (Dependency updates section).
 
 ---
 
@@ -153,7 +153,7 @@ UI evidence ∥ dependabot.yml → npm audit/build → docs/tests → FR → RW.
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
 | D2 | `portal/README.md` | NOT_APPLICABLE (not in docs plugin) | evergreen |
-| D6 | `docs/implementation-cycles/IPP-E08S03T06-*.md` | PUBLISHED | evergreen |
+| D6 | `docs/implementation-cycles/IPP-E8S3T6-*.md` | PUBLISHED | evergreen |
 
 ---
 
@@ -173,4 +173,4 @@ UI evidence ∥ dependabot.yml → npm audit/build → docs/tests → FR → RW.
 - [FR-069](../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
 - [E07:S06:T08](../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [`.github/workflows/docusaurus-build.yml`](../../.github/workflows/docusaurus-build.yml)
+- [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)

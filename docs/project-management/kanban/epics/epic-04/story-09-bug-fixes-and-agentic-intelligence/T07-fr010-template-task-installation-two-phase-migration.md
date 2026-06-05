@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Code:** E04S09T07
 
 **Upstream:** [FR-010 (templates)](../../../fr-br/FR-010-template-task-installation-two-phase-migration.md)  
-**Related:** [E04:S09:T06](T06-agentic-intelligence-task-mapping-fr010.md) (mapping variant)
+**Related:** [FR-010 template task installation (mapping variant)](../../../fr-br/FR-010-template-task-installation-two-phase-migration.md)
 
 Publication Status: NOT_APPLICABLE
 

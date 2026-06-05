@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Add a dedicated **UKW** sub-workflow, invoked as **`UKW -c`** (archive completed), that removes **COMPLETE** (and equivalent terminal) rows from active **MoSCOW** sections on **`kboard.md`** and **`fbuboard.md`** only **after** appending canonical entries to **`kanban-completed.md`** and **`fbu-completed.md`** respectively — without running full bookkeeping, gap discovery, or reprioritization.
+Add a dedicated **UKW** sub-workflow, invoked as **`UKW -c`** (archive completed), that removes **COMPLETE** (and equivalent terminal) rows from active **MoSCOW** sections on **`kboard.md`** and **`kboard.md`** only **after** appending canonical entries to **`kanban-completed.md`** and **`intake-completed.md`** respectively — without running full bookkeeping, gap discovery, or reprioritization.
 
 ---
 
@@ -36,8 +36,8 @@ Active boards still carry rows whose **source-of-truth** status is terminal (for
 | Area | Today | Gap |
 | ---- | ----- | --- |
 | **kboard** | Comprehensive UKW and RW Step 7 may reconcile status text on rows | No **lightweight, explicit** operator command whose **only** job is “archive completes → remove from active MoSCOW” |
-| **fbuboard** | [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) stale-row **prune** | Prune can drop active rows without a mandated **`fbu-completed.md`** append + recent-dashboard update in the same run |
-| **Completed ledgers** | [`kanban-completed.md`](../kanban-completed.md), [`fbu-completed.md`](../fbu-completed.md) | Archival must use **Documentation Agent** skills (`kanban_completed_update`, `fr_br_uxr_completed_update`) — not delete-only hygiene |
+| **fbuboard** | [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) stale-row **prune** | Prune can drop active rows without a mandated **`intake-completed.md`** append + recent-dashboard update in the same run |
+| **Completed ledgers** | [`kanban-completed.md`](../kanban-completed.md), [`intake-completed.md`](../intake-completed.md) | Archival must use **Documentation Agent** skills (`kanban_completed_update`, `fr_br_uxr_completed_update`) — not delete-only hygiene |
 | **Historical fix** | [E06:S06:T42](../epics/epic-06/story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md) (BR-042) | Addressed general cleanup; did not define a **standalone UKW flag** or dual-board contract |
 
 Operators need a **fast, safe, repeatable** UKW use case: “clean the boards” means **move** completed work to the completed ledgers, not silent deletion.
@@ -52,7 +52,7 @@ Operators need a **fast, safe, repeatable** UKW use case: “clean the boards”
 | ------- | ------- |
 | **`UKW -c`** / **`ukw -c`** | **Archive completed** — dual-board archival sub-workflow only |
 
-**Constraints (align with [FR-085](FR-085-ukw-optional-reprioritization-rp-flag.md) / [ADR-009](../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) pattern):**
+**Constraints (align with [FR-085](FR-085-ukw-optional-reprioritization-rp-flag.md) / [ADR-009](../../../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) pattern):**
 
 - **Standalone only** — do not combine `-c` with `-u`, `-p`, `-a`, or `--rp`.
 - **Does not** run UKW Step 2.5 (gap discovery), MoSCOW reprioritization, or story/epic narrative synthesis unless a row’s removal exposes a blocking inconsistency (document in run summary).
@@ -68,9 +68,9 @@ For each active MoSCOW row on **`kboard.md`**:
    - Remove row from active MoSCOW (preserve sort order for remaining rows).
 3. Emit audit lines: `archived`, `skipped (reason)`, `already in ledger`.
 
-### fbuboard (`fbu-completed.md`)
+### fbuboard (`intake-completed.md`)
 
-For each active MoSCOW row on **`fbuboard.md`**:
+For each active MoSCOW row on **`kboard.md`**:
 
 1. Resolve linked **FR / BR / UXR** doc.
 2. If source status is terminal (**COMPLETE**, **COMPLETED**, **IMPLEMENTED**, **FIXED**, **RESOLVED**) with same **unresolved-verification** exceptions as FR-076:
@@ -93,7 +93,7 @@ For each active MoSCOW row on **`fbuboard.md`**:
 
 - [ ] **FR-102-F1:** `UKW -c` runs archive-completed sub-workflow only when `-c` is present.
 - [ ] **FR-102-F2:** Every archived **task** row produces a **`kanban-completed.md`** entry before removal from **`kboard.md`**.
-- [ ] **FR-102-F3:** Every archived **FBU** row produces a **`fbu-completed.md`** entry before removal from **`fbuboard.md`**.
+- [ ] **FR-102-F3:** Every archived **FBU** row produces a **`intake-completed.md`** entry before removal from **`kboard.md`**.
 - [ ] **FR-102-F4:** Run output lists archived / skipped / already-present counts per board and ledger.
 - [ ] **FR-102-F5:** Idempotent re-run: rows already in completed ledgers are not duplicated; active rows already absent are no-ops.
 - [ ] **FR-102-F6:** Document flag in cheatsheet + Claude **`/ukw`** command mirror when [FR-093](FR-093-ukw-slash-command-claude-code.md) is updated for new flags.
@@ -115,8 +115,8 @@ For each active MoSCOW row on **`fbuboard.md`**:
 ## Acceptance criteria
 
 - [ ] Operator can run **`UKW -c`** and active MoSCOW on **`kboard.md`** contains no tasks whose task docs are **COMPLETE** (except documented exceptions).
-- [ ] Same run clears matching terminal **FBU** rows on **`fbuboard.md`** into **`fbu-completed.md`**.
-- [ ] **`kanban-completed.md`** / **`fbu-completed.md`** gain entries with consistent timestamps and version/traceability fields.
+- [ ] Same run clears matching terminal **FBU** rows on **`kboard.md`** into **`intake-completed.md`**.
+- [ ] **`kanban-completed.md`** / **`intake-completed.md`** gain entries with consistent timestamps and version/traceability fields.
 - [ ] Cheatsheet and agent SoT document `-c` and forbid flag combinations that conflict with `--rp`.
 - [ ] At least one recorded UKW run summary (task doc or IPP) demonstrates dual-board archival stats.
 
@@ -129,7 +129,7 @@ For each active MoSCOW row on **`fbuboard.md`**:
 
 - [x] UKW flags and agent execution guide
 - [x] `kboard.md` / `kanban-completed.md`
-- [x] `fbuboard.md` / `fbu-completed.md`
+- [x] `kboard.md` / `intake-completed.md`
 - [x] Cursor skills (`kanban-completed-update`, `fr-br-uxr-completed-update`, `ukw-sync`)
 - [ ] RW Step 7 (out of scope unless explicitly requested — RW already does scoped reconciliation on release)
 
@@ -139,16 +139,16 @@ For each active MoSCOW row on **`fbuboard.md`**:
 
 ## Related work
 
-- [ADR-010](../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
-- [IPP-E02S16T16](../../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
+- [ADR-010](../../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
+- [IPP-E2S16T16](../../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 - [FR-034](FR-034-ukw-granular-control-and-use-case-flags.md) — UKW flag pattern (`-u`, `-p`, `-a`)
 - [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) — fbuboard terminal prune (predecessor; `-c` adds ledger append mandate)
 - [FR-049](FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md) — completed ledger format
 - [FR-050](FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) — FBU temporal sync
-- [FR-086](FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) — canonical `kanban-completed` / `fbu-completed` naming
-- [BR-042](../fr-br/BR-042-ukw-agent-board-cleanup-failure.md) / [E06:S06:T42](../epics/epic-06/story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md)
+- [FR-086](FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) — canonical `kanban-completed` / `intake-completed` naming
+- [BR-042](BR-042-ukw-agent-board-cleanup-failure.md) / [E06:S06:T42](../epics/epic-06/story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md)
 - [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) — UKW perpetual attribution
-- [Workflow initiation cheatsheet](../../guides/workflow-initiation-cheatsheet.md)
+- [Workflow initiation cheatsheet](../../../guides/workflow-initiation-cheatsheet.md)
 
 ---
 

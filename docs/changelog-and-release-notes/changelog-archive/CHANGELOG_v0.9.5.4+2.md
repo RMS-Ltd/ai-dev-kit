@@ -46,7 +46,7 @@ Completed the Kanban Naming Hygiene and Directory Systematic Cleanup (UXR-011) b
   - epic-04/story-011: `T07-migrate-embedded-tasks-to-discrete-documents.md` (duplicate)
   - epic-04/story-014: `T01-update-packaged-rw-ukw-perpetual-tasks.md` (duplicate)
   - epic-05: `story-01-documentation-maintenance-framework.md`, `story-02-documentation-quality-assurance.md`, `story-03-documentation-automation.md`, `story-04-framework-documentation-management.md`, `story-05-legacy-repository-incorporation.md`, `story-06-policy-documentation-structure.md`, `story-07-persistent-knowledge-base-investigation.md` (7 duplicate stories)
-  - epic-06: `story-01-framework-version-management.md`, `story-02-framework-update-and-migration.md`, `story-03-framework-health-monitoring.md`, `story-04-bug-reports.md`, `story-05-feature-requests.md`, `story-06-adk-implementation-analysis-and-package-management.md` (6 duplicate stories)
+  - epic-06: `story-01-framework-version-management.md`, `story-02-framework-update-and-migration.md`, `story-07-adk-implementation-analysis-and-package-management.md`, `story-04-bug-reports.md`, `story-05-feature-requests.md`, `story-06-adk-implementation-analysis-and-package-management.md` (6 duplicate stories)
   - epic-06/story-006: `T41-windsurf-investigate-agents-skills-for-workflows.md` (duplicate)
   - epic-06/story-007: `T107-workflows-directory-structure-reorganization.md` (duplicate)
   - epic-07: `story-01-real-world-adoption-examples.md`, `story-02-migration-guides.md`, `story-03-user-onboarding-materials.md` (3 duplicate stories)
