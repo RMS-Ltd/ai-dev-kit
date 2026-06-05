@@ -18,6 +18,20 @@ TEMPLATES_ROOT = REPO_ROOT / "packages/frameworks/kanban/templates"
 PLACEHOLDER_SNIPPET = "template not found"
 
 
+def _template_path_logged(combined: str, epic_num: int) -> bool:
+    """Package templates may use legacy Epic-NN/ layout on disk (Linux CI)."""
+    sn = f"{epic_num:02d}"
+    return any(
+        needle in combined
+        for needle in (
+            f"epic-{sn}/epic-{sn}.md",
+            f"epic-{sn}.md",
+            f"Epic-{sn}/Epic-{sn}.md",
+            f"Epic-{sn}.md",
+        )
+    )
+
+
 def _load_migrate_module():
     sys.path.insert(0, str(SCRIPTS_DIR))
     spec = importlib.util.spec_from_file_location("migrate_structure", MIGRATE_SCRIPT)
@@ -39,8 +53,8 @@ def test_epic_22_23_templates_exist_in_package():
     t23 = migrator._get_epic_template_file(23)
     assert t22 is not None and t22.is_file()
     assert t23 is not None and t23.is_file()
-    assert t22.name == "epic-22.md"
-    assert t23.name == "epic-23.md"
+    assert t22.name.lower() == "epic-22.md"
+    assert t23.name.lower() == "epic-23.md"
 
 
 @pytest.fixture
@@ -105,7 +119,7 @@ def test_dry_run_logs_template_paths_for_epic_22_23(empty_project: Path) -> None
         timeout=120,
     )
     combined = result.stdout + result.stderr
-    assert "epic-22/epic-22.md" in combined or "epic-22.md" in combined
-    assert "epic-23/epic-23.md" in combined or "epic-23.md" in combined
+    assert _template_path_logged(combined, 22)
+    assert _template_path_logged(combined, 23)
     assert "Would install Epic 22 from template" in combined
     assert "Would install Epic 23 from template" in combined
