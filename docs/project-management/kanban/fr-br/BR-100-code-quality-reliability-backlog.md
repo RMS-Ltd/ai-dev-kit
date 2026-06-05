@@ -1,0 +1,89 @@
+---
+lifecycle: evergreen
+ttl_days: null
+created_at: 2026-06-05T23:00:00Z
+expires_at: null
+housekeeping_policy: keep
+---
+
+# Bug Report BR-100: GitHub Code Quality — reliability findings backlog (133 open)
+
+**Bug ID:** BR-100  
+**Priority:** HIGH  
+**Severity:** HIGH — Code Quality **Reliability** score **Needs Improvement**; **133** open standard findings on `main` (2026-06-05).  
+**Status:** OPEN  
+**Created:** 2026-06-05  
+**Last updated:** 2026-06-05 (v0.8.3.13+0 – Kanban documentation setup)  
+**Version:** v0.8.3.13+0  
+**Implementing Task:** [E08:S03:T13](../epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)  
+**Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md)
+
+---
+
+## Summary
+
+GitHub **Code Quality** reports **133 open reliability findings** on `main`, with Reliability rated **Needs Improvement**. These findings indicate latent bugs, exception-handling defects, and resource-leak patterns — higher severity than maintainability hygiene ([BR-099](BR-099-code-quality-maintainability-backlog.md)).
+
+---
+
+## Problem Description
+
+### Observed behavior (GitHub Code Quality dashboard, 2026-06-05)
+
+- **Location:** [Security & quality → Code quality → Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
+- **Filter:** `is:open`
+- **Reliability:** **Needs Improvement** — **133 findings**
+- **Scan ref:** `main` @ `5fcf102`
+
+### Top rule groups (reliability wave 1)
+
+| Rule (display name) | CodeQL id (approx.) | Risk |
+| ------------------- | ------------------- | ---- |
+| Empty except | `py/empty-except` | Swallows errors silently |
+| File is not always closed | `py/file-not-closed` | Resource leaks |
+| Use of `exit()` or `quit()` | `py/use-of-exit-or-quit` | Abrupt termination in library code |
+| Wrong number of arguments in a call | `py/call/wrong-arguments` | Runtime `TypeError` |
+| Except block handles `BaseException` | `py/catch-base-exception` | Catches `KeyboardInterrupt` / `SystemExit` |
+| Explicit returns mixed with implicit returns | `py/mixed-returns` | Inconsistent `None` returns |
+| Variable defined multiple times | `py/multiple-definition` | Shadowing / dead code paths |
+
+*(Additional reliability rules may appear below the dashboard fold.)*
+
+### Root cause
+
+- Exception and resource-handling patterns in workflow scripts and tests not audited against CodeQL reliability queries.
+- Buildless CodeQL analysis flags conservative false positives in CLI `main` blocks — triage required before bulk autofix.
+
+### Impact
+
+- Reliability score **Needs Improvement** — highest-visibility quality deficit on dashboard.
+- Latent runtime failures in automation scripts (RW/UKW validators, installers).
+- Blocks credible **Good** overall Code Quality posture until burn-down progresses.
+
+---
+
+## Acceptance criteria
+
+- [ ] **AC1 — Baseline manifest:** Export open reliability finding counts by rule + file hotspots; attach to task doc with `main` SHA.
+- [ ] **AC2 — Triage:** Classify each wave-1 rule group as **fix**, **false-positive waive** (with comment), or **defer** (with rationale).
+- [ ] **AC3 — Wave 1 fixes:** Remediate all confirmed true positives in wave-1 rule groups; no new reliability regressions in CI.
+- [ ] **AC4 — Score improvement:** Reliability improves from **Needs Improvement** to **Fair** or better (or documented GitHub scoring lag).
+- [ ] **AC5 — Kanban wiring:** **BR-100** ↔ **E08:S03:T13** linked; released via RW when wave completes.
+
+---
+
+## Remediation waves (prescribed)
+
+| Wave | Scope | Notes |
+| ---- | ----- | ----- |
+| **1** | True-positive bugs | empty except, file-not-closed, wrong-arguments |
+| **2** | Exception policy | BaseException catches, mixed returns — align with project exception guidelines |
+| **3** | CLI patterns | `exit()`/`quit()` in scripts — convert to `sys.exit(main())` pattern or document CLI-only waiver |
+
+---
+
+## Intake Decision
+
+**Intake Status:** ACCEPTED  
+**Intake Date:** 2026-06-05  
+**Assigned To:** Epic 8 / Story 3 / **E08:S03:T13**

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW: E08:S03:T12)
-**Version:** v0.8.3.12+0
+**Last Updated:** 2026-06-05 (RW: E08:S03:T13)
+**Version:** v0.8.3.13+0
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -35,6 +35,8 @@ housekeeping_policy: keep
 ### Could Have (C) - Nice-to-Have Tasks
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 📋 TODO (MEDIUM, 560 open findings) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | Last modified: 2026-06-05 11:42 UTC
+
+- **E08:S03:T13** – Code Quality reliability backlog (BR-100) - 📋 TODO (HIGH, 133 open findings) | [Task](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | Last modified: 2026-06-05 11:43 UTC
 
 - **E02:S14:T02** – Validate fresh install steps for each path - 📋 TODO (HIGH, Epic 2 workflow-mgt install evaluation) | [Task](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md) | [Story](epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) | Last modified: 2026-06-05 13:08 UTC
 

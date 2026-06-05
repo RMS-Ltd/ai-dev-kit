@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.13+0] - 05-06-26
+
+E08:S03:T13 — **Kanban init (RW -k):** Code Quality reliability backlog intake (**BR-100**, 133 findings). SemVer **v0.4.966+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.13+0.md)
+
+---
+
 ## [0.8.3.12+0] - 05-06-26
 
 E08:S03:T12 — **Kanban init (RW -k):** Code Quality maintainability backlog intake (**BR-099**, 560 findings). SemVer **v0.4.965+0**.
