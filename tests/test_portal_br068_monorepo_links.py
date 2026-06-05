@@ -19,7 +19,7 @@ import pytest
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_ROOT = REPO_ROOT / "docs"
 CHEATSHEET_PATH = DOCS_ROOT / "guides" / "workflow-initiation-cheatsheet.md"
-GITHUB_BLOB_PREFIX = "github.com/RMS-Ltd/ai-dev-kit/blob/main/"
+GITHUB_BLOB_PREFIX = "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/"
 
 # FR-066 publish excludes — not compiled by Docusaurus; relative links there are not blocking.
 EXCLUDE_PREFIXES = (
@@ -35,7 +35,7 @@ def _in_publish_scope(path: Path) -> bool:
     return not any(rel.startswith(prefix) for prefix in EXCLUDE_PREFIXES)
 
 
-def _iter_publish_scope_markdown() -> list[Path]:
+def _get_publish_scope_markdown_files() -> list[Path]:
     return sorted(p for p in DOCS_ROOT.rglob("*.md") if _in_publish_scope(p))
 
 
@@ -71,7 +71,7 @@ def _find_out_of_plugin_links(source_file: Path, text: str) -> list[str]:
 
 @pytest.fixture
 def publish_scope_files() -> list[Path]:
-    files = _iter_publish_scope_markdown()
+    files = _get_publish_scope_markdown_files()
     assert files, f"No markdown files under publish scope in {DOCS_ROOT}"
     return files
 
@@ -85,8 +85,9 @@ def test_br068_t1_publish_scope_no_out_of_plugin_relative_links(publish_scope_fi
         for hit in hits:
             rel = path.relative_to(REPO_ROOT)
             all_violations.append(f"{rel}: {hit}")
-    assert not all_violations, "Links leaving docs/ plugin root found:\n" + "\n".join(
-        all_violations[:50]
+    assert not all_violations, (
+        f"Found {len(all_violations)} links leaving docs/ plugin root "
+        f"(showing first 50):\n" + "\n".join(all_violations[:50])
     )
 
 

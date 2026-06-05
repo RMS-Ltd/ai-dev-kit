@@ -61,7 +61,7 @@ def _classify_md(rel: Path, text: str) -> tuple[Classification, str]:
         return "template", "consumer board"
 
     # FR/BR repos – these should never live in consumer kanban trees
-    if "/fr-br/" in rel_str:
+    if rel_str.startswith("fr-br/") or "/fr-br/" in rel_str:
         if "Bug Report:" in text or "Feature Request:" in text:
             return "contaminated", "FR/BR repo document"
 
@@ -75,7 +75,7 @@ def _classify_md(rel: Path, text: str) -> tuple[Classification, str]:
         parts = rel_str.split("/")
         if len(parts) >= 2 and parts[1].startswith("Epic-"):
             epic_dir = parts[1]
-            if epic_dir in CANONICAL_EPIC_PREFIXES:
+            if epic_dir.lower() in CANONICAL_EPIC_PREFIXES:
                 return "template", "canonical consumer epic overview/template"
             # Higher-numbered epics are usually dev-kit-specific in consumers
             return "contaminated", "non-canonical epic copied from dev-kit"

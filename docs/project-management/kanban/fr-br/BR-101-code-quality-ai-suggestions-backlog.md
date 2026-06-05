@@ -11,10 +11,10 @@ housekeeping_policy: keep
 **Bug ID:** BR-101  
 **Priority:** LOW  
 **Severity:** LOW — **14** open AI-powered Code Quality suggestions on recently changed files (2026-06-05).  
-**Status:** OPEN  
+**Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.14+0 – Kanban documentation setup)  
-**Version:** v0.8.3.14+0  
+**Last updated:** 2026-06-05 (v0.8.3.14+1 – RW E08:S03:T14 --art; panel 0-open pending GitHub dismiss)  
+**Version:** v0.8.3.14+1  
 **Implementing Task:** [E08:S03:T14](../epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (AI suggestions panel) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-100](BR-100-code-quality-reliability-backlog.md)
 
@@ -30,7 +30,7 @@ GitHub **Code Quality** surfaces **14 AI-powered suggestions** on recently chang
 
 ### Observed behavior (GitHub Code Quality dashboard, 2026-06-05)
 
-- **Location:** [Security & quality → Code quality → Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) — **Suggestions powered by AI** panel
+- **Location:** [Security & quality → AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) — **Suggestions powered by AI** panel (UI only; not in `code-scanning/alerts` API)
 - **Count:** **14 findings**
 - **Scope:** Recently pushed files on default branch (LLM-assisted analysis beyond CodeQL rule suite)
 
@@ -54,6 +54,18 @@ GitHub **Code Quality** surfaces **14 AI-powered suggestions** on recently chang
 - [ ] **AC3 — Apply valid fixes:** Implemented suggestions merged; CI green.
 - [ ] **AC4 — Dashboard clear:** AI suggestions panel shows 0 open items (or only explicitly waived with GitHub dismiss).
 - [ ] **AC5 — Kanban wiring:** **BR-101** ↔ **E08:S03:T14** linked; released via RW when complete.
+
+---
+
+## Attempted Fixes
+
+**2026-06-05 — E08:S03:T14 (unreleased):**
+
+- Inventoried 14 AI findings from [ai-findings panel](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings).
+- Applied 12 code/doc fixes (semver_converter, sync_greenfield_install, contamination tests/detector, portal link tests); dismissed 2 (version.py dataclass — RW contract; sync `rglob` — no benefit).
+- Targeted pytest: 7 passed.
+- **Released:** **v0.8.3.14+1** via **`RW E08:S03:T14 --art`**.
+- **Pending:** GitHub dismiss for #10–#11 on [ai-findings panel](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings); panel 0-open verification.
 
 ---
 

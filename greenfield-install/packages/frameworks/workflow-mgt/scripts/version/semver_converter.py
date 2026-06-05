@@ -22,6 +22,7 @@ Registry-based mapping ensures monotonic SemVer increases while preserving seman
 """
 
 import argparse
+import re
 import sys
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
@@ -310,15 +311,14 @@ def convert_internal_to_semver(rc: int, epic: int, story: int, task: int, build:
     major = rc
     
     # MINOR = First-seen Epic number (sequential, per RC)
-    epic_key = epic
-    if epic_key not in epic_to_minor:
+    if epic not in epic_to_minor:
         # New epic - assign next MINOR number
         existing_minors = list(epic_to_minor.values())
         minor = max(existing_minors) + 1 if existing_minors else 1
-        epic_to_minor[epic_key] = minor
+        epic_to_minor[epic] = minor
         rc_scope["epic_to_minor"] = epic_to_minor
     else:
-        minor = epic_to_minor[epic_key]
+        minor = epic_to_minor[epic]
     
     # PATCH = First-seen Story number (sequential, per RC)
     story_key = f"({epic},{story})"  # String key for (Epic, Story) combination
@@ -651,19 +651,25 @@ def semver_to_internal(semver: str) -> Optional[Tuple[int, int, int, int, int]]:
     MINOR or PATCH).
 
     Args:
-        semver: SemVer string (e.g. "0.5.39+2")
+        semver: SemVer string (e.g. "0.5.39+2" or "0.5.39"). If BUILD metadata is
+            omitted, BUILD defaults to 0.
 
     Returns:
         (rc, epic, story, task, build) with task=0, or None if not in registry.
     """
-    parts = semver.split("+")
-    if len(parts) != 2:
+    parts = semver.split("+", 1)
+    if len(parts) == 1:
+        version_str = parts[0]
+        build = 0
+    elif len(parts) == 2:
+        version_str = parts[0]
+        try:
+            build = int(parts[1])
+        except ValueError:
+            return None
+    else:
         return None
-    try:
-        build = int(parts[1])
-    except ValueError:
-        return None
-    version_parts = parts[0].split(".")
+    version_parts = version_str.split(".")
     if len(version_parts) != 3:
         return None
     try:
@@ -678,19 +684,30 @@ def semver_to_internal(semver: str) -> Optional[Tuple[int, int, int, int, int]]:
     rc_scope = registry[rc_key]
     epic_to_minor = rc_scope.get("epic_to_minor", {})
     story_to_patch = rc_scope.get("story_to_patch", {})
-    minor_to_epic = {v: k for k, v in epic_to_minor.items()}
-    patch_to_story = {v: k for k, v in story_to_patch.items()}
+
+    def _build_reverse_unique(mapping: Dict[Any, Any]) -> Optional[Dict[Any, Any]]:
+        reverse: Dict[Any, Any] = {}
+        for k, v in mapping.items():
+            if v in reverse and reverse[v] != k:
+                return None
+            reverse[v] = k
+        return reverse
+
+    minor_to_epic = _build_reverse_unique(epic_to_minor)
+    patch_to_story = _build_reverse_unique(story_to_patch)
+    if minor_to_epic is None or patch_to_story is None:
+        return None
     if minor not in minor_to_epic or patch not in patch_to_story:
         return None
     epic = minor_to_epic[minor]
     story_key = patch_to_story[patch]
-    if not isinstance(story_key, str) or not story_key.startswith("(") or not story_key.endswith(")"):
+    if not isinstance(story_key, str):
         return None
-    inner = story_key[1:-1].split(",")
-    if len(inner) != 2:
+    match = re.fullmatch(r"\(\s*(\d+)\s*,\s*(\d+)\s*\)", story_key)
+    if not match:
         return None
     try:
-        story_epic, story = int(inner[0]), int(inner[1])
+        story_epic, story = int(match.group(1)), int(match.group(2))
     except ValueError:
         return None
     if story_epic != epic:

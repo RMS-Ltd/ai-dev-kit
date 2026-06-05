@@ -115,6 +115,14 @@ def _git_ls_files(prefix: Path) -> List[str]:
         check=False,
     )
     if result.returncode != 0:
+        stderr = (result.stderr or "").strip()
+        stdout = (result.stdout or "").strip()
+        details = stderr or stdout or "no output"
+        print(
+            f"warning: `git ls-files` failed for '{rel_prefix}' "
+            f"(exit code {result.returncode}): {details}",
+            file=sys.stderr,
+        )
         return []
     return [line.strip() for line in result.stdout.splitlines() if line.strip()]
 
@@ -179,9 +187,23 @@ def _mib(nbytes: int) -> str:
     return f"{nbytes / (1024 * 1024):.2f}"
 
 
+def _validate_safe_dest(dest: Path) -> None:
+    resolved_dest = dest.resolve()
+    resolved_repo = REPO_ROOT.resolve()
+    if resolved_dest == resolved_dest.anchor:
+        raise ValueError(f"Refusing to delete unsafe destination: {resolved_dest}")
+    try:
+        resolved_dest.relative_to(resolved_repo)
+    except ValueError as exc:
+        raise ValueError(
+            f"Refusing to delete destination outside repository root: {resolved_dest}"
+        ) from exc
+
+
 def _copy_tree(src: Path, dest: Path, ignore_globs: List[str]) -> int:
     if not src.is_dir():
         raise FileNotFoundError(f"Source tree missing: {src}")
+    _validate_safe_dest(dest)
     if dest.exists():
         shutil.rmtree(dest)
     dest.mkdir(parents=True, exist_ok=True)

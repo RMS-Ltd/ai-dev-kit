@@ -4,7 +4,10 @@ Unit tests for Kanban contamination detector (E6:S01:T37).
 
 from pathlib import Path
 
-from contamination_detector import scan_kanban_tree
+try:
+    from .contamination_detector import scan_kanban_tree
+except ImportError:  # pragma: no cover - fallback for direct execution contexts
+    from contamination_detector import scan_kanban_tree
 
 
 def _write(p: Path, content: str) -> None:
@@ -51,12 +54,12 @@ def test_scan_flags_fr_br_docs(tmp_path: Path) -> None:
 
 def test_scan_flags_non_canonical_epics(tmp_path: Path) -> None:
     root = tmp_path / "docs" / "project-management" / "kanban"
-    epic1 = root / "epics" / "epic-01" / "epic-01.md"
-    epic6 = root / "epics" / "epic-06" / "epic-06.md"
+    epic1 = root / "epics" / "Epic-01" / "Epic-01.md"
+    epic6 = root / "epics" / "Epic-06" / "Epic-06.md"
     _write(epic1, "# Epic 1: Project Core\n")
     _write(epic6, "# Epic 6: Framework Management\n")
     findings = scan_kanban_tree(root)
     by_rel = {f.path.as_posix(): f for f in findings}
-    assert by_rel["epics/epic-01/epic-01.md"].classification == "template"
-    assert by_rel["epics/epic-06/epic-06.md"].classification == "contaminated"
+    assert by_rel["epics/Epic-01/Epic-01.md"].classification == "template"
+    assert by_rel["epics/Epic-06/Epic-06.md"].classification == "contaminated"
 

@@ -1,0 +1,27 @@
+{
+  "contract": "FR-092",
+  "invocation_context": "rw_step_7",
+  "release_scope": "E08:S03:T14",
+  "internal_version": "0.8.3.14+1",
+  "timestamp_utc": "2026-06-05T14:51:00Z",
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    }
+  }
+}

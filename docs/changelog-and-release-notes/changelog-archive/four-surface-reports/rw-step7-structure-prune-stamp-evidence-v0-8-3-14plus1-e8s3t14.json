@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T14": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.14+1 — release-scope reconciliation; task doc + BR-101 updated"
+    }
+  }
+}

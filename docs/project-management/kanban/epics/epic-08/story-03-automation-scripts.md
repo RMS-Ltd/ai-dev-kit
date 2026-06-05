@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.13+1 – RW E08:S03:T13)
-**Version:** v0.8.3.13+1
+**Last updated:** 2026-06-05 (v0.8.3.14+1 – RW E08:S03:T14)
+**Version:** v0.8.3.14+1
 **Code:** E8S03
 
 ---
@@ -51,7 +51,7 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 🔄 IN PROGRESS (**v0.8.3.13+1** wave-1 remediation shipped; dashboard re-scan pending) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 
-- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — 📋 TODO (**v0.8.3.14+0** kanban init; 14 AI suggestions) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
+- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — 🔄 IN PROGRESS (**v0.8.3.14+1** 12/14 applied; AI panel dismiss pending) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
 ---
 

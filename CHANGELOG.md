@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.14+1] - 05-06-26
+
+E08:S03:T14 — **Change implemented:** Code Quality AI suggestions triage (**BR-101**, 12/14 applied). SemVer **v0.4.972+1**. AI panel 0-open pending GitHub dismiss.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.14+1.md)
+
+---
+
 ## [0.6.9.24+1] - 05-06-26
 
 E06:S09:T24 — **Kanban init:** FR-111 intake — acquisition-layer ADK error codes + install error doc hygiene (task + FR wiring). SemVer **v0.4.971+1**. Implementation pending IPW.
