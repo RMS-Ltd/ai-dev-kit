@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Type:** Feature Request (FR)  
 **ID:** FR-097  
 **Submitted:** 2026-05-20  
-**Submitted By:** User — homogenized `Last modified` stamps on `kboard.md` / `fbuboard.md` undermine workload and staleness triage  
+**Submitted By:** User — homogenized `Last modified` stamps on `kboard.md` undermine workload and staleness triage  
 **Priority:** CRITICAL  
 **Severity:** HIGH  
 **Status:** RESOLVED — v0.2.15.8+2 (`RW E02:S15:T08 --art`)
@@ -56,7 +56,7 @@ Deliver, in order:
 
 ### User-visible failure
 
-Active `fbuboard.md` (and `kboard.md`) rows still share a single synthetic timestamp (e.g. `2026-04-20 15:52 UTC` on ~61 lines). That pattern implies a board-hygiene run touched every row without substantive work on most linked FBUs — making stamps **misleading** for staleness, workload, and drift analysis.
+Active `kboard.md` (and `kboard.md`) rows still share a single synthetic timestamp (e.g. `2026-04-20 15:52 UTC` on ~61 lines). That pattern implies a board-hygiene run touched every row without substantive work on most linked FBUs — making stamps **misleading** for staleness, workload, and drift analysis.
 
 ### Why FR-092 closure was insufficient
 
@@ -88,7 +88,7 @@ Active `fbuboard.md` (and `kboard.md`) rows still share a single synthetic times
 New **`validate_board_stamp_diff.py`**:
 
 - Inputs: `--before` / `--after` file paths (or stdin patch), optional `--evidence-manifest` JSON from pipeline.
-- Detect per-row stamp deltas on `kboard.md` / `fbuboard.md`.
+- Detect per-row stamp deltas on `kboard.md`.
 - For each delta, require evidence: linked source doc field change, git log touch on linked path since last stamp, or explicit release-scope manifest from RW Step 7.
 - Exit **non-zero** (blocking) if any row stamp changed without evidence — message lists row id + denial reason.
 - Integrate into RW Step 9 and UKW Step 7 validation (same severity as `validate_release_readiness.py` stamp gate).

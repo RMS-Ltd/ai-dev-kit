@@ -25,7 +25,7 @@ housekeeping_policy: keep
 | RF1 | Add optional UKW flag `--rp` (`RePrioritise`); default UKW behavior unchanged when absent | FR-085-F1, T06 AC1 |
 | RF2 | **Standalone** invocation: `UKW --rp` runs deep reprioritization only (not bundled into comprehensive, `-p`, or `-a`) | Phase 1 decision, FR-085-F2 |
 | RF3 | In `--rp` mode, analyze open tasks and FR/BR/UXR records for intent, dependencies, blockers, delivery impact | FR-085-F2/F3, T06 AC2 |
-| RF4 | Deterministic MoSCOW updates on `kboard.md` and `fbuboard.md`; idempotent on unchanged inputs | FR-085-F4/NF1, T06 AC3 |
+| RF4 | Deterministic MoSCOW updates on `kboard.md`; idempotent on unchanged inputs | FR-085-F4/NF1, T06 AC3 |
 | RF5 | Emit per-change reprioritization rationale (evidence category per moved row) in UKW Step 9 summary | FR-085-F5, T06 AC4 |
 | RF6 | Bidirectional FR-085 ↔ T06 ↔ board tracking; IPP linked from task | T06 AC5, FR-085 |
 
@@ -50,7 +50,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Enable a default-off, standalone UKW deep reprioritization mode (`--rp`) that reorders MoSCOW rows on `kboard.md` and `fbuboard.md` using explicit evidence (intent, dependencies, blockers, impact), with an audit trail and idempotent re-runs — without altering comprehensive UKW, `-p`, `-a`, or RW scoped kanban sync.
+Enable a default-off, standalone UKW deep reprioritization mode (`--rp`) that reorders MoSCOW rows on `kboard.md` using explicit evidence (intent, dependencies, blockers, impact), with an audit trail and idempotent re-runs — without altering comprehensive UKW, `-p`, `-a`, or RW scoped kanban sync.
 
 ### 2.2 Specification mapping
 
@@ -155,7 +155,7 @@ For each candidate active row, agents MUST classify using at least one of:
 | 6 | Update `.cursor/skills/ukw-sync/SKILL.md` | D7 |
 | 7 | Run V1–V8; manual V4/V5 evidence in §7 | Verification notes |
 | 8 | `RW E02:S16:T06` (use `--art` if version anchor drift) | Release; FR-085 → IMPLEMENTED |
-| **9** | **[MANDATORY]** Reconcile T06 + FR-085 to `COMPLETE` + `✅ COMPLETE (v{version})`; kboard/fbuboard IPP tails | Four-surface |
+| **9** | **[MANDATORY]** Reconcile T06 + FR-085 to `COMPLETE` + `✅ COMPLETE (v{version})`; kboard IPP tails | Four-surface |
 
 ### 4.1 Files to create or modify
 
@@ -170,7 +170,7 @@ For each candidate active row, agents MUST classify using at least one of:
 | UPDATE | `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml` |
 | UPDATE | `.cursor/skills/ukw-sync/SKILL.md` |
 | UPDATE | `docs/guides/workflow-initiation-cheatsheet.md` |
-| UPDATE | T06 task doc, FR-085, `kboard.md`, `fbuboard.md` |
+| UPDATE | T06 task doc, FR-085, `kboard.md` |
 | NONE | `CLAUDE.md`, `AGENTS.md` (cheatsheet pointer sufficient unless one-line `--rp` note desired) |
 
 ### 4.2 Dependency order
@@ -204,7 +204,7 @@ For each candidate active row, agents MUST classify using at least one of:
 | D-U7 | `.cursor/skills/ukw-sync/SKILL.md` | Deep rp guidance | Step 6 |
 | D-U8 | T06 task doc | IPP links; AC checkboxes at completion | RF6 |
 | D-U9 | `docs/project-management/kanban/fr-br/FR-085-*.md` | IMPLEMENTED at RW | RF6 |
-| D-U10 | `kboard.md`, `fbuboard.md` | IPP tail; status at RW | RF6 |
+| D-U10 | `kboard.md` | IPP tail; status at RW | RF6 |
 
 ### 5.2 New documents to create
 

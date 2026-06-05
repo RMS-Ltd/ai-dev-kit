@@ -30,8 +30,8 @@ Publication N/A Reason: This task follows the consolidated FR-042 IPW/IPP model 
 
 ## Input
 
-- Existing canonical board defaults (`kboard.md`, `fbuboard.md`) and partial supporting-doc normalization from T02/T05.
-- Wave 2 filename migration executed: `fr-br-uxr-board.md` is now alias-only and canonical queue file `fbu-open-taskless-queue.md` exists with legacy alias retained at `fr-br-uxr-open-taskless-queue.md`.
+- Existing canonical board defaults (`kboard.md`) and partial supporting-doc normalization from T02/T05.
+- Wave 2 filename migration executed: `fr-br-uxr-board.md` is now alias-only and canonical queue file `intake-open-taskless-queue.md` exists with legacy alias retained at `fr-br-uxr-open-taskless-queue.md`.
 - FR-073 AC3 closure evidence is recorded through Wave 4 scoped reconciliation across queue/board/FR surfaces under T06 ownership.
 
 ---
@@ -67,8 +67,8 @@ FBU naming and intake-governance ownership is currently split across multiple ta
 - [x] **AC3:** Canonical supporting-doc naming policy and deterministic migration map are documented in `IPP-E04S19T06`.
 - [x] **AC4:** `FBU` collective terminology standard is applied in scoped docs without renaming individual issue identities.
 - [x] **AC5:** Legacy compatibility behavior (aliases/redirect notes) is documented for any retained long-form paths.
-- [x] **AC6:** FR-073 AC3 closure work (scoped board/statistics reconciliation) is explicitly planned and traceably wired to this task. *(Wave 4 evidence: `fbu-open-taskless-queue.md` snapshot refresh + `fbuboard.md` statistics/governance reconciliation + FR-073 AC3 closure update.)*
-- [x] **AC7:** `fbuboard.md`, Story 019 checklist, and all three FBU docs point to the T06 task + T06 IPP consistently.
+- [x] **AC6:** FR-073 AC3 closure work (scoped board/statistics reconciliation) is explicitly planned and traceably wired to this task. *(Wave 4 evidence: `intake-open-taskless-queue.md` snapshot refresh + `kboard.md` statistics/governance reconciliation + FR-073 AC3 closure update.)*
+- [x] **AC7:** `kboard.md`, Story 019 checklist, and all three FBU docs point to the T06 task + T06 IPP consistently.
 
 ---
 

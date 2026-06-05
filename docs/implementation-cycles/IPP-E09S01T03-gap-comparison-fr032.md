@@ -26,7 +26,7 @@ housekeeping_policy: keep
 | RF2 | Map gaps to **E:S:T / FR / epic** where possible | FR-032 traceability |
 | RF3 | Cross-reference **framework-review dimensions** (E9:S02–S04 scope) | Story 1 overview |
 | RF4 | **FR-032 implementing task** = E09:S01:T03; E05:S01:T32 historical | T03 AC2 |
-| RF5 | **kboard/fbuboard** IPP link on completion; no MoSCOW edits in T03 | T03 AC3, RNF3 |
+| RF5 | **kboard** IPP link on completion; no MoSCOW edits in T03 | T03 AC3, RNF3 |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -119,7 +119,7 @@ Deliver a **gap-comparison report** quantifying distance from RC=0 / current kan
 | `…/T02-rc1-criteria-definition.md` | CREATE |
 | `…/T03-gap-comparison-fr032-report.md` | CREATE |
 | `…/T03-gap-analysis-fr032.md` | UPDATE |
-| `kboard.md`, `fbuboard.md`, `story-01-rc-readiness-gap-analysis.md` | UPDATE on RW |
+| `kboard.md`, `story-01-rc-readiness-gap-analysis.md` | UPDATE on RW |
 | `FR-032-…md`, `E05:…/T32-…md` | UPDATE (optional) |
 
 ---
@@ -133,7 +133,7 @@ Deliver a **gap-comparison report** quantifying distance from RC=0 / current kan
 | D-C3 | `…/T02-rc1-criteria-definition.md` | CREATE |
 | D-C4 | `…/T03-gap-comparison-fr032-report.md` | CREATE |
 | D-U1 | `…/T03-gap-analysis-fr032.md` | UPDATE |
-| D-U2 | `kboard.md`, `fbuboard.md` | UPDATE (RW) |
+| D-U2 | `kboard.md` | UPDATE (RW) |
 | D-NONE | Versioning policy, new ADR | NONE — cite only |
 
 ---

@@ -1,0 +1,84 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 4,
+    "story": 19,
+    "task": 12,
+    "task_id": "E4:S19:T12",
+    "version_string": "v0.4.19.12+5"
+  },
+  "timestamp_utc": "2026-06-05 01:54:01 UTC",
+  "surfaces": {
+    "task_doc": {
+      "name": "task_doc",
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md"
+      ],
+      "touched": true,
+      "changes": [
+        "Version anchor v0.4.19.12+5; intake rename wave closure note"
+      ],
+      "notes": []
+    },
+    "fbu_doc": {
+      "name": "fbu_doc",
+      "paths": [
+        "docs/project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md"
+      ],
+      "touched": true,
+      "changes": [
+        "Version v0.4.19.12+5; resolved-through +5 intake rename"
+      ],
+      "notes": []
+    },
+    "kboard": {
+      "name": "kboard",
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "touched": true,
+      "changes": [
+        "Board metadata Last Updated / Version v0.4.19.12+5"
+      ],
+      "notes": []
+    }
+  },
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "name": "story_doc",
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md"
+      ],
+      "touched": true,
+      "changes": [
+        "T12 checklist + tactical overview v0.4.19.12+5"
+      ],
+      "notes": []
+    },
+    "epic_doc": {
+      "name": "epic_doc",
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/epic-04.md"
+      ],
+      "touched": true,
+      "changes": [
+        "E4:S19 version context v0.4.19.12+5"
+      ],
+      "notes": []
+    }
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": [],
+    "total_changes": 5,
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 0
+  }
+}

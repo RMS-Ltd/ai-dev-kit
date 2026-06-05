@@ -70,22 +70,22 @@ Add new steps to `ukw-sync` skill:
 ```
 Step 7: FR/BR/UXR Synchronization
 - Analyze FR/BR/UXR completion status based on task completion
-- Update fbuboard.md with latest status and metadata
+- Update kboard.md with latest status and metadata
 - Remove completed items from active board
 
 Step 8: FR/BR/UXR Temporal Tracking
-- Add ISO 8601 completion timestamps to fbu-completed.md
+- Add ISO 8601 completion timestamps to intake-completed.md
 - Create recent completions dashboard (20 most recent)
 - Maintain consistent format with kanban-completed.md
 
 Step 9: FR/BR/UXR Structure Updates
-- Update fbu-structure.md with current inventory
+- Update intake-structure.md with current inventory
 - Ensure cross-reference integrity across all FR/BR/UXR docs
 - Validate consistency between board, structure, and completed docs
 ```
 
 #### **3. Temporal Dashboard Implementation**
-Add recent completions dashboard to `fbu-completed.md`:
+Add recent completions dashboard to `intake-completed.md`:
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
@@ -113,7 +113,7 @@ Add recent completions dashboard to `fbu-completed.md`:
 
 #### **AC-108.3: Agent Coordination Interface**
 - [ ] Standard update interface for all agents updating FR/BR/UXR completions
-- [ ] Documentation Agent ultimate responsibility for fbu-completed.md
+- [ ] Documentation Agent ultimate responsibility for intake-completed.md
 - [ ] Built-in validation and consistency checking
 - [ ] Complete audit trail of all updates with agent attribution
 - [ ] Error handling and rollback capabilities
@@ -126,7 +126,7 @@ Add recent completions dashboard to `fbu-completed.md`:
 - [ ] Integration with existing UKW steps without breaking changes
 
 #### **AC-108.5: Structure Synchronization**
-- [ ] Update fbu-structure.md with current inventory
+- [ ] Update intake-structure.md with current inventory
 - [ ] Ensure cross-reference integrity across all FR/BR/UXR docs
 - [ ] Validate consistency between board, structure, and completed docs
 - [ ] Update board metadata and version references
@@ -214,7 +214,7 @@ Add recent completions dashboard to `fbu-completed.md`:
 ### **Phase 3: Dashboard Implementation (1 day)**
 
 #### **Day 4 Tasks:**
-- [ ] Add recent completions dashboard to fbu-completed.md
+- [ ] Add recent completions dashboard to intake-completed.md
 - [ ] Implement auto-sorting and format consistency
 - [ ] Add agent coordination tracking
 - [ ] Update historical completions with estimated timestamps
@@ -274,9 +274,9 @@ Add recent completions dashboard to `fbu-completed.md`:
 - Preserve bottom-up approach and intelligent inference
 
 #### **TR-108.5: Documentation Integration**
-- Update fbuboard.md with synchronization logic
-- Enhance fbu-completed.md with temporal tracking
-- Maintain fbu-structure.md inventory consistency
+- Update kboard.md with synchronization logic
+- Enhance intake-completed.md with temporal tracking
+- Maintain intake-structure.md inventory consistency
 - Ensure cross-reference integrity
 
 ### **Quality Requirements**
@@ -385,9 +385,9 @@ Add recent completions dashboard to `fbu-completed.md`:
 ### **Primary Deliverables**
 1. **Extended ukw-sync skill** with Steps 7-9 for FR/BR/UXR handling
 2. **fr_br_uxr_completed_update skill** for Documentation Agent
-3. **Enhanced fbu-completed.md** with temporal tracking and dashboard
-4. **Updated fbuboard.md** with synchronization logic
-5. **Validated fbu-structure.md** with consistent inventory
+3. **Enhanced intake-completed.md** with temporal tracking and dashboard
+4. **Updated kboard.md** with synchronization logic
+5. **Validated intake-structure.md** with consistent inventory
 
 ### **Secondary Deliverables**
 1. **Comprehensive test suite** for all new functionality

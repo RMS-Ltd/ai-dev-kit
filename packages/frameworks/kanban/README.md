@@ -609,7 +609,7 @@ The Kanban board uses a **split pattern** to optimize for quick scanning:
 
 **Templates:**
 - `templates/KANBAN_BOARD_TEMPLATE.md` - Board template (structured information only; includes Verification (V) band per ADR-018)
-- `templates/FBUBOARD_STUB_TEMPLATE.md` - Deprecated redirect stub (`fbuboard.md` on `--mode fresh`)
+- Fresh install emits `kboard.md` only (no `fbuboard.md` / `kanban-board.md` stub)
 - `templates/KANBAN_STRUCTURE_TEMPLATE.md` - Epic/Story/Task structure scaffold (`kanban-structure.md` on `--mode fresh`)
 - `templates/KANBAN_BOARD_GUIDE_TEMPLATE.md` - Guide template (rules/explanations)
 

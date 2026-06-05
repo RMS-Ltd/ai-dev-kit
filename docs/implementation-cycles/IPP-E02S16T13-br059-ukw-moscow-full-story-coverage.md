@@ -40,7 +40,7 @@ housekeeping_policy: keep
 
 - **Invariants:** Story task checklist is SoT for which tasks exist; `kboard.md` MoSCOW must reflect all open work or explicit Won't deferral.
 - **In scope:** UKW agent docs, optional `validate_story_moscow_coverage.py`, T13/BR-059/story-016 wiring, dry-run evidence.
-- **Out of scope:** `fbuboard.md` FBU rows; `--rp` reprioritization; reactivating **E06:S07:T109** for RW; blocking RW on this validator.
+- **Out of scope:** `kboard.md` FBU rows; `--rp` reprioritization; reactivating **E06:S07:T109** for RW; blocking RW on this validator.
 
 ---
 

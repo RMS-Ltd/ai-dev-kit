@@ -42,7 +42,7 @@ How should board update workflows preserve forensic integrity so `Last modified`
 
 ## Findings So Far
 
-1. `fbuboard.md` currently shows broad timestamp homogenization (many rows with the same minute), indicating rewrite-driven updates rather than work-driven updates.
+1. `kboard.md` currently shows broad timestamp homogenization (many rows with the same minute), indicating rewrite-driven updates rather than work-driven updates.
 2. This behavior makes at-a-glance drift inspection unreliable and undermines temporal triage.
 3. Current logic appears to conflate "row touched by workflow" with "underlying work occurred."
 
@@ -81,7 +81,7 @@ How should board update workflows preserve forensic integrity so `Last modified`
 
 ## References
 
-- [fbuboard](../fbuboard.md)
+- [fbuboard](../kboard.md)
 - [kboard](../kboard.md)
 - [T110](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [T115](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)

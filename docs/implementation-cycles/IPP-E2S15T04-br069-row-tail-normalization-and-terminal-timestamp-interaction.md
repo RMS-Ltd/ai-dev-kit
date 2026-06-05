@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E2:S15:T04 - Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) **(E2:S15:T04)**  
-**Planning for:** [BR-069 - kboard/fbuboard earliest `Last modified` timestamps overwritten / task-ID multiplication](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
+**Planning for:** [BR-069 - kboard earliest `Last modified` timestamps overwritten / task-ID multiplication](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
 **Status:** Published
 
 ---
@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ### 1.1 Goal
 
-Isolate why MoSCOW rows on `kboard.md` and `fbuboard.md` still exhibit **forensic timestamp churn** and **traceability segment multiplication** after FR-089 / E2:S15:T03 guardrails. Deliver a concrete **root-cause narrative**, **ordering invariants**, and **implementation-ready guardrails** so touch-only and reconciliation flows cannot shift preserved historical evidence or append duplicate FBU/task segments.
+Isolate why MoSCOW rows on `kboard.md` still exhibit **forensic timestamp churn** and **traceability segment multiplication** after FR-089 / E2:S15:T03 guardrails. Deliver a concrete **root-cause narrative**, **ordering invariants**, and **implementation-ready guardrails** so touch-only and reconciliation flows cannot shift preserved historical evidence or append duplicate FBU/task segments.
 
 ### 1.2 Functional requirements
 

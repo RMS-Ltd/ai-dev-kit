@@ -106,7 +106,7 @@ RF1–RF3 delivered via story-000 rewrite and anchor banners. RF4 via T10 migrat
 | **1** | Transition E04:S19:T10 TODO → IN PROGRESS | Task doc updated |
 | 2 | Wave 1: Hollow story-000; epic-07 S00 row | RF1 |
 | 3 | Wave 2: Historical banners T01–T06 | RF2 |
-| 4 | Wave 3: UXR-005 + kboard/fbuboard | RF3 |
+| 4 | Wave 3: UXR-005 + kboard | RF3 |
 | 5 | Wave 4: Intake skill, FR_BR_INTAKE_GUIDE, KG-R2 | RF5 |
 | 6 | Wave 5: Migration table, BR-076, T08 note, story checklist | RF4, RF6 |
 | **N** | Reconcile T10 COMPLETE + RW | Version marker, boards |
@@ -116,7 +116,7 @@ RF1–RF3 delivered via story-000 rewrite and anchor banners. RF4 via T10 migrat
 - `docs/project-management/kanban/epics/epic-07/story-00-uxr-repo.md`
 - `docs/project-management/kanban/epics/epic-07/story-00-uxr-repo/T0*.md` (6 files)
 - `docs/project-management/kanban/fr-br/UXR-005-*.md`, `BR-076-*.md`
-- `docs/project-management/kanban/kboard.md`, `fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - `.cursor/skills/intake-process/SKILL.md`
 - `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`, `kanban-governance-policy.md`
 - T10, T08, story-019, epic-04, epic-07

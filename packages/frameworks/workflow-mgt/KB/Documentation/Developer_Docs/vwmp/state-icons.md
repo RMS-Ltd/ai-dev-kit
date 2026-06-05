@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Prefix every active MoSCOW row on `kboard.md` and `fbuboard.md` with a **canonical Set A (emoji)** icon immediately before the status word (e.g. `TODO`, `IN PROGRESS`, `WAITING`, `IN REVIEW`, `RESOLVED`), while keeping the status text for grep and legacy validators.
+Prefix every active MoSCOW row on `kboard.md` with a **canonical Set A (emoji)** icon immediately before the status word (e.g. `TODO`, `IN PROGRESS`, `WAITING`, `IN REVIEW`, `RESOLVED`), while keeping the status text for grep and legacy validators.
 
 ## Task-board extensions (UXR-019)
 

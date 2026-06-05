@@ -306,7 +306,7 @@ This section prescribes the exact changes for each document. Implementation must
 | ---- | ------ | ----------- |
 | **1** | **[MANDATORY]** Confirm `E02:S16:T03` **`IN PROGRESS`**; refresh `Last updated`. | Task doc |
 | **2** | Run BR-067 R1–R5 regression; record in BR-067 + T03 Verification Evidence. | Evidence table |
-| **3** | Set BR-067 **RESOLVED**; sync kboard/fbuboard rows. | Boards |
+| **3** | Set BR-067 **RESOLVED**; sync kboard rows. | Boards |
 | **4** | Fix active kanban/FR/BR stale `epic-06/story-007` T03 paths → story-016 T03/T04. | Link hygiene |
 | **5** | **3B (T02-gated):** **Entry gate** — [T02](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) AC1–AC5 complete; required artifact [`IPP-E2S16T02-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md) (CREATE on T02 IPW) linked from T01, T02, and T03. Then: apply reference map (active kanban + agreed archive surfaces), document before/after stale `epic-06/story-007` path counts, mark T03 AC4 `[x]`, `RW E02:S16:T03 --art`. | Deferred until gate |
 | **6** | Update IPP §7 Tranche 3 checkboxes. | IPP current |
@@ -324,7 +324,7 @@ This section prescribes the exact changes for each document. Implementation must
 | D1 | `docs/implementation-cycles/IPP-E02S16T03-rehouse-workflow-perpetual-tasks.md` | UPDATE | Tranche 3 |
 | D2 | T03 task doc | UPDATE | BR-067; 3A hygiene |
 | D3 | `fr-br/BR-067-*.md` | UPDATE | RESOLVED |
-| D4 | `kboard.md`, `fbuboard.md` | UPDATE | Rows |
+| D4 | `kboard.md` | UPDATE | Rows |
 | D5 | story-016 doc | UPDATE | Checklist |
 | D6 | Active kanban FR/BR/epic subset | UPDATE | RF-T03-3 |
 

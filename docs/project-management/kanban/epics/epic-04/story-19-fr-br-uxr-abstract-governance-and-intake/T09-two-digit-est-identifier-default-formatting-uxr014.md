@@ -29,7 +29,7 @@ Publication Status: NOT_APPLICABLE
 
 - [UXR-014](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) findings and recommendations.
 - [IPP-E4S19T09-two-digit-est-identifier-default-formatting.md](../../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
-- Current mixed inline notation on `kboard.md`, `fbuboard.md`, and story checklists.
+- Current mixed inline notation on `kboard.md`, and story checklists.
 - Existing **`Exx:Sxx:Txx`** policy language in kanban governance and templates.
 - Parser tolerance patterns in workflow validators.
 
@@ -53,7 +53,7 @@ Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and 
 ## Scope
 
 1. Policy/guide updates (`kanban-governance-policy.md`, `kanban-board-guide.md` or equivalent).
-2. Active `kboard.md` / `fbuboard.md` normalization for `<10` components.
+2. Active `kboard.md` normalization for `<10` components.
 3. Agent/workflow guidance (`.cursorrules` excerpt, intake skill, RW/UKW Step 7 notes) — **default padded output**.
 4. Document parser tolerance (accept unpadded legacy; do not require mass historical rewrites outside active surfaces).
 
@@ -69,7 +69,7 @@ Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and 
 
 - [x] **AC1:** Governance policy explicitly requires two-digit default for **E, S, and T** in inline notation with `<10` examples.
 - [x] **AC2:** Board guide documents write-default vs read-tolerance.
-- [x] **AC3:** Active kboard/fbuboard rows use padded E/S/T for components `<10`; full kanban corpus normalized.
+- [x] **AC3:** Active kboard rows use padded E/S/T for components `<10`; full kanban corpus normalized.
 - [x] **AC4:** Agent/intake/RW/UKW guidance defaults to padded form on new writes (`est_format.py`, `.cursorrules`, intake skill).
 - [x] **AC5:** UXR-014 status moves to ACCEPTED when AC1–AC4 are satisfied; task reconciled to actual state.
 
@@ -89,4 +89,4 @@ Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and 
 - [IPP-E4S19T09-two-digit-est-identifier-default-formatting.md](../../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [kboard](../../../kboard.md)
-- [fbuboard](../../../fbuboard.md)
+- [fbuboard](../../../kboard.md)

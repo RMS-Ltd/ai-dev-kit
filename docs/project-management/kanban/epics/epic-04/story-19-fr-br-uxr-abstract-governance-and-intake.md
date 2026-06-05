@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-02  
-**Last updated:** 2026-06-05 (v0.4.19.12+4 – T12 COMPLETE / UXR-020 closure)
-**Version:** v0.4.19.12+4
+**Last updated:** 2026-06-05 (v0.4.19.12+5 – T12 intake rename wave)
+**Version:** v0.4.19.12+5
 **Code:** E4S19  
 
 **Story type:** Ongoing governance (not a perpetual “repo ledger”; not a dumping ground for individual **FR-### / BR-### / UXR-###** implementation work).
@@ -30,7 +30,7 @@ housekeeping_policy: keep
 - [x] **E04:S19:T03 – `E6:S07` default-housing drift investigation + closure decision (FR-087)** - ✅ COMPLETE (HIGH, v0.4.19.3+2 + v0.4.19.3+0 — Wave 2–4: report, **`split/re-house`**, active re-housings; guardrail filing open) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md) | [FR-087](../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) | IPP: [`IPP-E04S19T03`](../../../../implementation-cycles/IPP-E04S19T03-e6s07-default-housing-drift-investigation.md) | Report: [`E04S19T03-e6s07-default-housing-investigation-report.md`](../../../../implementation-cycles/E04S19T03-e6s07-default-housing-investigation-report.md)
 
 
-- [x] **E04:S19:T04 – kboard/fbuboard `IPP` segment after FBU/task links (UXR-010)** - ✅ COMPLETE (HIGH, formalize row-link ordering and deterministic `—No IPP—` fallback token when planning artifact is absent) (v0.4.19.4+5) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) | [UXR-010](../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) | [IPP](../../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
+- [x] **E04:S19:T04 – kboard `IPP` segment after FBU/task links (UXR-010)** - ✅ COMPLETE (HIGH, formalize row-link ordering and deterministic `—No IPP—` fallback token when planning artifact is absent) (v0.4.19.4+5) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) | [UXR-010](../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) | [IPP](../../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
 
 
 - [x] **E04:S19:T05 – Kanban and FR/BR/UXR filename normalization (UXR-008)** - SUPERSEDED (execution ownership consolidated into **E04:S19:T06**; retain T05 history and artifacts) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md) | [UXR-008](../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md) | [FR-086](../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md) | [E04:S19:T06](story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
@@ -52,7 +52,7 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T11 – Kanban epic/story path lowercase naming (UXR-017)** - ✅ COMPLETE (v0.4.19.11+1 — GH #12–#20 closed; adopter replay verified) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
-- [x] **E04:S19:T12 – Single-board consolidation — retire `fbuboard` (UXR-020 R3)** - ✅ COMPLETE (**v0.4.19.12+4** — Waves 1–4; kanban-root legacy alias removal) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP-E04S19T12](../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
+- [x] **E04:S19:T12 – Single-board consolidation — retire `fbuboard` (UXR-020 R3)** - ✅ COMPLETE (**v0.4.19.12+5** — intake rename: `fbu-*` → `intake-*`; `fbuboard`/`kanban-board` deleted) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP-E04S19T12](../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 ---
 
@@ -92,7 +92,7 @@ This story holds **Epic 4 (Kanban framework) responsibility for FR / BR / UXR in
 
 ## Tactical overview (2026-06-01)
 
-**Shipped this story:** **T12** complete — **UXR-020 R3** single-board consolidation (**ADR-018**, **v0.4.19.12+4**); `kboard` sole active MoSCOW; kanban-root `fr-br-uxr-*` aliases removed. Prior: **T07–T11** (FR-072, UXR-014/017, etc.). **Open:** **T01** charter (baseline; BR-060 implementing work lives **E02:S01:T09**).
+**Shipped this story:** **T12** complete — **UXR-020 R3** single-board consolidation (**ADR-018**, **v0.4.19.12+5**); `kboard` sole active MoSCOW; `intake-*` naming; legacy dual-board files removed. Prior: **T07–T11** (FR-072, UXR-014/017, etc.). **Open:** **T01** charter (baseline; BR-060 implementing work lives **E02:S01:T09**).
 
 ## Goals
 
@@ -106,4 +106,4 @@ This story holds **Epic 4 (Kanban framework) responsibility for FR / BR / UXR in
 
 **Coordinates with:** Epic 5 (docs), Epic 6 / 7 (BR/UXR repos), Epic 2 (workflows), `packages/frameworks/kanban/`.
 
-**References:** `kanban-governance-policy.md`, `FR_BR_INTAKE_GUIDE.md`, `.cursor/skills/intake-process/SKILL.md`, `fbuboard.md`.
+**References:** `kanban-governance-policy.md`, `FR_BR_INTAKE_GUIDE.md`, `.cursor/skills/intake-process/SKILL.md`, `kboard.md`.

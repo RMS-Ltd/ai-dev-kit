@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Consolidate every open architectural, contract, implementation-drift, and enforcement gap that contributes to RW publishing without producing the canonical release-scope consistency the user expects (clean `task` + `FR/BR/UXR` + `kboard.md`; legacy four-surface included `fbuboard.md` until [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) **v0.4.19.12+1**). This meta-FR supersedes [FR-091](FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md), [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md), and [FR-084](FR-084-ipp-post-run-governance-reconciliation-ownership.md), gates closure of [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) / [BR-070](BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md) / [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), and wires already-implemented predecessors (FR-038 / FR-040 / FR-015 / FR-089 / FR-076 / BR-036 / BR-062 / BR-042 / UXR-006) as historical evidence with explicit drift assessment.
+Consolidate every open architectural, contract, implementation-drift, and enforcement gap that contributes to RW publishing without producing the canonical release-scope consistency the user expects (clean `task` + `FR/BR/UXR` + `kboard.md`; legacy four-surface included `kboard.md` until [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) **v0.4.19.12+1**). This meta-FR supersedes [FR-091](FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md), [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md), and [FR-084](FR-084-ipp-post-run-governance-reconciliation-ownership.md), gates closure of [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) / [BR-070](BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md) / [UXR-009](UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), and wires already-implemented predecessors (FR-038 / FR-040 / FR-015 / FR-089 / FR-076 / BR-036 / BR-062 / BR-042 / UXR-006) as historical evidence with explicit drift assessment.
 
 ---
 
@@ -31,7 +31,7 @@ Consolidate every open architectural, contract, implementation-drift, and enforc
 
 ### Outcome drift across "implemented" and "complete" work
 
-Despite multiple delivered tasks (T03/FR-089 IMPLEMENTED, T05/FR-090 Phase-4 evidence asserts AC1-AC6 satisfied, T04/BR-069 narrowed and signed off), the user-visible outcome — clean `kboard.md` / `fbuboard.md` after every `RW` — is still not produced. The most recent `RW E02:S15:T04 --art` performed a scoped metadata pass only; live boards continued to exhibit BR-069-class symptoms (multiplied tail tokens, stale row footers).
+Despite multiple delivered tasks (T03/FR-089 IMPLEMENTED, T05/FR-090 Phase-4 evidence asserts AC1-AC6 satisfied, T04/BR-069 narrowed and signed off), the user-visible outcome — clean `kboard.md` after every `RW` — is still not produced. The most recent `RW E02:S15:T04 --art` performed a scoped metadata pass only; live boards continued to exhibit BR-069-class symptoms (multiplied tail tokens, stale row footers).
 
 ### Root systemic cause
 
@@ -61,9 +61,9 @@ A single meta program that:
 
 ### Bucket B — Implementation-claimed but outcome-not-achieved (DRIFT)
 
-- **B1** [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) canonical row transform engine — [T05 Phase-4 evidence](../../../implementation-cycles/IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090.md) marks AC1-AC6 satisfied, yet live `fbuboard.md` rows still exhibit duplicated tail tokens
+- **B1** [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) canonical row transform engine — [T05 Phase-4 evidence](../../../implementation-cycles/IPP-E02S15T05-ukw-rw-canonical-row-transform-engine-fr090.md) marks AC1-AC6 satisfied, yet live `kboard.md` rows still exhibit duplicated tail tokens
 - **B2** [FR-089](FR-089-ipw-board-row-footer-duplication-validation-hardening.md) duplicate-footer multiplication hardening flagged `IMPLEMENTED v0.2.15.3+2` yet multiplication observed on live boards
-- **B3** [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) narrowed, but residual `Last modified` / `Task` / `FBU` repetition still present on live `kboard.md` / `fbuboard.md`
+- **B3** [BR-069](BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) narrowed, but residual `Last modified` / `Task` / `FBU` repetition still present on live `kboard.md`
 - **B4** RW Step 7 routes only metadata-touched rows through `apply_canonical_row_transform_pipeline(...)`, never the full corpus
 
 ### Bucket C — Preventive enforcement gaps (UNIMPLEMENTED)
@@ -121,7 +121,7 @@ A single meta program that:
 - [x] **FR-092-F3 (Drift reproduction + fix):** Each Bucket-B item reproduced on canonical fixtures, root-caused, fixed, and proven on live boards. *(Wave 4 corpus sweep + B1 regex fix + Test 4.20 + live sweep evidence in `fr092-wave4-corpus-sweep-evidence.md`)*
 - [x] **FR-092-F4 (Preventive gates):** Each Bucket-C item implemented as a validator wired into RW so commits are blocked on failure. *(Wave 5 stage-set completeness; Wave 6 forensic stamp evidence; Wave 7 release-readiness gate composes all into RW Step 10)*
 - [x] **FR-092-F5 (Predecessor evidence):** Each Bucket-D predecessor has explicit verification evidence in the FR-092 traceability matrix. *(Wave 1 predecessor matrix in IPP §5; Gate 2 verifies supersede chain on every release)*
-- [x] **FR-092-F6 (Corpus sweep):** Retroactive corpus-level normalization run once over `kboard.md` and `fbuboard.md`; resulting boards show zero duplicate tail tokens and zero synthetic stamp churn. *(Wave 4 + Wave 8: live sweep `rows_changed=0`, `dup_rows=0`, `stamps_appended_with_evidence=0`, `stamps_preserved_existing=109` across all 4 active boards)*
+- [x] **FR-092-F6 (Corpus sweep):** Retroactive corpus-level normalization run once over `kboard.md`; resulting boards show zero duplicate tail tokens and zero synthetic stamp churn. *(Wave 4 + Wave 8: live sweep `rows_changed=0`, `dup_rows=0`, `stamps_appended_with_evidence=0`, `stamps_preserved_existing=109` across all 4 active boards)*
 - [x] **FR-092-F7 (Supersede chain):** FR-091 / FR-090 / FR-084 absorbed; T02 / T05 / T06 marked SUPERSEDED with redirect; BR-069 / BR-070 / UXR-009 closure gated on FR-092 sign-off. *(Wave 0 + Gate 2 verified live)*
 
 ### Non-Functional Requirements
@@ -136,10 +136,10 @@ A single meta program that:
 ## Acceptance Criteria
 
 - [x] **AC-M1:** All Bucket-A architectural gaps codified in `.cursorrules` + `release-workflow-agent-execution.md` + `kanban-governance-policy.md` + IPW governance. *(Waves 2+5+6; Gate 1 verifies; IPW cross-link is INFO-level)*
-- [x] **AC-M2:** All Bucket-B drift items reproduced on canonical fixtures, root-caused, fixed, and proven on live `kboard.md` + `fbuboard.md`. *(Wave 4 B1 regex fix; Test 4.20; live sweep evidence)*
+- [x] **AC-M2:** All Bucket-B drift items reproduced on canonical fixtures, root-caused, fixed, and proven on live `kboard.md` + `kboard.md`. *(Wave 4 B1 regex fix; Test 4.20; live sweep evidence)*
 - [x] **AC-M3:** All Bucket-C preventive gates implemented and wired into RW (commit blocked when any gate fails). *(Waves 5+6+7; Wave 8 live demo: Gate 5 correctly blocked an unstaged-Step-7 commit; readiness gate exit 1)*
 - [x] **AC-M4:** All Bucket-D predecessors confirmed closed with explicit evidence link in FR-092 traceability matrix. *(Wave 1 §5 matrix + Gate 2 verification)*
-- [x] **AC-M5:** Corpus-level retroactive sweep run; resulting `kboard.md` / `fbuboard.md` show zero duplicate tail tokens and zero synthetic stamp churn. *(Wave 4 + Wave 8 live sweep)*
+- [x] **AC-M5:** Corpus-level retroactive sweep run; resulting `kboard.md` show zero duplicate tail tokens and zero synthetic stamp churn. *(Wave 4 + Wave 8 live sweep)*
 - [x] **AC-M6:** FR-091 / FR-090 / FR-084 absorbed; T02 / T05 / T06 marked SUPERSEDED; BR-069 / BR-070 / UXR-009 closure gated on FR-092. *(Wave 0 + Gate 2)*
 - [x] **AC-M7:** Sign-off RW dry-run produces a clean four-surface diff with "touched surfaces + why" report. *(Wave 8 dry-run: corpus sweep clean; FourSurfaceReport persisted; ReadinessReport persisted with Gates 1-4, 6, 7 PASS and Gate 5 correctly identifying in-progress unstaged work — exactly the pre-commit boundary it is contracted to enforce)*
 

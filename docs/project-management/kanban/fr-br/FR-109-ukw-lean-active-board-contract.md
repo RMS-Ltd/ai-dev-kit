@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Codify and enforce that **`kboard.md`** and **`fbuboard.md`** list **live work only** in MoSCOW sections. Terminal tasks/FBUs, journal lines, archive footnotes, and legacy fbuboard boilerplate belong in **`kanban-completed.md`** / **`fbu-completed.md`** or task/FR docs — not on active boards.
+Codify and enforce that **`kboard.md`** and **`kboard.md`** list **live work only** in MoSCOW sections. Terminal tasks/FBUs, journal lines, archive footnotes, and legacy fbuboard boilerplate belong in **`kanban-completed.md`** / **`intake-completed.md`** or task/FR docs — not on active boards.
 
 ---
 
@@ -36,7 +36,7 @@ UKW **BR-059** coverage and bidirectional FBU mirroring inflated active boards (
 
 1. **Policy + agent SoT** — Active board contract in kanban governance, UKW execution guide, `ukw-sync` skill, board guide headers (delivered in UKW hygiene wave).
 2. **Validator** — `validate_active_kanban_board.py` (strict): terminal MoSCOW statuses, journal lines, archive footnotes, forbidden fbuboard sections.
-3. **Enforcement** — Pre-commit on `kboard.md` / `fbuboard.md`; RW Step 9 **Release Readiness Gate 11** (blocking); UKW Step 6.5 optional strict run after prune.
+3. **Enforcement** — Pre-commit on `kboard.md`; RW Step 9 **Release Readiness Gate 11** (blocking); UKW Step 6.5 optional strict run after prune.
 
 ---
 

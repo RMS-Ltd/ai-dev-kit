@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 ## Context
 
-Board naming defaults were implemented (`kboard.md`, `fbuboard.md`) before formal planning artifacts were created. This specification backfills the contract so implementation and verification are traceable and reproducible.
+Board naming defaults were implemented (`kboard.md`) before formal planning artifacts were created. This specification backfills the contract so implementation and verification are traceable and reproducible.
 
 ## Goal
 
@@ -20,11 +20,11 @@ Define canonical board filenames and required compatibility behavior across proj
 
 - Canonical defaults:
   - task board: `kboard.md`
-  - FR/BR/UXR board: `fbuboard.md`
+  - FR/BR/UXR board: `kboard.md`
 - Documentation references updated to canonical names for active guidance.
 - Script/install defaults updated to canonical names.
 - Legacy alias support retained for:
-  - `kanban-board.md`
+  - `kboard.md`
   - `fr-br-uxr-board.md`
 
 ## Out of Scope

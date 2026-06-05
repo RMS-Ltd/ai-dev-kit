@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 ## Context
 
-Active MoSCOW rows on `kboard.md` and `fbuboard.md` can show **COMPLETE** (or terminal FBU) work while source task/FBU docs are already closed. [FR-076](../../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) and `update_kanban_docs.py` hygiene could **remove** such rows without appending to [**kanban-completed.md**](../../project-management/kanban/kanban-completed.md) or [**fbu-completed.md**](../../project-management/kanban/fbu-completed.md) — losing the ledger-first contract operators expect.
+Active MoSCOW rows on `kboard.md` can show **COMPLETE** (or terminal FBU) work while source task/FBU docs are already closed. [FR-076](../../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) and `update_kanban_docs.py` hygiene could **remove** such rows without appending to [**kanban-completed.md**](../../project-management/kanban/kanban-completed.md) or [**intake-completed.md**](../../project-management/kanban/intake-completed.md) — losing the ledger-first contract operators expect.
 
 Operators need a **fast, explicit** UKW path: “clean the boards” means **archive then remove**, not silent deletion.
 

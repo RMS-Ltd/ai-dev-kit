@@ -25,7 +25,7 @@ housekeeping_policy: keep
 ## Input
 
 - User validated `✅` prefix on COMPLETE task rows improves scanability.
-- Requirement: **all** task and FBU states on `kboard.md` / `fbuboard.md` get a canonical icon.
+- Requirement: **all** task and FBU states on `kboard.md` get a canonical icon.
 - **Editorial decision (2026-05-20):** **Set A (emoji) on boards**; **Set B (Unicode) fallback** where emoji unsupported (see UXR-012 primary → fallback table).
 
 ---

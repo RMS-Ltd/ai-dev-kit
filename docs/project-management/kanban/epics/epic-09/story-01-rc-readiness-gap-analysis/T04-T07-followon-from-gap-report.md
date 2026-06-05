@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 **Scope:** Apply MoSCOW recommendations from gap report §6 (T04): elevate E9:S02, E9:S03, E02:S13 to Must Have; document why M=0; batch E04 C-band without wholesale promotion.
 
-**Deliverable:** Prioritization change log + `kboard.md` / `fbuboard.md` updates (UKW or dedicated RW).
+**Deliverable:** Prioritization change log + `kboard.md` updates (UKW or dedicated RW).
 
 ---
 

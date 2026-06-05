@@ -17,7 +17,7 @@ def _load_module():
     return module
 
 
-def test_fresh_install_creates_fbuboard_deprecated_stub():
+def test_fresh_install_creates_kboard_only():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
@@ -25,17 +25,13 @@ def test_fresh_install_creates_fbuboard_deprecated_stub():
         result = mod.create_consumer_board_skeleton(kanban_path, root, dry_run=False)
 
         assert result["board"] is True
-        assert result["fbu_stub"] is True
+        assert "fbu_stub" not in result
 
         kboard = kanban_path / "kboard.md"
-        stub = kanban_path / "fbuboard.md"
         assert kboard.is_file()
-        assert stub.is_file()
+        assert not (kanban_path / "fbuboard.md").exists()
+        assert not (kanban_path / "kanban-board.md").exists()
 
         kboard_text = kboard.read_text(encoding="utf-8")
-        stub_text = stub.read_text(encoding="utf-8")
-
         assert "### Verification (V)" in kboard_text
-        assert "DEPRECATED" in stub_text
-        assert "kboard.md" in stub_text
-        assert "### Must Have" not in stub_text
+        assert "### Must Have" in kboard_text

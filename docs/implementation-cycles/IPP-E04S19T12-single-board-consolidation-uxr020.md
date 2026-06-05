@@ -25,14 +25,14 @@ housekeeping_policy: keep
 | RF1 | **Single active MoSCOW surface:** `kboard.md` is the only active prioritization board | UXR-020 R3, user decision |
 | RF2 | **Dual-status row contract** when task and FBU lifecycles diverge (`Task: COMPLETE \| FBU: OPEN (verification)`) | UXR-020 F2, R3 |
 | RF3 | **Verification band (V):** New MoSCOW subsection for task-complete / FBU-open rows (replaces fbuboard M/S-only lane) | UXR-020 R3 |
-| RF4 | **Migrate** all active `fbuboard.md` rows into `kboard.md` without losing verification-pending visibility | UXR-020 F2 |
-| RF5 | **Deprecate `fbuboard.md`:** Replace with redirect stub; no active MoSCOW on deprecated file | UXR-020 R3 |
-| RF6 | **Preserve** `fbu-completed.md`, `fbu-structure.md`, and `fr-br/*.md` as FBU SoT surfaces | KG-R2, FR-051 legacy |
+| RF4 | **Migrate** all active `kboard.md` rows into `kboard.md` without losing verification-pending visibility | UXR-020 F2 |
+| RF5 | **Deprecate `kboard.md`:** Replace with redirect stub; no active MoSCOW on deprecated file | UXR-020 R3 |
+| RF6 | **Preserve** `intake-completed.md`, `intake-structure.md`, and `fr-br/*.md` as FBU SoT surfaces | KG-R2, FR-051 legacy |
 | RF7 | **Task-only rows** (no FBU) remain valid on `kboard` unchanged | UXR-020 F3 |
-| RF8 | **Taskless open FBUs** appear on `kboard` with FBU-primary key + `—No Task—` until intake wires `E:S:T` | FR-073, fbu-open-taskless-queue |
+| RF8 | **Taskless open FBUs** appear on `kboard` with FBU-primary key + `—No Task—` until intake wires `E:S:T` | FR-073, intake-open-taskless-queue |
 | RF9 | **FR-092 contract:** RW Step 7 becomes **three-surface** (task doc, FBU doc, `kboard`) + completed ledgers; drop active `fbuboard` as fourth surface | FR-092 amendment |
 | RF10 | **UKW scope:** Single-board sync; remove fbuboard MoSCOW maintenance from comprehensive matrix | FR-076 successor |
-| RF11 | **Validators** accept single active board; `fbuboard.md` stub exempt from active-board strict checks | RF9 |
+| RF11 | **Validators** accept single active board; `kboard.md` stub exempt from active-board strict checks | RF9 |
 | RF12 | **Framework/adopter path:** Install templates emit single board; migration note for brownfield dual-board | ADR-003 pattern |
 | RF13 | **Row link order** preserved per UXR-010: FBU segment → Task segment → IPP segment → stamp | UXR-010 |
 
@@ -43,14 +43,14 @@ housekeeping_policy: keep
 | RNF1 | **No stamp churn:** FR-097 evidence-gated stamps during migration | UXR-009, FR-097 |
 | RNF2 | **Lean active board (FR-109):** No archive footnotes or journal bullets on `kboard` | FR-109 |
 | RNF3 | **Idempotent migration:** Re-running migration script leaves `kboard` stable | FR-092 Wave discipline |
-| RNF4 | **Read-tolerance:** Validators/scripts accept deprecated `fbuboard.md` redirect for one release cycle | Adopter safety |
+| RNF4 | **Read-tolerance:** Validators/scripts accept deprecated `kboard.md` redirect for one release cycle | Adopter safety |
 | RNF5 | **Phased RW:** Wave 1 policy+board+ADR; Wave 2 tooling; Wave 3 framework pack | UXR-017 precedent |
 
 ### 1.3 Invariants and boundaries
 
-- **Invariants:** Bidirectional FBU ↔ task wiring (KG-R2); `kanban-completed.md` / `fbu-completed.md` terminal ledgers unchanged in role.
+- **Invariants:** Bidirectional FBU ↔ task wiring (KG-R2); `kanban-completed.md` / `intake-completed.md` terminal ledgers unchanged in role.
 - **In scope:** ai-dev-kit corpus, kanban governance policy, workflow-mgt validators/scripts, UKW/RW agent guides, framework kanban templates.
-- **Out of scope:** Deleting `fr-br/` corpus; merging `fbu-structure.md` into `kanban-structure.md`; changing FBU doc templates.
+- **Out of scope:** Deleting `fr-br/` corpus; merging `intake-structure.md` into `kanban-structure.md`; changing FBU doc templates.
 
 ---
 
@@ -58,7 +58,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Consolidate all active MoSCOW prioritization into **`kboard.md`** using an enriched **dual-status row model**, then **retire `fbuboard.md`** as an active board — eliminating duplicate sync admin while preserving verification-pending visibility and FBU traceability.
+Consolidate all active MoSCOW prioritization into **`kboard.md`** using an enriched **dual-status row model**, then **retire `kboard.md`** as an active board — eliminating duplicate sync admin while preserving verification-pending visibility and FBU traceability.
 
 ### 2.2 Single-board row contracts
 
@@ -84,10 +84,10 @@ Consolidate all active MoSCOW prioritization into **`kboard.md`** using an enric
 
 **MoSCOW order on `kboard.md`:** M → S → **V** → C → O → W
 
-### 2.3 `fbuboard.md` deprecation
+### 2.3 `kboard.md` deprecation
 
 - Active MoSCOW sections **removed**.
-- File becomes **redirect stub** (~15 lines): points to `kboard.md` Verification + C bands; links `fbu-completed.md`, `fbu-structure.md`.
+- File becomes **redirect stub** (~15 lines): points to `kboard.md` Verification + C bands; links `intake-completed.md`, `intake-structure.md`.
 - `Last Updated` notes deprecation version.
 
 ### 2.4 RW Step 7 (revised three-surface)
@@ -98,7 +98,7 @@ Release-scope reconciliation outputs:
 2. Source FR/BR/UXR doc(s)  
 3. **`kboard.md`** canonical row(s) — including Verification band when task COMPLETE + FBU OPEN  
 
-`fbuboard.md` **not** updated on RW/UKW (stub only).
+`kboard.md` **not** updated on RW/UKW (stub only).
 
 ### 2.5 ADR necessity decision
 
@@ -139,7 +139,7 @@ Release-scope reconciliation outputs:
 | 3 | Update **kanban-governance-policy.md** — active surface table, V-band, row contracts | Policy | 1 |
 | 4 | Update **kanban-board-guide.md** — remove fbuboard as active board; document V-band | Guide | 1 |
 | 5 | Migrate **live `kboard.md`:** add V-band; import 9 verification rows from fbuboard M/S; dedupe C-band | Board | 1 |
-| 6 | Replace **`fbuboard.md`** with redirect stub | Board | 1 |
+| 6 | Replace **`kboard.md`** with redirect stub | Board | 1 |
 | 7 | Update **UXR-020** AC5 + decision record; amend **FR-092** narrative (three-surface) | Governance docs | 1 |
 | 8 | **RW Wave 1** `RW E04:S19:T12` on `epic/4-*` branch | Release | 1 |
 | 9 | **`validate_active_kanban_board.py`:** single-board mode; fbuboard stub handling | Validator | 2 |
@@ -160,7 +160,7 @@ Release-scope reconciliation outputs:
 | ---- | ------ |
 | `docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md` | CREATE |
 | `docs/project-management/kanban/kboard.md` | V-band + migrated rows |
-| `docs/project-management/kanban/fbuboard.md` | Redirect stub |
+| `docs/project-management/kanban/kboard.md` | Redirect stub |
 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | Policy |
 | `docs/project-management/kanban/kanban-board-guide.md` | Guide |
 | `docs/project-management/kanban/README.md` | Five-way → four-way active surfaces |
@@ -196,7 +196,7 @@ Release-scope reconciliation outputs:
 | D-U1 | `kanban-governance-policy.md` | V-band, single active board, RW three-surface |
 | D-U2 | `kanban-board-guide.md` | Retire fbuboard section as active board |
 | D-U3 | `kboard.md` | V-band + migrated content |
-| D-U4 | `fbuboard.md` | Stub only |
+| D-U4 | `kboard.md` | Stub only |
 | D-U5 | `FR-092-*.md` | Amend four-surface → three-surface |
 | D-U6 | `UXR-020-*.md` | Decision + closure AC |
 
@@ -210,9 +210,9 @@ Release-scope reconciliation outputs:
 
 | Topic | Resolution |
 | ----- | ---------- |
-| `fbu-structure.md` | **NONE** — remains full inventory (non-MoSCOW) |
-| `fbu-completed.md` | **NONE** — terminal FBU ledger retained |
-| `fbu-open-taskless-queue.md` | **UPDATE** pointer: MoSCOW source → `kboard` |
+| `intake-structure.md` | **NONE** — remains full inventory (non-MoSCOW) |
+| `intake-completed.md` | **NONE** — terminal FBU ledger retained |
+| `intake-open-taskless-queue.md` | **UPDATE** pointer: MoSCOW source → `kboard` |
 | `fr-br-uxr-board.md`, `fr-br-uxr-structure.md`, `fr-br-uxr-open-taskless-queue.md` | **DELETE** from kanban root (Wave 4); historical changelog references retained |
 
 ---

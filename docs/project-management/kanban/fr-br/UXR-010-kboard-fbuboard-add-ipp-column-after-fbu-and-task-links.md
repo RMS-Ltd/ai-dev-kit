@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# User Experience Research: kboard/fbuboard IPP column after FBU and task links
+# User Experience Research: kboard IPP column after FBU and task links
 
 **Type:** User Experience Research (UXR)  
 **Submitted:** 2026-04-20  
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-On `kboard.md` and `fbuboard.md`, after the FBU link and task link sequence, rows should include a pipe-delimited `IPP` segment with strict token forms:
+On `kboard.md`, after the FBU link and task link sequence, rows should include a pipe-delimited `IPP` segment with strict token forms:
 
 - FBU token text: `BR/BR/UXR-xxx` (link)
 - Task token text: `Exx:Sxx:Txx` (link)
@@ -48,7 +48,7 @@ How should board row formatting and governance rules expose planning-traceabilit
 
 ## Scope
 
-- Define board row format contract for `kboard.md` and `fbuboard.md` with explicit `IPP` segment.
+- Define board row format contract for `kboard.md` with explicit `IPP` segment.
 - Define exact fallback token and rendering rules when planning artifacts are missing (`—No IPP—`).
 - Define link ordering conventions so `IPP` placement is stable after FBU and task links.
 - Define validation expectations for row compliance.
@@ -72,7 +72,7 @@ How should board row formatting and governance rules expose planning-traceabilit
 ## References
 
 - [kboard](../kboard.md)
-- [fbuboard](../fbuboard.md)
+- [fbuboard](../kboard.md)
 - [Story 019](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [Implementing task E04:S19:T04](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)
 - [IPP-E04S19T04](../../../implementation-cycles/IPP-E04S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)

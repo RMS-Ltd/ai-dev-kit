@@ -110,7 +110,7 @@ steps:
       epic_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md
       story_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md
       kanban_board: docs/project-management/kanban/kboard.md
-      fr_br_uxr_board: docs/project-management/kanban/fbuboard.md
+      fr_br_uxr_board: docs/project-management/kanban/kboard.md
       use_rw_config: true
 
   - id: step-8

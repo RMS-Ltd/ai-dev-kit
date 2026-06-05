@@ -93,9 +93,9 @@ UKW behaviour depends on **how** it is invoked. Use this conceptual flag when re
 | **`rw_step_7`** | Release Workflow **Step 7 — Scoped Kanban Sync (UKW Mode)** (agent-driven) | **Scoped** to the release’s Epic/Story/Task and directly related docs/board lines. **Conservative** MoSCOW: only **new or newly significant** tasks get priority churn; do **not** re-sort the entire board. Bottom-up: Task → Story → Epic → board for that slice. |
 | **`standalone`** | User types **`UKW`** / **`ukw`** with optional **`-u`**, **`-p`**, **`-a`**, or standalone **`--rp`** (see [.cursorrules](../../../../../../.cursorrules) UKW section) | **Full** UKW per flag matrix; **`--rp`** = deep RePrioritise only (Steps 1, 2, 6, 6.5, 7–9). |
 
-**FR-085 / ADR-009 (`--rp`):** Optional **standalone** `UKW --rp` performs evidence-based deep MoSCOW reorder on `kboard.md` and `fbuboard.md` (intent, dependencies, blockers, impact). Default UKW without `--rp` is unchanged. **Forbidden** in `rw_step_7`. Step 9 must include `## Reprioritization rationale`. Idempotent on unchanged inputs. See [ADR-009](../../../../../../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md).
+**FR-085 / ADR-009 (`--rp`):** Optional **standalone** `UKW --rp` performs evidence-based deep MoSCOW reorder on `kboard.md` (intent, dependencies, blockers, impact). Default UKW without `--rp` is unchanged. **Forbidden** in `rw_step_7`. Step 9 must include `## Reprioritization rationale`. Idempotent on unchanged inputs. See [ADR-009](../../../../../../../docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md).
 
-**FR-102 / ADR-010 (`-c`):** Optional **standalone** `UKW -c` archives terminal tasks/FBUs: append `kanban-completed.md` / `fbu-completed.md` via Documentation Agent skills **before** removing active MoSCOW rows. Task-doc / FBU-doc source of truth (not row-text-only). **Forbidden** in `rw_step_7` and **not** combinable with `-u`/`-p`/`-a`/`--rp`. Step 9 must include `## Archive completed summary`. `update_kanban_docs.py` does not delete-only prune completes (run `UKW -c` after releases). See [ADR-010](../../../../../../../docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md).
+**FR-102 / ADR-010 (`-c`):** Optional **standalone** `UKW -c` archives terminal tasks/FBUs: append `kanban-completed.md` / `intake-completed.md` via Documentation Agent skills **before** removing active MoSCOW rows. Task-doc / FBU-doc source of truth (not row-text-only). **Forbidden** in `rw_step_7` and **not** combinable with `-u`/`-p`/`-a`/`--rp`. Step 9 must include `## Archive completed summary`. `update_kanban_docs.py` does not delete-only prune completes (run `UKW -c` after releases). See [ADR-010](../../../../../../../docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md).
 
 **FR-038:R04:** In `rw_step_7`, treat MoSCOW and board-wide prioritisation as **narrow**; reserve whole-board reprioritisation for `standalone` **`-p`**, comprehensive runs, or explicit **`--rp`** (not RW Step 7).
 
@@ -509,10 +509,10 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 **Active board contract (lean MoSCOW — mandatory):**
 
-- `kboard.md` and `fbuboard.md` show **live work only**. Terminal outcomes live in `kanban-completed.md` / `fbu-completed.md` after ledger append (`UKW -c` or Step 6.5–6.6).
+- `kboard.md` show **live work only**. Terminal outcomes live in `kanban-completed.md` / `intake-completed.md` after ledger append (`UKW -c` or Step 6.5–6.6).
 - **Forbidden on active boards:** archive footnote paragraphs inside MoSCOW sections; `**YYYY-MM-DD:**` journal lines between rows; `✅ COMPLETE` / terminal rows without immediate prune; fbuboard “Usage instructions” / statistics essays.
 - **BR-059 scope (narrow):** add missing checklist tasks to MoSCOW only when **IN PROGRESS**, **OPEN**, or **explicitly promoted** to M/S this cycle — not every `TODO` in the repo.
-- **Bidirectional wiring (narrow):** M/S and in-flight C/O rows on `kboard.md` must match `fbuboard.md` for the same work. FBU **OPEN + task COMPLETE** (verification backlog) may stay on `fbuboard` without a kboard twin — document in board header, not extra journal lines.
+- **Bidirectional wiring (narrow):** M/S and in-flight C/O rows on `kboard.md` must match `kboard.md` for the same work. FBU **OPEN + task COMPLETE** (verification backlog) may stay on `fbuboard` without a kboard twin — document in board header, not extra journal lines.
 - **After comprehensive UKW:** run terminal prune (Step 6.5–6.6 / `UKW -c` scan) so COMPLETE rows do not accumulate on the active board.
 
 **Agent Execution:**
@@ -603,7 +603,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 ### Step 6.5: fbuboard Reconciliation and Drift Guard
 
-**Purpose:** Keep `fbuboard.md` aligned with FR/BR/UXR source-of-truth docs using deterministic cleanup and safe writes.
+**Purpose:** Keep `kboard.md` aligned with FR/BR/UXR source-of-truth docs using deterministic cleanup and safe writes.
 
 **Agent Execution:**
 
@@ -639,29 +639,29 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 ---
 
-### Step 6.6: FBU Temporal Tracking (`fbu-completed.md`) — FR-050
+### Step 6.6: FBU Temporal Tracking (`intake-completed.md`) — FR-050
 
 **Purpose:** Archive resolved FR/BR/UXR items with ISO 8601 completion timestamps and maintain the **20 most recent** completions dashboard in the same UKW run as fbuboard cleanup.
 
-**Skill (canonical interface):** [`.cursor/skills/fr-br-uxr-completed-update/SKILL.md`](../../../../../../.cursor/skills/fr-br-uxr-completed-update/SKILL.md) — invoke for each newly resolved FBU removed from `fbuboard.md` active sections in Step 6.5.
+**Skill (canonical interface):** [`.cursor/skills/fr-br-uxr-completed-update/SKILL.md`](../../../../../../.cursor/skills/fr-br-uxr-completed-update/SKILL.md) — invoke for each newly resolved FBU removed from `kboard.md` active sections in Step 6.5.
 
 **Agent Execution:**
 
 1. **ANALYZE:**
    - Collect FBU IDs pruned in Step 6.5 (terminal source status, no unresolved-verification exception).
    - Read linked `fr-br/*.md` for title, type (FR/BR/UXR), implementing task, and release version when available.
-   - Load `fbu-completed.md` and `kanban-completed.md` for dashboard format parity.
+   - Load `intake-completed.md` and `kanban-completed.md` for dashboard format parity.
 
 2. **DETERMINE:**
    - Completion timestamp: use actual resolution time when known; otherwise UTC now (`YYYY-MM-DDTHH:MM:SSZ`).
-   - Whether each ID already exists in `fbu-completed.md` (update vs append).
+   - Whether each ID already exists in `intake-completed.md` (update vs append).
    - Dashboard rows to retain (top 20 by completion time, most recent first).
 
 3. **EXECUTE:**
    - For each newly resolved FBU, apply the skill update interface (ID, type, status `COMPLETE`, version, timestamp, completing agent `UKW`).
    - Append or refresh chronological completion entries in the body sections when required.
    - Rebuild the **`## 20 Most Recently Completed FR/BR/UXR Items`** table: columns **ID | Type | Description | Completed | Version | Agent** (match `kanban-completed.md` dashboard conventions).
-   - Update `fbu-completed.md` header metadata (`Last Updated`, `Version`) when release context is known.
+   - Update `intake-completed.md` header metadata (`Last Updated`, `Version`) when release context is known.
 
 4. **VALIDATE:**
    - All new completions use ISO 8601 `Z` timestamps.
@@ -672,32 +672,32 @@ After completing UKW, users typically run RW to commit the kanban documentation 
    - Document FBU IDs appended/updated and dashboard churn.
    - Move to Step 6.7.
 
-**FR-097 note:** Step 6.6 does **not** modify `fbuboard.md` row `Last modified` stamps; temporal evidence for completions lives in `fbu-completed.md` and source FR/BR/UXR docs.
+**FR-097 note:** Step 6.6 does **not** modify `kboard.md` row `Last modified` stamps; temporal evidence for completions lives in `intake-completed.md` and source FR/BR/UXR docs.
 
 ---
 
 ### Step 6.7: FBU Cross-Document Consistency — FR-050
 
-**Purpose:** Validate alignment across `fbuboard.md`, `fbu-completed.md`, and `fbu-structure.md` after Steps 6.5–6.6.
+**Purpose:** Validate alignment across `kboard.md`, `intake-completed.md`, and `intake-structure.md` after Steps 6.5–6.6.
 
 **Agent Execution:**
 
 1. **ANALYZE:**
    - **fbuboard ↔ source:** active MoSCOW rows must not reference terminal `fr-br/*.md` status (except documented verification exceptions).
-   - **fbu-completed ↔ source:** every dashboard/archive entry for an open FBU must match source terminal status; completed FBUs must not remain on active fbuboard rows.
-   - **fbu-structure ↔ inventory:** structure doc inventory matches `fr-br/` (and linked UXR paths); links resolve.
+   - **intake-completed ↔ source:** every dashboard/archive entry for an open FBU must match source terminal status; completed FBUs must not remain on active fbuboard rows.
+   - **intake-structure ↔ inventory:** structure doc inventory matches `fr-br/` (and linked UXR paths); links resolve.
 
 2. **DETERMINE:**
    - Drift items: stale active rows, missing completed entries, broken links, version marker mismatches.
 
 3. **EXECUTE:**
    - Fix drift in the same UKW session when safe (re-run Step 6.5/6.6 transforms as needed).
-   - Refresh `fbu-structure.md` inventory/metadata when inventory changed.
+   - Refresh `intake-structure.md` inventory/metadata when inventory changed.
    - Record a short reconciliation checklist in the UKW change summary.
 
 4. **VALIDATE:**
    - No terminal-status FBU remains on active fbuboard sections (unless explicit exception).
-   - Pruned FBUs from Step 6.5 appear in `fbu-completed.md` with timestamps.
+   - Pruned FBUs from Step 6.5 appear in `intake-completed.md` with timestamps.
    - Structure links and cross-references resolve.
 
 5. **PROCEED:**
@@ -744,7 +744,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
    - Check version marker consistency
    - Verify link integrity
    - Check for contradictions
-   - **FBU (FR-050):** Re-verify `fbuboard.md` ↔ `fbu-completed.md` ↔ `fbu-structure.md` when Steps 6.5–6.7 ran
+   - **FBU (FR-050):** Re-verify `kboard.md` ↔ `intake-completed.md` ↔ `intake-structure.md` when Steps 6.5–6.7 ran
 
 2. **DETERMINE:**
    - Status alignment issues
@@ -778,7 +778,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 - Epic status matches story completion state
 - Version markers align across documents
 - All links resolve
-- **FBU:** Terminal source docs not on active fbuboard; completions in `fbu-completed.md` with ISO timestamps; 20-recent dashboard current
+- **FBU:** Terminal source docs not on active fbuboard; completions in `intake-completed.md` with ISO timestamps; 20-recent dashboard current
 
 ---
 

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Version:** v0.4.19.12+4
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
-> **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
+> **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
 > **For Epic/Story/Task structure, see:** [`kanban-structure.md`](kanban-structure.md)  
 > **For rules and explanations, see:** [`kanban-board-guide.md`](kanban-board-guide.md)
 
@@ -211,7 +211,7 @@ housekeeping_policy: keep
   **Completed:** `2026-05-29T15:30:00Z` | **Version:** `v0.4.8.7+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E04S08T07-task-split-multi-epic-fr011.md)
 
 #### **Epic 2: Workflow Management Framework (Story 16 — Perpetual)**
-- **[E02:S16:T07](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)** — **FR-050**: UKW FBU temporal sync, `fbu-completed` dashboard, agent docs + skill wiring.
+- **[E02:S16:T07](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)** — **FR-050**: UKW FBU temporal sync, `intake-completed` dashboard, agent docs + skill wiring.
   **Completed:** `2026-05-29T15:15:00Z` | **Version:** `v0.2.16.7+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E02S16T07-ukw-fbu-temporal-tracking-fr050.md)
 
 #### **Epic 2: Workflow management (Story 1)**

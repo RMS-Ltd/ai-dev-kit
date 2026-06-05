@@ -2,8 +2,8 @@
 """
 Board Stamp Authority — shared row stamp parsing and evidence resolution.
 
-FR-097 / E2:S15:T08: forensic `Last modified` semantics for kboard.md and fbuboard.md.
-ADR-018: `fbuboard.md` may be a deprecated redirect stub (no active MoSCOW).
+FR-097 / E2:S15:T08: forensic `Last modified` semantics for kboard.md.
+ADR-018: `kboard.md` may be a deprecated redirect stub (no active MoSCOW).
 """
 
 from __future__ import annotations
@@ -44,7 +44,7 @@ MOSCOW_HEADER_RE = re.compile(r"^##\s+MoSCOW", re.IGNORECASE)
 
 
 def is_fbuboard_deprecated(board_content: str) -> bool:
-    """ADR-018: fbuboard.md redirect stub — no active MoSCOW maintenance."""
+    """ADR-018: kboard.md redirect stub — no active MoSCOW maintenance."""
     upper = board_content.upper()
     return "DEPRECATED" in upper and "## MOSCOW" not in board_content
 
@@ -111,7 +111,7 @@ def homogeneity_threshold_from_config(
 
 def active_board_paths(project_root: Path, config: Optional[Dict[str, Any]] = None) -> List[Path]:
     root = kanban_root_from_config(project_root, config)
-    return [root / "kboard.md", root / "fbuboard.md"]
+    return [root / "kboard.md"]
 
 
 def extract_row_id(line: str) -> str:

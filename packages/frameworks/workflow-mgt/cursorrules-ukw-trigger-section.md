@@ -232,7 +232,7 @@ For each step, follow this pattern:
      - Update epic status sections
      - Update epic story lists
      - Update board "Last updated" date and version
-     - **FR-097 (stamp authority):** On hygiene-only passes, preserve existing row `| Last modified: … UTC|`; only board `Last Updated` metadata may change. Snapshot boards at UKW start; run `validate_board_stamp_diff.py` before stage — **abort UKW** on un evidenced stamp deltas. Required scope: `kboard.md` and `fbuboard.md` (not best-effort).
+     - **FR-097 (stamp authority):** On hygiene-only passes, preserve existing row `| Last modified: … UTC|`; only board `Last Updated` metadata may change. Snapshot boards at UKW start; run `validate_board_stamp_diff.py` before stage — **abort UKW** on un evidenced stamp deltas. Required scope: `kboard.md` (not best-effort).
      - **fbuboard:** Prune active rows whose linked FR/BR/UXR status is terminal unless unresolved-verification context remains.
    - **VALIDATE:**
      - `kboard.md` contains no tasks with status `COMPLETE` or `DONE`

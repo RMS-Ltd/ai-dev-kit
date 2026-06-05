@@ -70,7 +70,7 @@ Adopters have one canonical guide and optional copy-paste templates so **host pr
 - **Current task status:** IN PROGRESS (implementation session).
 - **Transition to IN PROGRESS:** First implementation change (this session).
 - **Transition to COMPLETE:** All AC evidence in task doc; version marker via `RW E01:S02:T14`.
-- **Atomic propagation:** Task doc + kboard/fbuboard via RW Step 7.
+- **Atomic propagation:** Task doc + kboard via RW Step 7.
 
 ### 2.5 ADR necessity decision
 

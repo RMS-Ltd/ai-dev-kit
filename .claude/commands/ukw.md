@@ -123,13 +123,13 @@ python "packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_board.py"
 
 MoSCOW list is always updated **last** within this step.
 
-**Lean active board contract (FR-109):** Prune **terminal** rows, `**YYYY-MM-DD:**` journal lines, and archive footnotes — not a filed **Could Have** backlog of `TODO`/`OPEN` tasks. **Do not** leave `✅ COMPLETE` on active boards; use **`kanban-completed.md`** / **`fbu-completed.md`** and **`UKW -c`**. **BR-059 (narrowed):** Do not **auto-add** every story-checklist TODO during UKW; existing C-band queue rows stay unless terminal or explicitly deferred to Won't Have + ledger.
+**Lean active board contract (FR-109):** Prune **terminal** rows, `**YYYY-MM-DD:**` journal lines, and archive footnotes — not a filed **Could Have** backlog of `TODO`/`OPEN` tasks. **Do not** leave `✅ COMPLETE` on active boards; use **`kanban-completed.md`** / **`intake-completed.md`** and **`UKW -c`**. **BR-059 (narrowed):** Do not **auto-add** every story-checklist TODO during UKW; existing C-band queue rows stay unless terminal or explicitly deferred to Won't Have + ledger.
 
 ### Step 6.5 — fbuboard Reconciliation and Drift Guard
 
-**ADR-018:** If `fbuboard.md` is a **DEPRECATED** redirect stub (no `## MoSCOW` section), **skip** this step entirely — verification rows live on `kboard.md` **Verification (V)** band.
+**ADR-018:** If `kboard.md` is a **DEPRECATED** redirect stub (no `## MoSCOW` section), **skip** this step entirely — verification rows live on `kboard.md` **Verification (V)** band.
 
-**Legacy dual-board repos only:** If `fbuboard.md` still has active MoSCOW, snapshot via `snapshot_kanban_boards.py`, prune terminal FBU rows per source-doc status, and run `validate_board_stamp_diff.py` before stage. **ai-dev-kit** uses the stub — no fbuboard MoSCOW maintenance; FBU terminal history → `fbu-completed.md`.
+**Legacy dual-board repos only:** If `kboard.md` still has active MoSCOW, snapshot via `snapshot_kanban_boards.py`, prune terminal FBU rows per source-doc status, and run `validate_board_stamp_diff.py` before stage. **ai-dev-kit** uses the stub — no fbuboard MoSCOW maintenance; FBU terminal history → `intake-completed.md`.
 
 ### Step 7 — Validate Consistency
 
@@ -177,7 +177,7 @@ Use `rw-config.yaml` values when present. Fallbacks:
 - Task docs: `docs/project-management/kanban/epics/Epic-{E}/Story-{S}/T{T}-*.md`
 - Kanban board: `docs/project-management/kanban/kboard.md`
 - FR/BR/UXR root: `docs/project-management/kanban/fr-br/`
-- fbuboard: `docs/project-management/kanban/fbuboard.md`
+- fbuboard: `docs/project-management/kanban/kboard.md`
 
 ---
 

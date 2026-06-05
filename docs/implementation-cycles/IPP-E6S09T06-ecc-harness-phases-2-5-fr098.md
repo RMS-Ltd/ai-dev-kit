@@ -84,7 +84,7 @@ Enable adopters to **optionally** install ECC alongside ADK with a validated bri
 - **Current task status:** `COMPLETE` (**v0.6.9.6+3**)
 - **Transition trigger to IN PROGRESS:** First non-planning implementation change (Wave A file creation or script) — done at **v0.6.9.6+2**.
 - **Transition trigger to COMPLETE:** All T06 acceptance criteria satisfied with validator/pytest PASS and dogfood checklist recorded — done at **v0.6.9.6+3**.
-- **Atomic propagation requirement:** Task doc status and kboard/fbuboard row for **E6:S09:T06** update in same RW Step 7 session — done (T06/FR-098 archived from Must Have).
+- **Atomic propagation requirement:** Task doc status and kboard row for **E6:S09:T06** update in same RW Step 7 session — done (T06/FR-098 archived from Must Have).
 - **Owner:** Implementation execution (not this IPW session).
 
 ### 2.5 ADR necessity decision (mandatory — IPW Phase 5.0)

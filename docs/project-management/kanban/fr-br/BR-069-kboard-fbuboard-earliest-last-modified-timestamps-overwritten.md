@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Bug Report BR-069: kboard/fbuboard row-footer timestamp overwrite and task-ID multiplication regression
+# Bug Report BR-069: kboard row-footer timestamp overwrite and task-ID multiplication regression
 
 **Status:** CLOSED (FR-097 / E02:S15:T08 — `validate_board_stamp_diff.py` blocking gate, pipeline `non_substantive`, automatic backfill 71 rows, Gate 8 homogeneity PASS; evidence: [fr097-backfill-report.json](../../../docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr097-backfill-report.json); formal version on `RW E02:S15:T08`)  
 **Priority:** CRITICAL  
@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Implementing Task:** [E02:S15:T04](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)  
 **Closure gated on:** [FR-097 — Board stamp authority and forensic timestamp recovery](FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) / [E02:S15:T08](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (supersedes FR-092-only closure for forensic stamp truth)
 
-> **Gating note (2026-04-27):** T04 Phases A-D delivered narrowed-scope guardrails and remain valid as historical sign-off, but live `kboard.md` / `fbuboard.md` continue to exhibit BR-069-class symptoms (duplicate tail tokens, residual stamp churn). Final BR closure is gated on FR-092 Wave 4 corpus sweep producing zero duplicate tail tokens and zero synthetic stamp churn on live boards (FR-092 AC-M5 + AC-M7).
+> **Gating note (2026-04-27):** T04 Phases A-D delivered narrowed-scope guardrails and remain valid as historical sign-off, but live `kboard.md` continue to exhibit BR-069-class symptoms (duplicate tail tokens, residual stamp churn). Final BR closure is gated on FR-092 Wave 4 corpus sweep producing zero duplicate tail tokens and zero synthetic stamp churn on live boards (FR-092 AC-M5 + AC-M7).
 >
 > **Wave 4 + Wave 6 + Wave 8 sign-off (2026-04-27):** B1 root cause identified and fixed (regex flaw in `_normalize_traceability_segments_for_row` — separator class broadened from `[|]` to `[-|]` so hyphen-preceded inline FBU/Task drift is removed). Corpus-canonical sweep evidence in [`fr092-wave4-corpus-sweep-evidence.md`](../../../changelog-and-release-notes/changelog-archive/four-surface-reports/fr092-wave4-corpus-sweep-evidence.md). Wave 6 forensic stamp evidence gate (UXR-009 absorbed) prevents future synthetic stamp churn on board-hygiene paths. Wave 8 live re-sweep across all 4 active boards: `rows_changed=0`, `rows_with_duplicate_footers=0`, `stamps_appended_with_evidence=0`, `stamps_preserved_existing=109`. The systemic regression is structurally eliminated. **All ACs proved satisfied; final BR-069 closure remains scoped to the live RW E02:S15:T07 --art that publishes the meta-program (Wave 8 terminal).**
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Problem Statement
 
-On `kboard.md` and `fbuboard.md`, the earliest/older per-row `Last modified` values are expected to remain stable unless substantive underlying work occurs. A regression is suspected where these historically accurate row timestamps are being overwritten during maintenance or reconciliation flows, degrading forensic timeline integrity.
+On `kboard.md`, the earliest/older per-row `Last modified` values are expected to remain stable unless substantive underlying work occurs. A regression is suspected where these historically accurate row timestamps are being overwritten during maintenance or reconciliation flows, degrading forensic timeline integrity.
 
 In the same row-tail mutation area, task identifiers are also being multiplied (repeated appended task-link segments on a single row), creating structural churn that obscures canonical traceability.
 
@@ -35,7 +35,7 @@ In the same row-tail mutation area, task identifiers are also being multiplied (
 
 ## UKW / deterministic board sync limitation (confirmed)
 
-Running the typical deterministic **UKW** board pass (`enforce_terminal_timestamps_on_boards` in `update_kanban_docs.py`—duplicate-footer reconciliation, traceability segment normalization, timestamp enforcement, fbuboard active-row cleanup) **does not** reliably restore fully canonical MoSCOW rows on live `kboard.md` / `fbuboard.md`:
+Running the typical deterministic **UKW** board pass (`enforce_terminal_timestamps_on_boards` in `update_kanban_docs.py`—duplicate-footer reconciliation, traceability segment normalization, timestamp enforcement, fbuboard active-row cleanup) **does not** reliably restore fully canonical MoSCOW rows on live `kboard.md`:
 
 - Rows still exhibit **repeating pipe-delimited fields**: the same **FBU**, **task**, and/or **IPP** link segments appear many times on one line; **multiple `Last modified` tails** may remain where dual-agreement recovery does not normalize (e.g. divergence preserved) or where churn is dominated by **task-ID / link duplication** ahead of footer logic.
 - Post-pass audits still report **large `rows_with_duplicate_footers` counts** on both boards—evidence that **structural churn is not cleared** by a sync pass alone.
@@ -65,7 +65,7 @@ Running the typical deterministic **UKW** board pass (`enforce_terminal_timestam
 ## Scope / Affected Areas
 
 - `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - UKW/RW board update paths that touch row metadata
 - Row-tail traceability segment normalization paths (`FBU | Task | IPP | Last modified`)

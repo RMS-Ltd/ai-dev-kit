@@ -44,7 +44,7 @@ Canonical **repository** task for **UXR-001** per [story-00-uxr-repo](../story-0
 
 - [x] **AC1:** Task doc exists under **E7:S00** with required sections.  
 - [x] **AC2:** UXR-001 header lists **Repository Task** **E07:S00:T01**.  
-- [x] **AC3:** `fbuboard.md` MoSCOW row lists both **S00:T01** and implementation pointer **E07:S05:T01**.
+- [x] **AC3:** `kboard.md` MoSCOW row lists both **S00:T01** and implementation pointer **E07:S05:T01**.
 
 ---
 

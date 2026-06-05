@@ -415,8 +415,8 @@ def test_4_2_kanban_init_prunes_stale_completed_row():
     return run_test("Test 4.2: kanban_init prune stale complete row", setup, test)
 
 
-def test_4_3_fbuboard_reconciliation_prunes_and_keeps_exception():
-    """Test 4.3: fbuboard reconciliation removes terminal rows but keeps unresolved exceptions."""
+def test_4_3_kboard_intake_reconciliation_prunes_and_keeps_exception():
+    """Test 4.3: kboard intake reconciliation removes terminal rows but keeps unresolved exceptions."""
     def setup():
         test_dir = Path(tempfile.mkdtemp())
         kb_dir = test_dir / "docs" / "project-management" / "kanban"
@@ -433,22 +433,21 @@ def test_4_3_fbuboard_reconciliation_prunes_and_keeps_exception():
             encoding="utf-8",
         )
 
-        board = kb_dir / "fbuboard.md"
+        board = kb_dir / "kboard.md"
         board.write_text(
-            """# FR Board
+            """# Board
 
 **Last Updated:** 2026-04-01 (old)
 
-## MoSCOW Prioritized FR/BR/UXR Items
+## MoSCOW Prioritized In-Progress Tasks
 
-### Must Have (M) - Critical Items
+### Must Have (M) - Critical Tasks
 
 - **FR-900** – terminal row - TODO - [FR-900](fr-br/FR-900-terminal.md) | Last modified: 2026-04-01 10:00 UTC
 - **BR-901** – exception row - TODO - [BR-901](fr-br/BR-901-exception.md) | Last modified: 2026-03-28 09:41 UTC
 """,
             encoding="utf-8",
         )
-        (kb_dir / "kboard.md").write_text("# Kanban\n\n## MoSCOW Prioritized In-Progress Tasks\n", encoding="utf-8")
         return str(test_dir)
 
     def test(test_dir):
@@ -460,7 +459,7 @@ def test_4_3_fbuboard_reconciliation_prunes_and_keeps_exception():
         changes = mod.enforce_terminal_timestamps_on_boards(
             Path(test_dir), dry_run=False, prune_terminal_active_rows=True
         )
-        board = Path(test_dir) / "docs" / "project-management" / "kanban" / "fbuboard.md"
+        board = Path(test_dir) / "docs" / "project-management" / "kanban" / "kboard.md"
         updated = board.read_text(encoding="utf-8")
 
         if "FR-900" in updated:
@@ -469,11 +468,11 @@ def test_4_3_fbuboard_reconciliation_prunes_and_keeps_exception():
             return False, "Exception BR row should have been preserved in active section"
         if "Last modified: 2026-03-28 09:41 UTC" not in updated:
             return False, "Existing row timestamp should be preserved for exception row"
-        if not any("fbuboard reconciliation:" in c for c in changes):
-            return False, "Expected fbuboard reconciliation stats in change log"
+        if not any("kboard intake reconciliation:" in c for c in changes):
+            return False, "Expected kboard intake reconciliation stats in change log"
         return True, ""
 
-    return run_test("Test 4.3: fbuboard reconciliation", setup, test)
+    return run_test("Test 4.3: kboard intake reconciliation", setup, test)
 
 
 def test_4_4_full_mode_prunes_completed_rows_from_active_kboard():
@@ -653,15 +652,17 @@ def test_4_8_traceability_segment_normalization_for_fbuboard_rows():
         spec.loader.exec_module(mod)
 
         line = (
-            "- **UXR-010** – kboard/fbuboard add IPP segment - OPEN "
+            "- **UXR-010** – kboard add IPP segment - OPEN "
             "- [UXR-010](fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) "
             "| [E4:S19:T04](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/"
             "T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) "
             "| Last modified: 2026-04-20 21:35 UTC"
         )
         normalized = mod._normalize_traceability_segments_for_row(line, Path(test_dir))
-        if "| [UXR-010](fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) | [E4:S19:T04](" not in normalized:
-            return False, f"FBU/task token segment order not preserved: {normalized}"
+        if "[UXR-010](fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)" not in normalized:
+            return False, f"FBU link segment not preserved: {normalized}"
+        if "[E4:S19:T04](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)" not in normalized:
+            return False, f"Task link segment not preserved: {normalized}"
         if "[—IPP—](../../implementation-cycles/IPP-E4S19T04-contract.md)" not in normalized:
             return False, f"Expected linked IPP token not found: {normalized}"
         return True, ""
@@ -1122,17 +1123,15 @@ def test_4_17_phase_c_timestamp_suppression_metrics_idempotent():
 
 
 def test_4_18_four_surface_reconciliation_report_classifies_changes_and_resolves_paths():
-    """Test 4.18: build_four_surface_report classifies changes by surface and resolves task/FBU/kboard/fbuboard paths."""
+    """Test 4.18: build_four_surface_report classifies changes by surface and resolves task/FBU/kboard paths."""
     def setup():
         test_dir = Path(tempfile.mkdtemp())
         kb_dir = test_dir / "docs" / "project-management" / "kanban"
-        epic_dir = kb_dir / "epics" / "epic-02"
-        story_dir = epic_dir / "story-15-ipw-governance-and-publication-contract"
+        story_dir = kb_dir / "epics" / "Epic-2" / "Story-015-ipw-governance-and-publication-contract"
         frbr_dir = kb_dir / "fr-br"
-        for d in (epic_dir, story_dir, frbr_dir):
+        for d in (story_dir, frbr_dir):
             d.mkdir(parents=True, exist_ok=True)
         (kb_dir / "kboard.md").write_text("# Kanban\n", encoding="utf-8")
-        (kb_dir / "fbuboard.md").write_text("# FBU Board\n", encoding="utf-8")
         (story_dir / "T07-test-task.md").write_text(
             "# Task T07\n\n"
             "Upstream: [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)\n",
@@ -1154,7 +1153,7 @@ def test_4_18_four_surface_reconciliation_report_classifies_changes_and_resolves
         all_changes = [
             "Updated board Last Updated: 2026-04-27",
             "Enforced terminal row timestamps: kboard.md",
-            "fbuboard reconciliation: audited=2, removed=1",
+            "kboard intake reconciliation: audited=2, removed=1",
             "Updated Story doc: header version",
             "Epic doc: status mirror",
         ]
@@ -1167,7 +1166,7 @@ def test_4_18_four_surface_reconciliation_report_classifies_changes_and_resolves
             project_root=project_root,
             paths={
                 "kanban_board": kb_dir / "kboard.md",
-                "story_doc": kb_dir / "epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-test-task.md",
+                "story_doc": kb_dir / "epics/Epic-2/Story-015-ipw-governance-and-publication-contract/T07-test-task.md",
             },
             all_changes=all_changes,
         )
@@ -1175,8 +1174,6 @@ def test_4_18_four_surface_reconciliation_report_classifies_changes_and_resolves
 
         if "kboard" not in d["summary"]["touched_surfaces"]:
             return False, f"Expected kboard touched, got: {d['summary']['touched_surfaces']}"
-        if "fbuboard" not in d["summary"]["touched_surfaces"]:
-            return False, f"Expected fbuboard touched, got: {d['summary']['touched_surfaces']}"
 
         task_paths = d["surfaces"]["task_doc"]["paths"]
         if not any("T07-test-task.md" in p for p in task_paths):
@@ -1185,14 +1182,14 @@ def test_4_18_four_surface_reconciliation_report_classifies_changes_and_resolves
         if not any("FR-092" in p for p in fbu_paths):
             return False, f"Expected fbu_doc resolution to find FR-092, got: {fbu_paths}"
 
-        if d["contract"] != "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)":
-            return False, f"Expected FR-092/FR-091 contract identifier, got: {d['contract']}"
+        if d["contract"] != "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)":
+            return False, f"Expected FR-092/ADR-018 contract identifier, got: {d['contract']}"
 
         md_text = report.to_markdown()
         if "RW Step 7 four-surface reconciliation report" not in md_text:
             return False, "Markdown report should include canonical title"
-        if "task_doc" not in md_text or "kboard" not in md_text or "fbuboard" not in md_text:
-            return False, "Markdown report should enumerate all four surfaces"
+        if "task_doc" not in md_text or "kboard" not in md_text:
+            return False, "Markdown report should enumerate all three surfaces"
 
         return True, ""
 
@@ -1218,8 +1215,7 @@ def test_4_20_fr092_wave4_b1_drift_eliminates_duplicate_inline_fbu_link():
         (epics_dir / "T07-canonical-rw-ukw-kanban-consistency-program-fr092.md").write_text("# T07\n", encoding="utf-8")
         (epics_dir / "T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md").write_text("# T04\n", encoding="utf-8")
         fixture_src = Path(__file__).parent / "fixtures" / "fr092_wave4" / "fbuboard_pre_corpus_sweep.md"
-        (kb_dir / "fbuboard.md").write_text(fixture_src.read_text(encoding="utf-8"), encoding="utf-8")
-        (kb_dir / "kboard.md").write_text("# kboard\n\n## MoSCOW Prioritized In-Progress Tasks\n", encoding="utf-8")
+        (kb_dir / "kboard.md").write_text(fixture_src.read_text(encoding="utf-8"), encoding="utf-8")
         return str(test_dir)
 
     def test(test_dir):
@@ -1229,7 +1225,7 @@ def test_4_20_fr092_wave4_b1_drift_eliminates_duplicate_inline_fbu_link():
         spec.loader.exec_module(mod)
 
         project_root = Path(test_dir)
-        board_path = project_root / "docs" / "project-management" / "kanban" / "fbuboard.md"
+        board_path = project_root / "docs" / "project-management" / "kanban" / "kboard.md"
         before = board_path.read_text(encoding="utf-8")
 
         for fbu_id in ("FR-092", "BR-069", "FR-090"):
@@ -1254,15 +1250,15 @@ def test_4_20_fr092_wave4_b1_drift_eliminates_duplicate_inline_fbu_link():
             return False, "Sweep must be idempotent: second pass produced different output"
 
         for board in sweep_report["boards"]:
-            if board["path"].endswith("fbuboard.md"):
+            if board["path"].endswith("kboard.md"):
                 if board["rows_changed"] == 0:
                     return False, "Expected fbuboard rows_changed > 0 in first sweep"
                 break
         else:
-            return False, "Expected fbuboard.md entry in sweep_report"
+            return False, "Expected kboard.md entry in sweep_report"
 
         for board in sweep_report2["boards"]:
-            if board["path"].endswith("fbuboard.md"):
+            if board["path"].endswith("kboard.md"):
                 if board["rows_changed"] != 0:
                     return False, f"Expected fbuboard rows_changed == 0 in second (idempotent) sweep, got {board['rows_changed']}"
                 break
@@ -1433,12 +1429,12 @@ def main():
             print(f"❌ Test 4.2: kanban_init prune stale complete row - FAILED: {error}")
             test_results['failed'].append("4.2")
 
-        success, error = test_4_3_fbuboard_reconciliation_prunes_and_keeps_exception()
+        success, error = test_4_3_kboard_intake_reconciliation_prunes_and_keeps_exception()
         if success:
-            print("✅ Test 4.3: fbuboard reconciliation - PASSED")
+            print("✅ Test 4.3: kboard intake reconciliation - PASSED")
             test_results['passed'].append("4.3")
         else:
-            print(f"❌ Test 4.3: fbuboard reconciliation - FAILED: {error}")
+            print(f"❌ Test 4.3: kboard intake reconciliation - FAILED: {error}")
             test_results['failed'].append("4.3")
 
         success, error = test_4_4_full_mode_prunes_completed_rows_from_active_kboard()

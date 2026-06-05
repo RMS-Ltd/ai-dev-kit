@@ -41,7 +41,7 @@ housekeeping_policy: keep
 
 - **Invariants:**
   - No retroactive changes to historical perpetual `T101+` tags, changelog entries, or release titles. `T101+` references remain valid for traceability.
-  - When re-housing a task, both the source-task supersede note and the target-task creation must land in the same logical change set, with all FBU `Implementing Task` rewires, kboard/fbuboard rewires, and story checklist updates atomic to that change set.
+  - When re-housing a task, both the source-task supersede note and the target-task creation must land in the same logical change set, with all FBU `Implementing Task` rewires, kboard rewires, and story checklist updates atomic to that change set.
   - Codification evidence must cite primary repo paths (`packages/frameworks/...`, `.cursorrules`, intake skill files, template files).
   - Perpetual-task placement enforcement under `E2:S16` is delegated to [`IPP-E2S16T01`](./IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md); this IPP does not duplicate that scope.
 - **In scope:** Forensic-investigation method contract for `S07`; codification surface inventory contract; semantic-fit triage rubric; disposition decision framework; re-housing protocol codification; guardrail follow-on identification (not filing).
@@ -152,7 +152,7 @@ The protocol below is the atomic checklist the investigator (or any future opera
 | 3 | Mark the source task `SUPERSEDED`; add `Last updated:` note; add `Superseded by:` link to the target task; preserve content for historical traceability. | Source task status reads `SUPERSEDED`; superseded-by link resolves. |
 | 4 | Rewire the upstream FR/BR/UXR `Implementing Task:` line to the target task path; record the historical implementing task as plain text or an explicit `Historical implementing task:` line. | FBU file shows new task path under `Implementing Task:`. |
 | 5 | Update [`kboard.md`](../project-management/kanban/kboard.md) row(s) to reference the target task path, IPP path (if any), and updated `Last modified` timestamp. | kboard row resolves to the new task path. |
-| 6 | Update [`fbuboard.md`](../project-management/kanban/fbuboard.md) FBU row to reference the target task and updated `Last modified` timestamp. | fbuboard row resolves to the new task path. |
+| 6 | Update [`kboard.md`](../project-management/kanban/kboard.md) FBU row to reference the target task and updated `Last modified` timestamp. | fbuboard row resolves to the new task path. |
 | 7 | Update the source story checklist row (annotate as `SUPERSEDED` with successor link). | Source story checklist line carries a successor pointer. |
 | 8 | Update the target story checklist row (add new entry per template). | Target story checklist line exists. |
 | 9 | Run [`validate_ipw_publication_wiring.py`](../../packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py) against the new task ID. If the task uses the consolidated IPP model, declare `Publication Status: NOT_APPLICABLE` with reason. | Validator returns PASS for the new task. |
@@ -188,7 +188,7 @@ The investigator must record, per recommended candidate, the surface to edit, th
   - Disposition recommendation (RF4) chosen with criteria evidence and required follow-on tasks identified per §2.6.
   - Guardrail follow-on candidate set (RF5) finalized per §2.8 (filing happens downstream).
   - Re-housing protocol (RF6) cited and applied at least once (already satisfied by `BR-069`; re-citation in the report suffices).
-- **Atomic propagation requirement:** When T03 closes, the host task status, Story 019 row status, and any kboard/fbuboard rows must update in the same release/session.
+- **Atomic propagation requirement:** When T03 closes, the host task status, Story 019 row status, and any kboard rows must update in the same release/session.
 - **Owner of write to `COMPLETE`:** RW Step 7 / standalone UKW after the host task is updated under user-triggered RW execution.
 - **Decoupling clarification:** This IPP does not transition T03 to `COMPLETE` and does not require Wave 2 (forensic execution) or Wave 3 (disposition recommendation) to land for the IPP itself to be considered published.
 
@@ -243,7 +243,7 @@ The plan is structured as four waves so each can be released or deferred atomica
 | 1.2 | Wire host task T03 (Input, References, Publication Status block) | Task doc linked to IPP and validator-clean |
 | 1.3 | Wire FR-087 (IPP backlink under Implementing Task) | FR doc bidirectionally discoverable |
 | 1.4 | Annotate Story 019 checklist row for T03 with IPP path | Story-level discoverability |
-| 1.5 | Replace `--No IPP--` token on E4:S19:T03 / FR-087 rows in kboard.md and fbuboard.md with link to this IPP | Boards reflect planning artifact |
+| 1.5 | Replace `--No IPP--` token on E4:S19:T03 / FR-087 rows in kboard.md with link to this IPP | Boards reflect planning artifact |
 | 1.6 | Run `validate_ipw_publication_wiring.py --requested E4:S19:T03` | Validator PASS recorded in §5 |
 
 ### 4.2 Wave 2 - Forensic investigation execution (deferred, owned by T03)
@@ -304,7 +304,7 @@ Wave 4 is the operational consequence of the disposition decision and lives enti
 - `docs/project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md`
 - `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`
 - `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 
 ---
 

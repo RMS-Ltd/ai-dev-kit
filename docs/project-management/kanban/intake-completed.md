@@ -6,13 +6,12 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# AI Dev Kit – FBU Completed Items
+# AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
 **Last Updated:** 2026-06-05 (RW **E02:S16:T04** — BR-078/079/080/087 pruned v0.2.16.4+29)
 **Version:** v0.2.16.4+29 (**SemVer** v0.4.898+29)
 
-> **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
-> **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
+> **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
 > **For Epic/Story/Task structure, see:** [`kanban-structure.md`](kanban-structure.md)  
 > **For rules and explanations, see:** [`kanban-board-guide.md`](kanban-board-guide.md)
@@ -70,7 +69,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 | FR-085 | FR | UKW optional `--rp` deep reprioritization — ADR-009, agent SoT, cheatsheet (**E02:S16:T06**) | 2026-05-30T12:54:46Z | v0.2.16.6+1 | RW |
 | FR-046 | FR | RW SemVer tag when task_touch enabled — dual-mode closure (**E05:S01:T46**) | 2026-05-30T08:55:34Z | v0.5.1.46+7 | RW |
 
-> **Reopened 2026-06-04:** **FR-046** (with **FR-045**) — registry SemVer PATCH/core collisions; active on [`fbuboard.md`](fbuboard.md) Must Have; delivery **E03:S02:T12**. Closure row retained for forensic history only.
+> **Reopened 2026-06-04:** **FR-046** (with **FR-045**) — registry SemVer PATCH/core collisions; active on [`kboard.md`](kboard.md) Must Have; delivery **E03:S02:T12**. Closure row retained for forensic history only.
 | FR-074 | FR | Kanban intake atomic KG-R2 & semantic KG-R6 (**E05:S01:T74**) | 2026-05-29T00:00:00Z | v0.5.1.74+3 | RW |
 | FR-049 | FR | Enhanced kanban-completed timestamps + recent tasks dashboard (**E05:S01:T49**) | 2026-03-11T16:20:00Z | v0.5.1.49+2 | RW |
 | FR-011 | FR | Task splitting across multiple canonical epics (**E04:S08:T07**) | 2026-05-29T15:30:00Z | v0.4.8.7+1 | RW |
@@ -78,7 +77,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 | BR-065 | BR | RW Step 12.5 GitHub release parser `v0` prefix — **FIXED** (**E06:S07:T113**) | 2026-04-13 | v0.6.7.113+1 | RW |
 | UXR-012 | UXR | MoSCOW state icons Set A + fallback — **COMPLETE** (**E04:S13:T07**) | 2026-05-20 | v0.4.13.7+2 | RW |
 | FR-086 | FR | Canonical FBU/kanban naming — **COMPLETE** (**E04:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
-| UXR-008 | UXR | `kboard.md` / `fbuboard.md` naming — **COMPLETE** (**E04:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
+| UXR-008 | UXR | `kboard.md` naming — **COMPLETE** (**E04:S19:T06**) | 2026-04-26 | v0.4.19.6+5 | RW |
 | FR-092 | FR | RW/UKW kanban consistency program — **COMPLETE** (**E02:S15:T07**) | 2026-05-19 | v0.2.15.7+9 | RW |
 | FR-090 | FR | UKW row transform engine — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
 | FR-091 | FR | RW Step 7 self-sufficient kanban — **SUPERSEDED** by FR-092 | 2026-04-27 | v0.2.15.7+9 | FR-092 |
@@ -96,7 +95,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 | FR-100 | FR | IPW ADR necessity checklist — Phase 5.0 gate; T1–T7 / E1–E5; policy SoT; IPP §2.5 (**E02:S16:T12**) | 2026-05-26 | v0.2.16.12+2 | RW |
 | FR-096 | FR | IPW mandatory documentation phases — update/create (Phase 5) + housing (Phase 6); IPP §5–§7; ten-phase `/ipw` (**E02:S16:T11**) | 2026-05-20 | v0.2.16.11+1 | RW |
 | UXR-011 | UXR | Kanban naming hygiene and directory systematic cleanup — 51 Txxx files renamed, 21 duplicate stories reconciled, duplicate tasks removed, zero-padding fixed, governance policy updated, regression validator green (**E09:S05:T04**) | 2026-05-18 | v0.9.5.4+2 | IPW |
-| BR-069 | BR | kboard/fbuboard earliest `Last modified` timestamps overwritten — CLOSED via FR-092 Wave 4–8 (**E02:S15:T04**) | 2026-05-19 | v0.2.15.7+9 | UKW |
+| BR-069 | BR | kboard earliest `Last modified` timestamps overwritten — CLOSED via FR-092 Wave 4–8 (**E02:S15:T04**) | 2026-05-19 | v0.2.15.7+9 | UKW |
 | BR-038 | BR | RW micromanagement and tool discovery — recovery journal scope shipped (**E06:S06:T63**) | 2026-05-17 | v0.6.6.63+1 | RW |
 | UXR-009 | UXR | Last-modified stamp forensic integrity — CLOSED via FR-092 stamp-evidence gate (**E06:S07:T115**) | 2026-05-19 | v0.2.15.7+9 | UKW |
 | BR-042 | BR | UKW agent board cleanup failure — CLOSED as duplicate of FR-090 (active-row hygiene fixed by BR-062 v0.2.1.11+2; consolidated under FR-092 meta-program) | 2026-04-27 | v0.2.15.4+5 | FR-092 Wave 1 |
@@ -135,7 +134,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Completed:** 2026-04-19 (`v0.5.9.11+5`)  
 **Implementing Task:** [E05:S09:T11](epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)  
 **Completing Agent:** RW Agent  
-**Resolution:** **[IPW-E05S09T11](../../implementation-cycles/IPW-E05S09T11-docusaurus-monorepo-markdown-links-br068.md)** Waves **1–4** — Strategy **A** corpus normalization; **`npm run build`** strict green; **BR-068** §Acceptance Criteria satisfied (CI gate: **`docusaurus-build.yml`**). Row removed from [`fbuboard.md`](fbuboard.md).
+**Resolution:** **[IPW-E05S09T11](../../implementation-cycles/IPW-E05S09T11-docusaurus-monorepo-markdown-links-br068.md)** Waves **1–4** — Strategy **A** corpus normalization; **`npm run build`** strict green; **BR-068** §Acceptance Criteria satisfied (CI gate: **`docusaurus-build.yml`**). Row removed from [`kboard.md`](kboard.md).
 
 ---
 
@@ -143,7 +142,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Completed:** 2026-04-19 (`v0.6.9.1+8`)  
 **Implementing Task:** [E06:S09:T01](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)  
 **Completing Agent:** RW Agent  
-**Resolution:** Functional + non-functional requirements satisfied per **Implementation evidence** on [FR-080](fr-br/FR-080-greenfield-installation-process.md); deferrals explicit (FR-078/079 product telemetry, FR-082/T03 canonical coordinates). Row removed from [`fbuboard.md`](fbuboard.md).
+**Resolution:** Functional + non-functional requirements satisfied per **Implementation evidence** on [FR-080](fr-br/FR-080-greenfield-installation-process.md); deferrals explicit (FR-078/079 product telemetry, FR-082/T03 canonical coordinates). Row removed from [`kboard.md`](kboard.md).
 
 ---
 
@@ -153,7 +152,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Completed:** 2026-04-18 (`v0.7.6.18+3`)  
 **Implementing Task:** [E07:S06:T18](epics/epic-07/story-06-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md)  
 **Completing Agent:** UKW Agent  
-**Resolution:** Implementing task **COMPLETE**; intake doc [`UXR-007`](fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md) set to **`Status: COMPLETE`**; Must Have row removed from [`fbuboard.md`](fbuboard.md) per active-board hygiene.
+**Resolution:** Implementing task **COMPLETE**; intake doc [`UXR-007`](fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md) set to **`Status: COMPLETE`**; Must Have row removed from [`kboard.md`](kboard.md) per active-board hygiene.
 
 ---
 
@@ -211,8 +210,8 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Description:** Created prioritization board for FRs, BRs, and UXRs with identical structure to Kanban board  
 **Impact:** Provides systematic FR/BR/UXR management with centralized visibility and prioritization  
 **Files Created:**
-- `fbuboard.md` - Main prioritization board
-- `fbu-completed.md` - Completed items tracking (canonical path)
+- `kboard.md` - Main prioritization board
+- `intake-completed.md` - Completed items tracking (canonical path)
 - Updated Kanban board and documentation integration
 
 ---
@@ -229,7 +228,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 1. **Implementation Complete** - All code/docs delivered and released
 2. **Validation Done** - Implementation tested and accepted
 3. **Task Completion** - Associated Kanban tasks marked complete
-4. **Board Update** - Move from `fbuboard.md` to this completed board
+4. **Board Update** - Move from `kboard.md` to this completed board
 5. **Documentation** - Record completion details and impact
 
 ### For FRs Converted to Tasks:
@@ -282,7 +281,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 1. **Verify Completion** - Ensure implementation is fully complete and released
 2. **Gather Details** - Collect completion date, version, and implementing task info
 3. **Document Impact** - Describe what was implemented and its impact
-4. **Update Board** - Remove from `fbuboard.md` and add to this completed board
+4. **Update Board** - Remove from `kboard.md` and add to this completed board
 5. **Cross-Reference** - Ensure bidirectional references between FR/BR/UXR and tasks
 
 ### For Reference:

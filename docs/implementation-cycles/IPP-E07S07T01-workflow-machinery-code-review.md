@@ -155,7 +155,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md` | UPDATE |
 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews.md` | UPDATE (on complete) |
 | `docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md` | UPDATE (RC gate pointer) |
-| `docs/project-management/kanban/kboard.md` / `fbuboard.md` | UPDATE on RW Step 7 |
+| `docs/project-management/kanban/kboard.md` | UPDATE on RW Step 7 |
 
 **No changes** to `packages/frameworks/workflow-mgt/` Python/YAML except trivial doc fixes if discovered (RNF3).
 
@@ -187,7 +187,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | D-U2 | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews.md` | Checklist forensic marker on complete | Step N |
 | D-U3 | `docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md` | RC gate / review consumption pointer | Step 11 |
 | D-U4 | `docs/project-management/kanban/kboard.md` | E07:S07:T01 status/version on RW | Step 13 |
-| D-U5 | `docs/project-management/kanban/fbuboard.md` | FR-107 row IPP link | Step 13 |
+| D-U5 | `docs/project-management/kanban/kboard.md` | FR-107 row IPP link | Step 13 |
 
 ### 5.2 New documents to create
 

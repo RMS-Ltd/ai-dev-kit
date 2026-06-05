@@ -140,7 +140,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - CREATE: [`tests/test_portal_br093_ci_deduplication.py`](../../tests/test_portal_br093_ci_deduplication.py)
 - UPDATE: [`tests/test_portal_fr070_deployment.py`](../../tests/test_portal_fr070_deployment.py)
 - UPDATE (minimal): [`tests/test_portal_fr069_ci.py`](../../tests/test_portal_fr069_ci.py) if artifact step added to build job
-- UPDATE (RW Step 7): task doc, story checklist, `kboard.md`, `fbuboard.md`, BR-093
+- UPDATE (RW Step 7): task doc, story checklist, `kboard.md`, BR-093
 
 ### 4.2 Dependency order
 

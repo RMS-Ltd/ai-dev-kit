@@ -121,7 +121,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | **1** | **[MANDATORY]** Transition `E4:S06:T01` **TODO → IN PROGRESS**; update `Last updated` | Task doc |
 | **2** | Finalize §7 audit matrix in task doc (copy from IPP if needed) | Audit evidence |
 | **3** | Re-run T2 if templates changed since IPW | Validator log |
-| **4** | **Kanban reconciliation:** Remove T01 from `kboard` Could; remove FR-005 from `fbuboard` active (or terminal); add/update `fbu-completed`; fix `kanban-completed` T01 line → `v0.4.6.7+1` + link discrete task; story checklist links discrete T01 | Boards synced |
+| **4** | **Kanban reconciliation:** Remove T01 from `kboard` Could; remove FR-005 from `fbuboard` active (or terminal); add/update `intake-completed`; fix `kanban-completed` T01 line → `v0.4.6.7+1` + link discrete task; story checklist links discrete T01 | Boards synced |
 | **5** | **FR-005:** Check criteria; status **IMPLEMENTED**; link IPP + discrete task; note R5 defer | FR doc |
 | **6** | **R5:** Record defer in FR-005 + IPP §5.3 (no `CANONICAL_ADDITION_PROCESS.md` in closure RW unless user expands scope) | Deferral documented |
 | **7** | **RW E4:S06:T01 --art** after user verification | Release |
@@ -138,7 +138,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 - `docs/project-management/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md`
 - `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md` (checklist link)
-- `docs/project-management/kanban/kboard.md`, `fbuboard.md`, `kanban-completed.md`, `fbu-completed.md`
+- `docs/project-management/kanban/kboard.md`, `kanban-completed.md`, `intake-completed.md`
 
 ### 4.2 Dependency order
 
@@ -154,7 +154,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | ------ | ---- | ----- | ------- |
 | D-U1 | `FR-005-...md` | Status, criteria, implementing task link | RF4, Step 5 |
 | D-U2 | `story-06-...md` | Checklist → discrete T01 | RF1 |
-| D-U3 | `kboard.md`, `fbuboard.md`, `kanban-completed.md`, `fbu-completed.md` | Reconciliation | RF3 |
+| D-U3 | `kboard.md`, `kanban-completed.md`, `intake-completed.md` | Reconciliation | RF3 |
 
 ### 5.2 New documents to create
 

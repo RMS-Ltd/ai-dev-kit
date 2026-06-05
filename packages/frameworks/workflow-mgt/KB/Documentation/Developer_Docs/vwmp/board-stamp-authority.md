@@ -6,7 +6,7 @@ housekeeping_policy: keep
 
 # Board Stamp Authority (FR-097)
 
-Row `| Last modified: YYYY-MM-DD HH:MM UTC` on `kboard.md` and `fbuboard.md` is **forensic evidence** of underlying FR/BR/UXR/task activity—not board-hygiene clock time.
+Row `| Last modified: YYYY-MM-DD HH:MM UTC` on `kboard.md` is **forensic evidence** of underlying FR/BR/UXR/task activity—not board-hygiene clock time.
 
 ## Edit classes
 
@@ -23,7 +23,7 @@ Row `| Last modified: YYYY-MM-DD HH:MM UTC` on `kboard.md` and `fbuboard.md` is 
 pre-commit install   # or: cp scripts/git-hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
 
-Runs `validate_board_stamps_precommit.py` on staged `kboard.md` / `fbuboard.md`:
+Runs `validate_board_stamps_precommit.py` on staged `kboard.md`:
 
 - **Homogeneity:** blocks when **≥3** rows share one stamp (config: `rw-config.yaml` → `board_stamp.homogeneity_threshold`).
 - **Stamp diff:** blocks unevidenced stamp changes vs `HEAD` (same as RW Step 9).
@@ -42,7 +42,7 @@ Runs `validate_board_stamps_precommit.py` on staged `kboard.md` / `fbuboard.md`:
      --after docs/project-management/kanban/kboard.md \
      --strict
    ```
-   Repeat for `fbuboard.md`. **Abort** on non-zero exit.
+   Repeat for `kboard.md`. **Abort** on non-zero exit.
 
 Optional release-scope manifest (`--evidence-manifest`) JSON:
 ```json

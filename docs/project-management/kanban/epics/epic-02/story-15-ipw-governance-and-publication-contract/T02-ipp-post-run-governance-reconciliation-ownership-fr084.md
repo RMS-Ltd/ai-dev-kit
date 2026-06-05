@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 - [FR-084](../../../fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md) requirements.
 - Existing IPW governance baseline under Story 015.
-- Current governance surfaces: host task docs, source FR/BR/UXR docs, `kboard.md`, `fbuboard.md`.
+- Current governance surfaces: host task docs, source FR/BR/UXR docs, `kboard.md`.
 
 ---
 
@@ -41,7 +41,7 @@ IPW completion currently does not guarantee deterministic reconciliation of all 
 
 ## Deliverable
 
-- Explicit, enforceable IPP post-run reconciliation contract covering task doc, FR/BR/UXR doc, `kboard.md`, and `fbuboard.md`.
+- Explicit, enforceable IPP post-run reconciliation contract covering task doc, FR/BR/UXR doc, `kboard.md`, and `kboard.md`.
 - Deterministic order and idempotency expectations for repeated IPW execution.
 - Traceability wiring for FR/task/story/boards.
 
@@ -60,7 +60,7 @@ IPW completion currently does not guarantee deterministic reconciliation of all 
 
 - [ ] **AC1:** Contract assigns post-run ownership for host task reconciliation.
 - [ ] **AC2:** Contract assigns post-run ownership for source FR/BR/UXR reconciliation.
-- [ ] **AC3:** Contract assigns post-run ownership for `kboard.md` and `fbuboard.md`.
+- [ ] **AC3:** Contract assigns post-run ownership for `kboard.md`.
 - [ ] **AC4:** Reconciliation order and idempotency expectations are documented and testable.
 - [ ] **AC5:** FR-084 and E02:S15:T02 are bidirectionally linked and visible in active boards/story checklist.
 

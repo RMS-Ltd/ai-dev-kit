@@ -388,9 +388,7 @@ def resolve_kanban_paths(
         # Default fallback - try multiple locations
         board_candidates = [
             kanban_root / "kboard.md",
-            kanban_root / "kanban-board.md",
             project_root / "docs/project-management/kanban/kboard.md",
-            project_root / "docs/project-management/kanban/kanban-board.md",
         ]
         for candidate in board_candidates:
             # Resolve candidate to absolute path
@@ -1644,7 +1642,7 @@ def _is_terminal_frbr_status(status_text: str) -> bool:
     return not any(marker in upper for marker in unresolved_markers)
 
 
-def _cleanup_fbuboard_active_rows(
+def _cleanup_kboard_intake_active_rows(
     board_content: str,
     board_path: Path,
     timestamp_value: str,
@@ -1652,7 +1650,7 @@ def _cleanup_fbuboard_active_rows(
     evidence_mode: str = EVIDENCE_MODE_NON_SUBSTANTIVE,
 ) -> Tuple[str, Dict[str, int]]:
     """
-    Cleanup active MoSCOW rows in fbuboard.md by removing terminal items.
+    Cleanup active MoSCOW rows in kboard.md by removing terminal items.
     Preserve existing active-row timestamps; never blind-append synthetic stamps
     on hygiene (FR-097 / UXR-009).
     """
@@ -1725,7 +1723,7 @@ def run_corpus_canonical_sweep(
 ) -> Tuple[List[str], Dict[str, Any]]:
     """
     Run the canonical row transform pipeline over the entire corpus of active
-    boards (kboard.md + fbuboard.md) and emit a normalization diff.
+    boards (kboard.md) and emit a normalization diff.
 
     FR-092 Wave 4 corpus-mode entrypoint. Unlike `enforce_terminal_timestamps_on_boards`,
     this surface is intended for explicit pre-RW or maintenance sweeps where the
@@ -1739,9 +1737,7 @@ def run_corpus_canonical_sweep(
     """
     boards = [
         project_root / "docs/project-management/kanban/kboard.md",
-        project_root / "docs/project-management/kanban/fbuboard.md",
-        project_root / "docs/project-management/kanban/kanban-board.md",
-    ]
+        ]
     if timestamp_value is None:
         timestamp_value = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
@@ -1766,14 +1762,6 @@ def run_corpus_canonical_sweep(
         if not board.exists():
             continue
         original = board.read_text()
-        if board.name == "fbuboard.md":
-            try:
-                from stamp_authority import is_fbuboard_deprecated
-
-                if is_fbuboard_deprecated(original):
-                    continue
-            except ImportError:
-                pass
         transformed, diagnostics = apply_canonical_row_transform_pipeline(
             board_content=original,
             project_root=project_root,
@@ -1824,17 +1812,14 @@ def enforce_terminal_timestamps_on_boards(
     prune_terminal_active_rows: bool = False,
 ) -> List[str]:
     """
-    Enforce terminal row timestamps on both active boards:
+    Enforce terminal row timestamps on the active board:
     - kboard.md
-    - fbuboard.md
 
     UKW/hygiene defaults to ``non_substantive`` (FR-097): no synthetic stamp churn.
     """
     boards = [
         project_root / "docs/project-management/kanban/kboard.md",
-        project_root / "docs/project-management/kanban/fbuboard.md",
-        project_root / "docs/project-management/kanban/kanban-board.md",
-    ]
+        ]
     timestamp_now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
     changes: List[str] = []
 
@@ -1842,49 +1827,28 @@ def enforce_terminal_timestamps_on_boards(
         if not board.exists():
             continue
         original = board.read_text()
-        if board.name == "fbuboard.md":
-            try:
-                from stamp_authority import is_fbuboard_deprecated
-
-                if is_fbuboard_deprecated(original):
-                    continue
-            except ImportError:
-                pass
         pre_hash = hashlib.sha256(original.encode("utf-8")).hexdigest()
 
-        if board.name == "fbuboard.md":
-            if prune_terminal_active_rows:
-                updated, stats = _cleanup_fbuboard_active_rows(
-                    original,
-                    board,
-                    timestamp_now,
-                    evidence_mode=evidence_mode,
-                )
-            else:
-                updated = original
-                stats = None
-            updated, row_pipeline_diagnostics = apply_canonical_row_transform_pipeline(
-                board_content=updated,
-                project_root=project_root,
-                timestamp_value=timestamp_now,
-                contract=ROW_TRANSFORM_CONTRACT_STANDALONE,
+        if prune_terminal_active_rows:
+            updated, stats = _cleanup_kboard_intake_active_rows(
+                original,
+                board,
+                timestamp_now,
                 evidence_mode=evidence_mode,
-                evidence_provider=evidence_provider,
             )
-            dup_report = row_pipeline_diagnostics["dup_report"]
-            timestamp_report = row_pipeline_diagnostics["timestamp_report"]
         else:
-            updated, row_pipeline_diagnostics = apply_canonical_row_transform_pipeline(
-                board_content=original,
-                project_root=project_root,
-                timestamp_value=timestamp_now,
-                contract=ROW_TRANSFORM_CONTRACT_STANDALONE,
-                evidence_mode=evidence_mode,
-                evidence_provider=evidence_provider,
-            )
-            dup_report = row_pipeline_diagnostics["dup_report"]
-            timestamp_report = row_pipeline_diagnostics["timestamp_report"]
+            updated = original
             stats = None
+        updated, row_pipeline_diagnostics = apply_canonical_row_transform_pipeline(
+            board_content=updated,
+            project_root=project_root,
+            timestamp_value=timestamp_now,
+            contract=ROW_TRANSFORM_CONTRACT_STANDALONE,
+            evidence_mode=evidence_mode,
+            evidence_provider=evidence_provider,
+        )
+        dup_report = row_pipeline_diagnostics["dup_report"]
+        timestamp_report = row_pipeline_diagnostics["timestamp_report"]
 
         if updated != original:
             # Concurrency-safe revalidation before final write.
@@ -1892,9 +1856,9 @@ def enforce_terminal_timestamps_on_boards(
             live_hash = hashlib.sha256(live.encode("utf-8")).hexdigest()
             if live_hash != pre_hash:
                 # Re-apply transforms to latest content to avoid stale writes.
-                if board.name == "fbuboard.md":
+                if board.name == "kboard.md":
                     if prune_terminal_active_rows:
-                        updated, stats = _cleanup_fbuboard_active_rows(
+                        updated, stats = _cleanup_kboard_intake_active_rows(
                             live,
                             board,
                             timestamp_now,
@@ -1949,7 +1913,7 @@ def enforce_terminal_timestamps_on_boards(
                 )
             if stats is not None:
                 changes.append(
-                    "fbuboard reconciliation: "
+                    "kboard intake reconciliation: "
                     f"audited={stats['audited']}, removed={stats['removed']}, "
                     f"kept_exceptions={stats['kept_exception']}, "
                     f"timestamps_added_missing={stats['timestamps_added_missing']}"
@@ -2237,18 +2201,17 @@ def validate_updates(
 # Four-surface reconciliation report (FR-092 Wave 3, absorbing FR-084 contract)
 #
 # RW Step 7 owns release-scope kanban consistency end-to-end across three
-# primary surfaces (ADR-018); fbuboard.md is optional when deprecated:
+# primary surfaces (ADR-018); kboard.md is optional when deprecated:
 #
 #   1. Task doc                  (host task + directly affected child tasks)
 #   2. Source FR / BR / UXR doc  (bidirectional links + status mirror)
 #   3. kboard.md                 (canonical row + V-band + active-row hygiene)
-#   (legacy) fbuboard.md         — deprecated redirect stub; not maintained
 #
 # This module emits a structured "touched surfaces + why" report so RW Step 7
 # is auditable and self-sufficient without relying on a follow-up UKW run.
 #
 # Properties: idempotent, deterministic, ordered (host task -> source FBU ->
-# kboard.md -> fbuboard.md). See:
+# kboard.md). See:
 #   - .cursorrules Step 7
 #   - packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md
 #   - packages/frameworks/kanban/policies/kanban-governance-policy.md
@@ -2256,7 +2219,7 @@ def validate_updates(
 ###############################################################################
 
 
-FOUR_SURFACE_NAMES = ("task_doc", "fbu_doc", "kboard", "fbuboard")
+THREE_SURFACE_NAMES = ("task_doc", "fbu_doc", "kboard")
 
 
 @dataclass
@@ -2295,7 +2258,7 @@ class FourSurfaceReport:
     timestamp_utc: str
     surfaces: Dict[str, SurfaceReport] = field(default_factory=dict)
     auxiliary_surfaces: Dict[str, SurfaceReport] = field(default_factory=dict)
-    contract: str = "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation; fbuboard optional)"
+    contract: str = "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)"
     stamp_evidence: Dict[str, Any] = field(default_factory=dict)
 
     def as_dict(self) -> Dict[str, Any]:
@@ -2363,7 +2326,7 @@ class FourSurfaceReport:
         lines.append("")
         lines.append("## Per-surface detail")
         lines.append("")
-        for name in FOUR_SURFACE_NAMES:
+        for name in THREE_SURFACE_NAMES:
             rep = d["surfaces"].get(name, {"surface": name, "paths": [], "touched": False, "changes": [], "notes": []})
             lines.append(f"### Surface: `{name}`")
             lines.append("")
@@ -2416,8 +2379,8 @@ def _classify_change_to_surface(change: str) -> Optional[str]:
     c = change.lower()
     if "kboard" in c or "kanban-board" in c:
         return "kboard"
-    if "fbuboard" in c:
-        return "fbuboard"
+    if "fbuboard" in c or "intake reconciliation" in c:
+        return "kboard"
     if "story" in c and "doc" in c:
         return "story_doc"
     if "epic" in c and "doc" in c:
@@ -2530,34 +2493,10 @@ def build_four_surface_report(
         candidate = project_root / "docs/project-management/kanban/kboard.md"
         if candidate.exists():
             kboard_path = candidate.resolve()
-    fbuboard_path: Optional[Path] = None
-    fbuboard_candidates = [
-        project_root / "docs/project-management/kanban/fbuboard.md",
-    ]
-    fbuboard_deprecated = False
-    for cand in fbuboard_candidates:
-        if cand.exists():
-            fbuboard_path = cand.resolve()
-            try:
-                from stamp_authority import is_fbuboard_deprecated
-
-                fbuboard_deprecated = is_fbuboard_deprecated(
-                    fbuboard_path.read_text(encoding="utf-8", errors="replace")
-                )
-            except ImportError:
-                fbuboard_deprecated = False
-            break
-
     surface_specs = [
         ("task_doc", [task_doc_path] if task_doc_path else []),
         ("fbu_doc", list(fbu_doc_paths)),
         ("kboard", [kboard_path] if kboard_path else []),
-        (
-            "fbuboard",
-            [fbuboard_path]
-            if fbuboard_path and not fbuboard_deprecated
-            else [],
-        ),
     ]
     for name, surface_paths in surface_specs:
         rep = SurfaceReport(name=name)
@@ -2582,7 +2521,7 @@ def build_four_surface_report(
 
     for change in all_changes:
         surface = _classify_change_to_surface(change)
-        if surface in {"task_doc", "fbu_doc", "kboard", "fbuboard"}:
+        if surface in {"task_doc", "fbu_doc", "kboard"}:
             target = report.surfaces.setdefault(surface, SurfaceReport(name=surface))
             target.touched = True
             target.changes.append(change)
@@ -2597,15 +2536,8 @@ def build_four_surface_report(
             target.touched = True
             target.changes.append(change)
 
-    for name in FOUR_SURFACE_NAMES:
+    for name in THREE_SURFACE_NAMES:
         rep = report.surfaces.setdefault(name, SurfaceReport(name=name))
-        if name == "fbuboard" and fbuboard_deprecated:
-            rep.paths = [str(fbuboard_path)] if fbuboard_path else []
-            rep.notes.append(
-                "ADR-018: fbuboard.md is a deprecated redirect stub — "
-                "not maintained by RW/UKW (kboard V-band owns verification rows)."
-            )
-            continue
         if not rep.touched and not rep.notes:
             rep.notes.append(
                 "Surface within release scope but not touched by this run "
@@ -2697,7 +2629,7 @@ def main():
         action="store_true",
         help=(
             "FR-092 Wave 4: run the canonical row transform pipeline over the "
-            "entire corpus of active boards (kboard.md + fbuboard.md) and "
+            "entire corpus of active boards (kboard.md) and "
             "emit a structured normalization sweep report. Use this for "
             "explicit pre-RW corpus normalization or maintenance sweeps."
         ),

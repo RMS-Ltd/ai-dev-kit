@@ -54,7 +54,7 @@ Systematically clean up naming and structural hygiene issues across the entire `
 - All orphaned directories resolved
 - `epic-07/story-004` renamed to `story-004`
 - All internal markdown links updated and validated
-- `kboard.md` and `fbuboard.md` updated with correct references
+- `kboard.md` updated with correct references
 - Kanban governance policy updated to prevent recurrence
 - Regression script confirming zero defects post-cleanup
 

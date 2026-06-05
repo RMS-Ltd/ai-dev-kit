@@ -23,13 +23,13 @@ housekeeping_policy: keep
 
 ## Summary
 
-MoSCOW rows on `kboard.md` and `fbuboard.md` expose lifecycle state as **plain text** (`IN PROGRESS`, `OPEN`, `RESOLVED`, …). A single successful experiment — prefixing **COMPLETE** with **✅** (e.g. `✅ COMPLETE (v0.2.15.8+2)`) — improved at-a-glance scanning in the IDE/board preview. This UXR defines a **canonical state → icon** mapping for **all** task and FBU states, compares **candidate icon sets** for an editorial decision, and sets acceptance criteria for governance + UKW/RW adoption.
+MoSCOW rows on `kboard.md` expose lifecycle state as **plain text** (`IN PROGRESS`, `OPEN`, `RESOLVED`, …). A single successful experiment — prefixing **COMPLETE** with **✅** (e.g. `✅ COMPLETE (v0.2.15.8+2)`) — improved at-a-glance scanning in the IDE/board preview. This UXR defines a **canonical state → icon** mapping for **all** task and FBU states, compares **candidate icon sets** for an editorial decision, and sets acceptance criteria for governance + UKW/RW adoption.
 
 ---
 
 ## Editorial decision (signed-off 2026-05-20, refined)
 
-**Normative model:** **Set A (emoji) everywhere the rendering context supports emoji** — including `kboard.md`, `fbuboard.md`, GitHub, and IDE markdown preview. **Set B (Unicode symbols)** is the **fallback substitute** for the same state when emoji cannot be relied on (plain-text terminals, logs, email, tooling that strips or mangles emoji).
+**Normative model:** **Set A (emoji) everywhere the rendering context supports emoji** — including `kboard.md`, GitHub, and IDE markdown preview. **Set B (Unicode symbols)** is the **fallback substitute** for the same state when emoji cannot be relied on (plain-text terminals, logs, email, tooling that strips or mangles emoji).
 
 This supersedes the interim **Set D (Hybrid)** pick, which mixed A and B on the same board rows. The user intent is **not** “pick emoji for done and symbols for queue on the board,” but **one vocabulary (A) on boards, with a documented B mapping for degraded contexts**.
 
@@ -52,7 +52,7 @@ This supersedes the interim **Set D (Hybrid)** pick, which mixed A and B on the 
 
 | Context | Form |
 | ------- | ---- |
-| `kboard.md`, `fbuboard.md` (repo SoT) | **Primary (emoji)** only |
+| `kboard.md` (repo SoT) | **Primary (emoji)** only |
 | UKW/RW board writes | **Primary (emoji)** only |
 | Validators, grep, CI logs | Match **status word**; icon optional in regex; fallback acceptable in exported/plain-text reports |
 | User-facing plain-text (email, some terminals) | **Fallback (Unicode)** when emoji unsupported |
@@ -78,7 +78,7 @@ This supersedes the interim **Set D (Hybrid)** pick, which mixed A and B on the 
 | Surface | Pattern today | Icon usage |
 | ------- | ------------- | ---------- |
 | `kboard.md` | `- **E02:S15:T08** – … - IN PROGRESS` or `✅ COMPLETE (v…)` | Ad hoc **✅** on some COMPLETE rows only |
-| `fbuboard.md` | `- **FR-097** – … - RESOLVED (v…)` | Text only |
+| `kboard.md` | `- **FR-097** – … - RESOLVED (v…)` | Text only |
 | `kanban-structure.md` | Story checklist `✅ COMPLETE` | Checklist convention, not MoSCOW row rule |
 | FR/BR/UXR docs | `**Status:**` field | No board-row icon contract |
 
@@ -100,7 +100,7 @@ Derived from live boards + `fr-br/` corpus (non-exhaustive; implementation must 
 | `PROPOSED` | — |
 | `BLOCKED` | — |
 
-### FBU states (`fbuboard.md` + doc headers)
+### FBU states (`kboard.md` + doc headers)
 
 | Bucket | Canonical | Aliases seen |
 | ------ | --------- | ------------ |
@@ -201,7 +201,7 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 | FBU type discrimination | ★★☆☆☆ | ★★☆☆☆ | ★★★☆☆ | ★★★☆☆ (optional FR/BR/UXR suffix icons in phase 2) |
 | Accessibility | ★★★☆☆ | ★★★☆☆ | ★★★★☆ | ★★★★☆ |
 
-**Editorial outcome:** **Set A primary + Unicode fallback** (full table above). Interim Set D withdrawn. Optional **phase 2:** type prefix icons (`🟦 FR`, `🟥 BR`, `🟪 UXR`) on `fbuboard.md` if scan tests show benefit.
+**Editorial outcome:** **Set A primary + Unicode fallback** (full table above). Interim Set D withdrawn. Optional **phase 2:** type prefix icons (`🟦 FR`, `🟥 BR`, `🟪 UXR`) on `kboard.md` if scan tests show benefit.
 
 **Example (task, board — emoji only):**
 
@@ -239,7 +239,7 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 
 1. Every MoSCOW row with a status **must** include exactly one leading state icon (**Set A emoji** on boards).
 2. Icons are **not** substituted for the status word (keep `COMPLETE` for grep/validators).
-3. **Fallback symbols** (Set B) are documented for non-emoji contexts only — not mixed into `kboard.md` / `fbuboard.md` as the default row form.
+3. **Fallback symbols** (Set B) are documented for non-emoji contexts only — not mixed into `kboard.md` as the default row form.
 4. UKW/RW **must not** change icons on hygiene-only passes (pairs with FR-097 stamp authority).
 5. **`validate_kanban_state_icons.py`** (Gate 9): row missing primary icon or unknown status → warn/block in `--strict` mode.
 
@@ -249,7 +249,7 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 
 - [x] **AC1:** Editorial decision records chosen set (A/B/C/D or variant) with signed-off mapping table. (**Set A primary + B fallback**, 2026-05-20.)
 - [x] **AC2:** `kanban-board-guide.md` + `kanban-governance-policy.md` document canonical states, aliases, and icons.
-- [x] **AC3:** `kboard.md` and `fbuboard.md` active MoSCOW rows use icons for **all** statuses (not only COMPLETE).
+- [x] **AC3:** `kboard.md` active MoSCOW rows use icons for **all** statuses (not only COMPLETE).
 - [x] **AC4:** UKW/RW agents apply mapping deterministically; no ad hoc icon invention.
 - [x] **AC5:** `validate_kanban_state_icons.py` + Release Readiness Gate 9 enforce presence (implementation **E04:S13:T07** / v0.4.13.7+1).
 
@@ -280,5 +280,5 @@ Interim editorial option: mixed **A on terminal** + **B on queue** on the same r
 ## References
 
 - [kboard.md](../kboard.md) — E02:S15:T08 `✅ COMPLETE` exemplar
-- [fbuboard.md](../fbuboard.md)
+- [kboard.md](../kboard.md)
 - [Kanban governance policy](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)

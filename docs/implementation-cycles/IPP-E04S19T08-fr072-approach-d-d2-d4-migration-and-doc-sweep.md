@@ -69,7 +69,7 @@ RF1–RF2 via intake guardrails + fbuboard audit. RF3 via story/task banners. RF
 
 - **Current task status:** IN PROGRESS (aligned with kboard at implementation start).
 - **COMPLETE:** All ACs + V1–V8 evidence + RW release.
-- **Atomic propagation:** T08 task doc + kboard/fbuboard + FR-072 in same closure session.
+- **Atomic propagation:** T08 task doc + kboard + FR-072 in same closure session.
 
 ### 2.5 ADR necessity decision
 

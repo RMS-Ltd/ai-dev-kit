@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.12+4] - 05-06-26
+## [0.4.19.12+5] - 05-06-26
 
-E04:S19:T12 — **Single-board Wave 4 closure:** Kanban-root legacy `fr-br-uxr-*` alias removal; T12 / UXR-020 COMPLETE. SemVer **v0.4.903+4**.
+E04:S19:T12 — **Intake rename wave:** `fbu-*` → `intake-*`; delete `fbuboard.md` / `kanban-board.md`; three-surface tooling; orphan UKW summaries removed. SemVer **v0.4.904+5**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+4.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+5.md)
 
 ---
 
@@ -195,7 +195,7 @@ E06:S09:T16 — **Install sign-off:** BR-084 accepts lowercase `t{task}`; BR-086
 
 ## [0.2.16.4+27] - 04-06-26
 
-E02:S16:T04 — **UKW:** Restored Could Have backlog on kboard/fbuboard (39/31 rows); FR-109 policy — prune terminal/bloat only, not C-band queue. SemVer **v0.4.881+27**.
+E02:S16:T04 — **UKW:** Restored Could Have backlog on kboard (39/31 rows); FR-109 policy — prune terminal/bloat only, not C-band queue. SemVer **v0.4.881+27**.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+27.md)
 
@@ -203,7 +203,7 @@ E02:S16:T04 — **UKW:** Restored Could Have backlog on kboard/fbuboard (39/31 r
 
 ## [0.2.16.18+1] - 04-06-26
 
-E02:S16:T18 — **FR-109:** Lean active board contract — `validate_active_kanban_board.py`, pre-commit + RW Gate 11, UKW parity doc, pruned kboard/fbuboard. SemVer **v0.4.880+1**.
+E02:S16:T18 — **FR-109:** Lean active board contract — `validate_active_kanban_board.py`, pre-commit + RW Gate 11, UKW parity doc, pruned kboard. SemVer **v0.4.880+1**.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.18+1.md)
 

@@ -34,7 +34,7 @@ Maintainers and agents should **always default to two-digit zero-padded Epic, St
 
 **Secondary questions:**
 
-1. Which surfaces currently mix padded and unpadded forms (`kboard.md`, `fbuboard.md`, task docs, agent rules, validators, commit messages)?
+1. Which surfaces currently mix padded and unpadded forms (`kboard.md`, task docs, agent rules, validators, commit messages)?
 2. How does this relate to existing **Txx** file-naming policy (UXR-011) vs **inline** `E:S:T` display?
 3. What parser/tolerance rules should remain for **legacy** references vs **new writes**?
 
@@ -47,7 +47,7 @@ Maintainers and agents should **always default to two-digit zero-padded Epic, St
 **Duration:** Single intake session (2026-05-30).  
 **Artifacts reviewed:**
 
-- `docs/project-management/kanban/kboard.md`, `fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - `packages/frameworks/kanban/templates/*` (format callouts)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py` (E/S/T regex variants)
@@ -94,7 +94,7 @@ Concrete example: `kboard.md` metadata references **`E02:S16:T04`** (unpadded ta
 - [x] **R1 — Canonical display rule:** Define normative inline form **`E{NN}:S{NN}:T{NN}`** where each `{NN}` is **two digits, zero-padded** when the numeric value is `<10`. Values `≥10` use natural width (no truncation): `E12:S16:T57`.
 - [x] **R2 — Write path default:** UKW, RW Step 7, intake agents, and board row templates **emit padded form by default** on all new/edited references.
 - [x] **R3 — Read path tolerance:** Parsers and validators **continue accepting** unpadded legacy input; optional `--strict-est-format` (or lint) for CI/hygiene passes.
-- [x] **R4 — Corpus normalization:** Scheduled hygiene pass on `kboard.md`, `fbuboard.md`, active task/story docs, and packaged templates (coordinate with UXR-005 spacing work where practical).
+- [x] **R4 — Corpus normalization:** Scheduled hygiene pass on `kboard.md`, active task/story docs, and packaged templates (coordinate with UXR-005 spacing work where practical).
 - [x] **R5 — Agent/rule surfacing:** Update `.cursorrules`, intake skill examples, and kanban-board-guide with explicit **“default to 02 not 2”** guidance.
 
 **Priority order:**
@@ -110,7 +110,7 @@ Concrete example: `kboard.md` metadata references **`E02:S16:T04`** (unpadded ta
 
 **Affected components:**
 
-- [x] Documentation (`kboard.md`, `fbuboard.md`, kanban guides, templates)
+- [x] Documentation (`kboard.md`, kanban guides, templates)
 - [x] User flows (intake, UKW, RW Step 7 board reconciliation)
 - [x] Features (validators, board row grammar)
 - [ ] UI components
@@ -129,7 +129,7 @@ Concrete example: `kboard.md` metadata references **`E02:S16:T04`** (unpadded ta
 
 - [x] **AC1:** Kanban governance policy states **two-digit default for E, S, and T** in inline notation, with examples for values `<10`.
 - [x] **AC2:** `kanban-board-guide.md` (or equivalent) documents write-default vs read-tolerance.
-- [x] **AC3:** Active `kboard.md` / `fbuboard.md` rows normalize Epic/Story/Task segments to two-digit form where numeric component `<10`.
+- [x] **AC3:** Active `kboard.md` rows normalize Epic/Story/Task segments to two-digit form where numeric component `<10`.
 - [x] **AC4:** Intake/UKW/RW agent guidance updated to **default padded output** (unpadded accepted on parse only).
 - [x] **AC5:** UXR-014 ↔ E04:S19:T09 bidirectional links and story checklist entry present.
 

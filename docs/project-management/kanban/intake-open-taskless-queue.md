@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Purpose:** Working queue for filings under the **open taskless FBU** intake plan (agentic task creation, one `RW -k` per epic-aligned filing). **Do not** batch-generate task bodies; each row is processed with deliberate reasoning.
 
-**MoSCOW source:** [`kboard.md`](kboard.md) (sole active board per [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md); `fbuboard.md` deprecated)  
+**MoSCOW source:** [`kboard.md`](kboard.md) (sole active board per [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md); `kboard.md` deprecated)  
 **Governance:** KG-R2 (FR/BR), UXR pattern Epic 7 story-000; [`bidirectional-wiring-principle.md`](../../../governance/principles/bidirectional-wiring-principle.md)
 
 ---
@@ -37,7 +37,7 @@ Before `RW -k`:
 3. **Task id:** Prefer repository pattern `FR-NNN`→`E5:S01:TNNN`, `BR-NNN`→`E6:S01:TNNN`, `UXR-NNN`→`E7:S00:TNNN` (story 0 uses `T03`-style slugs) unless a collision forces another `T` (document rationale in the task doc).  
 4. Author **task doc:** scope, deliverables, acceptance criteria tailored to the source — not a generic stub.  
 5. **Story checklist** row + **`**Implementing Task:**`** on the FBU item doc + task doc links back.  
-6. **fbuboard** / **fbu-structure** line for that id shows `E#:S##:T##`.  
+6. **fbuboard** / **intake-structure** line for that id shows `E#:S##:T##`.  
 7. `git checkout epic/{N}-…` matching epic; run `validate_branch_context.py --strict`; then **`RW -k E{N}:S{SS}:T{TT}`** (Step 1b: `--mode rw-k`).
 
 ---
@@ -53,7 +53,7 @@ Before `RW -k`:
 
 ## Queue table (snapshot 2026-05-29 — batch semantic intake pass)
 
-**Status:** Active **fbuboard** rows wired with **`E:S:T`** task links (2026-05-29 bidirectional pass). All open MoSCOW rows on [`fbuboard.md`](fbuboard.md) now include task links from FBU **`Implementing Task:`** fields; M/S bands mirrored on [`kboard.md`](kboard.md). **FR-044** implementing task corrected to **E05:S01:T44**. Remaining corpus: run gap script on full `fr-br/` for non-board open items.
+**Status:** Active **fbuboard** rows wired with **`E:S:T`** task links (2026-05-29 bidirectional pass). All open MoSCOW rows on [`kboard.md`](kboard.md) now include task links from FBU **`Implementing Task:`** fields; M/S bands mirrored on [`kboard.md`](kboard.md). **FR-044** implementing task corrected to **E05:S01:T44**. Remaining corpus: run gap script on full `fr-br/` for non-board open items.
 
 ## Queue table (snapshot 2026-04-26, scoped pass under E04:S19:T06)
 

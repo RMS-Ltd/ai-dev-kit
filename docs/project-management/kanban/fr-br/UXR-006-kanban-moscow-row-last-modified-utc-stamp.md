@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Prioritized rows on `kboard.md` and `fbuboard.md` lacked a consistent, human-readable **last touched** signal at the end of each MoSCOW line. That made it harder to run **drift checks** (board vs linked task/intake docs) and to plan **IPW** / workflow steps with confidence. This UXR requires a **final pipe-delimited field** on each such row: `| Last modified: YYYY-MM-DD HH:MM UTC`, documented in `kanban-board-guide.md`, with a clear rule for git-derived vs manual refresh when rows change.
+Prioritized rows on `kboard.md` lacked a consistent, human-readable **last touched** signal at the end of each MoSCOW line. That made it harder to run **drift checks** (board vs linked task/intake docs) and to plan **IPW** / workflow steps with confidence. This UXR requires a **final pipe-delimited field** on each such row: `| Last modified: YYYY-MM-DD HH:MM UTC`, documented in `kanban-board-guide.md`, with a clear rule for git-derived vs manual refresh when rows change.
 
 ---
 
@@ -65,7 +65,7 @@ Heuristic review of board structure, FR-051 parity between boards, and planning 
 ## Acceptance Criteria
 
 - [x] AC-1: MoSCOW sections on `kboard.md` include the trailing `Last modified` field on prioritized rows (per guide).
-- [x] AC-2: MoSCOW sections on `fbuboard.md` include the same field on open prioritized rows.
+- [x] AC-2: MoSCOW sections on `kboard.md` include the same field on open prioritized rows.
 - [x] AC-3: `kanban-board-guide.md` documents meaning, derivation, and UKW/RW Step 7 refresh behavior.
 - [ ] AC-4: Optional — repo-maintained script or check to regenerate or verify stamps for drift detection.
 - [x] AC-5: KG-R2 intake complete — **UXR-006** ↔ **E07:S00:T06** ↔ **E06:S06:T61** with board rows and story checklists updated.
@@ -106,5 +106,5 @@ Heuristic review of board structure, FR-051 parity between boards, and planning 
 ## References
 
 - `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - `docs/project-management/kanban/kanban-board-guide.md`

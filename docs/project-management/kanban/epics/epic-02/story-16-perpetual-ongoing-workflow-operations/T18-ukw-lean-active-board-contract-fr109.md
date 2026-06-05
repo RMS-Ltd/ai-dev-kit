@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [FR-109](../../../fr-br/FR-109-ukw-lean-active-board-contract.md)
-- UKW lean-board hygiene (2026-06-04): pruned `kboard.md` / `fbuboard.md`, ledger append
+- UKW lean-board hygiene (2026-06-04): pruned `kboard.md`, ledger append
 - Agent SoT: `kanban-governance-policy.md`, `update-kanban-workflow-agent-execution.md`, `.cursor/skills/ukw-sync`
 
 ---

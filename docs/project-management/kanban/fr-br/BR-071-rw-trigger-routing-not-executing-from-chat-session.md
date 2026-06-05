@@ -78,7 +78,7 @@ This causes repeated failed publish attempts and forces out-of-band/manual fallb
 - [x] **AC2:** Execution produces visible step output and expected git/tag side effects.
 - [x] **AC3:** Failure mode surfaces explicit routing error (not silent no-op) when trigger cannot execute.
 - [x] **AC4:** Regression test/diagnostic coverage added for trigger-routing availability.
-- [x] **AC5:** BR-071, E02:S01:T19, Story 001 checklist, `kboard.md`, and `fbuboard.md` are bidirectionally wired.
+- [x] **AC5:** BR-071, E02:S01:T19, Story 001 checklist, `kboard.md`, and `kboard.md` are bidirectionally wired.
 
 ---
 

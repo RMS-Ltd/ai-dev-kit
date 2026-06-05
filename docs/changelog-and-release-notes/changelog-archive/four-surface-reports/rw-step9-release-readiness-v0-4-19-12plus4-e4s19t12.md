@@ -1,16 +1,17 @@
 # RW release-readiness report (FR-092 Wave 7)
 
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
-- **Invocation context:** rw_step_7
+- **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E04:S19:T12 (v0.4.19.12+4)
-- **Timestamp (UTC):** 2026-06-05 01:44 UTC
+- **Timestamp (UTC):** 2026-06-05 01:50 UTC
 - **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-4-19-12plus4-e04s19t12.json`
 
 ## Overall verdict
 
-- **Status:** PASS — RW MAY proceed past Step 9.
+- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
+  - Gate 5: Stage-set completeness (BR-070)
 
-- Gates: 11/11 passed (0 failed, 0 waived).
+- Gates: 10/11 passed (1 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -48,8 +49,6 @@
 - Summary: RW and UKW canonical row transform pipelines produce byte-identical output across all active boards (FR-090 shared engine verified).
 - Evidence:
   - `docs/project-management/kanban/kboard.md`: `byte-identical`
-  - `docs/project-management/kanban/fbuboard.md`: `byte-identical`
-  - `docs/project-management/kanban/kanban-board.md`: `byte-identical`
 
 ### Gate 4 — Corpus canonical state
 
@@ -57,17 +56,23 @@
 - Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
   - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 47}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
-- Status: **PASS** (severity: `block`)
-- Summary: BR-070 satisfied: all 6 Step-7 path(s) are staged or unchanged.
+- Status: **FAIL** (severity: `block`)
+- Summary: BR-070 violation: 6 Step-7 path(s) are modified-unstaged, untracked, or missing.
+- Findings:
+  - `task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+  - `fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+  - `kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+  - `fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: missing — Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.
+  - `story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+  - `planning_artifact` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
 - Evidence:
   - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-4-19-12plus4-e04s19t12.json`
   - `paths_checked`: `6`
-  - `violations`: `0`
+  - `violations`: `6`
   - `release_scope`: `{'epic': 4, 'story': 19, 'task': 12, 'task_id': 'E04:S19:T12', 'version_string': 'v0.4.19.12+4', 'art_adopted': True}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
@@ -90,7 +95,6 @@
   - `task_doc`: `{'touched': True, 'paths': ['docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md'], 'notes_count': 0}`
   - `fbu_doc`: `{'touched': True, 'paths': ['docs/project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md'], 'notes_count': 0}`
   - `kboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
-  - `fbuboard`: `{'touched': True, 'paths': ['docs/project-management/kanban/fbuboard.md'], 'notes_count': 0}`
   - `release_scope`: `{'epic': 4, 'story': 19, 'task': 12, 'task_id': 'E04:S19:T12', 'version_string': 'v0.4.19.12+4', 'art_adopted': True}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)
@@ -100,7 +104,6 @@
 - Evidence:
   - `homogeneity_threshold`: `3`
   - `kboard.md`: `{}`
-  - `fbuboard.md`: `{}`
 
 ### Gate 9 — MoSCOW state icons (UXR-012)
 

@@ -80,7 +80,7 @@ If no keyword match, ask **one** clarifying question. Do not grep the whole repo
 - [`docs/project-agent-manifest.json`](docs/project-agent-manifest.json) at cold start (routing is in this file).
 - Changelog archive tree unless changelog/release work.
 - [`docs/journals/`](docs/journals/) unless forensic recovery.
-- Entire [`fbuboard.md`](docs/project-management/kanban/fbuboard.md) MoSCOW unless kanban-intake track.
+- Entire [`kboard.md`](docs/project-management/kanban/kboard.md) MoSCOW unless kanban-intake track.
 - IDE plan folders outside repo (`~/.cursor/plans/`).
 
 ---

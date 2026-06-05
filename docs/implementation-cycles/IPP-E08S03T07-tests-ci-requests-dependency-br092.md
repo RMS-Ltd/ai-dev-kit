@@ -115,7 +115,7 @@ RF2 → `setup.py` `extras_require["dev"]`; RF3 → unchanged `tests.yml`; RF4 �
 ### 4.1 Files to create or modify
 
 - CREATE: this IPP
-- UPDATE: `setup.py`, `tests/requirements.txt`, task doc, BR-092, story/kboard/fbuboard (RW)
+- UPDATE: `setup.py`, `tests/requirements.txt`, task doc, BR-092, story/kboard (RW)
 
 ### 4.2 Dependency order
 

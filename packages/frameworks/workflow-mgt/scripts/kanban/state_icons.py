@@ -2,7 +2,7 @@
 """
 MoSCOW row state icons (UXR-012 / E4:S13:T07; UXR-019 / E4:S13:T08).
 
-Boards (kboard.md, fbuboard.md): Set A (emoji) only before the status token.
+Boards (kboard.md, kboard.md): Set A (emoji) only before the status token.
 Plain-text / degraded contexts: Set B (Unicode) documented as fallback — not
 mixed into repo board rows by default.
 

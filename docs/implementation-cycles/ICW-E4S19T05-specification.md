@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 ## Context
 
-The board defaults were standardized to `kboard.md` and `fbuboard.md`, but supporting kanban/FR-BR-UXR documentation under `docs/project-management/kanban/` still has mixed filename conventions, causing discoverability and link-drift friction.
+The board defaults were standardized to `kboard.md`, but supporting kanban/FR-BR-UXR documentation under `docs/project-management/kanban/` still has mixed filename conventions, causing discoverability and link-drift friction.
 
 ## Goal
 

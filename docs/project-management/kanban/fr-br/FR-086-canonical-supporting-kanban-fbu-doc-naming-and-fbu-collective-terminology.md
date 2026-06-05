@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Extend the prior canonical `kboard.md` / `fbuboard.md` naming pattern to supporting Kanban and FBU documentation, and standardize collective references to FR/BR/UXR as `FBU` across docs.
+Extend the prior canonical `kboard.md` naming pattern to supporting Kanban and FBU documentation, and standardize collective references to FR/BR/UXR as `FBU` across docs.
 
 **Caveat (required):** Individual issue documents must keep their native prefixes and identities (`FR-`, `BR-`, `UXR-`). `FBU` is only a collective shorthand term.
 

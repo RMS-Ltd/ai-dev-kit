@@ -1,7 +1,7 @@
 name: Update Kanban Workflow
 version: 1.2.0
 type: kanban_update
-description: Bottom-up kanban documentation synchronization workflow to prevent status drift (triggered by UKW). REQUIRES AGENTIC INTELLIGENCE for synthesis, narrative updates, prioritization, and status inference. FR-050 — explicit FBU temporal sync (fbuboard cleanup, fbu-completed timestamps, 20-recent dashboard). FR-085 — optional standalone `UKW --rp` deep reprioritization (ADR-009). FR-102 — optional standalone `UKW -c` archive completed (ADR-010; ledger-before-prune).
+description: Bottom-up kanban documentation synchronization workflow to prevent status drift (triggered by UKW). REQUIRES AGENTIC INTELLIGENCE for synthesis, narrative updates, prioritization, and status inference. FR-050 — explicit FBU temporal sync (fbuboard cleanup, intake-completed timestamps, 20-recent dashboard). FR-085 — optional standalone `UKW --rp` deep reprioritization (ADR-009). FR-102 — optional standalone `UKW -c` archive completed (ADR-010; ledger-before-prune).
 
 invocation_flags:
   comprehensive: "UKW (no flags)"
@@ -21,9 +21,9 @@ config:
   task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md
   kanban_board: kboard.md
   completed_archive: kanban-completed.md
-  fr_br_uxr_board: fbuboard.md
-  fr_br_uxr_completed: fbu-completed.md
-  fr_br_uxr_structure: fbu-structure.md
+  fr_br_uxr_board: kboard.md
+  fr_br_uxr_completed: intake-completed.md
+  fr_br_uxr_structure: intake-structure.md
   fr_br_uxr_completed_skill: .cursor/skills/fr-br-uxr-completed-update/SKILL.md
   snapshot_boards_script: packages/frameworks/workflow-mgt/scripts/kanban/snapshot_kanban_boards.py
   validate_board_stamp_diff_script: packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py
@@ -187,7 +187,7 @@ steps:
       validate_stamps_before_stage: ${config.validate_board_stamp_diff_script}
 
   - id: step-6-6
-    name: FBU Temporal Tracking (fbu-completed)
+    name: FBU Temporal Tracking (intake-completed)
     type: fbu_completed_update
     handler: kanban.update_fr_br_uxr_completed
     required: true

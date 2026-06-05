@@ -13,14 +13,14 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (Wave 4 closure — **v0.4.19.12+4**)  
-**Version:** v0.4.19.12+4  
-**Version Anchor:** v0.4.19.12+4  
+**Last updated:** 2026-06-05 (intake rename wave — **v0.4.19.12+5**)  
+**Version:** v0.4.19.12+5  
+**Version Anchor:** v0.4.19.12+5  
 **Code:** E04S19T12  
 
 **Publication Status:** NOT_APPLICABLE
 
-**Upstream:** [UXR-020 — Is `fbuboard.md` still necessary after task–FBU wiring?](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
+**Upstream:** [UXR-020 — Is `kboard.md` still necessary after task–FBU wiring?](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
 **IPP:** [IPP-E04S19T12-single-board-consolidation-uxr020.md](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 ---
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 ## Input
 
 - [UXR-020](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) research findings and user **R3** direction.
-- Live boards `kboard.md` / `fbuboard.md` (2026-06-05 snapshot).
+- Live boards `kboard.md` (2026-06-05 snapshot).
 - [IPP-E04S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) phased implementation plan.
 - [ADR-018](../../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) (Wave 1).
 
@@ -36,15 +36,15 @@ housekeeping_policy: keep
 
 ## Scope
 
-Investigate whether the separate **FBU prioritization board** (`fbuboard.md`) remains justified now that **bidirectional task ↔ FBU wiring** is mandatory (KG-R2) and both boards largely mirror each other in the Could Have backlog.
+Investigate whether the separate **FBU prioritization board** (`kboard.md`) remains justified now that **bidirectional task ↔ FBU wiring** is mandatory (KG-R2) and both boards largely mirror each other in the Could Have backlog.
 
-**Expanded scope (2026-06-05):** After ADR-018 single-board consolidation, **remove legacy `fr-br-uxr-*` alias files** from `docs/project-management/kanban/` root (`fr-br-uxr-board.md`, `fr-br-uxr-structure.md`, `fr-br-uxr-open-taskless-queue.md`). Canonical paths: `kboard.md`, `fbu-structure.md`, `fbu-open-taskless-queue.md`. Retain `fbuboard.md` redirect stub and `kanban-board.md` read-tolerance alias only.
+**Expanded scope (2026-06-05):** After ADR-018 single-board consolidation, **remove legacy `fr-br-uxr-*` alias files** from `docs/project-management/kanban/` root (`fr-br-uxr-board.md`, `fr-br-uxr-structure.md`, `fr-br-uxr-open-taskless-queue.md`). Canonical paths: `kboard.md`, `intake-structure.md`, `intake-open-taskless-queue.md`. Retain `kboard.md` redirect stub and `kboard.md` read-tolerance alias only.
 
 ---
 
 ## Problem statement
 
-Operators report that keeping `kboard.md` and `fbuboard.md` in sync creates **unnecessary admin** because rows represent the same work via `E:S:T` ↔ FBU links. The project needs an evidence-based answer: **retain, partially consolidate, or retire** `fbuboard`.
+Operators report that keeping `kboard.md` in sync creates **unnecessary admin** because rows represent the same work via `E:S:T` ↔ FBU links. The project needs an evidence-based answer: **retain, partially consolidate, or retire** `fbuboard`.
 
 ---
 
@@ -72,7 +72,7 @@ Operators report that keeping `kboard.md` and `fbuboard.md` in sync creates **un
 **Implementation approach (IPP):**
 
 - Add **Verification (V)** MoSCOW band on `kboard.md` with dual-status rows (`⏳ WAITING` + task-shipped / FBU-open prose per ADR-018).
-- Migrate all active `fbuboard` rows; replace `fbuboard.md` with redirect stub.
+- Migrate all active `fbuboard` rows; replace `kboard.md` with redirect stub.
 - Amend FR-092 to **three-surface** RW Step 7; update validators/UKW in phased waves.
 - **ADR-018** required (see IPP §2.5).
 

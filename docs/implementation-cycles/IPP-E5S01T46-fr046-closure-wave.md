@@ -129,7 +129,7 @@ Close FR-046 by proving shipped behaviour satisfies R01–R05 and AC1–AC4, fix
 ### 4.1 Files to create or modify
 
 - **CREATE:** `docs/implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md`
-- **UPDATE:** T46, FR-046, T07, FR-046-implementation-guide.md, kboard.md, fbuboard.md
+- **UPDATE:** T46, FR-046, T07, FR-046-implementation-guide.md, kboard.md, kboard.md
 
 ### 4.2 Dependency order
 
@@ -153,7 +153,7 @@ Close FR-046 by proving shipped behaviour satisfies R01–R05 and AC1–AC4, fix
 | D3 | `FR-046-rw-semver-tag-task-touch-mode.md` | Checkbox closure, IMPLEMENTED | R01–R05, AC1–AC4 |
 | D4 | `FR-046-implementation-guide.md` | Dual-mandatory policy | RF5 |
 | D7 | `T07-rw-semver-tag-when-task-touch-enabled.md` | SUPERSEDED by T46 | Wave A.3 |
-| D8 | `kboard.md` / `fbuboard.md` | T46/FR-046 row closure | RW Step 7 |
+| D8 | `kboard.md` | T46/FR-046 row closure | RW Step 7 |
 
 ### 5.2 New documents to create
 

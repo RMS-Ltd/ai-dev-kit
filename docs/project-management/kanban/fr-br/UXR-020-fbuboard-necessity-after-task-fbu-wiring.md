@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# User Experience Research: Is `fbuboard.md` Still Necessary After Task–FBU Wiring?
+# User Experience Research: Is `kboard.md` Still Necessary After Task–FBU Wiring?
 
 **Type:** User Experience Research (UXR)  
 **Submitted:** 2026-06-05  
@@ -14,9 +14,9 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** RESOLVED ✅  
 **Code:** UXR-020  
-**Last updated:** 2026-06-05 (Wave 4 closure **v0.4.19.12+4** — kanban-root alias removal)  
-**Version:** v0.4.19.12+4  
-**Resolved in:** v0.4.19.12+1 through v0.4.19.12+4 (ADR-018 R3)  
+**Last updated:** 2026-06-05 (intake rename wave **v0.4.19.12+5** — `fbuboard`/`kanban-board` removed, `intake-*` naming)  
+**Version:** v0.4.19.12+5  
+**Resolved in:** v0.4.19.12+1 through v0.4.19.12+5 (ADR-018 R3 + intake rename)  
 
 **Implementing Task:** [E04:S19:T12](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)  
 **Planning package:** [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
@@ -25,18 +25,18 @@ housekeeping_policy: keep
 
 ## Summary
 
-With bidirectional **task ↔ FBU** wiring now standard, **`kboard.md` and `fbuboard.md` largely mirror each other** in the Could Have backlog and create **duplicate UKW/RW maintenance**. Investigation found **`fbuboard` M/S bands** still hold verification-pending rows today, but the user selected **R3**: enrich **`kboard`** with a **Verification (V)** band and **dual-status rows**, then **retire active `fbuboard`**. Implementation plan: [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md).
+With bidirectional **task ↔ FBU** wiring now standard, **`kboard.md` largely mirror each other** in the Could Have backlog and create **duplicate UKW/RW maintenance**. Investigation found **`fbuboard` M/S bands** still hold verification-pending rows today, but the user selected **R3**: enrich **`kboard`** with a **Verification (V)** band and **dual-status rows**, then **retire active `fbuboard`**. Implementation plan: [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md).
 
 ---
 
 ## Research Objective
 
-**Question:** Now that every filed FBU has an implementing task and boards cross-link, do we still need a separate `fbuboard.md`, or does it only create unnecessary sync admin?
+**Question:** Now that every filed FBU has an implementing task and boards cross-link, do we still need a separate `kboard.md`, or does it only create unnecessary sync admin?
 
 **Success criteria for this research:**
 
 1. Quantify overlap vs divergence between active boards (2026-06-05 snapshot).
-2. Identify any behaviour **only** `fbuboard.md` supports today.
+2. Identify any behaviour **only** `kboard.md` supports today.
 3. Map workflow/validator/policy dependencies that assume two boards.
 4. Recommend retain / consolidate / retire with trade-offs.
 
@@ -48,8 +48,8 @@ With bidirectional **task ↔ FBU** wiring now standard, **`kboard.md` and `fbub
 
 **Sources (2026-06-05):**
 
-- [`kboard.md`](../kboard.md), [`fbuboard.md`](../fbuboard.md)
-- [`kanban-completed.md`](../kanban-completed.md), [`fbu-completed.md`](../fbu-completed.md)
+- [`kboard.md`](../kboard.md)(../kboard.md)
+- [`kanban-completed.md`](../kanban-completed.md), [`intake-completed.md`](../intake-completed.md)
 - [`kanban-governance-policy.md`](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) (active vs completed surfaces, RW Step 7)
 - [FR-051](FR-051-fr-br-uxr-prioritization-board.md) (original rationale for fbuboard)
 - [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (four-surface RW contract)
@@ -65,7 +65,7 @@ Roughly **28 Could Have rows** appear on **both** boards with the same underlyin
 
 ### F2 — M/S bands are **not** mirrors (fbuboard-only rows exist)
 
-**`fbuboard.md` Must/Should (9 rows, 2026-06-05)** includes items **absent from `kboard.md` M/S**:
+**`kboard.md` Must/Should (9 rows, 2026-06-05)** includes items **absent from `kboard.md` M/S**:
 
 | FBU | Task | Why kboard omits it |
 | --- | ---- | ------------------- |
@@ -99,8 +99,8 @@ Retiring `fbuboard` is a **framework migration**, not a doc delete.
 [FR-051](FR-051-fr-br-uxr-prioritization-board.md) sought centralized FBU prioritisation **before** tasks existed. **KG-R2 atomic intake** and bidirectional wiring now mean **every substantive FBU has a task**. The **stakeholder-facing FBU queue** role is largely satisfied by:
 
 - FBU docs in `fr-br/`
-- [`fbu-structure.md`](../fbu-structure.md) inventory
-- [`fbu-completed.md`](../fbu-completed.md) terminal ledger
+- [`intake-structure.md`](../intake-structure.md) inventory
+- [`intake-completed.md`](../intake-completed.md) terminal ledger
 
 What FR-051 did **not** anticipate: the **verification-pending** split (task shipped, FBU not closed) — that gap is what today's `fbuboard` M/S bands actually hold.
 
@@ -128,7 +128,7 @@ The verification-pending lane has **no equivalent** on `kboard` without a **row-
 ### R2 — **Scoped consolidation** (preferred, HIGH)
 
 - **Drop C-band duplication:** Maintain backlog **only on `kboard.md`** for wired task+FBU items in TODO state.
-- **Keep `fbuboard` M/S (and taskless queue)** for: (a) FBU OPEN + task COMPLETE, (b) open ∧ taskless intake ([`fbu-open-taskless-queue.md`](../fbu-open-taskless-queue.md)).
+- **Keep `fbuboard` M/S (and taskless queue)** for: (a) FBU OPEN + task COMPLETE, (b) open ∧ taskless intake ([`intake-open-taskless-queue.md`](../intake-open-taskless-queue.md)).
 - **Single pointer** from `fbuboard` header: *"C-band backlog → see kboard."*
 
 **Estimated admin reduction:** ~70% of duplicate row maintenance without losing verification visibility.
@@ -147,7 +147,7 @@ Enrich **`kboard` row contract** with explicit **dual status** tokens, e.g. `Tas
 
 ## Affected Areas
 
-- Kanban boards: `kboard.md`, `fbuboard.md`, `fbu-completed.md`
+- Kanban boards: `kboard.md`, `intake-completed.md`
 - UKW / RW Step 7 agent execution guides
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py` and validation suite
 - Kanban governance policy (active board contract)

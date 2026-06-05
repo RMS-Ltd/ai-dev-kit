@@ -91,7 +91,7 @@ def run_moscow_prioritization_mode(kanban_root: Path) -> dict:
         # Step 1: Move completed tasks to kanban-completed.md
         board_path = kanban_root / "kboard.md"
         if not board_path.exists():
-            board_path = kanban_root / "kanban-board.md"
+            board_path = kanban_root / "kboard.md"
         completed_path = kanban_root / "kanban-completed.md"
         
         # Read current board
@@ -113,7 +113,7 @@ def run_moscow_prioritization_mode(kanban_root: Path) -> dict:
             results['status'] = 'success'
             
         else:
-            results['errors'].append('kboard.md not found (legacy fallback kanban-board.md also missing)')
+            results['errors'].append('kboard.md not found (legacy fallback kboard.md also missing)')
             results['status'] = 'error'
             
     except Exception as e:

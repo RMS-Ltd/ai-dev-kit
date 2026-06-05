@@ -25,7 +25,7 @@ housekeeping_policy: keep
 ## Input
 
 - User report: row-level `Last modified` timestamps are being overwritten by board rewrite passes.
-- Observed board state in `fbuboard.md` / `kboard.md` showing homogenized timestamps.
+- Observed board state in `kboard.md` showing homogenized timestamps.
 - Existing UKW temporal logic in Story 007 tasks (`T101`, `T110`, `T108`).
 
 ---

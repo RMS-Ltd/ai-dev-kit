@@ -45,7 +45,7 @@ def default_board_paths(project_root: Path) -> List[Path]:
         root = project_root / "docs/project-management/kanban"
     return [
         root / "kboard.md",
-        root / "fbuboard.md",
+        root / "kboard.md",
         root / "kanban-board-guide.md",
         root / "kanban-structure.md",
         root / "_index.md",

@@ -36,7 +36,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Deliverable
 
-Implement and document **`UKW -c`** (archive completed): for terminal task/FBU status, append to **`kanban-completed.md`** / **`fbu-completed.md`** via standard Documentation Agent interfaces, then remove rows from active **`kboard.md`** / **`fbuboard.md`** MoSCOW sections; emit dual-board audit summary.
+Implement and document **`UKW -c`** (archive completed): for terminal task/FBU status, append to **`kanban-completed.md`** / **`intake-completed.md`** via standard Documentation Agent interfaces, then remove rows from active **`kboard.md`** / **`kboard.md`** MoSCOW sections; emit dual-board audit summary.
 
 ---
 
@@ -57,4 +57,4 @@ Implement and document **`UKW -c`** (archive completed): for terminal task/FBU s
 - [FR-102](../../../fr-br/FR-102-ukw-archive-completed-board-rows.md)
 - [FR-076](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [FR-034](../../../fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
-- [kanban-completed.md](../../../kanban-completed.md) · [fbu-completed.md](../../../fbu-completed.md)
+- [kanban-completed.md](../../../kanban-completed.md) · [intake-completed.md](../../../intake-completed.md)

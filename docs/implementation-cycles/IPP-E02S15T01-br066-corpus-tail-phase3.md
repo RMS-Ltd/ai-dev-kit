@@ -103,7 +103,7 @@ Discoverability = kanban task doc markdown link to artifact basename under `docs
 | **UPDATE** | Host task docs (~35 wiring targets) |
 | **UPDATE** | `T01-ipw-docusaurus-filing-contract-and-backfill-br066.md` |
 | **UPDATE** | `BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md` |
-| **UPDATE** | `fbuboard.md` |
+| **UPDATE** | `kboard.md` |
 
 ---
 

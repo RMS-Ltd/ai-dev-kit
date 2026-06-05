@@ -49,7 +49,7 @@ Define and implement a canonical naming + terminology contract for supporting Ka
 ### 1.5 Constraints and caveats
 
 - User caveat is mandatory: `FBU` is collective shorthand only; individual issue identities remain unchanged.
-- Existing board canonical names (`kboard.md`, `fbuboard.md`) are baseline and must not regress.
+- Existing board canonical names (`kboard.md`) are baseline and must not regress.
 
 ---
 

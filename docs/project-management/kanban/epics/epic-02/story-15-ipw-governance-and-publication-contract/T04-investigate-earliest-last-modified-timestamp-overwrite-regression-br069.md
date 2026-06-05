@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Code:** E02S15T04
 **Version Anchor:** v0.2.15.4+4
 
-**Upstream:** [BR-069 – kboard/fbuboard earliest `Last modified` timestamps are being overwritten](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+**Upstream:** [BR-069 – kboard earliest `Last modified` timestamps are being overwritten](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 
 **Planning artifact (IPP):** [IPP-E02S15T04 — BR-069 row-tail normalization and terminal timestamp interaction](../../../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 

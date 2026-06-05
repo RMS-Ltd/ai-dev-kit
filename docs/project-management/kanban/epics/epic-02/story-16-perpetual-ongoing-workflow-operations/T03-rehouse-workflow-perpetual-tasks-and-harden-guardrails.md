@@ -81,7 +81,7 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 - **IPP:** [IPP-E2S16T03](../../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) §7 SitRep + §4.4 Step 5 (3B entry gate).
 - **T02:** COMPLETE — [IPP-E2S16T02](../../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) published (`v0.2.16.2+2`).
 - **T03:** Tranche 3B ACTIVE_FIX applied; AC4 satisfied.
-- **Board:** `fbuboard.md` BR-067 row synced to **RESOLVED** (Step 7 drift fix).
+- **Board:** `kboard.md` BR-067 row synced to **RESOLVED** (Step 7 drift fix).
 
 ### BR-059 follow-up — SitRep + closure (2026-06-03) ✅
 - **SitRep:** [IPP-E02S16T13](../../../../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md) §7 reconciled.

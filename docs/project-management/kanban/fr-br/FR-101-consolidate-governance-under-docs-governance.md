@@ -44,7 +44,7 @@ Governance policies for the maintainer book workspace are split across rituals, 
 
 ### Out of scope
 
-- Kanban boards (`kboard.md`, `fbuboard.md`), epic/story/task trees, `fr-br/` intake queue (except promoted principles).
+- Kanban boards (`kboard.md`), epic/story/task trees, `fr-br/` intake queue (except promoted principles).
 - Maintenance runbooks under `docs/maintenance/` (index-only references).
 - `vendor/` and packaged framework **canonical SoT** under `packages/frameworks/` (book copy may stub → framework).
 
@@ -59,7 +59,7 @@ Governance policies for the maintainer book workspace are split across rituals, 
   - `docs/governance/standards/` — versioning, changelog archival, specification/planning, IPW vs ICW matrix
   - `docs/governance/README.md` — hub + navigation
 - [ ] **FR-101-F4 (Phase 2):** INDEX rows remain in place with prominent cross-links from `docs/governance/README.md` (e.g. ADR-006, workflow-flaws / versioning-error reference guides).
-- [ ] **FR-101-F5 (Phase 2):** Resolve **BIDIRECTIONAL_WIRING_PRINCIPLE** placement — linked from `fbu-open-taskless-queue.md` and templates; inventory decides **restore**, **move to governance/principles/**, or **repoint** (see inventory §1).
+- [ ] **FR-101-F5 (Phase 2):** Resolve **BIDIRECTIONAL_WIRING_PRINCIPLE** placement — linked from `intake-open-taskless-queue.md` and templates; inventory decides **restore**, **move to governance/principles/**, or **repoint** (see inventory §1).
 - [ ] **FR-101-F6 (Phase 3):** `rg 'kanban-board-guide|rituals/policy'` on active surfaces returns stub-only or zero false positives; `.cursorrules`, `.claude/commands/*`, `kboard` guide, and top-level `fr-br/` links updated.
 
 ---

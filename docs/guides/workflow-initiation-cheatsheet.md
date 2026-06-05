@@ -65,7 +65,7 @@ housekeeping_policy: keep
 | `UKW -u -p`, `UKW -u -a <target>`, etc. | Combined sub-workflows per flag matrix |
 | `UKW -ad <targets>` | **Address Drift** — targeted project-state kanban reconciliation — **planned** |
 | `UKW --rp` | **Deep reprioritization** (standalone) — intent/dependency/blocker/impact analysis on kboard + fbuboard; emits rationale ([ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)). **Not** combinable with `-u`, `-p`, or `-a` |
-| `UKW -c` | **Archive completed** (standalone) — append [kanban-completed.md](../project-management/kanban/kanban-completed.md) / [fbu-completed.md](../project-management/kanban/fbu-completed.md) then remove terminal MoSCOW rows ([ADR-010](../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)). **Not** combinable with `-u`, `-p`, `-a`, or `--rp` |
+| `UKW -c` | **Archive completed** (standalone) — append [kanban-completed.md](../project-management/kanban/kanban-completed.md) / [intake-completed.md](../project-management/kanban/intake-completed.md) then remove terminal MoSCOW rows ([ADR-010](../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)). **Not** combinable with `-u`, `-p`, `-a`, or `--rp` |
 
 **Flag disambiguation (easy to confuse):**
 

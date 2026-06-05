@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ### 1.1 Goal
 
-Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/kanban/` to a concise canonical pattern family aligned with `kboard.md` and `fbuboard.md`, while keeping migration safety and reference integrity.
+Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/kanban/` to a concise canonical pattern family aligned with `kboard.md`, while keeping migration safety and reference integrity.
 
 ### 1.2 Functional requirements
 
@@ -78,9 +78,9 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/
 
 | Current path | Candidate canonical target | Notes |
 | ---- | ---- | ---- |
-| `docs/project-management/kanban/fr-br-uxr-structure.md` | `docs/project-management/kanban/fbu-structure.md` | Align collective naming with `fbuboard` shorthand. |
-| `docs/project-management/kanban/fr-br-uxr-completed.md` | `docs/project-management/kanban/fbu-completed.md` | Keep completed ledger naming parallel to board shorthand. |
-| `docs/project-management/kanban/fr-br-uxr-board.md` (legacy alias) | `docs/project-management/kanban/fbuboard.md` (already canonical) | Preserve as compatibility alias or redirect doc. |
+| `docs/project-management/kanban/fr-br-uxr-structure.md` | `docs/project-management/kanban/intake-structure.md` | Align collective naming with `fbuboard` shorthand. |
+| `docs/project-management/kanban/fr-br-uxr-completed.md` | `docs/project-management/kanban/intake-completed.md` | Keep completed ledger naming parallel to board shorthand. |
+| `docs/project-management/kanban/fr-br-uxr-board.md` (legacy alias) | `docs/project-management/kanban/kboard.md` (already canonical) | Preserve as compatibility alias or redirect doc. |
 | `docs/project-management/kanban/fr-br/` | `docs/project-management/kanban/fbu/` *(decision pending)* | High-blast-radius folder rename; evaluate separately before execution. |
 
 ### Phase 2 - Rename and reference migration

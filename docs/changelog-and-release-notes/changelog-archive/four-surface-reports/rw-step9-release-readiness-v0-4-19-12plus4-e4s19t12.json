@@ -1,8 +1,8 @@
 {
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
   "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-4-19-12plus4-e04s19t12.json",
-  "invocation_context": "rw_step_7",
-  "overall_passed": true,
+  "invocation_context": "rw_step_9_release_readiness",
+  "overall_passed": false,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
   "release_scope": {
     "art_adopted": true,
@@ -13,13 +13,15 @@
     "version_string": "v0.4.19.12+4"
   },
   "summary": {
-    "blocking_failures": [],
-    "gates_failed": 0,
-    "gates_passed": 11,
+    "blocking_failures": [
+      "Gate 5: Stage-set completeness (BR-070)"
+    ],
+    "gates_failed": 1,
+    "gates_passed": 10,
     "gates_total": 11,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-05 01:44 UTC",
+  "timestamp_utc": "2026-06-05 01:50 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -65,8 +67,6 @@
     },
     {
       "evidence": {
-        "docs/project-management/kanban/fbuboard.md": "byte-identical",
-        "docs/project-management/kanban/kanban-board.md": "byte-identical",
         "docs/project-management/kanban/kboard.md": "byte-identical"
       },
       "findings": [],
@@ -81,10 +81,6 @@
     },
     {
       "evidence": {
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md": {
-          "rows_changed": 0,
-          "rows_with_duplicate_footers": 0
-        },
         "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md": {
           "rows_changed": 0,
           "rows_with_duplicate_footers": 0
@@ -117,15 +113,22 @@
           "task_id": "E04:S19:T12",
           "version_string": "v0.4.19.12+4"
         },
-        "violations": 0
+        "violations": 6
       },
-      "findings": [],
+      "findings": [
+        "`task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
+        "`story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run.",
+        "`planning_artifact` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md` :: modified-unstaged \u2014 Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation \u2014 RW MUST BLOCK. Stage with `git add -A` and re-run."
+      ],
       "gate_id": 5,
-      "is_blocking_failure": false,
+      "is_blocking_failure": true,
       "name": "Stage-set completeness (BR-070)",
-      "passed": true,
+      "passed": false,
       "severity": "block",
-      "summary": "BR-070 satisfied: all 6 Step-7 path(s) are staged or unchanged.",
+      "summary": "BR-070 violation: 6 Step-7 path(s) are modified-unstaged, untracked, or missing.",
       "waive_reason": null,
       "waived": false
     },
@@ -153,13 +156,6 @@
           "notes_count": 0,
           "paths": [
             "docs/project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md"
-          ],
-          "touched": true
-        },
-        "fbuboard": {
-          "notes_count": 0,
-          "paths": [
-            "docs/project-management/kanban/fbuboard.md"
           ],
           "touched": true
         },
@@ -199,7 +195,6 @@
     },
     {
       "evidence": {
-        "fbuboard.md": {},
         "homogeneity_threshold": 3,
         "kboard.md": {}
       },

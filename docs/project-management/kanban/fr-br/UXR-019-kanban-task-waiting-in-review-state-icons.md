@@ -124,7 +124,7 @@ Icons inject from canonical key only (aliases map to one emoji each).
 
 - New icons for FR/BR/UXR type prefixes (UXR-012 phase 2).
 - Replacing `**Status:**` in task docs in this UXR (board-row convention first; task-doc enum may follow in same task).
-- `fbuboard.md` unless alias overlap (`UNDER REVIEW` on FBU) — separate mapping table if needed.
+- `kboard.md` unless alias overlap (`UNDER REVIEW` on FBU) — separate mapping table if needed.
 
 ---
 

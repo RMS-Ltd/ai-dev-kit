@@ -161,7 +161,7 @@ Per IPP §2.5 (`active` = non-COMPLETE, non-SUPERSEDED):
 3. **Retrospective migration (batched):** Completed out-of-scope tasks `T110`, `T113`, `T114`, `T115`, `T16` — lower urgency; use §2.7 with `Historical Anchor:` only where traceability requires.
 4. **Restate charter** on `story-07-adk-implementation-analysis-and-package-management.md`:
    - **In scope:** ADK cross-project analysis, package management design/implementation, install telemetry/feedback, framework hardening derived from analysis.
-   - **Out of scope:** UKW/CMW/RW perpetual ops, kboard/fbuboard governance meta-work, IPW publication contract, abstract FBU policy (→ E2:S16, E2:S15, E4:S19).
+   - **Out of scope:** UKW/CMW/RW perpetual ops, kboard governance meta-work, IPW publication contract, abstract FBU policy (→ E2:S16, E2:S15, E4:S19).
 5. **Final state:** `keep-open-narrowed` with guardrails (§6).
 
 ### 5.3 Compatibility

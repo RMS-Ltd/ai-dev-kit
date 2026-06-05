@@ -90,7 +90,7 @@ Known test fixtures currently on the board: `E02:S16:T01` and `E02:S15:T07` (int
 - [x] **AC3:** UKW definition includes an explicit deduplication check — a task must not appear in more than one MoSCOW section.
 - [x] **AC4:** Completed tasks removed from `kboard.md` are written to `kanban-completed.md` in the same UKW run.
 - [x] **AC5:** The known test fixtures (`E02:S16:T01` in Should Have, `E02:S15:T07` in Should Have, duplicate `E02:S16:T01` in Ongoing) are confirmed removed by the fixed UKW before BR-072 is closed.
-- [x] **AC6:** BR-072, E06:S01:T38, Story 001 checklist, `kboard.md`, and `fbuboard.md` are bidirectionally wired.
+- [x] **AC6:** BR-072, E06:S01:T38, Story 001 checklist, `kboard.md`, and `kboard.md` are bidirectionally wired.
 - [ ] **AC7:** UKW detects and reconciles inline/embedded task statuses within story docs (not just standalone task docs) against kboard rows — or an explicit policy documents that inline tasks are out of scope for UKW with alternative governance.
 
 ---

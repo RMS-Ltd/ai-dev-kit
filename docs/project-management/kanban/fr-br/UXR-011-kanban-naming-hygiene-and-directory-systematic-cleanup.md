@@ -123,7 +123,7 @@ epic-09 and epic-24 both have book-content stories with identical names (001–0
 1. Rename all Txxx files to Txx (zero-pad single digits: T1 → T01).
 2. Update all internal markdown links referencing the old filenames.
 3. Update story checklists to reference new filenames.
-4. Update board rows (`kboard.md`, `fbuboard.md`) to reference new task IDs.
+4. Update board rows (`kboard.md`) to reference new task IDs.
 
 ### Phase B: Duplicate Story Reconciliation
 1. For each epic with duplicate story numbers, determine which file is canonical.
@@ -153,7 +153,7 @@ epic-09 and epic-24 both have book-content stories with identical names (001–0
 - [x] All orphaned directories resolved.
 - [x] `story-004` in epic-07 renamed to `story-004`.
 - [x] All internal markdown links validated (0 dangling links post-cleanup).
-- [x] All board docs (`kboard.md`, `fbuboard.md`) updated with correct references.
+- [x] All board docs (`kboard.md`) updated with correct references.
 - [x] Kanban governance policy updated with explicit naming convention and prohibition on duplicate story numbers within an epic.
 - [x] Regression test: automated scan confirms 0 Txxx files, 0 duplicate story numbers per epic, 0 orphaned directories.
 

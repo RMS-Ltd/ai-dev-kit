@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Snapshot kboard.md and fbuboard.md for FR-097 stamp-diff validation."""
+"""Snapshot kboard.md for FR-097 stamp-diff validation."""
 
 from __future__ import annotations
 

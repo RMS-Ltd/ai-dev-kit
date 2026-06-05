@@ -65,7 +65,7 @@ The UKW cursorrules definition does include "Remove completed tasks from 'In Pro
 - [x] **AC4:** Completed tasks removed from `kboard.md` are written to `kanban-completed.md` in the same UKW run.
 - [x] **AC5:** Known test fixtures (`E02:S16:T01` in Should Have, `E02:S15:T07` in Should Have, duplicate `E02:S16:T01` in Ongoing) confirmed removed by the fixed UKW (2026-05-12 first live execution).
 - [x] **AC6:** `agents/ukw/AGENTS.md` reflects any definition changes.
-- [x] **AC7:** BR-072, this task, Story 001 checklist, `kboard.md`, and `fbuboard.md` are bidirectionally wired.
+- [x] **AC7:** BR-072, this task, Story 001 checklist, `kboard.md`, and `kboard.md` are bidirectionally wired.
 
 ---
 

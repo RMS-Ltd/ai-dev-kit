@@ -52,7 +52,7 @@ Continue and publish UKW + RW work around `E2:S15:T05` canonical row-transform h
 5. `CHANGELOG.md`
 6. `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+3.md`
 7. `docs/project-management/kanban/kboard.md`
-8. `docs/project-management/kanban/fbuboard.md`
+8. `docs/project-management/kanban/kboard.md`
 9. `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`
 10. `rw-config.yaml`
 11. `.cursorrules` (RW/UKW trigger and guardrail contract)

@@ -38,7 +38,7 @@ Orphan `fr-br/*.md` files and inconsistent intake order produced board drift and
 - **FR-074:R03** — **`.cursor/skills/intake-process`**: ordered steps + atomic rule.  
 - **FR-074:R04** — **`intake-workflow.yaml`** + workflow mgt **README** governance blurb.  
 - **FR-074:R05** — **`docs/.../rituals/policy/kanban-governance-policy.md` §1.2** + **`kanban/README.md`** workflow.  
-- **FR-074:R06** — **`fbuboard.md`** + **T73** story-choice / hygiene pointers.
+- **FR-074:R06** — **`kboard.md`** + **T73** story-choice / hygiene pointers.
 
 ---
 

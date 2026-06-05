@@ -221,20 +221,18 @@ def create_consumer_board_skeleton(
     Create a clean consumer Kanban board skeleton from templates.
 
     - Creates `kboard.md` from `templates/KANBAN_BOARD_TEMPLATE.md`
-    - Creates `fbuboard.md` redirect stub from `templates/FBUBOARD_STUB_TEMPLATE.md` (ADR-018)
     - Creates `kanban-structure.md` from `templates/KANBAN_STRUCTURE_TEMPLATE.md`
     - Creates `kanban-board-guide.md` from `templates/KANBAN_BOARD_GUIDE_TEMPLATE.md`
 
-    Returns per-surface booleans: board, fbu_stub, structure, guide (True if created or dry-run would create).
+    Returns per-surface booleans: board, structure, guide (True if created or dry-run would create).
     """
     script_dir = Path(__file__).parent
     templates_dir = script_dir.parent / "templates"
 
     board_template = templates_dir / "KANBAN_BOARD_TEMPLATE.md"
-    fbu_stub_template = templates_dir / "FBUBOARD_STUB_TEMPLATE.md"
     structure_template = resolve_structure_template(templates_dir)
     guide_template = templates_dir / "KANBAN_BOARD_GUIDE_TEMPLATE.md"
-    created = {"board": False, "fbu_stub": False, "structure": False, "guide": False}
+    created = {"board": False, "structure": False, "guide": False}
 
     project_name = _get_project_name(project_root)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -245,11 +243,9 @@ def create_consumer_board_skeleton(
     if dry_run:
         print("🔍 [DRY RUN] Would create consumer board skeleton:")
         print(f"  - Board: {kanban_path / 'kboard.md'} (from {board_template})")
-        print(f"  - FBU stub: {kanban_path / 'fbuboard.md'} (from {fbu_stub_template})")
         print(f"  - Structure: {kanban_path / 'kanban-structure.md'} (from {structure_template})")
         print(f"  - Guide: {kanban_path / 'kanban-board-guide.md'} (from {guide_template})")
         created["board"] = board_template.is_file()
-        created["fbu_stub"] = fbu_stub_template.is_file()
         created["structure"] = structure_template.is_file()
         created["guide"] = guide_template.is_file()
         return created
@@ -267,16 +263,6 @@ def create_consumer_board_skeleton(
         created["board"] = True
     else:
         print(f"  ⚠️  Board template not found: {board_template}")
-
-    if fbu_stub_template.exists():
-        content = fbu_stub_template.read_text(encoding="utf-8")
-        content = content.replace("{Project Name}", project_name)
-        content = content.replace("{Date}", today)
-        (kanban_path / "fbuboard.md").write_text(content, encoding="utf-8")
-        print(f"  ✅ Created deprecated FBU stub: {kanban_path / 'fbuboard.md'}")
-        created["fbu_stub"] = True
-    else:
-        print(f"  ⚠️  FBU stub template not found: {fbu_stub_template}")
 
     # Create structure from template
     if structure_template.is_file():

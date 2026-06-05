@@ -186,7 +186,7 @@ Update bug report and/or feature request documents tied to this release with fix
 
 ### Step 7 — Scoped Kanban Reconciliation
 
-Self-sufficient scoped reconciliation. Four-surface contract (task doc → FR/BR/UXR doc → `kboard.md` → `fbuboard.md`). RW Step 7 must finish release-scope reconciliation autonomously — no deferred UKW handoff.
+Self-sufficient scoped reconciliation. Four-surface contract (task doc → FR/BR/UXR doc → `kboard.md` → `kboard.md`). RW Step 7 must finish release-scope reconciliation autonomously — no deferred UKW handoff.
 
 Prefer `update_kanban_docs.py` when applicable. Emit "touched surfaces + why" audit report.
 
@@ -207,7 +207,7 @@ python "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bum
 python "packages/frameworks/workflow-mgt/scripts/changelog/check_changelog_size.py"
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_archive_links.py"
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/kboard.md" --after "<kanban_root>/kboard.md" --strict
-python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/fbuboard.md" --after "<kanban_root>/fbuboard.md" --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/kboard.md" --after "<kanban_root>/kboard.md" --strict
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_state_icons.py" --project-root . --strict
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_release_readiness.py"
 ```

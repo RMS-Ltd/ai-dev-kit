@@ -22,7 +22,7 @@ Audit FR/BR/UXR intake and aggregate documentation for consistency, wiring, and 
 
 ## Input
 
-[`fbu-structure.md`](../../../fbu-structure.md), [`fbuboard.md`](../../../fbuboard.md), [`fbu-completed.md`](../../../fbu-completed.md), [`kanban-completed.md`](../../../kanban-completed.md), sample FR/BR docs (e.g. [`FR-073`](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)), [`intake-process` skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md).
+[`intake-structure.md`](../../../intake-structure.md), [`kboard.md`](../../../kboard.md), [`intake-completed.md`](../../../intake-completed.md), [`kanban-completed.md`](../../../kanban-completed.md), sample FR/BR docs (e.g. [`FR-073`](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)), [`intake-process` skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md).
 
 **Note on “Batch 3” (story blurb):** No other repo reference. This review used a **representative sample** of FR/BR/UXR files plus aggregate index docs—not a named historical batch.
 
@@ -50,7 +50,7 @@ None
 
 | Category | Paths |
 |----------|--------|
-| Aggregate | [`fbu-structure.md`](../../../fbu-structure.md), [`fbuboard.md`](../../../fbuboard.md), [`fbu-completed.md`](../../../fbu-completed.md), [`kanban-completed.md`](../../../kanban-completed.md) |
+| Aggregate | [`intake-structure.md`](../../../intake-structure.md), [`kboard.md`](../../../kboard.md), [`intake-completed.md`](../../../intake-completed.md), [`kanban-completed.md`](../../../kanban-completed.md) |
 | FR/BR/UXR (spot-check) | `FR-060`, `FR-063`, `FR-051`, `FR-002`, `FR-031`, `FR-003`, `BR-056`, `BR-057`, `BR-053`, `BR-001`, `UXR-001` |
 | Intake guidance | skill + guide via GitHub: [`intake-process`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) (header / path conventions) |
 
@@ -61,8 +61,8 @@ None
 | Area | Issue | Severity | Action |
 |------|--------|----------|--------|
 | **`fr-br/*.md` → Epic links** | Nine files used markdown targets `(epics/Epic-…/…)` which resolve under `fr-br/epics/` (broken). | High | Replaced with `(../epics/Epic-…/…)` in: FR-002, FR-003, FR-031, FR-034, FR-035, FR-051, BR-001, BR-005, BR-033. |
-| **`fbu-structure.md` header** | **Last Updated** / **Version** lagged `fbuboard.md` and live project line. | Medium | Bumped to 2026-03-25 and `v0.7.6.6+1` (aligned with this RW). |
-| **`fbuboard.md` / `fbu-completed.md` Version** | Displayed older epic/task versions; inconsistent with structure doc. | Low | Set **Version** to `v0.7.6.6+1` for trio consistency. |
+| **`intake-structure.md` header** | **Last Updated** / **Version** lagged `kboard.md` and live project line. | Medium | Bumped to 2026-03-25 and `v0.7.6.6+1` (aligned with this RW). |
+| **`kboard.md` / `intake-completed.md` Version** | Displayed older epic/task versions; inconsistent with structure doc. | Low | Set **Version** to `v0.7.6.6+1` for trio consistency. |
 | **kanban-completed vs fr-br-uxr-completed** | Both track “completed” work; readers could confuse **tasks** vs **FR/BR/UXR** lifecycle. | Medium | Added reciprocal cross-links in the blockquotes of both files. |
 | **Frontmatter styles** | Some BRs use `title`/`description` YAML (e.g. BR-053, BR-057); most FRs use `lifecycle` frontmatter. | Low | Documented only; standardize under T07 or a dedicated FR if desired. |
 | **Packaged `FR_BR_INTAKE_GUIDE.md`** | Last updated 2025-12; examples reference packaged template paths, not always `docs/project-management/kanban/fr-br/`. | Low | Expected drift for adopters; no change in T06. |

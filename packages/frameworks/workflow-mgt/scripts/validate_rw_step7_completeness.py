@@ -5,7 +5,7 @@ RW Step 7 Stage-Set Completeness Validator (BR-070, FR-092 Wave 5).
 Purpose
 -------
 RW Step 7 mutates a known set of "touched surfaces" (task doc + FR/BR/UXR
-doc(s) + kboard.md + fbuboard.md, plus auxiliary Story/Epic docs). Step 8
+doc(s) + kboard.md + kboard.md, plus auxiliary Story/Epic docs). Step 8
 ("Stage Files") is contractually required to stage every Step-7 output before
 commit. BR-070 captured a real-world failure where a partial manual staging
 path bypassed this invariant: Step 7 modified `kboard.md` and `epic-02.md` but
@@ -38,7 +38,7 @@ Usage
 
     # Validate an explicit set of paths (CI / unit-test mode)
     python validate_rw_step7_completeness.py \
-        --touched-files path/to/kboard.md path/to/fbuboard.md
+        --touched-files path/to/kboard.md path/to/kboard.md
 
 Exit codes
 ----------

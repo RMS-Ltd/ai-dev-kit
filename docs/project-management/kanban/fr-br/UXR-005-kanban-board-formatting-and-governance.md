@@ -39,13 +39,13 @@ Readers reported poor readability on Kanban boards because multi-line task entri
 
 ## Methodology
 
-**Research Method:** Heuristic review of Kanban documentation (MoSCOW sections across `kboard.md`, `fbuboard.md`, `kanban-board-guide.md`, and `_index.md`).  
+**Research Method:** Heuristic review of Kanban documentation (MoSCOW sections across `kboard.md`, `kanban-board-guide.md`, and `_index.md`).  
 **Participants:** Documentation + UXR review pairing.  
 **Duration:** Single analytical pass during Kanban board formatting update (2026-03-16).  
 **Artifacts Reviewed:**
 
 - `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - `docs/project-management/kanban/kanban-board-guide.md`
 - `docs/project-management/kanban/_index.md`
 
@@ -81,7 +81,7 @@ Readers reported poor readability on Kanban boards because multi-line task entri
 
 ## Acceptance Criteria
 
-- [x] AC-1: Every multi-line MoSCOW bullet in `kboard.md`, `fbuboard.md`, `kanban-board-guide.md`, `kanban-structure.md`, and `_index.md` has a blank line separating it from adjacent entries (`validate_kanban_moscow_spacing.py --strict` PASS).
+- [x] AC-1: Every multi-line MoSCOW bullet in `kboard.md`, `kanban-board-guide.md`, `kanban-structure.md`, and `_index.md` has a blank line separating it from adjacent entries (`validate_kanban_moscow_spacing.py --strict` PASS).
 - [x] AC-2: Kanban templates and guide explicitly document the spacing rule with an example ([kanban-board-guide.md](../kanban-board-guide.md) § Formatting Governance).
 - [x] AC-3: Documentation states that UXR owns Kanban template/document updates and governance changes ([README.md](../README.md), [kanban-governance-policy.md](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md)).
 - [x] AC-4: Related validators/tests reference the rule (`validate_kanban_moscow_spacing.py`, pytest, Release Readiness Gate 10).
@@ -141,7 +141,7 @@ This UXR represents the user’s explicit request (Mar 16, 2026) to expand UXR s
 ## References
 
 - `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - `docs/project-management/kanban/kanban-board-guide.md`
 - `docs/project-management/kanban/README.md`
 - `scripts/documentation/validate-documentation-consistency.py`

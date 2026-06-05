@@ -21,7 +21,7 @@ housekeeping_policy: keep
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
 | RF1 | Publish canonical **Set A (emoji) primary → Set B (Unicode) fallback** mapping for MoSCOW task/FBU states | UXR-012 |
-| RF2 | `kboard.md` / `fbuboard.md` rows use **emoji only** before the status word; status text retained for grep | UXR-012 |
+| RF2 | `kboard.md` rows use **emoji only** before the status word; status text retained for grep | UXR-012 |
 | RF3 | Backfill corpus MoSCOW rows missing icons | UXR AC3 |
 | RF4 | UKW/RW apply mapping deterministically (`state_icons.py` + pipeline step) | UXR AC4 |
 | RF5 | Hygiene passes do not mutate icons without substantive status change (pairs with FR-097) | UXR-012, FR-097 |
@@ -41,7 +41,7 @@ housekeeping_policy: keep
 ### 1.3 Invariants and boundaries
 
 - **Invariants:** Board row grammar ` - {icon} {STATUS}` after title; FR-097 stamp write boundary unchanged.
-- **In scope:** MoSCOW sections on `kboard.md` / `fbuboard.md`; RW Step 9 Gate 9; `update_kanban_docs.py` canonical pipeline.
+- **In scope:** MoSCOW sections on `kboard.md`; RW Step 9 Gate 9; `update_kanban_docs.py` canonical pipeline.
 - **Out of scope:** FR/BR/UXR doc `**Status:**` headers; portal publish; phase-2 type-prefix icons.
 
 ---
@@ -110,7 +110,7 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - `packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py`
-- `docs/project-management/kanban/kboard.md`, `fbuboard.md`
+- `docs/project-management/kanban/kboard.md`
 - Governance and workflow docs (see §5)
 
 ---

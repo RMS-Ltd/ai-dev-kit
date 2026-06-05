@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-The IPW workflow must own post-run governance reconciliation through IPP by updating all required traceability surfaces at completion time: host task doc, source FR/BR/UXR doc, `kboard.md`, and `fbuboard.md`.
+The IPW workflow must own post-run governance reconciliation through IPP by updating all required traceability surfaces at completion time: host task doc, source FR/BR/UXR doc, `kboard.md`, and `kboard.md`.
 
 ---
 
@@ -45,7 +45,7 @@ IPW planning runs can leave governance artifacts out of sync even when planning 
 - [ ] **FR-084-F1:** Define explicit IPP post-run responsibility to reconcile host task doc state and planning links.
 - [ ] **FR-084-F2:** Define explicit IPP post-run responsibility to reconcile source FR/BR/UXR document status/links.
 - [ ] **FR-084-F3:** Define explicit IPP post-run responsibility to reconcile `kboard.md` task row presence/state.
-- [ ] **FR-084-F4:** Define explicit IPP post-run responsibility to reconcile `fbuboard.md` FR/BR/UXR row presence/state.
+- [ ] **FR-084-F4:** Define explicit IPP post-run responsibility to reconcile `kboard.md` FR/BR/UXR row presence/state.
 - [ ] **FR-084-F5:** Require deterministic reconciliation order and idempotent behavior on repeat runs.
 
 ### Non-Functional Requirements
@@ -71,7 +71,7 @@ IPW planning runs can leave governance artifacts out of sync even when planning 
 
 - [x] IPW governance story/task docs
 - [x] FR intake and task wiring docs
-- [x] `kboard.md` and `fbuboard.md` tracking surfaces
+- [x] `kboard.md` tracking surfaces
 - [ ] Runtime workflow scripts (implementation follow-up)
 
 **Estimated Complexity:**

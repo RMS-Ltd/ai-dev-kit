@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E4:S19:T04 — Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) **(E4:S19:T04)**  
-**Planning for:** [UXR-010 — kboard/fbuboard add `IPP` segment after FBU and task links](../project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)  
+**Planning for:** [UXR-010 — kboard add `IPP` segment after FBU and task links](../project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** This document was produced by IPW for E4:S19:T04. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
-| RF1 | `kboard.md` and `fbuboard.md` rows must include an `IPP` segment after FBU and task link segments | UXR-010 / AC1 |
+| RF1 | `kboard.md` rows must include an `IPP` segment after FBU and task link segments | UXR-010 / AC1 |
 | RF2 | FBU segment token text: `BR/BR/UXR-xxx` as a markdown link | UXR-010 / AC3 |
 | RF3 | Task segment token text: `Exx:Sxx:Txx` as a markdown link | UXR-010 / AC3 |
 | RF4 | IPP segment (present): `—IPP—` as a markdown link to the planning artifact | UXR-010 / AC4 |
@@ -45,7 +45,7 @@ housekeeping_policy: keep
 ### 1.3 Invariants and boundaries
 
 - **Invariants:** Token text is fixed; segment order is canonical; normalization is idempotent.
-- **In scope:** `kboard.md` and `fbuboard.md` row formatting; `update_kanban_docs.py` formatter/resolver; test coverage for new behavior.
+- **In scope:** `kboard.md` row formatting; `update_kanban_docs.py` formatter/resolver; test coverage for new behavior.
 - **Out of scope:** MoSCOW re-prioritization; board ownership semantics; global migration of unrelated row formats.
 
 ---
@@ -54,7 +54,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Implement deterministic row-level traceability formatting in `kboard.md` and `fbuboard.md` such that each governed row exposes FBU token, task token, and IPP token in a stable, canonical order with explicit fallback behavior when no planning artifact exists. The formatter is normative, non-destructive, and enforced by `update_kanban_docs.py`.
+Implement deterministic row-level traceability formatting in `kboard.md` such that each governed row exposes FBU token, task token, and IPP token in a stable, canonical order with explicit fallback behavior when no planning artifact exists. The formatter is normative, non-destructive, and enforced by `update_kanban_docs.py`.
 
 ### 2.2 Specification mapping from ascertained requirements
 
@@ -109,7 +109,7 @@ The normative row contract (RF1–RF6) defines exact token text and segment orde
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py` — add formatter/resolver
 - `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` — add T1–T7 test cases
 - `docs/project-management/kanban/kboard.md` — normalize rows as needed
-- `docs/project-management/kanban/fbuboard.md` — normalize rows as needed
+- `docs/project-management/kanban/kboard.md` — normalize rows as needed
 
 ### 4.2 Dependency order
 
@@ -137,7 +137,7 @@ The normative row contract (RF1–RF6) defines exact token text and segment orde
 - [Host task E4:S19:T04](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)
 - [UXR-010](../project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 - [kboard](../project-management/kanban/kboard.md)
-- [fbuboard](../project-management/kanban/fbuboard.md)
+- [fbuboard](../project-management/kanban/kboard.md)
 - [update_kanban_docs.py](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py)
 - [test_update_kanban_docs.py](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py)
 - [PLAN_DOC_TEMPLATE.md](../../packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md)

@@ -142,7 +142,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - CREATE: [`tests/test_portal_br090_faster_alignment.py`](../../tests/test_portal_br090_faster_alignment.py)
 - CREATE: [`docs/implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md`](IPP-E05S09T13-docusaurus-faster-package-alignment.md)
 - UPDATE: Host task T13 — IPP links; status transitions
-- UPDATE (RW Step 7): story checklist, `kboard.md`, `fbuboard.md`, BR-090
+- UPDATE (RW Step 7): story checklist, `kboard.md`, BR-090
 
 ### 4.2 Dependency order
 

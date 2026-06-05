@@ -27,7 +27,7 @@ housekeeping_policy: keep
 | RF3 | **Task-doc SoT** for kboard archival (not row-text-only) | FR-102, ADR-010 |
 | RF4 | Append **kanban-completed.md** before kboard row removal | FR-102-F2 |
 | RF5 | **FBU-doc SoT** for fbuboard; FR-076 terminal rules + verification keep | FR-102-F3 |
-| RF6 | Append **fbu-completed.md** before fbuboard row removal | FR-102-F3 |
+| RF6 | Append **intake-completed.md** before fbuboard row removal | FR-102-F3 |
 | RF7 | Step 9 `## Archive completed summary` with counts | FR-102-F4 |
 | RF8 | Idempotent re-run | FR-102-F5 |
 | RF9 | Cheatsheet + agent SoT + `/ukw` + skill | FR-102-F6 |
@@ -52,7 +52,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW into [**kanban-completed.md**](../project-management/kanban/kanban-completed.md) and [**fbu-completed.md**](../project-management/kanban/fbu-completed.md) before row removal — without full UKW bookkeeping or reprioritization.
+Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW into [**kanban-completed.md**](../project-management/kanban/kanban-completed.md) and [**intake-completed.md**](../project-management/kanban/intake-completed.md) before row removal — without full UKW bookkeeping or reprioritization.
 
 ### 2.2 UKW step matrix — `UKW -c` (standalone)
 
@@ -107,7 +107,7 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 | -- | ---- | ------ |
 | V1 | Manual / doc | RF1–RF2 flag matrix in SoT |
 | V2 | Manual + helper | RF3–RF4 ledger-before-removal |
-| V3 | Manual | RF5–RF6 fbu-completed |
+| V3 | Manual | RF5–RF6 intake-completed |
 | V4 | Manual | RF7–RF8 idempotent summary |
 | V5 | Manual | RNF1–RNF2 stamp / pre-commit |
 | V6 | pytest | `archive_completed.py` — perpetual skip, terminal task, ledger idempotency hints |
@@ -157,7 +157,7 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 
 - [x] IPP §1–§7 complete; ADR-010 created
 - [x] Bidirectional T16 ↔ IPP links
-- [x] V2: `UKW -c` proof — `E02:S16:T16` → [kanban-completed.md](../project-management/kanban/kanban-completed.md) then removed from [kboard.md](../project-management/kanban/kboard.md); `FR-102` → [fbu-completed.md](../project-management/kanban/fbu-completed.md) then removed from [fbuboard.md](../project-management/kanban/fbuboard.md) (2026-05-30T16:30:00Z)
+- [x] V2: `UKW -c` proof — `E02:S16:T16` → [kanban-completed.md](../project-management/kanban/kanban-completed.md) then removed from [kboard.md](../project-management/kanban/kboard.md); `FR-102` → [intake-completed.md](../project-management/kanban/intake-completed.md) then removed from [kboard.md](../project-management/kanban/kboard.md) (2026-05-30T16:30:00Z)
 - [ ] V4–V5 manual idempotency re-run (second `UKW -c` expected no-op)
 - [x] V6 pytest for `archive_completed` helpers
 - [x] T16 AC1–AC5 at `RW E02:S16:T16` (**v0.2.16.16+2**)

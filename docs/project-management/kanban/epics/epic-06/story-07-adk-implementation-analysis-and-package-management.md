@@ -132,7 +132,7 @@ housekeeping_policy: keep
   - Task: [`T113-rw-step-12-5-github-release-parser-hardening-br065.md`](story-07-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md) | [BR-065](../../fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
 
 
-- [x] **E06:S07:T114 – Canonical board filename migration (`kboard.md` / `fbuboard.md`)** - ✅ COMPLETE (HIGH, v0.6.7.114+1 — defaults migrated across project + packages; UXR/task/ICW backfilled)
+- [x] **E06:S07:T114 – Canonical board filename migration (`kboard.md`)** - ✅ COMPLETE (HIGH, v0.6.7.114+1 — defaults migrated across project + packages; UXR/task/ICW backfilled)
   - Task: [`T114-canonical-board-filename-migration-kboard-fbuboard.md`](story-07-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md) | [UXR-008](../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
 

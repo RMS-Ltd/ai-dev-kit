@@ -647,7 +647,7 @@ def detect_kanban_doc_patterns(
 def detect_kanban_board_default(project_root: Path, kanban_root: str) -> str:
     """Default main board file from existing kanban root (fresh install uses kboard.md)."""
     root_path = (project_root / kanban_root).resolve()
-    for name in ("kboard.md", "_index.md", "kanban-board.md"):
+    for name in ("kboard.md", "_index.md", "kboard.md"):
         if (root_path / name).is_file():
             return name
     return "kboard.md"

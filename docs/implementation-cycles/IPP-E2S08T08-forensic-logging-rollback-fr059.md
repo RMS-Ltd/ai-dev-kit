@@ -189,7 +189,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | D-U1 | Host task T08 | Input/References → IPP; COMPLETE | Phase 8 / closure |
 | D-U2 | FR-059 | Status COMPLETE (`v0.2.8.8+3`) | Closure RW |
 | D-U3 | story-008 checklist | T08 → COMPLETE | Closure RW |
-| D-U4 | `fbuboard.md` | IPP link replaces —No IPP— | Step 1 |
+| D-U4 | `kboard.md` | IPP link replaces —No IPP— | Step 1 |
 | D-U5 | `rw-config.yaml` | `journal_dir`, `journal_ttl_days`, `journal_failed_ttl_days` | RF6 |
 | D-U6 | `AGENTS.md` | Documentation Agent jurisdiction for journals | RF7 |
 | D-U7 | `release-workflow-agent-execution.md` | Pointer to forensic recovery guide | RF7 |

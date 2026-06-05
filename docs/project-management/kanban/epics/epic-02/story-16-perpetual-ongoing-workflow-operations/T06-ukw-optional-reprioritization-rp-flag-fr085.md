@@ -66,7 +66,7 @@ UKW lacked an explicit optional mode for deep reprioritization based on inferred
 
 - [x] **AC1:** `--rp` mode is explicitly specified and default UKW behavior is unchanged when absent.
 - [x] **AC2:** Reprioritization criteria include intent inference, dependency discovery, blocker detection, and impact weighting.
-- [x] **AC3:** `kboard.md` and `fbuboard.md` updates are deterministic and stable under repeated identical runs (contract in ADR-009; operational idempotency verified on first `UKW --rp` run by operator).
+- [x] **AC3:** `kboard.md` updates are deterministic and stable under repeated identical runs (contract in ADR-009; operational idempotency verified on first `UKW --rp` run by operator).
 - [x] **AC4:** UKW emits per-change rationale for reordered/promoted/demoted items (Step 9 template in agent SoT).
 - [x] **AC5:** FR-085 and E02:S16:T06 are bidirectionally linked and visible in active story/board tracking.
 

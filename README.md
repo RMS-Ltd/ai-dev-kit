@@ -9,7 +9,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.903+4` | **Internal:** `v0.4.19.12+4` (E04:S19:T12 / single-board Wave 4 closure) | **Last Updated:** 2026-06-05
+**Version (SemVer):** `v0.4.904+5` | **Internal:** `v0.4.19.12+5` (E04:S19:T12 / intake rename wave) | **Last Updated:** 2026-06-05
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -229,7 +229,7 @@ Follow **[INSTALL_IN_YOUR_PROJECT.md](INSTALL_IN_YOUR_PROJECT.md)** and the [Qui
 
 ## Roadmap
 
-Work is tracked in **[Kanban](docs/project-management/kanban/kanban-board.md)** and **[GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)**.
+Work is tracked in **[Kanban](docs/project-management/kanban/kboard.md)** and **[GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)**.
 
 ---
 

@@ -26,7 +26,7 @@ housekeeping_policy: keep
 ## Input
 
 - [UXR-006](../../../fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md) (acceptance criteria and recommendations).
-- `kboard.md`, `fbuboard.md`, `kanban-board-guide.md`.
+- `kboard.md`, `kanban-board-guide.md`.
 
 ---
 

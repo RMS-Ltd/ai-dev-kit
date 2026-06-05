@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Pre-commit guard for kboard.md / fbuboard.md row stamps (FR-097).
+Pre-commit guard for kboard.md row stamps (FR-097).
 
 1. Homogeneity: block when ≥N rows share identical `Last modified` (default N=3).
 2. Stamp diff: block unevidenced row stamp changes vs HEAD (same rules as
@@ -35,7 +35,6 @@ from stamp_authority import (  # noqa: E402
 
 BOARD_REL_PATHS = (
     "docs/project-management/kanban/kboard.md",
-    "docs/project-management/kanban/fbuboard.md",
 )
 
 

@@ -124,7 +124,7 @@ RF1 → spacing module + corpus pass. RF2–RF5 → policy and agent guides. RF3
 | 8 | Wire non-blocking Step 9 hook in release readiness | RF4 |
 | 9 | Reconcile kanban-completed stale T09 row | Data hygiene |
 | 10 | Check UXR-005 + task ACs | RF7 |
-| **N** | **[MANDATORY] Reconcile status → COMPLETE** with version marker if ACs met; kboard/fbuboard | Task closure |
+| **N** | **[MANDATORY] Reconcile status → COMPLETE** with version marker if ACs met; kboard | Task closure |
 
 ### 4.1 Files to create or modify
 
@@ -155,7 +155,7 @@ RF1 → spacing module + corpus pass. RF2–RF5 → policy and agent guides. RF3
 | D-U4 | kanban-governance-policy.md | Spacing subsection | RF2 |
 | D-U5 | RW/UKW agent guides | Validator command | RF4, RF5 |
 | D-U6 | kanban README | Cross-link | RF2 |
-| D-U7 | kboard.md, fbuboard.md | IPP segment; spacing | RF1, RF7 |
+| D-U7 | kboard.md, kboard.md | IPP segment; spacing | RF1, RF7 |
 | D-U8 | validate-documentation-consistency.py | Delegate | RF3 |
 
 ### 5.2 New documents to create

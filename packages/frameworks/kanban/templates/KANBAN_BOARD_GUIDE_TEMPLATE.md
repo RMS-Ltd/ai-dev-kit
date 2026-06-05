@@ -145,7 +145,7 @@ The board is organized into three separate documents:
 1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Sole active board: M/S/**V**/C/O/W (wired FBUs + Verification band)
 2. **Epic/Story/Task Structure** (`kanban-structure.md`) - Shows all epics with their status, priority, stories, and links
 3. **Rules and Explanations** (`kanban-board-guide.md`) - This document with how-to content and policies
-4. **`fbuboard.md`** - Deprecated redirect stub (no active MoSCOW); see ADR-018
+4. **`kboard.md`** - Deprecated redirect stub (no active MoSCOW); see ADR-018
 
 The board serves as the parent document to Story documents, providing a comprehensive view of all work items in the project.
 

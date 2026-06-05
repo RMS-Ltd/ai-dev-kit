@@ -23,7 +23,7 @@ housekeeping_policy: keep
 **Primary driver:** [BR-069](./BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
 **Analysis basis:** [IPP-E02S15T04](../../../implementation-cycles/IPP-E02S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 
-> **Supersede note (2026-04-27):** FR-090 architecture (shared canonical row transform pipeline + board-specific rendering contracts) is absorbed into FR-092 Bucket B/Wave 4. T05 Phase-4 evidence asserted AC1-AC6 satisfied, but the user-visible outcome on live `kboard.md` / `fbuboard.md` is not produced — duplicate tail tokens persist. The drift (B1-B4 in FR-092) is owned by the meta program; this FR remains authoritative for the architectural target and is closed only when FR-092 sign-off proves the canonical outcome on live boards.
+> **Supersede note (2026-04-27):** FR-090 architecture (shared canonical row transform pipeline + board-specific rendering contracts) is absorbed into FR-092 Bucket B/Wave 4. T05 Phase-4 evidence asserted AC1-AC6 satisfied, but the user-visible outcome on live `kboard.md` is not produced — duplicate tail tokens persist. The drift (B1-B4 in FR-092) is owned by the meta program; this FR remains authoritative for the architectural target and is closed only when FR-092 sign-off proves the canonical outcome on live boards.
 
 ---
 

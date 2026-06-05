@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Version:** v0.7.6.6+1
 
 > **For MoSCOW prioritized tasks and wired FBUs, see:** [`kboard.md`](kboard.md) (sole active board; [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md))  
-> **For completed FBU items, see:** [`fbu-completed.md`](fbu-completed.md)  
-> **For open ∧ taskless intake queue, see:** [`fbu-open-taskless-queue.md`](fbu-open-taskless-queue.md)  
+> **For completed FBU items, see:** [`intake-completed.md`](intake-completed.md)  
+> **For open ∧ taskless intake queue, see:** [`intake-open-taskless-queue.md`](intake-open-taskless-queue.md)  
 > **For Epic/Story/Task structure, see:** [`kanban-structure.md`](kanban-structure.md)  
 > **For rules and explanations, see:** [`kanban-board-guide.md`](kanban-board-guide.md)
 
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This document provides **complete listings of all FBU items** in the AI Dev Kit project, organized by type for comprehensive reference. For MoSCOW prioritization, see [`kboard.md`](kboard.md). For the **operational intake plan** (open ∧ taskless queue, epic branch + **`RW -k`**, hygiene notes), see [`fbu-open-taskless-queue.md`](fbu-open-taskless-queue.md).
+This document provides **complete listings of all FBU items** in the AI Dev Kit project, organized by type for comprehensive reference. For MoSCOW prioritization, see [`kboard.md`](kboard.md). For the **operational intake plan** (open ∧ taskless queue, epic branch + **`RW -k`**, hygiene notes), see [`intake-open-taskless-queue.md`](intake-open-taskless-queue.md).
 
 **Document Purpose:**
 
@@ -82,7 +82,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **FR-008** – Package Uninstall Capabilities - TODO (LOW, Uninstall capabilities for packages) - [FR-008](fr-br/FR-008-package-uninstall-capabilities.md)
 - **FR-007** – Migration Utilities and Installation Modes - TODO (LOW, Migration utilities and installation modes) - [FR-007](fr-br/FR-007-migration-utilities-and-installation-modes.md)
 - **FR-006** – Localization Language Selection UK/US English - TODO (LOW, Language selection for UK/US English) - [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
-- **FR-005** – Systematic Canonical Epics Stories Tasks Templates - ✅ IMPLEMENTED (v0.4.6.1+1; E04:S06:T01) - [FR-005](fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) | [fbu-completed](fbu-completed.md)
+- **FR-005** – Systematic Canonical Epics Stories Tasks Templates - ✅ IMPLEMENTED (v0.4.6.1+1; E04:S06:T01) - [FR-005](fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) | [intake-completed](intake-completed.md)
 - **FR-004** – GitHub Submission for FBU - TODO (LOW, GitHub integration for FBU submission) - [FR-004](fr-br/FR-004-github-submission-for-fr-br-uxr.md)
 - **FR-003** – Dependency Tracking in Adopting Projects - TODO (LOW, Dependency tracking for project adoption) - [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
 - **FR-002** – Update Been There README - TODO (LOW, Update README for been-there functionality) - [FR-002](fr-br/FR-002-update-been-there-readme.md)
@@ -130,7 +130,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **UXR-002** – Comprehensive UAT Migration Utilities - TODO (HIGH, User acceptance testing tools for migration) - [UXR-002](fr-br/UXR-002-comprehensive-uat-migration-utilities.md)
 - **UXR-005** – Kanban Board Formatting & Governance - TODO (HIGH, Enforce blank-line readability rule across Kanban docs and establish UXR ownership for template maintenance) - [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md)
 - **UXR-006** – Single `dev` branch and RW validator relaxation (solo workflow) - TODO (HIGH, evaluate allowing `dev` as accepted RW branch context to reduce multi-branch hygiene friction while preserving safety controls) - [UXR-006](fr-br/UXR-006-dev-branch-and-rw-validator-relaxation.md)
-- **UXR-008** – Canonical kanban filename normalization (`kboard.md` / `fbuboard.md` pattern) - IN PROGRESS (HIGH, expand board-default migration into full kanban + FBU filename normalization with compatibility-safe transition) - [UXR-008](fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md) | [E04:S19:T05](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- **UXR-008** – Canonical kanban filename normalization (`kboard.md` pattern) - IN PROGRESS (HIGH, expand board-default migration into full kanban + FBU filename normalization with compatibility-safe transition) - [UXR-008](fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md) | [E04:S19:T05](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 
 ### Medium Priority (Could Have - C)
 
@@ -153,7 +153,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 - **TODO:** 69
 - **IN PROGRESS:** 1 (BR-037)
-- **COMPLETED:** 1 (FR-051 - tracked in fbu-completed.md)
+- **COMPLETED:** 1 (FR-051 - tracked in intake-completed.md)
 
 #### MoSCOW Breakdown
 

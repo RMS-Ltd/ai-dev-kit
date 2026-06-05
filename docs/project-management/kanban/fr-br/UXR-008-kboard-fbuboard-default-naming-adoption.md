@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# User Experience Research: Canonical Kanban Filename Normalization (`kboard.md` / `fbuboard.md` pattern)
+# User Experience Research: Canonical Kanban Filename Normalization (`kboard.md` pattern)
 
 **Type:** User Experience Research (UXR)  
 **Submitted:** 2026-04-20  
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-The initial rename of long-form board filenames (`kanban-board.md` and `fr-br-uxr-board.md`) to shorthand defaults (`kboard.md` / `fbuboard.md`) is complete, but filename patterns across the rest of `docs/project-management/kanban/` remain inconsistent. This reopened UXR now captures full-surface normalization for kanban and FBU-related filenames to the same concise, deterministic pattern family.
+The initial rename of long-form board filenames (`kboard.md` and `fr-br-uxr-board.md`) to shorthand defaults (`kboard.md`) is complete, but filename patterns across the rest of `docs/project-management/kanban/` remain inconsistent. This reopened UXR now captures full-surface normalization for kanban and FBU-related filenames to the same concise, deterministic pattern family.
 
 ---
 
@@ -47,7 +47,7 @@ Does extending concise canonical naming beyond the two board files to all kanban
 
 ## Scope
 
-- Preserve board defaults as `kboard.md` and `fbuboard.md`.
+- Preserve board defaults as `kboard.md`.
 - Normalize all kanban + FBU-related filenames under `docs/project-management/kanban/` to one concise pattern family.
 - Update active docs and framework scripts that read/write renamed files.
 - Keep legacy filename compatibility (aliases, redirect mappings, or migration notes) during transition.
@@ -58,7 +58,7 @@ Does extending concise canonical naming beyond the two board files to all kanban
 ## Acceptance Criteria
 
 - [x] Canonical task board default is `kboard.md` in scripts and docs.
-- [x] Canonical FBU board default is `fbuboard.md` in scripts and docs.
+- [x] Canonical FBU board default is `kboard.md` in scripts and docs.
 - [ ] Canonical filename policy is defined for all kanban/FBU-related docs under `docs/project-management/kanban/`.
 - [ ] Supporting kanban and FBU filenames are normalized to policy with deterministic migration mapping.
 - [ ] Legacy filename compatibility remains available for transition.
@@ -69,7 +69,7 @@ Does extending concise canonical naming beyond the two board files to all kanban
 ## References
 
 - [kboard](../kboard.md)
-- [fbuboard](../fbuboard.md)
+- [fbuboard](../kboard.md)
 - [T114](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 - [T06](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 - [T05](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)

@@ -68,7 +68,7 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 
 - [x] **AC1:** FR-005 closure audit matrix complete (IPP §7).
 - [x] **AC2:** T1–T6 verification run — 21 epics; `generate_task_templates.py --validate` 378/378 PASS; contextualization guide + examples.
-- [x] **AC3:** Kanban surfaces reconciled (`kboard`, `fbuboard`, `kanban-completed`, `fbu-completed`).
+- [x] **AC3:** Kanban surfaces reconciled (`kboard`, `fbuboard`, `kanban-completed`, `intake-completed`).
 - [x] **AC4:** FR-005 status **IMPLEMENTED** (`v0.4.6.1+1`).
 - [x] **AC5:** FR-005-R5 **DEFER** — documented in FR-005 + IPP §5.3.
 - [x] **AC6:** IPP linked; `validate_ipw_publication_wiring.py` PASS.

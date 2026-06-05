@@ -30,7 +30,7 @@ housekeeping_policy: keep
 | RF4 | Every story directory MUST have a matching `Story-NNN-*.md` file at the epic root. | UXR-011 Finding 4 |
 | RF5 | Story filenames MUST use 3-digit zero-padding (`story-004`, not `story-004`). | UXR-011 Finding 5 |
 | RF6 | All internal markdown links referencing renamed files MUST be updated. | UXR-011 AC7 |
-| RF7 | Board docs (`kboard.md`, `fbuboard.md`) MUST reference correct post-cleanup filenames. | UXR-011 AC8 |
+| RF7 | Board docs (`kboard.md`) MUST reference correct post-cleanup filenames. | UXR-011 AC8 |
 | RF8 | Kanban governance policy MUST codify the naming convention and prohibit duplicates. | UXR-011 AC9 |
 | RF9 | A regression validator MUST exist that can be run post-cleanup to confirm zero defects. | UXR-011 AC10 |
 
@@ -46,7 +46,7 @@ housekeeping_policy: keep
 ### 1.3 Invariants and boundaries
 
 - **Invariants:** Epic directory structure (`Epic-X/Story-NNN-*.md` + `Epic-X/Story-NNN-slug/`) must remain valid.
-- **In scope:** `docs/project-management/kanban/epics/` tree, board docs (`kboard.md`, `fbuboard.md`), governance policy, regression script.
+- **In scope:** `docs/project-management/kanban/epics/` tree, board docs (`kboard.md`), governance policy, regression script.
 - **Out of scope:** Cross-epic story name collisions (epic-09 vs epic-24 book stories) — these are semantically acceptable. Fixing pre-existing dangling links in `CHANGELOG_ARCHIVE.md` (12 links) — tracked separately.
 - **Boundary:** Epic-owner input required for Epics 5, 6, 7 duplicate story reconciliation. Plan includes deferred decision points for these.
 
@@ -97,7 +97,7 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 | T5 | Orphaned directory cleanup | `[ -d "kanban/epics/epic-05/story-002" ]` → false OR `[ -f "kanban/epics/epic-05/story-002.md" ]` → true |
 | T6 | Zero-padding fix | `[ -f "kanban/epics/epic-07/story-04-readme-template-based-on-best-readme-template.md" ]` → true |
 | T7 | Link validation | `validate_changelog_archive_links.py` (existing) and grep for old filenames across all markdown → 0 matches |
-| T8 | Board doc consistency | `kboard.md` and `fbuboard.md` contain zero references to old filenames |
+| T8 | Board doc consistency | `kboard.md` contain zero references to old filenames |
 | T9 | Governance policy rule | `kanban-governance-policy.md` contains explicit "Txx (2-digit) required; Txxx deprecated; Story-NNN (3-digit) required" language |
 | T10 | Idempotency | Run regression script twice; second run produces identical output (no false positives) |
 
@@ -116,7 +116,7 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 | D1 | **Phase D:** Resolve `epic-05/story-002/` — either create `story-002.md` or remove directory per A2 decision. | Zero orphaned dirs |
 | E1 | **Phase E:** Rename `epic-07/story-04-*` → `epic-07/story-04-*`. | story-004 files exist |
 | F1 | **Phase F:** Run `sed`/`python` across all markdown in `kanban/` to update internal links referencing old filenames. | Zero old-filename references |
-| G1 | **Phase G:** Update `kboard.md` and `fbuboard.md` row references to new filenames. | Boards reference correct files |
+| G1 | **Phase G:** Update `kboard.md` row references to new filenames. | Boards reference correct files |
 | H1 | **Phase H:** Amend `kanban-governance-policy.md` with explicit naming convention rule (Txx required, Txxx deprecated, Story-NNN required, no duplicate numbers within epic). | Policy updated |
 | I1 | **Phase I:** Create `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py` — exits 0 on clean tree, exits 1 with report on violations. Wired into governance as post-cleanup check. | Regression script |
 | I2 | Run regression script; verify all 10 ACs pass. | AC sign-off |
@@ -135,7 +135,7 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 - `epic-07/story-04-*` → `epic-07/story-04-*`
 - `epic-05/story-002/` → resolved (create .md or remove)
 - `kanban-governance-policy.md` — new naming rule
-- `kboard.md`, `fbuboard.md` — reference updates
+- `kboard.md` — reference updates
 - All epic/story docs with outdated links
 
 ### 4.2 Dependency order

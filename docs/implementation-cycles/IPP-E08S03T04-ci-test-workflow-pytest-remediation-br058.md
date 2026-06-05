@@ -124,7 +124,7 @@ RF1–RF3 → `.github/workflows/tests.yml`; RF4 → test remediation; RF5 → R
 ### 4.1 Files to create or modify
 
 - CREATE: `.github/workflows/tests.yml`, this IPP
-- UPDATE: tests listed in §3; validation README; task doc; BR-058; story/kboard/fbuboard (RW)
+- UPDATE: tests listed in §3; validation README; task doc; BR-058; story/kboard (RW)
 
 ### 4.2 Dependency order
 

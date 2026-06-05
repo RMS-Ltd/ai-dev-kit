@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 ## Context
 
-Bidirectional **task ↔ FBU** wiring (KG-R2) made `kboard.md` and `fbuboard.md` **near-duplicates** in the Could Have backlog, doubling UKW/RW maintenance. `fbuboard` still held **verification-pending** rows (task COMPLETE, FBU OPEN) that `kboard` deliberately omitted. User selected **R3**: one active board with an explicit verification lane.
+Bidirectional **task ↔ FBU** wiring (KG-R2) made `kboard.md` **near-duplicates** in the Could Have backlog, doubling UKW/RW maintenance. `fbuboard` still held **verification-pending** rows (task COMPLETE, FBU OPEN) that `kboard` deliberately omitted. User selected **R3**: one active board with an explicit verification lane.
 
 ---
 
@@ -29,7 +29,7 @@ Bidirectional **task ↔ FBU** wiring (KG-R2) made `kboard.md` and `fbuboard.md`
 
 3. **MoSCOW order:** M → S → **V** → C → O → W.
 
-4. **`fbuboard.md` deprecated:** Replaced by a **redirect stub** (no active MoSCOW). Terminal FBU history remains in `fbu-completed.md`; inventory in `fbu-structure.md`.
+4. **`fbuboard.md` and `kanban-board.md` removed:** No second active board or redirect stub. Terminal FBU history in `intake-completed.md`; inventory in `intake-structure.md` and `intake-open-taskless-queue.md`.
 
 5. **RW Step 7 three-surface contract** (supersedes four-surface for active boards):
    - Task doc
@@ -42,7 +42,7 @@ Bidirectional **task ↔ FBU** wiring (KG-R2) made `kboard.md` and `fbuboard.md`
 
 ### Wave 3 — framework pack (adopters)
 
-- **Fresh install:** `install_kanban_framework.py --mode fresh` emits `kboard.md` (with V-band scaffold) + `fbuboard.md` redirect stub from `templates/FBUBOARD_STUB_TEMPLATE.md`.
+- **Fresh install:** `install_kanban_framework.py --mode fresh` emits `kboard.md` only (with V-band scaffold). No `fbuboard.md`, `kanban-board.md`, or redirect stub.
 - **Brownfield:** `packages/frameworks/kanban/guides/single-board-migration-adopter-note.md`.
 - **`rw-config.yaml`:** `kanban_board: kboard.md` is sole active board; optional legacy `fbu_board` key is **deprecated** (see `rw-config-schema.md`).
 
@@ -62,7 +62,7 @@ Bidirectional **task ↔ FBU** wiring (KG-R2) made `kboard.md` and `fbuboard.md`
 
 - **Positive:** One board to edit; verification queue visible on `kboard` V-band.
 - **Negative:** Validators and UKW must be updated (Wave 2); adopters with dual-board installs need migration note (Wave 3).
-- **FR-092:** Four-surface narrative amended to three-surface for active reconciliation; `fbu-completed.md` ledger unchanged.
+- **FR-092:** Four-surface narrative amended to three-surface for active reconciliation; `intake-completed.md` ledger unchanged.
 
 ---
 

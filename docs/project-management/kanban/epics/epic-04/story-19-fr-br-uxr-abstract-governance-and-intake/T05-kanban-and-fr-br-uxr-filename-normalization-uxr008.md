@@ -27,7 +27,7 @@ housekeeping_policy: keep
 ## Input
 
 - Reopened UXR scope to normalize filename patterns beyond board files.
-- Existing canonical board defaults already migrated (`kboard.md`, `fbuboard.md`) under `E06:S07:T114`.
+- Existing canonical board defaults already migrated (`kboard.md`) under `E06:S07:T114`.
 - Remaining supporting kanban + FR/BR/UXR docs under `docs/project-management/kanban/` still use mixed naming styles.
 
 ---

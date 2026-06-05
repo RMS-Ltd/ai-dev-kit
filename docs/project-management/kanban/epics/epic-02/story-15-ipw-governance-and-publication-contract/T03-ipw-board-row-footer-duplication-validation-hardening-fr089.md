@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- User report and evidence of repeated appended row footers on `kboard.md` and `fbuboard.md`.
+- User report and evidence of repeated appended row footers on `kboard.md`.
 - Existing IPW governance baseline in Story 015 (`T01`, `T02`) and FR-084 ownership contract.
 - Current board mutation/validation surfaces in workflow scripts.
 

@@ -244,7 +244,7 @@ If the agent suggests `git commit` outside RW, **stop** and run `RW` with the co
 ### Don’t
 
 - Install full ECC overlay + Claude marketplace plugin + manual copy (**single install path**).
-- Use ECC `project-flow-ops` instead of UKW for `kboard.md` / `fbuboard.md`.
+- Use ECC `project-flow-ops` instead of UKW for `kboard.md`.
 - Skip IPW because ECC offered a generic plan.
 - Bump SemVer MINOR “because we added ECC” — FR-098 phases are **PATCH-only**; MINOR is Epic 6 sign-off.
 - Merge ECC’s `.cursor/` tree into ai-dev-kit canonical repos without namespace review.

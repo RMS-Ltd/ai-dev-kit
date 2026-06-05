@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-IPW governance must explicitly validate and prevent board-row traceability churn on `kboard.md` and `fbuboard.md`, including both footer duplication and task-ID multiplication anti-patterns (repeated appended segments like `| [E#:S#:T#] | ... | Last modified: ...` on the same row). This is distinct from simple timestamp drift and requires deterministic structural checks.
+IPW governance must explicitly validate and prevent board-row traceability churn on `kboard.md`, including both footer duplication and task-ID multiplication anti-patterns (repeated appended segments like `| [E#:S#:T#] | ... | Last modified: ...` on the same row). This is distinct from simple timestamp drift and requires deterministic structural checks.
 
 ---
 
@@ -37,7 +37,7 @@ Current governance validation does not explicitly assert row-tail uniqueness for
 
 ### Functional Requirements
 
-- [x] **FR-089-F1:** IPW spec must define canonical row-tail grammar for `kboard.md` and `fbuboard.md` with single-instance footer segments.
+- [x] **FR-089-F1:** IPW spec must define canonical row-tail grammar for `kboard.md` with single-instance footer segments.
 - [x] **FR-089-F2:** Validation must detect repeated appended footer segments on the same row and classify them as structural corruption.
 - [x] **FR-089-F3:** IPW post-run governance contract must include de-duplication/normalization expectations for corrupted rows.
 - [x] **FR-089-F4:** Validation output must include explicit counters for `rows_with_duplicate_footers` and affected row IDs.

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 **Current owner:** [E02:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **Current IPP:** [IPP-E02S15T07](../../../../../implementation-cycles/IPP-E02S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
-> **Supersede note (2026-04-27):** T05 Phase-4 evidence asserted AC1-AC6 satisfied, but the user-visible outcome on live `kboard.md` / `fbuboard.md` is not produced — duplicate tail tokens persist after RW. The drift (FR-092 Bucket B1) is owned by the meta program (Wave 4). All Phase 1-4 implementation evidence below remains valid as predecessor work; final canonical-outcome closure is gated on FR-092 sign-off. Do not run RW against T05 — release this scope under T07 instead.
+> **Supersede note (2026-04-27):** T05 Phase-4 evidence asserted AC1-AC6 satisfied, but the user-visible outcome on live `kboard.md` is not produced — duplicate tail tokens persist after RW. The drift (FR-092 Bucket B1) is owned by the meta program (Wave 4). All Phase 1-4 implementation evidence below remains valid as predecessor work; final canonical-outcome closure is gated on FR-092 sign-off. Do not run RW against T05 — release this scope under T07 instead.
 
 ---
 

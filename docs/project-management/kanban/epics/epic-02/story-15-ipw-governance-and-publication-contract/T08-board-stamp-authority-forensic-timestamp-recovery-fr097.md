@@ -34,7 +34,7 @@ housekeeping_policy: keep
 
 - [IPP-E02S15T08](../../../../../implementation-cycles/IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
-- User report: mass-identical `Last modified` on `fbuboard.md` (~61× `2026-04-20 15:52 UTC`) destroys staleness signal.
+- User report: mass-identical `Last modified` on `kboard.md` (~61× `2026-04-20 15:52 UTC`) destroys staleness signal.
 - Confirmed conflict: UKW guides mandate row temporal-drift normalization while FR-092 Wave 6 forbids synthetic stamp churn on hygiene paths.
 - Confirmed script gap: `_cleanup_fbuboard_active_rows` appends stamps without evidence gate.
 - User decisions: **automatic backfill**, **abort** on un evidenced stamp changes, **validator script first** (optional agent skill later).

@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 6, Story 7, Task 114: Canonical board filename migration (`kboard.md` / `fbuboard.md`)
+# Epic 6, Story 7, Task 114: Canonical board filename migration (`kboard.md`)
 
 **Task ID:** E06:S07:T114  
 **Status:** COMPLETE  
@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- User request to set canonical board names to `kboard.md` and `fbuboard.md`.
+- User request to set canonical board names to `kboard.md`.
 - Existing implementation diff that migrated references and defaults without prior planning artifacts.
 - Need to backfill governance-complete artifacts (task + ICW suite + verification notes).
 
@@ -45,7 +45,7 @@ Forensic marker: RW `v0.6.7.114+1` — canonical board naming migration released
 
 1. Anchor migration to task E06:S07:T114 and re-wire UXR-008.
 2. Produce ICW artifact triad for the migration.
-3. Ensure script defaults and package install paths use `kboard.md`/`fbuboard.md` while maintaining alias fallback support.
+3. Ensure script defaults and package install paths use `kboard.md`/`kboard.md` while maintaining alias fallback support.
 4. Verify with existing workflow tests and Docusaurus production build.
 
 ---

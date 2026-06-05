@@ -143,7 +143,7 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 | D7 | `packages/frameworks/workflow-mgt/docs/INSTALL_IN_YOUR_PROJECT.md` (or kit install doc path) | UPDATE | Lowercase example | RF7 |
 | D8 | `tests/test_install_release_workflow_*.py` | UPDATE | Fixtures | T1–T7 |
 | D9 | `docs/project-management/kanban/kboard.md` | UPDATE | T16 row (pending FR-097) | Step N |
-| D10 | `docs/project-management/kanban/fbuboard.md` | UPDATE | BR-086 row | Step N |
+| D10 | `docs/project-management/kanban/kboard.md` | UPDATE | BR-086 row | Step N |
 | D11 | ADR | NONE | EXEMPT — ADR-015 / UXR-017 govern | §2.5 |
 
 ---

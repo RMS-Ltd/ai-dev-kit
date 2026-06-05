@@ -40,7 +40,7 @@ def main() -> int:
     parser.add_argument(
         "paths",
         nargs="*",
-        default=["docs/project-management/kanban/kboard.md", "docs/project-management/kanban/fbuboard.md"],
+        default=["docs/project-management/kanban/kboard.md", "docs/project-management/kanban/kboard.md"],
         help="Files or directories to scan",
     )
     parser.add_argument(

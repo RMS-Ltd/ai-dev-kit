@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ### 1.1 Goal
 
-Deliver the release-visible canonical four-surface outcome on every RW: `task` + `FR/BR/UXR` + `kboard.md` + `fbuboard.md` are byte-deterministic, idempotent, and free of duplicate tail tokens or synthetic stamp churn at every commit boundary, with preventive validators that block any RW that would publish a partial reconciliation.
+Deliver the release-visible canonical four-surface outcome on every RW: `task` + `FR/BR/UXR` + `kboard.md` + `kboard.md` are byte-deterministic, idempotent, and free of duplicate tail tokens or synthetic stamp churn at every commit boundary, with preventive validators that block any RW that would publish a partial reconciliation.
 
 ### 1.2 Functional requirements
 
@@ -37,7 +37,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 | F6 | B-bucket drift items (B1-B4) reproduced, root-caused, fixed in code, proven on live boards. | FR-092-F3 |
 | F7 | Preventive gates (C1-C5) implemented and wired into RW; commit blocked on failure. | FR-092-F4 |
 | F8 | Predecessor (D1-D9) closure evidence captured in traceability matrix; BR-042 closed as duplicate. | FR-092-F5 |
-| F9 | Corpus-level retroactive sweep over `kboard.md` + `fbuboard.md` produces canonical baseline. | FR-092-F6 |
+| F9 | Corpus-level retroactive sweep over `kboard.md` + `kboard.md` produces canonical baseline. | FR-092-F6 |
 | F10 | Supersede chain executed: T02/T05/T06 SUPERSEDED, FR-091/FR-090/FR-084 banner-superseded, BR-069/BR-070/UXR-009 closure gated. | FR-092-F7 |
 | F11 | "Touched surfaces + why" report emitted to `docs/changelog-and-release-notes/changelog-archive/` for every RW. | FR-092-NF1 |
 | F12 | Stamp work-evidence gate integrated at row mutation boundary (no synthetic stamps without evidence delta). | FR-092-F4 (UXR-009) |
@@ -76,7 +76,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 | T1 | Contract codification | RW Step 7 wording in `.cursorrules` + `release-workflow-agent-execution.md` + `kanban-governance-policy.md` + IPW governance is consistent and self-sufficient (Wave 2). |
 | T2 | Four-surface reconciliation | RW Step 7 produces deterministic, idempotent reconciliation across task + FBU + kboard + fbuboard for in-scope rows; out-of-scope rows untouched (Wave 3). |
 | T3 | Row transform parity | RW and UKW invocations produce byte-identical canonical output for shared fixtures (Wave 4). |
-| T4 | Live board drift reproduction | Canonical fixtures derived from live `fbuboard.md` snapshot reproduce B1/B2/B3 symptoms, then pass after Wave-4 fix. |
+| T4 | Live board drift reproduction | Canonical fixtures derived from live `kboard.md` snapshot reproduce B1/B2/B3 symptoms, then pass after Wave-4 fix. |
 | T5 | Corpus normalization | One-shot corpus sweep over live boards reduces duplicate tail tokens to zero and synthetic stamps to zero (Wave 4). |
 | T6 | Stage completeness | RW Step 8 fails when a Step-7 output is not staged; passes when all Step-7 outputs are staged (Wave 5). |
 | T7 | Stamp work-evidence | Row mutation without evidence delta does not append a `Last modified` stamp; row mutation with evidence delta does (Wave 6). |
@@ -87,7 +87,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 ### 2.1 Planned test updates
 
 - Extend `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` with:
-  - Live-board snapshot fixtures (pre-Wave-4 `fbuboard.md` slice) to lock outcome parity, not just unit fixtures.
+  - Live-board snapshot fixtures (pre-Wave-4 `kboard.md` slice) to lock outcome parity, not just unit fixtures.
   - Corpus-mode regression with parity assertions across RW/UKW invocations.
   - Stamp evidence regression: row written without evidence -> stamp suppressed.
 - Add new validator scripts:
@@ -106,7 +106,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 4. Wire BR-069 / BR-070 / UXR-009 as gated dependencies (closure deferred to FR-092 sign-off).
 5. Update [`story-15-ipw-governance-and-publication-contract.md`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md) checklist.
 6. Update [`kboard.md`](../project-management/kanban/kboard.md) (add T07 row; mark T02/T05/T06 SUPERSEDED in active sections).
-7. Update [`fbuboard.md`](../project-management/kanban/fbuboard.md) (add FR-092 row; mark FR-091/FR-090/FR-084 SUPERSEDED).
+7. Update [`kboard.md`](../project-management/kanban/kboard.md) (add FR-092 row; mark FR-091/FR-090/FR-084 SUPERSEDED).
 
 ### Wave 1 — Predecessor closure verification (Bucket D)
 
@@ -133,8 +133,8 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 
 1. Audit invocation paths of `apply_canonical_row_transform_pipeline(...)` in `update_kanban_docs.py` to identify why it does not execute on the full corpus during RW Step 7.
 2. Add corpus-mode invocation flag (e.g. `--corpus-canonical`) and wire RW Step 7 to invoke it on every release.
-3. Run corpus sweep on live `kboard.md` + `fbuboard.md`; emit a normalization diff to evidence under `docs/changelog-and-release-notes/changelog-archive/`.
-4. Add real-board fixtures (snapshot of pre-fix `fbuboard.md`) into regression suite to lock outcome parity (not just unit fixtures).
+3. Run corpus sweep on live `kboard.md` + `kboard.md`; emit a normalization diff to evidence under `docs/changelog-and-release-notes/changelog-archive/`.
+4. Add real-board fixtures (snapshot of pre-fix `kboard.md`) into regression suite to lock outcome parity (not just unit fixtures).
 
 ### Wave 5 — Stage completeness + audit trail (BR-070 + FR-091-NF2)
 
@@ -163,7 +163,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 ### Wave 8 — Sign-off
 
 1. End-to-end RW dry-run on a known-affected slice.
-2. Live `kboard.md` + `fbuboard.md` proof: zero duplicate tails, zero synthetic stamp churn, full four-surface parity.
+2. Live `kboard.md` + `kboard.md` proof: zero duplicate tails, zero synthetic stamp churn, full four-surface parity.
 3. Run `RW E2:S15:T07 --art` per wave, with terminal RW closing the program.
 4. Close FR-092; close T02 / T05 / T06 as SUPERSEDED; close BR-069 / BR-070 / UXR-009 if their ACs prove satisfied; otherwise keep open with explicit residual notes.
 
@@ -193,7 +193,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 | FR-076 (D6) | COMPLETE v0.6.7.110+1 | UKW fbuboard scope + concurrency operational; concurrency contract retained | Predecessor-of-FR-092 banner applied; original closure retained | No drift; outcome retained |
 | UXR-006 (D7) | ACCEPTED w/ AC4 optional | Last-modified UTC stamp surface convention live on boards; forensic semantics not yet enforced (work-evidence gate) | Predecessor-of-FR-092 banner applied; AC4 residual surfaced via UXR-009 | Yes -> stamp evidence (UXR-009 + Wave 6) |
 | FR-089 (D8) | IMPLEMENTED v0.2.15.3+2 | Duplicate-footer dual-agreement validation/reconciliation in place; live boards still show multiplied tail tokens (B2) | Predecessor reference retained on Story 015 checklist; B2 drift captured | Yes -> B2 (Wave 4) |
-| BR-042 (D9) | NEW | Subsumed by FR-090 (architecture) and BR-062 (active-row hygiene fix v0.2.1.11+2) | **CLOSED as duplicate (2026-04-27)**; recorded in fbu-completed.md row v0.2.15.4+5; FR-092 Wave 1 closure | N/A (duplicate) |
+| BR-042 (D9) | NEW | Subsumed by FR-090 (architecture) and BR-062 (active-row hygiene fix v0.2.1.11+2) | **CLOSED as duplicate (2026-04-27)**; recorded in intake-completed.md row v0.2.15.4+5; FR-092 Wave 1 closure | N/A (duplicate) |
 
 ---
 
@@ -202,7 +202,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 | Artifact | Change | Status |
 | ---- | ---- | ---- |
 | [`update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) | Added `FourSurfaceReport` + `SurfaceReport` dataclasses; `_classify_change_to_surface`, `discover_release_scope_task_doc`, `discover_release_scope_fbu_docs`, `build_four_surface_report`, `write_four_surface_report`. Wired emission into `main()` after Step 7 work; added `--four-surface-report` and `--invocation-context` CLI flags. Default report destination: `docs/changelog-and-release-notes/changelog-archive/four-surface-reports/`. | DONE |
-| [`test_update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py) | Added Test 4.18 (report classifies changes + resolves task/FBU/kboard/fbuboard paths) and Test 4.19 (JSON+Markdown persistence). | DONE / GREEN |
+| [`test_update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py) | Added Test 4.18 (report classifies changes + resolves task/FBU/kboard paths) and Test 4.19 (JSON+Markdown persistence). | DONE / GREEN |
 
 **Wave 3 contract assertions (FR-084 absorbed):**
 
@@ -231,11 +231,11 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 
 | Artifact | Change | Status |
 | ---- | ---- | ---- |
-| [`update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) | Broadened `_normalize_traceability_segments_for_row` separator class from `\|` to `[-\|]` so duplicate inline `[FBU](url)` and `[Task](url)` segments preceded by hyphens (body-inline drift) are removed alongside pipe-separated tail duplicates. Added `run_corpus_canonical_sweep(...)` and `--corpus-canonical` CLI flag for explicit full-corpus normalization across `kboard.md`, `fbuboard.md`, `kanban-board.md`, `fr-br-uxr-board.md`. | DONE |
+| [`update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) | Broadened `_normalize_traceability_segments_for_row` separator class from `\|` to `[-\|]` so duplicate inline `[FBU](url)` and `[Task](url)` segments preceded by hyphens (body-inline drift) are removed alongside pipe-separated tail duplicates. Added `run_corpus_canonical_sweep(...)` and `--corpus-canonical` CLI flag for explicit full-corpus normalization across `kboard.md`, `fr-br-uxr-board.md`. | DONE |
 | [`test_update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py) | Added Test 4.20 (live-board pre-sweep fixture; reproduces B1; asserts zero duplicates after sweep; asserts second sweep is idempotent fixed point). | DONE / GREEN |
 | [`fixtures/fr092_wave4/fbuboard_pre_corpus_sweep.md`](../../packages/frameworks/workflow-mgt/scripts/fixtures/fr092_wave4/fbuboard_pre_corpus_sweep.md) | Real-board snapshot containing the B1 duplicate-link pattern; locks regression coverage against actual live drift, not synthetic unit fixtures. | DONE |
 | Live `kboard.md` (corpus sweep) | 13 rows changed by canonical pipeline; second pass reports `clean (idempotent)`. | DONE |
-| Live `fbuboard.md` (corpus sweep) | 42 rows changed; `byte_size_before=33,578` -> `byte_size_after=30,261`; second pass reports `clean (idempotent)`. | DONE |
+| Live `kboard.md` (corpus sweep) | 42 rows changed; `byte_size_before=33,578` -> `byte_size_after=30,261`; second pass reports `clean (idempotent)`. | DONE |
 | [`fr092-wave4-corpus-sweep-evidence.md`](../changelog-and-release-notes/changelog-archive/four-surface-reports/fr092-wave4-corpus-sweep-evidence.md) | Full evidence note: pre-sweep symptoms, root cause, sweep outcome, idempotency proof, forensic stamp safety, regression coverage, Bucket-B sign-off matrix. | DONE |
 
 **Wave 4 contract assertions (FR-090 absorbed + B1-B4 closed):**
@@ -274,7 +274,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 | [`update_kanban_docs.py`](../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) | Added module-level `EVIDENCE_MODE_WORK_AUTHORITATIVE`, `EVIDENCE_MODE_NON_SUBSTANTIVE`, `EVIDENCE_MODE_GATED` constants and `VALID_EVIDENCE_MODES` set. Plumbed `evidence_mode` + `evidence_provider` parameters through `enforce_moscow_row_timestamps_with_stats`, `apply_canonical_row_transform_pipeline`, and `run_corpus_canonical_sweep`. Added `_row_has_substantive_evidence` helper. Added counters `stamps_appended_with_evidence`, `stamps_skipped_no_evidence`, `stamps_preserved_existing`, `skipped_no_evidence_rows` to the timestamp report. `run_corpus_canonical_sweep` defaults to `non_substantive` to eliminate synthetic stamp churn from board-hygiene passes. `FourSurfaceReport` extended with `stamp_evidence` field; `as_dict()` summary surfaces `stamps_appended_with_evidence` / `stamps_skipped_no_evidence` / `stamps_preserved_existing`; `to_markdown()` adds a "Forensic stamp evidence (UXR-009 / FR-092 Wave 6)" section. `build_four_surface_report(...)` accepts the optional `stamp_evidence_aggregate` argument. | DONE |
 | [`test_stamp_evidence_gate.py`](../../packages/frameworks/workflow-mgt/scripts/test_stamp_evidence_gate.py) | New 7-case suite: (1) `work_authoritative` appends missing stamps; (2) `non_substantive` never appends, records `skipped_no_evidence_rows`; (3) `gated` requires positive provider response per row; (4) `gated` without provider defaults to deny (conservative); (5) existing stamps preserved verbatim across all modes; (6) invalid mode raises `ValueError`; (7) `run_corpus_canonical_sweep` defaults to `non_substantive` and produces 0 synthetic stamps on a fresh board. | DONE / 7/7 GREEN |
 | [`kanban-governance-policy.md`](../../packages/frameworks/kanban/policies/kanban-governance-policy.md) | Timestamp-governance section extended with: (a) "Evidence modes (FR-092 Wave 6 implementation)" describing `work_authoritative`, `non_substantive`, `gated`; (b) "Audit counters (FR-092 Wave 6)" listing the three counters and their flow into the Wave 7 release-readiness gate. | DONE |
-| Live corpus dry-run (UXR-009 mode) | `run_corpus_canonical_sweep(... evidence_mode=non_substantive)` against current `kboard.md` / `fbuboard.md` / `kanban-board.md` / `fr-br-uxr-board.md` reports `stamps_appended_with_evidence=0`, `stamps_skipped_no_evidence=0`, `stamps_preserved_existing=109`, all boards `clean (idempotent)`. Wave 4 corpus baseline holds; Wave 6 forensic safety verified live. | DONE |
+| Live corpus dry-run (UXR-009 mode) | `run_corpus_canonical_sweep(... evidence_mode=non_substantive)` against current `kboard.md` / `kboard.md` / `fr-br-uxr-board.md` reports `stamps_appended_with_evidence=0`, `stamps_skipped_no_evidence=0`, `stamps_preserved_existing=109`, all boards `clean (idempotent)`. Wave 4 corpus baseline holds; Wave 6 forensic safety verified live. | DONE |
 
 **Wave 6 contract assertions (UXR-009 absorbed):**
 
@@ -318,8 +318,8 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 | Board | rows_changed | duplicate_footer_rows | stamps_appended_missing |
 | ---- | ---- | ---- | ---- |
 | `kboard.md` | 0 | 0 | 0 |
-| `fbuboard.md` | 0 | 0 | 0 |
-| `kanban-board.md` | 0 | 0 | 0 |
+| `kboard.md` | 0 | 0 | 0 |
+| `kboard.md` | 0 | 0 | 0 |
 | `fr-br-uxr-board.md` | 0 | 0 | 0 |
 
 All four active boards are **byte-stable** under the canonical row transform pipeline. Wave 4 normalization is structurally idempotent.
@@ -364,7 +364,7 @@ All four active boards are **byte-stable** under the canonical row transform pip
 
 ### Residual + handoff
 
-- **Live RW E2:S15:T07 --art:** Will (a) run `update_kanban_docs.py` (RW Step 7) which writes `kboard.md` / `fbuboard.md` rows for T07 + FR-092 with `evidence_mode=work_authoritative`, then (b) `git add -A` (Step 8), then (c) the per-domain validators + the FR-092 Wave 7 release-readiness gate (Step 10 — at this point Gate 5 will pass because Step 8 ran), then (d) commit (Step 11). The release-readiness gate **must** exit 0 at Step 10 for the release to proceed.
+- **Live RW E2:S15:T07 --art:** Will (a) run `update_kanban_docs.py` (RW Step 7) which writes `kboard.md` rows for T07 + FR-092 with `evidence_mode=work_authoritative`, then (b) `git add -A` (Step 8), then (c) the per-domain validators + the FR-092 Wave 7 release-readiness gate (Step 10 — at this point Gate 5 will pass because Step 8 ran), then (d) commit (Step 11). The release-readiness gate **must** exit 0 at Step 10 for the release to proceed.
 - **BR-069 / BR-070 / UXR-009:** ACs proved satisfied above; the actual `Status: COMPLETE` flip happens at the live RW. The gating notes in those documents now reflect Wave 8 sign-off.
 - **Pre-existing test failures** (`test_update_kanban_docs.py` 2.2 / 3.1) are unrelated to FR-092 scope and remain captured on the `dev` branch backlog as pre-existing.
 
@@ -376,7 +376,7 @@ All four active boards are **byte-stable** under the canonical row transform pip
 
 | Drift ID | Symptom | Hypothesized cause | Wave-4 verification |
 | ---- | ---- | ---- | ---- |
-| B1 | Live `fbuboard.md` rows still have duplicated tail tokens after T05 sign-off | `apply_canonical_row_transform_pipeline` not invoked over corpus during RW Step 7 | Snapshot live fbuboard slice, reproduce in test_update_kanban_docs.py, fix invocation, verify zero duplicates |
+| B1 | Live `kboard.md` rows still have duplicated tail tokens after T05 sign-off | `apply_canonical_row_transform_pipeline` not invoked over corpus during RW Step 7 | Snapshot live fbuboard slice, reproduce in test_update_kanban_docs.py, fix invocation, verify zero duplicates |
 | B2 | FR-089 multiplication hardening did not eliminate observed multiplication | Hardening targets validation/reconciliation, not corpus rewrite | Reproduce; route through Wave 4 corpus mode |
 | B3 | BR-069 narrowed but residual tail repetition persists | Residual closure pinned on FR-090; not yet executed on corpus | Run Wave 4 sweep; verify BR-069 final AC |
 | B4 | RW Step 7 only metadata-touched rows are normalized | Step 7 scoped reconciliation does not invoke corpus-mode normalization | Add `--corpus-canonical`; wire into Step 7 |
