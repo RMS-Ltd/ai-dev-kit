@@ -11,9 +11,9 @@ housekeeping_policy: keep
 **Bug ID:** BR-090  
 **Priority:** HIGH  
 **Severity:** HIGH — **`Docusaurus site build`** and **`Docusaurus deploy to GitHub Pages`** fail on every qualifying push to `main`; ~97+ failed build jobs since May 2026.  
-**Status:** IN PROGRESS — Wave 2 fix attempted **v0.5.9.13+2** (local `npm run build` green; pytest T8–T11 green); **post-merge Actions verification pending** on `main`
+**Status:** FIXED — Wave 2 **v0.5.9.13+3**; Actions **26992867601** (`dev` workflow_dispatch) + **26992999149** (`main` PR #26 merge: build + deploy green)
 **Created:** 2026-06-05
-**Last updated:** 2026-06-05 (RW E05:S09:T13 Wave 2)
+**Last updated:** 2026-06-05 (post-merge CI verification)
 **Version:** v0.5.9.13+3  
 **Implementing Task:** [E05:S09:T13](../epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)  
 **Related:** [FR-069](FR-069-docusaurus-ci-build-gate.md) · [FR-070](FR-070-docusaurus-deployment-and-hosting.md) · [BR-068](BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) (prior build class; distinct from this regression)
@@ -78,7 +78,7 @@ Representative run: merge `dev` → `main` (`Merge branch 'dev' into main`).
 - [x] **`@docusaurus/faster`** added to `portal/package.json` (version compatible with Docusaurus 3.10.x) — Wave 1 **v0.5.9.13+1**.
 - [x] **`portal/package.json`** Docusaurus packages aligned with **`portal/package-lock.json`** (3.10.1) — Wave 1.
 - [x] **`cd portal && npm ci && npm run build`** exits **0** locally — Wave 2 **v0.5.9.13+2** (BR-068 Strategy A link remediation).
-- [ ] **`docusaurus-build.yml`** green on **`main`** (build + deploy) — pending post-merge verification.
+- [x] **`docusaurus-build.yml`** green on **`main`** (build + deploy) — Actions **26992999149** (PR #26 merge).
 - [x] Contributor note in `portal/README.md` if faster / v4 future flag has new install requirements — Wave 1.
 
 ---
