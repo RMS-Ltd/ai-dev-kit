@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Versioning → Release Workflow Integration Validation
 
+**Task ID:** E04:S03:T03  
 **Task:** E04:S03:T03 – Validate Versioning → RW integration in dev-kit  
 **Date:** 2025-12-02  
 **Author:** AI Agent (Auto)  

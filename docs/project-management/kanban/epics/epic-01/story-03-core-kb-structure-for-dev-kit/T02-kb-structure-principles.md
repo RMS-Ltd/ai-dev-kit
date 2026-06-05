@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # KB Structure Principles and Conventions
 
+**Task ID:** E01:S03:T02  
 **Task:** E01:S03:T02 – Document KB structure principles and conventions  
 **Date:** 2025-12-02  
 **Status:** ✅ COMPLETE

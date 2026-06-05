@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 008 – Update Kanban Docs to Txx Standard
 
+**Task ID:** E02:S02:T08  
 **Task:** E02:S02:T08  
 **Status:** TODO  
 **Priority:** MEDIUM  

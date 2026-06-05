@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # FR/BR Intake Process Analysis Report
 
+**Task ID:** E04:S02:T01  
 **Task:** E04:S02:T01 – Analyze current FR/BR intake process and requirements  
 **Date:** 2025-12-02  
 **Author:** AI Agent (Auto)  

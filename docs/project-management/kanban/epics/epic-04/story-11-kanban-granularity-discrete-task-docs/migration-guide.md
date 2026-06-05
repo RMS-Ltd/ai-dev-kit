@@ -85,17 +85,15 @@ Releasability failures on `TODO` tasks are expected; discovery failures (no task
 
 ---
 
-## 5. Documented exceptions (grandfathered)
+## 5. Grandfathered hygiene (completed 2026-06-05)
 
-These do **not** block structural migration completeness. Optional backfill is maintainer hygiene.
+| Item | Resolution |
+|------|------------|
+| Legacy `**Task:**` without `**Task ID:**` | **40 docs** normalized with `**Task ID:**` lines (RW Step 1c discovery) |
+| E01:S01 checklist-only | **T01–T03** backfilled under `epic-01/story-01-vibe-dev-kit-kanban-and-versioning/` |
+| Scope placeholders | Remaining `[To be filled during migration]` — fill during task implementation |
 
-| Exception | Detail | Remediation |
-|-----------|--------|-------------|
-| Legacy `**Task:**` header | Pre-migration discrete docs use `**Task:** E:S:T` instead of `**Task ID:**` | Add `**Task ID:**` line above Scope when editing; bulk normalize optional |
-| E01:S01 checklist-only | Bootstrap story has checklist refs without discrete `T*.md` | Create discrete docs if RW must resolve every historical E01:S01 task |
-| Scope placeholders | Auto-generated docs may retain `[To be filled during migration]` | Fill during task implementation |
-
-Full panel: [completion report §4](migration-completion-report.md#4-documented-exceptions).
+Full history: [completion report §4](migration-completion-report.md#4-documented-exceptions).
 
 ---
 

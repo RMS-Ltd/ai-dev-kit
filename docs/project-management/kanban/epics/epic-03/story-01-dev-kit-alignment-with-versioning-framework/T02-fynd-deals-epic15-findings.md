@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 2 Findings: fynd.deals Epic 15 Versioning Patterns
 
+**Task ID:** E03:S01:T02  
 **Task:** E03:S01:T02 – Ingest versioning findings from fynd.deals Epic 15 work  
 **Created:** 2025-12-02  
 **Status:** Complete  

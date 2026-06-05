@@ -73,7 +73,7 @@ Broken task links: 0
 | E03:S02:T01 | `story-02-…/T01-core-versioning-scenarios.md` | Legacy `**Task:**` header (see §4.1) |
 | E01:S01:T01 | — | No discrete file; checklist-only legacy story (see §4.2) |
 
-**Discovery panel:** **10/12** samples have resolvable discrete paths; **2** documented exceptions.
+**Discovery panel:** **12/12** samples resolvable after grandfathered hygiene (2026-06-05).
 
 ### 3.2 `validate_rw_task_complete.py` (releasability guard)
 
@@ -83,13 +83,13 @@ Sample run on the same panel: **4/11** exit 0. Non-zero results are **expected**
 
 ## 4. Documented exceptions
 
-### 4.1 Legacy Task header format (`**Task:**` vs `**Task ID:**`)
+### 4.1 Legacy Task header format (`**Task:**` vs `**Task ID:**`) — **RESOLVED 2026-06-05**
 
-Some pre-migration discrete docs (e.g. E03:S02:T01 `T01-core-versioning-scenarios.md`) use `**Task:** E03:S02:T01 – …` without `**Task ID:**`. RW Step 1c discovery prefers `**Task ID:**` (Wave 1 `generate_task_doc.py` output). **Remediation:** optional header normalization in Wave 5 or leave as grandfathered legacy.
+40 pre-migration discrete docs received `**Task ID:**` lines (retaining existing `**Task:**` title lines). RW Step 1c discovery now resolves all legacy task-doc paths in the kanban tree.
 
-### 4.2 Epic 1 Story 1 — checklist-only tasks
+### 4.2 Epic 1 Story 1 — checklist-only tasks — **RESOLVED 2026-06-05**
 
-`story-01-vibe-dev-kit-kanban-and-versioning.md` uses early repo bootstrap structure; tasks (e.g. E01:S01:T01) are referenced from `epic-01.md` checklist without discrete `T*.md` files. **Not in Wave 0 embedded count** for this story path. **Remediation:** optional discrete doc backfill if RW Step 1 must resolve every historical E01:S01 task.
+Backfilled discrete docs for **E01:S01:T01–T03** under `story-01-vibe-dev-kit-kanban-and-versioning/`; story and epic checklists wired with links. `validate_rw_task_complete.py` locates E01:S01:T01.
 
 ### 4.3 Scope placeholders in generated docs
 
@@ -145,7 +145,7 @@ Wave 2+ `generate_task_doc.py` output may retain `[To be filled during migration
 ## 8. Remaining work (closure)
 
 - [x] **Wave 5:** Migration plan APPROVED v1.1.0; script path links §3.0; [migration-guide.md](migration-guide.md); FR-016 implementation notes synced
-- [ ] **Optional (deferred):** Legacy `**Task:**` → `**Task ID:**` bulk normalization; E01:S01 discrete backfill
+- [x] **Grandfathered hygiene (2026-06-05):** 40 legacy `**Task ID:**` headers added; E01:S01:T01–T03 backfilled
 - [x] **Closure RW:** v0.4.11.7+16 — E04:S11:T07 **COMPLETE**
 
 ---

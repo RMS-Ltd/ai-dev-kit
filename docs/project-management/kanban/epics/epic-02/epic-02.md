@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-05 (v0.2.16.4+31 – Kanban documentation setup)
+**Last updated:** 2026-06-05 (v0.2.16.4+32 – Kanban documentation setup)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -53,19 +53,19 @@ housekeeping_policy: keep
   - Story: [`story-08-harden-release-workflow-reliability.md`](story-08-harden-release-workflow-reliability.md)
   - Tasks: T00 ✅ COMPLETE, T01 ✅ COMPLETE, T02 ✅ COMPLETE, T03 ✅ COMPLETE, T04 ✅ COMPLETE, T05 ✅ COMPLETE, T06 ✅ COMPLETE, T07 ✅ COMPLETE (FR-015: Harden Kanban docs update step in RW)
 
-- [x] **E2:S09 – Kanban Granularity & Discrete Task Docs (RW Integration)** - COMPLETE ✅ (v0.2.9.6+1 – Story complete: All tasks finished, RW integration complete)
+- [x] **E2:S09 – Kanban Granularity & Discrete Task Docs (RW Integration)** - COMPLETE ✅ (v0.2.9.6+1 – RW integration; E04:S11:T07 structural migration COMPLETE)
   - Story: [`story-09-kanban-granularity-discrete-task-docs.md`](story-09-kanban-granularity-discrete-task-docs.md)
-  - Tasks: T00-T06 ✅ COMPLETE (FR-016: RW Step 1, validators, agent execution guide, documentation, dependency wiring)
-  - **Coordination:** Coordinates with E4:S11 (Kanban policy and templates)
+  - Tasks: T00–T06 ✅ COMPLETE (FR-016 RW Step 1, validators, agent guide, docs, wiring)
+  - **Coordination:** E4:S11 Kanban policy/templates/migration — **COMPLETE** (v0.4.11.7+16)
 
 - [x] **E2:S10 – Versioning Policy Hardening — Doc-Init Build (+0)** - COMPLETE ✅ (v0.2.10.7+1 – All tasks complete: Doc-init policy, RW, validators, docs, migration guide)
   - Story: [`story-10-doc-init-build-zero-for-new-est.md`](story-10-doc-init-build-zero-for-new-est.md)
   - Tasks: T00 ✅ COMPLETE, T01 ✅ COMPLETE (v0.2.10.1+0), T02 ✅ COMPLETE (v0.2.10.2+1), T03 ✅ COMPLETE (v0.2.10.3+1), T04 ✅ COMPLETE (v0.2.10.4+1), T05 ✅ COMPLETE (v0.2.10.5+1), T06 ✅ COMPLETE (v0.2.10.6+1), T07 ✅ COMPLETE (v0.2.10.7+1)
   - **Dependency:** Unblocked (FR-016 complete via E2:S09)
 
-- [x] **E2:S11 – Intake Workflow Automation** - COMPLETE ✅ (v0.2.11.11+1 – All tasks complete: Intake workflow automation, CHANGELOG protection, and ordering fixes)
+- [x] **E2:S11 – Intake Workflow Automation** - COMPLETE ✅ (v0.2.11.14+2 – T00–T14 complete including BR-051/BR-052/BR-053 hardening)
   - Story: [`story-11-intake-workflow-automation.md`](story-11-intake-workflow-automation.md)
-  - Tasks: T00 ✅ COMPLETE, T01 ✅ COMPLETE (v0.2.11.1+2), T02 ✅ COMPLETE (v0.2.11.2+1), T03 ✅ COMPLETE (v0.2.11.3+1), T04 ✅ COMPLETE (v0.2.11.4+1), T05 ✅ COMPLETE (v0.2.11.5+1), T06 ✅ COMPLETE (v0.2.11.6+1), T07 ✅ COMPLETE (v0.2.11.7+1), T08 ✅ COMPLETE (v0.2.11.8+1), T09 ✅ COMPLETE (v0.2.11.9+3), T10 ✅ COMPLETE (v0.2.11.10+1), T11 ✅ COMPLETE (v0.2.11.11+1 – CHANGELOG ordering violations fixed), T12 🔄 IN PROGRESS (v0.2.11.12+0 – GitHub Actions platform bug resolution)
+  - Tasks: T00–T14 ✅ COMPLETE (T12 workaround v0.2.11.12+2; T13 BR-051; T14 BR-052)
 
 - [x] **E2:S12 – RW Step 17: Housekeeping** - ✅ COMPLETE (v0.2.12.1+1 – All tasks complete: Step 17 added to RW)
   - Story: [`story-12-rw-step-17-housekeeping.md`](story-12-rw-step-17-housekeeping.md)
@@ -78,11 +78,11 @@ housekeeping_policy: keep
 - [ ] **E2:S14 – Workflow Management Package Installation Evaluation** - IN PROGRESS (v0.2.1.9+2)
   - Story: [`story-14-workflow-management-package-installation-evaluation.md`](story-14-workflow-management-package-installation-evaluation.md)
 
-- [ ] **E2:S15 – IPW Governance and Publication Contract** - IN PROGRESS (v0.2.15.7+1)
+- [x] **E2:S15 – IPW Governance and Publication Contract** - COMPLETE ✅ (v0.2.15.8+3 – FR-092 program + FR-097 stamp authority; T02/T05/T06 superseded by T07)
   - Story: [`story-15-ipw-governance-and-publication-contract.md`](story-15-ipw-governance-and-publication-contract.md)
-  - Tasks: T01 ✅ COMPLETE — [BR-066](../../fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
+  - Tasks: T01, T03, T04, T07, T08 ✅ COMPLETE; T02/T05/T06 superseded → T07
 
-- [ ] **E2:S16 – Perpetual Ongoing Workflow Operations** - IN PROGRESS (v0.2.16.4+31)
+- [ ] **E2:S16 – Perpetual Ongoing Workflow Operations** - IN PROGRESS (v0.2.16.4+32)
   - Story: [`story-16-perpetual-ongoing-workflow-operations.md`](story-16-perpetual-ongoing-workflow-operations.md)
   - Tasks: T01 ✅ COMPLETE; T11 ✅ COMPLETE (FR-096) — [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 

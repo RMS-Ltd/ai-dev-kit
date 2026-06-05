@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Epic 2, Story 9: Kanban Granularity & Discrete Task Docs (3-Tier Structure)
 
-**Status:** TODO  
+**Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Last updated:** 2025-12-11 (v0.2.9.6+0 – Story complete: All tasks finished, RW integration complete)  
+**Last updated:** 2026-06-05 (story closure — RW integration complete; structural migration via E04:S11:T07)  
 **Estimated Effort:** 1 week  
-**Started:** [TBD]  
-**Completed:** [TBD]  
-**Version:** v0.2.9.6+0  
+**Started:** 2025-12-11  
+**Completed:** 2026-06-05 (reconciled; T00–T06 shipped v0.2.9.6+1)  
+**Version:** v0.2.9.6+1  
 **Code:** E2S09
 
 ---
@@ -36,7 +36,7 @@ housekeeping_policy: keep
 - [x] **E02:S09:T06 – Dependency Wiring Cross-References** ✅ COMPLETE (v0.2.9.6+1)
   - Task: [`T06-dependency-wiring-cross-references`](story-09-kanban-granularity-discrete-task-docs/T06-dependency-wiring-cross-references.md)
 
-> **Coordination:** Kanban-specific work (policy, templates) is handled in **E4:S11**. This story focuses on RW-specific integration.
+> **Coordination:** Kanban-specific work (policy, templates, migration) is handled in **E4:S11** (E04:S11:T07 **COMPLETE** v0.4.11.7+16). This story focuses on RW-specific integration.
 
 > **Format:** `E2:S09:Txx` (Epic 2, Story 9, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.2.9.1+1)`)  
@@ -51,11 +51,11 @@ Coordinate RW-specific integration for **3-tier granularity** (Epic → Story �
 
 ## Goals
 
-- [ ] Coordinate work decomposition between Epic 2 (RW) and Epic 4 (Kanban)
-- [ ] Update RW Step 1 to locate and validate Task doc presence
-- [ ] Enhance validators to check Epic/Story/Task alignment and Task doc presence
-- [ ] Update RW agent execution guide with Task doc requirements
-- [ ] Ensure proper sequencing: Kanban policy/templates (E4:S11) → RW integration (E2:S09)
+- [x] Coordinate work decomposition between Epic 2 (RW) and Epic 4 (Kanban)
+- [x] Update RW Step 1 to locate and validate Task doc presence
+- [x] Enhance validators to check Epic/Story/Task alignment and Task doc presence
+- [x] Update RW agent execution guide with Task doc requirements
+- [x] Ensure proper sequencing: Kanban policy/templates (E4:S11) → RW integration (E2:S09)
 
 ---
 

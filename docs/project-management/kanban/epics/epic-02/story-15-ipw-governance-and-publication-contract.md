@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Story 015 – IPW Governance and Publication Contract
 
-**Status:** IN PROGRESS (T08 — FR-097 board stamp authority; BR-069 / UXR-009 reopened)
+**Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-14  
-**Completed:** 2026-04-27 (T01–T07); reopened 2026-05-20 for stamp forensic recovery  
-**Last updated:** 2026-06-03 (E02:S15:T01 Phase 3 released **v0.2.15.1+3** — BR-066 RESOLVED)
-**Version:** v0.2.15.7+9
+**Completed:** 2026-06-03 (T08 FR-097 shipped **v0.2.15.8+3**; FR-092 program complete)  
+**Last updated:** 2026-06-05 (story closure — all active tasks T01/T03/T04/T07/T08 COMPLETE; T02/T05/T06 superseded by T07)
+**Version:** v0.2.15.8+3
 **Code:** E2S15
 
 ---

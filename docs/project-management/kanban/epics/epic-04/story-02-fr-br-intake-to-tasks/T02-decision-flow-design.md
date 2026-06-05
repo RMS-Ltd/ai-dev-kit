@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # FR/BR → Task → Story → Epic Decision Flow Design
 
+**Task ID:** E04:S02:T02  
 **Task:** E04:S02:T02 – Design FR/BR → Task → Story → Epic decision flow  
 **Date:** 2025-12-02  
 **Author:** AI Agent (Auto)  

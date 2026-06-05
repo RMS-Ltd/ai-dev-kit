@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Consumption Patterns for Framework Packages
 
+**Task ID:** E01:S02:T04  
 **Task:** E01:S02:T04 – Document consumption patterns for each framework  
 **Date:** 2025-12-02  
 **Status:** ✅ COMPLETE

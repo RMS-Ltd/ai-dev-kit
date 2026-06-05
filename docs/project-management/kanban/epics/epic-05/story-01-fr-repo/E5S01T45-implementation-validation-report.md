@@ -1,5 +1,6 @@
 # E05:S01:T45 Implementation Validation Report
 
+**Task ID:** E05:S01:T45  
 **Task:** E05:S01:T45 - ADR-002 Task-Touch Derived Mapping (Kanban → SemVer)  
 **Status:** ✅ VALIDATION COMPLETE  
 **Date:** 2026-03-09  

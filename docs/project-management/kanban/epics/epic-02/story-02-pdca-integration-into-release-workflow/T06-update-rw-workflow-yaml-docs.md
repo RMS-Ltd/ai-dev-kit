@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 006 – Update RW workflow YAML and documentation
 
+**Task ID:** E02:S02:T06  
 **Task:** E02:S02:T06  
 **Status:** TODO  
 **Priority:** HIGH  

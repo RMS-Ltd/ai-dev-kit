@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Workflow Taxonomy
 
+**Task ID:** E02:S03:T01  
 **Task:** E02:S03:T01 – Analyze workflow types and create workflow taxonomy  
 **Status:** IN PROGRESS  
 **Created:** 2025-12-03  

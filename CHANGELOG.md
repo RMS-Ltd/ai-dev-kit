@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.11.7+16] - 05-06-26
+## [0.2.16.4+32] - 05-06-26
 
-E04:S11:T07 — **Closure:** FR-016 migration COMPLETE; Wave 5 migration guide + plan v1.1.0. SemVer **v0.4.932+16**.
+E02:S16:T04 — **Kanban hygiene (RW -k):** FR-016 Task ID headers + E01:S01 backfill; E02:S09/S11/S15 story closure. SemVer **v0.4.933+32**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+16.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+32.md)
 
 ---
 

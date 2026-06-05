@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # KB Structure Migration Guide
 
+**Task ID:** E01:S03:T03  
 **Task:** E01:S03:T03 – Create KB structure migration guide  
 **Date:** 2025-12-02  
 **Status:** ✅ COMPLETE  

@@ -11,7 +11,16 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Owner:** RMS  
 **Repo:** `ai-dev-kit`  
-**Version:** (TBD – dev-kit schema to be defined for this repo)  
+**Version:** v0.1.1.1+1  
+**Last updated:** 2026-06-05 (E01:S01 discrete task doc backfill)
+
+---
+
+## Task Checklist
+
+- [x] **E01:S01:T01 – Create `dev-kit-versioning-policy.md`** — ✅ COMPLETE (v0.1.1.1+1) — [Task](story-01-vibe-dev-kit-kanban-and-versioning/T01-create-dev-kit-versioning-policy.md)
+- [x] **E01:S01:T02 – Align `version.py` and CHANGELOG with dev-kit policy** — ✅ COMPLETE (v0.1.1.1+1) — [Task](story-01-vibe-dev-kit-kanban-and-versioning/T02-align-version-py-and-changelog.md)
+- [x] **E01:S01:T03 – Update RW docs to distinguish dev-kit vs external examples** — ✅ COMPLETE — [Task](story-01-vibe-dev-kit-kanban-and-versioning/T03-update-rw-docs-dev-kit-vs-external.md)
 
 ---
 

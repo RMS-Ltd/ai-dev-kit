@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 005 – Create PDCA templates and examples
 
+**Task ID:** E02:S02:T05  
 **Task:** E02:S02:T05  
 **Status:** TODO  
 **Priority:** MEDIUM  

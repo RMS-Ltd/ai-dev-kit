@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 001 – Add CHECK Phase (Step 12: Post-Commit Verification & Reflection)
 
+**Task ID:** E02:S02:T01  
 **Task:** E02:S02:T01  
 **Status:** TODO  
 **Priority:** HIGH  

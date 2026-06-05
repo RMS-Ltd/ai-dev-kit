@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** ✅ COMPLETE  
 **Priority:** HIGH  
-**Last updated:** 2026-03-30 (UKW — T12 off MoSCOW; archived to kanban-completed; * = workaround)  
+**Last updated:** 2026-06-05 (story closure reconciliation — T13 checklist typo fixed)  
 **Estimated Effort:** 2+ weeks  
 **Started:** 2025-12-15  
 **Completed:** 2025-12-16 (core story); **T12** completed 2026-03-30 (GitHub Actions intake workaround — see task doc)
@@ -41,7 +41,7 @@ housekeeping_policy: keep
   - Task: [`T12-github-actions-workflow-bug-resolution.md`](story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
   - **Related BR:** [BR-053](../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)
 
-- [x] **E02:S11:T13 ✅ COMPLETE (v0.2.11.13+2) – GitHub Actions workflow spam emails (BR-051)** - TODO — [Task doc](story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
+- [x] **E02:S11:T13 – GitHub Actions workflow spam emails (BR-051)** – ✅ **COMPLETE (v0.2.11.13+2)** — [Task doc](story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
 
 - [x] **E02:S11:T14 – GitHub Actions workflow optimization (BR-052)** – ✅ **COMPLETE (v0.2.11.14+2)** — path filters + pip cache; BR-052 intake scope in disabled template — [Task doc](story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fr-br/BR-052-github-actions-workflow-optimization.md) | [IPP-E02S11T14](../../../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)
 

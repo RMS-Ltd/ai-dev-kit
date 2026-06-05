@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S16:T04": {
+      "allowed": true,
+      "reason": "RW -k v0.2.16.4+32 — kanban hygiene release; host perpetual task row + version anchor"
+    }
+  }
+}

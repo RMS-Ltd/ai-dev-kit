@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # RW → Kanban Integration Validation
 
+**Task ID:** E04:S03:T04  
 **Task:** E04:S03:T04 – Validate RW → Kanban integration in dev-kit  
 **Date:** 2025-12-02  
 **Author:** AI Agent (Auto)  

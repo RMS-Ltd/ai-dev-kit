@@ -8,6 +8,7 @@ housekeeping_policy: keep
 
 # Task 1 Gap Analysis: Dev-Kit Versioning Policy vs Framework Policy
 
+**Task ID:** E03:S01:T01  
 **Task:** E03:S01:T01 – Review dev-kit versioning policy vs framework policy  
 **Created:** 2025-12-02  
 **Status:** Complete  
