@@ -1741,7 +1741,6 @@ def run_corpus_canonical_sweep(
         project_root / "docs/project-management/kanban/kboard.md",
         project_root / "docs/project-management/kanban/fbuboard.md",
         project_root / "docs/project-management/kanban/kanban-board.md",
-        project_root / "docs/project-management/kanban/fr-br-uxr-board.md",
     ]
     if timestamp_value is None:
         timestamp_value = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
@@ -1835,7 +1834,6 @@ def enforce_terminal_timestamps_on_boards(
         project_root / "docs/project-management/kanban/kboard.md",
         project_root / "docs/project-management/kanban/fbuboard.md",
         project_root / "docs/project-management/kanban/kanban-board.md",
-        project_root / "docs/project-management/kanban/fr-br-uxr-board.md",
     ]
     timestamp_now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
     changes: List[str] = []
@@ -1854,7 +1852,7 @@ def enforce_terminal_timestamps_on_boards(
                 pass
         pre_hash = hashlib.sha256(original.encode("utf-8")).hexdigest()
 
-        if board.name in {"fbuboard.md", "fr-br-uxr-board.md"}:
+        if board.name == "fbuboard.md":
             if prune_terminal_active_rows:
                 updated, stats = _cleanup_fbuboard_active_rows(
                     original,
@@ -1894,7 +1892,7 @@ def enforce_terminal_timestamps_on_boards(
             live_hash = hashlib.sha256(live.encode("utf-8")).hexdigest()
             if live_hash != pre_hash:
                 # Re-apply transforms to latest content to avoid stale writes.
-                if board.name in {"fbuboard.md", "fr-br-uxr-board.md"}:
+                if board.name == "fbuboard.md":
                     if prune_terminal_active_rows:
                         updated, stats = _cleanup_fbuboard_active_rows(
                             live,
@@ -2418,7 +2416,7 @@ def _classify_change_to_surface(change: str) -> Optional[str]:
     c = change.lower()
     if "kboard" in c or "kanban-board" in c:
         return "kboard"
-    if "fbuboard" in c or "fr-br-uxr-board" in c:
+    if "fbuboard" in c:
         return "fbuboard"
     if "story" in c and "doc" in c:
         return "story_doc"
@@ -2535,7 +2533,6 @@ def build_four_surface_report(
     fbuboard_path: Optional[Path] = None
     fbuboard_candidates = [
         project_root / "docs/project-management/kanban/fbuboard.md",
-        project_root / "docs/project-management/kanban/fr-br-uxr-board.md",
     ]
     fbuboard_deprecated = False
     for cand in fbuboard_candidates:

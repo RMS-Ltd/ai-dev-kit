@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T12-fbuboard-necessity-investigation-uxr020.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) **(E04:S19:T12)**  
 **Planning for:** [UXR-020 — `fbuboard` necessity after task–FBU wiring](../project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
-**Status:** Approved (user direction **R3** recorded 2026-06-05)
+**Status:** COMPLETE (Waves 1–4 shipped; **v0.4.19.12+4** closure 2026-06-05)
 
 > **IPW:** Produced for E04:S19:T12 after user selected **R3 (full single-board)**. Implementation gated on explicit execution authorization per FR-083.
 
@@ -150,7 +150,9 @@ Release-scope reconciliation outputs:
 | 14 | **Framework templates** + install KB: single `kboard.md` default | Framework pack | 3 |
 | 15 | **`rw-config.yaml` schema:** deprecate `fbuboard` key if present; document | Config | 3 |
 | 16 | **RW Wave 3** framework sync | Release | 3 |
-| **N** | **[MANDATORY]** Reconcile task status to COMPLETE with forensic marker after all waves + user verification | Task doc | 3 |
+| 17 | **Remove** kanban-root legacy `fr-br-uxr-*` alias files; update `kanban/README.md`; drop alias paths from corpus-board validators/scripts | Root hygiene | 4 |
+| 18 | **RW Wave 4** closure — ledger, active-row prune, alias cleanup release | Release | 4 |
+| **N** | **[MANDATORY]** Reconcile task status to COMPLETE with forensic marker after Wave 4 + user verification | Task doc | 4 |
 
 ### 4.1 Files to create or modify (primary)
 
@@ -211,6 +213,7 @@ Release-scope reconciliation outputs:
 | `fbu-structure.md` | **NONE** — remains full inventory (non-MoSCOW) |
 | `fbu-completed.md` | **NONE** — terminal FBU ledger retained |
 | `fbu-open-taskless-queue.md` | **UPDATE** pointer: MoSCOW source → `kboard` |
+| `fr-br-uxr-board.md`, `fr-br-uxr-structure.md`, `fr-br-uxr-open-taskless-queue.md` | **DELETE** from kanban root (Wave 4); historical changelog references retained |
 
 ---
 

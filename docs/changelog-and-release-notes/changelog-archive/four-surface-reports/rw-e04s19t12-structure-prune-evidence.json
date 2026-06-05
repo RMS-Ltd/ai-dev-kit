@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E04:S19:T12": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.4.19.12+4 — terminal task COMPLETE; prune active S-band row to kanban-completed.md ledger"
+    }
+  }
+}

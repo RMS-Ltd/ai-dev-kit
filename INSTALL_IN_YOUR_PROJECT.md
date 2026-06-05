@@ -342,7 +342,7 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 |---------|----------------------|--------|-------------------|---------------|----------------------------|
 | **RW-only** | **R** — `install_release_workflow.py`, `rw-config.yaml`, `.cursorrules` RW section | **O** — set `use_kanban: false` | **Rec** — host `version.py` + schema doc | **O** | Branch safety, changelog format, version bump; FR-060 task token guards **only if** you maintain task docs |
 | **RW + Kanban** | **R** | **R** — host epics or **canonical templates** via `migration` / `canonical_adoption` | **Rec** | **O** | Above + `validate_rw_task_complete.py`, `validate_rw_task_intent.py` when releasing with task docs |
-| **Full stack** | **R** | **R** | **R** — adopt [dev-kit-versioning-policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) or mapped equivalent | **O** | Full RW Step 7 four-surface reconciliation when Kanban + FR/BR paths enabled |
+| **Full stack** | **R** | **R** | **R** — adopt [dev-kit-versioning-policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) or mapped equivalent | **O** | Full RW Step 7 three-surface reconciliation (`kboard` + task + FBU docs; `fbuboard` stub per [ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)) |
 
 **Contract-first wiring:** All paths assume you map ADK contracts to **your** tree. See [RW validators and consumer layout](packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
 

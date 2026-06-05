@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E04:S19:T12** — single-board Wave 3 v0.4.19.12+3)
-**Version:** v0.4.19.12+3
+**Last Updated:** 2026-06-05 (E04:S19:T12 Wave 4 closure — v0.4.19.12+4)
+**Version:** v0.4.19.12+4
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`fbu-completed.md`](fbu-completed.md)).
 
@@ -29,11 +29,11 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E04:S19:T12** – Single-board consolidation — retire `fbuboard` (UXR-020 R3) - 🔄 IN PROGRESS (HIGH, ADR-018 Wave 3 **v0.4.19.12+3** — user verification pending) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) | Last modified: 2026-06-05 21:30 UTC
+*(None.)*
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
-- **E03:S02:T12** – FR-045 / FR-046 / BR-061: Task-touch SemVer — ⏳ WAITING (HIGH, task **v0.3.2.12+4** · FBU verification pending) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [—IPP—](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) | Last modified: 2026-06-04 18:45 UTC
+- **E03:S02:T12** – Task-touch SemVer — ⏳ WAITING (HIGH, task **v0.3.2.12+4** · FBU verification pending) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [—IPP—](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) | Last modified: 2026-06-04 18:45 UTC
 
 - **E05:S09:T14** – BR-093: Docusaurus CI dedup — ⏳ WAITING (MEDIUM, task **v0.5.9.14+2** · pending Actions on `main`) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [—IPP—](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) | Last modified: 2026-06-05 18:56 UTC
 

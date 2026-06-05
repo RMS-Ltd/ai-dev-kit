@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** **DEPRECATED** as active MoSCOW board — **2026-06-05** ([ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md), **v0.4.19.12+1**, [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md))
 
-**Last Updated:** 2026-06-05 (RW **E04:S19:T12** — single-board Wave 1)
+**Last Updated:** 2026-06-05 (RW **E04:S19:T12** — Wave 4 closure **v0.4.19.12+4**)
 
 ---
 

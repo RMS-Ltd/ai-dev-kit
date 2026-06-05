@@ -156,7 +156,6 @@ CORPUS_BOARDS_REL = (
     "docs/project-management/kanban/kboard.md",
     "docs/project-management/kanban/fbuboard.md",
     "docs/project-management/kanban/kanban-board.md",
-    "docs/project-management/kanban/fr-br-uxr-board.md",
 )
 
 # Phrases each governance doc MUST contain (Gate 1). Empty matches mean

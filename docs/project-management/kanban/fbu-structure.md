@@ -11,9 +11,9 @@ housekeeping_policy: keep
 **Last Updated:** 2026-03-31 (pointer: intake execution plan on board — open ∧ taskless, `RW -k`)
 **Version:** v0.7.6.6+1
 
-> **For MoSCOW prioritized FBU items, see:** [`fbuboard.md`](fbuboard.md)  
+> **For MoSCOW prioritized tasks and wired FBUs, see:** [`kboard.md`](kboard.md) (sole active board; [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md))  
 > **For completed FBU items, see:** [`fbu-completed.md`](fbu-completed.md)  
-> **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
+> **For open ∧ taskless intake queue, see:** [`fbu-open-taskless-queue.md`](fbu-open-taskless-queue.md)  
 > **For Epic/Story/Task structure, see:** [`kanban-structure.md`](kanban-structure.md)  
 > **For rules and explanations, see:** [`kanban-board-guide.md`](kanban-board-guide.md)
 
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This document provides **complete listings of all FBU items** in the AI Dev Kit project, organized by type for comprehensive reference. For MoSCOW prioritization, see the main FBU board. For the **operational intake plan** (open ∧ taskless queue, epic branch + **`RW -k`**, hygiene notes), see **Intake plan** on [`fbuboard.md`](fbuboard.md).
+This document provides **complete listings of all FBU items** in the AI Dev Kit project, organized by type for comprehensive reference. For MoSCOW prioritization, see [`kboard.md`](kboard.md). For the **operational intake plan** (open ∧ taskless queue, epic branch + **`RW -k`**, hygiene notes), see [`fbu-open-taskless-queue.md`](fbu-open-taskless-queue.md).
 
 **Document Purpose:**
 

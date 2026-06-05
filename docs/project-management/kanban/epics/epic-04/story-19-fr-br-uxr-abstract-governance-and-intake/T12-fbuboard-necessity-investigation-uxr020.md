@@ -9,12 +9,13 @@ housekeeping_policy: keep
 # Epic 4, Story 19, Task 12: `fbuboard` necessity investigation (UXR-020)
 
 **Task ID:** E04:S19:T12  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE ✅  
 **Priority:** HIGH  
-**Estimated Effort:** Medium (research complete; implementation path TBD)  
+**Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.4.19.12+3** — ADR-018 Wave 3: framework install templates + adopter migration)  
-**Version:** v0.4.19.12+3  
+**Last updated:** 2026-06-05 (Wave 4 closure — **v0.4.19.12+4**)  
+**Version:** v0.4.19.12+4  
+**Version Anchor:** v0.4.19.12+4  
 **Code:** E04S19T12  
 
 **Publication Status:** NOT_APPLICABLE
@@ -37,7 +38,7 @@ housekeeping_policy: keep
 
 Investigate whether the separate **FBU prioritization board** (`fbuboard.md`) remains justified now that **bidirectional task ↔ FBU wiring** is mandatory (KG-R2) and both boards largely mirror each other in the Could Have backlog.
 
-**Out of scope (until user authorizes + IPW):** Actually deleting or merging boards, validator rewrites, or FR-092 contract amendments.
+**Expanded scope (2026-06-05):** After ADR-018 single-board consolidation, **remove legacy `fr-br-uxr-*` alias files** from `docs/project-management/kanban/` root (`fr-br-uxr-board.md`, `fr-br-uxr-structure.md`, `fr-br-uxr-open-taskless-queue.md`). Canonical paths: `kboard.md`, `fbu-structure.md`, `fbu-open-taskless-queue.md`. Retain `fbuboard.md` redirect stub and `kanban-board.md` read-tolerance alias only.
 
 ---
 
@@ -86,7 +87,10 @@ Operators report that keeping `kboard.md` and `fbuboard.md` in sync creates **un
 - [x] **AC5:** IPP linked ([IPP-E04S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)).
 - [x] **AC6:** Wave 1 delivered (ADR-018, policy, board migration, fbuboard stub) via RW **v0.4.19.12+1**.
 - [x] **AC7:** Wave 2 validators/scripts + tests green (**v0.4.19.12+2**).
-- [x] **AC8:** Wave 3 framework templates + `rw-config` schema + adopter migration note (implementation complete; RW + user verification pending).
+- [x] **AC8:** Wave 3 framework templates + `rw-config` schema + adopter migration note (**v0.4.19.12+3**).
+- [x] **AC9:** User verification of single-board operator workflow (2026-06-05 — lean `kboard` + V-band accepted).
+- [x] **AC11:** Kanban root legacy `fr-br-uxr-*` aliases removed; `kanban/README.md` and workflow scripts no longer treat them as active corpus boards.
+- [x] **AC10:** Closure RW **v0.4.19.12+4** — task COMPLETE ledger + release alias cleanup.
 
 ---
 

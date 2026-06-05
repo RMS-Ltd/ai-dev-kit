@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-05 (**E04:S19:T12** single-board Wave 1 **v0.4.19.12+1**)
+**Last updated:** 2026-06-05 (**E04:S19:T12** single-board Wave 4 closure **v0.4.19.12+4**)
 **Branch:** `epic/4-kanban-framework`  
 **Version Schema:** `0.4.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -106,9 +106,9 @@ housekeeping_policy: keep
   - Tasks: T01 ✅ COMPLETE (v0.4.18.1+1), T02 ✅ COMPLETE (v0.4.18.2+1)
 
 
-- [ ] **E4:S19 – FR/BR/UXR abstract governance and intake** - IN PROGRESS (v0.4.19.8+2 — T07–T10 ✅; T01 charter TODO; FR-072 COMPLETE)
+- [ ] **E4:S19 – FR/BR/UXR abstract governance and intake** - IN PROGRESS (v0.4.19.12+4 — **T12** ✅ single-board **UXR-020**; T01 charter TODO)
   - Story: [`story-19-fr-br-uxr-abstract-governance-and-intake.md`](story-19-fr-br-uxr-abstract-governance-and-intake.md)
-  - Tasks: **T10** ✅ COMPLETE (**BR-076** **v0.4.19.10+2**); **T09** ✅ COMPLETE (**UXR-014** **v0.4.19.9+2**); **T01** stub only (**BR-060** lives under **E02:S01:T09**)
+  - Tasks: **T12** ✅ COMPLETE (**UXR-020** **v0.4.19.12+4**); **T10** ✅ COMPLETE (**BR-076** **v0.4.19.10+2**); **T01** stub only (**BR-060** lives under **E02:S01:T09**)
 
 ---
 

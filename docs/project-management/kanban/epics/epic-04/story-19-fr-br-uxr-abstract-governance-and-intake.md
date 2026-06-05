@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-02  
-**Last updated:** 2026-06-05 (v0.4.19.12+2 – T12 RW: ADR-018 single-board Wave 2)
-**Version:** v0.4.19.12+2
+**Last updated:** 2026-06-05 (v0.4.19.12+4 – T12 COMPLETE / UXR-020 closure)
+**Version:** v0.4.19.12+4
 **Code:** E4S19  
 
 **Story type:** Ongoing governance (not a perpetual “repo ledger”; not a dumping ground for individual **FR-### / BR-### / UXR-###** implementation work).
@@ -52,7 +52,7 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T11 – Kanban epic/story path lowercase naming (UXR-017)** - ✅ COMPLETE (v0.4.19.11+1 — GH #12–#20 closed; adopter replay verified) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
-- [ ] **E04:S19:T12 – Single-board consolidation — retire `fbuboard` (UXR-020 R3)** - 🔄 IN PROGRESS (HIGH, Wave 3 **v0.4.19.12+3** — user verification pending) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP-E04S19T12](../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
+- [x] **E04:S19:T12 – Single-board consolidation — retire `fbuboard` (UXR-020 R3)** - ✅ COMPLETE (**v0.4.19.12+4** — Waves 1–4; kanban-root legacy alias removal) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP-E04S19T12](../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 ---
 
@@ -92,7 +92,7 @@ This story holds **Epic 4 (Kanban framework) responsibility for FR / BR / UXR in
 
 ## Tactical overview (2026-06-01)
 
-**Shipped this story (UKW -u sync):** **T07–T10** complete — FR-072 Approach D (**ADR-014**, **v0.4.19.8+2**), FR-021 superseded, UXR-014 formatting, E7:S00 detasking (**BR-076**). **Open:** **T01** charter (baseline; BR-060 implementing work lives **E02:S01:T09**). Boards pruned terminal **FR-072** / **FR-021** from active [`fbuboard.md`](../../fbuboard.md).
+**Shipped this story:** **T12** complete — **UXR-020 R3** single-board consolidation (**ADR-018**, **v0.4.19.12+4**); `kboard` sole active MoSCOW; kanban-root `fr-br-uxr-*` aliases removed. Prior: **T07–T11** (FR-072, UXR-014/017, etc.). **Open:** **T01** charter (baseline; BR-060 implementing work lives **E02:S01:T09**).
 
 ## Goals
 

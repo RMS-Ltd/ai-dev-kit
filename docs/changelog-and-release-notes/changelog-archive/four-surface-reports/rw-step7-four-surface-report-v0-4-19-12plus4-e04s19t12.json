@@ -1,0 +1,99 @@
+{
+  "contract": "FR-092 / ADR-018 three-surface RW Step 7 (fbuboard stub metadata only)",
+  "invocation_context": "rw_step_7",
+  "timestamp_utc": "2026-06-05 01:44 UTC",
+  "release_scope": {
+    "epic": 4,
+    "story": 19,
+    "task": 12,
+    "task_id": "E04:S19:T12",
+    "version_string": "v0.4.19.12+4",
+    "art_adopted": true
+  },
+  "stamp_evidence": {
+    "manifest": "docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-e04s19t12-stamp-evidence-manifest.json"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard",
+      "fbuboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "changes": [
+        "T12 COMPLETE; version v0.4.19.12+4; AC10 checked"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    },
+    "fbu_doc": {
+      "changes": [
+        "UXR-020 closure Wave 4; version v0.4.19.12+4"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Pruned E04:S19:T12 S-band row (task COMPLETE); board metadata v0.4.19.12+4"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": [
+        "Stub Last Updated note only (deprecated; no MoSCOW writes)"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "surface": "fbuboard",
+      "touched": true
+    }
+  },
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": [
+        "Story 19 T12 checklist COMPLETE; tactical overview updated"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "planning_artifact": {
+      "changes": [
+        "IPP status COMPLETE"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md"
+      ],
+      "surface": "planning_artifact",
+      "touched": true
+    }
+  }
+}

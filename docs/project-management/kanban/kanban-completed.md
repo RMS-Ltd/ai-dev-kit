@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW **E01:S02:T13** — README hygiene v0.1.2.13+1)
-**Version:** v0.1.2.13+1
+**Last Updated:** 2026-06-05 (E04:S19:T12 — Wave 4 closure)
+**Version:** v0.4.19.12+4
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR abstract governance)**
+- **[E04:S19:T12](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)** — **UXR-020 R3**: Single-board consolidation — `kboard` sole active MoSCOW; `fbuboard` deprecated stub; V-band; kanban-root `fr-br-uxr-*` aliases removed (Waves 1–4).
+  **Completed:** `2026-06-05T01:42:57Z` | **Version:** `v0.4.19.12+4` | **Agent:** `RW --art` | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 #### **Epic 1: AI Dev Kit Core (Story 2 — Package & Repo Architecture)**
 - **[E01:S02:T13](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)** — **FR-002**: README hygiene — removed book-workspace branding from public README.

@@ -477,7 +477,7 @@ def _surface_for_explicit_path(path: Path) -> str:
     text = str(path).lower()
     if "kboard" in text or "kanban-board" in text:
         return "kboard"
-    if "fbuboard" in text or "fr-br-uxr-board" in text:
+    if "fbuboard" in text:
         return "fbuboard"
     if "/fr-br/" in text or re.search(r"/(fr|br|uxr)-\d+", text):
         return "fbu_doc"

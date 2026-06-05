@@ -12,10 +12,11 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** ACCEPTED  
+**Status:** RESOLVED ✅  
 **Code:** UXR-020  
-**Last updated:** 2026-06-05 (Wave 1 shipped **v0.4.19.12+1** — ADR-018, kboard V-band, fbuboard stub)  
-**Version:** v0.4.19.12+1  
+**Last updated:** 2026-06-05 (Wave 4 closure **v0.4.19.12+4** — kanban-root alias removal)  
+**Version:** v0.4.19.12+4  
+**Resolved in:** v0.4.19.12+1 through v0.4.19.12+4 (ADR-018 R3)  
 
 **Implementing Task:** [E04:S19:T12](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)  
 **Planning package:** [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
@@ -172,11 +173,11 @@ Enrich **`kboard` row contract** with explicit **dual status** tokens, e.g. `Tas
 
 ---
 
-## Next Steps
+## Closure (2026-06-05)
 
-1. **Implementation authorization** — user says `implement` / `proceed` or `RW E04:S19:T12`.
-2. **Wave 1:** ADR-018, policy, live board migration, fbuboard stub, RW on epic/4 branch.
-3. **Waves 2–3:** Validators, `update_kanban_docs`, UKW/RW guides, framework templates.
+- **Waves 1–4 shipped:** `v0.4.19.12+1` (boards + ADR-018), `+2` (tooling), `+3` (framework pack), `+4` (kanban-root `fr-br-uxr-*` alias removal + T12 COMPLETE).
+- **User verification:** Single active `kboard` with V-band accepted as leaner operator workflow.
+- **Forensic closure:** `RW E04:S19:T12 --art` **v0.4.19.12+4** — task ledger, story checklist, corpus scripts updated.
 
 ---
 

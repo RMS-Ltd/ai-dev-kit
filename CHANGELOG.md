@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.19.12+4] - 05-06-26
+
+E04:S19:T12 — **Single-board Wave 4 closure:** Kanban-root legacy `fr-br-uxr-*` alias removal; T12 / UXR-020 COMPLETE. SemVer **v0.4.903+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+4.md)
+
+---
+
 ## [0.4.19.12+3] - 05-06-26
 
 E04:S19:T12 — **Single-board Wave 3:** Framework install templates, `fbuboard` stub on fresh install, adopter migration guide. SemVer **v0.4.902+3**.

@@ -50,7 +50,8 @@ UKW and RW agents must follow this when updating the board.
 
 ### Active board vs completed ledger (lean MoSCOW)
 
-- **`kboard.md` / `fbuboard.md`:** live work only (`TODO` / `IN PROGRESS` / `IN REVIEW` / `WAITING` / `OPEN` / `PERPETUAL`, plus FBU verification rows where the task is done but the FBU is still OPEN).
+- **`kboard.md`:** sole **active** MoSCOW board — live work only (`TODO` / `IN PROGRESS` / `IN REVIEW` / `WAITING` / `OPEN` / `PERPETUAL`), plus **Verification (V)** band rows where the task is shipped but the FBU is still OPEN ([ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)).
+- **`fbuboard.md`:** **deprecated** redirect stub — no active MoSCOW (history in `fbu-completed.md` / `fbu-structure.md`).
 - **`kanban-completed.md` / `fbu-completed.md`:** terminal tasks and FBUs — append here **before** removing rows from the active board (`UKW -c` or UKW Step 6.5–6.6).
 - **Do not** use the active board as an archive log: no multi-line “archived …” footnotes, no `**date:**` release journals between bullets, no `✅ COMPLETE` rows left in MoSCOW after hygiene.
 - **BR-059:** story-checklist gaps do not justify mirroring the entire TODO backlog onto the board; promote or add only in-flight work. See Kanban governance policy § MoSCOW — active board vs completed ledger.
