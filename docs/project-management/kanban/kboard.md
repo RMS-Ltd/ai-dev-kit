@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E05:S09:T14** — BR-093 CI dedup v0.5.9.14+2)
-**Version:** v0.5.9.14+2
+**Last Updated:** 2026-06-05 (RW **E05:S09:T13** — BR-090 faster alignment v0.5.9.13+1)
+**Version:** v0.5.9.13+1
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -28,8 +28,6 @@ housekeeping_policy: keep
 *(None.)*
 
 ### Should Have (S) - Important Tasks
-
-- **E05:S09:T13** – BR-090: Docusaurus `@docusaurus/faster` + package.json 3.10.1 alignment - 📋 TODO (HIGH, CI build gate red on main) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | Last modified: 2026-06-05 18:30 UTC
 
 - **E07:S07:T03** – BR-091: Workflow validator slug path resolution - 📋 TODO (HIGH, Workflow scripts pytest 4 failures) | [Task](epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md) | [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) | Last modified: 2026-06-05 18:45 UTC
 

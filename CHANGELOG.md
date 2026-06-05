@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.13+1] - 05-06-26
+
+E05:S09:T13 — **BR-090:** Docusaurus `@docusaurus/faster@3.10.1` + package.json alignment; restore CI build gate. SemVer **v0.4.894+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+1.md)
+
+---
+
 ## [0.5.9.14+2] - 05-06-26
 
 E05:S09:T14 — **BR-093:** Merged Docusaurus CI build+deploy (ADR-017); one production build per `main` push. SemVer **v0.4.893+2**.

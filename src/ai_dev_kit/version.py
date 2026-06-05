@@ -9,8 +9,8 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 VERSION_RC = 0        # Release Candidate
 VERSION_EPIC = 5      # Epic 5 — Documentation Management
 VERSION_STORY = 9     # Story 9 — Docusaurus Documentation Portal
-VERSION_TASK = 14     # Task 14 — BR-093 CI workflow deduplication
-VERSION_BUILD = 2     # Build 2: merged build+deploy workflow (ADR-017)
+VERSION_TASK = 13     # Task 13 — BR-090 Docusaurus faster + 3.10.1 alignment
+VERSION_BUILD = 1     # Build 1: @docusaurus/faster + package.json 3.10.1 alignment
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.5.9.14+2 (E05:S09:T14)
+# Current: 0.5.9.13+1 (E05:S09:T13)

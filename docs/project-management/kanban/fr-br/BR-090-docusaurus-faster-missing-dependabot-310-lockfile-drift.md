@@ -11,10 +11,10 @@ housekeeping_policy: keep
 **Bug ID:** BR-090  
 **Priority:** HIGH  
 **Severity:** HIGH — **`Docusaurus site build`** and **`Docusaurus deploy to GitHub Pages`** fail on every qualifying push to `main`; ~97+ failed build jobs since May 2026.  
-**Status:** OPEN  
+**Status:** OPEN — fix attempted **v0.5.9.13+1** (pending Actions verification on `main`)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.5.9.13+0 — Kanban documentation setup)  
-**Version:** v0.5.9.13+0  
+**Last updated:** 2026-06-05 (v0.5.9.13+1 — RW E05:S09:T13 fix attempted)  
+**Version:** v0.5.9.13+1  
 **Implementing Task:** [E05:S09:T13](../epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)  
 **Related:** [FR-069](./FR-069-docusaurus-ci-build-gate.md) · [FR-070](./FR-070-docusaurus-deployment-and-hosting.md) · [BR-068](./BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) (prior build class; distinct from this regression)
 
@@ -78,7 +78,7 @@ Representative run: merge `dev` → `main` (`Merge branch 'dev' into main`).
 - [ ] **`@docusaurus/faster`** added to `portal/package.json` (version compatible with Docusaurus 3.10.x).
 - [ ] **`portal/package.json`** Docusaurus packages aligned with **`portal/package-lock.json`** (3.10.1 on integration branch).
 - [ ] **`cd portal && npm ci && npm run build`** exits **0** locally and in **`.github/workflows/docusaurus-build.yml`**.
-- [ ] **`.github/workflows/docusaurus-deploy.yml`** build step exits **0** on `main`.
+- [ ] **`docusaurus-build.yml`** **`deploy`** job build artifact path succeeds on `main` (merged workflow per [ADR-017](../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
 - [ ] Contributor note in `portal/README.md` if faster / v4 future flag has new install requirements.
 
 ---

@@ -139,10 +139,13 @@ On the **deployed** site ([canonical URL](https://rms-ltd.github.io/ai-dev-kit/)
 ## Installation
 
 ```bash
-yarn
+cd portal
+npm ci
 ```
 
 (or `npm install` in `portal/`.)
+
+**Docusaurus 3.10 + Faster (BR-090 / E5:S09:T13):** [`docusaurus.config.js`](docusaurus.config.js) sets `future.v4: true`, which enables [Docusaurus Faster](https://docusaurus.io/docs/advanced/performance) by default on 3.10.x. You **must** have **`@docusaurus/faster`** in `portal/package.json` (pinned with other `@docusaurus/*` packages at **3.10.1**). Without it, `npm run build` fails immediately with `Cannot find package '@docusaurus/faster'`.
 
 ## Local Development
 
@@ -155,12 +158,12 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-**Minification (FR-068):** `npm run build` runs `docusaurus build --no-minify`. On this stack (Docusaurus 3.9.x + current client bundle), the default Terser pass can fail with `Unexpected token: operator (<)` while the server bundle succeeds. **Attempted workaround:** skip JS minify until the pipeline is fixed or upgraded; the site is still a fully linked production build.
+**Minification (FR-068):** `npm run build` runs `docusaurus build --no-minify`. On Docusaurus **3.10.x** with `@docusaurus/faster` and `future.v4: true`, the default Faster pipeline (Rspack/SWC) is used; `--no-minify` remains as a conservative workaround from the 3.9.x era until a maintainer verifies full minification on CI.
 
 ## Deployment
 

@@ -1,0 +1,37 @@
+{
+  "version_string": "v0.5.9.13+1",
+  "task_id": "E05:S09:T13",
+  "epic": 5,
+  "story": 9,
+  "task": 13,
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "notes": "Removed terminal E05:S09:T13 row; appended kanban-completed.md"
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "notes": "BR-090 fix attempted v0.5.9.13+1; IPP link added"
+    }
+  },
+  "summary": "E05:S09:T13 BR-090: @docusaurus/faster@3.10.1 + package.json alignment"
+}
