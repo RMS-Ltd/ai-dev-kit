@@ -1,0 +1,13 @@
+{
+  "contract": "FR-097 structure-prune — RW Step 7 terminal row removal (E04:S07:T01 closure)",
+  "release_scope": {
+    "task_id": "E04:S07:T01",
+    "version_string": "v0.4.7.1+1"
+  },
+  "rows": {
+    "E04:S07:T01": {
+      "allowed": true,
+      "reason": "RW lean-board prune — completed task archived to kanban-completed.md (FR-109)"
+    }
+  }
+}

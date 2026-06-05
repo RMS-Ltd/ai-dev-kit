@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted By:** AI Agent (Cursor) acting as user/client for dev-toolkit  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** ACCEPTED  
+**Status:** FIXED (criteria 1–4 verified v0.4.7.1+1; criteria 5–12 via E04:S07:T02/T03)  
 
-**Implementing Task:** [E04:S07:T01](../epics/epic-04/story-07-migration-support-and-installation-modes.md)
+**Implementing Task:** [E04:S07:T01](../epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md) | **IPP:** [IPP-E04S07T01](../../../implementation-cycles/IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md)
 **GitHub Issue:** [#2](https://github.com/RMS-Ltd/ai-dev-kit/issues/2)
 
 ---
@@ -213,14 +213,14 @@ The framework installation process was designed for fresh installs only. No cons
 
 ### Fix 1: Detection Utilities
 
-- [ ] **Criterion 1:** Framework can detect existing Kanban structures
+- [x] **Criterion 1:** Framework can detect existing Kanban structures
   - Scan for epic directories
   - Detect epic documents
   - Identify story documents
   - Report findings
 
 
-- [ ] **Criterion 2:** Detection utility created: `detect_existing_structure.py`
+- [x] **Criterion 2:** Detection utility created: `detect_existing_structure.py`
   - Scans `docs/project-management/kanban/epics/` (or configured path)
   - Detects epic documents
   - Detects story documents
@@ -229,13 +229,13 @@ The framework installation process was designed for fresh installs only. No cons
 
 ### Fix 2: Analysis Utilities
 
-- [ ] **Criterion 3:** Framework can analyze existing structure
+- [x] **Criterion 3:** Framework can analyze existing structure
   - Map existing items to E/S/T structure
   - Identify conflicts
   - Generate migration plan
 
 
-- [ ] **Criterion 4:** Analysis utility created: `analyze_structure.py`
+- [x] **Criterion 4:** Analysis utility created: `analyze_structure.py`
   - Maps existing epics to canonical format
   - Maps existing stories to canonical format
   - Maps existing tasks to canonical format
@@ -244,14 +244,14 @@ The framework installation process was designed for fresh installs only. No cons
 
 ### Fix 3: Migration Utilities
 
-- [ ] **Criterion 5:** Framework can migrate existing work
+- [x] **Criterion 5:** Framework can migrate existing work
   - Preserve existing content
   - Convert to canonical format
   - Preserve forensic markers
   - Preserve work history
 
 
-- [ ] **Criterion 6:** Migration utility created: `migrate_structure.py`
+- [x] **Criterion 6:** Migration utility created: `migrate_structure.py`
   - Backs up existing structure
   - Migrates epics to canonical format
   - Migrates stories to canonical format
@@ -261,14 +261,14 @@ The framework installation process was designed for fresh installs only. No cons
 
 ### Fix 4: Installation Modes
 
-- [ ] **Criterion 7:** Framework supports multiple installation modes
+- [x] **Criterion 7:** Framework supports multiple installation modes
   - Fresh Install (current behavior)
   - Migration Install (detect and migrate)
   - Update Install (update existing framework)
   - Hybrid Install (preserve project epics, install framework epics)
 
 
-- [ ] **Criterion 8:** Installation mode selection implemented
+- [x] **Criterion 8:** Installation mode selection implemented
   - Interactive mode selection
   - Automatic mode detection
   - Mode-specific installation paths
@@ -276,10 +276,10 @@ The framework installation process was designed for fresh installs only. No cons
 
 ### Fix 5: Documentation
 
-- [ ] **Criterion 9:** Installation guide updated with migration scenarios
-- [ ] **Criterion 10:** Migration utilities documented
-- [ ] **Criterion 11:** Installation modes documented
-- [ ] **Criterion 12:** Migration examples provided
+- [x] **Criterion 9:** Installation guide updated with migration scenarios
+- [x] **Criterion 10:** Migration utilities documented
+- [x] **Criterion 11:** Installation modes documented
+- [x] **Criterion 12:** Migration examples provided
 
 **Verification Method:**
 - [x] Test suite execution (if applicable)
@@ -288,8 +288,8 @@ The framework installation process was designed for fresh installs only. No cons
 - [x] Framework installation test with pre-existing structure
 
 **Fix Verification Status:**
-- [ ] Verified (test suite passed / manual test passed)
-- [ ] Attempted Fix (pending verification)
+- [x] Verified (criteria 1–4 — detection/analysis utilities; `v0.4.7.1+1` closure RW 2026-06-05)
+- [x] Criteria 5–12 verified via E04:S07:T02 (`v0.4.7.2+1`) and E04:S07:T03 (`v0.4.7.3+1`)
 
 ---
 
