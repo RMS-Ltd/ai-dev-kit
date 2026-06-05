@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.7+1 — **T07 / BR-092** complete)
-**Version:** v0.8.3.7+1
+**Last updated:** 2026-06-05 (v0.8.3.8+1 – **T08 / BR-094** complete)
+**Version:** v0.8.3.8+1
 **Code:** E8S03
 
 ---
@@ -35,6 +35,8 @@ housekeeping_policy: keep
 - [x] **E08:S03:T06 – Dependabot and dependency security automation (FR-105)** ✅ COMPLETE (v0.8.3.6+2) — [Task doc](story-03-automation-scripts/T06-dependabot-enablement-fr105.md) | [FR-105](../../fr-br/FR-105-dependabot-dependency-security-automation.md)
 
 - [x] **E08:S03:T07 – Tests CI `requests` dependency ([BR-092](../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md))** — ✅ COMPLETE (v0.8.3.7+1) — [Task doc](story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md) | [IPP](../../../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
+
+- [x] **E08:S03:T08 – CodeQL `git_tag_handler.py` syntax fix (BR-094)** — ✅ COMPLETE (v0.8.3.8+1) — [Task doc](story-03-automation-scripts/T08-codeql-git-tag-handler-syntax-br094.md) | [BR-094](../../fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
 
 ---
 

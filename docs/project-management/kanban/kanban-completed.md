@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T07** — BR-092 closure v0.8.3.7+1)
-**Version:** v0.8.3.7+1
+**Last Updated:** 2026-06-05 (RW **E08:S03:T08** — BR-094 closure v0.8.3.8+1)
+**Version:** v0.8.3.8+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -21,6 +21,9 @@ housekeeping_policy: keep
 ## 20 Most Recently Completed Tasks
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
+- **[E08:S03:T08](epics/epic-08/story-03-automation-scripts/T08-codeql-git-tag-handler-syntax-br094.md)** — **BR-094**: CodeQL `git_tag_handler.py` indentation syntax fix.
+  **Completed:** `2026-06-05T00:10:09Z` | **Version:** `v0.8.3.8+1` | **Agent:** `RW --art` | [BR-094](fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
+
 - **[E08:S03:T07](epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md)** — **BR-092**: Tests CI `requests` dependency — `setup.py` [dev] extras + `tests/requirements.txt` parity.
   **Completed:** `2026-06-04T23:51:26Z` | **Version:** `v0.8.3.7+1` | **Agent:** `RW` | [BR-092](fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md) | [IPP](../../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
 

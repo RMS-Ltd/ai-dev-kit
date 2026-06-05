@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Completed Items
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T07** — BR-092 closure v0.8.3.7+1)
-**Version:** v0.8.3.7+1 (**SemVer** v0.4.890+1)
+**Last Updated:** 2026-06-05 (RW **E08:S03:T08** — BR-094 closure v0.8.3.8+1)
+**Version:** v0.8.3.8+1 (**SemVer** v0.4.891+1)
 
 > **For open FBU items, see:** [`fbuboard.md`](fbuboard.md)  
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -34,6 +34,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-094 | BR | CodeQL `git_tag_handler.py` indentation syntax error (**E08:S03:T08**) | 2026-06-05T00:10:09Z | v0.8.3.8+1 | RW --art |
 | BR-092 | BR | Tests CI missing `requests` dev dependency (**E08:S03:T07**) | 2026-06-04T23:51:26Z | v0.8.3.7+1 | RW |
 | UXR-017 | UXR | Kanban epic/story path lowercase naming — GH #20 closed (**E04:S19:T11**) | 2026-06-04T23:07:14Z | v0.4.19.11+1 | UKW -c |
 | BR-086 | BR | RW install lowercase fresh kanban patterns & sign-off — #17 closed (**E06:S09:T16**) | 2026-06-04T23:09:08Z | v0.6.9.16+3 | RW --art |
