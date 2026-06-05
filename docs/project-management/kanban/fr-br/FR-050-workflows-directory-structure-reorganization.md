@@ -8,15 +8,15 @@ housekeeping_policy: keep
 
 # FR-050: Workflows Directory Structure Reorganization
 
-**Status:** 🟡 **PENDING INTAKE**  
+**Status:** 📋 **OPEN** (intake complete 2026-06-05)
 
-**Implementing Task:** TBD (intake pending — **not** [E06:S07:T107](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md); prior miswire corrected 2026-05-30 per [IPP-E6S7T107](../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md))
-**Priority:** MEDIUM - Improve organization and maintainability of workflow definitions  
+**Implementing Task:** [E02:S13:T09](../epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md) (filed from [E02:S13:T06](../epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) — GAP-WFMGT-STRUCT-001). **Not** [E06:S07:T107](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md); prior miswire corrected 2026-05-30 per [IPP-E6S7T107](../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md).
+**Priority:** HIGH — RC remediation (was MEDIUM)  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-09  
-**Last updated:** 2026-03-09  
+**Last updated:** 2026-06-05  
 **Version:** v0.4.18.1+2  
-**Code:** E2:S?? (TBD)
+**Code:** E02:S13:T09
 
 ---
 

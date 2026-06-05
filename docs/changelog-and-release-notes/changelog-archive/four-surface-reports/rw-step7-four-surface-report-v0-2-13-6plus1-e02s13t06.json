@@ -1,0 +1,60 @@
+{
+  "contract": "FR-092 / FR-091",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 6,
+    "task_id": "E02:S13:T06",
+    "version_string": "v0.2.13.6+1"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "story_doc", "kboard", "kanban_completed", "fr_doc"],
+    "total_changes": 18
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md",
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md",
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md",
+        "docs/implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md"
+      ],
+      "notes": [
+        "E02:S13:T06 COMPLETE — RC criteria DEFER; remediation backlog; T09/T10 filed"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md",
+        "docs/project-management/kanban/epics/epic-02/epic-02.md"
+      ],
+      "notes": ["T06 checklist COMPLETE; story AC RC criteria satisfied"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md"
+      ],
+      "notes": ["FR-050 intake complete; implementing task E02:S13:T09"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "notes": [
+        "E02:S13:T06 terminal row pruned from M-band",
+        "E02:S13:T09 and E02:S13:T10 filed in M-band (HIGH remediation)"
+      ]
+    }
+  },
+  "stamp_evidence": {
+    "manifest": "rw-e2s13t06-structure-prune-stamp-evidence.json",
+    "stamps_appended_with_evidence": 2,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 20,
+    "mode": "structure_prune_and_new_rows"
+  },
+  "timestamp_utc": "2026-06-05 06:24 UTC"
+}

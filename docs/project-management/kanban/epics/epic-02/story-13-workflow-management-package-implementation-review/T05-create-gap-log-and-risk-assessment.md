@@ -96,7 +96,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** HIGH (adopters may edit wrong YAML)
 - **RC Impact:** NON-BLOCKING (remediation scheduled; doc-aligned adopters use nested dirs)
-- **Tracking:** FR-050; E02:S13:T06 remediation backlog
+- **Tracking:** [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md); [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md) (filed)
 
 ---
 
@@ -110,7 +110,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** MEDIUM (drift on partial updates)
 - **RC Impact:** NON-BLOCKING (contracts align; cohesion remediation deferred)
-- **Tracking:** E02:S13:T06; E07 E1/E5 consolidation proposals
+- **Tracking:** [E02:S13:T10](T10-kanban-transform-consolidation.md) (filed); E07 E1/E5 consolidation proposals
 
 ---
 
@@ -375,9 +375,11 @@ All 16 gaps are **Workflow Management package implementation or documentation ga
   - [x] Release via `RW E02:S13:T05 --art`
 
 - **For follow-on (E02:S13:T06):**
-  - Define RC sign-off criteria from this gap log
-  - File remediation tasks for Gap 1 (FR-050), Gap 2 (kanban transform), Gap 4 (shared config loader)
-  - Schedule doc-fix backlog (Gaps 5, 7, 11, 12, 16)
+  - [x] Define RC sign-off criteria from this gap log → [T06](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+  - [x] File remediation tasks for Gap 1 → [T09](T09-fr050-workflows-directory-reorganization.md) + [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
+  - [x] File remediation task for Gap 2 → [T10](T10-kanban-transform-consolidation.md)
+  - [x] Schedule doc-fix backlog (Gaps 5, 7, 11, 12, 16) → T06 remediation R4
+  - [ ] Gap 4 (shared config loader) → T06 remediation R3 (proposed host)
 
 ---
 

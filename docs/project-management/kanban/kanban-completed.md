@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW: E02:S13:T05 — gap log and risk assessment)
-**Version:** v0.2.13.5+1
+**Last Updated:** 2026-06-05 (RW: E02:S13:T06 — RC sign-off criteria DEFER)
+**Version:** v0.2.13.6+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E02:S13:T06](epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)** — Workflow-mgt RC sign-off criteria and remediation (DEFER; T09/T10 filed).
+  **Completed:** `2026-06-05T06:24:18Z` | **Version:** `v0.2.13.6+1` | **Agent:** `RW E02:S13:T06 --art` | [T06](epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [IPP](../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
 
 - **[E02:S13:T05](epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)** — Workflow-mgt gap log and risk assessment (16 gaps; conditional RC).
   **Completed:** `2026-06-05T06:06:01Z` | **Version:** `v0.2.13.5+1` | **Agent:** `RW E02:S13:T05 --art` | [gap log](epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [IPP](../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)

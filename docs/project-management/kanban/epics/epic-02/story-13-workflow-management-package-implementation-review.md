@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-05 (E02:S13:T05 **v0.2.13.5+1**)
-**Version:** v0.2.13.5+1
+**Last updated:** 2026-06-05 (E02:S13:T06 **v0.2.13.6+1**)
+**Version:** v0.2.13.6+1
 **Code:** E2S13
 
 ---
@@ -40,8 +40,14 @@ housekeeping_policy: keep
   - Task: [`T05-create-gap-log-and-risk-assessment`](story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
   - Gap log: [`T05-create-gap-log-and-risk-assessment.md`](story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
   - IPP: [`IPP-E02S13T05-gap-log-risk-assessment.md`](../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
-- [ ] **E02:S13:T06 – Define RC sign-off criteria and remediation tasks** - TODO
+- [x] **E02:S13:T06 – Define RC sign-off criteria and remediation tasks** - ✅ COMPLETE (v0.2.13.6+1)
   - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+  - IPP: [`IPP-E02S13T06-rc-sign-off-remediation.md`](../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
+  - RC posture: **DEFER** (HIGH gaps filed: T09, T10)
+- [ ] **E02:S13:T09 – FR-050 Workflows Directory Reorganization** - TODO (HIGH remediation — [FR-050](../../fr-br/FR-050-workflows-directory-structure-reorganization.md))
+  - Task: [`T09-fr050-workflows-directory-reorganization`](story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md)
+- [ ] **E02:S13:T10 – Kanban Transform Consolidation** - TODO (HIGH remediation — GAP-WFMGT-INTG-001)
+  - Task: [`T10-kanban-transform-consolidation`](story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)
 - [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
   - Task Doc: [`T07-rw-semver-tag-when-task-touch-enabled.md`](story-13-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)
 
@@ -112,14 +118,14 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 - [x] Behavioral validation notes captured. ✅ COMPLETE (v0.2.13.3+1)
 - [x] Integration alignment reviewed and documented. ✅ COMPLETE (v0.2.13.4+1)
 - [x] Gap log created with severity levels. ✅ COMPLETE (v0.2.13.5+1)
-- [ ] RC sign-off criteria and remediation tasks defined.
+- [x] RC sign-off criteria and remediation tasks defined. ✅ (T06 — DEFER posture; T09/T10 filed)
 
 ---
 
 ## Dependencies
 
 - None (RC readiness prerequisite for Epic 2 package sign-off).
-- **Code review gate:** [E07:S07:T01](../epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)) — **report published** [2026-06-03](../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md): 0 Critical, 3 High, 6 Medium, 4 Low; **conditional RC** pending remediation backlog (H1 CI pytest, H2 flat YAML, H3 kanban consolidation).
+- **Code review gate:** [E07:S07:T01](../epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)) — **report published** [2026-06-03](../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md): 0 Critical; **RC sign-off DEFER** per T06 until T09/T10 implemented.
 
 ---
 
