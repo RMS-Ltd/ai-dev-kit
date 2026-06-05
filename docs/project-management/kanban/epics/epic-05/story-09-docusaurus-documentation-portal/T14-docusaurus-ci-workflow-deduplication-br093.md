@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.5.9.14+2 — RW E05:S09:T14)  
+**Last updated:** 2026-06-05 (v0.5.9.14+2 — Wave 2 verification; BR-093 **FIXED**)  
 **Version:** v0.5.9.14+2  
 **Code:** E05S09T14
 
@@ -32,6 +32,7 @@ Publication Status: NOT_APPLICABLE
 - [`.github/workflows/docusaurus-build.yml`](../../../../../../.github/workflows/docusaurus-build.yml)
 - [FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md) · [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md)
 - [BR-090](../../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) — underlying build failures (orthogonal)
+- [Wave 2 evidence](../../../../../../docs/maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md)
 
 ---
 

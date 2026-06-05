@@ -11,9 +11,9 @@ housekeeping_policy: keep
 **Bug ID:** BR-090  
 **Priority:** HIGH  
 **Severity:** HIGH — **`Docusaurus site build`** and **`Docusaurus deploy to GitHub Pages`** fail on every qualifying push to `main`; ~97+ failed build jobs since May 2026.  
-**Status:** OPEN — fix attempted **v0.5.9.13+1** (pending Actions verification on `main`)  
-**Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.5.9.13+1 — RW E05:S09:T13 fix attempted)  
+**Status:** OPEN — fix attempted **v0.5.9.13+1** (`@docusaurus/faster` on `main` ✅; **Docusaurus site build** still FAIL — MDX broken links, run `26989204716`)
+**Created:** 2026-06-05
+**Last updated:** 2026-06-05 (V-band scan — [evidence](../../maintenance/v-band-verification-scan-2026-06-05.md))
 **Version:** v0.5.9.13+1  
 **Implementing Task:** [E05:S09:T13](../epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)  
 **Related:** [FR-069](./FR-069-docusaurus-ci-build-gate.md) · [FR-070](./FR-070-docusaurus-deployment-and-hosting.md) · [BR-068](./BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) (prior build class; distinct from this regression)

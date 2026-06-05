@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-05 (RW **E03:S02:T12** — FR-045/046/BR-061 wave 3 closure v0.3.2.12+5)
-**Version:** v0.3.2.12+5 (**SemVer** v0.4.905+5)
+**Last Updated:** 2026-06-05 (E05:S09:T14 Wave 2 — **BR-093** verification closure v0.5.9.14+2)
+**Version:** v0.5.9.14+2
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-093 | BR | Docusaurus CI dedup — FIXED (**E05:S09:T14** Wave 2) | 2026-06-05T19:00:00Z | v0.5.9.14+2 | IPW Wave 2 |
+| BR-091 | BR | Workflow validator slug path resolution — FIXED (**E07:S07:T03**) | 2026-06-05T18:00:00Z | v0.7.7.3+1 | V-band scan |
 | FR-045 | FR | ADR-002 task-touch derived mapping — wave 3 verification closure (**E03:S02:T12**) | 2026-06-05T02:03:38Z | v0.3.2.12+5 | RW --art |
 | FR-046 | FR | RW SemVer tag task-touch mode — wave 3 verification closure (**E03:S02:T12**) | 2026-06-05T02:03:38Z | v0.3.2.12+5 | RW --art |
 | BR-061 | BR | Task-touch PATCH over-increment — FIXED (**E03:S02:T12**) | 2026-06-05T02:03:38Z | v0.3.2.12+5 | RW --art |

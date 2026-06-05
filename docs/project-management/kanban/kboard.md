@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (E03:S02:T12 wave 3 FBU closure — v0.3.2.12+5)
+**Last Updated:** 2026-06-05 (E05:S09:T14 Wave 2 — BR-093 closure)
 **Version:** v0.3.2.12+5
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
@@ -33,13 +33,9 @@ housekeeping_policy: keep
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
-- **E05:S09:T14** – BR-093: Docusaurus CI dedup — ⏳ WAITING (MEDIUM, task **v0.5.9.14+2** · pending Actions on `main`) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [—IPP—](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) | Last modified: 2026-06-05 18:56 UTC
+- **E05:S09:T13** – BR-090: Docusaurus `@docusaurus/faster` alignment — ⏳ WAITING (HIGH, task **v0.5.9.13+1** · faster on `main`; **build still FAIL** — MDX broken links) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [scan](../../maintenance/v-band-verification-scan-2026-06-05.md) | Last modified: 2026-06-05 00:31 UTC
 
-- **E05:S09:T13** – BR-090: Docusaurus `@docusaurus/faster` alignment — ⏳ WAITING (HIGH, task **v0.5.9.13+1** · pending Actions on `main`) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [—IPP—](../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md) | Last modified: 2026-06-05 00:31 UTC
-
-- **E07:S07:T03** – BR-091: Workflow validator slug path resolution — ⏳ WAITING (HIGH, task **v0.7.7.3+1** · pending CI on `dev`/`main`) | [Task](epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md) | [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) | [—IPP—](../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md) | Last modified: 2026-06-05 18:45 UTC
-
-- **E02:S13:T08** – FR-106: Packaged workflows sync with live spec — ⏳ WAITING (HIGH, task **v0.2.13.8+2** · pending verification) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [—IPP—](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | Last modified: 2026-06-03 20:06 UTC
+- **E02:S13:T08** – FR-106: Packaged workflows sync with live spec — ⏳ WAITING (HIGH, task **v0.2.13.8+2** · **user sign-off** pending) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [—IPP—](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | Last modified: 2026-06-03 20:06 UTC
 
 - **E06:S09:T19** – BR-088: RW install version_file scaffold — ⏳ WAITING (MEDIUM, task **v0.6.9.19+1** · GitHub **#18**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md) | Last modified: 2026-06-05 17:11 UTC
 

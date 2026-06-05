@@ -11,9 +11,9 @@ housekeeping_policy: keep
 **Bug ID:** BR-093  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM — Every qualifying push to **`main`** triggers **two** independent workflows that each run **`npm ci`** + **`npm run build`**; when build is broken, both fail (~91 deploy + ~97 build failures since May 2026).  
-**Status:** OPEN — fix attempted (**v0.5.9.14+2**); pending post-merge Actions verification on `main`  
-**Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.5.9.14+2 — workflow merge per ADR-017)  
+**Status:** FIXED ✅  
+**Created:** 2026-06-05
+**Last updated:** 2026-06-05 — Wave 2 verification closure **v0.5.9.14+2** (structural + Actions evidence). See [evidence](../../maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md).
 **Version:** v0.5.9.14+2  
 **Implementing Task:** [E05:S09:T14](../epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) ✅ COMPLETE  
 **Planning:** [IPP-E05S09T14](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) · [ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)  
@@ -72,10 +72,10 @@ Maintainer preference: optimize for **fail-fast** (one build) and **FR-070** sta
 
 ## Acceptance criteria
 
-- [ ] Push to **`main`** (portal/docs paths) runs **at most one** `npm run build` before deploy.
-- [ ] Deploy **does not run** when build fails.
-- [ ] PR **`Docusaurus site build`** gate unchanged (still blocks merge on build failure).
-- [ ] Document workflow topology in `portal/README.md` or `.github/workflows/` comment block.
+- [x] Push to **`main`** (portal/docs paths) runs **at most one** `npm run build` before deploy — single workflow; `docusaurus-deploy.yml` retired.
+- [x] Deploy **does not run** when build fails — Actions run `26989204716`: `deploy` job **skipped** when `build` fails.
+- [x] PR **`Docusaurus site build`** gate unchanged — pytest T3; deploy `if` excludes PR-only runs.
+- [x] Document workflow topology in `portal/README.md` and ADR-017 / YAML comments.
 
 ---
 

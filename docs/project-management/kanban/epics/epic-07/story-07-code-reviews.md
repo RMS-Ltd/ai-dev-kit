@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-05 (v0.7.7.3+1 — **T03 / BR-091** fix attempted)
+**Last updated:** 2026-06-05 (v0.7.7.3+1 — **T03 / BR-091** FIXED; CI verified)
 **Version:** v0.7.7.3+1
 
 ---
@@ -29,7 +29,7 @@ housekeeping_policy: keep
   - IPP: [`IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md`](../../../../../implementation-cycles/IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
   - Source: [T01 report H1](story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 
-- [x] **E07:S07:T03 – Workflow validator slug path resolution ([BR-091](../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md))** — ✅ COMPLETE (v0.7.7.3+1 — slug resolver + pytest 105/105; CI pending)
+- [x] **E07:S07:T03 – Workflow validator slug path resolution ([BR-091](../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md))** — ✅ COMPLETE (v0.7.7.3+1 — BR-091 **FIXED**; CI + local pytest verified)
   - Task Doc: [`T03-workflow-validator-slug-path-resolution-br091.md`](story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md)
   - IPP: [`IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md`](../../../../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
 
