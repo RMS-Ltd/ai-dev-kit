@@ -205,7 +205,7 @@ This feature is needed:
 
 ## Implementation Notes
 
-**Planning package (E04:S11:T07):** [IPP-E04S11T07-fr016-discrete-task-docs-migration.md](../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) — consolidated IPW plan for phased migration of ~784 embedded tasks to discrete Task documents. Status: **IN PROGRESS** (v0.4.11.7+3 — IPP delivered; migration tooling pending).
+**Planning package (E04:S11:T07):** [IPP-E04S11T07-fr016-discrete-task-docs-migration.md](../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) — consolidated IPW plan for phased migration of embedded tasks to discrete Task documents. Status: **IN PROGRESS** (v0.4.11.7+6 — Wave 1 tooling shipped under `packages/frameworks/workflow-mgt/scripts/kanban/`; pilot migration Wave 2 pending).
 
 **Key Considerations:**
 1. Task docs can be either:

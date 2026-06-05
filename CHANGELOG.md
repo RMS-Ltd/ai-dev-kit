@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.11.7+6] - 05-06-26
+
+E04:S11:T07 — **Wave 1 tooling:** `extract_embedded_tasks`, `generate_task_doc`, `update_story_refs`, `validate_migration` + unit tests T1–T8. SemVer **v0.4.921+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+6.md)
+
+---
+
 ## [0.4.11.7+5] - 05-06-26
 
 E04:S11:T07 — **Wave 0 catalog:** Embedded/discrete task census (417 / 301); migration plan §1.1 filled. SemVer **v0.4.920+5**.

@@ -6,7 +6,7 @@
 **Status:** IN PROGRESS  
 **Planning doc created:** 2026-02-22  
 **Last updated:** 2026-06-05  
-**Version anchor:** v0.4.11.7+3 (IPP consolidated — migration implementation pending)
+**Version anchor:** v0.4.11.7+6 (Wave 1 tooling shipped — pilot migration Wave 2 pending)
 
 ---
 
@@ -28,7 +28,7 @@ Migrate all ~784 embedded task references in Story documents to discrete Task do
 ## Deliverable
 
 - Consolidated IPP: [`IPP-E04S11T07-fr016-discrete-task-docs-migration.md`](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
-- Migration tooling: `extract_embedded_tasks.py`, `generate_task_doc.py`, `update_story_refs.py`, `validate_migration.py` (per IPP §4)
+- Migration tooling (Wave 1 — `packages/frameworks/workflow-mgt/scripts/kanban/`): `extract_embedded_tasks.py`, `generate_task_doc.py`, `update_story_refs.py`, `validate_migration.py`, `test_migrate_embedded_tasks.py` (T1–T8 + validation smoke; T9–T12 in Wave 2)
 - Phased migration of all embedded tasks to discrete `T{task:02d}-{slug}.md` files
 - Updated Story documents with checklist references (no embedded task bodies)
 - Migration completion report with metrics and documented exceptions
@@ -205,7 +205,7 @@ Per `TASK_TEMPLATE.md` and FR-016:
 
 ---
 
-## 4. Script Interfaces (Proposed)
+## 4. Script Interfaces (Wave 1 — implemented)
 
 ### 4.1 extract_embedded_tasks.py
 
