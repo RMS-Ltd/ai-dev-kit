@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.22+1] - 05-06-26
+## [0.6.9.21+4] - 05-06-26
 
-E06:S09:T22 — **Package docs greenfield-install alignment (FR-110):** framework READMEs + install guides reflect lean vendor tree. SemVer **v0.4.951+1**.
+E06:S09:T21 — **Lean adopter distribution footprint (FR-110):** `greenfield-install/` tree, sync script, CI drift guard, install smoke. SemVer **v0.4.952+4**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.22+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.21+4.md)
 
 ---
 

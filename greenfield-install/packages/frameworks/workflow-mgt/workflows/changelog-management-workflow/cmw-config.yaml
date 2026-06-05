@@ -1,0 +1,21 @@
+# Changelog Management Workflow Configuration
+# This file contains configuration parameters for the Changelog Management Workflow
+
+workflow:
+  name: "Changelog Management Workflow"
+  abbreviation: "CMW"
+  version: "1.0.0"
+  description: "Manage changelog size and organization"
+
+# Default configuration values
+defaults:
+  changelog_dir: "docs/changelog-and-release-notes/changelog-archive"
+  main_changelog: "CHANGELOG.md"
+  max_changelog_size: 50000  # Maximum size in bytes
+  archive_threshold: 100000  # Size threshold for archival
+
+# Execution configuration
+execution:
+  auto_archive: true
+  preserve_recent: 5  # Number of recent entries to preserve
+  archive_format: "CHANGELOG_v{version}.md"

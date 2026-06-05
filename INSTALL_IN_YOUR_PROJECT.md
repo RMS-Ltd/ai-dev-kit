@@ -74,41 +74,46 @@ Other guides under [`docs/documentation/user-docs/`](docs/documentation/user-doc
 | Short `README` at vendor root | `docs/project-management/` (ai-dev-kit kanban) |
 | Published install docs (link below) | `portal/`, changelog archive, `tests/` |
 
-### Target layout (shipping in [FR-110](docs/project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md))
+### Target layout ([FR-110](docs/project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md))
+
+The repo ships **`greenfield-install/`** — vendor or copy **that directory** (not the full maintainer tree):
 
 ```
-vendor/ai-dev-kit/                 # or sparse-checkout of greenfield-install/ only
+vendor/ai-dev-kit/                 # contents of greenfield-install/ at a release tag
 ├── README.md
+├── FOOTPRINT.md                   # measured MiB budget
 └── packages/frameworks/
     ├── workflow-mgt/
     └── kanban/
 ```
 
-Install commands run from the **vendor root** (paths unchanged):
+Install from your **host project root** (framework paths relative to where you placed the vendor tree):
 
 ```bash
-python3 "packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" --project-root ".."
-# --project-root = your host project root (parent of vendor/)
+python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \
+  --project-root "." --non-interactive
 ```
 
-### Interim (until `greenfield-install/` directory lands on `main`)
+### Acquire the lean tree
 
-1. Submodule the public repo at a release tag (see [Method 2](#method-2-git-submodule-available-now)).
-2. Use **only** `packages/frameworks/` from the checkout — do not copy maintainer trees into your app repo.
-3. Optional **sparse checkout** (smaller `.git` working tree):
+1. **Sparse submodule (recommended):** submodule `RMS-Ltd/ai-dev-kit` and cone only `greenfield-install/`:
 
    ```bash
    git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
    cd vendor/ai-dev-kit
    git sparse-checkout init --cone
-   git sparse-checkout set greenfield-install   # when directory exists on tag
-   # Until then:
-   git sparse-checkout set packages/frameworks
+   git sparse-checkout set greenfield-install
    ```
 
-4. Bump upstream: `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.949` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
+2. **Copy:** extract or copy `greenfield-install/` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) into `vendor/ai-dev-kit/`.
 
-**Disk budget:** ~11 MiB frameworks + git pack history (sparse checkout reduces working tree; pack size depends on clone depth).
+3. **Legacy sparse path:** `git sparse-checkout set packages/frameworks` still works on older tags; prefer `greenfield-install/` on current tags.
+
+4. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.951` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
+
+**Disk budget:** ~10–11 MiB for `greenfield-install/` (see `FOOTPRINT.md` in-tree) + git pack history (sparse checkout reduces working tree).
+
+**Maintainers:** refresh the curated tree with `python scripts/sync_greenfield_install.py` before release; CI runs `--check` drift guard.
 
 ---
 

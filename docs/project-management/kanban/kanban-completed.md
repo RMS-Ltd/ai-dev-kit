@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E06:S09:T21](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md)** — Lean adopter distribution footprint (`greenfield-install/` tree, sync script, CI drift guard).
+  **Completed:** `2026-06-05T10:00:22Z` | **Version:** `v0.6.9.21+4` | **Agent:** `RW E06:S09:T21 --art` | [T21](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) | [FR-110](fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+
 - **[E06:S09:T22](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md)** — Package documentation greenfield-install alignment (FR-110 framework READMEs + install guides).
   **Completed:** `2026-06-05T12:00:00Z` | **Version:** `v0.6.9.22+1` | **Agent:** `RW E06:S09:T22 --art` | [T22](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md) | [FR-110](fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 

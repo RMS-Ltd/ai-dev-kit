@@ -67,17 +67,17 @@ Adopters need **`packages/frameworks/*`**, **adopter-facing user docs**, **insta
 
 ### Functional Requirements
 
-- [ ] **FR-110-F1:** Add repo-root **`greenfield-install/`** containing frameworks, adopter user docs, install orchestration, CLI/bootstrap, and a **`README.md`** (“install this directory”).
-- [ ] **FR-110-F2:** Provide **`sync_greenfield_install.py`** (or equivalent) that refreshes `greenfield-install/` from canonical sources and fails on unexpected drift in CI.
-- [ ] **FR-110-F3:** Document **disk budget** (MiB) and **update procedure** in `INSTALL_IN_YOUR_PROJECT.md` — adopters vendor/copy `greenfield-install/` only.
-- [ ] **FR-110-F4:** CI smoke test: greenfield dry-run from `greenfield-install/` root passes.
+- [x] **FR-110-F1:** Add repo-root **`greenfield-install/`** containing frameworks, adopter user docs, install orchestration, CLI/bootstrap, and a **`README.md`** (“install this directory”). — **v0.6.9.21+4**
+- [x] **FR-110-F2:** Provide **`sync_greenfield_install.py`** (or equivalent) that refreshes `greenfield-install/` from canonical sources and fails on unexpected drift in CI. — **v0.6.9.21+4**
+- [x] **FR-110-F3:** Document **disk budget** (MiB) and **update procedure** in `INSTALL_IN_YOUR_PROJECT.md` — adopters vendor/copy `greenfield-install/` only. — **v0.6.9.21+3** docs + **+4** tree
+- [x] **FR-110-F4:** CI smoke test: greenfield dry-run from `greenfield-install/` root passes. — **v0.6.9.21+4**
 - [ ] **FR-110-F5 (optional):** Publish `greenfield-install/` as a GitHub Release tarball for non-git adopters (extends FR-062).
 
 ### Non-Functional Requirements
 
-- [ ] **FR-110-NF1:** `greenfield-install/` tracked size **~11 MiB** (framework packages only + README); well under 50% of full repo tree.
-- [ ] **FR-110-NF2:** Update path = submodule bump or copy refresh — no adopter fork required.
-- [ ] **FR-110-NF3:** Maintainer cost = one sync script + CI guard; adopters see one obvious directory name.
+- [x] **FR-110-NF1:** `greenfield-install/` tracked size **~11 MiB** (framework packages only + README); well under 50% of full repo tree. — **~8 MiB measured** (**v0.6.9.21+4**)
+- [x] **FR-110-NF2:** Update path = submodule bump or copy refresh — no adopter fork required.
+- [x] **FR-110-NF3:** Maintainer cost = one sync script + CI guard; adopters see one obvious directory name.
 
 ### Out of scope (v1)
 

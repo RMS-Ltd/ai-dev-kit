@@ -1,0 +1,23 @@
+# Post-Implementation Review Configuration
+# This file contains configuration parameters for the Post-Implementation Review
+
+workflow:
+  name: "Post-Implementation Review"
+  abbreviation: "PIR"
+  version: "1.0.0"
+  description: "Review implementation after release"
+
+# Default configuration values
+defaults:
+  kanban_root: "docs/project-management/kanban"
+  epic_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md"
+  story_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md"
+
+# Execution configuration
+execution:
+  epic_pir_always: true
+  story_pir_significance_criteria:
+    - has_multiple_tasks: true
+    - has_cross_story_dependencies: true
+    - introduces_new_patterns: true
+    - has_significant_technical_debt: true

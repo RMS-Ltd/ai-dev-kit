@@ -1,0 +1,17 @@
+# RW Config: Mode A - Simple RW
+# Use Case: RW-only, no Kanban integration, any versioning scheme
+
+version_file: src/myproject/version.py
+main_changelog: CHANGELOG.md
+changelog_dir: docs/changelogs
+scripts_path: tools/workflow_mgt/scripts
+readme_file: README.md
+
+# Optional: Disable Kanban integration
+use_kanban: false
+
+# Optional: Project name for examples/comments
+project_name: myproject
+
+# Optional: Version schema (if not using dev-kit schema)
+# versioning_schema: SEMVER  # Example: semantic versioning

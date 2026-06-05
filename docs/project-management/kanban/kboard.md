@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW: E06:S09:T22)
-**Version:** v0.6.9.22+1
+**Last Updated:** 2026-06-05 (RW: E06:S09:T21)
+**Version:** v0.6.9.21+4
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -33,8 +33,6 @@ housekeeping_policy: keep
 *(None.)*
 
 ### Could Have (C) - Nice-to-Have Tasks
-
-- **E06:S09:T21** – Lean adopter distribution footprint (FR-110) - 🔄 IN PROGRESS (MEDIUM, lean vendor docs shipped; `greenfield-install/` dir pending) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) | [FR-110](fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) | [Story](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md) | Last modified: 2026-06-05 09:24 UTC
 
 - **E02:S14:T02** – Validate fresh install steps for each path - 📋 TODO (HIGH, Epic 2 workflow-mgt install evaluation) | [Task](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md) | [Story](epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) | Last modified: 2026-06-05 13:08 UTC
 

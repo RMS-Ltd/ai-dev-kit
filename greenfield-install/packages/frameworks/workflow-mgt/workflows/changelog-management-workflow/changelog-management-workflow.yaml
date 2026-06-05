@@ -1,0 +1,161 @@
+name: Changelog Management Workflow
+version: 1.0.0
+type: changelog_management
+description: Automated changelog maintenance workflow with validation, duplicate detection, ordering fixes (Step 3.5), and archival. DETERMINISTIC workflow - can be automated via cron/scheduled execution or triggered manually. No agentic intelligence required - all operations are rule-based. Step 3.5 ensures changelog is sorted before archival to prevent archive corruption.
+
+config:
+  main_changelog: CHANGELOG.md
+  changelog_archive: docs/changelog-and-release-notes/changelog-archive/CHANGELOG_ARCHIVE.md
+  changelog_archive_dir: docs/changelog-and-release-notes/changelog-archive
+  archival_policy:
+    size_threshold_lines: 1000
+    target_size_lines: 750
+    time_threshold_months: 2
+    version_count_threshold: 100
+    minimum_retention_entries: 50
+  use_rw_config: true
+
+steps:
+  - id: step-1
+    name: Analyze Changelog State
+    type: analysis
+    handler: changelog.analyze_state
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies: []
+    config:
+      main_changelog: ${config.main_changelog}
+      analysis_depth: full
+      metrics:
+        - line_count
+        - entry_count
+        - version_list
+        - entry_ages
+        - format_compliance
+        - ordering_status
+        - duplicate_detection
+
+  - id: step-2
+    name: Validate Format and Ordering
+    type: validation
+    handler: changelog.validate_format
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-1
+    config:
+      main_changelog: ${config.main_changelog}
+      validate_format: true
+      validate_ordering: true
+      validate_duplicates: true
+      check_version_headers: true
+      check_date_format: true
+
+  - id: step-3
+    name: Detect and Remove Duplicates
+    type: duplicate_removal
+    handler: changelog.remove_duplicates
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-2
+    config:
+      main_changelog: ${config.main_changelog}
+      keep_first_occurrence: true
+      report_removed: true
+      validate_after_removal: true
+
+  - id: step-3.5
+    name: Fix Ordering
+    type: ordering_fix
+    handler: changelog.fix_ordering
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-3
+    config:
+      main_changelog: ${config.main_changelog}
+      detect_format: true
+      preserve_content: true
+      validate_after_fix: true
+
+  - id: step-4
+    name: Identify Entries for Archival
+    type: archival_identification
+    handler: changelog.identify_archival
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-3.5
+    config:
+      main_changelog: ${config.main_changelog}
+      archival_policy: ${config.archival_policy}
+      intelligent_selection: true
+      preserve_minimum_retention: true
+      consider_multiple_criteria: true
+
+  - id: step-5
+    name: Archive Entries
+    type: archival
+    handler: changelog.archive_entries
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-4
+    config:
+      main_changelog: ${config.main_changelog}
+      changelog_archive: ${config.changelog_archive}
+      preserve_content: true
+      preserve_ordering: true
+      preserve_links: true
+      maintain_newest_first: true
+
+  - id: step-6
+    name: Validate Remaining Changelog
+    type: validation
+    handler: changelog.validate_remaining
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-5
+    config:
+      main_changelog: ${config.main_changelog}
+      changelog_archive: ${config.changelog_archive}
+      validate_format: true
+      validate_ordering: true
+      validate_duplicates: true
+      validate_size: true
+      check_archive_format: true
+
+  - id: step-7
+    name: Stage Files
+    type: git_stage
+    handler: git.stage_all
+    required: true
+    dependencies:
+      - step-6
+    config:
+      paths:
+        - "${config.main_changelog}"
+        - "${config.changelog_archive}"
+
+  - id: step-8
+    name: Report Summary
+    type: documentation
+    handler: changelog.report_summary
+    required: true
+    dependencies:
+      - step-7
+    config:
+      report_format: summary
+      include_metrics: true
+      include_actions: true
+      include_warnings: true
+

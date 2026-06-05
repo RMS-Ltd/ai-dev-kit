@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 21: Lean adopter distribution footprint (FR-110)
 
 **Task ID:** E06:S09:T21  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE (v0.6.9.21+4)  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05  
-**Version:** v0.6.9.21+3  
+**Last updated:** 2026-06-05 (v0.6.9.21+4)  
+**Version:** v0.6.9.21+4  
 **Code:** E06S09T21
 
 **Upstream:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
@@ -84,33 +84,42 @@ Phase 0 must validate installer path assumptions (e.g. `install_greenfield_path.
 
 ---
 
-## Deliverables
+## Deliverable
 
-- [ ] `greenfield-install/` initial population + adopter README
-- [ ] `sync_greenfield_install.py` + mapping manifest
-- [ ] CI: sync drift check + install dry-run smoke
-- [ ] `INSTALL_IN_YOUR_PROJECT.md` lean vendor section
-- [ ] Footprint MiB report (checked in or linked from task)
+- `greenfield-install/` initial population + adopter README + `FOOTPRINT.md`
+- `scripts/sync_greenfield_install.py` + `scripts/greenfield-install-manifest.yaml`
+- CI: `.github/workflows/greenfield-install.yml` (drift check + dry-run smoke + pytest)
+- `INSTALL_IN_YOUR_PROJECT.md` lean vendor section (sparse/copy/update flows)
+- Footprint MiB report in `greenfield-install/FOOTPRINT.md`
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** `greenfield-install/` tracked size ≤50% of full repo (~≤14 MiB).
-- [ ] **AC2:** Sync script is idempotent; CI fails when sources change without re-sync.
-- [ ] **AC3:** Greenfield dry-run passes from `greenfield-install/` cwd.
-- [ ] **AC4:** Install docs show submodule-sparse, copy, and update (tag bump) flows.
-- [ ] **AC5:** No maintainer corpus under `greenfield-install/`.
+- [x] **AC1:** `greenfield-install/` tracked size ≤50% of full repo (~≤14 MiB) — **~10 MiB** measured.
+- [x] **AC2:** Sync script is idempotent; CI fails when sources change without re-sync (`--check`).
+- [x] **AC3:** Greenfield dry-run passes from `greenfield-install/` cwd.
+- [x] **AC4:** Install docs show submodule-sparse, copy, and update (tag bump) flows.
+- [x] **AC5:** No maintainer corpus under `greenfield-install/` (framework packages only).
 
 ---
 
 ## Task checklist
 
-- [ ] Phase 0: Path audit — confirm installer/validator imports from lean root
-- [ ] Phase 1: Scaffold `greenfield-install/` + sync script + initial sync
-- [x] Phase 2: Docs (`README`, `INSTALL_IN_YOUR_PROJECT.md` lean section) — **v0.6.9.21+3** (interim + target contract)
-- [ ] Phase 3: CI smoke + drift guard
-- [ ] Phase 4: Optional release tarball; status reconciliation
+- [x] Phase 0: Path audit — `install_greenfield_path.py` resolves `packages/frameworks/...` from lean root
+- [x] Phase 1: Scaffold `greenfield-install/` + sync script + initial sync (1500 files)
+- [x] Phase 2: Docs (`README`, `INSTALL_IN_YOUR_PROJECT.md` lean section) — **v0.6.9.21+3** + post-sync update
+- [x] Phase 3: CI smoke + drift guard — `greenfield-install.yml` + `scripts/test_sync_greenfield_install.py`
+- [x] Phase 4: RW release + status reconciliation — **v0.6.9.21+4** (optional FR-062 tarball deferred)
+
+---
+
+## Implementation evidence
+
+- Sync: [`scripts/sync_greenfield_install.py`](../../../../../scripts/sync_greenfield_install.py) · [`scripts/greenfield-install-manifest.yaml`](../../../../../scripts/greenfield-install-manifest.yaml)
+- Lean tree: [`greenfield-install/`](../../../../../greenfield-install/) · [`FOOTPRINT.md`](../../../../../greenfield-install/FOOTPRINT.md)
+- CI: [`.github/workflows/greenfield-install.yml`](../../../../../.github/workflows/greenfield-install.yml)
+- Tests: [`scripts/test_sync_greenfield_install.py`](../../../../../scripts/test_sync_greenfield_install.py)
 
 ---
 
@@ -118,3 +127,4 @@ Phase 0 must validate installer path assumptions (e.g. `install_greenfield_path.
 
 - [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)
+- [E06:S09:T22](T22-package-documentation-greenfield-install-alignment-fr110.md) (package README alignment)

@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E06:S09:T21": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.21+4 — task COMPLETE; terminal row pruned from active kboard per FR-109"
+    }
+  }
+}

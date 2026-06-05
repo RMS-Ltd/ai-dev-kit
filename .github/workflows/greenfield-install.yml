@@ -1,0 +1,59 @@
+# E06:S09:T21 / FR-110 — lean adopter tree sync drift guard + install smoke.
+name: Greenfield install
+
+"on":
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - "greenfield-install/**"
+      - "packages/frameworks/**"
+      - "scripts/sync_greenfield_install.py"
+      - "scripts/greenfield-install-manifest.yaml"
+      - "scripts/test_sync_greenfield_install.py"
+      - ".github/workflows/greenfield-install.yml"
+  pull_request:
+    paths:
+      - "greenfield-install/**"
+      - "packages/frameworks/**"
+      - "scripts/sync_greenfield_install.py"
+      - "scripts/greenfield-install-manifest.yaml"
+      - "scripts/test_sync_greenfield_install.py"
+      - ".github/workflows/greenfield-install.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: greenfield-install-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  greenfield-install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: scripts/greenfield-install-manifest.yaml
+
+      - name: Install dependencies
+        run: pip install pytest "pyyaml>=6.0"
+
+      - name: Drift check (sources vs greenfield-install/)
+        run: python scripts/sync_greenfield_install.py --check
+
+      - name: Install orchestrator dry-run from greenfield-install/
+        run: |
+          cd greenfield-install
+          python packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py \
+            --dry-run --non-interactive --project-root .
+
+      - name: Pytest sync + footprint guards
+        run: python -m pytest scripts/test_sync_greenfield_install.py -q
