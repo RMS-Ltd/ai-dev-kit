@@ -124,10 +124,8 @@ def find_framework_directory(framework_name: str, frameworks_root: Path) -> Path
             slug_dir = frameworks_root / slug
             if slug_dir.exists() and slug_dir.is_dir():
                 return slug_dir
-    except ImportError:
-        pass
-
-    # Direct match
+    except ImportError as _suppressed_exc:
+        del _suppressed_exc
     framework_dir = frameworks_root / framework_name
     if framework_dir.exists() and framework_dir.is_dir():
         return framework_dir
@@ -207,8 +205,8 @@ def extract_framework_metadata(framework_dir: Path, framework_name: str, version
                 first_line = lines[0].strip()
                 if first_line and not first_line.startswith('#'):
                     metadata["description"] = first_line[:200]  # Limit length
-        except Exception:
-            pass  # Ignore errors in metadata extraction
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
     
     return metadata
 

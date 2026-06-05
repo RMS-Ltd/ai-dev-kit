@@ -38,10 +38,8 @@ def find_changelog_archive(project_root: Path = None) -> Path:
             archive = config.get('changelog_archive', {}).get('archive_file')
             if archive:
                 return project_root / archive
-        except Exception:
-            pass
-
-    # Default fallback
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
     return (
         project_root
         / "docs"

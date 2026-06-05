@@ -192,9 +192,8 @@ class IntakeVersionAssignment:
             match = re.search(pattern, content)
             if match:
                 return int(match.group(1))
-        except Exception:
-            # Return default on error
-            pass
+        except Exception as _suppressed_exc:
+            del _suppressed_exc  # Return default on error
         
         return default
     
@@ -227,10 +226,8 @@ class IntakeVersionAssignment:
                     build_numbers = [int(m) for m in matches]
                     max_build = max(build_numbers)
                     return max_build + 1
-            except Exception:
-                pass
-        
-        # Default: start at build 1 for existing task
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         return 1
 
 

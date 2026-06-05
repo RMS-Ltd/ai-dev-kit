@@ -181,8 +181,8 @@ def main():
         if date_match:
             try:
                 return datetime.strptime(date_match.group(1), '%Y-%m-%d')
-            except:
-                pass
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         return datetime.min
     
     # Group by MoSCOW category

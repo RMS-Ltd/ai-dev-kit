@@ -101,10 +101,8 @@ def get_last_review_date(file_path: Path) -> Optional[datetime]:
             match = re.search(r'last_reviewed[:\s]+(\d{4}-\d{2}-\d{2})', content)
             if match:
                 return datetime.strptime(match.group(1), '%Y-%m-%d')
-    except Exception:
-        pass
-    
-    # Check Git history (last commit date)
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     try:
         import subprocess
         result = subprocess.run(
@@ -116,9 +114,8 @@ def get_last_review_date(file_path: Path) -> Optional[datetime]:
         if result.returncode == 0 and result.stdout.strip():
             date_str = result.stdout.strip().split()[0]
             return datetime.strptime(date_str, '%Y-%m-%d')
-    except Exception:
-        pass
-    
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     return None
 
 

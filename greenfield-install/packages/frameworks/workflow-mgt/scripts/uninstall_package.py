@@ -129,10 +129,8 @@ class PackageUninstaller:
                 frameworks = config.get("frameworks", {})
                 if self.package_name in frameworks:
                     return frameworks[self.package_name].get("backend", "git-submodule")
-            except Exception:
-                pass
-        
-        # Check for Git submodule
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         if self._is_git_submodule():
             return "git-submodule"
         
@@ -169,8 +167,8 @@ class PackageUninstaller:
                     data = json.load(f)
                 deps = {**data.get("dependencies", {}), **data.get("devDependencies", {})}
                 return any("ai-dev-kit" in pkg or self.package_name in pkg for pkg in deps.keys())
-            except Exception:
-                pass
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         return False
     
     def _is_pip_package(self) -> bool:
@@ -180,8 +178,8 @@ class PackageUninstaller:
             try:
                 content = requirements_txt.read_text(encoding='utf-8')
                 return "ai-dev-kit" in content.lower() or self.package_name in content.lower()
-            except Exception:
-                pass
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         return False
     
     def _detect_package(self) -> Optional[Dict]:
@@ -207,10 +205,8 @@ class PackageUninstaller:
                         package_path = Path(frameworks[self.package_name]["path"])
                         if package_path.exists():
                             package_info["paths"].append(str(package_path))
-            except Exception:
-                pass
-        
-        # Check common framework paths
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         common_paths = [
             self.project_root / "packages" / "frameworks" / self.package_name,
             self.project_root / "frameworks" / self.package_name,
@@ -237,9 +233,8 @@ class PackageUninstaller:
                         parts = line.strip().split()
                         if len(parts) >= 2:
                             package_info["paths"].append(parts[1])
-            except Exception:
-                pass
-        
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         return package_info if package_info["paths"] or package_info["config_entries"] else None
     
     def _check_dependencies(self) -> List[str]:
@@ -580,9 +575,8 @@ class PackageUninstaller:
                         "file": ".ai-dev-kit.yaml",
                         "severity": "medium"
                     })
-            except Exception:
-                pass
-        
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         return {
             "clean": len(issues) == 0,
             "issues": issues,

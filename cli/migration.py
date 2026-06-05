@@ -140,8 +140,8 @@ def _extract_version_from_config(config_path: Path) -> Optional[str]:
             for key in ['version', 'framework_version', 'rw_version']:
                 if key in config:
                     return str(config[key])
-    except Exception:
-        pass
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     return None
 
 

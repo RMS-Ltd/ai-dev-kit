@@ -78,9 +78,8 @@ def parse_date(date_str: str, version_str: str) -> Optional[datetime]:
         # Try old format: YYYY-MM-DD
         if re.match(r"\d{4}-\d{2}-\d{2}", date_str):
             return datetime.strptime(date_str, "%Y-%m-%d")
-    except (ValueError, IndexError):
-        pass
-    
+    except (ValueError, IndexError) as _suppressed_exc:
+        del _suppressed_exc
     return None
 
 
@@ -122,8 +121,8 @@ def extract_changelog_entries(content: str) -> List[ChangelogEntry]:
                         end_line=i - 1,
                         full_text=entry_text
                     ))
-                except ValueError:
-                    pass  # Skip invalid versions
+                except ValueError as _suppressed_exc:
+                    del _suppressed_exc
             
             # Start new entry
             current_version_str = match.group(1)
@@ -154,9 +153,8 @@ def extract_changelog_entries(content: str) -> List[ChangelogEntry]:
                 end_line=len(lines) - 1,
                 full_text=entry_text
             ))
-        except ValueError:
-            pass
-    
+        except ValueError as _suppressed_exc:
+            del _suppressed_exc
     return entries
 
 

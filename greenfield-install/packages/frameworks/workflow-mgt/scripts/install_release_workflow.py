@@ -22,6 +22,7 @@ import importlib.util
 import os
 import re
 import sys
+from contextlib import suppress
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -142,7 +143,6 @@ TEMPLATES_DIR = PACKAGE_ROOT / "templates"
 CURSORRULES_TEMPLATE = FRAMEWORK_ROOT / "cursorrules-rw-trigger-section.md"
 SCHEMA_DOC = FRAMEWORK_ROOT / "config" / "rw-config-schema.md"
 
-_ENV_LOG_FH = None
 _ENV_LOG_PATH_ENV_VAR = "AI_DEV_KIT_INSTALL_LOG_PATH"
 
 
@@ -154,21 +154,15 @@ def _log(level: str, message: str) -> None:
     lines into the shared install log so that workflow-mgt installs can be
     correlated with CLI runs. Logging failures must never break behaviour.
     """
-    global _ENV_LOG_FH
-
+    
     log_path = os.getenv(_ENV_LOG_PATH_ENV_VAR)
     if not log_path:
         return
 
-    try:
-        if _ENV_LOG_FH is None:
-            _ENV_LOG_FH = open(log_path, "a", encoding="utf-8")
-        ts = datetime.utcnow().isoformat(timespec="seconds") + "Z"
-        _ENV_LOG_FH.write(f"[{ts}] [{level}] workflow_mgt.install {message}\n")
-        _ENV_LOG_FH.flush()
-    except Exception:
-        # Logging must not interfere with installation
-        pass
+    ts = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    with suppress(OSError):
+        with open(log_path, "a", encoding="utf-8") as _log_fh:
+            _log_fh.write(f"[{ts}] [{level}] workflow_mgt.install {message}\n")
 
 
 def load_template(template_path: Path) -> str:

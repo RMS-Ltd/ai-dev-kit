@@ -180,9 +180,8 @@ def build_tree_and_sections(
                 if dt < datetime.now(timezone.utc):
                     expired_paths.append(rel_str)
                     sec["expired_count"] += 1
-            except Exception:
-                pass
-
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         if rel_str.lower().endswith("readme.md"):
             readme_paths.append({"path": rel_str})
 

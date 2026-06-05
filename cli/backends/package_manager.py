@@ -355,7 +355,7 @@ class PipBackend(PackageManagerBackend):
         try:
             subprocess.run(["pip", "--version"], capture_output=True, timeout=2)
             return "pip"
-        except:
+        except (subprocess.SubprocessError, OSError, FileNotFoundError):
             return "pip3"
     
     def _check_package_exists(self, package_name: str, version: Optional[str] = None) -> bool:

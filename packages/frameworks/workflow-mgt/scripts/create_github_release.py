@@ -62,9 +62,8 @@ def load_env_local():
                         # Only set if not already in environment
                         if key and value and key not in os.environ:
                             os.environ[key] = value
-        except Exception:
-            # Silently fail - don't break if .env.local has issues
-            pass
+        except Exception as _suppressed_exc:
+            del _suppressed_exc  # Silently fail - don't break if .env.local has issues
 
 # Load .env.local before checking for environment variables
 load_env_local()
@@ -90,9 +89,8 @@ def get_default_repo() -> str:
             parts = remote_url.replace("git@github.com:", "").removesuffix(".git").split("/")
             if len(parts) >= 2:
                 return f"{parts[-2]}/{parts[-1]}"
-    except Exception:
-        pass
-    # Fallback to hardcoded default
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     return "RMS-Ltd/ai-dev-kit"
 
 

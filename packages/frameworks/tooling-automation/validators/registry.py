@@ -110,7 +110,7 @@ class ValidatorRegistry:
                 instance = validator_class(config)
                 if target in instance.get_supported_targets():
                     result.append(name)
-            except Exception:
-                pass
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         return result
 

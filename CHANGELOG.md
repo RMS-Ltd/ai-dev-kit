@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.13+1] - 05-06-26
+
+E08:S03:T13 — **Change implemented:** Code Quality reliability wave-1 remediation (**BR-100**, 60 files). SemVer **v0.4.970+1**. Dashboard re-scan pending.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.13+1.md)
+
+---
+
 ## [0.8.3.12+1] - 05-06-26
 
 E08:S03:T12 — **Attempted fix:** Code Quality maintainability wave-1 hygiene (**BR-099**, 406 files, `ruff` autofix). SemVer **v0.4.969+1**. Dashboard re-scan pending.

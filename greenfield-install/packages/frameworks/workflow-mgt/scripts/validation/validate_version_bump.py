@@ -593,8 +593,8 @@ def locate_task_doc(
     for root in search_roots:
         try:
             root = root.resolve()
-        except Exception:
-            pass
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
         if root in seen or not root.exists():
             continue
         seen.add(root)
@@ -831,10 +831,8 @@ def get_changed_files(project_root: Path = None) -> List[Path]:
             for line in result.stdout.strip().split('\n'):
                 if line.strip():
                     changed_files.append(project_root / line.strip())
-    except Exception:
-        pass
-    
-    # Get unstaged files
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     try:
         result = subprocess.run(
             ["git", "diff", "--name-only"],
@@ -849,10 +847,8 @@ def get_changed_files(project_root: Path = None) -> List[Path]:
                     file_path = project_root / line.strip()
                     if file_path not in changed_files:
                         changed_files.append(file_path)
-    except Exception:
-        pass
-    
-    # Also check for untracked files (new files)
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     try:
         result = subprocess.run(
             ["git", "ls-files", "--others", "--exclude-standard"],
@@ -867,9 +863,8 @@ def get_changed_files(project_root: Path = None) -> List[Path]:
                     file_path = project_root / line.strip()
                     if file_path not in changed_files:
                         changed_files.append(file_path)
-    except Exception:
-        pass
-    
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     return changed_files
 
 
@@ -954,10 +949,8 @@ def detect_first_time_est_doc(
                     # New file (Added)
                     new_est_doc_found = True
                     break
-            except Exception:
-                pass
-    
-    # Check 2: Check for delimited section in Story file (for Task docs)
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
     # Look for new Task section header being added to Story file
     delimited_section_found = False
     if task > 0:  # Task-level detection
@@ -981,10 +974,8 @@ def detect_first_time_est_doc(
                     )
                     if task_header_pattern.search(result.stdout):
                         delimited_section_found = True
-            except Exception:
-                pass
-    
-    # Check 3: Check if prior version exists in git history
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
     # Look for version pattern RC.EPIC.STORY.TASK+* in git log or changelog
     version_pattern = rf'{epic}\.{story}\.{task}\+'
     prior_version_exists = False
@@ -1000,10 +991,8 @@ def detect_first_time_est_doc(
         )
         if result.returncode == 0 and result.stdout.strip():
             prior_version_exists = True
-    except Exception:
-        pass
-    
-    # Check changelog for prior version - use HEAD (committed) only to avoid false positive
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     # during RW when CHANGELOG has already been updated with the version we're committing
     if not prior_version_exists:
         try:
@@ -1016,10 +1005,8 @@ def detect_first_time_est_doc(
             )
             if result.returncode == 0 and re.search(version_pattern, result.stdout or ""):
                 prior_version_exists = True
-        except Exception:
-            pass
-    
-    # CRITICAL FIX: Check if task document already exists (even if not created in this commit)
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
     # If task doc exists, it's NOT doc-init, regardless of prior version history
     # This fixes the bug where story + all task docs created together in story's abstract space
     # causes first implementation work to incorrectly get BUILD=0 instead of BUILD=1
@@ -1114,10 +1101,8 @@ def validate_doc_init_build(
         # Resolve relative to project_root so relative_to works
         resolved_vf = (project_root / version_file_path).resolve()
         allowed_non_doc_relpaths.add(str(resolved_vf.relative_to(project_root.resolve())))
-    except Exception:
-        pass
-    
-    # Get changed files
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     changed_files = get_changed_files(project_root)
     
     if not changed_files:

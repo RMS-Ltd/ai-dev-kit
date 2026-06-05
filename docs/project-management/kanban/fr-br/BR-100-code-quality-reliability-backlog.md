@@ -11,10 +11,10 @@ housekeeping_policy: keep
 **Bug ID:** BR-100  
 **Priority:** HIGH  
 **Severity:** HIGH — Code Quality **Reliability** score **Needs Improvement**; **133** open standard findings on `main` (2026-06-05).  
-**Status:** OPEN  
+**Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.13+0 – Kanban documentation setup)  
-**Version:** v0.8.3.13+0  
+**Last updated:** 2026-06-05 (v0.8.3.13+1 — wave-1 remediation released; dashboard re-scan pending)  
+**Version:** v0.8.3.13+1  
 **Implementing Task:** [E08:S03:T13](../epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md)
 
@@ -62,11 +62,19 @@ GitHub **Code Quality** reports **133 open reliability findings** on `main`, wit
 
 ---
 
+## Fix attempt (2026-06-05)
+
+**Change implemented:** Wave-1 surgical remediation per [IPP-E08S03T13](../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — empty-except (`pass` handlers → `del _suppressed_exc`), file-not-closed (`_ENV_LOG_FH` → per-write `with open` + `suppress`), bare `except:` → typed exceptions. **60** Python files; `pytest tests/` **396 passed**.
+
+**Verification:** Local AST scan post-wave: **0** pass-only handlers, **0** bare except, **0** assign-open leaks. GitHub dashboard Reliability score **not yet re-scanned** — pending push/merge.
+
+---
+
 ## Acceptance criteria
 
-- [ ] **AC1 — Baseline manifest:** Export open reliability finding counts by rule + file hotspots; attach to task doc with `main` SHA.
-- [ ] **AC2 — Triage:** Classify each wave-1 rule group as **fix**, **false-positive waive** (with comment), or **defer** (with rationale).
-- [ ] **AC3 — Wave 1 fixes:** Remediate all confirmed true positives in wave-1 rule groups; no new reliability regressions in CI.
+- [x] **AC1 — Baseline manifest:** Export open reliability finding counts by rule + file hotspots; attach to task doc with `main` SHA.
+- [x] **AC2 — Triage:** Classify each wave-1 rule group as **fix**, **false-positive waive** (with comment), or **defer** (with rationale).
+- [x] **AC3 — Wave 1 fixes:** Remediate all confirmed true positives in wave-1 rule groups; no new reliability regressions in CI.
 - [ ] **AC4 — Score improvement:** Reliability improves from **Needs Improvement** to **Fair** or better (or documented GitHub scoring lag).
 - [ ] **AC5 — Kanban wiring:** **BR-100** ↔ **E08:S03:T13** linked; released via RW when wave completes.
 

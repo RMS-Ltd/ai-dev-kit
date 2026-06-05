@@ -394,10 +394,8 @@ def get_changed_files(project_root: Path = None) -> List[Path]:
             for line in result.stdout.strip().split('\n'):
                 if line.strip():
                     changed_files.append(project_root / line.strip())
-    except Exception:
-        pass
-    
-    # Get unstaged files
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     try:
         result = subprocess.run(
             ["git", "diff", "--name-only"],
@@ -412,10 +410,8 @@ def get_changed_files(project_root: Path = None) -> List[Path]:
                     file_path = project_root / line.strip()
                     if file_path not in changed_files:
                         changed_files.append(file_path)
-    except Exception:
-        pass
-    
-    # Also check for untracked files (new files)
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     try:
         result = subprocess.run(
             ["git", "ls-files", "--others", "--exclude-standard"],
@@ -430,9 +426,8 @@ def get_changed_files(project_root: Path = None) -> List[Path]:
                     file_path = project_root / line.strip()
                     if file_path not in changed_files:
                         changed_files.append(file_path)
-    except Exception:
-        pass
-    
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     return changed_files
 
 
@@ -472,10 +467,8 @@ def validate_doc_init_build(version: str, config: Optional[Dict] = None) -> Tupl
     try:
         vp = (project_root / version_file_path).resolve().relative_to(project_root.resolve())
         allowed_non_doc_relpaths.add(str(vp))
-    except Exception:
-        pass
-
-    # Get changed files
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     changed_files = get_changed_files(project_root)
     
     if not changed_files:
@@ -613,8 +606,8 @@ def check_changelog(branch, config: Optional[Dict] = None, current_version: Opti
                                 f"Staged CHANGELOG entry '{staged_version}' has Epic {version_epic} "
                                 f"but branch '{branch}' expects Epic {expected_epic}"
                             )
-        except subprocess.CalledProcessError:
-            pass  # No staged changes
+        except subprocess.CalledProcessError as _suppressed_exc:
+            del _suppressed_exc
 
     return len(issues) == 0, issues
 

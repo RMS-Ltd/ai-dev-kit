@@ -25,6 +25,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Optional
+from contextlib import suppress
 
 # Install UX version display (UXR-016)
 _WORKFLOW_SCRIPTS = Path(__file__).resolve().parents[2] / "workflow-mgt" / "scripts"
@@ -88,7 +89,6 @@ except ImportError:
 
 
 INSTALL_LOGGER = None
-_ENV_LOG_FH = None
 _ENV_LOG_PATH_ENV_VAR = "AI_DEV_KIT_INSTALL_LOG_PATH"
 
 
@@ -100,31 +100,25 @@ def _log(level: str, message: str) -> None:
     Falls back to appending to the log file path exposed via AI_DEV_KIT_INSTALL_LOG_PATH
     so that CLI-driven installs can capture structured output in the same per-run log.
     """
-    global INSTALL_LOGGER, _ENV_LOG_FH
+    global INSTALL_LOGGER
 
     # Delegate to external logger callback if provided
     if INSTALL_LOGGER is not None:
         try:
             INSTALL_LOGGER(level, "kanban.install", message)
             return
-        except Exception:
-            # Fall back to env-based logging if the callback fails
-            pass
+        except Exception as _suppressed_exc:
+            del _suppressed_exc  # Fall back to env-based logging if the callback fails
 
     # Fallback: append to env-configured log file if present
     log_path = os.getenv(_ENV_LOG_PATH_ENV_VAR)
     if not log_path:
         return
 
-    try:
-        if _ENV_LOG_FH is None:
-            _ENV_LOG_FH = open(log_path, "a", encoding="utf-8")
-        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        _ENV_LOG_FH.write(f"[{ts}] [{level}] kanban.install {message}\n")
-        _ENV_LOG_FH.flush()
-    except Exception:
-        # Logging should never break installation script behaviour
-        pass
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    with suppress(OSError):
+        with open(log_path, "a", encoding="utf-8") as _log_fh:
+            _log_fh.write(f"[{ts}] [{level}] kanban.install {message}\n")
 
 
 def run_command(cmd: list, cwd: Optional[Path] = None) -> tuple[int, str, str]:
@@ -378,9 +372,8 @@ def select_installation_mode(analysis_report_path: Optional[Path], requested_mod
             with open(analysis_report_path, 'r', encoding='utf-8') as f:
                 analysis = json.load(f)
             recommended_mode = analysis.get("migration_plan", {}).get("recommended_mode")
-        except Exception:
-            pass
-    
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
     print("\n🔧 Step 3: Select installation mode")
     _log("INFO", "[KANBAN_MODE] Selecting installation mode")
     print("=" * 60)
@@ -399,9 +392,8 @@ def select_installation_mode(analysis_report_path: Optional[Path], requested_mod
                 with open(analysis_report_path, 'r', encoding='utf-8') as f:
                     analysis = json.load(f)
                 rationale = analysis.get("migration_plan", {}).get("recommendation_rationale")
-            except Exception:
-                pass
-        
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         print(f"\n💡 Recommended mode: {recommended_mode}")
         if rationale:
             print(f"   Rationale: {rationale}")

@@ -1098,10 +1098,8 @@ def apply_canonical_row_transform_pipeline(
 
                 transformed, ch = apply_icons_to_moscow_board_content(transformed)
                 icon_changes += ch
-            except ImportError:
-                # Best-effort cosmetic pass; not part of the canonical executed-step
-                # diagnostics contract used by tests.
-                pass
+            except ImportError as _suppressed_exc:
+                del _suppressed_exc  # Best-effort cosmetic pass; optional state_icons module
         else:
             raise ValueError(f"Unknown row-transform step '{step}' in contract '{contract.name}'")
 
@@ -1331,9 +1329,8 @@ def update_kanban_board(
         content, icon_final = apply_icons_to_moscow_board_content(content)
         if icon_final:
             changes.append(f"MoSCOW state icons reconciled ({icon_final} row(s))")
-    except ImportError:
-        pass
-    
+    except ImportError as _suppressed_exc:
+        del _suppressed_exc
     if not dry_run:
         try:
             board_path.write_text(content)

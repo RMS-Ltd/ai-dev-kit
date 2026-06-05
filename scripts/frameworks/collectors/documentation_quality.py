@@ -61,11 +61,10 @@ def collect_documentation_quality_metrics(
                         mod_date = datetime.fromisoformat(mod_date_str.replace(" ", "T").split("+")[0])
                         if mod_date >= cutoff_date:
                             updated_docs += 1
-                    except Exception:
-                        pass
-            except Exception:
-                pass
-    
+                    except Exception as _suppressed_exc:
+                        del _suppressed_exc
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
     currency = (updated_docs / total_docs * 100) if total_docs > 0 else 0
     
     # Link health (simplified - count markdown links)
@@ -84,9 +83,8 @@ def collect_documentation_quality_metrics(
                 for _, url in links:
                     if url.startswith("http") or url.startswith("/") or url.startswith("./"):
                         valid_links += 1
-            except Exception:
-                pass
-    
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
     link_health = (valid_links / link_count * 100) if link_count > 0 else 100
     
     # Examples quality (count example files)

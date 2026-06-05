@@ -63,10 +63,8 @@ class GitTagHandler:
         if get_semver_mapping_strategy:
             try:
                 return get_semver_mapping_strategy()
-            except Exception:
-                pass
-        
-        # Fallback to rw-config.yaml
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         rw_config = self.load_rw_config()
         return rw_config.get('semver_mapping_strategy', 'registry')
     

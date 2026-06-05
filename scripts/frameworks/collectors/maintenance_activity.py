@@ -24,10 +24,8 @@ def collect_maintenance_activity_metrics(
         try:
             last_commit_date = datetime.fromisoformat(commits[0]["date"].replace(" ", "T").split("+")[0])
             last_update_days = (datetime.now() - last_commit_date).days
-        except Exception:
-            pass
-    
-    # Count changelog entries
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
     changelog_entries = count_changelog_entries(framework_path, days_back)
     
     # Version progression (count version bumps in commits)

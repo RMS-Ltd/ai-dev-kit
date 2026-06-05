@@ -74,8 +74,8 @@ def _read_version_string_from_file(version_file: Path) -> Optional[str]:
         version_string = getattr(mod, "VERSION_STRING", None)
         if version_string:
             return str(version_string)
-    except Exception:
-        pass
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     try:
         content = version_file.read_text(encoding="utf-8")
     except OSError:
@@ -114,8 +114,8 @@ def _load_internal_from_cli_package() -> Optional[str]:
 
         if cli_version:
             return str(cli_version)
-    except Exception:
-        pass
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     return None
 
 
@@ -146,10 +146,8 @@ def _convert_to_semver(internal: str, project_root: Path) -> Optional[str]:
             import os
 
             os.chdir(previous_cwd)
-        except Exception:
-            pass
-
-
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
 def _resolve_internal(project_root: Optional[Path]) -> Optional[str]:
     start = (project_root or Path.cwd()).resolve()
     internal = _load_internal_from_rw_config(start)

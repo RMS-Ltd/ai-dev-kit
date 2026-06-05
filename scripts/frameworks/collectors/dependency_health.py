@@ -34,9 +34,8 @@ def collect_dependency_health_metrics(
             deps = data.get("dependencies", {})
             dev_deps = data.get("devDependencies", {})
             dependencies.extend(list(deps.keys()) + list(dev_deps.keys()))
-        except Exception:
-            pass
-    
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
     requirements_txt = framework_path / "requirements.txt"
     if requirements_txt.exists():
         try:
@@ -48,9 +47,8 @@ def collect_dependency_health_metrics(
                     pkg_name = line.split("==")[0].split("@")[0].split(">=")[0].split("<=")[0].strip()
                     if pkg_name:
                         dependencies.append(pkg_name)
-        except Exception:
-            pass
-    
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
     dependency_count = len(dependencies)
     
     # TODO: Check dependency currency, security, compatibility

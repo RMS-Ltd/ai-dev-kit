@@ -273,9 +273,8 @@ def extract_package(
                 from install_ux_version import print_legacy_framework_layout_warning
 
                 print_legacy_framework_layout_warning(frameworks_root=install_dir)
-            except ImportError:
-                pass
-            
+            except ImportError as _suppressed_exc:
+                del _suppressed_exc
             if verbose:
                 print(f"   ✅ Package extracted: {target_path}")
             

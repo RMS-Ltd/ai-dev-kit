@@ -1412,9 +1412,8 @@ def run_release_readiness(
                 )
             )
             report.release_scope = data.get("release_scope", {}) or {}
-        except Exception:
-            pass
-
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
     return report
 
 

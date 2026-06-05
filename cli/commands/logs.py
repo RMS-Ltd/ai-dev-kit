@@ -578,9 +578,8 @@ class LogsCommand(BaseCommand):
         rel = str(log_file)
         try:
             rel = str(log_file.relative_to(project_root))
-        except Exception:
-            pass
-
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
         if checked == 0:
             print_error(f"{rel}: no JSON log entries found")
             return errors + 1
@@ -624,8 +623,8 @@ class LogsCommand(BaseCommand):
                 try:
                     ts_part = line.split("]", 1)[0].lstrip("[")
                     time = ts_part
-                except Exception:
-                    pass
+                except Exception as _suppressed_exc:
+                    del _suppressed_exc
             if "install.framework" in line and "Installing " in line:
                 # e.g. "[..] [INFO] [install.framework] Installing kanban@latest to ..."
                 try:
@@ -635,8 +634,8 @@ class LogsCommand(BaseCommand):
                     if "Installing" in parts and len(parts) >= 2:
                         idx = parts.index("Installing")
                         frameworks.append(parts[idx + 1])
-                except Exception:
-                    pass
+                except Exception as _suppressed_exc:
+                    del _suppressed_exc
             if "install.framework" in line and "Using source" in line:
                 if "backend" in line:
                     backend = line.split("backend")[-1].strip()

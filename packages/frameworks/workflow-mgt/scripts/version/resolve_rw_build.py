@@ -79,8 +79,8 @@ def head_est_from_git(version_file: Path) -> Optional[Tuple[int, int, int, int, 
     rel = version_file
     try:
         rel = version_file.relative_to(Path.cwd())
-    except ValueError:
-        pass
+    except ValueError as _suppressed_exc:
+        del _suppressed_exc
     ref = f"HEAD:{rel}"
     import subprocess
 

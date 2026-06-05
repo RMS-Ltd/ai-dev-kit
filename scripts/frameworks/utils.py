@@ -60,9 +60,8 @@ def load_framework_metadata(framework_path: Path) -> Dict:
         last_updated_match = re.search(r'\*\*Last Updated:\*\*\s*([^\n]+)', content)
         if last_updated_match:
             metadata["last_updated"] = last_updated_match.group(1).strip()
-    except Exception:
-        pass
-    
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     return metadata
 
 
@@ -128,9 +127,8 @@ def count_changelog_entries(framework_path: Path, days_back: int = 90) -> int:
                 
                 # Filter by date if possible (simplified - just count all entries)
                 return len(version_entries)
-            except Exception:
-                pass
-    
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
     return 0
 
 

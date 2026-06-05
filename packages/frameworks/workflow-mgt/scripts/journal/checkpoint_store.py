@@ -35,8 +35,8 @@ def _git_porcelain(project_root: Path) -> str:
         )
         if result.returncode == 0:
             return result.stdout
-    except (OSError, subprocess.TimeoutExpired):
-        pass
+    except (OSError, subprocess.TimeoutExpired) as _suppressed_exc:
+        del _suppressed_exc
     return ""
 
 

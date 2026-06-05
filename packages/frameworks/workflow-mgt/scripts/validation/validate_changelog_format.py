@@ -127,19 +127,16 @@ def extract_changelog_entries(content: str) -> List[Tuple[str, Tuple[int, int, i
         try:
             parsed = parse_version(version_str)
             entries.append((version_str, parsed, date))
-        except ValueError:
-            pass
-
-    # Extract old format versions (grandfathered)
+        except ValueError as _suppressed_exc:
+            del _suppressed_exc
     for match in OLD_VERSION_PATTERN.finditer(content):
         rc, epic, story, patch, date = match.groups()
         version_str = f"{rc}.{epic}.{story}.{patch}"
         try:
             parsed = parse_version(version_str)
             entries.append((version_str, parsed, date))
-        except ValueError:
-            pass
-
+        except ValueError as _suppressed_exc:
+            del _suppressed_exc
     return entries
 
 

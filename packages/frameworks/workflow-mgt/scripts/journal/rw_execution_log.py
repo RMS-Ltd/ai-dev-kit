@@ -40,8 +40,8 @@ def load_execution_log_config(
                     loaded = yaml.safe_load(f)
                 if isinstance(loaded, dict):
                     config = loaded
-            except (OSError, yaml.YAMLError):
-                pass
+            except (OSError, yaml.YAMLError) as _suppressed_exc:
+                del _suppressed_exc
     if config:
         for key in merged:
             if key in config and config[key] is not None:

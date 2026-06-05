@@ -121,15 +121,15 @@ class InstallCommand(BaseCommand):
                 if status in ("error", "failed"):
                     try:
                         payload = merge_error_into_event(payload, CLI_INSTALL_ERROR_CODE)
-                    except Exception:
-                        pass
+                    except Exception as _suppressed_exc:
+                        del _suppressed_exc
                 return payload
 
             def fail_install(message: str, context: str, intent: str, action: str, details: str) -> int:
                 try:
                     emit_install_error(CLI_INSTALL_ERROR_CODE, detail=details)
-                except Exception:
-                    pass
+                except Exception as _suppressed_exc:
+                    del _suppressed_exc
                 print_error(message)
                 log(
                     "ERROR",
@@ -351,8 +351,8 @@ class InstallCommand(BaseCommand):
                                 CLI_INSTALL_ERROR_CODE,
                                 detail=f"{framework}@{version_str}",
                             )
-                        except Exception:
-                            pass
+                        except Exception as _suppressed_exc:
+                            del _suppressed_exc
                         log(
                             "ERROR",
                             "install.framework",

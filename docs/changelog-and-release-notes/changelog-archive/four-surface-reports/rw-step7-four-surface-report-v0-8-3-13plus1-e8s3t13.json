@@ -1,0 +1,40 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 scoped reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 13,
+    "task_id": "E8:S3:T13",
+    "version_string": "v0.8.3.13+1"
+  },
+  "timestamp_utc": "2026-06-05 14:42 UTC",
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 1,
+    "stamps_preserved_existing": 1,
+    "total_changes": 8,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md"
+      ],
+      "changes": ["Version v0.8.3.13+1", "Status IN PROGRESS", "Post-wave manifest"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md"],
+      "changes": ["Fix-attempt section", "AC1-AC3 checked"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "changes": ["E08:S03:T13 IN PROGRESS", "Board metadata updated", "Row stamp preserved FR-097"]
+    }
+  }
+}

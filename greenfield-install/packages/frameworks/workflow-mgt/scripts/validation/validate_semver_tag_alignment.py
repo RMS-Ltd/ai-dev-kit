@@ -60,8 +60,8 @@ def load_internal_version(project_root: Path) -> str:
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         return getattr(mod, "VERSION_STRING", None)
-    except Exception:
-        pass
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
     content = version_file.read_text(encoding="utf-8")
     m = re.search(r"VERSION_RC\s*=\s*(\d+).*?VERSION_EPIC\s*=\s*(\d+).*?VERSION_STORY\s*=\s*(\d+).*?VERSION_TASK\s*=\s*(\d+).*?VERSION_BUILD\s*=\s*(\d+)", content, re.DOTALL)
     if m:

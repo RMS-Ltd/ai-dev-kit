@@ -155,9 +155,8 @@ def create_install_logger(
                 resolved = resolve_install_adk_version(project_root)
                 adk_semver = resolved.semver
                 adk_internal_version = resolved.internal
-            except Exception:
-                pass
-
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
         strict_event_contract = bool(config.get("install_logging.strict_event_contract", False))
 
         if fmt == "json":
@@ -232,8 +231,8 @@ def create_install_logger(
         if fh is not None:
             try:
                 fh.close()
-            except Exception:
-                pass
+            except Exception as _suppressed_exc:
+                del _suppressed_exc
             fh = None
         os.environ.pop("AI_DEV_KIT_INSTALL_LOG_PATH", None)
         return log, log_dir, log_file, fh
@@ -259,15 +258,12 @@ def close_install_logger(
                 for old in logs[0 : len(logs) - keep]:
                     try:
                         old.unlink()
-                    except Exception:
-                        # Retention issues must not break installs
-                        pass
-    except Exception:
-        # Do not fail install because of log rotation/retention problems
-        pass
+                    except Exception as _suppressed_exc:
+                        del _suppressed_exc  # Retention issues must not break installs
+    except Exception as _suppressed_exc:
+        del _suppressed_exc  # Do not fail install because of log rotation/retention problems
     finally:
         try:
             fh.close()
-        except Exception:
-            pass
-
+        except Exception as _suppressed_exc:
+            del _suppressed_exc
