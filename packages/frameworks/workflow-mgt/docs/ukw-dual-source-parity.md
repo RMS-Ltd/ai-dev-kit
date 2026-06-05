@@ -29,7 +29,7 @@ housekeeping_policy: keep
 - [ ] **BR-059 (narrowed)** — Coverage applies to **IN PROGRESS** stories with open checklist tasks; do **not** bulk-mirror every story TODO onto the active board; use **Won't Have** + ledger for deferred/shipped items.
 - [ ] **UKW `-c`** — Documented; ledger-before-removal; forbidden with `-u`/`-p`/`-a`/`--rp`.
 - [ ] **Step 6.5 fbuboard** — Terminal FBU prune; FR-097 no stamp rewrite on hygiene; UXR-012 no icon rewrite on hygiene-only passes.
-- [ ] **Validators** — `validate_board_stamp_diff.py` abort UKW on failure; optional `validate_kanban_state_icons.py --strict` after MoSCOW edits; **`validate_active_kanban_board.py --strict`** after prune/archive (FR-109).
+- [ ] **Validators** — `validate_board_stamp_diff.py` abort UKW on failure; optional `validate_kanban_state_icons.py --strict` after MoSCOW edits; **`validate_active_kanban_board.py --strict`** after prune/archive (FR-109 + UXR-010 IPP segment on every MoSCOW row).
 - [ ] **RW Step 9** — Gate 11 active-board lean blocking; Gates 1–11 default in `validate_release_readiness.py`.
 - [ ] **Pre-commit** — `validate_board_stamps_precommit.py` + `validate_active_kanban_board.py --strict` on `kboard.md`.
 - [ ] **Cheatsheet** — `docs/guides/workflow-initiation-cheatsheet.md` mentions lean boards + `-c` where UKW is documented.

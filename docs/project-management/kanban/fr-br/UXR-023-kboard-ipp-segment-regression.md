@@ -12,7 +12,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** ACCEPTED  
+**Status:** RESOLVED  
+**Resolved in:** v0.2.16.20+2 (SemVer: v0.4.979+2)  
 **Code:** UXR-023  
 **Intake release:** v0.2.16.20+1 (SemVer: v0.4.977+1)  
 
@@ -93,11 +94,11 @@ Hypothesis (to verify in T20): recent UKW / RW Step 7 / intake row writes used a
 
 ## Acceptance Criteria (UXR-023)
 
-- [ ] Every active `kboard.md` MoSCOW row includes IPP segment after FBU/task links and before `Last modified:`.
-- [ ] Rows with linked planning artifact use `—IPP—` link token; rows without use exact plain token `—No IPP—`.
-- [ ] UKW and RW Step 7 re-emit IPP segment on row create/update (no manual-only dependency).
-- [ ] Validator fails `--strict` when any active row lacks IPP segment.
-- [ ] UXR-023 ↔ T20 bidirectional links; story checklist and board row wired.
+- [x] Every active `kboard.md` MoSCOW row includes IPP segment after FBU/task links and before `Last modified:`.
+- [x] Rows with linked planning artifact use `—IPP—` link token; rows without use exact plain token `—No IPP—`.
+- [x] UKW and RW Step 7 re-emit IPP segment on row create/update (no manual-only dependency).
+- [x] Validator fails `--strict` when any active row lacks IPP segment.
+- [x] UXR-023 ↔ T20 bidirectional links; story checklist and board row wired.
 
 ---
 

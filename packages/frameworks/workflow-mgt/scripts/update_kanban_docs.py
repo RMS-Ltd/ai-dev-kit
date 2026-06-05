@@ -940,8 +940,8 @@ def _normalize_traceability_segments_for_row(line: str, project_root: Path) -> s
     line_core = re.sub(r"\s+\|\s+\|\s+", " | ", line_core).strip()
 
     # Remove pre-existing IPP segment to avoid duplicates before rebuilding.
-    line_core = re.sub(r"\s*\|\s*(?:\[—IPP—\]\([^)]+\)|—No IPP—)\s*", " | ", line_core)
-    line_core = re.sub(r"\s+\|\s+\|\s+", " | ", line_core)
+    line_core = re.sub(r"\s*\|\s*(?:\[—IPP—\]\([^)]+\)|—No IPP—)\s*", "", line_core)
+    line_core = re.sub(r"\s+\|\s+\|\s+", " | ", line_core).strip().rstrip("|").strip()
 
     fbu_link_match = re.search(r"\[(FR|BR|UXR)-(\d+)\]\(([^)]+)\)", line_core)
     task_link_match = re.search(r"\[(E\d+:S\d+:T\d+)\]\(([^)]+)\)", line_core)

@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 2, Story 16, Task 20: Restore kboard IPP segment on MoSCOW rows (UXR-023)
 
 **Task ID:** E02:S16:T20  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (IPP **IPP-E02S16T20** — implementation in progress)  
-**Version Anchor:** v0.2.16.20+1  
+**Last updated:** 2026-06-05 (RW **v0.2.16.20+2** — UXR-023 IPP segment restore shipped)  
+**Version Anchor:** v0.2.16.20+2  
 **Code:** E02S16T20  
 
 **Upstream:** [UXR-023 — kboard IPP segment regression](../../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
@@ -60,11 +60,11 @@ housekeeping_policy: keep
 
 ## Acceptance criteria
 
-- [ ] **AC1:** 100% of active `kboard.md` MoSCOW rows include IPP segment before `Last modified:`.
-- [ ] **AC2:** IPP present → linked `—IPP—`; absent → plain `—No IPP—` (UXR-010 token forms).
-- [ ] **AC3:** UKW comprehensive/bookkeeping and RW Step 7 emit IPP segment without manual follow-up.
-- [ ] **AC4:** Validator `--strict` on `kboard.md` fails when any row lacks IPP segment.
-- [ ] **AC5:** UXR-023 and T20 remain bidirectionally linked; task status reconciled after implementation.
+- [x] **AC1:** 100% of active `kboard.md` MoSCOW rows include IPP segment before `Last modified:`.
+- [x] **AC2:** IPP present → linked `—IPP—`; absent → plain `—No IPP—` (UXR-010 token forms).
+- [x] **AC3:** UKW comprehensive/bookkeeping and RW Step 7 emit IPP segment without manual follow-up.
+- [x] **AC4:** Validator `--strict` on `kboard.md` fails when any row lacks IPP segment.
+- [x] **AC5:** UXR-023 and T20 remain bidirectionally linked; task status reconciled after implementation.
 
 ---
 

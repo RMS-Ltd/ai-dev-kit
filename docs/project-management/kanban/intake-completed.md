@@ -33,6 +33,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| UXR-023 | UXR | kboard IPP segment regression restore — RESOLVED (**E02:S16:T20**) | 2026-06-05T19:45:00Z | v0.2.16.20+2 | RW E02:S16:T20 --art |
 | UXR-022 | UXR | RW `--dpz` short flag for doc-policy-zero — COMPLETE (**E02:S16:T19**) | 2026-06-05T15:12:49Z | v0.2.16.19+2 | RW E02:S16:T19 --art |
 | BR-007 | BR | Multiple bugs Kanban package installation — FIXED (**E04:S09:T01**) | 2026-06-05T12:30:00Z | v0.4.9.1+1 | RW --art |
 | FR-106 | FR | Packaged workflows sync with live repo spec — IMPLEMENTED (**E02:S13:T08**) | 2026-06-05T20:30:00Z | v0.2.13.8+2 | UKW -c |

@@ -77,6 +77,17 @@ UKW and RW agents must follow this when updating the board.
 - For `PUBLISHED`, link the task planning package artifacts in `docs/implementation-cycles/` from the host task doc (`specification`, `test-design`, `implementation-plan`).
 - Validate deterministically before release closure with `validate_ipw_publication_wiring.py --requested E:S:T`.
 
+### MoSCOW row IPP segment (UXR-010 / UXR-023)
+
+Every wired `kboard.md` MoSCOW row must include an **IPP** segment after task/FBU links and **before** `Last modified:`:
+
+- Linked planning artifact: `[—IPP—](../../implementation-cycles/IPP-E…S…T…-*.md)`
+- No artifact yet: plain `—No IPP—` (not a link)
+
+**Order:** `… | [Task](…) | [FBU or Story](…) | {IPP} | Last modified: … UTC`
+
+UKW and RW Step 7 run `normalize_board_traceability_segments` via `update_kanban_docs.py` to emit or refresh IPP. Intake must file `—No IPP—` until IPW produces an IPP. `validate_active_kanban_board.py --strict` blocks rows missing IPP.
+
 ### MoSCOW row `Last modified` (UTC)
 
 Each line in **MoSCOW Prioritized In-Progress Tasks** (`kboard.md`) and **MoSCOW Prioritized FR/BR/UXR Items** (`kboard.md`) must end with a pipe-delimited field:

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW E02:S16:T21 — UXR-024 local-default RW)
-**Version:** v0.2.16.21+1
+**Last Updated:** 2026-06-05 (RW E02:S16:T20 — UXR-023 IPP segment restore)
+**Version:** v0.2.16.20+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -30,15 +30,13 @@ housekeeping_policy: keep
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
-- **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - ⏳ WAITING (MEDIUM, wave-1 shipped **v0.8.3.12+1**; GH Code Quality re-scan pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | —No IPP— | Last modified: 2026-06-05 11:42 UTC
+- **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - ⏳ WAITING (MEDIUM, wave-1 shipped **v0.8.3.12+1**; GH Code Quality re-scan pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-05 11:42 UTC
 
-- **E08:S03:T13** – Code Quality reliability backlog (BR-100) - ⏳ WAITING (HIGH, wave-1 shipped **v0.8.3.13+1**; GH Code Quality re-scan pending) | [Task](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | —No IPP— | Last modified: 2026-06-05 11:43 UTC
+- **E08:S03:T13** – Code Quality reliability backlog (BR-100) - ⏳ WAITING (HIGH, wave-1 shipped **v0.8.3.13+1**; GH Code Quality re-scan pending) | [Task](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) | Last modified: 2026-06-05 11:43 UTC
 
-- **E08:S03:T14** – Code Quality AI suggestions backlog (BR-101) - ⏳ WAITING (LOW, **v0.8.3.14+1** shipped; GH Code Quality + AI panel dismiss #10–#11 pending) | [Task](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | —No IPP— | Last modified: 2026-06-05 14:51 UTC
+- **E08:S03:T14** – Code Quality AI suggestions backlog (BR-101) - ⏳ WAITING (LOW, **v0.8.3.14+1** shipped; GH Code Quality + AI panel dismiss #10–#11 pending) | [Task](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md) | Last modified: 2026-06-05 14:51 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
-
-- **E02:S16:T20** – Restore kboard IPP segment on MoSCOW rows (UXR-023) - 🔄 IN PROGRESS (HIGH, **v0.2.16.20+1** intake; implementation pending) | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](fr-br/UXR-023-kboard-ipp-segment-regression.md) | —No IPP— | Last modified: 2026-06-05 16:30 UTC
 
 - **E02:S14:T02** – Validate fresh install steps for each path - 📋 TODO (HIGH, Epic 2 workflow-mgt install evaluation) | [Task](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md) | [Story](epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) | —No IPP— | Last modified: 2026-06-05 13:08 UTC
 
@@ -70,7 +68,7 @@ housekeeping_policy: keep
 
 ### Ongoing (O) - Perpetual Tasks
 
-- **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | —No IPP— | Last modified: 2026-06-03 12:29 UTC
+- **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-03 12:29 UTC
 
 - **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.4+34** — UKW sync: E08:S03:T12–T14 V band WAITING) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | —No IPP— | Last modified: 2026-06-05 15:03 UTC
 

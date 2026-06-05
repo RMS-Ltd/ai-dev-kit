@@ -22,12 +22,12 @@ housekeeping_policy: keep
 ### Must Have (M) - Critical Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {Date} UTC
 
 ### Should Have (S) - Important Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {Date} UTC
 
 ### Verification (V) - Task Shipped, FBU Open
 
@@ -38,12 +38,12 @@ Rows where the **task is terminal** but the **FBU remains open** (verification p
 ### Could Have (C) - Nice-to-Have Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {Date} UTC
 
 ### Ongoing (O) - Perpetual Tasks
 
 - **{E{epic}:S{story}:T{task}}** – {Task description} - Perpetual Task - {Status}  
-  *Last updated: {Date}* | [Task Doc](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md)
+  *Last updated: {Date}* | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {Date} UTC
 
 ### Won't Have (W) - Deferred Tasks
 

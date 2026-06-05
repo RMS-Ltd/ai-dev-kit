@@ -1268,6 +1268,79 @@ def test_4_20_fr092_wave4_b1_drift_eliminates_duplicate_inline_fbu_link():
     return run_test("Test 4.20: FR-092 Wave 4 B1 drift fix", setup, test)
 
 
+def test_4_21_kboard_live_task_link_ipp_segment_normalization():
+    """Test 4.21 (UXR-023 / E02:S16:T20): kboard [Task](url) rows receive IPP segment."""
+    def setup():
+        test_dir = Path(tempfile.mkdtemp())
+        planning_dir = test_dir / "docs" / "implementation-cycles"
+        planning_dir.mkdir(parents=True, exist_ok=True)
+        (planning_dir / "IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md").write_text(
+            "# IPP", encoding="utf-8"
+        )
+        return str(test_dir)
+
+    def test(test_dir):
+        module_path = Path(__file__).parent / "update_kanban_docs.py"
+        spec = importlib.util.spec_from_file_location("update_kanban_docs", module_path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        root = Path(test_dir)
+
+        no_ipp_row = (
+            "- **E08:S03:T12** – Code Quality - ⏳ WAITING "
+            "| [Task](epics/epic-08/story-03/T12.md) "
+            "| [BR-099](fr-br/BR-099.md) "
+            "| Last modified: 2026-06-05 11:42 UTC"
+        )
+        normalized_no = mod._normalize_traceability_segments_for_row(no_ipp_row, root)
+        if "—No IPP—" not in normalized_no:
+            return False, f"Expected —No IPP— on BR row, got: {normalized_no}"
+        if normalized_no.index("—No IPP—") > normalized_no.index("Last modified:"):
+            return False, "IPP must appear before Last modified footer"
+
+        ipp_row = (
+            "- **E02:S16:T20** – Restore IPP - 🔄 IN PROGRESS "
+            "| [Task](epics/epic-02/T20.md) "
+            "| [UXR-023](fr-br/UXR-023.md) "
+            "| Last modified: 2026-06-05 16:30 UTC"
+        )
+        normalized_ipp = mod._normalize_traceability_segments_for_row(ipp_row, root)
+        if "[—IPP—](../../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)" not in normalized_ipp:
+            return False, f"Expected linked IPP token, got: {normalized_ipp}"
+
+        twice = mod._normalize_traceability_segments_for_row(normalized_ipp, root)
+        if twice != normalized_ipp:
+            return False, "IPP normalization must be idempotent on compliant kboard rows"
+
+        board = """## MoSCOW Prioritized In-Progress Tasks
+
+### Verification (V)
+
+""" + no_ipp_row + "\n"
+        full = mod.normalize_board_traceability_segments(board, root)
+        if full.count("—No IPP—") != 1:
+            return False, f"Expected one —No IPP— in board sweep, got: {full}"
+
+        rw_out, _ = mod.apply_canonical_row_transform_pipeline(
+            board_content=board,
+            project_root=root,
+            timestamp_value="2099-01-01 00:00 UTC",
+            contract=mod.ROW_TRANSFORM_CONTRACT_RW_STEP7,
+        )
+        standalone_out, _ = mod.apply_canonical_row_transform_pipeline(
+            board_content=board,
+            project_root=root,
+            timestamp_value="2099-01-01 00:00 UTC",
+            contract=mod.ROW_TRANSFORM_CONTRACT_STANDALONE,
+            evidence_mode=mod.EVIDENCE_MODE_NON_SUBSTANTIVE,
+        )
+        if "—No IPP—" not in rw_out or "—No IPP—" not in standalone_out:
+            return False, "Both RW and standalone contracts must emit IPP segment"
+        return True, ""
+
+    return run_test("Test 4.21: kboard live [Task] IPP normalization", setup, test)
+
+
 def test_4_19_four_surface_report_persists_to_changelog_archive():
     """Test 4.19: write_four_surface_report writes JSON + Markdown artifacts to provided directory."""
     def setup():
@@ -1572,6 +1645,14 @@ def main():
         else:
             print(f"❌ Test 4.20: FR-092 Wave 4 B1 drift fix - FAILED: {error}")
             test_results['failed'].append("4.20")
+
+        success, error = test_4_21_kboard_live_task_link_ipp_segment_normalization()
+        if success:
+            print("✅ Test 4.21: kboard live [Task] IPP normalization - PASSED")
+            test_results['passed'].append("4.21")
+        else:
+            print(f"❌ Test 4.21: kboard live [Task] IPP normalization - FAILED: {error}")
+            test_results['failed'].append("4.21")
 
     # Category 5: Performance
     if args.test_category in ['5', 'all']:

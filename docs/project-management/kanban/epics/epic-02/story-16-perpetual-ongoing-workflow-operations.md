@@ -82,8 +82,8 @@ Story 016 remains the operational home for perpetual workflow work. **T04** RW *
 - [x] **E02:S16:T19 – RW `--dpz` short flag for doc-policy-zero (UXR-022)** - ✅ COMPLETE (**v0.2.16.19+2** — parsers, tests, cheatsheet, agent SoT)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md`](story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md) | [UXR-022](../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) | [IPP](../../../../implementation-cycles/IPP-E02S16T19-rw-dpz-short-flag-uxr022.md)
 
-- [ ] **E02:S16:T20 – Restore kboard IPP segment on MoSCOW rows (UXR-023)** - 🔄 IN PROGRESS (**v0.2.16.20+1** intake; implementation pending)  
-  - Task: [`story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md`](story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
+- [x] **E02:S16:T20 – Restore kboard IPP segment on MoSCOW rows (UXR-023)** - ✅ COMPLETE (**v0.2.16.20+2** — normalizer, validator, corpus repair)  
+  - Task: [`story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md`](story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](../../fr-br/UXR-023-kboard-ipp-segment-regression.md) | [IPP](../../../../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)
 
 - [x] **E02:S16:T21 – RW local-release default — no push; operator batch push (UXR-024)** - ✅ COMPLETE (**v0.2.16.21+1** — doc policy + local RW demo)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md`](story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md) | [UXR-024](../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)

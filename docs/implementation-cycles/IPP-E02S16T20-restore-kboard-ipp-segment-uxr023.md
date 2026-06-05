@@ -113,11 +113,11 @@ Governing docs: UXR-010, FR-090, IPP-E4S19T04. Restores existing contract; no ne
 
 ## 6. Success / verification criteria
 
-- [ ] All active `kboard.md` MoSCOW rows show IPP before stamp
-- [ ] Pytest T1–T7 green
-- [ ] `validate_active_kanban_board.py --strict` PASS
-- [ ] `sync_greenfield_install.py --check` PASS
-- [ ] RW `v0.2.16.20+2` ships implementation
+- [x] All active `kboard.md` MoSCOW rows show IPP before stamp
+- [x] Pytest T1–T7 green
+- [x] `validate_active_kanban_board.py --strict` PASS
+- [x] `sync_greenfield_install.py --check` PASS
+- [x] RW `v0.2.16.20+2` ships implementation
 
 ---
 

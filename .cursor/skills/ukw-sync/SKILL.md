@@ -96,6 +96,7 @@ The MoSCOW priority list is updated LAST.
 - Ensure all sections reflect current reality
 - Validate consistency across all documents
 - Update board version and metadata
+- **IPP segment (UXR-010 / UXR-023):** After MoSCOW edits, ensure every wired row includes `—No IPP—` or `[—IPP—](…)` before `Last modified:` — prefer `update_kanban_docs.py` / `normalize_board_traceability_segments` (or full pipeline via `enforce_terminal_timestamps_on_boards`) over hand-editing IPP tokens
 
 **Step 6: Board Cleanup (lean active board)**
 - **Ledger first:** append `kanban-completed.md` / `intake-completed.md` before removing any terminal row from active MoSCOW

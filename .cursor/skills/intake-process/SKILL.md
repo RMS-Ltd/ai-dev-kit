@@ -45,7 +45,7 @@ Some projects align numbers (e.g. FR-047 → E5:S01:T47). **KG-R6:** This is **o
 3. **Create or attach task** — New `T*.md` or explicit attachment to existing task with rationale in the report.  
 4. **Wire bidirectional links** — Report ↔ task; no broken `../epics/` paths from `fr-br/`.  
 5. **Update story checklist** (and epic if required by project).  
-6. **Boards** — `fr-br-uxr-board.md` / `kboard.md` as applicable (may trail by one RW if policy allows—links in Kanban docs must not trail).  
+6. **Boards** — `fr-br-uxr-board.md` / `kboard.md` as applicable (may trail by one RW if policy allows—links in Kanban docs must not trail). Every new `kboard.md` row must include the IPP segment per UXR-010: `—No IPP—` until IPW produces an IPP, then `[—IPP—](…/implementation-cycles/IPP-…)` on the next update.  
 7. **Release** — User runs **RW** / **RW -k** on the correct epic branch for `version.py` alignment.  
 
 ### Integration points

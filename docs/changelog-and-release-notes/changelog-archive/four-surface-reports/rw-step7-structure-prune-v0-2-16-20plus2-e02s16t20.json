@@ -1,0 +1,16 @@
+{
+  "contract": "FR-097 structure-prune — terminal COMPLETE task removed from active kboard C-band",
+  "release_scope": {
+    "task_id": "E02:S16:T20",
+    "version_string": "v0.2.16.20+2",
+    "invocation": "RW E02:S16:T20 --art"
+  },
+  "rows": {
+    "E02:S16:T20": {
+      "allowed": true,
+      "reason": "RW Step 7 — T20 COMPLETE (UXR-023); row pruned to kanban-completed.md per lean active board (FR-109)"
+    }
+  },
+  "board_metadata_only": false,
+  "timestamp_utc": "2026-06-05 19:45:00 UTC"
+}

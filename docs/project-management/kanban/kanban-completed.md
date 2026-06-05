@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E02:S16:T20](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md)** — Restore kboard IPP segment on MoSCOW rows (UXR-023): normalizer, validator, corpus repair.
+  **Completed:** `2026-06-05T19:45:00Z` | **Version:** `v0.2.16.20+2` | **Agent:** `RW E02:S16:T20 --art` | [UXR-023](fr-br/UXR-023-kboard-ipp-segment-regression.md) | [IPP](../../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)
+
 - **[E02:S16:T21](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md)** — RW local-default no push (UXR-024): agent SoT, `--push` opt-in, batch-push runbook, packaged parity.
   **Completed:** `2026-06-05T15:22:51Z` | **Version:** `v0.2.16.21+1` | **Agent:** `RW E02:S16:T21 --art` (local) | [UXR-024](fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
 
