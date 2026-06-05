@@ -1,4 +1,5 @@
 # FR-062 / E5:S01:T62 — Build framework tarballs and publish to GitHub Releases.
+# E02:S11:T14 / BR-052 — pip cache for workflow_dispatch / tag builds.
 name: Framework release packages
 
 "on":
@@ -9,6 +10,10 @@ name: Framework release packages
 
 permissions:
   contents: write
+
+concurrency:
+  group: framework-release-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build-and-upload:
@@ -21,6 +26,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
 
       - name: Install Python dependencies
         run: pip install requests

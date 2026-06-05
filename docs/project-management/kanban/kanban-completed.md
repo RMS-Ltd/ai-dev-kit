@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (UKW -c — 14 doc-terminal C-band rows archived from kboard)
-**Version:** v0.2.16.4+31
+**Last Updated:** 2026-06-05 (RW: E02:S11:T14)
+**Version:** v0.2.11.14+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
