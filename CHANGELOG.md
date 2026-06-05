@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.12+2] - 05-06-26
+
+E08:S03:T12 — **Change implemented:** Kanban re-scan manifest — maintainability **560→145** (−74%) @ `cadb0c3`; score **Fair**; wave-2 backlog. SemVer **v0.4.981+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+2.md)
+
+---
+
 ## [0.2.16.4+35] - 05-06-26
 
 E02:S16:T04 — **Change implemented:** UKW -u bookkeeping — E05:S07:T01 / FR-022 archive; stale kboard TODO pruned; intake + ledger sync. SemVer **v0.4.980+35**.

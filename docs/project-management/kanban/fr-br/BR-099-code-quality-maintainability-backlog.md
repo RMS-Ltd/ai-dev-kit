@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Bug Report BR-099: GitHub Code Quality — maintainability findings backlog (560 open)
+# Bug Report BR-099: GitHub Code Quality — maintainability findings backlog (145 open)
 
 **Bug ID:** BR-099  
 **Priority:** MEDIUM  
-**Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **560** open standard findings on `main` (2026-06-05).  
-**Status:** WAITING  
+**Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **145** open standard findings on `main` (2026-06-05 re-scan; was **560** @ `5fcf102`).  
+**Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (UKW -u — wave-1 shipped **v0.8.3.12+1**; GH Code Quality re-scan pending)  
-**Version:** v0.8.3.12+1  
+**Last updated:** 2026-06-05 (dashboard re-scan — wave-1 **560→145** −74%; score **Fair**; wave-2 backlog)  
+**Version:** v0.8.3.12+2  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-GitHub **Code Quality** full-repo CodeQL scan reports **560 open maintainability findings** on `main` (`5fcf102`), depressing the Maintainability score to **Fair**. This umbrella BR tracks phased remediation; wave 1 targets high-volume, low-risk hygiene rules.
+GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainability findings** on `main` (`5fcf102`), depressing the Maintainability score to **Fair**. Wave-1 remediation (**v0.8.3.12+1**) reduced open count to **145** on re-scan (`cadb0c3`, −74.1%); score remains **Fair**. This umbrella BR tracks phased remediation; wave 2 targets remaining fold rules including `py/print-during-import`.
 
 ---
 
@@ -70,15 +70,15 @@ GitHub **Code Quality** full-repo CodeQL scan reports **560 open maintainability
 
 **Local verification:** `pytest tests/` — 396 passed; workflow-scripts gate — 116 passed; ruff wave-1 proxy rules — 0 remaining (937 → 0).
 
-**Not yet verified:** GitHub Code Quality dashboard open-count delta and Maintainability score after merge to `main` (Code Quality API separate from `code-scanning/alerts`).
+**Dashboard re-scan (2026-06-05):** [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) — **145** open maintainability @ `main` `cadb0c3` (was **560**); score **Fair** (unchanged). ≥50% count reduction **confirmed**; **Good** score and **145** residual → wave-2 scope.
 
 ---
 
 ## Acceptance criteria
 
 - [x] **AC1 — Baseline manifest:** Snapshot in [E08:S03:T12 task doc](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) (560 open @ `5fcf102`).
-- [x] **AC2 — Wave 1 burn-down (partial):** Wave-1 rule groups remediated locally; ≥50% dashboard reduction **pending** post-merge re-scan.
-- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ pending dashboard re-scan (or lag documentation).
+- [x] **AC2 — Wave 1 burn-down:** Wave-1 rule groups remediated; dashboard **560→145** (−74.1%) on re-scan.
+- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ (still **Fair** @ 145 open; wave-2 backlog).
 - [x] **AC4 — No regressions:** `pytest` + workflow-scripts gate green locally.
 - [ ] **AC5 — Kanban wiring:** Linked; release via **RW E08:S03:T12** when dashboard ACs confirmed.
 

@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 8, Story 3, Task 12: Code Quality maintainability backlog (**BR-099**)
 
 **Task ID:** E08:S03:T12  
-**Status:** WAITING  
+**Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (UKW -u — ⏳ WAITING on GH Code Quality re-scan; wave-1 **v0.8.3.12+1**)  
-**Version Anchor:** v0.8.3.12+1  
-**Version:** v0.8.3.12+1  
+**Last updated:** 2026-06-05 (dashboard re-scan — wave-1 verified **560→145** −74%; score **Fair**; wave-2 backlog)  
+**Version Anchor:** v0.8.3.12+2  
+**Version:** v0.8.3.12+2  
 **Code:** E08S03T12
 
 **Scope:** Phased burn-down of **560** open GitHub Code Quality **maintainability** findings on `main`; wave 1 = unused imports/variables, import hygiene, unnecessary pass/lambda.
@@ -86,12 +86,27 @@ Publication Status: NOT_APPLICABLE
 
 ---
 
+## Dashboard re-scan manifest (2026-06-05)
+
+**Source:** [GitHub Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open` filter).
+
+| Field | Baseline (2026-06-05) | Post wave-1 re-scan (2026-06-05) |
+| ----- | --------------------- | -------------------------------- |
+| Branch / ref | `main` @ `5fcf102` | `main` @ `cadb0c3` |
+| Open maintainability | **560** | **145** |
+| Delta | — | **−415** (−74.1%) |
+| Dashboard score | **Fair** | **Fair** (unchanged) |
+
+**Wave-1 count AC:** ≥50% reduction **met** (74.1%). **Good** score and **145** residual findings → wave-2 scope (`py/print-during-import` + remaining maintainability fold rules per BR-099).
+
+---
+
 ## Acceptance Criteria
 
 - [x] Baseline manifest captured in this task doc (rule → count).
 - [x] Wave-1 rule groups remediated or waived with documented rationale.
-- [ ] Open maintainability count reduced ≥50% vs baseline (pending dashboard re-scan).
-- [ ] Maintainability score **Good** or better (or lag documented).
+- [x] Open maintainability count reduced ≥50% vs baseline (**560→145**, −74.1% on dashboard re-scan).
+- [ ] Maintainability score **Good** or better (still **Fair** @ 145 open; wave-2 backlog).
 - [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local).
 - [ ] **BR-099** released via **RW E08:S03:T12** when complete.
 

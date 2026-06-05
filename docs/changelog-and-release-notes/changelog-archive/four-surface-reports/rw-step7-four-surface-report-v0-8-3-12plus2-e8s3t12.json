@@ -1,0 +1,45 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 scoped reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 12,
+    "task_id": "E08:S03:T12",
+    "version_string": "v0.8.3.12+2"
+  },
+  "timestamp_utc": "2026-06-05 15:37 UTC",
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 1,
+    "total_changes": 6,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "story_doc"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md"
+      ],
+      "changes": ["Dashboard re-scan manifest 560→145", "Status IN PROGRESS", "Version v0.8.3.12+2"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md"],
+      "changes": ["Open count 145", "AC2 met", "Version v0.8.3.12+2"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "changes": ["E08:S03:T12 IN PROGRESS in S band", "Row stamp preserved FR-097", "Board metadata v0.8.3.12+2"]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"],
+      "changes": ["T12 checklist IN PROGRESS", "Version v0.8.3.12+2"]
+    }
+  }
+}
