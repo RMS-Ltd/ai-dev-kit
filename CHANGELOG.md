@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.13.4+1] - 05-06-26
+
+E02:S13:T04 — **Workflow-mgt integration alignment:** review integrations and dependencies vs T01; `integration-alignment-report.md` + IPP. SemVer **v0.4.940+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.4+1.md)
+
+---
+
 ## [0.2.13.3+1] - 05-06-26
 
 E02:S13:T03 — **Workflow-mgt behavior validation:** validate package behavior vs T01; `workflow-behavior-validation-report.md` + IPP. SemVer **v0.4.939+1**.
