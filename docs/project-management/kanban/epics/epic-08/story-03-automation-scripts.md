@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.13+0 – Kanban documentation setup)
-**Version:** v0.8.3.13+0
+**Last updated:** 2026-06-05 (v0.8.3.14+0 – Kanban documentation setup)
+**Version:** v0.8.3.14+0
 **Code:** E8S03
 
 ---
@@ -51,7 +51,7 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 📋 TODO (**v0.8.3.13+0** kanban init; 133 open findings; **Needs Improvement**) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md)
 
-- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — 📋 TODO (14 AI suggestions) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
+- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — 📋 TODO (**v0.8.3.14+0** kanban init; 14 AI suggestions) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
 
 ---
 
