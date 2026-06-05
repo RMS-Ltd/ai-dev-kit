@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S01:T24 — RW BUILD increment enforcement and release-tag immutability (BR-097)
 
 **Task ID:** E02:S01:T24  
-**Status:** ✅ COMPLETE (v0.2.1.24+1)  
+**Status:** ✅ COMPLETE (v0.2.1.24+3)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.2.1.24+2** — `push_rw_release.py` Step 12 scoped push)  
-**Version Anchor:** v0.2.1.24+2  
+**Last updated:** 2026-06-05 (RW **v0.2.1.24+3** — task_touch registry finalize + release contract + `--art` cross-task BUILD)  
+**Version Anchor:** v0.2.1.24+3  
 **Code:** E02S01T24
 
 Publication Status: NOT_APPLICABLE
@@ -86,6 +86,7 @@ Stop RW agents from **reusing tagged BUILD numbers** and **force-moving release 
 5. **Recovery doc** — single path: bump BUILD, re-RW; never force-tag.
 6. **Tests + doc parity** — regression suite; dual-source RW trigger parity checklist.
 7. **`push_rw_release.py`** (v0.2.1.24+2) — Step 12 pushes release-scoped tags only; **`git push --tags` forbidden** (stale local SemVer tag false failures).
+8. **task_touch collision guards** (v0.2.1.24+3) — `finalize_rw_semver_registry.py`, `validate_task_touch_release_contract.py`, `tag_collision_recovery.py`; `resolve_rw_build.py` `--art` cross-task tagged follow-on.
 
 ---
 

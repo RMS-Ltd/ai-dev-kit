@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
 **Completed:** N/A (story reopened for ongoing RW validation work)
-**Last updated:** 2026-06-05 (v0.2.1.24+1 — **T24** / BR-097 RESOLVED)
-**Version:** v0.2.1.24+1
+**Last updated:** 2026-06-05 (v0.2.1.24+3 — **T24** / BR-097 task_touch collision guards)
+**Version:** v0.2.1.24+3
 **Code:** E2S01
 
 ---
@@ -67,7 +67,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 - [x] **E02:S01:T23 – Tool-agnostic workflow step tracking + persisted run logs** - ✅ COMPLETE (**v0.2.1.23+1**)
   - Task: [T23-tool-agnostic-workflow-step-tracking-and-runlogs.md](story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | [IPP](../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md) | [ADR-011](../../../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 
-- [x] **E02:S01:T24 – RW BUILD increment enforcement and release-tag immutability (BR-097)** - ✅ COMPLETE (**v0.2.1.24+2** — `push_rw_release.py` Step 12 scoped push; +1 resolver/tag immutability) — [Task doc](story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) | [BR-097](../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [IPP](../../../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
+- [x] **E02:S01:T24 – RW BUILD increment enforcement and release-tag immutability (BR-097)** - ✅ COMPLETE (**v0.2.1.24+3** — task_touch registry finalize, release contract validator, strategy-aware collision recovery, `--art` cross-task BUILD) — [Task doc](story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) | [BR-097](../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [IPP](../../../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
 
 ---
 

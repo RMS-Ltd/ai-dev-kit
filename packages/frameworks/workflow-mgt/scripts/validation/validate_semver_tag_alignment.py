@@ -4,8 +4,7 @@ Validate SemVer Tag Alignment (1:1 mapping)
 
 Checks that the SemVer tag for the current release points to the same commit on the
 remote as the current release commit. If the SemVer tag already exists on the remote
-but points to a different commit, validation fails so the 1:1 invariant can be
-corrected (e.g. by force-pushing the tag).
+but points to a different commit, validation fails (BR-097 — never force-push; re-RW).
 
 Intended for use before or during RW Step 12 (Push). Can be run after Step 11 (Create
 tags) to detect violations before push.
@@ -30,9 +29,10 @@ if str(version_dir) not in sys.path:
     sys.path.insert(0, str(version_dir))
 
 try:
-    from semver_converter import convert_version_string
+    from semver_converter import get_rw_tag_info, get_semver_mapping_strategy
 except ImportError:
-    convert_version_string = None
+    get_rw_tag_info = None
+    get_semver_mapping_strategy = None
 
 try:
     import yaml
@@ -129,7 +129,7 @@ def validate_semver_tag_alignment(
     """
     if project_root is None:
         project_root = Path.cwd()
-    if convert_version_string is None:
+    if get_rw_tag_info is None:
         print("⚠️  Cannot import semver_converter; skipping SemVer tag alignment check.", file=sys.stderr)
         return True
     internal = load_internal_version(project_root)
@@ -137,11 +137,11 @@ def validate_semver_tag_alignment(
         print("⚠️  No internal version found; skipping SemVer tag alignment check.", file=sys.stderr)
         return True
     try:
-        semver = convert_version_string(internal)
+        tag_info = get_rw_tag_info(internal, finalize=False)
+        semver_tag = tag_info["primary_tag"]
     except Exception as e:
-        print(f"⚠️  SemVer conversion failed: {e}; skipping alignment check.", file=sys.stderr)
+        print(f"⚠️  SemVer tag resolution failed: {e}; skipping alignment check.", file=sys.stderr)
         return True
-    semver_tag = f"v{semver}"
     release_commit = get_commit_for_ref(release_commit_ref, project_root)
     if not release_commit:
         print(f"⚠️  Could not resolve release commit ref: {release_commit_ref}", file=sys.stderr)
@@ -151,15 +151,25 @@ def validate_semver_tag_alignment(
         return True
     if remote_commit == release_commit:
         return True
+    strategy = get_semver_mapping_strategy() if get_semver_mapping_strategy else "registry"
     print(
         f"❌ SemVer tag {semver_tag} already exists on {remote} and points to commit {remote_commit}; "
-        f"current release is at {release_commit}. 1:1 mapping requires the tag to point to this release.",
+        f"current release is at {release_commit}.",
         file=sys.stderr,
     )
-    print(
-        f"   To fix, run: git push {remote} +{semver_tag} (after confirming the release commit).",
-        file=sys.stderr,
-    )
+    if strategy == "task_touch":
+        print(
+            "   Recovery (task_touch): finalize semver-registry if missing; "
+            "otherwise re-RW with BUILD+1 (new SemVer PATCH / primary tag). "
+            "Never force-push release tags (BR-097).",
+            file=sys.stderr,
+        )
+    else:
+        print(
+            "   Recovery: run resolve_rw_build.py and re-RW (BUILD+1). "
+            "Never force-push release tags (BR-097).",
+            file=sys.stderr,
+        )
     return False
 
 

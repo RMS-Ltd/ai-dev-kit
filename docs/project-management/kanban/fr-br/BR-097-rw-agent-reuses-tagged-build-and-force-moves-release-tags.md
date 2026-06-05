@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Severity:** HIGH — forensic corruption (version ↔ commit ↔ tag ↔ changelog divergence), wasted agent tokens, operator trust erosion. Guardrails that catch late do not prevent the failure mode.  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-05  
-**Version:** v0.2.1.24+1 (implemented — E02:S01:T24)
+**Version:** v0.2.1.24+3 (implemented — E02:S01:T24; +3 task_touch collision guards)
 
 **Implementing Task:** [E02:S01:T24](../epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)
 
@@ -82,6 +82,7 @@ Agent bypassed `semver_converter.create_rw_tags` collision raise with manual `gi
 - [x] **AC5 — Recovery procedure** (`docs/journals/RECOVERY_PROCEDURE.md`): tag collision → bump BUILD, re-RW; never force-tag. **Evidence:** RECOVERY_PROCEDURE §4.3; dev-kit-versioning-policy §1:1.
 - [x] **AC6 — Regression tests** for resolver + tag-immutability validator + agent doc parity check. **Evidence:** 10 pytest cases green; `rw-trigger-dual-source-parity.md` BR-097 checklist row.
 - [x] **AC7 — De-emphasize or narrow** `--doc-policy-zero` in RW agent docs to doc-init (`RW -k` / BUILD=0) contexts. **Evidence:** cheatsheet row; `validate_version_bump.py` BUILD≥1 rejection; resolver BUILD≥1 block.
+- [x] **AC8 — task_touch SemVer collision class** (v0.2.1.24+3 follow-on): registry finalize before SemVer writes; Step 9 release contract; strategy-aware recovery (not BUILD-only for SemVer primary tag). **Evidence:** `finalize_rw_semver_registry.py`, `validate_task_touch_release_contract.py`, `tag_collision_recovery.py`; `resolve_rw_build.py` `art_tagged_follow_on`.
 
 ---
 

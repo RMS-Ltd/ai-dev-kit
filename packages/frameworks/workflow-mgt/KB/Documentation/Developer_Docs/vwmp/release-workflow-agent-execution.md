@@ -648,6 +648,16 @@ python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --
 - Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
 - **FORBIDDEN:** tagged BUILD reuse; `git tag -f` / force-push on release tags; inferred `--doc-policy-zero` for post-ship verification waves.
 
+**C.2. FINALIZE TASK_TOUCH REGISTRY (when `semver_mapping_strategy: task_touch` — after `version.py` write, before changelog/README SemVer):**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_registry.py" --internal-version "<resolved_internal_version>"
+```
+
+- Writes `semver-registry.yaml` `mapping_history` row for the releasing internal version (idempotent if already finalized).
+- **Stage `semver-registry.yaml` in the same commit** as changelog/kanban — Step 9 `validate_task_touch_release_contract.py` blocks otherwise.
+- Use JSON `semver_full` / `primary_tag` for README and changelog SemVer lines (not read-only preview alone).
+
 **A. CHECK UKW CONTEXT (BEFORE READING VERSION):**
 1. **ANALYZE:**
    - **CRITICAL:** Check if this RW was triggered immediately after UKW execution
@@ -2139,6 +2149,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
      - `python {scripts_path}/validation/validate_kanban_state_icons.py --project-root <repo-root> --strict` (UXR-012 / Gate 9)
      - `python {scripts_path}/validation/validate_active_kanban_board.py --project-root <repo-root> --strict` (FR-109 / Gate 11)
      - `python {scripts_path}/validation/validate_semver_registry_injective.py` (FR-045 / **E03:S02:T12** — blocking when `semver_mapping_strategy: task_touch`)
+     - `python {scripts_path}/validation/validate_task_touch_release_contract.py --strict` (blocking when `task_touch` — registry row + staged `semver-registry.yaml` for releasing internal version)
      - `python {scripts_path}/validation/validate_kanban_moscow_spacing.py --project-root <repo-root> --strict` (UXR-005 / **E07:S01:T09**; non-blocking; Release Readiness Gate 10 warn)
    - **Release-readiness gate (FR-092 Wave 7 + FR-097 Gate 8):**
      ```bash

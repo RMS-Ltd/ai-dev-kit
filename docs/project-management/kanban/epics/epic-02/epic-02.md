@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Story Checklist
 
-- [ ] **E2:S01 – RW Agent Execution & Docs** - IN PROGRESS (reopened 2026-04-02; **E02:S01:T24** ✅ **v0.2.1.24+1** — BR-097 RESOLVED)
+- [ ] **E2:S01 – RW Agent Execution & Docs** - IN PROGRESS (reopened 2026-04-02; **E02:S01:T24** ✅ **v0.2.1.24+3** — BR-097 task_touch collision guards)
   - Story: [`story-01-rw-agent-execution-and-docs.md`](story-01-rw-agent-execution-and-docs.md)
   - Tasks: T01–T21 with T21 ✅ COMPLETE (v0.2.1.21+1) — [BR-074](../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
 

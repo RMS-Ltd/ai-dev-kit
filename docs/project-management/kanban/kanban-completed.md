@@ -76,8 +76,8 @@ housekeeping_policy: keep
 *(Seven additional pruned rows were already present in this ledger: E04:S11:T04, E04:S10:T01, E04:S09:T06, E04:S09:T05, E07:S05:T03, E02:S06:T01, E06:S08:T01.)*
 
 #### **Epic 2: Workflow Management Framework (Story 1 — RW Agent Execution & Docs)**
-- **[E02:S01:T24](epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)** — **BR-097**: RW BUILD increment enforcement + release-tag immutability (`resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contract).
-  **Completed:** `2026-06-05T02:37:30Z` | **Version:** `v0.2.1.24+1` | **Agent:** `RW --art` | [BR-097](fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [ADR-019](../../architecture/standards-and-adrs/ADR-019-rw-build-increment-and-tag-immutability.md) | [IPP](../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
+- **[E02:S01:T24](epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)** — **BR-097**: RW BUILD increment enforcement + release-tag immutability (`resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contract); **+3** task_touch registry finalize, release contract validator, strategy-aware collision recovery.
+  **Completed:** `2026-06-05T06:13:58Z` | **Version:** `v0.2.1.24+3` | **Agent:** `RW E02:S01:T24 --art` | [BR-097](fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [ADR-019](../../architecture/standards-and-adrs/ADR-019-rw-build-increment-and-tag-immutability.md) | [IPP](../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
 
 #### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR abstract governance)**
 - **[E04:S19:T12](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)** — **UXR-020 R3**: Single-board consolidation — `kboard` sole active MoSCOW; `fbuboard` deprecated stub; V-band; kanban-root `fr-br-uxr-*` aliases removed (Waves 1–4).

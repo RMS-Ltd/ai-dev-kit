@@ -42,7 +42,7 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 - [ ] **Step 9.5 / 9.6 / 12.5 / 13** — Portable excerpt and `.claude/commands/rw.md` document CMW 9.5, IDE 9.6, GitHub release 12.5, Housekeeping 13 consistent with root `.cursorrules`.
 - [ ] **Step 7 FR-092** — Scoped kanban self-sufficient wording (four-surface contract; no UKW handoff debt) in portable excerpt.
 - [ ] **`.claude/commands/rw.md`** — Step 9 command block matches portable excerpt validator set and `--art` / `--doc-policy-zero` propagation.
-- [ ] **BR-097 (Step 2 + Step 9/11)** — `resolve_rw_build.py` before `version.py` write; FORBIDDEN force-tag list; `validate_release_tag_immutability.py` in Step 9; Step 11 never `git tag -f`.
+- [ ] **BR-097 (Step 2 + Step 9/11)** — `resolve_rw_build.py` before `version.py` write; `finalize_rw_semver_registry.py` after `version.py` when `task_touch`; FORBIDDEN force-tag list; `validate_release_tag_immutability.py` + `validate_task_touch_release_contract.py` in Step 9; Step 11 never `git tag -f`; task_touch SemVer collision recovery ≠ BUILD-only.
 - [ ] **Numbering** — Root `.cursorrules` may label gates **6b/6c/6d**; the portable file may use **5b/5c/5d**. That difference is **cosmetic** if prose and commands match.
 
 ---
@@ -73,6 +73,17 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 | RW command file | Step 3 had no immutability guards; Step 9 had four validators | `.claude/commands/rw.md` Step 3 includes BR-074 guards; Step 9 includes archive link validator (non-blocking) |
 
 **Versioning note:** Forensic release for BR-074 is **v0.2.1.21+{build}** (Epic 2, Story 1, Task 21).
+
+**Substantive policy mismatch remaining:** None identified after this pass.
+
+### 2026-06-05 — task_touch finalize + release contract parity pass
+
+| Area | Before | After |
+|------|--------|--------|
+| Step 2 task_touch | Registry finalize only at tag time (`get_rw_tag_info(finalize=True)`) | `finalize_rw_semver_registry.py` after `version.py` write; staged in release commit |
+| Step 9 task_touch | `validate_semver_registry_injective.py` only | Added blocking `validate_task_touch_release_contract.py` |
+| Tag collision recovery | "bump BUILD (+1)" for all strategies | Strategy-aware: internal tag → BUILD+1; task_touch SemVer core → new PATCH via finalize + re-RW |
+| Portable excerpt / `rw.md` | No finalize or contract validator | Aligned with root `.cursorrules` and vwmp Step 2 / Step 9 |
 
 **Substantive policy mismatch remaining:** None identified after this pass.
 

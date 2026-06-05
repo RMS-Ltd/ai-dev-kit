@@ -311,7 +311,13 @@ For each step, follow this pattern:
    - Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
    - `--doc-policy-zero` only when user typed it AND HEAD BUILD untagged AND BUILD=0 path.
 
-   **C.2. FORBIDDEN (BR-097):** No tagged BUILD reuse; no `git tag -f` / force-push on release tags; no inferred `--doc-policy-zero` for post-ship waves.
+   **C.2. FINALIZE TASK_TOUCH REGISTRY (when `semver_mapping_strategy: task_touch` — after `version.py` write, before changelog/README SemVer):**
+   ```bash
+   python "packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_registry.py" --internal-version "<resolved_internal_version>"
+   ```
+   - Stage `semver-registry.yaml` in the release commit. Step 9 `validate_task_touch_release_contract.py` blocks if missing.
+
+   **C.3. FORBIDDEN (BR-097):** No tagged BUILD reuse; no `git tag -f` / force-push on release tags; no inferred `--doc-policy-zero` for post-ship waves.
 
    **D. VALIDATE BEFORE UPDATING:**
    - Verify: New `VERSION_TASK` matches completed task number (unless UKW context)
@@ -436,7 +442,7 @@ For each step, follow this pattern:
 9.6. **Check IDE-Flagged Problems (recommended before commit)** - **RECOMMENDED, NON-BLOCKING:** Before Step 10, check IDE/linter issues in modified files; fix where practical and re-stage.
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 11. **Create Git Tag** - Create tags via canonical strategy decision:
-   - **FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Tag collision → bump BUILD (+1) and re-RW.
+   - **FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Internal tag collision → BUILD+1 and re-RW. **task_touch** SemVer core collision → finalize registry + re-RW (BUILD+1 allocates new PATCH / new `vX.Y.Z` tag).
    - **Canonical source**: Resolve tags with `semver_converter.get_rw_tag_info(internal_version, finalize=True)`.
    - **Default (Registry mode)**: Create primary annotated tag `v{version}`.
    - **Task-touch mode**: Create primary SemVer-core tag `vX.Y.Z` (no `+BUILD` in tag name); create internal traceability tag `v{version}` on same commit unless explicitly disabled.

@@ -50,6 +50,31 @@ def version_file_path(project_root: Path, config: Dict[str, Any]) -> Path:
     return project_root / rel
 
 
+def max_tagged_build_for_est(
+    rc: int, epic: int, story: int, task: int, *, cwd: Optional[Path] = None
+) -> int:
+    """Highest BUILD among git tags v{rc}.{epic}.{story}.{task}+N (0 if none)."""
+    import subprocess
+
+    prefix = f"v{rc}.{epic}.{story}.{task}+"
+    result = subprocess.run(
+        ["git", "tag", "-l", f"{prefix}*"],
+        capture_output=True,
+        text=True,
+        cwd=cwd or Path.cwd(),
+    )
+    max_build = 0
+    for tag in result.stdout.strip().splitlines():
+        if not tag.startswith(prefix):
+            continue
+        suffix = tag[len(prefix) :]
+        try:
+            max_build = max(max_build, int(suffix))
+        except ValueError:
+            continue
+    return max_build
+
+
 def head_est_from_git(version_file: Path) -> Optional[Tuple[int, int, int, int, int]]:
     """Return (rc, epic, story, task, build) from HEAD:version_file, or None."""
     rel = version_file
@@ -139,7 +164,15 @@ def resolve_rw_build(
         and anchor_task == (head_est[3] if head_est else file_task)
     )
 
-    if perpetual_same_task or (same_task and not doc_policy_zero):
+    if art and not same_task:
+        max_tagged = max_tagged_build_for_est(rc, anchor_epic, anchor_story, anchor_task)
+        if max_tagged > 0:
+            next_build = max_tagged + 1
+            reason = "art_tagged_follow_on"
+        else:
+            next_build = 1
+            reason = "art_first_build"
+    elif perpetual_same_task or (same_task and not doc_policy_zero):
         next_build = head_build + 1
         reason = "same_task_build_plus_one"
     elif same_task and doc_policy_zero:

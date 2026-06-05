@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.13.5+1] - 05-06-26
+## [0.2.1.24+3] - 05-06-26
 
-E02:S13:T05 — **Workflow-mgt gap log:** consolidate T01–T04 + E07 into gap log and risk assessment (16 gaps; conditional RC). IPP + `validate_gap_log.py`. SemVer **v0.4.940+1**.
+E02:S01:T24 — **BR-097 task_touch follow-on:** registry finalize Step 2.5, release contract validator, strategy-aware tag collision recovery, `--art` cross-task BUILD from git tags. SemVer **v0.4.941+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.5+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.24+3.md)
 
 ---
 

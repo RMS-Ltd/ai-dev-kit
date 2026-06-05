@@ -23,6 +23,7 @@ if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
 from semver_converter import get_rw_tag_info  # noqa: E402
+from tag_collision_recovery import format_tag_collision_recovery  # noqa: E402
 
 
 def release_tag_names(internal_version: str) -> List[str]:
@@ -81,7 +82,15 @@ def push_branch(remote: str, branch: str, *, dry_run: bool) -> Tuple[bool, str]:
     return False, (result.stderr or result.stdout or "branch push failed").strip()
 
 
-def push_tag(remote: str, tag: str, *, dry_run: bool) -> Tuple[bool, str]:
+def push_tag(
+    remote: str,
+    tag: str,
+    *,
+    dry_run: bool,
+    strategy: str = "registry",
+    internal_version: str = "",
+    is_primary: bool = True,
+) -> Tuple[bool, str]:
     local_sha = local_tag_commit(tag)
     if not local_sha:
         return False, f"local tag missing: {tag}"
@@ -90,10 +99,16 @@ def push_tag(remote: str, tag: str, *, dry_run: bool) -> Tuple[bool, str]:
     if remote_sha:
         if remote_sha == local_sha:
             return True, f"skipped {tag} (already on remote at {local_sha[:8]})"
+        recovery = format_tag_collision_recovery(
+            tag,
+            strategy=strategy,
+            is_primary=is_primary,
+            internal_version=internal_version,
+        )
         return (
             False,
             f"BR-097: remote tag {tag} exists at {remote_sha[:8]} but local points to "
-            f"{local_sha[:8]} — bump BUILD (+1) and re-RW; never force-push release tags",
+            f"{local_sha[:8]} — {recovery}",
         )
 
     if dry_run:
@@ -118,6 +133,9 @@ def push_rw_release(
     remote: str = "origin",
     dry_run: bool = False,
 ) -> int:
+    tag_info = get_rw_tag_info(internal_version, finalize=False)
+    strategy = tag_info.get("strategy", "registry")
+    primary_tag = tag_info.get("primary_tag")
     tags = release_tag_names(internal_version)
     print(f"RW push: branch={branch!r} internal={internal_version!r} tags={tags}")
 
@@ -128,17 +146,32 @@ def push_rw_release(
 
     errors = 0
     for tag in tags:
-        tok, tmsg = push_tag(remote, tag, dry_run=dry_run)
+        tok, tmsg = push_tag(
+            remote,
+            tag,
+            dry_run=dry_run,
+            strategy=strategy,
+            internal_version=internal_version,
+            is_primary=(tag == primary_tag),
+        )
         print(f"  tag {tag}: {'OK' if tok else 'FAIL'} — {tmsg}")
         if not tok:
             errors += 1
 
     if errors:
-        print(
-            "\nHint: divergent *local* SemVer tags are not pushed by this script. "
-            "Sync with: git fetch origin --tags --force",
-            file=sys.stderr,
-        )
+        if strategy == "task_touch":
+            print(
+                "\nHint (task_touch): SemVer primary tags omit BUILD — "
+                "re-RW with BUILD+1 allocates a new PATCH / new vX.Y.Z tag. "
+                "Never `git push --force` release tags.",
+                file=sys.stderr,
+            )
+        else:
+            print(
+                "\nHint: divergent release tags — run resolve_rw_build.py and re-RW (BUILD+1). "
+                "Never force-push release tags.",
+                file=sys.stderr,
+            )
         return 1
 
     print("RW push complete (release-scoped tags only; did not use --tags).")

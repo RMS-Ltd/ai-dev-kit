@@ -30,12 +30,12 @@ def _write_version(path: Path, rc=0, epic=5, story=9, task=14, build=2) -> None:
     )
 
 
-def _git_init_with_version(tmp: Path, version_rel: str) -> None:
+def _git_init_with_version(tmp: Path, version_rel: str, **version_kw) -> None:
     subprocess.run(["git", "init"], cwd=tmp, check=True, capture_output=True)
     subprocess.run(["git", "config", "user.email", "t@test"], cwd=tmp, check=True, capture_output=True)
     subprocess.run(["git", "config", "user.name", "t"], cwd=tmp, check=True, capture_output=True)
     vf = tmp / version_rel
-    _write_version(vf)
+    _write_version(vf, **version_kw)
     subprocess.run(["git", "add", "-A"], cwd=tmp, check=True, capture_output=True)
     subprocess.run(["git", "commit", "-m", "init"], cwd=tmp, check=True, capture_output=True)
 
@@ -126,6 +126,35 @@ def test_doc_policy_zero_blocked_when_tag_exists(monkeypatch):
             )
             assert not ok
             assert any("Tagged BUILD reuse blocked" in e for e in errors)
+        finally:
+            os.chdir(orig)
+
+
+def test_art_cross_task_uses_max_tagged_build(monkeypatch):
+    """T4: --art on different HEAD E:S:T → next BUILD from tagged history for requested task."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = Path(tmpdir)
+        version_rel = "src/proj/version.py"
+        orig = os.getcwd()
+        try:
+            os.chdir(tmp)
+            _git_init_with_version(tmp, version_rel, epic=2, story=13, task=5, build=1)
+            for build in (1, 2):
+                subprocess.run(
+                    ["git", "tag", f"v0.2.1.24+{build}"],
+                    cwd=tmp,
+                    check=True,
+                    capture_output=True,
+                )
+            vf = tmp / version_rel
+            ok, payload, errors = rrb.resolve_rw_build(
+                vf,
+                "E02:S01:T24",
+                art=True,
+            )
+            assert ok, errors
+            assert payload["next_build"] == 3
+            assert payload["reason"] == "art_tagged_follow_on"
         finally:
             os.chdir(orig)
 

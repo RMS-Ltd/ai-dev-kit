@@ -166,6 +166,14 @@ python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --
 - Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
 - `--doc-policy-zero` only if **user typed it** in trigger AND HEAD BUILD is untagged AND BUILD=0 path.
 
+**Finalize task_touch registry (when `semver_mapping_strategy: task_touch` — after `version_file` write, before changelog/README SemVer):**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_registry.py" --internal-version "<resolved_internal_version>"
+```
+
+Stage `semver-registry.yaml` in the release commit. Step 9 `validate_task_touch_release_contract.py` blocks if the row is missing.
+
 **FORBIDDEN (BR-097):** Reusing tagged BUILDs; `git tag -f` / `git push -f` / `git push origin +v*` on release tags; inferring `--doc-policy-zero` from docs-only or COMPLETE status; post-ship verification waves with `--doc-policy-zero` (use `RW E:S:T --art`).
 
 **UKW/CMW context detection:** If RW was triggered immediately after UKW or CMW, attribute to the relevant perpetual task, pass `--perpetual-same-task`, and increment BUILD only.
@@ -223,6 +231,14 @@ python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" --before "<snapshot_dir>/kboard.md" --after "<kanban_root>/kboard.md" --strict
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_state_icons.py" --project-root . --strict
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_release_readiness.py"
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_active_kanban_board.py" --strict
+```
+
+When `semver_mapping_strategy: task_touch`, also run (blocking):
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_semver_registry_injective.py" --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_task_touch_release_contract.py" --strict
 ```
 
 If `--art` was in `$ARGUMENTS`, propagate `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`.
@@ -253,7 +269,7 @@ Epic: {epic} | Story: {story} | Task: {task}"
 
 ### Step 11 — Create Git Tag
 
-**FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Tag collision → **RW ABORTED**; bump BUILD (+1) and re-RW.
+**FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Internal tag collision → BUILD+1 and re-RW. **task_touch** SemVer core collision → finalize registry + re-RW (BUILD+1 allocates new PATCH / new `vX.Y.Z` tag).
 
 Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to determine tags. Create annotated primary tag `v{internal_version}` and SemVer tag `vX.Y.Z` on the same commit.
 
