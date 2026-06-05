@@ -110,10 +110,10 @@ python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_gree
 3. **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean tree from `ghcr.io` and copy into `vendor/ai-dev-kit/` (same bytes as `greenfield-install/`; see [Packages](https://github.com/RMS-Ltd/ai-dev-kit/packages)):
 
    ```bash
-   # Replace v0.4.962 with the external SemVer core from the release you are pinning.
-   docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.962
+   # Replace v0.4.963 with the external SemVer core from the release you are pinning.
+   docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963
    mkdir -p vendor/ai-dev-kit
-   cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.962)
+   cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963)
    docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
    docker rm "$cid"
    ```
@@ -122,7 +122,7 @@ python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_gree
 
 4. **Legacy sparse path:** `git sparse-checkout set packages/frameworks` still works on older tags; prefer `greenfield-install/` on current tags.
 
-5. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.962` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.962` (or newer SemVer core).
+5. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.963` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963` (or newer SemVer core).
 
 **Disk budget:** ~10–11 MiB for `greenfield-install/` (see `FOOTPRINT.md` in-tree) + git pack history (sparse checkout reduces working tree).
 
@@ -534,7 +534,7 @@ git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 # Step 2: Checkout specific version (SemVer tag from GitHub Releases)
 cd .ai-dev-kit
 git fetch --tags
-git checkout tags/v0.4.962   # example; use latest from https://github.com/RMS-Ltd/ai-dev-kit/releases
+git checkout tags/v0.4.963   # example; use latest from https://github.com/RMS-Ltd/ai-dev-kit/releases
 cd ..
 
 # Step 2b (BR-087): If packages/frameworks still has spaces in directory names,

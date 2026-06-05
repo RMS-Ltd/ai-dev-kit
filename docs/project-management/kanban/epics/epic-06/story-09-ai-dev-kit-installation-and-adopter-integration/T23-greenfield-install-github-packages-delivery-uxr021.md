@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 23: Greenfield lean tree GitHub Packages delivery (UXR-021)
 
 **Task ID:** E06:S09:T23  
-**Status:** ✅ COMPLETE (v0.6.9.23+7)  
+**Status:** ✅ COMPLETE (v0.6.9.23+8)  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.6.9.23+7 — CI green gate: pytest contract, BR-068 links, greenfield sync)  
-**Version:** v0.6.9.23+7  
+**Last updated:** 2026-06-05 (v0.6.9.23+8 — install doc SemVer pin alignment)  
+**Version:** v0.6.9.23+8  
 **Code:** E06S09T23
 
 **Upstream:** [UXR-021](../../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
@@ -73,7 +73,7 @@ Add **GitHub Packages** (`ghcr.io`) as an **alternate delivery channel** for the
 
 - [x] **AC1:** Tagged release publishes `ghcr.io` image with lean tree layout (UXR-021 AC1) — `greenfield-release.yml`.
 - [x] **AC2:** Documented extract + `install_greenfield_path.py --dry-run` passes (UXR-021 AC2) — CI container-smoke + docs.
-- [x] **AC3:** Image tag aligns with external SemVer in install docs (UXR-021 AC3) — `v0.4.962` example in INSTALL.
+- [x] **AC3:** Image tag aligns with external SemVer in install docs (UXR-021 AC3) — `v0.4.963` example in INSTALL.
 - [x] **AC4:** Publish blocked when `sync_greenfield_install.py --check` fails (UXR-021 AC4) — drift step before build.
 - [x] **AC5:** Install docs list registry path as alternate; submodule/copy remain primary (UXR-021 AC5).
 

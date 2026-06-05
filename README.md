@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.963+7` | **Internal:** `v0.6.9.23+7` (E06:S09:T23 / CI green gate + greenfield sync) | **Last Updated:** 2026-06-05
+**Version (SemVer):** `v0.4.964+8` | **Internal:** `v0.6.9.23+8` (E06:S09:T23 / install doc SemVer pin alignment) | **Last Updated:** 2026-06-05
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -35,7 +35,7 @@
 ```bash
 # 1. Vendor ai-dev-kit (submodule at vendor/ or .ai-dev-kit/)
 git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
-cd vendor/ai-dev-kit && git checkout tags/v0.4.962 && cd ../..
+cd vendor/ai-dev-kit && git checkout tags/v0.4.963 && cd ../..
 
 # 2. Sparse-checkout greenfield-install/ only (~10 MiB) — see INSTALL guide
 #    cd vendor/ai-dev-kit && git sparse-checkout set greenfield-install
@@ -44,7 +44,7 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_green
   --project-root . --non-interactive
 ```
 
-**Alternate (no git submodule):** `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.962` → extract `/opt/adk/` to `vendor/ai-dev-kit/` — see [INSTALL — GHCR](INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110) and [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md).
+**Alternate (no git submodule):** `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963` → extract `/opt/adk/` to `vendor/ai-dev-kit/` — see [INSTALL — GHCR](INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110) and [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md).
 
 **Full copy alternative** (copies frameworks into project root): see [INSTALL_IN_YOUR_PROJECT.md — Method 2](INSTALL_IN_YOUR_PROJECT.md#method-2-git-submodule-available-now).
 
