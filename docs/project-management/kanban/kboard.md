@@ -8,16 +8,16 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E02:S16:T04** — UKW board hygiene v0.2.16.4+29)
-**Version:** v0.2.16.4+29
+**Last Updated:** 2026-06-05 (RW **E04:S19:T12** — single-board Wave 1 v0.4.19.12+1)
+**Version:** v0.4.19.12+1
 
-**Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
+**Active board contract:** **Sole active MoSCOW board** ([ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`fbu-completed.md`](fbu-completed.md)).
 
-**Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epic 21 is TODO. MoSCOW lists **tasks only** (not stories).
+**Note:** Epics 1, 3, 7, 8, 10, 11 are COMPLETE. Epics 2, 4, 5, 6 are IN PROGRESS. Epic 21 is TODO.
 
-**Wiring:** In-flight **task** rows here match live work in task docs. [`fbuboard.md`](fbuboard.md) may hold additional **FBU OPEN + task COMPLETE** rows (verification pending) — **do not** re-add those tasks to kboard when syncing boards; use task docs + [`kanban-completed.md`](kanban-completed.md) as SoT.
+**Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). [`fbuboard.md`](fbuboard.md) is **deprecated** — redirect stub only.
 
-> **Structure:** [`kanban-structure.md`](kanban-structure.md) · **Guide:** [`kanban-board-guide.md`](kanban-board-guide.md) · **Completed:** [`kanban-completed.md`](kanban-completed.md) · **FBU board:** [`fbuboard.md`](fbuboard.md)
+> **Structure:** [`kanban-structure.md`](kanban-structure.md) · **Guide:** [`kanban-board-guide.md`](kanban-board-guide.md) · **Completed:** [`kanban-completed.md`](kanban-completed.md) · **FBU inventory:** [`fbu-structure.md`](fbu-structure.md)
 
 ---
 
@@ -29,7 +29,23 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-*(None.)*
+- **E04:S19:T12** – Single-board consolidation — retire `fbuboard` (UXR-020 R3) - 🔄 IN PROGRESS (HIGH, ADR-018 Wave 1) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) | Last modified: 2026-06-05 21:30 UTC
+
+### Verification (V) - Task Shipped, FBU Verification Pending
+
+- **E03:S02:T12** – FR-045 / FR-046 / BR-061: Task-touch SemVer — ⏳ WAITING (HIGH, task **v0.3.2.12+4** · FBU verification pending) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [—IPP—](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) | Last modified: 2026-06-04 18:45 UTC
+
+- **E05:S09:T14** – BR-093: Docusaurus CI dedup — ⏳ WAITING (MEDIUM, task **v0.5.9.14+2** · pending Actions on `main`) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [—IPP—](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) | Last modified: 2026-06-05 18:56 UTC
+
+- **E05:S09:T13** – BR-090: Docusaurus `@docusaurus/faster` alignment — ⏳ WAITING (HIGH, task **v0.5.9.13+1** · pending Actions on `main`) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [—IPP—](../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md) | Last modified: 2026-06-05 00:31 UTC
+
+- **E07:S07:T03** – BR-091: Workflow validator slug path resolution — ⏳ WAITING (HIGH, task **v0.7.7.3+1** · pending CI on `dev`/`main`) | [Task](epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md) | [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) | [—IPP—](../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md) | Last modified: 2026-06-05 18:45 UTC
+
+- **E02:S13:T08** – FR-106: Packaged workflows sync with live spec — ⏳ WAITING (HIGH, task **v0.2.13.8+2** · pending verification) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [—IPP—](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md) | Last modified: 2026-06-03 20:06 UTC
+
+- **E06:S09:T19** – BR-088: RW install version_file scaffold — ⏳ WAITING (MEDIUM, task **v0.6.9.19+1** · GitHub **#18**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md) | Last modified: 2026-06-05 17:11 UTC
+
+- **E06:S09:T11** – BR-082: RW install PyYAML preflight — ⏳ WAITING (HIGH, task **v0.6.9.11+2** · pending verification **#14**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md) | Last modified: 2026-06-03 17:44 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 

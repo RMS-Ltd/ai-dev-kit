@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Purpose:** Working queue for filings under the **open taskless FBU** intake plan (agentic task creation, one `RW -k` per epic-aligned filing). **Do not** batch-generate task bodies; each row is processed with deliberate reasoning.
 
-**MoSCOW source:** [`fbuboard.md`](fbuboard.md)  
+**MoSCOW source:** [`kboard.md`](kboard.md) (sole active board per [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md); `fbuboard.md` deprecated)  
 **Governance:** KG-R2 (FR/BR), UXR pattern Epic 7 story-000; [`bidirectional-wiring-principle.md`](../../../governance/principles/bidirectional-wiring-principle.md)
 
 ---

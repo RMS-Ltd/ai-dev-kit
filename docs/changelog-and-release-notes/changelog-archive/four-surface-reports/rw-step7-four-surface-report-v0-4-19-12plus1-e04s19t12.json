@@ -1,0 +1,34 @@
+{
+  "release": "v0.4.19.12+1",
+  "task": "E04:S19:T12",
+  "invocation_context": "rw_step_7",
+  "art_adoption": true,
+  "surfaces_touched": [
+    {
+      "surface": "task_doc",
+      "path": "docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md",
+      "why": "Version anchor v0.4.19.12+1; AC6 Wave 1 complete"
+    },
+    {
+      "surface": "fbu_doc",
+      "path": "docs/project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md",
+      "why": "Wave 1 version marker; R3 decision record"
+    },
+    {
+      "surface": "kboard",
+      "path": "docs/project-management/kanban/kboard.md",
+      "why": "ADR-018 contract; V-band migration; E04:S19:T12 Should Have row"
+    },
+    {
+      "surface": "fbuboard_deprecated",
+      "path": "docs/project-management/kanban/fbuboard.md",
+      "why": "Replaced active MoSCOW with redirect stub (ADR-018); not fourth active surface"
+    }
+  ],
+  "stamp_audit": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 7
+  },
+  "notes": "Three-surface RW contract per ADR-018 Wave 1. fbuboard stub only."
+}

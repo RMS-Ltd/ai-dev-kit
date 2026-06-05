@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.19.12+1] - 05-06-26
+
+E04:S19:T12 — **Single-board Wave 1 (UXR-020 R3):** ADR-018; `kboard` Verification (V) band; `fbuboard` deprecated stub; policy/guide updates. SemVer **v0.4.899+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+1.md)
+
+---
+
 ## [0.2.16.4+29] - 05-06-26
 
 E02:S16:T04 — **UKW board hygiene:** Reverted erroneous fbuboard→kboard mirror of archived tasks; pruned RESOLVED FBUs (BR-078/079/080/087); clarified fbuboard-only verification-pending wiring. SemVer **v0.4.898+29**.

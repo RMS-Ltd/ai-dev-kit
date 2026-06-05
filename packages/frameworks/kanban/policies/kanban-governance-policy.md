@@ -256,7 +256,8 @@ The board serves as the **parent document** to Story documents, similar to how S
 
 | Surface | Role | Must contain |
 | ------- | ---- | ------------ |
-| `kboard.md` / `fbuboard.md` | **Active** MoSCOW | `TODO`, `IN PROGRESS`, `IN REVIEW`, `WAITING`, `OPEN`, `PERPETUAL`, and FBU rows with unresolved verification (task may be COMPLETE) |
+| `kboard.md` | **Active** MoSCOW (sole board; [ADR-018](../../../docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)) | `TODO`, `IN PROGRESS`, `IN REVIEW`, `WAITING`, `OPEN`, `PERPETUAL`; **Verification (V)** band for task-shipped / FBU-open rows |
+| `fbuboard.md` | **Deprecated** redirect stub | No active MoSCOW rows (historical pointer only) |
 | `kanban-completed.md` / `fbu-completed.md` | **Terminal** history | `COMPLETE` / `RESOLVED` / `IMPLEMENTED` / `FIXED` / shipped Won't items |
 
 **UKW / RW agents MUST:**
@@ -265,7 +266,7 @@ The board serves as the **parent document** to Story documents, similar to how S
 2. **No archive footnotes on active boards** — do not add italic paragraphs or multi-line “archived …” journals inside M/S/C/O/W; one header pointer to the completed ledger is enough.
 3. **No date-stamped journal bullets** — do not insert `**YYYY-MM-DD:**` narrative lines between MoSCOW rows (release notes belong in changelogs or Step 9 UKW summary).
 4. **BR-059 vs C-band backlog (FR-109 correction)** — BR-059 means: do not **auto-add every story-checklist TODO** during UKW without intent. It does **not** mean deleting an existing **Could Have** backlog of filed `TODO` / `OPEN` tasks. Prune **terminal** rows and **prose bloat** (journals, archive footnotes, stats sections); keep legitimate C-band queue rows.
-5. **fbuboard slim** — no duplicate “Usage instructions”, “Board statistics”, or long consolidation history on the active file; use `kanban-board-guide.md` and `fbu-completed.md`.
+5. **Single active board (ADR-018)** — `kboard.md` only for MoSCOW; `fbuboard.md` is a redirect stub. FBU inventory: `fbu-structure.md`; terminal FBUs: `fbu-completed.md`.
 6. **Enforcement (FR-109)** — `validate_active_kanban_board.py --strict` on active boards (pre-commit + RW Release Readiness **Gate 11**).
 
 **Purpose (MoSCOW view):** Shows prioritized **live** tasks organized by MoSCOW; not every filed TODO in the repository.
@@ -376,8 +377,7 @@ The Release Workflow (RW) and the Update Kanban Workflow (UKW) own **distinct, n
 - Release-scope minimum reconciliation outputs (four-surface contract, deterministic + idempotent + ordered):
   1. Task doc (host + directly affected child tasks).
   2. Source FR/BR/UXR doc(s).
-  3. `kboard.md` canonical row(s) for release-scope task(s); active-row hygiene; no duplicate tail tokens.
-  4. `fbuboard.md` canonical row(s) for release-scope FBU(s); supersede / gating / closure markers; no duplicate tail tokens.
+  3. `kboard.md` canonical row(s) for release-scope task(s) and wired FBUs (including **Verification (V)** band when task shipped / FBU open); active-row hygiene; no duplicate tail tokens.
 - RW Step 7 emits a "touched surfaces + why" report sufficient to reconstruct the reconciliation outcome.
 
 **UKW is corrective and drift-oriented:**

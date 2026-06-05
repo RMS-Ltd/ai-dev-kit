@@ -13,12 +13,23 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (research complete; implementation path TBD)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05  
+**Last updated:** 2026-06-05 (RW **v0.4.19.12+1** — ADR-018 Wave 1: kboard V-band, fbuboard stub)  
+**Version:** v0.4.19.12+1  
 **Code:** E04S19T12  
 
 **Publication Status:** NOT_APPLICABLE
 
-**Upstream:** [UXR-020 — Is `fbuboard.md` still necessary after task–FBU wiring?](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)
+**Upstream:** [UXR-020 — Is `fbuboard.md` still necessary after task–FBU wiring?](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
+**IPP:** [IPP-E04S19T12-single-board-consolidation-uxr020.md](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
+
+---
+
+## Input
+
+- [UXR-020](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) research findings and user **R3** direction.
+- Live boards `kboard.md` / `fbuboard.md` (2026-06-05 snapshot).
+- [IPP-E04S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) phased implementation plan.
+- [ADR-018](../../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) (Wave 1).
 
 ---
 
@@ -36,7 +47,7 @@ Operators report that keeping `kboard.md` and `fbuboard.md` in sync creates **un
 
 ---
 
-## Deliverables
+## Deliverable
 
 1. **UXR-020** research report with findings, pain points, and recommendations (✅ drafted 2026-06-05).
 2. **Dependency inventory** — RW Step 7 four-surface, UKW scope, validators, `update_kanban_docs.py` (captured in UXR-020 §F4).
@@ -55,7 +66,14 @@ Operators report that keeping `kboard.md` and `fbuboard.md` in sync creates **un
 | FR-092 mandates both surfaces today | Full retire requires meta-program / policy change |
 | 2026-06-05 reverted erroneous mirror | Blind sync already tried and rolled back |
 
-**Provisional recommendation:** **Scoped consolidation (UXR-020 R2)** — not full retirement.
+**User decision (2026-06-05):** **R3 — full single-board** (not R2 partial consolidate).
+
+**Implementation approach (IPP):**
+
+- Add **Verification (V)** MoSCOW band on `kboard.md` with dual-status rows (`⏳ WAITING` + task-shipped / FBU-open prose per ADR-018).
+- Migrate all active `fbuboard` rows; replace `fbuboard.md` with redirect stub.
+- Amend FR-092 to **three-surface** RW Step 7; update validators/UKW in phased waves.
+- **ADR-018** required (see IPP §2.5).
 
 ---
 
@@ -64,8 +82,11 @@ Operators report that keeping `kboard.md` and `fbuboard.md` in sync creates **un
 - [x] **AC1:** UXR-020 filed with bidirectional link to this task.
 - [x] **AC2:** Live-board overlap/divergence documented with examples.
 - [x] **AC3:** Non-redundant fbuboard behaviours identified (verification-pending, taskless queue).
-- [ ] **AC4:** User/stakeholder selects direction (R2 / R3 / status quo).
-- [ ] **AC5:** If implementation chosen: IPP linked; board/policy changes released via RW on epic branch.
+- [x] **AC4:** User selects **R3** (full single-board).
+- [x] **AC5:** IPP linked ([IPP-E04S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)).
+- [x] **AC6:** Wave 1 delivered (ADR-018, policy, board migration, fbuboard stub) via RW **v0.4.19.12+1**.
+- [ ] **AC7:** Wave 2 validators/scripts + tests green.
+- [ ] **AC8:** Wave 3 framework templates; task COMPLETE with user verification.
 
 ---
 

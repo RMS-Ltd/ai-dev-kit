@@ -1,6 +1,4 @@
-# AI Dev Kit (private book workspace)
-
-**Maintainer clone:** [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) — book, Epic 24, and framework development before public release. **Adopters** use public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) only.
+# AI Dev Kit
 
 <div align="center">
 
@@ -11,11 +9,9 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.898+29` | **Internal:** `v0.2.16.4+29` (E02:S16:T04 / UKW board hygiene) | **Last Updated:** 2026-06-05
+**Version (SemVer):** `v0.4.899+1` | **Internal:** `v0.4.19.12+1` (E04:S19:T12 / single-board Wave 1) | **Last Updated:** 2026-06-05
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
-
-**Repositories:** Adopters clone [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) (public). Maintainers use private [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) for book work — see [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 </div>
 

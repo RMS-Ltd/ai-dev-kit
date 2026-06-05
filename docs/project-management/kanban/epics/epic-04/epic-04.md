@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-04 (**E04:S19:T11** UXR-017 path naming **v0.4.19.11+1**)
+**Last updated:** 2026-06-05 (**E04:S19:T12** single-board Wave 1 **v0.4.19.12+1**)
 **Branch:** `epic/4-kanban-framework`  
 **Version Schema:** `0.4.S.T+B`  
 **Production URL:** [N/A for this repo]

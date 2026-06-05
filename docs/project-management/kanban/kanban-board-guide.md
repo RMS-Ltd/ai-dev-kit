@@ -236,11 +236,11 @@ The UXR workflow owns all Kanban template/document maintenance. As of **E07:S01:
 
 The board is organized into five separate documents:
 
-1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Shows all active tasks organized by priority (M/S/C/O/W)
+1. **MoSCOW Prioritized Tasks** (`kboard.md`) - Sole active board: M/S/**V**/C/O/W (includes wired FBUs and **Verification** band per [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md))
 2. **Epic/Story/Task Structure** (`kanban-structure.md`) - Shows all epics with their status, priority, stories, and links
-3. **FR/BR/UXR Prioritization** (`fbuboard.md`) - Shows all open FRs, BRs, and UXRs organized by priority
-4. **FR/BR/UXR Structure** (`fbu-structure.md`) - Shows complete listings of all FRs, BRs, and UXRs by type
-5. **Rules and Explanations** (`kanban-board-guide.md`) - This document with how-to content and policies
+3. **FR/BR/UXR Structure** (`fbu-structure.md`) - Complete listings of all FRs, BRs, and UXRs by type
+4. **Rules and Explanations** (`kanban-board-guide.md`) - This document with how-to content and policies
+5. **`fbuboard.md`** - Deprecated redirect stub (no active MoSCOW)
 
 The board serves as the parent document to Story documents, providing a comprehensive view of all work items in the project.
 

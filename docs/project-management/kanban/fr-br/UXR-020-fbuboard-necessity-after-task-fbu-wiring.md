@@ -14,15 +14,17 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 **Code:** UXR-020  
-**Last updated:** 2026-06-05  
+**Last updated:** 2026-06-05 (Wave 1 shipped **v0.4.19.12+1** — ADR-018, kboard V-band, fbuboard stub)  
+**Version:** v0.4.19.12+1  
 
-**Implementing Task:** [E04:S19:T12](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)
+**Implementing Task:** [E04:S19:T12](../epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)  
+**Planning package:** [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 ---
 
 ## Summary
 
-With bidirectional **task ↔ FBU** wiring now standard, **`kboard.md` and `fbuboard.md` largely mirror each other** in the Could Have backlog and create **duplicate UKW/RW maintenance**. However, **`fbuboard.md` still serves a non-redundant role** for **verification-pending** FBUs (task COMPLETE, FBU still OPEN) and for **FBU-first prioritisation** in Must/Should bands. **Full retirement is premature**; a **scoped consolidation** (drop C-band duplication, keep verification + taskless lanes) is the lowest-friction path.
+With bidirectional **task ↔ FBU** wiring now standard, **`kboard.md` and `fbuboard.md` largely mirror each other** in the Could Have backlog and create **duplicate UKW/RW maintenance**. Investigation found **`fbuboard` M/S bands** still hold verification-pending rows today, but the user selected **R3**: enrich **`kboard`** with a **Verification (V)** band and **dual-status rows**, then **retire active `fbuboard`**. Implementation plan: [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md).
 
 ---
 
@@ -158,15 +160,23 @@ Enrich **`kboard` row contract** with explicit **dual status** tokens, e.g. `Tas
 - [x] **AC2:** Non-redundant fbuboard behaviours documented (verification-pending, taskless intake).
 - [x] **AC3:** Workflow/validator dependency inventory captured at high level.
 - [x] **AC4:** Actionable recommendation set (retain / partial consolidate / full retire) with trade-offs.
-- [ ] **AC5:** User/stakeholder sign-off on chosen direction → triggers IPW for implementation task (if consolidation/retire).
+- [x] **AC5:** User sign-off — **R3 (full single-board)** recorded 2026-06-05; [IPP-E04S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) approved.
+
+---
+
+## Decision record
+
+| Date | Choice | Notes |
+| ---- | ------ | ----- |
+| 2026-06-05 | **R3** | Single `kboard` with Verification band + dual-status rows; deprecate active `fbuboard` |
 
 ---
 
 ## Next Steps
 
-1. **User decision:** Accept **R2 (scoped consolidation)** vs **R3 (full single-board)** vs **status quo**.
-2. If implementing: run **IPW** on **E04:S19:T12** (or successor task) before board/policy/script changes.
-3. **RW -k** after intake artifacts land on epic branch.
+1. **Implementation authorization** — user says `implement` / `proceed` or `RW E04:S19:T12`.
+2. **Wave 1:** ADR-018, policy, live board migration, fbuboard stub, RW on epic/4 branch.
+3. **Waves 2–3:** Validators, `update_kanban_docs`, UKW/RW guides, framework templates.
 
 ---
 
