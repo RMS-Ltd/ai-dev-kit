@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – Kanban Board
 
 **Last Updated:** 2026-06-05 (RW: E08:S03:T14)
-**Version:** v0.8.3.14+3
+**Version:** v0.8.3.14+4
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -34,7 +34,7 @@ housekeeping_policy: keep
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
-- **E08:S03:T14** – Code Quality AI suggestions backlog (BR-101) - ⏳ WAITING (LOW, **v0.8.3.14+3** post-merge `main`; GH refresh pending; **F-SYNC-02** open; **AI-VENDOR-TREE** triage) | [Task](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md) | Last modified: 2026-06-05 17:22 UTC
+- **E08:S03:T14** – Code Quality AI suggestions backlog (BR-101) - ⏳ WAITING (LOW, **v0.8.3.14+4** FBU; GH refresh pending; **F-SYNC-02** open; **AI-VENDOR-TREE** triage) | [Task](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md) | Last modified: 2026-06-05 17:26 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 

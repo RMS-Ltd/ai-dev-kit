@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS — WAITING on GH AI panel refresh (FBU)  
 **Priority:** LOW  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (post-merge to `main` @ `f6aa4dca`; GH AI panel refresh pending; **v0.8.3.14+3**)  
-**Version Anchor:** v0.8.3.14+3  
-**Version:** v0.8.3.14+3  
+**Last updated:** 2026-06-05 (FBU wave — GH AI panel refresh pending @ `main` `f6aa4dca`; **v0.8.3.14+4**)  
+**Version Anchor:** v0.8.3.14+4  
+**Version:** v0.8.3.14+4  
 **Code:** E08S03T14
 
 **Scope:** Triage and resolve GitHub Code Quality **AI-powered suggestions** on recently changed files. GH UI groups by **file path** (no `#` numbers) — use **AID** tokens below in [ai-findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings).

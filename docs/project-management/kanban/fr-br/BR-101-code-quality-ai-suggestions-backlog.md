@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Severity:** LOW — **17** open AI-powered Code Quality suggestions across **5** file groups (2026-06-05 GH UI).  
 **Status:** WAITING  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (post-merge `main` @ `f6aa4dca`; GH refresh pending; **v0.8.3.14+3**)  
-**Version:** v0.8.3.14+3  
+**Last updated:** 2026-06-05 (FBU wave — GH refresh pending; **v0.8.3.14+4**)  
+**Version:** v0.8.3.14+4  
 **Implementing Task:** [E08:S03:T14](../epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (AI suggestions panel) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-100](BR-100-code-quality-reliability-backlog.md)
 
@@ -69,7 +69,7 @@ GitHub **Code Quality** surfaces **AI-powered suggestions** grouped by **file pa
 
 **Dashboard re-scan B (2026-06-05, operator GH UI):** [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) — **17** open across 5 file groups. **AI-VENDOR-TREE** (`tests/workflow_mgt/test_verify_vendor_tree.py`, 4) is new post wave-1. `version.py` (R11) no longer listed.
 
-**Post-merge (2026-06-05):** Operator merged to `main` @ `f6aa4dca` and pushed. **F-SYNC-01/03** fixes verified on `main`; GH AI panel has **no dismiss** control — refresh lag expected. **Released:** **v0.8.3.14+3** via **`RW E08:S03:T14 -k --art`**.
+**Post-merge (2026-06-05):** Operator merged to `main` @ `f6aa4dca` and pushed. **F-SYNC-01/03** fixes verified on `main`; GH AI panel has **no dismiss** control — refresh lag expected. **Released:** **v0.8.3.14+3** via **`RW E08:S03:T14 -k --art`**; **v0.8.3.14+4** FBU verification via **`RW E08:S03:T14 --art`**.
 
 ---
 

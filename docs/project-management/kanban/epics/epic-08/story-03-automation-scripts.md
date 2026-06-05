@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.14+3 – E08:S03:T14 post-merge GH refresh wait)
-**Version:** v0.8.3.14+3
+**Last updated:** 2026-06-05 (v0.8.3.14+4 – E08:S03:T14 FBU verification)
+**Version:** v0.8.3.14+4
 **Code:** E8S03
 
 ---
@@ -51,7 +51,7 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 🔄 IN PROGRESS (**v0.8.3.13+3** wave-2 **6** findings fixed; **28** expected open post-re-scan; exit/quit deferred wave 3) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 
-- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ⏳ WAITING (**v0.8.3.14+3** post-merge `main` @ `f6aa4dca`; GH AI refresh pending; **F-SYNC-02** only open code item; **AI-VENDOR-TREE** triage pending) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
+- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ⏳ WAITING (**v0.8.3.14+4** FBU; GH AI refresh pending; **F-SYNC-02** open; **AI-VENDOR-TREE** triage) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
 - [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+1** — FR-112 intake; Actions baseline: Tests/Docusaurus/Greenfield **failure** on `main` @ 16:39 UTC) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | —No IPP—
 

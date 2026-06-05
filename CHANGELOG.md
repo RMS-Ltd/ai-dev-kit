@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.14+4] - 05-06-26
+
+E08:S03:T14 — **Change implemented:** FBU verification wave — GH AI panel refresh pending; **F-SYNC-02** only open code item. SemVer **v0.4.994+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.14+4.md)
+
+---
+
 ## [0.8.3.14+3] - 05-06-26
 
 E08:S03:T14 — **Change implemented:** Post-merge GH refresh wait — AID file-group IDs, F-SYNC finding text keys, panel lag documented (**F-SYNC-01/03** on `main`). SemVer **v0.4.993+3**.
