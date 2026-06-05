@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – Kanban Board
 
 **Last Updated:** 2026-06-05 (RW: E04:S11:T07)
-**Version:** v0.4.11.7+13
+**Version:** v0.4.11.7+14
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -35,7 +35,7 @@ housekeeping_policy: keep
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-- **E04:S11:T07** – FR-016: Kanban Granularity Discrete Task Docs - 🔄 IN PROGRESS (LOW, Wave 3 Epics 1–11 complete — Epic 21 pending) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | Last modified: 2026-06-05 04:58 UTC
+- **E04:S11:T07** – FR-016: Kanban Granularity Discrete Task Docs - 🔄 IN PROGRESS (LOW, Wave 3 complete — 0 embedded; Wave 4 validation pending) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | Last modified: 2026-06-05 04:58 UTC
 
 
 - **E05:S01:T44** – FR-044: RW Temporary Execution Log for Recovery and Forensics - 📋 TODO (LOW, Temporary execution logs for Release Workflow) | [Task](epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md) | [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | Last modified: 2026-02-22 00:00 UTC

@@ -5,8 +5,8 @@
 **Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)  
 **Status:** IN PROGRESS  
 **Planning doc created:** 2026-02-22  
-**Last updated:** 2026-06-05 (v0.4.11.7+13 — Wave 3 Epics 10 & 11 migration released)
-**Version anchor:** v0.4.11.7+13 (Wave 2 pilot + Wave 3 Epics 1–11; Epic 21 pending)
+**Last updated:** 2026-06-05 (v0.4.11.7+14 — Wave 3 complete; repo-wide 0 embedded; Wave 4 validation pending)
+**Version anchor:** v0.4.11.7+14 (Wave 2 pilot + Wave 3 all epics; Wave 4–5 pending)
 
 ---
 

@@ -403,8 +403,9 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 - [x] Validate Epic 10 migration — **2026-06-05**: 14/14 pytest; 0 broken links
 - [x] Migrate Epic 11 (Debug Path RC) — Wave 3 **2026-06-05**: 2 stories processed; 12 new task docs; 0 embedded remaining
 - [x] Validate Epic 11 migration — **2026-06-05**: 14/14 pytest; 0 broken links
-- [ ] Continue with remaining Epic (21…)
-- [ ] Validate after each Epic
+- [x] Migrate Epic 21 (Internationalization) — Wave 3 **2026-06-05**: 4 stories processed; 28 new task docs; 0 embedded remaining
+- [x] Validate Epic 21 migration — **2026-06-05**: 14/14 pytest; 0 broken links; **repo-wide 0 embedded** per `validate_migration.py`
+- [x] **Wave 3 phased rollout complete** — all canonical + project-specific epics migrated
 
 **Deliverables:**
 - Migrated Epics
