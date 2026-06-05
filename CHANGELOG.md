@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.23+3] - 05-06-26
+
+E06:S09:T23 — **Post-ship CI fix:** greenfield-install epic template casing aligned for Linux drift check; `greenfield-release.yml` tag filter corrected for GHCR publish. SemVer **v0.4.959+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.23+3.md)
+
+---
+
 ## [0.6.9.23+2] - 05-06-26
 
 E06:S09:T23 — **UXR-021 / ADR-021:** `ghcr.io` lean `greenfield-install/` publish on SemVer tags; container-smoke CI; FR-110-F5 tarball dual-publish; install docs for registry extract. SemVer **v0.4.958+2**.

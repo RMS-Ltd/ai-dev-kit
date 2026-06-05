@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-05 (v0.6.9.23+1 – Kanban documentation setup)
-**Version:** v0.6.9.23+1
+**Last updated:** 2026-06-05 (v0.6.9.23+3 – T23 post-ship CI fix)
+**Version:** v0.6.9.23+3
 **Code:** E6S09
 
 ---
@@ -75,7 +75,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T22 – Package documentation greenfield-install alignment (FR-110)** - ✅ COMPLETE (**v0.6.9.22+1** — framework READMEs + install guides) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md) | [FR-110](../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 
-- [x] **E06:S09:T23 – Greenfield lean tree GitHub Packages delivery (UXR-021)** - ✅ COMPLETE (**v0.6.9.23+2** — GHCR + FR-110-F5 tarball; ADR-021) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [IPP-E06S09T23](../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
+- [x] **E06:S09:T23 – Greenfield lean tree GitHub Packages delivery (UXR-021)** - ✅ COMPLETE (**v0.6.9.23+3** — GHCR + FR-110-F5 tarball; ADR-021; Linux drift + release workflow fix) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [IPP-E06S09T23](../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
 
 ---
 

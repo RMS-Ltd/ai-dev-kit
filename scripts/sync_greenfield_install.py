@@ -47,7 +47,19 @@ Adjust `vendor/ai-dev-kit/` to match your layout. Install scripts live under `pa
 ## Update upstream
 
 - **Submodule / sparse checkout:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.951` (see [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
-- **Copy refresh:** re-copy this tree from a tagged `greenfield-install/` export.
+- **Copy refresh:** re-copy this tree from a tagged `greenfield-install/` export or `greenfield-install-v{semver}.tar.gz` on [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases).
+- **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean image and copy `/opt/adk/` into `vendor/ai-dev-kit/` (same bytes as this tree; [ADR-021](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)):
+
+  ```bash
+  # Replace v0.4.958 with the external SemVer core you are pinning.
+  docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.958
+  mkdir -p vendor/ai-dev-kit
+  cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.958)
+  docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
+  docker rm "$cid"
+  ```
+
+  Optional digest pin: `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield@sha256:…`
 
 ## Documentation
 
@@ -233,7 +245,8 @@ def check(manifest: Manifest) -> int:
             errors.append(f"Missing dest tree: {dest.relative_to(REPO_ROOT)}")
             continue
         src_fp = _tree_fingerprint(src, manifest.ignore_globs, git_index=True)
-        dest_fp = _tree_fingerprint(dest, manifest.ignore_globs)
+        # Dest uses git index when tracked (Linux-safe casing vs packages/frameworks).
+        dest_fp = _tree_fingerprint(dest, manifest.ignore_globs, git_index=True)
         if src_fp != dest_fp:
             missing = sorted(set(src_fp) - set(dest_fp))
             extra = sorted(set(dest_fp) - set(src_fp))
