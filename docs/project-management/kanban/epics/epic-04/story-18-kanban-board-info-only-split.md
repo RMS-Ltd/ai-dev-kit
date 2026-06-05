@@ -21,6 +21,7 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E04:S18:T01 – Implement Kanban Board Info-Only Split** - ✅ COMPLETE (v0.4.18.1+1)
+  - Task: [`T01-implement-kanban-board-info-only-split`](story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split.md)
   - Task Doc: [`T01-implement-kanban-board-info-only-split.md`](story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split.md)
 
 - [x] **E04:S18:T02 – Upgrade Packaged Kanban Framework Board Split** - ✅ COMPLETE (v0.4.18.2+1)
@@ -50,16 +51,6 @@ Split the Kanban board into two documents: structured information only (`kboard.
 - Each document serves a specific purpose: tasks (MoSCOW), structure (hierarchy), rules (guidance)
 - Cross-references between documents ensure navigation and context preservation
 - Framework templates updated to generate three-way split for new installations
-
----
-
-## Tasks
-
-### E04:S18:T01 – Implement Kanban Board Info-Only Split
-
-**Input:** Current `kboard.md`, FR-036 requirements  
-**Deliverable:** Split board documents, updated templates, updated policy  
-**Approach:** Create guide doc, migrate explanatory content, strip board to info-only, update references
 
 ---
 

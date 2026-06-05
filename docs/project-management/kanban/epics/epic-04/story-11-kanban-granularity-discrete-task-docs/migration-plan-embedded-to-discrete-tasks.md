@@ -387,8 +387,8 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 - [ ] Validate Epic 1 migration
 - [x] Migrate Epic 2 (Workflow Management) — Wave 3 **2026-06-05**: 13 stories, ~90 new task docs, 0 embedded remaining per `validate_migration.py --story`
 - [x] Validate Epic 2 migration — **2026-06-05**: 14/14 `test_migrate_embedded_tasks.py`; 0 broken links; idempotent re-run
-- [ ] Migrate Epic 4 (Kanban Framework)
-- [ ] Validate Epic 4 migration
+- [x] Migrate Epic 4 (Kanban Framework) — Wave 3 **2026-06-05**: 19 stories processed, ~40 new task docs, 0 embedded remaining per `validate_migration.py`
+- [x] Validate Epic 4 migration — **2026-06-05**: 14/14 `test_migrate_embedded_tasks.py`; 0 broken links; idempotent re-run
 - [ ] Continue with remaining Epics
 - [ ] Validate after each Epic
 
