@@ -1,0 +1,29 @@
+{
+  "release": {
+    "internal_version": "0.4.11.7+15",
+    "semver": "0.4.931+15",
+    "task": "E04:S11:T07",
+    "summary": "Wave 4 final validation — migration completion report"
+  },
+  "step7_four_surface": {
+    "task_doc": {
+      "path": "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md",
+      "action": "version anchor v0.4.11.7+15; Wave 4 shipped"
+    },
+    "fr_br": {
+      "path": "docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md",
+      "action": "implementation notes v0.4.11.7+15"
+    },
+    "kboard": {
+      "path": "docs/project-management/kanban/kboard.md",
+      "action": "E04:S11:T07 row + board metadata; stamp 2026-06-05 05:09 UTC (release evidence)"
+    },
+    "story_doc": {
+      "path": "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md",
+      "action": "T07 checklist version anchor"
+    }
+  },
+  "new_artifacts": [
+    "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-completion-report.md"
+  ]
+}

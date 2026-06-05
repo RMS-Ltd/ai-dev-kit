@@ -415,17 +415,19 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 ### 6.4 Phase 4: Final Validation and Cleanup (Week 7)
 
 **Tasks:**
-- [ ] Comprehensive validation
-- [ ] Fix any issues
-- [ ] Update documentation
+- [x] Comprehensive validation — **2026-06-05**: `validate_migration.py` — 92 stories, 0 embedded, 0 broken links
+- [x] RW Step 1 spot-check — **2026-06-05**: 10/12 discovery panel PASS; 2 documented exceptions (legacy headers, E01:S01)
+- [x] Tooling regression — **2026-06-05**: 14/14 pytest; idempotent re-run PASS
+- [ ] Fix any issues (optional: legacy `**Task:**` header normalization; E01:S01 backfill)
+- [ ] Update documentation (Wave 5)
 - [ ] Update examples
 - [ ] Archive migration artifacts
-- [ ] Final report
+- [x] Final report — [migration-completion-report.md](migration-completion-report.md)
 
 **Deliverables:**
-- Migration completion report
-- Updated documentation
-- Validation report
+- [x] Migration completion report
+- [ ] Updated documentation (Wave 5)
+- [x] Validation report (§2–§5 of completion report)
 
 ---
 

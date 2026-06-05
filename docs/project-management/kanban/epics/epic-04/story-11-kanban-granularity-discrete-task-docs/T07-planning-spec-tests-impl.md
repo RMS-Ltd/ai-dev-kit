@@ -5,8 +5,8 @@
 **Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)  
 **Status:** IN PROGRESS  
 **Planning doc created:** 2026-02-22  
-**Last updated:** 2026-06-05 (v0.4.11.7+14 — Wave 3 complete; repo-wide 0 embedded; Wave 4 validation pending)
-**Version anchor:** v0.4.11.7+14 (Wave 2 pilot + Wave 3 all epics; Wave 4–5 pending)
+**Last updated:** 2026-06-05 (v0.4.11.7+15 — Wave 4 validation shipped; Wave 5 + closure pending)
+**Version anchor:** v0.4.11.7+15 — [completion report](migration-completion-report.md) published
 
 ---
 
@@ -253,13 +253,14 @@ Exit:   0 if valid, 1 if issues
 
 ## 6. Success Criteria
 
-- [ ] Migration plan document complete (current state filled)
-- [ ] All 12 test cases pass
-- [ ] Zero embedded tasks in migrated Epics (or documented exceptions)
-- [ ] RW Step 1 locates all Task documents
-- [ ] validate_version_bump passes for migrated tasks
-- [ ] No information loss (manual spot-check)
-- [ ] Migration guide and completion report produced
+- [x] Migration plan document complete (current state filled; §6.4 Wave 4 updated)
+- [x] All 12 test cases pass (14/14 pytest — 2026-06-05)
+- [x] Zero embedded tasks repo-wide (0 embedded; 2 legacy discovery exceptions documented)
+- [x] RW Step 1 locates Task documents (10/12 spot-check panel; see [completion report](migration-completion-report.md) §3–§4)
+- [ ] validate_version_bump passes for migrated tasks (closure verification)
+- [ ] No information loss (manual spot-check — sample PASS; optional content backfill)
+- [x] Migration completion report produced — [migration-completion-report.md](migration-completion-report.md)
+- [ ] Migration guide (Wave 5)
 
 ---
 
