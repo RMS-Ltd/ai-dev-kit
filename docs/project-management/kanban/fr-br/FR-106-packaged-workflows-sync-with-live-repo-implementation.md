@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-03  
 **Submitted By:** User (via agent — E02:S13 packaged-workflow drift review)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** IN PROGRESS (fix attempted **v0.2.13.8+2** — pending user verification)  
+**Status:** IMPLEMENTED (**v0.2.13.8+2** — operator sign-off 2026-06-05; RW **v0.2.16.4+30** / E02:S16:T04)  
 **Implementing Task:** [E02:S13:T08](../epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) — ✅ COMPLETE (**v0.2.13.8+2**)  
 **IPP:** [IPP-E2S13T8](../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)  
 **Kanban init:** v0.2.13.8+1 (RW -k --art, 2026-06-03)
@@ -63,30 +63,30 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ## Functional Requirements
 
-- [ ] **FR-106:R01** — Portable RW excerpt Step 9 validator list matches root `.cursorrules` (including FR-097 / FR-092 release-readiness validators).
-- [ ] **FR-106:R02** — `.claude/commands/rw.md` Step 9 matches the same validator set and `--art` propagation rules.
-- [ ] **FR-106:R03** — `canonical-rw-steps.yaml` reflects live RW step order, names, and execution paths.
-- [ ] **FR-106:R04** — Single authoritative packaged `release-workflow.yaml` aligned with live RW; no conflicting flat copy without deprecation notice.
-- [ ] **FR-106:R05** — `workflow-registry.yaml` step counts and descriptions match updated YAML for RW, UKW, and PKG-VERSION at minimum.
-- [ ] **FR-106:R06** — UKW portable excerpt verified aligned with root `.cursorrules` (or documented intentional deltas).
-- [ ] **FR-106:R07** — Parity checklist and delta log updated in `rw-trigger-dual-source-parity.md`.
+- [x] **FR-106:R01** — Portable RW excerpt Step 9 validator list matches root `.cursorrules` (including FR-097 / FR-092 release-readiness validators).
+- [x] **FR-106:R02** — `.claude/commands/rw.md` Step 9 matches the same validator set and `--art` propagation rules.
+- [x] **FR-106:R03** — `canonical-rw-steps.yaml` reflects live RW step order, names, and execution paths.
+- [x] **FR-106:R04** — Single authoritative packaged `release-workflow.yaml` aligned with live RW; no conflicting flat copy without deprecation notice.
+- [x] **FR-106:R05** — `workflow-registry.yaml` step counts and descriptions match updated YAML for RW, UKW, and PKG-VERSION at minimum.
+- [x] **FR-106:R06** — UKW portable excerpt verified aligned with root `.cursorrules` (or documented intentional deltas).
+- [x] **FR-106:R07** — Parity checklist and delta log updated in `rw-trigger-dual-source-parity.md`.
 
 ---
 
 ## Non-Functional Requirements
 
-- [ ] **FR-106:NF01** — `validate-workflow-docs.py` continues to pass (0 errors) after README touch-ups.
-- [ ] **FR-106:NF02** — Sync report captured in task doc or linked note (surfaces touched, before/after summary).
-- [ ] **FR-106:NF03** — Ongoing maintenance routed to [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) after delivery.
+- [x] **FR-106:NF01** — `validate-workflow-docs.py` continues to pass (0 errors) after README touch-ups.
+- [x] **FR-106:NF02** — Sync report captured in task doc or linked note (surfaces touched, before/after summary).
+- [x] **FR-106:NF03** — Ongoing maintenance routed to [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) after delivery.
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** All FR-106:R01–R07 delivered (mirror [E02:S13:T08](../epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) AC1–AC7).
-- [ ] **AC2:** Bidirectional links: FR-106 ↔ E02:S13:T08; task cites FR-106 as source requirement.
-- [ ] **AC3:** `validate_canonical_steps.py` reports zero warnings OR remaining warnings documented as intentional with follow-up ticket.
-- [ ] **AC4:** FR-106 status updated to IMPLEMENTED on verified delivery via RW release attributing E02:S13:T08.
+- [x] **AC1:** All FR-106:R01–R07 delivered (mirror [E02:S13:T08](../epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) AC1–AC7).
+- [x] **AC2:** Bidirectional links: FR-106 ↔ E02:S13:T08; task cites FR-106 as source requirement.
+- [x] **AC3:** `validate_canonical_steps.py` reports zero warnings OR remaining warnings documented as intentional with follow-up ticket.
+- [x] **AC4:** FR-106 status updated to IMPLEMENTED on verified delivery via RW release attributing E02:S13:T08.
 
 ---
 

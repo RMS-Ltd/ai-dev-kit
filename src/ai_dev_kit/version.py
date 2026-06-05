@@ -7,9 +7,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 5      # Epic 5 — FR Repo / Docusaurus portal
-VERSION_STORY = 9     # Story 9 — Docusaurus Documentation Portal
-VERSION_TASK = 13     # Task 13 — BR-090 Wave 2 build closure (RW --art)
-VERSION_BUILD = 4     # Build 4: BR-090 FIXED closure — kanban + intake ledger
+VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
+VERSION_STORY = 16     # Story 16 — Perpetual Ongoing Workflow Operations
+VERSION_TASK = 4       # Task 4 — Ad-hoc Kanban synchronization and hygiene (Perpetual)
+VERSION_BUILD = 30    # Build 30: UKW -c V-band prune — FR-106, BR-082, BR-088 verified
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"

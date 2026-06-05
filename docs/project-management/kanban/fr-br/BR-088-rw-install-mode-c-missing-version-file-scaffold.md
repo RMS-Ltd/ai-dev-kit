@@ -11,10 +11,11 @@ housekeeping_policy: keep
 **Bug ID:** BR-088  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (adopter manual step; RW blocked until version file exists)  
-**Status:** OPEN (fix attempted **v0.6.9.19+1** — scaffold prompt + stub; adopter verification pending)  
+**Status:** FIXED ([#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18) closed; RW **v0.2.16.4+30** / E02:S16:T04)  
 **GitHub Issue:** [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)  
-**Implementing Task:** [E06:S09:T19](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md)  
+**Implementing Task:** [E06:S09:T19](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) — ✅ COMPLETE (**v0.6.9.19+1**)  
 **Created:** 2026-06-05  
+**Last updated:** 2026-06-05  
 **Source:** ExpensesTracker setup-spine T03 book dry-run (2026-06-04); split from [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17#issuecomment-4624289778)
 
 **Related:** [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) / [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) · [#14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14) / [BR-082](BR-082-rw-install-missing-pyyaml-preflight.md)
@@ -56,12 +57,12 @@ mkdir -p src/expenses_tracker
 
 ## Acceptance Criteria
 
-- [ ] Mode C creates `version_file` path (dirs + stub) when missing, **or** blocks with clear mandatory next step
-- [ ] Install docs / sign-off mention version scaffold when `src/` absent
-- [ ] Book T03 path does not require undocumented manual mkdir for greenfield adopters
+- [x] Mode C creates `version_file` path (dirs + stub) when missing, **or** blocks with clear mandatory next step
+- [x] Install docs / sign-off mention version scaffold when `src/` absent
+- [x] Book T03 path does not require undocumented manual mkdir for greenfield adopters
 
 ---
 
 ## Verification
 
-- [ ] ExpensesTracker or book replay: greenfield repo without `src/` → mode C leaves runnable `version_file` or explicit blocker
+- [x] ExpensesTracker or book replay: greenfield repo without `src/` → mode C leaves runnable `version_file` or explicit blocker (operator confirmed 2026-06-05; #18 closed)

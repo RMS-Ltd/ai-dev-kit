@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.9.13+4] - 05-06-26
+## [0.2.16.4+30] - 05-06-26
 
-E05:S09:T13 — **BR-090 FIXED:** post-merge CI evidence (Actions 26992999149); V-band prune; intake ledger. SemVer **v0.4.909+4**.
+E02:S16:T04 — **UKW -c** V-band prune: **FR-106** IMPLEMENTED, **BR-082**/**BR-088** FIXED; operator verification closure. SemVer **v0.4.910+30**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.13+4.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+30.md)
 
 ---
 

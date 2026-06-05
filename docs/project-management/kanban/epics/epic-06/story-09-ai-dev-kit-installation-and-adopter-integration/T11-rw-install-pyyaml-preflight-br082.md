@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 11: RW install PyYAML preflight (BR-082)
 
 **Task ID:** E06:S09:T11  
-**Status:** COMPLETE (pending user verification on book replay)  
+**Status:** ✅ COMPLETE (verified 2026-06-05 — BR-082 FIXED; #14 closed)  
 **Priority:** HIGH  
 **Created:** 2026-06-03  
 **Code:** E06S09T11
@@ -51,7 +51,7 @@ Improve `install_release_workflow.py` first-run UX: preflight or docs for `pyyam
 
 - `check_dependencies()`, `format_dependency_help()`, `--check-deps` in `install_release_workflow.py`.
 - Tests: `tests/test_install_release_workflow_deps.py`.
-- **Verification:** Re-run book T03 Step 3 on ExpensesTracker-style venv without pre-installed PyYAML; confirm preflight message before questionnaire.
+- **Verification:** ✅ Operator confirmed (2026-06-05) — expenses-tracker install path resolved; **BR-082** FIXED; GitHub #14 closed.
 
 ---
 

@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium–Large  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-03  
+**Last updated:** 2026-06-05  
 **Epic:** E02 – Workflow Management Framework  
 **Story:** E02:S13 – Workflow Management Package Implementation Review  
 **Code:** E02S13T08  
@@ -122,6 +122,8 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 - `validate_canonical_steps.py` — exit 0 (matcher fix: `id: step-N` in YAML)
 - `validate-workflow-docs.py` — exit 0 (0 errors, 0 warnings)
+
+**Verification closure (2026-06-05):** Operator sign-off on sync report; **FR-106** → IMPLEMENTED; V-band row pruned (`UKW -c`).
 
 ---
 
