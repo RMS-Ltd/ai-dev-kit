@@ -40,7 +40,7 @@ Build context is the `greenfield-install/` directory; Dockerfile lives at `green
 
 ### 2. Tag alignment
 
-Image tags use the **external SemVer core** from RW `task_touch` primary tags (e.g. `v0.4.958` → image tag `v0.4.958`). Internal traceability tags (`v0.6.9.23+2`) do **not** trigger publish workflows.
+Image tags use the **external SemVer core** from RW `task_touch` primary tags (e.g. `v0.4.962` → image tag `v0.4.962`). Internal traceability tags (`v0.6.9.23+*`) do **not** trigger publish workflows.
 
 ### 3. Publish integrity (single pipeline)
 
@@ -59,8 +59,8 @@ Package visibility defaults to **public** so anonymous `docker pull` works for o
 ### 6. Adopter extract flow
 
 ```bash
-docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.958
-cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.958)
+docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.962
+cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.962)
 docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
 docker rm "$cid"
 ```

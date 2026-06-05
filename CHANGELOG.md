@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.23+6] - 05-06-26
+## [0.6.9.23+7] - 05-06-26
 
-E06:S09:T23 — **CI fixes:** Tests pip cache uses `setup.py`; `load_rw_config()` alias restores workflow-scripts pytest. SemVer **v0.4.962+6**.
+E06:S09:T23 — **CI green gate:** pytest contract + BR-068 link depth + greenfield sync + DISABLED intake template. SemVer **v0.4.963+7**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.23+6.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.23+7.md)
 
 ---
 

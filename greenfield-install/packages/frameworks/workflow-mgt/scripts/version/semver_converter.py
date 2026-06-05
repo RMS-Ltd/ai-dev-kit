@@ -35,6 +35,11 @@ if str(_SCRIPTS_DIR) not in sys.path:
 from rw_config_loader import find_project_root, load_rw_config_or_empty  # noqa: E402
 
 
+def load_rw_config() -> Dict[str, Any]:
+    """Backward-compatible config loader for tests and legacy callers."""
+    return load_rw_config_or_empty(find_project_root(Path(__file__).parent))
+
+
 def get_semver_mapping_strategy() -> str:
     """
     Get the configured SemVer mapping strategy.

@@ -50,7 +50,7 @@ def test_tests_workflow_pip_cache():
     wf = _load_workflow(TESTS_WORKFLOW)
     step = _setup_python_step(wf)
     assert step["with"]["cache"] == "pip"
-    assert step["with"]["cache-dependency-path"] == "pyproject.toml"
+    assert step["with"]["cache-dependency-path"] == "setup.py"
 
 
 def test_workflow_scripts_pip_cache():
