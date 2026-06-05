@@ -60,7 +60,7 @@ jobs:
             --dry-run --non-interactive --project-root .
 
       - name: Pytest sync + footprint guards
-        run: python -m pytest scripts/test_sync_greenfield_install.py scripts/test_greenfield_container.py -q
+        run: python -m pytest scripts/test_sync_greenfield_install.py scripts/test_greenfield_container.py -q -o addopts=
 
   container-smoke:
     runs-on: ubuntu-latest

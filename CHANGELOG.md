@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.23+4] - 05-06-26
+
+E06:S09:T23 — **Workflow CI fix:** greenfield-install pytest addopts override; greenfield-release SemVer-only tag trigger. SemVer **v0.4.960+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.23+4.md)
+
+---
+
 ## [0.6.9.23+3] - 05-06-26
 
 E06:S09:T23 — **Post-ship CI fix:** greenfield-install epic template casing aligned for Linux drift check; `greenfield-release.yml` tag filter corrected for GHCR publish. SemVer **v0.4.959+3**.

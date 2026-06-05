@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 23: Greenfield lean tree GitHub Packages delivery (UXR-021)
 
 **Task ID:** E06:S09:T23  
-**Status:** ✅ COMPLETE (v0.6.9.23+3)  
+**Status:** ✅ COMPLETE (v0.6.9.23+4)  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.6.9.23+3 — Linux drift check + release workflow fix)  
-**Version:** v0.6.9.23+3  
+**Last updated:** 2026-06-05 (v0.6.9.23+4 — greenfield workflow CI fixes)  
+**Version:** v0.6.9.23+4  
 **Code:** E06S09T23
 
 **Upstream:** [UXR-021](../../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
