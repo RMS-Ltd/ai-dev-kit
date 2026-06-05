@@ -127,9 +127,9 @@ def main():
             if not args.dry_run:
                 main_changelog_path.write_text(new_content, encoding='utf-8')
                 main_content = new_content
-                print(f"  ✅ Removed duplicates")
+                print("  ✅ Removed duplicates")
             else:
-                print(f"  🔍 DRY RUN: Would remove duplicates")
+                print("  🔍 DRY RUN: Would remove duplicates")
         else:
             print("  ✅ No duplicates found")
         

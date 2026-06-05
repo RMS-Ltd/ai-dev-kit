@@ -110,9 +110,9 @@ class InstallationValidator:
                             # Check for "Book Related Work" which is the wrong Epic 9
                             if "Book Related Work" in content and epic_num == 9:
                                 self.errors.append(
-                                    f"❌ CRITICAL: Epic 9 contains 'Book Related Work' but canonical Epic 9 is "
-                                    f"'User Management and Authentication'. This is the root cause of Epic mashup. "
-                                    f"Rename Epic 9 to Epic 24+ (project-specific range)."
+                                    "❌ CRITICAL: Epic 9 contains 'Book Related Work' but canonical Epic 9 is "
+                                    "'User Management and Authentication'. This is the root cause of Epic mashup. "
+                                    "Rename Epic 9 to Epic 24+ (project-specific range)."
                                 )
                 
                 # Validate project-specific epics are >= 24
@@ -139,10 +139,10 @@ class InstallationValidator:
                         content = epic_doc.read_text(encoding='utf-8')
                         if "Book Related Work" in content:
                             self.warnings.append(
-                                f"⚠️  WARNING: Epic 24 'Book Related Work' detected. This suggests ai-dev-kit's actual "
-                                f"Kanban was copied. Projects should use canonical templates from "
-                                f"`packages/frameworks/kanban/templates/`, not copy ai-dev-kit's actual Kanban structure. "
-                                f"This may cause confusion with project-specific vs canonical epics."
+                                "⚠️  WARNING: Epic 24 'Book Related Work' detected. This suggests ai-dev-kit's actual "
+                                "Kanban was copied. Projects should use canonical templates from "
+                                "`packages/frameworks/kanban/templates/`, not copy ai-dev-kit's actual Kanban structure. "
+                                "This may cause confusion with project-specific vs canonical epics."
                             )
                 
                 # Check for Epic 9 with wrong content (should have been fixed, but validate anyway)
@@ -152,9 +152,9 @@ class InstallationValidator:
                         content = epic_doc.read_text(encoding='utf-8')
                         if "Book Related Work" in content:
                             self.errors.append(
-                                f"❌ CRITICAL: Epic 9 contains 'Book Related Work'. This indicates Epic mashup. "
-                                f"Canonical Epic 9 is 'User Management and Authentication'. "
-                                f"This epic must be renamed to Epic 24+ (project-specific range)."
+                                "❌ CRITICAL: Epic 9 contains 'Book Related Work'. This indicates Epic mashup. "
+                                "Canonical Epic 9 is 'User Management and Authentication'. "
+                                "This epic must be renamed to Epic 24+ (project-specific range)."
                             )
                             
             except ValueError:
@@ -278,10 +278,10 @@ class InstallationValidator:
                     content = epic_doc.read_text(encoding='utf-8')
                     if content_pattern in content:
                         self.warnings.append(
-                            f"⚠️  WARNING: Detected potential copy of ai-dev-kit's actual Kanban (Epic 24 'Book Related Work'). "
-                            f"Projects should use canonical templates from `packages/frameworks/kanban/templates/` instead of "
-                            f"copying ai-dev-kit's actual Kanban structure. The actual Kanban contains project-specific epics "
-                            f"that may not be relevant to your project."
+                            "⚠️  WARNING: Detected potential copy of ai-dev-kit's actual Kanban (Epic 24 'Book Related Work'). "
+                            "Projects should use canonical templates from `packages/frameworks/kanban/templates/` instead of "
+                            "copying ai-dev-kit's actual Kanban structure. The actual Kanban contains project-specific epics "
+                            "that may not be relevant to your project."
                         )
 
         # Integrate with contamination detector for BR-037

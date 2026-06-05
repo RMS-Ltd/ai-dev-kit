@@ -9,7 +9,6 @@ This script validates and reports - actual MCP calls go through Cursor's call_mc
 """
 import json
 import os
-import sys
 
 DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "knowledge", "kb-migration-mcp-args")
 files = sorted(f for f in os.listdir(DIR) if f.endswith(".json"))
@@ -31,10 +30,15 @@ for f in files:
     except Exception as e:
         failures.append((f, str(e)))
 
-print(f"Validated: {len(successes)} files")
-if failures:
-    print(f"Failures: {len(failures)}")
-    for f, err in failures:
-        print(f"  {f}: {err}")
-    sys.exit(1)
-sys.exit(0)
+def main() -> int:
+    print(f"Validated: {len(successes)} files")
+    if failures:
+        print(f"Failures: {len(failures)}")
+        for f, err in failures:
+            print(f"  {f}: {err}")
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

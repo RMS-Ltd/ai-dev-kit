@@ -160,7 +160,7 @@ def main():
         print(f"✅ Version consistency validated: {readme_version}")
         sys.exit(0)
     else:
-        print(f"❌ Version consistency validation failed:", file=sys.stderr)
+        print("❌ Version consistency validation failed:", file=sys.stderr)
         for error in errors:
             print(f"  - {error}", file=sys.stderr)
         sys.exit(1)

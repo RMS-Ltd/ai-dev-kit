@@ -199,20 +199,20 @@ class ConfigCommand(BaseCommand):
         
         # Print update policy
         if "update_policy" in config:
-            print(f"  update_policy:")
+            print("  update_policy:")
             policy = config["update_policy"]
             for level, action in policy.items():
                 print(f"    {level}: {action}")
         
         # Print frameworks
         if "frameworks" in config and config["frameworks"]:
-            print(f"  frameworks:")
+            print("  frameworks:")
             for name, info in config["frameworks"].items():
                 print(f"    {name}:")
                 for key, value in info.items():
                     print(f"      {key}: {value}")
         else:
-            print(f"  frameworks: {{}}")
+            print("  frameworks: {}")
     
     def _handle_reset(self, config: Config) -> int:
         """Handle reset subcommand."""

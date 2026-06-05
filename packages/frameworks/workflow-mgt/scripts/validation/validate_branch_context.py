@@ -457,7 +457,7 @@ def validate_doc_init_build(version: str, config: Optional[Dict] = None) -> Tupl
         # Not a doc-init build, skip validation
         return True, []
     
-    print(f"🔍 Doc-init build detected (BUILD=0) - validating docs-only changes...")
+    print("🔍 Doc-init build detected (BUILD=0) - validating docs-only changes...")
     
     # Get project root
     project_root = Path.cwd()
@@ -496,15 +496,15 @@ def validate_doc_init_build(version: str, config: Optional[Dict] = None) -> Tupl
     
     if non_doc_files:
         errors.append(
-            f"❌ DOC-INIT VALIDATION FAILED: Doc-init build (BUILD=0) contains non-documentation changes:\n"
+            "❌ DOC-INIT VALIDATION FAILED: Doc-init build (BUILD=0) contains non-documentation changes:\n"
         )
         for non_doc_file in non_doc_files:
             rel_path = str(non_doc_file.relative_to(project_root))
             errors.append(f"   - {rel_path}")
         errors.append(
-            f"\n   Doc-init builds (+0) must only contain documentation changes.\n"
-            f"   Documentation files include: .md files, README, CHANGELOG, docs/, packages/frameworks/, docs/, .yaml, .txt\n"
-            f"   Code files (.py, .js, .ts, etc.) are not allowed in doc-init builds."
+            "\n   Doc-init builds (+0) must only contain documentation changes.\n"
+            "   Documentation files include: .md files, README, CHANGELOG, docs/, packages/frameworks/, docs/, .yaml, .txt\n"
+            "   Code files (.py, .js, .ts, etc.) are not allowed in doc-init builds."
         )
         return False, errors
     

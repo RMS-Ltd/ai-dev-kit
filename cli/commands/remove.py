@@ -178,9 +178,9 @@ class RemoveCommand(BaseCommand):
                         keep_files=self.args.keep_files
                     )
                     if success:
-                        print_success(f"Backend removal successful")
+                        print_success("Backend removal successful")
                     else:
-                        print_warning(f"Backend removal had issues. Proceeding with cleanup...")
+                        print_warning("Backend removal had issues. Proceeding with cleanup...")
                 except Exception as e:
                     print_warning(f"Backend removal failed: {e}. Proceeding with cleanup...")
         
@@ -192,18 +192,18 @@ class RemoveCommand(BaseCommand):
                     shutil.rmtree(framework_path)
                 else:
                     framework_path.unlink()
-                print_success(f"Framework files removed")
+                print_success("Framework files removed")
             except Exception as e:
                 print_error(f"Failed to remove framework files: {e}")
                 return 1
         
         # Step 3: Remove from configuration
-        print_info(f"Removing from configuration...")
+        print_info("Removing from configuration...")
         if config.remove_framework(framework_name):
             config.save()
-            print_success(f"Configuration updated")
+            print_success("Configuration updated")
         else:
-            print_warning(f"Framework not found in configuration (may have been removed already)")
+            print_warning("Framework not found in configuration (may have been removed already)")
         
         # Step 4: Cleanup additional traces
         self._cleanup_additional_traces(project_root, framework_name, backend_name)
@@ -347,7 +347,7 @@ class RemoveCommand(BaseCommand):
                         if skip_next:
                             skip_next = False
                             continue
-                        if f"[submodule" in line and framework_name in line:
+                        if "[submodule" in line and framework_name in line:
                             # Skip this line and the next few lines (path, url)
                             skip_next = True
                             continue

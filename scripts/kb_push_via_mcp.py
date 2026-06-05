@@ -28,8 +28,8 @@ def main():
             print(f"ERROR: Missing '{k}' in data", file=sys.stderr)
             sys.exit(1)
     print("VALID: Arguments ready for call_mcp_tool")
-    print(f"  server: plugin-notion-workspace-notion")
-    print(f"  toolName: notion-update-page")
+    print("  server: plugin-notion-workspace-notion")
+    print("  toolName: notion-update-page")
     print(f"  page_id: {data['page_id']}")
     print(f"  new_str length: {len(data['new_str'])}")
 

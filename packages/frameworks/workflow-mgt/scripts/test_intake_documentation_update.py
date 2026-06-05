@@ -100,7 +100,7 @@ def test_documentation_update():
         assert intake_decision.intake_status in updated_content, \
             "Intake status should be in document"
         
-        print(f"✅ Documentation update successful")
+        print("✅ Documentation update successful")
         print(f"   Success: {result.success}")
         print(f"   Updated Fields: {', '.join(result.updated_fields)}")
         print(f"   Errors: {len(result.errors)}")

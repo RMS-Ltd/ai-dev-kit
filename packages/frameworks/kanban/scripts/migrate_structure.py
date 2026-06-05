@@ -317,7 +317,7 @@ class KanbanStructureMigrator:
         
         if not template_dir.exists():
             print(f"  ⚠️  Warning: Template directory not found: {template_dir}")
-            print(f"  ⚠️  Falling back to placeholder epic creation")
+            print("  ⚠️  Falling back to placeholder epic creation")
         
         for epic_num in canonical_core_epics:
             epic_dir = self.kanban_path / "epics" / kp.epic_dir_name(epic_num)
@@ -493,7 +493,7 @@ class KanbanStructureMigrator:
                             break
             else:
                 # Fallback to simple epic renumbering if no agentic mappings
-                print(f"    ⚠️  No agentic mappings found - using simple epic renumbering")
+                print("    ⚠️  No agentic mappings found - using simple epic renumbering")
                 task_mappings = self.analysis_report.get("task_mappings", [])
                 story_mappings = self.analysis_report.get("story_mappings", [])
                 

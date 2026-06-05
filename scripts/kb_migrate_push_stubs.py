@@ -55,7 +55,7 @@ def main():
         out_path = out_dir / f"stub_{safe_name}.json"
         out_path.write_text(json.dumps(mcp_args, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"Wrote {out_path.name} ({len(content)} chars)")
-    print(f"\nDone. Pass each JSON's arguments to call_mcp_tool(server, toolName, arguments).")
+    print("\nDone. Pass each JSON's arguments to call_mcp_tool(server, toolName, arguments).")
 
 if __name__ == "__main__":
     main()

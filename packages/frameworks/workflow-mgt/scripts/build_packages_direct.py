@@ -92,7 +92,7 @@ def build_framework(framework_name: str, version: str, display_name: str) -> boo
         
         # Add manifest to archive
         add_manifest_to_archive(package_path, manifest)
-        print(f"   MANIFEST.json added to package")
+        print("   MANIFEST.json added to package")
         
         # Compute hash
         print("\n   🔐 Computing SHA-256 hash...")
@@ -101,7 +101,7 @@ def build_framework(framework_name: str, version: str, display_name: str) -> boo
         # Update manifest with hash
         manifest = update_manifest_hash(manifest, package_hash, package_filename)
         add_manifest_to_archive(package_path, manifest)
-        print(f"   MANIFEST.json updated with hash")
+        print("   MANIFEST.json updated with hash")
         
         # Create hash file
         hash_file_path = create_hash_file(package_path, package_hash)

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-05 (RW E02:S16:T21 — UXR-024 doc link hygiene)
+**Last updated:** 2026-06-05 (v0.2.16.21+2 – Kanban documentation setup)
 **Version:** v0.2.16.21+2
 **Code:** E2S16
 

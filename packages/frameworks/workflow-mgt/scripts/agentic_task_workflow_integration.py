@@ -78,7 +78,7 @@ def create_tasks_from_commit(
     else:
         framework_path = project_root / "packages" / "frameworks" / "kanban"
     
-    logger.info(f"Processing FR/BR/UXR files from commit")
+    logger.info("Processing FR/BR/UXR files from commit")
     logger.info(f"Project root: {project_root}")
     logger.info(f"Kanban path: {kanban_path}")
     logger.info(f"Framework path: {framework_path}")

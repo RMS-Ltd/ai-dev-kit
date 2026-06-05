@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T12 — IPP link hygiene)  
-**Version Anchor:** v0.8.3.12+3  
-**Version:** v0.8.3.12+3  
+**Last updated:** 2026-06-05 (RW E08:S03:T12 — wave-2 remediation)
+**Version Anchor:** v0.8.3.12+4
+**Version:** v0.8.3.12+4
 **Code:** E08S03T12
 
 **Scope:** Phased burn-down of **560** open GitHub Code Quality **maintainability** findings on `main`; wave 1 = unused imports/variables, import hygiene, unnecessary pass/lambda.
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — revised 2026-06-05 (wave-2 plan; wave-1 complete @ v0.8.3.12+1–+3)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
@@ -98,6 +98,56 @@ Publication Status: NOT_APPLICABLE
 | Dashboard score | **Fair** | **Fair** (unchanged) |
 
 **Wave-1 count AC:** ≥50% reduction **met** (74.1%). **Good** score and **145** residual findings → wave-2 scope (`py/print-during-import` + remaining maintainability fold rules per BR-099).
+
+---
+
+## Wave-2 pre-manifest (2026-06-05)
+
+**Source:** [GitHub Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open`, maintainability); dashboard @ `main` `cadb0c3`.
+
+| CodeQL rule | Open count | Severity |
+| ----------- | ---------- | -------- |
+| `py/unused-import` | 47 | Note |
+| `py/import-and-import-from` | 32 | Note |
+| `py/unused-global-variable` | 28 | Note |
+| `py/unused-local-variable` | 13 | Note |
+| `py/ineffectual-statement` | 10 | Note |
+| `py/multiple-definition` | 5 | Warning |
+| `py/repeated-import` | 4 | Note |
+| `py/unnecessary-lambda` | 4 | Note |
+| `py/unnecessary-pass` | 2 | Note |
+| **Total** | **145** | — |
+
+**Local ruff proxy (wave-2 scope dirs):** `greenfield-install/` — **146** `F541` (f-string missing placeholders); `packages/frameworks/`, `tests/`, `scripts/`, `cli/` — **169** fixable before wave-2 pass.
+
+---
+
+## Wave-2 triage (2026-06-05)
+
+| Rule group | Disposition | Rationale |
+| ---------- | ----------- | --------- |
+| `py/ineffectual-statement` / F541 | **FIX** (wave-2 scope) | `ruff --select F541 --fix` on `packages/frameworks/`, `tests/`, `scripts/`, `cli/` — 169 autofixes |
+| Wave-1 residuals (F401, I001, F841, F811) | **FIX** (wave-2 scope) | Included in same ruff pass where present |
+| `py/print-during-import` | **FIX** (wave-2 scope) | `scripts/run_kb_migration_mcp.py` — wrap in `main()` guard (1 module-level print) |
+| `greenfield-install/` F541 + hygiene mirror | **DEFER** (wave 3) | 146 findings in mirrored tree; IPP wave-2 excludes wave-3 per operator scope |
+| Dashboard residuals on `main` post-merge | **VERIFY** | Post-RW dashboard re-scan required; CodeQL may lag |
+
+---
+
+## Post-wave-2 manifest (2026-06-05 — local proxy)
+
+**Remediation:** `ruff check --fix --select F401,F841,I001,F811,F823,F541` on wave-2 scope; `run_kb_migration_mcp.py` main-guard fix.
+
+| Metric | Value |
+| ------ | ----- |
+| Files touched (wave-2 scope) | 52 |
+| Ruff F541+F401+I001 fixes | 169 |
+| Module-level `print()` removed | 1 (`scripts/run_kb_migration_mcp.py`) |
+| Ruff wave-2 scope after pass | **0** remaining (F401,F841,I001,F811,F823,F541) |
+| `pytest tests/` | 405 passed, 1 failed (pre-existing `test_install_error_docs_sync`), 2 skipped |
+| `workflow-scripts-pytest` (CI script) | **118 passed** |
+
+**Dashboard delta:** Pending GitHub Code Quality re-scan after merge to `main`. Wave-2 scope cleared locally; **~146** findings likely remain in `greenfield-install/` mirror (wave 3).
 
 ---
 

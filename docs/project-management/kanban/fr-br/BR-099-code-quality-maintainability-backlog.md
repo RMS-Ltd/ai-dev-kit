@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **145** open standard findings on `main` (2026-06-05 re-scan; was **560** @ `5fcf102`).  
 **Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (dashboard re-scan — wave-1 **560→145** −74%; score **Fair**; wave-2 backlog)  
-**Version:** v0.8.3.12+3  
+**Last updated:** 2026-06-05 (wave-2 remediation — scope dirs cleared; greenfield mirror deferred wave 3)  
+**Version:** v0.8.3.12+4  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
@@ -70,7 +70,9 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 **Local verification:** `pytest tests/` — 396 passed; workflow-scripts gate — 116 passed; ruff wave-1 proxy rules — 0 remaining (937 → 0).
 
-**Dashboard re-scan (2026-06-05):** [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) — **145** open maintainability @ `main` `cadb0c3` (was **560**); score **Fair** (unchanged). ≥50% count reduction **confirmed**; **Good** score and **145** residual → wave-2 scope.
+**Dashboard re-scan (2026-06-05):** [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) — **145** open maintainability @ `main` `cadb0c3` (was **560**); score **Fair** (unchanged). ≥50% count reduction **confirmed**; wave-2 backlog documented.
+
+**Wave-2 attempt (2026-06-05):** `ruff` F541 + hygiene autofix on `packages/frameworks/`, `tests/`, `scripts/`, `cli/` (169 fixes, 52 files); `run_kb_migration_mcp.py` print-at-import → `main()` guard. Local wave-2 scope proxy **0** remaining. **~146** F541 findings deferred in `greenfield-install/` mirror (wave 3). Dashboard re-scan pending post-merge.
 
 ---
 

@@ -549,7 +549,7 @@ def main():
         print(f"Complexity: {summary['migration_complexity']}")
         
         if plan.get("warnings"):
-            print(f"\n⚠️  Warnings:")
+            print("\n⚠️  Warnings:")
             for warning in plan["warnings"]:
                 print(f"  - {warning}")
     else:

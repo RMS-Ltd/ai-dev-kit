@@ -46,7 +46,7 @@ class FrameworkNotFoundError(AIDevKitError):
         
         if available_frameworks:
             suggestions.append(f"Available frameworks: {', '.join(available_frameworks)}")
-            suggestions.append(f"Use 'ai-dev-kit list' to see all available frameworks")
+            suggestions.append("Use 'ai-dev-kit list' to see all available frameworks")
         else:
             suggestions.append("Use 'ai-dev-kit list' to see available frameworks")
             suggestions.append("Check the framework name spelling")
@@ -189,8 +189,8 @@ class InstallationError(AIDevKitError):
         """
         message = f"Failed to install '{framework_name}': {reason}"
         suggestions = [
-            f"Check network connectivity",
-            f"Verify the framework source is accessible",
+            "Check network connectivity",
+            "Verify the framework source is accessible",
         ]
         
         if backend:
@@ -255,7 +255,7 @@ class UpdateError(AIDevKitError):
         message = f"Failed to update '{framework_name}': {reason}"
         suggestions = [
             f"Check if '{framework_name}' is installed: 'ai-dev-kit status'",
-            f"Check network connectivity",
+            "Check network connectivity",
             f"Try reinstalling: 'ai-dev-kit install {framework_name}'",
         ]
         

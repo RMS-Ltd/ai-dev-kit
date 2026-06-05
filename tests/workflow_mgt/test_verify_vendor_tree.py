@@ -6,8 +6,6 @@ import hashlib
 import importlib.util
 from pathlib import Path
 
-import pytest
-
 _REPO = Path(__file__).resolve().parents[2]
 _SCRIPTS = _REPO / "packages" / "frameworks" / "workflow-mgt" / "scripts"
 _VENDOR_OK = _REPO  # maintainer repo satisfies required layout

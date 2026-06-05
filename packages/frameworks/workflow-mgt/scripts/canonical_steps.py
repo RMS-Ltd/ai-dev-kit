@@ -260,7 +260,7 @@ if __name__ == "__main__":
         print(f"  {path.trigger}: {path.description}")
         print(f"    Steps: {path.steps}")
     
-    print(f"\nStep 13 Definition:")
+    print("\nStep 13 Definition:")
     step_13 = get_step_definition(13)
     if step_13:
         print(f"  Name: {step_13.name}")

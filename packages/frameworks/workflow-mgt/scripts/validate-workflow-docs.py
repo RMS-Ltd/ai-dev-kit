@@ -163,7 +163,7 @@ def main():
         if not result["errors"] and not result["missing_sections"] and not result["invalid_links"]:
             print("  ✅ Valid")
     
-    print(f"\n📊 Summary:")
+    print("\n📊 Summary:")
     print(f"  Errors: {total_errors}")
     print(f"  Warnings: {total_warnings}")
     

@@ -166,7 +166,7 @@ def main():
         
         # Write fixed content
         main_changelog_path.write_text(fixed_content, encoding='utf-8')
-        print(f"✅ Fixed changelog ordering")
+        print("✅ Fixed changelog ordering")
         print(f"✅ Updated {main_changelog_path}")
         
         return 0

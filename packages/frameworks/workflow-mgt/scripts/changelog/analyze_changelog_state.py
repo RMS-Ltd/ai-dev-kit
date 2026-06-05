@@ -172,7 +172,7 @@ def main():
             ]
             print(json.dumps(serializable_results, indent=2))
         else:
-            print(f"📊 Changelog Analysis Results")
+            print("📊 Changelog Analysis Results")
             print(f"  Line count: {results['line_count']}")
             print(f"  Entry count: {results['entry_count']}")
             print(f"  Format: {results['format_compliance']['format_type']}")

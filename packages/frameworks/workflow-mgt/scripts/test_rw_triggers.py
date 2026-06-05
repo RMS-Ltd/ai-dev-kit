@@ -158,7 +158,7 @@ def test_kanban_docs_mode():
         
         assert result.returncode == 0, f"Help command failed: {result.stderr}"
         assert "--mode {full,kanban_init}" in result.stdout, "Mode parameter not found in help"
-        print(f"  ✅ update_kanban_docs.py --mode parameter available")
+        print("  ✅ update_kanban_docs.py --mode parameter available")
         return True
     except Exception as e:
         print(f"  ❌ update_kanban_docs.py mode test -> ERROR: {e}")

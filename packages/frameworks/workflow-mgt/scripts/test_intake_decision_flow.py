@@ -55,7 +55,7 @@ def test_decision_flow_basic():
             assert isinstance(decision.explanation, str), "Explanation should be string"
             assert isinstance(decision.reasoning, list), "Reasoning should be list"
             
-            print(f"✅ Decision flow analysis successful")
+            print("✅ Decision flow analysis successful")
             print(f"   Epic: {decision.epic_number}")
             print(f"   Status: {decision.intake_status}")
             print(f"   Requires Review: {decision.requires_manual_review}")
