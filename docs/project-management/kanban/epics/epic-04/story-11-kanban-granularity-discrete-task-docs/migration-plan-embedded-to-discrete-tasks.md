@@ -383,13 +383,15 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 ### 6.3 Phase 3: Phased Rollout (Weeks 3-6)
 
 **Tasks:**
-- [ ] Migrate Epic 1 (Project Foundation)
-- [ ] Validate Epic 1 migration
+- [x] Migrate Epic 1 (Project Foundation) — Wave 3 **2026-06-05**: 6 stories processed, ~15 new task docs, 0 embedded remaining
+- [x] Validate Epic 1 migration — **2026-06-05**: 14/14 pytest; 0 broken links
 - [x] Migrate Epic 2 (Workflow Management) — Wave 3 **2026-06-05**: 13 stories, ~90 new task docs, 0 embedded remaining per `validate_migration.py --story`
 - [x] Validate Epic 2 migration — **2026-06-05**: 14/14 `test_migrate_embedded_tasks.py`; 0 broken links; idempotent re-run
 - [x] Migrate Epic 4 (Kanban Framework) — Wave 3 **2026-06-05**: 19 stories processed, ~40 new task docs, 0 embedded remaining per `validate_migration.py`
 - [x] Validate Epic 4 migration — **2026-06-05**: 14/14 `test_migrate_embedded_tasks.py`; 0 broken links; idempotent re-run
-- [ ] Continue with remaining Epics
+- [x] Migrate Epic 3 (Numbering & Versioning) — Wave 3 **2026-06-05**: 5 stories processed, ~20 new task docs, 0 embedded remaining
+- [x] Validate Epic 3 migration — **2026-06-05**: 14/14 pytest; 0 broken links
+- [ ] Continue with remaining Epics (5, 6, 7, 8, 10, 11, 21…)
 - [ ] Validate after each Epic
 
 **Deliverables:**

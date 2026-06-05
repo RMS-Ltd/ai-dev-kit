@@ -21,6 +21,7 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [ ] **E01:S06:T01 – Set up BYOB badges for private repository** - IN PROGRESS (v0.1.6.1+1)
+  - Task: [`T01-setup-byob-badges-for-private-repository`](story-06-repository-ci-cd-setup/T01-setup-byob-badges-for-private-repository.md)
   - Task: [`T01-setup-byob-badges-for-private-repository.md`](story-06-repository-ci-cd-setup/T01-setup-byob-badges-for-private-repository.md)
 
 
@@ -50,31 +51,6 @@ This story sets up CI/CD infrastructure for the ai-dev-kit repository, including
 4. **Code Quality Monitoring**
    - Integrate code quality badge with linting tools
    - Update badge automatically based on code quality checks
-
----
-
-## Tasks
-
-### E01:S06:T01 – Set up BYOB badges for private repository
-
-**Status:** IN PROGRESS
-**Priority:** HIGH  
-**Created:** 2025-12-18
-
-**Goal:**  
-Set up BYOB (Bring Your Own Badge) to enable dynamic badge rendering for private repositories, including version, license, status, test status, and coverage badges.
-
-**Tasks:**
-- [ ] Create GitHub Actions workflow for badge updates
-- [ ] Configure BYOB for version badge
-- [ ] Configure BYOB for license badge
-- [ ] Configure BYOB for status badge
-- [ ] Configure BYOB for test status badge
-- [ ] Configure BYOB for coverage badge
-- [ ] Configure BYOB for code quality badge
-- [ ] Update README with BYOB badge URLs
-- [ ] Create setup documentation
-- [ ] Test badge generation workflow
 
 ---
 
