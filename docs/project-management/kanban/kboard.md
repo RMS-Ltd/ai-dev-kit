@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E05:S09:T14** — BR-093 IPW recovery v0.5.9.14+1)
-**Version:** v0.5.9.14+1
+**Last Updated:** 2026-06-05 (RW **E05:S09:T14** — BR-093 CI dedup v0.5.9.14+2)
+**Version:** v0.5.9.14+2
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -28,8 +28,6 @@ housekeeping_policy: keep
 *(None.)*
 
 ### Should Have (S) - Important Tasks
-
-- **E05:S09:T14** – BR-093: Docusaurus CI build/deploy deduplication - 🔄 IN PROGRESS (MEDIUM, duplicate npm build on main) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) | [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | Last modified: 2026-06-05 18:56 UTC
 
 - **E05:S09:T13** – BR-090: Docusaurus `@docusaurus/faster` + package.json 3.10.1 alignment - 📋 TODO (HIGH, CI build gate red on main) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | Last modified: 2026-06-05 18:30 UTC
 

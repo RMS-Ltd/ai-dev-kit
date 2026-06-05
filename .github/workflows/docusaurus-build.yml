@@ -1,6 +1,6 @@
-# FR-069 / E5:S09:T05 — Docusaurus production build gate for portal + docs.
-# Path filters: avoid running on unrelated repo changes. Push runs only on main;
-# pull_request runs when the PR touches these paths (any base branch).
+# FR-069 / FR-070 / ADR-017 / E5:S09:T14 — Single workflow: build + deploy (artifact handoff).
+# Topology: docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md
+# PR: build job only. main push / workflow_dispatch: build then deploy (needs: + artifact).
 name: Docusaurus site build
 
 # Quote `on` so YAML 1.1 parsers (e.g. PyYAML) do not treat it as boolean true.
@@ -17,6 +17,7 @@ name: Docusaurus site build
       - "portal/**"
       - "docs/**"
       - ".github/workflows/docusaurus-build.yml"
+  workflow_dispatch:
 
 defaults:
   run:
@@ -41,3 +42,32 @@ jobs:
 
       - name: Production build
         run: npm run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: portal-build
+          path: portal/build
+          retention-days: 1
+
+  deploy:
+    needs: build
+    if: >-
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: portal-build
+          path: portal/build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./portal/build
+          force_orphan: false

@@ -62,7 +62,7 @@ The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **
 
 Canonical structure reference: [Ultimate Canonical KB Structure](../docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md).
 
-**CI (FR-069):** GitHub Actions runs `npm ci` and `npm run build` in this directory when `portal/`, `docs/`, or [`.github/workflows/docusaurus-build.yml`](../.github/workflows/docusaurus-build.yml) change on pull requests and on pushes to `main`.
+**CI (FR-069 / ADR-017):** GitHub Actions workflow [**Docusaurus site build**](../.github/workflows/docusaurus-build.yml) runs `npm ci` and `npm run build` in this directory when `portal/`, `docs/`, or the workflow file change on **pull requests** and on pushes to `main`. On `main` (and **`workflow_dispatch`**), a **`deploy`** job publishes the build artifact to **`gh-pages`** after the **`build`** job succeeds — **one** production build per commit; deploy is skipped when build fails.
 
 ## Dependency updates (Dependabot) — FR-105 / E08:S03:T06
 
@@ -94,15 +94,15 @@ Optional audit pass (safe first, then selective `--force` only if build stays gr
 
 - **Canonical URL:** https://rms-ltd.github.io/ai-dev-kit/
 - **`docusaurus.config.js`:** `url` = `https://rms-ltd.github.io`, `baseUrl` = `/ai-dev-kit/` (must stay aligned with this path).
-- **Published artifact:** static files from `npm run build` are pushed to the **`gh-pages`** branch by [`.github/workflows/docusaurus-deploy.yml`](../.github/workflows/docusaurus-deploy.yml) (`peaceiris/actions-gh-pages`, `publish_dir: ./portal/build`).
-- **Triggers:** push to `main` when `portal/`, `docs/`, or the deploy workflow changes; **`workflow_dispatch`** for a manual redeploy.
+- **Published artifact:** static files from `npm run build` are pushed to the **`gh-pages`** branch by the **`deploy`** job in [`.github/workflows/docusaurus-build.yml`](../.github/workflows/docusaurus-build.yml) (`peaceiris/actions-gh-pages`, `publish_dir: ./portal/build`; artifact from the same workflow run per [ADR-017](../docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
+- **Triggers:** push to `main` when `portal/`, `docs/`, or the build workflow changes; **`workflow_dispatch`** on **Docusaurus site build** for a manual redeploy.
 - **Repo visibility:** Repository is **public** — matches **GitHub Free** expectations for this **project** Pages URL (no paid-tier workaround for “private repo + Pages”).
 - **Repo settings:** GitHub → **Settings → Pages**: source **Deploy from a branch**, branch **`gh-pages`**, folder **`/ (root)`**. First run may require admin enablement; until then the URL can 404.
 - **Secrets / permissions (NF01):** Deploy uses only the default **`GITHUB_TOKEN`** (`github_token: ${{ secrets.GITHUB_TOKEN }}` in the workflow) — **no PAT in the repo**. Workflow sets `permissions: contents: write` so the action can push to `gh-pages`. If your org restricts token permissions, add an org-approved alternative (e.g. fine-grained PAT in **`GH_PAGES_TOKEN`** only if documented here — not committed).
 
 ### Rollback (NF02)
 
-- **Redeploy prior `main`:** revert or reset `main` to the last known-good commit, push (or run **Docusaurus deploy to GitHub Pages** via `workflow_dispatch` after checking out that commit in a branch — preferred: fix `main` and push to trigger deploy).
+- **Redeploy prior `main`:** revert or reset `main` to the last known-good commit, push (or run **Docusaurus site build** via `workflow_dispatch` after checking out that commit in a branch — preferred: fix `main` and push to trigger deploy).
 - **Or** restore `gh-pages` to a previous tree via git (maintainer) and force-push that branch — use only if you understand impact on live site.
 
 ### Go-live and troubleshooting (E5:S09:T09)
@@ -114,7 +114,7 @@ If **`gh-pages`** is updating but **https://rms-ltd.github.io/ai-dev-kit/** stil
    `gh api --method POST repos/<owner>/<repo>/pages -f build_type=legacy -f 'source[branch]=gh-pages' -f 'source[path]=/'`  
    Then confirm: `curl -sI https://rms-ltd.github.io/ai-dev-kit/` → **200**.
 
-**Verify deploy:** **Actions** → workflow **Docusaurus deploy to GitHub Pages** should be green after pushes to **`main`** that touch `portal/`, `docs/`, or the deploy workflow (or run **`workflow_dispatch`**).
+**Verify deploy:** **Actions** → workflow **Docusaurus site build** — **`deploy`** job should be green after pushes to **`main`** that touch `portal/`, `docs/`, or the workflow (or run **`workflow_dispatch`**).
 
 ## Site search (FR-071)
 

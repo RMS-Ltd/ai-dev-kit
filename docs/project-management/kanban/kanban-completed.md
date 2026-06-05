@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T08** — BR-094 closure v0.8.3.8+1)
-**Version:** v0.8.3.8+1
+**Last Updated:** 2026-06-05 (RW **E05:S09:T14** — BR-093 CI dedup v0.5.9.14+2)
+**Version:** v0.5.9.14+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 5: Documentation Management (Story 9 — Docusaurus Documentation Portal)**
+- **[E05:S09:T14](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)** — **BR-093**: Docusaurus CI build/deploy deduplication — merged workflow + artifact handoff ([ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
+  **Completed:** `2026-06-05T00:23:30Z` | **Version:** `v0.5.9.14+2` | **Agent:** `RW E05:S09:T14` | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
 - **[E08:S03:T08](epics/epic-08/story-03-automation-scripts/T08-codeql-git-tag-handler-syntax-br094.md)** — **BR-094**: CodeQL `git_tag_handler.py` indentation syntax fix.

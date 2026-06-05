@@ -1,0 +1,58 @@
+{
+  "version_string": "v0.5.9.14+2",
+  "task_id": "E05:S09:T14",
+  "epic": 5,
+  "story": 9,
+  "task": 14,
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "notes": "Removed terminal E05:S09:T14 row; appended kanban-completed.md"
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "notes": "BR-093 fix attempted; pending verification — row retained"
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md"
+      ]
+    },
+    "adr": {
+      "touched": true,
+      "paths": [
+        "docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md"
+      ]
+    },
+    "workflow": {
+      "touched": true,
+      "paths": [
+        ".github/workflows/docusaurus-build.yml"
+      ],
+      "deleted": [
+        ".github/workflows/docusaurus-deploy.yml"
+      ]
+    }
+  },
+  "notes": "RW E05:S09:T14 — BR-093 implementation + release."
+}

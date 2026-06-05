@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-03-30  
-**Last updated:** 2026-06-05 (v0.5.9.14+1 — **T14 / BR-093** IPW planning package persisted)
-**Version:** v0.5.9.14+1
+**Last updated:** 2026-06-05 (v0.5.9.14+2 — **T14 / BR-093** COMPLETE)
+**Version:** v0.5.9.14+2
 **Code:** E5S09
 
 ---
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 - [x] **E05:S09:T11 – Monorepo cross-root Markdown link resolution ([BR-068](../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md))** — ✅ COMPLETE (**v0.5.9.11+5** — Wave 4 closes **BR-068**) — [task file](story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
 - [x] **E05:S09:T12 – Changelog directory consolidation ([UXR-018](../../fr-br/UXR-018-changelog-directory-consolidation.md))** — ✅ COMPLETE (**v0.5.9.12+3**) — [task file](story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md) | [IPP](../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) | [Remediation](../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
 - [ ] **E05:S09:T13 – Docusaurus `@docusaurus/faster` + package.json 3.10.1 alignment ([BR-090](../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md))** — 📋 TODO — [task file](story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) — Kanban documentation setup (**v0.5.9.13+0**)
-- [ ] **E05:S09:T14 – Docusaurus CI build/deploy deduplication ([BR-093](../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md))** — 🔄 IN PROGRESS — [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) — [task file](story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) (**v0.5.9.14+1** — IPW planning package persisted)
+- [x] **E05:S09:T14 – Docusaurus CI build/deploy deduplication ([BR-093](../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md))** — ✅ COMPLETE (**v0.5.9.14+2** — **RW E05:S09:T14**); [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) · [ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md) — [task file](story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)
 
 > **Forensic marker format:** `✅ COMPLETE (vRC.E.S.T+B)` when done.
 

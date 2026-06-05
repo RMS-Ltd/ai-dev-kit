@@ -3,6 +3,8 @@ FR-070 / E5:S09:T06: Docusaurus production hosting (GitHub Pages) contract.
 
 Executable spec S1–S7 (E2E URL/deploy green is manual).
 
+Cross-job deploy topology per ADR-017 (supersedes same-job S7).
+
 See: docs/project-management/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md
 """
 
@@ -16,8 +18,8 @@ import pytest
 import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DEPLOY_WORKFLOW_REL = Path(".github/workflows/docusaurus-deploy.yml")
-DEPLOY_WORKFLOW_PATH = REPO_ROOT / DEPLOY_WORKFLOW_REL
+BUILD_WORKFLOW_REL = Path(".github/workflows/docusaurus-build.yml")
+BUILD_WORKFLOW_PATH = REPO_ROOT / BUILD_WORKFLOW_REL
 PORTAL_README = REPO_ROOT / "portal" / "README.md"
 ROOT_README = REPO_ROOT / "README.md"
 CONFIG_PATH = REPO_ROOT / "portal" / "docusaurus.config.js"
@@ -26,15 +28,22 @@ CANONICAL_SITE_URL = "https://rms-ltd.github.io/ai-dev-kit/"
 
 
 @pytest.fixture
-def deploy_workflow_doc() -> dict[str, Any]:
-    assert DEPLOY_WORKFLOW_PATH.is_file(), f"Missing {DEPLOY_WORKFLOW_PATH}"
-    text = DEPLOY_WORKFLOW_PATH.read_text(encoding="utf-8")
+def build_workflow_doc() -> dict[str, Any]:
+    assert BUILD_WORKFLOW_PATH.is_file(), f"Missing {BUILD_WORKFLOW_PATH}"
+    text = BUILD_WORKFLOW_PATH.read_text(encoding="utf-8")
     return yaml.safe_load(text)
 
 
 @pytest.fixture
 def config_text() -> str:
     return CONFIG_PATH.read_text(encoding="utf-8")
+
+
+def _job_steps(job: dict[str, Any]) -> list[dict[str, Any]]:
+    steps = job.get("steps")
+    if not isinstance(steps, list):
+        return []
+    return [s for s in steps if isinstance(s, dict)]
 
 
 def test_fr070_s2_config_url_baseurl(config_text: str):
@@ -49,37 +58,27 @@ def test_fr070_s1_readme_documents_canonical_url():
     assert CANONICAL_SITE_URL in text
 
 
-def test_fr070_s3_deploy_workflow_exists(deploy_workflow_doc: dict[str, Any]):
-    """S3 — deploy workflow YAML with build + gh-pages publish."""
-    assert isinstance(deploy_workflow_doc, dict)
-    assert deploy_workflow_doc.get("name")
-    assert deploy_workflow_doc.get("on")
-    jobs = deploy_workflow_doc.get("jobs")
+def test_fr070_s3_deploy_job_in_build_workflow(build_workflow_doc: dict[str, Any]):
+    """S3 — deploy job in merged workflow with gh-pages publish (ADR-017)."""
+    jobs = build_workflow_doc.get("jobs")
     assert isinstance(jobs, dict) and jobs
     deploy = jobs.get("deploy")
     assert isinstance(deploy, dict)
-    steps = deploy.get("steps")
-    assert isinstance(steps, list)
-    texts: list[str] = []
+    steps = _job_steps(deploy)
     publish_like = False
     for s in steps:
-        if not isinstance(s, dict):
-            continue
         uses = s.get("uses")
-        run = s.get("run")
-        if uses:
-            texts.append(str(uses))
-            if "peaceiris/actions-gh-pages" in str(uses):
-                publish_like = True
-                with_ = s.get("with") or {}
-                pd = with_.get("publish_dir")
-                assert pd is not None and "portal/build" in str(pd).replace("\\", "/")
-        if run:
-            texts.append(str(run))
-    joined = "\n".join(texts)
-    assert "npm ci" in joined
-    assert "npm run build" in joined
+        if uses and "peaceiris/actions-gh-pages" in str(uses):
+            publish_like = True
+            with_ = s.get("with") or {}
+            pd = with_.get("publish_dir")
+            assert pd is not None and "portal/build" in str(pd).replace("\\", "/")
     assert publish_like
+    build = jobs.get("build")
+    assert isinstance(build, dict)
+    build_runs = "\n".join(str(s.get("run") or "") for s in _job_steps(build))
+    assert "npm ci" in build_runs
+    assert "npm run build" in build_runs
 
 
 def test_fr070_s4_root_readme_site_link():
@@ -88,11 +87,13 @@ def test_fr070_s4_root_readme_site_link():
     assert CANONICAL_SITE_URL in text or "earlution.github.io/ai-dev-kit" in text
 
 
-def test_fr070_s5_no_literal_secrets():
-    """S5 — no obvious PAT literals in deploy workflow."""
-    raw = DEPLOY_WORKFLOW_PATH.read_text(encoding="utf-8")
+def test_fr070_s5_no_literal_secrets(build_workflow_doc: dict[str, Any]):
+    """S5 — no obvious PAT literals; deploy uses GITHUB_TOKEN."""
+    raw = BUILD_WORKFLOW_PATH.read_text(encoding="utf-8")
     assert "ghp_" not in raw
-    assert "${{ secrets.GITHUB_TOKEN }}" in raw or "secrets.GITHUB_TOKEN" in raw
+    deploy_steps = _job_steps(build_workflow_doc["jobs"]["deploy"])
+    joined = "\n".join(str(s) for s in deploy_steps)
+    assert "GITHUB_TOKEN" in joined or "secrets.GITHUB_TOKEN" in joined
 
 
 def test_fr070_s6_rollback_mentioned():
@@ -101,19 +102,21 @@ def test_fr070_s6_rollback_mentioned():
     assert re.search(r"rollback", text, re.IGNORECASE)
 
 
-def test_fr070_s7_build_before_publish(deploy_workflow_doc: dict[str, Any]):
-    """S7 — publish step after build in the same job."""
-    deploy = deploy_workflow_doc["jobs"]["deploy"]
-    steps = deploy["steps"]
-    idx_build: int | None = None
-    idx_publish: int | None = None
-    for i, s in enumerate(steps):
-        if not isinstance(s, dict):
-            continue
-        if s.get("run") and "npm run build" in str(s.get("run")):
-            idx_build = i
+def test_fr070_s7_artifact_freshness_before_publish(build_workflow_doc: dict[str, Any]):
+    """S7 — build uploads artifact; deploy downloads before publish (same run)."""
+    build_steps = _job_steps(build_workflow_doc["jobs"]["build"])
+    deploy_steps = _job_steps(build_workflow_doc["jobs"]["deploy"])
+    assert build_workflow_doc["jobs"]["deploy"].get("needs") == "build"
+    upload_idx = download_idx = publish_idx = None
+    for i, s in enumerate(build_steps):
+        if "upload-artifact" in str(s.get("uses") or ""):
+            upload_idx = i
+    for i, s in enumerate(deploy_steps):
         uses = str(s.get("uses") or "")
+        if "download-artifact" in uses:
+            download_idx = i
         if "peaceiris/actions-gh-pages" in uses:
-            idx_publish = i
-    assert idx_build is not None and idx_publish is not None
-    assert idx_publish > idx_build
+            publish_idx = i
+    assert upload_idx is not None
+    assert download_idx is not None and publish_idx is not None
+    assert download_idx < publish_idx

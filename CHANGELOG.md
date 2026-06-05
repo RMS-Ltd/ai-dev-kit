@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.14+2] - 05-06-26
+
+E05:S09:T14 — **BR-093:** Merged Docusaurus CI build+deploy (ADR-017); one production build per `main` push. SemVer **v0.4.893+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+2.md)
+
+---
+
 ## [0.5.9.14+1] - 05-06-26
 
 E05:S09:T14 — **BR-093 IPW recovery:** Persist IPP planning package + task wiring (docs-only). SemVer **v0.4.892+1**.

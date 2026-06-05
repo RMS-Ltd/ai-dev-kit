@@ -11,12 +11,12 @@ housekeeping_policy: keep
 **Bug ID:** BR-093  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM — Every qualifying push to **`main`** triggers **two** independent workflows that each run **`npm ci`** + **`npm run build`**; when build is broken, both fail (~91 deploy + ~97 build failures since May 2026).  
-**Status:** OPEN  
+**Status:** OPEN — fix attempted (**v0.5.9.14+2**); pending post-merge Actions verification on `main`  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.5.9.14+1 — IPW planning package persisted)  
-**Version:** v0.5.9.14+1  
-**Implementing Task:** [E05:S09:T14](../epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)  
-**Planning:** [IPP-E05S09T14](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)  
+**Last updated:** 2026-06-05 (v0.5.9.14+2 — workflow merge per ADR-017)  
+**Version:** v0.5.9.14+2  
+**Implementing Task:** [E05:S09:T14](../epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) ✅ COMPLETE  
+**Planning:** [IPP-E05S09T14](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) · [ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)  
 **Related:** [BR-052](./BR-052-github-actions-workflow-optimization.md) (general GHA optimization) · [BR-090](./BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) (underlying build failure — fix separately first) · [FR-069](./FR-069-docusaurus-ci-build-gate.md) · [FR-070](./FR-070-docusaurus-deployment-and-hosting.md)
 
 ---

@@ -1,0 +1,14 @@
+{
+  "rows": {
+    "E05:S09:T14": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.5.9.14+2 — terminal row removed from kboard; ledger kanban-completed.md"
+    }
+  },
+  "structure_prune": {
+    "kboard.md": {
+      "removed_row_ids": ["E05:S09:T14"],
+      "reason": "Task COMPLETE v0.5.9.14+2"
+    }
+  }
+}
