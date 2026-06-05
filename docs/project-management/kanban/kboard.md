@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW -k E08:S03:T12 — BR-099 dashboard re-scan)
-**Version:** v0.8.3.12+2
+**Last Updated:** 2026-06-05 (RW -k E08:S03:T13 — BR-100 dashboard re-scan)
+**Version:** v0.8.3.13+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -30,9 +30,9 @@ housekeeping_policy: keep
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, wave-1 verified **560→145** −74% @ `cadb0c3`; score **Fair**; wave-2 **145** open) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-05 11:42 UTC
 
-### Verification (V) - Task Shipped, FBU Verification Pending
+- **E08:S03:T13** – Code Quality reliability backlog (BR-100) - 🔄 IN PROGRESS (HIGH, wave-1 verified **133→34** −74% @ `cadb0c3`; score **Needs Improvement**; **34** open) | [Task](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) | Last modified: 2026-06-05 11:43 UTC
 
-- **E08:S03:T13** – Code Quality reliability backlog (BR-100) - ⏳ WAITING (HIGH, wave-1 shipped **v0.8.3.13+1**; GH Code Quality re-scan pending) | [Task](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) | Last modified: 2026-06-05 11:43 UTC
+### Verification (V) - Task Shipped, FBU Verification Pending
 
 - **E08:S03:T14** – Code Quality AI suggestions backlog (BR-101) - ⏳ WAITING (LOW, **v0.8.3.14+1** shipped; GH Code Quality + AI panel dismiss #10–#11 pending) | [Task](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md) | Last modified: 2026-06-05 14:51 UTC
 

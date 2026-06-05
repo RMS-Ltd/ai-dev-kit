@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (RW -k E08:S03:T12 — BR-099 dashboard re-scan)
-**Version:** v0.8.3.12+2
+**Last updated:** 2026-06-05 (RW -k E08:S03:T13 — BR-100 dashboard re-scan)
+**Version:** v0.8.3.13+2
 **Code:** E8S03
 
 ---
@@ -49,7 +49,7 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 🔄 IN PROGRESS (**v0.8.3.12+2** wave-1 verified **560→145** −74%; score **Fair**; wave-2 backlog) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
-- [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — ⏳ WAITING (**v0.8.3.13+1** wave-1 shipped; GH Code Quality re-scan pending) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
+- [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 🔄 IN PROGRESS (**v0.8.3.13+2** wave-1 verified **133→34** −74%; score **Needs Improvement**; **34** open) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 
 - [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ⏳ WAITING (**v0.8.3.14+1** shipped; GH Code Quality + AI panel dismiss pending) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
@@ -57,7 +57,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12** (BR-099) wave-1 verified on dashboard re-scan (**560→145** maintainability @ `cadb0c3`); wave-2 in progress. **T13–T14** (BR-100/101) awaiting separate kanban re-scan releases.
+Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T13** (BR-099/100) wave-1 verified on dashboard re-scan (**560→145** maintainability, **133→34** reliability @ `cadb0c3`); wave-2/remainder in progress. **T14** (BR-101) awaiting kanban re-scan release.
 
 ---
 

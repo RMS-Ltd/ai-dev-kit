@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 8, Story 3, Task 13: Code Quality reliability backlog (**BR-100**)
 
 **Task ID:** E08:S03:T13  
-**Status:** WAITING  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (UKW -u — ⏳ WAITING on GH Code Quality re-scan; wave-1 **v0.8.3.13+1**)  
-**Version Anchor:** v0.8.3.13+1  
-**Version:** v0.8.3.13+1  
+**Last updated:** 2026-06-05 (dashboard re-scan — wave-1 verified **133→34** −74%; score still **Needs Improvement**; remainder triage)  
+**Version Anchor:** v0.8.3.13+2  
+**Version:** v0.8.3.13+2  
 **Code:** E08S03T13
 
 **Scope:** Phased burn-down of **133** open GitHub Code Quality **reliability** findings on `main`; wave 1 = empty except, file-not-closed, wrong-arguments, BaseException catches.
@@ -92,11 +92,26 @@ Publication Status: NOT_APPLICABLE
 
 ---
 
+## Dashboard re-scan manifest (2026-06-05)
+
+**Source:** [GitHub Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open` filter).
+
+| Field | Baseline (2026-06-05) | Post wave-1 re-scan (2026-06-05) |
+| ----- | --------------------- | -------------------------------- |
+| Branch / ref | `main` @ `5fcf102` | `main` @ `cadb0c3` |
+| Open reliability | **133** | **34** |
+| Delta | — | **−99** (−74.4%) |
+| Dashboard score | **Needs Improvement** | **Needs Improvement** (unchanged) |
+
+**Next:** Triage **34** residual findings (likely wave-2 rules: `py/mixed-returns`, `py/multiple-definition`, `py/use-of-exit-or-quit`, deferred `py/call/wrong-arguments`) until score reaches **Fair**+.
+
+---
+
 ## Acceptance Criteria
 
 - [x] Baseline manifest captured (rule → count, top files).
 - [x] Wave-1 rule groups triaged; true positives fixed (local AST clean).
-- [ ] Reliability score improves to **Fair** or better (dashboard pending).
+- [ ] Reliability score improves to **Fair** or better (**Needs Improvement** @ **34** open on re-scan).
 - [x] No CI regressions (`pytest tests/` green).
 - [ ] **BR-100** released via **RW E08:S03:T13** when complete.
 

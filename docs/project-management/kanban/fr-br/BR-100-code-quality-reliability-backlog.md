@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Bug Report BR-100: GitHub Code Quality — reliability findings backlog (133 open)
+# Bug Report BR-100: GitHub Code Quality — reliability findings backlog (34 open)
 
 **Bug ID:** BR-100  
 **Priority:** HIGH  
-**Severity:** HIGH — Code Quality **Reliability** score **Needs Improvement**; **133** open standard findings on `main` (2026-06-05).  
-**Status:** WAITING  
+**Severity:** HIGH — Code Quality **Reliability** score **Needs Improvement**; **34** open standard findings on `main` (2026-06-05 re-scan; was **133** @ `5fcf102`).  
+**Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (UKW -u — wave-1 shipped **v0.8.3.13+1**; GH Code Quality re-scan pending)  
-**Version:** v0.8.3.13+1  
+**Last updated:** 2026-06-05 (dashboard re-scan — wave-1 **133→34** −74%; score still **Needs Improvement**)  
+**Version:** v0.8.3.13+2  
 **Implementing Task:** [E08:S03:T13](../epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md)
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-GitHub **Code Quality** reports **133 open reliability findings** on `main`, with Reliability rated **Needs Improvement**. These findings indicate latent bugs, exception-handling defects, and resource-leak patterns — higher severity than maintainability hygiene ([BR-099](BR-099-code-quality-maintainability-backlog.md)).
+GitHub **Code Quality** reported **133 open reliability findings** on `main` (`5fcf102`), with Reliability rated **Needs Improvement**. Wave-1 remediation (**v0.8.3.13+1**) reduced open count to **34** on re-scan (`cadb0c3`, −74.4%); score remains **Needs Improvement**. Residual findings likely include wave-2/3 rules deferred from wave 1.
 
 ---
 
@@ -66,7 +66,9 @@ GitHub **Code Quality** reports **133 open reliability findings** on `main`, wit
 
 **Change implemented:** Wave-1 surgical remediation per [IPP-E08S03T13](../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — empty-except (`pass` handlers → `del _suppressed_exc`), file-not-closed (`_ENV_LOG_FH` → per-write `with open` + `suppress`), bare `except:` → typed exceptions. **60** Python files; `pytest tests/` **396 passed**.
 
-**Verification:** Local AST scan post-wave: **0** pass-only handlers, **0** bare except, **0** assign-open leaks. GitHub dashboard Reliability score **not yet re-scanned** — pending push/merge.
+**Verification:** Local AST scan post-wave: **0** pass-only handlers, **0** bare except, **0** assign-open leaks.
+
+**Dashboard re-scan (2026-06-05):** [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) — **34** open reliability @ `main` `cadb0c3` (was **133**); score **Needs Improvement** (unchanged). Wave-2 triage on **34** residuals required for **Fair**+.
 
 ---
 
