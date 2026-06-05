@@ -437,60 +437,24 @@ def present_migration_plan(analysis_report_path: Path):
     """Present migration plan with recommendations and trade-offs."""
     if not analysis_report_path.exists():
         return
-    
+
     try:
-        with open(analysis_report_path, 'r', encoding='utf-8') as f:
+        from migration_plan_presenter import format_migration_plan_preview
+    except ImportError:
+        import importlib.util
+
+        presenter_path = Path(__file__).parent / "migration_plan_presenter.py"
+        spec = importlib.util.spec_from_file_location(
+            "migration_plan_presenter", presenter_path
+        )
+        presenter_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(presenter_module)
+        format_migration_plan_preview = presenter_module.format_migration_plan_preview
+
+    try:
+        with open(analysis_report_path, "r", encoding="utf-8") as f:
             analysis = json.load(f)
-        
-        plan = analysis.get("migration_plan", {})
-        semantic_matches = analysis.get("semantic_matches", [])
-        conflicts = analysis.get("conflicts", [])
-        
-        print("\n📋 Migration Plan Preview")
-        print("=" * 60)
-        
-        # Show semantic matches (all matches shown, no threshold filtering per BR-008/FR-010)
-        if semantic_matches:
-            print("\n🔍 Semantic Matches Found (all matches processed, no threshold):")
-            # Display all matches, categorized for information only (not blocking)
-            for match in semantic_matches[:10]:  # Show first 10
-                match_type = match.get("match_type", "unknown")
-                score = match.get("similarity_score", 0)
-                print(f"     Epic {match['user_epic_number']} → Canonical Epic {match['canonical_epic_number']} "
-                      f"({score:.1f}%, {match_type})")
-            if len(semantic_matches) > 10:
-                print(f"     ... and {len(semantic_matches) - 10} more matches")
-            
-            if len(semantic_matches) > 0:
-                print(f"  ℹ️  All {len(semantic_matches)} semantic matches will be processed (threshold removed per BR-008/FR-010)")
-                for match in medium_matches[:3]:  # Show first 3
-                    print(f"     Epic {match['user_epic_number']} → Canonical Epic {match['canonical_epic_number']} "
-                          f"({match['similarity_score']:.1f}%)")
-        
-        # Show conflicts
-        if conflicts:
-            high_conflicts = [c for c in conflicts if c.get("severity") == "high"]
-            if high_conflicts:
-                print(f"\n⚠️  {len(high_conflicts)} high-severity conflicts detected")
-        
-        # Show recommendation
-        recommended_mode = plan.get("recommended_mode")
-        rationale = plan.get("recommendation_rationale", "")
-        
-        if recommended_mode:
-            print(f"\n💡 Recommended Mode: {recommended_mode}")
-            if rationale:
-                print(f"   {rationale}")
-        
-        # Show trade-offs
-        print("\n📊 Mode Comparison:")
-        print("  canonical_adoption: Optimal organization, intelligent task mapping, preserves work")
-        print("  hybrid:              Preserves project epics, installs framework epics")
-        print("  migration:           Converts structure, preserves all work items")
-        print("  fresh:               Clean slate, no existing structure")
-        
-        print("\n" + "=" * 60)
-        
+        print(format_migration_plan_preview(analysis))
     except Exception as e:
         print(f"⚠️  Could not load migration plan: {e}")
 
@@ -681,6 +645,10 @@ Examples:
         action="store_true",
         help="Close ai-dev-kit issues whose sign-off checks passed (requires gh auth)",
     )
+    parser.add_argument("--generate-task-templates", action="store_true",
+                        help="After install, generate missing canonical task templates")
+    parser.add_argument("--generate-task-templates-overwrite", action="store_true",
+                        help="With --generate-task-templates, allow overwrite")
 
     args = parser.parse_args()
     
@@ -835,6 +803,16 @@ Examples:
         print("  1. Review migration log in analysis_report.json")
         print("  2. Verify migrated structure")
         print("  3. Continue using Kanban framework")
+
+    if args.generate_task_templates and not args.dry_run:
+        generator = Path(__file__).parent / "generate_task_templates.py"
+        if generator.is_file():
+            print("\n🧩 Generating canonical task templates...")
+            cmd = [sys.executable, str(generator)]
+            if args.generate_task_templates_overwrite:
+                cmd.append("--overwrite")
+            if subprocess.run(cmd, cwd=project_root, check=False).returncode != 0:
+                print("⚠️  Task template generation reported issues.")
 
     if not args.skip_github_signoff:
         try:

@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-09 (v0.4.8.7+2 – Kanban documentation setup)
-**Version:** v0.4.8.7+2
+**Last updated:** 2026-06-05 (E04:S08:T05 — migration plan presentation reconciliation)
+**Version:** v0.4.8.5+1
 **Code:** E4S08
 
 ---
@@ -76,10 +76,13 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
 
 - [x] **E04:S08:T05 – FR-009: Migration plan presentation** ✅ COMPLETE (v0.4.8.5+1)
   - Implemented `present_migration_plan()` function in install script
-  - Shows semantic matches (high and medium similarity)
-  - Displays conflicts, recommendations, and rationale
+  - Extracted testable `migration_plan_presenter.py` (`format_migration_plan_preview`)
+  - Fixed `medium_matches` NameError; shows high/medium/low match bands
+  - Displays conflicts, recommendations, rationale, and planned migration steps
   - Presents mode comparison with trade-offs
   - Integrated into installation workflow before mode selection
+  - **Task doc:** [`T05-migration-plan-presentation-fr009.md`](story-08-intelligent-epic-matching-canonical-adoption/T05-migration-plan-presentation-fr009.md)
+  - **IPP:** [`IPP-E04S08T05-migration-plan-presentation-fr009.md`](../../../../implementation-cycles/IPP-E04S08T05-migration-plan-presentation-fr009.md)
   - **Linked FR:** FR-009  
   - **Acceptance:** ✅ AC-10 of FR-009 satisfied.
 
@@ -131,6 +134,7 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
 
 ## References
 
+- **IPP (E04:S08:T05):** [`IPP-E04S08T05-migration-plan-presentation-fr009.md`](../../../../implementation-cycles/IPP-E04S08T05-migration-plan-presentation-fr009.md)
 - FR-009: `docs/project-management/kanban/fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md`
 - UXR-002: `docs/project-management/kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md`
 - UXR-003: `docs/project-management/kanban/fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md`
