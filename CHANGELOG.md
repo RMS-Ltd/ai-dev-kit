@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.12+3] - 05-06-26
+
+E08:S03:T12 — **Change implemented:** IPP BR-100 link path fix (linked planning artifact hygiene). SemVer **v0.4.984+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+3.md)
+
+---
+
 ## [0.8.3.14+2] - 05-06-26
 
 E08:S03:T14 — **Change implemented:** Kanban re-scan manifest — **14** AI findings still open; dismiss #10–#11 pending on GitHub ai-findings panel. SemVer **v0.4.983+2**.

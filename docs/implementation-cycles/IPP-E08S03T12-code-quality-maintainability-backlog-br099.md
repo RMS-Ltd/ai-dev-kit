@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Planning for:** [BR-099](../project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)  
 **Status:** Approved (planning complete; awaiting implementation authorization)
 
-> **IPW:** Produced for E08:S03:T12. First bulk **Code Quality maintainability** burn-down; complements security CodeQL tasks E08:S03:T08–T11 and defers reliability ([BR-100](BR-100-code-quality-reliability-backlog.md) / E08:S03:T13).
+> **IPW:** Produced for E08:S03:T12. First bulk **Code Quality maintainability** burn-down; complements security CodeQL tasks E08:S03:T08–T11 and defers reliability ([BR-100](../project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md) / E08:S03:T13).
 
 ---
 

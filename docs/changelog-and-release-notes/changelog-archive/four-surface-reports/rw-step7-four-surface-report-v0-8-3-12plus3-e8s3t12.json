@@ -1,0 +1,37 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 scoped reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 12,
+    "task_id": "E08:S03:T12",
+    "version_string": "v0.8.3.12+3"
+  },
+  "timestamp_utc": "2026-06-05 16:13 UTC",
+  "summary": {
+    "stamps_preserved_existing": 1,
+    "total_changes": 4,
+    "touched_surfaces": ["task_doc", "fbu_doc", "story_doc"],
+    "untouched_surfaces": ["kboard"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md"
+      ],
+      "changes": ["Version v0.8.3.12+3"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md"],
+      "changes": ["Version v0.8.3.12+3"]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"],
+      "changes": ["Version v0.8.3.12+3"]
+    }
+  }
+}

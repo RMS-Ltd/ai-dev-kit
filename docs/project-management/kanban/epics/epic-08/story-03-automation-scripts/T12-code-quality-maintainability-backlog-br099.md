@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (dashboard re-scan — wave-1 verified **560→145** −74%; score **Fair**; wave-2 backlog)  
-**Version Anchor:** v0.8.3.12+2  
-**Version:** v0.8.3.12+2  
+**Last updated:** 2026-06-05 (RW E08:S03:T12 — IPP link hygiene)  
+**Version Anchor:** v0.8.3.12+3  
+**Version:** v0.8.3.12+3  
 **Code:** E08S03T12
 
 **Scope:** Phased burn-down of **560** open GitHub Code Quality **maintainability** findings on `main`; wave 1 = unused imports/variables, import hygiene, unnecessary pass/lambda.

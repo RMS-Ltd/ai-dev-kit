@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-05 (dashboard re-scan — wave-1 **560→145** −74%; score **Fair**; wave-2 backlog)  
-**Version:** v0.8.3.12+2  
+**Version:** v0.8.3.12+3  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
