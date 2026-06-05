@@ -1,0 +1,215 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-book-project/agent-handoff-context" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>AI Dev Kit & Book Project — Agent Handoff Context | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/book-project/agent-handoff-context /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="AI Dev Kit & Book Project — Agent Handoff Context | AI Dev Kit"/><meta data-rh=true name=description content="Created: 2026-05-28"/><meta data-rh=true property=og:description content="Created: 2026-05-28"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/book-project/agent-handoff-context /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/book-project/agent-handoff-context hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/book-project/agent-handoff-context hreflang=x-default /><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a class="navbar__item navbar__link" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>AI Dev Kit & Book Project — Agent Handoff Context</h1></header>
+<p><strong>Created:</strong> 2026-05-28<br/>
+<strong>Purpose:</strong> Provide context for agents working on book publishing matters who need to understand the relationship between the public AI Dev Kit and the private book project.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=repository-architecture-two-repo-split>Repository Architecture (Two-Repo Split)<a href=#repository-architecture-two-repo-split class=hash-link aria-label="Direct link to Repository Architecture (Two-Repo Split)" title="Direct link to Repository Architecture (Two-Repo Split)" translate=no>​</a></h2>
+<p>As of <strong>2026-05-26</strong>, the project operates as <strong>two separate repositories</strong>:</p>
+<table><thead><tr><th>Repository<th>Visibility<th>URL<th>Purpose<tbody><tr><td><strong>AI Dev Kit (Public)</strong><td>Public<td><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=""><code>RMS-Ltd/ai-dev-kit</code></a><td>Framework packages, workflow tooling, adoption docs<tr><td><strong>Book Project (Private)</strong><td>Private<td><a href=https://github.com/RMS-Ltd/ai-dev-kit-book target=_blank rel="noopener noreferrer" class=""><code>RMS-Ltd/ai-dev-kit-book</code></a><td>Manuscript, Epic 24, Head First / O'Reilly publishing work</table>
+<p><strong>Governing ADR:</strong> <a class="" href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off>ADR-006 — Book Project Private Repository Spin-Off</a></p>
+<p><strong>Key Point:</strong> The public AI Dev Kit contains <strong>no manuscript content</strong>, <strong>no Head First branding</strong>, and <strong>no Epic 24</strong> on its default branch. All book-related IP was extracted to the private repository.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=part-1-ai-dev-kit--production-readiness-assessment>Part 1: AI Dev Kit — Production Readiness Assessment<a href=#part-1-ai-dev-kit--production-readiness-assessment class=hash-link aria-label="Direct link to Part 1: AI Dev Kit — Production Readiness Assessment" title="Direct link to Part 1: AI Dev Kit — Production Readiness Assessment" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=current-state-as-of-v048132--internal-v01472>Current State (as of v0.4.813+2 / internal v0.1.4.7+2)<a href=#current-state-as-of-v048132--internal-v01472 class=hash-link aria-label="Direct link to Current State (as of v0.4.813+2 / internal v0.1.4.7+2)" title="Direct link to Current State (as of v0.4.813+2 / internal v0.1.4.7+2)" translate=no>​</a></h3>
+<p><strong>Overall Status:</strong> <strong>Production-ready for framework adoption</strong>, but positioned as <strong>active development</strong> (RC 0).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=framework-maturity>Framework Maturity<a href=#framework-maturity class=hash-link aria-label="Direct link to Framework Maturity" title="Direct link to Framework Maturity" translate=no>​</a></h3>
+<table><thead><tr><th>Framework<th>Version<th>Status<th>Notes<tbody><tr><td><strong>Workflow Management</strong><td>v2.3.0<td>✅ Stable<td>11 workflows in registry; RW/UKW/IPW battle-tested<tr><td><strong>Kanban</strong><td>v2.2.0<td>✅ Stable<td>Epic/Story/Task structure, FR/BR intake<tr><td><strong>Numbering & Versioning</strong><td>v2.0.0<td>✅ Stable<td>Dual-version (internal + SemVer), registry-based mapping<tr><td><strong>Document Lifecycle</strong><td>v1.0.0<td>✅ Stable<td>TTL-based housekeeping<tr><td><strong>Debug Path</strong><td>v1.0.0<td>✅ Stable<td>Debugging utilities</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=production-ready-features>Production-Ready Features<a href=#production-ready-features class=hash-link aria-label="Direct link to Production-Ready Features" title="Direct link to Production-Ready Features" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Release Workflow (RW)</strong> — Fully automated 13-step release process</p>
+<ul>
+<li class="">Branch context validation</li>
+<li class="">Task intent validation</li>
+<li class="">Changelog generation</li>
+<li class="">Kanban marker updates</li>
+<li class="">Dual tagging (internal + SemVer)</li>
+<li class=""><strong>Used for every release since v0.1.4.7+2</strong></li>
+</ul>
+</li>
+<li class="">
+<p><strong>Update Kanban Workflow (UKW)</strong> — Board synchronization</p>
+<ul>
+<li class="">Bookkeeping updates</li>
+<li class="">Priority management</li>
+<li class="">Kanban hygiene</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Validators</strong> — Pre-commit and pre-release validation</p>
+<ul>
+<li class=""><code>validate_branch_context.py --strict</code></li>
+<li class=""><code>validate_rw_task_complete.py</code></li>
+<li class=""><code>validate_rw_task_intent.py</code></li>
+<li class=""><code>validate_semver_monotonic.py</code></li>
+</ul>
+</li>
+<li class="">
+<p><strong>Installation Framework</strong> — Greenfield/brownfield adoption</p>
+<ul>
+<li class="">Submodule-based installation</li>
+<li class="">Framework copy + installer scripts</li>
+<li class="">Post-template setup guides</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=whats-not-production-ready>What's NOT Production-Ready<a href=#whats-not-production-ready class=hash-link aria-label="Direct link to What's NOT Production-Ready" title="Direct link to What's NOT Production-Ready" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>CLI Tooling</strong> — Minimal CLI presence; most workflows invoked via slash commands or scripts</li>
+<li class=""><strong>Package Distribution</strong> — Not published to PyPI/npm; installed via git submodule or copy-paste</li>
+<li class=""><strong>CI/CD</strong> — Limited automated CI; relies on agent-driven workflow execution</li>
+<li class=""><strong>Public Documentation Site</strong> — GitHub Pages exists but may not be fully synced</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=development-philosophy>Development Philosophy<a href=#development-philosophy class=hash-link aria-label="Direct link to Development Philosophy" title="Direct link to Development Philosophy" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Agent-first design:</strong> Workflows designed for AI agent execution (Cursor, Claude Code)</li>
+<li class=""><strong>Config-driven:</strong> <code>rw-config.yaml</code> as single source of truth</li>
+<li class=""><strong>Forensic traceability:</strong> Every release tied to Kanban coordinates (E:S<!-- -->:T<!-- -->)</li>
+<li class=""><strong>Dual-versioning:</strong> Internal <code>RC.EPIC.STORY.TASK+BUILD</code> + external SemVer</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=kanban-state>Kanban State<a href=#kanban-state class=hash-link aria-label="Direct link to Kanban State" title="Direct link to Kanban State" translate=no>​</a></h3>
+<p><strong>Active Epics (public repo):</strong></p>
+<ul>
+<li class="">Epic 1: AI Dev Kit Core</li>
+<li class="">Epic 2: Workflow Management Framework</li>
+<li class="">Epic 3: Numbering & Versioning Framework</li>
+<li class="">Epic 4: Kanban Framework</li>
+<li class="">Epic 5: (various enhancements)</li>
+<li class="">Epic 6: (various enhancements)</li>
+</ul>
+<p><strong>Epic 24 (Book):</strong> <strong>Removed from public Kanban</strong> — exists only in private repo.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=part-2-book-project--detailed-status>Part 2: Book Project — Detailed Status<a href=#part-2-book-project--detailed-status class=hash-link aria-label="Direct link to Part 2: Book Project — Detailed Status" title="Direct link to Part 2: Book Project — Detailed Status" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=project-overview>Project Overview<a href=#project-overview class=hash-link aria-label="Direct link to Project Overview" title="Direct link to Project Overview" translate=no>​</a></h3>
+<p><strong>Working Title:</strong> "Head First AI Dev Kit: The Vibe-Coder's Complete Guide"<br/>
+<strong>Format:</strong> Head First series (O'Reilly Media)<br/>
+<strong>Status:</strong> <strong>Private development</strong> — manuscript unpublished</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=repository-history>Repository History<a href=#repository-history class=hash-link aria-label="Direct link to Repository History" title="Direct link to Repository History" translate=no>​</a></h3>
+<table><thead><tr><th>Phase<th>Date<th>Milestone<tbody><tr><td>Phase 0<td>2026-05-26<td>Inventory + ADR-006 approval<tr><td>Phase 1<td>2026-05-26<td>Privatized + renamed to <code>hf-ai-dev-kit</code><tr><td>Phase 2<td>2026-05-26<td>Book extraction genesis commit (v0.1.4.3+1)<tr><td>Phase 3<td>2026-05-26<td>Public <code>RMS-Ltd/ai-dev-kit</code> reborn from genesis<tr><td>Phase 4<td>2026-05-26<td>Rewire + verify complete (v0.1.4.7+2)</table>
+<p><strong>FR-099 Status:</strong> ✅ <strong>IMPLEMENTED</strong> — All phases complete.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=book-content-structure-private-repo>Book Content Structure (Private Repo)<a href=#book-content-structure-private-repo class=hash-link aria-label="Direct link to Book Content Structure (Private Repo)" title="Direct link to Book Content Structure (Private Repo)" translate=no>​</a></h3>
+<p><strong>Manuscript Location:</strong> <code>docs/book-proj/</code> (private only)</p>
+<p><strong>Known Assets (from inventory):</strong></p>
+<ul>
+<li class="">8 manuscript/proposal files in <code>docs/book-proj/</code></li>
+<li class="">Epic 24 Kanban: <code>docs/project-management/kanban/epics/epic-24/</code></li>
+<li class="">Active branch: <code>epic/24-book-related-work</code></li>
+</ul>
+<p><strong>Epic 24 Structure (private Kanban):</strong></p>
+<ul>
+<li class=""><strong>Story 001:</strong> Book content development</li>
+<li class=""><strong>Story 002:</strong> (TBD)</li>
+<li class=""><strong>Story 003:</strong> Book publishing support</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=publishing-strategy>Publishing Strategy<a href=#publishing-strategy class=hash-link aria-label="Direct link to Publishing Strategy" title="Direct link to Publishing Strategy" translate=no>​</a></h3>
+<p><strong>Target Publisher:</strong> O'Reilly Media (Head First series)<br/>
+<strong>Decision Point:</strong> Conditional rename of <strong>private</strong> repo to match book title upon acceptance.</p>
+<p><strong>Key Decisions (from memory):</strong></p>
+<ul>
+<li class="">Title: "Head First AI Dev Kit: The Vibe-Coder's Complete Guide"</li>
+<li class="">Format: Head First (visual, conversational, example-driven)</li>
+<li class="">Tutorial Project: ExpenseTracker</li>
+<li class="">BYOP (Build Your Own Project) parallel track</li>
+<li class="">Chapter 0 onboarding flow</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=current-book-development-status>Current Book Development Status<a href=#current-book-development-status class=hash-link aria-label="Direct link to Current Book Development Status" title="Direct link to Current Book Development Status" translate=no>​</a></h3>
+<p><strong>What We Know:</strong></p>
+<ul>
+<li class="">Manuscript work is <strong>active but unpublished</strong></li>
+<li class="">Epic 24 tasks exist in private Kanban</li>
+<li class="">Book repo consumes public AI Dev Kit as a dependency</li>
+<li class="">No public manuscript drafts or publishing strategy documents are visible in public repo</li>
+</ul>
+<p><strong>What Agents Should Know:</strong></p>
+<ul>
+<li class=""><strong>Do not reference specific manuscript content</strong> — it's private IP</li>
+<li class=""><strong>Do not expose Epic 24 details</strong> in public AI Dev Kit</li>
+<li class=""><strong>Book repo uses public ADK frameworks</strong> for examples and structure</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=open-questions-maintainer-only>Open Questions (Maintainer-Only)<a href=#open-questions-maintainer-only class=hash-link aria-label="Direct link to Open Questions (Maintainer-Only)" title="Direct link to Open Questions (Maintainer-Only)" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Changelog archive policy:</strong> Truncate public archive at genesis vs. import summary doc only</li>
+<li class=""><strong>Cutover communication:</strong> Duration and user communication channel for future migrations</li>
+<li class=""><strong>O'Reilly submission timeline:</strong> Not publicly documented</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=part-3-agent-guidelines-for-book-related-work>Part 3: Agent Guidelines for Book-Related Work<a href=#part-3-agent-guidelines-for-book-related-work class=hash-link aria-label="Direct link to Part 3: Agent Guidelines for Book-Related Work" title="Direct link to Part 3: Agent Guidelines for Book-Related Work" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=when-working-on-book-publishing-private-repo>When Working on Book Publishing (Private Repo)<a href=#when-working-on-book-publishing-private-repo class=hash-link aria-label="Direct link to When Working on Book Publishing (Private Repo)" title="Direct link to When Working on Book Publishing (Private Repo)" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Use the private repository:</strong> <code>RMS-Ltd/ai-dev-kit-book</code></li>
+<li class=""><strong>Reference public ADK as dependency:</strong> Book examples should install from <code>RMS-Ltd/ai-dev-kit</code></li>
+<li class=""><strong>Maintain IP boundary:</strong> Do not copy manuscript content to public repo</li>
+<li class=""><strong>Epic 24 stays private:</strong> Kanban tasks for book content belong in private repo only</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=when-working-on-public-ai-dev-kit>When Working on Public AI Dev Kit<a href=#when-working-on-public-ai-dev-kit class=hash-link aria-label="Direct link to When Working on Public AI Dev Kit" title="Direct link to When Working on Public AI Dev Kit" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>No Head First branding:</strong> Public repo remains neutral "AI Dev Kit"</li>
+<li class=""><strong>No Epic 24 references:</strong> Remove any E24 task rows from public <code>kboard.md</code></li>
+<li class=""><strong>No manuscript paths:</strong> <code>docs/book-proj/</code> must not exist on public tree</li>
+<li class=""><strong>Framework-first focus:</strong> Public docs focus on framework adoption, not book narrative</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=cross-repo-coordination>Cross-Repo Coordination<a href=#cross-repo-coordination class=hash-link aria-label="Direct link to Cross-Repo Coordination" title="Direct link to Cross-Repo Coordination" translate=no>​</a></h3>
+<p><strong>Private repo depends on public:</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain"># Private book repo installs public ADK as dependency</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit</span><br/></div></code></pre></div></div>
+<p><strong>Public repo has no knowledge of private:</strong></p>
+<ul>
+<li class="">No remotes pointing to <code>RMS-Ltd/ai-dev-kit-book</code></li>
+<li class="">No CI jobs that access private repo</li>
+<li class="">No badges or links that require private repo access</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=part-4-versioning--release-coordination>Part 4: Versioning & Release Coordination<a href=#part-4-versioning--release-coordination class=hash-link aria-label="Direct link to Part 4: Versioning & Release Coordination" title="Direct link to Part 4: Versioning & Release Coordination" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=public-ai-dev-kit-releases>Public AI Dev Kit Releases<a href=#public-ai-dev-kit-releases class=hash-link aria-label="Direct link to Public AI Dev Kit Releases" title="Direct link to Public AI Dev Kit Releases" translate=no>​</a></h3>
+<p><strong>Current Release:</strong> v0.4.813+2 (SemVer) / v0.1.4.7+2 (internal)<br/>
+<strong>Release Date:</strong> 2026-05-26<br/>
+<strong>Governing Task:</strong> E2:S16<!-- -->:T03<!-- --> (RW Maintenance) or task-specific</p>
+<p><strong>Release Workflow:</strong></p>
+<ol>
+<li class=""><code>RW E:S:T:XX</code> triggers full release cycle</li>
+<li class="">Validators run (branch context, task intent, task complete)</li>
+<li class="">Changelog generated</li>
+<li class="">Kanban markers updated</li>
+<li class="">Dual tags created (internal + SemVer)</li>
+<li class="">Push to remote</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=private-book-repo-versioning>Private Book Repo Versioning<a href=#private-book-repo-versioning class=hash-link aria-label="Direct link to Private Book Repo Versioning" title="Direct link to Private Book Repo Versioning" translate=no>​</a></h3>
+<p><strong>Expected Pattern:</strong> Book repo may use its own versioning or align with public ADK for framework dependencies.</p>
+<p><strong>Framework Dependency:</strong> When book examples reference ADK frameworks, they should pin to a specific public release (e.g., <code>v0.4.813+2</code>).</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=part-5-key-documents-reference>Part 5: Key Documents Reference<a href=#part-5-key-documents-reference class=hash-link aria-label="Direct link to Part 5: Key Documents Reference" title="Direct link to Part 5: Key Documents Reference" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=public-ai-dev-kit-rms-ltdai-dev-kit>Public AI Dev Kit (RMS-Ltd/ai-dev-kit)<a href=#public-ai-dev-kit-rms-ltdai-dev-kit class=hash-link aria-label="Direct link to Public AI Dev Kit (RMS-Ltd/ai-dev-kit)" title="Direct link to Public AI Dev Kit (RMS-Ltd/ai-dev-kit)" translate=no>​</a></h3>
+<table><thead><tr><th>Document<th>Purpose<tbody><tr><td><a href=https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md target=_blank rel="noopener noreferrer" class="">README.md</a><td>Framework overview, quick start<tr><td><a href=https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md target=_blank rel="noopener noreferrer" class="">INSTALL_IN_YOUR_PROJECT.md</a><td>Installation guide<tr><td><a href=https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CLAUDE.md target=_blank rel="noopener noreferrer" class="">CLAUDE.md</a><td>Claude Code project instructions<tr><td><a class="" href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off>ADR-006</a><td>Repository split decision<tr><td><a class="" href=/ai-dev-kit/docs/documentation/ai-dev-kit-vision-and-purpose>Vision & Purpose</a><td>Project vision<tr><td><a class="" href=/ai-dev-kit/docs/architecture/standards-and-adrs/dev-kit-versioning-policy>Versioning Policy</a><td>Version schema docs</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=private-book-repo-rms-ltdai-dev-kit-book>Private Book Repo (RMS-Ltd/ai-dev-kit-book)<a href=#private-book-repo-rms-ltdai-dev-kit-book class=hash-link aria-label="Direct link to Private Book Repo (RMS-Ltd/ai-dev-kit-book)" title="Direct link to Private Book Repo (RMS-Ltd/ai-dev-kit-book)" translate=no>​</a></h3>
+<table><thead><tr><th>Document<th>Purpose<tbody><tr><td><a class="" href=/ai-dev-kit/docs/book-project/install-error-codes-book-integration>install-error-codes-book-integration.md</a><td><em><em>FR-108 / ADK-</em> error codes</em>* — appendix sync, setup spine, reader reporting (v0.6.9.20+)<tr><td><code>docs/book-proj/</code><td>Manuscript drafts<tr><td><code>docs/project-management/kanban/epics/epic-24/</code><td>Book Kanban<tr><td><a class="" href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off>ADR-006</a><td>Same ADR (retained in history)<tr><td><a class="" href=/ai-dev-kit/docs/project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository>FR-099</a><td>Migration FR (retained in history)</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=part-6-contact--access>Part 6: Contact & Access<a href=#part-6-contact--access class=hash-link aria-label="Direct link to Part 6: Contact & Access" title="Direct link to Part 6: Contact & Access" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=repository-access>Repository Access<a href=#repository-access class=hash-link aria-label="Direct link to Repository Access" title="Direct link to Repository Access" translate=no>​</a></h3>
+<table><thead><tr><th>Repo<th>Access<th>Contact<tbody><tr><td><code>RMS-Ltd/ai-dev-kit</code><td>Public<td><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="">https://github.com/RMS-Ltd/ai-dev-kit</a><tr><td><code>RMS-Ltd/ai-dev-kit-book</code><td>Private (maintainer only)<td><a href=https://github.com/RMS-Ltd/ai-dev-kit-book target=_blank rel="noopener noreferrer" class="">https://github.com/RMS-Ltd/ai-dev-kit-book</a></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=issue-tracking>Issue Tracking<a href=#issue-tracking class=hash-link aria-label="Direct link to Issue Tracking" title="Direct link to Issue Tracking" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Public AI Dev Kit:</strong> <a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class="">https://github.com/RMS-Ltd/ai-dev-kit/issues</a></li>
+<li class=""><strong>Private Book Project:</strong> Internal to private repo</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-for-agents>Summary for Agents<a href=#summary-for-agents class=hash-link aria-label="Direct link to Summary for Agents" title="Direct link to Summary for Agents" translate=no>​</a></h2>
+<p><strong>If the user is discussing book publishing:</strong></p>
+<ol>
+<li class="">They are working in the <strong>private repo</strong> (<code>RMS-Ltd/ai-dev-kit-book</code>)</li>
+<li class="">Manuscript content is <strong>not in this public repo</strong></li>
+<li class="">Book project <strong>consumes public ADK</strong> as a dependency</li>
+<li class="">Epic 24 and Head First branding are <strong>private-only</strong></li>
+</ol>
+<p><strong>If the user is discussing framework development:</strong></p>
+<ol>
+<li class="">They are working in the <strong>public repo</strong> (<code>RMS-Ltd/ai-dev-kit</code>)</li>
+<li class="">Frameworks are <strong>production-ready</strong> for adoption</li>
+<li class="">Workflows (RW, UKW, IPW) are <strong>battle-tested</strong></li>
+<li class="">No book content should be introduced</li>
+</ol>
+<p><strong>If unsure:</strong> Ask the user which repository context they're working in.</p>
+<hr/>
+<p><strong>Last Updated:</strong> 2026-05-28<br/>
+<strong>Maintainer:</strong> Ruari Mears<br/>
+<strong>Status:</strong> Active — FR-099 complete, book development ongoing in private</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/book-project/agent-handoff-context.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#repository-architecture-two-repo-split class="table-of-contents__link toc-highlight">Repository Architecture (Two-Repo Split)</a><li><a href=#part-1-ai-dev-kit--production-readiness-assessment class="table-of-contents__link toc-highlight">Part 1: AI Dev Kit — Production Readiness Assessment</a><ul><li><a href=#current-state-as-of-v048132--internal-v01472 class="table-of-contents__link toc-highlight">Current State (as of v0.4.813+2 / internal v0.1.4.7+2)</a><li><a href=#framework-maturity class="table-of-contents__link toc-highlight">Framework Maturity</a><li><a href=#production-ready-features class="table-of-contents__link toc-highlight">Production-Ready Features</a><li><a href=#whats-not-production-ready class="table-of-contents__link toc-highlight">What's NOT Production-Ready</a><li><a href=#development-philosophy class="table-of-contents__link toc-highlight">Development Philosophy</a><li><a href=#kanban-state class="table-of-contents__link toc-highlight">Kanban State</a></ul><li><a href=#part-2-book-project--detailed-status class="table-of-contents__link toc-highlight">Part 2: Book Project — Detailed Status</a><ul><li><a href=#project-overview class="table-of-contents__link toc-highlight">Project Overview</a><li><a href=#repository-history class="table-of-contents__link toc-highlight">Repository History</a><li><a href=#book-content-structure-private-repo class="table-of-contents__link toc-highlight">Book Content Structure (Private Repo)</a><li><a href=#publishing-strategy class="table-of-contents__link toc-highlight">Publishing Strategy</a><li><a href=#current-book-development-status class="table-of-contents__link toc-highlight">Current Book Development Status</a><li><a href=#open-questions-maintainer-only class="table-of-contents__link toc-highlight">Open Questions (Maintainer-Only)</a></ul><li><a href=#part-3-agent-guidelines-for-book-related-work class="table-of-contents__link toc-highlight">Part 3: Agent Guidelines for Book-Related Work</a><ul><li><a href=#when-working-on-book-publishing-private-repo class="table-of-contents__link toc-highlight">When Working on Book Publishing (Private Repo)</a><li><a href=#when-working-on-public-ai-dev-kit class="table-of-contents__link toc-highlight">When Working on Public AI Dev Kit</a><li><a href=#cross-repo-coordination class="table-of-contents__link toc-highlight">Cross-Repo Coordination</a></ul><li><a href=#part-4-versioning--release-coordination class="table-of-contents__link toc-highlight">Part 4: Versioning & Release Coordination</a><ul><li><a href=#public-ai-dev-kit-releases class="table-of-contents__link toc-highlight">Public AI Dev Kit Releases</a><li><a href=#private-book-repo-versioning class="table-of-contents__link toc-highlight">Private Book Repo Versioning</a></ul><li><a href=#part-5-key-documents-reference class="table-of-contents__link toc-highlight">Part 5: Key Documents Reference</a><ul><li><a href=#public-ai-dev-kit-rms-ltdai-dev-kit class="table-of-contents__link toc-highlight">Public AI Dev Kit (RMS-Ltd/ai-dev-kit)</a><li><a href=#private-book-repo-rms-ltdai-dev-kit-book class="table-of-contents__link toc-highlight">Private Book Repo (RMS-Ltd/ai-dev-kit-book)</a></ul><li><a href=#part-6-contact--access class="table-of-contents__link toc-highlight">Part 6: Contact & Access</a><ul><li><a href=#repository-access class="table-of-contents__link toc-highlight">Repository Access</a><li><a href=#issue-tracking class="table-of-contents__link toc-highlight">Issue Tracking</a></ul><li><a href=#summary-for-agents class="table-of-contents__link toc-highlight">Summary for Agents</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>

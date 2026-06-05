@@ -1,0 +1,1041 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-governance/standards/dev-kit-versioning-policy" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Dev Kit Versioning Policy | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/governance/standards/dev-kit-versioning-policy /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Dev Kit Versioning Policy | AI Dev Kit"/><meta data-rh=true name=description content="Status: Active"/><meta data-rh=true property=og:description content="Status: Active"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/governance/standards/dev-kit-versioning-policy /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/governance/standards/dev-kit-versioning-policy hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/governance/standards/dev-kit-versioning-policy hreflang=x-default /><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a class="navbar__item navbar__link" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Dev Kit Versioning Policy</h1></header>
+<p><strong>Status:</strong> Active
+<strong>Owner:</strong> AI Dev Kit / Book Project Lead
+<strong>Last Updated:</strong> 2025-12-02
+<strong>Related Work:</strong> Epic 1 (AI Dev Kit Core)</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-purpose>1. Purpose<a href=#1-purpose class=hash-link aria-label="Direct link to 1. Purpose" title="Direct link to 1. Purpose" translate=no>​</a></h2>
+<p>This policy defines how the <strong>AI Dev Kit</strong> repository uses the <code>RC.EPIC.STORY.TASK+BUILD</code> versioning schema.</p>
+<p>Goals:</p>
+<ul>
+<li class="">Apply the <strong>full versioning schema and strategy</strong> from the Numbering & Versioning framework to this repo.</li>
+<li class="">Ensure all substantive work is <strong>Task-driven</strong> and that versions reflect <strong>Tasks</strong>.</li>
+<li class="">Keep <code>ai-dev-kit</code> logically separate from any external project (e.g., Confidentia, fynd.deals) while reusing the same principles.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-mental-model-internal-vs-release-versions>1.1 Mental Model: Internal vs Release Versions<a href=#11-mental-model-internal-vs-release-versions class=hash-link aria-label="Direct link to 1.1 Mental Model: Internal vs Release Versions" title="Direct link to 1.1 Mental Model: Internal vs Release Versions" translate=no>​</a></h3>
+<p>The dev-kit follows the framework’s <strong>dual-version model</strong>:</p>
+<ul>
+<li class="">
+<p><strong>Internal version (<code>RC.EPIC.STORY.TASK+BUILD</code>)</strong></p>
+<ul>
+<li class="">Forensic coordinate and Kanban anchor.</li>
+<li class="">Encodes Epic/Story/Task/Build and is used by RW/UKW/CMW and Kanban docs.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Release version (SemVer <code>MAJOR.MINOR.PATCH+BUILD</code>)</strong></p>
+<ul>
+<li class="">External-facing version shown in README badges, GitHub releases, and package managers.</li>
+<li class="">Always derived from the internal version using the mapping defined in Section 2.1.</li>
+</ul>
+</li>
+</ul>
+<p>In practice:</p>
+<ul>
+<li class="">When talking to <strong>external consumers</strong>, the dev-kit presents <strong>SemVer first</strong>, optionally followed by the internal version in parentheses, for example:<!-- -->
+<ul>
+<li class=""><code>v0.3.19+2 (internal: v0.6.7.101+2)</code>.</li>
+</ul>
+</li>
+<li class="">When talking about <strong>Kanban, tasks, and workflow internals</strong>, the dev-kit uses <code>RC.EPIC.STORY.TASK+BUILD</code> directly.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-schema-adopted>2. Schema (Adopted)<a href=#2-schema-adopted class=hash-link aria-label="Direct link to 2. Schema (Adopted)" title="Direct link to 2. Schema (Adopted)" translate=no>​</a></h2>
+<p>This repo fully adopts the RC.EPIC.STORY.TASK+BUILD schema:</p>
+<ul>
+<li class=""><strong>Format:</strong> <code>RC.EPIC.STORY.TASK+BUILD</code></li>
+<li class=""><strong>Components:</strong>
+<ul>
+<li class=""><strong>RC:</strong> Release Candidate (0 = development, 1+ = release candidate)</li>
+<li class=""><strong>EPIC:</strong> Dev-kit Epic number (1, 2, 3, 4, …)</li>
+<li class=""><strong>STORY:</strong> Story number within Epic</li>
+<li class=""><strong>TASK:</strong> Task number within Story</li>
+<li class=""><strong>BUILD:</strong> Build number (increments per release within a Task)</li>
+</ul>
+</li>
+</ul>
+<p>Examples (dev-kit context):</p>
+<ul>
+<li class=""><code>0.1.1.1+1</code> – Dev snapshot for <strong>Epic 1</strong>, Story 1, Task 1, first build</li>
+<li class=""><code>0.2.3.2+4</code> – Dev snapshot for <strong>Epic 2</strong>, Story 3, Task 2, 4th build</li>
+<li class=""><code>1.4.1.1+1</code> – Release Candidate 1 for <strong>Epic 4</strong>, Story 1, Task 1, first build</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Any references to versions like <code>0.9.21.3+1</code> in framework docs are <strong>examples from other projects</strong>, not dev-kit releases.</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-semver-mapping-for-external-releases>2.1 SemVer Mapping for External Releases<a href=#21-semver-mapping-for-external-releases class=hash-link aria-label="Direct link to 2.1 SemVer Mapping for External Releases" title="Direct link to 2.1 SemVer Mapping for External Releases" translate=no>​</a></h2>
+<p><strong>Status:</strong> Implemented (v0.3.2.11+1)
+<strong>Purpose:</strong> Generate external-facing SemVer tags (<code>MAJOR.MINOR.PATCH+BUILD</code>) alongside internal Kanban-based version tags for GitHub releases.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=problem-statement>Problem Statement<a href=#problem-statement class=hash-link aria-label="Direct link to Problem Statement" title="Direct link to Problem Statement" translate=no>​</a></h3>
+<p>Internal versioning (<code>RC.EPIC.STORY.TASK+BUILD</code>) is semantically meaningful internally but can appear to regress when switching between epics/stories (e.g., <code>0.6.7.12+3</code> → <code>0.4.6.9+1</code>), which is problematic for GitHub releases and user perception.</p>
+<p><strong>Solution:</strong> Registry-based SemVer mapping using Hybrid Approach that converts internal versions to monotonic SemVer while preserving semantic meaning.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=hybrid-approach-algorithm>Hybrid Approach Algorithm<a href=#hybrid-approach-algorithm class=hash-link aria-label="Direct link to Hybrid Approach Algorithm" title="Direct link to Hybrid Approach Algorithm" translate=no>​</a></h3>
+<p><strong>Mapping Formula:</strong></p>
+<ul>
+<li class=""><strong>MAJOR</strong> = RC (direct mapping: 0 → 0, 1 → 1, etc.)</li>
+<li class=""><strong>MINOR</strong> = First-seen Epic number (sequential based on first appearance, per RC)</li>
+<li class=""><strong>PATCH</strong> = First-seen Story number (sequential based on first appearance, per RC)</li>
+<li class=""><strong>BUILD</strong> = Preserved from internal version</li>
+</ul>
+<p><strong>Example Conversions:</strong></p>
+<ul>
+<li class="">Internal: <code>0.6.7.101+24</code> → SemVer: <code>0.3.19+24</code> (Epic 6 first seen → MINOR=3, Story 7 in Epic 6 → PATCH=19)</li>
+<li class="">Internal: <code>0.4.14.2+1</code> → SemVer: <code>0.4.34+1</code> (Epic 4 first seen → MINOR=4, Story 14 in Epic 4 → PATCH=34)</li>
+<li class="">Internal: <code>0.9.1.8+10</code> → SemVer: <code>0.9.60+10</code> (Epic 9 first seen → MINOR=9, Story 1 in Epic 9 → PATCH=60)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=limitations>Limitations<a href=#limitations class=hash-link aria-label="Direct link to Limitations" title="Direct link to Limitations" translate=no>​</a></h3>
+<p>This approach doesn't encode TASK, so multiple tasks in the same story can produce SemVer collisions (e.g., <code>0.6.7.101+5</code>, <code>0.6.7.102+5</code>, <code>0.6.7.103+5</code> all map to <code>0.6.52+5</code>).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-touch-derived-mapping-adr-002>Task-Touch Derived Mapping (ADR-002)<a href=#task-touch-derived-mapping-adr-002 class=hash-link aria-label="Direct link to Task-Touch Derived Mapping (ADR-002)" title="Direct link to Task-Touch Derived Mapping (ADR-002)" translate=no>​</a></h3>
+<p><strong>Status:</strong> Implemented (v0.6.7.18+1)
+<strong>Purpose:</strong> Provide strictly monotonic, collision-free SemVer mapping suitable for package managers.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=problem-statement-1>Problem Statement<a href=#problem-statement-1 class=hash-link aria-label="Direct link to Problem Statement" title="Direct link to Problem Statement" translate=no>​</a></h4>
+<p>Registry-based mapping can cause SemVer tag collisions when multiple tasks within the same epic/story are released with the same BUILD number, violating the "1 internal → 1 SemVer" expectation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=solution>Solution<a href=#solution class=hash-link aria-label="Direct link to Solution" title="Direct link to Solution" translate=no>​</a></h4>
+<p>Task-Touch Derived Mapping uses a global counter that increments each time a task is "touched" by a release, ensuring unique SemVer for every internal version.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-touch-algorithm>Task-Touch Algorithm<a href=#task-touch-algorithm class=hash-link aria-label="Direct link to Task-Touch Algorithm" title="Direct link to Task-Touch Algorithm" translate=no>​</a></h4>
+<p><strong>Mapping Formula:</strong></p>
+<ul>
+<li class=""><strong>MAJOR</strong> = RC (direct mapping: 0 → 0, 1 → 1, etc.)</li>
+<li class=""><strong>MINOR</strong> = count of epics signed off (per RC)</li>
+<li class=""><strong>PATCH</strong> = global task-touch counter (increments once per RW release)</li>
+<li class=""><strong>BUILD</strong> = Preserved from internal version</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-conversions>Example Conversions<a href=#example-conversions class=hash-link aria-label="Direct link to Example Conversions" title="Direct link to Example Conversions" translate=no>​</a></h4>
+<p>Assuming 6 epics signed off for RC 0 and task-touch counter starts at 1:</p>
+<ul>
+<li class="">Internal: <code>0.6.7.101+5</code> → SemVer: <code>0.6.1+5</code> (first task touch)</li>
+<li class="">Internal: <code>0.3.2.12+2</code> → SemVer: <code>0.6.2+2</code> (second task touch)</li>
+<li class="">Internal: <code>0.2.13.7+1</code> → SemVer: <code>0.6.3+1</code> (third task touch)</li>
+<li class="">Internal: <code>0.6.7.103+5</code> → SemVer: <code>0.6.4+5</code> (fourth task touch)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=benefits>Benefits<a href=#benefits class=hash-link aria-label="Direct link to Benefits" title="Direct link to Benefits" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Zero Collisions</strong>: Each internal version maps to exactly one SemVer <strong>PATCH</strong> and one <strong>SemVer core</strong> (<code>MAJOR.MINOR.PATCH</code>, used for primary Git tags <code>vX.Y.Z</code>)</li>
+<li class=""><strong>Strict Monotonicity</strong>: PATCH always increases (package-manager friendly)</li>
+<li class=""><strong>1:1 Traceability</strong>: Direct mapping between internal and external versions</li>
+<li class=""><strong>Deterministic</strong>: Given repository history, mapping is reproducible</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=configuration>Configuration<a href=#configuration class=hash-link aria-label="Direct link to Configuration" title="Direct link to Configuration" translate=no>​</a></h4>
+<p>Task-Touch mapping is configured via <code>rw-config.yaml</code>:</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic># SemVer mapping strategy: "registry" (default) or "task_touch"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token key atrule" style=color:#00a4db>semver_mapping_strategy</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> registry</span><br/></div></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=migration>Migration<a href=#migration class=hash-link aria-label="Direct link to Migration" title="Direct link to Migration" translate=no>​</a></h4>
+<p>Existing projects can migrate by:</p>
+<ol>
+<li class="">Analyzing git history to compute initial task-touch counter</li>
+<li class="">Running migration utility to backfill counters</li>
+<li class="">Switching configuration to <code>task_touch</code> mode</li>
+<li class="">Verifying no collisions in test environment</li>
+</ol>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=registry-structure>Registry Structure<a href=#registry-structure class=hash-link aria-label="Direct link to Registry Structure" title="Direct link to Registry Structure" translate=no>​</a></h3>
+<p>SemVer mappings are stored in <code>semver-registry.yaml</code> (project root):</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token key atrule" style=color:#00a4db>rc_0</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token key atrule" style=color:#00a4db>epic_to_minor</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token key atrule" style=color:#00a4db>3</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic># Epic 3 → MINOR 1 (first appearance)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token key atrule" style=color:#00a4db>6</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>2</span><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic># Epic 6 → MINOR 2 (second appearance)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token key atrule" style=color:#00a4db>story_to_patch</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    (3</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token key atrule" style=color:#00a4db>2)</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic># Epic 3, Story 2 → PATCH 1</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    (6</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token key atrule" style=color:#00a4db>7)</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>19</span><span class="token plain">   </span><span class="token comment" style=color:#999988;font-style:italic># Epic 6, Story 7 → PATCH 19</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dual-tagging-in-release-workflow>Dual Tagging in Release Workflow<a href=#dual-tagging-in-release-workflow class=hash-link aria-label="Direct link to Dual Tagging in Release Workflow" title="Direct link to Dual Tagging in Release Workflow" translate=no>​</a></h3>
+<p><strong>RW Step 11</strong> creates dual tags:</p>
+<ul>
+<li class=""><strong>Internal Tag:</strong> <code>v0.6.7.101+24</code> (for internal tracking)</li>
+<li class=""><strong>SemVer Tag:</strong> <code>v0.3.19+24</code> (for GitHub releases)</li>
+</ul>
+<p>Both tags reference the same commit. Internal tag maintains backward compatibility, SemVer tag provides monotonic versioning for external consumers.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-mapping-and-tag-alignment>1:1 mapping and tag alignment<a href=#11-mapping-and-tag-alignment class=hash-link aria-label="Direct link to 1:1 mapping and tag alignment" title="Direct link to 1:1 mapping and tag alignment" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>One internal version → one SemVer:</strong> The registry plus BUILD ensure that each internal version string maps to exactly one SemVer string. The converter (<code>semver_converter.py</code>) is the single source of truth for this mapping.</li>
+<li class=""><strong>One SemVer tag → one commit:</strong> For each release, the SemVer tag and the internal tag MUST point to the <strong>same commit</strong>. No SemVer tag may point to a different commit than the one that contains the corresponding internal version for that release.</li>
+<li class=""><strong>Consequence (BR-097 / ADR-019):</strong> If a release tag already exists on the remote, the release MUST <strong>not</strong> be force-moved. <strong>Forbidden:</strong> <code>git tag -f</code>, <code>git push -f</code>, or <code>git push origin +v*</code> on release tags. Recovery: increment <code>VERSION_BUILD</code> (+1) and re-run <code>RW E:S:T --art</code> so the new tag points at a new commit. See <code>docs/journals/RECOVERY_PROCEDURE.md</code> §4.3.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=readme-version-display>README Version Display<a href=#readme-version-display class=hash-link aria-label="Direct link to README Version Display" title="Direct link to README Version Display" translate=no>​</a></h3>
+<p><strong>Outward-Facing SemVer:</strong> The project README displays the <strong>SemVer version</strong> (not the internal version) as it is the outward-facing version for external consumers.</p>
+<p><strong>RW Step 5</strong> automatically:</p>
+<ul>
+<li class="">Generates SemVer from internal version using <code>semver_converter.py</code></li>
+<li class="">Updates README with SemVer (e.g., <code>**Version:** v0.3.19+2</code>)</li>
+<li class="">Internal version remains in version file (<code>src/fynd_deals/version.py</code>) for internal tracking</li>
+</ul>
+<p><strong>Rationale:</strong> External users and package managers expect monotonically increasing SemVer versions. The internal <code>RC.EPIC.STORY.TASK+BUILD</code> format is for internal development traceability only.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=implementation>Implementation<a href=#implementation class=hash-link aria-label="Direct link to Implementation" title="Direct link to Implementation" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Converter Script:</strong> <code>packages/frameworks/workflow-mgt/scripts/version/semver_converter.py</code> (forward and reverse conversion; 1:1 documented)</li>
+<li class=""><strong>Migration Script:</strong> <code>packages/frameworks/workflow-mgt/scripts/version/build_semver_registry.py</code></li>
+<li class=""><strong>Validation Script:</strong> <code>packages/frameworks/workflow-mgt/scripts/validation/validate_semver_monotonic.py</code></li>
+<li class=""><strong>Tag-alignment validator (optional):</strong> <code>packages/frameworks/workflow-mgt/scripts/validation/validate_semver_tag_alignment.py</code> — checks that the SemVer tag on the remote points to the same commit as the current release (see 1:1 mapping and tag alignment).</li>
+<li class=""><strong>Registry File:</strong> <code>semver-registry.yaml</code> (project root)</li>
+</ul>
+<p><strong>Related Documentation:</strong></p>
+<ul>
+<li class=""><strong>Proposal:</strong> <code>docs/architecture/standards-and-adrs/semver-mapping-proposal.md</code></li>
+<li class=""><strong>Implementation Impact:</strong> <code>docs/architecture/standards-and-adrs/semver-mapping-implementation-impact.md</code></li>
+</ul>
+<p><strong>Mapping modes (dev-kit stance):</strong></p>
+<ul>
+<li class="">The underlying framework defines multiple <strong>SemVer mapping modes</strong>. The dev-kit itself adopts the <strong>registry-based epic/story mapping mode (Mode A)</strong> as its default:<!-- -->
+<ul>
+<li class=""><code>MAJOR = RC</code></li>
+<li class=""><code>MINOR</code> and <code>PATCH</code> assigned via the <code>semver-registry.yaml</code> registry.</li>
+</ul>
+</li>
+<li class="">Other projects copying this policy MAY choose the <strong>simple global PATCH mode (Mode B)</strong> documented in the framework if they prefer a “SemVer-first, global counter” external story.</li>
+</ul>
+<p><strong>Optional metadata pattern:</strong></p>
+<p>When needed, SemVer tags MAY append metadata that embeds the internal version for machine parsing:</p>
+<ul>
+<li class="">Pattern: <code>+rc.&lt;RC>.e&lt;EPIC>.s&lt;STORY>.t&lt;TASK>.b&lt;BUILD></code></li>
+<li class="">Example: internal <code>0.6.7.101+2</code> → SemVer tag <code>v0.3.19+2+rc.0.e6.s7.t101.b2</code></li>
+</ul>
+<p>This metadata is optional and does not affect SemVer ordering; public-facing docs SHOULD normally show the clean SemVer (<code>v0.3.19+2</code>) and reserve metadata for tooling and tag inspection.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-epic-ranges-for-ai-dev-kit>3. Epic Ranges for AI Dev Kit<a href=#3-epic-ranges-for-ai-dev-kit class=hash-link aria-label="Direct link to 3. Epic Ranges for AI Dev Kit" title="Direct link to 3. Epic Ranges for AI Dev Kit" translate=no>​</a></h2>
+<p>Unlike the legacy/new split in the original policy, this repo starts <strong>clean</strong>:</p>
+<ul>
+<li class=""><strong>Epic 1+:</strong> All dev-kit epics use the full <code>RC.EPIC.STORY.TASK+BUILD</code> schema.</li>
+<li class="">There is <strong>no legacy range</strong> (1–9) in this repo – we start from first principles.</li>
+</ul>
+<p>Initial epics:</p>
+<ul>
+<li class=""><strong>Epic 1 – AI Dev Kit Core</strong></li>
+<li class=""><strong>Epic 2 – Workflow Management Framework</strong></li>
+<li class=""><strong>Epic 3 – Numbering & Versioning Framework</strong></li>
+<li class=""><strong>Epic 4 – Kanban Framework</strong></li>
+</ul>
+<p>Future epics (5+) can be introduced as needed (for example, “Book Manuscript”, “Examples & Templates”, etc.).</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-mapping-kanban-to-version-components>4. Mapping Kanban to Version Components<a href=#4-mapping-kanban-to-version-components class=hash-link aria-label="Direct link to 4. Mapping Kanban to Version Components" title="Direct link to 4. Mapping Kanban to Version Components" translate=no>​</a></h2>
+<p>This repo's Kanban is defined under:</p>
+<ul>
+<li class=""><code>docs/project-management/kanban/_index.md</code></li>
+<li class=""><code>docs/project-management/kanban/epics/Epic-X/stories/Story-XXX-*.md</code></li>
+</ul>
+<p>Mapping rules:</p>
+<ul>
+<li class=""><strong>Every Story</strong> belongs to exactly one Epic (1–4 to start with).</li>
+<li class=""><strong>Every Task</strong>:<!-- -->
+<ul>
+<li class="">Lives under a Story.</li>
+<li class="">Will eventually get a numeric <strong>Task ID</strong> that matches the <code>TASK</code> component in the version.</li>
+<li class=""><strong>MUST have a discrete Task document</strong> (or clearly delimited section within Story document).</li>
+</ul>
+</li>
+<li class=""><strong>Every substantive change</strong> that goes through Release Workflow (RW):<!-- -->
+<ul>
+<li class="">Targets <strong>one active Task</strong>.</li>
+<li class="">Uses a version where <code>EPIC</code>, <code>STORY</code>, and <code>TASK</code> match that Task's E/S/T coordinates.</li>
+<li class="">Increments <code>BUILD</code> for successive releases of the same Task.</li>
+</ul>
+</li>
+</ul>
+<p><strong>CRITICAL: Task Document Requirements</strong></p>
+<p>Before any versioning can occur for a Task, the Task MUST have a corresponding Task document:</p>
+<ol>
+<li class="">
+<p><strong>Task Document Presence:</strong> Every Task referenced in a Story checklist MUST have a corresponding Task document (separate file OR clearly delimited section within Story document).</p>
+</li>
+<li class="">
+<p><strong>Task Document → Version Alignment:</strong> The Task document's Task ID MUST align with the version's TASK component:</p>
+<ul>
+<li class="">Task document: <code>E4:S11:T01</code></li>
+<li class="">Version: <code>0.4.11.1+B</code> (TASK = 1)</li>
+<li class="">Alignment: Task ID <code>T01</code> matches version TASK component <code>1</code></li>
+</ul>
+</li>
+<li class="">
+<p><strong>Task Document Format:</strong> Task documents can be:</p>
+<ul>
+<li class=""><strong>Separate File:</strong> <code>kanban/epics/Epic-X/Story-XXX/Task-YYY-description.md</code></li>
+<li class=""><strong>Delimited Section:</strong> Within Story document using Task ID header (<code>### EXX:SYY:TZZ – Task Name</code>)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Required Task Document Fields:</strong> Task documents MUST include:</p>
+<ul>
+<li class="">Task ID (<code>E\{epic\}:S\{story\}:T\{task\}</code>)</li>
+<li class="">Scope</li>
+<li class="">Acceptance Criteria</li>
+<li class="">Status</li>
+<li class="">Version Anchor (forensic marker when complete)</li>
+<li class="">Input</li>
+<li class="">Deliverable</li>
+<li class="">Dependencies</li>
+<li class="">Blocker</li>
+<li class="">Related BR/FR Links</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Validation Requirements:</strong></p>
+<ul>
+<li class="">Release Workflow Step 1 validates Task document presence</li>
+<li class="">Release Workflow Step 1 validates Task document → Version TASK component alignment</li>
+<li class="">Validators check Task document presence and alignment before versioning</li>
+</ul>
+</li>
+</ol>
+<p>FR/BR rule (summarised):</p>
+<ul>
+<li class="">FRs and BRs <strong>must</strong> create Tasks, which are anchored under Stories, which are anchored under Epics.</li>
+<li class="">Each Task <strong>must</strong> have a corresponding Task document before versioning.</li>
+</ul>
+<p>See: <code>docs/project-management/rituals/policy/kanban-governance-policy.md</code>.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-version-file-for-this-repo>5. Version File for This Repo<a href=#5-version-file-for-this-repo class=hash-link aria-label="Direct link to 5. Version File for This Repo" title="Direct link to 5. Version File for This Repo" translate=no>​</a></h2>
+<p>Dev-kit version information lives in:</p>
+<ul>
+<li class=""><code>src/fynd_deals/version.py</code> (legacy path from fynd.deals; acceptable for now, may be renamed to <code>src/vibe_dev_kit/version.py</code> in future)</li>
+</ul>
+<p>The file should expose:</p>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-python codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">VERSION_RC </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token builtin">int</span><span class="token operator" style=color:#393A34>></span><span class="token plain">        </span><span class="token comment" style=color:#999988;font-style:italic># Release candidate</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_EPIC </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token builtin">int</span><span class="token operator" style=color:#393A34>></span><span class="token plain">      </span><span class="token comment" style=color:#999988;font-style:italic># Dev-kit Epic number</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_STORY </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token builtin">int</span><span class="token operator" style=color:#393A34>></span><span class="token plain">     </span><span class="token comment" style=color:#999988;font-style:italic># Story number within epic</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_TASK </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token builtin">int</span><span class="token operator" style=color:#393A34>></span><span class="token plain">      </span><span class="token comment" style=color:#999988;font-style:italic># Task number within story</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_BUILD </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token builtin">int</span><span class="token operator" style=color:#393A34>></span><span class="token plain">     </span><span class="token comment" style=color:#999988;font-style:italic># Build number</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_STRING </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string-interpolation string" style=color:#e3116c>f"</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>{</span><span class="token string-interpolation interpolation">VERSION_RC</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>}</span><span class="token string-interpolation string" style=color:#e3116c>.</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>{</span><span class="token string-interpolation interpolation">VERSION_EPIC</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>}</span><span class="token string-interpolation string" style=color:#e3116c>.</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>{</span><span class="token string-interpolation interpolation">VERSION_STORY</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>}</span><span class="token string-interpolation string" style=color:#e3116c>.</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>{</span><span class="token string-interpolation interpolation">VERSION_TASK</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>}</span><span class="token string-interpolation string" style=color:#e3116c>+</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>{</span><span class="token string-interpolation interpolation">VERSION_BUILD</span><span class="token string-interpolation interpolation punctuation" style=color:#393A34>}</span><span class="token string-interpolation string" style=color:#e3116c>"</span><br/></div></code></pre></div></div>
+<p>Current values are <strong>temporary placeholders</strong> until we assign real Epics/Stories/Tasks for dev-kit work.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-progression-rules-dev-kit>6. Progression Rules (Dev Kit)<a href=#6-progression-rules-dev-kit class=hash-link aria-label="Direct link to 6. Progression Rules (Dev Kit)" title="Direct link to 6. Progression Rules (Dev Kit)" translate=no>​</a></h2>
+<p>For a given Epic, Story, Task:</p>
+<ul>
+<li class="">
+<p>Working on <strong>Epic 1, Story 1, Task 1</strong>:</p>
+<ul>
+<li class=""><code>0.1.1.1+1</code> – First dev build</li>
+<li class=""><code>0.1.1.1+2</code> – Second dev build</li>
+</ul>
+</li>
+<li class="">
+<p>Moving to <strong>Task 2</strong> within the same Story:</p>
+<ul>
+<li class=""><code>0.1.1.2+1</code> – First dev build for Task 2</li>
+</ul>
+</li>
+</ul>
+<p>Rules:</p>
+<ol>
+<li class=""><strong>TASK is stable per Task</strong> – once you start <code>Task 1</code>, all its releases share <code>TASK = 1</code>.</li>
+<li class=""><strong>BUILD number rules:</strong>
+<ul>
+<li class=""><strong>Doc-Init Build (<code>+0</code>):</strong> For first-time Task/Story/Epic document creation (docs-only)<!-- -->
+<ul>
+<li class="">Establishes canonical version anchor before functional work</li>
+<li class="">Must be docs-only changes (no code changes)</li>
+<li class="">Example: <code>0.2.10.1+0</code> = Doc-init build for E2:S10<!-- -->:T01<!-- --> documentation</li>
+</ul>
+</li>
+<li class=""><strong>Normal Builds (<code>+1</code> or higher):</strong> For functional work and subsequent releases<!-- -->
+<ul>
+<li class="">Starts at 1 for first functional release (or after doc-init)</li>
+<li class="">Increments with each subsequent release (<code>+2</code>, <code>+3</code>, etc.)</li>
+<li class="">Example: <code>0.2.10.1+1</code> = First functional build for E2:S10<!-- -->:T01<!-- --> (after <code>+0</code>)</li>
+</ul>
+</li>
+<li class=""><strong>Relationship:</strong> Doc-init (<code>+0</code>) → Functional work (<code>+1</code>, <code>+2</code>, ...)</li>
+</ul>
+</li>
+<li class=""><strong>Moving to a new Task</strong>:<!-- -->
+<ul>
+<li class=""><code>TASK</code> changes.</li>
+<li class=""><code>BUILD</code> resets to <code>1</code> (or <code>0</code> if doc-init for new Task document).</li>
+</ul>
+</li>
+<li class=""><strong>RC increments</strong>:<!-- -->
+<ul>
+<li class="">When promoting a dev snapshot to a release candidate for a given Task.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-task-transitions>6.1 Task Transitions<a href=#61-task-transitions class=hash-link aria-label="Direct link to 6.1 Task Transitions" title="Direct link to 6.1 Task Transitions" translate=no>​</a></h3>
+<p><strong>CRITICAL:</strong> When moving to a new Task, the version file (<code>src/fynd_deals/version.py</code>) MUST be updated:</p>
+<ol>
+<li class="">
+<p><strong>Task Document Prerequisite:</strong></p>
+<ul>
+<li class=""><strong>MUST:</strong> Create Task document before updating version file</li>
+<li class=""><strong>MUST:</strong> Task document must exist (separate file OR delimited section)</li>
+<li class=""><strong>MUST:</strong> Task document must have correct Task ID format (<code>E\{epic\}:S\{story\}:T\{task\}</code>)</li>
+<li class=""><strong>MUST:</strong> Task document must include all required fields (see Section 4)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Update <code>VERSION_TASK</code>:</strong></p>
+<ul>
+<li class="">Set <code>VERSION_TASK</code> to match the new Task number</li>
+<li class="">Example: Moving from Task 1 to Task 2 → <code>VERSION_TASK = 2</code></li>
+<li class=""><strong>CRITICAL:</strong> <code>VERSION_TASK</code> MUST match Task ID in Task document</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Set <code>VERSION_BUILD</code>:</strong></p>
+<ul>
+<li class=""><strong>Doc-Init Path (<code>+0</code>):</strong> For first-time Task document creation<!-- -->
+<ul>
+<li class="">Set <code>VERSION_BUILD = 0</code> (doc-init build)</li>
+<li class="">Must be docs-only changes (no code changes)</li>
+<li class="">Establishes canonical version anchor</li>
+<li class="">Example: Creating E2:S10<!-- -->:T01<!-- --> Task document → <code>VERSION_BUILD = 0</code></li>
+</ul>
+</li>
+<li class=""><strong>Normal Path (<code>+1</code>):</strong> For functional work (Task document already exists)<!-- -->
+<ul>
+<li class="">Set <code>VERSION_BUILD = 1</code> (first functional build)</li>
+<li class="">Can include code changes, feature implementations, bug fixes, etc.</li>
+<li class="">Example: First functional change for E2:S10<!-- -->:T01<!-- --> → <code>VERSION_BUILD = 1</code></li>
+</ul>
+</li>
+<li class=""><strong>Subsequent Builds:</strong> Increment BUILD for each release (<code>+2</code>, <code>+3</code>, etc.)</li>
+<li class=""><strong>Relationship:</strong> Doc-init (<code>+0</code>) → First functional build (<code>+1</code>) → Subsequent builds (<code>+2</code>, <code>+3</code>, ...)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>When to Update:</strong></p>
+<ul>
+<li class=""><strong>Option 1:</strong> Create Task document → Update <code>version.py</code> when creating the new Task (recommended)</li>
+<li class=""><strong>Option 2:</strong> Create Task document → Update <code>version.py</code> during Release Workflow Step 2 (automatic detection)</li>
+<li class=""><strong>CRITICAL:</strong> Task document MUST exist before updating version file</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Validation:</strong></p>
+<ul>
+<li class="">Release Workflow Step 1 validates Task document presence</li>
+<li class="">Release Workflow Step 1 validates that <code>VERSION_TASK</code> matches the active Task number</li>
+<li class="">Release Workflow Step 1 validates Task document → Version TASK component alignment</li>
+<li class="">If Task document missing or misaligned, workflow stops with error message</li>
+<li class="">Release Workflow Step 2 automatically detects Task transitions and updates <code>VERSION_TASK</code> if needed</li>
+</ul>
+</li>
+</ol>
+<p><strong>Example Task Transition:</strong></p>
+<p><strong>Before (Completing Task 1):</strong></p>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-python codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">VERSION_EPIC </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>4</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_STORY </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>3</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_TASK </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_BUILD </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>2</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic># Version: 0.4.3.1+2</span><br/></div></code></pre></div></div>
+<p><strong>After (Starting Task 2):</strong></p>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-python codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">VERSION_EPIC </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>4</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_STORY </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>3</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_TASK </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>2</span><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic># ← Updated to match new Task</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_BUILD </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic># ← Reset to 1 for new Task</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic># Version: 0.4.3.2+1</span><br/></div></code></pre></div></div>
+<p><strong>Common Mistakes to Avoid:</strong></p>
+<ul>
+<li class="">
+<p>❌ <strong>DON'T:</strong> Keep <code>VERSION_TASK = 1</code> and increment <code>VERSION_BUILD</code> when moving to Task 2</p>
+<ul>
+<li class="">Wrong: <code>0.4.3.1+3</code> for Task 2</li>
+<li class="">Correct: <code>0.4.3.2+1</code> for Task 2</li>
+</ul>
+</li>
+<li class="">
+<p>❌ <strong>DON'T:</strong> Forget to reset <code>VERSION_BUILD</code> when moving to a new Task</p>
+<ul>
+<li class="">Wrong: <code>0.4.3.2+3</code> for first release of Task 2</li>
+<li class="">Correct: <code>0.4.3.2+1</code> for first release of Task 2</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=611-perpetual-tasks-maintenance-workflows>6.1.1 Perpetual Tasks (Maintenance Workflows)<a href=#611-perpetual-tasks-maintenance-workflows class=hash-link aria-label="Direct link to 6.1.1 Perpetual Tasks (Maintenance Workflows)" title="Direct link to 6.1.1 Perpetual Tasks (Maintenance Workflows)" translate=no>​</a></h3>
+<p><strong>CRITICAL:</strong> Some tasks represent ongoing maintenance/synchronization work that never "completes" (e.g., UKW - Update Kanban Workflow, CMW - Changelog Management Workflow). These are <strong>perpetual tasks</strong> with special versioning semantics.</p>
+<p><strong>Perpetual Task Characteristics:</strong></p>
+<ul>
+<li class=""><strong>Status:</strong> Always IN PROGRESS (never changes to COMPLETE)</li>
+<li class=""><strong>Task Type:</strong> Perpetual Maintenance (marked in task document with <code>Task Type: Perpetual Maintenance</code>)</li>
+<li class=""><strong>Purpose:</strong> Ongoing maintenance/synchronization workflows</li>
+<li class=""><strong>Build Number Semantics:</strong> BUILD number = workflow run count (not feature iteration)</li>
+<li class=""><strong>Build Warning Suppression:</strong> High BUILD numbers are expected and valid (no warnings)</li>
+</ul>
+<p><strong>Version Pattern (current policy):</strong></p>
+<ul>
+<li class="">Perpetual tasks use canonical Story 016 2-digit task numbering (<code>Txx</code>) for active lanes.</li>
+<li class="">Version format remains <code>v0.\{EPIC\}.\{STORY\}.\{TASK\}+\{BUILD\}</code> with perpetual semantics carried by <code>Task Type: Perpetual Maintenance</code>.</li>
+<li class="">BUILD number accumulates naturally as the workflow runs.</li>
+<li class="">Example: Workflow-maintenance umbrella runs → <code>v0.2.16.3+1</code>, <code>v0.2.16.3+2</code>, <code>v0.2.16.3+3</code>, etc.</li>
+<li class="">Example: Kanban hygiene lane runs → <code>v0.2.16.4+1</code>, <code>v0.2.16.4+2</code>, etc.</li>
+</ul>
+<p><strong>Perpetual Task Examples:</strong></p>
+<ul>
+<li class=""><strong>Workflow maintenance umbrella:</strong> <code>E2:S16:T03</code> - ad-hoc cross-cutting workflow maintenance and hardening</li>
+<li class=""><strong>Kanban synchronization lane:</strong> <code>E2:S16:T04</code> - kanban-focused operational synchronization/hygiene</li>
+<li class=""><strong>Markdown documentation maintenance lane:</strong> <code>E2:S16:T05</code> - markdown-only recurring maintenance</li>
+<li class=""><strong>Legacy aliases (historical-only):</strong> <code>T101</code>/<code>T102</code>/<code>T103</code> references remain valid for traceability but are not used for new active anchors.</li>
+</ul>
+<p><strong>Task Number Ranges:</strong></p>
+<ul>
+<li class=""><strong>Regular tasks:</strong> T01-T99 (2-digit) - Standard feature/bug tasks</li>
+<li class=""><strong>Perpetual tasks (active):</strong> canonical Story 016 <code>Txx</code> lanes with <code>Task Type: Perpetual Maintenance</code></li>
+<li class=""><strong>Legacy perpetual aliases:</strong> <code>T1xx</code> accepted only as historical anchors (<code>Historical Anchor:</code>) for prior releases/docs</li>
+<li class=""><strong>Guardrail:</strong> new <code>T1xx</code> task IDs are disallowed for active work unless explicitly marked historical</li>
+</ul>
+<p><strong>RW Context Detection:</strong></p>
+<ul>
+<li class="">RW Step 2 detects perpetual task context (e.g., user ran "UKW" then "RW", or "CMW" then "RW")</li>
+<li class="">RW automatically attributes releases to the perpetual task (discovered via <code>Task Type: Perpetual Maintenance</code> flag)</li>
+<li class="">BUILD number increments for each workflow run (same task, increment BUILD)</li>
+<li class="">Build warnings are suppressed (high BUILD numbers are expected and valid)</li>
+<li class="">Placement guardrail enforcement requires perpetual tasks to be housed under <code>E2:S16</code> unless <code>Perpetual Override Rationale:</code> is present.</li>
+</ul>
+<p><strong>T103 (RW Maintenance) - Manual Attribution:</strong></p>
+<ul>
+<li class="">No automatic context detection (unlike UKW/CMW)</li>
+<li class="">When releasing RW maintenance work (Step 7 fixes, validator updates, doc corrections), agent/user manually sets version to E2:S16<!-- -->:T03<!-- --> and increments BUILD</li>
+<li class="">Historical <code>T103</code> labels may still appear in older changelog/release artifacts; this is expected and preserved for traceability.</li>
+</ul>
+<p><strong>Task ID Variability:</strong></p>
+<ul>
+<li class="">Each project instance can choose different canonical perpetual anchors, but ai-dev-kit standard is Story 016 (<code>E2:S16:T03</code>/<code>T04</code>/<code>T05</code>)</li>
+<li class="">Legacy IDs from prior project phases remain as historical aliases and should include <code>Historical Anchor:</code> when used in active docs</li>
+<li class="">Pattern discovery: search for <code>Task Type: Perpetual Maintenance</code> plus Story 016 lanes</li>
+</ul>
+<p><strong>Related Documentation:</strong></p>
+<ul>
+<li class=""><strong>UKW Pattern:</strong> Epic 4 Story 3 T01 (Update Packaged RW to Handle UKW Context)</li>
+<li class=""><strong>CMW Pattern:</strong> Epic 2 Story 1 T05 (CMW Perpetual Task Pattern)</li>
+<li class=""><strong>RW Maintenance Pattern:</strong> Epic 2 Story 1 T06 (RW Maintenance Perpetual Task Pattern)</li>
+<li class=""><strong>RW Execution Guide:</strong> <code>packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md</code> (Step 2)</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-abstract-space-version-schema>6.2 Abstract Space Version Schema<a href=#62-abstract-space-version-schema class=hash-link aria-label="Direct link to 6.2 Abstract Space Version Schema" title="Direct link to 6.2 Abstract Space Version Schema" translate=no>​</a></h3>
+<p><strong>CRITICAL:</strong> Zero-numbered E/S/T documentation uses <code>+0</code> build number to establish the <strong>abstract space</strong> for forensic traceability, serving as the canonical version anchor before any functional work is committed.</p>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Establish canonical version anchor for E/S/T documentation</li>
+<li class="">Begin forensic traceability arc at documentation creation</li>
+<li class="">Provide clear versioning schema for abstract spaces</li>
+<li class="">Link versioning schema to Kanban documentation lifecycle</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=epic-level-abstract-spaces>Epic-Level Abstract Spaces<a href=#epic-level-abstract-spaces class=hash-link aria-label="Direct link to Epic-Level Abstract Spaces" title="Direct link to Epic-Level Abstract Spaces" translate=no>​</a></h4>
+<p><strong>Format:</strong> <code>0.\{EPIC\}.0.0+0</code></p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class=""><code>0.3.0.0+0</code> = Epic 3's abstract space</li>
+<li class=""><code>0.4.0.0+0</code> = Epic 4's abstract space</li>
+<li class=""><code>0.10.0.0+0</code> = Epic 10's abstract space</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Establishes forensic traceability anchor for Epic</li>
+<li class="">Created when Epic document is first committed</li>
+<li class="">Precedes all functional work for that Epic</li>
+</ul>
+<p><strong>Usage:</strong></p>
+<ul>
+<li class="">Epic document creation → Commit with <code>0.\{EPIC\}.0.0+0</code></li>
+<li class="">Subsequent functional work starts at <code>0.\{EPIC\}.1.1+1</code> (first Story, first Task, first build)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=story-level-abstract-spaces>Story-Level Abstract Spaces<a href=#story-level-abstract-spaces class=hash-link aria-label="Direct link to Story-Level Abstract Spaces" title="Direct link to Story-Level Abstract Spaces" translate=no>​</a></h4>
+<p><strong>Format:</strong> <code>0.\{EPIC\}.\{STORY\}.0+0</code></p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class=""><code>0.2.5.0+0</code> = Epic 2 Story 5's abstract space</li>
+<li class=""><code>0.4.11.0+0</code> = Epic 4 Story 11's abstract space</li>
+<li class=""><code>0.10.3.0+0</code> = Epic 10 Story 3's abstract space</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Establishes forensic traceability anchor for Story within Epic</li>
+<li class="">Created when Story document is first committed</li>
+<li class="">Precedes all functional work for that Story</li>
+</ul>
+<p><strong>Usage:</strong></p>
+<ul>
+<li class="">Story document creation → Commit with <code>0.\{EPIC\}.\{STORY\}.0+0</code></li>
+<li class="">Subsequent functional work starts at <code>0.\{EPIC\}.\{STORY\}.1+1</code> (first Task, first build)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-level-abstract-spaces>Task-Level Abstract Spaces<a href=#task-level-abstract-spaces class=hash-link aria-label="Direct link to Task-Level Abstract Spaces" title="Direct link to Task-Level Abstract Spaces" translate=no>​</a></h4>
+<p><strong>Format:</strong> <code>0.\{EPIC\}.\{STORY\}.\{TASK\}+0</code></p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class=""><code>0.10.4.6+0</code> = Epic 10 Story 4 Task 6's abstract space</li>
+<li class=""><code>0.4.11.1+0</code> = Epic 4 Story 11 Task 1's abstract space</li>
+<li class=""><code>0.2.9.3+0</code> = Epic 2 Story 9 Task 3's abstract space</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Establishes forensic traceability anchor for Task within Story within Epic</li>
+<li class="">Created when Task document is first committed</li>
+<li class="">Precedes all functional work for that Task</li>
+</ul>
+<p><strong>Usage:</strong></p>
+<ul>
+<li class="">Task document creation → Commit with <code>0.\{EPIC\}.\{STORY\}.\{TASK\}+0</code></li>
+<li class="">Subsequent functional work starts at <code>0.\{EPIC\}.\{STORY\}.\{TASK\}+1</code> (first build)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=relationship-between-abstract-space-and-functional-work>Relationship Between Abstract Space and Functional Work<a href=#relationship-between-abstract-space-and-functional-work class=hash-link aria-label="Direct link to Relationship Between Abstract Space and Functional Work" title="Direct link to Relationship Between Abstract Space and Functional Work" translate=no>​</a></h4>
+<p><strong>Abstract Space (<code>+0</code>):</strong></p>
+<ul>
+<li class="">Documentation-only anchor</li>
+<li class="">Establishes forensic traceability</li>
+<li class="">No functional changes</li>
+<li class="">Created via doc-init path (see FR-017)</li>
+</ul>
+<p><strong>Functional Work (<code>+1</code> and beyond):</strong></p>
+<ul>
+<li class="">Actual implementation</li>
+<li class="">Builds on abstract space anchor</li>
+<li class="">Increments BUILD for each release</li>
+<li class="">Example progression:<!-- -->
+<ul>
+<li class=""><code>0.4.11.1+0</code> = Task document created (abstract space)</li>
+<li class=""><code>0.4.11.1+1</code> = First functional change for Task 1</li>
+<li class=""><code>0.4.11.1+2</code> = Second functional change for Task 1</li>
+</ul>
+</li>
+</ul>
+<p><strong>Validation:</strong></p>
+<ul>
+<li class=""><code>+0</code> is only valid for docs-only changes (E/S/T document creation)</li>
+<li class=""><code>+1</code> and beyond require functional changes</li>
+<li class="">Abstract space must precede functional work</li>
+<li class="">Release Workflow validates abstract space usage</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=s00-abstract-space-and-repository-anchor-transition-fr-072-approach-d>S00 Abstract Space and Repository-Anchor Transition (FR-072 Approach D)<a href=#s00-abstract-space-and-repository-anchor-transition-fr-072-approach-d class=hash-link aria-label="Direct link to S00 Abstract Space and Repository-Anchor Transition (FR-072 Approach D)" title="Direct link to S00 Abstract Space and Repository-Anchor Transition (FR-072 Approach D)" translate=no>​</a></h4>
+<p><strong>Format:</strong> <code>0.\{EPIC\}.0.0+0</code> (epic/story abstract-space anchor)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class=""><code>0.5.0.0+0</code> = Epic 5 Story 0 abstract space</li>
+<li class=""><code>0.6.0.0+0</code> = Epic 6 Story 0 abstract space</li>
+<li class=""><code>0.7.0.0+0</code> = Epic 7 Story 0 abstract space</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Establish forensic traceability for abstract-space documentation.</li>
+<li class="">Preserve compatibility with historical repository anchors where they already exist.</li>
+<li class="">Support phased migration to semantic intake placement for new FR/BR/UXR tasks.</li>
+</ul>
+<p><strong>Transition rule (canonical):</strong></p>
+<ul>
+<li class="">New FR/BR/UXR intake should version under the selected <strong>delivery story/task</strong> (semantic placement), not by creating new default repository-story anchors.</li>
+<li class="">Historical repository-story IDs (for example old <code>E5:S01:*</code>, <code>E6:S01:*</code>, <code>E7:S00:*</code>) remain valid forensic coordinates and must remain linkable.</li>
+</ul>
+<p><strong>Validator/workflow expectation:</strong></p>
+<ul>
+<li class="">Validators and workflow docs must accept legacy repository coordinates as historical-valid.</li>
+<li class="">Validators and workflow docs must not require new intake to use repository stories as default homes.</li>
+</ul>
+<p><strong>Usage guidance:</strong></p>
+<ul>
+<li class="">Use <code>+0</code> abstract-space builds for documentation initialization.</li>
+<li class="">Use semantic host story/task versions for new intake and implementation work.</li>
+<li class="">Keep historical repository-anchor links for traceability instead of rewriting IDs.</li>
+</ul>
+<p><strong>Related:</strong></p>
+<ul>
+<li class=""><strong>FR-072:</strong> Uniform Repository vs Abstract-Space Kanban Rules (Approach D migration)</li>
+<li class=""><strong>FR-074:</strong> Atomic intake + semantic placement</li>
+<li class=""><strong>FR-021:</strong> Historical repository-story baseline (superseded for new intake behavior)</li>
+<li class=""><strong>FR-018:</strong> Abstract space concept</li>
+</ul>
+<p><strong>SOP for Committing Initial E/S/T Docs:</strong></p>
+<ol>
+<li class=""><strong>Create E/S/T document</strong> with required structure and fields</li>
+<li class=""><strong>Set version to abstract space</strong> (<code>+0</code> build):<!-- -->
+<ul>
+<li class="">Epic: <code>0.\{EPIC\}.0.0+0</code></li>
+<li class="">Story: <code>0.\{EPIC\}.\{STORY\}.0+0</code></li>
+<li class="">Task: <code>0.\{EPIC\}.\{STORY\}.\{TASK\}+0</code></li>
+</ul>
+</li>
+<li class=""><strong>Commit via Release Workflow (RW)</strong> with doc-init path (see FR-017)<!-- -->
+<ul>
+<li class="">RW Step 1 detects docs-only change</li>
+<li class="">RW Step 2 sets version to <code>+0</code> (abstract space)</li>
+<li class="">RW Step 3 creates changelog entry with "Doc Init" type</li>
+</ul>
+</li>
+<li class=""><strong>Alternative:</strong> Manual commit with explicit version annotation<!-- -->
+<ul>
+<li class="">Commit message: <code>📋 Doc Init (Abstract Space): E\{epic\}:S\{story\}:T\{task\} - [Description]</code></li>
+<li class="">Version: Explicitly set to abstract space (<code>+0</code>)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Related:</strong></p>
+<ul>
+<li class=""><strong>Kanban Governance Policy:</strong> Abstract Spaces for Forensic Traceability (complementary section)</li>
+<li class=""><strong>FR-017:</strong> Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T (implementation)</li>
+<li class=""><strong>FR-018:</strong> Abstract Space for Zero-Numbered E/S/T Docs (this feature)</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=63-doc-init--abstract-space-cheat-sheet>6.3 Doc-Init / Abstract Space Cheat Sheet<a href=#63-doc-init--abstract-space-cheat-sheet class=hash-link aria-label="Direct link to 6.3 Doc-Init / Abstract Space Cheat Sheet" title="Direct link to 6.3 Doc-Init / Abstract Space Cheat Sheet" translate=no>​</a></h3>
+<p>This section summarizes how to use <strong>doc-init / abstract space builds (<code>+0</code>)</strong> in day-to-day work.</p>
+<p><strong>When to use <code>+0</code> (abstract space):</strong></p>
+<ul>
+<li class="">Creating a <strong>new Epic / Story / Task document</strong> with no functional work yet.</li>
+<li class="">Typical examples:<!-- -->
+<ul>
+<li class="">Onboarding a new <strong>FR/BR</strong> and creating its associated Task doc (wiring + documentation only).</li>
+<li class="">Creating initial Epic/Story docs before any implementation starts.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Patterns:</strong></p>
+<ul>
+<li class=""><strong>Epic doc creation:</strong> <code>0.\{EPIC\}.0.0+0</code></li>
+<li class=""><strong>Story doc creation:</strong> <code>0.\{EPIC\}.\{STORY\}.0+0</code></li>
+<li class=""><strong>Task doc creation:</strong> <code>0.\{EPIC\}.\{STORY\}.\{TASK\}+0</code></li>
+</ul>
+<p><strong>What <code>+0</code> means:</strong></p>
+<ul>
+<li class="">Documentation-only anchor (no code / behavior changes).</li>
+<li class="">Establishes the <strong>forensic traceability starting point</strong> for that E/S/T.</li>
+<li class="">Must be created via the <strong>doc-init path</strong> (FR-017).</li>
+</ul>
+<p><strong>After <code>+0</code> (functional work):</strong></p>
+<ul>
+<li class="">First functional release for that E/S/T uses <strong><code>+1</code></strong>:<!-- -->
+<ul>
+<li class="">Example progression for a Task:<!-- -->
+<ul>
+<li class=""><code>0.4.11.1+0</code> – Task document created (abstract space)</li>
+<li class=""><code>0.4.11.1+1</code> – First functional change for that Task</li>
+<li class=""><code>0.4.11.1+2</code> – Second functional change, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Moving to a <strong>new Task</strong>:<!-- -->
+<ul>
+<li class="">Optionally create a <strong>Task-level abstract space</strong> first (<code>+0</code>) for the new Task doc.</li>
+<li class="">Then use <code>+1</code> for the first functional release on that Task.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Practical cheat sheet:</strong></p>
+<ul>
+<li class=""><strong>Onboard FR/BR + Task doc only:</strong> use <strong><code>+0</code></strong> (abstract space).</li>
+<li class=""><strong>Start actual implementation for that Task:</strong> bump to <strong><code>+1</code></strong>.</li>
+<li class=""><strong>Continue work on the same Task:</strong> increment BUILD (<strong><code>+2</code>, <code>+3</code>, …`</strong>).</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-changelog-format>7. CHANGELOG Format<a href=#7-changelog-format class=hash-link aria-label="Direct link to 7. CHANGELOG Format" title="Direct link to 7. CHANGELOG Format" translate=no>​</a></h2>
+<p>This repo uses a <strong>two-layer changelog system</strong> aligned with the framework pattern:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=main-summary-changelog-changelogmd>Main Summary Changelog (<code>CHANGELOG.md</code>)<a href=#main-summary-changelog-changelogmd class=hash-link aria-label="Direct link to main-summary-changelog-changelogmd" title="Direct link to main-summary-changelog-changelogmd" translate=no>​</a></h3>
+<p><strong>Format:</strong></p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> [0.3.1.1+2] - 02-12-25</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">📚 Documentation: Task 1 complete - Gap analysis comparing dev-kit versioning policy with framework</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>###</span><span class="token title important"> Added</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> Created gap analysis report...</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>###</span><span class="token title important"> Notes</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> See </span><span class="token code-snippet code keyword" style=color:#00009f>`docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.1.1+2.md`</span><span class="token plain"> for full details</span><br/></div></code></pre></div></div>
+<p><strong>Doc-Init Build Format (<code>+0</code> builds):</strong></p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> [0.2.10.1+0] - 12-12-25</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">📋 Doc Init: E2:S10:T01 - RW Step 2 Doc-Init Support</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>###</span><span class="token title important"> Summary</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Doc-Init Build (</span><span class="token bold content code-snippet code keyword" style=color:#00009f>`+0`</span><span class="token bold content">):</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> [Description of documentation-only changes]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>###</span><span class="token title important"> Doc Init</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">New E/S/T Documentation:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> ✅ [List of documentation changes]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>###</span><span class="token title important"> Notes</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> See </span><span class="token code-snippet code keyword" style=color:#00009f>`docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.10.1+0.md`</span><span class="token plain"> for full details</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> </span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">This is a doc-init build (</span><span class="token bold content code-snippet code keyword" style=color:#00009f>`+0`</span><span class="token bold content">).</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> No functional changes are included.</span><br/></div></code></pre></div></div>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li class="">Version: <code>[RC.EPIC.STORY.TASK+BUILD]</code></li>
+<li class="">Date: <code>DD-MM-YY</code> (short date format for merge-to-main)</li>
+<li class=""><strong>Doc-Init builds (<code>+0</code>):</strong> Use <code>📋 Doc Init: E\{epic\}:S\{story\}:T\{task\} - [Description]</code> format</li>
+<li class=""><strong>Normal builds (<code>+1</code> or higher):</strong> Use standard emoji prefixes (🚀 Feature, 🐞 Fix, 📚 Documentation, etc.)</li>
+<li class="">Link to detailed changelog archive</li>
+<li class="">Can be updated if merge date changes</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd>Detailed Changelog Archive (<code>docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md</code>)<a href=#detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd class=hash-link aria-label="Direct link to detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd" title="Direct link to detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd" translate=no>​</a></h3>
+<p><strong>Format (Normal Builds):</strong></p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token title important punctuation" style=color:#393A34>#</span><span class="token title important"> Changelog: v0.3.1.1+2</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Release Date:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> 2025-12-02 00:00:00 UTC</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Epic:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Epic 3 - [Epic Name]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Story:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Story 1 - [Story Name]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Task:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Task 1 - [Task Name]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Type:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> 📚 Documentation</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> Summary</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">📚 Documentation: [Brief description of changes]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> Changes</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> [Detailed change 1]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> [Detailed change 2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> Related Work</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> </span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Story:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> E3:S01 - [Story Name]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> </span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Epic:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Epic 3 - [Epic Name]</span><br/></div></code></pre></div></div>
+<p><strong>Format (Doc-Init Builds - <code>+0</code>):</strong></p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token title important punctuation" style=color:#393A34>#</span><span class="token title important"> Changelog: v0.2.10.1+0</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Release Date:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> 2025-12-12 14:00:00 UTC</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Epic:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Epic 2 - Workflow Management</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Story:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Story 10 - Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Task:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Task 1 - Update RW Step 2 to Support Doc-Init Path</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Build Type:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Doc-Init (</span><span class="token code-snippet code keyword" style=color:#00009f>`+0`</span><span class="token plain">)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Type:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> 📋 Doc Init</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> Summary</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Doc-Init Build:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> [Description of documentation-only changes]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> Doc Init</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">New E/S/T Documentation:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> ✅ [List of documentation changes]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Changes (Docs-Only):</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> [Detailed documentation changes]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> Related Work</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> </span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Story:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> E2:S10 - Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> </span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Epic:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> Epic 2 - Workflow Management</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> </span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Feature Request:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> FR-017 - Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> Notes</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">Doc-Init Build Characteristics:</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> Build number: </span><span class="token code-snippet code keyword" style=color:#00009f>`+0`</span><span class="token plain"> (not </span><span class="token code-snippet code keyword" style=color:#00009f>`+1`</span><span class="token plain">)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> Changes: Docs-only (no code changes)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> Purpose: Establish canonical version anchor before functional changes</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> Subsequent builds: Start at </span><span class="token code-snippet code keyword" style=color:#00009f>`+1`</span><span class="token plain"> for functional work</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">This is a doc-init build (</span><span class="token bold content code-snippet code keyword" style=color:#00009f>`+0`</span><span class="token bold content">).</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> No functional changes are included. The next build for this task will be </span><span class="token code-snippet code keyword" style=color:#00009f>`+1`</span><span class="token plain"> when functional work begins.</span><br/></div></code></pre></div></div>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li class="">Full timestamp: <code>YYYY-MM-DD HH:MM:SS UTC</code> (immutable)</li>
+<li class="">Epic/Story/Task information</li>
+<li class=""><strong>Doc-Init builds:</strong> Include <code>**Build Type:** Doc-Init (</code>+0<code>)</code> and <code>**Type:** 📋 Doc Init</code></li>
+<li class=""><strong>Normal builds:</strong> Include standard <code>**Type:**</code> field (🚀 Feature, 🐞 Fix, 📚 Documentation, etc.)</li>
+<li class="">Detailed change descriptions</li>
+<li class=""><strong>IMMUTABLE</strong> once written (never edit <code>**Release Date:**</code>)</li>
+</ul>
+<blockquote>
+<p><strong>Reference:</strong> See <code>packages/frameworks/numbering-versioning/versioning-strategy.md</code> for complete two-layer timestamp system documentation.</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-canonical-ordering-principle>8. Canonical Ordering Principle<a href=#8-canonical-ordering-principle class=hash-link aria-label="Direct link to 8. Canonical Ordering Principle" title="Direct link to 8. Canonical Ordering Principle" translate=no>​</a></h2>
+<p><strong>Release version numbers (SemVer <code>MAJOR.MINOR.PATCH</code>) are the canonical ordering metric for all releases and changelog entries.</strong></p>
+<p>This means:</p>
+<ul>
+<li class=""><strong>Release ordering is independent of wall-clock time</strong>
+<ul>
+<li class="">If <code>0.3.1.2+1</code> was committed on 2025-12-02 at 10:00:00 UTC</li>
+<li class="">And <code>0.3.1.1+2</code> was committed on 2025-12-02 at 15:30:00 UTC</li>
+<li class="">The changelog still orders them as: <code>0.3.1.1+2</code> first, then <code>0.3.1.2+1</code></li>
+<li class=""><strong>The release version number determines order, not the actual commit timestamp</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Parallel epic development remains fully supported</strong>: multiple epics can work simultaneously and each epic maintains its own internal version stream, while releases are ordered by SemVer in the changelog.</p>
+<p><strong>The internal version continues to encode the work hierarchy (Epic → Story → Task → Build).</strong> The release version provides the canonical ordering for external consumers; the internal version provides the canonical forensic coordinate for tracing work through Kanban, changelogs, and Git history.</p>
+<blockquote>
+<p><strong>Reference:</strong> See <code>packages/frameworks/numbering-versioning/versioning-strategy.md</code> (Section: Core Principle: Version Numbers Are Canonical) for complete documentation.</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-two-layer-timestamp-system>9. Two-Layer Timestamp System<a href=#9-two-layer-timestamp-system class=hash-link aria-label="Direct link to 9. Two-Layer Timestamp System" title="Direct link to 9. Two-Layer Timestamp System" translate=no>​</a></h2>
+<p>The versioning strategy uses <strong>two distinct timestamp layers</strong> with <strong>different purposes</strong>:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=layer-1-main-summary-changelog-changelogmd>Layer 1: Main Summary Changelog (<code>CHANGELOG.md</code>)<a href=#layer-1-main-summary-changelog-changelogmd class=hash-link aria-label="Direct link to layer-1-main-summary-changelog-changelogmd" title="Direct link to layer-1-main-summary-changelog-changelogmd" translate=no>​</a></h3>
+<p><strong>Format:</strong> Short date in <code>DD-MM-YY</code> format
+<strong>Example:</strong> <code>## [0.3.1.1+2] - 02-12-25</code></p>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Shows <strong>when this version was merged into <code>main</code></strong></li>
+<li class="">Provides a quick reference for "when did this hit production"</li>
+<li class="">Uses short format for readability in the summary view</li>
+</ul>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li class=""><strong>Not used for ordering</strong> (version number is canonical)</li>
+<li class=""><strong>Reflects merge-to-main date</strong>, not commit date</li>
+<li class=""><strong>Can be updated</strong> if a version is merged on a different day than initially recorded</li>
+<li class=""><strong>Format:</strong> <code>DD-MM-YY</code> (e.g., <code>02-12-25</code> for December 2, 2025)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=layer-2-detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd>Layer 2: Detailed Changelog Archive (<code>docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md</code>)<a href=#layer-2-detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd class=hash-link aria-label="Direct link to layer-2-detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd" title="Direct link to layer-2-detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd" translate=no>​</a></h3>
+<p><strong>Format:</strong> Full timestamp in <code>YYYY-MM-DD HH:MM:SS UTC</code> format
+<strong>Example:</strong> <code>**Release Date:** 2025-12-02 00:00:00 UTC</code></p>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Captures <strong>when this detailed changelog entry was authored/recorded</strong></li>
+<li class="">Provides forensic-level precision for accountability</li>
+<li class="">Enables exact traceability to the moment of release documentation</li>
+</ul>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li class=""><strong>IMMUTABLE once written</strong> - <strong>NEVER edit this timestamp retroactively</strong></li>
+<li class=""><strong>Reflects the actual time the changelog was created</strong>, not when code was committed</li>
+<li class=""><strong>Full precision</strong> (date + time + timezone) for complete accountability</li>
+<li class=""><strong>Format:</strong> <code>YYYY-MM-DD HH:MM:SS UTC</code> (e.g., <code>2025-12-02 00:00:00 UTC</code>)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=why-two-layers>Why Two Layers?<a href=#why-two-layers class=hash-link aria-label="Direct link to Why Two Layers?" title="Direct link to Why Two Layers?" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Different purposes:</strong></p>
+<ul>
+<li class="">Main changelog: Quick reference for "when did this merge to main"</li>
+<li class="">Detailed changelog: Forensic record of "when was this release documented"</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Different audiences:</strong></p>
+<ul>
+<li class="">Main changelog: Developers scanning recent releases</li>
+<li class="">Detailed changelog: Forensic analysis, audit trails, accountability</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Different update rules:</strong></p>
+<ul>
+<li class="">Main changelog: Can be updated if merge date changes</li>
+<li class="">Detailed changelog: <strong>IMMUTABLE</strong> - historical record must be preserved</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Enables parallel development:</strong></p>
+<ul>
+<li class="">Versions are ordered by number, not by timestamp</li>
+<li class="">Timestamps provide context, not ordering</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Reference:</strong> See <code>packages/frameworks/numbering-versioning/versioning-strategy.md</code> (Section: Two-Layer Timestamp System) for complete documentation.</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-forensic-traceability-grid>10. Forensic Traceability Grid<a href=#10-forensic-traceability-grid class=hash-link aria-label="Direct link to 10. Forensic Traceability Grid" title="Direct link to 10. Forensic Traceability Grid" translate=no>​</a></h2>
+<p>The versioning strategy provides <strong>complete traceability</strong> through a multi-dimensional grid:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dimension-1-version--epicstorytask>Dimension 1: Version ↔ Epic/Story/Task<a href=#dimension-1-version--epicstorytask class=hash-link aria-label="Direct link to Dimension 1: Version ↔ Epic/Story/Task" title="Direct link to Dimension 1: Version ↔ Epic/Story/Task" translate=no>​</a></h3>
+<p><strong>Encoding:</strong> The version number itself (<code>RC.EPIC.STORY.TASK+BUILD</code>)</p>
+<p><strong>Traceability Path:</strong></p>
+<ul>
+<li class=""><code>0.3.1.1+2</code> → Epic 3, Story 1, Task 1, Build 2</li>
+<li class="">Direct mapping from version to work hierarchy</li>
+<li class="">No lookup required - the version number IS the identifier</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dimension-2-version--detailed-changelog>Dimension 2: Version ↔ Detailed Changelog<a href=#dimension-2-version--detailed-changelog class=hash-link aria-label="Direct link to Dimension 2: Version ↔ Detailed Changelog" title="Direct link to Dimension 2: Version ↔ Detailed Changelog" translate=no>​</a></h3>
+<p><strong>Mapping:</strong> One detailed changelog file per version</p>
+<p><strong>File Location:</strong> <code>docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md</code></p>
+<p><strong>Traceability Path:</strong></p>
+<ul>
+<li class="">Version number → File path (deterministic)</li>
+<li class="">File contains: Full timestamp, epic/story/task info, detailed changes</li>
+<li class=""><strong>Full timestamp provides forensic-level accountability</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dimension-3-version--main-summary-changelog>Dimension 3: Version ↔ Main Summary Changelog<a href=#dimension-3-version--main-summary-changelog class=hash-link aria-label="Direct link to Dimension 3: Version ↔ Main Summary Changelog" title="Direct link to Dimension 3: Version ↔ Main Summary Changelog" translate=no>​</a></h3>
+<p><strong>Mapping:</strong> One summary entry per version in <code>CHANGELOG.md</code></p>
+<p><strong>Traceability Path:</strong></p>
+<ul>
+<li class="">Version number → Summary entry (ordered by version, not time)</li>
+<li class="">Entry contains: Short date (merge-to-main), summary, link to detailed changelog</li>
+<li class=""><strong>Short date shows when version merged to main</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dimension-4-version--kanban-forensic-markers>Dimension 4: Version ↔ Kanban Forensic Markers<a href=#dimension-4-version--kanban-forensic-markers class=hash-link aria-label="Direct link to Dimension 4: Version ↔ Kanban Forensic Markers" title="Direct link to Dimension 4: Version ↔ Kanban Forensic Markers" translate=no>​</a></h3>
+<p><strong>Mapping:</strong> Epic/Story documents and Kanban rituals include explicit version references</p>
+<p><strong>Traceability Path:</strong></p>
+<ul>
+<li class="">Version number → Epic/Story/Task documents</li>
+<li class="">Documents contain: Version references, commit hashes, workflow run IDs</li>
+<li class=""><strong>Kanban markers provide work context and decision history</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Version: <code>0.3.1.1+2</code></li>
+<li class="">Epic 3 document: <code>docs/project-management/kanban/epics/epic-03/epic-03.md</code></li>
+<li class="">Story 1 markers: Version references, commit hashes, workflow runs</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dimension-5-version--git-history>Dimension 5: Version ↔ Git History<a href=#dimension-5-version--git-history class=hash-link aria-label="Direct link to Dimension 5: Version ↔ Git History" title="Direct link to Dimension 5: Version ↔ Git History" translate=no>​</a></h3>
+<p><strong>Mapping:</strong> Version number in commit messages and tags</p>
+<p><strong>Traceability Path:</strong></p>
+<ul>
+<li class="">Version number → Git commits (via commit messages)</li>
+<li class="">Git commits → Commit hashes, author, timestamp</li>
+<li class=""><strong>Git history provides code-level traceability</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Version: <code>0.3.1.1+2</code></li>
+<li class="">Commit message: "Release v0.3.1.1+2: Task 1 complete..."</li>
+<li class="">Git commit: Contains code changes, author, commit timestamp</li>
+</ul>
+<p><strong>This grid provides complete accountability and efficient traceability.</strong></p>
+<blockquote>
+<p><strong>Reference:</strong> See <code>packages/frameworks/numbering-versioning/versioning-strategy.md</code> (Section: Forensic Traceability Grid) for complete documentation.</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-immutability-rules>11. Immutability Rules<a href=#11-immutability-rules class=hash-link aria-label="Direct link to 11. Immutability Rules" title="Direct link to 11. Immutability Rules" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=rule-1-detailed-changelog-timestamps-are-immutable>Rule 1: Detailed Changelog Timestamps Are Immutable<a href=#rule-1-detailed-changelog-timestamps-are-immutable class=hash-link aria-label="Direct link to Rule 1: Detailed Changelog Timestamps Are Immutable" title="Direct link to Rule 1: Detailed Changelog Timestamps Are Immutable" translate=no>​</a></h3>
+<p><strong>Once a detailed changelog file is created with a <code>**Release Date:**</code> timestamp, that timestamp MUST NEVER be edited.</strong></p>
+<p><strong>Rationale:</strong></p>
+<ul>
+<li class="">The timestamp captures <strong>when the changelog entry was authored</strong></li>
+<li class="">Editing it would corrupt the forensic record</li>
+<li class="">Historical accuracy requires preserving original timestamps</li>
+</ul>
+<p><strong>What This Means:</strong></p>
+<ul>
+<li class="">❌ <strong>NEVER</strong> edit <code>**Release Date:**</code> in existing changelog files</li>
+<li class="">❌ <strong>NEVER</strong> "fix" old timestamps to satisfy new validation rules</li>
+<li class="">❌ <strong>NEVER</strong> update timestamps for cosmetic reasons</li>
+<li class="">✅ <strong>ONLY</strong> create new changelog files with correct timestamps going forward</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=rule-2-version-ordering-is-immutable>Rule 2: Version Ordering Is Immutable<a href=#rule-2-version-ordering-is-immutable class=hash-link aria-label="Direct link to Rule 2: Version Ordering Is Immutable" title="Direct link to Rule 2: Version Ordering Is Immutable" translate=no>​</a></h3>
+<p><strong>Once a version is assigned and documented, its position in the changelog ordering is fixed by the version number.</strong></p>
+<p><strong>Rationale:</strong></p>
+<ul>
+<li class="">Version numbers encode the work hierarchy</li>
+<li class="">Ordering by version number ensures consistent, logical progression</li>
+<li class="">Changing order would break traceability</li>
+</ul>
+<p><strong>What This Means:</strong></p>
+<ul>
+<li class="">Versions are ordered by <code>RC.EPIC.STORY.TASK+BUILD</code> structure</li>
+<li class=""><code>0.3.1.1+2</code> always comes before <code>0.3.1.2+1</code> in changelogs</li>
+<li class="">Even if <code>0.3.1.2+1</code> was committed first</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=rule-3-historical-files-are-preserved-as-is>Rule 3: Historical Files Are Preserved As-Is<a href=#rule-3-historical-files-are-preserved-as-is class=hash-link aria-label="Direct link to Rule 3: Historical Files Are Preserved As-Is" title="Direct link to Rule 3: Historical Files Are Preserved As-Is" translate=no>​</a></h3>
+<p><strong>Changelog files created before the full-timestamp policy are preserved exactly as they were created.</strong></p>
+<p><strong>Rationale:</strong></p>
+<ul>
+<li class="">Historical files are artifacts of their time</li>
+<li class="">They reflect the practices and tools available when they were created</li>
+<li class="">Preserving them maintains the complete historical record</li>
+</ul>
+<blockquote>
+<p><strong>Reference:</strong> See <code>packages/frameworks/numbering-versioning/versioning-strategy.md</code> (Section: Immutability Rules) for complete documentation.</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-version-validation>12. Version Validation<a href=#12-version-validation class=hash-link aria-label="Direct link to 12. Version Validation" title="Direct link to 12. Version Validation" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=validation-scripts>Validation Scripts<a href=#validation-scripts class=hash-link aria-label="Direct link to Validation Scripts" title="Direct link to Validation Scripts" translate=no>​</a></h3>
+<p>The dev-kit uses validation scripts from the workflow management framework:</p>
+<ul>
+<li class="">
+<p><strong><code>packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py</code></strong></p>
+<ul>
+<li class="">Validates version matches branch/epic</li>
+<li class="">Checks version format (old vs new)</li>
+<li class="">Validates CHANGELOG entries match branch</li>
+</ul>
+</li>
+<li class="">
+<p><strong><code>packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py</code></strong></p>
+<ul>
+<li class="">Validates version format in CHANGELOG.md</li>
+<li class="">Checks date format (old: <code>YYYY-MM-DD</code>, new: <code>DD-MM-YY</code>)</li>
+<li class="">Validates build number >= 1</li>
+<li class="">Grandfathers old format (warnings only)</li>
+</ul>
+</li>
+<li class="">
+<p><strong><code>packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py</code></strong></p>
+<ul>
+<li class="">Validates requested RW task intent before Step 2 file edits</li>
+<li class="">Supports <code>--mode rw-k</code> for RW -k comparison behavior</li>
+<li class="">Supports <code>--art</code> in all RW modes (<code>RW</code>, <code>RW -d</code>, <code>RW -k</code>) for explicit canonical anchor adoption</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=validation-behavior>Validation Behavior<a href=#validation-behavior class=hash-link aria-label="Direct link to Validation Behavior" title="Direct link to Validation Behavior" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>New files (TASK+BUILD format):</strong> Require strict enforcement</li>
+<li class=""><strong>Pre-commit hooks:</strong> Enforce format before commit (when configured)</li>
+<li class=""><strong>Release Workflow:</strong> Validators run automatically before commit</li>
+<li class=""><strong>CI/CD:</strong> Can validate in continuous integration (when configured)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=manual-review-checklist>Manual Review Checklist<a href=#manual-review-checklist class=hash-link aria-label="Direct link to Manual Review Checklist" title="Direct link to Manual Review Checklist" translate=no>​</a></h3>
+<p><strong>Before committing:</strong></p>
+<ol>
+<li class="">Verify version number matches branch/epic/story/task</li>
+<li class="">Verify detailed changelog has full timestamp (new format)</li>
+<li class="">Verify main changelog has short date (<code>DD-MM-YY</code>)</li>
+<li class="">Verify version in commit message</li>
+<li class="">Verify Kanban markers updated</li>
+</ol>
+<p><strong>After merging:</strong></p>
+<ol>
+<li class="">Verify changelog ordering (by version, not time)</li>
+<li class="">Verify traceability grid is complete</li>
+<li class="">Verify historical files preserved</li>
+</ol>
+<blockquote>
+<p><strong>Reference:</strong> See <code>packages/frameworks/workflow-mgt/scripts/validation/</code> for validation script implementations.</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-relationship-to-framework-policies>13. Relationship to Framework Policies<a href=#13-relationship-to-framework-policies class=hash-link aria-label="Direct link to 13. Relationship to Framework Policies" title="Direct link to 13. Relationship to Framework Policies" translate=no>​</a></h2>
+<p>This policy is a <strong>specialisation</strong> of the general framework policies:</p>
+<ul>
+<li class=""><strong>Base schema & strategy:</strong>
+<ul>
+<li class=""><code>packages/frameworks/numbering-versioning/versioning-policy.md</code> (primary SoT)</li>
+<li class=""><code>packages/frameworks/numbering-versioning/versioning-strategy.md</code> (comprehensive strategy)</li>
+</ul>
+</li>
+<li class=""><strong>Kanban integration:</strong>
+<ul>
+<li class=""><code>packages/frameworks/kanban/policies/kanban-governance-policy.md</code></li>
+<li class=""><code>docs/project-management/rituals/policy/kanban-governance-policy.md</code> (dev-kit local)</li>
+</ul>
+</li>
+</ul>
+<p>The dev-kit policy:</p>
+<ul>
+<li class=""><strong>Fixes the EPIC space (1–4+) for this repo</strong></li>
+<li class=""><strong>Clarifies that all work in this repo</strong> using the version file is speaking about dev-kit Epics/Stories/Tasks, not any external project</li>
+<li class=""><strong>References framework policies</strong> as the canonical source of truth for detailed patterns and strategies</li>
+<li class=""><strong>Documents dev-kit-specific adaptations</strong> while maintaining alignment with framework principles</li>
+</ul>
+<p><strong>Key Principle:</strong> The framework policies (<code>packages/frameworks/numbering-versioning/</code>) serve as the <strong>canonical source of truth</strong>. This dev-kit policy documents how the framework is applied in the dev-kit context, referencing the framework for detailed explanations.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-status-and-maintenance>14. Status and Maintenance<a href=#14-status-and-maintenance class=hash-link aria-label="Direct link to 14. Status and Maintenance" title="Direct link to 14. Status and Maintenance" translate=no>​</a></h2>
+<p><strong>Status:</strong> Active
+<strong>Owner:</strong> AI Dev Kit Lead
+<strong>Last Updated:</strong> 2025-12-02
+<strong>Related Work:</strong> Epic 3, Story 1 (Dev Kit Alignment with Versioning Framework)</p>
+<p><strong>Maintenance:</strong></p>
+<ul>
+<li class="">This policy should be reviewed when framework policies are updated</li>
+<li class="">Gaps identified in gap analysis (T001) have been addressed</li>
+<li class="">Policy aligns with framework patterns while maintaining dev-kit-specific context</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=15-references>15. References<a href=#15-references class=hash-link aria-label="Direct link to 15. References" title="Direct link to 15. References" translate=no>​</a></h2>
+<p><strong>Framework Policies (Canonical SoT):</strong></p>
+<ul>
+<li class=""><code>packages/frameworks/numbering-versioning/versioning-policy.md</code></li>
+<li class=""><code>packages/frameworks/numbering-versioning/versioning-strategy.md</code></li>
+<li class=""><code>packages/frameworks/numbering-versioning/README.md</code></li>
+</ul>
+<p><strong>Dev-Kit Implementation:</strong></p>
+<ul>
+<li class=""><code>src/fynd_deals/version.py</code> (version file - to be renamed to dev-kit-specific path)</li>
+<li class=""><code>CHANGELOG.md</code> (main summary changelog)</li>
+<li class=""><code>docs/changelog-and-release-notes/changelog-archive/</code> (detailed changelog archive)</li>
+<li class=""><code>docs/project-management/kanban/</code> (Kanban board and Epic/Story docs)</li>
+</ul>
+<p><strong>Validation Scripts:</strong></p>
+<ul>
+<li class=""><code>packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py</code></li>
+<li class=""><code>packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py</code></li>
+</ul>
+<p><strong>Related Documentation:</strong></p>
+<ul>
+<li class=""><strong><a class="" href=/ai-dev-kit/docs/architecture/standards-and-adrs/versioning-quick-reference>Versioning Quick Reference</a></strong> - 1-2 page summary for quick lookup ⚡</li>
+<li class=""><strong><a class="" href=/ai-dev-kit/docs/architecture/standards-and-adrs/dual-versioning-package-managers>Dual-Versioning Guide</a></strong> - Managing <code>RC.EPIC.STORY.TASK+BUILD</code> + SemVer for package managers ⚠️</li>
+<li class=""><code>docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md</code> - Practical worked examples</li>
+<li class=""><code>docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md</code> (gap analysis)</li>
+<li class=""><code>docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md</code> (findings)</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/governance/standards/dev-kit-versioning-policy.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#1-purpose class="table-of-contents__link toc-highlight">1. Purpose</a><ul><li><a href=#11-mental-model-internal-vs-release-versions class="table-of-contents__link toc-highlight">1.1 Mental Model: Internal vs Release Versions</a></ul><li><a href=#2-schema-adopted class="table-of-contents__link toc-highlight">2. Schema (Adopted)</a><li><a href=#21-semver-mapping-for-external-releases class="table-of-contents__link toc-highlight">2.1 SemVer Mapping for External Releases</a><ul><li><a href=#problem-statement class="table-of-contents__link toc-highlight">Problem Statement</a><li><a href=#hybrid-approach-algorithm class="table-of-contents__link toc-highlight">Hybrid Approach Algorithm</a><li><a href=#limitations class="table-of-contents__link toc-highlight">Limitations</a><li><a href=#task-touch-derived-mapping-adr-002 class="table-of-contents__link toc-highlight">Task-Touch Derived Mapping (ADR-002)</a><li><a href=#registry-structure class="table-of-contents__link toc-highlight">Registry Structure</a><li><a href=#dual-tagging-in-release-workflow class="table-of-contents__link toc-highlight">Dual Tagging in Release Workflow</a><li><a href=#11-mapping-and-tag-alignment class="table-of-contents__link toc-highlight">1:1 mapping and tag alignment</a><li><a href=#readme-version-display class="table-of-contents__link toc-highlight">README Version Display</a><li><a href=#implementation class="table-of-contents__link toc-highlight">Implementation</a></ul><li><a href=#3-epic-ranges-for-ai-dev-kit class="table-of-contents__link toc-highlight">3. Epic Ranges for AI Dev Kit</a><li><a href=#4-mapping-kanban-to-version-components class="table-of-contents__link toc-highlight">4. Mapping Kanban to Version Components</a><li><a href=#5-version-file-for-this-repo class="table-of-contents__link toc-highlight">5. Version File for This Repo</a><li><a href=#6-progression-rules-dev-kit class="table-of-contents__link toc-highlight">6. Progression Rules (Dev Kit)</a><ul><li><a href=#61-task-transitions class="table-of-contents__link toc-highlight">6.1 Task Transitions</a><li><a href=#611-perpetual-tasks-maintenance-workflows class="table-of-contents__link toc-highlight">6.1.1 Perpetual Tasks (Maintenance Workflows)</a><li><a href=#62-abstract-space-version-schema class="table-of-contents__link toc-highlight">6.2 Abstract Space Version Schema</a><li><a href=#63-doc-init--abstract-space-cheat-sheet class="table-of-contents__link toc-highlight">6.3 Doc-Init / Abstract Space Cheat Sheet</a></ul><li><a href=#7-changelog-format class="table-of-contents__link toc-highlight">7. CHANGELOG Format</a><ul><li><a href=#main-summary-changelog-changelogmd class="table-of-contents__link toc-highlight">Main Summary Changelog (<code>CHANGELOG.md</code>)</a><li><a href=#detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd class="table-of-contents__link toc-highlight">Detailed Changelog Archive (<code>docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md</code>)</a></ul><li><a href=#8-canonical-ordering-principle class="table-of-contents__link toc-highlight">8. Canonical Ordering Principle</a><li><a href=#9-two-layer-timestamp-system class="table-of-contents__link toc-highlight">9. Two-Layer Timestamp System</a><ul><li><a href=#layer-1-main-summary-changelog-changelogmd class="table-of-contents__link toc-highlight">Layer 1: Main Summary Changelog (<code>CHANGELOG.md</code>)</a><li><a href=#layer-2-detailed-changelog-archive-docschangelog-and-release-noteschangelog-archivechangelog_vversionmd class="table-of-contents__link toc-highlight">Layer 2: Detailed Changelog Archive (<code>docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md</code>)</a><li><a href=#why-two-layers class="table-of-contents__link toc-highlight">Why Two Layers?</a></ul><li><a href=#10-forensic-traceability-grid class="table-of-contents__link toc-highlight">10. Forensic Traceability Grid</a><ul><li><a href=#dimension-1-version--epicstorytask class="table-of-contents__link toc-highlight">Dimension 1: Version ↔ Epic/Story/Task</a><li><a href=#dimension-2-version--detailed-changelog class="table-of-contents__link toc-highlight">Dimension 2: Version ↔ Detailed Changelog</a><li><a href=#dimension-3-version--main-summary-changelog class="table-of-contents__link toc-highlight">Dimension 3: Version ↔ Main Summary Changelog</a><li><a href=#dimension-4-version--kanban-forensic-markers class="table-of-contents__link toc-highlight">Dimension 4: Version ↔ Kanban Forensic Markers</a><li><a href=#dimension-5-version--git-history class="table-of-contents__link toc-highlight">Dimension 5: Version ↔ Git History</a></ul><li><a href=#11-immutability-rules class="table-of-contents__link toc-highlight">11. Immutability Rules</a><ul><li><a href=#rule-1-detailed-changelog-timestamps-are-immutable class="table-of-contents__link toc-highlight">Rule 1: Detailed Changelog Timestamps Are Immutable</a><li><a href=#rule-2-version-ordering-is-immutable class="table-of-contents__link toc-highlight">Rule 2: Version Ordering Is Immutable</a><li><a href=#rule-3-historical-files-are-preserved-as-is class="table-of-contents__link toc-highlight">Rule 3: Historical Files Are Preserved As-Is</a></ul><li><a href=#12-version-validation class="table-of-contents__link toc-highlight">12. Version Validation</a><ul><li><a href=#validation-scripts class="table-of-contents__link toc-highlight">Validation Scripts</a><li><a href=#validation-behavior class="table-of-contents__link toc-highlight">Validation Behavior</a><li><a href=#manual-review-checklist class="table-of-contents__link toc-highlight">Manual Review Checklist</a></ul><li><a href=#13-relationship-to-framework-policies class="table-of-contents__link toc-highlight">13. Relationship to Framework Policies</a><li><a href=#14-status-and-maintenance class="table-of-contents__link toc-highlight">14. Status and Maintenance</a><li><a href=#15-references class="table-of-contents__link toc-highlight">15. References</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>

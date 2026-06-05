@@ -1,0 +1,573 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-architecture/standards-and-adrs/maintenance-kanban-integration" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Maintenance Tasks Kanban Integration | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-kanban-integration /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Maintenance Tasks Kanban Integration | AI Dev Kit"/><meta data-rh=true name=description content="Status: Active"/><meta data-rh=true property=og:description content="Status: Active"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-kanban-integration /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-kanban-integration hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-kanban-integration hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-kanban-integration","name":"Maintenance Tasks Kanban Integration","position":1}]}</script><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/ai-dev-kit/docs/architecture/><span title=Architecture class=categoryLinkLabel_W154>Architecture</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/><span title="Architecture Documentation" class=linkLabel_WmDU>Architecture Documentation</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-002-task-touch-derived-mapping><span title=standards-and-adrs class=categoryLinkLabel_W154>standards-and-adrs</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-002-task-touch-derived-mapping><span title="ADR-002: Task-Touch Derived Mapping (Kanban → SemVer)" class=linkLabel_WmDU>ADR-002: Task-Touch Derived Mapping (Kanban → SemVer)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption><span title="ADR-003: Greenfield vs Brownfield Adoption (Respect for Host Architecture)" class=linkLabel_WmDU>ADR-003: Greenfield vs Brownfield Adoption (Respect for Host Architecture)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract><span title="ADR-004: Mandatory IPP State Transition Steps" class=linkLabel_WmDU>ADR-004: Mandatory IPP State Transition Steps</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-005-ollama-model-ecosystem><span title="ADR-005: Ollama Model Ecosystem for Multi-Domain AI Workloads" class=linkLabel_WmDU>ADR-005: Ollama Model Ecosystem for Multi-Domain AI Workloads</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off><span title="ADR-006: Book project private repository spin-off (preferred migration)" class=linkLabel_WmDU>ADR-006: Book project private repository spin-off (preferred migration)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-007-book-governance-document-topology><span title="ADR-007: Book workspace governance document topology" class=linkLabel_WmDU>ADR-007: Book workspace governance document topology</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints><span title="ADR-008: Workflow Forensic Logging and Checkpoint Model" class=linkLabel_WmDU>ADR-008: Workflow Forensic Logging and Checkpoint Model</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag><span title="ADR-009: UKW standalone deep reprioritization (--rp)" class=linkLabel_WmDU>ADR-009: UKW standalone deep reprioritization (--rp)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag><span title="ADR-010: UKW standalone archive completed (-c)" class=linkLabel_WmDU>ADR-010: UKW standalone archive completed (-c)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log><span title="ADR-011: Workflow Step Tracker and Agent Run Log" class=linkLabel_WmDU>ADR-011: Workflow Step Tracker and Agent Run Log</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing><span title="ADR-012: Agent bootstrap and task routing" class=linkLabel_WmDU>ADR-012: Agent bootstrap and task routing</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement><span title="ADR-013: IDE command allowlist catalog and enforcement" class=linkLabel_WmDU>ADR-013: IDE command allowlist catalog and enforcement</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d><span title="ADR-014: Repository vs abstract-space Kanban model (FR-072 Approach D)" class=linkLabel_WmDU>ADR-014: Repository vs abstract-space Kanban model (FR-072 Approach D)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention><span title="ADR-015: Kanban epic/story path lowercase convention" class=linkLabel_WmDU>ADR-015: Kanban epic/story path lowercase convention</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy><span title="ADR-016: Install/setup error code taxonomy (ADK-*)" class=linkLabel_WmDU>ADR-016: Install/setup error code taxonomy (ADK-*)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology><span title="ADR-017: Docusaurus CI build/deploy topology (single workflow, artifact handoff)" class=linkLabel_WmDU>ADR-017: Docusaurus CI build/deploy topology (single workflow, artifact handoff)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation><span title="ADR-018: Single kanban board consolidation (retire active fbuboard)" class=linkLabel_WmDU>ADR-018: Single kanban board consolidation (retire active fbuboard)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-019-rw-build-increment-and-tag-immutability><span title="ADR-019 — RW BUILD increment and release-tag immutability" class=linkLabel_WmDU>ADR-019 — RW BUILD increment and release-tag immutability</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification><span title="ADR-020: Kanban row-transform entrypoint contract + rw_config_loader unification" class=linkLabel_WmDU>ADR-020: Kanban row-transform entrypoint contract + rw_config_loader unification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill><span title="ADR: OpenClaw process sentinel skill (agent orphan detection)" class=linkLabel_WmDU>ADR: OpenClaw process sentinel skill (agent orphan detection)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/FR-046-implementation-guide><span title="FR-046 Implementation Guide: RW Uses SemVer Tag When Task-Touch Enabled" class=linkLabel_WmDU>FR-046 Implementation Guide: RW Uses SemVer Tag When Task-Touch Enabled</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/agent-network-access-and-git-push-limitations><span title="Cursor Sandbox Network Access: Issue, Environment, and Solution" class=linkLabel_WmDU>Cursor Sandbox Network Access: Issue, Environment, and Solution</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/agentic-template-generator-design><span title="Agentic Template Generator Design" class=linkLabel_WmDU>Agentic Template Generator Design</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ai-dev-kit-project-review><span title="AI Dev Kit Project Review (Repository Hygiene & Legacy Clean-Up)" class=linkLabel_WmDU>AI Dev Kit Project Review (Repository Hygiene & Legacy Clean-Up)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/changelog-archival-policy><span title=changelog-archival-policy class=linkLabel_WmDU>changelog-archival-policy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/changelog-management-policy><span title="Changelog Management Policy" class=linkLabel_WmDU>Changelog Management Policy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/changelog-ordering-investigation-report><span title="Changelog Ordering Investigation Report" class=linkLabel_WmDU>Changelog Ordering Investigation Report</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/code-quality-kanban-integration><span title="Code Quality Metrics Kanban Integration" class=linkLabel_WmDU>Code Quality Metrics Kanban Integration</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/code-quality-metrics-framework><span title="Code Quality Metrics Framework" class=linkLabel_WmDU>Code Quality Metrics Framework</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/code-quality-monitoring-dashboards><span title="Code Quality Monitoring Dashboards" class=linkLabel_WmDU>Code Quality Monitoring Dashboards</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/code-quality-monitoring-processes><span title="Code Quality Metrics and Monitoring Processes" class=linkLabel_WmDU>Code Quality Metrics and Monitoring Processes</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/code-review-checklist-templates><span title="Code Review Checklist Templates" class=linkLabel_WmDU>Code Review Checklist Templates</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/code-review-kanban-integration><span title="Code Review Kanban Integration" class=linkLabel_WmDU>Code Review Kanban Integration</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/code-review-standards-and-guidelines><span title="Code Review Standards and Guidelines" class=linkLabel_WmDU>Code Review Standards and Guidelines</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/code-review-workflow-processes><span title="Code Review Workflow Processes" class=linkLabel_WmDU>Code Review Workflow Processes</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/cursor-ide-performance-considerations><span title="Cursor IDE Performance Considerations" class=linkLabel_WmDU>Cursor IDE Performance Considerations</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts><span title=dev-kit-ipw-ipp-vs-icw-artifacts class=linkLabel_WmDU>dev-kit-ipw-ipp-vs-icw-artifacts</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration><span title="Dev-Kit: Kanban + Versioning + Release Workflow Integration Guide" class=linkLabel_WmDU>Dev-Kit: Kanban + Versioning + Release Workflow Integration Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook><span title="Versioning Cookbook" class=linkLabel_WmDU>Versioning Cookbook</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/dev-kit-versioning-policy><span title=dev-kit-versioning-policy class=linkLabel_WmDU>dev-kit-versioning-policy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/doc-init-migration-guide><span title="Doc-Init (+0) Migration Guide for Existing Projects" class=linkLabel_WmDU>Doc-Init (+0) Migration Guide for Existing Projects</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/doc-lifecycle-metadata-spec><span title="Document Lifecycle Metadata Specification" class=linkLabel_WmDU>Document Lifecycle Metadata Specification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/doc-lifecycle-policy><span title="Document Lifecycle Policy" class=linkLabel_WmDU>Document Lifecycle Policy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/documentation-health-monitoring><span title="Documentation Health Monitoring" class=linkLabel_WmDU>Documentation Health Monitoring</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/documentation-maintenance-policy><span title="Documentation Maintenance Policy" class=linkLabel_WmDU>Documentation Maintenance Policy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/documentation-review-cadences><span title="Documentation Review Cadences" class=linkLabel_WmDU>Documentation Review Cadences</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/documentation-review-workflow-guide><span title="Documentation Review Workflow Guide" class=linkLabel_WmDU>Documentation Review Workflow Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/documentation-update-triggers><span title="Documentation Update Triggers" class=linkLabel_WmDU>Documentation Update Triggers</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/dual-versioning-package-managers><span title="Dual-Versioning: RC.EPIC.STORY.TASK+BUILD + Package Manager SemVer" class=linkLabel_WmDU>Dual-Versioning: RC.EPIC.STORY.TASK+BUILD + Package Manager SemVer</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification><span title="ECC ↔ AI Dev Kit harness layer integration specification" class=linkLabel_WmDU>ECC ↔ AI Dev Kit harness layer integration specification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation><span title="ECC ↔ AI Dev Kit — Phase 0 compatibility evaluation" class=linkLabel_WmDU>ECC ↔ AI Dev Kit — Phase 0 compatibility evaluation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/environment-variables-sop><span title="Standard Operating Procedure: Environment Variables" class=linkLabel_WmDU>Standard Operating Procedure: Environment Variables</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/epic-story-path-migration-guide><span title="Epic/Story path migration guide (lowercase segments)" class=linkLabel_WmDU>Epic/Story path migration guide (lowercase segments)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-auto-update-mechanisms><span title="Framework Auto-Update Mechanisms" class=linkLabel_WmDU>Framework Auto-Update Mechanisms</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-backward-compatibility-policy><span title="Framework Backward Compatibility Policy" class=linkLabel_WmDU>Framework Backward Compatibility Policy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-compatibility-tracking><span title="Framework Compatibility Tracking" class=linkLabel_WmDU>Framework Compatibility Tracking</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-dependency-architecture><span title="Framework Dependency Architecture" class=linkLabel_WmDU>Framework Dependency Architecture</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-health-dashboard-guide><span title="Framework Health Dashboard Guide" class=linkLabel_WmDU>Framework Health Dashboard Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-health-metrics><span title="Framework Health Metrics" class=linkLabel_WmDU>Framework Health Metrics</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-health-monitoring-procedures><span title="Framework Health Monitoring Procedures" class=linkLabel_WmDU>Framework Health Monitoring Procedures</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-migration-guide><span title="Framework Migration Guide" class=linkLabel_WmDU>Framework Migration Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-release-process><span title="Framework Release Process" class=linkLabel_WmDU>Framework Release Process</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-update-cli-design><span title="Framework Update CLI Tool Design" class=linkLabel_WmDU>Framework Update CLI Tool Design</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-update-procedures><span title="Framework Update Procedures" class=linkLabel_WmDU>Framework Update Procedures</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-version-tagging-strategy><span title="Framework Version Tagging Strategy" class=linkLabel_WmDU>Framework Version Tagging Strategy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/framework-versioning-strategy><span title="Framework Versioning Strategy" class=linkLabel_WmDU>Framework Versioning Strategy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/gap-log-schema><span title="Gap Log and Risk Assessment Schema" class=linkLabel_WmDU>Gap Log and Risk Assessment Schema</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/generator-framework-design><span title="Generator Framework Design" class=linkLabel_WmDU>Generator Framework Design</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist><span title="IPW ADR necessity checklist" class=linkLabel_WmDU>IPW ADR necessity checklist</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/kb-structure-overview><span title="KB Structure Overview" class=linkLabel_WmDU>KB Structure Overview</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/legacy-repo-analysis><span title="Legacy Repository Analysis: ai-architect-kit & paradigm" class=linkLabel_WmDU>Legacy Repository Analysis: ai-architect-kit & paradigm</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-automation-requirements><span title="Maintenance Automation Requirements" class=linkLabel_WmDU>Maintenance Automation Requirements</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-automation-scripts-and-tools><span title="Maintenance Automation Scripts and Tools" class=linkLabel_WmDU>Maintenance Automation Scripts and Tools</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-automation-usage-guide><span title="Maintenance Automation Usage Guide" class=linkLabel_WmDU>Maintenance Automation Usage Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-automation-workflow-integration><span title="Maintenance Automation Workflow Integration" class=linkLabel_WmDU>Maintenance Automation Workflow Integration</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-kanban-integration><span title="Maintenance Tasks Kanban Integration" class=linkLabel_WmDU>Maintenance Tasks Kanban Integration</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-task-prioritization-framework><span title="Maintenance Task Prioritization Framework" class=linkLabel_WmDU>Maintenance Task Prioritization Framework</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-workflow-processes><span title="Maintenance Workflow Processes" class=linkLabel_WmDU>Maintenance Workflow Processes</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/mixed-br-fr-scope-sop><span title="Standard Operating Procedure: Handling Mixed BR/FR Scope" class=linkLabel_WmDU>Standard Operating Procedure: Handling Mixed BR/FR Scope</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/package-hash-verification-spec><span title="Package Hash Verification Specification" class=linkLabel_WmDU>Package Hash Verification Specification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/package-maintenance-and-release><span title="Package Maintenance and Release" class=linkLabel_WmDU>Package Maintenance and Release</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/package-management-design><span title="Package Management Design Specification" class=linkLabel_WmDU>Package Management Design Specification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/package-versioning-criteria><span title="Package Versioning Criteria (Guidance)" class=linkLabel_WmDU>Package Versioning Criteria (Guidance)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/policy-comparison-starborn-vs-ai-dev-kit-proposal><span title="Policy Comparison: Starborn Legacy vs AI Dev Kit — Proposal for Updates" class=linkLabel_WmDU>Policy Comparison: Starborn Legacy vs AI Dev Kit — Proposal for Updates</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/policy-salience-schema><span title="Policy Salience Schema Specification" class=linkLabel_WmDU>Policy Salience Schema Specification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/pre-release-feedback-mechanism-design><span title="Pre-Release Feedback Mechanism Design" class=linkLabel_WmDU>Pre-Release Feedback Mechanism Design</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/repository-story-abstract-space-solution-design><span title="Solution Design: Repository Story Abstract Space Resolution" class=linkLabel_WmDU>Solution Design: Repository Story Abstract Space Resolution</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/repository-story-migration-plan><span title="Repository Story Migration Plan" class=linkLabel_WmDU>Repository Story Migration Plan</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/repository-story-migration-progress><span title="Repository Story Abstract Space Resolution - Migration Progress" class=linkLabel_WmDU>Repository Story Abstract Space Resolution - Migration Progress</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/repository-story-migration-status><span title="Repository Story Abstract Space Resolution - Migration Status" class=linkLabel_WmDU>Repository Story Abstract Space Resolution - Migration Status</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/rw-changelog-commit-language-analysis><span title="RW Changelog & Commit Language Analysis" class=linkLabel_WmDU>RW Changelog & Commit Language Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/rw-pdca-integration-plan><span title="Release Workflow PDCA Integration Plan" class=linkLabel_WmDU>Release Workflow PDCA Integration Plan</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/semver-implementation-followup-spec><span title="SemVer Mapping & Tagging Implementation Follow-Up (Spec)" class=linkLabel_WmDU>SemVer Mapping & Tagging Implementation Follow-Up (Spec)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/semver-mapping-implementation-impact><span title="SemVer Mapping Implementation Impact Analysis" class=linkLabel_WmDU>SemVer Mapping Implementation Impact Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/semver-mapping-proposal><span title="SemVer Mapping Proposal: RC.E.S.T+B → MAJOR.MINOR.PATCH+BUILD" class=linkLabel_WmDU>SemVer Mapping Proposal: RC.E.S.T+B → MAJOR.MINOR.PATCH+BUILD</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07><span title="SemVer Tag Collision Incident Log (2026-03-07)" class=linkLabel_WmDU>SemVer Tag Collision Incident Log (2026-03-07)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy><span title=specification-and-planning-artifacts-policy class=linkLabel_WmDU>specification-and-planning-artifacts-policy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/task-naming-migration-guide><span title="Task Naming Migration Guide" class=linkLabel_WmDU>Task Naming Migration Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/task-template-cross-wiring-sop><span title="Standard Operating Procedure: Task Template Cross-Wiring" class=linkLabel_WmDU>Standard Operating Procedure: Task Template Cross-Wiring</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/task-template-generator-design><span title="Task Template Generator Design" class=linkLabel_WmDU>Task Template Generator Design</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/task-template-system-hybrid-adr><span title="ADR: Hybrid Task Template System (Concrete Templates + Procedural Generation)" class=linkLabel_WmDU>ADR: Hybrid Task Template System (Concrete Templates + Procedural Generation)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/task-touch-mapping-examples><span title="Task-Touch SemVer Mapping Examples" class=linkLabel_WmDU>Task-Touch SemVer Mapping Examples</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ultimate-canonical-cursorrules-structure><span title="Ultimate Canonical Cursorrules Structure" class=linkLabel_WmDU>Ultimate Canonical Cursorrules Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ultimate-canonical-kanban-structure><span title="Ultimate Canonical Kanban Structure" class=linkLabel_WmDU>Ultimate Canonical Kanban Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure><span title="Ultimate Canonical docs/documentation Structure" class=linkLabel_WmDU>Ultimate Canonical docs/documentation Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/ultimate-canonical-workflow-structure><span title="Ultimate Canonical Workflow Structure" class=linkLabel_WmDU>Ultimate Canonical Workflow Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/versioning-error-reference-guide><span title="Versioning Error Reference Guide" class=linkLabel_WmDU>Versioning Error Reference Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/versioning-quick-reference><span title="Versioning Quick Reference" class=linkLabel_WmDU>Versioning Quick Reference</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/workflow-flaws-reference-guide><span title="Release Workflow Flaws Reference Guide" class=linkLabel_WmDU>Release Workflow Flaws Reference Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/architecture/standards-and-adrs/workflow-hardening-guide><span title="Workflow Hardening Guide for Agent‑Driven Release Processes" class=linkLabel_WmDU>Workflow Hardening Guide for Agent‑Driven Release Processes</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/architecture/use-cases/><span title="Canonical Use Cases" class=categoryLinkLabel_W154>Canonical Use Cases</span></a><button aria-label="Expand sidebar category 'Canonical Use Cases'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/changelog-and-release-notes/><span title="Changelog & release notes" class=categoryLinkLabel_W154>Changelog & release notes</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/project-management/><span title="Project management" class=categoryLinkLabel_W154>Project management</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/guides/><span title=Guides class=categoryLinkLabel_W154>Guides</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation (developer & user)" class=categoryLinkLabel_W154>Documentation (developer & user)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="Knowledge base" class=categoryLinkLabel_W154>Knowledge base</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/maintenance/BUILD_AND_UPLOAD><span title="Maintenance (portal triage)" class=categoryLinkLabel_W154>Maintenance (portal triage)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/analysis/cmw-ordering-flaw-analysis><span title=Analysis class=categoryLinkLabel_W154>Analysis</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION><span title="Implementation cycles" class=categoryLinkLabel_W154>Implementation cycles</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/developer-tools/ide-whitelist-guide><span title="Developer tools" class=categoryLinkLabel_W154>Developer tools</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/ai-dev-kit/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>Architecture</span><li class=breadcrumbs__item><span class=breadcrumbs__link>standards-and-adrs</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Maintenance Tasks Kanban Integration</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Maintenance Tasks Kanban Integration</h1></header>
+<p><strong>Status:</strong> Active<br/>
+<strong>Version:</strong> 1.0.0<br/>
+<strong>Last Updated:</strong> 2026-01-05<br/>
+<strong>Epic:</strong> Epic 7 - Codebase Maintenance and Review<br/>
+<strong>Story:</strong> Story 1 - Codebase Maintenance Tasks<br/>
+<strong>Task:</strong> E7:S01<!-- -->:T04<!-- --> - Integrate maintenance tasks with Kanban framework<br/>
+<strong>Related:</strong> Maintenance Task Prioritization Framework, Maintenance Workflow Processes, Kanban Governance Policy, Epic 4 (Kanban Framework)</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=executive-summary>Executive Summary<a href=#executive-summary class=hash-link aria-label="Direct link to Executive Summary" title="Direct link to Executive Summary" translate=no>​</a></h2>
+<p>This document defines the <strong>comprehensive integration of maintenance tasks with the Kanban framework</strong>. It establishes how maintenance tasks are created, tracked, prioritized, and managed within the Kanban system, ensuring systematic codebase health management through structured task tracking.</p>
+<p><strong>Key Principles:</strong></p>
+<ul>
+<li class=""><strong>Task-Driven Maintenance:</strong> All maintenance work tracked as Kanban tasks</li>
+<li class=""><strong>Prioritization Integration:</strong> Maintenance prioritization framework maps to Kanban MoSCOW classification</li>
+<li class=""><strong>Epic 7 Structure:</strong> All maintenance tasks organized under Epic 7 (Codebase Maintenance and Review)</li>
+<li class=""><strong>Workflow Integration:</strong> Maintenance workflows integrate with Kanban task lifecycle</li>
+<li class=""><strong>Visibility:</strong> Maintenance tasks visible in Kanban board alongside feature development</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=integration-overview>Integration Overview<a href=#integration-overview class=hash-link aria-label="Direct link to Integration Overview" title="Direct link to Integration Overview" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=epic-7-codebase-maintenance-and-review>Epic 7: Codebase Maintenance and Review<a href=#epic-7-codebase-maintenance-and-review class=hash-link aria-label="Direct link to Epic 7: Codebase Maintenance and Review" title="Direct link to Epic 7: Codebase Maintenance and Review" translate=no>​</a></h3>
+<p><strong>Purpose:</strong> Epic 7 serves as the organizational structure for all codebase maintenance and review work.</p>
+<p><strong>Stories:</strong></p>
+<ul>
+<li class=""><strong>E7<!-- -->:S01<!-- --> – Codebase Maintenance Tasks:</strong> Core maintenance task management<!-- -->
+<ul>
+<li class="">T01: PERPETUAL (IDE-flagged issues)</li>
+<li class="">T02: Prioritization framework (COMPLETE)</li>
+<li class="">T03: Workflow processes (COMPLETE)</li>
+<li class="">T04: Kanban integration (this task)</li>
+</ul>
+</li>
+<li class=""><strong>E7<!-- -->:S02<!-- --> – Code Review Standards and Processes:</strong> Code review workflows</li>
+<li class=""><strong>E7<!-- -->:S03<!-- --> – Code Quality Metrics and Monitoring:</strong> Quality tracking</li>
+<li class=""><strong>E7<!-- -->:S04<!-- --> – Maintenance Automation and Tooling:</strong> Automation tools</li>
+<li class=""><strong>E7<!-- -->:S05<!-- --> – Migration UXR:</strong> Migration research</li>
+</ul>
+<p><strong>Integration with Epic 4 (Kanban Framework):</strong></p>
+<ul>
+<li class="">Epic 7 uses Epic 4's Kanban framework for task management</li>
+<li class="">Maintenance tasks follow Epic 4's task creation and tracking patterns</li>
+<li class="">Maintenance workflows integrate with Epic 4's workflow management</li>
+<li class="">Maintenance prioritization uses Epic 4's MoSCOW classification</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-creation-and-assignment>Task Creation and Assignment<a href=#task-creation-and-assignment class=hash-link aria-label="Direct link to Task Creation and Assignment" title="Direct link to Task Creation and Assignment" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=maintenance-task-creation-process>Maintenance Task Creation Process<a href=#maintenance-task-creation-process class=hash-link aria-label="Direct link to Maintenance Task Creation Process" title="Direct link to Maintenance Task Creation Process" translate=no>​</a></h3>
+<p><strong>Step 1: Identify Maintenance Need</strong></p>
+<p>Sources of maintenance tasks:</p>
+<ul>
+<li class="">IDE-flagged issues (errors, warnings, info)</li>
+<li class="">Code quality analysis</li>
+<li class="">Technical debt tracking</li>
+<li class="">Framework health monitoring</li>
+<li class="">User feedback (Bug Reports)</li>
+<li class="">Code reviews</li>
+<li class="">Scheduled maintenance reviews</li>
+</ul>
+<p><strong>Step 2: Assess and Prioritize</strong></p>
+<p>Apply Maintenance Task Prioritization Framework:</p>
+<ol>
+<li class="">Assess severity (1-5)</li>
+<li class="">Assess impact (1-5)</li>
+<li class="">Estimate effort (1-5)</li>
+<li class="">Calculate priority score</li>
+<li class="">Apply contextual adjustments</li>
+<li class="">Determine MoSCOW classification</li>
+</ol>
+<p><strong>Step 3: Create Kanban Task</strong></p>
+<p>Task Creation:</p>
+<ul>
+<li class=""><strong>Epic Assignment:</strong> Epic 7 (Codebase Maintenance and Review)</li>
+<li class=""><strong>Story Assignment:</strong> Assign to appropriate Story<!-- -->
+<ul>
+<li class="">E7<!-- -->:S01<!-- --> for general maintenance tasks</li>
+<li class="">E7<!-- -->:S02<!-- --> for code review tasks</li>
+<li class="">E7<!-- -->:S03<!-- --> for quality monitoring tasks</li>
+<li class="">E7<!-- -->:S04<!-- --> for automation tasks</li>
+</ul>
+</li>
+<li class=""><strong>Task Document:</strong> Create task document following Epic 4 templates</li>
+<li class=""><strong>Task Metadata:</strong> Include priority score, severity, impact, effort, MoSCOW</li>
+</ul>
+<p><strong>Step 4: Update Kanban Board</strong></p>
+<p>Board Updates:</p>
+<ul>
+<li class="">Add task to Kanban board</li>
+<li class="">Assign to appropriate MoSCOW section</li>
+<li class="">Update Story task checklist</li>
+<li class="">Update Epic story checklist</li>
+<li class="">Set task status (TODO, IN PROGRESS, COMPLETE)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=prioritization-and-moscow-mapping>Prioritization and MoSCOW Mapping<a href=#prioritization-and-moscow-mapping class=hash-link aria-label="Direct link to Prioritization and MoSCOW Mapping" title="Direct link to Prioritization and MoSCOW Mapping" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=priority-score-to-moscow-classification>Priority Score to MoSCOW Classification<a href=#priority-score-to-moscow-classification class=hash-link aria-label="Direct link to Priority Score to MoSCOW Classification" title="Direct link to Priority Score to MoSCOW Classification" translate=no>​</a></h3>
+<p><strong>Mapping:</strong></p>
+<ul>
+<li class=""><strong>Critical Priority (4.0-5.0):</strong> <strong>Must Have (M)</strong>
+<ul>
+<li class="">Blocks development or deployment</li>
+<li class="">Security vulnerabilities</li>
+<li class="">Critical errors</li>
+<li class="">System failures</li>
+</ul>
+</li>
+<li class=""><strong>High Priority (3.0-3.9):</strong> <strong>Should Have (S)</strong>
+<ul>
+<li class="">Significant functional issues</li>
+<li class="">Major performance problems</li>
+<li class="">High-risk security warnings</li>
+<li class="">Important quality issues</li>
+</ul>
+</li>
+<li class=""><strong>Medium Priority (2.0-2.9):</strong> <strong>Could Have (C)</strong>
+<ul>
+<li class="">Minor functional issues</li>
+<li class="">Noticeable performance degradation</li>
+<li class="">Code quality improvements</li>
+<li class="">Moderate technical debt</li>
+</ul>
+</li>
+<li class=""><strong>Low Priority (1.0-1.9):</strong> <strong>Could Have (C)</strong>
+<ul>
+<li class="">Cosmetic issues</li>
+<li class="">Minor inefficiencies</li>
+<li class="">Informational IDE warnings</li>
+<li class="">Low-priority improvements</li>
+</ul>
+</li>
+<li class=""><strong>Minimal Priority (&lt;1.0):</strong> <strong>Won't Have (W)</strong>
+<ul>
+<li class="">Best practice suggestions</li>
+<li class="">Minor refactoring opportunities</li>
+<li class="">Optional improvements</li>
+<li class="">Deferred work</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=kanban-board-organization>Kanban Board Organization<a href=#kanban-board-organization class=hash-link aria-label="Direct link to Kanban Board Organization" title="Direct link to Kanban Board Organization" translate=no>​</a></h3>
+<p><strong>MoSCOW Sections:</strong></p>
+<ul>
+<li class=""><strong>Must Have (M):</strong> Critical maintenance tasks requiring immediate attention</li>
+<li class=""><strong>Should Have (S):</strong> Important maintenance tasks to address soon</li>
+<li class=""><strong>Could Have (C):</strong> Nice-to-have maintenance tasks for when time permits</li>
+<li class=""><strong>Ongoing (O):</strong> Perpetual maintenance tasks that never complete (tracked but don't block other work)</li>
+<li class=""><strong>Won't Have (W):</strong> Deferred maintenance tasks</li>
+</ul>
+<p><strong>Task Ordering:</strong></p>
+<ul>
+<li class="">Within each MoSCOW section, tasks ordered by:<!-- -->
+<ol>
+<li class="">Priority score (highest first)</li>
+<li class="">Severity (highest first)</li>
+<li class="">Impact (highest first)</li>
+<li class="">Last updated (most recent first)</li>
+</ol>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-lifecycle-and-status-tracking>Task Lifecycle and Status Tracking<a href=#task-lifecycle-and-status-tracking class=hash-link aria-label="Direct link to Task Lifecycle and Status Tracking" title="Direct link to Task Lifecycle and Status Tracking" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-status-flow>Task Status Flow<a href=#task-status-flow class=hash-link aria-label="Direct link to Task Status Flow" title="Direct link to Task Status Flow" translate=no>​</a></h3>
+<p><strong>Status Transitions:</strong></p>
+<ol>
+<li class=""><strong>TODO:</strong> Task identified and created, not yet started</li>
+<li class=""><strong>IN PROGRESS:</strong> Work on task has begun</li>
+<li class=""><strong>COMPLETE:</strong> Task finished and verified</li>
+<li class=""><strong>PERPETUAL:</strong> Ongoing task that never truly completes (e.g., IDE-flagged issues)</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=status-update-process>Status Update Process<a href=#status-update-process class=hash-link aria-label="Direct link to Status Update Process" title="Direct link to Status Update Process" translate=no>​</a></h3>
+<p><strong>When Starting Work:</strong></p>
+<ul>
+<li class="">Update task status to IN PROGRESS</li>
+<li class="">Update task document with start date</li>
+<li class="">Update Story task checklist</li>
+<li class="">Update Kanban board</li>
+</ul>
+<p><strong>During Work:</strong></p>
+<ul>
+<li class="">Document progress in task document</li>
+<li class="">Update task metadata as needed</li>
+<li class="">Note any blockers or dependencies</li>
+<li class="">Track time and effort</li>
+</ul>
+<p><strong>When Completing Work:</strong></p>
+<ul>
+<li class="">Update task status to COMPLETE</li>
+<li class="">Document completion in task document</li>
+<li class="">Update version markers (vRC.E.S.T+B)</li>
+<li class="">Update Story task checklist</li>
+<li class="">Update Epic story checklist</li>
+<li class="">Update Kanban board</li>
+<li class="">Include in Release Workflow (RW)</li>
+</ul>
+<p><strong>For Perpetual Tasks:</strong></p>
+<ul>
+<li class="">Track progress with version markers</li>
+<li class="">Document each maintenance cycle</li>
+<li class="">Update status periodically</li>
+<li class="">Never mark as COMPLETE</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-metadata-and-documentation>Task Metadata and Documentation<a href=#task-metadata-and-documentation class=hash-link aria-label="Direct link to Task Metadata and Documentation" title="Direct link to Task Metadata and Documentation" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=required-task-metadata>Required Task Metadata<a href=#required-task-metadata class=hash-link aria-label="Direct link to Required Task Metadata" title="Direct link to Required Task Metadata" translate=no>​</a></h3>
+<p><strong>Task Document Fields:</strong></p>
+<ul>
+<li class=""><strong>Task ID:</strong> E7:S01<!-- -->:TXX<!-- --> format</li>
+<li class=""><strong>Status:</strong> TODO, IN PROGRESS, COMPLETE, PERPETUAL</li>
+<li class=""><strong>Priority Score:</strong> Calculated priority score</li>
+<li class=""><strong>Severity:</strong> Severity rating (1-5)</li>
+<li class=""><strong>Impact:</strong> Impact rating (1-5)</li>
+<li class=""><strong>Effort:</strong> Effort rating (1-5)</li>
+<li class=""><strong>MoSCOW:</strong> Must Have, Should Have, Could Have, Won't Have</li>
+<li class=""><strong>Epic:</strong> Epic 7 (Codebase Maintenance and Review)</li>
+<li class=""><strong>Story:</strong> Story assignment (E7<!-- -->:S01<!-- -->, E7<!-- -->:S02<!-- -->, etc.)</li>
+<li class=""><strong>Version:</strong> Version marker (vRC.E.S.T+B)</li>
+<li class=""><strong>Created:</strong> Creation date</li>
+<li class=""><strong>Last Updated:</strong> Last update date</li>
+<li class=""><strong>Completed:</strong> Completion date (if applicable)</li>
+</ul>
+<p><strong>Task Content:</strong></p>
+<ul>
+<li class=""><strong>Description:</strong> Clear description of maintenance work</li>
+<li class=""><strong>Context:</strong> Background and rationale</li>
+<li class=""><strong>Approach:</strong> How the work will be done</li>
+<li class=""><strong>Acceptance Criteria:</strong> Definition of done</li>
+<li class=""><strong>Dependencies:</strong> Related tasks or work</li>
+<li class=""><strong>Progress Notes:</strong> Updates on work progress</li>
+<li class=""><strong>Outcomes:</strong> Results and learnings</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=workflow-integration>Workflow Integration<a href=#workflow-integration class=hash-link aria-label="Direct link to Workflow Integration" title="Direct link to Workflow Integration" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ide-flagged-issues-workflow>IDE-Flagged Issues Workflow<a href=#ide-flagged-issues-workflow class=hash-link aria-label="Direct link to IDE-Flagged Issues Workflow" title="Direct link to IDE-Flagged Issues Workflow" translate=no>​</a></h3>
+<p><strong>Kanban Integration:</strong></p>
+<ol>
+<li class=""><strong>Detection:</strong> IDE flags issues</li>
+<li class=""><strong>Categorization:</strong> Categorize by type (error, warning, info)</li>
+<li class=""><strong>Prioritization:</strong> Apply prioritization framework</li>
+<li class=""><strong>Task Creation:</strong> Create Kanban task (E7:S01<!-- -->:T01<!-- --> for perpetual, or specific task)</li>
+<li class=""><strong>Batch Processing:</strong> Group similar issues into batch tasks</li>
+<li class=""><strong>Resolution:</strong> Update task status as work progresses</li>
+<li class=""><strong>Verification:</strong> Mark task COMPLETE when verified</li>
+<li class=""><strong>Release:</strong> Include in RW, update version markers</li>
+</ol>
+<p><strong>Perpetual Task (E7:S01<!-- -->:T01<!-- -->):</strong></p>
+<ul>
+<li class="">Always IN PROGRESS</li>
+<li class="">Track progress with version markers</li>
+<li class="">Document batches of work completed</li>
+<li class="">Never mark as COMPLETE</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=prioritized-maintenance-workflow>Prioritized Maintenance Workflow<a href=#prioritized-maintenance-workflow class=hash-link aria-label="Direct link to Prioritized Maintenance Workflow" title="Direct link to Prioritized Maintenance Workflow" translate=no>​</a></h3>
+<p><strong>Kanban Integration:</strong></p>
+<ol>
+<li class=""><strong>Task Identification:</strong> Identify maintenance need</li>
+<li class=""><strong>Assessment:</strong> Assess severity, impact, effort</li>
+<li class=""><strong>Priority Calculation:</strong> Calculate priority score</li>
+<li class=""><strong>Kanban Assignment:</strong> Create task, assign MoSCOW, assign to Epic/Story</li>
+<li class=""><strong>Work Planning:</strong> Plan approach, estimate timeline</li>
+<li class=""><strong>Implementation:</strong> Update task status, document progress</li>
+<li class=""><strong>Completion:</strong> Mark COMPLETE, update Kanban, include in RW</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=scheduled-maintenance-workflow>Scheduled Maintenance Workflow<a href=#scheduled-maintenance-workflow class=hash-link aria-label="Direct link to Scheduled Maintenance Workflow" title="Direct link to Scheduled Maintenance Workflow" translate=no>​</a></h3>
+<p><strong>Kanban Integration:</strong></p>
+<ol>
+<li class=""><strong>Planning:</strong> Define maintenance scope and schedule</li>
+<li class=""><strong>Discovery:</strong> Identify issues through comprehensive scanning</li>
+<li class=""><strong>Batch Prioritization:</strong> Prioritize and group issues</li>
+<li class=""><strong>Batch Execution:</strong> Create batch tasks, track progress</li>
+<li class=""><strong>Verification:</strong> Verify fixes, update task status</li>
+<li class=""><strong>Reporting:</strong> Generate maintenance report, update Kanban</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=emergency-maintenance-workflow>Emergency Maintenance Workflow<a href=#emergency-maintenance-workflow class=hash-link aria-label="Direct link to Emergency Maintenance Workflow" title="Direct link to Emergency Maintenance Workflow" translate=no>​</a></h3>
+<p><strong>Kanban Integration:</strong></p>
+<ol>
+<li class=""><strong>Issue Identification:</strong> Identify critical issue</li>
+<li class=""><strong>Rapid Assessment:</strong> Quick assessment, bypass normal process</li>
+<li class=""><strong>Emergency Fix:</strong> Create urgent task, implement fix</li>
+<li class=""><strong>Verification:</strong> Verify fix, update task status</li>
+<li class=""><strong>Documentation:</strong> Document emergency fix, create follow-up task if needed</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=epic-4-kanban-framework-integration>Epic 4 (Kanban Framework) Integration<a href=#epic-4-kanban-framework-integration class=hash-link aria-label="Direct link to Epic 4 (Kanban Framework) Integration" title="Direct link to Epic 4 (Kanban Framework) Integration" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=framework-usage>Framework Usage<a href=#framework-usage class=hash-link aria-label="Direct link to Framework Usage" title="Direct link to Framework Usage" translate=no>​</a></h3>
+<p><strong>Epic 7 uses Epic 4's Kanban framework:</strong></p>
+<ul>
+<li class="">Task creation templates (Epic 4 templates)</li>
+<li class="">Task document structure (Epic 4 structure)</li>
+<li class="">Story document structure (Epic 4 structure)</li>
+<li class="">Epic document structure (Epic 4 structure)</li>
+<li class="">Kanban board organization (Epic 4 board structure)</li>
+<li class="">Versioning schema (Epic 4 versioning)</li>
+<li class="">Release Workflow (Epic 4 RW)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=integration-points>Integration Points<a href=#integration-points class=hash-link aria-label="Direct link to Integration Points" title="Direct link to Integration Points" translate=no>​</a></h3>
+<p><strong>Task Templates:</strong></p>
+<ul>
+<li class="">Use Epic 4 task templates for maintenance tasks</li>
+<li class="">Follow Epic 4 task document structure</li>
+<li class="">Include Epic 4 required fields</li>
+<li class="">Follow Epic 4 naming conventions</li>
+</ul>
+<p><strong>Workflow Integration:</strong></p>
+<ul>
+<li class="">Use Epic 4 Release Workflow (RW) for maintenance releases</li>
+<li class="">Use Epic 4 Update Kanban Workflow (UKW) for maintenance updates</li>
+<li class="">Follow Epic 4 versioning schema (RC.EPIC.STORY.TASK+BUILD)</li>
+<li class="">Use Epic 4 changelog format</li>
+</ul>
+<p><strong>Board Integration:</strong></p>
+<ul>
+<li class="">Maintenance tasks appear in Epic 4 Kanban board</li>
+<li class="">Follow Epic 4 MoSCOW organization</li>
+<li class="">Use Epic 4 status tracking</li>
+<li class="">Follow Epic 4 task ordering</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=examples>Examples<a href=#examples class=hash-link aria-label="Direct link to Examples" title="Direct link to Examples" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-1-ide-error-task>Example 1: IDE Error Task<a href=#example-1-ide-error-task class=hash-link aria-label="Direct link to Example 1: IDE Error Task" title="Direct link to Example 1: IDE Error Task" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Python syntax error in <code>framework-health-monitor.py</code> (line 45)</p>
+<p><strong>Task Creation:</strong></p>
+<ul>
+<li class=""><strong>Task ID:</strong> E7:S01<!-- -->:T01<!-- --> (perpetual task for IDE issues, or create specific task)</li>
+<li class=""><strong>Priority:</strong> Severity=5, Impact=5, Effort=1 → Priority=5.0 (Critical)</li>
+<li class=""><strong>MoSCOW:</strong> Must Have (M)</li>
+<li class=""><strong>Epic/Story:</strong> Epic 7, Story 1</li>
+<li class=""><strong>Status:</strong> IN PROGRESS</li>
+</ul>
+<p><strong>Kanban Board:</strong></p>
+<ul>
+<li class="">Appears in "Must Have (M)" section</li>
+<li class="">Ordered by priority score (highest first)</li>
+<li class="">Status: IN PROGRESS</li>
+</ul>
+<p><strong>Task Document:</strong></p>
+<ul>
+<li class="">Description: Fix Python syntax error in framework-health-monitor.py line 45</li>
+<li class="">Priority Score: 5.0</li>
+<li class="">Severity: 5 (Critical)</li>
+<li class="">Impact: 5 (Critical)</li>
+<li class="">Effort: 1 (Minimal)</li>
+<li class="">MoSCOW: Must Have</li>
+<li class="">Status: IN PROGRESS</li>
+</ul>
+<p><strong>Completion:</strong></p>
+<ul>
+<li class="">Fix implemented</li>
+<li class="">Status: COMPLETE</li>
+<li class="">Version: v0.7.1.1+1 (if specific task) or v0.7.1.1+2 (if perpetual task)</li>
+<li class="">Included in RW</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-2-code-quality-batch-task>Example 2: Code Quality Batch Task<a href=#example-2-code-quality-batch-task class=hash-link aria-label="Direct link to Example 2: Code Quality Batch Task" title="Direct link to Example 2: Code Quality Batch Task" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Multiple code quality warnings across framework packages</p>
+<p><strong>Task Creation:</strong></p>
+<ul>
+<li class=""><strong>Task ID:</strong> E7:S01<!-- -->:TXX<!-- --> (new task for batch)</li>
+<li class=""><strong>Priority:</strong> Average Priority=2.5 (Medium)</li>
+<li class=""><strong>MoSCOW:</strong> Could Have (C)</li>
+<li class=""><strong>Epic/Story:</strong> Epic 7, Story 1</li>
+<li class=""><strong>Status:</strong> TODO</li>
+</ul>
+<p><strong>Kanban Board:</strong></p>
+<ul>
+<li class="">Appears in "Could Have (C)" section</li>
+<li class="">Ordered by priority score</li>
+<li class="">Status: TODO</li>
+</ul>
+<p><strong>Task Document:</strong></p>
+<ul>
+<li class="">Description: Batch fix code quality warnings across framework packages</li>
+<li class="">Priority Score: 2.5 (average)</li>
+<li class="">Severity: 2 (Low)</li>
+<li class="">Impact: 3 (Medium)</li>
+<li class="">Effort: 3 (Medium)</li>
+<li class="">MoSCOW: Could Have</li>
+<li class="">Status: TODO</li>
+<li class="">Batch Scope: List of files/packages to fix</li>
+</ul>
+<p><strong>Completion:</strong></p>
+<ul>
+<li class="">Batch fixes implemented</li>
+<li class="">Status: COMPLETE</li>
+<li class="">Version: v0.7.1.XX+1</li>
+<li class="">Included in RW</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-3-technical-debt-task>Example 3: Technical Debt Task<a href=#example-3-technical-debt-task class=hash-link aria-label="Direct link to Example 3: Technical Debt Task" title="Direct link to Example 3: Technical Debt Task" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Outdated dependency with security vulnerability</p>
+<p><strong>Task Creation:</strong></p>
+<ul>
+<li class=""><strong>Task ID:</strong> E7:S01<!-- -->:TXX<!-- --> (new task)</li>
+<li class=""><strong>Priority:</strong> Severity=5, Impact=4, Effort=2, Risk=+0.2 → Priority=4.6 (Critical)</li>
+<li class=""><strong>MoSCOW:</strong> Must Have (M)</li>
+<li class=""><strong>Epic/Story:</strong> Epic 7, Story 1</li>
+<li class=""><strong>Status:</strong> IN PROGRESS</li>
+</ul>
+<p><strong>Kanban Board:</strong></p>
+<ul>
+<li class="">Appears in "Must Have (M)" section</li>
+<li class="">Ordered by priority score (highest first)</li>
+<li class="">Status: IN PROGRESS</li>
+</ul>
+<p><strong>Task Document:</strong></p>
+<ul>
+<li class="">Description: Update outdated dependency with security vulnerability (CVE-2024-XXXX)</li>
+<li class="">Priority Score: 4.6</li>
+<li class="">Severity: 5 (Critical)</li>
+<li class="">Impact: 4 (High)</li>
+<li class="">Effort: 2 (Low)</li>
+<li class="">MoSCOW: Must Have</li>
+<li class="">Status: IN PROGRESS</li>
+<li class="">Contextual Adjustment: Risk factor +0.2</li>
+</ul>
+<p><strong>Completion:</strong></p>
+<ul>
+<li class="">Dependency updated</li>
+<li class="">Status: COMPLETE</li>
+<li class="">Version: v0.7.1.XX+1</li>
+<li class="">Included in urgent release</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=best-practices>Best Practices<a href=#best-practices class=hash-link aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-creation>Task Creation<a href=#task-creation class=hash-link aria-label="Direct link to Task Creation" title="Direct link to Task Creation" translate=no>​</a></h3>
+<p><strong>Guidelines:</strong></p>
+<ul>
+<li class="">Create tasks for all maintenance work</li>
+<li class="">Use appropriate Epic/Story assignment</li>
+<li class="">Include complete task metadata</li>
+<li class="">Document context and rationale</li>
+<li class="">Set realistic effort estimates</li>
+</ul>
+<p><strong>Avoid:</strong></p>
+<ul>
+<li class="">Creating tasks without proper assessment</li>
+<li class="">Skipping prioritization</li>
+<li class="">Missing task metadata</li>
+<li class="">Vague task descriptions</li>
+<li class="">Unrealistic effort estimates</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-tracking>Task Tracking<a href=#task-tracking class=hash-link aria-label="Direct link to Task Tracking" title="Direct link to Task Tracking" translate=no>​</a></h3>
+<p><strong>Guidelines:</strong></p>
+<ul>
+<li class="">Update task status regularly</li>
+<li class="">Document progress in task document</li>
+<li class="">Update Kanban board promptly</li>
+<li class="">Track time and effort</li>
+<li class="">Note blockers and dependencies</li>
+</ul>
+<p><strong>Avoid:</strong></p>
+<ul>
+<li class="">Leaving tasks in TODO indefinitely</li>
+<li class="">Not updating status</li>
+<li class="">Missing progress documentation</li>
+<li class="">Ignoring blockers</li>
+<li class="">Not tracking effort</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=prioritization>Prioritization<a href=#prioritization class=hash-link aria-label="Direct link to Prioritization" title="Direct link to Prioritization" translate=no>​</a></h3>
+<p><strong>Guidelines:</strong></p>
+<ul>
+<li class="">Apply prioritization framework consistently</li>
+<li class="">Re-assess priority as context changes</li>
+<li class="">Update MoSCOW classification when needed</li>
+<li class="">Consider dependencies and risks</li>
+<li class="">Balance maintenance with feature work</li>
+</ul>
+<p><strong>Avoid:</strong></p>
+<ul>
+<li class="">Skipping prioritization</li>
+<li class="">Not updating priority</li>
+<li class="">Ignoring contextual factors</li>
+<li class="">Over-prioritizing low-impact work</li>
+<li class="">Under-prioritizing critical issues</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=workflow-integration-1>Workflow Integration<a href=#workflow-integration-1 class=hash-link aria-label="Direct link to Workflow Integration" title="Direct link to Workflow Integration" translate=no>​</a></h3>
+<p><strong>Guidelines:</strong></p>
+<ul>
+<li class="">Follow maintenance workflows</li>
+<li class="">Integrate with RW for releases</li>
+<li class="">Use UKW for Kanban updates</li>
+<li class="">Track metrics and outcomes</li>
+<li class="">Learn from maintenance patterns</li>
+</ul>
+<p><strong>Avoid:</strong></p>
+<ul>
+<li class="">Bypassing workflows</li>
+<li class="">Not integrating with releases</li>
+<li class="">Missing Kanban updates</li>
+<li class="">Ignoring metrics</li>
+<li class="">Not learning from experience</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=metrics-and-reporting>Metrics and Reporting<a href=#metrics-and-reporting class=hash-link aria-label="Direct link to Metrics and Reporting" title="Direct link to Metrics and Reporting" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=maintenance-metrics>Maintenance Metrics<a href=#maintenance-metrics class=hash-link aria-label="Direct link to Maintenance Metrics" title="Direct link to Maintenance Metrics" translate=no>​</a></h3>
+<p><strong>Task Metrics:</strong></p>
+<ul>
+<li class="">Total maintenance tasks created</li>
+<li class="">Tasks by status (TODO, IN PROGRESS, COMPLETE)</li>
+<li class="">Tasks by MoSCOW (M, S, C, W)</li>
+<li class="">Tasks by priority level</li>
+<li class="">Average priority score</li>
+<li class="">Tasks by category (IDE-flagged, quality, debt, framework)</li>
+</ul>
+<p><strong>Completion Metrics:</strong></p>
+<ul>
+<li class="">Tasks completed per period</li>
+<li class="">Average time to completion</li>
+<li class="">Completion rate by priority</li>
+<li class="">Completion rate by MoSCOW</li>
+<li class="">Backlog size and trends</li>
+</ul>
+<p><strong>Health Metrics:</strong></p>
+<ul>
+<li class="">Codebase health improvement</li>
+<li class="">Issue resolution rate</li>
+<li class="">Technical debt reduction</li>
+<li class="">Framework health scores</li>
+<li class="">Maintenance effectiveness</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=reporting>Reporting<a href=#reporting class=hash-link aria-label="Direct link to Reporting" title="Direct link to Reporting" translate=no>​</a></h3>
+<p><strong>Regular Reports:</strong></p>
+<ul>
+<li class="">Weekly maintenance summary</li>
+<li class="">Monthly maintenance review</li>
+<li class="">Quarterly maintenance assessment</li>
+<li class="">Annual maintenance trends</li>
+</ul>
+<p><strong>Report Content:</strong></p>
+<ul>
+<li class="">Task creation and completion statistics</li>
+<li class="">Priority distribution</li>
+<li class="">MoSCOW distribution</li>
+<li class="">Health metrics and trends</li>
+<li class="">Outstanding work and recommendations</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=references>References<a href=#references class=hash-link aria-label="Direct link to References" title="Direct link to References" translate=no>​</a></h2>
+<ul>
+<li class=""><strong>Maintenance Task Prioritization Framework:</strong> <code>docs/architecture/standards-and-adrs/maintenance-task-prioritization-framework.md</code></li>
+<li class=""><strong>Maintenance Workflow Processes:</strong> <code>docs/architecture/standards-and-adrs/maintenance-workflow-processes.md</code></li>
+<li class=""><strong>Kanban Governance Policy:</strong> <code>packages/frameworks/kanban/policies/kanban-governance-policy.md</code></li>
+<li class=""><strong>Epic 4 (Kanban Framework):</strong> <code>docs/project-management/kanban/epics/epic-04/epic-04.md</code></li>
+<li class=""><strong>Epic 7 (Codebase Maintenance):</strong> <code>docs/project-management/kanban/epics/epic-07/epic-07.md</code></li>
+<li class=""><strong>Story 1 (Codebase Maintenance Tasks):</strong> <code>docs/project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md</code></li>
+<li class=""><strong>Kanban Board:</strong> <code>docs/project-management/kanban/kboard.md</code></li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=decision-record>Decision Record<a href=#decision-record class=hash-link aria-label="Direct link to Decision Record" title="Direct link to Decision Record" translate=no>​</a></h2>
+<p><strong>Decision:</strong> Integrate maintenance tasks comprehensively with Kanban framework, using Epic 7 as organizational structure and Epic 4's Kanban framework for task management.</p>
+<p><strong>Rationale:</strong></p>
+<ul>
+<li class="">Provides systematic approach to maintenance task tracking</li>
+<li class="">Ensures visibility of maintenance work alongside feature development</li>
+<li class="">Enables prioritization-driven maintenance management</li>
+<li class="">Integrates with existing Kanban framework and workflows</li>
+<li class="">Supports metrics and reporting for maintenance effectiveness</li>
+</ul>
+<p><strong>Alternatives Considered:</strong></p>
+<ul>
+<li class="">Separate maintenance tracking system (fragmentation, reduced visibility)</li>
+<li class="">Ad-hoc maintenance without tracking (inconsistent, no visibility)</li>
+<li class="">Manual tracking only (not scalable, error-prone)</li>
+<li class="">Tool-only tracking (lacks process integration)</li>
+</ul>
+<p><strong>Consequences:</strong></p>
+<ul>
+<li class="">Requires initial setup and documentation</li>
+<li class="">Maintenance tasks visible in Kanban board</li>
+<li class="">Enables systematic maintenance management</li>
+<li class="">Supports data-driven maintenance decisions</li>
+<li class="">Integrates with existing workflows</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/architecture/standards-and-adrs/maintenance-kanban-integration.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-automation-workflow-integration><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Maintenance Automation Workflow Integration</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ai-dev-kit/docs/architecture/standards-and-adrs/maintenance-task-prioritization-framework><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Maintenance Task Prioritization Framework</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#executive-summary class="table-of-contents__link toc-highlight">Executive Summary</a><li><a href=#integration-overview class="table-of-contents__link toc-highlight">Integration Overview</a><ul><li><a href=#epic-7-codebase-maintenance-and-review class="table-of-contents__link toc-highlight">Epic 7: Codebase Maintenance and Review</a></ul><li><a href=#task-creation-and-assignment class="table-of-contents__link toc-highlight">Task Creation and Assignment</a><ul><li><a href=#maintenance-task-creation-process class="table-of-contents__link toc-highlight">Maintenance Task Creation Process</a></ul><li><a href=#prioritization-and-moscow-mapping class="table-of-contents__link toc-highlight">Prioritization and MoSCOW Mapping</a><ul><li><a href=#priority-score-to-moscow-classification class="table-of-contents__link toc-highlight">Priority Score to MoSCOW Classification</a><li><a href=#kanban-board-organization class="table-of-contents__link toc-highlight">Kanban Board Organization</a></ul><li><a href=#task-lifecycle-and-status-tracking class="table-of-contents__link toc-highlight">Task Lifecycle and Status Tracking</a><ul><li><a href=#task-status-flow class="table-of-contents__link toc-highlight">Task Status Flow</a><li><a href=#status-update-process class="table-of-contents__link toc-highlight">Status Update Process</a></ul><li><a href=#task-metadata-and-documentation class="table-of-contents__link toc-highlight">Task Metadata and Documentation</a><ul><li><a href=#required-task-metadata class="table-of-contents__link toc-highlight">Required Task Metadata</a></ul><li><a href=#workflow-integration class="table-of-contents__link toc-highlight">Workflow Integration</a><ul><li><a href=#ide-flagged-issues-workflow class="table-of-contents__link toc-highlight">IDE-Flagged Issues Workflow</a><li><a href=#prioritized-maintenance-workflow class="table-of-contents__link toc-highlight">Prioritized Maintenance Workflow</a><li><a href=#scheduled-maintenance-workflow class="table-of-contents__link toc-highlight">Scheduled Maintenance Workflow</a><li><a href=#emergency-maintenance-workflow class="table-of-contents__link toc-highlight">Emergency Maintenance Workflow</a></ul><li><a href=#epic-4-kanban-framework-integration class="table-of-contents__link toc-highlight">Epic 4 (Kanban Framework) Integration</a><ul><li><a href=#framework-usage class="table-of-contents__link toc-highlight">Framework Usage</a><li><a href=#integration-points class="table-of-contents__link toc-highlight">Integration Points</a></ul><li><a href=#examples class="table-of-contents__link toc-highlight">Examples</a><ul><li><a href=#example-1-ide-error-task class="table-of-contents__link toc-highlight">Example 1: IDE Error Task</a><li><a href=#example-2-code-quality-batch-task class="table-of-contents__link toc-highlight">Example 2: Code Quality Batch Task</a><li><a href=#example-3-technical-debt-task class="table-of-contents__link toc-highlight">Example 3: Technical Debt Task</a></ul><li><a href=#best-practices class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href=#task-creation class="table-of-contents__link toc-highlight">Task Creation</a><li><a href=#task-tracking class="table-of-contents__link toc-highlight">Task Tracking</a><li><a href=#prioritization class="table-of-contents__link toc-highlight">Prioritization</a><li><a href=#workflow-integration-1 class="table-of-contents__link toc-highlight">Workflow Integration</a></ul><li><a href=#metrics-and-reporting class="table-of-contents__link toc-highlight">Metrics and Reporting</a><ul><li><a href=#maintenance-metrics class="table-of-contents__link toc-highlight">Maintenance Metrics</a><li><a href=#reporting class="table-of-contents__link toc-highlight">Reporting</a></ul><li><a href=#references class="table-of-contents__link toc-highlight">References</a><li><a href=#decision-record class="table-of-contents__link toc-highlight">Decision Record</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>

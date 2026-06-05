@@ -1,0 +1,1022 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-knowledge/analysis/projects/ai-dev-kit-adk-analysis" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Project Analysis: ai-dev-kit (Self-Analysis) | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/projects/ai-dev-kit-adk-analysis /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Project Analysis: ai-dev-kit (Self-Analysis) | AI Dev Kit"/><meta data-rh=true name=description content="Project Type: Framework Toolkit (Source of Truth for ADK)"/><meta data-rh=true property=og:description content="Project Type: Framework Toolkit (Source of Truth for ADK)"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/projects/ai-dev-kit-adk-analysis /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/projects/ai-dev-kit-adk-analysis hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/projects/ai-dev-kit-adk-analysis hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/projects/ai-dev-kit-adk-analysis","name":"Project Analysis: ai-dev-kit (Self-Analysis)","position":1}]}</script><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/architecture/><span title=Architecture class=categoryLinkLabel_W154>Architecture</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/changelog-and-release-notes/><span title="Changelog & release notes" class=categoryLinkLabel_W154>Changelog & release notes</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/project-management/><span title="Project management" class=categoryLinkLabel_W154>Project management</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/guides/><span title=Guides class=categoryLinkLabel_W154>Guides</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation (developer & user)" class=categoryLinkLabel_W154>Documentation (developer & user)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="Knowledge base" class=categoryLinkLabel_W154>Knowledge base</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="KB Index" class=linkLabel_WmDU>KB Index</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/><span title="Use Cases Knowledge Base" class=linkLabel_WmDU>Use Cases Knowledge Base</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/USE_CASE_METHODOLOGY><span title="Use Case Methodology: Canonical vs Discovered Use Cases" class=linkLabel_WmDU>Use Case Methodology: Canonical vs Discovered Use Cases</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw><span title=analysis class=categoryLinkLabel_W154>analysis</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw><span title="Abstract Anti-Pattern: Use Case Exposed Design Flaw" class=linkLabel_WmDU>Abstract Anti-Pattern: Use Case Exposed Design Flaw</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-drift-analysis><span title="ADK Framework Drift Analysis" class=linkLabel_WmDU>ADK Framework Drift Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-hardening-recommendations><span title="ADK Framework Hardening Recommendations" class=linkLabel_WmDU>ADK Framework Hardening Recommendations</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-implementation-analysis-execution-plan><span title="ADK Implementation Analysis - Execution Plan" class=linkLabel_WmDU>ADK Implementation Analysis - Execution Plan</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-implementation-analysis-report><span title="ADK Implementation Analysis Report" class=linkLabel_WmDU>ADK Implementation Analysis Report</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-implementation-patterns><span title="ADK Implementation Patterns Catalog" class=linkLabel_WmDU>ADK Implementation Patterns Catalog</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-learning-synthesis><span title="ADK Learning Synthesis: What ADK Can Learn" class=linkLabel_WmDU>ADK Learning Synthesis: What ADK Can Learn</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-mashup-issues><span title="ADK Mashup Issues Catalog" class=linkLabel_WmDU>ADK Mashup Issues Catalog</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/ai-dev-kit-sitrep><span title="AI Dev Kit - Situation Report (Sitrep)" class=linkLabel_WmDU>AI Dev Kit - Situation Report (Sitrep)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/comprehensive-adk-analysis-framework><span title="Comprehensive ADK Implementation Analysis Framework" class=linkLabel_WmDU>Comprehensive ADK Implementation Analysis Framework</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/comprehensive-project-analysis-framework><span title="Comprehensive Project Analysis Framework" class=linkLabel_WmDU>Comprehensive Project Analysis Framework</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/critical-framework-completion-plan><span title="Critical Framework Completion Plan" class=linkLabel_WmDU>Critical Framework Completion Plan</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/cursorrules-structure-analysis><span title="Cursorrules Structure Analysis" class=linkLabel_WmDU>Cursorrules Structure Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/debug-path-framework-analysis><span title="Debug Path Framework Analysis" class=linkLabel_WmDU>Debug Path Framework Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/knowledge-documentation-structure-analysis><span title="Knowledge/Documentation Structure Analysis" class=linkLabel_WmDU>Knowledge/Documentation Structure Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-canonical-vs-legacy-matrices><span title="Meta-Analysis: Canonical vs Legacy Matrices" class=linkLabel_WmDU>Meta-Analysis: Canonical vs Legacy Matrices</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-convergence-divergence-maps><span title="Meta-Analysis: Convergence/Divergence Maps" class=linkLabel_WmDU>Meta-Analysis: Convergence/Divergence Maps</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-cursorrules-use-misuse><span title="Meta-Analysis: Cursorrules Use/Mis-use" class=linkLabel_WmDU>Meta-Analysis: Cursorrules Use/Mis-use</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-documentation-knowledge-structure><span title="Meta-Analysis: Documentation/Knowledge Structure" class=linkLabel_WmDU>Meta-Analysis: Documentation/Knowledge Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-executive-summary><span title="Meta-Analysis Executive Summary: Proposed Canonical Framework Designs" class=linkLabel_WmDU>Meta-Analysis Executive Summary: Proposed Canonical Framework Designs</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-good-bad-practices><span title="Meta-Analysis: Good/Bad Practice Catalog" class=linkLabel_WmDU>Meta-Analysis: Good/Bad Practice Catalog</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-kanban-structure><span title="Meta-Analysis: Kanban Structure" class=linkLabel_WmDU>Meta-Analysis: Kanban Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-pattern-frequency-tables><span title="Meta-Analysis: Pattern Frequency Tables" class=linkLabel_WmDU>Meta-Analysis: Pattern Frequency Tables</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-patterns-anti-patterns><span title="Meta-Analysis: Pattern/Anti-Pattern Identification" class=linkLabel_WmDU>Meta-Analysis: Pattern/Anti-Pattern Identification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-workflows><span title="Meta-Analysis: Workflows" class=linkLabel_WmDU>Meta-Analysis: Workflows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/outstanding-work-summary><span title="Outstanding Work Summary" class=linkLabel_WmDU>Outstanding Work Summary</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/pre-analysis-completion-strategy><span title="Pre-Analysis Completion Strategy" class=linkLabel_WmDU>Pre-Analysis Completion Strategy</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/agentic-ide-rules-adk-analysis><span title=projects class=categoryLinkLabel_W154>projects</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/agentic-ide-rules-adk-analysis><span title="Project Analysis: agentic-ide-rules" class=linkLabel_WmDU>Project Analysis: agentic-ide-rules</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/ai-dev-kit-adk-analysis><span title="Project Analysis: ai-dev-kit (Self-Analysis)" class=linkLabel_WmDU>Project Analysis: ai-dev-kit (Self-Analysis)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/been-there-adk-analysis><span title="Project Analysis: been-there" class=linkLabel_WmDU>Project Analysis: been-there</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/confidentia-adk-analysis><span title="Project Analysis: confidentia" class=linkLabel_WmDU>Project Analysis: confidentia</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/dev-toolkit-adk-analysis><span title="Project Analysis: dev-toolkit" class=linkLabel_WmDU>Project Analysis: dev-toolkit</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/free-party-promoter-adk-analysis><span title="Project Analysis: free-party-promoter" class=linkLabel_WmDU>Project Analysis: free-party-promoter</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/fynd-deals-adk-analysis><span title="Project Analysis: fynd.deals" class=linkLabel_WmDU>Project Analysis: fynd.deals</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/qa-kb-adk-analysis><span title="Project Analysis: qa-kb" class=linkLabel_WmDU>Project Analysis: qa-kb</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/starborn-legacy-adk-analysis><span title="Project Analysis: starborn_legacy" class=linkLabel_WmDU>Project Analysis: starborn_legacy</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/vwmp-adk-analysis><span title="Project Analysis: vwmp" class=linkLabel_WmDU>Project Analysis: vwmp</span></a></ul><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/task-level-kanban-structure-analysis><span title="Task-Level Kanban Structure Analysis" class=linkLabel_WmDU>Task-Level Kanban Structure Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/workflow-structure-analysis><span title="Workflow Structure Analysis" class=linkLabel_WmDU>Workflow Structure Analysis</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/knowledge/articles/><span title=Articles class=categoryLinkLabel_W154>Articles</span></a><button aria-label="Expand sidebar category 'Articles'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/knowledge/guides/><span title="Knowledge Base Guides" class=categoryLinkLabel_W154>Knowledge Base Guides</span></a><button aria-label="Expand sidebar category 'Knowledge Base Guides'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/kb-migration-log><span title="KB to Notion Migration Log" class=linkLabel_WmDU>KB to Notion Migration Log</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/knowledge/reviews/pir/><span title=reviews class=categoryLinkLabel_W154>reviews</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/knowledge/use-cases/discovered/><span title=use-cases class=categoryLinkLabel_W154>use-cases</span></a></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/maintenance/BUILD_AND_UPLOAD><span title="Maintenance (portal triage)" class=categoryLinkLabel_W154>Maintenance (portal triage)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/analysis/cmw-ordering-flaw-analysis><span title=Analysis class=categoryLinkLabel_W154>Analysis</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION><span title="Implementation cycles" class=categoryLinkLabel_W154>Implementation cycles</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/developer-tools/ide-whitelist-guide><span title="Developer tools" class=categoryLinkLabel_W154>Developer tools</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/ai-dev-kit/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>Knowledge base</span><li class=breadcrumbs__item><span class=breadcrumbs__link>analysis</span><li class=breadcrumbs__item><span class=breadcrumbs__link>projects</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Project Analysis: ai-dev-kit (Self-Analysis)</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Project Analysis: ai-dev-kit (Self-Analysis)</h1></header>
+<p><strong>Project Type:</strong> Framework Toolkit (Source of Truth for ADK)<br/>
+<strong>Analysis Date:</strong> 2025-12-17<br/>
+<strong>ADK Version:</strong> Self (v0.6.6.6+1)<br/>
+<strong>Implementation Method:</strong> Source repository (not an implementation)<br/>
+<strong>Implementation Date:</strong> N/A (this is the source)</p>
+<p><strong>Note:</strong> This report focuses on Epic/Story-level analysis. For detailed <strong>task-level analysis</strong> (task naming conventions, organization patterns, structure details, checklist patterns), see <a class="" href=/ai-dev-kit/docs/knowledge/analysis/task-level-kanban-structure-analysis><code>../task-level-kanban-structure-analysis.md</code></a>. For detailed <strong>knowledge/documentation structure analysis</strong> (KB naming conventions, directory organization, document structure, lifecycle metadata, navigation patterns), see <a class="" href=/ai-dev-kit/docs/knowledge/analysis/knowledge-documentation-structure-analysis><code>../knowledge-documentation-structure-analysis.md</code></a>. For detailed <strong>workflow structure analysis</strong> (workflow naming, YAML structure, step patterns, configuration, execution patterns), see <a class="" href=/ai-dev-kit/docs/knowledge/analysis/workflow-structure-analysis><code>../workflow-structure-analysis.md</code></a>. For detailed <strong>cursorrules structure analysis</strong> (cursorrules naming, structure patterns, trigger patterns, rule patterns), see <a class="" href=/ai-dev-kit/docs/knowledge/analysis/cursorrules-structure-analysis><code>../cursorrules-structure-analysis.md</code></a>.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=executive-summary>Executive Summary<a href=#executive-summary class=hash-link aria-label="Direct link to Executive Summary" title="Direct link to Executive Summary" translate=no>​</a></h2>
+<p><strong>ADK Implementation Status:</strong> Source Repository (Not an Implementation)<br/>
+<strong>Overall Assessment:</strong> Good (with CRITICAL Epic 9 mismatch issue)<br/>
+<strong>Key Findings:</strong></p>
+<ul>
+<li class="">✅ Proper KB structure matching ADK canonical (5-pillar structure)</li>
+<li class="">✅ Comprehensive framework packages structure</li>
+<li class="">✅ Good workflow YAML definitions</li>
+<li class="">❌ <strong>CRITICAL ISSUE:</strong> Epic 9 "Book Related Work" in ai-dev-kit conflicts with canonical Epic 9 "User Management and Authentication"</li>
+<li class="">❌ <strong>CRITICAL ISSUE:</strong> No <code>.cursorrules</code> file (RW executed manually/by convention)</li>
+<li class="">⚠️ Legacy version file path (<code>src/fynd_deals/version.py</code> instead of <code>src/ai_dev_kit/version.py</code>)</li>
+<li class="">⚠️ RW config exists only as example, not in project root</li>
+</ul>
+<p><strong>Critical Discovery:</strong> Epic 9 mismatch is the <strong>ROOT CAUSE</strong> of the Epic mashup issue affecting 33% of client projects. When projects copy ai-dev-kit's actual Kanban structure, they get Epic 9 "Book Related Work" instead of Epic 9 "User Management and Authentication" from canonical templates.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-kanban-structure-analysis>1. Kanban Structure Analysis<a href=#1-kanban-structure-analysis class=hash-link aria-label="Direct link to 1. Kanban Structure Analysis" title="Direct link to 1. Kanban Structure Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-structure-overview>1.1 Structure Overview<a href=#11-structure-overview class=hash-link aria-label="Direct link to 1.1 Structure Overview" title="Direct link to 1.1 Structure Overview" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Epic Count:</strong> 10 epics (Epics 1-9, 21)</li>
+<li class=""><strong>Story Count:</strong> 60+ stories across epics</li>
+<li class=""><strong>Task Count:</strong> Multiple tasks per story (193+ task templates created)</li>
+<li class=""><strong>Directory Structure:</strong> <code>docs/project-management/kanban/epics/Epic-X/</code></li>
+<li class=""><strong>File Organization:</strong> Nested (Epic → Story → Task directories)</li>
+</ul>
+<p><strong>Epic Inventory:</strong></p>
+<ul>
+<li class=""><strong>Epic 1:</strong> AI Dev Kit Core ✅ (Framework epic, but name is project-specific)</li>
+<li class=""><strong>Epic 2:</strong> Workflow Management Framework ✅ (Framework epic)</li>
+<li class=""><strong>Epic 3:</strong> Numbering & Versioning Framework ✅ (Framework epic)</li>
+<li class=""><strong>Epic 4:</strong> Kanban Framework ✅ (Framework epic)</li>
+<li class=""><strong>Epic 5:</strong> Documentation Management ✅ (Framework epic)</li>
+<li class=""><strong>Epic 6:</strong> Framework Management ✅ (Framework epic)</li>
+<li class=""><strong>Epic 7:</strong> Codebase Maintenance and Review ✅ (Framework epic)</li>
+<li class=""><strong>Epic 8:</strong> Tooling & Automation ✅ (Framework epic)</li>
+<li class=""><strong>Epic 9:</strong> Book Related Work ❌ <strong>CRITICAL MISMATCH</strong> (ai-dev-kit project-specific, NOT canonical)</li>
+<li class=""><strong>Epic 21:</strong> Internationalization and Localization ✅ (Project-specific epic)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-distance-from-adk-canonical-structure>1.2 Distance from ADK Canonical Structure<a href=#12-distance-from-adk-canonical-structure class=hash-link aria-label="Direct link to 1.2 Distance from ADK Canonical Structure" title="Direct link to 1.2 Distance from ADK Canonical Structure" translate=no>​</a></h3>
+<p><strong>Comparison to ADK Canonical:</strong></p>
+<p><strong>Epic Structure:</strong> ❌ <strong>CRITICAL MISMATCH - Epic 9</strong></p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li class=""><strong>ai-dev-kit's actual Epic 9:</strong> "Book Related Work" (project-specific epic for "Vibe Coding For Dummies" book)</li>
+<li class=""><strong>Canonical template Epic 9:</strong> "User Management and Authentication" (canonical ancillary epic)</li>
+<li class=""><strong>Impact:</strong> When projects copy ai-dev-kit's actual Kanban structure, they get Epic 9 "Book Related Work" instead of Epic 9 "User Management and Authentication"</li>
+</ul>
+<p><strong>Root Cause:</strong></p>
+<ul>
+<li class="">ai-dev-kit uses Epic 9 for its own project-specific work (book project)</li>
+<li class="">Canonical templates define Epic 9 as "User Management and Authentication"</li>
+<li class="">No clear separation between ai-dev-kit's actual Kanban and canonical templates</li>
+<li class="">Installer (<code>install_kanban_framework.py</code>) was fixed in v0.4.6.10+1 (BR-004) but Epic 9 mismatch remains</li>
+</ul>
+<p><strong>Epic 1 Naming:</strong></p>
+<ul>
+<li class=""><strong>ai-dev-kit's actual Epic 1:</strong> "AI Dev Kit Core" (project-specific name)</li>
+<li class=""><strong>Canonical template Epic 1:</strong> "{PROJECT_NAME} Core" (generic placeholder)</li>
+<li class=""><strong>Impact:</strong> Projects copying ai-dev-kit's structure get "AI Dev Kit Core" instead of generic "Project Core"</li>
+</ul>
+<p><strong>Story Structure:</strong> ✅ <strong>MATCHES</strong></p>
+<ul>
+<li class="">Stories organized under Epic directories</li>
+<li class="">Story naming follows pattern: <code>Story-XXX-description.md</code></li>
+<li class="">Story documents include proper frontmatter</li>
+<li class="">Story checklists present</li>
+</ul>
+<p><strong>Task Structure:</strong> ✅ <strong>MATCHES</strong></p>
+<ul>
+<li class="">Tasks organized in Story subdirectories or embedded in Story documents</li>
+<li class="">Task documents follow pattern: <code>Task-YYY-description.md</code> or <code>TYYY-description.md</code></li>
+<li class="">Tasks have proper structure and metadata</li>
+<li class="">193+ task templates created (Epic 1-14 complete)</li>
+</ul>
+<p><strong>Naming Conventions:</strong> ✅ <strong>MOSTLY MATCHES</strong></p>
+<ul>
+<li class="">Epic naming: <code>Epic-X/Epic-X.md</code> ✅</li>
+<li class="">Story naming: <code>Story-XXX-description.md</code> ✅</li>
+<li class="">Task naming: <code>E\{epic\}:S\{story\}:T\{task\}</code> ✅ (full context)</li>
+<li class="">Task padding: 2-digit (<code>T01</code>, <code>T02</code>) ✅</li>
+</ul>
+<p><strong>File Organization:</strong> ✅ <strong>MATCHES</strong></p>
+<ul>
+<li class="">Nested structure: <code>epics/Epic-X/Story-XXX/Task-YYY.md</code></li>
+<li class="">Consistent with ADK canonical</li>
+</ul>
+<p><strong>Drift Assessment:</strong></p>
+<ul>
+<li class=""><strong>Severity:</strong> <strong>CRITICAL</strong> (Epic 9 mismatch causes mashup in client projects)</li>
+<li class=""><strong>Root Cause:</strong> ai-dev-kit's actual Kanban structure mixes project-specific epics (Epic 9 "Book Related Work") with framework epics</li>
+<li class=""><strong>Impact:</strong>
+<ul>
+<li class="">Client projects copying ai-dev-kit's structure get inappropriate Epic 9</li>
+<li class="">33% of client projects affected (been-there, dev-toolkit, agentic-ide-rules)</li>
+<li class="">Confusion about which epics are canonical vs project-specific</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-good-practices>1.3 Good Practices<a href=#13-good-practices class=hash-link aria-label="Direct link to 1.3 Good Practices" title="Direct link to 1.3 Good Practices" translate=no>​</a></h3>
+<p>✅ <strong>What Works Well:</strong></p>
+<ol>
+<li class="">
+<p><strong>Comprehensive Template System</strong></p>
+<ul>
+<li class="">21 epic templates created (<code>packages/frameworks/kanban/templates/epics/</code>)</li>
+<li class="">62+ story templates created (<code>packages/frameworks/kanban/templates/stories/</code>)</li>
+<li class="">193+ task templates created (<code>packages/frameworks/kanban/templates/tasks/</code>)</li>
+<li class="">Templates properly contextualized with placeholders</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Proper E/S/T Hierarchy</strong></p>
+<ul>
+<li class="">Clear Epic → Story → Task hierarchy</li>
+<li class="">Proper nesting and organization</li>
+<li class="">Consistent naming conventions</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Story Checklist Pattern</strong></p>
+<ul>
+<li class="">Story checklists in Epic documents</li>
+<li class="">Version markers for completed stories</li>
+<li class="">Clear status tracking</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Task Organization</strong></p>
+<ul>
+<li class="">Tasks embedded in Story documents (most common)</li>
+<li class="">Separate task files for complex tasks</li>
+<li class="">Proper task structure with required/optional fields</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Canonical Epic Documentation</strong></p>
+<ul>
+<li class=""><code>CANONICAL_EPICS.md</code> clearly documents canonical epics</li>
+<li class=""><code>COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md</code> provides complete structure</li>
+<li class="">Clear distinction between core (1-8) and ancillary (9-21) epics</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-bad-practices>1.4 Bad Practices<a href=#14-bad-practices class=hash-link aria-label="Direct link to 1.4 Bad Practices" title="Direct link to 1.4 Bad Practices" translate=no>​</a></h3>
+<p>❌ <strong>What Needs Improvement:</strong></p>
+<ol>
+<li class="">
+<p><strong>CRITICAL: Epic 9 Mismatch</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> ai-dev-kit's actual Epic 9 is "Book Related Work" (project-specific)</li>
+<li class=""><strong>Canonical:</strong> Epic 9 should be "User Management and Authentication"</li>
+<li class=""><strong>Impact:</strong> CRITICAL - Causes mashup in 33% of client projects</li>
+<li class=""><strong>Root Cause:</strong> No clear separation between ai-dev-kit's actual Kanban and canonical templates</li>
+<li class=""><strong>Recommendation:</strong>
+<ul>
+<li class="">Rename ai-dev-kit's Epic 9 to Epic 24+ (project-specific range)</li>
+<li class="">OR clearly document that Epic 9 in ai-dev-kit is project-specific, not canonical</li>
+<li class="">Ensure installer uses canonical templates, not ai-dev-kit's actual epics</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Epic 1 Naming Too Specific</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> Epic 1 named "AI Dev Kit Core" (project-specific name)</li>
+<li class=""><strong>Canonical:</strong> Should be "{PROJECT_NAME} Core" (generic placeholder)</li>
+<li class=""><strong>Impact:</strong> Projects copying structure get project-specific name</li>
+<li class=""><strong>Recommendation:</strong> Rename Epic 1 to generic name or document customization requirement</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Epic Mashup Risk</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> ai-dev-kit's actual Kanban structure mixes framework epics (1-8) with project-specific epics (9, 21)</li>
+<li class=""><strong>Impact:</strong> Easy to copy wrong structure</li>
+<li class=""><strong>Recommendation:</strong> Clear separation or documentation of which epics are canonical vs project-specific</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-knowledge-base-kb-analysis>2. Knowledge Base (KB) Analysis<a href=#2-knowledge-base-kb-analysis class=hash-link aria-label="Direct link to 2. Knowledge Base (KB) Analysis" title="Direct link to 2. Knowledge Base (KB) Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-structure-overview>2.1 Structure Overview<a href=#21-structure-overview class=hash-link aria-label="Direct link to 2.1 Structure Overview" title="Direct link to 2.1 Structure Overview" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Directory Structure:</strong> <code>docs/</code> (5-pillar canonical structure)</li>
+<li class=""><strong>Document Count:</strong> 1000+ documents</li>
+<li class=""><strong>Document Types:</strong> Architecture, Changelog, Documentation, Guides, project-management, use-cases, Reviews</li>
+<li class=""><strong>Organization Pattern:</strong> ADK canonical 5-pillar structure</li>
+</ul>
+<p><strong>KB Structure:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">docs/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── Architecture/                      # Technical standards, ADRs ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── changelog-and-release-notes/      # Release documentation ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── project-management/                 # Project management, Kanban ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── Guides/                           # User-facing documentation ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── Documentation/                    # Developer documentation ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── use-cases/                        # Canonical and discovered use cases ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">└── Reviews/                          # Post-Implementation Reviews ✅</span><br/></div></code></pre></div></div>
+<p><strong>Comparison to ADK Canonical:</strong></p>
+<ul>
+<li class="">ADK Canonical: 5 pillars (Architecture, Changelog, PM, Guides, Documentation)</li>
+<li class="">ai-dev-kit: 5 pillars + use-cases + Reviews (extensions)</li>
+<li class=""><strong>Status:</strong> ✅ Matches canonical with appropriate extensions</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-distance-from-adk-canonical-kb-structure>2.2 Distance from ADK Canonical KB Structure<a href=#22-distance-from-adk-canonical-kb-structure class=hash-link aria-label="Direct link to 2.2 Distance from ADK Canonical KB Structure" title="Direct link to 2.2 Distance from ADK Canonical KB Structure" translate=no>​</a></h3>
+<p><strong>Comparison to ADK KB:</strong></p>
+<p><strong>Directory Organization:</strong> ✅ <strong>MATCHES CANONICAL</strong></p>
+<ul>
+<li class="">Root path: <code>docs/</code> ✅</li>
+<li class="">Structure: 5-pillar canonical structure ✅</li>
+<li class="">Additional pillars: use-cases, Reviews (appropriate extensions) ✅</li>
+</ul>
+<p><strong>Document Lifecycle:</strong> ✅ <strong>GOOD</strong></p>
+<ul>
+<li class="">Frontmatter present in most documents ✅</li>
+<li class="">Lifecycle metadata (<code>lifecycle</code>, <code>ttl_days</code>, <code>created_at</code>, <code>expires_at</code>, <code>housekeeping_policy</code>) ✅</li>
+<li class="">Lifecycle management implemented ✅</li>
+</ul>
+<p><strong>Naming Conventions:</strong> ✅ <strong>GOOD</strong></p>
+<ul>
+<li class="">Self-documenting names ✅</li>
+<li class="">Consistent patterns ✅</li>
+</ul>
+<p><strong>Cross-Referencing:</strong> ✅ <strong>GOOD</strong></p>
+<ul>
+<li class="">Good use of markdown links ✅</li>
+<li class="">Proper linking patterns ✅</li>
+</ul>
+<p><strong>Navigation:</strong> ✅ <strong>GOOD</strong></p>
+<ul>
+<li class="">Root <code>docs/README.md</code> for top-level navigation ✅</li>
+<li class="">Section <code>README.md</code> files for each pillar ✅</li>
+<li class="">Hierarchical navigation ✅</li>
+</ul>
+<p><strong>Drift Assessment:</strong></p>
+<ul>
+<li class=""><strong>Severity:</strong> <strong>NONE</strong> (matches canonical perfectly)</li>
+<li class=""><strong>Extensions:</strong> use-cases and Reviews are appropriate additions</li>
+<li class=""><strong>Status:</strong> ✅ ai-dev-kit's KB structure is a good reference implementation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-good-practices>2.3 Good Practices<a href=#23-good-practices class=hash-link aria-label="Direct link to 2.3 Good Practices" title="Direct link to 2.3 Good Practices" translate=no>​</a></h3>
+<p>✅ <strong>What Works Well:</strong></p>
+<ol>
+<li class="">
+<p><strong>Perfect Canonical Structure</strong></p>
+<ul>
+<li class="">5-pillar structure matches canonical exactly</li>
+<li class="">Clear separation of concerns</li>
+<li class="">Proper navigation</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Lifecycle Metadata</strong></p>
+<ul>
+<li class="">Documents have proper frontmatter</li>
+<li class="">Lifecycle metadata present</li>
+<li class="">Housekeeping policies defined</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Comprehensive Documentation</strong></p>
+<ul>
+<li class="">Architecture ADRs well-documented</li>
+<li class="">Changelog properly maintained</li>
+<li class="">Guides comprehensive and user-friendly</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Use Cases and Reviews</strong></p>
+<ul>
+<li class="">use-cases section for canonical and discovered patterns</li>
+<li class="">Reviews section for Post-Implementation Reviews</li>
+<li class="">Good extensions to canonical structure</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=24-bad-practices>2.4 Bad Practices<a href=#24-bad-practices class=hash-link aria-label="Direct link to 2.4 Bad Practices" title="Direct link to 2.4 Bad Practices" translate=no>​</a></h3>
+<p>❌ <strong>What Needs Improvement:</strong></p>
+<ol>
+<li class=""><strong>None Identified</strong>
+<ul>
+<li class="">KB structure is exemplary</li>
+<li class="">Matches canonical perfectly</li>
+<li class="">Good reference implementation</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-workflow-analysis>3. Workflow Analysis<a href=#3-workflow-analysis class=hash-link aria-label="Direct link to 3. Workflow Analysis" title="Direct link to 3. Workflow Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-structure-overview>3.1 Structure Overview<a href=#31-structure-overview class=hash-link aria-label="Direct link to 3.1 Structure Overview" title="Direct link to 3.1 Structure Overview" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Workflow Files:</strong> 7 YAML workflow files in <code>packages/frameworks/workflow-mgt/workflows/</code></li>
+<li class=""><strong>Workflow Types:</strong> Release, Intake, Testing, Migration, Refactor, Package Version, PIR</li>
+<li class=""><strong>RW Configuration:</strong> Example config exists (<code>rw-config-ai-dev-kit.yaml</code>) but not in project root</li>
+<li class=""><strong>RW Execution:</strong> No <code>.cursorrules</code> file, RW executed manually/by convention</li>
+</ul>
+<p><strong>Workflow Files:</strong></p>
+<ul>
+<li class=""><code>release-workflow.yaml</code> - 12-step Release Workflow ✅</li>
+<li class=""><code>intake-workflow.yaml</code> - FR/BR/UXR intake workflow ✅</li>
+<li class=""><code>testing-workflow.yaml</code> - Testing workflow ✅</li>
+<li class=""><code>migration-workflow.yaml</code> - Migration workflow ✅</li>
+<li class=""><code>refactor-workflow.yaml</code> - Refactor workflow ✅</li>
+<li class=""><code>package-version-workflow.yaml</code> - Package Version Workflow ✅</li>
+<li class=""><code>pir-workflow.yaml</code> - Post-Implementation Review workflow ✅</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-distance-from-adk-canonical-workflow-structure>3.2 Distance from ADK Canonical Workflow Structure<a href=#32-distance-from-adk-canonical-workflow-structure class=hash-link aria-label="Direct link to 3.2 Distance from ADK Canonical Workflow Structure" title="Direct link to 3.2 Distance from ADK Canonical Workflow Structure" translate=no>​</a></h3>
+<p><strong>Comparison to ADK Canonical:</strong></p>
+<p><strong>Workflow File Structure:</strong> ✅ <strong>MATCHES</strong></p>
+<ul>
+<li class="">Format: <code>\{name\}-workflow.yaml</code> ✅</li>
+<li class="">Location: <code>packages/frameworks/workflow-mgt/workflows/</code> ✅</li>
+<li class="">YAML structure: Proper structure with steps ✅</li>
+</ul>
+<p><strong>Release Workflow:</strong> ⚠️ <strong>PARTIAL MATCH</strong></p>
+<ul>
+<li class="">Step count: 12-step RW (canonical) ✅</li>
+<li class="">Step 1: Branch Safety Check (mandatory, blocking) ✅</li>
+<li class="">Steps 2-12: Standard RW steps ✅</li>
+<li class=""><strong>Issue:</strong> Workflow YAML has hardcoded template paths (<code>src/confidentia/version.py</code>) ❌</li>
+<li class=""><strong>Issue:</strong> No <code>rw-config.yaml</code> in project root ❌</li>
+</ul>
+<p><strong>Configuration:</strong> ❌ <strong>MISSING</strong></p>
+<ul>
+<li class=""><strong>Expected:</strong> <code>rw-config.yaml</code> in project root</li>
+<li class=""><strong>Actual:</strong> Only example config exists (<code>packages/frameworks/workflow-mgt/config/examples/rw-config-ai-dev-kit.yaml</code>)</li>
+<li class=""><strong>Impact:</strong> RW cannot use config-driven approach</li>
+<li class=""><strong>Recommendation:</strong> Create <code>rw-config.yaml</code> in project root</li>
+</ul>
+<p><strong>RW Trigger:</strong> ❌ <strong>MISSING</strong></p>
+<ul>
+<li class=""><strong>Expected:</strong> RW trigger in <code>.cursorrules</code> file</li>
+<li class=""><strong>Actual:</strong> No <code>.cursorrules</code> file exists</li>
+<li class=""><strong>Impact:</strong> RW must be executed manually/by convention</li>
+<li class=""><strong>Recommendation:</strong> Create <code>.cursorrules</code> file with RW trigger section</li>
+</ul>
+<p><strong>Execution Pattern:</strong> ⚠️ <strong>MANUAL</strong></p>
+<ul>
+<li class=""><strong>Expected:</strong> Agent-driven execution via <code>.cursorrules</code> trigger</li>
+<li class=""><strong>Actual:</strong> Manual execution/by convention</li>
+<li class=""><strong>Impact:</strong> No standardized RW trigger</li>
+<li class=""><strong>Recommendation:</strong> Add <code>.cursorrules</code> file with RW trigger</li>
+</ul>
+<p><strong>Drift Assessment:</strong></p>
+<ul>
+<li class=""><strong>Severity:</strong> <strong>MODERATE</strong> (workflow structure is good, but missing RW trigger and config)</li>
+<li class=""><strong>Root Cause:</strong> ai-dev-kit doesn't use its own RW trigger mechanism</li>
+<li class=""><strong>Impact:</strong>
+<ul>
+<li class="">No standardized RW trigger</li>
+<li class="">RW executed manually/by convention</li>
+<li class="">Cannot demonstrate RW trigger to client projects</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=33-good-practices>3.3 Good Practices<a href=#33-good-practices class=hash-link aria-label="Direct link to 3.3 Good Practices" title="Direct link to 3.3 Good Practices" translate=no>​</a></h3>
+<p>✅ <strong>What Works Well:</strong></p>
+<ol>
+<li class="">
+<p><strong>Comprehensive Workflow Definitions</strong></p>
+<ul>
+<li class="">7 workflow YAML files defined</li>
+<li class="">Proper YAML structure</li>
+<li class="">Clear step definitions</li>
+</ul>
+</li>
+<li class="">
+<p><strong>12-Step Release Workflow</strong></p>
+<ul>
+<li class="">Canonical 12-step RW defined</li>
+<li class="">Branch safety check present</li>
+<li class="">Proper step ordering</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Workflow Documentation</strong></p>
+<ul>
+<li class="">Comprehensive workflow documentation</li>
+<li class="">Agent execution guides</li>
+<li class="">Reference documentation</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Example Configs</strong></p>
+<ul>
+<li class="">Example <code>rw-config.yaml</code> files provided</li>
+<li class="">Multiple mode examples (simple, versioning, full-stack)</li>
+<li class="">Good reference for client projects</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=34-bad-practices>3.4 Bad Practices<a href=#34-bad-practices class=hash-link aria-label="Direct link to 3.4 Bad Practices" title="Direct link to 3.4 Bad Practices" translate=no>​</a></h3>
+<p>❌ <strong>What Needs Improvement:</strong></p>
+<ol>
+<li class="">
+<p><strong>No <code>.cursorrules</code> File</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> ai-dev-kit doesn't have a <code>.cursorrules</code> file</li>
+<li class=""><strong>Impact:</strong> Cannot demonstrate RW trigger to client projects</li>
+<li class=""><strong>Recommendation:</strong> Create <code>.cursorrules</code> file with RW trigger section</li>
+</ul>
+</li>
+<li class="">
+<p><strong>No <code>rw-config.yaml</code> in Project Root</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> Only example config exists, not actual config in project root</li>
+<li class=""><strong>Impact:</strong> RW cannot use config-driven approach</li>
+<li class=""><strong>Recommendation:</strong> Create <code>rw-config.yaml</code> in project root</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Workflow YAML Has Template Paths</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> <code>release-workflow.yaml</code> has hardcoded template paths (<code>src/confidentia/version.py</code>)</li>
+<li class=""><strong>Impact:</strong> Workflow YAML is a template, not ai-dev-kit's actual config</li>
+<li class=""><strong>Recommendation:</strong> Use config-driven approach or update paths</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-cursorrules-analysis>4. Cursorrules Analysis<a href=#4-cursorrules-analysis class=hash-link aria-label="Direct link to 4. Cursorrules Analysis" title="Direct link to 4. Cursorrules Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-structure-overview>4.1 Structure Overview<a href=#41-structure-overview class=hash-link aria-label="Direct link to 4.1 Structure Overview" title="Direct link to 4.1 Structure Overview" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>File:</strong> <code>.cursorrules</code> file <strong>DOES NOT EXIST</strong> ❌</li>
+<li class=""><strong>RW Trigger:</strong> Not present (RW executed manually/by convention)</li>
+<li class=""><strong>Document Lifecycle:</strong> Not present</li>
+<li class=""><strong>Git Restrictions:</strong> Not present</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-distance-from-adk-canonical-cursorrules-structure>4.2 Distance from ADK Canonical Cursorrules Structure<a href=#42-distance-from-adk-canonical-cursorrules-structure class=hash-link aria-label="Direct link to 4.2 Distance from ADK Canonical Cursorrules Structure" title="Direct link to 4.2 Distance from ADK Canonical Cursorrules Structure" translate=no>​</a></h3>
+<p><strong>Comparison to ADK Canonical:</strong></p>
+<p><strong>File Naming:</strong> ❌ <strong>MISSING</strong></p>
+<ul>
+<li class=""><strong>Expected:</strong> <code>.cursorrules</code> in project root</li>
+<li class=""><strong>Actual:</strong> File does not exist</li>
+<li class=""><strong>Impact:</strong> No RW trigger, no standardized workflow</li>
+</ul>
+<p><strong>RW Trigger:</strong> ❌ <strong>MISSING</strong></p>
+<ul>
+<li class=""><strong>Expected:</strong> Comprehensive RW trigger (12-step)</li>
+<li class=""><strong>Actual:</strong> Not present</li>
+<li class=""><strong>Impact:</strong> RW must be executed manually/by convention</li>
+</ul>
+<p><strong>Document Lifecycle:</strong> ❌ <strong>MISSING</strong></p>
+<ul>
+<li class=""><strong>Expected:</strong> Document lifecycle management section</li>
+<li class=""><strong>Actual:</strong> Not present</li>
+<li class=""><strong>Impact:</strong> No lifecycle management rules</li>
+</ul>
+<p><strong>Git Workflow Restrictions:</strong> ❌ <strong>MISSING</strong></p>
+<ul>
+<li class=""><strong>Expected:</strong> Git commit/push restrictions</li>
+<li class=""><strong>Actual:</strong> Not present</li>
+<li class=""><strong>Impact:</strong> No workflow enforcement</li>
+</ul>
+<p><strong>Drift Assessment:</strong></p>
+<ul>
+<li class=""><strong>Severity:</strong> <strong>HIGH</strong> (missing <code>.cursorrules</code> file entirely)</li>
+<li class=""><strong>Root Cause:</strong> ai-dev-kit doesn't use its own cursorrules framework</li>
+<li class=""><strong>Impact:</strong>
+<ul>
+<li class="">Cannot demonstrate RW trigger to client projects</li>
+<li class="">No standardized workflow trigger</li>
+<li class="">RW executed manually/by convention</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-good-practices>4.3 Good Practices<a href=#43-good-practices class=hash-link aria-label="Direct link to 4.3 Good Practices" title="Direct link to 4.3 Good Practices" translate=no>​</a></h3>
+<p>✅ <strong>What Works Well:</strong></p>
+<ol>
+<li class="">
+<p><strong>RW Trigger Template Exists</strong></p>
+<ul>
+<li class=""><code>packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md</code> provides template</li>
+<li class="">Comprehensive 12-step RW trigger documented</li>
+<li class="">Good reference for client projects</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Documentation</strong></p>
+<ul>
+<li class="">RW trigger section well-documented</li>
+<li class="">Clear instructions for adding to <code>.cursorrules</code></li>
+<li class="">Good examples provided</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=44-bad-practices>4.4 Bad Practices<a href=#44-bad-practices class=hash-link aria-label="Direct link to 4.4 Bad Practices" title="Direct link to 4.4 Bad Practices" translate=no>​</a></h3>
+<p>❌ <strong>What Needs Improvement:</strong></p>
+<ol>
+<li class="">
+<p><strong>No <code>.cursorrules</code> File</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> ai-dev-kit doesn't have a <code>.cursorrules</code> file</li>
+<li class=""><strong>Impact:</strong> Cannot demonstrate RW trigger to client projects</li>
+<li class=""><strong>Recommendation:</strong> Create <code>.cursorrules</code> file with RW trigger section</li>
+</ul>
+</li>
+<li class="">
+<p><strong>No Document Lifecycle Management</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> No document lifecycle section in <code>.cursorrules</code></li>
+<li class=""><strong>Impact:</strong> No lifecycle management rules</li>
+<li class=""><strong>Recommendation:</strong> Add document lifecycle section</li>
+</ul>
+</li>
+<li class="">
+<p><strong>No Git Workflow Restrictions</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> No git restrictions in <code>.cursorrules</code></li>
+<li class=""><strong>Impact:</strong> No workflow enforcement</li>
+<li class=""><strong>Recommendation:</strong> Add git workflow restrictions</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-versioning-analysis>5. Versioning Analysis<a href=#5-versioning-analysis class=hash-link aria-label="Direct link to 5. Versioning Analysis" title="Direct link to 5. Versioning Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-structure-overview>5.1 Structure Overview<a href=#51-structure-overview class=hash-link aria-label="Direct link to 5.1 Structure Overview" title="Direct link to 5.1 Structure Overview" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Version File:</strong> <code>src/fynd_deals/version.py</code> (legacy path)</li>
+<li class=""><strong>Version Schema:</strong> <code>RC.EPIC.STORY.TASK+BUILD</code> ✅</li>
+<li class=""><strong>Current Version:</strong> v0.6.6.6+1 (Epic 6, Story 6, Task 6, Build 1)</li>
+<li class=""><strong>Version Bumping:</strong> In RW ✅</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-distance-from-adk-canonical-versioning-structure>5.2 Distance from ADK Canonical Versioning Structure<a href=#52-distance-from-adk-canonical-versioning-structure class=hash-link aria-label="Direct link to 5.2 Distance from ADK Canonical Versioning Structure" title="Direct link to 5.2 Distance from ADK Canonical Versioning Structure" translate=no>​</a></h3>
+<p><strong>Comparison to ADK Canonical:</strong></p>
+<p><strong>Version Schema:</strong> ✅ <strong>MATCHES</strong></p>
+<ul>
+<li class="">Format: <code>RC.EPIC.STORY.TASK+BUILD</code> ✅</li>
+<li class="">Proper schema definition ✅</li>
+</ul>
+<p><strong>Version File Location:</strong> ⚠️ <strong>LEGACY PATH</strong></p>
+<ul>
+<li class=""><strong>Expected:</strong> <code>src/ai_dev_kit/version.py</code> (or <code>src/\{project\}/version.py</code>)</li>
+<li class=""><strong>Actual:</strong> <code>src/fynd_deals/version.py</code> (legacy path from fynd.deals)</li>
+<li class=""><strong>Impact:</strong> Legacy path, not following own canonical structure</li>
+<li class=""><strong>Recommendation:</strong> Migrate to <code>src/ai_dev_kit/version.py</code></li>
+</ul>
+<p><strong>Version Bumping:</strong> ✅ <strong>GOOD</strong></p>
+<ul>
+<li class="">Version bumped in RW ✅</li>
+<li class="">Proper version progression ✅</li>
+</ul>
+<p><strong>Drift Assessment:</strong></p>
+<ul>
+<li class=""><strong>Severity:</strong> <strong>MINOR</strong> (legacy path, but functional)</li>
+<li class=""><strong>Root Cause:</strong> Historical path from fynd.deals project</li>
+<li class=""><strong>Impact:</strong> Minor - path doesn't match canonical structure</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=53-good-practices>5.3 Good Practices<a href=#53-good-practices class=hash-link aria-label="Direct link to 5.3 Good Practices" title="Direct link to 5.3 Good Practices" translate=no>​</a></h3>
+<p>✅ <strong>What Works Well:</strong></p>
+<ol>
+<li class="">
+<p><strong>Proper Version Schema</strong></p>
+<ul>
+<li class=""><code>RC.EPIC.STORY.TASK+BUILD</code> schema correctly implemented</li>
+<li class="">Version file properly structured</li>
+<li class="">Version bumping in RW</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Version Documentation</strong></p>
+<ul>
+<li class="">Versioning policy well-documented</li>
+<li class="">Versioning cookbook provides examples</li>
+<li class="">Integration guides available</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=54-bad-practices>5.4 Bad Practices<a href=#54-bad-practices class=hash-link aria-label="Direct link to 5.4 Bad Practices" title="Direct link to 5.4 Bad Practices" translate=no>​</a></h3>
+<p>❌ <strong>What Needs Improvement:</strong></p>
+<ol>
+<li class=""><strong>Legacy Version File Path</strong>
+<ul>
+<li class=""><strong>Issue:</strong> <code>src/fynd_deals/version.py</code> instead of <code>src/ai_dev_kit/version.py</code></li>
+<li class=""><strong>Impact:</strong> Doesn't follow own canonical structure</li>
+<li class=""><strong>Recommendation:</strong> Migrate to canonical path</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-framework-packages-analysis>6. Framework Packages Analysis<a href=#6-framework-packages-analysis class=hash-link aria-label="Direct link to 6. Framework Packages Analysis" title="Direct link to 6. Framework Packages Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-structure-overview>6.1 Structure Overview<a href=#61-structure-overview class=hash-link aria-label="Direct link to 6.1 Structure Overview" title="Direct link to 6.1 Structure Overview" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Framework Packages:</strong> 4 frameworks in <code>packages/frameworks/</code>
+<ul>
+<li class=""><code>kanban/</code> - Kanban Framework ✅</li>
+<li class=""><code>workflow mgt/</code> - Workflow Management Framework ✅</li>
+<li class=""><code>numbering-versioning/</code> - Versioning Framework ✅</li>
+<li class=""><code>doc-lifecycle/</code> - Document Lifecycle Framework ✅</li>
+<li class=""><code>debug-path/</code> - Debug Path Framework ✅</li>
+</ul>
+</li>
+</ul>
+<p><strong>Framework Structure:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">packages/frameworks/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── kanban/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── templates/          # Epic/Story/Task templates ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── scripts/            # Installation and migration scripts ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── policies/           # Governance policies ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   └── README.md          # Framework documentation ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── workflow mgt/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── workflows/         # Workflow YAML files ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── scripts/           # Workflow scripts ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── config/            # Config examples ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   └── README.md          # Framework documentation ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── numbering-versioning/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── versioning-policy.md ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   └── README.md          # Framework documentation ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── doc-lifecycle/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── policies/          # Lifecycle policies ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   └── README.md         # Framework documentation ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">└── debug-path/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ├── templates/         # Debug path templates ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    └── README.md         # Framework documentation ✅</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-distance-from-adk-canonical-framework-structure>6.2 Distance from ADK Canonical Framework Structure<a href=#62-distance-from-adk-canonical-framework-structure class=hash-link aria-label="Direct link to 6.2 Distance from ADK Canonical Framework Structure" title="Direct link to 6.2 Distance from ADK Canonical Framework Structure" translate=no>​</a></h3>
+<p><strong>Comparison to ADK Canonical:</strong></p>
+<p><strong>Framework Organization:</strong> ✅ <strong>MATCHES</strong></p>
+<ul>
+<li class="">Frameworks in <code>packages/frameworks/</code> ✅</li>
+<li class="">Each framework has templates, scripts, policies ✅</li>
+<li class="">Proper documentation structure ✅</li>
+</ul>
+<p><strong>Template System:</strong> ✅ <strong>EXCELLENT</strong></p>
+<ul>
+<li class="">Comprehensive template system ✅</li>
+<li class="">21 epic templates ✅</li>
+<li class="">62+ story templates ✅</li>
+<li class="">193+ task templates ✅</li>
+<li class="">Proper contextualization with placeholders ✅</li>
+</ul>
+<p><strong>Installation Scripts:</strong> ✅ <strong>GOOD</strong></p>
+<ul>
+<li class=""><code>install_kanban_framework.py</code> exists ✅</li>
+<li class=""><code>install_release_workflow.py</code> exists ✅</li>
+<li class="">Migration scripts available ✅</li>
+</ul>
+<p><strong>Documentation:</strong> ✅ <strong>EXCELLENT</strong></p>
+<ul>
+<li class="">Comprehensive README files ✅</li>
+<li class="">Installation guides ✅</li>
+<li class="">Usage guides ✅</li>
+<li class="">Troubleshooting guides ✅</li>
+</ul>
+<p><strong>Drift Assessment:</strong></p>
+<ul>
+<li class=""><strong>Severity:</strong> <strong>NONE</strong> (excellent framework structure)</li>
+<li class=""><strong>Status:</strong> ✅ ai-dev-kit's framework packages are exemplary</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=63-good-practices>6.3 Good Practices<a href=#63-good-practices class=hash-link aria-label="Direct link to 6.3 Good Practices" title="Direct link to 6.3 Good Practices" translate=no>​</a></h3>
+<p>✅ <strong>What Works Well:</strong></p>
+<ol>
+<li class="">
+<p><strong>Comprehensive Template System</strong></p>
+<ul>
+<li class="">21 epic templates with proper placeholders</li>
+<li class="">62+ story templates</li>
+<li class="">193+ task templates</li>
+<li class="">Proper contextualization</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Installation Scripts</strong></p>
+<ul>
+<li class="">Kanban installer with multiple modes</li>
+<li class="">RW installer</li>
+<li class="">Migration utilities</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Documentation</strong></p>
+<ul>
+<li class="">Comprehensive framework documentation</li>
+<li class="">Installation guides</li>
+<li class="">Usage guides</li>
+<li class="">Troubleshooting guides</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Canonical Epic Templates</strong></p>
+<ul>
+<li class="">Epic templates properly separated from ai-dev-kit's actual epics</li>
+<li class="">Clear distinction between canonical and project-specific</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=64-bad-practices>6.4 Bad Practices<a href=#64-bad-practices class=hash-link aria-label="Direct link to 6.4 Bad Practices" title="Direct link to 6.4 Bad Practices" translate=no>​</a></h3>
+<p>❌ <strong>What Needs Improvement:</strong></p>
+<ol>
+<li class=""><strong>Epic 9 Template vs Actual Epic 9 Mismatch</strong>
+<ul>
+<li class=""><strong>Issue:</strong> Canonical template Epic 9 is "User Management and Authentication", but ai-dev-kit's actual Epic 9 is "Book Related Work"</li>
+<li class=""><strong>Impact:</strong> CRITICAL - Causes confusion and mashup in client projects</li>
+<li class=""><strong>Recommendation:</strong>
+<ul>
+<li class="">Rename ai-dev-kit's Epic 9 to Epic 24+ (project-specific range)</li>
+<li class="">OR clearly document that Epic 9 in ai-dev-kit is project-specific</li>
+<li class="">Ensure installer uses canonical templates, not ai-dev-kit's actual epics</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-framework-drift-analysis>7. Framework Drift Analysis<a href=#7-framework-drift-analysis class=hash-link aria-label="Direct link to 7. Framework Drift Analysis" title="Direct link to 7. Framework Drift Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-drift-summary>7.1 Drift Summary<a href=#71-drift-summary class=hash-link aria-label="Direct link to 7.1 Drift Summary" title="Direct link to 7.1 Drift Summary" translate=no>​</a></h3>
+<p><strong>Overall Drift Level:</strong> <strong>MODERATE</strong> (some inconsistencies, but mostly good)</p>
+<p><strong>Areas of Drift:</strong></p>
+<ol>
+<li class=""><strong>Kanban:</strong> <strong>CRITICAL</strong> - Epic 9 mismatch (ai-dev-kit's actual Epic 9 vs canonical template Epic 9)</li>
+<li class=""><strong>Workflows:</strong> <strong>MODERATE</strong> - Missing <code>.cursorrules</code> file and <code>rw-config.yaml</code> in project root</li>
+<li class=""><strong>Versioning:</strong> <strong>MINOR</strong> - Legacy version file path</li>
+<li class=""><strong>KB:</strong> <strong>NONE</strong> - Perfect match with canonical</li>
+<li class=""><strong>Framework Packages:</strong> <strong>NONE</strong> - Excellent structure</li>
+</ol>
+<p><strong>Why Drift Occurred:</strong></p>
+<ol>
+<li class="">
+<p><strong>Epic 9 Mismatch:</strong></p>
+<ul>
+<li class="">ai-dev-kit uses Epic 9 for its own project-specific work (book project)</li>
+<li class="">Canonical templates define Epic 9 as "User Management and Authentication"</li>
+<li class="">No clear separation between ai-dev-kit's actual Kanban and canonical templates</li>
+<li class="">Historical evolution (Epic 9 was added for book work before canonical Epic 9 was defined)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Missing <code>.cursorrules</code>:</strong></p>
+<ul>
+<li class="">ai-dev-kit doesn't use its own cursorrules framework</li>
+<li class="">RW executed manually/by convention</li>
+<li class="">No need for RW trigger in source repository (workflows executed directly)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Legacy Version Path:</strong></p>
+<ul>
+<li class="">Historical path from fynd.deals project</li>
+<li class="">Not migrated to canonical path</li>
+</ul>
+</li>
+</ol>
+<p><strong>Impact of Continued Development:</strong></p>
+<ul>
+<li class="">Epic 9 mismatch will continue to cause mashup in client projects</li>
+<li class="">Missing <code>.cursorrules</code> prevents demonstration of RW trigger</li>
+<li class="">Legacy version path doesn't follow own canonical structure</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-what-adk-can-learn-from-ai-dev-kit-self-analysis>8. What ADK Can Learn from ai-dev-kit (Self-Analysis)<a href=#8-what-adk-can-learn-from-ai-dev-kit-self-analysis class=hash-link aria-label="Direct link to 8. What ADK Can Learn from ai-dev-kit (Self-Analysis)" title="Direct link to 8. What ADK Can Learn from ai-dev-kit (Self-Analysis)" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=81-what-to-implement>8.1 What to Implement<a href=#81-what-to-implement class=hash-link aria-label="Direct link to 8.1 What to Implement" title="Direct link to 8.1 What to Implement" translate=no>​</a></h3>
+<p>✅ <strong>Good Practices to Adopt:</strong></p>
+<ol>
+<li class="">
+<p><strong>Comprehensive Template System</strong></p>
+<ul>
+<li class="">21 epic templates, 62+ story templates, 193+ task templates</li>
+<li class="">Proper contextualization with placeholders</li>
+<li class="">Clear template organization</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Perfect KB Structure</strong></p>
+<ul>
+<li class="">5-pillar canonical structure implemented perfectly</li>
+<li class="">Good reference implementation</li>
+<li class="">Proper lifecycle metadata</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Framework Package Organization</strong></p>
+<ul>
+<li class="">Excellent framework package structure</li>
+<li class="">Clear separation of templates, scripts, policies</li>
+<li class="">Comprehensive documentation</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=82-how-to-harden>8.2 How to Harden<a href=#82-how-to-harden class=hash-link aria-label="Direct link to 8.2 How to Harden" title="Direct link to 8.2 How to Harden" translate=no>​</a></h3>
+<p>🔧 <strong>Hardening Opportunities:</strong></p>
+<ol>
+<li class="">
+<p><strong>CRITICAL: Fix Epic 9 Mismatch</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> Epic 9 "Book Related Work" conflicts with canonical Epic 9 "User Management and Authentication"</li>
+<li class=""><strong>Solution:</strong>
+<ul>
+<li class="">Rename ai-dev-kit's Epic 9 to Epic 24+ (project-specific range)</li>
+<li class="">OR clearly document that Epic 9 in ai-dev-kit is project-specific</li>
+<li class="">Ensure installer validation prevents Epic mashup</li>
+</ul>
+</li>
+<li class=""><strong>Priority:</strong> CRITICAL</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Add <code>.cursorrules</code> File</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> ai-dev-kit doesn't have a <code>.cursorrules</code> file</li>
+<li class=""><strong>Solution:</strong> Create <code>.cursorrules</code> file with RW trigger section</li>
+<li class=""><strong>Priority:</strong> HIGH (for demonstration purposes)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Add <code>rw-config.yaml</code> to Project Root</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> Only example config exists, not actual config</li>
+<li class=""><strong>Solution:</strong> Create <code>rw-config.yaml</code> in project root</li>
+<li class=""><strong>Priority:</strong> HIGH</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Migrate Version File Path</strong></p>
+<ul>
+<li class=""><strong>Issue:</strong> Legacy path <code>src/fynd_deals/version.py</code></li>
+<li class=""><strong>Solution:</strong> Migrate to <code>src/ai_dev_kit/version.py</code></li>
+<li class=""><strong>Priority:</strong> MEDIUM</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=83-what-not-to-do-current-issues>8.3 What NOT to Do (Current Issues)<a href=#83-what-not-to-do-current-issues class=hash-link aria-label="Direct link to 8.3 What NOT to Do (Current Issues)" title="Direct link to 8.3 What NOT to Do (Current Issues)" translate=no>​</a></h3>
+<p>❌ <strong>Anti-Patterns Identified:</strong></p>
+<ol>
+<li class="">
+<p><strong>Epic 9 Mismatch (CRITICAL)</strong></p>
+<ul>
+<li class=""><strong>Anti-Pattern:</strong> Using Epic 9 for project-specific work when canonical Epic 9 is defined differently</li>
+<li class=""><strong>Impact:</strong> Causes mashup in 33% of client projects</li>
+<li class=""><strong>Prevention:</strong> Clear separation between ai-dev-kit's actual Kanban and canonical templates</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Missing <code>.cursorrules</code> File</strong></p>
+<ul>
+<li class=""><strong>Anti-Pattern:</strong> Not using own cursorrules framework</li>
+<li class=""><strong>Impact:</strong> Cannot demonstrate RW trigger to client projects</li>
+<li class=""><strong>Prevention:</strong> Use own frameworks in source repository</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Legacy Version Path</strong></p>
+<ul>
+<li class=""><strong>Anti-Pattern:</strong> Not following own canonical structure</li>
+<li class=""><strong>Impact:</strong> Doesn't demonstrate canonical structure</li>
+<li class=""><strong>Prevention:</strong> Follow own canonical structures</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-critical-issues-summary>9. Critical Issues Summary<a href=#9-critical-issues-summary class=hash-link aria-label="Direct link to 9. Critical Issues Summary" title="Direct link to 9. Critical Issues Summary" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=91-epic-9-mismatch-critical>9.1 Epic 9 Mismatch (CRITICAL)<a href=#91-epic-9-mismatch-critical class=hash-link aria-label="Direct link to 9.1 Epic 9 Mismatch (CRITICAL)" title="Direct link to 9.1 Epic 9 Mismatch (CRITICAL)" translate=no>​</a></h3>
+<p><strong>Issue:</strong> Epic 9 "Book Related Work" in ai-dev-kit conflicts with canonical Epic 9 "User Management and Authentication"</p>
+<p><strong>Root Cause:</strong></p>
+<ul>
+<li class="">ai-dev-kit uses Epic 9 for its own project-specific work (book project)</li>
+<li class="">Canonical templates define Epic 9 as "User Management and Authentication"</li>
+<li class="">No clear separation between ai-dev-kit's actual Kanban and canonical templates</li>
+</ul>
+<p><strong>Impact:</strong></p>
+<ul>
+<li class=""><strong>CRITICAL:</strong> Causes mashup in 33% of client projects (been-there, dev-toolkit, agentic-ide-rules)</li>
+<li class="">Client projects copying ai-dev-kit's structure get Epic 9 "Book Related Work" instead of Epic 9 "User Management and Authentication"</li>
+<li class="">Confusion about which epics are canonical vs project-specific</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<ol>
+<li class=""><strong>Option 1 (Recommended):</strong> Rename ai-dev-kit's Epic 9 to Epic 24+ (project-specific range)</li>
+<li class=""><strong>Option 2:</strong> Clearly document that Epic 9 in ai-dev-kit is project-specific, not canonical</li>
+<li class=""><strong>Option 3:</strong> Ensure installer validation prevents Epic mashup (already fixed in v0.4.6.10+1, but Epic 9 mismatch remains)</li>
+</ol>
+<p><strong>Priority:</strong> CRITICAL</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=92-missing-cursorrules-file-high>9.2 Missing <code>.cursorrules</code> File (HIGH)<a href=#92-missing-cursorrules-file-high class=hash-link aria-label="Direct link to 92-missing-cursorrules-file-high" title="Direct link to 92-missing-cursorrules-file-high" translate=no>​</a></h3>
+<p><strong>Issue:</strong> ai-dev-kit doesn't have a <code>.cursorrules</code> file</p>
+<p><strong>Root Cause:</strong> ai-dev-kit doesn't use its own cursorrules framework</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li class="">Cannot demonstrate RW trigger to client projects</li>
+<li class="">No standardized RW trigger</li>
+<li class="">RW executed manually/by convention</li>
+</ul>
+<p><strong>Solution:</strong> Create <code>.cursorrules</code> file with RW trigger section</p>
+<p><strong>Priority:</strong> HIGH</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=93-missing-rw-configyaml-in-project-root-high>9.3 Missing <code>rw-config.yaml</code> in Project Root (HIGH)<a href=#93-missing-rw-configyaml-in-project-root-high class=hash-link aria-label="Direct link to 93-missing-rw-configyaml-in-project-root-high" title="Direct link to 93-missing-rw-configyaml-in-project-root-high" translate=no>​</a></h3>
+<p><strong>Issue:</strong> Only example config exists, not actual config in project root</p>
+<p><strong>Root Cause:</strong> Config-driven approach not implemented in ai-dev-kit itself</p>
+<p><strong>Impact:</strong> RW cannot use config-driven approach</p>
+<p><strong>Solution:</strong> Create <code>rw-config.yaml</code> in project root</p>
+<p><strong>Priority:</strong> HIGH</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-recommendations>10. Recommendations<a href=#10-recommendations class=hash-link aria-label="Direct link to 10. Recommendations" title="Direct link to 10. Recommendations" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=101-immediate-actions-critical>10.1 Immediate Actions (CRITICAL)<a href=#101-immediate-actions-critical class=hash-link aria-label="Direct link to 10.1 Immediate Actions (CRITICAL)" title="Direct link to 10.1 Immediate Actions (CRITICAL)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Fix Epic 9 Mismatch</strong></p>
+<ul>
+<li class="">Rename ai-dev-kit's Epic 9 "Book Related Work" to Epic 24+ (project-specific range)</li>
+<li class="">OR clearly document that Epic 9 in ai-dev-kit is project-specific</li>
+<li class="">Update all references to Epic 9 in ai-dev-kit</li>
+<li class="">Ensure installer uses canonical Epic 9 template, not ai-dev-kit's actual Epic 9</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Add <code>.cursorrules</code> File</strong></p>
+<ul>
+<li class="">Create <code>.cursorrules</code> file in project root</li>
+<li class="">Add comprehensive RW trigger section (12-step)</li>
+<li class="">Add document lifecycle management section</li>
+<li class="">Add git workflow restrictions section</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Add <code>rw-config.yaml</code> to Project Root</strong></p>
+<ul>
+<li class="">Create <code>rw-config.yaml</code> in project root</li>
+<li class="">Use example config as template</li>
+<li class="">Update paths to match ai-dev-kit's structure</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=102-short-term-actions-high>10.2 Short-Term Actions (HIGH)<a href=#102-short-term-actions-high class=hash-link aria-label="Direct link to 10.2 Short-Term Actions (HIGH)" title="Direct link to 10.2 Short-Term Actions (HIGH)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Migrate Version File Path</strong></p>
+<ul>
+<li class="">Migrate <code>src/fynd_deals/version.py</code> to <code>src/ai_dev_kit/version.py</code></li>
+<li class="">Update all references</li>
+<li class="">Update RW config</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Document Epic Separation</strong></p>
+<ul>
+<li class="">Clearly document which epics in ai-dev-kit are canonical vs project-specific</li>
+<li class="">Update installation guides</li>
+<li class="">Add warnings about Epic mashup</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=103-long-term-actions-medium>10.3 Long-Term Actions (MEDIUM)<a href=#103-long-term-actions-medium class=hash-link aria-label="Direct link to 10.3 Long-Term Actions (MEDIUM)" title="Direct link to 10.3 Long-Term Actions (MEDIUM)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Use Own Frameworks</strong></p>
+<ul>
+<li class="">Ensure ai-dev-kit uses its own frameworks (cursorrules, config-driven RW)</li>
+<li class="">Demonstrate best practices</li>
+<li class="">Serve as reference implementation</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Regular Self-Audits</strong></p>
+<ul>
+<li class="">Periodically audit ai-dev-kit against its own canonical structures</li>
+<li class="">Identify drift early</li>
+<li class="">Fix inconsistencies</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-summary-ai-dev-kit-self-analysis>11. Summary: ai-dev-kit Self-Analysis<a href=#11-summary-ai-dev-kit-self-analysis class=hash-link aria-label="Direct link to 11. Summary: ai-dev-kit Self-Analysis" title="Direct link to 11. Summary: ai-dev-kit Self-Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-overall-assessment>11.1 Overall Assessment<a href=#111-overall-assessment class=hash-link aria-label="Direct link to 11.1 Overall Assessment" title="Direct link to 11.1 Overall Assessment" translate=no>​</a></h3>
+<p><strong>Status:</strong> Good (with CRITICAL Epic 9 mismatch issue)</p>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li class="">✅ Perfect KB structure (5-pillar canonical)</li>
+<li class="">✅ Comprehensive template system (21 epics, 62+ stories, 193+ tasks)</li>
+<li class="">✅ Excellent framework package organization</li>
+<li class="">✅ Good workflow definitions</li>
+<li class="">✅ Proper versioning schema</li>
+</ul>
+<p><strong>Weaknesses:</strong></p>
+<ul>
+<li class="">❌ CRITICAL: Epic 9 mismatch (causes mashup in client projects)</li>
+<li class="">❌ HIGH: Missing <code>.cursorrules</code> file</li>
+<li class="">❌ HIGH: Missing <code>rw-config.yaml</code> in project root</li>
+<li class="">⚠️ MINOR: Legacy version file path</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-key-findings>11.2 Key Findings<a href=#112-key-findings class=hash-link aria-label="Direct link to 11.2 Key Findings" title="Direct link to 11.2 Key Findings" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Epic 9 Mismatch is ROOT CAUSE of Mashup</strong></p>
+<ul>
+<li class="">ai-dev-kit's Epic 9 "Book Related Work" conflicts with canonical Epic 9 "User Management and Authentication"</li>
+<li class="">This is the source of the mashup issue affecting 33% of client projects</li>
+</ul>
+</li>
+<li class="">
+<p><strong>ai-dev-kit Doesn't Use Its Own Frameworks</strong></p>
+<ul>
+<li class="">No <code>.cursorrules</code> file (should use own cursorrules framework)</li>
+<li class="">No <code>rw-config.yaml</code> in project root (should use config-driven approach)</li>
+<li class="">Legacy version path (should follow own canonical structure)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>KB Structure is Exemplary</strong></p>
+<ul>
+<li class="">Perfect 5-pillar canonical structure</li>
+<li class="">Good reference implementation</li>
+<li class="">Proper lifecycle metadata</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Template System is Comprehensive</strong></p>
+<ul>
+<li class="">21 epic templates, 62+ story templates, 193+ task templates</li>
+<li class="">Proper contextualization</li>
+<li class="">Clear organization</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=113-critical-actions-required>11.3 Critical Actions Required<a href=#113-critical-actions-required class=hash-link aria-label="Direct link to 11.3 Critical Actions Required" title="Direct link to 11.3 Critical Actions Required" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Fix Epic 9 Mismatch (CRITICAL)</strong></p>
+<ul>
+<li class="">Rename ai-dev-kit's Epic 9 to Epic 24+ OR document as project-specific</li>
+<li class="">Update all references</li>
+<li class="">Ensure installer uses canonical templates</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Add <code>.cursorrules</code> File (HIGH)</strong></p>
+<ul>
+<li class="">Create <code>.cursorrules</code> file with RW trigger</li>
+<li class="">Demonstrate own cursorrules framework</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Add <code>rw-config.yaml</code> (HIGH)</strong></p>
+<ul>
+<li class="">Create config in project root</li>
+<li class="">Use config-driven approach</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<p><strong>Last Updated:</strong> 2025-12-17<br/>
+<strong>Version:</strong> 1.0.0<br/>
+<strong>Status:</strong> COMPLETE</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/knowledge/analysis/projects/ai-dev-kit-adk-analysis.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ai-dev-kit/docs/knowledge/analysis/projects/agentic-ide-rules-adk-analysis><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Project Analysis: agentic-ide-rules</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ai-dev-kit/docs/knowledge/analysis/projects/been-there-adk-analysis><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Project Analysis: been-there</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#executive-summary class="table-of-contents__link toc-highlight">Executive Summary</a><li><a href=#1-kanban-structure-analysis class="table-of-contents__link toc-highlight">1. Kanban Structure Analysis</a><ul><li><a href=#11-structure-overview class="table-of-contents__link toc-highlight">1.1 Structure Overview</a><li><a href=#12-distance-from-adk-canonical-structure class="table-of-contents__link toc-highlight">1.2 Distance from ADK Canonical Structure</a><li><a href=#13-good-practices class="table-of-contents__link toc-highlight">1.3 Good Practices</a><li><a href=#14-bad-practices class="table-of-contents__link toc-highlight">1.4 Bad Practices</a></ul><li><a href=#2-knowledge-base-kb-analysis class="table-of-contents__link toc-highlight">2. Knowledge Base (KB) Analysis</a><ul><li><a href=#21-structure-overview class="table-of-contents__link toc-highlight">2.1 Structure Overview</a><li><a href=#22-distance-from-adk-canonical-kb-structure class="table-of-contents__link toc-highlight">2.2 Distance from ADK Canonical KB Structure</a><li><a href=#23-good-practices class="table-of-contents__link toc-highlight">2.3 Good Practices</a><li><a href=#24-bad-practices class="table-of-contents__link toc-highlight">2.4 Bad Practices</a></ul><li><a href=#3-workflow-analysis class="table-of-contents__link toc-highlight">3. Workflow Analysis</a><ul><li><a href=#31-structure-overview class="table-of-contents__link toc-highlight">3.1 Structure Overview</a><li><a href=#32-distance-from-adk-canonical-workflow-structure class="table-of-contents__link toc-highlight">3.2 Distance from ADK Canonical Workflow Structure</a><li><a href=#33-good-practices class="table-of-contents__link toc-highlight">3.3 Good Practices</a><li><a href=#34-bad-practices class="table-of-contents__link toc-highlight">3.4 Bad Practices</a></ul><li><a href=#4-cursorrules-analysis class="table-of-contents__link toc-highlight">4. Cursorrules Analysis</a><ul><li><a href=#41-structure-overview class="table-of-contents__link toc-highlight">4.1 Structure Overview</a><li><a href=#42-distance-from-adk-canonical-cursorrules-structure class="table-of-contents__link toc-highlight">4.2 Distance from ADK Canonical Cursorrules Structure</a><li><a href=#43-good-practices class="table-of-contents__link toc-highlight">4.3 Good Practices</a><li><a href=#44-bad-practices class="table-of-contents__link toc-highlight">4.4 Bad Practices</a></ul><li><a href=#5-versioning-analysis class="table-of-contents__link toc-highlight">5. Versioning Analysis</a><ul><li><a href=#51-structure-overview class="table-of-contents__link toc-highlight">5.1 Structure Overview</a><li><a href=#52-distance-from-adk-canonical-versioning-structure class="table-of-contents__link toc-highlight">5.2 Distance from ADK Canonical Versioning Structure</a><li><a href=#53-good-practices class="table-of-contents__link toc-highlight">5.3 Good Practices</a><li><a href=#54-bad-practices class="table-of-contents__link toc-highlight">5.4 Bad Practices</a></ul><li><a href=#6-framework-packages-analysis class="table-of-contents__link toc-highlight">6. Framework Packages Analysis</a><ul><li><a href=#61-structure-overview class="table-of-contents__link toc-highlight">6.1 Structure Overview</a><li><a href=#62-distance-from-adk-canonical-framework-structure class="table-of-contents__link toc-highlight">6.2 Distance from ADK Canonical Framework Structure</a><li><a href=#63-good-practices class="table-of-contents__link toc-highlight">6.3 Good Practices</a><li><a href=#64-bad-practices class="table-of-contents__link toc-highlight">6.4 Bad Practices</a></ul><li><a href=#7-framework-drift-analysis class="table-of-contents__link toc-highlight">7. Framework Drift Analysis</a><ul><li><a href=#71-drift-summary class="table-of-contents__link toc-highlight">7.1 Drift Summary</a></ul><li><a href=#8-what-adk-can-learn-from-ai-dev-kit-self-analysis class="table-of-contents__link toc-highlight">8. What ADK Can Learn from ai-dev-kit (Self-Analysis)</a><ul><li><a href=#81-what-to-implement class="table-of-contents__link toc-highlight">8.1 What to Implement</a><li><a href=#82-how-to-harden class="table-of-contents__link toc-highlight">8.2 How to Harden</a><li><a href=#83-what-not-to-do-current-issues class="table-of-contents__link toc-highlight">8.3 What NOT to Do (Current Issues)</a></ul><li><a href=#9-critical-issues-summary class="table-of-contents__link toc-highlight">9. Critical Issues Summary</a><ul><li><a href=#91-epic-9-mismatch-critical class="table-of-contents__link toc-highlight">9.1 Epic 9 Mismatch (CRITICAL)</a><li><a href=#92-missing-cursorrules-file-high class="table-of-contents__link toc-highlight">9.2 Missing <code>.cursorrules</code> File (HIGH)</a><li><a href=#93-missing-rw-configyaml-in-project-root-high class="table-of-contents__link toc-highlight">9.3 Missing <code>rw-config.yaml</code> in Project Root (HIGH)</a></ul><li><a href=#10-recommendations class="table-of-contents__link toc-highlight">10. Recommendations</a><ul><li><a href=#101-immediate-actions-critical class="table-of-contents__link toc-highlight">10.1 Immediate Actions (CRITICAL)</a><li><a href=#102-short-term-actions-high class="table-of-contents__link toc-highlight">10.2 Short-Term Actions (HIGH)</a><li><a href=#103-long-term-actions-medium class="table-of-contents__link toc-highlight">10.3 Long-Term Actions (MEDIUM)</a></ul><li><a href=#11-summary-ai-dev-kit-self-analysis class="table-of-contents__link toc-highlight">11. Summary: ai-dev-kit Self-Analysis</a><ul><li><a href=#111-overall-assessment class="table-of-contents__link toc-highlight">11.1 Overall Assessment</a><li><a href=#112-key-findings class="table-of-contents__link toc-highlight">11.2 Key Findings</a><li><a href=#113-critical-actions-required class="table-of-contents__link toc-highlight">11.3 Critical Actions Required</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>

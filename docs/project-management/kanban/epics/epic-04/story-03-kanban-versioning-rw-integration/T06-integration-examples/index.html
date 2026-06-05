@@ -1,0 +1,582 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Integration Examples and Edge Cases | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Integration Examples and Edge Cases | AI Dev Kit"/><meta data-rh=true name=description content="Task IDS03:T06"/><meta data-rh=true property=og:description content="Task IDS03:T06"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/project-management/kanban/","name":"Kanban Directory","position":1},{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/project-management/kanban/epics/epic-04/","name":"Epic 4: Kanban Framework","position":2},{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples","name":"Integration Examples and Edge Cases","position":3}]}</script><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/architecture/><span title=Architecture class=categoryLinkLabel_W154>Architecture</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/changelog-and-release-notes/><span title="Changelog & release notes" class=categoryLinkLabel_W154>Changelog & release notes</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/ai-dev-kit/docs/project-management/><span title="Project management" class=categoryLinkLabel_W154>Project management</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/><span title="Project Management" class=linkLabel_WmDU>Project Management</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/><span title="Kanban Directory" class=categoryLinkLabel_W154>Kanban Directory</span></a><button aria-label="Collapse sidebar category 'Kanban Directory'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/AGENTS><span title="Kanban Workflow Agents" class=linkLabel_WmDU>Kanban Workflow Agents</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/_index><span title="AI Dev Kit – Kanban Board (Quick View)" class=linkLabel_WmDU>AI Dev Kit – Kanban Board (Quick View)</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-01/><span title=epics class=categoryLinkLabel_W154>epics</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-01/><span title="Epic 1: AI Dev Kit Core" class=categoryLinkLabel_W154>Epic 1: AI Dev Kit Core</span></a><button aria-label="Expand sidebar category 'Epic 1: AI Dev Kit Core'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-02/><span title="Epic 2: Workflow Management Framework" class=categoryLinkLabel_W154>Epic 2: Workflow Management Framework</span></a><button aria-label="Expand sidebar category 'Epic 2: Workflow Management Framework'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-03/><span title="Epic 3: Numbering & Versioning Framework" class=categoryLinkLabel_W154>Epic 3: Numbering & Versioning Framework</span></a><button aria-label="Expand sidebar category 'Epic 3: Numbering & Versioning Framework'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/><span title="Epic 4: Kanban Framework" class=categoryLinkLabel_W154>Epic 4: Kanban Framework</span></a><button aria-label="Collapse sidebar category 'Epic 4: Kanban Framework'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-01-dev-kit-kanban-implementation/T01-gap-analysis-report><span title=story-01-dev-kit-kanban-implementation class=categoryLinkLabel_W154>story-01-dev-kit-kanban-implementation</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-01-dev-kit-kanban-implementation><span title="Story 001 – Dev Kit Kanban Implementation" class=linkLabel_WmDU>Story 001 – Dev Kit Kanban Implementation</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks/T01-intake-analysis-report><span title=story-02-fr-br-intake-to-tasks class=categoryLinkLabel_W154>story-02-fr-br-intake-to-tasks</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks><span title="Story 002 – FR/BR Intake to Tasks" class=linkLabel_WmDU>Story 002 – FR/BR Intake to Tasks</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T01-integration-docs-review><span title=story-03-kanban-versioning-rw-integration class=categoryLinkLabel_W154>story-03-kanban-versioning-rw-integration</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-6 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T01-integration-docs-review><span title="Integration Documentation Review" class=linkLabel_WmDU>Integration Documentation Review</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-6 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T02-root-cause-analysis><span title="Root Cause Analysis: Task → Version TASK Component Mapping Failure" class=linkLabel_WmDU>Root Cause Analysis: Task → Version TASK Component Mapping Failure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-6 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T03-versioning-rw-validation><span title="Versioning → Release Workflow Integration Validation" class=linkLabel_WmDU>Versioning → Release Workflow Integration Validation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-6 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T04-rw-kanban-validation><span title="RW → Kanban Integration Validation" class=linkLabel_WmDU>RW → Kanban Integration Validation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-6 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T05-create-dev-kit-integration-guide><span title="Epic 4, Story 3, Task 5: Create dev-kit integration guide" class=linkLabel_WmDU>Epic 4, Story 3, Task 5: Create dev-kit integration guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-6 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples><span title="Integration Examples and Edge Cases" class=linkLabel_WmDU>Integration Examples and Edge Cases</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-6 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T07-gap-resolution-summary><span title="RW → Kanban Integration Gap Resolution Summary" class=linkLabel_WmDU>RW → Kanban Integration Gap Resolution Summary</span></a></ul><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration><span title="Story 003 – Kanban + Versioning + RW Integration" class=linkLabel_WmDU>Story 003 – Kanban + Versioning + RW Integration</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-04-kanban-structure-refactoring/T01-refactor-kanban-file-structure-epic-xmd-epic-xepic-xmd-remov><span title=story-04-kanban-structure-refactoring class=categoryLinkLabel_W154>story-04-kanban-structure-refactoring</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-04-kanban-structure-refactoring><span title="Story 004 – Kanban Structure Refactoring" class=linkLabel_WmDU>Story 004 – Kanban Structure Refactoring</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-05-canonical-epics-for-kanban-framework/T01-add-canonical-epics-to-kanban-framework-package><span title=story-05-canonical-epics-for-kanban-framework class=categoryLinkLabel_W154>story-05-canonical-epics-for-kanban-framework</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-05-canonical-epics-for-kanban-framework><span title="Story 005 – Canonical Epics for Kanban Framework" class=linkLabel_WmDU>Story 005 – Canonical Epics for Kanban Framework</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/E4S06T07-integration-validation-report><span title=story-06-comprehensive-canonical-est-template-system class=categoryLinkLabel_W154>story-06-comprehensive-canonical-est-template-system</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system><span title="Story 006 – Comprehensive Canonical Epics/Stories/Tasks Template System" class=linkLabel_WmDU>Story 006 – Comprehensive Canonical Epics/Stories/Tasks Template System</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure><span title=story-07-migration-support-and-installation-modes class=categoryLinkLabel_W154>story-07-migration-support-and-installation-modes</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes><span title="Story 7: Migration Support and Installation Modes" class=linkLabel_WmDU>Story 7: Migration Support and Installation Modes</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption/T05-migration-plan-presentation-fr009><span title=story-08-intelligent-epic-matching-canonical-adoption class=categoryLinkLabel_W154>story-08-intelligent-epic-matching-canonical-adoption</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption><span title="Story 8: Intelligent Epic Matching and Canonical Structure Adoption" class=linkLabel_WmDU>Story 8: Intelligent Epic Matching and Canonical Structure Adoption</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification><span title=story-09-bug-fixes-and-agentic-intelligence class=categoryLinkLabel_W154>story-09-bug-fixes-and-agentic-intelligence</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence><span title="Story 9: Bug Fixes and Agentic Intelligence Implementation" class=linkLabel_WmDU>Story 9: Bug Fixes and Agentic Intelligence Implementation</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-10-agentic-kanban-task-creation-from-fr-br/T00-story-creation-and-fr-012-intake><span title=story-10-agentic-kanban-task-creation-from-fr-br class=categoryLinkLabel_W154>story-10-agentic-kanban-task-creation-from-fr-br</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-10-agentic-kanban-task-creation-from-fr-br><span title="Story 010 – Agentic Kanban Task Creation from FR/BR" class=linkLabel_WmDU>Story 010 – Agentic Kanban Task Creation from FR/BR</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T00-story-creation-and-task-decomposition><span title=story-11-kanban-granularity-discrete-task-docs class=categoryLinkLabel_W154>story-11-kanban-granularity-discrete-task-docs</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs><span title="Epic 4, Story 11: Kanban Granularity & Discrete Task Docs (Kanban Framework)" class=linkLabel_WmDU>Epic 4, Story 11: Kanban Granularity & Discrete Task Docs (Kanban Framework)</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-12-fr-br-uxr-repository-stories/T00-story-creation-and-fr-021-intake><span title=story-12-fr-br-uxr-repository-stories class=categoryLinkLabel_W154>story-12-fr-br-uxr-repository-stories</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-12-fr-br-uxr-repository-stories><span title="Epic 4, Story 12: FR/BR/UXR Repository Stories (S00 Pattern)" class=linkLabel_WmDU>Epic 4, Story 12: FR/BR/UXR Repository Stories (S00 Pattern)</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T01-kanban-board-moscow-prioritized-task-view><span title=story-13-kanban-board-moscow-prioritized-task-view class=categoryLinkLabel_W154>story-13-kanban-board-moscow-prioritized-task-view</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view><span title="Epic 4, Story 13: Kanban Board Enhancement - MoSCOW Prioritized Task View" class=linkLabel_WmDU>Epic 4, Story 13: Kanban Board Enhancement - MoSCOW Prioritized Task View</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance/T01-planning-spec-tests-impl><span title=story-14-kanban-framework-maintenance class=categoryLinkLabel_W154>story-14-kanban-framework-maintenance</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-14-kanban-framework-maintenance><span title="Story 014 – Kanban Framework Maintenance" class=linkLabel_WmDU>Story 014 – Kanban Framework Maintenance</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy/T01-finalize-and-validate-concrete-task-template-coverage><span title=story-15-procedural-task-template-generation-and-hybrid-strategy class=categoryLinkLabel_W154>story-15-procedural-task-template-generation-and-hybrid-strategy</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy><span title="Story 015 – Procedural Task Template Generation and Hybrid Strategy" class=linkLabel_WmDU>Story 015 – Procedural Task Template Generation and Hybrid Strategy</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T01-establish-expectations-baseline-for-kanban-package><span title=story-16-kanban-package-implementation-review class=categoryLinkLabel_W154>story-16-kanban-package-implementation-review</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review><span title="Story 016 – Kanban Package Implementation Review" class=linkLabel_WmDU>Story 016 – Kanban Package Implementation Review</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-kanban><span title=story-17-kanban-package-installation-evaluation class=categoryLinkLabel_W154>story-17-kanban-package-installation-evaluation</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-17-kanban-package-installation-evaluation><span title="Story 017 – Kanban Package Installation Evaluation" class=linkLabel_WmDU>Story 017 – Kanban Package Installation Evaluation</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split/T01-implement-kanban-board-info-only-split><span title=story-18-kanban-board-info-only-split class=categoryLinkLabel_W154>story-18-kanban-board-info-only-split</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-18-kanban-board-info-only-split><span title="Story 018 – Kanban Board Info-Only Split" class=linkLabel_WmDU>Story 018 – Kanban Board Info-Only Split</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-5 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T01-rw-allow-in-progress-task-releases-br060><span title=story-19-fr-br-uxr-abstract-governance-and-intake class=categoryLinkLabel_W154>story-19-fr-br-uxr-abstract-governance-and-intake</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake><span title="Story 019 – FR/BR/UXR abstract governance and intake" class=linkLabel_WmDU>Story 019 – FR/BR/UXR abstract governance and intake</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-05/><span title="Epic 5: Documentation Management and Maintenance" class=categoryLinkLabel_W154>Epic 5: Documentation Management and Maintenance</span></a><button aria-label="Expand sidebar category 'Epic 5: Documentation Management and Maintenance'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-06/><span title="Epic 6: Framework Management and Maintenance" class=categoryLinkLabel_W154>Epic 6: Framework Management and Maintenance</span></a><button aria-label="Expand sidebar category 'Epic 6: Framework Management and Maintenance'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-07/><span title="Epic 7: Codebase Maintenance and Review" class=categoryLinkLabel_W154>Epic 7: Codebase Maintenance and Review</span></a><button aria-label="Expand sidebar category 'Epic 7: Codebase Maintenance and Review'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-08/><span title="Epic 8: Tooling & Automation" class=categoryLinkLabel_W154>Epic 8: Tooling & Automation</span></a><button aria-label="Expand sidebar category 'Epic 8: Tooling & Automation'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-09/><span title="Epic 9: Release Candidate Readiness" class=categoryLinkLabel_W154>Epic 9: Release Candidate Readiness</span></a><button aria-label="Expand sidebar category 'Epic 9: Release Candidate Readiness'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-10/><span title="Epic 10: Document Lifecycle Framework" class=categoryLinkLabel_W154>Epic 10: Document Lifecycle Framework</span></a><button aria-label="Expand sidebar category 'Epic 10: Document Lifecycle Framework'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-11/><span title="Epic 11: Debug Path Framework" class=categoryLinkLabel_W154>Epic 11: Debug Path Framework</span></a><button aria-label="Expand sidebar category 'Epic 11: Debug Path Framework'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/epics/epic-21/><span title="Epic 21: Internationalization and Localization" class=categoryLinkLabel_W154>Epic 21: Internationalization and Localization</span></a><button aria-label="Expand sidebar category 'Epic 21: Internationalization and Localization'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE><span title=fr-br class=categoryLinkLabel_W154>fr-br</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/intake-completed><span title="AI Dev Kit – Intake Completed Items (FR/BR/UXR)" class=linkLabel_WmDU>AI Dev Kit – Intake Completed Items (FR/BR/UXR)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/intake-open-taskless-queue><span title="Open ∧ taskless FBU — intake queue" class=linkLabel_WmDU>Open ∧ taskless FBU — intake queue</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/intake-structure><span title="AI Dev Kit – FBU Structure" class=linkLabel_WmDU>AI Dev Kit – FBU Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/kanban-board-guide><span title="AI Dev Kit – Kanban Board Guide" class=linkLabel_WmDU>AI Dev Kit – Kanban Board Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/kanban-completed><span title="AI Dev Kit – Kanban Completed Tasks" class=linkLabel_WmDU>AI Dev Kit – Kanban Completed Tasks</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/kanban-structure><span title="AI Dev Kit – Kanban Structure" class=linkLabel_WmDU>AI Dev Kit – Kanban Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/project-management/kanban/kboard><span title="AI Dev Kit – Kanban Board" class=linkLabel_WmDU>AI Dev Kit – Kanban Board</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/project-management/rituals/><span title=Rituals class=categoryLinkLabel_W154>Rituals</span></a><button aria-label="Expand sidebar category 'Rituals'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/guides/><span title=Guides class=categoryLinkLabel_W154>Guides</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation (developer & user)" class=categoryLinkLabel_W154>Documentation (developer & user)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="Knowledge base" class=categoryLinkLabel_W154>Knowledge base</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/maintenance/BUILD_AND_UPLOAD><span title="Maintenance (portal triage)" class=categoryLinkLabel_W154>Maintenance (portal triage)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/analysis/cmw-ordering-flaw-analysis><span title=Analysis class=categoryLinkLabel_W154>Analysis</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION><span title="Implementation cycles" class=categoryLinkLabel_W154>Implementation cycles</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/developer-tools/ide-whitelist-guide><span title="Developer tools" class=categoryLinkLabel_W154>Developer tools</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/ai-dev-kit/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>Project management</span><li class=breadcrumbs__item><a class=breadcrumbs__link href=/ai-dev-kit/docs/project-management/kanban/><span>Kanban Directory</span></a><li class=breadcrumbs__item><span class=breadcrumbs__link>epics</span><li class=breadcrumbs__item><a class=breadcrumbs__link href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/><span>Epic 4: Kanban Framework</span></a><li class=breadcrumbs__item><span class=breadcrumbs__link>story-03-kanban-versioning-rw-integration</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Integration Examples and Edge Cases</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Integration Examples and Edge Cases</h1></header>
+<p><strong>Task ID:</strong> E04:S03<!-- -->:T06<br/>
+<strong>Task:</strong> E04:S03<!-- -->:T06<!-- --> – Document integration examples and edge cases<br/>
+<strong>Date:</strong> 2025-12-02<br/>
+<strong>Author:</strong> AI Agent (Auto)<br/>
+<strong>Status:</strong> ✅ COMPLETE</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=overview>Overview<a href=#overview class=hash-link aria-label="Direct link to Overview" title="Direct link to Overview" translate=no>​</a></h2>
+<p>This document provides worked examples and edge case documentation for the three-way integration between Kanban, Versioning, and Release Workflow in the dev-kit. It demonstrates real-world scenarios and how to handle edge cases that may arise during development.</p>
+<p><strong>Related Documentation:</strong></p>
+<ul>
+<li class="">Integration Guide: <code>docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md</code></li>
+<li class="">FR/BR Intake Guide: <code>packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md</code></li>
+<li class="">Release Workflow Guide: <code>packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md</code></li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=worked-examples>Worked Examples<a href=#worked-examples class=hash-link aria-label="Direct link to Worked Examples" title="Direct link to Worked Examples" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-1-fr--task--version--rw--kanban-update>Example 1: FR → Task → Version → RW → Kanban Update<a href=#example-1-fr--task--version--rw--kanban-update class=hash-link aria-label="Direct link to Example 1: FR → Task → Version → RW → Kanban Update" title="Direct link to Example 1: FR → Task → Version → RW → Kanban Update" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> A new Feature Request arrives for adding a validation script to check Kanban document consistency.</p>
+<p><strong>Step 1: Receive FR</strong></p>
+<ul>
+<li class="">FR created: <code>docs/project-management/kanban/fr-br/FR-001-kanban-consistency-validation.md</code></li>
+<li class="">Summary: "Add validation script to check Kanban document consistency"</li>
+<li class="">Priority: HIGH</li>
+<li class="">Scope: Epic 4 (Kanban Framework)</li>
+</ul>
+<p><strong>Step 2: Search for Existing Story</strong></p>
+<ul>
+<li class="">Search Epic 4 stories for "validation" or "consistency"</li>
+<li class="">Found: Story 3 (Kanban + Versioning + RW Integration) - matches scope</li>
+<li class="">Decision: Create Task under Story 3</li>
+</ul>
+<p><strong>Step 3: Create Task</strong></p>
+<ul>
+<li class="">Task created: E04:S03<!-- -->:T08<!-- --> – Add Kanban consistency validation script</li>
+<li class="">Added to story-03-kanban-versioning-rw-integration.md</li>
+<li class="">Task status: TODO</li>
+</ul>
+<p><strong>Step 4: Assign Version Number</strong></p>
+<ul>
+<li class="">
+<p>Current version: <code>0.4.3.5+1</code> (Task 5)</p>
+</li>
+<li class="">
+<p>New Task: Task 8</p>
+</li>
+<li class="">
+<p>Update <code>src/fynd_deals/version.py</code>:</p>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-python codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">VERSION_TASK </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>8</span><span class="token plain">      </span><span class="token comment" style=color:#999988;font-style:italic># Task number (Task 8: Add Kanban consistency validation script)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">VERSION_BUILD </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token plain">     </span><span class="token comment" style=color:#999988;font-style:italic># Build number (reset to 1 for new Task)</span><br/></div></code></pre></div></div>
+</li>
+<li class="">
+<p>Expected version for Task 8: <code>0.4.3.8+1</code></p>
+</li>
+</ul>
+<p><strong>Step 5: Complete Work</strong></p>
+<ul>
+<li class="">Developer creates validation script: <code>scripts/validation/validate_kanban_consistency.py</code></li>
+<li class="">Developer tests script</li>
+<li class="">Work complete</li>
+</ul>
+<p><strong>Step 6: Trigger Release Workflow</strong></p>
+<ul>
+<li class="">Developer types <code>RW</code> in AI assistant</li>
+<li class="">RW executes 11 steps:<!-- -->
+<ol>
+<li class="">Branch Safety Check ✅</li>
+<li class="">Bump Version: <code>0.4.3.5+1</code> → <code>0.4.3.8+1</code> (Task transition detected, TASK updated to 8, BUILD reset to 1)</li>
+<li class="">Create Detailed Changelog: <code>CHANGELOG_v0.4.3.8+1.md</code></li>
+<li class="">Update Main Changelog: <code>CHANGELOG.md</code></li>
+<li class="">Update README (if applicable)</li>
+<li class="">Auto-update Kanban Docs:<!-- -->
+<ul>
+<li class="">epic-04.md: <code>**Last updated:** 2025-12-02 (v0.4.3.8+1 – Task 8 complete: Add Kanban consistency validation script)</code></li>
+<li class="">epic-04.md Story Checklist: <code>- [ ] **E4:S03 – ...** - IN PROGRESS (v0.4.3.8+1)</code></li>
+<li class="">epic-04.md detailed Story section: Task 8 marked complete</li>
+<li class="">story-003.md: <code>**Last updated:** ...</code>, <code>**Version:** v0.4.3.8+1</code></li>
+<li class="">story-003.md Task Checklist: <code>- [x] **E04:S03:T08 – ...** ✅ COMPLETE (v0.4.3.8+1)</code></li>
+<li class="">story-003.md detailed Task section: <code>**Status:** ✅ **COMPLETE** (v0.4.3.8+1) - ...</code></li>
+</ul>
+</li>
+<li class="">Stage Files ✅</li>
+<li class="">Run Validators ✅</li>
+<li class="">Commit Changes ✅</li>
+<li class="">Create Git Tag: <code>v0.4.3.8+1</code> ✅</li>
+<li class="">Push to Remote ✅</li>
+</ol>
+</li>
+</ul>
+<p><strong>Result:</strong></p>
+<ul>
+<li class="">Version <code>v0.4.3.8+1</code> released</li>
+<li class="">Task 8 marked complete with forensic marker</li>
+<li class="">All Kanban docs updated</li>
+<li class="">Full traceability: FR → Task → Version → Changelog → Kanban → Git</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-2-multiple-tasks-in-same-story>Example 2: Multiple Tasks in Same Story<a href=#example-2-multiple-tasks-in-same-story class=hash-link aria-label="Direct link to Example 2: Multiple Tasks in Same Story" title="Direct link to Example 2: Multiple Tasks in Same Story" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Story 3 has multiple Tasks (T001, T002, T003, T004, T005, T007, T008) completed sequentially.</p>
+<p><strong>Task Sequence:</strong></p>
+<ol>
+<li class="">T001 → <code>v0.4.3.1+1</code> ✅</li>
+<li class="">T002 → <code>v0.4.3.2+1</code> ✅ (Task transition: TASK=2, BUILD=1)</li>
+<li class="">T003 → <code>v0.4.3.3+1</code> ✅ (Task transition: TASK=3, BUILD=1)</li>
+<li class="">T004 → <code>v0.4.3.4+1</code> ✅ (Task transition: TASK=4, BUILD=1)</li>
+<li class="">T005 → <code>v0.4.3.5+1</code> ✅ (Task transition: TASK=5, BUILD=1)</li>
+<li class="">T007 → <code>v0.4.3.7+1</code> ✅ (Task transition: TASK=7, BUILD=1)</li>
+<li class="">T008 → <code>v0.4.3.8+1</code> ✅ (Task transition: TASK=8, BUILD=1)</li>
+</ol>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li class="">Each Task gets its own <code>TASK</code> component in version</li>
+<li class=""><code>BUILD</code> resets to 1 for each new Task</li>
+<li class="">RW Step 2 detects Task transitions and updates <code>VERSION_TASK</code></li>
+<li class="">RW Step 2 resets <code>VERSION_BUILD</code> to 1 for new Tasks</li>
+<li class="">All Tasks tracked in Epic Story Checklist with version markers</li>
+</ul>
+<p><strong>Epic Story Checklist Format:</strong></p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> [ ] </span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token bold content">E4:S03 – Kanban + Versioning + RW Integration</span><span class="token bold punctuation" style=color:#393A34>**</span><span class="token plain"> - IN PROGRESS (v0.4.3.8+1)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token list punctuation" style=color:#393A34>-</span><span class="token plain"> Tasks: T01 ✅ (v0.4.3.1+1), T02 ✅ (v0.4.3.2+1), T03 ✅ (v0.4.3.3+1), T04 ✅ (v0.4.3.4+1), T05 ✅ (v0.4.3.5+1), T07 ✅ (v0.4.3.7+1), T08 ✅ (v0.4.3.8+1)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-3-story-completion-across-multiple-tasks>Example 3: Story Completion Across Multiple Tasks<a href=#example-3-story-completion-across-multiple-tasks class=hash-link aria-label="Direct link to Example 3: Story Completion Across Multiple Tasks" title="Direct link to Example 3: Story Completion Across Multiple Tasks" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Story 3 completes after Task 8, with all Tasks (T01-T08) completed.</p>
+<p><strong>Before Story Completion:</strong></p>
+<ul>
+<li class="">Story status: IN PROGRESS</li>
+<li class="">Tasks: T01-T08 all complete</li>
+<li class="">Latest version: <code>v0.4.3.8+1</code></li>
+</ul>
+<p><strong>Story Completion Process:</strong></p>
+<ol>
+<li class="">All Tasks in Story are complete</li>
+<li class="">Story owner reviews Story completion criteria</li>
+<li class="">Story marked as COMPLETE in Story document</li>
+<li class="">Next RW execution updates:<!-- -->
+<ul>
+<li class="">Story status: COMPLETE</li>
+<li class="">Epic Story Checklist: <code>- [x] **E4:S03 – ...** - COMPLETE ✅ (v0.4.3.8+1)</code></li>
+<li class="">Epic detailed Story section: Story marked complete</li>
+</ul>
+</li>
+</ol>
+<p><strong>After Story Completion:</strong></p>
+<ul>
+<li class="">Story status: COMPLETE ✅</li>
+<li class="">Story version: <code>v0.4.3.8+1</code> (last Task version)</li>
+<li class="">All Tasks have forensic markers</li>
+<li class="">Story has forensic marker in Epic Story Checklist</li>
+</ul>
+<p><strong>Note:</strong> Story completion doesn't create a new version. The last Task version (<code>v0.4.3.8+1</code>) represents the Story completion.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-4-epic-progression>Example 4: Epic Progression<a href=#example-4-epic-progression class=hash-link aria-label="Direct link to Example 4: Epic Progression" title="Direct link to Example 4: Epic Progression" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Epic 4 progresses through multiple Stories (S01, S02, S03).</p>
+<p><strong>Story Sequence:</strong></p>
+<ol>
+<li class="">
+<p>Story 1: Dev Kit Kanban Implementation</p>
+<ul>
+<li class="">Tasks: T01-T05</li>
+<li class="">Versions: <code>v0.4.1.1+1</code> through <code>v0.4.1.5+1</code></li>
+<li class="">Status: COMPLETE ✅ (v0.4.1.5+1)</li>
+</ul>
+</li>
+<li class="">
+<p>Story 2: FR/BR Intake to Tasks</p>
+<ul>
+<li class="">Tasks: T01-T05</li>
+<li class="">Versions: <code>v0.4.2.1+1</code> through <code>v0.4.2.5+1</code></li>
+<li class="">Status: COMPLETE ✅ (v0.4.2.5+1)</li>
+</ul>
+</li>
+<li class="">
+<p>Story 3: Kanban + Versioning + RW Integration</p>
+<ul>
+<li class="">Tasks: T01-T08 (in progress)</li>
+<li class="">Versions: <code>v0.4.3.1+1</code> through <code>v0.4.3.8+1</code></li>
+<li class="">Status: IN PROGRESS (v0.4.3.8+1)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Epic Progression:</strong></p>
+<ul>
+<li class="">Epic version schema: <code>0.4.S.T+B</code></li>
+<li class="">Each Story increments <code>STORY</code> component</li>
+<li class=""><code>TASK</code> and <code>BUILD</code> reset for each new Story</li>
+<li class="">Epic status: IN PROGRESS (not all Stories complete)</li>
+</ul>
+<p><strong>Epic Completion:</strong></p>
+<ul>
+<li class="">When all Stories are COMPLETE, Epic status changes to COMPLETE</li>
+<li class="">Epic version: Last Story version (e.g., <code>v0.4.3.8+1</code> if Story 3 is last)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=edge-cases>Edge Cases<a href=#edge-cases class=hash-link aria-label="Direct link to Edge Cases" title="Direct link to Edge Cases" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=edge-case-1-parallel-epic-development>Edge Case 1: Parallel Epic Development<a href=#edge-case-1-parallel-epic-development class=hash-link aria-label="Direct link to Edge Case 1: Parallel Epic Development" title="Direct link to Edge Case 1: Parallel Epic Development" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Multiple Epics (Epic 2, Epic 3, Epic 4) are developed in parallel.</p>
+<p><strong>Problem:</strong> How to handle version conflicts when Epics are merged?</p>
+<p><strong>Solution:</strong> Version schema enables parallel development:</p>
+<ul>
+<li class="">Epic 2: <code>0.2.S.T+B</code> (e.g., <code>v0.2.1.1+1</code>)</li>
+<li class="">Epic 3: <code>0.3.S.T+B</code> (e.g., <code>v0.3.1.1+1</code>)</li>
+<li class="">Epic 4: <code>0.4.S.T+B</code> (e.g., <code>v0.4.3.8+1</code>)</li>
+</ul>
+<p><strong>How It Works:</strong></p>
+<ul>
+<li class="">Each Epic has its own version stream (different <code>EPIC</code> component)</li>
+<li class="">Versions are ordered by semantic structure, not commit time</li>
+<li class="">Changelog orders by version number (canonical ordering)</li>
+<li class="">No version conflicts because <code>EPIC</code> component differs</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Epic 2: v0.2.1.1+1 (committed 2025-12-01)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Epic 3: v0.3.1.1+1 (committed 2025-12-02)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Epic 4: v0.4.3.8+1 (committed 2025-12-02)</span><br/></div></code></pre></div></div>
+<p><strong>Changelog Order (by version, not time):</strong></p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> [0.2.1.1+1] - 01-12-25</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> [0.3.1.1+1] - 02-12-25</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token title important punctuation" style=color:#393A34>##</span><span class="token title important"> [0.4.3.8+1] - 02-12-25</span><br/></div></code></pre></div></div>
+<p><strong>Best Practice:</strong></p>
+<ul>
+<li class="">Work on epic branches (<code>epic/2-*</code>, <code>epic/3-*</code>, <code>epic/4-*</code>)</li>
+<li class="">Merge to <code>main</code> when ready</li>
+<li class="">Changelog automatically orders by version number</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=edge-case-2-task-renumbering>Edge Case 2: Task Renumbering<a href=#edge-case-2-task-renumbering class=hash-link aria-label="Direct link to Edge Case 2: Task Renumbering" title="Direct link to Edge Case 2: Task Renumbering" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Task numbers need to be renumbered (e.g., Task 2 deleted, Tasks 3-5 need to become 2-4).</p>
+<p><strong>Problem:</strong> How to handle version numbers when Tasks are renumbered?</p>
+<p><strong>Solution:</strong> Version numbers are immutable. Do not change existing version numbers.</p>
+<p><strong>Process:</strong></p>
+<ol>
+<li class="">
+<p><strong>Do NOT change existing versions:</strong></p>
+<ul>
+<li class="">Task 2 (v0.4.3.2+1) - keep as is</li>
+<li class="">Task 3 (v0.4.3.3+1) - keep as is</li>
+<li class="">Task 4 (v0.4.3.4+1) - keep as is</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Update Kanban documents:</strong></p>
+<ul>
+<li class="">Renumber Tasks in Story document (T003 → T002, T004 → T003, T005 → T004)</li>
+<li class="">Update Task references in Epic document</li>
+<li class="">Update Task Checklist</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Future Tasks:</strong></p>
+<ul>
+<li class="">Continue with next available Task number</li>
+<li class="">If Task 2 was deleted, next Task can be T002 (reusing number) or T006 (skipping)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">Add note in Story document about Task renumbering</li>
+<li class="">Explain why version numbers weren't changed (immutability)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Original: T001 (v0.4.3.1+1), T002 (v0.4.3.2+1), T003 (v0.4.3.3+1), T004 (v0.4.3.4+1)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">After renumbering: T001 (v0.4.3.1+1), T002 (v0.4.3.3+1), T003 (v0.4.3.4+1)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Note: T002 version is v0.4.3.3+1 (was T003), T003 version is v0.4.3.4+1 (was T004)</span><br/></div></code></pre></div></div>
+<p><strong>Best Practice:</strong></p>
+<ul>
+<li class="">Avoid Task renumbering if possible</li>
+<li class="">If necessary, document the renumbering and preserve version immutability</li>
+<li class="">Update Kanban docs to reflect new Task numbers</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=edge-case-3-story-renumbering>Edge Case 3: Story Renumbering<a href=#edge-case-3-story-renumbering class=hash-link aria-label="Direct link to Edge Case 3: Story Renumbering" title="Direct link to Edge Case 3: Story Renumbering" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Story numbers need to be renumbered (e.g., Story 2 deleted, Story 3 becomes Story 2).</p>
+<p><strong>Problem:</strong> How to handle version numbers when Stories are renumbered?</p>
+<p><strong>Solution:</strong> Version numbers are immutable. Do not change existing version numbers.</p>
+<p><strong>Process:</strong></p>
+<ol>
+<li class="">
+<p><strong>Do NOT change existing versions:</strong></p>
+<ul>
+<li class="">Story 2 (v0.4.2.x+x) - keep as is</li>
+<li class="">Story 3 (v0.4.3.x+x) - keep as is</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Update Kanban documents:</strong></p>
+<ul>
+<li class="">Renumber Stories in Epic document (S03 → S02)</li>
+<li class="">Update Story references</li>
+<li class="">Update Story Checklist</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Future Stories:</strong></p>
+<ul>
+<li class="">Continue with next available Story number</li>
+<li class="">If Story 2 was deleted, next Story can be S002 (reusing number) or S004 (skipping)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">Add note in Epic document about Story renumbering</li>
+<li class="">Explain why version numbers weren't changed (immutability)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Original: S01 (v0.4.1.x+x), S02 (v0.4.2.x+x), S03 (v0.4.3.x+x)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">After renumbering: S01 (v0.4.1.x+x), S02 (v0.4.3.x+x)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Note: S02 version is v0.4.3.x+x (was S03)</span><br/></div></code></pre></div></div>
+<p><strong>Best Practice:</strong></p>
+<ul>
+<li class="">Avoid Story renumbering if possible</li>
+<li class="">If necessary, document the renumbering and preserve version immutability</li>
+<li class="">Update Kanban docs to reflect new Story numbers</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=edge-case-4-version-conflicts>Edge Case 4: Version Conflicts<a href=#edge-case-4-version-conflicts class=hash-link aria-label="Direct link to Edge Case 4: Version Conflicts" title="Direct link to Edge Case 4: Version Conflicts" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Two developers work on the same Task simultaneously, both create releases.</p>
+<p><strong>Problem:</strong> How to handle version conflicts when both create <code>v0.4.3.8+1</code>?</p>
+<p><strong>Solution:</strong> Version conflicts are prevented by workflow design and Git merge process.</p>
+<p><strong>Prevention:</strong></p>
+<ol>
+<li class="">
+<p><strong>Single Active Task:</strong></p>
+<ul>
+<li class="">Only one Task should be active at a time</li>
+<li class="">Kanban enforces single active Task per Story</li>
+</ul>
+</li>
+<li class="">
+<p><strong>RW Step 1 Validation:</strong></p>
+<ul>
+<li class="">RW Step 1 validates branch context</li>
+<li class="">Ensures work aligns with current branch</li>
+<li class="">Prevents cross-Task contamination</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Git Merge Process:</strong></p>
+<ul>
+<li class="">If two developers work on same Task, Git merge handles conflicts</li>
+<li class="">Version file conflicts are resolved manually</li>
+<li class="">Only one version number is used (the one that merges to main)</li>
+</ul>
+</li>
+</ol>
+<p><strong>If Conflict Occurs:</strong></p>
+<ol>
+<li class="">
+<p><strong>Detect Conflict:</strong></p>
+<ul>
+<li class="">Git merge conflict in <code>version.py</code></li>
+<li class="">Both branches have same version number</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Resolve Conflict:</strong></p>
+<ul>
+<li class="">Choose one version number (usually the one that merges to main first)</li>
+<li class="">Update other branch to use next BUILD number</li>
+<li class="">Example: Branch A has <code>v0.4.3.8+1</code>, Branch B should use <code>v0.4.3.8+2</code></li>
+</ul>
+</li>
+<li class="">
+<p><strong>Document Resolution:</strong></p>
+<ul>
+<li class="">Add note in changelog about conflict resolution</li>
+<li class="">Explain why specific version was chosen</li>
+</ul>
+</li>
+</ol>
+<p><strong>Best Practice:</strong></p>
+<ul>
+<li class="">Coordinate work to avoid parallel work on same Task</li>
+<li class="">Use Kanban to track active Tasks</li>
+<li class="">If parallel work is necessary, use different BUILD numbers</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=edge-case-5-skipped-task-numbers>Edge Case 5: Skipped Task Numbers<a href=#edge-case-5-skipped-task-numbers class=hash-link aria-label="Direct link to Edge Case 5: Skipped Task Numbers" title="Direct link to Edge Case 5: Skipped Task Numbers" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Task numbers are skipped (e.g., T001, T002, T004, T005 - T003 was deleted or never created).</p>
+<p><strong>Problem:</strong> How to handle version numbers when Task numbers are skipped?</p>
+<p><strong>Solution:</strong> Version numbers follow Task numbers, even if some are skipped.</p>
+<p><strong>Process:</strong></p>
+<ol>
+<li class="">
+<p><strong>Version Numbers Match Task Numbers:</strong></p>
+<ul>
+<li class="">T001 → <code>v0.4.3.1+1</code></li>
+<li class="">T002 → <code>v0.4.3.2+1</code></li>
+<li class="">T003 → (skipped, no version)</li>
+<li class="">T004 → <code>v0.4.3.4+1</code></li>
+<li class="">T005 → <code>v0.4.3.5+1</code></li>
+</ul>
+</li>
+<li class="">
+<p><strong>No Special Handling Required:</strong></p>
+<ul>
+<li class="">Version numbers don't need to be sequential</li>
+<li class="">Gaps in Task numbers are reflected in version numbers</li>
+<li class="">This is expected and acceptable</li>
+</ul>
+</li>
+</ol>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Epic 4, Story 3:</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- T001 (v0.4.3.1+1) ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- T002 (v0.4.3.2+1) ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- T003 (skipped)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- T004 (v0.4.3.4+1) ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- T005 (v0.4.3.5+1) ✅</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- T007 (v0.4.3.7+1) ✅ (T006 skipped)</span><br/></div></code></pre></div></div>
+<p><strong>Best Practice:</strong></p>
+<ul>
+<li class="">Document why Task numbers were skipped</li>
+<li class="">Version numbers will reflect the gaps</li>
+<li class="">No need to "fill in" missing version numbers</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=edge-case-6-multiple-builds-for-same-task>Edge Case 6: Multiple Builds for Same Task<a href=#edge-case-6-multiple-builds-for-same-task class=hash-link aria-label="Direct link to Edge Case 6: Multiple Builds for Same Task" title="Direct link to Edge Case 6: Multiple Builds for Same Task" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Same Task requires multiple releases (e.g., bug fixes, iterations).</p>
+<p><strong>Problem:</strong> How to handle multiple releases for the same Task?</p>
+<p><strong>Solution:</strong> <code>BUILD</code> component increments for each release within the same Task.</p>
+<p><strong>Process:</strong></p>
+<ol>
+<li class="">
+<p><strong>First Release:</strong></p>
+<ul>
+<li class="">Task: E04:S03<!-- -->:T08</li>
+<li class="">Version: <code>v0.4.3.8+1</code> (Task 8, Build 1)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Second Release (same Task):</strong></p>
+<ul>
+<li class="">Task: E04:S03<!-- -->:T08<!-- --> (still active)</li>
+<li class="">Version: <code>v0.4.3.8+2</code> (Task 8, Build 2)</li>
+<li class="">RW Step 2 detects same Task, increments BUILD</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Third Release (same Task):</strong></p>
+<ul>
+<li class="">Task: E04:S03<!-- -->:T08<!-- --> (still active)</li>
+<li class="">Version: <code>v0.4.3.8+3</code> (Task 8, Build 3)</li>
+<li class="">RW Step 2 detects same Task, increments BUILD</li>
+</ul>
+</li>
+</ol>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Task 8: Add Kanban consistency validation script</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- v0.4.3.8+1: Initial implementation</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- v0.4.3.8+2: Bug fix (script error handling)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- v0.4.3.8+3: Enhancement (additional validation checks)</span><br/></div></code></pre></div></div>
+<p><strong>Best Practice:</strong></p>
+<ul>
+<li class="">Use BUILD increments for iterations within same Task</li>
+<li class="">When Task is complete, move to next Task (TASK increments, BUILD resets)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=troubleshooting-common-issues>Troubleshooting Common Issues<a href=#troubleshooting-common-issues class=hash-link aria-label="Direct link to Troubleshooting Common Issues" title="Direct link to Troubleshooting Common Issues" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=issue-1-version-task-component-not-updating>Issue 1: Version TASK Component Not Updating<a href=#issue-1-version-task-component-not-updating class=hash-link aria-label="Direct link to Issue 1: Version TASK Component Not Updating" title="Direct link to Issue 1: Version TASK Component Not Updating" translate=no>​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li class="">All Tasks in Story use <code>TASK=1</code></li>
+<li class="">BUILD increments across Tasks</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Ensure RW Step 2 detects Task transitions</li>
+<li class="">Verify <code>VERSION_TASK</code> in <code>version.py</code> matches active Task</li>
+<li class="">Check RW Step 1 validation passes</li>
+</ul>
+<p><strong>Reference:</strong> T002 validation report (critical issue fixed)</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=issue-2-epic-story-checklist-not-updated>Issue 2: Epic Story Checklist Not Updated<a href=#issue-2-epic-story-checklist-not-updated class=hash-link aria-label="Direct link to Issue 2: Epic Story Checklist Not Updated" title="Direct link to Issue 2: Epic Story Checklist Not Updated" translate=no>​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li class="">Epic Story Checklist missing version markers</li>
+<li class="">Inconsistency between Story Checklist and detailed sections</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Ensure RW Step 6 updates ALL sections</li>
+<li class="">Verify systematic process is followed</li>
+<li class="">Check forensic marker format is canonical</li>
+</ul>
+<p><strong>Reference:</strong> T004 validation report, T007 gap resolution</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=issue-3-version-conflicts-during-merge>Issue 3: Version Conflicts During Merge<a href=#issue-3-version-conflicts-during-merge class=hash-link aria-label="Direct link to Issue 3: Version Conflicts During Merge" title="Direct link to Issue 3: Version Conflicts During Merge" translate=no>​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li class="">Git merge conflict in <code>version.py</code></li>
+<li class="">Two branches have same version number</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Choose one version number (usually the one merging to main first)</li>
+<li class="">Update other branch to use next BUILD number</li>
+<li class="">Document conflict resolution</li>
+</ul>
+<p><strong>Reference:</strong> Edge Case 4 above</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=issue-4-task-renumbering-breaks-version-traceability>Issue 4: Task Renumbering Breaks Version Traceability<a href=#issue-4-task-renumbering-breaks-version-traceability class=hash-link aria-label="Direct link to Issue 4: Task Renumbering Breaks Version Traceability" title="Direct link to Issue 4: Task Renumbering Breaks Version Traceability" translate=no>​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li class="">Task numbers renumbered, but versions don't match</li>
+<li class="">Confusion about which version belongs to which Task</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Do NOT change existing version numbers (immutability)</li>
+<li class="">Update Kanban docs to reflect new Task numbers</li>
+<li class="">Document renumbering and version mapping</li>
+</ul>
+<p><strong>Reference:</strong> Edge Case 2 above</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=best-practices-summary>Best Practices Summary<a href=#best-practices-summary class=hash-link aria-label="Direct link to Best Practices Summary" title="Direct link to Best Practices Summary" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-always-use-rw-for-releases>1. Always Use RW for Releases<a href=#1-always-use-rw-for-releases class=hash-link aria-label="Direct link to 1. Always Use RW for Releases" title="Direct link to 1. Always Use RW for Releases" translate=no>​</a></h3>
+<p><strong>DO:</strong></p>
+<ul>
+<li class="">Type <code>RW</code> in AI assistant after completing work</li>
+<li class="">Let RW handle version bumping and Kanban updates</li>
+<li class="">Verify all steps complete successfully</li>
+</ul>
+<p><strong>DON'T:</strong></p>
+<ul>
+<li class="">Manually update version file</li>
+<li class="">Manually update Kanban docs</li>
+<li class="">Skip validation steps</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-maintain-version-immutability>2. Maintain Version Immutability<a href=#2-maintain-version-immutability class=hash-link aria-label="Direct link to 2. Maintain Version Immutability" title="Direct link to 2. Maintain Version Immutability" translate=no>​</a></h3>
+<p><strong>DO:</strong></p>
+<ul>
+<li class="">Preserve existing version numbers</li>
+<li class="">Document any renumbering</li>
+<li class="">Explain version mapping if Tasks/Stories are renumbered</li>
+</ul>
+<p><strong>DON'T:</strong></p>
+<ul>
+<li class="">Change existing version numbers</li>
+<li class="">Renumber versions to match new Task/Story numbers</li>
+<li class="">Create duplicate version numbers</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-handle-parallel-development-correctly>3. Handle Parallel Development Correctly<a href=#3-handle-parallel-development-correctly class=hash-link aria-label="Direct link to 3. Handle Parallel Development Correctly" title="Direct link to 3. Handle Parallel Development Correctly" translate=no>​</a></h3>
+<p><strong>DO:</strong></p>
+<ul>
+<li class="">Use epic branches for parallel work</li>
+<li class="">Let version schema handle ordering (canonical ordering)</li>
+<li class="">Merge to main when ready</li>
+</ul>
+<p><strong>DON'T:</strong></p>
+<ul>
+<li class="">Worry about version conflicts (EPIC component differs)</li>
+<li class="">Try to synchronize version numbers across Epics</li>
+<li class="">Force sequential version numbers</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-document-edge-cases>4. Document Edge Cases<a href=#4-document-edge-cases class=hash-link aria-label="Direct link to 4. Document Edge Cases" title="Direct link to 4. Document Edge Cases" translate=no>​</a></h3>
+<p><strong>DO:</strong></p>
+<ul>
+<li class="">Document Task/Story renumbering</li>
+<li class="">Explain version mapping if gaps exist</li>
+<li class="">Note any special circumstances</li>
+</ul>
+<p><strong>DON'T:</strong></p>
+<ul>
+<li class="">Hide edge cases</li>
+<li class="">Assume version numbers are always sequential</li>
+<li class="">Skip documentation for special cases</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=related-documentation>Related Documentation<a href=#related-documentation class=hash-link aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation" translate=no>​</a></h2>
+<ul>
+<li class=""><strong>Integration Guide:</strong> <code>docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md</code></li>
+<li class=""><strong>FR/BR Intake Guide:</strong> <code>packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md</code></li>
+<li class=""><strong>Release Workflow Guide:</strong> <code>packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md</code></li>
+<li class=""><strong>Validation Reports:</strong>
+<ul>
+<li class="">T002: Kanban → Versioning validation</li>
+<li class="">T003: Versioning → RW validation</li>
+<li class="">T004: RW → Kanban validation</li>
+<li class="">T007: Gap resolution summary</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=version-history>Version History<a href=#version-history class=hash-link aria-label="Direct link to Version History" title="Direct link to Version History" translate=no>​</a></h2>
+<ul>
+<li class=""><strong>v1.0.0</strong> (2025-12-02): Initial version created (E04:S03<!-- -->:T06<!-- -->)</li>
+</ul>
+<hr/>
+<p><em>End of Integration Examples and Edge Cases</em></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T06-integration-examples.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T05-create-dev-kit-integration-guide><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Epic 4, Story 3, Task 5: Create dev-kit integration guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ai-dev-kit/docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration/T07-gap-resolution-summary><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>RW → Kanban Integration Gap Resolution Summary</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#overview class="table-of-contents__link toc-highlight">Overview</a><li><a href=#worked-examples class="table-of-contents__link toc-highlight">Worked Examples</a><ul><li><a href=#example-1-fr--task--version--rw--kanban-update class="table-of-contents__link toc-highlight">Example 1: FR → Task → Version → RW → Kanban Update</a><li><a href=#example-2-multiple-tasks-in-same-story class="table-of-contents__link toc-highlight">Example 2: Multiple Tasks in Same Story</a><li><a href=#example-3-story-completion-across-multiple-tasks class="table-of-contents__link toc-highlight">Example 3: Story Completion Across Multiple Tasks</a><li><a href=#example-4-epic-progression class="table-of-contents__link toc-highlight">Example 4: Epic Progression</a></ul><li><a href=#edge-cases class="table-of-contents__link toc-highlight">Edge Cases</a><ul><li><a href=#edge-case-1-parallel-epic-development class="table-of-contents__link toc-highlight">Edge Case 1: Parallel Epic Development</a><li><a href=#edge-case-2-task-renumbering class="table-of-contents__link toc-highlight">Edge Case 2: Task Renumbering</a><li><a href=#edge-case-3-story-renumbering class="table-of-contents__link toc-highlight">Edge Case 3: Story Renumbering</a><li><a href=#edge-case-4-version-conflicts class="table-of-contents__link toc-highlight">Edge Case 4: Version Conflicts</a><li><a href=#edge-case-5-skipped-task-numbers class="table-of-contents__link toc-highlight">Edge Case 5: Skipped Task Numbers</a><li><a href=#edge-case-6-multiple-builds-for-same-task class="table-of-contents__link toc-highlight">Edge Case 6: Multiple Builds for Same Task</a></ul><li><a href=#troubleshooting-common-issues class="table-of-contents__link toc-highlight">Troubleshooting Common Issues</a><ul><li><a href=#issue-1-version-task-component-not-updating class="table-of-contents__link toc-highlight">Issue 1: Version TASK Component Not Updating</a><li><a href=#issue-2-epic-story-checklist-not-updated class="table-of-contents__link toc-highlight">Issue 2: Epic Story Checklist Not Updated</a><li><a href=#issue-3-version-conflicts-during-merge class="table-of-contents__link toc-highlight">Issue 3: Version Conflicts During Merge</a><li><a href=#issue-4-task-renumbering-breaks-version-traceability class="table-of-contents__link toc-highlight">Issue 4: Task Renumbering Breaks Version Traceability</a></ul><li><a href=#best-practices-summary class="table-of-contents__link toc-highlight">Best Practices Summary</a><ul><li><a href=#1-always-use-rw-for-releases class="table-of-contents__link toc-highlight">1. Always Use RW for Releases</a><li><a href=#2-maintain-version-immutability class="table-of-contents__link toc-highlight">2. Maintain Version Immutability</a><li><a href=#3-handle-parallel-development-correctly class="table-of-contents__link toc-highlight">3. Handle Parallel Development Correctly</a><li><a href=#4-document-edge-cases class="table-of-contents__link toc-highlight">4. Document Edge Cases</a></ul><li><a href=#related-documentation class="table-of-contents__link toc-highlight">Related Documentation</a><li><a href=#version-history class="table-of-contents__link toc-highlight">Version History</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>

@@ -1,0 +1,38 @@
+# Optional GitHub Actions workflow — copy to YOUR repository
+#
+# Suggested path: .github/workflows/upstream-doc-reminder.yml
+#
+# Purpose: Periodic reminder to review external README/changelog/badge upstreams.
+# ai-dev-kit does not run this workflow in the ai-dev-kit repo.
+#
+# Customize: schedule, URLs, and notification steps for your team.
+
+name: Upstream doc reminder
+
+on:
+  schedule:
+    # First day of each quarter — adjust cron to your timezone/preference
+    - cron: "0 9 1 1,4,7,10 *"
+  workflow_dispatch:
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Reminder
+        run: |
+          echo "Review upstream doc/style resources listed in DEPENDENCIES.md (or your register)."
+          echo "Standard trio:"
+          echo "  - https://github.com/othneildrew/Best-README-Template"
+          echo "  - https://keepachangelog.com/"
+          echo "  - https://shields.io/"
+          echo "See: adopter-external-resource-dependency-tracking.md in ai-dev-kit user-docs."
+
+      # Optional: add link checks (uncomment and install tools as needed)
+      # - name: Check upstream URLs respond
+      #   run: |
+      #     curl -fsSL -o /dev/null https://keepachangelog.com/
+      #     curl -fsSL -o /dev/null https://shields.io/

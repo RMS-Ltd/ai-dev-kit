@@ -1,0 +1,230 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-documentation/engineering-and-platform/comprehensive-canonical-est-structure-design" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Comprehensive Canonical Epics/Stories/Tasks Structure Design | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/documentation/engineering-and-platform/comprehensive-canonical-est-structure-design /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Comprehensive Canonical Epics/Stories/Tasks Structure Design | AI Dev Kit"/><meta data-rh=true name=description content="Document Type: Design Documentation"/><meta data-rh=true property=og:description content="Document Type: Design Documentation"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/documentation/engineering-and-platform/comprehensive-canonical-est-structure-design /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/documentation/engineering-and-platform/comprehensive-canonical-est-structure-design hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/documentation/engineering-and-platform/comprehensive-canonical-est-structure-design hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/documentation/engineering-and-platform/comprehensive-canonical-est-structure-design","name":"Comprehensive Canonical Epics/Stories/Tasks Structure Design","position":1}]}</script><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/architecture/><span title=Architecture class=categoryLinkLabel_W154>Architecture</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/changelog-and-release-notes/><span title="Changelog & release notes" class=categoryLinkLabel_W154>Changelog & release notes</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/project-management/><span title="Project management" class=categoryLinkLabel_W154>Project management</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/guides/><span title=Guides class=categoryLinkLabel_W154>Guides</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation (developer & user)" class=categoryLinkLabel_W154>Documentation (developer & user)</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation portal index" class=linkLabel_WmDU>Documentation portal index</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/ai-dev-kit-vision-and-purpose><span title="AI Dev Kit: Vision and Purpose" class=linkLabel_WmDU>AI Dev Kit: Vision and Purpose</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/ai-dev-kit/docs/documentation/engineering-and-platform/canonical-epic-pattern-analysis><span title=engineering-and-platform class=categoryLinkLabel_W154>engineering-and-platform</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/engineering-and-platform/canonical-epic-pattern-analysis><span title="Canonical Epic Pattern Analysis" class=linkLabel_WmDU>Canonical Epic Pattern Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/ai-dev-kit/docs/documentation/engineering-and-platform/comprehensive-canonical-est-structure-design><span title="Comprehensive Canonical Epics/Stories/Tasks Structure Design" class=linkLabel_WmDU>Comprehensive Canonical Epics/Stories/Tasks Structure Design</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/engineering-and-platform/knowledge-service-vision><span title="Problem-Solution KB Service — Vision & Plan" class=linkLabel_WmDU>Problem-Solution KB Service — Vision & Plan</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/engineering-and-platform/open-kb-starter-map><span title="Open KB Starter Map for Engineering Teams" class=linkLabel_WmDU>Open KB Starter Map for Engineering Teams</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/engineering-and-platform/versioning-task-ordering-anti-pattern><span title="Avoiding Task-Ordering Drift in RC.EPIC.STORY.TASK+BUILD" class=linkLabel_WmDU>Avoiding Task-Ordering Drift in RC.EPIC.STORY.TASK+BUILD</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/documentation/templates/epic-pir-template><span title=templates class=categoryLinkLabel_W154>templates</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/EXISTING_PROJECT_ROLLOUT_CHECKLIST><span title=user-docs class=categoryLinkLabel_W154>user-docs</span></a></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="Knowledge base" class=categoryLinkLabel_W154>Knowledge base</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/maintenance/BUILD_AND_UPLOAD><span title="Maintenance (portal triage)" class=categoryLinkLabel_W154>Maintenance (portal triage)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/analysis/cmw-ordering-flaw-analysis><span title=Analysis class=categoryLinkLabel_W154>Analysis</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION><span title="Implementation cycles" class=categoryLinkLabel_W154>Implementation cycles</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/developer-tools/ide-whitelist-guide><span title="Developer tools" class=categoryLinkLabel_W154>Developer tools</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/ai-dev-kit/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>Documentation (developer & user)</span><li class=breadcrumbs__item><span class=breadcrumbs__link>engineering-and-platform</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Comprehensive Canonical Epics/Stories/Tasks Structure Design</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Comprehensive Canonical Epics/Stories/Tasks Structure Design</h1></header>
+<p><strong>Document Type:</strong> Design Documentation<br/>
+<strong>Status:</strong> Design Complete, Implementation Pending<br/>
+<strong>Related:</strong> FR-005, BR-004<br/>
+<strong>Created:</strong> 2025-12-09<br/>
+<strong>Version:</strong> 1.0</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary>Summary<a href=#summary class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>This document describes the design and rationale for a comprehensive canonical Epics/Stories/Tasks (E/S/T) structure that provides a complete, scalable template system for projects adopting ai-dev-kit. The structure addresses the need for a systematic approach to canonical patterns, eliminating the ad-hoc nature of previous canonical epic additions.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=problem-statement>Problem Statement<a href=#problem-statement class=hash-link aria-label="Direct link to Problem Statement" title="Direct link to Problem Statement" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=original-problem-br-004>Original Problem (BR-004)<a href=#original-problem-br-004 class=hash-link aria-label="Direct link to Original Problem (BR-004)" title="Direct link to Original Problem (BR-004)" translate=no>​</a></h3>
+<p>When using ai-dev-kit as a template, new projects receive all epics (1-9) from the template repository, including project-specific epics (5-9) that are specific to ai-dev-kit. This causes epic contamination and confusion about which epics are canonical vs. project-specific.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=broader-problem-fr-005>Broader Problem (FR-005)<a href=#broader-problem-fr-005 class=hash-link aria-label="Direct link to Broader Problem (FR-005)" title="Direct link to Broader Problem (FR-005)" translate=no>​</a></h3>
+<p>The approach to adding canonical epics has been ad-hoc. There was no systematic template system for canonical epics/stories/tasks that could be contextualized for new projects. Solo developers and teams starting new projects had to expend cognitive energy thinking up E/S/T structure, rather than having a comprehensive, ready-to-use structure.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-requirements>Use Case Requirements<a href=#use-case-requirements class=hash-link aria-label="Direct link to Use Case Requirements" title="Direct link to Use Case Requirements" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Solo developers</strong> need a structure that works for tiny projects</li>
+<li class=""><strong>Small teams</strong> need a structure that scales to early-stage projects</li>
+<li class=""><strong>Ambitious projects</strong> (like Confidentia, fynd.deals) need comprehensive coverage</li>
+<li class=""><strong>All projects</strong> need minimal cognitive load - structure should be pre-defined and contextualizable</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=solution-design>Solution Design<a href=#solution-design class=hash-link aria-label="Direct link to Solution Design" title="Direct link to Solution Design" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=comprehensive-canonical-structure>Comprehensive Canonical Structure<a href=#comprehensive-canonical-structure class=hash-link aria-label="Direct link to Comprehensive Canonical Structure" title="Direct link to Comprehensive Canonical Structure" translate=no>​</a></h3>
+<p>Created <code>COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md</code> with:</p>
+<ol>
+<li class="">
+<p><strong>Framework Epics (1-7):</strong> Always included in all projects</p>
+<ul>
+<li class="">Epic 1: {PROJECT_NAME} Core</li>
+<li class="">Epic 2: Workflow Management Framework</li>
+<li class="">Epic 3: Numbering & Versioning Framework</li>
+<li class="">Epic 4: Kanban Framework</li>
+<li class="">Epic 5: FR Implementation</li>
+<li class="">Epic 6: BR Implementation</li>
+<li class="">Epic 7: User Experience Research (UXR) - <strong>NEW</strong></li>
+</ul>
+</li>
+<li class="">
+<p><strong>Project-Specific Canonical Epics (8-21+):</strong> Common patterns for ambitious projects</p>
+<ul>
+<li class="">Epic 8: Codebase Maintenance and Review</li>
+<li class="">Epic 9: User Management and Authentication</li>
+<li class="">Epic 10: Data Management and Database</li>
+<li class="">Epic 11: API and Backend Services</li>
+<li class="">Epic 12: Frontend and User Interface</li>
+<li class="">Epic 13: Testing and Quality Assurance</li>
+<li class="">Epic 14: Deployment and DevOps</li>
+<li class="">Epic 15: Security</li>
+<li class="">Epic 16: Performance and Optimization</li>
+<li class="">Epic 17: Integration and Third-Party Services</li>
+<li class="">Epic 18: Documentation</li>
+<li class="">Epic 19: Analytics and Monitoring</li>
+<li class="">Epic 20: Mobile Application</li>
+<li class="">Epic 21: Internationalization and Localization</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=structure-coverage>Structure Coverage<a href=#structure-coverage class=hash-link aria-label="Direct link to Structure Coverage" title="Direct link to Structure Coverage" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>7 Framework Epics</strong> (always included)</li>
+<li class=""><strong>14+ Project-Specific Canonical Epics</strong> (add as needed)</li>
+<li class=""><strong>~50+ Stories</strong> total (2-5 stories per epic)</li>
+<li class=""><strong>~300+ Tasks</strong> total (3-8 tasks per story)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=design-rationale>Design Rationale<a href=#design-rationale class=hash-link aria-label="Direct link to Design Rationale" title="Direct link to Design Rationale" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=epic-7-uxr-as-canonical-epic>Epic 7: UXR as Canonical Epic<a href=#epic-7-uxr-as-canonical-epic class=hash-link aria-label="Direct link to Epic 7: UXR as Canonical Epic" title="Direct link to Epic 7: UXR as Canonical Epic" translate=no>​</a></h3>
+<p><strong>Decision:</strong> Add User Experience Research (UXR) as Epic 7, bumping Codebase Maintenance to Epic 8.</p>
+<p><strong>Rationale:</strong></p>
+<ol>
+<li class=""><strong>Bridges Framework and Project Work:</strong> UXR is a universal need that bridges framework infrastructure (Epics 1-6) and project-specific work (Epics 8+). It's needed by all projects, regardless of size.</li>
+<li class=""><strong>User-Centered Design:</strong> Modern development practices emphasize user-centered design. UXR provides the organizational structure for understanding users and ensuring products meet user needs.</li>
+<li class=""><strong>Completeness:</strong> The structure was missing a canonical epic for user research, which is fundamental to product development.</li>
+<li class=""><strong>Integration with FR/BR:</strong> UXR findings often lead to FRs and BRs, making it a natural bridge between framework epics and implementation epics.</li>
+</ol>
+<p><strong>Epic 7 UXR Structure:</strong></p>
+<ul>
+<li class="">5 Stories covering the full UXR lifecycle</li>
+<li class="">~35 Tasks total (7 tasks per story)</li>
+<li class="">Covers: Research, Testing, Feedback, Journey Mapping, Insights</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=epic-ordering-rationale>Epic Ordering Rationale<a href=#epic-ordering-rationale class=hash-link aria-label="Direct link to Epic Ordering Rationale" title="Direct link to Epic Ordering Rationale" translate=no>​</a></h3>
+<p><strong>Framework Epics (1-7):</strong></p>
+<ol>
+<li class=""><strong>Epic 1:</strong> Project Core - Foundational epic that establishes the base</li>
+<li class=""><strong>Epic 2:</strong> Workflow Management - Operational framework for workflows</li>
+<li class=""><strong>Epic 3:</strong> Versioning - Operational framework for versioning</li>
+<li class=""><strong>Epic 4:</strong> Kanban - Operational framework for Kanban</li>
+<li class=""><strong>Epic 5:</strong> FR Implementation - Implementation epic (FRs come first)</li>
+<li class=""><strong>Epic 6:</strong> BR Implementation - Implementation epic (BRs follow FRs)</li>
+<li class=""><strong>Epic 7:</strong> UXR - User research epic (bridges framework and project work)</li>
+</ol>
+<p><strong>Ordering Principles:</strong></p>
+<ul>
+<li class="">Foundational epics come first (Epic 1)</li>
+<li class="">Operational frameworks follow (Epics 2-4)</li>
+<li class="">Implementation epics that support frameworks come next (Epics 5-6)</li>
+<li class="">User research epic bridges framework and project work (Epic 7)</li>
+<li class="">Project-specific epics follow (Epics 8+)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=scalability-design>Scalability Design<a href=#scalability-design class=hash-link aria-label="Direct link to Scalability Design" title="Direct link to Scalability Design" translate=no>​</a></h3>
+<p>The structure is designed to scale from tiny solo projects to ambitious enterprise projects:</p>
+<p><strong>Tiny Projects (Solo Developer, MVP):</strong></p>
+<ul>
+<li class="">Use Epics 1-7 only (framework epics)</li>
+<li class="">Skip or simplify stories/tasks as needed</li>
+<li class="">Focus on core functionality</li>
+</ul>
+<p><strong>Small Projects (1-3 Developers, Early Stage):</strong></p>
+<ul>
+<li class="">Use Epics 1-7 + 1-3 project-specific epics (Epics 8-10)</li>
+<li class="">Include essential stories only</li>
+<li class="">Focus on core features and basic infrastructure</li>
+</ul>
+<p><strong>Medium Projects (3-5 Developers, Growing):</strong></p>
+<ul>
+<li class="">Use Epics 1-7 + 3-5 project-specific epics (Epics 8-13)</li>
+<li class="">Include most stories</li>
+<li class="">Add testing, deployment, and documentation</li>
+</ul>
+<p><strong>Ambitious Projects (5+ Developers, Enterprise Scale):</strong></p>
+<ul>
+<li class="">Use full structure (Epics 1-21+)</li>
+<li class="">Include all relevant stories and tasks</li>
+<li class="">Add advanced epics (Security, Performance, Analytics, etc.)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=contextualization-system>Contextualization System<a href=#contextualization-system class=hash-link aria-label="Direct link to Contextualization System" title="Direct link to Contextualization System" translate=no>​</a></h3>
+<p><strong>Placeholders:</strong></p>
+<ul>
+<li class=""><code>\{PROJECT_NAME\}</code> → Your project name (e.g., "MyApp", "Confidentia", "fynd.deals")</li>
+<li class=""><code>\{DOMAIN\}</code> → Your project domain (e.g., "e-commerce", "healthcare", "finance")</li>
+<li class=""><code>\{TECH_STACK\}</code> → Your technology stack (e.g., "Python/Flask", "React/Node.js", "Flutter/Dart")</li>
+<li class=""><code>{TEAM_SIZE}</code> → Team size context (e.g., "solo", "small-team", "large-team")</li>
+</ul>
+<p><strong>Process:</strong></p>
+<ol>
+<li class="">Copy canonical structure</li>
+<li class="">Replace placeholders with project-specific values</li>
+<li class="">Remove irrelevant epics/stories/tasks</li>
+<li class="">Add project-specific epics/stories/tasks as needed</li>
+<li class="">Scale as project grows</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=implementation-requirements>Implementation Requirements<a href=#implementation-requirements class=hash-link aria-label="Direct link to Implementation Requirements" title="Direct link to Implementation Requirements" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phase-1-template-creation>Phase 1: Template Creation<a href=#phase-1-template-creation class=hash-link aria-label="Direct link to Phase 1: Template Creation" title="Direct link to Phase 1: Template Creation" translate=no>​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Create individual epic template files for Epics 1-7</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Create individual epic template files for Epics 8-21</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Create story template files for each typical story</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Create task template files for each typical task</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Ensure all templates use placeholders for contextualization</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phase-2-documentation>Phase 2: Documentation<a href=#phase-2-documentation class=hash-link aria-label="Direct link to Phase 2: Documentation" title="Direct link to Phase 2: Documentation" translate=no>​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Update <code>CANONICAL_EPICS.md</code> to reference comprehensive structure</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Create contextualization guide</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Create usage examples for different project types</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Document scalability guidelines</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phase-3-integration>Phase 3: Integration<a href=#phase-3-integration class=hash-link aria-label="Direct link to Phase 3: Integration" title="Direct link to Phase 3: Integration" translate=no>​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Integrate with Kanban installer/initializer (when created)</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Update template setup guide</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Create installation workflow that uses canonical templates</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Ensure separation from project-specific content</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phase-4-validation>Phase 4: Validation<a href=#phase-4-validation class=hash-link aria-label="Direct link to Phase 4: Validation" title="Direct link to Phase 4: Validation" translate=no>​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Test with tiny project (Epics 1-7 only)</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Test with small project (Epics 1-7 + 2-3 project epics)</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Test with ambitious project (full structure)</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Validate contextualization process</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Gather feedback from real project adoption</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=benefits>Benefits<a href=#benefits class=hash-link aria-label="Direct link to Benefits" title="Direct link to Benefits" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=for-solo-developers>For Solo Developers<a href=#for-solo-developers class=hash-link aria-label="Direct link to For Solo Developers" title="Direct link to For Solo Developers" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Zero cognitive load:</strong> Pre-defined structure ready to use</li>
+<li class=""><strong>Scalable:</strong> Start minimal, expand as needed</li>
+<li class=""><strong>Comprehensive:</strong> Covers all common patterns</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=for-small-teams>For Small Teams<a href=#for-small-teams class=hash-link aria-label="Direct link to For Small Teams" title="Direct link to For Small Teams" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Consistent structure:</strong> All projects start with same foundation</li>
+<li class=""><strong>Clear guidance:</strong> Know what epics/stories/tasks to include</li>
+<li class=""><strong>Time savings:</strong> No need to design structure from scratch</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=for-ambitious-projects>For Ambitious Projects<a href=#for-ambitious-projects class=hash-link aria-label="Direct link to For Ambitious Projects" title="Direct link to For Ambitious Projects" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Complete coverage:</strong> All common patterns included</li>
+<li class=""><strong>Professional structure:</strong> Enterprise-grade organization</li>
+<li class=""><strong>Flexible:</strong> Add project-specific epics as needed</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=for-framework-maintainers>For Framework Maintainers<a href=#for-framework-maintainers class=hash-link aria-label="Direct link to For Framework Maintainers" title="Direct link to For Framework Maintainers" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Systematic process:</strong> Clear criteria for canonical additions</li>
+<li class=""><strong>Maintainable:</strong> Centralized template system</li>
+<li class=""><strong>Extensible:</strong> Easy to add new canonical patterns</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=related-work>Related Work<a href=#related-work class=hash-link aria-label="Direct link to Related Work" title="Direct link to Related Work" translate=no>​</a></h2>
+<ul>
+<li class=""><strong>BR-004:</strong> Kanban Installation Includes Project-Specific Epics from Template</li>
+<li class=""><strong>FR-005:</strong> Systematic Canonical Epics/Stories/Tasks Template System</li>
+<li class=""><strong>E4:S05:</strong> Canonical Epics for Kanban Framework (created initial canonical epics documentation)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=files-created>Files Created<a href=#files-created class=hash-link aria-label="Direct link to Files Created" title="Direct link to Files Created" translate=no>​</a></h2>
+<ul>
+<li class=""><code>packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md</code> - Complete canonical structure document</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=next-steps>Next Steps<a href=#next-steps class=hash-link aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate=no>​</a></h2>
+<ol>
+<li class="">Create Kanban task for implementation (E4:SXX<!-- -->:TXX<!-- -->)</li>
+<li class="">Implement Phase 1: Template Creation</li>
+<li class="">Implement Phase 2: Documentation</li>
+<li class="">Implement Phase 3: Integration</li>
+<li class="">Implement Phase 4: Validation</li>
+</ol>
+<hr/>
+<p><strong>Last Updated:</strong> 2025-12-09<br/>
+<strong>Version:</strong> 1.0<br/>
+<strong>Maintained By:</strong> Kanban Framework Team</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/documentation/engineering-and-platform/comprehensive-canonical-est-structure-design.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ai-dev-kit/docs/documentation/engineering-and-platform/canonical-epic-pattern-analysis><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Canonical Epic Pattern Analysis</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ai-dev-kit/docs/documentation/engineering-and-platform/knowledge-service-vision><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Problem-Solution KB Service — Vision & Plan</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#summary class="table-of-contents__link toc-highlight">Summary</a><li><a href=#problem-statement class="table-of-contents__link toc-highlight">Problem Statement</a><ul><li><a href=#original-problem-br-004 class="table-of-contents__link toc-highlight">Original Problem (BR-004)</a><li><a href=#broader-problem-fr-005 class="table-of-contents__link toc-highlight">Broader Problem (FR-005)</a><li><a href=#use-case-requirements class="table-of-contents__link toc-highlight">Use Case Requirements</a></ul><li><a href=#solution-design class="table-of-contents__link toc-highlight">Solution Design</a><ul><li><a href=#comprehensive-canonical-structure class="table-of-contents__link toc-highlight">Comprehensive Canonical Structure</a><li><a href=#structure-coverage class="table-of-contents__link toc-highlight">Structure Coverage</a></ul><li><a href=#design-rationale class="table-of-contents__link toc-highlight">Design Rationale</a><ul><li><a href=#epic-7-uxr-as-canonical-epic class="table-of-contents__link toc-highlight">Epic 7: UXR as Canonical Epic</a><li><a href=#epic-ordering-rationale class="table-of-contents__link toc-highlight">Epic Ordering Rationale</a><li><a href=#scalability-design class="table-of-contents__link toc-highlight">Scalability Design</a><li><a href=#contextualization-system class="table-of-contents__link toc-highlight">Contextualization System</a></ul><li><a href=#implementation-requirements class="table-of-contents__link toc-highlight">Implementation Requirements</a><ul><li><a href=#phase-1-template-creation class="table-of-contents__link toc-highlight">Phase 1: Template Creation</a><li><a href=#phase-2-documentation class="table-of-contents__link toc-highlight">Phase 2: Documentation</a><li><a href=#phase-3-integration class="table-of-contents__link toc-highlight">Phase 3: Integration</a><li><a href=#phase-4-validation class="table-of-contents__link toc-highlight">Phase 4: Validation</a></ul><li><a href=#benefits class="table-of-contents__link toc-highlight">Benefits</a><ul><li><a href=#for-solo-developers class="table-of-contents__link toc-highlight">For Solo Developers</a><li><a href=#for-small-teams class="table-of-contents__link toc-highlight">For Small Teams</a><li><a href=#for-ambitious-projects class="table-of-contents__link toc-highlight">For Ambitious Projects</a><li><a href=#for-framework-maintainers class="table-of-contents__link toc-highlight">For Framework Maintainers</a></ul><li><a href=#related-work class="table-of-contents__link toc-highlight">Related Work</a><li><a href=#files-created class="table-of-contents__link toc-highlight">Files Created</a><li><a href=#next-steps class="table-of-contents__link toc-highlight">Next Steps</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>

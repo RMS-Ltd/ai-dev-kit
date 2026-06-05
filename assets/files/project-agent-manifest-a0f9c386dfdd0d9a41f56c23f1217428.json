@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectId": "ai-dev-kit",
+  "introduction": {
+    "summary": "AI Dev Kit — workflow frameworks, kanban tooling, validators, and release automation for agentic development.",
+    "thesisPointer": "README.md",
+    "coordinationContract": "AGENTS.md"
+  },
+  "protocol": [
+    {
+      "id": "P-IPW-GATE",
+      "rule": "No implementation until IPW package exists and user authorizes execution (implement or RW).",
+      "sourcePath": "docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md"
+    },
+    {
+      "id": "P-RW-GIT",
+      "rule": "Commits and pushes only via Release Workflow (RW); never manual git commit/push.",
+      "sourcePath": ".cursorrules"
+    },
+    {
+      "id": "P-RW-TASK-TOKEN",
+      "rule": "RW requires parseable E:S:T in trigger; Steps 1c/1d block without it.",
+      "sourcePath": "docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md"
+    },
+    {
+      "id": "P-RW-STEP7",
+      "rule": "RW Step 7 owns release-scope four-surface kanban reconciliation without UKW dependency.",
+      "sourcePath": "docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md"
+    },
+    {
+      "id": "P-EST-PADDING",
+      "rule": "Default two-digit zero-padding for E/S/T when value < 10 in new writes.",
+      "sourcePath": "docs/project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md"
+    },
+    {
+      "id": "P-TRIGGER-ROUTING",
+      "rule": "Plain-text RW/UKW/IPW/CMW/PVW at message start are workflow commands, not chat.",
+      "sourcePath": "CLAUDE.md"
+    },
+    {
+      "id": "P-INTAKE-ATOMIC",
+      "rule": "FR/BR/UXR intake requires task doc + bidirectional links in same session (KG-R2).",
+      "sourcePath": "packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md"
+    }
+  ],
+  "taskRouting": [
+    {
+      "intent": "workflows",
+      "keywords": ["RW", "UKW", "IPW", "CMW", "PVW", "release", "changelog", "kanban sync", "workflow"],
+      "loadFirst": [
+        "docs/guides/workflow-initiation-cheatsheet.md",
+        ".claude/commands/rw.md"
+      ],
+      "relatedTrack": "workflows"
+    },
+    {
+      "intent": "kanban-intake",
+      "keywords": ["FR", "BR", "UXR", "intake", "kboard", "fbuboard", "MoSCOW", "task doc"],
+      "loadFirst": [
+        "docs/project-management/kanban/kboard.md",
+        "packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md"
+      ],
+      "relatedTrack": "kanban"
+    },
+    {
+      "intent": "governance",
+      "keywords": ["ADR", "governance", "policy", "standard", "versioning"],
+      "loadFirst": [
+        "docs/governance/README.md"
+      ],
+      "relatedTrack": "governance"
+    },
+    {
+      "intent": "framework-code",
+      "keywords": ["package", "validator", "script", "pytest", "framework", "workflow mgt"],
+      "loadFirst": [
+        "packages/frameworks/workflow-mgt/README.md"
+      ],
+      "relatedTrack": "frameworks"
+    },
+    {
+      "intent": "implementation-planning",
+      "keywords": ["IPP", "ICW", "IPW", "plan mode", "implementation plan", "specification"],
+      "loadFirst": [
+        ".claude/commands/ipw.md",
+        "docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md"
+      ],
+      "relatedTrack": "planning"
+    },
+    {
+      "intent": "agent-bootstrap",
+      "keywords": ["bootstrap", "manifest", "cold start", "routing", "AGENTS"],
+      "loadFirst": [
+        "AGENTS.md"
+      ],
+      "relatedTrack": "meta"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "workflows",
+      "label": "Workflow operations (RW, UKW, IPW, CMW, PVW)",
+      "entryPath": "docs/guides/workflow-initiation-cheatsheet.md"
+    },
+    {
+      "id": "kanban",
+      "label": "Kanban boards and FR/BR/UXR intake",
+      "entryPath": "docs/project-management/kanban/kboard.md"
+    },
+    {
+      "id": "governance",
+      "label": "Governance, ADRs, policies",
+      "entryPath": "docs/governance/README.md"
+    },
+    {
+      "id": "frameworks",
+      "label": "Packaged frameworks and validators",
+      "entryPath": "packages/frameworks/workflow-mgt/README.md"
+    },
+    {
+      "id": "planning",
+      "label": "IPW / IPP / ICW planning artifacts",
+      "entryPath": ".claude/commands/ipw.md"
+    },
+    {
+      "id": "meta",
+      "label": "Agent bootstrap and routing",
+      "entryPath": "docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md"
+    }
+  ],
+  "canon": [
+    {
+      "id": "C-GOV-README",
+      "label": "Governance hub",
+      "path": "docs/governance/README.md"
+    },
+    {
+      "id": "C-VERSION-POLICY",
+      "label": "Versioning policy",
+      "path": "docs/governance/standards/dev-kit-versioning-policy.md"
+    },
+    {
+      "id": "C-ADR-012",
+      "label": "Agent bootstrap ADR",
+      "path": "docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md"
+    }
+  ],
+  "openWork": [
+    {
+      "taskId": "E07:S07:T03",
+      "summary": "BR-091 workflow validator slug path resolution (v0.7.7.3+1 released; CI verification pending)",
+      "taskDocPath": "docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md",
+      "priority": "HIGH"
+    }
+  ]
+}

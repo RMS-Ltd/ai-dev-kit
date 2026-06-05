@@ -1,0 +1,376 @@
+"use strict";
+(self["webpackChunkportal"] = self["webpackChunkportal"] || []).push([["54707"], {
+15501(__unused_rspack_module, __webpack_exports__, __webpack_require__) {
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  metadata: () => (/* reexport */ site_docs_project_management_kanban_epics_epic_06_story_09_ai_dev_kit_installation_and_adopter_integration_t_13_rw_install_mode_c_rw_config_generation_br_084_md_76a_namespaceObject),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  contentTitle: () => (/* binding */ contentTitle),
+  toc: () => (/* binding */ toc),
+  assets: () => (/* binding */ assets)
+});
+
+;// CONCATENATED MODULE: ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-project-management-kanban-epics-epic-06-story-09-ai-dev-kit-installation-and-adopter-integration-t-13-rw-install-mode-c-rw-config-generation-br-084-md-76a.json
+var site_docs_project_management_kanban_epics_epic_06_story_09_ai_dev_kit_installation_and_adopter_integration_t_13_rw_install_mode_c_rw_config_generation_br_084_md_76a_namespaceObject = JSON.parse('{"id":"project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084","title":"Epic 6, Story 9, Task 13: RW install Mode C — rw-config generation (BR-084)","description":"Task IDS09:T13","source":"@site/../docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md","sourceDirName":"project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration","slug":"/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084","draft":false,"unlisted":false,"editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md","tags":[],"version":"current","frontMatter":{"lifecycle":"evergreen","ttl_days":null,"created_at":"2026-06-03T20:00:00.000Z","expires_at":null,"housekeeping_policy":"keep"},"sidebar":"docsSidebar","previous":{"title":"Epic 6, Story 9, Task 12: RW install rw-config pattern defaults (BR-083)","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083"},"next":{"title":"Epic 6, Story 9, Task 14: RW install story pattern prompt loop (BR-085)","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085"}}')
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// CONCATENATED MODULE: ../docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md
+
+
+const frontMatter = {
+	lifecycle: 'evergreen',
+	ttl_days: null,
+	created_at: new Date('2026-06-03T20:00:00.000Z'),
+	expires_at: null,
+	housekeeping_policy: 'keep'
+};
+const contentTitle = 'Epic 6, Story 9, Task 13: RW install Mode C — rw-config generation (BR-084)';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Version Anchor",
+  "id": "version-anchor",
+  "level": 2
+}, {
+  "value": "Scope",
+  "id": "scope",
+  "level": 2
+}, {
+  "value": "Input",
+  "id": "input",
+  "level": 2
+}, {
+  "value": "Deliverable",
+  "id": "deliverable",
+  "level": 2
+}, {
+  "value": "Acceptance Criteria",
+  "id": "acceptance-criteria",
+  "level": 2
+}, {
+  "value": "Implementation notes (2026-06-03)",
+  "id": "implementation-notes-2026-06-03",
+  "level": 2
+}, {
+  "value": "Links",
+  "id": "links",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    br: "br",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    header: "header",
+    hr: "hr",
+    input: "input",
+    li: "li",
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    ...(0,lib/* .useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "epic-6-story-9-task-13-rw-install-mode-c--rw-config-generation-br-084",
+        children: "Epic 6, Story 9, Task 13: RW install Mode C — rw-config generation (BR-084)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Task ID:"
+      }), " E06:S09", ":T13", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Status:"
+      }), " COMPLETE (pending user verification on book replay)", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Priority:"
+      }), " MEDIUM", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Created:"
+      }), " 2026-06-03", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code:"
+      }), " E06S09T13"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Upstream:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-dev-kit/docs/project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern",
+        children: "BR-084"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/issues/16",
+        children: "GitHub #16"
+      }), (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Related:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-dev-kit/docs/project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout",
+        children: "BR-083"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/issues/15",
+        children: "#15"
+      }), " (E06:S09", ":T12", ")"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "version-anchor",
+      children: "Version Anchor"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Version:"
+      }), " v0.6.9.13+2 (RW --art)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scope",
+      children: "Scope"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Fix ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "install_release_workflow.py"
+      }), " mode C so generated ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "rw-config.yaml"
+      }), " includes ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "task_doc_pattern"
+      }), ", detects fresh-kanban layout, and does not persist zero-match patterns without guardrails."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "input",
+      children: "Input"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern",
+          children: "BR-084"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/RMS-Ltd/ai-dev-kit/issues/16",
+          children: "GitHub #16"
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "IPW:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/implementation-cycles/IPP-E06S09T13-br084-rw-config-generation",
+          children: "IPP-E6S9T13-br084-rw-config-generation.md"
+        }), " — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Publication Status: PUBLISHED"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "generate_rw_config_yaml"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "collect_config_interactive"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "prompt_pattern_with_validation"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "deliverable",
+      children: "Deliverable"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "generate_rw_config_yaml"
+        }), " emits ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "task_doc_pattern"
+        }), " (+ optional ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "fr_br_root"
+        }), ") for kanban installs"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Layout detection or safe defaults aligned with fresh kanban output"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Guardrails when pattern match count is 0"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "acceptance-criteria",
+      children: "Acceptance Criteria"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      className: "contains-task-list",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "Mode C after fresh kanban: epic pattern matches ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "epics/epic-01/epic-01.md"
+        }), " without manual edit (T12 detection + strict zero-match)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "Generated config includes ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "task_doc_pattern"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "fr_br_root"
+        }), " when ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "fr-br/"
+        }), " exists."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "Integration test: temp repo fresh layout + ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "generate_rw_config_yaml"
+        }), " (epic glob ≥1)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "implementation-notes-2026-06-03",
+      children: "Implementation notes (2026-06-03)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "detect_kanban_supplementary_defaults()"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "generate_rw_config_yaml"
+        }), " kanban keys, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "strict_zero_match"
+        }), " on mode C prompts."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Tests: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "tests/test_install_release_workflow_rw_config.py"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "links",
+      children: "Links"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern",
+          children: "BR-084"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/implementation-cycles/IPP-E06S09T13-br084-rw-config-generation",
+          children: "IPP-E6S9T13"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration",
+          children: "Story 009"
+        })
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* .useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+},
+28453(__unused_rspack___webpack_module__, __webpack_exports__, __webpack_require__) {
+__webpack_require__.d(__webpack_exports__, {
+  R: () => (useMDXComponents),
+  x: () => (MDXProvider)
+});
+/* import */ var react__rspack_import_0 = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__rspack_import_0.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__rspack_import_0.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__rspack_import_0.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__rspack_import_0.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+},
+
+}]);

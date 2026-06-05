@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AI Dev Kit Blog</title>
+        <link>https://rms-ltd.github.io/ai-dev-kit/blog</link>
+        <description>AI Dev Kit Blog</description>
+        <lastBuildDate>Fri, 05 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Getting Docusaurus Working]]></title>
+            <link>https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working</link>
+            <guid>https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working</guid>
+            <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[We spent several weeks getting the AI Dev Kit documentation portal to npm run build exit 0 under strict link checking, then shipped it to GitHub Pages. This post is a practical field guide — not a hello-world tutorial — for teams publishing a monorepo docs/ tree with Docusaurus 3.x.]]></description>
+            <content:encoded><![CDATA[<p>We spent several weeks getting the AI Dev Kit documentation portal to <strong><code>npm run build</code> exit 0</strong> under strict link checking, then shipped it to GitHub Pages. This post is a practical field guide — not a hello-world tutorial — for teams publishing a <strong>monorepo <code>docs/</code> tree</strong> with Docusaurus 3.x.</p>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-we-were-building">What we were building<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#what-we-were-building" class="hash-link" aria-label="Direct link to What we were building" title="Direct link to What we were building" translate="no">​</a></h2>
+<p>The site lives in <a href="https://github.com/RMS-Ltd/ai-dev-kit/tree/main/portal" target="_blank" rel="noopener noreferrer" class=""><code>portal/</code></a> and publishes markdown from the repository <a href="https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs" target="_blank" rel="noopener noreferrer" class=""><code>docs/</code></a> tree. That keeps a single source of truth for agents, maintainers, and readers.</p>
+<p>Key config choices:</p>
+<ul>
+<li class=""><strong>Docs plugin root:</strong> <code>../docs</code> (monorepo corpus, not <code>portal/docs</code>)</li>
+<li class=""><strong>Strict gates:</strong> <code>onBrokenLinks</code>, <code>onBrokenMarkdownLinks</code>, and <code>onBrokenAnchors</code> all set to <strong><code>throw</code></strong></li>
+<li class=""><strong>Hosting:</strong> GitHub Pages at <a href="https://rms-ltd.github.io/ai-dev-kit/" target="_blank" rel="noopener noreferrer" class="">rms-ltd.github.io/ai-dev-kit</a></li>
+<li class=""><strong>Search:</strong> <code>@easyops-cn/docusaurus-search-local</code> (offline index, no Algolia)</li>
+</ul>
+<p>If your build passes locally with <code>warn</code> but fails in CI with <code>throw</code>, you have not finished the job yet.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-quick-start">Local quick start<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#local-quick-start" class="hash-link" aria-label="Direct link to Local quick start" title="Direct link to Local quick start" translate="no">​</a></h2>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">cd portal</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">npm ci</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">npm run start    # dev server → http://localhost:3000/ai-dev-kit/</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">npm run build    # production build (must exit 0 before merge)</span><br></div></code></pre></div></div>
+<p><strong>Node 20+</strong> matches our CI runner. After any Dependabot lockfile change, always run <strong><code>npm ci</code></strong> (not <code>npm install</code>) before trusting a build.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="failure-class-1--missing-docusaurusfaster">Failure class 1 — missing <code>@docusaurus/faster</code><a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#failure-class-1--missing-docusaurusfaster" class="hash-link" aria-label="Direct link to failure-class-1--missing-docusaurusfaster" title="Direct link to failure-class-1--missing-docusaurusfaster" translate="no">​</a></h2>
+<p>Dependabot bumped <code>@docusaurus/core</code> to <strong>3.10.1</strong> while <code>package.json</code> still pinned <strong>3.9.2</strong>, and our config had <code>future: { v4: true }</code>. Docusaurus 3.10 then required <strong><code>@docusaurus/faster</code></strong>, which was not installed.</p>
+<p>Typical error:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">To enable Docusaurus Faster options, your site must add the @docusaurus/faster package</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Cannot find package '@docusaurus/faster' ...</span><br></div></code></pre></div></div>
+<p><strong>Fix:</strong> align <strong>all</strong> <code>@docusaurus/*</code> pins in <code>package.json</code> and regenerate <code>package-lock.json</code>, then add <code>@docusaurus/faster</code> at the same version. Re-run <code>npm ci &amp;&amp; npm run build</code>.</p>
+<p>Lesson: treat Docusaurus as a <strong>pinned set</strong>, not independent packages. A lockfile-only bump without matching <code>package.json</code> is a time bomb.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="failure-class-2--links-that-leave-the-docs-plugin">Failure class 2 — links that leave the docs plugin<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#failure-class-2--links-that-leave-the-docs-plugin" class="hash-link" aria-label="Direct link to Failure class 2 — links that leave the docs plugin" title="Direct link to Failure class 2 — links that leave the docs plugin" translate="no">​</a></h2>
+<p>The docs plugin only ingests files under <code>docs/</code>. Markdown links like:</p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token url" style="color:#36acaa">[</span><span class="token url content" style="color:#36acaa">Install</span><span class="token url" style="color:#36acaa">](</span><span class="token url" style="color:#36acaa">../../../INSTALL_IN_YOUR_PROJECT.md</span><span class="token url" style="color:#36acaa">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token url" style="color:#36acaa">[</span><span class="token url content" style="color:#36acaa">Validator</span><span class="token url" style="color:#36acaa">](</span><span class="token url" style="color:#36acaa">../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py</span><span class="token url" style="color:#36acaa">)</span><br></div></code></pre></div></div>
+<p>look fine in GitHub's file viewer. Docusaurus cannot resolve them as in-corpus doc IDs, and with <code>onBrokenMarkdownLinks: 'throw'</code> the build stops.</p>
+<p><strong>Fix (Strategy A — BR-068):</strong> link to canonical GitHub <code>blob/main/</code> URLs:</p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token url" style="color:#36acaa">[</span><span class="token url content" style="color:#36acaa">Install in your project</span><span class="token url" style="color:#36acaa">](</span><span class="token url" style="color:#36acaa">https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md</span><span class="token url" style="color:#36acaa">)</span><br></div></code></pre></div></div>
+<p>For framework paths, use the full repository path after <code>/blob/main/</code>. Percent-encode spaces in directory names.</p>
+<p>Optional alternative: add a <strong>short stub page under <code>docs/</code></strong> when the portal must show in-sidebar content, and link the stub to the GitHub source. Do not maintain two full copies of the same document.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="failure-class-3--broken-anchors-and-mdx-surprises">Failure class 3 — broken anchors and MDX surprises<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#failure-class-3--broken-anchors-and-mdx-surprises" class="hash-link" aria-label="Direct link to Failure class 3 — broken anchors and MDX surprises" title="Direct link to Failure class 3 — broken anchors and MDX surprises" translate="no">​</a></h2>
+<p>With <code>onBrokenAnchors: 'throw'</code>, every <code>#fragment</code> must match a generated heading slug. Renamed headings silently break deep links.</p>
+<p>We also hit MDX parse issues from:</p>
+<ul>
+<li class="">Angle brackets in prose (<code>&lt;N</code>, <code>&lt;=</code>) interpreted as JSX</li>
+<li class="">Curly-brace placeholders (<code>{epic}</code>, <code>{PROJECT_NAME}</code>) treated as expressions</li>
+<li class="">Custom heading syntax <code>{#id}</code> causing acorn parse errors in some contexts</li>
+</ul>
+<p><strong>Fixes that worked:</strong></p>
+<ul>
+<li class="">Escape or rephrase MDX-sensitive tokens outside fenced code blocks</li>
+<li class="">Align heading text with the slug Docusaurus actually emits</li>
+<li class="">Remove stale hash fragments when slug alignment is not worth the churn</li>
+<li class="">Keep automation (<code>scripts/escape_mdx_placeholders.py</code>) for repeatable corpus sweeps</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="failure-class-4--local-green-ci-red">Failure class 4 — local green, CI red<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#failure-class-4--local-green-ci-red" class="hash-link" aria-label="Direct link to Failure class 4 — local green, CI red" title="Direct link to Failure class 4 — local green, CI red" translate="no">​</a></h2>
+<p>The nastiest bug: <strong><code>npm run build</code> passed locally</strong> but failed in GitHub Actions on the same commit.</p>
+<p>Root cause: a markdown file under <code>docs/maintenance/logs/</code> was linked from the publish corpus but <strong>gitignored</strong> by a broad <code>logs/</code> rule. The file existed on a maintainer laptop only.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li class="">Add a narrow <code>.gitignore</code> exception for tracked evidence logs under <code>docs/maintenance/logs/**</code></li>
+<li class="">Commit the file</li>
+<li class="">Re-run CI</li>
+</ol>
+<p>Lesson: <strong>if it is linked, it must be tracked.</strong> Strict builds turn "works on my machine" into a hard gate — which is the point.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ci-and-deploy-topology">CI and deploy topology<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#ci-and-deploy-topology" class="hash-link" aria-label="Direct link to CI and deploy topology" title="Direct link to CI and deploy topology" translate="no">​</a></h2>
+<p>Our workflow builds on pull requests and on pushes to <code>main</code>, then deploys to <strong><code>gh-pages</code></strong> only when the build job succeeds. One production build per commit; deploy never runs on a failed build.</p>
+<p>Published URL: <strong><a href="https://rms-ltd.github.io/ai-dev-kit/" target="_blank" rel="noopener noreferrer" class="">https://rms-ltd.github.io/ai-dev-kit/</a></strong></p>
+<p><code>docusaurus.config.js</code> must keep <code>url</code> and <code>baseUrl</code> aligned with that path (<code>baseUrl: '/ai-dev-kit/'</code>).</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-sane-workflow-for-maintainers">A sane workflow for maintainers<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#a-sane-workflow-for-maintainers" class="hash-link" aria-label="Direct link to A sane workflow for maintainers" title="Direct link to A sane workflow for maintainers" translate="no">​</a></h2>
+<ol>
+<li class=""><strong>Edit markdown in <code>docs/</code></strong> (or <code>portal/blog/</code> for blog posts like this one).</li>
+<li class=""><strong><code>cd portal &amp;&amp; npm run build</code></strong> before opening a PR.</li>
+<li class=""><strong>Fix link class, not config</strong> — do not downgrade <code>throw</code> to <code>warn</code> to unblock a merge.</li>
+<li class=""><strong>Dependabot PRs:</strong> merge only when the Docusaurus workflow is green; never merge major <code>@docusaurus/*</code> downgrades without a deliberate upgrade task.</li>
+<li class=""><strong>Optional gate:</strong> <code>PORTAL_BUILD_STRICT=1 pytest -m portal_build</code> for automated regression (out-of-plugin link ban, build smoke).</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-done-looks-like">What "done" looks like<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#what-done-looks-like" class="hash-link" aria-label="Direct link to What &quot;done&quot; looks like" title="Direct link to What &quot;done&quot; looks like" translate="no">​</a></h2>
+<p>For us, "Docusaurus working" meant all of the following at once:</p>
+<ul>
+<li class=""><code>npm run build</code> exit <strong>0</strong> locally and in CI</li>
+<li class="">GitHub Pages deploy green on <code>main</code></li>
+<li class="">Strict link and anchor checking left enabled</li>
+<li class="">Monorepo links to <code>packages/</code>, <code>.cursorrules</code>, scripts, and repo-root files use Strategy A or in-corpus stubs</li>
+<li class="">Lockfile, <code>package.json</code>, and Docusaurus feature flags stay aligned</li>
+</ul>
+<p>That work shipped across <a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md" target="_blank" rel="noopener noreferrer" class="">BR-090</a> (dependency alignment) and a full corpus link remediation wave (<strong>v0.5.9.13+2</strong> through <strong>+4</strong>).</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="further-reading">Further reading<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#further-reading" class="hash-link" aria-label="Direct link to Further reading" title="Direct link to Further reading" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md" target="_blank" rel="noopener noreferrer" class="">Portal README — publish scope and BR-068</a></li>
+<li class=""><a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/maintenance/docusaurus-corpus-triage-fr-067.md" target="_blank" rel="noopener noreferrer" class="">Docusaurus corpus triage (FR-067)</a></li>
+<li class=""><a class="" href="https://rms-ltd.github.io/ai-dev-kit/docs/documentation/docusaurus-portal-index">Docusaurus portal index</a></li>
+</ul>
+<p>If you are standing up a similar monorepo portal, start with <strong><code>npm run build</code> in strict mode early</strong>. Fixing hundreds of links after the fact is slower than enforcing corpus hygiene from day one.</p>]]></content:encoded>
+            <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://rms-ltd.github.io/ai-dev-kit/blog/welcome</link>
+            <guid>https://rms-ltd.github.io/ai-dev-kit/blog/welcome</guid>
+            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer" class="">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer" class="">blog plugin</a>.</p>
+<p>Here are a few tips you might find useful.</p>
+<!-- -->
+<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
+<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
+<p>The blog post date can be extracted from filenames, such as:</p>
+<ul>
+<li class=""><code>2019-05-30-welcome.md</code></li>
+<li class=""><code>2019-05-30-welcome/index.md</code></li>
+</ul>
+<p>A blog post folder can be convenient to co-locate blog post images:</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://rms-ltd.github.io/ai-dev-kit/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
+<p>The blog supports tags as well!</p>
+<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
+            <category>Facebook</category>
+            <category>Hello</category>
+            <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[MDX Blog Post]]></title>
+            <link>https://rms-ltd.github.io/ai-dev-kit/blog/mdx-blog-post</link>
+            <guid>https://rms-ltd.github.io/ai-dev-kit/blog/mdx-blog-post</guid>
+            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
+            <content:encoded><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer" class="">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer" class="">MDX</a>.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
+<!-- -->
+<p>For example, use JSX to create an interactive button:</p>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></div></code></pre></div></div>
+<button>Click me!</button>]]></content:encoded>
+            <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[Long Blog Post]]></title>
+            <link>https://rms-ltd.github.io/ai-dev-kit/blog/long-blog-post</link>
+            <guid>https://rms-ltd.github.io/ai-dev-kit/blog/long-blog-post</guid>
+            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the summary of a very long blog post,]]></description>
+            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
+<p>Use a <code>{/*</code> <code>truncate</code> <code>*/}</code> comment to limit blog post size in the list view.</p>
+<!-- -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
+            <category>Hello</category>
+            <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[First Blog Post]]></title>
+            <link>https://rms-ltd.github.io/ai-dev-kit/blog/first-blog-post</link>
+            <guid>https://rms-ltd.github.io/ai-dev-kit/blog/first-blog-post</guid>
+            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
+            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
+<!-- -->
+<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
+            <category>Hola</category>
+            <category>Docusaurus</category>
+        </item>
+    </channel>
+</rss>

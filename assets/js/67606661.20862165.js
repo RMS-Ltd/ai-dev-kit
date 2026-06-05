@@ -1,0 +1,478 @@
+"use strict";
+(self["webpackChunkportal"] = self["webpackChunkportal"] || []).push([["24896"], {
+17618(__unused_rspack_module, __webpack_exports__, __webpack_require__) {
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  metadata: () => (/* reexport */ site_docs_project_management_kanban_fr_br_fr_089_ipw_board_row_footer_duplication_validation_hardening_md_676_namespaceObject),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  contentTitle: () => (/* binding */ contentTitle),
+  toc: () => (/* binding */ toc),
+  assets: () => (/* binding */ assets)
+});
+
+;// CONCATENATED MODULE: ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-project-management-kanban-fr-br-fr-089-ipw-board-row-footer-duplication-validation-hardening-md-676.json
+var site_docs_project_management_kanban_fr_br_fr_089_ipw_board_row_footer_duplication_validation_hardening_md_676_namespaceObject = JSON.parse('{"id":"project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening","title":"FR-089: IPW board-row traceability-churn hardening (footer duplication + task-ID multiplication)","description":"Type: Feature Request (FR)","source":"@site/../docs/project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md","sourceDirName":"project-management/kanban/fr-br","slug":"/project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening","permalink":"/ai-dev-kit/docs/project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening","draft":false,"unlisted":false,"editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md","tags":[],"version":"current","frontMatter":{"lifecycle":"evergreen","ttl_days":null,"created_at":"2026-04-21T00:00:00.000Z","expires_at":null,"housekeeping_policy":"keep"},"sidebar":"docsSidebar","previous":{"title":"FR-088: Dedicated story for perpetual ongoing tasks","permalink":"/ai-dev-kit/docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks"},"next":{"title":"FR-090: UKW canonical row transform engine and board-specific rendering contracts","permalink":"/ai-dev-kit/docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts"}}')
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// CONCATENATED MODULE: ../docs/project-management/kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md
+
+
+const frontMatter = {
+	lifecycle: 'evergreen',
+	ttl_days: null,
+	created_at: new Date('2026-04-21T00:00:00.000Z'),
+	expires_at: null,
+	housekeeping_policy: 'keep'
+};
+const contentTitle = 'FR-089: IPW board-row traceability-churn hardening (footer duplication + task-ID multiplication)';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Problem Statement",
+  "id": "problem-statement",
+  "level": 2
+}, {
+  "value": "Requirements",
+  "id": "requirements",
+  "level": 2
+}, {
+  "value": "Functional Requirements",
+  "id": "functional-requirements",
+  "level": 3
+}, {
+  "value": "Non-Functional Requirements",
+  "id": "non-functional-requirements",
+  "level": 3
+}, {
+  "value": "Acceptance Criteria",
+  "id": "acceptance-criteria",
+  "level": 2
+}, {
+  "value": "Related",
+  "id": "related",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    br: "br",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    input: "input",
+    li: "li",
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    ...(0,lib/* .useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "fr-089-ipw-board-row-traceability-churn-hardening-footer-duplication--task-id-multiplication",
+        children: "FR-089: IPW board-row traceability-churn hardening (footer duplication + task-ID multiplication)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Type:"
+      }), " Feature Request (FR)", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "ID:"
+      }), " FR-089", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Submitted:"
+      }), " 2026-04-21", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Submitted By:"
+      }), " User feedback / governance hardening", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Priority:"
+      }), " CRITICAL", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Severity:"
+      }), " HIGH", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Status:"
+      }), " IMPLEMENTED (v0.2.15.3+2 — ", (0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["E02:S15", ":T03"]
+      }), ": duplicate-footer dual-agreement + divergence guardrails in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "update_kanban_docs.py"
+      }), "; IPP/traceability alignment released)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Implementing Task:"
+      }), " ", (0,jsx_runtime.jsxs)(_components.a, {
+        href: "/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T03-ipw-board-row-footer-duplication-validation-hardening-fr089",
+        children: ["E02:S15", ":T03"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "IPP:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-dev-kit/docs/implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails",
+        children: "IPP-E2S15T3"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["IPW governance must explicitly validate and prevent board-row traceability churn on ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "kboard.md"
+      }), ", including both footer duplication and task-ID multiplication anti-patterns (repeated appended segments like ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "| [E#:S#:T#] | ... | Last modified: ..."
+      }), " on the same row). This is distinct from simple timestamp drift and requires deterministic structural checks."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "problem-statement",
+      children: "Problem Statement"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Current governance validation does not explicitly assert row-tail uniqueness for task-ID and footer segments. As a result, maintenance/update passes can append additional task-link/footer segments to rows that already contain one, producing repeated task-ID/link/timestamp tails with newer times and corrupting forensic readability."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "requirements",
+      children: "Requirements"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "functional-requirements",
+      children: "Functional Requirements"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      className: "contains-task-list",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-F1:"
+        }), " IPW spec must define canonical row-tail grammar for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "kboard.md"
+        }), " with single-instance footer segments."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-F2:"
+        }), " Validation must detect repeated appended footer segments on the same row and classify them as structural corruption."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-F3:"
+        }), " IPW post-run governance contract must include de-duplication/normalization expectations for corrupted rows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-F4:"
+        }), " Validation output must include explicit counters for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "rows_with_duplicate_footers"
+        }), " and affected row IDs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-F5:"
+        }), " In duplicate-footer drift scenarios, canonical timestamp recovery must require dual agreement: (a) the oldest timestamp value and (b) the oldest/first footer occurrence in row order refer to the same footer chunk."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-F6:"
+        }), " If oldest-time and oldest-position do not agree, validation must flag a high-signal anomaly (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "timestamp-order divergence"
+        }), ") and avoid silent automatic normalization."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-F7:"
+        }), " Validation must detect and flag task-ID multiplication anti-patterns (repeated appended ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "E#:S#:T#"
+        }), " link segments on the same row) as structural corruption."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-F8:"
+        }), " Row normalization must enforce single-instance task-ID segment invariants and avoid silent repeated task-link append behavior across reruns."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "non-functional-requirements",
+      children: "Non-Functional Requirements"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      className: "contains-task-list",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-NF1:"
+        }), " Checks are deterministic and idempotent on repeat runs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-NF2:"
+        }), " Detection logic distinguishes duplicate-footers from legitimate single footer updates."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-NF3:"
+        }), " Repeated runs must not monotonically “walk forward” row timestamps by re-appending later footer chunks."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "FR-089-NF4:"
+        }), " Repeated runs must not multiply task-ID link segments on rows; canonical row grammar remains idempotent."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "acceptance-criteria",
+      children: "Acceptance Criteria"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      className: "contains-task-list",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "IPW governance docs/spec include explicit duplicate-footer prohibition and row-tail grammar."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "A validation rule exists for repeated row-tail segments on both boards."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "Duplicate-footer reconciliation policy explicitly enforces dual criteria (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "oldest time"
+        }), " AND ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "oldest/first footer record"
+        }), ") for recovered canonical timestamp value."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "Divergence case (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "oldest time"
+        }), " != ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "first footer record"
+        }), ") is explicitly treated as anomalous and surfaced in validation/reporting."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "Regression scenarios cover single-footer valid rows and duplicated-footer invalid rows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "Regression scenarios include repeated-run drift cases and verify no forward timestamp creep after normalization."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "Regression scenarios cover task-ID multiplication anti-pattern detection and single-instance task-ID row invariants across repeated runs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", "FR-089 and implementing task are wired into Story 015 and active boards."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related",
+      children: "Related"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten",
+          children: "BR-069"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection",
+          children: "UXR-009"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership",
+          children: "FR-084"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails",
+          children: "IPP-E2S15T3"
+        })
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* .useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+},
+28453(__unused_rspack___webpack_module__, __webpack_exports__, __webpack_require__) {
+__webpack_require__.d(__webpack_exports__, {
+  R: () => (useMDXComponents),
+  x: () => (MDXProvider)
+});
+/* import */ var react__rspack_import_0 = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__rspack_import_0.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__rspack_import_0.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__rspack_import_0.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__rspack_import_0.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+},
+
+}]);

@@ -1,0 +1,419 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-knowledge/articles/hybrid-task-template-system-building-better-templates" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Building Better Templates: How We Solved the 300-Template Problem with a Hybrid Approach | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/articles/hybrid-task-template-system-building-better-templates /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Building Better Templates: How We Solved the 300-Template Problem with a Hybrid Approach | AI Dev Kit"/><meta data-rh=true name=description content="A deep dive into solving template management at scale, balancing quality with maintainability"/><meta data-rh=true property=og:description content="A deep dive into solving template management at scale, balancing quality with maintainability"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/articles/hybrid-task-template-system-building-better-templates /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/articles/hybrid-task-template-system-building-better-templates hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/articles/hybrid-task-template-system-building-better-templates hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/articles/","name":"Articles","position":1},{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/articles/hybrid-task-template-system-building-better-templates","name":"Building Better Templates: How We Solved the 300-Template Problem with a Hybrid Approach","position":2}]}</script><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/architecture/><span title=Architecture class=categoryLinkLabel_W154>Architecture</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/changelog-and-release-notes/><span title="Changelog & release notes" class=categoryLinkLabel_W154>Changelog & release notes</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/project-management/><span title="Project management" class=categoryLinkLabel_W154>Project management</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/guides/><span title=Guides class=categoryLinkLabel_W154>Guides</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation (developer & user)" class=categoryLinkLabel_W154>Documentation (developer & user)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="Knowledge base" class=categoryLinkLabel_W154>Knowledge base</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="KB Index" class=linkLabel_WmDU>KB Index</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/><span title="Use Cases Knowledge Base" class=linkLabel_WmDU>Use Cases Knowledge Base</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/USE_CASE_METHODOLOGY><span title="Use Case Methodology: Canonical vs Discovered Use Cases" class=linkLabel_WmDU>Use Case Methodology: Canonical vs Discovered Use Cases</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw><span title=analysis class=categoryLinkLabel_W154>analysis</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/ai-dev-kit/docs/knowledge/articles/><span title=Articles class=categoryLinkLabel_W154>Articles</span></a><button aria-label="Collapse sidebar category 'Articles'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents><span title="Scaling long-running autonomous coding" class=linkLabel_WmDU>Scaling long-running autonomous coding</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/ai-dev-kit/docs/knowledge/articles/hybrid-task-template-system-building-better-templates><span title="Building Better Templates: How We Solved the 300-Template Problem with a Hybrid Approach" class=linkLabel_WmDU>Building Better Templates: How We Solved the 300-Template Problem with a Hybrid Approach</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/knowledge/guides/><span title="Knowledge Base Guides" class=categoryLinkLabel_W154>Knowledge Base Guides</span></a><button aria-label="Expand sidebar category 'Knowledge Base Guides'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/kb-migration-log><span title="KB to Notion Migration Log" class=linkLabel_WmDU>KB to Notion Migration Log</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/knowledge/reviews/pir/><span title=reviews class=categoryLinkLabel_W154>reviews</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/knowledge/use-cases/discovered/><span title=use-cases class=categoryLinkLabel_W154>use-cases</span></a></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/maintenance/BUILD_AND_UPLOAD><span title="Maintenance (portal triage)" class=categoryLinkLabel_W154>Maintenance (portal triage)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/analysis/cmw-ordering-flaw-analysis><span title=Analysis class=categoryLinkLabel_W154>Analysis</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION><span title="Implementation cycles" class=categoryLinkLabel_W154>Implementation cycles</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/developer-tools/ide-whitelist-guide><span title="Developer tools" class=categoryLinkLabel_W154>Developer tools</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/ai-dev-kit/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>Knowledge base</span><li class=breadcrumbs__item><a class=breadcrumbs__link href=/ai-dev-kit/docs/knowledge/articles/><span>Articles</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Building Better Templates: How We Solved the 300-Template Problem with a Hybrid Approach</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Building Better Templates: How We Solved the 300-Template Problem with a Hybrid Approach</h1></header>
+<p><strong>A deep dive into solving template management at scale, balancing quality with maintainability</strong></p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-problem-when-templates-become-a-burden>The Problem: When Templates Become a Burden<a href=#the-problem-when-templates-become-a-burden class=hash-link aria-label="Direct link to The Problem: When Templates Become a Burden" title="Direct link to The Problem: When Templates Become a Burden" translate=no>​</a></h2>
+<p>Picture this: You're building a comprehensive framework for project management. You've designed a beautiful, canonical structure with hundreds of reusable templates. Each template is carefully crafted, human-authored, and provides real value to users. You're about 65% done—196 templates created, ~100 more to go.</p>
+<p>Then reality hits.</p>
+<p><strong>The numbers:</strong></p>
+<ul>
+<li class=""><strong>196 templates</strong> already created</li>
+<li class=""><strong>~100 templates</strong> remaining</li>
+<li class=""><strong>~63 hours</strong> of work invested so far</li>
+<li class=""><strong>~22 hours</strong> still needed</li>
+<li class=""><strong>1.6MB</strong> of template files (uncompressed)</li>
+<li class=""><strong>~300+ templates</strong> total when complete</li>
+</ul>
+<p>You start asking uncomfortable questions:</p>
+<ol>
+<li class=""><strong>Time:</strong> How many more hours will this consume?</li>
+<li class=""><strong>Space:</strong> How much disk space do these templates really need?</li>
+<li class=""><strong>Maintenance:</strong> What happens when we need to update all 300 templates?</li>
+<li class=""><strong>Scalability:</strong> Can we really maintain this manually forever?</li>
+</ol>
+<p>These aren't theoretical concerns. They're real, immediate problems that could derail the entire project.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-journey-from-concern-to-analysis>The Journey: From Concern to Analysis<a href=#the-journey-from-concern-to-analysis class=hash-link aria-label="Direct link to The Journey: From Concern to Analysis" title="Direct link to The Journey: From Concern to Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-initial-panic>The Initial Panic<a href=#the-initial-panic class=hash-link aria-label="Direct link to The Initial Panic" title="Direct link to The Initial Panic" translate=no>​</a></h3>
+<p>When we first realized the scope of the template creation effort, there was a moment of panic. We'd invested dozens of hours creating high-quality templates. Each one was carefully crafted with:</p>
+<ul>
+<li class="">Rich, contextual guidance</li>
+<li class="">Clear scope definitions</li>
+<li class="">Detailed acceptance criteria</li>
+<li class="">Comprehensive input/output specifications</li>
+<li class="">Thoughtful approach sections</li>
+</ul>
+<p>But the remaining work was daunting. And worse, we realized that <strong>maintenance</strong> would be an ongoing nightmare. What if we needed to:</p>
+<ul>
+<li class="">Add a new required section to all templates?</li>
+<li class="">Update acceptance criteria patterns?</li>
+<li class="">Standardize formatting across all 300 files?</li>
+</ul>
+<p>The manual approach wasn't sustainable.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-analysis-phase>The Analysis Phase<a href=#the-analysis-phase class=hash-link aria-label="Direct link to The Analysis Phase" title="Direct link to The Analysis Phase" translate=no>​</a></h3>
+<p>We needed data, not assumptions. So we did a comprehensive analysis:</p>
+<p><strong>Time Investment:</strong></p>
+<ul>
+<li class="">Current: ~41 hours invested (196 templates × 12.5 minutes average)</li>
+<li class="">Remaining: ~22 hours (104 templates × 12.5 minutes)</li>
+<li class=""><strong>Total: ~63 hours</strong> for complete template set</li>
+</ul>
+<p><strong>Disk Space:</strong></p>
+<ul>
+<li class="">Uncompressed: 1.6MB (negligible for modern systems)</li>
+<li class="">Compressed: 194KB (extremely small)</li>
+<li class=""><strong>Verdict:</strong> Not a blocker, but could be optimized</li>
+</ul>
+<p><strong>Maintenance Scenarios:</strong></p>
+<ul>
+<li class=""><strong>Structural change:</strong> ~25-50 hours to update all templates</li>
+<li class=""><strong>Content change:</strong> Variable, but tedious</li>
+<li class=""><strong>New tasks:</strong> Manual creation each time</li>
+</ul>
+<p>The analysis revealed something important: <strong>Disk space wasn't the issue</strong>. The real problems were:</p>
+<ol>
+<li class=""><strong>Time cost</strong> (both initial and ongoing)</li>
+<li class=""><strong>Maintenance burden</strong> (keeping 300 files in sync)</li>
+<li class=""><strong>Scalability</strong> (what happens as the framework evolves?)</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-options>The Options<a href=#the-options class=hash-link aria-label="Direct link to The Options" title="Direct link to The Options" translate=no>​</a></h3>
+<p>We evaluated three approaches:</p>
+<p><strong>Option 1: Fully Manual (Status Quo)</strong></p>
+<ul>
+<li class="">✅ Maximum quality and human nuance</li>
+<li class="">❌ High time cost (~63 hours total)</li>
+<li class="">❌ High maintenance cost</li>
+<li class="">❌ Hard to keep templates synchronized</li>
+</ul>
+<p><strong>Option 2: Fully Procedural</strong></p>
+<ul>
+<li class="">✅ Small footprint (structure + generator)</li>
+<li class="">✅ Cheap to regenerate</li>
+<li class="">❌ Harder to guarantee quality without reference set</li>
+<li class="">❌ Risk of generic, low-value templates</li>
+</ul>
+<p><strong>Option 3: Hybrid Approach</strong></p>
+<ul>
+<li class="">✅ Preserve existing high-quality templates</li>
+<li class="">✅ Enable procedural generation for future</li>
+<li class="">✅ Use concrete templates as validation corpus</li>
+<li class="">✅ Single source of truth (structure document)</li>
+<li class="">⚠️ Dual maintenance during transition</li>
+</ul>
+<p>The hybrid approach emerged as the clear winner.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-solution-a-hybrid-template-system>The Solution: A Hybrid Template System<a href=#the-solution-a-hybrid-template-system class=hash-link aria-label="Direct link to The Solution: A Hybrid Template System" title="Direct link to The Solution: A Hybrid Template System" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-core-idea>The Core Idea<a href=#the-core-idea class=hash-link aria-label="Direct link to The Core Idea" title="Direct link to The Core Idea" translate=no>​</a></h3>
+<p>We decided to adopt a <strong>hybrid task template system</strong> that combines:</p>
+<ol>
+<li class=""><strong>Concrete Templates:</strong> High-quality, human-authored templates (the "golden set")</li>
+<li class=""><strong>Procedural Generator:</strong> Script that generates templates from canonical structure</li>
+<li class=""><strong>Validation Loop:</strong> Use concrete templates to validate and improve generator output</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-architecture>The Architecture<a href=#the-architecture class=hash-link aria-label="Direct link to The Architecture" title="Direct link to The Architecture" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">┌─────────────────────────────────────────────────────────┐</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│  COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md               │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│  (Single Source of Truth - 41KB)                        │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">└──────────────────┬──────────────────────────────────────┘</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                   │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                   ├─────────────────┐</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                   │                 │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                   ▼                 ▼</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        ┌──────────────────┐  ┌──────────────────┐</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        │ Concrete Templates│  │ Generator Script │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        │ (196 templates)   │  │ (Python)         │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        │ (1.6MB)           │  │ (60KB)           │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        └──────────────────┘  └────────┬─────────┘</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                                        │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                                        ▼</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                            ┌──────────────────────┐</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                            │ Generated Templates  │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                            │ (Validated against   │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                            │  concrete set)       │</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                            └──────────────────────┘</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=key-components>Key Components<a href=#key-components class=hash-link aria-label="Direct link to Key Components" title="Direct link to Key Components" translate=no>​</a></h3>
+<p><strong>1. Canonical Structure Document</strong></p>
+<ul>
+<li class="">Single source of truth for all Epics, Stories, and Tasks</li>
+<li class="">41KB file encoding the entire canonical structure</li>
+<li class="">Easy to maintain and evolve</li>
+</ul>
+<p><strong>2. Concrete Templates (Golden Set)</strong></p>
+<ul>
+<li class="">196 high-quality, human-authored templates</li>
+<li class="">Reference implementation for validation</li>
+<li class="">Immediate value for adopters</li>
+</ul>
+<p><strong>3. Procedural Generator</strong></p>
+<ul>
+<li class="">Python script (<code>generate_task_templates.py</code>)</li>
+<li class="">Parses structure document</li>
+<li class="">Generates templates matching concrete template structure</li>
+<li class="">Supports dry-run, overwrite protection, filtering</li>
+</ul>
+<p><strong>4. Validation Routine</strong></p>
+<ul>
+<li class="">Compares generated templates against concrete templates</li>
+<li class="">Ensures structural correctness</li>
+<li class="">Validates placeholder usage</li>
+<li class="">Checks consistency of task IDs and naming</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=implementation-building-the-generator>Implementation: Building the Generator<a href=#implementation-building-the-generator class=hash-link aria-label="Direct link to Implementation: Building the Generator" title="Direct link to Implementation: Building the Generator" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=design-phase>Design Phase<a href=#design-phase class=hash-link aria-label="Direct link to Design Phase" title="Direct link to Design Phase" translate=no>​</a></h3>
+<p>We started with a comprehensive design document covering:</p>
+<ul>
+<li class=""><strong>Input Format:</strong> How to parse the structure document</li>
+<li class=""><strong>Mapping Rules:</strong> Structure → template file paths</li>
+<li class=""><strong>Template Population:</strong> How to fill template sections</li>
+<li class=""><strong>Safety Features:</strong> Overwrite protection, dry-run mode</li>
+<li class=""><strong>CLI Interface:</strong> User-friendly command-line options</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=implementation-phase>Implementation Phase<a href=#implementation-phase class=hash-link aria-label="Direct link to Implementation Phase" title="Direct link to Implementation Phase" translate=no>​</a></h3>
+<p>The generator script (<code>generate_task_templates.py</code>) includes:</p>
+<p><strong>Core Features:</strong></p>
+<ul>
+<li class="">Parses <code>COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md</code></li>
+<li class="">Extracts Epic/Story/Task hierarchy</li>
+<li class="">Generates task template files matching <code>TASK_TEMPLATE.md</code> structure</li>
+<li class="">Populates sections (Scope, Input, Deliverable, Acceptance Criteria, Approach, Dependencies)</li>
+<li class="">Preserves contextualization placeholders (<code>\{PROJECT_NAME\}</code>, <code>\{PROJECT_TYPE\}</code>, etc.)</li>
+</ul>
+<p><strong>Safety Features:</strong></p>
+<ul>
+<li class="">Default behavior skips existing files (requires <code>--overwrite</code> to regenerate)</li>
+<li class="">Dry-run mode for preview</li>
+<li class="">Epic/story filtering for targeted generation</li>
+<li class="">Validation routine for comparing generated vs concrete templates</li>
+</ul>
+<p><strong>CLI Interface:</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain"># Generate all missing templates</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/generate_task_templates.py</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># Generate for specific epic</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/generate_task_templates.py --epic 1</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># Dry run (preview)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/generate_task_templates.py --dry-run</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># Overwrite existing templates</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/generate_task_templates.py --overwrite</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># Validate generated templates</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/generate_task_templates.py --validate</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=integration-phase>Integration Phase<a href=#integration-phase class=hash-link aria-label="Direct link to Integration Phase" title="Direct link to Integration Phase" translate=no>​</a></h3>
+<p>We integrated the generator into the Kanban framework package:</p>
+<ul>
+<li class=""><strong>Script Location:</strong> <code>packages/frameworks/kanban/scripts/generate_task_templates.py</code></li>
+<li class=""><strong>Documentation:</strong> Added to scripts README with comprehensive usage guide</li>
+<li class=""><strong>Main README:</strong> Added hybrid strategy section explaining the approach</li>
+<li class=""><strong>Package Contents:</strong> Listed generator in package structure</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-benefits-why-hybrid-works>The Benefits: Why Hybrid Works<a href=#the-benefits-why-hybrid-works class=hash-link aria-label="Direct link to The Benefits: Why Hybrid Works" title="Direct link to The Benefits: Why Hybrid Works" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=short-term-benefits>Short-Term Benefits<a href=#short-term-benefits class=hash-link aria-label="Direct link to Short-Term Benefits" title="Direct link to Short-Term Benefits" translate=no>​</a></h3>
+<p><strong>1. Immediate Value</strong></p>
+<ul>
+<li class="">Complete, high-quality template set for all canonical tasks</li>
+<li class="">Adopters can use templates immediately (no generation required)</li>
+<li class="">Reference implementation for validation</li>
+</ul>
+<p><strong>2. Quality Preservation</strong></p>
+<ul>
+<li class="">Existing high-quality templates preserved</li>
+<li class="">Human-authored nuance maintained</li>
+<li class="">No loss of investment already made</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=long-term-benefits>Long-Term Benefits<a href=#long-term-benefits class=hash-link aria-label="Direct link to Long-Term Benefits" title="Direct link to Long-Term Benefits" translate=no>​</a></h3>
+<p><strong>1. Reduced Maintenance Cost</strong></p>
+<ul>
+<li class="">Structural changes: Update structure doc + generator → regenerate all templates</li>
+<li class="">Cross-cutting improvements: Propagate automatically</li>
+<li class=""><strong>Time savings:</strong> From ~25-50 hours to ~1-2 hours for structural changes</li>
+</ul>
+<p><strong>2. Smaller Distribution Footprint</strong></p>
+<ul>
+<li class="">Clients can choose:<!-- -->
+<ul>
+<li class="">Use pre-generated templates (as today)</li>
+<li class="">Run generator locally from small structure + script</li>
+</ul>
+</li>
+<li class=""><strong>Storage:</strong> From 1.6MB to ~60KB (structure + generator)</li>
+</ul>
+<p><strong>3. Better Alignment</strong></p>
+<ul>
+<li class="">Generator enforces consistency between structure document and templates</li>
+<li class="">Single source of truth (structure document)</li>
+<li class="">Clear mapping: structure → generator → templates</li>
+</ul>
+<p><strong>4. Feedback Loop</strong></p>
+<ul>
+<li class="">Real-world usage feedback on concrete templates informs:<!-- -->
+<ul>
+<li class="">Structure document improvements</li>
+<li class="">Generator heuristics refinement</li>
+</ul>
+</li>
+<li class="">Continuous improvement cycle</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=trade-offs>Trade-Offs<a href=#trade-offs class=hash-link aria-label="Direct link to Trade-Offs" title="Direct link to Trade-Offs" translate=no>​</a></h3>
+<p><strong>1. Dual Maintenance (Temporary)</strong></p>
+<ul>
+<li class="">During transition, maintain both concrete templates and generator</li>
+<li class=""><strong>Mitigation:</strong> Clear ownership and migration plan</li>
+<li class=""><strong>Long-term:</strong> Generated output becomes canonical for new changes</li>
+</ul>
+<p><strong>2. Generator Correctness Risk</strong></p>
+<ul>
+<li class="">Bugs could create malformed templates</li>
+<li class=""><strong>Mitigation:</strong> Validate against concrete "golden" templates</li>
+<li class=""><strong>Mitigation:</strong> Add comprehensive tests</li>
+</ul>
+<p><strong>3. Complexity Overhead</strong></p>
+<ul>
+<li class="">Additional tool and cognitive load</li>
+<li class=""><strong>Mitigation:</strong> Keep generator small, well-documented, close to templates</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=real-world-impact>Real-World Impact<a href=#real-world-impact class=hash-link aria-label="Direct link to Real-World Impact" title="Direct link to Real-World Impact" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=for-framework-maintainers>For Framework Maintainers<a href=#for-framework-maintainers class=hash-link aria-label="Direct link to For Framework Maintainers" title="Direct link to For Framework Maintainers" translate=no>​</a></h3>
+<p><strong>Before:</strong></p>
+<ul>
+<li class="">Manual template creation: ~12.5 minutes per template</li>
+<li class="">Structural changes: ~25-50 hours to update all templates</li>
+<li class="">Risk of inconsistency if updates missed</li>
+</ul>
+<p><strong>After:</strong></p>
+<ul>
+<li class="">Generator creation: One-time ~8 hours</li>
+<li class="">Structural changes: ~1-2 hours (update structure + generator → regenerate)</li>
+<li class="">Automatic consistency enforcement</li>
+</ul>
+<p><strong>Time Savings:</strong> ~23-48 hours per structural change</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=for-adopting-projects>For Adopting Projects<a href=#for-adopting-projects class=hash-link aria-label="Direct link to For Adopting Projects" title="Direct link to For Adopting Projects" translate=no>​</a></h3>
+<p><strong>Option 1: Use Pre-Generated Templates</strong></p>
+<ul>
+<li class="">✅ Immediate availability</li>
+<li class="">✅ High quality, human-authored</li>
+<li class="">✅ No generation required</li>
+<li class="">✅ Ready to contextualize and use</li>
+</ul>
+<p><strong>Option 2: Generate Locally</strong></p>
+<ul>
+<li class="">✅ Small footprint (~60KB vs 1.6MB)</li>
+<li class="">✅ Customizable generation</li>
+<li class="">✅ Always up-to-date with latest structure</li>
+<li class="">✅ Can regenerate after structure updates</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=storage-comparison>Storage Comparison<a href=#storage-comparison class=hash-link aria-label="Direct link to Storage Comparison" title="Direct link to Storage Comparison" translate=no>​</a></h3>
+<table><thead><tr><th>Approach<th>Size<th>Notes<tbody><tr><td><strong>Concrete Templates</strong><td>1.6MB<td>Pre-generated, ready to use<tr><td><strong>Structure + Generator</strong><td>~60KB<td>Generate on-demand<tr><td><strong>Compressed Templates</strong><td>194KB<td>Archive format</table>
+<p><strong>Verdict:</strong> Storage isn't a blocker, but generator approach is 96% smaller.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=lessons-learned>Lessons Learned<a href=#lessons-learned class=hash-link aria-label="Direct link to Lessons Learned" title="Direct link to Lessons Learned" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-dont-throw-away-good-work>1. Don't Throw Away Good Work<a href=#1-dont-throw-away-good-work class=hash-link aria-label="Direct link to 1. Don't Throw Away Good Work" title="Direct link to 1. Don't Throw Away Good Work" translate=no>​</a></h3>
+<p>We had invested ~41 hours creating high-quality templates. The hybrid approach preserved that investment while solving the maintenance problem. <strong>Lesson:</strong> When evaluating alternatives, consider sunk costs and how to leverage existing work.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-data-beats-assumptions>2. Data Beats Assumptions<a href=#2-data-beats-assumptions class=hash-link aria-label="Direct link to 2. Data Beats Assumptions" title="Direct link to 2. Data Beats Assumptions" translate=no>​</a></h3>
+<p>Our initial concern was disk space. Analysis revealed it wasn't the real problem. <strong>Lesson:</strong> Always analyze before optimizing. Measure what matters.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-quality-vs-maintainability-trade-off>3. Quality vs. Maintainability Trade-Off<a href=#3-quality-vs-maintainability-trade-off class=hash-link aria-label="Direct link to 3. Quality vs. Maintainability Trade-Off" title="Direct link to 3. Quality vs. Maintainability Trade-Off" translate=no>​</a></h3>
+<p>Fully procedural templates risk generic, low-value content. Fully manual templates risk maintenance burden. <strong>Lesson:</strong> Hybrid approaches can balance competing concerns.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-single-source-of-truth-matters>4. Single Source of Truth Matters<a href=#4-single-source-of-truth-matters class=hash-link aria-label="Direct link to 4. Single Source of Truth Matters" title="Direct link to 4. Single Source of Truth Matters" translate=no>​</a></h3>
+<p>Having one canonical structure document makes everything easier. <strong>Lesson:</strong> Centralize authoritative data, generate everything else.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-validation-is-critical>5. Validation is Critical<a href=#5-validation-is-critical class=hash-link aria-label="Direct link to 5. Validation is Critical" title="Direct link to 5. Validation is Critical" translate=no>​</a></h3>
+<p>Using concrete templates as a validation corpus ensures generator quality. <strong>Lesson:</strong> Reference implementations are valuable for validating generated code.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-incremental-migration-works>6. Incremental Migration Works<a href=#6-incremental-migration-works class=hash-link aria-label="Direct link to 6. Incremental Migration Works" title="Direct link to 6. Incremental Migration Works" translate=no>​</a></h3>
+<p>We didn't need to throw away existing templates. We built the generator alongside them. <strong>Lesson:</strong> Incremental improvements beat big-bang rewrites.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-technical-details>The Technical Details<a href=#the-technical-details class=hash-link aria-label="Direct link to The Technical Details" title="Direct link to The Technical Details" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=generator-architecture>Generator Architecture<a href=#generator-architecture class=hash-link aria-label="Direct link to Generator Architecture" title="Direct link to Generator Architecture" translate=no>​</a></h3>
+<p><strong>Parsing Strategy:</strong></p>
+<ul>
+<li class="">Markdown parser for structure document</li>
+<li class="">Regex patterns for Epic/Story/Task extraction</li>
+<li class="">Hierarchical structure building</li>
+</ul>
+<p><strong>Template Generation:</strong></p>
+<ul>
+<li class="">Template file structure from <code>TASK_TEMPLATE.md</code></li>
+<li class="">Section population from structure document</li>
+<li class="">Placeholder preservation for contextualization</li>
+</ul>
+<p><strong>Validation:</strong></p>
+<ul>
+<li class="">Structural comparison (sections, headings, frontmatter)</li>
+<li class="">Placeholder usage verification</li>
+<li class="">Task ID and naming consistency checks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=code-structure>Code Structure<a href=#code-structure class=hash-link aria-label="Direct link to Code Structure" title="Direct link to Code Structure" translate=no>​</a></h3>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-python codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic># Simplified generator flow</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>def</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>generate_task_templates</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic># 1. Parse structure document</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    structure </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> parse_structure_document</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic># 2. Extract Epic/Story/Task hierarchy</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    hierarchy </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> extract_hierarchy</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">structure</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic># 3. Load template structure</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    template </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> load_template_structure</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic># 4. Generate templates</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>for</span><span class="token plain"> epic </span><span class="token keyword" style=color:#00009f>in</span><span class="token plain"> hierarchy</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">epics</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        </span><span class="token keyword" style=color:#00009f>for</span><span class="token plain"> story </span><span class="token keyword" style=color:#00009f>in</span><span class="token plain"> epic</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">stories</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            </span><span class="token keyword" style=color:#00009f>for</span><span class="token plain"> task </span><span class="token keyword" style=color:#00009f>in</span><span class="token plain"> story</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">tasks</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">                generate_task_template</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">epic</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> story</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> task</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> template</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic># 5. Validate against concrete templates</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    validate_generated_templates</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=file-structure>File Structure<a href=#file-structure class=hash-link aria-label="Direct link to File Structure" title="Direct link to File Structure" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">packages/frameworks/kanban/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── templates/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md  # Source of truth</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── TASK_TEMPLATE.md                          # Template structure</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   └── tasks/                                    # Generated/concrete templates</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│       ├── epic-01/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│       │   └── story-001/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│       │       └── T01-*.md</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│       └── ...</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">└── scripts/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    └── generate_task_templates.py               # Generator script</span><br/></div></code></pre></div></div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=future-directions>Future Directions<a href=#future-directions class=hash-link aria-label="Direct link to Future Directions" title="Direct link to Future Directions" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=short-term>Short-Term<a href=#short-term class=hash-link aria-label="Direct link to Short-Term" title="Direct link to Short-Term" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Complete Concrete Templates</strong></p>
+<ul>
+<li class="">Finish remaining ~100 templates</li>
+<li class="">Establish complete "golden set" for validation</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Generator Refinement</strong></p>
+<ul>
+<li class="">Improve content generation based on concrete template patterns</li>
+<li class="">Add more sophisticated placeholder handling</li>
+<li class="">Enhance validation routine</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=medium-term>Medium-Term<a href=#medium-term class=hash-link aria-label="Direct link to Medium-Term" title="Direct link to Medium-Term" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>AI Enhancement</strong></p>
+<ul>
+<li class="">Use concrete templates to train/fine-tune content generation</li>
+<li class="">Generate richer, more contextual content</li>
+<li class="">Learn from real-world usage patterns</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Automated Validation</strong></p>
+<ul>
+<li class="">CI/CD integration for template validation</li>
+<li class="">Automated diff checking</li>
+<li class="">Regression testing</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=long-term>Long-Term<a href=#long-term class=hash-link aria-label="Direct link to Long-Term" title="Direct link to Long-Term" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Template Evolution</strong></p>
+<ul>
+<li class="">Structure document as single source of truth</li>
+<li class="">Generator as canonical implementation</li>
+<li class="">Concrete templates as reference/validation corpus</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Client-Side Generation</strong></p>
+<ul>
+<li class="">Clients generate templates on-demand</li>
+<li class="">Always up-to-date with latest structure</li>
+<li class="">Customizable generation parameters</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=conclusion-the-power-of-hybrid-approaches>Conclusion: The Power of Hybrid Approaches<a href=#conclusion-the-power-of-hybrid-approaches class=hash-link aria-label="Direct link to Conclusion: The Power of Hybrid Approaches" title="Direct link to Conclusion: The Power of Hybrid Approaches" translate=no>​</a></h2>
+<p>The hybrid task template system demonstrates a powerful pattern: <strong>combining the best of manual and automated approaches</strong>.</p>
+<p><strong>Key Takeaways:</strong></p>
+<ol>
+<li class="">
+<p><strong>Preserve Quality:</strong> Don't throw away good work. Use it as a foundation.</p>
+</li>
+<li class="">
+<p><strong>Enable Automation:</strong> Build tools that can scale beyond manual effort.</p>
+</li>
+<li class="">
+<p><strong>Validate Everything:</strong> Use reference implementations to ensure quality.</p>
+</li>
+<li class="">
+<p><strong>Single Source of Truth:</strong> Centralize authoritative data, generate everything else.</p>
+</li>
+<li class="">
+<p><strong>Incremental Migration:</strong> Build alongside existing systems, don't replace them.</p>
+</li>
+<li class="">
+<p><strong>Measure What Matters:</strong> Analyze before optimizing. Focus on real problems.</p>
+</li>
+</ol>
+<p><strong>The Result:</strong></p>
+<ul>
+<li class="">✅ High-quality templates preserved</li>
+<li class="">✅ Maintenance burden reduced by ~96%</li>
+<li class="">✅ Scalability enabled for future evolution</li>
+<li class="">✅ Single source of truth established</li>
+<li class="">✅ Best of both worlds achieved</li>
+</ul>
+<p>This isn't just about templates. It's about <strong>building systems that scale</strong> while maintaining quality. It's about <strong>preserving investment</strong> while enabling evolution. It's about <strong>finding the right balance</strong> between manual craftsmanship and automated efficiency.</p>
+<p>The hybrid approach isn't a compromise—it's a synthesis. And that's what makes it powerful.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=references>References<a href=#references class=hash-link aria-label="Direct link to References" title="Direct link to References" translate=no>​</a></h2>
+<ul>
+<li class=""><strong>Analysis Document:</strong> <code>docs/analysis/task-template-system-analysis.md</code></li>
+<li class=""><strong>Architecture Decision Record:</strong> <code>docs/architecture/standards-and-adrs/task-template-system-hybrid-adr.md</code></li>
+<li class=""><strong>Design Document:</strong> <code>docs/architecture/standards-and-adrs/task-template-generator-design.md</code></li>
+<li class=""><strong>Feature Request:</strong> <code>docs/project-management/kanban/fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md</code></li>
+<li class=""><strong>Story:</strong> <code>docs/project-management/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md</code></li>
+<li class=""><strong>Generator Script:</strong> <code>packages/frameworks/kanban/scripts/generate_task_templates.py</code></li>
+<li class=""><strong>Kanban Framework README:</strong> <code>packages/frameworks/kanban/README.md</code></li>
+</ul>
+<hr/>
+<p><strong>Author:</strong> AI Dev Kit Team<br/>
+<strong>Published:</strong> 2025-12-22<br/>
+<strong>Version:</strong> v0.4.15.5+1<br/>
+<strong>Epic:</strong> E4 (Kanban Framework)<br/>
+<strong>Story:</strong> S15 (Procedural Task Template Generation and Hybrid Strategy)</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/knowledge/articles/hybrid-task-template-system-building-better-templates.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ai-dev-kit/docs/knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Scaling long-running autonomous coding</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ai-dev-kit/docs/knowledge/guides/><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Knowledge Base Guides</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#the-problem-when-templates-become-a-burden class="table-of-contents__link toc-highlight">The Problem: When Templates Become a Burden</a><li><a href=#the-journey-from-concern-to-analysis class="table-of-contents__link toc-highlight">The Journey: From Concern to Analysis</a><ul><li><a href=#the-initial-panic class="table-of-contents__link toc-highlight">The Initial Panic</a><li><a href=#the-analysis-phase class="table-of-contents__link toc-highlight">The Analysis Phase</a><li><a href=#the-options class="table-of-contents__link toc-highlight">The Options</a></ul><li><a href=#the-solution-a-hybrid-template-system class="table-of-contents__link toc-highlight">The Solution: A Hybrid Template System</a><ul><li><a href=#the-core-idea class="table-of-contents__link toc-highlight">The Core Idea</a><li><a href=#the-architecture class="table-of-contents__link toc-highlight">The Architecture</a><li><a href=#key-components class="table-of-contents__link toc-highlight">Key Components</a></ul><li><a href=#implementation-building-the-generator class="table-of-contents__link toc-highlight">Implementation: Building the Generator</a><ul><li><a href=#design-phase class="table-of-contents__link toc-highlight">Design Phase</a><li><a href=#implementation-phase class="table-of-contents__link toc-highlight">Implementation Phase</a><li><a href=#integration-phase class="table-of-contents__link toc-highlight">Integration Phase</a></ul><li><a href=#the-benefits-why-hybrid-works class="table-of-contents__link toc-highlight">The Benefits: Why Hybrid Works</a><ul><li><a href=#short-term-benefits class="table-of-contents__link toc-highlight">Short-Term Benefits</a><li><a href=#long-term-benefits class="table-of-contents__link toc-highlight">Long-Term Benefits</a><li><a href=#trade-offs class="table-of-contents__link toc-highlight">Trade-Offs</a></ul><li><a href=#real-world-impact class="table-of-contents__link toc-highlight">Real-World Impact</a><ul><li><a href=#for-framework-maintainers class="table-of-contents__link toc-highlight">For Framework Maintainers</a><li><a href=#for-adopting-projects class="table-of-contents__link toc-highlight">For Adopting Projects</a><li><a href=#storage-comparison class="table-of-contents__link toc-highlight">Storage Comparison</a></ul><li><a href=#lessons-learned class="table-of-contents__link toc-highlight">Lessons Learned</a><ul><li><a href=#1-dont-throw-away-good-work class="table-of-contents__link toc-highlight">1. Don't Throw Away Good Work</a><li><a href=#2-data-beats-assumptions class="table-of-contents__link toc-highlight">2. Data Beats Assumptions</a><li><a href=#3-quality-vs-maintainability-trade-off class="table-of-contents__link toc-highlight">3. Quality vs. Maintainability Trade-Off</a><li><a href=#4-single-source-of-truth-matters class="table-of-contents__link toc-highlight">4. Single Source of Truth Matters</a><li><a href=#5-validation-is-critical class="table-of-contents__link toc-highlight">5. Validation is Critical</a><li><a href=#6-incremental-migration-works class="table-of-contents__link toc-highlight">6. Incremental Migration Works</a></ul><li><a href=#the-technical-details class="table-of-contents__link toc-highlight">The Technical Details</a><ul><li><a href=#generator-architecture class="table-of-contents__link toc-highlight">Generator Architecture</a><li><a href=#code-structure class="table-of-contents__link toc-highlight">Code Structure</a><li><a href=#file-structure class="table-of-contents__link toc-highlight">File Structure</a></ul><li><a href=#future-directions class="table-of-contents__link toc-highlight">Future Directions</a><ul><li><a href=#short-term class="table-of-contents__link toc-highlight">Short-Term</a><li><a href=#medium-term class="table-of-contents__link toc-highlight">Medium-Term</a><li><a href=#long-term class="table-of-contents__link toc-highlight">Long-Term</a></ul><li><a href=#conclusion-the-power-of-hybrid-approaches class="table-of-contents__link toc-highlight">Conclusion: The Power of Hybrid Approaches</a><li><a href=#references class="table-of-contents__link toc-highlight">References</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>

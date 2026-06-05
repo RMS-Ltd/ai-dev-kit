@@ -1,0 +1,442 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-documentation/user-docs/framework-dependency-use-cases" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Framework Dependency Use Cases | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/documentation/user-docs/framework-dependency-use-cases /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Framework Dependency Use Cases | AI Dev Kit"/><meta data-rh=true name=description content="Status: Active"/><meta data-rh=true property=og:description content="Status: Active"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/documentation/user-docs/framework-dependency-use-cases /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/documentation/user-docs/framework-dependency-use-cases hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/documentation/user-docs/framework-dependency-use-cases hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/documentation/user-docs/framework-dependency-use-cases","name":"Framework Dependency Use Cases","position":1}]}</script><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/architecture/><span title=Architecture class=categoryLinkLabel_W154>Architecture</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/changelog-and-release-notes/><span title="Changelog & release notes" class=categoryLinkLabel_W154>Changelog & release notes</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/project-management/><span title="Project management" class=categoryLinkLabel_W154>Project management</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/guides/><span title=Guides class=categoryLinkLabel_W154>Guides</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation (developer & user)" class=categoryLinkLabel_W154>Documentation (developer & user)</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation portal index" class=linkLabel_WmDU>Documentation portal index</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/ai-dev-kit-vision-and-purpose><span title="AI Dev Kit: Vision and Purpose" class=linkLabel_WmDU>AI Dev Kit: Vision and Purpose</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/documentation/engineering-and-platform/canonical-epic-pattern-analysis><span title=engineering-and-platform class=categoryLinkLabel_W154>engineering-and-platform</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/documentation/templates/epic-pir-template><span title=templates class=categoryLinkLabel_W154>templates</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/EXISTING_PROJECT_ROLLOUT_CHECKLIST><span title=user-docs class=categoryLinkLabel_W154>user-docs</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/EXISTING_PROJECT_ROLLOUT_CHECKLIST><span title="Existing Project Rollout Checklist" class=linkLabel_WmDU>Existing Project Rollout Checklist</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/adopter-external-resource-dependency-tracking><span title="Adopter External Resource Dependency Tracking" class=linkLabel_WmDU>Adopter External Resource Dependency Tracking</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/apple-platform-setup-guide><span title="Apple Platform Setup Guide" class=linkLabel_WmDU>Apple Platform Setup Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/cli-configuration-guide><span title="ai-dev-kit CLI Configuration Guide" class=linkLabel_WmDU>ai-dev-kit CLI Configuration Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/cli-publishing-guide><span title="ai-dev-kit CLI Publishing Guide" class=linkLabel_WmDU>ai-dev-kit CLI Publishing Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/cli-troubleshooting-guide><span title="ai-dev-kit CLI Troubleshooting Guide" class=linkLabel_WmDU>ai-dev-kit CLI Troubleshooting Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/cli-usage-examples><span title="ai-dev-kit CLI Usage Examples" class=linkLabel_WmDU>ai-dev-kit CLI Usage Examples</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/ecc-adk-integration-cheatsheet><span title="ECC + AI Dev Kit — integration cheatsheet" class=linkLabel_WmDU>ECC + AI Dev Kit — integration cheatsheet</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/examples/adopter-upstream-register><span title=examples class=categoryLinkLabel_W154>examples</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-cli-reference><span title="Framework Dependency CLI Reference" class=linkLabel_WmDU>Framework Dependency CLI Reference</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-faq><span title="Framework Dependency FAQ" class=linkLabel_WmDU>Framework Dependency FAQ</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide><span title="Framework Dependency Installation Guide" class=linkLabel_WmDU>Framework Dependency Installation Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-integration-guide><span title="Framework Dependency Integration Guide" class=linkLabel_WmDU>Framework Dependency Integration Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-post-template-setup-guide><span title="Post-Template Setup Guide" class=linkLabel_WmDU>Post-Template Setup Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-template-enablement-instructions><span title="GitHub Template Enablement Instructions" class=linkLabel_WmDU>GitHub Template Enablement Instructions</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-troubleshooting-guide><span title="Framework Dependency Troubleshooting Guide" class=linkLabel_WmDU>Framework Dependency Troubleshooting Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-update-guide><span title="Framework Dependency Update Guide" class=linkLabel_WmDU>Framework Dependency Update Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-usage-guide><span title="Framework Dependency Usage Guide" class=linkLabel_WmDU>Framework Dependency Usage Guide</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-use-cases><span title="Framework Dependency Use Cases" class=linkLabel_WmDU>Framework Dependency Use Cases</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/github-issue-install-signoff><span title="GitHub Issue install sign-off" class=linkLabel_WmDU>GitHub Issue install sign-off</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/install-receipt-reference><span title="AI Dev Kit Installation Receipt Reference" class=linkLabel_WmDU>AI Dev Kit Installation Receipt Reference</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/documentation/user-docs/repo-structure-for-adopters><span title="Repository Structure for Adopters" class=linkLabel_WmDU>Repository Structure for Adopters</span></a></ul></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="Knowledge base" class=categoryLinkLabel_W154>Knowledge base</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/maintenance/BUILD_AND_UPLOAD><span title="Maintenance (portal triage)" class=categoryLinkLabel_W154>Maintenance (portal triage)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/analysis/cmw-ordering-flaw-analysis><span title=Analysis class=categoryLinkLabel_W154>Analysis</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION><span title="Implementation cycles" class=categoryLinkLabel_W154>Implementation cycles</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/developer-tools/ide-whitelist-guide><span title="Developer tools" class=categoryLinkLabel_W154>Developer tools</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/ai-dev-kit/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>Documentation (developer & user)</span><li class=breadcrumbs__item><span class=breadcrumbs__link>user-docs</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Framework Dependency Use Cases</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Framework Dependency Use Cases</h1></header>
+<p><strong>Status:</strong> Active<br/>
+<strong>Version:</strong> 1.0.0<br/>
+<strong>Last Updated:</strong> 2025-12-07<br/>
+<strong>Epic:</strong> Epic 5 - Documentation Management and Maintenance<br/>
+<strong>Story:</strong> Story 4 - Framework Documentation Management<br/>
+<strong>Task:</strong> E05:S04<!-- -->:T05<!-- --> - Create comprehensive user documentation for Epic 6 framework dependency architecture</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=overview>Overview<a href=#overview class=hash-link aria-label="Direct link to Overview" title="Direct link to Overview" translate=no>​</a></h2>
+<p>This document provides a comprehensive overview of all use cases for adopting ai-dev-kit frameworks. It helps users identify which adoption pattern best fits their needs and provides guidance on implementation approaches.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=canonical-first-run-pointer>Canonical first-run pointer<a href=#canonical-first-run-pointer class=hash-link aria-label="Direct link to Canonical first-run pointer" title="Direct link to Canonical first-run pointer" translate=no>​</a></h3>
+<p>For a new/template repository following the current greenfield-first policy (FR-080 / E6:S09<!-- -->:T01<!-- -->), start with:</p>
+<ul>
+<li class=""><a href=https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md target=_blank rel="noopener noreferrer" class=""><code>INSTALL_IN_YOUR_PROJECT.md</code></a></li>
+<li class=""><a class="" href=/ai-dev-kit/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080>IPW-E6S9T1</a></li>
+</ul>
+<p>For brownfield modular integration boundaries, see:</p>
+<ul>
+<li class=""><a href=https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories target=_blank rel="noopener noreferrer" class="">INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption</a></li>
+<li class=""><a class="" href=/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption>ADR-003</a></li>
+<li class=""><a class="" href=/ai-dev-kit/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration>FR-081</a></li>
+<li class=""><a class="" href=/ai-dev-kit/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081>IPP-E6S9T2</a></li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=primary-use-cases>Primary Use Cases<a href=#primary-use-cases class=hash-link aria-label="Direct link to Primary Use Cases" title="Direct link to Primary Use Cases" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-1-template--all-packages>Use Case 1: Template → All Packages<a href=#use-case-1-template--all-packages class=hash-link aria-label="Direct link to Use Case 1: Template → All Packages" title="Direct link to Use Case 1: Template → All Packages" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Create a new GitHub project using ai-dev-kit as a template, installing all bundled packages.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Starting a new project from scratch</li>
+<li class="">Want complete ai-dev-kit structure and all frameworks</li>
+<li class="">Need full KB organization, workflows, and tooling</li>
+<li class="">Book readers following complete setup</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Complete starting structure</li>
+<li class="">All frameworks pre-configured</li>
+<li class="">Full KB organization included</li>
+<li class="">Ready to use immediately</li>
+<li class="">All frameworks benefit from version updates</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Create repository from ai-dev-kit template</li>
+<li class="">All frameworks included automatically</li>
+<li class="">Follow <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-post-template-setup-guide>Post-Template Setup Guide</a> to customize</li>
+<li class="">Receive updates for all frameworks via version numbers</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#alternative-use-ai-dev-kit-as-a-github-template>Installation Guide - Template Usage</a></li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-post-template-setup-guide>Post-Template Setup Guide</a> - Essential customization steps</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-2-template--some-packages>Use Case 2: Template → Some Packages<a href=#use-case-2-template--some-packages class=hash-link aria-label="Direct link to Use Case 2: Template → Some Packages" title="Direct link to Use Case 2: Template → Some Packages" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Create a new GitHub project using ai-dev-kit as a template, installing one or more (but not all) bundled packages.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Starting a new project</li>
+<li class="">Only need specific frameworks (e.g., just Kanban, or Kanban + Versioning)</li>
+<li class="">Want KB structure but not all frameworks</li>
+<li class="">Prefer selective adoption</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Complete KB structure included</li>
+<li class="">Only install what you need</li>
+<li class="">Customize to your requirements</li>
+<li class="">Selected frameworks benefit from version updates</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Create repository from ai-dev-kit template</li>
+<li class="">Remove unused frameworks</li>
+<li class="">Keep only frameworks you need</li>
+<li class="">Receive updates for selected frameworks via version numbers</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#alternative-use-ai-dev-kit-as-a-github-template>Installation Guide - Template Usage</a></li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#selective-framework-installation>Installation Guide - Selective Installation</a></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-3-existing-project--all-packages>Use Case 3: Existing Project → All Packages<a href=#use-case-3-existing-project--all-packages class=hash-link aria-label="Direct link to Use Case 3: Existing Project → All Packages" title="Direct link to Use Case 3: Existing Project → All Packages" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Install all ai-dev-kit packages into a pre-existing GitHub project.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Have an existing project</li>
+<li class="">Want to adopt all ai-dev-kit frameworks</li>
+<li class="">Need to integrate with existing structure</li>
+<li class="">Migrating from manual processes</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Add frameworks to existing project</li>
+<li class="">Integrate with current workflows</li>
+<li class="">All frameworks benefit from version updates</li>
+<li class="">Maintain existing project structure</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Install frameworks using Git submodules, CLI tool, or package managers</li>
+<li class="">Integrate with existing project structure</li>
+<li class="">Configure frameworks for your project</li>
+<li class="">Receive updates for all frameworks via version numbers</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#installation-methods>Installation Guide - Installation Methods</a></li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-integration-guide>Integration Guide</a></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-4-existing-project--some-packages>Use Case 4: Existing Project → Some Packages<a href=#use-case-4-existing-project--some-packages class=hash-link aria-label="Direct link to Use Case 4: Existing Project → Some Packages" title="Direct link to Use Case 4: Existing Project → Some Packages" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Install one or more (but not all) ai-dev-kit packages into a pre-existing GitHub project.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Have an existing project</li>
+<li class="">Only need specific frameworks</li>
+<li class="">Gradual adoption approach</li>
+<li class="">Selective framework integration</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Add only what you need</li>
+<li class="">Incremental adoption</li>
+<li class="">Flexible integration</li>
+<li class="">Selected frameworks benefit from version updates</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Install selected frameworks using preferred method</li>
+<li class="">Integrate with existing project structure</li>
+<li class="">Add more frameworks as needed</li>
+<li class="">Receive updates for installed frameworks via version numbers</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#installation-methods>Installation Guide - Installation Methods</a></li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-integration-guide#selective-framework-adoption>Integration Guide - Selective Adoption</a></li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=additional-use-cases>Additional Use Cases<a href=#additional-use-cases class=hash-link aria-label="Direct link to Additional Use Cases" title="Direct link to Additional Use Cases" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-5-referencelearning-only>Use Case 5: Reference/Learning Only<a href=#use-case-5-referencelearning-only class=hash-link aria-label="Direct link to Use Case 5: Reference/Learning Only" title="Direct link to Use Case 5: Reference/Learning Only" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Use ai-dev-kit documentation, examples, and patterns without installing frameworks as dependencies.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Learning AI-assisted development practices</li>
+<li class="">Studying framework patterns and approaches</li>
+<li class="">Copying specific templates or snippets</li>
+<li class="">Reference material for project planning</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">No dependency management overhead</li>
+<li class="">Study patterns without commitment</li>
+<li class="">Copy specific components as needed</li>
+<li class="">Educational and research purposes</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ul>
+<li class="">Browse documentation and examples</li>
+<li class="">Copy templates or code snippets manually</li>
+<li class="">Study patterns and best practices</li>
+<li class="">No installation required</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See framework READMEs in <code>packages/frameworks/</code></li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/architecture/>Architecture overview</a> and <a class="" href=/ai-dev-kit/docs/architecture/standards-and-adrs/kb-structure-overview>KB structure / integration pointers</a></li>
+<li class="">See <a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/packages/frameworks target=_blank rel="noopener noreferrer" class="">Framework Templates (repository)</a></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-6-monorepomulti-project-setup>Use Case 6: Monorepo/Multi-Project Setup<a href=#use-case-6-monorepomulti-project-setup class=hash-link aria-label="Direct link to Use Case 6: Monorepo/Multi-Project Setup" title="Direct link to Use Case 6: Monorepo/Multi-Project Setup" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Single ai-dev-kit installation shared across multiple projects in a monorepo.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Managing multiple related projects</li>
+<li class="">Want centralized framework management</li>
+<li class="">Need version consistency across projects</li>
+<li class="">Monorepo architecture</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Single installation point</li>
+<li class="">Centralized framework management</li>
+<li class="">Version consistency across projects</li>
+<li class="">Shared KB structure (optional)</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Install frameworks at monorepo root</li>
+<li class="">Projects reference shared frameworks</li>
+<li class="">Centralized update management</li>
+<li class="">All projects benefit from updates</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#monorepo-setup>Installation Guide - Monorepo Setup</a> (to be added)</li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-integration-guide#monorepo-integration>Integration Guide - Multi-Project</a></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-7-gradualmigratory-adoption>Use Case 7: Gradual/Migratory Adoption<a href=#use-case-7-gradualmigratory-adoption class=hash-link aria-label="Direct link to Use Case 7: Gradual/Migratory Adoption" title="Direct link to Use Case 7: Gradual/Migratory Adoption" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Start with one framework, add more over time, or migrate from copy-paste to dependencies.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Testing frameworks before full adoption</li>
+<li class="">Migrating from copy-paste approach</li>
+<li class="">Incremental workflow improvement</li>
+<li class="">Risk-averse adoption strategy</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Low-risk adoption</li>
+<li class="">Test before committing</li>
+<li class="">Gradual workflow improvement</li>
+<li class="">Hybrid approach during transition</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Start with one framework (e.g., Kanban)</li>
+<li class="">Test and validate</li>
+<li class="">Add more frameworks incrementally</li>
+<li class="">Migrate from copy-paste as needed</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-integration-guide#migration-from-copy-paste-to-dependencies>Integration Guide - Migration from Copy-Paste</a></li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-integration-guide#gradual-adoption>Integration Guide - Gradual Adoption</a></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-8-fork-and-customize>Use Case 8: Fork and Customize<a href=#use-case-8-fork-and-customize class=hash-link aria-label="Direct link to Use Case 8: Fork and Customize" title="Direct link to Use Case 8: Fork and Customize" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Fork the entire ai-dev-kit repository for heavy customization.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Need significant framework modifications</li>
+<li class="">Organization-specific requirements</li>
+<li class="">Want to maintain custom versions</li>
+<li class="">Not planning to use automatic updates</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Full control over frameworks</li>
+<li class="">Custom modifications allowed</li>
+<li class="">Organization-specific adaptations</li>
+<li class="">Independent versioning</li>
+</ul>
+<p><strong>Considerations:</strong></p>
+<ul>
+<li class="">May not benefit from automatic updates</li>
+<li class="">Requires maintaining fork</li>
+<li class="">More maintenance overhead</li>
+<li class="">Consider contributing back to upstream</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a href=https://docs.github.com/en/get-started/quickstart/fork-a-repo target=_blank rel="noopener noreferrer" class="">GitHub Forking Guide</a></li>
+<li class="">See <a href=https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CONTRIBUTING.md target=_blank rel="noopener noreferrer" class="">Contributing Guidelines</a> (if exists)</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-9-non-github-git-repositories>Use Case 9: Non-GitHub Git Repositories<a href=#use-case-9-non-github-git-repositories class=hash-link aria-label="Direct link to Use Case 9: Non-GitHub Git Repositories" title="Direct link to Use Case 9: Non-GitHub Git Repositories" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Use ai-dev-kit frameworks in GitLab, Bitbucket, or self-hosted Git repositories.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Using GitLab, Bitbucket, or other Git hosts</li>
+<li class="">Self-hosted Git infrastructure</li>
+<li class="">Organization-specific Git hosting</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Works with any Git repository</li>
+<li class="">Same dependency mechanisms</li>
+<li class="">Framework updates still available</li>
+<li class="">Flexible hosting options</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li class="">Template feature may not be available</li>
+<li class="">Manual setup required</li>
+<li class="">May need to adapt instructions</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Use Git submodules (works with any Git host)</li>
+<li class="">Manual template setup if needed</li>
+<li class="">Follow installation guide (adapt for your Git host)</li>
+<li class="">Receive updates via Git tags</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#method-1-git-submodules-phase-1---available-now>Installation Guide - Git Submodules</a></li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-faq#can-i-use-frameworks-with-non-github-repositories>FAQ - Non-GitHub Repositories</a></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-10-local-only-projects>Use Case 10: Local-Only Projects<a href=#use-case-10-local-only-projects class=hash-link aria-label="Direct link to Use Case 10: Local-Only Projects" title="Direct link to Use Case 10: Local-Only Projects" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Use frameworks in local Git repository without remote repository.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Personal projects</li>
+<li class="">Local development only</li>
+<li class="">No remote collaboration needed</li>
+<li class="">Privacy/security requirements</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">No remote repository required</li>
+<li class="">Local-only development</li>
+<li class="">Full framework functionality</li>
+<li class="">Privacy and security</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li class="">No remote backup</li>
+<li class="">No collaboration features</li>
+<li class="">Manual update process</li>
+<li class="">No CI/CD integration</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Initialize local Git repository</li>
+<li class="">Install frameworks using Git submodules</li>
+<li class="">Work locally</li>
+<li class="">Manual updates as needed</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#setting-up-a-git-repository>Installation Guide - Local Setup</a></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-11-cicd-only-usage>Use Case 11: CI/CD Only Usage<a href=#use-case-11-cicd-only-usage class=hash-link aria-label="Direct link to Use Case 11: CI/CD Only Usage" title="Direct link to Use Case 11: CI/CD Only Usage" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Use frameworks in build/CI processes without local development installation.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Frameworks used only in automation</li>
+<li class="">CI/CD pipeline integration</li>
+<li class="">Automated workflows</li>
+<li class="">Build-time framework usage</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Frameworks in automation only</li>
+<li class="">No local development overhead</li>
+<li class="">Automated workflow integration</li>
+<li class="">Build-time framework usage</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Install frameworks in CI/CD environment</li>
+<li class="">Use frameworks in build scripts</li>
+<li class="">Automated workflow execution</li>
+<li class="">Framework updates in CI/CD</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-integration-guide#cicd-integration>Integration Guide - CI/CD Integration</a></li>
+<li class="">See framework-specific CI/CD examples</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-12-educationaltraining-context>Use Case 12: Educational/Training Context<a href=#use-case-12-educationaltraining-context class=hash-link aria-label="Direct link to Use Case 12: Educational/Training Context" title="Direct link to Use Case 12: Educational/Training Context" translate=no>​</a></h3>
+<p><strong>Scenario:</strong> Use ai-dev-kit for teaching, workshops, or training materials.</p>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li class="">Teaching AI-assisted development</li>
+<li class="">Workshop/training materials</li>
+<li class="">Students following book examples</li>
+<li class="">Educational consistency</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Consistent starting point</li>
+<li class="">Template for all students</li>
+<li class="">Standardized examples</li>
+<li class="">Easy distribution</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li class="">Use template for all students</li>
+<li class="">Provide standardized setup</li>
+<li class="">Consistent learning environment</li>
+<li class="">Easy updates for course materials</li>
+</ol>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide#alternative-use-ai-dev-kit-as-a-github-template>Installation Guide - Template Usage</a></li>
+<li class="">See <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide>Installation Guide — getting started</a> (closest quick-start coverage today)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-case-selection-matrix>Use Case Selection Matrix<a href=#use-case-selection-matrix class=hash-link aria-label="Direct link to Use Case Selection Matrix" title="Direct link to Use Case Selection Matrix" translate=no>​</a></h2>
+<table><thead><tr><th>Use Case<th>New Project<th>Existing Project<th>All Frameworks<th>Some Frameworks<th>Template Available<th>Remote Required<tbody><tr><td><strong>1. Template → All</strong><td>✅<td>❌<td>✅<td>❌<td>✅<td>✅<tr><td><strong>2. Template → Some</strong><td>✅<td>❌<td>❌<td>✅<td>✅<td>✅<tr><td><strong>3. Existing → All</strong><td>❌<td>✅<td>✅<td>❌<td>❌<td>Optional<tr><td><strong>4. Existing → Some</strong><td>❌<td>✅<td>❌<td>✅<td>❌<td>Optional<tr><td><strong>5. Reference Only</strong><td>✅<td>✅<td>N/A<td>N/A<td>❌<td>❌<tr><td><strong>6. Monorepo</strong><td>✅<td>✅<td>✅<td>✅<td>Optional<td>Optional<tr><td><strong>7. Gradual Adoption</strong><td>✅<td>✅<td>❌<td>✅<td>Optional<td>Optional<tr><td><strong>8. Fork & Customize</strong><td>✅<td>✅<td>✅<td>✅<td>❌<td>Optional<tr><td><strong>9. Non-GitHub Git</strong><td>✅<td>✅<td>✅<td>✅<td>❌<td>✅<tr><td><strong>10. Local Only</strong><td>✅<td>✅<td>✅<td>✅<td>❌<td>❌<tr><td><strong>11. CI/CD Only</strong><td>✅<td>✅<td>✅<td>✅<td>❌<td>✅<tr><td><strong>12. Educational</strong><td>✅<td>❌<td>✅<td>✅<td>✅<td>Optional</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=version-updates-across-all-use-cases>Version Updates Across All Use Cases<a href=#version-updates-across-all-use-cases class=hash-link aria-label="Direct link to Version Updates Across All Use Cases" title="Direct link to Version Updates Across All Use Cases" translate=no>​</a></h2>
+<p><strong>Important:</strong> All use cases (except Use Case 5: Reference Only and Use Case 8: Fork & Customize) benefit from version-based framework updates:</p>
+<ul>
+<li class=""><strong>Automatic Update Notifications:</strong> When frameworks are updated, you receive notifications</li>
+<li class=""><strong>Version Pinning:</strong> Pin to specific framework versions for stability</li>
+<li class=""><strong>Update Control:</strong> Choose when to update frameworks</li>
+<li class=""><strong>Version Tracking:</strong> Track which framework versions you're using</li>
+<li class=""><strong>Migration Guides:</strong> Get guidance for major version updates</li>
+</ul>
+<p><strong>Update Mechanisms:</strong></p>
+<ul>
+<li class="">Git submodules: Update via <code>git submodule update</code></li>
+<li class="">CLI tool: <code>ai-dev-kit update &lt;framework></code></li>
+<li class="">Package managers: Standard update commands (npm update, pip install --upgrade)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=choosing-your-use-case>Choosing Your Use Case<a href=#choosing-your-use-case class=hash-link aria-label="Direct link to Choosing Your Use Case" title="Direct link to Choosing Your Use Case" translate=no>​</a></h2>
+<p><strong>Start Here:</strong></p>
+<ol>
+<li class=""><strong>New project?</strong> → Consider Use Cases 1 or 2 (Template)</li>
+<li class=""><strong>Existing project?</strong> → Consider Use Cases 3 or 4 (Install into existing)</li>
+<li class=""><strong>Just learning?</strong> → Use Case 5 (Reference Only)</li>
+<li class=""><strong>Multiple projects?</strong> → Use Case 6 (Monorepo)</li>
+<li class=""><strong>Want to test first?</strong> → Use Case 7 (Gradual Adoption)</li>
+</ol>
+<p><strong>Then:</strong></p>
+<ul>
+<li class="">Review the use case details above</li>
+<li class="">Check the implementation steps</li>
+<li class="">Follow the linked documentation</li>
+<li class="">Start with one framework, expand as needed</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=related-documentation>Related Documentation<a href=#related-documentation class=hash-link aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation" translate=no>​</a></h2>
+<ul>
+<li class=""><a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-installation-guide>Installation Guide</a> - Detailed installation instructions</li>
+<li class=""><a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-usage-guide>Usage Guide</a> - How to use installed frameworks</li>
+<li class=""><a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-integration-guide>Integration Guide</a> - Integrating frameworks into projects</li>
+<li class=""><a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-faq>FAQ</a> - Frequently asked questions</li>
+<li class=""><a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-cli-reference>CLI Reference</a> - CLI tool commands</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=support>Support<a href=#support class=hash-link aria-label="Direct link to Support" title="Direct link to Support" translate=no>​</a></h2>
+<p>If you're unsure which use case fits your needs, or need help implementing a specific use case:</p>
+<ul>
+<li class="">Review this document and related guides</li>
+<li class="">Check the <a class="" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-faq>FAQ</a></li>
+<li class="">Open an issue on <a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class="">GitHub</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/documentation/user-docs/framework-dependency-use-cases.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ai-dev-kit/docs/documentation/user-docs/framework-dependency-usage-guide><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Framework Dependency Usage Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ai-dev-kit/docs/documentation/user-docs/github-issue-install-signoff><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>GitHub Issue install sign-off</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#overview class="table-of-contents__link toc-highlight">Overview</a><ul><li><a href=#canonical-first-run-pointer class="table-of-contents__link toc-highlight">Canonical first-run pointer</a></ul><li><a href=#primary-use-cases class="table-of-contents__link toc-highlight">Primary Use Cases</a><ul><li><a href=#use-case-1-template--all-packages class="table-of-contents__link toc-highlight">Use Case 1: Template → All Packages</a><li><a href=#use-case-2-template--some-packages class="table-of-contents__link toc-highlight">Use Case 2: Template → Some Packages</a><li><a href=#use-case-3-existing-project--all-packages class="table-of-contents__link toc-highlight">Use Case 3: Existing Project → All Packages</a><li><a href=#use-case-4-existing-project--some-packages class="table-of-contents__link toc-highlight">Use Case 4: Existing Project → Some Packages</a></ul><li><a href=#additional-use-cases class="table-of-contents__link toc-highlight">Additional Use Cases</a><ul><li><a href=#use-case-5-referencelearning-only class="table-of-contents__link toc-highlight">Use Case 5: Reference/Learning Only</a><li><a href=#use-case-6-monorepomulti-project-setup class="table-of-contents__link toc-highlight">Use Case 6: Monorepo/Multi-Project Setup</a><li><a href=#use-case-7-gradualmigratory-adoption class="table-of-contents__link toc-highlight">Use Case 7: Gradual/Migratory Adoption</a><li><a href=#use-case-8-fork-and-customize class="table-of-contents__link toc-highlight">Use Case 8: Fork and Customize</a><li><a href=#use-case-9-non-github-git-repositories class="table-of-contents__link toc-highlight">Use Case 9: Non-GitHub Git Repositories</a><li><a href=#use-case-10-local-only-projects class="table-of-contents__link toc-highlight">Use Case 10: Local-Only Projects</a><li><a href=#use-case-11-cicd-only-usage class="table-of-contents__link toc-highlight">Use Case 11: CI/CD Only Usage</a><li><a href=#use-case-12-educationaltraining-context class="table-of-contents__link toc-highlight">Use Case 12: Educational/Training Context</a></ul><li><a href=#use-case-selection-matrix class="table-of-contents__link toc-highlight">Use Case Selection Matrix</a><li><a href=#version-updates-across-all-use-cases class="table-of-contents__link toc-highlight">Version Updates Across All Use Cases</a><li><a href=#choosing-your-use-case class="table-of-contents__link toc-highlight">Choosing Your Use Case</a><li><a href=#related-documentation class="table-of-contents__link toc-highlight">Related Documentation</a><li><a href=#support class="table-of-contents__link toc-highlight">Support</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>

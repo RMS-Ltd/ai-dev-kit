@@ -1,0 +1,381 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-knowledge/analysis/adk-learning-synthesis" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>ADK Learning Synthesis: What ADK Can Learn | AI Dev Kit</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://rms-ltd.github.io/ai-dev-kit/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/adk-learning-synthesis /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="ADK Learning Synthesis: What ADK Can Learn | AI Dev Kit"/><meta data-rh=true name=description content="Purpose: Comprehensive synthesis of what ADK can learn from implementation analysis (implement, harden, avoid, do differently)"/><meta data-rh=true property=og:description content="Purpose: Comprehensive synthesis of what ADK can learn from implementation analysis (implement, harden, avoid, do differently)"/><link data-rh=true rel=icon href=/ai-dev-kit/img/favicon.ico /><link data-rh=true rel=canonical href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/adk-learning-synthesis /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/adk-learning-synthesis hreflang=en /><link data-rh=true rel=alternate href=https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/adk-learning-synthesis hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://rms-ltd.github.io/ai-dev-kit/docs/knowledge/analysis/adk-learning-synthesis","name":"ADK Learning Synthesis: What ADK Can Learn","position":1}]}</script><link rel=alternate type=application/rss+xml href=/ai-dev-kit/blog/rss.xml title="AI Dev Kit RSS Feed"><link rel=alternate type=application/atom+xml href=/ai-dev-kit/blog/atom.xml title="AI Dev Kit Atom Feed"><link rel=stylesheet href=/ai-dev-kit/assets/css/styles.eb79bc08.css /><script src=/ai-dev-kit/assets/js/runtime~main.19f3e1cc.js defer></script><script src=/ai-dev-kit/assets/js/main.afc9af86.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-26f")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/ai-dev-kit/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ai-dev-kit/><div class=navbar__logo><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/ai-dev-kit/img/logo.svg alt="AI Dev Kit Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">AI Dev Kit</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/ai-dev-kit/docs/architecture/>Docs</a><a class="navbar__item navbar__link" href=/ai-dev-kit/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/architecture/><span title=Architecture class=categoryLinkLabel_W154>Architecture</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/changelog-and-release-notes/><span title="Changelog & release notes" class=categoryLinkLabel_W154>Changelog & release notes</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/project-management/><span title="Project management" class=categoryLinkLabel_W154>Project management</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/guides/><span title=Guides class=categoryLinkLabel_W154>Guides</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/documentation/docusaurus-portal-index><span title="Documentation (developer & user)" class=categoryLinkLabel_W154>Documentation (developer & user)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="Knowledge base" class=categoryLinkLabel_W154>Knowledge base</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/KB-INDEX><span title="KB Index" class=linkLabel_WmDU>KB Index</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/><span title="Use Cases Knowledge Base" class=linkLabel_WmDU>Use Cases Knowledge Base</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/USE_CASE_METHODOLOGY><span title="Use Case Methodology: Canonical vs Discovered Use Cases" class=linkLabel_WmDU>Use Case Methodology: Canonical vs Discovered Use Cases</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw><span title=analysis class=categoryLinkLabel_W154>analysis</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw><span title="Abstract Anti-Pattern: Use Case Exposed Design Flaw" class=linkLabel_WmDU>Abstract Anti-Pattern: Use Case Exposed Design Flaw</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-drift-analysis><span title="ADK Framework Drift Analysis" class=linkLabel_WmDU>ADK Framework Drift Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-hardening-recommendations><span title="ADK Framework Hardening Recommendations" class=linkLabel_WmDU>ADK Framework Hardening Recommendations</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-implementation-analysis-execution-plan><span title="ADK Implementation Analysis - Execution Plan" class=linkLabel_WmDU>ADK Implementation Analysis - Execution Plan</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-implementation-analysis-report><span title="ADK Implementation Analysis Report" class=linkLabel_WmDU>ADK Implementation Analysis Report</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-implementation-patterns><span title="ADK Implementation Patterns Catalog" class=linkLabel_WmDU>ADK Implementation Patterns Catalog</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-learning-synthesis><span title="ADK Learning Synthesis: What ADK Can Learn" class=linkLabel_WmDU>ADK Learning Synthesis: What ADK Can Learn</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/adk-mashup-issues><span title="ADK Mashup Issues Catalog" class=linkLabel_WmDU>ADK Mashup Issues Catalog</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/ai-dev-kit-sitrep><span title="AI Dev Kit - Situation Report (Sitrep)" class=linkLabel_WmDU>AI Dev Kit - Situation Report (Sitrep)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/comprehensive-adk-analysis-framework><span title="Comprehensive ADK Implementation Analysis Framework" class=linkLabel_WmDU>Comprehensive ADK Implementation Analysis Framework</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/comprehensive-project-analysis-framework><span title="Comprehensive Project Analysis Framework" class=linkLabel_WmDU>Comprehensive Project Analysis Framework</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/critical-framework-completion-plan><span title="Critical Framework Completion Plan" class=linkLabel_WmDU>Critical Framework Completion Plan</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/cursorrules-structure-analysis><span title="Cursorrules Structure Analysis" class=linkLabel_WmDU>Cursorrules Structure Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/debug-path-framework-analysis><span title="Debug Path Framework Analysis" class=linkLabel_WmDU>Debug Path Framework Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/knowledge-documentation-structure-analysis><span title="Knowledge/Documentation Structure Analysis" class=linkLabel_WmDU>Knowledge/Documentation Structure Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-canonical-vs-legacy-matrices><span title="Meta-Analysis: Canonical vs Legacy Matrices" class=linkLabel_WmDU>Meta-Analysis: Canonical vs Legacy Matrices</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-convergence-divergence-maps><span title="Meta-Analysis: Convergence/Divergence Maps" class=linkLabel_WmDU>Meta-Analysis: Convergence/Divergence Maps</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-cursorrules-use-misuse><span title="Meta-Analysis: Cursorrules Use/Mis-use" class=linkLabel_WmDU>Meta-Analysis: Cursorrules Use/Mis-use</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-documentation-knowledge-structure><span title="Meta-Analysis: Documentation/Knowledge Structure" class=linkLabel_WmDU>Meta-Analysis: Documentation/Knowledge Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-executive-summary><span title="Meta-Analysis Executive Summary: Proposed Canonical Framework Designs" class=linkLabel_WmDU>Meta-Analysis Executive Summary: Proposed Canonical Framework Designs</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-good-bad-practices><span title="Meta-Analysis: Good/Bad Practice Catalog" class=linkLabel_WmDU>Meta-Analysis: Good/Bad Practice Catalog</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-kanban-structure><span title="Meta-Analysis: Kanban Structure" class=linkLabel_WmDU>Meta-Analysis: Kanban Structure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-pattern-frequency-tables><span title="Meta-Analysis: Pattern Frequency Tables" class=linkLabel_WmDU>Meta-Analysis: Pattern Frequency Tables</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-patterns-anti-patterns><span title="Meta-Analysis: Pattern/Anti-Pattern Identification" class=linkLabel_WmDU>Meta-Analysis: Pattern/Anti-Pattern Identification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/meta-analysis-workflows><span title="Meta-Analysis: Workflows" class=linkLabel_WmDU>Meta-Analysis: Workflows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/outstanding-work-summary><span title="Outstanding Work Summary" class=linkLabel_WmDU>Outstanding Work Summary</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/pre-analysis-completion-strategy><span title="Pre-Analysis Completion Strategy" class=linkLabel_WmDU>Pre-Analysis Completion Strategy</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/projects/agentic-ide-rules-adk-analysis><span title=projects class=categoryLinkLabel_W154>projects</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/task-level-kanban-structure-analysis><span title="Task-Level Kanban Structure Analysis" class=linkLabel_WmDU>Task-Level Kanban Structure Analysis</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/analysis/workflow-structure-analysis><span title="Workflow Structure Analysis" class=linkLabel_WmDU>Workflow Structure Analysis</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/knowledge/articles/><span title=Articles class=categoryLinkLabel_W154>Articles</span></a><button aria-label="Expand sidebar category 'Articles'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/ai-dev-kit/docs/knowledge/guides/><span title="Knowledge Base Guides" class=categoryLinkLabel_W154>Knowledge Base Guides</span></a><button aria-label="Expand sidebar category 'Knowledge Base Guides'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/ai-dev-kit/docs/knowledge/kb-migration-log><span title="KB to Notion Migration Log" class=linkLabel_WmDU>KB to Notion Migration Log</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/knowledge/reviews/pir/><span title=reviews class=categoryLinkLabel_W154>reviews</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/ai-dev-kit/docs/knowledge/use-cases/discovered/><span title=use-cases class=categoryLinkLabel_W154>use-cases</span></a></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/maintenance/BUILD_AND_UPLOAD><span title="Maintenance (portal triage)" class=categoryLinkLabel_W154>Maintenance (portal triage)</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/analysis/cmw-ordering-flaw-analysis><span title=Analysis class=categoryLinkLabel_W154>Analysis</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION><span title="Implementation cycles" class=categoryLinkLabel_W154>Implementation cycles</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/ai-dev-kit/docs/developer-tools/ide-whitelist-guide><span title="Developer tools" class=categoryLinkLabel_W154>Developer tools</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/ai-dev-kit/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>Knowledge base</span><li class=breadcrumbs__item><span class=breadcrumbs__link>analysis</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>ADK Learning Synthesis: What ADK Can Learn</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>ADK Learning Synthesis: What ADK Can Learn</h1></header>
+<p><strong>Purpose:</strong> Comprehensive synthesis of what ADK can learn from implementation analysis (implement, harden, avoid, do differently)<br/>
+<strong>Analysis Date:</strong> 2025-12-18<br/>
+<strong>Status:</strong> COMPLETE<br/>
+<strong>Version:</strong> 1.0.0<br/>
+<strong>Part of:</strong> E6:S06<!-- -->:T01<!-- --> – Comprehensive ADK implementation analysis across all projects</p>
+<p><strong>Data Sources:</strong></p>
+<ul>
+<li class="">10 project analysis reports (9 client implementations + ai-dev-kit source)</li>
+<li class="">Meta-analysis: Good/Bad Practice Catalog</li>
+<li class="">Meta-analysis: Pattern/Anti-Pattern Identification</li>
+<li class="">Drift analysis, mashup issues, hardening recommendations</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=executive-summary>Executive Summary<a href=#executive-summary class=hash-link aria-label="Direct link to Executive Summary" title="Direct link to Executive Summary" translate=no>​</a></h2>
+<p>This document synthesizes <strong>what ADK can learn</strong> from comprehensive analysis of all implementations. Learning is organized into four categories: <strong>What to Implement</strong> (good practices to adopt), <strong>How to Harden</strong> (hardening opportunities), <strong>What NOT to Do</strong> (anti-patterns to prevent), and <strong>What to Do Differently</strong> (improvements to current approach).</p>
+<p><strong>Key Learnings:</strong></p>
+<ul>
+<li class=""><strong>Implement:</strong> Full-context task naming (60% convergence), story checklists (90%), config-driven approach (30%)</li>
+<li class=""><strong>Harden:</strong> Fix Epic 9 mismatch (CRITICAL), add installer validation, add source frameworks</li>
+<li class=""><strong>Avoid:</strong> Epic mashup, hardcoded paths, missing validation, poor documentation</li>
+<li class=""><strong>Do Differently:</strong> Better installation instructions, clearer template separation, promote config-driven</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-what-to-implement-good-practices-to-adopt>1. What to Implement (Good Practices to Adopt)<a href=#1-what-to-implement-good-practices-to-adopt class=hash-link aria-label="Direct link to 1. What to Implement (Good Practices to Adopt)" title="Direct link to 1. What to Implement (Good Practices to Adopt)" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-full-context-task-naming-eepicsstoryttask>1.1 Full-Context Task Naming (<code>E\{epic\}:S\{story\}:T\{task\}</code>)<a href=#11-full-context-task-naming-eepicsstoryttask class=hash-link aria-label="Direct link to 11-full-context-task-naming-eepicsstoryttask" title="Direct link to 11-full-context-task-naming-eepicsstoryttask" translate=no>​</a></h3>
+<p><strong>Current Adoption:</strong> 60% (6/10 projects)<br/>
+<strong>Target:</strong> 100% (canonical pattern)</p>
+<p><strong>Why Implement:</strong></p>
+<ul>
+<li class="">Excellent traceability and context</li>
+<li class="">Enables easy cross-referencing</li>
+<li class="">Makes task identification unambiguous</li>
+<li class="">Supports automated tooling</li>
+</ul>
+<p><strong>How to Implement:</strong></p>
+<ul>
+<li class="">Make full-context naming required in templates</li>
+<li class="">Update task templates to use <code>E\{epic\}:S\{story\}:T\{task\}</code> format</li>
+<li class="">Document as canonical pattern</li>
+<li class="">Enforce in validators</li>
+</ul>
+<p><strong>Reference Implementation:</strong></p>
+<ul>
+<li class="">ai-dev-kit source uses full-context naming consistently</li>
+<li class=""><code>been-there</code>, <code>dev-toolkit</code>, <code>agentic-ide-rules</code> demonstrate good usage</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-story-checklist-pattern>1.2 Story Checklist Pattern<a href=#12-story-checklist-pattern class=hash-link aria-label="Direct link to 1.2 Story Checklist Pattern" title="Direct link to 1.2 Story Checklist Pattern" translate=no>​</a></h3>
+<p><strong>Current Adoption:</strong> 90% (9/10 projects)<br/>
+<strong>Target:</strong> 100% (canonical pattern)</p>
+<p><strong>Why Implement:</strong></p>
+<ul>
+<li class="">Excellent progress tracking</li>
+<li class="">Provides quick overview of story progress</li>
+<li class="">Enables version tracking (version markers)</li>
+<li class="">Makes epic-level progress visible</li>
+</ul>
+<p><strong>How to Implement:</strong></p>
+<ul>
+<li class="">Make story checklist required in Epic templates</li>
+<li class="">Include version markers: <code>✅ COMPLETE (v0.N.NNN.T+B)</code></li>
+<li class="">Include status tracking: TODO, IN PROGRESS, COMPLETE</li>
+<li class="">Document as canonical pattern</li>
+</ul>
+<p><strong>Reference Implementation:</strong></p>
+<ul>
+<li class="">ai-dev-kit source uses story checklists consistently</li>
+<li class="">Most projects demonstrate good usage</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-config-driven-approach>1.3 Config-Driven Approach<a href=#13-config-driven-approach class=hash-link aria-label="Direct link to 1.3 Config-Driven Approach" title="Direct link to 1.3 Config-Driven Approach" translate=no>​</a></h3>
+<p><strong>Current Adoption:</strong> 30% (3/10 projects)<br/>
+<strong>Target:</strong> 100% (promote to canonical)</p>
+<p><strong>Why Implement:</strong></p>
+<ul>
+<li class="">Enables customization without code changes</li>
+<li class="">Reduces hardcoded paths</li>
+<li class="">Supports multiple project structures</li>
+<li class="">Best practice for framework adoption</li>
+</ul>
+<p><strong>How to Implement:</strong></p>
+<ul>
+<li class="">Make <code>rw-config.yaml</code> required in installation</li>
+<li class="">Provide comprehensive config documentation</li>
+<li class="">Create simple config examples</li>
+<li class="">Document migration from hardcoded paths</li>
+<li class="">Add config validation</li>
+</ul>
+<p><strong>Reference Implementation:</strong></p>
+<ul>
+<li class="">ai-dev-kit source should add <code>rw-config.yaml</code> to project root</li>
+<li class="">Projects using config demonstrate flexibility</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-document-lifecycle-metadata>1.4 Document Lifecycle Metadata<a href=#14-document-lifecycle-metadata class=hash-link aria-label="Direct link to 1.4 Document Lifecycle Metadata" title="Direct link to 1.4 Document Lifecycle Metadata" translate=no>​</a></h3>
+<p><strong>Current Adoption:</strong> 60% (6/10 projects)<br/>
+<strong>Target:</strong> 100% (make required)</p>
+<p><strong>Why Implement:</strong></p>
+<ul>
+<li class="">Enables automated document expiration</li>
+<li class="">Supports housekeeping automation</li>
+<li class="">Provides document metadata</li>
+<li class="">Improves document management</li>
+</ul>
+<p><strong>How to Implement:</strong></p>
+<ul>
+<li class="">Make lifecycle metadata required in templates</li>
+<li class="">Include in document structure templates</li>
+<li class="">Provide lifecycle metadata examples</li>
+<li class="">Document lifecycle management benefits</li>
+</ul>
+<p><strong>Reference Implementation:</strong></p>
+<ul>
+<li class="">ai-dev-kit source uses lifecycle metadata consistently</li>
+<li class="">Projects with lifecycle metadata demonstrate benefits</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-how-to-harden-hardening-opportunities>2. How to Harden (Hardening Opportunities)<a href=#2-how-to-harden-hardening-opportunities class=hash-link aria-label="Direct link to 2. How to Harden (Hardening Opportunities)" title="Direct link to 2. How to Harden (Hardening Opportunities)" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-fix-epic-9-mismatch-critical>2.1 Fix Epic 9 Mismatch (CRITICAL)<a href=#21-fix-epic-9-mismatch-critical class=hash-link aria-label="Direct link to 2.1 Fix Epic 9 Mismatch (CRITICAL)" title="Direct link to 2.1 Fix Epic 9 Mismatch (CRITICAL)" translate=no>​</a></h3>
+<p><strong>Current State:</strong> ai-dev-kit source has Epic 9 "Book Related Work" (project-specific)<br/>
+<strong>Target:</strong> Epic 9 renamed to Epic 24+ (project-specific range)</p>
+<p><strong>Why Harden:</strong></p>
+<ul>
+<li class="">Root cause of Epic mashup affecting 30% of client projects</li>
+<li class="">Prevents Epic numbering conflicts</li>
+<li class="">Clarifies canonical vs project-specific epics</li>
+</ul>
+<p><strong>How to Harden:</strong></p>
+<ol>
+<li class="">Rename Epic 9 "Book Related Work" to Epic 24+ in ai-dev-kit source</li>
+<li class="">Update all Epic 9 references</li>
+<li class="">Document Epic 24+ as project-specific range</li>
+<li class="">Add installer validation to prevent Epic mashup</li>
+</ol>
+<p><strong>Impact:</strong> Eliminates root cause of Epic mashup</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-add-installer-validation>2.2 Add Installer Validation<a href=#22-add-installer-validation class=hash-link aria-label="Direct link to 2.2 Add Installer Validation" title="Direct link to 2.2 Add Installer Validation" translate=no>​</a></h3>
+<p><strong>Current State:</strong> No validation to prevent Epic mashup<br/>
+<strong>Target:</strong> Comprehensive installer validation</p>
+<p><strong>Why Harden:</strong></p>
+<ul>
+<li class="">Prevents Epic mashup during installation</li>
+<li class="">Catches framework conflicts early</li>
+<li class="">Validates canonical vs project-specific epics</li>
+</ul>
+<p><strong>How to Harden:</strong></p>
+<ol>
+<li class="">Add Epic numbering validation</li>
+<li class="">Check for Epic mashup (Epic 9 "Book Related Work" in non-book projects)</li>
+<li class="">Validate canonical vs project-specific epic conflicts</li>
+<li class="">Warn if copying ai-dev-kit's actual Kanban</li>
+<li class="">Prevent installation if conflicts detected</li>
+</ol>
+<p><strong>Impact:</strong> Prevents Epic mashup and framework drift</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-add-source-repository-frameworks>2.3 Add Source Repository Frameworks<a href=#23-add-source-repository-frameworks class=hash-link aria-label="Direct link to 2.3 Add Source Repository Frameworks" title="Direct link to 2.3 Add Source Repository Frameworks" translate=no>​</a></h3>
+<p><strong>Current State:</strong> ai-dev-kit source missing <code>.cursorrules</code>, <code>rw-config.yaml</code> in root<br/>
+<strong>Target:</strong> Source uses own frameworks</p>
+<p><strong>Why Harden:</strong></p>
+<ul>
+<li class="">Source can serve as reference implementation</li>
+<li class="">Demonstrates frameworks to client projects</li>
+<li class="">Shows best practices</li>
+</ul>
+<p><strong>How to Harden:</strong></p>
+<ol>
+<li class="">Add <code>.cursorrules</code> file with comprehensive RW trigger</li>
+<li class="">Add <code>rw-config.yaml</code> to project root</li>
+<li class="">Migrate version file path to canonical location</li>
+<li class="">Document as reference implementation</li>
+</ol>
+<p><strong>Impact:</strong> Source serves as reference implementation</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=24-enforce-full-context-task-naming>2.4 Enforce Full-Context Task Naming<a href=#24-enforce-full-context-task-naming class=hash-link aria-label="Direct link to 2.4 Enforce Full-Context Task Naming" title="Direct link to 2.4 Enforce Full-Context Task Naming" translate=no>​</a></h3>
+<p><strong>Current State:</strong> 60% adoption<br/>
+<strong>Target:</strong> 100% adoption (canonical pattern)</p>
+<p><strong>Why Harden:</strong></p>
+<ul>
+<li class="">Strong convergence indicator (60%)</li>
+<li class="">Excellent traceability</li>
+<li class="">Supports automated tooling</li>
+</ul>
+<p><strong>How to Harden:</strong></p>
+<ol>
+<li class="">Make full-context naming required in templates</li>
+<li class="">Update validators to enforce format</li>
+<li class="">Document as canonical pattern</li>
+<li class="">Provide migration tools for legacy format</li>
+</ol>
+<p><strong>Impact:</strong> Improves traceability and tooling support</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-what-not-to-do-anti-patterns-to-prevent>3. What NOT to Do (Anti-Patterns to Prevent)<a href=#3-what-not-to-do-anti-patterns-to-prevent class=hash-link aria-label="Direct link to 3. What NOT to Do (Anti-Patterns to Prevent)" title="Direct link to 3. What NOT to Do (Anti-Patterns to Prevent)" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-epic-mashup>3.1 Epic Mashup<a href=#31-epic-mashup class=hash-link aria-label="Direct link to 3.1 Epic Mashup" title="Direct link to 3.1 Epic Mashup" translate=no>​</a></h3>
+<p><strong>Anti-Pattern:</strong> Copying ai-dev-kit's actual Kanban structure instead of using canonical templates</p>
+<p><strong>Frequency:</strong> 30% (3/10 projects)</p>
+<p><strong>Why Avoid:</strong></p>
+<ul>
+<li class="">Causes Epic numbering conflicts</li>
+<li class="">Projects get inappropriate epics</li>
+<li class="">Framework drift and confusion</li>
+<li class="">Cannot use canonical templates</li>
+</ul>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li class="">Fix Epic 9 mismatch in source</li>
+<li class="">Add installer validation</li>
+<li class="">Clearly distinguish templates from actual Kanban</li>
+<li class="">Improve installation instructions</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-hardcoded-paths>3.2 Hardcoded Paths<a href=#32-hardcoded-paths class=hash-link aria-label="Direct link to 3.2 Hardcoded Paths" title="Direct link to 3.2 Hardcoded Paths" translate=no>​</a></h3>
+<p><strong>Anti-Pattern:</strong> Hardcoded paths in <code>.cursorrules</code> instead of using <code>rw-config.yaml</code></p>
+<p><strong>Frequency:</strong> 50% (5/10 projects)</p>
+<p><strong>Why Avoid:</strong></p>
+<ul>
+<li class="">Cannot customize without editing <code>.cursorrules</code></li>
+<li class="">Breaks when project structure changes</li>
+<li class="">Poor framework adoption</li>
+</ul>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li class="">Promote config-driven approach</li>
+<li class="">Better documentation</li>
+<li class="">Simpler examples</li>
+<li class="">Make config required</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=33-missing-validation>3.3 Missing Validation<a href=#33-missing-validation class=hash-link aria-label="Direct link to 3.3 Missing Validation" title="Direct link to 3.3 Missing Validation" translate=no>​</a></h3>
+<p><strong>Anti-Pattern:</strong> Skipping branch safety checks and changelog format validation</p>
+<p><strong>Frequency:</strong> 20% (2/10 projects)</p>
+<p><strong>Why Avoid:</strong></p>
+<ul>
+<li class="">Risk of invalid releases</li>
+<li class="">Breaks workflow integrity</li>
+<li class="">Quality issues</li>
+</ul>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li class="">Enforce validation in workflows</li>
+<li class="">Make validation mandatory</li>
+<li class="">Document validation requirements</li>
+<li class="">Add validation to installer</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=34-poor-documentation>3.4 Poor Documentation<a href=#34-poor-documentation class=hash-link aria-label="Direct link to 3.4 Poor Documentation" title="Direct link to 3.4 Poor Documentation" translate=no>​</a></h3>
+<p><strong>Anti-Pattern:</strong> Missing lifecycle metadata, poor organization, missing navigation</p>
+<p><strong>Frequency:</strong> 40% (4/10 projects)</p>
+<p><strong>Why Avoid:</strong></p>
+<ul>
+<li class="">Poor document management</li>
+<li class="">No automated housekeeping</li>
+<li class="">Difficult to navigate</li>
+</ul>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li class="">Make lifecycle metadata required</li>
+<li class="">Provide templates</li>
+<li class="">Demonstrate benefits</li>
+<li class="">Document best practices</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=35-source-repository-not-using-own-frameworks>3.5 Source Repository Not Using Own Frameworks<a href=#35-source-repository-not-using-own-frameworks class=hash-link aria-label="Direct link to 3.5 Source Repository Not Using Own Frameworks" title="Direct link to 3.5 Source Repository Not Using Own Frameworks" translate=no>​</a></h3>
+<p><strong>Anti-Pattern:</strong> ai-dev-kit source missing <code>.cursorrules</code>, <code>rw-config.yaml</code>, using legacy paths</p>
+<p><strong>Frequency:</strong> 1 project (ai-dev-kit source)</p>
+<p><strong>Why Avoid:</strong></p>
+<ul>
+<li class="">Cannot demonstrate frameworks</li>
+<li class="">Source doesn't serve as reference</li>
+<li class="">Projects can't learn from source</li>
+</ul>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li class="">Add <code>.cursorrules</code> file to source</li>
+<li class="">Add <code>rw-config.yaml</code> to project root</li>
+<li class="">Migrate to canonical paths</li>
+<li class="">Use own frameworks</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-what-to-do-differently-improvements-to-current-approach>4. What to Do Differently (Improvements to Current Approach)<a href=#4-what-to-do-differently-improvements-to-current-approach class=hash-link aria-label="Direct link to 4. What to Do Differently (Improvements to Current Approach)" title="Direct link to 4. What to Do Differently (Improvements to Current Approach)" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-better-installation-instructions>4.1 Better Installation Instructions<a href=#41-better-installation-instructions class=hash-link aria-label="Direct link to 4.1 Better Installation Instructions" title="Direct link to 4.1 Better Installation Instructions" translate=no>​</a></h3>
+<p><strong>Current Approach:</strong> Unclear distinction between templates and actual Kanban<br/>
+<strong>Improved Approach:</strong> Clear separation, explicit guidance, examples</p>
+<p><strong>Changes:</strong></p>
+<ul>
+<li class="">Clearly distinguish canonical templates from ai-dev-kit's actual Kanban</li>
+<li class="">Document Epic mashup prevention</li>
+<li class="">Provide clear installation examples</li>
+<li class="">Warn against copying actual Kanban</li>
+</ul>
+<p><strong>Impact:</strong> Reduces installation confusion and Epic mashup</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-clearer-template-separation>4.2 Clearer Template Separation<a href=#42-clearer-template-separation class=hash-link aria-label="Direct link to 4.2 Clearer Template Separation" title="Direct link to 4.2 Clearer Template Separation" translate=no>​</a></h3>
+<p><strong>Current Approach:</strong> Templates and actual Kanban in same location<br/>
+<strong>Improved Approach:</strong> Clear separation, prominent templates</p>
+<p><strong>Changes:</strong></p>
+<ul>
+<li class="">Move ai-dev-kit's actual Kanban to separate location</li>
+<li class="">Make canonical templates more prominent</li>
+<li class="">Clearly mark project-specific epics (Epic 24+)</li>
+<li class="">Document separation clearly</li>
+</ul>
+<p><strong>Impact:</strong> Prevents confusion and Epic mashup</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-promote-config-driven-approach>4.3 Promote Config-Driven Approach<a href=#43-promote-config-driven-approach class=hash-link aria-label="Direct link to 4.3 Promote Config-Driven Approach" title="Direct link to 4.3 Promote Config-Driven Approach" translate=no>​</a></h3>
+<p><strong>Current Approach:</strong> 30% adoption, hardcoded paths common<br/>
+<strong>Improved Approach:</strong> 100% adoption, config required</p>
+<p><strong>Changes:</strong></p>
+<ul>
+<li class="">Make <code>rw-config.yaml</code> required in installation</li>
+<li class="">Better documentation</li>
+<li class="">Simpler examples</li>
+<li class="">Document benefits clearly</li>
+</ul>
+<p><strong>Impact:</strong> Reduces hardcoded paths, improves customization</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=44-installer-validation>4.4 Installer Validation<a href=#44-installer-validation class=hash-link aria-label="Direct link to 4.4 Installer Validation" title="Direct link to 4.4 Installer Validation" translate=no>​</a></h3>
+<p><strong>Current Approach:</strong> No validation, Epic mashup not prevented<br/>
+<strong>Improved Approach:</strong> Comprehensive validation, prevention</p>
+<p><strong>Changes:</strong></p>
+<ul>
+<li class="">Add Epic numbering validation</li>
+<li class="">Check for Epic mashup</li>
+<li class="">Validate canonical vs project-specific conflicts</li>
+<li class="">Prevent installation if conflicts detected</li>
+</ul>
+<p><strong>Impact:</strong> Prevents Epic mashup and framework drift</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-learning-summary>5. Learning Summary<a href=#5-learning-summary class=hash-link aria-label="Direct link to 5. Learning Summary" title="Direct link to 5. Learning Summary" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-what-to-implement>5.1 What to Implement<a href=#51-what-to-implement class=hash-link aria-label="Direct link to 5.1 What to Implement" title="Direct link to 5.1 What to Implement" translate=no>​</a></h3>
+<table><thead><tr><th>Practice<th>Current Adoption<th>Target<th>Priority<tbody><tr><td>Full-context task naming<td>60%<td>100%<td>HIGH<tr><td>Story checklist pattern<td>90%<td>100%<td>HIGH<tr><td>Config-driven approach<td>30%<td>100%<td>HIGH<tr><td>Lifecycle metadata<td>60%<td>100%<td>MEDIUM</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-how-to-harden>5.2 How to Harden<a href=#52-how-to-harden class=hash-link aria-label="Direct link to 5.2 How to Harden" title="Direct link to 5.2 How to Harden" translate=no>​</a></h3>
+<table><thead><tr><th>Hardening<th>Priority<th>Impact<th>Effort<tbody><tr><td>Fix Epic 9 mismatch<td>CRITICAL<td>CRITICAL<td>Medium<tr><td>Add installer validation<td>CRITICAL<td>CRITICAL<td>Medium<tr><td>Add source frameworks<td>HIGH<td>HIGH<td>Small<tr><td>Enforce task naming<td>HIGH<td>HIGH<td>Small</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=53-what-not-to-do>5.3 What NOT to Do<a href=#53-what-not-to-do class=hash-link aria-label="Direct link to 5.3 What NOT to Do" title="Direct link to 5.3 What NOT to Do" translate=no>​</a></h3>
+<table><thead><tr><th>Anti-Pattern<th>Frequency<th>Impact<th>Prevention<tbody><tr><td>Epic mashup<td>30%<td>CRITICAL<td>Fix Epic 9, add validation<tr><td>Hardcoded paths<td>50%<td>MEDIUM<td>Promote config-driven<tr><td>Missing validation<td>20%<td>MEDIUM<td>Enforce validation<tr><td>Poor documentation<td>40%<td>MEDIUM<td>Make lifecycle required<tr><td>Source gaps<td>1 project<td>HIGH<td>Add source frameworks</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=54-what-to-do-differently>5.4 What to Do Differently<a href=#54-what-to-do-differently class=hash-link aria-label="Direct link to 5.4 What to Do Differently" title="Direct link to 5.4 What to Do Differently" translate=no>​</a></h3>
+<table><thead><tr><th>Improvement<th>Current<th>Improved<th>Impact<tbody><tr><td>Installation instructions<td>Unclear<td>Clear separation<td>HIGH<tr><td>Template separation<td>Mixed<td>Clear separation<td>HIGH<tr><td>Config-driven<td>30%<td>100%<td>HIGH<tr><td>Installer validation<td>None<td>Comprehensive<td>CRITICAL</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-implementation-roadmap>6. Implementation Roadmap<a href=#6-implementation-roadmap class=hash-link aria-label="Direct link to 6. Implementation Roadmap" title="Direct link to 6. Implementation Roadmap" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phase-1-critical-fixes-immediate>Phase 1: Critical Fixes (Immediate)<a href=#phase-1-critical-fixes-immediate class=hash-link aria-label="Direct link to Phase 1: Critical Fixes (Immediate)" title="Direct link to Phase 1: Critical Fixes (Immediate)" translate=no>​</a></h3>
+<ol>
+<li class="">Fix Epic 9 mismatch in source</li>
+<li class="">Add installer validation</li>
+<li class="">Add source repository frameworks</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phase-2-pattern-promotion-short-term>Phase 2: Pattern Promotion (Short-Term)<a href=#phase-2-pattern-promotion-short-term class=hash-link aria-label="Direct link to Phase 2: Pattern Promotion (Short-Term)" title="Direct link to Phase 2: Pattern Promotion (Short-Term)" translate=no>​</a></h3>
+<ol start=4>
+<li class="">Enforce full-context task naming</li>
+<li class="">Promote config-driven approach</li>
+<li class="">Make lifecycle metadata required</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phase-3-documentation-short-term>Phase 3: Documentation (Short-Term)<a href=#phase-3-documentation-short-term class=hash-link aria-label="Direct link to Phase 3: Documentation (Short-Term)" title="Direct link to Phase 3: Documentation (Short-Term)" translate=no>​</a></h3>
+<ol start=7>
+<li class="">Improve installation instructions</li>
+<li class="">Separate templates from actual Kanban</li>
+<li class="">Document best practices</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phase-4-framework-enhancement-long-term>Phase 4: Framework Enhancement (Long-Term)<a href=#phase-4-framework-enhancement-long-term class=hash-link aria-label="Direct link to Phase 4: Framework Enhancement (Long-Term)" title="Direct link to Phase 4: Framework Enhancement (Long-Term)" translate=no>​</a></h3>
+<ol start=10>
+<li class="">Support legacy patterns</li>
+<li class="">Provide migration tools</li>
+<li class="">Continuous improvement</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-related-documentation>7. Related Documentation<a href=#7-related-documentation class=hash-link aria-label="Direct link to 7. Related Documentation" title="Direct link to 7. Related Documentation" translate=no>​</a></h2>
+<ul>
+<li class=""><strong>Implementation Analysis Report:</strong> <code>adk-implementation-analysis-report.md</code></li>
+<li class=""><strong>Implementation Patterns:</strong> <code>adk-implementation-patterns.md</code></li>
+<li class=""><strong>Drift Analysis:</strong> <code>adk-drift-analysis.md</code></li>
+<li class=""><strong>Mashup Issues:</strong> <code>adk-mashup-issues.md</code></li>
+<li class=""><strong>Hardening Recommendations:</strong> <code>adk-hardening-recommendations.md</code></li>
+<li class=""><strong>Good/Bad Practices:</strong> <code>meta-analysis-good-bad-practices.md</code></li>
+<li class=""><strong>Pattern/Anti-Pattern Identification:</strong> <code>meta-analysis-patterns-anti-patterns.md</code></li>
+</ul>
+<hr/>
+<p><strong>Last Updated:</strong> 2025-12-18T00:00:00Z<br/>
+<strong>Version:</strong> 1.0.0<br/>
+<strong>Status:</strong> COMPLETE</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/knowledge/analysis/adk-learning-synthesis.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ai-dev-kit/docs/knowledge/analysis/adk-implementation-patterns><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>ADK Implementation Patterns Catalog</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ai-dev-kit/docs/knowledge/analysis/adk-mashup-issues><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>ADK Mashup Issues Catalog</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#executive-summary class="table-of-contents__link toc-highlight">Executive Summary</a><li><a href=#1-what-to-implement-good-practices-to-adopt class="table-of-contents__link toc-highlight">1. What to Implement (Good Practices to Adopt)</a><ul><li><a href=#11-full-context-task-naming-eepicsstoryttask class="table-of-contents__link toc-highlight">1.1 Full-Context Task Naming (<code>E\{epic\}:S\{story\}:T\{task\}</code>)</a><li><a href=#12-story-checklist-pattern class="table-of-contents__link toc-highlight">1.2 Story Checklist Pattern</a><li><a href=#13-config-driven-approach class="table-of-contents__link toc-highlight">1.3 Config-Driven Approach</a><li><a href=#14-document-lifecycle-metadata class="table-of-contents__link toc-highlight">1.4 Document Lifecycle Metadata</a></ul><li><a href=#2-how-to-harden-hardening-opportunities class="table-of-contents__link toc-highlight">2. How to Harden (Hardening Opportunities)</a><ul><li><a href=#21-fix-epic-9-mismatch-critical class="table-of-contents__link toc-highlight">2.1 Fix Epic 9 Mismatch (CRITICAL)</a><li><a href=#22-add-installer-validation class="table-of-contents__link toc-highlight">2.2 Add Installer Validation</a><li><a href=#23-add-source-repository-frameworks class="table-of-contents__link toc-highlight">2.3 Add Source Repository Frameworks</a><li><a href=#24-enforce-full-context-task-naming class="table-of-contents__link toc-highlight">2.4 Enforce Full-Context Task Naming</a></ul><li><a href=#3-what-not-to-do-anti-patterns-to-prevent class="table-of-contents__link toc-highlight">3. What NOT to Do (Anti-Patterns to Prevent)</a><ul><li><a href=#31-epic-mashup class="table-of-contents__link toc-highlight">3.1 Epic Mashup</a><li><a href=#32-hardcoded-paths class="table-of-contents__link toc-highlight">3.2 Hardcoded Paths</a><li><a href=#33-missing-validation class="table-of-contents__link toc-highlight">3.3 Missing Validation</a><li><a href=#34-poor-documentation class="table-of-contents__link toc-highlight">3.4 Poor Documentation</a><li><a href=#35-source-repository-not-using-own-frameworks class="table-of-contents__link toc-highlight">3.5 Source Repository Not Using Own Frameworks</a></ul><li><a href=#4-what-to-do-differently-improvements-to-current-approach class="table-of-contents__link toc-highlight">4. What to Do Differently (Improvements to Current Approach)</a><ul><li><a href=#41-better-installation-instructions class="table-of-contents__link toc-highlight">4.1 Better Installation Instructions</a><li><a href=#42-clearer-template-separation class="table-of-contents__link toc-highlight">4.2 Clearer Template Separation</a><li><a href=#43-promote-config-driven-approach class="table-of-contents__link toc-highlight">4.3 Promote Config-Driven Approach</a><li><a href=#44-installer-validation class="table-of-contents__link toc-highlight">4.4 Installer Validation</a></ul><li><a href=#5-learning-summary class="table-of-contents__link toc-highlight">5. Learning Summary</a><ul><li><a href=#51-what-to-implement class="table-of-contents__link toc-highlight">5.1 What to Implement</a><li><a href=#52-how-to-harden class="table-of-contents__link toc-highlight">5.2 How to Harden</a><li><a href=#53-what-not-to-do class="table-of-contents__link toc-highlight">5.3 What NOT to Do</a><li><a href=#54-what-to-do-differently class="table-of-contents__link toc-highlight">5.4 What to Do Differently</a></ul><li><a href=#6-implementation-roadmap class="table-of-contents__link toc-highlight">6. Implementation Roadmap</a><ul><li><a href=#phase-1-critical-fixes-immediate class="table-of-contents__link toc-highlight">Phase 1: Critical Fixes (Immediate)</a><li><a href=#phase-2-pattern-promotion-short-term class="table-of-contents__link toc-highlight">Phase 2: Pattern Promotion (Short-Term)</a><li><a href=#phase-3-documentation-short-term class="table-of-contents__link toc-highlight">Phase 3: Documentation (Short-Term)</a><li><a href=#phase-4-framework-enhancement-long-term class="table-of-contents__link toc-highlight">Phase 4: Framework Enhancement (Long-Term)</a></ul><li><a href=#7-related-documentation class="table-of-contents__link toc-highlight">7. Related Documentation</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/docs/documentation/docusaurus-portal-index>Documentation index</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Project</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/RMS-Ltd/ai-dev-kit/issues target=_blank rel="noopener noreferrer" class=footer__link-item>Issues<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ai-dev-kit/blog>Blog</a><li class=footer__item><a href=https://docusaurus.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Docusaurus<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 AI Dev Kit contributors. Built with Docusaurus.</div></div></div></footer></div></body>
