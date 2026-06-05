@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S13:T03": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.3+0 \u2014 E02:S13:T03 kanban init row stamp + version context"
+    }
+  }
+}
