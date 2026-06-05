@@ -18,6 +18,9 @@ name: Docusaurus site build
       - "docs/**"
       - ".github/workflows/docusaurus-build.yml"
 
+permissions:
+  contents: read
+
 defaults:
   run:
     working-directory: portal
