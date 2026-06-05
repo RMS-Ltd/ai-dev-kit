@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** Maintainer (design session — greenfield lean delivery + FR-108 gap analysis)  
 **Priority:** MEDIUM (Should Have — MoSCOW **S**)  
-**Status:** IMPLEMENTED (**v0.6.9.24+2** — E06:S09:T24)
+**Status:** IMPLEMENTED (**v0.6.9.24+3** — E06:S09:T24 doc hygiene)
 
 **Implementing Task:** [E06:S09:T24](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md)
 
@@ -29,7 +29,7 @@ Extend the FR-108 **`ADK-*` install error code registry** with process **I05** (
 
 [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) (v1.0.0, **E06:S09:T20**) delivers stable `ADK-I01`–`ADK-I04` codes for **installer scripts** (`install_greenfield_path.py`, RW, Kanban, sign-off). That covers failures **after** the adopter has a valid vendor tree.
 
-The **new greenfield lean path** ([FR-110](FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md), [ADR-021](../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)) adds acquisition steps that run **before** those installers:
+The **new greenfield lean path** ([FR-110](FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md), [ADR-021](../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)) adds acquisition steps that run **before** those installers:
 
 | Acquisition path | Typical failure | Current reporting |
 | ---------------- | --------------- | ----------------- |
@@ -43,7 +43,7 @@ Adopters who **only** vendor the lean tree ([`greenfield-install/README.md`](htt
 Separately, **documentation drift** undermines the registry as SoT:
 
 - [`framework-dependency-troubleshooting-guide.md`](../../../documentation/user-docs/framework-dependency-troubleshooting-guide.md) § Install error codes is **hand-summarized** — missing anchors, full remediation bullets, `symptom` fields, and code **`ADK-I03.E90:W01`** present in YAML.
-- [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) taxonomy diagram uses `ADK-{DOMAIN}.{PROCESS}` (extra dot); canonical shape per [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) is `ADK-{DOMAIN}{PROCESS}.{SUB}` (e.g. `ADK-I03.E04`).
+- [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) taxonomy diagram uses `ADK-{DOMAIN}.{PROCESS}` (extra dot); canonical shape per [ADR-016](../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) is `ADK-{DOMAIN}{PROCESS}.{SUB}` (e.g. `ADK-I03.E04`).
 - CLI `adk install` maps **all** failures to `ADK-I02.E01` (Kanban installer semantics) — misleading for triage.
 - Brownfield adopters use the same RW/Kanban emitters but INSTALL docs frame codes mainly under greenfield.
 - No CI guard ensures `generate_install_error_docs.py` output matches the committed troubleshooting appendix.
@@ -63,7 +63,7 @@ Separately, **documentation drift** undermines the registry as SoT:
 
 ## Proposed taxonomy extension (registry 1.1.0)
 
-Per [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) — **amend process table** (no shape change):
+Per [ADR-016](../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) — **amend process table** (no shape change):
 
 | Process | Scope | Entry points (proposed) |
 | ------- | ----- | ----------------------- |
@@ -98,7 +98,7 @@ Per [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-cod
 
 ### Functional Requirements
 
-- [ ] **FR-111-F1:** Add process **I05** and seed sub-codes to `install-error-codes.yaml`; bump `registry_version` to **1.1.0**; update [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) process table.
+- [ ] **FR-111-F1:** Add process **I05** and seed sub-codes to `install-error-codes.yaml`; bump `registry_version` to **1.1.0**; update [ADR-016](../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) process table.
 - [ ] **FR-111-F2:** Provide at least one **adopter-runnable acquisition preflight** that emits registered `ADK-I05.*` codes (Python preferred — reuses `adk_install_errors.emit_install_error`).
 - [ ] **FR-111-F3:** Document acquisition failure reporting in **`INSTALL_IN_YOUR_PROJECT.md`** lean vendor section and **`greenfield-install/README.md`** (two-token rule + link to troubleshooting anchors).
 - [ ] **FR-111-F4:** Regenerate troubleshooting guide § Install error codes from `generate_install_error_docs.py` (full symptom, remediation, anchors); include all **1.1.0** codes.
@@ -138,9 +138,9 @@ Per [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-cod
 **Builds on:**
 
 - [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) — registry, emitter, tests (COMPLETE)
-- [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) — taxonomy shape
+- [ADR-016](../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) — taxonomy shape
 - [FR-110](FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — `greenfield-install/` vendor tree
-- [ADR-021](../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md) — GHCR acquisition path
+- [ADR-021](../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md) — GHCR acquisition path
 - [FR-080](FR-080-greenfield-installation-process.md) — greenfield process boundaries
 - [UXR-016](UXR-016-install-setup-interactive-feedback-external-semver-version.md) — SemVer banner pairing
 
@@ -150,7 +150,7 @@ Per [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-cod
 
 **Related (optional coupling):**
 
-- [E06:S09:T22](T22-package-documentation-greenfield-install-alignment-fr110.md) — package README alignment (may absorb part of FR-111-F3)
+- [E06:S09:T22](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md) — package README alignment (may absorb part of FR-111-F3)
 - [E06:S09:T23](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) — GHCR delivery (I05.E01/E02 map to this channel)
 
 ---

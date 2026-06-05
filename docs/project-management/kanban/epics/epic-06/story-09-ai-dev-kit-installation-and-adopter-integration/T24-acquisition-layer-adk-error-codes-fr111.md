@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.6.9.24+2 — FR-111 implementation)  
-**Version:** v0.6.9.24+2  
+**Last updated:** 2026-06-05 (RW E06:S09:T24 — FR-111 doc link hygiene)  
+**Version:** v0.6.9.24+3  
 **Code:** E06S09T24
 
 **Planning package:** [IPP-E06S09T24](../../../../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)

@@ -1,0 +1,16 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 scoped reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 24,
+    "task_id": "E06:S09:T24",
+    "version_string": "v0.6.9.24+3"
+  },
+  "timestamp_utc": "2026-06-05 16:16 UTC",
+  "summary": {
+    "touched_surfaces": ["task_doc", "fbu_doc", "story_doc"],
+    "untouched_surfaces": ["kboard"]
+  }
+}

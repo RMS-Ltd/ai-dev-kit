@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.24+3] - 05-06-26
+
+E06:S09:T24 — **Change implemented:** FR-111 doc link hygiene + troubleshooting ADK anchor cleanup. SemVer **v0.4.985+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.24+3.md)
+
+---
+
 ## [0.8.3.12+3] - 05-06-26
 
 E08:S03:T12 — **Change implemented:** IPP BR-100 link path fix (linked planning artifact hygiene). SemVer **v0.4.984+3**.
