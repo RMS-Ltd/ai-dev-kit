@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.11.7+11] - 05-06-26
+
+E04:S11:T07 — **Wave 3 Epics 5 & 6:** FR-016 discrete task migration (15 stories, ~81 new task docs). SemVer **v0.4.927+11**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+11.md)
+
+---
+
 ## [0.4.11.7+10] - 05-06-26
 
 E04:S11:T07 — **Wave 3 Epics 1 & 3:** FR-016 discrete task migration (11 stories, ~35 new task docs). SemVer **v0.4.926+10**.

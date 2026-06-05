@@ -22,8 +22,10 @@ housekeeping_policy: keep
 
 ## Task Checklist
 - [ ] **E05:S08:T01 – Investigate persistent knowledge base concept and ramifications** - TODO
+  - Task: [`T01-investigate-persistent-knowledge-base-concept-and-ramificati`](story-08-knowledge-base/T01-investigate-persistent-knowledge-base-concept-and-ramificati.md)
 
 - [x] **E05:S08:T02 – Notion hub, Knowledge Base container, and KB index** ✅ COMPLETE (v0.5.8.2+8)
+  - Task: [`T02-notion-hub-and-kb-index`](story-08-knowledge-base/T02-notion-hub-and-kb-index.md)
 
 ## Overview
 
@@ -40,71 +42,6 @@ Understand the full scope and implications of the persistent knowledge base conc
 - Integration with Cursor indexing and vectorization
 - Maintenance and curation overhead
 - Best practices and anti-patterns
-
----
-
-## Tasks
-
-### E05:S08:T01 – Investigate persistent knowledge base concept and ramifications
-
-**Scope:** Comprehensive investigation of the persistent knowledge base concept, its integration points, requirements, and implications for the ADK framework.
-
-**Input:** 
-- `docs/knowledge/README.md` (persistent KB concept)
-- `docs/knowledge/guides/building-persistent-knowledge.md` (foundational concept document: Building Persistent Knowledge in Cursor)
-- `docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md` (KB structure with persistent KB integration)
-- `docs/architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md` (RW Step 9: Update Knowledge Base)
-- Existing knowledge base content and structure
-
-**Deliverable:** 
-- Investigation report documenting:
-  - Concept analysis and scope
-  - Integration points and dependencies
-  - Workflow impacts (RW, Intake, PIR, etc.)
-  - Tooling and automation requirements
-  - Agent capability requirements
-  - Cursor integration considerations
-  - Maintenance and curation strategies
-  - Risk assessment
-  - Recommendations and next steps
-
-
-**Dependencies:** None  
-**Blocker:** None  
-**Parallel Development Candidacy:** Safe (investigation/documentation only)
-
-**Approach:**
-1. Review persistent KB concept documentation (including `building-persistent-knowledge.md`)
-2. Analyze integration with existing workflows
-3. Assess agentic management requirements (multi-agent systems, web search, file save capabilities)
-4. Evaluate Cursor integration capabilities (indexing, vectorization, search)
-5. Review taxonomical standards and SoP requirements from foundational document
-6. Identify tooling and automation needs
-7. Assess maintenance and curation overhead
-8. Document risks and mitigation strategies
-9. Provide recommendations
-
-**Acceptance Criteria:**
-- [ ] Investigation report created
-- [ ] Concept scope clearly defined
-- [ ] All integration points identified
-- [ ] Workflow impacts documented
-- [ ] Tooling requirements specified
-- [ ] Agent capability requirements defined
-- [ ] Cursor integration approach documented
-- [ ] Maintenance strategy outlined
-- [ ] Risks identified and assessed
-- [ ] Recommendations provided
-
----
-
-### E05:S08:T02 – Notion hub, Knowledge Base container, and KB index
-
-**Scope:** Establish Notion project hub and Knowledge Base container (RMS Teamspace), wire repo via `notion_hub_url`, and index project KB for optimization and migration.
-
-**Deliverables:** Notion AI Dev Kit hub page; Knowledge Base container under hub; `rw-config.yaml` and `.cursorrules` hub reference; `scripts/kb_index.py`, `docs/knowledge/KB-INDEX.md`, `docs/knowledge/KB-INDEX.json`; story renamed to "Knowledge Base".
-
-**Task:** [T02-notion-hub-and-kb-index.md](story-08-knowledge-base/T02-notion-hub-and-kb-index.md)
 
 ---
 

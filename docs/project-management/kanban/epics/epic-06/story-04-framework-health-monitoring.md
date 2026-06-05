@@ -23,8 +23,11 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E06:S04:T01 – Create framework health metrics** - ✅ COMPLETE (v0.6.4.1+1 – Framework health metrics document created)
+  - Task: [`T01-create-framework-health-metrics`](story-04-framework-health-monitoring/T01-create-framework-health-metrics.md)
 - [x] **E06:S04:T02 – Implement health monitoring tools** - ✅ COMPLETE (v0.6.4.2+1 – Framework health monitoring tools implemented: monitoring script, collector modules, workflow, and procedures)
+  - Task: [`T02-implement-health-monitoring-tools`](story-04-framework-health-monitoring/T02-implement-health-monitoring-tools.md)
 - [x] **E06:S04:T03 – Build framework health dashboards** - ✅ COMPLETE (v0.6.4.3+1 – Framework health dashboard generator and guide created)
+  - Task: [`T03-build-framework-health-dashboards`](story-04-framework-health-monitoring/T03-build-framework-health-dashboards.md)
 
 ---
 
@@ -37,53 +40,6 @@ This story builds monitoring and health tracking for framework packages, ensurin
 ## Goal
 
 Build comprehensive monitoring and health tracking for framework packages.
-
----
-
-## Tasks
-
-### E06:S04:T01 – Create framework health metrics
-
-**Input:** Framework packages, maintenance requirements  
-**Deliverable:** Framework health metrics definition  
-**Dependencies:** None  
-**Blocker:** None
-
-**Approach:**
-1. Identify framework health indicators
-2. Define health metrics
-3. Create metrics documentation
-4. Establish metrics collection processes
-
----
-
-### E06:S04:T02 – Implement health monitoring tools
-
-**Input:** Framework health metrics  
-**Deliverable:** Health monitoring tools  
-**Dependencies:** E06:S04:T01  
-**Blocker:** None
-
-**Approach:**
-1. Design health monitoring tools
-2. Implement monitoring scripts
-3. Create monitoring workflows
-4. Document monitoring procedures
-
----
-
-### E06:S04:T03 – Build framework health dashboards
-
-**Input:** Health monitoring tools  
-**Deliverable:** Framework health dashboard  
-**Dependencies:** E06:S04:T02  
-**Blocker:** None
-
-**Approach:**
-1. Design health dashboard
-2. Implement dashboard visualization
-3. Create dashboard documentation
-4. Document dashboard usage
 
 ---
 

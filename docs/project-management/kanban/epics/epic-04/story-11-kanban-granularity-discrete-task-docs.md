@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
-**Last updated:** 2026-06-05 (v0.4.11.7+10 – Wave 3 Epics 1 & 3 migration)  
+**Last updated:** 2026-06-05 (v0.4.11.7+11 – Wave 3 Epics 5 & 6 migration)  
 **Estimated Effort:** 1 week (T01-T06) + 6-8 weeks (T07 migration)  
 **Started:** [TBD]  
 **Completed:** [TBD]  
@@ -35,7 +35,7 @@ housekeeping_policy: keep
   - Task: [`T05-dependency-wiring-cross-references`](story-11-kanban-granularity-discrete-task-docs/T05-dependency-wiring-cross-references.md)
 - [x] **E04:S11:T06 – Review and Optimize Template Structure for Tier Delegation** ✅ COMPLETE (v0.4.11.6+2 – All phases complete: templates optimized, guidelines created, compliance audit complete, migration guide created)
   - Task: [`T06-review-and-optimize-template-structure-for-tier-delegation`](story-11-kanban-granularity-discrete-task-docs/T06-review-and-optimize-template-structure-for-tier-delegation.md)
-- [ ] **E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents** - IN PROGRESS (v0.4.11.7+10 – Wave 3 Epics 1, 2, 3, 4 complete; Epics 5–11, 21 pending)
+- [ ] **E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents** - IN PROGRESS (v0.4.11.7+11 – Wave 3 Epics 1–6 complete; Epics 7, 8, 10, 11, 21 pending)
   - Task: [`T07-planning-spec-tests-impl.md`](story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
   - IPP: [`IPP-E04S11T07-fr016-discrete-task-docs-migration.md`](../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
 
