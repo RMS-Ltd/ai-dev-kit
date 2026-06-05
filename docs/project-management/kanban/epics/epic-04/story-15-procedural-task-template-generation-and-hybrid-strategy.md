@@ -49,7 +49,7 @@ Deliver a robust, documented hybrid template system where:
 - [x] **E04:S15:T02 – Design procedural task template generator** ✅ COMPLETE (v0.4.15.3+1)
 - [x] **E04:S15:T03 – Implement generator and validate against concrete templates** ✅ COMPLETE (v0.4.15.3+1)
 - [x] **E04:S15:T04 – Integrate generator into Kanban framework package** ✅ COMPLETE (v0.4.15.5+1)
-- [x] **E04:S15:T05** ✅ COMPLETE (v0.4.15.5+1 – [T05](story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md), [IPP](../../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md))
+- [x] **E04:S15:T05** ✅ COMPLETE (v0.4.15.5+1 – [T05](story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md), [IPP](../../../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md))
 
 ---
 

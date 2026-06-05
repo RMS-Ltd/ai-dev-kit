@@ -22,6 +22,7 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E02:S12:T01 – Add Step 17: Housekeeping to Release Workflow** - ✅ COMPLETE (v0.2.12.1+1 – Step 17 added: workflow YAML, documentation, and cursor rules updated)
+  - Task: [`T01-add-step-17-housekeeping-to-release-workflow`](story-12-rw-step-17-housekeeping/T01-add-step-17-housekeeping-to-release-workflow.md)
 
 > **Format:** `E2:S12:Txx` (Epic 2, Story 12, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.2.12.1+1)`)
@@ -40,35 +41,6 @@ Add Step 17: Housekeeping to the Release Workflow. This step runs at the end of 
 - [ ] Update RW documentation with Step 17 execution guide
 - [ ] Update cursor rules to reference Step 17
 - [ ] Ensure housekeeping step clears IDE todo list at end of workflow
-
----
-
-## Tasks
-
-### E02:S12:T01 – Add Step 17: Housekeeping to Release Workflow
-
-**Input:** User request to add housekeeping step to RW  
-**Deliverable:** Step 17 added to RW workflow and documentation  
-**Dependencies:** None  
-**Blocker:** None  
-**Parallel Development Candidacy:** Safe (documentation and workflow update)
-
-**Approach:**
-1. Add `step-17: Housekeeping` to `release-workflow.yaml`
-2. Configure handler: `ide.housekeeping`
-3. Set dependencies: `step-16`
-4. Configure: `clear_ide_todos: true`, `cleanup_temp_files: false` (future)
-5. Update RW agent execution guide with Step 17 documentation
-6. Update cursor rules to reference Step 17 as Step 13 (12-step core + housekeeping)
-7. Update workflow version: 2.2.0 → 2.3.0
-8. Update documentation version: 1.8.0 → 1.9.0
-
-**Status:** ✅ COMPLETE (v0.2.12.1+0 – Step 17 added: workflow YAML, documentation, and cursor rules updated)
-
-**Deliverables:**
-- ✅ `packages/frameworks/workflow-mgt/workflows/release-workflow.yaml` - Step 17 added
-- ✅ `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` - Step 17 documented
-- ✅ `.cursorrules` - Step 13: Housekeeping added
 
 ---
 

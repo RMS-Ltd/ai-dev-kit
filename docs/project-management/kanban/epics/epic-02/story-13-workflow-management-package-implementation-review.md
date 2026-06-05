@@ -21,17 +21,24 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [x] **E02:S13:T01 – Establish expectations baseline for Workflow Management package** - ✅ COMPLETE (v0.2.13.1+2)
+  - Task: [`T01-expectations-baseline`](story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
   - Task Doc: [`T01-expectations-baseline.md`](story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 
 - [ ] **E02:S13:T02 – Inventory package components and map to expectations** - TODO
+  - Task: [`T02-inventory-package-components-and-map-to-expectations`](story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
 - [ ] **E02:S13:T03 – Validate workflow behavior against documented guidance** - TODO
+  - Task: [`T03-validate-workflow-behavior-against-documented-guidance`](story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md)
 - [ ] **E02:S13:T04 – Review integrations and dependency alignment** - TODO
+  - Task: [`T04-review-integrations-and-dependency-alignment`](story-13-workflow-management-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
 - [ ] **E02:S13:T05 – Create gap log and risk assessment** - TODO
+  - Task: [`T05-create-gap-log-and-risk-assessment`](story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [ ] **E02:S13:T06 – Define RC sign-off criteria and remediation tasks** - TODO
+  - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
   - Task Doc: [`T07-rw-semver-tag-when-task-touch-enabled.md`](story-13-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)
 
 - [x] **E02:S13:T08 – Sync packaged workflows with live repo implementation** - ✅ COMPLETE (v0.2.13.8+2) ([FR-106](../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md))
+  - Task: [`T08-sync-packaged-workflows-with-live-repo-implementation`](story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
   - Task Doc: [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
   - IPP: [`IPP-E2S13T8-sync-packaged-workflows-live-spec.md`](../../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 
@@ -87,68 +94,6 @@ This story performs the RC readiness **implementation review** for the Workflow 
 ## Goal
 
 Provide a complete implementation review, evidence, and remediation plan to support RC sign-off for the Workflow Management framework.
-
----
-
-## Tasks
-
-### E02:S13:T01 – Establish expectations baseline for Workflow Management package
-
-**Task ID:** E02:S13:T01  
-**Status:** ✅ COMPLETE  
-**Scope:** Define the implementation expectations baseline for the Workflow Management framework package. Extract expected features, workflows, integration behaviors, and package composition from documentation.  
-**Input:** Package README, implementation guides, workflow definitions  
-**Deliverable:** Expectations baseline document for behavior and scope  
-**Approach:** Extract expected features, workflows, and integration behaviors.  
-**Version Anchor:** ✅ COMPLETE (v0.2.13.1+2)
-
-**Acceptance Criteria:**
-- [x] Expectations baseline documented and approved ✅
-- [x] Core operating principles captured ✅
-- [x] Expected workflows documented ✅
-- [x] Integration expectations mapped ✅
-- [x] Package composition documented ✅
-- [x] Sources referenced ✅
-
-### E02:S13:T02 – Inventory package components and map to expectations
-
-**Input:** Package directory inventory  
-**Deliverable:** Component map with expected vs actual coverage  
-**Approach:** Map scripts, workflows, templates, and docs to expectations.
-
-### E02:S13:T03 – Validate workflow behavior against documented guidance
-
-**Input:** RW/UKW documentation and workflow YAML  
-**Deliverable:** Behavior validation notes and discrepancies  
-**Approach:** Validate key workflow behaviors against docs and policies.
-
-### E02:S13:T04 – Review integrations and dependency alignment
-
-**Input:** Integration docs and dependency references  
-**Deliverable:** Integration alignment report  
-**Approach:** Verify integration touchpoints with Kanban and Versioning.
-
-### E02:S13:T05 – Create gap log and risk assessment
-
-**Input:** Findings from T01–T04 + [E07:S07:T01 machinery review report](../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) (§5–§6 severity backlog)  
-**Deliverable:** Gap log with severity and risk notes  
-**Approach:** Consolidate gaps and categorize by RC impact.
-
-### E02:S13:T06 – Define RC sign-off criteria and remediation tasks
-
-**Input:** Gap log + [E07:S07:T01 RC gate summary](../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
-**Deliverable:** RC sign-off checklist and remediation task list  
-**Approach:** Define minimum bar for RC and backlog tasks.
-
-### E02:S13:T08 – Sync packaged workflows with live repo implementation
-
-**Task ID:** E02:S13:T08  
-**Status:** IN PROGRESS  
-**Scope:** Reconcile packaged workflow YAML, `canonical-rw-steps.yaml`, portable rule excerpts, and registry metadata with live agent execution spec (root `.cursorrules`, vwmp guides, validators). Extends E05:S01:T66 dual-source parity to Step 9 FR-097/FR-092 validators and YAML/registry drift.  
-**Deliverable:** Updated package artefacts + parity delta log + sync report.  
-**Task Doc:** [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
-
-**Code review gate:** [E07:S07:T01](../epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)) — machinery review hosted under [E07:S07 – Code Reviews](../epic-07/story-07-code-reviews.md); findings feed T05/T06.
 
 ---
 
