@@ -17,6 +17,15 @@ E02:S16:T04 — **Kanban hygiene (RW -k):** FR-016 Task ID headers + E01:S01 bac
 
 ---
 
+## [0.2.13.6+0] - 05-06-26
+
+E02:S13:T06 — **Kanban init (RW -k):** workflow-mgt RC review task filed on **kboard** M-band. SemVer **v0.4.938+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.6+0.md)
+
+---
+
+
 ## [0.2.13.5+0] - 05-06-26
 
 E02:S13:T05 — **Kanban init (RW -k):** workflow-mgt RC review task filed on **kboard** M-band. SemVer **v0.4.937+0**.

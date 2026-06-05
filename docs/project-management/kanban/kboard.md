@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW -k E02:S13:T05 **v0.2.13.5+0**)
+**Last Updated:** 2026-06-05 (RW -k E02:S13:T06 **v0.2.13.6+0**)
 **Version:** v0.2.16.4+32
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 
 - **E02:S13:T05** – Create gap log and risk assessment - 📋 TODO (HIGH, Epic 2 workflow-mgt RC review; input [E07:S07:T01 report](epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [Story](epics/epic-02/story-13-workflow-management-package-implementation-review.md) | [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md) | Last modified: 2026-06-05 13:05 UTC
 
-- **E02:S13:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 2 workflow-mgt RC review) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Story](epics/epic-02/story-13-workflow-management-package-implementation-review.md) | Last modified: 2026-06-05 13:06 UTC
+- **E02:S13:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 2 workflow-mgt RC review; **v0.2.13.6+0** kanban init) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Story](epics/epic-02/story-13-workflow-management-package-implementation-review.md) | Last modified: 2026-06-05 13:06 UTC
 
 ### Should Have (S) - Important Tasks
 
