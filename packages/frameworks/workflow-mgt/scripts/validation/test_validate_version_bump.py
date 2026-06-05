@@ -527,6 +527,31 @@ def test_validate_perpetual_build_increment_rejects_unchanged_build(monkeypatch)
     assert ok2, errs2
 
 
+def test_validate_tagged_build_collision_blocks_doc_policy_zero_when_tag_exists(monkeypatch):
+    """BR-067 follow-on: --doc-policy-zero must not reuse a tagged BUILD."""
+    import validate_version_bump as vvb
+
+    monkeypatch.setattr(vvb, "git_ref_exists", lambda ref: ref == "v0.5.9.14+2")
+    version_file = Path("src/ai_dev_kit/version.py")
+    ok, errs = vvb.validate_tagged_build_collision(0, 5, 9, 14, 2, version_file, True)
+    assert not ok
+    assert any("TAGGED BUILD REUSE" in e for e in errs)
+
+
+def test_validate_tagged_build_collision_blocks_unchanged_build_when_tag_exists(monkeypatch):
+    """Same-task release must increment BUILD when HEAD BUILD already has a git tag."""
+    import validate_version_bump as vvb
+
+    monkeypatch.setattr(vvb, "get_version_build_from_git_ref", lambda _vf, ref: 2 if ref == "HEAD" else None)
+    monkeypatch.setattr(vvb, "git_ref_exists", lambda ref: ref == "v0.5.9.14+2")
+    version_file = Path("src/ai_dev_kit/version.py")
+    ok, errs = vvb.validate_tagged_build_collision(0, 5, 9, 14, 2, version_file, False)
+    assert not ok
+    assert any("TAGGED BUILD NOT INCREMENTED" in e for e in errs)
+    ok2, errs2 = vvb.validate_tagged_build_collision(0, 5, 9, 14, 3, version_file, False)
+    assert ok2, errs2
+
+
 def test_validate_perpetual_guardrails_warns_for_missing_marker_on_story_016_lane():
     content = """
 **Task ID:** E2:S16:T03

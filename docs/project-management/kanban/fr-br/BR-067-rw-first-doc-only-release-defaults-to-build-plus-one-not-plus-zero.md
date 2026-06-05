@@ -61,7 +61,7 @@ This is an **architectural / policy enforcement gap**, not merely a one-off typo
 | -------- | ---------------- | ---------- | ------------- | ----------------- | --------------- |
 | **First-time E/S/T doc** (abstract space / intake) | No (created in this commit) | Docs-only | **+0** | — | Auto doc-init detection |
 | **First functional work** on new task | Yes (from prior +0) | Any functional change | **+1** | — | Normal new-task path |
-| **Same-task docs-only** on existing E/S/T | Yes | Docs-only only | **+1** (default RW Step 2) | **`--doc-policy-zero`** with **`--requested` + `--art`** → **+0** | `validate_version_bump.py --strict --requested E:S:T --art --doc-policy-zero` |
+| **Same-task docs-only** on existing E/S/T | Yes | Docs-only only | **+1** (default RW Step 2) | **`--doc-policy-zero`** with **`--requested` + `--art`** → **+0** only when **no git tag** exists for that BUILD (blocked when tag exists; use **+1** instead — see `CHANGELOG_v0.2.16.3+3`) | `validate_version_bump.py --strict --requested E:S:T --art --doc-policy-zero` |
 | **Same-task functional** release | Yes | Code or mixed | **BUILD + 1** | — | Perpetual: must exceed HEAD BUILD ([BR-075](./BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)) |
 | **Batch story + task creation** (BR-010 class) | Task doc created same commit as story | Mixed docs | **+1** (not +0) | — | Doc-init blocked when task doc already exists in tree |
 

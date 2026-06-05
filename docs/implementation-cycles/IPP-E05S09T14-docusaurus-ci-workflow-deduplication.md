@@ -235,7 +235,8 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | Build | Summary |
 | ----- | ------- |
 | `v0.5.9.14+1` | IPW recovery (docs-only) |
-| `v0.5.9.14+2` | ADR-017; merged `docusaurus-build.yml`; deleted `docusaurus-deploy.yml`; pytest T1–T7 |
+| `v0.5.9.14+2` | ADR-017; merged `docusaurus-build.yml`; deleted `docusaurus-deploy.yml`; pytest T1–T7 (`0ebf2cf`) |
+| `v0.5.9.14+3` | Wave 2 FBU closure + BUILD collision remediation; tagged-BUILD validator guard |
 
 ### 8.2 Wave 2 verification checklist
 
@@ -266,7 +267,7 @@ Record outputs in [docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md]
 | 2 | Create evidence doc; run V1–V5 |
 | 3 | BR-093 → FIXED; T14 task doc link evidence |
 | 4 | Kanban: prune V-band row; `intake-completed.md`; structure-prune manifest |
-| 5 | **`RW E05:S09:T14 --art --doc-policy-zero`** |
+| 5 | **`RW E05:S09:T14 --art`** (BUILD **+3** remediation — **not** `--doc-policy-zero` when `v0.5.9.14+2` tag exists) |
 | N | Confirm task remains **COMPLETE**; BR/kboard terminal |
 
 ---
