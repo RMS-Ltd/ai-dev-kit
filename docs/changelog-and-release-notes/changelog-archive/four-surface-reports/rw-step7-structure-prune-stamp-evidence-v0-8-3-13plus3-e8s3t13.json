@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T13": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.13+3 — wave-2 release-scope reconciliation; task doc + BR-100 + story checklist updated"
+    }
+  }
+}

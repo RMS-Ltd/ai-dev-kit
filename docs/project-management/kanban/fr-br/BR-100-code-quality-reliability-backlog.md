@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Severity:** HIGH — Code Quality **Reliability** score **Needs Improvement**; **34** open standard findings on `main` (2026-06-05 re-scan; was **133** @ `5fcf102`).  
 **Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (dashboard re-scan — wave-1 **133→34** −74%; score still **Needs Improvement**)  
-**Version:** v0.8.3.13+2  
+**Last updated:** 2026-06-05 (v0.8.3.13+3 — wave-2 remediation shipped; **6** findings fixed; **28** expected open post-re-scan)  
+**Version:** v0.8.3.13+3  
 **Implementing Task:** [E08:S03:T13](../epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md)
 
@@ -69,6 +69,8 @@ GitHub **Code Quality** reported **133 open reliability findings** on `main` (`5
 **Verification:** Local AST scan post-wave: **0** pass-only handlers, **0** bare except, **0** assign-open leaks.
 
 **Dashboard re-scan (2026-06-05):** [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) — **34** open reliability @ `main` `cadb0c3` (was **133**); score **Needs Improvement** (unchanged). Wave-2 triage on **34** residuals required for **Fair**+.
+
+**Wave-2 attempt (2026-06-05):** Per [IPP-E08S03T13 §4.1](../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — fixed **6** in-scope findings (`py/mixed-returns` ×4, `py/call/wrong-arguments` ×2) across 6 files; **28** deferred (16 `py/print-during-import` → T12, 12 `py/use-of-exit-or-quit` → wave 3). `pytest tests/` **406 passed**. Dashboard re-scan pending post-merge.
 
 ---
 

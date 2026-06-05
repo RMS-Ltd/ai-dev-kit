@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.13+3] - 05-06-26
+
+E08:S03:T13 — **Change implemented:** BR-100 wave-2 reliability (mixed-returns + wrong-arguments; **6** findings; **28** deferred). SemVer **v0.4.992+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.13+3.md)
+
+---
+
 ## [0.8.3.15+2] - 05-06-26
 
 E08:S03:T15 — **Change implemented:** CI triage — ADK error-code doc sync, Docusaurus anchor, greenfield-install mirror. SemVer **v0.4.991+2**.

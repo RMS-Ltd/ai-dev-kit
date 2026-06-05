@@ -148,10 +148,9 @@ class ICWHandler:
                 if epic_dir.exists():
                     task_files = list(epic_dir.glob("**/T*-*.md"))
                     return [f.name for f in task_files if f.name.startswith('T')]
-            else:
-                # Get all tasks
-                task_files = list(kanban_root.glob("**/T*-*.md"))
-                return [f.name for f in task_files if f.name.startswith('T')]
+                return []
+            task_files = list(kanban_root.glob("**/T*-*.md"))
+            return [f.name for f in task_files if f.name.startswith('T')]
                 
         except Exception:
             return []

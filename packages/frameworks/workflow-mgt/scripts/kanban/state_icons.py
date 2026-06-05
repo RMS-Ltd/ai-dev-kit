@@ -161,6 +161,7 @@ def normalize_status_token(raw: str) -> Optional[str]:
         return "OPEN"
     if s.startswith("ACTIVE"):
         return "IN_PROGRESS"
+    return None
 
 
 def match_canonical_at_start(rest_stripped: str) -> Optional[str]:

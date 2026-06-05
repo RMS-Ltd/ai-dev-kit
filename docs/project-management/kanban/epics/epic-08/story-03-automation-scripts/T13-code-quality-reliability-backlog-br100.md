@@ -12,12 +12,12 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (dashboard re-scan — wave-1 verified **133→34** −74%; score still **Needs Improvement**; remainder triage)  
-**Version Anchor:** v0.8.3.13+2  
-**Version:** v0.8.3.13+2  
+**Last updated:** 2026-06-05 (v0.8.3.13+3 — wave-2 shipped; dashboard re-scan pending)  
+**Version Anchor:** v0.8.3.13+3  
+**Version:** v0.8.3.13+3  
 **Code:** E08S03T13
 
-**Scope:** Phased burn-down of **133** open GitHub Code Quality **reliability** findings on `main`; wave 1 = empty except, file-not-closed, wrong-arguments, BaseException catches.
+**Scope:** Phased burn-down of GitHub Code Quality **Standard reliability** findings on `main`. Wave 1 (done): empty-except, file-not-closed. Wave 2 (done locally): mixed-returns, wrong-arguments. Wave 3 exit/quit + print-at-import deferred (IPP / T12).
 
 **Upstream:** [BR-100 — Code Quality reliability backlog](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
 
@@ -38,8 +38,56 @@ Publication Status: NOT_APPLICABLE
 ## Deliverable
 
 1. Baseline manifest: reliability findings by rule + file hotspots.
-2. Triage sheet: fix / waive / defer per rule group.
-3. Wave 1 fixes with tests where behaviour changes.
+2. Triage sheet: fix / waive / defer per rule group (wave 1 + wave 2 done).
+3. Wave 1 fixes with tests where behaviour changes (done).
+4. Wave 2 fixes per [IPP §4.1](../../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md#41-wave-2-steps-implemented-locally--pending-rw--dashboard-re-scan) (**done** @ v0.8.3.13+3).
+
+---
+
+## Wave-2 pre-manifest (2026-06-05)
+
+**Source:** [GitHub Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open category:reliability`); dashboard @ `main` `777e956`.
+
+| CodeQL rule | Open count | Severity | Wave-2 disposition |
+| ----------- | ---------- | -------- | ------------------ |
+| `py/print-during-import` | 16 | Note | **OUT OF SCOPE** — maintainability lane ([E08:S03:T12](T12-code-quality-maintainability-backlog-br099.md)) |
+| `py/use-of-exit-or-quit` | 12 | Warning | **DEFER** — wave 3 per IPP |
+| `py/mixed-returns` | 4 | Warning | **FIX** |
+| `py/call/wrong-arguments` | 2 | Error | **FIX** |
+| **Total (reliability)** | **34** | — | — |
+
+**Hotspots (wave-2 fix scope):**
+
+| Rule | File(s) |
+| ---- | ------- |
+| `py/mixed-returns` | `state_icons.py:110` (`normalize_status_token`), `icw_handler.py:140` (`get_available_tasks`) + `greenfield-install/` mirrors |
+| `py/call/wrong-arguments` | `build_packages.py:96` (`update_manifest_hash` arity) + `greenfield-install/` mirror |
+
+---
+
+## Triage sheet (wave 2)
+
+| Rule group | Disposition | Rationale |
+| ---------- | ----------- | --------- |
+| `py/mixed-returns` | **fix** | Add explicit `return None` / `return []` on fall-through paths |
+| `py/call/wrong-arguments` | **fix** | Align `build_packages.py` with `build_package.py` manifest flow (`generate_manifest_json` + `add_manifest_to_archive`) |
+| `py/use-of-exit-or-quit` | **defer** (wave 3) | IPP wave-2 scope excludes exit/quit; future IPP revision |
+| `py/print-during-import` | **defer** (T12) | Reliability-category tag but owned by maintainability backlog ([BR-099](T12-code-quality-maintainability-backlog-br099.md)) |
+
+---
+
+## Post-wave-2 manifest (2026-06-05 — local)
+
+**Remediation:** Explicit returns in `normalize_status_token` / `get_available_tasks`; manifest hash update fix in `build_packages.py` (both trees).
+
+| Metric | Value |
+| ------ | ----- |
+| Files touched | 6 |
+| Wave-2 reliability findings addressed | **6** (4 mixed-returns + 2 wrong-arguments) |
+| Expected post-fix reliability (dashboard) | **28** open (16 print + 12 exit deferred) |
+| `pytest tests/` | **406 passed**, 2 skipped |
+
+**Dashboard delta:** Pending GitHub Code Quality re-scan after merge to `main`. Wave-2 in-scope rules cleared locally; **Fair+** blocked by deferred wave-3 exit/quit (**12**) unless score threshold met with remainder only.
 
 ---
 
@@ -104,7 +152,7 @@ Publication Status: NOT_APPLICABLE
 | Delta | — | **−99** (−74.4%) |
 | Dashboard score | **Needs Improvement** | **Needs Improvement** (unchanged) |
 
-**Next:** Triage **34** residual findings (likely wave-2 rules: `py/mixed-returns`, `py/multiple-definition`, `py/use-of-exit-or-quit`, deferred `py/call/wrong-arguments`) until score reaches **Fair**+.
+**Next:** Dashboard re-scan after wave-2 merge; **28** reliability residuals expected (16 print → T12, 12 exit → wave 3 IPP).
 
 ---
 
@@ -112,7 +160,7 @@ Publication Status: NOT_APPLICABLE
 
 - [x] Baseline manifest captured (rule → count, top files).
 - [x] Wave-1 rule groups triaged; true positives fixed (local AST clean).
-- [ ] Reliability score improves to **Fair** or better (**Needs Improvement** @ **34** open on re-scan).
+- [ ] Reliability score improves to **Fair** or better (**Needs Improvement** @ **28** expected post wave-2 re-scan; **12** exit deferred wave 3).
 - [x] No CI regressions (`pytest tests/` green).
 - [ ] **BR-100** released via **RW E08:S03:T13** when complete.
 

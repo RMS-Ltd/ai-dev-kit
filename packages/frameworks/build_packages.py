@@ -14,11 +14,13 @@ sys.path.insert(0, str(WORKFLOW_MGT_SCRIPTS))
 
 # Import build_package functions
 from build_package import (
+    add_manifest_to_archive,
     collect_framework_files,
     compute_sha256_hash,
     create_hash_file,
     create_tar_gz_archive,
     find_framework_directory,
+    generate_manifest_json,
     update_manifest_hash,
     validate_framework_name,
     validate_framework_structure,
@@ -91,9 +93,20 @@ def build_framework(framework_name: str, version: str, display_name: str) -> boo
         hash_file_path = create_hash_file(package_path, package_hash)
         print(f"   Hash file created: {hash_file_path.name}")
         
-        # Update manifest hash
+        # Update manifest hash (same flow as build_package.py)
         print("\n   📋 Updating MANIFEST.json hash...")
-        update_manifest_hash(package_path, package_hash)
+        package_filename = package_path.name
+        manifest = generate_manifest_json(
+            framework_name=install_slug,
+            version=version,
+            package_filename=package_filename,
+            files=files,
+            framework_dir=framework_dir,
+            package_hash=None,
+        )
+        add_manifest_to_archive(package_path, manifest)
+        manifest = update_manifest_hash(manifest, package_hash, package_filename)
+        add_manifest_to_archive(package_path, manifest)
         
         print(f"\n   ✅ SUCCESS: {display_name} v{version}")
         return True
