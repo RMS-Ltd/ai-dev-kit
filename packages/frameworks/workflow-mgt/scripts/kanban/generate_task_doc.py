@@ -60,6 +60,7 @@ def render_task_document(
         "",
         f"# Epic {task.epic}, Story {task.story}, Task {task.task}: {title}",
         "",
+        f"**Task ID:** {est}  ",
         f"**Status:** {status}  ",
         "**Priority:** MEDIUM  ",
         f"**Last updated:** {today} ({version} – migrated from embedded Story section)  ",
@@ -150,7 +151,7 @@ def generate_task_docs_from_story(
     """Extract embedded tasks from *story_path* and write discrete docs."""
     tasks = extract_embedded_tasks_from_file(story_path)
     return [
-        generate_task_doc(t, output_dir, version=version, dry_run=dry_run) for t in tasks
+        generate_task_doc(t, output_dir, version=t.version_anchor or version, dry_run=dry_run) for t in tasks
     ]
 
 

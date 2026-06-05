@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence
@@ -13,10 +14,10 @@ if str(_SCRIPT_DIR) not in sys.path:
 
 from est_format import format_est_reference  # noqa: E402
 from extract_embedded_tasks import (  # noqa: E402
-    EmbeddedTask,
-    extract_embedded_tasks,
-    task_doc_filename,
+    EmbeddedTask, _TASK_HEADER_RE, extract_embedded_tasks, task_doc_filename,
 )
+_CHECKLIST_TASK_RE = re.compile(r"^- \[[ x]\] \*\*E(\d+):S(\d+):T(\d+)\b")
+_TASK_LINK_RE = re.compile(r"\(`T\d{2}-")
 
 
 def _checklist_mark(status: str) -> str:
@@ -51,6 +52,36 @@ def build_task_link_map(
         rel_map[t.task] = rel
     return rel_map
 
+
+
+def remove_embedded_sections(story_text: str, tasks: List[EmbeddedTask]) -> str:
+    if not tasks: return story_text
+    lines = story_text.splitlines(keepends=True)
+    for task in sorted(tasks, key=lambda x: x.header_line, reverse=True):
+        del lines[task.header_line : task.end_line]
+    return _prune_empty_tasks_heading("".join(lines))
+
+def _prune_empty_tasks_heading(text: str) -> str:
+    lines = text.splitlines(keepends=True); i = 0
+    while i < len(lines):
+        if lines[i].rstrip() != "## Tasks": i += 1; continue
+        j = i + 1
+        while j < len(lines) and lines[j].strip() in ("", "---"): j += 1
+        has = any(_TASK_HEADER_RE.match(lines[k].rstrip("\n")) for k in range(j, len(lines)) if not (lines[k].startswith("## ") and lines[k].strip() != "## Tasks"))
+        if not has: del lines[i:j]; continue
+        i += 1
+    return re.sub(r"\n{4,}", "\n\n\n", "".join(lines))
+
+def wire_checklist_links(story_text: str, rel_paths: Dict[int, str]) -> str:
+    if not rel_paths: return story_text
+    lines = story_text.splitlines(keepends=True); out, i = [], 0
+    while i < len(lines):
+        stripped = lines[i].rstrip("\n"); m = _CHECKLIST_TASK_RE.match(stripped)
+        if m and not _TASK_LINK_RE.search(stripped):
+            rel = rel_paths.get(int(m.group(3)))
+            if rel: out += [stripped.rstrip()+"\n", f"  - Task: [`{Path(rel).stem}`]({rel})\n"]; i += 1; continue
+        out.append(lines[i]); i += 1
+    return "".join(out)
 
 def update_story_refs(
     story_text: str,

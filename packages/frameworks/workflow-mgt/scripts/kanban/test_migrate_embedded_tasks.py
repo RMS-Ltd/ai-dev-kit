@@ -1,4 +1,4 @@
-"""Unit tests for embedded → discrete task migration tooling (IPP E04:S11:T07, T1–T8)."""
+"""Unit and integration tests for embedded → discrete task migration (IPP E04:S11:T07, T1–T12)."""
 
 import sys
 from pathlib import Path
@@ -11,6 +11,7 @@ from extract_embedded_tasks import (  # noqa: E402
     task_doc_filename,
 )
 from generate_task_doc import generate_task_doc, render_task_document  # noqa: E402
+from migrate_story import migrate_story  # noqa: E402
 from update_story_refs import build_task_link_map, update_story_refs  # noqa: E402
 from validate_migration import validate_story_file  # noqa: E402
 
@@ -201,3 +202,53 @@ def test_generate_writes_file(tmp_path):
     assert path.is_file()
     content = path.read_text(encoding="utf-8")
     assert "## Scope" in content
+
+
+def test_migrate_story_orchestrator(tmp_path):
+    """T9 — migrate_story end-to-end removes embedded sections."""
+    story = tmp_path / "story.md"
+    story.write_text(SIMPLE_STORY, encoding="utf-8")
+    out_dir = tmp_path / "tasks"
+    out_dir.mkdir()
+    result = migrate_story(story, out_dir, task_subdir="tasks")
+    assert result.tasks_migrated == [1]
+    assert "### E04:S11:T01" not in story.read_text(encoding="utf-8")
+    report = validate_story_file(story)
+    assert report.embedded_task_count == 0
+
+
+def test_validation_all_refs_valid(tmp_path):
+    """T10 — migrated story has no broken task doc links."""
+    story = tmp_path / "story.md"
+    story.write_text(SIMPLE_STORY, encoding="utf-8")
+    out_dir = tmp_path / "tasks"
+    out_dir.mkdir()
+    migrate_story(story, out_dir, task_subdir="tasks")
+    report = validate_story_file(story)
+    assert not report.broken_links
+    assert report.ok
+
+
+def test_rw_step1_locates_task_doc(tmp_path):
+    """T11 — generated task doc exposes **Task ID:** for RW Step 1c discovery."""
+    story = tmp_path / "story.md"
+    story.write_text(SIMPLE_STORY, encoding="utf-8")
+    out_dir = tmp_path / "tasks"
+    out_dir.mkdir()
+    migrate_story(story, out_dir, task_subdir="tasks")
+    task_doc = next(out_dir.glob("T01-*.md"))
+    content = task_doc.read_text(encoding="utf-8")
+    assert "**Task ID:** E04:S11:T01" in content
+
+
+def test_migration_idempotent(tmp_path):
+    """T12 — second migrate_story run produces no duplicate task docs."""
+    story = tmp_path / "story.md"
+    story.write_text(SIMPLE_STORY, encoding="utf-8")
+    out_dir = tmp_path / "tasks"
+    out_dir.mkdir()
+    first = migrate_story(story, out_dir, task_subdir="tasks")
+    second = migrate_story(story, out_dir, task_subdir="tasks")
+    assert first.tasks_migrated == [1]
+    assert second.tasks_migrated == []
+    assert len(list(out_dir.glob("T01-*.md"))) == 1

@@ -70,6 +70,7 @@ class EmbeddedTask:
     deliverable: str = field(default=_PLACEHOLDER)
     acceptance_criteria: str = field(default="- [ ] Criterion to be defined during migration")
     status: str = field(default="TODO")
+    version_anchor: str = field(default="")
 
     @property
     def task_id(self) -> str:
@@ -85,6 +86,14 @@ def _parse_title_from_header(line: str, fallback: str) -> str:
         return m.group(1).strip()
     return fallback or "Untitled task"
 
+
+_VERSION_ANCHOR_RE = re.compile(r"(v0\.\d+\.\d+\.\d+\+\d+)")
+
+def _extract_version_anchor(*texts: str) -> str:
+    for text in texts:
+        m = _VERSION_ANCHOR_RE.search(text or "")
+        if m: return m.group(1)
+    return ""
 
 def _enrich_task_fields(task: EmbeddedTask) -> EmbeddedTask:
     sections = _parse_labeled_sections(task.body)
@@ -104,6 +113,7 @@ def _enrich_task_fields(task: EmbeddedTask) -> EmbeddedTask:
         first_line = next((ln.strip() for ln in task.body.splitlines() if ln.strip()), "")
         if first_line:
             task.title = first_line[:120]
+    task.version_anchor = _extract_version_anchor(sections.get("status", ""), task.body, task.status)
     return task
 
 

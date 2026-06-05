@@ -5,8 +5,8 @@
 **Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)  
 **Status:** IN PROGRESS  
 **Planning doc created:** 2026-02-22  
-**Last updated:** 2026-06-05  
-**Version anchor:** v0.4.11.7+6 (Wave 1 tooling shipped — pilot migration Wave 2 pending)
+**Last updated:** 2026-06-05 (v0.4.11.7+7)  
+**Version anchor:** v0.4.11.7+7 (Wave 2 pilot complete; Waves 3–5 pending)
 
 ---
 
