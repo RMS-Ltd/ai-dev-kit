@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.15+1] - 05-06-26
+
+E08:S03:T15 — **Change implemented:** FR-112 perpetual GitHub Actions CI health lane (+ T16 security/Code Quality companion). SemVer **v0.4.989+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.15+1.md)
+
+---
+
 ## [0.8.3.12+4] - 05-06-26
 
 E08:S03:T12 — **Change implemented:** BR-099 wave-2 maintainability (F541 + hygiene autofix; print-at-import guard). SemVer **v0.4.988+4**.

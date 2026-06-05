@@ -31,6 +31,7 @@ Publication Status: NOT_APPLICABLE
 - [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [E08:S03:T12 — Maintainability backlog (BR-099)](T12-code-quality-maintainability-backlog-br099.md)
+- [E08:S03:T16 — GitHub Security & Code Quality health (Perpetual)](T16-github-security-code-quality-health-perpetual-fr112.md) — post-backlog handoff (FR-112)
 
 ---
 

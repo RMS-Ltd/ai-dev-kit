@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T12 — wave-2 remediation)
-**Version:** v0.8.3.12+4
+**Last updated:** 2026-06-05 (RW E08:S03:T15 — FR-112 perpetual CI/security lanes)
+**Version:** v0.8.3.15+1
 **Code:** E8S03
 
 ---
@@ -53,11 +53,15 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ⏳ WAITING (**v0.8.3.14+2** re-scan **14** AI findings still open; dismiss #10–#11 pending) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
+- [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+1** — FR-112 intake; Actions baseline: Tests/Docusaurus/Greenfield **failure** on `main` @ 16:39 UTC) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | —No IPP—
+
+- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (HIGH, [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) + [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality); post T12–T14 handoff; FR-112) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | —No IPP—
+
 ---
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard re-scan kanban releases shipped (**560→145** maintainability, **133→34** reliability, **14** AI open @ `cadb0c3`). **T14** awaits GitHub dismiss #10–#11; **T12–T13** wave-2/remainder in progress.
+Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard re-scan kanban releases shipped (**560→145** maintainability, **133→34** reliability, **14** AI open @ `cadb0c3`). **T14** awaits GitHub dismiss #10–#11; **T12–T13** wave-2/remainder in progress. **T15–T16** (FR-112) perpetual lanes own ongoing [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI health and GitHub Security/Code Quality hygiene after backlog tasks complete.
 
 ---
 

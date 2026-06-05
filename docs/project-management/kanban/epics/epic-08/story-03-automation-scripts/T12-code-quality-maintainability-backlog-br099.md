@@ -32,6 +32,7 @@ Publication Status: NOT_APPLICABLE
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
 - [E08:S03:T11 — Code scanning permissions (BR-098)](T11-codeql-missing-workflow-permissions-br098.md)
+- [E08:S03:T16 — GitHub Security & Code Quality health (Perpetual)](T16-github-security-code-quality-health-perpetual-fr112.md) — post-backlog handoff (FR-112)
 
 ---
 

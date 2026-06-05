@@ -131,8 +131,8 @@ def validate_perpetual_guardrails(
     return errors, warnings
 
 
-def get_version_build_from_git_ref(version_file: Path, git_ref: str) -> Optional[int]:
-    """Read VERSION_BUILD from a git ref (e.g. HEAD) for BR-075 perpetual RW checks."""
+def _read_version_file_at_git_ref(version_file: Path, git_ref: str) -> Optional[str]:
+    """Return version file text at a git ref, or None if unavailable."""
     rel = version_file.as_posix()
     try:
         result = subprocess.run(
@@ -144,7 +144,24 @@ def get_version_build_from_git_ref(version_file: Path, git_ref: str) -> Optional
         )
     except subprocess.CalledProcessError:
         return None
-    match = re.search(r"VERSION_BUILD\s*=\s*(\d+)", result.stdout)
+    return result.stdout
+
+
+def get_version_build_from_git_ref(version_file: Path, git_ref: str) -> Optional[int]:
+    """Read VERSION_BUILD from a git ref (e.g. HEAD) for BR-075 perpetual RW checks."""
+    content = _read_version_file_at_git_ref(version_file, git_ref)
+    if content is None:
+        return None
+    match = re.search(r"VERSION_BUILD\s*=\s*(\d+)", content)
+    return int(match.group(1)) if match else None
+
+
+def get_version_task_from_git_ref(version_file: Path, git_ref: str) -> Optional[int]:
+    """Read VERSION_TASK from a git ref for BR-075 when --art adopts a new task anchor."""
+    content = _read_version_file_at_git_ref(version_file, git_ref)
+    if content is None:
+        return None
+    match = re.search(r"VERSION_TASK\s*=\s*(\d+)", content)
     return int(match.group(1)) if match else None
 
 
@@ -230,6 +247,15 @@ def validate_perpetual_build_increment(
         if current_build < 1:
             return False, [
                 "❌ PERPETUAL BUILD (BR-075): VERSION_BUILD must be >= 1 when version_file is new to git."
+            ]
+        return True, []
+
+    head_task = get_version_task_from_git_ref(version_file, "HEAD")
+    if head_task is not None and head_task != task:
+        # --art first release on a new perpetual lane (HEAD still on prior TASK).
+        if current_build < 1:
+            return False, [
+                f"❌ PERPETUAL BUILD (BR-075): New perpetual task E{epic}:S{story}:T{task} requires BUILD >= 1."
             ]
         return True, []
 
