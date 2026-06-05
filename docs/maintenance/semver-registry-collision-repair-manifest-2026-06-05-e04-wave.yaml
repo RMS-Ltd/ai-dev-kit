@@ -1,0 +1,16 @@
+# Parallel E04 RW wave (2026-06-05) — registry repair only; Git tags unchanged.
+
+rc: 0
+
+canonical_keep:
+  - 0.4.7.1+1   # v0.4.911 primary
+  - 0.4.7.2+2   # v0.4.912 primary
+  - 0.4.6.6+4   # v0.4.913 primary
+  - 0.4.11.7+4  # v0.4.914 primary (dev merge)
+
+reassign_internal:
+  - 0.4.6.6+1
+  - 0.4.6.6+3
+  - 0.4.9.1+1
+  - 0.4.7.2+1
+  - 0.4.11.7+3

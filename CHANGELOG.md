@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.11.7+4] - 05-06-26
+
+E04:S11:T07 — **Dev merge consolidation:** Five parallel E04 task branches merged; SemVer tag **v0.4.914** (BR-097 collision recovery). SemVer **v0.4.914+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+4.md)
+
+---
+
 ## [0.4.11.7+3] - 05-06-26
 
 E04:S11:T07 — **FR-016 IPW:** Consolidated IPP for embedded-to-discrete Task migration (~784 tasks); phased hybrid plan, test design, ADR matrix; task wired `IN PROGRESS`. SemVer **v0.4.911+3**.
