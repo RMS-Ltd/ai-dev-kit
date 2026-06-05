@@ -12,6 +12,7 @@ import argparse
 import fnmatch
 import hashlib
 import shutil
+import subprocess
 import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -92,6 +93,20 @@ def _ignored(rel_posix: str, ignore_globs: List[str]) -> bool:
     return False
 
 
+def _git_ls_files(prefix: Path) -> List[str]:
+    rel_prefix = prefix.relative_to(REPO_ROOT).as_posix()
+    result = subprocess.run(
+        ["git", "ls-files", "--", rel_prefix],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        return []
+    return [line.strip() for line in result.stdout.splitlines() if line.strip()]
+
+
 def _iter_files(root: Path, ignore_globs: List[str]) -> Iterable[Path]:
     if not root.exists():
         return
@@ -104,6 +119,23 @@ def _iter_files(root: Path, ignore_globs: List[str]) -> Iterable[Path]:
         yield path
 
 
+def _source_relative_paths(src: Path, ignore_globs: List[str]) -> List[str]:
+    """Paths under src using git index casing (Linux-safe)."""
+    tracked = _git_ls_files(src)
+    if tracked:
+        prefix = src.relative_to(REPO_ROOT).as_posix().rstrip("/") + "/"
+        rels: List[str] = []
+        for entry in tracked:
+            if not entry.startswith(prefix):
+                continue
+            rel = entry[len(prefix) :]
+            if _ignored(rel, ignore_globs):
+                continue
+            rels.append(rel)
+        return sorted(rels)
+    return sorted(p.relative_to(src).as_posix() for p in _iter_files(src, ignore_globs))
+
+
 def _file_hash(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -112,7 +144,12 @@ def _file_hash(path: Path) -> str:
     return digest.hexdigest()
 
 
-def _tree_fingerprint(root: Path, ignore_globs: List[str]) -> Dict[str, str]:
+def _tree_fingerprint(root: Path, ignore_globs: List[str], *, git_index: bool = False) -> Dict[str, str]:
+    if git_index:
+        return {
+            rel: _file_hash(root / rel)
+            for rel in _source_relative_paths(root, ignore_globs)
+        }
     return {
         p.relative_to(root).as_posix(): _file_hash(p)
         for p in _iter_files(root, ignore_globs)
@@ -135,20 +172,14 @@ def _copy_tree(src: Path, dest: Path, ignore_globs: List[str]) -> int:
         raise FileNotFoundError(f"Source tree missing: {src}")
     if dest.exists():
         shutil.rmtree(dest)
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    copied = 0
-
-    def _ignore(directory: str, names: List[str]) -> Set[str]:
-        ignored: Set[str] = set()
-        base = Path(directory)
-        for name in names:
-            rel = (base / name).relative_to(src).as_posix()
-            if _ignored(rel, ignore_globs) or _ignored(f"{rel}/", ignore_globs):
-                ignored.add(name)
-        return ignored
-
-    shutil.copytree(src, dest, ignore=_ignore, dirs_exist_ok=False)
-    return len(_tree_fingerprint(dest, ignore_globs))
+    dest.mkdir(parents=True, exist_ok=True)
+    rel_paths = _source_relative_paths(src, ignore_globs)
+    for rel in rel_paths:
+        src_path = src / rel
+        dest_path = dest / rel
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src_path, dest_path)
+    return len(rel_paths)
 
 
 def _write_readme(dest_root: Path) -> None:
@@ -201,7 +232,7 @@ def check(manifest: Manifest) -> int:
         if not dest.exists():
             errors.append(f"Missing dest tree: {dest.relative_to(REPO_ROOT)}")
             continue
-        src_fp = _tree_fingerprint(src, manifest.ignore_globs)
+        src_fp = _tree_fingerprint(src, manifest.ignore_globs, git_index=True)
         dest_fp = _tree_fingerprint(dest, manifest.ignore_globs)
         if src_fp != dest_fp:
             missing = sorted(set(src_fp) - set(dest_fp))

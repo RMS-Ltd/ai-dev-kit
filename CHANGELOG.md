@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.9.11+6] - 05-06-26
+## [0.6.9.21+5] - 05-06-26
 
-E05:S09:T11 — **BR-068 Wave 5:** canonical IPP, publish-scope pytest guard for out-of-plugin links, Strategy A straggler repairs. SemVer **v0.4.953+6**.
+E06:S09:T21 — **FR-110 Wave 5:** greenfield sync uses `git ls-files` (index-safe copy); lean tree re-synced; footprint ~7.93 MiB. SemVer **v0.4.954+5**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.11+6.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.21+5.md)
 
 ---
 

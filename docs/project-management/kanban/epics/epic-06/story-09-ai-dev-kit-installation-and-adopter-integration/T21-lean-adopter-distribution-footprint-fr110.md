@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 21: Lean adopter distribution footprint (FR-110)
 
 **Task ID:** E06:S09:T21  
-**Status:** ✅ COMPLETE (v0.6.9.21+4)  
+**Status:** ✅ COMPLETE (v0.6.9.21+5)  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.6.9.21+4)  
-**Version:** v0.6.9.21+4  
+**Last updated:** 2026-06-05 (v0.6.9.21+5 — Wave 5 sync hardening)  
+**Version:** v0.6.9.21+5  
 **Code:** E06S09T21
 
 **Upstream:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
@@ -111,15 +111,16 @@ Phase 0 must validate installer path assumptions (e.g. `install_greenfield_path.
 - [x] Phase 2: Docs (`README`, `INSTALL_IN_YOUR_PROJECT.md` lean section) — **v0.6.9.21+3** + post-sync update
 - [x] Phase 3: CI smoke + drift guard — `greenfield-install.yml` + `scripts/test_sync_greenfield_install.py`
 - [x] Phase 4: RW release + status reconciliation — **v0.6.9.21+4** (optional FR-062 tarball deferred)
+- [x] Phase 5 (Wave 5): Sync hardening — `git ls-files` source enumeration; lean tree re-sync (**1498** files); footprint **~7.93 MiB** — **v0.6.9.21+5**
 
 ---
 
 ## Implementation evidence
 
-- Sync: [`scripts/sync_greenfield_install.py`](../../../../../scripts/sync_greenfield_install.py) · [`scripts/greenfield-install-manifest.yaml`](../../../../../scripts/greenfield-install-manifest.yaml)
-- Lean tree: [`greenfield-install/`](../../../../../greenfield-install/) · [`FOOTPRINT.md`](../../../../../greenfield-install/FOOTPRINT.md)
-- CI: [`.github/workflows/greenfield-install.yml`](../../../../../.github/workflows/greenfield-install.yml)
-- Tests: [`scripts/test_sync_greenfield_install.py`](../../../../../scripts/test_sync_greenfield_install.py)
+- Sync: [`scripts/sync_greenfield_install.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/sync_greenfield_install.py) · [`scripts/greenfield-install-manifest.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/greenfield-install-manifest.yaml)
+- Lean tree: [`greenfield-install/`](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/greenfield-install) · [`FOOTPRINT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/greenfield-install/FOOTPRINT.md)
+- CI: [`.github/workflows/greenfield-install.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/greenfield-install.yml)
+- Tests: [`scripts/test_sync_greenfield_install.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/test_sync_greenfield_install.py)
 
 ---
 
