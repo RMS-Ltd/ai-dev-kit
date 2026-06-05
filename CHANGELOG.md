@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.19.12+2] - 05-06-26
+
+E04:S19:T12 — **Single-board Wave 2:** Tooling skips deprecated `fbuboard`; three-surface RW report; UKW Step 6.5 skip. SemVer **v0.4.900+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+2.md)
+
+---
+
 ## [0.4.19.12+1] - 05-06-26
 
 E04:S19:T12 — **Single-board Wave 1 (UXR-020 R3):** ADR-018; `kboard` Verification (V) band; `fbuboard` deprecated stub; policy/guide updates. SemVer **v0.4.899+1**.

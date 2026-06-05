@@ -364,8 +364,8 @@ For each step, follow this pattern:
 
    1. **Task doc** — version anchor + status + last-updated + checklist sync (host task and any directly affected child tasks).
    2. **Source FR/BR/UXR doc(s)** — status sync + linked-task references + closure/gating banners where applicable.
-   3. **`kboard.md`** — canonical row(s) for the release-scope task(s); active-row hygiene for completed rows; no duplicate tail tokens.
-   4. **`fbuboard.md`** — canonical row(s) for the release-scope FBU(s); supersede / gating / closure markers; no duplicate tail tokens.
+   3. **`kboard.md`** — canonical row(s) for release-scope task(s) and wired FBUs (including **Verification (V)** band per ADR-018); active-row hygiene; no duplicate tail tokens.
+   4. **`fbuboard.md`** — **deprecated** redirect stub only ([ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)); do not maintain active MoSCOW rows.
 
    **Execution:** Update Task (then Story, then Epic) with version markers and forensic consistency; update FR/BR/UXR doc(s) tied to this release; emit canonical row(s) on `kboard.md` and `fbuboard.md`; apply **limited** MoSCOW prioritisation only for **new or newly significant** items per Kanban governance (do not re-prioritise the whole board). Prefer `update_kanban_docs.py` when applicable; otherwise follow the same bottom-up scope. Use config paths. **CRITICAL: Check Story file existence, create from template if missing, then update.** Update Story file FIRST, then Epic file to match.
 

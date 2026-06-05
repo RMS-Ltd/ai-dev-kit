@@ -51,6 +51,22 @@ def test_blocks_terminal_complete_row(tmp_path: Path) -> None:
     assert any("terminal status" in f for f in findings)
 
 
+def test_skips_deprecated_fbuboard_stub(tmp_path: Path) -> None:
+    content = """# FBU board (deprecated)
+
+**Status:** **DEPRECATED** as active MoSCOW board
+
+## Redirect
+
+See kboard.md.
+"""
+    path = tmp_path / "fbuboard.md"
+    path.write_text(content, encoding="utf-8")
+    ok, findings = validate_board_file(path)
+    assert ok
+    assert not findings
+
+
 def test_blocks_journal_line(tmp_path: Path) -> None:
     content = _minimal_kboard_moscow(
         "**2026-06-04:** Archived T02 to kanban-completed.",

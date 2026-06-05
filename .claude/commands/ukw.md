@@ -127,6 +127,8 @@ MoSCOW list is always updated **last** within this step.
 
 ### Step 6.5 — fbuboard Reconciliation and Drift Guard
 
+**ADR-018:** If `fbuboard.md` is a **DEPRECATED** redirect stub (no `## MoSCOW` section), **skip** this step entirely — verification rows live on `kboard.md` **Verification (V)** band.
+
 At UKW start, snapshot boards: `python "packages/frameworks/workflow-mgt/scripts/kanban/snapshot_kanban_boards.py"`. Read active MoSCOW sections in `fbuboard.md`. For each row, resolve its linked FR/BR/UXR source document. Prune rows whose linked source status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`) — unless the row explicitly indicates unresolved verification context (`IN PROGRESS`, `UNVERIFIED`, `PENDING VERIFICATION`). Remove legacy sections **`## Board Statistics`** and **`## Usage Instructions`** from `fbuboard.md` if present. **FR-097:** Do **not** unify or rewrite row `Last modified` on hygiene; only update board `Last Updated` metadata. **UXR-012:** Do not change MoSCOW **state icons** on hygiene-only passes; icons follow `state_icons.py` when status text changes. Perform pre-write concurrency revalidation (re-read if file changed mid-run). Before Step 8 stage, run `validate_board_stamp_diff.py` (`--before` snapshot dir, `--after` live board) — **abort UKW** on failure. After MoSCOW prune/archive, run `python "packages/frameworks/workflow-mgt/scripts/validation/validate_active_kanban_board.py" --strict` (FR-109). Optionally run `validate_kanban_state_icons.py --strict` when MoSCOW rows were edited. Report: audited rows, rows removed, exceptions kept, stamp-diff pass/fail, lean-board validator pass/fail, revalidation triggered.
 
 ### Step 7 — Validate Consistency

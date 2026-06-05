@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E04:S19:T12** — single-board Wave 1 v0.4.19.12+1)
-**Version:** v0.4.19.12+1
+**Last Updated:** 2026-06-05 (RW **E04:S19:T12** — single-board Wave 2 v0.4.19.12+2)
+**Version:** v0.4.19.12+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`fbu-completed.md`](fbu-completed.md)).
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E04:S19:T12** – Single-board consolidation — retire `fbuboard` (UXR-020 R3) - 🔄 IN PROGRESS (HIGH, ADR-018 Wave 1) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) | Last modified: 2026-06-05 21:30 UTC
+- **E04:S19:T12** – Single-board consolidation — retire `fbuboard` (UXR-020 R3) - 🔄 IN PROGRESS (HIGH, ADR-018 Wave 2 **v0.4.19.12+2**) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) | Last modified: 2026-06-05 21:30 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
@@ -107,9 +107,10 @@ housekeeping_policy: keep
 
 - **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | Last modified: 2026-01-18 16:49 UTC
 
-- **E01:S02:T13** – FR-002: Update Been There README - 📋 TODO (LOW, Update README for been-there functionality) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](fr-br/FR-002-update-been-there-readme.md) | Last modified: 2026-06-04 12:14 UTC
 
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | Last modified: 2026-06-04 12:15 UTC
+
+- **E01:S02:T13** – FR-002: Update Been There README - 📋 TODO (LOW, Update README for been-there functionality) | [Task](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](fr-br/FR-002-update-been-there-readme.md) | Last modified: 2026-06-04 12:14 UTC
 
 - **E21:S00:T01** – FR-006: Localization Language Selection UK/US English - 📋 TODO (LOW, Language selection for UK/US English) | [Task](epics/epic-21/story-00-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | Last modified: 2025-12-09 00:00 UTC
 

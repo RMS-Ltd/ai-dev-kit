@@ -1767,6 +1767,14 @@ def run_corpus_canonical_sweep(
         if not board.exists():
             continue
         original = board.read_text()
+        if board.name == "fbuboard.md":
+            try:
+                from stamp_authority import is_fbuboard_deprecated
+
+                if is_fbuboard_deprecated(original):
+                    continue
+            except ImportError:
+                pass
         transformed, diagnostics = apply_canonical_row_transform_pipeline(
             board_content=original,
             project_root=project_root,
@@ -1836,6 +1844,14 @@ def enforce_terminal_timestamps_on_boards(
         if not board.exists():
             continue
         original = board.read_text()
+        if board.name == "fbuboard.md":
+            try:
+                from stamp_authority import is_fbuboard_deprecated
+
+                if is_fbuboard_deprecated(original):
+                    continue
+            except ImportError:
+                pass
         pre_hash = hashlib.sha256(original.encode("utf-8")).hexdigest()
 
         if board.name in {"fbuboard.md", "fr-br-uxr-board.md"}:
@@ -2222,13 +2238,13 @@ def validate_updates(
 ###############################################################################
 # Four-surface reconciliation report (FR-092 Wave 3, absorbing FR-084 contract)
 #
-# RW Step 7 owns release-scope kanban consistency end-to-end across four
-# canonical surfaces:
+# RW Step 7 owns release-scope kanban consistency end-to-end across three
+# primary surfaces (ADR-018); fbuboard.md is optional when deprecated:
 #
 #   1. Task doc                  (host task + directly affected child tasks)
 #   2. Source FR / BR / UXR doc  (bidirectional links + status mirror)
-#   3. kboard.md                 (canonical row + active-row hygiene)
-#   4. fbuboard.md               (canonical row + active-row hygiene)
+#   3. kboard.md                 (canonical row + V-band + active-row hygiene)
+#   (legacy) fbuboard.md         — deprecated redirect stub; not maintained
 #
 # This module emits a structured "touched surfaces + why" report so RW Step 7
 # is auditable and self-sufficient without relying on a follow-up UKW run.
@@ -2281,7 +2297,7 @@ class FourSurfaceReport:
     timestamp_utc: str
     surfaces: Dict[str, SurfaceReport] = field(default_factory=dict)
     auxiliary_surfaces: Dict[str, SurfaceReport] = field(default_factory=dict)
-    contract: str = "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)"
+    contract: str = "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation; fbuboard optional)"
     stamp_evidence: Dict[str, Any] = field(default_factory=dict)
 
     def as_dict(self) -> Dict[str, Any]:
@@ -2521,16 +2537,30 @@ def build_four_surface_report(
         project_root / "docs/project-management/kanban/fbuboard.md",
         project_root / "docs/project-management/kanban/fr-br-uxr-board.md",
     ]
+    fbuboard_deprecated = False
     for cand in fbuboard_candidates:
         if cand.exists():
             fbuboard_path = cand.resolve()
+            try:
+                from stamp_authority import is_fbuboard_deprecated
+
+                fbuboard_deprecated = is_fbuboard_deprecated(
+                    fbuboard_path.read_text(encoding="utf-8", errors="replace")
+                )
+            except ImportError:
+                fbuboard_deprecated = False
             break
 
     surface_specs = [
         ("task_doc", [task_doc_path] if task_doc_path else []),
         ("fbu_doc", list(fbu_doc_paths)),
         ("kboard", [kboard_path] if kboard_path else []),
-        ("fbuboard", [fbuboard_path] if fbuboard_path else []),
+        (
+            "fbuboard",
+            [fbuboard_path]
+            if fbuboard_path and not fbuboard_deprecated
+            else [],
+        ),
     ]
     for name, surface_paths in surface_specs:
         rep = SurfaceReport(name=name)
@@ -2572,6 +2602,13 @@ def build_four_surface_report(
 
     for name in FOUR_SURFACE_NAMES:
         rep = report.surfaces.setdefault(name, SurfaceReport(name=name))
+        if name == "fbuboard" and fbuboard_deprecated:
+            rep.paths = [str(fbuboard_path)] if fbuboard_path else []
+            rep.notes.append(
+                "ADR-018: fbuboard.md is a deprecated redirect stub — "
+                "not maintained by RW/UKW (kboard V-band owns verification rows)."
+            )
+            continue
         if not rep.touched and not rep.notes:
             rep.notes.append(
                 "Surface within release scope but not touched by this run "

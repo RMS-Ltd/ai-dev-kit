@@ -3,6 +3,7 @@
 Board Stamp Authority — shared row stamp parsing and evidence resolution.
 
 FR-097 / E2:S15:T08: forensic `Last modified` semantics for kboard.md and fbuboard.md.
+ADR-018: `fbuboard.md` may be a deprecated redirect stub (no active MoSCOW).
 """
 
 from __future__ import annotations
@@ -40,6 +41,13 @@ LAST_UPDATED_RE = re.compile(
     re.MULTILINE,
 )
 MOSCOW_HEADER_RE = re.compile(r"^##\s+MoSCOW", re.IGNORECASE)
+
+
+def is_fbuboard_deprecated(board_content: str) -> bool:
+    """ADR-018: fbuboard.md redirect stub — no active MoSCOW maintenance."""
+    upper = board_content.upper()
+    return "DEPRECATED" in upper and "## MOSCOW" not in board_content
+
 
 # FR-097: ≥3 MoSCOW rows sharing one stamp = batch homogenization (was 10; too lenient).
 DEFAULT_HOMOGENEITY_THRESHOLD = 3

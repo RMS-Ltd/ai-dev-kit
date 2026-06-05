@@ -25,7 +25,7 @@ try:
 except ImportError:
     yaml = None
 
-from stamp_authority import MOSCOW_HEADER_RE  # noqa: E402
+from stamp_authority import MOSCOW_HEADER_RE, is_fbuboard_deprecated  # noqa: E402
 from state_icons import match_canonical_at_start, parse_row_status_segment  # noqa: E402
 
 _TERMINAL_CANONICAL = frozenset(
@@ -88,9 +88,14 @@ def validate_board_file(path: Path) -> Tuple[bool, List[str]]:
     if not path.exists():
         return True, []
 
+    text = path.read_text(encoding="utf-8", errors="replace")
+    if path.name == "fbuboard.md" and is_fbuboard_deprecated(text):
+        findings.extend(_validate_fbu_sections(path))
+        return not findings, findings
+
     findings.extend(_validate_fbu_sections(path))
 
-    lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    lines = text.splitlines()
     in_moscow = False
     for i, line in enumerate(lines, start=1):
         st = line.strip()
