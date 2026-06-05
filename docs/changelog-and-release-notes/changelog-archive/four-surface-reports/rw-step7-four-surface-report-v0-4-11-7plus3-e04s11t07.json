@@ -1,0 +1,83 @@
+{
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 4,
+    "story": 11,
+    "task": 7,
+    "task_id": "E04:S11:T07",
+    "version_string": "v0.4.11.7+3"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "substantive",
+    "manifest": "docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-4-11-7plus3-e04s11t07.json"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "story_doc", "planning_artifact"],
+    "stamps_appended_with_evidence": 1,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "total_changes": 8
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md"
+      ],
+      "changes": [
+        "IPP wiring Input/References",
+        "Status IN PROGRESS",
+        "Version anchor v0.4.11.7+3",
+        "Canonical Scope/Deliverable/Acceptance Criteria"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md"
+      ],
+      "changes": [
+        "IPP link in Implementation Notes",
+        "Migration tooling references"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "changes": [
+        "E04:S11:T07 row TODO→IN PROGRESS",
+        "IPP link added",
+        "Last modified 2026-06-05 03:39 UTC",
+        "Board header version v0.4.11.7+3"
+      ]
+    },
+    "fbuboard": {
+      "touched": false,
+      "paths": [],
+      "notes": ["FR-016 active row on kboard only per ADR-018"]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md"
+      ],
+      "changes": [
+        "T07 checklist IN PROGRESS + IPP link"
+      ]
+    },
+    "planning_artifact": {
+      "touched": true,
+      "paths": [
+        "docs/implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md"
+      ],
+      "changes": [
+        "CREATE consolidated IPP (IPW Phases 0-9)"
+      ]
+    }
+  },
+  "timestamp_utc": "2026-06-05 03:39 UTC",
+  "notes": "RW E04:S11:T07 --art: IPW consolidated IPP for FR-016 embedded-to-discrete migration."
+}

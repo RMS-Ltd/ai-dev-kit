@@ -28,8 +28,9 @@ housekeeping_policy: keep
 - [x] **E04:S11:T04 – Define Abstract Space for Zero-Numbered E/S/T Docs (FR-018)** ✅ COMPLETE (v0.4.11.4+1)
 - [x] **E04:S11:T05 – Dependency Wiring Cross-References** ✅ COMPLETE (v0.4.11.5+0)
 - [x] **E04:S11:T06 – Review and Optimize Template Structure for Tier Delegation** ✅ COMPLETE (v0.4.11.6+2 – All phases complete: templates optimized, guidelines created, compliance audit complete, migration guide created)
-- [ ] **E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents** - TODO (v0.4.11.7+0 – Migration plan and implementation)
+- [ ] **E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents** - IN PROGRESS (v0.4.11.7+3 – IPP consolidated; migration tooling pending)
   - Task: [`T07-planning-spec-tests-impl.md`](story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
+  - IPP: [`IPP-E04S11T07-fr016-discrete-task-docs-migration.md`](../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
 
 
 > **Format:** `E4:S11:Txx` (Epic 4, Story 11, Task with 2-digit zero padding)  

@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+30] - 05-06-26
+## [0.4.11.7+3] - 05-06-26
 
-E02:S16:T04 — **UKW -c** V-band prune: **FR-106** IMPLEMENTED, **BR-082**/**BR-088** FIXED; operator verification closure. SemVer **v0.4.910+30**.
+E04:S11:T07 — **FR-016 IPW:** Consolidated IPP for embedded-to-discrete Task migration (~784 tasks); phased hybrid plan, test design, ADR matrix; task wired `IN PROGRESS`. SemVer **v0.4.911+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+30.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+3.md)
 
 ---
 

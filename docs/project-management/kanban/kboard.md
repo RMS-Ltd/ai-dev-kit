@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW E02:S16:T04 v0.2.16.4+30 — V-band prune)
-**Version:** v0.2.16.4+30
+**Last Updated:** 2026-06-05 (RW E04:S11:T07 v0.4.11.7+3 — FR-016 IPP)
+**Version:** v0.4.11.7+3
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -44,7 +44,7 @@ housekeeping_policy: keep
 
 - **E04:S06:T06** – BR-005: Kanban Framework Epic Structure Gap UAT Finding - 📋 TODO (LOW, Gap found in kanban framework epic structure) | [Task](epics/epic-04/story-06-comprehensive-canonical-est-template-system.md) | [BR-005](fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md) | Last modified: 2025-12-22 00:00 UTC
 
-- **E04:S11:T07** – FR-016: Kanban Granularity Discrete Task Docs - 📋 TODO (LOW, Discrete task documents for kanban granularity) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | Last modified: 2026-06-04 12:08 UTC
+- **E04:S11:T07** – FR-016: Kanban Granularity Discrete Task Docs - 🔄 IN PROGRESS (LOW, IPP consolidated — migration pending) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | Last modified: 2026-06-05 03:39 UTC
 
 - **E04:S11:T04** – FR-018: Abstract Space Zero Numbered Est Docs - 📋 TODO (LOW, Zero-numbered documents in abstract space) | [Task](epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md) | [FR-018](fr-br/FR-018-abstract-space-zero-numbered-est-docs.md) | Last modified: 2025-12-18 00:00 UTC
 

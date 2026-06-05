@@ -3,13 +3,53 @@
 **Task ID:** E04:S11:T07  
 **Task:** Migrate Embedded Tasks to Discrete Task Documents  
 **Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)  
-**Status:** TODO  
-**Planning doc created:** 2026-02-22
+**Status:** IN PROGRESS  
+**Planning doc created:** 2026-02-22  
+**Last updated:** 2026-06-05  
+**Version anchor:** v0.4.11.7+3 (IPP consolidated — migration implementation pending)
+
+---
+
+## Scope
+
+Migrate all ~784 embedded task references in Story documents to discrete Task document files, achieving FR-016 compliance so RW Step 1 and validators can reliably locate every task anchor.
+
+---
+
+## Input
+
+- [FR-016: Kanban Granularity & Discrete Task Docs](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [Migration plan: Embedded → Discrete Task Documents](migration-plan-embedded-to-discrete-tasks.md)
+- [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) *(consolidated IPW package)*
+- [ICW E04:S11:T07 specification](../../../../../implementation-cycles/ICW-E4S11T07-specification.md) *(retrospective; folded into IPP)*
+
+---
+
+## Deliverable
+
+- Consolidated IPP: [`IPP-E04S11T07-fr016-discrete-task-docs-migration.md`](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
+- Migration tooling: `extract_embedded_tasks.py`, `generate_task_doc.py`, `update_story_refs.py`, `validate_migration.py` (per IPP §4)
+- Phased migration of all embedded tasks to discrete `T{task:02d}-{slug}.md` files
+- Updated Story documents with checklist references (no embedded task bodies)
+- Migration completion report with metrics and documented exceptions
+
+---
+
+## Acceptance Criteria
+
+- [ ] IPP bidirectionally wired to task doc (Input + References)
+- [ ] Migration plan §1.1 Epic distribution filled (no TBD)
+- [ ] All 12 test cases pass (`test_migrate_embedded_tasks.py`)
+- [ ] Zero embedded tasks in migrated Epics (or documented exceptions)
+- [ ] `validate_migration.py` exits 0 on full kanban root
+- [ ] RW Step 1 locates Task documents for migrated Stories
+- [ ] FR-016 acceptance criteria AC1–AC8 satisfied at task COMPLETE
 
 ---
 
 ## Planning artifacts (publication)
 
+- [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
 - [ICW E04:S11:T07 specification](../../../../../implementation-cycles/ICW-E4S11T07-specification.md)
 
 ## 1. Specification
@@ -220,3 +260,12 @@ Exit:   0 if valid, 1 if issues
 - [ ] validate_version_bump passes for migrated tasks
 - [ ] No information loss (manual spot-check)
 - [ ] Migration guide and completion report produced
+
+---
+
+## References
+
+- [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
+- [FR-016](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [Migration plan](migration-plan-embedded-to-discrete-tasks.md)
+- [ICW E04:S11:T07 specification](../../../../../implementation-cycles/ICW-E4S11T07-specification.md)

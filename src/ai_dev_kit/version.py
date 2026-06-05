@@ -7,9 +7,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 16     # Story 16 — Perpetual Ongoing Workflow Operations
-VERSION_TASK = 4       # Task 4 — Ad-hoc Kanban synchronization and hygiene (Perpetual)
-VERSION_BUILD = 30    # Build 30: UKW -c V-band prune — FR-106, BR-082, BR-088 verified
+VERSION_EPIC = 4      # Epic 4 — Kanban Framework
+VERSION_STORY = 11    # Story 11 — Kanban Granularity & Discrete Task Docs
+VERSION_TASK = 7      # Task 7 — Migrate Embedded Tasks to Discrete Task Documents (FR-016)
+VERSION_BUILD = 3     # Build 3: IPW consolidated IPP — phased migration plan (orphan +0/+1/+2 changelogs untagged)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
