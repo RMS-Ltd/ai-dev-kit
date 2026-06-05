@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** ✅ COMPLETE (v0.2.1.6+1)  
 **Priority:** HIGH  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (RW **v0.2.1.6+1** — BR-001 closure)  
+**Last updated:** 2026-06-05 (RW **v0.2.1.6+2** — Step 7 kboard prune)  
 **Version Anchor:** v0.2.1.6+1  
 **Code:** E02S01T06
 
