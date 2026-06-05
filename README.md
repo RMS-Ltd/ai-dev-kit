@@ -1,5 +1,7 @@
 # AI Dev Kit
 
+**Maintainer clone:** [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) — book, Epic 24, and framework development before public release. **Adopters** use public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) only.
+
 <div align="center">
 
 <!-- Badges: Static Shields.io only (private repo–safe). Version line updated by RW. No `shields` branch or BYOB in this repo — see FR-064 / E5:S01:T69. -->
