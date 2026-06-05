@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.19+1] - 05-06-26
+
+E02:S16:T19 — **Intake:** UXR-022 RW `--dpz` short flag (`--doc-policy-zero` alias); task + kanban wiring. SemVer **v0.4.975+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.19+1.md)
+
+---
+
 ## [0.2.16.4+34] - 05-06-26
 
 E02:S16:T04 — **Kanban sync:** E08:S03:T12–T14 → V band ⏳ WAITING (GH Code Quality re-scan). SemVer **v0.4.974+34**.

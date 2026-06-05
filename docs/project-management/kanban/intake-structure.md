@@ -137,6 +137,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **UXR-003** – Intelligent Epic Matching Canonical Adoption UAT - TODO (MEDIUM, User acceptance testing for intelligent epic matching) - [UXR-003](fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md)
 - **UXR-004** – Kanban Package Installation UAT - TODO (MEDIUM, User acceptance testing for kanban package installation) - [UXR-004](fr-br/UXR-004-kanban-package-installation-uat.md)
 - **UXR-021** – Greenfield lean tree delivery via GitHub Packages - ACCEPTED (MEDIUM, alternate `ghcr.io` acquisition for `greenfield-install/`) - [UXR-021](fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) | [E06:S09:T23](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md)
+- **UXR-022** – RW `--dpz` short flag for doc-policy-zero - ACCEPTED (MEDIUM, canonical `--dpz`; `--doc-policy-zero` alias) - [UXR-022](fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) | [E02:S16:T19](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md)
 
 ---
 
