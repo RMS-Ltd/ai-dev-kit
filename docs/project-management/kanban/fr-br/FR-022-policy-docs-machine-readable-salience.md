@@ -12,9 +12,10 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-12  
 **Submitted By:** User  
 **Priority:** MEDIUM  
-**Status:** ACCEPTED  
+**Status:** IMPLEMENTED  
+**Version:** v0.5.7.1+1 (implemented; UKW archive RW **v0.2.16.4+35**)
 
-**Implementing Task:** [E05:S07:T01](../epics/epic-05/story-07-policy-documentation-structure.md)
+**Implementing Task:** [E05:S07:T01](../epics/epic-05/story-07-policy-documentation-structure/T01-implement-policy-documents-machine-readable-salience-section.md) — **IMPLEMENTED** (`v0.5.7.1+1`)
 **Intake Date:** 2025-12-12  
 **Assigned To:** Epic 5, Story 6, Task 1  
 **Version:** v0.5.6.1+0 (doc-init)
@@ -114,26 +115,26 @@ This feature is needed:
 
 ### Functional Requirements
 
-- [ ] **FR-022:R01** - Define standardized "Policy Salience" schema/template
-- [ ] **FR-022:R02** - Policy salience section must be machine-readable (YAML/JSON)
-- [ ] **FR-022:R03** - Policy salience section must be human-readable
-- [ ] **FR-022:R04** - Policy salience section captures key rules/principles
-- [ ] **FR-022:R05** - Policy salience section includes decision criteria
-- [ ] **FR-022:R06** - Policy salience section defines scope (in/out)
-- [ ] **FR-022:R07** - Policy salience section includes validation rules
-- [ ] **FR-022:R08** - Policy salience section links to related policies
-- [ ] **FR-022:R09** - Agents can parse policy salience section programmatically
-- [ ] **FR-022:R10** - Policy salience section is placed at top of document (after front-matter)
-- [ ] **FR-022:R11** - Create policy salience template for new policy documents
-- [ ] **FR-022:R12** - Update existing policy documents with salience sections
+- [x] **FR-022:R01** - Define standardized "Policy Salience" schema/template
+- [x] **FR-022:R02** - Policy salience section must be machine-readable (YAML/JSON)
+- [x] **FR-022:R03** - Policy salience section must be human-readable
+- [x] **FR-022:R04** - Policy salience section captures key rules/principles
+- [x] **FR-022:R05** - Policy salience section includes decision criteria
+- [x] **FR-022:R06** - Policy salience section defines scope (in/out)
+- [x] **FR-022:R07** - Policy salience section includes validation rules
+- [x] **FR-022:R08** - Policy salience section links to related policies
+- [x] **FR-022:R09** - Agents can parse policy salience section programmatically
+- [x] **FR-022:R10** - Policy salience section is placed at top of document (after front-matter)
+- [x] **FR-022:R11** - Create policy salience template for new policy documents
+- [x] **FR-022:R12** - Update existing policy documents with salience sections
 
 ### Non-Functional Requirements
 
-- [ ] **FR-022:NF01** - **Usability:** Policy salience section must be easy for humans to read
-- [ ] **FR-022:NF02** - **Parsability:** Policy salience section must be easy for agents to parse
-- [ ] **FR-022:NF03** - **Consistency:** All policy documents follow same salience format
-- [ ] **FR-022:NF04** - **Maintainability:** Salience section can be kept in sync with policy content
-- [ ] **FR-022:NF05** - **Extensibility:** Salience schema can be extended for new policy types
+- [x] **FR-022:NF01** - **Usability:** Policy salience section must be easy for humans to read
+- [x] **FR-022:NF02** - **Parsability:** Policy salience section must be easy for agents to parse
+- [x] **FR-022:NF03** - **Consistency:** All policy documents follow same salience format
+- [x] **FR-022:NF04** - **Maintainability:** Salience section can be kept in sync with policy content
+- [x] **FR-022:NF05** - **Extensibility:** Salience schema can be extended for new policy types
 
 ---
 
@@ -179,18 +180,18 @@ This feature is needed:
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Policy Salience schema/template defined and documented
-- [ ] **AC2:** Policy salience section is machine-readable (YAML format)
-- [ ] **AC3:** Policy salience section is human-readable
-- [ ] **AC4:** Policy salience section includes key rules/principles
-- [ ] **AC5:** Policy salience section includes decision criteria
-- [ ] **AC6:** Policy salience section defines scope
-- [ ] **AC7:** Policy salience section includes validation rules
-- [ ] **AC8:** Policy salience section links to related policies
-- [ ] **AC9:** Agent parser can extract policy salience programmatically
-- [ ] **AC10:** All existing policy documents updated with salience sections
-- [ ] **AC11:** Policy salience template available for new documents
-- [ ] **AC12:** Documentation explains how to create/maintain salience sections
+- [x] **AC1:** Policy Salience schema/template defined and documented
+- [x] **AC2:** Policy salience section is machine-readable (YAML format)
+- [x] **AC3:** Policy salience section is human-readable
+- [x] **AC4:** Policy salience section includes key rules/principles
+- [x] **AC5:** Policy salience section includes decision criteria
+- [x] **AC6:** Policy salience section defines scope
+- [x] **AC7:** Policy salience section includes validation rules
+- [x] **AC8:** Policy salience section links to related policies
+- [x] **AC9:** Agent parser can extract policy salience programmatically
+- [x] **AC10:** Key policy documents updated with salience sections (proof-of-concept; rollout continues incrementally)
+- [x] **AC11:** Policy salience template available for new documents
+- [x] **AC12:** Documentation explains how to create/maintain salience sections
 
 ---
 

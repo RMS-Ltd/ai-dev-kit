@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Story 007 – Policy Documentation Structure
 
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** 1 week  
 **Created:** 2025-12-12  
-**Last updated:** 2026-01-16 (v0.5.7.1+1, migrated from v0.5.7.1+1 – Story renumbered from S06 to S07 as part of repository story migration)  
+**Last updated:** 2026-06-05 (UKW -u — story COMPLETE; E05:S07:T01 archived from active board)  
 **Version:** v0.5.7.1+1  
 **Code:** E5S07
 

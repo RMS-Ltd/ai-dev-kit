@@ -9,15 +9,15 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.20+2] - 05-06-26
+## [0.2.16.4+35] - 05-06-26
 
-E02:S16:T20 — **Change implemented:** UXR-023 kboard IPP segment restore; normalizer + validator + corpus repair. SemVer **v0.4.979+2**.
+E02:S16:T04 — **Change implemented:** UKW -u bookkeeping — E05:S07:T01 / FR-022 archive; stale kboard TODO pruned; intake + ledger sync. SemVer **v0.4.980+35**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.20+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+35.md)
 
 ---
 
-## [0.2.16.20+1] - 05-06-26
+## [0.2.16.20+2] - 05-06-26
 
 E02:S16:T20 — **Intake:** UXR-023 kboard IPP segment regression; task + kanban wiring. SemVer **v0.4.977+1**.
 

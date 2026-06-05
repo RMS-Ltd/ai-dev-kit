@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-05 (v0.2.16.4+34 — RW -k: E08:S03:T12–T14 V band WAITING sync)
-**Version Anchor:** v0.2.16.4+34
+**Last updated:** 2026-06-05 (RW E02:S16:T04 — UKW -u E05:S07:T01 / FR-022 archive)
+**Version Anchor:** v0.2.16.4+35
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 

@@ -58,7 +58,7 @@ housekeeping_policy: keep
   - **Note:** Renumbered from S05 to S06 as part of repository story migration (E09:S01:T08)
 
 
-- [ ] **E5:S07 – Policy Documentation Structure** - IN PROGRESS (v0.5.7.1+1, migrated from v0.5.6.1+1 – Task 1 complete: Policy salience implementation)
+- [x] **E5:S07 – Policy Documentation Structure** - COMPLETE ✅ (v0.5.7.1+1 — FR-022 policy salience shipped)
   - Story: [`story-07-policy-documentation-structure.md`](story-07-policy-documentation-structure.md)
   - Tasks: T01 ✅ COMPLETE (FR-022)
   - **Note:** Renumbered from S06 to S07 as part of repository story migration (E09:S01:T08)

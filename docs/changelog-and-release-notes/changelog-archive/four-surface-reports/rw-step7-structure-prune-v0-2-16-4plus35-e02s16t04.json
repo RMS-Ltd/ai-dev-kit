@@ -1,0 +1,14 @@
+{
+  "contract": "FR-097 structure-prune — RW Step 7 E02:S16:T04 UKW archive release",
+  "release_scope": {
+    "task_id": "E02:S16:T04",
+    "version_string": "v0.2.16.4+35"
+  },
+  "rows": {
+    "E05:S07:T01": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -u archived to kanban-completed.md (ledger-before-prune)"
+    }
+  },
+  "timestamp": "2026-06-05T15:29:28Z"
+}

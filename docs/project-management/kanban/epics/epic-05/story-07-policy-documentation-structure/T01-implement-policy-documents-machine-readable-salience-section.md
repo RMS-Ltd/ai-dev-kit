@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Task ID:** E05:S07:T01  
 **Status:** ✅ COMPLETE (V0.5.7.1+1)  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-05 (v0.5.7.1+1 – migrated from embedded Story section)  
+**Last updated:** 2026-06-05 (UKW -u — archived from active kboard; FR-022 IMPLEMENTED)  
 **Version:** v0.5.7.1+1  
 **Code:** E05S07T01
 

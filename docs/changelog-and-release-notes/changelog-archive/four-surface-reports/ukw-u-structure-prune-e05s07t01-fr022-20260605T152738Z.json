@@ -1,0 +1,30 @@
+{
+  "contract": "FR-097 structure-prune — UKW -u bookkeeping archive (ledger-before-prune)",
+  "report_type": "ukw_u_bookkeeping",
+  "invocation": "UKW -u",
+  "evidence_mode": "structure_prune",
+  "summary": {
+    "kboard_archived": 1,
+    "kboard_pruned": 1,
+    "fbuboard_archived": 1,
+    "fbuboard_pruned": 0,
+    "skipped": 0,
+    "already_in_ledger": 0
+  },
+  "archived": {
+    "kboard": ["E05:S07:T01"],
+    "fbuboard": ["FR-022"]
+  },
+  "pruned": {
+    "kboard": ["E05:S07:T01"],
+    "fbuboard": []
+  },
+  "ledger_before_removal": true,
+  "timestamp": "2026-06-05T15:27:38Z",
+  "rows": {
+    "E05:S07:T01": {
+      "allowed": true,
+      "reason": "COMPLETE (v0.5.7.1+1) — UKW -u ledger append then MoSCOW prune; FR-022 IMPLEMENTED"
+    }
+  }
+}

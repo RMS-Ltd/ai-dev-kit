@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Structure
 
-**Last Updated:** 2026-03-31 (pointer: intake execution plan on board — open ∧ taskless, `RW -k`)
+**Last Updated:** 2026-06-05 (UKW -u — FR-022 IMPLEMENTED)
 **Version:** v0.7.6.6+1
 
 > **For MoSCOW prioritized tasks and wired FBUs, see:** [`kboard.md`](kboard.md) (sole active board; [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md))  
@@ -65,7 +65,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **FR-026** – Canonical Perpetual Task for Changelog Maintenance - TODO (LOW, Perpetual task for changelog maintenance) - [FR-026](fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)
 - **FR-025** – Changelog Management and Archival Workflow - TODO (LOW, Workflow for changelog management) - [FR-025](fr-br/FR-025-changelog-management-and-archival-workflow.md)
 - **FR-023** – Update Kanban Workflow (UKW) - TODO (LOW, Updates to Update Kanban Workflow) - [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md)
-- **FR-022** – Policy Docs Machine-Readable Salience - TODO (LOW, Machine-readable policy documentation) - [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md)
+- **FR-022** – Policy Docs Machine-Readable Salience - IMPLEMENTED (v0.5.7.1+1, **E05:S07:T01**) - [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md) | [intake-completed](intake-completed.md)
 - **FR-020** – Version Validator Abstract Space Awareness - TODO (LOW, Abstract space awareness in version validator) - [FR-020](fr-br/FR-020-version-validator-abstract-space-awareness.md)
 - **FR-019** – Intake Workflow Automation - TODO (LOW, Automation for intake workflow) - [FR-019](fr-br/FR-019-intake-workflow-automation.md)
 - **FR-018** – Abstract Space Zero Numbered Est Docs - TODO (LOW, Zero-numbered documents in abstract space) - [FR-018](fr-br/FR-018-abstract-space-zero-numbered-est-docs.md)

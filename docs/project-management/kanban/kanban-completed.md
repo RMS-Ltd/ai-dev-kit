@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW: E06:S09:T24 acquisition-layer ADK error codes)
-**Version:** v0.6.9.24+2
+**Last Updated:** 2026-06-05 (UKW -u: E05:S07:T01 / FR-022 archive)
+**Version:** v0.5.7.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E05:S07:T01](epics/epic-05/story-07-policy-documentation-structure/T01-implement-policy-documents-machine-readable-salience-section.md)** — Policy Docs machine-readable salience section (FR-022): schema, template, guides, key policy updates.
+  **Completed:** `2025-12-12T00:00:00Z` | **Version:** `v0.5.7.1+1` | **Agent:** `UKW -u` | [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md) | [schema](../../architecture/standards-and-adrs/policy-salience-schema.md)
 
 - **[E02:S16:T20](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md)** — Restore kboard IPP segment on MoSCOW rows (UXR-023): normalizer, validator, corpus repair.
   **Completed:** `2026-06-05T19:45:00Z` | **Version:** `v0.2.16.20+2` | **Agent:** `RW E02:S16:T20 --art` | [UXR-023](fr-br/UXR-023-kboard-ipp-segment-regression.md) | [IPP](../../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)

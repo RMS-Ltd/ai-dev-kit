@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Tactical overview
 
-Story 016 remains the operational home for perpetual workflow work. **T04** RW **v0.2.16.4+34** — UKW sync: **E08:S03:T12–T14** → V band **⏳ WAITING** (GH Code Quality re-scan). **T05** RW **v0.2.16.5+6** — Wave 2 link-depth hygiene. Prior **T04** RW **v0.2.16.4+31** — UKW -c ledger backfill. Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**.
+Story 016 remains the operational home for perpetual workflow work. **T04** RW **v0.2.16.4+35** — UKW -u: **E05:S07:T01** / **FR-022** archive (stale kboard TODO pruned). **T05** RW **v0.2.16.5+6** — Wave 2 link-depth hygiene. Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**.
 
 ---
 
@@ -35,7 +35,7 @@ Story 016 remains the operational home for perpetual workflow work. **T04** RW *
 - [ ] **E02:S16:T03 – Workflow maintenance (Perpetual)** - IN PROGRESS (HIGH, umbrella perpetual; Tranche **3B** ACTIVE_FIX complete; AC4 satisfied)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+34** — E08:S03:T12–T14 V band WAITING)  
+- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+35** — UKW -u E05:S07:T01 / FR-022 archive)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E02:S16:T05 – Markdown Documentation Maintenance (Perpetual)** - IN PROGRESS (HIGH, perpetual; last RW **v0.2.16.5+6** — Wave 2 link-depth hygiene)  
