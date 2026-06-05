@@ -12,7 +12,8 @@ housekeeping_policy: keep
 **Expectations baseline:** [T01-expectations-baseline.md](T01-expectations-baseline.md)  
 **Pre-inventory input:** [E07:S07:T01 report §1–2](../../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
 **Package root:** `packages/frameworks/workflow-mgt/`  
-**Inventory date:** 2026-06-05
+**Inventory date:** 2026-06-05  
+**Behavior validation (E02:S13:T03):** [workflow-behavior-validation-report.md](workflow-behavior-validation-report.md)
 
 **Coverage status legend:** `Met` | `Partial` | `Gap` | `Undocumented` | `Superseded`
 

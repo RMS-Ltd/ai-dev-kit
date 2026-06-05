@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.13.3+1] - 05-06-26
+
+E02:S13:T03 — **Workflow-mgt behavior validation:** validate package behavior vs T01; `workflow-behavior-validation-report.md` + IPP. SemVer **v0.4.939+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.3+1.md)
+
+---
+
 ## [0.2.13.2+1] - 05-06-26
 
 E02:S13:T02 — **Workflow-mgt component inventory:** map package to T01 expectations; `component-inventory-map.md` + gap table for T05. SemVer **v0.4.939+1**.

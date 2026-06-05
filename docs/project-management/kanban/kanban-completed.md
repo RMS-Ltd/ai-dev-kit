@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW: E02:S13:T02 — component inventory)
-**Version:** v0.2.13.2+1
+**Last Updated:** 2026-06-05 (RW: E02:S13:T03 — behavior validation)
+**Version:** v0.2.13.3+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E02:S13:T03](epics/epic-02/story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md)** — Workflow-mgt behavior validation against documented guidance.
+  **Completed:** `2026-06-05T05:55:07Z` | **Version:** `v0.2.13.3+1` | **Agent:** `RW E02:S13:T03 --art` | [validation report](epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md) | [IPP](../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
 
 - **[E02:S13:T02](epics/epic-02/story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)** — Workflow-mgt component inventory mapped to T01 expectations.
   **Completed:** `2026-06-05T14:00:00Z` | **Version:** `v0.2.13.2+1` | **Agent:** `RW E02:S13:T02 --art` | [component-inventory-map](epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) | [IPP](../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)

@@ -1,0 +1,59 @@
+{
+  "contract": "FR-092 / FR-091",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 3,
+    "task_id": "E02:S13:T03",
+    "version_string": "v0.2.13.3+1"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "story_doc", "kboard", "kanban_completed"],
+    "total_changes": 10
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md",
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md",
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md",
+        "docs/implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md"
+      ],
+      "notes": [
+        "E02:S13:T03 COMPLETE — workflow behavior validation vs T01 expectations",
+        "Companion workflow-behavior-validation-report.md published",
+        "IPP bidirectionally wired"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md"
+      ],
+      "notes": ["T03 checklist COMPLETE; story AC behavioral validation captured"]
+    },
+    "fbu_doc": {
+      "touched": false,
+      "paths": [],
+      "notes": ["No FR/BR/UXR in release scope — validation-only task E02:S13:T03"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "notes": [
+        "E02:S13:T03 terminal row pruned from M-band (COMPLETE v0.2.13.3+1)",
+        "Board metadata Last Updated aligned to release"
+      ]
+    }
+  },
+  "stamp_evidence": {
+    "manifest": "rw-e2s13t03-structure-prune-stamp-evidence.json",
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 23,
+    "mode": "structure_prune_only"
+  },
+  "timestamp_utc": "2026-06-05 05:55 UTC"
+}
