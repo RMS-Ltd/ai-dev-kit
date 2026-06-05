@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.20+3] - 05-06-26
+
+E02:S16:T20 — **Change implemented:** UXR-023 intake doc relative link path fixes. SemVer **v0.4.986+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.20+3.md)
+
+---
+
 ## [0.6.9.24+3] - 05-06-26
 
 E06:S09:T24 — **Change implemented:** FR-111 doc link hygiene + troubleshooting ADK anchor cleanup. SemVer **v0.4.985+3**.

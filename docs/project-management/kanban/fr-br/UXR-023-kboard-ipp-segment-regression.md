@@ -12,20 +12,19 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** RESOLVED  
-**Resolved in:** v0.2.16.20+2 (SemVer: v0.4.979+2)  
+**Status:** RESOLVED (**v0.2.16.20+3** doc link hygiene)  
 **Code:** UXR-023  
 **Intake release:** v0.2.16.20+1 (SemVer: v0.4.977+1)  
 
 **Implementing Task:** [E02:S16:T20](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md)
 
-**Related:** [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) (original IPP segment contract — RESOLVED), [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) (canonical row transform), [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (four-surface reconciliation), [KANBAN_BOARD_TEMPLATE](../../../packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md) (Verification band example includes `—No IPP—`)
+**Related:** [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) (original IPP segment contract — RESOLVED), [FR-090](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) (canonical row transform), [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) (four-surface reconciliation), [KANBAN_BOARD_TEMPLATE](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md) (Verification band example includes `—No IPP—`)
 
 ---
 
 ## Summary
 
-Active `kboard.md` MoSCOW rows no longer include the pipe-delimited **IPP** segment that [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) established. Rows jump from FBU/task links directly to `Last modified:` without `—IPP—` (linked) or `—No IPP—` (plain fallback). Operators lose at-a-glance planning-traceability on the sole active board ([ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)).
+Active `kboard.md` MoSCOW rows no longer include the pipe-delimited **IPP** segment that [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) established. Rows jump from FBU/task links directly to `Last modified:` without `—IPP—` (linked) or `—No IPP—` (plain fallback). Operators lose at-a-glance planning-traceability on the sole active board ([ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)).
 
 ---
 
@@ -49,9 +48,9 @@ Active `kboard.md` MoSCOW rows no longer include the pipe-delimited **IPP** segm
 **Artifacts reviewed:**
 
 - Live [`kboard.md`](../kboard.md) — all active bands (V, C, O)
-- [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) + [IPP-E4S19T04](../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
-- [`packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md`](../../../packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md)
-- Historical four-surface evidence ([`fr092-wave4-corpus-sweep-evidence.md`](../../changelog-and-release-notes/changelog-archive/four-surface-reports/fr092-wave4-corpus-sweep-evidence.md)) showing IPP segments were present post–FR-092 Wave 4
+- [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) + [IPP-E4S19T04](../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
+- [`packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md)
+- Historical four-surface evidence ([`fr092-wave4-corpus-sweep-evidence.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/fr092-wave4-corpus-sweep-evidence.md)) showing IPP segments were present post–FR-092 Wave 4
 
 ---
 

@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.2.16.20+2** — UXR-023 IPP segment restore shipped)  
-**Version Anchor:** v0.2.16.20+2  
+**Last updated:** 2026-06-05 (RW E02:S16:T20 — UXR-023 doc link hygiene)  
+**Version Anchor:** v0.2.16.20+3  
 **Code:** E02S16T20  
 
 **Upstream:** [UXR-023 — kboard IPP segment regression](../../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
