@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.9.1+1] - 05-06-26
+
+E04:S09:T01 — **BR-007** verification closure: confirm installation bug fixes (T01–T04); fix `high_similarity_matches` NameError in `analyze_structure.py`; FBU **FIXED**; kboard prune. SemVer **v0.4.911+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.9.1+1.md)
+
+---
+
 ## [0.2.16.4+30] - 05-06-26
 
 E02:S16:T04 — **UKW -c** V-band prune: **FR-106** IMPLEMENTED, **BR-082**/**BR-088** FIXED; operator verification closure. SemVer **v0.4.910+30**.
