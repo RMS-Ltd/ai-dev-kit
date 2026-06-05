@@ -45,6 +45,7 @@ setup(
             "pytest>=7.0",
             "pytest-cov>=4.0",
             "pytest-mock>=3.10",
+            "requests>=2.28.0",
             "black>=23.0",
             "flake8>=6.0",
             "mypy>=1.0",
