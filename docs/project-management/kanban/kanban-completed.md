@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW: E02:S13:T09 — FR-050 workflows directory reorganization)
-**Version:** v0.2.13.9+1
+**Last Updated:** 2026-06-05 (UKW -c: E02:S13:T10 ledger archive; story E02:S13 closed)
+**Version:** v0.2.13.10+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E02:S13:T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)** — Kanban transform consolidation + `rw_config_loader` unification (GAP-INTG-001/002).
+  **Completed:** `2026-06-05T07:38:22Z` | **Version:** `v0.2.13.10+1` | **Agent:** `RW E02:S13:T10 --art` | [T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) | [IPP](../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md) | [ADR-020](../../architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md)
+
+#### **UKW -c archive batch (2026-06-05)** — E02:S13 story closure (T10 ledger backfill; row already pruned from active `kboard.md` at RW)
 
 - **[E02:S13:T09](epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md)** — FR-050 workflows directory reorganization (flat YAML stubs; nested SoT).
   **Completed:** `2026-06-05T18:30:00Z` | **Version:** `v0.2.13.9+1` | **Agent:** `RW E02:S13:T09 --art` | [T09](epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md) | [IPP](../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md) | [FR-050](fr-br/FR-050-workflows-directory-structure-reorganization.md)
@@ -177,7 +182,11 @@ housekeeping_policy: keep
 - **[E06:S09:T14](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)** — **BR-085**: RW mode C story pattern prompt loop after fresh kanban (`{story:03d}` validation + epic-only escape).
   **Completed:** `2026-06-03T23:00:21Z` | **Version:** `v0.6.9.14+1` | **Agent:** `RW` | [BR-085](fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
 
-#### **Epic 2: Workflow Management Framework (Story 13 — Package implementation review)**
+#### **Epic 2: Workflow Management Framework (Story 13 — Package implementation review)** ✅ COMPLETE (`v0.2.13.10+1`)
+- **[E02:S13:T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)** — Kanban transform consolidation + `rw_config_loader` unification (GAP-INTG-001/002).
+  **Completed:** `2026-06-05T07:38:22Z` | **Version:** `v0.2.13.10+1` | **Agent:** `RW E02:S13:T10 --art` | [IPP](../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md) | [ADR-020](../../architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md)
+- **[E02:S13:T09](epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md)** — **FR-050**: Workflows directory reorganization (flat YAML stubs; nested SoT).
+  **Completed:** `2026-06-05T18:30:00Z` | **Version:** `v0.2.13.9+1` | **Agent:** `RW E02:S13:T09 --art` | [FR-050](fr-br/FR-050-workflows-directory-structure-reorganization.md) | [IPP](../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md)
 - **[E02:S13:T08](epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)** — **FR-106**: Sync packaged workflows with live repo (YAML, registry, dual-source RW/UKW parity).
   **Completed:** `2026-06-03T21:00:00Z` | **Version:** `v0.2.13.8+2` | **Agent:** `RW` | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [IPP-E2S13T8](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 

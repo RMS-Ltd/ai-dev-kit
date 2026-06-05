@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+33] - 05-06-26
+
+E02:S16:T04 — **Kanban init (RW -k):** UKW `-c` archive-completed ledger backfill for E02:S13 story closure (T10). SemVer **v0.4.945+33**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+33.md)
+
+---
+
 ## [0.2.13.10+1] - 05-06-26
 
 E02:S13:T10 — **Kanban transform consolidation + `rw_config_loader` unification:** shared transform-entrypoint boundaries (RW/UKW/script), unified config-loader behavior, and parity tests. SemVer **v0.4.944+1**.
