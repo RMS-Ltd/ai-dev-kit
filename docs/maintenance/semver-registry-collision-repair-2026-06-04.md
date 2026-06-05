@@ -50,3 +50,16 @@ python "packages/frameworks/workflow-mgt/scripts/validation/validate_semver_regi
 ## Converter hardening (wave 2)
 
 `semver_converter.py` finalize now rejects duplicate **PATCH** and **SemVer core** (`MAJOR.MINOR.PATCH`), not only full `semver+BUILD` strings.
+
+## Wave 3 verification addendum (2026-06-05)
+
+Re-verified on `dev` @ `70b7242`:
+
+- `validate_semver_registry_injective.py` — exit 0 (173 entries, counter **903**, no PATCH/core collisions)
+- `audit_semver_registry_collisions.py` — exit 0
+- Read-only convert: counter unchanged at **903** after 5× `finalize=False` calls
+- pytest task-touch + registry injective — 17/17 pass
+
+Evidence: [semver-verification-evidence-E03S02T12-wave3.md](semver-verification-evidence-E03S02T12-wave3.md)
+
+**Tag misalignment:** `v0.4.870` remote tag position unchanged (RF7). Registry mapping is canonical SoT. FBU closure pending maintainer sign-off per IPP §8.4.

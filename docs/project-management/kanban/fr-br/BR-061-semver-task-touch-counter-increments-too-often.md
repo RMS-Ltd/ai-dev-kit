@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Bug Report BR-061 — Task-touch SemVer PATCH bumps on every converter run
 
-**Status:** IN PROGRESS  
+**Status:** FIXED ✅  
 **Priority:** HIGH  
 **Severity:** HIGH  
 **Created:** 2026-04-02  
-**Last updated:** 2026-06-04 — fix attempted (wave 2): registry repaired (counter **873**); PATCH/core finalize guards; see [repair doc](../../maintenance/semver-registry-collision-repair-2026-06-04.md). `v0.4.870` remote tag may still misalign (no retag).  
-**Version:** v0.3.2.12+3  
+**Last updated:** 2026-06-05 — wave 3 closure **v0.3.2.12+5** (counter **903**, read-only path stable). See [evidence](../../maintenance/semver-verification-evidence-E03S02T12-wave3.md).
+**Version:** v0.3.2.12+5
 **Code:** BR-061  
 **Implementing Task:** [E03:S02:T12](../epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 

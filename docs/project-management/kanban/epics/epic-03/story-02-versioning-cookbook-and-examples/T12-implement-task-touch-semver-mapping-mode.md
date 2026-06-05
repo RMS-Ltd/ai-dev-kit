@@ -13,10 +13,10 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-07  
-**Last updated:** 2026-06-04 (v0.3.2.12+4 — wave 2 remediation released)
+**Last updated:** 2026-06-05 (wave 3 FBU closure — **v0.3.2.12+5**; task **COMPLETE**)
+**Version Anchor:** v0.3.2.12+5
 
 **Associated FR/BR:** [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)
-**Version Anchor:** v0.3.2.12+4
 
 ---
 
@@ -38,8 +38,9 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 - Existing converter (Mode A): `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - Existing registry: `semver-registry.yaml`
 - Existing config: `rw-config.yaml`
-- Planning artifact (IPP): [IPP-E03S02T12-task-touch-semver-collision-hardening](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
+- Planning artifact (IPP): [IPP-E03S02T12-task-touch-semver-collision-hardening](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) — **wave 3 verification plan** (§8; revised 2026-06-05)
 - Repair report: [semver-registry-collision-repair-2026-06-04.md](../../../../maintenance/semver-registry-collision-repair-2026-06-04.md)
+- Wave 3 evidence: [semver-verification-evidence-E03S02T12-wave3.md](../../../../maintenance/semver-verification-evidence-E03S02T12-wave3.md) (V1–V5 PASS, 2026-06-05)
 
 ---
 
@@ -72,11 +73,11 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 
 ## Related Work
 
-- [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) (**REOPENED** — 1:1 internal↔SemVer invariant)
-- [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) (**REOPENED** — RW SemVer tag boundary)
-- [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) (PATCH over-increment / usage of `semver_converter.py`)
+- [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) (**IMPLEMENTED** — wave 3 closure **v0.3.2.12+5**)
+- [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) (**IMPLEMENTED** — wave 3 closure **v0.3.2.12+5**)
+- [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) (**FIXED** — wave 3 closure **v0.3.2.12+5**)
 - `docs/architecture/standards-and-adrs/semver-implementation-followup-spec.md`
-- [IPW-E03S02T12-task-touch-semver-collision-hardening](../../../../../implementation-cycles/IPW-E03S02T12-task-touch-semver-collision-hardening.md)
+- [IPP-E03S02T12-task-touch-semver-collision-hardening](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
 
 ## Implementation note
 
@@ -84,7 +85,11 @@ Implemented converter hardening for BR-061 by splitting task-touch behavior into
 
 ## Regression reopening note (2026-06-04)
 
-**FR-045** and **FR-046** reopened after live `semver-registry.yaml` audit: PATCH **870** / **869** / **806** / **789** each map multiple internal versions to one SemVer core. Remediation continues under this task (see FR-045 recurrence table).
+**FR-045** and **FR-046** reopened after live `semver-registry.yaml` audit: PATCH **870** / **869** / **806** / **789** each map multiple internal versions to one SemVer core. Wave 2 remediation shipped (**v0.3.2.12+4**); **wave 3 verification** per [IPP §8](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md#82-wave-3-verification-checklist) before FBU closure.
+
+## Wave 3 verification (2026-06-05)
+
+**V1–V5 PASS** — closed via `RW E03:S02:T12 --art` **v0.3.2.12+5**. Evidence: [semver-verification-evidence-E03S02T12-wave3.md](../../../../maintenance/semver-verification-evidence-E03S02T12-wave3.md). FR-045/FR-046/BR-061 terminal; V-band row pruned.
 
 ## Regression reopening note (2026-04-13)
 
@@ -96,4 +101,6 @@ Task reopened to enforce collision-invariant SemVer mapping at release boundarie
 
 ## Planning artifacts (publication)
 
-- [IPP-E03S02T12-task-touch-semver-collision-hardening.md](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
+**Publication Status:** PUBLISHED
+
+- [IPP-E03S02T12-task-touch-semver-collision-hardening.md](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) — wave 2 shipped + wave 3/3b plan (IPW revised 2026-06-05)

@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.12+5] - 05-06-26
+## [0.3.2.12+5] - 05-06-26
 
-E04:S19:T12 — **Intake rename wave:** `fbu-*` → `intake-*`; delete `fbuboard.md` / `kanban-board.md`; three-surface tooling; orphan UKW summaries removed. SemVer **v0.4.904+5**.
+E03:S02:T12 — **Wave 3 FBU closure:** SemVer verification PASS; FR-045/FR-046/BR-061 closed; V-band pruned. SemVer **v0.4.905+5**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+5.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.12+5.md)
 
 ---
 

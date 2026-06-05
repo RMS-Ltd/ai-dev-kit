@@ -9,10 +9,11 @@ housekeeping_policy: keep
 # Feature Request: ADR-002 – Task-Touch Derived Mapping (Kanban → SemVer)
 
 **Type:** Feature Request (FR)  
-**Status:** REOPENED  
+**Status:** IMPLEMENTED ✅  
 **Priority:** HIGH  
 **Created:** 2026-02-26  
-**Last updated:** 2026-06-04 (recurrence — internal↔SemVer PATCH/core collisions in `semver-registry.yaml`)  
+**Last updated:** 2026-06-05 (wave 3 closure — **v0.3.2.12+5**; verification signed off via RW)
+**Version:** v0.3.2.12+5  
 **Code:** FR-045  
 **Implementation Task (delivery):** [E03:S02:T12](../epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)  
 **Historical anchor:** [E05:S01:T45](../epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md) (FR repository registry)  
@@ -38,7 +39,9 @@ housekeeping_policy: keep
 
 **Delivery track:** [E03:S02:T12](../epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) + [IPP-E03S02T12](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md).
 
-**Fix attempted (2026-06-04, E03:S02:T12 wave 2):** PATCH + SemVer-core injective finalize; registry repaired per [semver-registry-collision-repair-2026-06-04.md](../../maintenance/semver-registry-collision-repair-2026-06-04.md). Pending user verification; Git tags not moved.
+**Fix attempted (2026-06-04, E03:S02:T12 wave 2):** PATCH + SemVer-core injective finalize; registry repaired per [semver-registry-collision-repair-2026-06-04.md](../../maintenance/semver-registry-collision-repair-2026-06-04.md). Git tags not moved.
+
+**Verification (2026-06-05, wave 3):** V1–V5 PASS on `dev` @ `70b7242` — injective registry (counter **903**, 173 entries, zero collisions). Evidence: [semver-verification-evidence-E03S02T12-wave3.md](../../maintenance/semver-verification-evidence-E03S02T12-wave3.md). **Closed** via `RW E03:S02:T12 --art` **v0.3.2.12+5**.
 
 ---
 

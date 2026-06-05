@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2026-04-13 (v0.3.2.12+3 – Kanban documentation setup)
-**Version:** v0.3.2.12+3
+**Last updated:** 2026-06-05 (v0.3.2.12+5 — T12 wave 3 FBU closure)
+**Version:** v0.3.2.12+5
 **Code:** E3S02
 
 ---
@@ -31,7 +31,7 @@ housekeeping_policy: keep
 - [x] **E03:S02:T09 – Implement Package Version Workflow (PVW) with agentic execution** ✅ COMPLETE (v0.3.2.9+1)
 - [ ] **E03:S02:T10 – Integrate PVW into Release Workflow agent execution guide** - TODO
 - [x] **E03:S02:T11 – Implement SemVer Mapping for Release Workflow** ✅ COMPLETE (v0.3.2.11+4 – GitHub release creation with SemVer)
-- [x] **E03:S02:T12 – Implement ADR-002 Task-Touch SemVer Mapping Mode** - ✅ COMPLETE (**v0.3.2.12+4** — FR-045/046/BR-061 wave 2: injective finalize, registry repair, validators) - [Task Doc](story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
+- [x] **E03:S02:T12 – Implement ADR-002 Task-Touch SemVer Mapping Mode** - ✅ COMPLETE (**v0.3.2.12+5** — wave 3 verification + FR-045/046/BR-061 closure) - [Task Doc](story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 
 ---
 

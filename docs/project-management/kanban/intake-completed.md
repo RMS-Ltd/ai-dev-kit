@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-05 (RW **E02:S16:T04** — BR-078/079/080/087 pruned v0.2.16.4+29)
-**Version:** v0.2.16.4+29 (**SemVer** v0.4.898+29)
+**Last Updated:** 2026-06-05 (RW **E03:S02:T12** — FR-045/046/BR-061 wave 3 closure v0.3.2.12+5)
+**Version:** v0.3.2.12+5 (**SemVer** v0.4.905+5)
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,9 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-045 | FR | ADR-002 task-touch derived mapping — wave 3 verification closure (**E03:S02:T12**) | 2026-06-05T02:03:38Z | v0.3.2.12+5 | RW --art |
+| FR-046 | FR | RW SemVer tag task-touch mode — wave 3 verification closure (**E03:S02:T12**) | 2026-06-05T02:03:38Z | v0.3.2.12+5 | RW --art |
+| BR-061 | BR | Task-touch PATCH over-increment — FIXED (**E03:S02:T12**) | 2026-06-05T02:03:38Z | v0.3.2.12+5 | RW --art |
 | BR-087 | BR | Framework install directory slug mismatch — RESOLVED (**E06:S09:T18**) | 2026-06-04T16:00:30Z | v0.6.9.18+2 | UKW hygiene |
 | BR-080 | BR | Kanban fresh mode validation on empty repo without `--force` (**E06:S09:T09**) | 2026-06-03T19:15:00Z | v0.6.9.9+2 | UKW hygiene |
 | BR-079 | BR | Kanban fresh install Epic 22/23 templates — verified replay (**E06:S09:T08**) | 2026-06-04T12:00:00Z | v0.6.9.8+2 | UKW hygiene |
@@ -69,7 +72,6 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 | FR-085 | FR | UKW optional `--rp` deep reprioritization — ADR-009, agent SoT, cheatsheet (**E02:S16:T06**) | 2026-05-30T12:54:46Z | v0.2.16.6+1 | RW |
 | FR-046 | FR | RW SemVer tag when task_touch enabled — dual-mode closure (**E05:S01:T46**) | 2026-05-30T08:55:34Z | v0.5.1.46+7 | RW |
 
-> **Reopened 2026-06-04:** **FR-046** (with **FR-045**) — registry SemVer PATCH/core collisions; active on [`kboard.md`](kboard.md) Must Have; delivery **E03:S02:T12**. Closure row retained for forensic history only.
 | FR-074 | FR | Kanban intake atomic KG-R2 & semantic KG-R6 (**E05:S01:T74**) | 2026-05-29T00:00:00Z | v0.5.1.74+3 | RW |
 | FR-049 | FR | Enhanced kanban-completed timestamps + recent tasks dashboard (**E05:S01:T49**) | 2026-03-11T16:20:00Z | v0.5.1.49+2 | RW |
 | FR-011 | FR | Task splitting across multiple canonical epics (**E04:S08:T07**) | 2026-05-29T15:30:00Z | v0.4.8.7+1 | RW |
