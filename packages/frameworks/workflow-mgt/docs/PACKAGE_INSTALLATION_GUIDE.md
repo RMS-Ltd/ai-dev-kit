@@ -18,6 +18,8 @@ This guide covers manual installation of framework packages.
 
 **Workflow Management / RW:** After install, invoke Release Workflow with a **task id in the same message** as `RW` (**FR-060**); see repository [`INSTALL_IN_YOUR_PROJECT.md`](../../../../INSTALL_IN_YOUR_PROJECT.md) and [`framework-dependency-installation-guide.md`](../../../../docs/documentation/user-docs/framework-dependency-installation-guide.md).
 
+**Lean vendor default (FR-110):** Prefer vendoring **`greenfield-install/packages/frameworks/`** (or sparse-checkout of `packages/frameworks/`) from [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) before per-framework GitHub Release tarballs. See [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110). Release tarballs below remain valid for brownfield or single-framework updates.
+
 ---
 
 ## Prerequisites

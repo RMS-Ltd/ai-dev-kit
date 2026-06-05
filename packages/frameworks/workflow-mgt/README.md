@@ -15,6 +15,8 @@ housekeeping_policy: keep
 
 **📦 Dependency Architecture (Epic 6):** This framework is transitioning from copy-paste to **dependency-based installation** with automatic updates. See [Framework Dependency Architecture](../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md) for details on installing as a Git submodule, via CLI tool, or package manager.
 
+**🌱 Adopter distribution (FR-110):** Consumer projects receive this package via the **lean vendor tree** — `greenfield-install/packages/frameworks/workflow-mgt/` or sparse-checkout of `packages/frameworks/` from [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) (~11 MiB). Installers and RW validators live under **`scripts/` in this package** (not ai-dev-kit repo-root `scripts/`). Entry: [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
+
 **Canonical workflow list:** The authoritative machine-readable set is [`workflows/workflow-registry.yaml`](workflows/workflow-registry.yaml) — **11** entries under `workflows:`. Agent execution guides under `KB/Documentation/Developer_Docs/vwmp/` describe methodology and step counts; they are not additional registry workflows.
 
 **RW trigger dual-source (maintainers):** The repo root [`.cursorrules`](../../../.cursorrules) and the portable excerpt [`cursorrules-rw-trigger-section.md`](cursorrules-rw-trigger-section.md) must stay aligned on **FR-060 / FR-038 / BR-056** guardrails. See [RW trigger dual-source parity](docs/rw-trigger-dual-source-parity.md) for the checklist and merge order.

@@ -11,6 +11,8 @@ Validators for specific frameworks (Kanban, Workflow Management, Numbering & Ver
 
 This package provides validators for each framework in the AI Dev Kit ecosystem. Each validator checks framework-specific requirements, structure, and compliance.
 
+**Adopter distribution (FR-110):** Framework packages under test live in the consumer's **lean vendor tree** (`greenfield-install/packages/frameworks/`). Validators in this repo assume maintainer layout; adopters run RW validators from **workflow-mgt** `scripts/validation/` after install. See [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
+
 ---
 
 ## Validators

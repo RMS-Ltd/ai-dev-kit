@@ -14,6 +14,8 @@ housekeeping_policy: keep
 **Last Updated:** 2025-12-04  
 **Version:** 1.0.0
 
+**🌱 Adopter distribution (FR-110):** Delivered inside the lean vendor tree at `greenfield-install/packages/frameworks/debug-path/` as part of `packages/frameworks/` (~11 MiB bundle). See [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
+
 ---
 
 ## 🧩 Modularity & Dependencies

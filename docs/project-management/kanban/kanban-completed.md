@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E06:S09:T22](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md)** — Package documentation greenfield-install alignment (FR-110 framework READMEs + install guides).
+  **Completed:** `2026-06-05T12:00:00Z` | **Version:** `v0.6.9.22+1` | **Agent:** `RW E06:S09:T22 --art` | [T22](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md) | [FR-110](fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+
 - **[E02:S14:T01](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md)** — Enumerate workflow-mgt installation paths (19-row matrix; two-phase acquisition/configuration model).
   **Completed:** `2026-06-05T08:02:29Z` | **Version:** `v0.2.14.1+1` | **Agent:** `RW E02:S14:T01 --art` | [Matrix](epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md) | [IPP](../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
 

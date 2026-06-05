@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.21+3] - 05-06-26
+## [0.6.9.22+1] - 05-06-26
 
-E06:S09:T21 — **Lean vendor install docs (FR-110):** README + INSTALL_IN_YOUR_PROJECT lean path (`packages/frameworks/` ~11 MiB, sparse-checkout interim). SemVer **v0.4.950+3**.
+E06:S09:T22 — **Package docs greenfield-install alignment (FR-110):** framework READMEs + install guides reflect lean vendor tree. SemVer **v0.4.951+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.21+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.22+1.md)
 
 ---
 

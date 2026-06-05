@@ -16,6 +16,8 @@ housekeeping_policy: keep
 
 **📦 Dependency Architecture (Epic 6):** This framework is transitioning from copy-paste to **dependency-based installation** with automatic updates. See [Framework Dependency Architecture](../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md) for details on installing as a Git submodule, via CLI tool, or package manager.
 
+**🌱 Adopter distribution (FR-110):** Delivered inside the lean vendor tree at `greenfield-install/packages/frameworks/numbering-versioning/` (policy/docs only; no separate install script). Bundled with workflow-mgt/kanban via [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
+
 ---
 
 This directory contains all policy documents relating to numbering and versioning strategies.

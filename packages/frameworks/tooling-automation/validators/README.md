@@ -8,7 +8,11 @@
 
 ## Overview
 
-The Validator Framework provides a comprehensive foundation for building validators for code, configuration, and documentation. It offers:
+The Validator Framework provides a comprehensive foundation for building validators for code, configuration, and documentation.
+
+**Adopter distribution (FR-110):** Shipped inside `greenfield-install/packages/frameworks/tooling-automation/` as part of the lean `packages/frameworks/` bundle. Consumer RW runs validators from **workflow-mgt** `scripts/validation/` — see [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
+
+It offers:
 
 - **Base Validator Classes:** Abstract interfaces for all validators
 - **Validation Results:** Structured result types with issues, severity levels, and metadata

@@ -1,5 +1,7 @@
 # Kanban Migration Utilities
 
+**Adopter path (FR-110):** Run these scripts from your **host project root**, referencing the vendored package at `vendor/ai-dev-kit/packages/frameworks/kanban/scripts/` (lean vendor tree). See [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
+
 This directory contains utilities for detecting, analyzing, and migrating existing Kanban structures to the canonical ai-dev-kit Kanban framework format.
 
 ## Scripts

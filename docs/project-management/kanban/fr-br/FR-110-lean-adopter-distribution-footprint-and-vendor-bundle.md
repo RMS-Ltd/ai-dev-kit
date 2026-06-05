@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM (Should Have — MoSCOW **S**)  
 **Status:** ACCEPTED
 
-**Implementing Task:** [E06:S09:T21](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md)
+**Implementing Tasks:** [E06:S09:T21](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) (lean tree + sync) · [E06:S09:T22](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md) (package README alignment)
 
 ---
 

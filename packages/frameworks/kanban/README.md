@@ -22,7 +22,9 @@ package:
 
 **📦 Dependency Architecture (Epic 6):** This framework is transitioning from copy-paste to **dependency-based installation** with automatic updates. See [Framework Dependency Architecture](../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md) for details on installing as a Git submodule, via CLI tool, or package manager.
 
-**Consumer vs framework Kanban trees:** In a **consumer project**, your working Kanban lives at **`docs/project-management/kanban/`** at the repo root (epics, stories, board files). The framework’s own files (e.g. under `.ai-dev-kit/packages/frameworks/kanban/` or wherever the framework is installed) are the **framework’s internal** board and templates—**do not edit or use them as your project’s Kanban**. Always run the installer from your project root so that it creates/updates `docs/project-management/kanban/` in your repo.
+**🌱 Adopter distribution (FR-110):** Consumer projects receive this package via the **lean vendor tree** — `greenfield-install/packages/frameworks/kanban/` or sparse-checkout of `packages/frameworks/` from [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) (~11 MiB). **`install_kanban_framework.py`** and related tools live under **`scripts/` in this package**. Entry: [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
+
+**Consumer vs framework Kanban trees:** In a **consumer project**, your working Kanban lives at **`docs/project-management/kanban/`** at the repo root (epics, stories, board files). The framework’s own files (e.g. under `vendor/ai-dev-kit/packages/frameworks/kanban/` — lean vendor path) are the **framework’s internal** board and templates—**do not edit or use them as your project’s Kanban**. Always run the installer from your **host project root** so that it creates/updates `docs/project-management/kanban/` in your repo.
 
 > **Note:** All references to specific projects (for example, *Confidentia*, *Epic 4*, or concrete paths like `docs/project-management/epics/overview/Epic 4/epic-04.md`) are **examples only**.  
 > When you install this package, you should:
@@ -84,20 +86,17 @@ This package is designed to be **fully modular** with maximum flexibility. You c
 
 ### Copy vs Reference Pattern
 
-**⚠️ CRITICAL: Vendoring this package (copy or submodule), not live-linking to ai-dev-kit**
+**⚠️ CRITICAL: Lean vendor (FR-110), not full maintainer repo**
 
-Adopters **vendor** this folder into their repository. On **brownfield** repos, prefer `install_kanban_framework.py --mode migration` or `canonical_adoption`—not `--mode fresh` unless the Kanban root is empty. See [INSTALL — Brownfield adoption](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081).
+Adopters **vendor** the lean tree (`greenfield-install/` or `packages/frameworks/` only) — see [INSTALL — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110). On **brownfield** repos, prefer `install_kanban_framework.py --mode migration` or `canonical_adoption`—not `--mode fresh` unless the Kanban root is empty. See [INSTALL — Brownfield adoption](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081).
 
-**Why copy?**
-- Projects need to customize file paths, KB structure, and terminology
-- Projects evolve independently and may need project-specific adaptations
-- Copying ensures projects have full control over their Kanban implementation
-- Prevents breaking changes in `ai-dev-kit` from affecting consuming projects
+**Recommended (greenfield):** Keep `packages/frameworks/kanban/` inside `vendor/ai-dev-kit/` and run `scripts/install_kanban_framework.py` from the host project root (paths reference the vendored tree).
 
-**What to copy:**
-1. All files in `packages/frameworks/kanban/`
-2. Maintain directory structure
-3. Customize all file paths in policy and templates
+**Optional copy-into-project-root:** Some teams still copy framework folders to `tools/kanban/`; that remains supported but is not the default FR-110 path.
+
+**What adopters use from this package:**
+1. All files in `packages/frameworks/kanban/` (templates, policies, `scripts/`)
+2. Host project customizes paths in **their** `docs/project-management/kanban/` after install — not the vendored framework tree
 4. Update Epic/Story numbering examples
 
 **Customization boundaries:**
