@@ -10,11 +10,11 @@ housekeeping_policy: keep
 
 **Bug ID:** BR-101  
 **Priority:** LOW  
-**Severity:** LOW — **14** open AI-powered Code Quality suggestions on recently changed files (2026-06-05).  
+**Severity:** LOW — **17** open AI-powered Code Quality suggestions across **5** file groups (2026-06-05 GH UI).  
 **Status:** WAITING  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (dashboard re-scan — **14** AI findings still open; dismiss #10–#11 pending; **v0.8.3.14+1** shipped)  
-**Version:** v0.8.3.14+2  
+**Last updated:** 2026-06-05 (post-merge `main` @ `f6aa4dca`; GH refresh pending; **v0.8.3.14+3**)  
+**Version:** v0.8.3.14+3  
 **Implementing Task:** [E08:S03:T14](../epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (AI suggestions panel) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-100](BR-100-code-quality-reliability-backlog.md)
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-GitHub **Code Quality** surfaces **14 AI-powered suggestions** on recently changed files. These supplement deterministic CodeQL standard findings and should be triaged, applied, or dismissed with rationale.
+GitHub **Code Quality** surfaces **AI-powered suggestions** grouped by **file path** on recently changed files (GH UI shows no `#` row numbers). These supplement deterministic CodeQL standard findings and should be triaged, applied, or dismissed with rationale. Operator index: task doc **AID** tokens (**AI-GFI-CONTAM**, **AI-SEMVER**, **AI-SYNC-GFI**, **AI-PORTAL-BR068**, **AI-VENDOR-TREE**).
 
 ---
 
@@ -31,7 +31,7 @@ GitHub **Code Quality** surfaces **14 AI-powered suggestions** on recently chang
 ### Observed behavior (GitHub Code Quality dashboard, 2026-06-05)
 
 - **Location:** [Security & quality → AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) — **Suggestions powered by AI** panel (UI only; not in `code-scanning/alerts` API)
-- **Count:** **14 findings**
+- **Count:** **17 findings** (2026-06-05 GH UI; was **14** @ `cadb0c3` re-scan)
 - **Scope:** Recently pushed files on default branch (LLM-assisted analysis beyond CodeQL rule suite)
 
 ### Root cause
@@ -65,9 +65,11 @@ GitHub **Code Quality** surfaces **14 AI-powered suggestions** on recently chang
 - Applied 12 code/doc fixes (semver_converter, sync_greenfield_install, contamination tests/detector, portal link tests); dismissed 2 (version.py dataclass — RW contract; sync `rglob` — no benefit).
 - Targeted pytest: 7 passed.
 - **Released:** **v0.8.3.14+1** via **`RW E08:S03:T14 --art`**.
-- **Pending:** GitHub dismiss for #10–#11 on [ai-findings panel](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings); panel 0-open verification.
+- **Pending:** GitHub dismiss for **AI-SYNC-GFI** / R10 (`rglob`) on [ai-findings panel](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings); panel 0-open verification.
 
-**Dashboard re-scan (2026-06-05):** [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) — **14** open suggestions unchanged; same 5 files listed (`test_contamination_detector.py`, `semver_converter.py`, `sync_greenfield_install.py`, `version.py`, `test_portal_br068_monorepo_links.py`). Operator dismiss #10–#11 still required.
+**Dashboard re-scan B (2026-06-05, operator GH UI):** [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) — **17** open across 5 file groups. **AI-VENDOR-TREE** (`tests/workflow_mgt/test_verify_vendor_tree.py`, 4) is new post wave-1. `version.py` (R11) no longer listed.
+
+**Post-merge (2026-06-05):** Operator merged to `main` @ `f6aa4dca` and pushed. **F-SYNC-01/03** fixes verified on `main`; GH AI panel has **no dismiss** control — refresh lag expected. **Released:** **v0.8.3.14+3** via **`RW E08:S03:T14 -k --art`**.
 
 ---
 
