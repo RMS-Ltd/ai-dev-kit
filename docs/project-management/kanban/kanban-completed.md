@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (UKW -c — 14 doc-terminal C-band rows archived from kboard)
-**Version:** v0.2.16.4+31
+**Last Updated:** 2026-06-05 (RW: E02:S11:T13)
+**Version:** v0.2.11.13+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E02:S11:T13](epics/epic-02/story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md)** — **BR-051** GHA workflow spam hygiene.
+  **Completed:** `2026-06-05T19:30:00Z` | **Version:** `v0.2.11.13+3` | **Agent:** `RW` | [BR-051](fr-br/BR-051-github-actions-workflow-spam-emails.md)
 
 #### **UKW -c archive batch (2026-06-05)** — doc-terminal rows pruned from active `kboard.md` C-band
 

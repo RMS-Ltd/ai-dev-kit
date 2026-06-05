@@ -1,0 +1,18 @@
+{
+  "contract": "FR-097 structure-prune — COMPLETE task row removal (RW Step 7 E02:S11:T13 BUILD+3)",
+  "release_scope": {
+    "task_id": "E02:S11:T13",
+    "version_string": "v0.2.11.13+3"
+  },
+  "evidence_mode": "structure_prune",
+  "archived": {
+    "kboard": ["E02:S11:T13"],
+    "kanban_completed": ["E02:S11:T13"]
+  },
+  "rows": {
+    "E02:S11:T13": {
+      "allowed": true,
+      "reason": "COMPLETE v0.2.11.13+2 — BR-051; kboard prune at BUILD+3"
+    }
+  }
+}

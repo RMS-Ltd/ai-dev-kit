@@ -1,7 +1,7 @@
 # E02:S11:T13 — GitHub Actions workflow spam emails (BR-051)
 **Task ID:** E02:S11:T13
 **Status:** ✅ COMPLETE (v0.2.11.13+2)
-**Version:** v0.2.11.13+2
+**Last updated:** 2026-06-05 (RW **v0.2.11.13+3** — Step 7 kboard prune)
 ## Input
 - [IPP-E02S11T13](../../../../implementation-cycles/IPP-E02S11T13-github-actions-workflow-spam-emails.md)
 ## Acceptance criteria

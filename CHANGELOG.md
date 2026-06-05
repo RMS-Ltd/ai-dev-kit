@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.11.13+3] - 05-06-26
+
+E02:S11:T13 — **RW Step 7:** kboard/BR-051 four-surface reconciliation (deferred from +2). SemVer **v0.4.922+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.11.13+3.md)
+
+---
+
 ## [0.2.11.13+2] - 05-06-26
 
 E02:S11:T13 — **BR-051:** GHA notification spam hygiene — dispatch-only intake YAML, archived `.DISABLED*` workflows, CI `concurrency` blocks. SemVer **v0.4.923+2**.
