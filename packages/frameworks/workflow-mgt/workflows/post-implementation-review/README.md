@@ -1,5 +1,7 @@
 # Post-Implementation Review
 
+> **SoT:** Agent execution follows [pir-workflow-agent-execution.md](../../KB/Documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md). This directory's `pir-workflow.yaml` is the **registry/structural** definition. The flat `workflows/pir-workflow.yaml` at the parent level is **deprecated** (E02:S13:T09).
+
 ## Overview
 
 The Post-Implementation Review (PIR) workflow provides systematic evaluation of implementation outcomes, lessons learned, and improvement opportunities. It ensures comprehensive review of completed implementations for continuous improvement.

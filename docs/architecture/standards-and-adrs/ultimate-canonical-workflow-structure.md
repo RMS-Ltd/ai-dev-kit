@@ -26,26 +26,20 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 
 **The Ultimate Canonical Workflow Structure:**
 
+> **Framework package (FR-050):** Under `packages/frameworks/workflow-mgt/workflows/`, each workflow lives in a **named subdirectory** with `workflow-registry.yaml` as discovery SoT. Legacy flat `workflows/*.yaml` files at the package root are **deprecated redirect stubs** only (E02:S13:T09). See [MIGRATION_GUIDE.md](../../../packages/frameworks/workflow-mgt/workflows/MIGRATION_GUIDE.md).
+
 ```
 {project-root}/
-├── workflows/                       # Project workflows (canonical)
-│   ├── release-workflow.yaml
-│   ├── intake-workflow.yaml
-│   ├── package-version-workflow.yaml
-│   ├── pir-workflow.yaml
-│   ├── migration-workflow.yaml
-│   ├── refactor-workflow.yaml
-│   └── testing-workflow.yaml
+├── workflows/                       # Project workflows (adopter copy)
+│   ├── release-workflow/            # Preferred: nested layout (FR-050)
+│   │   └── release-workflow.yaml
+│   └── ...
 ├── rw-config.yaml                   # Release Workflow configuration (canonical)
-├── intake-config.yaml               # Intake Workflow configuration (optional)
-└── packages/frameworks/workflow-mgt/workflows/  # Framework workflows
-    ├── release-workflow.yaml
-    ├── intake-workflow.yaml
-    ├── package-version-workflow.yaml
-    ├── pir-workflow.yaml
-    ├── migration-workflow.yaml
-    ├── refactor-workflow.yaml
-    └── testing-workflow.yaml
+└── packages/frameworks/workflow-mgt/workflows/  # Framework source
+    ├── workflow-registry.yaml       # Discovery SoT
+    ├── release-workflow/
+    │   └── release-workflow.yaml
+    └── ...
 ```
 
 **Canonical Workflows:**
@@ -80,17 +74,16 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 
 ### 1.2 File Location
 
-**CANONICAL:** `workflows/` directory in project root OR `packages/frameworks/workflow-mgt/workflows/` (framework)
+**CANONICAL (framework package):** `packages/frameworks/workflow-mgt/workflows/{workflow-name}/{workflow-name}-workflow.yaml` per [FR-050](../../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md) and [`workflow-registry.yaml`](../../../packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml).
 
-**Structure:**
+**CANONICAL (adopter project root):** `workflows/` directory — prefer nested subdirectories matching the framework layout; flat root YAML is legacy.
+
+**Structure (framework package):**
 ```
-{project-root}/
-├── workflows/                       # Project workflows (canonical)
-│   ├── release-workflow.yaml
-│   └── package-version-workflow.yaml
-├── packages/frameworks/workflow-mgt/workflows/  # Framework workflows
-│   ├── release-workflow.yaml
-│   └── package-version-workflow.yaml
+packages/frameworks/workflow-mgt/workflows/
+├── workflow-registry.yaml
+├── release-workflow/
+│   └── release-workflow.yaml
 └── ...
 ```
 

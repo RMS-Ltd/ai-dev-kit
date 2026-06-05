@@ -48,7 +48,7 @@ The installer automates the RW adoption process by:
 
 3. **Updates `.cursorrules`** - Generates/updates the RW trigger section with correct paths substituted
 
-4. **Patches `workflows/release-workflow.yaml`** - Updates workflow config to use values from `rw-config.yaml`
+4. **Patches `workflows/release-workflow/release-workflow.yaml`** - Updates workflow config to use values from `rw-config.yaml` (registry SoT)
 
 ---
 

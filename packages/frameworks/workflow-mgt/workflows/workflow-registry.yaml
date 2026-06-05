@@ -1,6 +1,6 @@
 workflow_registry:
-  version: "1.1.0"
-  last_updated: "2026-06-03"
+  version: "1.2.0"
+  last_updated: "2026-06-05"
   
   workflows:
     release-workflow:
@@ -47,6 +47,7 @@ workflow_registry:
       documentation: "README.md"
       triggers: ["PIR"]
       steps: 6
+      notes: "Flat workflows/pir-workflow.yaml is deprecated (E02:S13:T09); SoT is post-implementation-review/pir-workflow.yaml"
       
     intake-workflow:
       name: "Intake Workflow"
@@ -58,6 +59,7 @@ workflow_registry:
       documentation: "README.md"
       triggers: ["INTAKE"]
       steps: 7
+      notes: "Flat workflows/intake-workflow.yaml is deprecated (E02:S13:T09); SoT is intake-workflow/intake-workflow.yaml"
       
     migration-workflow:
       name: "Migration Workflow"
@@ -69,6 +71,7 @@ workflow_registry:
       documentation: "README.md"
       triggers: ["MIGRATION"]
       steps: 9
+      notes: "Flat workflows/migration-workflow.yaml is deprecated (E02:S13:T09)"
       
     refactor-workflow:
       name: "Refactor Workflow"
@@ -80,6 +83,7 @@ workflow_registry:
       documentation: "README.md"
       triggers: ["REFACTOR"]
       steps: 8
+      notes: "Flat workflows/refactor-workflow.yaml is deprecated (E02:S13:T09)"
       
     testing-workflow:
       name: "Testing Workflow"
@@ -91,6 +95,7 @@ workflow_registry:
       documentation: "README.md"
       triggers: ["TESTING"]
       steps: 10
+      notes: "Flat workflows/testing-workflow.yaml is deprecated (E02:S13:T09)"
       
     package-version-workflow:
       name: "Package Version Workflow"
@@ -102,6 +107,7 @@ workflow_registry:
       documentation: "README.md"
       triggers: ["PVW", "PKG-VERSION"]
       steps: 6
+      notes: "Flat workflows/package-version-workflow.yaml is deprecated (E02:S13:T09)"
       
     framework-health-monitoring-workflow:
       name: "Framework Health Monitoring Workflow"

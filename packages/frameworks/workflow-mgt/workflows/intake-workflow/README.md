@@ -1,5 +1,7 @@
 # Intake Workflow
 
+> **SoT:** Agent execution follows [intake-workflow-agent-execution.md](../../KB/Documentation/Developer_Docs/vwmp/intake-workflow-agent-execution.md). This directory's `intake-workflow.yaml` is the **registry/structural** definition. The flat `workflows/intake-workflow.yaml` at the parent level is **deprecated** (E02:S13:T09).
+
 ## Overview
 
 The Intake Workflow provides systematic FR/BR/UXR automation and processing with comprehensive validation, categorization, and kanban integration. It ensures consistent intake processes for all project requests.

@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.13.9+1] - 05-06-26
+
+E02:S13:T09 — **FR-050 workflows directory reorganization:** flat YAML duplicates deprecated as redirect stubs; nested subdirectories registry SoT; docs/registry aligned. SemVer **v0.4.943+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.9+1.md)
+
+---
+
 ## [0.2.13.6+1] - 05-06-26
 
 E02:S13:T06 — **Workflow-mgt RC sign-off:** criteria C1–C6, DEFER posture, remediation backlog (16 gaps); filed T09 (FR-050) + T10 (kanban transform). SemVer **v0.4.942+1**.

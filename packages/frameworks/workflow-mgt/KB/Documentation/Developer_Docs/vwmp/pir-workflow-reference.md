@@ -1136,7 +1136,7 @@ Step 1 (Identify Review Scope)
 - [PIR Workflow Planning](../../Analysis/PIR-workflow-planning.md) - Complete planning document
 - [Epic-Level PIR Design](../../Analysis/T02-epic-level-pir-workflow-design.md) - Epic-level design
 - [Story-Level PIR Design](../../Analysis/T03-story-level-pir-workflow-design.md) - Story-level design
-- [PIR Workflow YAML](../../workflows/pir-workflow.yaml) - Workflow definition
+- [PIR Workflow YAML](../../workflows/post-implementation-review/pir-workflow.yaml) - Workflow definition (registry SoT)
 - [PIR Workflow Agent Execution Guide](pir-workflow-agent-execution.md) - Step-by-step execution guide
 - [PIR-Kanban Integration Guide](pir-kanban-integration-guide.md) - Kanban integration patterns
 - [PIR-Versioning Integration Guide](pir-versioning-integration-guide.md) - Versioning integration patterns

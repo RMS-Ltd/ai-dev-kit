@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-05 (E02:S13:T06 **v0.2.13.6+1**)
-**Version:** v0.2.13.6+1
+**Last updated:** 2026-06-05 (E02:S13:T09 **v0.2.13.9+1**)
+**Version:** v0.2.13.9+1
 **Code:** E2S13
 
 ---
@@ -44,8 +44,9 @@ housekeeping_policy: keep
   - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
   - IPP: [`IPP-E02S13T06-rc-sign-off-remediation.md`](../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
   - RC posture: **DEFER** (HIGH gaps filed: T09, T10)
-- [ ] **E02:S13:T09 – FR-050 Workflows Directory Reorganization** - TODO (HIGH remediation — [FR-050](../../fr-br/FR-050-workflows-directory-structure-reorganization.md))
+- [x] **E02:S13:T09 – FR-050 Workflows Directory Reorganization** - ✅ COMPLETE (v0.2.13.9+1)
   - Task: [`T09-fr050-workflows-directory-reorganization`](story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md)
+  - IPP: [`IPP-E02S13T09-fr050-workflows-directory-reorganization.md`](../../../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md)
 - [ ] **E02:S13:T10 – Kanban Transform Consolidation** - TODO (HIGH remediation — GAP-WFMGT-INTG-001)
   - Task: [`T10-kanban-transform-consolidation`](story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)
 - [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)

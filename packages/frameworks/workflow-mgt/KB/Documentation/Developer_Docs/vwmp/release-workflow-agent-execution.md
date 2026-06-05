@@ -2258,7 +2258,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
 
 **See Also:**
 - **CMW Scripts:** `packages/frameworks/workflow-mgt/scripts/changelog/`
-- **CMW Workflow Definition:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow.yaml`
+- **CMW Workflow Definition:** `packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/changelog-management-workflow.yaml` (registry SoT)
 - **Changelog Archival Policy:** `docs/architecture/standards-and-adrs/changelog-archival-policy.md`
 
 ---
@@ -3135,7 +3135,7 @@ if result.exit_code != 0:
   config:
     epic_pir_always: true
     story_pir_significance_criteria: [...]
-    pir_workflow_path: packages/frameworks/workflow-mgt/workflows/pir-workflow.yaml
+    pir_workflow_path: packages/frameworks/workflow-mgt/workflows/post-implementation-review/pir-workflow.yaml
 ```
 
 **Agent Execution:**

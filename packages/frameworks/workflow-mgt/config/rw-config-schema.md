@@ -190,10 +190,11 @@ The following variables can be used in path patterns:
 - Reads `scripts_path` for Step 8 (Run Validators)
 - Reads `readme_file` for Step 5
 
-### `workflows/release-workflow.yaml`
+### `workflows/release-workflow/release-workflow.yaml` (registry SoT)
 - Uses `version_file` in config block
 - Uses `changelog_dir` and `main_changelog` in config block
 - Uses Kanban paths in Step 5 config (if `use_kanban: true`)
+- Flat `workflows/release-workflow.yaml` is deprecated (redirect stub only)
 
 ### Validation Scripts
 - `validate_branch_context.py` reads `version_file` from config
@@ -209,7 +210,7 @@ The following variables can be used in path patterns:
 **Steps:**
 1. Installer asks questions → generates `rw-config.yaml`
 2. Installer reads `rw-config.yaml` → generates `.cursorrules` RW section
-3. Installer reads `rw-config.yaml` → patches `workflows/release-workflow.yaml`
+3. Installer reads `rw-config.yaml` → patches `workflows/release-workflow/release-workflow.yaml`
 4. Validation scripts updated to read from `rw-config.yaml` (or installer patches them)
 
 ---

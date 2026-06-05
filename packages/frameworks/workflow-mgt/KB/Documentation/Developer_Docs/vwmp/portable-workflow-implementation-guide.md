@@ -95,7 +95,7 @@ These define the **versioning schema and strategy**:
 
 ### 4. Workflow Definition File
 
-**Location:** `workflows/release-workflow.yaml`
+**Location:** `workflows/release-workflow/release-workflow.yaml` (registry SoT; see [`workflow-registry.yaml`](../../workflows/workflow-registry.yaml))
 
 **Purpose:** YAML definition of the Release Workflow structure
 
@@ -188,7 +188,7 @@ If using different branch naming:
 3. `docs/documentation/Developer_Docs/vwmp/release-workflow-reference.md`
 4. `docs/architecture/standards-and-adrs/versioning-policy.md`
 5. `docs/architecture/standards-and-adrs/versioning-strategy.md`
-6. `workflows/release-workflow.yaml`
+6. `workflows/release-workflow/release-workflow.yaml`
 7. `scripts/validation/validate_branch_context.py`
 8. `scripts/validation/validate_changelog_format.py`
 9. `.cursorrules` (RW trigger section only)

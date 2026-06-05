@@ -354,7 +354,7 @@ Or manually copy:
 
 **Files to Update:**
 - All `.md` files in `docs/documentation/Developer_Docs/vwmp/`
-- `workflows/release-workflow.yaml`
+- `workflows/release-workflow/release-workflow.yaml` (registry SoT; flat `workflows/release-workflow.yaml` is deprecated)
 - `scripts/validation/validate_branch_context.py`
 - `scripts/validation/validate_changelog_format.py`
 - `cursorrules-rw-trigger-section.md` (before adding to `.cursorrules`)
@@ -549,7 +549,7 @@ The Intake Workflow integrates with the Trigger-Aware Release Workflow (E2:S07):
 ### Documentation
 
 - **Agent Execution Guide:** `docs/documentation/Developer_Docs/vwmp/intake-workflow-agent-execution.md` - Complete step-by-step guide for AI agents
-- **Workflow Definition:** `workflows/intake-workflow.yaml` - YAML definition of the Intake Workflow structure
+- **Workflow Definition:** `workflows/intake-workflow/intake-workflow.yaml` - YAML definition (registry SoT; see [`workflow-registry.yaml`](workflows/workflow-registry.yaml))
 - **Trigger Integration:** See `docs/trigger-aware-rw-documentation.md` for trigger system details
 
 ### Integration Points
@@ -637,7 +637,7 @@ See `scripts/changelog/README.md` for complete cron setup instructions and confi
 ### Documentation
 
 - **CMW Scripts Documentation:** `scripts/changelog/README.md` - Complete CMW documentation, usage guide, and cron setup instructions
-- **Workflow Definition:** `workflows/changelog-management-workflow.yaml` - YAML definition of the CMW structure
+- **Workflow Definition:** `workflows/changelog-management-workflow/changelog-management-workflow.yaml` - YAML definition (registry SoT)
 - **CMW Scripts:** All scripts in `scripts/changelog/` directory
 
 ### Characteristics

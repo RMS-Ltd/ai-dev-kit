@@ -757,7 +757,7 @@ When all 15 steps are complete:
 - **Release Workflow:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Refactor Workflow:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/refactor-workflow-agent-execution.md`
 - **Migration Workflow:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/migration-workflow-agent-execution.md`
-- **Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/testing-workflow.yaml`
+- **Workflow YAML:** `packages/frameworks/workflow-mgt/workflows/testing-workflow/testing-workflow.yaml` (registry SoT)
 
 ---
 

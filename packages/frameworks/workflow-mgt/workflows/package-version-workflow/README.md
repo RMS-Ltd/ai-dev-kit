@@ -1,5 +1,7 @@
 # Package Version Workflow
 
+> **SoT:** This directory's `package-version-workflow.yaml` is the **registry/structural** definition. The flat `workflows/package-version-workflow.yaml` at the parent level is **deprecated** (E02:S13:T09).
+
 ## Overview
 
 The Package Version Workflow provides systematic package version management and updates with dependency analysis, compatibility checking, and automated version bumping. It ensures consistent version management across all project packages.

@@ -1,5 +1,7 @@
 # Migration Workflow
 
+> **SoT:** Agent execution follows [migration-workflow-agent-execution.md](../../KB/Documentation/Developer_Docs/vwmp/migration-workflow-agent-execution.md). This directory's `migration-workflow.yaml` is the **registry/structural** definition. The flat `workflows/migration-workflow.yaml` at the parent level is **deprecated** (E02:S13:T09).
+
 ## Overview
 
 The Migration Workflow provides a systematic approach to migration and data transfer tasks with comprehensive validation, rollback support, and documentation. It ensures safe, well-planned migrations with minimal risk and maximum reliability.

@@ -871,7 +871,7 @@ Without intelligent reasoning, this workflow cannot produce meaningful results.
 
 ## 📚 Related Documentation
 
-- **Workflow Definition:** `workflows/update-kanban-workflow.yaml`
+- **Workflow Definition:** `workflows/update-kanban-workflow/update-kanban-workflow.yaml` (registry SoT)
 - **Cursor Rules:** `cursorrules-ukw-trigger-section.md`
 - **Release Workflow:** `release-workflow-agent-execution.md`
 - **Kanban Governance:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`

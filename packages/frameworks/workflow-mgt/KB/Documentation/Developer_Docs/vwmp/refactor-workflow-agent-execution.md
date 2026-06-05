@@ -630,7 +630,7 @@ When all 13 steps complete successfully:
 
 - **Agent-Driven Execution:** `agent-driven-workflow-execution.md`
 - **Release Workflow:** `release-workflow-agent-execution.md` (canonical example)
-- **Workflow YAML:** `../../workflows/refactor-workflow.yaml`
+- **Workflow YAML:** `../../workflows/refactor-workflow/refactor-workflow.yaml` (registry SoT)
 
 ---
 

@@ -1598,7 +1598,7 @@ docs/Reviews/pir/Archive/Story-{N}/v{version}/
 - [PIR Workflow Planning](../../Analysis/PIR-workflow-planning.md) - Complete planning document
 - [Epic-Level PIR Design](../../Analysis/T02-epic-level-pir-workflow-design.md) - Epic-level design
 - [Story-Level PIR Design](../../Analysis/T03-story-level-pir-workflow-design.md) - Story-level design
-- [PIR Workflow YAML](../../workflows/pir-workflow.yaml) - Workflow definition
+- [PIR Workflow YAML](../../workflows/post-implementation-review/pir-workflow.yaml) - Workflow definition (registry SoT)
 - [PIR Templates](../../../docs/documentation/templates/) - Epic and Story PIR templates
 - [PIR-Kanban Integration Guide](pir-kanban-integration-guide.md) - Kanban integration patterns and examples
 - [PIR-Versioning Integration Guide](pir-versioning-integration-guide.md) - Versioning integration patterns and examples

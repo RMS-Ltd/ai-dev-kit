@@ -1271,7 +1271,7 @@ Automatically triggers Post-Implementation Review (PIR) workflow when Epic or St
 |-----------|------|----------|---------|-------------|
 | `epic_pir_always` | boolean | ❌ No | `true` | Always trigger PIR for completed Epics |
 | `story_pir_significance_criteria` | array | ❌ No | `[...]` | Criteria for Story significance evaluation |
-| `pir_workflow_path` | string | ❌ No | `packages/frameworks/workflow-mgt/workflows/pir-workflow.yaml` | Path to PIR workflow YAML |
+| `pir_workflow_path` | string | ❌ No | `packages/frameworks/workflow-mgt/workflows/post-implementation-review/pir-workflow.yaml` | Path to PIR workflow YAML (registry SoT) |
 | `kanban_root` | string | ❌ No | `docs/project-management/kanban` | Root path to Kanban documents |
 | `epic_doc_pattern` | string | ❌ No | `docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md` | Pattern for Epic document paths |
 | `story_doc_pattern` | string | ❌ No | `docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md` | Pattern for Story document paths |

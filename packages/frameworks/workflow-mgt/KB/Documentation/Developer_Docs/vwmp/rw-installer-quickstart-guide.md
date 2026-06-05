@@ -48,7 +48,7 @@ python scripts/install_release_workflow.py --mode c
 - Installer prompts for project-specific paths
 - Generates `rw-config.yaml` with your answers
 - Updates `.cursorrules` with RW trigger section
-- Patches `workflows/release-workflow.yaml`
+- Patches `workflows/release-workflow/release-workflow.yaml` (registry SoT)
 
 ### Step 3: Review Generated Config
 
@@ -167,7 +167,7 @@ cat rw-config.yaml
 grep -A 5 "RELEASE WORKFLOW" .cursorrules
 
 # Check patched workflow
-cat workflows/release-workflow.yaml | grep -A 3 "config:"
+cat workflows/release-workflow/release-workflow.yaml | grep -A 3 "config:"
 ```
 
 ### Step 5: Verify Paths Match Your Project
@@ -358,12 +358,12 @@ pip install pyyaml
 
 ### Issue: "Workflow file not found"
 
-**Cause:** `workflows/release-workflow.yaml` doesn't exist
+**Cause:** `workflows/release-workflow/release-workflow.yaml` doesn't exist
 
 **Solution:**
 ```bash
 # Copy workflow file
-cp /path/to/ai-dev-kit/packages/frameworks/workflow\ mgt/workflows/release-workflow.yaml workflows/
+cp /path/to/ai-dev-kit/packages/frameworks/workflow\ mgt/workflows/release-workflow/release-workflow.yaml workflows/release-workflow/
 # Re-run installer
 ```
 
@@ -396,7 +396,7 @@ After installation, verify:
 
 - [ ] `rw-config.yaml` exists and paths are correct
 - [ ] `.cursorrules` contains RW trigger section
-- [ ] `workflows/release-workflow.yaml` exists and uses config values
+- [ ] `workflows/release-workflow/release-workflow.yaml` exists and uses config values
 - [ ] Validation scripts exist in `scripts_path`
 - [ ] Version file exists at `version_file` path
 - [ ] CHANGELOG.md exists (or will be created by RW)

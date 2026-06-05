@@ -1,0 +1,11 @@
+{
+  "report_type": "rw_step_7_archive_completed",
+  "release_scope": "RW E02:S13:T09",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E02:S13:T09": {
+      "allowed": true,
+      "reason": "RW Step 7 terminal row removal; ledger entry in kanban-completed.md (v0.2.13.9+1); task doc COMPLETE"
+    }
+  }
+}

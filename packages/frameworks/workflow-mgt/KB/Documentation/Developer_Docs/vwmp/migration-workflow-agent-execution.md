@@ -673,7 +673,7 @@ When all 13 steps complete successfully:
 - **Agent-Driven Execution:** `agent-driven-workflow-execution.md`
 - **Release Workflow:** `release-workflow-agent-execution.md` (canonical example)
 - **Refactor Workflow:** `refactor-workflow-agent-execution.md`
-- **Workflow YAML:** `../../workflows/migration-workflow.yaml`
+- **Workflow YAML:** `../../workflows/migration-workflow/migration-workflow.yaml` (registry SoT)
 
 ---
 

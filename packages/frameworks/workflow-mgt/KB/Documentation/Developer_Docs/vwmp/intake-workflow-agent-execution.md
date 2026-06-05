@@ -778,7 +778,7 @@ python intake_workflow.py --fr FR-019.md FR-020.md FR-021.md
 ## 📚 Related Documentation
 
 - **Architecture Design:** `docs/Analysis/T01-intake-workflow-architecture-design.md`
-- **Workflow YAML:** `workflows/intake-workflow.yaml`
+- **Workflow YAML:** `workflows/intake-workflow/intake-workflow.yaml` (registry SoT)
 - **Release Workflow Guide:** `release-workflow-agent-execution.md`
 - **Trigger-Aware RW:** `trigger-aware-rw-documentation.md`
 - **E4:S10 Documentation:** Kanban framework agentic task creation

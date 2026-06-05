@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW E02:S13:T06 **v0.2.13.6+1**)
-**Version:** v0.2.13.6+1
+**Last Updated:** 2026-06-05 (RW E02:S13:T09 **v0.2.13.9+1**)
+**Version:** v0.2.13.9+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -24,8 +24,6 @@ housekeeping_policy: keep
 ## MoSCOW Prioritized In-Progress Tasks
 
 ### Must Have (M) - Critical Tasks
-
-- **E02:S13:T09** – FR-050 Workflows Directory Reorganization - 📋 TODO (HIGH, RC remediation GAP-STRUCT-001) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md) | [FR-050](fr-br/FR-050-workflows-directory-structure-reorganization.md) | [Story](epics/epic-02/story-13-workflow-management-package-implementation-review.md) | Last modified: 2026-06-05 14:00 UTC
 
 - **E02:S13:T10** – Kanban Transform Consolidation - 📋 TODO (HIGH, RC remediation GAP-INTG-001) | [Task](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) | [Story](epics/epic-02/story-13-workflow-management-package-implementation-review.md) | Last modified: 2026-06-05 14:00 UTC
 

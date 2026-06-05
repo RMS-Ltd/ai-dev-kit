@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # FR-050: Workflows Directory Structure Reorganization
 
-**Status:** 📋 **OPEN** (intake complete 2026-06-05)
+**Status:** ✅ **IMPLEMENTED** (v0.2.13.9+1 — E02:S13:T09)
 
 **Implementing Task:** [E02:S13:T09](../epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md) (filed from [E02:S13:T06](../epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) — GAP-WFMGT-STRUCT-001). **Not** [E06:S07:T107](../epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md); prior miswire corrected 2026-05-30 per [IPP-E6S7T107](../../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md).
 **Priority:** HIGH — RC remediation (was MEDIUM)  
 **Estimated Effort:** Medium  
 **Created:** 2026-03-09  
 **Last updated:** 2026-06-05  
-**Version:** v0.4.18.1+2  
+**Version:** v0.2.13.9+1  
 **Code:** E02:S13:T09
 
 ---

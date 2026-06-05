@@ -1,5 +1,7 @@
 # Refactor Workflow
 
+> **SoT:** Agent execution follows [refactor-workflow-agent-execution.md](../../KB/Documentation/Developer_Docs/vwmp/refactor-workflow-agent-execution.md). This directory's `refactor-workflow.yaml` is the **registry/structural** definition. The flat `workflows/refactor-workflow.yaml` at the parent level is **deprecated** (E02:S13:T09).
+
 ## Overview
 
 The Refactor Workflow provides a systematic approach to code refactoring and improvement tasks with validation, testing, and documentation integration. It ensures safe, well-tested code transformations while maintaining system integrity.

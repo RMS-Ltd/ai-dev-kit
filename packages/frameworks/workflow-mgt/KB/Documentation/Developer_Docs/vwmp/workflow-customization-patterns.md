@@ -774,10 +774,10 @@ steps:
 
 ### Example Workflows
 
-- **Release Workflow:** `workflows/release-workflow.yaml`
-- **Refactor Workflow:** `workflows/refactor-workflow.yaml`
-- **Migration Workflow:** `workflows/migration-workflow.yaml`
-- **Testing Workflow:** `workflows/testing-workflow.yaml`
+- **Release Workflow:** `workflows/release-workflow/release-workflow.yaml` (registry SoT)
+- **Refactor Workflow:** `workflows/refactor-workflow/refactor-workflow.yaml` (registry SoT)
+- **Migration Workflow:** `workflows/migration-workflow/migration-workflow.yaml` (registry SoT)
+- **Testing Workflow:** `workflows/testing-workflow/testing-workflow.yaml` (registry SoT)
 
 ### Example Execution Guides
 

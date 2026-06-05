@@ -1,5 +1,7 @@
 # Testing Workflow
 
+> **SoT:** Agent execution follows [testing-workflow-agent-execution.md](../../KB/Documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md). This directory's `testing-workflow.yaml` is the **registry/structural** definition. The flat `workflows/testing-workflow.yaml` at the parent level is **deprecated** (E02:S13:T09).
+
 ## Overview
 
 The Testing Workflow provides a systematic approach to creating, updating, and validating tests with comprehensive coverage analysis and quality assurance integration. It ensures robust testing practices across all development workflows.

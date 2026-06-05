@@ -138,6 +138,30 @@ If rollback is needed, the following steps would be required:
 
 ---
 
-**Migration Completed:** 2026-03-09  
-**Task:** T107 - Workflows Directory Structure Reorganization  
+**Migration Completed:** 2026-03-09 (T107)  
+**Flat stub deprecation completed:** 2026-06-05 (E02:S13:T09 / FR-050)
+
+## Flat YAML Deprecation Policy (E02:S13:T09)
+
+After nested subdirectories were created (T107), legacy flat copies at `workflows/*.yaml` remained as active duplicates. **E02:S13:T09** completes FR-050 by converting all flat copies to **deprecated redirect stubs** (T08 RW pattern):
+
+- **Authoritative SoT:** `workflows/{workflow-name}/{main-file}.yaml` per [`workflow-registry.yaml`](workflow-registry.yaml)
+- **Flat stubs:** Root-level `workflows/*.yaml` files contain `redirect.authoritative_file` and empty `steps: []` — do not edit for workflow semantics
+- **Discovery:** Always use registry `directory` + `main_file`; agent execution guides in `KB/Documentation/Developer_Docs/vwmp/` remain the behavioral SoT for RW/UKW/IPW
+
+| Flat stub (deprecated) | Nested SoT |
+| ---------------------- | ---------- |
+| `workflows/release-workflow.yaml` | `release-workflow/release-workflow.yaml` (T08) |
+| `workflows/intake-workflow.yaml` | `intake-workflow/intake-workflow.yaml` |
+| `workflows/package-version-workflow.yaml` | `package-version-workflow/package-version-workflow.yaml` |
+| `workflows/pir-workflow.yaml` | `post-implementation-review/pir-workflow.yaml` |
+| `workflows/migration-workflow.yaml` | `migration-workflow/migration-workflow.yaml` |
+| `workflows/testing-workflow.yaml` | `testing-workflow/testing-workflow.yaml` |
+| `workflows/refactor-workflow.yaml` | `refactor-workflow/refactor-workflow.yaml` |
+
+UKW, CMW, FHM, and ICW were nested-only (no flat duplicates).
+
+---
+
+**Task:** T107 (structure) · E02:S13:T09 (flat stub deprecation)  
 **Status:** ✅ Complete and Validated

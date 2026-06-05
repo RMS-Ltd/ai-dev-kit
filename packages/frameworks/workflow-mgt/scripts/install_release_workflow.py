@@ -5,7 +5,7 @@ RW Installer CLI
 Installs the Release Workflow (RW) into a target project by:
 1. Generating rw-config.yaml based on user answers
 2. Generating/updating .cursorrules RW trigger section
-3. Patching workflows/release-workflow.yaml to use config values
+3. Patching workflows/release-workflow/release-workflow.yaml to use config values
 
 Usage:
     python install_release_workflow.py [--dry-run] [--config CONFIG_FILE] [--mode MODE]
@@ -1218,7 +1218,7 @@ Brownfield (existing repo):
             install_warnings.append(result)
     else:
         print(f"\n⚠️  Workflow file not found: {workflow_path}")
-        print("   You may need to copy workflows/release-workflow.yaml to your project.")
+        print("   You may need to copy workflows/release-workflow/release-workflow.yaml to your project.")
         install_warnings.append("Workflow file not found for patching")
     
     print("\n" + "=" * 60)
