@@ -18,7 +18,6 @@ Output: chunked_<base>_part<N>.json for each chunk.
 from __future__ import annotations
 
 import json
-import re
 import sys
 from pathlib import Path
 

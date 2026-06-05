@@ -71,7 +71,9 @@ except ImportError:
 
 # Import canonical epic installer helper (fresh consumer installs)
 try:
-    from migrate_structure import install_canonical_epics_only  # type: ignore[attr-defined]
+    from migrate_structure import (
+        install_canonical_epics_only,  # type: ignore[attr-defined]
+    )
 except ImportError:
     # Fallback if running from different directory
     import importlib.util

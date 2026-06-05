@@ -22,7 +22,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
-from typing import Optional, Dict, Tuple, List
+from typing import Dict, List, Optional, Tuple
 
 try:
     import yaml
@@ -102,7 +102,6 @@ def get_version(config: Optional[Dict] = None):
         return None
     # Try to import and get the actual version value
     try:
-        import sys
         import importlib.util
         spec = importlib.util.spec_from_file_location("version", version_file)
         version_module = importlib.util.module_from_spec(spec)

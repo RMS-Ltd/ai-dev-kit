@@ -2,10 +2,10 @@
 
 from pathlib import Path
 
-import pytest
-
-from journal.rw_journal import RWJournal, RunEntry
-from journal.rollback_contract import RollbackContract, CompensationSurface, FORBIDDEN_COMMANDS
+from journal.rollback_contract import (
+    RollbackContract,
+)
+from journal.rw_journal import RWJournal
 
 
 class TestRollbackContract:

@@ -10,11 +10,11 @@ Story: Story 7 (Trigger-Aware Release Workflow)
 Task: Task 2 (Implement trigger registry)
 """
 
-import re
 import fnmatch
-from typing import Dict, List, Optional, Tuple
+import re
 from dataclasses import dataclass
 from enum import Enum
+from typing import Dict, List, Optional, Tuple
 
 
 class TriggerType(Enum):

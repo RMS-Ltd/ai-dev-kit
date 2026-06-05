@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import json
 import sys
 import tempfile
 from pathlib import Path
@@ -14,7 +13,6 @@ if str(KANBAN_DIR) not in sys.path:
     sys.path.insert(0, str(KANBAN_DIR))
 
 import stamp_authority as SA  # noqa: E402
-
 
 SAMPLE_BOARD = """\
 # Test Board

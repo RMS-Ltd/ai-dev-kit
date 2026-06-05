@@ -1,6 +1,5 @@
 """Collect stability and reliability metrics."""
 
-import re
 from pathlib import Path
 from typing import Dict
 

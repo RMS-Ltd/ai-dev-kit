@@ -25,8 +25,8 @@ if str(_version_dir) not in sys.path:
     sys.path.insert(0, str(_version_dir))
 
 from semver_converter import (  # noqa: E402
-    _find_mapping_entry,
     _ensure_task_touch_mode,
+    _find_mapping_entry,
     convert_version_string,
     get_rw_tag_info,
     get_semver_mapping_strategy,

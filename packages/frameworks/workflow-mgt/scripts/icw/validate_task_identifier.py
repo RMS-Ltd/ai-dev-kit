@@ -4,13 +4,14 @@ Simple validation script for ICW task identifier functionality
 Tests the core parsing and validation logic without full test suite
 """
 
-import sys
 import os
+import sys
 
 # Add the ICW module to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from icw_handler import ICWHandler
+
 
 def test_task_identifier_parsing():
     """Test task identifier parsing functionality"""
@@ -53,7 +54,6 @@ def test_cli_help():
     
     try:
         # Import and test main function help
-        from icw_handler import main
         import argparse
         
         # Test argument parser setup

@@ -15,9 +15,9 @@ Usage:
 """
 
 import re
-from pathlib import Path
-from typing import Dict, List, Optional, Set
 from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Optional, Set
 
 
 @dataclass

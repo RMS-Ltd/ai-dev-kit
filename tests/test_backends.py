@@ -2,9 +2,10 @@
 Unit tests for backend implementations.
 """
 
-import pytest
 from pathlib import Path
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
+
+import pytest
 
 from cli.backends.base import BackendBase
 from cli.backends.git_submodule import GitSubmoduleBackend

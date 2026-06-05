@@ -4,7 +4,7 @@ Custom exceptions for the ai-dev-kit CLI tool.
 Provides structured error handling with recovery suggestions.
 """
 
-from typing import Optional, List
+from typing import List, Optional
 
 
 class AIDevKitError(Exception):

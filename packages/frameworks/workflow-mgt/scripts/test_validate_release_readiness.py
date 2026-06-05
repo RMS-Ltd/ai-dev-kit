@@ -27,7 +27,6 @@ import unittest
 from pathlib import Path
 from typing import Tuple
 
-
 SCRIPT_DIR = Path(__file__).resolve().parent
 VALIDATOR_PATH = SCRIPT_DIR / "validate_release_readiness.py"
 

@@ -3,9 +3,9 @@
 import json
 from pathlib import Path
 
-from journal.rw_journal import RWJournal, JOURNAL_SCHEMA_VERSION
-from journal.recovery_report import RecoveryReport
 from journal.forensic_log import AtomicCommandRecord
+from journal.recovery_report import RecoveryReport
+from journal.rw_journal import JOURNAL_SCHEMA_VERSION, RWJournal
 
 
 class TestJournalSchemaV1:

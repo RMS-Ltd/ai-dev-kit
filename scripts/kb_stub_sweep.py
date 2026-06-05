@@ -45,7 +45,6 @@ def find_repo_path(title: str) -> Path | None:
         prefix, num, rest = fr_match.groups()
         num = num.zfill(3)
         slug = slugify(rest)
-        pattern = f"{prefix}-{num}-{slug}.md"
         candidates = list(PM_ROOT.glob(f"fr-br/{prefix}-{num}-*.md"))
         if candidates:
             return candidates[0]

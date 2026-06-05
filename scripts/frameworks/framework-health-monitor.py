@@ -19,20 +19,30 @@ Options:
 import argparse
 import json
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, Optional
 
 # Add project root to path for imports
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
+from scripts.frameworks.collectors.compatibility_status import (
+    collect_compatibility_status_metrics,
+)
+from scripts.frameworks.collectors.dependency_health import (
+    collect_dependency_health_metrics,
+)
+from scripts.frameworks.collectors.documentation_quality import (
+    collect_documentation_quality_metrics,
+)
+from scripts.frameworks.collectors.maintenance_activity import (
+    collect_maintenance_activity_metrics,
+)
+from scripts.frameworks.collectors.stability_reliability import (
+    collect_stability_reliability_metrics,
+)
 from scripts.frameworks.collectors.usage_adoption import collect_usage_adoption_metrics
-from scripts.frameworks.collectors.maintenance_activity import collect_maintenance_activity_metrics
-from scripts.frameworks.collectors.documentation_quality import collect_documentation_quality_metrics
-from scripts.frameworks.collectors.dependency_health import collect_dependency_health_metrics
-from scripts.frameworks.collectors.compatibility_status import collect_compatibility_status_metrics
-from scripts.frameworks.collectors.stability_reliability import collect_stability_reliability_metrics
 from scripts.frameworks.utils import (
     calculate_dimension_score,
     calculate_overall_health_score,

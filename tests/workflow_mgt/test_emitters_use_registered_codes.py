@@ -2,11 +2,9 @@
 
 from __future__ import annotations
 
+import importlib.util
 import re
 from pathlib import Path
-
-import importlib.util
-import sys
 
 _REPO = Path(__file__).resolve().parents[2]
 _MOD_PATH = _REPO / "packages/frameworks/workflow-mgt/scripts/adk_install_errors.py"

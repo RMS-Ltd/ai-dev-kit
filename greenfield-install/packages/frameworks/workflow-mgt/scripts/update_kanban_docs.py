@@ -22,12 +22,12 @@ Usage:
 """
 
 import argparse
-import json
-from dataclasses import dataclass, field
 import hashlib
+import json
 import os
 import re
 import sys
+from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -40,8 +40,7 @@ except ImportError:
 _KANBAN_SCRIPT_DIR = Path(__file__).resolve().parent / "kanban"
 if str(_KANBAN_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_KANBAN_SCRIPT_DIR))
-from est_format import format_est_reference, normalize_est_inline_in_text  # noqa: E402
-
+from est_format import format_est_reference  # noqa: E402
 
 # Recovery playbooks for common error scenarios (Step 16-17 from T01 analysis)
 RECOVERY_PLAYBOOKS = {

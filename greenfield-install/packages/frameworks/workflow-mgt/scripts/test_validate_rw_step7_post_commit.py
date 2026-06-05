@@ -12,14 +12,12 @@ from __future__ import annotations
 
 import importlib.util
 import json
-import os
 import shutil
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
 from typing import Tuple
-
 
 THIS_DIR = Path(__file__).resolve().parent
 VALIDATOR_PATH = THIS_DIR / "validate_rw_step7_post_commit.py"

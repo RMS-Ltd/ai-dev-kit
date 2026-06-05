@@ -15,7 +15,7 @@ import argparse
 import shutil
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import List, Optional, Tuple
 
 
 def sync_file(

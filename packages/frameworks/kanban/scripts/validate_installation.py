@@ -14,15 +14,12 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import List, Optional, Tuple
 
 from contamination_detector import scan_kanban_tree
 
-import sys
-
 sys.path.insert(0, str(Path(__file__).parent))
 import kanban_paths as kp
-
 
 # Canonical epic range: 1-23
 CANONICAL_EPIC_MIN = 1
@@ -209,7 +206,7 @@ class InstallationValidator:
             self.project_root / "src" / "fynd_deals" / "version.py",
         ]
         
-        canonical_paths = [
+        [
             self.project_root / "src" / "{project}" / "version.py",  # Template
         ]
         

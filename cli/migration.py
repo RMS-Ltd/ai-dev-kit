@@ -4,13 +4,12 @@ Migration utilities for converting copy-paste frameworks to dependencies.
 Detects copied frameworks and converts them to dependency-based installations.
 """
 
-import re
-from pathlib import Path
-from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Optional, Tuple
 
-from cli.utils import print_info, print_warning, print_error, get_project_root
 from cli.config import Config
+from cli.utils import get_project_root, print_info
 
 
 @dataclass

@@ -10,7 +10,7 @@ Task: E8:S02:T01 - Create validator framework
 
 import sys
 from pathlib import Path
-from typing import Tuple, List
+from typing import List, Tuple
 
 # Add validators directory to path
 validators_path = Path(__file__).parent.parent
@@ -19,11 +19,11 @@ if str(validators_path) not in sys.path:
 
 from validators.base import (
     BaseValidator,
-    ValidatorConfig,
-    ValidationResult,
-    ValidationStatus,
     ValidationIssue,
-    ValidationSeverity
+    ValidationResult,
+    ValidationSeverity,
+    ValidationStatus,
+    ValidatorConfig,
 )
 
 

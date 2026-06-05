@@ -10,17 +10,16 @@ Story: Story 7 (Trigger-Aware Release Workflow)
 Task: Task 6 (Integrate with agentic task creation workflow)
 """
 
-import sys
 import logging
+import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Any, Dict, List, Optional
 
 # Add kanban scripts to path
 kanban_scripts_path = Path(__file__).parent.parent.parent / "kanban" / "scripts"
 sys.path.insert(0, str(kanban_scripts_path))
 
 from agentic_task_workflow import AgenticTaskWorkflow, WorkflowResult
-
 
 logger = logging.getLogger(__name__)
 

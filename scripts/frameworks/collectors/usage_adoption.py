@@ -1,6 +1,5 @@
 """Collect usage and adoption metrics."""
 
-from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict
 
@@ -16,7 +15,6 @@ def collect_usage_adoption_metrics(
     Note: Many of these metrics require manual tracking or external data sources.
     This implementation provides placeholders and basic automated metrics.
     """
-    framework_name = framework_path.name
     
     # TODO: These metrics require manual tracking or external data sources
     # For now, we provide placeholders

@@ -14,15 +14,15 @@ sys.path.insert(0, str(WORKFLOW_MGT_SCRIPTS))
 
 # Import build_package functions
 from build_package import (
-    validate_framework_name,
-    validate_version,
-    find_framework_directory,
-    validate_framework_structure,
     collect_framework_files,
-    create_tar_gz_archive,
     compute_sha256_hash,
     create_hash_file,
+    create_tar_gz_archive,
+    find_framework_directory,
     update_manifest_hash,
+    validate_framework_name,
+    validate_framework_structure,
+    validate_version,
 )
 from framework_install_slug import framework_install_slug
 

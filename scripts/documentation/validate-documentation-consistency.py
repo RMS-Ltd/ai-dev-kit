@@ -9,14 +9,13 @@ Usage:
     python3 validate-documentation-consistency.py --path docs/ --check version
 """
 
-import os
-import sys
-import re
-import json
 import argparse
-from pathlib import Path
-from typing import Dict, List, Set, Optional
+import json
+import re
+import sys
 from collections import defaultdict
+from pathlib import Path
+from typing import Dict, List, Optional
 
 # MoSCOW spacing (UXR-005 / E07:S01:T09): delegated to validate_kanban_moscow_spacing.py
 # Version pattern

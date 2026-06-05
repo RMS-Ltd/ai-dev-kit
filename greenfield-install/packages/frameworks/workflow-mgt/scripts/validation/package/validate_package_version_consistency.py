@@ -12,10 +12,10 @@ Example:
     python validate_package_version_consistency.py packages/frameworks/workflow\ mgt
 """
 
-import sys
 import re
+import sys
 from pathlib import Path
-from typing import Dict, Optional, Tuple, List
+from typing import List, Optional, Tuple
 
 
 def extract_version_from_readme(readme_path: Path) -> Optional[str]:

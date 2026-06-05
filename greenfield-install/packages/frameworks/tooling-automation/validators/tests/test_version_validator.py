@@ -17,12 +17,12 @@ if str(validators_path) not in sys.path:
 
 # Import from modules (validators_path is in sys.path)
 try:
+    from base import ValidatorConfig
     from framework.version_validator import VersionValidator
-    from base import ValidatorConfig, ValidationStatus
 except ImportError:
     # Fallback: try package import
+    from validators.base import ValidatorConfig
     from validators.framework.version_validator import VersionValidator
-    from validators.base import ValidatorConfig, ValidationStatus
 
 
 def test_version_validator_valid_version():

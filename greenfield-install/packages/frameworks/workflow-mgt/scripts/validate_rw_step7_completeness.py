@@ -64,8 +64,7 @@ import sys
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Set, Tuple
-
+from typing import Dict, List, Optional, Tuple
 
 DEFAULT_REPORT_DIR_REL = (
     "docs/changelog-and-release-notes/changelog-archive/four-surface-reports"

@@ -6,8 +6,6 @@ import tempfile
 from pathlib import Path
 from unittest import mock
 
-import pytest
-
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCRIPT_PATH = REPO_ROOT / "packages" / "frameworks" / "workflow-mgt" / "scripts" / "install_release_workflow.py"
 INSTALL_DOC = REPO_ROOT / "INSTALL_IN_YOUR_PROJECT.md"

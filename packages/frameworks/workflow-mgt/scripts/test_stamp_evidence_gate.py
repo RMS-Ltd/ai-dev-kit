@@ -23,7 +23,6 @@ import sys
 from pathlib import Path
 from typing import Tuple
 
-
 THIS_DIR = Path(__file__).resolve().parent
 TARGET = THIS_DIR / "update_kanban_docs.py"
 

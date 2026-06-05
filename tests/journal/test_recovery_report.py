@@ -3,9 +3,8 @@
 from pathlib import Path
 
 import pytest
-
+from journal.recovery_report import RECOVERY_SCHEMA_VERSION, RecoveryReport
 from journal.rw_journal import RWJournal
-from journal.recovery_report import RecoveryReport, RECOVERY_SCHEMA_VERSION
 
 
 class TestRecoveryReport:

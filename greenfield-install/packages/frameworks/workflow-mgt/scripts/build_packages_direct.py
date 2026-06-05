@@ -13,18 +13,17 @@ sys.path.insert(0, str(SCRIPT_DIR))
 
 # Import build functions
 from build_package import (
-    validate_framework_name,
-    validate_version,
-    find_framework_directory,
-    validate_framework_structure,
+    add_manifest_to_archive,
     collect_framework_files,
-    extract_framework_metadata,
-    generate_manifest_json,
-    create_tar_gz_archive,
     compute_sha256_hash,
     create_hash_file,
+    create_tar_gz_archive,
+    find_framework_directory,
+    generate_manifest_json,
     update_manifest_hash,
-    add_manifest_to_archive
+    validate_framework_name,
+    validate_framework_structure,
+    validate_version,
 )
 
 FRAMEWORKS_ROOT = SCRIPT_DIR.parent.parent

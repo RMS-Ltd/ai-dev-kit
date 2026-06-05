@@ -19,7 +19,6 @@ if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
 from stamp_authority import (  # noqa: E402
-    active_board_paths,
     apply_backfill_to_board,
     homogeneity_clusters,
     homogeneity_threshold_from_config,

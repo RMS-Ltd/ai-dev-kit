@@ -9,21 +9,16 @@ Task: E8:S01:T02 - Build template-based generators
 """
 
 import sys
-from pathlib import Path
-from typing import Tuple, List, Dict, Any
 from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Tuple
 
 # Add generators directory to path
 generators_path = Path(__file__).parent
 if str(generators_path) not in sys.path:
     sys.path.insert(0, str(generators_path))
 
-from generators.base import (
-    TemplateBasedGenerator,
-    GeneratorConfig,
-    GeneratorResult,
-    GeneratorStatus
-)
+from generators.base import GeneratorResult, GeneratorStatus, TemplateBasedGenerator
 
 
 class KanbanTemplateGenerator(TemplateBasedGenerator):

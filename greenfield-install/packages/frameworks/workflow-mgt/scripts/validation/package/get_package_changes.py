@@ -12,10 +12,10 @@ Example:
     python get_package_changes.py packages/frameworks/workflow\ mgt
 """
 
-import sys
 import subprocess
+import sys
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, Optional
 
 
 def get_git_diff(package_path: Path) -> Optional[str]:

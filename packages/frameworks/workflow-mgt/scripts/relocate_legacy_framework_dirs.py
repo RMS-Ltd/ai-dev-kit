@@ -19,7 +19,7 @@ _SCRIPT_DIR = Path(__file__).resolve().parent
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
-from framework_install_slug import LEGACY_SOURCE_DIR_TO_SLUG, framework_install_slug
+from framework_install_slug import LEGACY_SOURCE_DIR_TO_SLUG
 
 
 def parse_args() -> argparse.Namespace:

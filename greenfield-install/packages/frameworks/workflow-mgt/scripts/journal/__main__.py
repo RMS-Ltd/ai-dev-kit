@@ -15,8 +15,8 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-from .rw_journal import RWJournal
 from .recovery_report import RecoveryReport
+from .rw_journal import RWJournal
 
 
 def _find_journal_file(run_id: str, journal_dir: Path) -> Optional[Path]:

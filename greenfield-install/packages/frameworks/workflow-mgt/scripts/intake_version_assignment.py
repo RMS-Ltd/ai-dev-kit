@@ -14,11 +14,11 @@ Usage:
     result = version_assignment.assign_version(intake_decision, created_tasks, is_new_story, is_new_task)
 """
 
-import sys
 import re
-from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+import sys
 from dataclasses import dataclass
+from pathlib import Path
+from typing import Dict, List, Optional
 
 # Import intake components
 try:
@@ -192,7 +192,7 @@ class IntakeVersionAssignment:
             match = re.search(pattern, content)
             if match:
                 return int(match.group(1))
-        except Exception as e:
+        except Exception:
             # Return default on error
             pass
         

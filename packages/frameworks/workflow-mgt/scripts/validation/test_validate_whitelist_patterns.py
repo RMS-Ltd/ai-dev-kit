@@ -84,6 +84,7 @@ RW_FIXTURE_COMMANDS = [
 
 def test_rw_fixtures_match_validation_pattern():
     import re
+
     import yaml
 
     catalog_path = REPO_ROOT / ".cursor" / "whitelist-patterns.yaml"

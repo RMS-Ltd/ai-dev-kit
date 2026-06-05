@@ -17,12 +17,12 @@ if str(validators_path) not in sys.path:
 
 # Import from modules (validators_path is in sys.path)
 try:
+    from base import ValidatorConfig
     from framework.kanban_validator import KanbanValidator
-    from base import ValidatorConfig, ValidationStatus
 except ImportError:
     # Fallback: try package import
+    from validators.base import ValidatorConfig
     from validators.framework.kanban_validator import KanbanValidator
-    from validators.base import ValidatorConfig, ValidationStatus
 
 
 def test_kanban_validator_valid_structure():

@@ -3,11 +3,11 @@
 Validate workflow documentation structure and compliance.
 """
 
-import os
 import re
 import sys
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import Any, Dict, List
+
 
 class WorkflowDocValidator:
     def __init__(self, workflow_dir: Path):

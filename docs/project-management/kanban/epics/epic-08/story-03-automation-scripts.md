@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.11+0 – Kanban documentation setup)
-**Version:** v0.8.3.11+0
+**Last updated:** 2026-06-05 (v0.8.3.12+1 – E08:S03:T12 wave-1 release)
+**Version:** v0.8.3.12+1
 **Code:** E8S03
 
 ---
@@ -47,7 +47,7 @@ housekeeping_policy: keep
 
 - [x] **E08:S03:T11 – CodeQL missing workflow permissions (BR-098)** — ✅ COMPLETE (**v0.8.3.11+0** doc release; alerts #1–#3 fixed on `main`) — [Task doc](story-03-automation-scripts/T11-codeql-missing-workflow-permissions-br098.md) | [BR-098](../../fr-br/BR-098-codeql-missing-workflow-permissions.md)
 
-- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 📋 TODO (**v0.8.3.12+0** kanban init; 560 open findings) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md)
+- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 🔄 IN PROGRESS (**v0.8.3.12+1** wave-1 ruff remediation; dashboard re-scan pending) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
 - [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 📋 TODO (**v0.8.3.13+0** kanban init; 133 open findings; **Needs Improvement**) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md)
 

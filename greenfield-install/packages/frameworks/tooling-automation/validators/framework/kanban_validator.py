@@ -22,21 +22,21 @@ if str(validators_path) not in sys.path:
 try:
     from base import (
         BaseValidator,
-        ValidatorConfig,
-        ValidationResult,
-        ValidationStatus,
         ValidationIssue,
-        ValidationSeverity
+        ValidationResult,
+        ValidationSeverity,
+        ValidationStatus,
+        ValidatorConfig,
     )
 except ImportError:
     # Fallback: try package import
     from validators.base import (
         BaseValidator,
-        ValidatorConfig,
-        ValidationResult,
-        ValidationStatus,
         ValidationIssue,
-        ValidationSeverity
+        ValidationResult,
+        ValidationSeverity,
+        ValidationStatus,
+        ValidatorConfig,
     )
 
 try:

@@ -14,8 +14,12 @@ if str(_SCRIPT_DIR) not in sys.path:
 
 from est_format import format_est_reference  # noqa: E402
 from extract_embedded_tasks import (  # noqa: E402
-    EmbeddedTask, _TASK_HEADER_RE, extract_embedded_tasks, task_doc_filename,
+    _TASK_HEADER_RE,
+    EmbeddedTask,
+    extract_embedded_tasks,
+    task_doc_filename,
 )
+
 _CHECKLIST_TASK_RE = re.compile(r"^- \[[ x]\] \*\*E(\d+):S(\d+):T(\d+)\b")
 _TASK_LINK_RE = re.compile(r"\(`T\d{2}-")
 

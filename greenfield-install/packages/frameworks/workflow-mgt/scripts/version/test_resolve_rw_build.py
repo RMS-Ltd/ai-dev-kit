@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """Tests for resolve_rw_build.py (BR-097 / E02:S01:T24)."""
 
-import json
 import os
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
-
-import pytest
 
 script_dir = Path(__file__).resolve().parent
 validation_dir = script_dir.parent / "validation"

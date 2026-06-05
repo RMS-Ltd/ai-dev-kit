@@ -13,7 +13,7 @@ Example:
 """
 
 import sys
-from typing import Tuple, Optional, List
+from typing import Optional, Tuple
 
 
 def parse_version(version: str) -> Tuple[int, int, int]:

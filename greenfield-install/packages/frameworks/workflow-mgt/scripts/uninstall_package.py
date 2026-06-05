@@ -25,9 +25,10 @@ import json
 import shutil
 import subprocess
 import sys
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
-from datetime import datetime
+
 import yaml
 
 
@@ -94,11 +95,11 @@ class PackageUninstaller:
         
         # Step 4: Uninstall based on backend
         if self.recover:
-            result = self._recover_installation(package_info)
+            self._recover_installation(package_info)
         elif self.rollback:
-            result = self._rollback_package(package_info)
+            self._rollback_package(package_info)
         else:
-            result = self._uninstall_package(package_info)
+            self._uninstall_package(package_info)
         
         # Step 5: Verify cleanup
         verification = self._verify_cleanup(package_info)

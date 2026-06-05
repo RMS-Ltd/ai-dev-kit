@@ -13,14 +13,13 @@ Example:
 
 import argparse
 import hashlib
-import os
 import sys
 import tarfile
+import tempfile
 from pathlib import Path
 from typing import Optional
 
 import requests
-import tempfile
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
 if str(_SCRIPT_DIR) not in sys.path:

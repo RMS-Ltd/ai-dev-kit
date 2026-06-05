@@ -2,8 +2,6 @@
 
 from pathlib import Path
 
-import pytest
-
 from workflow_executor import WorkflowDefinition, WorkflowExecutor, WorkflowStatus
 
 

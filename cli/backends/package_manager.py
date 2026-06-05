@@ -4,13 +4,13 @@ Package manager backend implementation for framework dependency management.
 Supports npm and pip package managers for installing frameworks from registries.
 """
 
-import subprocess
 import json
+import subprocess
 from pathlib import Path
-from typing import Optional, Dict, Any, List
+from typing import Any, Dict, Optional
 
 from cli.backends.base import BackendBase
-from cli.utils import print_error, print_success, print_info, print_warning
+from cli.utils import print_error, print_info, print_success, print_warning
 
 
 class PackageManagerBackend(BackendBase):

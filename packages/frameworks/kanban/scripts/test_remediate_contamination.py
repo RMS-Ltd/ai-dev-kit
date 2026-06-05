@@ -32,7 +32,6 @@ def test_remediate_archive_moves_files(tmp_path: Path, monkeypatch) -> None:
     _write(contaminated_file, "# Epic 6: Framework Management\n")
 
     # Ensure detector sees file as contaminated by overriding scan_kanban_tree
-    from remediate_contamination import scan_kanban_tree as real_scan
 
     def _fake_scan(root):
         return [
@@ -58,7 +57,6 @@ def test_remediate_delete_removes_files(tmp_path: Path, monkeypatch) -> None:
     contaminated_file = kanban_root / "epics" / "epic-06" / "epic-06.md"
     _write(contaminated_file, "# Epic 6: Framework Management\n")
 
-    from remediate_contamination import scan_kanban_tree as real_scan
 
     def _fake_scan(root):
         return [

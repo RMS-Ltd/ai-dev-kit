@@ -5,8 +5,6 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-import pytest
-
 _KANBAN_DIR = Path(__file__).resolve().parent / "kanban"
 if str(_KANBAN_DIR) not in sys.path:
     sys.path.insert(0, str(_KANBAN_DIR))

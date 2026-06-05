@@ -4,18 +4,17 @@ Test suite for Implementation Cycle Workflow (ICW) Handler
 Tests ICW functionality including task identifier validation and planning mode requirements
 """
 
-import unittest
-import sys
 import os
+import sys
 import tempfile
-import json
-from unittest.mock import patch, MagicMock
+import unittest
 from pathlib import Path
 
 # Add the ICW module to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from icw_handler import ICWHandler
+
 
 class TestICTaskIdentifierValidation(unittest.TestCase):
     """Test task identifier parsing and validation functionality"""

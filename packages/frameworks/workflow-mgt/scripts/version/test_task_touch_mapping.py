@@ -9,13 +9,14 @@ Tests the new task-touch derived mapping mode to ensure:
 4. Configuration integration
 """
 
-import pytest
-import tempfile
 import shutil
-import yaml
 import subprocess
-from pathlib import Path
 import sys
+import tempfile
+from pathlib import Path
+
+import pytest
+import yaml
 
 # Add the script directory to the path so we can import the converter
 script_dir = Path(__file__).parent
@@ -24,15 +25,13 @@ sys.path.insert(0, str(script_dir))
 from semver_converter import (
     convert_internal_to_semver_task_touch,
     convert_version_string,
-    get_rw_tag_info,
     get_epic_count,
-    set_epic_count,
+    get_rw_tag_info,
+    get_semver_mapping_strategy,
     get_task_touch_counter,
     increment_task_touch_counter,
-    load_rw_config,
-    get_semver_mapping_strategy,
-    load_semver_registry,
-    save_semver_registry
+    save_semver_registry,
+    set_epic_count,
 )
 
 

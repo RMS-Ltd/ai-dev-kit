@@ -15,7 +15,7 @@ import argparse
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import List, Tuple
 
 
 def find_cross_references(content: str, target_path: Path, project_root: Path) -> List[Tuple[int, str, str]]:
@@ -30,11 +30,6 @@ def find_cross_references(content: str, target_path: Path, project_root: Path) -
     target_name = target_path.name
     
     # Markdown link patterns
-    patterns = [
-        (rf'\[([^\]]+)\]\(([^\)]+)\)', 'markdown_link'),
-        (rf'`([^`]+)`', 'code_reference'),
-        (rf'`([^`]+)`', 'path_reference'),
-    ]
     
     lines = content.split('\n')
     for line_num, line in enumerate(lines, 1):

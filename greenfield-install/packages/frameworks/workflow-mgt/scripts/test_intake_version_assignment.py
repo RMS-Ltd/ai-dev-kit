@@ -9,7 +9,6 @@ Usage:
 """
 
 import sys
-import tempfile
 from pathlib import Path
 
 # Add scripts to path
@@ -17,8 +16,11 @@ scripts_path = Path(__file__).parent
 if str(scripts_path) not in sys.path:
     sys.path.insert(0, str(scripts_path))
 
-from intake_version_assignment import IntakeVersionAssignment, IntakeVersionAssignmentResult
 from intake_decision_flow import IntakeDecision
+from intake_version_assignment import (
+    IntakeVersionAssignment,
+    IntakeVersionAssignmentResult,
+)
 
 
 def test_version_assignment_new_task():

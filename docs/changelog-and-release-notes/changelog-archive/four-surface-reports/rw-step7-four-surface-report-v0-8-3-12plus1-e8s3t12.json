@@ -1,0 +1,97 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic Last updated: 2026-06-05 (v0.8.3.12+1 – E08:S03:T12 wave-1 release)"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/epic-08.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "Story checklist: E08:S03:T12 IN PROGRESS v0.8.3.12+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated board Last Updated: 2026-06-05 (RW: E08:S03:T12)",
+        "Updated board Version: v0.8.3.12+1"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 12,
+    "task_id": "E8:S3:T12",
+    "version_string": "v0.8.3.12+1"
+  },
+  "stamp_evidence": {
+    "mode": "preserve_row_stamps",
+    "notes": "E08:S03:T12 row stamp preserved at 2026-06-05 11:42 UTC per FR-097; status text updated only."
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 1,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "BR-099 status IN PROGRESS; attempted fix v0.8.3.12+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "E08:S03:T12 row status TODO → IN PROGRESS; row stamp preserved"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Task status IN PROGRESS; version v0.8.3.12+1; baseline/post-wave manifests"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-05 11:55:14 UTC"
+}

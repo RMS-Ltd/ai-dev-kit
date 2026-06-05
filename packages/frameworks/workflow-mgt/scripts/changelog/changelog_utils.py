@@ -6,11 +6,10 @@ Common utilities for CMW scripts: version parsing, entry extraction, date parsin
 """
 
 import re
-from datetime import datetime, timedelta
 import sys
+from datetime import datetime
 from pathlib import Path
-from typing import Tuple, List, Optional, Dict, NamedTuple
-import yaml
+from typing import Dict, List, NamedTuple, Optional, Tuple
 
 # Allow importing shared loader from parent `scripts/` directory.
 _SCRIPTS_DIR = Path(__file__).resolve().parent.parent

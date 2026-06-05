@@ -5,8 +5,8 @@ from __future__ import annotations
 import subprocess
 import sys
 from pathlib import Path
-import yaml
 
+import yaml
 
 SCRIPT = Path(__file__).resolve().parent / "validate_branch_context.py"
 

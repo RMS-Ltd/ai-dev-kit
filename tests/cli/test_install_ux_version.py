@@ -21,10 +21,14 @@ if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
 import install_ux_version  # noqa: E402
-from cli.adk_version_display import get_cli_version_string, print_session_banner  # noqa: E402
+
+from cli.adk_version_display import (  # noqa: E402
+    get_cli_version_string,
+    print_session_banner,
+)
 from cli.commands.install import InstallCommand  # noqa: E402
 from cli.config import Config  # noqa: E402
-from cli.logging import create_install_logger, close_install_logger  # noqa: E402
+from cli.logging import close_install_logger, create_install_logger  # noqa: E402
 
 
 @pytest.fixture(autouse=True)
@@ -102,7 +106,6 @@ class TestInstallCommandBanner:
             os.chdir(original_cwd)
 
     def test_dry_run_subprocess_shows_banner(self, temp_config_file: Path):
-        project_root = temp_config_file.parent
         env = os.environ.copy()
         env["PYTHONPATH"] = str(REPO_ROOT)
         result = subprocess.run(

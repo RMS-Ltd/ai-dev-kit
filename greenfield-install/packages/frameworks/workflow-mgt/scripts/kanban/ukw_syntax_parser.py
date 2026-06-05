@@ -40,11 +40,8 @@ Usage:
 """
 
 import re
-from typing import List, Tuple, Optional, Set
 from pathlib import Path
-import subprocess
-import json
-from datetime import datetime, timezone
+from typing import List, Optional, Tuple
 
 
 def run_ukw_mode(mode: str, kanban_root: Optional[Path] = None) -> dict:
@@ -92,12 +89,12 @@ def run_moscow_prioritization_mode(kanban_root: Path) -> dict:
         board_path = kanban_root / "kboard.md"
         if not board_path.exists():
             board_path = kanban_root / "kboard.md"
-        completed_path = kanban_root / "kanban-completed.md"
+        kanban_root / "kanban-completed.md"
         
         # Read current board
         if board_path.exists():
             with open(board_path, 'r') as f:
-                board_content = f.read()
+                f.read()
             
             # Find completed tasks in active sections and move them
             # This is a simplified implementation - in practice would need
@@ -398,7 +395,7 @@ def find_tasks_in_story(epic: int, story: int, kanban_root: Path) -> List[Tuple[
         List of (epic, story, task) tuples
     """
     tasks = []
-    story_dir = kanban_root / f"epics/Epic-{epic}/Story-{story:03d}-*"
+    kanban_root / f"epics/Epic-{epic}/Story-{story:03d}-*"
     
     # Find story directory
     story_dirs = list(kanban_root.glob(f"epics/Epic-{epic}/Story-{story:03d}-*"))
@@ -412,7 +409,7 @@ def find_tasks_in_story(epic: int, story: int, kanban_root: Path) -> List[Tuple[
     story_path = story_dirs[0]
     
     # Find all task documents in story directory
-    task_pattern = story_path / "T*-*.md"
+    story_path / "T*-*.md"
     task_files = list(story_path.glob("T*-*.md"))
     
     for task_file in task_files:

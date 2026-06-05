@@ -17,11 +17,10 @@ from pathlib import Path
 scripts_dir = Path(__file__).parent
 sys.path.insert(0, str(scripts_dir))
 
-from trigger_registry import detect_triggers, TriggerRegistry
+from deliverable_processor import Deliverable, DeliverableProcessor, DeliverableType
 from trigger_integration import TriggerIntegration
+from trigger_registry import detect_triggers
 from workflow_orchestrator import WorkflowOrchestrator
-from deliverable_processor import DeliverableProcessor, Deliverable, DeliverableType
-from agentic_task_workflow_integration import create_tasks_from_commit
 
 
 def test_trigger_detection():

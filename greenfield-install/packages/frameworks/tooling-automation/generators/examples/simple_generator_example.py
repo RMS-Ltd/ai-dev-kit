@@ -10,7 +10,7 @@ Task: E8:S01:T01 - Create generator framework
 
 import sys
 from pathlib import Path
-from typing import Tuple, List
+from typing import List, Tuple
 
 # Add generators directory to path
 generators_path = Path(__file__).parent.parent
@@ -21,7 +21,7 @@ from generators.base import (
     BaseGenerator,
     GeneratorConfig,
     GeneratorResult,
-    GeneratorStatus
+    GeneratorStatus,
 )
 
 

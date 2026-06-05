@@ -2,11 +2,12 @@
 Pytest configuration and fixtures for ai-dev-kit CLI tests.
 """
 
-import pytest
-import tempfile
 import shutil
+import tempfile
 from pathlib import Path
 from typing import Generator
+
+import pytest
 
 
 @pytest.fixture
@@ -56,7 +57,6 @@ def mock_backend():
     Returns:
         Mock backend instance
     """
-    from unittest.mock import MagicMock
     from cli.backends.base import BackendBase
     
     class MockBackend(BackendBase):

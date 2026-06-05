@@ -15,9 +15,9 @@ Usage:
 """
 
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-from dataclasses import dataclass
 
 # Import E4:S10 components
 try:
@@ -26,8 +26,8 @@ try:
     if str(kanban_scripts_path) not in sys.path:
         sys.path.insert(0, str(kanban_scripts_path))
     
-    from fr_br_analyzer import FRBRAnalyzer, FRBRAnalysis
     from epic_story_mapper import EpicStoryMapper, EpicStoryMapping
+    from fr_br_analyzer import FRBRAnalysis, FRBRAnalyzer
 except ImportError as e:
     print(f"⚠️  Warning: Could not import E4:S10 components: {e}")
     print("   E4:S10 (Agentic Task Creation) must be available for intake workflow")

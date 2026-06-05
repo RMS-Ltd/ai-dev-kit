@@ -12,10 +12,11 @@ Usage:
     step_13 = get_step_definition(13)
 """
 
-import yaml
-from pathlib import Path
-from typing import Dict, List, Any, Optional
 from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+import yaml
 
 
 @dataclass

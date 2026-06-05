@@ -12,10 +12,10 @@ Task: Task 4 (Implement deliverable processing intelligence)
 """
 
 import logging
-from typing import Dict, List, Optional, Any, Callable
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
+from typing import Any, Callable, Dict, List, Optional
 
 
 class DeliverableType(Enum):

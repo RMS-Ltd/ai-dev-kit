@@ -17,8 +17,11 @@ scripts_path = Path(__file__).parent
 if str(scripts_path) not in sys.path:
     sys.path.insert(0, str(scripts_path))
 
-from intake_documentation_update import IntakeDocumentationUpdate, IntakeDocumentationUpdateResult
-from intake_decision_flow import IntakeDecisionFlow, IntakeDecision
+from intake_decision_flow import IntakeDecisionFlow
+from intake_documentation_update import (
+    IntakeDocumentationUpdate,
+    IntakeDocumentationUpdateResult,
+)
 
 
 def test_documentation_update():
@@ -163,7 +166,7 @@ lifecycle: evergreen
             epic_story_mapping=None
         )
         
-        result = doc_update.update_document(test_path, intake_decision, [], "v0.2.11.4+1")
+        doc_update.update_document(test_path, intake_decision, [], "v0.2.11.4+1")
         
         # Check status was updated
         updated_content = test_path.read_text(encoding='utf-8')

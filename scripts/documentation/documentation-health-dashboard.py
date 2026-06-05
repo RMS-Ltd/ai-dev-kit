@@ -10,15 +10,13 @@ Usage:
     python3 documentation-health-dashboard.py --path docs/ --output dashboard.json
 """
 
-import os
-import sys
-import json
 import argparse
+import json
 import subprocess
+import sys
+from datetime import datetime
 from pathlib import Path
-from datetime import datetime, timedelta
 from typing import Dict, List, Optional
-from collections import defaultdict
 
 # Import validators (assuming they're in the same directory)
 SCRIPT_DIR = Path(__file__).parent

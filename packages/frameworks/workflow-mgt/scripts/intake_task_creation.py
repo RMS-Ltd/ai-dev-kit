@@ -15,9 +15,9 @@ Usage:
 """
 
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
-from dataclasses import dataclass
 
 # Import E4:S10 components
 try:

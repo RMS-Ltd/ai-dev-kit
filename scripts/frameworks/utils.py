@@ -1,12 +1,10 @@
 """Utility functions for framework health monitoring."""
 
 import re
+import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, Optional
-
-import subprocess
-import sys
+from typing import Dict
 
 
 def get_framework_type(framework_path: Path) -> str:

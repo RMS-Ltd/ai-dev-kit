@@ -9,16 +9,17 @@ Usage:
     python validate_canonical_steps.py [--verbose] [--fix]
 """
 
-import sys
 import argparse
 import re
-from pathlib import Path
-from typing import List, Dict, Any, Tuple, Optional
+import sys
 from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Optional
 
 from canonical_steps import (
-    get_canonical_steps, get_execution_paths, get_step_name,
-    get_step_description, list_triggers
+    get_canonical_steps,
+    get_execution_paths,
+    get_step_name,
 )
 
 

@@ -22,9 +22,9 @@ if str(scripts_path) not in sys.path:
     sys.path.insert(0, str(scripts_path))
 
 from changelog.changelog_utils import (
-    load_rw_config,
+    get_archival_policy,
     get_main_changelog_path,
-    get_archival_policy
+    load_rw_config,
 )
 
 

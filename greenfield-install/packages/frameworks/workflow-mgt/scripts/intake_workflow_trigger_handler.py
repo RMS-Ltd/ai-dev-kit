@@ -15,7 +15,7 @@ Usage:
 
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Any, Dict, List, Optional
 
 # Add scripts to path
 scripts_path = Path(__file__).parent
@@ -25,9 +25,9 @@ if str(scripts_path) not in sys.path:
 # Import intake components
 try:
     from intake_decision_flow import IntakeDecisionFlow
-    from intake_task_creation import IntakeTaskCreation
-    from intake_documentation_update import IntakeDocumentationUpdate
     from intake_dependency_wiring import IntakeDependencyWiring
+    from intake_documentation_update import IntakeDocumentationUpdate
+    from intake_task_creation import IntakeTaskCreation
     from intake_version_assignment import IntakeVersionAssignment
 except ImportError as e:
     print(f"⚠️  Warning: Could not import intake components: {e}")

@@ -12,8 +12,8 @@ _SCRIPT_DIR = Path(__file__).resolve().parent
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
-import semver_converter  # noqa: E402
 import finalize_rw_semver_registry as frsr  # noqa: E402
+import semver_converter  # noqa: E402
 
 
 @pytest.fixture

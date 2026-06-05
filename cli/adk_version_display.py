@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING, Optional
 
 if TYPE_CHECKING:
-    from install_ux_version import InstallVersionInfo  # pragma: no cover
+    pass  # pragma: no cover
 
 _MODULE = None
 

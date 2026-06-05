@@ -11,7 +11,13 @@ from typing import Dict
 
 from cli.commands import BaseCommand
 from cli.config import Config
-from cli.utils import print_success, print_error, print_info, print_warning, get_project_root
+from cli.utils import (
+    get_project_root,
+    print_error,
+    print_info,
+    print_success,
+    print_warning,
+)
 
 
 class ConfigCommand(BaseCommand):

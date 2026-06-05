@@ -20,9 +20,7 @@ if str(_KANBAN_DIR) not in sys.path:
     sys.path.insert(0, str(_KANBAN_DIR))
 
 from stamp_authority import (  # noqa: E402
-    active_board_paths,
     load_evidence_manifest,
-    load_rw_config,
     validate_stamp_diff,
 )
 

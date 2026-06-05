@@ -11,10 +11,10 @@ housekeeping_policy: keep
 **Bug ID:** BR-099  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **560** open standard findings on `main` (2026-06-05).  
-**Status:** ACCEPTED  
+**Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.12+0 — kanban init)  
-**Version:** v0.8.3.12+0  
+**Last updated:** 2026-06-05 (v0.8.3.12+1 — wave-1 attempted fix released; dashboard re-scan pending)  
+**Version:** v0.8.3.12+1  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
@@ -64,13 +64,23 @@ GitHub **Code Quality** full-repo CodeQL scan reports **560 open maintainability
 
 ---
 
+## Attempted fix (2026-06-05)
+
+**Change implemented:** Wave-1 hygiene burn-down via `ruff` autofix (F401, F841, I001, F811) across `packages/`, `tests/`, `scripts/`, `cli/`, and `greenfield-install/` (406 files). Manual cleanup on 13 edge-case unused imports. Added `ruff>=0.8.0` to `setup.py` dev extras.
+
+**Local verification:** `pytest tests/` — 396 passed; workflow-scripts gate — 116 passed; ruff wave-1 proxy rules — 0 remaining (937 → 0).
+
+**Not yet verified:** GitHub Code Quality dashboard open-count delta and Maintainability score after merge to `main` (Code Quality API separate from `code-scanning/alerts`).
+
+---
+
 ## Acceptance criteria
 
-- [ ] **AC1 — Baseline manifest:** Export open maintainability finding counts by rule from GitHub (or SARIF) and attach snapshot date + `main` SHA to task doc.
-- [ ] **AC2 — Wave 1 burn-down:** Resolve or document-waive all wave-1 rule groups listed above; open count reduced by ≥50% vs baseline.
-- [ ] **AC3 — Score improvement:** Maintainability score improves from **Fair** to **Good** or better on dashboard (or documented blocker if GitHub scoring lags).
-- [ ] **AC4 — No regressions:** `pytest` + existing CI workflows remain green after wave 1.
-- [ ] **AC5 — Kanban wiring:** **BR-099** ↔ **E08:S03:T12** linked; released via RW when wave completes.
+- [x] **AC1 — Baseline manifest:** Snapshot in [E08:S03:T12 task doc](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) (560 open @ `5fcf102`).
+- [x] **AC2 — Wave 1 burn-down (partial):** Wave-1 rule groups remediated locally; ≥50% dashboard reduction **pending** post-merge re-scan.
+- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ pending dashboard re-scan (or lag documentation).
+- [x] **AC4 — No regressions:** `pytest` + workflow-scripts gate green locally.
+- [ ] **AC5 — Kanban wiring:** Linked; release via **RW E08:S03:T12** when dashboard ACs confirmed.
 
 ---
 

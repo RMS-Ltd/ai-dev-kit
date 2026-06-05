@@ -6,12 +6,11 @@ Initializes ai-dev-kit in the current project by creating .ai-dev-kit.yaml confi
 
 import argparse
 from pathlib import Path
-from typing import Optional
 
+from cli.adk_version_display import print_session_banner
 from cli.commands import BaseCommand
 from cli.config import Config
-from cli.adk_version_display import print_session_banner
-from cli.utils import print_success, print_error, print_info, get_project_root
+from cli.utils import get_project_root, print_error, print_info, print_success
 
 
 class InitCommand(BaseCommand):

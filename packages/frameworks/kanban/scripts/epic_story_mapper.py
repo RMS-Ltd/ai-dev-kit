@@ -14,14 +14,12 @@ Usage:
     mapping = mapper.map_fr_br_to_epic_story(fr_br_analysis)
 """
 
-import json
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-from dataclasses import dataclass
 
 from fr_br_analyzer import FRBRAnalysis
 from semantic_matcher import SemanticMatcher, load_canonical_epic_definitions
-from agentic_mapper import AgenticTaskMapper
 
 
 @dataclass

@@ -11,13 +11,14 @@ Task: Task 5 (Implement FR/BR/UXR commit trigger)
 Task: Task 6 (Integrate with agentic task creation workflow)
 """
 
-import subprocess
 import logging
-from typing import List, Dict, Optional, Any
+import subprocess
 from pathlib import Path
-from trigger_registry import detect_triggers, Trigger
-from workflow_executor import WorkflowExecutor, WorkflowDefinition, WorkflowStatus
-from deliverable_processor import DeliverableProcessor, Deliverable, DeliverableType
+from typing import Any, Dict, List, Optional
+
+from deliverable_processor import Deliverable, DeliverableProcessor, DeliverableType
+from trigger_registry import Trigger, detect_triggers
+from workflow_executor import WorkflowDefinition, WorkflowExecutor, WorkflowStatus
 
 
 class TriggerIntegration:

@@ -131,7 +131,7 @@ install_logging:
         original_cwd = os.getcwd()
         try:
             os.chdir(temp_project_dir)
-            from unittest.mock import patch, MagicMock
+            from unittest.mock import MagicMock, patch
             mock_backend = MagicMock()
             mock_backend.install.return_value = True
             with patch("cli.commands.install.get_backend", return_value=MagicMock(return_value=mock_backend)):

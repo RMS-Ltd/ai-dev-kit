@@ -19,9 +19,9 @@ Arguments:
 import argparse
 import json
 import sys
-from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
 from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 
 # Import semantic matcher from same directory
 sys.path.insert(0, str(Path(__file__).parent))
@@ -338,7 +338,7 @@ class KanbanStructureAnalyzer:
         
         # If we have semantic matches, recommend canonical adoption (threshold removed per BR-008/FR-010)
         if has_semantic_matches:
-            high_similarity_matches = [
+            [
                 m for m in self.semantic_matches if m.get("similarity_score", 0) >= 70
             ]
             recommended_mode = "canonical_adoption"
@@ -420,7 +420,7 @@ class KanbanStructureAnalyzer:
         """Assess migration complexity."""
         conflict_count = len([c for c in self.conflicts if c["severity"] == "high"])
         epic_count = len(self.epic_mappings)
-        story_count = len(self.story_mappings)
+        len(self.story_mappings)
         task_count = len(self.task_mappings)
         
         if conflict_count > 3 or epic_count > 10 or task_count > 100:

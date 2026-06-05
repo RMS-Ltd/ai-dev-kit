@@ -22,11 +22,11 @@ Registry-based mapping ensures monotonic SemVer increases while preserving seman
 """
 
 import argparse
-import yaml
-import os
 import sys
 from pathlib import Path
-from typing import Tuple, Dict, Any, Optional
+from typing import Any, Dict, Optional, Tuple
+
+import yaml
 
 _SCRIPTS_DIR = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS_DIR) not in sys.path:
@@ -118,7 +118,7 @@ def create_rw_tags(internal_version: str, create_internal_tag: bool = True) -> D
     
     try:
         import subprocess
-        result = subprocess.run(
+        subprocess.run(
             ["git", "tag", "-a", primary_tag, "-m", tag_message],
             capture_output=True,
             text=True,
@@ -157,7 +157,7 @@ def create_rw_tags(internal_version: str, create_internal_tag: bool = True) -> D
         internal_message = f"Internal version for {tag_info['primary_tag']}"
         
         try:
-            result = subprocess.run(
+            subprocess.run(
                 ["git", "tag", "-a", internal_tag, "-m", internal_message],
                 capture_output=True,
                 text=True,

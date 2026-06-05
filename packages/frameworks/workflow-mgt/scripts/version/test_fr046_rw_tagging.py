@@ -6,20 +6,13 @@ Tests the new RW tagging functions for both registry and task-touch modes.
 """
 
 import sys
-import tempfile
-import shutil
 from pathlib import Path
 
 # Add the script directory to the path
 script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
-from semver_converter import (
-    get_rw_tag_info,
-    create_rw_tags,
-    get_semver_mapping_strategy,
-    load_rw_config
-)
+from semver_converter import get_rw_tag_info, get_semver_mapping_strategy
 
 
 def test_registry_mode():

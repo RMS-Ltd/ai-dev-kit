@@ -36,7 +36,9 @@ import re
 import subprocess
 import sys
 from pathlib import Path
-from typing import Optional, Dict, Tuple, List
+from typing import Dict, List, Optional, Tuple
+
+
 def parse_requested_est(requested: str) -> Optional[Tuple[int, int, int]]:
     """Parse E:S:T token formats like E6:S06:T58 or E6S6T58."""
     if not requested:

@@ -32,7 +32,6 @@ if str(_SCRIPTS_DIR) not in sys.path:
 from rw_config_loader import load_rw_config  # noqa: E402
 
 
-
 def default_board_paths(project_root: Path) -> List[Path]:
     cfg = load_rw_config(project_root)
     if cfg and cfg.get("kanban_root"):

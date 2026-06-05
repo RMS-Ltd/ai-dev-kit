@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.11+0 – Story 3 Task 11 complete)
+**Last updated:** 2026-06-05 (v0.8.3.12+1 – E08:S03:T12 wave-1 release)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -71,7 +71,7 @@ Epic 8 owns the **Tooling & Automation** framework for the ai-dev-kit repository
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
-**Last updated:** 2026-06-05 (v0.8.3.11+0 – Story 3 Task 11 complete)
+**Last updated:** 2026-06-05 (v0.8.3.12+1 – E08:S03:T12 wave-1 release)
 
 **Goal:**  
 Build code generators for common framework patterns and templates.
@@ -90,7 +90,7 @@ Build code generators for common framework patterns and templates.
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
-**Last updated:** 2026-06-05 (v0.8.3.11+0 – Story 3 Task 11 complete)
+**Last updated:** 2026-06-05 (v0.8.3.12+1 – E08:S03:T12 wave-1 release)
 
 **Goal:**  
 Develop additional validators beyond the current 3 validation scripts.
@@ -109,7 +109,7 @@ Develop additional validators beyond the current 3 validation scripts.
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-05 (v0.8.3.11+0 – Story 3 Task 11 complete)
+**Last updated:** 2026-06-05 (v0.8.3.12+1 – E08:S03:T12 wave-1 release)
 
 **Goal:**  
 Implement automation scripts for common development and maintenance tasks.

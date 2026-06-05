@@ -6,13 +6,17 @@ Tests the new trigger parsing, execution paths, and mode-specific behavior.
 """
 
 import sys
-import os
 from pathlib import Path
 
 # Add the scripts directory to the path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from workflow_orchestrator import parse_rw_trigger, get_execution_path, should_execute_step, get_step_modifications
+from workflow_orchestrator import (
+    get_execution_path,
+    get_step_modifications,
+    parse_rw_trigger,
+    should_execute_step,
+)
 
 
 def test_trigger_parsing():

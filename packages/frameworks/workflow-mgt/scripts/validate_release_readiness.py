@@ -96,7 +96,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-
 # --------------------------------------------------------------------------- #
 # Constants
 # --------------------------------------------------------------------------- #
@@ -555,7 +554,6 @@ def gate_2_supersede_chain(project_root: Path) -> GateVerdict:
 
 def gate_3_contract_parity(project_root: Path) -> GateVerdict:
     findings: List[str] = []
-    evidence: Dict[str, Any] = {}
 
     try:
         update_kanban = _load_module_from_path(
@@ -1235,7 +1233,10 @@ def gate_10_moscow_spacing(project_root: Path) -> GateVerdict:
     if str(val_dir) not in sys.path:
         sys.path.insert(0, str(val_dir))
     try:
-        from validate_kanban_moscow_spacing import default_board_paths, check_spacing_file
+        from validate_kanban_moscow_spacing import (
+            check_spacing_file,
+            default_board_paths,
+        )
     except ImportError as exc:
         return GateVerdict(
             gate_id=10,

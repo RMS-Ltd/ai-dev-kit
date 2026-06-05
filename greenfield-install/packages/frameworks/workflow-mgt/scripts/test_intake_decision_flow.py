@@ -11,14 +11,13 @@ Usage:
 import sys
 import tempfile
 from pathlib import Path
-from typing import Dict
 
 # Add scripts to path
 scripts_path = Path(__file__).parent
 if str(scripts_path) not in sys.path:
     sys.path.insert(0, str(scripts_path))
 
-from intake_decision_flow import IntakeDecisionFlow, IntakeDecision
+from intake_decision_flow import IntakeDecision, IntakeDecisionFlow
 
 
 def test_decision_flow_basic():

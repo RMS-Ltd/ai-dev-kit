@@ -4,17 +4,13 @@ Integration tests for ai-dev-kit CLI tool.
 These tests verify end-to-end workflows.
 """
 
-import pytest
-import tempfile
-import shutil
+import argparse
 from pathlib import Path
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 
-from cli.config import Config
 from cli.commands.init import InitCommand
 from cli.commands.install import InstallCommand
-from cli.commands.status import StatusCommand
-import argparse
+from cli.config import Config
 
 
 class TestInitInstallWorkflow:
@@ -69,7 +65,7 @@ class TestInitInstallWorkflow:
                     path=None,
                     dry_run=False,
                 )
-                install_command = InstallCommand(install_args)
+                InstallCommand(install_args)
                 # Note: This may fail if backend requires actual Git operations
                 # In real integration test, we'd set up a proper test environment
         finally:
@@ -109,9 +105,9 @@ class TestBackendSelection:
     
     def test_backend_selection_with_config(self, temp_config_file: Path):
         """Test backend selection using config."""
-        from cli.backends.selector import select_backend
-        
         import os
+
+        from cli.backends.selector import select_backend
         original_cwd = os.getcwd()
         try:
             os.chdir(temp_config_file.parent)

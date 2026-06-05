@@ -5,7 +5,6 @@ import tempfile
 from pathlib import Path
 
 import yaml
-
 from journal.agent_run_log import StepSpec
 from journal.rw_execution_log import (
     RWExecutionLogger,

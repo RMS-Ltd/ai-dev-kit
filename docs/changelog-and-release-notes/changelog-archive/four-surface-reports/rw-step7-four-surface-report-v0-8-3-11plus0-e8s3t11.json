@@ -1,13 +1,15 @@
 {
   "auxiliary_surfaces": {
     "epic_doc": {
-      "changes": [],
+      "changes": [
+        "Updated Epic Last updated: 2026-06-05 (v0.8.3.11+0 \u2013 Kanban documentation setup)"
+      ],
       "notes": [],
       "paths": [
         "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/epic-08.md"
       ],
       "surface": "epic_doc",
-      "touched": false
+      "touched": true
     },
     "story_doc": {
       "changes": [
@@ -24,8 +26,6 @@
       "changes": [
         "Updated Version: v0.8.3.11+0",
         "Updated Last updated: 2026-06-05 (v0.8.3.11+0 \u2013 Kanban documentation setup)",
-        "Updated Status: IN PROGRESS",
-        "Updated Epic Last updated: 2026-06-05 (v0.8.3.11+0 \u2013 Story 3 Task 11 complete)",
         "Updated board Last Updated: 2026-06-05 (RW: E08:S03:T11)",
         "Updated board Version: v0.8.3.11+0"
       ],
@@ -49,7 +49,7 @@
     "stamps_appended_with_evidence": 0,
     "stamps_preserved_existing": 0,
     "stamps_skipped_no_evidence": 0,
-    "total_changes": 7,
+    "total_changes": 6,
     "touched_surfaces": [],
     "untouched_surfaces": [
       "task_doc",
@@ -88,5 +88,5 @@
       "touched": false
     }
   },
-  "timestamp_utc": "2026-06-05 11:46 UTC"
+  "timestamp_utc": "2026-06-05 11:53 UTC"
 }

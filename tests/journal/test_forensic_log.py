@@ -1,15 +1,13 @@
 """Unit tests for forensic_log (FR-059)."""
 
-import subprocess
 
-import pytest
 
 from journal.forensic_log import (
+    MAX_IO_BYTES,
     AtomicCommandRecord,
     redact_env,
-    run_subprocess_logged,
     required_record_fields,
-    MAX_IO_BYTES,
+    run_subprocess_logged,
 )
 
 

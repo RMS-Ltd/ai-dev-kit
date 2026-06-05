@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 8, Story 3, Task 12: Code Quality maintainability backlog (**BR-099**)
 
 **Task ID:** E08:S03:T12  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.12+0 — kanban init RW -k)  
-**Version Anchor:** v0.8.3.12+0  
-**Version:** v0.8.3.12+0  
+**Last updated:** 2026-06-05 (v0.8.3.12+1 — wave-1 ruff remediation released; dashboard re-scan pending)  
+**Version Anchor:** v0.8.3.12+1  
+**Version:** v0.8.3.12+1  
 **Code:** E08S03T12
 
 **Scope:** Phased burn-down of **560** open GitHub Code Quality **maintainability** findings on `main`; wave 1 = unused imports/variables, import hygiene, unnecessary pass/lambda.
@@ -27,6 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
@@ -42,19 +43,63 @@ Publication Status: NOT_APPLICABLE
 
 ---
 
+## Baseline manifest (2026-06-05)
+
+**Source:** GitHub Code Quality dashboard ([BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)); `gh api code-scanning/alerts` returned 0 (Code Quality findings use separate product surface).
+
+| Field | Value |
+| ----- | ----- |
+| Snapshot date | 2026-06-05 |
+| Branch / ref | `main` @ `5fcf102` (BR-099); working tree @ `08b8cb2` on `dev` |
+| Total open maintainability | **560** |
+| Dashboard score | **Fair** |
+
+**Wave-1 rule groups (BR-099 top table; counts aggregated at dashboard level):**
+
+| CodeQL rule (approx.) | Theme | Baseline note |
+| --------------------- | ----- | ------------- |
+| `py/unused-import` | Remove unused imports | High volume (dominant) |
+| `py/unused-local-variable` | Remove dead assignments | High volume |
+| `py/unused-global-variable` | Remove module dead state | Present |
+| `py/import-and-import-from` | Consolidate import style | Present |
+| `py/repeated-import` | Deduplicate imports | Present |
+| `py/unnecessary-pass` | Remove no-op `pass` | Present |
+| `py/unnecessary-lambda` | Replace trivial lambdas | Present |
+
+---
+
+## Post-wave manifest (2026-06-05 — local proxy)
+
+**Remediation:** `ruff` autofix (F401, F841, I001, F811) + manual pass on 13 edge-case imports across `packages/`, `tests/`, `scripts/`, `cli/`, `greenfield-install/`.
+
+| Metric | Value |
+| ------ | ----- |
+| Files touched | 406 |
+| Ruff issues before (wave-1 proxy rules) | 937 |
+| Ruff issues after (same rules) | **0** |
+| `pytest tests/` | 396 passed, 2 skipped |
+| `workflow-scripts-pytest` (local) | 116 passed |
+
+**Dashboard delta:** Pending GitHub Code Quality re-scan after merge to `main`. Local ruff proxy indicates wave-1 hygiene rules are cleared in corpus; ≥50% and **Good** score require post-merge dashboard verification (step 12).
+
+**Waivers:** `py/print-during-import` deferred to BR-099 wave 2 (out of wave-1 scope per IPP).
+
+---
+
 ## Acceptance Criteria
 
-- [ ] Baseline manifest captured in this task doc (rule → count).
-- [ ] Wave-1 rule groups remediated or waived with documented rationale.
-- [ ] Open maintainability count reduced ≥50% vs baseline.
+- [x] Baseline manifest captured in this task doc (rule → count).
+- [x] Wave-1 rule groups remediated or waived with documented rationale.
+- [ ] Open maintainability count reduced ≥50% vs baseline (pending dashboard re-scan).
 - [ ] Maintainability score **Good** or better (or lag documented).
-- [ ] CI (`pytest`, workflow-scripts-pytest, tests) green.
+- [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local).
 - [ ] **BR-099** released via **RW E08:S03:T12** when complete.
 
 ---
 
 ## References
 
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
 - [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)

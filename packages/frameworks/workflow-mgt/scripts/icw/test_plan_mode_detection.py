@@ -5,7 +5,6 @@ Test script for ICW plan mode detection
 
 import os
 import sys
-import tempfile
 from pathlib import Path
 
 # Add the script directory to the path
@@ -13,6 +12,7 @@ script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
 from icw_handler import ICWHandler
+
 
 def test_plan_mode_detection():
     """Test that ICW properly detects and validates planning mode"""

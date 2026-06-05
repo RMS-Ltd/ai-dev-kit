@@ -3,13 +3,13 @@
 - **Contract:** FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)
 - **Invocation context:** rw_step_7
 - **Release scope:** E8:S3:T11 (v0.8.3.11+0)
-- **Timestamp (UTC):** 2026-06-05 11:46 UTC
+- **Timestamp (UTC):** 2026-06-05 11:53 UTC
 
 ## Touched-surface summary
 
 - Touched: `(none)`
 - Untouched: `task_doc, fbu_doc, kboard`
-- Total changes recorded: 7
+- Total changes recorded: 6
 
 ## Forensic stamp evidence (UXR-009 / FR-092 Wave 6)
 
@@ -54,9 +54,11 @@
 
 ### Auxiliary: `epic_doc`
 
-- Touched: **False**
+- Touched: **True**
 - Path(s):
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/epic-08.md`
+- Changes:
+  - Updated Epic Last updated: 2026-06-05 (v0.8.3.11+0 – Kanban documentation setup)
 
 ### Auxiliary: `uncategorized`
 
@@ -64,7 +66,5 @@
 - Changes:
   - Updated Version: v0.8.3.11+0
   - Updated Last updated: 2026-06-05 (v0.8.3.11+0 – Kanban documentation setup)
-  - Updated Status: IN PROGRESS
-  - Updated Epic Last updated: 2026-06-05 (v0.8.3.11+0 – Story 3 Task 11 complete)
   - Updated board Last Updated: 2026-06-05 (RW: E08:S03:T11)
   - Updated board Version: v0.8.3.11+0

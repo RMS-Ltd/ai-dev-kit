@@ -14,9 +14,8 @@ Usage:
 """
 
 import re
-from typing import Dict, List, Optional, Set, Tuple
 from pathlib import Path
-import json
+from typing import Dict, List, Optional, Set, Tuple
 
 
 class SemanticMatcher:
@@ -253,7 +252,7 @@ def load_canonical_epic_definitions(framework_path: Path) -> List[Dict]:
         return canonical_epics
     
     try:
-        matcher = SemanticMatcher()
+        SemanticMatcher()
         text = canonical_file.read_text(encoding='utf-8')
         
         # Parse epic definitions from the comprehensive structure document

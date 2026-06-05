@@ -3,16 +3,18 @@
 Regression tests for create_github_release version parsing.
 """
 
-from pathlib import Path
 import sys
-
+from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 SCRIPTS_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(SCRIPTS_ROOT))
 
 import create_github_release as cgr  # noqa: E402
-from create_github_release import normalize_internal_version, get_release_tag_info  # noqa: E402
+from create_github_release import (  # noqa: E402
+    get_release_tag_info,
+    normalize_internal_version,
+)
 
 
 def test_normalize_internal_version_accepts_v_prefixed():

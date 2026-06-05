@@ -6,11 +6,8 @@ Covers FR-008 AC-1..AC-5 for E2:S06:T01.
 
 import argparse
 import os
-import shutil
 from pathlib import Path
-from unittest.mock import patch, MagicMock
-
-import pytest
+from unittest.mock import MagicMock, patch
 
 from cli.commands.remove import RemoveCommand
 from cli.config import Config
@@ -409,8 +406,8 @@ class TestUninstallAlias:
 
     def test_uninstall_alias_registered(self):
         """The main command registry must contain 'uninstall' pointing to RemoveCommand."""
-        from cli.main import _COMMANDS
         from cli.commands.remove import RemoveCommand
+        from cli.main import _COMMANDS
 
         assert "uninstall" in _COMMANDS
         assert _COMMANDS["uninstall"] is RemoveCommand

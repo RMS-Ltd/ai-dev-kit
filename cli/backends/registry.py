@@ -2,7 +2,8 @@
 Backend registry for managing available backend implementations.
 """
 
-from typing import Dict, Type, Optional, List
+from typing import Dict, List, Optional, Type
+
 from cli.backends.base import BackendBase
 from cli.utils import print_warning
 

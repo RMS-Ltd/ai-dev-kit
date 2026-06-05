@@ -11,7 +11,11 @@ script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
 from semver_converter import load_semver_registry  # noqa: E402
-from task_touch_registry_audit import audit_registry, format_report, has_collisions  # noqa: E402
+from task_touch_registry_audit import (  # noqa: E402
+    audit_registry,
+    format_report,
+    has_collisions,
+)
 
 
 def main() -> int:

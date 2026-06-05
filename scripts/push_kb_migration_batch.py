@@ -2,7 +2,6 @@
 """Push KB migration MCP args - outputs one JSON file per invocation for agent to call."""
 import json
 import os
-import sys
 
 DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "knowledge", "kb-migration-mcp-args")
 SKIP_PREFIX = "stub_"

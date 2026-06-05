@@ -8,7 +8,7 @@ import re
 import sys
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Iterable, List, Optional, Sequence
+from typing import List, Optional, Sequence
 
 # Allow running as script from this directory
 _SCRIPT_DIR = Path(__file__).resolve().parent

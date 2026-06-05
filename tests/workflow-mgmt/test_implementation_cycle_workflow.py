@@ -5,21 +5,18 @@ Test suite for Implementation Cycle Workflow (ICW) functionality.
 Tests ICW workflow generation, validation, and integration with the workflow management framework.
 """
 
+import os
+import sys
+import tempfile
+from pathlib import Path
+
 import pytest
 import yaml
-import tempfile
-import os
-from pathlib import Path
-import sys
 
 # Add the workflow management scripts to path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / "packages/frameworks/workflow-mgt/scripts"))
 
-from generate_workflow import (
-    generate_workflow_yaml,
-    WORKFLOW_TYPES,
-    STEP_TEMPLATES
-)
+from generate_workflow import WORKFLOW_TYPES, generate_workflow_yaml
 
 
 class TestImplementationCycleWorkflow:

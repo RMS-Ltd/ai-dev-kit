@@ -12,6 +12,7 @@ This script validates and outputs the invocation format for the agent.
 import json
 import sys
 
+
 def main():
     try:
         args = json.load(sys.stdin)

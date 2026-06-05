@@ -8,7 +8,8 @@ Part of: Epic 8, Story 2 - Additional Validators
 Task: E8:S02:T01 - Create validator framework
 """
 
-from typing import Dict, Type, Optional, List
+from typing import Dict, List, Optional, Type
+
 from .base import BaseValidator, ValidatorConfig
 
 

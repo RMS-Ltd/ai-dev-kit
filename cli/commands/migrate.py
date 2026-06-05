@@ -6,13 +6,22 @@ Converts copy-paste frameworks to dependency-based installations.
 
 import argparse
 from pathlib import Path
-from typing import Optional
 
 from cli.commands import BaseCommand
-from cli.config import Config
-from cli.migration import detect_frameworks, convert_framework_to_dependency, validate_migration
-from cli.utils import print_success, print_error, print_info, print_warning, get_project_root, handle_error
 from cli.exceptions import AIDevKitError
+from cli.migration import (
+    convert_framework_to_dependency,
+    detect_frameworks,
+    validate_migration,
+)
+from cli.utils import (
+    get_project_root,
+    handle_error,
+    print_error,
+    print_info,
+    print_success,
+    print_warning,
+)
 
 
 class MigrateCommand(BaseCommand):

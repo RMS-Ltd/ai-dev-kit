@@ -5,10 +5,9 @@ Lists available frameworks.
 """
 
 import argparse
-from pathlib import Path
 
 from cli.commands import BaseCommand
-from cli.utils import print_success, print_error, print_info, print_warning
+from cli.utils import print_info, print_warning
 
 
 class ListCommand(BaseCommand):

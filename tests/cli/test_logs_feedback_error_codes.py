@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
 
 from cli.commands.logs import LogsCommand
 from cli.config import Config
@@ -39,7 +38,7 @@ def test_build_feedback_payload_includes_primary_adk_error_codes(tmp_path):
         "install_logging:\n  enabled: true\n  format: json\n  path: logs/ai-dev-kit/install\n",
         encoding="utf-8",
     )
-    config = Config(cfg_path)
+    Config(cfg_path)
     args = argparse.Namespace(logs_command="prepare-feedback-payload", install_log=None)
     cmd = LogsCommand(args)
 

@@ -5,33 +5,36 @@ Installs frameworks as dependencies using the specified backend.
 """
 
 import argparse
-import os
 import re
-from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Tuple, Optional, Callable
+from typing import Any, Dict, List, Optional, Tuple
 
-from cli.commands import BaseCommand
-from cli.config import Config
-from cli.exceptions import AIDevKitError, InvalidInputError, BackendNotAvailableError, InstallationError, AppleSDKLicenseError
-from cli.validation import validate_framework_spec, validate_backend, validate_path
-from cli.backends import BackendRegistry, select_backend, get_backend
+from cli.adk_install_errors_bridge import emit_install_error, merge_error_into_event
 from cli.adk_version_display import (
     print_legacy_framework_layout_warning,
     print_session_banner,
-    resolve_install_adk_version,
 )
-from cli.logging import create_install_logger, close_install_logger
-from cli.adk_install_errors_bridge import emit_install_error, merge_error_into_event
+from cli.backends import BackendRegistry, get_backend, select_backend
+from cli.commands import BaseCommand
+from cli.config import Config
+from cli.exceptions import (
+    AIDevKitError,
+    AppleSDKLicenseError,
+    BackendNotAvailableError,
+    InstallationError,
+    InvalidInputError,
+)
+from cli.logging import close_install_logger, create_install_logger
+from cli.validation import validate_backend, validate_framework_spec, validate_path
 
 CLI_INSTALL_ERROR_CODE = "ADK-I02.E01"
 from cli.utils import (
-    print_success,
-    print_error,
-    print_info,
-    print_warning,
     get_project_root,
     handle_error,
+    print_error,
+    print_info,
+    print_success,
+    print_warning,
 )
 
 

@@ -31,6 +31,8 @@ if str(_SCRIPTS_DIR) not in sys.path:
 
 from rw_config_loader import (  # noqa: E402
     load_rw_config as shared_load_rw_config,
+)
+from rw_config_loader import (
     load_rw_config_from_path,
 )
 

@@ -9,12 +9,11 @@ Note: Not wired into validators or RW today. FR-060 / project policy prefer expl
 ids (e.g. E7S06T05) for RW; keep this module for experiments or future opt-in tooling only.
 """
 
-import subprocess
-import json
-from pathlib import Path
-from typing import Optional, Dict, List, Any
-from datetime import datetime, timedelta
 import logging
+import subprocess
+from datetime import datetime, timedelta
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 from kanban_parser import KanbanBoardParser
 

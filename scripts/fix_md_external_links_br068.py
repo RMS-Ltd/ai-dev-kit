@@ -12,7 +12,6 @@ import sys
 from pathlib import Path
 from urllib.parse import quote, unquote
 
-
 REPO_MAIN = "https://github.com/RMS-Ltd/ai-dev-kit/blob/main"
 
 # Markdown link [text](target) — capture target excluding optional title

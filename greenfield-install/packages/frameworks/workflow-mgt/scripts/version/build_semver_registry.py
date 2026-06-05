@@ -7,11 +7,11 @@ Parses all tags matching v0.*.*.*+* pattern and builds registry based on first a
 """
 
 import subprocess
-import re
-import yaml
-from pathlib import Path
-from typing import Dict, List, Tuple, Any
 from collections import defaultdict
+from pathlib import Path
+from typing import Any, Dict, List, Tuple
+
+import yaml
 
 
 def find_registry_file() -> Path:

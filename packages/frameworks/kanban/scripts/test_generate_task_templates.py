@@ -1,7 +1,11 @@
-import sys, unittest, tempfile
+import sys
+import tempfile
+import unittest
 from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).parent))
 from generate_task_templates import TaskTemplateGenerator
+
 
 class T(unittest.TestCase):
     def test_path(self):

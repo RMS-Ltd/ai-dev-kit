@@ -16,10 +16,10 @@ from pathlib import Path
 scripts_dir = Path(__file__).parent
 sys.path.insert(0, str(scripts_dir))
 
-from fr_br_analyzer import FRBRAnalyzer, FRBRAnalysis
+from agentic_task_workflow import AgenticTaskWorkflow
 from epic_story_mapper import EpicStoryMapper, EpicStoryMapping
+from fr_br_analyzer import FRBRAnalysis, FRBRAnalyzer
 from task_creator import TaskCreator, TaskStructure
-from agentic_task_workflow import AgenticTaskWorkflow, WorkflowResult
 
 
 def test_fr_br_analyzer():
@@ -181,7 +181,7 @@ def test_task_creator():
         complexity_indicators=[]
     )
     
-    mapping = EpicStoryMapping(
+    EpicStoryMapping(
         primary_epic=4,
         primary_epic_confidence=75.0,
         primary_epic_match_type="semantic",
@@ -193,7 +193,7 @@ def test_task_creator():
         reasoning=["Test reasoning"]
     )
     
-    task_structure = TaskStructure(
+    TaskStructure(
         num_tasks=1,
         task_types=["implementation"],
         task_dependencies={},

@@ -11,12 +11,11 @@ Supports:
 - Auto-detection: Reads strategy from rw-config.yaml
 """
 
-import subprocess
-import yaml
-import sys
 import os
+import subprocess
+import sys
 from pathlib import Path
-from typing import Dict, Any, Optional, Tuple
+from typing import Any, Dict, Tuple
 
 from rw_config_loader import load_rw_config_from_path
 
@@ -104,7 +103,7 @@ class GitTagHandler:
             else:
                 cmd.extend([tag_name, '-m', message])
             
-            result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+            subprocess.run(cmd, capture_output=True, text=True, check=True)
             print(f"✅ Created tag: {tag_name}")
             return True
             

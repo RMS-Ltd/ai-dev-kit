@@ -2,25 +2,23 @@
 
 from __future__ import annotations
 
-import copy
 import sys
 from pathlib import Path
 
 import pytest
-import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION_DIR = ROOT / "packages/frameworks/workflow-mgt/scripts/version"
 sys.path.insert(0, str(VERSION_DIR))
 
 from semver_converter import (  # noqa: E402
-    convert_internal_to_semver_task_touch,
-    format_semver,
     load_semver_registry,
     save_semver_registry,
-    set_epic_count,
 )
-from task_touch_registry_audit import audit_task_touch_history, has_collisions  # noqa: E402
+from task_touch_registry_audit import (  # noqa: E402
+    audit_task_touch_history,
+    has_collisions,
+)
 
 
 @pytest.fixture

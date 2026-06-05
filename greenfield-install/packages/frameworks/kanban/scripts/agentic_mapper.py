@@ -15,9 +15,9 @@ Usage:
 """
 
 import json
-from pathlib import Path
-from typing import Dict, List, Optional, Tuple
 from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional
 
 
 class AgenticTaskMapper:
@@ -61,7 +61,7 @@ class AgenticTaskMapper:
         print("🤖 Agentic Task Mapping: Analyzing task content...")
         
         task_mappings = self.analysis_report.get("task_mappings", [])
-        epic_mappings = self.analysis_report.get("epic_mappings", [])
+        self.analysis_report.get("epic_mappings", [])
         semantic_matches = self.analysis_report.get("semantic_matches", [])
         
         # Build epic-to-canonical mapping
@@ -209,7 +209,7 @@ class AgenticTaskMapper:
             return []
         
         try:
-            content = canonical_file.read_text(encoding='utf-8')
+            canonical_file.read_text(encoding='utf-8')
             # Extract stories for this epic (simplified - would need proper parsing)
             stories = []
             # In real implementation, would parse the comprehensive structure properly

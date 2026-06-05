@@ -22,9 +22,7 @@ import argparse
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
-from datetime import datetime
-import json
+from typing import Dict, Optional
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
 if str(_SCRIPT_DIR) not in sys.path:
@@ -78,7 +76,10 @@ class TaskTemplateGenerator:
         self.agentic_generator = None
         if self.use_agentic:
             try:
-                from agentic_template_generator import AgenticTemplateGenerator, LLMConfig
+                from agentic_template_generator import (
+                    AgenticTemplateGenerator,
+                    LLMConfig,
+                )
                 template_dir = template_file.parent
                 llm_config = LLMConfig(
                     provider=agentic_provider or "none",
@@ -297,8 +298,8 @@ class TaskTemplateGenerator:
         )
         
         # Generate dependencies
-        prev_task = f"E{epic}:S{story}:T{task_num-1:02d}" if task_num > 1 else None
-        next_task = f"E{epic}:S{story}:T{task_num+1:02d}"
+        f"E{epic}:S{story}:T{task_num-1:02d}" if task_num > 1 else None
+        f"E{epic}:S{story}:T{task_num+1:02d}"
         
         depends_on = f"- E{epic}:S{story}:T{task_num-1:02d}" if task_num > 1 else "- None"
         blocks = f"- E{epic}:S{story}:T{task_num+1:02d}"

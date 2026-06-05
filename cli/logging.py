@@ -11,10 +11,9 @@ import os
 import uuid
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Callable, Dict, Optional, Tuple, TextIO
+from typing import Any, Callable, Dict, Optional, TextIO, Tuple
 
 from cli.utils import print_warning, redact
-
 
 LogFunc = Callable[..., None]
 

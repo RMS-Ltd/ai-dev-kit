@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import sys
 import tarfile
-import tempfile
 from pathlib import Path
 
 import pytest
@@ -18,6 +17,7 @@ _SCRIPTS = (
 )
 sys.path.insert(0, str(_SCRIPTS))
 
+from build_package import create_tar_gz_archive  # noqa: E402
 from framework_install_slug import (  # noqa: E402
     WORKFLOW_MGT_INSTALL_SLUG,
     WORKFLOW_MGT_LEGACY_DIR_NAME,
@@ -29,7 +29,6 @@ from framework_install_slug import (  # noqa: E402
     workflow_mgt_package_dir,
     workflow_mgt_package_dir_missing_hint,
 )
-from build_package import create_tar_gz_archive  # noqa: E402
 from install_package_from_release import extract_package  # noqa: E402
 
 

@@ -8,9 +8,9 @@ import os
 import re
 import subprocess
 import time
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Mapping, Optional, Sequence, Union
+from typing import Any, Dict, List, Mapping, Optional, Sequence
 
 FORENSIC_SCHEMA_VERSION = "1.0.0"
 MAX_IO_BYTES = 32_768

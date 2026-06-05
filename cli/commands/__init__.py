@@ -4,9 +4,8 @@ Command modules for the ai-dev-kit CLI tool.
 This package contains all command implementations.
 """
 
-from typing import Type
-from abc import ABC, abstractmethod
 import argparse
+from abc import ABC, abstractmethod
 
 
 class BaseCommand(ABC):

@@ -13,23 +13,20 @@ Usage:
 """
 
 import argparse
-import json
-import sys
-from pathlib import Path
-from typing import Dict, List, Optional, Any
-from enum import Enum
-from dataclasses import dataclass
-
 import logging
+import sys
+from dataclasses import dataclass
+from enum import Enum
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 # Import canonical steps loader
-from canonical_steps import (
-    get_canonical_steps, get_execution_path, should_execute_step,
-    get_step_modifications, get_step_name, get_step_description,
-    list_triggers
+from deliverable_processor import Deliverable, DeliverableProcessor, DeliverableType
+from workflow_executor import (
+    WorkflowExecutor,
+    WorkflowResult,
+    WorkflowStatus,
 )
-from workflow_executor import WorkflowExecutor, WorkflowDefinition, WorkflowResult, WorkflowStatus
-from deliverable_processor import DeliverableProcessor, Deliverable, DeliverableType
 
 
 class ExecutionPlanStatus(Enum):
@@ -102,7 +99,9 @@ def should_execute_step_for_trigger(step_number: float, trigger_type: TriggerTyp
 
 def get_step_modifications_for_trigger(step_number: float, trigger_type: TriggerType) -> Dict[str, Any]:
     """Get step modifications for a trigger using canonical definition."""
-    from canonical_steps import get_step_modifications as canonical_get_step_modifications
+    from canonical_steps import (
+        get_step_modifications as canonical_get_step_modifications,
+    )
     return canonical_get_step_modifications(step_number, trigger_type.value)
 
 

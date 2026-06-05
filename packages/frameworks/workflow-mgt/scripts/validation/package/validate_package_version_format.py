@@ -12,9 +12,9 @@ Example:
     python validate_package_version_format.py 2.1.0
 """
 
-import sys
 import re
-from typing import Tuple, Optional
+import sys
+from typing import Optional, Tuple
 
 
 def validate_semver_format(version: str) -> Tuple[bool, Optional[str]]:

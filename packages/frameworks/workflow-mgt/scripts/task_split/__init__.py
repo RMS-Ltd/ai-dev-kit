@@ -1,6 +1,5 @@
 """FR-011 multi-epic task split planning (E4:S08:T07)."""
 
-from .models import SplitPlan, TaskAssignment
 from .engine import (
     assign_tasks,
     build_split_plan,
@@ -8,6 +7,7 @@ from .engine import (
     rewrite_references,
     split_candidates,
 )
+from .models import SplitPlan, TaskAssignment
 
 __all__ = [
     "SplitPlan",

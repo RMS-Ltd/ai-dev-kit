@@ -11,15 +11,17 @@ REQUIRES PLAN MODE: Planning must run in planning mode for proper agent-guided e
 REQUIRES TASK IDENTIFIER: Sessions must be bound to a specific Kanban task.
 """
 
-import os
-import sys
-import yaml
-import json
 import argparse
+import json
+import os
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Any, List, Optional, Tuple
+from typing import Any, Dict, List, Tuple
+
+import yaml
+
 
 class ICWHandler:
     """Main handler for Implementation Cycle Workflow"""

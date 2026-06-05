@@ -5,26 +5,25 @@ ai-dev-kit CLI Tool Entry Point
 Main entry point for the ai-dev-kit command-line interface.
 """
 
-import sys
 import argparse
+import sys
 from typing import Dict, Type
 
-from cli.commands import BaseCommand
-from cli.utils import print_error, handle_error
 from cli.adk_version_display import get_cli_version_string
+from cli.commands import BaseCommand
+from cli.commands.check import CheckCommand
+from cli.commands.config import ConfigCommand
 
 # Import commands
 from cli.commands.init import InitCommand
 from cli.commands.install import InstallCommand
-from cli.commands.update import UpdateCommand
-from cli.commands.check import CheckCommand
-from cli.commands.status import StatusCommand
 from cli.commands.list import ListCommand
-from cli.commands.config import ConfigCommand
+from cli.commands.logs import LogsCommand
 from cli.commands.migrate import MigrateCommand
 from cli.commands.remove import RemoveCommand
-from cli.commands.logs import LogsCommand
-
+from cli.commands.status import StatusCommand
+from cli.commands.update import UpdateCommand
+from cli.utils import handle_error, print_error
 
 # Command registry
 _COMMANDS: Dict[str, Type[BaseCommand]] = {

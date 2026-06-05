@@ -11,7 +11,7 @@ Usage:
 import argparse
 import sys
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import List, Tuple
 
 # Add scripts directory to path
 scripts_path = Path(__file__).parent.parent
@@ -19,11 +19,10 @@ if str(scripts_path) not in sys.path:
     sys.path.insert(0, str(scripts_path))
 
 from changelog.changelog_utils import (
-    load_rw_config,
-    get_main_changelog_path,
-    get_archive_changelog_path,
     extract_changelog_entries,
-    compare_versions
+    get_archive_changelog_path,
+    get_main_changelog_path,
+    load_rw_config,
 )
 
 

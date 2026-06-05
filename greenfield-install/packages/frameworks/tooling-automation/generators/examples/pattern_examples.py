@@ -10,8 +10,7 @@ Task: E8:S01:T03 - Establish generator patterns
 
 import sys
 from pathlib import Path
-from typing import Tuple, List, Dict, Any
-from datetime import datetime
+from typing import Any, Dict, List, Tuple
 
 # Add generators directory to path
 generators_path = Path(__file__).parent.parent
@@ -20,10 +19,10 @@ if str(generators_path) not in sys.path:
 
 from generators.base import (
     BaseGenerator,
-    TemplateBasedGenerator,
     GeneratorConfig,
     GeneratorResult,
-    GeneratorStatus
+    GeneratorStatus,
+    TemplateBasedGenerator,
 )
 
 

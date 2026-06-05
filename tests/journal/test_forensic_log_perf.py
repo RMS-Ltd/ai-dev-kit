@@ -4,7 +4,6 @@ import subprocess
 import time
 
 import pytest
-
 from journal.forensic_log import run_subprocess_logged
 
 CMD = ["python3", "-c", "pass"]

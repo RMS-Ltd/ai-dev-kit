@@ -10,10 +10,10 @@ Task: E8:S01:T01 - Create generator framework
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
-from pathlib import Path
-from typing import Dict, List, Optional, Any
-from enum import Enum
 from datetime import datetime
+from enum import Enum
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 
 class GeneratorStatus(Enum):
@@ -202,7 +202,6 @@ class BaseGenerator(ABC):
         Returns:
             GeneratorResult with complete execution details
         """
-        import time
         
         self._start_time = datetime.now()
         

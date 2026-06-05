@@ -2,15 +2,15 @@
 Git submodule backend implementation for framework dependency management.
 """
 
-import subprocess
-import shutil
 import platform
+import shutil
+import subprocess
 from pathlib import Path
-from typing import Optional, Dict, Any
+from typing import Any, Dict, Optional
 
 from cli.backends.base import BackendBase
-from cli.utils import print_error, print_success, print_info, print_warning
 from cli.exceptions import AppleSDKLicenseError
+from cli.utils import print_error, print_info, print_success, print_warning
 
 
 class GitSubmoduleBackend(BackendBase):

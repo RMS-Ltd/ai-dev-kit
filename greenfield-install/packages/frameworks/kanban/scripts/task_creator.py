@@ -21,16 +21,15 @@ Usage:
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 
 sys.path.insert(0, str(Path(__file__).parent))
-import kanban_paths as kp
 from dataclasses import dataclass
 from datetime import datetime
 
-from fr_br_analyzer import FRBRAnalysis
+import kanban_paths as kp
 from epic_story_mapper import EpicStoryMapping
-from typing import Optional
+from fr_br_analyzer import FRBRAnalysis
 
 
 @dataclass
@@ -90,7 +89,10 @@ class TaskCreator:
         self.agentic_generator = None
         if self.use_agentic:
             try:
-                from agentic_template_generator import AgenticTemplateGenerator, LLMConfig
+                from agentic_template_generator import (
+                    AgenticTemplateGenerator,
+                    LLMConfig,
+                )
                 llm_config = LLMConfig(
                     provider=agentic_provider or "none",
                     **self.agentic_config

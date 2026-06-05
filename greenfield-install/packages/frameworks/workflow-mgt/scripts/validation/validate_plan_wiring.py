@@ -16,7 +16,6 @@ import argparse
 import re
 from pathlib import Path
 
-
 HOST_TASK_RE = re.compile(r"Host Task:\*{0,2}\s*\[[^\]]+\]\(([^)]+)\)", re.IGNORECASE)
 SECTION_RE = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
 

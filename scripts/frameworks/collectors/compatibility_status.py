@@ -21,12 +21,11 @@ def collect_compatibility_status_metrics(
         integration_files = list(integration_dir.glob("*.md"))
     
     # Check for compatibility declarations in README
-    compatibility_declared = False
     readme_path = framework_path / "README.md"
     if readme_path.exists():
         try:
             content = readme_path.read_text(encoding="utf-8")
-            compatibility_declared = any(
+            any(
                 keyword in content.lower()
                 for keyword in ["compatibility", "compatible", "integration", "dependency"]
             )

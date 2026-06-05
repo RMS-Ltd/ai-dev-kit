@@ -17,12 +17,14 @@ if str(validators_path) not in sys.path:
 
 # Import from modules (validators_path is in sys.path)
 try:
+    from base import ValidatorConfig
     from framework.document_lifecycle_validator import DocumentLifecycleValidator
-    from base import ValidatorConfig, ValidationStatus
 except ImportError:
     # Fallback: try package import
-    from validators.framework.document_lifecycle_validator import DocumentLifecycleValidator
-    from validators.base import ValidatorConfig, ValidationStatus
+    from validators.base import ValidatorConfig
+    from validators.framework.document_lifecycle_validator import (
+        DocumentLifecycleValidator,
+    )
 
 
 def test_document_lifecycle_validator_valid_metadata():

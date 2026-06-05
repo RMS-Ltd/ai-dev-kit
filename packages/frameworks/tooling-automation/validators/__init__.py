@@ -9,20 +9,20 @@ Task: E8:S02:T01 - Create validator framework
 
 from .base import (
     BaseValidator,
-    ValidatorConfig,
     ValidationResult,
+    ValidationSeverity,
     ValidationStatus,
-    ValidationSeverity
+    ValidatorConfig,
 )
-from .registry import ValidatorRegistry
 
 # Framework-specific validators
 from .framework import (
+    DocumentLifecycleValidator,
     KanbanValidator,
-    WorkflowValidator,
     VersionValidator,
-    DocumentLifecycleValidator
+    WorkflowValidator,
 )
+from .registry import ValidatorRegistry
 
 __all__ = [
     'BaseValidator',

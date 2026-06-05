@@ -10,7 +10,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Optional, Sequence, Tuple
+from typing import List, Sequence, Tuple
 
 MULTILINE_THRESHOLD = 100
 MOSCOW_SECTION_RE = re.compile(r"^## MoSCOW", re.IGNORECASE)

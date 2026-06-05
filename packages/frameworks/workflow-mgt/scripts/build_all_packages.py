@@ -46,11 +46,11 @@ def build_package(framework_name: str, version: str, display_name: str) -> bool:
     ]
     
     try:
-        result = subprocess.run(cmd, check=True, capture_output=False)
+        subprocess.run(cmd, check=True, capture_output=False)
         print(f"   ✅ SUCCESS: {display_name} v{version}")
         print()
         return True
-    except subprocess.CalledProcessError as e:
+    except subprocess.CalledProcessError:
         print(f"   ❌ FAILED: {display_name} v{version}")
         print()
         return False

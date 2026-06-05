@@ -14,11 +14,10 @@ Issues detected:
 """
 
 import json
-import os
 import re
-from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
+from pathlib import Path
 
 # Resolve relative to project root (this script lives in scripts/cleanup/)
 SCRIPT_DIR = Path(__file__).resolve().parent

@@ -12,7 +12,7 @@ validation_dir = Path(__file__).resolve().parent.parent / "packages/frameworks/w
 if str(validation_dir) not in sys.path:
     sys.path.insert(0, str(validation_dir))
 
-from validate_gap_log import validate_gap_log, _validate_gap_block, _extract_gap_blocks
+from validate_gap_log import _validate_gap_block, validate_gap_log
 
 
 class TestValidGapLogPasses:

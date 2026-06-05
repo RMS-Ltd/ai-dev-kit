@@ -4,10 +4,11 @@ Test script to validate Release Workflow performance and reliability.
 Tests the E6S06T02 fixes for micromanagement issues.
 """
 
-import time
 import subprocess
 import sys
+import time
 from pathlib import Path
+
 
 def run_command(cmd, cwd=None):
     """Run a command and return success, output, and execution time."""

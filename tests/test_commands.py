@@ -2,13 +2,11 @@
 Unit tests for CLI commands.
 """
 
-import pytest
 import argparse
 from pathlib import Path
-from unittest.mock import patch, MagicMock, mock_open
 
-from cli.commands.init import InitCommand
 from cli.commands.config import ConfigCommand
+from cli.commands.init import InitCommand
 from cli.commands.list import ListCommand
 from cli.config import Config
 

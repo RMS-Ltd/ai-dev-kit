@@ -2,10 +2,9 @@
 Unit tests for configuration management.
 """
 
-import pytest
 import tempfile
-import shutil
 from pathlib import Path
+
 from cli.config import Config
 
 

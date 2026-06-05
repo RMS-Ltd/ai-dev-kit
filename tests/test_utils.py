@@ -2,15 +2,13 @@
 Unit tests for utility functions.
 """
 
-import pytest
 from pathlib import Path
-from unittest.mock import patch
 
 from cli.utils import (
     get_project_root,
-    print_success,
     print_error,
     print_info,
+    print_success,
     print_warning,
 )
 

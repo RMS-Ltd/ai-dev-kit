@@ -9,7 +9,6 @@ Usage:
 """
 
 import sys
-import tempfile
 from pathlib import Path
 
 # Add scripts to path
@@ -17,7 +16,10 @@ scripts_path = Path(__file__).parent
 if str(scripts_path) not in sys.path:
     sys.path.insert(0, str(scripts_path))
 
-from intake_workflow_trigger_handler import execute_intake_workflow, _extract_fr_br_files
+from intake_workflow_trigger_handler import (
+    _extract_fr_br_files,
+    execute_intake_workflow,
+)
 
 
 def test_extract_fr_br_files():

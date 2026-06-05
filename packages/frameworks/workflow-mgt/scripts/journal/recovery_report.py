@@ -8,13 +8,12 @@ recovery reports from a failed RW run journal.
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import List, Optional
 
-from .rw_journal import RWJournal, RunEntry, StepEntry
-
+from .rw_journal import RunEntry, RWJournal, StepEntry
 
 RECOVERY_SCHEMA_VERSION = "1.0.0"
 JOURNAL_DIR = Path("docs/journals")

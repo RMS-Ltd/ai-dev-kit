@@ -16,7 +16,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Literal
 
-
 Classification = Literal["template", "devkit_reference", "contaminated", "unknown"]
 
 

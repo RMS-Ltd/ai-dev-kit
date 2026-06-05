@@ -48,6 +48,7 @@ setup(
             "requests>=2.28.0",
             "black>=23.0",
             "flake8>=6.0",
+            "ruff>=0.8.0",
             "mypy>=1.0",
         ],
     },

@@ -5,12 +5,10 @@ Covers FR-008 AC-1..AC-5 for the standalone path (E2:S06:T01).
 """
 
 import importlib.util
-import os
 import sys
 from pathlib import Path
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
 
-import pytest
 import yaml
 
 # Load the standalone script as a module (path contains a space)
@@ -131,7 +129,7 @@ class TestStandaloneVerification:
             force=True,
             project_root=tmp_path,
         )
-        report = uninstaller.uninstall()
+        uninstaller.uninstall()
 
         # In tests git is mocked, so files are not actually deleted.
         # Simulate git cleanup and re-verify.

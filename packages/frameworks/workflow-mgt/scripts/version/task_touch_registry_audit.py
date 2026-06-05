@@ -5,7 +5,7 @@ Shared audit helpers for task_touch semver-registry mapping_history injectivity.
 from __future__ import annotations
 
 from collections import defaultdict
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List
 
 
 def semver_core(semver: str) -> str:

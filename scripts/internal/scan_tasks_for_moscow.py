@@ -6,16 +6,16 @@ Part of E6:S01:T34 - UKW MoSCOW Prioritization Missing implementation.
 
 import re
 import sys
-import yaml
-from pathlib import Path
-from typing import Dict, List, Optional, Tuple
 from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional
 
 _SCRIPTS_DIR = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS_DIR))
 
 from rw_config_loader import load_rw_config  # noqa: E402
+
 
 def extract_task_metadata(task_file: Path) -> Optional[Dict]:
     """Extract metadata from a task document."""
@@ -70,7 +70,7 @@ def extract_task_metadata(task_file: Path) -> Optional[Dict]:
     story_priority = "UNKNOWN"
     epic_priority = "UNKNOWN"
     
-    story_file = task_file.parent.parent / f"Story-{story:03d}-*.md"
+    task_file.parent.parent / f"Story-{story:03d}-*.md"
     story_files = list(task_file.parent.parent.glob(f"Story-{story:03d}-*.md"))
     if not story_files:
         story_files = list(task_file.parent.parent.glob(f"Story-{story}-*.md"))
@@ -144,10 +144,9 @@ def scan_all_tasks(config: Optional[Dict] = None) -> List[Dict]:
     """Scan all task documents and extract metadata."""
     if config and config.get('use_kanban'):
         kanban_root = Path(config.get('kanban_root', 'docs/project-management/kanban'))
-        task_pattern = config.get('task_doc_pattern', 'epics/Epic-{epic}/Story-{story}/T{task}-*.md')
+        config.get('task_doc_pattern', 'epics/Epic-{epic}/Story-{story}/T{task}-*.md')
     else:
         kanban_root = Path('docs/project-management/kanban')
-        task_pattern = 'epics/Epic-{epic}/Story-{story}/T{task}-*.md'
     
     tasks = []
     

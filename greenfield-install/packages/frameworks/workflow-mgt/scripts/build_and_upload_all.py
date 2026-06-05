@@ -12,10 +12,9 @@ Usage:
     python build_and_upload_all.py [--skip-build] [--skip-tags] [--skip-upload] [--token TOKEN] [--repo REPO]
 """
 
-import sys
 import subprocess
+import sys
 from pathlib import Path
-from typing import Optional
 
 # Add script directory to path
 SCRIPT_DIR = Path(__file__).parent
@@ -23,22 +22,22 @@ PROJECT_ROOT = SCRIPT_DIR.parent.parent.parent.parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 # Import build functions
-from build_package import (
-    validate_framework_name,
-    validate_version,
-    find_framework_directory,
-    validate_framework_structure,
-    collect_framework_files,
-    generate_manifest_json,
-    create_tar_gz_archive,
-    compute_sha256_hash,
-    create_hash_file,
-    update_manifest_hash,
-    add_manifest_to_archive
-)
-
 import argparse
 import os
+
+from build_package import (
+    add_manifest_to_archive,
+    collect_framework_files,
+    compute_sha256_hash,
+    create_hash_file,
+    create_tar_gz_archive,
+    find_framework_directory,
+    generate_manifest_json,
+    update_manifest_hash,
+    validate_framework_name,
+    validate_framework_structure,
+    validate_version,
+)
 
 FRAMEWORKS_ROOT = SCRIPT_DIR.parent.parent
 OUTPUT_DIR = FRAMEWORKS_ROOT.parent / "dist" / "packages"
@@ -134,7 +133,7 @@ def create_git_tags() -> bool:
         print(f"\n🏷️  Creating tag: {tag}")
         
         try:
-            result = subprocess.run(
+            subprocess.run(
                 ["git", "tag", "-a", tag, "-m", message],
                 capture_output=True,
                 text=True,
@@ -162,7 +161,7 @@ def push_tags() -> bool:
     print("\n📤 Pushing tags to origin...")
     
     try:
-        result = subprocess.run(
+        subprocess.run(
             ["git", "push", "origin", "--tags"],
             capture_output=True,
             text=True,
@@ -183,11 +182,10 @@ def upload_packages(token: str, repo: str, verbose: bool = False) -> bool:
     # Import upload functions
     sys.path.insert(0, str(SCRIPT_DIR))
     from upload_to_github_release import (
-        get_release_by_tag,
         create_release,
-        upload_asset
+        get_release_by_tag,
+        upload_asset,
     )
-    import requests
     
     success_count = 0
     

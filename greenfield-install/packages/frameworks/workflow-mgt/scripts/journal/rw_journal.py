@@ -7,13 +7,11 @@ Deterministic per-step journaling for the Release Workflow (RW).
 from __future__ import annotations
 
 import json
-import os
 import uuid
-from dataclasses import dataclass, field, asdict
+from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-
 
 JOURNAL_DIR = Path("docs/journals")
 

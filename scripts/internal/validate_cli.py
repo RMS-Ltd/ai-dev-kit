@@ -5,9 +5,8 @@ Validation script for ai-dev-kit CLI tool.
 Runs comprehensive validation checks before release.
 """
 
-import sys
 import subprocess
-from pathlib import Path
+import sys
 
 
 def run_command(cmd: list, description: str) -> bool:

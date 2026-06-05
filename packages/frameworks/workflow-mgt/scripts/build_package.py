@@ -13,13 +13,13 @@ Example:
 """
 
 import argparse
-import json
 import hashlib
-import tarfile
-import sys
+import json
 import os
-import tempfile
 import shutil
+import sys
+import tarfile
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -250,7 +250,7 @@ def generate_manifest_json(
     }
     
     # Extract framework metadata
-    framework_metadata = extract_framework_metadata(framework_dir, framework_name, version)
+    extract_framework_metadata(framework_dir, framework_name, version)
     
     # Calculate package contents
     contents = calculate_package_contents(files, framework_dir)

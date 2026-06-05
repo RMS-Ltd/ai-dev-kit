@@ -44,8 +44,7 @@ import sys
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
-
+from typing import Dict, List, Optional, Set
 
 # ---------------------------------------------------------------------------
 # Import shared helpers from the pre-commit validator (FR-092 Wave 5)

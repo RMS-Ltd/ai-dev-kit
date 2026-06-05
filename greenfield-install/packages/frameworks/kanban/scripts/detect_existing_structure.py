@@ -18,11 +18,10 @@ Arguments:
 
 import argparse
 import json
-import os
 import re
-from pathlib import Path
-from typing import Dict, List, Optional, Set
 from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional
 
 
 class KanbanStructureDetector:
@@ -227,7 +226,7 @@ class KanbanStructureDetector:
         """Identify potential conflicts with canonical framework epics."""
         # Canonical framework epics (1-8 are core, 9-21+ are ancillary)
         canonical_core_epics = set(range(1, 9))
-        canonical_ancillary_epics = set(range(9, 22))
+        set(range(9, 22))
         
         detected_epic_numbers = {epic["epic_number"] for epic in self.epics}
         

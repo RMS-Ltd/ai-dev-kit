@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import re
-from typing import Callable, Tuple
+from typing import Tuple
 
 PERPETUAL_TASK_MIN = 101
 

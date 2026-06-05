@@ -4,11 +4,12 @@ Configuration management for the ai-dev-kit CLI tool.
 Handles reading and writing of .ai-dev-kit.yaml configuration files.
 """
 
-import yaml
 from pathlib import Path
-from typing import Dict, Optional, Any, List
-from cli.utils import get_project_root, print_error, print_warning
+from typing import Any, Dict, List, Optional
 
+import yaml
+
+from cli.utils import get_project_root, print_error
 
 CONFIG_FILENAME = ".ai-dev-kit.yaml"
 

@@ -19,8 +19,16 @@ import yaml
 script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
-from semver_converter import format_semver, load_semver_registry, save_semver_registry, semver_core  # noqa: E402
-from task_touch_registry_audit import audit_registry, format_report, has_collisions  # noqa: E402
+from semver_converter import (  # noqa: E402
+    format_semver,
+    load_semver_registry,
+    save_semver_registry,
+)
+from task_touch_registry_audit import (  # noqa: E402
+    audit_registry,
+    format_report,
+    has_collisions,
+)
 
 INTERNAL_RE = re.compile(r"^(\d+)\.(\d+)\.(\d+)\.(\d+)\+(\d+)$")
 

@@ -13,7 +13,10 @@ sys.path.insert(0, str(_SCRIPT_DIR))
 
 from extract_embedded_tasks import extract_embedded_tasks  # noqa: E402
 from generate_task_doc import generate_task_doc  # noqa: E402
-from update_story_refs import remove_embedded_sections, wire_checklist_links  # noqa: E402
+from update_story_refs import (  # noqa: E402
+    remove_embedded_sections,
+    wire_checklist_links,
+)
 
 
 @dataclass

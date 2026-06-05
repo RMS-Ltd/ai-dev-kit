@@ -17,7 +17,10 @@ scripts_path = Path(__file__).parent
 if str(scripts_path) not in sys.path:
     sys.path.insert(0, str(scripts_path))
 
-from intake_dependency_wiring import IntakeDependencyWiring, IntakeDependencyWiringResult, DependencyReference
+from intake_dependency_wiring import (
+    IntakeDependencyWiring,
+    IntakeDependencyWiringResult,
+)
 
 
 def test_dependency_extraction():

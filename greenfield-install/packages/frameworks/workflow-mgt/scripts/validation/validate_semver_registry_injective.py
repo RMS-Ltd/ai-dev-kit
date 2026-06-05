@@ -11,6 +11,7 @@ import argparse
 import sys
 from pathlib import Path
 
+
 # Project root: cwd or parent walk for semver-registry.yaml
 def _find_project_root(start: Path) -> Path:
     for parent in [start, *start.parents]:

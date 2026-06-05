@@ -23,9 +23,8 @@ from validate_version_bump import (
     is_perpetual_task,
     parse_requested_task_id,
     validate_perpetual_build_increment,
-    validate_task_doc_alignment,
-    validate_task_doc_fields,
     validate_perpetual_guardrails,
+    validate_task_doc_fields,
     validate_version_bump,
 )
 

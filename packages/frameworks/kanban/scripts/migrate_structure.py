@@ -20,19 +20,19 @@ Arguments:
 
 import argparse
 import json
+import re
 import shutil
 import sys
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
-from datetime import datetime
-import re
 
 # Import reference updater from same directory
 _SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(_SCRIPT_DIR))
-from reference_updater import ReferenceUpdater
-from agentic_mapper import AgenticTaskMapper
 import kanban_paths as kp
+from agentic_mapper import AgenticTaskMapper
+from reference_updater import ReferenceUpdater
 
 
 class KanbanStructureMigrator:
@@ -464,7 +464,7 @@ class KanbanStructureMigrator:
             
             # Get intelligent mappings
             agentic_mappings = mapper.map_tasks_to_canonical_stories()
-            explanations = mapper.generate_explanations()
+            mapper.generate_explanations()
             
             # Filter mappings for this epic
             epic_mappings = [m for m in agentic_mappings if m.get("source_epic") == user_epic_num]

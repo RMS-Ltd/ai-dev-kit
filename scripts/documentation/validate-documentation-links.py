@@ -10,15 +10,12 @@ Usage:
     python3 validate-documentation-links.py --external
 """
 
-import os
-import sys
-import re
-import json
 import argparse
+import json
+import re
+import sys
 from pathlib import Path
-from typing import Dict, List, Tuple, Optional
-from urllib.parse import urlparse
-import subprocess
+from typing import Dict, List, Optional, Tuple
 
 # Link patterns
 MARKDOWN_LINK_PATTERN = re.compile(r'\[([^\]]+)\]\(([^\)]+)\)')

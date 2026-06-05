@@ -18,21 +18,26 @@ Usage:
 """
 
 import argparse
-import sys
 import subprocess
+import sys
 from pathlib import Path
-from typing import Dict, Optional
 
 # Add scripts directory to path
 scripts_path = Path(__file__).parent.parent
 if str(scripts_path) not in sys.path:
     sys.path.insert(0, str(scripts_path))
 
-from changelog.changelog_utils import load_rw_config, get_main_changelog_path, get_archive_changelog_path, get_archival_policy, extract_changelog_entries
 from changelog.analyze_changelog_state import analyze_changelog_state
-from changelog.remove_duplicates import remove_duplicates
-from changelog.identify_archival_entries import identify_archival_entries
 from changelog.archive_entries import archive_entries
+from changelog.changelog_utils import (
+    extract_changelog_entries,
+    get_archival_policy,
+    get_archive_changelog_path,
+    get_main_changelog_path,
+    load_rw_config,
+)
+from changelog.identify_archival_entries import identify_archival_entries
+from changelog.remove_duplicates import remove_duplicates
 
 
 def run_git_stage(changelog_path: Path, archive_path: Path) -> bool:

@@ -8,10 +8,10 @@ Part of: Epic 8, Story 2 - Additional Validators
 Task: E8:S02:T03 - Establish validation patterns
 """
 
-import sys
 import re
+import sys
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 
 # Add validators directory to path
 validators_path = Path(__file__).parent.parent
@@ -22,21 +22,21 @@ if str(validators_path) not in sys.path:
 try:
     from base import (
         BaseValidator,
-        ValidatorConfig,
-        ValidationResult,
-        ValidationStatus,
         ValidationIssue,
-        ValidationSeverity
+        ValidationResult,
+        ValidationSeverity,
+        ValidationStatus,
+        ValidatorConfig,
     )
 except ImportError:
     # Fallback: try package import
     from validators.base import (
         BaseValidator,
-        ValidatorConfig,
-        ValidationResult,
-        ValidationStatus,
         ValidationIssue,
-        ValidationSeverity
+        ValidationResult,
+        ValidationSeverity,
+        ValidationStatus,
+        ValidatorConfig,
     )
 
 

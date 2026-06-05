@@ -6,7 +6,7 @@ This module defines the abstract base class that all backend implementations mus
 
 from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import Optional, Dict, Any
+from typing import Any, Dict, Optional
 
 
 class BackendBase(ABC):

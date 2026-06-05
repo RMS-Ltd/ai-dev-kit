@@ -12,13 +12,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from upload_to_github_release import (
-    parse_arguments as parse_upload_args,
-    get_release,
-    create_release,
-    upload_asset,
-    main as upload_main
-)
+from upload_to_github_release import main as upload_main
 
 PACKAGES_DIR = SCRIPT_DIR.parent.parent / "dist" / "packages"
 REPO = "RMS-Ltd/ai-dev-kit"

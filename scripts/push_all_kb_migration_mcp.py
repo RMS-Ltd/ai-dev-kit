@@ -13,7 +13,6 @@ Usage:
 Excludes: stub_* and _push_* files.
 """
 import json
-import os
 from pathlib import Path
 
 MCP_DIR = Path(__file__).resolve().parent.parent / "docs" / "knowledge" / "kb-migration-mcp-args"

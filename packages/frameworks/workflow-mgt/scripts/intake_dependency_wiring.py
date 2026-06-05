@@ -14,11 +14,11 @@ Usage:
     result = wiring.wire_dependencies(fr_br_path, created_tasks)
 """
 
-import sys
 import re
-from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+import sys
 from dataclasses import dataclass
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 
 # Import intake components
 try:
@@ -355,7 +355,7 @@ class IntakeDependencyWiring:
             if match:
                 epic_num = match.group(1)
                 story_num = match.group(2)
-                task_num = match.group(3)
+                match.group(3)
                 epic_dir = self.kanban_path / "epics" / f"Epic-{epic_num}"
                 story_pattern = f"Story-{story_num.zfill(3)}-*.md"
                 if epic_dir.exists():

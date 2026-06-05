@@ -126,8 +126,9 @@ def test_rewrite_no_match_unchanged():
 
 def test_fixture_board_validator():
     sys.path.insert(0, str(THIS_DIR / "validation"))
-    import validate_kanban_state_icons as vsci  # noqa: E402
     import tempfile
+
+    import validate_kanban_state_icons as vsci  # noqa: E402
 
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)

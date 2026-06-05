@@ -22,7 +22,6 @@ if str(SCRIPT_DIR) not in sys.path:
 
 from task_split.engine import build_split_plan  # noqa: E402
 
-
 FIXTURES = {
     "mixed_responsibility": {
         "source_epic": 3,

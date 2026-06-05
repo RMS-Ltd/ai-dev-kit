@@ -7,14 +7,15 @@ ensuring the release uses the external-facing SemVer version instead
 of the internal version.
 """
 
-import os
-import sys
 import argparse
+import os
 import re
-import requests
 import subprocess
-from typing import Optional, Dict
+import sys
 from pathlib import Path
+from typing import Dict, Optional
+
+import requests
 
 # Add semver_converter to path for strategy detection
 script_dir = Path(__file__).parent
@@ -61,7 +62,7 @@ def load_env_local():
                         # Only set if not already in environment
                         if key and value and key not in os.environ:
                             os.environ[key] = value
-        except Exception as e:
+        except Exception:
             # Silently fail - don't break if .env.local has issues
             pass
 

@@ -20,7 +20,6 @@ if str(_KANBAN_DIR) not in sys.path:
 
 from ukw_syntax_parser import parse_single_task_id
 
-
 STATUS_RE = re.compile(r"^\*\*Status:\*\*\s*(.+?)\s*$", re.IGNORECASE | re.MULTILINE)
 IPW_MARKER_RE = re.compile(r"\b(?:IPW|ICW)-E\d+S\d+T\d+\b", re.IGNORECASE)
 IMPLEMENTATION_SIGNAL_RES = [

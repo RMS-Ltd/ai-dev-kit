@@ -21,12 +21,12 @@ if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
 from semver_converter import (  # noqa: E402
+    _ensure_task_touch_mode,
+    _find_mapping_entry,
     convert_version_string,
     get_rw_tag_info,
     get_semver_mapping_strategy,
     load_semver_registry,
-    _find_mapping_entry,
-    _ensure_task_touch_mode,
 )
 
 

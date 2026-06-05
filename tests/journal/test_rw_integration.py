@@ -1,14 +1,12 @@
 """Integration tests for RW journal, recovery report, and rollback contract."""
 
 import json
-import os
 from pathlib import Path
 
 import pytest
-
-from journal.rw_journal import RWJournal
 from journal.recovery_report import RecoveryReport
 from journal.rollback_contract import RollbackContract
+from journal.rw_journal import RWJournal
 
 
 class TestSimulatedRWRun:
@@ -71,7 +69,7 @@ class TestSimulatedRWRun:
 
     def test_successful_run_journal(self, tmp_path: Path):
         journal_dir = tmp_path / "journals"
-        run_id = self._simulate_successful_run(journal_dir)
+        self._simulate_successful_run(journal_dir)
 
         files = RWJournal.list_runs(journal_dir)
         assert len(files) == 1
@@ -83,7 +81,7 @@ class TestSimulatedRWRun:
 
     def test_failed_run_recovery_report(self, tmp_path: Path):
         journal_dir = tmp_path / "journals"
-        run_id = self._simulate_failed_run(journal_dir)
+        self._simulate_failed_run(journal_dir)
 
         files = RWJournal.list_runs(journal_dir)
         loaded = RWJournal.load(files[0])

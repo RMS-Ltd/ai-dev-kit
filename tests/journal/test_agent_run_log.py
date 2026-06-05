@@ -5,7 +5,6 @@ import tempfile
 from pathlib import Path
 
 import pytest
-
 from journal.agent_run_log import SCHEMA_VERSION, AgentRunLog, StepSpec
 
 

@@ -18,7 +18,7 @@ import json
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict
 
 
 def generate_dashboard_markdown(health_data: Dict[str, Dict], output_path: Path) -> str:

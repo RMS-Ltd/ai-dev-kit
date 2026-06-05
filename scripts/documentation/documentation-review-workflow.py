@@ -9,13 +9,12 @@ Usage:
     python3 documentation-review-workflow.py --cadence weekly --assign
 """
 
-import os
-import sys
-import json
 import argparse
-from pathlib import Path
+import json
+import sys
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional
+from pathlib import Path
+from typing import Dict, Optional
 
 # Review cadences
 CADENCES = {

@@ -11,10 +11,10 @@ import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+from cli.adk_version_display import print_session_banner, resolve_install_adk_version
 from cli.commands import BaseCommand
 from cli.config import Config
 from cli.utils import get_project_root, print_error, print_info
-from cli.adk_version_display import print_session_banner, resolve_install_adk_version
 
 
 class LogsCommand(BaseCommand):

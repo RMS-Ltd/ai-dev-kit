@@ -6,9 +6,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from est_format import (  # noqa: E402
+    find_unpadded_est_violations,
     format_est_compact,
     format_est_reference,
-    find_unpadded_est_violations,
     normalize_est_inline_in_text,
 )
 

@@ -11,23 +11,17 @@ with a maintainer manifest (see ``docs/maintenance/semver-registry-collision-rep
 RW Step 9: ``validate_semver_registry_injective.py``.
 """
 
-import subprocess
 import re
-import yaml
-from pathlib import Path
-from typing import List, Tuple, Dict, Any
+import subprocess
 import sys
+from pathlib import Path
+from typing import Dict, List, Tuple
 
 # Add the script directory to the path so we can import the converter
 script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
-from semver_converter import (
-    load_semver_registry,
-    save_semver_registry,
-    set_epic_count,
-    get_task_touch_counter
-)
+from semver_converter import load_semver_registry, save_semver_registry
 
 
 def get_git_tags() -> List[Tuple[str, str]]:

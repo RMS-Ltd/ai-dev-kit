@@ -15,14 +15,13 @@ Usage:
 """
 
 import argparse
-import json
 import os
 import re
 import sys
-from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from dataclasses import dataclass
 from datetime import datetime
-from dataclasses import dataclass, asdict
+from pathlib import Path
+from typing import Dict, List, Optional
 
 
 @dataclass

@@ -1,12 +1,10 @@
 """Unit tests for rw_journal module."""
 
 import json
-import tempfile
 from pathlib import Path
 
 import pytest
-
-from journal.rw_journal import RWJournal, RunEntry, StepEntry
+from journal.rw_journal import RunEntry, RWJournal, StepEntry
 
 
 class TestStepEntry:

@@ -13,12 +13,12 @@ Usage:
     result = doc_update.update_document(fr_br_path, intake_decision, created_tasks, version_marker)
 """
 
-import sys
 import re
-from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+import sys
 from dataclasses import dataclass
 from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 
 # Import intake components
 try:

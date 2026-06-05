@@ -8,9 +8,9 @@ Part of: Epic 8, Story 1 - Code Generators
 Task: E8:S01:T01 - Create generator framework
 """
 
-from pathlib import Path
-from typing import Dict, Any, Optional
 import re
+from pathlib import Path
+from typing import Any, Dict, Optional
 
 
 class TemplateEngine:
@@ -59,7 +59,7 @@ class TemplateEngine:
             content = template_path.read_text(encoding='utf-8')
             self._template_cache[template_name] = content
             return content
-        except Exception as e:
+        except Exception:
             return None
     
     def render(self, template: str, context: Dict[str, Any]) -> str:

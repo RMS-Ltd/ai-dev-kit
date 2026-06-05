@@ -10,19 +10,17 @@ Story: Story 7 (Trigger-Aware Release Workflow)
 Task: Task 3 (Implement sub-workflow execution engine)
 """
 
-import subprocess
 import json
 import logging
+import subprocess
 import time
-from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-import uuid
+from typing import Any, Dict, List, Optional
 
-from journal.forensic_log import run_subprocess_logged
 from journal import checkpoint_store
+from journal.forensic_log import run_subprocess_logged
 
 
 class WorkflowStatus(Enum):
@@ -385,7 +383,6 @@ class WorkflowExecutor:
             raise ValueError(f"Workflow failure is not transient, cannot retry: {workflow_id}")
         
         # Retry with backoff
-        import time
         for attempt in range(max_retries):
             if attempt > 0:
                 if backoff == 'exponential':
@@ -399,7 +396,7 @@ class WorkflowExecutor:
                 time.sleep(wait_time)
             
             # Re-execute workflow
-            workflow_def = self.workflows[workflow_id]
+            self.workflows[workflow_id]
             result = self.execute_workflow(workflow_id, checkpoint=last_result.checkpoint)
             
             if result.status == WorkflowStatus.COMPLETED:

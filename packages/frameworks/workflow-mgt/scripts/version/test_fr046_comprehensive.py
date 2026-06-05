@@ -10,20 +10,13 @@ Tests the complete RW SemVer tagging functionality including:
 """
 
 import sys
-import tempfile
-import shutil
 from pathlib import Path
 
 # Add the script directory to the path
 script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
-from semver_converter import (
-    get_rw_tag_info,
-    create_rw_tags,
-    get_semver_mapping_strategy,
-    load_rw_config
-)
+from semver_converter import get_rw_tag_info, get_semver_mapping_strategy
 
 
 def test_configuration_detection():
@@ -159,7 +152,7 @@ def test_github_release_integration():
             
             # Test that we can import the new functions
             sys.path.insert(0, str(script_dir.parent))
-            from create_github_release import get_release_tag_info, create_or_update_release_auto
+            from create_github_release import get_release_tag_info
             print("✓ GitHub release functions imported successfully")
             
             # Test tag info function

@@ -3,7 +3,8 @@ Backend selection logic for choosing appropriate backends.
 """
 
 from pathlib import Path
-from typing import Optional, List
+from typing import List, Optional
+
 from cli.backends.registry import get_registry
 from cli.utils import print_info, print_warning
 
