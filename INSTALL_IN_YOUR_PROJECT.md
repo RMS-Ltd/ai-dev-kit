@@ -64,6 +64,54 @@ Other guides under [`docs/documentation/user-docs/`](docs/documentation/user-doc
 
 ---
 
+## Lean vendor install (`greenfield-install/`) — FR-110
+
+**Recommended for greenfield adopters** who vendor AI Dev Kit under `vendor/` (or `.ai-dev-kit/`): install **only the framework packages**, not the full maintainer repository (~27 MiB tracked vs **~11 MiB** lean).
+
+| What adopters need | What they do **not** need |
+| ------------------ | ------------------------ |
+| `packages/frameworks/**` (includes `workflow-mgt/scripts/`, `kanban/scripts/`) | Repo-root `scripts/` (Notion/KB maintainer tooling) |
+| Short `README` at vendor root | `docs/project-management/` (ai-dev-kit kanban) |
+| Published install docs (link below) | `portal/`, changelog archive, `tests/` |
+
+### Target layout (shipping in [FR-110](docs/project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md))
+
+```
+vendor/ai-dev-kit/                 # or sparse-checkout of greenfield-install/ only
+├── README.md
+└── packages/frameworks/
+    ├── workflow-mgt/
+    └── kanban/
+```
+
+Install commands run from the **vendor root** (paths unchanged):
+
+```bash
+python3 "packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" --project-root ".."
+# --project-root = your host project root (parent of vendor/)
+```
+
+### Interim (until `greenfield-install/` directory lands on `main`)
+
+1. Submodule the public repo at a release tag (see [Method 2](#method-2-git-submodule-available-now)).
+2. Use **only** `packages/frameworks/` from the checkout — do not copy maintainer trees into your app repo.
+3. Optional **sparse checkout** (smaller `.git` working tree):
+
+   ```bash
+   git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
+   cd vendor/ai-dev-kit
+   git sparse-checkout init --cone
+   git sparse-checkout set greenfield-install   # when directory exists on tag
+   # Until then:
+   git sparse-checkout set packages/frameworks
+   ```
+
+4. Bump upstream: `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.949` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
+
+**Disk budget:** ~11 MiB frameworks + git pack history (sparse checkout reduces working tree; pack size depends on clone depth).
+
+---
+
 ## 🚀 Installation Methods
 
 ## Greenfield Install Specification (Wave 1 lock)
@@ -456,6 +504,8 @@ python3 "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" \
 - [`install-receipt-reference.md`](docs/documentation/user-docs/install-receipt-reference.md) - JSON install receipt written under `logs/ai-dev-kit/install/` when your project has `.ai-dev-kit.yaml` (FR-062)
 
 ### Method 2: Git Submodule (Available Now)
+
+**Prefer the [lean vendor path](#lean-vendor-install-greenfield-install--fr-110)** (framework packages only). Full-repo submodule works but ships maintainer corpus you will not run.
 
 Add ai-dev-kit as a Git submodule, copy frameworks, then run installers:
 

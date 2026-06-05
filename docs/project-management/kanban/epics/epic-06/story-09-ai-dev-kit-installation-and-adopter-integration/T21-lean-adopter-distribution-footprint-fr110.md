@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 21: Lean adopter distribution footprint (FR-110)
 
 **Task ID:** E06:S09:T21  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-05  
-**Version:** v0.6.9.21+2  
+**Version:** v0.6.9.21+3  
 **Code:** E06S09T21
 
 **Upstream:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
@@ -108,7 +108,7 @@ Phase 0 must validate installer path assumptions (e.g. `install_greenfield_path.
 
 - [ ] Phase 0: Path audit — confirm installer/validator imports from lean root
 - [ ] Phase 1: Scaffold `greenfield-install/` + sync script + initial sync
-- [ ] Phase 2: Docs (`README`, `INSTALL_IN_YOUR_PROJECT.md` lean section)
+- [x] Phase 2: Docs (`README`, `INSTALL_IN_YOUR_PROJECT.md` lean section) — **v0.6.9.21+3** (interim + target contract)
 - [ ] Phase 3: CI smoke + drift guard
 - [ ] Phase 4: Optional release tarball; status reconciliation
 

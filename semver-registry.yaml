@@ -77,7 +77,7 @@ rc_0:
     (5,8): 65
   task_touch_mode:
     epic_count: 4
-    task_touch_counter: 949
+    task_touch_counter: 950
     mapping_history:
     - internal_version: 0.3.2.12+2
       semver: 0.4.727+2
@@ -1832,6 +1832,14 @@ rc_0:
       story: 9
       task: 21
       build: 2
+    - internal_version: 0.6.9.21+3
+      semver: 0.4.950+3
+      patch: 950
+      rc: 0
+      epic: 6
+      story: 9
+      task: 21
+      build: 3
 rc_1:
   epic_to_minor: {}
   story_to_patch: {}
