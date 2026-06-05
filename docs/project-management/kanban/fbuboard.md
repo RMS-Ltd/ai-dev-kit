@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – FBU Prioritization Board
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T09** — BR-095 closure v0.8.3.9+1)
-**Version Context:** v0.8.3.9+1
+**Last Updated:** 2026-06-05 (RW **E08:S03:T10** — BR-096 closure v0.8.3.10+1)
+**Version Context:** v0.8.3.10+1
 
 **Active board contract:** Rows are **open FBU work** (OPEN / TODO / PROPOSED with active task), including **Could Have** backlog. Remove **terminal** FBUs and archive/journal prose (use [`fbu-completed.md`](fbu-completed.md)), not filed low-priority queue items.
 
@@ -30,8 +30,6 @@ housekeeping_policy: keep
 - **BR-061** – Task-touch SemVer PATCH / registry counter - 🟢 OPEN (HIGH, fix attempted **v0.3.2.12+4**) | [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | [—IPP—](../../implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md) | Last modified: 2026-06-04 18:45 UTC
 
 ### Should Have (S) - Important Items
-
-- **BR-096** – CodeQL incomplete URL substring sanitization in portal identity test - 🔄 IN PROGRESS (MEDIUM, fix ready — pending RW) | [BR-096](fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md) | [E08:S03:T10](epics/epic-08/story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md) | Last modified: 2026-06-05 21:00 UTC
 
 - **BR-093** – Docusaurus CI duplicate build + deploy jobs waste minutes - 🟢 OPEN (MEDIUM, fix attempted **v0.5.9.14+2** — pending Actions verification on `main`) | [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [E05:S09:T14](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) | —No IPP— | Last modified: 2026-06-05 18:56 UTC
 

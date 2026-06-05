@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.9+1] - 05-06-26
+## [0.8.3.10+1] - 05-06-26
 
-E08:S03:T09 — **BR-095:** Replace insecure `tempfile.mktemp` with `NamedTemporaryFile` in intake test script (CodeQL CWE-377). SemVer **v0.4.896+1**.
+E08:S03:T10 — **BR-096:** Replace bare URL substring check with `urlparse` hostname validation in portal identity test (CodeQL CWE-020). SemVer **v0.4.897+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.9+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.10+1.md)
 
 ---
 

@@ -1,0 +1,35 @@
+{
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 10,
+    "task_id": "E08:S03:T10",
+    "version_string": "v0.8.3.10+1"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "fbuboard", "story_doc", "epic_doc", "kanban_completed", "fbu_completed"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md"],
+      "touched": true
+    },
+    "fbu_doc": {
+      "paths": ["docs/project-management/kanban/fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md"],
+      "touched": true
+    },
+    "kboard": { "paths": ["docs/project-management/kanban/kboard.md"], "touched": true },
+    "fbuboard": { "paths": ["docs/project-management/kanban/fbuboard.md"], "touched": true }
+  },
+  "stamp_evidence": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "evidence_mode": "manifest",
+    "manifest_path": "docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-structure-prune-v0-8-3-10plus1-e8s3t10.json"
+  },
+  "timestamp_utc": "2026-06-05 01:06 UTC",
+  "notes": "RW E08:S03:T10 --art: CodeQL py/incomplete-url-substring-sanitization — urlparse hostname check in test_portal_fr065_identity.py."
+}

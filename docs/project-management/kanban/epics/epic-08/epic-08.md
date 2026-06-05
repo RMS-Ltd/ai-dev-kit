@@ -27,7 +27,7 @@ housekeeping_policy: keep
 - [x] **E8:S02 – Additional Validators** - ✅ COMPLETE (v0.8.2.3+1 – All tasks complete)
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
-- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.9+1 – T10 BR-096 CodeQL URL substring fix in progress)
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.10+1 – T10 BR-096 CodeQL URL substring fix complete)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
 
 - [ ] **E8:S04 – Tooling & Automation Package Implementation Review** - TODO (v0.8.4.0+0)

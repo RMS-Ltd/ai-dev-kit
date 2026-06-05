@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.9+1 – **T09 / BR-095** complete)
-**Version:** v0.8.3.9+1
+**Last updated:** 2026-06-05 (v0.8.3.10+1 – **T10 / BR-096** complete)
+**Version:** v0.8.3.10+1
 **Code:** E8S03
 
 ---
@@ -40,7 +40,7 @@ housekeeping_policy: keep
 
 - [x] **E08:S03:T09 – CodeQL insecure temporary file — replace `mktemp` (BR-095)** — ✅ COMPLETE (v0.8.3.9+1) — [Task doc](story-03-automation-scripts/T09-codeql-insecure-temporary-file-mktemp-br095.md) | [BR-095](../../fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
 
-- [ ] **E08:S03:T10 – CodeQL incomplete URL substring sanitization (BR-096)** — 🔄 IN PROGRESS — [Task doc](story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md) | [BR-096](../../fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
+- [x] **E08:S03:T10 – CodeQL incomplete URL substring sanitization (BR-096)** — ✅ COMPLETE (v0.8.3.10+1) — [Task doc](story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md) | [BR-096](../../fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T09** — BR-095 CodeQL mktemp fix v0.8.3.9+1)
-**Version:** v0.8.3.9+1
+**Last Updated:** 2026-06-05 (RW **E08:S03:T10** — BR-096 CodeQL URL substring fix v0.8.3.10+1)
+**Version:** v0.8.3.10+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -21,6 +21,9 @@ housekeeping_policy: keep
 ## 20 Most Recently Completed Tasks
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
+- **[E08:S03:T10](epics/epic-08/story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md)** — **BR-096**: CodeQL incomplete URL substring sanitization — `urlparse` hostname check in portal test.
+  **Completed:** `2026-06-05T01:06:43Z` | **Version:** `v0.8.3.10+1` | **Agent:** `RW --art` | [BR-096](fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
+
 - **[E08:S03:T09](epics/epic-08/story-03-automation-scripts/T09-codeql-insecure-temporary-file-mktemp-br095.md)** — **BR-095**: CodeQL insecure `tempfile.mktemp` — replace with `NamedTemporaryFile`.
   **Completed:** `2026-06-05T01:03:42Z` | **Version:** `v0.8.3.9+1` | **Agent:** `RW --art` | [BR-095](fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
 
