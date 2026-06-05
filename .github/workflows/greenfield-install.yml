@@ -12,7 +12,9 @@ name: Greenfield install
       - "scripts/sync_greenfield_install.py"
       - "scripts/greenfield-install-manifest.yaml"
       - "scripts/test_sync_greenfield_install.py"
+      - "scripts/test_greenfield_container.py"
       - ".github/workflows/greenfield-install.yml"
+      - ".github/workflows/greenfield-release.yml"
   pull_request:
     paths:
       - "greenfield-install/**"
@@ -20,7 +22,9 @@ name: Greenfield install
       - "scripts/sync_greenfield_install.py"
       - "scripts/greenfield-install-manifest.yaml"
       - "scripts/test_sync_greenfield_install.py"
+      - "scripts/test_greenfield_container.py"
       - ".github/workflows/greenfield-install.yml"
+      - ".github/workflows/greenfield-release.yml"
 
 permissions:
   contents: read
@@ -56,4 +60,31 @@ jobs:
             --dry-run --non-interactive --project-root .
 
       - name: Pytest sync + footprint guards
-        run: python -m pytest scripts/test_sync_greenfield_install.py -q
+        run: python -m pytest scripts/test_sync_greenfield_install.py scripts/test_greenfield_container.py -q
+
+  container-smoke:
+    runs-on: ubuntu-latest
+    needs: greenfield-install
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build image and extract smoke (ADR-021)
+        run: |
+          set -euo pipefail
+          docker build -f greenfield-install/Dockerfile -t adk-greenfield:ci greenfield-install
+          cid=$(docker create adk-greenfield:ci)
+          trap 'docker rm -f "$cid" >/dev/null 2>&1 || true' EXIT
+          rm -rf /tmp/adk-vendor
+          mkdir -p /tmp/adk-vendor
+          docker cp "$cid:/opt/adk/." /tmp/adk-vendor/
+          test -f /tmp/adk-vendor/README.md
+          test -f /tmp/adk-vendor/FOOTPRINT.md
+          test -f /tmp/adk-vendor/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py
+          python /tmp/adk-vendor/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py \
+            --dry-run --non-interactive --project-root /tmp/adk-vendor

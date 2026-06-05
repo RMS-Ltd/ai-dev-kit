@@ -72,12 +72,18 @@ def find_project_root(start: Optional[Path] = None, config_filename: str = "rw-c
     """
     Walk upwards from `start` (or cwd) until `rw-config.yaml` is found.
 
+    When multiple `rw-config.yaml` files exist on the path (e.g. consumer repo root
+    and `vendor/ai-dev-kit/`), returns the **outermost** match so consumer config wins.
+
     Returns the best-effort last directory tried when the file is not found.
     """
 
     current = (start or Path.cwd()).resolve()
+    outermost: Optional[Path] = None
     for parent in [current, *current.parents]:
         if (parent / config_filename).exists():
-            return parent
+            outermost = parent
+    if outermost is not None:
+        return outermost
     return current
 

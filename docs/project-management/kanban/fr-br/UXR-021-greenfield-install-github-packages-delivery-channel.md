@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (greenfield distribution design session)  
 **Priority:** MEDIUM (Should Have — MoSCOW **S**)  
-**Status:** ACCEPTED  
+**Status:** IMPLEMENTED (v0.6.9.23+2)  
 **Implementing Task:** [E06:S09:T23](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md)
 
 ---
@@ -116,11 +116,11 @@ Submodule/copy remain the **documented default**; registry paths are **alternate
 
 ## Acceptance Criteria (implementation verification)
 
-- [ ] **AC1:** Tagged release publishes a `ghcr.io` image whose filesystem contains `greenfield-install/` layout at `/opt/adk/` (or documented equivalent).
-- [ ] **AC2:** Documented extract flow places files under `vendor/ai-dev-kit/` and `install_greenfield_path.py --dry-run` succeeds from host project root.
-- [ ] **AC3:** Image tag matches external SemVer string shown in install docs ([UXR-016](UXR-016-install-setup-interactive-feedback-external-semver-version.md) alignment).
-- [ ] **AC4:** Publish pipeline fails if `sync_greenfield_install.py --check` would fail (no drift).
-- [ ] **AC5:** `INSTALL_IN_YOUR_PROJECT.md` lists registry acquisition as **alternate** path; submodule/copy remain primary.
+- [x] **AC1:** Tagged release publishes a `ghcr.io` image whose filesystem contains `greenfield-install/` layout at `/opt/adk/` (or documented equivalent). — **v0.6.9.23+2**
+- [x] **AC2:** Documented extract flow places files under `vendor/ai-dev-kit/` and `install_greenfield_path.py --dry-run` succeeds from host project root. — **v0.6.9.23+2**
+- [x] **AC3:** Image tag matches external SemVer string shown in install docs ([UXR-016](UXR-016-install-setup-interactive-feedback-external-semver-version.md) alignment). — **v0.6.9.23+2**
+- [x] **AC4:** Publish pipeline fails if `sync_greenfield_install.py --check` would fail (no drift). — **v0.6.9.23+2**
+- [x] **AC5:** `INSTALL_IN_YOUR_PROJECT.md` lists registry acquisition as **alternate** path; submodule/copy remain primary. — **v0.6.9.23+2**
 
 ---
 

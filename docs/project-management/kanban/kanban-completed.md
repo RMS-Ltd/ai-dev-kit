@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E06:S09:T23](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md)** — Greenfield GHCR delivery (`ghcr.io/rms-ltd/ai-dev-kit-greenfield`, FR-110-F5 tarball, ADR-021).
+  **Completed:** `2026-06-05T14:30:00Z` | **Version:** `v0.6.9.23+2` | **Agent:** `RW E06:S09:T23 --art` | [T23](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) | [ADR-021](../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)
+
 - **[E06:S09:T21](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md)** — Lean adopter distribution footprint (`greenfield-install/` tree, sync script, CI drift guard).
   **Completed:** `2026-06-05T10:00:22Z` | **Version:** `v0.6.9.21+4` | **Agent:** `RW E06:S09:T21 --art` | [T21](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) | [FR-110](fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 

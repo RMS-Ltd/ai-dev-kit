@@ -1,0 +1,12 @@
+{
+  "report_type": "rw_step7_structure_prune",
+  "release_scope": "E06:S09:T23",
+  "version": "v0.6.9.23+2",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E06:S09:T23": {
+      "allowed": true,
+      "reason": "Terminal task COMPLETE v0.6.9.23+2 — removed from active kboard S-band (kanban-completed ledger); UXR-021 IMPLEMENTED"
+    }
+  }
+}

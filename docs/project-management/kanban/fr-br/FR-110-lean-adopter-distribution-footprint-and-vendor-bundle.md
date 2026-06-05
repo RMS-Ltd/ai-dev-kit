@@ -71,7 +71,7 @@ Adopters need **`packages/frameworks/*`**, **adopter-facing user docs**, **insta
 - [x] **FR-110-F2:** Provide **`sync_greenfield_install.py`** (or equivalent) that refreshes `greenfield-install/` from canonical sources and fails on unexpected drift in CI. — **v0.6.9.21+4**
 - [x] **FR-110-F3:** Document **disk budget** (MiB) and **update procedure** in `INSTALL_IN_YOUR_PROJECT.md` — adopters vendor/copy `greenfield-install/` only. — **v0.6.9.21+3** docs + **+4** tree
 - [x] **FR-110-F4:** CI smoke test: greenfield dry-run from `greenfield-install/` root passes. — **v0.6.9.21+4**
-- [ ] **FR-110-F5 (optional):** Publish `greenfield-install/` as a GitHub Release tarball for non-git adopters (extends FR-062). **UX extension:** [UXR-021](UXR-021-greenfield-install-github-packages-delivery-channel.md) / [E06:S09:T23](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) — dual-publish tarball + `ghcr.io` container from same validated tree.
+- [x] **FR-110-F5 (optional):** Publish `greenfield-install/` as a GitHub Release tarball for non-git adopters (extends FR-062). **UX extension:** [UXR-021](UXR-021-greenfield-install-github-packages-delivery-channel.md) / [E06:S09:T23](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) — dual-publish tarball + `ghcr.io` container from same validated tree. — **v0.6.9.23+2**
 
 ### Non-Functional Requirements
 

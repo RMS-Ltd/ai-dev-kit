@@ -1,0 +1,88 @@
+# E06:S09:T23 / UXR-021 / ADR-021 — Publish greenfield-install/ to ghcr.io + optional Release tarball.
+name: Greenfield release packages
+
+"on":
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+  packages: write
+
+concurrency:
+  group: greenfield-release-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ghcr.io/rms-ltd/ai-dev-kit-greenfield
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref_name =~ '^v[0-9]+\.[0-9]+\.[0-9]+$' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Drift check (sources vs greenfield-install/)
+        run: python scripts/sync_greenfield_install.py --check
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push container image
+        uses: docker/build-push-action@v6
+        with:
+          context: greenfield-install
+          file: greenfield-install/Dockerfile
+          push: true
+          tags: |
+            ${{ env.IMAGE_NAME }}:${{ github.ref_name }}
+            ${{ env.IMAGE_NAME }}:latest
+
+      - name: Container extract smoke
+        run: |
+          set -euo pipefail
+          IMAGE="${{ env.IMAGE_NAME }}:${{ github.ref_name }}"
+          cid=$(docker create "$IMAGE")
+          trap 'docker rm -f "$cid" >/dev/null 2>&1 || true' EXIT
+          rm -rf /tmp/adk-extract
+          mkdir -p /tmp/adk-extract
+          docker cp "$cid:/opt/adk/." /tmp/adk-extract/
+          python /tmp/adk-extract/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py \
+            --dry-run --non-interactive --project-root /tmp/adk-extract
+
+      - name: Build lean tarball + sha256
+        run: |
+          set -euo pipefail
+          SEMVER="${{ github.ref_name }}"
+          ARCHIVE="greenfield-install-${SEMVER}.tar.gz"
+          tar -czf "$ARCHIVE" -C greenfield-install .
+          sha256sum "$ARCHIVE" > "${ARCHIVE}.sha256"
+
+      - name: Upload tarball to GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG="${{ github.ref_name }}"
+          ARCHIVE="greenfield-install-${TAG}.tar.gz"
+          HASH="${ARCHIVE}.sha256"
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" \
+              --title "$TAG" \
+              --notes "Greenfield lean bundle ${TAG} (ADR-021 / UXR-021 automated publish)."
+          fi
+          gh release upload "$TAG" "$ARCHIVE" "$HASH" --clobber
+          echo "Uploaded ${ARCHIVE} and ${HASH} to release ${TAG}"

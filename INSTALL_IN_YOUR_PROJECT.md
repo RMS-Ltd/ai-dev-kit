@@ -105,11 +105,24 @@ python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_gree
    git sparse-checkout set greenfield-install
    ```
 
-2. **Copy:** extract or copy `greenfield-install/` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) into `vendor/ai-dev-kit/`.
+2. **Copy:** extract or copy `greenfield-install/` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) into `vendor/ai-dev-kit/`. Tagged releases may include `greenfield-install-v{semver}.tar.gz` + `.sha256` (FR-110-F5 / [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)).
 
-3. **Legacy sparse path:** `git sparse-checkout set packages/frameworks` still works on older tags; prefer `greenfield-install/` on current tags.
+3. **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean tree from `ghcr.io` and copy into `vendor/ai-dev-kit/` (same bytes as `greenfield-install/`; see [Packages](https://github.com/RMS-Ltd/ai-dev-kit/packages)):
 
-4. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.951` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
+   ```bash
+   # Replace v0.4.958 with the external SemVer core from the release you are pinning.
+   docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.958
+   mkdir -p vendor/ai-dev-kit
+   cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.958)
+   docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
+   docker rm "$cid"
+   ```
+
+   Optional digest pin: `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield@sha256:…`
+
+4. **Legacy sparse path:** `git sparse-checkout set packages/frameworks` still works on older tags; prefer `greenfield-install/` on current tags.
+
+5. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.951` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull` the new SemVer tag.
 
 **Disk budget:** ~10–11 MiB for `greenfield-install/` (see `FOOTPRINT.md` in-tree) + git pack history (sparse checkout reduces working tree).
 

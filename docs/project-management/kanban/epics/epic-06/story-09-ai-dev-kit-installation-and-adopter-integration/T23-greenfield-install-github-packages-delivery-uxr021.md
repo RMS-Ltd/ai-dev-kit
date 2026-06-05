@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 23: Greenfield lean tree GitHub Packages delivery (UXR-021)
 
 **Task ID:** E06:S09:T23  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.6.9.23+2)  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.6.9.23+1 — RW -k kanban documentation setup)  
-**Version:** v0.6.9.23+1  
+**Last updated:** 2026-06-05 (v0.6.9.23+2 — GHCR delivery shipped)  
+**Version:** v0.6.9.23+2  
 **Code:** E06S09T23
 
 **Upstream:** [UXR-021](../../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
@@ -30,10 +30,13 @@ Add **GitHub Packages** (`ghcr.io`) as an **alternate delivery channel** for the
 
 ## Input
 
+- [IPP-E06S09T23](../../../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) — specification, tests, implementation plan (IPW)
 - [UXR-021](../../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) — research findings, recommendations, acceptance criteria
 - [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — lean tree contract; optional F5 tarball
+- [ADR-021](../../../../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md) — GHCR delivery channel decision
 - [E06:S09:T21](T21-lean-adopter-distribution-footprint-fr110.md) — `greenfield-install/` tree + `sync_greenfield_install.py` + drift CI
 - [`.github/workflows/greenfield-install.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/greenfield-install.yml)
+- [`.github/workflows/greenfield-release.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/greenfield-release.yml)
 
 ---
 
@@ -68,11 +71,11 @@ Add **GitHub Packages** (`ghcr.io`) as an **alternate delivery channel** for the
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Tagged release publishes `ghcr.io` image with lean tree layout (UXR-021 AC1).
-- [ ] **AC2:** Documented extract + `install_greenfield_path.py --dry-run` passes (UXR-021 AC2).
-- [ ] **AC3:** Image tag aligns with external SemVer in install docs (UXR-021 AC3).
-- [ ] **AC4:** Publish blocked when `sync_greenfield_install.py --check` fails (UXR-021 AC4).
-- [ ] **AC5:** Install docs list registry path as alternate; submodule/copy remain primary (UXR-021 AC5).
+- [x] **AC1:** Tagged release publishes `ghcr.io` image with lean tree layout (UXR-021 AC1) — `greenfield-release.yml`.
+- [x] **AC2:** Documented extract + `install_greenfield_path.py --dry-run` passes (UXR-021 AC2) — CI container-smoke + docs.
+- [x] **AC3:** Image tag aligns with external SemVer in install docs (UXR-021 AC3) — `v0.4.958` example in INSTALL.
+- [x] **AC4:** Publish blocked when `sync_greenfield_install.py --check` fails (UXR-021 AC4) — drift step before build.
+- [x] **AC5:** Install docs list registry path as alternate; submodule/copy remain primary (UXR-021 AC5).
 
 ---
 
@@ -86,5 +89,13 @@ Add **GitHub Packages** (`ghcr.io`) as an **alternate delivery channel** for the
 
 ## Notes
 
-- **IPW required** before implementation ([FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
-- Publish permissions: `GITHUB_TOKEN` with `packages: write` on tag workflow; document any org-level `ghcr.io` visibility defaults for public adopters.
+- **IPW complete** — [IPP-E06S09T23](../../../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) linked ([FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
+- Publish permissions: `GITHUB_TOKEN` with `packages: write` on tag workflow; package visibility public per [ADR-021](../../../../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md).
+
+---
+
+## References
+
+- [IPP-E06S09T23](../../../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md)
+- [ADR-021](../../../../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)
+- [UXR-021](../../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
