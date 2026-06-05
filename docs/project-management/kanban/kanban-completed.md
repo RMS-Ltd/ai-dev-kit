@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (UKW -c: E02:S13:T10 ledger archive; story E02:S13 closed)
-**Version:** v0.2.13.10+1
+**Last Updated:** 2026-06-05 (RW: E02:S14:T01 installation paths enumeration)
+**Version:** v0.2.14.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E02:S14:T01](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md)** — Enumerate workflow-mgt installation paths (19-row matrix; two-phase acquisition/configuration model).
+  **Completed:** `2026-06-05T08:02:29Z` | **Version:** `v0.2.14.1+1` | **Agent:** `RW E02:S14:T01 --art` | [Matrix](epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md) | [IPP](../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
 
 - **[E02:S13:T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)** — Kanban transform consolidation + `rw_config_loader` unification (GAP-INTG-001/002).
   **Completed:** `2026-06-05T07:38:22Z` | **Version:** `v0.2.13.10+1` | **Agent:** `RW E02:S13:T10 --art` | [T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) | [IPP](../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md) | [ADR-020](../../architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md)

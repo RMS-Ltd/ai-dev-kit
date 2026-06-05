@@ -8,20 +8,22 @@ housekeeping_policy: keep
 
 # Story 014 – Workflow Management Package Installation Evaluation
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-01-18 (v0.2.14.0+0 – Story created)  
-**Version:** v0.2.14.0+0  
+**Last updated:** 2026-06-05 (v0.2.14.1+1 – T01 complete)  
+**Version:** v0.2.14.1+1  
 **Code:** E2S14
 
 ---
 
 ## Task Checklist
 
-- [ ] **E02:S14:T01 – Enumerate supported installation paths for Workflow Management** - TODO
+- [x] **E02:S14:T01 – Enumerate supported installation paths for Workflow Management** - ✅ COMPLETE (v0.2.14.1+1)
   - Task: [`T01-enumerate-supported-installation-paths-for-workflow-manageme`](story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md)
+  - Matrix: [`installation-paths-matrix.md`](story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md)
+  - IPP: [`IPP-E02S14T01`](../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
 - [ ] **E02:S14:T02 – Validate fresh install steps for each path** - TODO
   - Task: [`T02-validate-fresh-install-steps-for-each-path`](story-14-workflow-management-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md)
 - [ ] **E02:S14:T03 – Validate migration/update paths (if supported)** - TODO
@@ -49,7 +51,7 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 
 ## Acceptance Criteria
 
-- [ ] Installation paths enumerated and verified.
+- [x] Installation paths enumerated and verified. ✅ T01 (v0.2.14.1+1)
 - [ ] Fresh install steps documented with results.
 - [ ] Migration/update steps validated or explicitly unsupported.
 - [ ] Post-install configuration checklist verified.
@@ -68,3 +70,5 @@ Provide a complete installation evaluation with step-by-step verification, gaps,
 
 - Package: `packages/frameworks/workflow-mgt/`
 - Installation guides under `docs/documentation/user-docs/`.
+- [installation-paths-matrix.md](story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md) — T01 enumeration artefact
+- [IPP-E02S14T01](../../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
