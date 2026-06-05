@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (RW -k E08:S03:T13 — BR-100 dashboard re-scan)
-**Version:** v0.8.3.13+2
+**Last updated:** 2026-06-05 (RW -k E08:S03:T14 — BR-101 dashboard re-scan)
+**Version:** v0.8.3.14+2
 **Code:** E8S03
 
 ---
@@ -51,13 +51,13 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 🔄 IN PROGRESS (**v0.8.3.13+2** wave-1 verified **133→34** −74%; score **Needs Improvement**; **34** open) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 
-- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ⏳ WAITING (**v0.8.3.14+1** shipped; GH Code Quality + AI panel dismiss pending) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
+- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ⏳ WAITING (**v0.8.3.14+2** re-scan **14** AI findings still open; dismiss #10–#11 pending) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
 ---
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T13** (BR-099/100) wave-1 verified on dashboard re-scan (**560→145** maintainability, **133→34** reliability @ `cadb0c3`); wave-2/remainder in progress. **T14** (BR-101) awaiting kanban re-scan release.
+Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard re-scan kanban releases shipped (**560→145** maintainability, **133→34** reliability, **14** AI open @ `cadb0c3`). **T14** awaits GitHub dismiss #10–#11; **T12–T13** wave-2/remainder in progress.
 
 ---
 

@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** WAITING  
 **Priority:** LOW  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (UKW -u — ⏳ WAITING on GH Code Quality + AI panel dismiss; **v0.8.3.14+1**)  
-**Version Anchor:** v0.8.3.14+1  
-**Version:** v0.8.3.14+1  
+**Last updated:** 2026-06-05 (dashboard re-scan — **14** AI findings still open on [ai-findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings); dismiss #10–#11 pending; **v0.8.3.14+1**)  
+**Version Anchor:** v0.8.3.14+2  
+**Version:** v0.8.3.14+2  
 **Code:** E08S03T14
 
 **Scope:** Triage and resolve **14** open GitHub Code Quality **AI-powered suggestions** on recently changed files.
@@ -78,6 +78,19 @@ Publication Status: NOT_APPLICABLE
 **Verification:** `pytest packages/frameworks/kanban/scripts/test_contamination_detector.py tests/test_portal_br068_monorepo_links.py` — 7 passed (2026-06-05).
 
 **Release:** `RW E08:S03:T14 --art` when ready (BR-097).
+
+---
+
+## Dashboard re-scan manifest (2026-06-05)
+
+**Source:** [GitHub Code Quality — AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) · `main` @ `cadb0c3`.
+
+| Field | Pre-release (2026-06-05) | Post-merge re-scan (2026-06-05) |
+| ----- | ------------------------ | -------------------------------- |
+| Open AI suggestions | **14** | **14** (unchanged) |
+| Files in panel | 5 (see inventory) | Same 5 files still listed |
+
+**Note:** Code fixes shipped in **v0.8.3.14+1**; GitHub panel has not yet cleared applied items or recorded dismissals for #10 (`rglob`) and #11 (`version.py` dataclass). Operator action: dismiss #10–#11 on [ai-findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings); re-check panel for 0-open after GitHub refresh.
 
 ---
 

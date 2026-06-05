@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.14+2] - 05-06-26
+
+E08:S03:T14 — **Change implemented:** Kanban re-scan manifest — **14** AI findings still open; dismiss #10–#11 pending on GitHub ai-findings panel. SemVer **v0.4.983+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.14+2.md)
+
+---
+
 ## [0.8.3.13+2] - 05-06-26
 
 E08:S03:T13 — **Change implemented:** Kanban re-scan manifest — reliability **133→34** (−74%) @ `cadb0c3`; score **Needs Improvement**; **34** open. SemVer **v0.4.982+2**.

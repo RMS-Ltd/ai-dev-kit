@@ -1,0 +1,43 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 scoped reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 14,
+    "task_id": "E08:S03:T14",
+    "version_string": "v0.8.3.14+2"
+  },
+  "timestamp_utc": "2026-06-05 15:39 UTC",
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_preserved_existing": 1,
+    "total_changes": 5,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "story_doc"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md"
+      ],
+      "changes": ["Dashboard re-scan manifest 14 open", "Version v0.8.3.14+2"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md"],
+      "changes": ["Re-scan note", "Version v0.8.3.14+2"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "changes": ["E08:S03:T14 re-scan narrative", "Row stamp preserved FR-097"]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"],
+      "changes": ["T14 checklist re-scan note", "Version v0.8.3.14+2"]
+    }
+  }
+}

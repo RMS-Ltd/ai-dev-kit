@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Severity:** LOW — **14** open AI-powered Code Quality suggestions on recently changed files (2026-06-05).  
 **Status:** WAITING  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (UKW -u — **v0.8.3.14+1** shipped; GH Code Quality + AI panel dismiss pending)  
-**Version:** v0.8.3.14+1  
+**Last updated:** 2026-06-05 (dashboard re-scan — **14** AI findings still open; dismiss #10–#11 pending; **v0.8.3.14+1** shipped)  
+**Version:** v0.8.3.14+2  
 **Implementing Task:** [E08:S03:T14](../epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (AI suggestions panel) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-100](BR-100-code-quality-reliability-backlog.md)
 
@@ -66,6 +66,8 @@ GitHub **Code Quality** surfaces **14 AI-powered suggestions** on recently chang
 - Targeted pytest: 7 passed.
 - **Released:** **v0.8.3.14+1** via **`RW E08:S03:T14 --art`**.
 - **Pending:** GitHub dismiss for #10–#11 on [ai-findings panel](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings); panel 0-open verification.
+
+**Dashboard re-scan (2026-06-05):** [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) — **14** open suggestions unchanged; same 5 files listed (`test_contamination_detector.py`, `semver_converter.py`, `sync_greenfield_install.py`, `version.py`, `test_portal_br068_monorepo_links.py`). Operator dismiss #10–#11 still required.
 
 ---
 
