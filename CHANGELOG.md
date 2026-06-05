@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.23+5] - 05-06-26
+## [0.6.9.23+6] - 05-06-26
 
-E06:S09:T23 — **Release workflow:** install PyYAML before greenfield drift check (GHCR publish). SemVer **v0.4.961+5**.
+E06:S09:T23 — **CI fixes:** Tests pip cache uses `setup.py`; `load_rw_config()` alias restores workflow-scripts pytest. SemVer **v0.4.962+6**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.23+5.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.23+6.md)
 
 ---
 
