@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.10+1 – **T10 / BR-096** complete)
-**Version:** v0.8.3.10+1
+**Last updated:** 2026-06-05 (v0.8.3.12+0 – Kanban documentation setup)
+**Version:** v0.8.3.12+0
 **Code:** E8S03
 
 ---
@@ -44,6 +44,14 @@ housekeeping_policy: keep
 - [x] **E08:S03:T09 – CodeQL insecure temporary file — replace `mktemp` (BR-095)** — ✅ COMPLETE (v0.8.3.9+1) — [Task doc](story-03-automation-scripts/T09-codeql-insecure-temporary-file-mktemp-br095.md) | [BR-095](../../fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
 
 - [x] **E08:S03:T10 – CodeQL incomplete URL substring sanitization (BR-096)** — ✅ COMPLETE (v0.8.3.10+1) — [Task doc](story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md) | [BR-096](../../fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
+
+- [x] **E08:S03:T11 – CodeQL missing workflow permissions (BR-098)** — ✅ COMPLETE (alerts #1–#3 fixed on `main`; intake closes doc loop) — [Task doc](story-03-automation-scripts/T11-codeql-missing-workflow-permissions-br098.md) | [BR-098](../../fr-br/BR-098-codeql-missing-workflow-permissions.md)
+
+- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 📋 TODO (**v0.8.3.12+0** kanban init; 560 open findings) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md)
+
+- [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 📋 TODO (133 open findings; **Needs Improvement**) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md)
+
+- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — 📋 TODO (14 AI suggestions) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
 
 ---
 
