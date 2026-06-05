@@ -52,8 +52,10 @@ Today, installers emit human prose (e.g. PyYAML preflight — [BR-082](BR-082-rw
 ## Proposed taxonomy (v1)
 
 ```
-ADK-{DOMAIN}.{PROCESS}[.{SUB}][:{QUALIFIER}]
+ADK-{DOMAIN}{PROCESS}[.{SUB}][:{QUALIFIER}]
 ```
+
+Example: `ADK-I03.E04` (no dot between domain `I` and process `03`).
 
 | Layer | Role | Examples |
 | ----- | ---- | -------- |

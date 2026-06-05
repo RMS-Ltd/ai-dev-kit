@@ -1,7 +1,7 @@
 # Install/setup error code registry (FR-108 / ADR-016)
 # SoT for adk_install_errors.py and generated troubleshooting docs.
 
-registry_version: "1.0.0"
+registry_version: "1.1.0"
 
 domains:
   I:
@@ -21,6 +21,12 @@ processes:
   I04:
     title: GitHub install sign-off
     script: install_github_issue_signoff.py
+  I05:
+    title: Lean vendor acquisition
+    script: verify_vendor_tree.py
+  I06:
+    title: CLI framework install
+    script: cli/commands/install.py
 
 codes:
   ADK-I01.S01:
@@ -123,3 +129,88 @@ codes:
     see_also:
       - FR-080
     introduced_in_adk_semver: "0.4.900"
+
+  ADK-I05.E01:
+    summary: GHCR image pull failed
+    symptom: docker pull for ghcr.io/rms-ltd/ai-dev-kit-greenfield failed (auth, not found, or network).
+    remediation:
+      - "Confirm Docker is running and you can reach ghcr.io."
+      - "Use a public SemVer tag from INSTALL_IN_YOUR_PROJECT.md lean vendor section."
+      - "Report SemVer banner plus this code; include docker stderr separately (no secrets)."
+    see_also:
+      - ADR-021
+      - FR-110
+    introduced_in_adk_semver: "0.4.971"
+
+  ADK-I05.E02:
+    summary: GHCR extract failed
+    symptom: docker create or docker cp from the greenfield image did not complete.
+    remediation:
+      - "Re-run the documented extract flow in greenfield-install/README.md."
+      - "Ensure vendor/ai-dev-kit/ is writable and disk space is available."
+    see_also:
+      - ADR-021
+    introduced_in_adk_semver: "0.4.971"
+
+  ADK-I05.E03:
+    summary: Release tarball checksum mismatch
+    symptom: SHA256 of greenfield-install tarball does not match the published .sha256 file.
+    remediation:
+      - "Re-download tarball and .sha256 from the matching GitHub Release tag."
+      - "Run verify_vendor_tree.py --tarball ... --sha256 ... before extracting."
+    see_also:
+      - FR-110
+    introduced_in_adk_semver: "0.4.971"
+
+  ADK-I05.E04:
+    summary: Vendor tree missing required install entrypoints
+    symptom: Lean vendor root lacks install_greenfield_path.py or other required installer scripts.
+    remediation:
+      - "Vendor or copy the full greenfield-install/ tree (FR-110), not a partial packages/ subtree."
+      - "Run verify_vendor_tree.py --vendor-root vendor/ai-dev-kit before install."
+    see_also:
+      - FR-110
+      - FR-111
+    introduced_in_adk_semver: "0.4.971"
+
+  ADK-I05.E05:
+    summary: Vendor tree missing install error registry or emitter
+    symptom: install-error-codes.yaml or adk_install_errors.py not found under the vendor tree.
+    remediation:
+      - "Refresh vendor tree from a tagged release that includes FR-108 (≥ v0.4.879)."
+      - "Re-run sync or copy from greenfield-install/ export."
+    see_also:
+      - FR-108
+      - FR-111
+    introduced_in_adk_semver: "0.4.971"
+
+  ADK-I05.E06:
+    summary: Git or sparse submodule acquisition failed
+    symptom: git submodule, sparse-checkout, or clone step for greenfield-install did not complete.
+    remediation:
+      - "See INSTALL_IN_YOUR_PROJECT.md sparse submodule steps."
+      - "Use copy or GHCR alternate path if git is blocked in your environment."
+    see_also:
+      - FR-110
+    introduced_in_adk_semver: "0.4.971"
+
+  ADK-I06.E01:
+    summary: CLI framework install failed
+    symptom: adk install exited with an error during backend install or configuration.
+    remediation:
+      - "Run adk list to confirm framework name and available versions."
+      - "Capture SemVer banner and this ADK code in feedback."
+    see_also:
+      - FR-030
+      - FR-111
+    introduced_in_adk_semver: "0.4.971"
+
+  ADK-I06.E02:
+    summary: CLI framework or version not available
+    symptom: Requested framework name or version could not be resolved by the selected backend.
+    remediation:
+      - "Run adk list --versions <framework> for available tags."
+      - "Check .ai-dev-kit.yaml framework source configuration."
+    see_also:
+      - FR-030
+    introduced_in_adk_semver: "0.4.971"

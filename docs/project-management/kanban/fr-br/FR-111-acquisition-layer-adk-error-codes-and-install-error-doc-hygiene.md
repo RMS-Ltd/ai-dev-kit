@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** Maintainer (design session — greenfield lean delivery + FR-108 gap analysis)  
 **Priority:** MEDIUM (Should Have — MoSCOW **S**)  
-**Status:** ACCEPTED
+**Status:** IMPLEMENTED (**v0.6.9.24+2** — E06:S09:T24)
 
 **Implementing Task:** [E06:S09:T24](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md)
 

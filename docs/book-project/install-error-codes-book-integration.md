@@ -138,9 +138,9 @@ ADK-{DOMAIN}{PROCESS}.{SUB}[:QUALIFIER]
 
 ---
 
-## 6. Complete v1 catalog (registry 1.0.0)
+## 6. Complete catalog (registry 1.1.0 — FR-111)
 
-Use this table as the **book appendix seed**. Regenerate from public ADK when `registry_version` bumps.
+Use this table as the **book appendix seed**. Regenerate from public ADK when `registry_version` bumps. Minimum ADK tag: **v0.4.972+1** (E06:S09:T24).
 
 | Code | Summary | First remediation step | Book exercise hook |
 | ---- | ------- | ---------------------- | ------------------ |
@@ -154,6 +154,14 @@ Use this table as the **book appendix seed**. Regenerate from public ADK when `r
 | **ADK-I03.E90** | RW install PARTIAL | Complete numbered follow-ups at end of output | “Install succeeded but…” |
 | **ADK-I03.E90:W01** | PARTIAL (warning, exit 0) | Address follow-ups before first RW | Same as E90; non-blocking |
 | **ADK-I04.E01** | GitHub sign-off not READY | Run sign-off script; fix NOT READY items | Post-install checklist chapter |
+| **ADK-I05.E03** | Tarball checksum mismatch | Re-download tarball + `.sha256` | Copy/acquire path before extract |
+| **ADK-I05.E04** | Vendor tree missing installers | Vendor full `greenfield-install/` tree | **Common** — partial copy |
+| **ADK-I05.E05** | Missing error registry in vendor | Refresh vendor from tagged release | Older than FR-108 |
+| **ADK-I05.E01** | GHCR pull failed | Check Docker + tag; report docker stderr | Alternate acquire (ADR-021) |
+| **ADK-I05.E02** | GHCR extract failed | Re-run `docker cp` flow | Alternate acquire |
+| **ADK-I05.E06** | Git/sparse acquire failed | See INSTALL sparse steps | Submodule blocked environments |
+| **ADK-I06.E01** | CLI install failed | `adk list`; capture SemVer + code | CLI track adopters |
+| **ADK-I06.E02** | CLI framework/version unavailable | `adk list --versions` | Wrong framework name |
 
 **Full symptom text and all remediation bullets:** run in public ADK checkout:
 

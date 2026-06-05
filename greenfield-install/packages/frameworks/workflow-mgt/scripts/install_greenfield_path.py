@@ -30,6 +30,12 @@ except ImportError:
     def emit_install_error(code, *, detail=None, file=None):  # type: ignore[misc]
         print(f"ERROR [{code}]", file=file or sys.stderr)
 
+try:
+    from verify_vendor_tree import run_verify
+except ImportError:
+    def run_verify(vendor_root, *, tarball=None, sha256=None, emit=True):  # type: ignore[misc]
+        return 0, None
+
 
 def run_step(command: list[str], project_root: Path, dry_run: bool) -> int:
     printable = " ".join(command)
@@ -103,6 +109,16 @@ def main() -> int:
         default="fresh",
         help="Mode forwarded to install_kanban_framework.py (default: fresh).",
     )
+    parser.add_argument(
+        "--vendor-root",
+        default=None,
+        help="Lean vendor tree root for preflight (default: project-root).",
+    )
+    parser.add_argument(
+        "--no-verify-vendor",
+        action="store_true",
+        help="Skip ADK-I05 vendor tree preflight (FR-111).",
+    )
     args = parser.parse_args()
 
     project_root = Path(args.project_root).resolve()
@@ -111,6 +127,14 @@ def main() -> int:
         return 1
 
     print_session_banner(project_root)
+
+    vendor_root = Path(args.vendor_root).resolve() if args.vendor_root else project_root
+    if not args.dry_run and not args.no_verify_vendor:
+        vcode, _ = run_verify(vendor_root, emit=True)
+        if vcode != 0:
+            print("\nVendor preflight failed. Fix acquisition before running installers.")
+            print("See framework-dependency-troubleshooting-guide.md § Install error codes (ADK-*).")
+            return vcode
 
     chosen_order = choose_order(args.non_interactive, args.order)
     print(f"\nChosen order: {chosen_order}")

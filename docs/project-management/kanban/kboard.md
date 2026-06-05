@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW E08:S03:T14 --art)
-**Version:** v0.8.3.14+1
+**Last Updated:** 2026-06-05 (RW Step 7: E06:S09:T24)
+**Version:** v0.6.9.24+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -33,8 +33,6 @@ housekeeping_policy: keep
 *(None.)*
 
 ### Could Have (C) - Nice-to-Have Tasks
-
-- **E06:S09:T24** – Acquisition-layer ADK error codes (FR-111) - 📋 TODO (MEDIUM, extends FR-108 I05/I06 + doc hygiene; kanban init **v0.6.9.24+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) | [FR-111](fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) | Last modified: 2026-06-05 14:47 UTC
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, wave-1 ruff remediation shipped **v0.8.3.12+1**; dashboard re-scan pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | Last modified: 2026-06-05 11:42 UTC
 

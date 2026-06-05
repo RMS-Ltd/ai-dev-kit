@@ -8,6 +8,9 @@ from pathlib import Path
 
 from adk_install_errors import load_registry
 
+MARKER_START = "<!-- ADK-ERROR-CODES:START -->"
+MARKER_END = "<!-- ADK-ERROR-CODES:END -->"
+
 
 def anchor_for(code: str) -> str:
     return code.lower().replace(":", "-").replace(".", "-")
@@ -46,6 +49,18 @@ def render_markdown() -> str:
             lines.append(f"**See also:** {', '.join(see)}")
             lines.append("")
     return "\n".join(lines).rstrip() + "\n"
+
+
+def wrap_with_markers(body: str) -> str:
+    return f"{MARKER_START}\n{body.rstrip()}\n{MARKER_END}\n"
+
+
+def extract_marked_section(text: str) -> str:
+    if MARKER_START not in text or MARKER_END not in text:
+        raise ValueError("missing ADK error code markers in document")
+    start = text.index(MARKER_START) + len(MARKER_START)
+    end = text.index(MARKER_END)
+    return text[start:end].strip() + "\n"
 
 
 def main() -> int:

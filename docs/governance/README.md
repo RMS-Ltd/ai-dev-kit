@@ -14,6 +14,8 @@ housekeeping_policy: keep
 
 ## Purpose
 
+**Install failures:** stable `ADK-*` codes and troubleshooting — [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) · [framework-dependency-troubleshooting-guide.md § Install error codes](../documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk).
+
 Single navigation entry for **book-active** governance: Kanban rules, versioning/changelog policy, IPW/IPP packaging, principles, and cross-links to ADRs and reference guides under `docs/architecture/`.
 
 **Framework SoT:** Packaged policies under `packages/frameworks/` remain authoritative for adopters. This tree holds **maintainer book workspace** copies; stubs at legacy paths point here.

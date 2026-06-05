@@ -1175,46 +1175,230 @@ ai-dev-kit report-issue \
 
 ---
 
-## Install error codes (ADK)
-Registry version: **1.0.0**. When install fails, copy the `ERROR [ADK-…]` line from your console together with the AI Dev Kit SemVer banner ([UXR-016](../../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).
+<!-- ADK-ERROR-CODES:START -->
+## Install error codes (ADK-*)
 
-Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes.yaml`. Regenerate this appendix: `python packages/frameworks/workflow-mgt/scripts/generate_install_error_docs.py`.
+Registry version: **1.1.0**. When install fails, copy the `ERROR [ADK-…]` line from your console together with the AI Dev Kit SemVer banner ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).
 
-### ADK-I01.S01
+Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes.yaml`.
 
-**Summary:** Greenfield RW install step failed — review subprocess output for `ADK-I03.*` codes.
+### ADK-I01.S01 {#adk-i01-s01}
 
-### ADK-I01.S02
+**Summary:** Greenfield RW install step failed
 
-**Summary:** Greenfield Kanban install step failed — review subprocess output for `ADK-I02.*` codes.
+**Symptom:** The Release Workflow installer subprocess exited non-zero during greenfield orchestration.
 
-### ADK-I02.E01
+**Remediation:**
+- Review subprocess output above for an ADK-I03.* code from the RW installer.
+- See INSTALL_IN_YOUR_PROJECT.md greenfield section and framework-dependency-troubleshooting-guide.md.
 
-**Summary:** Kanban framework install failed. **See also:** BR-054.
+**See also:** FR-080
 
-### ADK-I02.E08
+### ADK-I01.S02 {#adk-i01-s02}
 
-**Summary:** Kanban path contamination detected. **Remediation:** run contamination remediation or use a clean target path. **See also:** BR-037.
+**Summary:** Greenfield Kanban install step failed
 
-### ADK-I03.E04
+**Symptom:** The Kanban framework installer subprocess exited non-zero during greenfield orchestration.
 
-**Summary:** RW installer dependencies missing (e.g. PyYAML). **Remediation:** `pip install 'pyyaml>=6.0'`. **See also:** BR-082.
+**Remediation:**
+- Review subprocess output above for an ADK-I02.* code from the Kanban installer.
+- Confirm kanban_root and fresh-mode options match your layout.
 
-### ADK-I03.E12
+**See also:** FR-080
 
-**Summary:** `version_file` missing or scaffold declined. **See also:** BR-088.
+### ADK-I02.E01 {#adk-i02-e01}
 
-### ADK-I03.E21
+**Summary:** Kanban framework install failed
 
-**Summary:** rw-config kanban patterns mismatch fresh layout. **See also:** BR-083, BR-086.
+**Symptom:** install_kanban_framework.py exited with an error before completion.
 
-### ADK-I03.E90
+**Remediation:**
+- Re-run with verbose logging if available and capture the full console transcript.
+- Verify target directory and install mode (fresh vs migration).
 
-**Summary:** RW install PARTIAL — complete follow-up items at end of installer output.
+**See also:** BR-054
 
-### ADK-I04.E01
+### ADK-I02.E08 {#adk-i02-e08}
 
-**Summary:** GitHub install sign-off not READY — run `install_github_issue_signoff.py` and fix contract checks.
+**Summary:** Kanban install detected board or path contamination
+
+**Symptom:** Validation reported foreign or legacy kanban content in the target tree.
+
+**Remediation:**
+- Use the documented remediation tool or a clean target path for fresh install.
+- See BR-037 for contamination recovery guidance.
+
+**See also:** BR-037
+
+### ADK-I03.E04 {#adk-i03-e04}
+
+**Summary:** RW installer dependencies missing
+
+**Symptom:** Required Python packages (e.g. PyYAML) are not installed in the active environment.
+
+**Remediation:**
+- pip install 'pyyaml>=6.0'
+- Or pip install -e ./vendor/ai-dev-kit from your kit checkout.
+- Run python install_release_workflow.py --check-deps for preflight.
+
+**See also:** BR-082
+
+### ADK-I03.E12 {#adk-i03-e12}
+
+**Summary:** RW install version_file missing or not scaffolded
+
+**Symptom:** mode C configured version_file but the path does not exist and scaffold was declined or skipped.
+
+**Remediation:**
+- Re-run RW installer and accept version_file scaffold when prompted.
+- Or create the file manually per dev-kit versioning policy.
+
+**See also:** BR-088
+
+### ADK-I03.E21 {#adk-i03-e21}
+
+**Summary:** RW install kanban path or pattern mismatch
+
+**Symptom:** rw-config epic/story/task patterns do not match on-disk fresh kanban layout.
+
+**Remediation:**
+- Align epic_doc_pattern and story_doc_pattern with your tree (lowercase vs padded epic ids).
+- See BR-083, BR-086, and UXR-017 for naming conventions.
+
+**See also:** BR-083, BR-086
+
+### ADK-I03.E90 {#adk-i03-e90}
+
+**Summary:** RW install completed with warnings or partial success
+
+**Symptom:** Installer finished but reported PARTIAL status or follow-up warnings.
+
+**Remediation:**
+- Complete each numbered follow-up item printed at end of install.
+- Re-run install_github_issue_signoff when ready.
+
+**See also:** FR-080
+
+### ADK-I03.E90:W01 {#adk-i03-e90-w01}
+
+**Summary:** RW install partial (non-blocking warning aggregate)
+
+**Symptom:** Same as ADK-I03.E90; emitted when exit code is 0 but PARTIAL was reported.
+
+**Remediation:**
+- Address follow-up items before first RW release in the adopter repo.
+
+**See also:** FR-080
+
+### ADK-I04.E01 {#adk-i04-e01}
+
+**Summary:** Install GitHub sign-off not ready
+
+**Symptom:** Automated sign-off checks did not pass; one or more contract entries are not READY.
+
+**Remediation:**
+- Run install_github_issue_signoff.py and resolve each NOT READY entry.
+- Update rw-config patterns or on-disk files per sign-off hints.
+
+**See also:** FR-080
+
+### ADK-I05.E01 {#adk-i05-e01}
+
+**Summary:** GHCR image pull failed
+
+**Symptom:** docker pull for ghcr.io/rms-ltd/ai-dev-kit-greenfield failed (auth, not found, or network).
+
+**Remediation:**
+- Confirm Docker is running and you can reach ghcr.io.
+- Use a public SemVer tag from INSTALL_IN_YOUR_PROJECT.md lean vendor section.
+- Report SemVer banner plus this code; include docker stderr separately (no secrets).
+
+**See also:** ADR-021, FR-110
+
+### ADK-I05.E02 {#adk-i05-e02}
+
+**Summary:** GHCR extract failed
+
+**Symptom:** docker create or docker cp from the greenfield image did not complete.
+
+**Remediation:**
+- Re-run the documented extract flow in greenfield-install/README.md.
+- Ensure vendor/ai-dev-kit/ is writable and disk space is available.
+
+**See also:** ADR-021
+
+### ADK-I05.E03 {#adk-i05-e03}
+
+**Summary:** Release tarball checksum mismatch
+
+**Symptom:** SHA256 of greenfield-install tarball does not match the published .sha256 file.
+
+**Remediation:**
+- Re-download tarball and .sha256 from the matching GitHub Release tag.
+- Run verify_vendor_tree.py --tarball ... --sha256 ... before extracting.
+
+**See also:** FR-110
+
+### ADK-I05.E04 {#adk-i05-e04}
+
+**Summary:** Vendor tree missing required install entrypoints
+
+**Symptom:** Lean vendor root lacks install_greenfield_path.py or other required installer scripts.
+
+**Remediation:**
+- Vendor or copy the full greenfield-install/ tree (FR-110), not a partial packages/ subtree.
+- Run verify_vendor_tree.py --vendor-root vendor/ai-dev-kit before install.
+
+**See also:** FR-110, FR-111
+
+### ADK-I05.E05 {#adk-i05-e05}
+
+**Summary:** Vendor tree missing install error registry or emitter
+
+**Symptom:** install-error-codes.yaml or adk_install_errors.py not found under the vendor tree.
+
+**Remediation:**
+- Refresh vendor tree from a tagged release that includes FR-108 (≥ v0.4.879).
+- Re-run sync or copy from greenfield-install/ export.
+
+**See also:** FR-108, FR-111
+
+### ADK-I05.E06 {#adk-i05-e06}
+
+**Summary:** Git or sparse submodule acquisition failed
+
+**Symptom:** git submodule, sparse-checkout, or clone step for greenfield-install did not complete.
+
+**Remediation:**
+- See INSTALL_IN_YOUR_PROJECT.md sparse submodule steps.
+- Use copy or GHCR alternate path if git is blocked in your environment.
+
+**See also:** FR-110
+
+### ADK-I06.E01 {#adk-i06-e01}
+
+**Summary:** CLI framework install failed
+
+**Symptom:** adk install exited with an error during backend install or configuration.
+
+**Remediation:**
+- Run adk list to confirm framework name and available versions.
+- Capture SemVer banner and this ADK code in feedback.
+
+**See also:** FR-030, FR-111
+
+### ADK-I06.E02 {#adk-i06-e02}
+
+**Summary:** CLI framework or version not available
+
+**Symptom:** Requested framework name or version could not be resolved by the selected backend.
+
+**Remediation:**
+- Run adk list --versions <framework> for available tags.
+- Check .ai-dev-kit.yaml framework source configuration.
+
+**See also:** FR-030
+<!-- ADK-ERROR-CODES:END -->
 
 ---
 

@@ -17,6 +17,14 @@ E08:S03:T14 — **Change implemented:** Code Quality AI suggestions triage (**BR
 
 ---
 
+## [0.6.9.24+2] - 05-06-26
+
+E06:S09:T24 — **Change implemented:** FR-111 acquisition ADK error codes — registry 1.1.0 (I05/I06), `verify_vendor_tree.py`, CLI I06, troubleshooting CI sync. SemVer **v0.4.973+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.24+2.md)
+
+---
+
 ## [0.6.9.24+1] - 05-06-26
 
 E06:S09:T24 — **Kanban init:** FR-111 intake — acquisition-layer ADK error codes + install error doc hygiene (task + FR wiring). SemVer **v0.4.971+1**. Implementation pending IPW.

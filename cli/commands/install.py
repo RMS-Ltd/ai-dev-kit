@@ -27,7 +27,8 @@ from cli.exceptions import (
 from cli.logging import close_install_logger, create_install_logger
 from cli.validation import validate_backend, validate_framework_spec, validate_path
 
-CLI_INSTALL_ERROR_CODE = "ADK-I02.E01"
+CLI_INSTALL_ERROR_GENERIC = "ADK-I06.E01"
+CLI_INSTALL_ERROR_NOT_FOUND = "ADK-I06.E02"
 from cli.utils import (
     get_project_root,
     handle_error,
@@ -111,7 +112,15 @@ class InstallCommand(BaseCommand):
                 step_counter += 1
                 return f"cli-step-{step_counter:04d}"
 
-            def make_event(intent: str, action: str, status: str, details: str, **extra: Any) -> Dict[str, Any]:
+            def make_event(
+                intent: str,
+                action: str,
+                status: str,
+                details: str,
+                *,
+                error_code: str = CLI_INSTALL_ERROR_GENERIC,
+                **extra: Any,
+            ) -> Dict[str, Any]:
                 payload: Dict[str, Any] = {
                     "intent": {"summary": intent},
                     "action": {"summary": action},
@@ -120,14 +129,22 @@ class InstallCommand(BaseCommand):
                 payload.update(extra)
                 if status in ("error", "failed"):
                     try:
-                        payload = merge_error_into_event(payload, CLI_INSTALL_ERROR_CODE)
+                        payload = merge_error_into_event(payload, error_code)
                     except Exception as _suppressed_exc:
                         del _suppressed_exc
                 return payload
 
-            def fail_install(message: str, context: str, intent: str, action: str, details: str) -> int:
+            def fail_install(
+                message: str,
+                context: str,
+                intent: str,
+                action: str,
+                details: str,
+                *,
+                error_code: str = CLI_INSTALL_ERROR_GENERIC,
+            ) -> int:
                 try:
-                    emit_install_error(CLI_INSTALL_ERROR_CODE, detail=details)
+                    emit_install_error(error_code, detail=details)
                 except Exception as _suppressed_exc:
                     del _suppressed_exc
                 print_error(message)
@@ -171,6 +188,7 @@ class InstallCommand(BaseCommand):
                         "Validate framework specification",
                         f"Parse and validate framework spec '{spec}'",
                         str(e),
+                        error_code=CLI_INSTALL_ERROR_NOT_FOUND,
                     )
             
             # Determine and validate backend
@@ -205,8 +223,13 @@ class InstallCommand(BaseCommand):
                         f"Select backend '{backend_name}' with auto-detect",
                         "error",
                         f"Backend unavailable. Available: {available}",
+                        error_code=CLI_INSTALL_ERROR_NOT_FOUND,
                     ),
                 )
+                try:
+                    emit_install_error(CLI_INSTALL_ERROR_NOT_FOUND, detail=backend_name)
+                except Exception as _suppressed_exc:
+                    del _suppressed_exc
                 raise BackendNotAvailableError(backend_name, available)
             
             backend_class = get_backend(selected_backend_name)
@@ -348,7 +371,7 @@ class InstallCommand(BaseCommand):
                     else:
                         try:
                             emit_install_error(
-                                CLI_INSTALL_ERROR_CODE,
+                                CLI_INSTALL_ERROR_GENERIC,
                                 detail=f"{framework}@{version_str}",
                             )
                         except Exception as _suppressed_exc:
@@ -364,6 +387,7 @@ class InstallCommand(BaseCommand):
                                 f"Execute backend install for {framework}@{version_str}",
                                 "error",
                                 "Backend returned unsuccessful result",
+                                error_code=CLI_INSTALL_ERROR_GENERIC,
                                 framework=framework,
                                 backend=backend_name,
                             ),

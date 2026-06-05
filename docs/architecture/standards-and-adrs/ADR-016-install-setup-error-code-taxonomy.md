@@ -64,14 +64,16 @@ CLI JSONL and `prepare-feedback-payload` (FR-079 contract **1.1.0**) may aggrega
 
 Standalone Python installers (RW, greenfield) emit stderr codes in v1; JSONL is required on the **`adk install`** path.
 
-### 5. Process allocation (v1)
+### 5. Process allocation
 
-| Process | Installer |
-| ------- | --------- |
-| I01 | `install_greenfield_path.py` |
-| I02 | `install_kanban_framework.py` |
-| I03 | `install_release_workflow.py` |
-| I04 | `install_github_issue_signoff.py` |
+| Process | Installer | Since |
+| ------- | --------- | ----- |
+| I01 | `install_greenfield_path.py` | v1.0.0 |
+| I02 | `install_kanban_framework.py` | v1.0.0 |
+| I03 | `install_release_workflow.py` | v1.0.0 |
+| I04 | `install_github_issue_signoff.py` | v1.0.0 |
+| I05 | `verify_vendor_tree.py` (lean acquisition preflight) | v1.1.0 / FR-111 |
+| I06 | `cli/commands/install.py` | v1.1.0 / FR-111 |
 
 Future processes require ADR update or FR intake.
 

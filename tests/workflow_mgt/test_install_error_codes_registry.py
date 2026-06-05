@@ -17,7 +17,9 @@ REGISTRY_PATH = (
     / "install-error-codes.yaml"
 )
 CODE_RE = re.compile(r"^ADK-[IVR]\d{2}(\.[A-Z]\d{2})+(:[WR]\d{2})?$")
-FR_BR_ROOT = Path(__file__).resolve().parents[2] / "docs" / "project-management" / "kanban" / "fr-br"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+FR_BR_ROOT = REPO_ROOT / "docs" / "project-management" / "kanban" / "fr-br"
+ADR_ROOT = REPO_ROOT / "docs" / "architecture" / "standards-and-adrs"
 
 
 @pytest.fixture
@@ -27,10 +29,14 @@ def registry():
     return data
 
 
-def test_registry_has_processes_i01_through_i04(registry):
+def test_registry_has_processes_i01_through_i06(registry):
     processes = registry.get("processes") or {}
-    for pid in ("I01", "I02", "I03", "I04"):
+    for pid in ("I01", "I02", "I03", "I04", "I05", "I06"):
         assert pid in processes
+
+
+def test_registry_version_1_1_0(registry):
+    assert registry.get("registry_version") == "1.1.0"
 
 
 def test_all_code_keys_match_pattern(registry):
@@ -47,6 +53,8 @@ def test_see_also_references_exist(registry):
             if ref.startswith("ADK-"):
                 assert ref in codes
                 continue
-            # BR-082 or FR-080 style
-            matches = list(FR_BR_ROOT.glob(f"{ref}*.md"))
+            if ref.startswith("ADR-"):
+                matches = list(ADR_ROOT.glob(f"{ref}*.md"))
+            else:
+                matches = list(FR_BR_ROOT.glob(f"{ref}*.md"))
             assert matches, f"{key} see_also missing doc for {ref}"

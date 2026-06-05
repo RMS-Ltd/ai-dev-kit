@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW: E02:S14:T01 installation paths enumeration)
-**Version:** v0.2.14.1+1
+**Last Updated:** 2026-06-05 (RW: E06:S09:T24 acquisition-layer ADK error codes)
+**Version:** v0.6.9.24+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E06:S09:T24](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md)** — Acquisition-layer ADK error codes (registry 1.1.0 I05/I06, `verify_vendor_tree.py`, CLI I06, doc-sync CI guard).
+  **Completed:** `2026-06-05T15:30:00Z` | **Version:** `v0.6.9.24+2` | **Agent:** `RW E06:S09:T24 --art` | [T24](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) | [FR-111](fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) | [IPP](../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
 
 - **[E06:S09:T23](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md)** — Greenfield GHCR delivery (`ghcr.io/rms-ltd/ai-dev-kit-greenfield`, FR-110-F5 tarball, ADR-021).
   **Completed:** `2026-06-05T14:30:00Z` | **Version:** `v0.6.9.23+3` | **Agent:** `RW E06:S09:T23 --art` | [T23](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) | [ADR-021](../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)

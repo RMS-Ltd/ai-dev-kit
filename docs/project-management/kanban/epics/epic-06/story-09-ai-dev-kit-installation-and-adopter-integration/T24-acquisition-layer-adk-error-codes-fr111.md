@@ -9,12 +9,14 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 24: Acquisition-layer ADK error codes (FR-111)
 
 **Task ID:** E06:S09:T24  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.6.9.24+1 — kanban init)  
-**Version:** v0.6.9.24+1  
+**Last updated:** 2026-06-05 (v0.6.9.24+2 — FR-111 implementation)  
+**Version:** v0.6.9.24+2  
 **Code:** E06S09T24
+
+**Planning package:** [IPP-E06S09T24](../../../../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
 
 **Upstream:** [FR-111](../../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
 
@@ -30,6 +32,7 @@ Extend the FR-108 **`ADK-*` registry** with acquisition process **I05** and CLI 
 
 ## Input
 
+- [IPP-E06S09T24](../../../../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
 - [FR-111](../../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) — requirements and seed code catalog
 - [ADR-016](../../../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) — taxonomy (amend process table)
 - [E06:S09:T20](T20-install-setup-error-code-registry-fr108.md) — FR-108 baseline registry v1.0.0
@@ -37,54 +40,25 @@ Extend the FR-108 **`ADK-*` registry** with acquisition process **I05** and CLI 
 
 ---
 
-## Scope
-
-### In scope
-
-1. **Registry 1.1.0** — processes I05 (acquisition) and I06 (CLI); seed sub-codes per FR-111.
-2. **Acquisition preflight** — adopter-runnable check emitting `ADK-I05.*`.
-3. **Doc hygiene** — regenerate troubleshooting §; `greenfield-install/README.md` + INSTALL callouts; CI appendix drift guard.
-4. **CLI codes** — replace coarse `ADK-I02.E01` mapping with `ADK-I06.*`.
-5. **Brownfield INSTALL note** — codes apply to RW/Kanban installer failures on brownfield paths.
-
-### Out of scope
-
-- `ADK-V*` post-install validation catalog
-- `ADK-R*` RW runtime catalog
-- `adk doctor --explain`
-
----
-
 ## Deliverables
 
-- [ ] `install-error-codes.yaml` registry **1.1.0** + ADR-016 process table update
-- [ ] Acquisition preflight emitter (Python) + tests
-- [ ] Troubleshooting appendix regenerated + CI guard
-- [ ] INSTALL + `greenfield-install/README.md` acquisition reporting guidance
-- [ ] CLI `ADK-I06.*` wiring + tests
-- [ ] Linked IPP under `docs/implementation-cycles/` (IPW gate before implementation)
+- [x] `install-error-codes.yaml` registry **1.1.0** + ADR-016 process table update
+- [x] Acquisition preflight emitter (`verify_vendor_tree.py`) + tests
+- [x] Troubleshooting appendix regenerated + CI guard (`test_install_error_docs_sync.py`)
+- [x] INSTALL + `greenfield-install/README.md` acquisition reporting guidance
+- [x] CLI `ADK-I06.*` wiring + tests
+- [x] Linked IPP under `docs/implementation-cycles/`
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Registry 1.1.0 includes I05 and I06 with seed codes (FR-111 AC1).
-- [ ] **AC2:** At least two `ADK-I05.*` failure paths covered in tests (FR-111 AC2).
-- [ ] **AC3:** Lean README + INSTALL document SemVer + ADK reporting (FR-111 AC3).
-- [ ] **AC4:** Troubleshooting § matches generator output; CI enforced (FR-111 AC4).
-- [ ] **AC5:** CLI emits `ADK-I06.*` in tests (FR-111 AC5).
-- [ ] **AC6:** FR-111 status → IMPLEMENTED on RW delivery of implementation work.
-
----
-
-## Implementation gate
-
-Per [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md):
-
-1. Run **IPW** for E06:S09:T24 → linked **IPP** under `docs/implementation-cycles/`.
-2. Obtain explicit user authorization (`implement` or `RW E06:S09:T24`) before code changes.
-
-**This RW -k release:** Kanban documentation setup + FR-111 intake wiring only (no implementation).
+- [x] **AC1:** Registry 1.1.0 includes I05 and I06 with seed codes (FR-111 AC1).
+- [x] **AC2:** At least two `ADK-I05.*` failure paths covered in tests (FR-111 AC2).
+- [x] **AC3:** Lean README + INSTALL document SemVer + ADK reporting (FR-111 AC3).
+- [x] **AC4:** Troubleshooting § matches generator output; CI enforced (FR-111 AC4).
+- [x] **AC5:** CLI emits `ADK-I06.*` in tests (FR-111 AC5).
+- [x] **AC6:** FR-111 status → IMPLEMENTED on RW delivery (**v0.6.9.24+2**).
 
 ---
 
@@ -96,4 +70,4 @@ Per [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md):
 
 ## Version Anchor
 
-📋 TODO — Kanban documentation setup (**v0.6.9.24+1**, RW -k E06:S09:T24 `--art`). Implementation gated on IPW.
+✅ COMPLETE (**v0.6.9.24+2** — RW E06:S09:T24 `--art`, FR-111 registry 1.1.0)

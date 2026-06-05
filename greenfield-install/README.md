@@ -14,6 +14,17 @@ python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_gree
 
 Adjust `vendor/ai-dev-kit/` to match your layout. Install scripts live under `packages/frameworks/*/scripts/`.
 
+## Install error codes (FR-108 / FR-111)
+
+When acquisition or install fails, report **SemVer banner + `ADK-*` code** ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)). Run vendor preflight before installers:
+
+```bash
+python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py \
+  --vendor-root vendor/ai-dev-kit
+```
+
+Lookup: [framework-dependency-troubleshooting-guide.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk) (registry **1.1.0**).
+
 ## Update upstream
 
 - **Submodule / sparse checkout:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.963` (see [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases)).

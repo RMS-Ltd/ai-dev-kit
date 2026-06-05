@@ -43,6 +43,15 @@ ERROR [ADK-I03.E04] RW installer dependencies missing
 
 **Report both** the SemVer banner line and the `ADK-*` code in GitHub issues or UAT feedback. Lookup tables and remediation steps are in [`framework-dependency-troubleshooting-guide.md`](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk).
 
+**Acquisition failures (FR-111):** Before running installers, validate the lean vendor tree. GHCR/docker/git failures without a Python wrapper use prose in the troubleshooting guide (`ADK-I05.E01`–`E06` lookup); Python preflight emits `ADK-I05.E03`–`E05`:
+
+```bash
+python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py \
+  --vendor-root vendor/ai-dev-kit
+```
+
+**Brownfield:** The same `ADK-I02.*` / `ADK-I03.*` installer codes apply when running RW or Kanban installers on existing repositories — not only greenfield.
+
 ---
 
 ## 📚 Documentation Location
@@ -91,7 +100,16 @@ Install from your **host project root** (framework paths relative to where you p
 
 ```bash
 python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \
-  --project-root "." --non-interactive
+  --project-root "." \
+  --vendor-root "vendor/ai-dev-kit" \
+  --non-interactive
+```
+
+Preflight (recommended before first install):
+
+```bash
+python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py \
+  --vendor-root vendor/ai-dev-kit
 ```
 
 ### Acquire the lean tree
@@ -485,7 +503,7 @@ Align `kanban_root` in `rw-config.yaml` with your actual path before RW Step 7.
 |-------|--------|----------|
 | GitHub Release framework tarballs | **Available** | [FR-062](docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md) — `install_package_from_release.py` |
 | Install logging + feedback | **Available** | [FR-078](docs/project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](docs/project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md), [install-receipt-reference.md](docs/documentation/user-docs/install-receipt-reference.md) |
-| Install error codes | **Available** | [FR-108](docs/project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md) |
+| Install error codes | **Available** | [FR-108](docs/project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md), [FR-111](docs/project-management/kanban/fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) (registry **1.1.0**) |
 | Intelligent epic matching | Document only | Kanban `canonical_adoption`; [FR-011](docs/project-management/kanban/fr-br/FR-011-intelligent-epic-matching-ai-assisted-canonical-adoption.md) |
 | npm/pip framework packages | Future | Phase 3 in [framework-dependency-installation-guide.md](docs/documentation/user-docs/framework-dependency-installation-guide.md) |
 
