@@ -1,0 +1,16 @@
+{
+  "contract": "FR-097 structure-prune — RW Step 7 terminal row removal (kboard drift fix)",
+  "release_scope": {
+    "task_id": "E04:S07:T02",
+    "version_string": "v0.4.7.2+2",
+    "invocation": "RW E04:S07:T02 --art"
+  },
+  "rows": {
+    "E04:S07:T02": {
+      "allowed": true,
+      "reason": "COMPLETE v0.4.7.2+2 — story checklist and kanban-completed.md already terminal; stale C-band TODO row pruned from kboard"
+    }
+  },
+  "board_metadata_only": true,
+  "timestamp_utc": "2026-06-05 03:39:04 UTC"
+}

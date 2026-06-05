@@ -1536,6 +1536,14 @@ rc_0:
       story: 7
       task: 1
       build: 1
+    - internal_version: 0.4.7.2+1
+      semver: 0.4.911+1
+      patch: 911
+      rc: 0
+      epic: 4
+      story: 7
+      task: 2
+      build: 1
     - internal_version: 0.4.6.6+3
       semver: 0.4.912+3
       patch: 912
@@ -1544,6 +1552,14 @@ rc_0:
       story: 6
       task: 6
       build: 3
+    - internal_version: 0.4.7.2+2
+      semver: 0.4.912+2
+      patch: 912
+      rc: 0
+      epic: 4
+      story: 7
+      task: 2
+      build: 2
     - internal_version: 0.4.6.6+4
       semver: 0.4.913+4
       patch: 913

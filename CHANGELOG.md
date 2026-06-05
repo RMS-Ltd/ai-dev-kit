@@ -17,6 +17,14 @@ E04:S06:T06 — **BR-005 Fix 1 verification (BUILD +4):** SemVer tag collision r
 
 ---
 
+## [0.4.7.2+2] - 05-06-26
+
+E04:S07:T02 — **FR-007 verification closure:** IPP + discrete task doc; pytest re-verification (20 passed); kboard four-surface reconciliation. SemVer **v0.4.912+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.7.2+2.md)
+
+---
+
 ## [0.4.7.1+1] - 05-06-26
 
 E04:S07:T01 — **BR-006 verification closure:** criteria 1–4 verified; `analyze_structure.py` NameError fix; IPP + discrete task doc; `kboard` drift reconciled. SemVer **v0.4.911+1**.

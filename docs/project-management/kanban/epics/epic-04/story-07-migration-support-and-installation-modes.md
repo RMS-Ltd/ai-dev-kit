@@ -37,6 +37,8 @@ Provide safe adoption paths for projects with pre-existing Kanban/Sprint/Issue s
 
 
 - [x] **E04:S07:T02 – FR-007: Migration utilities and installation modes** ✅ COMPLETE (v0.4.7.2+1)
+  - Task doc: [`T02-fr007-migration-utilities-installation-modes.md`](story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md)
+  - IPP: [`IPP-E04S07T02`](../../../../implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md)
   - Implemented migration utility (`migrate_structure.py`) - creates backups, migrates epics/stories/tasks, preserves forensic markers, supports all installation modes
   - Implemented installation script (`install_kanban_framework.py`) - interactive mode selection, integrates detection/analysis/migration, supports Fresh/Migration/Update/Hybrid modes
   - Updated scripts README with migration utility documentation and integrated workflow
