@@ -1,0 +1,37 @@
+{
+  "release_version": "0.4.7.1+1",
+  "task_id": "E04:S07:T01",
+  "invocation_context": "rw_step_7",
+  "timestamp_utc": "2026-06-05T03:38:55Z",
+  "surfaces": {
+    "task_doc": {
+      "path": "docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md",
+      "action": "UPDATE",
+      "why": "Status COMPLETE + v0.4.7.1+1; verification evidence; IPP wired"
+    },
+    "fr_br_uxr": {
+      "path": "docs/project-management/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md",
+      "action": "UPDATE",
+      "why": "Status FIXED; criteria 1-12 verified; implementing task + IPP links"
+    },
+    "kboard": {
+      "path": "docs/project-management/kanban/kboard.md",
+      "action": "UPDATE",
+      "why": "Removed stale E04:S07:T01 TODO row; board metadata version bump"
+    },
+    "kanban_completed": {
+      "path": "docs/project-management/kanban/kanban-completed.md",
+      "action": "UPDATE",
+      "why": "Discrete task link + closure timestamp for E04:S07:T01"
+    }
+  },
+  "rows": {
+    "E04:S07:T01": {
+      "allowed": true,
+      "reason": "terminal_row_removal",
+      "action": "prune_completed_task_from_active_board",
+      "before_stamp": "2026-06-04 12:06 UTC",
+      "after_stamp": null
+    }
+  }
+}
