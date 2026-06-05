@@ -39,7 +39,7 @@ housekeeping_policy: keep
   - Task: [`T12-github-actions-workflow-bug-resolution.md`](story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
   - **Related BR:** [BR-053](../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)
 
-- [ ] **E02:S11:T13 – GitHub Actions workflow spam emails (BR-051)** - TODO — [Task doc](story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
+- [x] **E02:S11:T13 ✅ COMPLETE (v0.2.11.13+2) – GitHub Actions workflow spam emails (BR-051)** - TODO — [Task doc](story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
 
 - [ ] **E02:S11:T14 – GitHub Actions workflow optimization (BR-052)** - TODO — [Task doc](story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fr-br/BR-052-github-actions-workflow-optimization.md)
 

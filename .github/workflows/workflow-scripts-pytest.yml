@@ -17,6 +17,10 @@ name: Workflow scripts pytest
 permissions:
   contents: read
 
+concurrency:
+  group: workflow-scripts-pytest-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   workflow-scripts-pytest:
     runs-on: ubuntu-latest

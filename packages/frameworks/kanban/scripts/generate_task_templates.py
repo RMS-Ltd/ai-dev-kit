@@ -26,6 +26,12 @@ from typing import Dict, List, Optional, Tuple
 from datetime import datetime
 import json
 
+_SCRIPT_DIR = Path(__file__).resolve().parent
+if str(_SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPT_DIR))
+
+import kanban_paths as kp  # noqa: E402
+
 
 class TaskTemplateGenerator:
     """Generates task templates from canonical structure document."""
@@ -183,13 +189,23 @@ class TaskTemplateGenerator:
         words = text.split('-')
         return '-'.join(word.capitalize() for word in words if word)
     
-    def get_task_file_path(self, epic: int, story: int, task_num: int, task_desc: str) -> Path:
-        """Generate file path for task template."""
-        # Sanitize and create filename-safe version
+    def task_filename(self, task_num: int, task_desc: str) -> str:
         sanitized_desc = self.sanitize_filename(task_desc)
         title_desc = self.title_case(sanitized_desc)
-        filename = f"T{task_num:02d}-{title_desc}.md"
-        return self.output_dir / f"Epic-{epic}" / f"Story-{story}" / filename
+        return f"{kp.task_file_prefix(task_num)}{title_desc}.md"
+
+    def get_task_file_path(self, epic: int, story: int, task_num: int, task_desc: str) -> Path:
+        return kp.canonical_template_task_path(
+            self.output_dir, epic, story, task_num, self.task_filename(task_num, task_desc)
+        )
+
+    def resolve_existing_task_file(
+        self, epic: int, story: int, task_num: int, task_desc: str
+    ) -> Optional[Path]:
+        return kp.resolve_template_task_file(
+            self.output_dir, epic, story, task_num,
+            expected_basename=self.task_filename(task_num, task_desc),
+        )
     
     def generate_task_content(
         self,
@@ -328,10 +344,9 @@ class TaskTemplateGenerator:
         # Generate templates
         for epic, story, task_num, task_desc in tasks_to_generate:
             file_path = self.get_task_file_path(epic, story, task_num, task_desc)
-            
-            # Check if file exists
-            if file_path.exists() and not self.overwrite:
-                self.skipped_files.append(file_path)
+            existing = self.resolve_existing_task_file(epic, story, task_num, task_desc)
+            if existing and not self.overwrite:
+                self.skipped_files.append(existing)
                 continue
             
             # Generate content (use agentic if available, otherwise procedural)
@@ -377,32 +392,39 @@ class TaskTemplateGenerator:
         Returns:
             Dictionary with validation results
         """
+        required_headings = ("## Scope", "## Input", "## Deliverable", "## Acceptance Criteria")
         results = {
             'coverage': {'total': len(self.tasks), 'generated': 0, 'missing': []},
-            'paths': {'correct': 0, 'incorrect': []},
-            'structure': {'valid': 0, 'invalid': []}
+            'paths': {'canonical': 0, 'legacy': 0, 'incorrect': []},
+            'structure': {'valid': 0, 'invalid': []},
         }
-        
-        # Check coverage
         for epic, story, task_num, task_desc in self.tasks:
-            file_path = self.get_task_file_path(epic, story, task_num, task_desc)
-            if file_path.exists():
+            canonical_path = self.get_task_file_path(epic, story, task_num, task_desc)
+            resolved = self.resolve_existing_task_file(epic, story, task_num, task_desc)
+            if resolved:
                 results['coverage']['generated'] += 1
+                if resolved == canonical_path:
+                    results['paths']['canonical'] += 1
+                else:
+                    results['paths']['legacy'] += 1
+                try:
+                    content = resolved.read_text(encoding='utf-8')
+                except OSError as exc:
+                    results['structure']['invalid'].append({'path': str(resolved), 'reason': str(exc)})
+                    continue
+                missing = [h for h in required_headings if h not in content]
+                if missing:
+                    results['structure']['invalid'].append({
+                        'path': str(resolved),
+                        'reason': f"missing headings: {', '.join(missing)}",
+                    })
+                else:
+                    results['structure']['valid'] += 1
             else:
                 results['coverage']['missing'].append({
-                    'epic': epic,
-                    'story': story,
-                    'task': task_num,
-                    'description': task_desc
+                    'epic': epic, 'story': story, 'task': task_num,
+                    'description': task_desc, 'expected_path': str(canonical_path),
                 })
-        
-        # Check paths (basic validation)
-        for file_path in self.generated_files:
-            if file_path.exists():
-                results['paths']['correct'] += 1
-            else:
-                results['paths']['incorrect'].append(str(file_path))
-        
         return results
 
 
@@ -530,11 +552,16 @@ def main():
         print("\n" + "="*60)
         print("Validation Results:")
         results = generator.validate()
-        print(f"Coverage: {results['coverage']['generated']}/{results['coverage']['total']} templates generated")
+        print(f"Coverage: {results['coverage']['generated']}/{results['coverage']['total']} templates on disk")
         if results['coverage']['missing']:
             print(f"Missing: {len(results['coverage']['missing'])} templates")
-        print(f"Paths: {results['paths']['correct']} correct")
-    
+        print(f"Paths: {results['paths']['canonical']} canonical, {results['paths']['legacy']} legacy")
+        print(f"Structure: {results['structure']['valid']} valid, {len(results['structure']['invalid'])} invalid")
+        if not results['coverage']['missing'] and not results['structure']['invalid']:
+            pass
+        else:
+            success = False
+
     sys.exit(0 if success else 1)
 
 

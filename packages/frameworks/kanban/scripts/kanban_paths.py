@@ -190,6 +190,73 @@ def canonical_task_filename_prefix(task_num: int) -> str:
     return task_file_prefix(task_num)
 
 
+def template_task_story_dir_candidates(output_dir: Path, epic_num: int, story_num: int) -> List[Path]:
+    """Existing story directories under templates/tasks for path resolution (read tolerance)."""
+    dirs: List[Path] = []
+    seen: set[str] = set()
+    epic_names = [
+        epic_dir_name(epic_num),
+        f"{EPIC_DIR_PREFIX}{epic_num}",
+        epic_dir_name(epic_num, legacy=True),
+        f"{LEGACY_EPIC_DIR_PREFIX}{epic_num}",
+    ]
+    story_names = [
+        story_dir_or_file_prefix(story_num),
+        f"{STORY_DIR_PREFIX}{story_num}",
+        story_dir_or_file_prefix(story_num, legacy=True),
+        f"{LEGACY_STORY_DIR_PREFIX}{story_num:03d}",
+        f"{LEGACY_STORY_DIR_PREFIX}{story_num}",
+    ]
+    for epic_name in epic_names:
+        for story_name in story_names:
+            candidate = output_dir / epic_name / story_name
+            key = str(candidate)
+            if key in seen:
+                continue
+            seen.add(key)
+            if candidate.is_dir():
+                dirs.append(candidate)
+    return dirs
+
+
+def canonical_template_task_path(
+    output_dir: Path,
+    epic_num: int,
+    story_num: int,
+    task_num: int,
+    filename: str,
+) -> Path:
+    """Write-default path for generated task templates (lowercase epic/story segments)."""
+    return output_dir / epic_dir_name(epic_num) / story_dir_or_file_prefix(story_num) / filename
+
+
+def resolve_template_task_file(
+    output_dir: Path,
+    epic_num: int,
+    story_num: int,
+    task_num: int,
+    *,
+    expected_basename: Optional[str] = None,
+) -> Optional[Path]:
+    """Resolve an on-disk task template; prefers canonical path then legacy layouts."""
+    if expected_basename:
+        canonical = canonical_template_task_path(
+            output_dir, epic_num, story_num, task_num, expected_basename
+        )
+        if canonical.is_file():
+            return canonical
+    prefix = task_file_prefix(task_num)
+    for story_dir in template_task_story_dir_candidates(output_dir, epic_num, story_num):
+        if expected_basename:
+            candidate = story_dir / expected_basename
+            if candidate.is_file():
+                return candidate
+        matches = sorted(story_dir.glob(f"{prefix}*.md"))
+        if matches:
+            return matches[0]
+    return None
+
+
 def is_capitalised_epic_story_segment(name: str) -> bool:
     return name.startswith(LEGACY_EPIC_DIR_PREFIX) or name.startswith(LEGACY_STORY_DIR_PREFIX)
 
