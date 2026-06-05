@@ -9,6 +9,22 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.1.6+2] - 05-06-26
+
+E02:S01:T06 — **RW Step 7:** kboard/BR-001 four-surface reconciliation (deferred from +1). SemVer **v0.4.922+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.6+2.md)
+
+---
+
+## [0.2.1.6+1] - 05-06-26
+
+E02:S01:T06 — **BR-001:** find_story_file path/Code-field detection. SemVer **v0.4.922+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.6+1.md)
+
+---
+
 ## [0.2.1.24+2] - 05-06-26
 
 E02:S01:T24 — **BR-097 Step 12:** `push_rw_release.py` scoped tag push; forbid `git push --tags`. SemVer **v0.4.922+2**.
