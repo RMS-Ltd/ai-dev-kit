@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW: E02:S11:T14)
-**Version:** v0.2.11.14+2
+**Last Updated:** 2026-06-05 (RW: E04:S15:T05)
+**Version:** v0.4.15.5+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E04:S15:T05](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md)** — **FR-029** hybrid task template docs.
+  **Completed:** `2026-06-05T12:30:00Z` | **Version:** `v0.4.15.5+1` | **Agent:** `RW E04:S15:T05 --art` | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | [IPP](../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
 
 - **[E02:S11:T14](epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)** — **BR-052** GHA workflow optimization.
   **Completed:** `2026-06-05T20:00:00Z` | **Version:** `v0.2.11.14+2` | **Agent:** `RW` | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md)
