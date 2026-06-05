@@ -372,6 +372,8 @@ You have two options:
 - To validate template consistency
 
 **Related Documentation:**
+- **Guide:** [`docs/hybrid-task-template-guide.md`](docs/hybrid-task-template-guide.md)
+- Installer: `--generate-task-templates`
 - ADR: `docs/architecture/standards-and-adrs/task-template-system-hybrid-adr.md`
 - Design: `docs/architecture/standards-and-adrs/task-template-generator-design.md`
 - Agentic Design: `docs/architecture/standards-and-adrs/agentic-template-generator-design.md`

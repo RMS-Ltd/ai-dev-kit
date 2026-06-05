@@ -10,8 +10,9 @@ housekeeping_policy: keep
 
 ## Status
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2025-12-22
+- **Implemented:** v0.4.15.5+1 (E04:S15:T05)
 
 ## Context
 

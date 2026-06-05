@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.2.1.24+1** — BR-097 closure)  
-**Version Anchor:** v0.2.1.24+1  
+**Last updated:** 2026-06-05 (RW **v0.2.1.24+2** — `push_rw_release.py` Step 12 scoped push)  
+**Version Anchor:** v0.2.1.24+2  
 **Code:** E02S01T24
 
 Publication Status: NOT_APPLICABLE
@@ -85,6 +85,7 @@ Stop RW agents from **reusing tagged BUILD numbers** and **force-moving release 
 4. **IPW template update** — verification/FBU waves: `RW E:S:T --art` only.
 5. **Recovery doc** — single path: bump BUILD, re-RW; never force-tag.
 6. **Tests + doc parity** — regression suite; dual-source RW trigger parity checklist.
+7. **`push_rw_release.py`** (v0.2.1.24+2) — Step 12 pushes release-scoped tags only; **`git push --tags` forbidden** (stale local SemVer tag false failures).
 
 ---
 
