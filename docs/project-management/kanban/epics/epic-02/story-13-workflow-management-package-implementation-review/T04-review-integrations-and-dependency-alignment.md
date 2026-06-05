@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E02:S13:T04  
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-05 (v0.0.0.0+0 – migrated from embedded Story section)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-05 (0.2.13.4+0 – RW -k kanban init)
+**Version:** v0.2.13.4+0
 **Code:** E02S13T04
 
 ---
@@ -61,3 +61,10 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 
 **Source Story:** `docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md`
 
+
+
+---
+
+## Kanban documentation setup
+
+**RW -k --art --doc-policy-zero** (2026-06-05 05:35:14 UTC): Version anchor **v0.2.13.4+0**; **kboard.md** M-band row filed for workflow-mgt RC review pipeline.
