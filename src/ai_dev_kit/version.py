@@ -7,10 +7,10 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 5      # Epic 5 — Documentation Management
-VERSION_STORY = 9     # Story 9 — Docusaurus Documentation Portal
-VERSION_TASK = 13     # Task 13 — BR-090 Docusaurus faster + 3.10.1 alignment
-VERSION_BUILD = 1     # Build 1: @docusaurus/faster + package.json 3.10.1 alignment
+VERSION_EPIC = 7      # Epic 7 — Codebase Maintenance
+VERSION_STORY = 7     # Story 7 — Code Reviews
+VERSION_TASK = 3      # Task 3 — BR-091 workflow validator slug path resolution
+VERSION_BUILD = 1     # Build 1: workflow-mgt slug resolver + bridge template path
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
-# Current: 0.5.9.13+1 (E05:S09:T13)
+# Current: 0.7.7.3+1 (E07:S07:T03)

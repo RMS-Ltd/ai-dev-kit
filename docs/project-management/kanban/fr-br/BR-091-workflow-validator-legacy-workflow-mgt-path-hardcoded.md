@@ -11,10 +11,10 @@ housekeeping_policy: keep
 **Bug ID:** BR-091  
 **Priority:** HIGH  
 **Severity:** HIGH — **`Workflow scripts pytest`** fails on every push to `dev`/`main` that touches `packages/frameworks/workflow-mgt/**` (~16 failures since May 2026).  
-**Status:** OPEN  
+**Status:** OPEN — fix attempted **v0.7.7.3+1** (pending CI verification on `dev`)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.7.7.3+0 — Kanban documentation setup)  
-**Version:** v0.7.7.3+0  
+**Last updated:** 2026-06-05 (v0.7.7.3+1 — RW E07:S07:T03 fix attempted)  
+**Version:** v0.7.7.3+1  
 **Implementing Task:** [E07:S07:T03](../epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md)  
 **Related:** [BR-087](./BR-087-framework-install-directory-slug-mismatch.md) (install slug migration) · [E07:S07:T02](../epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md) (gate that exposes this defect)
 

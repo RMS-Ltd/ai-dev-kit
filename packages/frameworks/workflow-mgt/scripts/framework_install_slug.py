@@ -18,6 +18,37 @@ LEGACY_SOURCE_DIR_TO_SLUG: Dict[str, str] = {
     "tooling & automation": "tooling-automation",
 }
 
+WORKFLOW_MGT_LEGACY_DIR_NAME = "workflow mgt"
+WORKFLOW_MGT_INSTALL_SLUG = LEGACY_SOURCE_DIR_TO_SLUG[WORKFLOW_MGT_LEGACY_DIR_NAME]
+
+
+def workflow_mgt_package_dir(project_root: Path) -> Path:
+    """
+    Resolve Workflow Management package directory under packages/frameworks/.
+
+    Prefer canonical install slug (workflow-mgt); fall back to legacy name with space.
+    When neither exists, return the canonical path for stable error reporting.
+    """
+    root = project_root.resolve()
+    frameworks = root / "packages" / "frameworks"
+    canonical = frameworks / WORKFLOW_MGT_INSTALL_SLUG
+    legacy = frameworks / WORKFLOW_MGT_LEGACY_DIR_NAME
+    if canonical.is_dir():
+        return canonical
+    if legacy.is_dir():
+        return legacy
+    return canonical
+
+
+def workflow_mgt_package_dir_missing_hint(project_root: Path) -> str:
+    """Human-readable hint listing canonical and legacy expected paths."""
+    root = project_root.resolve()
+    frameworks = root / "packages" / "frameworks"
+    return (
+        f"expected {frameworks / WORKFLOW_MGT_INSTALL_SLUG} "
+        f"or legacy {frameworks / WORKFLOW_MGT_LEGACY_DIR_NAME!r}"
+    )
+
 
 def framework_install_slug(name: str) -> str:
     """Return canonical install directory slug (lowercase, hyphenated, no spaces or &)."""

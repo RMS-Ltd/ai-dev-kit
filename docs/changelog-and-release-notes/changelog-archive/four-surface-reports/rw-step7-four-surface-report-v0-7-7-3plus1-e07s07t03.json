@@ -1,0 +1,37 @@
+{
+  "version_string": "v0.7.7.3+1",
+  "task_id": "E07:S07:T03",
+  "epic": 7,
+  "story": 7,
+  "task": 3,
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "notes": "Removed terminal E07:S07:T03 row; appended kanban-completed.md"
+    },
+    "fbuboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fbuboard.md"
+      ],
+      "notes": "BR-091 fix attempted v0.7.7.3+1; IPP link added"
+    }
+  },
+  "summary": "E07:S07:T03 BR-091: workflow_mgt_package_dir slug resolver + bridge template canonical path; pytest 105/105"
+}

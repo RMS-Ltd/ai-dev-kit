@@ -17,6 +17,15 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Tuple
 
+_SCRIPTS = Path(__file__).resolve().parents[1]
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from framework_install_slug import (  # noqa: E402
+    workflow_mgt_package_dir,
+    workflow_mgt_package_dir_missing_hint,
+)
+
 try:
     import yaml
 except ImportError:
@@ -41,7 +50,7 @@ REQUIRED_GUIDE_SUBSTRINGS: Dict[str, str] = {
 
 
 def workflow_mgt_dir(project_root: Path) -> Path:
-    return project_root / "packages" / "frameworks" / "workflow mgt"
+    return workflow_mgt_package_dir(project_root)
 
 
 def skills_pack_root(project_root: Path) -> Path:
@@ -172,7 +181,11 @@ def main(argv: List[str]) -> int:
     project_root = (args.project_root or Path.cwd()).resolve()
     wf = workflow_mgt_dir(project_root)
     if not wf.is_dir():
-        print(f"ERROR: workflow framework directory not found: {wf}", file=sys.stderr)
+        print(
+            f"ERROR: workflow framework directory not found under {project_root} "
+            f"({workflow_mgt_package_dir_missing_hint(project_root)})",
+            file=sys.stderr,
+        )
         return 2
 
     expected = canonical_adk_skill_pack_path_relative()

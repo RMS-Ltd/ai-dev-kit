@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.7.3+1] - 05-06-26
+
+E07:S07:T03 — **BR-091:** Attempted fix — workflow validator slug path resolution (`workflow-mgt` first, legacy fallback); bridge template canonical path; pytest 105/105. SemVer **v0.4.895+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.7.3+1.md)
+
+---
+
 ## [0.5.9.13+1] - 05-06-26
 
 E05:S09:T13 — **BR-090:** Docusaurus `@docusaurus/faster@3.10.1` + package.json alignment; restore CI build gate. SemVer **v0.4.894+1**.
