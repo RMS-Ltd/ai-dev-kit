@@ -1,0 +1,159 @@
+# E02:S11:T13 / BR-051 — FR/BR/UXR/FB intake from GitHub Issues
+#
+# Notification spam root cause (BR-051): broad issue triggers + job-level label `if:`
+# → workflow run with zero executing jobs → "No jobs were run" emails.
+#
+# BR-053 gate: issue-event and push triggers remain DISABLED until platform trigger
+# bug is resolved (see T12). Manual dispatch preserves intake path without spam.
+# Re-enable `on.issues` only after BR-053 closure — use labeled/unlabeled, not edited.
+#
+# Archived predecessors: .github/workflows/archive/fr-br-intake.yml.DISABLED*
+name: FR/BR/UXR/FB Intake from GitHub Issues
+
+"on":
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: GitHub issue number to process (must have needs-triage + type label)
+        required: true
+        type: string
+
+concurrency:
+  group: fr-br-intake-${{ github.event.inputs.issue_number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  convert-issue-to-document:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Fetch issue context
+        id: issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const num = parseInt('${{ github.event.inputs.issue_number }}', 10);
+            if (!Number.isFinite(num)) {
+              core.setFailed('issue_number must be a valid integer');
+              return;
+            }
+            const { data: issue } = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: num,
+            });
+            const labels = issue.labels.map(l => l.name);
+            const needsTriage = labels.includes('needs-triage');
+            const typeOk = labels.some(l =>
+              ['bug', 'enhancement', 'ux-research', 'feedback'].includes(l)
+            );
+            if (!needsTriage || !typeOk) {
+              core.setFailed(
+                'Issue must have needs-triage plus one of: bug, enhancement, ux-research, feedback'
+              );
+              return;
+            }
+            core.setOutput('title', issue.title);
+            core.setOutput('number', String(issue.number));
+            core.setOutput('html_url', issue.html_url);
+            core.setOutput('created_at', issue.created_at);
+            core.setOutput('user_login', issue.user.login);
+            core.setOutput('labels', labels.join(', '));
+            const labelStr = labels.join(' ');
+            let type = 'feedback', template = 'FB_TEMPLATE.md', prefix = 'FB';
+            if (labelStr.includes('bug')) {
+              type = 'bug'; template = 'BR_TEMPLATE.md'; prefix = 'BR';
+            } else if (labelStr.includes('enhancement')) {
+              type = 'feature'; template = 'FR_TEMPLATE.md'; prefix = 'FR';
+            } else if (labelStr.includes('ux-research')) {
+              type = 'uxr'; template = 'UXR_TEMPLATE.md'; prefix = 'UXR';
+            }
+            core.setOutput('type', type);
+            core.setOutput('template', template);
+            core.setOutput('prefix', prefix);
+
+      - name: Get Next Document Number
+        id: doc-number
+        run: |
+          PREFIX="${{ steps.issue.outputs.prefix }}"
+          DOC_DIR="docs/project-management/kanban/fr-br"
+          MAX_NUM=0
+          for file in "$DOC_DIR"/${PREFIX}-*.md; do
+            if [ -f "$file" ]; then
+              NUM=$(basename "$file" | sed -n "s/${PREFIX}-\([0-9]*\)-.*/\1/p")
+              if [ -n "$NUM" ] && [ "$NUM" -gt "$MAX_NUM" ]; then
+                MAX_NUM=$NUM
+              fi
+            fi
+          done
+          NEXT_NUM=$((MAX_NUM + 1))
+          SLUG=$(echo '${{ steps.issue.outputs.title }}' | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-\|-$//g')
+          echo "number=$NEXT_NUM" >> $GITHUB_OUTPUT
+          echo "filename=${PREFIX}-$(printf "%03d" $NEXT_NUM)-${SLUG}.md" >> $GITHUB_OUTPUT
+
+      - name: Convert Issue to Document
+        run: |
+          TEMPLATE="${{ steps.issue.outputs.template }}"
+          PREFIX="${{ steps.issue.outputs.prefix }}"
+          FILENAME="${{ steps.doc-number.outputs.filename }}"
+          DOC_PATH="docs/project-management/kanban/fr-br/$FILENAME"
+          TEMPLATE_PATH="packages/frameworks/kanban/templates/$TEMPLATE"
+          cp "$TEMPLATE_PATH" "$DOC_PATH"
+          sed -i "s/\[Title\]/${{ steps.issue.outputs.title }}/g" "$DOC_PATH"
+          sed -i "s/\[YYYY-MM-DD\]/$(date +%Y-%m-%d)/g" "$DOC_PATH"
+          sed -i "s/\[YYYY-MM-DDTHH:MM:SSZ\]/$(date -u +%Y-%m-%dT%H:%M:%SZ)/g" "$DOC_PATH"
+          sed -i "s/\[Name\/Username\]/${{ steps.issue.outputs.user_login }}/g" "$DOC_PATH"
+          sed -i "s/\[PENDING\/INTAKE\/ACCEPTED\/REJECTED\/DEFERRED\]/PENDING/g" "$DOC_PATH"
+          if ! grep -q "GitHub Issue:" "$DOC_PATH"; then
+            {
+              echo ""
+              echo "## GitHub Issue"
+              echo ""
+              echo "**Issue Number:** #${{ steps.issue.outputs.number }}"
+              echo "**Issue URL:** [${{ steps.issue.outputs.html_url }}](${{ steps.issue.outputs.html_url }})"
+              echo "**Created:** ${{ steps.issue.outputs.created_at }}"
+              echo "**Labels:** ${{ steps.issue.outputs.labels }}"
+            } >> "$DOC_PATH"
+          fi
+          echo "Created document: $DOC_PATH"
+
+      - name: Commit Document
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/project-management/kanban/fr-br/
+          git commit -m "Auto-create ${{ steps.issue.outputs.prefix }}-${{ steps.doc-number.outputs.number }} from GitHub Issue #${{ steps.issue.outputs.number }}" || exit 0
+          git push
+
+      - name: Comment on Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prefix = '${{ steps.issue.outputs.prefix }}';
+            const docPath = '${{ steps.doc-number.outputs.filename }}';
+            const label = prefix === 'BR' ? 'Bug Report'
+              : prefix === 'FR' ? 'Feature Request'
+              : prefix === 'UXR' ? 'UX Research' : 'Feedback';
+            github.rest.issues.createComment({
+              issue_number: parseInt('${{ steps.issue.outputs.number }}', 10),
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: [
+                `✅ This ${label} has been automatically converted to a Kanban document.`,
+                '',
+                `📄 **Document:** \`${docPath}\``,
+                `🔗 **Path:** \`docs/project-management/kanban/fr-br/${docPath}\``,
+                '',
+                'Processed via manual workflow dispatch (BR-051/BR-053 — issue triggers disabled).',
+              ].join('\\n')
+            });

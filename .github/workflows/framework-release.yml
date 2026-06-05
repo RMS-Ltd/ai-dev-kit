@@ -10,6 +10,10 @@ name: Framework release packages
 permissions:
   contents: write
 
+concurrency:
+  group: framework-release-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-and-upload:
     runs-on: ubuntu-latest

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW: E02:S01:T06)
-**Version:** v0.2.1.6+2
+**Last Updated:** 2026-06-05 (RW: E02:S11:T13)
+**Version:** v0.2.11.13+3
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -41,7 +41,6 @@ housekeeping_policy: keep
 
 - **E04:S15:T05** – FR-029: Procedural Task Template Generation Hybrid Strategy - 📋 TODO (LOW, Hybrid strategy for task template generation) | [Task](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md) | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | Last modified: 2025-12-22 00:00 UTC
 
-- **E02:S11:T13** – GitHub Actions workflow spam emails (BR-051) - 📋 TODO (LOW, post-story hardening) | [Task](epics/epic-02/story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](fr-br/BR-051-github-actions-workflow-spam-emails.md) | Last modified: 2026-05-29 17:15 UTC
 
 - **E02:S11:T14** – GitHub Actions workflow optimization (BR-052) - 📋 TODO (LOW, post-story hardening) | [Task](epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md) | Last modified: 2026-05-29 17:16 UTC
 
