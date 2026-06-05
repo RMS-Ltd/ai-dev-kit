@@ -38,7 +38,13 @@ Bidirectional **task ↔ FBU** wiring (KG-R2) made `kboard.md` and `fbuboard.md`
 
 6. **Row link order** unchanged (UXR-010): task/FBU links → IPP segment → `Last modified` stamp.
 
-7. **Phased tooling:** Wave 1 (this ADR + live boards + policy); Wave 2 (validators, `update_kanban_docs`, UKW/RW guides); Wave 3 (framework install templates).
+7. **Phased tooling:** Wave 1 (this ADR + live boards + policy); Wave 2 (validators, `update_kanban_docs`, UKW/RW guides); Wave 3 (framework install templates, `rw-config` schema note, adopter migration guide).
+
+### Wave 3 — framework pack (adopters)
+
+- **Fresh install:** `install_kanban_framework.py --mode fresh` emits `kboard.md` (with V-band scaffold) + `fbuboard.md` redirect stub from `templates/FBUBOARD_STUB_TEMPLATE.md`.
+- **Brownfield:** `packages/frameworks/kanban/guides/single-board-migration-adopter-note.md`.
+- **`rw-config.yaml`:** `kanban_board: kboard.md` is sole active board; optional legacy `fbu_board` key is **deprecated** (see `rw-config-schema.md`).
 
 ---
 

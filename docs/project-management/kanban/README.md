@@ -16,13 +16,11 @@ This directory contains **all Kanban-related documentation** for the `ai-dev-kit
 kanban/
 ├── _index.md              # Kanban board view (obligatory)
 ├── README.md              # This file (obligatory)
-├── kboard.md              # MoSCOW prioritized tasks (canonical)
-├── kboard.md        # Legacy alias -> kboard.md
+├── kboard.md              # MoSCOW prioritized tasks (sole active board; ADR-018)
 ├── kanban-structure.md    # Epic/Story/Task structure
 ├── kanban-board-guide.md  # Rules and explanations
 ├── kanban-completed.md    # Historical record of completed tasks
-├── fbuboard.md            # FR/BR/UXR MoSCOW prioritization board (canonical)
-├── fbuboard.md     # Legacy alias -> fbuboard.md
+├── fbuboard.md            # Deprecated redirect stub (no active MoSCOW)
 ├── fbu-structure.md       # Complete FR/BR/UXR listings by type
 ├── fbu-completed.md       # Historical record of completed FR/BR/UXRs
 ├── fr-br/                 # Individual FR/BR/UXR documents
@@ -45,8 +43,8 @@ kanban/
 - **Single location:** All Kanban docs (Epics, Stories, board views, FR/BR/UXRs) live under `kanban/`
 - **Epic-centric:** Each Epic has its own directory containing all its files (Epic overview, Stories, Task docs)
 - **Story directories:** Stories with associated files can have subdirectories (e.g., `Story-XXX/TXXX-*.md`)
-- **Five-way split:** Board views are split into tasks, structure, guide, completed tasks, and FR/BR/UXR systems for clarity
-- **Dual prioritization:** Both tasks and FR/BR/UXRs use MoSCOW prioritization for consistency
+- **Four-way split:** Board views are split into tasks (`kboard`), structure, guide, and completed ledgers for clarity
+- **Single active MoSCOW (ADR-018):** `kboard.md` owns all task and wired FBU prioritization; `fbuboard.md` is a redirect stub
 - **UXR ownership:** The UXR workflow owns Kanban template updates and documentation maintenance to keep terminology and formatting consistent across boards ([kanban-board-guide.md](kanban-board-guide.md) § Formatting Governance / **E07:S01:T09** / UXR-005)
 
 ## Files
@@ -54,14 +52,14 @@ kanban/
 ### Core Kanban System
 
 - **`_index.md`** – Quick board view (table format)
-- **`kboard.md`** – MoSCOW prioritized tasks (canonical)
+- **`kboard.md`** – MoSCOW prioritized tasks (sole active board; includes **Verification (V)** band)
 - **`kanban-structure.md`** – Epic/Story/Task structure  
 - **`kanban-board-guide.md`** – Rules and explanations
 - **`kanban-completed.md`** – Historical record of completed tasks
 
 ### FR/BR/UXR System Snapshot
 
-- **`fbuboard.md`** – MoSCOW prioritized FR/BR/UXR items (canonical)
+- **`fbuboard.md`** – Deprecated redirect stub (no active MoSCOW; see [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md))
 - **`fbu-structure.md`** – Complete FR/BR/UXR listings by type
 - **`fbu-completed.md`** – Historical record of completed FR/BR/UXRs
 - **`fr-br/FR-XXX-*.md`** – Individual Feature Request documents

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E01:S02:T13** — README hygiene v0.1.2.13+1)
-**Version:** v0.1.2.13+1
+**Last Updated:** 2026-06-05 (RW **E04:S19:T12** — single-board Wave 3 v0.4.19.12+3)
+**Version:** v0.4.19.12+3
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`fbu-completed.md`](fbu-completed.md)).
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E04:S19:T12** – Single-board consolidation — retire `fbuboard` (UXR-020 R3) - 🔄 IN PROGRESS (HIGH, ADR-018 Wave 2 **v0.4.19.12+2**) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) | Last modified: 2026-06-05 21:30 UTC
+- **E04:S19:T12** – Single-board consolidation — retire `fbuboard` (UXR-020 R3) - 🔄 IN PROGRESS (HIGH, ADR-018 Wave 3 **v0.4.19.12+3** — user verification pending) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) | Last modified: 2026-06-05 21:30 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 

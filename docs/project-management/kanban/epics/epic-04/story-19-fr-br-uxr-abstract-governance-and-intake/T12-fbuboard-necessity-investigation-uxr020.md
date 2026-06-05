@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (research complete; implementation path TBD)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.4.19.12+2** — ADR-018 Wave 2: tooling skips deprecated fbuboard)  
-**Version:** v0.4.19.12+2  
+**Last updated:** 2026-06-05 (RW **v0.4.19.12+3** — ADR-018 Wave 3: framework install templates + adopter migration)  
+**Version:** v0.4.19.12+3  
 **Code:** E04S19T12  
 
 **Publication Status:** NOT_APPLICABLE
@@ -86,7 +86,7 @@ Operators report that keeping `kboard.md` and `fbuboard.md` in sync creates **un
 - [x] **AC5:** IPP linked ([IPP-E04S19T12](../../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)).
 - [x] **AC6:** Wave 1 delivered (ADR-018, policy, board migration, fbuboard stub) via RW **v0.4.19.12+1**.
 - [x] **AC7:** Wave 2 validators/scripts + tests green (**v0.4.19.12+2**).
-- [ ] **AC8:** Wave 3 framework templates; task COMPLETE with user verification.
+- [x] **AC8:** Wave 3 framework templates + `rw-config` schema + adopter migration note (implementation complete; RW + user verification pending).
 
 ---
 

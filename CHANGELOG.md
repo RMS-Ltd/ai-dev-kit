@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.1.2.13+1] - 05-06-26
+## [0.4.19.12+3] - 05-06-26
 
-E01:S02:T13 — **README hygiene (FR-002):** Removed stale book-workspace branding from project README. SemVer **v0.4.901+1**.
+E04:S19:T12 — **Single-board Wave 3:** Framework install templates, `fbuboard` stub on fresh install, adopter migration guide. SemVer **v0.4.902+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.2.13+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.12+3.md)
 
 ---
 

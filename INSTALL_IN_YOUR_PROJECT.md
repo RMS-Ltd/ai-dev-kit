@@ -134,10 +134,13 @@ After `install_kanban_framework.py --mode fresh`, on-disk layout is typically:
 
 ```text
 docs/project-management/kanban/
-  kboard.md
+  kboard.md              # sole active MoSCOW board (ADR-018)
+  fbuboard.md            # deprecated redirect stub (no active MoSCOW)
   epics/Epic-1/Epic-1.md
   epics/Epic-1/Story-009-*.md
 ```
+
+**Dual-board brownfield:** If your project still maintains active rows on `fbuboard.md`, migrate per `packages/frameworks/kanban/guides/single-board-migration-adopter-note.md` before upgrading framework packs.
 
 Mode **C** of `install_release_workflow.py` **detects** this layout and pre-fills matching defaults (press Enter to accept). If detection finds files, you should see match previews instead of zero-match warnings.
 

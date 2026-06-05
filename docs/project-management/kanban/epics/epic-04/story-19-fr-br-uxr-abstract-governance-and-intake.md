@@ -52,7 +52,7 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T11 – Kanban epic/story path lowercase naming (UXR-017)** - ✅ COMPLETE (v0.4.19.11+1 — GH #12–#20 closed; adopter replay verified) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) | [UXR-017](../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP-E04S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
-- [ ] **E04:S19:T12 – Single-board consolidation — retire `fbuboard` (UXR-020 R3)** - 🔄 IN PROGRESS (HIGH, Wave 2 **v0.4.19.12+2** — Wave 3 framework templates pending) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP-E04S19T12](../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
+- [ ] **E04:S19:T12 – Single-board consolidation — retire `fbuboard` (UXR-020 R3)** - 🔄 IN PROGRESS (HIGH, Wave 3 **v0.4.19.12+3** — user verification pending) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP-E04S19T12](../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 ---
 
