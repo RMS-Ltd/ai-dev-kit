@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-05  
-**Version:** v0.6.9.21+1  
+**Version:** v0.6.9.21+2  
 **Code:** E06S09T21
 
 **Upstream:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
@@ -55,23 +55,30 @@ Create and maintain repo-root **`greenfield-install/`** as the canonical lean ad
 
 ---
 
-## Proposed `greenfield-install/` layout
+## Proposed `greenfield-install/` layout (minimal)
 
 ```
 greenfield-install/
-├── README.md                         # Adopter entry: "install this tree"
-├── INSTALL_IN_YOUR_PROJECT.md        # Synced from repo root (paths adjusted if needed)
-├── AGENTS.md                         # Adopter-trimmed bootstrap
-├── setup.py, requirements.txt
-├── packages/frameworks/              # Full framework packages (synced)
-├── docs/documentation/user-docs/     # Adopter-facing guides
-├── docs/guides/workflow-initiation-cheatsheet.md
-├── .claude/commands/                 # RW / UKW / IPW slash commands
-├── cli/
-└── src/                              # version.py / package stub for pip install -e
+├── README.md                         # "Vendor this tree"; greenfield install commands
+└── packages/frameworks/              # Full framework packages (~11 MiB)
+    ├── workflow-mgt/scripts/         # install_release_workflow.py, install_greenfield_path.py, validators
+    ├── kanban/scripts/               # install_kanban_framework.py
+    └── …                             # kanban, numbering-versioning, doc-lifecycle, etc.
 ```
 
-**Explicitly excluded:** `docs/project-management/`, `docs/changelog-and-release-notes/`, `portal/`, `tests/`, maintainer `scripts/`, `packages/dist/`.
+**Core principle:** scripts live **inside** `packages/frameworks/` — adopters do **not** need repo-root `scripts/` (maintainer Notion/KB/fr099 tooling).
+
+**Explicitly excluded from v1 lean tree:**
+
+- Repo-root `scripts/`, `cli/`, `src/`, `tests/`
+- `docs/project-management/`, `docs/changelog-and-release-notes/`, `portal/`, `packages/dist/`
+- In-tree user docs (link to published site instead)
+
+**Optional add-ons** (Phase 2+ if audit demands):
+
+- `INSTALL_IN_YOUR_PROJECT.md` excerpt or symlink
+- `.claude/commands/` trigger stubs
+- `setup.py` + `cli/` for `pip install -e` / `adk` CLI path
 
 Phase 0 must validate installer path assumptions (e.g. `install_greenfield_path.py` relative paths) and adjust layout or sync rewrite rules accordingly.
 

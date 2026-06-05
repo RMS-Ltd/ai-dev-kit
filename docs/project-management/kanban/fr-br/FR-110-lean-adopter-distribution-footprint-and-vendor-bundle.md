@@ -75,7 +75,7 @@ Adopters need **`packages/frameworks/*`**, **adopter-facing user docs**, **insta
 
 ### Non-Functional Requirements
 
-- [ ] **FR-110-NF1:** `greenfield-install/` tracked size **≤50%** of full repo tree (~≤14 MiB; stretch **≤10 MiB**).
+- [ ] **FR-110-NF1:** `greenfield-install/` tracked size **~11 MiB** (framework packages only + README); well under 50% of full repo tree.
 - [ ] **FR-110-NF2:** Update path = submodule bump or copy refresh — no adopter fork required.
 - [ ] **FR-110-NF3:** Maintainer cost = one sync script + CI guard; adopters see one obvious directory name.
 
@@ -104,20 +104,26 @@ Adopters need **`packages/frameworks/*`**, **adopter-facing user docs**, **insta
 
 ## Delivery model: `greenfield-install/` (preferred)
 
+**Lean scope (user direction, 2026-06-05):** adopters need **`packages/frameworks/`** and the scripts that ship **inside** those packages — not the maintainer repo’s top-level `scripts/`, `cli/`, `portal/`, or kanban corpus.
+
 ```
 ai-dev-kit/                          # maintainer repo (full corpus)
-├── docs/project-management/         # maintainer-only — NOT in greenfield-install
-├── portal/                          # maintainer-only
+├── scripts/                         # maintainer-only (Notion, KB, fr099 sync) — EXCLUDE
+├── docs/project-management/         # maintainer-only — EXCLUDE
+├── portal/                          # maintainer-only — EXCLUDE
 ├── packages/frameworks/             # source of truth (synced →)
-└── greenfield-install/              # ← adopters install THIS
-    ├── README.md                    # “Copy or submodule this tree into vendor/”
-    ├── INSTALL_IN_YOUR_PROJECT.md
-    ├── packages/frameworks/         # synced copy
-    ├── docs/documentation/user-docs/
-    ├── .claude/commands/
-    ├── cli/, src/, setup.py, requirements.txt
-    └── AGENTS.md                    # adopter-trimmed bootstrap
+│   ├── workflow-mgt/scripts/        # RW install, validators, greenfield orchestrator
+│   └── kanban/scripts/              # Kanban install
+└── greenfield-install/              # ← adopters install THIS (~11 MiB)
+    ├── README.md                    # entry + link to published install docs
+    └── packages/frameworks/       # full framework packages (scripts included)
 ```
+
+**Optional add-ons** (document separately; not required for script-driven greenfield path):
+
+- `INSTALL_IN_YOUR_PROJECT.md` — or link to [published install guide](https://rms-ltd.github.io/ai-dev-kit/)
+- `.claude/commands/` — thin RW/UKW/IPW trigger files
+- `cli/`, `src/`, `setup.py` — only when adopters want `pip install -e` / `adk` CLI
 
 **Adopter flows (document all):**
 

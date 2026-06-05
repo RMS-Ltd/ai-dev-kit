@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.21+1] - 05-06-26
+## [0.6.9.21+2] - 05-06-26
 
-E06:S09:T21 — **FR-110 intake:** lean adopter distribution FR + task; `greenfield-install/` curated-directory delivery model. Kanban-init release. SemVer **v0.4.948+1**.
+E06:S09:T21 — **FR-110 scope refinement:** `greenfield-install/` = `packages/frameworks/` + in-package scripts only (~11 MiB); exclude repo-root maintainer tooling. SemVer **v0.4.949+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.21+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.21+2.md)
 
 ---
 
