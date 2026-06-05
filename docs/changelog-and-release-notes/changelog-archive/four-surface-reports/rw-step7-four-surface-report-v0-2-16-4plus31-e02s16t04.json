@@ -1,0 +1,35 @@
+{
+  "version_string": "v0.2.16.4+31",
+  "task_id": "E02:S16:T04",
+  "epic": 2,
+  "story": 16,
+  "task": 4,
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
+      ]
+    },
+    "kanban_completed": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kanban-completed.md"
+      ]
+    }
+  },
+  "notes": "RW -k E02:S16:T04 --art: UKW -c archive-completed hygiene release."
+}

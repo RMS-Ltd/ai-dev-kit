@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW E02:S16:T04 v0.2.16.4+30 — V-band prune)
-**Version:** v0.2.16.4+30
+**Last Updated:** 2026-06-05 (UKW -c — 14 doc-terminal C-band rows archived from kboard)
+**Version:** v0.2.16.4+31
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,31 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **UKW -c archive batch (2026-06-05)** — doc-terminal rows pruned from active `kboard.md` C-band
+
+- **[E02:S07:T01](epics/epic-02/story-07-trigger-aware-release-workflow.md)** — **FR-013** trigger-aware RW verification closure (parallel E04 wave merge).
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.16.4+7` | **Agent:** `UKW -c` | [FR-013](fr-br/FR-013-trigger-aware-release-workflow.md)
+
+- **[E02:S07:T05](epics/epic-02/story-07-trigger-aware-release-workflow.md)** — **FR-014** RW trigger for FR/BR commits verification closure.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.16.4+7` | **Agent:** `UKW -c` | [FR-014](fr-br/FR-014-rw-trigger-for-fr-br-commits.md)
+
+- **[E04:S14:T04](epics/epic-04/story-14-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md)** — **FR-037** Kanban policy task prioritisation queue stack.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.5.1.37+3` | **Agent:** `UKW -c` | [FR-037](fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
+
+- **[E02:S11:T11](epics/epic-02/story-11-intake-workflow-automation/Task-011-Fix-CHANGELOG-Ordering-Violations.md)** — **BR-002** changelog validator ordering.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.11.11+1` | **Agent:** `UKW -c` | [BR-002](fr-br/BR-002-changelog-validator-ordering-bug.md)
+
+- **[E02:S10:T00](epics/epic-02/story-10-doc-init-build-zero-for-new-est.md)** — **FR-017** doc-init build (+0) policy hardening.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.10.7+1` | **Agent:** `UKW -c` | [FR-017](fr-br/FR-017-versioning-policy-hardening-doc-init-build.md)
+
+- **[E02:S10:T06](epics/epic-02/story-10-doc-init-build-zero-for-new-est.md)** — **FR-020** version validator abstract-space awareness.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.10.7+1` | **Agent:** `UKW -c` | [FR-020](fr-br/FR-020-version-validator-abstract-space-awareness.md)
+
+- **[E02:S11:T00](epics/epic-02/story-11-intake-workflow-automation.md)** — **FR-019** intake workflow automation.
+  **Completed:** `2026-06-05T03:55:22Z` | **Version:** `v0.2.11.12+1` | **Agent:** `UKW -c` | [FR-019](fr-br/FR-019-intake-workflow-automation.md)
+
+*(Seven additional pruned rows were already present in this ledger: E04:S11:T04, E04:S10:T01, E04:S09:T06, E04:S09:T05, E07:S05:T03, E02:S06:T01, E06:S08:T01.)*
 
 #### **Epic 2: Workflow Management Framework (Story 1 — RW Agent Execution & Docs)**
 - **[E02:S01:T24](epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)** — **BR-097**: RW BUILD increment enforcement + release-tag immutability (`resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contract).

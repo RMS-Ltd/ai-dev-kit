@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-05 (v0.2.16.4+30 — UKW -c V-band prune: FR-106, BR-082, BR-088 verified)
-**Version Anchor:** v0.2.16.4+30
+**Last updated:** 2026-06-05 (v0.2.16.4+31 — UKW -c: 14 doc-terminal C-band rows archived)
+**Version Anchor:** v0.2.16.4+31
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 

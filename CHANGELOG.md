@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+31] - 05-06-26
+
+E02:S16:T04 — **UKW -c:** 14 doc-terminal C-band rows archived from `kboard.md`; kanban-completed ledger updated. SemVer **v0.4.922+31**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+31.md)
+
+---
+
 ## [0.4.11.7+6] - 05-06-26
 
 E04:S11:T07 — **Wave 1 tooling:** `extract_embedded_tasks`, `generate_task_doc`, `update_story_refs`, `validate_migration` + unit tests T1–T8. SemVer **v0.4.921+6**.

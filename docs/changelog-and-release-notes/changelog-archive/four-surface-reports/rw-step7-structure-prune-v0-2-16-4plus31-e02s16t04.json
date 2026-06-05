@@ -1,0 +1,70 @@
+{
+  "contract": "FR-097 structure-prune — UKW -c archive completed (ADR-010)",
+  "release_scope": {
+    "task_id": "E02:S16:T04",
+    "version_string": "v0.2.16.4+31"
+  },
+  "rows": {
+    "E02:S16:T04": {
+      "allowed": true,
+      "reason": "RW Step 7 perpetual UKW anchor stamp sync (v0.2.16.4+31)"
+    },
+    "E04:S11:T04": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E04:S10:T01": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E04:S09:T06": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E04:S09:T05": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E07:S05:T03": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E04:S14:T04": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E02:S11:T11": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E02:S10:T00": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E02:S10:T06": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E02:S11:T00": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E02:S06:T01": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E02:S07:T05": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E02:S07:T01": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    },
+    "E06:S08:T01": {
+      "allowed": true,
+      "reason": "COMPLETE — UKW -c archived to kanban-completed.md"
+    }
+  },
+  "timestamp_utc": "2026-06-05 04:02:46 UTC"
+}
