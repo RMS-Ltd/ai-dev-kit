@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-05 (v0.2.16.20+1 — T20 UXR-023 intake release)
-**Version:** v0.2.16.20+1
+**Last updated:** 2026-06-05 (v0.2.16.21+1 — T21 UXR-024 RW local-default)
+**Version:** v0.2.16.21+1
 **Code:** E2S16
 
 ---
@@ -84,6 +84,9 @@ Story 016 remains the operational home for perpetual workflow work. **T04** RW *
 
 - [ ] **E02:S16:T20 – Restore kboard IPP segment on MoSCOW rows (UXR-023)** - 🔄 IN PROGRESS (**v0.2.16.20+1** intake; implementation pending)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md`](story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
+
+- [x] **E02:S16:T21 – RW local-release default — no push; operator batch push (UXR-024)** - ✅ COMPLETE (**v0.2.16.21+1** — doc policy + local RW demo)  
+  - Task: [`story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md`](story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md) | [UXR-024](../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
 
 ---
 

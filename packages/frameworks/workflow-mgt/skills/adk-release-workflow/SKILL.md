@@ -12,9 +12,9 @@ Portable ADK governance skill for optional ECC harness integration ([FR-098](../
 
 Primary reference: [`release-workflow-agent-execution.md`](../../KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 
-## Git / RW boundary
+## Git / RW boundary (UXR-024)
 
-**Commits and pushes are RW-only.** Do not run `git commit` or `git push` outside the Release Workflow (`RW`). See `.cursorrules` / `CLAUDE.md` for mandatory gates (branch safety, RW task intent/completion validators).
+**Commits and local tags are RW-only.** Default `RW` does **not** push — completes locally (`RW COMPLETE (local)`). Operator **batch-pushes** when ready, or use **`RW … --push`** for Step 12 + 12.5. Do not run `git commit` outside RW. See `.cursorrules` / cheatsheet §2.
 
 ## Wiring
 

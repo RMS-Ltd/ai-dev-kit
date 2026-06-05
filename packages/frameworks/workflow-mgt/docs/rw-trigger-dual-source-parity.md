@@ -40,6 +40,7 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 - [ ] **BR-074 (Step 3 + Step 9)** — Step 3 changelog creation includes “never overwrite existing archive changelog” and “use post-bump version in header” guards. Step 9 validator list includes `validate_changelog_archive_links.py` (non-blocking).
 - [ ] **FR-097 / FR-092 (Step 9)** — Step 9 includes `check_changelog_size.py` (non-blocking; triggers 9.5), `validate_board_stamp_diff.py` (**blocking**, Step 7 snapshots), `validate_kanban_state_icons.py` (**strict**), `validate_release_readiness.py` Gates 1–9; `--dpz` (alias: `--doc-policy-zero`) on `validate_version_bump.py` when applicable.
 - [ ] **Step 9.5 / 9.6 / 12.5 / 13** — Portable excerpt and `.claude/commands/rw.md` document CMW 9.5, IDE 9.6, GitHub release 12.5, Housekeeping 13 consistent with root `.cursorrules`.
+- [ ] **UXR-024 (Step 12 / 12.5)** — Default full RW skips push + GitHub release; **`--push`** opt-in only when user typed it; `RW COMPLETE (local)` vs `(pushed)`; operator batch push in cheatsheet §2; `canonical-rw-steps.yaml` `full_release` vs `full_release_push`.
 - [ ] **Step 7 FR-092** — Scoped kanban self-sufficient wording (four-surface contract; no UKW handoff debt) in portable excerpt.
 - [ ] **`.claude/commands/rw.md`** — Step 9 command block matches portable excerpt validator set and `--art` / `--dpz` propagation.
 - [ ] **BR-097 (Step 2 + Step 9/11)** — `resolve_rw_build.py` before `version.py` write; `finalize_rw_semver_registry.py` after `version.py` when `task_touch`; FORBIDDEN force-tag list; `validate_release_tag_immutability.py` + `validate_task_touch_release_contract.py` in Step 9; Step 11 never `git tag -f`; task_touch SemVer collision recovery ≠ BUILD-only.
@@ -111,6 +112,18 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 | IPW / PLAN template | Could prescribe post-ship `--dpz` | Verification/FBU waves: `RW E:S:T --art` only |
 
 **Versioning note:** Forensic release target **v0.2.1.24+1** via `RW E02:S01:T24 --art`.
+
+### 2026-06-05 — E02:S16:T21 parity pass (UXR-024)
+
+| Area | Before | After |
+|------|--------|-------|
+| Default full RW Step 12 / 12.5 | Mandatory push + GitHub Release every run | **Skipped** unless user typed **`--push`** |
+| Git policy | Commit/push only via RW | Commit/tag via RW; operator batch push or `RW --push` |
+| `canonical-rw-steps.yaml` | `full_release` included 12, 12.5 | v2.1.0 — `full_release` local-only; `full_release_push` for `--push` |
+| Cheatsheet §2 | Full RW implied push | Local-default + operator batch push runbook + `--push` flag |
+| Completion message | `RW COMPLETE` only | `RW COMPLETE (local)` vs `(pushed)` |
+
+**Versioning note:** Doc wave under **E02:S16:T21**; forensic RW pending implementation wave.
 
 ---
 

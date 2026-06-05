@@ -148,9 +148,11 @@ After all four gates pass, create a TODO list for all steps (`rw-step-1` through
 | 9.6 IDE Diagnostics | ✅ | ✅ | ❌ |
 | 10 Commit | ✅ | ✅ | ✅ |
 | 11 Create Git Tag | ✅ | ❌ | ✅ |
-| 12 Push to Remote | ✅ | ✅ | ❌ |
-| 12.5 GitHub Release | ✅ | ❌ | ❌ |
+| 12 Push to Remote | ❌* | ❌ | ❌* |
+| 12.5 GitHub Release | ❌* | ❌ | ❌* |
 | 13 Housekeeping | ✅ | ✅ | ✅ |
+
+\* Step 12 / 12.5 run **only** when the user typed **`--push`** in the RW trigger ([UXR-024](docs/project-management/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)). Default full RW / `RW -k` complete **locally** — report `RW COMPLETE (local)`.
 
 ### Step 2 — Bump Version
 
@@ -273,7 +275,11 @@ Epic: {epic} | Story: {story} | Task: {task}"
 
 Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to determine tags. Create annotated primary tag `v{internal_version}` and SemVer tag `vX.Y.Z` on the same commit.
 
-### Step 12 — Push to Remote
+### Step 12 — Push to Remote (UXR-024: `--push` only)
+
+**Default:** **SKIP** unless **`--push`** appears in the user's RW trigger message. When skipped, report **`RW COMPLETE (local)`** and point operator to batch push runbook (cheatsheet §2).
+
+**When `--push` is present:**
 
 **🚨 FORBIDDEN:** `git push origin {branch} --tags` — pushes every local tag; divergent stale SemVer tags cause false push failures.
 
@@ -284,7 +290,13 @@ python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" \
 
 Manual: push branch, then `git push origin refs/tags/v{internal}` (+ SemVer-core tag in task-touch mode). Never `--tags`.
 
-### Step 12.5 — GitHub Release
+**Operator batch push (after local-only RW runs):** push branch once, then each pending `refs/tags/v{internal}` (+ SemVer-core in task-touch mode).
+
+### Step 12.5 — GitHub Release (UXR-024: `--push` only)
+
+**Default:** **SKIP** unless **`--push`** in trigger. When skipped with Step 12, operator may run `create_github_release.py` after batch push.
+
+**When `--push` is present:**
 
 ```bash
 python "packages/frameworks/workflow-mgt/scripts/create_github_release.py" \

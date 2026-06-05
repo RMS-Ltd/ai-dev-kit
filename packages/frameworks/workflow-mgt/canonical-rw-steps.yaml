@@ -115,18 +115,20 @@ canonical_rw_steps:
   step_12:
     number: 12
     name: "Push to Remote"
-    description: "Push branch and tags with network permissions"
-    mandatory: true
+    description: "Push branch and release-scoped tags — only when user typed --push (UXR-024); skipped by default"
+    mandatory: false
     blocking: false
     category: "git"
+    trigger_flag: "--push"
 
   step_12_5:
     number: 12.5
     name: "Create/Update GitHub Release"
-    description: "create_github_release.py with SemVer tag"
-    mandatory: true
+    description: "create_github_release.py with SemVer tag — only with --push (UXR-024)"
+    mandatory: false
     blocking: false
     category: "git"
+    trigger_flag: "--push"
 
   step_13:
     number: 13
@@ -140,14 +142,31 @@ canonical_rw_steps:
 execution_paths:
   full_release:
     trigger: "RW"
-    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 10, 11, 12, 12.5, 13]
-    description: "Complete intelligent agent release (12 steps + optional 9.5/9.6 + 12.5 + housekeeping)"
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 10, 11, 13]
+    description: "Local-complete release (commit + tag locally; no push unless --push) — UXR-024"
     category: "full"
+    completion_status: "RW COMPLETE (local)"
+
+  full_release_push:
+    trigger: "RW --push"
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 10, 11, 12, 12.5, 13]
+    description: "Full release with remote push + GitHub Release (user must type --push)"
+    category: "full"
+    completion_status: "RW COMPLETE (pushed)"
 
   kanban_init:
     trigger: "RW -k"
+    steps: [1, 2, 3, 4, 7, 8, 9, 10, 11, 13]
+    description: "Kanban documentation init (scoped Step 7 kanban_init mode; local-default)"
+    category: "documentation"
+    step_modifications:
+      7:
+        mode: "kanban_init"
+
+  kanban_init_push:
+    trigger: "RW -k --push"
     steps: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 12.5, 13]
-    description: "Kanban documentation init (scoped Step 7 kanban_init mode)"
+    description: "Kanban init with remote push + GitHub Release"
     category: "documentation"
     step_modifications:
       7:
@@ -160,9 +179,10 @@ execution_paths:
     category: "documentation"
 
 metadata:
-  version: "2.0.0"
+  version: "2.1.0"
   created: "2026-03-09"
-  last_updated: "2026-06-03"
+  last_updated: "2026-06-05"
+  uxr_024: "Default full RW skips step 12/12.5; --push opt-in"
   total_steps: 13
   optional_sub_steps: [9.5, 9.6, 12.5]
   mandatory_steps: 11

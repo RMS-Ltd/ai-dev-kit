@@ -166,9 +166,9 @@ The Release Workflow consists of **14 steps** organized into 3 phases. Each step
   - Creates annotated tag with version (forensic marker)
   - Enables version-based navigation in Git history
 
-- **Step 12:** Push to Remote
-  - Pushes branch and tags to remote repository
-  - Completes forensic traceability chain
+- **Step 12:** Push to Remote (**UXR-024:** skipped by default; run only with **`--push`** in RW trigger)
+  - Operator may batch-push many local RW commits/tags later
+  - With `--push`: pushes branch and release-scoped tags (never `--tags`)
 
 ### Phase 3: PDCA CHECK & ACT (Steps 13-14)
 
@@ -1018,15 +1018,17 @@ After execution, this step outputs:
 
 ### Step 11: Push to Remote
 
+> **UXR-024:** In ai-dev-kit agent execution, this step is **skipped by default**. Run only when the user typed **`--push`** in the RW trigger. Local forensic chain completes at commit + local tag.
+
 **Handler:** `git.push`
 **Category:** Git
 **Icon:** 📤
-**Required:** ❌ No (optional step)
+**Required:** ❌ No (optional; **`--push`** opt-in per UXR-024)
 **Default Dependencies:** `step-8`, `step-9` (push after commit and tag)
 
 #### Purpose
 
-Pushes the branch and tags to the remote repository. This makes the release available to others.
+Pushes the branch and release-scoped tags to the remote repository when **`--push`** is present. Otherwise operator batch-pushes when ready.
 
 #### Execution Flow
 

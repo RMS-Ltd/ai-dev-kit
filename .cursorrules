@@ -5,7 +5,7 @@
 **Version:** 1.0.0  
 **Last Updated:** 2025-12-18
 
-**🚨 Git: Commit and push only via Release Workflow (RW).** Do not run `git commit` or `git push` outside RW. When changes are ready, run **`RW <task_id>`** in one message (e.g. `RW E7:S01:T10`, `RW E7S01T10`; same for `RW -d` / `RW -k`) to version, validate, commit, tag, and push. See "Git Workflow Restrictions" below.
+**🚨 Git: Commit and tag via Release Workflow (RW); push is deferred by default (UXR-024).** Do not run `git commit` outside RW. Default **`RW <task_id>`** completes **locally** (version, changelog, kanban, commit, tag) — **no push**. Operator **batch-pushes** when ready, or add **`--push`** to the RW trigger for immediate Step 12 + 12.5. See "Git Workflow Restrictions" below.
 
 **🧭 Agent cold start (ADR-012):** On a new session, read repo-root **`AGENTS.md` only** — it contains the routing table and binding rules (one step; do not open `docs/project-agent-manifest.json` on cold start). State which track applies, then load only the `loadFirst` paths listed there before ingesting this full rules file or large doc trees. Manifest/index: tooling sync and validators only (`docs/project-agent-index.md`).
 
@@ -123,7 +123,7 @@
 
 9. **EXECUTE STEP 4** - Run kanban documentation updates
 
-10. **EXECUTE STEP 5** - Git operations (add, commit, tag, push)
+10. **EXECUTE STEP 5** - Git operations (add, commit, tag; push only if `--push` in trigger — UXR-024)
 
 11. **EXECUTE STEP 6** - Final validation and reporting
 
@@ -403,13 +403,15 @@ For each step, follow this pattern:
  - **D. Registry finalization:** Task-touch counter/mapping finalizes at tag-creation boundary, not read-only lookups.
  - **Note:** If both tags are created, they must reference the same commit.
 
-12. **Push to Remote** - Push epic branch and **release-scoped tags only** (DO NOT push to main unless ready to deploy)
+12. **Push to Remote** — **SKIPPED by default (UXR-024).** Run **only** when the user typed **`--push`** in the RW trigger message.
+    - **Default full RW:** Local-complete through Step 11; report **`RW COMPLETE (local)`**; operator batch-pushes later (see cheatsheet §2).
+    - **With `--push`:** Push epic branch and **release-scoped tags only** (DO NOT push to main unless ready to deploy).
     - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
     - **🚨 FORBIDDEN:** `git push origin {branch} --tags` — pushes *every* local tag; stale local SemVer tags that diverge from remote cause false failures (even when branch + new release tag are valid).
     - **Use:** `python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" --branch "{branch}" --internal-version "{internal_version}"`
-    - **Manual equivalent:** `git push origin {branch}` then `git push origin refs/tags/v{internal_version}` and (task-touch mode) `git push origin refs/tags/v{semver_core}` — never `--tags`.
+    - **Operator batch push (no `--push` on RW):** `git push origin {branch}` once, then per local release `git push origin refs/tags/v{internal_version}` (+ SemVer-core tag in task-touch mode) — never `--tags`.
 
-12.5. **Create/Update GitHub Release** - **MANDATORY:** Create or update GitHub release using SemVer tag:
+12.5. **Create/Update GitHub Release** — **SKIPPED by default (UXR-024).** Run **only** with **`--push`** in the RW trigger. When run, create or update GitHub release using SemVer tag:
    - **A. Script Auto-Loads .env.local:** The `create_github_release.py` script automatically loads `.env.local` if it exists (checks current directory and project root)
    - **B. Get Repository:** Use `GITHUB_REPOSITORY` env var (from .env.local or environment) or default to `earlution/ai-dev-kit`
    - **C. Create/Update Release:** Run `create_github_release.py` to create or update GitHub release:
@@ -765,22 +767,25 @@ Documents in `docs/` directory must have lifecycle metadata in frontmatter:
 
 ## Git Workflow Restrictions
 
-**Strict Rules:**
-- Commits MUST be made via Release Workflow (RW) only
-- Pushes MUST be made via Release Workflow (RW) only
+**Strict Rules (UXR-024):**
+- Commits and **local tags** MUST be made via Release Workflow (RW) only
+- **Default RW does not push** — operator batch-pushes when ready, or use **`RW … --push`**
 - Branch isolation MUST be enforced
 - Pre-commit validation MUST pass
 
 **Prohibited Operations:**
 - Manual `git commit` (use RW instead)
-- Manual `git push` (use RW instead)
+- `git push origin {branch} --tags` on release tags (use per-tag `refs/tags/v…` or `push_rw_release.py`)
 - Commits to wrong branch (validated by branch safety check)
-- Pushes without validation (validated by RW)
+
+**Allowed operator push (batch):**
+- After one or more local-complete RW runs: push branch + release-scoped tags per [workflow-initiation-cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) §2
+- Immediate push during RW: **`RW E:S:T --push`** only
 
 **Enforcement:**
 - Branch safety check validates branch context
-- Workflow validators ensure compliance
-- Clear error messages for violations
+- Workflow validators ensure compliance before local commit/tag
+- Clear completion state: `RW COMPLETE (local)` vs `RW COMPLETE (pushed)`
 
 ---
 

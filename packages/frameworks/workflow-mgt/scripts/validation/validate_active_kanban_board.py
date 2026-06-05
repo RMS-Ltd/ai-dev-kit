@@ -54,6 +54,10 @@ _LEGACY_FORBIDDEN_SECTIONS = (
 
 _PLACEHOLDER_LINE_RE = re.compile(r"^\s*\*\(")
 
+_IPP_SEGMENT_RE = re.compile(r"—No IPP—|\[—IPP—\]\(")
+
+_TASK_BOLD_RE = re.compile(r"\*\*(E\d+:S\d+:T\d+)\*\*")
+
 
 def active_board_paths(project_root: Path) -> List[Path]:
     cfg = load_rw_config(project_root)
@@ -98,6 +102,20 @@ def validate_board_file(path: Path) -> Tuple[bool, List[str]]:
             continue
         if not in_moscow:
             continue
+
+        if st.startswith("- **"):
+            body_before_footer = re.sub(
+                r"\s*\|\s*Last modified:\s*\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}\s+UTC.*",
+                "",
+                line,
+            )
+            if not _IPP_SEGMENT_RE.search(body_before_footer):
+                task_match = _TASK_BOLD_RE.search(st)
+                token = task_match.group(1) if task_match else st[:48]
+                findings.append(
+                    f"{path.name}:{i}: missing IPP segment (—No IPP— or [—IPP—](…)) "
+                    f"on row {token}"
+                )
 
         if _JOURNAL_LINE_RE.match(line):
             findings.append(

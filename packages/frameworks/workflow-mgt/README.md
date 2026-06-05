@@ -437,10 +437,11 @@ The AI assistant:
 7. **Documentation:** All actions are documented with analysis and results
 8. **Atomicity:** The workflow either completes all steps for the selected path or stops with a clear "RW BLOCKED" message
 
-**Execution Path Details:**
-- **RW (Full Release):** Steps 1-17 (complete release with Git operations, verification, PIR)
-- **RW -k (Kanban Init):** Steps [1, 2, 3, 4, 7, 11, 12] - Documentation setup only, Step 7 modified for Kanban init mode
-- **RW -d (Documentation Only):** Steps [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14] - Documentation updates, skips Git tag, push, PIR trigger, housekeeping
+**Execution Path Details (UXR-024):**
+- **RW (Local-complete):** Steps 1–11 + 13 — commit + tag locally; **no push** unless user adds **`--push`**
+- **RW --push:** Adds Steps 12 + 12.5 (remote push + GitHub Release)
+- **RW -k (Kanban Init):** Local-default kanban init; add **`--push`** for remote
+- **RW -d (Documentation Only):** Documentation updates; skips Git tag and push
 
 ### The 13 Steps (Plus Optional Steps)
 
@@ -459,7 +460,7 @@ The AI assistant:
 9.5. **Changelog Management Workflow (CMW)** - Optional: Archive entries if changelog exceeds threshold
 10. **Commit Changes** - Create git commit with versioned message
 11. **Create Git Tag** - Create annotated tag
-12. **Push to Remote** - Push epic branch and tags to remote repository (DO NOT push to main unless ready to deploy)
+12. **Push to Remote** - **Skipped by default (UXR-024).** Only with **`--push`** in trigger. Operator may batch-push many local releases later.
 
 **Phase 3: PDCA CHECK & ACT (Steps 12-13, optional but recommended)**
 12. **Post-Commit Verification & Reflection** - Verify changes worked as expected, evaluate against objectives, reflect on results

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-05 (v0.2.16.20+1 – RW E02:S16:T20 UXR-023 intake)
+**Last updated:** 2026-06-05 (v0.2.16.21+1 – RW E02:S16:T21 UXR-024 local-default RW)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]

@@ -53,7 +53,7 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 | ID | Rule | Source |
 | -- | ---- | ------ |
 | P-IPW-GATE | No implementation until IPP/ICW linked + explicit user go-ahead | [FR-083](docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md) |
-| P-RW-GIT | Commit/push only via RW | `.cursorrules` (Git Workflow Restrictions) |
+| P-RW-GIT | Commit/tag via RW; push deferred (batch operator or `RW --push`) | [UXR-024](docs/project-management/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) · `.cursorrules` |
 | P-RW-TASK-TOKEN | RW requires `E:S:T` in trigger | [FR-060](docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md) |
 | P-RW-STEP7 | RW Step 7 four-surface kanban reconciliation | [FR-092](docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) |
 | P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) |

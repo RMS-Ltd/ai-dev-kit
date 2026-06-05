@@ -7,7 +7,7 @@ This agent handles **ONLY** the Release Workflow (RW, RW -d, RW -k).
 Refuse all other requests. Redirect with:
 > "This agent handles only the Release Workflow. Use the appropriate workflow agent for [requested action]."
 
-Accepted triggers: `RW`, `RW -d`, `RW -k` (case-insensitive).
+Accepted triggers: `RW`, `RW -d`, `RW -k`, optional `--push` (case-insensitive). **UXR-024:** default RW is local-complete; `--push` opts into Step 12 + 12.5.
 
 ---
 
@@ -23,9 +23,10 @@ Accepted triggers: `RW`, `RW -d`, `RW -k` (case-insensitive).
 
 | Variant | Purpose | Steps Executed |
 |---------|---------|----------------|
-| `RW` | Full release cycle | All 17 steps |
-| `RW -d` | Documentation-only update | Steps 1–11, 13, 14 |
-| `RW -k` | Kanban init only | Steps 1–4, 7, 11, 12 |
+| `RW` | Local-complete release (default) | Steps through commit + tag; **no push** |
+| `RW --push` | Full release with remote | Above + Step 12 push + 12.5 GitHub Release |
+| `RW -d` | Documentation-only update | Steps 1–11, 13, 14 (no tag/push) |
+| `RW -k` | Kanban init (local-default) | Kanban init path; add `--push` for remote |
 
 Determine the variant from the trigger before beginning Step 1.
 
@@ -91,14 +92,18 @@ Determine the variant from the trigger before beginning Step 1.
 - `git tag [version]`
 - Annotated tag with release summary
 
-**Step 13 — Push to Remote** _(RW and RW -d only)_
-- `git push origin [branch]`
-- `git push origin [tag]` if tag was created
+**Step 12 — Push to Remote** _(only when `--push` in trigger — UXR-024)_
+- `git push origin [branch]` once per batch session
+- `git push origin refs/tags/[tag]` per release — never `--tags`
+- If `--push` absent: skip; report `RW COMPLETE (local)`
+
+**Step 12.5 — GitHub Release** _(only with `--push`)_
+- Run `create_github_release.py` after successful push
 
 ### Optional Steps (RW full mode only)
 
 **Step 14 — Post-Commit Verification** _(optional)_
-- Confirm commit hash, tag, and remote push succeeded
+- Confirm commit hash and local tag; remote push only if `--push` was used
 - Review final diff against expected scope
 
 **Step 15 — Act on Verification Results** _(optional, depends on Step 14)_

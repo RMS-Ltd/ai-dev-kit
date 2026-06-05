@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E02:S16:T21](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md)** — RW local-default no push (UXR-024): agent SoT, `--push` opt-in, batch-push runbook, packaged parity.
+  **Completed:** `2026-06-05T15:22:51Z` | **Version:** `v0.2.16.21+1` | **Agent:** `RW E02:S16:T21 --art` (local) | [UXR-024](fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
+
 - **[E02:S16:T19](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md)** — RW `--dpz` short flag for doc-policy-zero (UXR-022): parsers, tests, cheatsheet, agent SoT.
   **Completed:** `2026-06-05T15:12:49Z` | **Version:** `v0.2.16.19+2` | **Agent:** `RW E02:S16:T19 --art` | [UXR-022](fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) | [IPP](../../implementation-cycles/IPP-E02S16T19-rw-dpz-short-flag-uxr022.md)
 

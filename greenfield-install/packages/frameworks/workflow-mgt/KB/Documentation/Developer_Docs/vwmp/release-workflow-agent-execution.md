@@ -2493,20 +2493,26 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
 
 ### Step 13: Push to Remote
 
+> **UXR-024 (local-default):** Default full `RW` **skips** this step and Step 12.5 unless the user typed **`--push`** in the RW trigger. Local-complete RW ends after Step 11 (tag) + Step 13 (housekeeping) with **`RW COMPLETE (local)`**. Operator **batch-pushes** branch + per-release `refs/tags/v…` when ready, or re-invokes with **`RW E:S:T --push`** for immediate remote publication. See [workflow-initiation-cheatsheet.md](../../../../../../docs/guides/workflow-initiation-cheatsheet.md) §2.
+
 **Step Definition:**
 ```yaml
 - id: step-13
   name: Push to Remote
   handler: git.push
   dependencies: [step-11, step-12]
+  trigger_flag: "--push"
   config:
     push_tags: true
     remote: origin
+    skip_by_default: true  # UXR-024
 ```
 
 **Agent Execution:**
 
 1. **ANALYZE:**
+   - **If `--push` not in user trigger message:** Mark step **cancelled**; proceed to housekeeping; report `RW COMPLETE (local)`.
+   - **If `--push` present:** Continue push analysis below.
    - Get current branch name:
      - [Example: Confidentia] `epic/4` (already validated in Step 1)
      - [Example: ai-dev-kit] `epic/2` or `main` (already validated in Step 1)

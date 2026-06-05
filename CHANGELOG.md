@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.21+1] - 05-06-26
+
+E02:S16:T21 — **Change implemented:** UXR-024 RW local-default (no push); `--push` opt-in; operator batch-push runbook; packaged parity. SemVer **v0.4.978+1**. Local release (no remote push).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.21+1.md)
+
+---
+
 ## [0.2.16.20+1] - 05-06-26
 
 E02:S16:T20 — **Intake:** UXR-023 kboard IPP segment regression; task + kanban wiring. SemVer **v0.4.977+1**.

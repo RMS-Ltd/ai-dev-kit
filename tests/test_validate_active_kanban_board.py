@@ -28,7 +28,33 @@ def _minimal_kboard_moscow(*rows: str) -> str:
 def test_passes_live_open_row(tmp_path: Path) -> None:
     content = _minimal_kboard_moscow(
         "- **E02:S16:T04** – UKW perpetual - 🔄 PERPETUAL - "
-        "[Task](t.md) | Last modified: 2026-06-04 12:00 UTC"
+        "[Task](t.md) | —No IPP— | Last modified: 2026-06-04 12:00 UTC"
+    )
+    path = tmp_path / "kboard.md"
+    path.write_text(content, encoding="utf-8")
+    ok, findings = validate_board_file(path)
+    assert ok
+    assert not findings
+
+
+def test_blocks_missing_ipp_segment(tmp_path: Path) -> None:
+    content = _minimal_kboard_moscow(
+        "- **E08:S03:T12** – Waiting task - ⏳ WAITING - "
+        "[Task](t.md) | [BR-099](br.md) | Last modified: 2026-06-04 12:00 UTC"
+    )
+    path = tmp_path / "kboard.md"
+    path.write_text(content, encoding="utf-8")
+    ok, findings = validate_board_file(path)
+    assert not ok
+    assert any("missing IPP segment" in f for f in findings)
+
+
+def test_passes_row_with_linked_ipp(tmp_path: Path) -> None:
+    content = _minimal_kboard_moscow(
+        "- **E02:S16:T20** – IPP restore - 🔄 IN PROGRESS - "
+        "[Task](t.md) | [UXR-023](uxr.md) | "
+        "[—IPP—](../../implementation-cycles/IPP-E02S16T20.md) | "
+        "Last modified: 2026-06-04 12:00 UTC"
     )
     path = tmp_path / "kboard.md"
     path.write_text(content, encoding="utf-8")
@@ -40,7 +66,7 @@ def test_passes_live_open_row(tmp_path: Path) -> None:
 def test_blocks_terminal_complete_row(tmp_path: Path) -> None:
     content = _minimal_kboard_moscow(
         "- **E02:S16:T02** – Done task - ✅ COMPLETE - "
-        "[Task](t.md) | Last modified: 2026-06-04 12:00 UTC"
+        "[Task](t.md) | —No IPP— | Last modified: 2026-06-04 12:00 UTC"
     )
     path = tmp_path / "kboard.md"
     path.write_text(content, encoding="utf-8")
@@ -53,7 +79,7 @@ def test_blocks_journal_line(tmp_path: Path) -> None:
     content = _minimal_kboard_moscow(
         "**2026-06-04:** Archived T02 to kanban-completed.",
         "- **E02:S16:T04** – UKW - 🔄 PERPETUAL - "
-        "[Task](t.md) | Last modified: 2026-06-04 12:00 UTC",
+        "[Task](t.md) | —No IPP— | Last modified: 2026-06-04 12:00 UTC",
     )
     path = tmp_path / "kboard.md"
     path.write_text(content, encoding="utf-8")

@@ -872,25 +872,30 @@ def resolve_planning_artifact_for_task(task_id: str, project_root: Path) -> Opti
     if not planning_dir.exists():
         return None
 
-    # Support both padded and non-padded story/task tokens.
-    token_variants = {
-        (f"S{story}", f"T{task}"),
-        (f"S{story}", f"T{task:02d}"),
-        (f"S{story:02d}", f"T{task}"),
-        (f"S{story:02d}", f"T{task:02d}"),
-    }
+    # Support padded and non-padded epic/story/task tokens (UXR-014 / mixed corpus).
+    epic_tokens = sorted({str(epic), f"{epic:02d}"})
+    story_task_variants = sorted(
+        {
+            (f"S{story}", f"T{task}"),
+            (f"S{story}", f"T{task:02d}"),
+            (f"S{story:02d}", f"T{task}"),
+            (f"S{story:02d}", f"T{task:02d}"),
+        }
+    )
 
-    for story_token, task_token in sorted(token_variants):
-        canonical_pattern = f"IPP-E{epic}{story_token}{task_token}-*.md"
-        canonical_matches = sorted(planning_dir.glob(canonical_pattern))
-        if canonical_matches:
-            return canonical_matches[0]
+    for epic_token in epic_tokens:
+        for story_token, task_token in story_task_variants:
+            canonical_pattern = f"IPP-E{epic_token}{story_token}{task_token}-*.md"
+            canonical_matches = sorted(planning_dir.glob(canonical_pattern))
+            if canonical_matches:
+                return canonical_matches[0]
 
-    for story_token, task_token in sorted(token_variants):
-        legacy_pattern = f"IPW-E{epic}{story_token}{task_token}-*.md"
-        legacy_matches = sorted(planning_dir.glob(legacy_pattern))
-        if legacy_matches:
-            return legacy_matches[0]
+    for epic_token in epic_tokens:
+        for story_token, task_token in story_task_variants:
+            legacy_pattern = f"IPW-E{epic_token}{story_token}{task_token}-*.md"
+            legacy_matches = sorted(planning_dir.glob(legacy_pattern))
+            if legacy_matches:
+                return legacy_matches[0]
 
     return None
 
@@ -977,6 +982,16 @@ def _normalize_traceability_segments_for_row(line: str, project_root: Path) -> s
         segments = [segment.strip() for segment in line_core.split("|") if segment.strip()]
         line_core = " | ".join(segments)
         normalized_core = f"{line_core.rstrip()} | {task_token} | {ipp_token}"
+        if footer_chunks:
+            return f"{normalized_core} | {' | '.join(footer_chunks)}"
+        return normalized_core
+
+    # kboard live format (UXR-023 / E02:S16:T20): bold E:S:T + [Task](url) or [Task Doc](url).
+    task_link_kboard = re.search(r"\[(?:Task(?:\s+Doc(?:ument)?)?)\]\(([^)]+)\)", line_core)
+    if task_id_bold_match and task_link_kboard:
+        task_id = _canonicalize_task_id(task_id_bold_match.group(1))
+        ipp_token = render_ipp_segment_for_task(task_id, project_root)
+        normalized_core = f"{line_core.rstrip()} | {ipp_token}"
         if footer_chunks:
             return f"{normalized_core} | {' | '.join(footer_chunks)}"
         return normalized_core

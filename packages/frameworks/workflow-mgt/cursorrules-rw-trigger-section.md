@@ -134,8 +134,8 @@ todo_write(merge=False, todos=[
     {'id': 'rw-step-9.6', 'status': 'pending', 'content': 'Step 9.6: Check IDE-Flagged Problems - errors, warnings, infos in modified files (recommended, non-blocking)'},
     {'id': 'rw-step-10', 'status': 'pending', 'content': 'Step 10: Commit Changes - Create git commit with versioned message'},
     {'id': 'rw-step-11', 'status': 'pending', 'content': 'Step 11: Create Git Tag - Internal + SemVer annotated tags'},
-    {'id': 'rw-step-12', 'status': 'pending', 'content': 'Step 12: Push to Remote - Push branch and tags (with network permissions)'},
-    {'id': 'rw-step-12.5', 'status': 'pending', 'content': 'Step 12.5: Create/Update GitHub Release (SemVer tag)'},
+    {'id': 'rw-step-12', 'status': 'cancelled', 'content': 'Step 12: Push to Remote - SKIP unless --push in trigger (UXR-024)'},
+    {'id': 'rw-step-12.5', 'status': 'cancelled', 'content': 'Step 12.5: GitHub Release - SKIP unless --push in trigger (UXR-024)'},
     {'id': 'rw-step-13', 'status': 'pending', 'content': 'Step 13: Housekeeping - Clear workflow step tracker and finalize agent run log (ADR-011)'},
     {'id': 'rw-step-14', 'status': 'pending', 'content': 'Step 14: Act on Verification Results - Address any issues found during verification'},
     {'id': 'rw-step-15', 'status': 'pending', 'content': 'Step 15: Check for PIR Trigger - Determine if Post-Implementation Review is needed'},
@@ -450,11 +450,13 @@ For each step, follow this pattern:
    - **Examples**:
      - Registry mode: `v0.6.7.18+2` (internal version tag)
      - Task-touch mode: `v0.9.5` (SemVer core tag, internal traceability tag: `v0.6.7.18+2`)
-12. **Push to Remote** - Push epic branch and release-scoped tags to origin (DO NOT push to main unless ready to deploy)
+12. **Push to Remote** — **SKIPPED by default (UXR-024).** Run **only** when user typed **`--push`** in the RW trigger.
+    - **Default:** Report `RW COMPLETE (local)`; operator batch-pushes per cheatsheet §2.
+    - **With `--push`:** Push epic branch and release-scoped tags (DO NOT push to main unless ready to deploy).
     - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
     - **🚨 FORBIDDEN:** `git push origin {branch} --tags` (pushes all local tags; stale SemVer tags → false failures)
     - **Use:** `python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" --branch "{branch}" --internal-version "{internal_version}"`
-12.5. **Create/Update GitHub Release** - **MANDATORY:** Run `create_github_release.py` with SemVer tag (loads `GITHUB_TOKEN` from `.env.local` when present). Non-blocking if token missing.
+12.5. **Create/Update GitHub Release** — **SKIPPED by default (UXR-024).** Run **only** with **`--push`**. When run: `create_github_release.py` with SemVer tag (loads `GITHUB_TOKEN` from `.env.local` when present). Non-blocking if token missing.
 13. **Housekeeping** - Cancel/clear workflow step tracker entries (`rw-step-*`); finalize agent run log per [ADR-011](KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md).
 
 **Key Principles:**

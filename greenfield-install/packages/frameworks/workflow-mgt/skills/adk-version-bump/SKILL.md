@@ -14,7 +14,7 @@ Primary reference: [`release-workflow-agent-execution.md`](../../KB/Documentatio
 
 ## Git / RW boundary
 
-**Commits and pushes are RW-only.** Do not run `git commit` or `git push` outside the Release Workflow (`RW`). See `.cursorrules` / `CLAUDE.md` for mandatory gates (branch safety, RW task intent/completion validators).
+**Commits and local tags are RW-only (UXR-024).** Default RW does not push; use operator batch push or `RW --push`. Do not run `git commit` outside RW. See `.cursorrules` / cheatsheet §2.
 
 ## Wiring
 

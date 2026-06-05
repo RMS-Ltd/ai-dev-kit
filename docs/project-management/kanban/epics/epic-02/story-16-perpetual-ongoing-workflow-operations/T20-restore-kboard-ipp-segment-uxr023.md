@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.2.16.20+1** — UXR-023 intake release)  
+**Last updated:** 2026-06-05 (IPP **IPP-E02S16T20** — implementation in progress)  
 **Version Anchor:** v0.2.16.20+1  
 **Code:** E02S16T20  
 
@@ -70,12 +70,13 @@ housekeeping_policy: keep
 
 ## Planning artifacts
 
-*(None yet — run `IPW E02:S16:T20` before implementation.)*
+- [IPP-E02S16T20 — Restore kboard IPP segment (UXR-023)](../../../../../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)
 
 ---
 
 ## References
 
+- [IPP-E02S16T20](../../../../../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)
 - [UXR-023](../../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
 - [UXR-010](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)

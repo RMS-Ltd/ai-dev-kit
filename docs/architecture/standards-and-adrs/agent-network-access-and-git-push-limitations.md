@@ -277,13 +277,13 @@ run_terminal_cmd(
 - **Cons:** Breaks automation, user friction
 - **Decision:** Rejected (defeats purpose of RW)
 
-**Option 3: Skip push in RW**
+**Option 3: Skip push in RW (default local-complete)**
 
-- **Pros:** No network issues
-- **Cons:** Incomplete workflow, manual steps required
-- **Decision:** Rejected (workflow must be complete)
+- **Pros:** No network on every RW; operator batches pushes; reduces GitHub load ([UXR-024](../../project-management/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md))
+- **Cons:** Operator must batch-push or use `RW --push`
+- **Decision:** **Adopted as default (2026-06-05)** — local commit + tag is complete; push is opt-in (`--push`) or operator batch
 
-**Chosen Solution:** Use `['network']` permissions for git push only ✅
+**Chosen Solution:** Default RW skips push; use `['network']` only when **`--push`** present or operator batch push ✅
 
 ---
 
