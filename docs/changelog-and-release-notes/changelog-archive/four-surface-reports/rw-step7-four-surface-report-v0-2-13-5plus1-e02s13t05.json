@@ -1,0 +1,57 @@
+{
+  "contract": "FR-092 / FR-091",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 5,
+    "task_id": "E02:S13:T05",
+    "version_string": "v0.2.13.5+1"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "story_doc", "kboard", "kanban_completed"],
+    "total_changes": 12
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md",
+        "docs/implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md"
+      ],
+      "notes": [
+        "E02:S13:T05 COMPLETE — gap log and risk assessment (16 gaps; conditional RC)",
+        "validate_gap_log.py --strict pass",
+        "IPP bidirectionally wired"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md"
+      ],
+      "notes": ["T05 checklist COMPLETE; story AC gap log captured"]
+    },
+    "fbu_doc": {
+      "touched": false,
+      "paths": [],
+      "notes": ["No FR/BR/UXR in release scope — gap log task E02:S13:T05"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "notes": [
+        "E02:S13:T05 terminal row pruned from M-band (COMPLETE v0.2.13.5+1)",
+        "Board metadata Last Updated aligned to release"
+      ]
+    }
+  },
+  "stamp_evidence": {
+    "manifest": "rw-e2s13t05-structure-prune-stamp-evidence.json",
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 21,
+    "mode": "structure_prune_only"
+  },
+  "timestamp_utc": "2026-06-05 06:06 UTC"
+}

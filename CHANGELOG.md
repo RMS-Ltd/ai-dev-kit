@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.13.5+1] - 05-06-26
+
+E02:S13:T05 — **Workflow-mgt gap log:** consolidate T01–T04 + E07 into gap log and risk assessment (16 gaps; conditional RC). IPP + `validate_gap_log.py`. SemVer **v0.4.940+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.5+1.md)
+
+---
+
 ## [0.2.13.4+1] - 05-06-26
 
 E02:S13:T04 — **Workflow-mgt integration alignment:** review integrations and dependencies vs T01; `integration-alignment-report.md` + IPP. SemVer **v0.4.940+1**.

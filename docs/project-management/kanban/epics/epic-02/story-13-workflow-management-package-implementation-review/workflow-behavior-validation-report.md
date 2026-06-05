@@ -35,6 +35,8 @@ Overall RC posture: **conditional pass** — package behaves as documented for R
 
 ## Summary — Discrepancy Table (feeds T05)
 
+**Consolidated in:** [E02:S13:T05 gap log](T05-create-gap-log-and-risk-assessment.md) (16 gaps; 0 Critical, 2 High, 10 Medium, 4 Low).
+
 | ID | Domain | Status | Severity | Evidence / notes |
 | -- | ------ | ------ | -------- | ---------------- |
 | D1 | RW doc/live parity | **PASS** | — | `validate_canonical_steps.py` exit 0; 1b/1c/1d in portable excerpt + `.cursorrules` |

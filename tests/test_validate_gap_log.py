@@ -16,7 +16,18 @@ from validate_gap_log import validate_gap_log, _validate_gap_block, _extract_gap
 
 
 class TestValidGapLogPasses:
-    """E4:S16:T05 and E3:S04:T05 gap logs pass validation."""
+    """E2:S13:T05, E4:S16:T05, and E3:S04:T05 gap logs pass validation."""
+
+    def test_e2_s13_t05_passes(self):
+        path = (
+            Path(__file__).resolve().parent.parent
+            / "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md"
+        )
+        if path.exists():
+            content = path.read_text(encoding="utf-8")
+            passed, errors = validate_gap_log(content)
+            assert passed, errors
+            assert len(errors) == 0
 
     def test_e4_s16_t05_passes(self):
         path = (

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-05 (E02:S13:T04 **v0.2.13.4+1**)
-**Version:** v0.2.13.4+1
+**Last updated:** 2026-06-05 (E02:S13:T05 **v0.2.13.5+1**)
+**Version:** v0.2.13.5+1
 **Code:** E2S13
 
 ---
@@ -36,8 +36,10 @@ housekeeping_policy: keep
   - Task: [`T04-review-integrations-and-dependency-alignment`](story-13-workflow-management-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
   - Report: [`integration-alignment-report.md`](story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
   - IPP: [`IPP-E02S13T04-integration-dependency-alignment.md`](../../../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
-- [ ] **E02:S13:T05 – Create gap log and risk assessment** - TODO
+- [x] **E02:S13:T05 – Create gap log and risk assessment** - ✅ COMPLETE (v0.2.13.5+1)
   - Task: [`T05-create-gap-log-and-risk-assessment`](story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+  - Gap log: [`T05-create-gap-log-and-risk-assessment.md`](story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+  - IPP: [`IPP-E02S13T05-gap-log-risk-assessment.md`](../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
 - [ ] **E02:S13:T06 – Define RC sign-off criteria and remediation tasks** - TODO
   - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
@@ -109,7 +111,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 - [x] Component inventory mapped to expectations. ✅ COMPLETE (v0.2.13.2+1)
 - [x] Behavioral validation notes captured. ✅ COMPLETE (v0.2.13.3+1)
 - [x] Integration alignment reviewed and documented. ✅ COMPLETE (v0.2.13.4+1)
-- [ ] Gap log created with severity levels.
+- [x] Gap log created with severity levels. ✅ COMPLETE (v0.2.13.5+1)
 - [ ] RC sign-off criteria and remediation tasks defined.
 
 ---

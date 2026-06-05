@@ -1,0 +1,26 @@
+{
+  "report_type": "rw_structure_prune",
+  "invocation": "RW E02:S13:T05 --art",
+  "evidence_mode": "structure_prune",
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 5,
+    "task_id": "E02:S13:T05",
+    "version_string": "v0.2.13.5+1"
+  },
+  "summary": {
+    "kboard_pruned": 1,
+    "ledger_before_removal": true,
+    "notes": "Terminal COMPLETE row removed from M-band per FR-109 active board lean; ledger entry in kanban-completed.md"
+  },
+  "archived": {
+    "kboard": ["E02:S13:T05"]
+  },
+  "rows": {
+    "E02:S13:T05": {
+      "allowed": true,
+      "reason": "RW release COMPLETE v0.2.13.5+1; terminal task pruned from active MoSCOW M-band"
+    }
+  }
+}

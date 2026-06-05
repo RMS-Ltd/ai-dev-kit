@@ -36,6 +36,8 @@ Overall RC integration posture: **conditional pass** — contracts align; cohesi
 
 ## Summary — Discrepancy Table (feeds T05)
 
+**Consolidated in:** [E02:S13:T05 gap log](T05-create-gap-log-and-risk-assessment.md) (I4, I10–I12 mapped to GAP-WFMGT-* entries).
+
 | ID | Domain | Status | Severity | Evidence / notes |
 | -- | ------ | ------ | -------- | ---------------- |
 | I1 | Hard dependencies | **ALIGNED** | — | README + `INSTALL_IN_YOUR_PROJECT.md` document Git, Python 3, PyYAML; `--check-deps` path |

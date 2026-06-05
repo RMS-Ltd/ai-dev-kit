@@ -33,7 +33,8 @@ housekeeping_policy: keep
 
 ## Input
 
-Gap log + [E07:S07:T01 RC gate summary](../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E02:S13:T05 gap log and risk assessment](T05-create-gap-log-and-risk-assessment.md) — 16 gaps; conditional RC posture
+- [E07:S07:T01 RC gate summary](../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md) §7
 
 ---
 
