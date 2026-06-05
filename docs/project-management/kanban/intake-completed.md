@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-05 (E02:S01:T24 — **BR-097** RESOLVED v0.2.1.24+1)
-**Version:** v0.2.1.24+1
+**Last Updated:** 2026-06-05 (E05:S09:T13 — **BR-090** FIXED v0.5.9.13+3)
+**Version:** v0.5.9.13+4
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-090 | BR | Docusaurus 3.10 faster + MDX link remediation — FIXED (**E05:S09:T13** Wave 2) | 2026-06-05T03:13:08Z | v0.5.9.13+3 | RW + CI 26992999149 |
 | BR-097 | BR | RW agents reuse tagged BUILD / force-move release tags — RESOLVED (**E02:S01:T24**) | 2026-06-05T02:37:30Z | v0.2.1.24+1 | RW --art |
 | BR-093 | BR | Docusaurus CI dedup — FIXED (**E05:S09:T14** Wave 2) | 2026-06-05T19:00:00Z | v0.5.9.14+2 | IPW Wave 2 |
 | BR-091 | BR | Workflow validator slug path resolution — FIXED (**E07:S07:T03**) | 2026-06-05T18:00:00Z | v0.7.7.3+1 | V-band scan |

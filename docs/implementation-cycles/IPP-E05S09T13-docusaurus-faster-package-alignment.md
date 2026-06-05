@@ -218,8 +218,8 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - [x] `npm run build` exit 0 locally after BR-068 Strategy A repairs
 - [x] `PORTAL_BUILD_STRICT=1` production build pytest green (T10)
 - [x] Pytest T1–T11 green
-- [ ] Post-merge Actions **Docusaurus site build** + **deploy** green on `main`
-- [ ] BR-090 → **FIXED** (pending CI); V-band pruned; T13 `✅ COMPLETE (v0.5.9.13+2)`
+- [x] Post-merge Actions **Docusaurus site build** + **deploy** green on `main` — **26992999149**
+- [x] BR-090 → **FIXED**; V-band pruned; T13 `✅ COMPLETE (v0.5.9.13+3)`
 
 ---
 
@@ -300,9 +300,9 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - [x] `npm run build` exit 0 locally
 - [x] `PORTAL_BUILD_STRICT=1` production build pytest green
 - [x] Pytest T1–T11 green
-- [ ] Post-merge Actions run green on `main` (build + deploy)
-- [ ] BR-090 → **FIXED** (pending CI evidence)
-- [x] T13 forensic marker `✅ COMPLETE (v0.5.9.13+2)`
+- [x] Post-merge Actions run green on `main` (build + deploy) — **26992999149**
+- [x] BR-090 → **FIXED**; intake-completed ledger updated
+- [x] T13 forensic marker `✅ COMPLETE (v0.5.9.13+3)`
 - [x] `future.v4: true` and `@docusaurus/faster@3.10.1` unchanged
 
 ---

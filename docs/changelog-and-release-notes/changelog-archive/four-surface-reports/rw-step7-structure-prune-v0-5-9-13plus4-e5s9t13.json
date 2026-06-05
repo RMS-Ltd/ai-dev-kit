@@ -1,0 +1,14 @@
+{
+  "contract": "FR-097 structure-prune — BR-090 FIXED V-band row removal (RW Step 7)",
+  "release_scope": {
+    "task_id": "E05:S09:T13",
+    "version_string": "v0.5.9.13+4"
+  },
+  "rows": {
+    "E05:S09:T13": {
+      "allowed": true,
+      "reason": "BR-090 FIXED v0.5.9.13+3 — Actions 26992999149 build+deploy green; archived to intake-completed.md"
+    }
+  },
+  "timestamp_utc": "2026-06-05 03:20:00 UTC"
+}

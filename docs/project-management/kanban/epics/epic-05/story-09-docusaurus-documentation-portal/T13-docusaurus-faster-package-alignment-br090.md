@@ -12,13 +12,13 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.5.9.13+2 — RW E05:S09:T13 Wave 2)  
-**Version:** v0.5.9.13+2  
+**Last updated:** 2026-06-05 (v0.5.9.13+3 — CI verified on `main`)  
+**Version:** v0.5.9.13+3  
 **Code:** E05S09T13
 
-✅ COMPLETE (v0.5.9.13+2)
+✅ COMPLETE (v0.5.9.13+3)
 
-**Wave 2 (2026-06-05):** Full build triage + BR-068 Strategy A link remediation; local `npm run build` green; pytest T8–T11 green. Post-merge Actions verification pending on `main`.
+**Wave 2 (2026-06-05):** Full build triage + BR-068 Strategy A link remediation; local + CI `npm run build` green; pytest T8–T11 green. **Main** Actions **26992999149** (build + deploy) after PR #26 merge.
 
 **Upstream:** [BR-090 — Docusaurus 3.10 build fails: missing `@docusaurus/faster` and lockfile drift](../../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
 
@@ -53,7 +53,7 @@ Restore green Docusaurus production build on CI after Dependabot Docusaurus 3.10
 
 - [x] **`@docusaurus/faster`** present in `portal/package.json` and lockfile.
 - [x] All `@docusaurus/*` portal deps pinned consistently at **3.10.1** (or current lockfile version).
-- [ ] **`Docusaurus site build`** workflow green on `main` — pending post-merge Actions verification.
+- [x] **`Docusaurus site build`** workflow green on `main` — Actions **26992999149** (PR #26).
 - [x] **`portal/README.md`** updated if install/build steps change.
 - [x] **`npm run build`** exit 0 locally with strict link/anchor checks (Wave 2).
 - [x] Pytest **T8–T11** green (`test_portal_br090_faster_alignment.py`).
