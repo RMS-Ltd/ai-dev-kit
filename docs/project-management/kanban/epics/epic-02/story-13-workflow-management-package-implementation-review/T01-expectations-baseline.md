@@ -651,6 +651,7 @@ Define the implementation expectations baseline for the Workflow Management fram
 
 ## Notes
 
+- **Component inventory (authoritative):** [component-inventory-map.md](component-inventory-map.md) (E02:S13:T02, 2026-06-05) — maps live package to this baseline; gap table supersedes stale path/count references here.
 - Expectations baseline extracted from package README and documentation
 - Pattern follows E04:S16:T01 (Kanban package expectations baseline)
 - Baseline will be used for component inventory (T02) and behavior validation (T03)

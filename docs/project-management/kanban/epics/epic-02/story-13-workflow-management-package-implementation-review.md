@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-05 (E02:S13:T06 kanban init **v0.2.13.6+0**)
-**Version:** v0.2.13.6+0
+**Last updated:** 2026-06-05 (E02:S13:T02 **v0.2.13.2+1**)
+**Version:** v0.2.13.2+1
 **Code:** E2S13
 
 ---
@@ -24,8 +24,10 @@ housekeeping_policy: keep
   - Task: [`T01-expectations-baseline`](story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
   - Task Doc: [`T01-expectations-baseline.md`](story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 
-- [ ] **E02:S13:T02 – Inventory package components and map to expectations** - TODO
+- [x] **E02:S13:T02 – Inventory package components and map to expectations** - ✅ COMPLETE (v0.2.13.2+1)
   - Task: [`T02-inventory-package-components-and-map-to-expectations`](story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
+  - Inventory: [`component-inventory-map.md`](story-13-workflow-management-package-implementation-review/component-inventory-map.md)
+  - IPP: [`IPP-E02S13T02-inventory-package-components-map.md`](../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
 - [ ] **E02:S13:T03 – Validate workflow behavior against documented guidance** - TODO
   - Task: [`T03-validate-workflow-behavior-against-documented-guidance`](story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md)
 - [ ] **E02:S13:T04 – Review integrations and dependency alignment** - TODO
@@ -100,7 +102,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 ## Acceptance Criteria
 
 - [x] Expectations baseline documented and approved. ✅ COMPLETE (v0.2.13.1+1)
-- [ ] Component inventory mapped to expectations.
+- [x] Component inventory mapped to expectations. ✅ COMPLETE (v0.2.13.2+1)
 - [ ] Behavioral validation notes captured.
 - [ ] Integration alignment reviewed and documented.
 - [ ] Gap log created with severity levels.

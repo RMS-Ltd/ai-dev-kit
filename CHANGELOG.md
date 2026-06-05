@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.1.44+1] - 05-06-26
+## [0.2.13.2+1] - 05-06-26
 
-E05:S01:T44 — **FR-044 RW temporary execution log:** incremental agent run log writer + text mirror, schema v1.1, ADR-011 update. SemVer **v0.4.939+1**.
+E02:S13:T02 — **Workflow-mgt component inventory:** map package to T01 expectations; `component-inventory-map.md` + gap table for T05. SemVer **v0.4.939+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.44+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.13.2+1.md)
 
 ---
 

@@ -1,0 +1,61 @@
+{
+  "contract": "FR-092 / FR-091",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 13,
+    "task": 2,
+    "task_id": "E02:S13:T02",
+    "version_string": "v0.2.13.2+1"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "story_doc", "kboard"],
+    "total_changes": 8
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md",
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md",
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md",
+        "docs/implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md"
+      ],
+      "notes": [
+        "E02:S13:T02 COMPLETE — component inventory map vs T01 expectations",
+        "Companion component-inventory-map.md created",
+        "T01 footnote to authoritative inventory"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review.md"
+      ],
+      "notes": ["T02 checklist COMPLETE; story AC inventory mapped"]
+    },
+    "fbu_doc": {
+      "touched": false,
+      "paths": [],
+      "notes": [
+        "No FR/BR/UXR in release scope — inventory-only task E02:S13:T02"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/project-management/kanban/kboard.md"],
+      "notes": [
+        "E02:S13:T02 terminal row pruned from M-band (COMPLETE v0.2.13.2+1)",
+        "Board metadata Last Updated aligned to release"
+      ]
+    }
+  },
+  "stamp_evidence": {
+    "manifest": "rw-e2s13t02-structure-prune-stamp-evidence.json",
+    "stamps_appended_with_evidence": 0,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 24,
+    "mode": "structure_prune_only"
+  },
+  "timestamp_utc": "2026-06-05 14:00 UTC"
+}

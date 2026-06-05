@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW: E04:S11:T07 — closure)
-**Version:** v0.4.11.7+16
+**Last Updated:** 2026-06-05 (RW: E02:S13:T02 — component inventory)
+**Version:** v0.2.13.2+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E02:S13:T02](epics/epic-02/story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)** — Workflow-mgt component inventory mapped to T01 expectations.
+  **Completed:** `2026-06-05T14:00:00Z` | **Version:** `v0.2.13.2+1` | **Agent:** `RW E02:S13:T02 --art` | [component-inventory-map](epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) | [IPP](../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
 
 - **[E05:S01:T44](epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)** — **FR-044** RW temporary execution log (incremental dual-write logging).
   **Completed:** `2026-06-05T05:44:26Z` | **Version:** `v0.5.1.44+1` | **Agent:** `RW E05:S01:T44 --art` | [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | [IPP](../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md) | [ADR-011](../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
