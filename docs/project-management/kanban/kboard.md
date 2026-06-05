@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW: E02:S16:T05)
-**Version:** v0.2.16.5+6
+**Last Updated:** 2026-06-05 (RW: E06:S09:T23)
+**Version:** v0.6.9.23+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -27,6 +27,8 @@ housekeeping_policy: keep
 
 
 ### Should Have (S) - Important Tasks
+
+- **E06:S09:T23** – Greenfield lean tree GitHub Packages delivery (UXR-021) - 📋 TODO (MEDIUM, Epic 6 install — `ghcr.io` alternate acquisition for `greenfield-install/`) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) | [Story](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md) | Last modified: 2026-06-05 10:54 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 

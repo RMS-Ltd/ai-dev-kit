@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.23+1] - 05-06-26
+
+E06:S09:T23 — **UXR-021 intake (RW -k):** GitHub Packages lean `greenfield-install/` delivery channel; atomic UXR + task wiring. SemVer **v0.4.957+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.23+1.md)
+
+---
+
 ## [0.2.16.5+6] - 05-06-26
 
 E02:S16:T05 — **Markdown link-depth hygiene (Wave 2):** 36 docs — relative path corrections across kanban, IPPs, ADR-020, FR/BR; BR-068 guard green. SemVer **v0.4.956+6**.
