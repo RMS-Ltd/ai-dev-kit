@@ -403,9 +403,11 @@ For each step, follow this pattern:
  - **D. Registry finalization:** Task-touch counter/mapping finalizes at tag-creation boundary, not read-only lookups.
  - **Note:** If both tags are created, they must reference the same commit.
 
-12. **Push to Remote** - Push epic branch and both tags (internal + SemVer) to origin (DO NOT push to main unless ready to deploy)
+12. **Push to Remote** - Push epic branch and **release-scoped tags only** (DO NOT push to main unless ready to deploy)
     - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
-    - Push both tags: `git push origin {branch} --tags` (pushes all tags including internal and SemVer)
+    - **🚨 FORBIDDEN:** `git push origin {branch} --tags` — pushes *every* local tag; stale local SemVer tags that diverge from remote cause false failures (even when branch + new release tag are valid).
+    - **Use:** `python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" --branch "{branch}" --internal-version "{internal_version}"`
+    - **Manual equivalent:** `git push origin {branch}` then `git push origin refs/tags/v{internal_version}` and (task-touch mode) `git push origin refs/tags/v{semver_core}` — never `--tags`.
 
 12.5. **Create/Update GitHub Release** - **MANDATORY:** Create or update GitHub release using SemVer tag:
    - **A. Script Auto-Loads .env.local:** The `create_github_release.py` script automatically loads `.env.local` if it exists (checks current directory and project root)

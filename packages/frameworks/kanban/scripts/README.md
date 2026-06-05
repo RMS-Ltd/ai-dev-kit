@@ -108,6 +108,10 @@ python3 install_kanban_framework.py --mode migration --dry-run
 6. Updates task ID references automatically
 7. Validates migration
 
+### `migration_plan_presenter.py`
+
+Formats the migration plan preview shown during interactive installation (FR-009 AC-10).
+
 ### `detect_existing_structure.py`
 
 Scans a project directory to detect existing Kanban (Epic/Story/Task) structures and generates a detection report.

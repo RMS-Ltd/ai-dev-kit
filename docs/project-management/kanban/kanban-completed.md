@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (UKW -c — 14 doc-terminal C-band rows archived from kboard)
-**Version:** v0.2.16.4+31
+**Last Updated:** 2026-06-05 (RW: E04:S15:T05)
+**Version:** v0.4.15.5+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -22,6 +22,15 @@ housekeeping_policy: keep
 
 - **[E04:S15:T05](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md)** — **FR-029** hybrid task template docs.
   **Completed:** `2026-06-05T12:30:00Z` | **Version:** `v0.4.15.5+1` | **Agent:** `RW E04:S15:T05 --art` | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | [IPP](../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
+
+- **[E02:S11:T14](epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)** — **BR-052** GHA workflow optimization.
+  **Completed:** `2026-06-05T20:00:00Z` | **Version:** `v0.2.11.14+2` | **Agent:** `RW` | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md)
+
+- **[E02:S11:T13](epics/epic-02/story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md)** — **BR-051** GHA workflow spam hygiene.
+  **Completed:** `2026-06-05T19:30:00Z` | **Version:** `v0.2.11.13+3` | **Agent:** `RW` | [BR-051](fr-br/BR-051-github-actions-workflow-spam-emails.md)
+
+- **[E02:S01:T06](epics/epic-02/story-01-rw-agent-execution-and-docs/T06-validate-version-bump-story-detection-br001.md)** — **BR-001** validate_version_bump path/Code detection.
+  **Completed:** `2026-06-05T19:15:00Z` | **Version:** `v0.2.1.6+2` | **Agent:** `RW` | [BR-001](fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)
 
 #### **UKW -c archive batch (2026-06-05)** — doc-terminal rows pruned from active `kboard.md` C-band
 

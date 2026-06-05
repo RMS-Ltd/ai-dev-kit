@@ -22,6 +22,10 @@ name: Docusaurus site build
 permissions:
   contents: read
 
+concurrency:
+  group: docusaurus-build-${{ github.ref }}
+  cancel-in-progress: true
+
 defaults:
   run:
     working-directory: portal

@@ -133,7 +133,7 @@ The Kanban framework migration process needs intelligent capabilities to:
 - [ ] **AC-7:** Canonical epics install at next available epic number (dynamic, not hardcoded)
 - [ ] **AC-8:** Task ID references automatically updated in changelogs, docs, and story files
 - [ ] **AC-9:** Migration reports show all changes and identify un-updatable references
-- [ ] **AC-10:** User interface clearly presents migration plans with recommendations and trade-offs
+- [x] **AC-10:** User interface clearly presents migration plans with recommendations and trade-offs (v0.4.8.5+1 — `migration_plan_presenter.py`)
 
 ---
 

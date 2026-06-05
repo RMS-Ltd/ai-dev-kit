@@ -1,0 +1,22 @@
+{
+  "contract": "FR-097 structure-prune — COMPLETE task row removal (RW Step 7 E02:S11:T14 BUILD+2 merge reconcile)",
+  "release_scope": {
+    "task_id": "E02:S11:T14",
+    "version_string": "v0.2.11.14+2"
+  },
+  "evidence_mode": "structure_prune",
+  "archived": {
+    "kboard": ["E02:S11:T14", "E02:S11:T13"],
+    "kanban_completed": ["E02:S11:T14"]
+  },
+  "rows": {
+    "E02:S11:T14": {
+      "allowed": true,
+      "reason": "COMPLETE v0.2.11.14+2 — BR-052; kboard prune at release"
+    },
+    "E02:S11:T13": {
+      "allowed": true,
+      "reason": "Stale C-band row on T14 branch; already archived dev v0.2.11.13+3 (see rw-step7-structure-prune-v0-2-11-13plus3-e02s11t13.json)"
+    }
+  }
+}

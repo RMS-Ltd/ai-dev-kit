@@ -1,0 +1,34 @@
+{
+  "contract": "FR-097 structure-prune — merge dev into E04:S15:T05 branch kboard reconcile",
+  "release_scope": {
+    "task_id": "E04:S15:T05",
+    "version_string": "v0.4.15.5+1"
+  },
+  "evidence_mode": "structure_prune",
+  "archived": {
+    "kboard": ["E04:S15:T05", "E04:S08:T05", "E02:S01:T06", "E02:S11:T13", "E02:S11:T14"],
+    "kanban_completed": ["E04:S15:T05"]
+  },
+  "rows": {
+    "E04:S15:T05": {
+      "allowed": true,
+      "reason": "COMPLETE v0.4.15.5+1 — FR-029; kboard prune at release"
+    },
+    "E04:S08:T05": {
+      "allowed": true,
+      "reason": "Stale on FR-029 branch; archived dev v0.4.8.5+2"
+    },
+    "E02:S01:T06": {
+      "allowed": true,
+      "reason": "Stale on FR-029 branch; archived dev v0.2.1.6+2"
+    },
+    "E02:S11:T13": {
+      "allowed": true,
+      "reason": "Stale on FR-029 branch; archived dev v0.2.11.13+3"
+    },
+    "E02:S11:T14": {
+      "allowed": true,
+      "reason": "Stale on FR-029 branch; archived dev v0.2.11.14+2"
+    }
+  }
+}
