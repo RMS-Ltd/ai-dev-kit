@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.11+0] - 05-06-26
+
+E08:S03:T11 — **Doc release (`--doc-policy-zero`):** BR-098 CodeQL workflow permissions intake (alerts #1–#3 fixed on `main`). SemVer **v0.4.968+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.11+0.md)
+
+---
+
 ## [0.8.3.14+0] - 05-06-26
 
 E08:S03:T14 — **Kanban init (RW -k):** Code Quality AI suggestions backlog intake (**BR-101**, 14 suggestions). SemVer **v0.4.967+0**.
