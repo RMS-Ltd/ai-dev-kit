@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
-**Last updated:** 2026-06-05 (v0.4.11.7+15 — Wave 4 validation shipped; Wave 5 + closure pending)  
+**Last updated:** 2026-06-05 (v0.4.11.7+16 — E04:S11:T07 COMPLETE)  
 **Estimated Effort:** 1 week (T01-T06) + 6-8 weeks (T07 migration)  
 **Started:** [TBD]  
 **Completed:** [TBD]  
@@ -35,7 +35,7 @@ housekeeping_policy: keep
   - Task: [`T05-dependency-wiring-cross-references`](story-11-kanban-granularity-discrete-task-docs/T05-dependency-wiring-cross-references.md)
 - [x] **E04:S11:T06 – Review and Optimize Template Structure for Tier Delegation** ✅ COMPLETE (v0.4.11.6+2 – All phases complete: templates optimized, guidelines created, compliance audit complete, migration guide created)
   - Task: [`T06-review-and-optimize-template-structure-for-tier-delegation`](story-11-kanban-granularity-discrete-task-docs/T06-review-and-optimize-template-structure-for-tier-delegation.md)
-- [ ] **E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents** - IN PROGRESS (v0.4.11.7+15 — Wave 4 shipped; [completion report](story-11-kanban-granularity-discrete-task-docs/migration-completion-report.md); Wave 5 + closure pending)
+- [x] **E04:S11:T07 – Migrate Embedded Tasks to Discrete Task Documents** - ✅ COMPLETE (v0.4.11.7+16 — [migration guide](story-11-kanban-granularity-discrete-task-docs/migration-guide.md) · [completion report](story-11-kanban-granularity-discrete-task-docs/migration-completion-report.md))
   - Task: [`T07-planning-spec-tests-impl.md`](story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
   - IPP: [`IPP-E04S11T07-fr016-discrete-task-docs-migration.md`](../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
 

@@ -1,0 +1,29 @@
+{
+  "release": {
+    "internal_version": "0.4.11.7+16",
+    "semver": "0.4.932+16",
+    "task": "E04:S11:T07",
+    "summary": "FR-016 migration closure — Wave 5 docs; T07 COMPLETE"
+  },
+  "step7_four_surface": {
+    "task_doc": {
+      "path": "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md",
+      "action": "status COMPLETE; version anchor v0.4.11.7+16"
+    },
+    "fr_br": {
+      "path": "docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md",
+      "action": "host task COMPLETE; structural migration complete"
+    },
+    "kboard": {
+      "path": "docs/project-management/kanban/kboard.md",
+      "action": "E04:S11:T07 row COMPLETE; stamp 2026-06-05 05:12 UTC"
+    },
+    "story_doc": {
+      "path": "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md",
+      "action": "T07 checklist COMPLETE v0.4.11.7+16"
+    }
+  },
+  "new_artifacts": [
+    "docs/project-management/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-guide.md"
+  ]
+}

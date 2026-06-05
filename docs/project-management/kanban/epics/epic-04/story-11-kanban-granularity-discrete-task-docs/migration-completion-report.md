@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Task:** E04:S11:T07 — Migrate Embedded Tasks to Discrete Task Documents  
 **Wave:** 4 — Final validation  
 **Report date:** 2026-06-05  
-**Version anchor at validation:** v0.4.11.7+15 (shipped Wave 4 release)  
+**Version anchor at closure:** v0.4.11.7+16 (E04:S11:T07 COMPLETE)  
 **Validator:** `packages/frameworks/workflow-mgt/scripts/kanban/validate_migration.py`
 
 ---
@@ -142,11 +142,11 @@ Wave 2+ `generate_task_doc.py` output may retain `[To be filled during migration
 
 ---
 
-## 8. Remaining work (Wave 5 + closure)
+## 8. Remaining work (closure)
 
-- [ ] **Wave 5:** Migration plan status → APPROVED; script path links; FR-016 implementation notes final sync
-- [ ] **Optional:** Legacy `**Task:**` → `**Task ID:**` normalization; E01:S01 discrete backfill
-- [ ] **Closure RW:** `RW E04:S11:T07 --art` after Wave 5 + AC reconciliation (T07 → COMPLETE if all ACs satisfied)
+- [x] **Wave 5:** Migration plan APPROVED v1.1.0; script path links §3.0; [migration-guide.md](migration-guide.md); FR-016 implementation notes synced
+- [ ] **Optional (deferred):** Legacy `**Task:**` → `**Task ID:**` bulk normalization; E01:S01 discrete backfill
+- [x] **Closure RW:** v0.4.11.7+16 — E04:S11:T07 **COMPLETE**
 
 ---
 

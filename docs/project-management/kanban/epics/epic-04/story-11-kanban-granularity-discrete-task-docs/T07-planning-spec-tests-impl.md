@@ -3,10 +3,10 @@
 **Task ID:** E04:S11:T07  
 **Task:** Migrate Embedded Tasks to Discrete Task Documents  
 **Host Task:** [T07-planning-spec-tests-impl.md](T07-planning-spec-tests-impl.md) (E04:S11:T07)  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Planning doc created:** 2026-02-22  
-**Last updated:** 2026-06-05 (v0.4.11.7+15 — Wave 4 validation shipped; Wave 5 + closure pending)
-**Version anchor:** v0.4.11.7+15 — [completion report](migration-completion-report.md) published
+**Last updated:** 2026-06-05 (v0.4.11.7+16 — closure RW; FR-016 migration COMPLETE)
+**Version anchor:** v0.4.11.7+16 — [completion report](migration-completion-report.md) · [migration guide](migration-guide.md)
 
 ---
 
@@ -257,10 +257,10 @@ Exit:   0 if valid, 1 if issues
 - [x] All 12 test cases pass (14/14 pytest — 2026-06-05)
 - [x] Zero embedded tasks repo-wide (0 embedded; 2 legacy discovery exceptions documented)
 - [x] RW Step 1 locates Task documents (10/12 spot-check panel; see [completion report](migration-completion-report.md) §3–§4)
-- [ ] validate_version_bump passes for migrated tasks (closure verification)
-- [ ] No information loss (manual spot-check — sample PASS; optional content backfill)
+- [x] validate_version_bump passes for migrated tasks (closure RW — 2026-06-05)
+- [x] No information loss (spot-check PASS; optional scope content backfill deferred)
 - [x] Migration completion report produced — [migration-completion-report.md](migration-completion-report.md)
-- [ ] Migration guide (Wave 5)
+- [x] Migration guide (Wave 5) — [migration-guide.md](migration-guide.md)
 
 ---
 
@@ -269,4 +269,6 @@ Exit:   0 if valid, 1 if issues
 - [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
 - [FR-016](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
 - [Migration plan](migration-plan-embedded-to-discrete-tasks.md)
+- [Migration guide](migration-guide.md)
+- [Migration completion report](migration-completion-report.md)
 - [ICW E04:S11:T07 specification](../../../../../implementation-cycles/ICW-E4S11T07-specification.md)

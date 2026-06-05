@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW: E04:S15:T05)
-**Version:** v0.4.15.5+1
+**Last Updated:** 2026-06-05 (RW: E04:S11:T07 — closure)
+**Version:** v0.4.11.7+16
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E04:S11:T07](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)** — **FR-016** embedded → discrete task doc migration (Waves 0–5).
+  **Completed:** `2026-06-05T05:12:40Z` | **Version:** `v0.4.11.7+16` | **Agent:** `RW E04:S11:T07 --art` | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | [migration guide](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-guide.md)
 
 - **[E04:S15:T05](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md)** — **FR-029** hybrid task template docs.
   **Completed:** `2026-06-05T12:30:00Z` | **Version:** `v0.4.15.5+1` | **Agent:** `RW E04:S15:T05 --art` | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | [IPP](../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)

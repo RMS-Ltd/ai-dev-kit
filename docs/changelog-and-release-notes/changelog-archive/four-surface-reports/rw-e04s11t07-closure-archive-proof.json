@@ -1,0 +1,26 @@
+{
+  "report_type": "rw_closure_archive_proof",
+  "invocation": "RW E04:S11:T07 --art closure",
+  "evidence_mode": "structure_prune",
+  "release_scope": {
+    "epic": 4,
+    "story": 11,
+    "task": 7,
+    "task_id": "E04:S11:T07",
+    "version_string": "v0.4.11.7+16"
+  },
+  "summary": {
+    "kboard_c_band_pruned": 1,
+    "ledger_before_removal": true
+  },
+  "archived": {
+    "kboard": ["E04:S11:T07"]
+  },
+  "rows": {
+    "E04:S11:T07": {
+      "allowed": true,
+      "reason": "Closure COMPLETE; kanban-completed.md 2026-06-05T05:12:40Z; FR-016 migration"
+    }
+  },
+  "timestamp": "2026-06-05T05:12:40Z"
+}

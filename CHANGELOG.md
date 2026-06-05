@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.11.7+15] - 05-06-26
+## [0.4.11.7+16] - 05-06-26
 
-E04:S11:T07 — **Wave 4 (final validation):** FR-016 migration completion report; 92 stories / 0 embedded / 636 discrete docs. SemVer **v0.4.931+15**.
+E04:S11:T07 — **Closure:** FR-016 migration COMPLETE; Wave 5 migration guide + plan v1.1.0. SemVer **v0.4.932+16**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+15.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.11.7+16.md)
 
 ---
 
