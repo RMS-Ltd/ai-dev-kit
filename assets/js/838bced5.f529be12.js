@@ -663,6 +663,38 @@ function _createMdxContent(props) {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: [(0,jsx_runtime.jsx)(_components.strong, {
             children: (0,jsx_runtime.jsxs)(_components.a, {
+              href: "/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021",
+              children: ["E06:S09", ":T23"]
+            })
+          }), " — Greenfield GHCR delivery (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ghcr.io/rms-ltd/ai-dev-kit-greenfield"
+          }), ", FR-110-F5 tarball, ADR-021).\n", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Completed:"
+          }), " ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "2026-06-05T14:30:00Z"
+          }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Version:"
+          }), " ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "v0.6.9.23+3"
+          }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Agent:"
+          }), " ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "RW E06:S09:T23 --art"
+          }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+            href: "/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021",
+            children: "T23"
+          }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+            href: "/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel",
+            children: "UXR-021"
+          }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+            href: "/ai-dev-kit/docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel",
+            children: "ADR-021"
+          })]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: (0,jsx_runtime.jsxs)(_components.a, {
               href: "/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110",
               children: ["E06:S09", ":T21"]
             })

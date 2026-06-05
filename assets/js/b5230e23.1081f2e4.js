@@ -463,12 +463,25 @@ function _createMdxContent(props) {
         className: "task-list-item",
         children: [(0,jsx_runtime.jsx)(_components.input, {
           type: "checkbox",
+          checked: true,
           disabled: true
         }), " ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "FR-110-F5 (optional):"
         }), " Publish ", (0,jsx_runtime.jsx)(_components.code, {
           children: "greenfield-install/"
-        }), " as a GitHub Release tarball for non-git adopters (extends FR-062)."]
+        }), " as a GitHub Release tarball for non-git adopters (extends FR-062). ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "UX extension:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel",
+          children: "UXR-021"
+        }), " / ", (0,jsx_runtime.jsxs)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021",
+          children: ["E06:S09", ":T23"]
+        }), " — dual-publish tarball + ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ghcr.io"
+        }), " container from same validated tree. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "v0.6.9.23+2"
+        })]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "non-functional-requirements",

@@ -823,6 +823,20 @@ function _createMdxContent(props) {
           href: "/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-004-kanban-package-installation-uat",
           children: "UXR-004"
         })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "UXR-021"
+        }), " – Greenfield lean tree delivery via GitHub Packages - ACCEPTED (MEDIUM, alternate ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ghcr.io"
+        }), " acquisition for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "greenfield-install/"
+        }), ") - ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel",
+          children: "UXR-021"
+        }), " | ", (0,jsx_runtime.jsxs)(_components.a, {
+          href: "/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021",
+          children: ["E06:S09", ":T23"]
+        })]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "summary-statistics",

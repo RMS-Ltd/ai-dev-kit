@@ -111,7 +111,7 @@ function _createMdxContent(props) {
         children: "Created:"
       }), " 2025-12-05", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Last updated:"
-      }), " 2026-06-05 (v0.6.9.21+4 – Story 9 Task 21 complete)\n", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 2026-06-05 (v0.6.9.23+1 – Kanban documentation setup)\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Branch:"
       }), " ", (0,jsx_runtime.jsx)(_components.code, {
         children: "epic/6-framework-management"
@@ -484,7 +484,7 @@ function _createMdxContent(props) {
         children: "Estimated Effort:"
       }), " [TBD]", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Last updated:"
-      }), " 2026-06-05 (v0.6.9.21+4 – Story 9 Task 21 complete)"]
+      }), " 2026-06-05 (v0.6.9.23+1 – Kanban documentation setup)"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Goal:"
@@ -552,7 +552,7 @@ function _createMdxContent(props) {
         children: "Estimated Effort:"
       }), " [TBD]", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Last updated:"
-      }), " 2026-06-05 (v0.6.9.21+4 – Story 9 Task 21 complete)"]
+      }), " 2026-06-05 (v0.6.9.23+1 – Kanban documentation setup)"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Goal:"
@@ -619,7 +619,7 @@ function _createMdxContent(props) {
         children: "Estimated Effort:"
       }), " [TBD]", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Last updated:"
-      }), " 2026-06-05 (v0.6.9.21+4 – Story 9 Task 21 complete)"]
+      }), " 2026-06-05 (v0.6.9.23+1 – Kanban documentation setup)"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Goal:"

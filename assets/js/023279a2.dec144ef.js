@@ -15,7 +15,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// CONCATENATED MODULE: ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-project-management-kanban-kboard-md-023.json
-var site_docs_project_management_kanban_kboard_md_023_namespaceObject = JSON.parse('{"id":"project-management/kanban/kboard","title":"AI Dev Kit – Kanban Board","description":"Last Updated E02T05)","source":"@site/../docs/project-management/kanban/kboard.md","sourceDirName":"project-management/kanban","slug":"/project-management/kanban/kboard","permalink":"/ai-dev-kit/docs/project-management/kanban/kboard","draft":false,"unlisted":false,"editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/project-management/kanban/kboard.md","tags":[],"version":"current","frontMatter":{"lifecycle":"evergreen","ttl_days":null,"created_at":"2025-12-04T12:02:50.000Z","expires_at":null,"housekeeping_policy":"keep"},"sidebar":"docsSidebar","previous":{"title":"AI Dev Kit – Kanban Structure","permalink":"/ai-dev-kit/docs/project-management/kanban/kanban-structure"},"next":{"title":"Rituals","permalink":"/ai-dev-kit/docs/project-management/rituals/"}}')
+var site_docs_project_management_kanban_kboard_md_023_namespaceObject = JSON.parse('{"id":"project-management/kanban/kboard","title":"AI Dev Kit – Kanban Board","description":"Last Updated E06T23 +8)","source":"@site/../docs/project-management/kanban/kboard.md","sourceDirName":"project-management/kanban","slug":"/project-management/kanban/kboard","permalink":"/ai-dev-kit/docs/project-management/kanban/kboard","draft":false,"unlisted":false,"editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/project-management/kanban/kboard.md","tags":[],"version":"current","frontMatter":{"lifecycle":"evergreen","ttl_days":null,"created_at":"2025-12-04T12:02:50.000Z","expires_at":null,"housekeeping_policy":"keep"},"sidebar":"docsSidebar","previous":{"title":"AI Dev Kit – Kanban Structure","permalink":"/ai-dev-kit/docs/project-management/kanban/kanban-structure"},"next":{"title":"Rituals","permalink":"/ai-dev-kit/docs/project-management/rituals/"}}')
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -94,9 +94,9 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Last Updated:"
-      }), " 2026-06-05 (RW: E02:S16", ":T05", ")\n", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 2026-06-05 (RW -d: E06:S09", ":T23", " +8)\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Version:"
-      }), " v0.2.16.5+6"]
+      }), " v0.6.9.23+8"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Active board contract:"

@@ -15,7 +15,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// CONCATENATED MODULE: ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-project-management-kanban-epics-epic-06-story-09-ai-dev-kit-installation-and-adopter-integration-md-e9d.json
-var site_docs_project_management_kanban_epics_epic_06_story_09_ai_dev_kit_installation_and_adopter_integration_md_e9d_namespaceObject = JSON.parse('{"id":"project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration","title":"Story 009 – AI Dev Kit installation and adopter integration","description":"Status: ✅ COMPLETE","source":"@site/../docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md","sourceDirName":"project-management/kanban/epics/epic-06","slug":"/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration","draft":false,"unlisted":false,"editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md","tags":[],"version":"current","frontMatter":{"lifecycle":"evergreen","ttl_days":null,"created_at":"2026-04-19T00:00:00.000Z","expires_at":null,"housekeeping_policy":"keep"},"sidebar":"docsSidebar","previous":{"title":"Epic 6, Story 9, Task 22: Package documentation greenfield-install alignment (FR-110)","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110"},"next":{"title":"Epic 7: Codebase Maintenance and Review","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-07/"}}')
+var site_docs_project_management_kanban_epics_epic_06_story_09_ai_dev_kit_installation_and_adopter_integration_md_e9d_namespaceObject = JSON.parse('{"id":"project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration","title":"Story 009 – AI Dev Kit installation and adopter integration","description":"Status: 🔄 IN PROGRESS (T23 open — UXR-021 GitHub Packages delivery)","source":"@site/../docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md","sourceDirName":"project-management/kanban/epics/epic-06","slug":"/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration","draft":false,"unlisted":false,"editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md","tags":[],"version":"current","frontMatter":{"lifecycle":"evergreen","ttl_days":null,"created_at":"2026-04-19T00:00:00.000Z","expires_at":null,"housekeeping_policy":"keep"},"sidebar":"docsSidebar","previous":{"title":"Epic 6, Story 9, Task 23: Greenfield lean tree GitHub Packages delivery (UXR-021)","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021"},"next":{"title":"Epic 7: Codebase Maintenance and Review","permalink":"/ai-dev-kit/docs/project-management/kanban/epics/epic-07/"}}')
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -81,9 +81,9 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Status:"
-      }), " ✅ COMPLETE\n", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 🔄 IN PROGRESS (T23 open — UXR-021 GitHub Packages delivery)\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Completed:"
-      }), " 2026-06-05\n", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " —\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Priority:"
       }), " HIGH", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Estimated Effort:"
@@ -91,9 +91,9 @@ function _createMdxContent(props) {
         children: "Created:"
       }), " 2026-04-19", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Last updated:"
-      }), " 2026-06-05 (v0.6.9.21+5 – T21 Wave 5 sync hardening)\n", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 2026-06-05 (v0.6.9.23+3 – T23 post-ship CI fix)\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Version:"
-      }), " v0.6.9.21+4\n", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " v0.6.9.23+3\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Code:"
       }), " E6S09"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
@@ -659,6 +659,28 @@ function _createMdxContent(props) {
           }), " | ", (0,jsx_runtime.jsx)(_components.a, {
             href: "/ai-dev-kit/docs/project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle",
             children: "FR-110"
+          })]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.input, {
+            type: "checkbox",
+            checked: true,
+            disabled: true
+          }), " ", (0,jsx_runtime.jsxs)(_components.strong, {
+            children: ["E06:S09", ":T23", " – Greenfield lean tree GitHub Packages delivery (UXR-021)"]
+          }), " - ✅ COMPLETE (", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "v0.6.9.23+3"
+          }), " — GHCR + FR-110-F5 tarball; ADR-021; Linux drift + release workflow fix) — ", (0,jsx_runtime.jsx)(_components.a, {
+            href: "/ai-dev-kit/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021",
+            children: "Task"
+          }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+            href: "/ai-dev-kit/docs/implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021",
+            children: "IPP-E06S09T23"
+          }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+            href: "/ai-dev-kit/docs/project-management/kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel",
+            children: "UXR-021"
           })]
         }), "\n"]
       }), "\n"]
