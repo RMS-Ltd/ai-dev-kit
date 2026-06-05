@@ -21,11 +21,17 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [ ] **E11:S01:T01 – Establish expectations baseline for Debug Path package** - TODO
+  - Task: [`T01-establish-expectations-baseline-for-debug-path-package`](story-01-debug-path-package-implementation-review/T01-establish-expectations-baseline-for-debug-path-package.md)
 - [ ] **E11:S01:T02 – Inventory package components and map to expectations** - TODO
+  - Task: [`T02-inventory-package-components-and-map-to-expectations`](story-01-debug-path-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
 - [ ] **E11:S01:T03 – Validate methodology behavior against documented guidance** - TODO
+  - Task: [`T03-validate-methodology-behavior-against-documented-guidance`](story-01-debug-path-package-implementation-review/T03-validate-methodology-behavior-against-documented-guidance.md)
 - [ ] **E11:S01:T04 – Review integrations and dependency alignment** - TODO
+  - Task: [`T04-review-integrations-and-dependency-alignment`](story-01-debug-path-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
 - [ ] **E11:S01:T05 – Create gap log and risk assessment** - TODO
+  - Task: [`T05-create-gap-log-and-risk-assessment`](story-01-debug-path-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [ ] **E11:S01:T06 – Define RC sign-off criteria and remediation tasks** - TODO
+  - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-01-debug-path-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 
 ---
 
@@ -41,52 +47,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ---
 
-## Tasks
-
 <span id="e11s01t01--establish-expectations-baseline-for-debug-path-package"></span>
-
-### E11:S01:T01 – Establish expectations baseline for Debug Path package
-**Task ID:** E11:S01:T01
-
-**Planning artifacts (publication):**
-
-- [ICW E11:S01:T01 specification](../../../../implementation-cycles/ICW-E11S01T01-specification.md)
-
-**Input:** Package README, methodology, and integration guides  
-**Deliverable:** Expectations baseline document  
-**Approach:** Extract expected behaviors and usage patterns.
-
-### E11:S01:T02 – Inventory package components and map to expectations
-
-**Input:** Package directory inventory  
-**Deliverable:** Component map with expected vs actual coverage  
-**Approach:** Map templates, guides, and examples to expectations.
-
-### E11:S01:T03 – Validate methodology behavior against documented guidance
-
-**Input:** DRW methodology docs and examples  
-**Deliverable:** Behavior validation notes and discrepancies  
-**Approach:** Validate methodology steps and required artifacts.
-
-### E11:S01:T04 – Review integrations and dependency alignment
-
-**Input:** Integration references across frameworks  
-**Deliverable:** Integration alignment report  
-**Approach:** Verify alignment with Kanban and Workflow frameworks.
-
-### E11:S01:T05 – Create gap log and risk assessment
-
-**Input:** Findings from T01–T04  
-**Deliverable:** Gap log with severity and risk notes  
-**Approach:** Consolidate gaps and categorize by RC impact.
-
-### E11:S01:T06 – Define RC sign-off criteria and remediation tasks
-
-**Input:** Gap log and expected behaviors  
-**Deliverable:** RC sign-off checklist and remediation task list  
-**Approach:** Define minimum bar for RC and backlog tasks.
-
----
 
 ## Acceptance Criteria
 

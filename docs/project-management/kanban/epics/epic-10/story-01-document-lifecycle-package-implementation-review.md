@@ -21,11 +21,17 @@ housekeeping_policy: keep
 ## Task Checklist
 
 - [ ] **E10:S01:T01 – Establish expectations baseline for Document Lifecycle package** - TODO
+  - Task: [`T01-establish-expectations-baseline-for-document-lifecycle-packa`](story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)
 - [ ] **E10:S01:T02 – Inventory package components and map to expectations** - TODO
+  - Task: [`T02-inventory-package-components-and-map-to-expectations`](story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
 - [ ] **E10:S01:T03 – Validate lifecycle behavior against documented guidance** - TODO
+  - Task: [`T03-validate-lifecycle-behavior-against-documented-guidance`](story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md)
 - [ ] **E10:S01:T04 – Review integrations and dependency alignment** - TODO
+  - Task: [`T04-review-integrations-and-dependency-alignment`](story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
 - [ ] **E10:S01:T05 – Create gap log and risk assessment** - TODO
+  - Task: [`T05-create-gap-log-and-risk-assessment`](story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [ ] **E10:S01:T06 – Define RC sign-off criteria and remediation tasks** - TODO
+  - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 
 ---
 
@@ -41,52 +47,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ---
 
-## Tasks
-
 <span id="e10s01t01--establish-expectations-baseline-for-document-lifecycle-package"></span>
-
-### E10:S01:T01 – Establish expectations baseline for Document Lifecycle package
-**Task ID:** E10:S01:T01
-
-**Planning artifacts (publication):**
-
-- [ICW E10:S01:T01 specification](../../../../implementation-cycles/ICW-E10S01T01-specification.md)
-
-**Input:** Package README, policies, and implementation guides  
-**Deliverable:** Expectations baseline document  
-**Approach:** Extract expected lifecycle behavior and metadata requirements.
-
-### E10:S01:T02 – Inventory package components and map to expectations
-
-**Input:** Package directory inventory  
-**Deliverable:** Component map with expected vs actual coverage  
-**Approach:** Map policies, templates, and docs to expectations.
-
-### E10:S01:T03 – Validate lifecycle behavior against documented guidance
-
-**Input:** Lifecycle policy and examples  
-**Deliverable:** Behavior validation notes and discrepancies  
-**Approach:** Validate lifecycle states, metadata fields, and enforcement.
-
-### E10:S01:T04 – Review integrations and dependency alignment
-
-**Input:** Integration references across frameworks  
-**Deliverable:** Integration alignment report  
-**Approach:** Verify alignment with Kanban policies and validators.
-
-### E10:S01:T05 – Create gap log and risk assessment
-
-**Input:** Findings from T01–T04  
-**Deliverable:** Gap log with severity and risk notes  
-**Approach:** Consolidate gaps and categorize by RC impact.
-
-### E10:S01:T06 – Define RC sign-off criteria and remediation tasks
-
-**Input:** Gap log and expected behaviors  
-**Deliverable:** RC sign-off checklist and remediation task list  
-**Approach:** Define minimum bar for RC and backlog tasks.
-
----
 
 ## Acceptance Criteria
 
