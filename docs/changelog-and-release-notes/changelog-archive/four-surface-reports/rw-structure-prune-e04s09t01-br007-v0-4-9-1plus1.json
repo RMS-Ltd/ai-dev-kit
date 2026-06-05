@@ -1,0 +1,75 @@
+{
+  "version_string": "v0.4.9.1+1",
+  "task_id": "E04:S09:T01",
+  "epic": 4,
+  "story": 9,
+  "task": 1,
+  "invocation_context": "rw_step_7",
+  "contract": "FR-097 structure-prune — RW Step 7 FBU closure (BR-007 terminal)",
+  "timestamp_utc": "2026-06-05T12:30:00Z",
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    }
+  },
+  "release_scope": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md"
+      ]
+    },
+    "planning_artifact": {
+      "touched": true,
+      "paths": [
+        "docs/implementation-cycles/IPP-E04S09T01-br007-kanban-package-installation.md"
+      ]
+    },
+    "intake_ledger": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/intake-completed.md"
+      ]
+    }
+  },
+  "rows": {
+    "E04:S09:T01": {
+      "allowed": true,
+      "reason": "FIXED v0.4.9.1+1 — BR-007 verified; row pruned from kboard C-band; intake-completed.md ledger"
+    }
+  },
+  "notes": "RW E04:S09:T01 --art: BR-007 verification closure; RF9 analyze_structure.py gap fix; four-surface reconciliation."
+}

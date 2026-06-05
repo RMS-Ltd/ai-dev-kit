@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-05 (RW E02:S16:T04 v0.2.16.4+30 — **FR-106**, **BR-082**, **BR-088** verified)
-**Version:** v0.2.16.4+30
+**Last Updated:** 2026-06-05 (RW E04:S09:T01 v0.4.9.1+1 — **BR-007** verified)
+**Version:** v0.4.9.1+1
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-007 | BR | Multiple bugs Kanban package installation — FIXED (**E04:S09:T01**) | 2026-06-05T12:30:00Z | v0.4.9.1+1 | RW --art |
 | FR-106 | FR | Packaged workflows sync with live repo spec — IMPLEMENTED (**E02:S13:T08**) | 2026-06-05T20:30:00Z | v0.2.13.8+2 | UKW -c |
 | BR-082 | BR | RW install PyYAML preflight — FIXED (**E06:S09:T11**; #14 closed) | 2026-06-05T20:30:00Z | v0.6.9.11+2 | UKW -c |
 | BR-088 | BR | RW install version_file scaffold — FIXED (**E06:S09:T19**; #18 closed) | 2026-06-05T20:30:00Z | v0.6.9.19+1 | UKW -c |

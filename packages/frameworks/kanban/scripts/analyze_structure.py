@@ -342,7 +342,9 @@ class KanbanStructureAnalyzer:
                 m for m in self.semantic_matches if m.get("similarity_score", 0) >= 70
             ]
             recommended_mode = "canonical_adoption"
-            recommendation_rationale = f"Canonical adoption recommended: {len(high_similarity_matches)} high similarity semantic matches found."
+            recommendation_rationale = (
+                f"Canonical adoption recommended: {len(self.semantic_matches)} semantic matches found."
+            )
         elif has_conflicts and has_project_epics:
             recommended_mode = "hybrid"
             recommendation_rationale = "Hybrid mode recommended: Conflicts detected with existing project epics."
