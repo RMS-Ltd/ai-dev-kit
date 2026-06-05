@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (RW **E08:S03:T10** — BR-096 CodeQL URL substring fix v0.8.3.10+1)
-**Version:** v0.8.3.10+1
+**Last Updated:** 2026-06-05 (RW **E01:S02:T13** — README hygiene v0.1.2.13+1)
+**Version:** v0.1.2.13+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`fbu-completed.md`](fbu-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **Epic 1: AI Dev Kit Core (Story 2 — Package & Repo Architecture)**
+- **[E01:S02:T13](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)** — **FR-002**: README hygiene — removed book-workspace branding from public README.
+  **Completed:** `2026-06-05T01:29:00Z` | **Version:** `v0.1.2.13+1` | **Agent:** `RW --art` | [FR-002](fr-br/FR-002-update-been-there-readme.md)
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
 - **[E08:S03:T10](epics/epic-08/story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md)** — **BR-096**: CodeQL incomplete URL substring sanitization — `urlparse` hostname check in portal test.

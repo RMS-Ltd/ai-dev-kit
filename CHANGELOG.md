@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.1.2.13+1] - 05-06-26
+
+E01:S02:T13 — **README hygiene (FR-002):** Removed stale book-workspace branding from project README. SemVer **v0.4.901+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.2.13+1.md)
+
+---
+
 ## [0.4.19.12+2] - 05-06-26
 
 E04:S19:T12 — **Single-board Wave 2:** Tooling skips deprecated `fbuboard`; three-surface RW report; UKW Step 6.5 skip. SemVer **v0.4.900+2**.

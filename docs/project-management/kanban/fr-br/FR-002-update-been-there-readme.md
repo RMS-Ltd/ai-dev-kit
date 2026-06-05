@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Submitted:** 2025-01-27  
 **Submitted By:** RMS  
 **Priority:** MEDIUM  
-**Status:** ACCEPTED
+**Status:** PARTIALLY IMPLEMENTED (README hygiene v0.1.2.13+1; full Best-README template deferred)
 
 **Implementing Task:** [E01:S02:T13](../epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)  
 **Historical registry:** E05:S01:T02
@@ -153,6 +153,8 @@ A project adopting ai-dev-kit needs guidance on how to customize their README to
 ---
 
 ## Notes
+
+**Partial delivery (v0.1.2.13+1, E01:S02:T13):** Public README no longer presents as book workspace or points at `ai-dev-kit-book`. See [ADR-006](../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 This FR creates a concrete README template based on Best-README-Template, building on their excellent foundation. The template includes ai-dev-kit integration and proper acknowledgments, then provides guidance on how adopting projects can customize it further for their specific needs.
 
