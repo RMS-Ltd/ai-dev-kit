@@ -109,7 +109,9 @@ kanban_root = config.get('kanban_root', 'docs/project-management/kanban') if con
 
 **🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
-**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md). In Cursor, use `todo_write` as the reference adapter for the steps in the selected execution path:
+**REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md). In Cursor, use `todo_write` as the reference adapter for the steps in the selected execution path.
+
+**REQUIRED (FR-044):** Initialize `RWExecutionLogger.from_config(...)` at workflow start; `step_start` / `step_complete` / `finalize` alongside tracker updates (`journal/rw_execution_log.py`).
 
 **Trigger-Specific Step Lists:**
 

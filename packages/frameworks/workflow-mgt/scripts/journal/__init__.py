@@ -6,6 +6,8 @@ analysis for the Release Workflow (RW).
 
 Modules:
     rw_journal        — Per-run step journaling with JSON serialization.
+    agent_run_log     — Incremental agent run log writer (FR-044).
+    rw_execution_log  — Human-readable RW execution log + RWExecutionLogger.
     recovery_report   — Human + machine-readable recovery report generation.
     rollback_contract — Automatic vs manual rollback surface analysis.
 
@@ -32,6 +34,8 @@ from .recovery_report import RecoveryReport, RECOVERY_SCHEMA_VERSION
 from .rollback_contract import RollbackContract, CompensationSurface
 from .journal_housekeeping import sweep, SweepResult
 from .forensic_log import AtomicCommandRecord, run_subprocess_logged
+from .agent_run_log import AgentRunLog, StepSpec
+from .rw_execution_log import RWExecutionLogger, RWExecutionTextLog, load_execution_log_config
 
 __all__ = [
     "RWJournal",
@@ -45,4 +49,9 @@ __all__ = [
     "SweepResult",
     "AtomicCommandRecord",
     "run_subprocess_logged",
+    "AgentRunLog",
+    "StepSpec",
+    "RWExecutionLogger",
+    "RWExecutionTextLog",
+    "load_execution_log_config",
 ]

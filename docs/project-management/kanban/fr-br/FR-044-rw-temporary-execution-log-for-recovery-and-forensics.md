@@ -14,9 +14,10 @@ housekeeping_policy: keep
 **Submitted By:** User  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM  
-**Status:** ACCEPTED  
+**Status:** IMPLEMENTED (v0.5.1.44+1 — pending user verification)  
 
 **Implementing Task:** [E05:S01:T44](../epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)  
+**Planning:** [IPP-E05S01T44](../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md)  
 **Historical registry:** E05:S01:T44
 
 ---
@@ -69,12 +70,12 @@ Add a **temporary execution log file** to the Release Workflow (RW) that is writ
 
 ## Acceptance Criteria
 
-- [ ] RW creates/opens a log file at start of execution
-- [ ] Each RW step writes start and completion (or failure) to the log
-- [ ] Log includes sufficient context for recovery (step number, key outputs, file paths)
-- [ ] Log path configurable via `rw-config.yaml` (optional)
-- [ ] Documented in RW agent execution guide
-- [ ] Log retained for at least the duration of the run; retention policy (keep/rotate/truncate) TBD
+- [x] RW creates/opens a log file at start of execution (v0.5.1.44+1)
+- [x] Each RW step writes start and completion (or failure) to the log (v0.5.1.44+1)
+- [x] Log includes sufficient context for recovery (step number, key outputs, file paths) (v0.5.1.44+1)
+- [x] Log path configurable via `rw-config.yaml` (v0.5.1.44+1)
+- [x] Documented in RW agent execution guide (v0.5.1.44+1)
+- [x] Retention: text log truncate on new RW start; per-run JSON files (v0.5.1.44+1)
 
 ---
 

@@ -35,6 +35,11 @@ journal_dir: docs/journals
 journal_ttl_days: 7
 journal_failed_ttl_days: 30
 
+# FR-044 / E05:S01:T44 — RW temporary execution log (ADR-011 reference writer)
+rw_execution_log_path: .rw-execution.log
+agent_run_log_dir: docs/journals/agent-runs
+rw_execution_log_truncate_on_start: true
+
 # FR-097 board stamp enforcement (pre-commit + release Gate 8)
 board_stamp:
   homogeneity_threshold: 3  # fail when ≥3 rows share identical Last modified

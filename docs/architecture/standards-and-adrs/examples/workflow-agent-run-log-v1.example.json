@@ -1,43 +1,32 @@
 {
-  "schema_version": 1,
+  "schema_version": 1.1,
   "workflow": "RW",
-  "route": "RW E02:S01:T23 --art",
-  "task_id": "E02:S01:T23",
-  "current_step": "rw-step-7",
+  "route": "RW E05:S01:T44 --art",
+  "task_id": "E05:S01:T44",
+  "run_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "current_step": "rw-step-2",
   "blocking_reason": null,
-  "started_at": "2026-05-30T17:05:00Z",
-  "updated_at": "2026-05-30T17:12:30Z",
+  "started_at": "2026-06-05T12:00:00Z",
+  "updated_at": "2026-06-05T12:00:45Z",
   "ended_at": null,
   "status": "running",
-  "notes": "Example agent run log — spec-only v1; not a forensic journal.",
+  "notes": "Example agent run log v1.1 — FR-044 outputs/paths.",
   "steps": [
     {
       "id": "rw-step-1",
       "label": "Step 1: Branch Safety Check",
       "status": "completed",
-      "started_at": "2026-05-30T17:05:00Z",
-      "completed_at": "2026-05-30T17:05:15Z"
+      "started_at": "2026-06-05T12:00:00Z",
+      "completed_at": "2026-06-05T12:00:15Z"
     },
     {
       "id": "rw-step-2",
       "label": "Step 2: Bump Version",
-      "status": "completed",
-      "started_at": "2026-05-30T17:05:16Z",
-      "completed_at": "2026-05-30T17:06:00Z"
-    },
-    {
-      "id": "rw-step-7",
-      "label": "Step 7: Scoped Kanban Reconciliation",
       "status": "in_progress",
-      "started_at": "2026-05-30T17:12:30Z",
-      "completed_at": null
-    },
-    {
-      "id": "rw-step-8",
-      "label": "Step 8: Stage Files",
-      "status": "pending",
-      "started_at": null,
-      "completed_at": null
+      "started_at": "2026-06-05T12:00:16Z",
+      "completed_at": null,
+      "outputs": ["version=0.5.1.44+1"],
+      "touched_paths": ["src/ai_dev_kit/version.py"]
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "contract": "FR-097 structure-prune — COMPLETE task row removal (RW Step 7 E05:S01:T44)",
+  "release_scope": {
+    "task_id": "E05:S01:T44",
+    "version_string": "v0.5.1.44+1"
+  },
+  "evidence_mode": "structure_prune",
+  "archived": {
+    "kboard": ["E05:S01:T44"],
+    "kanban_completed": ["E05:S01:T44"]
+  },
+  "rows": {
+    "E05:S01:T44": {
+      "allowed": true,
+      "reason": "COMPLETE v0.5.1.44+1 — FR-044 RW execution log; ledger kanban-completed.md"
+    }
+  }
+}

@@ -56,8 +56,18 @@ Documentation Agent owns journal lifecycle per `docs/project-management/kanban/A
 
 ---
 
-## Related work (out of scope here)
+## FR-044 — RW temporary execution log recovery (E05:S01:T44)
 
-- **FR-044** — RW temporary execution log (E05:S01:T44)
-- **E02:S01:T23** — [Workflow Step Tracker + agent run log v1](ADR-011-workflow-step-tracker-and-agent-run-log.md) (in-session progress + cross-session resume; **not** forensic command records)
-- **ADR-008** — forensic RW journals (`docs/journals/rw-*.json`) for operator recovery
+| Artifact | Default path | Purpose |
+| -------- | ------------ | ------- |
+| Text mirror | `.rw-execution.log` | Last `STEP_OK` line → last completed step |
+| Agent run log | `docs/journals/agent-runs/rw-{run_id}.json` | Structured `steps[]`, outputs, touched_paths |
+
+Recovery: read text log → confirm JSON state → resume from next pending step. Modules: `agent_run_log.py`, `rw_execution_log.py`.
+
+---
+
+## Related work
+
+- **E02:S01:T23** — [Workflow Step Tracker + agent run log](ADR-011-workflow-step-tracker-and-agent-run-log.md)
+- **ADR-008** — forensic RW journals for command-timeline recovery

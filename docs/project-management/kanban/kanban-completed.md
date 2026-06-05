@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E05:S01:T44](epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)** — **FR-044** RW temporary execution log (incremental dual-write logging).
+  **Completed:** `2026-06-05T05:44:26Z` | **Version:** `v0.5.1.44+1` | **Agent:** `RW E05:S01:T44 --art` | [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | [IPP](../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md) | [ADR-011](../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
+
 - **[E04:S11:T07](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)** — **FR-016** embedded → discrete task doc migration (Waves 0–5).
   **Completed:** `2026-06-05T05:12:40Z` | **Version:** `v0.4.11.7+16` | **Agent:** `RW E04:S11:T07 --art` | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | [migration guide](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-guide.md)
 

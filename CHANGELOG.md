@@ -9,15 +9,15 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+32] - 05-06-26
+## [0.5.1.44+1] - 05-06-26
 
-E02:S16:T04 — **Kanban hygiene (RW -k):** FR-016 Task ID headers + E01:S01 backfill; E02:S09/S11/S15 story closure. SemVer **v0.4.933+32**.
+E05:S01:T44 — **FR-044 RW temporary execution log:** incremental agent run log writer + text mirror, schema v1.1, ADR-011 update. SemVer **v0.4.939+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+32.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.44+1.md)
 
 ---
 
-## [0.2.13.6+0] - 05-06-26
+## [0.2.16.4+32] - 05-06-26
 
 E02:S13:T06 — **Kanban init (RW -k):** workflow-mgt RC review task filed on **kboard** M-band. SemVer **v0.4.938+0**.
 

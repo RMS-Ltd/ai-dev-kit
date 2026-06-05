@@ -174,7 +174,7 @@ For each step, the agent follows this pattern:
 
 **Required Implementation Pattern:**
 
-1. **At Workflow Start (MANDATORY):** Create step list with all RW steps as `pending`; initialize [agent run log](../../../../../../docs/architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json) at `docs/journals/agent-runs/rw-{run_id}.json` when cross-session resume is possible.
+1. **At Workflow Start (MANDATORY):** Create step list with all RW steps as `pending`; initialize **RW execution logger** (FR-044) via `RWExecutionLogger.from_config(...)` — dual-writes [agent run log v1.1](../../../../../../docs/architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json) and `.rw-execution.log`. Reference: `journal/rw_execution_log.py`, `journal/agent_run_log.py`.
    ```python
    # Cursor adapter example — see Workflow Step Tracker Contract
    todo_write(merge=False, todos=[

@@ -243,10 +243,10 @@ kanban_root = config.get('kanban_root', 'docs/project-management/kanban') if con
 
 **REQUIRED:** Agents **MUST** use a **Workflow Step Tracker** per the [Workflow Step Tracker Contract](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md) for all 12 Release Workflow steps (plus optional Step 9.5). In Cursor, use `todo_write` as the reference adapter.
 
-1. **At Workflow Start:** Create step list with all 12 steps as `pending`; initialize agent run log when resumption may be needed (see ADR-011)
-2. **Before Each Step:** Mark step as `in_progress`
-3. **After Each Step:** Mark step as `completed` and mark next step as `in_progress`
-4. **On Completion:** All steps marked as `completed`
+1. **At Workflow Start:** Create step list as `pending`; initialize `RWExecutionLogger.from_config(...)` (FR-044 / E05:S01:T44)
+2. **Before Each Step:** Mark step `in_progress`; `logger.step_start("rw-step-N", label)`
+3. **After Each Step:** Mark step `completed`; `logger.step_complete(..., outputs=..., touched_paths=...)`
+4. **On Completion:** All steps `completed`; `logger.finalize("completed")`
 
 5. **🚨 CRITICAL: Step 1 Branch Safety Enforcement:**
    - **MANDATORY:** Step 1 MUST run `validate_branch_context.py --strict`

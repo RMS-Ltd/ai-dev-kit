@@ -8,61 +8,38 @@ housekeeping_policy: keep
 
 # ADR-011: Workflow Step Tracker and Agent Run Log
 
-**Status:** Accepted  
+**Status:** Accepted (updated 2026-06-05 — FR-044 reference writer v1.1)  
 **Date:** 2026-05-30  
-**Deciders:** User (Ruari Mears)  
-**Implementing task:** [E02:S01:T23](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)  
-**Planning package:** [IPP-E2S1T23](../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
-
----
-
-## Context
-
-Agent-managed workflows (RW, UKW, IPW, PVW, etc.) require **in-session step visibility** and **interruption recovery**. Governance docs historically mandated Cursor **`todo_write`**, binding adopters to one IDE and blocking Windsurf/Cascade (`todo_list`) portability.
-
-[ADR-008](ADR-008-workflow-forensic-logging-and-checkpoints.md) already defines **forensic RW journals** (`docs/journals/rw-*.json`, command records, checkpoints). That layer serves **operator recovery after failure** — not agent-facing progress UI or lightweight cross-session resume.
+**Implementing tasks:** [E02:S01:T23](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md); [E05:S01:T44](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)  
+**Planning:** [IPP-E2S1T23](../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md) · [IPP-E05S01T44](../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md)
 
 ---
 
 ## Decision
 
-1. **Workflow Step Tracker contract** — All agent-managed workflows **MUST** conform to [workflow-step-tracker-contract.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md): states (`pending`, `in_progress`, `completed`, `cancelled`), lifecycle rules, step ID conventions.
-2. **Tool adapters** — Cursor `todo_write`, Windsurf/Cascade `todo_list`, or tool-less agent run log fallback. Governance **MUST NOT** name a single IDE API as mandatory.
-3. **Agent run log v1 (spec-only)** — JSON Schema at [workflow-agent-run-log-v1.schema.json](schemas/workflow-agent-run-log-v1.schema.json); default path `docs/journals/agent-runs/{workflow}-{run_id}.json`. Fields: workflow, route, task_id, current_step, blocking_reason, timestamps, steps[].
-4. **Housekeeping** — On workflow end, finalize agent run log (`ended_at`, terminal `status`); cancel/clear tracker steps via adapter. Forensic journal finalization remains ADR-008.
-5. **Non-goals (v1)** — No reference Python writer; no command argv capture in agent run log; no merge with RWJournal schema.
+1. **Workflow Step Tracker contract** — Mandatory for all agent-managed workflows.
+2. **Tool adapters** — Cursor `todo_write`, Windsurf `todo_list`, or tool-less fallback.
+3. **Agent run log v1.1** — Schema at [workflow-agent-run-log-v1.schema.json](schemas/workflow-agent-run-log-v1.schema.json); reference writer `agent_run_log.py` with incremental atomic flush.
+4. **RW execution text mirror (FR-044)** — `.rw-execution.log` via `rw_execution_log.py`; facade `RWExecutionLogger`.
+5. **Housekeeping** — Finalize agent run log on workflow end; ADR-008 forensic journal separate.
+6. **Non-goals** — No RWJournal schema merge; no argv capture in agent run log.
 
 ---
 
-## Relationship to ADR-008
+## Relationship to ADR-008 (boundary)
 
-| Layer | Purpose | Path / artifact |
-| ----- | ------- | ---------------- |
-| **Workflow Step Tracker** (this ADR) | In-session progress; user visibility | IDE adapter or agent run log `steps[]` |
-| **Agent run log** (this ADR) | Cross-session resume; lightweight state | `docs/journals/agent-runs/*.json` |
-| **Forensic journal** (ADR-008) | Post-failure recovery; command timeline | `docs/journals/rw-*.json`, checkpoints |
+Agent run log and forensic journal are **distinct** layers — do not merge schemas.
 
-Agents **MAY** use both agent run log and forensic journal during RW; they serve different audiences and MUST NOT be conflated in documentation.
-
----
-
-## Consequences
-
-### Positive
-
-- Portable workflow governance across Cursor, Windsurf/Cascade, and tool-less environments.
-- Clear precedent for future agent workflows.
-- Automated doc governance tests can enforce contract language.
-
-### Negative
-
-- Large doc sweep across `.cursorrules`, KB guides, and portable excerpts.
-- Adopters must map local IDE APIs to contract semantics.
+| Layer | Purpose | Path |
+| ----- | ------- | ---- |
+| Workflow Step Tracker | In-session progress | IDE adapter |
+| Agent run log | Cross-session resume | `docs/journals/agent-runs/*.json` |
+| RW execution text log | Post-crash `cat` | `.rw-execution.log` |
+| Forensic journal | Command timeline | `docs/journals/rw-*.json` |
 
 ---
 
 ## Related
 
-- [ADR-008](ADR-008-workflow-forensic-logging-and-checkpoints.md) — forensic logging boundary
-- [workflow-step-tracker-contract.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-step-tracker-contract.md)
-- [workflow-hardening-guide.md](workflow-hardening-guide.md)
+- [ADR-008](ADR-008-workflow-forensic-logging-and-checkpoints.md)
+- [FR-044](../../project-management/kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)

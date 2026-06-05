@@ -55,7 +55,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **FR-042** – Implementation Planning Workflow (IPW) — ICW consolidation - TODO (HIGH, **E05:S01:T42**) - [FR-042](fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - **FR-041** – Perpetual Task for Release Workflow Maintenance - TODO (LOW, Ongoing maintenance for Release Workflow) - [FR-041](fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)
 - **FR-040** – RW Update Kanban Board on Task Completion - TODO (LOW, Automatic Kanban board updates in Release Workflow) - [FR-040](fr-br/FR-040-rw-update-kanban-board-on-task-completion.md)
-- **FR-044** – RW Temporary Execution Log for Recovery and Forensics - TODO (LOW, Temporary execution logs for Release Workflow) - [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
+- **FR-044** – RW Temporary Execution Log for Recovery and Forensics - IMPLEMENTED (v0.5.1.44+1) - [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | [E05:S01:T44](epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)
 - **FR-039** – AI Dev Kit Project Review and Legacy Clean-up - TODO (LOW, Review and clean up legacy project elements) - [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
 - **FR-038** – RW Step 7 Scoped Kanban Sync UKW Mode - IMPLEMENTED (v0.5.1.38+1, documentation alignment) - [FR-038](fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
 - **FR-037** – Kanban Policy Task Prioritisation Queue Stack - TODO (LOW, Queue stack for task prioritization) - [FR-037](fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)

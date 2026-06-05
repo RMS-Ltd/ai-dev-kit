@@ -44,7 +44,7 @@ def test_tc3_example_run_log_validates_against_schema():
     example = json.loads(EXAMPLE.read_text(encoding="utf-8"))
     required = set(schema["required"])
     assert required <= set(example.keys())
-    assert example["schema_version"] == 1
+    assert example["schema_version"] in (1, 1.1)
     assert example["status"] in schema["properties"]["status"]["enum"]
     for step in example["steps"]:
         assert step["status"] in schema["properties"]["steps"]["items"]["properties"]["status"]["enum"]

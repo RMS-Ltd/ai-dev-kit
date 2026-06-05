@@ -75,11 +75,12 @@ Adapters are interchangeable at the **semantic** layer — the contract governs 
 
 ## Agent run log (cross-session)
 
-For resumption across sessions, agents **SHOULD** maintain a persisted **agent run log** (spec-only v1):
+For resumption across sessions, agents **MUST** maintain a persisted **agent run log** during RW (v1.1; FR-044):
 
 - **Schema:** [`workflow-agent-run-log-v1.schema.json`](../../../../../../docs/architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json)
-- **Example:** [`workflow-agent-run-log-v1.example.json`](../../../../../../docs/architecture/standards-and-adrs/examples/workflow-agent-run-log-v1.example.json)
-- **Default path:** `docs/journals/agent-runs/{workflow}-{run_id}.json`
+- **Reference writer:** `journal/agent_run_log.py` (incremental atomic flush)
+- **Text mirror:** `journal/rw_execution_log.py` (`RWExecutionLogger` facade)
+- **Default paths:** `docs/journals/agent-runs/{workflow}-{run_id}.json`, `.rw-execution.log` (configurable in `rw-config.yaml`)
 
 This is **distinct** from ADR-008 **forensic journals** (`docs/journals/rw-*.json`) which capture command records and recovery metadata for operators.
 

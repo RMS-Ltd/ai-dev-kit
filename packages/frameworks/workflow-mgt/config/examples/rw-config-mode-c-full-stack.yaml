@@ -25,3 +25,8 @@ semver_mapping_strategy: task_touch
 
 # Optional: Project name for examples/comments
 project_name: myproject
+
+# FR-044 / E05:S01:T44 — RW temporary execution log
+rw_execution_log_path: .rw-execution.log
+agent_run_log_dir: docs/journals/agent-runs
+rw_execution_log_truncate_on_start: true

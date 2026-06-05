@@ -31,6 +31,10 @@ ecc-adk-bridge.yaml
 .coverage
 SCRATCHPAD.md
 
+# FR-044 — RW temporary execution log (local forensic artifact)
+.rw-execution.log
+docs/journals/agent-runs/
+
 # RW Journal Artifacts — runtime per-run files, not operator documentation
 # Operator docs (README.md, JOURNAL_SCHEMA.md, RECOVERY_PROCEDURE.md, ROLLBACK_CONTRACT.md)
 # are kept in version control; runtime rw-* artifacts are not.
