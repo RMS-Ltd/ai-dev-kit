@@ -1,4 +1,4 @@
-# AI Dev Kit (private book workspace)
+# AI Dev Kit
 
 **Maintainer clone:** [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book) — book, Epic 24, and framework development before public release. **Adopters** use public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) only.
 
