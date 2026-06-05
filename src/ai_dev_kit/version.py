@@ -7,9 +7,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 5      # Epic 5 — Documentation & Portal
-VERSION_STORY = 9     # Story 9 — Docusaurus documentation portal
-VERSION_TASK = 14     # Task 14 — Docusaurus CI dedup (BR-093 Wave 2 + BUILD remediation)
-VERSION_BUILD = 3     # Build 3: Wave 2 FBU closure + tagged-BUILD collision guard
+VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
+VERSION_STORY = 1     # Story 1 — RW Agent Execution & Docs
+VERSION_TASK = 24     # Task 24 — BR-097 BUILD increment + tag immutability (kanban init)
+VERSION_BUILD = 0     # Build 0: kanban-init intake (RW -k --art --doc-policy-zero)
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"

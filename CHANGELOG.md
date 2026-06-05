@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.9.14+3] - 05-06-26
+## [0.2.1.24+0] - 05-06-26
 
-E05:S09:T14 — **BUILD collision remediation:** Wave 2 FBU closure at **+3**; restore **+2** archive; tagged-BUILD validator guard. SemVer **v0.4.906+3**.
+E02:S01:T24 — **BR-097 intake:** RW BUILD increment enforcement + tag immutability; prior-work failure analysis. SemVer **v0.4.907+0**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.24+0.md)
 
 ---
 

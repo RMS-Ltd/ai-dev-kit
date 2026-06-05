@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-05 (v0.2.16.4+29 – Story 16 T04 UKW board hygiene)
+**Last updated:** 2026-06-05 (v0.2.1.24+0 – Story 01 T24 BR-097 intake)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Story Checklist
 
-- [ ] **E2:S01 – RW Agent Execution & Docs** - IN PROGRESS (reopened 2026-04-02; latest: **E02:S01:T21** completed at v0.2.1.21+1 for BR-074 artifact hygiene / changelog immutability)
+- [ ] **E2:S01 – RW Agent Execution & Docs** - IN PROGRESS (reopened 2026-04-02; **E02:S01:T24** filed **v0.2.1.24+0** — BR-097 BUILD increment + tag immutability)
   - Story: [`story-01-rw-agent-execution-and-docs.md`](story-01-rw-agent-execution-and-docs.md)
   - Tasks: T01–T21 with T21 ✅ COMPLETE (v0.2.1.21+1) — [BR-074](../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
 
