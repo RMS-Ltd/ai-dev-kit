@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E08:S03:T09": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.9+1 — task COMPLETE; prune active kboard row to kanban-completed.md"
+    },
+    "BR-095": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.9+1 — BR RESOLVED; prune active fbuboard row to fbu-completed.md"
+    }
+  }
+}

@@ -63,10 +63,12 @@ def test_documentation_update():
     # Initialize documentation update
     doc_update = IntakeDocumentationUpdate(config)
     
+    test_path = None
     try:
         # Create a copy for testing
         import shutil
-        test_path = Path(tempfile.mktemp(suffix='.md'))
+        with tempfile.NamedTemporaryFile(suffix='.md', delete=False) as tmp:
+            test_path = Path(tmp.name)
         shutil.copy(fr_br_path, test_path)
         
         result = doc_update.update_document(
@@ -101,15 +103,15 @@ def test_documentation_update():
         print(f"   Errors: {len(result.errors)}")
         print(f"   Warnings: {len(result.warnings)}")
         
-        # Cleanup
-        test_path.unlink()
-        
         return True
     except Exception as e:
         print(f"❌ Test failed: {e}")
         import traceback
         traceback.print_exc()
         return False
+    finally:
+        if test_path is not None and test_path.exists():
+            test_path.unlink()
 
 
 def test_status_field_update():

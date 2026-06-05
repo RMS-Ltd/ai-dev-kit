@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-05 (RW **E07:S07:T03** — BR-091 validator slug path fix v0.7.7.3+1)
-**Version:** v0.7.7.3+1
+**Last Updated:** 2026-06-05 (RW **E08:S03:T09** — BR-095 CodeQL mktemp fix v0.8.3.9+1)
+**Version:** v0.8.3.9+1
 
 **Active board contract:** MoSCOW rows are **live work** (TODO / IN PROGRESS / OPEN / PERPETUAL) — including a filed **Could Have** backlog. Remove **terminal** rows, date-stamped journal lines, and archive footnotes (use [`kanban-completed.md`](kanban-completed.md)), not open `TODO` queue items.
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-*(None.)*
+- **E08:S03:T10** – BR-096: CodeQL incomplete URL substring sanitization in portal test - 🔄 IN PROGRESS (MEDIUM, fix ready — pending RW) | [Task](epics/epic-08/story-03-automation-scripts/T10-codeql-incomplete-url-substring-sanitization-br096.md) | [BR-096](fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md) | Last modified: 2026-06-05 21:00 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 

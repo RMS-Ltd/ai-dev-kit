@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.9+1] - 05-06-26
+
+E08:S03:T09 — **BR-095:** Replace insecure `tempfile.mktemp` with `NamedTemporaryFile` in intake test script (CodeQL CWE-377). SemVer **v0.4.896+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.9+1.md)
+
+---
+
 ## [0.7.7.3+1] - 05-06-26
 
 E07:S07:T03 — **BR-091:** Attempted fix — workflow validator slug path resolution (`workflow-mgt` first, legacy fallback); bridge template canonical path; pytest 105/105. SemVer **v0.4.895+1**.
