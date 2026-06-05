@@ -134,13 +134,15 @@ After `install_kanban_framework.py --mode fresh`, on-disk layout is typically:
 
 ```text
 docs/project-management/kanban/
-  kboard.md              # sole active MoSCOW board (ADR-018)
-  kboard.md            # deprecated redirect stub (no active MoSCOW)
-  epics/Epic-1/Epic-1.md
-  epics/Epic-1/Story-009-*.md
+  kboard.md                    # sole active MoSCOW board (ADR-018)
+  kanban-structure.md
+  epics/epic-01/epic-01.md     # lowercase fresh install (UXR-017); legacy Epic-/Story- also supported
+  epics/epic-01/story-009-*.md
 ```
 
-**Dual-board brownfield:** If your project still maintains active rows on `kboard.md`, migrate per `packages/frameworks/kanban/guides/single-board-migration-adopter-note.md` before upgrading framework packs.
+Per [ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md), fresh installs emit **`kboard.md` only** — no `fbuboard.md` or `kanban-board.md` redirect stubs.
+
+**Legacy dual-board brownfield:** If your project still uses **`fbuboard.md`** or **`kanban-board.md`** as an active board, migrate per `packages/frameworks/kanban/guides/single-board-migration-adopter-note.md` before upgrading framework packs.
 
 Mode **C** of `install_release_workflow.py` **detects** this layout and pre-fills matching defaults (press Enter to accept). If detection finds files, you should see match previews instead of zero-match warnings.
 
@@ -294,12 +296,13 @@ $ tail -n 3 "$AI_DEV_KIT_INSTALL_LOG_PATH"
 
 Redact host paths, tokens, and internal URLs before sharing logs outside your team.
 
-### Wave 4 — Install telemetry boundaries (**FR-078** / **FR-079**)
+### Wave 4 — Install telemetry and feedback (**FR-078** / **FR-079**)
 
-- **[FR-078](docs/project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)** — quality and completeness expectations for install **event** / logging contracts across tooling.
-- **[FR-079](docs/project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)** — governance for **feedback** after an install (what gets submitted upstream and how).
+- **[FR-078](docs/project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)** — install **event** logging (COMPLETE): set `AI_DEV_KIT_INSTALL_LOG_PATH` before installers run; logs land under `logs/ai-dev-kit/install/`.
+- **[FR-079](docs/project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)** — feedback submission (COMPLETE): package install evidence for maintainers via the documented CLI / submission workflow.
+- **[FR-108](docs/project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)** — stable `ADK-I*` error codes in console output (see [troubleshooting § install error codes](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk)).
 
-**Greenfield scope (this task):** Ensure adopters know how to capture evidence (`AI_DEV_KIT_INSTALL_LOG_PATH`, console transcripts) and **what not to paste** (secrets, private URLs). Full contract implementation remains tracked under FR-078 / FR-079.
+**Adopter practice:** Capture the SemVer banner line + any `ADK-*` code + install log path or [install receipt](docs/documentation/user-docs/install-receipt-reference.md). **Do not paste** secrets, tokens, or private URLs.
 
 ---
 
@@ -342,7 +345,7 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 |---------|----------------------|--------|-------------------|---------------|----------------------------|
 | **RW-only** | **R** — `install_release_workflow.py`, `rw-config.yaml`, `.cursorrules` RW section | **O** — set `use_kanban: false` | **Rec** — host `version.py` + schema doc | **O** | Branch safety, changelog format, version bump; FR-060 task token guards **only if** you maintain task docs |
 | **RW + Kanban** | **R** | **R** — host epics or **canonical templates** via `migration` / `canonical_adoption` | **Rec** | **O** | Above + `validate_rw_task_complete.py`, `validate_rw_task_intent.py` when releasing with task docs |
-| **Full stack** | **R** | **R** | **R** — adopt [dev-kit-versioning-policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) or mapped equivalent | **O** | Full RW Step 7 three-surface reconciliation (`kboard` + task + FBU docs; `fbuboard` stub per [ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)) |
+| **Full stack** | **R** | **R** | **R** — adopt [dev-kit-versioning-policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) or mapped equivalent | **O** | Full RW Step 7 four-surface reconciliation (`kboard` + task + FBU docs; sole active board per [ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)) |
 
 **Contract-first wiring:** All paths assume you map ADK contracts to **your** tree. See [RW validators and consumer layout](packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
 
@@ -408,32 +411,44 @@ Align `kanban_root` in `rw-config.yaml` with your actual path before RW Step 7.
 4. Validators: branch + changelog only; skipped task-complete validators until Kanban Phase 2.
 5. First RW: `RW E3:S02:T04` on `epic/3-platform`.
 
-**Deferred:** Kanban (`FR-081` Phase 2), GitHub Release tarballs ([FR-062](docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md)).
+**Deferred (host choice):** In-repo Kanban (`FR-081` Phase 2) — RW-only was sufficient for year 1.
 
-### Tradeoffs and deferrals
+### Tradeoffs and platform status
 
 | Topic | Status | Track in |
 |-------|--------|----------|
-| GitHub Release framework tarballs | Deferred | [FR-062](docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md) |
-| Install telemetry contracts | Deferred | [FR-078](docs/project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](docs/project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md) |
+| GitHub Release framework tarballs | **Available** | [FR-062](docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md) — `install_package_from_release.py` |
+| Install logging + feedback | **Available** | [FR-078](docs/project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](docs/project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md), [install-receipt-reference.md](docs/documentation/user-docs/install-receipt-reference.md) |
+| Install error codes | **Available** | [FR-108](docs/project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md) |
 | Intelligent epic matching | Document only | Kanban `canonical_adoption`; [FR-011](docs/project-management/kanban/fr-br/FR-011-intelligent-epic-matching-ai-assisted-canonical-adoption.md) |
+| npm/pip framework packages | Future | Phase 3 in [framework-dependency-installation-guide.md](docs/documentation/user-docs/framework-dependency-installation-guide.md) |
 
 ---
 
 ### Package installation methods (greenfield and brownfield)
+
+**Two-phase reminder:** Every method below has an **acquisition** step (files on disk) and a separate **configuration** step (`install_release_workflow.py` and optionally `install_kanban_framework.py`). Copying or downloading frameworks alone does **not** wire RW — see [installation paths matrix](docs/project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md).
 
 ### Method 1: GitHub Releases (Recommended - Available Now)
 
 Install framework packages directly from GitHub Releases:
 
 ```bash
-# Using installation script
-python3 install_package_from_release.py kanban 2.1.0 \
+# From your project root — script ships inside workflow-mgt after you vendor or clone ai-dev-kit:
+python3 "packages/frameworks/workflow-mgt/scripts/install_package_from_release.py" \
+    workflow-mgt 2.3.0 \
     --repo RMS-Ltd/ai-dev-kit \
     --install-dir packages/frameworks
 
-# Or download manually
-# See: packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md
+# Kanban example (same script):
+# python3 "packages/frameworks/workflow-mgt/scripts/install_package_from_release.py" \
+#     kanban 2.2.0 --repo RMS-Ltd/ai-dev-kit --install-dir packages/frameworks
+
+# Step 2 (REQUIRED): run RW installer — acquisition alone is not configured install
+python3 "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" \
+    --check-deps
+python3 "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" \
+    --mode c --project-root "."
 ```
 
 **Documentation:**
@@ -448,9 +463,10 @@ Add ai-dev-kit as a Git submodule, copy frameworks, then run installers:
 # Step 1: Add ai-dev-kit as submodule
 git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 
-# Step 2: Checkout specific version
+# Step 2: Checkout specific version (SemVer tag from GitHub Releases)
 cd .ai-dev-kit
-git checkout v0.6.6.10+13  # Or latest tag
+git fetch --tags
+git checkout tags/v0.4.946   # example; use latest from https://github.com/RMS-Ltd/ai-dev-kit/releases
 cd ..
 
 # Step 2b (BR-087): If packages/frameworks still has spaces in directory names,
@@ -482,22 +498,32 @@ python3 "packages/frameworks/kanban/scripts/install_kanban_framework.py" --mode 
 - [`framework-dependency-installation-guide.md`](docs/documentation/user-docs/framework-dependency-installation-guide.md#method-1-git-submodules-phase-1---available-now)
 - [`EXISTING_PROJECT_ROLLOUT_CHECKLIST.md`](docs/documentation/user-docs/EXISTING_PROJECT_ROLLOUT_CHECKLIST.md) - Complete rollout checklist
 
-### Method 3: CLI Tool (Coming Soon)
+### Method 3: CLI Tool (Available from source; PyPI planned)
 
 ```bash
-# Install CLI tool
-pip install ai-dev-kit
+# Clone ai-dev-kit, then from that repo root:
+git clone https://github.com/RMS-Ltd/ai-dev-kit.git
+cd ai-dev-kit
+pip install -e .
 
-# Initialize in your project
+# In your target project:
 ai-dev-kit init
+ai-dev-kit install workflow-mgmt
+ai-dev-kit install kanban
 
-# Install frameworks
-ai-dev-kit install workflow-mgmt@2.1.3
-ai-dev-kit install kanban@2.1.0
+# Step 2 (REQUIRED): CLI places frameworks but does NOT run RW installer
+pip install 'pyyaml>=6.0'
+python3 "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" \
+    --check-deps
+python3 "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py" \
+    --mode c --project-root "."
 ```
+
+PyPI distribution (`pip install ai-dev-kit` without a clone) is planned; until then use **`pip install -e .`** from a checkout.
 
 **Documentation:**
 - [`framework-dependency-cli-reference.md`](docs/documentation/user-docs/framework-dependency-cli-reference.md)
+- [`framework-dependency-installation-guide.md`](docs/documentation/user-docs/framework-dependency-installation-guide.md#method-2-cli-tool-phase-2---available-now)
 
 ---
 
@@ -505,8 +531,8 @@ ai-dev-kit install kanban@2.1.0
 
 | Framework | Version | Installation Guide |
 |-----------|---------|-------------------|
-| **Workflow Management** | 2.1.4 | [`workflow-mgt/README.md`](packages/frameworks/workflow-mgt/README.md) |
-| **Kanban** | 2.1.0 | [`kanban/README.md`](packages/frameworks/kanban/README.md) |
+| **Workflow Management** | 2.3.0 | [`workflow-mgt/README.md`](packages/frameworks/workflow-mgt/README.md) |
+| **Kanban** | 2.2.0 | [`kanban/README.md`](packages/frameworks/kanban/README.md) |
 | **Numbering & Versioning** | 2.0.0 | [`numbering-versioning/README.md`](packages/frameworks/numbering-versioning/README.md) |
 | **Document Lifecycle** | 1.0.0 | [`doc-lifecycle/README.md`](packages/frameworks/doc-lifecycle/README.md) |
 | **Debug Path** | 1.0.0 | [`debug-path/README.md`](packages/frameworks/debug-path/README.md) |
@@ -523,19 +549,20 @@ When installing frameworks in a project, follow these steps:
    - Path: `docs/documentation/user-docs/framework-dependency-installation-guide.md`
    - This contains complete installation procedures
 
-2. **Choose Installation Method:**
-   - **GitHub Releases** (recommended): Use `install_package_from_release.py`
+2. **Choose Installation Method (acquisition):**
+   - **GitHub Releases** (recommended): `install_package_from_release.py`
    - **Git Submodule**: Add ai-dev-kit as submodule, copy frameworks
-   - **CLI Tool**: Use `ai-dev-kit install` (when available)
+   - **CLI Tool**: `ai-dev-kit install` (from source via `pip install -e .` on ai-dev-kit checkout)
 
-3. **Follow Framework-Specific Instructions:**
+3. **Run configuration installers (required after acquisition):**
+   - **Workflow Management:** `install_release_workflow.py` (modes `a` / `b` / `c`)
+   - **Kanban (if needed):** `install_kanban_framework.py`
+   - **Greenfield orchestrator (optional):** `install_greenfield_path.py`
+   - Acquisition alone does **not** produce `rw-config.yaml` or patch `.cursorrules`
+
+4. **Follow Framework-Specific Instructions:**
    - Each framework has a `README.md` with installation steps
-   - **Important:** Use interactive installers (e.g., `install_kanban_framework.py`) - DO NOT manually copy from `docs/project-management/kanban/epics/`
-
-4. **Run Framework Installers:**
-   - **Workflow Management:** `install_release_workflow.py`
-   - **Kanban:** `install_kanban_framework.py`
-   - These installers handle configuration and setup automatically
+   - **Important:** Use interactive installers — DO NOT manually copy maintainer epics from `docs/project-management/kanban/epics/`
 
 5. **Verify Installation:**
    - Run validation scripts
@@ -558,9 +585,10 @@ When installing frameworks in a project, follow these steps:
 ## 📋 Installation Checklist
 
 - [ ] Read main installation guide
-- [ ] Choose installation method (GitHub Releases recommended)
-- [ ] Install framework packages
-- [ ] Run framework-specific installers
+- [ ] Choose acquisition method (GitHub Releases recommended)
+- [ ] Acquire framework packages (copy, submodule, release tarball, or CLI)
+- [ ] Run **configuration** installers (`install_release_workflow.py` + Kanban if needed)
+- [ ] Set `AI_DEV_KIT_INSTALL_LOG_PATH` before installers (recommended)
 - [ ] Configure framework settings
 - [ ] Run validation scripts
 - [ ] Test framework functionality
@@ -576,29 +604,33 @@ When installing frameworks in a project, follow these steps:
 - **Use Cases:** [`docs/documentation/user-docs/framework-dependency-use-cases.md`](docs/documentation/user-docs/framework-dependency-use-cases.md)
 - **FAQ:** [`docs/documentation/user-docs/framework-dependency-faq.md`](docs/documentation/user-docs/framework-dependency-faq.md)
 - **Troubleshooting:** [`docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md`](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md)
+- **Installation paths matrix:** [`installation-paths-matrix.md`](docs/project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md)
 
 ---
 
 ## ✅ Verification
 
-After installation, verify everything works:
+After installation, verify from **your project root** (paths from `rw-config.yaml`):
 
 ```bash
-# Test Workflow Management
-cd frameworks/workflow-mgmt
-python3 scripts/validation/validate_branch_context.py
+# Resolve scripts_path from rw-config.yaml — adjust if you vendored elsewhere:
+WF_SCRIPTS='packages/frameworks/workflow-mgt/scripts'
 
-# Test Release Workflow (same message must include E…S…T… — FR-060)
-# Example: RW E5:S01:T01 or RW E5S01T01 in your AI assistant
+python3 "${WF_SCRIPTS}/validation/validate_branch_context.py" --strict
+python3 "${WF_SCRIPTS}/validation/validate_changelog_format.py"
 
-# Test Kanban
-cd ../kanban
-python3 scripts/install_kanban_framework.py --help
+# If use_kanban: true and you release with task docs:
+# python3 "${WF_SCRIPTS}/validation/validate_rw_task_complete.py" --requested "E5:S01:T01"
+
+# Kanban installer help (sanity check)
+python3 "packages/frameworks/kanban/scripts/install_kanban_framework.py" --help
 ```
+
+Test Release Workflow in your AI assistant (same message must include E…S…T… — **FR-060**): e.g. `RW E5:S01:T01` or `RW E5S01T01`.
 
 ---
 
-**Last Updated:** 2026-03-30  
+**Last Updated:** 2026-06-05 (E02:S14 install doc refresh — paths matrix cross-check)  
 **Repository:** https://github.com/RMS-Ltd/ai-dev-kit  
 **Documentation:** `docs/documentation/user-docs/`
 
