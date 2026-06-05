@@ -13,7 +13,8 @@ labels: ["bug", "github-actions", "workflow", "optimization", "notifications"]
 
 # Bug Report BR-052: GitHub Actions Workflow Optimization
 
-**Implementing Task:** [E02:S11:T14](../epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)
+**Implementing Task:** [E02:S11:T14](../epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)  
+**Implementation Plan:** [IPP-E02S11T14](../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)
 
 ## **Bug Summary**
 GitHub Actions workflow `fr-br-intake.yml` was generating unnecessary "No jobs were run" email notifications due to overly broad trigger conditions.
@@ -164,6 +165,24 @@ if: |
 - [GitHub Actions Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 - [Workflow Events Documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
 - [GitHub Actions Best Practices](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobs)
+
+## **E02:S11:T14 delivery (2026-06-05)**
+
+### Active workflow optimizations
+
+| Workflow | Change | Effect |
+| -------- | ------ | ------ |
+| `tests.yml` | Path filters + pip cache | Skips doc-only pushes; faster dependency install |
+| `workflow-scripts-pytest.yml` | Pip cache | Faster pytest gate setup |
+| `framework-release.yml` | Pip cache | Faster tag/dispatch release builds |
+
+### Intake re-enable deferral
+
+**Deferred** per [BR-053](BR-053-github-actions-workflow-push-trigger-bug.md): issue-only workflows still schedule on `push` events. BR-052 trigger optimizations are preserved in `.github/workflows/fr-br-intake.yml.DISABLED` (non-`.yml` extension) until evidence-based re-enable.
+
+**Verification:** `pytest tests/test_gha_workflow_br052.py`
+
+---
 
 ## **Resolution**
 

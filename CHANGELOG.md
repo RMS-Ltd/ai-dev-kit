@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.11.14+2] - 05-06-26
+
+E02:S11:T14 — **BR-052:** GHA workflow optimization — path filters + pip cache on active CI; BR-052 intake scope in disabled template. SemVer **v0.4.922+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.11.14+2.md)
+
+---
+
 ## [0.2.11.13+3] - 05-06-26
 
 E02:S11:T13 — **RW Step 7:** kboard/BR-051 four-surface reconciliation (deferred from +2). SemVer **v0.4.922+3**.

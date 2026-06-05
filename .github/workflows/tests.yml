@@ -1,12 +1,29 @@
 # E08:S03:T04 / BR-058 — repo-wide pytest gate for root tests/ suite.
+# E02:S11:T14 / BR-052 — path filters + pip cache to skip doc-only pushes.
 name: Tests
 
 "on":
   pull_request:
+    paths:
+      - "tests/**"
+      - "src/**"
+      - "packages/**"
+      - "pyproject.toml"
+      - "setup.py"
+      - "setup.cfg"
+      - ".github/workflows/tests.yml"
   push:
     branches:
       - main
       - dev
+    paths:
+      - "tests/**"
+      - "src/**"
+      - "packages/**"
+      - "pyproject.toml"
+      - "setup.py"
+      - "setup.cfg"
+      - ".github/workflows/tests.yml"
 
 permissions:
   contents: read
@@ -26,6 +43,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
 
       - name: Install test dependencies
         run: pip install -e ".[dev]"
