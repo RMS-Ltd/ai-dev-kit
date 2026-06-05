@@ -8,10 +8,12 @@ housekeeping_policy: keep
 
 # E5:S09:T11 – Planning: Spec, Tests, Implementation Plan (IPW)
 
+> **Deprecated:** Superseded by canonical **[IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md](IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)** (FR-094 / PLAN_DOC_TEMPLATE). Retained for inbound link stability; do not update this file for new planning.
+
 **Host Task:** [`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) **(E5:S09:T11)**  
 **Planning for:** [BR-068 – Docusaurus strict MDX / monorepo Markdown links](../project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)  
 **Related:** [FR-067](../project-management/kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md); [Story 009 – Docusaurus Documentation Portal](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md) (T08/T10 strict mode)  
-**Status:** Complete — **Waves 1–4 delivered** (2026-04-19); closing release **v0.5.9.11+5** (**RW** **`--art`**)
+**Status:** Superseded — **Waves 1–4** captured in [IPP-E05S09T11](IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md); Wave 5 adds regression guard
 
 ---
 

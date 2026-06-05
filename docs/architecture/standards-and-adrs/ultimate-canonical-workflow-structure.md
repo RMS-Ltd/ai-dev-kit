@@ -26,7 +26,7 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 
 **The Ultimate Canonical Workflow Structure:**
 
-> **Framework package (FR-050):** Under `packages/frameworks/workflow-mgt/workflows/`, each workflow lives in a **named subdirectory** with `workflow-registry.yaml` as discovery SoT. Legacy flat `workflows/*.yaml` files at the package root are **deprecated redirect stubs** only (E02:S13:T09). See [MIGRATION_GUIDE.md](../../../packages/frameworks/workflow-mgt/workflows/MIGRATION_GUIDE.md).
+> **Framework package (FR-050):** Under `packages/frameworks/workflow-mgt/workflows/`, each workflow lives in a **named subdirectory** with `workflow-registry.yaml` as discovery SoT. Legacy flat `workflows/*.yaml` files at the package root are **deprecated redirect stubs** only (E02:S13:T09). See [MIGRATION_GUIDE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/MIGRATION_GUIDE.md).
 
 ```
 {project-root}/
@@ -74,7 +74,7 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 
 ### 1.2 File Location
 
-**CANONICAL (framework package):** `packages/frameworks/workflow-mgt/workflows/{workflow-name}/{workflow-name}-workflow.yaml` per [FR-050](../../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md) and [`workflow-registry.yaml`](../../../packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml).
+**CANONICAL (framework package):** `packages/frameworks/workflow-mgt/workflows/{workflow-name}/{workflow-name}-workflow.yaml` per [FR-050](../../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md) and [`workflow-registry.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml).
 
 **CANONICAL (adopter project root):** `workflows/` directory — prefer nested subdirectories matching the framework layout; flat root YAML is legacy.
 
