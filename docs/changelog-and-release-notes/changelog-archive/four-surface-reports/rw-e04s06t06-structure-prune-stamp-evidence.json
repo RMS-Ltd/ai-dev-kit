@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E04:S06:T06": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.4.6.6+1 — BR-005 Fix 1 COMPLETE; prune C-band row to kanban-completed.md ledger"
+    }
+  }
+}

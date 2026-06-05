@@ -45,7 +45,7 @@ This enables projects to adopt ai-dev-kit with zero cognitive load for E/S/T str
 - [x] **E04:S06:T03 – Create story template files for each typical story** ✅ COMPLETE (v0.4.6.3+1 – All 62 story templates created for Epic 1-21)
 - [x] **E04:S06:T04 – Create task template files for each typical task** ✅ COMPLETE (v0.4.6.4+43 – All 378 canonical task templates generated, validated, sanitized, and duplicates cleaned up)
 - [x] **E04:S06:T05 – Create contextualization guide and examples** - ✅ COMPLETE (v0.4.6.5+1)
-- [x] **E04:S06:T06 – Update CANONICAL_EPICS.md to reference comprehensive structure (BR-005)** ✅ COMPLETE (v0.4.6.6+1)
+- [x] **E04:S06:T06 – Update CANONICAL_EPICS.md to reference comprehensive structure (BR-005)** ✅ COMPLETE (v0.4.6.6+1) — [task](story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md)
 - [x] **E04:S06:T07 – Integrate with template setup guide and installation workflow** - ✅ COMPLETE (v0.6.7.104+2 – Enhanced integration with setup guide, improved contextualization guide cross-references, comprehensive BR-009 validation completed)
 - [x] **E04:S06:T08 – Validate structure with test projects (tiny, small, ambitious)** - ✅ COMPLETE (v0.4.6.8+1 – Validation completed via contextualization examples: tiny-project, small-project, ambitious-project examples created and documented in T05)
 - [x] **E04:S06:T09 – BR-009: Improve installer discoverability and documentation** ✅ COMPLETE (v0.4.6.9+2)

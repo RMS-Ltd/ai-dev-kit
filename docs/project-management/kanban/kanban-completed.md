@@ -736,7 +736,7 @@ This document tracks all **completed tasks** across the AI Dev Kit project. Task
 - **E04:S06:T03** – Build Task templates - ✅ COMPLETE (v0.4.6.4+1)
 - **E04:S06:T04** – Create template validation - ✅ COMPLETE (v0.4.6.5+1)
 - **E04:S06:T05** – Implement template system - ✅ COMPLETE (v0.4.6.6+1)
-- **E04:S06:T06** – Create template documentation - ✅ COMPLETE (v0.4.6.7+1)
+- **E04:S06:T06** – BR-005: CANONICAL_EPICS.md gap closure (verification wave) - ✅ COMPLETE (v0.4.6.6+1) — [task](epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md) | [BR-005](fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
 - **E04:S06:T07** – Add template examples - ✅ COMPLETE (v0.4.6.8+1)
 - **E04:S06:T08** – Create template testing - ✅ COMPLETE (v0.4.6.8+1)
 - **E04:S06:T09** – Implement template distribution - ✅ COMPLETE (v0.4.6.8+1)

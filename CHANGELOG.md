@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.6.6+1] - 05-06-26
+
+E04:S06:T06 — **BR-005 Fix 1 verification:** CANONICAL_EPICS.md gap closure confirmed; discrete task doc + IPP; kanban four-surface reconciliation. SemVer **v0.4.911+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.6.6+1.md)
+
+---
+
 ## [0.2.16.4+30] - 05-06-26
 
 E02:S16:T04 — **UKW -c** V-band prune: **FR-106** IMPLEMENTED, **BR-082**/**BR-088** FIXED; operator verification closure. SemVer **v0.4.910+30**.

@@ -7,9 +7,9 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 """
 
 VERSION_RC = 0        # Release Candidate
-VERSION_EPIC = 2      # Epic 2 — Workflow Management Framework
-VERSION_STORY = 16     # Story 16 — Perpetual Ongoing Workflow Operations
-VERSION_TASK = 4       # Task 4 — Ad-hoc Kanban synchronization and hygiene (Perpetual)
-VERSION_BUILD = 30    # Build 30: UKW -c V-band prune — FR-106, BR-082, BR-088 verified
+VERSION_EPIC = 4      # Epic 4 — Kanban Framework
+VERSION_STORY = 6     # Story 6 — Comprehensive Canonical E/S/T Template System
+VERSION_TASK = 6      # Task 6 — BR-005 CANONICAL_EPICS.md gap verification closure
+VERSION_BUILD = 1     # Build 1: BR-005 Fix 1 verification + kanban reconciliation
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"
