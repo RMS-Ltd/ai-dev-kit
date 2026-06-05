@@ -1,0 +1,48 @@
+{
+  "rows": {
+    "E02:S13:T02": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S13:T03": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S13:T04": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S13:T05": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S13:T06": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S14:T01": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S14:T02": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S14:T03": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S14:T04": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S14:T05": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    },
+    "E02:S14:T06": {
+      "allowed": true,
+      "reason": "RW -k v0.2.13.2+0 \u2014 E02:S13:T02 kanban init row stamp + version context"
+    }
+  }
+}
