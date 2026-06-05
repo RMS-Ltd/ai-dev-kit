@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+34] - 05-06-26
+
+E02:S16:T04 — **Kanban sync:** E08:S03:T12–T14 → V band ⏳ WAITING (GH Code Quality re-scan). SemVer **v0.4.974+34**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+34.md)
+
+---
+
 ## [0.8.3.14+1] - 05-06-26
 
 E08:S03:T14 — **Change implemented:** Code Quality AI suggestions triage (**BR-101**, 12/14 applied). SemVer **v0.4.972+1**. AI panel 0-open pending GitHub dismiss.

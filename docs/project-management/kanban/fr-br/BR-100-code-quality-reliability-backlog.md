@@ -11,9 +11,9 @@ housekeeping_policy: keep
 **Bug ID:** BR-100  
 **Priority:** HIGH  
 **Severity:** HIGH — Code Quality **Reliability** score **Needs Improvement**; **133** open standard findings on `main` (2026-06-05).  
-**Status:** IN PROGRESS  
+**Status:** WAITING  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.13+1 — wave-1 remediation released; dashboard re-scan pending)  
+**Last updated:** 2026-06-05 (UKW -u — wave-1 shipped **v0.8.3.13+1**; GH Code Quality re-scan pending)  
 **Version:** v0.8.3.13+1  
 **Implementing Task:** [E08:S03:T13](../epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md)

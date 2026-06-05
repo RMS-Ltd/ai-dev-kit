@@ -1,0 +1,20 @@
+{
+  "rows": {
+    "E08:S03:T12": {
+      "allowed": true,
+      "reason": "RW -k v0.2.16.4+34 — C→V band WAITING; task doc + BR-099 reconciled"
+    },
+    "E08:S03:T13": {
+      "allowed": true,
+      "reason": "RW -k v0.2.16.4+34 — C→V band WAITING; task doc + BR-100 reconciled"
+    },
+    "E08:S03:T14": {
+      "allowed": true,
+      "reason": "RW -k v0.2.16.4+34 — C→V band WAITING; task doc + BR-101 reconciled"
+    },
+    "E02:S16:T04": {
+      "allowed": true,
+      "reason": "RW -k v0.2.16.4+34 — perpetual UKW anchor row version stamp"
+    }
+  }
+}

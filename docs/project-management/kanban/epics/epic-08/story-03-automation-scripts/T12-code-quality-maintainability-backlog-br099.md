@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 8, Story 3, Task 12: Code Quality maintainability backlog (**BR-099**)
 
 **Task ID:** E08:S03:T12  
-**Status:** IN PROGRESS  
+**Status:** WAITING  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.12+1 — wave-1 ruff remediation released; dashboard re-scan pending)  
+**Last updated:** 2026-06-05 (UKW -u — ⏳ WAITING on GH Code Quality re-scan; wave-1 **v0.8.3.12+1**)  
 **Version Anchor:** v0.8.3.12+1  
 **Version:** v0.8.3.12+1  
 **Code:** E08S03T12

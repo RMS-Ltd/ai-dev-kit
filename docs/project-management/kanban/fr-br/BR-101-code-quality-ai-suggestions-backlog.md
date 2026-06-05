@@ -11,9 +11,9 @@ housekeeping_policy: keep
 **Bug ID:** BR-101  
 **Priority:** LOW  
 **Severity:** LOW — **14** open AI-powered Code Quality suggestions on recently changed files (2026-06-05).  
-**Status:** IN PROGRESS  
+**Status:** WAITING  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.14+1 – RW E08:S03:T14 --art; panel 0-open pending GitHub dismiss)  
+**Last updated:** 2026-06-05 (UKW -u — **v0.8.3.14+1** shipped; GH Code Quality + AI panel dismiss pending)  
 **Version:** v0.8.3.14+1  
 **Implementing Task:** [E08:S03:T14](../epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (AI suggestions panel) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-100](BR-100-code-quality-reliability-backlog.md)
