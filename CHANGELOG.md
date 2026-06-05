@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.7+2] - 05-06-26
+
+E08:S03:T07 — **BR-092 docs:** Post-CI verification notes (run 26986650468; slug tests PASSED). SemVer **v0.4.890+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.7+2.md)
+
+---
+
 ## [0.8.3.7+1] - 05-06-26
 
 E08:S03:T07 — **BR-092:** Add `requests` to `[dev]` extras — Tests CI collection fix (348 tests green locally). SemVer **v0.4.890+1**.

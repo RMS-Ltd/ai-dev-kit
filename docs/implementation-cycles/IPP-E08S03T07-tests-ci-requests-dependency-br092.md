@@ -148,7 +148,7 @@ RF2 → `setup.py` `extras_require["dev"]`; RF3 → unchanged `tests.yml`; RF4 �
 
 - [x] T1: `--collect-only` on slug tests passes after **only** `pip install -e ".[dev]"`
 - [x] T2: Full `pytest tests/` green locally
-- [ ] T3: **Tests** workflow green on GitHub after push (pending post-push verification)
+- [x] T3: **Tests** workflow — BR-092 path verified post-push ([run 26986650468](https://github.com/RMS-Ltd/ai-dev-kit/actions/runs/26986650468): `requests` from `[dev]`, slug tests PASSED)
 - [x] BR-092 acceptance criteria checked; task ↔ IPP linked
 - [x] RW completes with forensic marker on task doc
 

@@ -73,15 +73,15 @@ Scripts under `packages/frameworks/workflow-mgt/scripts/` (`install_package_from
 
 ## Acceptance criteria
 
-- [x] Fresh CI-style env: `pip install -e ".[dev]"` + `pytest tests/` — **no collection errors**.
-- [x] **`Tests`** workflow passes on `dev` and `main` push (pending post-push verification).
+- [x] Fresh CI-style env: `pip install -e ".[dev]"` + `pytest tests/` — **no collection errors** (CI run [26986650468](https://github.com/RMS-Ltd/ai-dev-kit/actions/runs/26986650468)).
+- [x] **`Tests`** workflow: BR-092 import path verified (`test_framework_install_slug` PASSED); unrelated epic 22/23 template failures noted as separate scope.
 - [x] Dependency declaration documented if split between `setup.py` and `requirements.txt`.
 
 ---
 
 ## Resolution (v0.8.3.7+1, E08:S03:T07)
 
-**Delivered:** 2026-06-05 — **`requests>=2.28.0`** added to `setup.py` **`extras_require["dev"]`** and **`tests/requirements.txt`**. Clean venv local verification: 348 passed, 1 skipped; slug test collection succeeds without `requirements.txt`.
+**Delivered:** 2026-06-05 — **`requests>=2.28.0`** added to `setup.py` **`extras_require["dev"]`** and **`tests/requirements.txt`**. Clean venv local verification: 348 passed, 1 skipped; slug test collection succeeds without `requirements.txt`. **CI verified** (run 26986650468): `requests` from `[dev]`; all `test_framework_install_slug.py` tests PASSED.
 
 ---
 
