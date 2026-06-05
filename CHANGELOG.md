@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.14.6+1] - 05-06-26
+## [0.6.9.21+1] - 05-06-26
 
-E02:S14:T06 — **INSTALL_IN_YOUR_PROJECT.md refresh (wave 1):** two-phase install, CLI from source, versions/deferrals/ADR-018 fixes; matrix gap status updated. SemVer **v0.4.947+1**.
+E06:S09:T21 — **FR-110 intake:** lean adopter distribution FR + task; `greenfield-install/` curated-directory delivery model. Kanban-init release. SemVer **v0.4.948+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.14.6+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.21+1.md)
 
 ---
 
