@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 5, Story 9, Task 14: Docusaurus CI workflow deduplication (**BR-093**)
 
 **Task ID:** E05:S09:T14  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.5.9.14+0 — Kanban documentation setup)  
-**Version:** v0.5.9.14+0  
+**Last updated:** 2026-06-05 (v0.5.9.14+1 — IPW planning package persisted)  
+**Version:** v0.5.9.14+1  
 **Code:** E05S09T14
 
 **Upstream:** [BR-093 — Docusaurus CI duplicate build + deploy job waste](../../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)
@@ -24,6 +24,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
+- [IPP-E05S09T14 — Docusaurus CI workflow deduplication](../../../../../../docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) (IPW planning package)
 - [BR-093](../../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)
 - [`.github/workflows/docusaurus-build.yml`](../../../../../../.github/workflows/docusaurus-build.yml)
 - [`.github/workflows/docusaurus-deploy.yml`](../../../../../../.github/workflows/docusaurus-deploy.yml)
@@ -53,6 +54,7 @@ Eliminate duplicate **`npm ci` + `npm run build`** on `main` pushes:
 
 ## References
 
+- [IPP-E05S09T14 — Docusaurus CI workflow deduplication](../../../../../../docs/implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) (IPW planning package; ADR-017 draft in Appendix A)
 - [BR-093](../../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)
 - [BR-052](../../../fr-br/BR-052-github-actions-workflow-optimization.md)
 - [E05:S09:T05 — CI build gate](./T05-ci-build-gate-fr069.md)

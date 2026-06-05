@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.14+1] - 05-06-26
+
+E05:S09:T14 — **BR-093 IPW recovery:** Persist IPP planning package + task wiring (docs-only). SemVer **v0.4.892+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14+1.md)
+
+---
+
 ## [0.8.3.8+1] - 05-06-26
 
 E08:S03:T08 — **BR-094:** CodeQL parse failure fix — indent optional import in `git_tag_handler.py`. SemVer **v0.4.891+1**.
