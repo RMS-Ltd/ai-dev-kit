@@ -8,8 +8,8 @@ See: docs/governance/standards/dev-kit-versioning-policy.md
 
 VERSION_RC = 0        # Release Candidate
 VERSION_EPIC = 4      # Epic 4 — Kanban Framework
-VERSION_STORY = 6     # Story 6 — Comprehensive Canonical E/S/T Template System
-VERSION_TASK = 6      # Task 6 — BR-005 CANONICAL_EPICS.md gap verification closure
-VERSION_BUILD = 4     # Build 4: BR-005 Fix 1 verification + semver tag collision recovery
+VERSION_STORY = 11    # Story 11 — Kanban Granularity & Discrete Task Docs
+VERSION_TASK = 7      # Task 7 — Migrate Embedded Tasks to Discrete Task Documents (FR-016)
+VERSION_BUILD = 3     # Build 3: IPW consolidated IPP — phased migration plan
 
 VERSION_STRING = f"{VERSION_RC}.{VERSION_EPIC}.{VERSION_STORY}.{VERSION_TASK}+{VERSION_BUILD}"

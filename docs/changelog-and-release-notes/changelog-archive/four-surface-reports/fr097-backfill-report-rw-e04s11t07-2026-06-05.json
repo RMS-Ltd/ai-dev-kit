@@ -1,0 +1,24 @@
+{
+  "invocation": "rw_e04s11t07_ipp_release",
+  "timestamp_utc": "2026-06-05 03:39 UTC",
+  "boards": [
+    {
+      "board": "docs/project-management/kanban/kboard.md",
+      "dry_run": false,
+      "rows_changed": 1,
+      "results": [
+        {
+          "row_id": "E04:S11:T07",
+          "old_stamp": "2026-06-04 12:08 UTC",
+          "new_stamp": "2026-06-05 03:39 UTC",
+          "source": "doc",
+          "detail": "RW Step 7 substantive: task doc Last updated 2026-06-05; IPP wiring"
+        }
+      ]
+    }
+  ],
+  "E04:S11:T07": {
+    "allowed": true,
+    "reason": "Substantive RW Step 7 — task doc + IPP + FR-016 updated"
+  }
+}

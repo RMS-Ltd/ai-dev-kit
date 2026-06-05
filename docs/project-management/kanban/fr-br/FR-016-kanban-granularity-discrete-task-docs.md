@@ -205,21 +205,25 @@ This feature is needed:
 
 ## Implementation Notes
 
+**Planning package (E04:S11:T07):** [IPP-E04S11T07-fr016-discrete-task-docs-migration.md](../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) — consolidated IPW plan for phased migration of ~784 embedded tasks to discrete Task documents. Status: **IN PROGRESS** (v0.4.11.7+3 — IPP delivered; migration tooling pending).
+
 **Key Considerations:**
 1. Task docs can be either:
-   - Separate files (e.g., `Task-011-*.md`)
-   - Clearly delimited sections within Story docs (using Task ID as header)
+   - Separate files (e.g., `T{task:02d}-{slug}.md`) — **target state per IPP**
+   - Clearly delimited sections within Story docs (using Task ID as header) — **legacy; migration in progress**
 2. Doc-init (`+0`) must be supported for new Task docs (see FR-017)
 3. Validators must check:
    - Presence of Task doc
    - Epic/Story/Task alignment
    - Version anchor presence
-4. Potential tooling updates to auto-generate Task doc templates and enforce checks
+4. Migration tooling per IPP §4: `extract_embedded_tasks.py`, `generate_task_doc.py`, `update_story_refs.py`, `validate_migration.py`
 
 ---
 
 ## References
 
+- **IPP E04:S11:T07:** [`IPP-E04S11T07-fr016-discrete-task-docs-migration.md`](../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
+- **Migration plan:** [`migration-plan-embedded-to-discrete-tasks.md`](../epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md)
 - **FR-017:** Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T
 - **Versioning Policy:** `docs/VERSIONING_POLICY.md`
 - **RW Step 1 Procedure:** `docs/RW-STEP1-VERSION-BUMP-PROCEDURE.md`
