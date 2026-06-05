@@ -220,10 +220,11 @@ def main() -> int:
     parser.add_argument("--requested", required=True, help="E:S:T token from RW trigger")
     parser.add_argument("--art", action="store_true", help="Adopt requested E:S:T anchor")
     parser.add_argument(
+        "--dpz",
         "--doc-policy-zero",
         action="store_true",
         dest="doc_policy_zero",
-        help="Only when user typed --doc-policy-zero in RW trigger",
+        help="Explicit BUILD +0 override; user must type in RW trigger (--doc-policy-zero alias)",
     )
     parser.add_argument(
         "--perpetual-same-task",

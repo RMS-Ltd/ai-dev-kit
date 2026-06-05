@@ -23,7 +23,7 @@ This script is called by RW Step 8 to validate version bumping logic.
 Usage:
     python packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py [--strict] [--story-file PATH] [--version-file PATH]
     python packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py --requested E6:S06:T58 --art [--strict]
-    python .../validate_version_bump.py --strict --requested E2:S16:T03 --art --doc-policy-zero
+    python .../validate_version_bump.py --strict --requested E2:S16:T03 --art --dpz
       (explicit policy: docs-only BUILD +0 for an existing E/S/T anchor; see BR-067)
 
     --strict: Exit with error code if validation fails
@@ -1535,12 +1535,13 @@ def main():
         help="Adopt requested token as canonical anchor for this validation run.",
     )
     parser.add_argument(
+        "--dpz",
         "--doc-policy-zero",
         action="store_true",
         dest="doc_policy_zero",
         help=(
             "Allow BUILD +0 for an existing task when changes are docs-only (explicit policy; use with --requested and --art). "
-            "See BR-067."
+            "Alias: --doc-policy-zero. See BR-067."
         ),
     )
     args = parser.parse_args()

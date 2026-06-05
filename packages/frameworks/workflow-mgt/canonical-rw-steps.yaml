@@ -75,7 +75,7 @@ canonical_rw_steps:
   step_9:
     number: 9
     name: "Run Validators"
-    description: "branch, changelog, version_bump, check_changelog_size, archive_links, board_stamp_diff (FR-097), kanban_state_icons (UXR-012), release_readiness Gates 1-9; --art/--doc-policy-zero propagation"
+    description: "branch, changelog, version_bump, check_changelog_size, archive_links, board_stamp_diff (FR-097), kanban_state_icons (UXR-012), release_readiness Gates 1-9; --art/--dpz propagation (alias: --doc-policy-zero)"
     mandatory: true
     blocking: true
     category: "validation"

@@ -159,12 +159,12 @@ Load config. Read current version from `version_file`. Identify completed task f
 **🚨 BUILD resolver (BR-097 — run BEFORE writing `version_file`):**
 
 ```bash
-python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--doc-policy-zero] [--perpetual-same-task]
+python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--dpz] [--perpetual-same-task]
 ```
 
 - Non-zero exit → **RW ABORTED** at Step 2.
 - Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
-- `--doc-policy-zero` only if **user typed it** in trigger AND HEAD BUILD is untagged AND BUILD=0 path.
+- `--dpz` (alias: `--doc-policy-zero`) only if **user typed it** in trigger AND HEAD BUILD is untagged AND BUILD=0 path.
 
 **Finalize task_touch registry (when `semver_mapping_strategy: task_touch` — after `version_file` write, before changelog/README SemVer):**
 
@@ -174,7 +174,7 @@ python "packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_regi
 
 Stage `semver-registry.yaml` in the release commit. Step 9 `validate_task_touch_release_contract.py` blocks if the row is missing.
 
-**FORBIDDEN (BR-097):** Reusing tagged BUILDs; `git tag -f` / `git push -f` / `git push origin +v*` on release tags; inferring `--doc-policy-zero` from docs-only or COMPLETE status; post-ship verification waves with `--doc-policy-zero` (use `RW E:S:T --art`).
+**FORBIDDEN (BR-097):** Reusing tagged BUILDs; `git tag -f` / `git push -f` / `git push origin +v*` on release tags; inferring `--dpz` from docs-only or COMPLETE status; post-ship verification waves with `--dpz` / `--doc-policy-zero` (use `RW E:S:T --art`).
 
 **UKW/CMW context detection:** If RW was triggered immediately after UKW or CMW, attribute to the relevant perpetual task, pass `--perpetual-same-task`, and increment BUILD only.
 
@@ -223,7 +223,7 @@ git add -A
 ```bash
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py" --strict [--requested "<parsed_id>"] [--art]
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py"
-python "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py" --strict [--requested "<parsed_id>"] [--art] [--doc-policy-zero]
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py" --strict [--requested "<parsed_id>"] [--art] [--dpz]
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_release_tag_immutability.py" --strict [--journal "<rw_journal_path>"]
 python "packages/frameworks/workflow-mgt/scripts/changelog/check_changelog_size.py"
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_archive_links.py"
@@ -243,7 +243,7 @@ python "packages/frameworks/workflow-mgt/scripts/validation/validate_task_touch_
 
 If `--art` was in `$ARGUMENTS`, propagate `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`.
 
-For docs-only **BUILD +0** on an existing E/S/T, add `--doc-policy-zero` to `validate_version_bump.py` (see BR-067).
+For docs-only **BUILD +0** on an existing E/S/T, add `--dpz` to `validate_version_bump.py` (alias: `--doc-policy-zero`; see BR-067).
 
 `check_changelog_size.py` exit 1 is non-blocking — triggers Step 9.5.
 

@@ -641,12 +641,12 @@ For full RW / `RW -d`, releasable statuses are **IN PROGRESS**, **COMPLETE**, or
 **C.1. RESOLVE BUILD (BR-097 / E02:S01:T24 — before writing `version_file`):**
 
 ```bash
-python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--doc-policy-zero] [--perpetual-same-task]
+python "packages/frameworks/workflow-mgt/scripts/version/resolve_rw_build.py" --requested "<parsed_id>" [--art] [--dpz] [--perpetual-same-task]
 ```
 
 - Non-zero exit → **RW ABORTED** at Step 2 (do not edit changelogs or kanban).
 - Same E:S:T default: `BUILD = HEAD_BUILD + 1`.
-- **FORBIDDEN:** tagged BUILD reuse; `git tag -f` / force-push on release tags; inferred `--doc-policy-zero` for post-ship verification waves.
+- **FORBIDDEN:** tagged BUILD reuse; `git tag -f` / force-push on release tags; inferred `--dpz` for post-ship verification waves.
 
 **C.2. FINALIZE TASK_TOUCH REGISTRY (when `semver_mapping_strategy: task_touch` — after `version.py` write, before changelog/README SemVer):**
 
@@ -803,10 +803,10 @@ python "packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_regi
 
 When the task document **already exists** and the release is **docs-only** but policy requires **BUILD +0** (not the default +1 increment):
 
-1. **Trigger:** User invokes `RW -d E02:S16:Txx --art --doc-policy-zero` (or equivalent with `--doc-policy-zero` in the trigger message).
+1. **Trigger:** User invokes `RW -d E02:S16:Txx --art --dpz` (alias: `--doc-policy-zero`; or equivalent flag in the trigger message).
 2. **Step 2:** Set `VERSION_BUILD = 0` for the requested E/S/T anchor (same epic/story/task; do not advance task number).
-3. **Step 10:** Pass `--doc-policy-zero` to `validate_version_bump.py` alongside `--strict --requested "<token>" --art`.
-4. **Constraints:** Change set MUST remain docs-only; `--doc-policy-zero` requires both `--requested` and `--art`.
+3. **Step 10:** Pass `--dpz` to `validate_version_bump.py` alongside `--strict --requested "<token>" --art`.
+4. **Constraints:** Change set MUST remain docs-only; `--dpz` requires both `--requested` and `--art`.
 5. **Default without flag:** Existing task doc + docs-only → BUILD increments (+1) unless first-time doc-init detection applies.
 
 See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) and [workflow-initiation-cheatsheet.md](../../../../../../docs/guides/workflow-initiation-cheatsheet.md) §2.
@@ -1082,7 +1082,7 @@ See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br
 - **ALWAYS document your decision** - Show your work for traceability
 - See `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md` for error prevention reference
 - See `docs/project-management/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md` for doc-init requirements (FR-017)
-- See `docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md` for **BUILD +0 on existing E/S/T** via **`--doc-policy-zero`** (BR-067)
+- See `docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md` for **BUILD +0 on existing E/S/T** via **`--dpz`** (alias: `--doc-policy-zero`; BR-067)
 - See `docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md` for Task document requirements (FR-016)
 - See `docs/project-management/kanban/fr-br/FR-018-abstract-space-for-zero-numbered-est-docs.md` for abstract space concept (FR-018)
 
@@ -2146,7 +2146,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
      - `python {scripts_path}/validation/validate_changelog_format.py --strict` (script automatically reads `rw-config.yaml` if available)
      - `python {scripts_path}/validation/validate_version_bump.py --strict` (default)
      - `python {scripts_path}/validation/validate_version_bump.py --strict --requested "<token>" --art` (if RW trigger used `--art`)
-     - `python {scripts_path}/validation/validate_version_bump.py --strict --requested "<token>" --art --doc-policy-zero` (if RW trigger used **`--doc-policy-zero`** for docs-only **+0** on existing E/S/T; see BR-067)
+     - `python {scripts_path}/validation/validate_version_bump.py --strict --requested "<token>" --art --dpz` (if RW trigger used **`--dpz`** for docs-only **+0** on existing E/S/T; see BR-067)
      - `python {scripts_path}/changelog/check_changelog_size.py` (script automatically reads `rw-config.yaml` if available)
      - `python {scripts_path}/validation/validate_changelog_archive_links.py` (non-blocking; reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers)
      - `python {scripts_path}/validation/validate_board_stamp_diff.py --before <snapshot_dir>/kboard.md --after <kanban_root>/kboard.md --strict` (repeat for `kboard.md`; FR-097)

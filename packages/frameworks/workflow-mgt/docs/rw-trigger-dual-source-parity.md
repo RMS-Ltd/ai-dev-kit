@@ -38,10 +38,10 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 - [ ] **Script paths** — Example commands use `packages/frameworks/workflow-mgt/scripts/validation/` (or project-customized paths in consumer repos).
 - [ ] **Changelog / claims** — No “verified fixed” language unless policy allows; align with vwmp release guide.
 - [ ] **BR-074 (Step 3 + Step 9)** — Step 3 changelog creation includes “never overwrite existing archive changelog” and “use post-bump version in header” guards. Step 9 validator list includes `validate_changelog_archive_links.py` (non-blocking).
-- [ ] **FR-097 / FR-092 (Step 9)** — Step 9 includes `check_changelog_size.py` (non-blocking; triggers 9.5), `validate_board_stamp_diff.py` (**blocking**, Step 7 snapshots), `validate_kanban_state_icons.py` (**strict**), `validate_release_readiness.py` Gates 1–9; `--doc-policy-zero` on `validate_version_bump.py` when applicable.
+- [ ] **FR-097 / FR-092 (Step 9)** — Step 9 includes `check_changelog_size.py` (non-blocking; triggers 9.5), `validate_board_stamp_diff.py` (**blocking**, Step 7 snapshots), `validate_kanban_state_icons.py` (**strict**), `validate_release_readiness.py` Gates 1–9; `--dpz` (alias: `--doc-policy-zero`) on `validate_version_bump.py` when applicable.
 - [ ] **Step 9.5 / 9.6 / 12.5 / 13** — Portable excerpt and `.claude/commands/rw.md` document CMW 9.5, IDE 9.6, GitHub release 12.5, Housekeeping 13 consistent with root `.cursorrules`.
 - [ ] **Step 7 FR-092** — Scoped kanban self-sufficient wording (four-surface contract; no UKW handoff debt) in portable excerpt.
-- [ ] **`.claude/commands/rw.md`** — Step 9 command block matches portable excerpt validator set and `--art` / `--doc-policy-zero` propagation.
+- [ ] **`.claude/commands/rw.md`** — Step 9 command block matches portable excerpt validator set and `--art` / `--dpz` propagation.
 - [ ] **BR-097 (Step 2 + Step 9/11)** — `resolve_rw_build.py` before `version.py` write; `finalize_rw_semver_registry.py` after `version.py` when `task_touch`; FORBIDDEN force-tag list; `validate_release_tag_immutability.py` + `validate_task_touch_release_contract.py` in Step 9; Step 11 never `git tag -f`; task_touch SemVer collision recovery ≠ BUILD-only.
 - [ ] **Numbering** — Root `.cursorrules` may label gates **6b/6c/6d**; the portable file may use **5b/5c/5d**. That difference is **cosmetic** if prose and commands match.
 
@@ -108,7 +108,7 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 | Step 2 BUILD | Agent-inferred BUILD / doc-only skip | `resolve_rw_build.py` mandatory before `version.py` write; FORBIDDEN force-tag + tagged BUILD reuse |
 | Step 9 validators | No tag immutability scan | `validate_release_tag_immutability.py` added (blocking) |
 | Step 11 | No explicit force-tag ban | FORBIDDEN `git tag -f` / force-push on release tags |
-| IPW / PLAN template | Could prescribe post-ship `--doc-policy-zero` | Verification/FBU waves: `RW E:S:T --art` only |
+| IPW / PLAN template | Could prescribe post-ship `--dpz` | Verification/FBU waves: `RW E:S:T --art` only |
 
 **Versioning note:** Forensic release target **v0.2.1.24+1** via `RW E02:S01:T24 --art`.
 

@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.19+2] - 05-06-26
+
+E02:S16:T19 — **Change implemented:** RW `--dpz` short flag; `--doc-policy-zero` alias in parsers, tests, cheatsheet, agent SoT. SemVer **v0.4.976+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.19+2.md)
+
+---
+
 ## [0.2.16.19+1] - 05-06-26
 
 E02:S16:T19 — **Intake:** UXR-022 RW `--dpz` short flag (`--doc-policy-zero` alias); task + kanban wiring. SemVer **v0.4.975+1**.

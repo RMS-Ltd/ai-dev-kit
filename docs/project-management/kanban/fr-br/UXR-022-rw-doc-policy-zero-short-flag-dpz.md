@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User  
 **Priority:** MEDIUM  
-**Status:** ACCEPTED  
+**Status:** COMPLETE  
 **Code:** UXR-022  
 
 **Implementing Task:** [E02:S16:T19](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md)
@@ -92,12 +92,12 @@ Renaming the **surface token** does not change policy; cheatsheet and agent docs
 
 ## Recommendations
 
-- [ ] **R1 — Canonical short flag:** Add **`--dpz`** as the **preferred** RW trigger token for BUILD +0 explicit override (same semantics as `--doc-policy-zero`).
-- [ ] **R2 — Backward compatibility:** Parsers and validators accept **both** `--dpz` and `--doc-policy-zero`; do not remove the long form in v1.
-- [ ] **R3 — Cheatsheet update (mandatory):** Update [`docs/guides/workflow-initiation-cheatsheet.md`](../../../guides/workflow-initiation-cheatsheet.md) — primary human quick-reference under `docs/guides/` ([UXR-015](UXR-015-workflow-initiation-cheatsheet.md)). See **Proposed cheatsheet updates** below.
-- [ ] **R3b — Write-default in agent SoT:** `.cursorrules`, `.claude/commands/rw.md`, and RW execution guides show `--dpz` first with long-form alias in parentheses.
-- [ ] **R4 — Script parity:** Update `resolve_rw_build.py` and `validate_version_bump.py` argparse + tests; mirror `greenfield-install/` packaged copies.
-- [ ] **R5 — Dual-source parity:** Update `cursorrules-rw-trigger-section.md` and `rw-trigger-dual-source-parity.md` checklist per FR-060 maintainer contract.
+- [x] **R1 — Canonical short flag:** Add **`--dpz`** as the **preferred** RW trigger token for BUILD +0 explicit override (same semantics as `--doc-policy-zero`).
+- [x] **R2 — Backward compatibility:** Parsers and validators accept **both** `--dpz` and `--doc-policy-zero`; do not remove the long form in v1.
+- [x] **R3 — Cheatsheet update (mandatory):** Update [`docs/guides/workflow-initiation-cheatsheet.md`](../../../guides/workflow-initiation-cheatsheet.md) — primary human quick-reference under `docs/guides/` ([UXR-015](UXR-015-workflow-initiation-cheatsheet.md)). See **Proposed cheatsheet updates** below.
+- [x] **R3b — Write-default in agent SoT:** `.cursorrules`, `.claude/commands/rw.md`, and RW execution guides show `--dpz` first with long-form alias in parentheses.
+- [x] **R4 — Script parity:** Update `resolve_rw_build.py` and `validate_version_bump.py` argparse + tests; mirror `greenfield-install/` packaged copies.
+- [x] **R5 — Dual-source parity:** Update `cursorrules-rw-trigger-section.md` and `rw-trigger-dual-source-parity.md` checklist per FR-060 maintainer contract.
 
 **Priority order:**
 
@@ -171,11 +171,11 @@ Add row if not redundant with existing `-d` row:
 
 ## Acceptance criteria (implementation — E02:S16:T19)
 
-- [ ] **AC1:** `resolve_rw_build.py` and `validate_version_bump.py` accept `--dpz` and `--doc-policy-zero` with identical behavior.
-- [ ] **AC2:** Unit tests cover both flag forms (at least one positive and one blocked path per script).
-- [ ] **AC3:** `docs/guides/workflow-initiation-cheatsheet.md` updated per **Proposed cheatsheet updates** — `--dpz` primary in §2 RW matrix; `--doc-policy-zero` documented as alias; header/footer provenance includes UXR-022 / T19.
-- [ ] **AC4:** `.cursorrules`, `rw.md`, and RW execution guide use `--dpz` with alias note; dual-source parity doc updated.
-- [ ] **AC5:** UXR-022 ↔ E02:S16:T19 bidirectional links and story checklist entry present.
+- [x] **AC1:** `resolve_rw_build.py` and `validate_version_bump.py` accept `--dpz` and `--doc-policy-zero` with identical behavior.
+- [x] **AC2:** Unit tests cover both flag forms (at least one positive and one blocked path per script).
+- [x] **AC3:** `docs/guides/workflow-initiation-cheatsheet.md` updated per **Proposed cheatsheet updates** — `--dpz` primary in §2 RW matrix; `--doc-policy-zero` documented as alias; header/footer provenance includes UXR-022 / T19.
+- [x] **AC4:** `.cursorrules`, `rw.md`, and RW execution guide use `--dpz` with alias note; dual-source parity doc updated.
+- [x] **AC5:** UXR-022 ↔ E02:S16:T19 bidirectional links and story checklist entry present.
 
 ---
 
@@ -212,7 +212,7 @@ Add row if not redundant with existing `-d` row:
 - Epic: 2 — Workflow Management Framework  
 - Story: 16 — Perpetual ongoing workflow operations  
 - Task: 19 — RW `--dpz` short flag for doc-policy-zero (UXR-022)  
-- Version: v0.2.16.19+1 (intake release)
+- Version: v0.2.16.19+2 (implementation complete)
 
 **Kanban links:**
 

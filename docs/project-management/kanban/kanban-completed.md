@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E02:S16:T19](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md)** — RW `--dpz` short flag for doc-policy-zero (UXR-022): parsers, tests, cheatsheet, agent SoT.
+  **Completed:** `2026-06-05T15:12:49Z` | **Version:** `v0.2.16.19+2` | **Agent:** `RW E02:S16:T19 --art` | [UXR-022](fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) | [IPP](../../implementation-cycles/IPP-E02S16T19-rw-dpz-short-flag-uxr022.md)
+
 - **[E06:S09:T24](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md)** — Acquisition-layer ADK error codes (registry 1.1.0 I05/I06, `verify_vendor_tree.py`, CLI I06, doc-sync CI guard).
   **Completed:** `2026-06-05T15:30:00Z` | **Version:** `v0.6.9.24+2` | **Agent:** `RW E06:S09:T24 --art` | [T24](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) | [FR-111](fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) | [IPP](../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
 

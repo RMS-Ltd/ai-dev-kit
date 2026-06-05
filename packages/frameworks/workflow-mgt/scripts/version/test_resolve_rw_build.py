@@ -156,6 +156,62 @@ def test_art_cross_task_uses_max_tagged_build(monkeypatch):
             os.chdir(orig)
 
 
+def test_dpz_alias_untagged_build_zero(monkeypatch):
+    """T1 (--dpz): same as --doc-policy-zero on untagged BUILD=0 path."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = Path(tmpdir)
+        version_rel = "src/proj/version.py"
+        orig = os.getcwd()
+        try:
+            os.chdir(tmp)
+            _git_init_with_version(tmp, version_rel)
+            vf = tmp / version_rel
+            vf.write_text(vf.read_text().replace("VERSION_BUILD = 2", "VERSION_BUILD = 0"))
+            subprocess.run(["git", "add", vf], cwd=tmp, check=True, capture_output=True)
+            subprocess.run(["git", "commit", "-m", "build0"], cwd=tmp, check=True, capture_output=True)
+            monkeypatch.setattr(rrb, "git_ref_exists", lambda _ref: False)
+            ok, payload, errors = rrb.resolve_rw_build(
+                vf, "E05:S09:T14", art=True, doc_policy_zero=True
+            )
+            assert ok, errors
+            assert payload["next_build"] == 0
+            assert payload["doc_policy_zero"] is True
+        finally:
+            os.chdir(orig)
+
+
+def test_dpz_cli_alias_blocked_when_tag_exists(monkeypatch):
+    """T2 (--dpz CLI): tagged HEAD + --dpz → fail."""
+    script = script_dir / "resolve_rw_build.py"
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = Path(tmpdir)
+        version_rel = "src/proj/version.py"
+        orig = os.getcwd()
+        try:
+            os.chdir(tmp)
+            _git_init_with_version(tmp, version_rel)
+            subprocess.run(["git", "tag", "v0.5.9.14+2"], cwd=tmp, check=True, capture_output=True)
+            (tmp / "rw-config.yaml").write_text(f"version_file: {version_rel}\n")
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(script),
+                    "--requested",
+                    "E05:S09:T14",
+                    "--art",
+                    "--dpz",
+                    "--project-root",
+                    str(tmp),
+                ],
+                capture_output=True,
+                text=True,
+            )
+            assert result.returncode != 0
+            assert "Tagged BUILD reuse blocked" in result.stderr or "Tagged BUILD reuse blocked" in result.stdout
+        finally:
+            os.chdir(orig)
+
+
 def test_cli_json_output(monkeypatch, tmp_path):
     vf = tmp_path / "src" / "fynd_deals" / "version.py"
     _write_version(vf, epic=2, story=1, task=24, build=0)

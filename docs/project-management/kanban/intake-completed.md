@@ -33,6 +33,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| UXR-022 | UXR | RW `--dpz` short flag for doc-policy-zero — COMPLETE (**E02:S16:T19**) | 2026-06-05T15:12:49Z | v0.2.16.19+2 | RW E02:S16:T19 --art |
 | BR-007 | BR | Multiple bugs Kanban package installation — FIXED (**E04:S09:T01**) | 2026-06-05T12:30:00Z | v0.4.9.1+1 | RW --art |
 | FR-106 | FR | Packaged workflows sync with live repo spec — IMPLEMENTED (**E02:S13:T08**) | 2026-06-05T20:30:00Z | v0.2.13.8+2 | UKW -c |
 | BR-082 | BR | RW install PyYAML preflight — FIXED (**E06:S09:T11**; #14 closed) | 2026-06-05T20:30:00Z | v0.6.9.11+2 | UKW -c |

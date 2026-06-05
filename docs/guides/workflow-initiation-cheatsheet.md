@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Workflow initiation cheatsheet
 
-**Last verified against:** 2026-05-30 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` / ADR-009; FR-102 `UKW -c` / ADR-010; BR-067 `RW -d --doc-policy-zero`)
+**Last verified against:** 2026-06-05 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` / ADR-009; FR-102 `UKW -c` / ADR-010; BR-067 `RW -d --dpz`; UXR-022)
 
 > **Agent source of truth:** If this cheatsheet and [`.cursorrules` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) or [`.claude/commands/` (source)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/.claude/commands) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
-**Task:** [E02:S16:T15](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
+**Task:** [E02:S16:T15](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md) · [E02:S16:T19](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md) · [UXR-022](../project-management/kanban/fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
 
 ---
 
@@ -38,10 +38,10 @@ housekeeping_policy: keep
 | Invocation | Meaning |
 | ---------- | ------- |
 | `RW E02:S16:T15` / `/rw E02:S16:T15` | Full release (version, changelog, kanban, commit, tag, push) |
-| `RW -d E02:S16:T15` | **Docs-only release** (documentation path; not kanban drift repair). On an **existing** E:S:T use `--art` and optionally `--doc-policy-zero` (BUILD +0 policy; see [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
+| `RW -d E02:S16:T15` | **Docs-only release** (documentation path; not kanban drift repair). On an **existing** E:S:T use `--art` and optionally `--dpz` (`--doc-policy-zero` alias; BUILD +0 policy; see [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
 | `RW -k E02:S16:T15` | Kanban-init release |
 | `… --art` | Adopt requested E:S:T as canonical version anchor |
-| `… --doc-policy-zero` | BUILD +0 only when **you** typed it, HEAD BUILD is **untagged**, and BUILD=0 doc-init path ([BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
+| `… --dpz` | BUILD +0 only when **you** typed it, HEAD BUILD is **untagged**, and BUILD=0 doc-init path (alias: `--doc-policy-zero`; [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
 | `… --confirmed-override` | Step 1d intent override (after explicit user confirmation) |
 
 **Same-task follow-on release (BR-097):** Default is **BUILD +1** (`RW E02:S16:T15 --art`). Never reuse a tagged BUILD; never `git tag -f` on release tags — bump BUILD and re-RW instead.
@@ -77,6 +77,7 @@ housekeeping_policy: keep
 | Flag | Workflow | Meaning |
 | ---- | -------- | ------- |
 | `-d` | **RW** | Docs-only **release** |
+| `--dpz` | **RW** | **D**oc-**p**olicy-**z**ero — explicit BUILD +0 override (alias: `--doc-policy-zero`) |
 | `-a` | **UKW** | Assign **priorities** to targets |
 | `-ad` | **UKW** (planned) | **Address** kanban **d**rift vs project state |
 | `--rp` | **UKW** | **RePrioritise** — standalone deep MoSCOW reorder (not `RW -d`, not `UKW -a`; distinct from `UKW -p`) |

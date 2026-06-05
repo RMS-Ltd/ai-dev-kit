@@ -9,13 +9,17 @@ housekeeping_policy: keep
 # Epic 2, Story 16, Task 19: RW `--dpz` short flag for doc-policy-zero (UXR-022)
 
 **Task ID:** E02:S16:T19  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Small  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.2.16.19+1** — UXR-022 intake release)  
-**Version Anchor:** v0.2.16.19+1  
+**Last updated:** 2026-06-05 (RW **v0.2.16.19+2** — UXR-022 implementation complete)  
+**Version Anchor:** v0.2.16.19+2
+
+✅ COMPLETE (v0.2.16.19+2)  
 **Code:** E02S16T19  
+
+**Planning package:** [`IPP-E02S16T19-rw-dpz-short-flag-uxr022.md`](../../../../../implementation-cycles/IPP-E02S16T19-rw-dpz-short-flag-uxr022.md)
 
 **Upstream:** [UXR-022 — RW `--doc-policy-zero` short flag (`--dpz`)](../../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
 
@@ -23,6 +27,7 @@ housekeeping_policy: keep
 
 ## Input
 
+- [IPP-E02S16T19-rw-dpz-short-flag-uxr022.md](../../../../../implementation-cycles/IPP-E02S16T19-rw-dpz-short-flag-uxr022.md) — IPW planning package.
 - [UXR-022](../../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) findings and recommendations (R1–R5).
 - [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) — BUILD +0 policy semantics (unchanged).
 - [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) — tagged BUILD / inference guards.
@@ -59,16 +64,17 @@ The RW explicit BUILD +0 override flag `--doc-policy-zero` is semantically corre
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Both scripts accept `--dpz` and `--doc-policy-zero` with identical behavior.
-- [ ] **AC2:** Unit tests cover both flag forms (positive + blocked paths).
-- [ ] **AC3:** `docs/guides/workflow-initiation-cheatsheet.md` matches UXR-022 **Proposed cheatsheet updates** (§2 matrix, header, UXR-022/T19 footer).
-- [ ] **AC4:** `.cursorrules` and `rw.md` updated; dual-source parity doc/checklist aligned.
-- [ ] **AC5:** UXR-022 ↔ E02:S16:T19 bidirectional links and story checklist entry present.
+- [x] **AC1:** Both scripts accept `--dpz` and `--doc-policy-zero` with identical behavior.
+- [x] **AC2:** Unit tests cover both flag forms (positive + blocked paths).
+- [x] **AC3:** `docs/guides/workflow-initiation-cheatsheet.md` matches UXR-022 **Proposed cheatsheet updates** (§2 matrix, header, UXR-022/T19 footer).
+- [x] **AC4:** `.cursorrules` and `rw.md` updated; dual-source parity doc/checklist aligned.
+- [x] **AC5:** UXR-022 ↔ E02:S16:T19 bidirectional links and story checklist entry present.
 
 ---
 
 ## References
 
+- [IPP-E02S16T19-rw-dpz-short-flag-uxr022.md](../../../../../implementation-cycles/IPP-E02S16T19-rw-dpz-short-flag-uxr022.md)
 - [UXR-022](../../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
 - [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
 - [UXR-015](../../../fr-br/UXR-015-workflow-initiation-cheatsheet.md)

@@ -7,6 +7,7 @@ Task: T01 - Update Packaged RW to Handle UKW Context and Perpetual Tasks
 """
 
 import os
+import subprocess
 import sys
 import tempfile
 from pathlib import Path
@@ -574,6 +575,61 @@ def test_validate_tagged_build_collision_blocks_unchanged_build_when_tag_exists(
     assert ok2, errs2
 
 
+def test_validate_version_bump_doc_policy_zero_dpz_alias():
+    """T3 (--dpz): BUILD +0 with existing T103 doc passes (alias of --doc-policy-zero)."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = Path(tmpdir)
+        orig_cwd = os.getcwd()
+        try:
+            os.chdir(tmp)
+            version_dir = tmp / "src" / "proj"
+            version_dir.mkdir(parents=True)
+            version_file = version_dir / "version.py"
+            version_file.write_text("""
+VERSION_RC = 0
+VERSION_EPIC = 6
+VERSION_STORY = 7
+VERSION_TASK = 103
+VERSION_BUILD = 0
+VERSION_STRING = "0.6.7.103+0"
+""")
+            story2_dir = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-02"
+            task2_dir = story2_dir / "story-16-perpetual-ongoing-workflow-operations"
+            task2_dir.mkdir(parents=True)
+            story2_file = story2_dir / "story-16-perpetual-ongoing-workflow-operations.md"
+            story2_file.write_text("""
+# Story 016
+## Task Checklist
+- [ ] **E2:S16:T03** – Workflow maintenance - IN PROGRESS
+""")
+            task2_file = task2_dir / "T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md"
+            task2_file.write_text("""
+# Task 3
+**Status:** IN PROGRESS
+**Task Type:** Perpetual Maintenance
+**Task ID:** E2:S16:T03
+## Acceptance Criteria
+- [x] Done
+""")
+            config = {
+                "version_file": "src/proj/version.py",
+                "use_kanban": True,
+                "kanban_root": "docs/project-management/kanban",
+                "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
+            }
+            is_valid, errors = validate_version_bump(
+                version_file,
+                story_file=story2_file,
+                config=config,
+                requested="E2:S16:T03",
+                art=True,
+                doc_policy_zero=True,
+            )
+            assert is_valid, f"--dpz parity (--doc-policy-zero dest): {errors}"
+        finally:
+            os.chdir(orig_cwd)
+
+
 def test_doc_policy_zero_rejected_when_build_ge_one():
     """BR-097 RF7: --doc-policy-zero must fail when VERSION_BUILD >= 1."""
     with tempfile.TemporaryDirectory() as tmpdir:
@@ -610,6 +666,63 @@ def test_doc_policy_zero_rejected_when_build_ge_one():
             )
             assert not is_valid
             assert any("doc-policy-zero blocked" in e for e in errors)
+        finally:
+            os.chdir(orig_cwd)
+
+
+def test_doc_policy_zero_dpz_cli_alias_rejected_when_build_ge_one():
+    """T4 (--dpz CLI): BR-097 blocks --dpz when VERSION_BUILD >= 1."""
+    script = Path(__file__).resolve().parent / "validate_version_bump.py"
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = Path(tmpdir)
+        orig_cwd = os.getcwd()
+        try:
+            os.chdir(tmp)
+            version_dir = tmp / "src" / "proj"
+            version_dir.mkdir(parents=True)
+            version_file = version_dir / "version.py"
+            version_file.write_text(
+                "VERSION_RC = 0\nVERSION_EPIC = 5\nVERSION_STORY = 9\n"
+                "VERSION_TASK = 14\nVERSION_BUILD = 2\n"
+            )
+            story_dir = tmp / "docs" / "kanban" / "epics" / "epic-05"
+            story_dir.mkdir(parents=True)
+            story_file = story_dir / "Story-009-test.md"
+            story_file.write_text(
+                "## Task Checklist\n- [x] **E05:S09:T14** — Done ✅ COMPLETE\n"
+            )
+            task_dir = story_dir / "story-09-docusaurus"
+            task_dir.mkdir(parents=True)
+            task_doc = task_dir / "T14-test.md"
+            task_doc.write_text(
+                "**Task ID:** E05:S09:T14\n**Scope:** test\n**Deliverable:** test\n"
+                "**Version Anchor:** v0.5.9.14+2\n**Status:** COMPLETE\n"
+            )
+            (tmp / "rw-config.yaml").write_text(
+                "version_file: src/proj/version.py\nuse_kanban: true\n"
+                "kanban_root: docs/kanban\nstory_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md\n"
+            )
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(script),
+                    "--strict",
+                    "--requested",
+                    "E05:S09:T14",
+                    "--art",
+                    "--dpz",
+                    "--version-file",
+                    str(version_file),
+                    "--story-file",
+                    str(story_file),
+                ],
+                capture_output=True,
+                text=True,
+                cwd=tmp,
+            )
+            assert result.returncode != 0
+            combined = result.stdout + result.stderr
+            assert "doc-policy-zero blocked" in combined or "--dpz" in combined
         finally:
             os.chdir(orig_cwd)
 
