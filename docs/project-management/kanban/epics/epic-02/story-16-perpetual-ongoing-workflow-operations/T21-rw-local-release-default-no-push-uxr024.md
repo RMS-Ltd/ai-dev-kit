@@ -13,10 +13,10 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW **v0.2.16.21+1** — UXR-024 documentation wave released locally)  
-**Version Anchor:** v0.2.16.21+1
+**Last updated:** 2026-06-05 (RW E02:S16:T21 — UXR-024 doc link hygiene)  
+**Version Anchor:** v0.2.16.21+2
 
-✅ COMPLETE (v0.2.16.21+1)  
+✅ COMPLETE (v0.2.16.21+2)  
 **Code:** E02S16T21  
 
 **Upstream:** [UXR-024 — RW local-release default; operator batch push](../../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)

@@ -14,11 +14,11 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IMPLEMENTED (doc policy — verify operator batch-push workflow)  
 **Code:** UXR-024  
-**Version:** v0.2.16.21+1  
+**Version:** v0.2.16.21+2  
 
 **Implementing Task:** [E02:S16:T21](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md)
 
-**Related:** [FR-048](FR-048-rw-trigger-extensions-for-multiple-use-cases.md) (`RW -d` skips push — mode-specific only), [agent-network-access ADR](../../architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md) (previously rejected skip-push), [BR-097](BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) (tag immutability; batch push must not force-move tags), [workflow-initiation-cheatsheet](../../guides/workflow-initiation-cheatsheet.md)
+**Related:** [FR-048](FR-048-rw-trigger-extensions-for-multiple-use-cases.md) (`RW -d` skips push — mode-specific only), [agent-network-access ADR](../../../architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md) (previously rejected skip-push), [BR-097](BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) (tag immutability; batch push must not force-move tags), [workflow-initiation-cheatsheet](../../../guides/workflow-initiation-cheatsheet.md)
 
 ---
 
@@ -50,7 +50,7 @@ Release Workflow runs **frequently** during active development. Pushing to GitHu
 
 - Live `.cursorrules` / `.claude/commands/rw.md` — Step 12 mandatory push
 - [FR-048](FR-048-rw-trigger-extensions-for-multiple-use-cases.md) — push skip only on `RW -d` / partial `RW -k`
-- [agent-network-access-and-git-push-limitations.md](../../architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md) — Option 3 “Skip push in RW” previously rejected
+- [agent-network-access-and-git-push-limitations.md](../../../architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md) — Option 3 “Skip push in RW” previously rejected
 - `push_rw_release.py` — release-scoped tag push helper
 
 ---
@@ -73,7 +73,7 @@ Steps 1–11 produce version anchors, changelogs, kanban reconciliation, **local
 
 ### Finding 3: Prior ADR rejection is superseded by operator policy (Severity: Low)
 
-[agent-network-access ADR](../../architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md) rejected “skip push” to avoid incomplete automation. UXR-024 reframes: **local-complete is the default success state**; push is **operator-scheduled** or **`--push` opt-in**.
+[agent-network-access ADR](../../../architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md) rejected “skip push” to avoid incomplete automation. UXR-024 reframes: **local-complete is the default success state**; push is **operator-scheduled** or **`--push` opt-in**.
 
 ---
 

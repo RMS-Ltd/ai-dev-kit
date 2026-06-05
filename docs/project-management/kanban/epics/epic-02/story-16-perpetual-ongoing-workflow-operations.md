@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-05 (RW E02:S16:T20 — UXR-023 doc link hygiene)
-**Version:** v0.2.16.20+3
+**Last updated:** 2026-06-05 (RW E02:S16:T21 — UXR-024 doc link hygiene)
+**Version:** v0.2.16.21+2
 **Code:** E2S16
 
 ---
@@ -85,7 +85,7 @@ Story 016 remains the operational home for perpetual workflow work. **T04** RW *
 - [x] **E02:S16:T20 – Restore kboard IPP segment on MoSCOW rows (UXR-023)** - ✅ COMPLETE (**v0.2.16.20+3** — normalizer, validator, corpus repair + doc link hygiene)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md`](story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](../../fr-br/UXR-023-kboard-ipp-segment-regression.md) | [IPP](../../../../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)
 
-- [x] **E02:S16:T21 – RW local-release default — no push; operator batch push (UXR-024)** - ✅ COMPLETE (**v0.2.16.21+1** — doc policy + local RW demo)  
+- [x] **E02:S16:T21 – RW local-release default — no push; operator batch push (UXR-024)** - ✅ COMPLETE (**v0.2.16.21+2** — doc policy + doc link hygiene)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md`](story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md) | [UXR-024](../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
 
 ---
