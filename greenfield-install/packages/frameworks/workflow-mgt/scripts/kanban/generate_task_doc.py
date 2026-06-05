@@ -71,7 +71,7 @@ def render_task_document(
         "",
         "## Task ID",
         "",
-        f"**Format:** `E{{epic}}:S{{story}}:T{{task}}`",
+        "**Format:** `E{epic}:S{story}:T{task}`",
         "",
         f"**Full Task ID:** `{est}`",
         "",

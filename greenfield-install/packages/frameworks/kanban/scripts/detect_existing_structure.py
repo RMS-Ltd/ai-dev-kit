@@ -315,7 +315,7 @@ def main():
         print(f"Conflicts identified: {summary['conflict_count']}")
         
         if summary['conflict_count'] > 0:
-            print(f"\n⚠️  Conflicts detected! Review report for details.")
+            print("\n⚠️  Conflicts detected! Review report for details.")
     print(f"\nFull report written to: {output_path}")
     print(f"{'='*60}\n")
     

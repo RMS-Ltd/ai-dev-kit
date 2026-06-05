@@ -272,8 +272,8 @@ class TaskTemplateGenerator:
         # Generate basic acceptance criteria (3 items)
         criteria = [
             f"- [ ] {task_desc} completed successfully",
-            f"- [ ] Documentation and artifacts created",
-            f"- [ ] Verification and validation completed"
+            "- [ ] Documentation and artifacts created",
+            "- [ ] Verification and validation completed"
         ]
         criteria_text = '\n'.join(criteria)
         content = re.sub(
@@ -285,10 +285,10 @@ class TaskTemplateGenerator:
         # Generate basic approach (5 steps)
         approach_steps = [
             f"1. Analyze requirements for {task_desc.lower()}",
-            f"2. Design approach and plan",
+            "2. Design approach and plan",
             f"3. Implement {task_desc.lower()}",
-            f"4. Test and validate",
-            f"5. Document and deliver"
+            "4. Test and validate",
+            "5. Document and deliver"
         ]
         approach_text = '\n'.join(approach_steps)
         content = re.sub(

@@ -198,7 +198,7 @@ def test_1_2_story_completion():
         create_version_file(project['version_file'], task=7, build=1)
         # Create Story doc with T7 already marked complete (script updates version markers)
         # All tasks complete - script should detect and mark story COMPLETE
-        story_content = f"""# Story 008 – Test Story
+        story_content = """# Story 008 – Test Story
 
 **Status:** IN PROGRESS
 **Priority:** HIGH

@@ -109,7 +109,7 @@ def execute_intake_workflow(
             
             if intake_decision.epic_number == 0:
                 all_warnings.append(f"{fr_br_path.name}: No epic match found - skipping")
-                explanation_parts.append(f"⚠️  Skipped: No epic match")
+                explanation_parts.append("⚠️  Skipped: No epic match")
                 continue
             
             # Step 2: Task Creation
@@ -119,7 +119,7 @@ def execute_intake_workflow(
             if not task_result.success:
                 all_errors.extend([f"{fr_br_path.name}: {e}" for e in task_result.errors])
                 all_warnings.extend([f"{fr_br_path.name}: {w}" for w in task_result.warnings])
-                explanation_parts.append(f"❌ Task creation failed")
+                explanation_parts.append("❌ Task creation failed")
                 continue
             
             created_tasks.extend([t.task_id for t in task_result.created_tasks])
@@ -158,7 +158,7 @@ def execute_intake_workflow(
                 all_warnings.extend([f"{fr_br_path.name}: {w}" for w in dep_result.warnings])
             
             processed_files.append(str(fr_br_path))
-            explanation_parts.append(f"✅ Processed successfully")
+            explanation_parts.append("✅ Processed successfully")
             
         except Exception as e:
             error_msg = f"{fr_br_path.name}: {str(e)}"

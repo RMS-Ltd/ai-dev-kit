@@ -70,7 +70,7 @@ def test_dependency_extraction():
         assert isinstance(result.warnings, list), \
             "Warnings should be list"
         
-        print(f"✅ Dependency extraction successful")
+        print("✅ Dependency extraction successful")
         print(f"   Success: {result.success}")
         print(f"   Extracted Dependencies: {len(result.extracted_dependencies)}")
         print(f"   Blocked By: {len(result.wired_dependencies.get('blocked_by', []))}")

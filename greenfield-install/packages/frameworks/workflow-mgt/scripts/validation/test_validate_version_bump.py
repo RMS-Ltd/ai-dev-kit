@@ -541,6 +541,7 @@ def test_validate_perpetual_build_increment_rejects_unchanged_build(monkeypatch)
     import validate_version_bump as vvb
 
     monkeypatch.setattr(vvb, "get_version_build_from_git_ref", lambda _vf, ref: 5 if ref == "HEAD" else None)
+    monkeypatch.setattr(vvb, "get_version_task_from_git_ref", lambda _vf, ref: 4 if ref == "HEAD" else None)
     version_file = Path("src/ai_dev_kit/version.py")
     content = "**Task Type:** Perpetual Maintenance\n"
     ok, errs = validate_perpetual_build_increment(version_file, 2, 16, 4, 5, content, False)
@@ -548,6 +549,18 @@ def test_validate_perpetual_build_increment_rejects_unchanged_build(monkeypatch)
     assert any("BR-075" in e for e in errs)
     ok2, errs2 = validate_perpetual_build_increment(version_file, 2, 16, 4, 6, content, False)
     assert ok2, errs2
+
+
+def test_validate_perpetual_build_increment_allows_art_first_build_on_new_task(monkeypatch):
+    """BR-075: --art new perpetual task may start at BUILD=1 when HEAD TASK differs."""
+    import validate_version_bump as vvb
+
+    monkeypatch.setattr(vvb, "get_version_build_from_git_ref", lambda _vf, ref: 4 if ref == "HEAD" else None)
+    monkeypatch.setattr(vvb, "get_version_task_from_git_ref", lambda _vf, ref: 12 if ref == "HEAD" else None)
+    version_file = Path("src/ai_dev_kit/version.py")
+    content = "**Task Type:** Perpetual Maintenance\n"
+    ok, errs = validate_perpetual_build_increment(version_file, 8, 3, 15, 1, content, False)
+    assert ok, errs
 
 
 def test_validate_tagged_build_collision_blocks_doc_policy_zero_when_tag_exists(monkeypatch):

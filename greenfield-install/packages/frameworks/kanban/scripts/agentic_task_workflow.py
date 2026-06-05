@@ -383,7 +383,7 @@ class AgenticTaskWorkflow:
             elif mapping.new_story_recommended:
                 parts.append(
                     "No existing story matches - new story recommended based on "
-                    f"scope and requirements"
+                    "scope and requirements"
                 )
         
         # Secondary epics

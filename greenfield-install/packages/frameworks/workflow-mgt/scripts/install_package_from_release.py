@@ -212,12 +212,12 @@ def verify_package_hash(package_path: Path, hash_file_path: Path, verbose: bool 
         
         # Compute package hash
         if verbose:
-            print(f"   Computing SHA-256 hash...")
+            print("   Computing SHA-256 hash...")
         computed_hash = compute_sha256_hash(package_path)
         
         # Compare hashes (case-insensitive)
         if computed_hash.lower() != expected_hash.lower():
-            print(f"❌ Hash verification failed!", file=sys.stderr)
+            print("❌ Hash verification failed!", file=sys.stderr)
             print(f"   Expected: {expected_hash[:16]}...{expected_hash[-16:]}", file=sys.stderr)
             print(f"   Computed: {computed_hash[:16]}...{computed_hash[-16:]}", file=sys.stderr)
             return False
@@ -247,7 +247,7 @@ def extract_package(
         with tarfile.open(package_path, 'r:gz') as tar:
             members = tar.getmembers()
             if not members:
-                print(f"❌ Package archive is empty", file=sys.stderr)
+                print("❌ Package archive is empty", file=sys.stderr)
                 return False
             
             root_dir = None
@@ -258,7 +258,7 @@ def extract_package(
                     break
             
             if not root_dir:
-                print(f"❌ Cannot determine package root directory", file=sys.stderr)
+                print("❌ Cannot determine package root directory", file=sys.stderr)
                 return False
             
             tar.extractall(install_dir)
@@ -305,9 +305,9 @@ def verify_installation(install_dir: Path, framework_name: str, verbose: bool = 
     if verbose:
         print(f"   ✅ Installation verified: {framework_dir}")
         if manifest_path.exists():
-            print(f"   ✅ MANIFEST.json found")
+            print("   ✅ MANIFEST.json found")
         if readme_path.exists():
-            print(f"   ✅ README.md found")
+            print("   ✅ README.md found")
     
     return True
 
@@ -380,29 +380,29 @@ def main() -> int:
             # Download hash file
             if not args.skip_verification:
                 if args.verbose:
-                    print(f"   Downloading hash file...")
+                    print("   Downloading hash file...")
                 if not download_file(
                     hash_url,
                     hash_file_path,
                     args.verbose,
                     not_found_context=not_found_context,
                 ):
-                    print(f"⚠️  Warning: Hash file download failed, skipping verification", file=sys.stderr)
+                    print("⚠️  Warning: Hash file download failed, skipping verification", file=sys.stderr)
                     args.skip_verification = True
 
             # Verify package hash
             if not args.skip_verification:
-                print(f"\n🔐 Verifying package integrity...")
+                print("\n🔐 Verifying package integrity...")
                 if not verify_package_hash(package_path, hash_file_path, args.verbose):
-                    print(f"❌ Package verification failed. Installation aborted.", file=sys.stderr)
+                    print("❌ Package verification failed. Installation aborted.", file=sys.stderr)
                     return 1
             else:
-                print(f"\n⚠️  Hash verification skipped (NOT RECOMMENDED)")
+                print("\n⚠️  Hash verification skipped (NOT RECOMMENDED)")
 
             package_hash = f"sha256:{compute_sha256_hash(package_path)}"
             
             # Extract package
-            print(f"\n📦 Installing package...")
+            print("\n📦 Installing package...")
             install_dir = Path(args.install_dir).resolve()
             
             if not extract_package(package_path, install_dir, normalized_name, args.verbose):
@@ -410,12 +410,12 @@ def main() -> int:
             
             # Verify installation
             if args.verbose:
-                print(f"\n🔍 Verifying installation...")
+                print("\n🔍 Verifying installation...")
             
             if not verify_installation(install_dir, normalized_name, args.verbose):
                 return 1
             
-            print(f"\n✅ Installation complete!")
+            print("\n✅ Installation complete!")
             print(f"   Framework: {normalized_name} v{version}")
             print(f"   Location: {install_dir}/{normalized_name}")
 

@@ -68,7 +68,7 @@ def test_task_creation_integration():
             assert isinstance(result.explanation, str), \
                 "Explanation should be string"
             
-            print(f"✅ Task creation integration successful")
+            print("✅ Task creation integration successful")
             print(f"   Success: {result.success}")
             print(f"   Created Tasks: {len(result.created_tasks)}")
             print(f"   Errors: {len(result.errors)}")

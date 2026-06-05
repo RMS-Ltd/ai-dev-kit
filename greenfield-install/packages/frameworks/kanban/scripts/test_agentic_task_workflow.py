@@ -81,7 +81,7 @@ This feature will allow users to authenticate using email and password. It shoul
         analysis = analyzer.analyze_fr_br(test_fr_path)
         
         assert analysis.document_type == "FR", f"Expected FR, got {analysis.document_type}"
-        assert analysis.title == "Feature Request: Test Feature", f"Title mismatch"
+        assert analysis.title == "Feature Request: Test Feature", "Title mismatch"
         assert len(analysis.requirements) == 4, f"Expected 4 requirements, got {len(analysis.requirements)}"
         assert len(analysis.acceptance_criteria) == 4, f"Expected 4 criteria, got {len(analysis.acceptance_criteria)}"
         assert analysis.priority == "HIGH", f"Expected HIGH priority, got {analysis.priority}"
@@ -274,7 +274,7 @@ MEDIUM
         assert result.confidence_scores, "Should have confidence scores"
         
         print("✅ Workflow integration working correctly")
-        print(f"   - Analysis: ✅")
+        print("   - Analysis: ✅")
         print(f"   - Mapping: ✅ (Epic {result.epic_story_mapping.primary_epic})")
         print(f"   - Task structure: ✅ ({result.task_structure.num_tasks} task(s))")
         print(f"   - Reasoning: ✅ ({len(result.reasoning)} step(s))")

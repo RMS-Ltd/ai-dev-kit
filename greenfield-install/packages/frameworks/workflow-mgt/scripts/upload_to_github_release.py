@@ -255,7 +255,7 @@ def main() -> int:
         
         if not release:
             if args.verbose:
-                print(f"   Release not found, creating new release...")
+                print("   Release not found, creating new release...")
             release = create_release(github_token, repo, tag, args.verbose)
             if not release:
                 return 1
@@ -271,7 +271,7 @@ def main() -> int:
         
         # Upload package file
         if args.verbose:
-            print(f"\n📤 Uploading assets...")
+            print("\n📤 Uploading assets...")
         
         success = True
         
@@ -285,7 +285,7 @@ def main() -> int:
         
         if success:
             release_url = release.get('html_url', f"https://github.com/{repo}/releases/tag/{tag}")
-            print(f"\n✅ Package uploaded successfully!")
+            print("\n✅ Package uploaded successfully!")
             print(f"   Release: {release_url}")
             if args.verbose:
                 print(f"   Package: {package_file.name}")
@@ -293,7 +293,7 @@ def main() -> int:
                     print(f"   Hash: {hash_file.name}")
             return 0
         else:
-            print(f"\n❌ Package upload failed")
+            print("\n❌ Package upload failed")
             return 1
         
     except KeyboardInterrupt:

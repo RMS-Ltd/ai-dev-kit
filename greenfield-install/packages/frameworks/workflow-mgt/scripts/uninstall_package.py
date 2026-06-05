@@ -75,7 +75,7 @@ class PackageUninstaller:
         if not self.force:
             dependencies = self._check_dependencies()
             if dependencies:
-                print(f"⚠️  Warning: Package has dependencies:")
+                print("⚠️  Warning: Package has dependencies:")
                 for dep in dependencies:
                     print(f"  - {dep}")
                 response = input("Continue with uninstall? (y/N): ")

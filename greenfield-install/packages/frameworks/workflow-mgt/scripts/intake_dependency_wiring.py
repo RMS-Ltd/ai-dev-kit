@@ -512,7 +512,7 @@ def main():
         print("=" * 80)
         print(f"Success: {result.success}")
         print(f"Extracted Dependencies: {len(result.extracted_dependencies)}")
-        print(f"Wired Dependencies:")
+        print("Wired Dependencies:")
         print(f"  - Blocked By: {len(result.wired_dependencies.get('blocked_by', []))}")
         print(f"  - Blocks: {len(result.wired_dependencies.get('blocks', []))}")
         print(f"  - Related Work: {len(result.wired_dependencies.get('related_work', []))}")

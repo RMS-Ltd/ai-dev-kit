@@ -448,7 +448,7 @@ def main() -> int:
         
         # Create tar.gz archive
         if args.verbose:
-            print(f"\n📦 Creating tar.gz archive...")
+            print("\n📦 Creating tar.gz archive...")
         
         package_path = create_tar_gz_archive(
             framework_dir=framework_dir,
@@ -467,7 +467,7 @@ def main() -> int:
         
         # Phase 3.1.1.3: MANIFEST.json Generation (initial, without hash)
         if args.verbose:
-            print(f"\n📄 Generating MANIFEST.json...")
+            print("\n📄 Generating MANIFEST.json...")
         
         package_filename = package_path.name
         manifest = generate_manifest_json(
@@ -483,13 +483,13 @@ def main() -> int:
         add_manifest_to_archive(package_path, manifest)
         
         if args.verbose:
-            print(f"   MANIFEST.json generated and added to package")
+            print("   MANIFEST.json generated and added to package")
             print(f"   Files: {manifest['contents']['files']}, Directories: {manifest['contents']['directories']}")
             print(f"   Total size: {manifest['contents']['total_size_bytes']:,} bytes")
         
         # Phase 3.1.1.4: SHA-256 Hash Computation (after manifest added)
         if args.verbose:
-            print(f"\n🔐 Computing SHA-256 hash...")
+            print("\n🔐 Computing SHA-256 hash...")
         
         package_hash = compute_sha256_hash(package_path)
         
@@ -501,7 +501,7 @@ def main() -> int:
         add_manifest_to_archive(package_path, manifest)
         
         if args.verbose:
-            print(f"   MANIFEST.json updated with hash")
+            print("   MANIFEST.json updated with hash")
         
         # Create hash file
         hash_file_path = create_hash_file(package_path, package_hash)
@@ -514,7 +514,7 @@ def main() -> int:
         
         # Phase 3.1.1.5: Validation and Verification
         if args.verbose:
-            print(f"\n🔍 Validating package...")
+            print("\n🔍 Validating package...")
         
         validation_errors = []
         validation_warnings = []
@@ -542,7 +542,7 @@ def main() -> int:
                     if filename_in_file != package_filename:
                         validation_warnings.append(f"Hash file filename mismatch: expected '{package_filename}', got '{filename_in_file}'")
                     if hash_in_file != package_hash:
-                        validation_errors.append(f"Hash file content mismatch: computed hash differs from file hash")
+                        validation_errors.append("Hash file content mismatch: computed hash differs from file hash")
                     elif len(hash_in_file) != 64:
                         validation_errors.append(f"Invalid hash length: expected 64 characters, got {len(hash_in_file)}")
             except Exception as e:
@@ -587,7 +587,7 @@ def main() -> int:
         # Report validation results
         if validation_errors:
             if args.verbose:
-                print(f"   ❌ Validation errors found:")
+                print("   ❌ Validation errors found:")
                 for error in validation_errors:
                     print(f"      - {error}")
             else:
@@ -595,13 +595,13 @@ def main() -> int:
         
         if validation_warnings:
             if args.verbose:
-                print(f"   ⚠️  Validation warnings:")
+                print("   ⚠️  Validation warnings:")
                 for warning in validation_warnings:
                     print(f"      - {warning}")
         
         if not validation_errors:
             if args.verbose:
-                print(f"   ✅ Package validation passed")
+                print("   ✅ Package validation passed")
         else:
             print(f"\n❌ Package validation failed with {len(validation_errors)} error(s)")
             return 1
@@ -610,12 +610,12 @@ def main() -> int:
         print(f"   Framework: {framework_name} v{version}")
         print(f"   Files included: {len(files)}")
         print(f"   Package size: {final_package_size:,} bytes")
-        print(f"   SHA-256 hash: ✅ Computed")
+        print("   SHA-256 hash: ✅ Computed")
         print(f"   Hash file: ✅ Created ({hash_file_path.name})")
-        print(f"   MANIFEST.json: ✅ Generated (with hash)")
+        print("   MANIFEST.json: ✅ Generated (with hash)")
         if not validation_errors and not validation_warnings:
-            print(f"   Validation: ✅ Passed")
-        print(f"\n✅ Package builder complete!")
+            print("   Validation: ✅ Passed")
+        print("\n✅ Package builder complete!")
         
         return 0
         

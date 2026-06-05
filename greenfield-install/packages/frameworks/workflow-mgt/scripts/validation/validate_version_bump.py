@@ -131,8 +131,8 @@ def validate_perpetual_guardrails(
     return errors, warnings
 
 
-def get_version_build_from_git_ref(version_file: Path, git_ref: str) -> Optional[int]:
-    """Read VERSION_BUILD from a git ref (e.g. HEAD) for BR-075 perpetual RW checks."""
+def _read_version_file_at_git_ref(version_file: Path, git_ref: str) -> Optional[str]:
+    """Return version file text at a git ref, or None if unavailable."""
     rel = version_file.as_posix()
     try:
         result = subprocess.run(
@@ -144,7 +144,24 @@ def get_version_build_from_git_ref(version_file: Path, git_ref: str) -> Optional
         )
     except subprocess.CalledProcessError:
         return None
-    match = re.search(r"VERSION_BUILD\s*=\s*(\d+)", result.stdout)
+    return result.stdout
+
+
+def get_version_build_from_git_ref(version_file: Path, git_ref: str) -> Optional[int]:
+    """Read VERSION_BUILD from a git ref (e.g. HEAD) for BR-075 perpetual RW checks."""
+    content = _read_version_file_at_git_ref(version_file, git_ref)
+    if content is None:
+        return None
+    match = re.search(r"VERSION_BUILD\s*=\s*(\d+)", content)
+    return int(match.group(1)) if match else None
+
+
+def get_version_task_from_git_ref(version_file: Path, git_ref: str) -> Optional[int]:
+    """Read VERSION_TASK from a git ref for BR-075 when --art adopts a new task anchor."""
+    content = _read_version_file_at_git_ref(version_file, git_ref)
+    if content is None:
+        return None
+    match = re.search(r"VERSION_TASK\s*=\s*(\d+)", content)
     return int(match.group(1)) if match else None
 
 
@@ -230,6 +247,15 @@ def validate_perpetual_build_increment(
         if current_build < 1:
             return False, [
                 "❌ PERPETUAL BUILD (BR-075): VERSION_BUILD must be >= 1 when version_file is new to git."
+            ]
+        return True, []
+
+    head_task = get_version_task_from_git_ref(version_file, "HEAD")
+    if head_task is not None and head_task != task:
+        # --art first release on a new perpetual lane (HEAD still on prior TASK).
+        if current_build < 1:
+            return False, [
+                f"❌ PERPETUAL BUILD (BR-075): New perpetual task E{epic}:S{story}:T{task} requires BUILD >= 1."
             ]
         return True, []
 
@@ -1031,15 +1057,15 @@ def detect_first_time_est_doc(
         # Task doc exists but wasn't created in this commit → NOT doc-init
         is_first_time = False
         warnings.append(
-            f"⚠️  Task document already exists (not created in this commit). "
-            f"This is NOT a doc-init build. Task doc exists, so BUILD should be >= 1."
+            "⚠️  Task document already exists (not created in this commit). "
+            "This is NOT a doc-init build. Task doc exists, so BUILD should be >= 1."
         )
     elif est_doc_created and not prior_version_exists:
         is_first_time = True
     elif est_doc_created and prior_version_exists:
         warnings.append(
-            f"⚠️  New E/S/T doc detected, but prior version exists. "
-            f"This may not be a first-time commit (doc-init)."
+            "⚠️  New E/S/T doc detected, but prior version exists. "
+            "This may not be a first-time commit (doc-init)."
         )
     elif not est_doc_created and not prior_version_exists:
         # No E/S/T doc detected, but no prior version exists
@@ -1048,16 +1074,16 @@ def detect_first_time_est_doc(
         if not task_doc_exists:
             is_first_time = True
             warnings.append(
-                f"⚠️  No new E/S/T doc file or section detected, but no prior version exists. "
-                f"Assuming first-time commit (doc-init). If this is incorrect, validation will fail on docs-only check."
+                "⚠️  No new E/S/T doc file or section detected, but no prior version exists. "
+                "Assuming first-time commit (doc-init). If this is incorrect, validation will fail on docs-only check."
             )
         else:
             # Task doc exists but wasn't detected as created in this commit
             # This shouldn't happen, but handle it gracefully
             is_first_time = False
             warnings.append(
-                f"⚠️  Task document exists but wasn't detected as created in this commit. "
-                f"This is NOT a doc-init build. BUILD should be >= 1."
+                "⚠️  Task document exists but wasn't detected as created in this commit. "
+                "This is NOT a doc-init build. BUILD should be >= 1."
             )
     
     return is_first_time, warnings
@@ -1086,7 +1112,7 @@ def validate_doc_init_build(
         # Not a doc-init build, skip validation
         return True, []
     
-    print(f"🔍 Doc-init build detected (BUILD=0) - validating docs-only changes...")
+    print("🔍 Doc-init build detected (BUILD=0) - validating docs-only changes...")
     
     # Get project root
     project_root = project_root or Path.cwd()
@@ -1130,15 +1156,15 @@ def validate_doc_init_build(
     
     if non_doc_files:
         errors.append(
-            f"❌ DOC-INIT VALIDATION FAILED: Doc-init build (BUILD=0) contains non-documentation changes:\n"
+            "❌ DOC-INIT VALIDATION FAILED: Doc-init build (BUILD=0) contains non-documentation changes:\n"
         )
         for non_doc_file in non_doc_files:
             rel_path = str(non_doc_file.relative_to(project_root or Path.cwd()))
             errors.append(f"   - {rel_path}")
         errors.append(
-            f"\n   Doc-init builds (+0) must only contain documentation changes.\n"
-            f"   Documentation files include: .md files, README, CHANGELOG, docs/, packages/frameworks/, docs/, .yaml, .txt\n"
-            f"   Code files (.py, .js, .ts, etc.) are not allowed in doc-init builds."
+            "\n   Doc-init builds (+0) must only contain documentation changes.\n"
+            "   Documentation files include: .md files, README, CHANGELOG, docs/, packages/frameworks/, docs/, .yaml, .txt\n"
+            "   Code files (.py, .js, .ts, etc.) are not allowed in doc-init builds."
         )
         return False, errors
     
@@ -1258,14 +1284,14 @@ def validate_version_bump(
 
         if not is_first_time and not policy_zero_ok:
             errors.append(
-                f"❌ ABSTRACT SPACE VALIDATION FAILED: BUILD=0 (abstract space) detected, but this is not a first-time E/S/T document commit.\n"
-                f"   Abstract space builds (`+0`) are only valid for first-time E/S/T document creation (docs-only).\n"
-                f"   Conditions for valid abstract space (`+0`):\n"
-                f"   1. New E/S/T document file created OR new delimited section added to Story file\n"
-                f"   2. No prior version exists for this E/S/T (check git history and changelog)\n"
-                f"   3. All changes are docs-only (no code changes)\n"
-                f"   If the E/S/T document already exists, use BUILD >= 1 for functional changes, or pass --doc-policy-zero with --requested/--art when policy requires +0.\n"
-                f"   See: FR-017 (Doc-Init Build), FR-018 (Abstract Space), FR-020 (Abstract Space Awareness)"
+                "❌ ABSTRACT SPACE VALIDATION FAILED: BUILD=0 (abstract space) detected, but this is not a first-time E/S/T document commit.\n"
+                "   Abstract space builds (`+0`) are only valid for first-time E/S/T document creation (docs-only).\n"
+                "   Conditions for valid abstract space (`+0`):\n"
+                "   1. New E/S/T document file created OR new delimited section added to Story file\n"
+                "   2. No prior version exists for this E/S/T (check git history and changelog)\n"
+                "   3. All changes are docs-only (no code changes)\n"
+                "   If the E/S/T document already exists, use BUILD >= 1 for functional changes, or pass --doc-policy-zero with --requested/--art when policy requires +0.\n"
+                "   See: FR-017 (Doc-Init Build), FR-018 (Abstract Space), FR-020 (Abstract Space Awareness)"
             )
         if first_time_warnings:
             for warning in first_time_warnings:
@@ -1354,8 +1380,8 @@ def validate_version_bump(
             for field_error in field_errors:
                 errors.append(f"   - {field_error}")
             errors.append(
-                f"   Required fields: Task ID, Scope, Acceptance Criteria, Status, Version Anchor, Input, Deliverable.\n"
-                f"   See: packages/frameworks/kanban/templates/TASK_TEMPLATE.md"
+                "   Required fields: Task ID, Scope, Acceptance Criteria, Status, Version Anchor, Input, Deliverable.\n"
+                "   See: packages/frameworks/kanban/templates/TASK_TEMPLATE.md"
             )
         
         # Validate Task ID alignment
@@ -1363,7 +1389,7 @@ def validate_version_bump(
             task_doc_content, epic, story, completed_task
         )
         if not alignment_valid:
-            errors.append(f"❌ TASK ID MISMATCH: Task document Task ID does not match version components:")
+            errors.append("❌ TASK ID MISMATCH: Task document Task ID does not match version components:")
             for alignment_error in alignment_errors:
                 errors.append(f"   - {alignment_error}")
             errors.append(f"   Expected: E{epic}:S{story}:T{completed_task}")

@@ -247,7 +247,7 @@ class WorkflowOrchestrator:
             
             if not ready:
                 # Circular dependency or missing dependency
-                self.logger.warning(f"Circular or missing dependencies detected, using original order")
+                self.logger.warning("Circular or missing dependencies detected, using original order")
                 return workflow_ids
             
             # Process ready workflows
@@ -606,7 +606,7 @@ if __name__ == "__main__":
         )
         
         if plan.status == ExecutionPlanStatus.COMPLETED:
-            print(f"✅ RW execution completed successfully")
+            print("✅ RW execution completed successfully")
             sys.exit(0)
         else:
             print(f"❌ RW execution failed: {plan.results.get('error', 'Unknown error')}")

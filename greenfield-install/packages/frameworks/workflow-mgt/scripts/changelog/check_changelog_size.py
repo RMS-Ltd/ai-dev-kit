@@ -98,7 +98,7 @@ def main():
             import json
             print(json.dumps(metrics, indent=2))
         else:
-            print(f"📊 Changelog Size Check")
+            print("📊 Changelog Size Check")
             print(f"  Line count: {metrics['line_count']}")
             print(f"  Entry count: {metrics['entry_count']}")
             print(f"  Size threshold: {metrics['size_threshold']}")

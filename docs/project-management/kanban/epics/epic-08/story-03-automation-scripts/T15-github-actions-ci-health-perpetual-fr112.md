@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T15 — FR-112 intake; Actions baseline @ `main` 16:39 UTC)  
-**Version Anchor:** v0.8.3.15+1  
+**Last updated:** 2026-06-05 (RW E08:S03:T15+2 — CI triage pass; pending Actions verify)  
+**Version Anchor:** v0.8.3.15+2  
 **Code:** E08S03T15  
 **Task Type:** Perpetual Maintenance
 
@@ -89,6 +89,16 @@ Use **`RW E08:S03:T15`** for recurring CI hygiene passes (BUILD increments on pe
 | Workflow scripts pytest | success |
 | Code Quality: Push on main | success |
 | Push on main (CodeQL) | success |
+
+### Triage pass (v0.8.3.15+2)
+
+| Workflow | Root cause (identified) | Fix in this release |
+| -------- | ----------------------- | ------------------- |
+| Tests | `test_install_error_docs_sync` — troubleshooting guide missing ADK `<!-- ADK-ERROR-CODES:* -->` markers / per-code anchors | Sync marked block from `generate_install_error_docs.py` |
+| Docusaurus site build | Broken `#install-error-codes-adk` anchor on troubleshooting guide | H2 `{#install-error-codes-adk}` in generator + guide |
+| Greenfield install | `sync_greenfield_install.py --check` drift (40 files under `greenfield-install/packages/frameworks`) | Full mirror sync |
+
+**Post-merge verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) on `dev`/`main` after push.
 
 ---
 

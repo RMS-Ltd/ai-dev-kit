@@ -1303,7 +1303,7 @@ def update_kanban_board(
             except ImportError:
                 line = re.sub(
                     r'\s-\s(TODO|IN PROGRESS)\s',
-                    f' - ✅ COMPLETE ',
+                    ' - ✅ COMPLETE ',
                     line,
                     flags=re.IGNORECASE,
                 )
@@ -2296,7 +2296,7 @@ class FourSurfaceReport:
     def to_markdown(self) -> str:
         d = self.as_dict()
         lines: List[str] = []
-        lines.append(f"# RW Step 7 four-surface reconciliation report")
+        lines.append("# RW Step 7 four-surface reconciliation report")
         lines.append("")
         lines.append(f"- **Contract:** {d['contract']}")
         lines.append(f"- **Invocation context:** {d['invocation_context']}")
@@ -2333,7 +2333,7 @@ class FourSurfaceReport:
             lines.append(f"- Touched: **{rep['touched']}**")
             paths = rep.get("paths", [])
             if paths:
-                lines.append(f"- Path(s):")
+                lines.append("- Path(s):")
                 for p in paths:
                     lines.append(f"  - `{p}`")
             else:
@@ -2358,7 +2358,7 @@ class FourSurfaceReport:
                 lines.append(f"- Touched: **{rep['touched']}**")
                 paths = rep.get("paths", [])
                 if paths:
-                    lines.append(f"- Path(s):")
+                    lines.append("- Path(s):")
                     for p in paths:
                         lines.append(f"  - `{p}`")
                 changes = rep.get("changes", [])
@@ -2665,7 +2665,7 @@ def main():
     
     if 'story_doc' not in paths:
         print(f"❌ Story doc not found for Epic {epic}, Story {story}")
-        print(f"🔍 Attempting manual discovery...")
+        print("🔍 Attempting manual discovery...")
         
         # Manual fallback discovery
         kanban_root = Path.cwd() / "docs/project-management/kanban"
@@ -2684,13 +2684,13 @@ def main():
                 break
         
         if not story_doc:
-            print(f"❌ Manual discovery failed. Checked patterns:")
+            print("❌ Manual discovery failed. Checked patterns:")
             for pattern in manual_patterns:
                 print(f"   - {pattern}")
             print(f"💡 Suggestion: Check if Story {story} exists for Epic {epic}")
             print(f"💡 Suggestion: Verify kanban_root path: {kanban_root}")
             if args.allow_override:
-                print(f"⚠️  Continuing without story doc (allow_override)")
+                print("⚠️  Continuing without story doc (allow_override)")
                 story_doc = None
             else:
                 print(

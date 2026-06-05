@@ -63,7 +63,7 @@ def build_framework(framework_name: str, version: str, display_name: str) -> boo
         
         files = collect_framework_files(framework_dir)
         if not files:
-            raise ValueError(f"No files found in framework directory")
+            raise ValueError("No files found in framework directory")
         
         package_path = create_tar_gz_archive(
             framework_dir=framework_dir,
@@ -211,14 +211,14 @@ def upload_packages(token: str, repo: str, verbose: bool = False) -> bool:
                 print(f"   Creating release: {tag}")
                 release = create_release(token, repo, tag, verbose)
                 if not release:
-                    print(f"   ❌ Failed to create release")
+                    print("   ❌ Failed to create release")
                     continue
             
             # Upload package
             print(f"   Uploading package: {package_file}")
             upload_url = release.get('upload_url', '')
             if not upload_asset(token, upload_url, package_path, verbose):
-                print(f"   ❌ Failed to upload package")
+                print("   ❌ Failed to upload package")
                 continue
             
             # Upload hash file

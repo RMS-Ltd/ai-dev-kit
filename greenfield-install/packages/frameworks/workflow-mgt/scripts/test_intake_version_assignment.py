@@ -83,7 +83,7 @@ def test_version_assignment_new_task():
         assert result.version_components['build'] == 0, \
             "Build number should be 0 for new task"
         
-        print(f"✅ Version assignment successful")
+        print("✅ Version assignment successful")
         print(f"   Version Marker: {result.version_marker}")
         print(f"   Version Components: {result.version_components}")
         
@@ -145,7 +145,7 @@ def test_version_assignment_existing_task():
         assert result.version_components['build'] >= 1, \
             "Existing task should use build >= 1"
         
-        print(f"✅ Version assignment successful")
+        print("✅ Version assignment successful")
         print(f"   Version Marker: {result.version_marker}")
         print(f"   Build Number: {result.version_components['build']}")
         

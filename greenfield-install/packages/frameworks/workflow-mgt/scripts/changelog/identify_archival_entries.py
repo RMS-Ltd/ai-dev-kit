@@ -167,14 +167,14 @@ def main():
         
         entries_to_archive, metadata = identify_archival_entries(entries, policy, total_lines)
         
-        print(f"📊 Archival Analysis")
+        print("📊 Archival Analysis")
         print(f"  Total entries: {len(entries)}")
         print(f"  Total lines: {total_lines}")
         print(f"  Criteria met: {', '.join(metadata['criteria_met']) if metadata['criteria_met'] else 'none'}")
         print(f"  Entries to archive: {len(entries_to_archive)}")
         
         if entries_to_archive:
-            print(f"\n📦 Entries to archive:")
+            print("\n📦 Entries to archive:")
             for entry in entries_to_archive[:10]:  # Show first 10
                 age = calculate_entry_age_months(entry)
                 age_str = f"{age:.1f} months" if age else "unknown age"

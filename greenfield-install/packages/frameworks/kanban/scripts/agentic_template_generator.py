@@ -606,8 +606,8 @@ housekeeping_policy: keep
         epic_name_clean = epic_name.replace("{project_name}", "{PROJECT_NAME}")
         epic_name_lower = epic_name_clean.lower().replace("{project_name}", "{PROJECT_NAME}")
         overview = f"This epic encompasses {epic_name_lower} for the {{PROJECT_NAME}} project. "
-        overview += f"It provides the foundational structure and capabilities needed to support "
-        overview += f"the project's core objectives and enables other epics to build upon this foundation."
+        overview += "It provides the foundational structure and capabilities needed to support "
+        overview += "the project's core objectives and enables other epics to build upon this foundation."
         
         content = re.sub(
             r'\[One paragraph\. The epic\'s purpose, scope, and motivation\.\]',
@@ -625,7 +625,7 @@ housekeeping_policy: keep
             f"Define and implement core {epic_name_lower} patterns and standards",
             f"Create reusable {epic_name_lower} components and utilities",
             f"Document {epic_name_lower} architecture and best practices",
-            f"Enable integration with other project epics and systems"
+            "Enable integration with other project epics and systems"
         ]
         goals_text = "\n".join([f"{i+1}. {goal}" for i, goal in enumerate(goals[:5])])
         
@@ -700,8 +700,8 @@ housekeeping_policy: keep
         
         # Generate Overview
         overview = f"Establish {story_name.lower()} for the {{PROJECT_NAME}} project, "
-        overview += f"providing the necessary components and capabilities to support "
-        overview += f"the epic's objectives."
+        overview += "providing the necessary components and capabilities to support "
+        overview += "the epic's objectives."
         
         content = re.sub(
             r'\[One sentence\. What this story accomplishes\.\]',
@@ -790,8 +790,8 @@ housekeeping_policy: keep
         
         # Generate Scope
         scope = f"{task_desc} for the {{PROJECT_NAME}} project. "
-        scope += f"This task establishes the necessary components and processes to support "
-        scope += f"the story's objectives and enables subsequent work."
+        scope += "This task establishes the necessary components and processes to support "
+        scope += "the story's objectives and enables subsequent work."
         
         content = re.sub(
             r'\[Clear description of what this task accomplishes\. What problem does it solve\? What value does it deliver\?\]',
@@ -820,10 +820,10 @@ housekeeping_policy: keep
         # Generate Acceptance Criteria (3-5 criteria)
         criteria = [
             f"{task_desc} completed successfully",
-            f"Documentation and artifacts created and reviewed",
-            f"Integration with existing systems verified",
-            f"Quality standards met and validated",
-            f"Stakeholder approval obtained (if required)"
+            "Documentation and artifacts created and reviewed",
+            "Integration with existing systems verified",
+            "Quality standards met and validated",
+            "Stakeholder approval obtained (if required)"
         ]
         criteria_text = "\n".join([f"- [ ] {c} (measurable, testable)" for c in criteria[:5]])
         
@@ -836,12 +836,12 @@ housekeeping_policy: keep
         # Generate Approach (5-7 steps)
         approach_steps = [
             f"Review requirements and specifications for {task_desc.lower()}",
-            f"Design and plan the implementation approach",
+            "Design and plan the implementation approach",
             f"Implement {task_desc.lower()} components",
-            f"Test and validate the implementation",
-            f"Document the implementation and usage",
-            f"Review and refine based on feedback",
-            f"Finalize and prepare for integration"
+            "Test and validate the implementation",
+            "Document the implementation and usage",
+            "Review and refine based on feedback",
+            "Finalize and prepare for integration"
         ]
         approach_text = "\n".join([f"{i+1}. {step}" for i, step in enumerate(approach_steps[:7])])
         

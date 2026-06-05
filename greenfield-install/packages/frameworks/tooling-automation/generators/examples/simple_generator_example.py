@@ -118,7 +118,7 @@ def main():
         for path in result.output_paths:
             print(f"   - {path}")
     else:
-        print(f"❌ Generation failed")
+        print("❌ Generation failed")
         for error in result.errors:
             print(f"   - {error}")
 

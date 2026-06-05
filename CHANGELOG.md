@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.15+2] - 05-06-26
+
+E08:S03:T15 — **Change implemented:** CI triage — ADK error-code doc sync, Docusaurus anchor, greenfield-install mirror. SemVer **v0.4.991+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.15+2.md)
+
+---
+
 ## [0.8.3.16+1] - 05-06-26
 
 E08:S03:T16 — **Change implemented:** Wave 0 security/Code Quality perpetual baseline + IPP (code scanning 0 open @ `777e956`). SemVer **v0.4.990+1**.

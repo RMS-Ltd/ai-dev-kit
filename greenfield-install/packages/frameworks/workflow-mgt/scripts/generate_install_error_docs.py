@@ -19,7 +19,7 @@ def anchor_for(code: str) -> str:
 def render_markdown() -> str:
     reg = load_registry()
     lines = [
-        "## Install error codes (ADK-*)",
+        "## Install error codes (ADK-*) {#install-error-codes-adk}",
         "",
         f"Registry version: **{reg.get('registry_version', 'unknown')}**. "
         "When install fails, copy the `ERROR [ADK-…]` line from your console "

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T16 — Wave 0 baseline + IPP)
+**Last updated:** 2026-06-05 (v0.8.3.16+1 – Kanban documentation setup)
 **Version:** v0.8.3.16+1
 **Code:** E8S03
 
