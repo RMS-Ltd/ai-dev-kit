@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.7+1] - 06-06-26
+
+E10:S01:T07 — **Change implemented:** Coordinator orchestration plan, epic/10 branch bootstrap, kanban init for Document Lifecycle RC review. SemVer **v0.4.1003+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.7+1.md)
+
+---
+
 ## [0.8.3.17+2] - 06-06-26
 
 E08:S03:T17 — **Change implemented:** Local CQG (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022, tests. SemVer **v0.4.1002+2**.

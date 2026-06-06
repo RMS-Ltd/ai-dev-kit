@@ -8,18 +8,31 @@ housekeeping_policy: keep
 
 # Story 001 – Document Lifecycle Package Implementation Review
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-01-18 (v0.10.1.0+0 – Story created)  
-**Version:** v0.10.1.0+0  
+**Last updated:** 2026-06-06 (v0.10.1.7+1 – T07 kanban init COMPLETE)  
+**Version:** v0.10.1.7+1  
 **Code:** E10S01
+
+---
+
+## Orchestration
+
+**Host task:** [E10:S01:T07 – Coordinator orchestration plan and epic branch bootstrap](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
+
+**Coordinator SoT (mandatory for all E10:S01 agents):** [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
+
+**Branch:** `epic/10-doc-lifecycle-framework`
 
 ---
 
 ## Task Checklist
 
+- [x] **E10:S01:T07 – Coordinator orchestration plan and epic branch bootstrap** - ✅ COMPLETE (v0.10.1.7+1)
+  - Task: [`T07-coordinator-orchestration-plan-and-epic-branch-bootstrap`](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
+  - Orchestration: [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - [ ] **E10:S01:T01 – Establish expectations baseline for Document Lifecycle package** - TODO
   - Task: [`T01-establish-expectations-baseline-for-document-lifecycle-packa`](story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)
 - [ ] **E10:S01:T02 – Inventory package components and map to expectations** - TODO
@@ -68,4 +81,6 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## References
 
+- **Orchestration plan:** [`docs/implementation-cycles/E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - Package: `packages/frameworks/doc-lifecycle/`
+- Structural precedent: [E02:S13 — Workflow Management Package Implementation Review](../../epic-02/story-13-workflow-management-package-implementation-review.md)
