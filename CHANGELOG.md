@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.3+2] - 06-06-26
+
+E05:S08:T03 — **Change implemented:** FR-114 Notion policy — `rmearssolutions@gmail.com` workspace, clean-slate bootstrap; task IN PROGRESS. SemVer **v0.4.1025+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.3+2.md)
+
+---
+
 ## [0.10.1.10+2] - 06-06-26
 
 E10:S01:T10 — **Change implemented:** E10:S01 story sign-off release — implementation review **COMPLETE**; RC **APPROVE**; scoped kanban reconciliation (Epic 10 IN PROGRESS — S02 TODO). SemVer **v0.4.1024+2**.

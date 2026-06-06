@@ -65,10 +65,10 @@ canonical_public_pages_url: https://rms-ltd.github.io/ai-dev-kit/
 maintainer_private_repo: RMS-Ltd/ai-dev-kit-book
 maintainer_private_repo_url: https://github.com/RMS-Ltd/ai-dev-kit-book.git
 
-# Notion project hub (single entry point for project context; RMS Teamspace)
+# Notion project hub (rmearssolutions@gmail.com — refresh URLs on T03 clean-slate bootstrap)
 notion_hub_url: https://www.notion.so/30db6f8962c181ceb811f3a6c78ecd4b
 
-# Engineering KB 3.1 AI Dev Kit (KB migrated from docs/)
+# Engineering KB (rmearssolutions@gmail.com — legacy pages deleted; replace URL after fresh KB root)
 notion_kb_url: https://www.notion.so/30db6f8962c1810daf71f96bb601d69b
 
 # Epic ranges

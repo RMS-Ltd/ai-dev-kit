@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Rescope Docusaurus to **adopter-public** content only; **big-bang migrate** maintainer/developer corpora to **Notion** (RMS Teamspace / `earlution@gmail.com` workspace); keep **internal standards and CHANGELOG on GitHub**; from **RC ≥ 1**, publish **curated release notes** (not raw changelog) on Docusaurus for **significant public releases**; agents **default to Notion** for new maintainer documentation.
+Rescope Docusaurus to **adopter-public** content only; **big-bang migrate** maintainer/developer corpora to **Notion** (`rmearssolutions@gmail.com` workspace — **clean slate**, no legacy Notion carryover); keep **internal standards and CHANGELOG on GitHub**; from **RC ≥ 1**, publish **curated release notes** (not raw changelog) on Docusaurus for **significant public releases**; agents **default to Notion** for new maintainer documentation.
 
 ---
 
@@ -45,9 +45,10 @@ The Docusaurus portal currently compiles nearly all of `docs/` (Kanban, implemen
 |---|----------|
 | 1 | **Internal standards** (maintainer ADRs, governance deep-corpus) → read on **GitHub**; not mirrored on Docusaurus |
 | 2 | **CHANGELOG** → GitHub only during **RC = 0**; from **RC ≥ 1**, **significant public release notes** on Docusaurus (narrative milestones — not raw Keep-a-Changelog dump) |
-| 3 | **Notion home** → RMS Teamspace on `earlution@gmail.com` account (`notion_hub_url`, `notion_kb_url` in `rw-config.yaml`) |
+| 3 | **Notion home** → `rmearssolutions@gmail.com` workspace (`notion_hub_url`, `notion_kb_url` in `rw-config.yaml`) |
 | 4 | **Migration strategy** → **big-bang** (single cutover, not phased lazy migration) |
 | 5 | **Agent authoring** → **Notion-first** via MCP for maintainer docs; git **stubs** only when workflow/validators require repo paths |
+| 6 | **Notion bootstrap** → **delete legacy Notion KB content**; fresh hub + Engineering KB pages only (do not merge atop prior migration) |
 
 ---
 
@@ -67,7 +68,7 @@ The Docusaurus portal currently compiles nearly all of `docs/` (Kanban, implemen
 
 - [ ] **FR-114-F1:** Define explicit **Docusaurus allowlist** (adopter-public paths) and update `portal/docusaurus.config.js`, `sidebars.js`, `portal/README.md`.
 - [ ] **FR-114-F2:** **Exclude** from Docusaurus publish: `project-management/`, `implementation-cycles/`, `maintenance/`, `analysis/`, `knowledge/` (maintainer corpora), `journals/`, changelog archive bulk; internal `architecture/` ADRs (GitHub links from guides suffice).
-- [ ] **FR-114-F3:** **Big-bang migrate** maintainer corpora to Notion Engineering KB with migration manifest (source path → Notion URL → optional git stub).
+- [ ] **FR-114-F3:** **Big-bang migrate** maintainer corpora to a **fresh** Notion Engineering KB (`rmearssolutions@gmail.com`); wipe legacy Notion pages first; migration manifest (source path → Notion URL → optional git stub).
 - [ ] **FR-114-F4:** Update **agent bootstrap** (`AGENTS.md`, `docs/project-agent-manifest.json`) with Notion KB routes; default maintainer doc creation → Notion MCP.
 - [ ] **FR-114-F5:** Publish **ADR** documenting three-surface model and SoT rules per doc type.
 - [ ] **FR-114-F6:** Define **RC ≥ 1 significant release notes** policy and Docusaurus location (`portal/blog/` or `docs/release-notes/`); no raw `CHANGELOG.md` on portal.

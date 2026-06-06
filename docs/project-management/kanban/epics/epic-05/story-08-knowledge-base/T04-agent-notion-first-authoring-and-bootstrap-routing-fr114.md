@@ -31,7 +31,7 @@ Publication Status: NOT_APPLICABLE
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) agent authoring decision (Notion-first via MCP)
 - [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) · [`docs/project-agent-manifest.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-agent-manifest.json)
 - [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
-- `rw-config.yaml` → `notion_kb_url`
+- `rw-config.yaml` → `notion_hub_url`, `notion_kb_url` (`rmearssolutions@gmail.com` workspace; URLs refreshed by T03 clean-slate bootstrap)
 
 ---
 
