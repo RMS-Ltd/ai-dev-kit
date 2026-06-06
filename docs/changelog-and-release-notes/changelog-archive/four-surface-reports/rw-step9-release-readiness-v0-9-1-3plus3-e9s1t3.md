@@ -3,14 +3,16 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E9:S1:T3 (v0.9.1.3+3)
-- **Timestamp (UTC):** 2026-06-04 23:01 UTC
-- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
+- **Timestamp (UTC):** 2026-06-06 14:48 UTC
+- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
 
 ## Overall verdict
 
-- **Status:** PASS — RW MAY proceed past Step 9.
+- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
+  - Gate 5: Stage-set completeness (BR-070)
+  - Gate 8: Stamp homogeneity (FR-097)
 
-- Gates: 11/11 passed (0 failed, 0 waived).
+- Gates: 9/11 passed (2 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -48,29 +50,25 @@
 - Summary: RW and UKW canonical row transform pipelines produce byte-identical output across all active boards (FR-090 shared engine verified).
 - Evidence:
   - `docs/project-management/kanban/kboard.md`: `byte-identical`
-  - `docs/project-management/kanban/fbuboard.md`: `byte-identical`
-  - `docs/project-management/kanban/kanban-board.md`: `byte-identical`
-  - `docs/project-management/kanban/fr-br-uxr-board.md`: `byte-identical`
 
 ### Gate 4 — Corpus canonical state
 
 - Status: **PASS** (severity: `block`)
 - Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 2, 'stamps_preserved_existing': 86}`
+  - `/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
+  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 20}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
-- Status: **PASS** (severity: `block`)
-- Summary: BR-070 satisfied: all 5 Step-7 path(s) are staged or unchanged.
+- Status: **FAIL** (severity: `block`)
+- Summary: BR-070 violation: 1 Step-7 path(s) are modified-unstaged, untracked, or missing.
+- Findings:
+  - `fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: missing — Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.
 - Evidence:
-  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
+  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
   - `paths_checked`: `5`
-  - `violations`: `0`
+  - `violations`: `1`
   - `release_scope`: `{'epic': 9, 'story': 1, 'task': 3, 'task_id': 'E9:S1:T3', 'version_string': 'v0.9.1.3+3'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
@@ -78,7 +76,7 @@
 - Status: **PASS** (severity: `block`)
 - Summary: Forensic stamp evidence consistent: appended=0, skipped=0, preserved=0 (mode=None).
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
   - `evidence_mode`: `None`
   - `stamps_appended_with_evidence`: `0`
   - `stamps_skipped_no_evidence`: `0`
@@ -89,21 +87,21 @@
 - Status: **PASS** (severity: `block`)
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
   - `task_doc`: `{'touched': True, 'paths': ['docs/project-management/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md'], 'notes_count': 0}`
   - `fbu_doc`: `{'touched': False, 'paths': [], 'notes_count': 1}`
   - `kboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md'], 'notes_count': 0}`
-  - `fbuboard`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md'], 'notes_count': 1}`
   - `release_scope`: `{'epic': 9, 'story': 1, 'task': 3, 'task_id': 'E9:S1:T3', 'version_string': 'v0.9.1.3+3'}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 
-- Status: **PASS** (severity: `block`)
-- Summary: No homogeneity clusters at or above threshold.
+- Status: **FAIL** (severity: `block`)
+- Summary: Homogenized stamp cluster(s) detected; run backfill or fix hygiene.
+- Findings:
+  - kboard.md: stamp '2026-06-06 14:44 UTC' appears on 4 rows (threshold 3, not git-single-commit exempt): ['E10:S01:T03', 'E10:S01:T04', 'E10:S01:T05', 'E10:S01:T06']
 - Evidence:
   - `homogeneity_threshold`: `3`
-  - `kboard.md`: `{}`
-  - `fbuboard.md`: `{}`
+  - `kboard.md`: `{'2026-06-06 14:44 UTC': 4}`
 
 ### Gate 9 — MoSCOW state icons (UXR-012)
 

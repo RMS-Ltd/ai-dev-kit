@@ -1,9 +1,9 @@
 {
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
-  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": true,
-  "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
+  "overall_passed": false,
+  "project_root": "/Users/rms/Documents/projects/ai-dev-kit-e10s01",
   "release_scope": {
     "epic": 9,
     "story": 1,
@@ -12,13 +12,16 @@
     "version_string": "v0.9.1.3+3"
   },
   "summary": {
-    "blocking_failures": [],
-    "gates_failed": 0,
-    "gates_passed": 11,
+    "blocking_failures": [
+      "Gate 5: Stage-set completeness (BR-070)",
+      "Gate 8: Stamp homogeneity (FR-097)"
+    ],
+    "gates_failed": 2,
+    "gates_passed": 9,
     "gates_total": 11,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-04 23:01 UTC",
+  "timestamp_utc": "2026-06-06 14:48 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -64,9 +67,6 @@
     },
     {
       "evidence": {
-        "docs/project-management/kanban/fbuboard.md": "byte-identical",
-        "docs/project-management/kanban/fr-br-uxr-board.md": "byte-identical",
-        "docs/project-management/kanban/kanban-board.md": "byte-identical",
         "docs/project-management/kanban/kboard.md": "byte-identical"
       },
       "findings": [],
@@ -81,26 +81,14 @@
     },
     {
       "evidence": {
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md": {
-          "rows_changed": 0,
-          "rows_with_duplicate_footers": 0
-        },
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br-uxr-board.md": {
-          "rows_changed": 0,
-          "rows_with_duplicate_footers": 0
-        },
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kanban-board.md": {
-          "rows_changed": 0,
-          "rows_with_duplicate_footers": 0
-        },
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md": {
+        "/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/project-management/kanban/kboard.md": {
           "rows_changed": 0,
           "rows_with_duplicate_footers": 0
         },
         "stamp_evidence_aggregate": {
           "stamps_appended_with_evidence": 0,
-          "stamps_preserved_existing": 86,
-          "stamps_skipped_no_evidence": 2
+          "stamps_preserved_existing": 20,
+          "stamps_skipped_no_evidence": 0
         }
       },
       "findings": [],
@@ -115,7 +103,7 @@
     },
     {
       "evidence": {
-        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json",
+        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json",
         "paths_checked": 5,
         "release_scope": {
           "epic": 9,
@@ -124,22 +112,24 @@
           "task_id": "E9:S1:T3",
           "version_string": "v0.9.1.3+3"
         },
-        "violations": 0
+        "violations": 1
       },
-      "findings": [],
+      "findings": [
+        "`fbuboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding."
+      ],
       "gate_id": 5,
-      "is_blocking_failure": false,
+      "is_blocking_failure": true,
       "name": "Stage-set completeness (BR-070)",
-      "passed": true,
+      "passed": false,
       "severity": "block",
-      "summary": "BR-070 satisfied: all 5 Step-7 path(s) are staged or unchanged.",
+      "summary": "BR-070 violation: 1 Step-7 path(s) are modified-unstaged, untracked, or missing.",
       "waive_reason": null,
       "waived": false
     },
     {
       "evidence": {
         "evidence_mode": null,
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json",
         "stamps_appended_with_evidence": 0,
         "stamps_preserved_existing": 0,
         "stamps_skipped_no_evidence": 0
@@ -161,13 +151,6 @@
           "paths": [],
           "touched": false
         },
-        "fbuboard": {
-          "notes_count": 1,
-          "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fbuboard.md"
-          ],
-          "touched": false
-        },
         "kboard": {
           "notes_count": 0,
           "paths": [
@@ -182,7 +165,7 @@
           "task_id": "E9:S1:T3",
           "version_string": "v0.9.1.3+3"
         },
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json",
         "task_doc": {
           "notes_count": 0,
           "paths": [
@@ -203,17 +186,20 @@
     },
     {
       "evidence": {
-        "fbuboard.md": {},
         "homogeneity_threshold": 3,
-        "kboard.md": {}
+        "kboard.md": {
+          "2026-06-06 14:44 UTC": 4
+        }
       },
-      "findings": [],
+      "findings": [
+        "kboard.md: stamp '2026-06-06 14:44 UTC' appears on 4 rows (threshold 3, not git-single-commit exempt): ['E10:S01:T03', 'E10:S01:T04', 'E10:S01:T05', 'E10:S01:T06']"
+      ],
       "gate_id": 8,
-      "is_blocking_failure": false,
+      "is_blocking_failure": true,
       "name": "Stamp homogeneity (FR-097)",
-      "passed": true,
+      "passed": false,
       "severity": "block",
-      "summary": "No homogeneity clusters at or above threshold.",
+      "summary": "Homogenized stamp cluster(s) detected; run backfill or fix hygiene.",
       "waive_reason": null,
       "waived": false
     },

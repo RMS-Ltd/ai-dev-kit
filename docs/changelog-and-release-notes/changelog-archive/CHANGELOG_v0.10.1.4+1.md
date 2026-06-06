@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-06-06 14:48:05 UTC  
 **Epic:** 10 | **Story:** 01 | **Task:** 04  
-**SemVer:** v0.4.1008+1  
+**SemVer:** v0.4.1010+1  
 **Branch:** `epic/10-doc-lifecycle-framework`  
 **RW mode:** `--art`
 

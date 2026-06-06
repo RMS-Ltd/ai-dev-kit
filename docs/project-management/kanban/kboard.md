@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-06 (RW: E10:S01:T02 component inventory map)
-**Version:** v0.10.1.2+1
+**Last Updated:** 2026-06-06 (RW: E10:S01:T04 integration alignment review)
+**Version:** v0.10.1.4+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -30,11 +30,9 @@ housekeeping_policy: keep
 
 - **E10:S01:T03** – Validate lifecycle behavior against documented guidance - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md) | Last modified: 2026-06-06 14:44 UTC
 
-- **E10:S01:T04** – Review integrations and dependency alignment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md) | Last modified: 2026-06-06 14:44 UTC
+- **E10:S01:T05** – Create gap log and risk assessment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T05-gap-log-risk-assessment.md) | Last modified: 2026-06-06 05:04 UTC
 
-- **E10:S01:T05** – Create gap log and risk assessment - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T05-gap-log-risk-assessment.md) | Last modified: 2026-06-06 14:44 UTC
-
-- **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md) | Last modified: 2026-06-06 14:44 UTC
+- **E10:S01:T06** – Define RC sign-off criteria and remediation tasks - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md) | Last modified: 2026-06-05 05:04 UTC
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+6** wave-4 **14** files; print-at-import cleared locally; dashboard **Good+** pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 12:56 UTC
 
