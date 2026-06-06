@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.10.1.6+2] - 06-06-26
+## [0.10.1.10+1] - 06-06-26
 
-E10:S01:T06 — **Change implemented:** RC sign-off verification V8 (Story checklist T01–T06 COMPLETE after RW) — **PASS**. SemVer **v0.4.1014+2**.
+E10:S01:T10 — **Change implemented:** Fix `DocumentLifecycleValidator` — PyYAML import, five-field metadata enforcement, pytest TC1–TC8 green, greenfield mirror; closes GAP-DOCLIFE-TEST-001. SemVer **v0.4.1015+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.6+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md)
 
 ---
 

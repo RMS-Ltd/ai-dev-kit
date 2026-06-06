@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 10, Story 1, Task 10: Fix DocumentLifecycleValidator
 
 **Task ID:** E10:S01:T10  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (filed from T06 remediation backlog R3)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-06 (v0.10.1.10+1 — validator fix released)  
+**Version:** v0.10.1.10+1  
 **Code:** E10S01T10
 
 ---
@@ -50,6 +50,7 @@ Fix the cross-package `DocumentLifecycleValidator` in tooling-automation:
 
 ## Input
 
+- [**IPP-E10S01T10**](../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) — implementation plan (Sections 1–7; FR-083 gate)
 - [E10:S01:T05 gap log](T05-create-gap-log-and-risk-assessment.md) — Gap 5
 - [E10:S01:T06 RC sign-off](T06-define-rc-sign-off-criteria-and-remediation-tasks.md) — remediation package R3
 - [T03 behavior validation](lifecycle-behavior-validation-report.md) §6 DocumentLifecycleValidator Runtime Validation
@@ -68,16 +69,41 @@ Fix the cross-package `DocumentLifecycleValidator` in tooling-automation:
 
 ## Acceptance Criteria
 
-- [ ] Validator completes scans without `NameError`
-- [ ] All five required fields validated per package spec
-- [ ] pytest coverage for validator pass/fail cases
-- [ ] Relationship to T08 package-local validator documented
-- [ ] IPP linked before code implementation (FR-083)
+- [x] Validator completes scans without `NameError` ✅ (v0.10.1.10+1)
+- [x] All five required fields validated per package spec ✅
+- [x] pytest coverage for validator pass/fail cases ✅ (13 tests, TC1–TC8)
+- [x] Relationship to T08 package-local validator documented ✅ (framework README §boundary)
+- [x] IPP linked before code implementation (FR-083) ✅
+
+---
+
+## Verification
+
+| ID | Check | Result | Evidence |
+| -- | ----- | ------ | -------- |
+| V1 | PyYAML import — no `NameError` | PASS | `test_document_lifecycle_validator_run_without_nameerror` |
+| V2 | Five-field enforcement | PASS | Parametric missing-field tests (5 fields) |
+| V3 | Story-folder smoke | PASS | Validator completes scan on epic-10 story folder |
+| V4 | greenfield mirror parity | PASS | `diff` primary vs greenfield-install validator — identical |
+| V5 | T08 boundary documented | PASS | `validators/framework/README.md` §DocumentLifecycleValidator |
+
+**Gap closure:** GAP-DOCLIFE-TEST-001 remediated — see [T05 gap log](T05-create-gap-log-and-risk-assessment.md) Gap 5 Tracking.
 
 ---
 
 ## References
 
+- [**IPP-E10S01T10**](../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) — fix validator implementation plan
 - [T06 RC sign-off and remediation backlog](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
+- [T03 lifecycle-behavior-validation-report](lifecycle-behavior-validation-report.md) §6
+- [T08 package-local validator](T08-implement-doc-housekeeping-workflow-and-scripts.md) — complementary scope boundary
 - [IPP-E10S01T06](../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
+- [E10S01 orchestration plan §9](../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- [doc-lifecycle-metadata-spec.md](../../../../../../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
+
+---
+
+## Version Anchor
+
+✅ COMPLETE (v0.10.1.10+1)

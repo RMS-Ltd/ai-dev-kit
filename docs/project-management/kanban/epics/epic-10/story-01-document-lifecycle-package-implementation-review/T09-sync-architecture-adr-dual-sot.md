@@ -50,6 +50,7 @@ Resolve dual SoT drift between Document Lifecycle package `policies/` and repo `
 
 ## Input
 
+- [IPP-E10S01T09 — sync architecture ADR dual SoT](../../../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md)
 - [E10:S01:T05 gap log](T05-create-gap-log-and-risk-assessment.md) — Gap 4
 - [E10:S01:T06 RC sign-off](T06-define-rc-sign-off-criteria-and-remediation-tasks.md) — remediation package R2
 - [T04 integration alignment](integration-alignment-report.md) §5 Architecture ADR Dual SoT
@@ -72,12 +73,13 @@ Resolve dual SoT drift between Document Lifecycle package `policies/` and repo `
 - [ ] Package `policies/` and architecture ADRs content-aligned or drift-guarded
 - [ ] `policy-salience-schema.md` present in correct canonical location with cross-links
 - [ ] T04 integration alignment re-validated for domain 6/7
-- [ ] IPP linked before implementation (FR-083)
+- [x] IPP linked before implementation (FR-083)
 
 ---
 
 ## References
 
+- [IPP-E10S01T09 — sync architecture ADR dual SoT](../../../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md)
 - [T06 RC sign-off and remediation backlog](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
 - [IPP-E10S01T06](../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)

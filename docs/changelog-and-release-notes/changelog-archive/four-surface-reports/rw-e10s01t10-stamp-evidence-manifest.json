@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E10:S01:T10": {
+      "allowed": true,
+      "reason": "RW E10:S01:T10 v0.10.1.10+1 — scoped kanban Step 7 status COMPLETE + version anchor"
+    }
+  }
+}

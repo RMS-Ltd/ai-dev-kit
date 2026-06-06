@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (RW: E10:S01:T05)
-**Version:** v0.10.1.5+1
+**Last Updated:** 2026-06-06 (RW: E10:S01:T10)
+**Version:** v0.10.1.10+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Fix DocumentLifecycleValidator: PyYAML import, five-field metadata enforcement, pytest TC1–TC8 green, greenfield mirror; closes GAP-DOCLIFE-TEST-001.
+  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 
 - **[E10:S01:T05](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)** — Create gap log and risk assessment: 16 `GAP-DOCLIFE-*` entries consolidated from T01–T04; conditional RC posture; `validate_gap_log.py --strict` PASS.
   **Completed:** `2026-06-06T14:51:20Z` | **Version:** `v0.10.1.5+1` | **Agent:** `RW E10:S01:T05 --art` | [Gap log](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [IPP-T05](../../implementation-cycles/IPP-E10S01T05-gap-log-risk-assessment.md)

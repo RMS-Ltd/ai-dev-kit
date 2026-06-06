@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.6+2 – Story 1 Task 6 complete)
+**Last updated:** 2026-06-06 (v0.10.1.10+1 – Story 1 T10 DocumentLifecycleValidator fix)
 **Branch:** `epic/10-doc-lifecycle-framework`  
 **Version Schema:** `0.10.S.T+B`  
 **Version:** v0.10.1.6+1  

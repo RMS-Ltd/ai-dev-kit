@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.6+2 – Kanban documentation setup)
-**Version:** v0.10.1.6+2
+**Last updated:** 2026-06-06 (v0.10.1.10+1 – T10 DocumentLifecycleValidator fix)
+**Version:** v0.10.1.10+1
 **Code:** E10S01
 
 ---
@@ -55,8 +55,9 @@ housekeeping_policy: keep
   - Task: [`T08-implement-doc-housekeeping-workflow-and-scripts`](story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)
 - [ ] **E10:S01:T09 – Sync architecture ADR dual SoT** - TODO (HIGH remediation)
   - Task: [`T09-sync-architecture-adr-dual-sot`](story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)
-- [ ] **E10:S01:T10 – Fix DocumentLifecycleValidator** - TODO (HIGH remediation)
+- [x] **E10:S01:T10 – Fix DocumentLifecycleValidator** - ✅ COMPLETE (v0.10.1.10+1)
   - Task: [`T10-fix-document-lifecycle-validator`](story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)
+  - IPP: [`IPP-E10S01T10`](../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
 
 ---
 

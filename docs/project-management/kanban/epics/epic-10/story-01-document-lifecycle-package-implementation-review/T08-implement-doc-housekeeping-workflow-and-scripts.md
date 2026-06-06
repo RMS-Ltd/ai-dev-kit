@@ -59,6 +59,7 @@ Implement the documented-future automation artefacts for the Document Lifecycle 
 - [T02 component inventory](component-inventory-map.md) §6
 - [T03 behavior validation](lifecycle-behavior-validation-report.md) D8/D9
 - Package: `packages/frameworks/doc-lifecycle/`
+- **IPP:** [IPP-E10S01T08 — doc housekeeping workflow and scripts](../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
 
 ---
 
@@ -77,7 +78,7 @@ Implement the documented-future automation artefacts for the Document Lifecycle 
 - [ ] `scripts/validate_lifecycle_metadata.py` validates all five required metadata fields
 - [ ] `scripts/housekeeping_scanner.py` implements reference-aware cleanup per policy
 - [ ] greenfield-install mirror updated (FR-110 parity)
-- [ ] IPP linked before code implementation (FR-083)
+- [x] IPP linked before code implementation (FR-083)
 
 ---
 
@@ -85,4 +86,5 @@ Implement the documented-future automation artefacts for the Document Lifecycle 
 
 - [T06 RC sign-off and remediation backlog](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
+- [IPP-E10S01T08 — doc housekeeping workflow and scripts](../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
 - [IPP-E10S01T06](../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
