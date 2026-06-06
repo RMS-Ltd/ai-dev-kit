@@ -240,7 +240,7 @@ Before committing a policy with salience section, verify:
 
 ## References
 
-- **Schema Specification:** `docs/architecture/standards-and-adrs/policy-salience-schema.md`
+- **Schema Specification:** [`../policies/policy-salience-schema.md`](../policies/policy-salience-schema.md) (package SoT; dev-kit mirror: `docs/architecture/standards-and-adrs/policy-salience-schema.md`)
 - **Example Policies:**
   - `docs/architecture/standards-and-adrs/documentation-maintenance-policy.md`
   - `packages/frameworks/kanban/policies/kanban-governance-policy.md`

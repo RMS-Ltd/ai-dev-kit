@@ -43,6 +43,12 @@ It offers:
    - Enables dynamic validator discovery
    - Target-based validator lookup
 
+4. **Code Quality Gate (CQG)** (`code_quality/`) — FR-113 / E08:S03:T17
+   - CodeQL `security-and-quality` orchestration and SARIF ingest
+   - GitHub-aligned ratings and thresholds
+   - Used by `run_cqg.py`, `validate_code_quality_gate.py`, and `cqg_monitor.py`
+   - See [operator guide](../docs/code-quality-gate-operator-guide.md) and [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
+
 ---
 
 ## Usage

@@ -1,0 +1,16 @@
+{
+  "rows": {
+    "E10:S01:T08": {
+      "allowed": true,
+      "reason": "FR-097 backfill homogeneity cluster 2026-06-06 14:53 UTC \u2014 RW E10:S01:T06 v0.10.1.6+2"
+    },
+    "E10:S01:T09": {
+      "allowed": true,
+      "reason": "FR-097 backfill homogeneity cluster 2026-06-06 14:53 UTC \u2014 RW E10:S01:T06 v0.10.1.6+2"
+    },
+    "E10:S01:T10": {
+      "allowed": true,
+      "reason": "FR-097 backfill homogeneity cluster 2026-06-06 14:53 UTC \u2014 RW E10:S01:T06 v0.10.1.6+2"
+    }
+  }
+}

@@ -159,6 +159,8 @@ def main() -> int:
         project_root = Path(__file__).resolve().parents[5]  # ai-dev-kit root
         candidates = [
             project_root
+            / "docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md",
+            project_root
             / "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md",
             project_root
             / "docs/project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md",

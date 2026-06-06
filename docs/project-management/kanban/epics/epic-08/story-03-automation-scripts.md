@@ -57,7 +57,7 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL **DEFERRED** (T13/T14 **COMPLETE**; resume after **T12** sign-off; baseline v0.8.3.16+1) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
 
-- [x] **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** — ✅ COMPLETE (**v0.8.3.17+2**) — [Task doc](story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](../../fr-br/FR-113-local-code-quality-gate-cqg.md) | [IPP](../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
+- [x] **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** — ✅ COMPLETE (**v0.8.3.17+2**) — [Task doc](story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](../../fr-br/FR-113-local-code-quality-gate-cqg.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
 
 ---
 

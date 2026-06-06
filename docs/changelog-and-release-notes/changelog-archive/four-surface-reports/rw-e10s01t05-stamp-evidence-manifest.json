@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E10:S01:T05": {
+      "allowed": true,
+      "reason": "RW E10:S01:T05 --art v0.10.1.5+1 — terminal row pruned from active MoSCOW to kanban-completed.md after task COMPLETE"
+    }
+  }
+}

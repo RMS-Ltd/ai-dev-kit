@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (RW: E08:S03:T17)
-**Version:** v0.8.3.17+2
+**Last Updated:** 2026-06-06 (RW: E10:S01:T09)
+**Version:** v0.10.1.9+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -20,8 +20,32 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E10:S01:T09](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)** — Sync architecture ADR dual SoT: ADR-023, package `policies/` SoT, `policy-salience-schema.md` packaged, mirror banners, salience cross-links, FR-110 greenfield re-sync; closes GAP-DOCLIFE-INTG-001.
+  **Completed:** `2026-06-06T15:06:47Z` | **Version:** `v0.10.1.9+1` | **Agent:** `RW E10:S01:T09 --art` | [IPP-T09](../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md) | [ADR-023](../../architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md)
+
+- **[E10:S01:T08](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)** — Doc housekeeping workflow and scripts: DHKW YAML, five-field validator, reference-aware scanner, pytest (12 green), FR-110 mirror; closes GAP-DOCLIFE-STRUCT-001/002/003.
+  **Completed:** `2026-06-06T15:04:48Z` | **Version:** `v0.10.1.8+1` | **Agent:** `RW E10:S01:T08 --art` | [IPP-T08](../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+
+- **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Fix DocumentLifecycleValidator: PyYAML import, five-field metadata enforcement, pytest TC1–TC8 green, greenfield mirror; closes GAP-DOCLIFE-TEST-001.
+  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+
+- **[E10:S01:T05](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)** — Create gap log and risk assessment: 16 `GAP-DOCLIFE-*` entries consolidated from T01–T04; conditional RC posture; `validate_gap_log.py --strict` PASS.
+  **Completed:** `2026-06-06T14:51:20Z` | **Version:** `v0.10.1.5+1` | **Agent:** `RW E10:S01:T05 --art` | [Gap log](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [IPP-T05](../../implementation-cycles/IPP-E10S01T05-gap-log-risk-assessment.md)
+
+- **[E10:S01:T04](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)** — Review integrations and dependency alignment: companion integration-alignment-report (nine domains), task doc fleshed, V1–V10 verified; feeds T05 gap log.
+  **Completed:** `2026-06-06T14:48:05Z` | **Version:** `v0.10.1.4+1` | **Agent:** `RW E10:S01:T04 --art` | [Report](epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) | [IPP-T04](../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
+
+- **[E10:S01:T02](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)** — Inventory package components and map to expectations: companion inventory map, task doc fleshed, V1–V8 verified; feeds T05 gap remediation.
+  **Completed:** `2026-06-06T14:47:28Z` | **Version:** `v0.10.1.2+1` | **Agent:** `RW E10:S01:T02 --art` | [Inventory](epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md) | [IPP-T02](../../implementation-cycles/IPP-E10S01T02-component-inventory-map.md)
+
+- **[E10:S01:T01](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)** — Establish expectations baseline for Document Lifecycle package: companion baseline artefact, task doc fleshed, V1–V8 verified; Wave 2A gate complete.
+  **Completed:** `2026-06-06T14:45:56Z` | **Version:** `v0.10.1.1+1` | **Agent:** `RW E10:S01:T01 --art` | [Baseline](epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md) | [IPP-T01](../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
+
+- **[E10:S01:T07](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)** — Coordinator orchestration plan and epic branch bootstrap: E10S01 orchestration SoT, `epic/10-doc-lifecycle-framework`, triage wiring, kanban init.
+  **Completed:** `2026-06-06T14:10:06Z` | **Version:** `v0.10.1.7+1` | **Agent:** `RW -k E10:S01:T07 --art --dpz` | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
+
 - **[E08:S03:T17](epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)** — Local Code Quality Gate (CQG) (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022, operator guide, tests.
-  **Completed:** `2026-06-06T15:30:00Z` | **Version:** `v0.8.3.17+2` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
+  **Completed:** `2026-06-06T15:30:00Z` | **Version:** `v0.8.3.17+2` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg.md) | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
 
 - **[E08:S03:T14](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)** — Code Quality AI suggestions backlog (BR-101): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; **F-SYNC-02** waiver; lag-accepted GH panel closure.
   **Completed:** `2026-06-06T13:09:50Z` | **Version:** `v0.8.3.14+5` | **Agent:** `RW E08:S03:T14 --art` | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
@@ -565,8 +589,11 @@ housekeeping_policy: keep
 ---
 
 #### **Epic 10: Documentation and Knowledge Management**
-- **[E10:S01:T01](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md)** – Doc lifecycle expectations baseline  
-  **Completed:** `2026-03-12T14:00:00Z` | **Version:** `v0.10.1.1+1` | **Agent:** `PM-AGENT-001`
+- **[E10:S01:T04](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)** – Review integrations and dependency alignment  
+  **Completed:** `2026-06-06T14:48:05Z` | **Version:** `v0.10.1.4+1` | **Agent:** `RW E10:S01:T04 --art` | [Report](epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md)
+
+- **[E10:S01:T01](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)** – Establish expectations baseline for Document Lifecycle package  
+  **Completed:** `2026-06-06T14:45:56Z` | **Version:** `v0.10.1.1+1` | **Agent:** `RW E10:S01:T01 --art` | [Baseline](epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md)
 
 
 ---
@@ -1042,14 +1069,14 @@ This document tracks all **completed tasks** across the AI Dev Kit project. Task
 
 ---
 
-### Epic 10: Documentation and Knowledge Management ✅ COMPLETE
+### Epic 10: Document Lifecycle Framework — IN PROGRESS
 
-**Status:** COMPLETE  
-**Completed:** 2026-03-12  
+**Status:** IN PROGRESS  
+**Last updated:** 2026-06-06  
 **Version:** v0.10.1.1+1
 
-#### Story 001: Documentation Lifecycle ✅ COMPLETE
-- **E10:S01:T01** – Doc lifecycle expectations baseline - ✅ COMPLETE (v0.10.1.1+1)
+#### Story 001: Document Lifecycle Package Implementation Review — IN PROGRESS
+- **E10:S01:T01** – Establish expectations baseline for Document Lifecycle package - ✅ COMPLETE (v0.10.1.1+1)
 
 ---
 

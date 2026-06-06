@@ -231,7 +231,7 @@ See complete examples in:
 
 ## References
 
-- **Schema Specification:** `docs/architecture/standards-and-adrs/policy-salience-schema.md`
+- **Schema Specification:** [`../policies/policy-salience-schema.md`](../policies/policy-salience-schema.md) (package SoT; dev-kit mirror: `docs/architecture/standards-and-adrs/policy-salience-schema.md`)
 - **Template:** `packages/frameworks/doc-lifecycle/templates/POLICY_SALIENCE_TEMPLATE.md`
 - **FR-022:** Policy Documents Machine-Readable Salience Section
 

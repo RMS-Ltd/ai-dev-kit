@@ -13,6 +13,14 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+try:
+    import yaml
+
+    YAML_AVAILABLE = True
+except ImportError:
+    yaml = None  # type: ignore[assignment]
+    YAML_AVAILABLE = False
+
 # Add validators directory to path for imports
 validators_path = Path(__file__).parent.parent
 if str(validators_path) not in sys.path:
@@ -141,8 +149,12 @@ class DocumentLifecycleValidator(BaseValidator):
         
         frontmatter_text = content[3:frontmatter_end].strip()
         
-        if not yaml:
-            # Can't validate YAML without PyYAML
+        if not YAML_AVAILABLE:
+            issues.append(ValidationIssue(
+                message="PyYAML is not installed; cannot validate lifecycle metadata",
+                severity=ValidationSeverity.ERROR,
+                file_path=doc_path,
+            ))
             return issues
         
         try:
@@ -158,8 +170,14 @@ class DocumentLifecycleValidator(BaseValidator):
         if not frontmatter:
             return issues
         
-        # Validate required fields
-        required_fields = ['lifecycle', 'created_at']
+        # Validate required fields (doc-lifecycle-metadata-spec.md §Required Fields)
+        required_fields = [
+            'lifecycle',
+            'ttl_days',
+            'created_at',
+            'expires_at',
+            'housekeeping_policy',
+        ]
         for field in required_fields:
             if field not in frontmatter:
                 issues.append(ValidationIssue(
@@ -182,9 +200,7 @@ class DocumentLifecycleValidator(BaseValidator):
         # Validate created_at format
         if 'created_at' in frontmatter:
             created_at = frontmatter['created_at']
-            try:
-                datetime.fromisoformat(created_at.replace('Z', '+00:00'))
-            except (ValueError, AttributeError):
+            if not self._is_valid_iso_datetime(created_at):
                 issues.append(ValidationIssue(
                     message=f"Invalid created_at format: {created_at} (expected ISO 8601 datetime)",
                     severity=ValidationSeverity.ERROR,
@@ -204,15 +220,12 @@ class DocumentLifecycleValidator(BaseValidator):
         # Validate expires_at if present
         if 'expires_at' in frontmatter:
             expires_at = frontmatter['expires_at']
-            if expires_at is not None:
-                try:
-                    datetime.fromisoformat(expires_at.replace('Z', '+00:00'))
-                except (ValueError, AttributeError):
-                    issues.append(ValidationIssue(
-                        message=f"Invalid expires_at format: {expires_at} (expected ISO 8601 datetime or null)",
-                        severity=ValidationSeverity.ERROR,
-                        file_path=doc_path
-                    ))
+            if expires_at is not None and not self._is_valid_iso_datetime(expires_at):
+                issues.append(ValidationIssue(
+                    message=f"Invalid expires_at format: {expires_at} (expected ISO 8601 datetime or null)",
+                    severity=ValidationSeverity.ERROR,
+                    file_path=doc_path
+                ))
         
         # Validate housekeeping_policy if present
         if 'housekeeping_policy' in frontmatter:
@@ -226,4 +239,17 @@ class DocumentLifecycleValidator(BaseValidator):
                 ))
         
         return issues
+
+    @staticmethod
+    def _is_valid_iso_datetime(value) -> bool:
+        """Return True when value is a datetime or parseable ISO 8601 string."""
+        if isinstance(value, datetime):
+            return True
+        if isinstance(value, str):
+            try:
+                datetime.fromisoformat(value.replace('Z', '+00:00'))
+                return True
+            except ValueError:
+                return False
+        return False
 

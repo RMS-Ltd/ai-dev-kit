@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E08:S03:T17](../../project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)  
 **Planning package:** [IPP-E08S03T17](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)  
-**Related:** [FR-113](../../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg-fr113.md), [FR-112](../../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+**Related:** [FR-113](../../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md), [FR-112](../../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
 ---
 
@@ -78,4 +78,4 @@ CodeQL CLI is an **external prerequisite** (not vendored). Initial spike on ai-d
 ## References
 
 - [GitHub Code Quality metrics](https://docs.github.com/en/code-security/code-quality/reference/metrics-and-ratings)
-- [Operator guide](../../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md)
+- [Operator guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md)

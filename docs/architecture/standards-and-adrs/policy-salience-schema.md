@@ -5,6 +5,8 @@ created_at: 2025-12-12T00:00:00Z
 expires_at: null
 housekeeping_policy: keep
 ---
+> **Architecture mirror (dev-kit navigation):** Canonical SoT is `packages/frameworks/doc-lifecycle/policies/policy-salience-schema.md`. Edit the package copy first; sync this mirror for repo navigation. Maintainer checklist: [`adr-dual-sot-parity.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md). Decision record: [ADR-023](ADR-023-doc-lifecycle-package-architecture-dual-sot.md).
+
 
 # Policy Salience Schema Specification
 
@@ -346,9 +348,9 @@ Agents should:
 ## Examples
 
 See the following policy documents for complete examples:
-- `docs/architecture/standards-and-adrs/documentation-maintenance-policy.md`
+- [`doc-lifecycle-policy.md`](doc-lifecycle-policy.md) (this package)
+- `docs/architecture/standards-and-adrs/documentation-maintenance-policy.md` (dev-kit instance)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- `packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md`
 
 ---
 

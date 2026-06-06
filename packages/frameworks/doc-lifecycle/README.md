@@ -2,7 +2,7 @@
 
 **Portable Package:** This directory contains the Document Lifecycle Management framework for managing Knowledge Base (KB) document lifecycle with TTL-based expiration and automated housekeeping.
 
-**Last Updated:** 2025-12-04  
+**Last Updated:** 2026-06-06  
 **Version:** 1.0.0
 
 **🌱 Adopter distribution (FR-110):** Delivered inside the lean vendor tree at `greenfield-install/packages/frameworks/doc-lifecycle/` as part of `packages/frameworks/` (~11 MiB bundle). See [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
@@ -102,6 +102,7 @@ cp -r packages/frameworks/doc-lifecycle/ <your-project>/packages/frameworks/doc-
 Read the core policies:
 - `policies/doc-lifecycle-metadata-spec.md` — Metadata schema
 - `policies/doc-lifecycle-policy.md` — Governance and enforcement
+- `policies/policy-salience-schema.md` — Policy salience YAML schema
 
 ### 3. Apply Lifecycle Metadata
 
@@ -126,9 +127,24 @@ Use the templates in `templates/` when creating new documents:
 - `DOCUMENT_TEMPLATE.md` — Template with lifecycle metadata
 - `LIFECYCLE_EXAMPLES.md` — Examples for each lifecycle type
 
-### 5. (Future) Run Housekeeping Workflow
+### 5. Run Housekeeping Scripts
 
-When the Doc Housekeeping Workflow is implemented, run it periodically to clean up expired documents.
+Validate lifecycle metadata and plan housekeeping actions (dry-run by default):
+
+```bash
+cd packages/frameworks/doc-lifecycle
+
+# Validate five-field metadata under docs/
+python scripts/validate_lifecycle_metadata.py --path ../../docs --strict
+
+# Scan and plan reference-aware cleanup (no filesystem changes)
+python scripts/housekeeping_scanner.py --plan --root ../../docs --changelog ../../CHANGELOG.md
+
+# Execute archive/delete only with explicit confirmation
+python scripts/housekeeping_scanner.py --execute --root ../../docs --archive-dir ../../docs/Archive --confirm
+```
+
+Workflow definition: `workflows/doc-housekeeping-workflow.yaml` (DHKW — Doc Housekeeping Workflow).
 
 ---
 
@@ -140,16 +156,22 @@ packages/frameworks/doc-lifecycle/
 ├── PACKAGE_OVERVIEW.md                # Package structure and usage
 ├── IMPLEMENTATION_GUIDE.md            # Step-by-step implementation guide
 │
-├── policies/
+├── policies/                          # Framework SoT (see ADR-023)
 │   ├── doc-lifecycle-metadata-spec.md # Metadata schema
-│   └── doc-lifecycle-policy.md         # Policy and governance
+│   ├── doc-lifecycle-policy.md         # Policy and governance
+│   └── policy-salience-schema.md       # Policy salience YAML schema
 │
 ├── workflows/
-│   └── doc-housekeeping-workflow.yaml # Automated housekeeping workflow (future)
+│   └── doc-housekeeping-workflow.yaml # Automated housekeeping workflow (DHKW)
 │
 ├── scripts/
-│   ├── validate_lifecycle_metadata.py  # Validator for lifecycle metadata (future)
-│   └── housekeeping_scanner.py         # Scanner for expired documents (future)
+│   ├── validate_lifecycle_metadata.py  # Validator for lifecycle metadata
+│   └── housekeeping_scanner.py         # Scanner for expired documents
+│
+├── tests/
+│   ├── fixtures/                       # pytest fixtures
+│   ├── test_validate_lifecycle_metadata.py
+│   └── test_housekeeping_scanner.py
 │
 ├── templates/
 │   ├── DOCUMENT_TEMPLATE.md           # Template with lifecycle metadata
@@ -168,6 +190,9 @@ packages/frameworks/doc-lifecycle/
 - **Implementation Guide:** [`IMPLEMENTATION_GUIDE.md`](./IMPLEMENTATION_GUIDE.md) — Step-by-step guide for adopting in other projects
 - **Metadata Spec:** [`policies/doc-lifecycle-metadata-spec.md`](./policies/doc-lifecycle-metadata-spec.md) — Complete metadata schema
 - **Policy:** [`policies/doc-lifecycle-policy.md`](./policies/doc-lifecycle-policy.md) — Governance and enforcement rules
+- **Policy Salience Schema:** [`policies/policy-salience-schema.md`](./policies/policy-salience-schema.md) — Machine-readable policy salience YAML schema
+- **Dual SoT parity:** [`docs/adr-dual-sot-parity.md`](./docs/adr-dual-sot-parity.md) — Maintainer checklist (package SoT ↔ architecture mirrors)
+- **ADR-023:** [`docs/architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md`](../../../docs/architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md) — SoT/mirror decision record
 - **Templates:** [`templates/`](./templates/) — Document templates with lifecycle metadata
 - **Integration Guides:** [`integration/`](./integration/) — How to integrate with other packages
 
@@ -286,12 +311,11 @@ See [`templates/LIFECYCLE_EXAMPLES.md`](./templates/LIFECYCLE_EXAMPLES.md) for m
 
 ## 🚧 Future Work
 
-- **Doc Housekeeping Workflow** — Automated housekeeping workflow (YAML + agent execution guide)
-- **Validation Scripts** — Validator for lifecycle metadata and scanner for expired documents
 - **Integration with RW** — RW automatically sets lifecycle metadata when creating docs
+- **DHKW agent execution guide** — optional KB doc mirroring RW/UKW patterns
 
 ---
 
-**Last Updated:** 2025-12-04  
+**Last Updated:** 2026-06-06  
 **Status:** Active — Ready for use
 

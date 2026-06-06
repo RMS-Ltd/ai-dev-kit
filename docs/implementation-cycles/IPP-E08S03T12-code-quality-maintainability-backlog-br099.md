@@ -509,4 +509,4 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 ## Implementation gate (P-IPW-GATE)
 
-**Planning complete.** Wave 5 code edits require explicit operator authorization (`implement` or equivalent) before executing [§4.5 steps 39–49](#45-wave-5-ledger-open--awaiting-implementation-authorization). Do not infer permission from this IPP revision alone.
+**Planning complete.** Wave 5 code edits require explicit operator authorization (`implement` or equivalent) before executing [§4.5 steps 39–49](#45-wave-5-ledger-code-done-locally--rw-step-49-open). Do not infer permission from this IPP revision alone.

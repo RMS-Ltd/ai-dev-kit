@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E08:S03:T17 — Planning: Local Code Quality Gate (CQG) (IPW)
 
 **Host Task:** [`T17-local-code-quality-gate-cqg-fr113.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) **(E08:S03:T17)**  
-**Planning for:** [FR-113](../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg-fr113.md)  
+**Planning for:** [FR-113](../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md)  
 **Status:** Approved (implementation authorized)
 
 > **IPW:** Produced for E08:S03:T17. Hybrid triggers: **6 h** monitor + RW Step 9 advisory gate + manual CLI. ADK-native layering per [ADR-022](../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md).
@@ -61,7 +61,7 @@ RF1–RF7 → layered modules under `packages/frameworks/tooling-automation/vali
 ### 2.3 Constraints
 
 - CodeQL CLI is an **external prerequisite** (not bundled); `--sarif` path supports tests and offline replay
-- Monitor: cron `0 */6 * * *`; skip if HEAD unchanged and snapshot **< 12 h**; force if **≥ 12 h**
+- Monitor: cron `0 */6 * * *`; skip if HEAD unchanged and snapshot **under 12 h**; force if **≥ 12 h**
 - RW Step 9: advisory unless `--strict`
 
 ### 2.4 Status transition intent
@@ -93,7 +93,7 @@ RF1–RF7 → layered modules under `packages/frameworks/tooling-automation/vali
 | T1 | Ratings | Fixture severities → Excellent/Good/Fair/Needs Improvement | RF3 |
 | T2 | SARIF parse | Fixture SARIF → normalized findings | RF2 |
 | T3 | Thresholds | Error-only fails on Warning | RF4 |
-| T4 | Skip logic | Unchanged HEAD + age <12h → skip | RF5, RF6 |
+| T4 | Skip logic | Unchanged HEAD + age under 12h → skip | RF5, RF6 |
 | T5 | Force logic | age ≥12h → run | RF5 |
 | T6 | Config | Missing block → clear error | RF7 |
 | T7 | Advisory RW | No `--strict` → exit 0 on breach | RNF4 |
@@ -176,7 +176,7 @@ See [ADR-022](../architecture/standards-and-adrs/ADR-022-local-code-quality-gate
 
 ## References
 
-- [FR-113](../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg-fr113.md)
+- [FR-113](../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md)
 - [T17](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)
 - [ADR-022](../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
 - [GitHub Code Quality metrics](https://docs.github.com/en/code-security/code-quality/reference/metrics-and-ratings)

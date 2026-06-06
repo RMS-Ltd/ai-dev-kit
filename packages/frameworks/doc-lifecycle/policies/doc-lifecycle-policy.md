@@ -3,7 +3,7 @@
 **Version:** 1.0.0  
 **Last Updated:** 2025-12-04  
 **Status:** Draft  
-**Related:** [Document Lifecycle Metadata Spec](./doc-lifecycle-metadata-spec.md) | [KB Structure Overview](./kb-structure-overview.md)
+**Related:** [Document Lifecycle Metadata Spec](./doc-lifecycle-metadata-spec.md)
 
 ---
 
@@ -313,7 +313,7 @@ When promoting/demoting documents, agents **MUST**:
 
 - **Specification:** [`doc-lifecycle-metadata-spec.md`](./doc-lifecycle-metadata-spec.md) – Metadata schema and field definitions
 - **Workflow:** `packages/frameworks/workflow-mgt/workflows/doc-housekeeping-workflow.yaml` – Automated housekeeping workflow
-- **KB Structure:** [`kb-structure-overview.md`](./kb-structure-overview.md) – KB organization
+- **KB Structure (dev-kit instance):** [`ultimate-canonical-kb-structure.md`](../../../../docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md) – dev-kit KB organization reference (not packaged)
 
 ---
 
@@ -427,6 +427,10 @@ because it documents completed work and is referenced in Story completion.
 
 ---
 
-**Last Updated:** 2025-12-04  
+**Last Updated:** 2026-06-06  
 **Status:** Draft – Awaiting review and adoption
+
+---
+
+**Source of truth:** Portable framework SoT. Dev-kit architecture mirror: `docs/architecture/standards-and-adrs/doc-lifecycle-policy.md`. See [ADR-023](../../../../docs/architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md) and [adr-dual-sot-parity.md](../docs/adr-dual-sot-parity.md).
 

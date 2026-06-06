@@ -438,7 +438,7 @@ def check_integration(policy_salience: Dict, workflow: str, step: str) -> List[s
 
 ## References
 
-- **Schema Specification:** `docs/architecture/standards-and-adrs/policy-salience-schema.md`
+- **Schema Specification:** [`../policies/policy-salience-schema.md`](../policies/policy-salience-schema.md) (package SoT; dev-kit mirror: `docs/architecture/standards-and-adrs/policy-salience-schema.md`)
 - **Template:** `packages/frameworks/doc-lifecycle/templates/POLICY_SALIENCE_TEMPLATE.md`
 - **Author Guide:** `packages/frameworks/doc-lifecycle/docs/policy-salience-guide.md`
 - **FR-022:** Policy Documents Machine-Readable Salience Section

@@ -9,6 +9,94 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.6+4] - 06-06-26
+
+E10:S01:T06 — **Change implemented:** Post-RC CI and portal link hygiene — Docusaurus build green, BR-068 publish-scope links, validator yaml import guards, greenfield-install sync (releases three direct commits after v0.10.1.6+3). SemVer **v0.4.1019+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.6+4.md)
+
+---
+
+## [0.10.1.6+3] - 06-06-26
+
+E10:S01:T06 — **Change implemented:** RC sign-off posture upgraded **DEFER → APPROVE** — C1–C6 pass; HIGH-gap remediation evidence from T08 (v0.10.1.8+1), T09 (v0.10.1.9+1), T10 (v0.10.1.10+1). SemVer **v0.4.1018+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.6+3.md)
+
+---
+
+## [0.10.1.9+1] - 06-06-26
+
+E10:S01:T09 — **Change implemented:** Architecture ADR dual SoT sync — ADR-023, package `policies/` SoT, `policy-salience-schema.md` packaged, mirror banners, salience cross-links, FR-110 greenfield re-sync; closes GAP-DOCLIFE-INTG-001. SemVer **v0.4.1017+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md)
+
+---
+
+## [0.10.1.10+1] - 06-06-26
+
+E10:S01:T10 — **Change implemented:** Fix `DocumentLifecycleValidator` — PyYAML import, five-field metadata enforcement, pytest TC1–TC8 green, greenfield mirror; closes GAP-DOCLIFE-TEST-001. SemVer **v0.4.1015+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md)
+
+---
+
+## [0.10.1.6+1] - 06-06-26
+
+E10:S01:T06 — **Change implemented:** RC sign-off criteria (C1–C6) and remediation backlog for Document Lifecycle package — **DEFER** posture; 16 gaps mapped; HIGH gaps filed as T08/T09/T10; Story E10:S01 complete. SemVer **v0.4.1013+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.6+1.md)
+
+---
+
+## [0.10.1.5+1] - 06-06-26
+
+E10:S01:T05 — **Change implemented:** Gap log and risk assessment for Document Lifecycle package — 16 `GAP-DOCLIFE-*` entries consolidated from T01–T04; conditional RC posture; `validate_gap_log.py --strict` PASS. SemVer **v0.4.1012+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md)
+
+---
+
+## [0.10.1.4+1] - 06-06-26
+
+E10:S01:T04 — **Change implemented:** Integration and dependency alignment review for Document Lifecycle package — companion report (nine domains), task doc fleshed, V1–V10 verified; feeds T05 gap log. SemVer **v0.4.1011+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md)
+
+---
+
+## [0.10.1.2+1] - 06-06-26
+
+E10:S01:T02 — **Change implemented:** Component inventory map for Document Lifecycle package — companion artefact, task doc fleshed, V1–V8 verified; feeds T05 gap remediation. SemVer **v0.4.1006+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.2+1.md)
+
+---
+
+## [0.10.1.1+1] - 06-06-26
+
+E10:S01:T01 — **Change implemented:** Expectations baseline for Document Lifecycle package — companion artefact, task doc fleshed, V1–V8 verified; Wave 2A gate complete. SemVer **v0.4.1005+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.1+1.md)
+
+---
+
+## [0.10.1.7+2] - 06-06-26
+
+E10:S01:T07 — **Change implemented:** Wave 1 IPP planning complete — six IPPs (T01–T06) for Document Lifecycle package RC review; task docs wired. SemVer **v0.4.1004+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.7+2.md)
+
+---
+
+## [0.10.1.7+1] - 06-06-26
+
+E10:S01:T07 — **Change implemented:** Coordinator orchestration plan, epic/10 branch bootstrap, kanban init for Document Lifecycle RC review. SemVer **v0.4.1003+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.7+1.md)
+
+---
+
 ## [0.8.3.17+2] - 06-06-26
 
 E08:S03:T17 — **Change implemented:** Local CQG (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022, tests. SemVer **v0.4.1002+2**.
