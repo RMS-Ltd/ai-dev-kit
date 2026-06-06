@@ -831,7 +831,7 @@ def main():
 
 
 if __name__ == "__main__":
-    exit(main())
+    sys.exit(main())
 
 
 def install_canonical_epics_only(

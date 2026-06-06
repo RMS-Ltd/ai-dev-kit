@@ -20,6 +20,9 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+- **[E08:S03:T13](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)** — Code Quality reliability backlog (BR-100): waves 1–3 burn-down (**133→28** open; **12** exit/quit fixed wave 3; **16** print → T12).
+  **Completed:** `2026-06-06T13:02:41Z` | **Version:** `v0.8.3.13+4` | **Agent:** `RW E08:S03:T13 --art` | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
+
 - **[E05:S07:T01](epics/epic-05/story-07-policy-documentation-structure/T01-implement-policy-documents-machine-readable-salience-section.md)** — Policy Docs machine-readable salience section (FR-022): schema, template, guides, key policy updates.
   **Completed:** `2025-12-12T00:00:00Z` | **Version:** `v0.5.7.1+1` | **Agent:** `UKW -u` | [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md) | [schema](../../architecture/standards-and-adrs/policy-salience-schema.md)
 

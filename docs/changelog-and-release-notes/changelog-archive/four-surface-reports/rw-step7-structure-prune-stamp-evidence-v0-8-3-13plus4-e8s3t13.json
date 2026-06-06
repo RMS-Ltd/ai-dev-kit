@@ -1,0 +1,12 @@
+{
+  "report_type": "rw_step7_structure_prune",
+  "release_scope": "E08:S03:T13",
+  "version": "v0.8.3.13+4",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E08:S03:T13": {
+      "allowed": true,
+      "reason": "Terminal task COMPLETE v0.8.3.13+4 — removed from active kboard S-band (kanban-completed ledger); BR-100 RESOLVED"
+    }
+  }
+}

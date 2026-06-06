@@ -15,6 +15,8 @@ housekeeping_policy: keep
 > **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E08:S03:T15**) or finite **standard-finding** burn-down while **E08:S03:T12–T14** are IN PROGRESS.
 >
 > **Revision (2026-06-05 — Wave 1 re-scan):** Operator refresh of [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) @ `main` **`f6aa4dca`**. **Maintainability 146 / Fair**; **Reliability 28 / Fair** (↑ from Needs Improvement after T13 wave-2); **AI panel 12** open. T16 records manifest + coordination delta only — **no standard-finding code edits** while T12–T14 remain IN PROGRESS.
+>
+> **Revision (2026-06-05 — operator deferral):** **Postpone all T16 activity** (RWs, re-scans, remediation) until **E08:S03:T12–T14** operator sign-off. T12–T14 chew through the finite backlog first; T16 resumes at Wave 2+ handoff. Exception: net-new **HIGH** code-scanning security alerts (BR-094 pattern).
 
 ---
 
@@ -32,6 +34,7 @@ housekeeping_policy: keep
 | RF6 | First version anchor: **`RW E08:S03:T16 --art`** after baseline manifest (AC4) | T16 AC4 |
 | RF7 | Novel **HIGH** CodeQL security alerts → dedicated BR + task (BR-094 pattern); return to T16 routine hygiene after | T16 scope boundary |
 | RF8 | **Wave 1+ re-scan manifest:** refresh Standard findings rule breakdown + scores @ current `main` SHA; record delta vs prior T16 baseline; cross-lane score milestones (e.g. reliability **Fair**) | Operator refresh 2026-06-05 |
+| RF9 | **Defer T16 activity** until **T12–T14** operator sign-off; T12–T14 burn down backlog to manageable residual before T16 perpetual waves | Operator directive 2026-06-05 |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -47,7 +50,8 @@ housekeeping_policy: keep
 - **Invariants:** Python 3.11+ (FR-104); no `git tag -f` on release tags (BR-097); three-surface split (Actions / standard findings / perpetual security-quality)
 - **In scope (Wave 0):** Baseline manifest + coordination matrix + AC4 RW; read-only Actions cross-lane snapshot
 - **In scope (Wave 1 re-scan):** Dashboard manifest refresh @ `f6aa4dca`; coordination matrix delta; read-only cross-lane score notes — **no code remediation**
-- **In scope (Wave 1+ remediation):** Perpetual themed hygiene after T12–T14 handoff or net-new code-scanning alerts
+- **Deferred (2026-06-05):** All Wave 1 RW + Wave 2+ activity until **T12–T14** sign-off — RF9
+- **In scope (post-handoff only):** Perpetual themed hygiene after T12–T14 COMPLETE or net-new code-scanning alerts (HIGH → BR-094)
 - **Out of scope:** [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow fixes → **T15**; BR-099/100/101 standard-finding waves → **T12–T14**; BR-099 wave-3 `greenfield-install/` → **T12**
 
 ---
@@ -147,9 +151,9 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 | 11 | Cross-cite T13 wave-2 outcome (read-only); no T16 code edits | RF2 |
 | **12** | **[MANDATORY] Reconcile status:** perpetual lane stays **IN PROGRESS**; update `Last updated` | TC8 |
 
-**Optional Wave 1 RW:** Manifest-only refresh may ship via **`RW E08:S03:T16 --art`** (BUILD +1) when operator batches doc updates; not required for IPW completion.
+**Optional Wave 1 RW:** ~~Manifest-only refresh may ship via **`RW E08:S03:T16 --art`** (BUILD +1) when operator batches doc updates~~ — **POSTPONED** per RF9 until T12–T14 sign-off.
 
-**Wave 2+ (after T12–T14 handoff or net-new alerts):**
+**Wave 2+ (gated — resume after T12–T14 operator sign-off):**
 
 | Step | Action |
 | ---- | ------ |
@@ -231,6 +235,7 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 - [x] Task remains IN PROGRESS (perpetual); not marked COMPLETE
 - [x] Wave 1 re-scan manifest @ `f6aa4dca` in T16 task doc (TC7–TC8)
 - [x] Coordination matrix reflects reliability **Fair** + **28** open (TC8)
+- [x] T16 activity **deferred** until T12–T14 sign-off documented (RF9)
 
 ---
 

@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.13+4] - 06-06-26
+
+E08:S03:T13 — **Change implemented:** BR-100 wave-3 reliability (exit/quit → `sys.exit(main())`; **12** findings; **16** print deferred T12). Task **COMPLETE**. SemVer **v0.4.998+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.13+4.md)
+
+---
+
 ## [0.8.3.12+6] - 06-06-26
 
 E08:S03:T12 — **Change implemented:** BR-099 wave-4 print-at-import (**14** files; logging migration). SemVer **v0.4.997+6**.

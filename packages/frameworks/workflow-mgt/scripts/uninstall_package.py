@@ -714,5 +714,5 @@ if __name__ == "__main__":
         print("ERROR: PyYAML is required. Install with: pip install pyyaml")
         sys.exit(1)
     
-    exit(main())
+    sys.exit(main())
 

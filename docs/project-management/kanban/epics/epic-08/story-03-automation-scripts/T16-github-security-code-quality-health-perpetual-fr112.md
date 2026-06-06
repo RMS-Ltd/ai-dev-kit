@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E08:S03:T16 — GitHub Security & Code Quality Health (Perpetual)
 
 **Task ID:** E08:S03:T16  
-**Status:** IN PROGRESS  
+**Status:** IN PROGRESS — **DEFERRED** (awaiting **E08:S03:T12–T14** operator sign-off)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (IPW Wave 1 re-scan — Standard findings @ `f6aa4dca`)  
+**Last updated:** 2026-06-05 (operator deferral — activity paused until T12–T14 complete)  
 **Version Anchor:** v0.8.3.16+1  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
@@ -55,6 +55,22 @@ Standing perpetual lane for **GitHub Advanced Security** hygiene:
 
 ---
 
+## Activity deferral (operator directive — 2026-06-05)
+
+**Postpone all T16 waves** (re-scans, remediation RWs, manifest-only releases) until **E08:S03:T12**, **T13**, and **T14** reach operator **sign-off** (COMPLETE + dashboard verification).
+
+**Rationale:** T12–T14 exist to **burn down the finite backlog** (maintainability, reliability, AI suggestions) so residual open counts are **manageable** before T16 assumes perpetual hygiene. T16 Wave 0 baseline + Wave 1 re-scan manifest are **record-only**; no further T16 work until handoff.
+
+| Allowed during deferral | Blocked until T12–T14 sign-off |
+| ----------------------- | ------------------------------ |
+| Read-only dashboard cross-refs in sibling task docs | `RW E08:S03:T16` (any BUILD) |
+| Net-new **HIGH** CodeQL **security** alerts → dedicated BR + task (BR-094 pattern), then return here | Standard-finding / AI remediation waves |
+| — | Periodic re-scan manifest updates on T16 |
+
+**Resume trigger:** Operator confirms **T12 + T13 + T14** COMPLETE → T16 Wave 2+ per [IPP §4](../../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md).
+
+---
+
 ## What this task does NOT own
 
 - [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow failures (red CI builds) → **E08:S03:T15**
@@ -86,6 +102,8 @@ When **T12**, **T13**, and **T14** reach **COMPLETE** / terminal verification:
 ## RW attribution
 
 Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD increments on perpetual task). Prefer one wave theme per RW.
+
+**Deferred:** No T16 RW until **T12–T14** sign-off (see [Activity deferral](#activity-deferral-operator-directive--2026-06-05)).
 
 ---
 

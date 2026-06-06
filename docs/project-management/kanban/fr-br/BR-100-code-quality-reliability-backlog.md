@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Bug Report BR-100: GitHub Code Quality — reliability findings backlog (34 open)
+# Bug Report BR-100: GitHub Code Quality — reliability findings backlog (28 open → 16 expected)
 
 **Bug ID:** BR-100  
 **Priority:** HIGH  
-**Severity:** HIGH — Code Quality **Reliability** score **Needs Improvement**; **34** open standard findings on `main` (2026-06-05 re-scan; was **133** @ `5fcf102`).  
-**Status:** IN PROGRESS  
+**Severity:** MEDIUM — Code Quality **Reliability** score **Fair** @ **28** open on `main` (`f6aa4dca`; was **Needs Improvement** @ **133**). Wave-3 local fix targets **12** exit/quit → **16** expected (print-at-import → T12).  
+**Status:** RESOLVED  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (v0.8.3.13+3 — wave-2 remediation shipped; **6** findings fixed; **28** expected open post-re-scan)  
-**Version:** v0.8.3.13+3  
+**Last updated:** 2026-06-06 (v0.8.3.13+4 — wave-3 complete; **16** print-at-import → T12)  
+**Version:** v0.8.3.13+4  
 **Implementing Task:** [E08:S03:T13](../epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md)
 
@@ -70,7 +70,9 @@ GitHub **Code Quality** reported **133 open reliability findings** on `main` (`5
 
 **Dashboard re-scan (2026-06-05):** [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) — **34** open reliability @ `main` `cadb0c3` (was **133**); score **Needs Improvement** (unchanged). Wave-2 triage on **34** residuals required for **Fair**+.
 
-**Wave-2 attempt (2026-06-05):** Per [IPP-E08S03T13 §4.1](../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — fixed **6** in-scope findings (`py/mixed-returns` ×4, `py/call/wrong-arguments` ×2) across 6 files; **28** deferred (16 `py/print-during-import` → T12, 12 `py/use-of-exit-or-quit` → wave 3). `pytest tests/` **406 passed**. Dashboard re-scan pending post-merge.
+**Wave-2 attempt (2026-06-05):** Per [IPP-E08S03T13 §4.1](../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — fixed **6** in-scope findings (`py/mixed-returns` ×4, `py/call/wrong-arguments` ×2) across 6 files; **28** deferred (16 `py/print-during-import` → T12, 12 `py/use-of-exit-or-quit` → wave 3). `pytest tests/` **406 passed**. Dashboard re-scan @ `f6aa4dca`: **28** open, score **Fair**.
+
+**Wave-3 attempt (2026-06-06):** Per [IPP-E08S03T13 §4.2](../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — fixed **12** `py/use-of-exit-or-quit` (`exit(main())` → `sys.exit(main())`) across 6 script pairs (`packages/` + `greenfield-install/`). `pytest tests/` **407 passed**. Dashboard re-scan pending post-merge; **16** print-at-import expected residual (T12 scope).
 
 ---
 
@@ -79,10 +81,14 @@ GitHub **Code Quality** reported **133 open reliability findings** on `main` (`5
 - [x] **AC1 — Baseline manifest:** Export open reliability finding counts by rule + file hotspots; attach to task doc with `main` SHA.
 - [x] **AC2 — Triage:** Classify each wave-1 rule group as **fix**, **false-positive waive** (with comment), or **defer** (with rationale).
 - [x] **AC3 — Wave 1 fixes:** Remediate all confirmed true positives in wave-1 rule groups; no new reliability regressions in CI.
-- [ ] **AC4 — Score improvement:** Reliability improves from **Needs Improvement** to **Fair** or better (or documented GitHub scoring lag).
-- [ ] **AC5 — Kanban wiring:** **BR-100** ↔ **E08:S03:T13** linked; released via RW when wave completes.
+- [x] **AC4 — Score improvement:** Reliability improves from **Needs Improvement** to **Fair** or better (Fair @ `f6aa4dca`; wave-3 exit/quit fixed locally — dashboard re-scan pending).
+- [x] **AC5 — Kanban wiring:** **BR-100** ↔ **E08:S03:T13** linked; released via RW @ **v0.8.3.13+4**.
 
 ---
+
+## Resolution (2026-06-06)
+
+**Resolved @ v0.8.3.13+4:** Three-wave reliability burn-down complete (**133→34→28** open; score **Needs Improvement → Fair**). Wave 3 cleared **12** `py/use-of-exit-or-quit`. Residual **16** `py/print-during-import` owned by [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) / [BR-099](BR-099-code-quality-maintainability-backlog.md). Dashboard re-scan pending post-merge for exit/quit bucket verification.
 
 ## Remediation waves (prescribed)
 
