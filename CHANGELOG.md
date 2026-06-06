@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.3+1] - 06-06-26
+
+E05:S08:T03 — **Change implemented:** FR-114 intake — big-bang Notion migration task filed (RW -k, --art). SemVer **v0.4.1022+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.3+1.md)
+
+---
+
 ## [0.5.9.15+1] - 06-06-26
 
 E05:S09:T15 — **Change implemented:** FR-114 intake — Docusaurus adopter-public publish allowlist task filed (RW -k, --art). SemVer **v0.4.1021+1**.

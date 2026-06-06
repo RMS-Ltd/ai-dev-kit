@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-02-22 (v0.5.8.2+8 – T02: E04:S16:T05 gap log spec, validator)  
-**Version:** v0.5.8.2+8  
+**Last updated:** 2026-06-06 (v0.5.8.3+1 — T03 FR-114 intake)  
+**Version:** v0.5.8.3+1  
 **Code:** E5S08
 
 **Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
@@ -21,11 +21,17 @@ housekeeping_policy: keep
 ---
 
 ## Task Checklist
-- [ ] **E05:S08:T01 – Investigate persistent knowledge base concept and ramifications** - TODO
+- [x] **E05:S08:T01 – Investigate persistent knowledge base concept and ramifications** - ✅ SUPERSEDED by [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (decision record; delivery via T03–T04)
   - Task: [`T01-investigate-persistent-knowledge-base-concept-and-ramificati`](story-08-knowledge-base/T01-investigate-persistent-knowledge-base-concept-and-ramificati.md)
 
 - [x] **E05:S08:T02 – Notion hub, Knowledge Base container, and KB index** ✅ COMPLETE (v0.5.8.2+8)
   - Task: [`T02-notion-hub-and-kb-index`](story-08-knowledge-base/T02-notion-hub-and-kb-index.md)
+
+- [ ] **E05:S08:T03 – Big-bang Notion migration of maintainer KB ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - 📋 TODO
+  - Task: [`T03-big-bang-notion-migration-maintainer-kb-fr114`](story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)
+
+- [ ] **E05:S08:T04 – Agent Notion-first authoring and bootstrap routing ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - 📋 TODO
+  - Task: [`T04-agent-notion-first-authoring-and-bootstrap-routing-fr114`](story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 
 ## Overview
 
