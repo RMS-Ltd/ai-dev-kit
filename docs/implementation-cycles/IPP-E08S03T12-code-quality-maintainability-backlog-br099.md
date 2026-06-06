@@ -11,7 +11,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T12-code-quality-maintainability-backlog-br099.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) **(E08:S03:T12)**  
 **Planning for:** [BR-099](../project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)  
-**Status:** Revised — wave 6 **PLANNED** @ v0.8.3.12+8; fresh step-28 capture **103/Fair** @ `d5c4bca5`; **Path B** (wave 6 code); awaiting **`implement wave 6`**
+**Status:** Revised — wave 6 **PLANNED** @ **v0.8.3.12+9**; step-28 **103/Fair** @ `d5c4bca5`; **Path B**; **`implement wave 6`** authorized
 
 > **IPW:** Produced for E08:S03:T12. Bulk **Code Quality maintainability** burn-down; complements security CodeQL tasks E08:S03:T08–T11 and defers reliability ([BR-100](../project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md) / E08:S03:T13).
 >
@@ -59,7 +59,7 @@ housekeeping_policy: keep
 | RF22 | Remediate wave-6 residual maintainability using **CodeQL-path verification** (CQG/SARIF), not ruff-only | 6 | **OPEN** — §4.7 steps 54–55 | T12 AC4, BR-099 AC3 |
 | RF23 | Post-wave-6 manifest + re-scan; return to §4.6 step 28 | 6 | **OPEN** — step 57 + loop | RF13, RF4 |
 
-**Release evidence:** v0.8.3.12+1 (wave-1 remediation), +2 (kanban re-scan), +3 (IPP link hygiene), +4 (wave-2 remediation), +5 (wave-3 verification), +6 (wave-4 print-at-import), +7 (wave-5 gap closure), +8 (closure docs). Post-merge capture **103/Fair** @ `d5c4bca5` (step 28). Wave 6 **planned**.
+**Release evidence:** v0.8.3.12+1 (wave-1 remediation), +2 (kanban re-scan), +3 (IPP link hygiene), +4 (wave-2 remediation), +5 (wave-3 verification), +6 (wave-4 print-at-import), +7 (wave-5 gap closure), +8 (closure docs), **+9 (wave-6 IPW planning)**. Post-merge capture **103/Fair** @ `d5c4bca5` (step 28).
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -615,7 +615,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 ## Implementation gate (P-IPW-GATE)
 
-**Planning complete (wave 6).** Fresh step-28 capture **103/Fair** @ `d5c4bca5`; **Path B** selected. Closure docs @ **v0.8.3.12+8**.
+**Planning complete (wave 6).** Shipped @ **v0.8.3.12+9**. Fresh step-28 capture **103/Fair** @ `d5c4bca5`; **Path B** selected.
 
 **Authorized next steps (explicit user command required for code):**
 

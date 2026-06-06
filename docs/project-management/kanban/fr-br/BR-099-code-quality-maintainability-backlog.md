@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **103** open standard findings on `main` @ `d5c4bca5` (2026-06-06 post–wave-5 merge + operator refresh; was **560** @ `5fcf102`, **146** lag-accepted pre-refresh).  
 **Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (wave-6 IPW — **103/Fair** @ `d5c4bca5`; Path B planned)  
-**Version:** v0.8.3.12+8  
+**Last updated:** 2026-06-06 (wave-6 IPW @ **v0.8.3.12+9**; **103/Fair** @ `d5c4bca5`)  
+**Version:** v0.8.3.12+9  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
@@ -82,7 +82,7 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 **Closure capture (2026-06-06):** Per [IPP-E08S03T12 §4.6](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — step 28 **103/Fair** @ `d5c4bca5` (operator UI + CQG). **Good+ not met** — wave 6 planned ([§4.7](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)); task **IN PROGRESS**; not "Fixed" until T16 confirms.
 
-**Wave-6 planning (2026-06-06):** Per [IPP-E08S03T12 §4.7](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — steps 52–53 **done** @ IPW; Chunks L/M + CQG verification; **`implement wave 6`** authorized.
+**Wave-6 planning (2026-06-06):** Per [IPP-E08S03T12 §4.7](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — steps 52–53 **done**; shipped @ **v0.8.3.12+9**; Chunks L/M + CQG verification **open**; **`implement wave 6`** authorized.
 
 ---
 
@@ -105,7 +105,7 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 | **3** | `greenfield-install/` mirror | Align mirrored tree or exclude from quality scope per policy |
 | **4** | T13 print handoff | `py/print-during-import` (reliability band) — **done** @ v0.8.3.12+6 |
 | **5** | CodeQL-aligned maintainability | Shipped @ **v0.8.3.12+7**; closure **Fair** — wave 6 **planned** |
-| **6** | Residual burn-down (Fair persists) | **PLANNED** — [IPP §4.7](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md); **103** open @ `d5c4bca5` |
+| **6** | Residual burn-down (Fair persists) | **PLANNED** @ **v0.8.3.12+9** — **103** open @ `d5c4bca5`; code **open** |
 
 ---
 

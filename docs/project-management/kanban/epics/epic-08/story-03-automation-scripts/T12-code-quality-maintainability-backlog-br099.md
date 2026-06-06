@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (wave-6 IPW — fresh capture **103/Fair** @ `d5c4bca5`; Path B; **`implement wave 6`** authorized)  
-**Version Anchor:** v0.8.3.12+8  
-**Version:** v0.8.3.12+8
+**Last updated:** 2026-06-06 (wave-6 IPW @ **v0.8.3.12+9**; **103/Fair** @ `d5c4bca5`; Path B)
+**Version Anchor:** v0.8.3.12+9  
+**Version:** v0.8.3.12+9
 **Code:** E08S03T12
 
 **Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 5 @ **v0.8.3.12+7**. Step 28: **103/Fair** @ `d5c4bca5` (operator UI + CQG). Wave 6 **planned** per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15). Task **IN PROGRESS** until **Good+**.
