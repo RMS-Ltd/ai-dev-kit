@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Story 008 – Knowledge Base
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-06 (v0.5.8.3+2 — T03 IN PROGRESS Notion policy)  
+**Last updated:** 2026-06-06 (UKW — T03 Notion clean-slate policy active; T04 TODO intake complete)  
 **Version:** v0.5.8.3+2  
 **Code:** E5S08
 
@@ -24,18 +24,21 @@ housekeeping_policy: keep
 - [x] **E05:S08:T01 – Investigate persistent knowledge base concept and ramifications** - ✅ SUPERSEDED by [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (decision record; delivery via T03–T04)
   - Task: [`T01-investigate-persistent-knowledge-base-concept-and-ramificati`](story-08-knowledge-base/T01-investigate-persistent-knowledge-base-concept-and-ramificati.md)
 
+
 - [x] **E05:S08:T02 – Notion hub, Knowledge Base container, and KB index** ✅ COMPLETE (v0.5.8.2+8)
   - Task: [`T02-notion-hub-and-kb-index`](story-08-knowledge-base/T02-notion-hub-and-kb-index.md)
 
+
 - [ ] **E05:S08:T03 – Big-bang Notion migration of maintainer KB ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - 🔄 IN PROGRESS (**v0.5.8.3+2**)
   - Task: [`T03-big-bang-notion-migration-maintainer-kb-fr114`](story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)
+
 
 - [ ] **E05:S08:T04 – Agent Notion-first authoring and bootstrap routing ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - 📋 TODO
   - Task: [`T04-agent-notion-first-authoring-and-bootstrap-routing-fr114`](story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 
 ## Overview
 
-This story investigates the ramifications of the "Persistent Knowledge Base" concept that has been integrated into the canonical KB structure. The concept defines a local, curated, version-controlled knowledge library that persists across sessions and is managed by agents. This investigation will assess the implications, requirements, and potential impacts on workflows, tooling, and documentation practices.
+Story 008 delivers the **maintainer KB surface** under [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md): big-bang Notion migration (**T03** IN PROGRESS @ v0.5.8.3+2) and agent Notion-first authoring/bootstrap routing (**T04** TODO). T01 investigation scope is superseded by FR-114; T02 (hub/KB index) is complete.
 
 ---
 

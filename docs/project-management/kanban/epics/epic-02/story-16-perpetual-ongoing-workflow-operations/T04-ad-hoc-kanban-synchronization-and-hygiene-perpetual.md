@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-06 (UKW comprehensive — post-merge sync; BR-100 ledger; T16 deferral narrowed)
-**Version Anchor:** v0.2.16.4+35
+**Last updated:** 2026-06-06 (RW **v0.2.16.4+36** — UKW comprehensive kanban sync committed)
+**Version Anchor:** v0.2.16.4+36
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 

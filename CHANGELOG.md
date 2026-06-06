@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.4+36] - 06-06-26
+
+E02:S16:T04 — **Change implemented:** UKW comprehensive kanban sync — E05:S08 IN PROGRESS, E08:S03 CQG/T12 alignment, gap scan clean; perpetual UKW BUILD +36. SemVer **v0.4.1028+36**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+36.md)
+
+---
+
 ## [0.21.0.1+1] - 06-06-26
 
 E21:S00:T01 — **Change implemented:** FR-006 Epic 21 kanban rehouse — UK English naming, S00–S06 story trees, template sync. SemVer **v0.4.1027+1**.
