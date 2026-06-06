@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T06-define-rc-sign-off-criteria-and-remediation-tasks.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) **(E10:S01:T06)**  
 **Planning for:** [T05 gap log](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [E10S01 orchestration plan §7.4 T06 / §8.7](./E10S01-orchestration-plan.md) · [IPP-E02S13T06 precedent](./IPP-E02S13T06-rc-sign-off-remediation.md)  
-**Status:** Draft — IPW complete; awaiting user authorization for implementation  
+**Status:** Implementation complete — released v0.10.1.6+1 via `RW E10:S01:T06 --art`  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
 ---

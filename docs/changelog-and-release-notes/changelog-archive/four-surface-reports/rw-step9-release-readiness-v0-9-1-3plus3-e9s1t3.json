@@ -13,15 +13,14 @@
   },
   "summary": {
     "blocking_failures": [
-      "Gate 5: Stage-set completeness (BR-070)",
-      "Gate 8: Stamp homogeneity (FR-097)"
+      "Gate 5: Stage-set completeness (BR-070)"
     ],
-    "gates_failed": 2,
-    "gates_passed": 9,
+    "gates_failed": 1,
+    "gates_passed": 10,
     "gates_total": 11,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-06 14:48 UTC",
+  "timestamp_utc": "2026-06-06 14:52 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -87,7 +86,7 @@
         },
         "stamp_evidence_aggregate": {
           "stamps_appended_with_evidence": 0,
-          "stamps_preserved_existing": 20,
+          "stamps_preserved_existing": 18,
           "stamps_skipped_no_evidence": 0
         }
       },
@@ -187,19 +186,15 @@
     {
       "evidence": {
         "homogeneity_threshold": 3,
-        "kboard.md": {
-          "2026-06-06 14:44 UTC": 4
-        }
+        "kboard.md": {}
       },
-      "findings": [
-        "kboard.md: stamp '2026-06-06 14:44 UTC' appears on 4 rows (threshold 3, not git-single-commit exempt): ['E10:S01:T03', 'E10:S01:T04', 'E10:S01:T05', 'E10:S01:T06']"
-      ],
+      "findings": [],
       "gate_id": 8,
-      "is_blocking_failure": true,
+      "is_blocking_failure": false,
       "name": "Stamp homogeneity (FR-097)",
-      "passed": false,
+      "passed": true,
       "severity": "block",
-      "summary": "Homogenized stamp cluster(s) detected; run backfill or fix hygiene.",
+      "summary": "No homogeneity clusters at or above threshold.",
       "waive_reason": null,
       "waived": false
     },

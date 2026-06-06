@@ -103,7 +103,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** HIGH (adopters expect workflow from package tree)
 - **RC Impact:** NON-BLOCKING (documented-future; manual housekeeping documented)
-- **Tracking:** T06 remediation backlog; Wave 3 implementation
+- **Tracking:** [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) — filed 2026-06-06
 
 ---
 
@@ -117,7 +117,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** HIGH (PACKAGE_OVERVIEW cites script as package component)
 - **RC Impact:** NON-BLOCKING (cross-package `DocumentLifecycleValidator` exists but is broken — see Gap 5)
-- **Tracking:** T06 remediation backlog; Wave 3
+- **Tracking:** [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) — filed 2026-06-06
 
 ---
 
@@ -131,7 +131,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** HIGH (policy mandates reference-aware cleanup)
 - **RC Impact:** NON-BLOCKING (manual process documented)
-- **Tracking:** T06 remediation backlog; Wave 3
+- **Tracking:** [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) — filed 2026-06-06
 
 ---
 
@@ -145,7 +145,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** MEDIUM (content equivalent today; drift risk on partial edits)
 - **RC Impact:** NON-BLOCKING (substantive policy content aligned)
-- **Tracking:** T06 remediation backlog — ADR merge / packaging policy
+- **Tracking:** [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) — filed 2026-06-06
 
 ---
 
@@ -159,7 +159,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** HIGH (reproducible runtime failure)
 - **RC Impact:** NON-BLOCKING (repo agents use `.cursorrules`; validator not wired to pre-commit)
-- **Tracking:** T06 remediation backlog; E8 tooling-automation fix wave
+- **Tracking:** [E10:S01:T10](T10-fix-document-lifecycle-validator.md) — filed 2026-06-06
 
 ---
 
@@ -382,10 +382,10 @@ All 16 gaps are **Document Lifecycle package implementation, documentation, inte
   - [x] Release via `RW E10:S01:T05 --art` → `v0.10.1.5+1`
 
 - **For follow-on (E10:S01:T06):**
-  - [ ] Define RC sign-off criteria (C1–C6) from this gap log → [T06](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-  - [ ] File remediation tasks for HIGH gaps (Gaps 1–5) → E10:S01:T08+
-  - [ ] Schedule MEDIUM doc/cohesion backlog (Gaps 6–13) in T06 remediation list
-  - [ ] Optional LOW/informational items (Gaps 14–16) in T06 backlog
+  - [x] Define RC sign-off criteria (C1–C6) from this gap log → [T06](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+  - [x] File remediation tasks for HIGH gaps (Gaps 1–5) → [T08](T08-implement-doc-housekeeping-workflow-and-scripts.md), [T09](T09-sync-architecture-adr-dual-sot.md), [T10](T10-fix-document-lifecycle-validator.md)
+  - [x] Schedule MEDIUM doc/cohesion backlog (Gaps 6–13) in T06 remediation list
+  - [x] Optional LOW/informational items (Gaps 14–16) in T06 backlog
 
 ---
 

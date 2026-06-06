@@ -3,16 +3,15 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E9:S1:T3 (v0.9.1.3+3)
-- **Timestamp (UTC):** 2026-06-06 14:48 UTC
+- **Timestamp (UTC):** 2026-06-06 14:52 UTC
 - **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-9-1-3plus2-e9s1t3.json`
 
 ## Overall verdict
 
 - **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
   - Gate 5: Stage-set completeness (BR-070)
-  - Gate 8: Stamp homogeneity (FR-097)
 
-- Gates: 9/11 passed (2 failed, 0 waived).
+- Gates: 10/11 passed (1 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -57,7 +56,7 @@
 - Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
   - `/Users/rms/Documents/projects/ai-dev-kit-e10s01/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 20}`
+  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 18}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
@@ -95,13 +94,11 @@
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: Homogenized stamp cluster(s) detected; run backfill or fix hygiene.
-- Findings:
-  - kboard.md: stamp '2026-06-06 14:44 UTC' appears on 4 rows (threshold 3, not git-single-commit exempt): ['E10:S01:T03', 'E10:S01:T04', 'E10:S01:T05', 'E10:S01:T06']
+- Status: **PASS** (severity: `block`)
+- Summary: No homogeneity clusters at or above threshold.
 - Evidence:
   - `homogeneity_threshold`: `3`
-  - `kboard.md`: `{'2026-06-06 14:44 UTC': 4}`
+  - `kboard.md`: `{}`
 
 ### Gate 9 — MoSCOW state icons (UXR-012)
 
