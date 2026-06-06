@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-06 (RW: E08:S03:T12)
-**Version:** v0.8.3.12+9
+**Last Updated:** 2026-06-06 (RW -k E21:S00:T01 — FR-006 Epic 21 kanban rehouse)
+**Version:** v0.21.0.1+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -56,7 +56,7 @@ housekeeping_policy: keep
 
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | —No IPP— | Last modified: 2026-06-04 12:15 UTC
 
-- **E21:S00:T01** – FR-006: Localization Language Selection UK/US English - 📋 TODO (LOW, Language selection for UK/US English) | [Task](epics/epic-21/story-00-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2025-12-09 00:00 UTC
+- **E21:S00** – FR-006 Phase 1: Language selection at setup (UK/US English) - 📋 TODO (LOW, **v0.21.0.1+1** RW -k kanban rehouse; 7 tasks T01–T07; per-locale Phase 2 → S04–S06) | [Story](epics/epic-21/story-00-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [Epic 21](epics/epic-21/Epic-21.md) | —No IPP— | Last modified: 2026-06-06 17:13 UTC
 
 ### Ongoing (O) - Perpetual Tasks
 

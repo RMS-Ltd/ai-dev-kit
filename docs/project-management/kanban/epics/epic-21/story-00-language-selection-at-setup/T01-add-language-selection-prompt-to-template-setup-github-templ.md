@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E21:S00:T01  
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-05 (v0.0.0.0+0 – migrated from embedded Story section)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-06 (v0.21.0.1+1 — RW -k kanban rehouse; implementation TODO)  
+**Version:** v0.21.0.1+1  
 **Code:** E21S00T01
 
 ---
@@ -54,6 +54,14 @@ housekeeping_policy: keep
 - [ ] Setup process documented
 
 ---
+
+---
+
+## Kanban-init intake
+
+**Branch:** `epic/21-internationalisation-localisation` (kanban filed from `dev` via `--art`)
+
+**Released:** `v0.21.0.1+1` — RW -k E21:S00:T01 --art (2026-06-06)
 
 ---
 

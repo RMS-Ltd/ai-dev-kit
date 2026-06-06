@@ -6,14 +6,14 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 21: Internationalization and Localization
+# Epic 21: Internationalisation and Localisation
 
 **Status:** TODO  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** [YYYY-MM-DD]  
 **Last updated:** [YYYY-MM-DD] (v0.21.0.0+0 – Template created)  
-**Branch:** `epic/21-internationalization`  
+**Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [Optional]
 
@@ -22,8 +22,8 @@ housekeeping_policy: keep
 ## Story Checklist
 
 - [ ] **E21:S00 – Language Selection at Setup (MVP - UK/US English)** - TODO
-- [ ] **E21:S01 – Internationalization Infrastructure** - TODO
-- [ ] **E21:S02 – Translation and Localization** - TODO
+- [ ] **E21:S01 – Internationalisation Infrastructure** - TODO
+- [ ] **E21:S02 – Translation and Localisation** - TODO
 - [ ] **E21:S03 – Cultural Adaptation** - TODO
 
 > **CRITICAL:** This Story Checklist is the **SINGLE SOURCE OF TRUTH** for story status and version markers.  
@@ -40,9 +40,9 @@ housekeeping_policy: keep
 
 ## Overview
 
-This epic encompasses internationalization (i18n) and localization (l10n) activities, including language selection at setup, translation infrastructure, translation management, and cultural adaptation. This epic provides the organizational structure for making the framework accessible to users worldwide, supporting multiple languages and cultural preferences.
+This epic encompasses internationalisation (i18n) and localisation (l10n) activities, including language selection at setup, translation infrastructure, translation management, and cultural adaptation. This epic provides the organisational structure for making the framework accessible to users worldwide, supporting multiple languages and cultural preferences.
 
-**Purpose:** Multi-language support and localization.  
+**Purpose:** Multi-language support and localisation.  
 **Scope:** Translation, locale management, cultural adaptation, RTL support, language selection at setup.  
 **Status:** Project-specific (canonical pattern)
 
@@ -52,7 +52,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 
 1. **Language Selection at Setup:** Add language selection prompt (UK/US English MVP)
 2. **Set Up i18n Infrastructure:** Establish i18n infrastructure for broader language support
-3. **Implement Translations:** Create translations and localization for major languages
+3. **Implement Translations:** Create translations and localisation for major languages
 4. **Cultural Adaptation:** Adapt content and features for different cultures
 
 ---
@@ -97,7 +97,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 
 ---
 
-### Story 1: Internationalization Infrastructure
+### Story 1: Internationalisation Infrastructure
 
 **Status:** TODO  
 **Priority:** HIGH  
@@ -113,7 +113,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - [ ] E21:S01:T04 – Add language switching functionality
 - [ ] E21:S01:T05 – Configure date/time/number formatting per locale
 - [ ] E21:S01:T06 – Implement translation key system
-- [ ] E21:S01:T07 – Set up translation fallback chain (selected → English → US English)
+- [ ] E21:S01:T07 – Set up translation fallback chain (selected → UK English → US English)
 
 > **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E21:S01:T01`, not `T01` alone)
 
@@ -133,18 +133,18 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - Depends on Story 0 (Language Selection at Setup)
 - *Parallel Development Candidacy:* Blocked (requires Story 0 language selection)
 
-> Full story: `docs/project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md`
+> Full story: `docs/project-management/kanban/epics/epic-21/story-01-internationalisation-infrastructure.md`
 
 ---
 
-### Story 2: Translation and Localization
+### Story 2: Translation and Localisation
 
 **Status:** TODO  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Last updated:** [YYYY-MM-DD] (v0.21.2.0+0 – Template created)
 
-**Goal:** Implement translations and localization for major languages.
+**Goal:** Implement translations and localisation for major languages.
 
 **Tasks:**
 - [ ] E21:S02:T01 – Identify and extract all translatable content
@@ -170,10 +170,10 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - Translations and locale support tested
 
 **Parallel Development Dependencies:**
-- Depends on Story 1 (Internationalization Infrastructure)
+- Depends on Story 1 (Internationalisation Infrastructure)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 infrastructure)
 
-> Full story: `docs/project-management/kanban/epics/epic-21/story-02-translation-and-localization.md`
+> Full story: `docs/project-management/kanban/epics/epic-21/story-02-translation-and-localisation.md`
 
 ---
 
@@ -210,7 +210,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - Cultural considerations and guidelines documented
 
 **Parallel Development Dependencies:**
-- Depends on Story 2 (Translation and Localization)
+- Depends on Story 2 (Translation and Localisation)
 - Coordinates with Epic 12 (Frontend & UI) for RTL support
 - *Parallel Development Candidacy:* Blocked (requires Story 2 translations)
 
@@ -244,7 +244,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 
 ## References
 
-- Internationalization best practices
+- Internationalisation best practices
 - Translation management standards
 - Cultural adaptation guidelines
 - RTL support patterns

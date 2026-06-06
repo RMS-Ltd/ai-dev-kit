@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Story 001 – Internationalization Infrastructure
+# Story 001 – Internationalisation Infrastructure
 
 **Status:** TODO  
 **Priority:** MEDIUM  
@@ -26,26 +26,26 @@ Set up i18n infrastructure and framework for broader language support beyond UK/
 
 ## Goal
 
-Establish a robust internationalization infrastructure that supports multiple languages, with locale detection, language switching, and locale-specific formatting. This provides the foundation for Phase 2 of FR-006 (international localization).
+Establish a robust internationalisation infrastructure that supports multiple languages, with locale detection, language switching, and locale-specific formatting. This provides the foundation for Phase 2 of FR-006 (international localisation).
 
 ---
 
 ## Task Checklist
 
 - [ ] **E21:S01:T01 – Choose i18n framework/library** - TODO
-  - Task: [`T01-choose-i18n-frameworklibrary`](story-01-internationalization-infrastructure/T01-choose-i18n-frameworklibrary.md)
+  - Task: [`T01-choose-i18n-frameworklibrary`](story-01-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md)
 - [ ] **E21:S01:T02 – Set up translation file structure (`locales/{lang}/`)** - TODO
-  - Task: [`T02-set-up-translation-file-structure-localeslang`](story-01-internationalization-infrastructure/T02-set-up-translation-file-structure-localeslang.md)
+  - Task: [`T02-set-up-translation-file-structure-localeslang`](story-01-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md)
 - [ ] **E21:S01:T03 – Implement locale detection (browser/system locale)** - TODO
-  - Task: [`T03-implement-locale-detection-browsersystem-locale`](story-01-internationalization-infrastructure/T03-implement-locale-detection-browsersystem-locale.md)
+  - Task: [`T03-implement-locale-detection-browsersystem-locale`](story-01-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md)
 - [ ] **E21:S01:T04 – Add language switching functionality** - TODO
-  - Task: [`T04-add-language-switching-functionality`](story-01-internationalization-infrastructure/T04-add-language-switching-functionality.md)
+  - Task: [`T04-add-language-switching-functionality`](story-01-internationalisation-infrastructure/T04-add-language-switching-functionality.md)
 - [ ] **E21:S01:T05 – Configure date/time/number formatting per locale** - TODO
-  - Task: [`T05-configure-datetimenumber-formatting-per-locale`](story-01-internationalization-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md)
+  - Task: [`T05-configure-datetimenumber-formatting-per-locale`](story-01-internationalisation-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md)
 - [ ] **E21:S01:T06 – Implement translation key system** - TODO
-  - Task: [`T06-implement-translation-key-system`](story-01-internationalization-infrastructure/T06-implement-translation-key-system.md)
-- [ ] **E21:S01:T07 – Set up translation fallback chain (selected → English → US English)** - TODO
-  - Task: [`T07-set-up-translation-fallback-chain-selected-english-us-englis`](story-01-internationalization-infrastructure/T07-set-up-translation-fallback-chain-selected-english-us-englis.md)
+  - Task: [`T06-implement-translation-key-system`](story-01-internationalisation-infrastructure/T06-implement-translation-key-system.md)
+- [ ] **E21:S01:T07 – Set up translation fallback chain (selected → UK English → US English)** - TODO
+  - Task: [`T07-set-up-translation-fallback-chain-selected-english-us-englis`](story-01-internationalisation-infrastructure/T07-set-up-translation-fallback-chain-selected-english-us-englis.md)
 
 ---
 
@@ -64,15 +64,15 @@ Establish a robust internationalization infrastructure that supports multiple la
 ## Dependencies
 
 **Blocks:**
-- Translation and Localization (Story 2)
+- Translation and Localisation (Story 2)
 - Cultural Adaptation (Story 3)
 
 **Blocked By:**
 - E21:S00: Language Selection at Setup (MVP)
 
 **Related Work:**
-- **FR-006:** Localization and Language Selection (Phase 2)
-- **E21:S02:** Translation and Localization
+- **FR-006:** Localisation and Language Selection (Phase 2)
+- **E21:S02:** Translation and Localisation
 - **E21:S03:** Cultural Adaptation
 
 ---

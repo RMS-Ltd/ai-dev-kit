@@ -41,7 +41,7 @@ housekeeping_policy: keep
 ## Deliverable
 
 - Translation file structure (`locales/{lang}/`)
-- File organization standards
+- File organisation standards
 - Naming conventions
 
 ---
@@ -49,10 +49,24 @@ housekeeping_policy: keep
 ## Acceptance Criteria
 
 - [ ] Translation file structure created
-- [ ] Directory structure organized
+- [ ] Directory structure organised
 - [ ] Naming conventions documented
 
 ---
+
+---
+
+## Kanban-init intake
+
+**Branch:** `epic/21-internationalisation-localisation`
+
+**Trigger:**
+
+```text
+RW -k E21:S01:T02 --art --dpz
+```
+
+**Target version anchor:** `v0.21.1.2+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -66,5 +80,5 @@ housekeeping_policy: keep
 
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
-**Source Story:** `docs/project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md`
+**Source Story:** `docs/project-management/kanban/epics/epic-21/story-01-internationalisation-infrastructure.md`
 

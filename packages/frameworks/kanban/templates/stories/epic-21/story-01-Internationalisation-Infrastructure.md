@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 21, Story 1: Internationalization Infrastructure
+# Epic 21, Story 1: Internationalisation Infrastructure
 
 **Status:** TODO  
 **Priority:** HIGH  
@@ -81,7 +81,7 @@ Set up i18n infrastructure and framework for broader language support for the {P
 ## Dependencies
 
 **Blocks:**
-- Story 2: Translation and Localization (requires i18n infrastructure)
+- Story 2: Translation and Localisation (requires i18n infrastructure)
 - Story 3: Cultural Adaptation (requires i18n infrastructure)
 
 **Blocked By:**

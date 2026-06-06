@@ -12,15 +12,15 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2025-12-09 (v0.21.0.0+0 – Story created)  
-**Version:** v0.21.0.0+0  
+**Last updated:** 2026-06-06 (v0.21.0.1+1 — RW -k kanban rehouse)  
+**Version:** v0.21.0.1+1  
 **Code:** E21S00
 
 ---
 
 ## Overview
 
-Add language selection prompt at the very beginning of all setup processes, starting with UK and US English variants. This addresses cultural preferences and makes the framework more accessible to users from different regions.
+Add language selection prompt at the very beginning of all setup processes, starting with **UK English (en-GB, default)** and US English (en-US) variants. Phase 1 host story for FR-006.
 
 ---
 
@@ -57,7 +57,7 @@ Make language selection the first step in all setup processes, allowing users to
 - [ ] All documentation uses selected variant
 - [ ] All templates use selected variant
 - [ ] All generated content uses selected variant
-- [ ] Default to US English if not specified
+- [ ] Default to UK English if not specified (en-GB primary; en-US supported)
 - [ ] Language can be changed later (with content regeneration)
 
 ---
@@ -67,14 +67,14 @@ Make language selection the first step in all setup processes, allowing users to
 **Blocks:**
 - Improved accessibility for UK English speakers
 - Cultural preference support
-- Foundation for international localization (Phase 2)
+- Foundation for international localisation (Phase 2)
 
 **Blocked By:**
-- FR-006: Localization and Language Selection (accepted)
+- FR-006: Localisation and Language Selection (accepted)
 
 **Related Work:**
-- **FR-006:** Localization and Language Selection (UK/US English + International)
-- **E21:S01:** Internationalization Infrastructure (Phase 2)
+- **FR-006:** Localisation and Language Selection (UK/US English + International)
+- **E21:S01:** Internationalisation Infrastructure (Phase 2)
 
 ---
 

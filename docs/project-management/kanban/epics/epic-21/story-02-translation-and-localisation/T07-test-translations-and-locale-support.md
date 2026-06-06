@@ -50,10 +50,24 @@ housekeeping_policy: keep
 
 - [ ] Translations tested for each language
 - [ ] Locale support tested
-- [ ] Fallback behavior tested
+- [ ] Fallback behaviour tested
 - [ ] Test documentation created
 
 ---
+
+---
+
+## Kanban-init intake
+
+**Branch:** `epic/21-internationalisation-localisation`
+
+**Trigger:**
+
+```text
+RW -k E21:S02:T07 --art --dpz
+```
+
+**Target version anchor:** `v0.21.2.7+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -67,5 +81,5 @@ housekeeping_policy: keep
 
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
-**Source Story:** `docs/project-management/kanban/epics/epic-21/story-02-translation-and-localization.md`
+**Source Story:** `docs/project-management/kanban/epics/epic-21/story-02-translation-and-localisation.md`
 

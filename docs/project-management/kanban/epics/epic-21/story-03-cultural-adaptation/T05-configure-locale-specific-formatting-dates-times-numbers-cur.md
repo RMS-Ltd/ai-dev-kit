@@ -59,6 +59,20 @@ housekeeping_policy: keep
 
 ---
 
+## Kanban-init intake
+
+**Branch:** `epic/21-internationalisation-localisation`
+
+**Trigger:**
+
+```text
+RW -k E21:S03:T05 --art --dpz
+```
+
+**Target version anchor:** `v0.21.3.5+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+
+---
+
 ## Version Anchor
 
 **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`

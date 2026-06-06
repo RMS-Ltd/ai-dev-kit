@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E21:S00:T01": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.21.0.1+1 — rehouse E21:S00:T01 task row to story-level E21:S00 (FR-006 phase mapping)"
+    },
+    "E21:S00": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.21.0.1+1 — new story-level E21:S00 row with release-scope stamp 2026-06-06 17:13 UTC"
+    }
+  }
+}

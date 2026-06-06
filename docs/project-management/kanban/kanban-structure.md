@@ -454,7 +454,7 @@ housekeeping_policy: keep
 
 ---
 
-### Epic 21: Internationalization and Localization
+### Epic 21: Internationalisation and Localisation
 
 **Status:** TODO  
 **Priority:** MEDIUM  
@@ -466,13 +466,13 @@ housekeeping_policy: keep
   - Tasks: T01-T07 TODO
 
 
-- [ ] **E21:S01 – Internationalization Infrastructure** - TODO (v0.21.0.0+0)
-  - Story: [`epics/epic-21/story-01-internationalization-infrastructure.md`](epics/epic-21/story-01-internationalization-infrastructure.md)
+- [ ] **E21:S01 – Internationalisation Infrastructure** - TODO (v0.21.0.0+0)
+  - Story: [`epics/epic-21/story-01-internationalisation-infrastructure.md`](epics/epic-21/story-01-internationalisation-infrastructure.md)
   - Tasks: T01-T07 TODO
 
 
-- [ ] **E21:S02 – Translation and Localization** - TODO (v0.21.0.0+0)
-  - Story: [`epics/epic-21/story-02-translation-and-localization.md`](epics/epic-21/story-02-translation-and-localization.md)
+- [ ] **E21:S02 – Translation and Localisation** - TODO (v0.21.0.0+0)
+  - Story: [`epics/epic-21/story-02-translation-and-localisation.md`](epics/epic-21/story-02-translation-and-localisation.md)
   - Tasks: T01-T07 TODO
 
 

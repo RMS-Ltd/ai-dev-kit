@@ -81,7 +81,7 @@ Add language selection prompt at the very beginning of setup processes, starting
 ## Dependencies
 
 **Blocks:**
-- Story 1: Internationalization Infrastructure (foundation for i18n)
+- Story 1: Internationalisation Infrastructure (foundation for i18n)
 
 **Blocked By:**
 - None

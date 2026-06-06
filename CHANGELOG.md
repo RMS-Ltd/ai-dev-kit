@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.21.0.1+1] - 06-06-26
+
+E21:S00:T01 — **Change implemented:** FR-006 Epic 21 kanban rehouse — UK English naming, S00–S06 story trees, template sync. SemVer **v0.4.1027+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.0.1+1.md)
+
+---
+
 ## [0.8.3.12+9] - 06-06-26
 
 E08:S03:T12 — **Change implemented:** BR-099 wave-6 IPW planning (103/Fair @ `d5c4bca5`; §4.7 ledger; Path B). SemVer **v0.4.1026+9**.

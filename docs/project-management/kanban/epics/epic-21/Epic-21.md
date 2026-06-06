@@ -6,14 +6,14 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 21: Internationalization and Localization
+# Epic 21: Internationalisation and Localisation
 
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2025-12-09 (v0.21.0.0+0 – Epic created)  
-**Branch:** `epic/21-internationalization-localization`  
+**Last updated:** 2026-06-06 (v0.21.0.1+1 — RW -k FR-006 kanban rehouse; branch `epic/21-internationalisation-localisation`)  
+**Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
 
@@ -25,12 +25,12 @@ housekeeping_policy: keep
   - Story: [`story-00-language-selection-at-setup.md`](story-00-language-selection-at-setup.md)
   - Tasks: T01-T07 TODO
 
-- [ ] **E21:S01 – Internationalization Infrastructure** - TODO (v0.21.0.0+0)
-  - Story: [`story-01-internationalization-infrastructure.md`](story-01-internationalization-infrastructure.md)
+- [ ] **E21:S01 – Internationalisation Infrastructure** - TODO (v0.21.0.0+0)
+  - Story: [`story-01-internationalisation-infrastructure.md`](story-01-internationalisation-infrastructure.md)
   - Tasks: T01-T07 TODO
 
-- [ ] **E21:S02 – Translation and Localization** - TODO (v0.21.0.0+0)
-  - Story: [`story-02-translation-and-localization.md`](story-02-translation-and-localization.md)
+- [ ] **E21:S02 – Translation and Localisation** - TODO (v0.21.0.0+0)
+  - Story: [`story-02-translation-and-localisation.md`](story-02-translation-and-localisation.md)
   - Tasks: T01-T07 TODO
 
 - [ ] **E21:S03 – Cultural Adaptation** - TODO (v0.21.0.0+0)
@@ -42,7 +42,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Epic 21 owns the **Internationalization and Localization** framework for ai-dev-kit, making the framework accessible to users worldwide. This epic addresses:
+Epic 21 owns the **Internationalisation and Localisation** framework for ai-dev-kit, making the framework accessible to users worldwide. This epic addresses:
 
 - Language selection at setup (UK/US English + international)
 - Translation infrastructure and management
@@ -64,12 +64,12 @@ It ensures that:
    - Create UK/US English content variants
    - Persist language preference in configuration
 
-2. **Internationalization Infrastructure**  
+2. **Internationalisation Infrastructure**  
    - Set up i18n framework and translation file structure
    - Implement locale detection and language switching
    - Configure locale-specific formatting
 
-3. **Translation and Localization**  
+3. **Translation and Localisation**  
    - Translate framework content to major languages
    - Implement translation workflow and management
    - Track translation completeness
@@ -106,7 +106,7 @@ Add language selection prompt at the very beginning of all setup processes, star
 
 ---
 
-### Story 1: Internationalization Infrastructure
+### Story 1: Internationalisation Infrastructure
 
 **Status:** TODO  
 **Priority:** MEDIUM  
@@ -123,13 +123,13 @@ Set up i18n infrastructure and framework for broader language support beyond UK/
 - [ ] E21:S01:T04 – Add language switching functionality
 - [ ] E21:S01:T05 – Configure date/time/number formatting per locale
 - [ ] E21:S01:T06 – Implement translation key system
-- [ ] E21:S01:T07 – Set up translation fallback chain (selected → English → US English)
+- [ ] E21:S01:T07 – Set up translation fallback chain (selected → UK English → US English)
 
-> Full story: [`story-01-internationalization-infrastructure.md`](story-01-internationalization-infrastructure.md)
+> Full story: [`story-01-internationalisation-infrastructure.md`](story-01-internationalisation-infrastructure.md)
 
 ---
 
-### Story 2: Translation and Localization
+### Story 2: Translation and Localisation
 
 **Status:** TODO  
 **Priority:** LOW  
@@ -137,7 +137,7 @@ Set up i18n infrastructure and framework for broader language support beyond UK/
 **Last updated:** 2025-12-09 (v0.21.0.0+0 – Story created)
 
 **Goal:**  
-Implement translations and localization for major languages.
+Implement translations and localisation for major languages.
 
 **Tasks:**
 - [ ] E21:S02:T01 – Identify and extract all translatable content
@@ -148,7 +148,7 @@ Implement translations and localization for major languages.
 - [ ] E21:S02:T06 – Implement translation completeness tracking
 - [ ] E21:S02:T07 – Test translations and locale support
 
-> Full story: [`story-02-translation-and-localization.md`](story-02-translation-and-localization.md)
+> Full story: [`story-02-translation-and-localisation.md`](story-02-translation-and-localisation.md)
 
 ---
 
@@ -175,6 +175,62 @@ Adapt content and features for different cultures and regions.
 
 ---
 
+## Kanban-init intake (`RW -k`)
+
+Run **on branch** `epic/21-internationalisation-localisation` — one task per release. Each command adopts the task as version anchor (`--art`) with doc-init BUILD +0 (`--dpz`; [BR-067](../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+
+### E21:S00 — Language selection at setup
+
+| Task | Trigger | Version anchor |
+| ---- | ------- | -------------- |
+| T01 | `RW -k E21:S00:T01 --art --dpz` | `v0.21.0.1+0` |
+| T02 | `RW -k E21:S00:T02 --art --dpz` | `v0.21.0.2+0` |
+| T03 | `RW -k E21:S00:T03 --art --dpz` | `v0.21.0.3+0` |
+| T04 | `RW -k E21:S00:T04 --art --dpz` | `v0.21.0.4+0` |
+| T05 | `RW -k E21:S00:T05 --art --dpz` | `v0.21.0.5+0` |
+| T06 | `RW -k E21:S00:T06 --art --dpz` | `v0.21.0.6+0` |
+| T07 | `RW -k E21:S00:T07 --art --dpz` | `v0.21.0.7+0` |
+
+### E21:S01 — Internationalisation infrastructure
+
+| Task | Trigger | Version anchor |
+| ---- | ------- | -------------- |
+| T01 | `RW -k E21:S01:T01 --art --dpz` | `v0.21.1.1+0` |
+| T02 | `RW -k E21:S01:T02 --art --dpz` | `v0.21.1.2+0` |
+| T03 | `RW -k E21:S01:T03 --art --dpz` | `v0.21.1.3+0` |
+| T04 | `RW -k E21:S01:T04 --art --dpz` | `v0.21.1.4+0` |
+| T05 | `RW -k E21:S01:T05 --art --dpz` | `v0.21.1.5+0` |
+| T06 | `RW -k E21:S01:T06 --art --dpz` | `v0.21.1.6+0` |
+| T07 | `RW -k E21:S01:T07 --art --dpz` | `v0.21.1.7+0` |
+
+### E21:S02 — Translation and localisation
+
+| Task | Trigger | Version anchor |
+| ---- | ------- | -------------- |
+| T01 | `RW -k E21:S02:T01 --art --dpz` | `v0.21.2.1+0` |
+| T02 | `RW -k E21:S02:T02 --art --dpz` | `v0.21.2.2+0` |
+| T03 | `RW -k E21:S02:T03 --art --dpz` | `v0.21.2.3+0` |
+| T04 | `RW -k E21:S02:T04 --art --dpz` | `v0.21.2.4+0` |
+| T05 | `RW -k E21:S02:T05 --art --dpz` | `v0.21.2.5+0` |
+| T06 | `RW -k E21:S02:T06 --art --dpz` | `v0.21.2.6+0` |
+| T07 | `RW -k E21:S02:T07 --art --dpz` | `v0.21.2.7+0` |
+
+### E21:S03 — Cultural adaptation
+
+| Task | Trigger | Version anchor |
+| ---- | ------- | -------------- |
+| T01 | `RW -k E21:S03:T01 --art --dpz` | `v0.21.3.1+0` |
+| T02 | `RW -k E21:S03:T02 --art --dpz` | `v0.21.3.2+0` |
+| T03 | `RW -k E21:S03:T03 --art --dpz` | `v0.21.3.3+0` |
+| T04 | `RW -k E21:S03:T04 --art --dpz` | `v0.21.3.4+0` |
+| T05 | `RW -k E21:S03:T05 --art --dpz` | `v0.21.3.5+0` |
+| T06 | `RW -k E21:S03:T06 --art --dpz` | `v0.21.3.6+0` |
+| T07 | `RW -k E21:S03:T07 --art --dpz` | `v0.21.3.7+0` |
+
+Per-task triggers are also recorded in each task doc under **Kanban-init intake**.
+
+---
+
 ## Dependencies
 
 **Blocks:**
@@ -183,7 +239,7 @@ Adapt content and features for different cultures and regions.
 - Broader framework adoption
 
 **Blocked By:**
-- FR-006: Localization and Language Selection (accepted, this epic implements it)
+- FR-006: Localisation and Language Selection (accepted, this epic implements it)
 
 **Coordinates With:**
 - Epic 1: AI Dev Kit Core (setup processes)

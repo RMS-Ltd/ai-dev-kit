@@ -57,6 +57,20 @@ housekeeping_policy: keep
 
 ---
 
+## Kanban-init intake
+
+**Branch:** `epic/21-internationalisation-localisation`
+
+**Trigger:**
+
+```text
+RW -k E21:S01:T05 --art --dpz
+```
+
+**Target version anchor:** `v0.21.1.5+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+
+---
+
 ## Version Anchor
 
 **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`
@@ -67,5 +81,5 @@ housekeeping_policy: keep
 
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
-**Source Story:** `docs/project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md`
+**Source Story:** `docs/project-management/kanban/epics/epic-21/story-01-internationalisation-infrastructure.md`
 

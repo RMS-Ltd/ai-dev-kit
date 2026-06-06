@@ -84,7 +84,7 @@ Adapt content and features for different cultures and regions for the {PROJECT_N
 - Multi-cultural user support
 
 **Blocked By:**
-- Story 2: Translation and Localization (requires translations)
+- Story 2: Translation and Localisation (requires translations)
 
 **Coordinates With:**
 - Epic 12: Frontend Application (UI cultural adaptation)
@@ -94,7 +94,7 @@ Adapt content and features for different cultures and regions for the {PROJECT_N
 
 ## Parallel Development Dependencies
 
-- Depends on Story 2 (Translation and Localization)
+- Depends on Story 2 (Translation and Localisation)
 - *Parallel Development Candidacy:* Blocked (requires Story 2 translations)
 
 ---

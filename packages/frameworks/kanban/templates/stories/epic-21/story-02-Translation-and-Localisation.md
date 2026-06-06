@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 21, Story 2: Translation and Localization
+# Epic 21, Story 2: Translation and Localisation
 
 **Status:** TODO  
 **Priority:** HIGH  
@@ -36,7 +36,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Implement translations and localization for major languages for the {PROJECT_NAME} project.
+Implement translations and localisation for major languages for the {PROJECT_NAME} project.
 
 ---
 
@@ -84,7 +84,7 @@ Implement translations and localization for major languages for the {PROJECT_NAM
 - Story 3: Cultural Adaptation (requires translations)
 
 **Blocked By:**
-- Story 1: Internationalization Infrastructure (requires i18n infrastructure)
+- Story 1: Internationalisation Infrastructure (requires i18n infrastructure)
 
 **Coordinates With:**
 - Epic 12: Frontend Application (frontend translations)
@@ -94,7 +94,7 @@ Implement translations and localization for major languages for the {PROJECT_NAM
 
 ## Parallel Development Dependencies
 
-- Depends on Story 1 (Internationalization Infrastructure)
+- Depends on Story 1 (Internationalisation Infrastructure)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 i18n infrastructure)
 
 ---

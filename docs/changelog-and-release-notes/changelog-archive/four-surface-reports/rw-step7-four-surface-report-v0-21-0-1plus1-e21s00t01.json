@@ -1,0 +1,88 @@
+{
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": [
+        "Updated S00 story doc: v0.21.0.1+1 RW -k kanban rehouse"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-21/story-00-language-selection-at-setup.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated board Last Updated: RW -k E21:S00:T01",
+        "Updated board Version: v0.21.0.1+1"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 21,
+    "story": 0,
+    "task": 1,
+    "task_id": "E21:S0:T1",
+    "version_string": "v0.21.0.1+1"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "manifest",
+    "manifest_path": "docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-structure-prune-stamp-evidence-v0-21-0-1plus1-e21s00t01.json",
+    "stamps_appended_with_evidence": 1,
+    "stamps_skipped_no_evidence": 0,
+    "stamps_preserved_existing": 0
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 5,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "Updated FR-006 implementing-task link @ v0.21.0.1+1"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Rehoused E21:S00:T01 → E21:S00 story row; v0.21.0.1+1; Last modified 2026-06-06 17:13 UTC"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Updated T01 task doc: v0.21.0.1+1 kanban-init anchor"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-21/story-00-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  }
+}
