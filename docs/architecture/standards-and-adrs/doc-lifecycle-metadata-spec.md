@@ -1,9 +1,11 @@
+> **Architecture mirror (dev-kit navigation):** Canonical SoT is `packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md`. Edit the package copy first; sync this mirror for repo navigation. Maintainer checklist: [`adr-dual-sot-parity.md`](../../packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md). Decision record: [ADR-023](ADR-023-doc-lifecycle-package-architecture-dual-sot.md).
+
 # Document Lifecycle Metadata Specification
 
 **Version:** 1.0.0  
 **Last Updated:** 2025-12-04  
 **Status:** Draft  
-**Related:** [Document Lifecycle Policy](doc-lifecycle-policy.md) | [KB Structure Overview](kb-structure-overview.md)
+**Related:** [Document Lifecycle Policy](doc-lifecycle-policy.md)
 
 ---
 
@@ -282,7 +284,7 @@ housekeeping_policy: delete
 
 - **Policy:** [`doc-lifecycle-policy.md`](doc-lifecycle-policy.md) – Governance and enforcement
 - **Workflow:** `packages/frameworks/workflow-mgt/workflows/doc-housekeeping-workflow.yaml` – Automated housekeeping
-- **KB Structure:** [`kb-structure-overview.md`](kb-structure-overview.md) – KB organization
+- **KB Structure (dev-kit instance):** [`ultimate-canonical-kb-structure.md`](ultimate-canonical-kb-structure.md) – dev-kit KB organization reference (not packaged)
 
 ---
 
@@ -294,6 +296,5 @@ housekeeping_policy: delete
 
 ---
 
-**Last Updated:** 2025-12-04  
+**Last Updated:** 2026-06-06  
 **Status:** Draft – Awaiting review and adoption
-

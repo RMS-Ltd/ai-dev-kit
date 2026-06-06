@@ -102,6 +102,7 @@ cp -r packages/frameworks/doc-lifecycle/ <your-project>/packages/frameworks/doc-
 Read the core policies:
 - `policies/doc-lifecycle-metadata-spec.md` — Metadata schema
 - `policies/doc-lifecycle-policy.md` — Governance and enforcement
+- `policies/policy-salience-schema.md` — Policy salience YAML schema
 
 ### 3. Apply Lifecycle Metadata
 
@@ -155,9 +156,10 @@ packages/frameworks/doc-lifecycle/
 ├── PACKAGE_OVERVIEW.md                # Package structure and usage
 ├── IMPLEMENTATION_GUIDE.md            # Step-by-step implementation guide
 │
-├── policies/
+├── policies/                          # Framework SoT (see ADR-023)
 │   ├── doc-lifecycle-metadata-spec.md # Metadata schema
-│   └── doc-lifecycle-policy.md         # Policy and governance
+│   ├── doc-lifecycle-policy.md         # Policy and governance
+│   └── policy-salience-schema.md       # Policy salience YAML schema
 │
 ├── workflows/
 │   └── doc-housekeeping-workflow.yaml # Automated housekeeping workflow (DHKW)
@@ -188,6 +190,9 @@ packages/frameworks/doc-lifecycle/
 - **Implementation Guide:** [`IMPLEMENTATION_GUIDE.md`](./IMPLEMENTATION_GUIDE.md) — Step-by-step guide for adopting in other projects
 - **Metadata Spec:** [`policies/doc-lifecycle-metadata-spec.md`](./policies/doc-lifecycle-metadata-spec.md) — Complete metadata schema
 - **Policy:** [`policies/doc-lifecycle-policy.md`](./policies/doc-lifecycle-policy.md) — Governance and enforcement rules
+- **Policy Salience Schema:** [`policies/policy-salience-schema.md`](./policies/policy-salience-schema.md) — Machine-readable policy salience YAML schema
+- **Dual SoT parity:** [`docs/adr-dual-sot-parity.md`](./docs/adr-dual-sot-parity.md) — Maintainer checklist (package SoT ↔ architecture mirrors)
+- **ADR-023:** [`docs/architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md`](../../../docs/architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md) — SoT/mirror decision record
 - **Templates:** [`templates/`](./templates/) — Document templates with lifecycle metadata
 - **Integration Guides:** [`integration/`](./integration/) — How to integrate with other packages
 

@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 10, Story 1, Task 9: Sync architecture ADR dual SoT
 
 **Task ID:** E10:S01:T09  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.10.1.9+1)  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (filed from T06 remediation backlog R2)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-06 (RW E10:S01:T09 --art)  
+**Version:** v0.10.1.9+1  
 **Code:** E10S01T09
 
 ---
@@ -69,17 +69,36 @@ Resolve dual SoT drift between Document Lifecycle package `policies/` and repo `
 
 ## Acceptance Criteria
 
-- [ ] Canonical SoT vs mirror policy documented for each policy topic
-- [ ] Package `policies/` and architecture ADRs content-aligned or drift-guarded
-- [ ] `policy-salience-schema.md` present in correct canonical location with cross-links
-- [ ] T04 integration alignment re-validated for domain 6/7
+- [x] Canonical SoT vs mirror policy documented for each policy topic
+- [x] Package `policies/` and architecture ADRs content-aligned or drift-guarded
+- [x] `policy-salience-schema.md` present in correct canonical location with cross-links
+- [x] T04 integration alignment re-validated for domain 5/6
 - [x] IPP linked before implementation (FR-083)
+
+---
+
+## Verification (T04 domains 5–6 re-validation)
+
+| Check | Command / evidence | Result |
+| ----- | ------------------ | ------ |
+| V5 — salience schema packaged | `ls packages/frameworks/doc-lifecycle/policies/` includes `policy-salience-schema.md` | **PASS** |
+| V5 — metadata-spec mirror | Architecture mirror banner + body sync from package SoT | **PASS** |
+| V5 — lifecycle-policy mirror | Architecture mirror banner + body sync from package SoT | **PASS** |
+| V5 — kb-structure link | Broken `kb-structure-overview.md` removed; dev-kit pointer to `ultimate-canonical-kb-structure.md` | **PASS** |
+| V6 — FR-110 greenfield parity | `diff -rq packages/frameworks/doc-lifecycle greenfield-install/packages/frameworks/doc-lifecycle` exit 0 | **PASS** |
+
+**Domain 5 re-score:** **ALIGNED** (was PARTIAL — link drift resolved; salience schema packaged)  
+**Domain 6 re-score:** **ALIGNED** (unchanged; re-synced post-policy edits)
+
+**Deliverables:** ADR-023; `policies/policy-salience-schema.md`; `docs/adr-dual-sot-parity.md`; mirror banners on architecture copies; salience cross-link updates; README/PACKAGE_PROPOSAL; greenfield-install sync.
 
 ---
 
 ## References
 
 - [IPP-E10S01T09 — sync architecture ADR dual SoT](../../../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md)
+- [ADR-023 — doc-lifecycle package architecture dual SoT](../../../../../../docs/architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md)
+- [adr-dual-sot-parity.md](../../../../../../packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md)
 - [T06 RC sign-off and remediation backlog](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
 - [IPP-E10S01T06](../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)

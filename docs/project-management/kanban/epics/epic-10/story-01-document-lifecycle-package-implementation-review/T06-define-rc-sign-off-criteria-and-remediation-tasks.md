@@ -137,7 +137,7 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 | GAP-DOCLIFE-STRUCT-001 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (filed 2026-06-06) |
 | GAP-DOCLIFE-STRUCT-002 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (filed 2026-06-06) |
 | GAP-DOCLIFE-STRUCT-003 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (filed 2026-06-06) |
-| GAP-DOCLIFE-INTG-001 | [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) | **PASS** (filed 2026-06-06) |
+| GAP-DOCLIFE-INTG-001 | [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) | **PASS** (COMPLETE @ v0.10.1.9+1 — ADR-023; package SoT; salience schema packaged) |
 | GAP-DOCLIFE-TEST-001 | [E10:S01:T10](T10-fix-document-lifecycle-validator.md) | **PASS** (filed 2026-06-06) |
 
 | Status | Evidence |

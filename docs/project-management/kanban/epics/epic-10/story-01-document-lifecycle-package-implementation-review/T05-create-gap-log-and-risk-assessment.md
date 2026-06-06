@@ -145,7 +145,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** MEDIUM (content equivalent today; drift risk on partial edits)
 - **RC Impact:** NON-BLOCKING (substantive policy content aligned)
-- **Tracking:** [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) — filed 2026-06-06
+- **Tracking:** [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) — **COMPLETE** @ v0.10.1.9+1 via [IPP-E10S01T09](../../../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md) (ADR-023; package SoT; salience schema packaged; FR-110 re-synced)
 
 ---
 

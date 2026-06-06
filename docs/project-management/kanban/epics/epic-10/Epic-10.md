@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.8+1 – Story 1 T08 doc housekeeping workflow)
+**Last updated:** 2026-06-06 (v0.10.1.9+1 – Story 1 T09 architecture ADR dual SoT sync)
 **Branch:** `epic/10-doc-lifecycle-framework`  
 **Version Schema:** `0.10.S.T+B`  
 **Version:** v0.10.1.6+1  

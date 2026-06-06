@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.10.1.8+1] - 06-06-26
+## [0.10.1.9+1] - 06-06-26
 
-E10:S01:T08 — **Change implemented:** Doc housekeeping workflow and scripts — DHKW YAML, five-field validator, reference-aware scanner, pytest (12 green), FR-110 mirror; closes GAP-DOCLIFE-STRUCT-001/002/003. SemVer **v0.4.1016+1**.
+E10:S01:T09 — **Change implemented:** Architecture ADR dual SoT sync — ADR-023, package `policies/` SoT, `policy-salience-schema.md` packaged, mirror banners, salience cross-links, FR-110 greenfield re-sync; closes GAP-DOCLIFE-INTG-001. SemVer **v0.4.1017+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md)
 
 ---
 

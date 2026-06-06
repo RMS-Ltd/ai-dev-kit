@@ -2,7 +2,7 @@
 
 **Status:** Proposal  
 **Date:** 2025-12-04  
-**Related:** [Document Lifecycle Metadata Spec](../../../docs/architecture/standards-and-adrs/doc-lifecycle-metadata-spec.md) | [Document Lifecycle Policy](../../../docs/architecture/standards-and-adrs/doc-lifecycle-policy.md)
+**Related:** [Document Lifecycle Metadata Spec](./policies/doc-lifecycle-metadata-spec.md) | [Document Lifecycle Policy](./policies/doc-lifecycle-policy.md) | [Policy Salience Schema](./policies/policy-salience-schema.md) (package SoT; dev-kit mirrors under `docs/architecture/standards-and-adrs/` per [ADR-023](../../../docs/architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md))
 
 ---
 
@@ -67,8 +67,9 @@ packages/frameworks/doc-lifecycle/
 ├── IMPLEMENTATION_GUIDE.md            # Step-by-step implementation guide
 │
 ├── policies/
-│   ├── doc-lifecycle-metadata-spec.md # Metadata schema (copy from KB)
-│   └── doc-lifecycle-policy.md         # Policy and governance (copy from KB)
+│   ├── doc-lifecycle-metadata-spec.md # Metadata schema (framework SoT)
+│   ├── doc-lifecycle-policy.md         # Policy and governance (framework SoT)
+│   └── policy-salience-schema.md       # Policy salience YAML schema (framework SoT)
 │
 ├── workflows/
 │   └── doc-housekeeping-workflow.yaml # Automated housekeeping workflow (future)

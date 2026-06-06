@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.8+1 – T08 doc housekeeping workflow)
-**Version:** v0.10.1.8+1
+**Last updated:** 2026-06-06 (v0.10.1.9+1 – T09 architecture ADR dual SoT sync)
+**Version:** v0.10.1.9+1
 **Code:** E10S01
 
 ---
@@ -54,8 +54,9 @@ housekeeping_policy: keep
 - [x] **E10:S01:T08 – Implement doc housekeeping workflow and scripts** - ✅ COMPLETE (v0.10.1.8+1)
   - Task: [`T08-implement-doc-housekeeping-workflow-and-scripts`](story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)
   - IPP: [`IPP-E10S01T08`](../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
-- [ ] **E10:S01:T09 – Sync architecture ADR dual SoT** - TODO (HIGH remediation)
+- [x] **E10:S01:T09 – Sync architecture ADR dual SoT** - ✅ COMPLETE (v0.10.1.9+1)
   - Task: [`T09-sync-architecture-adr-dual-sot`](story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)
+  - IPP: [`IPP-E10S01T09`](../../../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md)
 - [x] **E10:S01:T10 – Fix DocumentLifecycleValidator** - ✅ COMPLETE (v0.10.1.10+1)
   - Task: [`T10-fix-document-lifecycle-validator`](story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)
   - IPP: [`IPP-E10S01T10`](../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
