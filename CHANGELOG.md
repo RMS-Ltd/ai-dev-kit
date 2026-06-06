@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.10+2] - 06-06-26
+
+E10:S01:T10 — **Change implemented:** E10:S01 story sign-off release — implementation review **COMPLETE**; RC **APPROVE**; scoped kanban reconciliation (Epic 10 IN PROGRESS — S02 TODO). SemVer **v0.4.1024+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+2.md)
+
+---
+
 ## [0.5.8.4+1] - 06-06-26
 
 E05:S08:T04 — **Change implemented:** FR-114 intake — agent Notion-first authoring task filed (RW -k, --art). SemVer **v0.4.1023+1**.

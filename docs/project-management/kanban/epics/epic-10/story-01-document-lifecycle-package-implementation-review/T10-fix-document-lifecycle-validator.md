@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (v0.10.1.10+1 — validator fix released)  
-**Version:** v0.10.1.10+1  
+**Last updated:** 2026-06-06 (v0.10.1.10+2 — E10:S01 story sign-off RW; validator fix @ +1)  
+**Version:** v0.10.1.10+2  
 **Code:** E10S01T10
 
 ---

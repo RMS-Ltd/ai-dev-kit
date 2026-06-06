@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (E10:S01 story sign-off — **v0.10.1.10+1**; RC **APPROVE** @ T06)
-**Version:** v0.10.1.10+1
+**Last updated:** 2026-06-06 (E10:S01 story sign-off RW — **v0.10.1.10+2**; RC **APPROVE** @ T06)
+**Version:** v0.10.1.10+2
 **Code:** E10S01
 
 ---

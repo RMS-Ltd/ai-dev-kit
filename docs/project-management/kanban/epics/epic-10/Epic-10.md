@@ -12,17 +12,17 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (E10:S01 story sign-off — **v0.10.1.10+1**; Epic IN PROGRESS — S02 TODO)
+**Last updated:** 2026-06-06 (E10:S01 story sign-off RW — **v0.10.1.10+2**; Epic IN PROGRESS — S02 TODO)
 **Branch:** `epic/10-doc-lifecycle-framework`  
 **Version Schema:** `0.10.S.T+B`  
-**Version:** v0.10.1.10+1  
+**Version:** v0.10.1.10+2  
 **Production URL:** [N/A for this repo]
 
 ---
 
 ## Story Checklist
 
-- [x] **E10:S01 – Document Lifecycle Package Implementation Review** - ✅ COMPLETE (v0.10.1.10+1 — T01–T10 COMPLETE; RC sign-off **APPROVE**; handoff → S02)
+- [x] **E10:S01 – Document Lifecycle Package Implementation Review** - ✅ COMPLETE (v0.10.1.10+2 — T01–T10 COMPLETE; RC sign-off **APPROVE**; handoff → S02)
   - Story: [`story-01-document-lifecycle-package-implementation-review.md`](story-01-document-lifecycle-package-implementation-review.md)
   - Coordinator: [`T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md`](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
   - Orchestration: [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
