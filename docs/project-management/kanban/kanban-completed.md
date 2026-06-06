@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (RW: E08:S03:T17)
-**Version:** v0.8.3.17+3
+**Last Updated:** 2026-06-06 (UKW -u: E10:S01 story sign-off)
+**Version:** v0.10.1.10+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -20,14 +20,19 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **UKW hygiene batch (2026-06-06)** — E10:S01 story sign-off (all tasks COMPLETE; RC **APPROVE** @ T06; anchor **v0.10.1.10+1**)
+
+- **E10:S01** — Document Lifecycle Package Implementation Review — Story **COMPLETE** (T01–T10; RC **APPROVE**; handoff → E10:S02).
+  **Completed:** `2026-06-06T16:12:37Z` | **Version:** `v0.10.1.10+1` | **Agent:** `UKW -u` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [T06 RC](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
+
 - **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Fix DocumentLifecycleValidator: PyYAML import, five-field metadata enforcement, pytest TC1–TC8 green, greenfield mirror; closes GAP-DOCLIFE-TEST-001.
   **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 
 - **[E10:S01:T09](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)** — Sync architecture ADR dual SoT: ADR-023, package `policies/` SoT, `policy-salience-schema.md` packaged, mirror banners, salience cross-links, FR-110 greenfield re-sync; closes GAP-DOCLIFE-INTG-001.
   **Completed:** `2026-06-06T15:06:47Z` | **Version:** `v0.10.1.9+1` | **Agent:** `RW E10:S01:T09 --art` | [IPP-T09](../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md) | [ADR-023](../../architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md)
 
-- **[E08:S03:T17](epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)** — Local Code Quality Gate (CQG) (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022; **v0.8.3.17+3** CodeQL suite mapping fix.
-  **Completed:** `2026-06-06T15:15:00Z` | **Version:** `v0.8.3.17+3` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
+- **[E08:S03:T17](epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)** — Local Code Quality Gate (CQG) (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022; verified post-merge **v0.8.3.17+4**.
+  **Completed:** `2026-06-06T16:00:00Z` | **Version:** `v0.8.3.17+4` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
 
 - **[E10:S01:T08](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)** — Doc housekeeping workflow and scripts: DHKW YAML, five-field validator, reference-aware scanner, pytest (12 green), FR-110 mirror; closes GAP-DOCLIFE-STRUCT-001/002/003.
   **Completed:** `2026-06-06T15:04:48Z` | **Version:** `v0.10.1.8+1` | **Agent:** `RW E10:S01:T08 --art` | [IPP-T08](../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
@@ -241,6 +246,18 @@ housekeeping_policy: keep
 
 - **[E06:S09:T14](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)** — **BR-085**: RW mode C story pattern prompt loop after fresh kanban (`{story:03d}` validation + epic-only escape).
   **Completed:** `2026-06-03T23:00:21Z` | **Version:** `v0.6.9.14+1` | **Agent:** `RW` | [BR-085](fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
+
+#### **Epic 10: Document Lifecycle Framework (Story 1 — Package implementation review)** ✅ COMPLETE (`v0.10.1.10+1`)
+- **E10:S01** — Document Lifecycle Package Implementation Review — Story sign-off (T01–T10; RC **APPROVE** @ T06; HIGH gaps remediated T08–T10).
+  **Completed:** `2026-06-06T16:12:37Z` | **Version:** `v0.10.1.10+1` | **Agent:** `UKW -u` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
+- **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Fix DocumentLifecycleValidator (GAP-DOCLIFE-TEST-001).
+  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
+- **[E10:S01:T09](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)** — Sync architecture ADR dual SoT (GAP-DOCLIFE-INTG-001).
+  **Completed:** `2026-06-06T15:06:47Z` | **Version:** `v0.10.1.9+1` | **Agent:** `RW E10:S01:T09 --art` | [ADR-023](../../architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md)
+- **[E10:S01:T08](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)** — Doc housekeeping workflow and scripts (GAP-DOCLIFE-STRUCT-001/002/003).
+  **Completed:** `2026-06-06T15:04:48Z` | **Version:** `v0.10.1.8+1` | **Agent:** `RW E10:S01:T08 --art` | [IPP](../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
+- **[E10:S01:T06](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)** — RC sign-off criteria and remediation (**APPROVE**).
+  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.6+4` | **Agent:** `RW E10:S01:T06 --art` | [IPP](../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
 
 #### **Epic 2: Workflow Management Framework (Story 13 — Package implementation review)** ✅ COMPLETE (`v0.2.13.10+1`)
 - **[E02:S13:T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)** — Kanban transform consolidation + `rw_config_loader` unification (GAP-INTG-001/002).
