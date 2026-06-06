@@ -49,8 +49,8 @@ Define the implementation expectations baseline for the Document Lifecycle frame
 
 - Package sources: `packages/frameworks/doc-lifecycle/` (README, PACKAGE_OVERVIEW, PACKAGE_PROPOSAL, IMPLEMENTATION_GUIDE, policies/, integration/, templates/, docs/)
 - Adopter mirror: `greenfield-install/packages/frameworks/doc-lifecycle/` (FR-110 parity surface)
-- Coordinator SoT: [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md) §8.4 Wave 2A
-- **Implementation plan (IPW):** [`IPP-E10S01T01-expectations-baseline-doc-lifecycle.md`](../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
+- Coordinator SoT: [`E10S01-orchestration-plan.md`](../../../../../implementation-cycles/E10S01-orchestration-plan.md) §8.4 Wave 2A
+- **Implementation plan (IPW):** [`IPP-E10S01T01-expectations-baseline-doc-lifecycle.md`](../../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
 - Structural precedent: [`E02:S13:T01 expectations baseline`](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 - Repo agent rules: `.cursorrules` Document Lifecycle Management section
 
@@ -93,8 +93,8 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 ## References
 
 - **Companion baseline (authoritative body):** [`expectations-baseline.md`](expectations-baseline.md)
-- [`IPP-E10S01T01-expectations-baseline-doc-lifecycle.md`](../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) — IPW planning package (Sections 1–7)
-- [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md) — Wave 2A §8.4
+- [`IPP-E10S01T01-expectations-baseline-doc-lifecycle.md`](../../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) — IPW planning package (Sections 1–7)
+- [`E10S01-orchestration-plan.md`](../../../../../implementation-cycles/E10S01-orchestration-plan.md) — Wave 2A §8.4
 - [`E02:S13:T01 expectations baseline`](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) — structural precedent
 - `packages/frameworks/doc-lifecycle/README.md`
 - `packages/frameworks/doc-lifecycle/PACKAGE_OVERVIEW.md`

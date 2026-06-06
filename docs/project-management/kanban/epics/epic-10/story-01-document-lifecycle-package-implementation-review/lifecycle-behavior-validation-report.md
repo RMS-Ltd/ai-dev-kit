@@ -261,12 +261,12 @@ required_fields = ['lifecycle', 'created_at']  # spec requires 5 fields
 
 ## References
 
-- [IPP-E10S01T03](../../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
+- [IPP-E10S01T03](../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
 - [T03 task doc](T03-validate-lifecycle-behavior-against-documented-guidance.md)
 - [T05 gap log and risk assessment](T05-create-gap-log-and-risk-assessment.md) — authoritative `GAP-DOCLIFE-*` SoT
 - [T01 expectations baseline](expectations-baseline.md)
-- [doc-lifecycle-metadata-spec.md](../../../../../../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
-- [doc-lifecycle-policy.md](../../../../../../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md)
-- [LIFECYCLE_EXAMPLES.md](../../../../../../packages/frameworks/doc-lifecycle/templates/LIFECYCLE_EXAMPLES.md)
-- [DocumentLifecycleValidator](../../../../../../packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py)
+- [doc-lifecycle-metadata-spec.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
+- [doc-lifecycle-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md)
+- [LIFECYCLE_EXAMPLES.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/templates/LIFECYCLE_EXAMPLES.md)
+- [DocumentLifecycleValidator](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py)
 - [E02:S13:T03 precedent](../../epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md)

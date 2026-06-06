@@ -45,12 +45,12 @@ Inventory `packages/frameworks/doc-lifecycle/` and the FR-110 greenfield mirror;
 ## Input
 
 - [T01 expectations baseline](expectations-baseline.md) — mapping source (T01 complete v0.10.1.1+1)
-- [IPP-E10S01T01](../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) — T01 planning package
-- **Implementation plan (IPW):** [IPP-E10S01T02-component-inventory-map.md](../../../../implementation-cycles/IPP-E10S01T02-component-inventory-map.md)
-- Coordinator SoT: [E10S01-orchestration-plan.md](../../../../implementation-cycles/E10S01-orchestration-plan.md) — §7.4 T02, §3 Package snapshot
+- [IPP-E10S01T01](../../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) — T01 planning package
+- **Implementation plan (IPW):** [IPP-E10S01T02-component-inventory-map.md](../../../../../implementation-cycles/IPP-E10S01T02-component-inventory-map.md)
+- Coordinator SoT: [E10S01-orchestration-plan.md](../../../../../implementation-cycles/E10S01-orchestration-plan.md) — §7.4 T02, §3 Package snapshot
 - Package root: `packages/frameworks/doc-lifecycle/`
 - Adopter mirror (FR-110): `greenfield-install/packages/frameworks/doc-lifecycle/`
-- Structural precedent: [E02:S13 component inventory map](../../epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) · [IPP-E02S13T02](../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
+- Structural precedent: [E02:S13 component inventory map](../../epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) · [IPP-E02S13T02](../../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
 
 ---
 
@@ -113,10 +113,10 @@ Full tables: [component-inventory-map.md](component-inventory-map.md).
 
 ## References
 
-- [IPP-E10S01T02-component-inventory-map.md](../../../../implementation-cycles/IPP-E10S01T02-component-inventory-map.md) — IPW planning package (Sections 1–7)
+- [IPP-E10S01T02-component-inventory-map.md](../../../../../implementation-cycles/IPP-E10S01T02-component-inventory-map.md) — IPW planning package (Sections 1–7)
 - [Component inventory map](component-inventory-map.md) — detailed inventory artefact
-- [E10S01-orchestration-plan.md](../../../../implementation-cycles/E10S01-orchestration-plan.md) — Wave 1 IPW brief §7.4 T02; Wave 2B implementation
-- [IPP-E02S13T02](../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md) — structural IPP precedent
+- [E10S01-orchestration-plan.md](../../../../../implementation-cycles/E10S01-orchestration-plan.md) — Wave 1 IPW brief §7.4 T02; Wave 2B implementation
+- [IPP-E02S13T02](../../../../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md) — structural IPP precedent
 - [E02:S13 component inventory map](../../epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) — companion artefact precedent
 - [T01 expectations baseline](expectations-baseline.md) — mapping source
 - `packages/frameworks/doc-lifecycle/`

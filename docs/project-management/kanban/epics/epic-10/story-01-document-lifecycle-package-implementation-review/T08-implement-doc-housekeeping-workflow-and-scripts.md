@@ -59,7 +59,7 @@ Implement the documented-future automation artefacts for the Document Lifecycle 
 - [T02 component inventory](component-inventory-map.md) §6
 - [T03 behavior validation](lifecycle-behavior-validation-report.md) D8/D9
 - Package: `packages/frameworks/doc-lifecycle/`
-- **IPP:** [IPP-E10S01T08 — doc housekeeping workflow and scripts](../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
+- **IPP:** [IPP-E10S01T08 — doc housekeeping workflow and scripts](../../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
 
 ---
 
@@ -102,5 +102,5 @@ FR-110: `python scripts/sync_greenfield_install.py` + `diff -rq` canonical ↔ m
 
 - [T06 RC sign-off and remediation backlog](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
-- [IPP-E10S01T08 — doc housekeeping workflow and scripts](../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
-- [IPP-E10S01T06](../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
+- [IPP-E10S01T08 — doc housekeeping workflow and scripts](../../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
+- [IPP-E10S01T06](../../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)

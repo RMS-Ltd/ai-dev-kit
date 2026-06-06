@@ -145,7 +145,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** MEDIUM (content equivalent today; drift risk on partial edits)
 - **RC Impact:** NON-BLOCKING (substantive policy content aligned)
-- **Tracking:** [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) — **COMPLETE** @ v0.10.1.9+1 via [IPP-E10S01T09](../../../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md) (ADR-023; package SoT; salience schema packaged; FR-110 re-synced)
+- **Tracking:** [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) — **COMPLETE** @ v0.10.1.9+1 via [IPP-E10S01T09](../../../../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md) (ADR-023; package SoT; salience schema packaged; FR-110 re-synced)
 
 ---
 
@@ -159,7 +159,7 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **Severity:** HIGH
 - **Likelihood:** HIGH (reproducible runtime failure)
 - **RC Impact:** NON-BLOCKING (repo agents use `.cursorrules`; validator not wired to pre-commit)
-- **Tracking:** [E10:S01:T10](T10-fix-document-lifecycle-validator.md) — remediated 2026-06-06 via [IPP-E10S01T10](../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) (yaml import fix, five-field enforcement, pytest TC1–TC8 green)
+- **Tracking:** [E10:S01:T10](T10-fix-document-lifecycle-validator.md) — remediated 2026-06-06 via [IPP-E10S01T10](../../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) (yaml import fix, five-field enforcement, pytest TC1–TC8 green)
 
 ---
 

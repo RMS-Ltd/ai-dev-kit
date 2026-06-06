@@ -356,11 +356,11 @@ CI guard (`scripts/test_sync_greenfield_install.py`) must pass. Manifest already
 - [T06 RC sign-off and remediation R1](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T02 component inventory §6](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md)
 - [T03 behavior validation D8/D9](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md)
-- [doc-lifecycle-metadata-spec.md](../../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
-- [doc-lifecycle-policy.md](../../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md)
-- [workflow-mgt-integration.md](../../packages/frameworks/doc-lifecycle/integration/workflow-mgt-integration.md)
+- [doc-lifecycle-metadata-spec.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
+- [doc-lifecycle-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md)
+- [workflow-mgt-integration.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/integration/workflow-mgt-integration.md)
 - [FR-110](../project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - [FR-083](../project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
 - [E02:S13:T08 IPP precedent](./IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
-- [changelog-management-workflow.yaml](../../packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/changelog-management-workflow.yaml) — deterministic workflow YAML pattern
-- [sync_greenfield_install.py](../../scripts/sync_greenfield_install.py)
+- [changelog-management-workflow.yaml](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/changelog-management-workflow.yaml) — deterministic workflow YAML pattern
+- [sync_greenfield_install.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/sync_greenfield_install.py)

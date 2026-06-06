@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Expectations baseline:** [expectations-baseline.md](expectations-baseline.md) — §Integration Expectations  
 **Component inventory:** T02 `component-inventory-map.md` *(not yet published — used IPP-E10S01T01 + expectations-baseline §Package Composition)*  
 **Behavior validation input:** T03 `lifecycle-behavior-validation-report.md` *(not yet published — spot-check only)*  
-**Planning SoT:** [IPP-E10S01T04](../../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)  
+**Planning SoT:** [IPP-E10S01T04](../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)  
 **Package root:** `packages/frameworks/doc-lifecycle/`  
 **Adopter mirror:** `greenfield-install/packages/frameworks/doc-lifecycle/` (FR-110)  
 **Review date:** 2026-06-06
@@ -238,12 +238,12 @@ T01 expectations baseline explicitly lists these as **documented-future, not T01
 
 ## References
 
-- [IPP-E10S01T04](../../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
+- [IPP-E10S01T04](../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
 - [T04 task doc](T04-review-integrations-and-dependency-alignment.md)
 - [T05 gap log and risk assessment](T05-create-gap-log-and-risk-assessment.md) — authoritative `GAP-DOCLIFE-*` SoT
 - [expectations-baseline.md](expectations-baseline.md)
 - [E02:S13 integration-alignment-report precedent](../../epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
-- [E10S01 orchestration plan §7.4 T04](../../../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- [E10S01 orchestration plan §7.4 T04](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - [FR-110 — greenfield-install](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
-- [gap-log-schema.md](../../../../../../architecture/standards-and-adrs/gap-log-schema.md)
+- [gap-log-schema.md](../../../../../architecture/standards-and-adrs/gap-log-schema.md)
 - Package integration: `packages/frameworks/doc-lifecycle/integration/kanban-integration.md`, `workflow-mgt-integration.md`

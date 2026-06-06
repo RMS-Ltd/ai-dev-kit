@@ -269,6 +269,6 @@ Doc/config-only task — verification is **structural inspection and diff-based*
 - [T02 component inventory §7](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md)
 - [expectations-baseline.md](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md)
 - [repo-structure-for-adopters.md](../documentation/user-docs/repo-structure-for-adopters.md)
-- [rw-trigger-dual-source-parity.md](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md) (precedent)
+- [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md) (precedent)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [specification-and-planning-artifacts-policy.md](../governance/standards/specification-and-planning-artifacts-policy.md)

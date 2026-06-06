@@ -78,4 +78,4 @@ CodeQL CLI is an **external prerequisite** (not vendored). Initial spike on ai-d
 ## References
 
 - [GitHub Code Quality metrics](https://docs.github.com/en/code-security/code-quality/reference/metrics-and-ratings)
-- [Operator guide](../../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md)
+- [Operator guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md)

@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 **Host task:** [E10:S01:T07 – Coordinator orchestration plan and epic branch bootstrap](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
 
-**Coordinator SoT (mandatory for all E10:S01 agents):** [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
+**Coordinator SoT (mandatory for all E10:S01 agents):** [`E10S01-orchestration-plan.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/E10S01-orchestration-plan.md)
 
 **Branch:** `epic/10-doc-lifecycle-framework`
 
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 - [x] **E10:S01:T07 – Coordinator orchestration plan and epic branch bootstrap** - ✅ COMPLETE (v0.10.1.7+1)
   - Task: [`T07-coordinator-orchestration-plan-and-epic-branch-bootstrap`](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
-  - Orchestration: [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
+  - Orchestration: [`E10S01-orchestration-plan.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/E10S01-orchestration-plan.md)
 - [x] **E10:S01:T01 – Establish expectations baseline for Document Lifecycle package** - ✅ COMPLETE (v0.10.1.1+1)
   - Task: [`T01-establish-expectations-baseline-for-document-lifecycle-packa`](story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)
   - Baseline: [`expectations-baseline.md`](story-01-document-lifecycle-package-implementation-review/expectations-baseline.md)
@@ -53,13 +53,13 @@ housekeeping_policy: keep
   - Posture: **APPROVE** — HIGH gaps remediated via T08 (v0.10.1.8+1), T09 (v0.10.1.9+1), T10 (v0.10.1.10+1)
 - [x] **E10:S01:T08 – Implement doc housekeeping workflow and scripts** - ✅ COMPLETE (v0.10.1.8+1)
   - Task: [`T08-implement-doc-housekeeping-workflow-and-scripts`](story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)
-  - IPP: [`IPP-E10S01T08`](../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
+  - IPP: [`IPP-E10S01T08`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
 - [x] **E10:S01:T09 – Sync architecture ADR dual SoT** - ✅ COMPLETE (v0.10.1.9+1)
   - Task: [`T09-sync-architecture-adr-dual-sot`](story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)
-  - IPP: [`IPP-E10S01T09`](../../../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md)
+  - IPP: [`IPP-E10S01T09`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md)
 - [x] **E10:S01:T10 – Fix DocumentLifecycleValidator** - ✅ COMPLETE (v0.10.1.10+1)
   - Task: [`T10-fix-document-lifecycle-validator`](story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)
-  - IPP: [`IPP-E10S01T10`](../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
+  - IPP: [`IPP-E10S01T10`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
 
 ---
 
@@ -96,6 +96,6 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## References
 
-- **Orchestration plan:** [`docs/implementation-cycles/E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- **Orchestration plan:** [`docs/implementation-cycles/E10S01-orchestration-plan.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/E10S01-orchestration-plan.md)
 - Package: `packages/frameworks/doc-lifecycle/`
 - Structural precedent: [E02:S13 — Workflow Management Package Implementation Review](../../epic-02/story-13-workflow-management-package-implementation-review.md)

@@ -50,7 +50,7 @@ Fix the cross-package `DocumentLifecycleValidator` in tooling-automation:
 
 ## Input
 
-- [**IPP-E10S01T10**](../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) — implementation plan (Sections 1–7; FR-083 gate)
+- [**IPP-E10S01T10**](../../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) — implementation plan (Sections 1–7; FR-083 gate)
 - [E10:S01:T05 gap log](T05-create-gap-log-and-risk-assessment.md) — Gap 5
 - [E10:S01:T06 RC sign-off](T06-define-rc-sign-off-criteria-and-remediation-tasks.md) — remediation package R3
 - [T03 behavior validation](lifecycle-behavior-validation-report.md) §6 DocumentLifecycleValidator Runtime Validation
@@ -93,14 +93,14 @@ Fix the cross-package `DocumentLifecycleValidator` in tooling-automation:
 
 ## References
 
-- [**IPP-E10S01T10**](../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) — fix validator implementation plan
+- [**IPP-E10S01T10**](../../../../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) — fix validator implementation plan
 - [T06 RC sign-off and remediation backlog](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
 - [T03 lifecycle-behavior-validation-report](lifecycle-behavior-validation-report.md) §6
 - [T08 package-local validator](T08-implement-doc-housekeeping-workflow-and-scripts.md) — complementary scope boundary
-- [IPP-E10S01T06](../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
-- [E10S01 orchestration plan §9](../../../../implementation-cycles/E10S01-orchestration-plan.md)
-- [doc-lifecycle-metadata-spec.md](../../../../../../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
+- [IPP-E10S01T06](../../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
+- [E10S01 orchestration plan §9](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- [doc-lifecycle-metadata-spec.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
 
 ---
 

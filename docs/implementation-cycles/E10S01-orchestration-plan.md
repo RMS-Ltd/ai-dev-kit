@@ -92,7 +92,7 @@ cd ../ai-dev-kit-e10
 
 ### 2.3 Cold-start agent routing
 
-1. Read repo-root [`AGENTS.md`](../../AGENTS.md) only (ADR-012).
+1. Read repo-root [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) only (ADR-012).
 2. State: `Track: implementation-planning, workflows — loading: this file + host story`.
 3. Load this orchestration plan before any task work.
 4. IPW **must** run in plan mode (`.claude/commands/ipw.md`).

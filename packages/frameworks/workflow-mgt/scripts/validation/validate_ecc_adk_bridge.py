@@ -14,6 +14,11 @@ import sys
 from pathlib import Path
 from typing import Any, List
 
+try:
+    import yaml
+except ImportError:
+    yaml = None  # type: ignore[misc, assignment]
+
 _SCRIPTS = Path(__file__).resolve().parents[1]
 if str(_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS))

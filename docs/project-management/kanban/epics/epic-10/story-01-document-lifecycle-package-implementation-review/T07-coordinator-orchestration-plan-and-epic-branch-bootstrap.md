@@ -128,7 +128,7 @@ Prefix: `GAP-DOCLIFE-{TYPE}-NNN` per [`gap-log-schema.md`](../../../../../archit
 - [Epic 10](../../Epic-10.md)
 - [E02:S13 precedent](../../../epic-02/story-13-workflow-management-package-implementation-review.md)
 - `packages/frameworks/doc-lifecycle/` (full tree)
-- [`rw-config.yaml`](../../../../../../rw-config.yaml)
+- [`rw-config.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/rw-config.yaml)
 - [Workflow initiation cheatsheet](../../../../../guides/workflow-initiation-cheatsheet.md)
 
 ---
@@ -229,6 +229,6 @@ Detail: [`E10S01-orchestration-plan.md`](../../../../../implementation-cycles/E1
 - [E10S01 orchestration plan](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - [Story E10:S01](../story-01-document-lifecycle-package-implementation-review.md)
 - [E02:S13 — workflow-mgt implementation review (precedent)](../../../epic-02/story-13-workflow-management-package-implementation-review.md)
-- [Package README](../../../../../../packages/frameworks/doc-lifecycle/README.md)
-- [IPW command](../../../../../../.claude/commands/ipw.md)
-- [RW command](../../../../../../.claude/commands/rw.md)
+- [Package README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/README.md)
+- [IPW command](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md)
+- [RW command](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/rw.md)

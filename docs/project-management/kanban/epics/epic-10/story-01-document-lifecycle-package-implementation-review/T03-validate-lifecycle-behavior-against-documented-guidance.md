@@ -43,8 +43,8 @@ Validate that `packages/frameworks/doc-lifecycle/` **documented lifecycle behavi
 
 ## Input
 
-- [E10S01 orchestration plan §7.4 T03](../../../../../../implementation-cycles/E10S01-orchestration-plan.md)
-- [IPP-E10S01T03](../../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
+- [E10S01 orchestration plan §7.4 T03](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- [IPP-E10S01T03](../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
 - [T01 expectations baseline](expectations-baseline.md)
 - T02 component inventory (`component-inventory-map.md` — when available)
 - `packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md`
@@ -52,7 +52,7 @@ Validate that `packages/frameworks/doc-lifecycle/` **documented lifecycle behavi
 - `packages/frameworks/doc-lifecycle/templates/LIFECYCLE_EXAMPLES.md`
 - `.cursorrules` §Document Lifecycle Management
 - `packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py`
-- Precedent: [IPP-E02S13T03](../../../../../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md) · [workflow-behavior-validation-report.md](../../epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md)
+- Precedent: [IPP-E02S13T03](../../../../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md) · [workflow-behavior-validation-report.md](../../epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md)
 
 ---
 
@@ -136,8 +136,8 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 
 ## References
 
-- [IPP-E10S01T03 — Lifecycle behavior validation](../../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
+- [IPP-E10S01T03 — Lifecycle behavior validation](../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
 - [Lifecycle behavior validation report](lifecycle-behavior-validation-report.md)
-- [E10S01 orchestration plan](../../../../../../implementation-cycles/E10S01-orchestration-plan.md)
-- [IPP-E10S01T01 — Expectations baseline](../../../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
+- [E10S01 orchestration plan](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- [IPP-E10S01T01 — Expectations baseline](../../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
 - [T01 expectations baseline](expectations-baseline.md)

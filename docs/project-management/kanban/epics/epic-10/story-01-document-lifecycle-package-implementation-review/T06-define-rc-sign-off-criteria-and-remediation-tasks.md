@@ -50,9 +50,9 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 - [E10:S01:T03 behavioral validation](T03-validate-lifecycle-behavior-against-documented-guidance.md) · [lifecycle-behavior-validation-report.md](lifecycle-behavior-validation-report.md)
 - [E10:S01:T04 integration alignment](T04-review-integrations-and-dependency-alignment.md) · [integration-alignment-report.md](integration-alignment-report.md)
 - [E10:S01:T05 gap log and risk assessment](T05-create-gap-log-and-risk-assessment.md) — 16 gaps; 0 RC-blocking; `validate_gap_log.py --strict` PASS
-- [E10S01 orchestration plan](../../../../implementation-cycles/E10S01-orchestration-plan.md) §7.4 T06 · §8.7
-- [IPP-E10S01T06-rc-sign-off-remediation.md](../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
-- **Precedent:** [E02:S13:T06](../../epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) · [IPP-E02S13T06](../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
+- [E10S01 orchestration plan](../../../../../implementation-cycles/E10S01-orchestration-plan.md) §7.4 T06 · §8.7
+- [IPP-E10S01T06-rc-sign-off-remediation.md](../../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
+- **Precedent:** [E02:S13:T06](../../epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) · [IPP-E02S13T06](../../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
 
 ---
 
@@ -317,9 +317,9 @@ RC sign-off may be **recommended** (upgrade from DEFER) when **all** of the foll
 
 ## References
 
-- [IPP-E10S01T06-rc-sign-off-remediation.md](../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
+- [IPP-E10S01T06-rc-sign-off-remediation.md](../../../../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
-- [E10S01 orchestration plan](../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- [E10S01 orchestration plan](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - [E02:S13:T06 precedent](../../epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md)
 - [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md)

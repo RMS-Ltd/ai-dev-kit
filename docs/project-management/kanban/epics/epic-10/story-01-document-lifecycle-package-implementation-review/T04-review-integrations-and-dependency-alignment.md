@@ -46,8 +46,8 @@ Review whether the Document Lifecycle package (`packages/frameworks/doc-lifecycl
 
 ## Input
 
-- [E10S01 orchestration plan §7.4 T04](../../../../../../implementation-cycles/E10S01-orchestration-plan.md)
-- [IPP-E10S01T04 — integration dependency alignment](../../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
+- [E10S01 orchestration plan §7.4 T04](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- [IPP-E10S01T04 — integration dependency alignment](../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
 - [expectations-baseline.md](./expectations-baseline.md) — §Integration Expectations *(T01 companion)*
 - T02 `component-inventory-map.md` · T03 `lifecycle-behavior-validation-report.md` *(not yet published — IPP-E10S01T01 + spot-check used)*
 - [E02:S13:T04 precedent — integration-alignment-report.md](../../epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
@@ -118,8 +118,8 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 
 ## References
 
-- [IPP-E10S01T04 — integration dependency alignment](../../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
+- [IPP-E10S01T04 — integration dependency alignment](../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
 - [integration-alignment-report.md](./integration-alignment-report.md) *(companion deliverable)*
 - [expectations-baseline.md](./expectations-baseline.md)
-- [E10S01 orchestration plan](../../../../../../implementation-cycles/E10S01-orchestration-plan.md)
+- [E10S01 orchestration plan](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - [E02:S13 integration-alignment-report precedent](../../epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
