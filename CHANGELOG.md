@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.6+2] - 06-06-26
+
+E10:S01:T06 — **Change implemented:** RC sign-off verification V8 (Story checklist T01–T06 COMPLETE after RW) — **PASS**. SemVer **v0.4.1014+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.6+2.md)
+
+---
+
 ## [0.10.1.6+1] - 06-06-26
 
 E10:S01:T06 — **Change implemented:** RC sign-off criteria (C1–C6) and remediation backlog for Document Lifecycle package — **DEFER** posture; 16 gaps mapped; HIGH gaps filed as T08/T09/T10; Story E10:S01 complete. SemVer **v0.4.1013+1**.

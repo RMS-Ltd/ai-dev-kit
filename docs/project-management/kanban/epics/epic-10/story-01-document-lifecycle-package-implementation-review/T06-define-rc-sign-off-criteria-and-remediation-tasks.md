@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E10:S01:T06  
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-06 (v0.10.1.6+1 — RC criteria + remediation; DEFER posture)  
-**Version:** v0.10.1.6+1  
+**Last updated:** 2026-06-06 (0.10.1.6+2 — V8 verification PASS; story checklist closure)  
+**Version:** 0.10.1.6+2  
 **Code:** E10S01T06
 
 ---
@@ -317,7 +317,7 @@ RC sign-off may be **recommended** (upgrade from DEFER) when **all** of the foll
 | V5 | T05 `validate_gap_log.py --strict` exit 0: **PASS** |
 | V6 | T05 Tracking fields updated for filed hosts: **PASS** |
 | V7 | T06 ↔ IPP ↔ Story ↔ T05 wiring: **PASS** |
-| V8 | Story checklist T01–T06 COMPLETE after RW: **pending RW Step 7** |
+| V8 | Story checklist T01–T06 COMPLETE after RW: **PASS** |
 
 ---
 
@@ -336,7 +336,7 @@ RC sign-off may be **recommended** (upgrade from DEFER) when **all** of the foll
 
 ## Version Anchor
 
-✅ COMPLETE (v0.10.1.6+1)
+✅ COMPLETE (0.10.1.6+2)
 
 ---
 
