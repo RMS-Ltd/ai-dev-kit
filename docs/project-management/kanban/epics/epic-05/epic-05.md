@@ -64,7 +64,7 @@ housekeeping_policy: keep
   - **Note:** Renumbered from S06 to S07 as part of repository story migration (E09:S01:T08)
 
 
-- [ ] **E5:S08 – Knowledge Base** - IN PROGRESS (T02 ✅; **T03/FR-114** intake **v0.5.8.3+1**)
+- [ ] **E5:S08 – Knowledge Base** - IN PROGRESS (T02 ✅; **FR-114** intake T03–T04 **v0.5.8.4+1**)
   - Story: [`story-08-knowledge-base.md`](story-08-knowledge-base.md)
   - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08)
 

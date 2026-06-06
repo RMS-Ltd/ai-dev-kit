@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-06  
 **Submitted By:** User (docs/KB architecture discussion)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** INTAKE (T15 ✅ v0.5.9.15+1; T03 ✅ v0.5.8.3+1; T04 pending)
+**Status:** ACCEPTED (intake complete — T15 ✅ v0.5.9.15+1; T03 ✅ v0.5.8.3+1; T04 ✅ v0.5.8.4+1)
 
 **Implementing Tasks:**
 

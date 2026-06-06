@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-06 (v0.5.8.3+1 — T03 FR-114 intake)  
-**Version:** v0.5.8.3+1  
+**Last updated:** 2026-06-06 (v0.5.8.4+1 — T04 FR-114 intake complete)  
+**Version:** v0.5.8.4+1  
 **Code:** E5S08
 
 **Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).

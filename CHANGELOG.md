@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.4+1] - 06-06-26
+
+E05:S08:T04 — **Change implemented:** FR-114 intake — agent Notion-first authoring task filed (RW -k, --art). SemVer **v0.4.1023+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.4+1.md)
+
+---
+
 ## [0.5.8.3+1] - 06-06-26
 
 E05:S08:T03 — **Change implemented:** FR-114 intake — big-bang Notion migration task filed (RW -k, --art). SemVer **v0.4.1022+1**.
