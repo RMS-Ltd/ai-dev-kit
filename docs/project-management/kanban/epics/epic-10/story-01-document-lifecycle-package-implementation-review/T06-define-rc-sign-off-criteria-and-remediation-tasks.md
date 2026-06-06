@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E10:S01:T06  
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-06 (0.10.1.6+2 — V8 verification PASS; story checklist closure)  
-**Version:** 0.10.1.6+2  
+**Last updated:** 2026-06-06 (0.10.1.6+3 — RC sign-off upgraded to APPROVE; T08–T10 remediation evidence)  
+**Version:** 0.10.1.6+3  
 **Code:** E10S01T06
 
 ---
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog** for the Document Lifecycle framework package (`packages/frameworks/doc-lifecycle/`), synthesizing T01–T05 review artefacts per the E02:S13:T06 precedent.
 
-**RC sign-off posture:** **DEFER** — RC sign-off is **withheld** until HIGH gaps are **filed in kanban** (Criterion C6) and subsequently **implemented** in Wave 3. C1–C5 pass; remediation implementation remains separate (FR-083).
+**RC sign-off posture:** **APPROVE** — C1–C6 pass; all five HIGH gaps remediated and verified via [T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) (v0.10.1.8+1), [T09](T09-sync-architecture-adr-dual-sot.md) (v0.10.1.9+1), [T10](T10-fix-document-lifecycle-validator.md) (v0.10.1.10+1). MEDIUM/LOW backlog remains for post-RC scheduling (per minimum bar §4).
 
 ---
 
@@ -67,7 +67,7 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 ## Acceptance Criteria
 
 - [x] RC sign-off criteria (C1–C6) defined with pass/fail + evidence
-- [x] RC sign-off checklist with **DEFER** decision documented
+- [x] RC sign-off checklist with **APPROVE** decision documented (upgraded from DEFER @ v0.10.1.6+3)
 - [x] Remediation backlog covers all 16 `GAP-DOCLIFE-*` IDs from T05
 - [x] HIGH gaps have **filed** task docs with bidirectional links (T08, T09, T10)
 - [x] Remediation task pattern documented
@@ -134,11 +134,11 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 
 | Gap ID | Filed host | Status |
 | ------ | ---------- | ------ |
-| GAP-DOCLIFE-STRUCT-001 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (filed 2026-06-06) |
-| GAP-DOCLIFE-STRUCT-002 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (filed 2026-06-06) |
-| GAP-DOCLIFE-STRUCT-003 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (filed 2026-06-06) |
-| GAP-DOCLIFE-INTG-001 | [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) | **PASS** (COMPLETE @ v0.10.1.9+1 — ADR-023; package SoT; salience schema packaged) |
-| GAP-DOCLIFE-TEST-001 | [E10:S01:T10](T10-fix-document-lifecycle-validator.md) | **PASS** (filed 2026-06-06) |
+| GAP-DOCLIFE-STRUCT-001 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
+| GAP-DOCLIFE-STRUCT-002 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
+| GAP-DOCLIFE-STRUCT-003 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
+| GAP-DOCLIFE-INTG-001 | [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) | **PASS** (COMPLETE @ [v0.10.1.9+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md) — ADR-023; package SoT; salience schema packaged) |
+| GAP-DOCLIFE-TEST-001 | [E10:S01:T10](T10-fix-document-lifecycle-validator.md) | **PASS** (COMPLETE @ [v0.10.1.10+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md)) |
 
 | Status | Evidence |
 | ------ | -------- |
@@ -161,23 +161,17 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 
 **Overall status:** C1–C6 criteria **met** for criteria definition and HIGH-gap filing.
 
-**RC sign-off recommendation:** **DEFER**
+**RC sign-off recommendation:** **APPROVE**
 
 **Rationale:**
 
-- C1–C5 demonstrate the package has **no RC-blocking gaps** (0 Critical, 0 BLOCKER).
-- Five **HIGH** gaps (missing automation artefacts, ADR dual SoT drift, broken cross-package validator) require **implementation** before RC approval.
-- Per orchestration plan §7.4 T06 and E02:S13 DEFER pattern, RC sign-off recommendation remains **DEFER** until:
-  1. HIGH-gap remediation tasks (T08, T09, T10) progress beyond **TODO** with verification evidence, and
-  2. A follow-on RC review upgrades the recommendation to **APPROVE** or **CONDITIONAL APPROVE**.
-- T06 **completes** criteria definition and backlog filing; it does **not** grant RC sign-off.
-
-**Path to APPROVE:**
-
-1. Implement [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) (workflow + scripts) via IPP + RW
-2. Implement [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) (ADR dual SoT sync) via IPP + RW
-3. Implement [E10:S01:T10](T10-fix-document-lifecycle-validator.md) (validator fix) via IPP + RW
-4. Re-run RC checklist; upgrade sign-off when remediation evidence exists
+- C1–C5 remain **PASS** — no RC-blocking gaps (0 Critical, 0 BLOCKER).
+- C6 **PASS** — all five HIGH gaps filed and remediated with verification evidence:
+  - **R1 (T08):** [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md) — doc housekeeping workflow + scripts (GAP-DOCLIFE-STRUCT-001/002/003)
+  - **R2 (T09):** [v0.10.1.9+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md) — ADR-023 dual SoT sync (GAP-DOCLIFE-INTG-001)
+  - **R3 (T10):** [v0.10.1.10+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md) — DocumentLifecycleValidator fix (GAP-DOCLIFE-TEST-001)
+- Minimum bar §1–§3 satisfied; §4 allows open MEDIUM/LOW backlog (R4–R7 proposed-only).
+- Posture upgraded from **DEFER** (v0.10.1.6+1/+2) per follow-on RC review @ **v0.10.1.6+3**.
 
 ---
 
@@ -195,36 +189,36 @@ Non-blocking gaps must be **externalized** into Kanban (E02:S13:T06 / E04:S16:T0
 
 ## Remediation Backlog
 
-### R1 — Package Automation (Workflow + Scripts) (HIGH) — **FILED**
+### R1 — Package Automation (Workflow + Scripts) (HIGH) — **COMPLETE** @ [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)
 
 | Field | Value |
 | ----- | ----- |
 | **Gaps** | GAP-DOCLIFE-STRUCT-001, GAP-DOCLIFE-STRUCT-002, GAP-DOCLIFE-STRUCT-003 |
 | **Priority** | HIGH — Must fix before GA |
 | **Host** | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) |
-| **RC impact** | NON-BLOCKING (filed) |
+| **RC impact** | REMEDIATED (T08 COMPLETE) |
 
 ---
 
-### R2 — Architecture ADR Dual SoT Sync (HIGH) — **FILED**
+### R2 — Architecture ADR Dual SoT Sync (HIGH) — **COMPLETE** @ [v0.10.1.9+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md)
 
 | Field | Value |
 | ----- | ----- |
 | **Gaps** | GAP-DOCLIFE-INTG-001 |
 | **Priority** | HIGH — Must fix before GA |
 | **Host** | [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) |
-| **RC impact** | NON-BLOCKING (filed) |
+| **RC impact** | REMEDIATED (T09 COMPLETE) |
 
 ---
 
-### R3 — DocumentLifecycleValidator Fix (HIGH) — **FILED**
+### R3 — DocumentLifecycleValidator Fix (HIGH) — **COMPLETE** @ [v0.10.1.10+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md)
 
 | Field | Value |
 | ----- | ----- |
 | **Gaps** | GAP-DOCLIFE-TEST-001 |
 | **Priority** | HIGH — Must fix before GA |
 | **Host** | [E10:S01:T10](T10-fix-document-lifecycle-validator.md) |
-| **RC impact** | NON-BLOCKING (filed) |
+| **RC impact** | REMEDIATED (T10 COMPLETE) |
 
 ---
 
@@ -311,7 +305,7 @@ RC sign-off may be **recommended** (upgrade from DEFER) when **all** of the foll
 | ID | Result |
 | -- | ------ |
 | V1 | C1–C6 criteria present with requirement + evidence: **PASS** |
-| V2 | DEFER posture with rationale: **PASS** |
+| V2 | APPROVE posture with rationale and T08–T10 release evidence: **PASS** |
 | V3 | All 16 `GAP-DOCLIFE-*` in coverage matrix: **PASS** |
 | V4 | HIGH gaps filed T08/T09/T10 with bidirectional links: **PASS** |
 | V5 | T05 `validate_gap_log.py --strict` exit 0: **PASS** |
@@ -336,7 +330,7 @@ RC sign-off may be **recommended** (upgrade from DEFER) when **all** of the foll
 
 ## Version Anchor
 
-✅ COMPLETE (0.10.1.6+2)
+✅ COMPLETE (0.10.1.6+3 — RC sign-off **APPROVE**)
 
 ---
 

@@ -12,17 +12,17 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.9+1 – Story 1 T09 architecture ADR dual SoT sync)
+**Last updated:** 2026-06-06 (v0.10.1.6+3 – Story 1 T06 RC sign-off APPROVE)
 **Branch:** `epic/10-doc-lifecycle-framework`  
 **Version Schema:** `0.10.S.T+B`  
-**Version:** v0.10.1.6+1  
+**Version:** v0.10.1.6+3  
 **Production URL:** [N/A for this repo]
 
 ---
 
 ## Story Checklist
 
-- [x] **E10:S01 – Document Lifecycle Package Implementation Review** - COMPLETE (v0.10.1.6+1 — T01–T06 COMPLETE; DEFER posture; T08–T10 remediation filed)
+- [x] **E10:S01 – Document Lifecycle Package Implementation Review** - COMPLETE (v0.10.1.6+3 — T01–T10 COMPLETE; RC sign-off **APPROVE**)
   - Story: [`story-01-document-lifecycle-package-implementation-review.md`](story-01-document-lifecycle-package-implementation-review.md)
   - Coordinator: [`T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md`](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
   - Orchestration: [`E10S01-orchestration-plan.md`](../../../implementation-cycles/E10S01-orchestration-plan.md)
