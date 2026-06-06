@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-06 (v0.8.3.15+3 – Kanban documentation setup)
-**Version:** v0.8.3.15+3
+**Last updated:** 2026-06-06 (v0.8.3.12+6 – E08:S03:T12 wave-4 print-at-import)
+**Version:** v0.8.3.12+6
 **Code:** E8S03
 
 ---
@@ -47,7 +47,7 @@ housekeeping_policy: keep
 
 - [x] **E08:S03:T11 – CodeQL missing workflow permissions (BR-098)** — ✅ COMPLETE (**v0.8.3.11+0** doc release; alerts #1–#3 fixed on `main`) — [Task doc](story-03-automation-scripts/T11-codeql-missing-workflow-permissions-br098.md) | [BR-098](../../fr-br/BR-098-codeql-missing-workflow-permissions.md)
 
-- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 🔄 IN PROGRESS (**v0.8.3.12+5** wave-3 local proxy clear; dashboard **Good+** re-scan pending — T16) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
+- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 🔄 IN PROGRESS (**v0.8.3.12+6** wave-4 print-at-import **14** files; dashboard **Good+** pending) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
 - [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 🔄 IN PROGRESS (**v0.8.3.13+3** wave-2 **6** findings fixed; **28** expected open post-re-scan; exit/quit deferred wave 3) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 
@@ -61,7 +61,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard re-scan kanban releases shipped (**560→145** maintainability, **133→34** reliability, **14** AI open @ `cadb0c3`). **T13** wave-2 shipped @ **v0.8.3.13+3** (**6** reliability fixes; **28** deferred). **T14** awaits GitHub dismiss #10–#11; **T12** wave-3 remainder in progress. **T15–T16** (FR-112) perpetual lanes own ongoing [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI health and GitHub Security/Code Quality hygiene after backlog tasks complete.
+Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard re-scan kanban releases shipped (**560→145** maintainability, **133→34** reliability, **14** AI open @ `cadb0c3`). **T12** wave-4 shipped @ **v0.8.3.12+6** (print-at-import **14** files). **T13** wave-2 @ **v0.8.3.13+3**. **T14** FBU pending. **T15–T16** (FR-112) perpetual lanes after backlog sign-off.
 
 ---
 

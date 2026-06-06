@@ -11,6 +11,7 @@ Supports:
 - Auto-detection: Reads strategy from rw-config.yaml
 """
 
+import logging
 import os
 import subprocess
 import sys
@@ -19,12 +20,14 @@ from typing import Any, Dict, Tuple
 
 from rw_config_loader import load_rw_config_from_path
 
+logger = logging.getLogger(__name__)
+
 # Add version scripts to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'version'))
 try:
     from semver_converter import get_rw_tag_info, get_semver_mapping_strategy
 except ImportError:
-    print("⚠️  Warning: semver_converter not available")
+    logger.warning("semver_converter not available")
     get_rw_tag_info = None
     get_semver_mapping_strategy = None
 

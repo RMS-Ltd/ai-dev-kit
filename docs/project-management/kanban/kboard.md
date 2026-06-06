@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – Kanban Board
 
 **Last Updated:** 2026-06-06 (RW: E08:S03:T12)
-**Version:** v0.8.3.12+5
+**Version:** v0.8.3.12+6
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+5** wave-3 local proxy clear; dashboard **Good+** re-scan pending — T16) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-05 11:42 UTC
+- **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+6** wave-4 **14** files; print-at-import cleared locally; dashboard **Good+** pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 12:56 UTC
 
 - **E08:S03:T13** – Code Quality reliability backlog (BR-100) - 🔄 IN PROGRESS (HIGH, **v0.8.3.13+3** wave-2 **6** fixed; **28** expected open post-re-scan; exit/quit deferred wave 3) | [Task](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) | Last modified: 2026-06-05 17:09 UTC
 

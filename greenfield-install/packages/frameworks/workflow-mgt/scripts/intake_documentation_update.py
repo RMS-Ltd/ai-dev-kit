@@ -13,12 +13,15 @@ Usage:
     result = doc_update.update_document(fr_br_path, intake_decision, created_tasks, version_marker)
 """
 
+import logging
 import re
 import sys
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+logger = logging.getLogger(__name__)
 
 # Import intake components
 try:
@@ -28,7 +31,7 @@ try:
     
     from intake_decision_flow import IntakeDecision
 except ImportError as e:
-    print(f"⚠️  Warning: Could not import intake_decision_flow: {e}")
+    logger.warning("Could not import intake_decision_flow: %s", e)
     raise
 
 

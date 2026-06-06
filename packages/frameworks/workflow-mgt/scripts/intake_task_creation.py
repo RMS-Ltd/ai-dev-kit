@@ -14,10 +14,13 @@ Usage:
     result = task_creation.create_tasks(fr_br_path, intake_decision, existing_epics, existing_stories)
 """
 
+import logging
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
+
+logger = logging.getLogger(__name__)
 
 # Import E4:S10 components
 try:
@@ -29,8 +32,10 @@ try:
     from agentic_task_workflow import AgenticTaskWorkflow, WorkflowResult
     from intake_decision_flow import IntakeDecision
 except ImportError as e:
-    print(f"⚠️  Warning: Could not import required components: {e}")
-    print("   E4:S10 (Agentic Task Creation) and intake_decision_flow must be available")
+    logger.warning(
+        "Could not import required components: %s; E4:S10 and intake_decision_flow must be available",
+        e,
+    )
     raise
 
 

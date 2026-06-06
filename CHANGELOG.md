@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.12+6] - 06-06-26
+
+E08:S03:T12 — **Change implemented:** BR-099 wave-4 print-at-import (**14** files; logging migration). SemVer **v0.4.997+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+6.md)
+
+---
+
 ## [0.8.3.12+5] - 06-06-26
 
 E08:S03:T12 — **Change implemented:** Wave-3 maintainability verification (BR-099); `greenfield-install/` proxy clear; IPP revised; dashboard **Good+** pending. SemVer **v0.4.996+5**.

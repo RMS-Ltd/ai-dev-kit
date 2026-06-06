@@ -14,11 +14,14 @@ Usage:
     result = wiring.wire_dependencies(fr_br_path, created_tasks)
 """
 
+import logging
 import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+logger = logging.getLogger(__name__)
 
 # Import intake components
 try:
@@ -26,7 +29,7 @@ try:
     if str(scripts_path) not in sys.path:
         sys.path.insert(0, str(scripts_path))
 except ImportError as e:
-    print(f"⚠️  Warning: Could not import required modules: {e}")
+    logger.warning("Could not import required modules: %s", e)
     raise
 
 

@@ -13,9 +13,12 @@ Usage:
     result = execute_intake_workflow(changed_files, project_root, **kwargs)
 """
 
+import logging
 import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+
+logger = logging.getLogger(__name__)
 
 # Add scripts to path
 scripts_path = Path(__file__).parent
@@ -30,7 +33,7 @@ try:
     from intake_task_creation import IntakeTaskCreation
     from intake_version_assignment import IntakeVersionAssignment
 except ImportError as e:
-    print(f"⚠️  Warning: Could not import intake components: {e}")
+    logger.warning("Could not import intake components: %s", e)
     raise
 
 

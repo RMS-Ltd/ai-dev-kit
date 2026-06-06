@@ -14,11 +14,14 @@ Usage:
     result = version_assignment.assign_version(intake_decision, created_tasks, is_new_story, is_new_task)
 """
 
+import logging
 import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
+
+logger = logging.getLogger(__name__)
 
 # Import intake components
 try:
@@ -28,7 +31,7 @@ try:
     
     from intake_decision_flow import IntakeDecision
 except ImportError as e:
-    print(f"⚠️  Warning: Could not import intake_decision_flow: {e}")
+    logger.warning("Could not import intake_decision_flow: %s", e)
     raise
 
 

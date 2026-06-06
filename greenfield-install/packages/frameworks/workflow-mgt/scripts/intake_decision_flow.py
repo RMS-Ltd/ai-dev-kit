@@ -14,10 +14,13 @@ Usage:
     decision = decision_flow.analyze(fr_br_path, existing_epics, existing_stories)
 """
 
+import logging
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+logger = logging.getLogger(__name__)
 
 # Import E4:S10 components
 try:
@@ -29,8 +32,10 @@ try:
     from epic_story_mapper import EpicStoryMapper, EpicStoryMapping
     from fr_br_analyzer import FRBRAnalysis, FRBRAnalyzer
 except ImportError as e:
-    print(f"⚠️  Warning: Could not import E4:S10 components: {e}")
-    print("   E4:S10 (Agentic Task Creation) must be available for intake workflow")
+    logger.warning(
+        "Could not import E4:S10 components: %s; E4:S10 (Agentic Task Creation) must be available for intake workflow",
+        e,
+    )
     raise
 
 

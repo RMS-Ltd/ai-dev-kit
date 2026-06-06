@@ -12,12 +12,12 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (RW E08:S03:T12 — wave-3 verification @ v0.8.3.12+5)
-**Version Anchor:** v0.8.3.12+5
-**Version:** v0.8.3.12+5
+**Last updated:** 2026-06-06 (v0.8.3.12+6 — wave-4 print-at-import shipped; dashboard **Good+** pending)  
+**Version Anchor:** v0.8.3.12+6  
+**Version:** v0.8.3.12+6
 **Code:** E08S03T12
 
-**Scope:** Phased burn-down of **560** open GitHub Code Quality **maintainability** findings on `main`; wave 1 = unused imports/variables, import hygiene, unnecessary pass/lambda.
+**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 1–3 complete @ v0.8.3.12+5. Wave 4 shipped @ **v0.8.3.12+6** (print-at-import **14** files). Closure pending dashboard **Good+** (read-only capture in this doc; T16 deferred).
 
 **Upstream:** [BR-099 — Code Quality maintainability backlog](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — revised 2026-06-06 (wave 1–2 complete @ v0.8.3.12+4; wave 3 + **Good+** gate pending — §4.2 steps 22–30)
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — revised 2026-06-06 (wave 1–3 complete @ v0.8.3.12+5; wave 4 T13 print handoff + **Good+** closure — §4.3 steps 31–38, §4.4 steps 28–30)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
@@ -41,6 +41,7 @@ Publication Status: NOT_APPLICABLE
 1. Baseline manifest: open maintainability counts by CodeQL rule @ `main` SHA.
 2. Wave 1 remediation PR(s): autofix-safe hygiene (see BR-099 wave table).
 3. Post-wave dashboard snapshot: Maintainability score + open count delta.
+4. Wave 4: T13-deferred `py/print-during-import` remediation per [IPP §4.3](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#43-wave-4-steps-implemented-locally--pending-rw--dashboard-re-scan) (**done** @ v0.8.3.12+6).
 
 ---
 
@@ -192,7 +193,57 @@ Publication Status: NOT_APPLICABLE
 | `pytest tests/` | **407 passed**, 2 skipped |
 | `workflow-scripts-pytest` (local) | **119 passed** |
 
-**Dashboard delta:** Pending GitHub Code Quality re-scan after merge to `main` (T16). Task remains **IN PROGRESS** until dashboard **Good+** per operator closure policy.
+**Dashboard delta:** Pending GitHub Code Quality re-scan after merge to `main`. Task remains **IN PROGRESS** until dashboard **Good+** per operator closure policy (read-only capture in this doc; T16 perpetual deferred).
+
+---
+
+## Wave-4 pre-manifest (2026-06-06)
+
+**Source:** Local AST scan @ `a482cb7b` (dev); reconciled with [T16 Wave 1 re-scan](T16-github-security-code-quality-health-perpetual-fr112.md) (**16** `py/print-during-import` @ `f6aa4dca`) and [T13 wave-2 deferral](T13-code-quality-reliability-backlog-br100.md).
+
+| CodeQL rule | Open count (dashboard) | Local sites (packages/) | Severity | Wave-4 disposition |
+| ----------- | ---------------------- | ----------------------- | -------- | ------------------ |
+| `py/print-during-import` | **16** | **9** print statements in **7** modules | Note | **FIX** — replace import-time `print` with `logging.warning` |
+
+**Hotspots (packages/frameworks/workflow-mgt/scripts/ — mirrored in `greenfield-install/`):**
+
+| File | Lines | Context |
+| ---- | ----- | ------- |
+| `git_tag_handler.py` | 27 | `semver_converter` ImportError handler |
+| `intake_decision_flow.py` | 32–33 | E4:S10 ImportError handler |
+| `intake_dependency_wiring.py` | 29 | path setup ImportError handler |
+| `intake_documentation_update.py` | 31 | `intake_decision_flow` ImportError handler |
+| `intake_task_creation.py` | 32–33 | E4:S10 ImportError handler |
+| `intake_version_assignment.py` | 31 | `intake_decision_flow` ImportError handler |
+| `intake_workflow_trigger_handler.py` | 33 | intake bundle ImportError handler |
+
+**Note:** Dashboard **16** vs local **9** — CodeQL counts reliability-band alerts; mirror tree adds **9** more identical sites (**18** total); dashboard may dedupe paths.
+
+---
+
+## Wave-4 triage (2026-06-06)
+
+| Rule group | Disposition | Rationale |
+| ---------- | ----------- | --------- |
+| `py/print-during-import` (import Error handlers) | **fix** | Replace module-level `print` with `logging.getLogger(__name__).warning(...)` — preserves diagnostics without import-time side effects |
+| CLI `print` inside `if __name__ == "__main__"` | **NONE** | Out of scope — does not execute on import |
+
+---
+
+## Post-wave-4 manifest (2026-06-06 — local)
+
+**Remediation:** Import-time `print` → `logging.warning` in 7 workflow intake modules (+ `git_tag_handler`); mirrored under `greenfield-install/`.
+
+| Metric | Value |
+| ------ | ----- |
+| Files touched | **14** (7 × 2 trees) |
+| Print-at-import sites addressed | **18** (9 packages + 9 mirror) |
+| Local import-time `print` proxy after fix | **0** |
+| Expected dashboard delta | **16** `py/print-during-import` cleared post-merge (re-scan pending) |
+| `pytest tests/` | **407 passed**, 2 skipped |
+| `workflow-scripts-pytest` (local) | **119 passed** |
+
+**Dashboard delta:** Pending GitHub Code Quality re-scan after merge to `main` (IPP §4.4 step 28). Task remains **IN PROGRESS** until **Good+** (operator hard gate).
 
 ---
 
@@ -201,7 +252,7 @@ Publication Status: NOT_APPLICABLE
 - [x] Baseline manifest captured in this task doc (rule → count).
 - [x] Wave-1 rule groups remediated or waived with documented rationale.
 - [x] Open maintainability count reduced ≥50% vs baseline (**560→145**, −74.1% on dashboard re-scan).
-- [ ] Maintainability score **Good** or better (still **Fair** @ 145 on last dashboard re-scan; wave-3 local proxy clear — T16 pending).
+- [ ] Maintainability score **Good** or better (still **Fair** @ 145 on last dashboard re-scan; wave 4 + closure re-scan pending — read-only capture in this doc).
 - [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local — 407 / 119 passed @ 2026-06-06).
 - [ ] **BR-099** released via **RW E08:S03:T12** when complete.
 
@@ -211,5 +262,5 @@ Publication Status: NOT_APPLICABLE
 
 - [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
-- [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
+- [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md) — wave-2 deferred **16** print-at-import → T12 wave 4 ([T13 task](T13-code-quality-reliability-backlog-br100.md))
 - [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
