@@ -35,6 +35,9 @@ SCRATCHPAD.md
 .rw-execution.log
 docs/journals/agent-runs/
 
+# FR-113 / E08:S03:T17 — Local Code Quality Gate artifacts (local only)
+.cqg/
+
 # RW Journal Artifacts — runtime per-run files, not operator documentation
 # Operator docs (README.md, JOURNAL_SCHEMA.md, RECOVERY_PROCEDURE.md, ROLLBACK_CONTRACT.md)
 # are kept in version control; runtime rw-* artifacts are not.

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (RW: E08:S03:T14)
-**Version:** v0.8.3.14+5
+**Last Updated:** 2026-06-06 (RW: E08:S03:T17)
+**Version:** v0.8.3.17+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E08:S03:T17](epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)** — Local Code Quality Gate (CQG) (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022, operator guide, tests.
+  **Completed:** `2026-06-06T15:30:00Z` | **Version:** `v0.8.3.17+2` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
 
 - **[E08:S03:T14](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)** — Code Quality AI suggestions backlog (BR-101): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; **F-SYNC-02** waiver; lag-accepted GH panel closure.
   **Completed:** `2026-06-06T13:09:50Z` | **Version:** `v0.8.3.14+5` | **Agent:** `RW E08:S03:T14 --art` | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)

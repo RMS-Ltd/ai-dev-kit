@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "CodeQL",
+          "rules": [
+            {
+              "id": "py/unused-import",
+              "properties": { "tags": ["maintainability"] }
+            },
+            {
+              "id": "py/unsafe-deserialization",
+              "properties": { "tags": ["reliability", "security"] }
+            },
+            {
+              "id": "py/docstring-style",
+              "properties": { "tags": ["maintainability"] }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "py/unused-import",
+          "level": "warning",
+          "message": { "text": "Unused import os" },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "src/example.py" },
+                "region": { "startLine": 3 }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "py/unsafe-deserialization",
+          "level": "error",
+          "message": { "text": "Unsafe pickle load" },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "src/load.py" },
+                "region": { "startLine": 12 }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "py/docstring-style",
+          "level": "note",
+          "message": { "text": "Missing module docstring" },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "src/load.py" },
+                "region": { "startLine": 1 }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

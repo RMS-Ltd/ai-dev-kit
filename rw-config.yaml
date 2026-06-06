@@ -75,3 +75,24 @@ notion_kb_url: https://www.notion.so/30db6f8962c1810daf71f96bb601d69b
 canonical_epic_range: "1-23"
 project_specific_epic_range: "24+"
 
+# FR-113 / E08:S03:T17 — Local Code Quality Gate (CQG)
+code_quality_gate:
+  enabled: true
+  target_branch: dev
+  query_suite: security-and-quality
+  language: python
+  source_roots:
+    - packages/frameworks
+    - scripts
+    - cli
+    - src
+  monitor_cron: "0 */6 * * *"
+  staleness_hours: 12
+  reports_dir: .cqg/reports
+  cache_dir: .cqg/cache
+  last_run_file: .cqg/last-run.json
+  rw_threshold: warnings
+  rw_advisory: true
+  retention_count: 10
+  codeql_command: codeql
+

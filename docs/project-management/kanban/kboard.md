@@ -30,8 +30,6 @@ housekeeping_policy: keep
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+6** wave-4 **14** files; print-at-import cleared locally; dashboard **Good+** pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 12:56 UTC
 
-- **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** - 📋 TODO (MEDIUM, hybrid CQG: **6 h** monitor + RW Step 9; ADK-architected — tooling-automation + workflow-mgt validators) | [Task](epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | —No IPP— | Last modified: 2026-06-06 13:50 UTC
-
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
 *(No rows — T14 COMPLETE @ v0.8.3.14+5; see [`kanban-completed.md`](kanban-completed.md).)*

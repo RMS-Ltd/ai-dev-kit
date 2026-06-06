@@ -2152,6 +2152,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
      - `python {scripts_path}/validation/validate_board_stamp_diff.py --before <snapshot_dir>/kboard.md --after <kanban_root>/kboard.md --strict` (repeat for `kboard.md`; FR-097)
      - `python {scripts_path}/validation/validate_kanban_state_icons.py --project-root <repo-root> --strict` (UXR-012 / Gate 9)
      - `python {scripts_path}/validation/validate_active_kanban_board.py --project-root <repo-root> --strict` (FR-109 / Gate 11)
+     - `python {scripts_path}/validation/validate_code_quality_gate.py` (FR-113 / **E08:S03:T17** — **advisory** by default; `--strict` after parity; requires `code_quality_gate:` in `rw-config.yaml`; skips if CodeQL absent unless `--sarif` provided)
      - `python {scripts_path}/validation/validate_semver_registry_injective.py` (FR-045 / **E03:S02:T12** — blocking when `semver_mapping_strategy: task_touch`)
      - `python {scripts_path}/validation/validate_task_touch_release_contract.py --strict` (blocking when `task_touch` — registry row + staged `semver-registry.yaml` for releasing internal version)
      - `python {scripts_path}/validation/validate_kanban_moscow_spacing.py --project-root <repo-root> --strict` (UXR-005 / **E07:S01:T09**; non-blocking; Release Readiness Gate 10 warn)

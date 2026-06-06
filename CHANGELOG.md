@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.17+2] - 06-06-26
+
+E08:S03:T17 — **Change implemented:** Local CQG (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022, tests. SemVer **v0.4.1002+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.17+2.md)
+
+---
+
 ## [0.8.3.12+7] - 06-06-26
 
 E08:S03:T12 — **Change implemented:** BR-099 wave-5 maintainability gap closure (~88 files; dead yaml/globals; mirror sync). SemVer **v0.4.1001+7**.

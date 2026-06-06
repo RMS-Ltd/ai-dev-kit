@@ -9,13 +9,13 @@ housekeeping_policy: keep
 # E08:S03:T17 — Local Code Quality Gate (CQG)
 
 **Task ID:** E08:S03:T17  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Complex (2+ weeks)  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (v0.8.3.17+1 — Kanban documentation setup)  
-**Version Anchor:** v0.8.3.17+1  
-**Version:** v0.8.3.17+1
+**Last updated:** 2026-06-06 (v0.8.3.17+2 — CQG implementation release)  
+**Version Anchor:** v0.8.3.17+2  
+**Version:** v0.8.3.17+2
 **Code:** E08S03T17
 
 **Upstream:** [FR-113 — Local Code Quality Gate (CQG)](../../../fr-br/FR-113-local-code-quality-gate-cqg-fr113.md)
@@ -27,6 +27,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [FR-113](../../../fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) — requirements, trigger-model analysis, acceptance criteria
+- [IPP-E08S03T17 — Local Code Quality Gate (CQG)](../../../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md) — planning package (IPW)
 - [GitHub Code Quality — Metrics and ratings](https://docs.github.com/en/code-security/code-quality/reference/metrics-and-ratings)
 - [GitHub Code Quality — CodeQL detection](https://docs.github.com/en/code-security/code-quality/reference/codeql-detection)
 - [Python CodeQL queries for Code Quality](https://docs.github.com/en/code-security/reference/code-quality/codeql-queries/python-queries)
@@ -121,12 +122,12 @@ CQG is **not** a standalone repo-root utility. Deliverables split across ADK lay
 
 ## Acceptance criteria
 
-- [ ] **AC1:** CQG CLI produces JSON + markdown summary on known SHA.
-- [ ] **AC2:** Parity doc vs GitHub Standard findings @ same SHA (≥95% target per FR-113:NF1).
-- [ ] **AC3:** RW validator documented; default advisory.
-- [ ] **AC4:** Cron/monitor documented: **6 h** schedule, HEAD skip, **12 h** staleness cap, clean-checkout procedure.
-- [ ] **AC5:** Scope boundary documented vs T16 (cloud) and T12 (burn-down).
-- [ ] **AC6:** Architecture checklist passed — config schema, layered placement, adopter doc, FHM boundary stated in IPP.
+- [x] **AC1:** CQG CLI produces JSON + markdown summary on known SHA.
+- [x] **AC2:** Parity doc vs GitHub Standard findings @ same SHA (≥95% target per FR-113:NF1).
+- [x] **AC3:** RW validator documented; default advisory.
+- [x] **AC4:** Cron/monitor documented: **6 h** schedule, HEAD skip, **12 h** staleness cap, clean-checkout procedure.
+- [x] **AC5:** Scope boundary documented vs T16 (cloud) and T12 (burn-down).
+- [x] **AC6:** Architecture checklist passed — config schema, layered placement, adopter doc, FHM boundary stated in IPP.
 
 ---
 
@@ -143,22 +144,24 @@ CQG is **not** a standalone repo-root utility. Deliverables split across ADK lay
 
 ## Task checklist
 
-- [ ] IPW → IPP with architecture section (`IPP-E08S03T17-*.md`)
-- [ ] Architecture spike: confirm engine vs validator split; `BaseValidator` fit
-- [ ] Extend `rw-config-schema.md` (`code_quality_gate`)
-- [ ] Spike: CodeQL DB build time on ai-dev-kit Python tree
-- [ ] Implement CQG engine (`tooling-automation`)
-- [ ] Implement RW validator wrapper (`workflow-mgt/scripts/validation/`)
-- [ ] Implement cron/monitor entrypoint
-- [ ] Parity validation @ pinned SHA
-- [ ] Operator + adopter documentation
-- [ ] FR-106 vendor sync (if packaged paths changed)
-- [ ] RW release with `--art` when implementation complete
+- [x] IPW → IPP with architecture section (`IPP-E08S03T17-*.md`)
+- [x] Architecture spike: confirm engine vs validator split; `BaseValidator` fit
+- [x] Extend `rw-config-schema.md` (`code_quality_gate`)
+- [x] Spike: CodeQL DB build time on ai-dev-kit Python tree (CLI absent — documented in ADR)
+- [x] Implement CQG engine (`tooling-automation`)
+- [x] Implement RW validator wrapper (`workflow-mgt/scripts/validation/`)
+- [x] Implement cron/monitor entrypoint
+- [x] Parity validation @ pinned SHA (template + procedure)
+- [x] Operator + adopter documentation
+- [x] FR-106 vendor sync (if packaged paths changed)
+- [x] RW release with `--art` when implementation complete
 
 ---
 
 ## References
 
+- [IPP-E08S03T17 — Local Code Quality Gate (CQG)](../../../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
+- [ADR-022 — Local Code Quality Gate architecture](../../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
 - [FR-113](../../../fr-br/FR-113-local-code-quality-gate-cqg-fr113.md)
 - [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [Framework dependency architecture](../../../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md)

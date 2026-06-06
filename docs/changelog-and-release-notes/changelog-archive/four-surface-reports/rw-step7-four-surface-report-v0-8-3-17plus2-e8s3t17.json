@@ -1,0 +1,95 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [
+        "E08:S03:T17 marked COMPLETE v0.8.3.17+2 on story checklist"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "kanban-completed.md ledger append for E08:S03:T17"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kanban-completed.md"
+      ],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 17,
+    "task_id": "E8:S3:T17",
+    "version_string": "v0.8.3.17+2"
+  },
+  "stamp_evidence": {
+    "FR-113": {
+      "action": "prune",
+      "stamp": "2026-06-06 13:50 UTC",
+      "reason": "T17 COMPLETE — archive to kanban-completed.md; remove from active Should Have"
+    }
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 5,
+    "touched_surfaces": [
+      "kboard",
+      "task_doc",
+      "kanban_completed"
+    ],
+    "untouched_surfaces": [
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "kboard": {
+      "changes": [
+        "Pruned E08:S03:T17 (FR-113) from Should Have — terminal COMPLETE archived"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "T17 status COMPLETE; version anchor v0.8.3.17+2; AC1–AC6 checked"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-06 15:30 UTC"
+}
