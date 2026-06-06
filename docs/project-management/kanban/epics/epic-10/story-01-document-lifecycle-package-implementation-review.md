@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.1+1 – T01 expectations baseline complete)  
-**Version:** v0.10.1.1+1  
+**Last updated:** 2026-06-06 (v0.10.1.2+1 – T02 component inventory map complete)  
+**Version:** v0.10.1.2+1  
 **Code:** E10S01
 
 ---
@@ -36,8 +36,9 @@ housekeeping_policy: keep
 - [x] **E10:S01:T01 – Establish expectations baseline for Document Lifecycle package** - ✅ COMPLETE (v0.10.1.1+1)
   - Task: [`T01-establish-expectations-baseline-for-document-lifecycle-packa`](story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)
   - Baseline: [`expectations-baseline.md`](story-01-document-lifecycle-package-implementation-review/expectations-baseline.md)
-- [ ] **E10:S01:T02 – Inventory package components and map to expectations** - TODO
+- [x] **E10:S01:T02 – Inventory package components and map to expectations** - ✅ COMPLETE (v0.10.1.2+1)
   - Task: [`T02-inventory-package-components-and-map-to-expectations`](story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
+  - Inventory: [`component-inventory-map.md`](story-01-document-lifecycle-package-implementation-review/component-inventory-map.md)
 - [ ] **E10:S01:T03 – Validate lifecycle behavior against documented guidance** - TODO
   - Task: [`T03-validate-lifecycle-behavior-against-documented-guidance`](story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md)
 - [ ] **E10:S01:T04 – Review integrations and dependency alignment** - TODO
@@ -66,7 +67,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 ## Acceptance Criteria
 
 - [x] Expectations baseline documented and approved. ✅ (v0.10.1.1+1)
-- [ ] Component inventory mapped to expectations.
+- [x] Component inventory mapped to expectations. ✅ (v0.10.1.2+1)
 - [ ] Behavioral validation notes captured.
 - [ ] Integration alignment reviewed and documented.
 - [ ] Gap log created with severity levels.

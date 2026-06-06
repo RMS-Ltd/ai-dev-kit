@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T03-validate-lifecycle-behavior-against-documented-guidance.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md) **(E10:S01:T03)**  
 **Planning for:** [E10S01 orchestration plan §7.4 T03](./E10S01-orchestration-plan.md) · [IPP-E10S01T01 expectations baseline](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) (T01 — implementation dependency)  
-**Status:** Draft — IPW complete; awaiting user authorization for implementation  
+**Status:** Implemented — companion report published; RW v0.10.1.3+1  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
 ---

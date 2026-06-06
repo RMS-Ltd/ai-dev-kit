@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T02-inventory-package-components-and-map-to-expectations.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md) **(E10:S01:T02)**  
 **Planning for:** [T01 expectations baseline](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md) *(planned companion — see Blockers)* · [E10S01 orchestration plan](./E10S01-orchestration-plan.md) §7.4 T02  
-**Status:** Draft — IPW complete; awaiting user authorization for implementation  
+**Status:** Implemented — companion + task doc published; RW v0.10.1.2+1  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
 ---

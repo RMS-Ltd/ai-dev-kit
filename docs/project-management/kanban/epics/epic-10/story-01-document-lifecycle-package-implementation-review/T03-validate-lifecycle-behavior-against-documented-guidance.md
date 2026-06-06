@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 10, Story 1, Task 3: Validate lifecycle behavior against documented guidance
 
 **Task ID:** E10:S01:T03  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.10.1.3+1)  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-05 (v0.0.0.0+0 – migrated from embedded Story section)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-06 (v0.10.1.3+1 – lifecycle behavior validation complete)  
+**Version:** v0.10.1.3+1  
 **Code:** E10S01T03
 
 ---
@@ -37,7 +37,7 @@ Validate that `packages/frameworks/doc-lifecycle/` **documented lifecycle behavi
 - Agent-driven management rules
 - Stratified `docs/` frontmatter sample audit
 
-**Out of scope:** Package fixes (T05/T06); integration alignment (T04); T01 baseline rewrite.
+**Out of scope:** Package fixes (T05/T06); integration alignment (T04); T01 baseline rewrite; mass frontmatter migration.
 
 ---
 
@@ -45,7 +45,7 @@ Validate that `packages/frameworks/doc-lifecycle/` **documented lifecycle behavi
 
 - [E10S01 orchestration plan §7.4 T03](../../../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - [IPP-E10S01T03](../../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
-- T01 expectations baseline (`expectations-baseline.md` — **required before implementation**; see [IPP-E10S01T01](../../../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md))
+- [T01 expectations baseline](expectations-baseline.md)
 - T02 component inventory (`component-inventory-map.md` — when available)
 - `packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md`
 - `packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md`
@@ -58,22 +58,65 @@ Validate that `packages/frameworks/doc-lifecycle/` **documented lifecycle behavi
 
 ## Deliverable
 
-[Lifecycle behavior validation report](lifecycle-behavior-validation-report.md) — detailed validation matrix, evidence, discrepancy table, and compliance summary. *(Created during implementation per IPP §4.)*
+[Lifecycle behavior validation report](lifecycle-behavior-validation-report.md) — detailed validation matrix across seven domains, evidence, discrepancy table (14 items), and compliance assessment.
+
+---
+
+## Executive Summary
+
+Validation confirms **package policies and examples are internally coherent** (conditional pass). Key findings for T05:
+
+- **0 Critical** — no contradictory lifecycle rules
+- **2 High** — `DocumentLifecycleValidator` crashes (`yaml` not imported); validator enforces 2-field subset vs spec 5-field
+- **5 Medium** — `.cursorrules` 2+3 field model vs spec; 40% of `docs/` without frontmatter; housekeeping/reference automation absent (expected future)
+- **2 Low** — broken spec link to `kb-structure-overview.md`; Example 7 promotion date illustrative only
+
+Policy documentation **PASS**; runtime enforcement and automation **PARTIAL/FAIL**.
+
+---
+
+## Gap Summary (feeds T05)
+
+| Severity | Count | Top items |
+| -------- | ----- | --------- |
+| Critical | 0 | — |
+| High | 2 | D11 validator crash; D12 validator 2-field vs 5-field spec |
+| Medium | 5 | D2/D10 `.cursorrules` drift; D6/D7 repo frontmatter; D8/D9 automation absent |
+| Low | 2 | D13 broken spec link; D14 Example 7 date illustration |
+
+Full matrix: [companion report §Summary](lifecycle-behavior-validation-report.md#summary--discrepancy-table-feeds-t05).
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] Metadata schema behavioral expectations validated (five fields, enums, TTL rules)
-- [ ] Classification and LIFECYCLE_EXAMPLES alignment assessed
-- [ ] TTL/`expires_at` calculation validated on repo samples
-- [ ] Reference-aware cleanup documented vs observable gap scored
-- [ ] Agent rules (`.cursorrules` vs package policy) validated
-- [ ] Housekeeping automation documented vs observable gap scored
-- [ ] `DocumentLifecycleValidator` runtime behavior validated
-- [ ] Repo frontmatter sample audit completed
-- [ ] Discrepancies documented with severity levels
-- [ ] Compliance assessment published in companion report
+- [x] Metadata schema behavioral expectations validated (five fields, enums, TTL rules)
+- [x] Classification and LIFECYCLE_EXAMPLES alignment assessed
+- [x] TTL/`expires_at` calculation validated on repo samples
+- [x] Reference-aware cleanup documented vs observable gap scored
+- [x] Agent rules (`.cursorrules` vs package policy) validated
+- [x] Housekeeping automation documented vs observable gap scored
+- [x] `DocumentLifecycleValidator` runtime behavior validated
+- [x] Repo frontmatter sample audit completed
+- [x] Discrepancies documented with severity levels
+- [x] Compliance assessment published in companion report
+
+---
+
+## Verification Checklist (V1–V10)
+
+| ID | Check | Result | Evidence |
+| -- | ----- | ------ | -------- |
+| V1 | Metadata spec five-field vs `.cursorrules` | **PARTIAL** | Companion §1.1 |
+| V2 | LIFECYCLE_EXAMPLES alignment | **PASS** | 10/10 YAML blocks |
+| V3 | Validator smoke | **FAIL** | `NameError: yaml` at line 144 |
+| V4 | Validator vs spec gap | **PARTIAL** | 2 required vs 5 in spec |
+| V5 | TTL arithmetic | **PASS** | 20/20 repo samples ±1 day |
+| V6 | Repo frontmatter coverage | **PARTIAL** | 58.1% full five-field |
+| V7 | Missing package scripts | **PASS** (expected) | All three future artefacts absent |
+| V8 | Reference-aware cleanup observability | **PARTIAL** | Documented only |
+| V9 | Scope guard | **PASS** | No package code edits |
+| V10 | Wiring | **PASS** | Task ↔ IPP ↔ companion |
 
 ---
 
@@ -94,6 +137,7 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 ## References
 
 - [IPP-E10S01T03 — Lifecycle behavior validation](../../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
+- [Lifecycle behavior validation report](lifecycle-behavior-validation-report.md)
 - [E10S01 orchestration plan](../../../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - [IPP-E10S01T01 — Expectations baseline](../../../../../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
-
+- [T01 expectations baseline](expectations-baseline.md)

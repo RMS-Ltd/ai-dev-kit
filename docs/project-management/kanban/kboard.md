@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-06 (RW: E10:S01:T01 expectations baseline)
-**Version:** v0.10.1.1+1
+**Last Updated:** 2026-06-06 (RW: E10:S01:T02 component inventory map)
+**Version:** v0.10.1.2+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -27,8 +27,6 @@ housekeeping_policy: keep
 
 
 ### Should Have (S) - Important Tasks
-
-- **E10:S01:T02** – Inventory package components and map to expectations - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T02-component-inventory-map.md) | Last modified: 2026-06-06 14:44 UTC
 
 - **E10:S01:T03** – Validate lifecycle behavior against documented guidance - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md) | Last modified: 2026-06-06 14:44 UTC
 

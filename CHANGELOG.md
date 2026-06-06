@@ -9,6 +9,22 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.3+1] - 06-06-26
+
+E10:S01:T03 — **Change implemented:** Lifecycle behavior validation for Document Lifecycle package — companion report, task doc fleshed, V1–V10 verified; conditional pass feeds T05. SemVer **v0.4.1009+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md)
+
+---
+
+## [0.10.1.2+1] - 06-06-26
+
+E10:S01:T02 — **Change implemented:** Component inventory map for Document Lifecycle package — companion artefact, task doc fleshed, V1–V8 verified; feeds T05 gap remediation. SemVer **v0.4.1006+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.2+1.md)
+
+---
+
 ## [0.10.1.1+1] - 06-06-26
 
 E10:S01:T01 — **Change implemented:** Expectations baseline for Document Lifecycle package — companion artefact, task doc fleshed, V1–V8 verified; Wave 2A gate complete. SemVer **v0.4.1005+1**.

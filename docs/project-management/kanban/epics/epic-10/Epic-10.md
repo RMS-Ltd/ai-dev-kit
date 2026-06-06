@@ -12,17 +12,17 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.1+1 – S01 T01 expectations baseline)  
+**Last updated:** 2026-06-06 (v0.10.1.2+1 – S01 T02 component inventory map)  
 **Branch:** `epic/10-doc-lifecycle-framework`  
 **Version Schema:** `0.10.S.T+B`  
-**Version:** v0.10.1.1+1  
+**Version:** v0.10.1.2+1  
 **Production URL:** [N/A for this repo]
 
 ---
 
 ## Story Checklist
 
-- [ ] **E10:S01 – Document Lifecycle Package Implementation Review** - IN PROGRESS (v0.10.1.1+1 — T01 COMPLETE; Wave 2A gate)
+- [ ] **E10:S01 – Document Lifecycle Package Implementation Review** - IN PROGRESS (v0.10.1.2+1 — T01–T02 COMPLETE; Wave 2B in progress)
   - Story: [`story-01-document-lifecycle-package-implementation-review.md`](story-01-document-lifecycle-package-implementation-review.md)
   - Coordinator: [`T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md`](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
   - Orchestration: [`E10S01-orchestration-plan.md`](../../../implementation-cycles/E10S01-orchestration-plan.md)

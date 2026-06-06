@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T04-review-integrations-and-dependency-alignment.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md) **(E10:S01:T04)**  
 **Planning for:** [E10S01 orchestration plan §7.4 T04](./E10S01-orchestration-plan.md) · [IPP-E10S01T01 expectations baseline](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) · T02 inventory · T03 behavior validation (when available)  
-**Status:** Draft — IPW complete; awaiting user authorization for implementation  
+**Status:** Implemented — companion report shipped v0.10.1.4+1  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
 ---

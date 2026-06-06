@@ -353,3 +353,9 @@ packages/frameworks/doc-lifecycle/
 | V8 | Scope guard: no inventory gap tables, no repo frontmatter audit, no package edits | ✅ PASS — composition lists only; no gap severity |
 
 **Verified:** 2026-06-06 by E10:S01:T01 implementation agent.
+
+---
+
+## Downstream Inventory (T02)
+
+Component inventory map with expected-vs-actual coverage: [component-inventory-map.md](component-inventory-map.md) (E10:S01:T02, v0.10.1.2+1).

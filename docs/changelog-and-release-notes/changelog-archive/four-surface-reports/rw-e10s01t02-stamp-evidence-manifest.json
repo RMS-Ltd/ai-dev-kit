@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E10:S01:T02": {
+      "allowed": true,
+      "reason": "RW E10:S01:T02 v0.10.1.2+1 — terminal row prune to kanban-completed.md (task COMPLETE); no stamp rewrite on remaining rows"
+    }
+  }
+}
