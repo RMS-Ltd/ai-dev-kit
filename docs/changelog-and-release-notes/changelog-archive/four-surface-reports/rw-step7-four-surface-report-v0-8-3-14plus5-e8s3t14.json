@@ -1,0 +1,33 @@
+{
+  "internal_version": "0.8.3.14+5",
+  "epic": 8,
+  "story": 3,
+  "task": 14,
+  "invocation_context": "rw_step_7",
+  "surfaces": [
+    {
+      "surface": "task_doc",
+      "path": "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md",
+      "why": "COMPLETE + v0.8.3.14+5; Re-scan D closure; AC satisfied"
+    },
+    {
+      "surface": "fr_br",
+      "path": "docs/project-management/kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md",
+      "why": "RESOLVED lag-accepted; resolution narrative"
+    },
+    {
+      "surface": "kboard",
+      "path": "docs/project-management/kanban/kboard.md",
+      "why": "Removed T14 from Verification band; version metadata"
+    },
+    {
+      "surface": "kanban_completed",
+      "path": "docs/project-management/kanban/kanban-completed.md",
+      "why": "T14 terminal row appended"
+    }
+  ],
+  "board_stamp_evidence": {
+    "kboard_row_removed": "E08:S03:T14",
+    "metadata_only": true
+  }
+}

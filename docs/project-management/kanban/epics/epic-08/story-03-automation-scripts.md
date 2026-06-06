@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-06 (v0.8.3.12+6 – Kanban documentation setup)
-**Version:** v0.8.3.12+6
+**Last updated:** 2026-06-06 (v0.8.3.14+5 – T14 COMPLETE)
+**Version:** v0.8.3.14+5
 **Code:** E8S03
 
 ---
@@ -51,7 +51,7 @@ housekeeping_policy: keep
 
 - [x] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — ✅ COMPLETE (**v0.8.3.13+4** wave-3 **12** exit/quit fixed; **16** print → T12) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 
-- [ ] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ⏳ WAITING (**v0.8.3.14+4** FBU; GH AI refresh pending; **F-SYNC-02** open; **AI-VENDOR-TREE** triage) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
+- [x] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ✅ COMPLETE (**v0.8.3.14+5** wave-2b/c; lag-accepted GH panel) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
 - [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+3** — Wave 2: MDX-safe ADK markers; local Docusaurus green; pending Actions verify) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 
@@ -61,7 +61,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard re-scan kanban releases shipped (**560→145** maintainability, **133→34** reliability, **14** AI open @ `cadb0c3`). **T12** wave-4 shipped @ **v0.8.3.12+6** (print-at-import **14** files). **T13** **COMPLETE** @ **v0.8.3.13+4** (BR-100 waves 1–3). **T14** FBU pending. **T15–T16** (FR-112) perpetual lanes after backlog sign-off.
+Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard burn-down. **T12** wave-4 @ **v0.8.3.12+6**. **T13** **COMPLETE** @ **v0.8.3.13+4**. **T14** **COMPLETE** @ **v0.8.3.14+5** (BR-101 lag-accepted). **T15–T16** (FR-112) perpetual lanes; T16 resumes after **T12** sign-off.
 
 ---
 

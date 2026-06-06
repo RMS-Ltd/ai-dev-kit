@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-05 (UKW -u — **FR-022** IMPLEMENTED)
-**Version:** v0.5.7.1+1
+**Last Updated:** 2026-06-06 (RW: E08:S03:T14 — **BR-101** RESOLVED)
+**Version:** v0.8.3.14+5
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-101 | BR | Code Quality AI suggestions backlog — RESOLVED lag-accepted (**E08:S03:T14**) | 2026-06-06T13:09:50Z | v0.8.3.14+5 | RW E08:S03:T14 --art |
 | FR-022 | FR | Policy Docs machine-readable salience — IMPLEMENTED (**E05:S07:T01**) | 2025-12-12T00:00:00Z | v0.5.7.1+1 | UKW -u |
 | UXR-023 | UXR | kboard IPP segment regression restore — RESOLVED (**E02:S16:T20**) | 2026-06-05T19:45:00Z | v0.2.16.20+2 | RW E02:S16:T20 --art |
 | UXR-022 | UXR | RW `--dpz` short flag for doc-policy-zero — COMPLETE (**E02:S16:T19**) | 2026-06-05T15:12:49Z | v0.2.16.19+2 | RW E02:S16:T19 --art |

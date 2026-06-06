@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-05 (UKW -u: E05:S07:T01 / FR-022 archive)
-**Version:** v0.5.7.1+1
+**Last Updated:** 2026-06-06 (RW: E08:S03:T14)
+**Version:** v0.8.3.14+5
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E08:S03:T14](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)** — Code Quality AI suggestions backlog (BR-101): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; **F-SYNC-02** waiver; lag-accepted GH panel closure.
+  **Completed:** `2026-06-06T13:09:50Z` | **Version:** `v0.8.3.14+5` | **Agent:** `RW E08:S03:T14 --art` | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
 - **[E08:S03:T13](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)** — Code Quality reliability backlog (BR-100): waves 1–3 burn-down (**133→28** open; **12** exit/quit fixed wave 3; **16** print → T12).
   **Completed:** `2026-06-06T13:02:41Z` | **Version:** `v0.8.3.13+4` | **Agent:** `RW E08:S03:T13 --art` | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)

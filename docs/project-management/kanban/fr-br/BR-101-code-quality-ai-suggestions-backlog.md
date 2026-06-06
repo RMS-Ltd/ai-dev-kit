@@ -11,10 +11,10 @@ housekeeping_policy: keep
 **Bug ID:** BR-101  
 **Priority:** LOW  
 **Severity:** LOW — **17** open AI-powered Code Quality suggestions across **5** file groups (2026-06-05 GH UI).  
-**Status:** WAITING  
+**Status:** RESOLVED (lag-accepted closure — dashboard refresh may lag)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (FBU wave — GH refresh pending; **v0.8.3.14+4**)  
-**Version:** v0.8.3.14+4  
+**Last updated:** 2026-06-06 (terminal closure **v0.8.3.14+5**)  
+**Version:** v0.8.3.14+5  
 **Implementing Task:** [E08:S03:T14](../epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (AI suggestions panel) · [BR-099](BR-099-code-quality-maintainability-backlog.md) · [BR-100](BR-100-code-quality-reliability-backlog.md)
 
@@ -65,11 +65,22 @@ GitHub **Code Quality** surfaces **AI-powered suggestions** grouped by **file pa
 - Applied 12 code/doc fixes (semver_converter, sync_greenfield_install, contamination tests/detector, portal link tests); dismissed 2 (version.py dataclass — RW contract; sync `rglob` — no benefit).
 - Targeted pytest: 7 passed.
 - **Released:** **v0.8.3.14+1** via **`RW E08:S03:T14 --art`**.
-- **Pending:** GitHub dismiss for **AI-SYNC-GFI** / R10 (`rglob`) on [ai-findings panel](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings); panel 0-open verification.
+- **Pending (superseded):** GH AI panel has **no dismiss** control — doc waiver only.
 
 **Dashboard re-scan B (2026-06-05, operator GH UI):** [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) — **17** open across 5 file groups. **AI-VENDOR-TREE** (`tests/workflow_mgt/test_verify_vendor_tree.py`, 4) is new post wave-1. `version.py` (R11) no longer listed.
 
 **Post-merge (2026-06-05):** Operator merged to `main` @ `f6aa4dca` and pushed. **F-SYNC-01/03** fixes verified on `main`; GH AI panel has **no dismiss** control — refresh lag expected. **Released:** **v0.8.3.14+3** via **`RW E08:S03:T14 -k --art`**; **v0.8.3.14+4** FBU verification via **`RW E08:S03:T14 --art`**.
+
+**Wave-2b (2026-06-05, unreleased):**
+
+- **AI-VENDOR-TREE:** 4/4 **apply** — pytest module fixture, `sys.modules` preflight for `adk_install_errors`, assertion messages, `_write_stub_scripts` helper in `tests/workflow_mgt/test_verify_vendor_tree.py`.
+- **F-SYNC-02:** **Branch A (leave)** — `rglob("*")` unchanged; doc waiver per wave-1 triage.
+- **Re-scan D** in task doc @ working tree `f3bd95d`; lag-accepted path documented for stale shipped groups.
+- **Released:** **v0.8.3.14+5** via **`RW E08:S03:T14 --art`** — lag-accepted closure; **E08:S03:T14** **COMPLETE**. Ongoing AI monitoring → **E08:S03:T16** (FR-112) after T12 sign-off.
+
+## Resolution
+
+**Attempted resolution (2026-06-06):** Wave-1 **12/14** apply + wave-2b **AI-VENDOR-TREE** 4/4 apply + **F-SYNC-02** doc waiver. GH AI panel has no dismiss control; stale rows for shipped fixes accepted per task-doc lag policy. Operator may re-verify 0-open after GH re-analysis; use **T16** perpetual lane for drift.
 
 ---
 
