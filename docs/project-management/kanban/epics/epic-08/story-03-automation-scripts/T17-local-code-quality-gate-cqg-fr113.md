@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** Complex (2+ weeks)  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (v0.8.3.17+2 — CQG implementation release)  
-**Version Anchor:** v0.8.3.17+2  
-**Version:** v0.8.3.17+2
+**Last updated:** 2026-06-06 (v0.8.3.17+3 — CQG CodeQL suite mapping fix)  
+**Version Anchor:** v0.8.3.17+3  
+**Version:** v0.8.3.17+3
 **Code:** E08S03T17
 
 **Upstream:** [FR-113 — Local Code Quality Gate (CQG)](../../../fr-br/FR-113-local-code-quality-gate-cqg.md)

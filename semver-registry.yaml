@@ -2264,6 +2264,14 @@ rc_0:
       story: 3
       task: 12
       build: 8
+    - internal_version: 0.8.3.17+3
+      semver: 0.4.1004+3
+      patch: 1004
+      rc: 0
+      epic: 8
+      story: 3
+      task: 17
+      build: 3
     - internal_version: 0.10.1.7+1
       semver: 0.4.1003+1
       patch: 1003

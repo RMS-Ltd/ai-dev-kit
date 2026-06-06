@@ -1,0 +1,30 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 17,
+    "task_id": "E8:S3:T17",
+    "version_string": "v0.8.3.17+3"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc", "kanban_completed"],
+    "total_changes": 3
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md"
+      ],
+      "changes": ["Version anchor v0.8.3.17+3 — CodeQL suite mapping fix"]
+    },
+    "kboard": {
+      "touched": false,
+      "paths": [],
+      "changes": []
+    }
+  },
+  "timestamp_utc": "2026-06-06 15:15 UTC"
+}

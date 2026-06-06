@@ -97,6 +97,14 @@ E10:S01:T07 — **Change implemented:** Coordinator orchestration plan, epic/10 
 
 ---
 
+## [0.8.3.17+3] - 06-06-26
+
+E08:S03:T17 — **Attempted fix:** CQG CodeQL suite mapping (`security-and-quality` → `python-security-and-quality.qls`); local run verified. SemVer **v0.4.1004+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.17+3.md)
+
+---
+
 ## [0.8.3.12+8] - 06-06-26
 
 E08:S03:T12 — **Change implemented:** BR-099 closure docs (§4.6 steps 50/28/51/13; lag-accepted Fair; wave 6 planned). SemVer **v0.4.1003+8**.
