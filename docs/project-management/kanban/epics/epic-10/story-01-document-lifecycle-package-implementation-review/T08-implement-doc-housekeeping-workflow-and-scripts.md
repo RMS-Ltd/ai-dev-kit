@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 10, Story 1, Task 8: Implement doc housekeeping workflow and scripts
 
 **Task ID:** E10:S01:T08  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.10.1.8+1)  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (filed from T06 remediation backlog R1)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-06 (RW E10:S01:T08 --art)  
+**Version:** v0.10.1.8+1  
 **Code:** E10S01T08
 
 ---
@@ -74,13 +74,29 @@ Implement the documented-future automation artefacts for the Document Lifecycle 
 
 ## Acceptance Criteria
 
-- [ ] `workflows/doc-housekeeping-workflow.yaml` exists and matches documented workflow steps
-- [ ] `scripts/validate_lifecycle_metadata.py` validates all five required metadata fields
-- [ ] `scripts/housekeeping_scanner.py` implements reference-aware cleanup per policy
-- [ ] greenfield-install mirror updated (FR-110 parity)
+- [x] `workflows/doc-housekeeping-workflow.yaml` exists and matches documented workflow steps
+- [x] `scripts/validate_lifecycle_metadata.py` validates all five required metadata fields
+- [x] `scripts/housekeeping_scanner.py` implements reference-aware cleanup per policy
+- [x] greenfield-install mirror updated (FR-110 parity)
 - [x] IPP linked before code implementation (FR-083)
 
 ---
+
+## Verification
+
+Reference-aware cleanup observability (GAP-DOCLIFE-BEHV-001):
+
+```json
+{
+  "path": "expired_transient.md",
+  "action": "archive",
+  "reason": "protected by references (auto-upgrade from delete)",
+  "references": ["evergreen:evergreen_linker.md"]
+}
+```
+
+pytest: `python -m pytest packages/frameworks/doc-lifecycle/tests/` — 12 passed.
+FR-110: `python scripts/sync_greenfield_install.py` + `diff -rq` canonical ↔ mirror exit 0.
 
 ## References
 

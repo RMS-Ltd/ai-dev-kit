@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.10+1 – T10 DocumentLifecycleValidator fix)
-**Version:** v0.10.1.10+1
+**Last updated:** 2026-06-06 (v0.10.1.8+1 – T08 doc housekeeping workflow)
+**Version:** v0.10.1.8+1
 **Code:** E10S01
 
 ---
@@ -51,8 +51,9 @@ housekeeping_policy: keep
 - [x] **E10:S01:T06 – Define RC sign-off criteria and remediation tasks** - ✅ COMPLETE (v0.10.1.6+1) (v0.10.1.6+2)
   - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
   - Posture: **DEFER** — HIGH gaps filed as T08, T09, T10
-- [ ] **E10:S01:T08 – Implement doc housekeeping workflow and scripts** - TODO (HIGH remediation)
+- [x] **E10:S01:T08 – Implement doc housekeeping workflow and scripts** - ✅ COMPLETE (v0.10.1.8+1)
   - Task: [`T08-implement-doc-housekeeping-workflow-and-scripts`](story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)
+  - IPP: [`IPP-E10S01T08`](../../../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
 - [ ] **E10:S01:T09 – Sync architecture ADR dual SoT** - TODO (HIGH remediation)
   - Task: [`T09-sync-architecture-adr-dual-sot`](story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)
 - [x] **E10:S01:T10 – Fix DocumentLifecycleValidator** - ✅ COMPLETE (v0.10.1.10+1)

@@ -118,15 +118,30 @@ else:
 
 ### 4. DocumentLifecycleValidator
 
-**Purpose:** Validates document lifecycle metadata and policy compliance.
+**Purpose:** Cross-package validator in tooling-automation that enforces the Document Lifecycle package metadata contract on markdown files under a docs tree.
 
-**Validates:**
-- Required lifecycle fields (`lifecycle`, `created_at`)
-- Valid lifecycle values (`evergreen`, `timeboxed`, `transient`)
-- Valid `created_at` format (ISO 8601 datetime)
-- Valid `ttl_days` value (positive integer or null)
-- Valid `expires_at` format (ISO 8601 datetime or null)
-- Valid `housekeeping_policy` values (`keep`, `archive`, `delete`)
+**Required fields** (when frontmatter is present; per [`doc-lifecycle-metadata-spec.md`](../../../doc-lifecycle/policies/doc-lifecycle-metadata-spec.md) §Required Fields):
+
+| Field | Type / values |
+| ----- | ------------- |
+| `lifecycle` | `evergreen` \| `timeboxed` \| `transient` |
+| `ttl_days` | positive integer or `null` |
+| `created_at` | ISO 8601 datetime |
+| `expires_at` | ISO 8601 datetime or `null` |
+| `housekeeping_policy` | `keep` \| `archive` \| `delete` |
+
+Documents **without** YAML frontmatter are acceptable (no error). PyYAML is required for frontmatter parsing; if unavailable, the validator emits a clear error instead of crashing.
+
+**Also validates** (when fields are present): enum and type constraints for each field above.
+
+**Ownership boundary vs package-local validator (E10:S01:T08):**
+
+| Aspect | `DocumentLifecycleValidator` (this package) | `validate_lifecycle_metadata.py` (doc-lifecycle package, T08) |
+| ------ | ------------------------------------------- | ------------------------------------------------------------- |
+| Location | `tooling-automation/validators/framework/` | `doc-lifecycle/scripts/` |
+| Scope | Cross-package registry validator; scans `docs_root` tree | Package-local housekeeping workflow script |
+| Pre-commit | Not wired by default | Intended for package workflow integration |
+| Contract | Five-field spec enforcement | Same five-field spec (complementary, not duplicate) |
 
 **Usage:**
 ```python

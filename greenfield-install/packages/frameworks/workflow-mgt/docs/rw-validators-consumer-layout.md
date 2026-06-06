@@ -74,3 +74,20 @@ If **`use_kanban: true`**, you must have real task documents under `kanban_root`
 **Framework package** `Version:` in this README (e.g. workflow mgt **2.2.x**) describes the **packaged framework** for adopters. **ai-dev-kit** repo version (`src/fynd_deals/version.py`) tracks the **monorepo** release. They are **not** forced to bump together.
 
 Policy detail: [packages/README.md (Framework README version fields)](../../../../packages/README.md#framework-readme-version-fields).
+
+---
+
+## 6. Local Code Quality Gate (CQG) — FR-113 / E08:S03:T17
+
+When adopting CQG, add **`code_quality_gate:`** to `rw-config.yaml` (see [schema](../config/rw-config-schema.md)) and vendor **`tooling-automation`** engine paths:
+
+| Artifact | Typical path after vendor copy |
+| -------- | ------------------------------ |
+| Engine | `{vendor}/tooling-automation/validators/code_quality/` |
+| CLI | `{vendor}/tooling-automation/scripts/run_cqg.py` |
+| RW Step 9 | `{scripts_path}/validation/validate_code_quality_gate.py` |
+| Monitor | `{scripts_path}/../cqg_monitor.py` (sibling of `validation/` under `scripts/`) |
+
+RW Step 9 runs **`validate_code_quality_gate.py`** — **advisory by default** (`rw_advisory: true`); pass **`--strict`** to block on threshold breach. Requires **CodeQL CLI** on PATH for full runs; use **`--sarif`** for offline replay.
+
+Operator guide: [code-quality-gate-operator-guide.md](../../tooling-automation/docs/code-quality-gate-operator-guide.md) · ADR: [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md).

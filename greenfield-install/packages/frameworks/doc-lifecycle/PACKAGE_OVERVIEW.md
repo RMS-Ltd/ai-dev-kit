@@ -31,11 +31,16 @@ packages/frameworks/doc-lifecycle/
 │   └── doc-lifecycle-policy.md         # Policy and governance
 │
 ├── workflows/
-│   └── doc-housekeeping-workflow.yaml # Automated housekeeping workflow (future)
+│   └── doc-housekeeping-workflow.yaml # Automated housekeeping workflow (DHKW)
 │
 ├── scripts/
-│   ├── validate_lifecycle_metadata.py # Validator for lifecycle metadata (future)
-│   └── housekeeping_scanner.py         # Scanner for expired documents (future)
+│   ├── validate_lifecycle_metadata.py # Validator for lifecycle metadata
+│   └── housekeeping_scanner.py         # Scanner for expired documents
+│
+├── tests/
+│   ├── fixtures/
+│   ├── test_validate_lifecycle_metadata.py
+│   └── test_housekeeping_scanner.py
 │
 ├── templates/
 │   ├── DOCUMENT_TEMPLATE.md           # Template with lifecycle metadata
@@ -61,14 +66,18 @@ packages/frameworks/doc-lifecycle/
 4. **`policies/doc-lifecycle-metadata-spec.md`** — Complete metadata schema with field definitions
 5. **`policies/doc-lifecycle-policy.md`** — Governance and enforcement rules
 
-### Workflows (Future)
+### Workflows
 
-6. **`workflows/doc-housekeeping-workflow.yaml`** — Automated housekeeping workflow
+6. **`workflows/doc-housekeeping-workflow.yaml`** — Automated housekeeping workflow (DHKW)
 
-### Scripts (Future)
+### Scripts
 
 7. **`scripts/validate_lifecycle_metadata.py`** — Validator for lifecycle metadata
 8. **`scripts/housekeeping_scanner.py`** — Scanner for expired documents
+
+### Tests
+
+9. **`tests/`** — pytest coverage for validator and scanner
 
 ### Templates
 
@@ -131,7 +140,7 @@ packages/frameworks/doc-lifecycle/
 **What you get:**
 - All standalone features
 - RW can set lifecycle metadata when creating docs
-- Future: Doc Housekeeping Workflow automates cleanup
+- Doc Housekeeping Workflow automates cleanup
 
 **Dependencies:** Workflow Management package (optional, can work standalone)
 
@@ -139,7 +148,7 @@ packages/frameworks/doc-lifecycle/
 1. Copy both packages
 2. Follow Workflow Mgt integration guide
 3. Configure RW to set lifecycle metadata
-4. (Future) Run Doc Housekeeping Workflow periodically
+4. Run Doc Housekeeping Workflow periodically
 
 ---
 
@@ -159,7 +168,7 @@ packages/frameworks/doc-lifecycle/
 2. Follow integration guides
 3. Configure RW to set lifecycle metadata
 4. Apply lifecycle metadata to Kanban docs
-5. (Future) Run Doc Housekeeping Workflow periodically
+5. Run Doc Housekeeping Workflow periodically
 
 ---
 
@@ -205,7 +214,7 @@ housekeeping_policy: delete
 ...
 ```
 
-**Future:** Doc Housekeeping Workflow automates cleanup based on lifecycle metadata.
+**Doc Housekeeping Workflow** automates cleanup based on lifecycle metadata.
 
 **See:** [`integration/workflow-mgt-integration.md`](./integration/workflow-mgt-integration.md)
 
@@ -244,7 +253,7 @@ Projects must **copy** this package into their repository, not link to it.
 | **Kanban** | Policy + Templates | Git, Markdown | Versioning, Workflow Mgt |
 | **Numbering & Versioning** | Policy | None | Kanban, Workflow Mgt |
 | **Workflow Management** | Policy + Scripts + Workflows | Versioning (soft) | Kanban, Versioning |
-| **Doc Lifecycle** | Policy + Scripts + Workflows (future) | None | Kanban, Workflow Mgt |
+| **Doc Lifecycle** | Policy + Scripts + Workflows | None | Kanban, Workflow Mgt |
 
 **Doc Lifecycle** follows the same modular pattern:
 - ✅ Standalone capability
@@ -260,8 +269,7 @@ Projects must **copy** this package into their repository, not link to it.
 2. **Use templates** — Use `templates/DOCUMENT_TEMPLATE.md` when creating new docs
 3. **Apply lifecycle metadata** — Add lifecycle metadata to existing KB documents
 4. **Follow integration guides** — If using with Kanban or Workflow Management
-5. **Future:** Implement Doc Housekeeping Workflow (YAML + agent execution guide)
-6. **Future:** Implement validation scripts
+5. **Run housekeeping workflow** — Use `workflows/doc-housekeeping-workflow.yaml` and scripts for periodic cleanup
 
 ---
 

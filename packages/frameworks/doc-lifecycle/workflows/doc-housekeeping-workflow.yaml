@@ -1,0 +1,142 @@
+name: Doc Housekeeping Workflow
+version: 1.0.0
+type: doc_housekeeping
+description: >
+  Automated document lifecycle housekeeping workflow (DHKW). Scans docs for expired
+  lifecycle metadata, analyzes references, plans archive/delete actions with
+  reference-aware protection, and logs results. Invoke manually or on a schedule.
+  Default is dry-run; explicit --execute --confirm required for mutations.
+
+config:
+  docs_root: docs
+  archive_dir: docs/Archive
+  graveyard_dir: docs/_graveyard
+  main_changelog: CHANGELOG.md
+  validate_script: scripts/validate_lifecycle_metadata.py
+  scanner_script: scripts/housekeeping_scanner.py
+  dry_run_default: true
+  use_rw_config: false
+
+steps:
+  - id: step-1
+    name: Validate Lifecycle Metadata
+    type: validation
+    handler: doc_lifecycle.validate_metadata
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies: []
+    config:
+      script: ${config.validate_script}
+      args:
+        - --path
+        - ${config.docs_root}
+        - --strict
+
+  - id: step-2
+    name: Scan Documents
+    type: scan
+    handler: doc_lifecycle.scan
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-1
+    config:
+      script: ${config.scanner_script}
+      args:
+        - --scan
+        - --root
+        - ${config.docs_root}
+
+  - id: step-3
+    name: Filter Expired
+    type: filter
+    handler: doc_lifecycle.filter_expired
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-2
+    config:
+      script: ${config.scanner_script}
+      args:
+        - --filter-expired
+        - --root
+        - ${config.docs_root}
+
+  - id: step-4
+    name: Analyze References
+    type: analysis
+    handler: doc_lifecycle.analyze_references
+    required: true
+    mandatory: true
+    blocking: false
+    dependencies:
+      - step-3
+    config:
+      script: ${config.scanner_script}
+      args:
+        - --analyze-references
+        - --root
+        - ${config.docs_root}
+        - --changelog
+        - ${config.main_changelog}
+
+  - id: step-5
+    name: Determine Actions
+    type: planning
+    handler: doc_lifecycle.plan_actions
+    required: true
+    mandatory: true
+    blocking: true
+    dependencies:
+      - step-4
+    config:
+      script: ${config.scanner_script}
+      args:
+        - --plan
+        - --root
+        - ${config.docs_root}
+        - --changelog
+        - ${config.main_changelog}
+      dry_run: true
+
+  - id: step-6
+    name: Execute Housekeeping
+    type: execution
+    handler: doc_lifecycle.execute
+    required: false
+    mandatory: false
+    blocking: true
+    dependencies:
+      - step-5
+    config:
+      script: ${config.scanner_script}
+      args:
+        - --execute
+        - --root
+        - ${config.docs_root}
+        - --archive-dir
+        - ${config.archive_dir}
+        - --changelog
+        - ${config.main_changelog}
+        - --confirm
+      requires_execute_override: true
+      blocked_when:
+        - ${config.dry_run_default}
+
+  - id: step-7
+    name: Log Actions
+    type: logging
+    handler: doc_lifecycle.log
+    required: true
+    mandatory: false
+    blocking: false
+    dependencies:
+      - step-6
+    config:
+      emit_summary: true
+      destinations:
+        - changelog
+        - task_notes

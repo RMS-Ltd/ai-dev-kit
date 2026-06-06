@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1015+1` | **Internal:** `0.10.1.10+1` (E10:S01:T10 / DocumentLifecycleValidator fix) | **Last Updated:** 2026-06-06
+**Version (SemVer):** `v0.4.1016+1` | **Internal:** `0.10.1.8+1` (E10:S01:T08 / doc housekeeping workflow) | **Last Updated:** 2026-06-06
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 

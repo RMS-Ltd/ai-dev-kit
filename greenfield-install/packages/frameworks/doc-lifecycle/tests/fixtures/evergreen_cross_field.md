@@ -1,0 +1,9 @@
+---
+lifecycle: evergreen
+ttl_days: 30
+created_at: 2026-01-01T00:00:00Z
+expires_at: 2026-02-01T00:00:00Z
+housekeeping_policy: delete
+---
+
+# Evergreen cross-field violations

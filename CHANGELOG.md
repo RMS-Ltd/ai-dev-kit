@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.8+1] - 06-06-26
+
+E10:S01:T08 — **Change implemented:** Doc housekeeping workflow and scripts — DHKW YAML, five-field validator, reference-aware scanner, pytest (12 green), FR-110 mirror; closes GAP-DOCLIFE-STRUCT-001/002/003. SemVer **v0.4.1016+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)
+
+---
+
 ## [0.10.1.10+1] - 06-06-26
 
 E10:S01:T10 — **Change implemented:** Fix `DocumentLifecycleValidator` — PyYAML import, five-field metadata enforcement, pytest TC1–TC8 green, greenfield mirror; closes GAP-DOCLIFE-TEST-001. SemVer **v0.4.1015+1**.

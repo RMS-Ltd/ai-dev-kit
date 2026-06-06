@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T08-implement-doc-housekeeping-workflow-and-scripts.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md) **(E10:S01:T08)**  
 **Planning for:** [T05 gap log GAP-DOCLIFE-STRUCT-001/002/003](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T06 remediation R1](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) · [FR-110](../project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)  
-**Status:** Draft — planning complete; awaiting explicit implementation authorization (FR-083)  
+**Status:** Implementation complete — released v0.10.1.8+1 (RW `--art`)  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
 ---

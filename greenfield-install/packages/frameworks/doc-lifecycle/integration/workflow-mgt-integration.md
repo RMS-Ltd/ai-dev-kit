@@ -48,7 +48,7 @@ The Document Lifecycle Management framework can be integrated with Workflow Mana
 1. Copy both packages (Workflow Management + Document Lifecycle)
 2. Configure RW to set lifecycle metadata when creating docs
 3. Use templates for new docs
-4. (Future) Run Doc Housekeeping Workflow periodically
+4. Run Doc Housekeeping Workflow periodically
 
 **Pros:**
 - Automated lifecycle metadata for workflow-created docs
@@ -148,21 +148,29 @@ This analysis documents current friction points...
 
 ---
 
-### Step 4: (Future) Configure Doc Housekeeping Workflow
+### Step 4: Configure Doc Housekeeping Workflow
 
-When the Doc Housekeeping Workflow is implemented, configure it to run periodically.
+Run the Doc Housekeeping Workflow periodically to clean up expired documents.
 
-**Workflow:** `workflows/doc-housekeeping-workflow.yaml` (future)
+**Workflow:** `workflows/doc-housekeeping-workflow.yaml`
 
-**Trigger:** Periodic (weekly/monthly) or manual execution
+**Trigger:** Periodic (weekly/monthly) or manual execution (`DHKW`)
 
 **Steps:**
-1. Scan `docs/**` and parse front-matter
-2. Find expired documents (`expires_at <= now()`)
-3. Analyze references (protect referenced docs)
-4. Determine action (archive or delete)
-5. Execute housekeeping
-6. Log actions in changelog
+1. Validate lifecycle metadata (`validate_lifecycle_metadata.py --strict`)
+2. Scan `docs/**` and parse front-matter
+3. Find expired documents (`expires_at <= now()`)
+4. Analyze references (protect referenced docs)
+5. Determine action (archive or delete) — dry-run plan by default
+6. Execute housekeeping (`--execute --confirm` required)
+7. Log actions in changelog or task notes
+
+**Example (plan only):**
+
+```bash
+cd packages/frameworks/doc-lifecycle
+python scripts/housekeeping_scanner.py --plan --root ../../docs --changelog ../../CHANGELOG.md
+```
 
 ---
 
@@ -293,6 +301,6 @@ because it documents completed work and is referenced in Story completion.
 
 ---
 
-**Last Updated:** 2025-12-04  
+**Last Updated:** 2026-06-06  
 **Status:** Active — Ready for use
 
