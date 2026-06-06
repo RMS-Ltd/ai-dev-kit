@@ -45,7 +45,7 @@ housekeeping_policy: keep
   **Completed:** `2026-06-06T14:10:06Z` | **Version:** `v0.10.1.7+1` | **Agent:** `RW -k E10:S01:T07 --art --dpz` | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
 
 - **[E08:S03:T17](epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)** — Local Code Quality Gate (CQG) (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022, operator guide, tests.
-  **Completed:** `2026-06-06T15:30:00Z` | **Version:** `v0.8.3.17+2` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
+  **Completed:** `2026-06-06T15:30:00Z` | **Version:** `v0.8.3.17+2` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg.md) | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
 
 - **[E08:S03:T14](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)** — Code Quality AI suggestions backlog (BR-101): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; **F-SYNC-02** waiver; lag-accepted GH panel closure.
   **Completed:** `2026-06-06T13:09:50Z` | **Version:** `v0.8.3.14+5` | **Agent:** `RW E08:S03:T14 --art` | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
