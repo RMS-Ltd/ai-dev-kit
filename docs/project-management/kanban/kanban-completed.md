@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (RW: E10:S01:T04)
-**Version:** v0.10.1.4+1
+**Last Updated:** 2026-06-06 (RW: E10:S01:T05)
+**Version:** v0.10.1.5+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E10:S01:T05](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)** — Create gap log and risk assessment: 16 `GAP-DOCLIFE-*` entries consolidated from T01–T04; conditional RC posture; `validate_gap_log.py --strict` PASS.
+  **Completed:** `2026-06-06T14:51:20Z` | **Version:** `v0.10.1.5+1` | **Agent:** `RW E10:S01:T05 --art` | [Gap log](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [IPP-T05](../../implementation-cycles/IPP-E10S01T05-gap-log-risk-assessment.md)
 
 - **[E10:S01:T04](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)** — Review integrations and dependency alignment: companion integration-alignment-report (nine domains), task doc fleshed, V1–V10 verified; feeds T05 gap log.
   **Completed:** `2026-06-06T14:48:05Z` | **Version:** `v0.10.1.4+1` | **Agent:** `RW E10:S01:T04 --art` | [Report](epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) | [IPP-T04](../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)

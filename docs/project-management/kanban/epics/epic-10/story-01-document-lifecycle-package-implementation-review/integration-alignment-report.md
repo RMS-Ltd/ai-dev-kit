@@ -240,6 +240,7 @@ T01 expectations baseline explicitly lists these as **documented-future, not T01
 
 - [IPP-E10S01T04](../../../../../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
 - [T04 task doc](T04-review-integrations-and-dependency-alignment.md)
+- [T05 gap log and risk assessment](T05-create-gap-log-and-risk-assessment.md) — authoritative `GAP-DOCLIFE-*` SoT
 - [expectations-baseline.md](expectations-baseline.md)
 - [E02:S13 integration-alignment-report precedent](../../epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
 - [E10S01 orchestration plan §7.4 T04](../../../../../../implementation-cycles/E10S01-orchestration-plan.md)

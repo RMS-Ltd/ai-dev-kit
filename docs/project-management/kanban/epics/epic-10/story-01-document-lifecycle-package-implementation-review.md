@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.4+1 – T04 integration alignment complete)  
-**Version:** v0.10.1.4+1  
+**Last updated:** 2026-06-06 (v0.10.1.5+1 – T05 gap log complete)  
+**Version:** v0.10.1.5+1  
 **Code:** E10S01
 
 ---
@@ -45,8 +45,9 @@ housekeeping_policy: keep
 - [x] **E10:S01:T04 – Review integrations and dependency alignment** - ✅ COMPLETE (v0.10.1.4+1)
   - Task: [`T04-review-integrations-and-dependency-alignment`](story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
   - Report: [`integration-alignment-report.md`](story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md)
-- [ ] **E10:S01:T05 – Create gap log and risk assessment** - TODO
+- [x] **E10:S01:T05 – Create gap log and risk assessment** - ✅ COMPLETE (v0.10.1.5+1)
   - Task: [`T05-create-gap-log-and-risk-assessment`](story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+  - Gap log: 16 `GAP-DOCLIFE-*` entries in task doc body
 - [ ] **E10:S01:T06 – Define RC sign-off criteria and remediation tasks** - TODO
   - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 
@@ -72,7 +73,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 - [x] Component inventory mapped to expectations. ✅ (v0.10.1.2+1)
 - [x] Behavioral validation notes captured. ✅ (v0.10.1.3+1)
 - [x] Integration alignment reviewed and documented. ✅ (v0.10.1.4+1)
-- [ ] Gap log created with severity levels.
+- [x] Gap log created with severity levels. ✅ (v0.10.1.5+1)
 - [ ] RC sign-off criteria and remediation tasks defined.
 
 ---

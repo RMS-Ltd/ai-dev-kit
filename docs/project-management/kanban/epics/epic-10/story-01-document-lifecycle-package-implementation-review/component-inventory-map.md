@@ -139,6 +139,7 @@ packages/frameworks/doc-lifecycle/
 ## References
 
 - [T01 expectations baseline](expectations-baseline.md)
+- [T05 gap log and risk assessment](T05-create-gap-log-and-risk-assessment.md) — authoritative `GAP-DOCLIFE-*` SoT
 - [IPP-E10S01T02](../../../../implementation-cycles/IPP-E10S01T02-component-inventory-map.md)
 - [E02:S13 component inventory map precedent](../../epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
 - Package: `packages/frameworks/doc-lifecycle/`

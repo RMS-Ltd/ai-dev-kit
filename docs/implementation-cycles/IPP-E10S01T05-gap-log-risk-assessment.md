@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T05-create-gap-log-and-risk-assessment.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) **(E10:S01:T05)**  
 **Planning for:** [E10S01 orchestration plan §7.4 T05](./E10S01-orchestration-plan.md) · T01–T04 companions (implementation dependency) · [IPP-E02S13T05 precedent](./IPP-E02S13T05-gap-log-risk-assessment.md)  
-**Status:** Draft — IPW complete; awaiting user authorization for implementation  
+**Status:** Implementation complete — awaiting user authorization for RW  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
 ---

@@ -263,6 +263,7 @@ required_fields = ['lifecycle', 'created_at']  # spec requires 5 fields
 
 - [IPP-E10S01T03](../../../../../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md)
 - [T03 task doc](T03-validate-lifecycle-behavior-against-documented-guidance.md)
+- [T05 gap log and risk assessment](T05-create-gap-log-and-risk-assessment.md) — authoritative `GAP-DOCLIFE-*` SoT
 - [T01 expectations baseline](expectations-baseline.md)
 - [doc-lifecycle-metadata-spec.md](../../../../../../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
 - [doc-lifecycle-policy.md](../../../../../../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md)

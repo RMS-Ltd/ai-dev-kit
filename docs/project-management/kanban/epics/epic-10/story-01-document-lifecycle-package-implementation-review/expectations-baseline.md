@@ -359,3 +359,7 @@ packages/frameworks/doc-lifecycle/
 ## Downstream Inventory (T02)
 
 Component inventory map with expected-vs-actual coverage: [component-inventory-map.md](component-inventory-map.md) (E10:S01:T02, v0.10.1.2+1).
+
+## Downstream Gap Log (T05)
+
+Consolidated gap log and risk assessment: [T05-create-gap-log-and-risk-assessment.md](T05-create-gap-log-and-risk-assessment.md) — 16 `GAP-DOCLIFE-*` entries (pending RW `v0.10.1.5+1`).

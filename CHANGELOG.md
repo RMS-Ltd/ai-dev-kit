@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.5+1] - 06-06-26
+
+E10:S01:T05 — **Change implemented:** Gap log and risk assessment for Document Lifecycle package — 16 `GAP-DOCLIFE-*` entries consolidated from T01–T04; conditional RC posture; `validate_gap_log.py --strict` PASS. SemVer **v0.4.1012+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md)
+
+---
+
 ## [0.10.1.4+1] - 06-06-26
 
 E10:S01:T04 — **Change implemented:** Integration and dependency alignment review for Document Lifecycle package — companion report (nine domains), task doc fleshed, V1–V10 verified; feeds T05 gap log. SemVer **v0.4.1011+1**.
