@@ -29,7 +29,9 @@ CQG does **not** replace T16 perpetual health lanes or FHM workflow checks.
 2. **`rw-config.yaml`** with `code_quality_gate:` block — see [rw-config-schema.md](../../workflow-mgt/config/rw-config-schema.md).
 3. Clean git checkout on `target_branch` (default `dev`) for monitor runs.
 
-Install CodeQL: [GitHub CodeQL CLI](https://github.com/github/codeql-cli-binaries/releases). Pin bundle version in your runbook after first successful analyze.
+Install CodeQL: [GitHub CodeQL CLI](https://github.com/github/codeql-cli-binaries/releases) or `brew install codeql`. Pin bundle version in your runbook after first successful analyze.
+
+The config value `query_suite: security-and-quality` (GitHub Code Quality name) resolves to the CodeQL suite file `python-security-and-quality.qls` automatically.
 
 **Offline / CI without CodeQL:** pass `--sarif path/to/results.sarif` to `run_cqg.py` or `validate_code_quality_gate.py`.
 

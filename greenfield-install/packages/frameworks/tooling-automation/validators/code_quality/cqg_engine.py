@@ -9,7 +9,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .config import CodeQualityGateConfig, load_config
+from .config import CodeQualityGateConfig, load_config, resolve_query_pack_spec
 from .last_run import (
     LastRunRecord,
     MonitorDecision,
@@ -80,7 +80,9 @@ class CQGEngine:
 
         subprocess.run(create_cmd, cwd=self.repo_root, check=True)
 
-        suite = self.config.query_suite
+        query_spec = resolve_query_pack_spec(
+            self.config.language, self.config.query_suite
+        )
         analyze_cmd = [
             self.config.codeql_command,
             "database",
@@ -89,7 +91,7 @@ class CQGEngine:
             "--format=sarif-latest",
             f"--output={sarif_out}",
             "--download",
-            f"codeql/{self.config.language}-queries:{suite}",
+            query_spec,
         ]
         subprocess.run(analyze_cmd, cwd=self.repo_root, check=True)
 
