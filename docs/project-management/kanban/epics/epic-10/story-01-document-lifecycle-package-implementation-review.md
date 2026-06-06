@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.7+1 – T07 kanban init COMPLETE)  
-**Version:** v0.10.1.7+1  
+**Last updated:** 2026-06-06 (v0.10.1.7+2 – Wave 1 IPP planning complete)  
+**Version:** v0.10.1.7+2  
 **Code:** E10S01
 
 ---

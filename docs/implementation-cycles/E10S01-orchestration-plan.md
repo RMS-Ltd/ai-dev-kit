@@ -489,9 +489,9 @@ Triggered by T06 remediation backlog. **Not part of E10:S01 story closure** but 
 | 2 | Version seeded `0.10.1.0+0` | ✅ See version.py |
 | 3 | Orchestration plan committed on branch | ☐ Operator push to standalone repo |
 | 3b | T07 task filed with triage/bootstrap | ✅ 2026-06-06 |
-| 4 | T07 RW `v0.10.1.7+1` | ☐ |
-| 5 | Six IPPs written (Wave 1) | ☐ |
-| 6 | User authorized implementation | ☐ |
+| 4 | T07 RW `v0.10.1.7+1` | ✅ |
+| 5 | Six IPPs written (Wave 1) | ✅ v0.10.1.7+2 |
+| 6 | User authorized implementation | ✅ PM coordinator |
 | 7 | T01 RW `v0.10.1.1+1` | ☐ |
 | 8 | T02–T04 RWs complete | ☐ |
 | 9 | T05 RW + validate_gap_log strict | ☐ |

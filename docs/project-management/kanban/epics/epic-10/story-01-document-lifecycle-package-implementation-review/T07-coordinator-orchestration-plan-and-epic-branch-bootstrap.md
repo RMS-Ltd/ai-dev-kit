@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Epic:** E10 – Document Lifecycle Framework  
 **Story:** E10:S01 – Document Lifecycle Package Implementation Review  
-**Last updated:** 2026-06-06 (v0.10.1.7+1 — kanban init; orchestration plan + bootstrap complete)  
-**Version:** v0.10.1.7+1  
+**Last updated:** 2026-06-06 (v0.10.1.7+2 — Wave 1 IPP planning complete)  
+**Version:** v0.10.1.7+2  
 **Code:** E10S01T07
 
 ---
@@ -156,6 +156,7 @@ Prefix: `GAP-DOCLIFE-{TYPE}-NNN` per [`gap-log-schema.md`](../../../../../archit
 | B8 | kboard row for T07 | ✅ |
 | B9 | Orchestration plan references T07 as host | ✅ |
 | B10 | `RW E10:S01:T07 --art` forensic release | ✅ v0.10.1.7+1 |
+| B10b | Wave 1 IPP planning (T01–T06 IPPs) | ✅ v0.10.1.7+2 |
 | B11 | Operator push branch to standalone repo remote | ☐ |
 
 ---
