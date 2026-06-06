@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **145** open standard findings on `main` (2026-06-05 re-scan; was **560** @ `5fcf102`).  
 **Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (wave-2 remediation — scope dirs cleared; greenfield mirror deferred wave 3)  
-**Version:** v0.8.3.12+4  
+**Last updated:** 2026-06-06 (wave-3 verification @ v0.8.3.12+5 — greenfield-install/ proxy clear; dashboard re-scan pending)  
+**Version:** v0.8.3.12+5  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
@@ -74,14 +74,16 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 **Wave-2 attempt (2026-06-05):** `ruff` F541 + hygiene autofix on `packages/frameworks/`, `tests/`, `scripts/`, `cli/` (169 fixes, 52 files); `run_kb_migration_mcp.py` print-at-import → `main()` guard. Local wave-2 scope proxy **0** remaining. **~146** F541 findings deferred in `greenfield-install/` mirror (wave 3). Dashboard re-scan pending post-merge.
 
+**Wave-3 attempt (2026-06-06):** Verified `greenfield-install/**/*.py` wave-3 rule set (F541,F401,F841,I001,F811,F823) @ `bf3c10ed` — **0** open (no code edits required; corpus already clear vs wave-2 projection). `pytest tests/` — **407 passed**; workflow-scripts gate — **119 passed**. Dashboard **Good+** re-scan on `main` still **pending** (T16); score remains **Fair** on last dashboard snapshot @ 145 open.
+
 ---
 
 ## Acceptance criteria
 
 - [x] **AC1 — Baseline manifest:** Snapshot in [E08:S03:T12 task doc](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) (560 open @ `5fcf102`).
 - [x] **AC2 — Wave 1 burn-down:** Wave-1 rule groups remediated; dashboard **560→145** (−74.1%) on re-scan.
-- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ (still **Fair** @ 145 open; wave-2 backlog).
-- [x] **AC4 — No regressions:** `pytest` + workflow-scripts gate green locally.
+- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ (still **Fair** @ 145 on last dashboard re-scan; wave-3 local proxy clear — T16 pending).
+- [x] **AC4 — No regressions:** `pytest` + workflow-scripts gate green locally (407 / 119 passed @ 2026-06-06).
 - [ ] **AC5 — Kanban wiring:** Linked; release via **RW E08:S03:T12** when dashboard ACs confirmed.
 
 ---

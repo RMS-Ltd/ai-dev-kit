@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-05 (v0.8.3.14+4 – E08:S03:T14 FBU verification)
-**Version:** v0.8.3.14+4
+**Last updated:** 2026-06-06 (v0.8.3.15+3 – Kanban documentation setup)
+**Version:** v0.8.3.15+3
 **Code:** E8S03
 
 ---
@@ -47,7 +47,7 @@ housekeeping_policy: keep
 
 - [x] **E08:S03:T11 – CodeQL missing workflow permissions (BR-098)** — ✅ COMPLETE (**v0.8.3.11+0** doc release; alerts #1–#3 fixed on `main`) — [Task doc](story-03-automation-scripts/T11-codeql-missing-workflow-permissions-br098.md) | [BR-098](../../fr-br/BR-098-codeql-missing-workflow-permissions.md)
 
-- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 🔄 IN PROGRESS (**v0.8.3.12+4** wave-2 scope cleared locally; **~146** deferred `greenfield-install/` wave 3; dashboard re-scan pending) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
+- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 🔄 IN PROGRESS (**v0.8.3.12+5** wave-3 local proxy clear; dashboard **Good+** re-scan pending — T16) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
 - [ ] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — 🔄 IN PROGRESS (**v0.8.3.13+3** wave-2 **6** findings fixed; **28** expected open post-re-scan; exit/quit deferred wave 3) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 
@@ -55,7 +55,7 @@ housekeeping_policy: keep
 
 - [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+3** — Wave 2: MDX-safe ADK markers; local Docusaurus green; pending Actions verify) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 
-- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+1** — Wave 0 baseline @ `777e956`; code-scanning **0** open; CI merge gate → T15) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
+- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL **DEFERRED** (await T12–T14 sign-off; baseline v0.8.3.16+1) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
 
 ---
 

@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.12+5] - 06-06-26
+
+E08:S03:T12 — **Change implemented:** Wave-3 maintainability verification (BR-099); `greenfield-install/` proxy clear; IPP revised; dashboard **Good+** pending. SemVer **v0.4.996+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+5.md)
+
+---
+
 ## [0.8.3.15+3] - 05-06-26
 
 E08:S03:T15 — **Change implemented:** Wave 2 MDX-safe ADK appendix markers; Docusaurus build restore + IPP. SemVer **v0.4.995+3**.

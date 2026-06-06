@@ -1,0 +1,73 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 scoped reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 12,
+    "task_id": "E08:S03:T12",
+    "version_string": "v0.8.3.12+5"
+  },
+  "timestamp_utc": "2026-06-06 12:47 UTC",
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_preserved_existing": 1,
+    "total_changes": 8,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "story_doc", "epic_doc"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md"
+      ],
+      "changes": [
+        "Wave-3 pre/triage/post manifests",
+        "Version v0.8.3.12+5",
+        "Status IN PROGRESS (T16 Good+ gate pending)"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md"
+      ],
+      "changes": [
+        "Wave-3 attempt narrative",
+        "Version v0.8.3.12+5"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ],
+      "changes": [
+        "E08:S03:T12 row v0.8.3.12+5 wave-3 proxy clear",
+        "Board metadata v0.8.3.12+5",
+        "Row stamp preserved FR-097"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md"
+      ],
+      "changes": [
+        "T12 checklist v0.8.3.12+5"
+      ]
+    }
+  },
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-08/epic-08.md"
+      ],
+      "changes": [
+        "Story 3 checklist v0.8.3.12+5 T12 wave-3 verify"
+      ]
+    }
+  }
+}

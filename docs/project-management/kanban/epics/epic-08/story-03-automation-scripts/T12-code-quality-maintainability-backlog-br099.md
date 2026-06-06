@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T12 — wave-2 remediation)
-**Version Anchor:** v0.8.3.12+4
-**Version:** v0.8.3.12+4
+**Last updated:** 2026-06-06 (RW E08:S03:T12 — wave-3 verification @ v0.8.3.12+5)
+**Version Anchor:** v0.8.3.12+5
+**Version:** v0.8.3.12+5
 **Code:** E08S03T12
 
 **Scope:** Phased burn-down of **560** open GitHub Code Quality **maintainability** findings on `main`; wave 1 = unused imports/variables, import hygiene, unnecessary pass/lambda.
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — revised 2026-06-05 (wave-2 plan; wave-1 complete @ v0.8.3.12+1–+3)
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — revised 2026-06-06 (wave 1–2 complete @ v0.8.3.12+4; wave 3 + **Good+** gate pending — §4.2 steps 22–30)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
@@ -152,13 +152,57 @@ Publication Status: NOT_APPLICABLE
 
 ---
 
+## Wave-3 pre-manifest (2026-06-06)
+
+**Source:** Local `ruff` proxy on `greenfield-install/**/*.py` @ `bf3c10ed` (dev); [IPP §4.2 step 22](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md).
+
+| Ruff rule (wave-3 proxy) | CodeQL theme (approx.) | Open count |
+| ------------------------ | ---------------------- | ---------- |
+| F541 | `py/ineffectual-statement` | **0** |
+| F401 | `py/unused-import` | **0** |
+| F841 | `py/unused-local-variable` | **0** |
+| I001 | `py/import-and-import-from` | **0** |
+| F811 | `py/repeated-import` | **0** |
+| F823 | (local undefined export) | **0** |
+| **Total (wave-3 rule set)** | — | **0** |
+
+**Note:** Wave-2 pre-manifest projected **146** F541 in `greenfield-install/` @ `cadb0c3`; current working tree already **0** for wave-3 rules (wave-1 Chunk C hygiene + corpus sync). No additional Python edits required for Chunk F.
+
+---
+
+## Wave-3 triage (2026-06-06)
+
+| Rule group | Disposition | Rationale |
+| ---------- | ----------- | --------- |
+| F541 / `py/ineffectual-statement` | **FIX** (verify) | Pre-manifest **0** — no autofix needed |
+| F401, I001, F841, F811, F823 | **FIX** (verify) | Pre-manifest **0** — wave-1 Chunk C + mirror sync |
+| Out-of-scope ruff (E402, F821, …) | **NONE** | Not in BR-099 wave-3 rule set; **93** findings remain — separate backlog |
+| Dashboard **Good+** gate | **VERIFY** | T16 pending post-merge re-scan on `main` |
+
+---
+
+## Post-wave-3 manifest (2026-06-06 — local proxy)
+
+**Remediation:** `ruff check --fix --select F541,F401,F841,I001,F811,F823` on `greenfield-install/**/*.py` — **0 fixes** (corpus already clear).
+
+| Metric | Value |
+| ------ | ----- |
+| Files touched (wave-3) | **0** (no diff required) |
+| Ruff wave-3 rule set after pass | **0** remaining |
+| `pytest tests/` | **407 passed**, 2 skipped |
+| `workflow-scripts-pytest` (local) | **119 passed** |
+
+**Dashboard delta:** Pending GitHub Code Quality re-scan after merge to `main` (T16). Task remains **IN PROGRESS** until dashboard **Good+** per operator closure policy.
+
+---
+
 ## Acceptance Criteria
 
 - [x] Baseline manifest captured in this task doc (rule → count).
 - [x] Wave-1 rule groups remediated or waived with documented rationale.
 - [x] Open maintainability count reduced ≥50% vs baseline (**560→145**, −74.1% on dashboard re-scan).
-- [ ] Maintainability score **Good** or better (still **Fair** @ 145 open; wave-2 backlog).
-- [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local).
+- [ ] Maintainability score **Good** or better (still **Fair** @ 145 on last dashboard re-scan; wave-3 local proxy clear — T16 pending).
+- [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local — 407 / 119 passed @ 2026-06-06).
 - [ ] **BR-099** released via **RW E08:S03:T12** when complete.
 
 ---
