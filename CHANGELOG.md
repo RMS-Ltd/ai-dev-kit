@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.4+1] - 06-06-26
+
+E10:S01:T04 — **Change implemented:** Integration and dependency alignment review for Document Lifecycle package — companion report (nine domains), task doc fleshed, V1–V10 verified; feeds T05 gap log. SemVer **v0.4.1011+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md)
+
+---
+
 ## [0.10.1.2+1] - 06-06-26
 
 E10:S01:T02 — **Change implemented:** Component inventory map for Document Lifecycle package — companion artefact, task doc fleshed, V1–V8 verified; feeds T05 gap remediation. SemVer **v0.4.1006+1**.

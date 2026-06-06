@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.2+1 – T02 component inventory map complete)  
-**Version:** v0.10.1.2+1  
+**Last updated:** 2026-06-06 (v0.10.1.4+1 – T04 integration alignment complete)  
+**Version:** v0.10.1.4+1  
 **Code:** E10S01
 
 ---
@@ -39,10 +39,12 @@ housekeeping_policy: keep
 - [x] **E10:S01:T02 – Inventory package components and map to expectations** - ✅ COMPLETE (v0.10.1.2+1)
   - Task: [`T02-inventory-package-components-and-map-to-expectations`](story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
   - Inventory: [`component-inventory-map.md`](story-01-document-lifecycle-package-implementation-review/component-inventory-map.md)
-- [ ] **E10:S01:T03 – Validate lifecycle behavior against documented guidance** - TODO
+- [x] **E10:S01:T03 – Validate lifecycle behavior against documented guidance** - ✅ COMPLETE (v0.10.1.3+1)
   - Task: [`T03-validate-lifecycle-behavior-against-documented-guidance`](story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md)
-- [ ] **E10:S01:T04 – Review integrations and dependency alignment** - TODO
+  - Report: [`lifecycle-behavior-validation-report.md`](story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md)
+- [x] **E10:S01:T04 – Review integrations and dependency alignment** - ✅ COMPLETE (v0.10.1.4+1)
   - Task: [`T04-review-integrations-and-dependency-alignment`](story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
+  - Report: [`integration-alignment-report.md`](story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md)
 - [ ] **E10:S01:T05 – Create gap log and risk assessment** - TODO
   - Task: [`T05-create-gap-log-and-risk-assessment`](story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [ ] **E10:S01:T06 – Define RC sign-off criteria and remediation tasks** - TODO
@@ -68,8 +70,8 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 - [x] Expectations baseline documented and approved. ✅ (v0.10.1.1+1)
 - [x] Component inventory mapped to expectations. ✅ (v0.10.1.2+1)
-- [ ] Behavioral validation notes captured.
-- [ ] Integration alignment reviewed and documented.
+- [x] Behavioral validation notes captured. ✅ (v0.10.1.3+1)
+- [x] Integration alignment reviewed and documented. ✅ (v0.10.1.4+1)
 - [ ] Gap log created with severity levels.
 - [ ] RC sign-off criteria and remediation tasks defined.
 
