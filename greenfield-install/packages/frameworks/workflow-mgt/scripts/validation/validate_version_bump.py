@@ -57,11 +57,6 @@ def parse_requested_task_id(requested: str) -> Optional[Tuple[int, int, int]]:
     return parse_requested_est(requested)
 
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 
 def is_perpetual_task(task_number: int, task_content: Optional[str] = None) -> bool:
     """

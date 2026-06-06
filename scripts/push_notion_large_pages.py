@@ -24,7 +24,6 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MCP_ARGS_DIR = PROJECT_ROOT / "docs" / "knowledge" / "kb-migration-mcp-args"
 CHUNK_SIZE = 11_500  # Stay under ~12KB for MCP payload limit
-SEL_LEN = 150  # Chars for selection_with_ellipsis - longer = more unique
 
 # Large pages that need chunking (page_id from original JSON)
 LARGE_FILES = [

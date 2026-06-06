@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E08:S03:T16 — GitHub Security & Code Quality Health (Perpetual)
 
 **Task ID:** E08:S03:T16  
-**Status:** IN PROGRESS — **DEFERRED** (awaiting **E08:S03:T12–T14** operator sign-off)  
+**Status:** IN PROGRESS — **DEFERRED** (awaiting **E08:S03:T12** operator sign-off; **T13**/**T14** **COMPLETE**)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (operator deferral — activity paused until T12–T14 complete)  
+**Last updated:** 2026-06-06 (UKW — T13 @ v0.8.3.13+4, T14 @ v0.8.3.14+5; deferral narrowed to T12)  
 **Version Anchor:** v0.8.3.16+1  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance

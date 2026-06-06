@@ -2,7 +2,7 @@
   "auxiliary_surfaces": {
     "epic_doc": {
       "changes": [
-        "Updated Epic Last updated: 2026-06-06 (v0.8.3.14+5 \u2013 Kanban documentation setup)"
+        "Updated Epic Last updated: 2026-06-06 (v0.8.3.17+1 \u2013 Kanban documentation setup)"
       ],
       "notes": [],
       "paths": [
@@ -24,10 +24,10 @@
     },
     "uncategorized": {
       "changes": [
-        "Updated Version: v0.8.3.14+5",
-        "Updated Last updated: 2026-06-06 (v0.8.3.14+5 \u2013 Kanban documentation setup)",
-        "Updated board Last Updated: 2026-06-06 (RW: E08:S03:T14)",
-        "Updated board Version: v0.8.3.14+5"
+        "Updated Version: v0.8.3.17+1",
+        "Updated Last updated: 2026-06-06 (v0.8.3.17+1 \u2013 Kanban documentation setup)",
+        "Updated board Last Updated: 2026-06-06 (RW: E08:S03:T17)",
+        "Updated board Version: v0.8.3.17+1"
       ],
       "notes": [],
       "paths": [],
@@ -40,11 +40,17 @@
   "release_scope": {
     "epic": 8,
     "story": 3,
-    "task": 14,
-    "task_id": "E8:S3:T14",
-    "version_string": "v0.8.3.14+5"
+    "task": 17,
+    "task_id": "E8:S3:T17",
+    "version_string": "v0.8.3.17+1"
   },
-  "stamp_evidence": {},
+  "stamp_evidence": {
+    "FR-113": {
+      "action": "append",
+      "stamp": "2026-06-06 13:50 UTC",
+      "reason": "RW E08:S03:T17 kanban init — new T17 row on Should Have band"
+    }
+  },
   "summary": {
     "stamps_appended_with_evidence": 0,
     "stamps_preserved_existing": 0,
@@ -89,5 +95,5 @@
       "touched": false
     }
   },
-  "timestamp_utc": "2026-06-06 13:31 UTC"
+  "timestamp_utc": "2026-06-06 13:50 UTC"
 }

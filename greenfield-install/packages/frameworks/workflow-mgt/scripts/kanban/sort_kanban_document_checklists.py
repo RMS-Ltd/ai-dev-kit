@@ -22,11 +22,6 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 
 def extract_task_number(task_line: str) -> Optional[int]:
     """Extract task number from line like '- [x] **E6:S01:T33 – ...'."""

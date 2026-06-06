@@ -20,11 +20,6 @@ _KANBAN_DIR = _SCRIPT_DIR.parent / "kanban"
 if str(_KANBAN_DIR) not in sys.path:
     sys.path.insert(0, str(_KANBAN_DIR))
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 from stamp_authority import MOSCOW_HEADER_RE  # noqa: E402
 from state_icons import match_canonical_at_start, parse_row_status_segment  # noqa: E402
 

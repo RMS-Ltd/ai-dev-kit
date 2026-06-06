@@ -12,12 +12,12 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (v0.8.3.12+6 — wave-4 print-at-import shipped; dashboard **Good+** pending)  
-**Version Anchor:** v0.8.3.12+6  
-**Version:** v0.8.3.12+6
+**Last updated:** 2026-06-06 (v0.8.3.12+7 — wave 5 shipped @ RW)  
+**Version Anchor:** v0.8.3.12+7  
+**Version:** v0.8.3.12+7
 **Code:** E08S03T12
 
-**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 1–3 complete @ v0.8.3.12+5. Wave 4 shipped @ **v0.8.3.12+6** (print-at-import **14** files). Closure pending dashboard **Good+** (read-only capture in this doc; T16 deferred).
+**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 1–3 complete @ v0.8.3.12+5. Wave 4 @ **v0.8.3.12+6** (print-at-import). Wave 5 shipped @ **v0.8.3.12+7** (~88 files; ruff/CodeQL gap closure + mirror sync). Closure pending dashboard **Good+** (read-only capture in this doc; T16 deferred).
 
 **Upstream:** [BR-099 — Code Quality maintainability backlog](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — revised 2026-06-06 (wave 1–3 complete @ v0.8.3.12+5; wave 4 T13 print handoff + **Good+** closure — §4.3 steps 31–38, §4.4 steps 28–30)
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — revised 2026-06-06 (wave 4 **DONE** @ +6; wave 5 **146** maintainability residual + **Good+** closure — §4.5 steps 39–49, §4.4 steps 28–30)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
@@ -41,7 +41,8 @@ Publication Status: NOT_APPLICABLE
 1. Baseline manifest: open maintainability counts by CodeQL rule @ `main` SHA.
 2. Wave 1 remediation PR(s): autofix-safe hygiene (see BR-099 wave table).
 3. Post-wave dashboard snapshot: Maintainability score + open count delta.
-4. Wave 4: T13-deferred `py/print-during-import` remediation per [IPP §4.3](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#43-wave-4-steps-implemented-locally--pending-rw--dashboard-re-scan) (**done** @ v0.8.3.12+6).
+4. Wave 4: T13-deferred `py/print-during-import` remediation per [IPP §4.3](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#43-wave-4-ledger-done--do-not-re-execute) (**done** @ v0.8.3.12+6).
+5. Wave 5: CodeQL-aligned maintainability burn-down (**146** residual) — **shipped** @ **v0.8.3.12+7**.
 
 ---
 
@@ -243,7 +244,85 @@ Publication Status: NOT_APPLICABLE
 | `pytest tests/` | **407 passed**, 2 skipped |
 | `workflow-scripts-pytest` (local) | **119 passed** |
 
-**Dashboard delta:** Pending GitHub Code Quality re-scan after merge to `main` (IPP §4.4 step 28). Task remains **IN PROGRESS** until **Good+** (operator hard gate).
+**Dashboard delta:** Post–wave-4 merge re-scan: maintainability **146** / **Fair** unchanged (print-at-import is reliability band). Wave 5 targets maintainability subtotal per [IPP §4.5](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md).
+
+---
+
+## Wave-5 pre-manifest (2026-06-06 — dashboard capture @ step 39)
+
+**Source:** [GitHub Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open`, maintainability); cross-ref [T16 Wave 1 re-scan @ `f6aa4dca`](T16-github-security-code-quality-health-perpetual-fr112.md).
+
+| Field | Value |
+| ----- | ----- |
+| Snapshot date | 2026-06-06 (operator confirmed post–wave-4 merge) |
+| Branch / ref | `dev` @ `86972930` (pre–wave-5 RW; dashboard still reflects pre-merge `main`) |
+| Open maintainability | **146** |
+| Dashboard score | **Fair** |
+| Delta vs wave-1 re-scan (145) | **+1** (mirror residual; see gap analysis) |
+
+**Rule breakdown (maintainability subtotal; from T16 @ `f6aa4dca` — confirmed @ step 39):**
+
+| CodeQL rule | Open count | Severity | Wave-5 chunk |
+| ----------- | ---------- | -------- | ------------ |
+| `py/unused-import` | 46 | Note | Chunk I |
+| `py/import-and-import-from` | 34 | Note | Chunk I |
+| `py/unused-global-variable` | 28 | Note | Chunk J |
+| `py/unused-local-variable` | 13 | Note | Chunk I |
+| `py/ineffectual-statement` | 10 | Note | Chunk I |
+| `py/multiple-definition` | 5 | Warning | Chunk K |
+| `py/repeated-import` | 4 | Note | Chunk I |
+| `py/unnecessary-lambda` | 4 | Note | Chunk K |
+| `py/unnecessary-pass` | 2 | Warning | Chunk K |
+| **Total** | **146** | — | — |
+
+**Note:** Wave 4 cleared **16** `py/print-during-import` (reliability band); does not reduce maintainability subtotal.
+
+---
+
+## Wave-5 ruff/CodeQL gap analysis (2026-06-06 — step 40)
+
+**Finding:** Local ruff proxy (`F401`, `F841`, `I001`, `F811`, `F541`) was already **0** on `packages/` and `greenfield-install/` before wave-5 edits, yet dashboard reported **146** maintainability findings. Root causes:
+
+1. **`greenfield-install/` mirror** — CodeQL scans mirrored framework tree separately (~2× path count for shared modules).
+2. **Dead `try: import yaml except: yaml = None` blocks** — ~22 unique files × 2 trees after `rw_config_loader` refactor (CodeQL `py/unused-import` / `py/ineffectual-statement`).
+3. **Dead module-level constants** — `py/unused-global-variable` (**28** dashboard) not covered by ruff autofix alone.
+4. **Wave 4 scope** — cleared reliability-band print-at-import only; did not reduce maintainability subtotal.
+
+| Directory | Ruff F401 | Ruff I001 | Ruff F841 | Ruff F541 | Ruff F811 | Notes |
+| --------- | --------- | --------- | --------- | --------- | --------- | ----- |
+| `packages/` (+ tests/scripts/cli) | **0** | **0** | **0** | **0** | **0** | pre-edit baseline |
+| `greenfield-install/` | **0** | **0** | **0** | **0** | **0** | pre-edit baseline |
+| Dashboard (CodeQL) | 46 | 34 | 13 | 10 | 4 | maintainability band (+ globals/lambda/pass) |
+
+**Post wave-5 local proxy:** ruff **0** on `packages/`, `greenfield-install/`, `scripts/`; mirror synced (**1499** files); `--check` passes.
+
+---
+
+## Wave-5 triage (2026-06-06 — step 41)
+
+| Rule group | Disposition | Rationale |
+| ---------- | ----------- | --------- |
+| Hygiene (Chunk I: F401, I001, F841, F541, F811) | **FIX** (**DONE**) | Removed dead yaml blocks; import consolidation; ruff `--fix` on `setup.py` |
+| `py/unused-global-variable` (Chunk J) | **FIX** (**DONE**) | Removed dead module constants (`OLD/NEW_VERSION_PATTERN`, `GATE_FUNCS`, `CONFIG_SCHEMA`, `DOC_TYPE_MAPPING`, etc.) |
+| Manual rules (Chunk K) | **FIX** (**DONE**) | Covered by hygiene + global cleanup; no separate lambda/pass hunks required locally |
+| Mirror sync | **FIX** (**DONE**) | `scripts/sync_greenfield_install.py` after packages edits |
+
+---
+
+## Post-wave-5 manifest (2026-06-06 — step 47)
+
+| Metric | Value |
+| ------ | ----- |
+| Files touched | **88** (`git diff --stat` @ `86972930`) |
+| Local ruff proxy after wave 5 | **0** (`F401,F841,I001,F811,F541` on packages + greenfield-install + scripts) |
+| Expected dashboard delta | Material reduction of mirror-duplicated unused-import / unused-global / ineffectual-statement findings; **Good+ not verified** until post-merge re-scan |
+| `pytest tests/` | **407 passed**, 2 skipped |
+| `workflow-scripts-pytest` (local) | **119 passed** (unchanged vs wave 4) |
+| Mirror sync | **1499** framework files; `--check` OK |
+
+**Remediation summary:** ~22 dead yaml try/except blocks (packages + mirror); dead module globals in validators/scripts; import consolidation (`sort_kanban_board.py`, test modules); `kanban_paths.py` pattern tuples retained (required by `install_release_workflow.py`).
+
+**Dashboard delta:** Pending post–wave-5 merge re-scan (IPP §4.4 step 28). Task remains **IN PROGRESS** until **Good+**. Released @ **v0.8.3.12+7**.
 
 ---
 
@@ -252,7 +331,7 @@ Publication Status: NOT_APPLICABLE
 - [x] Baseline manifest captured in this task doc (rule → count).
 - [x] Wave-1 rule groups remediated or waived with documented rationale.
 - [x] Open maintainability count reduced ≥50% vs baseline (**560→145**, −74.1% on dashboard re-scan).
-- [ ] Maintainability score **Good** or better (still **Fair** @ 145 on last dashboard re-scan; wave 4 + closure re-scan pending — read-only capture in this doc).
+- [ ] Maintainability score **Good** or better (still **Fair** @ **146** post–wave-4 merge; wave 5 + closure re-scan pending — read-only capture in this doc).
 - [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local — 407 / 119 passed @ 2026-06-06).
 - [ ] **BR-099** released via **RW E08:S03:T12** when complete.
 
@@ -260,7 +339,9 @@ Publication Status: NOT_APPLICABLE
 
 ## References
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — wave 5 + closure (§4.5 steps 39–49)
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md) — wave-2 deferred **16** print-at-import → T12 wave 4 ([T13 task](T13-code-quality-reliability-backlog-br100.md))
 - [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
+- [T16 Wave 1 re-scan](T16-github-security-code-quality-health-perpetual-fr112.md) — rule breakdown cross-ref @ `f6aa4dca`
+- [scripts/sync_greenfield_install.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/sync_greenfield_install.py) — mirror sync (IPP step 45)

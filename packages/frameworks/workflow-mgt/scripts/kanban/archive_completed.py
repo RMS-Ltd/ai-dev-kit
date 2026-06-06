@@ -23,12 +23,6 @@ ROW_FBU_PATTERNS = [
 ]
 TASK_LINK_RE = re.compile(r"\((epics/[^)]+\.md)\)")
 FRBR_LINK_RE = re.compile(r"\((fr-br/[^)]+\.md)\)")
-MOSCOW_SECTION_HEADERS = (
-    "### Must Have",
-    "### Should Have",
-    "### Could Have",
-    "### Ongoing",
-)
 KEEP_ON_BOARD_MARKERS = (
     "keep on board",
     "remain on board",

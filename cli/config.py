@@ -13,17 +13,6 @@ from cli.utils import get_project_root, print_error
 
 CONFIG_FILENAME = ".ai-dev-kit.yaml"
 
-# Configuration schema
-CONFIG_SCHEMA = {
-    "version": str,
-    "default_backend": str,
-    "frameworks": dict,
-    "update_policy": dict,
-    "auto_check": bool,
-    "check_interval": str,
-    "notification_channel": str,
-}
-
 # Valid backends
 VALID_BACKENDS = ["git-submodule", "git-subtree", "npm", "pip"]
 

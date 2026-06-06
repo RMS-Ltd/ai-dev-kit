@@ -13,7 +13,6 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 MIGRATE_SCRIPT = REPO_ROOT / "packages/frameworks/kanban/scripts/migrate_structure.py"
 INSTALL_SCRIPT = REPO_ROOT / "packages/frameworks/kanban/scripts/install_kanban_framework.py"
 SCRIPTS_DIR = REPO_ROOT / "packages/frameworks/kanban/scripts"
-TEMPLATES_ROOT = REPO_ROOT / "packages/frameworks/kanban/templates"
 
 PLACEHOLDER_SNIPPET = "template not found"
 

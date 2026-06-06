@@ -10,7 +10,6 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 SCRIPTS_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(SCRIPTS_ROOT))
 
-import create_github_release as cgr  # noqa: E402
 from create_github_release import (  # noqa: E402
     get_release_tag_info,
     normalize_internal_version,

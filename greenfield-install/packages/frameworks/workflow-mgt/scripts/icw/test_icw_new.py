@@ -6,7 +6,7 @@ Tests ICW functionality including task identifier validation and planning mode r
 
 import os
 import sys
-import unittest
+from unittest import TestCase, main, mock
 from unittest.mock import MagicMock, patch
 
 # Add the ICW module to path
@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from icw_handler import ICWHandler
 
 
-class TestICTaskIdentifierValidation(unittest.TestCase):
+class TestICTaskIdentifierValidation(TestCase):
     """Test task identifier parsing and validation functionality"""
     
     def setUp(self):
@@ -74,7 +74,7 @@ class TestICTaskIdentifierValidation(unittest.TestCase):
         mock_task_doc.read_text.return_value = "# Test Task Document"
         mock_glob.return_value = [mock_task_doc]
         
-        with patch('builtins.open', unittest.mock.mock_open(read_data="# Test Task Document")):
+        with patch('builtins.open', mock.mock_open(read_data="# Test Task Document")):
             result = self.handler.validate_task_exists({'epic': 5, 'story': 1, 'task': 47})
             self.assertTrue(result[0])  # exists = True
     
@@ -130,7 +130,7 @@ class TestICTaskIdentifierValidation(unittest.TestCase):
         self.assertIn("not found in Kanban", result[1])
         self.assertIn("Available tasks", result[1])
 
-class TestICWPlanningModeWithTask(unittest.TestCase):
+class TestICWPlanningModeWithTask(TestCase):
     """Test ICW planning mode validation with task identifier requirement"""
     
     def setUp(self):
@@ -181,7 +181,7 @@ class TestICWPlanningModeWithTask(unittest.TestCase):
         result = self.handler.validate_execution_mode_with_task("E5:S01:T47")
         self.assertFalse(result)
 
-class TestICWInitializeWithTask(unittest.TestCase):
+class TestICWInitializeWithTask(TestCase):
     """Test ICW initialization with task identifier requirement"""
     
     def setUp(self):
@@ -231,7 +231,7 @@ class TestICWInitializeWithTask(unittest.TestCase):
         self.assertFalse(result['success'])
         self.assertIn('planning mode and valid task identifier', result['error'])
 
-class TestICWCLIArguments(unittest.TestCase):
+class TestICWCLIArguments(TestCase):
     """Test ICW CLI argument parsing"""
     
     @patch('sys.argv', ['icw_handler.py', '--task', 'E5:S01:T47', 'initialize'])
@@ -246,7 +246,7 @@ class TestICWCLIArguments(unittest.TestCase):
         # This would be tested in integration tests
         pass
 
-class TestICWIntegration(unittest.TestCase):
+class TestICWIntegration(TestCase):
     """Integration tests for ICW with task identifier"""
     
     def setUp(self):
@@ -265,4 +265,4 @@ class TestICWIntegration(unittest.TestCase):
 
 if __name__ == '__main__':
     # Run tests with verbose output
-    unittest.main(verbosity=2)
+    main(verbosity=2)

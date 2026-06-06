@@ -32,11 +32,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 _KANBAN_SCRIPT_DIR = Path(__file__).resolve().parent / "kanban"
 if str(_KANBAN_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_KANBAN_SCRIPT_DIR))

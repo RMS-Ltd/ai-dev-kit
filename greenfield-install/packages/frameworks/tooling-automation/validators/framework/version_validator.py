@@ -39,11 +39,6 @@ except ImportError:
         ValidatorConfig,
     )
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 
 class VersionValidator(BaseValidator):
     """Validator for Numbering & Versioning framework version files."""

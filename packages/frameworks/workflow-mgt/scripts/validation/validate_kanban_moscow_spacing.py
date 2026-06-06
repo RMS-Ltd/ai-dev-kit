@@ -20,11 +20,6 @@ from kanban_moscow_spacing import (  # noqa: E402
     fix_spacing_file,
 )
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 _SCRIPTS_DIR = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS_DIR))

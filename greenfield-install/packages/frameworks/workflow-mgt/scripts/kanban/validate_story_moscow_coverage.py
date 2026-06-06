@@ -15,11 +15,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional, Set, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 # Allow importing shared loader from parent `scripts/` directory.
 _SCRIPTS_DIR = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS_DIR) not in sys.path:

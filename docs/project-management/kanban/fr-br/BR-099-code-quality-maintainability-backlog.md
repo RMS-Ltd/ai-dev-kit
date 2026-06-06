@@ -6,15 +6,15 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Bug Report BR-099: GitHub Code Quality — maintainability findings backlog (145 open)
+# Bug Report BR-099: GitHub Code Quality — maintainability findings backlog (146 open)
 
 **Bug ID:** BR-099  
 **Priority:** MEDIUM  
-**Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **145** open standard findings on `main` (2026-06-05 re-scan; was **560** @ `5fcf102`).  
+**Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **146** open standard findings on `main` (2026-06-06 post–wave-4 merge; was **560** @ `5fcf102`, **145** @ `cadb0c3`).  
 **Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (v0.8.3.12+6 — wave-4 print-at-import)  
-**Version:** v0.8.3.12+6  
+**Last updated:** 2026-06-06 (v0.8.3.12+7 — wave 5 shipped; **146** maintainability / **Fair** pre-merge re-scan)  
+**Version:** v0.8.3.12+7  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainability findings** on `main` (`5fcf102`), depressing the Maintainability score to **Fair**. Wave-1 remediation (**v0.8.3.12+1**) reduced open count to **145** on re-scan (`cadb0c3`, −74.1%); score remains **Fair**. This umbrella BR tracks phased remediation; wave 2 targets remaining fold rules including `py/print-during-import`.
+GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainability findings** on `main` (`5fcf102`), depressing the Maintainability score to **Fair**. Wave-1 remediation (**v0.8.3.12+1**) reduced open count to **145** on re-scan (`cadb0c3`, −74.1%); score remains **Fair**. Wave 4 (**v0.8.3.12+6**) cleared print-at-import (reliability band); post-merge maintainability count **146**. Wave 5 (IPP §4.5) targets CodeQL-aligned burn-down of maintainability residuals.
 
 ---
 
@@ -76,7 +76,9 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 **Wave-3 attempt (2026-06-06):** Verified `greenfield-install/**/*.py` wave-3 rule set (F541,F401,F841,I001,F811,F823) @ `bf3c10ed` — **0** open (no code edits required; corpus already clear vs wave-2 projection). `pytest tests/` — **407 passed**; workflow-scripts gate — **119 passed**. Dashboard **Good+** re-scan on `main` still **pending**; score remains **Fair** on last dashboard snapshot @ 145 open.
 
-**Wave-4 attempt (2026-06-06):** Per [IPP-E08S03T12 §4.3](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — replaced import-time `print` with `logging.warning` in **7** workflow intake modules (+ `git_tag_handler`); **14** files (packages + `greenfield-install/` mirror). Local import-time print proxy **0**; dashboard **16** `py/print-during-import` expected cleared post-merge. `pytest tests/` — **407 passed**; workflow-scripts gate — **119 passed**. **Good+** closure still pending dashboard re-scan.
+**Wave-4 attempt (2026-06-06):** Per [IPP-E08S03T12 §4.3](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — replaced import-time `print` with `logging.warning` in **7** workflow intake modules (+ `git_tag_handler`); **14** files (packages + `greenfield-install/` mirror). Local import-time print proxy **0**; **16** `py/print-during-import` cleared (reliability band). `pytest tests/` — **407 passed**; workflow-scripts gate — **119 passed**. Maintainability subtotal unchanged post-merge.
+
+**Wave-5 attempt (2026-06-06):** Per [IPP-E08S03T12 §4.5](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — **Change implemented:** closed ruff/CodeQL proxy gap across **88** files: removed dead `yaml` try/except blocks (~22 modules × mirror), dead module-level constants (`py/unused-global-variable` hotspots), import consolidation; `scripts/sync_greenfield_install.py` (**1499** files). Local ruff proxy (`F401,F841,I001,F811,F541`) **0** on `packages/`, `greenfield-install/`, `scripts/`. `pytest tests/` — **407 passed**; workflow-scripts gate — **119 passed**. Dashboard delta **pending** post-merge re-scan; **Good+** gate unchanged until verified. **`RW E08:S03:T12 --art`** pending @ BUILD **+7**.
 
 ---
 
@@ -84,7 +86,7 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 - [x] **AC1 — Baseline manifest:** Snapshot in [E08:S03:T12 task doc](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) (560 open @ `5fcf102`).
 - [x] **AC2 — Wave 1 burn-down:** Wave-1 rule groups remediated; dashboard **560→145** (−74.1%) on re-scan.
-- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ (still **Fair** @ 145 on last dashboard re-scan; wave-3 local proxy clear — T16 pending).
+- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ (still **Fair** @ **146** pre–wave-5 merge; post-merge re-scan pending).
 - [x] **AC4 — No regressions:** `pytest` + workflow-scripts gate green locally (407 / 119 passed @ 2026-06-06).
 - [ ] **AC5 — Kanban wiring:** Linked; release via **RW E08:S03:T12** when dashboard ACs confirmed.
 
@@ -97,6 +99,8 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 | **1** | Autofix-safe hygiene | unused import/variable, unnecessary pass/lambda, import duplication |
 | **2** | Script/test cleanup | print-at-module-level, remaining maintainability fold rules |
 | **3** | `greenfield-install/` mirror | Align mirrored tree or exclude from quality scope per policy |
+| **4** | T13 print handoff | `py/print-during-import` (reliability band) — **done** @ v0.8.3.12+6 |
+| **5** | CodeQL-aligned maintainability | **146** residuals — **change implemented** locally; RW @ +7 **pending** |
 
 ---
 

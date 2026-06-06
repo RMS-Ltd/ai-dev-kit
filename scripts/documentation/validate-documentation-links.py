@@ -21,21 +21,6 @@ from typing import Dict, List, Optional, Tuple
 MARKDOWN_LINK_PATTERN = re.compile(r'\[([^\]]+)\]\(([^\)]+)\)')
 REFERENCE_LINK_PATTERN = re.compile(r'\[([^\]]+)\]:\s*(.+)')
 
-# Internal link patterns
-INTERNAL_LINK_PATTERNS = [
-    r'\.\.?/[^\)]+',  # Relative paths
-    r'[^/]+\.md',     # Markdown files
-    r'[^/]+\.md#[^\)]+',  # Markdown files with anchors
-]
-
-# External link patterns
-EXTERNAL_LINK_PATTERNS = [
-    r'https?://[^\)]+',  # HTTP/HTTPS URLs
-    r'ftp://[^\)]+',     # FTP URLs
-    r'mailto:[^\)]+',    # Email links
-]
-
-
 def is_internal_link(link: str, doc_path: Path, repo_root: Path) -> bool:
     """Check if link is internal (relative path or markdown file)."""
     # External URLs

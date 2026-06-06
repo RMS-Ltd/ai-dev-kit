@@ -19,8 +19,6 @@ if str(_SCRIPTS_DIR) not in sys.path:
 from rw_config_loader import load_rw_config as shared_load_rw_config  # noqa: E402
 
 # Version patterns
-OLD_VERSION_PATTERN = re.compile(r"## \[(\d+)\.(\d+)\.(\d+)\.(\d+)\] - (\d{4}-\d{2}-\d{2})")
-NEW_VERSION_PATTERN = re.compile(r"## \[(\d+)\.(\d+)\.(\d+)\.(\d+)\+(\d+)\] - (\d{2}-\d{2}-\d{2})")
 
 
 class ChangelogEntry(NamedTuple):

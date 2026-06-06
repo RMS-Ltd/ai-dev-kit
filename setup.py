@@ -2,8 +2,10 @@
 Setup configuration for ai-dev-kit CLI tool.
 """
 
-from setuptools import setup, find_packages
 from pathlib import Path
+
+from setuptools import find_packages, setup
+
 
 # Read version from cli/__init__.py
 def get_version():

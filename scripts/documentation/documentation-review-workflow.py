@@ -40,32 +40,6 @@ CADENCES = {
     },
 }
 
-# Documentation type mapping
-DOC_TYPE_MAPPING = {
-    'critical': [
-        'release-workflow',
-        'versioning-policy',
-        'framework-readme',
-    ],
-    'high_priority': [
-        'framework-guide',
-        'adr',
-        'policy',
-        'integration-guide',
-    ],
-    'standard': [
-        'guide',
-        'example',
-        'tutorial',
-    ],
-    'low_priority': [
-        'legacy',
-        'deprecated',
-        'archive',
-    ],
-}
-
-
 def classify_documentation(file_path: Path) -> str:
     """Classify documentation by type."""
     rel_path = str(file_path)

@@ -16,8 +16,6 @@ import json
 from pathlib import Path
 
 MCP_DIR = Path(__file__).resolve().parent.parent / "docs" / "knowledge" / "kb-migration-mcp-args"
-SERVER = "plugin-notion-workspace-notion"
-TOOL = "notion-update-page"
 
 FILES = [
     "analysis_package-management-implementation-plan.md.json",

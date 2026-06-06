@@ -18,11 +18,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Set, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 _SCRIPT_DIR = Path(__file__).resolve().parent
 _KANBAN_DIR = _SCRIPT_DIR.parent / "kanban"
 if str(_KANBAN_DIR) not in sys.path:

@@ -19,11 +19,6 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 # Version patterns: RC.EPIC.STORY.PATCH (old) or RC.EPIC.STORY.TASK+BUILD (new)
 # Support both formats for backward compatibility
 OLD_VERSION_PATTERN = re.compile(r"## \[(\d+)\.(\d+)\.(\d+)\.(\d+)\] - (\d{4}-\d{2}-\d{2})")

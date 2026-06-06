@@ -23,10 +23,8 @@ _VERSION_DIR = _SCRIPTS_DIR / "version"
 if str(_VERSION_DIR) not in sys.path:
     sys.path.insert(0, str(_VERSION_DIR))
 
-try:
-    import yaml
-except ImportError:
-    yaml = None  # type: ignore[assignment,misc]
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
 from rw_config_loader import load_rw_config_from_path
 

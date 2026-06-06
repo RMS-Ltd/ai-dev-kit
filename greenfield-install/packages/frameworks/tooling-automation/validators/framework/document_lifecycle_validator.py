@@ -39,11 +39,6 @@ except ImportError:
         ValidatorConfig,
     )
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 
 class DocumentLifecycleValidator(BaseValidator):
     """Validator for Document Lifecycle framework metadata."""

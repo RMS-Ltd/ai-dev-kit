@@ -18,11 +18,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 # Allow importing shared loader from parent `scripts/` directory.
 _SCRIPTS_DIR = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS_DIR) not in sys.path:
@@ -32,9 +27,6 @@ from rw_config_loader import load_rw_config  # noqa: E402
 
 TERMINAL_STAMP_RE = re.compile(
     r"\|\sLast modified:\s(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}\sUTC)\s*$"
-)
-ANY_STAMP_RE = re.compile(
-    r"\|\sLast modified:\s(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}\sUTC)"
 )
 ROW_ID_PATTERNS = [
     re.compile(r"-\s+\*\*(E\d+:S\d+:T\d+)\*\*"),

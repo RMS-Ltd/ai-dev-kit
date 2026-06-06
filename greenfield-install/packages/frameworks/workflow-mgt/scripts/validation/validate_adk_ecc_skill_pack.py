@@ -26,12 +26,6 @@ from framework_install_slug import (  # noqa: E402
     workflow_mgt_package_dir_missing_hint,
 )
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
-
 SKILL_ORDER = (
     "adk-release-workflow",
     "adk-kanban-sync",

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-06 (v0.8.3.14+5 – T14 COMPLETE)
+**Last updated:** 2026-06-06 (v0.8.3.17+1 – Kanban documentation setup)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 - [x] **E8:S02 – Additional Validators** - ✅ COMPLETE (v0.8.2.3+1 – All tasks complete)
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
-- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.14+5 – T14 COMPLETE; T12 active; T15–T16 perpetual)
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.17+1 – T17 FR-113 CQG intake; T12 active; T15–T16 perpetual)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
 
 - [ ] **E8:S04 – Tooling & Automation Package Implementation Review** - TODO (v0.8.4.0+0)
@@ -71,7 +71,7 @@ Epic 8 owns the **Tooling & Automation** framework for the ai-dev-kit repository
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
-**Last updated:** 2026-06-06 (v0.8.3.14+5 – T14 COMPLETE)
+**Last updated:** 2026-06-06 (v0.8.3.17+1 – Kanban documentation setup)
 
 **Goal:**  
 Build code generators for common framework patterns and templates.
@@ -90,7 +90,7 @@ Build code generators for common framework patterns and templates.
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
-**Last updated:** 2026-06-06 (v0.8.3.14+5 – T14 COMPLETE)
+**Last updated:** 2026-06-06 (v0.8.3.17+1 – Kanban documentation setup)
 
 **Goal:**  
 Develop additional validators beyond the current 3 validation scripts.
@@ -109,7 +109,7 @@ Develop additional validators beyond the current 3 validation scripts.
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-06 (v0.8.3.14+5 – T14 COMPLETE)
+**Last updated:** 2026-06-06 (v0.8.3.17+1 – Kanban documentation setup)
 
 **Goal:**  
 Implement automation scripts for common development and maintenance tasks.

@@ -38,11 +38,6 @@ except ImportError:
         ValidatorConfig,
     )
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 
 class WorkflowValidator(BaseValidator):
     """Validator for Workflow Management framework YAML files."""

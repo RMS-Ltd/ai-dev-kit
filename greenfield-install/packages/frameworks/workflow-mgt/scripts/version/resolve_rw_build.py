@@ -14,11 +14,6 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 # Reuse validation helpers (same package layout as validate_version_bump.py)
 _validation_dir = Path(__file__).resolve().parent.parent / "validation"
 if str(_validation_dir) not in sys.path:

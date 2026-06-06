@@ -18,11 +18,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 
 def parse_frontmatter(content: str) -> Tuple[Dict, int, int]:
     """

@@ -30,11 +30,6 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 _SCRIPT_DIR = Path(__file__).resolve().parent
 _KANBAN_DIR = _SCRIPT_DIR.parent / "kanban"
 if str(_KANBAN_DIR) not in sys.path:

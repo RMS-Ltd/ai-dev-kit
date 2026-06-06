@@ -39,11 +39,6 @@ except ImportError:
         ValidatorConfig,
     )
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 
 class KanbanValidator(BaseValidator):
     """Validator for Kanban framework documents."""

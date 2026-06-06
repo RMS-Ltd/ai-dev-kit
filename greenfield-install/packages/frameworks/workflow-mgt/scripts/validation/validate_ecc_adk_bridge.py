@@ -23,11 +23,6 @@ from framework_install_slug import (  # noqa: E402
     workflow_mgt_package_dir_missing_hint,
 )
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 VALID_HOOK_PROFILES = frozenset({"minimal", "standard", "strict"})
 VALID_INSTALL_TARGETS = frozenset({"cursor", "claude", "codex", "opencode"})
 REQUIRED_CONFLICT_ECC = frozenset({"git-workflow", "plan", "project-flow-ops"})

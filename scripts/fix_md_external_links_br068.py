@@ -14,9 +14,6 @@ from urllib.parse import quote, unquote
 
 REPO_MAIN = "https://github.com/RMS-Ltd/ai-dev-kit/blob/main"
 
-# Markdown link [text](target) — capture target excluding optional title
-LINK_TARGET = re.compile(r"\]\(([^)]+)\)")
-
 
 def encode_repo_path(rel: str) -> str:
     """Encode path from repo root for GitHub URLs (preserve slashes, encode spaces etc.)."""

@@ -9,6 +9,22 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.12+7] - 06-06-26
+
+E08:S03:T12 — **Change implemented:** BR-099 wave-5 maintainability gap closure (~88 files; dead yaml/globals; mirror sync). SemVer **v0.4.1001+7**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+7.md)
+
+---
+
+## [0.8.3.17+1] - 06-06-26
+
+E08:S03:T17 — **Change implemented:** FR-113 CQG intake (hybrid **6 h** monitor + RW Step 9; ADK architectural harmonization). Kanban init. SemVer **v0.4.1000+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.17+1.md)
+
+---
+
 ## [0.8.3.14+5] - 06-06-26
 
 E08:S03:T14 — **Change implemented:** BR-101 wave-2b/c closure (AI-VENDOR-TREE 4/4 apply; F-SYNC-02 waiver; lag-accepted GH panel). Task **COMPLETE**. SemVer **v0.4.999+5**.

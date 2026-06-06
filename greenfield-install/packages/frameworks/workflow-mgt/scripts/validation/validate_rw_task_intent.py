@@ -23,11 +23,6 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-try:
-    import yaml
-except ImportError:
-    yaml = None
-
 # ukw_syntax_parser lives alongside kanban scripts
 _SCRIPT_DIR = Path(__file__).resolve().parent
 _KANBAN_DIR = _SCRIPT_DIR.parent / "kanban"

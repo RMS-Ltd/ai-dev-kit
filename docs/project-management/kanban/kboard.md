@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-06 (RW: E08:S03:T14)
-**Version:** v0.8.3.14+5
+**Last Updated:** 2026-06-06 (RW: E08:S03:T17)
+**Version:** v0.8.3.17+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -29,6 +29,8 @@ housekeeping_policy: keep
 ### Should Have (S) - Important Tasks
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+6** wave-4 **14** files; print-at-import cleared locally; dashboard **Good+** pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 12:56 UTC
+
+- **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** - 📋 TODO (MEDIUM, hybrid CQG: **6 h** monitor + RW Step 9; ADK-architected — tooling-automation + workflow-mgt validators) | [Task](epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | —No IPP— | Last modified: 2026-06-06 13:50 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 

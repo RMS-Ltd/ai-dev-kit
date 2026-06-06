@@ -94,7 +94,7 @@ import sys
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Callable, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 # --------------------------------------------------------------------------- #
 # Constants
@@ -1318,20 +1318,6 @@ def gate_11_active_board_lean(project_root: Path) -> GateVerdict:
 # Orchestration
 # --------------------------------------------------------------------------- #
 
-
-GATE_FUNCS: Tuple[Tuple[int, str, Callable[..., GateVerdict]], ...] = (
-    (1, "governance", gate_1_governance_alignment),
-    (2, "supersede", gate_2_supersede_chain),
-    (3, "parity", gate_3_contract_parity),
-    (4, "corpus", gate_4_corpus_canonical),
-    (5, "stage", gate_5_stage_completeness),
-    (6, "stamps", gate_6_stamp_evidence),
-    (7, "foursurface", gate_7_four_surface_parity),
-    (8, "homogeneity", gate_8_stamp_homogeneity),
-    (9, "state_icons", gate_9_state_icons),
-    (10, "moscow_spacing", gate_10_moscow_spacing),
-    (11, "active_board_lean", gate_11_active_board_lean),
-)
 
 
 def run_release_readiness(

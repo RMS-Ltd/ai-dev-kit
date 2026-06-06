@@ -16,7 +16,6 @@ from pathlib import Path
 
 _CLEANUP_DIR = Path(__file__).resolve().parent
 INVENTORY_PATH = _CLEANUP_DIR / "output" / "kanban_naming_inventory.json"
-KANBAN_ROOT = Path("docs/project-management/kanban")
 
 
 def git_mv(src: Path, dst: Path) -> bool:
