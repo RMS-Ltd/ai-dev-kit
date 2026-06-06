@@ -70,7 +70,7 @@ Verify with `diff -rq` (exit 0).
 
 ### 6. Maintainer checklist
 
-Dual-source parity procedure: [`packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md`](../../packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md) (precedent: [`rw-trigger-dual-source-parity.md`](../../packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)).
+Dual-source parity procedure: [`packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md) (precedent: [`rw-trigger-dual-source-parity.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)).
 
 ---
 

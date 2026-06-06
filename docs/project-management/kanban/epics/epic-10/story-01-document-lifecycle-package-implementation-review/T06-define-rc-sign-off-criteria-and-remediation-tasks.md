@@ -134,11 +134,11 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 
 | Gap ID | Filed host | Status |
 | ------ | ---------- | ------ |
-| GAP-DOCLIFE-STRUCT-001 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
-| GAP-DOCLIFE-STRUCT-002 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
-| GAP-DOCLIFE-STRUCT-003 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
-| GAP-DOCLIFE-INTG-001 | [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) | **PASS** (COMPLETE @ [v0.10.1.9+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md) — ADR-023; package SoT; salience schema packaged) |
-| GAP-DOCLIFE-TEST-001 | [E10:S01:T10](T10-fix-document-lifecycle-validator.md) | **PASS** (COMPLETE @ [v0.10.1.10+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md)) |
+| GAP-DOCLIFE-STRUCT-001 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
+| GAP-DOCLIFE-STRUCT-002 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
+| GAP-DOCLIFE-STRUCT-003 | [E10:S01:T08](T08-implement-doc-housekeeping-workflow-and-scripts.md) | **PASS** (COMPLETE @ [v0.10.1.8+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)) |
+| GAP-DOCLIFE-INTG-001 | [E10:S01:T09](T09-sync-architecture-adr-dual-sot.md) | **PASS** (COMPLETE @ [v0.10.1.9+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md) — ADR-023; package SoT; salience schema packaged) |
+| GAP-DOCLIFE-TEST-001 | [E10:S01:T10](T10-fix-document-lifecycle-validator.md) | **PASS** (COMPLETE @ [v0.10.1.10+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md)) |
 
 | Status | Evidence |
 | ------ | -------- |
@@ -167,9 +167,9 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 
 - C1–C5 remain **PASS** — no RC-blocking gaps (0 Critical, 0 BLOCKER).
 - C6 **PASS** — all five HIGH gaps filed and remediated with verification evidence:
-  - **R1 (T08):** [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md) — doc housekeeping workflow + scripts (GAP-DOCLIFE-STRUCT-001/002/003)
-  - **R2 (T09):** [v0.10.1.9+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md) — ADR-023 dual SoT sync (GAP-DOCLIFE-INTG-001)
-  - **R3 (T10):** [v0.10.1.10+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md) — DocumentLifecycleValidator fix (GAP-DOCLIFE-TEST-001)
+  - **R1 (T08):** [v0.10.1.8+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md) — doc housekeeping workflow + scripts (GAP-DOCLIFE-STRUCT-001/002/003)
+  - **R2 (T09):** [v0.10.1.9+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md) — ADR-023 dual SoT sync (GAP-DOCLIFE-INTG-001)
+  - **R3 (T10):** [v0.10.1.10+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md) — DocumentLifecycleValidator fix (GAP-DOCLIFE-TEST-001)
 - Minimum bar §1–§3 satisfied; §4 allows open MEDIUM/LOW backlog (R4–R7 proposed-only).
 - Posture upgraded from **DEFER** (v0.10.1.6+1/+2) per follow-on RC review @ **v0.10.1.6+3**.
 
@@ -189,7 +189,7 @@ Non-blocking gaps must be **externalized** into Kanban (E02:S13:T06 / E04:S16:T0
 
 ## Remediation Backlog
 
-### R1 — Package Automation (Workflow + Scripts) (HIGH) — **COMPLETE** @ [v0.10.1.8+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)
+### R1 — Package Automation (Workflow + Scripts) (HIGH) — **COMPLETE** @ [v0.10.1.8+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.8+1.md)
 
 | Field | Value |
 | ----- | ----- |
@@ -200,7 +200,7 @@ Non-blocking gaps must be **externalized** into Kanban (E02:S13:T06 / E04:S16:T0
 
 ---
 
-### R2 — Architecture ADR Dual SoT Sync (HIGH) — **COMPLETE** @ [v0.10.1.9+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md)
+### R2 — Architecture ADR Dual SoT Sync (HIGH) — **COMPLETE** @ [v0.10.1.9+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.9+1.md)
 
 | Field | Value |
 | ----- | ----- |
@@ -211,7 +211,7 @@ Non-blocking gaps must be **externalized** into Kanban (E02:S13:T06 / E04:S16:T0
 
 ---
 
-### R3 — DocumentLifecycleValidator Fix (HIGH) — **COMPLETE** @ [v0.10.1.10+1](../../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md)
+### R3 — DocumentLifecycleValidator Fix (HIGH) — **COMPLETE** @ [v0.10.1.10+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+1.md)
 
 | Field | Value |
 | ----- | ----- |

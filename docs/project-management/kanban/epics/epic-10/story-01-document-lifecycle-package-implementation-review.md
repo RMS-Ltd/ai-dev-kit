@@ -98,4 +98,4 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 - **Orchestration plan:** [`docs/implementation-cycles/E10S01-orchestration-plan.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/E10S01-orchestration-plan.md)
 - Package: `packages/frameworks/doc-lifecycle/`
-- Structural precedent: [E02:S13 — Workflow Management Package Implementation Review](../../epic-02/story-13-workflow-management-package-implementation-review.md)
+- Structural precedent: [E02:S13 — Workflow Management Package Implementation Review](../epic-02/story-13-workflow-management-package-implementation-review.md)

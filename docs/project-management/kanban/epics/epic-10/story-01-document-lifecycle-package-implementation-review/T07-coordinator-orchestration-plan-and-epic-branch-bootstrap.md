@@ -66,7 +66,7 @@ Establish the **coordinator layer** for E10:S01 so any new agent (including in a
 | Story | E10:S01 — Document Lifecycle Package Implementation Review |
 | Story status | IN PROGRESS |
 | Goal | RC-readiness implementation review of `packages/frameworks/doc-lifecycle/` |
-| Structural precedent | [E02:S13 — Workflow Management Package Implementation Review](../../../epic-02/story-13-workflow-management-package-implementation-review.md) (T01–T06 complete) |
+| Structural precedent | [E02:S13 — Workflow Management Package Implementation Review](../../epic-02/story-13-workflow-management-package-implementation-review.md) (T01–T06 complete) |
 | Next story | [E10:S02 — Installation Evaluation](../story-02-document-lifecycle-package-installation-evaluation.md) (after S01) |
 
 ### Package under review
@@ -125,8 +125,8 @@ Prefix: `GAP-DOCLIFE-{TYPE}-NNN` per [`gap-log-schema.md`](../../../../../archit
 ## Input
 
 - [Story E10:S01](../story-01-document-lifecycle-package-implementation-review.md)
-- [Epic 10](../../Epic-10.md)
-- [E02:S13 precedent](../../../epic-02/story-13-workflow-management-package-implementation-review.md)
+- [Epic 10](../Epic-10.md)
+- [E02:S13 precedent](../../epic-02/story-13-workflow-management-package-implementation-review.md)
 - `packages/frameworks/doc-lifecycle/` (full tree)
 - [`rw-config.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/rw-config.yaml)
 - [Workflow initiation cheatsheet](../../../../../guides/workflow-initiation-cheatsheet.md)
@@ -228,7 +228,7 @@ Detail: [`E10S01-orchestration-plan.md`](../../../../../implementation-cycles/E1
 
 - [E10S01 orchestration plan](../../../../../implementation-cycles/E10S01-orchestration-plan.md)
 - [Story E10:S01](../story-01-document-lifecycle-package-implementation-review.md)
-- [E02:S13 — workflow-mgt implementation review (precedent)](../../../epic-02/story-13-workflow-management-package-implementation-review.md)
+- [E02:S13 — workflow-mgt implementation review (precedent)](../../epic-02/story-13-workflow-management-package-implementation-review.md)
 - [Package README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/README.md)
 - [IPW command](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md)
 - [RW command](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/rw.md)

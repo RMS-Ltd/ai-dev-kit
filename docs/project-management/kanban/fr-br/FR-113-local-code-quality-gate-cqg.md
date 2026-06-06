@@ -70,7 +70,7 @@ CQG must be implemented as a **first-class ADK subsystem**, not a standalone scr
 | ------- | ---------------- | --------------- |
 | **Validator surface** | RW Step 9 scripts under `packages/frameworks/workflow-mgt/scripts/validation/`; paths from `rw-config.yaml` → `scripts_path` | `validate_code_quality_gate.py` follows existing validator CLI conventions (`--strict`, exit codes, config load from project root) |
 | **Core logic / reuse** | Shared validators in `packages/frameworks/tooling-automation/validators/` (`BaseValidator`, registry, `PATTERNS.md`) | CQG engine SHOULD extend or compose `BaseValidator` where practical; avoid duplicating config-load / result-reporting patterns |
-| **Adopter portability** | FR-110 lean vendor tree; FR-081 brownfield matrices; [rw-validators-consumer-layout.md](../../../packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md) | CQG installable via vendored `workflow-mgt` + `tooling-automation`; no hard-coded ai-dev-kit-only paths |
+| **Adopter portability** | FR-110 lean vendor tree; FR-081 brownfield matrices; [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md) | CQG installable via vendored `workflow-mgt` + `tooling-automation`; no hard-coded ai-dev-kit-only paths |
 | **Packaged sync** | FR-106 — live repo ↔ `greenfield-install/` parity for framework packages | CQG changes mirrored in vendor bundle when touching packaged frameworks |
 
 ### Configuration SoT
@@ -242,9 +242,9 @@ Two primary trigger patterns were evaluated. **Adopted: hybrid (both), with diff
 - [FR-024 — IDE linter check before commit in RW](FR-024-ide-linter-check-before-commit-in-release-workflow.md) — analogous RW Step 9.6 pattern
 - [FR-106 — Packaged workflows sync with live repo](FR-106-packaged-workflows-sync-with-live-repo-implementation.md) — vendor tree parity
 - [FR-110 — Lean adopter distribution](FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — consumer layout
-- [Framework dependency architecture](../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md) — packaging model
-- [RW validators consumer layout](../../../packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md) — adopter path SoT
-- [Tooling-automation validators README](../../../packages/frameworks/tooling-automation/validators/README.md) — `BaseValidator` framework
+- [Framework dependency architecture](../../../architecture/standards-and-adrs/framework-dependency-architecture.md)
+- [RW validators consumer layout](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)
+- [Tooling-automation validators README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/validators/README.md) — `BaseValidator` framework
 - GitHub docs: [Metrics and ratings](https://docs.github.com/en/code-security/code-quality/reference/metrics-and-ratings), [CodeQL detection](https://docs.github.com/en/code-security/code-quality/reference/codeql-detection), [Python CodeQL queries for Code Quality](https://docs.github.com/en/code-security/reference/code-quality/codeql-queries/python-queries)
 
 ---
@@ -278,7 +278,7 @@ Two primary trigger patterns were evaluated. **Adopted: hybrid (both), with diff
 
 **Kanban links:**
 
-- Epic: [`Epic-08.md`](../epics/epic-08/Epic-08.md)
+- Epic: [`epic-08.md`](../epics/epic-08/epic-08.md)
 - Story: [`story-03-automation-scripts.md`](../epics/epic-08/story-03-automation-scripts.md)
 - Task: [`T17-local-code-quality-gate-cqg-fr113.md`](../epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)
 

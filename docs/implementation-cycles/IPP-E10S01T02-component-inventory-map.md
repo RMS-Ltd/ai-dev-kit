@@ -256,6 +256,6 @@ Task doc holds condensed gap summary + AC checkboxes; companion holds detailed t
 - Adopter mirror: `greenfield-install/packages/frameworks/doc-lifecycle/`
 - [FR-042 — IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [FR-094 — IPW task state mandate](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [FR-110 — greenfield-install adopter mirror](../project-management/kanban/fr-br/FR-110-lean-vendor-install-greenfield-install-fr-110.md) *(if filed)*
+- [FR-110 — greenfield-install adopter mirror](../project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) *(if filed)*
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - `.claude/commands/ipw.md`

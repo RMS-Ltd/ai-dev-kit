@@ -1,4 +1,4 @@
-> **Architecture mirror (dev-kit navigation):** Canonical SoT is `packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md`. Edit the package copy first; sync this mirror for repo navigation. Maintainer checklist: [`adr-dual-sot-parity.md`](../../packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md). Decision record: [ADR-023](ADR-023-doc-lifecycle-package-architecture-dual-sot.md).
+> **Architecture mirror (dev-kit navigation):** Canonical SoT is `packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md`. Edit the package copy first; sync this mirror for repo navigation. Maintainer checklist: [`adr-dual-sot-parity.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/docs/adr-dual-sot-parity.md). Decision record: [ADR-023](ADR-023-doc-lifecycle-package-architecture-dual-sot.md).
 
 # Document Lifecycle Metadata Specification
 

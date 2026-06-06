@@ -42,7 +42,7 @@ housekeeping_policy: keep
 ### 1.3 Invariants and boundaries
 
 - **Invariants:**
-  - Canonical five-field contract: [`doc-lifecycle-metadata-spec.md`](../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md) §Required Fields.
+  - Canonical five-field contract: [`doc-lifecycle-metadata-spec.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md) §Required Fields.
   - Validator path: `packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py`.
   - Gap ID: `GAP-DOCLIFE-TEST-001` (T05 Gap 5, T06 R3).
 - **In scope:** Runtime import fix; five-field required enforcement; pytest updates; framework README boundary note; greenfield mirror sync; kanban/doc updates via RW.
@@ -100,7 +100,7 @@ Restore and align the cross-package **`DocumentLifecycleValidator`** in tooling-
 | ID | Exemption (only if all T = N) | Pass? | Evidence |
 | -- | --------------------------- | ----- | -------- |
 | E1 | Single locus | Y | Files in §4.1 only |
-| E2 | No new options | Y | Implements [`doc-lifecycle-metadata-spec.md`](../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md) §Required Fields |
+| E2 | No new options | Y | Implements [`doc-lifecycle-metadata-spec.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md) §Required Fields |
 | E3 | Reversible in one task | Y | Validator revert without migration |
 | E4 | Spec elsewhere | Y | Package metadata spec + T03 §6 evidence |
 | E5 | Documented NONE | Y | §5.3 cites metadata spec + T03 report |
@@ -246,7 +246,7 @@ Restore and align the cross-package **`DocumentLifecycleValidator`** in tooling-
 - [T06 remediation R3](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T03 lifecycle-behavior-validation-report §6](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md)
 - [T08 package-local validator task](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)
-- [doc-lifecycle-metadata-spec.md](../packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
-- [DocumentLifecycleValidator source](../packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py)
+- [doc-lifecycle-metadata-spec.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
+- [DocumentLifecycleValidator source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py)
 - [E10S01 orchestration plan §9 — Wave 3 remediation](./E10S01-orchestration-plan.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

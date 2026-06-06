@@ -25,7 +25,7 @@ housekeeping_policy: keep
 - [x] **E10:S01 – Document Lifecycle Package Implementation Review** - COMPLETE (v0.10.1.6+3 — T01–T10 COMPLETE; RC sign-off **APPROVE**)
   - Story: [`story-01-document-lifecycle-package-implementation-review.md`](story-01-document-lifecycle-package-implementation-review.md)
   - Coordinator: [`T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md`](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
-  - Orchestration: [`E10S01-orchestration-plan.md`](../../../implementation-cycles/E10S01-orchestration-plan.md)
+  - Orchestration: [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
 
 - [ ] **E10:S02 – Document Lifecycle Package Installation Evaluation** - TODO (v0.10.2.0+0)
   - Story: [`story-02-document-lifecycle-package-installation-evaluation.md`](story-02-document-lifecycle-package-installation-evaluation.md)
