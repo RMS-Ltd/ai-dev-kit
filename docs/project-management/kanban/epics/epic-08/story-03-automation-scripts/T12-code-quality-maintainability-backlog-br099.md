@@ -12,12 +12,12 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (v0.8.3.12+7 — wave 5 shipped @ RW)  
-**Version Anchor:** v0.8.3.12+7  
-**Version:** v0.8.3.12+7
+**Last updated:** 2026-06-06 (closure docs @ **v0.8.3.12+8**; operator UI refresh pending; wave 6 **planned**)  
+**Version Anchor:** v0.8.3.12+8  
+**Version:** v0.8.3.12+8
 **Code:** E08S03T12
 
-**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 1–3 complete @ v0.8.3.12+5. Wave 4 @ **v0.8.3.12+6** (print-at-import). Wave 5 shipped @ **v0.8.3.12+7** (~88 files; ruff/CodeQL gap closure + mirror sync). Closure pending dashboard **Good+** (read-only capture in this doc; T16 deferred).
+**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 5 @ **v0.8.3.12+7**. Closure step 28: **Fair** (lag-accepted **146**; operator UI refresh pending). Wave 6 **planned**. Task **IN PROGRESS** until **Good+**.
 
 **Upstream:** [BR-099 — Code Quality maintainability backlog](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — revised 2026-06-06 (wave 4 **DONE** @ +6; wave 5 **146** maintainability residual + **Good+** closure — §4.5 steps 39–49, §4.4 steps 28–30)
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — closure phase (**§4.6** steps 50, 28–30, 13; **§4.7** wave-6 contingency); wave 5 **DONE** @ v0.8.3.12+7
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
@@ -42,7 +42,8 @@ Publication Status: NOT_APPLICABLE
 2. Wave 1 remediation PR(s): autofix-safe hygiene (see BR-099 wave table).
 3. Post-wave dashboard snapshot: Maintainability score + open count delta.
 4. Wave 4: T13-deferred `py/print-during-import` remediation per [IPP §4.3](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#43-wave-4-ledger-done--do-not-re-execute) (**done** @ v0.8.3.12+6).
-5. Wave 5: CodeQL-aligned maintainability burn-down (**146** residual) — **shipped** @ **v0.8.3.12+7**.
+5. Wave 5: CodeQL-aligned maintainability burn-down — **shipped** @ **v0.8.3.12+7**.
+6. Closure: post–wave-5 merge capture @ step 28 — **Fair** (operator UI refresh pending); wave 6 **planned** per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-contingency-ledger-open--populate-only-if-step-28-fails-good).
 
 ---
 
@@ -322,7 +323,57 @@ Publication Status: NOT_APPLICABLE
 
 **Remediation summary:** ~22 dead yaml try/except blocks (packages + mirror); dead module globals in validators/scripts; import consolidation (`sort_kanban_board.py`, test modules); `kanban_paths.py` pattern tuples retained (required by `install_release_workflow.py`).
 
-**Dashboard delta:** Pending post–wave-5 merge re-scan (IPP §4.4 step 28). Task remains **IN PROGRESS** until **Good+**. Released @ **v0.8.3.12+7**.
+**Dashboard delta:** Pending post–wave-5 merge re-scan ([IPP §4.6 step 28](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#46-closure-ledger-open--post-wave-5)). Task remains **IN PROGRESS** until **Good+**. Released @ **v0.8.3.12+7**.
+
+---
+
+## Post-wave-5-merge manifest (2026-06-06 — IPP step 28)
+
+**Source:** [GitHub Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) after wave-5 merge to `main`; `gh api code-scanning/alerts` (0 open — Code Quality UI uses separate product surface).
+
+| Field | Value |
+| ----- | ----- |
+| Snapshot date | 2026-06-06 14:54 UTC |
+| Branch / ref | `main` @ `56b34f0d` (includes wave-5 tag `v0.8.3.12+7` in ancestry) |
+| Open maintainability | **146** (lag-accepted — last operator-confirmed @ pre-wave-5 `f6aa4dca`; **UI refresh pending**) |
+| Dashboard score | **Fair** (lag-accepted — **Good+ not evidenced**; operator UI refresh pending) |
+| Delta vs pre-wave-5 (146) | **TBD** — requires operator Code Quality UI refresh post-merge |
+
+**Step 50 (remote precondition):** **SATISFIED** — `origin/dev` @ `56b34f0d`; tags `v0.8.3.12+7` and `v0.4.1001` on remote.
+
+**Rule breakdown (maintainability subtotal):** Lag-accepted from pre-wave-5 capture ([T16 @ `f6aa4dca`](T16-github-security-code-quality-health-perpetual-fr112.md)) until operator refreshes UI post–wave-5 merge:
+
+| CodeQL rule | Open count (lag @ `f6aa4dca`) | Wave-6 chunk |
+| ----------- | ----------------------------- | ------------ |
+| `py/unused-import` | 46 | Chunk M |
+| `py/import-and-import-from` | 34 | Chunk M |
+| `py/unused-global-variable` | 28 | Chunk L |
+| `py/unused-local-variable` | 13 | Chunk M |
+| `py/ineffectual-statement` | 10 | Chunk M |
+| `py/multiple-definition` | 5 | Chunk L |
+| `py/repeated-import` | 4 | Chunk M |
+| `py/unnecessary-lambda` | 4 | Chunk L |
+| `py/unnecessary-pass` | 2 | Chunk L |
+| **Total** | **146** | — |
+
+**Local verification @ wave-5 tag (`v0.8.3.12+7`):** ruff proxy (`F401,F841,I001,F811,F541`) **0**; mirror sync **1499** files (per post-wave-5 manifest).
+
+**Closure branch (step 28):** **Fair @ material count** — step 30a → [IPP §4.7 wave 6](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-contingency-ledger-open--populate-only-if-step-28-fails-good). Task remains **IN PROGRESS** (step 13). **Do not COMPLETE** until operator UI confirms **Good+**.
+
+---
+
+## Wave-6 pre-manifest (2026-06-06 — IPP step 52; refresh counts after operator UI)
+
+**Trigger:** Step 28 **Fair** branch — populate rule counts from post-merge Code Quality UI before Chunks L/M bulk edits.
+
+| Field | Value |
+| ----- | ----- |
+| Snapshot date | _Pending operator UI refresh_ |
+| Branch / ref | `main` @ `56b34f0d` (baseline) |
+| Open maintainability | _TBD_ (refresh step 28 UI) |
+| Dashboard score | _TBD_ |
+
+**Triage (step 53 — planned):** Chunk L (manual CodeQL rules) + Chunk M (hygiene + mirror) per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-contingency-ledger-open--populate-only-if-step-28-fails-good).
 
 ---
 
@@ -331,15 +382,15 @@ Publication Status: NOT_APPLICABLE
 - [x] Baseline manifest captured in this task doc (rule → count).
 - [x] Wave-1 rule groups remediated or waived with documented rationale.
 - [x] Open maintainability count reduced ≥50% vs baseline (**560→145**, −74.1% on dashboard re-scan).
-- [ ] Maintainability score **Good** or better (still **Fair** @ **146** post–wave-4 merge; wave 5 + closure re-scan pending — read-only capture in this doc).
+- [ ] Maintainability score **Good** or better (**Fair** @ lag-accepted **146** post–wave-5 merge capture; operator UI refresh pending — wave 6 planned).
 - [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local — 407 / 119 passed @ 2026-06-06).
-- [ ] **BR-099** released via **RW E08:S03:T12** when complete.
+- [ ] **BR-099** terminal closure via **RW E08:S03:T12 --art** when **Good+** confirmed (interim releases @ +1–+7 done).
 
 ---
 
 ## References
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — wave 5 + closure (§4.5 steps 39–49)
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — closure phase (§4.6–§4.7); wave 5 @ v0.8.3.12+7
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md) — wave-2 deferred **16** print-at-import → T12 wave 4 ([T13 task](T13-code-quality-reliability-backlog-br100.md))
 - [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)

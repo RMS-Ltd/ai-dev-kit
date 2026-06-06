@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T12": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.12+8 — closure-docs release-scope reconciliation; task doc + BR-099 + story + kboard updated"
+    }
+  }
+}

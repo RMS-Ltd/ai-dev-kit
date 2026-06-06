@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **146** open standard findings on `main` (2026-06-06 post–wave-4 merge; was **560** @ `5fcf102`, **145** @ `cadb0c3`).  
 **Status:** IN PROGRESS  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (v0.8.3.12+7 — wave 5 shipped; **146** maintainability / **Fair** pre-merge re-scan)  
-**Version:** v0.8.3.12+7  
+**Last updated:** 2026-06-06 (closure docs @ **v0.8.3.12+8**; lag-accepted **146/Fair**; wave 6 planned)  
+**Version:** v0.8.3.12+8  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
@@ -78,7 +78,9 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 **Wave-4 attempt (2026-06-06):** Per [IPP-E08S03T12 §4.3](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — replaced import-time `print` with `logging.warning` in **7** workflow intake modules (+ `git_tag_handler`); **14** files (packages + `greenfield-install/` mirror). Local import-time print proxy **0**; **16** `py/print-during-import` cleared (reliability band). `pytest tests/` — **407 passed**; workflow-scripts gate — **119 passed**. Maintainability subtotal unchanged post-merge.
 
-**Wave-5 attempt (2026-06-06):** Per [IPP-E08S03T12 §4.5](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — **Change implemented:** closed ruff/CodeQL proxy gap across **88** files: removed dead `yaml` try/except blocks (~22 modules × mirror), dead module-level constants (`py/unused-global-variable` hotspots), import consolidation; `scripts/sync_greenfield_install.py` (**1499** files). Local ruff proxy (`F401,F841,I001,F811,F541`) **0** on `packages/`, `greenfield-install/`, `scripts/`. `pytest tests/` — **407 passed**; workflow-scripts gate — **119 passed**. Dashboard delta **pending** post-merge re-scan; **Good+** gate unchanged until verified. **`RW E08:S03:T12 --art`** pending @ BUILD **+7**.
+**Wave-5 attempt (2026-06-06):** Per [IPP-E08S03T12 §4.5](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — **Change implemented:** closed ruff/CodeQL proxy gap across **88** files; shipped @ **v0.8.3.12+7**. Local ruff proxy **0**; pytest **407** / workflow-scripts **119**.
+
+**Closure capture (2026-06-06):** Per [IPP-E08S03T12 §4.6](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — step 50 **SATISFIED** (`main` @ `56b34f0d` includes wave-5 tag). Step 28 post-merge manifest: **Fair** @ lag-accepted **146** maintainability (operator Code Quality UI refresh pending). **Good+ not met** — wave 6 planned ([§4.7](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)); task **IN PROGRESS**; not "Fixed" until T16 confirms.
 
 ---
 
@@ -86,7 +88,7 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 - [x] **AC1 — Baseline manifest:** Snapshot in [E08:S03:T12 task doc](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) (560 open @ `5fcf102`).
 - [x] **AC2 — Wave 1 burn-down:** Wave-1 rule groups remediated; dashboard **560→145** (−74.1%) on re-scan.
-- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ (still **Fair** @ **146** pre–wave-5 merge; post-merge re-scan pending).
+- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ (**Fair** @ lag-accepted **146** post–wave-5 merge; operator UI refresh pending; wave 6 planned).
 - [x] **AC4 — No regressions:** `pytest` + workflow-scripts gate green locally (407 / 119 passed @ 2026-06-06).
 - [ ] **AC5 — Kanban wiring:** Linked; release via **RW E08:S03:T12** when dashboard ACs confirmed.
 
@@ -100,7 +102,8 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 | **2** | Script/test cleanup | print-at-module-level, remaining maintainability fold rules |
 | **3** | `greenfield-install/` mirror | Align mirrored tree or exclude from quality scope per policy |
 | **4** | T13 print handoff | `py/print-during-import` (reliability band) — **done** @ v0.8.3.12+6 |
-| **5** | CodeQL-aligned maintainability | **146** residuals — **change implemented** locally; RW @ +7 **pending** |
+| **5** | CodeQL-aligned maintainability | Shipped @ **v0.8.3.12+7**; closure **Fair** — wave 6 **planned** |
+| **6** | Residual burn-down (if Fair persists) | **OPEN** — [IPP §4.7](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) |
 
 ---
 
