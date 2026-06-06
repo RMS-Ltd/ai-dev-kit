@@ -59,6 +59,20 @@ class CodeQualityGateConfig:
         )
 
 
+def resolve_query_pack_spec(language: str, query_suite: str) -> str:
+    """Map GitHub Code Quality suite names to CodeQL CLI pack specs."""
+    if ":" in query_suite or query_suite.startswith("/"):
+        return query_suite
+    pack = f"codeql/{language}-queries"
+    if query_suite.endswith(".qls"):
+        return f"{pack}:codeql-suites/{query_suite}"
+    if query_suite == "security-and-quality":
+        qls = f"{language}-security-and-quality.qls"
+    else:
+        qls = f"{language}-{query_suite}.qls"
+    return f"{pack}:codeql-suites/{qls}"
+
+
 def load_config(config_path: Path | None = None) -> CodeQualityGateConfig:
     root = Path.cwd()
     path = config_path or root / "rw-config.yaml"
