@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.1+1] - 06-06-26
+
+E10:S01:T01 — **Change implemented:** Expectations baseline for Document Lifecycle package — companion artefact, task doc fleshed, V1–V8 verified; Wave 2A gate complete. SemVer **v0.4.1005+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.1+1.md)
+
+---
+
 ## [0.10.1.7+2] - 06-06-26
 
 E10:S01:T07 — **Change implemented:** Wave 1 IPP planning complete — six IPPs (T01–T06) for Document Lifecycle package RC review; task docs wired. SemVer **v0.4.1004+2**.

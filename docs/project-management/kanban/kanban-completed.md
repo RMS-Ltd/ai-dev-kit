@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (RW: E10:S01:T07)
-**Version:** v0.10.1.7+1
+**Last Updated:** 2026-06-06 (RW: E10:S01:T01)
+**Version:** v0.10.1.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,9 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+- **[E10:S01:T01](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)** — Establish expectations baseline for Document Lifecycle package: companion baseline artefact, task doc fleshed, V1–V8 verified; Wave 2A gate complete.
+  **Completed:** `2026-06-06T14:45:56Z` | **Version:** `v0.10.1.1+1` | **Agent:** `RW E10:S01:T01 --art` | [Baseline](epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md) | [IPP-T01](../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
 
 - **[E10:S01:T07](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)** — Coordinator orchestration plan and epic branch bootstrap: E10S01 orchestration SoT, `epic/10-doc-lifecycle-framework`, triage wiring, kanban init.
   **Completed:** `2026-06-06T14:10:06Z` | **Version:** `v0.10.1.7+1` | **Agent:** `RW -k E10:S01:T07 --art --dpz` | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
@@ -568,8 +571,8 @@ housekeeping_policy: keep
 ---
 
 #### **Epic 10: Documentation and Knowledge Management**
-- **[E10:S01:T01](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md)** – Doc lifecycle expectations baseline  
-  **Completed:** `2026-03-12T14:00:00Z` | **Version:** `v0.10.1.1+1` | **Agent:** `PM-AGENT-001`
+- **[E10:S01:T01](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)** – Establish expectations baseline for Document Lifecycle package  
+  **Completed:** `2026-06-06T14:45:56Z` | **Version:** `v0.10.1.1+1` | **Agent:** `RW E10:S01:T01 --art` | [Baseline](epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md)
 
 
 ---
@@ -1045,14 +1048,14 @@ This document tracks all **completed tasks** across the AI Dev Kit project. Task
 
 ---
 
-### Epic 10: Documentation and Knowledge Management ✅ COMPLETE
+### Epic 10: Document Lifecycle Framework — IN PROGRESS
 
-**Status:** COMPLETE  
-**Completed:** 2026-03-12  
+**Status:** IN PROGRESS  
+**Last updated:** 2026-06-06  
 **Version:** v0.10.1.1+1
 
-#### Story 001: Documentation Lifecycle ✅ COMPLETE
-- **E10:S01:T01** – Doc lifecycle expectations baseline - ✅ COMPLETE (v0.10.1.1+1)
+#### Story 001: Document Lifecycle Package Implementation Review — IN PROGRESS
+- **E10:S01:T01** – Establish expectations baseline for Document Lifecycle package - ✅ COMPLETE (v0.10.1.1+1)
 
 ---
 

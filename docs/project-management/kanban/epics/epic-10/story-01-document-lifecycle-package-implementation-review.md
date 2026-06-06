@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.7+2 – Wave 1 IPP planning complete)  
-**Version:** v0.10.1.7+2  
+**Last updated:** 2026-06-06 (v0.10.1.1+1 – T01 expectations baseline complete)  
+**Version:** v0.10.1.1+1  
 **Code:** E10S01
 
 ---
@@ -33,8 +33,9 @@ housekeeping_policy: keep
 - [x] **E10:S01:T07 – Coordinator orchestration plan and epic branch bootstrap** - ✅ COMPLETE (v0.10.1.7+1)
   - Task: [`T07-coordinator-orchestration-plan-and-epic-branch-bootstrap`](story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)
   - Orchestration: [`E10S01-orchestration-plan.md`](../../../../implementation-cycles/E10S01-orchestration-plan.md)
-- [ ] **E10:S01:T01 – Establish expectations baseline for Document Lifecycle package** - TODO
+- [x] **E10:S01:T01 – Establish expectations baseline for Document Lifecycle package** - ✅ COMPLETE (v0.10.1.1+1)
   - Task: [`T01-establish-expectations-baseline-for-document-lifecycle-packa`](story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)
+  - Baseline: [`expectations-baseline.md`](story-01-document-lifecycle-package-implementation-review/expectations-baseline.md)
 - [ ] **E10:S01:T02 – Inventory package components and map to expectations** - TODO
   - Task: [`T02-inventory-package-components-and-map-to-expectations`](story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
 - [ ] **E10:S01:T03 – Validate lifecycle behavior against documented guidance** - TODO
@@ -64,7 +65,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 
 ## Acceptance Criteria
 
-- [ ] Expectations baseline documented and approved.
+- [x] Expectations baseline documented and approved. ✅ (v0.10.1.1+1)
 - [ ] Component inventory mapped to expectations.
 - [ ] Behavioral validation notes captured.
 - [ ] Integration alignment reviewed and documented.
