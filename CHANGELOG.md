@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.15+1] - 06-06-26
+
+E05:S09:T15 — **Change implemented:** FR-114 intake — Docusaurus adopter-public publish allowlist task filed (RW -k, --art). SemVer **v0.4.1021+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.15+1.md)
+
+---
+
 ## [0.8.3.17+4] - 06-06-26
 
 E08:S03:T17 — **Change implemented:** Post-merge CQG verification (PR #36; CI + local CodeQL run). SemVer **v0.4.1020+4**.

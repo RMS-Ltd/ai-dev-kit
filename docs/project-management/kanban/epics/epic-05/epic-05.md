@@ -69,7 +69,7 @@ housekeeping_policy: keep
   - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08)
 
 
-- [ ] **E5:S09 – Docusaurus Documentation Portal** - IN PROGRESS (T01–T12 ✅; **T12/UXR-018** ✅ **v0.5.9.12+3**)
+- [ ] **E5:S09 – Docusaurus Documentation Portal** - IN PROGRESS (T01–T14 ✅; **T15/FR-114** intake **v0.5.9.15+1**)
   - Story: [`story-09-docusaurus-documentation-portal.md`](story-09-docusaurus-documentation-portal.md)
   - **Note:** Atomic FR chain for full Docusaurus adoption (`portal/` → `docs/` publish, CI, deploy, search).
 

@@ -492,11 +492,11 @@ Triggered by T06 remediation backlog. **Not part of E10:S01 story closure** but 
 | 4 | T07 RW `v0.10.1.7+1` | ✅ |
 | 5 | Six IPPs written (Wave 1) | ✅ v0.10.1.7+2 |
 | 6 | User authorized implementation | ✅ PM coordinator |
-| 7 | T01 RW `v0.10.1.1+1` | ☐ |
-| 8 | T02–T04 RWs complete | ☐ |
-| 9 | T05 RW + validate_gap_log strict | ☐ |
-| 10 | T06 RW + remediation tasks filed | ☐ |
-| 11 | Story E10:S01 all tasks COMPLETE | ☐ |
+| 7 | T01 RW `v0.10.1.1+1` | ✅ |
+| 8 | T02–T04 RWs complete | ✅ |
+| 9 | T05 RW + validate_gap_log strict | ✅ |
+| 10 | T06 RW + remediation tasks filed | ✅ |
+| 11 | Story E10:S01 all tasks COMPLETE | ✅ @ v0.10.1.10+1 (UKW sign-off 2026-06-06) |
 | 12 | Handoff to E10:S02 (installation evaluation) | ☐ |
 
 ---
@@ -555,3 +555,4 @@ RW E10:S01:T06 --art
 | ---- | ------ |
 | 2026-06-06 | Initial orchestration plan; branch `epic/10-doc-lifecycle-framework` created; version seeded |
 | 2026-06-06 | E10:S01:T07 filed — host task for coordinator bootstrap and triage |
+| 2026-06-06 | E10:S01 story sign-off — all tasks COMPLETE @ v0.10.1.10+1; RC **APPROVE**; handoff gate → S02 |

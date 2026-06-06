@@ -2,7 +2,7 @@
 lifecycle: evergreen
 ttl_days: null
 created_at: 2026-06-05T12:00:00Z
-revised_at: 2026-06-06T14:00:00Z
+revised_at: 2026-06-06T16:00:00Z
 expires_at: null
 housekeeping_policy: keep
 ---
@@ -11,7 +11,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T12-code-quality-maintainability-backlog-br099.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) **(E08:S03:T12)**  
 **Planning for:** [BR-099](../project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)  
-**Status:** Revised — wave 5 **DONE** @ v0.8.3.12+7; **closure phase OPEN** (§4.6 steps 50, 28–30, 13); **Good+** hard gate pending
+**Status:** Revised — wave 6 **PLANNED** @ v0.8.3.12+8; fresh step-28 capture **103/Fair** @ `d5c4bca5`; **Path B** (wave 6 code); awaiting **`implement wave 6`**
 
 > **IPW:** Produced for E08:S03:T12. Bulk **Code Quality maintainability** burn-down; complements security CodeQL tasks E08:S03:T08–T11 and defers reliability ([BR-100](../project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md) / E08:S03:T13).
 >
@@ -24,6 +24,8 @@ housekeeping_policy: keep
 > **Revision (2026-06-06, wave 5):** Closed ruff/CodeQL gap: dead yaml blocks, unused module globals, mirror sync (**88** files); local ruff **0**; pytest **407** / workflow-scripts **119**; shipped @ **v0.8.3.12+7** (`7266c63d`).
 >
 > **Revision (2026-06-06, closure imp):** Steps 1, 50, 28, 51, 13 executed — **Fair** branch; lag-accepted **146/Fair** @ `main` `56b34f0d`; wave 6 pre-manifest stub; operator UI refresh pending.
+>
+> **Revision (2026-06-06, wave-6 IPW):** Operator UI refresh + CQG cross-ref @ `main` `d5c4bca5` — **103** maintainability / **Fair** (−43 vs lag **146**); **Path B** → §4.7 wave-6 ledger (steps 52–59); CQG verification (RNF7); terminal closure deferred until **Good+**.
 
 ---
 
@@ -36,16 +38,16 @@ housekeeping_policy: keep
 | RF1 | Capture **baseline manifest** (rule → open count, snapshot date, `main` SHA) in task doc | 1 | **SATISFIED** — task doc baseline table @ `5fcf102` | T12 AC1, BR-099 AC1 |
 | RF2 | Remediate or **document-waive** all wave-1 rule groups | 1 | **SATISFIED** — ruff proxy 937→0; 13 manual import edge cases | T12 AC2, BR-099 AC2 |
 | RF3 | Reduce open maintainability count **≥50%** vs baseline | 1 | **SATISFIED** — dashboard **560→145** (−74.1%) | T12 AC2, BR-099 AC2 |
-| RF4 | Maintainability score **Good** or better on dashboard | 1–5 | **OPEN** — still **Fair** @ **146** open post–wave-4 merge (operator confirmed); **Good+ required before COMPLETE** | T12 AC4, BR-099 AC3 |
-| RF5 | Keep CI green: `pytest tests/`, `workflow-scripts-pytest`, `tests.yml` | 1–5 | **SATISFIED** — 407 passed / 119 workflow-scripts @ wave 5 | T12 AC5, BR-099 AC4 |
-| RF6 | Close kanban loop: BR-099 resolution + **RW E08:S03:T12 --art** on completion | 1–5 | **OPEN** — interim RW @ +1–+6; final closure deferred until RF4 satisfied | T12 AC6, BR-099 AC5 |
+| RF4 | Maintainability score **Good** or better on dashboard | 1–6 | **OPEN** — **Fair** @ **103** post–wave-5 merge (CQG @ `d5c4bca5`); **Good+ required before COMPLETE** | T12 AC4, BR-099 AC3 |
+| RF5 | Keep CI green: `pytest tests/`, `workflow-scripts-pytest`, `tests.yml` | 1–6 | **SATISFIED** — 407 passed / 119 workflow-scripts @ wave 5 | T12 AC5, BR-099 AC4 |
+| RF6 | Close kanban loop: BR-099 resolution + **RW E08:S03:T12 --art** on completion | 1–6 | **OPEN** — interim RW @ +1–+8; terminal closure deferred until RF4 satisfied | T12 AC6, BR-099 AC5 |
 | RF7 | Include **`greenfield-install/`** in wave 1 hygiene pass | 1 | **SATISFIED** — Chunk C in wave-1 release | IPW scope decision |
 | RF8 | Export **wave-2 manifest**: rule → count for **145** residuals before bulk edits | 2 | **SATISFIED** — task doc wave-2 pre-manifest @ `cadb0c3` | BR-099 wave 2, task doc |
 | RF9 | Remediate wave-2 rules: `py/print-during-import` + remaining maintainability **fold** rules | 2 | **SATISFIED** — 169 ruff fixes + 1 print-at-import fix; wave-2 scope proxy **0** | BR-099 wave 2, T12 deliverable |
 | RF10 | Post-wave-2 manifest + dashboard delta in task doc | 2 | **SATISFIED** — task doc post-wave-2 manifest @ v0.8.3.12+4 | T12 deliverable #3 |
 | RF11 | Export **wave-3 manifest**: rule → count for `greenfield-install/` @ current `main` SHA | 3 | **SATISFIED** — task doc wave-3 pre-manifest @ `bf3c10ed` (0 open) | BR-099 wave 3, task doc |
 | RF12 | Remediate wave-3 `greenfield-install/` mirror (~146 F541 + hygiene) | 3 | **SATISFIED** — corpus already clear; 0 ruff fixes applied | BR-099 wave 3, task doc |
-| RF13 | Post-wave dashboard re-scan on `main`; record open count + score in task doc | closure | **PARTIAL** — step 28 capture @ `56b34f0d`; lag-accepted **146/Fair**; operator UI refresh pending | T12 AC4, BR-099 AC3 |
+| RF13 | Post-wave dashboard re-scan on `main`; record open count + score in task doc | closure | **SATISFIED** — step 28 @ `d5c4bca5`; **103/Fair** (operator UI + CQG cross-ref) | T12 AC4, BR-099 AC3 |
 | RF14 | Export **wave-4 manifest**: **16** `py/print-during-import` (T13 deferral + dashboard rule breakdown) in task doc | 4 | **SATISFIED** — task doc wave-4 pre-manifest @ `a482cb7b` | BR-099 wave 4, [T13 handoff](IPP-E08S03T13-code-quality-reliability-backlog-br100.md) |
 | RF15 | Remediate wave-4 print-at-import (main guard or logging) across full Python corpus | 4 | **SATISFIED** — **14** files; local proxy **0** import-time prints | BR-099 wave 4, T12 deliverable |
 | RF16 | Post-wave-4 manifest + expected maintainability delta in task doc | 4 | **SATISFIED** — task doc post-wave-4 manifest | T12 deliverable |
@@ -54,8 +56,10 @@ housekeeping_policy: keep
 | RF19 | Remediate wave-5 maintainability rules across **full corpus** with **dashboard-aligned verification** (not ruff-only) | 5 | **SATISFIED** — Chunks I–K + mirror sync @ steps 42–45 | BR-099 wave 5 |
 | RF20 | Post-wave-5 manifest + open-count delta in task doc | 5 | **SATISFIED** — task doc post-wave-5 manifest @ step 47 | T12 deliverable |
 | RF21 | `RW E08:S03:T12 --art` for wave-5 code release | 5 | **SATISFIED** @ v0.8.3.12+7 | RF6 |
+| RF22 | Remediate wave-6 residual maintainability using **CodeQL-path verification** (CQG/SARIF), not ruff-only | 6 | **OPEN** — §4.7 steps 54–55 | T12 AC4, BR-099 AC3 |
+| RF23 | Post-wave-6 manifest + re-scan; return to §4.6 step 28 | 6 | **OPEN** — step 57 + loop | RF13, RF4 |
 
-**Release evidence:** v0.8.3.12+1 (wave-1 remediation), +2 (kanban re-scan), +3 (IPP link hygiene), +4 (wave-2 remediation), +5 (wave-3 verification), +6 (wave-4 print-at-import), +7 (wave-5 gap closure). See task doc baseline through post-wave-5 tables; post-merge dashboard capture **open** (§4.6 step 28).
+**Release evidence:** v0.8.3.12+1 (wave-1 remediation), +2 (kanban re-scan), +3 (IPP link hygiene), +4 (wave-2 remediation), +5 (wave-3 verification), +6 (wave-4 print-at-import), +7 (wave-5 gap closure), +8 (closure docs). Post-merge capture **103/Fair** @ `d5c4bca5` (step 28). Wave 6 **planned**.
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -66,7 +70,9 @@ housekeeping_policy: keep
 | RNF3 | Changelog: **"Change implemented"** / **"Attempted fix"** until dashboard verified | RW rules |
 | RNF4 | Coordinate with **E08:S03:T13** — do not fix reliability-rule findings in this task | T12 Input |
 | RNF5 | Accept **T13-deferred** `py/print-during-import` findings (**16** — remediated wave 4); do not re-open T13 reliability hunks (`exit/quit`, mixed-returns, wrong-arguments) | [T13 wave-2 triage](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) |
-| RNF6 | Wave 5 treats **`packages/`** and **`greenfield-install/`** as first-class; run `sync_greenfield_install.py` after packages edits when mirror parity required | [T16 wave-1 re-scan](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) |
+| RNF6 | Wave 5–6 treat **`packages/`** and **`greenfield-install/`** as first-class; run `sync_greenfield_install.py` after packages edits when mirror parity required | [T16 wave-1 re-scan](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) |
+| RNF7 | Use **CQG** ([operator guide](../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md), FR-113 / E08:S03:T17) for local CodeQL-aligned verification before wave-6 RW — not ruff-only | Wave-5 failure mode (ruff **0**, dashboard still **Fair**) |
+| RNF8 | Isolate wave-6 verification from unrelated WIP on `dev`; baseline CQG maintainability rating against wave-6 edit scope only | T17 CQG corpus may add findings outside T12 scope |
 
 ### 1.3 Invariants and boundaries
 
@@ -76,7 +82,9 @@ housekeeping_policy: keep
 - **In scope (wave 3 — done):** `greenfield-install/` mirror — F541 + hygiene (`F401`, `F841`, `I001`, `F811`, `F823`); verified **0** open @ +5
 - **In scope (wave 4 — done):** `py/print-during-import` — **16** findings from T13 deferral; shipped @ v0.8.3.12+6 (**14** files); reliability band — does not reduce maintainability subtotal
 - **In scope (wave 5 — done):** **146** maintainability residuals: dead yaml blocks, unused module globals, import hygiene across `packages/`, `tests/`, `scripts/`, `cli/`, `greenfield-install/` mirror sync (**88** files) @ **v0.8.3.12+7**
-- **In scope (closure — open):** Post–wave-5 merge dashboard capture; Good+ verification; terminal RW + COMPLETE or wave 6 contingency (§4.7)
+- **In scope (closure — done @ +8):** Post–wave-5 merge dashboard capture; interim closure-docs RW
+- **In scope (wave 6 — planned):** **103** maintainability residuals @ `d5c4bca5`; Chunks L/M + CQG verification; **`RW E08:S03:T12 --art`** @ step 59
+- **In scope (terminal closure — Path A):** Good+ only → step 29a/b + **COMPLETE**
 - **Out of scope (explicit):** T13 reliability rules (`exit/quit`, mixed-returns, wrong-arguments); 93 out-of-scope ruff findings (E402, F821, …) per wave-3 triage unless surfaced on dashboard; BR-101 AI suggestions (T14); CodeQL **security** sidebar (T08–T11); new CI quality gates / rulesets; `test_install_error_docs_sync` fix (T15); T16 perpetual RW (deferred until T12–T14 sign-off)
 
 ---
@@ -92,16 +100,18 @@ Three-phase maintainability burn-down per [BR-099](../project-management/kanban/
 - **Phase C (wave 3 — complete):** `greenfield-install/` mirror verification @ v0.8.3.12+5; local proxy **0** open for wave-3 rule set.
 - **Phase D (wave 4 — complete):** T13-deferred **16** `py/print-at-import` findings; RW @ v0.8.3.12+6; reliability band only.
 - **Phase E (wave 5 — complete):** CodeQL-aligned burn-down of **146** maintainability residuals (ruff/CodeQL gap closure); RW @ **v0.8.3.12+7**.
-- **Phase F (closure — open):** Read-only dashboard capture after wave-5 merge; terminal RW + COMPLETE only when **Good+** confirmed; else wave 6 (§4.7).
+- **Phase F (closure — done @ +8):** Post–wave-5 merge capture; interim closure-docs RW; step 28 **103/Fair** @ `d5c4bca5`.
+- **Phase G (wave 6 — planned):** CodeQL-aligned remediation of **103** residuals (Chunks L/M); CQG-verified locally; **`RW E08:S03:T12 --art`** @ step 59; re-scan step 28.
+- **Phase H (terminal closure — Path A only):** Good+ confirmed → BR-099 resolution, T16 handoff, terminal RW, **COMPLETE**.
 
 ### 2.2 Specification mapping from ascertained requirements
 
 - RF1 → baseline manifest table in task doc (satisfied)
 - RF2, RF7 → directory-chunked `ruff` autofix + manual pass on wave-1 rules (satisfied)
 - RF3 → dashboard re-scan **560→145** (satisfied)
-- RF4 → post-wave score check; **Good+ required** before COMPLETE — still **Fair** @ **146** post–wave-4 merge; wave 5 + closure re-scan required
+- RF4 → post-wave score check; **Good+ required** before COMPLETE — **Fair** @ **103** post–wave-5 merge (CQG @ `d5c4bca5`); wave 6 required
 - RF5 → `pytest tests/` and workflow-scripts gate (**satisfied** @ wave 5 — 407 / 119)
-- RF6 → BR-099 update + RW Step 7 four-surface reconciliation (interim releases @ +1–+7 done; **terminal closure open** until Good+)
+- RF6 → BR-099 update + RW Step 7 four-surface reconciliation (interim releases @ +1–+8 done; **terminal closure open** until Good+)
 - RF8 → wave-2 manifest table in task doc (satisfied)
 - RF9 → directory-chunked fixes for print-at-import + fold rules (satisfied @ +4; wave-4 print backlog remains)
 - RF10 → post-wave-2 manifest in task doc (satisfied)
@@ -116,6 +126,8 @@ Three-phase maintainability burn-down per [BR-099](../project-management/kanban/
 - RF19 → Chunks I–K remediation across full corpus (**satisfied** — steps 42–45)
 - RF20 → post-wave-5 manifest in task doc (**satisfied** — step 47)
 - RF21 → wave-5 RW release (**satisfied** @ v0.8.3.12+7 — step 49)
+- RF22 → Chunks L/M remediation with CQG path verification (**open** — §4.7)
+- RF23 → post-wave-6 manifest + return to step 28 (**open**)
 
 ### 2.3 Constraints
 
@@ -172,10 +184,10 @@ Three-phase maintainability burn-down per [BR-099](../project-management/kanban/
 
 ### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
 
-- **Current task status:** **IN PROGRESS** @ **v0.8.3.12+7** (wave 5 shipped; RF4/RF6/RF13 closure **open**)
+- **Current task status:** **IN PROGRESS** @ **v0.8.3.12+8** (closure docs shipped; wave 6 **planned**)
 - **Transition trigger to IN PROGRESS:** First non-planning implementation change lands — **DONE** (wave-1)
-- **Transition trigger to COMPLETE:** RF4 **Good+** evidenced via post–wave-5 merge dashboard capture (step 28) **and** terminal **`RW E08:S03:T12 --art`** (step 29); forensic `✅ COMPLETE (v{version})` on step 13
-- **If wave-5 merges but score still Fair:** remain **IN PROGRESS**; document counts; plan wave 6 or waivers — **does not satisfy closure** (operator **Good+** hard gate)
+- **Transition trigger to COMPLETE:** RF4 **Good+** evidenced via post–wave-6 merge dashboard capture (step 28 loop) **and** terminal **`RW E08:S03:T12 --art`** (step 29a or post–wave-6 Good+); forensic `✅ COMPLETE (v{version})` on step 13
+- **Path B (current):** **Fair** @ **103** — execute §4.7 wave 6; remain **IN PROGRESS** after step 59 until Good+
 - **T16 deferral:** Dashboard re-scan recorded in T12 task doc only (read-only cross-ref allowed); T16 perpetual RW blocked until T12–T14 sign-off
 - **Atomic propagation requirement:** Task doc status and kboard row status must update in the same change set/session
 - **Owner:** Implementation execution step (not planning-only IPW creation)
@@ -186,19 +198,19 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 | ID | Trigger | Y/N | Evidence |
 | -- | ------- | --- | -------- |
-| T1 | Alternatives | N | Closure continues prescribed burn-down; wave 6 uses same hygiene patterns |
+| T1 | Alternatives | N | Wave 6 continues prescribed burn-down; CQG verification per ADR-022 |
 | T2 | Reversibility | N | Hygiene edits revert in one PR per chunk |
 | T3 | Blast radius | N | Confined to Python source hygiene + kanban docs; no framework API change |
-| T4 | Precedent | N | BR-099 waves 1–5 + closure §4.6 already define multi-wave burn-down |
+| T4 | Precedent | N | BR-099 waves 1–6 + closure §4.6 already define multi-wave burn-down |
 | T5 | Constraint trade-off | N | No security/performance/versioning trade-off |
 | T6 | Governance contract | N | No RW/IPW/validator gate changes |
 | T7 | Supersedes | N | No ADR contradiction |
 
-**Outcome:** `EXEMPT` (closure phase — no new ADR)
+**Outcome:** `EXEMPT` (wave 6 — no new ADR; CQG covered by ADR-022)
 
 | ID | Exemption (only if all T = N) | Pass? | Evidence |
 | -- | --------------------------- | ----- | -------- |
-| E1 | Single locus | Pass | §4.6 file list (Python globs + kanban/docs) |
+| E1 | Single locus | Pass | §4.7 file list (Python globs + kanban/docs) |
 | E2 | No new options | Pass | Implements BR-099 + task AC only |
 | E3 | Reversible in one task | Pass | Standard revert per chunk |
 | E4 | Spec elsewhere | Pass | BR-099 + this IPP + task AC |
@@ -259,17 +271,29 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | T25 | CI regression | `pytest tests/` + workflow-scripts gate green | **PASS** — 407 / 119 | RF5 |
 | T26 | Post-wave-5 metrics | Post-wave-5 manifest + expected dashboard delta in task doc | **PASS** | RF20 |
 
-### 3.6 Closure (open)
+### 3.6 Closure (step 28 satisfied — Path B)
 
 | ID | Behavior / layer | Expected check | Status | Covers |
 | -- | ---------------- | -------------- | ------ | ------ |
-| T28 | Dashboard capture | Read-only snapshot: open count, score, rule breakdown, `main` SHA in task doc (post–wave-5 merge) | **PARTIAL** — lag-accepted @ `56b34f0d`; UI refresh pending | RF13, RF4 |
-| T29 | CI regression | `pytest tests/` + workflow-scripts gate green (re-run before any wave-6 code) | **OPEN** (before wave 6 code) | RF5 |
-| T30 | Local proxy | `ruff check --select F401,F841,I001,F811,F541` on `packages/`, `greenfield-install/`, `scripts/` → 0 | **PASS** @ v0.8.3.12+7 (wave-5 tag) | RF5 |
+| T28 | Dashboard capture | Read-only snapshot: open count, score, rule breakdown, `main` SHA in task doc (post–wave-5 merge) | **PASS** — **103/Fair** @ `d5c4bca5` (operator UI + CQG) | RF13, RF4 |
+| T29 | CI regression | `pytest tests/` + workflow-scripts gate green (re-run before wave-6 code) | **OPEN** (before wave 6 code) | RF5 |
+| T30 | Local proxy | `ruff check --select F401,F841,I001,F811,F541` on `packages/`, `greenfield-install/`, `scripts/` → 0 | **PASS** @ v0.8.3.12+7 (regression guard) | RF5 |
 | T31 | Mirror parity | `python3 scripts/sync_greenfield_install.py --check` if wave 6 touches `packages/` | **OPEN** (conditional) | RNF6 |
-| T32 | Closure branch | If Good+: task **COMPLETE**; else **IN PROGRESS** + wave-6 plan | **PASS** — **IN PROGRESS** (Fair branch) | RF4, RF6 |
-| T16 | Dashboard verify | Post-wave-5 merge re-scan: open count + score **Good+** (alias for T28) | **PARTIAL** | RF4, RF13 |
-| T17 | Kanban closure | BR-099 resolution narrative + four-surface terminal RW Step 7 (Good+ path only) | **N/A** — Fair branch | RF6 |
+| T32 | Closure branch | If Good+: task **COMPLETE**; else **IN PROGRESS** + wave-6 plan | **PASS** — **IN PROGRESS** (Path B **Fair**) | RF4, RF6 |
+| T16 | Dashboard verify | Post-wave-5 merge re-scan: open count + score **Good+** | **PARTIAL** — **103/Fair**; Good+ not met | RF4, RF13 |
+| T17 | Kanban closure | BR-099 resolution narrative + four-surface terminal RW Step 7 (Good+ path only) | **N/A** — Path B | RF6 |
+
+### 3.7 Wave 6 (planned — Path B)
+
+| ID | Behavior / layer | Expected check | Status | Covers |
+| -- | ---------------- | -------------- | ------ | ------ |
+| T33 | Wave-6 pre-manifest | Rule → count @ `d5c4bca5` in task doc | **PASS** — step 52 @ IPW | RF22, step 52 |
+| T34 | CQG / CodeQL maintainability | `run_cqg.py` (or `--sarif`) on edited scope; maintainability count trends down vs pre-manifest (**103**) | **OPEN** | RF22, RNF7 |
+| T35 | Ruff regression guard | `ruff check --select F401,F841,I001,F811,F541` → **0** on packages + greenfield-install + scripts | **OPEN** (re-run @ step 56) | RF5 |
+| T36 | CI regression | `pytest tests/` + workflow-scripts gate green | **OPEN** (re-run @ step 56) | RF5 |
+| T37 | Mirror parity | `sync_greenfield_install.py --check` if `packages/` touched | **OPEN** (conditional @ step 56) | RNF6 |
+| T38 | Post-wave-6 metrics | Post-wave-6 manifest + delta vs step-28 baseline (**103**) | **OPEN** — step 57 | RF23 |
+| T39 | Closure branch | Good+ → **COMPLETE**; else **IN PROGRESS** (+ optional wave 7) | **OPEN** — step 13 after step 59 | RF4, step 13 |
 
 ---
 
@@ -352,11 +376,11 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | ---- | ------ | ----------- | ------ |
 | **1** | Confirm task **E08:S03:T12** remains **IN PROGRESS**; update `Last updated` | Task doc | **DONE** |
 | **50** | **Precondition:** If v0.8.3.12+7 not on remote/`main`, operator batch-pushes `dev` + tags `v0.8.3.12+7`, `v0.4.1001`; merge to `main` per release policy | Remote scan input | **DONE** — `origin/dev` @ `56b34f0d`; tags on remote |
-| **28** | **Read-only dashboard capture** post–wave-5 merge: open count, score, rule breakdown, SHA → **Post-wave-5-merge manifest** in task doc | RF13, RF4 | **DONE** (lag-accepted **146/Fair**; operator UI refresh pending) |
+| **28** | **Read-only dashboard capture** post–wave-5 merge: open count, score, rule breakdown, SHA → **Post-wave-5-merge manifest** in task doc | RF13, RF4 | **DONE** — **103/Fair** @ `d5c4bca5` (operator UI + CQG cross-ref 2026-06-06) |
 | **51** | Reconcile IPP §1 RF table + closure statuses after step 28 | IPP hygiene | **DONE** |
 | **29a** | **If Good+:** Update BR-099 resolution (not "Fixed" until T16 cycle); terminal **`RW E08:S03:T12 --art`**; RW Step 7 four-surface; story checklist ✅ | RF4, RF6 | **N/A** — Fair branch |
 | **29b** | **If Good+:** Update T16 deferral — T12 resume trigger met | T16 handoff | **N/A** — Fair branch |
-| **30a** | **If still Fair @ material count:** Document residual rule breakdown; execute **§4.7 Wave 6** | RF4 | **IN PROGRESS** — wave-6 pre-manifest + plan |
+| **30a** | **If still Fair @ material count:** Document residual rule breakdown; execute **§4.7 Wave 6** | RF4 | **DONE** — wave-6 IPW complete; **`implement wave 6`** authorized |
 | **30b** | **If waivers chosen:** Per-rule waiver rationale in task doc + BR-099 | RNF1 | **N/A** |
 | **13** | **[MANDATORY] Reconcile status:** **COMPLETE** only if step 29 Good+; else **IN PROGRESS** | Task doc + kboard | **DONE** — **IN PROGRESS** |
 | **—** | Interim closure-docs **`RW E08:S03:T12 --art`** @ **v0.8.3.12+8** (BUILD+8; four-surface reconciliation) | RF6 (interim) | **DONE** @ v0.8.3.12+8 |
@@ -369,23 +393,52 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 2. Ensure CodeQL scan has run on the commit containing wave-5 changes (typically `main` after merge)
 3. Capture dashboard counts for task doc manifest (step 28)
 
-### 4.7 Wave 6 contingency ledger (OPEN — populate only if step 28 fails Good+)
+### 4.7 Wave 6 ledger (PLANNED — Path B; do not re-execute waves 1–5)
 
-Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
+**Branch:** **Path B** — **Fair** @ **103** maintainability (CQG @ `d5c4bca5`); **Good+** not met.
+
+**Verification methodology (RNF7):** Use [CQG operator guide](../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md) — `python packages/frameworks/tooling-automation/scripts/run_cqg.py` before RW; compare maintainability count vs step-28 baseline (**103**). Optional: `--sarif .cqg/reports/latest.sarif`.
+
+**RW note (BR-097):** Primary SemVer tag **`v0.4.1003`** pre-exists (E10:S01:T07). Step 59 creates internal tag **`v0.8.3.12+9`**; document collision in changelog (same as +8).
 
 | Step | Action | Deliverable | Status |
 | ---- | ------ | ----------- | ------ |
-| 52 | Export **wave-6 pre-manifest**: rule → count @ post–wave-5 merge SHA in task doc | RF4 (contingency) | **IN PROGRESS** — stub in task doc; refresh after operator UI |
-| 53 | Triage sheet: each wave-6 rule group → fix / waive / defer | RNF1 | **OPEN** |
-| 54 | **Chunk L:** CodeQL-only / manual rules — `py/unused-global-variable`, `py/multiple-definition`, `py/unnecessary-lambda`, `py/unnecessary-pass` | RF4 | **OPEN** |
-| 55 | **Chunk M:** Residual hygiene + mirror — ruff proxy + `sync_greenfield_install.py` on dashboard-flagged paths | RNF6 | **OPEN** |
-| 56 | Run T29–T31 locally; fix regressions | RF5 | **OPEN** |
-| 57 | Post-wave-6 manifest in task doc | RF4 | **OPEN** |
-| 58 | Update BR-099 fix-attempt narrative | RF6 | **OPEN** |
-| 59 | `RW E08:S03:T12 --art` — BUILD+1, changelog, RW Step 7 | RF6 | **OPEN** |
+| **1** | **[MANDATORY] Confirm task `E08:S03:T12` remains **IN PROGRESS**; update `Last updated`** | Task doc | **OPEN** (executor step 1) |
+| 52 | Export **wave-6 pre-manifest**: rule → count @ `d5c4bca5` in task doc | RF22, step 52 | **DONE** @ IPW (see task doc) |
+| 53 | Triage sheet: each wave-6 rule group → **FIX / WAIVE / DEFER** | RNF1 | **DONE** @ IPW — all **FIX** (see task doc) |
+| 54 | **Chunk L:** Manual CodeQL rules — `py/unused-global-variable`, `py/multiple-definition`, `py/unnecessary-lambda`, `py/unnecessary-pass`, `py/unnecessary-delete` | RF22 | **OPEN** — file paths from CQG SARIF |
+| 55 | **Chunk M:** Residual hygiene + mirror — import/local/ineffectual/repeated-import; `sync_greenfield_install.py` | RNF6 | **OPEN** |
+| 56 | Run T34–T37 (CQG + ruff + pytest + mirror); fix regressions | RF5, RNF7 | **OPEN** |
+| 57 | Post-wave-6 manifest in task doc | RF23 | **OPEN** |
+| 58 | Update BR-099 fix-attempt narrative (**not "Fixed"** until T16 cycle) | RF6, RNF3 | **OPEN** |
+| 59 | **`RW E08:S03:T12 --art`** — BUILD+1, changelog, RW Step 7 four-surface | RF6 | **OPEN** |
 | — | Return to **§4.6 step 28** for post–wave-6 merge re-scan | RF13 | **OPEN** |
+| **13** | **[MANDATORY] Reconcile status:** **COMPLETE** only if Good+; else **IN PROGRESS** | Task doc + kboard | **OPEN** (executor final step) |
 
-**Likely focus if wave 6 required:** CodeQL rules not fully covered by ruff proxy; residual mirror paths in `greenfield-install/`; dashboard-only semantic differences vs local ruff **0**.
+**Wave-6 rule → remediation mapping (CQG @ `d5c4bca5`, maintainability band):**
+
+| CodeQL rule | CQG open | Chunk | Primary remediation |
+| ----------- | -------- | ----- | ------------------- |
+| `py/import-and-import-from` | 37 | M | Consolidate imports; fix test-module dual import patterns |
+| `py/unused-import` | 19 | M | Remove unused imports (incl. CQG test modules) |
+| `py/unused-local-variable` | 13 | M | Remove or prefix `_` |
+| `py/ineffectual-statement` | 10 | M | Remove dead statements (`generate_task_templates`, `ukw_syntax_parser`, etc.) |
+| `py/unnecessary-delete` | 5 | L | Remove unnecessary `del` in exception handlers |
+| `py/multiple-definition` | 5 | L | Remove dead assignments before redefinition |
+| `py/repeated-import` | 4 | M | Deduplicate imports |
+| `py/unused-global-variable` | 4 | L | Remove dead module globals (`kanban_paths`, CQG tests) |
+| `py/unnecessary-lambda` | 4 | L | Replace trivial lambdas |
+| `py/unnecessary-pass` | 2 | L | Remove no-op `pass` |
+| **Subtotal** | **103** | — | Packages edit → mirror sync → CQG verify |
+
+### 4.7a Path A — terminal closure (N/A — Good+ not evidenced)
+
+| Step | Action | Status |
+| ---- | ------ | ------ |
+| 28b | Replace post-merge manifest with fresh operator counts | **N/A** — score still **Fair** |
+| 29a | BR-099 resolution + terminal **`RW E08:S03:T12 --art`** | **N/A** |
+| 29b | T16 deferral narrow — T12 sign-off met | **N/A** |
+| 13 | **COMPLETE** + forensic marker | **N/A** |
 
 ### 4.8 Files to create or modify
 
@@ -395,7 +448,7 @@ Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
 - **UPDATE (wave 4 — done):** print-at-import modules across full Python corpus per wave-4 manifest (**14** files @ +6)
 - **UPDATE (wave 5 — done):** maintainability gap closure across `packages/`, `tests/`, `scripts/`, `cli/`, `greenfield-install/` (**88** files); RW @ **v0.8.3.12+7**
 - **UPDATE (closure — interim @ +8):** Task doc post-merge manifest; BR-099 narrative; IPP §4.6 ledger; story/kboard — **DONE** @ v0.8.3.12+8; terminal closure **open** until Good+
-- **UPDATE (wave 6 — conditional):** Same Python globs as wave 5 if step 28 fails Good+
+- **UPDATE (wave 6 — planned):** Same Python globs as wave 5; CQG-flagged paths per `.cqg/reports/summary-*.json`
 
 ### 4.9 Dependency order
 
@@ -411,7 +464,7 @@ Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
 
 **Closure (open):** Step 50 push/merge → step 28 dashboard capture → branch Good+ (step 29) or wave 6 (§4.7) → step 13 status reconciliation
 
-**Wave 6 (conditional):** Step 28 Fair → §4.7 steps 52–59 → return to step 28
+**Wave 6 (planned):** Step 52 pre-manifest → step 53 triage → Chunk L → Chunk M → CQG verify (T34) → CI → post-wave-6 manifest → BR/kanban → RW @ **+9** → return to step 28
 
 ### 4.10 Documentation implementation steps
 
@@ -428,13 +481,14 @@ Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
 
 | Doc ID | Path | Scope of change | Tied to (RF/T/impl step) |
 | ------ | ---- | --------------- | ------------------------ |
-| D-U1 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md` | Wave 1–5 manifests (**done**); **Post-wave-5-merge manifest** + closure status (**open** — step 28) | RF13, RF4, steps 28/13 |
-| D-U2 | `docs/project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md` | Wave-5 fix-attempt (**done** @ +7); resolution or wave-6 narrative (**open**) | RF6, steps 48/29/58 |
-| D-U3 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist on terminal RW (**open** — step 29) | step 29 |
-| D-U4 | `docs/project-management/kanban/kboard.md` | RW Step 7 row + stamp evidence on terminal RW | steps 29/59 |
+| D-U1 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md` | Wave 1–5 manifests (**done**); post-merge manifest @ **103/Fair** (**done**); wave-6 pre-manifest + triage (**done** @ IPW); post-wave-6 (**open**) | RF13, RF22, RF23 |
+| D-U2 | `docs/project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md` | Wave-6 narrative (**done** @ IPW); resolution (**open** — Good+ only) | RF6, steps 58/29a |
+| D-U3 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md` | T12 checklist — wave 6 planned (**done** @ IPW) | step 59 |
+| D-U4 | `docs/project-management/kanban/kboard.md` | T12 row — wave 6 planned (**done** @ IPW); terminal RW stamp (**open**) | steps 59/29a |
 | D-U5 | `setup.py` | `ruff` dev dependency (**done**) | step 3, RNF1 |
-| D-U6 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md` | Narrow deferral; T12 handoff (**open** — Good+ path only, step 29b) | T16 resume |
-| D-N1 | Wave-6 IPP §4.7 execution | **NONE** until step 28 fails Good+ | step 30a |
+| D-U6 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md` | Narrow deferral; T12 handoff (**open** — Path A only) | step 29b |
+| D-N1 | Python edits under `packages/`, `greenfield-install/`, `scripts/`, `cli/` | **OPEN** — CQG SARIF paths @ step 54–55 | RF22 |
+| D-N2 | CQG cross-link in §4.7 | **DONE** — operator guide linked | RNF7 |
 
 ### 5.2 New documents to create
 
@@ -452,7 +506,8 @@ Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
 | Dedicated baseline manifest file | NONE — AC requires manifest in task doc only |
 | T13-deferred print-at-import (**16**) | **DONE** — wave 4 @ +6; reliability band |
 | Wave-5 ruff/CodeQL gap | **DONE** @ +7 — see task doc gap analysis |
-| Wave-6 contingency | **CONDITIONAL** — §4.7; populate only if step 28 fails Good+ |
+| Wave-6 contingency | **PLANNED** — §4.7 steps 52–53 **done** @ IPW; code **open** |
+| CQG verification | **PLANNED** — RNF7; T34 @ step 56 |
 | `test_install_error_docs_sync` failure | NONE — T15 scope; excluded from T12 CI pass criteria |
 
 ---
@@ -479,9 +534,9 @@ Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
 - [x] Baseline manifest in task doc (rule → count, SHA, date)
 - [x] Wave-1 rules remediated or waived with rationale
 - [x] Open count reduced ≥50% (**560→145**, −74.1%)
-- [ ] Maintainability score Good+ (still **Fair** @ **146** post–wave-4 merge — wave 5 + closure re-scan pending)
+- [ ] Maintainability score Good+ (**Fair** @ **103** post–wave-5 merge — wave 6 **planned**)
 - [x] `pytest tests/` + workflow-scripts CI green
-- [ ] BR-099 final closure RW (interim releases @ +1–+6 done)
+- [ ] BR-099 final closure RW (interim releases @ +1–+8 done)
 - [x] IPP bidirectionally linked from task doc
 
 ### Wave 2 (complete)
@@ -517,18 +572,25 @@ Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
 - [x] Post-wave-5 manifest in task doc
 - [x] `RW E08:S03:T12 --art` for wave-5 release (**v0.8.3.12+7**)
 
-### Closure (open)
+### Closure (step 28 done — Path B)
 
-- [x] Step 50: v0.8.3.12+7 on remote/`main` (`56b34f0d`)
-- [x] Step 28: Post–wave-5-merge manifest in T12 task doc (lag-accepted **146/Fair**; operator UI refresh pending)
-- [ ] Step 29: If **Good+** — terminal `RW E08:S03:T12 --art` + BR-099 resolution + T16 handoff (**N/A** — Fair branch)
-- [x] Step 13: Status reconciliation — **IN PROGRESS** (Fair @ material count)
-- [x] Step 30a: Wave 6 planned — pre-manifest stub + §4.7 ledger active
+- [x] Step 50: v0.8.3.12+7 on remote/`main`
+- [x] Step 28: Post–wave-5-merge manifest — **103/Fair** @ `d5c4bca5`
+- [ ] Step 29: Terminal closure (**N/A** — Path B)
+- [x] Step 13: Status reconciliation — **IN PROGRESS**
+- [x] Step 30a: Wave 6 planned — §4.7 ledger complete @ IPW
+
+### Wave 6 (planned — awaiting `implement wave 6`)
+
+- [x] Step 52: Wave-6 pre-manifest in task doc
+- [x] Step 53: Triage sheet — all rule groups **FIX**
+- [ ] Steps 54–59: Code + CQG verify + RW @ +9
+- [ ] Step 13 (final): Reconcile status after wave 6
 
 ### Documentation
 
-- [x] All §5 wave-1/2/3/4/5 UPDATE items implemented
-- [ ] §5 closure UPDATE items (D-U1 post-merge manifest; D-U2 resolution; D-U6 T16 — **open**)
+- [x] §5 IPW deliverables D-U1–D-U4, D-N2 @ IPW
+- [ ] §5 D-N1 Python edits; D-U2 resolution; D-U6 T16 (**open** until Good+)
 - [x] All §6 paths exist and are linked from task doc
 
 ---
@@ -538,7 +600,8 @@ Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
 - [BR-099](../project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [BR-100](../project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md)
 - [IPP-E08S03T13](IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — T13 wave-2 print-at-import deferral (**16** → T12 wave 4 @ +6)
-- [scripts/sync_greenfield_install.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/sync_greenfield_install.py) — mirror sync after wave-5 packages edits
+- [CQG operator guide](../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md) — wave-6 verification (FR-113 / E08:S03:T17)
+- [scripts/sync_greenfield_install.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/sync_greenfield_install.py) — mirror sync after wave-6 packages edits
 - [T12 task doc](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)
 - [E08:S03:T16](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) — T16 deferral; read-only dashboard cross-refs allowed
 - [E08:S03:T15](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) — `test_install_error_docs_sync` scope
@@ -552,10 +615,11 @@ Use dashboard rule breakdown from step 28 (not pre-wave-5 **146** snapshot).
 
 ## Implementation gate (P-IPW-GATE)
 
-**Planning complete (closure phase).** Wave 5 @ **v0.8.3.12+7**; closure steps **1, 50, 28, 51, 13** executed (Fair branch). **Wave 6 code** requires explicit operator authorization after UI refresh:
+**Planning complete (wave 6).** Fresh step-28 capture **103/Fair** @ `d5c4bca5`; **Path B** selected. Closure docs @ **v0.8.3.12+8**.
 
-1. Operator refreshes [Code Quality UI](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) counts → update task doc post-merge + wave-6 pre-manifest
-2. **`implement wave 6`** or **`RW E08:S03:T12 --art`** for §4.7 steps 54–59
-3. **Good+ path only:** step 29 terminal RW + **COMPLETE**
+**Authorized next steps (explicit user command required for code):**
+
+1. **`implement wave 6`** — execute §4.7 steps **1, 54–59, 13** (Chunk L/M → CQG T34 → RW @ +9 → re-scan step 28)
+2. **`RW E08:S03:T12 --art`** — only after wave-6 code complete (step 59) or Path A Good+ (step 29a)
 
 Do not force **COMPLETE** without **Good+** evidence (step 13).
