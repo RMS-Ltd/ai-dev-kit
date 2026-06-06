@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.10.1.6+4] - 06-06-26
+
+E10:S01:T06 — **Change implemented:** Post-RC CI and portal link hygiene — Docusaurus build green, BR-068 publish-scope links, validator yaml import guards, greenfield-install sync (releases three direct commits after v0.10.1.6+3). SemVer **v0.4.1019+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.6+4.md)
+
+---
+
 ## [0.10.1.6+3] - 06-06-26
 
 E10:S01:T06 — **Change implemented:** RC sign-off posture upgraded **DEFER → APPROVE** — C1–C6 pass; HIGH-gap remediation evidence from T08 (v0.10.1.8+1), T09 (v0.10.1.9+1), T10 (v0.10.1.10+1). SemVer **v0.4.1018+3**.

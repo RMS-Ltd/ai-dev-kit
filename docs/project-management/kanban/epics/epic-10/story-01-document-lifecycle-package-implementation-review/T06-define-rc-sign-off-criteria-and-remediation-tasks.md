@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E10:S01:T06  
 **Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-06 (0.10.1.6+3 — RC sign-off upgraded to APPROVE; T08–T10 remediation evidence)  
-**Version:** 0.10.1.6+3  
+**Last updated:** 2026-06-06 (0.10.1.6+4 — post-RC CI/portal link hygiene release)  
+**Version:** 0.10.1.6+4  
 **Code:** E10S01T06
 
 ---

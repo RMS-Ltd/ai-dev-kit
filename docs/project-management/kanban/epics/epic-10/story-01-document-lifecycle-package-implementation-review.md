@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.6+3 – T06 RC sign-off upgraded to APPROVE)
-**Version:** v0.10.1.6+3
+**Last updated:** 2026-06-06 (v0.10.1.6+4 – T06 post-RC CI hygiene)
+**Version:** v0.10.1.6+4
 **Code:** E10S01
 
 ---
@@ -48,7 +48,7 @@ housekeeping_policy: keep
 - [x] **E10:S01:T05 – Create gap log and risk assessment** - ✅ COMPLETE (v0.10.1.5+1)
   - Task: [`T05-create-gap-log-and-risk-assessment`](story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
   - Gap log: 16 `GAP-DOCLIFE-*` entries in task doc body
-- [x] **E10:S01:T06 – Define RC sign-off criteria and remediation tasks** - ✅ COMPLETE (v0.10.1.6+3)
+- [x] **E10:S01:T06 – Define RC sign-off criteria and remediation tasks** - ✅ COMPLETE (v0.10.1.6+4)
   - Task: [`T06-define-rc-sign-off-criteria-and-remediation-tasks`](story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
   - Posture: **APPROVE** — HIGH gaps remediated via T08 (v0.10.1.8+1), T09 (v0.10.1.9+1), T10 (v0.10.1.10+1)
 - [x] **E10:S01:T08 – Implement doc housekeeping workflow and scripts** - ✅ COMPLETE (v0.10.1.8+1)

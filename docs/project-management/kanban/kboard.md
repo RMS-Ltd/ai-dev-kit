@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – Kanban Board
 
 **Last Updated:** 2026-06-06 (RW: E10:S01:T06)
-**Version:** v0.10.1.6+3
+**Version:** v0.10.1.6+4
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,9 +28,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E10:S01:T03** – Validate lifecycle behavior against documented guidance - 📋 TODO (HIGH, Epic 10 doc-lifecycle RC review) | [Task](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md) | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [—IPP—](../../implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md) | Last modified: 2026-06-06 14:44 UTC
-
-*(T06 RC sign-off **APPROVE** @ v0.10.1.6+3; T08 COMPLETE @ v0.10.1.8+1; T09 COMPLETE @ v0.10.1.9+1; T10 COMPLETE @ v0.10.1.10+1; see [`kanban-completed.md`](kanban-completed.md).)*
+*(T06 RC sign-off **APPROVE** @ v0.10.1.6+4; T08 COMPLETE @ v0.10.1.8+1; T09 COMPLETE @ v0.10.1.9+1; T10 COMPLETE @ v0.10.1.10+1; see [`kanban-completed.md`](kanban-completed.md).)*
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+6** wave-4 **14** files; print-at-import cleared locally; dashboard **Good+** pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 12:56 UTC
 
