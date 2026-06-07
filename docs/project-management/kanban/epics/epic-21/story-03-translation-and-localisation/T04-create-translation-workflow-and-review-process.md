@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E21:S03:T04  
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-05 (v0.0.0.0+0 – migrated from embedded Story section)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-07 (v0.21.3.4+0 — RW -k kanban-init doc filing)
+**Version:** v0.21.3.4+0
 **Code:** E21S03T04
 
 ---
@@ -58,6 +58,8 @@ Create translation workflow and review process for contributors.
 ---
 
 ## Kanban-init intake
+
+**Released:** `v0.21.3.4+0` — RW -k --art --dpz (2026-06-07)
 
 **Branch:** `epic/21-internationalisation-localisation`
 
