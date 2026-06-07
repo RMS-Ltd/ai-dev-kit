@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E08:S03:T12": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.12+11 — T12 COMPLETE; active row pruned to kanban-completed.md; stamp delta row removal"
+    },
+    "E08:S03:T16": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.12+11 — T16 deferral lifted @ T12 closure; row text + Last modified updated with release evidence"
+    }
+  }
+}

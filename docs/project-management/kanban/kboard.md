@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-07 (RW: E02:S01:T25)
-**Version:** v0.2.1.25+1
+**Last Updated:** 2026-06-07 (RW: E08:S03:T12)
+**Version:** v0.8.3.12+11
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -30,7 +30,7 @@ housekeeping_policy: keep
 
 *(FR-114 **IMPLEMENTED** @ v0.5.8.4+3 — T03/T04/T15; see [`intake-completed.md`](intake-completed.md) · [`kanban-completed.md`](kanban-completed.md).)*
 
-- **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+10** wave-6 code; **87/Fair** local CQG; Good+ pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-07 10:45 UTC
+*(E08:S03:T12 COMPLETE @ **v0.8.3.12+11** — BR-099 RESOLVED; T16 deferral lifted; see [`kanban-completed.md`](kanban-completed.md) · [`intake-completed.md`](intake-completed.md).)*
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
@@ -82,7 +82,7 @@ housekeeping_policy: keep
 
 - **E08:S03:T15** – GitHub Actions CI health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.15+3** — Wave 2: MDX-safe ADK markers; local Docusaurus green; pending Actions verify) - [Task](epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md) | Last modified: 2026-06-05 16:58 UTC
 
-- **E08:S03:T16** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.16+1** — Wave 0 baseline @ `777e956`; code-scanning **0** open; CI merge gate → T15) - [Task](epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-05 16:52 UTC
+- **E08:S03:T16** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.16+1** — deferral **lifted** @ T12 closure; Wave 2+ active) - [Task](epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-07 17:33 UTC
 
 ### Won't Have (W) - Deferred Tasks
 

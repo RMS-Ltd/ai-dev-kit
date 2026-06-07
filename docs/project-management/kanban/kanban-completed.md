@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E02:S01:T25 FR-115+FR-116 async ingest v1)
-**Version:** v0.2.1.25+1
+**Last Updated:** 2026-06-07 (RW: E08:S03:T12 BR-099 maintainability closure)
+**Version:** v0.8.3.12+11
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+11** (BR-099 maintainability closure — dashboard Good)
+
+- **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — **BR-099**: Maintainability backlog burn-down waves 1–6; operator sign-off **Good** @ `main` `ed379ab`; handoff **T16** perpetual.
+  **Completed:** `2026-06-07T17:33:00Z` | **Version:** `v0.8.3.12+11` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
 #### **RW (2026-06-07)** — E02:S01:T25 @ **v0.2.1.25+1** (FR-115+FR-116 async release-metadata ingest v1)
 

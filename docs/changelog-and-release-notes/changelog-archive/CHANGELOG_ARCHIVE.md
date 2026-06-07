@@ -22,6 +22,14 @@ E02:S01:T24 — **BR-097 Step 12:** `push_rw_release.py` scoped tag push; forbid
 
 ---
 ---
+## [0.8.3.12+11] - 07-06-26
+
+E08:S03:T12 — **Resolved:** BR-099 maintainability backlog — dashboard **Good** @ `main` `ed379ab`; handoff **T16**. SemVer **v0.4.1038+11**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+11.md)
+
+---
+
 ## [0.2.1.25+1] - 07-06-26
 
 E02:S01:T25 — **Change implemented:** FR-115 + FR-116 v1 async release-metadata ingest (SQLite read model); umbrella co-release **E03:S02:T13**; RW markdown/YAML SoT unchanged. SemVer **v0.4.1037+1**.
