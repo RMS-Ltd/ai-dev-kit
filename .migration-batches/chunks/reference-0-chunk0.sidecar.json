@@ -1,0 +1,62 @@
+[
+  {
+    "source_path": "knowledge/USE_CASE_METHODOLOGY.md"
+  },
+  {
+    "source_path": "knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md"
+  },
+  {
+    "source_path": "knowledge/analysis/adk-drift-analysis.md"
+  },
+  {
+    "source_path": "knowledge/analysis/adk-hardening-recommendations.md"
+  },
+  {
+    "source_path": "knowledge/analysis/adk-implementation-analysis-execution-plan.md"
+  },
+  {
+    "source_path": "knowledge/analysis/adk-implementation-analysis-report.md"
+  },
+  {
+    "source_path": "knowledge/analysis/adk-implementation-patterns.md"
+  },
+  {
+    "source_path": "knowledge/analysis/adk-learning-synthesis.md"
+  },
+  {
+    "source_path": "knowledge/analysis/adk-mashup-issues.md"
+  },
+  {
+    "source_path": "knowledge/analysis/ai-dev-kit-sitrep.md"
+  },
+  {
+    "source_path": "knowledge/analysis/comprehensive-adk-analysis-framework.md"
+  },
+  {
+    "source_path": "knowledge/analysis/comprehensive-project-analysis-framework.md"
+  },
+  {
+    "source_path": "knowledge/analysis/critical-framework-completion-plan.md"
+  },
+  {
+    "source_path": "knowledge/analysis/cursorrules-structure-analysis.md"
+  },
+  {
+    "source_path": "knowledge/analysis/debug-path-framework-analysis.md"
+  },
+  {
+    "source_path": "knowledge/analysis/knowledge-documentation-structure-analysis.md"
+  },
+  {
+    "source_path": "knowledge/analysis/meta-analysis-canonical-vs-legacy-matrices.md"
+  },
+  {
+    "source_path": "knowledge/analysis/meta-analysis-convergence-divergence-maps.md"
+  },
+  {
+    "source_path": "knowledge/analysis/meta-analysis-cursorrules-use-misuse.md"
+  },
+  {
+    "source_path": "knowledge/analysis/meta-analysis-documentation-knowledge-structure.md"
+  }
+]

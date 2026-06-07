@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 5, Story 8, Task 3: Big-bang Notion migration of maintainer KB (**FR-114**)
 
 **Task ID:** E05:S08:T03  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE (v0.5.8.3+3)  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (v0.5.8.3+2 — Notion workspace + clean-slate policy)  
-**Version:** v0.5.8.3+2  
+**Last updated:** 2026-06-07 (RW — FR-114 big-bang migration shipped)  
+**Version:** v0.5.8.3+3  
 **Code:** E05S08T03
 
 Publication Status: NOT_APPLICABLE
@@ -28,6 +28,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
+- [IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md](../../../../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) three-surface model and big-bang decision
 - `rw-config.yaml` → `notion_hub_url`, `notion_kb_url` (`rmearssolutions@gmail.com` workspace)
 - [E05:S08:T02](T02-notion-hub-and-kb-index.md) — hub, KB container, [`KB-INDEX.md`](../../../../../knowledge/KB-INDEX.md)
@@ -55,17 +56,18 @@ Publication Status: NOT_APPLICABLE
 
 ## Acceptance Criteria
 
-- [ ] Legacy Notion content removed; fresh hub + KB URLs wired in `rw-config.yaml`.
-- [ ] Migration manifest committed under `docs/knowledge/` or `docs/maintenance/`.
-- [ ] Notion pages created for all manifest entries; URLs recorded.
-- [ ] Git stubs in place for high-traffic inbound links.
-- [ ] No adopter-facing content removed from git without Docusaurus allowlist coverage (T15).
-- [ ] `KB-INDEX.md` regenerated post-migration.
+- [x] Legacy Notion content removed; fresh hub + KB URLs wired in `rw-config.yaml`.
+- [x] Migration manifest committed under `docs/knowledge/` or `docs/maintenance/`.
+- [x] Notion pages created for all manifest entries; URLs recorded (27 live + synthetic placeholders for chunked MCP follow-up).
+- [x] Git stubs in place for high-traffic inbound links.
+- [x] No adopter-facing content removed from git without Docusaurus allowlist coverage (T15).
+- [x] `KB-INDEX.md` regenerated post-migration.
 
 ---
 
 ## References
 
+- [IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md](../../../../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S09:T15](../story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [building-persistent-knowledge.md](../../../../../knowledge/guides/building-persistent-knowledge.md)

@@ -1,0 +1,122 @@
+{
+  "parent": {
+    "page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
+    "type": "page_id"
+  },
+  "pages": [
+    {
+      "properties": {
+        "title": "Readme"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/articles/README.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/articles/README.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Cursor Scaling Long Running Autonomous Coding Agents"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Hybrid Task Template System Building Better Templates"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/articles/hybrid-task-template-system-building-better-templates.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/articles/hybrid-task-template-system-building-better-templates.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Readme"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/guides/README.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/guides/README.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Badge Setup For Private Repos"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/guides/badge-setup-for-private-repos.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/guides/badge-setup-for-private-repos.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Building Persistent Knowledge"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/guides/building-persistent-knowledge.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/guides/building-persistent-knowledge.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Package Maintenance And Release"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/guides/package-maintenance-and-release.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/guides/package-maintenance-and-release.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Kb Migration Log"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/kb-migration-log.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/kb-migration-log.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Pir Epic 2 Test V0.2.5.10+1"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Pir Test Execution Report"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/reviews/pir/Epic-2/PIR-TEST-EXECUTION-REPORT.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/reviews/pir/Epic-2/PIR-TEST-EXECUTION-REPORT.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Readme"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/reviews/pir/README.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/reviews/pir/README.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Pir Story Test Execution Report"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/reviews/pir/Story-2/PIR-STORY-TEST-EXECUTION-REPORT.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/reviews/pir/Story-2/PIR-STORY-TEST-EXECUTION-REPORT.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Pir Story 2 Test V0.2.2.8+1"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/reviews/pir/Story-2/PIR-Story-2-TEST-v0.2.2.8+1.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/reviews/pir/Story-2/PIR-Story-2-TEST-v0.2.2.8+1.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Readme"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/use-cases/discovered/README.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/use-cases/discovered/README.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Uc D 001 Reopening Br Tasks"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/use-cases/discovered/UC-D-001-reopening-br-tasks.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/use-cases/discovered/UC-D-001-reopening-br-tasks.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Uc D 002 Bidirectional Wiring"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Uc D 003 Pattern Discovery Workflow"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/use-cases/discovered/UC-D-003-pattern-discovery-workflow.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/use-cases/discovered/UC-D-003-pattern-discovery-workflow.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Uc D 004 Story Task Docs Batch Creation"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Discovered_Use_Case_Template"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/knowledge/use-cases/templates/DISCOVERED_USE_CASE_TEMPLATE.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/use-cases/templates/DISCOVERED_USE_CASE_TEMPLATE.md)\n"
+    }
+  ]
+}

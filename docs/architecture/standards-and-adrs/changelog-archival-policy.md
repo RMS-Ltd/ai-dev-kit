@@ -1,12 +1,12 @@
 ---
 lifecycle: evergreen
-ttl_days: null
-created_at: 2025-12-04T12:01:36Z
-expires_at: null
+created_at: 2026-06-07T10:30:55Z
 housekeeping_policy: keep
+notion_sot: true
 ---
 
-> **MOVED:** Canonical location: [`docs/governance/standards/changelog-archival-policy.md`](../../governance/standards/changelog-archival-policy.md)  
-> **ADR:** [ADR-007](ADR-007-book-governance-document-topology.md)
+# Changelog Archival Policy
 
-This stub replaces the former book SoT at this path. Open the link above for the current policy.
+**SoT:** Notion Engineering KB — [Changelog Archival Policy](https://www.notion.so/7eb3d60807c2e21b0fd8fd62f8c99f02)
+
+> Migrated from `docs/architecture/standards-and-adrs/changelog-archival-policy.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

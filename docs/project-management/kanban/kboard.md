@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-07 (RW **v0.2.16.4+37** — UKW -u Epic 21 kanban-init wave bookkeeping)
-**Version:** v0.2.16.4+37
+**Last Updated:** 2026-06-07 (RW **v0.5.8.3+3** — E05:S08:T03 FR-114 Notion migration)
+**Version:** v0.5.8.3+3
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -29,8 +29,6 @@ housekeeping_policy: keep
 ### Should Have (S) - Important Tasks
 
 *(E10:S01 story **COMPLETE** @ v0.10.1.10+2 — RC **APPROVE**; Epic 10 IN PROGRESS — E10:S02 TODO; see [`kanban-completed.md`](kanban-completed.md).)*
-
-- **E05:S08:T03** – Big-bang Notion migration maintainer KB (FR-114) - 🔄 IN PROGRESS (HIGH, **v0.5.8.3+2** Notion clean-slate policy) | [Task](epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:51 UTC
 
 - **E05:S08:T04** – Agent Notion-first authoring and bootstrap routing (FR-114) - 📋 TODO (HIGH, **v0.5.8.4+1** RW -k intake) | [Task](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:22 UTC
 

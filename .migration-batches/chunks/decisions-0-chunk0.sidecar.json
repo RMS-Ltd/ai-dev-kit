@@ -1,0 +1,74 @@
+[
+  {
+    "source_path": "architecture/README.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ADR-005-ollama-model-ecosystem.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/FR-046-implementation-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/agentic-template-generator-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ai-dev-kit-project-review.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/changelog-archival-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/changelog-management-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/changelog-ordering-investigation-report.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-quality-kanban-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-quality-metrics-framework.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-quality-monitoring-dashboards.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-quality-monitoring-processes.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-review-checklist-templates.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-review-kanban-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-review-standards-and-guidelines.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-review-workflow-processes.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/cursor-ide-performance-considerations.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dev-kit-versioning-cookbook.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dev-kit-versioning-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/doc-init-migration-guide.md"
+  }
+]

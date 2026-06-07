@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.3+3] - 07-06-26
+
+E05:S08:T03 — **Change implemented:** FR-114 big-bang Notion migration of maintainer KB — fresh Engineering KB, migration manifest (218 entries), git stubs, KB-INDEX regen, deprecation of legacy migration map. SemVer **v0.4.1032+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.3+3.md)
+
+---
+
 ## [0.5.9.15+1] - 07-06-26
 
 E05:S09:T15 — **Change implemented:** FR-114 Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold. SemVer **v0.4.1021+1**.

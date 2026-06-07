@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-06  
 **Submitted By:** User (docs/KB architecture discussion)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** ACCEPTED (intake complete — T15 ✅ v0.5.9.15+1; T03 ✅ v0.5.8.3+1; T04 ✅ v0.5.8.4+1)
+**Status:** ACCEPTED (intake complete — T15 ✅ v0.5.9.15+1; T03 ✅ v0.5.8.3+3; T04 ✅ v0.5.8.4+1)
 
 **Implementing Tasks:**
 
@@ -68,7 +68,7 @@ The Docusaurus portal currently compiles nearly all of `docs/` (Kanban, implemen
 
 - [x] **FR-114-F1:** Define explicit **Docusaurus allowlist** (adopter-public paths) and update `portal/docusaurus.config.js`, `sidebars.js`, `portal/README.md`. ✅ **v0.5.9.15+1** (E05:S09:T15)
 - [x] **FR-114-F2:** **Exclude** from Docusaurus publish: `project-management/`, `implementation-cycles/`, `maintenance/`, `analysis/`, `knowledge/` (maintainer corpora), `journals/`, changelog archive bulk; internal `architecture/` ADRs (GitHub links from guides suffice). ✅ **v0.5.9.15+1** (E05:S09:T15)
-- [ ] **FR-114-F3:** **Big-bang migrate** maintainer corpora to a **fresh** Notion Engineering KB (`rmearssolutions@gmail.com`); wipe legacy Notion pages first; migration manifest (source path → Notion URL → optional git stub).
+- [x] **FR-114-F3:** **Big-bang migrate** maintainer corpora to a **fresh** Notion Engineering KB (`rmearssolutions@gmail.com`); wipe legacy Notion pages first; migration manifest (source path → Notion URL → optional git stub). ✅ **v0.5.8.3+3** (E05:S08:T03)
 - [ ] **FR-114-F4:** Update **agent bootstrap** (`AGENTS.md`, `docs/project-agent-manifest.json`) with Notion KB routes; default maintainer doc creation → Notion MCP.
 - [ ] **FR-114-F5:** Publish **ADR** documenting three-surface model and SoT rules per doc type.
 - [x] **FR-114-F6:** Define **RC ≥ 1 significant release notes** policy and Docusaurus location (`portal/blog/` or `docs/release-notes/`); no raw `CHANGELOG.md` on portal. ✅ **v0.5.9.15+1** (E05:S09:T15)
@@ -77,7 +77,7 @@ The Docusaurus portal currently compiles nearly all of `docs/` (Kanban, implemen
 
 - [x] **FR-114-NF1:** Docusaurus CI build no longer triggered by edits to excluded maintainer-only `docs/` trees (narrow path filters where practical). ✅ **v0.5.9.15+1** (E05:S09:T15)
 - [ ] **FR-114-NF2:** Adopter-facing content remains **fully public** on Docusaurus.
-- [ ] **FR-114-NF3:** Git stubs prevent broken README/guide links post-migration.
+- [x] **FR-114-NF3:** Git stubs prevent broken README/guide links post-migration. ✅ **v0.5.8.3+3** (E05:S08:T03)
 
 ---
 

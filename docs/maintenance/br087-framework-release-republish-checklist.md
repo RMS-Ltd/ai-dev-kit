@@ -1,38 +1,12 @@
 ---
 lifecycle: evergreen
-created_at: 2026-06-05T14:00:00Z
+created_at: 2026-06-07T10:29:42Z
 housekeeping_policy: keep
+notion_sot: true
 ---
 
-# BR-087 — Framework release republish checklist (E06:S09:T18)
+# Br087 Framework Release Republish Checklist
 
-After maintainer rename to slug directories, republish GitHub release assets so download installs receive `\{slug\}/` archive roots.
+**SoT:** Notion Engineering KB — [Br087 Framework Release Republish Checklist](https://www.notion.so/378b6f8962c1814f8aebd996bd22e81c)
 
-## Build (local)
-
-```bash
-cd packages/frameworks
-python3 build_packages.py
-```
-
-Output: `packages/dist/packages/*.tar.gz`
-
-## Verify archive root (required)
-
-```bash
-tar -tzf packages/dist/packages/workflow-mgt-*.tar.gz | head -5
-# Expect: workflow-mgt/README.md (not workflow mgt/...)
-```
-
-Repeat for `numbering-versioning-*.tar.gz` if published.
-
-## Upload (maintainer)
-
-1. Open GitHub Releases for `RMS-Ltd/ai-dev-kit`.
-2. Attach rebuilt `.tar.gz` + `.sha256` for affected frameworks.
-3. Note in release body: BR-087 slug archive roots (E06:S09:T18).
-
-## Adopter verification
-
-- Submodule checkout of `main` → `ls packages/frameworks/` shows slug names only.
-- Expenses Tracker replay documented in [BR-087](../project-management/kanban/fr-br/BR-087-framework-install-directory-slug-mismatch.md).
+> Migrated from `docs/maintenance/br087-framework-release-republish-checklist.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

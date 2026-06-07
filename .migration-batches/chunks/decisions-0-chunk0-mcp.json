@@ -1,0 +1,152 @@
+{
+  "parent": {
+    "page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
+    "type": "page_id"
+  },
+  "pages": [
+    {
+      "properties": {
+        "title": "Readme"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/README.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/README.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Adr 005 Ollama Model Ecosystem"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/ADR-005-ollama-model-ecosystem.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-005-ollama-model-ecosystem.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Adr Openclaw Process Sentinel Skill"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Fr 046 Implementation Guide"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/FR-046-implementation-guide.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/FR-046-implementation-guide.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Agent Network Access And Git Push Limitations"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Agentic Template Generator Design"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/agentic-template-generator-design.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/agentic-template-generator-design.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Ai Dev Kit Project Review"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/ai-dev-kit-project-review.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ai-dev-kit-project-review.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Changelog Archival Policy"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/changelog-archival-policy.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/changelog-archival-policy.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Changelog Management Policy"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/changelog-management-policy.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/changelog-management-policy.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Changelog Ordering Investigation Report"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/changelog-ordering-investigation-report.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/changelog-ordering-investigation-report.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Code Quality Kanban Integration"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/code-quality-kanban-integration.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/code-quality-kanban-integration.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Code Quality Metrics Framework"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/code-quality-metrics-framework.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/code-quality-metrics-framework.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Code Quality Monitoring Dashboards"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/code-quality-monitoring-dashboards.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/code-quality-monitoring-dashboards.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Code Quality Monitoring Processes"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/code-quality-monitoring-processes.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/code-quality-monitoring-processes.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Code Review Checklist Templates"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/code-review-checklist-templates.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/code-review-checklist-templates.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Code Review Kanban Integration"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/code-review-kanban-integration.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/code-review-kanban-integration.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Code Review Standards And Guidelines"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/code-review-standards-and-guidelines.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/code-review-standards-and-guidelines.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Code Review Workflow Processes"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/code-review-workflow-processes.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/code-review-workflow-processes.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Cursor Ide Performance Considerations"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/cursor-ide-performance-considerations.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/cursor-ide-performance-considerations.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Dev Kit Ipw Ipp Vs Icw Artifacts"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Dev Kit Kanban Versioning Rw Integration"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Dev Kit Versioning Cookbook"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Dev Kit Versioning Policy"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md)\n"
+    },
+    {
+      "properties": {
+        "title": "Doc Init Migration Guide"
+      },
+      "content": "**Migrated from git** (FR-114 E05:S08:T03)\n\n- Repo path: `docs/architecture/standards-and-adrs/doc-init-migration-guide.md`\n- [View on GitHub](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/doc-init-migration-guide.md)\n"
+    }
+  ]
+}

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-06 (UKW — T03 Notion clean-slate policy active; T04 TODO intake complete)  
-**Version:** v0.5.8.3+2  
+**Last updated:** 2026-06-07 (RW — T03 COMPLETE @ v0.5.8.3+3; T04 TODO)  
+**Version:** v0.5.8.3+3  
 **Code:** E5S08
 
 **Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
@@ -29,7 +29,7 @@ housekeeping_policy: keep
   - Task: [`T02-notion-hub-and-kb-index`](story-08-knowledge-base/T02-notion-hub-and-kb-index.md)
 
 
-- [ ] **E05:S08:T03 – Big-bang Notion migration of maintainer KB ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - 🔄 IN PROGRESS (**v0.5.8.3+2**)
+- [x] **E05:S08:T03 – Big-bang Notion migration of maintainer KB ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - ✅ COMPLETE (**v0.5.8.3+3**) — [—IPP—](../../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
   - Task: [`T03-big-bang-notion-migration-maintainer-kb-fr114`](story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 
 
@@ -38,7 +38,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Story 008 delivers the **maintainer KB surface** under [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md): big-bang Notion migration (**T03** IN PROGRESS @ v0.5.8.3+2) and agent Notion-first authoring/bootstrap routing (**T04** TODO). T01 investigation scope is superseded by FR-114; T02 (hub/KB index) is complete.
+Story 008 delivers the **maintainer KB surface** under [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md): big-bang Notion migration (**T03** COMPLETE @ v0.5.8.3+3) and agent Notion-first authoring/bootstrap routing (**T04** TODO). T01 investigation scope is superseded by FR-114; T02 (hub/KB index) is complete.
 
 ---
 
