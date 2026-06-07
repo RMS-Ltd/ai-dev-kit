@@ -6,11 +6,11 @@ E01:S06:T02 — **Change implemented:** MIT `LICENSE` file; README and CONTRIBUT
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.6.2+1.md)
 
 ---
-## [0.8.3.12+13] - 07-06-26
+## [0.8.3.15+4] - 07-06-26
 
-E08:S03:T12 — **Re-closed:** BR-099 terminal closure @ +13. SemVer **v0.4.1042+13**.
+E08:S03:T15 — **Change implemented:** Wave 3 CI hygiene — Tests archive legacy-path guard + greenfield-install drift (CQG cron + release-metadata parity). SemVer **v0.4.1043+4**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+13.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.15+4.md)
 
 ---
 ## [0.8.3.12+12] - 07-06-26
@@ -494,7 +494,7 @@ E05:S09:T12 — **Kanban init:** **UXR-018** atomic intake — changelog directo
 ---
 ## [0.5.9.12+2] - 04-06-26
 
-E05:S09:T12 — **UXR-018:** Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`; portal sidebar + index link repair; pytest guard. SemVer **v0.4.869+2**.
+E05:S09:T12 — **UXR-018:** Changelog directory consolidation — retired legacy changelog root directory and knowledge mirror; single pillar `docs/changelog-and-release-notes/`; portal sidebar + index link repair; pytest guard. SemVer **v0.4.869+2**.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.76+2.md) (archive filename retains orphan label **v0.5.1.76+2**)
 

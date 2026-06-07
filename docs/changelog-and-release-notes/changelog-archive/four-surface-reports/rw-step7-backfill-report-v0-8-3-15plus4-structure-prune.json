@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T15": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.15+4 — perpetual CI hygiene Wave 3; kboard metadata + Last modified updated with release evidence"
+    }
+  }
+}

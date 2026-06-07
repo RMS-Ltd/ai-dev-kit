@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T15+3 — Wave 2 MDX-safe ADK markers; Docusaurus fix; pending Actions verify)  
-**Version Anchor:** v0.8.3.15+3  
+**Last updated:** 2026-06-07 (**v0.8.3.15+4** — Wave 3: post-merge CI hygiene; Tests + Greenfield drift fixed; pending Actions verify)  
+**Version Anchor:** v0.8.3.15+4  
 **Code:** E08S03T15  
 **Task Type:** Perpetual Maintenance
 
@@ -109,6 +109,16 @@ Use **`RW E08:S03:T15`** for recurring CI hygiene passes (BUILD increments on pe
 | Docusaurus site build | `npm run build` exit 0 | MDX-safe markers + heading-id comments + registry backtick |
 | Tests | `test_install_error_docs_sync` pass | JSX markers + generator sync |
 | Greenfield install | `sync_greenfield_install.py --check` pass | Mirror sync |
+
+### Wave 3 (v0.8.3.15+4)
+
+| Workflow | Root cause | Fix |
+| -------- | ---------- | --- |
+| Tests | `test_active_index_files_have_no_docs_changelog_paths` — UXR-018 archive narrative contained forbidden `docs/changelog/` substring | Reword `CHANGELOG_ARCHIVE.md` line |
+| Greenfield install | Untracked greenfield CQG cron scripts + stale release-metadata mirror | `sync_greenfield_install.py` + git-track copies |
+| Greenfield release packages | Same drift check on tag push | Same mirror sync |
+
+**Post-push verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) on `dev`/`main`.
 
 ---
 
