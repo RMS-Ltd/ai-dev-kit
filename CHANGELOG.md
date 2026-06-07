@@ -10,11 +10,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.3.7+0] - 07-06-26
+## [0.21.4.1+0] - 07-06-26
 
-E21:S03:T07 — **Change implemented:** Kanban-init doc filing — Test translations and locale support. SemVer **v0.4.1051+0**.
+E21:S04:T01 — **Change implemented:** Kanban-init doc filing — Research cultural requirements for target locales. SemVer **v0.4.1052+0**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.7+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.1+0.md)
 
 ---
 
