@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.4+3] - 07-06-26
+
+E05:S08:T04 — **Change implemented:** FR-114 IMPLEMENTED closure — acceptance criteria reconciled, intake-completed ledger, epic story checklists synced; portal build verified green. SemVer **v0.4.1035+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.4+3.md)
+
+---
+
 ## [0.5.8.4+2] - 07-06-26
 
 E05:S08:T04 — **Change implemented:** FR-114 F4/F5 — ADR-024 three-surface model, `maintainer-kb` bootstrap track, P-NOTION-FIRST protocol, manifest documentationSurfaces, stub template canon, pytest contract. SemVer **v0.4.1034+2**.

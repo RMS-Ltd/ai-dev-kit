@@ -13,7 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-06  
 **Submitted By:** User (docs/KB architecture discussion)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** ACCEPTED (intake complete — T15 ✅ v0.5.9.15+1; T03 ✅ v0.5.8.3+3; T04 ✅ v0.5.8.4+1)
+**Status:** IMPLEMENTED  
+**Version:** v0.5.8.4+2 (closure reconciliation; implementing tasks T03 @ v0.5.8.3+3 · T15 @ v0.5.9.15+2 · T04 @ v0.5.8.4+2)
 
 **Implementing Tasks:**
 
@@ -76,7 +77,7 @@ The Docusaurus portal currently compiles nearly all of `docs/` (Kanban, implemen
 ### Non-Functional Requirements
 
 - [x] **FR-114-NF1:** Docusaurus CI build no longer triggered by edits to excluded maintainer-only `docs/` trees (narrow path filters where practical). ✅ **v0.5.9.15+1** (E05:S09:T15)
-- [ ] **FR-114-NF2:** Adopter-facing content remains **fully public** on Docusaurus.
+- [x] **FR-114-NF2:** Adopter-facing content remains **fully public** on Docusaurus. ✅ **v0.5.9.15+1** (E05:S09:T15 allowlist; `npm run build` green @ 2026-06-07)
 - [x] **FR-114-NF3:** Git stubs prevent broken README/guide links post-migration. ✅ **v0.5.8.3+3** (E05:S08:T03)
 
 ---
@@ -106,11 +107,11 @@ The Docusaurus portal currently compiles nearly all of `docs/` (Kanban, implemen
 
 ## Acceptance Criteria
 
-- [ ] Green `npm run build` on **allowlisted** corpus only.
-- [ ] Maintainer corpora present in Notion with manifest; git stubs where links required.
+- [x] Green `npm run build` on **allowlisted** corpus only. ✅ **v0.5.9.15+1** (verified 2026-06-07)
+- [x] Maintainer corpora present in Notion with manifest; git stubs where links required. ✅ **v0.5.8.3+3** (218 manifest entries)
 - [x] `AGENTS.md` routes maintainer doc work to `notion_kb_url`. ✅ **v0.5.8.4+2**
-- [x] ADR published; `ultimate-canonical-kb-structure.md` updated (logical pillars ≠ single publish tree). ✅ **v0.5.8.4+2**
-- [ ] E05:S08:T01 marked superseded; FR-114 tasks on story checklists and `kboard.md`.
+- [x] ADR published; `ultimate-canonical-kb-structure.md` updated (logical pillars ≠ single publish tree). ✅ **v0.5.8.4+2** ([ADR-024](../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md))
+- [x] E05:S08:T01 marked superseded; FR-114 tasks on story checklists and `kboard.md`. ✅ **v0.5.8.4+2**
 
 ---
 

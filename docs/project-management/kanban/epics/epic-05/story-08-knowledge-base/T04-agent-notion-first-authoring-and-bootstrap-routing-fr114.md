@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** ✅ COMPLETE (v0.5.8.4+2)  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-07 (RW — FR-114 F4/F5 Notion-first bootstrap shipped)  
-**Version:** v0.5.8.4+2  
+**Last updated:** 2026-06-07 (RW — FR-114 IMPLEMENTED closure @ v0.5.8.4+3)  
+**Version:** v0.5.8.4+3  
 **Code:** E05S08T04
 
 Publication Status: NOT_APPLICABLE

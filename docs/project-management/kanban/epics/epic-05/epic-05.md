@@ -72,13 +72,13 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E5:S08 – Knowledge Base** - IN PROGRESS (T02 ✅; **T03** IN PROGRESS **v0.5.8.3+2** Notion policy)
+- [x] **E5:S08 – Knowledge Base** - ✅ COMPLETE (**v0.5.8.4+2** — FR-114 T03/T04)
   - Story: [`story-08-knowledge-base.md`](story-08-knowledge-base.md)
   - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08)
 
 
 
-- [ ] **E5:S09 – Docusaurus Documentation Portal** - IN PROGRESS (T01–T15 ✅; **T15/FR-114** **v0.5.9.15+1**)
+- [x] **E5:S09 – Docusaurus Documentation Portal** - ✅ COMPLETE (**v0.5.9.15+2** — FR-114 T15)
   - Story: [`story-09-docusaurus-documentation-portal.md`](story-09-docusaurus-documentation-portal.md)
   - **Note:** Atomic FR chain for full Docusaurus adoption (`portal/` → `docs/` publish, CI, deploy, search).
 
