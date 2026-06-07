@@ -10,11 +10,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.4.3+0] - 07-06-26
+## [0.21.4.4+0] - 07-06-26
 
-E21:S04:T03 — **Change implemented:** Kanban-init doc filing — Implement RTL support (Right-to-Left) for Arabic/Hebrew. SemVer **v0.4.1054+0**.
+E21:S04:T04 — **Change implemented:** Kanban-init doc filing — Adapt content and examples for cultural context. SemVer **v0.4.1055+0**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.3+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.4+0.md)
 
 ---
 
