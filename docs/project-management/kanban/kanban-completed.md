@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E05:S08:T03 FR-114 Notion migration)
-**Version:** v0.5.8.3+3
+**Last Updated:** 2026-06-07 (RW: E05:S08:T04 FR-114 Notion-first bootstrap)
+**Version:** v0.5.8.4+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E05:S08:T04 @ **v0.5.8.4+2** (FR-114 F4/F5 Notion-first bootstrap)
+
+- **[E05:S08:T04](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)** — **FR-114 F4/F5**: ADR-024 three-surface model, `maintainer-kb` bootstrap track, P-NOTION-FIRST protocol, manifest documentationSurfaces, stub template canon.
+  **Completed:** `2026-06-07T10:46:29Z` | **Version:** `v0.5.8.4+2` | **Agent:** `RW E05:S08:T04 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [ADR-024](../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) | [—IPP—](../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 
 #### **RW (2026-06-07)** — E05:S08:T03 @ **v0.5.8.3+3** (FR-114 big-bang Notion maintainer KB migration)
 

@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 008 – Knowledge Base
 
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-07 (RW — T03 COMPLETE @ v0.5.8.3+3; T04 TODO)  
-**Version:** v0.5.8.3+3  
+**Last updated:** 2026-06-07 (RW — T04 COMPLETE @ v0.5.8.4+2; FR-114 F4/F5 closed)  
+**Version:** v0.5.8.4+2  
 **Code:** E5S08
 
 **Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
@@ -33,12 +33,12 @@ housekeeping_policy: keep
   - Task: [`T03-big-bang-notion-migration-maintainer-kb-fr114`](story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 
 
-- [ ] **E05:S08:T04 – Agent Notion-first authoring and bootstrap routing ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - 📋 TODO
+- [x] **E05:S08:T04 – Agent Notion-first authoring and bootstrap routing ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - ✅ COMPLETE (**v0.5.8.4+2**) — [—IPP—](../../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
   - Task: [`T04-agent-notion-first-authoring-and-bootstrap-routing-fr114`](story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 
 ## Overview
 
-Story 008 delivers the **maintainer KB surface** under [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md): big-bang Notion migration (**T03** COMPLETE @ v0.5.8.3+3) and agent Notion-first authoring/bootstrap routing (**T04** TODO). T01 investigation scope is superseded by FR-114; T02 (hub/KB index) is complete.
+Story 008 delivers the **maintainer KB surface** under [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md): big-bang Notion migration (**T03** COMPLETE @ v0.5.8.3+3) and agent Notion-first authoring/bootstrap routing (**T04** COMPLETE @ v0.5.8.4+2). Story **COMPLETE** — FR-114 F4/F5 closed.
 
 ---
 

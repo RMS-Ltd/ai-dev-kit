@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 5, Story 8, Task 4: Agent Notion-first authoring and bootstrap routing (**FR-114**)
 
 **Task ID:** E05:S08:T04  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.5.8.4+2)  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (v0.5.8.4+1 — RW -k intake)  
-**Version:** v0.5.8.4+1  
+**Last updated:** 2026-06-07 (RW — FR-114 F4/F5 Notion-first bootstrap shipped)  
+**Version:** v0.5.8.4+2  
 **Code:** E05S08T04
 
 Publication Status: NOT_APPLICABLE
@@ -28,6 +28,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
+- [IPP-E05S08T04 — Agent Notion-first authoring and bootstrap routing (FR-114)](../../../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) agent authoring decision (Notion-first via MCP)
 - [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) · [`docs/project-agent-manifest.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-agent-manifest.json)
 - [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
@@ -53,16 +54,18 @@ Wire agent bootstrap and maintainer documentation policy so **new maintainer/dev
 
 ## Acceptance Criteria
 
-- [ ] ADR published under `docs/architecture/standards-and-adrs/`.
-- [ ] `AGENTS.md` states Notion-first for maintainer documentation.
-- [ ] Manifest synced with `AGENTS.md` routing table.
-- [ ] Stub template documented in ADR or `docs/knowledge/README.md`.
-- [ ] RC ≥ 1 significant release notes policy cross-linked (implementation scaffold in T15).
+- [x] ADR published under `docs/architecture/standards-and-adrs/`. ✅ v0.5.8.4+2
+- [x] `AGENTS.md` states Notion-first for maintainer documentation. ✅ v0.5.8.4+2
+- [x] Manifest synced with `AGENTS.md` routing table. ✅ v0.5.8.4+2
+- [x] Stub template documented in ADR or `docs/knowledge/README.md`. ✅ v0.5.8.4+2
+- [x] RC ≥ 1 significant release notes policy cross-linked (implementation scaffold in T15). ✅ v0.5.8.4+2
 
 ---
 
 ## References
 
+- [IPP-E05S08T04](../../../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
+- [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S08:T03](T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 - [E05:S09:T15](../story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
