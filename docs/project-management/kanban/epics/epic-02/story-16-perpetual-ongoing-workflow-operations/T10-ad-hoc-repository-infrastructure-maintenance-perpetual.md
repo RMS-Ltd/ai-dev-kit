@@ -13,14 +13,14 @@ housekeeping_policy: keep
 **Priority:** MEDIUM
 **Estimated Effort:** Small
 **Created:** 2026-05-19
-**Last updated:** 2026-06-07 19:01:58 UTC (v0.2.16.10+7: spike RW SemVer matrix v3 nasty scenarios HS08–HS10)
-**Version:** v0.2.16.10+7
+**Last updated:** 2026-06-07 19:26:25 UTC (v0.2.16.10+8: E02:S17 integration sign-off — test report + wave artifacts)
+**Version:** v0.2.16.10+8
 **Code:** E02S16T10
 **Task Type:** Perpetual Maintenance
 
-**Forensic Marker:** v0.2.16.10+7
+**Forensic Marker:** v0.2.16.10+8
 
-**Version Anchor:** v0.2.16.10+7 (perpetual — spike RW SemVer v3 nasty scenarios)
+**Version Anchor:** v0.2.16.10+8 (perpetual — E02:S17 integration sign-off)
 
 ---
 

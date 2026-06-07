@@ -1,0 +1,40 @@
+{
+  "internal_version": "0.2.16.10+8",
+  "requested": "E02:S16:T10",
+  "invocation_context": "rw_step_7",
+  "touched_surfaces": [
+    {
+      "surface": "task_doc",
+      "path": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md",
+      "why": "version anchor +8; sign-off release"
+    },
+    {
+      "surface": "story_doc",
+      "path": "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md",
+      "why": "story version marker +8"
+    },
+    {
+      "surface": "story_doc",
+      "path": "docs/project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md",
+      "why": "integration sign-off link"
+    },
+    {
+      "surface": "epic_doc",
+      "path": "docs/project-management/kanban/epics/epic-02/epic-02.md",
+      "why": "S16 version marker +8"
+    },
+    {
+      "surface": "kboard",
+      "path": "docs/project-management/kanban/kboard.md",
+      "why": "E02:S16:T10 row stamp + release note",
+      "row_stamps": [
+        {
+          "token": "E02:S16:T10",
+          "field": "Last modified",
+          "new_value": "2026-06-07 19:26 UTC",
+          "evidence": "RW release-scope reconciliation for v0.2.16.10+8"
+        }
+      ]
+    }
+  ]
+}

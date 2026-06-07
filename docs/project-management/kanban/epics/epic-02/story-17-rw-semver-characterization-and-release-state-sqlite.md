@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.6+1** — T06 COMPLETE; story ready for closure review)  
+**Last updated:** 2026-06-07 (integration sign-off @ v0.2.16.10+8 — [report](story-17-rw-semver-characterization-and-release-state-sqlite/integration-test-report-2026-06-07.md); spike → dev PR)  
 **Version:** v0.2.17.6+1  
 **Code:** E2S17
 
