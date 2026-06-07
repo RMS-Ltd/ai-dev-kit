@@ -27,6 +27,16 @@ E21:S01:T01 — **Change implemented:** Epic 21 S00→S01 renumber hygiene — c
 
 ---
 
+
+## [0.21.1.3+0] - 07-06-26
+
+E21:S01:T03 — **Change implemented:** Kanban-init doc filing — Add language selection prompt to RW Installer (`install_release_workflow.py`). SemVer **v0.4.1033+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.3+0.md)
+
+---
+
+
 ## [0.21.0.1+1] - 06-06-26
 
 E21:S00:T01 — **Change implemented:** FR-006 Epic 21 kanban rehouse — UK English naming, S00–S06 story trees, template sync. SemVer **v0.4.1027+1**.
