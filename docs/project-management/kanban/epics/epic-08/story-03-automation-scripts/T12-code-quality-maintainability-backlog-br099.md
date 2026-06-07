@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-07 (**v0.8.3.12+11** — operator sign-off; dashboard **Good** @ `main` `ed379ab`)
-**Version Anchor:** v0.8.3.12+11
+**Last updated:** 2026-06-07 (RW — T12 follow-on @ **v0.8.3.12+12** local CQG monitor verify; closure @ +11)
+**Version Anchor:** v0.8.3.12+12
 **Code:** E08S03T12
 
 **Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. **COMPLETE** @ **v0.8.3.12+11** — operator verified **Good** Maintainability on dashboard @ `main` `ed379ab`; handoff to **T16** perpetual.
@@ -43,7 +43,7 @@ Publication Status: NOT_APPLICABLE
 4. Wave 4: T13-deferred `py/print-during-import` remediation per [IPP §4.3](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#43-wave-4-ledger-done--do-not-re-execute) (**done** @ v0.8.3.12+6).
 5. Wave 5: CodeQL-aligned maintainability burn-down — **shipped** @ **v0.8.3.12+7**.
 6. Closure: post–wave-5 merge capture @ step 28 — **103/Fair** @ `d5c4bca5` (**done** @ IPW).
-7. Wave 6: CodeQL-aligned burn-down per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15) — **code shipped** @ **v0.8.3.12+10**; **87/Fair** local CQG; Good+ pending post-merge re-scan.
+7. Wave 6: CodeQL-aligned burn-down per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15) — **code shipped** @ **v0.8.3.12+10**; local CQG monitor verified @ **v0.8.3.12+12** (**87/Fair** @ `42515103`).
 
 ---
 

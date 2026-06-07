@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-07 (RW — T12 COMPLETE @ v0.8.3.12+11; T16 deferral lifted)
-**Version:** v0.8.3.12+11
+**Last updated:** 2026-06-07 (RW — T12 follow-on @ v0.8.3.12+12; local CQG verify)
+**Version:** v0.8.3.12+12
 **Code:** E8S03
 
 ---
