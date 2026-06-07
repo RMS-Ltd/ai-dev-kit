@@ -52,11 +52,18 @@ def test_br093_t2_fail_fast_gate(workflow_doc: dict[str, Any]):
 
 
 def test_br093_t3_pr_gate_preserved(workflow_doc: dict[str, Any]):
-    """T3 — PR path filters unchanged; deploy if excludes pull_request-only runs."""
+    """T3 — PR path filters (FR-114 allowlist); deploy if excludes pull_request-only runs."""
     on = workflow_doc["on"]
     pr_paths = on["pull_request"]["paths"]
     assert "portal/**" in pr_paths
-    assert "docs/**" in pr_paths
+    # FR-114 narrowed CI from docs/** to adopter-public allowlist (E05:S09:T15).
+    for allowlisted in (
+        "docs/guides/**",
+        "docs/documentation/**",
+        "docs/developer-tools/ide-whitelist-guide.md",
+        ".github/workflows/docusaurus-build.yml",
+    ):
+        assert allowlisted in pr_paths
     deploy_if = str(workflow_doc["jobs"]["deploy"].get("if", ""))
     assert "pull_request" not in deploy_if or "github.event_name" in deploy_if
 
