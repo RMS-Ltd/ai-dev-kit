@@ -82,5 +82,5 @@
 | ---- | --------- | ----- |
 | ~~3~~ | ~~B07, B08, V02, P01, G06, S07~~ | ✅ Done (partial AGT for V02/P01) |
 | ~~4~~ | ~~IPW-P01–P04, V03, V04~~ | ✅ Done |
-| T02 close | All waves 1–4 | Mark T02 COMPLETE after RW bank |
-| T03+ | IPW → SQLite | Design + implementation + parity replay |
+| T02 close | All waves 1–4 | ✅ COMPLETE @ v0.2.17.2+5 |
+| T03+ | IPW → SQLite | ✅ IPP + design docs; T04 implementation next |

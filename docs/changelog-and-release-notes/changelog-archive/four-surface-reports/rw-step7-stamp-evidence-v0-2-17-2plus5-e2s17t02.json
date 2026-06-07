@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E02:S17:T02": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.17.2+5 — T02 COMPLETE; row removed from active MoSCOW"
+    },
+    "E02:S17:T03": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.17.2+5 — T03 added to Must Have with IPP link"
+    }
+  }
+}

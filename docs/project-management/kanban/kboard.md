@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-07 (RW **v0.2.17.2+4** — T02 Wave 4)
-**Version:** v0.2.17.2+4
+**Last Updated:** 2026-06-07 (RW **v0.2.17.2+5** — T02 COMPLETE; T03 on board)
+**Version:** v0.2.17.2+5
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ### Must Have (M) - Critical Tasks
 
-- **E02:S17:T02** – Baseline characterization runs (legacy MD/YAML) - 🔄 IN PROGRESS (HIGH, **v0.2.17.2+4** Waves 1–4 ✅; T02 close-out next) | [Task](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T02-baseline-characterization-runs-legacy-md-yaml.md) | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | —No IPP— | Last modified: 2026-06-07 17:41 UTC
+- **E02:S17:T03** – SQLite release-state schema and migration design - 🔄 IN PROGRESS (HIGH, **v0.2.17.2+5** IPP + design docs) | [Task](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T03-sqlite-release-state-schema-and-migration-design.md) | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [—IPP—](../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md) | Last modified: 2026-06-07 17:44 UTC
 
 ### Should Have (S) - Important Tasks
 

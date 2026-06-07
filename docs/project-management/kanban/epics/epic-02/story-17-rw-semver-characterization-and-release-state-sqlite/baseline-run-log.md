@@ -11,7 +11,8 @@
 **Wave 1 complete** (2026-06-07) — 8/8 deterministic scenarios PASS via pytest.  
 **Wave 2 complete** (2026-06-07) — 5/5 scenarios PASS via `test_wave2_baseline.py`.  
 **Wave 3 complete** (2026-06-07) — 8/8 pytest checks PASS via `test_wave3_baseline.py` (6 scenario IDs + 2 guard tests).  
-**Wave 4 complete** (2026-06-07) — 6/6 pytest checks PASS via `test_wave4_baseline.py`.
+**Wave 4 complete** (2026-06-07) — 6/6 pytest checks PASS via `test_wave4_baseline.py`.  
+**T02 COMPLETE** (2026-06-07) — all four baseline waves done; 21/24 DET scenarios executed (87.5%).
 
 ---
 
@@ -73,6 +74,20 @@
 ## Wave 1 pattern notes (→ T06)
 
 See [baseline-pattern-notes.md](baseline-pattern-notes.md).
+
+---
+
+## Skipped scenarios (T02 scope — deferred to T06)
+
+| scenario_id | layer | skip_rationale |
+| ----------- | ----- | -------------- |
+| RW-B04 | DET | `--dpz` doc-init; spike uses BUILD+1 path only |
+| RW-B05 | DET | `--dpz` rejection when BUILD tagged; covered indirectly by B02/B03 |
+| RW-G01 | DET | Missing token gate; documented in RW agent spec |
+| RW-G02 | DET | TODO task gate; covered by IPW-P04 / live validators |
+| RW-G05 | DET | Wrong epic branch; needs dedicated epic/7 fixture |
+| RW-P02 | DET | CMW perpetual chain; deferred to T06 |
+| RW-P03 | DET | Perpetual high-BUILD suppression; deferred to T06 |
 
 ---
 

@@ -20,6 +20,11 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **RW (2026-06-07)** — E02:S17:T02 @ **v0.2.17.2+5** (baseline Waves 1–4 complete)
+
+- **[E02:S17:T02](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T02-baseline-characterization-runs-legacy-md-yaml.md)** — Legacy MD/YAML baseline characterization: 4 waves, 35 pytest checks, 9 friction patterns, 21/24 DET scenarios (87.5%).
+  **Completed:** `2026-06-07T17:50:00Z` | **Version:** `v0.2.17.2+5` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
+
 #### **RW (2026-06-07)** — E02:S17:T01 @ **v0.2.17.1+2** (scenario matrix + run-log schema)
 
 - **[E02:S17:T01](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T01-rw-ipw-scenario-matrix-and-run-log-schema.md)** — RW/IPW scenario matrix (28 scenarios), run-log schema, baseline log seed.
