@@ -10,11 +10,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.2.5+0] - 07-06-26
+## [0.21.2.6+0] - 07-06-26
 
-E21:S02:T05 — **Change implemented:** Kanban-init doc filing — Configure date/time/number formatting per locale. SemVer **v0.4.1042+0**.
+E21:S02:T06 — **Change implemented:** Kanban-init doc filing — Implement translation key system. SemVer **v0.4.1043+0**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.2.5+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.2.6+0.md)
 
 ---
 
