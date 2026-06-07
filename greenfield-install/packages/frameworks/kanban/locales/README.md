@@ -72,7 +72,7 @@ RW installer scaffolds live in `packages/frameworks/workflow-mgt/locales/`.
 | ---- | ------------------- |
 | E21:S02:T01 | Decision only — **IPW complete** |
 | E21:S02:T02 | Manifest v2 + `keys/` scaffold (en-GB/en-US) — **IPW complete** |
-| E21:S02:T06 | `resolve_locale_key()` for `locales/{lang}/keys/*.yaml` |
+| E21:S02:T06 | `resolve_locale_key()` — **COMPLETE** @ v0.21.2.6+1 |
 | E21:S02:T07 | Extended fallback chain |
 
 Planning: [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md) · [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md)

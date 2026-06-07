@@ -88,7 +88,7 @@ Detection may return FR-006 registry codes beyond `en-GB` / `en-US`. Asset resol
 | ---- | ----- |
 | **E21:S02:T03** | Detection APIs + `resolve_language` precedence (this doc) |
 | **E21:S02:T04** | CLI `--locale`, config rewrite, installer `--force` re-prompt — [locale-switching-conventions.md](locale-switching-conventions.md) |
-| **E21:S02:T06** | `resolve_locale_key()` for YAML key catalogs |
+| **E21:S02:T06** | `resolve_locale_key()` for YAML key catalogs — [locale-key-conventions.md](locale-key-conventions.md) |
 | **E21:S02:T07** | Asset fallback chain extensions |
 
 ---

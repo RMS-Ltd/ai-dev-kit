@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S02:T05 locale formatting)
-**Version:** v0.21.2.5+1
+**Last Updated:** 2026-06-07 (RW: E21:S02:T06 translation key system)
+**Version:** v0.21.2.6+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S02:T06 @ **v0.21.2.6+1** (translation key system)
+
+- **[E21:S02:T06](epics/epic-21/story-02-internationalisation-infrastructure/T06-implement-translation-key-system.md)** — `resolve_locale_key`, YAML catalog cache, `prompt_language_choice` key integration; locale-key-conventions policy.
 
 #### **RW (2026-06-07)** — E21:S02:T05 @ **v0.21.2.5+1** (locale date/time/number formatting)
 

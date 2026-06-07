@@ -6,6 +6,7 @@ Read/resolve: E21:S01:T05 (manifest asset paths).
 Consumption: E21:S01:T06 (RW scaffolds + kanban intake templates).
 Detection: E21:S02:T03 (system/browser/env precedence in resolve_language).
 Switching: E21:S02:T04 (`switch_locale`, `--locale`, `adk config locale`).
+Keys: E21:S02:T06 (`resolve_locale_key`, YAML key catalogs).
 
 Precedence (resolve_language): override → config file → ADK_LOCALE → system
 locale → accept_language → default_locale (en-GB).
@@ -207,19 +208,159 @@ def _config_file_language(project_root: Path) -> Optional[str]:
     return map_to_supported_locale(raw_language)
 
 
-def prompt_language_choice() -> Dict[str, str]:
+def _apply_locale_substitutions(
+    text: str,
+    substitutions: Optional[Dict[str, str]] = None,
+) -> str:
+    """Replace {{placeholder}} tokens in a locale string."""
+    for name, value in (substitutions or {}).items():
+        text = text.replace(f"{{{{{name}}}}}", value)
+    return text
+
+
+_KEY_CATALOG_CACHE: Dict[Tuple[str, float], Dict[str, str]] = {}
+
+
+def _parse_locale_key(key: str) -> str:
+    """Return domain segment from a domain.section.name locale key."""
+    parts = key.split(".")
+    if len(parts) < 3:
+        raise ValueError(
+            f"Locale key must use domain.section.name format (at least 3 segments): {key!r}"
+        )
+    domain = parts[0]
+    if not domain:
+        raise ValueError(f"Locale key domain must be non-empty: {key!r}")
+    return domain
+
+
+def _load_key_catalog(catalog_path: Path) -> Dict[str, str]:
+    """Load and cache the flat keys map from a keys/*.yaml catalog file."""
+    if not catalog_path.is_file():
+        return {}
+    mtime = catalog_path.stat().st_mtime
+    cache_key = (str(catalog_path.resolve()), mtime)
+    cached = _KEY_CATALOG_CACHE.get(cache_key)
+    if cached is not None:
+        return cached
+
+    with open(catalog_path, encoding="utf-8") as handle:
+        data = yaml.safe_load(handle) or {}
+    keys_block = data.get("keys", {})
+    if not isinstance(keys_block, dict):
+        raise ValueError(f"Invalid keys catalog (missing 'keys' mapping): {catalog_path}")
+
+    domain = data.get("_meta", {}).get("domain") if isinstance(data.get("_meta"), dict) else None
+    result: Dict[str, str] = {}
+    for raw_key, raw_value in keys_block.items():
+        key_text = str(raw_key)
+        if domain and not key_text.startswith(f"{domain}."):
+            raise ValueError(
+                f"Key {key_text!r} must start with domain prefix {domain!r} in {catalog_path}"
+            )
+        result[key_text] = str(raw_value)
+
+    _KEY_CATALOG_CACHE[cache_key] = result
+    return result
+
+
+def _locales_root_for_package(
+    package: str,
+    frameworks_root: Optional[Path] = None,
+) -> Path:
+    if package == "workflow-mgt":
+        return workflow_locales_root(frameworks_root)
+    if package == "kanban":
+        return kanban_locales_root(frameworks_root)
+    raise ValueError(f"Unknown locale package: {package!r}; expected 'workflow-mgt' or 'kanban'")
+
+
+def resolve_locale_key(
+    project_root: Path,
+    key: str,
+    *,
+    package: str = "workflow-mgt",
+    substitutions: Optional[Dict[str, str]] = None,
+    language: Optional[str] = None,
+    frameworks_root: Optional[Path] = None,
+) -> str:
+    """
+    Resolve a dotted locale key (domain.section.name) to a translated string.
+
+    Uses manifest v2 keys category, language fallback chain, and in-process catalog cache.
+    """
+    domain = _parse_locale_key(key)
+    if not key.startswith(f"{domain}."):
+        raise ValueError(f"Locale key must start with domain prefix {domain!r}: {key!r}")
+
+    locales_root = _locales_root_for_package(package, frameworks_root)
+    manifest_path = locales_root / "manifest.yaml"
+    manifest = load_locale_manifest(manifest_path)
+
+    if language is None:
+        language = resolve_language(project_root)
+
+    languages_tried: List[str] = []
+    for lang in _language_fallback_chain(manifest, language):
+        languages_tried.append(lang)
+        rel = _manifest_relative_path(manifest, language=lang, category="keys", key=domain)
+        if rel is None:
+            continue
+        catalog_path = (locales_root / lang / rel).resolve()
+        catalog = _load_key_catalog(catalog_path)
+        if key in catalog:
+            return _apply_locale_substitutions(catalog[key], substitutions)
+
+    raise KeyError(
+        f"Locale key not found: package={package!r} key={key!r} "
+        f"languages_tried={languages_tried}"
+    )
+
+
+def _resolve_locale_key_or_none(
+    project_root: Optional[Path],
+    key: str,
+    *,
+    substitutions: Optional[Dict[str, str]] = None,
+) -> Optional[str]:
+    if project_root is None:
+        return None
+    try:
+        return resolve_locale_key(project_root, key, substitutions=substitutions)
+    except (KeyError, ValueError, FileNotFoundError):
+        return None
+
+
+def prompt_language_choice(project_root: Optional[Path] = None) -> Dict[str, str]:
     """Interactive prompt for UK/US English variant (FR-006 numbered format)."""
     print()
-    print("Select your preferred English variant:")
-    print("  [1] UK English (en-GB) — colour, organise, realise  [default]")
-    print("  [2] US English (en-US) — color, organize, realize")
+    print(
+        _resolve_locale_key_or_none(project_root, "cli.prompt.language_choice")
+        or "Select your preferred English variant:"
+    )
+    print(
+        _resolve_locale_key_or_none(project_root, "cli.prompt.language_uk")
+        or "  [1] UK English (en-GB) — colour, organise, realise  [default]"
+    )
+    print(
+        _resolve_locale_key_or_none(project_root, "cli.prompt.language_us")
+        or "  [2] US English (en-US) — color, organize, realize"
+    )
+    invalid_msg = (
+        _resolve_locale_key_or_none(project_root, "errors.cli.invalid_language_choice")
+        or "  Invalid choice. Enter 1 or 2."
+    )
+    prompt = (
+        _resolve_locale_key_or_none(project_root, "cli.prompt.enter_choice")
+        or "Enter choice [1-2]:"
+    )
     while True:
-        answer = input("Enter choice [1-2]: ").strip()
+        answer = input(f"{prompt} ").strip()
         if answer in ("", "1"):
             return LOCALE_VARIANTS[DEFAULT_LANGUAGE].copy()
         if answer == "2":
             return LOCALE_VARIANTS["en-US"].copy()
-        print("  Invalid choice. Enter 1 or 2.")
+        print(invalid_msg)
 
 
 def locale_payload_from_tag(tag: Optional[str]) -> Dict[str, str]:
@@ -259,7 +400,7 @@ def switch_locale(
     """
     previous = read_localisation_config(project_root)
     if interactive:
-        current = prompt_language_choice()
+        current = prompt_language_choice(project_root)
     else:
         current = locale_payload_from_tag(locale_tag)
     config_path = project_root / LOCALISATION_CONFIG_FILENAME
@@ -552,9 +693,7 @@ def render_locale_text(
         fallback_path=fallback_path,
     )
     text = path.read_text(encoding="utf-8")
-    for name, value in (substitutions or {}).items():
-        text = text.replace(f"{{{{{name}}}}}", value)
-    return text
+    return _apply_locale_substitutions(text, substitutions)
 
 
 def resolve_kanban_intake_template(

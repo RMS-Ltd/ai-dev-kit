@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 21, Story 2, Task 6: Implement translation key system
 
 **Task ID:** E21:S02:T06  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.2.6+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.2.6+0
+**Last updated:** 2026-06-07 (v0.21.2.6+1 — translation key system shipped)
+**Version:** v0.21.2.6+1
 **Code:** E21S02T06
 
 ---
@@ -48,12 +48,19 @@ Implement translation key system for extractable user-facing strings.
 
 ## Acceptance Criteria
 
-- [ ] Translation key system implemented
-- [ ] Key naming conventions defined
-- [ ] Keys organised logically
-- [ ] Key system documented
+- [x] Translation key system implemented
+- [x] Key naming conventions defined
+- [x] Keys organised logically
+- [x] Key system documented
+
+✅ **COMPLETE (v0.21.2.6+1)**
 
 ---
+
+## Planning
+
+**IPP:** [IPP-E21S02T06-locale-key-system.md](../../../../implementation-cycles/IPP-E21S02T06-locale-key-system.md)  
+**Policy:** [locale-key-conventions.md](../../../../governance/standards/locale-key-conventions.md)
 
 ---
 

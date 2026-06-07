@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.2.5+1 — T05 COMPLETE; T06–T07 TODO)  
-**Version:** v0.21.2.5+1  
+**Last updated:** 2026-06-07 (v0.21.2.6+1 — T06 COMPLETE; T07 TODO)  
+**Version:** v0.21.2.6+1  
 **Code:** E21S02
 
 ---
@@ -47,8 +47,9 @@ Establish a robust internationalisation infrastructure that supports multiple la
 - [x] **E21:S02:T05 – Configure date/time/number formatting per locale** - COMPLETE (v0.21.2.5+1 — locale_formatting.py + Babel)
   - Task: [`T05-configure-datetimenumber-formatting-per-locale`](story-02-internationalisation-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md)
   - Planning: [IPP-E21S02T05](../../../implementation-cycles/IPP-E21S02T05-locale-formatting.md) · [locale-formatting-conventions](../../../governance/standards/locale-formatting-conventions.md)
-- [ ] **E21:S02:T06 – Implement translation key system** - TODO
+- [x] **E21:S02:T06 – Implement translation key system** - COMPLETE (v0.21.2.6+1 — resolve_locale_key + catalog cache)
   - Task: [`T06-implement-translation-key-system`](story-02-internationalisation-infrastructure/T06-implement-translation-key-system.md)
+  - Planning: [IPP-E21S02T06](../../../implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [locale-key-conventions](../../../governance/standards/locale-key-conventions.md)
 - [ ] **E21:S02:T07 – Set up translation fallback chain (selected → UK English → US English)** - TODO
   - Task: [`T07-set-up-translation-fallback-chain-selected-english-us-englis`](story-02-internationalisation-infrastructure/T07-set-up-translation-fallback-chain-selected-english-us-englis.md)
 
@@ -61,7 +62,7 @@ Establish a robust internationalisation infrastructure that supports multiple la
 - [x] Locale detection works (T03 @ v0.21.2.3+1)
 - [x] Language switching works (T04 @ v0.21.2.4+1)
 - [x] Locale-specific formatting configured (T05 @ v0.21.2.5+1)
-- [ ] Translation key system implemented
+- [x] Translation key system implemented (T06 @ v0.21.2.6+1)
 - [ ] Fallback chain works correctly
 
 ---

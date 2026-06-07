@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.8.2+1] - 07-06-26
+## [0.21.2.6+1] - 07-06-26
 
-E21:S08:T02 — **Change implemented:** ADR-025 layered accessibility strategy (CLI-first ship gate). SemVer **v0.4.1081+1**.
+E21:S02:T06 — **Change implemented:** Translation key system (`resolve_locale_key`, YAML catalog cache). SemVer **v0.4.1082+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.8.2+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.2.6+1.md)
 
 ---

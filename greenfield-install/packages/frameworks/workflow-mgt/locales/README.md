@@ -50,8 +50,8 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | E21:S02:T03 | Locale detection — **COMPLETE** @ v0.21.2.3+1 |
 | E21:S02:T04 | Language switching — **COMPLETE** @ v0.21.2.4+1 |
 | E21:S02:T05 | Date/time/number formatting — **COMPLETE** @ v0.21.2.5+1 |
-| E21:S02:T06 | `resolve_locale_key()` |
+| E21:S02:T06 | `resolve_locale_key()` — **COMPLETE** @ v0.21.2.6+1 |
 
-Formatting APIs: [`locale_formatting.py`](../scripts/locale_formatting.py).
+Key APIs: `resolve_locale_key` in [`localisation_config.py`](../scripts/localisation_config.py).
 
-Planning: [IPP-E21S02T05](../../../../docs/implementation-cycles/IPP-E21S02T05-locale-formatting.md) · [locale-formatting-conventions](../../../../docs/governance/standards/locale-formatting-conventions.md)
+Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [locale-key-conventions](../../../../docs/governance/standards/locale-key-conventions.md)

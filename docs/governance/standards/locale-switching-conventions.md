@@ -85,7 +85,7 @@ Non-English tags persist in config but asset resolution falls back to on-disk lo
 | ---- | ----- |
 | **E21:S02:T03** | Detection precedence (read path) |
 | **E21:S02:T04** | Switching (write path) — this doc |
-| **E21:S02:T06** | `resolve_locale_key()` |
+| **E21:S02:T06** | `resolve_locale_key()` — [locale-key-conventions.md](locale-key-conventions.md) |
 
 ---
 

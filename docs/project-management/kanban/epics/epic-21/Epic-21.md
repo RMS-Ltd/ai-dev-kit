@@ -25,9 +25,9 @@ housekeeping_policy: keep
   - Story: [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
   - Tasks: T01–T07 COMPLETE
 
-- [ ] **E21:S02 – Internationalisation Infrastructure** - IN PROGRESS (v0.21.2.5+1 — T01–T05 COMPLETE)
+- [ ] **E21:S02 – Internationalisation Infrastructure** - IN PROGRESS (v0.21.2.6+1 — T01–T06 COMPLETE)
   - Story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
-  - Tasks: T01–T05 COMPLETE; T06–T07 TODO
+  - Tasks: T01–T06 COMPLETE; T07 TODO
 
 - [ ] **E21:S03 – Translation and Localisation** - TODO (v0.21.3.0+0)
   - Story: [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)

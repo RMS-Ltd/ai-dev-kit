@@ -124,7 +124,9 @@ keys:
 
 ### 4.3 Lookup API
 
-`resolve_locale_key()` — **E21:S02:T06** (not T02). T02 only establishes files and manifest `keys` category entries.
+`resolve_locale_key(project_root, key, *, package="workflow-mgt", ...)` — **E21:S02:T06** (implemented). T02 establishes files and manifest `keys` category entries.
+
+**Resolution policy:** [locale-key-conventions.md](locale-key-conventions.md)
 
 ---
 
