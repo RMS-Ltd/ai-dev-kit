@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.2.2+1 — E21:S02:T02 COMPLETE; manifest v2)  
+**Last updated:** 2026-06-07 (v0.21.8.1+1 — E21:S08:T01 COMPLETE; CLI a11y baseline)  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -49,6 +49,10 @@ housekeeping_policy: keep
   - Story: [`story-07-rtl-and-extended-locales.md`](story-07-rtl-and-extended-locales.md)
   - Tasks: T01-T02 TODO
 
+- [ ] **E21:S08 – Accessibility** - IN PROGRESS (v0.21.8.1+1 — T01 COMPLETE)
+  - Story: [`story-08-accessibility.md`](story-08-accessibility.md)
+  - Tasks: T01 COMPLETE; T02–T07 TODO / DEFERRED (Layers 2–5)
+
 
 ---
 
@@ -60,12 +64,14 @@ Epic 21 owns the **Internationalisation and Localisation** framework for ai-dev-
 - Translation infrastructure and management
 - Cultural adaptation and locale-specific formatting
 - RTL (Right-to-Left) support for Arabic/Hebrew
+- Accessibility standards compatibility for disabled users (E21:S08 / FR-115)
 
 It ensures that:
 - Users can select their preferred English variant (UK/US) at setup
 - Framework content can be localized to multiple languages
 - Cultural preferences are respected (date/time/number formatting)
 - Framework is accessible to international developers
+- Disabled users can operate ADK surfaces with minimal friction (a11y)
 
 ---
 
@@ -263,6 +269,18 @@ Run **on branch** `epic/21-internationalisation-localisation` — one task per r
 | T01 | `RW -k E21:S07:T01 --art --dpz` | `v0.21.7.1+0` |
 | T02 | `RW -k E21:S07:T02 --art --dpz` | `v0.21.7.2+0` |
 
+### E21:S08 — Accessibility
+
+| Task | Trigger | Version anchor |
+| ---- | ------- | -------------- |
+| T01 | `RW -k E21:S08:T01 --art --dpz` | `v0.21.8.1+0` |
+| T02 | `RW -k E21:S08:T02 --art --dpz` | `v0.21.8.2+0` |
+| T03 | `RW -k E21:S08:T03 --art --dpz` | `v0.21.8.3+0` |
+| T04 | `RW -k E21:S08:T04 --art --dpz` | `v0.21.8.4+0` |
+| T05 | `RW -k E21:S08:T05 --art --dpz` | `v0.21.8.5+0` |
+| T06 | `RW -k E21:S08:T06 --art --dpz` | `v0.21.8.6+0` |
+| T07 | `RW -k E21:S08:T07 --art --dpz` | `v0.21.8.7+0` |
+
 Per-task triggers are also recorded in each task doc under **Kanban-init intake**.
 
 ---
@@ -270,7 +288,8 @@ Per-task triggers are also recorded in each task doc under **Kanban-init intake*
 ## Dependencies
 
 **Blocks:**
-- Improved accessibility for international users
+- Improved accessibility for international users (i18n)
+- Improved accessibility for disabled users (a11y — E21:S08)
 - Cultural preference support (UK/US English)
 - Broader framework adoption
 
@@ -288,6 +307,7 @@ Per-task triggers are also recorded in each task doc under **Kanban-init intake*
 
 - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` - Epic 21 canonical definition
 - `docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` - Feature request
+- `docs/project-management/kanban/fr-br/FR-115-accessibility-standards-compatibility.md` - Accessibility (a11y)
 - `docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md` - Setup process
 - `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` - RW installer
 

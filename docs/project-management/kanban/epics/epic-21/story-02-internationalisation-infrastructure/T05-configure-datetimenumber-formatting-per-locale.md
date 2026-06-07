@@ -9,9 +9,9 @@ housekeeping_policy: keep
 # Epic 21, Story 2, Task 5: Configure date/time/number formatting per locale
 
 **Task ID:** E21:S02:T05  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.2.5+0 — RW -k kanban-init doc filing)
+**Last updated:** 2026-06-07 (E21:S02:T05 — locale formatting implementation)
 **Version:** v0.21.2.5+0
 **Code:** E21S02T05
 
@@ -54,6 +54,11 @@ Configure date, time, and number formatting per locale.
 - [ ] Formatting tested across locales
 
 ---
+
+## Planning
+
+**IPP:** [IPP-E21S02T05-locale-formatting.md](../../../../implementation-cycles/IPP-E21S02T05-locale-formatting.md)  
+**Policy:** [locale-formatting-conventions.md](../../../../governance/standards/locale-formatting-conventions.md) (on implementation)
 
 ---
 

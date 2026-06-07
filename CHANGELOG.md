@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.2.4+1] - 07-06-26
+## [0.21.8.1+1] - 07-06-26
 
-E21:S02:T04 — **Change implemented:** Language switching (`switch_locale`, `adk config locale`, `--locale`). SemVer **v0.4.1078+1**.
+E21:S08:T01 — **Change implemented:** CLI accessibility baseline audit (Layer 0); FR-115 / S08 intake. SemVer **v0.4.1079+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.2.4+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.8.1+1.md)
 
 ---
