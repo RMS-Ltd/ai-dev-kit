@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E21:S04:T07  
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-05 (v0.0.0.0+0 – migrated from embedded Story section)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-07 (v0.21.4.7+0 — RW -k kanban-init doc filing)
+**Version:** v0.21.4.7+0
 **Code:** E21S04T07
 
 ---
@@ -58,6 +58,8 @@ Document cultural considerations and guidelines for contributors.
 ---
 
 ## Kanban-init intake
+
+**Released:** `v0.21.4.7+0` — RW -k --art --dpz (2026-06-07)
 
 **Branch:** `epic/21-internationalisation-localisation`
 
