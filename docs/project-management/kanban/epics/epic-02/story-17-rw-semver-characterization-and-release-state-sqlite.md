@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.2+3** — Wave 3 baseline)  
-**Version:** v0.2.17.2+3  
+**Last updated:** 2026-06-07 (RW **v0.2.17.2+4** — Wave 4 baseline; all waves complete)  
+**Version:** v0.2.17.2+4  
 **Code:** E2S17
 
 ---
@@ -39,7 +39,7 @@ Characterize Release Workflow (RW) and Implementation Planning Workflow (IPW) fr
 
 - [x] **E02:S17:T01 – RW & IPW scenario matrix and run-log schema** - COMPLETE (v0.2.17.1+2) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T01-rw-ipw-scenario-matrix-and-run-log-schema.md)
 
-- [ ] **E02:S17:T02 – Baseline characterization runs (legacy MD/YAML)** - IN PROGRESS (v0.2.17.2+1 — Wave 1 ✅) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T02-baseline-characterization-runs-legacy-md-yaml.md)
+- [ ] **E02:S17:T02 – Baseline characterization runs (legacy MD/YAML)** - IN PROGRESS (v0.2.17.2+4 — Waves 1–4 ✅) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T02-baseline-characterization-runs-legacy-md-yaml.md)
 
 - [ ] **E02:S17:T03 – SQLite release-state schema and migration design** - TODO (HIGH) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T03-sqlite-release-state-schema-and-migration-design.md)
 

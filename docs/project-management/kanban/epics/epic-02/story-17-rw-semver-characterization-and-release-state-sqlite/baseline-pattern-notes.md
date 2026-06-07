@@ -52,9 +52,35 @@
 
 ---
 
+## Pattern 7 — IPW gate is file-presence + RW Step 1c (dual check)
+
+**Evidence:** Wave 4 IPW-P01/P02/P04  
+**Friction:** T03/T04 task docs exist but no `IPP-E02S17T0*.md`; RW on T04 aborts at Step 1c with TODO status.  
+**Recommendation:** IPW checklist: create IPP, link from task doc, flip TODO→IN PROGRESS before any RW on implementation tasks.
+
+---
+
+## Pattern 8 — Large CHANGELOG triggers non-blocking CMW (RW Step 9.5)
+
+**Evidence:** Wave 4 RW-V03 — `check_changelog_size.py` exit 1 on production `CHANGELOG.md`.  
+**Friction:** RW continues but CMW should run; threshold breach is easy to miss if Step 9.5 skipped.  
+**Recommendation:** SQLite changelog backend (T03/T04) should include size/entry-count metrics; compare V04 YAML parse vs SQLite query.
+
+---
+
+## Pattern 9 — Registry YAML parse cost baseline (~188ms)
+
+**Evidence:** Wave 4 RW-V04 — 5× avg `yaml.safe_load` on ~2.5k-line `semver-registry.yaml`.  
+**Friction:** Every finalize/lookup touches full-file parse today.  
+**Recommendation:** T05 parity replay must include RW-V04 on SQLite; target sub-5ms indexed lookup.
+
+---
+
 ## Next waves
 
 | Wave | Scenarios | Focus |
 | ---- | --------- | ----- |
 | ~~3~~ | ~~B07, B08, V02, P01, G06, S07~~ | ✅ Done (partial AGT for V02/P01) |
-| 4 | IPW-P01–P04, V03, V04 | IPW gate + CMW |
+| ~~4~~ | ~~IPW-P01–P04, V03, V04~~ | ✅ Done |
+| T02 close | All waves 1–4 | Mark T02 COMPLETE after RW bank |
+| T03+ | IPW → SQLite | Design + implementation + parity replay |

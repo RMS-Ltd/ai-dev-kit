@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.17.2+4] - 07-06-26
+
+E02:S17:T02 — **Change implemented:** Wave 4 baseline — IPW gate (P01–P04), CHANGELOG threshold (V03), registry parse benchmark (V04). SemVer **v0.4.1042+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.2+4.md)
+
+---
+
 ## [0.2.17.2+3] - 07-06-26
 
 E02:S17:T02 — **Change implemented:** Wave 3 baseline — operator/agent friction scenarios (B07, B08, V02, P01, G06, S07). SemVer **v0.4.1041+3**.

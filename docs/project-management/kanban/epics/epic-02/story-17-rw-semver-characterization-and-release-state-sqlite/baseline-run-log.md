@@ -11,7 +11,7 @@
 **Wave 1 complete** (2026-06-07) — 8/8 deterministic scenarios PASS via pytest.  
 **Wave 2 complete** (2026-06-07) — 5/5 scenarios PASS via `test_wave2_baseline.py`.  
 **Wave 3 complete** (2026-06-07) — 8/8 pytest checks PASS via `test_wave3_baseline.py` (6 scenario IDs + 2 guard tests).  
-Wave 4 pending.
+**Wave 4 complete** (2026-06-07) — 6/6 pytest checks PASS via `test_wave4_baseline.py`.
 
 ---
 
@@ -54,6 +54,19 @@ Wave 4 pending.
 | RW-P01-legacy-20260607-1740 | RW-P01 | legacy | DET/PARTIAL | PASS | `--perpetual-same-task` BUILD+1 on E02:S16:T04; UKW chain AGT |
 | RW-G06-legacy-20260607-1740 | RW-G06 | legacy | DET | PASS | Mismatch fails; `--confirmed-override` passes |
 | RW-S07-legacy-20260607-1740 | RW-S07 | legacy | DET/PARTIAL | PASS | Recovery text forbids force-push; journal scan catches `-f` |
+
+---
+
+## Wave 4 results (legacy backend)
+
+| run_id | scenario_id | backend | layer | outcome | friction_notes |
+| ------ | ----------- | ------- | ----- | ------- | -------------- |
+| IPW-P01-legacy-20260607-1745 | IPW-P01 | legacy | DET | PASS | No `IPP-E02S17T03*.md` on disk; T03 blocked until IPW |
+| IPW-P02-legacy-20260607-1745 | IPW-P02 | legacy | DET | PASS | T04 TODO + no IPP; implementation gate closed |
+| IPW-P03-legacy-20260607-1745 | IPW-P03 | legacy | DET | PASS | `PLAN_DOC_TEMPLATE.md` mandates TODO→IN PROGRESS + reconciliation |
+| IPW-P04-legacy-20260607-1745 | IPW-P04 | legacy | DET | ABORT | `validate_rw_task_complete` rejects T04 (TODO) |
+| RW-V03-legacy-20260607-1745 | RW-V03 | legacy | DET | PASS | `check_changelog_size.py` exit 1 — threshold exceeded (CMW advisory) |
+| RW-V04-legacy-20260607-1745 | RW-V04 | legacy | DET | PASS | Registry YAML load ~188ms (5× avg); baseline for SQLite comparison |
 
 ---
 
