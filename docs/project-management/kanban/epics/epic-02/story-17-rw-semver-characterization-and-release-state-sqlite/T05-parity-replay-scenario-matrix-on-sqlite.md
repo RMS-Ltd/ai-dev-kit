@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S17:T05 — Parity replay: same scenario matrix on SQLite
 
 **Task ID:** E02:S17:T05  
-**Status:** TODO  
+**Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07  
-**Version Anchor:** v0.2.17.5+0  
+**Last updated:** 2026-06-07 (RW **v0.2.17.5+1** — parity harness + run log)  
+**Version Anchor:** v0.2.17.5+1  
 **Code:** E02S17T05
 
 Publication Status: NOT_APPLICABLE
@@ -57,10 +57,21 @@ Replay **every T01 scenario ID** with `release_state_backend: sqlite` and compar
 
 ## Acceptance Criteria
 
-- [ ] AC1: 100% of T01 scenario IDs attempted on SQLite (SKIP only with documented blocker)
-- [ ] AC2: Zero unexplained SemVer mapping or BUILD invariant mismatches
-- [ ] AC3: All blocking validators pass in SQLite mode for passing baseline scenarios
-- [ ] AC4: Performance note: SQLite query latency vs YAML parse (informational)
+- [x] AC1: 100% of T01 scenario IDs attempted on SQLite (7 SKIP with T02/T06 rationale)
+- [x] AC2: Zero unexplained SemVer mapping or BUILD invariant mismatches (S05 explained)
+- [x] AC3: All blocking validators pass in SQLite mode for passing baseline scenarios
+- [x] AC4: Performance note: SQLite query latency vs YAML parse (informational)
+
+---
+
+## Implementation artifacts
+
+| Artifact | Path |
+| -------- | ---- |
+| Parity run log | [parity-run-log.md](parity-run-log.md) |
+| Diff report | [parity-diff-report.md](parity-diff-report.md) |
+| Harness | [`tests/rw_scenarios/parity_harness.py`](../../../../../../tests/rw_scenarios/parity_harness.py) |
+| Tests | [`tests/rw_scenarios/test_t05_parity.py`](../../../../../../tests/rw_scenarios/test_t05_parity.py) |
 
 ---
 

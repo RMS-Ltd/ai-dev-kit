@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E05:S08:T04 FR-114 Notion-first bootstrap)
-**Version:** v0.5.8.4+2
+**Last Updated:** 2026-06-07 (RW: E02:S17:T05 parity replay on SQLite)
+**Version:** v0.2.17.5+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E02:S17:T05 @ **v0.2.17.5+1** (parity replay on SQLite)
+
+- **[E02:S17:T05](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T05-parity-replay-scenario-matrix-on-sqlite.md)** — Parity replay: 32 scenario IDs, parity harness, run log + diff report; 65 pytest; zero unexplained mismatches.
+  **Completed:** `2026-06-07T18:27:36Z` | **Version:** `v0.2.17.5+1` | **Agent:** `RW E02:S17:T05 --art` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [parity-run-log](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/parity-run-log.md)
 
 #### **RW (2026-06-07)** — E02:S17:T04 @ **v0.2.17.4+1** (SQLite release-state backend)
 

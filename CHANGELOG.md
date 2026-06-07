@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.17.5+1] - 07-06-26
+
+E02:S17:T05 — **Change implemented:** Parity replay scenario matrix on SQLite — harness, run log, diff report; 65 pytest. SemVer **v0.4.1046+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.5+1.md)
+
+---
+
 ## [0.2.17.4+2] - 07-06-26
 
 E02:S17:T04 — **Change implemented:** T04 COMPLETE — sqlite-mode RW AC1/AC2, validator sqlite path, T05 seed. SemVer **v0.4.1045+2**.

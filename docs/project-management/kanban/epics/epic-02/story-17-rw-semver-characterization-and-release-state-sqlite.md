@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.4+2** — T04 COMPLETE)  
-**Version:** v0.2.17.4+2  
+**Last updated:** 2026-06-07 (RW **v0.2.17.5+1** — T05 COMPLETE)  
+**Version:** v0.2.17.5+1  
 **Code:** E2S17
 
 ---
@@ -45,7 +45,7 @@ Characterize Release Workflow (RW) and Implementation Planning Workflow (IPW) fr
 
 - [x] **E02:S17:T04 – Implement SQLite changelog and semver-registry backend** - COMPLETE (v0.2.17.4+2 — AC1–AC4 ✅) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T04-implement-sqlite-changelog-semver-registry-backend.md)
 
-- [ ] **E02:S17:T05 – Parity replay: same scenario matrix on SQLite** - TODO (HIGH; T05 seed test added) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T05-parity-replay-scenario-matrix-on-sqlite.md)
+- [x] **E02:S17:T05 – Parity replay: same scenario matrix on SQLite** - COMPLETE (v0.2.17.5+1 — AC1–AC4 ✅) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T05-parity-replay-scenario-matrix-on-sqlite.md)
 
 - [ ] **E02:S17:T06 – High-stress scenarios and RW friction report** - TODO (MEDIUM) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T06-high-stress-scenarios-and-rw-friction-report.md)
 
@@ -80,7 +80,7 @@ Characterize Release Workflow (RW) and Implementation Planning Workflow (IPW) fr
 - [ ] Scenario matrix defines ≥15 named scenarios across BUILD, SemVer, volume, branch/intent, perpetual, and IPW classes
 - [ ] Baseline run log captures pass/fail, validator exit codes, and state diffs for legacy storage
 - [ ] SQLite schema supports changelog entries, semver mappings, and task_touch counter with export/import
-- [ ] Parity replay: same scenario IDs produce equivalent invariants on SQLite (mapping, tags, validators)
+- [x] Parity replay: same scenario IDs produce equivalent invariants on SQLite (mapping, tags, validators)
 - [ ] Friction report documents ≥3 actionable patterns with proposed scenario refinements
 
 ---
