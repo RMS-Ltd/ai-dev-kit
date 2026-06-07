@@ -83,7 +83,7 @@ localisation:
   variant: "US"
 ```
 
-The example file ships with **en-GB** as default. Interactive installer prompts and read/write utilities are planned for [E21:S01:T05](../../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md).
+The example file ships with **en-GB** as default. **CLI alternate:** `ai-dev-kit init` prompts for language first and writes the same file ([CLI reference](framework-dependency-cli-reference.md#ai-dev-kit-init)). Installer automation is planned for [E21:S01:T05](../../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md).
 
 ---
 

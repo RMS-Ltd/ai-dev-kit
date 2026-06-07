@@ -16,7 +16,8 @@ from cli.config import Config
 class TestInitInstallWorkflow:
     """Integration tests for init and install workflow."""
     
-    def test_init_then_install_workflow(self, temp_project_dir: Path):
+    @patch("cli.commands.init.print_session_banner")
+    def test_init_then_install_workflow(self, _banner, temp_project_dir: Path):
         """Test complete init then install workflow."""
         import os
         original_cwd = os.getcwd()
@@ -25,8 +26,10 @@ class TestInitInstallWorkflow:
             
             # Step 1: Initialize
             init_args = argparse.Namespace(
-                path=None,
+                force=False,
                 backend="git-submodule",
+                language=None,
+                non_interactive=True,
             )
             init_command = InitCommand(init_args)
             init_result = init_command.execute()

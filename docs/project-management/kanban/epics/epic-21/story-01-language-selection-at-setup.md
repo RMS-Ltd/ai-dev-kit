@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.1.1+2 — T01 template language selection docs-first)  
-**Version:** v0.21.1.1+2  
+**Last updated:** 2026-06-07 (v0.21.1.2+1 — T02 CLI init language selection)  
+**Version:** v0.21.1.2+1  
 **Code:** E21S01
 
 ---
@@ -34,7 +34,7 @@ Make language selection the first step in all setup processes, allowing users to
 
 - [x] **E21:S01:T01 – Add language selection prompt to template setup (GitHub template)** - COMPLETE (v0.21.1.1+2)
   - Task: [`T01-add-language-selection-prompt-to-template-setup-github-templ`](story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md)
-- [ ] **E21:S01:T02 – Add language selection prompt to CLI tool (`ai-dev-kit init`)** - TODO
+- [x] **E21:S01:T02 – Add language selection prompt to CLI tool (`ai-dev-kit init`)** - COMPLETE (v0.21.1.2+1)
   - Task: [`T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init`](story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md)
 - [ ] **E21:S01:T03 – Add language selection prompt to RW Installer (`install_release_workflow.py`)** - TODO
   - Task: [`T03-add-language-selection-prompt-to-rw-installer-install-releas`](story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md)

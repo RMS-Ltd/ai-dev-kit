@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.1.1+2 — E21:S01:T01 template language selection docs-first)  
+**Last updated:** 2026-06-07 (v0.21.1.2+1 — E21:S01:T02 CLI init language selection)  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -21,9 +21,9 @@ housekeeping_policy: keep
 
 ## Story Checklist
 
-- [ ] **E21:S01 – Language Selection at Setup (UK/US English)** - IN PROGRESS (v0.21.1.1+2 — T01 COMPLETE)
+- [ ] **E21:S01 – Language Selection at Setup (UK/US English)** - IN PROGRESS (v0.21.1.2+1 — T01–T02 COMPLETE)
   - Story: [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
-  - Tasks: T01 COMPLETE; T02-T07 TODO
+  - Tasks: T01–T02 COMPLETE; T03–T07 TODO
 
 - [ ] **E21:S02 – Internationalisation Infrastructure** - TODO (v0.21.2.0+0)
   - Story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
@@ -107,7 +107,7 @@ Add language selection prompt at the very beginning of all setup processes, star
 
 **Tasks:**
 - [x] E21:S01:T01 – Add language selection prompt to template setup (GitHub template) — COMPLETE (v0.21.1.1+2)
-- [ ] E21:S01:T02 – Add language selection prompt to CLI tool (`ai-dev-kit init`)
+- [x] E21:S01:T02 – Add language selection prompt to CLI tool (`ai-dev-kit init`) — COMPLETE (v0.21.1.2+1)
 - [ ] E21:S01:T03 – Add language selection prompt to RW Installer (`install_release_workflow.py`)
 - [ ] E21:S01:T04 – Create UK/US English content variants (documentation, templates)
 - [ ] E21:S01:T05 – Implement configuration persistence (`ai-dev-kit-config.yaml`)

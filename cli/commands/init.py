@@ -10,6 +10,11 @@ from pathlib import Path
 from cli.adk_version_display import print_session_banner
 from cli.commands import BaseCommand
 from cli.config import Config
+from cli.localisation import (
+    LOCALISATION_CONFIG_FILENAME,
+    resolve_language_from_args,
+    write_localisation_config,
+)
 from cli.utils import get_project_root, print_error, print_info, print_success
 
 
@@ -27,7 +32,9 @@ class InitCommand(BaseCommand):
         parser.add_argument(
             "--force",
             action="store_true",
-            help="Overwrite existing .ai-dev-kit.yaml if it exists",
+            help=(
+                "Overwrite existing .ai-dev-kit.yaml and ai-dev-kit-config.yaml if they exist"
+            ),
         )
         parser.add_argument(
             "--backend",
@@ -35,6 +42,18 @@ class InitCommand(BaseCommand):
             default="git-submodule",
             choices=["git-submodule", "git-subtree", "npm", "pip"],
             help="Default dependency backend (default: git-submodule)",
+        )
+        parser.add_argument(
+            "--language",
+            type=str,
+            choices=["en-GB", "en-US"],
+            default=None,
+            help="English variant (skips interactive prompt; default en-GB with --non-interactive)",
+        )
+        parser.add_argument(
+            "--non-interactive",
+            action="store_true",
+            help="Skip language prompt; default to UK English (en-GB)",
         )
     
     def execute(self) -> int:
@@ -47,16 +66,32 @@ class InitCommand(BaseCommand):
             print_info(f"Project root detected: {project_root}")
 
         print_session_banner(project_root)
-        
+
+        localisation_path = project_root / LOCALISATION_CONFIG_FILENAME
+        if localisation_path.exists() and not self.args.force:
+            print_error(f"Configuration file already exists: {localisation_path}")
+            print_error("Use --force to overwrite existing configuration")
+            return 1
+
+        try:
+            locale = resolve_language_from_args(
+                self.args.language,
+                self.args.non_interactive,
+            )
+            write_localisation_config(project_root, locale)
+            print_success(f"Language preference saved: {locale['language']} ({locale['variant']})")
+            print_info(f"Localisation config: {localisation_path}")
+        except Exception as e:
+            print_error(f"Failed to write language configuration: {e}")
+            return 1
+
         config_path = project_root / ".ai-dev-kit.yaml"
         
-        # Check if config already exists
         if config_path.exists() and not self.args.force:
             print_error(f"Configuration file already exists: {config_path}")
             print_error("Use --force to overwrite existing configuration")
             return 1
         
-        # Create configuration
         try:
             config = Config(config_path)
             config.set("default_backend", self.args.backend)
@@ -69,4 +104,3 @@ class InitCommand(BaseCommand):
         except Exception as e:
             print_error(f"Failed to initialize ai-dev-kit: {e}")
             return 1
-

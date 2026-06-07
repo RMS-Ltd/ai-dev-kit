@@ -49,30 +49,48 @@ pip install ai-dev-kit
 
 ### `ai-dev-kit init`
 
-Initialize ai-dev-kit in your project.
+Initialize ai-dev-kit in your project. **Language selection is the first step** (FR-006 Phase 1 / E21:S01:T02): choose UK or US English before framework configuration is written.
 
 **Usage:**
 
 ```bash
-ai-dev-kit init [--path <path>] [--backend <backend>]
+ai-dev-kit init [--backend <backend>] [--language en-GB|en-US] [--non-interactive] [--force]
 ```
 
 **Options:**
-- `--path <path>` - Project root directory (default: current directory)
-- `--backend <backend>` - Default dependency backend (git-submodule, npm, pip)
+- `--backend <backend>` - Default dependency backend (`git-submodule`, `git-subtree`, `npm`, `pip`; default: `git-submodule`)
+- `--language en-GB|en-US` - English variant (skips interactive prompt)
+- `--non-interactive` - Skip language prompt; default **UK English (en-GB)**
+- `--force` - Overwrite existing `.ai-dev-kit.yaml` and `ai-dev-kit-config.yaml`
+
+**Interactive prompt (when neither `--language` nor `--non-interactive` is set):**
+
+```text
+Select your preferred English variant:
+  [1] UK English (en-GB) — colour, organise, realise  [default]
+  [2] US English (en-US) — color, organize, realize
+Enter choice [1-2]:
+```
 
 **Example:**
 
 ```bash
-# Initialize in current directory
+# Initialize in current directory (interactive language prompt)
 ai-dev-kit init
 
+# Non-interactive / CI — UK English default
+ai-dev-kit init --non-interactive
+
+# US English without prompt
+ai-dev-kit init --language en-US --non-interactive
+
 # Initialize with specific backend
-ai-dev-kit init --backend git-submodule
+ai-dev-kit init --backend git-submodule --non-interactive
 ```
 
 **Creates:**
-- `.ai-dev-kit.yaml` - Configuration file
+- `ai-dev-kit-config.yaml` - Language preference (`localisation.language`, `localisation.variant`; see [post-template Step 0](framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english))
+- `.ai-dev-kit.yaml` - Framework dependency configuration
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S01:T01 template language selection)
-**Version:** v0.21.1.1+2
+**Last Updated:** 2026-06-07 (RW: E21:S01:T02 CLI init language selection)
+**Version:** v0.21.1.2+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S01:T02 @ **v0.21.1.2+1** (CLI init language selection)
+
+- **[E21:S01:T02](epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md)** — Add language selection prompt to CLI tool (`ai-dev-kit init`) — language-first init + `ai-dev-kit-config.yaml`.
+  **Completed:** `2026-06-07T10:33:49Z` | **Version:** `v0.21.1.2+1` | **Agent:** `RW E21:S01:T02 --art` | [IPP](../../implementation-cycles/IPP-E21S01T02-cli-init-language-selection.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
 #### **RW (2026-06-07)** — E21:S01:T01 @ **v0.21.1.1+2** (template language selection docs-first)
 
