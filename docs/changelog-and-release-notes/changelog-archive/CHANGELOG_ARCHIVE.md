@@ -1,4 +1,18 @@
 # Changelog Archive
+## [0.1.6.2+1] - 07-06-26
+
+E01:S06:T02 — **Change implemented:** MIT `LICENSE` file; README and CONTRIBUTING legal metadata (FR-117). SemVer **v0.4.1040+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.6.2+1.md)
+
+---
+## [0.8.3.12+11] - 07-06-26
+
+E08:S03:T12 — **Resolved:** BR-099 maintainability backlog — dashboard **Good** @ `main` `ed379ab`; handoff **T16**. SemVer **v0.4.1038+11**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+11.md)
+
+---
 ## [0.1.2.14+1] - 04-06-26
 
 E01:S02:T14 — **Adopter external dependency tracking (FR-003):** Guide + copy-paste register/workflow/shell examples; host projects own Best-README / Keep a Changelog / Shields review. SemVer **v0.4.883+1**.
@@ -19,14 +33,6 @@ E02:S01:T24 — **BR-097:** Step 2 `resolve_rw_build.py`, tag immutability valid
 E02:S01:T24 — **BR-097 Step 12:** `push_rw_release.py` scoped tag push; forbid `git push --tags`. SemVer **v0.4.922+2**.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.24+2.md)
-
----
----
-## [0.8.3.12+11] - 07-06-26
-
-E08:S03:T12 — **Resolved:** BR-099 maintainability backlog — dashboard **Good** @ `main` `ed379ab`; handoff **T16**. SemVer **v0.4.1038+11**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+11.md)
 
 ---
 

@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.12+11] - 07-06-26
+## [0.1.6.2+1] - 07-06-26
 
-E08:S03:T12 — **Resolved:** BR-099 maintainability backlog — dashboard **Good** Maintainability + Reliability @ `main` `ed379ab`; handoff to **T16** perpetual. SemVer **v0.4.1038+11**.
+E01:S06:T02 — **Change implemented:** MIT `LICENSE` file at repo root; README and CONTRIBUTING legal metadata aligned (FR-117). SemVer **v0.4.1040+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+11.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.6.2+1.md)
 
 ---

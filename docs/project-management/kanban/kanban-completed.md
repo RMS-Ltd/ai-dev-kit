@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E08:S03:T12 BR-099 maintainability closure)
-**Version:** v0.8.3.12+11
+**Last Updated:** 2026-06-07 (RW: E01:S06:T02 FR-117 MIT LICENSE)
+**Version:** v0.1.6.2+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E01:S06:T02 @ **v0.1.6.2+1** (FR-117 MIT LICENSE file and repository legal metadata)
+
+- **[E01:S06:T02](epics/epic-01/story-06-repository-ci-cd-setup/T02-mit-license-file-and-repository-legal-metadata-fr117.md)** — **FR-117**: Root MIT `LICENSE`; README and CONTRIBUTING legal metadata aligned.
+  **Completed:** `2026-06-07T17:56:44Z` | **Version:** `v0.1.6.2+1` | **Agent:** `RW E01:S06:T02 --art` | [FR-117](fr-br/FR-117-mit-license-file-and-repository-legal-metadata.md)
 
 #### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+11** (BR-099 maintainability closure — dashboard Good)
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-07 (RW — **BR-099** RESOLVED closure)
-**Version:** v0.8.3.12+11
+**Last Updated:** 2026-06-07 (RW — **FR-117** COMPLETE)
+**Version:** v0.1.6.2+1
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-117 | FR | MIT LICENSE file and repository legal metadata — COMPLETE (**E01:S06:T02**) | 2026-06-07T17:56:44Z | v0.1.6.2+1 | RW E01:S06:T02 --art |
 | BR-099 | BR | Code Quality maintainability backlog — RESOLVED (**E08:S03:T12**; dashboard **Good** @ `main` `ed379ab`) | 2026-06-07T17:33:00Z | v0.8.3.12+11 | RW E08:S03:T12 --art |
 | FR-114 | FR | Split documentation surfaces — Docusaurus public + Notion maintainer KB — IMPLEMENTED (**E05:S08:T03/T04**, **E05:S09:T15**) | 2026-06-07T10:55:00Z | v0.5.8.4+3 | RW E05:S08:T04 --art |
 | BR-101 | BR | Code Quality AI suggestions backlog — RESOLVED lag-accepted (**E08:S03:T14**) | 2026-06-06T13:09:50Z | v0.8.3.14+5 | RW E08:S03:T14 --art |

@@ -45,6 +45,8 @@ See [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-
 
 ## Code Contributions
 
+By contributing code or documentation to this repository, you agree that your contributions are licensed under the same [MIT License](LICENSE) as the project.
+
 If you'd like to contribute code:
 
 1. **Fork the repository**
