@@ -73,6 +73,23 @@ except ImportError:
         def emit_install_error(code, *, detail=None, file=None):  # type: ignore[misc]
             print(f"ERROR [{code}]", file=file or sys.stderr)
 
+try:
+    from localisation_config import ensure_localisation_config
+except ImportError:
+    _loc_path = Path(__file__).resolve().parent / "localisation_config.py"
+    if _loc_path.is_file():
+        import importlib.util as _iu_loc
+
+        _spec_loc = _iu_loc.spec_from_file_location("localisation_config", _loc_path)
+        _mod_loc = _iu_loc.module_from_spec(_spec_loc)
+        assert _spec_loc.loader is not None
+        sys.modules["localisation_config"] = _mod_loc
+        _spec_loc.loader.exec_module(_mod_loc)
+        ensure_localisation_config = _mod_loc.ensure_localisation_config
+    else:
+        def ensure_localisation_config(*args, **kwargs):  # type: ignore[misc]
+            return None
+
 # Minimal RW installer runtime dependencies (see repo setup.py).
 INSTALLER_DEPENDENCIES: Tuple[Tuple[str, str, str], ...] = (
     ("yaml", "pyyaml", "pyyaml>=6.0"),
@@ -1051,6 +1068,9 @@ Examples:
   # Preset mode (a=Simple, b=RW+Versioning, c=Full Stack)
   python install_release_workflow.py --mode c
 
+  # Non-interactive UK English (writes ai-dev-kit-config.yaml first)
+  python install_release_workflow.py --non-interactive --language en-GB
+
 Brownfield (existing repo):
   Map paths to YOUR project tree; see INSTALL_IN_YOUR_PROJECT.md
   "Brownfield adoption" — use --mode a for RW-only (use_kanban: false).
@@ -1080,6 +1100,23 @@ Brownfield (existing repo):
         action='store_true',
         help='Close ai-dev-kit issues whose install sign-off checks passed (requires gh auth)',
     )
+    parser.add_argument(
+        '--language',
+        type=str,
+        choices=['en-GB', 'en-US'],
+        default=None,
+        help='English variant for ai-dev-kit-config.yaml (skips interactive language prompt)',
+    )
+    parser.add_argument(
+        '--non-interactive',
+        action='store_true',
+        help='Skip language prompt; default to UK English (en-GB) when creating localisation config',
+    )
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help='Overwrite existing ai-dev-kit-config.yaml when setting language preference',
+    )
 
     args = parser.parse_args()
 
@@ -1105,6 +1142,15 @@ Brownfield (existing repo):
     print_session_banner(project_root)
     
     print(f"📁 Project root: {project_root}")
+
+    print_section_header("🌐 Language / Localisation", project_root)
+    ensure_localisation_config(
+        project_root,
+        language=args.language,
+        non_interactive=args.non_interactive or args.language is not None,
+        force=args.force,
+        dry_run=args.dry_run,
+    )
     
     # Load or collect config
     install_warnings: list[str] = []

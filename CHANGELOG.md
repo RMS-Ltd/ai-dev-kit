@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.1.2+1] - 07-06-26
+## [0.21.1.3+1] - 07-06-26
 
-E21:S01:T02 — **Change implemented:** `ai-dev-kit init` language prompt first; `ai-dev-kit-config.yaml` + CLI flags. SemVer **v0.4.1069+1**.
+E21:S01:T03 — **Change implemented:** RW installer language prompt first; `ai-dev-kit-config.yaml` + installer flags. SemVer **v0.4.1070+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.2+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.3+1.md)
 
 ---

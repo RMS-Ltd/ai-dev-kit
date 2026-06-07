@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 21, Story 1, Task 3: Add language selection prompt to RW Installer (`install_release_workflow.py`)
 
 **Task ID:** E21:S01:T03  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.1.3+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.1.3+0
+**Last updated:** 2026-06-07 (v0.21.1.3+1 — RW E21:S01:T03 --art)
+**Version:** v0.21.1.3+1
 **Code:** E21S01T03
 
 ---
@@ -27,14 +27,16 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Add UK/US English selection as the **first interactive step** in `install_release_workflow.py`, persisting to `ai-dev-kit-config.yaml` before RW path/mode questions. Canonical helpers in `packages/frameworks/workflow-mgt/scripts/localisation_config.py` (shared with CLI via `cli/localisation.py`). Installer re-runs skip existing config unless `--force`.
 
 ---
 
 ## Input
 
 - RW Installer (`install_release_workflow.py`)
-- Language selection requirements
+- Language selection requirements ([FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 1)
+- Planning: [IPP-E21S01T03](../../../../implementation-cycles/IPP-E21S01T03-rw-installer-language-selection.md)
+- Upstream: [IPP-E21S01T01](../../../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md) · [IPP-E21S01T02](../../../../implementation-cycles/IPP-E21S01T02-cli-init-language-selection.md)
 
 ---
 
@@ -48,10 +50,10 @@ housekeeping_policy: keep
 
 ## Acceptance Criteria
 
-- [ ] Language selection prompt appears first in RW Installer
-- [ ] Options: UK English, US English
-- [ ] Selection persists in configuration
-- [ ] Installer documentation updated
+- [x] Language selection prompt appears first in RW Installer — ✅ COMPLETE (v0.21.1.3+1)
+- [x] Options: UK English, US English — ✅ COMPLETE (v0.21.1.3+1)
+- [x] Selection persists in configuration — ✅ COMPLETE (v0.21.1.3+1)
+- [x] Installer documentation updated — ✅ COMPLETE (v0.21.1.3+1)
 
 ---
 
@@ -76,6 +78,14 @@ RW -k E21:S01:T03 --art --dpz
 ## Version Anchor
 
 **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`
+
+---
+
+## References
+
+- [IPP-E21S01T03 — RW installer language selection](../../../../implementation-cycles/IPP-E21S01T03-rw-installer-language-selection.md)
+- [localisation_config.py](../../../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)
+- [ai-dev-kit-config.example.yaml](../../../../../packages/frameworks/workflow-mgt/config/examples/ai-dev-kit-config.example.yaml)
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S01:T02 CLI init language selection)
-**Version:** v0.21.1.2+1
+**Last Updated:** 2026-06-07 (RW: E21:S01:T03 RW installer language selection)
+**Version:** v0.21.1.3+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S01:T03 @ **v0.21.1.3+1** (RW installer language selection)
+
+- **[E21:S01:T03](epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md)** — Add language selection prompt to RW Installer (`install_release_workflow.py`) — language-first install + `ai-dev-kit-config.yaml`.
+  **Completed:** `2026-06-07T10:43:33Z` | **Version:** `v0.21.1.3+1` | **Agent:** `RW E21:S01:T03 --art` | [IPP](../../implementation-cycles/IPP-E21S01T03-rw-installer-language-selection.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
 #### **RW (2026-06-07)** — E21:S01:T02 @ **v0.21.1.2+1** (CLI init language selection)
 

@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Phase 1 host story:** [E21:S01](../epics/epic-21/story-01-language-selection-at-setup.md) (T01–T07)
 
-**Implementing tasks (kanban anchors):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) **v0.21.1.1+2** COMPLETE (template Step 0) · [E21:S01:T02](../epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md) **v0.21.1.2+1** COMPLETE (CLI init)
+**Implementing tasks (kanban anchors):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) **v0.21.1.1+2** COMPLETE (template Step 0) · [E21:S01:T02](../epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md) **v0.21.1.2+1** COMPLETE (CLI init) · [E21:S01:T03](../epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md) **v0.21.1.3+1** COMPLETE (RW installer)
 
 ---
 
