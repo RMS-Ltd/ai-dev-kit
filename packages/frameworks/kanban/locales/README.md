@@ -75,6 +75,7 @@ RW installer scaffolds live in `packages/frameworks/workflow-mgt/locales/`.
 | E21:S02:T01 | Decision only — **IPW complete** |
 | E21:S02:T02 | Manifest v2 + `keys/` scaffold (en-GB/en-US) — **COMPLETE** @ v0.21.2.2+1 |
 | E21:S02:T03 | Locale detection + `resolve_language` precedence — **COMPLETE** @ v0.21.2.3+1 |
+| E21:S02:T04 | Language switching (`switch_locale`, `adk config locale`) — **COMPLETE** @ v0.21.2.4+1 |
 | E21:S02:T06 | `resolve_locale_key()` for `locales/{lang}/keys/*.yaml` |
 | E21:S02:T07 | Extended fallback chain |
 
@@ -87,6 +88,7 @@ Planning: [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-c
 | Corpus | `tests/test_locale_content_manifest.py` | T1–T7 |
 | Structure v2 | `tests/test_locale_structure_v2.py` | V1–V8 |
 | Detection | `tests/test_locale_detection.py` | T1–T12 |
+| Switching | `tests/test_locale_switching.py` | S1–S7 |
 | Read/resolve | `tests/test_localisation_config_read_resolve.py` | T1–T10 |
 | RW selection | `tests/test_install_release_workflow_localisation.py` | T1–T9 |
 | CLI init | `tests/test_commands.py` (`TestInitCommand`) | T1–T8 |

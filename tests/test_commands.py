@@ -22,6 +22,7 @@ def _init_args(**overrides):
     defaults = {
         "force": False,
         "backend": "git-submodule",
+        "locale": None,
         "language": None,
         "non_interactive": True,
     }
@@ -190,6 +191,29 @@ class TestInitCommand:
         with pytest.raises(SystemExit):
             parser.parse_args(["init", "--language", "fr-FR"])
 
+    @patch("cli.commands.init.print_session_banner")
+    def test_init_locale_en_us_flag(self, _banner, temp_project_dir: Path):
+        """S7: --locale en-US equivalent to --language en-US."""
+        command = InitCommand(_init_args(locale="en-US"))
+        import os
+
+        original_cwd = os.getcwd()
+        try:
+            os.chdir(temp_project_dir)
+            assert command.execute() == 0
+            assert _read_localisation(temp_project_dir / LOCALISATION_CONFIG_FILENAME) == {
+                "language": "en-US",
+                "variant": "US",
+            }
+        finally:
+            os.chdir(original_cwd)
+
+    def test_init_locale_and_language_argparse(self):
+        """S7: --locale fr accepted; --language still en-GB/en-US only."""
+        parser = create_parser()
+        args = parser.parse_args(["init", "--locale", "fr", "--non-interactive"])
+        assert args.locale == "fr"
+
 
 class TestConfigCommand:
     """Tests for the config command."""
@@ -268,6 +292,42 @@ class TestConfigCommand:
             result = command.execute()
             
             assert result == 0
+        finally:
+            os.chdir(original_cwd)
+
+    def test_config_locale_show_default(self, temp_project_dir: Path):
+        """Config locale show returns default when no file."""
+        args = argparse.Namespace(
+            config_action="locale",
+            locale_action="show",
+        )
+        import os
+
+        original_cwd = os.getcwd()
+        try:
+            os.chdir(temp_project_dir)
+            assert ConfigCommand(args).execute() == 0
+        finally:
+            os.chdir(original_cwd)
+
+    def test_config_locale_set_en_us(self, temp_project_dir: Path):
+        """Config locale set writes ai-dev-kit-config.yaml."""
+        args = argparse.Namespace(
+            config_action="locale",
+            locale_action="set",
+            tag="en-US",
+            interactive=False,
+        )
+        import os
+
+        original_cwd = os.getcwd()
+        try:
+            os.chdir(temp_project_dir)
+            assert ConfigCommand(args).execute() == 0
+            assert _read_localisation(temp_project_dir / LOCALISATION_CONFIG_FILENAME) == {
+                "language": "en-US",
+                "variant": "US",
+            }
         finally:
             os.chdir(original_cwd)
 

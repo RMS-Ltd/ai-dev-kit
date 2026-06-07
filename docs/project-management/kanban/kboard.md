@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-07 (RW **v0.21.2.3+1** — E21:S02:T03 locale detection)
-**Version:** v0.21.2.3+1
+**Last Updated:** 2026-06-07 (RW **v0.21.2.4+1** — E21:S02:T04 locale switching)
+**Version:** v0.21.2.4+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
-**Note:** Epics 1, 3, 7, 11 are COMPLETE. Epics 2, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 21 is IN PROGRESS (S02:T01–T03 shipped).
+**Note:** Epics 1, 3, 7, 11 are COMPLETE. Epics 2, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 21 is IN PROGRESS (S02:T01–T04 shipped).
 
 **Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). Legacy `fbuboard.md` / `kanban-board.md` aliases **removed** (intake rename wave).
 
@@ -30,7 +30,7 @@ housekeeping_policy: keep
 
 *(E10:S01 story **COMPLETE** @ v0.10.1.10+2 — RC **APPROVE**; Epic 10 IN PROGRESS — E10:S02 TODO; see [`kanban-completed.md`](kanban-completed.md).)*
 
-- **E21:S02:T04** – Add language switching functionality - 📋 TODO (MEDIUM, **v0.21.2.4+0** kanban-init) | [Task](epics/epic-21/story-02-internationalisation-infrastructure/T04-add-language-switching-functionality.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) | —No IPP— | Last modified: 2026-06-07 17:47 UTC
+- **E21:S02:T05** – Configure date/time/number formatting per locale - 📋 TODO (MEDIUM, **v0.21.2.5+0** kanban-init) | [Task](epics/epic-21/story-02-internationalisation-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) | —No IPP— | Last modified: 2026-06-07 18:00 UTC
 
 - **E05:S09:T15** – Docusaurus adopter-public publish allowlist (FR-114) - 📋 TODO (HIGH, **v0.5.9.15+1** RW -k intake) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:16 UTC
 

@@ -60,6 +60,7 @@ def _init_args(**overrides):
     defaults = {
         "force": False,
         "backend": "git-submodule",
+        "locale": None,
         "language": None,
         "non_interactive": True,
     }

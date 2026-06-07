@@ -42,6 +42,8 @@ detect_browser_locale = _mod.detect_browser_locale
 prompt_language_choice = _mod.prompt_language_choice
 resolve_language_from_args = _mod.resolve_language_from_args
 write_localisation_config = _mod.write_localisation_config
+locale_payload_from_tag = _mod.locale_payload_from_tag
+switch_locale = _mod.switch_locale
 ensure_localisation_config = _mod.ensure_localisation_config
 read_localisation_config = _mod.read_localisation_config
 resolve_language = _mod.resolve_language
@@ -70,6 +72,7 @@ __all__ = [
     "parse_accept_language",
     "parse_locale_tag",
     "ensure_localisation_config",
+    "locale_payload_from_tag",
     "KANBAN_INTAKE_TEMPLATE_KEYS",
     "kanban_locales_root",
     "load_locale_manifest",
@@ -78,6 +81,7 @@ __all__ = [
     "read_localisation_config",
     "resolve_language",
     "resolve_language_from_args",
+    "switch_locale",
     "resolve_locale_asset",
     "resolve_kanban_intake_template",
     "render_locale_text",

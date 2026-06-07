@@ -11,6 +11,7 @@ from cli.adk_version_display import print_session_banner
 from cli.commands import BaseCommand
 from cli.config import Config
 from cli.localisation import (
+    FR006_SUPPORTED_LOCALES,
     LOCALISATION_CONFIG_FILENAME,
     resolve_language_from_args,
     write_localisation_config,
@@ -44,11 +45,18 @@ class InitCommand(BaseCommand):
             help="Default dependency backend (default: git-submodule)",
         )
         parser.add_argument(
+            "--locale",
+            type=str,
+            choices=list(FR006_SUPPORTED_LOCALES),
+            default=None,
+            help="Locale tag (skips interactive prompt; canonical per ADR-024)",
+        )
+        parser.add_argument(
             "--language",
             type=str,
             choices=["en-GB", "en-US"],
             default=None,
-            help="English variant (skips interactive prompt; default en-GB with --non-interactive)",
+            help="English variant alias for --locale (backward compatible)",
         )
         parser.add_argument(
             "--non-interactive",
@@ -74,9 +82,11 @@ class InitCommand(BaseCommand):
             return 1
 
         try:
+            locale_tag = getattr(self.args, "locale", None)
             locale = resolve_language_from_args(
                 self.args.language,
-                self.args.non_interactive,
+                self.args.non_interactive or locale_tag is not None,
+                locale=locale_tag,
             )
             write_localisation_config(project_root, locale)
             print_success(f"Language preference saved: {locale['language']} ({locale['variant']})")

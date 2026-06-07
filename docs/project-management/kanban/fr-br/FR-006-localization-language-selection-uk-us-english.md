@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 **Phase 2 host story:** [E21:S02](../epics/epic-21/story-02-internationalisation-infrastructure.md) (T01–T07)
 
-**Phase 2 implementing tasks:** [E21:S02:T01](../epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **v0.21.2.1+1** COMPLETE ([ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) C1 hybrid) · [E21:S02:T02](../epics/epic-21/story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md) **v0.21.2.2+1** COMPLETE (manifest v2 + keys scaffold) · [E21:S02:T03](../epics/epic-21/story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md) **v0.21.2.3+1** COMPLETE (locale detection + precedence) · E21:S02:T04–T07 TODO
+**Phase 2 implementing tasks:** [E21:S02:T01](../epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **v0.21.2.1+1** COMPLETE ([ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) C1 hybrid) · [E21:S02:T02](../epics/epic-21/story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md) **v0.21.2.2+1** COMPLETE (manifest v2 + keys scaffold) · [E21:S02:T03](../epics/epic-21/story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md) **v0.21.2.3+1** COMPLETE (locale detection + precedence) · [E21:S02:T04](../epics/epic-21/story-02-internationalisation-infrastructure/T04-add-language-switching-functionality.md) **v0.21.2.4+1** COMPLETE (language switching) · E21:S02:T05–T07 TODO
 
 ---
 

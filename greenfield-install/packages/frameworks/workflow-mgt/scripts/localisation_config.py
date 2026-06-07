@@ -5,9 +5,10 @@ Write path: E21:S01:T02/T03 (ai-dev-kit-config.yaml).
 Read/resolve: E21:S01:T05 (manifest asset paths).
 Consumption: E21:S01:T06 (RW scaffolds + kanban intake templates).
 Detection: E21:S02:T03 (system/browser/env precedence in resolve_language).
+Switching: E21:S02:T04 (`switch_locale`, `--locale`, `adk config locale`).
 
 Precedence (resolve_language): override → config file → ADK_LOCALE → system
-locale → accept_language → default_locale (en-GB). CLI switching → E21:S02:T04.
+locale → accept_language → default_locale (en-GB).
 
 Vendored with install_release_workflow.py for adopter projects.
 """
@@ -221,16 +222,63 @@ def prompt_language_choice() -> Dict[str, str]:
         print("  Invalid choice. Enter 1 or 2.")
 
 
+def locale_payload_from_tag(tag: Optional[str]) -> Dict[str, str]:
+    """Build localisation dict for ai-dev-kit-config.yaml from a locale tag."""
+    language = map_to_supported_locale(tag)
+    if language in LOCALE_VARIANTS:
+        return LOCALE_VARIANTS[language].copy()
+    return {"language": language, "variant": language}
+
+
 def resolve_language_from_args(
     language: Optional[str],
     non_interactive: bool,
+    *,
+    locale: Optional[str] = None,
 ) -> Dict[str, str]:
     """Resolve locale from CLI flags or interactive prompt."""
-    if language is not None:
-        return LOCALE_VARIANTS[language].copy()
+    tag = locale if locale is not None else language
+    if tag is not None:
+        return locale_payload_from_tag(tag)
     if non_interactive:
         return LOCALE_VARIANTS[DEFAULT_LANGUAGE].copy()
     return prompt_language_choice()
+
+
+def switch_locale(
+    project_root: Path,
+    locale_tag: Optional[str] = None,
+    *,
+    interactive: bool = False,
+    dry_run: bool = False,
+) -> Dict[str, Any]:
+    """
+    Switch persisted project locale by rewriting ai-dev-kit-config.yaml.
+
+    Returns dict with previous, current, and path (or dry_run flag).
+    """
+    previous = read_localisation_config(project_root)
+    if interactive:
+        current = prompt_language_choice()
+    else:
+        current = locale_payload_from_tag(locale_tag)
+    config_path = project_root / LOCALISATION_CONFIG_FILENAME
+    if dry_run:
+        return {
+            "previous": previous,
+            "current": current,
+            "path": None,
+            "dry_run": True,
+        }
+    written = write_localisation_config(project_root, current)
+    print(f"✅ Language preference saved: {current['language']} ({current['variant']})")
+    print(f"   Localisation config: {written}")
+    return {
+        "previous": previous,
+        "current": current,
+        "path": written,
+        "dry_run": False,
+    }
 
 
 def write_localisation_config(project_root: Path, locale: Dict[str, str]) -> Path:
@@ -247,6 +295,7 @@ def ensure_localisation_config(
     project_root: Path,
     *,
     language: Optional[str] = None,
+    locale: Optional[str] = None,
     non_interactive: bool = False,
     force: bool = False,
     dry_run: bool = False,
@@ -255,20 +304,39 @@ def ensure_localisation_config(
     Ensure ai-dev-kit-config.yaml exists at project root.
 
     If the file exists and force is False, skip write and return None.
+    When force is True, overwrites via switch_locale semantics.
     """
     config_path = project_root / LOCALISATION_CONFIG_FILENAME
     if config_path.exists() and not force:
         print(f"ℹ️  Using existing localisation config: {config_path}")
         return None
 
-    locale = resolve_language_from_args(language, non_interactive)
+    tag = locale if locale is not None else language
+    interactive = tag is None and not non_interactive
+
+    if force and config_path.exists():
+        result = switch_locale(
+            project_root,
+            tag,
+            interactive=interactive,
+            dry_run=dry_run,
+        )
+        if dry_run:
+            return None
+        return result.get("path")
+
+    locale_dict = resolve_language_from_args(
+        language,
+        non_interactive,
+        locale=locale,
+    )
     if dry_run:
         print(f"🔍 [DRY RUN] Would write {config_path}:")
-        print(f"   localisation: {locale}")
+        print(f"   localisation: {locale_dict}")
         return None
 
-    written = write_localisation_config(project_root, locale)
-    print(f"✅ Language preference saved: {locale['language']} ({locale['variant']})")
+    written = write_localisation_config(project_root, locale_dict)
+    print(f"✅ Language preference saved: {locale_dict['language']} ({locale_dict['variant']})")
     print(f"   Localisation config: {written}")
     return written
 
@@ -304,9 +372,19 @@ def read_localisation_config(project_root: Path) -> Dict[str, str]:
     if not isinstance(localisation, dict):
         return _default_locale_dict()
 
-    language = normalize_language(localisation.get("language"))
-    variant = LOCALE_VARIANTS[language]["variant"]
-    return {"language": language, "variant": variant}
+    raw_language = localisation.get("language")
+    if not isinstance(raw_language, str) or not raw_language.strip():
+        return _default_locale_dict()
+
+    mapped = map_to_supported_locale(raw_language)
+    if mapped not in FR006_SUPPORTED_LOCALES:
+        return _default_locale_dict()
+
+    result = locale_payload_from_tag(mapped)
+    stored_variant = localisation.get("variant")
+    if mapped in LOCALE_VARIANTS and stored_variant in ("UK", "US"):
+        result["variant"] = stored_variant
+    return result
 
 
 def resolve_language(

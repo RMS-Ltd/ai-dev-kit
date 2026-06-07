@@ -1117,11 +1117,17 @@ Brownfield (existing repo):
         help='Close ai-dev-kit issues whose install sign-off checks passed (requires gh auth)',
     )
     parser.add_argument(
+        '--locale',
+        type=str,
+        default=None,
+        help='Locale tag for ai-dev-kit-config.yaml (canonical; skips interactive prompt)',
+    )
+    parser.add_argument(
         '--language',
         type=str,
         choices=['en-GB', 'en-US'],
         default=None,
-        help='English variant for ai-dev-kit-config.yaml (skips interactive language prompt)',
+        help='English variant alias for --locale (backward compatible)',
     )
     parser.add_argument(
         '--non-interactive',
@@ -1160,10 +1166,12 @@ Brownfield (existing repo):
     print(f"📁 Project root: {project_root}")
 
     print_section_header("🌐 Language / Localisation", project_root)
+    _locale_tag = args.locale or args.language
     ensure_localisation_config(
         project_root,
         language=args.language,
-        non_interactive=args.non_interactive or args.language is not None,
+        locale=args.locale,
+        non_interactive=args.non_interactive or _locale_tag is not None,
         force=args.force,
         dry_run=args.dry_run,
     )

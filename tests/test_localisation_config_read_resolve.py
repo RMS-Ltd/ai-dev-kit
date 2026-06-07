@@ -55,14 +55,25 @@ def test_t2_read_missing_defaults_en_gb(loc):
 
 
 def test_t3_invalid_language_defaults(loc):
-    """T3: Invalid language in file normalizes to en-GB."""
+    """T3: Unknown language in file normalizes to en-GB."""
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        (root / loc.LOCALISATION_CONFIG_FILENAME).write_text(
+            "localisation:\n  language: xx-YY\n  variant: XX\n",
+            encoding="utf-8",
+        )
+        assert loc.read_localisation_config(root)["language"] == "en-GB"
+
+
+def test_t3b_supported_language_round_trip(loc):
+    """T3b: FR-006 registry tag fr-FR maps to fr (E21:S02:T04)."""
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
         (root / loc.LOCALISATION_CONFIG_FILENAME).write_text(
             "localisation:\n  language: fr-FR\n  variant: FR\n",
             encoding="utf-8",
         )
-        assert loc.read_localisation_config(root)["language"] == "en-GB"
+        assert loc.read_localisation_config(root)["language"] == "fr"
 
 
 def test_t4_load_kanban_manifest(loc):

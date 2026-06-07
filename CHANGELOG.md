@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.2.3+1] - 07-06-26
+## [0.21.2.4+1] - 07-06-26
 
-E21:S02:T03 — **Change implemented:** Locale detection (system/browser/env) + ADR-024 `resolve_language` precedence. SemVer **v0.4.1077+1**.
+E21:S02:T04 — **Change implemented:** Language switching (`switch_locale`, `adk config locale`, `--locale`). SemVer **v0.4.1078+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.2.3+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.2.4+1.md)
 
 ---
