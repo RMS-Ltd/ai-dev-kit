@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (v0.21.8.2+1 — T02 COMPLETE; T03 next)  
-**Version:** v0.21.8.2+1  
+**Last updated:** 2026-06-07 (v0.21.8.3+1 — T03 COMPLETE; Layer 1 shipped)  
+**Version:** v0.21.8.3+1  
 **Code:** E21S08
 
 ---
@@ -32,8 +32,8 @@ Deliver a layered accessibility programme:
 
 | Layer | Focus | Tasks | Status |
 | ----- | ----- | ----- | ------ |
-| **0** | Foundations — CLI audit + strategy ADR | T01, T02 | **Active** |
-| **1** | CLI / terminal remediation | T03, T07 (CLI guide slice) | **Active** (after Layer 0) |
+| **0** | Foundations — CLI audit + strategy ADR | T01, T02 | **COMPLETE** |
+| **1** | CLI / terminal remediation | T03, T07 (CLI guide slice) | **COMPLETE** (T03 @ v0.21.8.3+1; T07 CLI slice deferred) |
 | **2** | Public Docusaurus portal | T04 | Deferred |
 | **3** | Markdown / kanban corpora | T05 | Deferred |
 | **4** | Agent workflow outputs | T06 | Deferred |
@@ -51,8 +51,10 @@ Deliver a layered accessibility programme:
 - [x] **E21:S08:T02 – Layered accessibility strategy ADR (Layer 0)** - COMPLETE (v0.21.8.2+1 — ADR-025)
   - Task: [`T02-adk-accessibility-strategy-adr`](story-08-accessibility/T02-adk-accessibility-strategy-adr.md)
   - ADR: [ADR-025](../../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md)
-- [ ] **E21:S08:T03 – CLI and terminal output accessibility (Layer 1)** - TODO
+- [x] **E21:S08:T03 – CLI and terminal output accessibility (Layer 1)** - COMPLETE (v0.21.8.3+1)
   - Task: [`T03-cli-and-terminal-output-accessibility`](story-08-accessibility/T03-cli-and-terminal-output-accessibility.md)
+  - Planning: [IPP-E21S08T03](../../implementation-cycles/IPP-E21S08T03-cli-terminal-accessibility.md)
+  - Conventions: [cli-accessibility-conventions.md](../../../governance/standards/cli-accessibility-conventions.md)
 - [ ] **E21:S08:T04 – Docusaurus public docs portal accessibility (Layer 2)** - DEFERRED
   - Task: [`T04-docusaurus-public-docs-portal-accessibility`](story-08-accessibility/T04-docusaurus-public-docs-portal-accessibility.md)
   - Blocked by: Layer 1 COMPLETE
@@ -74,10 +76,10 @@ Deliver a layered accessibility programme:
 
 - [x] CLI baseline audit published with severity-ranked gaps (Layers 2–5 catalogue-only) — T01 @ v0.21.8.1+1
 - [x] Layered strategy ADR defines Layer 1 exit criteria — T02 @ v0.21.8.2+1 (ADR-025)
-- [ ] CLI output uses text labels (not emoji/colour-only); honours `NO_COLOR`
-- [ ] FR-108 error shape preserved; plain-language recovery paths
-- [ ] CLI accessibility conventions doc + tests green
-- [ ] CLI adopter notes in user docs
+- [x] CLI output uses text labels (not emoji/colour-only); honours `NO_COLOR` — T03 @ v0.21.8.3+1
+- [x] FR-108 error shape preserved; plain-language recovery paths — T03 @ v0.21.8.3+1
+- [x] CLI accessibility conventions doc + tests green — T03 @ v0.21.8.3+1
+- [x] CLI adopter notes in user docs — T03 @ v0.21.8.3+1
 
 ### Layers 2–5 (deferred — story-level, not initial scope)
 

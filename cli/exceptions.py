@@ -25,7 +25,7 @@ class AIDevKitError(Exception):
     def __str__(self) -> str:
         """Return formatted error message."""
         if self.recovery_suggestions:
-            suggestions = "\n".join(f"  • {s}" for s in self.recovery_suggestions)
+            suggestions = "\n".join(f"  - {s}" for s in self.recovery_suggestions)
             return f"{self.message}\n\nSuggestions:\n{suggestions}"
         return self.message
 

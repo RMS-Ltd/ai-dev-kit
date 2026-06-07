@@ -23,8 +23,8 @@ This document provides a complete reference for the `ai-dev-kit` CLI tool comman
 
 ### Scope (greenfield vs brownfield)
 
-- **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S9T1](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
-- **Brownfield SoT:** [INSTALL — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · **Policy:** [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S9T1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- **Brownfield SoT:** [INSTALL — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · **Policy:** [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 
 **Installation:**
 
@@ -45,52 +45,46 @@ pip install ai-dev-kit
 
 ---
 
+## Accessibility
+
+CLI status lines always include text labels (`Error:`, `Success:`, `Warning:`, `Info:`). Emoji prefixes appear only when colour is enabled.
+
+- **`NO_COLOR`** — Set this environment variable (any value) to suppress emoji and ANSI output (see [no-color.org](https://no-color.org/)).
+- **`--no-color`** — Global flag on any command: `ai-dev-kit --no-color install workflow-mgmt` sets `NO_COLOR=1` for that run.
+- **Install errors** — Structured `ERROR [ADK-…]` banners (FR-108) are text-first and unchanged by colour settings.
+
+Maintainer conventions: [cli-accessibility-conventions.md](../../governance/standards/cli-accessibility-conventions.md) · Strategy: [ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md).
+
+---
+
 ## Core Commands
 
 ### `ai-dev-kit init`
 
-Initialize ai-dev-kit in your project. **Language selection is the first step** (FR-006 Phase 1 / E21:S01:T02): choose UK or US English before framework configuration is written.
+Initialize ai-dev-kit in your project.
 
 **Usage:**
 
 ```bash
-ai-dev-kit init [--backend <backend>] [--language en-GB|en-US] [--non-interactive] [--force]
+ai-dev-kit init [--path <path>] [--backend <backend>]
 ```
 
 **Options:**
-- `--backend <backend>` - Default dependency backend (`git-submodule`, `git-subtree`, `npm`, `pip`; default: `git-submodule`)
-- `--language en-GB|en-US` - English variant (skips interactive prompt)
-- `--non-interactive` - Skip language prompt; default **UK English (en-GB)**
-- `--force` - Overwrite existing `.ai-dev-kit.yaml` and `ai-dev-kit-config.yaml`
-
-**Interactive prompt (when neither `--language` nor `--non-interactive` is set):**
-
-```text
-Select your preferred English variant:
-  [1] UK English (en-GB) — colour, organise, realise  [default]
-  [2] US English (en-US) — color, organize, realize
-Enter choice [1-2]:
-```
+- `--path <path>` - Project root directory (default: current directory)
+- `--backend <backend>` - Default dependency backend (git-submodule, npm, pip)
 
 **Example:**
 
 ```bash
-# Initialize in current directory (interactive language prompt)
+# Initialize in current directory
 ai-dev-kit init
 
-# Non-interactive / CI — UK English default
-ai-dev-kit init --non-interactive
-
-# US English without prompt
-ai-dev-kit init --language en-US --non-interactive
-
 # Initialize with specific backend
-ai-dev-kit init --backend git-submodule --non-interactive
+ai-dev-kit init --backend git-submodule
 ```
 
 **Creates:**
-- `ai-dev-kit-config.yaml` - Language preference (`localisation.language`, `localisation.variant`; see [post-template Step 0](framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english))
-- `.ai-dev-kit.yaml` - Framework dependency configuration
+- `.ai-dev-kit.yaml` - Configuration file
 
 ---
 

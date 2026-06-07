@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.8.2+1 — E21:S08:T02 COMPLETE; ADR-025)  
+**Last updated:** 2026-06-07 (v0.21.8.3+1 — E21:S08:T03 COMPLETE; Layer 1 CLI)  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -49,9 +49,9 @@ housekeeping_policy: keep
   - Story: [`story-07-rtl-and-extended-locales.md`](story-07-rtl-and-extended-locales.md)
   - Tasks: T01-T02 TODO
 
-- [ ] **E21:S08 – Accessibility** - IN PROGRESS (v0.21.8.2+1 — T01–T02 COMPLETE)
+- [ ] **E21:S08 – Accessibility** - IN PROGRESS (v0.21.8.3+1 — Layer 0–1 COMPLETE)
   - Story: [`story-08-accessibility.md`](story-08-accessibility.md)
-  - Tasks: T01–T02 COMPLETE; T03 active; T04–T07 DEFERRED (Layers 2–5)
+  - Tasks: T01–T03 COMPLETE; T04–T07 DEFERRED (Layers 2–5)
 
 
 ---

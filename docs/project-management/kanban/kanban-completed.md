@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S02:T07 translation fallback chain)
-**Version:** v0.21.2.7+1
+**Last Updated:** 2026-06-07 (RW: E21:S08:T03 CLI accessibility Layer 1)
+**Version:** v0.21.8.3+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S08:T03 @ **v0.21.8.3+1** (CLI accessibility Layer 1)
+
+- **[E21:S08:T03](epics/epic-21/story-08-accessibility/T03-cli-and-terminal-output-accessibility.md)** — Text-first `print_*`, `NO_COLOR` / `--no-color`, stderr warnings, ASCII markers; [cli-accessibility-conventions.md](../../../governance/standards/cli-accessibility-conventions.md); [IPP-E21S08T03](../../../implementation-cycles/IPP-E21S08T03-cli-terminal-accessibility.md).
 
 #### **RW (2026-06-07)** — E21:S02:T07 @ **v0.21.2.7+1** (translation fallback chain)
 
