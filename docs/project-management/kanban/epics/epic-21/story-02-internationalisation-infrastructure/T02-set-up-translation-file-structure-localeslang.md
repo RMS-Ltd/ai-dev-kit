@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Create translation file structure under `locales/{lang}/` with documented naming conventions.
 
 ---
 

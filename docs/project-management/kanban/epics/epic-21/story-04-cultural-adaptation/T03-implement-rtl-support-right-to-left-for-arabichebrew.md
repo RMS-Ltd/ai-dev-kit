@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Implement RTL (Right-to-Left) support for Arabic/Hebrew locales.
 
 ---
 

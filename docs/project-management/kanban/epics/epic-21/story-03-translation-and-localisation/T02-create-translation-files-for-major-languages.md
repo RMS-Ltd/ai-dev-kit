@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Create translation files for major target languages (rollout matrix).
 
 ---
 

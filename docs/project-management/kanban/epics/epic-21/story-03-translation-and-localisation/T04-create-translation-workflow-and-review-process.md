@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Create translation workflow and review process for contributors.
 
 ---
 

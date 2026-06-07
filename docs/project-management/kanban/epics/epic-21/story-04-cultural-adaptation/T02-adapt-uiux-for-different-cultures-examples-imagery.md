@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Adapt UI/UX examples and imagery for different cultures.
 
 ---
 

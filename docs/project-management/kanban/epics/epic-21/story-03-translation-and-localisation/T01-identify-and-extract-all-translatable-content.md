@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Identify and extract all translatable framework content into translation keys.
 
 ---
 

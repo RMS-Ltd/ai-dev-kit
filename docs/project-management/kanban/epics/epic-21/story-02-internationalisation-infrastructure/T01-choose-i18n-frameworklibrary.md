@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Evaluate and select i18n framework/library for ai-dev-kit translation infrastructure.
 
 ---
 

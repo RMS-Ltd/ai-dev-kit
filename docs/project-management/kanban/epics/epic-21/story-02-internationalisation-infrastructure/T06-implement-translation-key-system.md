@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Implement translation key system for extractable user-facing strings.
 
 ---
 

@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Configure date, time, and number formatting per locale.
 
 ---
 

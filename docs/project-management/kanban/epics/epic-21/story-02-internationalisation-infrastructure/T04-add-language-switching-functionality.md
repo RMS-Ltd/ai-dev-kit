@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Add language switching functionality for user-facing framework surfaces.
 
 ---
 

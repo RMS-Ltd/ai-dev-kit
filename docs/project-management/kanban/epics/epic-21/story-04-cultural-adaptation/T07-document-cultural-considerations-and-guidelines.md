@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Document cultural considerations and guidelines for contributors.
 
 ---
 

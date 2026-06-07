@@ -9,6 +9,16 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+
+## [0.21.1.2+0] - 07-06-26
+
+E21:S01:T02 — **Change implemented:** Kanban-init doc filing — Add language selection prompt to CLI tool (`ai-dev-kit init`). SemVer **v0.4.1032+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.2+0.md)
+
+---
+
+
 ## [0.21.1.1+1] - 07-06-26
 
 E21:S01:T01 — **Change implemented:** Epic 21 S00→S01 renumber hygiene — canonical story-01…story-07 paths, kanban-init tables S05–S07, FR-006 host story fix. SemVer **v0.4.1031+1**.

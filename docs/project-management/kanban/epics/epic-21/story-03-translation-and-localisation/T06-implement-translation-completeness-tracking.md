@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Implement translation completeness tracking per locale.
 
 ---
 

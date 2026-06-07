@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Set up translation fallback chain: selected English → UK English → US English.
 
 ---
 
