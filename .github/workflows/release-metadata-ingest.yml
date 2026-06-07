@@ -1,0 +1,38 @@
+# FR-115 / FR-116 — Daily async ingest of changelog + semver-registry into read model.
+name: Release metadata ingest
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install "pyyaml>=6.0"
+
+      - name: Full ingest
+        run: python packages/frameworks/workflow-mgt/scripts/release_metadata/ingest_release_metadata.py --full
+
+      - name: Advisory semver audit
+        run: python packages/frameworks/workflow-mgt/scripts/release_metadata/audit_release_metadata.py
+
+      - name: Upload read model artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: adk-release-metadata-sqlite
+          path: .data/adk-release-metadata.sqlite
+          retention-days: 7
+          if-no-files-found: error

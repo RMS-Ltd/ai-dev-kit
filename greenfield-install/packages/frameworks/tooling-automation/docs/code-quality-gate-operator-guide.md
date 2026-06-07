@@ -58,15 +58,31 @@ When CodeQL is missing, validator **exits 0** with `ADVISORY SKIP` unless `--sar
 
 ### 6-hour monitor
 
-Cron: `0 */6 * * *`
+Cron: `0 */6 * * *` (00:00, 06:00, 12:00, 18:00 — local timezone of the cron daemon)
+
+**Install (recommended):**
 
 ```bash
+bash packages/frameworks/workflow-mgt/scripts/install/install_cqg_cron.sh --execute
+```
+
+Dry-run first: omit `--execute`. Uninstall: `--remove`. The installer adds a cron-safe wrapper (`cqg_monitor_cron.sh`) with Homebrew/pyenv on `PATH` for CodeQL.
+
+**Manual run / one-off test:**
+
+```bash
+bash packages/frameworks/workflow-mgt/scripts/cqg_monitor_cron.sh
+# or
 python packages/frameworks/workflow-mgt/scripts/cqg_monitor.py
 ```
+
+Do **not** paste the cron schedule line into zsh — `*/6` is glob-expanded interactively. Use `crontab -e` or the installer above.
 
 **Skip:** HEAD unchanged and `.cqg/last-run.json` age **< 12 h**  
 **Force:** age **≥ 12 h** even if HEAD unchanged  
 **Run:** HEAD changed
+
+Log file: `.cqg/monitor.log` (gitignored with `.cqg/`).
 
 Use a **clean checkout** of `dev` (no uncommitted changes) for comparable snapshots.
 
@@ -112,3 +128,5 @@ Follow [cqg-parity-template.md](./cqg-parity-template.md) at a pinned SHA. Targe
 | CLI | `scripts/run_cqg.py` |
 | RW validator | `workflow-mgt/scripts/validation/validate_code_quality_gate.py` |
 | Monitor | `workflow-mgt/scripts/cqg_monitor.py` |
+| Cron wrapper | `workflow-mgt/scripts/cqg_monitor_cron.sh` |
+| Cron installer | `workflow-mgt/scripts/install/install_cqg_cron.sh` |

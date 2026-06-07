@@ -297,10 +297,6 @@ class TaskTemplateGenerator:
             content
         )
         
-        # Generate dependencies
-        f"E{epic}:S{story}:T{task_num-1:02d}" if task_num > 1 else None
-        f"E{epic}:S{story}:T{task_num+1:02d}"
-        
         depends_on = f"- E{epic}:S{story}:T{task_num-1:02d}" if task_num > 1 else "- None"
         blocks = f"- E{epic}:S{story}:T{task_num+1:02d}"
         

@@ -8,13 +8,20 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = REPO_ROOT / "docs" / "knowledge" / "fr114-notion-migration-manifest.json"
 
 
 def normalize_url(url: str, page_id: str) -> str:
-    if url and ("notion.so/" in url or "notion.com/" in url):
+    host = (urlparse(url).hostname or "").lower() if url else ""
+    is_notion_host = (
+        host in {"notion.so", "notion.com"}
+        or host.endswith(".notion.so")
+        or host.endswith(".notion.com")
+    )
+    if is_notion_host:
         m = re.search(r"/p/([0-9a-f-]+)", url, re.I)
         if m:
             return f"https://www.notion.so/{m.group(1)}"

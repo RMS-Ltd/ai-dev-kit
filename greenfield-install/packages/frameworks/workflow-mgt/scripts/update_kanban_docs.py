@@ -381,7 +381,6 @@ def resolve_kanban_paths(
                     abs_candidate = (project_root / candidate).resolve()
                 if abs_candidate.exists() and abs_candidate.is_file():
                     paths['kanban_board'] = abs_candidate
-                    board_found = True
                     break
             except Exception:
                 continue
@@ -2686,7 +2685,6 @@ def main():
             print(f"💡 Suggestion: Verify kanban_root path: {kanban_root}")
             if args.allow_override:
                 print("⚠️  Continuing without story doc (allow_override)")
-                story_doc = None
             else:
                 print(
                     f"❌ REQUIRED DOC MISSING: Story doc not found for Epic {epic}, Story {story}"

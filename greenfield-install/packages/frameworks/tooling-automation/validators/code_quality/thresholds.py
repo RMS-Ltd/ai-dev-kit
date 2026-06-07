@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from enum import Enum
 
-from .report_model import CodeQualityReport, Severity
+from .report_model import CodeQualityReport
 
 
 class ThresholdMode(str, Enum):
@@ -16,13 +16,13 @@ class ThresholdMode(str, Enum):
 
 def parse_threshold(value: str) -> ThresholdMode:
     normalized = value.strip().lower()
-    for mode in ThresholdMode:
-        if mode.value == normalized:
-            return mode
-    raise ValueError(
-        f"Invalid threshold mode {value!r}; expected one of: "
-        + ", ".join(m.value for m in ThresholdMode)
-    )
+    try:
+        return ThresholdMode(normalized)
+    except ValueError as exc:
+        allowed = ", ".join(member.value for member in ThresholdMode.__members__.values())
+        raise ValueError(
+            f"Invalid threshold mode {value!r}; expected one of: {allowed}"
+        ) from exc
 
 
 def threshold_breached(report: CodeQualityReport, mode: ThresholdMode) -> bool:

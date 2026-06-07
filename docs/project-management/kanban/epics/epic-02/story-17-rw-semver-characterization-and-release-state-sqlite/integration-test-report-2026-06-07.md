@@ -3,7 +3,9 @@
 **Date:** 2026-06-07  
 **Branch:** `dev` (post sign-off RW)  
 **Records:** [`test-records/`](test-records/)  
-**Sign-off:** 2026-06-07 — operator approved integration; spike → dev PR filed
+**Sign-off:** 2026-06-07 — operator approved integration; spike → dev PR #40 filed
+
+**Merge note (PR #40):** Spike branch SemVer patches **1043–1055** remapped on merge into `dev` (remote `dev` already held **1040–1042** for E01/E08 releases). Local-only spike tags `v0.4.1037`–`v0.4.1049` must **not** be pushed; use remapped registry entries when tagging post-merge.
 
 ---
 

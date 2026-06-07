@@ -9,15 +9,14 @@ housekeeping_policy: keep
 # Epic 8, Story 3, Task 12: Code Quality maintainability backlog (**BR-099**)
 
 **Task ID:** E08:S03:T12  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (wave-6 IPW @ **v0.8.3.12+9**; **103/Fair** @ `d5c4bca5`; Path B)
-**Version Anchor:** v0.8.3.12+9  
-**Version:** v0.8.3.12+9
+**Last updated:** 2026-06-07 (RW — **re-closed** @ **v0.8.3.12+13**; prior sign-off +11; local CQG +12)
+**Version Anchor:** v0.8.3.12+13
 **Code:** E08S03T12
 
-**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 5 @ **v0.8.3.12+7**. Step 28: **103/Fair** @ `d5c4bca5` (operator UI + CQG). Wave 6 **planned** per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15). Task **IN PROGRESS** until **Good+**.
+**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. **COMPLETE** — **re-closed** @ **v0.8.3.12+13** (terminal forensic anchor); operator dashboard **Good** @ `main` `ed379ab` (+11); handoff **T16** perpetual.
 
 **Upstream:** [BR-099 — Code Quality maintainability backlog](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 
@@ -44,7 +43,7 @@ Publication Status: NOT_APPLICABLE
 4. Wave 4: T13-deferred `py/print-during-import` remediation per [IPP §4.3](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#43-wave-4-ledger-done--do-not-re-execute) (**done** @ v0.8.3.12+6).
 5. Wave 5: CodeQL-aligned maintainability burn-down — **shipped** @ **v0.8.3.12+7**.
 6. Closure: post–wave-5 merge capture @ step 28 — **103/Fair** @ `d5c4bca5` (**done** @ IPW).
-7. Wave 6: CodeQL-aligned burn-down per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15) — **planned**; awaiting **`implement wave 6`**.
+7. Wave 6: CodeQL-aligned burn-down per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15) — **code shipped** @ **v0.8.3.12+10**; local CQG monitor verified @ **v0.8.3.12+12** (**87/Fair** @ `42515103`).
 
 ---
 
@@ -390,7 +389,35 @@ Publication Status: NOT_APPLICABLE
 | Mirror sync | **FIX** | `scripts/sync_greenfield_install.py` after Chunk L/M on `packages/` |
 | Reliability findings in CQG output | **DEFER** | Out of T12 scope (T13); do not fix in wave 6 |
 
-**Verification:** Run `run_cqg.py` before RW (T34); maintainability count must trend below **103**.
+**Verification:** Run `run_cqg.py` before RW (T34); maintainability count must trend below **103**. **Result @ +10:** **87** (local CQG; −16).
+
+---
+
+## Post-wave-6 manifest (2026-06-07 — IPP step 57)
+
+| Field | Value |
+| ----- | ----- |
+| Snapshot date | 2026-06-07 10:45 UTC |
+| Branch / ref | `dev` (pre-RW local) |
+| Open maintainability | **87** |
+| Dashboard score | **Fair** (local CQG) |
+| Delta vs step-28 baseline | **−16** (103 → 87) |
+| RW | **v0.8.3.12+10** |
+
+**Disposition:** Operator sign-off @ **v0.8.3.12+11** — dashboard **Good** Maintainability + Reliability @ `main` `ed379ab` (2026-06-07).
+
+---
+
+## Closure manifest (operator sign-off — 2026-06-07)
+
+| Field | Value |
+| ----- | ----- |
+| Dashboard | [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+| Ref | `main` @ `ed379abb` |
+| Maintainability score | **Good** |
+| Reliability score | **Good** |
+| RW | **v0.8.3.12+13** (re-close; +11 dashboard Good; +12 local CQG) |
+| Handoff | **E08:S03:T16** perpetual (deferral lifted) |
 
 ---
 
@@ -399,9 +426,9 @@ Publication Status: NOT_APPLICABLE
 - [x] Baseline manifest captured in this task doc (rule → count).
 - [x] Wave-1 rule groups remediated or waived with documented rationale.
 - [x] Open maintainability count reduced ≥50% vs baseline (**560→145**, −74.1% on dashboard re-scan).
-- [ ] Maintainability score **Good** or better (**Fair** @ **103** post–wave-5 merge; wave 6 **planned** per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15)).
+- [x] Maintainability score **Good** or better (operator verified @ `main` `ed379ab`, 2026-06-07).
 - [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local — 407 / 119 passed @ 2026-06-06).
-- [ ] **BR-099** terminal closure via **RW E08:S03:T12 --art** when **Good+** confirmed (interim releases @ +1–+8 done).
+- [x] **BR-099** terminal closure via **RW E08:S03:T12 --art** @ **v0.8.3.12+11**; **re-closed** @ **v0.8.3.12+13**.
 
 ---
 

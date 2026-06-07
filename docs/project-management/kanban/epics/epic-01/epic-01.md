@@ -38,9 +38,9 @@ housekeeping_policy: keep
   - Story: [`story-05-comprehensive-project-analysis-for-canonical-patterns.md`](story-05-comprehensive-project-analysis-for-canonical-patterns.md)
   - Tasks: T00 ✅ COMPLETE, T01-T06 TODO (Comprehensive analysis of ~21 projects across 10 dimensions)
 
-- [ ] **E1:S06 – Repository CI/CD Setup** - IN PROGRESS (v0.1.6.1+1 – T01 IN PROGRESS: BYOB badge setup with test, coverage, and code quality badges)
+- [ ] **E1:S06 – Repository CI/CD Setup** - IN PROGRESS (v0.1.6.2+1 – T02 ✅ COMPLETE; T01 IN PROGRESS)
   - Story: [`story-06-repository-ci-cd-setup.md`](story-06-repository-ci-cd-setup.md)
-  - Tasks: T01 IN PROGRESS (v0.1.6.1+1)
+  - Tasks: T01 IN PROGRESS (v0.1.6.1+1); **T02 ✅ COMPLETE** (**v0.1.6.2+1** — FR-117 MIT LICENSE)
 
 
 ---

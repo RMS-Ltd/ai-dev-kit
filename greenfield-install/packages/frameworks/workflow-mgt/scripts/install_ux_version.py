@@ -144,8 +144,8 @@ def _convert_to_semver(internal: str, project_root: Path) -> Optional[str]:
             import os
 
             os.chdir(previous_cwd)
-        except Exception as _suppressed_exc:
-            del _suppressed_exc
+        except Exception:
+            pass
 def _resolve_internal(project_root: Optional[Path]) -> Optional[str]:
     start = (project_root or Path.cwd()).resolve()
     internal = _load_internal_from_rw_config(start)

@@ -5,7 +5,6 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-_CQG = Path(__file__).resolve().parents[1] / "code_quality"
 _VALIDATORS = Path(__file__).resolve().parents[1]
 if str(_VALIDATORS) not in sys.path:
     sys.path.insert(0, str(_VALIDATORS))

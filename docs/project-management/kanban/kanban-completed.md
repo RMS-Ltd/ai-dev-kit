@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E02:S17:T06 friction report)
-**Version:** v0.2.17.6+1
+**Last Updated:** 2026-06-07 (RW: E08:S03:T12 re-close; merge spike E02:S17)
+**Version:** v0.8.3.12+13
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,16 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+13** (BR-099 **re-close** — terminal forensic anchor)
+
+- **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — **BR-099**: Re-closed @ **+13** — four-surface RW reconciliation; consolidates dashboard **Good** @ +11 and local CQG @ +12; handoff **T16** perpetual.
+  **Completed:** `2026-06-07T18:06:22Z` | **Version:** `v0.8.3.12+13` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
+
+#### **RW (2026-06-07)** — E02:S16:T10 @ **v0.2.16.10+8** (E02:S17 integration sign-off)
+
+- **[E02:S16:T10](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md)** — Integration test report + wave artifacts (91/91 pytest); spike → dev PR.
+  **Completed:** `2026-06-07T19:27:03Z` | **Version:** `v0.2.16.10+8` | **Agent:** `RW E02:S16:T10 --art` | [integration report](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/integration-test-report-2026-06-07.md)
 
 #### **RW (2026-06-07)** — E02:S17:T06 @ **v0.2.17.6+1** (high-stress + friction report)
 
@@ -30,10 +40,20 @@ housekeeping_policy: keep
 - **[E02:S17:T05](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T05-parity-replay-scenario-matrix-on-sqlite.md)** — Parity replay: 32 scenario IDs, parity harness, run log + diff report; 65 pytest; zero unexplained mismatches.
   **Completed:** `2026-06-07T18:27:36Z` | **Version:** `v0.2.17.5+1` | **Agent:** `RW E02:S17:T05 --art` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [parity-run-log](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/parity-run-log.md)
 
-#### **RW (2026-06-07)** — E02:S17:T04 @ **v0.2.17.4+1** (SQLite release-state backend)
+#### **RW (2026-06-07)** — E01:S06:T02 @ **v0.1.6.2+1** (FR-117 MIT LICENSE file and repository legal metadata)
+
+- **[E01:S06:T02](epics/epic-01/story-06-repository-ci-cd-setup/T02-mit-license-file-and-repository-legal-metadata-fr117.md)** — **FR-117**: Root MIT `LICENSE`; README and CONTRIBUTING legal metadata aligned.
+  **Completed:** `2026-06-07T17:56:44Z` | **Version:** `v0.1.6.2+1` | **Agent:** `RW E01:S06:T02 --art` | [FR-117](fr-br/FR-117-mit-license-file-and-repository-legal-metadata.md)
+
+#### **RW (2026-06-07)** — E02:S17:T04 @ **v0.2.17.4+2** (SQLite release-state backend)
 
 - **[E02:S17:T04](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T04-implement-sqlite-changelog-semver-registry-backend.md)** — SQLite release-state module, dual-backend wiring, AC1–AC4 (49 pytest).
   **Completed:** `2026-06-07T18:01:33Z` | **Version:** `v0.2.17.4+2` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [—IPP—](../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md)
+
+#### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+11** (BR-099 maintainability closure — dashboard Good)
+
+- **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — **BR-099**: Maintainability backlog burn-down waves 1–6; operator sign-off **Good** @ `main` `ed379ab`; handoff **T16** perpetual.
+  **Completed:** `2026-06-07T17:33:00Z` | **Version:** `v0.8.3.12+11` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
 #### **RW (2026-06-07)** — E02:S17:T02 @ **v0.2.17.2+5** (baseline Waves 1–4 complete)
 
@@ -44,6 +64,14 @@ housekeeping_policy: keep
 
 - **[E02:S17:T01](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T01-rw-ipw-scenario-matrix-and-run-log-schema.md)** — RW/IPW scenario matrix (28 scenarios), run-log schema, baseline log seed.
   **Completed:** `2026-06-07T17:22:50Z` | **Version:** `v0.2.17.1+2` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
+
+#### **RW (2026-06-07)** — E02:S01:T25 @ **v0.2.1.25+1** (FR-115+FR-116 async release-metadata ingest v1)
+
+- **[E02:S01:T25](epics/epic-02/story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md)** — **FR-115**: SQLite changelog read model, async ingest, query/audit CLIs, GHA cron, ADR-025; RW markdown SoT unchanged.
+  **Completed:** `2026-06-07T17:16:34Z` | **Version:** `v0.2.1.25+1` | **Agent:** `RW E02:S01:T25 --art` | [FR-115](fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) | [—IPP—](../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
+
+- **[E03:S02:T13](epics/epic-03/story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md)** — **FR-116**: SemVer registry ingest + collision audit; shared store with T25; YAML SoT unchanged.
+  **Completed:** `2026-06-07T17:16:34Z` | **Version:** `v0.2.1.25+1` | **Agent:** `RW E02:S01:T25 --art` (umbrella co-release) | [FR-116](fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md) | [—IPP—](../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
 
 #### **RW (2026-06-07)** — E05:S08:T04 @ **v0.5.8.4+2** (FR-114 F4/F5 Notion-first bootstrap)
 

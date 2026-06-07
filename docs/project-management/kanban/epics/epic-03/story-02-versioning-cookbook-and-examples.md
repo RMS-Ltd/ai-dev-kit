@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2026-06-05 (v0.3.2.12+5 — T12 wave 3 FBU closure)
-**Version:** v0.3.2.12+5
+**Last updated:** 2026-06-07 (v0.2.1.25+1 — **T13** co-released with T25 / FR-116)
+**Version:** v0.2.1.25+1
 **Code:** E3S02
 
 ---
@@ -43,6 +43,8 @@ housekeeping_policy: keep
 - [x] **E03:S02:T11 – Implement SemVer Mapping for Release Workflow** ✅ COMPLETE (v0.3.2.11+4 – GitHub release creation with SemVer)
   - Task: [`T11-implement-semver-mapping-for-rw`](story-02-versioning-cookbook-and-examples/T11-implement-semver-mapping-for-rw.md)
 - [x] **E03:S02:T12 – Implement ADR-002 Task-Touch SemVer Mapping Mode** - ✅ COMPLETE (**v0.3.2.12+5** — wave 3 verification + FR-045/046/BR-061 closure) - [Task Doc](story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
+
+- [x] **E03:S02:T13 – SemVer registry structured store — shared release metadata (FR-116)** - ✅ COMPLETE (**v0.2.1.25+1** — async ingest read model; umbrella with T25) — [Task doc](story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md) | [FR-116](../../fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md) | [IPP](../../../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
 
 ---
 

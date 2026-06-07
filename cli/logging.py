@@ -258,12 +258,12 @@ def close_install_logger(
                 for old in logs[0 : len(logs) - keep]:
                     try:
                         old.unlink()
-                    except Exception as _suppressed_exc:
-                        del _suppressed_exc  # Retention issues must not break installs
-    except Exception as _suppressed_exc:
-        del _suppressed_exc  # Do not fail install because of log rotation/retention problems
+                    except Exception:
+                        pass  # Retention issues must not break installs
+    except Exception:
+        pass  # Do not fail install because of log rotation/retention problems
     finally:
         try:
             fh.close()
-        except Exception as _suppressed_exc:
-            del _suppressed_exc
+        except Exception:
+            pass

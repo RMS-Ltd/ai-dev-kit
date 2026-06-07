@@ -10,11 +10,11 @@ housekeeping_policy: keep
 
 **Bug ID:** BR-099  
 **Priority:** MEDIUM  
-**Severity:** MEDIUM — Code Quality **Maintainability** score **Fair**; **103** open standard findings on `main` @ `d5c4bca5` (2026-06-06 post–wave-5 merge + operator refresh; was **560** @ `5fcf102`, **146** lag-accepted pre-refresh).  
-**Status:** IN PROGRESS  
+**Severity:** MEDIUM — was **Fair** @ **560** open (`5fcf102`); burn-down waves 1–6; operator sign-off **Good** @ `main` `ed379ab`.  
+**Status:** RESOLVED  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (wave-6 IPW @ **v0.8.3.12+9**; **103/Fair** @ `d5c4bca5`)  
-**Version:** v0.8.3.12+9  
+**Last updated:** 2026-06-07 (**v0.8.3.12+13** — T12 **re-closed**; terminal forensic anchor)  
+**Version:** v0.8.3.12+13  
 **Implementing Task:** [E08:S03:T12](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)  
 **Related:** [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) · [BR-100](BR-100-code-quality-reliability-backlog.md) · [BR-101](BR-101-code-quality-ai-suggestions-backlog.md) · [BR-094](BR-094-codeql-git-tag-handler-syntax-error.md)–[BR-098](BR-098-codeql-missing-workflow-permissions.md) (code-scanning security; separate sidebar)
 
@@ -82,7 +82,9 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 **Closure capture (2026-06-06):** Per [IPP-E08S03T12 §4.6](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — step 28 **103/Fair** @ `d5c4bca5` (operator UI + CQG). **Good+ not met** — wave 6 planned ([§4.7](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)); task **IN PROGRESS**; not "Fixed" until T16 confirms.
 
-**Wave-6 planning (2026-06-06):** Per [IPP-E08S03T12 §4.7](../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — steps 52–53 **done**; shipped @ **v0.8.3.12+9**; Chunks L/M + CQG verification **open**; **`implement wave 6`** authorized.
+**Wave-6 code (2026-06-07):** Chunks L/M shipped @ **v0.8.3.12+10**; local CQG **87/Fair** (−16 vs step-28 **103**).
+
+**Resolved (2026-06-07):** Operator verified **Good** Maintainability + **Good** Reliability on [dashboard](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) @ `main` `ed379ab`. **RW E08:S03:T12 --art** @ **v0.8.3.12+11**; residual hygiene → **E08:S03:T16**.
 
 ---
 
@@ -90,9 +92,9 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 
 - [x] **AC1 — Baseline manifest:** Snapshot in [E08:S03:T12 task doc](../epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) (560 open @ `5fcf102`).
 - [x] **AC2 — Wave 1 burn-down:** Wave-1 rule groups remediated; dashboard **560→145** (−74.1%) on re-scan.
-- [ ] **AC3 — Score improvement:** Maintainability score **Good**+ (**Fair** @ **103** @ `d5c4bca5`; wave 6 **planned**).
+- [x] **AC3 — Score improvement:** Maintainability score **Good**+ (operator sign-off @ `main` `ed379ab`, 2026-06-07).
 - [x] **AC4 — No regressions:** `pytest` + workflow-scripts gate green locally (407 / 119 passed @ 2026-06-06).
-- [ ] **AC5 — Kanban wiring:** Linked; release via **RW E08:S03:T12** when dashboard ACs confirmed.
+- [x] **AC5 — Kanban wiring:** Linked; released **RW E08:S03:T12 --art** @ **v0.8.3.12+11**.
 
 ---
 
@@ -105,7 +107,7 @@ GitHub **Code Quality** full-repo CodeQL scan reported **560 open maintainabilit
 | **3** | `greenfield-install/` mirror | Align mirrored tree or exclude from quality scope per policy |
 | **4** | T13 print handoff | `py/print-during-import` (reliability band) — **done** @ v0.8.3.12+6 |
 | **5** | CodeQL-aligned maintainability | Shipped @ **v0.8.3.12+7**; closure **Fair** — wave 6 **planned** |
-| **6** | Residual burn-down (Fair persists) | **PLANNED** @ **v0.8.3.12+9** — **103** open @ `d5c4bca5`; code **open** |
+| **6** | Residual burn-down (Fair persists) | **done** @ **v0.8.3.12+10**; closure **Good** @ **+11** |
 
 ---
 

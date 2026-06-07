@@ -107,8 +107,8 @@ def _log(level: str, message: str) -> None:
         try:
             INSTALL_LOGGER(level, "kanban.install", message)
             return
-        except Exception as _suppressed_exc:
-            del _suppressed_exc  # Fall back to env-based logging if the callback fails
+        except Exception:
+            pass  # Fall back to env-based logging if the callback fails
 
     # Fallback: append to env-configured log file if present
     log_path = os.getenv(_ENV_LOG_PATH_ENV_VAR)
@@ -367,13 +367,12 @@ def select_installation_mode(analysis_report_path: Optional[Path], requested_mod
     # If we have an analysis report, read recommended mode
     recommended_mode = None
     if analysis_report_path and analysis_report_path.exists():
-        import json
         try:
             with open(analysis_report_path, 'r', encoding='utf-8') as f:
                 analysis = json.load(f)
             recommended_mode = analysis.get("migration_plan", {}).get("recommended_mode")
-        except Exception as _suppressed_exc:
-            del _suppressed_exc
+        except Exception:
+            pass
     print("\n🔧 Step 3: Select installation mode")
     _log("INFO", "[KANBAN_MODE] Selecting installation mode")
     print("=" * 60)
@@ -387,13 +386,12 @@ def select_installation_mode(analysis_report_path: Optional[Path], requested_mod
     if recommended_mode:
         rationale = None
         if analysis_report_path and analysis_report_path.exists():
-            import json
             try:
                 with open(analysis_report_path, 'r', encoding='utf-8') as f:
                     analysis = json.load(f)
                 rationale = analysis.get("migration_plan", {}).get("recommendation_rationale")
-            except Exception as _suppressed_exc:
-                del _suppressed_exc
+            except Exception:
+                pass
         print(f"\n💡 Recommended mode: {recommended_mode}")
         if rationale:
             print(f"   Rationale: {rationale}")
@@ -780,7 +778,6 @@ Examples:
                 final_status = "PARTIAL"
             if not should_continue:
                 print("⚠️  Post-installation validation found issues. Please review warnings/errors above.")
-                final_status = "FAILED"
                 emit_install_error("ADK-I02.E01", detail="post-install validation failed")
                 return 1
     

@@ -395,7 +395,6 @@ def find_tasks_in_story(epic: int, story: int, kanban_root: Path) -> List[Tuple[
         List of (epic, story, task) tuples
     """
     tasks = []
-    kanban_root / f"epics/Epic-{epic}/Story-{story:03d}-*"
     
     # Find story directory
     story_dirs = list(kanban_root.glob(f"epics/Epic-{epic}/Story-{story:03d}-*"))

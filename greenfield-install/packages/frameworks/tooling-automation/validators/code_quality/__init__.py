@@ -2,7 +2,7 @@
 
 from .config import CodeQualityGateConfig, load_config
 from .cqg_engine import CQGEngine, MonitorDecision
-from .report_model import CodeQualityReport, Finding, Severity, Category
+from .report_model import Category, CodeQualityReport, Finding, Severity
 
 __all__ = [
     "Category",

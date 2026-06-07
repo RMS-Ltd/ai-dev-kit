@@ -77,7 +77,7 @@ rc_0:
     (5,8): 65
   task_touch_mode:
     epic_count: 4
-    task_touch_counter: 1049
+    task_touch_counter: 1055
     mapping_history:
     - internal_version: 0.3.2.12+2
       semver: 0.4.727+2
@@ -2488,113 +2488,161 @@ rc_0:
       story: 8
       task: 4
       build: 3
-    - internal_version: 0.2.16.10+6
-      semver: 0.4.1036+6
+    - internal_version: 0.8.3.12+10
+      semver: 0.4.1036+10
       patch: 1036
+      rc: 0
+      epic: 8
+      story: 3
+      task: 12
+      build: 10
+    - internal_version: 0.2.1.25+1
+      semver: 0.4.1037+1
+      patch: 1037
+      rc: 0
+      epic: 2
+      story: 1
+      task: 25
+      build: 1
+    - internal_version: 0.8.3.12+11
+      semver: 0.4.1038+11
+      patch: 1038
+      rc: 0
+      epic: 8
+      story: 3
+      task: 12
+      build: 11
+    - internal_version: 0.2.16.10+6
+      semver: 0.4.1039+6
+      patch: 1039
       rc: 0
       epic: 2
       story: 16
       task: 10
       build: 6
+    - internal_version: 0.1.6.2+1
+      semver: 0.4.1040+1
+      patch: 1040
+      rc: 0
+      epic: 1
+      story: 6
+      task: 2
+      build: 1
+    - internal_version: 0.8.3.12+12
+      semver: 0.4.1041+12
+      patch: 1041
+      rc: 0
+      epic: 8
+      story: 3
+      task: 12
+      build: 12
+    - internal_version: 0.8.3.12+13
+      semver: 0.4.1042+13
+      patch: 1042
+      rc: 0
+      epic: 8
+      story: 3
+      task: 12
+      build: 13
     - internal_version: 0.2.17.1+1
-      semver: 0.4.1037+1
-      patch: 1037
+      semver: 0.4.1043+1
+      patch: 1043
       rc: 0
       epic: 2
       story: 17
       task: 1
       build: 1
     - internal_version: 0.2.17.1+2
-      semver: 0.4.1038+2
-      patch: 1038
+      semver: 0.4.1044+2
+      patch: 1044
       rc: 0
       epic: 2
       story: 17
       task: 1
       build: 2
     - internal_version: 0.2.17.2+1
-      semver: 0.4.1039+1
-      patch: 1039
+      semver: 0.4.1045+1
+      patch: 1045
       rc: 0
       epic: 2
       story: 17
       task: 2
       build: 1
     - internal_version: 0.2.17.2+2
-      semver: 0.4.1040+2
-      patch: 1040
+      semver: 0.4.1046+2
+      patch: 1046
       rc: 0
       epic: 2
       story: 17
       task: 2
       build: 2
     - internal_version: 0.2.17.2+3
-      semver: 0.4.1041+3
-      patch: 1041
+      semver: 0.4.1047+3
+      patch: 1047
       rc: 0
       epic: 2
       story: 17
       task: 2
       build: 3
     - internal_version: 0.2.17.2+4
-      semver: 0.4.1042+4
-      patch: 1042
+      semver: 0.4.1048+4
+      patch: 1048
       rc: 0
       epic: 2
       story: 17
       task: 2
       build: 4
     - internal_version: 0.2.17.2+5
-      semver: 0.4.1043+5
-      patch: 1043
+      semver: 0.4.1049+5
+      patch: 1049
       rc: 0
       epic: 2
       story: 17
       task: 2
       build: 5
     - internal_version: 0.2.17.4+1
-      semver: 0.4.1044+1
-      patch: 1044
+      semver: 0.4.1050+1
+      patch: 1050
       rc: 0
       epic: 2
       story: 17
       task: 4
       build: 1
     - internal_version: 0.2.17.4+2
-      semver: 0.4.1045+2
-      patch: 1045
+      semver: 0.4.1051+2
+      patch: 1051
       rc: 0
       epic: 2
       story: 17
       task: 4
       build: 2
     - internal_version: 0.2.17.5+1
-      semver: 0.4.1046+1
-      patch: 1046
+      semver: 0.4.1052+1
+      patch: 1052
       rc: 0
       epic: 2
       story: 17
       task: 5
       build: 1
     - internal_version: 0.2.17.6+1
-      semver: 0.4.1047+1
-      patch: 1047
+      semver: 0.4.1053+1
+      patch: 1053
       rc: 0
       epic: 2
       story: 17
       task: 6
       build: 1
     - internal_version: 0.2.16.10+7
-      semver: 0.4.1048+7
-      patch: 1048
+      semver: 0.4.1054+7
+      patch: 1054
       rc: 0
       epic: 2
       story: 16
       task: 10
       build: 7
     - internal_version: 0.2.16.10+8
-      semver: 0.4.1049+8
-      patch: 1049
+      semver: 0.4.1055+8
+      patch: 1055
       rc: 0
       epic: 2
       story: 16

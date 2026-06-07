@@ -22,7 +22,7 @@ script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir / "version"))
 
 try:
-    from semver_converter import get_rw_tag_info, get_semver_mapping_strategy
+    from semver_converter import get_rw_tag_info
 except ImportError:
     # Fallback if semver_converter not available
     def get_semver_mapping_strategy() -> str:
@@ -62,8 +62,8 @@ def load_env_local():
                         # Only set if not already in environment
                         if key and value and key not in os.environ:
                             os.environ[key] = value
-        except Exception as _suppressed_exc:
-            del _suppressed_exc  # Silently fail - don't break if .env.local has issues
+        except Exception:
+            pass  # Silently fail - don't break if .env.local has issues
 
 # Load .env.local before checking for environment variables
 load_env_local()
