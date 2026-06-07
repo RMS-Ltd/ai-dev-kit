@@ -23,7 +23,7 @@ locales/
     docs/
 ```
 
-Canonical templates under `packages/frameworks/kanban/templates/` remain the **compatibility fallback** until E21:S01:T06 wires generators to read this manifest.
+Canonical templates under `packages/frameworks/kanban/templates/` remain the **compatibility fallback**. Intake tooling resolves locale paths via `resolve_kanban_intake_template(project_root, key)` (E21:S01:T06).
 
 ## Manifest keys (Phase 1 seed)
 
@@ -46,6 +46,8 @@ Implemented in [`localisation_config.py`](../../workflow-mgt/scripts/localisatio
 - `resolve_language(project_root, override=...)`
 - `load_locale_manifest(manifest_path)`
 - `resolve_locale_asset(locales_root, category=..., key=..., fallback_path=...)`
+- `render_locale_text(...)` — load fragment + `{{placeholder}}` substitution
+- `resolve_kanban_intake_template(project_root, template_key)` — intake template path
 - `kanban_locales_root()` / `workflow_locales_root()`
 
 ## Handoffs
@@ -53,7 +55,7 @@ Implemented in [`localisation_config.py`](../../workflow-mgt/scripts/localisatio
 | Task | Responsibility |
 | ---- | -------------- |
 | E21:S01:T05 | Read/resolve API — **COMPLETE** @ v0.21.1.5+1 |
-| E21:S01:T06 | Wire kanban/RW installers to manifest |
+| E21:S01:T06 | Wire kanban/RW installers to manifest — **COMPLETE** @ v0.21.1.6+1 |
 | E21:S01:T07 | End-to-end locale selection tests |
 
 RW installer scaffolds live in `packages/frameworks/workflow-mgt/locales/`.

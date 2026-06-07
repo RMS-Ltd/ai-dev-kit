@@ -40,7 +40,7 @@ Some projects align numbers (e.g. FR-047 → E5:S01:T47). **KG-R6:** This is **o
 
 ### Step sequence (strict order)
 
-1. **Capture report** — New `FR-*.md` / `BR-*.md` / `UXR-*.md` with required fields.  
+1. **Capture report** — New `FR-*.md` / `BR-*.md` / `UXR-*.md` with required fields. Prefer locale-resolved templates via `resolve_kanban_intake_template(project_root, 'fr'|'br'|'uxr')` when `ai-dev-kit-config.yaml` exists (FR-006); canonical `packages/frameworks/kanban/templates/` is the fallback.  
 2. **Decide hierarchy** — Epic/story for **delivery** (use decision flow; existing story first).  
 3. **Create or attach task** — New `T*.md` or explicit attachment to existing task with rationale in the report.  
 4. **Wire bidirectional links** — Report ↔ task; no broken `../epics/` paths from `fr-br/`.  

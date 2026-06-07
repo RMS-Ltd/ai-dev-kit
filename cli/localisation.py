@@ -42,6 +42,9 @@ resolve_locale_asset = _mod.resolve_locale_asset
 default_frameworks_root = _mod.default_frameworks_root
 kanban_locales_root = _mod.kanban_locales_root
 workflow_locales_root = _mod.workflow_locales_root
+KANBAN_INTAKE_TEMPLATE_KEYS = _mod.KANBAN_INTAKE_TEMPLATE_KEYS
+render_locale_text = _mod.render_locale_text
+resolve_kanban_intake_template = _mod.resolve_kanban_intake_template
 
 __all__ = [
     "DEFAULT_LANGUAGE",
@@ -49,6 +52,7 @@ __all__ = [
     "LOCALISATION_CONFIG_FILENAME",
     "default_frameworks_root",
     "ensure_localisation_config",
+    "KANBAN_INTAKE_TEMPLATE_KEYS",
     "kanban_locales_root",
     "load_locale_manifest",
     "normalize_language",
@@ -57,6 +61,8 @@ __all__ = [
     "resolve_language",
     "resolve_language_from_args",
     "resolve_locale_asset",
+    "resolve_kanban_intake_template",
+    "render_locale_text",
     "workflow_locales_root",
     "write_localisation_config",
 ]

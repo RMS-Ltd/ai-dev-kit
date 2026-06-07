@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Workflow-mgt — UK/US locale scaffolds (FR-006 Phase 1)
 
-Locale fragments for RW installer scaffolds. **Not yet loaded by** `install_release_workflow.py` — E21:S01:T06 will wire `render_changelog_stub` and decline-help strings to this manifest.
+Locale fragments for RW installer scaffolds. Loaded by `install_release_workflow.py` via `render_locale_text` (E21:S01:T06): `render_changelog_stub`, `format_version_scaffold_decline_help`, and `format_changelog_scaffold_decline_help` resolve fragments from this manifest using `ai-dev-kit-config.yaml` language preference.
 
 ## Manifest keys
 

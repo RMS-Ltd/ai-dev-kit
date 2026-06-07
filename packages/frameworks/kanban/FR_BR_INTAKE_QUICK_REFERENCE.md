@@ -41,10 +41,12 @@ FR/BR → Search Story
 
 ## Templates
 
-- **FR:** `packages/frameworks/kanban/templates/FR_TEMPLATE.md`
-- **BR:** `packages/frameworks/kanban/templates/BR_TEMPLATE.md`
-- **Epic:** `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md`
-- **Story:** `packages/frameworks/kanban/templates/STORY_TEMPLATE.md`
+Resolve from project language when `ai-dev-kit-config.yaml` exists (`resolve_kanban_intake_template(project_root, key)`); canonical fallback:
+
+- **FR:** `packages/frameworks/kanban/templates/FR_TEMPLATE.md` (key `fr`)
+- **BR:** `packages/frameworks/kanban/templates/BR_TEMPLATE.md` (key `br`)
+- **Epic:** `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md` (key `epic`)
+- **Story:** `packages/frameworks/kanban/templates/STORY_TEMPLATE.md` (key `story`)
 
 ---
 

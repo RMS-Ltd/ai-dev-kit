@@ -2,7 +2,8 @@
 Language/localisation helpers for workflow-mgt installers (FR-006 Phase 1).
 
 Write path: E21:S01:T02/T03 (ai-dev-kit-config.yaml).
-Read/resolve: E21:S01:T05 (manifest asset paths for T06 wiring).
+Read/resolve: E21:S01:T05 (manifest asset paths).
+Consumption: E21:S01:T06 (RW scaffolds + kanban intake templates).
 
 Vendored with install_release_workflow.py for adopter projects.
 """
@@ -237,3 +238,62 @@ def kanban_locales_root(frameworks_root: Optional[Path] = None) -> Path:
 def workflow_locales_root(frameworks_root: Optional[Path] = None) -> Path:
     root = frameworks_root or default_frameworks_root()
     return root / "workflow-mgt" / "locales"
+
+
+KANBAN_INTAKE_TEMPLATE_KEYS: Dict[str, str] = {
+    "fr": "FR_TEMPLATE.md",
+    "br": "BR_TEMPLATE.md",
+    "uxr": "UXR_TEMPLATE.md",
+    "fb": "FB_TEMPLATE.md",
+    "task": "TASK_TEMPLATE.md",
+    "story": "STORY_TEMPLATE.md",
+    "epic": "EPIC_TEMPLATE.md",
+    "plan_doc": "PLAN_DOC_TEMPLATE.md",
+}
+
+
+def render_locale_text(
+    locales_root: Path,
+    *,
+    category: str,
+    key: str,
+    project_root: Path,
+    substitutions: Optional[Dict[str, str]] = None,
+    fallback_path: Optional[Path] = None,
+) -> str:
+    """Load a locale fragment and substitute {{placeholder}} tokens."""
+    path = resolve_locale_asset(
+        locales_root,
+        category=category,
+        key=key,
+        project_root=project_root,
+        fallback_path=fallback_path,
+    )
+    text = path.read_text(encoding="utf-8")
+    for name, value in (substitutions or {}).items():
+        text = text.replace(f"{{{{{name}}}}}", value)
+    return text
+
+
+def resolve_kanban_intake_template(
+    project_root: Path,
+    template_key: str,
+    *,
+    frameworks_root: Optional[Path] = None,
+) -> Path:
+    """Resolve kanban intake template path for configured project language."""
+    if template_key not in KANBAN_INTAKE_TEMPLATE_KEYS:
+        raise KeyError(
+            f"Unknown kanban intake template key {template_key!r}; "
+            f"expected one of {sorted(KANBAN_INTAKE_TEMPLATE_KEYS)}"
+        )
+    fw_root = frameworks_root or default_frameworks_root()
+    canonical = fw_root / "kanban" / "templates"
+    fallback = canonical / KANBAN_INTAKE_TEMPLATE_KEYS[template_key]
+    return resolve_locale_asset(
+        kanban_locales_root(fw_root),
+        category="templates",
+        key=template_key,
+        project_root=project_root,
+        fallback_path=fallback,
+    )

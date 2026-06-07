@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S01:T05 config read locale resolution)
-**Version:** v0.21.1.5+1
+**Last Updated:** 2026-06-07 (RW: E21:S01:T06 content generation locale wiring)
+**Version:** v0.21.1.6+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S01:T06 @ **v0.21.1.6+1** (content generation locale wiring)
+
+- **[E21:S01:T06](epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md)** — Wire RW installer scaffolds and kanban intake templates to locale manifest (`render_locale_text`, `resolve_kanban_intake_template`).
+  **Completed:** `2026-06-07T10:57:19Z` | **Version:** `v0.21.1.6+1` | **Agent:** `RW E21:S01:T06 --art` | [IPP](../../implementation-cycles/IPP-E21S01T06-content-generation-locale-wiring.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
 #### **RW (2026-06-07)** — E21:S01:T05 @ **v0.21.1.5+1** (config read locale resolution)
 

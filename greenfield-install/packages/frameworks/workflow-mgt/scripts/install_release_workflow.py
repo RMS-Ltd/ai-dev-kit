@@ -74,7 +74,11 @@ except ImportError:
             print(f"ERROR [{code}]", file=file or sys.stderr)
 
 try:
-    from localisation_config import ensure_localisation_config
+    from localisation_config import (
+        ensure_localisation_config,
+        render_locale_text,
+        workflow_locales_root,
+    )
 except ImportError:
     _loc_path = Path(__file__).resolve().parent / "localisation_config.py"
     if _loc_path.is_file():
@@ -86,9 +90,17 @@ except ImportError:
         sys.modules["localisation_config"] = _mod_loc
         _spec_loc.loader.exec_module(_mod_loc)
         ensure_localisation_config = _mod_loc.ensure_localisation_config
+        render_locale_text = _mod_loc.render_locale_text
+        workflow_locales_root = _mod_loc.workflow_locales_root
     else:
         def ensure_localisation_config(*args, **kwargs):  # type: ignore[misc]
             return None
+
+        def render_locale_text(*args, **kwargs):  # type: ignore[misc]
+            raise RuntimeError("localisation_config not available")
+
+        def workflow_locales_root(*args, **kwargs):  # type: ignore[misc]
+            raise RuntimeError("localisation_config not available")
 
 # Minimal RW installer runtime dependencies (see repo setup.py).
 INSTALLER_DEPENDENCIES: Tuple[Tuple[str, str, str], ...] = (
@@ -260,14 +272,15 @@ Configure VERSION_* constants per your project versioning policy.
 '''
 
 
-def format_version_scaffold_decline_help(version_rel: str) -> str:
+def format_version_scaffold_decline_help(project_root: Path, version_rel: str) -> str:
     """Copy-paste guidance when user declines scaffold (BR-088)."""
     parent = str(Path(version_rel).parent)
-    return (
-        f"version_file not created at {version_rel}. "
-        f"Create it before running RW, for example:\n"
-        f"  mkdir -p {parent}\n"
-        f"  # Add VERSION_* constants per dev-kit versioning policy, then re-run the installer"
+    return render_locale_text(
+        workflow_locales_root(),
+        category="scaffolds",
+        key="version_scaffold_decline",
+        project_root=project_root,
+        substitutions={"version_rel": version_rel, "parent": parent},
     )
 
 
@@ -331,7 +344,9 @@ def ensure_version_file_scaffold(
             create = create_if_missing
 
     if not create:
-        help_text = format_version_scaffold_decline_help(str(version_rel_display))
+        help_text = format_version_scaffold_decline_help(
+            project_root, str(version_rel_display)
+        )
         print(f"\n⚠️  {help_text}")
         return ScaffoldResult(
             status="declined",
@@ -355,28 +370,27 @@ def ensure_version_file_scaffold(
     )
 
 
-def render_changelog_stub(project_name: str) -> str:
+def render_changelog_stub(project_root: Path, project_name: str) -> str:
     """Minimal Keep a Changelog root file for greenfield adopters (#19)."""
     title = project_name or "Project"
-    return f"""# Changelog — {title}
-
-All notable changes to this project are documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) where applicable.
-
-## [Unreleased]
-
-### Added
-
-- Dev Kit RW scaffolding (initial `CHANGELOG.md` created by `install_release_workflow.py`).
-"""
+    return render_locale_text(
+        workflow_locales_root(),
+        category="scaffolds",
+        key="changelog_stub",
+        project_root=project_root,
+        substitutions={"project_name": title},
+    )
 
 
-def format_changelog_scaffold_decline_help(changelog_rel: str) -> str:
-    return (
-        f"main_changelog not created at {changelog_rel}. "
-        f"Create before first RW, or re-run the installer and accept scaffold."
+def format_changelog_scaffold_decline_help(
+    project_root: Path, changelog_rel: str
+) -> str:
+    return render_locale_text(
+        workflow_locales_root(),
+        category="scaffolds",
+        key="changelog_scaffold_decline",
+        project_root=project_root,
+        substitutions={"changelog_rel": changelog_rel},
     )
 
 
@@ -428,7 +442,9 @@ def ensure_main_changelog_scaffold(
         create = True if create_if_missing is None else create_if_missing
 
     if not create:
-        help_text = format_changelog_scaffold_decline_help(str(changelog_rel_display))
+        help_text = format_changelog_scaffold_decline_help(
+            project_root, str(changelog_rel_display)
+        )
         print(f"\n⚠️  {help_text}")
         return ScaffoldResult(
             status="declined",
@@ -438,7 +454,7 @@ def ensure_main_changelog_scaffold(
         )
 
     changelog_path.write_text(
-        render_changelog_stub(project_name), encoding="utf-8"
+        render_changelog_stub(project_root, project_name), encoding="utf-8"
     )
     msg = f"✅ Created main changelog: {changelog_rel_display}"
     print(f"\n{msg}")
