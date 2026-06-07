@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.1.2+1 — E21:S01:T02 CLI init language selection)  
+**Last updated:** 2026-06-07 (v0.21.1.7+1 — E21:S01 complete; FR-006 Phase 1)  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -21,9 +21,9 @@ housekeeping_policy: keep
 
 ## Story Checklist
 
-- [ ] **E21:S01 – Language Selection at Setup (UK/US English)** - IN PROGRESS (v0.21.1.2+1 — T01–T02 COMPLETE)
+- [x] **E21:S01 – Language Selection at Setup (UK/US English)** - COMPLETE (v0.21.1.7+1 — T01–T07 COMPLETE; FR-006 Phase 1)
   - Story: [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
-  - Tasks: T01–T02 COMPLETE; T03–T07 TODO
+  - Tasks: T01–T07 COMPLETE
 
 - [ ] **E21:S02 – Internationalisation Infrastructure** - TODO (v0.21.2.0+0)
   - Story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)

@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 01 – Language Selection at Setup (UK/US English)
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.1.6+1 — T06 content generation locale wiring)  
-**Version:** v0.21.1.6+1  
+**Last updated:** 2026-06-07 (v0.21.1.7+1 — T07 FR-006 Phase 1 E2E tests; all tasks complete)  
+**Version:** v0.21.1.7+1  
 **Code:** E21S01
 
 ---
@@ -44,21 +44,21 @@ Make language selection the first step in all setup processes, allowing users to
   - Task: [`T05-implement-configuration-persistence-ai-dev-kit-configyaml`](story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md)
 - [x] **E21:S01:T06 – Update content generation to use language preference (RW, templates)** - COMPLETE (v0.21.1.6+1)
   - Task: [`T06-update-content-generation-to-use-language-preference-rw-temp`](story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md)
-- [ ] **E21:S01:T07 – Test UK/US English selection and content generation** - TODO
+- [x] **E21:S01:T07 – Test UK/US English selection and content generation** - COMPLETE (v0.21.1.7+1)
   - Task: [`T07-test-ukus-english-selection-and-content-generation`](story-01-language-selection-at-setup/T07-test-ukus-english-selection-and-content-generation.md)
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] Language selection prompt appears at start of all setup processes
-- [ ] UK and US English variants available
-- [ ] Language preference persists in configuration
-- [ ] All documentation uses selected variant
-- [ ] All templates use selected variant
-- [ ] All generated content uses selected variant
-- [ ] Default to UK English if not specified (en-GB primary; en-US supported)
-- [ ] Language can be changed later (with content regeneration)
+- [x] Language selection prompt appears at start of all setup processes (T01–T03; E6 static contract)
+- [x] UK and US English variants available (T04 corpus; automated T1–T7, E4)
+- [x] Language preference persists in configuration (T02/T03/T05; E5 schema parity)
+- [x] All documentation uses selected variant — **Phase 1 MVP:** setup guides + locale corpus; full doc-tree → E21:S02
+- [x] All templates use selected variant — **Phase 1 MVP:** 8 core intake templates (E4); board-install templates deferred
+- [x] All generated content uses selected variant — RW scaffolds + intake paths (E1–E3, E8)
+- [x] Default to UK English if not specified (en-GB primary; en-US supported)
+- [x] Language can be changed later (with content regeneration) — E8 `--force` + re-scaffold
 
 ---
 

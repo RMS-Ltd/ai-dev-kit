@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S01:T06 content generation locale wiring)
-**Version:** v0.21.1.6+1
+**Last Updated:** 2026-06-07 (RW: E21:S01:T07 FR-006 Phase 1 E2E tests)
+**Version:** v0.21.1.7+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S01:T07 @ **v0.21.1.7+1** (FR-006 Phase 1 E2E tests)
+
+- **[E21:S01:T07](epics/epic-21/story-01-language-selection-at-setup/T07-test-ukus-english-selection-and-content-generation.md)** — FR-006 Phase 1 E2E test suite (`test_fr006_phase1_e2e_localisation.py` E1–E8); E21:S01 story complete.
+  **Completed:** `2026-06-07T16:28:44Z` | **Version:** `v0.21.1.7+1` | **Agent:** `RW E21:S01:T07 --art` | [IPP](../../implementation-cycles/IPP-E21S01T07-fr006-phase1-e2e-tests.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
 #### **RW (2026-06-07)** — E21:S01:T06 @ **v0.21.1.6+1** (content generation locale wiring)
 

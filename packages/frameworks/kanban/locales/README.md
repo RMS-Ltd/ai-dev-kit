@@ -56,9 +56,32 @@ Implemented in [`localisation_config.py`](../../workflow-mgt/scripts/localisatio
 | ---- | -------------- |
 | E21:S01:T05 | Read/resolve API — **COMPLETE** @ v0.21.1.5+1 |
 | E21:S01:T06 | Wire kanban/RW installers to manifest — **COMPLETE** @ v0.21.1.6+1 |
-| E21:S01:T07 | End-to-end locale selection tests |
+| E21:S01:T07 | End-to-end locale selection tests — **COMPLETE** @ v0.21.1.7+1 |
 
 RW installer scaffolds live in `packages/frameworks/workflow-mgt/locales/`.
+
+## Test matrix (FR-006 Phase 1)
+
+| Layer | Module | IDs |
+| ----- | ------ | --- |
+| Corpus | `tests/test_locale_content_manifest.py` | T1–T7 |
+| Read/resolve | `tests/test_localisation_config_read_resolve.py` | T1–T10 |
+| RW selection | `tests/test_install_release_workflow_localisation.py` | T1–T9 |
+| CLI init | `tests/test_commands.py` (`TestInitCommand`) | T1–T8 |
+| Content wiring | `tests/test_content_generation_locale_wiring.py` | T1–T10 |
+| E2E | `tests/test_fr006_phase1_e2e_localisation.py` | E1–E8 |
+
+**Regression bundle:**
+
+```bash
+pytest -m fr006 tests/test_fr006_phase1_e2e_localisation.py \
+  tests/test_install_release_workflow_localisation.py \
+  tests/test_localisation_config_read_resolve.py \
+  tests/test_content_generation_locale_wiring.py \
+  tests/test_locale_content_manifest.py
+```
+
+Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 
 ## References
 

@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.1.6+1] - 07-06-26
+## [0.21.1.7+1] - 07-06-26
 
-E21:S01:T06 — **Change implemented:** Content generation locale wiring (RW scaffolds + kanban intake templates). SemVer **v0.4.1073+1**.
+E21:S01:T07 — **Change implemented:** FR-006 Phase 1 E2E tests + test matrix; E21:S01 story complete. SemVer **v0.4.1074+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.6+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.7+1.md)
 
 ---
