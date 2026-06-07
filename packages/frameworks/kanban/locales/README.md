@@ -77,11 +77,11 @@ RW installer scaffolds live in `packages/frameworks/workflow-mgt/locales/`.
 | E21:S02:T03 | Locale detection + `resolve_language` precedence — **COMPLETE** @ v0.21.2.3+1 |
 | E21:S02:T04 | Language switching (`switch_locale`, `adk config locale`) — **COMPLETE** @ v0.21.2.4+1 |
 | E21:S02:T06 | `resolve_locale_key()` — **COMPLETE** @ v0.21.2.6+1 |
-| E21:S02:T07 | Extended fallback chain |
+| E21:S02:T07 | Extended fallback chain — **COMPLETE** @ v0.21.2.7+1 |
 
 Key APIs: `resolve_locale_key(..., package="kanban")` — [locale-key-conventions](../../../../docs/governance/standards/locale-key-conventions.md).
 
-Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md)
+Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [IPP-E21S02T07](../../../../docs/implementation-cycles/IPP-E21S02T07-locale-fallback-chain.md) · [locale-fallback-conventions](../../../../docs/governance/standards/locale-fallback-conventions.md)
 
 ## Test matrix (FR-006 Phase 1)
 

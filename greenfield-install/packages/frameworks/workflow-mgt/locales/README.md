@@ -47,11 +47,18 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | Task | Change |
 | ---- | ------ |
 | E21:S02:T02 | Manifest v2 + keys scaffold — **COMPLETE** @ v0.21.2.2+1 |
-| E21:S02:T03 | Locale detection — **COMPLETE** @ v0.21.2.3+1 |
+| E21:S02:T03 | Locale detection + `resolve_language` precedence — **COMPLETE** @ v0.21.2.3+1 |
 | E21:S02:T04 | Language switching — **COMPLETE** @ v0.21.2.4+1 |
-| E21:S02:T05 | Date/time/number formatting — **COMPLETE** @ v0.21.2.5+1 |
+| E21:S02:T05 | Date/time/number formatting (`locale_formatting.py`) — **COMPLETE** @ v0.21.2.5+1 |
 | E21:S02:T06 | `resolve_locale_key()` — **COMPLETE** @ v0.21.2.6+1 |
+| E21:S02:T07 | Extended fallback chain (`language_fallback_chain`) — **COMPLETE** @ v0.21.2.7+1 |
 
-Key APIs: `resolve_locale_key` in [`localisation_config.py`](../scripts/localisation_config.py).
+Detection APIs live in [`localisation_config.py`](../scripts/localisation_config.py): `detect_system_locale`, `detect_browser_locale`, `detect_env_locale`, `map_to_supported_locale`.
 
-Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [locale-key-conventions](../../../../docs/governance/standards/locale-key-conventions.md)
+Formatting APIs: [`locale_formatting.py`](../scripts/locale_formatting.py) — `format_date`, `format_number`, `format_currency`, `format_for_project` (E21:S02:T05).
+
+Key APIs: `resolve_locale_key(project_root, key)` in [`localisation_config.py`](../scripts/localisation_config.py) (E21:S02:T06).
+
+Fallback: `language_fallback_chain(locales_root, preferred)` — selected → `default_locale` → `en-GB` → `en-US` (E21:S02:T07).
+
+Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [IPP-E21S02T07](../../../../docs/implementation-cycles/IPP-E21S02T07-locale-fallback-chain.md) · [locale-key-conventions](../../../../docs/governance/standards/locale-key-conventions.md) · [locale-fallback-conventions](../../../../docs/governance/standards/locale-fallback-conventions.md)

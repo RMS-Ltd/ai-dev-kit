@@ -99,7 +99,7 @@ Adopt **C1: Hybrid extension of the Phase 1 incumbent** as the canonical i18n st
 | **E21:S02:T04** | Switching: `switch_locale()`, CLI `adk config locale`, `--locale` on init/installer (alias `--language`), config rewrite, installer re-prompt with `--force`. Policy: [locale-switching-conventions.md](../../governance/standards/locale-switching-conventions.md) |
 | **E21:S02:T05** | `locale_formatting.py`: `babel.dates` / `babel.numbers` wrappers; stdlib fallback when Babel absent. Policy: [locale-formatting-conventions.md](../../governance/standards/locale-formatting-conventions.md) |
 | **E21:S02:T06** | `resolve_locale_key(project_root, key)` + key naming convention; manifest `keys` category; in-process catalog cache. Policy: [locale-key-conventions.md](../../governance/standards/locale-key-conventions.md) |
-| **E21:S02:T07** | Fallback chain: selected locale → `default_locale` → `en-GB` → `en-US` → canonical template |
+| **E21:S02:T07** | Fallback chain: selected locale → `default_locale` → `en-GB` → `en-US` → canonical template. Policy: [locale-fallback-conventions.md](../../governance/standards/locale-fallback-conventions.md) — **COMPLETE** @ v0.21.2.7+1 |
 | **E21:S03+** | Translation workflow, completeness metrics, major-language file trees |
 | **Portal (deferred)** | If Docusaurus i18n is required, evaluate i18next or Docusaurus native i18n in a **separate** task — not part of C1 core |
 

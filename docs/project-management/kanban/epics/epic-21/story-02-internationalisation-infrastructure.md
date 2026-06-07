@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.2.6+1 — T06 COMPLETE; T07 TODO)  
-**Version:** v0.21.2.6+1  
+**Last updated:** 2026-06-07 (v0.21.2.7+1 — T07 COMPLETE; S02 fallback AC met)  
+**Version:** v0.21.2.7+1  
 **Code:** E21S02
 
 ---
@@ -50,8 +50,9 @@ Establish a robust internationalisation infrastructure that supports multiple la
 - [x] **E21:S02:T06 – Implement translation key system** - COMPLETE (v0.21.2.6+1 — resolve_locale_key + catalog cache)
   - Task: [`T06-implement-translation-key-system`](story-02-internationalisation-infrastructure/T06-implement-translation-key-system.md)
   - Planning: [IPP-E21S02T06](../../../implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [locale-key-conventions](../../../governance/standards/locale-key-conventions.md)
-- [ ] **E21:S02:T07 – Set up translation fallback chain (selected → UK English → US English)** - TODO
+- [x] **E21:S02:T07 – Set up translation fallback chain (selected → UK English → US English)** - COMPLETE (v0.21.2.7+1 — ADR-024 chain + en-US step)
   - Task: [`T07-set-up-translation-fallback-chain-selected-english-us-englis`](story-02-internationalisation-infrastructure/T07-set-up-translation-fallback-chain-selected-english-us-englis.md)
+  - Planning: [IPP-E21S02T07](../../../implementation-cycles/IPP-E21S02T07-locale-fallback-chain.md) · [locale-fallback-conventions](../../../governance/standards/locale-fallback-conventions.md)
 
 ---
 
@@ -63,7 +64,7 @@ Establish a robust internationalisation infrastructure that supports multiple la
 - [x] Language switching works (T04 @ v0.21.2.4+1)
 - [x] Locale-specific formatting configured (T05 @ v0.21.2.5+1)
 - [x] Translation key system implemented (T06 @ v0.21.2.6+1)
-- [ ] Fallback chain works correctly
+- [x] Fallback chain works correctly (T07 @ v0.21.2.7+1)
 
 ---
 

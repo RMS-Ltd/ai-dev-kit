@@ -58,7 +58,7 @@ resolve_locale_key(
 | ---- | --------- |
 | 1 | Parse `domain` from first segment of `key` |
 | 2 | Load manifest; resolve `language` via `resolve_language(project_root)` unless overridden |
-| 3 | Walk `_language_fallback_chain` (preferred → `default_locale` → `en-GB`) |
+| 3 | Walk `_language_fallback_chain` (preferred → `default_locale` → `en-GB` → `en-US`) |
 | 4 | For each language: manifest `keys.{domain}` → load `keys/{domain}.yaml` (cached) |
 | 5 | Return value with substitutions applied |
 | 6 | If not found → `KeyError` listing `languages_tried` |

@@ -36,6 +36,7 @@ sys.modules["locale_formatting"] = _fmt_mod
 _fmt_spec.loader.exec_module(_fmt_mod)
 
 DEFAULT_LANGUAGE = _mod.DEFAULT_LANGUAGE
+SECONDARY_ENGLISH_LOCALE = _mod.SECONDARY_ENGLISH_LOCALE
 LOCALE_VARIANTS = _mod.LOCALE_VARIANTS
 LOCALISATION_CONFIG_FILENAME = _mod.LOCALISATION_CONFIG_FILENAME
 ADK_LOCALE_ENV = _mod.ADK_LOCALE_ENV
@@ -59,6 +60,7 @@ normalize_language = _mod.normalize_language
 load_locale_manifest = _mod.load_locale_manifest
 resolve_locale_asset = _mod.resolve_locale_asset
 resolve_locale_key = _mod.resolve_locale_key
+language_fallback_chain = _mod.language_fallback_chain
 default_frameworks_root = _mod.default_frameworks_root
 kanban_locales_root = _mod.kanban_locales_root
 workflow_locales_root = _mod.workflow_locales_root
@@ -81,6 +83,7 @@ __all__ = [
     "ADK_ACCEPT_LANGUAGE_ENV",
     "ADK_LOCALE_ENV",
     "DEFAULT_LANGUAGE",
+    "SECONDARY_ENGLISH_LOCALE",
     "FR006_SUPPORTED_LOCALES",
     "LOCALE_VARIANTS",
     "LOCALISATION_CONFIG_FILENAME",
@@ -115,6 +118,7 @@ __all__ = [
     "to_babel_locale",
     "resolve_locale_asset",
     "resolve_locale_key",
+    "language_fallback_chain",
     "resolve_kanban_intake_template",
     "render_locale_text",
     "workflow_locales_root",

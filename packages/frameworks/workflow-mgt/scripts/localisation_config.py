@@ -7,6 +7,7 @@ Consumption: E21:S01:T06 (RW scaffolds + kanban intake templates).
 Detection: E21:S02:T03 (system/browser/env precedence in resolve_language).
 Switching: E21:S02:T04 (`switch_locale`, `--locale`, `adk config locale`).
 Keys: E21:S02:T06 (`resolve_locale_key`, YAML key catalogs).
+Fallback: E21:S02:T07 (`_language_fallback_chain`: selected → default → en-GB → en-US).
 
 Precedence (resolve_language): override → config file → ADK_LOCALE → system
 locale → accept_language → default_locale (en-GB).
@@ -31,6 +32,7 @@ LOCALE_VARIANTS: Dict[str, Dict[str, str]] = {
 }
 
 DEFAULT_LANGUAGE = "en-GB"
+SECONDARY_ENGLISH_LOCALE = "en-US"
 
 ADK_LOCALE_ENV = "ADK_LOCALE"
 ADK_ACCEPT_LANGUAGE_ENV = "ADK_ACCEPT_LANGUAGE"
@@ -287,7 +289,8 @@ def resolve_locale_key(
     """
     Resolve a dotted locale key (domain.section.name) to a translated string.
 
-    Uses manifest v2 keys category, language fallback chain, and in-process catalog cache.
+    Uses manifest v2 keys category and ADR-024 fallback chain
+    (selected → default_locale → en-GB → en-US) with in-process catalog cache.
     """
     domain = _parse_locale_key(key)
     if not key.startswith(f"{domain}."):
@@ -598,13 +601,34 @@ def _language_fallback_chain(
     manifest: Dict[str, Any],
     preferred: str,
 ) -> List[str]:
-    default_locale = manifest.get("default_locale", DEFAULT_LANGUAGE)
+    """
+    Ordered locale tags for asset/key resolution (ADR-024 T07).
+
+    selected → default_locale → en-GB → en-US (deduplicated).
+    """
+    default_locale = map_to_supported_locale(manifest.get("default_locale", DEFAULT_LANGUAGE))
+    mapped_preferred = map_to_supported_locale(preferred)
     chain: List[str] = []
-    for candidate in (preferred, default_locale, DEFAULT_LANGUAGE):
-        normalized = normalize_language(candidate)
-        if normalized not in chain:
-            chain.append(normalized)
+    for candidate in (
+        mapped_preferred,
+        default_locale,
+        DEFAULT_LANGUAGE,
+        SECONDARY_ENGLISH_LOCALE,
+    ):
+        mapped = map_to_supported_locale(candidate)
+        if mapped not in chain:
+            chain.append(mapped)
     return chain
+
+
+def language_fallback_chain(
+    locales_root: Path,
+    preferred: str,
+) -> List[str]:
+    """Return ordered locale fallback chain for a package locales root."""
+    manifest_path = locales_root / "manifest.yaml"
+    manifest = load_locale_manifest(manifest_path)
+    return _language_fallback_chain(manifest, preferred)
 
 
 def resolve_locale_asset(
@@ -619,7 +643,7 @@ def resolve_locale_asset(
     """
     Resolve a manifest entry to an existing locale file path.
 
-    Fallback order: language chain from manifest -> optional fallback_path.
+    Fallback order: selected → default_locale → en-GB → en-US → optional fallback_path.
     """
     manifest_path = locales_root / "manifest.yaml"
     manifest = load_locale_manifest(manifest_path)

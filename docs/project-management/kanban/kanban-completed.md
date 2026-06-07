@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S02:T06 translation key system)
-**Version:** v0.21.2.6+1
+**Last Updated:** 2026-06-07 (RW: E21:S02:T07 translation fallback chain)
+**Version:** v0.21.2.7+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S02:T07 @ **v0.21.2.7+1** (translation fallback chain)
+
+- **[E21:S02:T07](epics/epic-21/story-02-internationalisation-infrastructure/T07-set-up-translation-fallback-chain-selected-english-us-englis.md)** — ADR-024 fallback chain (`language_fallback_chain`, en-US step); locale-fallback-conventions policy.
 
 #### **RW (2026-06-07)** — E21:S02:T06 @ **v0.21.2.6+1** (translation key system)
 
