@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E02:S17:T05 parity replay on SQLite)
-**Version:** v0.2.17.5+1
+**Last Updated:** 2026-06-07 (RW: E02:S17:T06 friction report)
+**Version:** v0.2.17.6+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E02:S17:T06 @ **v0.2.17.6+1** (high-stress + friction report)
+
+- **[E02:S17:T06](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T06-high-stress-scenarios-and-rw-friction-report.md)** — 7 high-stress scenarios, friction report (9 patterns), matrix v2.
+  **Completed:** `2026-06-07T18:32:30Z` | **Version:** `v0.2.17.6+1` | **Agent:** `RW E02:S17:T06 --art` | [friction report](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/rw-semver-friction-report.md) | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
 
 #### **RW (2026-06-07)** — E02:S17:T05 @ **v0.2.17.5+1** (parity replay on SQLite)
 

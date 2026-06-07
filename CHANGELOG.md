@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.17.6+1] - 07-06-26
+
+E02:S17:T06 — **Change implemented:** High-stress scenarios + RW/SemVer friction report (9 patterns, matrix v2). SemVer **v0.4.1047+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.6+1.md)
+
+---
+
 ## [0.2.17.5+1] - 07-06-26
 
 E02:S17:T05 — **Change implemented:** Parity replay scenario matrix on SQLite — harness, run log, diff report; 65 pytest. SemVer **v0.4.1046+1**.

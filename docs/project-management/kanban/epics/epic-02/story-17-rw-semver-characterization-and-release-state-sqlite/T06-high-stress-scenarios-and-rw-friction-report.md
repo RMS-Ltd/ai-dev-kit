@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S17:T06 — High-stress scenarios and RW friction report
 
 **Task ID:** E02:S17:T06  
-**Status:** TODO  
+**Status:** ✅ COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07  
-**Version Anchor:** v0.2.17.6+0  
+**Last updated:** 2026-06-07 (RW **v0.2.17.6+1**)  
+**Version Anchor:** v0.2.17.6+1  
 **Code:** E02S17T06
 
 Publication Status: NOT_APPLICABLE
@@ -56,10 +56,21 @@ After T02/T05 runs, synthesize **friction patterns** and add **high-stress scena
 
 ## Acceptance Criteria
 
-- [ ] AC1: ≥3 documented friction patterns with scenario evidence
-- [ ] AC2: ≥5 high-stress scenarios added and executed at least once
-- [ ] AC3: Each pattern maps to a concrete recommendation (validator, agent contract, or storage)
-- [ ] AC4: Report suitable for maintainer KB (Notion per ADR-024 if promoted)
+- [x] AC1: ≥3 documented friction patterns with scenario evidence
+- [x] AC2: ≥5 high-stress scenarios added and executed at least once
+- [x] AC3: Each pattern maps to a concrete recommendation (validator, agent contract, or storage)
+- [x] AC4: Report suitable for maintainer KB (Notion per ADR-024 if promoted)
+
+---
+
+## Implementation artifacts
+
+| Artifact | Path |
+| -------- | ---- |
+| Friction report | [rw-semver-friction-report.md](rw-semver-friction-report.md) |
+| Scenario matrix v2 | [scenario-matrix-v2.md](scenario-matrix-v2.md) |
+| High-stress run log | [high-stress-run-log.md](high-stress-run-log.md) |
+| Tests | [`tests/rw_scenarios/test_t06_high_stress.py`](../../../../../../tests/rw_scenarios/test_t06_high_stress.py) |
 
 ---
 

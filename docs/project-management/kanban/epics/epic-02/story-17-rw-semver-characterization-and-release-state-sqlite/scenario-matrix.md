@@ -123,4 +123,5 @@ Storage path differences (archive MD vs DB row) are **allowed**; invariant diffe
 
 | Date | Change |
 | ---- | ------ |
+| 2026-06-07 | v2.0 — Class G high-stress (see [scenario-matrix-v2.md](scenario-matrix-v2.md)) |
 | 2026-06-07 | v1.0 — initial 28 scenarios (A–F); seeded from spike discussion |
