@@ -44,6 +44,16 @@ rw_execution_log_truncate_on_start: true
 board_stamp:
   homogeneity_threshold: 3  # fail when ≥3 rows share identical Last modified
 
+# FR-115 / FR-116 — async ingest read model (gitignored SQLite; markdown/YAML remain SoT)
+release_metadata_store:
+  path: .data/adk-release-metadata.sqlite
+  gitignore: true
+
+ingest:
+  enabled: true
+  semver_registry_file: semver-registry.yaml
+  incremental: true
+
 # SemVer mapping strategy: "registry" (default) or "task_touch"
 # registry: Hybrid approach with epic/story registry (current default)
 # task_touch: ADR-002 task-touch derived mapping (strictly monotonic)

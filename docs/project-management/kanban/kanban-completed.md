@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E05:S08:T04 FR-114 Notion-first bootstrap)
-**Version:** v0.5.8.4+2
+**Last Updated:** 2026-06-07 (RW: E02:S01:T25 FR-115+FR-116 async ingest v1)
+**Version:** v0.2.1.25+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,14 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E02:S01:T25 @ **v0.2.1.25+1** (FR-115+FR-116 async release-metadata ingest v1)
+
+- **[E02:S01:T25](epics/epic-02/story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md)** — **FR-115**: SQLite changelog read model, async ingest, query/audit CLIs, GHA cron, ADR-025; RW markdown SoT unchanged.
+  **Completed:** `2026-06-07T17:16:34Z` | **Version:** `v0.2.1.25+1` | **Agent:** `RW E02:S01:T25 --art` | [FR-115](fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) | [—IPP—](../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
+
+- **[E03:S02:T13](epics/epic-03/story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md)** — **FR-116**: SemVer registry ingest + collision audit; shared store with T25; YAML SoT unchanged.
+  **Completed:** `2026-06-07T17:16:34Z` | **Version:** `v0.2.1.25+1` | **Agent:** `RW E02:S01:T25 --art` (umbrella co-release) | [FR-116](fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md) | [—IPP—](../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
 
 #### **RW (2026-06-07)** — E05:S08:T04 @ **v0.5.8.4+2** (FR-114 F4/F5 Notion-first bootstrap)
 
