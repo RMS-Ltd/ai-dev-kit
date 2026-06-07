@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.17.1+1] - 07-06-26
+
+E02:S17:T01 — **Change implemented:** Filed Story 17 (RW SemVer characterization & SQLite release state) with T01–T06 task structure on `spike/rw-semver-friction`. SemVer **v0.4.1037+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.1+1.md)
+
+---
+
 ## [0.2.16.10+6] - 07-06-26
 
 E02:S16:T10 — **Change implemented:** Post-FR-114 PR merge infrastructure — version re-anchor on `dev` after PR #37 squash merge; `epic/5-documentation-management` branch removed; release tags confirmed on remote. SemVer **v0.4.1036+6**.

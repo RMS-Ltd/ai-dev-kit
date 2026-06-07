@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-06 (RW **v0.2.16.4+36** — E02:S16:T04 UKW comprehensive release)
+**Last updated:** 2026-06-07 (RW **v0.2.17.1+1** — E02:S17 filed)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -85,6 +85,10 @@ housekeeping_policy: keep
 - [ ] **E2:S16 – Perpetual Ongoing Workflow Operations** - IN PROGRESS (v0.2.16.21+2)
   - Story: [`story-16-perpetual-ongoing-workflow-operations.md`](story-16-perpetual-ongoing-workflow-operations.md)
   - Tasks: T01 ✅ COMPLETE; T11 ✅ COMPLETE (FR-096) — [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+
+- [ ] **E2:S17 – RW SemVer Characterization & Release State SQLite** - IN PROGRESS (v0.2.17.1+1 — T01 IN PROGRESS on `spike/rw-semver-friction`)
+  - Story: [`story-17-rw-semver-characterization-and-release-state-sqlite.md`](story-17-rw-semver-characterization-and-release-state-sqlite.md)
+  - Tasks: T01 IN PROGRESS (scenario matrix); T02–T06 TODO
 
 ---
 
