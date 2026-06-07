@@ -14,6 +14,7 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CHUNK_DIR = REPO_ROOT / ".migration-batches" / "chunks"
@@ -21,10 +22,13 @@ MANIFEST_PATH = REPO_ROOT / "docs" / "knowledge" / "fr114-notion-migration-manif
 
 
 def normalize_url(url: str, page_id: str) -> str:
-    if url and ("notion.com/" in url or "notion.so/" in url):
-        m = re.search(r"/p/([0-9a-f-]+)", url, re.I)
-        if m:
-            return f"https://www.notion.so/{m.group(1)}"
+    if url:
+        parsed = urlparse(url)
+        host = (parsed.hostname or "").lower()
+        if host in {"notion.com", "www.notion.com", "notion.so", "www.notion.so"}:
+            m = re.search(r"/p/([0-9a-f-]+)", url, re.I)
+            if m:
+                return f"https://www.notion.so/{m.group(1)}"
     return f"https://www.notion.so/{page_id.replace('-', '')}"
 
 
