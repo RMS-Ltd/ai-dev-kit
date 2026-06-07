@@ -6,8 +6,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-import pytest
-
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = PACKAGE_ROOT / "scripts" / "validate_lifecycle_metadata.py"
 FIXTURES = Path(__file__).resolve().parent / "fixtures"

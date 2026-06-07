@@ -28,7 +28,7 @@ housekeeping_policy: keep
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
 
-- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.12+9 – T12 wave-6 IPW; T17 CQG; T15–T16 perpetual)
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.12+10 – T12 wave-6 code; T17 CQG; T15–T16 perpetual)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
 
 

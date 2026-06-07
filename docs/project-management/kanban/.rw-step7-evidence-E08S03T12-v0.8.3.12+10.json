@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T12": {
+      "allowed": true,
+      "reason": "RW Step 7 scoped reconciliation @ v0.8.3.12+10 — wave-6 code release"
+    }
+  }
+}

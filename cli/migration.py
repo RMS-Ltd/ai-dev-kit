@@ -99,7 +99,6 @@ def detect_frameworks(project_root: Optional[Path] = None, search_paths: Optiona
                         continue
                     
                     # Check for signature files
-                    confidence = 0.0
                     signature_matches = 0
                     total_signatures = len(pattern["signature_files"])
                     

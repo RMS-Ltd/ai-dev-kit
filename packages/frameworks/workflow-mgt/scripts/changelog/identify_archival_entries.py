@@ -10,7 +10,6 @@ Usage:
 
 import argparse
 import sys
-from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -83,18 +82,15 @@ def identify_archival_entries(
     
     # Criterion 1: Size-based (if changelog exceeds threshold)
     size_threshold = policy.get('size_threshold_lines', 1000)
-    target_size = policy.get('target_size_lines', 750)
+    policy.get('target_size_lines', 750)
     
     if total_lines > size_threshold:
         metadata['criteria_met'].append('size_based')
-        # Calculate how many lines to remove to reach target
-        total_lines - target_size
         # Approximate: archive entries from oldest (end of list) until we've removed enough lines
         # This is approximate - actual archival will be more precise
         
         # Criterion 2: Time-based (entries older than threshold)
         time_threshold_months = policy.get('time_threshold_months', 2)
-        datetime.now() - timedelta(days=time_threshold_months * 30)
         
         for i in range(len(entries) - 1, max_index_to_keep, -1):  # Iterate from oldest (end) to newest
             entry = entries[i]

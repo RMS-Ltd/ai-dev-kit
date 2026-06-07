@@ -58,7 +58,7 @@ housekeeping_policy: keep
 - [x] **E08:S03:T11 – CodeQL missing workflow permissions (BR-098)** — ✅ COMPLETE (**v0.8.3.11+0** doc release; alerts #1–#3 fixed on `main`) — [Task doc](story-03-automation-scripts/T11-codeql-missing-workflow-permissions-br098.md) | [BR-098](../../fr-br/BR-098-codeql-missing-workflow-permissions.md)
 
 
-- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 🔄 IN PROGRESS (**v0.8.3.12+9** wave-6 IPW; **103/Fair** @ `d5c4bca5`; **`implement wave 6`**) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15)
+- [ ] **E08:S03:T12 – Code Quality maintainability backlog (BR-099)** — 🔄 IN PROGRESS (**v0.8.3.12+10** wave-6 code; **87/Fair** local CQG; Good+ pending) — [Task doc](story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](../../fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15)
 
 
 - [x] **E08:S03:T13 – Code Quality reliability backlog (BR-100)** — ✅ COMPLETE (**v0.8.3.13+4** wave-3 **12** exit/quit fixed; **16** print → T12) — [Task doc](story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) | [BR-100](../../fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
@@ -79,7 +79,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard burn-down. **T17** (FR-113 local CQG) @ **v0.8.3.17+3**. **T12** wave-6 **planned** @ **103/Fair** (`d5c4bca5`). **T15–T16** (FR-112) perpetual lanes; **T16** **DEFERRED** until **T12** operator sign-off.
+Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) dashboard burn-down. **T17** (FR-113 local CQG) @ **v0.8.3.17+3**. **T12** wave-6 code @ **v0.8.3.12+10** (**87/Fair** local CQG). **T15–T16** (FR-112) perpetual lanes; **T16** **DEFERRED** until **T12** operator sign-off.
 
 ---
 

@@ -228,8 +228,6 @@ class IntakeTaskCreation:
             return
         
         # Tasks are already linked by E4:S10 workflow
-        # This method can add intake-specific metadata if needed
-        pass
 
 
 def main():

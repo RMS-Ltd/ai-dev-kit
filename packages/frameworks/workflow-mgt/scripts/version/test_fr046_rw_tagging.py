@@ -12,7 +12,7 @@ from pathlib import Path
 script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
-from semver_converter import get_rw_tag_info, get_semver_mapping_strategy
+import semver_converter
 
 
 def test_registry_mode():
@@ -20,10 +20,10 @@ def test_registry_mode():
     print("Testing Registry Mode (Default):")
     
     # Test with current config (strategy may vary by repo config)
-    strategy = get_semver_mapping_strategy()
+    strategy = semver_converter.get_semver_mapping_strategy()
     print(f"  Current strategy: {strategy}")
     
-    tag_info = get_rw_tag_info("0.6.7.18+2")
+    tag_info = semver_converter.get_rw_tag_info("0.6.7.18+2")
     print(f"  Primary tag: {tag_info['primary_tag']}")
     print(f"  Internal tag: {tag_info['internal_tag']}")
     print(f"  Strategy: {tag_info['strategy']}")
@@ -45,12 +45,11 @@ def test_task_touch_mode():
     print("Testing Task-Touch Mode:")
     
     # Mock task-touch config
-    import semver_converter
     original_load = semver_converter.load_rw_config
     semver_converter.load_rw_config = lambda: {'semver_mapping_strategy': 'task_touch'}
     
     try:
-        tag_info = get_rw_tag_info("0.6.7.18+2")
+        tag_info = semver_converter.get_rw_tag_info("0.6.7.18+2")
         print(f"  Primary tag: {tag_info['primary_tag']}")
         print(f"  Internal tag: {tag_info['internal_tag']}")
         print(f"  SemVer full: {tag_info['semver_full']}")
@@ -76,16 +75,15 @@ def test_tag_creation_dry_run():
     print("Testing Tag Creation Logic:")
     
     # Test registry mode
-    tag_info = get_rw_tag_info("0.6.7.18+2")
+    tag_info = semver_converter.get_rw_tag_info("0.6.7.18+2")
     print(f"  Registry mode would create: {tag_info['primary_tag']}")
     
     # Test task-touch mode
-    import semver_converter
     original_load = semver_converter.load_rw_config
     semver_converter.load_rw_config = lambda: {'semver_mapping_strategy': 'task_touch'}
     
     try:
-        tag_info = get_rw_tag_info("0.6.7.18+2")
+        tag_info = semver_converter.get_rw_tag_info("0.6.7.18+2")
         print(f"  Task-touch mode would create: {tag_info['primary_tag']}")
         print(f"  Optional internal tag: {tag_info['internal_tag']}")
         
@@ -101,7 +99,6 @@ def test_collision_scenario():
     print("Testing Collision Scenario:")
     
     # Mock task-touch config
-    import semver_converter
     original_load = semver_converter.load_rw_config
     semver_converter.load_rw_config = lambda: {'semver_mapping_strategy': 'task_touch'}
     
@@ -110,12 +107,12 @@ def test_collision_scenario():
         collision_versions = ["0.6.7.101+5", "0.6.7.102+5", "0.6.7.103+5"]
         
         for version in collision_versions:
-            tag_info = get_rw_tag_info(version, finalize=True)
+            tag_info = semver_converter.get_rw_tag_info(version, finalize=True)
             print(f"  {version} → {tag_info['primary_tag']}")
             assert '+' not in tag_info['primary_tag']
         
         # Verify all tags are different
-        tags = [get_rw_tag_info(v, finalize=True)['primary_tag'] for v in collision_versions]
+        tags = [semver_converter.get_rw_tag_info(v, finalize=True)['primary_tag'] for v in collision_versions]
         unique_tags = set(tags)
         assert len(unique_tags) == len(tags), f"Collisions detected: {tags}"
         

@@ -44,7 +44,7 @@ def find_repo_path(title: str) -> Path | None:
     if fr_match:
         prefix, num, rest = fr_match.groups()
         num = num.zfill(3)
-        slug = slugify(rest)
+        slugify(rest)
         candidates = list(PM_ROOT.glob(f"fr-br/{prefix}-{num}-*.md"))
         if candidates:
             return candidates[0]
@@ -67,7 +67,7 @@ def find_repo_path(title: str) -> Path | None:
     if story_match:
         n, m, rest = story_match.groups()
         m = m.zfill(3)
-        slug = slugify(rest)
+        slugify(rest)
         base = PM_ROOT / f"epics/Epic-{n}"
         for p in base.glob(f"Story-{m}-*.md"):
             return p
@@ -110,7 +110,7 @@ def find_repo_path(title: str) -> Path | None:
     if story_standalone:
         m, rest = story_standalone.groups()
         m = m.zfill(3)
-        slug = slugify(rest)
+        slugify(rest)
         for epic_dir in PM_ROOT.glob("epics/Epic-*"):
             for p in epic_dir.glob(f"Story-{m}-*.md"):
                 return p

@@ -11,7 +11,6 @@ from pathlib import Path
 
 from .config import CodeQualityGateConfig, load_config, resolve_query_pack_spec
 from .last_run import (
-    LastRunRecord,
     MonitorDecision,
     evaluate_monitor,
     read_last_run,
@@ -20,7 +19,7 @@ from .last_run import (
 from .ratings import compute_ratings
 from .report_model import CategoryRatings, CodeQualityReport
 from .sarif_parser import parse_sarif
-from .thresholds import ThresholdMode, parse_threshold, threshold_breached
+from .thresholds import parse_threshold, threshold_breached
 
 
 @dataclass

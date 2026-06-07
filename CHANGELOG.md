@@ -9,6 +9,16 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+---
+
+## [0.8.3.12+10] - 07-06-26
+
+E08:S03:T12 — **Change implemented:** BR-099 wave-6 code (Chunks L/M); CQG maintainability 103→87 (Fair). SemVer **v0.4.1036+10**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+10.md)
+
+---
+
 ## [0.5.8.4+3] - 07-06-26
 
 E05:S08:T04 — **Change implemented:** FR-114 IMPLEMENTED closure — acceptance criteria reconciled, intake-completed ledger, epic story checklists synced; portal build verified green. SemVer **v0.4.1035+3**.

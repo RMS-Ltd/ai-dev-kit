@@ -145,13 +145,13 @@ class TriggerRegistry:
         Args:
             commit_message: Git commit message
             changed_files: List of changed file paths
-            context: Optional additional context (branch, tags, etc.)
+            context: Optional additional context (branch, tags, etc.) — reserved for agentic fallback
         
         Returns:
             List of detected triggers, sorted by priority and confidence
         """
         triggers = []
-        context = context or {}
+        _ = context  # reserved for future agentic path
         
         # Fast path: Pattern matching
         for trigger_id, trigger_def in self.registry.items():

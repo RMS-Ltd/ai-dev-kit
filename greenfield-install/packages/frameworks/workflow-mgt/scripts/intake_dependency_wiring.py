@@ -404,7 +404,6 @@ class IntakeDependencyWiring:
         
         if match:
             # Update existing section
-            deps_section = match.group(1)
             updated_section = self._format_dependencies_section(wired_deps, created_tasks)
             updated_content = content[:match.start()] + updated_section + content[match.end():]
         else:

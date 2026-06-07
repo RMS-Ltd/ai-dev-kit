@@ -73,8 +73,12 @@ FRESH_TASK_PATTERNS: Tuple[str, ...] = (
     LEGACY_TASK_DOC_PATTERN,
 )
 
-# Anchor public tuples for static analysis (install_release_workflow imports these).
-_PATTERN_EXPORTS = (FRESH_EPIC_PATTERNS, FRESH_STORY_PATTERNS, FRESH_TASK_PATTERNS)
+# Re-export pattern tuples for install_release_workflow (FRESH_* imports).
+__all__ = [
+    "FRESH_EPIC_PATTERNS",
+    "FRESH_STORY_PATTERNS",
+    "FRESH_TASK_PATTERNS",
+]
 
 EPIC_DIR_PREFIX = "epic-"
 EPIC_FILE_PREFIX = "epic-"

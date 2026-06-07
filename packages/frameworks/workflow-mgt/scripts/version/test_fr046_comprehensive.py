@@ -16,7 +16,7 @@ from pathlib import Path
 script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
-from semver_converter import get_rw_tag_info, get_semver_mapping_strategy
+import semver_converter
 
 
 def test_configuration_detection():
@@ -24,17 +24,16 @@ def test_configuration_detection():
     print("=== Testing Configuration Detection ===")
     
     # Test default (strategy from repo config)
-    strategy = get_semver_mapping_strategy()
+    strategy = semver_converter.get_semver_mapping_strategy()
     print(f"Default strategy: {strategy}")
     assert strategy in {"registry", "task_touch"}
     
     # Test task-touch mode (mock config)
-    import semver_converter
     original_load = semver_converter.load_rw_config
     semver_converter.load_rw_config = lambda: {'semver_mapping_strategy': 'task_touch'}
     
     try:
-        strategy = get_semver_mapping_strategy()
+        strategy = semver_converter.get_semver_mapping_strategy()
         print(f"Mocked task-touch strategy: {strategy}")
         assert strategy == "task_touch", "Should detect task-touch"
     finally:
@@ -49,7 +48,7 @@ def test_registry_mode_tagging():
     print("=== Testing Registry Mode Tagging ===")
     
     internal_version = "0.6.7.18+2"
-    tag_info = get_rw_tag_info(internal_version)
+    tag_info = semver_converter.get_rw_tag_info(internal_version)
     
     print(f"Internal version: {internal_version}")
     print(f"Strategy: {tag_info['strategy']}")
@@ -75,13 +74,12 @@ def test_task_touch_mode_tagging():
     print("=== Testing Task-Touch Mode Tagging ===")
     
     # Mock task-touch config
-    import semver_converter
     original_load = semver_converter.load_rw_config
     semver_converter.load_rw_config = lambda: {'semver_mapping_strategy': 'task_touch'}
     
     try:
         internal_version = "0.6.7.18+2"
-        tag_info = get_rw_tag_info(internal_version)
+        tag_info = semver_converter.get_rw_tag_info(internal_version)
         
         print(f"Internal version: {internal_version}")
         print(f"Strategy: {tag_info['strategy']}")
@@ -111,7 +109,6 @@ def test_collision_prevention():
     print("=== Testing Collision Prevention ===")
     
     # Mock task-touch config
-    import semver_converter
     original_load = semver_converter.load_rw_config
     semver_converter.load_rw_config = lambda: {'semver_mapping_strategy': 'task_touch'}
     
@@ -122,7 +119,7 @@ def test_collision_prevention():
         print("Testing collision scenario:")
         tags = []
         for version in collision_versions:
-            tag_info = get_rw_tag_info(version, finalize=True)
+            tag_info = semver_converter.get_rw_tag_info(version, finalize=True)
             primary_tag = tag_info['primary_tag']
             tags.append(primary_tag)
             print(f"  {version} → {primary_tag}")
@@ -175,12 +172,12 @@ def test_backward_compatibility():
     print("=== Testing Backward Compatibility ===")
     
     # Test that default behavior remains valid for configured strategy
-    strategy = get_semver_mapping_strategy()
+    strategy = semver_converter.get_semver_mapping_strategy()
     assert strategy in {"registry", "task_touch"}
     
     # Test that existing tag format still works
     internal_version = "0.6.7.18+2"
-    tag_info = get_rw_tag_info(internal_version)
+    tag_info = semver_converter.get_rw_tag_info(internal_version)
     
     if strategy == "registry":
         assert tag_info['strategy'] == 'registry'
@@ -202,18 +199,17 @@ def test_end_to_end_scenario():
     
     # Phase 1: Registry mode (existing behavior)
     print("Phase 1: Registry mode")
-    tag_info = get_rw_tag_info("0.6.7.18+2")
+    tag_info = semver_converter.get_rw_tag_info("0.6.7.18+2")
     print(f"  Tag: {tag_info['primary_tag']}")
     assert tag_info['strategy'] in {"registry", "task_touch"}
     
     # Phase 2: Switch to task-touch mode
     print("Phase 2: Switch to task-touch mode")
-    import semver_converter
     original_load = semver_converter.load_rw_config
     semver_converter.load_rw_config = lambda: {'semver_mapping_strategy': 'task_touch'}
     
     try:
-        tag_info = get_rw_tag_info("0.6.7.19+1", finalize=True)
+        tag_info = semver_converter.get_rw_tag_info("0.6.7.19+1", finalize=True)
         print(f"  Tag: {tag_info['primary_tag']}")
         print(f"  Internal: {tag_info['internal_tag']}")
         assert tag_info['strategy'] == 'task_touch'
