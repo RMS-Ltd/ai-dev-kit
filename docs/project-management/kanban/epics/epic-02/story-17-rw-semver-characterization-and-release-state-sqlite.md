@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.2+5** — T02 COMPLETE; T03 IPW)  
-**Version:** v0.2.17.2+5  
+**Last updated:** 2026-06-07 (RW **v0.2.17.4+1** — T04 SQLite backend phase 1)  
+**Version:** v0.2.17.4+1  
 **Code:** E2S17
 
 ---
@@ -41,9 +41,9 @@ Characterize Release Workflow (RW) and Implementation Planning Workflow (IPW) fr
 
 - [x] **E02:S17:T02 – Baseline characterization runs (legacy MD/YAML)** - COMPLETE (v0.2.17.2+5 — Waves 1–4 ✅) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T02-baseline-characterization-runs-legacy-md-yaml.md)
 
-- [ ] **E02:S17:T03 – SQLite release-state schema and migration design** - IN PROGRESS (IPP filed) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T03-sqlite-release-state-schema-and-migration-design.md) | [—IPP—](../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md)
+- [ ] **E02:S17:T03 – SQLite release-state schema and migration design** - IN PROGRESS (AC1/AC4 ✅; AC2/AC3 proof via T04) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T03-sqlite-release-state-schema-and-migration-design.md) | [—IPP—](../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md)
 
-- [ ] **E02:S17:T04 – Implement SQLite changelog and semver-registry backend** - TODO (CRITICAL) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T04-implement-sqlite-changelog-semver-registry-backend.md)
+- [ ] **E02:S17:T04 – Implement SQLite changelog and semver-registry backend** - IN PROGRESS (v0.2.17.4+1 — phase 1 shipped) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T04-implement-sqlite-changelog-semver-registry-backend.md)
 
 - [ ] **E02:S17:T05 – Parity replay: same scenario matrix on SQLite** - TODO (HIGH) — [Task doc](story-17-rw-semver-characterization-and-release-state-sqlite/T05-parity-replay-scenario-matrix-on-sqlite.md)
 

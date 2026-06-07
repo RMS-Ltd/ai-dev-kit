@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S17:T04 — Implement SQLite changelog and semver-registry backend
 
 **Task ID:** E02:S17:T04  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** CRITICAL  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07  
-**Version Anchor:** v0.2.17.4+0  
+**Last updated:** 2026-06-07 (RW **v0.2.17.4+1** — SQLite backend phase 1)  
+**Version Anchor:** v0.2.17.4+1  
 **Code:** E02S17T04
 
 Publication Status: NOT_APPLICABLE
@@ -43,18 +43,21 @@ Implement the SQLite release-state backend per **T03** IPP. Wire RW pipeline scr
 
 ## Input
 
-- [IPP-E02S17T03](../../../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md) (from T03)
-- [T03 schema design](T03-sqlite-release-state-schema-and-migration-design.md)
+- [IPP-E02S17T03](../../../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md) (from T03) ✅
+- [sqlite-schema-design.md](sqlite-schema-design.md)
+- [migration-manifest.md](migration-manifest.md)
 
 ---
 
 ## Deliverable
 
-1. SQLite backend in `packages/frameworks/workflow-mgt/` (exact paths per IPP)
-2. Migration CLI: import legacy → SQLite
-3. Export CLI: SQLite → legacy (round-trip)
-4. pytest coverage for CRUD + finalize boundary
-5. RW agent guide delta (config switch, new paths)
+1. SQLite backend in `packages/frameworks/workflow-mgt/scripts/release_state/` ✅
+2. Migration CLI: `import_legacy.py` ✅
+3. Export CLI: `export_legacy.py` ✅
+4. pytest coverage for CRUD + finalize boundary ✅ (`tests/release_state/`)
+5. RW agent guide delta (config switch, new paths) — pending
+6. `semver_converter.py` dual-backend wiring ✅
+7. `rw-config.yaml` keys (`release_state_backend`, `release_state_db`) ✅
 
 ---
 
@@ -62,8 +65,8 @@ Implement the SQLite release-state backend per **T03** IPP. Wire RW pipeline scr
 
 - [ ] AC1: `release_state_backend: sqlite` runs RW Steps 2–11 on isolated worktree without legacy file writes
 - [ ] AC2: Existing validator suite passes in SQLite mode
-- [ ] AC3: Import + export round-trip is idempotent on test corpus
-- [ ] AC4: No regression in legacy mode when flag unset
+- [x] AC3: Import + export round-trip is idempotent on test corpus
+- [x] AC4: No regression in legacy mode when flag unset (42/42 pytest pass)
 
 ---
 

@@ -49,6 +49,10 @@ board_stamp:
 # task_touch: ADR-002 task-touch derived mapping (strictly monotonic)
 semver_mapping_strategy: task_touch
 
+# Release-state backend (E02:S17:T04): legacy = semver-registry.yaml; sqlite = .adk/release-state.db
+release_state_backend: legacy
+release_state_db: .adk/release-state.db
+
 # Versioning mode policy:
 # - dual: internal RC.EPIC.STORY.TASK+BUILD + external SemVer (requires task_touch)
 # - semver_only: SemVer-only workflows

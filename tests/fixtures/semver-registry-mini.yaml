@@ -1,0 +1,38 @@
+rc_0:
+  epic_to_minor:
+    1: 1
+    2: 2
+  story_to_patch:
+    (1,1): 1
+    (2,17): 6
+  task_touch_mode:
+    epic_count: 4
+    task_touch_counter: 3
+    mapping_history:
+      - internal_version: 0.2.17.1+1
+        semver: 0.4.1037+1
+        patch: 1037
+        rc: 0
+        epic: 2
+        story: 17
+        task: 1
+        build: 1
+      - internal_version: 0.2.17.2+1
+        semver: 0.4.1039+1
+        patch: 1039
+        rc: 0
+        epic: 2
+        story: 17
+        task: 2
+        build: 1
+      - internal_version: 0.2.17.2+5
+        semver: 0.4.1043+5
+        patch: 1043
+        rc: 0
+        epic: 2
+        story: 17
+        task: 2
+        build: 5
+rc_1:
+  epic_to_minor: {}
+  story_to_patch: {}

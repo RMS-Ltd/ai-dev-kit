@@ -50,19 +50,21 @@ SCENARIO_WAVE4 = ["IPW-P01", "IPW-P02", "IPW-P03", "IPW-P04", "RW-V03", "RW-V04"
 
 
 class TestWave4IPW:
-    def test_IPW_P01_t03_has_no_ipp_yet(self):
-        """IPW-P01: T03 blocked — no IPP file under implementation-cycles/ yet."""
+    def test_IPW_P01_t03_has_ipp_linked(self):
+        """IPW-P01: T03 IPP exists under implementation-cycles/ (post-IPW)."""
         assert T03_DOC.exists()
         matches = list(IPP_DIR.glob("IPP-E02S17T03*.md"))
-        assert matches == [], "IPP should not exist until IPW runs for T03"
+        assert len(matches) == 1
+        assert "IPP-E02S17T03" in T03_DOC.read_text(encoding="utf-8")
 
     def test_IPW_P02_t04_implementation_blocked_no_ipp(self):
-        """IPW-P02: T04 TODO + no IPP — implementation gate preconditions missing."""
+        """IPW-P02: T04 IN PROGRESS but uses T03 IPP — T04 has no dedicated IPP-E02S17T04."""
         assert T04_DOC.exists()
         text = T04_DOC.read_text(encoding="utf-8")
-        assert "**Status:** TODO" in text
+        assert "**Status:** IN PROGRESS" in text
         assert "IPP-E02S17T04" not in text
         assert list(IPP_DIR.glob("IPP-E02S17T04*.md")) == []
+        assert "IPP-E02S17T03" in text
 
     def test_IPW_P03_plan_template_mandatory_transitions(self):
         """IPW-P03: IPP template prescribes TODO→IN PROGRESS and final reconciliation."""
@@ -71,12 +73,11 @@ class TestWave4IPW:
         assert "Reconcile task" in template or "Reconcile" in template
         assert "MANDATORY" in template
 
-    def test_IPW_P04_rw_blocked_on_t04_todo(self):
-        """IPW-P04: RW Step 1c aborts on T04 (TODO, no IPP)."""
+    def test_IPW_P04_rw_releasable_on_t04_in_progress(self):
+        """IPW-P04: RW Step 1c allows T04 when IN PROGRESS (implementation active)."""
         r = _run_validator("validate_rw_task_complete.py", ["--requested", "E02:S17:T04"])
-        assert r.returncode != 0
-        assert "TODO" in r.stdout or "TODO" in r.stderr
-        assert "not releasable" in r.stdout.lower() or "not releasable" in r.stderr.lower()
+        assert r.returncode == 0
+        assert "IN PROGRESS" in r.stdout or "IN PROGRESS" in r.stderr
 
 
 class TestWave4Volume:
@@ -104,3 +105,20 @@ class TestWave4Volume:
         assert elapsed_ms < 2000, f"registry load too slow: {elapsed_ms:.1f}ms"
         # Record in test output for run log capture
         print(f"registry_yaml_load_ms={elapsed_ms:.2f}")
+
+    def test_RW_V04_sqlite_lookup_benchmark(self, tmp_path):
+        """RW-V04 extension: SQLite indexed lookup vs YAML load."""
+        if not REGISTRY.exists():
+            pytest.skip("production registry missing")
+        from release_state.import_legacy import import_registry_yaml
+        from release_state.store import lookup_semver_by_internal
+
+        db = tmp_path / "bench.db"
+        import_registry_yaml(REGISTRY, db, changelog_dir=None)
+        sample = "0.2.17.2+5"
+        start = time.perf_counter()
+        for _ in range(50):
+            lookup_semver_by_internal(db, sample)
+        sqlite_ms = (time.perf_counter() - start) / 50 * 1000
+        print(f"registry_sqlite_lookup_ms={sqlite_ms:.3f}")
+        assert sqlite_ms < 50, f"sqlite lookup too slow: {sqlite_ms:.2f}ms"

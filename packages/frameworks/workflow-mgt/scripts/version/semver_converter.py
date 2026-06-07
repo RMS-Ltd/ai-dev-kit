@@ -41,6 +41,20 @@ def load_rw_config() -> Dict[str, Any]:
     return load_rw_config_or_empty(find_project_root(Path(__file__).parent))
 
 
+def get_release_state_backend() -> str:
+    """Return release_state_backend from rw-config (`legacy` default)."""
+    config = load_rw_config()
+    backend = str(config.get("release_state_backend", "legacy")).strip().lower()
+    return backend if backend in ("legacy", "sqlite") else "legacy"
+
+
+def get_release_state_db_path() -> Path:
+    """Resolve SQLite DB path from rw-config."""
+    config = load_rw_config()
+    rel = config.get("release_state_db", ".adk/release-state.db")
+    return find_project_root(Path(__file__).parent) / str(rel)
+
+
 def get_semver_mapping_strategy() -> str:
     """
     Get the configured SemVer mapping strategy.
@@ -187,7 +201,15 @@ def find_registry_file() -> Path:
 
 
 def load_semver_registry() -> Dict[str, Any]:
-    """Load SemVer registry from YAML file."""
+    """Load SemVer registry from YAML file or SQLite (per rw-config)."""
+    if get_release_state_backend() == "sqlite":
+        try:
+            from release_state.store import load_registry_from_sqlite
+
+            return load_registry_from_sqlite(get_release_state_db_path())
+        except Exception as e:
+            print(f"⚠️  Warning: Failed to load SQLite registry: {e}")
+
     registry_file = find_registry_file()
     
     if not registry_file.exists():
@@ -264,7 +286,13 @@ def load_semver_registry() -> Dict[str, Any]:
 
 
 def save_semver_registry(registry: Dict[str, Any]) -> None:
-    """Save SemVer registry to YAML file."""
+    """Save SemVer registry to YAML file or SQLite (per rw-config)."""
+    if get_release_state_backend() == "sqlite":
+        from release_state.store import save_registry_to_sqlite
+
+        save_registry_to_sqlite(get_release_state_db_path(), registry)
+        return
+
     registry_file = find_registry_file()
     
     # Ensure directory exists

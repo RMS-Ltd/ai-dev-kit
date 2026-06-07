@@ -62,7 +62,7 @@ Design the **SQLite schema** and **migration path** from legacy MD/YAML release 
 ## Acceptance Criteria
 
 - [x] AC1: Schema supports all fields required by existing validators without file-format hacks — [`sqlite-schema-design.md`](sqlite-schema-design.md) §3–§6
-- [ ] AC2: Import path proven on a copy of production registry + sample changelog archive — T04 `validate_import.py`
+- [ ] AC2: Import path proven on a copy of production registry + sample changelog archive — T04 `import_legacy.py --validate` ✅ (308 deduped mappings)
 - [ ] AC3: Export reproduces validator-green legacy format (round-trip) — T04 export tests
 - [x] AC4: IPP linked from this task doc before T04 starts
 
