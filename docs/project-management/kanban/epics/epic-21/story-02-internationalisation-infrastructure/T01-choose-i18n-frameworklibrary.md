@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E21:S02:T01  
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-05 (v0.0.0.0+0 – migrated from embedded Story section)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-07 (v0.21.2.1+0 — RW -k kanban-init doc filing)
+**Version:** v0.21.2.1+0
 **Code:** E21S02T01
 
 ---
@@ -57,6 +57,8 @@ Evaluate and select i18n framework/library for ai-dev-kit translation infrastruc
 ---
 
 ## Kanban-init intake
+
+**Released:** `v0.21.2.1+0` — RW -k --art --dpz (2026-06-07)
 
 **Branch:** `epic/21-internationalisation-localisation`
 

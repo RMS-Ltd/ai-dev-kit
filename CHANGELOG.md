@@ -10,11 +10,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.1.4+0] - 07-06-26
+## [0.21.2.1+0] - 07-06-26
 
-E21:S01:T04 — **Change implemented:** Kanban-init doc filing — Create UK/US English content variants (documentation, templates). SemVer **v0.4.1034+0**.
+E21:S02:T01 — **Change implemented:** Kanban-init doc filing — Choose i18n framework/library. SemVer **v0.4.1038+0**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.4+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.2.1+0.md)
 
 ---
 
